@@ -217,42 +217,6 @@
    "outcome": "attempted, open"
   },
   {
-   "id": 36,
-   "counted": true,
-   "year": 1751,
-   "date": "28 Dec 1751",
-   "title": "King Frederick II (the Great) of Prussia (1712-1786) (London) to Louis Michell (1712-1786), Prussian resident in London",
-   "correspondents": "King Frederick II (the Great) of Prussia (1712-1786) → Louis Michell (1712-1786), Prussian resident in London",
-   "place": "London, England",
-   "language": "French",
-   "region": "Germany",
-   "period": "1701-1800",
-   "shelfmark": "KHA The Hague, Prins Willem V, inv.nr. 198",
-   "folio_note": "",
-   "cls": "C",
-   "status": "DECODE R1955: Non-decrypted, 2 pp., nomenclator, numerical. 19 Sept 2026: transcribed in full (targets/michell1751/transcription_r1955.txt). Heading \"Lettre du Roi de Prusse au Secrétaire Michell du 28 Decemb. 1751\", clear opening \"Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois\", 362 code groups (2 to 5346, with half-groups 1½, 10½, 40½, 150½, 180½, 660½), dated and signed Féderic. Only one letter of this date to Michell is in Politische Correspondenz 8 (no. 5263 = R1957), so this is the ministerial rescript and has no printed text. 295 of the 362 groups are distinct and the commonest occurs 5 times: a large two-part homophonic code, not breakable from this letter alone. It would need the Prussian ministerial code of 1751 (GStA), Lyonet's Dutch decipherments, or British decyphers of Michell's mail.",
-   "why": "Ciphered letter of King Frederick II (the Great) of Prussia (1712-1786) to Louis Michell (1712-1786), Prussian resident in London, 28 Dec 1751; what the cipher hides is not known.",
-   "importance": 3,
-   "solvability": 1,
-   "difficulty": 5,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
-   "ark": "",
-   "links": [
-    {
-     "label": "DECODE R1955",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/1955"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "DECODE",
-   "decode_ids": [
-    1955
-   ],
-   "outcome": "attempted, open",
-   "scored": "rule"
-  },
-  {
    "id": 53,
    "counted": true,
    "year": 1841,
@@ -317,7 +281,7 @@
    "shelfmark": "TNA, State Papers, inv.nr. 106 box 10, f. 251 · DECODE R931",
    "folio_note": "",
    "cls": "B",
-   "status": "Attempted, open (sp106box10, 21 Sept 2026). Of the four DECODE records first grouped here, R722 turned out to be the 1625 Venetian letter of the sp106box10 codebreaker's file (endorsement and clear passages read), and R656 and R662 are that codebreaker's worksheet and memorandum; they moved to sp106box10. Left: R931, a strip of ~190 numbers 10-260 with clear words ('(1) septembre 1645', 'earnestly', 'reasons'), 104 distinct numbers: a nomenclator. Lasry's 1645-46 SP 106 keys, the R932 Goring key and the Charles I-Culpeper 1645 key (R9117/R9118) do not fit.",
+   "status": "Attempted, open (21 Sept 2026; own entry sp106r931 since 14 Oct 2026). Of the four DECODE records first grouped here, R722 is the 1625 Venetian letter of the SP 106/10 codebreaker's file (now sp106r722, catalogue 66) and R656 and R662 are that codebreaker's worksheet and memorandum on it. Left here: R931, a strip of ~190 numbers 10-260 with clear words ('(1) septembre 1645', 'earnestly', 'reasons'), 104 distinct numbers: a nomenclator. Lasry's 1645-46 SP 106 keys, the R932 Goring key and the Charles I-Culpeper 1645 key (R9117/R9118) do not fit.",
    "why": "A royalist despatch of autumn 1645, after Naseby; what it says is not known.",
    "importance": 2,
    "solvability": 3,
@@ -327,18 +291,6 @@
    "ark": "",
    "links": [
     {
-     "label": "DECODE R656",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/656"
-    },
-    {
-     "label": "DECODE R662",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/662"
-    },
-    {
-     "label": "DECODE R722",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/722"
-    },
-    {
      "label": "DECODE R931",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/931"
     }
@@ -346,13 +298,62 @@
    "seen": "catalogue",
    "source": "DECODE",
    "decode_ids": [
-    656,
-    662,
-    722,
     931
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "writeup": "sp106r931.html"
+  },
+  {
+   "id": 66,
+   "counted": false,
+   "year": 1625,
+   "date": "first half of 1625",
+   "title": "A Venetian secretary to the Venetian ambassador in England, 1625, in a three-figure syllabic code (SP 106/10 ff. 193-195)",
+   "correspondents": "A Venetian secretary → the Venetian ambassador in England",
+   "place": "Kew",
+   "language": "Italian",
+   "region": "England",
+   "period": "1611-1650",
+   "shelfmark": "TNA, State Papers, inv.nr. 106 box 10, ff. 193-195 · DECODE R722, with the codebreaker's worksheets R703 (ff. 184-185), R656, R661, R662, R663, R667, R684, R701, R702, R720",
+   "folio_note": "",
+   "cls": "B",
+   "status": "Attempted, open (21 Sept 2026; restored 14 Oct 2026 for sp106r722). This entry first held only R703, closed on 21 Sept 2026 as a codebreaker's worksheet on a 'lost' 46-line letter; the letter is R722 (endorsed 'Cypher of a Venetian Secretary to the Embassador of that nation', 1625; Spinola before Breda, the Pope and Bethune in the clear passages). All 420 code groups (117 types) transcribed; the codebreaker's partial key on R701 p. 3 and clear-text junctions fix a few values; annealing does not converge. Split from sp106box10 under the one-key rule.",
+   "why": "A Venetian diplomatic letter of 1625 with the English codebreaker's failed attack on it; the code text is unread.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Restored 14 Oct 2026 from the removed id 66; scores set by hand at the split, not reviewed.",
+   "verify": "Another letter in the same code (Venetian correspondence of 1625, ASVe or SP 99), or more of the codebreaker's run sheets; see targets/sp106r722/NOTES.md.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R722",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/722"
+    },
+    {
+     "label": "DECODE R703",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/703"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "DECODE",
+   "decode_ids": [
+    722,
+    703,
+    656,
+    661,
+    662,
+    663,
+    667,
+    684,
+    701,
+    702,
+    720
+   ],
+   "scored": "reviewed",
+   "outcome": "attempted, open",
+   "writeup": "sp106r722.html"
   },
   {
    "id": 74,
@@ -1001,7 +1002,7 @@
    "shelfmark": "Archivio di Stato di Mantova, Archivio Gonzaga (DECODE R1854, image 1)",
    "folio_note": "",
    "cls": "B",
-   "status": "DECODE R1854 image 1 (the record holds four letters; images 2-5 read here, see targets/r1854/). Three cipher runs, 262 letter-like signs (ſſ, η, ʒ, H, cc, ∩, I, ƀʒ ...) inside a clear Latin letter on the peace of Ferrara (April 1428). Not a simple or homophonic substitution in Latin or Italian (controls pass); the R1853 register's Malatesta keys do not fit.",
+   "status": "DECODE R1854 image 1 (the record holds four letters in four ciphers; images 2-5 deciphered here, now the entries r1854, mutiliana1428 and cattanei1430; this item is targets/malatesta1428/, split 14 Oct 2026). Three cipher runs, 262 letter-like signs (ſſ, η, ʒ, H, cc, ∩, I, ƀʒ ...) inside a clear Latin letter on the peace of Ferrara (April 1428). Not a simple or homophonic substitution in Latin or Italian (controls pass); the R1853 register's Malatesta keys do not fit.",
    "why": "Pandolfo Malatesta's secret plans for his brother-in-law after the peace of Ferrara; one of the oldest unread cipher passages with images online.",
    "importance": 1,
    "solvability": 2,
@@ -1150,7 +1151,7 @@
    "shelfmark": "BayHStA, Kurbayern Äußeres Archiv 4591 f. 96–114 and 274–277",
    "folio_note": "",
    "cls": "B",
-   "status": "Of the 14 DECODE records in this entry, 12 were read or broken here (kaa4591, 21 Sept 2026). Left open: R9319, a dot grille laid over clear cover letters (f. 115–118) that DECODE did not image; R9424, 12 June 1583 to Wilhelm V (Cologne war), monoalphabetic by IoC but no key found (R9422 cut off). R9291 is a key fragment.",
+   "status": "Of the 14 DECODE records in this entry, 12 were read or broken here (21 Sept 2026; split by key 15 Oct 2026 into kaa4591, kaa4591b, fulda1576, r9367 and r9416). Left open, each with its own page: R9319 (r9319), a dot grille laid over clear cover letters (f. 115–118) that DECODE did not image; R9424 (r9424), 12 June 1583 to Wilhelm V (Cologne war), monoalphabetic by IoC but no key found (R9422 cut off). R9291 is a key fragment.",
    "why": "Ciphered despatches of Unknown sender to unknown recipient; what the cipher hides is not known.",
    "importance": 1,
    "solvability": 3,
@@ -1168,8 +1169,12 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/9424"
     },
     {
-     "label": "write-up",
-     "href": "kaa4591.html"
+     "label": "write-up R9319",
+     "href": "r9319.html"
+    },
+    {
+     "label": "write-up R9424",
+     "href": "r9424.html"
     }
    ],
    "seen": "catalogue",

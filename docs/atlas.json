@@ -414,6 +414,9 @@
   ]
  },
  "letters": [
+  {"slug": "nevers1593", "doc": "f209", "year": 1593.69, "date": "8 Sep 1593", "from": "Nevers", "to": "Rome", "st": "partial", "label": "Nevers to Pisany (cipher no. 46)"},
+  {"slug": "michell1751", "doc": "R1957", "year": 1751.99, "date": "28 Dec 1751", "from": "Berlin", "to": "London", "st": "found", "label": "Frederick II to Michell, the King's own letter (Politische Correspondenz 5263)"},
+  {"slug": "r1955", "doc": "R1955", "year": 1751.99, "date": "28 Dec 1751", "from": "Berlin", "to": "London", "st": "partial", "label": "Frederick II to Michell, the ministerial rescript (decoded in part by WAINUT)"},
   {"slug": "sabran1631", "doc": "R2748", "year": 1631.24, "date": "28 Mar 1631", "from": "Dijon", "to": "Genoa", "st": "found", "label": "Louis XIII to Melchior de Sabran (deciphered by Lasry)"},
   {"slug": "brulart1615", "doc": "R2785", "year": 1615.71, "date": "15 Sep 1615", "from": "Poitiers", "to": "Venice", "st": "found", "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"},
   {"slug": "brulart1615", "doc": "R2786", "year": 1617.56, "date": "25 Jul 1617", "from": "Paris", "to": "Venice", "st": "found", "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"},
@@ -558,14 +561,14 @@
    "label": "Vich 1511–12"
   },
   {
-   "slug": "vich1511",
+   "slug": "vich1515",
    "doc": "N.73",
    "year": 1515.79,
    "date": "26 Oct 1515",
    "from": "Pedrezuela",
    "to": "Rome",
-   "st": "solved",
-   "label": "Vich 1511–12"
+   "st": "stuck",
+   "label": "Vich 1515 (not solved)"
   },
   {
    "slug": "spinelly1516",
@@ -1268,14 +1271,14 @@
    "label": "Paris nunciature, Francia 18"
   },
   {
-   "slug": "bergamo1585",
+   "slug": "morosini1588",
    "doc": "R17",
    "year": 1587.5,
-   "date": "unknown",
+   "date": "1587",
    "from": "Paris",
    "to": "Rome",
    "st": "solved",
-   "label": "Paris nunciature, Francia 18"
+   "label": "Morosini 1587-89"
   },
   {
    "slug": "needham1587",
@@ -1365,17 +1368,27 @@
    "from": "Blois",
    "to": "Rome",
    "st": "solved",
-   "label": "Morosini 1588"
+   "label": "Morosini 1587-89"
   },
   {
-   "slug": "morosini1588",
-   "doc": "f22b-set",
-   "year": 1589.38,
-   "date": "spring 1589 (R54: Moulins, 11 May 1589)",
+   "slug": "morosini1589",
+   "doc": "R53",
+   "year": 1589.3,
+   "date": "spring 1589",
+   "from": "Tours",
+   "to": "Rome",
+   "st": "partial",
+   "label": "Morosini 1589, second key"
+  },
+  {
+   "slug": "morosini1589",
+   "doc": "R54",
+   "year": 1589.36,
+   "date": "11 May 1589",
    "from": "Moulins",
    "to": "Rome",
-   "st": "solved",
-   "label": "Morosini 1588"
+   "st": "partial",
+   "label": "Morosini 1589, second key"
   },
   {
    "slug": "mendoza1589",
@@ -3559,6 +3572,26 @@
   },
   {
    "slug": "kaa4591b",
+   "doc": "R9322",
+   "year": 1529.9,
+   "date": "24 November 1529",
+   "from": "Buda",
+   "to": "Munich",
+   "st": "partial",
+   "label": "Łaski from Buda, November 1529"
+  },
+  {
+   "slug": "kaa4591b",
+   "doc": "R9417",
+   "year": 1530.46,
+   "date": "16 June 1530",
+   "from": "Cracow",
+   "to": "Munich",
+   "st": "partial",
+   "label": "Łaski from Kraków, June 1530"
+  },
+  {
+   "slug": "kaa4591b",
    "doc": "R9403",
    "year": 1531.71,
    "date": "17 September 1531",
@@ -3568,7 +3601,7 @@
    "label": "Łaski September 1531"
   },
   {
-   "slug": "kaa4591b",
+   "slug": "wardein1537",
    "doc": "R9414",
    "year": 1537.2,
    "date": "14 March 1537",
@@ -3718,43 +3751,53 @@
    "label": "Buda newsletter via Sperantio, February 1534"
   },
   {
+   "slug": "malatesta1428",
+   "doc": "Image 1",
+   "year": 1428.31,
+   "date": "22 Apr 1428",
+   "from": "Rome",
+   "to": "Mantua",
+   "st": "stuck",
+   "label": "Pandolfo Malatesta to Gianfrancesco Gonzaga 1428 (not solved)"
+  },
+  {
    "slug": "r1854",
    "doc": "Image 2",
    "year": 1428.6,
    "date": "9 Aug 1428",
    "from": "Rome",
    "to": "Mantua",
-   "st": "partial",
+   "st": "solved",
    "label": "Gonzaga agent in Rome to Gianfrancesco Gonzaga 1428"
   },
   {
-   "slug": "r1854",
+   "slug": "mutiliana1428",
    "doc": "Image 3",
    "year": 1428.85,
    "date": "6 Nov 1428",
    "from": "Forlì",
    "to": "Mantua",
-   "st": "partial",
+   "st": "solved",
    "label": "Forlì informant to Gianfrancesco Gonzaga 1428"
   },
   {
-   "slug": "r1854",
+   "slug": "cattanei1430",
    "doc": "Image 4",
    "year": 1430.12,
    "date": "13 Feb 1430",
    "from": "Rome",
    "to": "Mantua",
-   "st": "partial",
+   "st": "solved",
    "label": "Francesco de&rsquo; Cattanei to Gianfrancesco Gonzaga 1430"
   },
   {
-   "slug": "r1854",
+   "slug": "cattanei1430",
    "doc": "Image 5",
    "year": 1430.14,
    "date": "21 Feb 1430",
    "from": "Rome",
    "to": "Mantua",
-   "st": "partial",
+   "st": "solved",
    "label": "Francesco de&rsquo; Cattanei to Gianfrancesco Gonzaga 1430"
   },
   {
@@ -4198,7 +4241,7 @@
    "label": "Hamburg despatch to the Hessian chancellor"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "schenck1706",
    "doc": "R7486",
    "year": 1706.18,
    "date": "7 Mar 1706",
@@ -4208,7 +4251,7 @@
    "label": "Vienna agent to Baron Schenck"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "schenck1706",
    "doc": "R7488",
    "year": 1706.24,
    "date": "27 Mar 1706",
@@ -4218,7 +4261,7 @@
    "label": "Vienna agent to Baron Schenck"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "schenck1706",
    "doc": "R7490",
    "year": 1706.36,
    "date": "12 May 1706",
@@ -4228,7 +4271,7 @@
    "label": "Vienna agent to Baron Schenck"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "schenck1706",
    "doc": "R7493",
    "year": 1706.41,
    "date": "29 May 1706",
@@ -4238,7 +4281,7 @@
    "label": "Vienna agent to Baron Schenck"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "schenck1706",
    "doc": "R7495",
    "year": 1706.45,
    "date": "15 Jun 1706",
@@ -4248,7 +4291,7 @@
    "label": "Vienna agent to Baron Schenck"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "schenck1706",
    "doc": "R7500",
    "year": 1706.53,
    "date": "14 Jul 1706",
@@ -4258,7 +4301,7 @@
    "label": "Vienna agent to Baron Schenck"
   },
   {
-   "slug": "sieniawski1708",
+   "slug": "chomentowski1713",
    "doc": "R7484",
    "year": 1713.35,
    "date": "9 May 1713",

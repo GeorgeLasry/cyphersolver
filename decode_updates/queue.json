@@ -1,6 +1,470 @@
 {
  "_about": "Queue of pending DECODE edits. Add entries via the /writeup skill; build with decode_updates/build.py; set sent:true once edited on DECODE.",
  "targets": {
+  "morosini1588": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/morosini1588.html",
+   "key": {
+    "decode": "R18 (Meister no. 40 scan DOC_3174; Lasry's partial reconstruction DOC_3175)"
+   },
+   "cite": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (Paderborn 1906), pp. 393-394 no. 40",
+   "fields": {},
+   "records": {
+    "R18": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R18 "
+      }
+     ],
+     "sent": false
+    },
+    "R19": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R19 "
+      }
+     ],
+     "sent": false
+    },
+    "R20": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R20 "
+      }
+     ],
+     "sent": false
+    },
+    "R21": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R21 "
+      }
+     ],
+     "sent": false
+    },
+    "R22": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R22 "
+      }
+     ],
+     "sent": false
+    },
+    "R27": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R27 "
+      }
+     ],
+     "sent": false
+    },
+    "R28": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R28 "
+      }
+     ],
+     "sent": false
+    },
+    "R29": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R29 "
+      }
+     ],
+     "sent": false
+    },
+    "R30": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R30 "
+      }
+     ],
+     "sent": false
+    },
+    "R31": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R31 "
+      }
+     ],
+     "sent": false
+    },
+    "R32": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R32 "
+      }
+     ],
+     "sent": false
+    },
+    "R33": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R33 "
+      }
+     ],
+     "sent": false
+    },
+    "R34": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R34 "
+      }
+     ],
+     "sent": false
+    },
+    "R35": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R35 "
+      }
+     ],
+     "sent": false
+    },
+    "R36": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R36 "
+      }
+     ],
+     "sent": false
+    },
+    "R37": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R37 "
+      }
+     ],
+     "sent": false
+    },
+    "R38": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R38 "
+      }
+     ],
+     "sent": false
+    },
+    "R39": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R39 "
+      }
+     ],
+     "sent": false
+    },
+    "R40": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R40 "
+      }
+     ],
+     "sent": false
+    },
+    "R41": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R41 "
+      }
+     ],
+     "sent": false
+    },
+    "R42": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R42 "
+      }
+     ],
+     "sent": false
+    },
+    "R43": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R43 "
+      }
+     ],
+     "sent": false
+    },
+    "R44": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R44 "
+      }
+     ],
+     "sent": false
+    },
+    "R45": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R45 "
+      }
+     ],
+     "sent": false
+    },
+    "R46": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R46 "
+      }
+     ],
+     "sent": false
+    },
+    "R47": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R47 "
+      }
+     ],
+     "sent": false
+    },
+    "R48": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R48 "
+      }
+     ],
+     "sent": false
+    },
+    "R49": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R49 "
+      }
+     ],
+     "sent": false
+    },
+    "R51": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R51 "
+      }
+     ],
+     "sent": false
+    },
+    "R52": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R52 "
+      }
+     ],
+     "sent": false
+    },
+    "R55": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R55 "
+      }
+     ],
+     "sent": false
+    },
+    "R56": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R56 "
+      }
+     ],
+     "sent": false
+    },
+    "R57": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R57 "
+      }
+     ],
+     "sent": false
+    },
+    "R58": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Read with Meister 1906 no. 40 (the key scanned on R18, with Lasry's partial reconstruction D3175); the run-on 1-3 digit homophones segmented by a beam search with an Italian language model. A few dotted codes outside Meister's list and letter slips remain.",
+     "reading": [
+      {
+       "file": "targets/morosini1588/decrypt_raw.txt",
+       "block": "== R58 "
+      }
+     ],
+     "sent": false
+    },
+    "R17": {
+     "decode_status": "Partially",
+     "proposed": "Decrypted",
+     "note": "Read with Meister no. 40 (Morosini key, June 1587), which the key note on this record points to; the decryption file here is a Java error trace. A despatch of Morosini's nunciature, 1587, not a Bergamo/Nazareth letter (filed in Francia 18/3).",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R17.txt",
+       "section": ""
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "morosini1589": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/morosini1589.html",
+   "key": {
+    "decode": "R53 D3187 / R54 D3188 (Lasry's partial F22b reconstruction)"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R53": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Read in part with Lasry's partial F22b key (the key filed on this record), segmented by a beam search with an Italian language model: long stretches readable (the vice-legate of Avignon at Tours; heretics and Catholics mixing at court; Mayenne near Le Mans). Not Meister no. 40, the key of the other Francia 22 enclosures.",
+     "reading": [
+      {
+       "file": "targets/morosini1589/decrypt_raw.txt",
+       "block": "== R53 "
+      }
+     ],
+     "sent": false
+    },
+    "R54": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Read in part (fragments) with Lasry's partial F22b key, segmented by a beam search with an Italian language model; dated in clear Moulins, 11 May 1589. Not Meister no. 40.",
+     "reading": [
+      {
+       "file": "targets/morosini1589/decrypt_raw.txt",
+       "block": "== R54 "
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
   "hm1645": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/hm1645.html",
    "key": {
@@ -2183,55 +2647,44 @@
    "key": {
     "file": "targets/sp106box10/cat62/venetian_code.tsv",
     "lang": "Italian",
-    "how": "the codebreaker's own grid R658 of the three-figure Venetian code, a systematic syllabary; key R725 for the two-figure system"
+    "how": "the codebreaker's own grid R658 of the three-figure 'Venetian Cifer', a systematic syllabary (117 values)"
    },
    "cite": null,
    "fields": {
     "start_year": "1623",
     "end_year": "1624",
-    "plaintext_language": "Italian",
-    "document_type": "codebreaker's worksheet (not an intercept)"
+    "plaintext_language": "Italian"
    },
    "records": {
-    "R658": {
+    "R664": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Codebreaker's count-and-value grid of the three-figure 'Venetian Cifer' (the code of R660/R664), groups 136-565; with it the code is a systematic syllabary, table in targets/sp106box10/cat62/venetian_code.tsv. Same file as R657-R725, c. 1623-24.",
-     "reading": null,
-     "reading_not_needed": true,
-     "sent": false
-    },
-    "R661": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not an intercept: an English political draft in clear (Spain's treasure from the Indies, Portugal), reused by the SP 106/10 codebreaker for line fragments of a second three-figure code. c. 1623-24.",
+     "note": "Intercept in the three-figure 'Venetian Cifer' (the codebreaker's name, R701 p.1), half in clear Italian, glossed between the lines; the code is the grid R658, table in targets/sp106box10/cat62/venetian_code.tsv. Phrases deciphered (della loro sicurezza; et hoggi terzo giorno quelle de nuovo senza), not read through. Same file as R657-R725, c. 1623-24.",
      "reading": null,
      "reading_not_needed": true,
      "sent": false,
      "fields": {
-      "cleartext_language": "English"
+      "start_year": "1623",
+      "end_year": "1624",
+      "cipher type": "Three-figure syllabic code (consonant x a-e-i-o-u)"
      }
     },
-    "R663": {
+    "R660": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Codebreaker's worksheet: Italian syllable drills and an Italian-English word list, a few three-figure groups. Same file as R657-R725, c. 1623-24.",
+     "note": "Intercept in the same three-figure 'Venetian Cifer' as R664 (key: grid R658); not read through. c. 1623-24.",
      "reading": null,
      "reading_not_needed": true,
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1623",
+      "end_year": "1624"
+     }
     },
-    "R667": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Codebreaker's count grid of a second three-figure code (groups 200-577) and dictionary trawls; the intercept it belongs to is not among the imaged records. c. 1623-24.",
-     "reading": null,
-     "reading_not_needed": true,
-     "sent": false
-    },
-    "R684": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Codebreaker's worksheet on the second three-figure code: numbered lines of a missing intercept with trial syllables and frequency lists. c. 1623-24.",
+    "R658": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Codebreaker's count-and-value grid of the three-figure 'Venetian Cifer' (the code of R660/R664), groups 136-565; with it the code is a systematic syllabary, table in targets/sp106box10/cat62/venetian_code.tsv. Same file as R657-R725, c. 1623-24.",
      "reading": null,
      "reading_not_needed": true,
      "sent": false
@@ -2251,14 +2704,6 @@
      "reading": null,
      "reading_not_needed": true,
      "sent": false
-    },
-    "R703": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Not a letter: a codebreaker's worksheet (index of groups 200-399 by line, glossed fragments) on a lost 46-line Italian letter in what he calls the 'Venetian Cifar'; same letter worked on R661, R667, R684, R701, R702, R720; his partial syllabic key is R701 p.3. SP 106/10 file of 1623-24 (see R725). The intercept itself is not among the DECODE records.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
     }
    }
   },
@@ -3539,9 +3984,9 @@
    "key": {
     "file": "targets/bergamo1585/meister324_nomenclator.txt",
     "lang": "IT",
-    "how": "R16: Lasry's F18 key (D3105) with the nomenclator of Meister p. 324 no. 2; R17: Meister pp. 393-394 no. 40, LM segmentation"
+    "how": "R16: Lasry's F18 key (D3105) with the nomenclator of Meister p. 324 no. 2"
    },
-   "cite": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (Paderborn 1906), p. 324 no. 2 and pp. 393-394 no. 40",
+   "cite": "A. Meister, Die Geheimschrift im Dienste der päpstlichen Kurie (Paderborn 1906), p. 324 no. 2",
    "fields": {},
    "records": {
     "R16": {
@@ -3551,18 +3996,6 @@
      "reading": [
       {
        "file": "decode_updates/decryptions/R16.txt",
-       "section": ""
-      }
-     ],
-     "sent": false
-    },
-    "R17": {
-     "decode_status": "Partially",
-     "proposed": "Decrypted",
-     "note": "Read with Meister no. 40 (Morosini key, June 1587), which the key note on this record points to; the decryption file here is a Java error trace. 1587, not a Bergamo/Nazareth letter.",
-     "reading": [
-      {
-       "file": "decode_updates/decryptions/R17.txt",
        "section": ""
       }
      ],
@@ -5354,9 +5787,9 @@
   "kaa4591": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/kaa4591.html",
    "key": {
-    "file": "targets/kaa4591/NOTES.md",
-    "lang": "LA/DE",
-    "how": "Per record: R9325 key R9324 (same volume); R9322/R9323/R9417 key rebuilt from interlinear glosses (targets/kaa4591/sysB/key_from_glosses.tsv); R9408-R9427 key from the R9427 gloss (targets/kaa4591/r9427/key_full.tsv), improved on R9407 and re-learned per letter (targets/kaa4591/sysA2/); R9367 key register R9423 block 2_4; R9416 f.263 solved ciphertext-only"
+    "file": "targets/kaa4591/r9427/key_full.tsv",
+    "lang": "DE/LA",
+    "how": "System A' of KAA 4591 (R9408, R9409, R9410, R9413, R9427): key from the R9427 gloss (targets/kaa4591/r9427/key_full.tsv), improved on the sibling R9407 (augurelio1535) and re-learned per letter (targets/kaa4591/sysA2/). R9291 is a key fragment, not a ciphertext. The volume's other ciphertexts are separate entries since 15 Oct 2026: kaa4591b, wardein1537, sperantio1534, fulda1576, r9367, r9416, r9424, r9319."
    },
    "cite": null,
    "fields": {},
@@ -5370,71 +5803,6 @@
      "reading_not_needed": true,
      "fields": {
       "record_type": "key"
-     }
-    },
-    "R9319": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Dot grille laid over a clear cover letter (f. 115-118), which is not imaged; cannot be read from these images.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R9322": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Decrypted",
-     "note": "f.121 Hieronymus Laski, Buda 24 Nov 1529 (copy to Count Palatine Frederick); f.122 King John of Hungary to Duke Ludwig of Bavaria. Key rebuilt from the interlinear glosses.",
-     "reading": [
-      {
-       "file": "targets/kaa4591/sysB/decoded.txt"
-      }
-     ],
-     "sent": false,
-     "fields": {
-      "sender": "Hieronymus Laski; John Zapolya, King of Hungary",
-      "receiver": "Dukes of Bavaria",
-      "plaintext_lang": "Latin",
-      "date": "1529-11-24"
-     }
-    },
-    "R9323": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Laski to the Bavarian secretary; lines 4 and 8-10 faint. Key rebuilt from glosses on R9322/R9417.",
-     "reading": [
-      {
-       "file": "targets/kaa4591/sysB/R9323_decoded.txt"
-      }
-     ],
-     "sent": false,
-     "fields": {
-      "plaintext_lang": "Latin"
-     }
-    },
-    "R9325": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Decrypted",
-     "note": "Fulda affair 1576: abbot Balthasar von Dernbach protests. Key R9324 (f. 124-127, same volume).",
-     "reading": [
-      {
-       "file": "targets/kaa4591/r9325/reading.txt"
-      }
-     ],
-     "sent": false,
-     "fields": {
-      "plaintext_lang": "Latin",
-      "date": "1576"
-     }
-    },
-    "R9367": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Son to father, 22 March 1535; key R9423 block 2_4; working decrypt, one sign and six lines open. Machine decrypts in the repository, not yet a clean text.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "fields": {
-      "plaintext_lang": "German"
      }
     },
     "R9408": {
@@ -5532,46 +5900,6 @@
       "how": "System A' of KAA 4591: the key first rebuilt from the contemporary gloss on R9427, then improved on the sibling letter R9407 (augurelio1535 pass 2) and carried back by sign shape on 2 Oct 2026, re-learned on each letter by EM and a word-aware decoder (per-letter keys: targets/kaa4591/sysA2/<record>_g_key.json; the R9407 sign codes are mapped to these by targets/kaa4591/sysA2/prep.py). Word signs: hourglass = 'F.G.' (Dominationes in the Latin letter); a looped K = King Ferdinand by context (grade B, 5 Oct 2026)"
      }
     },
-    "R9416": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "f.262 read at the time (interlinear decipherment on the record); f.263 (Pressburg talks, c.1533-34) broken ciphertext-only, working decrypt only.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "fields": {
-      "plaintext_lang": "German"
-     }
-    },
-    "R9417": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Decrypted",
-     "note": "Laski, Krakow 16 June [1530], to the Bavarian secretary. Key rebuilt from the interlinear glosses.",
-     "reading": [
-      {
-       "file": "targets/kaa4591/sysB/decoded.txt"
-      }
-     ],
-     "sent": false,
-     "fields": {
-      "sender": "Hieronymus Laski",
-      "plaintext_lang": "Latin",
-      "date": "1530-06-16"
-     }
-    },
-    "R9424": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "To Duke Wilhelm V, 12 June 1583 (Cologne war); only the contemporary glosses of a few names; not read here.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "fields": {
-      "plaintext_lang": "German",
-      "date": "1583-06-12",
-      "receiver": "Wilhelm V, Duke of Bavaria"
-     }
-    },
     "R9427": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
@@ -5592,6 +5920,122 @@
       "lang": "DE",
       "how": "System A' of KAA 4591: the key first rebuilt from the contemporary gloss on R9427, then improved on the sibling letter R9407 (augurelio1535 pass 2) and carried back by sign shape on 2 Oct 2026, re-learned on each letter by EM and a word-aware decoder (per-letter keys: targets/kaa4591/sysA2/<record>_g_key.json; the R9407 sign codes are mapped to these by targets/kaa4591/sysA2/prep.py). Word signs: hourglass = 'F.G.' (Dominationes in the Latin letter); a looped K = King Ferdinand by context (grade B, 5 Oct 2026)"
      }
+    }
+   }
+  },
+  "fulda1576": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/fulda1576.html",
+   "key": {
+    "decode": "Key R9324 (BayHStA KAA 4591 ff. 124-127), the volume key with the same null signs; applied unchanged"
+   },
+   "cite": null,
+   "fields": {
+    "cipher_types": "monoalphabetic substitution with doubled-letter signs, nulls and a nomenclator"
+   },
+   "records": {
+    "R9325": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Fulda affair 1576: Abbot Balthasar von Dernbach protests that he accepted the papal inhibition under compulsion; the Duke of Bavaria and the nuncio are to be asked for help. Read in full with key R9324 (ff. 124-127, same volume), whose null signs match.",
+     "reading": [
+      {
+       "file": "targets/fulda1576/r9325/reading.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "plaintext_lang": "Latin",
+      "date": "1576"
+     }
+    }
+   }
+  },
+  "r9367": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r9367.html",
+   "key": {
+    "decode": "Key register R9423 (BayHStA KAA 4591), block 2_4 'H. Wilh. [15]25'"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R9367": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Son to father, Monday after Palm Sunday, 22 March 1535, German, names and phrases in cipher. Key R9423 (key register, block 2_4 'H. Wilh. [15]25') with five values added from context; read in part (targets/r9367/r9367/reading.txt); lines 1-2, 7, 9-10, 13 mostly unread.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "plaintext_lang": "German"
+     }
+    }
+   }
+  },
+  "r9416": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r9416.html",
+   "key": {
+    "none": "f.262: read from the contemporary decipherment, no key rebuilt; f.263: solver key only (targets/r9416/r9416/decrypt_f263.txt), not a clean key"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R9416": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Two leaves in two different sign sets. f.262 (pp.1-2): a Bavarian servant to his duke, 'eritags nach Jacobi' (Tuesday after 25 July), read at the time (faint interlinear decipherment, partly transcribed in targets/r9416/r9416/gloss.txt). f.263 (pp.3-4): report on the Pressburg talks between Ferdinand and King John, a Turkish embassy, Imre Czibak, Alvise Gritti (c.1533-34); homophonic key recovered here from the ciphertext alone; recto lines 11-16 read clean, the rest a working decrypt.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "plaintext_lang": "German"
+     },
+     "transcription": [
+      "targets/r9416/r9416/p34_v2.txt"
+     ]
+    }
+   }
+  },
+  "r9424": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r9424.html",
+   "key": {
+    "none": "no key found; R9420, R9421, R9422 tried"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R9424": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "To Duke Wilhelm V, 12 June 1583 (Cologne war), German with a Latin-letter substitution; contemporary glosses over a few names only (Hildesheim, Würzburg, Eichstätt, Freising). Attempted, not solved: R9422 (1582-83 alphabet), R9420, R9421 do not fit; annealing in German, Latin and Italian fails (probably code groups). Transcription attached.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "plaintext_lang": "German",
+      "date": "1583-06-12",
+      "receiver": "Wilhelm V, Duke of Bavaria"
+     },
+     "transcription": [
+      "targets/r9424/r9424/transcription.txt"
+     ]
+    }
+   }
+  },
+  "r9319": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r9319.html",
+   "key": {
+    "none": "dot grille; the cover letters it was laid over (ff. 115-118) are not imaged"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R9319": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "'Post Scripta', dockets '...83': squared grille sheets with dots, laid over a clear cover letter (ff. 115-118; one visible under f.102: 'Die 4 od 5000 Cronen...'), which DECODE did not image; cannot be read from these images.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
     }
    }
   },
@@ -6112,19 +6556,66 @@
   "kaa4591b": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/kaa4591b.html",
    "key": {
-    "file": "targets/kaa4591b/r9415/key.txt",
-    "lang": "LA/DE",
-    "how": "three keys: R9403 Łaski's System B (targets/kaa4591/sysB/key_from_glosses.tsv) with e/r swapped; R9415 homophonic key targets/kaa4591b/r9415/key.txt; R9414 homophonic key targets/kaa4591b/r9414/keyb.txt; the last two rebuilt from their glosses"
+    "file": "targets/kaa4591b/sysB/key_from_glosses.tsv",
+    "lang": "LA",
+    "how": "Łaski's cipher (System B of KAA 4591), rebuilt from 153 word pairs of the contemporary interlinear glosses on R9322 and R9417; applied to R9323, and to R9403 with the e and r signs exchanged. Word signs DAG = King John, BIGX = Ferdinand."
    },
    "cite": null,
    "fields": {
-    "cipher_types": "homophonic, nomenclator"
+    "cipher_types": "monoalphabetic substitution with word signs (nomenclator)"
    },
    "records": {
+    "R9322": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "f.121 Hieronymus Łaski, Buda 24 Nov 1529 (copy to Count Palatine Frederick); f.122 King John of Hungary to Duke Ludwig of Bavaria. Łaski's cipher; key rebuilt from the interlinear glosses; 429 of 445 words (96.4%).",
+     "reading": [
+      {
+       "file": "targets/kaa4591b/sysB/decoded.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "sender": "Hieronymus Laski; John Zapolya, King of Hungary",
+      "receiver": "Dukes of Bavaria",
+      "plaintext_lang": "Latin",
+      "date": "1529-11-24"
+     }
+    },
+    "R9323": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Łaski's circle to the Bavarian secretary; Łaski's cipher, key rebuilt from the glosses on R9322/R9417; 124 of 163 words, lines 4 and 8-10 faint.",
+     "reading": [
+      {
+       "file": "targets/kaa4591b/sysB/R9323_decoded.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "plaintext_lang": "Latin"
+     }
+    },
+    "R9417": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Łaski, Kraków 16 June [1530], to the Bavarian secretary Waisenfelder. Łaski's cipher; key rebuilt from the interlinear glosses; 217 of 219 words.",
+     "reading": [
+      {
+       "file": "targets/kaa4591b/sysB/decoded.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "sender": "Hieronymus Laski",
+      "plaintext_lang": "Latin",
+      "date": "1530-06-16"
+     }
+    },
     "R9403": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Hieronymus Łaski (Łask, 17 Sept 1531; docket 'anno 32') to a councillor of the Bavarian dukes, Latin, System B with e/r swapped; read 414/416 words. Sender Łaski, date 17 Sept 1531, plaintext Latin.",
+     "note": "Hieronymus Łaski (Łask, 17 Sept 1531; docket 'anno 32') to a councillor of the Bavarian dukes, Latin, Łaski's cipher (System B) with e/r swapped; read 414/416 words. Sender Łaski, date 17 Sept 1531, plaintext Latin.",
      "reading": "decode_updates/decryptions/R9403.txt",
      "sent": false,
      "fields": {
@@ -6133,24 +6624,25 @@
       "place": "Łask",
       "plaintext_lang": "Latin"
      }
-    },
-    "R9415": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Decrypted",
-     "note": "King John Zápolya's side to the Bavarian dukes, 18 April 1533 (clear date), address to Aurelio Augurelio; Latin; homophonic key rebuilt from the gloss; read 95.3%, 19 scattered words open.",
-     "reading": "decode_updates/decryptions/R9415.txt",
-     "sent": false,
-     "fields": {
-      "date": "1533-04-18",
-      "sender": "King John Zápolya (chancery)",
-      "receiver": "Dukes of Bavaria, via Aurelio Augurelio",
-      "plaintext_lang": "Latin"
-     }
-    },
+    }
+   }
+  },
+  "wardein1537": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/wardein1537.html",
+   "key": {
+    "file": "targets/wardein1537/r9414/keyb.txt",
+    "lang": "DE",
+    "how": "Homophonic alphabet 'G', rebuilt here from the contemporary gloss over P1 l.6-8 by annealing and a de-1500s beam; alternatives in r9414/alt_v2.txt and cp12/alt_p12.txt"
+   },
+   "cite": null,
+   "fields": {
+    "cipher_types": "homophonic substitution with a few word signs"
+   },
+   "records": {
     "R9414": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Unnamed Bavarian servant at Wardein (Nagyvárad) to Duke Ludwig of Bavaria, 14 March 1537 (clear date); German; homophonic key rebuilt from the gloss; read 91.3%, word signs without key and blotted words open.",
+     "note": "Unnamed Bavarian servant at Wardein (Nagyvárad) to Duke Ludwig of Bavaria, 14 March 1537 (clear date); German; homophonic key rebuilt from the gloss; 958 of 1,039 words (92.2%), word signs without key and blotted words open.",
      "reading": "decode_updates/decryptions/R9414.txt",
      "sent": false,
      "fields": {
@@ -7116,17 +7608,30 @@
    "key": {
     "file": "targets/sperantio1534/r9411/run7.txt",
     "lang": "LA",
-    "how": "Rebuilt from the contemporary interlinear decipherment on R9411 (constrained annealing), refitted on German for R9412 (targets/sperantio1534/r9411/run_r9412_R6.txt). The same key as R9415 in this volume (System L, targets/kaa4591b/r9415/key.txt)."
+    "how": "Rebuilt from the contemporary interlinear decipherment on R9411 (constrained annealing), refitted on German for R9412 (targets/sperantio1534/r9411/run_r9412_R6.txt). The same key as R9415 (system L), first rebuilt from its one-word gloss (targets/sperantio1534/r9415/key.txt)."
    },
    "cite": null,
    "fields": {
     "sender": "John (Zápolya), King of Hungary (R9411); an unnamed agent at Buda (R9412)",
     "receiver": "the Dukes of Bavaria (Wilhelm IV and Ludwig X)",
     "city": "Buda (Ofen)",
-    "date": "1534",
+    "date": "1533-1534 (R9415 1533-04-18)",
     "cipher_types": "homophonic substitution with a few word and digraph signs"
    },
    "records": {
+    "R9415": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "King John Zápolya's side to the Bavarian dukes, 18 April 1533 (clear date), address to Aurelio Augurelio; Latin; homophonic key (system L) rebuilt from the one-word gloss, the same key as R9411/R9412 (catalogue 163); 388 of 405 words (95.8%), 17 scattered words open.",
+     "reading": "decode_updates/decryptions/R9415.txt",
+     "sent": false,
+     "fields": {
+      "date": "1533-04-18",
+      "sender": "King John Zápolya (chancery)",
+      "receiver": "Dukes of Bavaria, via Aurelio Augurelio",
+      "plaintext_lang": "Latin"
+     }
+    },
     "R9411": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
@@ -7143,12 +7648,24 @@
     }
    }
   },
+  "malatesta1428": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/malatesta1428.html",
+   "skip": "image 1 of DECODE R1854, a record that holds four letters in four ciphers; the record's edits (all four letters, image 1 not read) are queued once, under r1854"
+  },
+  "mutiliana1428": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/mutiliana1428.html",
+   "skip": "image 3 of DECODE R1854, a record that holds four letters in four ciphers; the record's edits, with this letter's reading and key (targets/mutiliana1428/key3_p3.txt), are queued once, under r1854"
+  },
+  "cattanei1430": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/cattanei1430.html",
+   "skip": "images 4-5 of DECODE R1854, a record that holds four letters in four ciphers; the record's edits, with this letter's reading and key (targets/cattanei1430/key4_v2.txt), are queued once, under r1854"
+  },
   "r1854": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/r1854.html",
    "key": {
     "file": "targets/r1854/keys.txt",
     "lang": "LA, IT",
-    "how": "Images 2 and 4-5: homophonic keys rebuilt ciphertext-only (annealing on a Latin language model, then sign-by-sign checks). Image 3: key from the contemporary interlinear decipherment. Image 1: no key."
+    "how": "Four keys, one per letter (split into four entries 14 Oct 2026). Image 2 (targets/r1854/keys.txt) and images 4-5 (targets/cattanei1430/key4_v2.txt): homophonic keys rebuilt ciphertext-only (annealing on a Latin language model, then sign-by-sign checks). Image 3 (targets/mutiliana1428/key3_p3.txt): key from the contemporary interlinear decipherment. Image 1 (targets/malatesta1428/): no key."
    },
    "cite": "Falcioni, A., Pandolfo Malatesti e il concilio ecumenico di Ferrara (1438) (prints Pandolfo's 1438 cipher letter from its contemporary translation; ASMn AG b. 1081 c. 159-160, b. 840 c. 95)",
    "fields": {
@@ -8333,9 +8850,7 @@
   "sieniawski1708": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/sieniawski1708.html",
    "key": {
-    "file": "targets/sieniawski1708/key_table.json",
-    "lang": "DE",
-    "how": "letter table recovered from the ciphertext alone (alphabetical blocks of three, a = 7 8 9 ...); five code values from context"
+    "none": "Brancoveanu chancellery key printed by Kaczka 2012 n. 21 (not on DECODE)"
    },
    "cite": "M. W. Kaczka, 'Unpublished Letters of Constantin Brancoveanu and Constantin Stolnicul Cantacuzino, from the Polish Archives', Danubius XXX (Galati 2012), pp. 101-140",
    "fields": {},
@@ -8530,367 +9045,6 @@
       "plaintext_lang": "Polish",
       "sender": "Constantin Brancoveanu",
       "receiver": "Adam Mikolaj Sieniawski"
-     }
-    },
-    "R7475": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "Unsigned adviser to Hetman Sieniawski, c. 1707 (by content), Polish with Latin; Zbior Dzieduszyckich 26/32 nr 13 pp. 29-30. Full contemporary interlinear decipherment, transcribed; homophonic letter table in alphabetical blocks (a=17-18, b=20-21 ... z=56-57), 600 = krol szwedzki. Not in Kaczka 2012.",
-     "reading": "decode_updates/decryptions/R7475.txt",
-     "sent": false,
-     "key": {
-      "file": "targets/sieniawski1708/sien/R7475_key.tsv",
-      "lang": "PL",
-      "how": "rebuilt from the interlinear decipherment"
-     },
-     "fields": {
-      "plaintext_lang": "Polish",
-      "receiver": "Adam Mikolaj Sieniawski",
-      "start_year": "1707"
-     }
-    },
-    "R7476": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Probably Stanislaw Chomentowski, Polish envoy at the Porte, to Hetman Sieniawski, May-August 1714, Constantinople (by content: code XVIII glossed \"Hospodar Multański\", Brâncoveanu in Yedikule); Zbior Dzieduszyckich 26/32 nr 13 pp. 31-34. 3-digit alphabetical syllabary, glossed over 99.6% of the numbers; 94.9% of the tokens read in sense after seven passes; reading from the syllabary rebuilt from the glosses of R7476, R7484, R7485. Not in Kaczka 2012.",
-     "reading": "decode_updates/decryptions/R7476.txt",
-     "sent": false,
-     "key": {
-      "file": "targets/sieniawski1708/sien/syllabary.tsv",
-      "lang": "PL",
-      "how": "rebuilt from the interlinear decipherments of R7476, R7484, R7485"
-     },
-     "fields": {
-      "plaintext_lang": "Polish",
-      "receiver": "Adam Mikolaj Sieniawski",
-      "start_year": "1714",
-      "end_year": "1714"
-     }
-    },
-    "R7481": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "Constantin Turculet(?) to Hetman Sieniawski(?), 1709; Zbior Dzieduszyckich 26/32 nr 5. Polish news from Bender (700 Swedes with Gyllenkrook to Suceava; the King and Mazepa to go to Rakoczi); p. 3 is a fair copy of the decipherment. Full contemporary interlinear decipherment, transcribed; key B of Kaczka 2012 n. 22 (a=37 b=51 c=71 d=100 e=1 ...). Plaintext not printed.",
-     "reading": "decode_updates/decryptions/R7481.txt",
-     "sent": false,
-     "key": {
-      "none": "Turculet key printed by Kaczka 2012 n. 22 (not on DECODE)"
-     },
-     "fields": {
-      "plaintext_lang": "Polish",
-      "receiver": "Adam Mikolaj Sieniawski",
-      "start_year": "1709"
-     }
-    },
-    "R7482": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "Constantin Turculet(?) to Hetman Sieniawski(?), 1709; Zbior Dzieduszyckich 26/32 nr 5. Latin letter on the same news (Tarlo at Suceava, the Khan against the Circassians). Full contemporary interlinear decipherment, transcribed; key B of Kaczka 2012 n. 22 (a=37 b=51 c=71 d=100 e=1 ...). Plaintext not printed.",
-     "reading": "decode_updates/decryptions/R7482.txt",
-     "sent": false,
-     "key": {
-      "none": "Turculet key printed by Kaczka 2012 n. 22 (not on DECODE)"
-     },
-     "fields": {
-      "plaintext_lang": "Latin",
-      "receiver": "Adam Mikolaj Sieniawski",
-      "start_year": "1709"
-     }
-    },
-    "R7484": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "DECODE 'Krakow_UNK_3' is Stanislaw Chomentowski, voivode of Mazovia, envoy at the Porte, to Hetman Sieniawski, Adrianople 9 May 1713; shelfmark Zbior Dzieduszyckich 24/11 no. 116 (archive wrapper), not 26/32. 3-digit syllabary with full contemporary interlinear decipherment, transcribed.",
-     "reading": "decode_updates/decryptions/R7484.txt",
-     "sent": false,
-     "key": {
-      "file": "targets/sieniawski1708/sien/syllabary.tsv",
-      "lang": "PL",
-      "how": "rebuilt from the interlinear decipherments"
-     },
-     "fields": {
-      "plaintext_lang": "Polish",
-      "sender": "Stanislaw Chomentowski",
-      "receiver": "Adam Mikolaj Sieniawski",
-      "origin_city": "Adrianople",
-      "start_year": "1713",
-      "start_month": "5",
-      "start_day": "9",
-      "name": "ADzied 24/11 no. 116 (1)"
-     }
-    },
-    "R7485": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "DECODE 'Krakow_UNK_4' is Stanislaw Chomentowski to Hetman Sieniawski, undated (1713), the second letter of Zbior Dzieduszyckich 24/11 no. 116; same syllabary; the cipher passage is glossed between the lines and written out in clear at the head of the page.",
-     "reading": "decode_updates/decryptions/R7485.txt",
-     "sent": false,
-     "key": {
-      "file": "targets/sieniawski1708/sien/syllabary.tsv",
-      "lang": "PL",
-      "how": "rebuilt from the interlinear decipherments"
-     },
-     "fields": {
-      "plaintext_lang": "Polish",
-      "sender": "Stanislaw Chomentowski",
-      "receiver": "Adam Mikolaj Sieniawski",
-      "start_year": "1713",
-      "name": "ADzied 24/11 no. 116 (2)"
-     }
-    },
-    "R7486": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 7.3.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7486.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "7",
-      "start_month": "3",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7487": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 13.3.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7487.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "13",
-      "start_month": "3",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7488": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 27.3.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7488.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "27",
-      "start_month": "3",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7489": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 8.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7489.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "8",
-      "start_month": "5",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7490": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 12.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7490.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "12",
-      "start_month": "5",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7491": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 22.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7491.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "22",
-      "start_month": "5",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7492": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 26.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7492.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "26",
-      "start_month": "5",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7493": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 29.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7493.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "29",
-      "start_month": "5",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7494": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 5.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7494.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "5",
-      "start_month": "6",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7495": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 15.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7495.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "15",
-      "start_month": "6",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7496": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 16.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7496.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "16",
-      "start_month": "6",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7497": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 19.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7497.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "19",
-      "start_month": "6",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7498": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 23.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7498.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "23",
-      "start_month": "6",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7499": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 3.7.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7499.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "3",
-      "start_month": "7",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
-     }
-    },
-    "R7500": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "Dated Vienna 14.7.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
-     "reading": "decode_updates/decryptions/R7500.txt",
-     "sent": false,
-     "fields": {
-      "cleartext_lang": "German",
-      "plaintext_lang": "German",
-      "origin_city": "Vienna",
-      "sender": "agent signing 'Sidon' (Vienna)",
-      "start_day": "14",
-      "start_month": "7",
-      "start_year": "1706",
-      "cipher_types": "homophonic, nomenclator"
      }
     }
    }
@@ -9661,7 +9815,6 @@
    "writeup": "https://dbourdeau.github.io/cyphersolver/michell1751.html",
    "key": {
     "cabinet_v2": "targets/michell1751/key1751/key_cabinet_v2_final.tsv (WAINUT, PR #29: King-to-Michell cabinet code 1751, 179 values, from NA 1.10.29 inv. 5177 + PC 8)",
-    "envoy": "Michell's envoy code, rebuilt from the contemporary Dutch decipherments on DECODE R1050/R1051 (targets/michell1751/key1751/scripts/envoy_key.py)",
     "lang": "FR"
    },
    "cite": "Politische Correspondenz Friedrichs des Grossen 8 (1882) no. 5263",
@@ -9674,28 +9827,39 @@
      "reading": "targets/michell1751/NOTES.md",
      "transcription": "targets/michell1751/key1751/R1957_tx.txt",
      "sent": false
-    },
+    }
+   }
+  },
+  "r1955": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r1955.html",
+   "key": {
+    "envoy": "Michell's envoy code, rebuilt from the contemporary Dutch decipherments on DECODE R1050/R1051 (targets/michell1751/key1751/scripts/envoy_key.py; WAINUT, PR #29)",
+    "lang": "FR"
+   },
+   "cite": "WAINUT, PR #29 (11 Oct 2026), https://github.com/dbourdeau/cyphersolver/pull/29",
+   "fields": {},
+   "records": {
     "R1955": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Ministerial rescript to Michell of the same day, not in print. In the code of Michell's own reports to the King (as decrypted on R1050/R1051), not the cabinet code of R1957: 95 of 360 groups (26.4%) decoded, fragments only. A contemporary decipherment may be in Nationaal Archief 1.01.50 inv. 159 (not digitised). Plaintext language: French.",
-     "reading": "targets/michell1751/NOTES.md",
-     "transcription": "targets/michell1751/transcription_r1955.txt",
+     "note": "Ministerial rescript to Michell of the same day as R1957, not in print. In the code of Michell's own reports to the King (as decrypted on R1050/R1051), not the cabinet code of R1957: 95 of 360 groups (26.4%) decoded by WAINUT, fragments only. A contemporary decipherment may be in Nationaal Archief 1.01.50 inv. 159 (not digitised). Plaintext language: French.",
+     "reading": "targets/r1955/NOTES.md",
+     "transcription": "targets/r1955/transcription_r1955.txt",
      "sent": false
     }
    }
   },
-  "nevers1593": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/nevers1593.html",
+  "revol1593": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/revol1593.html",
    "key": {
-    "file": "targets/nevers1593/key60.txt",
+    "file": "targets/revol1593/key60.txt",
     "lang": "French",
     "how": "Court symbol cipher no. 60 (BnF fr. 3995 ff. 109-111) transcribed from the images; corrected 12 Oct 2026 from issue #32 (tunarob), checked on the images"
    },
    "cite": "S. Tomokiyo, cryptiana henryiv2.htm (key no. 60); corrections by Robert Węglarek (GitHub issue #32, dbourdeau/cyphersolver)",
    "fields": {},
    "records": {},
-   "note": "No DECODE record for the Revol letters or key no. 60 is known yet (DECODE not searched). If a record exists for fr. 3995 ff. 108-111 or fr. 3985 f. 88, attach key60.txt with these corrections: b = o- (ring, tail right), tu = -o-; c 4th = flag on a stem; d = ‡ (one stem, two bars) and ·x; i adds hook+cross; o 5th = \\\\; m 4th = m with loop below; u 4th = 2+, 5th = ‡ with loop; table f. 111: loop-on-stem with one bar = u, n+ = p, 2+ = u/J, closed 4+ = bien. fr. 3985 f. 88r read in part: '... de absolution', le Roy, qu'il (transcription targets/nevers1593/f88/ct_3985_f88.txt).",
+   "note": "No DECODE record for the Revol letters or key no. 60 is known yet (DECODE not searched). If a record exists for fr. 3995 ff. 108-111 or fr. 3985 f. 88, attach key60.txt with these corrections: b = o- (ring, tail right), tu = -o-; c 4th = flag on a stem; d = ‡ (one stem, two bars) and ·x; i adds hook+cross; o 5th = \\\\; m 4th = m with loop below; u 4th = 2+, 5th = ‡ with loop; table f. 111: loop-on-stem with one bar = u, n+ = p, 2+ = u/J, closed 4+ = bien. fr. 3985 f. 88r read in part: '... de absolution', le Roy, qu'il (transcription targets/revol1593/f88/ct_3985_f88.txt). Split 14 Oct 2026 from nevers1593 (the Pisany letters in key no. 46 have no DECODE record either).",
    "sent": false
   },
   "siena1431": {
@@ -9852,6 +10016,603 @@
      "transcription": [
       "targets/r1873/r1873_bonavoglia.txt"
      ]
+    }
+   }
+  },
+  "sp106r722": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r722.html",
+   "key": {
+    "none": "Not broken; the codebreaker's partial key on R701 p.3 values part of the code and conflicts with his glosses."
+   },
+   "cite": null,
+   "fields": {
+    "start_year": "1625",
+    "plaintext_language": "Italian"
+   },
+   "records": {
+    "R722": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "A Venetian secretary to the Venetian ambassador (endorsed 'Cypher of a Venetian Secretary to the Embassador of that nation in ...', 1625); first half of 1625 (Spinola before Breda, the Pope and Bethune in the clear passages). Not in the letter-and-figure system of R704/R721 (DECODE pointer '704; 720; 721'): a three-figure syllabic code, groups 200-599, not broken. 48 lines, 420 groups transcribed (attached). Worksheets on it: R656, R661, R662, R663, R667, R684, R701 p.3, R702 p.1, R703, R720.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1625",
+      "end_year": "1625",
+      "sender": "a Venetian secretary",
+      "receiver": "the Venetian ambassador ('Embassador of that nation')"
+     },
+     "transcription": [
+      "targets/sp106r722/r722_groups.txt"
+     ]
+    },
+    "R703": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Not a letter: a codebreaker's worksheet (index of groups 200-399 by line, glossed fragments) on a lost 46-line Italian letter in what he calls the 'Venetian Cifar'; same letter worked on R661, R667, R684, R701, R702, R720; his partial syllabic key is R701 p.3. SP 106/10 file. The intercept is R722 (1625).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R720": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not an intercept and not related to R704: the codebreaker's worksheet on R722 (line fragments l.2, l.6, l.16, l.22 of that letter) and trial words. 1625.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R656": {
+     "decode_status": "unknown",
+     "proposed": "unknown",
+     "note": "Back of an English Exchequer draft (a sheriff's answer; Nosse, Rowley, Sherborne, Franke) reused by the codebreaker for line fragments of R722 (l.12 '313 541 377 238 254' = R722 line 12). The English is not the solution, as DECODE says. 1625.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "cleartext_language": "English"
+     }
+    },
+    "R662": {
+     "decode_status": "unknown",
+     "proposed": "Non-decrypted",
+     "note": "Not a letter: a strip of the codebreaker's English memorandum on how the R722 code is built ('series of sillables', 'the vowels a.e.i. for every consonant'); 1625, not mid 17th century; not 'mostly solved'.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1625",
+      "cleartext_language": "English"
+     }
+    },
+    "R661": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not an intercept: an English political draft in clear (Spain's treasure from the Indies, Portugal), reused by the SP 106/10 codebreaker for line fragments of a second three-figure code. c. 1623-24.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "cleartext_language": "English"
+     }
+    },
+    "R663": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Codebreaker's worksheet: Italian syllable drills and an Italian-English word list, a few three-figure groups. Same file as R657-R725, c. 1623-24.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R667": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Codebreaker's count grid of a second three-figure code (groups 200-577) and dictionary trawls; the intercept is R722, 1625. c. 1623-24.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R684": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Codebreaker's worksheet on the second three-figure code: numbered lines of R722 with trial syllables and frequency lists. c. 1623-24.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "sp106r725": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r725.html",
+   "key": {
+    "decode": "725"
+   },
+   "cite": null,
+   "fields": {
+    "start_year": "1623",
+    "end_year": "1624",
+    "plaintext_language": "Italian"
+   },
+   "records": {
+    "R657": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Codebreaker's worksheets in the two-figure nomenclator whose key is R725 (bare/barred/ticked groups); not yet decoded with it. The key's vocabulary (Marques Inichiosa, C. Barberino) dates the file to 1623-24, not 1558/1625.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1623",
+      "end_year": "1624"
+     }
+    }
+   }
+  },
+  "sp106r704": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r704.html",
+   "key": {
+    "none": "Not yet worked; the codebreaker's interlinear syllables are on the pages."
+   },
+   "cite": null,
+   "fields": {
+    "start_year": "1623",
+    "end_year": "1624",
+    "plaintext_language": "Italian"
+   },
+   "records": {
+    "R704": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Intercept in a letter-and-figure syllabary (Z6 n54 m56 ...), Italian, glossed by the codebreaker; R720 (DECODE 'possibly related') is not in this system but a worksheet on R722. c. 1623-24.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1623",
+      "end_year": "1624"
+     }
+    },
+    "R721": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Intercept in the same letter-and-figure syllabary as R704. c. 1623-24.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1623",
+      "end_year": "1624"
+     }
+    }
+   }
+  },
+  "sp106r931": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r931.html",
+   "key": {
+    "none": "No key fits: Lasry's SP 106 keys (SP 106, -2, -3, -5, -8) and the Charles I-Culpeper 1645 key (R9117/R9118) tried."
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R931": {
+     "decode_status": "unknown",
+     "proposed": "unknown",
+     "note": "English royalist letter of Sept 1645 in a numerical nomenclator (~190 numbers 10-260, 104 distinct). Not part of the 1623-25 codebreaker's file in the same box. Lasry's 1645-46 SP 106 keys, the R932 Goring key and the Culpeper key R9117/R9118 do not fit; DECODE's transcription checked against the image.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1645",
+      "start_month": "9"
+     }
+    }
+   }
+  },
+  "schenck1706": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/schenck1706.html",
+   "key": {
+    "file": "targets/schenck1706/key_table.json",
+    "lang": "DE",
+    "how": "letter table recovered from the ciphertext alone (alphabetical blocks of three, a = 7 8 9 ...); five code values from context"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R7486": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 7.3.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7486.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "7",
+      "start_month": "3",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7487": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 13.3.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7487.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "13",
+      "start_month": "3",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7488": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 27.3.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7488.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "27",
+      "start_month": "3",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7489": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 8.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7489.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "8",
+      "start_month": "5",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7490": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 12.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7490.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "12",
+      "start_month": "5",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7491": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 22.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7491.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "22",
+      "start_month": "5",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7492": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 26.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7492.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "26",
+      "start_month": "5",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7493": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 29.5.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7493.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "29",
+      "start_month": "5",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7494": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 5.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7494.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "5",
+      "start_month": "6",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7495": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 15.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7495.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "15",
+      "start_month": "6",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7496": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 16.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7496.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "16",
+      "start_month": "6",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7497": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 19.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7497.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "19",
+      "start_month": "6",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7498": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 23.6.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7498.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "23",
+      "start_month": "6",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7499": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 3.7.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7499.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "3",
+      "start_month": "7",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    },
+    "R7500": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Dated Vienna 14.7.1706 (not Dresden): an agent signing 'Sidon' to the Baron de Schenck, chamberlain of Augustus II, at Cracow/Lublin; German clear text with a 2-digit letter table (alphabetical blocks of three, a = 7 8 9 ..., recovered here from the ciphertext alone) and a 3-digit nomenclator, 65 of 77 three-digit codes (persons) still open; the recipient's gloss gives o. = der, 5 = von, 83 = der Kayser. The attached reading gives each cipher passage in its sentence.",
+     "reading": "decode_updates/decryptions/R7500.txt",
+     "sent": false,
+     "fields": {
+      "cleartext_lang": "German",
+      "plaintext_lang": "German",
+      "origin_city": "Vienna",
+      "sender": "agent signing 'Sidon' (Vienna)",
+      "start_day": "14",
+      "start_month": "7",
+      "start_year": "1706",
+      "cipher_types": "homophonic, nomenclator"
+     }
+    }
+   }
+  },
+  "turculet1709": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/turculet1709.html",
+   "key": {
+    "none": "Turculet key printed by Kaczka 2012 n. 22 (not on DECODE); the interlinear decipherment is complete"
+   },
+   "cite": "M. W. Kaczka, 'Unpublished Letters of Constantin Brancoveanu and Constantin Stolnicul Cantacuzino, from the Polish Archives', Danubius XXX (Galati 2012), pp. 101-140",
+   "fields": {},
+   "records": {
+    "R7481": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Constantin Turculet(?) to Hetman Sieniawski(?), 1709; Zbior Dzieduszyckich 26/32 nr 5. Polish news from Bender (700 Swedes with Gyllenkrook to Suceava; the King and Mazepa to go to Rakoczi); p. 3 is a fair copy of the decipherment. Full contemporary interlinear decipherment, transcribed; key B of Kaczka 2012 n. 22 (a=37 b=51 c=71 d=100 e=1 ...). Plaintext not printed.",
+     "reading": "decode_updates/decryptions/R7481.txt",
+     "sent": false,
+     "key": {
+      "none": "Turculet key printed by Kaczka 2012 n. 22 (not on DECODE)"
+     },
+     "fields": {
+      "plaintext_lang": "Polish",
+      "receiver": "Adam Mikolaj Sieniawski",
+      "start_year": "1709"
+     }
+    },
+    "R7482": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Constantin Turculet(?) to Hetman Sieniawski(?), 1709; Zbior Dzieduszyckich 26/32 nr 5. Latin letter on the same news (Tarlo at Suceava, the Khan against the Circassians). Full contemporary interlinear decipherment, transcribed; key B of Kaczka 2012 n. 22 (a=37 b=51 c=71 d=100 e=1 ...). Plaintext not printed.",
+     "reading": "decode_updates/decryptions/R7482.txt",
+     "sent": false,
+     "key": {
+      "none": "Turculet key printed by Kaczka 2012 n. 22 (not on DECODE)"
+     },
+     "fields": {
+      "plaintext_lang": "Latin",
+      "receiver": "Adam Mikolaj Sieniawski",
+      "start_year": "1709"
+     }
+    }
+   }
+  },
+  "r7475": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r7475.html",
+   "key": {
+    "file": "targets/r7475/R7475_key.tsv",
+    "lang": "PL",
+    "how": "alphabetical-block homophonic table rebuilt from the interlinear gloss"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R7475": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Unsigned adviser to Hetman Sieniawski, c. 1707 (by content), Polish with Latin; Zbior Dzieduszyckich 26/32 nr 13 pp. 29-30. Full contemporary interlinear decipherment, transcribed; homophonic letter table in alphabetical blocks (a=17-18, b=20-21 ... z=56-57), 600 = krol szwedzki. Not in Kaczka 2012.",
+     "reading": "decode_updates/decryptions/R7475.txt",
+     "sent": false,
+     "key": {
+      "file": "targets/r7475/R7475_key.tsv",
+      "lang": "PL",
+      "how": "rebuilt from the interlinear decipherment"
+     },
+     "fields": {
+      "plaintext_lang": "Polish",
+      "receiver": "Adam Mikolaj Sieniawski",
+      "start_year": "1707"
+     }
+    }
+   }
+  },
+  "chomentowski1713": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/chomentowski1713.html",
+   "key": {
+    "file": "targets/chomentowski1713/syllabary.tsv",
+    "lang": "PL",
+    "how": "three-digit syllabary in alphabetical bands, rebuilt from the interlinear glosses"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R7476": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Probably Stanislaw Chomentowski, Polish envoy at the Porte, to Hetman Sieniawski, May-August 1714, Constantinople (by content: code XVIII glossed \"Hospodar Multański\", Brâncoveanu in Yedikule); Zbior Dzieduszyckich 26/32 nr 13 pp. 31-34. 3-digit alphabetical syllabary, glossed over 99.6% of the numbers; 94.9% of the tokens read in sense after seven passes; reading from the syllabary rebuilt from the glosses of R7476, R7484, R7485. Not in Kaczka 2012.",
+     "reading": "decode_updates/decryptions/R7476.txt",
+     "sent": false,
+     "key": {
+      "file": "targets/chomentowski1713/syllabary.tsv",
+      "lang": "PL",
+      "how": "rebuilt from the interlinear decipherments of R7476, R7484, R7485"
+     },
+     "fields": {
+      "plaintext_lang": "Polish",
+      "receiver": "Adam Mikolaj Sieniawski",
+      "start_year": "1714",
+      "end_year": "1714"
+     }
+    },
+    "R7484": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "DECODE 'Krakow_UNK_3' is Stanislaw Chomentowski, voivode of Mazovia, envoy at the Porte, to Hetman Sieniawski, Adrianople 9 May 1713; shelfmark Zbior Dzieduszyckich 24/11 no. 116 (archive wrapper), not 26/32. 3-digit syllabary with full contemporary interlinear decipherment, transcribed.",
+     "reading": "decode_updates/decryptions/R7484.txt",
+     "sent": false,
+     "key": {
+      "file": "targets/chomentowski1713/syllabary.tsv",
+      "lang": "PL",
+      "how": "rebuilt from the interlinear decipherments"
+     },
+     "fields": {
+      "plaintext_lang": "Polish",
+      "sender": "Stanislaw Chomentowski",
+      "receiver": "Adam Mikolaj Sieniawski",
+      "origin_city": "Adrianople",
+      "start_year": "1713",
+      "start_month": "5",
+      "start_day": "9",
+      "name": "ADzied 24/11 no. 116 (1)"
+     }
+    },
+    "R7485": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "DECODE 'Krakow_UNK_4' is Stanislaw Chomentowski to Hetman Sieniawski, undated (1713), the second letter of Zbior Dzieduszyckich 24/11 no. 116; same syllabary; the cipher passage is glossed between the lines and written out in clear at the head of the page.",
+     "reading": "decode_updates/decryptions/R7485.txt",
+     "sent": false,
+     "key": {
+      "file": "targets/chomentowski1713/syllabary.tsv",
+      "lang": "PL",
+      "how": "rebuilt from the interlinear decipherments"
+     },
+     "fields": {
+      "plaintext_lang": "Polish",
+      "sender": "Stanislaw Chomentowski",
+      "receiver": "Adam Mikolaj Sieniawski",
+      "start_year": "1713",
+      "name": "ADzied 24/11 no. 116 (2)"
+     }
     }
    }
   }
