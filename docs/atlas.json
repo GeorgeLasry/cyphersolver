@@ -1,5 +1,13 @@
 {
  "places": {
+  "Westminster": [
+   51.5,
+   -0.13
+  ],
+  "Bruges": [
+   51.21,
+   3.22
+  ],
   "Dijon": [
    47.32,
    5.04
@@ -120,6 +128,10 @@
    51.51,
    -0.13
   ],
+  "Edinburgh": [
+   55.95,
+   -3.19
+  ],
   "Madrid": [
    40.42,
    -3.7
@@ -143,6 +155,10 @@
   "Mogilev": [
    53.9,
    30.33
+  ],
+  "Rovno": [
+   50.62,
+   26.25
   ],
   "Moulins": [
    46.57,
@@ -414,6 +430,11 @@
   ]
  },
  "letters": [
+  {"slug": "thurloe", "doc": "a-beverning-1653", "year": 1653.66, "date": "1 Sept 1653", "from": "Westminster", "to": "Paris", "st": "stuck", "label": "Beverning and Vande Perre to Boreel"},
+  {"slug": "copinger1656", "doc": "c-brussels-1656", "year": 1656.61, "date": "12 Aug 1656", "from": "Brussels", "to": "London", "st": "stuck", "label": "Brussels to Mr Copinger"},
+  {"slug": "waddall1656", "doc": "d-waddall-1656", "year": 1656.64, "date": "22 Aug 1656", "from": "London", "to": "Bruges", "st": "stuck", "label": "Waddall to Vanyeare"},
+  {"slug": "santacruz1399", "doc": "Puig 1920 app. XXIX", "year": 1399.81, "date": "22 Oct 1399", "from": "Avignon", "to": "Barcelona", "st": "found", "label": "Fr. P. de Santa Cruz to Climent: the besieged household"},
+  {"slug": "vico1398", "doc": "vico-1398-line", "year": 1398.93, "date": "4 Dec 1398", "from": "Avignon", "to": "Barcelona", "st": "stuck", "label": "Fr. Pedro de Vico to Guillem Carbonell: one line in an unknown key"},
   {"slug": "nevers1593", "doc": "f209", "year": 1593.69, "date": "8 Sep 1593", "from": "Nevers", "to": "Rome", "st": "partial", "label": "Nevers to Pisany (cipher no. 46)"},
   {"slug": "michell1751", "doc": "R1957", "year": 1751.99, "date": "28 Dec 1751", "from": "Berlin", "to": "London", "st": "found", "label": "Frederick II to Michell, the King's own letter (Politische Correspondenz 5263)"},
   {"slug": "r1955", "doc": "R1955", "year": 1751.99, "date": "28 Dec 1751", "from": "Berlin", "to": "London", "st": "partial", "label": "Frederick II to Michell, the ministerial rescript (decoded in part by WAINUT)"},
@@ -471,24 +492,24 @@
    "label": "Sadoleto 1482"
   },
   {
-   "slug": "beatrice1482",
+   "slug": "beatrice1486",
    "doc": "R1142",
    "year": 1486.21,
    "date": "1486-03-08",
    "from": "Buda",
    "to": "Ferrara",
    "st": "found",
-   "label": "Beatrice d’Aragona"
+   "label": "Beatrice d’Aragona, March 1486"
   },
   {
-   "slug": "beatrice1482",
+   "slug": "beatrice1486b",
    "doc": "R1143",
    "year": 1486.38,
    "date": "1486-05-02",
    "from": "Buda",
    "to": "Ferrara",
    "st": "found",
-   "label": "Beatrice d’Aragona"
+   "label": "Beatrice d’Aragona, May 1486"
   },
   {
    "slug": "buda1489",
@@ -521,14 +542,14 @@
    "label": "Buda 1489"
   },
   {
-   "slug": "beatrice1482",
+   "slug": "beatrice1505",
    "doc": "R1154",
    "year": 1505.38,
    "date": "1505-05-29",
    "from": "Naples",
    "to": "Ferrara",
    "st": "found",
-   "label": "Beatrice d’Aragona"
+   "label": "Beatrice to Ippolito 1505"
   },
   {
    "slug": "vich1511",
@@ -587,28 +608,48 @@
    "date": "9 Mar 1519",
    "from": "Eger",
    "to": "Ferrara",
-   "st": "partial",
-   "label": "Caprile 1519–21"
+   "st": "stuck",
+   "label": "Caprile 1519"
   },
   {
-   "slug": "caprile1519",
+   "slug": "caprile1520",
    "doc": "R1138",
    "year": 1521.12,
    "date": "16 Feb 1521",
    "from": "Buda",
    "to": "Ferrara",
    "st": "partial",
-   "label": "Caprile 1519–21"
+   "label": "Caprile 1520–21"
   },
   {
-   "slug": "caprile1519",
+   "slug": "throck1559",
+   "doc": "R2988",
+   "year": 1559.52,
+   "date": "10 Jul 1559",
+   "from": "Paris",
+   "to": "London",
+   "st": "partial",
+   "label": "Throckmorton 1559"
+  },
+  {
+   "slug": "wod1568",
+   "doc": "R2989",
+   "year": 1568.68,
+   "date": "6 Sep 1568",
+   "from": "Edinburgh",
+   "to": "London",
+   "st": "stuck",
+   "label": "Wood 1568"
+  },
+  {
+   "slug": "caprile1520",
    "doc": "R1139",
    "year": 1521.29,
    "date": "6 Apr 1521",
    "from": "Buda",
    "to": "Ferrara",
    "st": "partial",
-   "label": "Caprile 1519–21"
+   "label": "Caprile 1520–21"
   },
   {
    "slug": "raince",
@@ -631,23 +672,13 @@
    "label": "Langeac 1529"
   },
   {
-   "slug": "sormano1529",
-   "doc": "fr3096-63-65-66",
-   "year": 1529.12,
-   "date": "23-27 Feb 1529",
-   "from": "Ferrara",
-   "to": "Paris",
-   "st": "partial",
-   "label": "Sormano"
-  },
-  {
    "slug": "sormano",
    "doc": "no65",
    "year": 1529.12,
    "date": "23 Feb 1529",
    "from": "Ferrara",
    "to": "Paris",
-   "st": "solved",
+   "st": "partial",
    "label": "Sormano 1529"
   },
   {
@@ -657,17 +688,17 @@
    "date": "23 Feb 1529",
    "from": "Ferrara",
    "to": "Paris",
-   "st": "solved",
+   "st": "partial",
    "label": "Sormano 1529"
   },
   {
    "slug": "sormano",
    "doc": "no63",
-   "year": 1529.12,
-   "date": "after 23 Feb 1529",
+   "year": 1529.15,
+   "date": "27 Feb 1529",
    "from": "Ferrara",
    "to": "Paris",
-   "st": "solved",
+   "st": "partial",
    "label": "Sormano 1529"
   },
   {
@@ -841,14 +872,14 @@
    "label": "Santa Croce 1553"
   },
   {
-   "slug": "guiche1551",
+   "slug": "noailles1558",
    "doc": "noailles1558",
    "year": 1558.88,
    "date": "1558-11-13",
    "from": "Venice",
    "to": "Paris",
-   "st": "partial",
-   "label": "La Guiche 1551"
+   "st": "stuck",
+   "label": "Noailles 1558"
   },
   {
    "slug": "percy1559",
@@ -1418,27 +1449,27 @@
    "from": "Saint-Denis",
    "to": "Venice",
    "st": "solved",
-   "label": "Maisse 1592–93"
+   "label": "Maisse 1592"
   },
   {
-   "slug": "maisse1592",
+   "slug": "maisse1593",
    "doc": "f406",
    "year": 1593.12,
    "date": "8 Feb 1593",
    "from": "Chartres",
    "to": "Venice",
-   "st": "solved",
-   "label": "Maisse 1592–93"
+   "st": "found",
+   "label": "Maisse 1593"
   },
   {
-   "slug": "maisse1592",
+   "slug": "maisse1593",
    "doc": "f410",
    "year": 1593.29,
    "date": "27 Apr 1593",
    "from": "Mantes",
    "to": "Venice",
-   "st": "solved",
-   "label": "Maisse 1592–93"
+   "st": "found",
+   "label": "Maisse 1593"
   },
   {
    "slug": "bethune",
@@ -2572,33 +2603,23 @@
   },
   {
    "slug": "affry1757",
-   "doc": "codeA",
+   "doc": "codeAB",
    "year": 1757.04,
-   "date": "6 Jan - 17 Feb 1757",
+   "date": "6 Jan 1757 - 17 Jan 1758",
    "from": "The Hague",
    "to": "Versailles",
    "st": "partial",
    "label": "d’Affry 1757"
   },
   {
-   "slug": "affry1757",
-   "doc": "codeB",
-   "year": 1757.12,
-   "date": "Feb 1757 - 17 Jan 1758",
+   "slug": "affry1757c",
+   "doc": "R1071",
+   "year": 1757.6,
+   "date": "4 or 7 Aug 1757",
    "from": "The Hague",
-   "to": "Versailles",
-   "st": "partial",
-   "label": "d’Affry 1757"
-  },
-  {
-   "slug": "affry1757",
-   "doc": "codeC",
-   "year": 1757.62,
-   "date": "7 Aug 1757",
-   "from": "The Hague",
-   "to": "Versailles",
-   "st": "partial",
-   "label": "d’Affry 1757"
+   "to": "Vienna",
+   "st": "stuck",
+   "label": "d’Affry to Stainville 1757"
   },
   {
    "slug": "affry1757",
@@ -2728,17 +2749,27 @@
    "from": "Constantinople",
    "to": "The Hague",
    "st": "stuck",
-   "label": "Van Dedem 1788–99"
+   "label": "Van Dedem 1788–93"
   },
   {
-   "slug": "vanreede1787",
+   "slug": "dedem1799",
+   "doc": "DECODE R1895",
+   "year": 1799.65,
+   "date": "26 Aug 1799",
+   "from": "Constantinople",
+   "to": "The Hague",
+   "st": "stuck",
+   "label": "Van Dedem to the Burger Agent 1799"
+  },
+  {
+   "slug": "vanreede1793",
    "doc": "DECODE R1893",
    "year": 1793.21,
    "date": "24 Mar 1793",
    "from": "Berlin",
    "to": "The Hague",
-   "st": "partial",
-   "label": "Van Reede 1787"
+   "st": "stuck",
+   "label": "Van Reede 1793"
   },
   {
    "slug": "r1944",
@@ -3011,14 +3042,24 @@
    "label": "Sun Yat-sen"
   },
   {
-   "slug": "orpo1942",
+   "slug": "orpo1942jun",
    "doc": "A115",
    "year": 1942.46,
    "date": "16 Jun 1942",
    "from": "Mogilev",
    "to": "Berlin",
+   "st": "solved",
+   "label": "Police radiogram A115 (Borki)"
+  },
+  {
+   "slug": "orpo1942",
+   "doc": "D33",
+   "year": 1942.16,
+   "date": "27 Feb 1942",
+   "from": "Rovno",
+   "to": "Berlin",
    "st": "stuck",
-   "label": "Police radiograms"
+   "label": "Police radiogram D33"
   },
   {
    "slug": "lopehurtado",
@@ -3621,7 +3662,7 @@
    "label": "Stafford November 1586"
   },
   {
-   "slug": "swieten1757",
+   "slug": "swieten1759",
    "doc": "R957",
    "year": 1759.04,
    "date": "14 January 1759",
@@ -3631,7 +3672,7 @@
    "label": "Van Swieten 1759"
   },
   {
-   "slug": "swieten1757",
+   "slug": "swieten1759",
    "doc": "R956",
    "year": 1759.09,
    "date": "4 February 1759",
@@ -3639,6 +3680,16 @@
    "to": "Brussels",
    "st": "solved",
    "label": "Van Swieten 1759"
+  },
+  {
+   "slug": "swieten1757",
+   "doc": "R955",
+   "year": 1758.0,
+   "date": "undated (1757-58)",
+   "from": "Bonn",
+   "to": "Brussels",
+   "st": "solved",
+   "label": "Van Swieten 1757-58 (Hanau)"
   },
   {
    "slug": "harley7001",
@@ -3921,7 +3972,7 @@
    "label": "Schiner to Henry VIII: Maximilian’s offer of Milan and the Empire"
   },
   {
-   "slug": "ilten1697",
+   "slug": "ilten1705",
    "doc": "GWLB Ms XXIII 1245:7 ff. 329r-330r",
    "year": 1706.4,
    "date": "25 May 1706",
@@ -4191,14 +4242,14 @@
    "label": "Lanssac"
   },
   {
-   "slug": "caprile1519",
+   "slug": "caprile1520",
    "doc": "V1921",
    "year": 1521.15,
    "date": "25 Feb 1521",
    "from": "Esztergom",
    "to": "Ferrara",
    "st": "partial",
-   "label": "Caprile 1519–21"
+   "label": "Caprile 1520–21"
   },
   {
    "slug": "kaa4591",
@@ -4219,6 +4270,26 @@
    "to": "Munich",
    "st": "partial",
    "label": "King John to the dukes, June 1534 (Latin)"
+  },
+  {
+   "slug": "erving1807",
+   "doc": "no21-24mar1807",
+   "year": 1807.23,
+   "date": "24 Mar 1807",
+   "from": "Madrid",
+   "to": "Washington",
+   "st": "solved",
+   "label": "Erving to Madison, No. 21"
+  },
+  {
+   "slug": "jqa",
+   "doc": "no88-25jun1812",
+   "year": 1812.48,
+   "date": "25 June 1812",
+   "from": "St Petersburg",
+   "to": "Washington",
+   "st": "solved",
+   "label": "Adams to the Secretary of State, No. 88"
   },
   {
    "slug": "erving1807aug",
@@ -4321,7 +4392,7 @@
    "label": "Torcy to the plenipotentiaries"
   },
   {
-   "slug": "geertruidenberg",
+   "slug": "villars1710",
    "doc": "R8756",
    "year": 1710.42,
    "date": "1 Jun 1710",

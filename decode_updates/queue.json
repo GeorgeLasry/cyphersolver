@@ -1204,7 +1204,7 @@
     "R1040": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Second segment only; first needs the missing Rechteren key.",
+     "note": "Two codebooks in one letter (de Leeuw 2000). From group 180 of image 5459 to image 5474 (5,956 groups) the 1765 Croiset key R1038 gives 88.2%; the first 1,928 groups (images 5453-5458, 5459 groups 1-179) are in a missing Rechteren-family code (probably NA inv. 158), not decrypted.",
      "reading": [
       {
        "file": "deswart1782\\R1040_second_key_machine_decipherment.txt"
@@ -1433,6 +1433,27 @@
       {
        "file": "targets/affry1757/read/R2067.md"
       }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "affry1757c": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/affry1757c.html",
+   "key": {
+    "none": "no key found: d'Affry's 1757 code to Rouillé and Bernis (key rebuilt from Lyonet's decipherments, targets/affry1757/key_U.json) gives nonsense on R1071, and no Stainville/Choiseul key is on DECODE"
+   },
+   "cite": "K. de Leeuw, Cryptology and statecraft in the Dutch Republic (2000); Lyonet's decipherments, Nationaal Archief 1.01.50 inv. 221/223 (not digitised)",
+   "fields": {},
+   "records": {
+    "R1071": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Attempted 19 Sept and 14 Oct 2026, not solved. A different code (761 groups, 357 distinct, to 1198) from the other inv. 192 letters to Rouillé and Bernis (R1052-R1076, R2067), which share one code; their key gives nonsense here. No decipherment among the images. The copy carries no. 485 and the date 4 Aug 1757 per the sibling write-up (DECODE: 7 Aug). DECODE transcription slips seen on p. 1: '24' is 240 (line 1); '1116 1158' run together (line 7). Lyonet's decipherment, if any, would be in NA 1.01.50 inv. 223.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/affry1757c/cipher_C.txt"
      ],
      "sent": false
     }
@@ -3057,7 +3078,7 @@
    },
    "cite": null,
    "fields": {
-    "plaintext_lang": "French (R483: Latin)",
+    "plaintext_lang": "French",
     "receiver": "Ferenc Rakoczi II (R852, R912, R922)"
    },
    "records": {
@@ -3093,16 +3114,177 @@
       }
      ],
      "sent": false
-    },
+    }
+   }
+  },
+  "rakoczi1711": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/rakoczi1711.html",
+   "key": {
+    "file": "targets/rakoczi1711/R483_key_rebuilt.json",
+    "lang": "LA",
+    "how": "224-code Latin syllabic key rebuilt by hard-EM alignment of the cipher with the clerk's interlinear (align483.py); not the R639 table"
+   },
+   "cite": null,
+   "fields": {
+    "plaintext_lang": "Latin",
+    "date": "27 June 1711 (not 7 June)"
+   },
+   "records": {
     "R483": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Rakoczi, Lwow 27 June 1711 (not 7 June); full interlinear decipherment; syllabic key (224 codes) rebuilt from it, file targets/rakoczi1704/R483_key_rebuilt.json.",
+     "note": "Rakoczi to an envoy bound for Holland, Lwow 27 June 1711 (not 7 June). The clerk's contemporary interlinear decipherment covers 2,524 of 2,531 groups; transcribed with the cipher and checked against a syllabic key (224 codes) rebuilt from it. Catalogued with R852/R912/R922, which are letters to Rakoczi in key R639.",
      "reading": [
       {
-       "file": "targets/rakoczi1704/R483_key_read.txt"
+       "file": "targets/rakoczi1711/R483_clerk.txt"
       }
      ],
+     "sent": false
+    }
+   }
+  },
+  "windischgraetz1720": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/windischgraetz1720.html",
+   "key": {
+    "decode": "R5017"
+   },
+   "cite": "J. Mírka, Západočeské archivy 2012, pp. 44-72 (describes letters and keys, no plaintext)",
+   "fields": {},
+   "records": {
+    "R5019": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Charles VI to Windischgrätz, Vienna, 3 Feb 1720 (autograph). All 26 cipher passages read with the Chancellery key R5017 applied as it stands (two key slips: 31 = zu, 268 = ein); 446 and 638 uncertain. The later letters R5021-R5024 are in the private key R5018, not R5017.",
+     "reading": [{"file": "targets/windischgraetz1720/dec_R5017_letter.md"}],
+     "sent": false
+    },
+    "R5020": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Register copy of R5019 (inv. 5 book 5 pp. 401-404); agrees with the autograph group for group; read with key R5017.",
+     "reading": [{"file": "targets/windischgraetz1720/dec_R5017_letter.md"}],
+     "sent": false
+    }
+   }
+  },
+  "windischgraetz1720b": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/windischgraetz1720b.html",
+   "key": {
+    "decode": "R5018"
+   },
+   "cite": "J. Mírka, Západočeské archivy 2012, pp. 44-72 (describes the key change, no plaintext)",
+   "fields": {},
+   "records": {
+    "R5021": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Charles VI to Windischgrätz, Vienna, 13 Apr 1720 (autograph): both cipher passages read with the private key R5018 (Orleans; the burden of the Barrier).",
+     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 2"}],
+     "sent": false
+    },
+    "R5022": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Register copy of R5021 (book 5 pp. 404-407); read with R5018.",
+     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 2"}],
+     "sent": false
+    },
+    "R5023": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Copy of No. 3, Vienna, 24 Jul 1720 (book 5 pp. 407-409; first image repeats pp. 406-407): all three passages read with R5018 (Beretti Landi's marriage proposal).",
+     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 3"}],
+     "sent": false
+    },
+    "R5024": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Copy of No. 6, Vienna, 11 Apr 1722, to Windischgrätz at Cambrai (book 5 pp. 414-416): all four passages read with R5018.",
+     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 6"}],
+     "sent": false
+    }
+   }
+  },
+  "beatrice1482": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/beatrice1482.html",
+   "key": {
+    "none": "no key identified; the decipherments are in print"
+   },
+   "cite": "I. Nagy and A. Nyáry (eds.), Magyar Diplomácziai Emlékek Mátyás király korából III (Budapest 1877), nos. 10 and 12, pp. 13-14, 16-17",
+   "fields": {},
+   "records": {
+    "R1140": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Beatrice to Eleonora, Pozsony, 31 May 1482: the cipher passages are printed deciphered (in italics) in MDE III (1877) no. 10, pp. 13-14; matched to the images. A different alphabet from the 1486 letters R1142/R1143.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R1141": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Beatrice to Eleonora, Pozsony, 8 June 1482 (not July): printed deciphered in MDE III (1877) no. 12, pp. 16-17; matched to the images. Holder given as 'Cancelleria, 1523' while the record name says 1623.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "beatrice1486": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/beatrice1486.html",
+   "key": {
+    "none": "the letter's 'old cipher' is not identified; a new one was enclosed"
+   },
+   "cite": "MDE IV (1878), supplement no. 45, pp. 367-368; MDE III (1877) no. 54, p. 67; A. Berzeviczy, Aragoniai Beatrix ... okiratok (1914) no. LVI, pp. 81-84",
+   "fields": {},
+   "records": {
+    "R1142": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Beatrice to Eleonora, Buda, 8 March 1486: cipher passages (first page) printed deciphered in MDE IV suppl. no. 45, the closing in MDE III no. 54, the plain body in Berzeviczy no. LVI; matched to the images. The closing says the letter uses the old cipher and encloses a new one. The print keeps unexplained 'Virtus', 'Fortis', 'M.'.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "beatrice1486b": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/beatrice1486b.html",
+   "key": {
+    "none": "no key identified; contemporary decipherment slips and the 1877 print give the reading"
+   },
+   "cite": "MDE III (1877), no. 75, pp. 93-96",
+   "fields": {},
+   "records": {
+    "R1143": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted (at the time)",
+     "note": "Beatrice to Eleonora, Buda, 2 May 1486: contemporary decipherment slips are photographed over the cipher (images P1, P4; P2, P5 the same pages with the slips moved), and MDE III no. 75 prints the reading. Six images = three written pages plus the address side, two pages shot twice.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "beatrice1505": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/beatrice1505.html",
+   "key": {
+    "none": "not a cipher"
+   },
+   "cite": "A. Berzeviczy, Aragoniai Beatrix ... okiratok (1914), no. CCCII, pp. 423-424",
+   "fields": {
+    "start_year": "1505",
+    "cipher_type": "none (plain letter)",
+    "current_holder": "State Archives of Modena, Carteggio Principi Esteri, 1623, b. 2/7, 11"
+   },
+   "records": {
+    "R1154": {
+     "decode_status": "Partially decrypted",
+     "proposed": "N/A (no cipher)",
+     "note": "Not a cipher: plain Italian, Beatrice to Ippolito I d'Este, Naples, 29 May 1505 (dating clause 'M° quingentesimo quinto', docket and photograph label agree; not 1504). It says 'per non havere cifra'. Printed by Berzeviczy (1914) no. CCCII.",
+     "reading": null,
+     "reading_not_needed": true,
      "sent": false
     }
    }
@@ -3228,57 +3410,6 @@
       }
      ],
      "sent": false
-    }
-   }
-  },
-  "caprile1519": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/caprile1519.html",
-   "key": {
-    "file": "targets/caprile1519/key21.json",
-    "lang": "IT",
-    "how": "Homophonic sign key rebuilt by EM alignment of the transcription against J. W. Somogyi's printed decipherment of the 16 Feb 1521 postscript (R1138 and Vestigia 1920); extended 2 Oct 2026 on V1921 (ASMo Ungheria b. 4, 1520-21 no. 12, not on DECODE): lone o = h/u, oo = b, z+/x+/xp = q, EL = f, K = et, o+ = s, D = b/x"
-   },
-   "cite": "J. W. Somogyi, Scriptorium VI (2025) 247-264, n. 50",
-   "fields": {},
-   "records": {
-    "R1139": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "fields": {
-      "receiver": "Alfonso I d'Este",
-      "city": "Buda"
-     },
-     "note": "Caprile to Duke Alfonso I, Buda, 6 Apr 1521 (slip). Read in part with the key rebuilt from Somogyi 2025 and extended on V1921 (1520-21 no. 12): second transcription at native resolution, 88.7% of decoded letters inside read phrases (2 Oct 2026), 89.7% after pass 5 (3 Oct 2026, 'mi per Milan'). Open: the numeral-like groups \"4 8 1 7\" and \"1 7\" and short stretches of lines 2, 4-5 and 8. No earlier decipherment.",
-     "reading": [
-      {
-       "file": "targets/caprile1519/pass3_r1136_r1139.md"
-      }
-     ],
-     "sent": false
-    },
-    "R1136": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Caprile to Bonaventura Pistofilo, 8 Mar 1520 (1519-20 no. 11). Read in part with the same 1520-21 key: second transcription at native resolution, 66.9% of decoded letters inside read phrases (2 Oct 2026). The custode of Eger, the see, Lactantio, the Kalocsa-Bacs see; the rest is limited by doubtful sign separations.",
-     "reading": [
-      {
-       "file": "targets/caprile1519/pass3_r1136_r1139.md"
-      }
-     ],
-     "sent": false
-    },
-    "R1138": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Decrypted",
-     "fields": {
-      "date": "1521-02-16",
-      "city": "Buda",
-      "receiver": "Alfonso I d'Este"
-     },
-     "note": "Deciphered by J. W. Somogyi, Scriptorium VI (2025) 259-260 n. 50. Letter of 16 Feb 1521, Buda, to Duke Alfonso I.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
     }
    }
   },
@@ -4020,12 +4151,12 @@
     }
    }
   },
-  "champagne1590": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/champagne1590.html",
+  "bienvenut1590": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/bienvenut1590.html",
    "key": {
-    "file": "targets/champagne1590/NOTES.md",
+    "file": "targets/bienvenut1590/NOTES.md",
     "lang": "French",
-    "how": "no. 23: key slip bound on f. 36r; nos. 24/25/60: alphabetical two-digit table rebuilt from interlinear glosses"
+    "how": "nine-entry name key bound with the copy on f. 36r (imaged on the record)"
    },
    "cite": null,
    "fields": {},
@@ -4033,11 +4164,23 @@
     "R9453": {
      "decode_status": "N/A (key record)",
      "proposed": "Decrypted",
-     "note": "Clear copy with a nine-entry name code; the key is bound on f. 36r and resolves every number.",
+     "note": "Not only a key record: Bienvenut's letter from Paris, last day of February 1590 (f. 35), a clear copy with a nine-entry name code, and its key bound on f. 36r, which resolves every number. Not the key of the June 1590 letters R9454/R9455/R9459 (a two-digit alphabet).",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
-    },
+    }
+   }
+  },
+  "champagne1590": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/champagne1590.html",
+   "key": {
+    "file": "targets/champagne1590/NOTES.md",
+    "lang": "French",
+    "how": "nos. 24/25/60: alphabetical two-digit table rebuilt from interlinear glosses (NOTES, table under 'Nos. 24, 25, 60')"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
     "R9454": {
      "decode_status": "Decrypted",
      "proposed": "Non-decrypted",
@@ -4257,6 +4400,64 @@
     }
    }
   },
+  "carre1742": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/carre1742.html",
+   "key": {
+    "none": "no key, clear copy or decipherment found; a two-part code (random order) of ~800 entries"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R2968": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. Heading \"Anonyme à Monsr Carré en Pellmall à Londres\", March 1742. Same two-part 3-figure code (~800 entries) as R2970 and R2972; the three letters (1323 groups, 381 distinct) were transcribed and tested: letter-homophonic anneal no better than a shuffled control, one-part order ruled out. No key or clear copy found. R2969 is the decipherer's frequency count of R2968+R2970, not a key.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/carre1742/carre/transcription_R2968.txt"
+     ],
+     "fields": {
+      "receiver": "Mr Carré, Pall Mall, London",
+      "cipher_types": "code (two-part, 3-figure)",
+      "plaintext_lang": "French?"
+     }
+    },
+    "R2970": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. Copy, undated, to Mr Carré \"en Palmal\", London, under cover to Mr Chevening(?), jeweller near Charing Cross; signed \"Anonyme\"; endorsed \"R Aug. 22 1742\" (received 22 Aug 1742), so not 1 Jan 1742. Same two-part 3-figure code (~800 entries) as R2968 and R2972; the three letters (1323 groups, 381 distinct) were transcribed and tested: letter-homophonic anneal no better than a shuffled control, one-part order ruled out. No key or clear copy found. R2969 is the decipherer's frequency count of R2968+R2970, not a key.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/carre1742/carre/transcription_R2970.txt"
+     ],
+     "fields": {
+      "date": "1742-08-22 (received; letter undated)",
+      "receiver": "Mr Carré, Pall Mall, London",
+      "cipher_types": "code (two-part, 3-figure)",
+      "plaintext_lang": "French?"
+     }
+    },
+    "R2972": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. London, 19 Jan 1745. Same two-part 3-figure code (~800 entries) as R2968 and R2970; the three letters (1323 groups, 381 distinct) were transcribed and tested: letter-homophonic anneal no better than a shuffled control, one-part order ruled out. No key or clear copy found. R2969 is the decipherer's frequency count of R2968+R2970, not a key.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/carre1742/carre/transcription_R2972.txt"
+     ],
+     "fields": {
+      "cipher_types": "code (two-part, 3-figure)",
+      "plaintext_lang": "French?"
+     }
+    }
+   }
+  },
   "bl32305": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/bl32305.html",
    "key": {
@@ -4292,54 +4493,6 @@
       "cipher_types": "code (two-part, 3-figure)",
       "plaintext_lang": "French",
       "cleartext_lang": "French"
-     }
-    },
-    "R2968": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. Heading \"Anonyme à Monsr Carré en Pellmall à Londres\", March 1742. Same two-part 3-figure code (~800 entries) as R2968/R2970/R2972; the three letters (1323 groups, 381 distinct) were transcribed and tested: letter-homophonic anneal no better than a shuffled control, one-part order ruled out. No key or clear copy found. R2969 is the decipherer's frequency count of R2968+R2970, not a key.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/bl32305/carre/transcription_R2968.txt"
-     ],
-     "fields": {
-      "receiver": "Mr Carré, Pall Mall, London",
-      "cipher_types": "code (two-part, 3-figure)",
-      "plaintext_lang": "French?"
-     }
-    },
-    "R2970": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. Copy, undated, to Mr Carré \"en Palmal\", London, under cover to Mr Chevening(?), jeweller near Charing Cross; signed \"Anonyme\"; endorsed \"R Aug. 22 1742\" (received 22 Aug 1742), so not 1 Jan 1742. Same two-part 3-figure code (~800 entries) as R2968/R2970/R2972; the three letters (1323 groups, 381 distinct) were transcribed and tested: letter-homophonic anneal no better than a shuffled control, one-part order ruled out. No key or clear copy found. R2969 is the decipherer's frequency count of R2968+R2970, not a key.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/bl32305/carre/transcription_R2970.txt"
-     ],
-     "fields": {
-      "date": "1742-08-22 (received; letter undated)",
-      "receiver": "Mr Carré, Pall Mall, London",
-      "cipher_types": "code (two-part, 3-figure)",
-      "plaintext_lang": "French?"
-     }
-    },
-    "R2972": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. London, 19 Jan 1745. Same two-part 3-figure code (~800 entries) as R2968/R2970/R2972; the three letters (1323 groups, 381 distinct) were transcribed and tested: letter-homophonic anneal no better than a shuffled control, one-part order ruled out. No key or clear copy found. R2969 is the decipherer's frequency count of R2968+R2970, not a key.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/bl32305/carre/transcription_R2972.txt"
-     ],
-     "fields": {
-      "cipher_types": "code (two-part, 3-figure)",
-      "plaintext_lang": "French?"
      }
     },
     "R2978": {
@@ -4959,14 +5112,6 @@
      "reading": null,
      "sent": false,
      "reading_not_needed": true
-    },
-    "R9586": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Sender Fabrizio Ruffo, principe di Castelcicala; receiver Tommaso di Somma, Marchese di Circello, foreign minister, Naples (DECODE's 'Marchese di Ciscello' is this address misread). Date on the document: undated, unknown. Different code from the rest of the series (values ~100-1100).",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
     }
    }
   },
@@ -5572,6 +5717,27 @@
     }
    }
   },
+  "r2236": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r2236.html",
+   "key": {
+    "none": "no list found: the French word list rebuilt from R2237 (which reads R2239) does not cover R2236's numbers (to about 390 and 2835) or its Dutch"
+   },
+   "cite": "K. de Leeuw, 'Johann Friedrich Euler (1741-1800): Mathematician and Cryptologist at the Court of the Dutch Stadholder William V', Cryptologia 25 (2001), 256-274 (cited on the record; not seen)",
+   "fields": {},
+   "records": {
+    "R2236": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. 'Copie No 1' and 'Copie No 2': Dutch letters with runs of numbers up to about 390 between clear Dutch words, and a page of numbers up to 2835 (bleeding through R2237 p. 1). Not in the numbered French word list of R2237/R2239 (R2239 is read with it; R2237 carries its own decipherment): R2236 uses another list. Viewed, not transcribed.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "cleartext_lang": "Dutch"
+     }
+    }
+   }
+  },
   "hereditary1796": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/hereditary1796.html",
    "key": {
@@ -5737,7 +5903,7 @@
   "wod1568": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/wod1568.html",
    "key": {
-    "decode": "Tomokiyo's Cipher 1 key attached to R2988 (DOC_2988), with seven corrections listed in targets/wod1568/NOTES.md"
+    "none": "Moray-Wood symbol cipher; no key on DECODE or in print; Bain CSP Scot. ii 804's cipher phrase does not align"
    },
    "cite": null,
    "fields": {},
@@ -5749,13 +5915,6 @@
      "reading": null,
      "sent": false,
      "reading_not_needed": true
-    },
-    "R2988": {
-     "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Throckmorton to Elizabeth, Paris, 10 July 1559: main text read ~85-90% with the attached Cipher 1 key (never printed). The marginal text is a separate word-sign code (probably a copy of the 8 July 1559 despatches, CSP For. i 947/950), not read.",
-     "reading": "decryptions/R2988.txt",
-     "sent": false
     }
    }
   },
@@ -6335,6 +6494,22 @@
      "sent": false,
      "reading_not_needed": true
     },
+    "R9238": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Gaspard de Coligny, Admiral of France, to Elizabeth I, camp at Villefranche, 12 Jan 1563 (margin 'L'Amiral de France a la Reine d'Angleterre 12 Jan 1562/3'; DECODE has 2 Jan). French. Forbes's copy of the ciphered passages (1)-(35). Deciphered at the time: CSP Foreign vi no. 76 ('Orig. almost entirely in cipher, deciphered'), clear text printed in Forbes, Full View ii 272-274. Key: R335 (Condé cipher; '&' and '14' nulls, omega = La Royne d'Angleterre on the heading line). f.143 lower half begins the 24 Jan letter (R9239).",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "fields": {
+      "start_year": "1563",
+      "start_month": "1",
+      "start_day": "12",
+      "sender": "Gaspard de Coligny",
+      "receiver": "Elizabeth I",
+      "plaintext_lang": "French"
+     }
+    },
     "R9239": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
@@ -6801,9 +6976,9 @@
   "swieten1757": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/swieten1757.html",
    "key": {
-    "file": "targets/swieten1757/key.json",
+    "file": "targets/swieten1757/NOTES.md",
     "lang": "FR",
-    "how": "R955: its own decipherment on the page. R956/R957: 1759 alphabetical syllabary (100-442) rebuilt ciphertext-only, monotone annealing + context (targets/swieten1757/msolve.py, dec.py)."
+    "how": "R955: its own decipherment on the page; the 1757 table (202-586) aligned from it. R956/R957 (the 1759 table) are queued under swieten1759 since 14 Oct 2026."
    },
    "cite": null,
    "fields": {
@@ -6818,7 +6993,23 @@
      "note": "The clear lines under the numbers on f. 141 are the decipherment of the ciphered sentence (Hanau magistrates, neutrality); they give an alphabetical syllabary. Reading attached.",
      "reading": "decode_updates/decryptions/R955.txt",
      "sent": false
-    },
+    }
+   }
+  },
+  "swieten1759": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/swieten1759.html",
+   "key": {
+    "file": "targets/swieten1759/key.json",
+    "lang": "FR",
+    "how": "1759 alphabetical syllabary (100-442) rebuilt ciphertext-only, monotone annealing + context (targets/swieten1759/msolve.py, dec.py)."
+   },
+   "cite": null,
+   "fields": {
+    "plaintext_lang": "French",
+    "cleartext_lang": "French",
+    "city": "Bonn"
+   },
+   "records": {
     "R957": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
@@ -6829,7 +7020,7 @@
     "R956": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Read with the same rebuilt 1759 table; about 16 of 343 groups open (names). Four DECODE transcription runs have dropped/doubled digits; corrected from the scans (targets/swieten1757/runs.txt).",
+     "note": "Read with the same rebuilt 1759 table; about 16 of 343 groups open (names). Four DECODE transcription runs have dropped/doubled digits; corrected from the scans (targets/swieten1759/runs.txt).",
      "reading": "decode_updates/decryptions/R956.txt",
      "sent": false
     }
@@ -8247,6 +8438,24 @@
   "benedict1399": {
    "skip": "Not on DECODE: no record for the Arxiu Capitular de Barcelona or these letters among the 10,106 DECODE records (list.json, checked 23 Sept 2026); the originals are not imaged anywhere, so there is nothing to correct and no record to propose."
   },
+  "vico1398": {
+   "skip": "Not on DECODE (split 14 Oct 2026 from benedict1399): no record for the Arxiu Capitular de Barcelona; the line was never printed or imaged, so there is nothing to correct and no record to propose."
+  },
+  "santacruz1399": {
+   "skip": "Not on DECODE (split 14 Oct 2026 from benedict1399): no record for the Arxiu Capitular de Barcelona; the original is not imaged, so there is nothing to correct and no record to propose."
+  },
+  "jafet1400": {
+   "skip": "Not on DECODE (split 14 Oct 2026 from benedict1399): no record for the Arxiu Capitular de Barcelona; the original is not imaged, so there is nothing to correct and no record to propose."
+  },
+  "exea1408": {
+   "skip": "Not on DECODE (split 14 Oct 2026 from benedict1399): no record for the Arxiu Capitular de Barcelona; the original is not imaged, so there is nothing to correct and no record to propose."
+  },
+  "comuel1415": {
+   "skip": "Not on DECODE (split 14 Oct 2026 from benedict1399): no record for the Arxiu Capitular de Barcelona; the original is not imaged, so there is nothing to correct and no record to propose."
+  },
+  "comuel1416": {
+   "skip": "Not on DECODE (split 14 Oct 2026 from benedict1399): no record for the Arxiu Capitular de Barcelona; the original is not imaged, so there is nothing to correct and no record to propose."
+  },
   "ungnad1576": {
    "writeup": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/ungnad1576/NOTES.md (notes only, no site page)",
    "key": {
@@ -9052,7 +9261,7 @@
   "geertruidenberg": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/geertruidenberg.html",
    "key": {
-    "none": "no key found: R8766 (Torcy-Petkum 1709), R8767, R8768, DECODE R587, Tomokiyo's 1710 Desmarets table (11B) and the BnF fr. 6204 keys were tried and do not fit"
+    "none": "no key found: R8766 (Torcy-Petkum 1709), R8767, DECODE R587, Tomokiyo's 1710 Desmarets table (11B) and the BnF fr. 6204 keys were tried and do not fit"
    },
    "cite": "A. Legrelle, La diplomatie française et la succession d'Espagne, 1st ed., vol. 4, p. 546 and n. 2 (cites 'Torcy aux plénipotentiaires, 3 avril 1710', AE CP Hollande t. 223); S. Tomokiyo, Cryptiana, blencowe2.htm",
    "fields": {},
@@ -9060,7 +9269,7 @@
     "R8755": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
-     "note": "Not read. Torcy to the French plenipotentiaries at Geertruidenberg (maréchal d'Huxelles, abbé de Polignac), Versailles, 3 April 1710; intercepted, endorsed 'Mr Blencowe cannot decypher them'. The dorse date '3 April 1709' is a slip for 1710 (f. 38r is dated 1710; Legrelle iv 546 n. 2 cites the letter under 3 April 1710 with the French copy in AE CP Hollande t. 223, not digitised). The letter opens in clear on f. 38r-38v (Vanderdussen's plea for the R.P.R. ministers); the DOC transcription omits it ('...'), so a transcription of the clear text is attached. Notation in the DOC: '11^0' = 110, '31^6' = 316, '311^' = 311, '7*29' = 729 (confirmed by the repeat '288 729'); otherwise the DOC agrees with the images. 690 cipher groups (285 distinct, values 1-823), a two-part code of 800+ values; no key fits (R8766, R8767, R8768, R587, Tomokiyo 11B, BnF fr. 6204 keys). R8756 is a different code.",
+     "note": "Not read. Torcy to the French plenipotentiaries at Geertruidenberg (maréchal d'Huxelles, abbé de Polignac), Versailles, 3 April 1710; intercepted, endorsed 'Mr Blencowe cannot decypher them'. The dorse date '3 April 1709' is a slip for 1710 (f. 38r is dated 1710; Legrelle iv 546 n. 2 cites the letter under 3 April 1710 with the French copy in AE CP Hollande t. 223, not digitised). The letter opens in clear on f. 38r-38v (Vanderdussen's plea for the R.P.R. ministers); the DOC transcription omits it ('...'), so a transcription of the clear text is attached. Notation in the DOC: '11^0' = 110, '31^6' = 316, '311^' = 311, '7*29' = 729 (confirmed by the repeat '288 729'); otherwise the DOC agrees with the images. 690 cipher groups (285 distinct, values 1-823), a two-part code of 800+ values; no key fits (R8766, R8767, R587, Tomokiyo 11B, BnF fr. 6204 keys). R8756 is a different code (queued under villars1710).",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
@@ -9075,7 +9284,17 @@
       "targets/geertruidenberg/torcy_clear.txt",
       "targets/geertruidenberg/torcy_groups.txt"
      ]
-    },
+    }
+   }
+  },
+  "villars1710": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/villars1710.html",
+   "key": {
+    "none": "no key found: Tomokiyo's 1710 Desmarets table (11B) and R8768 (marquis de Rose) were tried and do not fit"
+   },
+   "cite": "S. Tomokiyo, Cryptiana, blencowe2.htm; Villars, Mémoires, ed. Vogüé, vol. 3, appendix",
+   "fields": {},
+   "records": {
     "R8756": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
@@ -9091,7 +9310,7 @@
       "cleartext_language": "French"
      },
      "transcription": [
-      "targets/geertruidenberg/villars_groups.txt"
+      "targets/villars1710/villars_groups.txt"
      ]
     }
    }
@@ -10615,6 +10834,242 @@
      }
     }
    }
+  },
+  "caprile1520": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/caprile1520.html",
+   "key": {
+    "file": "targets/caprile1520/key21.json",
+    "lang": "IT",
+    "how": "Homophonic sign key rebuilt by EM alignment of the transcription against J. W. Somogyi's printed decipherment of the 16 Feb 1521 postscript (R1138 and Vestigia 1920); extended 2 Oct 2026 on V1921 (ASMo Ungheria b. 4, 1520-21 no. 12, not on DECODE): lone o = h/u, oo = b, z+/x+/xp = q, EL = f, K = et, o+ = s, D = b/x"
+   },
+   "cite": "J. W. Somogyi, Scriptorium VI (2025) 247-264, n. 50",
+   "fields": {},
+   "records": {
+    "R1139": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "fields": {
+      "receiver": "Alfonso I d'Este",
+      "city": "Buda"
+     },
+     "note": "Caprile to Duke Alfonso I, Buda, 6 Apr 1521 (slip). Read in part with the key rebuilt from Somogyi 2025 and extended on V1921 (1520-21 no. 12): second transcription at native resolution, 88.7% of decoded letters inside read phrases (2 Oct 2026), 89.7% after pass 5 (3 Oct 2026, 'mi per Milan'). Open: the numeral-like groups \"4 8 1 7\" and \"1 7\" and short stretches of lines 2, 4-5 and 8. No earlier decipherment.",
+     "reading": [
+      {
+       "file": "targets/caprile1520/pass3_r1136_r1139.md"
+      }
+     ],
+     "sent": false
+    },
+    "R1136": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Caprile to Bonaventura Pistofilo, 8 Mar 1520 (1519-20 no. 11). Read in part with the same 1520-21 key: second transcription at native resolution, 66.9% of decoded letters inside read phrases (2 Oct 2026). The custode of Eger, the see, Lactantio, the Kalocsa-Bacs see; the rest is limited by doubtful sign separations.",
+     "reading": [
+      {
+       "file": "targets/caprile1520/pass3_r1136_r1139.md"
+      }
+     ],
+     "sent": false
+    },
+    "R1138": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "fields": {
+      "date": "1521-02-16",
+      "city": "Buda",
+      "receiver": "Alfonso I d'Este"
+     },
+     "note": "Deciphered by J. W. Somogyi, Scriptorium VI (2025) 259-260 n. 50. Letter of 16 Feb 1521, Buda, to Duke Alfonso I.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
+  "caprile1519": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/caprile1519.html",
+   "key": {
+    "none": "no key for the 1519 two-tier cipher on DECODE or in print; tables rebuilt here from the 1882 decipherments of R1130 (4c) and R1133 (7c) do not read R1128"
+   },
+   "cite": "ASMo inventory, Carteggio ambasciatori, Ungheria (1882 decipherments)",
+   "fields": {},
+   "records": {
+    "R1128": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "fields": {
+      "receiver": "Bonaventura Pistofilo",
+      "city": "Eger"
+     },
+     "note": "Caprile to the ducal secretary Bonaventura Pistofilo, Eger, 9 Mar 1519 (ASMo Ungheria b. 4, Caprili 1519-20 no. 1; Vestigia 1853). Seven cipher lines in the 1519 two-tier cipher (183 columns, 39 bracket code words) and a clear postscript about Caprile's lawsuit at Rome; no decipherment exists. 'Partially' reflects the clear text only. The sibling letters R1129-R1135 in the same cipher have 1882 decipherments filed as b/c copies (Vestigia 1856-1875); a column transcription is attached. Attempted 21 Sept and 2 Oct 2026, not read.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/caprile1519/t1519.txt"
+     ],
+     "sent": false
+    },
+    "R1131": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Caprili 1519-20 no. 5a, 12 May 1519. Its 1882 decipherment is filed after it as 5b and 5c (Vestigia 1862-1863), not on the DECODE record.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R1135": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Caprili 1519-20 no. 10a. Interlinear gloss on the leaf and a 19th-century copy 10b with gaps (Vestigia 1875).",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "cistarelli1520": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/cistarelli1520.html",
+   "key": {
+    "none": "no numeric key of the Este chancery 1490-1550 on DECODE or in print; a ciphertext-only anneal gives fragments only"
+   },
+   "fields": {},
+   "records": {
+    "R1137": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "fields": {
+      "cipher_type": "two-digit figure cipher (homophonic), mixed with clear text",
+      "city": "Eger"
+     },
+     "note": "Alfonso Cistarelli to Cardinal Ippolito I d'Este, Eger, 25 Jul 1520 (ASMo Ungheria b. 4/26 no. 3; Vestigia 1904). P1 and P3 clear, P4 address; cipher on P2: 584 two-digit groups (mostly ending in 5 or 0) and 83 other signs. 'Partially' reflects the clear text only. Ciphertext-only anneal beats a shuffled control but gives fragments; cribs do not land; a second reading disagrees on 13 of 92 groups. Attempted 21 Sept and 2 Oct 2026, not read; transcription attached.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/cistarelli1520/r1137_transcription.txt"
+     ],
+     "sent": false
+    }
+   }
+  },
+  "throck1559": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/throck1559.html",
+   "key": {
+    "decode": "Tomokiyo's Cipher 1 key attached to R2988 (DOC_2988), with seven corrections listed in targets/throck1559/NOTES.md"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R2988": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Throckmorton to Elizabeth, Paris, 10 July 1559: main text read ~85-90% with the attached Cipher 1 key (never printed); seven key values corrected (targets/throck1559/NOTES.md). The marginal text on the same leaf is a separate word-sign code (probably a copy of the 8 July 1559 despatches, CSP For. i 947/950), not read: 222 groups, 113 used once (targets/throck1559margin/).",
+     "reading": "decryptions/R2988.txt",
+     "sent": false
+    }
+   }
+  },
+  "throck1559margin": {
+   "skip": "R2988 is queued under throck1559 (one DECODE record holds both texts); its note already records the margin code as unread, and nothing else on DECODE needs correcting."
+  },
+  "dedem1799": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/dedem1799.html",
+   "key": {
+    "none": "no key on DECODE or known for this marked code; it is not the 1788-93 Dedem code (R2120-R2131)"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R1895": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not read. Van Dedem to the Burger Agent (M. van der Goes), No. XVIII, Duplicaat, Constantinople 26 Aug 1799. Two- and three-digit code groups with superscript marks (x, double stroke, bar, tilde) and underlines on images 2 and 4; image 3 is the clear text of the letter. Image 1 is an unrelated clear page signed Schimmelpenninck and does not belong to this record. A different system from Van Dedem's 1788-93 code (R2120, R2122, R2131). Not yet transcribed.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "vanreede1793": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/vanreede1793.html",
+   "key": {
+    "none": "marked three-digit code; the 1793 Fagel key bundle (R2846, R2848, R2850, R2851) and R2243 tried, no fit"
+   },
+   "fields": {},
+   "records": {
+    "R1893": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "fields": {
+      "plaintext_lang": "Dutch",
+      "cleartext_lang": "Dutch"
+     },
+     "note": "Van Reede (Berlin) to the Secret Committee of the States General, 24 Mar 1793. Language is Dutch, not Hungarian. Not William V's Grand Chiffre (R1024, which reads van Reede's 1787-88 despatches R1026/R1027): three-digit groups with per-digit overmarks, 696 groups in 513 distinct marked forms. Keys R2846, R2848, R2850, R2851 and R2243 tried, no fit; no crib. Attempted 20-21 Sept 2026, not read.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "r9586": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r9586.html",
+   "key": {
+    "none": "second code of the Castelcicala series; no key on DECODE; the Segreteria di Stato key rebuilt in castelcicala1816 does not apply"
+   },
+   "fields": {
+    "sender": "Fabrizio Ruffo, principe di Castelcicala",
+    "plaintext_lang": "Italian"
+   },
+   "records": {
+    "R9586": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Sender Fabrizio Ruffo, principe di Castelcicala (signed); receiver presumably the Naples foreign ministry (not named on the leaf). Undated. A second code (groups mostly 100-1100), shared only with R9588, not the Segreteria di Stato code of the rest of the series (R9553-R9589); sparse pencil syllabic glosses on the leaf. Transcription attached; not read.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/r9586/transcripts/R9586.txt"
+     ]
+    },
+    "R9588": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Signed 'Il Principe di Castelcicala' (Fabrizio Ruffo); undated, no number or address. Same second code as R9586 (groups mostly 100-1100), not the Segreteria di Stato code of the rest of the series; sparse pencil glosses ('tal ... in che stato'). Transcription attached; not read.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/r9586/transcripts/R9588.txt"
+     ],
+     "sent": false
+    }
+   }
+  },
+  "papai1710": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/papai1710.html",
+   "key": {
+    "none": "graphic-sign alphabet; Pápai's numeric keys R580/R581/R452 do not cover it and no sign alphabet is known"
+   },
+   "fields": {
+    "plaintext_lang": "Hungarian"
+   },
+   "records": {
+    "R731": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "fields": {
+      "sender": "János Pápai",
+      "receiver": "Ferenc Rákóczi II",
+      "origin_city": "Landor Fejérvár (Belgrade)"
+     },
+     "note": "Pápai to Rákóczi, Belgrade, 6 Mar 1710, signed. Clear Hungarian except six short passages in a graphic-sign alphabet (~330 signs), not the numeric envoy key R580 that reads Pápai's other letters. Tentative transcription attached; a control-validated substitution solver finds no Hungarian on it; better images needed. Not read.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/papai1710/R731_signs.txt"
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {
@@ -11120,27 +11575,12 @@
  "foix1563": {
   "writeup": null,
   "key": {
-   "decode": "no key; R9238 deciphered at the time (English decipherment on the TNA SP 70 original); R9241 unknown",
+   "decode": "no key on DECODE; R9241 is in Paul de Foix's own cipher (Tomokiyo's reconstruction from BnF fr. 15971, 1565). R9238 moved to coligny1563 (14 Oct 2026)",
    "lang": "FR"
   },
-  "cite": "CSP Foreign Eliz. vi (1869) no. 76; P. Forbes, A Full View of the Public Transactions ii (1741) 272-274",
+  "cite": null,
   "fields": {},
   "records": {
-   "R9238": {
-    "decode_status": "Non-decrypted",
-    "proposed": "Decrypted",
-    "note": "Gaspard de Coligny, Admiral of France, to Elizabeth I, camp at Villefranche, 12 Jan 1563 (margin 'L'Amiral de France a la Reine d'Angleterre 12 Jan 1562/3'; DECODE has 2 Jan). French. Forbes's copy of the ciphered passages (1)-(35). Deciphered at the time: CSP Foreign vi no. 76 ('Orig. almost entirely in cipher, deciphered'), clear text printed in Forbes, Full View ii 272-274. f.143 lower half begins another Coligny letter to the Queen (passages 1-7).",
-    "reading": null,
-    "sent": false,
-    "fields": {
-     "start_year": "1563",
-     "start_month": "1",
-     "start_day": "12",
-     "sender": "Gaspard de Coligny",
-     "receiver": "Elizabeth I",
-     "plaintext_lang": "French"
-    }
-   },
    "R9241": {
     "decode_status": "Non-decrypted",
     "proposed": "Non-decrypted",
