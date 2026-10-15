@@ -1820,6 +1820,43 @@
    "outcome": "attempted, open"
   },
   {
+   "id": 264,
+   "counted": true,
+   "year": 1680,
+   "date": "11 Sep 1680",
+   "title": "Sebastiano Foscarini, Venetian ambassador in France, to the Doge, despatch no. 117",
+   "correspondents": "Sebastiano Foscarini → the Doge of Venice",
+   "place": "Paris → Venice",
+   "language": "Italian",
+   "region": "France",
+   "period": "1651-1700",
+   "shelfmark": "ASVe, IT ASVe 0045 010 (Serie) Busta 30 f. 4",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 to R1871: the entry first joined it with R1873 (Alvise Mocenigo, Rome 25 Apr 1558), a different cipher read from Paolo Bonavoglia's published decipherment (targets/r1873/, removed from the catalogue). R1871 was catalogued as '(England?)', 1555, metadata copied from the neighbour R1872. One page of continuous digits, transcribed (1,839 digits, 612 three-digit groups, 211 distinct, a non-alphabetical table of ~300 codes); ciphertext-only annealing with an Italian model gave no text. Bonavoglia lists the despatch as deciphered, but his decipherment is offline. See targets/r1871/.",
+   "why": "A ciphered 'P.S. sola' from the Venetian embassy at the court of Louis XIV, 1680.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Rescored by hand 14 Oct 2026 after the split: one page, ~300-code table, no key on DECODE.",
+   "verify": "Ask Paolo Bonavoglia for the Foscarini decipherment or key; or find Foscarini's other 1680-84 despatches (ASVe Senato, Dispacci Francia busta 171A, Spagna) and the ASVe Cifre, chiavi e scontri key.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R1871",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/1871"
+    }
+   ],
+   "seen": "image",
+   "source": "DECODE",
+   "decode_ids": [
+    1871
+   ],
+   "scored": "reviewed",
+   "writeup": "r1871.html",
+   "outcome": "attempted, open"
+  },
+  {
    "id": 277,
    "counted": true,
    "year": 1595,
@@ -1946,13 +1983,13 @@
    "cls": "C",
    "seen": "image",
    "source": "DECODE",
-   "status": "R7524 remains unread: 232 cipher tokens transcribed, separate numerical system. No matching key or decipherment found; solver failed its synthetic control, so the negative result is inconclusive. Nine Potocka siblings transferred to potocka1714, alphabet recovered (863/887 tokens valued), person codes and uncertain readings open.",
+   "status": "R7524 remains unread: 232 cipher figures (77 values, word-divided) transcribed, separate numerical system. No matching key or decipherment found; solver failed its synthetic control, so the negative result is inconclusive. Own entry mniszech1714 since 14 Oct 2026 (attempted, not solved); the letter is dated 18 March 1714 on the page (DECODE: 16 March). The nine Potocka siblings, another cipher, are potocka1714 (844/886 tokens read as sense).",
    "why": "The Polish-Lithuanian magnates after the Great Northern War's return of Augustus II.",
    "importance": 1,
    "solvability": 4,
    "difficulty": 2,
    "score_note": "Scored by hand from the new-solves sweep of 22 Sept 2026 (catalogue descriptions, Tomokiyo's cryptiana pages, Gallica notices, calendars and recent literature); not yet viewed on the image. Kind: solve candidate (no known key).",
-   "verify": "Stronger Polish homophonic or syllabic attack, or additional same-key correspondence; see targets/potocka1714/NOTES.md.",
+   "verify": "Stronger Polish homophonic or syllabic attack, or additional same-key correspondence; see targets/mniszech1714/NOTES.md.",
    "links": [
     {
      "label": "DECODE R7524",

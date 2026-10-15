@@ -164,6 +164,11 @@ PAGES = [
          blurb='DECODE R1212, catalogued as a Latin letter from an unknown sender to &ldquo;Paulo Borne?&rdquo; (HHStA Vienna, Chiffrenschl&uuml;ssel Kt. 13 Fasc. 20 ff. 38&ndash;39), is a report in the cipher of P&aacute;l Bornemisza, Bishop of Transylvania, to Ferdinand I: Ferenc Kendi, &ldquo;ter perfidus&rdquo;, has lost Transylvania to the king. A contemporary hand deciphered nearly every run between the lines, and the key is the next DECODE record, R1211. Every run was decrypted again with that key, correcting the interlinear decipherment in a dozen places; 276 of 288 cipher tokens give sense, and nine number codes not in the key stay open.',
          quote='&ldquo;Hec sunt verba Francisci Kendi ad me in Vasarhel sub comiciis&rdquo;',
          rights='&Ouml;sterreichisches Staatsarchiv, HHStA, via DECODE R1212 (images not reproduced)'),
+    dict(slug='r1873', label='Mocenigo 1558', year='1558', y=1558.31, place='Rome &rarr; Venice', st='found', stt='read by Bonavoglia',
+         title='Alvise Mocenigo to Doge Lorenzo Priuli, Rome, 25 April 1558',
+         blurb='A Venetian ambassador&rsquo;s despatch from the court of Paul IV (ASVe Busta 30, DECODE R1873), catalogued with a neighbour&rsquo;s 1555 English metadata. Its four passages in a nomenclator of letters with superscript letters (176 signs) were transcribed and deciphered by Paolo Bonavoglia; the text is taken from his published decipherment, and the key was not rebuilt. Mocenigo found the Pope cold and suspected the Carafa nephews of keeping him from an audience over the bishopric of Brescia.',
+         quote='&ldquo;Sua Santit&agrave; quando principiai parlare di questo lo uidi alquanto mutare nella facia&hellip;&rdquo;',
+         rights='Manuscript rights: Archivio di Stato di Venezia, via DECODE (images not reproduced)'),
     dict(slug='r8358', label='Burghley to Walsingham July 1572', year='1572', y=1572.51, place='Westminster &rarr; Paris', st='stuck', stt='key not found', title='Burghley to Walsingham, 5 July 1572', blurb='A letter-book copy of Burghley&rsquo;s letter to Walsingham in Paris, clear English with 15 code and cipher tokens. Context and Walsingham&rsquo;s reply identify code [3] as the French King; no key survives, and the rest is not deciphered.', quote='Some that are come home bear us in hand that [3] reneweth the m o R. d A. [4] whereby the last matter is hindered', rights='British Library (images via DECODE; details reproduced with credit)'),
     dict(slug='walsingham1572', label='Walsingham to Burghley 1573', year='1573', y=1573.05, place='Paris &rarr; London', st='stuck', stt='too short, no key', title='Walsingham to Burghley, 20 January 1572/3', blurb='A letter-book copy in clear English with one ciphered place name of six symbols. With the one group in Burghley&rsquo;s reply there are twelve symbols in all, too few to recover a key, and several Channel ports fit; the group is not deciphered.', quote='a Gentleman of [9] departed hence to 2 1 &#8984; &epsilon; 9 4 with intention to imbarke there', rights='British Library (images via DECODE; details reproduced with credit)'),
     dict(slug='mercoeur1586', label='&ldquo;MR&rdquo; to Merc&oelig;ur 1586', year='[1586]', y=1586.48, place='? &rarr; Merc&oelig;ur, Brittany', st='stuck', stt='too short, no key',
@@ -945,6 +950,11 @@ PAGES = [
          blurb='Eleven code letters of the French ambassador to Rouill&eacute; and Bernis in the Dutch royal archives, listed on DECODE as not decrypted. The Dutch codebreaker Lyonet&rsquo;s decipherments of eight sibling letters are among the images; aligning them with their cipher recovered 651 groups of the code, which decrypt nine of the letters (82.3% of all groups measured as sense, 89.0% without R1071). The eleventh letter, to Vienna, is in another code.',
          quote='&ldquo;faut-il que ce soit moi qui favorise les moyens de faire du mal &agrave; mon p&egrave;re?&rdquo; &middot; the Princess Governess to d&rsquo;Affry, April 1757',
          rights='Koninklijk Huisarchief, The Hague, via DECODE'),
+    dict(slug='r1871', label='Foscarini 1680', year='1680', y=1680.7, place='Paris &rarr; Venice', st='stuck', stt='key not found',
+         title='Sebastiano Foscarini to the Doge, Paris, 11 September 1680',
+         blurb='Despatch no. 117 of the Venetian ambassador in France (ASVe Busta 30, DECODE R1871), catalogued as an English letter of 1555: one page of continuous digits. Transcribed here (1,839 digits) and segmented into 612 three-digit groups, 211 different, from a non-alphabetical table of about 300 codes; annealing solvers with an Italian model gave no text. Paolo Bonavoglia lists the despatch as deciphered, but his decipherment is offline, and the key is not on DECODE.',
+         quote='200 518 245 226 459 533 263 321 517 451 547 &hellip;',
+         rights='Manuscript rights: Archivio di Stato di Venezia, via DECODE (images not reproduced)'),
     dict(slug='r1875', label='Foscarini 1761', year='1761', y=1761.8, place='Escorial &rarr; Venice', st='found', stt='read at the time',
          title='Sebastiano Foscarini to the Doge and Senate, 13 October 1761',
          blurb='A Venetian despatch from the Escorial in a numerical cipher, catalogued on DECODE (R1875) with sender and recipient unknown. The chancery wrote a complete contemporary decipherment on the despatch and barred the cipher; the text was transcribed from it, and the key was not rebuilt. It reports Madrid&rsquo;s view of the broken-off Anglo-French peace talks and the talk of a union with another court: the Family Compact with France, signed in secret that August.',
@@ -970,9 +980,14 @@ PAGES = [
          blurb='A Prussian letter in a numerical nomenclator, intercepted and copied at The Hague (DECODE R1957), listed with no decipherment. Its clear opening, its length and the positions of six repeated code groups identify it as no. 5263 of the Politische Correspondenz (1882), printed from the King&rsquo;s minute; the text is taken from that print and the code was not rebuilt. The sibling R1955 is not decrypted.',
          quote='&ldquo;il faut que vous ne le fassiez sur tout ce que dessus qu&rsquo;&agrave; moi seul imm&eacute;diatement&rdquo; &middot; Frederick II, 28 December 1751',
          rights='Manuscript images: Koninklijk Huisarchief, The Hague, via DECODE'),
-    dict(slug='potocka1714', label='Potocka and Mniszech to Dunin', year='1714&ndash;16 / undated', y=1715, place='Vilna and Dukla &rarr; Jakub Dunin', st='partial', stt='solved in part',
-         title='Barbara Potocka and J&oacute;zef Mniszech to Jakub Dunin, 1714&ndash;16',
-         blurb='Ten letters in the Sanguszko archive. The homophonic numerical alphabet of Potocka&rsquo;s nine letters was recovered from the ciphertext alone, starting from a Polish postscript, and 95.3% of her cipher tokens read as sense. Mniszech&rsquo;s letter uses another system and is not decrypted.',
+    dict(slug='mniszech1714', label='Mniszech to Dunin 1714', year='1714', y=1714.21, place='Dukla &rarr; Jakub Dunin', st='stuck', stt='not solved',
+         title='J&oacute;zef Mniszech to Jakub Dunin, 18 March 1714',
+         blurb='A letter of the Grand Marshal of the Crown in the Sanguszko archive, clear Polish and Latin with 232 cipher figures in 77 values, word-divided. Homophonic annealing with modern and period Polish models, cribs and a dictionary gave no stable key, and the same solver also fails a synthetic control of this size, so the result is inconclusive. Barbara Potocka&rsquo;s letters to Dunin are in a different cipher, with their own page.',
+         quote='110.36.31.157.31.33.81.15.20 &middot; the first cipher word, undeciphered',
+         rights='Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w, via DECODE'),
+    dict(slug='potocka1714', label='Potocka to Dunin', year='1714&ndash;16 / undated', y=1715, place='Vilna &rarr; Jakub Dunin', st='partial', stt='solved in part',
+         title='Barbara Potocka to Jakub Dunin, 1714&ndash;16',
+         blurb='Nine letters in the Sanguszko archive. The homophonic numerical alphabet of Potocka&rsquo;s cipher passages was recovered from the ciphertext alone, starting from a Polish postscript, and 95.3% of her cipher tokens read as sense; four person codes stay open. J&oacute;zef Mniszech&rsquo;s letter to Dunin, filed with them, is in a different cipher, with its own page.',
          quote='pan starosta &hellip; iest tu pytalam sie',
          rights='Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w, via DECODE'),
     dict(slug='anne1711', label='Queen Anne to Peterborough 1712', year='1712', y=1712.15, place='London &rarr; Turin', st='found', stt='already in print',
@@ -1766,6 +1781,8 @@ IMAGES['r1854'] = None
 IMAGES['wesselenyi1664'] = None
 IMAGES['harley1582r8499'] = ('harley1582r8499_lead.jpg', 'Harley MS 1582 f. 8r: &ldquo;Pleasing it your highness to understand that&rdquo;, then the cipher: Carew was at Compi&egrave;gne with the French king, the rebels and the Constable', 'British Library, Harley MS 1582 f. 8r (via DECODE R8499)')
 IMAGES['r1875'] = None
+IMAGES['r1871'] = None
+IMAGES['r1873'] = None
 IMAGES['ferdinand1619'] = None
 IMAGES['haga1620'] = ('haga1620_lead.jpg', 'R2113 p.2, Constantinople 31 March 1620: clear Dutch with the cipher spans inline, (44) ende (45) arbeiden bij (4) om tyt te winnen', 'Nationaal Archief, The Hague, via DECODE R2113')
 IMAGES['deswart1782'] = ('deswart1782_lead.jpg', 'De Swart&rsquo;s despatch of 8 March 1782, first page: the clear salutation, then the marked groups 15, 452, 730, 833 = waar bij ingesloten', 'Nationaal Archief, The Hague, via DECODE R1036')
@@ -2692,5 +2709,6 @@ IMAGES['conti1649'] = ('conti1649_f113r_lines.jpg', 'BnF fr. 3854 f. 113r, the h
 IMAGES['lanssac'] = ('lanssac_f124.jpg', 'BnF fr. 4735 f. 124, the head of Lanssac&rsquo;s letter of 26 April 1573 with three lines of cipher and the decipherer&rsquo;s marginal notes', 'Biblioth&egrave;que nationale de France, fr. 4735 f. 124, via Gallica btv1b9060724s canvas 242')
 IMAGES['vasto1527'] = ('vasto1527_f16v_cipher.jpg', 'BnF fr. 3022 f. 16v: the clear news of Lautrec, then the first cipher lines of no. 6', 'Biblioth&egrave;que nationale de France, fr. 3022 f. 16v, via Gallica (btv1b90601558, view 32)')
 IMAGES['ranzo1528'] = ('ranzo1528_f44r_head.jpg', 'BnF fr. 3022 f. 44r: the clear opening of the letter to Garbino and the first lines of the code', 'Biblioth&egrave;que nationale de France, fr. 3022 f. 44r, via Gallica (btv1b90601558, view 86)')
+IMAGES['mniszech1714'] = ('mniszech1714_lead.jpg', 'R7524 P1: the first cipher lines, figures joined by dots within a word, with the clear words spraktykowawszy, praetextu consilii and congressow', 'Archiwum Narodowe w Krakowie, Archiwum Sanguszk&oacute;w, ASang_teka_290/6, image P1, via DECODE R7524')
 IMAGES['ferdinand3'] = ('ferdinand3_lead.jpg', 'R1889 p. 1: the first cipher passage of the Cardinal-Infante&rsquo;s letter of 16 November 1635, Ad hyberna vero quod attinet', 'Archives g&eacute;n&eacute;rales du Royaume (Brussels), Secr&eacute;tairerie d&rsquo;&Eacute;tat allemande 540, letter of 16 Nov 1635 p. 1, via DECODE R1889')
 IMAGES['dubellay'] = ('dubellay_lead.jpg', 'fr. 3078 p. 21: the eight cipher lines of 16 June 1529, which Scheurer prints in clear', 'Biblioth&egrave;que nationale de France, fr. 3078 p. 21, via DECODE R3688')

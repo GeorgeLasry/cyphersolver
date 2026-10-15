@@ -1099,7 +1099,7 @@
    "kind": "rebuilt here",
    "by": "cyphersolver",
    "year": 1714,
-   "note": "Recovered from R7526 and transferred to eight other Potocka letters; Mniszech remains unkeyed."
+   "note": "Recovered from R7526 and transferred to eight other Potocka letters."
   },
   {
    "id": "k-siena1421",
@@ -3462,7 +3462,8 @@
   }
  ],
  "unlinked": {
-  "geertruidenberg": "not deciphered: no key fits either code; nothing read, no values rebuilt",
+  "mniszech1714": "not solved: no key fits and none was rebuilt; nothing deciphered",
+  "geertruidenberg":"not deciphered: no key fits either code; nothing read, no values rebuilt",
   "burgo1527": "not a cipher: the record is a clear minute, no key involved",
   "randolph1570": "read from the contemporary decipherment (f. 278, R4932); no key",
   "walsingham1585": "key not identified; name numbers from context only",
@@ -3471,6 +3472,8 @@
   "hamilton1569": "read from the contemporary decipherment bound as f. 74; Tomokiyo's Mary-Hamilton key only checked on one line",
   "poyntz1527": "read from the contemporary decipherment (interlinear, and Tuke's printed in L&P IV 3271); Tomokiyo's Lee-Worcester key only spot-checked on R8567",
   "r1875": "read from the contemporary decipherment written on the despatch; key not rebuilt",
+  "r1873": "read from Paolo Bonavoglia's published decipherment; key not rebuilt here",
+  "r1871": "not solved: no key reachable (not on DECODE; Bonavoglia's decipherment offline); no values rebuilt",
   "jantini1517": "No key found; Caprile's 1519 values (the only sibling key) tried and do not fit",
   "r8361": "no key found; one code identified from context",
   "walsingham1572": "no key of 1572-73 found; Cecil-Norris 1568 tried and failed",
@@ -3493,6 +3496,9 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-sanguszko-keys", "target": "mniszech1714", "note": "Sanguszko key records R7515 (a=5/10/15), R7460/R7461 (graphic signs): do not fit R7524"},
+  {"key": "k-potocka1714", "target": "mniszech1714", "note": "Potocka's alphabet (base 14-39, homophone = 2x base) shifted -40..40 or scaled x1-x4: no fit"},
+  {"key": "k-zifra-prima-1578", "target": "r1871", "note": "16th-century letter-and-figure table (with R1788, R1790): does not match the 1680 three-digit groups"},
   {"key": "k-r8655-118", "target": "rupert", "note": "Letter table applied to f. 9 and Maurice 1645: no sense"},
   {"key": "k-r8687-123", "target": "rupert", "note": "Applied to f. 9, f. 10 and f. 104: gibberish"},
   {"key": "k-r8694", "target": "rupert", "note": "Mr Browne key: ranges fit f. 10, applied gives gibberish"},

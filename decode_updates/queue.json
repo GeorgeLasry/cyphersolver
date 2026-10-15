@@ -7173,6 +7173,36 @@
     }
    }
   },
+  "mniszech1714": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/mniszech1714.html",
+   "key": {
+    "none": "No key recovered or found; the Sanguszko key records R7515, R7460, R7461 and Potocka's alphabet (potocka1714) do not fit."
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R7524": {
+     "decode_status": "N/A",
+     "proposed": "Non-decrypted",
+     "note": "Separate numerical cipher, not the Potocka letters' (R7525-R7536, another entry): 232 cipher figures, 77 values, written with word division (53 words), between clear Polish and Latin words. No coherent decipherment; the search failure is inconclusive because a matched 232-token synthetic control also failed. The heading on image P1 reads '18 marty 1714, w Dukli' (DECODE: 16 March). Transcription attached; r7524-words.txt keeps the word division and reads 36 at figures 46 and 201 where the older flat file has 30.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "key": {
+      "none": "No matching key recovered."
+     },
+     "fields": {
+      "start_day": "18 (heading on P1: '18 marty 1714, w Dukli'; DECODE has 16)",
+      "cipher type": "Numerical cipher, word-divided; system not established",
+      "sender": "Józef Wandalin Mniszech, Grand Marshal of the Crown"
+     },
+     "transcription": [
+      "targets/mniszech1714/r7524-words.txt",
+      "targets/mniszech1714/r7524-cipher.txt"
+     ]
+    }
+   }
+  },
   "potocka1714": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/potocka1714.html",
    "key": {
@@ -7183,20 +7213,6 @@
    "cite": null,
    "fields": {},
    "records": {
-    "R7524": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "Separate numerical cipher, 232 tokens transcribed; no coherent decipherment. Search failure is inconclusive because the synthetic control also failed.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "key": {
-      "none": "No matching key recovered."
-     },
-     "transcription": [
-      "targets/potocka1714/r7524-cipher.txt"
-     ]
-    },
     "R7525": {
      "decode_status": "N/A",
      "proposed": "Partially decrypted",
@@ -10160,10 +10176,10 @@
    }
   }
  },
- "r1871": {
-  "writeup": null,
+ "r1873": {
+  "writeup": "https://dbourdeau.github.io/cyphersolver/r1873.html",
   "key": {
-   "none": "found solved: Bonavoglia, crittologia.eu venezia_nomenclatore.html"
+   "none": "read from Paolo Bonavoglia's published decipherment (crittologia.eu venezia_nomenclatore.html); key not rebuilt here"
   },
   "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
   "fields": {},
@@ -10171,21 +10187,47 @@
    "R1873": {
     "decode_status": "Non-decrypted",
     "proposed": "Decrypted",
-    "note": "Alvise Mocenigo K., Venetian ambassador at Rome, to Doge Lorenzo Priuli, 'Di Roma alli 25 d'April 1558' (duplicate, signed). Author '...' -> Alvise Mocenigo; receiver -> Doge Lorenzo Priuli; origin city Rome. The four cipher passages (letter+superscript-letter nomenclator) are transcribed and deciphered in full by Paolo Bonavoglia, 'Decifra dispacci veneziani', crittologia.eu/critto/venezia_nomenclatore.html.",
+    "note": "Alvise Mocenigo K., Venetian ambassador at Rome, to Doge Lorenzo Priuli, 'Di Roma alli 25 d'April 1558' (duplicate, signed). Author '...' -> Alvise Mocenigo; receiver -> Doge Lorenzo Priuli; origin city Rome. The four cipher passages (letter+superscript-letter nomenclator) are transcribed and deciphered in full by Paolo Bonavoglia, 'Decifra dispacci veneziani', crittologia.eu/critto/venezia_nomenclatore.html. Not related to R1871 (Foscarini, Paris 1680), a different cipher.",
     "reading": null,
     "sent": false,
     "reading_not_needed": true,
+    "fields": {
+     "sender": "Alvise Mocenigo",
+     "receiver": "Doge Lorenzo Priuli",
+     "origin_city": "Rome",
+     "start_year": 1558,
+     "start_month": 4,
+     "start_day": 25
+    },
     "transcription": [
-     "targets/r1871/r1873_bonavoglia.txt"
+     "targets/r1873/r1873_bonavoglia.txt"
     ]
-   },
+   }
+  }
+ },
+ "r1871": {
+  "writeup": "https://dbourdeau.github.io/cyphersolver/r1871.html",
+  "key": {
+   "none": "no key reachable: not on DECODE (Venetian key records R1788-R1790 do not match); Bonavoglia's decipherment offline"
+  },
+  "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
+  "fields": {},
+  "records": {
    "R1871": {
     "decode_status": "Non-decrypted",
     "proposed": "Non-decrypted",
-    "note": "Not 1555/England: Sebastiano Foscarini, Venetian ambassador in France, to the Doge, Paris 11 Sept 1680, despatch no. 117 ('P.S. Sola'), signed; dorse docket '11 Sett. 1680'. Date 1555 -> 11 Sep 1680; region England? -> France (Paris); author '...' -> Sebastiano Foscarini; symbol set Numerical. Deciphered by Paolo Bonavoglia, 'Decifra dispacci veneziani' (crittologia.eu), listed as '1680-09-11: Dispaccio di ambasciatore Sebastiano Foscarini'. Cipher is 3-digit groups (third digit 0-9, rare 0/7/8/9 only there), ~300-code homophonic nomenclator; full digit transcription attached (first pass).",
+    "note": "Not 1555/England: Sebastiano Foscarini, Venetian ambassador in France, to the Doge, Paris 11 Sept 1680, despatch no. 117 ('P.S. Sola'), signed; dorse docket '11 Sett. 1680'. Date 1555 -> 11 Sep 1680; region England? -> France (Paris); author '...' -> Sebastiano Foscarini; symbol set Numerical. Deciphered by Paolo Bonavoglia, 'Decifra dispacci veneziani' (crittologia.eu), listed as '1680-09-11: Dispaccio di ambasciatore Sebastiano Foscarini', but that decipherment is offline and was not seen. Cipher is 3-digit groups (third digit 0-9, rare 0/7/8/9 only there), ~300-code homophonic nomenclator; ciphertext-only attempt (annealing, Italian 4-gram) gave no text. Full digit transcription attached (first pass). Not related to R1873 (Mocenigo, Rome 1558), a different cipher.",
     "reading": null,
     "sent": false,
     "reading_not_needed": true,
+    "fields": {
+     "sender": "Sebastiano Foscarini",
+     "receiver": "Doge of Venice",
+     "origin_city": "Paris",
+     "start_year": 1680,
+     "start_month": 9,
+     "start_day": 11
+    },
     "transcription": [
      "targets/r1871/r1871_digits.txt",
      "targets/r1871/groups.txt"
