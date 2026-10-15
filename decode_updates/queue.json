@@ -1,6 +1,103 @@
 {
  "_about": "Queue of pending DECODE edits. Add entries via the /writeup skill; build with decode_updates/build.py; set sent:true once edited on DECODE.",
  "targets": {
+  "hm1645": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/hm1645.html",
+   "key": {
+    "decode": "George Lasry's reconstructed key 'TNA SP 106' attached to these records (DOC_R785_D3059 = DOC_R790_D3067 = DOC_R923_D3068)",
+    "lang": "EN"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R785": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by George Lasry (key 'TNA SP 106' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext group for group (checked 14 Oct 2026). Open: three-digit name codes and the low figures 16, 30, 39, 49, 59, 77, 78, 79, which fall between words. The record note ('Undecrypted', 'dating, Hanoverian, based on the handwriting alone') is out of date: Lasry dates the run from its content to 1 Sept 1645. Same key: R752, R754, R788 (ff. 218, 220-221), R790, R923; R787, R924, R929 are in other keys.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R790": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by George Lasry (key 'TNA SP 106' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext group for group (checked 14 Oct 2026). Open: three-digit name codes and low figures between words. The record note ('Undecrypted', Hanoverian dating) is out of date: 22 Sept 1645 per Lasry.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R923": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by George Lasry (key 'TNA SP 106' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext group for group (checked 14 Oct 2026). The record note is out of date: not 'probably ... plaintext in French' but English (as the plaintext-language field already says), and not Hanoverian but 29 Sept 1645 per Lasry.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
+  "sp106r787": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r787.html",
+   "key": {
+    "decode": "George Lasry's reconstructed key 'TNA SP106-2' attached to this record (DOC_R787_D3071)",
+    "lang": "FR"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R787": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by George Lasry (key 'TNA SP106-2' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext on all 1538 keyed groups (checked 14 Oct 2026). Open: the numbers above 60 (names, the signature 103 62 A 104). A duplicate of 19/29 July 1645 in French; writer unknown (Lasry: perhaps Goffe from Holland, forwarded). The record note ('Undeciphered', Hanoverian dating) is out of date. Same key: f. 219 inside R788.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
+  "sp106r924": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r924.html",
+   "key": {
+    "decode": "George Lasry's reconstructed key 'TNA SP106-8' attached to this record (DOC_R924_D3089)",
+    "lang": "EN"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R924": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by George Lasry (key 'TNA SP106-8' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext group for group (checked 14 Oct 2026). Date: the letter is headed 'Paris Jan' (Lasry: January 1646); DECODE's start date 26 June 1646 should be January 1646, day unknown. Open: three-digit word-list numbers and low figures. Same key: R925.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "start_year": 1646,
+      "start_month": 1,
+      "start_day": null
+     }
+    }
+   }
+  },
+  "sp106r929": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sp106r929.html",
+   "key": {
+    "decode": "R929 (George Lasry's reconstructed key 'TNA SP106-5', DOC_R929_D3085)",
+    "lang": "EN"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R929": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by George Lasry (key 'TNA SP106-5' and plaintext on this record, 23 Oct 2020); the key, applied to Pettersson's transcription without his plaintext (Sept and Oct 2026), gives 293 of 348 groups, all equal to his text. Open: 17 three-digit name codes, the figures 81-90 between words. Receiver: the letter is written from Paris, where the Queen was, to 'Sir', who sends weekly news of the King's affairs, so the receiver 'Henrietta-Maria ... and Charles I' is doubtful (not changed: the person is not identified). Same key: R928.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
   "acciaiuoli1757": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/acciaiuoli1757.html",
    "key": {
@@ -1524,8 +1621,9 @@
   "dandini1580": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/dandini1580.html",
    "key": {
-    "decode": "George Lasry's key on R72 (DOC_R72_D3190)",
-    "lang": "IT"
+    "file": "targets/dandini1580/NOTES.md",
+    "lang": "IT",
+    "how": "R72 letter key rebuilt here by swap annealing inside the frame and nomenclator of George Lasry's R73 key (DOC_R72_D3190, which is filed on R72 but reads R73 only), confirmed against the contemporary decipherment on f. 52"
    },
    "cite": null,
    "fields": {},
@@ -1533,13 +1631,42 @@
     "R72": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Contemporary decipherment transcribed; the decryption with Lasry's key agrees word for word (cipher \"commercio\" where the clerk wrote \"concetto\").",
+     "note": "Contemporary decipherment (below the figures on f. 52) transcribed; the decryption with the R72 letter key rebuilt here agrees word for word (cipher \"commercio\" where the clerk wrote \"concetto\"). Lasry's key D3190 attached to this record is the key of R73: same frame and nomenclator, different letter assignment, and it gives nonsense on R72.",
      "reading": [
       {
        "file": "targets/dandini1580/NOTES.md",
        "section": "## The reading"
       }
      ],
+     "sent": false
+    }
+   }
+  },
+  "dandini1580r73": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/dandini1580r73.html",
+   "key": {
+    "decode": "George Lasry's key DOC_R72_D3190 (filed on R72; it is the key of R73)"
+   },
+   "cite": null,
+   "fields": {
+    "R73": {
+     "start_year": "1580",
+     "start_month": "8",
+     "start_day": "8",
+     "end_year": "1580",
+     "end_month": "8",
+     "end_day": "8",
+     "origin_city": "Rome"
+    }
+   },
+   "records": {
+    "R73": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Decrypted by George Lasry (DOC_R72_D3191 = DOC_R73_D3193, key DOC_R72_D3190, Oct 2020); 1,040 of 1,082 groups have a value, 32 illegible. Date: the enclosure of the Cardinal of Como's letter of 8 Aug 1580 (ff. 88/92, 'Di Roma a 8 d'ag.to 1580 ... Con mezzo foglio di Cifra', attached to this record). Attachment D1137 (f. 91) is a contemporary clear copy of the f. 90r section, headed 'Cifra ... con l're di 8 agosto 80'; it agrees with Lasry's decryption. Not re-decrypted here.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [],
      "sent": false
     }
    }
@@ -1744,6 +1871,156 @@
     }
    }
   },
+  "riksarkivet4284": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html",
+   "key": {
+    "none": "No key recovered or found; box keys R4310 and R4296 do not fit."
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R4284": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Latin letter in comma-separated numbers (822 groups, ~170 forms) with clear Latin connectives; archival note 'Legat ... till L. Camerarius bref för 1628' (filed with the letters to Ludwig Camerarius, 1628). A second leaf tests a letter cipher on four phrases (effusorem sanguinis, pestem patriae, praeter naturalem, disturbatorem religionis). Homophonic Latin annealing and box keys R4310 and R4296 failed; not deciphered. Transcription attached.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "start_year": "1628 (archival note on p. 1)"
+     },
+     "transcription": [
+      "targets/riksarkivet4284/r4284_transcription.txt"
+     ]
+    }
+   }
+  },
+  "riksarkivet4306": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/riksarkivet4306.html",
+   "key": {
+    "none": "No key recovered or found; box keys R4310 and R4296 do not fit."
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R4306": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Letter to 'Mr ?ilick' at Amsterdam, pencil-dated 1632?, wholly in colon-separated numbers 5-203 (465 groups with the scribe's variant figures kept); IoC points to one sign per letter. Substitution annealing in ten languages and box keys R4310, R4296 failed; not deciphered. Transcriptions attached.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "receiver": "'Mr ?ilick', Amsterdam (address)",
+      "start_year": "1632? (pencil note)"
+     },
+     "transcription": [
+      "targets/riksarkivet4306/r4306_v2.txt",
+      "targets/riksarkivet4306/r4306_transcription.txt"
+     ]
+    }
+   }
+  },
+  "rusdorff1628": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/rusdorff1628.html",
+   "key": {
+    "none": "Not yet worked; no key identified."
+   },
+   "cite": null,
+   "fields": {
+    "sender": "Johann Joachim von Rusdorff",
+    "receiver": "Axel Oxenstierna",
+    "origin_city": "The Hague"
+   },
+   "records": {
+    "R4333": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 1 of 5 (R4333-R4337): figure runs inside clear German and Latin; surveyed only, not deciphered. Sender, receiver and place empty on DECODE.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4334": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 2 of 5; surveyed only, not deciphered.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4335": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 3 of 5; surveyed only, not deciphered.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4336": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 4 of 5; surveyed only, not deciphered.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4337": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 5 of 5; surveyed only, not deciphered.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
+  "oxenstierna1633": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/oxenstierna1633.html",
+   "key": {
+    "none": "Not yet worked; the key 'Oxenstierna and Lars Nilsson Tungel (1633)' listed by the archive was not found among the Chifferklaver key records R4259-R4329."
+   },
+   "cite": null,
+   "fields": {
+    "receiver": "Axel Oxenstierna",
+    "cleartext_lang": "Swedish",
+    "start_year": "1633 (leaves dated 8/18 and 27 June 1633; DECODE has 1646)"
+   },
+   "records": {
+    "R4338": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "E 708 letter 1, headed '8/18 Juni 1633' (f. 20), not 1646: Swedish to Oxenstierna, mostly clear, two-digit letter codes and four-digit name codes, some glossed between the lines at the time; surveyed only.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4339": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "E 708 letter 2, June 1633 (not 1646); same features; surveyed only.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4340": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "E 708 letter 3, June 1633 (not 1646); same features; surveyed only.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R4341": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "E 708 letter 4, June 1633 (not 1646); same features; surveyed only.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
   "rome1536": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/rome1536.html",
    "key": {
@@ -1874,14 +2151,24 @@
       }
      ],
      "sent": false
-    },
+    }
+   }
+  },
+  "r4248": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r4248.html",
+   "key": {
+    "none": "read from the contemporary clear decipherment on f. 86 of the same volume; the cipher matches Tomokiyo's second fr. 3053 table (nulls 30, the triple-barred cross, 22), not tabulated here"
+   },
+   "cite": "Tomokiyo, cryptiana francis.htm (second fr. 3053 table; 'deciphered on f. 86')",
+   "fields": {},
+   "records": {
     "R4248": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "A different cipher; resolved by the contemporary decipherment on f. 86.",
+     "note": "Not in the cardinal de Mâcon's cipher (Mascon's cipher gives nonsense) but a second fr. 3053 cipher; read at the time: the full clear decipherment is f. 86, agreeing with every clear link on f. 85. Writer unidentified (no signature on the images), 1536. Split from the rome1536 entry on 14 Oct 2026.",
      "reading": [
       {
-       "file": "targets/rome1536/R4248.md"
+       "file": "targets/r4248/R4248.md"
       }
      ],
      "sent": false
@@ -1996,6 +2283,57 @@
      "note": "Already in print (1809). The letter is wholly in clear: there is no cipher on either page.",
      "sent": false,
      "reading_not_needed": true
+    }
+   }
+  },
+  "sabran1631": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sabran1631.html",
+   "key": {
+    "none": "no key file on DECODE; George Lasry's key (2022) is published as an image on S. Tomokiyo's Cryptiana GL.htm, 'Melchior de Sabran (1631)'"
+   },
+   "cite": "S. Tomokiyo, 'George Lasry's solutions', https://cryptiana.web.fc2.com/code/GL.htm ('Melchior de Sabran (1631)'); S. Tomokiyo, 'French Ciphers during the Reign of Louis XIII', https://cryptiana.web.fc2.com/code/louisxiii.htm",
+   "fields": {
+    "R2748": {
+     "plaintext_lang": "French"
+    }
+   },
+   "records": {
+    "R2748": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Both cipher paragraphs of f. 79r were deciphered by George Lasry in 2022: his key and his decipherment (overlaid on the image) are on Tomokiyo's Cryptiana GL.htm, 'Melchior de Sabran (1631)'. Plaintext French; the passages concern the Prince of Monaco. Lasry found the same cipher in Sabran's letters to Bouthillier, BnF fr. 4134 (1633) and fr. 4135 (1635). Not re-deciphered here. Formerly grouped with R2785/R2786 (Brulart de Leon cipher, a different key).",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [],
+     "sent": false
+    }
+   }
+  },
+  "brulart1615": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/brulart1615.html",
+   "key": {
+    "decode": "Tomokiyo's key file on R2785 and R2786 (DOC_2785_2021-Aug-10, DOC_2786_2021-Aug-10, same image: 'Brulart de Leon's Cipher (1615-1618)')"
+   },
+   "cite": "S. Tomokiyo, 'French Ciphers during the Reign of Louis XIII', https://cryptiana.web.fc2.com/code/louisxiii.htm ('Brulart de Leon')",
+   "fields": {},
+   "records": {
+    "R2785": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Read by Tomokiyo with his reconstructed key (2021); the text page in image 1 also carries a contemporary interlinear decipherment over most cipher runs. Origin Poitiers fits the clear text (the King held in the town by his eldest sister's illness, Sept 1615). Not re-deciphered here; metadata checked, nothing to correct. A different cipher from R2748 (Louis XIII to Sabran, 1631), with which it was grouped in the project's catalogue.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [],
+     "sent": false
+    },
+    "R2786": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Read by Tomokiyo with his reconstructed key (2021); the few unread symbols are probably cancelled signs (his note). Not re-deciphered here; metadata checked, nothing to correct.",
+     "reading": null,
+     "reading_not_needed": true,
+     "transcription": [],
+     "sent": false
     }
    }
   },
@@ -7549,13 +7887,11 @@
    }
   },
   "siena1421": {
-   "writeup": null,
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena1421.html",
    "key": {
-    "file": "targets/siena1421/keys/no25_key.txt",
-    "lang": "IT",
-    "how": "no. 14 (targets/siena1421/key14.txt) and no. 25 recovered ciphertext-only; no. 4 (targets/siena1421/keys/no04_key.txt) rebuilt from the alphabet fragment below its text and the recipient's glosses"
+    "none": "No key for the unread pieces; the recovered keys are queued under siena25, siena18, siena14 and borghesi1456, and nos. 6/24 (key R4755) under siena1431."
    },
-   "cite": "Senatore 2009, 'Callisto III nelle corrispondenze diplomatiche italiane', Revista Borja 2 (Concistoro 2308 c. 4 = Borghesi to Benvoglienti, Naples 12 May [1456])",
+   "cite": null,
    "fields": {},
    "records": {
     "R4790": {
@@ -7582,17 +7918,6 @@
      "sent": false,
      "reading_not_needed": true
     },
-    "R4793": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "No. 4: Galgano Borghesi, J.U.D. and orator, to Leonardo Benvoglienti, Naples 12 May 1456 (not 1500-1599). Clear Italian with 15 cipher runs and Latin code words; recipient's interlinear glosses; key rebuilt from an alphabet fragment below the text: 114/144 cipher signs read.",
-     "reading": [
-      {
-       "file": "targets/siena1421/transcripts/no04_reading.txt"
-      }
-     ],
-     "sent": false
-    },
     "R4794": {
      "decode_status": "N/A",
      "proposed": "Non-decrypted",
@@ -7602,17 +7927,6 @@
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/r4794.txt"
-     ]
-    },
-    "R4795": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 6: letter to the Signori ('Magnifici et potentes domini ... recomandatione'), 15th c., ~1,050 cipher signs; same cipher as no. 24 (R4812); not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no06.txt"
      ]
     },
     "R4796": {
@@ -7671,17 +7985,6 @@
      "reading": null,
      "sent": false,
      "reading_not_needed": true
-    },
-    "R4802": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "No. 14: Sienese envoys to the Priori and Capitano del Popolo, written at Rome(?) while Carlo Malatesta (d. 1429) was alive, not 1500-1599; Italian, point-divided simple substitution; key recovered ciphertext-only; read in part (~59% of signs).",
-     "reading": [
-      {
-       "file": "targets/siena1421/transcripts/no14_reading2.txt"
-      }
-     ],
-     "sent": false
     },
     "R4803": {
      "decode_status": "N/A",
@@ -7758,41 +8061,6 @@
       "targets/siena1421/transcripts/no23b.txt"
      ]
     },
-    "R4812": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 24: to the Signori and Capitano di popolo of Siena; the text side is image 2 (38 lines), image 1 = dorse with 8 run-over lines and the address; same cipher as no. 6; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no24_p2a.txt",
-      "targets/siena1421/transcripts/no24_p2b.txt",
-      "targets/siena1421/transcripts/no24.txt"
-     ]
-    },
-    "R4813": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "No. 25: slip to the Signoria, Italian, point-divided simple substitution, key recovered ciphertext-only: an armed lord's route by Lajatico, Radicondoli and Casole, provisions asked; 96% of signs read.",
-     "reading": [
-      {
-       "file": "targets/siena1421/transcripts/no25_reading.txt"
-      }
-     ],
-     "sent": false
-    },
-    "R4806": {
-     "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "No. 18: Latin articles of a treaty between Siena and the King/Emperor (subscribed Niccolaus Ziegler, Regis Secretarius; Ponte a Valiano; war on the Florentines), 1510s-1520s, not 1500-1599 placeholder; cipher words inside the Latin; key recovered ciphertext-only; 87% of cipher signs read.",
-     "reading": [
-      {
-       "file": "targets/siena1421/transcripts/no18_reading.txt"
-      }
-     ],
-     "sent": false
-    },
     "R4810": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
@@ -7810,6 +8078,98 @@
      "note": "No. 29: torn scrap of a nomenclator/word list ('Ungaria - 187?', 'Giovan[ni]', 'Lodyo'), not a letter; record type should be key fragment.",
      "reading": null,
      "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "siena25": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena25.html",
+   "key": {
+    "file": "targets/siena25/keys/no25_key.txt",
+    "lang": "IT",
+    "how": "recovered ciphertext-only (staged annealing), fixed on the image"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R4813": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "No. 25: slip to the Signoria, Italian, point-divided simple substitution, key recovered ciphertext-only: an armed lord's route by Lajatico, Radicondoli and Casole, provisions asked; 96% of signs read. Split 14 Oct 2026 from siena1421 (one key per entry).",
+     "reading": [
+      {
+       "file": "targets/siena25/transcripts/no25_reading.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "siena18": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena18.html",
+   "key": {
+    "file": "targets/siena18/keys/no18_key.txt",
+    "lang": "LA",
+    "how": "recovered ciphertext-only (staged annealing, Latin model), look-alike signs split on the images"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R4806": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "No. 18: Latin articles of a treaty between Siena and the King/Emperor (subscribed Niccolaus Ziegler, Regis Secretarius; Ponte a Valiano; war on the Florentines), 1510s-1520s, not 1500-1599 placeholder; cipher words inside the Latin; key recovered ciphertext-only; 87% of cipher signs read. Split 14 Oct 2026 from siena1421 (one key per entry).",
+     "reading": [
+      {
+       "file": "targets/siena18/transcripts/no18_reading.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "siena14": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena14.html",
+   "key": {
+    "file": "targets/siena14/key14.txt",
+    "lang": "IT",
+    "how": "recovered ciphertext-only (hand crib, then staged annealing unaided)"
+   },
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R4802": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "No. 14: Sienese envoys to the Priori and Capitano del Popolo, written at Rome(?) while Carlo Malatesta (d. 1429) was alive, not 1500-1599; Italian, point-divided simple substitution; key recovered ciphertext-only; read in part (~59% of signs). Split 14 Oct 2026 from siena1421 (one key per entry).",
+     "reading": [
+      {
+       "file": "targets/siena14/transcripts/no14_reading2.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "borghesi1456": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/borghesi1456.html",
+   "key": {
+    "file": "targets/borghesi1456/keys/no04_key.txt",
+    "lang": "IT",
+    "how": "rebuilt from the alphabet fragment below the text and the recipient's glosses"
+   },
+   "cite": "Senatore 2009, 'Callisto III nelle corrispondenze diplomatiche italiane', Revista Borja 2 (Concistoro 2308 c. 4 = Borghesi to Benvoglienti, Naples 12 May [1456])",
+   "fields": {},
+   "records": {
+    "R4793": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "No. 4: Galgano Borghesi, J.U.D. and orator, to Leonardo Benvoglienti, Naples 12 May 1456 (not 1500-1599). Clear Italian with 15 cipher runs and Latin code words; recipient's interlinear glosses; key rebuilt from an alphabet fragment below the text: 114/144 cipher signs read. Split 14 Oct 2026 from siena1421 (one key per entry).",
+     "reading": [
+      {
+       "file": "targets/borghesi1456/transcripts/no04_reading.txt"
+      }
+     ],
      "sent": false
     }
    }
@@ -8913,10 +9273,31 @@
       "none": "key not attached: the record is read from a printed or contemporary decipherment"
      }
     },
+    "R9467": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "BnF NAF 4206 no. 5, Paul Friedmann's reconstruction of Bayonne's 1529 cipher (refers to fr. 3077 f. 114): no image file is attached to the record (not merely restricted). Uploading the image would make the key usable for R3688-R3692, R4229, R4252, R4253.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false,
+     "key": {
+      "none": "key not attached: the record is read from a printed or contemporary decipherment"
+     }
+    }
+   }
+  },
+  "dubellay1528": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/dubellay1528.html",
+   "key": {
+    "none": "no key file on DECODE; du Bellay's first cipher was recovered by Bourrilly and de Vaissière (1905, key not printed) and solved again by George Lasry (key as an image on S. Tomokiyo's Cryptiana GL.htm, 'Bayonne's Cipher (1528-1529)')"
+   },
+   "cite": "V.-L. Bourrilly and P. de Vaissière (eds.), Ambassades en Angleterre de Jean du Bellay (1905), no. 156, pp. 430-434; S. Tomokiyo, 'George Lasry's solutions', https://cryptiana.web.fc2.com/code/GL.htm",
+   "fields": {},
+   "records": {
     "R4254": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "BnF fr. 3077 no. 23 pp. 145-147, 28 Oct 1528, in du Bellay's first cipher (not the 1529 one). Printed in clear by Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905) no. 156, who recovered the key; key re-solved by George Lasry 2022 (Tomokiyo, GL.htm). L&P IV 4879.",
+     "note": "BnF fr. 3077 no. 23 pp. 145-147, 28 Oct 1528, in du Bellay's first cipher (not the 1529 one). Printed in clear by Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905) no. 156, who recovered the key; key re-solved by George Lasry 2022 (Tomokiyo, GL.htm). L&P IV 4879. Moved 14 Oct 2026 from the dubellay (1529 cipher) entry.",
      "reading": null,
      "reading_not_needed": true,
      "sent": false,
@@ -8947,17 +9328,6 @@
       "start_day": "28",
       "receiver": "Anne de Montmorency"
      },
-     "key": {
-      "none": "key not attached: the record is read from a printed or contemporary decipherment"
-     }
-    },
-    "R9467": {
-     "decode_status": "N/A",
-     "proposed": "N/A",
-     "note": "BnF NAF 4206 no. 5, Paul Friedmann's reconstruction of Bayonne's 1529 cipher (refers to fr. 3077 f. 114): no image file is attached to the record (not merely restricted). Uploading the image would make the key usable for R3688-R3692, R4229, R4252, R4253.",
-     "reading": null,
-     "reading_not_needed": true,
-     "sent": false,
      "key": {
       "none": "key not attached: the record is read from a printed or contemporary decipherment"
      }
@@ -9423,6 +9793,65 @@
       "targets/decode4282/transcription.txt"
      ],
      "sent": false
+    }
+   }
+  },
+  "r1871": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r1871.html",
+   "key": {
+    "none": "no key reachable: not on DECODE (Venetian key records R1788-R1790 do not match); Bonavoglia's decipherment offline"
+   },
+   "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
+   "fields": {},
+   "records": {
+    "R1871": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Not 1555/England: Sebastiano Foscarini, Venetian ambassador in France, to the Doge, Paris 11 Sept 1680, despatch no. 117 ('P.S. Sola'), signed; dorse docket '11 Sett. 1680'. Date 1555 -> 11 Sep 1680; region England? -> France (Paris); author '...' -> Sebastiano Foscarini; symbol set Numerical. Deciphered by Paolo Bonavoglia, 'Decifra dispacci veneziani' (crittologia.eu), listed as '1680-09-11: Dispaccio di ambasciatore Sebastiano Foscarini', but that decipherment is offline and was not seen. Cipher is 3-digit groups (third digit 0-9, rare 0/7/8/9 only there), ~300-code homophonic nomenclator; ciphertext-only attempt (annealing, Italian 4-gram) gave no text. Full digit transcription attached (first pass). Not related to R1873 (Mocenigo, Rome 1558), a different cipher.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "sender": "Sebastiano Foscarini",
+      "receiver": "Doge of Venice",
+      "origin_city": "Paris",
+      "start_year": 1680,
+      "start_month": 9,
+      "start_day": 11
+     },
+     "transcription": [
+      "targets/r1871/r1871_digits.txt",
+      "targets/r1871/groups.txt"
+     ]
+    }
+   }
+  },
+  "r1873": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/r1873.html",
+   "key": {
+    "none": "read from Paolo Bonavoglia's published decipherment (crittologia.eu venezia_nomenclatore.html); key not rebuilt here"
+   },
+   "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
+   "fields": {},
+   "records": {
+    "R1873": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Alvise Mocenigo K., Venetian ambassador at Rome, to Doge Lorenzo Priuli, 'Di Roma alli 25 d'April 1558' (duplicate, signed). Author '...' -> Alvise Mocenigo; receiver -> Doge Lorenzo Priuli; origin city Rome. The four cipher passages (letter+superscript-letter nomenclator) are transcribed and deciphered in full by Paolo Bonavoglia, 'Decifra dispacci veneziani', crittologia.eu/critto/venezia_nomenclatore.html. Not related to R1871 (Foscarini, Paris 1680), a different cipher.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "fields": {
+      "sender": "Alvise Mocenigo",
+      "receiver": "Doge Lorenzo Priuli",
+      "origin_city": "Rome",
+      "start_year": 1558,
+      "start_month": 4,
+      "start_day": 25
+     },
+     "transcription": [
+      "targets/r1873/r1873_bonavoglia.txt"
+     ]
     }
    }
   }
@@ -10172,65 +10601,6 @@
     "reading_not_needed": true,
     "transcription": [
      "targets/goertz1717/transcription.txt"
-    ]
-   }
-  }
- },
- "r1873": {
-  "writeup": "https://dbourdeau.github.io/cyphersolver/r1873.html",
-  "key": {
-   "none": "read from Paolo Bonavoglia's published decipherment (crittologia.eu venezia_nomenclatore.html); key not rebuilt here"
-  },
-  "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
-  "fields": {},
-  "records": {
-   "R1873": {
-    "decode_status": "Non-decrypted",
-    "proposed": "Decrypted",
-    "note": "Alvise Mocenigo K., Venetian ambassador at Rome, to Doge Lorenzo Priuli, 'Di Roma alli 25 d'April 1558' (duplicate, signed). Author '...' -> Alvise Mocenigo; receiver -> Doge Lorenzo Priuli; origin city Rome. The four cipher passages (letter+superscript-letter nomenclator) are transcribed and deciphered in full by Paolo Bonavoglia, 'Decifra dispacci veneziani', crittologia.eu/critto/venezia_nomenclatore.html. Not related to R1871 (Foscarini, Paris 1680), a different cipher.",
-    "reading": null,
-    "sent": false,
-    "reading_not_needed": true,
-    "fields": {
-     "sender": "Alvise Mocenigo",
-     "receiver": "Doge Lorenzo Priuli",
-     "origin_city": "Rome",
-     "start_year": 1558,
-     "start_month": 4,
-     "start_day": 25
-    },
-    "transcription": [
-     "targets/r1873/r1873_bonavoglia.txt"
-    ]
-   }
-  }
- },
- "r1871": {
-  "writeup": "https://dbourdeau.github.io/cyphersolver/r1871.html",
-  "key": {
-   "none": "no key reachable: not on DECODE (Venetian key records R1788-R1790 do not match); Bonavoglia's decipherment offline"
-  },
-  "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
-  "fields": {},
-  "records": {
-   "R1871": {
-    "decode_status": "Non-decrypted",
-    "proposed": "Non-decrypted",
-    "note": "Not 1555/England: Sebastiano Foscarini, Venetian ambassador in France, to the Doge, Paris 11 Sept 1680, despatch no. 117 ('P.S. Sola'), signed; dorse docket '11 Sett. 1680'. Date 1555 -> 11 Sep 1680; region England? -> France (Paris); author '...' -> Sebastiano Foscarini; symbol set Numerical. Deciphered by Paolo Bonavoglia, 'Decifra dispacci veneziani' (crittologia.eu), listed as '1680-09-11: Dispaccio di ambasciatore Sebastiano Foscarini', but that decipherment is offline and was not seen. Cipher is 3-digit groups (third digit 0-9, rare 0/7/8/9 only there), ~300-code homophonic nomenclator; ciphertext-only attempt (annealing, Italian 4-gram) gave no text. Full digit transcription attached (first pass). Not related to R1873 (Mocenigo, Rome 1558), a different cipher.",
-    "reading": null,
-    "sent": false,
-    "reading_not_needed": true,
-    "fields": {
-     "sender": "Sebastiano Foscarini",
-     "receiver": "Doge of Venice",
-     "origin_city": "Paris",
-     "start_year": 1680,
-     "start_month": 9,
-     "start_day": 11
-    },
-    "transcription": [
-     "targets/r1871/r1871_digits.txt",
-     "targets/r1871/groups.txt"
     ]
    }
   }

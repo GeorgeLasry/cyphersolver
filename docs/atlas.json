@@ -1,5 +1,13 @@
 {
  "places": {
+  "Dijon": [
+   47.32,
+   5.04
+  ],
+  "Poitiers": [
+   46.58,
+   0.34
+  ],
   "Amsterdam": [
    52.37,
    4.9
@@ -406,6 +414,9 @@
   ]
  },
  "letters": [
+  {"slug": "sabran1631", "doc": "R2748", "year": 1631.24, "date": "28 Mar 1631", "from": "Dijon", "to": "Genoa", "st": "found", "label": "Louis XIII to Melchior de Sabran (deciphered by Lasry)"},
+  {"slug": "brulart1615", "doc": "R2785", "year": 1615.71, "date": "15 Sep 1615", "from": "Poitiers", "to": "Venice", "st": "found", "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"},
+  {"slug": "brulart1615", "doc": "R2786", "year": 1617.56, "date": "25 Jul 1617", "from": "Paris", "to": "Venice", "st": "found", "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"},
   {
    "slug": "florence1429",
    "doc": "no171",
@@ -607,14 +618,14 @@
    "label": "Raince"
   },
   {
-   "slug": "gramont1529",
+   "slug": "langeac1529",
    "doc": "langeac1529",
    "year": 1529.04,
    "date": "14 Jan [1529]",
    "from": "Venice",
    "to": "Paris",
    "st": "solved",
-   "label": "Gramont 1529–37"
+   "label": "Langeac 1529"
   },
   {
    "slug": "sormano1529",
@@ -664,27 +675,17 @@
    "from": "Rome",
    "to": "Paris",
    "st": "solved",
-   "label": "Gramont 1529–37"
+   "label": "Gramont 1529"
   },
   {
-   "slug": "gramont1529",
+   "slug": "gramont1530",
    "doc": "gramont1530",
    "year": 1530.54,
    "date": "21 July [1530]",
    "from": "Rome",
    "to": "Paris",
-   "st": "solved",
-   "label": "Gramont 1529–37"
-  },
-  {
-   "slug": "rome1536",
-   "doc": "R4248",
-   "year": 1536.5,
-   "date": "1536, no date on the crops",
-   "from": "Rome",
-   "to": "Paris",
    "st": "partial",
-   "label": "Mâcon 1536–37"
+   "label": "Gramont 1530"
   },
   {
    "slug": "rome1536",
@@ -747,14 +748,14 @@
    "label": "Mâcon 1536–37"
   },
   {
-   "slug": "gramont1529",
+   "slug": "rome1536",
    "doc": "macon1537",
    "year": 1537.29,
    "date": "11 Apr 1537",
    "from": "Rome",
    "to": "Paris",
-   "st": "solved",
-   "label": "Gramont 1529–37"
+   "st": "partial",
+   "label": "Mâcon 1536–37"
   },
   {
    "slug": "rome1536",
@@ -1247,14 +1248,14 @@
    "label": "Como to Dandini 1580"
   },
   {
-   "slug": "dandini1580",
+   "slug": "dandini1580r73",
    "doc": "R73",
-   "year": 1580.5,
-   "date": "unknown",
+   "year": 1580.6,
+   "date": "8 Aug 1580",
    "from": "Rome",
    "to": "Paris",
    "st": "solved",
-   "label": "Como to Dandini 1580"
+   "label": "Como to Dandini, August 1580 (deciphered by Lasry)"
   },
   {
    "slug": "bergamo1585",
@@ -1853,7 +1854,7 @@
    "date": "27 Nov and ? Dec 1631",
    "from": "Bremen",
    "to": "Hamburg",
-   "st": "partial",
+   "st": "solved",
    "label": "Bremen to Salvius 1631"
   },
   {
@@ -4375,6 +4376,16 @@
    "to": "Bristol",
    "st": "partial",
    "label": "Prince Maurice to Prince Rupert (not deciphered)"
+  },
+  {
+   "slug": "sp106r924",
+   "doc": "R924",
+   "year": 1646.04,
+   "date": "Jan 1646",
+   "from": "Paris",
+   "to": "Oxford",
+   "st": "found",
+   "label": "Henrietta Maria's household to Charles I (Lasry's SP106-8 key)"
   }
  ]
 }

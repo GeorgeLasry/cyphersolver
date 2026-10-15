@@ -180,6 +180,33 @@
    "note": "Lasry's reconstruction of the Charles I–Henrietta Maria cipher."
   },
   {
+   "id": "k-lasry-sp106",
+   "label": "Lasry's TNA SP 106 key (Sept 1645)",
+   "kind": "scholar's key",
+   "by": "George Lasry",
+   "year": 1645,
+   "found": 2020,
+   "note": "Lasry's reconstruction (DECODE, 23 Oct 2020) of the September 1645 key of Henrietta Maria's household letters, SP 106/10 ff. 207-234."
+  },
+  {
+   "id": "k-lasry-sp106-2",
+   "label": "Lasry's SP106-2 key (July-Aug 1645)",
+   "kind": "scholar's key",
+   "by": "George Lasry",
+   "year": 1645,
+   "found": 2020,
+   "note": "Lasry's reconstruction (DECODE, 23 Oct 2020) of the key of SP 106/10 ff. 216-217 and 219."
+  },
+  {
+   "id": "k-lasry-sp106-8",
+   "label": "Lasry's SP106-8 key (Jan 1646)",
+   "kind": "scholar's key",
+   "by": "George Lasry",
+   "year": 1646,
+   "found": 2020,
+   "note": "Lasry's reconstruction (DECODE, 23 Oct 2020) of the key of SP 106/10 ff. 235-240, with a numbered word list from 100."
+  },
+  {
    "id": "k-lasry-spagna6",
    "label": "Lasry's Spagna 6 nunciature key",
    "kind": "scholar's key",
@@ -197,11 +224,37 @@
   },
   {
    "id": "k-lasry-dandini",
-   "label": "Lasry's key D3190 (R72)",
+   "label": "Lasry's key D3190 (R73)",
    "kind": "scholar's key",
    "by": "George Lasry",
    "year": 1580,
-   "note": "Letter key permuted inside Lasry's frame."
+   "found": 2020,
+   "note": "Recovered by Lasry for R73 (8 Aug 1580); filed on DECODE under R72. R72 shares its frame and nomenclator with the letters reassigned."
+  },
+  {
+   "id": "k-como-r72",
+   "label": "R72 letter key, Como to Dandini, May 1580",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": 1580,
+   "note": "Letter values rebuilt by swap annealing inside the frame and nomenclator of Lasry's R73 key, checked against the clerk's decipherment on f. 52."
+  },
+  {
+   "id": "k-lasry-conti1649",
+   "label": "Lasry's key to Conti's poly-homophonic cipher (BnF fr. 3854 nos. 41-42)",
+   "kind": "scholar's key",
+   "by": "George Lasry",
+   "year": 1649,
+   "found": 2023,
+   "note": "Letter cipher without nomenclator; A, L, R with two signs each, five polyphonic signs. Printed in HistoCrypt 2023."
+  },
+  {
+   "id": "k-laigue1649",
+   "label": "Conti-Laigue number code of 1649 (BnF fr. 3854 no. 43), rebuilt here",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": 1649,
+   "note": "Four interleaved alphabets, five-syllable blocks, underline reverses a syllable, nulls 99-250; rebuilt from the clerk's interlinear glosses."
   },
   {
    "id": "k-lasry-sauli",
@@ -292,6 +345,14 @@
    "note": "Recovered 2018; Lasry: same key as Barb. Lat. 6960."
   },
   {
+   "id": "k-tomokiyo-matignon3",
+   "label": "Tomokiyo's partial table of Matignon's Cipher-3",
+   "kind": "scholar's key",
+   "by": "Satoshi Tomokiyo",
+   "year": 1586,
+   "note": "cryptiana, Henry III's Cipher with Ambassadors; checked and extended by alejandrozarco on ff. 277r/279-280 (PR #25)."
+  },
+  {
    "id": "k-tomokiyo-1522",
    "label": "Tomokiyo's Sánchez/Manuel 1522 key",
    "kind": "scholar's key",
@@ -351,7 +412,15 @@
    "kind": "scholar's key",
    "by": "Satoshi Tomokiyo",
    "year": 1586,
-   "note": "Henry of Navarre's cipher."
+   "note": "Henry of Navarre's cipher of 1586, rebuilt from the f. 321 interlinear decipherment (500 Colbert 401); extended in navarre1586 by 24 = f, 34 = l, 36 = m, 61 = et."
+  },
+  {
+   "id": "k-segur-navarre-a",
+   "label": "Navarre's key A of 1585-86, rebuilt here",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": 1585,
+   "note": "Letters 1-53 in alphabetical order with two or three homophones, doubles and a null; syllabary 54-123 of fourteen consonants by five vowels; word-signs in letters. Recovered from ff. 233, 239, 288v of 500 Colbert 401 by a structured annealer; targets/segur/key_v4.json."
   },
   {
    "id": "k-tomokiyo-1529",
@@ -1102,17 +1171,41 @@
    "note": "Recovered from R7526 and transferred to eight other Potocka letters."
   },
   {
-   "id": "k-siena1421",
-   "label": "Siena Concistoro keys (nos. 4, 14, 18, 25)",
+   "id": "k-siena25",
+   "label": "Siena, key of Concistoro 2308 no. 25",
    "kind": "rebuilt here",
    "by": "cyphersolver",
-   "year": 1421,
-   "note": "Four keys: nos. 14, 18 and 25 recovered from their own ciphertext, no. 4 from an alphabet fragment and glosses; none of the 43 key sheets of fasc. 1 (R4746-R4789) fits.",
+   "year": 1450,
+   "note": "Simple substitution on 22 stroke signs, recovered from the slip's own ciphertext; year unknown (placeholder). None of the 43 filed keys of fasc. 1 fits."
+  },
+  {
+   "id": "k-siena18",
+   "label": "Siena, key of Concistoro 2308 no. 18 (treaty articles)",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": 1515,
+   "note": "Latin simple substitution on 30 signs with nulls, recovered from the articles' own ciphertext; 1510s-20s, year not fixed."
+  },
+  {
+   "id": "k-siena14",
+   "label": "Siena, key of Concistoro 2308 no. 14 (before 1429)",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": 1420,
+   "note": "Italian substitution with a few homophones and code signs, recovered from the letter's own ciphertext; before 1429, year a placeholder."
+  },
+  {
+   "id": "k-borghesi1456",
+   "label": "Borghesi's key, Naples 1456 (Concistoro 2308 no. 4)",
+   "kind": "rebuilt here",
+   "by": "cyphersolver",
+   "year": 1456,
+   "note": "Rebuilt from an alphabet fragment written below the letter and the recipient's glosses; none of the 1450s keys of fasc. 1 fits.",
    "image": {
-    "src": "siena1421_no4key.jpg",
+    "src": "borghesi1456_key.jpg",
     "credit": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 4, via DECODE R4793",
     "caption": "No. 4, the alphabet fragment below the text: l m n o over the cipher signs ∫ 2 a T. Image: Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 4, via DECODE R4793.",
-    "page": "siena1421"
+    "page": "borghesi1456"
    }
   },
   {
@@ -2102,10 +2195,34 @@
    "note": ""
   },
   {
+   "key": "k-tomokiyo-matignon3",
+   "target": "matignon1586c3",
+   "how": "adapted",
+   "note": "applied by alejandrozarco to f. 276 and checked on f. 179; extended with ### = et, the split columns and the C-family signs"
+  },
+  {
    "key": "k-lasry-sp106-5",
+   "target": "sp106r929",
+   "how": "read unchanged",
+   "note": "applied here to Pettersson's transcription of f. 247: 293 of 348 groups, all equal to Lasry's plaintext"
+  },
+  {
+   "key": "k-lasry-sp106",
    "target": "hm1645",
    "how": "read unchanged",
-   "note": "Lasry's own DECODE readings"
+   "note": "Lasry's own DECODE decipherment of R785, R790, R923; the key applied here only as a check"
+  },
+  {
+   "key": "k-lasry-sp106-2",
+   "target": "sp106r787",
+   "how": "read unchanged",
+   "note": "Lasry's own DECODE decipherment of R787; the key applied here only as a check"
+  },
+  {
+   "key": "k-lasry-sp106-8",
+   "target": "sp106r924",
+   "how": "read unchanged",
+   "note": "Lasry's own DECODE decipherment of R924; the key applied here only as a check"
   },
   {
    "key": "k-lasry-spagna6",
@@ -2129,7 +2246,31 @@
    "key": "k-lasry-dandini",
    "target": "dandini1580",
    "how": "adapted",
-   "note": ""
+   "note": "frame and nomenclator only; the letter values do not read R72"
+  },
+  {
+   "key": "k-lasry-conti1649",
+   "target": "conti1649",
+   "how": "read unchanged",
+   "note": "applied to a fresh transcription; three corrections to his printed text"
+  },
+  {
+   "key": "k-laigue1649",
+   "target": "laigue1649",
+   "how": "rebuilt from",
+   "note": "rebuilt from about 3,300 interlinear glosses; deciphers the unglossed 12-line opening"
+  },
+  {
+   "key": "k-como-r72",
+   "target": "dandini1580",
+   "how": "rebuilt from",
+   "note": "letter key annealed in Lasry's frame, confirmed on the clerk's decipherment"
+  },
+  {
+   "key": "k-lasry-dandini",
+   "target": "dandini1580r73",
+   "how": "read unchanged",
+   "note": "Lasry's own decryption (D3191); not re-decrypted here"
   },
   {
    "key": "k-lasry-sauli",
@@ -2171,13 +2312,25 @@
    "key": "k-lasry-gl",
    "target": "gramont1529",
    "how": "read unchanged",
-   "note": ""
+   "note": "Gramont's cipher (1529) table"
+  },
+  {
+   "key": "k-lasry-gl",
+   "target": "langeac1529",
+   "how": "adapted",
+   "note": "Avranches' cipher 1 table, refined from the leaf"
+  },
+  {
+   "key": "k-lasry-gl",
+   "target": "gramont1530",
+   "how": "partial",
+   "note": "Gramont's cipher (1530) table; three unknown signs identified, two still open"
   },
   {
    "key": "k-lasry-gl",
    "target": "rome1536",
-   "how": "read unchanged",
-   "note": "Mâcon table"
+   "how": "adapted",
+   "note": "Mascon's cipher table (fr. 3071 f. 9), with Tomokiyo's fr. 3053 reconstruction; corrected from glosses"
   },
   {
    "key": "k-lasry-gl",
@@ -2205,9 +2358,9 @@
   },
   {
    "key": "k-lasry-esp318",
-   "target": "esp318",
+   "target": "esp318no95",
    "how": "partial",
-   "note": "no. 95 in stretches"
+   "note": "no. 95 in stretches (about two thirds of f. 122r); two signs corrected"
   },
   {
    "key": "k-lasry-bergamo",
@@ -2265,9 +2418,15 @@
   },
   {
    "key": "k-tomokiyo-segur",
+   "target": "navarre1586",
+   "how": "adapted",
+   "note": "f. 333; four values added"
+  },
+  {
+   "key": "k-segur-navarre-a",
    "target": "segur",
-   "how": "read unchanged",
-   "note": "f. 333"
+   "how": "rebuilt from",
+   "note": "ff. 233, 239, 288v, ciphertext-only"
   },
   {
    "key": "k-tomokiyo-1529",
@@ -2852,10 +3011,28 @@
    "note": "R7526, then eight letters"
   },
   {
-   "key": "k-siena1421",
-   "target": "siena1421",
+   "key": "k-siena25",
+   "target": "siena25",
    "how": "rebuilt from",
-   "note": "four letters"
+   "note": "ciphertext-only"
+  },
+  {
+   "key": "k-siena18",
+   "target": "siena18",
+   "how": "rebuilt from",
+   "note": "ciphertext-only"
+  },
+  {
+   "key": "k-siena14",
+   "target": "siena14",
+   "how": "rebuilt from",
+   "note": "ciphertext-only"
+  },
+  {
+   "key": "k-borghesi1456",
+   "target": "borghesi1456",
+   "how": "rebuilt from",
+   "note": "alphabet fragment and glosses on the letter"
   },
   {
    "key": "k-hesse1824",
@@ -3038,12 +3215,16 @@
   }
  ],
  "source_links": [
+  {"source": "s-cyphersolver", "key": "k-como-r72"},
+  {"source": "s-cyphersolver", "key": "k-laigue1649"},
+  {"source": "s-lasry", "key": "k-lasry-conti1649"},
   {"source": "s-lasry", "key": "k-r4755"},
   {"source": "s-cyphersolver", "key": "k-brussels1635"},
   {"source": "s-cyphersolver", "key": "k-vienna1640"},
   {"source": "s-cyphersolver", "key": "k-stuttgart1634"},
   {"source": "s-cyphersolver", "key": "k-bayonne1529"},
   {"source": "s-tomokiyo", "key": "k-tomokiyo-bayonne1529"},
+  {"source": "s-tomokiyo", "key": "k-tomokiyo-matignon3"},
   {"source": "s-cyphersolver", "key": "k-worcester1527"},
   {"source": "s-decode", "key": "k-r5258"},
   {"source": "s-decode", "key": "k-r5256"},
@@ -3094,6 +3275,18 @@
   {
    "source": "s-lasry",
    "key": "k-lasry-sp106-5"
+  },
+  {
+   "source": "s-lasry",
+   "key": "k-lasry-sp106"
+  },
+  {
+   "source": "s-lasry",
+   "key": "k-lasry-sp106-2"
+  },
+  {
+   "source": "s-lasry",
+   "key": "k-lasry-sp106-8"
   },
   {
    "source": "s-lasry",
@@ -3166,6 +3359,10 @@
   {
    "source": "s-tomokiyo",
    "key": "k-tomokiyo-segur"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-segur-navarre-a"
   },
   {
    "source": "s-tomokiyo",
@@ -3381,7 +3578,19 @@
   },
   {
    "source": "s-cyphersolver",
-   "key": "k-siena1421"
+   "key": "k-siena25"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-siena18"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-siena14"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-borghesi1456"
   },
   {
    "source": "s-cyphersolver",
@@ -3462,7 +3671,21 @@
   }
  ],
  "unlinked": {
-  "mniszech1714": "not solved: no key fits and none was rebuilt; nothing deciphered",
+  "dubellay1528": "read from Bourrilly and de Vaissière's printed text (1905); their key is not printed and Lasry's (2022) was not applied here",
+  "federico1497": "read from Ivan Parisi's printed decipherment (2020); Escrivà's key (Parisi 2004) was not applied here",
+  "esp318no93": "not solved: no key identified for nos. 93-94; Escrivà no. 1 and the Cifra general excluded, the Gran cifra not obtained",
+  "siena1421": "not solved: the unread pieces of the bundle; no filed key fits and none was rebuilt (the recovered keys are on siena25, siena18, siena14, borghesi1456)",
+  "segur1583":"not solved: no key fits f. 143 and none was rebuilt (58 tokens, too short)",
+  "rohan1636": "not solved: the ciphertext is not in hand and no key was rebuilt",
+  "emery1636": "not solved: the letters have not been seen; no key known",
+  "r4248":"read from the contemporary decipherment on f. 86; Tomokiyo's second fr. 3053 table identified as its cipher but not applied; Mascon's cipher tried and gives nonsense",
+  "sabran1631": "read from George Lasry's published decipherment (GL.htm, 2022); his key not re-applied here",
+  "brulart1615": "read from Satoshi Tomokiyo's reading with his reconstructed key (DECODE, 2021); key not re-applied here",
+  "riksarkivet4284": "not solved: no key fits and none was rebuilt; nothing deciphered",
+  "riksarkivet4306": "not solved: no key fits and none was rebuilt; nothing deciphered",
+  "rusdorff1628": "surveyed only: no key identified or rebuilt; nothing deciphered",
+  "oxenstierna1633": "surveyed only: no key identified or rebuilt; the glosses of the time are not yet used",
+  "mniszech1714":"not solved: no key fits and none was rebuilt; nothing deciphered",
   "geertruidenberg":"not deciphered: no key fits either code; nothing read, no values rebuilt",
   "burgo1527": "not a cipher: the record is a clear minute, no key involved",
   "randolph1570": "read from the contemporary decipherment (f. 278, R4932); no key",
@@ -3496,6 +3719,10 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-tomokiyo-segur", "target": "segur", "note": "same design, different values (letters shifted by eight): does not read ff. 233, 239, 288v"},
+  {"key": "k-tomokiyo-segur", "target": "segur1583", "note": "applied to f. 143: nothing"},
+  {"key": "k-segur-navarre-a", "target": "segur1583", "note": "applied to f. 143: scattered French-looking fragments only, not the same key"},
+  {"key": "k-lasry-gl", "target": "r4248", "note": "Mascon's cipher (Lasry's fr. 3071 f. 9 table, as in rome1536/macon_key.md) applied to f. 85: nonsense"},
   {"key": "k-sanguszko-keys", "target": "mniszech1714", "note": "Sanguszko key records R7515 (a=5/10/15), R7460/R7461 (graphic signs): do not fit R7524"},
   {"key": "k-potocka1714", "target": "mniszech1714", "note": "Potocka's alphabet (base 14-39, homophone = 2x base) shifted -40..40 or scaled x1-x4: no fit"},
   {"key": "k-zifra-prima-1578", "target": "r1871", "note": "16th-century letter-and-figure table (with R1788, R1790): does not match the 1680 three-digit groups"},
@@ -3657,8 +3884,13 @@
   },
   {
    "key": "k-escriva1",
-   "target": "esp318",
+   "target": "esp318no93",
    "note": "Escrivá no. 1 excluded for nos. 93/94 by code-initial range"
+  },
+  {
+   "key": "k-cifra-general",
+   "target": "esp318no93",
+   "note": "Cifra general excluded for nos. 93/94 by code-initial range (v, x, y, z, b, c)"
   },
   {
    "key": "k-tomokiyo-estrada",
@@ -3957,13 +4189,23 @@
   },
   {
    "key": "k-r4310",
-   "target": "riksarkivet1628",
-   "note": "Siebenbürgen 'Schauis' key R4310 tested on R4306 and R4284: no fit"
+   "target": "riksarkivet4284",
+   "note": "Siebenbürgen 'Schauis' key R4310 tested on R4284: no fit"
   },
   {
    "key": "k-r4296",
-   "target": "riksarkivet1628",
-   "note": "1632 word-end-30 key R4296 tested on R4306 and R4284: no fit"
+   "target": "riksarkivet4284",
+   "note": "1632 word-end-30 key R4296 tested on R4284: no fit"
+  },
+  {
+   "key": "k-r4310",
+   "target": "riksarkivet4306",
+   "note": "Siebenbürgen 'Schauis' key R4310 tested on R4306: no fit"
+  },
+  {
+   "key": "k-r4296",
+   "target": "riksarkivet4306",
+   "note": "1632 word-end-30 key R4296 tested on R4306: no fit"
   },
   {
    "key": "k-r4922-richmond",
@@ -3989,6 +4231,26 @@
    "key": "k-siena-fasc1",
    "target": "siena1421",
    "note": "Filed keys of fasc. 1 (R4746–R4789) compared; R4750, R4753-57, R4762, R4760, R4768, R4778, R4764 tested: no fit (R4755 was indexed but not tried on nos. 6/24; it fits them: see siena1431)"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena25",
+   "note": "Filed keys of fasc. 1 (R4746–R4789) compared by eye with no. 25: no fit"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena18",
+   "note": "Filed keys of fasc. 1 (R4746–R4789) compared by eye with no. 18: no fit"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena14",
+   "note": "Filed keys of fasc. 1 (R4746–R4789) compared by eye with no. 14: no fit"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "borghesi1456",
+   "note": "1450s keys R4750, R4753, R4754, R4756, R4757, R4762 transcribed and tested on no. 4: no fit (R4750 shares the code word storps)"
   },
   {
    "key": "k-brah915-keybook",
