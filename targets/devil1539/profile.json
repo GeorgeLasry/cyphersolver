@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "target": "devil1539",
+  "title": "The Devil's Handwriting: Ludovico Spoletano's conjuration, Teseo Ambrogio, Introductio in Chaldaicam linguam (Pavia 1539), f. 212v",
+  "documents": [
+    {
+      "id": "f212v",
+      "shelfmark": "Teseo Ambrogio, Introductio in Chaldaicam linguam (Pavia 1539), f. 212v (printed woodcut)",
+      "date": "1539",
+      "year": 1539,
+      "country": "Italy",
+      "language": "unknown",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment, key or clear copy known."
+      },
+      "length": {
+        "tokens": 174,
+        "distinct": 40,
+        "unit": "symbols",
+        "measured": true,
+        "file": "transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "targets/bookmargin/margin.png",
+        "image_quality": "good",
+        "notes": "Own 174-sign transcription (transcription.txt) and David Scheers's 153-sign, 31-symbol transcription (transcription_scheers.txt); woodcut sign identities uncertain."
+      }
+    },
+    {
+      "id": "f212v-scheers",
+      "shelfmark": "same, Scheers transcription",
+      "date": "1539",
+      "year": 1539,
+      "country": "Italy",
+      "language": "unknown",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment known."
+      },
+      "length": {
+        "tokens": 153,
+        "distinct": 31,
+        "unit": "symbols",
+        "measured": true,
+        "file": "transcription_scheers.txt"
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "David Scheers, PDF 'Remarks devil's handwriting' (16 Oct 2026)",
+        "image_quality": "poor",
+        "notes": "Woodcut; strokes dropped and added in printing."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "undetermined"
+    ],
+    "summary": "Seven lines of invented-looking signs (31-40 classes) in a 1539 woodcut presented as the Devil's answer; system and language not established.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 40,
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "none",
+    "notes": "If the signs are Ethiopic the text may be a Ge'ez note rather than a cipher."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Unsolved per Cipher Mysteries (2013), Schmeh Top 25 no. 12; Scheers's Latin/Italian attempts unread.",
+      "found": "before attempt",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "transcription",
+      "cleartext context"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Supplied the image, insisted on continuing, and forwarded David Scheers's PDF which identified the target and gave a transcription.",
+    "tools": [
+      "Noto font reference charts",
+      "glyph segmentation (OpenCV)",
+      "quadgram simulated annealing",
+      "web search"
+    ],
+    "models": [
+      "claude"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-16",
+    "last_date": "2026-10-16"
+  },
+  "solution": [
+    {
+      "kind": "literature search",
+      "what": "Searched the repository, catalogue.json and the web (Schmeh's Encrypted Book List, Cipher Mysteries) for the image or a description of it.",
+      "result": "failed",
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "hypothesis",
+      "what": "Compared the signs with rendered charts of Samaritan, Phoenician, Ethiopic, Glagolitic, Tibetan, Old Italic, Old Hungarian, Georgian and Armenian; Ethiopic fits best (arch letters, ተ, ገ, ለ, አ, ። and numeral bars), Samaritan second; the commonest sign has no clear counterpart.",
+      "result": "partial",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "hypothesis",
+      "what": "Tested the image rotated 180 degrees as upside-down Latin script.",
+      "result": "ruled out",
+      "technique": [
+        "contextual inference"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "transcription",
+      "what": "Segmented the glyphs automatically and transcribed 174 signs into provisional classes from contact sheets.",
+      "result": "partial",
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "solver",
+      "what": "Simple substitution into Latin (CLTK Caesar/Cicero/Sallust quadgrams), 12 annealing restarts, one-to-one key on the commonest classes.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "control",
+      "what": "Same solver on three shuffles of the transcription: shuffled -12.46 to -12.62 per quadgram against real -12.86, so the Latin fit is no better than chance.",
+      "result": "worked",
+      "technique": [
+        "statistical test"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "literature search",
+      "what": "Scheers PDF identified the target as Ambrogio 1539 f. 212v (Devil's Handwriting); searches confirm no published decipherment.",
+      "result": "worked",
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "hypothesis",
+      "what": "Compared further scripts (Hangul, kana with 90-degree rotation, Brahmi, Batak, Rejang, Hanunoo, Canadian syllabics, Tifinagh, Armenian, mirror and 180-degree readings).",
+      "result": "ruled out",
+      "technique": [
+        "manual reconstruction",
+        "contextual inference"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "solver",
+      "what": "Simple substitution of own transcription into Hebrew, Croatian, Russian, Amharic consonant rows, Latin and Italian, both directions.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "solver",
+      "what": "Ethiopic visual consonant values with free vowels, scored against Italian and Latin; z = 0.27 / 0.33 against permuted values.",
+      "result": "failed",
+      "technique": [
+        "beam/DP decoding",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "solver",
+      "what": "Scheers transcription, simple substitution into Latin and Italian: beats 15 shuffles (z about 4.5 and 2.8).",
+      "result": "partial",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "control",
+      "what": "Bigram (Markov-1) surrogates of the Scheers transcription score as well or better, so the excess over shuffles comes from sign-pair habits, not language.",
+      "result": "worked",
+      "technique": [
+        "statistical test"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "control",
+      "what": "Calibration on 153 letters of Caesar: plain substitution solved (LM -9.0 to -9.7); with 6 homophones (25 signs) not solved by the same or a frequency-penalised homophonic solver.",
+      "result": "worked",
+      "technique": [
+        "statistical test",
+        "simulated annealing"
+      ],
+      "date": "2026-10-16"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "No reading; monoalphabetic Latin excluded by calibration; homophonic Latin/Italian not excluded because the solvers fail on a matched control.",
+    "contribution": [
+      "none"
+    ],
+    "class": "not read",
+    "key": "none",
+    "fraction_read": 0.0,
+    "verification": [
+      "none"
+    ],
+    "notes": "In progress: needs the Ambrogio and Amadi scans, a reconciled transcription and a stronger homophonic solver.",
+    "gaps": [
+      {
+        "item": "the whole text",
+        "blocker": "illegible",
+        "detail": "woodcut sign identities uncertain; transcriptions disagree"
+      },
+      {
+        "item": "Ambrogio's alphabet plates and Amadi's Letere diaboliche table",
+        "blocker": "needs-physical-access",
+        "detail": "scans not reachable from this environment"
+      }
+    ],
+    "credits": [
+      {
+        "who": "scheers",
+        "role": "identification",
+        "note": "PDF 'Remarks devil's handwriting' identified the image as Ambrogio 1539 f. 212v and collected the sources",
+        "date": "2026-10-16",
+        "source": "PDF sent to the user"
+      },
+      {
+        "who": "scheers",
+        "role": "transcription",
+        "note": "153-sign transcription used in the solver runs",
+        "date": "2026-10-16",
+        "source": "PDF sent to the user"
+      }
+    ]
+  }
+}
