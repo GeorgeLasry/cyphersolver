@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "target": "bookmargin",
+  "title": "Seven lines of unknown signs in the margin of a printed Latin book (user-supplied photograph, provenance unknown)",
+  "documents": [
+    {
+      "id": "margin",
+      "shelfmark": "unknown (photograph supplied by the user, 16 Oct 2026; targets/bookmargin/margin.png)",
+      "date": "unknown",
+      "year": "unknown",
+      "country": "unknown",
+      "language": "unknown",
+      "cleartext_in_document": "none",
+      "plaintext": {"location": ["none"], "source": "No decipherment, key or clear copy known."},
+      "length": {"tokens": 174, "distinct": 40, "unit": "symbols", "measured": true, "file": "transcription.txt"},
+      "transcription": {
+        "by": "llm from images",
+        "source": "targets/bookmargin/margin.png",
+        "image_quality": "good",
+        "notes": "Provisional sign classes; interlinear signs omitted; the arch-shaped family may be split or merged wrongly. Not checked by a second reader."
+      }
+    }
+  ],
+  "system": {
+    "types": ["undetermined"],
+    "summary": "Left-to-right signs resembling Ethiopic fidel (or Samaritan letters), with barred numeral-like signs and four-dot marks; system and language not established.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 40,
+    "diacritics": {"used": "unknown"},
+    "homophones": {"used": "unknown"},
+    "nomenclator": {"present": "unknown"},
+    "nulls": {"present": "unknown"},
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "none",
+    "notes": "If the signs are Ethiopic the text may be a Ge'ez note rather than a cipher."
+  },
+  "conditions": {
+    "prior_solution": {"exists": "unknown", "where": "No reading found by web search (16 Oct 2026).", "found": "before attempt", "used": false},
+    "inputs": ["images"],
+    "attack": "ciphertext-only",
+    "human_role": "Supplied the photograph with the request to solve it; no provenance or other help.",
+    "tools": ["Noto font reference charts", "glyph segmentation (OpenCV)", "quadgram simulated annealing", "web search"],
+    "models": ["claude"],
+    "sessions": 1,
+    "first_date": "2026-10-16",
+    "last_date": "2026-10-16"
+  },
+  "solution": [
+    {"kind": "literature search", "what": "Searched the repository, catalogue.json and the web (Schmeh's Encrypted Book List, Cipher Mysteries) for the image or a description of it.", "result": "failed", "date": "2026-10-16"},
+    {"kind": "hypothesis", "what": "Compared the signs with rendered charts of Samaritan, Phoenician, Ethiopic, Glagolitic, Tibetan, Old Italic, Old Hungarian, Georgian and Armenian; Ethiopic fits best (arch letters, ተ, ገ, ለ, አ, ። and numeral bars), Samaritan second; the commonest sign has no clear counterpart.", "result": "partial", "technique": ["manual reconstruction", "contextual inference"], "date": "2026-10-16"},
+    {"kind": "hypothesis", "what": "Tested the image rotated 180 degrees as upside-down Latin script.", "result": "ruled out", "technique": ["contextual inference"], "date": "2026-10-16"},
+    {"kind": "transcription", "what": "Segmented the glyphs automatically and transcribed 174 signs into provisional classes from contact sheets.", "result": "partial", "date": "2026-10-16"},
+    {"kind": "solver", "what": "Simple substitution into Latin (CLTK Caesar/Cicero/Sallust quadgrams), 12 annealing restarts, one-to-one key on the commonest classes.", "result": "failed", "technique": ["simulated annealing", "language-model scoring"], "date": "2026-10-16"},
+    {"kind": "control", "what": "Same solver on three shuffles of the transcription: shuffled -12.46 to -12.62 per quadgram against real -12.86, so the Latin fit is no better than chance.", "result": "worked", "technique": ["statistical test"], "date": "2026-10-16"}
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "Script provisionally identified; no key, reading or language established; Latin substitution scored no better than shuffled controls.",
+    "contribution": ["none"],
+    "class": "not read",
+    "key": "none",
+    "fraction_read": 0.0,
+    "verification": ["none"],
+    "notes": "In progress: provenance of the image unknown; Ethiopic hypothesis to be tested on a Ge'ez corpus.",
+    "gaps": [
+      {"item": "provenance of the photograph", "blocker": "no-key-material", "detail": "book, library and date not given"},
+      {"item": "script identity and the commonest sign", "blocker": "illegible", "detail": "needs a Ge'ez reader or a sharper image"}
+    ]
+  }
+}
