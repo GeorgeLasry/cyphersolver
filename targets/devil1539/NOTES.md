@@ -89,6 +89,16 @@ Left open: a syllabic system (Ethiopic-style signs with vowel marks, which neith
 nomenclator, or pseudo-writing with no linguistic content (the most economical reading of all the tests, and
 consistent with Ambrogio's "I did not care to know").
 
+## Crib attack (16 Oct 2026)
+
+`work/hs/hscrib.c`, `cribrun.py`: each crib fixed at every offset (both transcriptions, both directions), placements
+inconsistent with the sign classes rejected, the rest annealed with the calibrated solver (3 restarts × 400k). Cribs
+from the question: antoniomaria, marchantonio, dinari, denari, danari, piacenza, caualiero, ritrouati, trouati,
+qualloco, tesoro, figliolo; Latin pecunia, thesaurus, antoniusmaria, marcusantonius, placentia. 15,970 placements,
+2,449 consistent. Best −2.50 (danari, Scheers, offset 54), below the uncribbed best and far from the solved-control
+range (−1.6 to −2.1); top 25 in `work/hs/crib_results_top25.txt`. On a control the true crib placement recovers the
+whole text and every wrong offset is rejected. None of these words is in the text under a letter substitution.
+
 ## Remaining gaps
 
 - Reading: none. Blocker: illegible (the woodcut's sign identities are uncertain; two transcriptions disagree on
