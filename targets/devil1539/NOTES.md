@@ -1,6 +1,7 @@
 # The "Devil's Handwriting": Ludovico Spoletano's conjuration, Teseo Ambrogio, *Introductio in Chaldaicam linguam* (Pavia 1539), f. 212v
 
-Status: in progress. Not read; no method tested here reaches a reading. Schmeh's Top 25 no. 12.
+Status: in progress. Not read. Second session (16 Oct 2026): a calibrated homophonic solver that solves 12/12 matched
+153-letter, 31-sign controls in Latin and Italian finds nothing in the Devil's text. Schmeh's Top 25 no. 12.
 
 ## Target
 
@@ -58,6 +59,35 @@ Conclusion so far: the Devil's Handwriting is not a monoalphabetic Latin text un
 monoalphabetic Latin text of this length scores near −9.5 and is solved). A homophonic Latin or Italian text of
 31 signs cannot be excluded: the solvers used here fail on a matched control. The bigram-surrogate result means
 that nothing in the text is yet distinguishable from habitual pseudo-writing.
+
+## Calibrated homophonic solver (second pass, 16 Oct 2026)
+
+`work/hs/hs.c` (and `hsg.c` for any alphabet): simulated annealing over a free sign → letter key, scored with
+interpolated 5-gram conditional log-probabilities plus a letter-frequency chi-square penalty (λ 0.5), 24 restarts ×
+3 M moves. Models: Latin (Vulgate + CLTK), Italian (Bible + Pallotto 1629 nunciature letters), and Hebrew (WLC), Spanish
+(Quijote), French (Guizot), German, Greek, Arabic, Amharic consonant rows; also Italian and Latin with vowels dropped
+or merged (Judeo-Italian style).
+
+Controls (`work/hs/mkctl.py`): 153 letters of held-out text, 31 signs, homophones given to the commonest letters.
+
+| controls, 24 restarts | solved | score of solved key |
+|---|---|---|
+| Latin (Caesar, Sallust), 6 | 6/6 at 99–100% of letters | −1.62 to −1.86 |
+| Italian (held-out Bible), 6 | 6/6 at 88–100% | −1.64 to −2.12 |
+| Italian (archival lists, asl1883), 6 | 2–3/6 (model mismatch: the true key scores lower than the false one) | |
+
+Devil's text, best of 24 restarts: Latin −2.37 (LTR) / −2.50 (RTL); Italian −2.44 / −2.45 (Scheers transcription);
+own transcription −2.42 to −2.80. Shuffled copies score −2.42 to −2.52. Hebrew, Spanish, French, German, Greek,
+Arabic, Amharic rows and the vowel-dropped/merged variants: all within the shuffle range (`work/hs` results in the
+profile steps). **The text is not a simple or homophonic substitution of Latin or Italian under either
+transcription**; the other languages are excluded with less calibration.
+
+Structural note: both transcriptions independently read a run of three identical signs in line 2 (Scheers ZZZ, here
+the arch run H M H / S S S), which a letter substitution of Latin or Italian would turn into a tripled letter.
+
+Left open: a syllabic system (Ethiopic-style signs with vowel marks, which neither transcription separates), a code or
+nomenclator, or pseudo-writing with no linguistic content (the most economical reading of all the tests, and
+consistent with Ambrogio's "I did not care to know").
 
 ## Remaining gaps
 

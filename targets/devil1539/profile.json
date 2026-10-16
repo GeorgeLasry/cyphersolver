@@ -228,11 +228,32 @@
         "simulated annealing"
       ],
       "date": "2026-10-16"
+    },
+    {
+      "kind": "solver",
+      "what": "Calibrated homophonic solver (C, 5-gram, 24 restarts x 3M): solves 6/6 held-out Latin and 6/6 held-out Italian 153-letter 31-sign controls (88-100%), scores -1.62 to -2.12.",
+      "result": "worked",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "kind": "solver",
+      "what": "Same solver on the Devil's text (Scheers and own transcription, both directions): Latin -2.37/-2.50, Italian -2.44/-2.45, inside the shuffle range -2.42 to -2.52; Hebrew, Spanish, French, German, Greek, Arabic, Amharic rows, vowel-dropped and vowel-merged Italian/Latin also at shuffle level.",
+      "result": "failed",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "date": "2026-10-16"
     }
   ],
   "outcome": {
     "method": "not solved",
-    "method_basis": "No reading; monoalphabetic Latin excluded by calibration; homophonic Latin/Italian not excluded because the solvers fail on a matched control.",
+    "method_basis": "No reading. Simple and homophonic substitution of Latin and Italian excluded by a solver that solves 12/12 matched controls; nine further languages tested less rigorously; syllabic, code and meaningless pseudo-writing remain.",
     "contribution": [
       "none"
     ],
