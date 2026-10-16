@@ -9409,6 +9409,50 @@
      "sent": false
     }
    }
+  },
+  "siena2023": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena2023.html",
+   "key": {
+    "file": "targets/siena2023/key.txt",
+    "lang": "IT",
+    "how": "George Lasry’s reconstructed working key; uncertainty brackets and provisional nulls retained. # is an actual cipher sign. Visual key in the target folder."
+   },
+   "cite": "George Lasry, supplied Italian readings and English translations, 17 October 2026. Transcribed with CTTS, then solved by GPT-6 Astra.",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Latin and Italian",
+    "cipher_types": "homophonic, nomenclator, nulls"
+   },
+   "records": {
+    "R4808": {
+     "decode_status": "N/A",
+     "proposed": "Partially",
+     "note": "Current status taken from the earlier repository survey, not freshly verified. Partial decipherment and shared visual key supplied by George Lasry. From Perugia to an unidentified king, 30 March, year unknown. Early 15th-century/Ladislaus setting is a historical inference; no exact year entered. Supplied uncertainty marks retained. Transcribed with CTTS, then solved by GPT-6 Astra.",
+     "reading": [
+      {
+       "file": "targets/siena2023/R4808_reading.txt"
+      }
+     ],
+     "transcription": [
+      "targets/siena2023/R4808_transcription.txt"
+     ],
+     "sent": false
+    },
+    "R4811": {
+     "decode_status": "N/A",
+     "proposed": "Partially",
+     "note": "Current status taken from the earlier repository survey, not freshly verified. Partial decipherment and shared visual key supplied by George Lasry. Royal memoranda for Iacobo Spinelo and Francisco Gactule; 4 May is an arrival deadline, not an established issue date. Early 15th-century/Ladislaus setting is a historical inference; no exact year entered. Supplied uncertainty marks retained. Transcribed with CTTS, then solved by GPT-6 Astra.",
+     "reading": [
+      {
+       "file": "targets/siena2023/R4811_reading.txt"
+      }
+     ],
+     "transcription": [
+      "targets/siena2023/R4811_transcription.txt"
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {

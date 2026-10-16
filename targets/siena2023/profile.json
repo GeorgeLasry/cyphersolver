@@ -1,0 +1,295 @@
+{
+ "schema_version": 1,
+ "target": "siena2023",
+ "title": "George Lasry’s partial decipherments of Siena nos. 20 and 23 (DECODE R4808, R4811)",
+ "documents": [
+  {
+   "id": "R4808",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 20; DECODE R4808",
+   "date": "30 March, year unknown",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "Perugia → unidentified king",
+   "language": "Italian with Latin formulae",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No interlinear or marginal decipherment used. Original cleartext framing and small clear-script passages are distinct from the supplied modern edition.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1045,
+    "distinct": 48,
+    "unit": "symbols",
+    "measured": true,
+    "file": "R4808_cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry’s current CTTS transcription, with documented Codex-assisted sign and overlap review.",
+    "image_quality": "fair",
+    "notes": "16 current transcription rows; counts exclude punctuation/cleartext selections. g: prefixes in counting files preserve the # sign. Previous snapshots had different overlapping selection counts."
+   }
+  },
+  {
+   "id": "R4811",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 23; DECODE R4811",
+   "date": "Undated; a 4 May arrival deadline appears in the text",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "Unidentified royal authority → Iacobo Spinelo and Francisco Gactule, envoys to the Marche/Tartaglia; destinations incompletely identified",
+   "language": "Italian with Latin formulae",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No interlinear or marginal decipherment used. Original cleartext framing and small clear-script passages are distinct from the supplied modern edition.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 3202,
+    "distinct": 61,
+    "unit": "symbols",
+    "measured": true,
+    "file": "R4811_cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry’s current CTTS transcription, with documented Codex-assisted sign and overlap review.",
+    "image_quality": "fair",
+    "notes": "54 current transcription rows; counts exclude punctuation/cleartext selections. g: prefixes in counting files preserve the # sign. Previous snapshots had different overlapping selection counts."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Graphical homophonic substitution with word and letter-group signs, four apparent personal-name codes and ten provisional null classes.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 64,
+  "diacritics": {
+   "used": "unknown",
+   "note": "Marked and compound signs are separate CTTS classes; no general modifier rule established."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5,
+   "max_per_consonant": 3,
+   "per_letter": {
+    "a": 3,
+    "b": 1,
+    "c": 2,
+    "d": 1,
+    "e": 4,
+    "f": 1,
+    "g": 2,
+    "h": 1,
+    "i": 5,
+    "l": 2,
+    "m": 1,
+    "n": 2,
+    "o": 3,
+    "p": 1,
+    "q": 1,
+    "r": 2,
+    "s": 3,
+    "t": 1,
+    "v": 3
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 8,
+   "kinds": [
+    "word parts",
+    "common words",
+    "names"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": true,
+   "count": 10
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "The working key includes a special rr sign (oiio); no general doubling rule asserted.",
+  "sibling_key": "One working key for nos. 20 and 23; no matched archive key used.",
+  "notes": "Eight working word/letter-group/name entries = ci, et, re, rr and four person codes. Tartaglia is strongly supported; Names1–3 unidentified. Five further bracketed sign assignments and two unmapped classes are not silently treated as known nomenclator entries. Nulls and h/s sign classification remain provisional."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "The earlier collection survey records unsuccessful work on this pair. No historical decipherment or external key was used in this recovery; no first-publication claim is made.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry supplied the cipher images, directed the work and provided the Italian readings and English translations. He confirms that the cipher was transcribed with CTTS, then solved by GPT-6 Astra. Codex prepared the PR, checked the inventory and short excerpt, and added limited historical context.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver), used for transcription",
+   "GPT-6 Astra, used to solve the cipher",
+   "build.py (inventory, visual key and short excerpt only)"
+  ],
+  "models": [
+   "GPT-6 Astra"
+  ],
+  "sessions": "unknown",
+  "first_date": "unknown",
+  "last_date": "2026-10-17"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
+   "what": "The existing siena1421 collection survey records unsuccessful homophonic/null-aware attempts on nos. 20 and 23; this contribution does not rerun or claim those attempts.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "transcription",
+   "what": "Local CTTS review records document removal of overlapping selections and revision of compound and look-alike sign classes. The submitted snapshot is 4,247 cipher selections in two documents.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction",
+    "repeat/pattern analysis"
+   ],
+   "what": "Following CTTS transcription, GPT-6 Astra solved the cipher, as confirmed by George Lasry. Local analyses of no. 23 reconstruct word/letter-group signs, nulls and repeated personal-name codes, with image checking and application to no. 20. The supplied editions retain unresolved readings.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "verification",
+   "what": "Recounted the current key/transcriptions, regenerated the visual key, preserved the supplied editions and translations, and verified only R4811 L49:39–51:24: 108 signs yield 109 letters matching the supplied edition after spacing, punctuation, accents and u/v normalization. This selected excerpt does not establish complete-reading accuracy.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "literature search",
+   "what": "Checked Tartaglia, Ladislaus, Rodolfo III da Varano, Ludovico Migliorati and a possible Gattola identification in linked sources. A Ladislaus-era setting is plausible, but year, camp location and unresolved names remain unproved; no complete printed plaintext was located in the limited searches.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 108 tokens, 32 types, it-cinquecento order 4: reading -2.102 per letter; random keys -3.65 (z 6.8); key annealed onto shuffled ciphertext best -2.381 (mean -2.462, z 5.2); annealer on the real text -2.295. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-17",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 108,
+   "types": 32,
+   "tokens_per_type": 3.38,
+   "score": -2.102,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.65,
+     "sd": 0.227,
+     "max": -3.147,
+     "z": 6.8,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.462,
+     "sd": 0.069,
+     "max": -2.381,
+     "z": 5.2,
+     "p": 0.1429
+    }
+   },
+   "power": -2.295,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.102; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.295 Scope: only the deliberately selected 108-sign excerpt, not the complete key or the supplied editions. Language-model normalization reduces the 109 literal letters to 106 scored letters."
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Transcribed with CTTS, then solved by GPT-6 Astra, as confirmed by George Lasry. Recovery used ciphertext patterns and original cleartext framing, without a historical decipherment or matched external key.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.9899361806578302,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "counts.json: 4,033 unbracketed assignments / 4,074 non-null cipher occurrences; excludes 173 provisional nulls and 11 noncipher selections. Assignment coverage, not meaningful-reading accuracy.",
+  "fraction_coherent": "unknown",
+  "codes_open": {
+   "open": 3,
+   "total": 4,
+   "tokens_open": 21
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Directed the work and supplied the CTTS material, partial Italian readings and English translations. Transcribed with CTTS, then solved by GPT-6 Astra; contribution preparation and checks by Codex.",
+    "date": "2026-10-17",
+    "source": "https://github.com/dbourdeau/cyphersolver/tree/main/targets/siena2023",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Personal-name codes fat, o+, ovo and historical identities/year",
+    "blocker": "open-codes",
+    "detail": "Names1–3 unidentified; Tartaglia supported internally; year and all correspondents not independently fixed."
+   },
+   {
+    "item": "b1, 3bar, Fom, y3, ta, s2, m2 and h/s fork variants",
+    "blocker": "open-codes",
+    "detail": "Bracketed/unmapped or mixed classes remain."
+   },
+   {
+    "item": "Lacunae, subscription and doubtful words in supplied editions",
+    "blocker": "open-codes",
+    "detail": "Editorial readings retained as supplied, not asserted new key assignments."
+   },
+   {
+    "item": "Nulls and compound/component segmentation",
+    "blocker": "open-codes",
+    "detail": "Current working transcription needs further occurrence-level checks."
+   }
+  ],
+  "notes": "No complete mechanical decoding included. Statistical validation, if recorded, applies only to the deliberately selected 108-sign excerpt, not either whole edition. No exact year, first-break claim or complete key claimed."
+ }
+}
