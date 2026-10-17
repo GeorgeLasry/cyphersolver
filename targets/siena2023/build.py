@@ -1,7 +1,8 @@
 """Recount the supplied CTTS transcription, draw the key and verify one short excerpt.
 
 Run with Python 3 and Pillow. No full mechanical decipherment is generated.
-The Italian readings and English translations are contributor-supplied inputs.
+Italian readings follow the contributor's current edited files. English translations
+were revised for this publication. Only five physical cipher lines are deciphered here.
 """
 from pathlib import Path
 from collections import Counter, defaultdict
@@ -26,7 +27,7 @@ def load_key():
         for sign in signs.split('|'):
             assert sign not in key, sign
             key[sign] = value
-    assert key['#'] == '[tartaglia?]'  # a real cipher sign, not a comment
+    assert key['#'] == '[Tartaglia?]'  # a real cipher sign, not a comment
     return key
 
 
@@ -42,7 +43,11 @@ def normalize(text):
 
 
 def write_json(path, data):
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
+
+
+def is_cipher(sign):
+    return sign != '.' and not sign.startswith('CLEAR')
 
 
 def build():
@@ -53,61 +58,60 @@ def build():
         rr = rows(rid)
         cc = Counter(x for row in rr for x in row)
         counts.update(cc)
-        cipher = {x: n for x, n in cc.items() if x not in ('.', '_')}
+        cipher = {x: n for x, n in cc.items() if is_cipher(x)}
         docs[str(rid)] = {
             'lines': len(rr), 'selections': cc.total(),
-            'excluded_punctuation_or_cleartext': cc['.'] + cc['_'],
+            'excluded_punctuation_or_cleartext': sum(n for x,n in cc.items() if not is_cipher(x)),
             'cipher_tokens': sum(cipher.values()), 'distinct_cipher_signs': len(cipher),
             'null_tokens': sum(n for x, n in cipher.items() if key.get(x) == '_'),
             'unmapped': {x: n for x, n in cipher.items() if x not in key},
             'bracketed_assignments': {x: n for x, n in cipher.items() if key.get(x, '').startswith('[')},
         }
         # Prefix prevents the repository counter from treating the '#' sign as a comment.
-        encoded = [' '.join('g:' + x for x in row if x not in ('.', '_')) for row in rr]
-        (HERE / f'R{rid}_cipher_tokens.txt').write_text('\n'.join(encoded) + '\n', encoding='utf-8')
-    letter_counts = Counter(value for sign, value in key.items() if re.fullmatch('[a-z]', value))
-    allcipher = {x: n for x, n in counts.items() if x not in ('.', '_')}
+        encoded = [' '.join('g:' + x for x in row if is_cipher(x)) for row in rr]
+        (HERE / f'R{rid}_cipher_tokens.txt').write_text('\n'.join(encoded) + '\n', encoding='utf-8', newline='\n')
+    letter_counts = Counter(value for sign, value in key.items() if re.fullmatch('[A-Z]', value))
+    allcipher = {x: n for x, n in counts.items() if is_cipher(x)}
     summary = {
         'documents': docs, 'total_selections': counts.total(),
         'cipher_tokens': sum(allcipher.values()), 'distinct_cipher_signs': len(allcipher),
         'null_signs': sorted(x for x in allcipher if key.get(x) == '_'),
         'null_tokens': sum(n for x, n in allcipher.items() if key.get(x) == '_'),
         'letter_signs': sum(letter_counts.values()), 'homophones_per_letter': dict(sorted(letter_counts.items())),
-        'certain_multiletter_assignments': {s: v for s, v in key.items() if len(v) > 1 and v.isalpha()},
-        'bracketed_assignments': {s: v for s, v in key.items() if s != '_' and v.startswith('[')},
+        'certain_multiletter_assignments': {s: v for s, v in key.items() if is_cipher(s) and len(v) > 1 and v.isalpha()},
+        'bracketed_assignments': {s: v for s, v in key.items() if is_cipher(s) and v.startswith('[')},
+        'unread_signs': {s: n for s,n in allcipher.items() if key.get(s) == '?'},
         'unmapped': {s: n for s, n in allcipher.items() if s not in key},
         'note': 'Counts describe the supplied transcription and working key, not independently verified reading accuracy.'
     }
     write_json(HERE / 'counts.json', summary)
 
-    # The only decoded passage: no. 23, CTTS L49 item39 through L51 item24.
+    # The only decoded passage: exactly five physical lines, no. 23 CTTS L6-L10.
     excerpt = []
     for ln, row in enumerate(rows(4811), 1):
         for item, sign in enumerate(row, 1):
-            if (49, 39) <= (ln, item) <= (51, 24):
+            if 6 <= ln <= 10:
                 value = key[sign]
-                assert value == '_' or re.fullmatch('[a-z]+', value), (ln, item, sign, value)
+                assert value == '_' or re.fullmatch('[A-Z]+', value), (ln, item, sign, value)
                 excerpt.append({'line': ln, 'item': item, 'sign': sign, 'value': value})
-    display = ('habelmente et tosto venire a lo re,\n'
-               'li manda per lo dicto messer Francisco ducati mille;\n'
-               'et inperò deieli li dicti dinari et faccia con')
+    display = '\n'.join(''.join(e['value'] for e in excerpt if e['line']==ln and e['value']!='_') for ln in range(6,11))
     decoded = ''.join(e['value'] for e in excerpt if e['value'] != '_')
-    assert decoded == normalize(display)
+    assert decoded.lower() == normalize(display)
     assert normalize(display) in normalize((HERE / 'R4811_reading.txt').read_text(encoding='utf-8'))
-    (HERE / 'excerpt.txt').write_text(display + '\n', encoding='utf-8')
+    (HERE / 'excerpt.txt').write_text(display + '\n', encoding='utf-8', newline='\n')
     write_json(HERE / 'excerpt.json', {
-        'record': 'R4811', 'range': 'CTTS lines 49:39–51:24 (inclusive)',
+        'record': 'R4811', 'range': 'CTTS lines 6–10, complete physical lines',
         'display': display, 'tokens': excerpt,
-        'normalization': 'Nulls omitted; word spacing, punctuation, accent and u/v follow the supplied reading. No letter substitutions or gap filling.'
+        'normalization': 'Literal uppercase key values, V for u/v, provisional nulls omitted. Physical line breaks retained. No spelling correction, spacing, letter substitution or gap filling. Lines begin/end within words.'
     })
     (HERE / 'validation.tsv').write_text(
-        '# model: it-cinquecento\n# source: excerpt.json ONLY, R4811 L49:39–51:24\n'
+        '# model: it-cinquecento\n# source: excerpt.json ONLY, R4811 L6-L10\n'
         '# note: Selected agreement excerpt; not a validation of both complete readings or the whole key.\n' +
-        ''.join(f'g:{e["sign"]}\t{"-" if e["value"] == "_" else e["value"]}\n' for e in excerpt), encoding='utf-8')
+        ''.join(f'g:{e["sign"]}\t{"-" if e["value"] == "_" else e["value"].lower()}\n' for e in excerpt), encoding='utf-8', newline='\n')
     write_json(ROOT / 'docs/reveal/siena2023.json', {
-        'slug': SLUG, 'anchor': 'excerpt', 'title': 'A three-line check against the supplied reading',
-        'caption': 'No. 23, CTTS L49:39–51:24. Exactly this short passage is decoded. The full readings below are the contributor’s editions.',
-        'unit': 'sign', 'key_note': 'Literal key values use v for u/v; nulls have no sound. The spaced excerpt restores the supplied edition’s punctuation and u/v.',
+        'slug': SLUG, 'anchor': 'excerpt', 'title': 'Five physical lines checked against the current edition',
+        'caption': 'No. 23, CTTS L6-L10. Only these five lines are mechanically deciphered. The complete readable editions retain editorial interventions.',
+        'unit': 'sign', 'key_note': 'Literal key values use V for u/v; provisional nulls have no sound. No letters are corrected or supplied.',
         'tokens': [{'g': e['sign'], 'p': '' if e['value'] == '_' else e['value'],
                     'cls': 'null' if e['value'] == '_' else ''} for e in excerpt]
     })
@@ -121,10 +125,10 @@ def draw_key(key, counts):
     glyphs = json.loads((HERE / 'glyphs.json').read_text(encoding='utf-8'))
     groups = defaultdict(list)
     for sign in counts:
-        if sign in ('.', '_'):
+        if not is_cipher(sign):
             continue
         value = key.get(sign, '?')
-        group = 'Alphabet' if re.fullmatch('[a-z]', value) else 'Nulls (provisional)' if value == '_' else 'Words and letter groups' if value.isalpha() else 'Uncertain and unidentified'
+        group = 'Alphabet' if re.fullmatch('[A-Z]', value) else 'Nulls (provisional)' if value == '_' else 'Words and letter groups' if value.isalpha() else 'Uncertain and unidentified'
         groups[group].append((value, sign))
     ordered = ['Alphabet', 'Words and letter groups', 'Nulls (provisional)', 'Uncertain and unidentified']
     width, cell_w, cell_h, top = 1440, 176, 150, 186
@@ -137,9 +141,11 @@ def draw_key(key, counts):
         return ImageFont.truetype(str(next(p for p in choices if p.exists())), size)
     f, small, big = font(20, True), font(15), font(34, True)
     d.text((20, 16), 'Siena 20 & 23 · DECODE R4808 / R4811', font=big, fill='#101d54')
-    for y, text in [(66, 'George Lasry · transcribed with CTTS, then solved by GPT-6 Astra · working key: 16 October 2026'),
-                    (96, '4,247 cipher selections · 64 sign classes · brackets and ? mark unresolved values'),
-                    (126, 'y1 is s in the current key; h/s classification remains unsettled. # strongly supported as Tartaglia.'),
+    total=sum(n for s,n in counts.items() if is_cipher(s))
+    distinct=sum(is_cipher(s) for s in counts)
+    for y, text in [(66, 'George Lasry · transcribed with CTTS, then solved by GPT-6 Astra · working key: 17 October 2026'),
+                    (96, f'{total:,} cipher selections · {distinct} sign classes · brackets and ? mark unresolved values'),
+                    (126, 'Paolo Orsini, Sforza and Tartaglia are tentative identifications. # and e may refer to different people.'),
                     (153, 'Counts and glyphs are from the supplied CTTS snapshot. Null assignments remain provisional.')]:
         d.text((20, y), text, font=small, fill='#374368')
     cards = []
@@ -162,9 +168,9 @@ def draw_key(key, counts):
             cards.append(f'<article><b>{html.escape(label)}</b><img src="data:image/png;base64,{encoded}" alt="CTTS sign {html.escape(sign)}"><p>{html.escape(sign)} · {counts[sign]} uses</p></article>')
         yy += ((len(groups[group])+7)//8)*cell_h
     d.text((20, height-54), 'Glyphs: Archivio di Stato di Siena, Concistoro 2308 fasc. 2 nos. 20, 23, via DECODE; CTTS samples.', font=small, fill='#374368')
-    d.text((20, height-30), 'Names 1–3 remain unidentified. A glyph label is a modern transcription identifier, not its plaintext.', font=small, fill='#374368')
+    d.text((20, height-30), 'CLEAR1-CLEAR4 are original clear-script passages and are excluded. Name3-Name6 and erased text remain unresolved.', font=small, fill='#374368')
     canvas.save(HERE / 'visual_key.png')
-    (HERE / 'visual_key.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Siena 20 &amp; 23 — visual key</title><style>body{font:16px system-ui;margin:24px;color:#172044;background:#f6f7fc}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}article{background:white;border:1px solid #bcc6e6;text-align:center;padding:12px}article img{display:block;width:85px;height:85px;object-fit:contain;margin:auto}b{color:#173db2}</style><h1>Siena 20 &amp; 23 — visual key</h1><p>George Lasry. Transcribed with CTTS, then solved by GPT-6 Astra. Working key of 16 October 2026; chart prepared 17 October. 4,247 cipher selections, 64 sign classes.</p><p>Bracketed values are uncertain; NULL? is provisional. y1 is s in the current key, but h/s classification remains unsettled. # is strongly supported as Tartaglia by the heading and context. The three Name codes remain unidentified.</p><main>'+''.join(cards)+'</main><p>Glyphs: Archivio di Stato di Siena, Concistoro 2308 fasc. 2 nos. 20 and 23, via DECODE R4808/R4811; CTTS samples. Full manuscript images are not included.</p></html>', encoding='utf-8')
+    (HERE / 'visual_key.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Siena 20 &amp; 23 — visual key</title><style>body{font:16px system-ui;margin:24px;color:#172044;background:#f6f7fc}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}article{background:white;border:1px solid #bcc6e6;text-align:center;padding:12px}article img{display:block;width:85px;height:85px;object-fit:contain;margin:auto}b{color:#173db2}</style><h1>Siena 20 &amp; 23 — visual key</h1><p>George Lasry. Transcribed with CTTS, then solved by GPT-6 Astra. Working key of 17 October 2026. '+f'{total:,} cipher selections, {distinct} sign classes.'+'</p><p>Bracketed names are hypotheses; NULL? is provisional. # and e may name different people. CLEAR1-CLEAR4 are original clear-script passages and are excluded from this chart.</p><main>'+''.join(cards)+'</main><p>Glyphs: Archivio di Stato di Siena, Concistoro 2308 fasc. 2 nos. 20 and 23, via DECODE R4808/R4811; CTTS samples. Full manuscript images are not included.</p></html>', encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':
