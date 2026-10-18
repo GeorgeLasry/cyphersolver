@@ -107,7 +107,10 @@ and version stamps; you write everything else. Required parts, in order:
    one `<p class="sub">`: a single plain sentence (about 30 words, no shelfmark) saying what it is and what came
    of it; `<p class="meta">Daniel Bourdeau</p>` (the builder adds the dates; a contributor's credit goes in the
    summary box, not the byline).
-4. `<main>` opening with the "At a glance" box. The shelfmark goes in its Where row. Each row is one or two short, plain sentences for a
+4. `<main>` directly after the hero's `</section>`, opening with the "At a glance" box. `<main>` is what gives the
+   body its text column and margins, and the builder hangs the contents strip on it: leave it out and the page runs
+   edge to edge with no contents strip (siena2023, 17 Oct 2026). Never close `</section>` and go straight into a
+   callout or `<h2>`. The shelfmark goes in its Where row. Each row is one or two short, plain sentences for a
    reader who has never seen the page; facts only from the page, measured numbers exactly as in the body:
    ```html
    <div class="callout glance">
@@ -152,6 +155,15 @@ and version stamps; you write everything else. Required parts, in order:
      crops may be used with proper attribution, so use them. Exception: fr. 3029 and fr. 3092 (his own
      forthcoming work) stay withheld.
 7. Close with `<p class="muted">` pointing to the repository folder, then `<!-- site:footer -->`.
+
+**Contributed pages (pull requests, emailed write-ups, a contributor's own `build.py`) go through the same
+skeleton.** They arrive hand-made and pass most checks while missing parts of it. Before merging or integrating one,
+bring it to this format: `<main>` after the hero, a "Credit" row in an "At a glance" box (not a one-line
+"Current result" callout), a crop of the manuscript itself in the first section (a visual key made from glyph
+samples is not a substitute; the `IMAGES` lead crop is shown on the page only when the page has no figure of its
+own), the optional `cipherstrip` when the cipher has printable tokens, short `<h2>` titles (the contents strip shows
+them as chips on a phone; keep them under about 30 characters), and the closing `<p class="muted">`. Compare it side
+by side with `docs/sweden4306.html` or `docs/toledo1565.html`.
 
 Write the HTML with the Write tool, not a Bash heredoc (long payloads fail to parse). HTML entities for accents
 in attribute and manifest strings (`&eacute;`, `&rsquo;`, `&mdash;`), plain UTF-8 in the body is fine.
@@ -306,6 +318,12 @@ The builder prints `note: <slug>.html has no README row`, `note: README links <s
 manifest` and `note: <slug>.html has no hero section` when the surfaces drift; fix and rebuild. The checker must
 end with `result: complete` (warn lines are allowed, MISS lines are not). Then check `git diff HEAD -- CATALOGUE.md`
 shows only the intended rows.
+
+**Look at the page before committing.** The checker reads markup, not layout. Serve `docs/` locally (in the
+built-in browser) and open the page at desktop width and at phone width (375 px): the body sits in the
+centred text column with margins like any other write-up, the contents strip and the At a glance box show, the
+cipher crop is there, and nothing scrolls sideways (`document.documentElement.scrollWidth` no wider than the window).
+Compare it with a recent page. This applies to every page you publish or merge, contributed ones included.
 
 Stage by explicit path: the new page and its images, `_build_site.py`, `_dates.json`, every regenerated
 `docs/*.html`, the ledgers touched, `decode_updates/queue.json`. Never `git add -A`: the shared tree carries other sessions' work. Commit subject
