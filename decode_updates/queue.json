@@ -2380,29 +2380,36 @@
     }
    }
   },
-  "riksarkivet4306": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/riksarkivet4306.html",
+  "sweden4306": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sweden4306.html",
    "key": {
-    "none": "No key recovered or found; box keys R4310 and R4296 do not fit."
+    "file": "targets/sweden4306/key.txt",
+    "lang": "NL",
+    "how": "Transcribed with CTTS, then solved with Opus 5.5, as confirmed by George Lasry."
    },
-   "cite": null,
-   "fields": {},
+   "cite": "George Lasry, contributed edited Dutch reading and English translation, 17 October 2026. Belongs to: Riksarkivet key-box and Oxenstierna ciphers.",
+   "fields": {
+    "plaintext_lang": "Dutch",
+    "cipher_type": "Monoalphabetic numerical substitution with nulls and four unresolved nomenclator codes"
+   },
    "records": {
     "R4306": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Letter to 'Mr ?ilick' at Amsterdam, pencil-dated 1632?, wholly in colon-separated numbers 5-203 (465 groups with the scribe's variant figures kept); IoC points to one sign per letter. Substitution annealing in ten languages and box keys R4310, R4296 failed; not deciphered. Transcriptions attached.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "fields": {
-      "receiver": "'Mr ?ilick', Amsterdam (address)",
-      "start_year": "1632? (pencil note)"
-     },
+     "proposed": "Partially",
+     "note": "One cipher page, 461 cipher elements after excluding two date-numeral units. Transcribed with CTTS, then solved with Opus 5.5. Four code identities, doubtful words and date/correspondents remain open. Supplied edited reading is distinguished from five literal mechanical lines. This project's earlier attempt (21 Sept 2026; annealing in ten languages, box keys R4310 and R4296) had failed; its transcriptions are in targets/sweden4306/project_attempt/.",
+     "reading": [
+      {
+       "file": "targets/sweden4306/reading.txt"
+      }
+     ],
      "transcription": [
-      "targets/riksarkivet4306/r4306_v2.txt",
-      "targets/riksarkivet4306/r4306_transcription.txt"
-     ]
+      "targets/sweden4306/transcription.txt"
+     ],
+     "sent": false,
+     "fields": {
+      "receiver": "'Mr ?ilick', Amsterdam: address read by the project on 21 Sept 2026 from another view of the record; not verified on the contributed page",
+      "start_year": "1632? (pencil note; not an established date of composition)"
+     }
     }
    }
   },
@@ -8615,7 +8622,7 @@
   "siena1421": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/siena1421.html",
    "key": {
-    "none": "No key for the unread pieces; the recovered keys are queued under siena25, siena18, siena14 and borghesi1456, and nos. 6/24 (key R4755) under siena1431."
+    "none": "No key for the unread pieces; the recovered keys are queued under siena25, siena18, siena14 and borghesi1456, nos. 6/24 (key R4755) under siena1431, and nos. 20/23 (R4808, R4811) under siena2023."
    },
    "cite": null,
    "fields": {},
@@ -8753,17 +8760,6 @@
       "targets/siena1421/transcripts/no19.txt"
      ]
     },
-    "R4808": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 20: letter to a king ('Sacra Regia Maiestas ... ante terre pedum oscula'), 'Scriptum Perusii(?) die penultimo mensis Martii'; ~1,230 cipher signs; same cipher as no. 23 (R4811); not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no20.txt"
-     ]
-    },
     "R4809": {
      "decode_status": "N/A",
      "proposed": "Non-decrypted",
@@ -8773,18 +8769,6 @@
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/no21.txt"
-     ]
-    },
-    "R4811": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 23: full page of continuous cipher, 54 lines, ~3,700 signs, clear 'como vi dirro' inside; same cipher as no. 20; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no23a.txt",
-      "targets/siena1421/transcripts/no23b.txt"
      ]
     },
     "R4810": {
@@ -11066,6 +11050,50 @@
      "reading_not_needed": true,
      "transcription": [
       "targets/papai1710/R731_signs.txt"
+     ],
+     "sent": false
+    }
+   }
+  },
+  "siena2023": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena2023.html",
+   "key": {
+    "file": "targets/siena2023/key.txt",
+    "lang": "IT",
+    "how": "George Lasry’s reconstructed working key; uncertainty brackets and provisional nulls retained. # is an actual cipher sign. Visual key in the target folder."
+   },
+   "cite": "George Lasry, current Italian editions and CTTS material; English translations updated by Codex, 17 October 2026. Transcribed with CTTS, then solved by GPT-6 Astra.",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Latin and Italian",
+    "cipher_types": "homophonic, nomenclator, nulls"
+   },
+   "records": {
+    "R4808": {
+     "decode_status": "N/A",
+     "proposed": "Partially",
+     "note": "Partial recovery from ciphertext, transcribed with CTTS then solved by GPT-6 Astra under George Lasry’s direction. Current edition retains tentative Paolo Orsini/Sforza/Tartaglia and other uncertainties. Spring 1413 is proposed from historical parallels, not entered as an established date. Perugia, 30 March; writer possibly Muzio Attendolo Sforza, king possibly Ladislaus. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 20 (pencil number), clear address 'Sacra Regia Maiestas, Serenissime princeps ... ante terre pedum oscula', subscription 'Scriptum Perusii(?) die penultimo mensis Martii'; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 23 (R4811). That survey's transcription is in targets/siena2023/project_attempt/.",
+     "reading": [
+      {
+       "file": "targets/siena2023/R4808_reading.txt"
+      }
+     ],
+     "transcription": [
+      "targets/siena2023/R4808_transcription.txt"
+     ],
+     "sent": false
+    },
+    "R4811": {
+     "decode_status": "N/A",
+     "proposed": "Partially",
+     "note": "Partial recovery from ciphertext, transcribed with CTTS then solved by GPT-6 Astra under George Lasry’s direction. Current edition retains tentative Paolo Orsini/Sforza/Tartaglia and other uncertainties. Spring 1413 is proposed from historical parallels, not entered as an established date. Two royal memoranda for Iacobo Spinelo and Francisco Gactule; 4 May is an arrival deadline, not issue date. Repeated Name6 remains unresolved. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 23 (pencil number), a full page of 54 lines of continuous cipher with the clear 'como vi dirrò' inside; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 20 (R4808). That survey's transcription is in targets/siena2023/project_attempt/.",
+     "reading": [
+      {
+       "file": "targets/siena2023/R4811_reading.txt"
+      }
+     ],
+     "transcription": [
+      "targets/siena2023/R4811_transcription.txt"
      ],
      "sent": false
     }

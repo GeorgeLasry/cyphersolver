@@ -453,12 +453,12 @@ def siena_no04():
         _stats=st)
 
 
-def siena_tok(dataset, parts, meta):
+def siena_tok(dataset, parts, meta, folder='siena1421', sub='transcripts'):
     """Siena pieces kept as the target's prepared .tok files (one manuscript line or run per line)."""
     st = Stats()
     lines, ids = [], []
     for label, fn in parts:
-        for n, l in enumerate(read(T / 'siena1421/transcripts' / fn).splitlines(), 1):
+        for n, l in enumerate(read(T / folder / sub / fn).splitlines(), 1):
             if not l.strip():
                 continue
             toks = []
@@ -471,11 +471,11 @@ def siena_tok(dataset, parts, meta):
             for sid, seg in segments(f'{label}.t{n:02d}', toks):
                 ids.append(sid)
                 lines.append(seg)
-    d = dict(target='siena1421', dataset=dataset, lines=lines, line_ids=ids, plaintext=None,
+    d = dict(target=folder, dataset=dataset, lines=lines, line_ids=ids, plaintext=None,
              plaintext_source=None, _stats=st,
-             source_files=[rel(T / 'siena1421/transcripts' / fn) for _, fn in parts] +
-                          [rel(T / 'siena1421/transcripts' / x) for x in meta.pop('txt')] +
-                          [rel(T / 'siena1421/NOTES.md'), rel(T / 'siena1421/profile.json')])
+             source_files=[rel(T / folder / sub / fn) for _, fn in parts] +
+                          [rel(T / folder / sub / x) for x in meta.pop('txt')] +
+                          [rel(T / folder / 'NOTES.md'), rel(T / folder / 'profile.json')])
     d.update(meta)
     return d
 
@@ -884,7 +884,7 @@ def main():
                              "with a superscript (q^o, f o^n's o^n) is one token, as transcribed."),
         caveats=["UNDATED: may be 16th century; do not use as a dated 15th-century sample.",
                  "Two transcribers (agents C and D); one illegible sign ('??^o') ends a line.",
-                 "System unidentified."])))
+                 "System unidentified."]), folder='siena2023', sub='project_attempt'))
     data.append(siena_no25())
     data.append(buda1489())
 

@@ -6,7 +6,7 @@ Split on 14 Oct 2026 from `riksarkivet1628` under the one-key rule (George Lasry
 bundled 14 Riksarkivet records; they are unrelated ciphers, each now with its own entry: the Bremen letters of 1631
 ([`targets/riksarkivet1628/`](../riksarkivet1628/NOTES.md), read), R4282 (George Lasry's
 [`targets/decode4282/`](../decode4282/NOTES.md)), R4284 ([`targets/riksarkivet4284/`](../riksarkivet4284/NOTES.md)),
-R4306 ([`targets/riksarkivet4306/`](../riksarkivet4306/NOTES.md)) and E 708, 1633
+R4306 (George Lasry's [`targets/sweden4306/`](../sweden4306/NOTES.md)) and E 708, 1633
 ([`targets/oxenstierna1633/`](../oxenstierna1633/NOTES.md)). Each is a different cipher, with its own page. The five
 Rusdorff letters are kept together here because they are one correspondence; **whether they share one key is not
 established**.

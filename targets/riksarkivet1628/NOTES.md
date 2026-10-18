@@ -13,11 +13,15 @@ ciphers, each with its own page:
   [`targets/decode4282/`](../decode4282/NOTES.md). This folder's own attempt of 21 Sept 2026 (blind annealing, failed)
   is kept as history in `r4282_transcription.txt` and `r4282_codes.txt`; decode4282 is the canonical entry.
 - R4284 (låda II:114, Latin numbers, 1628): [`targets/riksarkivet4284/`](../riksarkivet4284/NOTES.md), attempted, open.
-- R4306 (låda II:133, to Amsterdam, 1632?): [`targets/riksarkivet4306/`](../riksarkivet4306/NOTES.md), attempted, open.
+- R4306 (låda II:133, to Amsterdam, 1632?): [`targets/sweden4306/`](../sweden4306/NOTES.md), George Lasry's contributed
+  partial Dutch decipherment (17 Oct 2026; transcribed with CTTS, then solved with Opus 5.5). This project's own
+  attempt of 21 Sept 2026 (annealing in ten languages, box keys R4296/R4310; failed) is folded into that entry, its
+  transcriptions in `targets/sweden4306/project_attempt/` (18 Oct 2026).
 - R4333-R4337 (Rusdorff → Oxenstierna 1628): [`targets/rusdorff1628/`](../rusdorff1628/NOTES.md), surveyed only.
 - R4338-R4341 (E 708, June 1633): [`targets/oxenstierna1633/`](../oxenstierna1633/NOTES.md), surveyed only.
 
-The survey table of 21 Sept 2026 (the state column is as of that day; R4282 has since been deciphered by Lasry):
+The survey table of 21 Sept 2026 (the state column is as of that day; R4282 has since been deciphered by Lasry, and
+R4306 deciphered in part by Lasry, sweden4306):
 
 | records | what it is | system | state |
 |---|---|---|---|
@@ -33,7 +37,7 @@ The survey table of 21 Sept 2026 (the state column is as of that day; R4282 has 
 `targets/bordeaux/decode/cookie.txt`). The Bremen letters are DECODE phone photographs, 2448 x 3264.
 
 `solve_num.py` and `qg.py` (the numeric annealer used on R4284 and R4306) stay here as shared tooling for those two
-entries; `mk_validation.py` writes the Bremen `validation.tsv`.
+entries (riksarkivet4284, and the project attempt recorded in sweden4306); `mk_validation.py` writes the Bremen `validation.tsv`.
 
 ## Bremen 1631 (R4330, R4331): read
 Transcribed with the interlinear glosses (`bremen_transcription.txt`). Aligning glossed words to their numbers gave a

@@ -1,5 +1,7 @@
 {
  "keys": [
+ {"id": "k-sweden4306-lasry", "label": "R4306: alphabetical numerical key", "kind": "scholar's key", "by": "George Lasry; Claude Opus 5.5", "year": null, "found": 2026, "note": "Transcribed with CTTS, then solved with Opus 5.5. Alphabet 30–52, nulls and four unresolved code identities; year of use unproved.", "image": {"src": "sweden4306_key.png", "credit": "George Lasry; manuscript glyphs from Riksarkivet, Chifferklaver låda II:133, via DECODE R4306", "caption": "Current working key; unobserved alphabet values and open codes are marked.", "page": "sweden4306"}},
+ {"id": "k-siena2023-lasry", "label": "Siena nos. 20 and 23: Lasry working key", "kind": "scholar's key", "by": "George Lasry; GPT-6 Astra", "year": null, "found": 2026, "note": "4,254 cipher occurrences, 59 observed classes. Transcribed with CTTS, then solved by GPT-6 Astra. Spring 1413 proposed; historical names remain tentative. Later Lucca comparison supports Sforza? but is a different key.", "image": {"src": "siena2023_key.png", "credit": "George Lasry; glyphs from ASSi Concistoro 2308 fasc. 2 nos. 20 and 23 via DECODE R4808/R4811", "caption": "Current working key and CTTS glyphs, 17 October 2026; unresolved names and provisional nulls marked.", "page": "siena2023"}},
   {"id": "k-guiche1551", "label": "La Guiche's Rome cipher of 1551, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1551, "note": "Simple substitution of 22 invented signs for the 22-letter alphabet, a plain cross for b, ff+c for ss and one four-dot code sign; recovered from the ciphertext alone by swap annealing (fr-1530-despatches 5-gram). targets/guiche1551/NOTES.md."},
   {"id": "k-ranzo-lasry-2026", "label": "Ranzo code, reconstructed working key (871 observed mappings)", "kind": "scholar's key", "by": "George Lasry with Claude Opus 5.5 and GPT-6 Astra", "year": 1528, "found": 2026, "note": "Based on Norbert Biermann’s five-letter transcription; Codex consolidation of 6 October 2026. Tentative mappings retain ?, and assignment coverage is not plaintext accuracy. Independent contemporaneous reconstruction alongside Rosson.", "image": {"src": "ranzo_lasry_key/ranzo_lasry_key_preview.png", "credit": "George Lasry, from Norbert Biermann’s transcription of the Ranzo correspondence, with Claude Opus 5.5 and GPT-6 Astra", "caption": "First of four pages of the reconstructed key; full table in the Ranzo contribution.", "page": "ranzo1528"}},
   {"id": "k-r4755", "label": "Cifra cum Christofano, Siena (DECODE R4755, Concistoro 2308 fasc. 1)", "kind": "DECODE key record", "by": "Sienese chancery", "year": 1431, "note": "Homophonic alphabet (36 signs), 7 nulls, 18 word signs. Recovered ciphertext-only by George Lasry with Claude and ChatGPT Astra, then matched to this sheet; deciphers Concistoro 2308 nos. 6 and 24. Year approximate (1431-38).", "image": {"src": "siena1431_key.jpg", "credit": "Archivio di Stato di Siena, Concistoro 2308 fasc. 1, via DECODE R4755", "caption": "The alphabet of R4755: four homophones under a, e, i, o, u; the nulls below", "page": "siena1431"}},
@@ -2061,6 +2063,15 @@
    "note": "Homophonic figures with 6 as word space, recovered from the ciphertext with the probable word l'empereur (GitHub PR #20, Oct 2026); checked against the images and a shuffle control."
   },
   {
+   "id": "k-seure1558",
+   "label": "Seure's Lisbon key, 1558 (recovered by Angus Robinson)",
+   "kind": "scholar's key",
+   "by": "Angus Robinson",
+   "year": 1558,
+   "found": 2026,
+   "note": "118 signs: 55 letter signs, 18 syllable and 22 word signs, 21 nulls and a cancellation sign; recovered from three deciphered paragraphs bound beside no. 44, annealing and correction against the scans (GitHub PR #40, Oct 2026); statistical validation pass here."
+  },
+  {
    "id": "k-aerssen1601",
    "label": "Aerssen 1601 sibling-gloss key",
    "kind": "rebuilt here",
@@ -2145,6 +2156,8 @@
   {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."}
  ],
  "links": [
+ {"key": "k-sweden4306-lasry", "target": "sweden4306", "how": "partial", "note": "Contributed Opus 5.5 key underlies the edited Dutch reading. Five manuscript lines reapplied literally; four code identities remain open."},
+ {"key": "k-siena2023-lasry", "target": "siena2023", "how": "partial", "note": "Current key underlies the edited readings. Five physical lines (322 signs, 328 letters) match exactly after declared normalization; full editions not mechanically validated."},
   {"key": "k-guiche1551", "target": "guiche1551", "how": "rebuilt from", "note": "429 of 431 symbols of fr. 3138 f. 60v have a value; the struck-through opening reads in fragments"},
   {"key": "k-wainut-cabinet1751", "target": "michell1751", "how": "rebuilt from", "note": "Rebuilt from six sibling letters and their printed concepts, then extended on R1957: 381 of 548 groups have a value; the text itself is the 1882 print."},
   {"key": "k-michell-envoy1751", "target": "r1955", "how": "partial", "note": "Matched to the ministerial rescript by WAINUT: 95 of 360 groups (26.4%) decoded, fragments only."},
@@ -3305,6 +3318,12 @@
    "note": "all 31 cipher runs of fr. 3198 nos. 30, 37, 38; 534 of 536 tokens"
   },
   {
+   "key": "k-seure1558",
+   "target": "seure1558",
+   "how": "rebuilt from",
+   "note": "cribs from the deciphered paragraphs A-C beside no. 44; all five letters, 8,819 of 8,857 signifying positions"
+  },
+  {
    "key": "k-aerssen1601",
    "target": "aerssen1601",
    "how": "rebuilt from",
@@ -3869,7 +3888,6 @@
   "r9586": "not solved: a second code with no key; the pencil glosses have not been aligned",
   "dedem1799": "not solved: a marked code with no key on DECODE or known",
   "noailles1558": "not solved: no key known; the marginal decipherment of the time gives no values",
-  "seure1558": "not solved: no key known or rebuilt",
   "affry1757c": "not solved: a code of its own; no key or decipherment found",
   "orpo1942": "not solved: no key of 27 February 1942 known or recovered",
   "orpo1942jun": "read from Bletchley's decrypt; the key of 16 June 1942 was not recovered and is not known",
@@ -3881,7 +3899,7 @@
   "dubellay1528": "read from Bourrilly and de Vaissière's printed text (1905); their key is not printed and Lasry's (2022) was not applied here",
   "federico1497": "read from Ivan Parisi's printed decipherment (2020); Escrivà's key (Parisi 2004) was not applied here",
   "esp318no93": "not solved: no key identified for nos. 93-94; Escrivà no. 1 and the Cifra general excluded, the Gran cifra not obtained",
-  "siena1421": "not solved: the unread pieces of the bundle; no filed key fits and none was rebuilt (the recovered keys are on siena25, siena18, siena14, borghesi1456)",
+  "siena1421": "not solved: the unread pieces of the bundle; no filed key fits and none was rebuilt (the recovered keys are on siena25, siena18, siena14, borghesi1456, siena2023)",
   "segur1583":"not solved: no key fits f. 143 and none was rebuilt (58 tokens, too short)",
   "rohan1636": "not solved: the ciphertext is not in hand and no key was rebuilt",
   "emery1636": "not solved: the letters have not been seen; no key known",
@@ -3889,7 +3907,6 @@
   "sabran1631": "read from George Lasry's published decipherment (GL.htm, 2022); his key not re-applied here",
   "brulart1615": "read from Satoshi Tomokiyo's reading with his reconstructed key (DECODE, 2021); key not re-applied here",
   "riksarkivet4284": "not solved: no key fits and none was rebuilt; nothing deciphered",
-  "riksarkivet4306": "not solved: no key fits and none was rebuilt; nothing deciphered",
   "rusdorff1628": "surveyed only: no key identified or rebuilt; nothing deciphered",
   "oxenstierna1633": "surveyed only: no key identified or rebuilt; the glosses of the time are not yet used",
   "mniszech1714":"not solved: no key fits and none was rebuilt; nothing deciphered",
@@ -4451,13 +4468,13 @@
   },
   {
    "key": "k-r4310",
-   "target": "riksarkivet4306",
-   "note": "Siebenbürgen 'Schauis' key R4310 tested on R4306: no fit"
+   "target": "sweden4306",
+   "note": "Project attempt, 21 Sept 2026: Siebenbürgen 'Schauis' key R4310 tested on R4306: no fit"
   },
   {
    "key": "k-r4296",
-   "target": "riksarkivet4306",
-   "note": "1632 word-end-30 key R4296 tested on R4306: no fit"
+   "target": "sweden4306",
+   "note": "Project attempt, 21 Sept 2026: 1632 word-end-30 key R4296 tested on R4306: no fit"
   },
   {
    "key": "k-r4922-richmond",

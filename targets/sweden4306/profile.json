@@ -118,16 +118,61 @@
    "CTTS (CrypTool Transcriber and Solver), transcription",
    "Opus 5.5, cipher solution",
    "Codex digit-box merging and contribution checks",
-   "build.py (counts, visual key, five-line mechanical excerpt only)"
+   "build.py (counts, visual key, five-line mechanical excerpt only)",
+   "targets/riksarkivet1628/solve_num.py and qg.py (project attempt of 21 Sept 2026, failed)"
   ],
   "models": [
    "Claude Opus 5.5"
   ],
   "sessions": "unknown",
-  "first_date": "unknown",
+  "first_date": "2026-09-21",
   "last_date": "2026-10-17"
  },
  "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Project attempt (former entry riksarkivet4306): fetched the 14 DECODE records of catalogue 207 with the project cookie; R4306 (Chifferklaver låda II:133, reported as addressed to \"Mr ?ilick\" at Amsterdam, pencilled \"1632?\") is one of four unrelated groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Project attempt: agent transcription of R4306 from the DECODE images (463 numbers; re-measured 14 Oct 2026 as 492 tokens, 51 distinct), now targets/sweden4306/project_attempt/r4306_transcription.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Project attempt: IoC 0.078 (monoalphabetic); '34 42' x31.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
+   "what": "Project attempt: simple-substitution and homophonic annealing over quadgram models in nl, de, la, fr, sv, en, it, es, pt, da (targets/riksarkivet1628/solve_num.py, qg.py), also with low/high numbers as word breaks; best about -4.3/char against about -2.5 for real text, after a search bug and a backoff-model artefact were fixed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Project attempt: re-transcribed keeping the scribe's digit variants (34/74, 40/4o/9o, 30/3o/70/7o; 465 tokens, 62 distinct; project_attempt/r4306_v2.txt) and annealed again: no fit.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "Project attempt: fetched 70 Chifferklaver låda II key records (R4259-R4329); tested the Siebenbürgen key R4310 and the 1632 word-end-30 key R4296: no fit. The other 68 were not tried.",
+   "result": "failed"
+  },
   {
    "date": "2026-09-21",
    "kind": "solver",
@@ -136,6 +181,12 @@
    ],
    "what": "Earlier riksarkivet1628 survey reports failed numerical attacks in multiple languages and rejected keys R4296/R4310. These are prior attempts, not new runs in this contribution.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Project attempt split from the catalogue-207 group entry riksarkivet1628 as its own entry riksarkivet4306 under the one-key rule; both transcriptions re-measured. No new attack.",
+   "result": "worked"
   },
   {
    "date": "2026-10-17",
@@ -164,6 +215,12 @@
    "date": "2026-10-17",
    "kind": "access",
    "what": "Checked public DECODE metadata: Riksarkivet Chifferklaver låda II:133, three record pages, broad 1600–1699 catalogue range, blank correspondents/languages and Non-decrypted status. Image manager requires login; only the supplied cipher page is independently inspected here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "Deduplicated under one key, one entry: the project's attempted-open entry riksarkivet4306 (same record R4306) folded into this contributed entry; its transcriptions moved to project_attempt/, its page made a stub pointing to sweden4306.html, its ledger rows removed. The contributed key, reading and counts were not changed.",
    "result": "worked"
   }
  ],

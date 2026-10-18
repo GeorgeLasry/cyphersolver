@@ -56,6 +56,22 @@ This publishes the contributor’s current edited result; it does not declare fu
 - [x] key-rebuild: imported the current reviewed key and edited files; refreshed all glyph samples and counted the new classes. Source mappings were not altered for publication.
 - [x] retry: reapplied the current key to exactly five physical lines and verified literal agreement with the current edition. The remaining editorial gaps are disclosed above.
 
+## Earlier project attempt (siena1421 survey, 24 Sept 2026)
+
+Before this contribution, nos. 20 and 23 were part of the bundle entry `targets/siena1421/` (catalogue 336), listed
+as unread and "probably one system". That survey's transcriptions and solver inputs were moved here on 18 Oct 2026
+under the one-key rule, unchanged, to `project_attempt/`:
+
+- `no20.txt` / `no20.tok` (no. 20, R4808, agent C: 1,230 tokens, 51 sign names) and `no23a.txt`, `no23b.txt` /
+  `no23.tok` (no. 23, R4811, two transcribers: 54 lines, 3,702 tokens); the other `.tok` files are solver variants
+  (f-groups merged, superscripts as nulls, both letters pooled).
+- What was tried: homophonic annealing (`homsolve.py`, `homsolve2.py`), null-aware (`homsolve3.py`) and bigram
+  (`sylsolve.py`) solvers, Italian, Latin, Catalan and Spanish models, order 3-5; filed keys R4760, R4768 and R4778
+  compared with no. 20. None converged (about -2.9/token against -1.74 on a synthetic control of the same size); the
+  survey concluded the system was not plain letter substitution as transcribed. The solvers stay in `targets/siena1421/`.
+- Nothing of that failed attempt is claimed in the reading above, which is George Lasry's, made from his own CTTS
+  transcription.
+
 ## Sources and credit
 
 George Lasry supplied the images, CTTS material and successive Italian readings, directed the work, and confirms: **transcribed with CTTS, then solved by GPT-6 Astra**. Codex prepared this contribution, revised the English translations to match the latest Italian edition, checked the five-line excerpt and selected historical sources, and regenerated the visual key.

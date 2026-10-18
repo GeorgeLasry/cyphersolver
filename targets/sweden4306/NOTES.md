@@ -55,6 +55,36 @@ The current key is a new contributed solution by Opus 5.5, as confirmed by Lasry
 
 A limited exact-phrase web search for the opening did not locate a complete earlier edition. This is not an exhaustive prior-publication search. The identities of codes 105/106/113/114, writer, recipient and location remain open. The supplied “U.L.”, “gade gegeven” and diplomatic-setting notes are preserved as contributor commentary, rather than independently verified identifications.
 
+## The project's earlier attempt (folded in 18 Oct 2026)
+
+Before this contribution, the project had its own entry for the same record, `riksarkivet4306` (split on 14 Oct 2026
+from `riksarkivet1628` under the one-key rule; work done 21 Sept 2026 in the riksarkivet1628 session; the old profile lists claude-opus-5 and claude-opus-5-5 over two sessions).
+It ended attempted, open, with no value recovered. Under "one key, one entry" this entry is now the only one for R4306;
+the old entry's transcriptions are kept in [`project_attempt/`](project_attempt/), and its page
+`docs/riksarkivet4306.html` is a stub pointing here.
+
+- `project_attempt/r4306_transcription.txt` (agent, 21 Sept 2026): 463 numbers in the 21 Sept count; re-measured
+  14 Oct 2026 as 492 tokens, 51 distinct, IoC 0.073.
+- `project_attempt/r4306_v2.txt` (21 Sept 2026): re-transcribed keeping the scribe's variant forms (34/74, 40/4o/9o,
+  30/3o/70/7o: 55 tokens); 465 tokens, 62 distinct. Whether the variants were distinct signs was left open.
+
+What was tried, all without result:
+
+1. (21 Sept 2026) Statistics: monoalphabetic by IoC (0.078 in the 21 Sept count); "34 42" x31.
+2. (21 Sept 2026) Simple-substitution and homophonic annealing (`targets/riksarkivet1628/solve_num.py`, `qg.py`) over
+   quadgram models in nl, de, la, fr, sv, en, it, es, pt, da, also with low/high numbers as word breaks: no language
+   converged (best about −4.3/char against about −2.5 for real text). A search bug (free changes propagating by swaps)
+   and a backoff-model artefact were fixed first. Dutch, the language of the contributed reading, was among the ten.
+3. (21 Sept 2026) The same on `r4306_v2.txt`: no fit.
+4. (21 Sept 2026) Box keys R4310 (Siebenbürgen "Schauis") and R4296 (1632, 30 ends every word) tested: no fit; the
+   other 68 of the 70 fetched Chifferklaver key records (R4259–R4329) were not tried.
+5. (14 Oct 2026) Split from riksarkivet1628; both transcriptions re-measured. No new attack.
+
+The earlier entry recorded the page as addressed to a "Mr ?ilick" at Amsterdam, with three DECODE images
+(`IMG_R4306_I25832_P.pdf`–`I25834`) and the wrapper II:104; these come from views of the record other than the one
+contributed page, and are not verified here (see Document and scope). Why the September annealing failed where the
+contributed key works (nulls, the four codes, the digit-variant reading, or the search itself) has not been examined.
+
 ## Remaining gaps
 - Codes 105, 106, 113 and 114 — blocker: open-codes; four identities in five occurrences remain unresolved.
 - Doubtful words and literal-versus-edited discrepancies — blocker: open-codes; the supplied editorial restorations and least-certain final sentence remain explicitly qualified.

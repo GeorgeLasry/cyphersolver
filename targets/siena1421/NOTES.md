@@ -1,6 +1,6 @@
 # Siena, Concistoro 2308: "Lettere in cifra" — the unread pieces (catalogue 336)
 
-Status: attempted, open — the unread pieces of the bundle (no. 1 of 1421 not photographed, needs ASSi; nos. 7, 9, 11, 15, 17, 19, 20, 21, 23 and R4794 not deciphered, keys unknown).
+Status: attempted, open — the unread pieces of the bundle (no. 1 of 1421 not photographed, needs ASSi; nos. 7, 9, 11, 15, 17, 19, 21 and R4794 not deciphered, keys unknown).
 
 **Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026).** This folder held the whole bundle, in
 which each letter has its own key. The letters whose keys were recovered are now their own entries, each a different
@@ -11,12 +11,12 @@ cipher with its own page:
 - no. 14 (R4802), key recovered ciphertext-only, 58.6%: [`targets/siena14/`](../siena14/NOTES.md)
 - no. 4 (R4793), Borghesi 1456, key from its own fragment, 79%: [`targets/borghesi1456/`](../borghesi1456/NOTES.md)
 - nos. 6 and 24 (R4795, R4812): deciphered by George Lasry with fasc. 1 key R4755, [`targets/siena1431/`](../siena1431/NOTES.md)
+- nos. 20 and 23 (R4808, R4811), one system: read in part by George Lasry, key from the ciphertext, 17 Oct 2026, [`targets/siena2023/`](../siena2023/NOTES.md); removed from this entry 18 Oct 2026, and this folder's transcriptions of them (`transcripts/no20*`, `no23*`) moved to `targets/siena2023/project_attempt/`
 
 Their transcriptions, keys, readings and validation moved with them. This entry keeps the access notes, the inventory,
 the key index of fasc. 1, the shared solvers (`homsolve*.py`, `wordsolve.py`, `sylsolve.py`, `prep.py`, the
 transcribed 1450s keys in `keys/`) and the **unread pieces**, which are listed together only because they are in the
-same bundle: **no shared key is claimed for them**, except that nos. 20 and 23 look like one system (same sign
-inventory), which is untested. The pieces deciphered at the time (nos. 8, 10, 13/16, 22) and no. 12 (DECODE R1858
+same bundle: **no shared key is claimed for them**. The pieces deciphered at the time (nos. 8, 10, 13/16, 22) and no. 12 (DECODE R1858
 "Decrypted") are described below for completeness; they are other keys, not results of this project, and are not
 counted. The transcriptions of nos. 6 and 24 (`transcripts/no06*`, `no24*`) stay here as the input George Lasry's
 reading was checked against.
@@ -68,10 +68,10 @@ the numbering Meister saw in 1902.
 | 17 | R4805 | 20 Aug 1528, to Bartolomeo Tantucci?, docketed "questa cifra è quella di Balìa"; cipher runs of digits/signs |
 | 18 | R4806 | Latin treaty articles (petitions of Siena, a king's secretary Niccolò), cipher words throughout (4 pp.) |
 | 19 | R4807 | letter to the Magnifici domini, cipher runs |
-| 20 | R4808 | "Sacra Regia Maiestas, Serenissime princeps", whole letter in cipher |
+| 20 | R4808 | "Sacra Regia Maiestas, Serenissime princeps", whole letter in cipher; now siena2023 |
 | 21 | R4809 | short letter with cipher runs |
 | 22-23 | R4810 | clear drafts with numbers as code words (mentions Calixtus III: 1455-58) |
-| 23 | R4811 | whole page in cipher |
+| 23 | R4811 | whole page in cipher; now siena2023 |
 | 24 | R4812 | whole letter in cipher (2 pp.) |
 | 25 | R4813 | slip, all cipher |
 | 29 | R4814 | fragment, a few words |
@@ -138,7 +138,7 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
   does not fit.
 - **No. 20 (R4808).** "Sacra Regia Maiestas, Serenissime princeps ac metuendissime domine, post terre pedum
   oscula": ~18 lines of continuous cipher (lowercase letters, digits, ÷), "Scriptum ... die penultimo mensis
-  Martii". The largest ciphertext in the fascicle.
+  Martii". The largest ciphertext in the fascicle. Now George Lasry's siena2023 (with no. 23).
 
 ## No. 11 (R4800), Acciaiuoli 1478: no key in reach
 
@@ -189,7 +189,6 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
 ## Remaining gaps
 
 - no. 1 (1421), nos. 2, 26, 27, 28 - blocker: needs-physical-access; not among the DECODE photographs of the busta (R4790-R4814); only ASSi can supply them.
-- nos. 20 + 23 (probably one system, ~4,900 tokens) - blocker: no-key-material; homophonic, null-aware and bigram solvers fail; 'f' + o^n / a / o groups behave as units, probably a syllabic or nomenclator element.
 - no. 11 (Acciaiuoli 1478, 409 tokens) - blocker: no-key-material; Florentine cipher; Gabbrielli's key index has no key for Donato Acciaiuoli.
 - no. 17 (1528, 282 tokens) - blocker: too-short; 'cifra di Balia' not identified among the filed keys; ciphertext-only fails at this length.
 - no. 7 (363 tokens) - blocker: too-short; R4750 ruled out; nine gloss values only.
@@ -202,12 +201,12 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
 - [x] clear-pages: no. 16 = decipherment of no. 13; decipherment on no. 8's sheet; glosses on nos. 7 and 10 used; no. 22 clear drafts paired with numbered drafts.
 - [x] known-keys: fasc. 1 alphabets compared by eye with every letter (R4755 missed for nos. 6/24; found by George Lasry, 14 Oct 2026, see siena1431); R4750, R4753, R4754, R4756, R4757, R4762 tested on no. 7; R4760, R4768, R4778 on nos. 17 and 20; R4764 on no. 15; Gabbrielli vol. I index (Ilardi reel 58) for no. 11.
 - [x] print: Meister 1902, Cecchini 1952 inventory, Senatore 2009, Treccani DBI; no printed decipherment of any of these pieces found.
-- [x] key-rebuild: homsolve2/homsolve3 (nulls)/sylsolve (bigrams) on nos. 20+23 and the short pieces; no. 7 partial key from its gloss.
+- [x] key-rebuild: homsolve2/homsolve3 (nulls)/sylsolve (bigrams) on the short pieces (and on nos. 20+23, now siena2023); no. 7 partial key from its gloss.
 - [n/a] retry: no key was extended for these pieces, so there is nothing to rerun.
 
 ## Assumptions for George's review
 
 - Nos. 6 and 24 are counted only in his siena1431; nothing of this folder's failed attempt on them is claimed.
 - The unread pieces are kept together here as one "attempted, open" entry because they are one bundle; no shared key
-  is claimed (nos. 20 and 23 only probably share a system).
+  is claimed. Nos. 20 and 23 are George Lasry's siena2023; nothing of this folder's failed attempt on them is claimed.
 - The pieces deciphered at the time (nos. 8, 10, 13/16, 22) and no. 12 are not entered as results.
