@@ -200,6 +200,24 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 322 tokens, 40 types, it-cinquecento order 4: reading -2.126 per letter; random keys -4.009 (z 7.7); key annealed onto shuffled ciphertext best -2.749 (mean -2.785, z 21.8); annealer on the real text -2.443. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "access",
+   "what": "Listed every Concistoro 2308 record on DECODE through the API: keys R4746-R4789 (fasc. 1, 44 records) and ciphertexts R4790-R4814 (fasc. 2, 25 pieces), matching George's survey. R4783 has no image even with a logged-in session.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "sibling key",
+   "what": "Re-checked the earliest Siena keys against the seven reference signs: R4746 (1433 alphabet, Fortebraccio), the R1858 key photos, and R4747's three slips. None holds #, fat, o+, ovo, Fom, ta or e. R4747 slip 3 is a phrase code of c. 1419-21 about Tartaglia ('+° = q(ue)sta brigata d(e) Sforça'), a different system whose circle-and-cross Sforza sign parallels o+ and Meister's 1412 Viviani sign.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "literature search",
+   "what": "Read the Fermo chronicle entry for April 1413 on the page image (Cronache fermane p. 39): 'timebat maxime conte ..... ad furcam preste, Sforza cum gentibus suis ad Caldarolam et Sarnanum'; the edition itself leaves the count's name blank. Minuti (Vita di Muzzo Attendolo Sforza) names the king's reinforcements to Sforza against Paolo Orsini in 1413: 'el sig. Malatesta da Cesena, el conte de Carrara'. As the Malatesti are named in clear in no. 23, the Conte di Carrara is a contextual candidate for Name3 (ovo); not established.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -270,9 +288,9 @@
   ],
   "gaps": [
    {
-    "item": "Seven reference/name signs and historical identities/year",
-    "blocker": "open-codes",
-    "detail": "Tartaglia, Paolo Orsini and Sforza tentative; Name3-Name6 unresolved, e may be a pronoun; year/writer historical inferences."
+    "item": "Seven reference/name signs (#, fat, o+, ovo, Fom, ta, e) and historical identities/year",
+    "blocker": "no-key-material",
+    "detail": "No key on DECODE holds these signs: George's report surveyed the 44 Concistoro 2308 fasc. 1 keys, and the c. 1412-33 ones (R4746, R4747, R1858) were re-checked 18 Oct 2026; R4783 has no image on DECODE. The R4747 phrase slip ('+° = questa brigata de Sforça') and Meister's Viviani nomenclator both tie a circle-and-cross sign to Sforza, supporting o+ = [Sforza?]. Minuti names 'el conte de Carrara' beside Sforza in the 1413 Marche pursuit (a candidate for Name3), and the Fermo chronicle edition has a lacuna at the corresponding place ('conte ..... ad furcam preste'). Proposals only, for George's review."
    },
    {
     "item": "Erasures, dessut, essereme, Eucebio, prout, closing abbreviation and subscription",
@@ -281,8 +299,8 @@
    },
    {
     "item": "Nulls, compound segmentation and editorial emendations",
-    "blocker": "open-codes",
-    "detail": "Occurrence-level verification remains; selected five-line agreement is not whole-text validation."
+    "blocker": "needs-physical-access",
+    "detail": "Occurrence-level verification of the CTTS transcription against the original leaves; the DECODE photographs are the only images and already the basis of George's edition. Selected five-line agreement is not whole-text validation."
    }
   ],
   "notes": "Exactly five physical lines mechanically checked. Statistical validation, if present, applies only to that selected excerpt. Year, sender, name codes and some editorial readings remain uncertain."

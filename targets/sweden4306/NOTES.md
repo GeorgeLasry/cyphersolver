@@ -82,22 +82,55 @@ What was tried, all without result:
 
 The earlier entry recorded the page as addressed to a "Mr ?ilick" at Amsterdam, with three DECODE images
 (`IMG_R4306_I25832_P.pdf`–`I25834`) and the wrapper II:104; these come from views of the record other than the one
-contributed page, and are not verified here (see Document and scope). Why the September annealing failed where the
+contributed page; the address (Amsterdam) and wrapper were verified on 18 Oct 2026 (see Findings of 18 October 2026). Why the September annealing failed where the
 contributed key works (nulls, the four codes, the digit-variant reading, or the search itself) has not been examined.
 
+## Findings of 18 October 2026 (proposals for George Lasry's review)
+
+Done by Claude after publication, on the DECODE images fetched with the project cookie (the 21 Sept download plus
+R4319–R4321, fetched now). George's key, reading and translation are unchanged; everything below is a finding or a
+proposal for him to accept or reject.
+
+- **The other two views of R4306.** Image I25833 is the address leaf: *Aen Mr. ?ilick* (Wilick?) *… Amsterdam*. That
+  confirms the earlier survey's Amsterdam; the first letter of the surname is unclear. Image I25834 is the archive
+  wrapper, *II:104*, "1600– Chifferbref till … i Amsterdam".
+- **A cipher note on the address leaf, not counted before.** Three lines in the right margin, in the same numerals,
+  part of line 1 torn away: `40:34:46. , [torn] 37:40:33:34:42` / `113:42:30:34:40:33.30:11:42:` /
+  `39:42: 101. 42:30:27:11:41:39`. With the letter's key: *ler., … hlden / [113] naeldan / kn [101] na..mk*. That is not
+  Dutch. Caesar offsets of the alphabet and the R4287 sequential key fail too. It adds a fifth code value, **101**,
+  and a second occurrence of **113**.
+- **The pencil list on the wrapper is not R4306's nomenclator.** A faint list on I25834 (*Nz …, Oz …, Tz Rex Polon.,
+  Vz Victoria …*) is the last leaf of R4305 (the Brandenstein 1630 key, II:132, filed next to it), seen through or
+  offset onto this sheet.
+- **Box keys, all of them.** The archivists' wrappers of the Chifferklaver keys give each key's *a* values
+  ("a = 7, 35, 51", "a = 20", …). None of the 43 labelled wrappers says a = 30. The unlabelled and wrapperless keys
+  (R4272, R4275–R4277, R4280, R4281, R4287–R4299, R4301–R4302, R4305, R4308, R4309, R4314, R4322, R4324, R4328) and
+  the three never-fetched records R4319–R4321 were opened page by page. None has an alphabet a=30 … y=52. R4287
+  ("diverse chiffernycklar från 1600-talet av okänd proveniens") is a similar sequential type with another
+  alphabet (a = 2/28/10, c = 31, the tens skipped).
+- **The template, as a proposal.** R4319 (Jacob du Moulin, 1650) is built exactly like R4306 at another offset: a
+  sequential alphabet a=20 … z=43, then a book of nomenclator words in alphabetical sections numbered from 101
+  (101 Archangel, 102 Arensborg … 111 Agent, 112 Ambassadeur, 113 Amsterdam; B from 120, C from 133). If R4306's key
+  followed the same layout, its 101–114 would be words beginning with A (or B). Proposal only: five occurrences of
+  four values cannot test it.
+- **Doubtful words on the image.** The scribe writes 0 as a tailed *o*, so 30/38 and 40/43 are ambiguous: line 4
+  ends `33:34:40·3ø:42·16:2ø:36:34:39:40:40:`, line 33 ends `41:30:46:3ø:52` (Mar…y). No better reading can be
+  forced from the one image.
+
 ## Remaining gaps
-- Codes 105, 106, 113 and 114 — blocker: open-codes; four identities in five occurrences remain unresolved.
-- Doubtful words and literal-versus-edited discrepancies — blocker: open-codes; the supplied editorial restorations and least-certain final sentence remain explicitly qualified.
-- Year, sender, recipient and place — blocker: open-codes; pencilled 1632? is not a confirmed composition date; Amsterdam is reported by the earlier survey, not independently verified here.
+- Codes 105, 106, 113 and 114 (and 101 in the address-leaf note) — blocker: no-key-material; no key with this alphabet among the 61 Chifferklaver låda II key records on DECODE (checked 18 Oct 2026), no gloss on any of R4306's three views, and five occurrences of four values are too few to rebuild the nomenclator. The R4319 template points to A/B-initial words (proposal).
+- Doubtful words and literal-versus-edited discrepancies — blocker: illegible; the scribe's tailed 0 makes 30/38 and 40/43 ambiguous on the only image, the rest are the scribe's slips, and no contemporary decipherment exists. George's restorations stand.
+- Cipher note on the address leaf (I25833, three lines, about 22 numbers, partly torn) — blocker: too-short; does not read under the letter key, offsets or R4287, and is too short and damaged to fit a variant.
+- Year and sender — blocker: needs-physical-access; the letter names neither, and the wrapper date (1600–) and pencilled 1632? are archivists' estimates. Recipient read as Mr ?ilick (Wilick?), Amsterdam; only Riksarkivet provenance records could date it.
 
 ## Escalation
-This is publication of the supplied solution at the contributor’s request, not a claim that historical identification or further cryptanalysis is exhausted.
-- [x] siblings: the earlier group survey and its separation of unrelated key-box/Bremen/Oxenstierna systems were reviewed; no sibling key supplies this solution.
-- [x] clear-pages: the supplied cipher page was inspected; no historical decipherment is visible. Other record images were not available through the public image manager in this check.
-- [n/a] known-keys: no new exhaustive key campaign requested for submission; prior R4296/R4310 failures are credited to the earlier survey.
+The supplied solution was published at the contributor's request on 17 Oct; the steps below were worked on 18 Oct 2026.
+- [x] siblings: R4306's own two other views opened (address leaf with cipher note, wrapper); neighbouring records R4305 (key, source of the wrapper's ghost list) and R4307 checked; the group survey's unrelated systems (Bremen, Rusdorff, E 708) reviewed.
+- [x] clear-pages: no historical decipherment on any of the three views; the address-leaf note is cipher, not a gloss.
+- [x] known-keys: every Chifferklaver låda II key record on DECODE checked for an a=30 alphabet (wrapper labels plus page-by-page for unlabelled keys; R4319–R4321 fetched); none matches. R4296/R4310 failures credited to the earlier survey.
 - [x] print: limited exact-opening and record searches found no complete printed plaintext; no priority claim.
-- [x] key-rebuild: the supplied Opus 5.5 key was counted and its ordered alphabet verified; no new values are invented for the unresolved codes.
-- [x] retry: five complete manuscript lines reapplied literally and compared to the supplied edition; editorial differences retained.
+- [x] key-rebuild: alphabet verified; nomenclator bracketing tried against the R4319 template (A/B-initial words from 101), not testable on five occurrences; no values invented.
+- [x] retry: doubtful spots re-read on the page image (digit-form ambiguity), the address-leaf note decoded with the key and variants; nothing further reads.
 
 ## Sources and credit
 - George Lasry, supplied CTTS material, edited Dutch reading, English translation and contextual notes, 17 October 2026. **Transcribed with CTTS, then solved with Opus 5.5.**

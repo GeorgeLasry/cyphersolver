@@ -10,7 +10,7 @@
    "date": "Undated; pencilled 1632?; references letters of 23 February and 13 March",
    "year": "unknown",
    "country": "unknown",
-   "route": "Unknown sender → unknown recipient; Amsterdam reported by earlier survey, unverified here",
+   "route": "Unknown sender → \"Mr ?ilick (Wilick?)\", Amsterdam (address leaf, DECODE image I25833, read 18 Oct 2026)",
    "language": "Dutch (17th century)",
    "pages": 1,
    "cleartext_in_document": "separate passages",
@@ -222,6 +222,45 @@
    "kind": "verification",
    "what": "Deduplicated under one key, one entry: the project's attempted-open entry riksarkivet4306 (same record R4306) folded into this contributed entry; its transcriptions moved to project_attempt/, its page made a stub pointing to sweden4306.html, its ledger rows removed. The contributed key, reading and counts were not changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "access",
+   "what": "Opened R4306's two other DECODE views at full resolution: address leaf I25833 ('Aen Mr. ?ilick (Wilick?) ... Amsterdam', confirming the earlier survey's Amsterdam) and wrapper I25834 (II:104, '1600- Chifferbref till ... i Amsterdam'). The address leaf carries a 3-line cipher note in its right margin with codes 113 and 101.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "reading",
+   "what": "Applied the contributed key to the address-leaf note: 'ler.,[torn]hlden / [113]naeldan / kn[101]na..mk'; all Caesar offsets of a 24-letter alphabet and the R4287 sequential key also tried: no Dutch.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "A faint list on the wrapper image (Nz ..., Oz ..., Tz Rex Polon., Vz Victoria ...) matched to the last leaf of R4305 (Brandenstein 1630 key, II:132, filed next to R4306): a show-through/offset from that key, not R4306's nomenclator.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "sibling key",
+   "what": "Surveyed every Chifferklaver låda II key record on DECODE for an alphabet a=30 ... y=52 with a 100+ nomenclator: the archivists' wrapper labels ('a = 7, 35, 51' etc.) of 43 records, the pages of the unlabelled and wrapperless records, and the never-downloaded R4319-R4321. None matches. R4287 ('diverse chiffernycklar ... av okänd proveniens') is a similar sequential type with another alphabet (a=2/28/10, c=31).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "hypothesis",
+   "what": "R4319 (Jacob du Moulin, 1650) is the same chancery template at another offset: sequential alphabet a=20 ... z=43, then an alphabetical nomenclator from 101 (101 Archangel ... 112 Ambassadeur, 113 Amsterdam; B from 120). By analogy R4306's 101-114 would be A/B-initial words. Not testable on five occurrences; offered to George as a proposal.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "Checked the doubtful spots (lines 4-5 ekll|men, line 33 Mar..y) on the page image: the scribe's tailed 0 makes 30/38 and 40/43 ambiguous; no better reading can be forced. Gap reclassified as illegible.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -265,21 +304,26 @@
   ],
   "gaps": [
    {
-    "item": "Codes 105, 106, 113 and 114",
-    "blocker": "open-codes",
-    "detail": "Four identities unresolved in five occurrences. Context suggests persons, powers or courts; identities are not supplied."
+    "item": "Codes 105, 106, 113 and 114 (and 101 in the address-leaf note)",
+    "blocker": "no-key-material",
+    "detail": "No key with this alphabet (a=30 ... y=52) is among the 61 Chifferklaver låda II key records on DECODE (the wrappers' 'a =' labels and the unlabelled keys checked 18 Oct 2026, R4319-R4321 newly fetched); R4306's own three views carry no gloss; five occurrences of four values are too few to rebuild the nomenclator. The sister template R4319 (Jacob du Moulin 1650: sequential alphabet, then an alphabetical nomenclator from 101) suggests A/B-initial words, a structural proposal only."
    },
    {
     "item": "Doubtful words and literal-versus-edited discrepancies",
-    "blocker": "open-codes",
-    "detail": "gekl…men, [v]ersoeck, ga[d]e, Mar[t]y and the final sentence remain editorial or uncertain; the five-line excerpt preserves literal ekll and alsodesaecken."
+    "blocker": "illegible",
+    "detail": "Checked on the page image 18 Oct 2026: the scribe writes 0 as a tailed o, so 30/38 and 40/43 are ambiguous (mondeling(e) ... ekll|men; Mar..y written 41:30:46:3ø:52); the rest are the scribe's own slips, and no better image or contemporary decipherment exists. George's editorial restorations stand."
    },
    {
-    "item": "Year, sender, recipient and place",
-    "blocker": "open-codes",
-    "detail": "Pencilled 1632? is not an established document date. The older survey reports Amsterdam on another view, not verified from the contributed page."
+    "item": "Cipher note on the address leaf (image I25833, 3 lines, about 22 numbers, partly torn away)",
+    "blocker": "too-short",
+    "detail": "Newly noticed 18 Oct 2026; contains codes 113 and 101. The letter key gives 'ler.,[torn]hlden / [113]naeldan / kn[101]na..mk', not Dutch; Caesar offsets and the R4287 sequential key also fail. Too short and damaged to fit a variant key."
+   },
+   {
+    "item": "Year and sender",
+    "blocker": "needs-physical-access",
+    "detail": "The letter names neither; the wrapper (II:104, '1600- Chifferbref till ... i Amsterdam') and the pencilled 1632? are archivists' estimates. Recipient address read on I25833: 'Aen Mr. ?ilick (Wilick?) ... Amsterdam', first letter of the surname unclear. Only Riksarkivet provenance records could date it."
    }
   ],
-  "notes": "Belongs to: Riksarkivet key-box and Oxenstierna ciphers. Exactly five mechanical lines included; the full Dutch reading and translation are supplied editions. No full mechanical decryption or established year/identity claimed."
+  "notes": "Belongs to: Riksarkivet key-box and Oxenstierna ciphers. Exactly five mechanical lines included; the full Dutch reading and translation are supplied editions. No full mechanical decryption or established year/identity claimed. Escalation 18 Oct 2026 (Claude, for George Lasry's review): box keys, R4306's other views and the address-leaf note worked; no gap remains workable from DECODE."
  }
 }

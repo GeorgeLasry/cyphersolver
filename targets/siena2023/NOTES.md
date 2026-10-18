@@ -39,20 +39,45 @@ Only **R4811 CTTS physical lines 6–10** are mechanically decoded. The 322 sele
 <p><strong>Place and remaining limits.</strong> “Maccione de le Rose” probably denotes the Mazzone delle Rose muster ground. Later royal records independently attest a camp there, including near Ponte Annecchino in 1450; they support the place identification, not the date of these letters. [<a href="https://www.accademiapontaniana.it/wp-content/uploads/2018/03/REGISTRO-9.3.2018.pdf#page=278">I registri privilegiorum di Alfonso il Magnanimo, register 2905, nos. 11–16; register 2914, no. 27</a>]</p>
 <p>The supplied research report surveys 44 key records, 43 with images, and reports no matching key; R4783 could not be inspected. It also reports no external copy of these plaintexts. These are bounded search results. The heading certainly names Tartaglia, but <code># = [Tartaglia?]</code> remains tentative: <code>#</code> and the repeated <code>e = [Name6?]</code> may name different people. Name3–Name6, the place [Eucebio?], one difficult clause and the subscription remain unresolved. No priority or “oldest deciphered cipher” claim is made.</p>
 
+## Findings of 18 October 2026 (proposals for George Lasry's review)
+
+Done by Claude after publication. George's key, readings and translations are unchanged; the items below are
+findings or proposals for him to accept or reject.
+
+- **The fascicle on DECODE, re-listed.** Through the DECODE API: keys R4746–R4789 (fasc. 1, 44 records) and
+  ciphertexts R4790–R4814 (fasc. 2, 25 pieces), as in George's report. R4783 has no image on DECODE even when logged
+  in, so it can only be seen in Siena.
+- **The earliest keys, re-checked for the seven signs.** R4746 (1433, Fortebraccio), the R1858 key photos and the
+  three slips of R4747 hold none of `#`, `fat`, `o+`, `ovo`, `Fom`, `ta`, `e`. R4747 slip 3 is a phrase code of
+  c. 1419–21 about Tartaglia (one sign = one sentence: "Tartaglia certamente vuole …", "di Siena", …). Its fourth
+  line is **"+° = q(ue)sta brigata d(e) Sforça"** (a cross with a small circle). That is a different system, but a
+  second Sienese source of the period that ties a circle-and-cross sign to Sforza, beside Meister's 1412 Viviani
+  nomenclator. It supports `o+ = [Sforza?]`; it does not prove it.
+- **Fermo chronicle, on the page image.** For April 1413 the edition (Cronache fermane p. 39) reads "et dicebatur quod
+  ipse timebat maxime conte ..... ad furcam preste, Sforza cum gentibus suis ad Caldarolam et Sarnanum". The count
+  holding Forca di Presta is a blank in the edition itself.
+- **Minuti names the second captain.** In Minuti's life of Sforza, the king sent to Sforza at the 1413 siege of Paolo
+  Orsini in Rocca Contrada "el sig. Malatesta da Cesena, el conte de Carrara". No. 23 names the Malatesti in clear,
+  so the **Conte di Carrara** is a contextual candidate for **Name3** (`ovo`), who appears beside Sforza ("[Name3] et
+  [Sforza?] … perché [Paolo Orsini?] l'ave levati loro conpagni et è loro nemico"). He may also be the count left blank at
+  Forca di Presta. Proposal only.
+- Name4 ("Dominico de [Name4]", 140 lances), Name5 ("castela del contado de [Name5]") and Name6 (a captain with his own
+  company, summoned to the Mazzone with 1,000 ducats) found no candidate in these sources.
+
 ## Remaining gaps
 
-- `#`, `fat`, `o+`, `ovo`, `Fom`, `ta`, `e` and historical identities/year — blocker: open-codes. Three name hypotheses remain tentative; Name3–Name6 have no secure identification, and `e` could be a pronoun. The proposed writer and 1413 date are historical inferences.
+- `#`, `fat`, `o+`, `ovo`, `Fom`, `ta`, `e` and historical identities/year — blocker: no-key-material. No key on DECODE holds these signs (44 fasc. 1 keys surveyed by George's report; the c. 1412–33 keys re-checked 18 Oct 2026; R4783 has no image). Context and print give proposals only: `o+` = Sforza supported by two circle-and-cross Sforza signs (Meister 1412, R4747 slip 3); Name3 possibly the Conte di Carrara (Minuti). `e` could be a pronoun; the writer and 1413 date remain historical inferences.
 - Erased selections, `dessut`, `[essereme?]`, `[Eucebio?]`, `[prout?]`, the closing abbreviation and subscription — blocker: illegible. The current readable editions retain unresolved text and editorial restorations; five-line agreement does not settle these passages.
-- Nulls, compound segmentation and editorial emendations — blocker: open-codes. Occurrence-level manuscript checks remain necessary; a nearly complete alphabetic assignment is not a completely verified reading.
+- Nulls, compound segmentation and editorial emendations — blocker: needs-physical-access. Occurrence-level checks of the CTTS transcription against the original leaves; the DECODE photographs are the only images and already the basis of George's edition. A nearly complete alphabetic assignment is not a completely verified reading.
 
 ## Escalation
 
-This publishes the contributor’s current edited result; it does not declare further research exhausted.
+This publishes the contributor's current edited result. The steps were reworked on 18 Oct 2026 (above).
 
-- [x] siblings: the supplied report describes review of the 25 photographed fascicle pieces and finds no further document in this cipher. Nos. 6/24 are a different system.
+- [x] siblings: the supplied report reviews the 25 photographed fascicle pieces and finds no further document in this cipher (nos. 6/24 are a different system); the DECODE listing was re-checked 18 Oct 2026.
 - [x] clear-pages: original clear passages are retained as CLEAR1–CLEAR4. No interlinear or marginal decipherment was used.
-- [x] known-keys: the supplied report surveys 44 records, 43 with images; R4783 remains unavailable. No matching key reported. Meister’s Lucca comparison was independently checked here and is a different key.
-- [x] print: independently checked the Fermo and Minuti parallels, Meister’s inventory and 1412 nomenclator, and later Mazzone camp attestations. No exact external plaintext established.
+- [x] known-keys: the supplied report surveys 44 records, 43 with images; R4783 has no image on DECODE (confirmed logged in, 18 Oct 2026). The earliest keys (R4746, R4747, R1858) were re-checked for the seven signs: none holds them. Meister's Lucca comparison is a different key.
+- [x] print: Fermo chronicle (page image: the count at Forca di Presta is a lacuna in the edition), Minuti (Conte di Carrara with Sforza in 1413), Meister's inventory and 1412 nomenclator, later Mazzone camp attestations. No external plaintext; identifications remain proposals.
 - [x] key-rebuild: imported the current reviewed key and edited files; refreshed all glyph samples and counted the new classes. Source mappings were not altered for publication.
 - [x] retry: reapplied the current key to exactly five physical lines and verified literal agreement with the current edition. The remaining editorial gaps are disclosed above.
 
