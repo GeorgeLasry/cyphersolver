@@ -216,7 +216,7 @@ def benedict1399():
 
 
 def siena_no14():
-    f = T / 'siena1421/transcripts/no14_reading2.txt'
+    f = T / 'siena14/transcripts/no14_reading2.txt'
     rows = read(f).splitlines()
     st = Stats()
     DROP = {'BAR', 'DASH', 'SLASH', 'ITICK', 'TILDE'}       # marks, not signs (as the target's prep14.py)
@@ -301,8 +301,8 @@ def siena_no14():
         plaintext=norm_plain(join_lines(plain_lines)),
         plaintext_source="TEXT lines of no14_reading2.txt: words read as sense and doubtful words ({?}); unread "
                          "({x}) and code words left out",
-        source_files=[rel(f), rel(T / 'siena1421/prep14.py'), rel(T / 'siena1421/NOTES.md'),
-                      rel(T / 'siena1421/profile.json')],
+        source_files=[rel(f), rel(T / 'siena14/prep14.py'), rel(T / 'siena14/NOTES.md'),
+                      rel(T / 'siena14/profile.json')],
         caveats=[
             "Date not fixed: placed c. 1409-29 from content only (Carlo Malatesta alive).",
             "Only 58.6% of tokens are in words read as sense; 29% sit in words with a doubtful letter.",
@@ -314,7 +314,7 @@ def siena_no14():
 
 
 def siena_no25():
-    f = T / 'siena1421/transcripts/no25_reading.txt'
+    f = T / 'siena25/transcripts/no25_reading.txt'
     body = read(f).split('PER LINE (corrected signs -> Italian)')[1].split('RUNNING TEXT')[0]
     rows = body.splitlines()
     st = Stats()
@@ -354,8 +354,8 @@ def siena_no25():
         lines=lines, line_ids=ids,
         plaintext=norm_plain(join_lines(plain)),
         plaintext_source="per-line Italian of no25_reading.txt (rev. 2)",
-        source_files=[rel(f), rel(T / 'siena1421/transcripts/no25.txt'), rel(T / 'siena1421/keys/no25_key.txt'),
-                      rel(T / 'siena1421/NOTES.md')],
+        source_files=[rel(f), rel(T / 'siena25/transcripts/no25.txt'), rel(T / 'siena25/keys/no25_key.txt'),
+                      rel(T / 'siena25/NOTES.md')],
         caveats=[
             "UNDATED: nothing fixes it to the 15th century (the fascicle runs 1421-1547); use as a period sample only "
             "with that caveat.",
@@ -365,7 +365,7 @@ def siena_no25():
 
 
 def siena_no04():
-    f = T / 'siena1421/transcripts/no04_reading.txt'
+    f = T / 'borghesi1456/transcripts/no04_reading.txt'
     rows = read(f).splitlines()
     st = Stats()
     # gather R-lines with their continuation lines, up to the '->' reading line
@@ -444,8 +444,8 @@ def siena_no04():
         lines=lines, line_ids=ids,
         plaintext=norm_plain(' '.join(plain)),
         plaintext_source="the '->' readings of each run in no04_reading.txt, upper-case (deciphered) words only",
-        source_files=[rel(f), rel(T / 'siena1421/transcripts/no04.txt'), rel(T / 'siena1421/keys/no04_key.txt'),
-                      rel(T / 'siena1421/NOTES.md')],
+        source_files=[rel(f), rel(T / 'borghesi1456/transcripts/no04.txt'), rel(T / 'borghesi1456/keys/no04_key.txt'),
+                      rel(T / 'borghesi1456/NOTES.md')],
         caveats=[
             "Very short (about 140 signs in 15 runs): too short for character statistics on its own.",
             "19 signs unread and 11 doubtful; several sign shapes occur once.",
@@ -453,7 +453,7 @@ def siena_no04():
         _stats=st)
 
 
-def siena_tok(dataset, parts, meta, folder='siena1421', sub='transcripts'):
+def siena_tok(dataset, parts, meta, folder, sub='transcripts'):
     """Siena pieces kept as the target's prepared .tok files (one manuscript line or run per line)."""
     st = Stats()
     lines, ids = [], []
@@ -824,7 +824,6 @@ def buda1489():
 
 
 def main():
-    S = 'siena1421/transcripts/'
     data = [benedict1399(), siena_no14(), florence1429()]
     data += r1854_all()
     data += [maria1435(), it1583('f68'), it1583('f70'), siena_no04()]
@@ -839,7 +838,7 @@ def main():
         sign_inventory_note=("Tokens of transcripts/no07.tok (one cipher run per line, as the target prepared it "
                              "from no07.txt; the scribe's sporadic points are not kept)."),
         caveats=["Short (363 signs).", "Some short cursive items inside runs may be clear words (no07.txt notes).",
-                 "Date from context, not from the letter."])))
+                 "Date from context, not from the letter."]), folder='siena7'))
     data.append(siena_tok('siena1421_no11', [('no11', 'no11.tok')], dict(
         txt=['no11.txt'],
         piece="Donato Acciaiuoli to Lorenzo de' Medici, intercepted Florentine letter held in Siena, no. 11",
@@ -849,7 +848,7 @@ def main():
                "letter; homophonic anneal fails; no key known.",
         language='Italian context; cipher unread', outcome='not read',
         sign_inventory_note="Tokens of transcripts/no11.tok (sign names of no11.txt; 'PLUS O' merged as one sign).",
-        caveats=["Short (409 signs)."])))
+        caveats=["Short (409 signs)."]), folder='siena11'))
     data.append(siena_tok('siena1421_no06_24', [('no06', 'no06.tok'), ('no24', 'no24p2.tok')], dict(
         txt=['no06.txt', 'no24.txt', 'no24_p2a.txt', 'no24_p2b.txt'],
         piece="Two letters to the Signori of Siena in one system: no. 6 (sender unknown, 'di Firenze'?) and no. 24 "
@@ -868,7 +867,7 @@ def main():
         caveats=["Date only from the hand of no. 6.",
                  "Two transcribers (agent A for no. 6, agents H and I for no. 24) with one legend; look-alike "
                  "signs may be merged or split differently.",
-                 "System unidentified: tokens may be syllables or code signs, not letters."])))
+                 "System unidentified: tokens may be syllables or code signs, not letters."]), folder='siena1431', sub='project_attempt'))
     data.append(siena_tok('siena1421_no20_23', [('no20', 'no20.tok'), ('no23', 'no23.tok')], dict(
         txt=['no20.txt', 'no23a.txt', 'no23b.txt'],
         piece="Two letters in one system: no. 20 to a king ('Sacra Regia Maiestas'), [Perugia?], penultimate day "

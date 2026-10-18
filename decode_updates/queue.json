@@ -3162,14 +3162,22 @@
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Charles VI to Windischgrätz, Vienna, 3 Feb 1720 (autograph). All 26 cipher passages read with the Chancellery key R5017 applied as it stands (two key slips: 31 = zu, 268 = ein); 446 and 638 uncertain. The later letters R5021-R5024 are in the private key R5018, not R5017.",
-     "reading": [{"file": "targets/windischgraetz1720/dec_R5017_letter.md"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720/dec_R5017_letter.md"
+      }
+     ],
      "sent": false
     },
     "R5020": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Register copy of R5019 (inv. 5 book 5 pp. 401-404); agrees with the autograph group for group; read with key R5017.",
-     "reading": [{"file": "targets/windischgraetz1720/dec_R5017_letter.md"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720/dec_R5017_letter.md"
+      }
+     ],
      "sent": false
     }
    }
@@ -3186,28 +3194,48 @@
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Charles VI to Windischgrätz, Vienna, 13 Apr 1720 (autograph): both cipher passages read with the private key R5018 (Orleans; the burden of the Barrier).",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 2"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 2"
+      }
+     ],
      "sent": false
     },
     "R5022": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Register copy of R5021 (book 5 pp. 404-407); read with R5018.",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 2"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 2"
+      }
+     ],
      "sent": false
     },
     "R5023": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Copy of No. 3, Vienna, 24 Jul 1720 (book 5 pp. 407-409; first image repeats pp. 406-407): all three passages read with R5018 (Beretti Landi's marriage proposal).",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 3"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 3"
+      }
+     ],
      "sent": false
     },
     "R5024": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Copy of No. 6, Vienna, 11 Apr 1722, to Windischgrätz at Cambrai (book 5 pp. 414-416): all four passages read with R5018.",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 6"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 6"
+      }
+     ],
      "sent": false
     }
    }
@@ -3962,7 +3990,7 @@
   "ranzo1528": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/ranzo1528.html",
    "key": {
-    "none": "no key on DECODE; an outside key table for this code by P. Rosson (779 values, 6 Oct 2026) is linked in the sources; Lasry’s independently reconstructed 871-entry working key is linked from the write-up, with tentative mappings marked."
+    "none": "no key on DECODE; an outside key table for this code by P. Rosson (779 values, 6 Oct 2026) is linked in the sources; Lasry’s independently reconstructed 871-entry working key (targets/ranzo1528/lasry/key.tsv) is linked from the write-up, with tentative mappings marked. Both keys were recovered from the ciphertext."
    },
    "cite": "P. Rosson (with Claude), 'The Venetian? cipher with superscript digits of 1528', https://pangoleen.github.io/cipher-readings/centurione-1528.html; S. Tomokiyo, 'Venetian Ciphers with Superscripts', cryptiana; George Lasry, with Claude Opus 5.5 and GPT-6 Astra, independent contemporaneous reconstruction based on Norbert Biermann’s transcription, Codex consolidation 6 Oct 2026. https://cryptiana.web.fc2.com/code/ranzo.htm",
    "fields": {
@@ -3971,8 +3999,8 @@
    "records": {
     "R1894": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Read in part by Paolo Rosson with Claude (6 Oct 2026; link in the sources): his key applied to the attached transcription values 97.2% of the groups and 93.1% lie in connected stretches (measured 14 Oct 2026); not read here. The date 1 Jan 1520 is a placeholder for BnF's 1520-29 range; the same code is used in the letter to 'Garbino', Madrid 11 Apr 1528 (BnF fr. 3022 no. 20), so the late 1520s is likelier. R4450 (BnF fr. 20506 f. 136) is a copy of f. 9. A full transcription of ff. 9r-10v (initial letter + number groups) is attached; about 3,900 groups of this code are transcribed in all (targets/ranzo1528/n20/). A separate Biermann-based transcription and Lasry working decipherment are contributed: 1,781 cipher occurrences, 35 presumed nulls, 1,703 proposed readings including tentative ones, 43 unassigned non-null occurrences. These counts do not replace Rosson’s separate measurements.",
+     "proposed": "Decrypted",
+     "note": "Deciphered with keys recovered from the ciphertext, independently, by George Lasry (with Claude Opus 5.5 and GPT-6 Astra, on Norbert Biermann's transcription) and Paolo Rosson (with Claude), both 6 Oct 2026 (links in the sources). Measured 18 Oct 2026 with both keys on Biermann's transcription (targets/ranzo1528/measure_lasry.py): 1,728 of 1,781 groups (97.0%) give sense; the two keys agree on 95.6% of the groups both value. Lasry's full line-by-line decipherment is targets/ranzo1528/lasry/decode.txt (letter 2). The date 1 Jan 1520 is a placeholder for BnF's 1520-29 range; the letter is of March 1528 (Madrid), in the same code as the letter to 'Garbino', Madrid 11 Apr 1528 (BnF fr. 3022 no. 20). R4450 (BnF fr. 20506 ff. 136-138) is a copy of this letter. Transcriptions of ff. 9r-10v attached: this project's (initial letter + number groups) and Biermann's.",
      "reading": null,
      "reading_not_needed": true,
      "transcription": [
@@ -3986,8 +4014,8 @@
     },
     "R4450": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Read in part through its original: Rosson's key (see R1894). A copy of BnF fr. 2988 f. 9 (DECODE R1894), whose transcription is attached there; same code as the 'Garbino' letter, BnF fr. 3022 no. 20 (Madrid, 11 Apr 1528).",
+     "proposed": "Decrypted",
+     "note": "Deciphered through its original: BnF fr. 20506 ff. 136-138 is the parallel copy of Ranzo's letter in BnF fr. 2988 ff. 9-10 (DECODE R1894), as George Lasry's source list gives it (not of f. 9 only, as queued before). With Lasry's and Rosson's keys 97.0% of that letter's groups give sense (see R1894; Lasry, 16 Oct 2026: 'solved Fr 2988 and Fr 20506'). The copy's own variants were not checked against the images. Same code as the 'Garbino' letter, BnF fr. 3022 no. 20 (Madrid, 11 Apr 1528).",
      "reading": null,
      "reading_not_needed": true,
      "sent": false
@@ -8619,26 +8647,18 @@
     }
    }
   },
-  "siena1421": {
+  "siena2308": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/siena1421.html",
    "key": {
-    "none": "No key for the unread pieces; the recovered keys are queued under siena25, siena18, siena14 and borghesi1456, nos. 6/24 (key R4755) under siena1431, and nos. 20/23 (R4808, R4811) under siena2023."
+    "none": "collection-level corrections for the clear and key-fragment pieces of Concistoro 2308 fasc. 2 (index research/siena2308/); the cipher pieces are queued under their own entries (siena2023, siena12, siena1431, borghesi1456, siena14, siena19, siena21, siena25, siena11, siena18, siena17, siena15, siena5, siena9, siena13, siena10, siena7, siena8)"
    },
-   "cite": null,
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (report to Daniel Bourdeau, 17 Oct 2026), contents p. 3 (heading I)",
    "fields": {},
    "records": {
-    "R4790": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "Concistoro 2308 fasc. 2 no. 12 (pencil number); letter in graphic signs; also photographed in R1858 (marked Decrypted). DECODE dates all fasc. 2 pieces 1500-1599 (placeholder); image 3 = fascicle cover 'Fasc. 2, Pezzi 25'.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
     "R4791": {
      "decode_status": "N/A",
      "proposed": "N/A (no cipher)",
-     "note": "No. 5: clear private letter to 'Maffeo da Siena' (pencil 1460?); no cipher seen.",
+     "note": "Concistoro 2308 fasc. 2: clear private letter to 'Maffeo da Siena' (pencil 1460?); no cipher seen. The project's inventory of 24 Sept 2026 took it as no. 5; George Lasry's report lists it among the cleartext letters and gives 'No. 5?' to the cipher slip R4794.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -8651,144 +8671,27 @@
      "sent": false,
      "reading_not_needed": true
     },
-    "R4794": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "Unnumbered slip (faint pencil 5), 6 lines in graphic signs with numbers 44, 26, 67, 74; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/r4794.txt"
-     ]
-    },
-    "R4796": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 7: despatch of a Sienese orator at Milan (signed 'Orator Ant...', names Lionardo Benvoglienti) to the Officiales Balie, 1450s; ~360 cipher signs with faint interlinear letter glosses; key R4750 tested, does not fit; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no07.txt"
-     ]
-    },
-    "R4797": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "No. 8, c. 1440-47: ciphered slip with its contemporary decipherment on the same sheet (antipope Felix, Duke of Milan, Bianca and Leonello d'Este, Niccolo Piccinino); read at the time.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R4798": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 9: slip, clear with two short cipher runs (Correggio, Carpi, Rimini, re di Ragona; c. 1495-1516?).",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no09.txt"
-     ]
-    },
-    "R4799": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "No. 10: slip with one cipher run glossed letter by letter 'presura di Montepulciano' (read at the time).",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R4800": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome 13 June 1478 (a Florentine letter held in Siena), not 1500-1599; ~410 cipher signs in two blocks; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no11.txt"
-     ]
-    },
-    "R4801": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "No. 13 (1527-29): cipher slip; its contemporary decipherment is no. 16 (R4804).",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R4803": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 15: Mario Bandini, Sienese orator at Charles V's court, Heilbronn(?) 29 Dec 1546 and 4 Jan 1547 (1546 s.s.); cipher only on pp. 2 and 6 (~230 signs); candidate key R4764 (Buoninsegni); not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no15v.txt"
-     ]
-    },
-    "R4804": {
-     "decode_status": "N/A",
-     "proposed": "Decrypted",
-     "note": "No. 16: clear contemporary decipherment of no. 13 (R4801): the pope's coming to Bologna, Modena and Reggio (1527-29).",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R4805": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 17: Siena to Antonio del Vescovo, orator, 20 or 25 Aug 1528, docket 'questa cifra e quella di Balia'; ~280 cipher signs; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no17.txt"
-     ]
-    },
-    "R4807": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 19: Sienese envoys to the Magnifici domini, 9 March (no year); ~120 cipher signs with clear cribs; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no19.txt"
-     ]
-    },
-    "R4809": {
-     "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 21: short letter ('Karissimo come padre') with ~110 cipher signs; not read.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true,
-     "transcription": [
-      "targets/siena1421/transcripts/no21.txt"
-     ]
-    },
     "R4810": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "No. 22: drafts of a letter (signal fires, spingarde, 'la lettera di Calisto' = Calixtus III, 1455-58); clear drafts pair with drafts where numbers stand for key words (4 = .L., 7 = denari, 15 = parti, 16 = accordo, 17 = speranza).",
+     "note": "Concistoro 2308 fasc. 2 no. 22 (George Lasry's report: R4810 among the cleartext letters): drafts of a letter (signal fires, spingarde, 'la lettera di Calisto' = Calixtus III, 1455-58), not 1500-1599; clear drafts pair with drafts where numbers stand for key words (4 = .L., 7 = denari, 15 = parti, 16 = accordo, 17 = speranza).",
      "reading": null,
      "reading_not_needed": true,
      "sent": false,
      "transcription": [
-      "targets/siena1421/transcripts/no22.txt"
+      "research/siena2308/transcripts/no22.txt"
      ]
     },
     "R4814": {
      "decode_status": "N/A",
      "proposed": "N/A",
-     "note": "No. 29: torn scrap of a nomenclator/word list ('Ungaria - 187?', 'Giovan[ni]', 'Lodyo'), not a letter; record type should be key fragment.",
+     "note": "Concistoro 2308 fasc. 2 no. 29: torn scrap of a nomenclator/word list ('Ungaria - 187?', 'Giovan[ni]', 'Lodyo'), not a letter; George Lasry's report: fragment of a key. Record type should be key.",
      "reading": null,
      "reading_not_needed": true,
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "research/siena2308/transcripts/no29.txt"
+     ]
     }
    }
   },
@@ -8820,20 +8723,26 @@
    "key": {
     "file": "targets/siena18/keys/no18_key.txt",
     "lang": "LA",
-    "how": "recovered ciphertext-only (staged annealing, Latin model), look-alike signs split on the images"
+    "how": "recovered ciphertext-only twice, independently: here (staged annealing, Latin model, look-alike signs split on the images, 24 Sept 2026) and by George Lasry with CTTS and Claude (cribs from the clear Latin, 17 Oct 2026); the keys agree on 35 of his 38 letter signs (targets/siena18/lasry_comparison.md)"
    },
-   "cite": null,
-   "fields": {},
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 18, pp. 20-24",
+   "fields": {
+    "plaintext_lang": "Latin",
+    "cleartext_lang": "Latin",
+    "cipher_types": "homophonic",
+    "start_year": "1496",
+    "start_month": "11",
+    "end_year": "1496",
+    "end_month": "11",
+    "sender": "Maximilian I, King of the Romans (royal chancery; subscribed by the secretary Niklas Ziegler)",
+    "receiver": "the orators of Siena"
+   },
    "records": {
     "R4806": {
      "decode_status": "N/A",
-     "proposed": "Partially decrypted",
-     "note": "No. 18: Latin articles of a treaty between Siena and the King/Emperor (subscribed Niccolaus Ziegler, Regis Secretarius; Ponte a Valiano; war on the Florentines), 1510s-1520s, not 1500-1599 placeholder; cipher words inside the Latin; key recovered ciphertext-only; 87% of cipher signs read. Split 14 Oct 2026 from siena1421 (one key per entry).",
-     "reading": [
-      {
-       "file": "targets/siena18/transcripts/no18_reading.txt"
-      }
-     ],
+     "proposed": "Decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 18: League articles of Maximilian I and the Sienese orators, Pisa, November 1496 (George Lasry's dating; not 1500-1599), subscribed by Niklas Ziegler, Regis Secretarius; cipher words inside the Latin. Key recovered from the ciphertext alone here (24 Sept 2026, 87%) and independently by George Lasry with CTTS and Claude (17 Oct 2026), whose complete reading is attached: six single signs unread; B., X., S., M.X., m. unresolved code capitals.",
+     "reading": "decode_updates/decryptions/R4806.txt",
      "sent": false
     }
    }
@@ -10065,13 +9974,48 @@
    "note": "No DECODE record for the Revol letters or key no. 60 is known yet (DECODE not searched). If a record exists for fr. 3995 ff. 108-111 or fr. 3985 f. 88, attach key60.txt with these corrections: b = o- (ring, tail right), tu = -o-; c 4th = flag on a stem; d = ‡ (one stem, two bars) and ·x; i adds hook+cross; o 5th = \\\\; m 4th = m with loop below; u 4th = 2+, 5th = ‡ with loop; table f. 111: loop-on-stem with one bar = u, n+ = p, 2+ = u/J, closed 4+ = bien. fr. 3985 f. 88r read in part: '... de absolution', le Roy, qu'il (transcription targets/revol1593/f88/ct_3985_f88.txt). Split 14 Oct 2026 from nevers1593 (the Pisany letters in key no. 46 have no DECODE record either).",
    "sent": false
   },
+  "siena12": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena12.html",
+   "key": {
+    "file": "targets/siena12/key.md",
+    "lang": "IT",
+    "how": "George Lasry's key, recovered from the ciphertext alone with CTTS and Claude (Claude's simulated annealing, then refined), October 2026; his key figure is targets/siena12/key_lasry.jpg"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 12, pp. 10-12",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cipher_types": "homophonic, nomenclator"
+   },
+   "records": {
+    "R4790": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 12 (pencil number): the bishop(?) of Fermo ('Vescovi de Fermo'?) to Sforza Attendolo, Naples, 10 March 1413 ('a di dieci de marzo, sesta indictione'), not 1500-1599; wholly in cipher, address on the verso (P1); P3 is the fascicle cover. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; more than 95% read (his estimate); two name signs open. Also photographed as R1858 p. 7.",
+     "reading": [
+      {
+       "file": "targets/siena12/reading_no12.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "start_year": "1413",
+      "start_month": "3",
+      "start_day": "10",
+      "end_year": "1413",
+      "author": "Vescovi(?) de Fermo",
+      "receiver": "Sforza Attendolo",
+      "origin_city": "Naples"
+     }
+    }
+   }
+  },
   "siena1431": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/siena1431.html",
    "key": {
     "decode": "R4755 (Concistoro_2308_10, 'Cifra cum Christoforo Ghinucci[?]'), the key sheet filed in fasc. 1 of the same busta",
     "lang": "IT"
    },
-   "cite": "George Lasry (with Claude and ChatGPT Astra), 'Siena, two ciphered letters to the Signori (Concistoro 2308, nos. 6 and 24)', 14 Oct 2026; verified by D. Bourdeau, https://dbourdeau.github.io/cyphersolver/siena1431.html",
+   "cite": "George Lasry (key recovered ciphertext-only with CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; R4755 found to match afterwards), 'Siena, two ciphered letters to the Signori (Concistoro 2308, nos. 6 and 24)', 14 Oct 2026, and 'The cipher documents of Concistoro 2308, fasc. 2', 17 Oct 2026, pp. 13-17; verified by D. Bourdeau, https://dbourdeau.github.io/cyphersolver/siena1431.html",
    "fields": {
     "plaintext_lang": "Italian",
     "cleartext_lang": "Italian",
@@ -10081,7 +10025,7 @@
     "R4795": {
      "decode_status": "N/A",
      "proposed": "Partially",
-     "note": "Deciphered with key R4755 (Lasry, with Claude and ChatGPT Astra; key first recovered from the ciphertext); 93% of decrypted letters understood. Dated 19 February, c. 1431-38 (not 1500-1599), signed Cristofano de Mont[...], to the Signori of Siena.",
+     "note": "Deciphered with key R4755 (Lasry, with CTTS built-in cryptanalysis refined by Claude Opus 5.5 and GPT-6 Astra; key first recovered from the ciphertext); 93% of decrypted letters understood (95.4% after the z/u key correction of 14 Oct 2026). Dated 19 February, c. 1431-38 (not 1500-1599), signed Cristofano de Mont[...], to the Signori of Siena.",
      "reading": [
       {
        "file": "targets/siena1431/reading_no06.txt"
@@ -10098,7 +10042,7 @@
     "R4812": {
      "decode_status": "N/A",
      "proposed": "Partially",
-     "note": "Deciphered with key R4755 (Lasry, with Claude and ChatGPT Astra); text side 73% of decrypted letters understood, dorse (8 run-over lines) only in part. Same writer as no. 6 (signed Crist[ofa]no on the dorse); c. 1431-38 (1437-38 fits best), not 1500-1599; to the Signori and Capitano di popolo of Siena.",
+     "note": "Deciphered with key R4755 (Lasry, with CTTS built-in cryptanalysis refined by Claude Opus 5.5 and GPT-6 Astra); text side 73% of decrypted letters understood, dorse (8 run-over lines) only in part. Same writer as no. 6 (signed Crist[ofa]no on the dorse); c. 1431-38 (1437-38 fits best), not 1500-1599; to the Signori and Capitano di popolo of Siena.",
      "reading": [
       {
        "file": "targets/siena1431/reading_no24.txt"
@@ -11062,7 +11006,7 @@
     "lang": "IT",
     "how": "George Lasry’s reconstructed working key; uncertainty brackets and provisional nulls retained. # is an actual cipher sign. Visual key in the target folder."
    },
-   "cite": "George Lasry, current Italian editions and CTTS material; English translations updated by Codex, 17 October 2026. Transcribed with CTTS, then solved by GPT-6 Astra.",
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), nos. 20 and 23, pp. 4-9: key recovered from ciphertext-only with CTTS and Claude (crib testing and dragging), both sheets read in full. Earlier filed through PR #41 (current Italian editions and CTTS material; English translations updated by Codex, 17 October 2026).",
    "fields": {
     "plaintext_lang": "Italian",
     "cleartext_lang": "Latin and Italian",
@@ -11071,8 +11015,8 @@
    "records": {
     "R4808": {
      "decode_status": "N/A",
-     "proposed": "Partially",
-     "note": "Partial recovery from ciphertext, transcribed with CTTS then solved by GPT-6 Astra under George Lasry’s direction. Current edition retains tentative Paolo Orsini/Sforza/Tartaglia and other uncertainties. Spring 1413 is proposed from historical parallels, not entered as an established date. Perugia, 30 March; writer possibly Muzio Attendolo Sforza, king possibly Ladislaus. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 20 (pencil number), clear address 'Sacra Regia Maiestas, Serenissime princeps ... ante terre pedum oscula', subscription 'Scriptum Perusii(?) die penultimo mensis Martii'; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 23 (R4811). That survey's transcription is in targets/siena2023/project_attempt/.",
+     "proposed": "Decrypted",
+     "note": "Key recovered from ciphertext-only by George Lasry with CTTS and Claude (report of 17 Oct 2026: both sheets read in full); earlier filed as a partial recovery 'transcribed with CTTS then solved by GPT-6 Astra' (PR #41). Name signs [Paolo Orsini?]/[Sforza?]/[Tartaglia?] tentative, four others and the subscription open. Perugia, 30 March 1413 (year from the contents, per the report); writer most probably Muzio Attendolo Sforza, to King Ladislaus of Naples. Earlier note: writer possibly Muzio Attendolo Sforza, king possibly Ladislaus. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 20 (pencil number), clear address 'Sacra Regia Maiestas, Serenissime princeps ... ante terre pedum oscula', subscription 'Scriptum Perusii(?) die penultimo mensis Martii'; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 23 (R4811). That survey's transcription is in targets/siena2023/project_attempt/.",
      "reading": [
       {
        "file": "targets/siena2023/R4808_reading.txt"
@@ -11085,8 +11029,8 @@
     },
     "R4811": {
      "decode_status": "N/A",
-     "proposed": "Partially",
-     "note": "Partial recovery from ciphertext, transcribed with CTTS then solved by GPT-6 Astra under George Lasry’s direction. Current edition retains tentative Paolo Orsini/Sforza/Tartaglia and other uncertainties. Spring 1413 is proposed from historical parallels, not entered as an established date. Two royal memoranda for Iacobo Spinelo and Francisco Gactule; 4 May is an arrival deadline, not issue date. Repeated Name6 remains unresolved. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 23 (pencil number), a full page of 54 lines of continuous cipher with the clear 'como vi dirrò' inside; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 20 (R4808). That survey's transcription is in targets/siena2023/project_attempt/.",
+     "proposed": "Decrypted",
+     "note": "Key recovered from ciphertext-only by George Lasry with CTTS and Claude (report of 17 Oct 2026: both sheets read in full); earlier filed as a partial recovery 'transcribed with CTTS then solved by GPT-6 Astra' (PR #41). Name signs tentative or open. Mid-April 1413 per the report (King Ladislaus's chancery). Two royal memoranda for Iacobo Spinelo and Francisco Gactule; 4 May is an arrival deadline, not issue date. Repeated Name6 remains unresolved. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 23 (pencil number), a full page of 54 lines of continuous cipher with the clear 'como vi dirrò' inside; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 20 (R4808). That survey's transcription is in targets/siena2023/project_attempt/.",
      "reading": [
       {
        "file": "targets/siena2023/R4811_reading.txt"
@@ -11096,6 +11040,292 @@
       "targets/siena2023/R4811_transcription.txt"
      ],
      "sent": false
+    }
+   }
+  },
+  "siena17": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena17.html",
+   "key": {
+    "file": "targets/siena17/key.md",
+    "lang": "IT",
+    "how": "George Lasry's key, recovered from the ciphertext alone with CTTS and Claude (frequency and contact analysis, isomorphs, cribs), 15-17 Oct 2026; his key figure, signs cut from the manuscript"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 17, pp. 25-27",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Italian",
+    "cipher_types": "homophonic",
+    "start_year": "1528",
+    "start_month": "8",
+    "start_day": "25",
+    "end_year": "1528",
+    "end_month": "8",
+    "end_day": "25",
+    "author": "Bartolomeo Tantucci",
+    "sender": "Bartolomeo Tantucci",
+    "receiver": "Antonio del Vescovo, rector of the cathedral of Siena"
+   },
+   "records": {
+    "R4805": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 17: Bartolomeo Tantucci to messer Antonio del Vescovo (address on P2), Sarteano(?), 25 (or 20) August 1528, not 1500-1599 generically; endorsed 'questa cifara è quella di Balìa'. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; about 85% read (his figure); the opening words of two points and one phrase uncertain.",
+     "reading": "decode_updates/decryptions/R4805.txt",
+     "sent": false
+    }
+   }
+  },
+  "siena15": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena15.html",
+   "key": {
+    "file": "targets/siena15/key.md",
+    "lang": "IT",
+    "how": "George Lasry's partial key, from crib guessing and dragging with CTTS and Claude Opus 5.5 (Oct 2026); his key figure, signs cut from the manuscript, about 30 signs still unknown"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 15, pp. 28-30",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Italian",
+    "cipher_types": "homophonic, nomenclator",
+    "start_year": "1547",
+    "start_month": "1",
+    "start_day": "4",
+    "end_year": "1547",
+    "end_month": "1",
+    "end_day": "4",
+    "author": "Mario Bandini",
+    "sender": "Mario Bandini",
+    "receiver": "the Signori of Siena",
+    "origin_city": "Innsbruck"
+   },
+   "records": {
+    "R4803": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 15: Mario Bandini, Sienese orator at the imperial court, to the Signori, Innsbruck ('Eltspruch'), 4 January 1546 Sienese style = 1547. Eleven short cipher passages on P2 and P6 (240 signs plus Latin-letter code words buf, abs, som, Za). Partially deciphered by George Lasry with CTTS and Claude Opus 5.5: 75 of 240 signs.",
+     "reading": "decode_updates/decryptions/R4803.txt",
+     "sent": false
+    }
+   }
+  },
+  "siena5": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena5.html",
+   "key": {
+    "file": "targets/siena5/key.md",
+    "lang": "IT",
+    "how": "George Lasry's key, recovered from the ciphertext alone with CTTS cryptanalysis (23 values) completed by Claude with crib dragging, 15-17 Oct 2026; pigpen-like frames, a dot shifts a frame to another block of four letters; number codes 26, 44, 67, 74 unknown"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 5?, pp. 31-32",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cipher_types": "homophonic, nomenclator"
+   },
+   "records": {
+    "R4794": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Concistoro 2308 fasc. 2, slip with a faint pencil number 5(?), wholly in cipher, 16th century (spelling, nomenclator; unverified), to 'le Signorie Vostre'. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; all letters read, four number codes (26, 44, 67, 74) unidentified.",
+     "reading": "decode_updates/decryptions/R4794.txt",
+     "sent": false
+    }
+   }
+  },
+  "siena13": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena13.html",
+   "key": {
+    "file": "targets/siena13/key.md",
+    "lang": "IT",
+    "how": "George Lasry's key, rebuilt with CTTS and Claude Fable 5.1 from the clear copy no. 16 (R4804), 17-18 Oct 2026; his key figure, signs cut from the manuscript"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), nos. 13 and 16, pp. 35-36",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Italian",
+    "cipher_types": "homophonic"
+   },
+   "records": {
+    "R4801": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 13: letter to V. S. Ill.ma on the Pope's agreements and his coming to Bologna, c. 1527-1530 (Lautrec at Modena and Reggio; unverified). Its clear copy is no. 16 (R4804). Key rebuilt from that plaintext by George Lasry with CTTS and Claude Fable 5.1, 17-18 Oct 2026; whole cipher deciphered, first word and 'sabbatte' doubtful.",
+     "reading": "decode_updates/decryptions/R4801.txt",
+     "sent": false
+    },
+    "R4804": {
+     "decode_status": "N/A",
+     "proposed": "N/A",
+     "note": "Concistoro 2308 fasc. 2 no. 16: not a cipher; the clear copy (plaintext) of no. 13, R4801, from which George Lasry rebuilt the key (17-18 Oct 2026). Same date c. 1527-1530.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
+  },
+  "siena9": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena9.html",
+   "key": {
+    "none": "George Lasry's key is published only as a figure of signs cut from the manuscript (report p. 33; docs/siena9_key.png); no sign-level key file in the repository (targets/siena9/key.md gives homophone counts only)"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 9, pp. 33-34",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Italian",
+    "cipher_types": "homophonic"
+   },
+   "records": {
+    "R4798": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 9: slip to a 'V. S.', two cipher passages inside clear Italian, deciphered at the time in a second hand below them (lines 7-8); key recovered from that decipherment by George Lasry with CTTS and Claude, 15-17 Oct 2026: 'Chastiglone questa vernata ... uno altro anno', Stella = the King of Aragon. 1440s-1450s? per the report (unverified), not 1500-1599; the final cipher group (Francesco?) doubtful.",
+     "reading": "decode_updates/decryptions/R4798.txt",
+     "sent": false
+    }
+   }
+  },
+  "siena10": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena10.html",
+   "key": {
+    "none": "no key: the cipher run is deciphered at the time letter by letter above the line; the 16 sign values it shows are in targets/siena10/transcripts/no10.txt"
+   },
+   "cite": null,
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Italian"
+   },
+   "records": {
+    "R4799": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 10: undated slip with one cipher run of 25 signs, deciphered at the time letter by letter above it: 'presura di Montepulciano' (the taking of Montepulciano), in 'Et riuscendo o no la ... in ogni modo'. Sign-by-sign alignment of the gloss attached; 1500-1599 is a placeholder.",
+     "reading": "decode_updates/decryptions/R4799.txt",
+     "sent": false,
+     "transcription": [
+      "targets/siena10/transcripts/no10.txt"
+     ]
+    }
+   }
+  },
+  "siena11": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena11.html",
+   "key": {
+    "none": "George Lasry's key is published only as a figure of signs cut from the manuscript (report p. 18; docs/siena11_key.png); no sign-level key file in the repository (targets/siena11/key.md gives homophone counts only)"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (consolidated report to Daniel Bourdeau, 17 Oct 2026), no. 11, pp. 18-19",
+   "fields": {
+    "plaintext_lang": "Italian",
+    "cleartext_lang": "Italian",
+    "cipher_types": "homophonic",
+    "start_year": "1478",
+    "start_month": "6",
+    "start_day": "13",
+    "end_year": "1478",
+    "end_month": "6",
+    "end_day": "13",
+    "author": "Donato Acciaiuoli",
+    "sender": "Donato Acciaiuoli, Florentine orator in Rome",
+    "receiver": "Lorenzo de' Medici"
+   },
+   "records": {
+    "R4800": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (dated in the clear), a Florentine letter in the Sienese file, not 1500-1599. Two cipher blocks (393 symbols); key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026, about 90% certain; one sign lost in a hole, six doubtful words.",
+     "reading": "decode_updates/decryptions/R4800.txt",
+     "sent": false
+    }
+   }
+  },
+  "siena7": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena7.html",
+   "key": {
+    "none": "no key known: the Milan embassy key of 1454 (R4750) and R4753, R4754, R4756, R4757, R4762 contradict the letter's own interlinear gloss, which gives nine values"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (report to Daniel Bourdeau, 17 Oct 2026), contents p. 3: unsolved",
+   "fields": {
+    "cleartext_lang": "Italian"
+   },
+   "records": {
+    "R4796": {
+     "decode_status": "N/A",
+     "proposed": "Non-decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 7: despatch of a Sienese orator at Milan (names Lionardo Benvoglienti and the Duke of Milan) to the Officiales Balie, 1450s, not 1500-1599; an 11-line cipher block (363 signs as transcribed here) with faint interlinear letter glosses over two lines (7=l, q=a, 6=n, +=o, 2=e, x=r ...). Attempted, not deciphered: filed keys R4750, R4753, R4754, R4756, R4757, R4762 fail the gloss; annealing with the gloss values fixed does not converge. Transcription attached.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/siena7/transcripts/no07.txt"
+     ]
+    }
+   }
+  },
+  "siena8": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena8.html",
+   "key": {
+    "file": "targets/siena8/key.json",
+    "lang": "IT",
+    "how": "rebuilt here by aligning the slip sign by sign with its contemporary decipherment on the same sheet, 18 Oct 2026: simple substitution, 21 letter signs (two for a; one sign for s/ss, one for u/v/b) and two name signs (duca di Milano, Viniziani)"
+   },
+   "cite": null,
+   "fields": {
+    "cleartext_lang": "Italian",
+    "plaintext_lang": "Italian"
+   },
+   "records": {
+    "R4797": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 8, c. 1440-41 (not 1500-1599): a ciphered slip on the league of the Duke of Milan and the Marquis of Ferrara against Venice and the Duke's offer of Bianca Maria to Leonello d'Este, bound below a clear memorandum. The memorandum's paragraphs 5-7 ('Nel polizolo dicto segue ...') are the contemporary decipherment of the slip; aligned sign by sign, all 166 cipher signs read. Its paragraphs 1-4 decipher a covering letter not in the record.",
+     "reading": "decode_updates/decryptions/R4797.txt",
+     "sent": false,
+     "transcription": [
+      "targets/siena8/transcripts/no08.txt"
+     ]
+    }
+   }
+  },
+  "siena19": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena19.html",
+   "key": {
+    "none": "no key known; none of the filed keys of Concistoro 2308 fasc. 1 fits"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (report to Daniel Bourdeau, 17 Oct 2026), contents p. 2: 9 March, 1440s, unsolved",
+   "fields": {
+    "cleartext_lang": "Italian"
+   },
+   "records": {
+    "R4807": {
+     "decode_status": "N/A",
+     "proposed": "Non-decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 19: Sienese envoys to the Magnifici domini, waiting on the 'S. Capitano', written 9 March, 1440s per George Lasry (not 1500-1599); clear Italian, then four lines of cipher (118 signs as transcribed here) with clear phrases between the runs. Attempted, not deciphered: too short without a key. Transcription attached.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/siena19/transcripts/no19.txt"
+     ]
+    }
+   }
+  },
+  "siena21": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/siena21.html",
+   "key": {
+    "none": "no key known; none of the filed keys of Concistoro 2308 fasc. 1 fits"
+   },
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2' (report to Daniel Bourdeau, 17 Oct 2026), contents p. 2: fifteenth century, unsolved",
+   "fields": {
+    "cleartext_lang": "Italian"
+   },
+   "records": {
+    "R4809": {
+     "decode_status": "N/A",
+     "proposed": "Non-decrypted",
+     "note": "Concistoro 2308 fasc. 2 no. 21: informal letter 'Karissimo come padre', a day of August(?), fifteenth century per George Lasry (not 1500-1599); two lines of cipher in crosses, barred uprights and squares and a cipher signature before clear 'vostro' (107 signs as transcribed here). Attempted, not deciphered: too short without a key. Transcription attached.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/siena21/transcripts/no21.txt"
+     ]
     }
    }
   }

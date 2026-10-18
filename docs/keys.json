@@ -1,10 +1,17 @@
 {
  "keys": [
  {"id": "k-sweden4306-lasry", "label": "R4306: alphabetical numerical key", "kind": "scholar's key", "by": "George Lasry; Claude Opus 5.5", "year": null, "found": 2026, "note": "Transcribed with CTTS, then solved with Opus 5.5. Alphabet 30–52, nulls and four unresolved code identities; year of use unproved.", "image": {"src": "sweden4306_key.png", "credit": "George Lasry; manuscript glyphs from Riksarkivet, Chifferklaver låda II:133, via DECODE R4306", "caption": "Current working key; unobserved alphabet values and open codes are marked.", "page": "sweden4306"}},
- {"id": "k-siena2023-lasry", "label": "Siena nos. 20 and 23: Lasry working key", "kind": "scholar's key", "by": "George Lasry; GPT-6 Astra", "year": null, "found": 2026, "note": "4,254 cipher occurrences, 59 observed classes. Transcribed with CTTS, then solved by GPT-6 Astra. Spring 1413 proposed; historical names remain tentative. Later Lucca comparison supports Sforza? but is a different key.", "image": {"src": "siena2023_key.png", "credit": "George Lasry; glyphs from ASSi Concistoro 2308 fasc. 2 nos. 20 and 23 via DECODE R4808/R4811", "caption": "Current working key and CTTS glyphs, 17 October 2026; unresolved names and provisional nulls marked.", "page": "siena2023"}},
+ {"id": "k-siena12-lasry", "label": "Siena no. 12: Lasry's key (Neapolitan court cipher, 1413)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude", "year": 1413, "found": 2026, "note": "Homophonic substitution on 46 graphic signs with word dividers, a crown sign for Re and a few name signs; recovered from the ciphertext alone by Claude's simulated annealing, then refined (report of 17 Oct 2026). Not the key of nos. 20 and 23.", "image": {"src": "siena12_key.jpg", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 12", "caption": "The key of no. 12: homophones under each letter with their counts, the nomenclature and the nulls", "page": "siena12"}},
+ {"id": "k-siena2023-lasry", "label": "Siena nos. 20 and 23: Lasry's key (Neapolitan royal key, 1413)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude", "year": 1413, "found": 2026, "note": "60 distinct signs: homophonic, single signs for ci, et, ff, qu, re, rr, ss, eleven nulls and seven name signs (report of 17 Oct 2026). Key recovered by Claude via crib testing and dragging, refined in CTTS; PR #41 had credited GPT-6 Astra. 4,254 cipher occurrences, 59 observed classes in the PR #41 snapshot. Later Lucca comparison supports Sforza? but is a different key.", "image": {"src": "siena2023_key.png", "credit": "George Lasry; glyphs from ASSi Concistoro 2308 fasc. 2 nos. 20 and 23 via DECODE R4808/R4811", "caption": "Current working key and CTTS glyphs, 17 October 2026; unresolved names and provisional nulls marked.", "page": "siena2023"}},
+ {"id": "k-siena17-lasry", "label": "Siena no. 17: Lasry's key (cifra di Balia, 1528)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude", "year": 1528, "found": 2026, "note": "Homophonic substitution, 41 signs, no word division, up to five signs per vowel, double letters with two different signs, a che sign; recovered from the ciphertext alone by Claude (frequency and contact analysis, isomorphs, cribs), report of 17 Oct 2026. About 85% read. Not the key of nos. 15 or 5? (compared sign by sign).", "image": {"src": "siena17_key.jpg", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 17", "caption": "The key of no. 17: homophones under each letter with their counts, the che sign and four unknown signs", "page": "siena17"}},
+ {"id": "k-siena15-lasry", "label": "Siena no. 15: Lasry's partial key (Bandini, 1547)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude Opus 5.5", "year": 1547, "found": 2026, "note": "Greek-like homophonic alphabet, about 65 signs, Latin-letter code words buf, abs, som, Za; partial, from crib guessing and dragging (report of 17 Oct 2026): 75 of 240 signs. Not the key of nos. 17 or 5?.", "image": {"src": "siena15_key.jpg", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 15", "caption": "The partial key of no. 15: homophones, the code words and some 30 signs still unknown", "page": "siena15"}},
+ {"id": "k-siena5-lasry", "label": "Siena no. 5?: Lasry's key (pigpen-like grid, 16th c.)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude", "year": 1550, "found": 2026, "note": "Frames in blocks of four letters, a dot shifting a frame to another block, extra free homophones and number codes 26, 44, 67, 74; 23 values from CTTS cryptanalysis, completed by Claude with crib dragging (report of 17 Oct 2026). Year approximate (16th century).", "image": {"src": "siena5_key.jpg", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 5?", "caption": "The key of the artillery slip: frames and dotted frames under their letters, and the number codes", "page": "siena5"}},
+ {"id": "k-siena11-lasry", "label": "Siena no. 11: Lasry's key (Florentine cipher, Acciaiuoli 1478)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude", "year": 1478, "found": 2026, "note": "Homophonic substitution, 57 signs: three to five signs per vowel, one to three per consonant, a few nulls, the numerals 80 and 7 as dotted numbers, no nomenclator; recovered from the ciphertext alone by Claude (crib analysis), report of 17 Oct 2026. About 90% certain.", "image": {"src": "siena11_key.png", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 11", "caption": "The key of no. 11: homophones under each letter with their counts, the nulls and one unknown sign", "page": "siena11"}},
+ {"id": "k-siena9-lasry", "label": "Siena no. 9: Lasry's key (Castiglione slip, 1440s-50s?)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude", "year": 1448, "found": 2026, "note": "Homophonic substitution, 33 signs (five for a), separators, a probable null and the clear code words Stella (the King of Aragon) and nichil; recovered by Claude from the decipherment written below the cipher in a second hand (report of 17 Oct 2026). Year approximate and unverified.", "image": {"src": "siena9_key.png", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 9", "caption": "The key of no. 9: homophones under each letter, the code words and the nulls", "page": "siena9"}},
+ {"id": "k-siena13-lasry", "label": "Siena no. 13: Lasry's key (from the clear copy no. 16, c. 1527-30)", "kind": "scholar's key", "by": "George Lasry with CTTS and Claude Fable 5.1", "year": 1528, "found": 2026, "note": "Homophonic, 37 signs, many numeral-shaped, ll/gg/ss/cc signs and one null; rebuilt from the plaintext copy no. 16 (R4804) filed in the same fascicle (report of 17 Oct 2026). Year approximate.", "image": {"src": "siena13_key.jpg", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 13", "caption": "The key of no. 13: homophones under each letter, the doubled-letter signs and the null", "page": "siena13"}},
   {"id": "k-guiche1551", "label": "La Guiche's Rome cipher of 1551, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1551, "note": "Simple substitution of 22 invented signs for the 22-letter alphabet, a plain cross for b, ff+c for ss and one four-dot code sign; recovered from the ciphertext alone by swap annealing (fr-1530-despatches 5-gram). targets/guiche1551/NOTES.md."},
   {"id": "k-ranzo-lasry-2026", "label": "Ranzo code, reconstructed working key (871 observed mappings)", "kind": "scholar's key", "by": "George Lasry with Claude Opus 5.5 and GPT-6 Astra", "year": 1528, "found": 2026, "note": "Based on Norbert Biermann’s five-letter transcription; Codex consolidation of 6 October 2026. Tentative mappings retain ?, and assignment coverage is not plaintext accuracy. Independent contemporaneous reconstruction alongside Rosson.", "image": {"src": "ranzo_lasry_key/ranzo_lasry_key_preview.png", "credit": "George Lasry, from Norbert Biermann’s transcription of the Ranzo correspondence, with Claude Opus 5.5 and GPT-6 Astra", "caption": "First of four pages of the reconstructed key; full table in the Ranzo contribution.", "page": "ranzo1528"}},
-  {"id": "k-r4755", "label": "Cifra cum Christofano, Siena (DECODE R4755, Concistoro 2308 fasc. 1)", "kind": "DECODE key record", "by": "Sienese chancery", "year": 1431, "note": "Homophonic alphabet (36 signs), 7 nulls, 18 word signs. Recovered ciphertext-only by George Lasry with Claude and ChatGPT Astra, then matched to this sheet; deciphers Concistoro 2308 nos. 6 and 24. Year approximate (1431-38).", "image": {"src": "siena1431_key.jpg", "credit": "Archivio di Stato di Siena, Concistoro 2308 fasc. 1, via DECODE R4755", "caption": "The alphabet of R4755: four homophones under a, e, i, o, u; the nulls below", "page": "siena1431"}},
+  {"id": "k-r4755", "label": "Cifra cum Christofano, Siena (DECODE R4755, Concistoro 2308 fasc. 1)", "kind": "DECODE key record", "by": "Sienese chancery", "year": 1431, "note": "Homophonic alphabet (36 signs), 7 nulls, 18 word signs. Recovered ciphertext-only by George Lasry with CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra, then found to match this sheet; deciphers Concistoro 2308 nos. 6 and 24. Year approximate (1431-38).", "image": {"src": "siena1431_key.jpg", "credit": "Archivio di Stato di Siena, Concistoro 2308 fasc. 1, via DECODE R4755", "caption": "The alphabet of R4755: four homophones under a, e, i, o, u; the nulls below", "page": "siena1431"}},
   {"id": "k-r8727-f106", "label": "Add MS 72438 f. 106 lower graphic alphabet (DECODE R8727)", "kind": "DECODE key record", "by": "Contemporary royalist key sheet", "year": 1645, "note": "Filed among the keys taken in Digby's coach (Oct 1645); its lower alphabet is the key of f. 107 (R8728). Year approximate.", "image": {"src": "rupert_f106.jpg", "credit": "British Library, Add MS 72438 f. 106r, via DECODE R8727", "caption": "The two graphic alphabets of f. 106; the lower one deciphers f. 107", "page": "rupert.html#f107"}},
   {"id": "k-r8655-118", "label": "Key 118, Ormond and Prince Rupert (DECODE R8655, Add MS 72438 ff. 59-60)", "kind": "DECODE key record", "by": "Royalist (Digby's coach)", "year": 1645, "note": "Letters 1-80, nulls 81-90, one-part words 91-434, letter+digit small words."},
   {"id": "k-r8687-123", "label": "Key 123, the King with the Queen (DECODE R8687, Add MS 72438 ff. 67-68)", "kind": "DECODE key record", "by": "Royalist (Digby's coach)", "year": 1645, "note": "Letters 1-79, words to 575; R8723 is a decipherer's worksheet of it."},
@@ -1251,12 +1258,22 @@
    "note": "Simple substitution on 22 stroke signs, recovered from the slip's own ciphertext; year unknown (placeholder). None of the 43 filed keys of fasc. 1 fits."
   },
   {
-   "id": "k-siena18",
-   "label": "Siena, key of Concistoro 2308 no. 18 (treaty articles)",
+   "id": "k-siena8",
+   "label": "Siena, key of Concistoro 2308 no. 8 (c. 1440-41)",
    "kind": "rebuilt here",
    "by": "cyphersolver",
-   "year": 1515,
-   "note": "Latin simple substitution on 30 signs with nulls, recovered from the articles' own ciphertext; 1510s-20s, year not fixed."
+   "year": 1440,
+   "note": "Simple substitution, 21 letter signs (two for a; one sign for s/ss, one for u/v/b) and two name signs (duca di Milano, Viniziani), rebuilt on 18 Oct 2026 by aligning the slip with its contemporary decipherment on the same sheet. Not the key of nos. 7, 19 or 21; not yet compared sign by sign with the c. 1440 filed keys R4748 and R4749."
+  },
+  {
+   "id": "k-siena18",
+   "label": "Siena no. 18, the imperial chancery cipher of 1496 (Maximilian I's League articles)",
+   "kind": "rebuilt here",
+   "by": "cyphersolver; independently George Lasry with CTTS and Claude",
+   "year": 1496,
+   "found": 2026,
+   "note": "Homophonic substitution, 60 signs, doubled-letter signs (rr, pp, ss, ll, cc, tt), dotted nulls, code capitals B., X., M.X. Recovered from the articles' own ciphertext twice: here on 24 Sept 2026 (30 sign names, look-alikes merged) and independently by George Lasry from cribs in the clear Latin (report of 17 Oct 2026); the two agree on 35 of his 38 letter signs. Pisa, November 1496 (his dating).",
+   "image": {"src": "siena18_key.png", "credit": "George Lasry, Concistoro 2308 fasc. 2 report (17 Oct 2026), signs cut from ASSi Concistoro 2308 fasc. 2 no. 18", "caption": "George Lasry's key to no. 18: homophones under each letter, the doubled-letter signs, code capitals and nulls", "page": "siena18"}
   },
   {
    "id": "k-siena14",
@@ -2157,7 +2174,14 @@
  ],
  "links": [
  {"key": "k-sweden4306-lasry", "target": "sweden4306", "how": "partial", "note": "Contributed Opus 5.5 key underlies the edited Dutch reading. Five manuscript lines reapplied literally; four code identities remain open."},
- {"key": "k-siena2023-lasry", "target": "siena2023", "how": "partial", "note": "Current key underlies the edited readings. Five physical lines (322 signs, 328 letters) match exactly after declared normalization; full editions not mechanically validated."},
+ {"key": "k-siena17-lasry", "target": "siena17", "how": "rebuilt from", "note": "ciphertext-only, by George Lasry with CTTS and Claude (frequency and contact analysis, isomorphs, cribs); about 85% read"},
+ {"key": "k-siena15-lasry", "target": "siena15", "how": "partial", "note": "ciphertext-only crib dragging by George Lasry with CTTS and Claude Opus 5.5; 75 of 240 signs"},
+ {"key": "k-siena5-lasry", "target": "siena5", "how": "rebuilt from", "note": "ciphertext-only, CTTS cryptanalysis completed by Claude with crib dragging; four number codes open"},
+ {"key": "k-siena13-lasry", "target": "siena13", "how": "rebuilt from", "note": "from the clear copy no. 16 (R4804), by George Lasry with CTTS and Claude Fable 5.1"},
+ {"key": "k-siena11-lasry", "target": "siena11", "how": "rebuilt from", "note": "ciphertext-only, by George Lasry with CTTS and Claude (crib analysis); about 90% certain"},
+ {"key": "k-siena9-lasry", "target": "siena9", "how": "rebuilt from", "note": "from the second hand's decipherment on the slip, by George Lasry with CTTS and Claude"},
+ {"key": "k-siena12-lasry", "target": "siena12", "how": "rebuilt from","note": "ciphertext-only, by George Lasry with CTTS and Claude (Claude's simulated annealing on 865 symbols)"},
+ {"key": "k-siena2023-lasry", "target": "siena2023", "how": "rebuilt from", "note": "ciphertext-only, by George Lasry with CTTS and Claude (crib testing and dragging); both sheets read in full per his report. Five physical lines (322 signs, 328 letters) match exactly in the PR #41 check."},
   {"key": "k-guiche1551", "target": "guiche1551", "how": "rebuilt from", "note": "429 of 431 symbols of fr. 3138 f. 60v have a value; the struck-through opening reads in fragments"},
   {"key": "k-wainut-cabinet1751", "target": "michell1751", "how": "rebuilt from", "note": "Rebuilt from six sibling letters and their printed concepts, then extended on R1957: 381 of 548 groups have a value; the text itself is the 1882 print."},
   {"key": "k-michell-envoy1751", "target": "r1955", "how": "partial", "note": "Matched to the ministerial rescript by WAINUT: 95 of 360 groups (26.4%) decoded, fragments only."},
@@ -3180,6 +3204,12 @@
    "note": "ciphertext-only"
   },
   {
+   "key": "k-siena8",
+   "target": "siena8",
+   "how": "rebuilt from",
+   "note": "aligned with the contemporary decipherment on the same sheet; all 166 cipher signs"
+  },
+  {
    "key": "k-siena18",
    "target": "siena18",
    "how": "rebuilt from",
@@ -3407,6 +3437,15 @@
   {"source": "s-cyphersolver", "key": "k-laigue1649"},
   {"source": "s-lasry", "key": "k-lasry-conti1649"},
   {"source": "s-lasry", "key": "k-r4755"},
+  {"source": "s-lasry", "key": "k-siena12-lasry"},
+  {"source": "s-lasry", "key": "k-siena2023-lasry"},
+  {"source": "s-lasry", "key": "k-siena17-lasry"},
+  {"source": "s-lasry", "key": "k-siena15-lasry"},
+  {"source": "s-lasry", "key": "k-siena5-lasry"},
+  {"source": "s-lasry", "key": "k-siena13-lasry"},
+  {"source": "s-lasry", "key": "k-siena11-lasry"},
+  {"source": "s-lasry", "key": "k-siena9-lasry"},
+  {"source": "s-lasry", "key": "k-siena18"},
   {"source": "s-cyphersolver", "key": "k-brussels1635"},
   {"source": "s-cyphersolver", "key": "k-vienna1640"},
   {"source": "s-cyphersolver", "key": "k-stuttgart1634"},
@@ -3788,6 +3827,10 @@
   },
   {
    "source": "s-cyphersolver",
+   "key": "k-siena8"
+  },
+  {
+   "source": "s-cyphersolver",
    "key": "k-siena18"
   },
   {
@@ -3895,11 +3938,14 @@
   "r9424":"not solved: no key found; the volume's 1582-83 alphabets R9420-R9422 tried and do not fit",
   "r9319": "not solved: a dot grille whose cover letters (ff. 115-118) are not imaged; no key involved",
   "vich1515":"not solved: the key of N.73 is not identified and no key fits it",
+  "siena10": "read from the contemporary decipherment written over the cipher run; no key beyond the 16 values the gloss shows, none rebuilt or applied",
   "malatesta1428": "not solved: the system of Pandolfo Malatesta's runs is not identified and no register or sibling key fits",
   "dubellay1528": "read from Bourrilly and de Vaissière's printed text (1905); their key is not printed and Lasry's (2022) was not applied here",
   "federico1497": "read from Ivan Parisi's printed decipherment (2020); Escrivà's key (Parisi 2004) was not applied here",
   "esp318no93": "not solved: no key identified for nos. 93-94; Escrivà no. 1 and the Cifra general excluded, the Gran cifra not obtained",
-  "siena1421": "not solved: the unread pieces of the bundle; no filed key fits and none was rebuilt (the recovered keys are on siena25, siena18, siena14, borghesi1456, siena2023)",
+  "siena7": "not solved: no filed key fits (R4750 and five others contradict the letter's own gloss) and none was rebuilt; the gloss gives nine values",
+  "siena19": "not solved: no filed key fits and none was rebuilt; too short without one",
+  "siena21": "not solved: no filed key fits and none was rebuilt; too short without one",
   "segur1583":"not solved: no key fits f. 143 and none was rebuilt (58 tokens, too short)",
   "rohan1636": "not solved: the ciphertext is not in hand and no key was rebuilt",
   "emery1636": "not solved: the letters have not been seen; no key known",
@@ -4498,13 +4544,43 @@
   },
   {
    "key": "k-siena-fasc1",
-   "target": "siena1421",
-   "note": "Filed keys of fasc. 1 (R4746–R4789) compared; R4750, R4753-57, R4762, R4760, R4768, R4778, R4764 tested: no fit (R4755 was indexed but not tried on nos. 6/24; it fits them: see siena1431)"
+   "target": "siena7",
+   "note": "Filed keys of fasc. 1 (R4746–R4789) compared; the Milan embassy key R4750 and R4753, R4754, R4756, R4757, R4762 tested sign by sign against the letter's gloss: no fit"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena19",
+   "note": "Filed keys of fasc. 1 (R4746–R4789) compared by eye with no. 19: no fit"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena21",
+   "note": "Filed keys of fasc. 1 (R4746–R4789) compared by eye with no. 21: no fit"
+  },
+  {
+   "key": "k-siena8",
+   "target": "siena7",
+   "note": "the no. 8 key compared: different (7 = d, + = c, 2 = a there; the no. 7 gloss has 7 = l, + = o, 2 = e)"
   },
   {
    "key": "k-siena-fasc1",
    "target": "siena25",
    "note": "Filed keys of fasc. 1 (R4746–R4789) compared by eye with no. 25: no fit"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena17",
+   "note": "Filed keys R4760, R4768, R4778 compared with no. 17 in the 24 Sept survey: no fit; the 'cifra di Balia' is not identified among the filed keys"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena15",
+   "note": "Filed key R4764 (Buoninsegni, orator to His Majesty) compared with no. 15 in the 24 Sept survey: inconclusive"
+  },
+  {
+   "key": "k-siena-fasc1",
+   "target": "siena5",
+   "note": "No key in Concistoro 2308 reads the slip (Lasry's report); R4776 and R4786 share its pigpen style only"
   },
   {
    "key": "k-siena-fasc1",

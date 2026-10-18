@@ -8,7 +8,7 @@ the other letters with recovered keys are their own entries, each a different ci
 ([`targets/siena14/`](../siena14/NOTES.md)), no. 18 ([`targets/siena18/`](../siena18/NOTES.md)), no. 4
 ([`targets/borghesi1456/`](../borghesi1456/NOTES.md)), nos. 6 and 24 (George Lasry's
 [`targets/siena1431/`](../siena1431/NOTES.md)). The unread pieces, the key index of fasc. 1 and the access notes stay in
-[`targets/siena1421/`](../siena1421/NOTES.md), with the shared solvers (`homsolve2.py` etc.). The work below was done
+[`targets/siena1421/`, now the collection index `research/siena2308/`](../../research/siena2308/README.md), with the shared solvers (`homsolve2.py` etc.). The work below was done
 on 24 and 30 Sept 2026 in the siena1421 sessions and is carried over from its NOTES.
 
 Work date: 2026-09-24. From catalogue 336 (now narrowed to the unread pieces).

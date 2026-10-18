@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "fr2988f2",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "BnF fr. 2988 ff. 2r-v (signed Hieronimo Ranzo; f. 2v marked 'dup.a'); duplicate fr. 3019 no. 27 ff. 73r-74r",
    "date": "27 Mar 1528 (Madrid, from the fr. 3019 duplicate as Rosson reads it)",
    "year": 1528,
@@ -17,8 +17,8 @@
     "location": [
      "unrelated source"
     ],
-    "source": "George Lasry's contributed decipherment (lasry/decode.txt, with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 1 of his five: 764 of 790 non-null occurrences given a proposed value, tentative ones included (assignment coverage, not plaintext accuracy).",
-    "partial": true
+    "source": "George Lasry's decipherment (lasry/decode.txt; with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 1 of his five, with Paolo Rosson's independent key (6 Oct 2026) as the second key. 787 of 818 (96.2%) read by the bar measure; Lasry's key alone values 792 of 818 with nulls (96.8%, tentative included), 697 (85.2%) counting tentative values unread; where both keys give a value they agree on 716 of 758 (94.5%). Measured 18 Oct 2026 with measure_lasry.py on Lasry's lasry/alignment.tsv (Biermann's transcription), Lasry's key first and Rosson's second: a token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that Rosson's independent key matches, or a sure/probable value of Rosson's where Lasry has none.",
+    "partial": false
    },
    "length": {
     "tokens": 818,
@@ -36,8 +36,8 @@
   },
   {
    "id": "r1894",
-   "read": "read in part",
-   "shelfmark": "BnF fr. 2988 ff. 9r-10v (views 17-20; DECODE R1894), signed Hieronimo Ranzo, Madrid, March 1528; copy fr. 20506 f. 136 (DECODE R4450)",
+   "read": "read",
+   "shelfmark": "BnF fr. 2988 ff. 9r-10v (views 17-20; DECODE R1894), signed Hieronimo Ranzo, Madrid, March 1528; copy fr. 20506 ff. 136-138 (DECODE R4450, document fr20506)",
    "date": "March 1528",
    "year": 1528,
    "country": "Spain (Charles V)",
@@ -49,7 +49,8 @@
     "location": [
      "unrelated source"
     ],
-    "source": "Rosson's key (see no20) applied to this transcription: 1,776 groups parsed; 1,727 (97.2%) valued sure, probable or null, 25 guesses, 24 without value; 1,654 (93.1%) in runs of six or more sure/probable values. The letter reads as Italian instructions about copying a cipher and addressing letters through Hieronimo Ranzo. Measured with measure_rosson.py."
+    "source": "George Lasry's decipherment (lasry/decode.txt; with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 2 of his five, with Paolo Rosson's independent key (6 Oct 2026) as the second key. 1,728 of 1,781 (97.0%) read by the bar measure; Lasry's key alone values 1,738 of 1,781 with nulls (97.6%, tentative included), 1,506 (84.6%) counting tentative values unread; where both keys give a value they agree on 1,622 of 1,697 (95.6%). Measured 18 Oct 2026 with measure_lasry.py on Lasry's lasry/alignment.tsv (Biermann's transcription), Lasry's key first and Rosson's second: a token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that Rosson's independent key matches, or a sure/probable value of Rosson's where Lasry has none.",
+    "partial": false
    },
    "length": {
     "tokens": 1789,
@@ -63,6 +64,37 @@
     "source": "Full-resolution Gallica scans of fr. 2988 ff. 9r-10v (views 17-20), transcribed by subagents (n20/ranzo_c017-c020.txt)",
     "image_quality": "unknown",
     "notes": "Sum of --measure over ranzo_c017 to c020 (499+510+514+266 tokens, counting '/' separators and doubt marks). Rosson's check of the images corrected some g/t tokens (see no20)."
+   }
+  },
+  {
+   "id": "fr20506",
+   "read": "read",
+   "shelfmark": "BnF fr. 20506 ff. 136-138 (Gallica btv1b525047581, view 275; DECODE R4450), parallel copy of letter 2, Ranzo's fr. 2988 ff. 9r-10v (R1894)",
+   "date": "March 1528 (date of the original, fr. 2988 ff. 9-10)",
+   "year": 1528,
+   "country": "Spain (Charles V)",
+   "route": "Madrid -> Ranzo's son",
+   "language": "Italian",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "unrelated source"
+    ],
+    "source": "Read through its original: George Lasry names fr. 20506 ff. 136-138 as the parallel copy of his letter 2 (lasry/transcription.json, counts.json, source.json) and on 16 Oct 2026 wrote that 'the Ranzo ciphers are solved Fr 2988 and Fr 20506 - my key or Rosson's key'. Letter 2's counts apply: 1,728 of 1,781 (97.0%) read by the bar measure (see r1894). Measured 18 Oct 2026 with measure_lasry.py on Lasry's lasry/alignment.tsv (Biermann's transcription), Lasry's key first and Rosson's second: a token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that Rosson's independent key matches, or a sure/probable value of Rosson's where Lasry has none.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1781,
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": true,
+    "file": "lasry/transcription.json"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Norbert Biermann, Ranzo transcript.docx (2021), supplied by George Lasry: letter 2, whose line layout is that of fr. 2988 ff. 9-10; fr. 20506 is listed as its parallel copy",
+    "image_quality": "unknown",
+    "notes": "No separate transcription of fr. 20506 exists here or in Lasry's package; token count is letter 2's (lasry/counts.json: 1,781 occurrences, 35 presumed nulls, 1,703 valued, 43 unassigned). The copy's own variants are not checked against the Gallica images. DECODE R4450 was described here as a copy of f. 9 only; Lasry's source list gives ff. 136-138 for the whole letter."
    }
   },
   {
@@ -80,7 +112,8 @@
     "location": [
      "unrelated source"
     ],
-    "source": "Paolo Rosson, with Claude, 'The Venetian? cipher with superscript digits of 1528' (https://pangoleen.github.io/cipher-readings/centurione-1528.html, listed 6 Oct 2026; Cryptoole IT1520-1 marks it solved, Rosson and Lasry): key table of 779 values, found 14 Oct 2026. Applied to this project's transcription of f. 44r-46v it values 1,230 of 1,311 parsed groups (93.8%: sure, probable or null), 37 are guesses and 44 have no value; 1,046 (79.8%) lie in runs of six or more sure/probable values. Their own estimate: 86% of the cipher text in connected stretches, about 85% of tokens right, f. 46v weakest (66%). Not checked by a palaeographer."
+    "source": "George Lasry's decipherment (lasry/decode.txt; with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 3 of his five, with Paolo Rosson's independent key (6 Oct 2026) as the second key. 1,240 of 1,314 (94.4%) read by the bar measure, below the 95% bar; Lasry's key alone values 1,250 with nulls (95.1%, tentative included), 1,072 (81.6%) counting tentative values unread; the keys agree on 1,091 of 1,156 (94.4%) tokens both value. Measured 18 Oct 2026 with measure_lasry.py on Lasry's lasry/alignment.tsv (Biermann's transcription), Lasry's key first and Rosson's second: a token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that Rosson's independent key matches, or a sure/probable value of Rosson's where Lasry has none.",
+    "partial": true
    },
    "length": {
     "tokens": 1321,
@@ -110,7 +143,7 @@
     "location": [
      "unrelated source"
     ],
-    "source": "George Lasry's contributed decipherment (lasry/decode.txt, with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 4 of his five: 1440 of 1530 non-null occurrences given a proposed value, tentative ones included (assignment coverage, not plaintext accuracy).",
+    "source": "George Lasry's decipherment (lasry/decode.txt; with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 4 of his five, with Paolo Rosson's independent key (6 Oct 2026) as the second key. 1,368 of 1,559 (87.7%) read by the bar measure; Lasry's key alone values 1,469 with nulls (94.2%, tentative included), 1,261 (80.9%) counting tentative values unread. Rosson never saw this letter; his key still values 84.3% of it and agrees with Lasry's on 1,255 of 1,303 (96.3%) tokens both value. Measured 18 Oct 2026 with measure_lasry.py on Lasry's lasry/alignment.tsv (Biermann's transcription), Lasry's key first and Rosson's second: a token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that Rosson's independent key matches, or a sure/probable value of Rosson's where Lasry has none.",
     "partial": true
    },
    "length": {
@@ -141,7 +174,7 @@
     "location": [
      "unrelated source"
     ],
-    "source": "George Lasry's contributed decipherment (lasry/decode.txt, with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 5 of his five: 875 of 906 non-null occurrences given a proposed value, tentative ones included (assignment coverage, not plaintext accuracy).",
+    "source": "George Lasry's decipherment (lasry/decode.txt; with Claude Opus 5.5 and GPT-6 Astra, consolidation of 6 Oct 2026), letter 5 of his five, with Paolo Rosson's independent key (6 Oct 2026) as the second key. 851 of 956 (89.0%) read by the bar measure; Lasry's key alone values 925 with nulls (96.8%, tentative included), 797 (83.4%) counting tentative values unread. Rosson never saw this letter; his key values 82.9% of it and agrees with Lasry's on 727 of 760 (95.7%) tokens both value, so few of Lasry's tentative values can be confirmed. Measured 18 Oct 2026 with measure_lasry.py on Lasry's lasry/alignment.tsv (Biermann's transcription), Lasry's key first and Rosson's second: a token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that Rosson's independent key matches, or a sure/probable value of Rosson's where Lasry has none.",
     "partial": true
    },
    "length": {
@@ -196,7 +229,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "online",
-   "where": "Rosson (with Claude) 6 Oct 2026, centurione-1528 page: a key for Ranzo's code (no. 20 and fr. 2988 ff. 9-10), built on this project's transcription, found 14 Oct 2026 by a Cryptoole alert, after this project had closed no. 20 as unread. George Lasry reports independent contemporaneous recovery with Claude Opus 5.5 and GPT-6 Astra, based on Norbert Biermann's transcription (contributed 14 Oct 2026). Cryptiana ranzo.htm (6 Oct 2026) records both.",
+   "where": "Rosson (with Claude) 6 Oct 2026, centurione-1528 page: a key for Ranzo's code (no. 20 and fr. 2988 ff. 9-10), built on this project's transcription, found 14 Oct 2026 by a Cryptoole alert, after this project had closed no. 20 as unread. George Lasry reports independent contemporaneous recovery with Claude Opus 5.5 and GPT-6 Astra, based on Norbert Biermann's transcription (contributed 14 Oct 2026). Cryptiana ranzo.htm (6 Oct 2026) records both. Lasry, 16 Oct 2026, by email to Daniel Bourdeau: 'the Ranzo ciphers are solved Fr 2988 and Fr 20506 - my key or Rosson's key'.",
    "found": "during attempt",
    "used": true
   },
@@ -218,7 +251,7 @@
   ],
   "sessions": 3,
   "first_date": "2026-09-18",
-  "last_date": "2026-09-22"
+  "last_date": "2026-10-18"
  },
  "solution": [
   {
@@ -329,31 +362,61 @@
    "kind": "verification",
    "what": "profile.documents extended to the five letters of George Lasry's package (fr. 2988 f. 2, fr. 2988 ff. 9-10 = R1894, fr. 3022 no. 20, fr. 4050 ff. 79-81, fr. 6638 pp. 67-70), counts from his counts.json; fr. 4050 and fr. 6638 not seen here.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "literature search",
+   "what": "George Lasry, by email: 'the Ranzo ciphers are solved Fr 2988 and Fr 20506 - my key or Rosson's key.' Fr. 20506 ff. 136-138 is the parallel copy of his letter 2 (fr. 2988 ff. 9-10, R1894; DECODE R4450), not a separately transcribed text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "measure_lasry.py: Rosson's key (with his g>214=s, t>196=r rule) applied to Lasry's Biermann transcription and compared token by token with Lasry's key. Where both value a token they agree on 94.4-96.3% per letter (spelling variants such as lettere/littere counted as agreement), including letters 4 and 5, which Rosson never saw. Bar measure per letter: fr. 2988 f. 2 96.2%, ff. 9-10 97.0% (read, with the copy fr. 20506), no. 20 94.4%, fr. 4050 87.7%, fr. 6638 89.0% (read in part); 5,974 of 6,428 overall (92.9%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "Outcome method changed from 'read from existing decipherment' to 'key recovered from ciphertext-only': Lasry's key was rebuilt from the ciphertext with cribs and structure (his NOTES and PR #35), and the addition sheet he spot-checked is another code; Rosson's key is a second, independent ciphertext-only recovery.",
+   "result": "worked"
+  },
+  {"date": "2026-10-18", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 6174 tokens, 936 types, it-cinquecento order 4: reading -1.992 per letter; random keys -2.454 (z 14.0); key annealed onto shuffled ciphertext best -2.081 (mean -2.097, z 8.9); annealer on the real text -2.073. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "This project's own word-substitution annealer recovered only function words. Paolo Rosson's key (6 Oct 2026, with Claude, on this project's transcription) gives values to 93.8% of no. 20's groups and 97.2% of R1894's, 79.8% and 93.1% in connected stretches of sure or probable values. George Lasry's independent key (6 Oct 2026, on Biermann's transcription) assigns values to 95.9% of the non-null occurrences of five letters.",
+ "outcome": {"validation": {"date": "2026-10-18", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 6174, "types": 936, "tokens_per_type": 6.6, "score": -1.992, "nulls": {"random keys": {"n": 200, "mean": -2.454, "sd": 0.033, "max": -2.379, "z": 14.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.097, "sd": 0.012, "max": -2.081, "z": 8.9, "p": 0.1429}}, "power": -2.073, "verdict": "pass", "notes": "claimed per-occurrence score -1.991; polyphony 0.0; 254 unread tokens left out; annealer on the real text from random keys reached -2.073"}, 
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "George Lasry rebuilt his key from the ciphertext of Biermann's five-letter transcription with Italian cribs, repeated contexts and code-family structure (lasry/NOTES.md; PR #35); no decipherment, clear copy or key of these letters exists, and the 'Aditione nel zifra' he spot-checked is another code (1 of its 113 groups occurs here), so no external or adjacent plaintext supplied values. Paolo Rosson rebuilt a second key the same way, independently, on this project's transcription (6 Oct 2026); it agrees with Lasry's on 94-96% of the tokens both value, including letters 4 and 5, which Rosson never saw. This project's own annealer recovered only function words; its share is the transcription and the measurement.",
   "contribution": [
    "transcription",
    "sender or date identified"
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.875,
+  "fraction_read": 0.929,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Rosson's key applied to this project's transcriptions (measure_rosson.py, 14 Oct 2026): groups in runs of six or more sure/probable values, no. 20 1,046 of 1,311 (79.8%), R1894 1,654 of 1,776 (93.1%); together 2,700 of 3,087. A reading by others, not this project's.",
-  "verification": [
-   "historical consistency"
-  ],
+  "fraction_read_source": "measure_lasry.py on lasry/alignment.tsv (Biermann transcription, 6,428 cipher occurrences, five letters; fr. 20506 not counted twice), 18 Oct 2026: 5,974 of 6,428 read by the bar measure (presumed nulls, Lasry's stronger inferences, Lasry's tentative values matched by Rosson's key, Rosson's sure/probable values where Lasry has none). Per letter: fr. 2988 f. 2 96.2%, fr. 2988 ff. 9-10 (and its copy fr. 20506) 97.0%, fr. 3022 no. 20 94.4%, fr. 4050 87.7%, fr. 6638 89.0%. Lasry's own assignment coverage (tentative values included) is 95.9% of non-null occurrences.",
+  "verification": ["historical consistency", "independent verification", "statistical test"],
   "gaps": [
    {
-    "item": "No. 20 and R1894 (fr. 2988 ff. 9-10): 84 groups without a value and 76 guesses in 3,903 parsed groups",
+    "item": "fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%)",
     "blocker": "open-codes",
-    "detail": "Rosson's key leaves 86 groups unvalued by his count; stems and numbers 6-9 spelling signs remain. Needs a comparison of their readings with the images, and the other Ranzo letters (fr. 2988 ff. 2r-v, fr. 3019 f. 73 duplicate) transcribed."
+    "detail": "27 occurrences without a value in either key (Rosson's fills 37 of Lasry's 64 blanks) and 47 tentative values of Lasry's that Rosson's key does not match. Needs a comparison of both keys' readings with the images of ff. 44r-46v."
+   },
+   {
+    "item": "fr. 4050 ff. 79-81 and fr. 6638 pp. 67-70 (letters 4, 5): 191 and 105 tokens not read by the bar measure (87.7%, 89.0%)",
+    "blocker": "open-codes",
+    "detail": "Lasry's key values 94.2% and 96.8% of them, but most tentative values cannot be confirmed: Rosson's key was built on letters 1-3 only. Not seen here; Biermann's transcription gives no Gallica link."
+   },
+   {
+    "item": "fr. 2988 ff. 2 and 9-10 (letters 1, 2, with the copies fr. 3019 and fr. 20506): 31 and 53 tokens open",
+    "blocker": "open-codes",
+    "detail": "Scattered single code groups and tentative values; over the read bar."
    }
   ],
-  "notes": "Read in part by others: Rosson (with Claude) and George Lasry (with Claude Opus 5.5 and GPT-6 Astra), both 6 Oct 2026. Lasry's Biermann-based five-letter edition in lasry/: 6,428 cipher occurrences, 871 proposed mappings, 5,967/6,221 non-null occurrences assigned including hypotheses; coverage, not a plaintext accuracy estimate. Split 14 Oct 2026 from targets/vasto1527.",
+  "notes": "Key recovered from ciphertext-only by George Lasry (with Claude Opus 5.5 and GPT-6 Astra) and, independently, by Paolo Rosson (with Claude), both 6 Oct 2026. Lasry, 16 Oct 2026: 'the Ranzo ciphers are solved Fr 2988 and Fr 20506 - my key or Rosson's key'. Measured here 18 Oct 2026: fr. 2988 (both letters) and its copy fr. 20506 meet the read bar; fr. 3022 no. 20, fr. 4050 and fr. 6638 are read in part. Split 14 Oct 2026 from targets/vasto1527.",
   "provenance": "mixed",
   "credits": [
    {
@@ -375,6 +438,14 @@
     "role": "prior solution",
     "note": "Independent contemporaneous solution with Claude, reported alongside Lasry’s by Tomokiyo on 6 October 2026; the existing project section applies Rosson’s key separately.",
     "date": "2026-10-06",
+    "source": "https://pangoleen.github.io/cipher-readings/centurione-1528.html",
+    "published": true
+   },
+   {
+    "who": "rosson",
+    "role": "verification",
+    "note": "his independently rebuilt key, applied here to Biermann's transcription, agrees with Lasry's on 94-96% of the tokens both value (measure_lasry.py, 18 Oct 2026)",
+    "date": "2026-10-18",
     "source": "https://pangoleen.github.io/cipher-readings/centurione-1528.html",
     "published": true
    }
