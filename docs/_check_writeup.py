@@ -253,7 +253,13 @@ def check_slug(slug):
         item('<p class="meta">' in page, 'hero has the <p class="meta"> byline the builder stamps')
         item(bool(re.search(r'<title>.+</title>', page)) and 'name="description"' in page, 'title and meta description')
         item(bool(re.search(r'<h2[^>]*>.*?Sources', page, re.S)), 'a Sources section', warn=True)
-        item(bool(re.search(r'\bclass="callout[" ]', page)), 'a summary callout at the top of <main>', warn=True)
+        hero_end = page.find('</section>', page.find('<section class="hero">'))
+        item(hero_end >= 0 and bool(re.match(r'\s*<main>', page[hero_end + 10:])),
+             '<main> opens right after the hero (without it the body has no margins and no contents strip)')
+        item(bool(re.search(r'<main>\s*(<nav class="toc".*?</nav>\s*)?(<figure class="lead">.*?</figure>\s*)?<div class="callout[" ]', page, re.S)),
+             'a summary callout at the top of <main>', warn=True)
+        item('class="callout glance"' in page, 'the summary is the "At a glance" box (<div class="callout glance">)', warn=True)
+        item('<p class="muted">' in page, 'a closing <p class="muted"> pointing to the repository folder', warn=True)
         for img in set(re.findall(r'<img[^>]+src="([^"]+)"', page)):
             item((HERE / img).exists(), f'figure file docs/{img} exists')
         item(f'?v={version}' in page if version else True, 'page carries the current stylesheet version (else rebuild)', warn=True)
