@@ -1,5 +1,20 @@
 {
  "keys": [
+  {
+   "id": "k-nino1522-lasry",
+   "label": "Rodrigo Niño 1522: Lasry CTTS key",
+   "kind": "scholar's key",
+   "by": "George Lasry; GPT 6.1 Sol and Anthropic Opus 5.5 refinements",
+   "year": 1522,
+   "found": 2026,
+   "note": "CTTS ciphertext recovery; 49 observed entries, up to four homophones per vowel and three per consonant; one p/y class ambiguous. Related Kolosova prior work acknowledged, not applied as an alphabet key.",
+   "image": {
+    "src": "nino1522_key.png",
+    "credit": "George Lasry; newly drawn font/geometric equivalents by GPT 6.1 Sol",
+    "caption": "Recovered key; the p/y class remains uncertain.",
+    "page": "nino1522"
+   }
+  },
  {"id": "k-sweden4306-lasry", "label": "R4306: alphabetical numerical key", "kind": "scholar's key", "by": "George Lasry; Claude Opus 5.5", "year": null, "found": 2026, "note": "Transcribed with CTTS, then solved with Opus 5.5. Alphabet 30–52, nulls and four unresolved code identities; year of use unproved.", "image": {"src": "sweden4306_key.png", "credit": "George Lasry; manuscript glyphs from Riksarkivet, Chifferklaver låda II:133, via DECODE R4306", "caption": "Current working key; unobserved alphabet values and open codes are marked.", "page": "sweden4306"}},
  {"id": "k-siena2023-lasry", "label": "Siena nos. 20 and 23: Lasry working key", "kind": "scholar's key", "by": "George Lasry; GPT-6 Astra", "year": null, "found": 2026, "note": "4,254 cipher occurrences, 59 observed classes. Transcribed with CTTS, then solved by GPT-6 Astra. Spring 1413 proposed; historical names remain tentative. Later Lucca comparison supports Sforza? but is a different key.", "image": {"src": "siena2023_key.png", "credit": "George Lasry; glyphs from ASSi Concistoro 2308 fasc. 2 nos. 20 and 23 via DECODE R4808/R4811", "caption": "Current working key and CTTS glyphs, 17 October 2026; unresolved names and provisional nulls marked.", "page": "siena2023"}},
   {"id": "k-guiche1551", "label": "La Guiche's Rome cipher of 1551, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1551, "note": "Simple substitution of 22 invented signs for the 22-letter alphabet, a plain cross for b, ff+c for ss and one four-dot code sign; recovered from the ciphertext alone by swap annealing (fr-1530-despatches 5-gram). targets/guiche1551/NOTES.md."},
@@ -2156,6 +2171,12 @@
   {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."}
  ],
  "links": [
+  {
+   "key": "k-nino1522-lasry",
+   "target": "nino1522",
+   "how": "rebuilt from",
+   "note": "Key recovered with CTTS built-in cryptanalysis, then source and contextual refinement."
+  },
  {"key": "k-sweden4306-lasry", "target": "sweden4306", "how": "partial", "note": "Contributed Opus 5.5 key underlies the edited Dutch reading. Five manuscript lines reapplied literally; four code identities remain open."},
  {"key": "k-siena2023-lasry", "target": "siena2023", "how": "partial", "note": "Current key underlies the edited readings. Five physical lines (322 signs, 328 letters) match exactly after declared normalization; full editions not mechanically validated."},
   {"key": "k-guiche1551", "target": "guiche1551", "how": "rebuilt from", "note": "429 of 431 symbols of fr. 3138 f. 60v have a value; the struck-through opening reads in fragments"},
@@ -3399,6 +3420,10 @@
   }
  ],
  "source_links": [
+  {
+   "source": "s-lasry",
+   "key": "k-nino1522-lasry"
+  },
   {"source": "s-cyphersolver", "key": "k-champagne1590-twodigit"},
   {"source": "s-cyphersolver", "key": "k-guiche1551"},
   {"source": "s-cyphersolver", "key": "k-jqa1385"},
