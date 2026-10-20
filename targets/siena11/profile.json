@@ -84,7 +84,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-09-24",
-  "last_date": "2026-10-18"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -133,6 +133,16 @@
    "kind": "verification",
    "what": "This project counted George Lasry's reading: 357 of 381 plaintext letters (93.7%) in words without a query mark; one sign lost in a hole.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "No. 11: his key on the project's own 24 Sept transcription (transcripts/no11.txt, agent B): 66.7% with 8 signs unidentified, 94.4% (357/378 sign units) once his two-stroke signs '+o' = e and 'o+' = d are read as our token pairs PLUS O / O PLUS and ODAG = h, D = a, RHO = o; his nulls 'g#', '31', '87', m^n, /// are our G HASH, 3 1, 8^dot 7, M^n, SL3. Our two cipher blocks are his two runs line for line. research/siena2308/verify_lasry.py no11.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -175,7 +185,8 @@
    }
   ],
   "verification": [
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "provenance": "contributed",
   "credits": [

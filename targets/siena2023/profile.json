@@ -152,7 +152,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-10-15",
-  "last_date": "2026-10-17"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -236,7 +236,6 @@
   },
   {
    "date": "2026-10-18",
-   "date": "2026-10-18",
    "kind": "access",
    "what": "Listed every Concistoro 2308 record on DECODE through the API: keys R4746-R4789 (fasc. 1, 44 records) and ciphertexts R4790-R4814 (fasc. 2, 25 pieces), matching George's survey. R4783 has no image even with a logged-in session.",
    "result": "worked"
@@ -252,6 +251,15 @@
    "kind": "literature search",
    "what": "Read the Fermo chronicle entry for April 1413 on the page image (Cronache fermane p. 39): 'timebat maxime conte ..... ad furcam preste, Sforza cum gentibus suis ad Caldarolam et Sarnanum'; the edition itself leaves the count's name blank. Minuti (Vita di Muzzo Attendolo Sforza) names the king's reinforcements to Sforza against Paolo Orsini in 1413: 'el sig. Malatesta da Cesena, el conte de Carrara'. As the Malatesti are named in clear in no. 23, the Conte di Carrara is a contextual candidate for Name3 (ovo); not established.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "control",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "No. 20: the project's independent 24 Sept transcription (project_attempt/no20.tok, agent C, 1,230 tokens, other sign names) aligned with his reading R4808_reading.txt by EM, starting from his key values for the sign names both transcriptions share: 71.1% of our tokens carry the majority letter of their sign (78.6% allowing two letters for signs our names merge). Control, his no. 23 plaintext against the same tokens: 14.8% / 23.0%. Our transcription carries his reading. research/siena2308/verify_lasry.py no20.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -307,7 +315,8 @@
   "grades": "unknown",
   "verification": [
    "key confirms",
-   "statistical test"
+   "statistical test",
+   "independent verification"
   ],
   "provenance": "contributed",
   "credits": [

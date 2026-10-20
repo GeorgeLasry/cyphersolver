@@ -46,6 +46,15 @@ no key for Donato Acciaiuoli. The piece was closed "no key in reach". Nothing of
 reading, which is George Lasry's from his own transcription. His 57 signs against our 44 names: our transcription
 merged look-alikes, the obstacle George names for the whole fascicle (accurate transcription).
 
+## 20 Oct 2026: his key checked on this project's transcription
+
+`research/siena2308/verify_lasry.py no11` (moved from `targets/siena1421/` with the split): his key table matched by
+shape and count to agent B's sign names (`transcripts/no11.txt`, 24 Sept, made before his work); our tokens
+deciphered with his key, without fitting, and aligned with his reading. **357 of 378 sign units agree (94.4%)**; 66.7%
+with eight signs unidentified, before his two-stroke signs '+o' (e) and 'o+' (d) were read as our token pairs
+PLUS O / O PLUS and ODAG = h, D = a, RHO = o were set. His nulls 'g#', '31', '87', mⁿ, /// are our G HASH, 3 1,
+8^dot 7, M^n, SL3. Our two cipher blocks are his two runs line for line. Independent verification of his reading.
+
 ## Disagreements with the repository
 
 - None on the facts: sender, recipient, place and date (13 June 1478, dated in the clear) agree with the siena1421
@@ -65,4 +74,4 @@ merged look-alikes, the obstacle George names for the whole fascicle (accurate t
 - [x] known-keys: R4752 (Bichi, Rome 1478) tried 24 Sept; Gabbrielli's Florentine key index (Ilardi reel 58) has no Acciaiuoli key for 1478.
 - [x] print: Meister 1902, the 1952 inventory; Rubinstein's Lettere di Lorenzo III named by George Lasry, not available online here.
 - [n/a] key-rebuild: the key is George Lasry's; extending it needs his sign-level CTTS transcription, which is not in the repository (a question for George).
-- [n/a] retry: no key extension was made here, so nothing to rerun; a question for George.
+- [x] retry: 20 Oct 2026, his key run unchanged on the project's own 24 Sept transcription (`research/siena2308/verify_lasry.py no11`): 94.4% agreement; no key extension was made here.

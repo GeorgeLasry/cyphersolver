@@ -47,7 +47,7 @@ Moved here from `targets/siena1421/transcripts/` on 18 Oct 2026.
 
 ## Remaining gaps
 
-- the whole cipher block (363 tokens) - blocker: too-short; homophonic with at least 45 signs, no filed key fits, and the gloss gives only nine values; ciphertext-only search does not converge at this length.
+- the whole cipher block (363 tokens) - blocker: too-short; homophonic with at least 45 signs, no filed key fits, and the gloss gives only nine values; ciphertext-only search does not converge at this length. Also unsolved by George Lasry (report of 17 Oct 2026). His recoveries of nos. 17 and 11 and R4794 (160-393 signs) show that "too-short" was too pessimistic for the pieces of this fascicle in general (`research/siena2308/README.md`, 20 Oct 2026); it stands here because he failed on this piece too.
 
 ## Escalation
 

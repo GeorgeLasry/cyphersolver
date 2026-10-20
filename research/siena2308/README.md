@@ -45,6 +45,31 @@ E and F.
 Open in the fascicle: nos. 7, 19, 21 (no key, too short), the unread parts of nos. 14, 15, 17 (see their entries), and
 no. 1 of 1421 with nos. 2 and 26-28 (not photographed). Catalogue item 336 now covers only these unsolved pieces.
 
+## 20 Oct 2026: George Lasry's keys checked on this project's transcriptions
+
+`verify_lasry.py` (written in `targets/siena1421/` on main the same day, moved here at the merge; run from the
+repository root with `no17`, `no11`, `r4794`, `r4794b`, `no20`): his key tables are images of signs cut from the
+photographs, so each of his signs was matched by shape and occurrence count to the sign names of the project's own
+24 Sept transcriptions (made before his work and independently of it). Our tokens are deciphered with his key,
+without fitting, and aligned (edit distance) with the plaintext of his decryption; a token agrees when his key gives
+it the letter it aligns with. The identifications are commented in the script. Rerun at the merge: same figures.
+
+| piece | our transcription | tokens | agree | entry |
+|---|---|---|---|---|
+| no. 17 | `targets/siena17/project_attempt/no17.txt` (agent A) | 283 | **92.9%** (89.0% before three signs were re-identified by count) | [siena17](../../targets/siena17/NOTES.md) |
+| no. 11 | `targets/siena11/transcripts/no11.txt` (agent B) | 378 sign units | **94.4%** (66.7% with eight signs unidentified) | [siena11](../../targets/siena11/NOTES.md) |
+| R4794 ("5?") | `targets/siena5/project_attempt/r4794.txt` | 160 | 83.8%; **93.1%** with r and h added (his table has no H and no R column) | [siena5](../../targets/siena5/NOTES.md) |
+| no. 20 | `targets/siena2023/project_attempt/no20.tok` (agent C) | 1,128 | **71.1%** one letter per sign of ours, 78.6% allowing two, by EM from the shared sign names; **control** (his no. 23 plaintext) 14.8% / 23.0% | [siena2023](../../targets/siena2023/NOTES.md) |
+
+His readings of nos. 11, 17 and R4794 come out of our own transcriptions with his keys at 93-94%, and our no. 20
+transcription carries his no. 20 reading far above the control. Not checked: nos. 12 and 13 (no transcription of
+ours), no. 9 (46 tokens), no. 15 (his partial reading), no. 23 (same key as no. 20). No. 18: see
+`targets/siena18/NOTES.md` (his printed passage equals our reading; keys compared sign by sign). No. 8: a second,
+independent alignment with the memorandum agrees with `targets/siena8/decode.py` (`targets/siena8/NOTES.md`).
+
+His recoveries of pieces of 160-393 signs show that the 24 Sept survey's "too short" was too pessimistic for this
+fascicle; it now stands only for nos. 7, 19 and 21, where he failed too.
+
 ## Disagreements between the report and this repository
 
 - **No. 8**: Lasry lists it as unsolved, a link with the memorandum above "possible but speculative"; this project's 24
@@ -66,6 +91,7 @@ no. 1 of 1421 with nos. 2 and 26-28 (not photographed). Catalogue item 336 now c
 - `homsolve.py`, `homsolve2.py`, `homsolve3.py` (null-aware), `sylsolve.py` (signs for letters or bigrams),
   `wordsolve.py` (word-divided), `prep.py`: the shared solvers (run from the repository root; they load `lang/`).
 - `transcripts/no22.txt` (R4810, the drafts), `transcripts/no29.txt` (R4814, the fragment).
+- `verify_lasry.py`: George Lasry's keys of nos. 17, 11, R4794 and 20 run on the project's own transcriptions (20 Oct 2026, section above).
 
 ## Access: the whole filza is on DECODE (found 24 Sept 2026)
 
@@ -143,3 +169,5 @@ transcriptions and the systems (nomenclator signs, look-alike signs merged or sp
 - 17-18 Oct 2026: George Lasry's consolidated report; nos. 20/23, 12, 11, 17, 15, 5?, 9, 13/16, 10 to their own entries;
   nos. 7, 8, 19, 21 to their own entries (no. 8 found deciphered by the memorandum on its sheet); this folder moved from
   `targets/siena1421/` to `research/siena2308/` as the collection index.
+- 20 Oct 2026: his keys checked on the project's own transcriptions of nos. 17, 11, R4794 and 20 (`verify_lasry.py`); no. 8
+  aligned a second time, independently, with the same result.

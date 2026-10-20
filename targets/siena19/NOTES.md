@@ -41,7 +41,7 @@ George Lasry's report: "Sienese envoys, 9 March, 1440s, 112 symbols — unsolved
 
 ## Remaining gaps
 
-- the four cipher lines (118 tokens) - blocker: too-short; about 37 signs over 118 tokens, homophonic-looking, no filed key fits and there is no gloss or decipherment.
+- the four cipher lines (118 tokens) - blocker: too-short; about 37 signs over 118 tokens, homophonic-looking, no filed key fits and there is no gloss or decipherment. Also unsolved by George Lasry (report of 17 Oct 2026). His recoveries of nos. 17 and 11 and R4794 (160-393 signs) show that "too-short" was too pessimistic for the pieces of this fascicle in general (`research/siena2308/README.md`, 20 Oct 2026); it stands here because he failed on this piece too.
 
 ## Escalation
 

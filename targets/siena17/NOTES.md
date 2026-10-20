@@ -65,11 +65,22 @@ Agent A transcribed no. 17 from the DECODE photographs (`project_attempt/no17.tx
 fit; the piece was closed as too short. Nothing of that attempt is claimed in the reading, which is George Lasry's
 from his own CTTS transcription.
 
+## 20 Oct 2026: his key checked on this project's transcription
+
+`research/siena2308/verify_lasry.py no17` (moved from `targets/siena1421/` with the split): George Lasry's key table
+(an image of signs cut from the photographs) matched by shape and occurrence count to the sign names of agent A's
+transcription (`project_attempt/no17.txt`, made on 24 Sept, before his work and independently of it); our 283 tokens
+deciphered with his key, without fitting, and aligned (edit distance) with his reading. **263 of 283 agree (92.9%)**;
+252 (89.0%) with the first identification, before three signs were re-identified by count (our 7 = the open variant
+of his A, our SS = his P "+δ", our 5o = his T). The rest fall on his own uncertain words ("el Mustetto", "Otto",
+"lco[..]stren") and on our 6, which merges his O "6<" and V "6". His reading comes out of an independent
+transcription with his key: independent verification of the reading he gives.
+
 ## Files
 
 - `lasry_report.md`: the report's section, verbatim; `reading.txt`, `translation.txt`: his decipherment and translation, verbatim.
 - `key_lasry.jpg`: his key figure; `key.md`: the same key written out as a table (shape names, values, his counts: 41 signs, 282 occurrences, matching the report).
-- `project_attempt/`: the project's 24 Sept transcription (not used).
+- `project_attempt/`: the project's 24 Sept transcription (not used in the reading; the basis of the 20 Oct check).
 
 ## Remaining gaps
 
@@ -83,4 +94,4 @@ from his own CTTS transcription.
 - [x] known-keys: R4760, R4768, R4778 tried on 24 Sept; the "cifra di Balìa" not identified among the filed keys.
 - [x] print: none known (siena1421 survey: Meister 1902, the 1952 inventory).
 - [n/a] key-rebuild: the key is George Lasry's; extending it needs his CTTS transcription, which is not in the repository (asked for).
-- [n/a] retry: no key extension was made here, so nothing to rerun; a question for George.
+- [x] retry: 20 Oct 2026, his key run unchanged on the project's own 24 Sept transcription (`research/siena2308/verify_lasry.py no17`): 92.9% agreement; no key extension was made here.

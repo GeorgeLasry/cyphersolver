@@ -89,7 +89,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-24",
-  "last_date": "2026-10-18"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -160,6 +160,16 @@
    "date": "2026-10-18",
    "kind": "verification",
    "what": "Split out of the survey entry siena1421 under the one-key rule; the project's 'read at the time' and George Lasry's 'unsolved' recorded side by side.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "A second, independent alignment by a parallel session (main commit 883fa6f41, made without transcripts/no08.txt or decode.py, in its own sign names): image re-fetched with the DECODE cookie and three cipher passages aligned with the memorandum at 2x: '÷ 59t95 75□ø I2 7øϕϕ2 9ff2ϕ +c5' = '[duca di Milano] aveva dato [ma]donna biancha' (aveva = ABCBA), 'I2ɷ+ctɱt' = 'marchese' twice, 'o-tɷɷ2ɷ2' = 'ferrara', 't ϕøϕ ff9ø I2ϕ+c2 ot +ct' = 'e non può manchare che'. Its values are those of decode.py under other names; its one doubt (sign I in 'la' and 'manchare') is settled by the 166-sign reading: the cipher has 'madonna', I = m throughout.",
    "result": "worked"
   }
  ],

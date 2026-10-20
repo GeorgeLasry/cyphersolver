@@ -36,7 +36,7 @@ George Lasry's report: "No. 21 = R4809 — 109 symbols — unsolved as of 17 Oct
 
 ## Remaining gaps
 
-- the cipher in L01, L03-L04 and the signature (107 tokens) - blocker: too-short; about 35 signs over 107 tokens, no filed key fits and there is no gloss or decipherment.
+- the cipher in L01, L03-L04 and the signature (107 tokens) - blocker: too-short; about 35 signs over 107 tokens, no filed key fits and there is no gloss or decipherment. Also unsolved by George Lasry (report of 17 Oct 2026). His recoveries of nos. 17 and 11 and R4794 (160-393 signs) show that "too-short" was too pessimistic for the pieces of this fascicle in general (`research/siena2308/README.md`, 20 Oct 2026); it stands here because he failed on this piece too.
 
 ## Escalation
 

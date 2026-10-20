@@ -10027,7 +10027,8 @@
       "end_year": "1413",
       "author": "Vescovi(?) de Fermo",
       "receiver": "Sforza Attendolo",
-      "origin_city": "Naples"
+      "origin_city": "Naples",
+      "plaintext_lang": "Italian"
      }
     }
    }
@@ -11039,7 +11040,7 @@
     "R4808": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "Key recovered from ciphertext-only by George Lasry with CTTS and Claude (report of 17 Oct 2026: both sheets read in full); earlier filed as a partial recovery 'transcribed with CTTS then solved by GPT-6 Astra' (PR #41). Name signs [Paolo Orsini?]/[Sforza?]/[Tartaglia?] tentative, four others and the subscription open. Perugia, 30 March 1413 (year from the contents, per the report); writer most probably Muzio Attendolo Sforza, to King Ladislaus of Naples. Earlier note: writer possibly Muzio Attendolo Sforza, king possibly Ladislaus. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 20 (pencil number), clear address 'Sacra Regia Maiestas, Serenissime princeps ... ante terre pedum oscula', subscription 'Scriptum Perusii(?) die penultimo mensis Martii'; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 23 (R4811). That survey's transcription is in targets/siena2023/project_attempt/. Key record R4783 (Concistoro 2308) has no image on DECODE.",
+     "note": "Key recovered from ciphertext-only by George Lasry with CTTS and Claude (report of 17 Oct 2026: both sheets read in full); earlier filed as a partial recovery 'transcribed with CTTS then solved by GPT-6 Astra' (PR #41). Name signs [Paolo Orsini?]/[Sforza?]/[Tartaglia?] tentative, four others and the subscription open. Perugia, 30 March 1413 (year from the contents, per the report); writer most probably Muzio Attendolo Sforza, to King Ladislaus of Naples. Earlier note: writer possibly Muzio Attendolo Sforza, king possibly Ladislaus. Existing DECODE status from earlier survey, not freshly verified. Earlier survey (siena1421, 24 Sept 2026): Concistoro 2308 fasc. 2 no. 20 (pencil number), clear address 'Sacra Regia Maiestas, Serenissime princeps ... ante terre pedum oscula', subscription 'Scriptum Perusii(?) die penultimo mensis Martii'; DECODE's date 1500-1599 is a placeholder for the whole fascicle; same cipher as no. 23 (R4811). That survey's transcription is in targets/siena2023/project_attempt/. Key record R4783 (Concistoro 2308) has no image on DECODE. Checked 20 Oct 2026 on the earlier survey's independent transcription (research/siena2308/verify_lasry.py no20): 71.1% of its tokens carry his reading (78.6% allowing two letters per merged sign), against 14.8% / 23.0% for a wrong-plaintext control.",
      "reading": [
       {
        "file": "targets/siena2023/R4808_reading.txt"
@@ -11092,9 +11093,19 @@
     "R4805": {
      "decode_status": "N/A",
      "proposed": "Partially decrypted",
-     "note": "Concistoro 2308 fasc. 2 no. 17: Bartolomeo Tantucci to messer Antonio del Vescovo (address on P2), Sarteano(?), 25 (or 20) August 1528, not 1500-1599 generically; endorsed 'questa cifara è quella di Balìa'. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; about 85% read (his figure); the opening words of two points and one phrase uncertain.",
+     "note": "Concistoro 2308 fasc. 2 no. 17: Bartolomeo Tantucci to messer Antonio del Vescovo (address on P2), Sarteano(?), 25 (or 20) August 1528, not 1500-1599 generically; endorsed 'questa cifara è quella di Balìa'. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; about 85% read (his figure); the opening words of two points and one phrase uncertain. Checked 20 Oct 2026 on this project's own transcription (research/siena2308/verify_lasry.py): his key gives his reading on 92.9% of 283 tokens.",
      "reading": "decode_updates/decryptions/R4805.txt",
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1528",
+      "end_year": "1528",
+      "author": "Bartolomeo Tantucci",
+      "receiver": "Antonio del Vescovo",
+      "plaintext_lang": "Italian"
+     },
+     "transcription": [
+      "targets/siena17/project_attempt/no17.txt"
+     ]
     }
    }
   },
@@ -11127,7 +11138,17 @@
      "proposed": "Partially decrypted",
      "note": "Concistoro 2308 fasc. 2 no. 15: Mario Bandini, Sienese orator at the imperial court, to the Signori, Innsbruck ('Eltspruch'), 4 January 1546 Sienese style = 1547. Eleven short cipher passages on P2 and P6 (240 signs plus Latin-letter code words buf, abs, som, Za). Partially deciphered by George Lasry with CTTS and Claude Opus 5.5: 75 of 240 signs.",
      "reading": "decode_updates/decryptions/R4803.txt",
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1546",
+      "end_year": "1547",
+      "author": "Mario Bandini",
+      "receiver": "Signori of Siena",
+      "origin_city": "Innsbruck"
+     },
+     "transcription": [
+      "targets/siena15/project_attempt/no15v.txt"
+     ]
     }
    }
   },
@@ -11147,9 +11168,18 @@
     "R4794": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "Concistoro 2308 fasc. 2, slip with a faint pencil number 5(?), wholly in cipher, 16th century (spelling, nomenclator; unverified), to 'le Signorie Vostre'. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; all letters read, four number codes (26, 44, 67, 74) unidentified.",
+     "note": "Concistoro 2308 fasc. 2, slip with a faint pencil number 5(?), wholly in cipher, 16th century (spelling, nomenclator; unverified), to 'le Signorie Vostre'. Key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026; all letters read, four number codes (26, 44, 67, 74) unidentified. Checked 20 Oct 2026 on this project's own transcription (research/siena2308/verify_lasry.py): his key gives 93.1% of 160 tokens his reading once r and h are added; his key figure has no column for them.",
      "reading": "decode_updates/decryptions/R4794.txt",
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1500",
+      "end_year": "1599",
+      "plaintext_lang": "Italian",
+      "cipher_types": "homophonic (pigpen-like), number codes"
+     },
+     "transcription": [
+      "targets/siena5/project_attempt/r4794.txt"
+     ]
     }
    }
   },
@@ -11201,7 +11231,15 @@
      "proposed": "Partially decrypted",
      "note": "Concistoro 2308 fasc. 2 no. 9: slip to a 'V. S.', two cipher passages inside clear Italian, deciphered at the time in a second hand below them (lines 7-8); key recovered from that decipherment by George Lasry with CTTS and Claude, 15-17 Oct 2026: 'Chastiglone questa vernata ... uno altro anno', Stella = the King of Aragon. 1440s-1450s? per the report (unverified), not 1500-1599; the final cipher group (Francesco?) doubtful.",
      "reading": "decode_updates/decryptions/R4798.txt",
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1447",
+      "end_year": "1454",
+      "plaintext_lang": "Italian"
+     },
+     "transcription": [
+      "targets/siena9/transcripts/no09.txt"
+     ]
     }
    }
   },
@@ -11252,9 +11290,20 @@
     "R4800": {
      "decode_status": "N/A",
      "proposed": "Partially decrypted",
-     "note": "Concistoro 2308 fasc. 2 no. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (dated in the clear), a Florentine letter in the Sienese file, not 1500-1599. Two cipher blocks (393 symbols); key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026, about 90% certain; one sign lost in a hole, six doubtful words.",
+     "note": "Concistoro 2308 fasc. 2 no. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (dated in the clear), a Florentine letter in the Sienese file, not 1500-1599. Two cipher blocks (393 symbols); key recovered from the ciphertext alone by George Lasry with CTTS and Claude, 15-17 Oct 2026, about 90% certain; one sign lost in a hole, six doubtful words. Checked 20 Oct 2026 on this project's own transcription (research/siena2308/verify_lasry.py): his key gives his reading on 94.4% of 378 sign units.",
      "reading": "decode_updates/decryptions/R4800.txt",
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1478",
+      "end_year": "1478",
+      "author": "Donato Acciaiuoli",
+      "receiver": "Lorenzo de' Medici",
+      "plaintext_lang": "Italian",
+      "origin_city": "Rome"
+     },
+     "transcription": [
+      "targets/siena11/transcripts/no11.txt"
+     ]
     }
    }
   },
@@ -11297,12 +11346,16 @@
     "R4797": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "Concistoro 2308 fasc. 2 no. 8, c. 1440-41 (not 1500-1599): a ciphered slip on the league of the Duke of Milan and the Marquis of Ferrara against Venice and the Duke's offer of Bianca Maria to Leonello d'Este, bound below a clear memorandum. The memorandum's paragraphs 5-7 ('Nel polizolo dicto segue ...') are the contemporary decipherment of the slip; aligned sign by sign, all 166 cipher signs read. Its paragraphs 1-4 decipher a covering letter not in the record.",
+     "note": "Concistoro 2308 fasc. 2 no. 8, c. 1440-41 (not 1500-1599): a ciphered slip on the league of the Duke of Milan and the Marquis of Ferrara against Venice and the Duke's offer of Bianca Maria to Leonello d'Este, bound below a clear memorandum. The memorandum's paragraphs 5-7 ('Nel polizolo dicto segue ...') are the contemporary decipherment of the slip; aligned sign by sign, all 166 cipher signs read. Its paragraphs 1-4 decipher a covering letter not in the record. Confirmed 20 Oct 2026 by a second, independent alignment of three runs ('aveva dato [ma]donna biancha', 'el marchese di ferrara', 'e non puo manchare che') with the same values: deciphered at the time.",
      "reading": "decode_updates/decryptions/R4797.txt",
      "sent": false,
      "transcription": [
       "targets/siena8/transcripts/no08.txt"
-     ]
+     ],
+     "fields": {
+      "start_year": "1440",
+      "end_year": "1441"
+     }
     }
    }
   },

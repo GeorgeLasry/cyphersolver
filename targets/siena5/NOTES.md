@@ -46,13 +46,23 @@ and number nomenclator are unique to this slip). Its own entry; table in [`siena
 Transcription `project_attempt/r4794.txt` (moved here from `targets/siena1421/transcripts/` on 18 Oct 2026; sign
 names W., J, C., P ... with the digits 2 4 6 7) and `homsolve.py` annealing; no key found. Not used in George's reading.
 
+## 20 Oct 2026: his key checked on this project's transcription
+
+`research/siena2308/verify_lasry.py r4794` and `r4794b` (moved from `targets/siena1421/` with the split): his key
+table matched by shape and count to the sign names of `project_attempt/r4794.txt` (24 Sept, before his work); our
+160 tokens deciphered with his key, without fitting, and aligned with his reading: **134 agree (83.8%)**. His table
+has **no H and no R column**, though his reading has h 7 times and r 11 times: our A (alpha, 11 occurrences) aligns
+with r every time and our N (∩, 4) with h. With those two values added and nothing else (`r4794b`): **149 of 160
+(93.1%)**. So the missing columns are a gap in his key figure, not in his reading (the count question below); worth
+telling him. Independent verification of his reading.
+
 ## Files
 
 - `lasry_report.md`: the report's section, verbatim; `reading.txt`, `translation.txt`: his decipherment and translation, verbatim.
 - `key_lasry.jpg`: his key figure; `key.md`: the same key as a table.
-- `project_attempt/r4794.txt`: the project's 24 Sept transcription (not used).
+- `project_attempt/r4794.txt`: the project's 24 Sept transcription (not used in the reading; the basis of the 20 Oct check).
 
-**Count question for George:** the report's text gives 35 letter signs and 160 letter occurrences; the key figure shows 31 letter signs (no column for b, h or r) with 143 occurrences, plus the four codes (5 occurrences).
+**Count question for George:** the report's text gives 35 letter signs and 160 letter occurrences; the key figure shows 31 letter signs (no column for b, h or r) with 143 occurrences, plus the four codes (5 occurrences). The 20 Oct check above finds the h and r signs: our A = r, our N = h.
 
 ## Remaining gaps
 
@@ -65,4 +75,4 @@ names W., J, C., P ... with the digits 2 4 6 7) and `homsolve.py` annealing; no 
 - [x] known-keys: no key in Concistoro 2308 fits (report); R4776, R4786 similar in style only.
 - [x] print: none known.
 - [x] key-rebuild: the letter key is complete per the report; the number codes cannot be rebuilt from five tokens.
-- [n/a] retry: nothing left to rerun except the codes, which occur once or twice each with no context to narrow them.
+- [x] retry: 20 Oct 2026, his key run on the project's own transcription (`research/siena2308/verify_lasry.py r4794b`): 93.1% with r and h added; nothing else left to rerun except the codes, which occur once or twice each with no context to narrow them.

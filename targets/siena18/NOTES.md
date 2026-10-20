@@ -68,7 +68,7 @@ defendere teneatur ... bellum ... in partibus Pontis Valiani ... bellum Florenti
 instrumenta ad bellum necessaria, passum, foedus, intelligentia ... suis expensis centum homines armigeros, sexaginta
 equos leves ... castella existentia infra ... miliaria prope fines Senenses que caperentur ... Florentinorum ...
 bombarda". Ponte a Valiano = the Montepulciano war (1495-1511); Ziegler = Maximilian I's secretary: 1510s-1520s, year
-not fixed. **87.1% of 1,459 cipher tokens read as sense**, 10.6% doubtful, 1.4% unread, 0.9% struck.
+not fixed [wrong: Pisa, Oct-Nov 1496, per George Lasry; see above]. **87.1% of 1,459 cipher tokens read as sense**, 10.6% doubtful, 1.4% unread, 0.9% struck.
 
 Content: Siena to ready artillery and lend the King 5,000 ducats repayable in two months; B. protects Siena; Siena opens
 war on X. near Ponte a Valiano at the King's and Emperor's request, gives passage and victuals against the Florentines,
@@ -82,6 +82,30 @@ whose word counts differ are left out) and writes `validation.tsv`. `docs/_valid
 **underdetermined** — the reading beats random keys (z 4.3) and every shuffled refit (z 26.4), and the per-occurrence
 reading scores −1.97, but the one-value-per-sign key K scores −2.46, below the annealer on the real text (−2.28): the
 transcription keeps look-alike pairs under one sign name (o = g/o, n = q/e), so K is polyphonic (5.7%).
+
+## 20 Oct 2026: a second comparison, from his page (main branch, merged)
+
+A parallel session on main (commit 883fa6f41), working from George Lasry's page of 18 Oct 2026 before this entry's
+18 Oct comparison was merged in, compared again; what it adds:
+
+- **Dating sources**: Pisa, October-November 1496, Maximilian I's Italian expedition (Regesta Imperii XIV; Sanudo,
+  Diarii I; Ulmann 1884; Pecci 1755): Siena to join the Holy League, accept "Caesar" as judge against Florence, lend
+  5,000 ducats and make war at Ponte a Valiano; Ziegler is the King of the Romans' secretary. Our "1510s-1520s" came
+  from Ziegler's later career and the King/Emperor pair. His report (section F) has November 1496,
+  his page October-November; the title and ledgers keep the report's November 1496.
+- **His printed passage equals ours**: the passage on his page, "restituerentur, ita t[ame]n q[uod] ipsi Senenses ad
+  requisitionem Florentinorum sint contenti de stando iuri coram Cesare, dummodo Florentini etiam de illis que ipsi
+  occupant sint contenti stare iuri coram ÷", is word for word `transcripts/no18_reading.txt` L4.24-28 (ours spells
+  *ocupant*); cipher and clear words fall the same way.
+- **Key compared by shape**: every common sign has the same value (4, 7 = a; 3 = c; 9 = d; + = e; 6 = f; U = m; W = n;
+  8, o = o; L = p; D = r; h = s; N = t; Y = u; open OO = i), and so do the splits found here on the images (hooked n
+  = q vs plain n = e; plain o = g; closed OO = ll; PHI = pp; HX = rr; 2 = h; dotted signs = nulls). It found two
+  differences on rare signs (our d = a against his i, 4x; our a = i against his u, 3x), but it read our values from
+  `keys/no18_key.txt`, the solver's pre-split output; the final key at the end of `no18_reading.txt` has d = i and a =
+  u, his values, as `lasry_comparison.md` records. So no difference remains there. `keys/no18_key.txt` still holds
+  the pre-split values (2 = g, n = a, PHI = l, d = a, a = i); the final key is the one in the reading file.
+- His "M.X." = our unresolved "Mx."; "B." = Liga (Sanctissima Liga?), "X." = the League's common enemy
+  (unidentified), "S." = Sanctitas?
 
 ## Remaining gaps
 - six single cipher signs left unread in George Lasry's reading (÷ four times, ✱ twice) - blocker: illegible; isolated signs, his figure lists them as unread

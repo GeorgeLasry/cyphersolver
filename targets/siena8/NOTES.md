@@ -25,6 +25,28 @@ of the former `targets/siena1421` entry on 18 Oct 2026 under the one-key rule.
   paragraph is the decipherment. George Lasry's count of c. 400 symbols is presumably the whole slip with its clear
   words; the cipher signs alone are 166.
 
+## 20 Oct 2026: a second alignment, made independently
+
+A parallel session (main branch, commit 883fa6f41, before this entry was merged in) fetched the image again with the
+DECODE cookie and aligned the slip with the memorandum at 2x on the full-size photograph, without `transcripts/no08.txt`
+or `decode.py`, in its own sign names (font look-alikes, not the names used above). Its three passages:
+
+- slip l. 3-4, after the clear "Anchora d(iss)e": `÷ 59t95 75□ø I2 7øϕϕ2 9ff2ϕ +c5` = "[duca di Milano] aveva dato
+  [ma]donna biancha" (*aveva* = 5 9 t 9 5, ABCBA; *dato* d = 7, a = 5, t = □, o = ø; *donna* 7 ø ϕ ϕ 2 with the same d
+  and o and a doubled n), then `7t I2ɷ+ctɱt` = "de marchese";
+- slip l. 2: `÷ tɷ I2ɷ+ctɱt 7ff o-tɷɷ2ɷ2 5 o-2|ot` = "[duca di Milano] el marchese di ferrara a fa|re" (*marchese*
+  the same seven signs as in l. 4; *ferrara* f = o-, e = t, r = ɷ, a = 2);
+- slip l. 5-6, after the clear "anti(ve)duto questo": `t ϕøϕ ff9ø I2ϕ+c2 ot +ct ...` = "e non può manchare che ...".
+
+Its values (a = 5 or 2, c = +, h = c, d = 7, e = t, f = o-, n = ϕ, o = ø, r = ɷ, s = ɱ, t = □, v/b = 9) are the values
+of the key above under other names (2 and 5 = a, 7 = d, T = e, W = r), and its three passages are runs 1, 3 and 4 of
+the reading above: two alignments, made separately, give the same decipherment. It covered three passages, not the
+166 signs.
+
+The one doubt that session left, "la" and "manchare" both beginning with the sign it read I, is settled by the
+reading above: the cipher has *madonna*, not the memorandum's *la donna*, so the sign is *m* in both words (and in
+*marchese*), and there is no look-alike pair or encipherer's slip to explain.
+
 ## The sheet
 
 - ASSi, Concistoro 2308, fasc. 2 "Lettere in cifra", pencil no. 8 (twice: on the memorandum and on the slip); DECODE

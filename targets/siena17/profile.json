@@ -89,7 +89,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-10-15",
-  "last_date": "2026-10-17"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -134,9 +134,24 @@
    ],
    "what": "This project compared the report's key figures for nos. 17, 15 and 5 sign by sign: shared shapes take different values (the square-U sign is i in no. 17, n in no. 15, o in no. 5). Three keys, three entries.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "No. 17: George Lasry's key table (signs cut from the manuscript) matched by shape and count to the sign names of the project's own 24 Sept transcription (project_attempt/no17.txt, agent A, made before his work); our 283 tokens deciphered with his key, without fitting, and aligned with his reading: 252 agree (89.0%) with the first identification, 263 (92.9%) after re-identifying three signs by count (our 7 = his open A, SS = his P '+δ', 5o = his T); the rest fall on his own uncertain words ('el Mustetto', 'Otto', 'lco[..]stren') and on our 6, which merges his O and V. research/siena2308/verify_lasry.py no17.",
+   "result": "worked"
   }
  ],
- "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-18",
+   "verdict": "not applicable",
+   "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"
+  },
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
@@ -166,7 +181,8 @@
    }
   ],
   "verification": [
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "provenance": "contributed",
   "credits": [

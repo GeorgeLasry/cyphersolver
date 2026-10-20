@@ -90,7 +90,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-10-15",
-  "last_date": "2026-10-17"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -143,6 +143,16 @@
    ],
    "what": "Report key figures of nos. 5, 15 and 17 compared sign by sign: a different key from both.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "R4794: his key on the project's own 24 Sept transcription (project_attempt/r4794.txt): 83.8% (134/160); his key table has no H and no R column though his reading has h 7 times and r 11 times; our A aligns with r every time and our N with h; with those two values added, 93.1% (149/160). research/siena2308/verify_lasry.py r4794, r4794b.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -175,7 +185,8 @@
    }
   ],
   "verification": [
-   "historical consistency"
+   "historical consistency",
+   "independent verification"
   ],
   "provenance": "contributed",
   "credits": [
