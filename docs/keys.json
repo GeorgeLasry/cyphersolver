@@ -1,5 +1,20 @@
 {
  "keys": [
+{
+ "id": "k-lasry-bagno1652",
+ "label": "Guidi di Bagno, Paris 1652",
+ "kind": "scholar's key",
+ "by": "George Lasry with Astra and Opus 5.5",
+ "year": 1652,
+ "found": 2026,
+ "note": "Rebuilt from the ciphertext; CTTS ML transcription.",
+ "image": {
+  "src": "bagno1652_key.png",
+  "credit": "George Lasry, CTTS snapshot, 20 October 2026",
+  "caption": "Reconstructed working key",
+  "page": "bagno1652.html"
+ }
+},
  {"id": "k-sweden4306-lasry", "label": "R4306: alphabetical numerical key", "kind": "scholar's key", "by": "George Lasry; Claude Opus 5.5", "year": null, "found": 2026, "note": "Transcribed with CTTS, then solved with Opus 5.5. Alphabet 30–52, nulls and four unresolved code identities; year of use unproved.", "image": {"src": "sweden4306_key.png", "credit": "George Lasry; manuscript glyphs from Riksarkivet, Chifferklaver låda II:133, via DECODE R4306", "caption": "Current working key; unobserved alphabet values and open codes are marked.", "page": "sweden4306"}},
  {"id": "k-siena2023-lasry", "label": "Siena nos. 20 and 23: Lasry working key", "kind": "scholar's key", "by": "George Lasry; GPT-6 Astra", "year": null, "found": 2026, "note": "4,254 cipher occurrences, 59 observed classes. Transcribed with CTTS, then solved by GPT-6 Astra. Spring 1413 proposed; historical names remain tentative. Later Lucca comparison supports Sforza? but is a different key.", "image": {"src": "siena2023_key.png", "credit": "George Lasry; glyphs from ASSi Concistoro 2308 fasc. 2 nos. 20 and 23 via DECODE R4808/R4811", "caption": "Current working key and CTTS glyphs, 17 October 2026; unresolved names and provisional nulls marked.", "page": "siena2023"}},
   {"id": "k-guiche1551", "label": "La Guiche's Rome cipher of 1551, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1551, "note": "Simple substitution of 22 invented signs for the 22-letter alphabet, a plain cross for b, ff+c for ss and one four-dot code sign; recovered from the ciphertext alone by swap annealing (fr-1530-despatches 5-gram). targets/guiche1551/NOTES.md."},
@@ -2156,6 +2171,12 @@
   {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."}
  ],
  "links": [
+{
+ "key": "k-lasry-bagno1652",
+ "target": "bagno1652",
+ "how": "rebuilt from",
+ "note": "Ciphertext-only recovery from R5622; 27 tentative code types retained."
+},
  {"key": "k-sweden4306-lasry", "target": "sweden4306", "how": "partial", "note": "Contributed Opus 5.5 key underlies the edited Dutch reading. Five manuscript lines reapplied literally; four code identities remain open."},
  {"key": "k-siena2023-lasry", "target": "siena2023", "how": "partial", "note": "Current key underlies the edited readings. Five physical lines (322 signs, 328 letters) match exactly after declared normalization; full editions not mechanically validated."},
   {"key": "k-guiche1551", "target": "guiche1551", "how": "rebuilt from", "note": "429 of 431 symbols of fr. 3138 f. 60v have a value; the struck-through opening reads in fragments"},
@@ -3950,7 +3971,6 @@
   "mellon29": "not read; no key known (Alberti's published ring tested and rejected)",
   "r8364": "place name read from five copies across four letters and an archive catalogue entry; the Walsingham key of 1571 (SP 106/2 f. 141A) not consulted",
   "nevers1595": "not read: key not identified; fr. 3995 no. 76 shares the sign family but not the values",
-  "bagno1652": "not read; no key found. Lasry's Francia 346 key was tested and structurally excluded because it reserves 6 as a separator while R5622 contains repeated 66 and 666.",
   "nevers1574": "read from the target manuscript's own interlinear decipherment and clear copies; the related Nevers no. 2 key of 1584 is not identical and did not read it",
   "schiner1516": "Read by Büchi and Schiess (1925) with keys they rebuilt for Schiner's correspondence and never printed; no key sheet is known, and the leaf is not digitised.",
   "indus": "undeciphered script: no key read it; published sign values (Parpola, Fairservis, Yajnadevam) tested against their own shuffles, not used",
