@@ -139,6 +139,16 @@ of the first five numbers (25 → p. 1 "given" G, 11 → p. 2 "rushing" R, 39 �
 4 → p. 5 "to" T; the TCP splits the drop-capital "NO", so its list has "given" at 26), and the line 5 table position
 by position. The run-over layout of all nine lines was checked again on both photographs.
 
+*20 Oct 2026 (David Scheers's photographs of printed pp. 156–159).* The 1652 pages run on without a gap: [157] ends
+"(to let him" with catchword "know", [158] begins "know that many ward". So there is no missing leaf. On [158],
+"when" is word 11 and "hand" word 19; Urquhart's numbers at positions 158 and 159 are 12 and 20, the same +1 on both
+(one extra token in his count before word 11). Positions 158 (W of overthroW) and 159 (H of His) therefore both
+come from printed page [158], and from 160 on Urquhart's page k is printed k−1 (160 n = 19 → "included", [159],
+exact). Urquhart used page 158 twice; the TCP "page duplicate" slot was standing in for that. Scheers's alternative
+for 159 (word 20 of [159] = "him", counting "so much" as one word and dropping "as") needs two changes against one.
+Position 158 is now supported by the page (W = "when", though not the first W, which is "ward"), so the
+octastich would measure 275/285 = 0.965 if it is counted.
+
 ## 6. The distich
 
 Reticuli Labs' rebuttal of 1 Sept 2026 (`src/reticuli_*`) says the Proquiritation rule fails at ten of 64 positions
@@ -151,7 +161,10 @@ first-occurrence test on Reticuli's tokenised Proquiritations gives 34 of 64 hit
 `NTMAMNDN_OHTISEABRPTTSGSNTAATVTD / ASOTHDOSTTTBHPBTHBIPFSWTLVWTABV_`, not the claimed prayer. Page-index variants
 (k → page k or k+1…3 of *The Jewel* or of *Logopandecteision*, printed or physical, lines restarting at page 1) sit
 inside the shuffled control (mean 0.50, max 0.62 of 64). The distich is another construction, or this one on a text
-not tried (the six-line verse under it, the *Parva peto* couplet, the 1653 sheets), and it stays open.
+not tried (the six-line verse under it, the *Parva peto* couplet, the 1653 sheets), and it stays open. 20 Oct 2026, Scheers's suggestions (`distich_scheers_variants.py`): last letter of the k-th
+word, n-th letter of the page, line sums |L1+L2|, differences |L1−L2|, either line alone, interleaved, on *The
+Jewel* and *Logopandecteision*, every starting page: best −2.94/char (English 4-gram), five shuffled controls
+−2.72 to −2.97. Chance.
 
 ## 8. Measuring sense (`measure_sense.py`, `measure_sense.txt`; 5 Oct 2026)
 
@@ -180,7 +193,7 @@ numbers (272, 82 distinct, IC 0.021) and called a book cipher by shape, "not att
 text was the book it is printed in, and the poem said so.
 
 ## Remaining gaps
-- octastich position 149 (one letter of line 5) and position 158 (TCP gap page) - blocker: needs-physical-access; p. 149 word 2 is "Colonel" on the EEBO images too (Scheers), so 149 is a slip in the book; the leaf counted as p. 158 still needs the 1652 page images
+- octastich position 149 (one letter of line 5) - blocker: illegible; p. 149 word 2 is "Colonel" on the EEBO images too (Scheers), so 149 is a slip in the book. Position 158 resolved 20 Oct 2026 from Scheers's photographs (printed [158] used twice)
 - octastich 9 other positions (55, 66, 106, 151, 207, 232, 239, 250, 283) - blocker: illegible (writer's/compositor's slips; numbers re-checked on the 1983 photographs, letter fixed by context only)
 - distich, 64 numbers - blocker: no-key-material; claimed Proquiritation rule gives 34/64, chance; page-index variants on The Jewel and Logopandecteision at chance; key text not identified
 
