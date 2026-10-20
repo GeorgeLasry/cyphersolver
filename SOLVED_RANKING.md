@@ -641,3 +641,7 @@ Groffey to Rákóczi (p44, 3.05) sits alongside Adams no. 88: a preserved key, b
 The **letters of Desiderio l’Abbé to Nevers, 1577** (BnF fr. 3198 nos. 30, 37, 38) are provisionally placed at **3.10**: a homophonic figure cipher with a word-space sign, key recovered from the ciphertext by an outside contributor (AngusRobinson, PR #20) and checked here against the images, the project’s earlier transcription and a shuffle control; Polish and imperial court politics of 1577, no reading in print.
 
 The **Desmarets letter of 4 June 1710** (DECODE R10198) is provisionally placed at **2.40**: a numerical code read with Tomokiyo's published table, applied on the suggestion of an outside contributor (yuanyi-350, issue #28) and checked here as one continuous stream (456 of 471 groups attested). The table was reconstructed from this same letter, so it adds a check and a reading of the unglossed tail, not a new key; Geertruidenberg peace-talk instructions of 1710.
+
+## Costabili 1493: catalogue classification correction (20 October 2026)
+
+Three clear Italian originals from Beltrame Costabili, DECODE R1095–R1097 (13 March, 22 April and 18 July 1493), were removed from the open cipher group. **Not a cipher; no cryptanalytic solution, difficulty score or solve credit.** Both photographs of each record were inspected. The earlier Costabili cipher letters remain open. [Write-up](https://dbourdeau.github.io/cyphersolver/costabili1493.html) · [Evidence](targets/costabili1493/NOTES.md).

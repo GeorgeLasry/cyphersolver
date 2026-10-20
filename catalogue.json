@@ -2528,29 +2528,29 @@
   {
    "counted": true,
    "ark": "",
-   "folio_note": "R1163/R1164 (17 Mar 1491) 4+4 pp.; R1165 (15 Jun 1491) 5 pp.; R1166 (21 Jun 1491) 4 pp.; R1167 (22 Dec 1491) 7 pp.; R1162 (27 Feb 1492) 2 pp.; R1168 (20 Mar 1492) 4 pp.; R1095–R1097 (13 Mar, 22 Apr, 18 Jul 1493) 1 p. each",
-   "seen": "catalogue",
+   "folio_note": "R1163 and R1164 have identical four-image sets (SHA-256 verified 20 Oct 2026). R1165 has six attached images; R1168 nine.",
+   "seen": "image",
    "scored": "cryptoole",
    "prior_art": "open (checked 14 Oct 2026)",
    "score_note": "Scored from the Cryptoole/source page on 14 Oct 2026 (research/cryptoole/)",
    "id": 348,
    "year": 1491,
-   "date": "17 Mar 1491 – 18 Jul 1493",
-   "title": "Beltrame Costabili, governor of the see of Esztergom, to Eleonora d'Aragona and Ercole I d'Este: ten partly ciphered despatches",
-   "correspondents": "Beltrame Costabili → Eleonora d'Aragona, Duchess of Ferrara (1491–92); → Ercole I d'Este (1493)",
+   "date": "17 Mar 1491 – 20 Mar 1492",
+   "title": "Beltrame Costabili to the Este court: six distinct partly ciphered despatches of 1491–92 (seven DECODE records)",
+   "correspondents": "Beltrame Costabili → Eleonora d'Aragona and the Este court",
    "place": "Esztergom (Hungary) → Ferrara",
    "language": "Italian",
    "region": "Central Europe",
    "period": "15th century",
-   "shelfmark": "Modena, Archivio di Stato, Ambasciatori Ungheria b. 2/20 nos. 6, 7, 12, 16, 44; b. 2/21 no. 8; b. 2/22 nos. 5, 6, 9 (DECODE R1162–R1168, R1095–R1097)",
+   "shelfmark": "Modena, Archivio di Stato, Ambasciatori Ungheria b. 2/20 nos. 6, 7, 12, 16, 44; b. 2/21 no. 8 (DECODE R1162–R1168)",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole HU1492-2 (DECODE 'Partially decrypted', 10 records). DECODE: Italian clear text with cipher passages, 'homophonic or simple substitution', graphic signs; images need a login and DECODE notes Vestigia (vestigia.hu) holds related items. research/oldest/CANDIDATES.md B2 lists these letters but they were not checked (only Sadoleto 1482–83 was, in targets/sadoleto1482/). Whether 'partially decrypted' means interlinear or filed contemporary decipherments, as it did for Sadoleto, is not known.",
+   "status": "Reviewed 20 Oct 2026: all 42 photographs on the original ten DECODE records retrieved. R1095–R1097 (1493) are clear Italian, not cipher letters; classification correction in targets/costabili1493/ and costabili1493.html. All four R1163/R1164 photograph pairs are byte-for-byte identical. Six distinct earlier despatches remain open; some passages have contemporary interlinear glosses. No new key or full decipherment is claimed.",
    "why": "Ferrara's man at the Hungarian court during the succession crisis after Matthias Corvinus's death (1490–91), the fate of Queen Beatrice of Aragon, Eleonora's sister, and Ippolito d'Este's Esztergom archbishopric.",
    "importance": 3,
    "solvability": 3,
    "difficulty": 3,
-   "verify": "Log in to DECODE and download R1162–R1168 and R1095–R1097. Check each leaf for interlinear or filed decipherments as in the Sadoleto series. Search Vestigia for 'Costabili' clear copies. Then test the Ferrarese Hungary keys from targets/sadoleto1482/ (key_working.md) against the unread passages.",
+   "verify": "Transcribe cipher and glosses separately on R1162–R1168, counting the R1163/R1164 images once. Then test the Ferrarese Hungary keys; the present pass establishes duplication and separates clear letters, not a solution.",
    "links": [
     {
      "label": "DECODE R1162",
@@ -2561,7 +2561,17 @@
      "href": "https://cryptoole.satoru.net/case.html?id=HU1492-2"
     }
    ],
-   "cryptoole": "HU1492-2"
+   "cryptoole": "HU1492-2",
+   "decode_ids": [
+    1162,
+    1163,
+    1164,
+    1165,
+    1166,
+    1167,
+    1168
+   ],
+   "outcome": "attempted, open"
   },
   {
    "counted": true,
@@ -2662,8 +2672,8 @@
    "id": 351,
    "year": 1654,
    "date": "15 Sept 1654 NS",
-   "title": "Louis II de Bourbon, Prince of Condé, to Barrière, his agent in London (intercepted)",
-   "correspondents": "Louis II de Bourbon, Prince of Condé → Henri de Taillefer, sieur de Barrière",
+   "title": "Barrière–Condé intercepts: 15 September 1654 and 18 June 1655",
+   "correspondents": "Barrière → Louis II de Bourbon, Prince of Condé (15 Sept 1654); Condé → Barrière (18 Jun 1655)",
    "place": "Condé's camp (Spanish Netherlands) → London",
    "language": "French (some clear text translated into English)",
    "region": "France",
@@ -2671,7 +2681,7 @@
    "shelfmark": "BL Add MS 4200 f. 98 (DECODE R8395, 1 p.); short ciphertext f. 101 (DECODE R8398, 1 p.)",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole XX1654-1 (open). Cryptiana unsolved.htm and louisxiv0.htm ('Prince of Condé (1654-1655)'): the 1654 letter f. 98 seems undeciphered and in a different cipher from the known 1655 Condé–Barrière cipher (f. 108); whether f. 101 reads with the 1655 key is untested. DECODE R8395/R8398: Thurloe papers volume, clear text in English and French, images by login. Copies of Condé–Barrière letters (partly cipher) are also in Bodleian MS. Rawl. A (Thurloe papers).",
+   "status": "Cryptoole XX1654-1 (open). Cryptiana unsolved.htm and louisxiv0.htm ('Prince of Condé (1654-1655)'): the 1654 letter f. 98 seems undeciphered and in a different cipher from the known 1655 Condé–Barrière cipher (f. 108); whether f. 101 reads with the 1655 key is untested. DECODE R8395/R8398: Thurloe papers volume, clear text in English and French, images by login. Copies of Condé–Barrière letters (partly cipher) are also in Bodleian MS. Rawl. A (Thurloe papers). Reviewed 20 Oct 2026: R8395 is Barrière to Condé, as the manuscript heading/source list state; R8398 is the reverse direction. Both images and R8405/R8406 key images retrieved. No validated diacritic-preserving reading established.",
    "why": "Condé, in Spanish service after the Fronde, courting Cromwell through his London agent in the year of the Anglo-French rapprochement; Thurloe intercepted the letter.",
    "importance": 3,
    "solvability": 3,
@@ -2763,7 +2773,7 @@
    "shelfmark": "HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93 (manuscript shelfmark unknown)",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole XX1678-1 (open). 22 groups in two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm.",
+   "status": "Cryptoole XX1678-1 (open). 20 numbers in the quoted passage: 445 and 342 before two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm. Count corrected 20 Oct 2026 from Tomokiyo’s literal quotation: 2 + 10 + 8 = 20; the two runs alone contain 18. This is a transcription/count correction, not a decipherment.",
    "why": "Ormond testing his son with a family cipher in the Popish-Plot year; small, but from a well-documented family of reconstructed Ormond keys.",
    "importance": 2,
    "solvability": 1,
@@ -2935,7 +2945,7 @@
    "shelfmark": "Bodleian, MS Rawlinson A 67 (Thurloe papers vol. lxvii), p. 270; printed Thurloe State Papers vii 869",
    "cls": "C",
    "source": "Cryptoole",
-   "status": "Cryptoole XXXXXX-1 (open). About 21 numbers in three runs (6, 10 and 5 figures, values 4-72), e.g. '61 50 57 62 72 66 54 61 68 60'; printed without decipherment.",
+   "status": "Cryptoole XXXXXX-1 (open). About 21 numbers in three runs (6, 10 and 5 figures, values 4-72), e.g. '61 50 57 62 72 66 54 61 68 60'; printed without decipherment. Reviewed 20 Oct 2026: all 21 numbers extracted from Birch VII p. 869 and screened against twelve existing transcribed key tables (research/catalogue_review_20261020/brussels_key_screen.json). No coherent reading identified; some tables are partial, so their families are not excluded.",
    "why": "A royalist note from Brussels in the weeks before the Restoration; small but cheap to test.",
    "importance": 1,
    "solvability": 1,
@@ -2955,7 +2965,8 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XXXXXX-1"
     }
    ],
-   "cryptoole": "XXXXXX-1"
+   "cryptoole": "XXXXXX-1",
+   "outcome": "attempted, open"
   },
   {
    "counted": true,
@@ -2977,7 +2988,7 @@
    "shelfmark": "Madrid, Biblioteca Nacional, Mss/994, ff. 83-90 (ciphertext ff. 85-87); BDH bdh0000174344",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries.",
+   "status": "Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries. Review 20 Oct 2026: Caballero explicitly presents a tentative interpretation with unspecified abbreviation expansions and acknowledges excess freedom. Its Latin reading is unverified; it is not accepted here as a recovered deterministic key or a verified partial solution.",
    "why": "Sirtori's own cipher, and a test of the claim by Spain's cipher secretary that he had anticipated it.",
    "importance": 3,
    "solvability": 4,
