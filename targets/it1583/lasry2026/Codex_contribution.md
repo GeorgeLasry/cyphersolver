@@ -82,13 +82,9 @@ The companion mentions “contra Cremona”, “la signoria de Venetia”, “sc
 
 In spring 1446 Sforza was under pressure in the Marche, while Venice attacked Visconti’s domains. He would become duke of Milan in 1450. This background helps explain the letters’ language of obligations, security and Venice’s position, but does not identify the unresolved actor or a specific military operation in the companion. See [Antonio Menniti Ippolito, Sforza, Francesco I (2014)](https://www.treccani.it/enciclopedia/francesco-i-sforza_(Enciclopedia-machiavelliana)/).
 
-### Key and transcription evidence; remaining gaps
+### Nature of the cipher
 
-The companion supplies additional contexts for the existing key and new signs: (20)/(23)=N in CREDENDO/SIGNORIA and VENIRE; (27)/(18)=O; (14)=SE; (29)=M in SIGNOR MIO; and (28)=QVA in both A LA QVALE and DIE QVARTO. The second QVA context supports the date reading independently of the first phrase. (12)=PER is supported by the crossed-b glyph and PER ALTRA; this supersedes the earlier DI proposal. (21)=T is retained; TT is possible but not established. (17)=V does not by itself establish an encoded VS expansion.
-
-Image checks separated the looped V glyph from hooked CON in the companion: nine former #38 boxes became #19, while actual CON signs remain. An open E-shaped glyph corrects the second CREMONA. In f. 68’s last line, overlapping D/PER boxes described one crossed-b sign; the merged box gives PER SVSPECTO. The duplicated companion SE box was removed. These are transcription corrections grounded in the manuscript, not global key changes made to force words.
-
-Claude’s proposals were used as hypotheses, with bracketed alt[r]i, obl[i]ghi and defender[v?]i retained as editorial supplies. GENTE for (26), NE for #40+(11), and expansion of the signature are unproved. The boundary groups retain literal N/O and unknown signs. ET in “o non et volendo”, VAIA, RACONMANDO and the extra O O in “sarano o o spazate” remain visible; they are not silently normalized. Symbol (30) remains unknown in the palette but has no surviving box after the user’s deletion of an overwritten mark.
+Both letters use a shared homophonic cipher: several different signs can represent the same letter, while other signs stand for common words or letter groups such as CHE, CON, PER and QVA. Cipher passages are interspersed with ordinary Italian writing. Most of the remaining unknown signs are probably nulls, titles or abbreviations, though their individual meanings remain uncertain.
 
 ### Added value and prior work
 
