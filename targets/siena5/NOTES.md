@@ -1,4 +1,4 @@
-# Siena no. 5? — a slip wholly in cipher on pieces of artillery, 16th century (DECODE R4794)
+# Siena R4794 (unnumbered) — a slip wholly in cipher on pieces of artillery, 16th century (DECODE R4794)
 
 Status: read; key recovered from ciphertext-only by George Lasry with CTTS and Claude (four number codes open). Contributed result, filed here 18 Oct 2026.
 
@@ -32,7 +32,9 @@ Daniel Bourdeau, pp. 31-32, section G. Quoted whole in [`lasry_report.md`](lasry
 - **Piece number.** The report calls it "No. 5?". The siena1421 inventory (24 Sept) lists **no. 5 = R4791**, a clear
   private letter to "Maffeo da Siena" (pencil "1460?"), and R4794 as unnumbered ("erased pencil 4/5";
   `project_attempt/r4794.txt` notes a faint "5" in the left margin). Either two sheets carry a 5 or one of the two
-  readings of the pencil number is wrong; a question for George. The slug follows the report.
+  readings of the pencil number is wrong; a question for George. **Settled 18 Oct 2026**: George's email lists R4794 as
+  "unnumbered, wrongly attributed by Lasry to No. 5". The page and ledgers now call it R4794 (unnumbered); the
+  folder and page slug stay `siena5` so existing links keep working.
 - The survey closed R4794 as too short for ciphertext-only; George's recovery shows it was not.
 
 ## One key, one entry

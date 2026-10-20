@@ -2,6 +2,8 @@
 
 Status: read in part; key recovered from ciphertext-only by George Lasry with CTTS and Claude (about 85%). Contributed result, filed here 18 Oct 2026.
 
+Status: in progress (20 Oct 2026): George Lasry's partial reading is filed; about 15% of the 282 signs (openings of points 2-3, one phrase) are workable from his CTTS transcription and the image, not yet retried here.
+
 Archivio di Stato di Siena, Concistoro 2308, fasc. 2 ("Lettere in cifra"), no. 17; DECODE
 [R4805](https://de-crypt.org/decrypt-web/RecordsView/4805) (Concistoro_2308_59), catalogued "1500-1599", no status.
 
@@ -36,10 +38,10 @@ His reading, translation and dating are not re-edited here.
 ## One key, one entry: the three section-G keys compared
 
 The report's contents page says "Pieces under one heading share a cipher key", but heading G ("Sixteenth-century
-Sienese ciphers") holds nos. 17, 15 and 5? and each piece has its own key section. The three key figures (report
+Sienese ciphers") holds nos. 17, 15 and R4794 and each piece has its own key section. The three key figures (report
 pp. 25, 28, 31) were compared sign by sign on 18 Oct 2026 (value, with the occurrence count from George's figure):
 
-| shape | no. 17 (R4805) | no. 15 (R4803) | no. 5? (R4794) |
+| shape | no. 17 (R4805) | no. 15 (R4803) | R4794 |
 |---|---|---|---|
 | square-bottomed U (Ш) | i (13) | n (10) | o (1); with dot d |
 | bold b / h | n (21) | o (4) | - |
@@ -52,7 +54,7 @@ pp. 25, 28, 31) were compared sign by sign on 18 Oct 2026 (value, with the occur
 | C (bold) | t (15) | - | a (3), e (1) |
 
 Every shape the keys share has a different value, and the systems differ in kind: no. 17 is a digit-like cursive
-alphabet with a "che" sign; no. 15 a Greek-like alphabet with Latin-letter code words (buf, abs, som, Za); no. 5? a
+alphabet with a "che" sign; no. 15 a Greek-like alphabet with Latin-letter code words (buf, abs, som, Za); R4794 a
 pigpen-like grid where a dot shifts a frame to another block of four letters, with a number nomenclator (26, 44, 67,
 74). **Three different keys, so three entries:** this one, [`siena15`](../siena15/NOTES.md) and
 [`siena5`](../siena5/NOTES.md). Heading G groups the pieces by period, not by key (as heading D says outright:
@@ -89,7 +91,7 @@ transcription with his key: independent verification of the reading he gives.
 
 ## Escalation
 
-- [x] siblings: every piece of fasc. 2 opened (siena1421 survey); nos. 15 and 5? compared sign by sign: different keys.
+- [x] siblings: every piece of fasc. 2 opened (siena1421 survey); no. 15 and R4794 compared sign by sign: different keys.
 - [x] clear-pages: P2 is the address only; no decipherment on the sheet.
 - [x] known-keys: R4760, R4768, R4778 tried on 24 Sept; the "cifra di Balìa" not identified among the filed keys.
 - [x] print: none known (siena1421 survey: Meister 1902, the 1952 inventory).

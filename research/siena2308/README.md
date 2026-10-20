@@ -28,7 +28,7 @@ Piece numbers are the pencil numbers on the sheets (Meister's numbering). "Lasry
 | **F. The imperial chancery cipher of 1496** | 18 | R4806 | [`targets/siena18/`](../../targets/siena18/NOTES.md) | key recovered ciphertext-only (here, and independently by Lasry) |
 | **G. Sixteenth-century Sienese ciphers** | 17 | R4805 | [`targets/siena17/`](../../targets/siena17/NOTES.md) | key recovered ciphertext-only, c. 85% (Lasry) |
 | | 15 | R4803 | [`targets/siena15/`](../../targets/siena15/NOTES.md) | key partly recovered, 75 of 240 signs (Lasry) |
-| | 5? | R4794 | [`targets/siena5/`](../../targets/siena5/NOTES.md) | key recovered ciphertext-only (Lasry) |
+| | (unnumbered) | R4794 | [`targets/siena5/`](../../targets/siena5/NOTES.md) | key recovered ciphertext-only (Lasry) |
 | **H. Pieces with an interlinear or separate plaintext** | 9 | R4798 | [`targets/siena9/`](../../targets/siena9/NOTES.md) | key from the decipherment below the lines (Lasry) |
 | | 13, 16 | R4801, R4804 | [`targets/siena13/`](../../targets/siena13/NOTES.md) | key from the clear copy no. 16 (Lasry with CTTS and Claude Fable 5.1) |
 | | 10 | R4799 | [`targets/siena10/`](../../targets/siena10/NOTES.md) | deciphered at the time, interlinear |
@@ -58,7 +58,7 @@ it the letter it aligns with. The identifications are commented in the script. R
 |---|---|---|---|---|
 | no. 17 | `targets/siena17/project_attempt/no17.txt` (agent A) | 283 | **92.9%** (89.0% before three signs were re-identified by count) | [siena17](../../targets/siena17/NOTES.md) |
 | no. 11 | `targets/siena11/transcripts/no11.txt` (agent B) | 378 sign units | **94.4%** (66.7% with eight signs unidentified) | [siena11](../../targets/siena11/NOTES.md) |
-| R4794 ("5?") | `targets/siena5/project_attempt/r4794.txt` | 160 | 83.8%; **93.1%** with r and h added (his table has no H and no R column) | [siena5](../../targets/siena5/NOTES.md) |
+| R4794 (unnumbered) | `targets/siena5/project_attempt/r4794.txt` | 160 | 83.8%; **93.1%** with r and h added (his table has no H and no R column) | [siena5](../../targets/siena5/NOTES.md) |
 | no. 20 | `targets/siena2023/project_attempt/no20.tok` (agent C) | 1,128 | **71.1%** one letter per sign of ours, 78.6% allowing two, by EM from the shared sign names; **control** (his no. 23 plaintext) 14.8% / 23.0% | [siena2023](../../targets/siena2023/NOTES.md) |
 
 His readings of nos. 11, 17 and R4794 come out of our own transcriptions with his keys at 93-94%, and our no. 20
@@ -78,7 +78,8 @@ fascicle; it now stands only for nos. 7, 19 and 21, where he failed too.
 - **No. 12**: DECODE R1858 is marked "Decrypted" with no document attached; this project took that status on trust on
   24 Sept. Lasry's reading of 17 Oct is the first decipherment found (`targets/siena12/NOTES.md`).
 - **No. 5?** (R4794): the 24 Sept inventory gave no. 5 to R4791 (a clear letter, pencil "1460?") and read the slip's
-  pencil number as an erased 4 or 5; Lasry calls the slip "No. 5?".
+  pencil number as an erased 4 or 5; Lasry's report called the slip "No. 5?", and on 18 Oct 2026 he withdrew that:
+  R4794 is unnumbered. Slug `siena5` kept.
 - **Nos. 22-23**: the inventory numbered R4810 "22-23"; Lasry lists R4810 among the cleartext letters and R4811 as no. 23.
 
 ## Files here

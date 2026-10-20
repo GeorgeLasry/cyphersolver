@@ -2,6 +2,8 @@
 
 Status: read in part (75 of 240 signs), key partly recovered from ciphertext-only by George Lasry with CTTS and Claude Opus 5.5. Contributed result, filed here 18 Oct 2026.
 
+Status: in progress (20 Oct 2026): George Lasry's partial reading is filed; 165 of 240 signs and the code words buf/abs/som/Za are workable from his CTTS transcription and the clear context, not yet retried here.
+
 Archivio di Stato di Siena, Concistoro 2308, fasc. 2, no. 15; DECODE
 [R4803](https://de-crypt.org/decrypt-web/RecordsView/4803) (Concistoro_2308_57), catalogued "1500-1599", no status.
 
@@ -34,9 +36,9 @@ Daniel Bourdeau, pp. 28-30, section G. Quoted whole in [`lasry_report.md`](lasry
 
 ## One key, one entry
 
-Compared sign by sign with the key figures of nos. 17 and 5? (same heading G of the report): every shared shape has
-another value (Λ = c here, e in no. 5?; θ = e here, z in no. 5?; Ш = n here, i in no. 17, o in no. 5?), and the
-systems differ (Latin-letter code words here; a "che" sign in no. 17; a dotted pigpen grid and number codes in no. 5?).
+Compared sign by sign with the key figures of no. 17 and R4794 (same heading G of the report): every shared shape has
+another value (Λ = c here, e in R4794; θ = e here, z in R4794; Ш = n here, i in no. 17, o in R4794), and the
+systems differ (Latin-letter code words here; a "che" sign in no. 17; a dotted pigpen grid and number codes in R4794).
 A different key: its own entry. Table and reasoning in [`siena17/NOTES.md`](../siena17/NOTES.md). The filed key
 R4764 ("Cifra con m. Bernardino Buoninsegni oratore a S. M.tà"), the survey's candidate, was inconclusive.
 
@@ -59,7 +61,7 @@ Not used in George's reading.
 
 ## Escalation
 
-- [x] siblings: every piece of fasc. 2 opened; nos. 17 and 5? compared sign by sign: different keys.
+- [x] siblings: every piece of fasc. 2 opened; no. 17 and R4794 compared sign by sign: different keys.
 - [x] clear-pages: the clear text of the letter is the context George used; no decipherment on the sheets.
 - [x] known-keys: R4764 (Buoninsegni, orator to His Majesty) compared on 24 Sept: inconclusive.
 - [x] print: none known for this letter (Cantagalli 1962 and Hook 1979 cited by the report for context only).
