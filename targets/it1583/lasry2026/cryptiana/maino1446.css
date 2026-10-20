@@ -1,0 +1,24 @@
+/* Scoped styles: one item for insertion in an existing Cryptiana page. */
+#maino1446{font-family:"Times New Roman",Times,serif;font-size:12pt;line-height:1.45;color:#171717;background:#fff;padding-bottom:2em}
+#maino1446 *{box-sizing:border-box}
+#maino1446 h2{margin:1.5em 0 1em;padding:.3em 1em;border:solid #d00;border-width:2px 0;background:#f99;color:#b00000;font-size:12pt}
+#maino1446 h4{font-size:11pt;margin:1.5em 1em .55em}
+#maino1446 p{max-width:43em;margin:.5em 1em;text-indent:1.5em}
+#maino1446 a{color:#234f88;overflow-wrap:anywhere}
+#maino1446 figure{margin:1.2em 1em;max-width:72em}
+#maino1446 figure img{display:block;width:auto;max-width:100%;height:auto;border:1px solid #ccc}
+#maino1446 figcaption{max-width:58em;color:#663300;font-size:10pt;margin-top:.45em}
+#maino1446 .deciphered{font-weight:700;color:inherit}
+#maino1446 .table-wrap{margin:1em;overflow-x:auto}
+#maino1446 .pieces{border-collapse:collapse;font-size:10.5pt;max-width:65em;width:100%;margin:0}
+#maino1446 .pieces th,#maino1446 .pieces td{padding:.5em .6em;border:1px solid #aaa;text-align:left;vertical-align:top}
+#maino1446 .pieces th{background:#eee}
+#maino1446 caption{text-align:left;font-size:10pt;color:#663300;margin-bottom:.35em}
+#maino1446 .full-letter{max-width:46em;border-left:3px solid #d4a2a2;margin:1.2em 1em;padding:.2em 0}
+#maino1446 .full-letter p{text-indent:0;margin:.65em .8em}
+#maino1446 .letter-date{color:#663300}
+#maino1446 .line-number{display:inline-block;min-width:1.9em;font-size:9pt;color:#777;vertical-align:baseline}
+#maino1446 ul{max-width:51em;margin:.5em 1em;padding-left:1.6em}
+#maino1446 li{margin:.6em 0}
+@media(max-width:500px){#maino1446 h2{padding:.45em .65em}#maino1446 p{margin:.6em .75em}#maino1446 figure{margin:1em .6em}#maino1446 .full-letter{margin:1em .6em}#maino1446 .pieces{font-size:9pt}#maino1446 .pieces th,#maino1446 .pieces td{padding:.35em}#maino1446 .table-wrap{margin:.75em .6em}}
+@media print{#maino1446 figure{break-inside:avoid}#maino1446 h2,#maino1446 h4{break-after:avoid}}

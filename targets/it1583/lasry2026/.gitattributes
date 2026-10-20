@@ -1,0 +1,4 @@
+# Preserve CTTS exports and manifest byte hashes across platforms.
+* -text whitespace=cr-at-eol
+# Native exports retain their trailing separators and final blank line.
+ctts/*.txt whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
