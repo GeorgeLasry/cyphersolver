@@ -99,6 +99,25 @@ qualloco, tesoro, figliolo; Latin pecunia, thesaurus, antoniusmaria, marcusanton
 range (−1.6 to −2.1); top 25 in `work/hs/crib_results_top25.txt`. On a control the true crib placement recovers the
 whole text and every wrong offset is rejected. None of these words is in the text under a letter substitution.
 
+## Machine-assisted transcription (20 Oct 2026)
+
+`work/machine/seg2.py` segments the image into 183 glyphs (detached dots kept as marks with their position);
+`clus.py` clusters the base shapes (HOG features, Ward, k = 35; silhouette ≈ 0.07, weak). The clusters recover the
+main families (Ǝ 17+4+2, arches, forks, ꭗ, barred signs, `work/machine/clusters.png`) but mix the round signs. Every
+glyph was then labelled by eye against the clusters: `transcription_v3.txt`, 161 signs, 38 classes, which agrees
+closely with `transcription.txt`. Calibrated homophonic solver on v3: Italian −2.31 vs shuffles −2.36/−2.37, Latin
+−2.38 vs −2.34/−2.36. No signal; the earlier transcriptions are not hiding a misreading that the solver would catch.
+
+## Syllabic (abugida) test (20 Oct 2026)
+
+`work/syllabic/`: each sign = base family + mark class (`dv.txt`, `dv.fm`: 22 families, 7 mark classes: plain,
+stub, dot, middle leg, flat top, crossbar, hook; dots from the automatic segmentation). Two models: `syl.c` (vowel
+free per sign) overfits and fails on its controls even with the true families, so it has no power; `syl2.c`
+(Ethiopic-style: one consonant per family, one vowel per mark class, ~29 parameters) solves 3/4 Italian syllabary
+controls of 161 signs (the fourth is a search failure; the true key scores higher). On the Devil's text it gives
+Italian −2.55 / −2.55 (LTR/RTL), Latin −2.54 / −2.51, against shuffles −2.49 to −2.54, and no words. This
+decomposition is one hypothesis among several; others (marks mapped differently across families) remain untested.
+
 ## Remaining gaps
 
 - Reading: none. Blocker: illegible (the woodcut's sign identities are uncertain; two transcriptions disagree on

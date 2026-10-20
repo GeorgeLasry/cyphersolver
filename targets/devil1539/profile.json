@@ -108,9 +108,9 @@
     "models": [
       "claude"
     ],
-    "sessions": 1,
+    "sessions": 2,
     "first_date": "2026-10-16",
-    "last_date": "2026-10-16"
+    "last_date": "2026-10-20"
   },
   "solution": [
     {
@@ -260,6 +260,24 @@
         "language-model scoring"
       ],
       "date": "2026-10-16"
+    },
+    {
+      "kind": "transcription",
+      "what": "Machine segmentation (183 glyphs) and HOG clustering, then glyph-by-glyph labels: transcription_v3.txt, 161 signs, 38 classes; agrees with the first transcription. Calibrated solver on it: Italian -2.31, Latin -2.38, shuffles -2.34 to -2.37.",
+      "result": "failed",
+      "date": "2026-10-20"
+    },
+    {
+      "kind": "hypothesis",
+      "what": "Abugida model (one consonant per sign family, one vowel per mark class) calibrated on Italian syllabary controls (3/4 solved); on the Devil's text Italian and Latin, both directions, -2.51 to -2.55 against shuffles -2.49 to -2.54.",
+      "result": "failed",
+      "technique": [
+        "key-structure hypothesis",
+        "simulated annealing",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "date": "2026-10-20"
     }
   ],
   "outcome": {
