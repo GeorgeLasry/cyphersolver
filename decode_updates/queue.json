@@ -8199,32 +8199,36 @@
    }
   },
   "bagno1652": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/bagno1652.html",
-   "key": {
-    "none": "No matching 1652 Paris nunciature key or decipherment found; Lasry's Francia 346 key is structurally incompatible."
-   },
-   "cite": null,
-   "fields": {
-    "start_day": "5",
-    "start_month": "1",
-    "end_day": "5",
-    "end_month": "1",
-    "city": "Paris",
-    "author": "Niccolò Guidi di Bagno",
-    "sender": "Niccolò Guidi di Bagno",
-    "receiver": "Secretariat of State"
-   },
-   "records": {
-    "R5622": {
-     "decode_status": "N/A",
-     "proposed": "N/A",
-     "note": "Paris, 5 January 1652: Niccolò Guidi di Bagno to the Secretariat of State. AAV Francia 104 ff. 5r-7v has a clear cover and four pages of unseparated numeric cipher with some Italian words left clear. All five images checked; no DECODE transcript or attached decipherment. Lasry's Francia 346 key is excluded because 6 is its separator but this letter repeatedly writes 66 and 666. No matching key, clear copy, online decifrati register or edition found; remains unread. See write-up and targets/bagno1652/NOTES.md.",
-     "reading": null,
-     "reading_not_needed": true,
-     "sent": false
-    }
-   }
-  },
+ "writeup": "https://dbourdeau.github.io/cyphersolver/bagno1652.html",
+ "key": {
+  "file": "targets/bagno1652/key.txt",
+  "lang": "Italian",
+  "how": "Reconstructed by George Lasry with Astra and Opus 5.5, ciphertext-only."
+ },
+ "cite": "This letter was not part of George Lasry, Beáta Megyesi and Nils Kopal, \"Deciphering papal ciphers from the 16th to the 18th Century\", Cryptologia 45(6), 479–540 (2021; published online 2020), DOI 10.1080/01611194.2020.1755915 (scope confirmed by George Lasry).",
+ "fields": {
+  "start_day": "5",
+  "start_month": "1",
+  "end_day": "5",
+  "end_month": "1",
+  "city": "Paris",
+  "author": "Niccolò Guidi di Bagno",
+  "sender": "Niccolò Guidi di Bagno",
+  "receiver": "Secretariat of State"
+ },
+ "records": {
+  "R5622": {
+   "decode_status": "N/A",
+   "proposed": "Decrypted",
+   "note": "Solved by George Lasry. Transcription was made with CTTS (CrypTool Transcriber and Solver), using its machine-learning model and manual correction. Ciphertext-only cryptanalysis was performed with GPT-6 Astra and Anthropic Claude Opus 5.5 under Lasry's direction. The submission covers all four cipher pages, ff. 6r–7v, in reading order P3, P4, P5, P1. The record also includes a clear opening leaf, f. 5r; it is not included in the four-page cipher reading. 35 tentative and two unresolved cipher values remain explicitly marked.",
+   "reading": "decode_updates/decryptions/R5622.txt",
+   "sent": false,
+   "transcription": [
+    "targets/bagno1652/transcription/all.txt"
+   ]
+  }
+ }
+},
   "r4817": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/r4817.html",
    "key": {
