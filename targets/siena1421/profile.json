@@ -54,7 +54,7 @@
    "transcription": {
     "by": "llm from images",
     "image_quality": "good",
-    "notes": "Florentine cipher (Donato Acciaiuoli); 'PLUS O' merged as one sign"
+    "notes": "Florentine cipher (Donato Acciaiuoli); 'PLUS O' merged as one sign; 20 Oct 2026: his '+o' (e) and 'o+' (d) are single signs, our 'PLUS O' and 'O PLUS'"
    },
    "read": "not read",
    "date": "13 June 1478",
@@ -255,10 +255,10 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "No decipherment of these pieces in print or online; the bundle's read-at-the-time pieces (nos. 8, 10, 13/16, 22) are other keys",
-   "found": "not found",
-   "used": false
+   "exists": "unpublished",
+   "where": "George Lasry, Cryptiana-style page 'The cipher documents of Concistoro 2308, fasc. 2' sent 18 Oct 2026 (outside the repository): keys and readings of R4794 (his 'no. 5'), nos. 9, 11, 12, 13, 15 (part), 17, 18, 20, 23, solved in Oct 2026, after this project's attempt of 24 Sept. No. 8 (R4797) was deciphered at the time: the clear memorandum above the slip is its decipherment (aligned 20 Oct 2026).",
+   "found": "after reading",
+   "used": true
   },
   "inputs": [
    "images",
@@ -275,9 +275,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 3,
+  "sessions": 4,
   "first_date": "2026-09-24",
-  "last_date": "2026-10-18"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -408,6 +408,54 @@
    "kind": "verification",
    "what": "Deduplicated under the one-key rule after George Lasry's contribution siena2023 (PR #41): nos. 20 and 23 (R4808, R4811), one system, removed from this entry's documents, gaps, page and ledgers; this folder's transcriptions and solver inputs for them (transcripts/no20*, no23*) moved to targets/siena2023/project_attempt/. The earlier failed solver steps on them are kept above as the record. This entry now keeps nos. 7, 9, 11, 15, 17, 19, 21 and R4794 unread, and no. 1 (1421) and nos. 2, 26-28 unphotographed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "access",
+   "what": "Downloaded R4797 (no. 8, image I27940) with the DECODE cookie; it was never fetched in September.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "No. 8 (R4797): aligned the cipher slip with the clear memorandum above it. The slip is the tail of a letter, clear and cipher mixed; its clear lead words 'Anchora d(iss)e' and 'anti(ve)duto questo' are the memorandum's underlined heads, and three cipher passages fit the memorandum letter by letter with consistent homophones: '(÷) 59t95 75□ø I2 7øϕϕ2 9ff2ϕ +c5' = '[el duca di Milano] aveva dato la donna biancha' (aveva = ABCBA), 'I2ɷ+ctɱt' = 'marchese' twice, 'o-tɷɷ2ɷ2' = 'ferrara', 't ϕøϕ ff9ø I2ϕ+c2 ot +ct' = 'e non può manchare che'. The memorandum is the contemporary decipherment: read at the time, against George Lasry's 'possible but speculative'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "No. 17: George Lasry's key table (signs cut from the manuscript) matched by shape and count to our sign names (transcripts/no17.txt, agent A, 24 Sept); our 283 tokens deciphered with it and aligned with his reading: 252 agree (89.0%) with the first identification, 263 (92.9%) after re-identifying three signs by count (our 7 = his open A, SS = his P '+δ', 5o = his T); the rest fall on his own uncertain words ('el Mustetto', 'Otto', 'lco[..]stren').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "No. 11: his key on our transcription (agent B): 66.7% with 8 signs unidentified, 94.4% (357/378 sign units) once his two-stroke signs '+o' = e and 'o+' = d are read as our token pairs PLUS O / O PLUS and ODAG = h, D = a, RHO = o; his nulls 'g#', '31', '87', m^n, /// are our G HASH, 3 1, 8^dot 7, M^n, SL3. Our two cipher blocks are his two runs line for line.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "R4794 (his 'no. 5'): his key on our 24 Sept transcription: 83.8% (134/160); his table has no H and no R column though his reading has h 7 times and r 11 times; our A aligns with r every time and N with h; with those two values 93.1% (149/160).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "control",
+   "what": "No. 20 (now siena2023): our independent transcription (agent C, 1,230 tokens, other sign names) aligned with his reading by EM from his key values for the sign names both transcriptions share: 71.1% of our tokens carry the majority letter of their sign (78.6% allowing two letters for signs our names merge). Control, his no. 23 plaintext against the same tokens: 14.8% / 23.0%. Our transcription carries his reading.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -434,31 +482,35 @@
     "detail": "not among the DECODE photographs of the busta (R4790-R4814); only ASSi can supply them"
    },
    {
-    "item": "no. 11 (Acciaiuoli 1478, 409 tokens)",
-    "blocker": "no-key-material",
-    "detail": "Florentine cipher; Gabbrielli's key index has no key for Donato Acciaiuoli"
-   },
-   {
-    "item": "no. 17 (1528, 282 tokens)",
-    "blocker": "too-short",
-    "detail": "'cifra di Balìa' not identified among the filed keys"
-   },
-   {
     "item": "no. 7 (363 tokens)",
     "blocker": "too-short",
-    "detail": "R4750 ruled out; nine gloss values only"
+    "detail": "R4750 ruled out; nine gloss values only; also unsolved by George Lasry (17 Oct 2026)"
    },
    {
-    "item": "no. 15 (229 tokens)",
+    "item": "nos. 19, 21 (118 and 107 tokens)",
     "blocker": "too-short",
-    "detail": "candidate key R4764 transcribed, sign mapping inconclusive"
+    "detail": "no filed key fits; also unsolved by George Lasry (17 Oct 2026)"
    },
    {
-    "item": "nos. 9, 19, 21, R4794 (46-170 tokens each)",
+    "item": "no. 15 (Bandini 1547), the 165 of 240 signs George Lasry left unread",
     "blocker": "too-short",
-    "detail": "no filed key fits"
+    "detail": "Latin-letter code words and rare signs; candidate key R4764 does not match"
+   },
+   {
+    "item": "number and name codes in George Lasry's readings (R4794 codes 26, 44, 67, 74; no. 12 sender and name signs; no. 17 'el Mustetto', 'Otto')",
+    "blocker": "no-key-material",
+    "detail": "each occurs once or twice; no nomenclator for these letters among the 43 key sheets of fasc. 1"
    }
   ],
-  "notes": "Attempted, open: the unread pieces of Concistoro 2308 fasc. 2. Split on 14 Oct 2026; the letters with recovered keys are separate entries. Nos. 20 and 23 moved to siena2023 (George Lasry) on 18 Oct 2026."
+  "notes": "Attempted, open for this project: the unread pieces of Concistoro 2308 fasc. 2. Split on 14 Oct 2026; nos. 20 and 23 moved to siena2023 (George Lasry) on 18 Oct 2026. George Lasry's 18 Oct 2026 solutions of R4794, nos. 9, 11, 12, 13, 15 (part) and 17 are outside solutions, recorded in NOTES and checked on 20 Oct 2026 against this folder's transcriptions (verify_lasry.py); no. 8 confirmed as deciphered at the time.",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "keys and readings of R4794, nos. 9, 11, 12, 13, 15 (part), 17 (and 18, 20, 23, entered under siena18 and siena2023), ciphertext-only with CTTS and LLMs; checked here on 20 Oct 2026 against this project's own transcriptions (no. 17 92.9%, no. 11 94.4%, R4794 93.1%)",
+    "date": "2026-10-18",
+    "source": "page 'The cipher documents of Concistoro 2308, fasc. 2 (Archivio di Stato di Siena)', sent to Daniel Bourdeau on 18 Oct 2026"
+   }
+  ]
  }
 }

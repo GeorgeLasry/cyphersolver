@@ -36,7 +36,7 @@ defendere teneatur ... bellum ... in partibus Pontis Valiani ... bellum Florenti
 instrumenta ad bellum necessaria, passum, foedus, intelligentia ... suis expensis centum homines armigeros, sexaginta
 equos leves ... castella existentia infra ... miliaria prope fines Senenses que caperentur ... Florentinorum ...
 bombarda". Ponte a Valiano = the Montepulciano war (1495-1511); Ziegler = Maximilian I's secretary: 1510s-1520s, year
-not fixed. **87.1% of 1,459 cipher tokens read as sense**, 10.6% doubtful, 1.4% unread, 0.9% struck.
+not fixed [wrong: Pisa, Oct-Nov 1496, per George Lasry, 18 Oct 2026; see below]. **87.1% of 1,459 cipher tokens read as sense**, 10.6% doubtful, 1.4% unread, 0.9% struck.
 
 Content: Siena to ready artillery and lend the King 5,000 ducats repayable in two months; B. protects Siena; Siena opens
 war on X. near Ponte a Valiano at the King's and Emperor's request, gives passage and victuals against the Florentines,
@@ -51,8 +51,35 @@ whose word counts differ are left out) and writes `validation.tsv`. `docs/_valid
 reading scores −1.97, but the one-value-per-sign key K scores −2.46, below the annealer on the real text (−2.28): the
 transcription keeps look-alike pairs under one sign name (o = g/o, n = q/e), so K is polyphonic (5.7%).
 
+## 18-20 Oct 2026: George Lasry's independent solution and dating
+
+George Lasry solved no. 18 independently (Oct 2026, after this project's reading of 24 Sept and the write-up of
+25 Sept), ciphertext-only with CTTS and LLMs, and reads it in full; sent to Daniel Bourdeau on 18 Oct 2026 in his page
+"The cipher documents of Concistoro 2308, fasc. 2" (kept outside the repository; see `targets/siena1421/NOTES.md`).
+
+- **Dating: Pisa, October-November 1496**, Maximilian I's Italian expedition (Regesta Imperii XIV; Sanudo, Diarii I;
+  Ulmann 1884; Pecci 1755): Siena to join the Holy League, accept "Caesar" as judge against Florence, lend 5,000
+  ducats and make war at Ponte a Valiano; Ziegler is the King of the Romans' secretary. Our "1510s-1520s" (from
+  Ziegler's later career and the King/Emperor pair) was wrong; title, year, page and ledgers corrected 20 Oct 2026.
+- **His reading against ours.** His page prints one passage only: "restituerentur, ita t[ame]n q[uod] ipsi Senenses
+  ad requisitionem Florentinorum sint contenti de stando iuri coram Cesare, dummodo Florentini etiam de illis que
+  ipsi occupant sint contenti stare iuri coram ÷". `transcripts/no18_reading.txt` L4.24-28 has the same words in the
+  same order (ours spells *ocupant*); cipher and clear words fall the same way. A full word-by-word comparison needs
+  his complete decryption, which the page does not include; worth asking him for it.
+- **His key against ours** (his table of 60 signs with counts, matched by shape to our names): every common sign
+  has the same value (4, 7 = a; 3 = c; 9 = d; + = e; 6 = f; U = m; W = n; 8, o = o; L = p; D = r; h = s; N = t;
+  Y = u; open OO = i), and so do the splits found here on the images (hooked n = q vs plain n = e; plain o = g;
+  closed OO = ll; PHI = pp; HX = rr; 2 = h; dotted signs = nulls, his 181 + 50 null signs). Differences, all on rare
+  signs: our d = a against his 'd' = i (4x); our a = i against his 'a' = u (3x); his letter sign for x ('H', 7x) and
+  his 'w' = tt (3x) lie in our doubtful words (the W/m/tt gap below). `keys/no18_key.txt` still holds the pre-split
+  values (2 = g, n = a, PHI = l) that the reading and this file had already corrected.
+- His "M.X." = our unresolved "Mx."; his "B." = Liga (Sanctissima Liga?), "X." = the League's common enemy
+  (unidentified), "S." = Sanctitas?
+- Our outcome stays "read in part, 87.1%" (measured on our reading); his full reading is an independent
+  verification of the key, and the first full reading, not this project's.
+
 ## Remaining gaps
-- doubtful and unread words (about 12% of 1,459 tokens) - blocker: illegible; W/m/tt and dotted-null distinctions at the DECODE resolution
+- doubtful and unread words (about 12% of 1,459 tokens) - blocker: illegible; W/m/tt and dotted-null distinctions at the DECODE resolution (George Lasry reads them all; his full decryption, not on his page, would settle them)
 
 ## Escalation
 - [x] siblings: the whole busta opened; no other piece in this key

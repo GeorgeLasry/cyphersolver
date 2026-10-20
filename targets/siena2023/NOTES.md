@@ -96,6 +96,12 @@ under the one-key rule, unchanged, to `project_attempt/`:
   survey concluded the system was not plain letter substitution as transcribed. The solvers stay in `targets/siena1421/`.
 - Nothing of that failed attempt is claimed in the reading above, which is George Lasry's, made from his own CTTS
   transcription.
+- 20 Oct 2026, a check of his reading on that independent transcription (`targets/siena1421/verify_lasry.py no20`):
+  agent C's no. 20 tokens (other sign names) aligned with the letters of `R4808_reading.txt`, the sign values
+  re-estimated by EM from his key for the names both transcriptions share: 71.1% of our tokens carry the majority
+  letter of their sign (78.6% if a sign of ours may stand for two letters, where our names merge his signs: o vs his
+  o- and o-o, y, S); control, his no. 23 plaintext against the same tokens: 14.8% / 23.0%. Our transcription, made
+  before his work, carries his no. 20 reading. No. 23 not checked this way.
 
 ## Sources and credit
 

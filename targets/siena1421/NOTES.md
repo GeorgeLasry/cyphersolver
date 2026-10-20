@@ -1,6 +1,6 @@
 # Siena, Concistoro 2308: "Lettere in cifra" — the unread pieces (catalogue 336)
 
-Status: attempted, open — the unread pieces of the bundle (no. 1 of 1421 not photographed, needs ASSi; nos. 7, 9, 11, 15, 17, 19, 21 and R4794 not deciphered, keys unknown).
+Status: attempted, open for this project — the unread pieces of the bundle (no. 1 of 1421 not photographed, needs ASSi; nos. 7, 19, 21 unread by anyone). 18 Oct 2026: George Lasry's outside solutions of R4794 (his "no. 5"), nos. 9, 11, 12, 13, 15 (part) and 17 recorded below; 20 Oct 2026: checked on our own transcriptions (no. 17 92.9%, no. 11 94.4%, R4794 93.1%), and no. 8 confirmed as deciphered at the time.
 
 **Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026).** This folder held the whole bundle, in
 which each letter has its own key. The letters whose keys were recovered are now their own entries, each a different
@@ -24,6 +24,87 @@ reading was checked against.
 Session of 24 September 2026. Goal set by Daniel: decipher the 29 cipher letters of ASSi Concistoro 2308, fasc. 2
 ("Lettere in cifra"), oldest dated 1421 per Meister 1902 pp. 50-51, "solo parzialmente decifrate" per the 1952
 inventory; first try the filed keys (fasc. 1) on every letter.
+
+## 18 Oct 2026: George Lasry's solutions of the rest of fasc. 2
+
+- **Solution: George Lasry**, done with CTTS (transcription in full, or correcting an LLM's transcription, and
+  sometimes its built-in cryptanalysis) and with LLMs (Claude Opus 5.5 and GPT-6 Astra); sent to Daniel Bourdeau on
+  18 Oct 2026 as a Cryptiana-style page, "The cipher documents of Concistoro 2308, fasc. 2 (Archivio di Stato di
+  Siena)" (index.html with key tables of signs cut from the photographs, crops and excerpts; kept outside the
+  repository, `Downloads/Concistoro2308_fasc2_cryptiana.zip`). The footer reads "Satoshi Tomokiyo, 17 October 2026"
+  (the Cryptiana byline); the sender and author of the solutions is George Lasry. Solved in October 2026,
+  ciphertext-only except nos. 9 and 13 (interlinear and separate plaintext); after this project's attempt of 24 Sept.
+- His numbering is the pencil numbering except **his "no. 5" = our unnumbered slip R4794** (our no. 5 is the clear
+  letter R4791).
+
+| no. | DECODE | his reading | his status |
+|---|---|---|---|
+| "5" | R4794 | "Di alcuni pezzi [d']i artigliaria 44 di 26. Le Signorie Vostre, come so, faranno si governin con prudentia, perché ancho 67 ha qualche impressio[n] ... col presente 74 di 26." Pigpen-like key, a dot shifts a sign to another block; 165 symbols | ciphertext-only; codes 26, 44, 67, 74 open |
+| 9 | R4798 | "[la pratica?] [di?] Chastiglone questa vernata con lo sentimento di [re d'Aragona] e nutrire questa guerra uno altro anno"; dated 1440s-50s (Alfonso V in Tuscany), against our "c. 1495-1516?"; 53 symbols | with the interlinear decryption |
+| 11 | R4800 | Acciaiuoli to Lorenzo, Rome 13 June 1478: Forlì and Faenza to send two squadrons each; Giovan Francesco Gonzaga offers 80 men-at-arms for 7,000 ducats + 1,000 for himself; 393 symbols, 57 signs | c. 90%, ciphertext-only |
+| 12 | R4790 | Naples, 10 March 1413, to Sforza Attendolo: King Ladislaus offers him a bride of his house; 865 symbols, 46 signs | over 95%, ciphertext-only |
+| 13 | R4801 | with its plaintext twin no. 16 (R4804): the Pope's agreements, his delayed coming to Bologna, Lautrec took Modena and Reggio (1527-30); 553 symbols | with the separate plaintext |
+| 15 | R4803 | Mario Bandini, Innsbruck ("Eltspruch"), 4 Jan 1547: Granvelle's warning ("essent principes qui vellent persolvere centum milia coronatorum ..."); 240 symbols | partial, 75 of 240 signs |
+| 17 | R4805 | Bartolomeo Tantucci to Antonio del Vescovo, 25 (or 20) Aug 1528, "questa cifara è quella di Balìa": bishoprics for someone's nephews, the Cardinal of Naples and Pitigliano; 282 symbols, 41 signs | c. 85%, ciphertext-only |
+| 18 | R4806 | see `targets/siena18/` (Pisa, Oct-Nov 1496) | in full |
+| 20, 23 | R4808, R4811 | see `targets/siena2023/` (1413) | in full |
+
+He lists nos. 7, 8, 19, 21 as "unsolved as of 17 October 2026"; on no. 8 he finds a relation to the clear memorandum
+above the cipher "possible but speculative". Settled below: it is the decipherment.
+
+Under the one-key rule each of his keys is a separate cipher (as siena1431 and siena2023 are); they are recorded here
+because they are the pieces this entry held. Whether they become George Lasry's own entries is left to him and Daniel
+(see Assumptions).
+
+## 20 Oct 2026: no. 8 (R4797) was deciphered at the time
+
+Image downloaded with the DECODE cookie (`IMG_R4797_I27940_P.jpg`, git-ignored). The sheet: a clear memorandum in
+short paragraphs, each led by an **underlined** phrase ("E disse di tutto mi dava in credenza ...", "di papa Felice",
+"di buona voglia", "Nel principio ...", "Anchora disse", "antiveduto questo"), then, pasted below, a six-line slip
+(pencil 8) of mixed text: clear words with cipher runs. The slip is the tail of the letter, not the whole of it:
+line 1 is clear ("Dapoi ... dapprima ... trovato ..."), and its clear words are the memorandum's underlined heads.
+Aligned sign by sign at 2x on the full-size photograph:
+
+- slip l. 3-4, after clear **"Anchora d(iss)e"**: `÷ 59t95 75□ø I2 7øϕϕ2 9ff2ϕ +c5` = memorandum "[el duca di
+  Milano] aveva dato la donna biancha" (÷ = the Duke of Milan as a code sign; *aveva* = 5 9 t 9 5, pattern ABCBA;
+  *dato* d=7 a=5 t=□ o=ø; *donna* 7 ø ϕ ϕ 2 with the same d and o and a doubled n) ... `7t I2ɷ+ctɱt` = "del
+  marchese";
+- slip l. 2: `÷ tɷ I2ɷ+ctɱt 7ff o-tɷɷ2ɷ2 5 o-2|ot` = "[duca di Milano] el marchese di ferrara a fa|re" (memorandum
+  paragraph "Nel principio ...": "legha fral duca di Milano el marchese di Ferrara a fare guerra a Viniziani"):
+  *marchese* has the same seven signs as in l. 4; *ferrara* f=o- e=t r=ɷ a=2;
+- slip l. 5-6, after clear **"anti(ve)duto questo"**: `t ϕøϕ ff9ø I2ϕ+c2 ot +ct ffoɷbɱo ...` = "e non può manchare
+  che presto ..." (memorandum "antiveduto questo e no può manchare che presto vedrete grandissimi fatti"); the slip
+  ends in clear "in buono stato".
+
+The values used in the three passages agree with each other (a = 5 or 2, c = +, h = c, d = 7, e = t, f = o-, n = ϕ,
+o = ø, r = ɷ, s = ɱ, t = □, v/b = 9). So the memorandum is the contemporary decipherment of the letter the slip ends,
+written as heads (the clear words) plus deciphered text: **no. 8 was read at the time**, as the 24 Sept notes said,
+now shown rather than assumed. George Lasry's "unsolved" for no. 8 is answered; the memorandum's earlier paragraphs
+(di papa Felice, Niccolò Piccinino, di buona voglia) belong to the part of the letter that is not on the slip. One
+doubt: "la" and "manchare" both begin with the sign read I; either two look-alike signs or a slip of the encipherer.
+Not counted as a project result (a decipherment of the time); the DECODE queue entry says so.
+
+## 20 Oct 2026: George Lasry's keys checked on this project's transcriptions
+
+`verify_lasry.py` (run `python targets/siena1421/verify_lasry.py`, or with `no17`, `no11`, `r4794`, `r4794b`,
+`no20`): his key tables are images of signs cut from the photographs, so each of his signs was matched by shape and
+occurrence count to the sign names of our own 24 Sept transcriptions (made before his work and independently of
+it). Our tokens are then deciphered with his key, without fitting, and aligned (edit distance) with the plaintext of
+his decryption; a token agrees when his key gives it the letter it aligns with. The identifications are commented in
+the script; those set after a first alignment are marked, with the score before them.
+
+| piece | our transcription | tokens | agree | what the rest is |
+|---|---|---|---|---|
+| no. 17 | `transcripts/no17.txt` (agent A) | 283 | **92.9%** (89.0% before three sign identifications were corrected by count) | his own uncertain words ("el Mustetto", "Otto", "lco[..]stren"), and our merged 6 (his O "6<" and V "6") |
+| no. 11 | `transcripts/no11.txt` (agent B) | 378 sign units | **94.4%** (66.7% with eight signs unidentified) | his '+o' (e) and 'o+' (d) are single signs our agent wrote as two tokens; his nulls 'g#', '31', '87', mⁿ, /// are our G HASH, 3 1, 8^dot 7, M^n, SL3; our two cipher blocks are his two runs line for line |
+| R4794 ("5") | `transcripts/r4794.txt` | 160 | 83.8%; **93.1%** with r and h added | his table has **no H and no R column** though his reading has h 7 and r 11 times: our A (alpha) is r every time, our N (∩) is h: a gap in his table, not in his reading |
+| no. 20 (siena2023) | `siena2023/project_attempt/no20.tok` (agent C) | 1,128 | **71.1%** one letter per sign of ours, 78.6% allowing two; **control 14.8% / 23.0%** | our names merge signs he splits (o vs his o- and o-o; y; S); here the mapping is fitted by EM from his key values for the sign names both transcriptions share, hence the control with a wrong plaintext (his no. 23) |
+
+So his readings of nos. 11, 17 and R4794 come out of our own transcriptions with his keys at 93-94%, and our no. 20
+transcription carries his no. 20 reading far above the control: **independent verification** of those four. Not
+checked here: no. 12 and no. 13 (no transcription of ours), no. 9 (46 tokens) and no. 15 (his partial reading), no. 23
+(the same key as no. 20). No. 18: see `targets/siena18/NOTES.md` (his one printed sentence equals our reading word for
+word; his key compared with ours).
 
 ## Access: the whole filza is on DECODE (found this session)
 
@@ -75,7 +156,7 @@ the numbering Meister saw in 1902.
 | 24 | R4812 | whole letter in cipher (2 pp.) |
 | 25 | R4813 | slip, all cipher |
 | 29 | R4814 | fragment, a few words |
-| ? | R4794 | slip, 6 lines all cipher, no number found (erased pencil "4"/"5") |
+| ? | R4794 | slip, 6 lines all cipher, no number found (erased pencil "4"/"5"); George Lasry's page numbers it no. 5 |
 
 Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cover says 25 pieces; Meister counted 29.
 
@@ -124,7 +205,7 @@ Nos. 1, 2, 26, 27, 28 are not among the 25 pieces photographed. The fascicle cov
 - **No. 8 (R4797), c. 1440.** Ciphered slip pasted at the foot of a sheet whose upper part is the contemporary
   decipherment ("Anchora disse el duca di Milano aveva dato la donna Biancha a misser Leonello figlolo del
   Marchese ... antiveduto questo ..."; antipope Felix, Niccolò Piccinino, the Marquis of Ferrara). Read at the
-  time. The nomenclator persons match the c. 1440 keys (R4748, R4749, R4755).
+  time (aligned sign by sign on 20 Oct 2026, section above). The nomenclator persons match the c. 1440 keys (R4748, R4749, R4755).
 - **No. 10 (R4799).** One cipher run glossed letter by letter "presura di Montepulciano". Read at the time.
 - **No. 13 (R4801) + no. 16 (R4804).** No. 16 is the clear decipherment of no. 13 (1527-29: Lautrec, the pope's
   coming to Bologna, "si pigliò Modena e Reggio"). Partial alignment: homophonic substitution with numbers as
@@ -189,24 +270,32 @@ code signs (nomenclator), polyphony, or look-alike signs merged/split by the tra
 ## Remaining gaps
 
 - no. 1 (1421), nos. 2, 26, 27, 28 - blocker: needs-physical-access; not among the DECODE photographs of the busta (R4790-R4814); only ASSi can supply them.
-- no. 11 (Acciaiuoli 1478, 409 tokens) - blocker: no-key-material; Florentine cipher; Gabbrielli's key index has no key for Donato Acciaiuoli.
-- no. 17 (1528, 282 tokens) - blocker: too-short; 'cifra di Balia' not identified among the filed keys; ciphertext-only fails at this length.
-- no. 7 (363 tokens) - blocker: too-short; R4750 ruled out; nine gloss values only.
-- no. 15 (Bandini 1546-47, 229 tokens) - blocker: too-short; candidate key R4764 transcribed, sign mapping inconclusive.
-- nos. 9, 19, 21, R4794 (46-170 tokens each) - blocker: too-short; no filed key fits.
+18 Oct 2026: moved out, solved by George Lasry (sections above): "no. 11 (Acciaiuoli 1478) - no-key-material";
+"no. 17 (1528) - too-short"; nos. 9 and R4794 from "nos. 9, 19, 21, R4794 - too-short"; no. 15 reduced. His results
+show that "too-short" was too pessimistic for pieces of 165-282 signs; it now stands only where he failed too.
+
+- no. 7 (363 tokens) - blocker: too-short; R4750 ruled out; nine gloss values only; also unsolved by George Lasry (17 Oct 2026).
+- nos. 19, 21 (118 and 107 tokens) - blocker: too-short; no filed key fits; also unsolved by George Lasry (17 Oct 2026).
+- no. 15 (Bandini 1547), the 165 of 240 signs George Lasry left unread - blocker: too-short; Latin-letter code words and rare signs; the only candidate key, R4764, was transcribed and does not match.
+- number and name codes in George Lasry's readings (R4794 codes 26, 44, 67, 74; no. 12 sender and name signs; no. 17 'el Mustetto', 'Otto') - blocker: no-key-material; each occurs once or twice, and no nomenclator for these letters is among the 43 key sheets of fasc. 1 (Key index above).
 
 ## Escalation
 
 - [x] siblings: every record of the busta opened (keys R4746-R4789, letters R4790-R4814, R1858); no. 13/16 pair found; the pieces with recovered keys are separate entries.
-- [x] clear-pages: no. 16 = decipherment of no. 13; decipherment on no. 8's sheet; glosses on nos. 7 and 10 used; no. 22 clear drafts paired with numbered drafts.
+- [x] clear-pages: no. 16 = decipherment of no. 13; decipherment on no. 8's sheet (aligned sign by sign, 20 Oct 2026); glosses on nos. 7 and 10 used; no. 22 clear drafts paired with numbered drafts.
 - [x] known-keys: fasc. 1 alphabets compared by eye with every letter (R4755 missed for nos. 6/24; found by George Lasry, 14 Oct 2026, see siena1431); R4750, R4753, R4754, R4756, R4757, R4762 tested on no. 7; R4760, R4768, R4778 on nos. 17 and 20; R4764 on no. 15; Gabbrielli vol. I index (Ilardi reel 58) for no. 11.
 - [x] print: Meister 1902, Cecchini 1952 inventory, Senatore 2009, Treccani DBI; no printed decipherment of any of these pieces found.
 - [x] key-rebuild: homsolve2/homsolve3 (nulls)/sylsolve (bigrams) on the short pieces (and on nos. 20+23, now siena2023); no. 7 partial key from its gloss.
-- [n/a] retry: no key was extended for these pieces, so there is nothing to rerun.
+- [x] key-rebuild (outside): George Lasry rebuilt the keys of R4794, nos. 9, 11, 12, 13, 15 (part), 17 (18 Oct 2026); checked on our transcriptions 20 Oct 2026.
+- [x] retry: 20 Oct 2026, his keys run on our own transcriptions of nos. 11, 17, R4794 and 20 (verify_lasry.py); nos. 7, 19, 21 have no key from anyone to rerun.
 
 ## Assumptions for George's review
 
 - Nos. 6 and 24 are counted only in his siena1431; nothing of this folder's failed attempt on them is claimed.
 - The unread pieces are kept together here as one "attempted, open" entry because they are one bundle; no shared key
   is claimed. Nos. 20 and 23 are George Lasry's siena2023; nothing of this folder's failed attempt on them is claimed.
-- The pieces deciphered at the time (nos. 8, 10, 13/16, 22) and no. 12 are not entered as results.
+- The pieces deciphered at the time (nos. 8, 10, 13/16, 22) are not entered as results.
+- George Lasry's 18 Oct 2026 solutions (R4794, nos. 9, 11, 12, 13, 15 part, 17) are recorded here as outside solutions
+  and verified on our transcriptions; this entry's own outcome stays "not solved". Under the one-key rule they could
+  become his own entries like siena2023; not done here, his call.
+- His key table for R4794 lacks the H and R columns (our A = r, N = h from his reading); worth telling him.

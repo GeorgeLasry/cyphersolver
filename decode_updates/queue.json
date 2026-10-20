@@ -3162,14 +3162,22 @@
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Charles VI to Windischgrätz, Vienna, 3 Feb 1720 (autograph). All 26 cipher passages read with the Chancellery key R5017 applied as it stands (two key slips: 31 = zu, 268 = ein); 446 and 638 uncertain. The later letters R5021-R5024 are in the private key R5018, not R5017.",
-     "reading": [{"file": "targets/windischgraetz1720/dec_R5017_letter.md"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720/dec_R5017_letter.md"
+      }
+     ],
      "sent": false
     },
     "R5020": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Register copy of R5019 (inv. 5 book 5 pp. 401-404); agrees with the autograph group for group; read with key R5017.",
-     "reading": [{"file": "targets/windischgraetz1720/dec_R5017_letter.md"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720/dec_R5017_letter.md"
+      }
+     ],
      "sent": false
     }
    }
@@ -3186,28 +3194,48 @@
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Charles VI to Windischgrätz, Vienna, 13 Apr 1720 (autograph): both cipher passages read with the private key R5018 (Orleans; the burden of the Barrier).",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 2"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 2"
+      }
+     ],
      "sent": false
     },
     "R5022": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Register copy of R5021 (book 5 pp. 404-407); read with R5018.",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 2"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 2"
+      }
+     ],
      "sent": false
     },
     "R5023": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Copy of No. 3, Vienna, 24 Jul 1720 (book 5 pp. 407-409; first image repeats pp. 406-407): all three passages read with R5018 (Beretti Landi's marriage proposal).",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 3"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 3"
+      }
+     ],
      "sent": false
     },
     "R5024": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
      "note": "Copy of No. 6, Vienna, 11 Apr 1722, to Windischgrätz at Cambrai (book 5 pp. 414-416): all four passages read with R5018.",
-     "reading": [{"file": "targets/windischgraetz1720b/dec_R5018_letters.md", "block": "## No. 6"}],
+     "reading": [
+      {
+       "file": "targets/windischgraetz1720b/dec_R5018_letters.md",
+       "block": "## No. 6"
+      }
+     ],
      "sent": false
     }
    }
@@ -8624,16 +8652,23 @@
    "key": {
     "none": "No key for the unread pieces; the recovered keys are queued under siena25, siena18, siena14 and borghesi1456, nos. 6/24 (key R4755) under siena1431, and nos. 20/23 (R4808, R4811) under siena2023."
    },
-   "cite": null,
+   "cite": "George Lasry, 'The cipher documents of Concistoro 2308, fasc. 2 (Archivio di Stato di Siena)', page sent to D. Bourdeau, 18 Oct 2026 (R4794 = his no. 5, nos. 9, 11, 12, 13, 15, 17); checked on this project's transcriptions 20 Oct 2026 (targets/siena1421/verify_lasry.py)",
    "fields": {},
    "records": {
     "R4790": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "Concistoro 2308 fasc. 2 no. 12 (pencil number); letter in graphic signs; also photographed in R1858 (marked Decrypted). DECODE dates all fasc. 2 pieces 1500-1599 (placeholder); image 3 = fascicle cover 'Fasc. 2, Pezzi 25'.",
+     "note": "No. 12: Naples, 10 March 1413 (not 1500-1599), signed 'Vescovi de Fermo'(?) to Sforza Attendolo: King Ladislaus offers him a bride of his house. Key recovered ciphertext-only by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026, over 95%; sender and name signs open. Also photographed in R1858.",
      "reading": null,
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": true,
+     "fields": {
+      "start_year": "1413",
+      "end_year": "1413",
+      "receiver": "Sforza Attendolo",
+      "plaintext_lang": "Italian",
+      "origin_city": "Naples"
+     }
     },
     "R4791": {
      "decode_status": "N/A",
@@ -8653,14 +8688,20 @@
     },
     "R4794": {
      "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "Unnumbered slip (faint pencil 5), 6 lines in graphic signs with numbers 44, 26, 67, 74; not read.",
+     "proposed": "Partially decrypted",
+     "note": "Lasry's 'no. 5' (unnumbered slip, faint pencil 5): pigpen-like key with a dot shifting a sign to another block of letters, number codes for names; key recovered ciphertext-only by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026. 'Di alcuni pezzi d'artigliaria 44 di 26 ...'; 16th c.; codes 26, 44, 67, 74 open.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/r4794.txt"
-     ]
+     ],
+     "fields": {
+      "start_year": "1500",
+      "end_year": "1599",
+      "plaintext_lang": "Italian",
+      "cipher_types": "homophonic (pigpen-like), number codes"
+     }
     },
     "R4796": {
      "decode_status": "N/A",
@@ -8676,21 +8717,31 @@
     "R4797": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "No. 8, c. 1440-47: ciphered slip with its contemporary decipherment on the same sheet (antipope Felix, Duke of Milan, Bianca and Leonello d'Este, Niccolo Piccinino); read at the time.",
+     "note": "No. 8, c. 1440-47: the tail of a letter (clear words and cipher runs) pasted below its contemporary decipherment on the same sheet (antipope Felix, Duke of Milan, Bianca and Leonello d'Este, Niccolo Piccinino, Marquis of Ferrara). Aligned sign by sign 20 Oct 2026: the slip's clear words ('Anchora disse', 'antiveduto questo') are the memorandum's underlined heads and three cipher runs match it letter by letter ('aveva dato la donna biancha', 'el marchese di ferrara', 'e non puo manchare che presto'); read at the time.",
      "reading": null,
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": true,
+     "fields": {
+      "plaintext_lang": "Italian",
+      "start_year": "1440",
+      "end_year": "1447"
+     }
     },
     "R4798": {
      "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 9: slip, clear with two short cipher runs (Correggio, Carpi, Rimini, re di Ragona; c. 1495-1516?).",
+     "proposed": "Decrypted",
+     "note": "No. 9: slip on Castiglione 'this winter' with the King of Aragon's assent; deciphered with the interlinear decryption by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026; dated 1440s-50s (Alfonso V's Tuscan wars), not 1500-1599.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/no09.txt"
-     ]
+     ],
+     "fields": {
+      "start_year": "1447",
+      "end_year": "1454",
+      "plaintext_lang": "Italian"
+     }
     },
     "R4799": {
      "decode_status": "N/A",
@@ -8702,33 +8753,48 @@
     },
     "R4800": {
      "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome 13 June 1478 (a Florentine letter held in Siena), not 1500-1599; ~410 cipher signs in two blocks; not read.",
+     "proposed": "Partially decrypted",
+     "note": "No. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome 13 June 1478 (not 1500-1599). Key recovered ciphertext-only by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026, c. 90% (homophonic with nulls, 57 signs, no nomenclator).",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/no11.txt"
-     ]
+     ],
+     "fields": {
+      "start_year": "1478",
+      "end_year": "1478",
+      "author": "Donato Acciaiuoli",
+      "receiver": "Lorenzo de' Medici",
+      "plaintext_lang": "Italian",
+      "origin_city": "Rome"
+     }
     },
     "R4801": {
      "decode_status": "N/A",
      "proposed": "Decrypted",
-     "note": "No. 13 (1527-29): cipher slip; its contemporary decipherment is no. 16 (R4804).",
+     "note": "No. 13 (1527-29): cipher slip; its contemporary decipherment is no. 16 (R4804). Key rebuilt from the pair by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
     },
     "R4803": {
      "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 15: Mario Bandini, Sienese orator at Charles V's court, Heilbronn(?) 29 Dec 1546 and 4 Jan 1547 (1546 s.s.); cipher only on pp. 2 and 6 (~230 signs); candidate key R4764 (Buoninsegni); not read.",
+     "proposed": "Partially decrypted",
+     "note": "No. 15: Mario Bandini, Sienese orator at the imperial court, Innsbruck, 29 Dec 1546 and 4 Jan 1547 (1546 Sienese style), to the Signori of Siena; cipher on pp. 2 and 6 (240 signs). 75 of 240 signs read by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026; Latin-letter code words open.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/no15v.txt"
-     ]
+     ],
+     "fields": {
+      "start_year": "1546",
+      "end_year": "1547",
+      "author": "Mario Bandini",
+      "receiver": "Signori of Siena",
+      "origin_city": "Innsbruck"
+     }
     },
     "R4804": {
      "decode_status": "N/A",
@@ -8740,14 +8806,21 @@
     },
     "R4805": {
      "decode_status": "N/A",
-     "proposed": "Non-decrypted",
-     "note": "No. 17: Siena to Antonio del Vescovo, orator, 20 or 25 Aug 1528, docket 'questa cifra e quella di Balia'; ~280 cipher signs; not read.",
+     "proposed": "Partially decrypted",
+     "note": "No. 17: Bartolomeo Tantucci (Sarteano?) to messer Antonio del Vescovo, rector of the cathedral, Balìa member, 25 (or 20) Aug 1528; 'questa cifara è quella di Balìa'. Key recovered ciphertext-only by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026, c. 85%.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
       "targets/siena1421/transcripts/no17.txt"
-     ]
+     ],
+     "fields": {
+      "start_year": "1528",
+      "end_year": "1528",
+      "author": "Bartolomeo Tantucci",
+      "receiver": "Antonio del Vescovo",
+      "plaintext_lang": "Italian"
+     }
     },
     "R4807": {
      "decode_status": "N/A",
@@ -8828,13 +8901,21 @@
     "R4806": {
      "decode_status": "N/A",
      "proposed": "Partially decrypted",
-     "note": "No. 18: Latin articles of a treaty between Siena and the King/Emperor (subscribed Niccolaus Ziegler, Regis Secretarius; Ponte a Valiano; war on the Florentines), 1510s-1520s, not 1500-1599 placeholder; cipher words inside the Latin; key recovered ciphertext-only; 87% of cipher signs read. Split 14 Oct 2026 from siena1421 (one key per entry).",
+     "note": "No. 18: Latin articles negotiated between Maximilian I (King of the Romans; subscribed by his secretary Niklas Ziegler) and the Sienese orators, Pisa, Oct-Nov 1496 (dating by George Lasry, 18 Oct 2026; not 1500-1599); cipher words inside the Latin; key recovered ciphertext-only here 24 Sept 2026, 87% of 1,459 cipher signs read (reading attached); solved independently and in full by George Lasry (CTTS, Claude Opus 5.5, GPT-6 Astra), page of 18 Oct 2026; code M.X. open.",
      "reading": [
       {
        "file": "targets/siena18/transcripts/no18_reading.txt"
       }
      ],
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": "1496",
+      "end_year": "1496",
+      "author": "Maximilian I (chancery, Niklas Ziegler)",
+      "receiver": "Sienese orators",
+      "plaintext_lang": "Latin",
+      "origin_city": "Pisa"
+     }
     }
    }
   },

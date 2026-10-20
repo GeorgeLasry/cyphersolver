@@ -676,7 +676,7 @@ PAGES = [
          blurb='A Sienese envoy&rsquo;s letter from King Alfonso&rsquo;s Naples, 12 May 1456 (Concistoro 2308 fasc. 2 no. 4, DECODE R4793), clear Italian with fifteen cipher runs and Latin code words. No filed key fits; an alphabet fragment written below the text and the recipient&rsquo;s glosses gave the key, and 114 of the 144 cipher signs read.',
          quote='&ldquo;contra lo Turcho&rdquo;',
          rights='Manuscript images: Archivio di Stato di Siena, Concistoro 2308, via DECODE R4793'),
-    dict(slug='siena18', label='Siena no. 18, treaty articles', year='1510s&ndash;1520s', y=1515, place='Siena &harr; the imperial side', st='partial', stt='read in part',
+    dict(slug='siena18', label='Siena no. 18, treaty articles', year='1496', y=1496, place='Siena &harr; the imperial side', st='partial', stt='read in part',
          title='Siena no. 18: the treaty articles with the Emperor',
          blurb='Latin articles between Siena and the imperial side, subscribed by the royal secretary Niccol&ograve; Ziegler, with every sensitive word in cipher (Concistoro 2308 fasc. 2 no. 18, DECODE R4806). The key was recovered from the ciphertext alone; 87.1% of the 1,459 cipher signs read as Latin sense: a loan of 5,000 ducats, war at Ponte a Valiano, men-at-arms against the Florentines.',
          quote='&ldquo;teneantur domini Senenses rumpere bellum contra X. in partibus Pontis Valiani&rdquo;',
