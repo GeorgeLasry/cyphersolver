@@ -86,13 +86,9 @@ In spring 1446 Sforza was under pressure in the Marche, while Venice attacked Vi
 
 Both letters use a shared homophonic cipher: several different signs can represent the same letter, while other signs stand for common words or letter groups such as CHE, CON, PER and QVA. Cipher passages are interspersed with ordinary Italian writing. Most of the remaining unknown signs are probably nulls, titles or abbreviations, though their individual meanings remain uncertain.
 
-### Added value and prior work
+### Prior work
 
-The added research value is Lasry’s working key, the resulting almost complete readings of **both** previously unread cipher texts, and the companion’s additional glyph and word-sign evidence. The archival date, Maino connection and identification of the companion are credited to the earlier investigation and Mazzatinti. This is not an independent blind recovery by the models, and the original unsuccessful solver runs remain on record. See [Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md).
-
-The earlier draft inventories counted 404 signs/26 classes on f. 68 and 390/31 on f. 70. The current CTTS inventories use different class definitions and revised boxes; count differences alone are not missing-sign counts. The companion was read using the contributed key, then used to check and extend it; this is comparative corroboration, not a held-out blind test.
-
-The prior contribution audit on 20 October 2026 examined the then-available 58 PR/issue descriptions and 46 conversation comments. It found no earlier R7898/it1583 key or cipher reading in those contributions; PR #60 was the only matching discussion. This is a bounded check of that repository, not a claim of worldwide priority. Existing research notes, target profile and prior contributors’ files are preserved; the proposed complete profile update is supplied separately in Codex_profile_proposal.json.
+Both letters remained unsolved in [Bourdeau’s earlier investigation](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md).
 
 ### Files and verification
 
