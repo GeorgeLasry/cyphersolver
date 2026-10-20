@@ -7,7 +7,7 @@
 <meta name="description" content="Thomas Urquhart's Cyphral Octastich of 1652 is a book cipher on his own Jewel: the k-th number indexes the first word of the needed initial on page k. The rule, published by Vals AI in August 2026, was applied to a fresh transcription and tested without the plaintext (238 of 284 first-occurrence hits against 0.43 for controls); 274 of the 285 numbers give the letter the verse requires, including line 5, which that publication left open. The rule claimed for the companion distich does not reproduce.">
 <link rel="stylesheet" href="style.css?v=20261014c">
 <meta name="date" content="2026-09-16">
-<meta name="last-modified" content="2026-10-14">
+<meta name="last-modified" content="2026-10-20">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -46,9 +46,9 @@
 <div class="parties"><figure class="party sender"><img src="portrait_thomas-urquhart.jpg" alt="Thomas Urquhart" title="Thomas Urquhart: Engraving by George Glover, 1641. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Thomas Urquhart</figcaption></figure></div><!-- /parties -->
   <p class="sub"><em>The Jewel</em> (1652), final leaf · eight lines and a “Decagram”, 285 numbers to 201 · <em>Logopandecteision</em> (1653), “The Cyphral Distich”, 64 numbers to 70 · Schmeh’s Top 50, no. 28</p>
   <p class="sub">The rule Vals AI published on 31 August 2026 was applied to the EEBO-TCP text of <em>The Jewel</em> and a fresh transcription of the octastich&rsquo;s 285 numbers from the 1983 edition, without using their plaintext; 238 of 284 numbers are first-occurrence hits against 0.43 for both controls. 274 of the 285 numbers give the letter the verse requires, including line 5, which Vals left open; one letter of it is still open. The rule claimed for the distich does not reproduce.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-10-14">14 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-16">16 September 2026</time> &middot; updated <time datetime="2026-10-20">20 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (78% of the cipher)</p><!-- /outcome -->
-<p class="credits">Credits &middot; <a href="contributors.html#valsai">Vals AI</a> (earlier solution) &middot; <a href="contributors.html#schmeh">Klaus Schmeh</a> (transcription) &middot; <a href="contributors.html#scheers">David Scheers</a> (transcription)</p><!-- /credits -->
+<p class="credits">Credits &middot; <a href="contributors.html#valsai">Vals AI</a> (earlier solution) &middot; <a href="contributors.html#schmeh">Klaus Schmeh</a> (transcription) &middot; <a href="contributors.html#scheers">David Scheers</a> (transcription, pointer to a source)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
 
@@ -156,8 +156,8 @@ habit the test in section 03 measures. The first row also shows a typical differ
 &ldquo;NO&rdquo; apart, so its word list counts &ldquo;N&rdquo; and &ldquo;O&rdquo; as two words and puts &ldquo;given&rdquo; at 26, and the block gives <code>w</code>
 (&ldquo;Worcester&rdquo;) for the first number; on the 1652 page &ldquo;given&rdquo; is word 25.</p>
 <figure class="creveal" data-src="reveal/urquhart.json"></figure>
-<p>Each row of the block has one letter per number, so line 5 has 32: <code>_</code> marks number 158, which falls on the one page (physical 158) whose text the TCP
-does not carry. Capitals are first-occurrence hits; a lower-case letter is the initial of a TCP word that is not the first of its letter on the page, usually a word or
+<p>Each row of the block has one letter per number, so line 5 has 32: <code>_</code> marks number 158, which the TCP cannot decode because its filming has a
+duplicate image there; the 1652 page gives W (section 04). Capitals are first-occurrence hits; a lower-case letter is the initial of a TCP word that is not the first of its letter on the page, usually a word or
 two from it. The right-hand column is the plaintext.</p>
 <pre>
 wREATLORDMApTAInETHATREGtaFAMILIE          Great Lord, mantaine that regal familie
@@ -174,7 +174,9 @@ AMsNSOwLtt                                 Amen, so be it
 royalist prayer for Charles II, written in London in March 1652 by a prisoner of Worcester, hidden in a book dedicated to the vindication of Scotland.</p>
 <p>The decryption agrees with Vals&rsquo; published plaintext in every line but the fifth. There they printed <em>AND [&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;] THIS
 USURP&rsquo;D AUTHORITIE</em>, as did the first version of this page: positions 149&ndash;157 come out C-O-N-E-R-T-H-T-O and make no word. Their &ldquo;one page used
-twice from position 159&rdquo; is the TCP&rsquo;s near-empty page 158. Re-read on 5 October 2026, the line divides one place later. <em>Usurp&rsquo;d authoritie</em>
+twice from position 159&rdquo; is right, and David Scheers&rsquo;s photographs of the 1652 pp. 156&ndash;159 (20 October 2026) show which page: [157]
+runs straight on to [158] (catchword <em>know</em>), so no leaf is missing, and numbers 158 and 159 both fall on printed [158]. There <em>when</em> is word 11 and
+<em>hand</em> word 19; Urquhart&rsquo;s numbers are 12 and 20, the same +1 on both. From number 160 his page <em>k</em> is printed page <em>k</em>&minus;1. Re-read on 5 October 2026, the line divides one place later. <em>Usurp&rsquo;d authoritie</em>
 fills 162&ndash;177. <em>His</em> fills 159&ndash;161 once the TCP&rsquo;s split of &ldquo;Leopoldo&rsquo;s&rdquo; into &ldquo;Leopoldo s&rdquo; on p. 161 is undone.
 That leaves 150&ndash;158 for <em>overthrow</em>, six of whose nine letters are exact, and 149 for a word of one letter:</p>
 <table>
@@ -192,8 +194,8 @@ That leaves 150&ndash;158 for <em>overthrow</em>, six of whose nine letters are 
 <tr><td></td><td>155</td><td>5</td><td>his</td><td>H</td><td>exact</td></tr>
 <tr><td></td><td>156</td><td>2</td><td>to</td><td>R</td><td>near: first R is word 1, &ldquo;repaired&rdquo;</td></tr>
 <tr><td></td><td>157</td><td>4</td><td>of</td><td>O</td><td>exact</td></tr>
-<tr><td></td><td>158</td><td>12</td><td>(no text in the TCP)</td><td>W</td><td>gap: page not in the TCP</td></tr>
-<tr><td>his</td><td>159</td><td>20</td><td>and</td><td>H</td><td>near: first H is word 19, &ldquo;hand&rdquo;</td></tr>
+<tr><td></td><td>158</td><td>12</td><td>when (printed [158], word 11 + 1)</td><td>W</td><td>page used twice; not the first W (&ldquo;ward&rdquo;)</td></tr>
+<tr><td>his</td><td>159</td><td>20</td><td>hand (printed [158], word 19 + 1)</td><td>H</td><td>page used twice; first H, same +1</td></tr>
 <tr><td></td><td>160</td><td>19</td><td>included</td><td>I</td><td>exact</td></tr>
 <tr><td></td><td>161</td><td>14</td><td>said</td><td>S</td><td>exact</td></tr>
 <tr><td>usurp’d</td><td>162</td><td>80</td><td>the</td><td>U</td><td>near: first U is word 79, &ldquo;undergoe&rdquo;</td></tr>
@@ -215,21 +217,24 @@ That leaves 150&ndash;158 for <em>overthrow</em>, six of whose nine letters are 
 </tbody></table>
 <p>&ldquo;Near&rdquo; is a letter whose first word on the page lies within two of <em>n</em>, the size of a tokenisation difference between the TCP and the 1652 page.
 Number 149 gives &ldquo;Colonel&rdquo; where the line needs a one-letter word; <em>O</em> would suit a prayer, but the first O on that page is word 35, so the letter is left
-open. The V of <em>overthrow</em> (151, &ldquo;nor&rdquo;) is a slip, and its W falls on the page the TCP does not carry.</p>
+open. The V of <em>overthrow</em> (151, &ldquo;nor&rdquo;) is a slip. Its W (158) and the H of <em>his</em> (159) both come from printed page [158], counted one
+word higher than the TCP counts it: Urquhart used that page twice.</p>
 
 <h2 id="distich"><span class="num">05</span> The distich does not follow</h2>
 <p>The same test applied to the distich under Vals’ Proquiritation rule, using Reticuli’s tokenised Proquiritations, yields 34 first-occurrence hits in 64 and the string
 <code>NTMAMNDN_OHTISEABRPTTSGSNTAATVTD</code>, not <em>O God uphold King Charls the second</em>. Texts of thirty to a hundred words give high base rates, so 34 of 64 is
 chance. Page-index variants on either book, with either numbering, with the second line restarting at page 1, all sit inside the shuffled control. Reticuli’s ten
-infeasible positions stand. The distich is a different construction, or the same construction on a text not yet tried; no decipherment of it is established.</p>
+infeasible positions stand. Scheers&rsquo;s further suggestions (20 October 2026) were tested too: the last letter of the <em>k</em>-th word, the <em>n</em>-th letter
+of the page, the sums and differences of the two lines, each line alone and the lines interleaved, on both books at every starting page. The best decode
+scores &minus;2.94 per letter against &minus;2.72 to &minus;2.97 for shuffled numbers: chance. The distich is a different construction, or the same construction on a text not yet tried; no decipherment of it is established.</p>
 
 <h2 id="remaining"><span class="num">06</span> What remains</h2>
 <ul>
 <li>Measured against the verse (<code>measure_sense.py</code>, 5 October 2026), 274 of the octastich&rsquo;s 285 numbers give the required letter (96.1%): 233 exactly
 and 41 within two words of the first occurrence. Counting the distich&rsquo;s 64 numbers, none of them deciphered, the target stands at 274 of 349 (78.5%).</li>
 <li>Number 149, line 5: word 2 of p. 149 is &ldquo;Colonel&rdquo;, where the line wants a one-letter word. The 1652 page would show whether Urquhart&rsquo;s copy differs there.</li>
-<li>Number 158, line 5: Urquhart&rsquo;s count needs a page between the TCP&rsquo;s pp. 157 and 158, whose text the TCP does not carry (its filming has a duplicate image
-there). The letter, the W of <em>overthrow</em>, is given by the word and not counted.</li>
+<li>Number 158, line 5: resolved on 20 October 2026 from David Scheers&rsquo;s photographs of the 1652 pp. 156&ndash;159. No leaf is missing; Urquhart used printed
+page [158] for numbers 158 (<em>when</em>, W) and 159 (<em>hand</em>, H). Counting it, the octastich stands at 275 of 285 (96.5%).</li>
 <li>Nine numbers (55, 66, 106, 151, 207, 232, 239, 250, 283) point at a word that does not give the letter, and no word within two places does. Each was re-checked on
 the 1983 photographs and stands as printed, so these are slips by Urquhart or the compositor, or differences between the 1652 page and the TCP; the context fixes the
 letter.</li>
