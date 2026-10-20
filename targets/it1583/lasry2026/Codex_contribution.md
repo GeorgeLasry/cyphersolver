@@ -6,6 +6,32 @@ Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who als
 
 This is a partial decipherment: 399 of 428 cipher occurrences have an assigned value. The unresolved 29 occurrences remain visible throughout the edition. The contribution concerns f. 68 only.
 
+## What this adds to the existing entry
+
+The substantive addition is **Lasry's working key and the resulting partial reading of previously unread cipher passages**, refined with Astra and Fable 5.1. The date, archival identification and earlier investigation belong to the prior work. This contribution does not claim an independent blind recovery by the models or worldwide priority.
+
+Comparison with [the existing it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md) and [profile](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/profile.json), at upstream commit `0258b8ab5a039818040a1ee14b6b993cc75a6f71`:
+
+| Aspect | Existing contribution | Addition here |
+| --- | --- | --- |
+| Identification | Date 4 May 1446, Maino connection from Mazzatinti, and related f. 70 already identified | Retained and credited; not a new identification |
+| Cipher text | Draft of 404 signs in 26 merged classes | CTTS edition with 428 cipher signs in 52 classes, ten separately anchored clear-text boxes and glyph positions |
+| Key and reading | No matching key; solver attempts unsuccessful; cipher passages unread | Working partial key with 40 assigned classes; 399 occurrences assigned, 29 unresolved |
+| Letter's contents | Clear clauses transcribed, but what the cipher hides remained unknown | Count Francesco's obligations, repeated requests for security, and a proposal concerning trusted persons and eight or ten names |
+| Authorship | Sforza-side attribution inferred from context and catalogue | Third-person references to the count now give a reason to retain that attribution as uncertain |
+| Verification and presentation | Earlier transcription, solver scripts and source image | Every sign linked to a key value and edited segment; current red overlay, horizontal key, reproducible checks and insertion HTML |
+
+The two sign inventories use different segmentation and class definitions: the count difference alone is **not** evidence of 24 omitted signs. Likewise, 399/428 is assignment coverage, not a statistical correctness score. The images, HTML style and packaging make the contribution usable; they are not claimed as new cryptanalytic results.
+
+Concrete additions can be checked in `edition.json` and the red overlay (one-based physical line and CTTS box numbers):
+
+| Location | Reading from cipher signs | Why it matters |
+| --- | --- | --- |
+| Line 2, boxes 34–57 | `di parte del conte francisco` | Identifies the party on whose behalf an answer was given |
+| Line 5, boxes 2–12; line 7, boxes 24–33 | `et la secvreza`; `la secvreza` | Repeated security wording, absent from the earlier clear-text transcription |
+| Line 9, boxes 15–34 | `del elegere li confidenti` | Makes the subject of the second paragraph readable |
+| Line 10, boxes 4–11 | `octo dece` | Supplies the number of names sought in the adjacent clear-text request |
+
 ## Key
 
 The current reconstruction has 52 observed cipher classes: 40 with assigned values and 12 unresolved. It combines homophonic letter signs with CHE, CON, ET and PER. The horizontal CTTS snapshot places homophones beneath their plaintext letters. Of 428 cipher occurrences, 399 have an assigned value (93.2% assignment coverage); this is not a measure of independently established accuracy. The ten boxes labelled [Plaintext] mark clear writing and are excluded from these counts.
@@ -73,13 +99,21 @@ The twelve unresolved classes are #25, #30, #35, #36, #40, #41, (4), (6), (8), (
 
 Independent checks: every box occurs once in the edited alignment; positions, labels and key values agree with the native exports; the heading's date and subject agree with Mazzatinti's inventory. Historical conclusions above distinguish those observations from attribution hypotheses.
 
-Earlier claims adopted after verification: a broadly correct Lasry key, the Italian reading, CON in confidenti and Z in secvreza. Qualifications to the earlier discussion: #20 gives L, not LL; the current key leaves #25 unresolved; the present F/P and E/N classes no longer require contradictory values. No user decision is required for retaining the uncertain readings explicitly.
+Earlier claims adopted after verification: a broadly correct Lasry key, the Italian reading, CON in confidenti and Z in secvreza. Qualifications to the earlier discussion: #20 gives L, not LL; the current key leaves #25 unresolved; the present F/P and E/N classes no longer require contradictory values. Those unresolved readings remain explicit.
 
 ## Earlier work and integration
 
 [Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md) records failed solver runs on an earlier transcription. The present result starts from Lasry’s CTTS transcription and initial key, followed by image checks and contextual corrections. It is an externally contributed partial decipherment; it does not retroactively turn those solver runs into a successful independent solution.
 
 The existing September research notes and generated website files are preserved. `Codex_profile_proposal.json` supplies the complete proposed metadata update for the maintainer to adopt as `targets/it1583/profile.json`; it retains the failed attempts and the separate unread f. 70. It marks this as a contributed result and leaves aggregate reading coverage unknown because the target contains two documents.
+
+### Review of prior contributions, 20 October 2026
+
+Checked all 58 PR/issue descriptions then available: 35 PRs including this draft (34 prior PRs), 23 issues, and all 46 issue/PR conversation comments; the API returned no inline PR review comments. Only this draft mentioned R7898, Maino/Zorzo or it1583 in those descriptions. The current upstream target files still contain no working key or cipher reading, and the public DECODE record remains labelled non-decrypted.
+
+The review also examined [PR #30](https://github.com/dbourdeau/cyphersolver/pull/30) and [PR #31](https://github.com/dbourdeau/cyphersolver/pull/31), including Bourdeau's responses, as examples of useful corrections with explicit limits; [PR #40](https://github.com/dbourdeau/cyphersolver/pull/40), an added decipherment with a key and character-level evidence; [issue #47](https://github.com/dbourdeau/cyphersolver/issues/47), explicitly offered as a check of an existing Lasry reading; and recent PRs #50 and #57 for attribution and presentation. These concern different manuscripts. Their contribution formats do not supply the R7898 key or text.
+
+No competing R7898 solution was found in the repository contributions or public pages checked. This is a bounded prior-work check, not proof that the letter has never been deciphered elsewhere. Unpublished work and an unindexed edition could still exist.
 
 ## Files and verification
 
