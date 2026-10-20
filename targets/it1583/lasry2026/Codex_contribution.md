@@ -4,7 +4,7 @@ This contribution combines **two almost complete decipherments** from BnF italie
 
 **Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1.**
 
-The same working key now covers both letters: **827 cipher occurrences**, 780 assigned (including 4 provisional occurrences), and **47 unresolved**. There are 65 distinct used cipher labels, 12 separately anchored clear-text boxes and 19 physical text lines. Assignment coverage (94.3%) is not an accuracy estimate.
+The same working key now covers both letters: **827 cipher occurrences**, 780 assigned (including 4 provisional occurrences), and **47 unresolved**. There are 65 distinct used cipher labels, 12 separately anchored clear-text boxes and 19 physical text lines. Assignment coverage: 94.3%.
 
 | Document | Cipher signs | Used classes | Assigned, including provisional | Provisional | Unresolved |
 | --- | ---: | ---: | ---: | ---: | ---: |
