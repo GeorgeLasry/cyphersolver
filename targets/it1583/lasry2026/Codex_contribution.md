@@ -1,6 +1,6 @@
 # Two Sforza letters, 4 May 1446: Maino reply and Amidani companion
 
-This contribution combines **two partial decipherments** from BnF italien 1583: the f. 68 reply concerning Zorzo del Maino ([DECODE R7898](https://de-crypt.org/decrypt-web/RecordsView/7898)) and the f. 70 companion photographed in [DECODE R7899, image P1](https://de-crypt.org/decrypt-web/RecordsView/7899). Both are dated 4 May 1446.
+This contribution combines **two almost complete decipherments** from BnF italien 1583: the f. 68 reply concerning Zorzo del Maino ([DECODE R7898](https://de-crypt.org/decrypt-web/RecordsView/7898)) and the f. 70 companion photographed in [DECODE R7899, image P1](https://de-crypt.org/decrypt-web/RecordsView/7899). Both are dated 4 May 1446.
 
 **Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1.**
 
@@ -90,7 +90,7 @@ Claude’s proposals were used as hypotheses, with bracketed alt[r]i, obl[i]ghi 
 
 ### Added value and prior work
 
-The added research value is Lasry’s working key, the resulting partial readings of **both** previously unread cipher texts, and the companion’s additional glyph and word-sign evidence. The archival date, Maino connection and identification of the companion are credited to the earlier investigation and Mazzatinti. This is not an independent blind recovery by the models, and the original unsuccessful solver runs remain on record. See [Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md).
+The added research value is Lasry’s working key, the resulting almost complete readings of **both** previously unread cipher texts, and the companion’s additional glyph and word-sign evidence. The archival date, Maino connection and identification of the companion are credited to the earlier investigation and Mazzatinti. This is not an independent blind recovery by the models, and the original unsuccessful solver runs remain on record. See [Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md).
 
 The earlier draft inventories counted 404 signs/26 classes on f. 68 and 390/31 on f. 70. The current CTTS inventories use different class definitions and revised boxes; count differences alone are not missing-sign counts. The companion was read using the contributed key, then used to check and extend it; this is comparative corroboration, not a held-out blind test.
 
