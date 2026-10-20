@@ -1,8 +1,47 @@
 # Rodrigo Niño (Naples) to Charles V, 19 March 1522 — BNE MSS/20213/27 (DECODE R1182)
 
-Status: no write-up — skipped (attempted, not read). The cipher system was already rebuilt in print (Kolosova 2017, Cifra 15),
-but I could not get her key, and a ciphertext-only attempt on this one block failed. Catalogue entry 151 is marked
-"skipped" until Kolosova's key or a better scan is in hand (see "What would move it").
+Status: write-up prepared — George Lasry recovered the key with CTTS cryptanalysis; eight cipher lines deciphered, with one sign identity still ambiguous. Contribution prepared 20 October 2026.
+
+## George Lasry contribution, 20 October 2026
+
+**Solved by George Lasry.** Transcribed with CTTS (CrypTool Transcriber and Solver); an initial key was recovered with CTTS built-in cryptanalysis. The key and translation were refined by GPT 6.1 Sol and Anthropic Opus 5.5. Lasry supplied the workflow attribution. This is an outside contribution, not a claim that Bourdeau's September solver succeeded.
+
+The current eight lines contain **260 cipher elements in 49 observed classes**: 257 non-null occurrences and three null occurrences (`mer` twice and `por` once). The key has 44 letter-sign classes (one still has an unresolved p/y identity), two word-part classes (LL and ND), one honorific code (V.M.), and two null groups. The largest settled homophone sets have **four signs per vowel** (a and i), **three per consonant** (g, p and r). `decode.py` recomputes the inventory; labels are CTTS identifiers, not historical numerical codes.
+
+**255 of the 257 non-null occurrences have an unambiguous assigned value (99.2% assignment coverage).** The same unresolved class (39) occurs twice. Coverage is not a measured transcription or translation accuracy. LL and ND are contextual one-occurrence readings; see key.tsv. The clear prose outside the eight-line block is historical context, not claimed as newly transcribed or deciphered here.
+
+Files: `transcription.txt` (eight labelled lines), `key.json`, `key.txt` (CTTS), `key.tsv` (status), `decryption_tokens.txt` (token-aligned), `decryption_literal.txt` (no word division or repairs), `decryption_edited.txt` (spacing, accents, u/v normalized), and `translation_en.txt` (the whole cipher block, with the uncertainty retained). `ctts/` contains positions, palette, transcription, edited records and newly drawn icons. Source page images are not redistributed: the DECODE metadata explicitly requires archive permission. The website shows the reconstructed key and sign inventory, with a link to R1182; no manuscript photograph is published in this PR.
+
+### Corrections and tests
+
+- Seven duplicate detections of single physical signs were merged. The old 336-character eye transcription incorrectly split modifiers and is superseded, not pooled with this one.
+- Separated the two-tick loop (52=u) from plain loop (37=b); source contexts give `sufrir` and `abrá`.
+- Separated `ofo` (53=i) from `oto` (9=d), giving `Dios` rather than `Ddos`.
+- Merged former class 33 with 13=a, supported in `paga` and `guarda`; did not adopt the suggested 33=i.
+- (20)=V.M. is supported by three contexts: `suplico a V.M. mande`, `crea V.M.`, `servicio de V.M.`.
+- Retained the nasal-marked d as (35)=nd in `pan de`; the plain d in line 5 belongs to (8). Retained the distinct double-barred sign (50)=ll in `ellos`, with its one-occurrence limitation.
+- Removed the unsupported initial `Mas` and closing `nuestro señor` expansions. The literal groups there are `mer` and `mer por`, agreeing with the null-group description cited in the earlier research.
+- (39) would need p in `pan`, y at the start of line 7 (`y este`). No visual split or general polyphony is proved. The machine key retains `p/y?`; literal output prints `?`; the edited text and translation mark the proposed connective uncertain. No silent contextual p/y substitution is counted as a settled value.
+- `bivir`, `ynconviniente` and `abrá` preserve historical spelling. Plain u is normalized to v in the edited `bivir`, `ynconviniente` and `servicio`; the literal output retains u.
+
+### Prior research and independence
+
+The following September record is retained as the prior attempt. Its claim of a simple alphabet and exact identity with Kolosova's system has not been confirmed against her actual key: the new working inventory is homophonic. Tomokiyo's description of a related 1522 Niño cipher and Kolosova's earlier reconstruction must be acknowledged, but no exact-letter or first-publication claim is made. The CTTS initial alphabet key and the October reading existed before this submission pass consulted that prior-research note. The published description helped correct the null interpretation; it did not supply the alphabet mappings or the paragraph plaintext.
+
+## Remaining gaps
+- (39), two occurrences — blocker: illegible; one class may conflate a subtle modified sign; context suggests p and y, but the source image does not establish the split.
+- LL (50) and ND (35) are each contextually reconstructed from one occurrence, not checked against a surviving original key.
+
+## Escalation
+- [n/a] siblings: this submission concerns the one eight-line block supplied by Lasry; no other ciphertext in a different record is claimed deciphered.
+- [x] clear-pages: the opening is clear outside this block; no literal decipherment is visible beside it.
+- [x] known-keys: the earlier Lope Hurtado comparison failed; no external alphabet key was applied.
+- [x] print: Kolosova and Tomokiyo's prior related-system reconstruction is acknowledged below; exact letter coverage remains unconfirmed.
+- [x] key-rebuild: CTTS recovery followed by source-based sign splitting, duplicate removal and contextual testing.
+- [x] retry: every one of the 260 elements is included in token-aligned output; (39) is left ambiguous in both occurrences.
+
+## Earlier research record (September 2026)
+The sections below preserve the earlier observations and unsuccessful attempt, rather than attributing that attempt to Lasry.
 
 ## The document
 
