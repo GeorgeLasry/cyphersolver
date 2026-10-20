@@ -14,6 +14,11 @@ system ("nos. 6 + 24, no-key-material"). The transcriptions used below were made
   As the PDF tells it, the key was first recovered by cryptanalysis from the ciphertext only (Claude, with the
   help of Astra), and the matching historical key table, DECODE R4755, was then found in the collection (Astra).
 - contributor: George Lasry (settled 14 Oct 2026; the PDF itself names no person).
+- **Credit as restated in his consolidated report of 17 Oct 2026** (`lasry_report.md`, the report's section on
+  nos. 6? and 24, pp. 13-17, verbatim): "Solved ciphertext-only (October 2026) by George Lasry with CTTS built-in
+  cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the filed key R4755 was found to match afterwards."
+  The 14 Oct PDF had put the recovery to Claude "with the help of Astra" and the find of R4755 to Astra. The profile,
+  page and ledgers now use the report's wording (CTTS's own solver first, the two models refining).
 - This project: independent verification on its own transcription (below), the key table as a tsv, the dorse of
   no. 24, the signature of no. 24, the dating check, and the DECODE corrections.
 
@@ -25,7 +30,7 @@ key, read here from the DECODE photograph, with the labels of our transcription)
 
 | no. | DECODE | images | content | ciphertext (ours, measured) | theirs |
 |---|---|---|---|---|---|
-| 6 | R4795 (`Concistoro_2308_49`) | P2 text side, 15 lines; P1 verso, show-through and docket | dated 19 February, signed "Cristofano de Mont[...]" | 1,051 signs (`siena1421/transcripts/no06.tok` lines) | 1,007 |
+| 6 | R4795 (`Concistoro_2308_49`) | P2 text side, 15 lines; P1 verso, show-through and docket | dated 19 February, signed "Cristofano de Mont[...]" | 1,051 signs (`project_attempt/no06.tok` lines) | 1,007 |
 | 24 | R4812 (`Concistoro_2308_66`) | P2 text side, 38 lines; P1 dorse: 8 run-over cipher lines + address "Magnifici et potenti signiori e ... Capitano di popolo della citta di Siena" | not dated; signed on the dorse (found here, below) | P2 2,638 signs; P1 dorse 637 (first pass) | 2,559 (P2 only) |
 
 Both open with a clear salutation ("Magnifici et potentes domini domini mei singularissimi ...") and run on in
@@ -34,7 +39,7 @@ Christofano [M?]tucci(?)"; DECODE's name is "Cifra cum Christoforo Ghinucci[?]".
 to read; the signature of no. 6, "Cristofano de Mont‹vccia›" in the submitted reading, points to the same name
 (Montucci?), not to Ghinucci. Left as a question in the DECODE note, not asserted.
 
-Note against ourselves: `siena1421/NOTES.md` (24 Sept) already indexed R4755 as "Cifra cum Christofano ...
+Note against ourselves: `siena1421/NOTES.md` (24 Sept; now `research/siena2308/README.md`) already indexed R4755 as "Cifra cum Christofano ...
 (Papa, Fiorentini, Veneziani, Duca di Milano, Niccolò Piccinino, Conte Francesco, Lucca ...)", dated it c. 1440 and
 never tried it on nos. 6/24: the fasc. 1 alphabets were compared with the letters "by eye", and this one was missed.
 
@@ -57,7 +62,7 @@ Fiorentini 1 in their count; our counts agree for Lucca + Piccinino = 20).
 ## Verification (14 Oct 2026, `python targets/siena1431/verify.py [--seed-only]`)
 
 Our transcription of nos. 6 and 24 (made 24 Sept by agents A, H, I, before any key; sign legend in
-`siena1421/transcripts/no06.txt`) was decoded with the key and compared with the submitted reading by a DP
+`project_attempt/no06.txt`) was decoded with the key and compared with the submitted reading by a DP
 alignment (gap cost 6).
 
 1. **Key read off the sheet by eye only** (31 of our labels given the key value of the sign they look like, no
@@ -97,7 +102,7 @@ Both letters: **read in part**.
 ## No. 24 dorse: decoded here (`dorse24.py`)
 
 The letter runs over onto the back: 8 cipher lines above the address (our first-pass transcription by agent E,
-637 tokens, own sign legend, `siena1421/transcripts/no24.txt`). Mapped onto the key by sign shape and decoded,
+637 tokens, own sign legend, `project_attempt/no24.txt`). Mapped onto the key by sign shape and decoded,
 it reads in stretches (LM -3.42 against a shuffled control of -3.96, best -3.63):
 
 - L02 "... cose sono ... segrete ..." (things that are secret)
@@ -215,3 +220,31 @@ does not read stays in ‹...›.
 - [x] print: Meister 1902 (pp. 50-53, three Sienese keys of the 1430s, other values), the 1952 inventory, Treccani DBI (Petrucci); no printed decipherment of either letter found.
 - [x] key-rebuild: the key is complete for every letter sign that occurs (36 signs, 7 nulls); the gaps are not key gaps.
 - [x] retry: both letters decoded again from our own blind transcription (verify.py), and the dorse of no. 24 decoded for the first time (dorse24.py); the ‹...› runs stay unread under both transcriptions; 14 Oct: each run of no. 24 retried against the merged-label alternatives and the R4812 image (72.7% to 79.6%).
+
+## The report of 17 Oct 2026 against this entry
+
+George Lasry's consolidated report (`lasry_report.md`) repeats the 14 Oct PDF's reading of both letters and does not
+take in this entry's work of 14 Oct. Kept as he wrote it there; this entry's readings and dating stand beside it:
+
+- **Credit**: CTTS built-in cryptanalysis first, refined by Claude Opus 5.5 and GPT-6 Astra; R4755 found afterwards
+  (adopted, see Credit above).
+- **Dating**: the report keeps "about 1431-1432" (the marquis of Mantua "a title Sigismund created in 1432-1433");
+  this entry has c. 1431-38, no. 24 early 1438 ("duca d'Isterlic, che è a facto re d'Ongnaria", "a Fer[r]ara pe[r] lo
+  presente", above).
+- **No. 24 signed**: the report calls no. 24 "unsigned"; its dorse is signed "Crist[ofa]no ... si racoman[d]a" (above).
+- **No. 6 corrections**: the report still reads "tornò da Milano a Sena …vere fact…", "buona … a prese", "Vincena da
+  Camerino"; with z = So and 4 = u (14 Oct, on the key sheet) these are "senza avere fact[o] nula", "buona
+  aduertenza", "Vincenzo da Camerino" (95.4% understood).
+- **Counts**: the report has about 1,000 (no. 6) and 2,560 (no. 24) elements, 3,570 in all; ours 1,051 and 2,638, plus
+  637 on the dorse of no. 24.
+- **Piece number**: the report writes "No. 6?" (the pencil number is doubtful there); here "no. 6".
+
+## Questions for George
+
+1. The report credits CTTS's built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the 14 Oct PDF said
+   Claude "with the help of" Astra, and that Astra found R4755. Which tool gave the first working key, and who found
+   R4755? The profile now follows the report.
+2. Dating: would you accept early 1438 for no. 24 (Albert "facto re d'Ongnaria", Dec 1437; the Council "a Ferrara",
+   Jan 1438; Mantua's marquisate dates from Sept 1433), or do you keep 1431-1432?
+3. The dorse of no. 24 (8 run-over cipher lines) closes "Crist[ofa]no ... si racoman[d]a": do you read it too?
+4. Why "No. 6?": is the pencil number on R4795 unclear on your image?

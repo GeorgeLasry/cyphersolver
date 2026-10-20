@@ -1,0 +1,205 @@
+{
+ "schema_version": 1,
+ "target": "siena8",
+ "title": "Siena, Concistoro 2308 fasc. 2 no. 8: the Milan-Ferrara league slip, c. 1440-41, with its contemporary decipherment",
+ "documents": [
+  {
+   "id": "R4797",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2, no. 8; DECODE R4797 (Concistoro_2308_51)",
+   "date": "c. 1440-41 (proposed: Felix V elected Nov 1439; Bianca Maria Visconti married Oct 1441)",
+   "year": 1440,
+   "country": "Siena",
+   "route": "a Sienese informant or envoy (at Milan?) -> the government of Siena",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "The clear memorandum on the upper part of the same sheet, paragraphs 5-7 ('Nel polizolo dicto segue ...').",
+    "partial": false
+   },
+   "length": {
+    "tokens": 166,
+    "distinct": 23,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcripts/no08.tok"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "Transcribed 18 Oct 2026 (Claude) from line crops of IMG_R4797_I27940_P.jpg; cipher signs only. George Lasry counts c. 400 symbols, presumably the whole slip with its clear words."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Simple substitution in letter-like signs, two signs for a and one for s/ss, with two name signs (duca di Milano, Viniziani).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 23,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": [
+    "names",
+    "places"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "Not compared sign by sign with the c. 1440 keys R4748 and R4749; different from nos. 7, 19 and 21.",
+  "notes": "Key rebuilt from the contemporary decipherment (decode.py); a has two signs (2, 5)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The clear memorandum on the same sheet (ASSi Concistoro 2308 fasc. 2 no. 8, DECODE R4797).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Set the goal (decipher the letters of Concistoro 2308; try the filed keys first); passed on George Lasry's report of 17 Oct 2026 asking for one entry per key. Asked to record the disagreement between the project's 'read at the time' and George Lasry's 'unsolved'.",
+  "tools": [
+   "DECODE images",
+   "PIL crops",
+   "decode.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "access",
+   "what": "Found the whole busta Concistoro 2308 on DECODE (keys R4746-R4789, letters R4790-R4814, R1858) and downloaded the images with the project cookie (survey entry siena1421).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "key from source",
+   "what": "Indexed the 43 key records of fasc. 1 (1433 Petrucci, c. 1440 frate Bernardino and R4749, 1454 Milan ambassadors, Casole, 1478 Bichi, c. 1500 and 16th-c. keys).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "verification",
+   "what": "Inventory: no. 8 taken as read at the time, a ciphered slip below a clear memorandum naming papa Felice, the Duke of Milan, Leonello d'Este, Niccolo Piccinino; no sign aligned.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "literature search",
+   "what": "George Lasry's report lists no. 8 as unsolved, c. 400 symbols, no interlinear plaintext; a relation to the clear memorandum above 'possible but speculative'.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "transcription",
+   "what": "The slip transcribed sign by sign from line crops at 3-4x: 166 cipher signs, 23 types, in four runs between the clear words.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "repeat/pattern analysis"
+   ],
+   "what": "The memorandum's catchwords 'Anchora disse' and 'antiveduto questo' found as clear words of the slip; the runs aligned letter for letter with paragraphs 5-7 ('Nel polizolo dicto segue ...'): 5 9 T 9 5 = aveva, F T W W 2 W 2 = ferrara, L T Z PHI T L L Z = leonello.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Key rebuilt from the alignment: 21 letter signs (two for a, S for s/ss, 9 for u/v/b) and two name signs (duca di Milano, Viniziani); decode.py.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "reading",
+   "what": "decode.py applies the key to all four runs: every sign reads, spelling variants only against the memorandum.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Key consistency: each sign keeps one value across all four runs (7 = d in dato, madonna, di, de, udirete; 2 and 5 = a throughout).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "Split out of the survey entry siena1421 under the one-key rule; the project's 'read at the time' and George Lasry's 'unsolved' recorded side by side.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The contemporary decipherment is on the same sheet (memorandum paragraphs 5-7, 'Nel polizolo dicto segue'); the slip was transcribed and aligned with it sign by sign, and the key rebuilt from the alignment reads every cipher sign.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "class": "read",
+  "key": "recovered",
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py over transcripts/no08.tok: 166 of 166 cipher signs given a value; 6 doubtful signs listed in NOTES",
+  "codes_open": {
+   "open": 0,
+   "total": 2,
+   "tokens_open": 0
+  },
+  "verification": [
+   "contemporary decipherment",
+   "key confirms"
+  ],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "the cipher behind memorandum paragraphs 1-4",
+    "blocker": "needs-physical-access",
+    "detail": "in a covering letter not on this sheet and not among the DECODE photographs; its decipherment is on the memorandum"
+   }
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "The clear memorandum on the same sheet, c. 1440-41, deciphering the slip (paragraphs 5-7)."
+   }
+  ],
+  "notes": "George Lasry's report (17 Oct 2026) lists no. 8 as unsolved and calls the relation to the memorandum speculative; the alignment of 18 Oct 2026 shows the memorandum is its decipherment. To be confirmed with him."
+ }
+}

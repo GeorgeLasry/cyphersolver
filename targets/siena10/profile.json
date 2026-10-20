@@ -1,0 +1,145 @@
+{
+ "schema_version": 1,
+ "target": "siena10",
+ "title": "Siena no. 10: 'presura di Montepulciano', a slip deciphered at the time (ASSi Concistoro 2308 fasc. 2 no. 10, DECODE R4799)",
+ "documents": [
+  {
+   "id": "R4799",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 10; DECODE R4799 (Concistoro_2308_53)",
+   "date": "undated",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "unknown writer -> unknown addressee",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Decipherment written letter by letter over the cipher run in a second hand: 'presura di Montepulciano'.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 25,
+    "distinct": 19,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcripts/no10.tok"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "notes": "Transcribed 18 Oct 2026 from the DECODE photograph at 2x-4x, each sign with the gloss letter over it (transcripts/no10.txt)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Letter substitution on signs (digits, letters and invented shapes), at least two homophones each for a and o, three unglossed signs probably nulls; 16 sign values shown by the gloss.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 19,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 1
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "none known",
+  "notes": "Only 25 signs; the gloss covers 22 of them."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary decipherment written over the cipher run on the slip itself.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "None beyond filing: Daniel Bourdeau's goal to work through the Siena fascicle; George Lasry's report lists the piece under interlinear plaintext.",
+  "tools": [
+   "image crops (PIL)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "access",
+   "what": "Project survey (siena1421): the slip identified as one cipher run glossed 'presura di Montepulciano', read at the time; not transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "transcription",
+   "what": "25 cipher signs transcribed from the DECODE photograph with the gloss letter over each (transcripts/no10.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Gloss checked against the signs: 22 signs carry a letter, every repeated sign (S, 3, 7, 1, 9, L) the same letter; a and o have two signs each; three signs carry none (nulls?).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-18",
+   "verdict": "too short",
+   "notes": "25 signs; the reading is the contemporary gloss"
+  },
+  "class": "read",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The decipherment is written letter by letter over the only cipher run; the work was transcribing the signs and checking the gloss.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcripts/no10.txt: 22 of 25 signs glossed with a letter, giving 'presura di Montepulciano' whole; the 3 unglossed signs read as nulls (grade I).",
+  "grades": {
+   "C": 22,
+   "I": 3
+  },
+  "gaps": [],
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the decipherment written over the cipher run on the slip"
+   }
+  ],
+  "notes": "Read at the time; transcribed and aligned here. George Lasry's report has 'pressura'; the gloss has one s."
+ }
+}

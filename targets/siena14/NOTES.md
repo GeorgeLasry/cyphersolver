@@ -8,7 +8,7 @@ own; the other letters with recovered keys are their own entries, each a differe
 ([`targets/siena25/`](../siena25/NOTES.md)), no. 18 ([`targets/siena18/`](../siena18/NOTES.md)), no. 4
 ([`targets/borghesi1456/`](../borghesi1456/NOTES.md)), nos. 6 and 24 (George Lasry's
 [`targets/siena1431/`](../siena1431/NOTES.md)). The unread pieces, the key index and the shared solvers stay in
-[`targets/siena1421/`](../siena1421/NOTES.md). The work below was done on 24 Sept 2026 and is carried over from its NOTES;
+[`targets/siena1421/`, now the collection index `research/siena2308/`](../../research/siena2308/README.md). The work below was done on 24 Sept 2026 and is carried over from its NOTES;
 the transcriptions, `key14.txt`, `prep14.py` and `apply14.py` moved here on 14 Oct 2026.
 
 Work date: 2026-09-24. From catalogue 336 (now narrowed to the unread pieces).
@@ -25,7 +25,7 @@ potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full lines + 
   pass counts 1,495 sign tokens with the classes it settled.
 - System: Italian, simple substitution with a few homophones (e = TR, 2; o = 6, P; i = Q4, PD, L; a = EQ, Q, TL;
   à = O+")"; q/g = Z), word points kept, two or three code signs for persons (7H, Z7).
-- Attack history: plain homophonic anneal (`targets/siena1421/wordsolve.py`, 10 x 300k) stuck at nonsense; a hand crib
+- Attack history: plain homophonic anneal (`research/siena2308/wordsolve.py`, 10 x 300k) stuck at nonsense; a hand crib
   ('8 6 RR IB VB Q' = nostra/vostra, 'RR IB EQ IB 6' = stato, 'Y 6 RR IB VB' = vostr-) pinned the key and Italian
   appeared; then the staged solver `homsolve2.py` (order 3 -> 4, frequency-seeded restarts, swap moves) reached the
   same key with no crib at all. So: key recovered from ciphertext only (`key14.txt`).

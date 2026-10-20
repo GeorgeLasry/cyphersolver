@@ -1,6 +1,47 @@
 # Siena 20 and 23 — DECODE R4808 and R4811
 
-Status: **read in part; key recovered from ciphertext-only**. Contributed by George Lasry. Transcribed with CTTS, then solved by GPT-6 Astra.
+Status: **read; key recovered from ciphertext-only** by George Lasry with CTTS and Claude, 15-17 Oct 2026 (his
+consolidated report of 17 Oct 2026: "both sheets read in full (c. 4,260 symbols, one key with nomenclator)"). Seven
+name signs and the subscription of no. 20 stay open. Updated 18 Oct 2026 from "read in part" to the report's statement;
+the PR #41 material below (17-18 Oct, "transcribed with CTTS, then solved by GPT-6 Astra") is kept as filed.
+
+## George Lasry's report (17 Oct 2026)
+
+`lasry_report.md` holds the report's whole section on nos. 20 and 23 (pp. 4-9: status, references, ciphertext, key,
+sample decryption, contents, dating, open points, sources, the full decryption and translation) and its contents
+line, verbatim; `key_lasry.jpg` is the report's key figure (signs cut from the manuscript, with occurrence counts).
+What it says that differs from or adds to PR #41:
+
+- **Credit and method.** "15-17 October 2026, by George Lasry with CTTS and Claude: no. 23 transcribed by the author in
+  CTTS, no. 20 by a detector trained on no. 20 with Lasry's ResNet model and corrected by the author in CTTS; key
+  recovered by Claude via crib testing and dragging, refined by the author with CTTS." PR #41 said "transcribed with
+  CTTS, then solved by GPT-6 Astra". The profile, the page and the ledgers now follow the report.
+- **Extent.** "Solved: both sheets read in full". PR #41 had "read in part" (98.94% key coverage, seven name codes
+  and editorial gaps). The report's own open points are the same kind: the name signs [Name3], [Name4], [Name5] and
+  "?" (PR #41's `e` = [Name6?]), the place [Eucebio?], the stretch "dessut" and the subscription of no. 20;
+  [Paolo Orsini?], [Sforza?] and [Tartaglia?] remain hypotheses. Under the read bar this is "read" with scattered
+  name codes open.
+- **Key.** 60 distinct signs (PR #41: 59 observed classes): four signs for a and i, three for e, o, u, two each for g,
+  l, s, one for every other consonant; single signs for ci, et, ff, qu, re, rr, ss (PR #41: CI, ET, FF, RE, RR, SS, no `qu`
+  class); eleven nulls; a nomenclator of seven name signs.
+- **Dates and people, now stated.** No. 20: Perugia, 30 March 1413, a captain in the king's pay, "most probably Muzio
+  Attendolo Sforza", to King Ladislaus. No. 23: King Ladislaus's chancery, two memoranda, to Iacobo Spinello (to the
+  Marche) and Francesco Gattola of Naples (to Tartaglia), mid-April 1413. PR #41 proposed the same year as a hypothesis.
+- **Reading differences.** The report renders PR #41's `[Name6?]` as "?"; otherwise the two editions agree in the
+  passages compared (both "ante terre pedum oscula"; the siena1421 survey of 24 Sept had misread "post"). George's
+  readings are not re-edited here.
+- Sibling: no. 12 (R4790, Naples, 10 March 1413, to Sforza) is the same spring and circle but a different key (report
+  heading B); its own entry is [`targets/siena12/`](../siena12/NOTES.md).
+
+## Questions for George
+
+1. PR #41 (17-18 Oct) credits "transcribed with CTTS, then solved by GPT-6 Astra"; your report of 17 Oct credits
+   Claude ("key recovered by Claude via crib testing and dragging") and a ResNet detector for no. 20. Did both models
+   work on it (Astra first, Claude later, or the reverse)? Which Claude model? The profile now lists Claude as the
+   solver and keeps Astra as "named in PR #41 only".
+2. The report says "read in full"; PR #41 called the same edition partial. We now record it as read (key recovered,
+   seven name signs open). Agreed?
+3. The report counts 60 signs, PR #41's snapshot 59 classes (plus an unused `n`). Is the 60th the `qu` sign?
 
 ## Editions and summary
 
@@ -93,7 +134,7 @@ under the one-key rule, unchanged, to `project_attempt/`:
 - What was tried: homophonic annealing (`homsolve.py`, `homsolve2.py`), null-aware (`homsolve3.py`) and bigram
   (`sylsolve.py`) solvers, Italian, Latin, Catalan and Spanish models, order 3-5; filed keys R4760, R4768 and R4778
   compared with no. 20. None converged (about -2.9/token against -1.74 on a synthetic control of the same size); the
-  survey concluded the system was not plain letter substitution as transcribed. The solvers stay in `targets/siena1421/`.
+  survey concluded the system was not plain letter substitution as transcribed. The solvers are in `research/siena2308/` (moved from `targets/siena1421/` on 18 Oct 2026).
 - Nothing of that failed attempt is claimed in the reading above, which is George Lasry's, made from his own CTTS
   transcription.
 
@@ -103,6 +144,8 @@ George Lasry supplied the images, CTTS material and successive Italian readings,
 
 - [DECODE R4808](https://de-crypt.org/decrypt-web/RecordsView/4808) and [R4811](https://de-crypt.org/decrypt-web/RecordsView/4811): Archivio di Stato di Siena, Concistoro 2308 fasc. 2 nos. 20 and 23.
 - User-supplied research report: *Siena Concistoro 2308 keys and sources.md*, 17 October 2026 source snapshot. Its broad survey is attributed, not represented as independently repeated in full. Primary sources are linked in the historical section.
-- [Earlier collection survey](../siena1421/NOTES.md), for the preceding attempts and other cipher systems.
+- [Earlier collection survey, now the collection index](../../research/siena2308/README.md), for the preceding attempts and other cipher systems.
 
 DECODE updates are queued as **Partially**, not sent. No inferred year or sender is entered as established metadata. No oldest/first decipherment claim is made.
+(18 Oct 2026: the queue now proposes **Decrypted** for both records, following the report's "read in full", with
+the report cited; still not sent, and the year and writer are still not entered as DECODE fields.)

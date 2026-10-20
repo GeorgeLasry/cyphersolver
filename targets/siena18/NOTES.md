@@ -1,6 +1,6 @@
 # Siena, Concistoro 2308 fasc. 2 no. 18 (DECODE R4806): treaty articles with the imperial side, subscribed by Niccolo Ziegler
 
-Status: read in part — key recovered from the ciphertext alone; 1,271 of 1,459 cipher tokens (87.1%) read as Latin sense.
+Status: read — key recovered from the ciphertext alone, twice and independently: by this project on 24 Sept 2026 (1,271 of 1,459 cipher tokens, 87.1%, read as Latin sense) and by George Lasry with CTTS and Claude on 15-17 Oct 2026, whose complete reading (all cipher passages, six single signs unread) is now the entry's reading. Dated by him to Pisa, November 1496 (ours: 1510s-1520s, withdrawn).
 
 Split on 14 Oct 2026 from `siena1421` under the one-key rule (George Lasry, 14 Oct 2026). The old entry grouped the
 whole bundle of Sienese cipher letters (Concistoro 2308 fasc. 2), each in its own key. These articles have a key of
@@ -8,9 +8,41 @@ their own; the other letters with recovered keys are their own entries, each a d
 no. 25 ([`targets/siena25/`](../siena25/NOTES.md)), no. 14 ([`targets/siena14/`](../siena14/NOTES.md)), no. 4
 ([`targets/borghesi1456/`](../borghesi1456/NOTES.md)), nos. 6 and 24 (George Lasry's
 [`targets/siena1431/`](../siena1431/NOTES.md)). The unread pieces, the key index and the shared solvers stay in
-[`targets/siena1421/`](../siena1421/NOTES.md). The work below was done on 24 Sept 2026 and is carried over from its NOTES.
+[`targets/siena1421/`, now the collection index `research/siena2308/`](../../research/siena2308/README.md). The work below was done on 24 Sept 2026 and is carried over from its NOTES.
 
 Work date: 2026-09-24. From catalogue 336 (now narrowed to the unread pieces).
+
+## George Lasry's independent solution (17 Oct 2026)
+
+George Lasry, "The cipher documents of Concistoro 2308, fasc. 2" (report sent by email to Daniel Bourdeau, 17 Oct
+2026), section F "The imperial chancery cipher of 1496": "Solved: all cipher passages read; parties and date
+identified. 15–17 October 2026, by George Lasry with CTTS and Claude: transcription by Claude, refined by the author
+in CTTS; key recovered by Claude from cribs taken from the surrounding clear text." His whole section, with the full
+decryption and translation, is quoted verbatim in `lasry_report.md`; his key figure is `docs/siena18_key.png`.
+
+One key, two contributions. The project's key (24 Sept, `keys/no18_key.txt`, homsolve2 with a Latin model,
+look-alikes split on the images) came first; his was recovered without it. Both are ciphertext-only (his cribs are
+taken from the clear Latin around the cipher words, within the same document). His reading is adopted as the entry's
+reading because it covers what ours left open; ours stays in `transcripts/` as the project's own result.
+
+**Key agreement** (`lasry_comparison.md`): of the 38 letter and doubled-letter signs of his key, 35 carry the same
+value in ours (32 as separately named signs, 3 as glyphs our transcription merged with a look-alike: the small ш = m,
+the hooked 7-like q, the dotted U = u); 1 differs (his cc, our single c for the TRI sign); 2 single-occurrence signs
+are not in ours (his second r, on the paper flaw of *armature*, and a hooked a). Both treat dotted and barred signs
+as nulls and leave the code capitals B., X., S., M.X. in clear (his m. = our n.).
+
+**Reading differences**, graded in `lasry_comparison.md`: his text reads the words ours left unread or doubtful
+(*Telamonem*, *in ordinem* where we saw a struck word, *que* after B., *pax* for our *passo?*, *defendat* for our
+*defendam*, *quote* for *quoti*, *ius competit*, *armature*); 10 at H, 3 at M (*Telamonem*, *pax*,
+*s[anctissima]?*). Six single signs stay unread in his text (÷ ×4, ✱ ×2). Clear-text readings differ in six places;
+his are the grammatical ones.
+
+**Dating**: his Pisa, November 1496 (Maximilian I at Pisa, Ziegler secretary from 1494, the Holy League of 1495,
+Ponte a Valiano 1496; Regesta Imperii XIV, Pecci, Sanudo, Guicciardini) replaces our 1510s-1520s. His page order
+P4, P3, P1 is the order of the negotiation.
+
+Fraction read (his reading): all cipher passages; the unread marks in his text are ÷ four times and ✱ twice, single
+signs each, plus one query (s[anctissima]?, counted as one unread sign): 1,462 of his 1,469 cipher signs, 99.5%.
 
 ## The document
 
@@ -52,7 +84,8 @@ reading scores −1.97, but the one-value-per-sign key K scores −2.46, below t
 transcription keeps look-alike pairs under one sign name (o = g/o, n = q/e), so K is polyphonic (5.7%).
 
 ## Remaining gaps
-- doubtful and unread words (about 12% of 1,459 tokens) - blocker: illegible; W/m/tt and dotted-null distinctions at the DECODE resolution
+- six single cipher signs left unread in George Lasry's reading (÷ four times, ✱ twice) - blocker: illegible; isolated signs, his figure lists them as unread
+- the code capitals B., X., S., M.X., m. (written unenciphered) - blocker: no-key-material; no key sheet, his B = League and M.X. = Maiestas are conjectures
 
 ## Escalation
 - [x] siblings: the whole busta opened; no other piece in this key
@@ -60,4 +93,4 @@ transcription keeps look-alike pairs under one sign name (o = g/o, n = q/e), so 
 - [x] known-keys: all 43 key sheets of fasc. 1 compared by eye; none fits
 - [x] print: Meister 1902, Cecchini 1952: no printed text of these articles found
 - [x] key-rebuild: key recovered by homsolve2 from the ciphertext alone; look-alike signs split on the image
-- [x] retry: re-read sign by sign on the images with the extended key (two passes); doubtful words regraded in the reading file
+- [x] retry: re-read sign by sign on the images with the extended key (two passes); doubtful words regraded in the reading file; George Lasry's independent key and reading (17 Oct 2026) compared sign by sign and word by word (`lasry_comparison.md`)

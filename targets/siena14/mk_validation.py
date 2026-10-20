@@ -1,5 +1,5 @@
 """Build validation.tsv for no. 14 (transcripts/no14_reading2.txt, second pass, SIGNS/TEXT). Split on 14 Oct 2026 from
-targets/siena1421/mk_validation.py, which validated nos. 14 and 25 together; each letter has its own key and entry. Each cipher word's signs are aligned with its reading
+the former targets/siena1421/mk_validation.py (the bundle entry, now research/siena2308/), which validated nos. 14 and 25 together; each letter has its own key and entry. Each cipher word's signs are aligned with its reading
 word by a small DP (each sign takes 0-2 letters; cost where the letters differ from the sign's key value, key14.txt /
 keys/no25_key.txt plus the sign classes the readings settle). Only words the reading leaves untagged (read as sense)
 are used; doubtful/unread words ({?} {x} {code}, '(?)', [TH]) and words the DP cannot align cheaply are '?'.

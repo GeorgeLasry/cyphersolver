@@ -1,0 +1,184 @@
+{
+ "schema_version": 1,
+ "target": "siena17",
+ "title": "Siena no. 17: Bartolomeo Tantucci in the cipher of the Balia, 25 August 1528",
+ "documents": [
+  {
+   "id": "R4805",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 17; DECODE R4805 (Concistoro_2308_59)",
+   "date": "25 (or 20) August 1528, Sarteano(?)",
+   "year": 1528,
+   "country": "Italy",
+   "route": "Bartolomeo Tantucci -> messer Antonio del Vescovo, rector of the cathedral, member of the Balia",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the sheet; clear frame and connecting words only.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 282,
+    "distinct": 41,
+    "unit": "symbols",
+    "measured": false,
+    "file": "lasry_report.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry with CTTS",
+    "image_quality": "fair",
+    "notes": "282 cipher signs in 8 lines (CTTS lines 5-12 of P1). Count from the report, not re-measured. George Lasry names accurate transcription as the main obstacle in this fascicle. The project's own 24 Sept transcription is kept in project_attempt/ and was not used for the reading."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic letter substitution without word division, up to five signs per vowel, doubled letters with two different signs, and the 'che' abbreviation as a sign.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 41,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 1,
+   "kinds": [
+    "common words"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "Every double letter written with two different signs.",
+  "sibling_key": "The docket calls it 'quella di Balia'; no filed key in fasc. 1 was matched. Compared sign by sign with nos. 15 and 5 (report key figures): a different key.",
+  "notes": "Key figure in key_lasry.jpg (report p. 25). Four signs listed as unknown."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on DECODE or in print known; the project's 24 Sept survey left it unread.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry transcribed in CTTS and ran the solution with Claude; this project filed his report (no re-reading).",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver)"
+  ],
+  "models": [
+   "Claude (version not stated in the report)"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-10-15",
+  "last_date": "2026-10-17"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Project survey (siena1421): transcription of no. 17 (agent A) and homophonic annealing; filed keys R4760, R4768, R4778 compared. Not read; closed as too short.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "transcription",
+   "what": "George Lasry transcribed the 282 cipher signs in CTTS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "solver",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Key recovered by Claude (frequency and contact analysis, isomorphs, cribs), per the report.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "reading",
+   "what": "About 85% read; the opening words of two points and one phrase remain uncertain.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "This project compared the report's key figures for nos. 17, 15 and 5 sign by sign: shared shapes take different values (the square-U sign is i in no. 17, n in no. 15, o in no. 5). Three keys, three entries.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"}, 
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The report says the key was recovered by Claude from frequency and contact analysis, isomorphs and cribs; no decipherment or filed key was used.",
+  "contribution": [
+   "key recovered",
+   "sender or date identified"
+  ],
+  "fraction_read": 0.85,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "George Lasry's report: 'Solved about 85 %'",
+  "codes_open": {
+   "open": 0,
+   "total": 1,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "item": "opening words of the second and third points and one phrase ('lco[??]stren[?]niare'), about 15% of the 282 signs",
+    "blocker": "open-codes",
+    "detail": "Uncertain in George Lasry's own reading; workable from his CTTS transcription and the image, not yet retried."
+   },
+   {
+    "item": "'el Mustetto', the Cardinal of Naples, the Countess, the 'Otto', the writer's place",
+    "blocker": "open-codes",
+    "detail": "Historical identifications open in the report."
+   }
+  ],
+  "verification": [
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Transcription in CTTS and key recovered ciphertext-only with Claude; reading and translation (report pp. 25-27).",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
+    "date": "2026-10-17",
+    "published": false
+   }
+  ],
+  "notes": "Contributed; figures from the report."
+ }
+}

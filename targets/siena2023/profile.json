@@ -1,16 +1,16 @@
 {
  "schema_version": 1,
  "target": "siena2023",
- "title": "Siena nos. 20 and 23: partial ciphertext-only recovery, proposed spring 1413 setting",
+ "title": "Siena nos. 20 and 23: a captain at Perugia to King Ladislaus, and two royal memoranda on the Marche campaign, spring 1413 (one key, ciphertext-only)",
  "documents": [
   {
    "id": "R4808",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 20; DECODE R4808",
-   "date": "30 March, year unknown; 1413 proposed",
-   "year": "unknown",
-   "country": "unknown",
-   "route": "Perugia → king; Muzio Attendolo Sforza → Ladislaus of Naples proposed",
+   "date": "30 March [1413] (die penultimo mensis Martii; year from the contents)",
+   "year": 1413,
+   "country": "Naples",
+   "route": "Perugia -> King Ladislaus of Naples; writer most probably Muzio Attendolo Sforza (subscription unread)",
    "language": "Italian with Latin formulae",
    "pages": 1,
    "cleartext_in_document": "separate passages",
@@ -30,19 +30,19 @@
    },
    "transcription": {
     "by": "mixed",
-    "source": "George Lasry’s current CTTS transcription, with documented Codex-assisted sign and overlap review.",
+    "source": "George Lasry with CTTS: no. 20 by a detector trained on no. 20 with Lasry's ResNet model, corrected by him in CTTS (report, 17 Oct 2026); PR #41 snapshot with Codex-assisted sign and overlap review",
     "image_quality": "fair",
-    "notes": "16 current transcription rows; punctuation and CLEAR1-CLEAR4 blocks excluded from cipher counts; g: prefix preserves the # sign. Edited prose includes disclosed restorations."
+    "notes": "16 current transcription rows; punctuation and CLEAR1-CLEAR4 blocks excluded from cipher counts; g: prefix preserves the # sign. Edited prose includes disclosed restorations. The report says accurate transcription was the main obstacle; its counts are c. 1,040 (no. 20) and c. 3,220 (no. 23) symbols, c. 4,260 in all."
    }
   },
   {
    "id": "R4811",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 23; DECODE R4811",
-   "date": "Undated; before 4 May deadline; spring 1413 proposed",
-   "year": "unknown",
-   "country": "unknown",
-   "route": "Royal authority → Iacobo Spinelo and Francisco Gactule; Ladislaus of Naples proposed",
+   "date": "Undated; mid-April 1413 (before the 4 May muster at the Mazzone delle Rose)",
+   "year": 1413,
+   "country": "Naples",
+   "route": "King Ladislaus's chancery -> Iacobo Spinello (to the Marche) and Francesco Gattola (to Tartaglia)",
    "language": "Italian with Latin formulae",
    "pages": 1,
    "cleartext_in_document": "interspersed",
@@ -62,9 +62,9 @@
    },
    "transcription": {
     "by": "mixed",
-    "source": "George Lasry’s current CTTS transcription, with documented Codex-assisted sign and overlap review.",
+    "source": "George Lasry with CTTS: no. 23 transcribed by him in CTTS (report, 17 Oct 2026); PR #41 snapshot with Codex-assisted sign and overlap review",
     "image_quality": "fair",
-    "notes": "54 current transcription rows; punctuation and CLEAR1-CLEAR4 blocks excluded from cipher counts; g: prefix preserves the # sign. Edited prose includes disclosed restorations."
+    "notes": "54 current transcription rows; punctuation and CLEAR1-CLEAR4 blocks excluded from cipher counts; g: prefix preserves the # sign. Edited prose includes disclosed restorations. The report says accurate transcription was the main obstacle; its counts are c. 1,040 (no. 20) and c. 3,220 (no. 23) symbols, c. 4,260 in all."
    }
   }
  ],
@@ -121,15 +121,15 @@
    "count": 11
   },
   "key_order": "unknown",
-  "word_division": "unknown",
+  "word_division": "partial",
   "doubled_letters": "Special FF, RR and SS signs; no general doubling operator established.",
   "sibling_key": "One working key for nos. 20 and 23; Meister’s Lucca keys differ, despite a comparable 1412 Sforza sign.",
-  "notes": "59 observed classes: 34 alphabetic, six multi-letter CI/ET/FF/RE/RR/SS, seven proposed or unidentified references, eleven provisional nulls and one erased class. V covers u/v (three signs); other consonants have at most two. CLEAR1-CLEAR4 excluded. An unused n=? mapping remains in key.txt."
+  "notes": "59 observed classes: 34 alphabetic, six multi-letter CI/ET/FF/RE/RR/SS, seven proposed or unidentified references, eleven provisional nulls and one erased class. V covers u/v (three signs); other consonants have at most two. CLEAR1-CLEAR4 excluded. An unused n=? mapping remains in key.txt. Report (17 Oct 2026): 60 distinct signs; four for a and i, three for e, o, u, two for g, l, s, one for every other consonant; single signs for ci, et, ff, qu, re, rr, ss; eleven nulls; seven name signs; an occasional point, no word dividers."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
-   "where": "No historical decipherment or matching archive key used in recovery. The supplied later survey reports no matching key among available records or exact external plaintext. Historical comparisons now support tentative names/date; no first-publication claim.",
+   "exists": "no",
+   "where": "None known: no decipherment on the records, no matching filed key among the 44 key records surveyed (R4783 not inspected), no external copy of the plaintexts (report and PR #41); the Fermo chronicle and Minuti give the events, not the text.",
    "found": "not found",
    "used": false
   },
@@ -139,17 +139,19 @@
    "cleartext context"
   ],
   "attack": "ciphertext-only",
-  "human_role": "George Lasry supplied and reviewed the CTTS material and successive Italian editions, and directed recovery. Transcribed with CTTS, then solved by GPT-6 Astra. Codex prepared the contribution, revised the English translations, counted the snapshot, checked five physical lines, and cross-checked selected historical sources.",
+  "human_role": "George Lasry transcribed no. 23 in CTTS, corrected no. 20's detector transcription (his ResNet model) in CTTS, refined the key Claude recovered by crib testing and dragging, and wrote the readings, translations and dating (report, 17 Oct 2026). PR #41 (17-18 Oct 2026), filed before the report, described the same work as 'transcribed with CTTS, then solved by GPT-6 Astra' and was prepared by Codex (English translations, five-line check, visual key). The credit follows the later, consolidated report; the discrepancy is a question for George (NOTES).",
   "tools": [
-   "CTTS (CrypTool Transcriber and Solver), used for transcription",
-   "GPT-6 Astra, used to solve the cipher",
-   "build.py (inventory, visual key and short excerpt only)"
+   "CTTS (CrypTool Transcriber and Solver): transcription and key refinement",
+   "detector trained on no. 20 with George Lasry's ResNet model (transcription of no. 20)",
+   "Claude: crib testing and dragging (key recovery)",
+   "build.py (inventory, visual key and five-line excerpt, PR #41)"
   ],
   "models": [
-   "GPT-6 Astra"
+   "Claude (model not named in the report)",
+   "GPT-6 Astra (named in PR #41 only)"
   ],
   "sessions": "unknown",
-  "first_date": "unknown",
+  "first_date": "2026-10-15",
   "last_date": "2026-10-17"
  },
  "solution": [
@@ -202,6 +204,38 @@
    "result": "worked"
   },
   {
+   "date": "2026-10-15",
+   "kind": "transcription",
+   "what": "Report (17 Oct 2026): no. 23 transcribed by George Lasry in CTTS; no. 20 by a detector trained on no. 20 with his ResNet model, corrected in CTTS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Report: key recovered by Claude via crib testing and dragging on the two sheets, ciphertext only; refined by Lasry with CTTS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Report: 'both sheets read in full (c. 4,260 symbols, one key with nomenclator)'; 60 signs, eleven nulls, seven name signs ([Paolo Orsini?], [Sforza?], [Tartaglia?] and four unidentified); dated spring 1413 from the contents and the Fermo chronicle.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "literature search",
+   "what": "This project: the report's section filed verbatim (lasry_report.md); outcome, credits and page reconciled with it; PR #41's GPT-6 Astra attribution kept in the record as a discrepancy to ask about.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
    "date": "2026-10-18",
    "kind": "access",
    "what": "Listed every Concistoro 2308 record on DECODE through the API: keys R4746-R4789 (fasc. 1, 44 records) and ciphertexts R4790-R4814 (fasc. 2, 25 pieces), matching George's survey. R4783 has no image even with a logged-in session.",
@@ -251,10 +285,10 @@
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.126; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.443 Scope: deliberately selected R4811 L6-L10 only, not the full key or edited texts. 328 literal letters become 325 scored letters under the model normalization."
   },
-  "class": "read in part",
-  "key": "partial",
+  "class": "read",
+  "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "Transcribed with CTTS, then solved by GPT-6 Astra from ciphertext patterns and original cleartext framing, without a decipherment or matched external key. Later historical comparison supports tentative identity proposals only.",
+  "method_basis": "Report, 17 Oct 2026: key recovered by Claude via crib testing and dragging from the two sheets, refined by Lasry with CTTS; no interlinear decipherment, clear copy or matching filed key.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -280,9 +314,9 @@
    {
     "who": "lasry",
     "role": "solution",
-    "note": "Directed recovery and supplied CTTS material and current edited Italian readings. Transcribed with CTTS, then solved by GPT-6 Astra; publication, updated English translations and checks by Codex.",
+    "note": "With CTTS and Claude, 15-17 Oct 2026: no. 23 transcribed in CTTS, no. 20 by his ResNet detector corrected in CTTS, key recovered by Claude via crib testing and dragging and refined in CTTS; both sheets read in full, translations and dating. First filed through PR #41 (17-18 Oct 2026), which said 'transcribed with CTTS, then solved by GPT-6 Astra'; English translations and checks there by Codex.",
     "date": "2026-10-17",
-    "source": "https://github.com/dbourdeau/cyphersolver/pull/41",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
     "published": true
    }
   ],
@@ -303,6 +337,6 @@
     "detail": "Occurrence-level verification of the CTTS transcription against the original leaves; the DECODE photographs are the only images and already the basis of George's edition. Selected five-line agreement is not whole-text validation."
    }
   ],
-  "notes": "Exactly five physical lines mechanically checked. Statistical validation, if present, applies only to that selected excerpt. Year, sender, name codes and some editorial readings remain uncertain."
+  "notes": "Credit and class follow George Lasry's consolidated report of 17 Oct 2026 ('both sheets read in full'); PR #41's material (edited lines, five-line mechanical check, visual key, validation) is kept. fraction_read is PR #41's measured key coverage; seven name signs and the subscription of no. 20 stay open."
  }
 }

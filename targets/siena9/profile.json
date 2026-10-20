@@ -1,0 +1,189 @@
+{
+ "schema_version": 1,
+ "target": "siena9",
+ "title": "Siena no. 9: Castiglione this winter, with the King of Aragon's assent (ASSi Concistoro 2308 fasc. 2 no. 9, DECODE R4798)",
+ "documents": [
+  {
+   "id": "R4798",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 9; DECODE R4798 (Concistoro_2308_52)",
+   "date": "undated; 1440s-1450s? per George Lasry (unverified)",
+   "year": 1448,
+   "country": "unknown",
+   "route": "unknown writer -> 'V. S.'",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Decipherment of the two cipher passages written below them on the slip in a second hand (manuscript lines 7-8).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 53,
+    "distinct": 33,
+    "unit": "symbols",
+    "measured": false,
+    "file": "lasry_report.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry with CTTS (transcription by Claude, held in CTTS)",
+    "image_quality": "fair",
+    "notes": "53 cipher symbols in 3 lines, from the report, not re-measured. The project's 24 Sept transcription (transcripts/no09.txt, 46 tokens, 28 names) was not used for the reading. George Lasry names accurate transcription as the main obstacle in this fascicle."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution of single letters: five signs for a, three each for e and o, two each for r, t and u, one for the rest; words set apart by spaces and dot or slash separators; one probable null; two clear code words (Stella = the King of Aragon, nichil = la pratica?) as a small nomenclator (George Lasry's key, 33 signs).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 33,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 2,
+   "kinds": [
+    "names",
+    "common words"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol",
+  "sibling_key": "none; no fasc. 1 key fits (siena1421 survey)",
+  "notes": "Key figure docs/siena9_key.png (report p. 33). The code words are written as clear Latin/Italian words, not signs."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The second hand's decipherment on the slip itself (lines 7-8), covering the two passages; not the final group.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "George Lasry ran the solution in CTTS with Claude (transcription by Claude; key recovered by Claude from the second hand's decipherment); this project filed his report.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver)"
+  ],
+  "models": [
+   "Claude (version not stated in the report)"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "transcription",
+   "what": "Project survey (siena1421): slip transcribed by agent J (46 cipher tokens, 28 names); lines 7-8 taken for clear text in a second hand, with a note that they might be a decipherment.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project survey: fasc. 1 key alphabets compared by eye; none fits. Closed as too short for ciphertext-only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "George Lasry with CTTS and Claude: the second hand's lines ('uno altro anno', 'Chastiglone questa vernata') identified as the decipherment of the two passages; key recovered from them sign for sign (33 signs).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "reading",
+   "what": "Both passages read: '[di?] Chastiglone questa vernata', 'uno altro anno'; final group 'Francesco? i?' doubtful; Stella = re d'Aragona from the decipherment.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "This project counted the reading: 36 of 44 letter values in the cipher passages without a query (81.8%).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-18",
+   "verdict": "not applicable",
+   "notes": "contributed reading; key fixed by the contemporary decipherment; 53 symbols, too short for a statistical test"
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The report says the key was recovered from the decipherment written on the slip in a second hand, which fixes the two passages sign for sign.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "fraction_read": 0.818,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted on George Lasry's reading (lasry_report.md): 36 of 44 letter values in the cipher passages read without a query (Chastiglone questa vernata, uno altro anno); di? and the final group Francesco? i? doubtful; the clear code words not counted.",
+  "codes_open": {
+   "open": 1,
+   "total": 2,
+   "tokens_open": 1
+  },
+  "gaps": [
+   {
+    "item": "final cipher group 'Francesco? i?' (about 7 signs)",
+    "blocker": "too-short",
+    "detail": "outside the contemporary decipherment; single-occurrence signs"
+   },
+   {
+    "item": "[di?] and the code word nichil (la pratica?)",
+    "blocker": "too-short",
+    "detail": "single occurrences"
+   },
+   {
+    "item": "date, writer and addressee",
+    "blocker": "no-key-material",
+    "detail": "nothing on the slip names or dates them; 1440s-50s per George Lasry, unverified"
+   }
+  ],
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
+    "date": "2026-10-17",
+    "published": false,
+    "note": "Key recovered with CTTS and Claude from the second hand's decipherment; reading, translation, context and dating (report pp. 33-34)."
+   }
+  ],
+  "notes": "Contributed. The project had taken the decipherment lines for clear text (24 Sept)."
+ }
+}

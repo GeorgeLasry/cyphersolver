@@ -1,0 +1,193 @@
+{
+ "schema_version": 1,
+ "target": "siena11",
+ "title": "Siena no. 11: Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (ASSi Concistoro 2308 fasc. 2 no. 11, DECODE R4800)",
+ "documents": [
+  {
+   "id": "R4800",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 11; DECODE R4800 (Concistoro_2308_54)",
+   "date": "13 June 1478 (dated in the clear text)",
+   "year": 1478,
+   "country": "Florence",
+   "route": "Donato Acciaiuoli (Rome) -> Lorenzo de' Medici (Florence)",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the sheet; the clear text frames the two cipher blocks.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 393,
+    "distinct": 57,
+    "unit": "symbols",
+    "measured": false,
+    "file": "lasry_report.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry with CTTS (transcription by Claude in his session)",
+    "image_quality": "fair",
+    "notes": "393 cipher symbols in 10 lines on P2 (block A 206, block B 187), from the report, not re-measured. George Lasry names accurate transcription as the main obstacle in this fascicle. The project's own 24 Sept transcription (transcripts/no11.txt, 409 tokens, 44 sign names) was not used for the reading."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution: three to five signs for each vowel, one to three for the consonants, a few nulls, and the numerals 80 and 7 written as dotted numbers; no nomenclator (George Lasry's key, 57 distinct signs).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 57,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5,
+   "max_per_consonant": 3
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "none; a Florentine key, not among the Sienese keys of fasc. 1 (R4752 Bichi 1478 tried)",
+  "notes": "Key figure docs/siena11_key.png (report p. 18). Numerals 80 and 7 stand as dotted numbers in the cipher stream."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on DECODE or in print known; the project's 24 Sept survey left it unread.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry ran the solution in CTTS with Claude (transcription by Claude, key recovered by Claude by crib analysis); this project filed his report and counted his reading.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver)"
+  ],
+  "models": [
+   "Claude (version not stated in the report)"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-09-24",
+  "last_date": "2026-10-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "transcription",
+   "what": "Project survey (siena1421): no. 11 transcribed from the DECODE photographs by agent B (409 tokens, 44 sign names).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Project survey: homophonic annealing on the 409 tokens; no convergence.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-24",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project survey: Sienese key R4752 ('Cifra de m. Antonio Bichi 1478 Rom.') compared; does not fit. Gabbrielli's Florentine key index (Ilardi reel 58) has no key for Donato Acciaiuoli in 1478.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "transcription",
+   "what": "George Lasry's session: 393 cipher symbols transcribed by Claude in CTTS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "solver",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "George Lasry with CTTS and Claude: key recovered by Claude by crib analysis from the ciphertext; 57 signs, homophonic; both blocks read, about 90% certain; two encipherer's slips marked.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "This project counted George Lasry's reading: 357 of 381 plaintext letters (93.7%) in words without a query mark; one sign lost in a hole.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-18",
+   "verdict": "not applicable",
+   "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The report says the key was recovered by Claude by crib analysis from the ciphertext; no decipherment, plaintext or filed key exists for this letter.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.937,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Counted on George Lasry's reading (lasry_report.md, cipher passages only): 357 of 381 plaintext letters and numerals in words without a query mark; he gives 'about 90 % certain'.",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "item": "one sign lost in a hole in block A",
+    "blocker": "illegible",
+    "detail": "paper holed; no other image"
+   },
+   {
+    "item": "six doubtful words (di?, non?, da?, s?ervigi, no?, Bacio?), 24 of 381 letters",
+    "blocker": "too-short",
+    "detail": "single-occurrence signs and two encipherer's slips in a 393-sign text"
+   },
+   {
+    "item": "whether the Gonzaga condotta was concluded",
+    "blocker": "needs-physical-access",
+    "detail": "Rubinstein, Lettere di Lorenzo de' Medici III (1977), not online here"
+   }
+  ],
+  "verification": [
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Key recovered ciphertext-only with CTTS and Claude (transcription by Claude, crib analysis); reading, translation, context (report pp. 18-19).",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
+    "date": "2026-10-17",
+    "published": false
+   }
+  ],
+  "notes": "Contributed. A Florentine letter in the Sienese file; the project's 24 Sept attempt failed."
+ }
+}

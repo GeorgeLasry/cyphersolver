@@ -8,7 +8,7 @@ own; the other letters with recovered keys are their own entries, each a differe
 ([`targets/siena25/`](../siena25/NOTES.md)), no. 18 ([`targets/siena18/`](../siena18/NOTES.md)), no. 14
 ([`targets/siena14/`](../siena14/NOTES.md)), nos. 6 and 24 (George Lasry's [`targets/siena1431/`](../siena1431/NOTES.md)).
 The unread pieces, the key index (with the transcribed 1450s keys `keys/R47xx.txt`) and the shared solvers stay in
-[`targets/siena1421/`](../siena1421/NOTES.md). The work below was done on 24 Sept 2026 and is carried over from its NOTES.
+[`targets/siena1421/`, now the collection index `research/siena2308/`](../../research/siena2308/README.md). The work below was done on 24 Sept 2026 and is carried over from its NOTES.
 
 Work date: 2026-09-24. From catalogue 336 (now narrowed to the unread pieces).
 
@@ -26,7 +26,7 @@ da Napoli, 12 maggio". (The 24 Sept notes once wrote 17 May; the heading and Sen
   "per parte del duca", "al re"): the contemporary partial decipherment behind the 1952 inventory's "solo parzialmente
   decifrate". Transcription: `transcripts/no04.txt` (agent G).
 - None of the six 1450s keys filed in fasc. 1 (R4750, R4753, R4754, R4756, R4757, R4762; transcribed in
-  `targets/siena1421/keys/`) gives the letter values, though R4757 shares sign shapes and the code word Calor (there =
+  `research/siena2308/keys/`) gives the letter values, though R4757 shares sign shapes and the code word Calor (there =
   Florentini) and R4750 has 'storps'.
 - A two-row **alphabet fragment written below the letter's text** (i o_tail, l longs, m 2, n a, o T, p M, q S, r g_ring,
   s y, t L_slant, u C; left part torn) plus the glosses rebuilt the key (`keys/no04_key.txt`): 114/144 sign tokens read

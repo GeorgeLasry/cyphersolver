@@ -1,6 +1,6 @@
 """Independent check of the outside solution of Concistoro 2308 nos. 6 and 24 (key DECODE R4755).
 
-Our own transcription (targets/siena1421/transcripts/no06_24all.tok: no. 6 = lines 1-15, no. 24 P2 = lines 16-53,
+Our own transcription (targets/siena1431/project_attempt/no06_24all.tok: no. 6 = lines 1-15, no. 24 P2 = lines 16-53,
 made 24 Sept 2026 before any key was known) is aligned with the outside reading (reading_no06.txt, reading_no24.txt)
 by a dynamic-programming alignment whose substitution costs are re-estimated (EM), seeded from the key sheet R4755
 read on the image (SEED below). Prints, per letter: how many of their decrypted letters our decoded transcription
@@ -77,7 +77,7 @@ def align(c, p, gap=6.0):
         else: pairs.append((None, p[j - 1])); j -= 1
     return pairs[::-1]
 
-lines = (ROOT / 'targets/siena1421/transcripts/no06_24all.tok').read_text().split('\n')
+lines = (ROOT / 'targets/siena1431/project_attempt/no06_24all.tok').read_text().split('\n')
 docs = [('no06', ' '.join(lines[:15]).split(), HERE / 'reading_no06.txt'),
         ('no24', ' '.join(lines[15:]).split(), HERE / 'reading_no24.txt')]
 docs = [(n, c, letters(f), f) for n, c, f in docs]
@@ -120,7 +120,7 @@ for name, c, p, f in docs:
           f'shuffled-key control mean {sum(ctl)/len(ctl):.3f}, best of 20 {max(ctl):.3f}')
     if SEED_ONLY: continue
     (HERE / f'decode_{name}.txt').write_text(
-        f'# Our transcription of {name} (targets/siena1421/transcripts/no06_24all.tok) decoded with key R4755 as mapped\n'
+        f'# Our transcription of {name} (targets/siena1431/project_attempt/no06_24all.tok) decoded with key R4755 as mapped\n'
         '# onto our sign labels by verify.py. "." = label with no key value (nulls, rare or merged signs); capitals =\n'
         '# word signs (L Lucca, P Piccinino, D Duca di Milano, V Viniziani, F Fiorentini). No word division.\n'
         + '\n'.join(''.join(dec[i:i + 80]) for i in range(0, len(dec), 80)) + '\n', encoding='utf8')
@@ -164,7 +164,7 @@ if not SEED_ONLY:
 # ---- validation.tsv for docs/_validate.py: each of our tokens with the letter of the submitted reading it aligns with ----
 if not SEED_ONLY:
     W = {'L': 'lucca', 'P': 'piccinino', 'D': 'ducadimilano', 'V': 'viniziani', 'F': 'fiorentini'}
-    rows = ['# model: it-cinquecento', '# source: targets/siena1421/transcripts/no06_24all.tok aligned (verify.py) with reading_no06.txt, reading_no24.txt',
+    rows = ['# model: it-cinquecento', '# source: targets/siena1431/project_attempt/no06_24all.tok aligned (verify.py) with reading_no06.txt, reading_no24.txt',
             '# note: our blind transcription; reading = the outside solver\'s letter at that position; "-" = token aligned with nothing (null)']
     for name, c, p, f in docs:
         for s, l in align(c, p):
