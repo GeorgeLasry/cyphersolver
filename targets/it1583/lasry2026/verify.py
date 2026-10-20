@@ -36,7 +36,7 @@ totals['distinct']=len(used);assert dict(totals)==data['statistics']
 assert (R/'ctts/edited/edits.txt').read_text(encoding='utf-8')==''.join(stem+'\n'+v.render_edits(rows,spec['documents'][stem]) for stem,rows in projects.items())
 for alias,src in [('positions.txt','positions/1_positions.txt'),('transcription.txt','transcription/1.txt'),('decryption.txt','decryption/1.txt')]:assert (R/'ctts'/alias).read_bytes()==(R/'ctts'/src).read_bytes()
 fragment=(R/'cryptiana/maino1446.html').read_text(encoding='utf-8');preview=(R/'cryptiana/index.html').read_text(encoding='utf-8')
-assert fragment in preview and fragment.count('class="letter-text"')==2 and fragment.count('class="translation-text"')==2 and 'class="line-number"' not in fragment and fragment.count('<section ')==1 and fragment.count('<img ')==3
+assert fragment in preview and fragment.count('class="letter-text"')==4 and fragment.count('class="translation-text"')==4 and 'class="line-number"' not in fragment and fragment.count('<section ')==1 and fragment.count('<img ')==3
 manifest=json.loads((R/'manifest.json').read_text(encoding='utf-8'))['files']
 actual={p.relative_to(R).as_posix() for p in R.rglob('*') if p.is_file() and p.name!='manifest.json' and '__pycache__' not in p.parts}
 assert actual==set(manifest),'Manifest file inventory differs'
