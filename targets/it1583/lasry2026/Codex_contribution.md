@@ -15,6 +15,16 @@ The same working key now covers both letters: **827 cipher occurrences**, 780 as
 
 Ciphertext is shown in bold.
 
+### Contents
+
+**First letter — f. 68 / R7898.** Unidentified sender to Zorzo del Maino; 4 May 1446; place of dispatch unknown.
+
+The writer replies to Maino’s report concerning Count Francesco, probably Francesco Sforza. The discussion concerns the count’s obligations to others and the guarantees needed for the writer’s security. A second passage asks for eight or ten names from which trusted intermediaries could be chosen.
+
+**Companion — f. 70 in R7899 P1.** Catalogued as Vincenzo Amidani to Francesco Sforza; Milan, 4 May 1446.
+
+The letter reports prospective action against Cremona and discusses how the Venetian government might respond. It mentions assistance, defence and preparations for the field, although some details remain unclear. The writer closes by explaining his duty to keep the recipient informed; the signature remains unread.
+
 ### BnF italien 1583, f. 68 — Reply concerning Zorzo del Maino’s report
 
 M°cccc°xlvj die iiij° may [4 May 1446; date written in clear]
@@ -41,6 +51,33 @@ M°cccc°xlvj die iiij° may [4 May 1446; date written in clear]
 
 11. **che** dubitano lo debiamo hauere **? per svspecto elezaremo qvelo n ? ? ?**
 
+#### English translation
+
+4 May 1446 [date written in clear]
+
+1. **[Unresolved opening group] Reply to what Zorzo del Maino has reported. [Unresolved group]**
+
+2. **[Unresolved group] Zorzo, having understood what you have answered us on behalf of Count Francesco, and replying not**
+
+3. **only to those points about advising him in view of the obligations he has towards others, and**
+
+4. so forth. We do not know **what obligations [unclear]** these are, nor do we seek or ask **to know them, nor [unclear]**
+
+5. does it fall to us to inquire into this; we seek only God’s honour **and** our **security** [unclear ending].
+
+6. He **[unresolved signs] the count, who knows the obligations he has towards them, ought to know about this, and whether he wishes and is able to do**
+
+7. **this or not; and if he wishes to give us that assurance,** we have requested that they be willing to do for him
+
+8. what has been stated, and to that we refer. **[Unresolved group]**
+
+9. **[Unresolved group] As to the matter of choosing trusted persons, [unresolved signs] we reply that** he should be willing to put in writing
+
+10. **[Unresolved group] eight or ten [names], because,** if among them there is only one who has not **[unclear verb] the parties, because**
+
+11. they fear we must regard him **[unresolved sign] with suspicion, we shall choose that one. [Unresolved ending]**
+
+
 ![Decryption in red — BnF italien 1583, f. 68](https://raw.githubusercontent.com/GeorgeLasry/cyphersolver/writeup-maino1446-lasry/targets/it1583/lasry2026/cryptiana/images/maino1446_decryption.png)
 
 
@@ -61,6 +98,25 @@ M°cccc°xlvj die iiij° may [4 May 1446; date written in clear]
 7. **tamen per fare mio debito ne adviso v a la qvale me raconmando ? ? ? data**
 
 8. **mediolani die qvarto mai ? ? p ? v a r qva c e et e ? s m n ? s t a ? ? m r**
+
+#### English translation
+
+1. **[Unresolved group] My illustrious lord, I inform you [unclear: someone is preparing?] to act against Cremona. [Unresolved sign]**
+
+2. **Believing that the government of Venice and** [providing?] **should declare itself against him [unresolved sign]**
+
+3. **to assist you and defend [you?]; and besides what has been done concerning Cremona, [unclear: coming and joining]**
+
+4. **more, and otherwise as desired, [someone or something] has come together [unresolved passage] for all the [unresolved sign]**
+
+5. **his [unresolved sign], and immediately they will all be [dispatched?; additional signs unclear], and they will be in the field; and although**
+
+6. **I am certain that you will have been [unresolved sign] informed by another [route?] about** [these?] **matters,**
+
+7. **nevertheless, to fulfil my duty, I inform you of them and commend myself to you. [Unresolved group] Dated**
+
+8. **at Milan, on the fourth day of May. [Signature and closing signs unread]**
+
 
 ![Decryption in red — BnF italien 1583, f. 70](https://raw.githubusercontent.com/GeorgeLasry/cyphersolver/writeup-maino1446-lasry/targets/it1583/lasry2026/cryptiana/images/amidani1446_decryption.png)
 
