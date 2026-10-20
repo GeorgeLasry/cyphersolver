@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "target": "it1583",
-  "title": "Reply concerning Zorzo del Maino's report, 4 May 1446 (BnF italien 1583 f. 68; DECODE R7898)",
+  "title": "Two Sforza letters, 4 May 1446: Maino reply and Amidani companion",
   "documents": [
     {
       "id": "R7898",
@@ -21,7 +21,7 @@
         "partial": true
       },
       "length": {
-        "tokens": 428,
+        "tokens": 425,
         "distinct": 52,
         "unit": "symbols",
         "measured": true,
@@ -29,9 +29,9 @@
       },
       "transcription": {
         "by": "mixed",
-        "source": "George Lasry's CTTS transcription of DECODE R7898, refined with Astra and Fable 5.1",
+        "source": "George Lasry’s CTTS transcription, refined with Astra and Fable 5.1",
         "image_quality": "fair",
-        "notes": "428 cipher signs and ten clear-text boxes in eleven physical lines. See lasry2026/edition.json and ctts/."
+        "notes": "425 cipher signs and 10 clear boxes in 11 physical lines. Source crop hash and all boxes in lasry2026/edition.json."
       },
       "read": "read in part"
     },
@@ -41,30 +41,31 @@
       "date": "4 May 1446",
       "year": 1446,
       "country": "Milan / Francesco Sforza",
-      "route": "Vincenzo Amidani (Milan) -> Francesco Sforza",
+      "route": "Catalogued as Vincenzo Amidani (Milan) -> Francesco Sforza; signature not deciphered",
       "language": "Italian",
       "pages": 1,
-      "cleartext_in_document": "separate passages",
+      "cleartext_in_document": "interspersed",
       "plaintext": {
         "location": [
-          "none"
+          "unrelated source"
         ],
-        "source": "No decipherment; Mazzatinti: 'Lettera di Vincenzo Amidani a Fr. Sforza (Milano 4 maggio). In cifre.'"
+        "source": "Modern contributed partial reading by George Lasry with CTTS, Astra and Fable 5.1; lasry2026/full_letter.md",
+        "partial": true
       },
       "length": {
-        "tokens": 390,
-        "distinct": 31,
+        "tokens": 402,
+        "distinct": 48,
         "unit": "symbols",
         "measured": true,
-        "file": "f70_signs.txt"
+        "file": "lasry2026/companion/cipher_tokens.txt"
       },
       "transcription": {
-        "by": "llm from images",
-        "source": "Authenticated DECODE image IMG_R7899_I35638_P1.png",
+        "by": "mixed",
+        "source": "George Lasry’s CTTS transcription, refined with Astra and Fable 5.1",
         "image_quality": "fair",
-        "notes": "Draft only; a different hand with the same sign family as f. 68; sign equivalences between the two hands not certain."
+        "notes": "402 cipher signs and 2 clear boxes in 8 physical lines. Source crop hash and all boxes in lasry2026/edition.json."
       },
-      "read": "not read"
+      "read": "read in part"
     }
   ],
   "system": {
@@ -72,9 +73,9 @@
       "homophonic",
       "nomenclator"
     ],
-    "summary": "F. 68: homophonic graphic-sign substitution with CHE, CON, ET and PER; twelve classes remain unresolved. The f. 70 key has not been established by this contribution.",
+    "summary": "Shared homophonic sign substitution in both letters, including CHE, CON, ET, PER, QVA and SE; IN provisional; boundary and signature groups unresolved.",
     "symbol_kind": "symbols",
-    "distinct_symbols": 52,
+    "distinct_symbols": 65,
     "diacritics": {
       "used": "unknown"
     },
@@ -83,7 +84,7 @@
     },
     "nomenclator": {
       "present": true,
-      "entries": 4,
+      "entries": 6,
       "kinds": [
         "word parts",
         "common words"
@@ -95,7 +96,7 @@
     "key_order": "unknown",
     "word_division": "none",
     "doubled_letters": "Single L in qvelo/qvele; no general doubling rule established.",
-    "sibling_key": "F. 70 remains unverified; its transcription and earlier results are retained."
+    "sibling_key": "Companion f.70 read with and used to extend/check the Lasry CTTS key; not a blind independent recovery."
   },
   "conditions": {
     "prior_solution": {
@@ -108,8 +109,8 @@
       "images",
       "cleartext context"
     ],
-    "attack": "ciphertext-only",
-    "human_role": "Selected the target; the DECODE session cookie was supplied earlier. On 20 October 2026 George Lasry contributed his CTTS transcription and initial key and directed refinements by Astra and Fable 5.1.",
+    "attack": "unknown",
+    "human_role": "George Lasry transcribed both images with CTTS, generated the initial key and directed refinements by Astra and Fable 5.1. This contributed phase uses an existing partial key; September solver attempts are retained separately.",
     "tools": [
       "DECODE authenticated image and API download",
       "archive.org full text (Archivio storico lombardo 1883)",
@@ -187,13 +188,13 @@
     {
       "date": "2026-10-20",
       "kind": "verification",
-      "what": "Checked positions, labels, current key, decryption and edited coverage: 438 boxes, ten clear-text blocks, 428 cipher signs; 399 assigned and 29 unresolved. The original solver failures remain on record.",
+      "what": "Both images: 839 boxes, 12 clear blocks, 827 cipher occurrences; 780 assigned including 4 provisional, 47 unknown. Shared key, geometry, exports and edited segments verified.",
       "result": "worked"
     }
   ],
   "outcome": {
     "method": "read with known key",
-    "method_basis": "This contributed reading starts from George Lasry's CTTS key for R7898; subsequent image checks and refinements by Astra and Fable 5.1. The original ledger's solver runs did not solve it.",
+    "method_basis": "Both partial readings start from George Lasry’s CTTS key; Astra and Fable 5.1 refine transcription and values using the images and companion contexts. Earlier solver runs did not solve the texts.",
     "contribution": [
       "transcription",
       "key extended or corrected"
@@ -204,7 +205,7 @@
       "key confirms",
       "historical consistency"
     ],
-    "notes": "F. 68 has 399/428 cipher occurrences with assigned values (93.2% coverage, not an accuracy estimate); f. 70 remains unread. Full letter, red overlay and horizontal key in lasry2026/.",
+    "notes": "Both letters read in part: 780/827 assignments, including 4 provisional; coverage is not accuracy. Signature and boundary groups unresolved.",
     "credits": [
       {
         "who": "mazzatinti",
@@ -217,38 +218,38 @@
         "who": "lasry",
         "role": "transcription",
         "date": "2026-10-20",
-        "note": "Transcribed with CTTS; subsequently checked and refined with Astra and Fable 5.1."
+        "note": "Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1. Both f.68/R7898 and f.70 in R7899 P1 are read in part."
       },
       {
         "who": "lasry",
         "role": "key or decipherment used",
         "date": "2026-10-20",
-        "note": "Generated the initial CTTS key; improved by Astra and Fable 5.1; partial decipherment of R7898."
+        "note": "Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1. Both f.68/R7898 and f.70 in R7899 P1 are read in part."
       },
       {
         "who": "lasry",
         "role": "solution",
         "date": "2026-10-20",
-        "note": "Contributed partial decipherment of R7898: CTTS transcription and initial key, improved by Astra and Fable 5.1; 29 cipher occurrences remain unresolved."
+        "note": "Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1. Both f.68/R7898 and f.70 in R7899 P1 are read in part."
       }
     ],
     "key": "partial",
     "provenance": "contributed",
     "gaps": [
       {
-        "item": "R7898: 29 occurrences in twelve classes",
+        "item": "Both letters: unresolved cipher signs",
         "blocker": "open-codes",
-        "detail": "The twelve unresolved classes are #25, #30, #35, #36, #40, #41, (4), (6), (8), (10), (11) and (16). They account for 29 occurrences, often at passage boundaries. #25 remains unknown even though line 10 permits a tentative ?entita → sentita reading. The pair #40 + (11), following confidenti, is not silently expanded to per. The small elevated (16) mark before qvesto in line 6 may be a correction mark; it is retained and counted until that is established."
+        "detail": "47 occurrences remain unassigned, including boundary groups and the companion signature; GENTE and NE are unconfirmed."
       },
       {
-        "item": "R7898: clear end of line 5",
+        "item": "Provisional key values",
+        "blocker": "open-codes",
+        "detail": "(8)=L, (24)=N, (16)=IN remain provisional; odd ET, VAIA, RACONMANDO and extra O O are retained."
+      },
+      {
+        "item": "Clear text and editorial supplies",
         "blocker": "illegible",
-        "detail": "nostra [aya? …]; supplied image does not give a secure completion."
-      },
-      {
-        "item": "f70",
-        "blocker": "not-attempted",
-        "detail": "This new contribution concerns f. 68 only; the earlier unsuccessful work on f. 70 is retained."
+        "detail": "f.68 line 5 ending [aya? …]; companion [fornendo?] uncertain, [ques?] conjectural. Bracketed supplies are explicit."
       }
     ]
   }

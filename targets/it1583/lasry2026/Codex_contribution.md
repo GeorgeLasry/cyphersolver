@@ -1,137 +1,105 @@
-# Reply concerning Zorzo del Maino's report, 4 May 1446
+# Two Sforza letters, 4 May 1446: Maino reply and Amidani companion
 
-BnF, italien 1583, f. 68 (Archivio Sforzesco); DECODE R7898.
+This contribution combines **two partial decipherments** from BnF italien 1583: the f. 68 reply concerning Zorzo del Maino ([DECODE R7898](https://de-crypt.org/decrypt-web/RecordsView/7898)) and the f. 70 companion photographed in [DECODE R7899, image P1](https://de-crypt.org/decrypt-web/RecordsView/7899). Both are dated 4 May 1446.
 
-Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1.
+**Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1.**
 
-This is a partial decipherment: 399 of 428 cipher occurrences have an assigned value. The unresolved 29 occurrences remain visible throughout the edition. The contribution concerns f. 68 only.
+The same working key now covers both letters: **827 cipher occurrences**, 780 assigned (including 4 provisional occurrences), and **47 unresolved**. There are 65 distinct used cipher labels, 12 separately anchored clear-text boxes and 19 physical text lines. Assignment coverage (94.3%) is not an accuracy estimate.
 
-## What this adds to the existing entry
+| Document | Cipher signs | Used classes | Assigned, including provisional | Provisional | Unresolved |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| BnF italien 1583, f. 68 | 425 | 52 | 399 | 3 | 26 |
+| BnF italien 1583, f. 70 | 402 | 48 | 381 | 1 | 21 |
 
-The substantive addition is **Lasry's working key and the resulting partial reading of previously unread cipher passages**, refined with Astra and Fable 5.1. The date, archival identification and earlier investigation belong to the prior work. This contribution does not claim an independent blind recovery by the models or worldwide priority.
+### Reading conventions
 
-Comparison with [the existing it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md) and [profile](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/profile.json), at upstream commit `0258b8ab5a039818040a1ee14b6b993cc75a6f71`:
+Bold passages below were enciphered in the manuscript; regular type is clear writing or an explicitly marked editorial supply. The full surviving text of each supplied image is included, with physical line numbers. Spelling and V/U are retained. Word division, punctuation and bracketed supplies are editorial. Each ? is one unresolved cipher sign. Hyphens added at physical line ends indicate a word continuing on the next line: n-/on, per-/che and be-/nche.
 
-| Aspect | Existing contribution | Addition here |
-| --- | --- | --- |
-| Identification | Date 4 May 1446, Maino connection from Mazzatinti, and related f. 70 already identified | Retained and credited; not a new identification |
-| Cipher text | Draft of 404 signs in 26 merged classes | CTTS edition with 428 cipher signs in 52 classes, ten separately anchored clear-text boxes and glyph positions |
-| Key and reading | No matching key; solver attempts unsuccessful; cipher passages unread | Working partial key with 40 assigned classes; 399 occurrences assigned, 29 unresolved |
-| Letter's contents | Clear clauses transcribed, but what the cipher hides remained unknown | Count Francesco's obligations, repeated requests for security, and a proposal concerning trusted persons and eight or ten names |
-| Authorship | Sforza-side attribution inferred from context and catalogue | Third-person references to the count now give a reason to retain that attribution as uncertain |
-| Verification and presentation | Earlier transcription, solver scripts and source image | Every sign linked to a key value and edited segment; current red overlay, horizontal key, reproducible checks and insertion HTML |
+Lowercase values in the native key mark **provisional (8)=L, (24)=N and (16)=IN**. The readable text is lowercased throughout, so consult this note or the key for confidence. IN in “debe savere in qvesto” is adopted provisionally, not silently rejected or promoted to certainty. Clear [fornendo?] is uncertain; [ques?] before cipher TE is a conjectural supply, not a secure transcription of visible letters. No cipher signs have been deleted merely to make fluent Italian.
 
-The two sign inventories use different segmentation and class definitions: the count difference alone is **not** evidence of 24 omitted signs. Likewise, 399/428 is assignment coverage, not a statistical correctness score. The images, HTML style and packaging make the contribution usable; they are not claimed as new cryptanalytic results.
+### BnF italien 1583, f. 68 — Reply concerning Zorzo del Maino’s report
 
-Concrete additions can be checked in `edition.json` and the red overlay (one-based physical line and CTTS box numbers):
+M°cccc°xlvj die iiij° may [4 May 1446; date written in clear]
 
-| Location | Reading from cipher signs | Why it matters |
-| --- | --- | --- |
-| Line 2, boxes 34–57 | `di parte del conte francisco` | Identifies the party on whose behalf an answer was given |
-| Line 5, boxes 2–12; line 7, boxes 24–33 | `et la secvreza`; `la secvreza` | Repeated security wording, absent from the earlier clear-text transcription |
-| Line 9, boxes 15–34 | `del elegere li confidenti` | Makes the subject of the second paragraph readable |
-| Line 10, boxes 4–11 | `octo dece` | Supplies the number of names sought in the adjacent clear-text request |
+1. **? ? ? l ? n resposta facta ad qvelo ha referito zorzo del maino o ?**
 
-## Key
+2. **? ? ? ? zorzo inteso cvelo ne hai resposto per parte del conte francisco et respondendo n-**
 
-The current reconstruction has 52 observed cipher classes: 40 with assigned values and 12 unresolved. It combines homophonic letter signs with CHE, CON, ET and PER. The horizontal CTTS snapshot places homophones beneath their plaintext letters. Of 428 cipher occurrences, 399 have an assigned value (93.2% assignment coverage); this is not a measure of independently established accuracy. The ten boxes labelled [Plaintext] mark clear writing and are excluded from these counts.
+3. **on solamente ad qvele parte del consiglarlo per rispecti de li oblighi che lha con alt[r]i et**
 
-![Horizontal CTTS key](cryptiana/images/maino1446_key.png)
-
-## Full letter
-
-Bold text was enciphered in the manuscript; regular text was written in clear. All eleven physical text lines and the clear date are included. The reading retains the literal key’s v for u/v and spellings such as qvelo, cvelo and secvreza. Word division, punctuation and solum[ente] are editorial. Each ? represents one unassigned cipher sign. The n and o in the boundary groups are retained literally; their possible function as separators or nulls is not established. The uncertain clear ending of line 5 is marked [aya? …]; the supplied image does not permit its secure completion. The n at the end of line 2 continues as on at the start of line 3.
-
-M°cccc°xlvj die iiij° may [4 May 1446]
-
-
-
-1. **? ? ? ? ? n resposta facta ad qvelo ha referito zorzo del maino o ?**
-
-2. **? ? ? ? zorzo inteso cvelo ne hai resposto di parte del conte francisco et respondendo n**
-
-3. **on solamente ad qvele parte del consiglarlo di rispecti de li oblighi che lha con alti et**
-
-4. etcetera. Che nuy no sapiamo **che oblghi siano n** quisti ne cerchamo ne domandamo **saverli ne o**
+4. etcetera. Che nuy no sapiamo **che obl[i]ghi siano n** quisti ne cerchamo ne domandamo **saverli ne o**
 
 5. tocha ad nuy cerchare questo, ma solum[ente] cerchamo con l'onor de dio **et la secvreza** nostra [aya? …]
 
-6. luy **? ? conte chi sa li oblighi che la con loro debe savere ? qvesto et se lvole et pvo fare**
+6. luy **? ? conte chi sa li oblighi che la con loro debe savere in qvesto et se lvole et pvo fare**
 
 7. **qvesto o non et volendo farne la secvreza** gli havemo rechiesto siano contenti farghi
 
-8. quello e dicto, et ad quello se refferemo **n o ? ? n ?**
+8. quello e dicto, et ad quello se refferemo **n o ? ? n l**
 
 9. **? ? ? ? ? ad la parte del elegere li confidenti ? ? respondemo che** voglia essere contento mettere per scripto
 
-10. **? n o octo dece per che** se tra loro no gli sera noma uno che no habia **n ?entita le parte per**
+10. **? n o octo dece per che** se tra loro no gli sera noma uno che no habia **n ?intita le parte per-**
 
-11. **che** dubitano lo debiamo hauere **? di svspecto elezaremo qvelo n ? ? ?**
+11. **che** dubitano lo debiamo hauere **? per svspecto elezaremo qvelo n ? ? ?**
 
-
-![Manuscript with current decryption in red](cryptiana/images/maino1446_decryption.png)
-
-The red overlay is generated directly from the current key and CTTS positions; it replaces older trial readings in the native snapshot. The horizontal key image is the unchanged native CTTS export.
-
-## Historical context
+![Decryption in red — BnF italien 1583, f. 68](https://raw.githubusercontent.com/GeorgeLasry/cyphersolver/writeup-maino1446-lasry/targets/it1583/lasry2026/cryptiana/images/maino1446_decryption.png)
 
 
-The date in the manuscript reads *M°cccc°xlvj die iiij° may*, 4 May 1446. The deciphered heading names *Zorzo del Maino* and describes a response to what he has reported. [Giuseppe Mazzatinti, inventory (1883), p. 230](https://archive.org/details/archiviostoricol10cava/page/230/mode/2up) independently catalogues f. 68 as a reply concerning Zorzo Maino’s report, “in cifre”. This establishes the occasion, but does not by itself identify the author or the place of dispatch.
+### BnF italien 1583, f. 70 — Companion letter catalogued as Vincenzo Amidani to Francesco Sforza
 
+1. **n o ? ilvstre signor mio a adviso vi l ? se mono ad fare contra cremona ?**
 
-The text addresses Zorzo and reports an answer *di parte del conte Francisco*. In this archival setting, the count is very probably Francesco Sforza, but the sender’s collective *nuy* and references to the count in the third person do not justify a firm attribution of authorship to Sforza. The earlier label “Sforza chancery to Zorzo Maino” should therefore remain a hypothesis.
+2. **credendo che la signoria de venetia et** [fornendo?] **se debia scoprirse contra lvi ?**
 
+3. **ad adivtarvi et defender[v?]i et oltra cio che e fato de cremona gli do venire vnire**
 
-In 1445–1446 Sforza’s position in the Marche was under pressure from Filippo Maria Visconti and papal forces; Florence and Venice had supported him, and conflict also threatened his Cremonese interests. This was a period of shifting obligations and alliances, before Sforza became duke of Milan in 1450. That background helps explain the vocabulary of obligations and security, but does not identify the precise negotiation in this letter. See [Michael E. Mallett, La conquista della Terraferma (1996)](https://www.treccani.it/enciclopedia/la-conquista-della-terraferma_(Storia-di-Venezia)/) and [Antonio Menniti Ippolito, Sforza, Francesco I (2014)](https://www.treccani.it/enciclopedia/francesco-i-sforza_(Enciclopedia-machiavelliana)/).
+4. **piv et altramente ad votvm che se e revnito ? ? ? da ? ad tvte le ?**
 
+5. **sve ? et svbito sarano o o spazate tvte et sarano in campo et be-**
 
-The readable passages concern the count’s obligations to others, guarantees for “our security”, and the selection of *confidenti*, trusted persons or intermediaries. The writer asks for a written list of eight or ten names (*octo dece*) from which an acceptable person may be chosen. The unresolved signs and the damaged or cropped end of the fifth line limit a continuous interpretation of the whole exchange.
+6. **nche sia certo che v per altra vaia de** [ques?]**te cose sara stata ? advisata**
 
+7. **tamen per fare mio debito ne adviso v a la qvale me raconmando ? ? ? data**
 
-The neighbouring f. 70 is separately catalogued as a letter from Vincenzo Amidani to Francesco Sforza, Milan, 4 May 1446. It is useful archival context, but that letter’s sender and place must not be transferred to f. 68. No reading of f. 70 is claimed here. See [Giuseppe Mazzatinti, inventory (1883), p. 230](https://archive.org/details/archiviostoricol10cava/page/230/mode/2up).
+8. **mediolani die qvarto mai ? ? p ? v a r qva c e et e ? s m n ? s t a ? ? m r**
 
+![Decryption in red — BnF italien 1583, f. 70](https://raw.githubusercontent.com/GeorgeLasry/cyphersolver/writeup-maino1446-lasry/targets/it1583/lasry2026/cryptiana/images/amidani1446_decryption.png)
 
-## Findings and uncertainty
+### Shared key, letters horizontal
 
-Verified refinements include #20 = L (qvelo/qvele), #38 = CON (consiglarlo/confidenti), #10 = Z (zorzo/secvreza), #29 = CHE, #21 = PER, and (5)/(9) = ET. The current transcription distinguishes E from N in del/conte and non/volendo/farne, and uses F in Francisco and P in resposto. Added or corrected boxes support elegere and svspecto. These readings resolve earlier class conflicts without treating every superficially similar glyph as identical.
+![Shared CTTS key, including provisional IN](https://raw.githubusercontent.com/GeorgeLasry/cyphersolver/writeup-maino1446-lasry/targets/it1583/lasry2026/cryptiana/images/maino1446_key.png)
 
-The twelve unresolved classes are #25, #30, #35, #36, #40, #41, (4), (6), (8), (10), (11) and (16). They account for 29 occurrences, often at passage boundaries. #25 remains unknown even though line 10 permits a tentative ?entita → sentita reading. The pair #40 + (11), following confidenti, is not silently expanded to per. The small elevated (16) mark before qvesto in line 6 may be a correction mark; it is retained and counted until that is established.
+### Historical context and sources
 
-Independent checks: every box occurs once in the edited alignment; positions, labels and key values agree with the native exports; the heading's date and subject agree with Mazzatinti's inventory. Historical conclusions above distinguish those observations from attribution hypotheses.
+Mazzatinti’s 1883 inventory identifies f. 68 as a reply about Zorzo Maino’s report and f. 70 separately as a letter from Vincenzo Amidani to Francesco Sforza, Milan, 4 May. Both are listed as enciphered. The identification predates this contribution. See [Giuseppe Mazzatinti, inventory (1883), p. 230](https://archive.org/details/archiviostoricol10cava/page/230/mode/2up) (Archivio storico lombardo X, pp. 222–326; relevant entries p. 230).
 
-Earlier claims adopted after verification: a broadly correct Lasry key, the Italian reading, CON in confidenti and Z in secvreza. Qualifications to the earlier discussion: #20 gives L, not LL; the current key leaves #25 unresolved; the present F/P and E/N classes no longer require contradictory values. Those unresolved readings remain explicit.
+The first letter names the count Francisco, very probably Francesco Sforza in this archival setting, and concerns his obligations to others, “our security”, and the selection of trusted persons. The request for a written list of eight or ten names is now readable across clear and cipher passages. The writer’s collective “nuy” and third-person references to the count leave the author uncertain; Amidani’s name and Milan must not be transferred from the companion to f. 68.
 
-## Earlier work and integration
+The companion mentions “contra Cremona”, “la signoria de Venetia”, “scoprirse contra lui”, assistance and defence, and the duty to advise the addressee. Its decoded date line reads “mediolani die qvarto mai”, independently supporting Milan and 4 May. The year 1446 and the Amidani-to-Sforza attribution come from archival context; the signature remains unresolved. R7899 is catalogued under f. 75, but the f. 70 slip is photographed at the top right of its image P1. The contribution uses the supplied crop of that slip, not the whole f. 75 letter.
 
-[Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md) records failed solver runs on an earlier transcription. The present result starts from Lasry’s CTTS transcription and initial key, followed by image checks and contextual corrections. It is an externally contributed partial decipherment; it does not retroactively turn those solver runs into a successful independent solution.
+In spring 1446 Sforza was under pressure in the Marche, while Venice attacked Visconti’s domains. He would become duke of Milan in 1450. This background helps explain the letters’ language of obligations, security and Venice’s position, but does not identify the unresolved actor or a specific military operation in the companion. See [Antonio Menniti Ippolito, Sforza, Francesco I (2014)](https://www.treccani.it/enciclopedia/francesco-i-sforza_(Enciclopedia-machiavelliana)/).
 
-The existing September research notes and generated website files are preserved. `Codex_profile_proposal.json` supplies the complete proposed metadata update for the maintainer to adopt as `targets/it1583/profile.json`; it retains the failed attempts and the separate unread f. 70. It marks this as a contributed result and leaves aggregate reading coverage unknown because the target contains two documents.
+### Key and transcription evidence; remaining gaps
 
-### Review of prior contributions, 20 October 2026
+The companion supplies additional contexts for the existing key and new signs: (20)/(23)=N in CREDENDO/SIGNORIA and VENIRE; (27)/(18)=O; (14)=SE; (29)=M in SIGNOR MIO; and (28)=QVA in both A LA QVALE and DIE QVARTO. The second QVA context supports the date reading independently of the first phrase. (12)=PER is supported by the crossed-b glyph and PER ALTRA; this supersedes the earlier DI proposal. (21)=T is retained; TT is possible but not established. (17)=V does not by itself establish an encoded VS expansion.
 
-Checked all 58 PR/issue descriptions then available: 35 PRs including this draft (34 prior PRs), 23 issues, and all 46 issue/PR conversation comments; the API returned no inline PR review comments. Only this draft mentioned R7898, Maino/Zorzo or it1583 in those descriptions. The current upstream target files still contain no working key or cipher reading, and the public DECODE record remains labelled non-decrypted.
+Image checks separated the looped V glyph from hooked CON in the companion: nine former #38 boxes became #19, while actual CON signs remain. An open E-shaped glyph corrects the second CREMONA. In f. 68’s last line, overlapping D/PER boxes described one crossed-b sign; the merged box gives PER SVSPECTO. The duplicated companion SE box was removed. These are transcription corrections grounded in the manuscript, not global key changes made to force words.
 
-The review also examined [PR #30](https://github.com/dbourdeau/cyphersolver/pull/30) and [PR #31](https://github.com/dbourdeau/cyphersolver/pull/31), including Bourdeau's responses, as examples of useful corrections with explicit limits; [PR #40](https://github.com/dbourdeau/cyphersolver/pull/40), an added decipherment with a key and character-level evidence; [issue #47](https://github.com/dbourdeau/cyphersolver/issues/47), explicitly offered as a check of an existing Lasry reading; and recent PRs #50 and #57 for attribution and presentation. These concern different manuscripts. Their contribution formats do not supply the R7898 key or text.
+Claude’s proposals were used as hypotheses, with bracketed alt[r]i, obl[i]ghi and defender[v?]i retained as editorial supplies. GENTE for (26), NE for #40+(11), and expansion of the signature are unproved. The boundary groups retain literal N/O and unknown signs. ET in “o non et volendo”, VAIA, RACONMANDO and the extra O O in “sarano o o spazate” remain visible; they are not silently normalized. Symbol (30) remains unknown in the palette but has no surviving box after the user’s deletion of an overwritten mark.
 
-No competing R7898 solution was found in the repository contributions or public pages checked. This is a bounded prior-work check, not proof that the letter has never been deciphered elsewhere. Unpublished work and an unindexed edition could still exist.
+### Added value and prior work
 
-## Files and verification
+The added research value is Lasry’s working key, the resulting partial readings of **both** previously unread cipher texts, and the companion’s additional glyph and word-sign evidence. The archival date, Maino connection and identification of the companion are credited to the earlier investigation and Mazzatinti. This is not an independent blind recovery by the models, and the original unsuccessful solver runs remain on record. See [Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md).
 
-- `ctts/`: positions, palette, key, native transcription and literal decryption, and 52 used cipher icons.
-- `edition.json`: every box, current value and cipher/clear segment; `edited.txt`: synchronized eleven-line reading.
-- `cipher_tokens.txt`: cipher-only CTTS class IDs; physical lines prefixed L01 through L11.
-- `full_letter.md`: complete diplomatic reading with enciphered passages in bold.
-- `cryptiana/maino1446.html`: one insertion item; `cryptiana/index.html`: preview; `cryptiana/README.txt`: integration instructions.
-- `verify.py`: checks source positions, native exports, key, all edited segments, counts, images and checksums.
-- `render_overlay.py`: rebuilds the red overlay from the original image and edition data (Pillow required).
-- `manifest.json`: SHA-256 inventory. Source manuscript SHA-256: `0ce37df800bb35bcab31a69b5cade8be334ba47107af5a414b09f78b73dd0db3`.
+The earlier draft inventories counted 404 signs/26 classes on f. 68 and 390/31 on f. 70. The current CTTS inventories use different class definitions and revised boxes; count differences alone are not missing-sign counts. The companion was read using the contributed key, then used to check and extend it; this is comparative corroboration, not a held-out blind test.
 
-Run `python targets/it1583/lasry2026/verify.py` from the repository root. Count with `python docs/_check_profile.py --measure targets/it1583/lasry2026/cipher_tokens.txt --drop-first`.
+The prior contribution audit on 20 October 2026 examined the then-available 58 PR/issue descriptions and 46 conversation comments. It found no earlier R7898/it1583 key or cipher reading in those contributions; PR #60 was the only matching discussion. This is a bounded check of that repository, not a claim of worldwide priority. Existing research notes, target profile and prior contributors’ files are preserved; the proposed complete profile update is supplied separately in Codex_profile_proposal.json.
 
-## Sources
+### Files and verification
 
-- [DECODE R7898](https://de-crypt.org/decrypt-web/RecordsView/7898). Manuscript image and record: Bibliothèque nationale de France, italien 1583, f. 68, Archivio Sforzesco.
-- [Giuseppe Mazzatinti, inventory (1883), p. 230](https://archive.org/details/archiviostoricol10cava/page/230/mode/2up). «Inventario delle carte dell’Archivio Sforzesco contenute nei codici italiani 1583–1593 della Biblioteca nazionale di Parigi», Archivio storico lombardo, X (1883), pp. 222–326. The f. 68 entry identifies a reply concerning Zorzo Maino’s report, dated 4 May and in cipher; the separate f. 70 entry identifies Amidani’s letter.
-- [Michael E. Mallett, La conquista della Terraferma (1996)](https://www.treccani.it/enciclopedia/la-conquista-della-terraferma_(Storia-di-Venezia)/). Storia di Venezia, section «Conquista ed espansione (1404–1454)»: Sforza, Milan, Venice and Florence in the conflicts of 1443–1446.
-- [Antonio Menniti Ippolito, Sforza, Francesco I (2014)](https://www.treccani.it/enciclopedia/francesco-i-sforza_(Enciclopedia-machiavelliana)/). Enciclopedia machiavelliana: Sforza’s position in spring 1446 and his later accession at Milan in 1450.
-- [Bourdeau’s earlier it1583 notes](https://github.com/dbourdeau/cyphersolver/blob/0258b8ab5a039818040a1ee14b6b993cc75a6f71/targets/it1583/NOTES.md). The unsuccessful September 2026 attempt, retained as the record of that attempt, not as a review of this contribution.
+The contribution includes both native CTTS exports, shared key/colors/icons, a box-aligned two-document edition, full letters, both red overlays, the horizontal key snapshot, checksums, and one combined Siena/Cryptiana insertion item with a standalone preview. `ctts/` contains the current two-image data; root text files retain the f. 68 aliases and `companion/` contains f. 70 aliases.
+
+Run `python targets/it1583/lasry2026/verify.py` to check every box, key value, edited segment, export, coverage count and packaged checksum. `render_overlay.py` can rebuild either red overlay from its hash-verified original image. The profile proposal preserves the earlier failed runs and records both letters as read in part.
+
+Validation completed: both CTTS exports and all 839 boxes checked; repository token measurements and profile/contributor validation passed; desktop (1440 px) and mobile (390 px) previews show one item, 19 lines and three loaded images, with no horizontal overflow.

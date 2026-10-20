@@ -1,154 +1,44 @@
-"""Verify the contributed CTTS transcription and full-letter edition.
-
-Run with Python 3. No nonstandard packages are required.
-"""
+"""Verify both documents, their CTTS exports, edition and package checksums. Standard library only."""
 from pathlib import Path
-from collections import Counter
-from html.parser import HTMLParser
-import hashlib
-import json
-import sys
-
-sys.dont_write_bytecode = True
-ROOT = Path(__file__).resolve().parent
-
-
-def check():
-    data = json.loads((ROOT / "edition.json").read_text(encoding="utf-8"))
-    colors = [s.split(";") for s in (ROOT / "ctts/colors.txt").read_text().splitlines()]
-    key = {}
-    for line in (ROOT / "ctts/key.txt").read_text().splitlines():
-        if " - " in line:
-            labels, value = line.split(" - ")
-            for label in labels.split("|"):
-                assert label not in key, f"Duplicate key label: {label}"
-                key[label] = value.lower()
-    source = []
-    for line in (ROOT / "ctts/positions.txt").read_text().splitlines():
-        if not line.strip():
-            continue
-        x, y, w, h, c = line.split()
-        source.append((float(x), float(y), float(w), float(h), int(c)))
-    actual, cipher = [], Counter()
-    edited, letter_text = [], []
-    tr = (ROOT / "ctts/transcription.txt").read_text().splitlines()[1:-1]
-    dc = (ROOT / "ctts/decryption.txt").read_text().splitlines()[1:-1]
-    assert len(data["rows"]) == len(tr) == len(dc) == 11
-    clear_count = 0
-    for row, transcribed, decrypted in zip(data["rows"], tr, dc):
-        boxes = row["boxes"]
-        assert transcribed.endswith(";")
-        assert transcribed[:-1].split(";") == [b["label"] for b in boxes]
-        assert decrypted.split() == [b["value"] for b in boxes]
-        for b in boxes:
-            rect = tuple(b[k] for k in ("x", "y", "w", "h", "c"))
-            actual.append(rect)
-            assert colors[b["c"]][1] == b["label"]
-            assert key[b["label"]] == b["value"]
-            if b["label"] == "[Plaintext]":
-                clear_count += 1
-            else:
-                cipher[b["label"]] += 1
-                icon = ROOT / "ctts/icons" / (colors[b["c"]][0] + ".png")
-                assert icon.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"), str(icon)
-        covered, parts = [], []
-        for s in row["segments"]:
-            a, b = s["tokens"]
-            covered += list(range(a, b+1))
-            selected = boxes[a-1:b]
-            if s["kind"] == "clear":
-                assert all(x["label"] == "[Plaintext]" for x in selected)
-            else:
-                assert s["kind"] == "cipher"
-                assert all(x["label"] != "[Plaintext]" for x in selected)
-                assert s["text"].replace(" ", "") == "".join(x["value"] for x in selected)
-            parts.append(s["text"])
-        assert covered == list(range(1, len(boxes)+1)), f"Coverage: line {row['line']}"
-        joined = " ".join(parts)
-        letter_text.append(joined)
-        edited.append(f'{row["line"]}|{joined}')
-    assert Counter(actual) == Counter(source), "Position/edition geometry mismatch"
-    assert (ROOT / "edited.txt").read_text(encoding="utf-8") == "\n".join(edited) + "\n"
-    raw_lines = (ROOT / "cipher_tokens.txt").read_text().splitlines()
-    assert len(raw_lines) == 11
-    for row, raw in zip(data["rows"], raw_lines):
-        assert raw.split()[0] == f'L{row["line"]:02d}:'
-        assert raw.split()[1:] == [b["label"] for b in row["boxes"] if b["label"] != "[Plaintext]"]
-    assert len(actual) == 438 and clear_count == 10 and sum(cipher.values()) == 428 and len(cipher) == 52
-    assert sum(n for label, n in cipher.items() if key[label] == "?") == 29
-    assert len([label for label in cipher if key[label] == "?"]) == 12
-
-    class EditionHTML(HTMLParser):
-        def __init__(self):
-            super().__init__()
-            self.in_line = False
-            self.current = ""
-            self.lines = []
-            self.images = []
-            self.sections = 0
-            self.strong = False
-            self.in_number = False
-            self.runs = []
-            self.kind_text = []
-        def handle_starttag(self, tag, attrs):
-            attrs = dict(attrs)
-            if tag == "section":
-                self.sections += 1
-            if tag == "img":
-                self.images.append(attrs)
-            if tag == "p" and attrs.get("class") == "letter-line":
-                self.in_line = True
-                self.current = ""
-                self.kind_text = []
-            if self.in_line and tag == "span":
-                self.in_number = True
-            if self.in_line and tag == "strong":
-                self.strong = True
-        def handle_endtag(self, tag):
-            if tag == "strong":
-                self.strong = False
-            if tag == "span":
-                self.in_number = False
-            if tag == "p" and self.in_line:
-                self.lines.append(self.current.strip())
-                self.runs.append(self.kind_text)
-                self.in_line = False
-        def handle_data(self, value):
-            if self.in_line and not self.in_number:
-                self.current += value
-                if value.strip():
-                    self.kind_text.append(("cipher" if self.strong else "clear", value.strip()))
-    parsed = EditionHTML()
-    parsed.feed((ROOT / "cryptiana/maino1446.html").read_text(encoding="utf-8"))
-    assert parsed.sections == 1 and len(parsed.images) == 2
-    assert parsed.lines == letter_text, "HTML letter differs from aligned edition"
-    for row, runs in zip(data["rows"], parsed.runs):
-        want = []
-        for segment in row["segments"]:
-            if want and want[-1][0] == segment["kind"]:
-                want[-1] = (want[-1][0], want[-1][1] + " " + segment["text"])
-            else:
-                want.append((segment["kind"], segment["text"]))
-        assert runs == want, f"Cipher/clear bolding mismatch: line {row['line']}"
-    for image in parsed.images:
-        assert image.get("alt")
-        assert (ROOT / "cryptiana" / image["src"]).is_file()
-    for rel, expected in json.loads((ROOT / "manifest.json").read_text())["files"].items():
-        assert hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() == expected, rel
-
-    repo = ROOT.parents[2]
-    if (repo / "docs/_check_profile.py").is_file():
-        sys.path.insert(0, str(repo / "docs"))
-        import _check_profile as profile
-        proposal = json.loads((ROOT / "Codex_profile_proposal.json").read_text(encoding="utf-8"))
-        errors, gaps = [], []
-        profile.validate(proposal, profile.SCHEMA, "", errors, gaps)
-        errors += profile.credit_errors(proposal)
-        assert not errors, errors
-        print(f"Proposed profile: schema and contributor checks passed ({len(gaps)} explicit unknown fields).")
-    print("PASS: 438 positions; 428 cipher signs / 52 classes; 399 assigned / 29 unresolved;")
-    print("all ten clear-text boxes, eleven edited lines, bold/clear HTML spans, icons, images and checksums agree.")
-
-
-if __name__ == "__main__":
-    check()
+import importlib.util, json, hashlib, sys, collections
+sys.dont_write_bytecode=True
+R=Path(__file__).resolve().parent
+s=importlib.util.spec_from_file_location('ctts_verify',R/'ctts/Codex_verify.py')
+v=importlib.util.module_from_spec(s);s.loader.exec_module(v)
+colors,key,projects,spec=v.read_projects(R/'ctts')
+data=json.loads((R/'edition.json').read_text(encoding='utf-8'))
+totals=collections.Counter();used=set()
+for doc in data['documents']:
+ stem=doc['stem'];rows=projects[stem];d=spec['documents'][stem]
+ edits=v.render_edits(rows,d)
+ alias='' if doc['id']=='R7898' else 'companion/'
+ assert (R/(alias+'edited.txt')).read_text(encoding='utf-8')==edits
+ assert (R/f'ctts/edited/{stem}_edits.txt').read_text(encoding='utf-8')==edits
+ assert len(doc['rows'])==len(rows)
+ for row,rec,base in zip(rows,doc['rows'],d['rows']):
+  assert rec['boxes']==row and rec['line']==base['line']
+  assert rec['suffix']==base.get('suffix','')
+  assert len(rec['segments'])==len(base['segments'])
+  for seg,orig in zip(rec['segments'],base['segments']):
+   assert all(seg[k]==val for k,val in orig.items())
+   a,b=seg['tokens'];boxes=row[a-1:b]
+   expected=orig['text'] if orig['kind']=='clear_box' else orig.get('reading',orig.get('separator','').join(x['value'] for x in boxes))
+   assert seg['text']==expected
+  for box in row:
+   if box['label']!='[Plaintext]':assert (R/'ctts/icons'/(colors[box['c']][0]+'.png')).is_file()
+ cipher=[b for row in rows for b in row if b['label']!='[Plaintext]']
+ stats=dict(lines=len(rows),boxes=sum(map(len,rows)),cipher=len(cipher),clear=sum(map(len,rows))-len(cipher),distinct=len({b['label'] for b in cipher}),assigned=sum(b['value']!='?' for b in cipher),provisional=sum(key[b['label']].islower() for b in cipher),unresolved=sum(b['value']=='?' for b in cipher))
+ assert stats==doc['statistics'];totals.update({k:n for k,n in stats.items() if k!='distinct'});used.update(b['label'] for b in cipher)
+ tokens=''.join(f'L{i:02d}: '+' '.join(b['label'] for b in row if b['label']!='[Plaintext]')+'\n' for i,row in enumerate(rows,1))
+ assert (R/(alias+'cipher_tokens.txt')).read_text(encoding='utf-8')==tokens
+ print('PASS',doc['shelfmark'],stats)
+totals['distinct']=len(used);assert dict(totals)==data['statistics']
+assert (R/'ctts/edited/edits.txt').read_text(encoding='utf-8')==''.join(stem+'\n'+v.render_edits(rows,spec['documents'][stem]) for stem,rows in projects.items())
+for alias,src in [('positions.txt','positions/1_positions.txt'),('transcription.txt','transcription/1.txt'),('decryption.txt','decryption/1.txt')]:assert (R/'ctts'/alias).read_bytes()==(R/'ctts'/src).read_bytes()
+fragment=(R/'cryptiana/maino1446.html').read_text(encoding='utf-8');preview=(R/'cryptiana/index.html').read_text(encoding='utf-8')
+assert fragment in preview and fragment.count('class="letter-line"')==19 and fragment.count('<section ')==1 and fragment.count('<img ')==3
+manifest=json.loads((R/'manifest.json').read_text(encoding='utf-8'))['files']
+actual={p.relative_to(R).as_posix() for p in R.rglob('*') if p.is_file() and p.name!='manifest.json' and '__pycache__' not in p.parts}
+assert actual==set(manifest),'Manifest file inventory differs'
+for rel,h in manifest.items():assert hashlib.sha256((R/rel).read_bytes()).hexdigest()==h,rel
+print('PASS combined edition, CTTS, aliases, insertion HTML and all checksums.')
