@@ -2,11 +2,7 @@
 
 Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1.
 
-Most of the remaining unknown signs are plausibly nulls, titles or abbreviations, particularly in the groups at passage boundaries and in the signature. This is a working hypothesis about their function, not a decipherment of each sign; they remain visible as ? and are not deleted or assigned speculative expansions.
-
-Bold passages below were enciphered in the manuscript; regular type is clear writing or an explicitly marked editorial supply. The full surviving text of each supplied image is included, with physical line numbers. Spelling and V/U are retained. Word division, punctuation and bracketed supplies are editorial. Each ? is one unresolved cipher sign. Hyphens added at physical line ends indicate a word continuing on the next line: n-/on, per-/che and be-/nche.
-
-Lowercase values in the native key mark **provisional (8)=L, (24)=N and (16)=IN**. The readable text is lowercased throughout, so consult this note or the key for confidence. IN in “debe savere in qvesto” is adopted provisionally, not silently rejected or promoted to certainty. Clear [fornendo?] is uncertain; [ques?] before cipher TE is a conjectural supply, not a secure transcription of visible letters. No cipher signs have been deleted merely to make fluent Italian.
+Ciphertext is shown in bold.
 
 ### BnF italien 1583, f. 68 — Reply concerning Zorzo del Maino’s report
 
