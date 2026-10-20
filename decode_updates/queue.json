@@ -5443,24 +5443,41 @@
   "it1583": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/it1583.html",
    "key": {
-    "decode": "none: no key found (metadata correction only)"
+    "file": "targets/it1583/lasry2026/ctts/key.txt",
+    "lang": "IT",
+    "how": "Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also generated the initial key; the key and reading were improved by Astra and Fable 5.1 (ciphertext-only; 14 sign classes unresolved, l/n/in provisional)"
    },
-   "cite": "G. Mazzatinti, Archivio storico lombardo X (1883), p. 230",
+   "cite": "G. Mazzatinti, Archivio storico lombardo X (1883), p. 230 (headings of ff. 68 and 70); contributed reading: https://github.com/dbourdeau/cyphersolver/pull/60",
    "fields": {
     "date": "1446-05-04",
-    "author": "Francesco Sforza's chancery (reply to Giorgio del Maino)",
-    "receiver": "Giorgio (Zorzo) del Maino",
     "cleartext_lang": "Italian",
-    "plaintext_lang": "Italian"
+    "plaintext_lang": "Italian",
+    "cipher_types": "homophonic, nomenclator"
    },
    "records": {
     "R7898": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "BnF ital. 1583 f. 68 = 'Risposta a quanto ha riferito Zorzo Maino (4 maggio). In cifre' (Mazzatinti 1883); dated in clear M cccc xlvj die iiij may; clear Lombard Italian with graphic cipher; not read, no key found.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
+     "proposed": "Partially decrypted",
+     "note": "BnF ital. 1583 f. 68, 4 May 1446 (date in clear): reply to what Zorzo (Giorgio) del Maino reported (Mazzatinti 1883), writer and place not identified; clear Italian with cipher runs. Deciphered in part by George Lasry with CTTS, refined by Astra and Fable 5.1: 380 of 425 cipher signs give sense; 26 signs unresolved. The same key reads f. 70, photographed on R7899 image P1.",
+     "fields": {
+      "receiver": "Giorgio (Zorzo) del Maino",
+      "author": "unidentified (reply concerning Count Francesco Sforza)"
+     },
+     "reading": "decode_updates/decryptions/R7898.txt",
+     "transcription": [
+      "targets/it1583/lasry2026/cipher_tokens.txt"
+     ],
+     "sent": false
+    },
+    "R7899": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Image P1 also shows, at top right, a separate slip: BnF ital. 1583 f. 70, 4 May 1446, catalogued by Mazzatinti 1883 as Vincenzo Amidani to Francesco Sforza, Milan. That slip is deciphered in part with the R7898 key (341 of 402 cipher signs give sense; the signature is unread). The f. 75 letter this record is catalogued under is not deciphered.",
+     "reading": "decode_updates/decryptions/R7899.txt",
+     "transcription": [
+      "targets/it1583/lasry2026/companion/cipher_tokens.txt"
+     ],
+     "sent": false
     }
    }
   },
@@ -8201,36 +8218,36 @@
    }
   },
   "bagno1652": {
- "writeup": "https://dbourdeau.github.io/cyphersolver/bagno1652.html",
- "key": {
-  "file": "targets/bagno1652/key.txt",
-  "lang": "Italian",
-  "how": "Reconstructed by George Lasry with Astra and Opus 5.5, ciphertext-only."
- },
- "cite": "This letter was not part of George Lasry, Beáta Megyesi and Nils Kopal, \"Deciphering papal ciphers from the 16th to the 18th Century\", Cryptologia 45(6), 479–540 (2021; published online 2020), DOI 10.1080/01611194.2020.1755915 (scope confirmed by George Lasry).",
- "fields": {
-  "start_day": "5",
-  "start_month": "1",
-  "end_day": "5",
-  "end_month": "1",
-  "city": "Paris",
-  "author": "Niccolò Guidi di Bagno",
-  "sender": "Niccolò Guidi di Bagno",
-  "receiver": "Secretariat of State"
- },
- "records": {
-  "R5622": {
-   "decode_status": "N/A",
-   "proposed": "Decrypted",
-   "note": "Solved by George Lasry. Transcription was made with CTTS (CrypTool Transcriber and Solver), using its machine-learning model and manual correction. Ciphertext-only cryptanalysis was performed with GPT-6 Astra and Anthropic Claude Opus 5.5 under Lasry's direction. The submission covers all four cipher pages, ff. 6r–7v, in reading order P3, P4, P5, P1. The record also includes a clear opening leaf, f. 5r; it is not included in the four-page cipher reading. 35 tentative and two unresolved cipher values remain explicitly marked.",
-   "reading": "decode_updates/decryptions/R5622.txt",
-   "sent": false,
-   "transcription": [
-    "targets/bagno1652/transcription/all.txt"
-   ]
-  }
- }
-},
+   "writeup": "https://dbourdeau.github.io/cyphersolver/bagno1652.html",
+   "key": {
+    "file": "targets/bagno1652/key.txt",
+    "lang": "Italian",
+    "how": "Reconstructed by George Lasry with Astra and Opus 5.5, ciphertext-only."
+   },
+   "cite": "This letter was not part of George Lasry, Beáta Megyesi and Nils Kopal, \"Deciphering papal ciphers from the 16th to the 18th Century\", Cryptologia 45(6), 479–540 (2021; published online 2020), DOI 10.1080/01611194.2020.1755915 (scope confirmed by George Lasry).",
+   "fields": {
+    "start_day": "5",
+    "start_month": "1",
+    "end_day": "5",
+    "end_month": "1",
+    "city": "Paris",
+    "author": "Niccolò Guidi di Bagno",
+    "sender": "Niccolò Guidi di Bagno",
+    "receiver": "Secretariat of State"
+   },
+   "records": {
+    "R5622": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "Solved by George Lasry. Transcription was made with CTTS (CrypTool Transcriber and Solver), using its machine-learning model and manual correction. Ciphertext-only cryptanalysis was performed with GPT-6 Astra and Anthropic Claude Opus 5.5 under Lasry's direction. The submission covers all four cipher pages, ff. 6r–7v, in reading order P3, P4, P5, P1. The record also includes a clear opening leaf, f. 5r; it is not included in the four-page cipher reading. 35 tentative and two unresolved cipher values remain explicitly marked.",
+     "reading": "decode_updates/decryptions/R5622.txt",
+     "sent": false,
+     "transcription": [
+      "targets/bagno1652/transcription/all.txt"
+     ]
+    }
+   }
+  },
   "r4817": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/r4817.html",
    "key": {

@@ -16,6 +16,21 @@
  }
 },
   {
+   "id": "k-it1583-lasry",
+   "label": "Sforza letters 1446 (Maino reply, Amidani): Lasry CTTS key",
+   "kind": "scholar's key",
+   "by": "George Lasry with CTTS; refined by Astra and Fable 5.1",
+   "year": 1446,
+   "found": 2026,
+   "note": "Recovered from the ciphertext of BnF ital. 1583 ff. 68 and 70 (4 May 1446). Homophonic letters, up to six signs for I and O, word signs CHE, CON, ET, PER, QVA, SE; l, n, in provisional; 14 sign classes unresolved. Not the ASMi cart. 1597 no. 14 or no. 17 keys.",
+   "image": {
+    "src": "it1583_key.png",
+    "credit": "George Lasry, CTTS key sheet (20 Oct 2026), signs cut from BnF italien 1583 ff. 68 and 70 via DECODE R7898 and R7899",
+    "caption": "The shared key: homophones under each letter, the word signs and the unresolved signs.",
+    "page": "it1583"
+   }
+  },
+  {
    "id": "k-nino1522-lasry",
    "label": "Rodrigo Niño 1522: Lasry CTTS key",
    "kind": "scholar's key",
@@ -2209,6 +2224,12 @@
  "how": "rebuilt from",
  "note": "Ciphertext-only recovery from R5622; 27 tentative code types retained."
 },
+  {
+   "key": "k-it1583-lasry",
+   "target": "it1583",
+   "how": "rebuilt from",
+   "note": "Key generated with CTTS from the ciphertext of ff. 68 and 70 by George Lasry, refined by Astra and Fable 5.1; both letters read in part (87% of cipher tokens)."
+  },
   {
    "key": "k-nino1522-lasry",
    "target": "nino1522",
