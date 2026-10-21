@@ -120,7 +120,7 @@ decomposition is one hypothesis among several; others (marks mapped differently 
 
 ## Amadi's diabolic alphabet (21 Oct 2026)
 
-`amadi_scheers.png`: David Scheers's redrawing of Agostino Amadi's *Letere diaboliche* (Venice, c. 1588), 31 signs,
+David Scheers's redrawing (sent privately, not to be distributed; not in the repository) of Agostino Amadi's *Letere diaboliche* (Venice, c. 1588), 31 signs,
 each named after a demon (Astaroth, Minos, Belzebub, Lybicon, Sathan, Barion, Stix, Pluton, Zael, Charon, Cerber,
 Acheron, Let, Demon, Cocito, Aletho, Eunce, Lucifer, Megera, Phlegeton, Raziel, Fython, Nayn, Uriel, Oziel, Gax,
 Sachao, Radamastra, Xac, Dis, Thesiphon). The signs are the woodcut's own: Acheron = Ǝ, Lybicon / Zael / Lucifer =
@@ -133,6 +133,13 @@ transcription.
 The names as a key (`work/amadi_acrophonic.py`, first letter of each name; v3 transcription): `?agu??b?rrbaab?agssagggcgbaa
 / rzccaaccammamlmzlzpaabaculzbm / …`, no words; Italian −4.49 against 2,000 random reassignments −4.73 ± 0.18
 (z = 1.35), Latin z = 0.63; second letters no better. The demon names are labels, not sound values.
+
+Amadi's "Aetiopice" (f. 180r) and Armenian (ff. 178v–179r) tables, also sent privately by Scheers (21 Oct 2026, not
+in the repository): the Ethiopian is a cursive Greek-style alphabet in Greek order (names Alfa, beda, gama, delda …
+Zso … Theda), sharing only generic shapes (E, 3, 8, X, λ, Π, Ψ, +) with the woodcut; the Armenian is genuine
+Armenian, a few arches like ո ռ տ մ. Neither has the woodcut's distinctive signs (Ǝ with long bar, the stubbed arch
+variants, fork on a stem, Γ on a stem, barred signs, ≻, ξ). Only Amadi's diabolic table, itself a copy of the
+woodcut, matches.
 
 ## Remaining gaps
 
