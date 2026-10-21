@@ -93,9 +93,9 @@
       "used": false
     },
     "inputs": [
+      "cleartext context",
       "images",
-      "transcription",
-      "cleartext context"
+      "transcription"
     ],
     "attack": "ciphertext-only",
     "human_role": "Supplied the image, insisted on continuing, and forwarded David Scheers's PDF which identified the target and gave a transcription.",
@@ -288,6 +288,12 @@
         "language-model scoring",
         "statistical test"
       ],
+      "date": "2026-10-21"
+    },
+    {
+      "kind": "literature search",
+      "what": "Read Ambrogio's own account (ff. 212r-213r, archive.org scan): the conjurer was later killed by peasants 'with as many iron tridents as the invoked Amon had drawn in his characters' (tot ferris tridentibus, quot invocatus Amon in suis characteribus effinxerat); the commonest sign (sideways E with long bar) is a trident, so the source's only meaning for the characters is a pictorial omen, consistent with the absence of any linguistic plaintext.",
+      "result": "worked",
       "date": "2026-10-21"
     }
   ],

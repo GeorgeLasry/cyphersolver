@@ -1,6 +1,6 @@
 # The "Devil's Handwriting": Ludovico Spoletano's conjuration, Teseo Ambrogio, *Introductio in Chaldaicam linguam* (Pavia 1539), f. 212v
 
-Status: in progress. Not read. Second session (16 Oct 2026): a calibrated homophonic solver that solves 12/12 matched
+Status: in progress (explanation found in the source, 21 Oct 2026; write-up pending). Not read. Second session (16 Oct 2026): a calibrated homophonic solver that solves 12/12 matched
 153-letter, 31-sign controls in Latin and Italian finds nothing in the Devil's text. Schmeh's Top 25 no. 12.
 
 ## Target
@@ -140,6 +140,37 @@ Zso … Theda), sharing only generic shapes (E, 3, 8, X, λ, Π, Ψ, +) with the
 Armenian, a few arches like ո ռ տ մ. Neither has the woodcut's distinctive signs (Ǝ with long bar, the stubbed arch
 variants, fork on a stem, Γ on a stem, barred signs, ≻, ξ). Only Amadi's diabolic table, itself a copy of the
 woodcut, matches.
+
+## What Ambrogio says the characters meant (ff. 212r–213r, read 21 Oct 2026)
+
+Pages 211–213 of the archive.org scan (`bub_gb_yUkKq_QnrnwC`, sent by the user from Scheers's pointer):
+
+- f. 212r: after the Arabic, "Magorum vero characteres ab Honorio Thebano, Appone, et nonnullis aliis relictos in
+  lucem edidit inter ceteros Cornelius Agrippa. De quibus nulla nobis cura facienda est." He adds the Spoletano
+  conjuration "ut amico tandem et curiosis ceteris fiat satis". A noble matron, "spiritu saepe afflata prophetico
+  virgo", had once written "literis semel tantum incognitis" and foretold that some would come "qui talibus
+  uterentur characteribus, aut similibus scriptitarent literis"; some years after her death these were written.
+- f. 212v: the conjuration (Italian) and the account: the pen was seized and lifted and wrote the characters on
+  the same sheet, no hand visible; told to Ambrogio by a witness who came to Pavia, who "rogatus archetypum mihi
+  reliquit" (left him the original sheet, so the woodcut copies it). "Characteres vero tales erant."
+- f. 213r: "Quid vero characteres illi insinuarent, quamve responsionem ad quaesita redderent, scire omnino non
+  curavi" … the conjurer, who had since turned soldier and led three or four hundred foot under his banner, "in
+  rusticorum semel manus incidit. **Qui tot illum ferris tridentibus (quot invocatus Amon, in suis characteribus
+  effinxerat) appetentes, percusserunt, vulneraverunt, transfixerunt.** Et tricipiti apud inferos Cerbero
+  consignandum, multis undique laetalibus cribratum vulneribus, exanime tandem corpus illius reliquerunt."
+  ("They, going at him with as many iron tridents as the invoked Amon had drawn in his characters, struck him,
+  wounded him, ran him through; and, riddled on all sides with deadly wounds, to be handed to three-headed Cerberus
+  below, they left his body lifeless at last.") He then says he printed the script at Postel's request ("rogati
+  Postello impartiri").
+
+So the only meaning the source gives the characters is pictorial: they drew tridents, and the number of tridents
+matched the pitchforks that killed the conjurer. The woodcut agrees: its commonest sign (Ǝ with the long middle bar,
+26 of 161 in v3) is a trident on its side, three prongs with the bar running on as the shaft (rotated 90° it is an
+upright Ψ, `work/` rotation tests); the forks (U, Y, Astaroth on a cross) are tridents and bidents. This, with the
+negative results above (no letter-substitution plaintext in eleven languages under three transcriptions, solvers
+calibrated on matched controls), points to no linguistic content: the "answer" is a pictorial omen, not a text.
+Prior notice: Houston and Rojas, "The Devil's Writing", Maya Decipherment blog, 6 Apr 2024, discusses the image and
+(per search summaries) the tridents; not readable from this environment, to be checked before publication.
 
 ## Remaining gaps
 
