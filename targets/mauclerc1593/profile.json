@@ -1,0 +1,108 @@
+{
+ "schema_version": 1,
+ "target": "mauclerc1593",
+ "title": "Dr Mauclerc to Creil, 1593: BnF fr. 3983 f. 268, fr. 3984 f. 33, fr. 3985 f. 20",
+ "documents": [
+  {
+   "id": "fr3985f20",
+   "shelfmark": "BnF fr. 3985 no. 7 (f. 20)",
+   "date": "1593",
+   "year": 1593,
+   "country": "Catholic League",
+   "route": "Dr Mauclerc -> Creil",
+   "language": "French",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate collection"
+    ],
+    "source": "contemporary interlinear decipherment; clear summary in the register BnF fr. 3983 f. 140r (Brice Dudout, unverified here)"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "published",
+    "notes": "not transcribed here"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Not examined here.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown"
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "interlinear decipherments on the letters; summary in BnF fr. 3983 f. 140r",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "published reading"
+  ],
+  "attack": "none",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-20",
+  "last_date": "2026-10-20"
+ },
+ "solution": [
+  {
+   "date": "2026-10-20",
+   "kind": "literature search",
+   "what": "Brice Dudout's email: the Mauclerc letters carry contemporary interlinear decipherments, summarised in fr. 3983 f. 140r; split from catalogue 20. Gallica images not reachable by script that day.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Read at the time: interlinear decipherments and a clear summary in the 1593 register (reported by Brice Dudout); nothing was transcribed or added here.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Status: no write-up. Not checked on the images here.",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "reported the interlinear decipherments and the register summary, email of 19 Oct 2026",
+    "source": "email to Daniel Bourdeau, 19 Oct 2026"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherments; register fr. 3983 f. 140r"
+   }
+  ]
+ }
+}

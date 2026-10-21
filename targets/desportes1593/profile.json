@@ -1,0 +1,282 @@
+{
+ "schema_version": 1,
+ "target": "desportes1593",
+ "title": "Baudouin-Desportes to Aldobrandini and to Frachetta, Paris 22 July 1593, BnF fr. 3984 ff. 186, 189",
+ "documents": [
+  {
+   "id": "f186",
+   "shelfmark": "BnF fr. 3984 f. 186 (no. 88)",
+   "date": "22 Jul 1593",
+   "year": 1593,
+   "country": "Catholic League",
+   "route": "Paris -> Pietro Aldobrandini, Rome",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Tomokiyo mayenne.htm: 'Enciphered passages are undeciphered'; the royal office's register (fr. 3983 f. 141v, entry 13) and endorsement f. 187v: not deciphered"
+   },
+   "length": {
+    "tokens": 4611,
+    "unit": "symbols",
+    "measured": true,
+    "file": "rosson/raw/dump_f186r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica microfilm btv1b9060633d, full-resolution IIIF canvases; CNN classifier plus hand reading",
+    "image_quality": "fair",
+    "notes": "c. 74 cipher lines (recto ll. 11-51, verso ll. 0-32). 17 Sept attempt: classifier top-1 0.73-0.79. Contributed reading: Rosson's CTC recogniser, 2,565 + 2,046 signs (counted here from his dumps), checked line by line on the image by his model. The f. 186v count (2,046) is in rosson/raw/dump_f186v.txt."
+   },
+   "read": "read"
+  },
+  {
+   "id": "f189",
+   "shelfmark": "BnF fr. 3984 f. 189 (no. 90)",
+   "date": "22 Jul 1593",
+   "year": 1593,
+   "country": "Catholic League",
+   "route": "Paris -> Girolamo Frachetta",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Tomokiyo mayenne.htm: 'Undeciphered'; the royal office's register (fr. 3983 f. 141v, entry 14) and endorsement f. 189v: not deciphered"
+   },
+   "length": {
+    "tokens": 2088,
+    "unit": "symbols",
+    "measured": true,
+    "file": "rosson/raw/dump_f189.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica microfilm btv1b9060633d",
+    "image_quality": "fair",
+    "notes": "33 lines wholly in cipher; 2,088 signs in Rosson's dump (counted here)."
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "polyphonic",
+   "nomenclator"
+  ],
+  "summary": "Catholic League polyphonic cipher: eleven glyphs each stand for two letters (a/n ... m/z), with signs for que, qui, pour and a few code signs.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "common words",
+    "names"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": {
+   "present": true,
+   "count": "unknown"
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Tomokiyo's reconstructed League key (mayenne.htm) and the same-day letter to Lisieux (f. 188, deciphered on ff. 184-185) used for 1,108 aligned glyphs",
+  "notes": "Occasional null strokes; the decipherer normalised spellings."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "online",
+   "where": "Paolo Rosson (with Claude Opus 5.5), github.com/pangoleen/desportes-1593, v0.2 of 1 Oct 2026; reported by Tomokiyo (cryptiana polyphonic1593.htm, 3 Oct 2026) and by Brice Dudout's email of 19 Oct 2026. No reading before Rosson's: Tomokiyo's mayenne.htm (2023) and the royal office's register say both letters were undeciphered. Brett Burford's independent re-reading, 18 Oct 2026, followed it.",
+   "found": "after reading",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "known plaintext",
+   "published reading"
+  ],
+  "attack": "published key",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "tools": [
+   "seg2.py (glyph segmentation)",
+   "boot2.py kNN, boot3.py CNN alignment",
+   "cnn.py classifier",
+   "soft_decode.py, decode_line.py (LM beam)",
+   "crib_search.py",
+   "fr6_period.pkl period-French LM"
+  ],
+  "models": [
+   "claude-fable-5",
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-09-17",
+  "last_date": "2026-10-20"
+ },
+ "solution": [
+  {
+   "date": "2026-09-17",
+   "kind": "literature search",
+   "what": "Tomokiyo's League polyphonic key and folio list confirm the task is transcription, not key recovery.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "sibling key",
+   "what": "f. 188v aligned to its decipherment f. 185: 1,108 labelled glyphs of the same hand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "transcription",
+   "what": "CNN, kNN, SVM and self-training classifiers read held-out glyphs at 73-79 % top-1; hand reading c. 70 %.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "control",
+   "what": "Soft LM decoding of held-out f. 188v ll. 7-10 recovers only 30-40 % of letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "EM alignment",
+    "statistical test"
+   ],
+   "what": "Line-by-line alignment of f. 186v and f. 189 against the Lisieux text versus a shuffled control: no verbatim shared passage.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "transcription",
+   "what": "Contributed (Paolo Rosson, with Claude Opus 5.5): f. 176 aligned to its decipherment f. 177-178 and f. 188v to f. 185, 6,794 labelled signs; CTC line recogniser; held-out 98.5% of signs, 95.6% of letters; blind test f. 179r 99.7% / 98.3%.",
+   "result": "worked",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "reading",
+   "what": "Contributed: Tomokiyo's League key applied with a period-French LM and lexicon decoder to ff. 186 and 189; every line checked on the image by his model; v0.2 published.",
+   "result": "worked",
+   "technique": [
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "what": "Checked here: 1,524 of 1,533 decoded words spell under the key from their sign-class strings (the other 9 use the second-choice class); our 100 hand labels of f. 188v ll. 3-4 agree with his gold on all 100; ff. 186r ll. 21-23 and f. 189 l. 1 re-read glyph by glyph on the Gallica image, every class matches.",
+   "result": "worked",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "literature search",
+   "what": "Priority: Tomokiyo mayenne.htm (2023) lists both as undeciphered; polyphonic1593.htm (3 Oct 2026) credits Rosson with the first full decipherment; Burford's independent re-reading (18 Oct 2026) agrees on 93-96% of signs and prefers Rosson's text.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Paolo Rosson applied Tomokiyo's published League polyphonic key (cryptiana mayenne.htm), unchanged, to a transcription made by a recogniser trained on the sister letters aligned with their 1593 decipherments (f. 177-178, f. 184-185); no key was recovered. This project's 17 Sept attempt with the same key stalled at 73-79% of glyphs; its share is the checks of 20 Oct 2026.",
+  "contribution": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "class": "read",
+  "key": "recovered",
+  "codes_open": {
+   "open": 3,
+   "tokens_open": 3
+  },
+  "fraction_read": 0.985,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Rosson's dumps hold 1,790 cipher words (557 f. 189, 688 f. 186r, 545 f. 186v); his reading files leave 5 unread and mark 21 with (?); 1,764 of 1,790 are read as sense (counted here 20 Oct 2026).",
+  "verification": [
+   "independent verification",
+   "historical consistency",
+   "key confirms"
+  ],
+  "gaps": [
+   {
+    "item": "f. 189 l. 26, the sign after 'Le voiage de'",
+    "blocker": "open-codes",
+    "detail": "one occurrence, not in the sister letters"
+   },
+   {
+    "item": "f. 189 l. 32 and f. 186 r30, single person/title signs read by context",
+    "blocker": "open-codes",
+    "detail": "'Sa Sainteté(?)', 'pape(?)'"
+   },
+   {
+    "item": "f. 186v ll. 1-3, three short groups (c. 9 signs) at the gutter",
+    "blocker": "illegible",
+    "detail": "the binding hides one or two glyphs of each line on the microfilm"
+   },
+   {
+    "item": "cover names of f. 189 ('nostre oncle', 'l'homme de la chesne', 'l'homme du colege', 'docteur Gratian')",
+    "blocker": "no-key-material",
+    "detail": "read as words; their referents are in no key or sister letter"
+   }
+  ],
+  "notes": "First reading by Paolo Rosson, v0.2 of 1 Oct 2026 (github.com/pangoleen/desportes-1593), checked here 20 Oct 2026 and copied to rosson/. Our 17 Sept 2026 attempt (not solved) is the solution steps of that date. Split 20 Oct 2026 from targets/sega1593 (catalogue 20).",
+  "credits": [
+   {
+    "who": "rosson",
+    "role": "solution",
+    "note": "first reading of both letters, with Claude Opus 5.5: recogniser trained on 6,794 aligned signs, Tomokiyo's key, LM decoder; v0.2 of 1 Oct 2026",
+    "date": "2026-10-01",
+    "source": "https://github.com/pangoleen/desportes-1593",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "League polyphonic key (cryptiana mayenne.htm); partial check of Rosson's reading and three clear-text corrections (polyphonic1593.htm, 3 Oct 2026)",
+    "source": "https://cryptiana.web.fc2.com/code/polyphonic1593.htm"
+   },
+   {
+    "who": "burford",
+    "role": "verification",
+    "note": "independent second reading with Claude Opus 5.5, made before opening Rosson's text; agrees on 95.9% (f. 189), 93.1% (f. 186r), 93.8% (f. 186v) of signs",
+    "date": "2026-10-18",
+    "source": "https://github.com/BravoBravoIX/desportes-1593-rereading",
+    "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "reported Rosson's reading by email, 19 Oct 2026",
+    "source": "email to Daniel Bourdeau, 19 Oct 2026"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the royal office's decipherments of the sister letters, f. 177-178 (of f. 176) and f. 184-185 (of f. 188), the training labels"
+   }
+  ]
+ }
+}

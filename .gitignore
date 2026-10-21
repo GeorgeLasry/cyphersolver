@@ -436,15 +436,15 @@ targets/dubellay/ref/tomokiyo_*.png
 targets/dubellay/ref/cryptiana_*.htm
 targets/dubellay/ref/manifest_*.json
 targets/dubellay/ref/oai_*.xml
-# sega1593: page images, line crops, renders, model weights and LM (regenerate with fetch_canvases.py, seglines.py, seg2.py, boot3.py)
-targets/sega1593/img/
-targets/sega1593/lines/*.png
-targets/sega1593/lines/*.npy
-targets/sega1593/tmp/
-targets/sega1593/*.npy
-targets/sega1593/*.pt
-targets/sega1593/*.pkl
-targets/sega1593/*.log
+# desportes1593: page images, line crops, renders, model weights and LM (regenerate with fetch_canvases.py, seglines.py, seg2.py, boot3.py)
+targets/desportes1593/img/
+targets/desportes1593/lines/*.png
+targets/desportes1593/lines/*.npy
+targets/desportes1593/tmp/
+targets/desportes1593/*.npy
+targets/desportes1593/*.pt
+targets/desportes1593/*.pkl
+targets/desportes1593/*.log
 # hesse1603: Internet Archive page images, strips and bulky OCR/hOCR texts (refetch: see targets/hesse1603/NOTES.md §1); keep Tomokiyo's key image and the page map
 targets/hesse1603/img/
 targets/hesse1603/crops/
