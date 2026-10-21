@@ -1,5 +1,7 @@
 # Pieter Battier to Gaspar Fagel, Madrid, 1686–1688
 
+Status: in progress (21 Oct 2026): the unread letters are workable with the same key; WAINUT's eight 1687 passages (PR #65, #67) wait on an eye check of 158 machine-read key rows.
+
 Status: read in part; **read with known key**. Two letters pass the strict sense screen without a known contemporary decipherment:
 **24 April 1687, 230/235 = 97.9% conservatively**, and 8 April 1688,
 313/323 = 96.9%, or 312/323 = 96.6% conservatively. The 19 December 1686 letter is a third
@@ -221,7 +223,7 @@ Shifted annotations, dictionary variants and mark choices still require image ch
 - 24 April 1687: surplus 8=e; partly covered 5:623 gra[tie]; gehelyk, sedert dat and soo als hy; Gastanaga's exact departure condition - blocker: open-codes; the 230/235 sense screen excludes these five positions; see codex_review/review_1687-04-24.md
 - Separate decipherment sheets near 4 December 1687 and 12 February 1688 have not been checked - blocker: open-codes; comparison with nearby plaintext remains unexamined
 - Focus-letter unresolved groups and sense: 12:6?0; getwist versus inferred Turck(en); Novelli/Hofmeester, gesoubconneert gouverneren and Sex.; name repairs, 81 and other emendations in semantic_adjustments.tsv - blocker: open-codes; key lookup alone does not settle the meaning or mark choices
-- Unread volume letters listed individually in inv/orch_letters.tsv, including 102L and the untranscribed cipher on 95R - blocker: open-codes; not yet transcribed; workable with the same key
+- Unread volume letters listed individually in inv/orch_letters.tsv, including 102L and the untranscribed cipher on 95R - blocker: not-attempted; not yet transcribed; workable with the same key. Eight 1687 passages read by WAINUT (wainut/, PR #65/#67) need the 158 machine-read key rows in wainut/r24_1687/key_rows_machine.tsv eye-checked before they count
 - States General parallel set NA 1.01.02 inv. 12588.120–125 - blocker: needs-physical-access; not digitised
 
 ## Escalation

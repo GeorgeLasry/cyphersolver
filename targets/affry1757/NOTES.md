@@ -1,5 +1,7 @@
 # d'Affry (The Hague) to Rouillé / Bernis, 1757-58: intercepted code letters
 
+Status: in progress (21 Oct 2026): the Fagel registers (WAINUT, PR #65) remove the outside blocker on the open codes; folding them into the key and re-measuring is the next step. The reading below stands until then.
+
 Status: read in part (5 Oct 2026, rerun 14 Oct 2026: 0.89 of the code groups read as sense by measure_sense.py, 8,282
 of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-up affry1757.html, 19 Sept 2026)
 
@@ -161,8 +163,8 @@ measure's own under-count of about an eighth.
 
 ## Remaining gaps
 
-- open code groups where more than one word fits (970, 869, 109/651, 731/708, 1191, 1020, 1082, 890, 431, 373, 724, 993, 426, 427 and single groups listed as [n] in read/) - blocker: open-codes; pooled over all letters 5 Oct 2026 (pool.py), no occurrence forces one value; the decipherments NA 1.01.50 inv. 221/223 would settle them (not digitised)
-- key values that read as nonsense in place (homophone clashes in key_M, e.g. 307, 1080), most in R1074 (0.75) and R1067 (0.79) - blocker: open-codes; would need the Lyonet key sheet or NA inv. 223 decipherments
+- open code groups where more than one word fits (970, 869, 109/651, 731/708, 1191, 1020, 1082, 890, 431, 373, 724, 993, 426, 427 and single groups listed as [n] in read/) - blocker: open-codes; pooled over all letters 5 Oct 2026 (pool.py), no occurrence forces one value. 21 Oct 2026: no longer blocked, the clear copies in NA 1.10.29 inv. 5186/5187 are digitised and wainut/settled.tsv settles 10 at H, 4 at M (869 still open); to fold into key_M and re-measure
+- key values that read as nonsense in place (homophone clashes in key_M, e.g. 307, 1080), most in R1074 (0.75) and R1067 (0.79) - blocker: open-codes. 21 Oct 2026: workable, wainut/key_conflicts.tsv lists 64 groups the registers contradict; each to be checked on the register scan before key_M changes
 
 Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
 R1073 and R1076 are measured on the DECODE parse (view.fix splits), not re-transcribed from the images; they already
@@ -176,6 +178,7 @@ measure 0.75-0.95, and their unread groups are the open codes above.
 - [x] print: De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked
 - [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)
+- [ ] clear-pages (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); aligned (0.780), not yet folded into the key
 
 ## Contribution by WAINUT (21 Oct 2026)
 
