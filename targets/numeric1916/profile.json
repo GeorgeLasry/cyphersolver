@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "target": "numeric1916",
+  "title": "Huang Xing and the Shanghai group, numeric telegrams in the 共密, 容密 and 辰密 codes, June–July 1916 (JACAR B03050089200–89500, B03050089900, B03050090000)",
+  "documents": [
+    {
+      "id": "gongmi",
+      "read": "read in part",
+      "shelfmark": "JACAR B03050089300, B03050089400, B03050089500, B03050090000: N17, N18, N23, N27, N30, N32, N33, N35, V4E (prefix 0364 1378 = 共密)",
+      "date": "10 June – 2 July 1916",
+      "year": 1916,
+      "country": "China",
+      "route": "Tokyo <-> Shanghai",
+      "language": "Chinese (classical telegraphic)",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": ["none"],
+        "source": "No decipherment on the forms; none of the texts found in Hsueh Chun-tu's edition of Huang Xing's drafts (黃興等電稿) or online (Dudout).",
+        "partial": false
+      },
+      "length": {
+        "tokens": 555,
+        "distinct": 330,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ct_gongmi.txt"
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "Digits transcribed by Codex and Claude, all re-read blind on the JACAR scans by Brice Dudout (19 Oct 2026); copied from his solver/numeric1916/data/messages.json.",
+        "image_quality": "fair",
+        "notes": "Measured with --drop-first; the two prefix groups are not counted. 3 groups carry an illegible digit. V4E includes framing repairs deduced from the decoding (his README)."
+      }
+    },
+    {
+      "id": "rongmi",
+      "read": "read in part",
+      "shelfmark": "JACAR B03050089200–89500, B03050089900: N02, N08, N11, N12, N14, N19a, N19b, N21, N24, N25, N28, N36, V4B, V4D (prefix 1369 1378 = 容密)",
+      "date": "8 – c. 30 June 1916",
+      "year": 1916,
+      "country": "China",
+      "route": "Tokyo <-> Shanghai",
+      "language": "Chinese (classical telegraphic)",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": ["none"],
+        "source": "No decipherment on the forms; not found in print or online (Dudout).",
+        "partial": false
+      },
+      "length": {
+        "tokens": 1306,
+        "distinct": 571,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ct_rongmi.txt"
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "First sheets and continuation sheets transcribed by Codex and Claude; re-read blind by Brice Dudout, except V4B (4 of 22 sheets re-read).",
+        "image_quality": "fair",
+        "notes": "5 groups carry an illegible digit here; he counts 6 illegible characters. V4B and V4D include framing repairs still to be checked on the scans."
+      }
+    },
+    {
+      "id": "chenmi",
+      "read": "read in part",
+      "shelfmark": "JACAR B03050089200, B03050089300, B03050089400: N05, N13, N16, N26 (prefix 6591 1378 = 辰密; N05 has none)",
+      "date": "3 – 13 June 1916",
+      "year": 1916,
+      "country": "China",
+      "route": "Tokyo -> Shanghai",
+      "language": "Chinese (classical telegraphic)",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": ["none"],
+        "source": "No decipherment on the forms; not found in print or online (Dudout).",
+        "partial": false
+      },
+      "length": {
+        "tokens": 239,
+        "distinct": 167,
+        "unit": "code groups",
+        "measured": true,
+        "file": "ct_chenmi.txt"
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "Transcribed with Claude, re-read blind by Brice Dudout; copied from his messages.json.",
+        "image_quality": "fair",
+        "notes": "First 12 digits of N16-1 compared by eye with the scan here (match)."
+      }
+    }
+  ],
+  "system": {
+    "types": ["code", "superencipherment"],
+    "summary": "Chinese telegraph code numbers disguised by three different keys, one per correspondent's code book: a tens-digit permutation and subtraction from 9000 (共密), per-place digit substitutions plus 0901 (容密), and a reordered code with pages counted backwards over zero-free numbers (辰密).",
+    "symbol_kind": "digits",
+    "digit_groups": {
+      "width": "4",
+      "separation": "contiguous"
+    },
+    "distinct_symbols": 10,
+    "diacritics": {"used": false},
+    "homophones": {"used": false},
+    "nomenclator": {"present": false},
+    "nulls": {"present": false},
+    "key_order": "not applicable",
+    "word_division": "none",
+    "notes": "The forms carry the digits in kanji numerals in a grid, read in columns right to left; the stream is cut into four-digit groups. The first two groups are a clear prefix naming the code book. Three different keys: by the writeup skill's one-key rule they could be split into three targets."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "None known: the texts are not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts, which has nothing between 8 and 20 June, nor online (Dudout, juin1916 page). 黃興集 and Li Yuanhong's correspondence not yet checked.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": ["images", "transcription"],
+    "attack": "ciphertext-only",
+    "human_role": "Contributed: Brice Dudout read the digits on the JACAR scans (blind re-reading), chose leads and criteria; Claude wrote the solvers, tests and log and proposed hypotheses; Codex made the first 共密 trials. The project checked the keys and reran his controls.",
+    "tools": ["bdudout/wenmi solver/numeric1916 (verify.py, search_gongmi.py, search_rongmi.py, search_chenmi.py)", "targets/numeric1916/decode.py"],
+    "models": ["Claude Opus 5.5 (mainly; contributor's sessions)", "OpenAI Codex (early 共密 trials; version not supplied)"]
+  },
+  "solution": [
+    {
+      "date": "2026-10",
+      "kind": "transcription",
+      "what": "Contributor: forms read in columns right to left, four-digit groups; first sheets of every telegram, then continuation sheets (about 590 容密 groups); all digits re-read blind by Brice Dudout except 18 of V4B's 22 sheets.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10",
+      "kind": "solver",
+      "technique": ["exhaustive search", "language-model scoring", "key-structure hypothesis"],
+      "what": "Contributor, 共密: for each of the 10,000 constants K the optimal tens permutation by exact assignment, scored by a CTC unigram/bigram model; K = 9000 and φ = 9761405283.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10",
+      "kind": "solver",
+      "technique": ["simulated annealing", "language-model scoring"],
+      "what": "Contributor, 容密: 90 first-sheet groups too few; on about 590 groups, four per-place digit substitutions annealed into readable text.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10",
+      "kind": "hypothesis",
+      "technique": ["key-structure hypothesis", "repeat/pattern analysis"],
+      "what": "Contributor, 容密: 借甸 (3949) for 借款 (2949) exactly when the hundreds gave no carry revealed an additive; exact key (tables + 0901 with carries) computed on N02, N08, N11, N12; rule 90 = 00 added from the groups beginning 90.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10",
+      "kind": "solver",
+      "technique": ["simulated annealing", "language-model scoring", "key-structure hypothesis"],
+      "what": "Contributor, 辰密: 共密 and 容密 keys failed; permuted-page + permuted tens/units model annealed on N13, N16, N26 (201 groups); exact assignment stuck in false optima.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10",
+      "kind": "hypothesis",
+      "technique": ["key-structure hypothesis"],
+      "what": "Contributor, 辰密: the page table found follows the countdown of numbers without a zero, then imposed; 劈 for 力 and 滠 for 灰, both from groups ending 9, gave the rule units 9 = 10.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10",
+      "kind": "verification",
+      "technique": ["statistical test", "language-model scoring"],
+      "what": "Contributor: 容密 key from four telegrams reads the other ten unrefitted; 辰密 N05 (not in the search, no prefix) reads through; N16 ends 灰 matching its date; V4B, V4D, V4E never used to find the keys read unchanged; names fit June 1916 office-holders.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "verification",
+      "technique": ["statistical test", "language-model scoring"],
+      "what": "Project: his verify.py rerun with python -I: 32/32 published raw texts reproduced; scores 共密 3.492, 容密 3.179, 辰密 3.773 against maxima of 200 random keys (-1.450, -1.665, -1.588) and 200 digit shuffles (-1.224, -1.455, -1.177).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "control",
+      "technique": ["exhaustive search", "simulated annealing", "language-model scoring"],
+      "what": "Project: his search_gongmi.py recovers K = 9000 and φ exactly from scratch (3.492; shuffled nulls -1.10, -1.07, -1.09); search_rongmi.py gives K = 0900 with hundreds and tens exact, units equivalent up to the carry, thousands off on 7/8/9 (2.608 vs 3.179 for the published key; nulls -1.10, -1.19).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "verification",
+      "technique": ["key matching"],
+      "what": "Project: own decoder written from the stated keys (decode.py, Unihan kTaiwanTelegraph table from targets/sunyatsen/tw.csv) applied to his re-read digits: 2472/2472 groups and 32/32 telegrams identical to his raw texts (共密 555/555, 容密 1306/1306, 辰密 239/239).",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "class": "read in part",
+    "key": "recovered",
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "All three keys were found by key searches scored with a telegraph-code language model, without cribs or plaintext (Dudout's method pages); only the form dates served as checks.",
+    "contribution": ["transcription", "key recovered"],
+    "fraction_read": 0.9238,
+    "fraction_read_method": "estimated",
+    "fraction_read_source": "Contributor's counts (email 19 Oct 2026): 510/555 + 1198/1306 + 232/239 = 1940/2100 cipher groups read without doubt; doubtful and illegible counted as unread. The group count 2100 is measured here.",
+    "codes_open": {"open": 0, "total": 0, "tokens_open": 0},
+    "verification": ["statistical test", "historical consistency", "key confirms", "independent verification"],
+    "validation": {"date": "2026-10-20", "verdict": "not applicable", "notes": "plaintext is Chinese (telegraph code numbers); no letter model in lang/. The contributor's verify.py random-key and digit-shuffle nulls were rerun instead (2026-10-20)."},
+    "gaps": [
+      {"item": "共密: 45 doubtful characters", "blocker": "illegible", "detail": "Uncertain digit readings or rare codes on the police copies, marked on his pages."},
+      {"item": "容密: 102 doubtful and 6 illegible characters", "blocker": "illegible", "detail": "Uncertain digits; recurring anomalous codes (繒 for 生, 盻 for 盼) kept as marked."},
+      {"item": "辰密: 7 doubtful characters", "blocker": "illegible", "detail": "Four single-digit probable readings, 一不 for 不一, 盻 for 盼."},
+      {"item": "V4B: 18 of 22 sheets not yet re-read blind; framing repairs in V4B, V4D, V4E", "blocker": "needs-physical-access", "detail": "Contributor's re-reading of the JACAR scans, not done here."},
+      {"item": "N07 (prefix 共密), N06 (和密), N09 (乾密), N01, N03", "blocker": "no-key-material", "detail": "N07 does not read under the 共密 key; the others are other books; only first sheets transcribed, no plaintext."}
+    ],
+    "notes": "Contributed result checked here, not redone: the keys decode his digits into his texts exactly and his controls rerun as reported. Three different keys in one target, against the one-key rule.",
+    "provenance": "contributed",
+    "credits": [
+      {"who": "dudout", "role": "new cipher with solution", "note": "Three numeric telegraph codes of June–July 1916 (共密, 容密, 辰密): digits re-read on the JACAR scans, keys recovered with Claude (mainly Opus 5.5), translations and historical context", "date": "2026-10-19", "source": "https://bdudout.github.io/wenmi/en/gongmi.html; https://bdudout.github.io/wenmi/en/rongmi.html; https://bdudout.github.io/wenmi/en/chenmi.html; https://bdudout.github.io/wenmi/en/juin1916.html; https://github.com/bdudout/wenmi/tree/main/solver/numeric1916; email 19 Oct 2026", "published": true}
+    ]
+  }
+}

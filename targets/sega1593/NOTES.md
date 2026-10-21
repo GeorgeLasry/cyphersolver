@@ -108,3 +108,29 @@ montage labels · `soft_decode.py`, `decode_line.py`, `eval_soft.py` decoders ·
 `fr6_period.pkl` period LM · `lines/*_g2.json` boxes · `tmp/` renders (refsheet, montages, f. 177 strips). The
 previous session's cluster/EM scripts (`anneal_poly.py`, `em_*.py`, `cluster*.py`, `control_*`) failed their
 controls and are kept for the record.
+
+## Outside readings reported 19 Oct 2026 (Brice Dudout's email)
+
+Nothing below has been checked here yet.
+
+- **Desportes, ff. 186 and 189: read by Paolo Rosson** (contributors.json `rosson`), first reading v0.2 of 1 Oct
+  2026, with Claude Opus 5.5: https://github.com/pangoleen/desportes-1593. Tomokiyo's League key, retrained on an
+  alignment of f. 176 with its decipherment f. 177 (6,794 labelled signs). He reports 98.5 % of signs and 95.6 % of
+  letters correct on held-out lines. It also reads BnF fr. 4715 f. 61 in the same cipher, and credits this folder's
+  September attempt and labels as its starting point. His page notes that Tomokiyo also published on 3 Oct 2026.
+  This is the route "What would reopen it" above asked for (a larger aligned training set from f. 177). It should be
+  checked and written up as a contributed result.
+- **no. 8 (f. 22r–v, Paris, 15 May 1593)** and **no. 6 (ff. 12–17, the Curia's instruction to Sega, duplicate of
+  14 May 1593, c. 14,500 figures)**: Brice Dudout's candidate readings, still partial, are at
+  https://bdudout.github.io/europe-chiffree/en/sega-1593.html (CC BY 4.0). no. 8 is a homophonic substitution
+  with a small nomenclator: Z separates words, and D, N and X are nulls. It reports on the Suresnes conference.
+  no. 6 is a different cipher: the figures 3 and 8 are nulls, letters are pairs of figures, and nomenclator numbers
+  are framed by nulls (426 Navarra, 017 Infanta). It argues against a new excommunication and against the
+  Infanta's claim under the Salic law, and it fears a "finta conversione". His second review of 20 Oct puts the
+  reading breaks under 0.5 % of figures. **Prior work:** Tomokiyo, "Identifying Italian ciphers from
+  continuous-figure ciphertexts (1593)", *Cryptologia* 43(1), 2019, 23–46, doi:10.1080/01611194.2018.1503207,
+  gives the segmentation and a preliminary decipherment of three 1593 continuous-figure texts, which probably
+  include no. 6. Neither Brice nor this project has read it. A write-up waits on that comparison and on his article.
+- **Mauclerc → Creil** (fr. 3983 f. 268, fr. 3984 f. 33, fr. 3985 f. 20): the letters carry contemporary
+  interlinear decipherments, and the register fr. 3983 f. 140r summarises them in clear. So fr. 3985 no. 7 was read
+  at the time.

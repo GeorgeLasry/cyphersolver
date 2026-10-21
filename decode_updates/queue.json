@@ -11477,6 +11477,46 @@
      "note": "Direction correction from the heading of Add MS 4200 f.98 and Tomokiyo’s source list: Barrière to Condé, 15 September 1654, not the reverse. The cipher remains open; manuscript and candidate key images retrieved for later transcription. See research/catalogue_review_20261020."
     }
    }
+  },
+  "breves1610": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/breves1610.html",
+   "key": {
+    "decode": "R2077 (Henri IV-Brèves key; the table is BnF fr. 3462, Gallica btv1b9058227h view 112)"
+   },
+   "cite": "B. Dudout, Ciphered Europe, https://bdudout.github.io/europe-chiffree/en/marie-de-medicis.html (CC BY 4.0), Oct 2026",
+   "fields": {},
+   "records": {
+    "R2075": {
+     "decode_status": "Not decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by Brice Dudout (Oct 2026) with the Henri IV-Brèves key, BnF fr. 3462 view 112; checked by cyphersolver 20 Oct 2026. Two passages, f. 17r ll. 22-24; acompagnez/acompagnee one sign undecided; barred 86/90/72 values from S. Tomokiyo.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R2075.txt"
+      }
+     ],
+     "sent": false
+    },
+    "R2076": {
+     "decode_status": "Not decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Deciphered by Brice Dudout (Oct 2026) with the Henri IV-Brèves key, BnF fr. 3462 view 112; checked 20 Oct 2026. f. 19r ll. 5-7; two signs of 'recognoissant' conflict with the table; barred 72/79 values from S. Tomokiyo.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R2076.txt"
+      }
+     ],
+     "sent": false
+    },
+    "R2077": {
+     "decode_status": "Decrypted",
+     "proposed": "Decrypted",
+     "note": "Correction to the note: the key is in BnF Français 3462 (Gallica btv1b9058227h view 112), not 3642; confirmed by S. Tomokiyo to B. Dudout, Oct 2026. The same key deciphers R2075/R2076.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {

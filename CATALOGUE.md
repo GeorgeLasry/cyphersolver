@@ -179,6 +179,7 @@ Feuquières and Catinat); **B** partial key in print (Tomokiyo) or known family;
 
 ## Read or resolved here, and removed
 
+- **25 — Marie de Médicis to Savary de Brèves, 15 Sept and 10 Nov 1610 (BnF fr. 3789; R2075/R2076)**: deciphered by Brice Dudout with the Henri IV–Brèves key, BnF fr. 3462 view 112 (not 3642); checked here, 95 of 98 glyphs supported. [Write-up](https://dbourdeau.github.io/cyphersolver/breves1610.html).
 - **190 — Two Sforza letters of 4 May 1446: the reply to Zorzo del Maino (BnF italien 1583 f. 68; DECODE R7898) and Amidani to Sforza (f. 70, on R7899)**: George Lasry recovered the key from the ciphertext with CTTS, refined by Astra and Fable 5.1 (PR #60), 20 October 2026; 721 of 827 cipher signs give sense, 14 sign classes and the f. 70 signature open. [Write-up](https://dbourdeau.github.io/cyphersolver/it1583.html).
 - **298 — Guidi di Bagno to the Secretariat, 5 January 1652 (R5622)**: key recovered from ciphertext-only by George Lasry, 20 October 2026. [Write-up](https://dbourdeau.github.io/cyphersolver/bagno1652.html).
 - **151 — Rodrigo Niño to Charles V, Naples, 19 March 1522 (BNE MSS/20213/27; DECODE R1182)**: George Lasry recovered the key with CTTS cryptanalysis; eight lines deciphered, one sign class ambiguous. Related prior published system acknowledged; exact-letter coverage unconfirmed. [write-up](https://dbourdeau.github.io/cyphersolver/nino1522.html)
