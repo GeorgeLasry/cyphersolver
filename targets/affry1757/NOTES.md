@@ -1,6 +1,6 @@
 # d'Affry (The Hague) to Rouillé / Bernis, 1757-58: intercepted code letters
 
-Status: in progress (21 Oct 2026): 58 register values checked on the scans and folded into key_X.tsv; 0.913 of the groups now read as sense (8,492 of 9,306; undeciphered letters 0.860). Still open and workable: the register's word for 151 valueless groups (wainut/open_groups.tsv), and the groups that take two values (section "Register values folded into the key" below).
+Status: in progress (21 Oct 2026): 144 register values checked on the scans and folded into key_X.tsv in two passes; 0.941 of the groups now read as sense (8,761 of 9,306; the ten letters with no contemporary decipherment on DECODE 0.906). Below the 95% read bar. Open: about 45 valueless groups where the register piece is noise, a single syllable or conflicts, and the groups that take two values (sections "Register values folded into the key" below).
 
 Status: read in part (5 Oct 2026, rerun 14 Oct 2026: 0.89 of the code groups read as sense by measure_sense.py, 8,282
 of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-up affry1757.html, 19 Sept 2026)
@@ -222,15 +222,58 @@ values were taken from the same registers. The sense measure is not.
 `read/R1073.md` carries the register text of 42R as read here and the corrections it makes; `read/R1068.md` the
 181L text. The other read/ files are not rewritten.
 
+## Second pass: groups without a value (21 Oct 2026)
+
+`wainut/open_groups.tsv` lists 151 groups with no key value and the register piece aligned to each occurrence. 20 had
+been valued in the first pass; the other 131 were printed with their context (register and key, four groups either
+side) and with every Lyonet occurrence. Two more register scans were read for them (5186 63R and 248R).
+
+Adopted, 86 groups, each seen on a scan (evidence in `key_X.tsv`): 17 or, 40 extrême, 53 dernier, 57 conformément, 84
+content, 97 quel, 127 extrême, 145 informations, 154 raison, 162 britannique, 175 x, 188 fortifications, 198 nous, 214
+jeudi, 215 absolu, 258 ignore, 278 huit, 279 amirauté, 285 le comte, 297 attaques, 299 judice, 319 avis, 324 volonté,
+338 cham, 345 chiffré, 365 cor, 370 tour, 379 voyez, 385 possible, 391 Madrid, 393 son, 409 Allemagne, 418 président,
+420 honneur, 461 vant, 467 gu, 499 oeuvr, 506 directement, 510 établi, 511 exposer, 545 flo, 555 Berlin, 558 frais,
+560 somme, 567 qu'il, 608 autre, 615 Amérique, 634 fait, 643 Wassenaer, 649 un, 667 six, 678 tion, 680 finiront, 706
+foi, 718 marque, 719 donné lieu, 741 question, 756 toutes, 777 défiance, 782 croirois, 783 ts, 798 toutes, 802
+concili, 803 consent, 817 mot, 846 convoqu, 854 partie, 871 vingt, 880 mais, 897 marqu, 904 tée, 969 politiques, 977
+quand, 995 doute, 1006 non seule, 1029 au, 1030 x bri, 1031 arme, 1040 teau, 1074 sujet, 1086 esprits, 1121 assisté,
+1157 vrai, 1172 rs, 1190 sont, 1196 donnerois. Graded H where two clean occurrences or Lyonet agree (409, 667, 741,
+756, 897), M otherwise; most rest on one occurrence. Lyonet reads none of them otherwise except one stray occurrence
+each for 53 (voy) and 154 (ne).
+
+Not adopted, 45 groups: register piece is a single letter, a syllable split at a segment edge, or noise (4, 28, 69,
+103, 108, 118, 131, 178, 223, 256, 290, 369, 381, 430, 462, 498, 528, 636, 801, 804, 822, 859, 883, 953, 957, 1049,
+1161, 1195, 1197); occurrences disagree (63 observations/vez, 65 seule/-ment, 114 bonne/-r, 184 satisfai/égard, 205
+London/e, 311, 318, 563 la province/la, 869 plans/il y a, 978 10 and 18); Lyonet disagrees or the register gives a
+name the cipher spells otherwise (94, 330 Lyonet aussi four times, 386, 387, 434, 217).
+
+Re-measured (measure_sense.py, threshold -3.0):
+
+| letter | key alone (14 Oct) | first pass | second pass |
+|---|---|---|---|
+| R1072 | 0.888 | 0.935 | 0.962 |
+| R1076 | 0.819 | 0.846 | 0.876 |
+| R1073 | 0.885 | 0.939 | 0.942 |
+| R1064 | 0.808 | 0.828 | 0.852 |
+| R1067 | 0.791 | 0.851 | 0.920 |
+| R1068 | 0.750 | 0.750 | 0.750 |
+| R1054 | 0.949 | 0.946 | 0.968 |
+| R1070 | 0.905 | 0.902 | 0.965 |
+| R1074 | 0.747 | 0.775 | 0.894 |
+| R2067 | 0.792 | 0.853 | 0.877 |
+| ten letters, no decipherment on DECODE | 0.824 | 0.860 | 0.906 (5,275/5,820) |
+| whole code, Lyonet letters read | 0.890 | 0.913 | 0.941 (8,761/9,306) |
+
+Register agreement (`wainut/align_register.py`): 4,651 of 5,719 keyed groups, 0.813 (partly circular, as before).
+
 ## Remaining gaps
 
-- 151 groups without a value for which the register gives a word (`wainut/open_groups.tsv`, e.g. 409 Allemagne,
-  803 consent-; 664, 776 and 774 are now valued) - blocker: not-attempted; most seen once, each needs a look at its scan and at Lyonet's
-  letters before it is adopted
+- 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker:
+  open-codes; the register piece is noise or the occurrences disagree
 - groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895
   devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: open-codes; one value per group
   is all key_X can hold, so the measure under-reads these
-- register pages other than the scans listed above (5186 63R, 248R-249L, 256L) were not read here; WAINUT's
+- register pages other than the scans listed above (5186 249L, 256L) were not read here; WAINUT's
   Gemini transcription of them is unchecked - blocker: not-attempted
 
 Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
@@ -246,7 +289,7 @@ measure 0.75-0.95, and their unread groups are the open codes above.
 - [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)
 - [x] clear-pages (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -> 0.913)
-- [ ] the register's words for the 151 valueless groups (wainut/open_groups.tsv) not yet adopted
+- [x] the register's words for the valueless groups (wainut/open_groups.tsv): 86 adopted after a scan check, 45 left open (second pass, 21 Oct 2026; 0.913 -> 0.941)
 
 ## Contribution by WAINUT (21 Oct 2026)
 
