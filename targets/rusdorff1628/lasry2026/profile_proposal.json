@@ -1,0 +1,60 @@
+{
+ "note": "Proposed changes to targets/rusdorff1628/profile.json for DECODE R4336 and R4337 (George Lasry contribution). R4333-R4335 unchanged.",
+ "documents": [
+  {
+   "id": "R4336",
+   "read": "read",
+   "shelfmark": "Riksarkivet, Oxenstiernska samlingen (E 701, Ser. B, Rusdorff), DECODE R4336 (Riksarkivet_Rusdorff_Oxenstierna_1628-4)",
+   "date": "1625-02-15/25",
+   "year": 1625,
+   "country": "England",
+   "route": "Johann Joachim von Rusdorff, London -> Axel Oxenstierna",
+   "language": "Latin",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"], "source": "none", "partial": false},
+   "length": {"tokens": 183, "unit": "mixed", "measured": true},
+   "transcription": {"by": "human (project)", "image_quality": "good"}
+  },
+  {
+   "id": "R4337",
+   "read": "read in part",
+   "shelfmark": "Riksarkivet, Oxenstiernska samlingen (E 701, Ser. B, Rusdorff), DECODE R4337 (Riksarkivet_Rusdorff_Oxenstierna_1628-5)",
+   "date": "1625-02-26 (old style); image 3 begins an undated further letter",
+   "year": 1625,
+   "country": "England",
+   "route": "Johann Joachim von Rusdorff, London -> Axel Oxenstierna",
+   "language": "Latin",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {"location": ["none"], "source": "none", "partial": false},
+   "length": {"tokens": 255, "unit": "mixed", "measured": true},
+   "transcription": {"by": "human (project)", "image_quality": "good"}
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator"],
+  "summary": "Homophonic letter table plus a one-part nomenclator. 24 letters with three two-digit homophones each, 24 apart (A = 16, 40, 64); consecutive letters 4 apart in runs of six (A-F 16-36, G-M 17-37, N-S 18-38, T-Z 19-39). 23 serves for U and V; V (27), Y (35), Z (39) unused. Three-digit codes 187-760 in alphabetical order of their meanings, with Latin endings written beside them.",
+  "symbol_kind": "digits",
+  "nomenclator": {"present": true, "kinds": ["common words", "names", "places", "titles"]},
+  "key_order": "alphabetical",
+  "word_division": "kept"
+ },
+ "outcome_for_these_documents": {
+  "method": "key recovered from ciphertext-only",
+  "key": "recovered",
+  "fraction_read": 0.99,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "438 cipher tokens: 376 letter signs all assigned; 62 three-digit codes, 36 confident, 24 tentative, 2 unknown (628, 701).",
+  "verification": ["historical consistency", "key confirms"],
+  "provenance": "contributed",
+  "credits": [
+   {"who": "lasry", "role": "solution"},
+   {"who": "lasry", "role": "transcription"}
+  ],
+  "gaps": [
+   {"item": "R4337, codes 628 and 701", "blocker": "open-codes", "detail": "alphabetical ranges Pal-Pap and Prop-Regn; one occurrence each"},
+   {"item": "R4333-R4335", "blocker": "not-attempted", "detail": "not covered by this contribution"}
+  ]
+ }
+}
