@@ -168,3 +168,164 @@ measure 0.75-0.95, and their unread groups are the open codes above.
 - [x] print: De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked
 - [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)
+
+## Contribution by WAINUT (21 Oct 2026)
+
+WAINUT (a Dutch AI company, https://github.com/WAINUTAI) adds one source for the ten letters of this folder that have
+no Lyonet sheet among the DECODE images: the Fagel registers in the Nationaal Archief, which hold their contemporary
+decipherments. This section says where they are, how far this folder's key agrees with them, and which open groups,
+key values and readings they settle or contradict. Nothing above is changed: key, transcriptions, readings and
+profile are as they were. Where the registers disagree with a value, the evidence is given and the decision is left
+to you. The files are in `wainut/`.
+
+**How the work was done.** Google Gemini (gemini-4-argon) transcribed the register pages line by line from the NA's
+full-resolution IIIF images (`wainut/register_clear.txt`). The alignment and the analysis were done with AI
+language-model agents. The transcription of inv. 5186 scans 13R, 14L, 42R, 148R, 149L and 181L and of inv. 5187
+scans 14R, 15L and 15R was checked line by line against the scans, and every register word quoted in this section is
+on one of those pages. The other register pages are unchecked model transcriptions; only the automatic alignment uses
+them.
+
+**1. The deciphered letters are digitised in clear.** "Prior work" and "Remaining gaps" above say that the contemporary
+decipherments survive in NA 1.01.50 inv. 221/223, which are not digitised. The registers of Fagel's papers, NA
+1.10.29 (Archief Fagel) inv. 5186 (1757, 399 scans) and inv. 5187 (1758, 225 scans), are digitised. They are clerks'
+copies, in clear, of d'Affry's letters in date order, each with a margin heading "Dat: ..." and "A: à R:" (or
+"A: à B:"), most with the letter's number. All ten letters are there:
+
+| Record | Letter | Register (NA 1.10.29) | Viewer, first scan |
+|---|---|---|---|
+| R1072 | No 123, 6 Jan 1757 | inv. 5186 scans 13R-14L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0013 |
+| R1076 | No 124, 7 Jan 1757 | inv. 5186 scans 16R-17L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0016 |
+| R1073 | No 133, 25 Jan 1757 | inv. 5186 scan 42R | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0042 |
+| R1064 | No 136, 1 Feb 1757 | inv. 5186 scans 62R-63R | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0062 |
+| R1067 | No 161, 1 Apr 1757 | inv. 5186 scans 148R-150L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0148 |
+| R1068 | No 172, 26 Apr 1757 | inv. 5186 scan 181L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0181 |
+| R1054 | 19 Jul 1757, to B. | inv. 5186 scans 248R-249L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0248 |
+| R1070 | No 210, 22 Jul 1757, to B. | inv. 5186 scans 255R-256L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5186/file/NL-HaNA_1.10.29_5186_0255 |
+| R2067 | 17 Jan 1758, to B. (No 283 above) | inv. 5187 scans 14R-15L | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5187/file/NL-HaNA_1.10.29_5187_0014 |
+| R1074 | its enclosure, "Extrait de la Lettre de Mr. Astier", margin "Du 11. Janvier 1758" | inv. 5187 scans 15L-15R | https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5187/file/NL-HaNA_1.10.29_5187_0015 |
+
+A scan number is the NA file number (`NL-HaNA_1.10.29_<inv>_<scan>`); L and R are the left and right page of the
+opening. The registers also have entries for the letters whose Lyonet sheets are in `plain/` (for example No 171,
+R1069); we did not align those.
+
+The content of all ten letters was therefore known in clear in 1757-58, as it was for the eight Lyonet letters.
+
+**2. Agreement of the key with the registers.** `wainut/align_register.py` aligns each ciphertext (`transcr/R*.txt`
+where it exists, otherwise `cipher_U.txt` with view.py's split of run-together groups) with the register text of the
+same letter, using this folder's key as `measure_sense.py` loads it (714 groups). A keyed group counts as matching
+when its value stands at that point of the register text. The control is the same alignment with the key's values
+shuffled among its groups (10 seeds); the denominator is all keyed groups in both cases.
+
+| Record | groups | keyed groups | matching the register | share | shuffled keys: mean (max) |
+|---|---|---|---|---|---|
+| R1072 | 555 | 530 | 438 | 0.826 | 0.140 (0.170) |
+| R1076 | 403 | 386 | 214 | 0.554 | 0.126 (0.153) |
+| R1073 | 312 | 305 | 247 | 0.810 | 0.129 (0.154) |
+| R1064 | 1,243 | 1,201 | 996 | 0.829 | 0.153 (0.180) |
+| R1067 | 1,481 | 1,399 | 1,119 | 0.800 | 0.152 (0.172) |
+| R1068 | 60 | 55 | 45 | 0.818 | 0.096 (0.145) |
+| R1054 | 372 | 364 | 319 | 0.876 | 0.144 (0.206) |
+| R1070 | 400 | 386 | 229 | 0.593 | 0.134 (0.148) |
+| R2067 | 457 | 434 | 334 | 0.770 | 0.133 (0.171) |
+| R1074 | 537 | 494 | 392 | 0.794 | 0.148 (0.170) |
+| all ten | 5,820 | 5,554 | 4,333 | 0.780 | |
+
+R1076 and R1070 are low because their first 157 and 139 groups get no register text. Those cipher pages begin in
+mid-letter with a passage that the register has later in the same entry, and the alignment only runs forward. Among
+the keyed groups that are aligned, 214/232 (0.922) of R1076 and 229/251 (0.912) of R1070 match; these two figures
+describe only the aligned part of those letters (about 60%), not the whole letter. Many of the other
+mismatches are the clerk's spelling and abbreviation (Roy for roi, "Sa Maj:", "Consr."), which are not key errors.
+
+**3. Open groups that the registers settle** (`wainut/settled.tsv`; the script prints every occurrence). Of the 16
+groups listed above as open (5 Oct 2026), 14 have at least two occurrences where the register has the same word.
+Ten of them have no conflicting occurrence and are graded H in `settled.tsv`; 970, 1191, 890 and 431 are graded M,
+because one occurrence conflicts or some aligned pieces sit at a segment edge (for 1191 only the two R1074 pieces
+are clean):
+
+- 970 projets: R1072 three times, "sur les Projets de l'Angleterre", "des Projets des deux Proprietaires", "tous les
+  Projets proposés aux Ministres" (13R).
+- 109 lundi and 651 mardi: R1067 "qu'il comptoit Lundi ou Mardi au plus tard" (148R) and "avant Lundi ou Mardi"
+  (149L).
+- 731 là dessus: R1067 "qu'il étoit là dessus impossible" (148R), and R1076.
+- 708 impos: R1067 "impossible" (148R); R1072 "si c'est un Imposteur" (14L).
+- 1191 sieur, written Sr: R1074 "le Sr Macdonald", "du Sr Macdonald" (5187 15R).
+- 724 mes: R1067 "dans les termes", "les Yeux en larmes" (148R); with 1191, "Mrs. Pels" in R2067 (5187 14R) and
+  "Messieurs" in R1067.
+- 1082 ers: R1072 "des quartiers" (13R); R2067 "chez des Banquiers" (5187 14R).
+- 373 voy: R1072 "Vous voyez" (14L); R1054 "Voyage".
+- 993 doit: R1067 three times, one of them "ne me répondoit pas" (148R).
+- 426 pouvoir: R1067 "pouvoir me procurer" (148R), "son Credit et son pouvoir" (149L).
+- 427 mauvaise: R1067 twice.
+- 890 détail: R1072 "un detail des quartiers" (13R), and R1064.
+- 431 étrang: R1072 "les Cours étrangères" (13R), and R1064.
+
+Two of these also have one occurrence that does not fit: 970 in R1074, where the register has "faire entrer en
+France" (5187 15L), and 431 once in R1067. 1020 après has one clean occurrence (R1072 "Aprés bien des debats", 13R);
+its R1067 occurrence stands where the register has "Aprés cette lecture" (148R), but the alignment splits the word.
+869 stays open: it stands at "de tous les Plans de Campagne" in R1072 (13R), but in R1074 where the register has
+"s'il y a moyen" (5187 15R).
+
+Also: 1022 is very probably as (R2067 "Mr. Astier", "le Juif Boas", 5187 14R; R1074 "Mr. Astier", 15L), but the
+aligned pieces are noisy ("ras", once "e"), so it is graded M. 307 has both values, forc
+five times and pen twice ("recompenseroit", 13R; "une Pension", 14L). 1080 is not settled: R1074 opens "Extrait de la
+lettre de M. [1022]tier du [1080] [110] ...", and the register's margin has "Du 11. Janvier 1758", but the alignment
+gives the group no text.
+
+**4. Key values the registers contradict.** `wainut/key_conflicts.tsv` lists the 64 keyed groups that disagree with
+the register at least twice and more often than they agree. Many are spelling or abbreviation (premiers/premier,
+roi/Roy, pensionnaire/Pensionaire, s.a.r. written out as "Son Altesse Royale"). Where the register has another word
+at every occurrence:
+
+- 675, key deux: vingt. R1073 "vers le vingt du Mois" (42R); R1074 "un Emprunt de Vingt Millions" (5187 15L); in
+  R1067 it stands at the date "du 28" (148R).
+- 1106, key succès: froid. R1073 "avec le même froid" (42R); R1067 "J'ai trouvé Mr le Pensionaire fort froid" (148R).
+- 762, key égard: occasion. R1073 "à cette occasion voir le Consr. Pensionaire" (42R); also in R1064.
+- 1151, key faire: parce que. R1073 "parce qu'il m'a repondu" (42R); R1067 "à Bruxelles parceque si la Navigation"
+  (149L, where the aligned piece is partial); also in R1064.
+- 556 ssi: contr- (contre three times, contraire twice); 116 pas: traité (3); 923 roit: ceux (3); 960 f: vu (3);
+  1039 lies: et (7). These come from the alignment; we did not check them on the scans.
+
+`wainut/open_groups.tsv` gives the register's word for 151 groups that have no value, for example 664 vendredi (R1068
+"Il a passé Vendredi au Soir", 181L, and R1064), 94 la Haye (R2067 "étoit à la Haye", 5187 14R), 776 infraction
+(R1073, 42R), 409 Allemagne, 803 consent-. A value seen once rests on the alignment alone and needs a look before it
+is adopted.
+
+**5. Readings that the registers correct.** In `read/R1073.md` (No 133; register 5186 42R):
+
+| read/R1073.md | register |
+|---|---|
+| "je leur [413]ois", "Je lui ai [413]" | "je leur declarois", "Je lui ai declaré" (413 is déclar-) |
+| "comme une [776] à la neutralité" | "comme une infraction à la Neutralité" |
+| "à cet {égard} voir le {Pensionnaire}" | "à cette occasion voir le Consr. Pensionaire" |
+| "les verroit avec {peine} leur s'engag{er}" | "les verroit avec douleur s'engager"; the key itself gives do-u-leur (599 527 399) |
+| "avec le même {succès}" | "avec le même froid" |
+| "Je suis [662 persuadé?]" | "je suis Seur" |
+| "cette {aug}[1021]mentation" | "cette Operation" |
+| "vous ra(?) vous [774] où {elle} est de {res}ter [507]ment [les] premiers" | "confirmera la Resolution ou Elle est de rester exactement Neutre" |
+| "ver-bi-le[675] du [5?] {mois} prochain, que l'que be-he-n" | "vers le vingt du Mois prochain. Il semble que l'Abbé Senski" (the name is not clear on the scan) |
+| "ne fournit pas des nouvelles" | "ne fournit plus de nouvelles" |
+| "Il faut droit voir si cela ne va pas lon[g]" | "Il faudroit voir si celà ne va pas mieux" |
+
+In `read/R1068.md` (No 172; register 5186 181L) the register reads: "Il a passé Vendredi au Soir un Courrier de Vienne
+à Londres. Vous savez mieux que moi ce dont il est chargé. Mr. de Colloredo doit faire passer à Mr. Starrenberg ce
+qu'on lui aura repondu." So 664 is Vendredi (the reading has "[664 hier?]"), 806 is mieux as the reading proposed,
+and the recipient is Starrenberg (Starhemberg), not d'Arenberg. With the key the cipher gives "m d a re m be r g"; the
+register implies 982 = st (key d) and 245 = n (key m), each from this one occurrence.
+
+In `read/R2067.md` and `read/R1074.md` (registers 5187 14R and 15L-15R): "M. [1022]tier" is "Mr. Astier"; "J'ai eu
+hier encore [223] i of [520] [1022]" is "J'ai eu encore hier le Juif Boas"; "[724] Sr [pe l s]" is "Mrs. Pels"; "étoit
+à [94]" is "étoit à la Haye"; "le [1191 {Sr}?] Mac{do}na{ld?}" is "le Sr Macdonald".
+
+**Caveats.** The registers are clerks' copies: they abbreviate and sometimes word things differently from the cipher,
+so a mismatch is not always a key error. The alignment is automatic, and a piece at a segment edge can be a syllable
+too long or too short. The ciphertexts are this folder's (`transcr/`, otherwise `cipher_U.txt`); we did not re-check
+them against the KHA images. The register pages not listed under "How the work was done" are unchecked model
+transcriptions.
+
+**Files** (`wainut/`): `register_clear.txt` (register text of the ten letters, 20 pages); `align_register.py`
+(Python 3 standard library and numpy; reads `../key_M.json`, `../overrides.json`, `../key_X.tsv`,
+`../read/*_new.tsv`, `../transcr/` and `../cipher_U.txt`; run it from `wainut/` with `python align_register.py`,
+about 30 s; it prints every number above and writes the files below); `align/R*.tsv` (each group, its key value, the
+register piece and the status); `pool.tsv` (every group over all ten letters); `key_conflicts.tsv`;
+`open_groups.tsv`; `settled.tsv` (written by hand from the script's output). No images: the scans are on the NA viewer
+at the links above.

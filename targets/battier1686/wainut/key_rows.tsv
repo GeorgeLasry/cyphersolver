@@ -1,0 +1,33 @@
+# Rows of the key NA 1.10.29 inv. 1209 used in the WAINUT contribution that are not in ../key/dict/*.tsv, plus the two rows
+# behind the 11:719 note. Same token<TAB>value<TAB>source layout as ../key/dict/*.tsv (source = key scan, side, column),
+# with two more columns. ij is written y, as in ../key/dict.
+# checked: scan = checked against the key scan image in this work; machine = from a single machine read of the whole key
+# column (Google Gemini, gemini-4-argon), not checked row by row.
+# use: reading = used in the 67R lines 1-3 reading; open = an alternative, not adopted; control = only used for the
+# rotated-key control in check_67R.py; note = the 11:718/11:719 rows.
+# NA viewer: https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/1209/file/NL-HaNA_1.10.29_1209_00NN (NN = scan)
+token	value	source	checked	use
+11:695	soo seer	key s59L1	scan	reading
+6:490	jnkomen	key s34R1	scan	reading
+5:273	geduyrigh	key s27R3	scan	reading
+11:721	soigneuslyke	key s59L1	scan	reading
+3:126	borse	key s17R3	scan	reading
+12:784	total	key s64L1	scan	reading
+11:172	ruïne	key s56R1	scan	reading
+1:885	argh	key s12L1	scan	open
+10:885	regulier	key s55L2	scan	open
+4:490	Wismar	key s24L2	machine	open
+11:718	soetjens	key s59L1	scan	note
+11:719	soetelaars	key s59L1	scan	note
+11:696	soo verre	key s59L1	scan	control
+6:923	klaghtigh	key s36R1	machine	control
+6:491	jngekomen	key s34R1	scan	control
+1:744	alsmen	key s11L3	machine	control
+5:274	geduyrigheyt	key s27R3	scan	control
+1:886	arghlistigh	key s12L1	scan	control
+11:722	Soissons	key s59L1	scan	control
+3:127	borse der Cooplieden	key s17R3	scan	control
+12:778	tot hier	key s64L1	machine	control
+12:785	totaliter	key s64L1	scan	control
+11:173	ruïneux	key s56R1	scan	control
+8:601	de Geestelyckheyt	key s44R1	machine	control

@@ -1,0 +1,25 @@
+# Open groups of ../NOTES.md (5 Oct 2026, "Left open because more than one word fits"), with the word the Fagel
+# registers (NA 1.10.29 inv. 5186/5187) have at each occurrence. Occurrences: align/*.tsv (python align_register.py
+# prints each one with its context). "scan checked" = the register words were checked on that scan.
+# grade: H = two or more occurrences agree and none conflicts; M = two or more agree but one conflicts or some aligned
+# pieces are noisy, or one clean occurrence plus one the alignment splits; open = not settled.
+group	value from the registers	grade	agree	conflict	evidence (letter: register words; scan)	scan checked
+970	projets	M	3	1	R1072: "sur les Projets de l'Angleterre", "des Projets des deux Proprietaires", "tous les Projets proposés aux Ministres" (5186 13R). Conflict: R1074, where the register has "faire entrer en France" (5187 15L); probably a misread group there	13R, 15L
+109	lundi	H	2	0	R1067: "qu'il comptoit Lundi ou Mardi au plus tard" (5186 148R); "avant Lundi ou Mardi" (149L)	148R, 149L
+651	mardi	H	2	0	R1067: the same two passages	148R, 149L
+731	là dessus	H	2	0	R1067: "qu'il étoit là dessus impossible" (148R); R1076: "qu'il est là dessus nécessaire" (16R)	148R
+708	impos	H	2	0	R1067: "im-pos-sible" (148R); R1072: "si c'est un Imposteur" (14L)	148R, 14L
+1191	sieur(s), written Sr	M	4	0	R1074: "le Sr Macdonald", "du Sr Macdonald" (5187 15R); with 724 = mes: R2067 "Mrs Pels" (5187 14R), R1067 "ces Messieurs" (5186). Only the two R1074 pieces are clean; the R2067, R1067 and R1064 pieces are at segment edges	15R, 14R
+724	mes	H	4	0	R1067: "ter-mes", "lar-mes" (148R), "Mes-sieurs"; R2067: "Mrs (Messieurs) Pels" (5187 14R). The R1076 occurrence falls in a stretch without aligned text	148R, 14R
+1082	ers	H	2	0	R1072: "des quarti-ers" (13R); R2067: "chez des Banqui-ers" (5187 14R)	13R, 14R
+373	voy	H	2	0	R1072: "Vous voyez" (14L); R1054: "l'objet du Voyage" (248R); R1067 occurrence partial ("renv-")	14L
+993	doit	H	3	0	R1067: "elle ne me repondoit pas" (148R), "tel qu'il doit être", "qui doit me porter"	148R
+426	pouvoir	H	2	0	R1067: "au plus tard pouvoir me procurer" (148R), "son Credit et son pouvoir" (149L)	148R, 149L
+427	mauvaise	H	2	0	R1067: "la mauvaise grace", "un fond de mauvaise volonté"	-
+890	détail	M	2	0	R1072: "un detail des quartiers" (13R); R1064: "un detail chiffré"; the aligned pieces are wider than the word	13R
+431	étrang	M	2	1	R1072: "les Cours étrangères" (13R); R1064: "l'étrang..."; conflict: one R1067 occurrence aligns with "att(estations)"	13R
+1020	après	M	1	0	R1072: "Aprés bien des debats" (13R); R1067: the register has "Aprés cette lecture" (148R) at that point, but the alignment splits the word	13R, 148R
+869	plans	open	1	1	R1072: "de tous les Plans de Campagne" (13R); conflict: R1074, where the register has "s'il y a moyen" (5187 15R)	13R
+1022	as	M	3	0	R2067: "Mr Astier", "le Juif Boas" (5187 14R); R1074: "Mr Astier" (15L). The aligned pieces read "ras" because "Mr" is one letter longer than group 196 (m); a fourth piece is "e", so the alignment is noisy here	14R, 15L
+307	forc and pen	H	7	0	forc 5 times (R1054, R1067, R1072, R1076); pen twice in R1072: "recompenseroit" (13R), "une Pension" (14L). Two values for one group	13R, 14L
+1080	(key: pêche)	open	0	0	R1074 opens "Extrait de la lettre de M. Astier du [1080] [110] ..."; the register margin has "Du 11. Janvier 1758" (5187 15L), but the alignment gives the group no text	15L

@@ -1,0 +1,14 @@
+# NA 3.01.18 inv. 401, scan 67, right page (67R): letter of Battier to Fagel, Madrid, June 1687 (scans 66R-68L; signed on
+# 68L "Madrid den 19 [or 10] Juny 1687"). Cipher lines 1-3 of the page (the first cipher passage). Contributed by WAINUT.
+# Token grammar of scripts/decode.py. Transcribed group by group from the full-resolution NA scan and checked against the
+# scan a second time in a separate pass. Battier writes 8 as a struck o: 2ø = 28, ø56 = 856, øø5 = 885, 74ø = 748, ø31 = 831.
+# Marks as seen: 695, 721 (L02), 172 first digit struck; 463, 777 second digit struck; 171 and 11ꭗ (= 112) last digit struck;
+# 922, 490 e; 856, 721 (L01), 748, 600 r; 696, 90 ^; 126 \; 721 (L03) l. Bare 743 and 831 carry no mark.
+# Open: 171 (the strike on the last digit is faint); 490 (the mark looks like an e: 6:490 jnkomen; 4:490 is Wismar);
+# 885 carries a single dot, which is none of the fifteen marks (1:885 argh, 10:885 regulier; neither is adopted);
+# 784 (no strike seen beyond the struck-o 8; 12:784 total is taken from the context "tot total-e ruïne").
+# Clear text before: "Daer is geen apparentie, dat de Hr. Gastañaga geremoveert worden sal, eer syn tyt uyt is, soo hy geen
+# considerabele faute begaet, offe een ander groot accident daer tusschen komt, niet tegenstaende"
+L01: 11:695 13:171? 6:922 32 12:463 25 6 42 6:490?|4:490 1:743 8:856 28 1:831 8:721 12 2 8
+L02: 44 19 1:743 5:273 8 12 23 54 37 60 32 52 19 54 4:696 1:885?|10:885 8:748 11:721
+L03: 3:126 12:463 7:721 12:777 12:784?|1:784 6 11:172 13:112 4:90 8:600 {men kan hem sonder waer anders te placeren niet wel wechjagen}

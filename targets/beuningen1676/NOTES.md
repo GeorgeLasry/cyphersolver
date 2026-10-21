@@ -148,3 +148,134 @@ The optional control requires `BEUNINGEN_OPENTAAL=/path/to/opentaal.txt` when
 running `scripts/control.py`. No dictionary or manuscript images other than
 the lead crop are included. No DECODE record is identified for this letter.
 No verified correspondent portrait is available among the existing site assets.
+
+## Contribution by WAINUT (21 Oct 2026)
+
+WAINUT (a Dutch AI company, https://github.com/WAINUTAI) applied the key of this folder to the unglossed siblings
+listed under Remaining gaps: inv. 248 scans 190 and 238–239, inv. 249 scans 118 and 218–219, and inv. 250 scan 86.
+The key, the glosses and the June reading are this folder's, and nothing above is changed. This section adds transcriptions
+and decodes of those pages, a calibration on scan 131R, a shuffle control, and a few letter numbers that
+`key/key_letters.tsv` lacks. The files are in `wainut/`. No complete reading of any page is claimed.
+
+**How the work was done.** The number groups were transcribed from crops of the NA scans by Google Gemini
+(gemini-4-argon), in the token convention of `transcription/june1676_tx.txt`. Decoding, controls and analysis were
+done with AI language-model agents. On every page for which a reading is given below, the cipher tokens were checked
+by eye on the NA scans in two separate passes. The 15 resulting corrections are listed with their basis in
+`wainut/corrections.tsv` and are applied in `wainut/transcription/`. The clear text in those files is the model's
+transcription and was not proofread in full. Inv. 249 scan 219 was not checked by eye.
+
+**Keys.** Key A is `key/key_letters.tsv`, `key/key_words.tsv` and `key/key_codes.tsv` with `key/corrections.tsv`,
+as `scripts/decode.py` applies them: 76 letter numbers, 39 colon words, 62 codes. Key B adds every code and
+colon-word gloss in `transcription/tx/*.tsv` (tokconf H or M) and `evidence/ext2/hits.tsv`. Where glosses differ,
+the most frequent wins (H counts twice), and key A wins where both have a value. That gives 51 colon words and 432
+codes. Key B contains no value of ours: it is this folder's gloss transcriptions, used as a key. None of the pages
+below is among the gloss sources. Some key-B values used below rest on a single witness: g120 *geen* (249 scan 121R,
+M), t178 *treden* (248 scan 313L, M), s105 *salveren* (249 scan 165L, M), c302 *conquesten* (249 scan 279L, H), and
+v204 *vergaderen* and v493 *voorslagh* (only 250 scans 304R–305L, the later hand).
+
+**Calibration on 249 scan 131R.** Of the 109 cipher tokens of 131R in `june1676_tx.txt`, the model transcription
+has 101 identical (92.7%). The differences are three wrong digits (b387 as b389; 81 as 82 and 47 as 42 in one
+group) and four grouping slips. With key A, 101 of the 109 decoded tokens are identical. Key B decodes 107 of the
+model's 108 tokens, and the text agrees with the reading above apart from those slips.
+
+**Coverage and control.** Coverage counts the cipher tokens that the key decodes completely. Control T scores the
+key-B decoded runs by their mean log-probability per character under a character 5-gram trained only on clear text
+(the clear passages of these pages and of `june1676_tx.txt`, and the glosses in `transcription/tx`). The real key B
+is compared with 200 keys whose values are shuffled within each table (seed 1675). The columns count the shuffles
+that score as high as the real key: whole key; colon words and codes only (letter table kept); letter table only.
+
+| NA 3.01.18 | letter | key A | key B | T: whole key | codes only | letters only |
+|---|---|---:|---:|---:|---:|---:|
+| 249 scan 131R (calibration) | 23 May/2 June 1676 | 107/108 | 107/108 | 0/200 | 35/200 | 0/200 |
+| 248 scan 190R | 4/14 June 1675, clerk copy | 25/34 | 27/34 | 0/200 | 13/200 | 0/200 |
+| 248 scan 238R, last three lines | 10/20 Aug 1675, clerk copy | 11/19 | 15/19 | 1/200 | 50/200 | 0/200 |
+| 248 scan 239L | same letter | 70/119 | 97/119 | 0/200 | 0/200 | 0/200 |
+| 249 scan 118R | 12/22 May 1676, autograph | 1/3 | 1/3 (2 partly) | too short | | |
+| 249 scan 218R | 9 Oct 1676, autograph | 9/23 | 18/23 | 0/200 | 4/200 | 0/200 |
+| 249 scan 219L | same letter, end | 1/6 | 1/6 | 94/200 | 104/200 | 200/200 |
+| 250 scan 86L, top | 20/30 Mar 1677, clerk copy | 6/12 | 9/12 | 0/200 | 2/200 | 3/200 |
+
+The codes-only column is weak even on 131R (35/200), where the reading is established: a model trained on glosses
+gives any shuffled Dutch word a fair score. It therefore says little about the nomenclator values. The evidence for
+those is that they are glosses of the same codes in sibling letters.
+
+**Readings.** CAPITALS come from the key (key B), `[x123]` and `[NN:]` are codes that key B lacks, `?` is a letter
+number not in `key_letters.tsv`. Superscript endings are left out. Clear text is the model's transcription. The
+English gists are our interpretation across the gaps.
+
+- **248 scans 238R–239L, Sondley near Windsor, 10/20 Aug 1675.**
+  > ende de wyle ik seide DAT DAER IN HAER HO: MO: NIETS [v270] soo [l119] DE FRANSCHE [i216] OP HET [b160] VAN
+  > CONQUESTEN IN DESE OORLOGH GEDAEN en … SOO VRAEGHDE MY SYNE MAYT OF HAER HO: MO: SOUDEN [w182] [a363] EEN VREDE
+  > MET EEN GENERALE RESTITUTIE VAN ALLE het GEOC?UPE?RDE IN DEN OORLOGH daer op ik geantwoordt heb, dat DAER TOE
+  > GEEN RESOLUTIE [91:] NOG? BY DEN STAET VOOR A? GENOMEN ??NDE maer DAT HAER HO: MO: IN ALLE [g200] GEEN VREDE
+  > KONDE MAECKEN ten zij HAERE GEALLIEERDEN IN DEN STAET in de welke SY SYN GEWEEST VOOR DEN OORLOGH SOUDEN WESEN
+  > [h149] ENDE DAT INDIEN SYNE MAYT DE [p266] VAN EEN GENERALE RESTITUTIE BY VRANCKRYCK ??NDE UYT [w159] HET E?N
+  > GROOTE PAS TOT DE VREDE scheen TE SULLEN SYN … ENDE TE [w154] DAT DEN OORLOGH OP DIE UOET [66:] [t124] WERDEN
+  > soo DAT de REPUGNANT?E DIE DESE VOORSLAGH VOOR DESE in de GEEST VANDE CO: heeft gevonden DOOR DE [v153] sedert
+  > IN de SAECKEN VOOR [v110] ?T [s418] VANDE [w121] OP FRONTIEREN VAN DUYTSLANDT scheint eenigermate opgeheven
+
+  Gist: Charles II asked whether the States would [accept] a peace with a general restitution of everything
+  occupied in the war. Van Beuningen answered that no resolution had yet been taken, but that the States could make
+  no peace unless their allies were restored to their pre-war state; if the King obtained a general restitution
+  from France, that would be a great step towards peace. The King's earlier repugnance to the proposal seemed
+  somewhat removed since [events] on the German frontiers. On 239L the whole-key and the codes-only shuffles both
+  give 0/200.
+- **248 scan 190R, 4/14 June 1675.**
+  > MAER DAT MEN sich NIET MOST ILATTEREN DAT sijn Majt. soo LANGE de FRANSCHE [c104] [r173] SOUDEN SYN SIGH DAER
+  > OVER IN OORLOGH SOUDEN ?NLATEN TEGENS [d219] dewijle SYN EER NOGH DEN [f114] [g140] VAN SAECKEN HEM [s426] NIET
+  > TOELIETEN
+
+  Gist: one should not flatter oneself that the King would go to war against the French over the Spanish
+  Netherlands, since neither his honour nor the [...] of [his] affairs would allow it. ILATTEREN is *flatteren* if
+  the first number is 42 (f), as the scan may allow; the transcription keeps 12. d219 is uncertain in its last
+  digit (d214 is *deselve*).
+- **249 scan 218R, 9 Oct 1676.**
+  > aen des Coninghs [g169] OM UAN NUW AF te TRACTEREN over de [a312] met HAER HO: MO: hebbende de Heer Williamson
+  > mij gesegt dat hij geloofde, men soude met WERCK kunnen TREDEN als ik LAST SAL HEBBEN ende is apparent dat de
+  > [v452] van die SAECKE sal helpen [f105] [s357] RESOLUTIE van den RUPTURE met VRANCKRYCK … gedaghten sijn SYN
+  > PARLEMENT te VERGADEREN
+
+  Gist: Williamson said work could start once Van Beuningen had instructions; the matter would help towards a
+  resolution for a rupture with France; the King intends to convene Parliament. TREDEN and VERGADEREN rest on
+  single witnesses (above).
+- **250 scan 86L, 20/30 Mar 1677.**
+  > nodigh was DAT HAER HO: MO: OP EAN [r173] VOET DAER OVER met [s489] [c240] … om de SPAENSCHE NEDERL. te SALVEREN
+
+  Gist: to speed the peace the States would have to [come to terms] on a [...] footing; the King would then do his
+  best to save the Spanish Netherlands. `{10,4,65}` gives *ean* because 4 = a in the table; the sense wants *een*.
+  r173 is also open on 190R.
+- **249 scan 118R, 12/22 May 1676.** "van de DESSEYN op de BRI?L ende HELLEUO?T": the plan against Den Briel and
+  Hellevoetsluis of the June letter. The third number of the Briel group is overwritten and uncertain.
+- **249 scan 219L.** One of six tokens decodes and the control shows no signal (94/200). We could not decode it
+  with this key.
+
+**Open codes** (not in key B; `wainut/check.py` section 6): 190R c104, r173, d219, f114, g140, s426; 238R v270,
+l119, i216, b160; 239L w182, a363, 91:, g200, h149, p266, w159, w154, 66:, t124, v153, v110, s418, w121; 218R
+g169, a312, v452, f105, s357; 86L r173, s489, c240; 219L v517, c344, z1, v531, k143.
+
+**Letter numbers not in `key_letters.tsv`** (proposals for you to judge; not used in the decodes above):
+
+| number | value | where (eye-checked pages) | fits the slot order of the table |
+|---|---|---|---|
+| 8 | e | 239L *geoccupeerde*, *een*; 118R *Briel*, *Hellevoet* | yes (e = 6–10) |
+| 13 | i | 190R *inlaten*; 239L *repugnantie* | yes (i = 11–15) |
+| 35 | c | 239L *geoccupeerde* | yes (c = 32–33) |
+| 43 | f | 239L *vooraf genomen*; also `{43,86}` before s418, unclear | yes (f = 42) |
+| 52 | h | 239L *nogh* | yes (h = 49–51) |
+| 54, 16, 17 | s, y? | 239L `{54,16,70,37,10}` and `{54,17,69,38,7}`, context *synde* | no: 54 sits between h and k; left open |
+
+**What this does not settle.** On the six pages with readings, 43 of 210 cipher tokens (20.5%) are not fully
+decoded by key B, and the gists bridge them by interpretation. We did not check printed editions, or whether Van Beuningen sent parallel letters
+to the Griffier (NA 1.01.02). The profile, grades and Remaining gaps above are left for you to update if you
+adopt any of this.
+
+Reproduce from the repository root (standard library only; it rewrites `wainut/readings/`):
+
+```
+python3 targets/beuningen1676/wainut/check.py
+```
+
+Scans: Nationaal Archief 3.01.18 [inv. 248](https://www.nationaalarchief.nl/onderzoeken/archief/3.01.18/invnr/248)
+scans 190, 238, 239; [inv. 249](https://www.nationaalarchief.nl/onderzoeken/archief/3.01.18/invnr/249) scans 118,
+131, 218, 219; [inv. 250](https://www.nationaalarchief.nl/onderzoeken/archief/3.01.18/invnr/250) scan 86. No images
+are included.

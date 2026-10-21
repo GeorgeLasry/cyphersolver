@@ -243,3 +243,67 @@ Shifted annotations, dictionary variants and mark choices still require image ch
 The thesis PDF and full manuscript scans are not included.
 No DECODE letter update is applicable: the letters have no DECODE records; the R2794 key
 shelfmark correction is documented here without making an external edit.
+
+## Contribution by WAINUT (21 Oct 2026)
+
+WAINUT (a Dutch AI company, https://github.com/WAINUTAI) applied this folder's key to one passage of a letter that
+`inv/orch_letters.tsv` lists without a decipherment, and checked one row of the key transcription. The key
+transcription, the column index, the token grammar and `scripts/decode.py` are this folder's; nothing above has been
+changed. Number groups were transcribed with Google Gemini (gemini-4-argon) and the analysis was done with AI
+language-model agents. The three cipher lines below and every key row used for them were then checked visually
+against the full-resolution NA scans, group by group, in two separate passes. Files are in `wainut/`;
+`wainut/check_67R.py` reproduces every number in this section (standard library, paths relative to the folder).
+
+**1. Scan 67R, cipher lines 1-3 (letter of June 1687).** `inv/orch_letters.tsv` lists the letter 1687-06/07, scans
+66R-68L, cipher on 67L and 67R, no contemporary decipherment, not transcribed. It is signed on 68L "Madrid den 19
+[or 10] Juny 1687", so it is a June letter. Scan:
+https://www.nationaalarchief.nl/onderzoeken/archief/3.01.18/invnr/401/file/NL-HaNA_3.01.18_401_0067
+
+`wainut/tokens_s067R_L01-03.txt` gives the 45 tokens of the first cipher passage in this folder's grammar: 21 cipher
+letters and 24 codes. Battier writes 8 as a struck o (2ø = 28, ø56 = 856, øø5 = 885). Of the codes, 16 are in
+`key/dict`. The other 8 were looked up in the key through `key/colindex.txt` and checked on the key scans; they are in
+`wainut/key_rows.tsv` in the `key/dict` layout: 11:695 soo seer (s59L1), 6:490 jnkomen (s34R1), 5:273 geduyrigh
+(s27R3), 11:721 soigneuslyke (s59L1), 3:126 borse (s17R3), 12:784 total (s64L1), 11:172 ruïne (s56R1) and the open
+885 (below). Key scans: https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/1209/file/NL-HaNA_1.10.29_1209_0059
+(change the last four digits for scans 12, 17, 27, 34, 55, 56 and 64).
+
+The key decode, with the clear text around it:
+
+> [Daer is geen apparentie, dat de Hr. Gastañaga geremoveert worden sal, eer syn tyt uyt is, soo hy geen considerabele
+> faute begaet, offe een ander groot accident daer tusschen komt, niet tegenstaende] soo seer veel klaghten te hem
+> inkomen, als of 'r anders niet daede, als geduyrighe despences en (885) noch soigneuslyke borse te maken tot totale
+> ruïne van de Spaansche Nederlanden; [men kan hem sonder waer anders te placeren niet wel wechjagen]
+
+That is: so many complaints come in against Gastañaga, as if he did nothing but run up expenses and carefully fill his
+purse, to the total ruin of the Spanish Netherlands; but he cannot be removed without being placed elsewhere.
+`wainut/s067R_L01-03.tsv` grades the 45 tokens H 41, M 3, I 1 (repository grades). M: 13:171 veel (the strike on the
+last digit is faint), 6:490 jnkomen (the mark looks like an e; 4:490 is Wismar) and 12:784 total (no strike seen beyond
+the struck-o 8; block 12 from "tot total-e ruïne"). I: 885 carries a single dot, which is none of the fifteen marks;
+1:885 argh and 10:885 regulier both give poor sense, so it is left open. "te hem" may stand for "tegen hem".
+
+No interlinear, marginal or separate decipherment was found on 66R, 67R or 68L, and there is no `s067*` file in
+`tokens/` or `readings/`. The States General set (1.01.02 inv. 12588.120-125) was not checked.
+
+**Control.** With the key rotated by one row (letter n read as the letter of n+1, code b:n as b:n+1), the same tokens
+give "soo verre veele klaghtigh w te bedde qit jngekomen alsmen offe l andermaal niet alleen fuu / za alsmen
+geduyrigheyt ufinuowoan ende arghlistigh nochtans Soissons / borse der Cooplieden te bedde gemaakt tot hier totaliter i
+ruïneux van achteren dese de Geestelyckheyt". The letter runs (hem, daede, edespences) lose all sense. For the codes the
+control is weak, because in an alphabetical one-part code the next row is often a related word (total/totaliter,
+ruïne/ruïneux).
+
+**2. Key row 11:719.** `key/dict/orch.tsv` has `11:719 soetjens (key s59L1)`. On key scan 59L, column 1, the rows run
+716 Soetheyt, 717 Soetelyke, 718 Soetjens, 719 Soetelaars, 720 Soigneus, 721 Soigneuslyke. The last digit of 718 is the
+key's looped 8, which can be taken for a 9; 719 has a plain 9. On this evidence the entries would be 11:718 soetjens and
+11:719 soetelaars. Neither code occurs in `tokens/`, so no reading changes. Scan:
+https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/1209/file/NL-HaNA_1.10.29_1209_0059
+
+**3. Single machine pass (method control).** A single Gemini pass on pages this folder already has gives the same
+number for 64 of 73 tokens on 58R (88%) and 154 of 162 on 59L (95%), but the same decoded value for only 52 (71%) and
+126 (78%), because marks are missed or confused (e read as c, struck digits missed). On 67R lines 1-3 it agrees with
+the checked transcription on 39 of 45 numbers (87%) and 34 of 45 values (76%). This is why every token of the
+reading above was checked on the scan, and why no machine-only transcription is offered as a reading. The passes are
+in `wainut/machine_pass/` (58R, 59L and 67R lines 1-3).
+
+Files: `wainut/tokens_s067R_L01-03.txt`, `s067R_L01-03.tsv`, `s067R_L01-03_text.txt` (reading with English gist),
+`key_rows.tsv`, `check_67R.py` (run `python3 targets/battier1686/wainut/check_67R.py`), `machine_pass/` (method
+control only).
