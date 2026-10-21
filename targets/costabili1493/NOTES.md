@@ -2,7 +2,7 @@
 
 Status: not a cipher — catalogue correction, 20 October 2026.
 
-Catalogue item 348 grouped these three records with the Costabili cipher letters of 1491–92.
+Catalogue item 361 grouped these three records with the Costabili cipher letters of 1491–92.
 Inspection of both photographs on each record shows ordinary Italian chancery writing,
 including conventional abbreviations, throughout. No cipher passage was identified.
 This is a classification correction, not a decipherment or a recovered key.
@@ -46,7 +46,7 @@ requires the archive's permission to publish these images. None is redistributed
 ## Remaining gaps
 
 None for the classification of these three records. The separate Costabili cipher
-correspondence of 1491–92 remains open under catalogue item 348. R1163 and R1164 have
+correspondence of 1491–92 remains open under catalogue item 361. R1163 and R1164 have
 identical photographs; this duplication does not establish a decipherment of that letter.
 
 ## Escalation
