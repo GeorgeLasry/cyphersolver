@@ -1,0 +1,18 @@
+# Corrections made by eye on the NA scans to the model transcription (Google Gemini gemini-4-argon), already applied in transcription/*.txt.
+# pass 1 = first eye check of the cipher lines; pass 2 = a second, independent check of the scans.
+crop	model text	corrected text	basis	pass
+248_p190R	s00 {56, 27,69,48,10}	~soo~ {56,27,69,48,10}	clear word 'soo', not a code	1
+248_p190R	{63,71,82,86, 12,56,26,87,80,10,80,9,70}	{63,71,82,86} {12,56,26,87,80,10,80,9,70}	full stop after 86 (word break)	1
+248_p190R	{13,68,57,4,86,6,70, 89,10,46,9,70,83}	{13,68,57,4,86,6,70} {89,10,46,9,70,83}	full stop after 70 (word break)	1
+248_p190R	d214	d219	last digit looks like 9 (uncertain; d214 is deselve in the key)	1
+248_p190R	{12,56,26,87,80,10,80,9,70}	{12,56,26,87,88,10,80,9,70}	fifth number is 88, not 80; the first number may be 42 (f)	2
+248_p190R	s203	s103	the scan has s103	2
+248_p238R	s160	f160	crossed f, not long s (confirmed in pass 2)	1
+249_p118R	{28,72,45,8,56}	{28,79,15,8,56}	79, then an overwritten numeral read as 15 (uncertain)	1
+249_p118R	{49,6,56,57,44,25,20,8,86}	{49,6,56,57,40,25,20,8,86}	40 (a second model run agrees)	1
+249_p218R	g119	g169	second digit 6	1
+249_p218R	{66,25,92} 55: {5,42}	{66,25,92} {5,42}	the mark after 92 is a hyphen, not 55:	1
+249_p218R	~als~ 16:	~als ik~	clear 'ik', not 16:	1
+249_p218R	{49,20,28,29,91,65}	{49,10,28,29,9,65}	10 not 20; 9 not 91 (confirmed in pass 2)	1
+250_p086L	79: {10,4,65}	74: {10,4,65}	74: (op), not 79: (confirmed in pass 2)	1
+250_p086L	{90,20,10,86,38} 75:	{90,20,10,86} 38: 75:	38: is a colon word (daer) after the spelled word (confirmed in pass 2)	1
