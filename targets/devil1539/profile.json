@@ -110,7 +110,7 @@
     ],
     "sessions": 2,
     "first_date": "2026-10-16",
-    "last_date": "2026-10-20"
+    "last_date": "2026-10-21"
   },
   "solution": [
     {
@@ -278,6 +278,17 @@
         "statistical test"
       ],
       "date": "2026-10-20"
+    },
+    {
+      "kind": "key from source",
+      "what": "Amadi's Letere diaboliche (c. 1588, redrawn by Scheers): 31 demon-named signs matching the woodcut's sign set; first letters of the names as values give no words, z = 1.35 (Italian) / 0.63 (Latin) against 2,000 random reassignments.",
+      "result": "failed",
+      "technique": [
+        "key matching",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "date": "2026-10-21"
     }
   ],
   "outcome": {
@@ -319,6 +330,13 @@
         "note": "153-sign transcription used in the solver runs",
         "date": "2026-10-16",
         "source": "PDF sent to the user"
+      },
+      {
+        "who": "scheers",
+        "role": "pointer",
+        "note": "redrawn Amadi Letere diaboliche table, 31 signs with demon names",
+        "date": "2026-10-21",
+        "source": "email to D. Bourdeau, 21 Oct 2026"
       }
     ]
   }

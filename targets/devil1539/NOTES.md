@@ -118,12 +118,28 @@ controls of 161 signs (the fourth is a search failure; the true key scores highe
 Italian −2.55 / −2.55 (LTR/RTL), Latin −2.54 / −2.51, against shuffles −2.49 to −2.54, and no words. This
 decomposition is one hypothesis among several; others (marks mapped differently across families) remain untested.
 
+## Amadi's diabolic alphabet (21 Oct 2026)
+
+`amadi_scheers.png`: David Scheers's redrawing of Agostino Amadi's *Letere diaboliche* (Venice, c. 1588), 31 signs,
+each named after a demon (Astaroth, Minos, Belzebub, Lybicon, Sathan, Barion, Stix, Pluton, Zael, Charon, Cerber,
+Acheron, Let, Demon, Cocito, Aletho, Eunce, Lucifer, Megera, Phlegeton, Raziel, Fython, Nayn, Uriel, Oziel, Gax,
+Sachao, Radamastra, Xac, Dis, Thesiphon). The signs are the woodcut's own: Acheron = Ǝ, Lybicon / Zael / Lucifer =
+the three arch variants (stub, stub + dot, stub + long middle), Aletho and Nayn = the two forks, Astaroth = the fork
+on a cross, Minos = ⊏, Pluton = −6, Charon = ≻, Cerber = F over ᗰ, Megera = ξ, Phlegeton = the barred sign, Oziel =
+≈, Sachao = e, Xac = the hooked cross ᆿ, Radamastra = the plain arch, **Demon = the loop with a tail**, Cocito =
+the stacked sign. Amadi therefore read the woodcut as an alphabet of about 31 signs, the size of Scheers's
+transcription.
+
+The names as a key (`work/amadi_acrophonic.py`, first letter of each name; v3 transcription): `?agu??b?rrbaab?agssagggcgbaa
+/ rzccaaccammamlmzlzpaabaculzbm / …`, no words; Italian −4.49 against 2,000 random reassignments −4.73 ± 0.18
+(z = 1.35), Latin z = 0.63; second letters no better. The demon names are labels, not sound values.
+
 ## Remaining gaps
 
 - Reading: none. Blocker: illegible (the woodcut's sign identities are uncertain; two transcriptions disagree on
   the class inventory).
 - A homophonic solver that solves a 150-letter, 31-sign Latin control: not available here.
-- Amadi's *Letere diaboliche* table (sign → demon name) and Ambrogio's own alphabets in the same book: not seen
+- Amadi's table: received 21 Oct 2026 (Scheers), tested, no key. Ambrogio's own alphabets in the same book: not seen
   (archive.org and Google Books blocked in this environment). Blocker: needs the scans.
 
 ## Escalation
