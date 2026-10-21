@@ -99,6 +99,11 @@ proposal for him to accept or reject.
   `39:42: 101. 42:30:27:11:41:39`. With the letter's key: *ler., … hlden / [113] naeldan / kn [101] na..mk*. That is not
   Dutch. Caesar offsets of the alphabet and the R4287 sequential key fail too. It adds a fifth code value, **101**,
   and a second occurrence of **113**.
+  **21 Oct 2026, Brett Burford (issue #47):** read the scribe's tailed *o* as 8, as this page's own doubtful words
+  already allow (30/38, 40/43), and the note turns Dutch: line 1 `40:34:46` *ter* (40 -> 48), line 2
+  `42:30:34:40:33.30:11:42` *niet dan* (42 38 34 48 33 30, 11 a null), line 3 `39:42: 101. 42:30` *in [101] na...*
+  (39 -> 38). A hole loses two or three groups at the start. It continues the letter after *importeert*. Proposal: each
+  digit still to be checked on image I25833 (the DECODE cookie had expired when this was written).
 - **The pencil list on the wrapper is not R4306's nomenclator.** A faint list on I25834 (*Nz …, Oz …, Tz Rex Polon.,
   Vz Victoria …*) is the last leaf of R4305 (the Brandenstein 1630 key, II:132, filed next to it), seen through or
   offset onto this sheet.
@@ -120,7 +125,7 @@ proposal for him to accept or reject.
 ## Remaining gaps
 - Codes 105, 106, 113 and 114 (and 101 in the address-leaf note) — blocker: no-key-material; no key with this alphabet among the 61 Chifferklaver låda II key records on DECODE (checked 18 Oct 2026), no gloss on any of R4306's three views, and five occurrences of four values are too few to rebuild the nomenclator. The R4319 template points to A/B-initial words (proposal).
 - Doubtful words and literal-versus-edited discrepancies — blocker: illegible; the scribe's tailed 0 makes 30/38 and 40/43 ambiguous on the only image, the rest are the scribe's slips, and no contemporary decipherment exists. George's restorations stand.
-- Cipher note on the address leaf (I25833, three lines, about 22 numbers, partly torn) — blocker: too-short; does not read under the letter key, offsets or R4287, and is too short and damaged to fit a variant.
+- Cipher note on the address leaf (I25833, three lines, about 22 numbers, partly torn) — blocker: illegible (the 0/8 and 9/8 digit forms); Burford's reading with the tailed o = 8 gives Dutch (*ter... niet dan... in [101] na...*), to be checked digit by digit on the image. Earlier: too-short; does not read under the letter key, offsets or R4287, and is too short and damaged to fit a variant.
 - Year and sender — blocker: needs-physical-access; the letter names neither, and the wrapper date (1600–) and pencilled 1632? are archivists' estimates. Recipient read as Mr ?ilick (Wilick?), Amsterdam; only Riksarkivet provenance records could date it.
 
 ## Escalation

@@ -261,6 +261,16 @@
    "kind": "verification",
    "what": "Checked the doubtful spots (lines 4-5 ekll|men, line 33 Mar..y) on the page image: the scribe's tailed 0 makes 30/38 and 40/43 ambiguous; no better reading can be forced. Gap reclassified as illegible.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Brett Burford (issue #47): independent keyless re-reading (own transcription, annealing with a 17th-c. Dutch model, nothing seeded) agrees with Lasry's key on all 21 values, 447/463 groups (96.5%) and 411/422 letters (97.4%); flags L12 g7, L20 g9, L23 g13 (4/9 form rather than 8), L26 g4, L34 g1. Reading the scribe's tailed o as 8 turns the address-leaf note (I25833) into Dutch: ter... / ...niet dan... / in [101] na... (42 38 34 48 33 30 = n i e t d a). Recorded as a proposal; the image could not be re-checked here on 21 Oct (DECODE cookie expired).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -300,6 +310,13 @@
     "date": "2026-10-17",
     "source": "https://github.com/dbourdeau/cyphersolver/tree/main/targets/sweden4306",
     "published": true
+   },
+   {
+    "who": "burford",
+    "role": "verification",
+    "note": "issue #47: independent keyless re-reading agreeing with Lasry's key; address-leaf note read as Dutch with the tailed o = 8",
+    "date": "2026-10-19",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/47"
    }
   ],
   "gaps": [
@@ -315,8 +332,8 @@
    },
    {
     "item": "Cipher note on the address leaf (image I25833, 3 lines, about 22 numbers, partly torn away)",
-    "blocker": "too-short",
-    "detail": "Newly noticed 18 Oct 2026; contains codes 113 and 101. The letter key gives 'ler.,[torn]hlden / [113]naeldan / kn[101]na..mk', not Dutch; Caesar offsets and the R4287 sequential key also fail. Too short and damaged to fit a variant key."
+    "blocker": "illegible",
+    "detail": "Burford (issue #47) reads it as Dutch when the tailed o is taken as 8 (40->48, 30->38): ter... / ...niet dan... / in [101] na...; a hole loses 2-3 groups. Needs a check of each digit on image I25833."
    },
    {
     "item": "Year and sender",
