@@ -29,7 +29,8 @@
         "source": "targets/bookmargin/margin.png",
         "image_quality": "good",
         "notes": "Own 174-sign transcription (transcription.txt) and David Scheers's 153-sign, 31-symbol transcription (transcription_scheers.txt); woodcut sign identities uncertain."
-      }
+      },
+      "read": "not applicable"
     },
     {
       "id": "f212v-scheers",
@@ -57,7 +58,8 @@
         "source": "David Scheers, PDF 'Remarks devil's handwriting' (16 Oct 2026)",
         "image_quality": "poor",
         "notes": "Woodcut; strokes dropped and added in printing."
-      }
+      },
+      "read": "not applicable"
     }
   ],
   "system": {
@@ -87,9 +89,9 @@
   },
   "conditions": {
     "prior_solution": {
-      "exists": "no",
-      "where": "Unsolved per Cipher Mysteries (2013), Schmeh Top 25 no. 12; Scheers's Latin/Italian attempts unread.",
-      "found": "before attempt",
+      "exists": "online",
+      "where": "Ambrogio's own account on f. 213r (1539), printed and translated by Houston and Rojas, Maya Decipherment, 6 Apr 2024, who still treated the signs as a possible alphabet; no decipherment anywhere.",
+      "found": "after reading",
       "used": false
     },
     "inputs": [
@@ -295,33 +297,28 @@
       "what": "Read Ambrogio's own account (ff. 212r-213r, archive.org scan): the conjurer was later killed by peasants 'with as many iron tridents as the invoked Amon had drawn in his characters' (tot ferris tridentibus, quot invocatus Amon in suis characteribus effinxerat); the commonest sign (sideways E with long bar) is a trident, so the source's only meaning for the characters is a pictorial omen, consistent with the absence of any linguistic plaintext.",
       "result": "worked",
       "date": "2026-10-21"
+    },
+    {
+      "kind": "literature search",
+      "what": "Houston and Rojas (2024) checked: they transcribe and translate the f. 212v-213r passage including the trident sentence and call the signs a 'pitchfork script', but treat them as a possible alphabet; the omen reading and the null tests are new here.",
+      "result": "worked",
+      "date": "2026-10-21"
     }
   ],
-  "outcome": {
-    "method": "not solved",
-    "method_basis": "No reading. Simple and homophonic substitution of Latin and Italian excluded by a solver that solves 12/12 matched controls; nine further languages tested less rigorously; syllabic, code and meaningless pseudo-writing remain.",
+  "outcome": {"validation": {"date": "2026-10-21", "verdict": "not applicable", "notes": "no reading: not a cipher; the tests are calibrated null results recorded in NOTES (matched controls and shuffles), not a key to validate"}, 
+    "method": "not applicable",
+    "method_basis": "Ambrogio's own account (f. 213r) gives the characters one meaning, a pictorial omen: the conjurer was later killed by peasants 'with as many iron tridents as the invoked Amon had drawn in his characters'; the commonest sign is a trident, and no letter-substitution plaintext exists in eleven languages under three transcriptions, with solvers that solve matched controls.",
     "contribution": [
-      "none"
+      "transcription"
     ],
-    "class": "not read",
+    "class": "not a cipher",
     "key": "none",
-    "fraction_read": 0.0,
     "verification": [
-      "none"
+      "matched control",
+      "statistical test",
+      "historical consistency"
     ],
-    "notes": "In progress: needs the Ambrogio and Amadi scans, a reconciled transcription and a stronger homophonic solver.",
-    "gaps": [
-      {
-        "item": "the whole text",
-        "blocker": "illegible",
-        "detail": "woodcut sign identities uncertain; transcriptions disagree"
-      },
-      {
-        "item": "Ambrogio's alphabet plates and Amadi's Letere diaboliche table",
-        "blocker": "needs-physical-access",
-        "detail": "scans not reachable from this environment"
-      }
-    ],
+    "notes": "Not a cipher on the evidence of the source and the tests: the characters depict tridents (an omen of the conjurer's death), not a text. A code of whole words or a meaningless pseudo-script cannot be excluded in principle; no linguistic content was found.",
     "credits": [
       {
         "who": "scheers",
@@ -343,6 +340,22 @@
         "note": "redrawn Amadi Letere diaboliche table, 31 signs with demon names",
         "date": "2026-10-21",
         "source": "email to D. Bourdeau, 21 Oct 2026"
+      },
+      {
+        "who": "houston",
+        "role": "pointer",
+        "note": "printed and translated Ambrogio's account including the trident sentence (2024); the omen reading was not drawn there",
+        "date": "2024-04-06",
+        "source": "https://mayadecipherment.com/2024/04/06/the-devils-writing/",
+        "published": true
+      },
+      {
+        "who": "rojas",
+        "role": "pointer",
+        "note": "co-author of the same post",
+        "date": "2024-04-06",
+        "source": "https://mayadecipherment.com/2024/04/06/the-devils-writing/",
+        "published": true
       }
     ]
   }

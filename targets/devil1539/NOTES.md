@@ -1,7 +1,10 @@
 # The "Devil's Handwriting": Ludovico Spoletano's conjuration, Teseo Ambrogio, *Introductio in Chaldaicam linguam* (Pavia 1539), f. 212v
 
-Status: in progress (explanation found in the source, 21 Oct 2026; write-up pending). Not read. Second session (16 Oct 2026): a calibrated homophonic solver that solves 12/12 matched
-153-letter, 31-sign controls in Latin and Italian finds nothing in the Devil's text. Schmeh's Top 25 no. 12.
+**Outcome (21 Oct 2026): not a cipher; explained by the source.** Ambrogio's own account (f. 213r) gives the characters
+one meaning: the conjurer, later a soldier, was killed by peasants "with as many iron tridents as the invoked Amon had
+drawn in his characters". The commonest sign is a trident, and no letter-substitution plaintext exists in eleven
+languages under three transcriptions, with solvers that solve matched controls (12/12 Latin and Italian). The
+"answer" is a pictorial omen, not a text. Written up as docs/devil1539.html. Schmeh's Top 25 no. 12.
 
 ## Target
 
@@ -169,8 +172,10 @@ matched the pitchforks that killed the conjurer. The woodcut agrees: its commone
 upright Ψ, `work/` rotation tests); the forks (U, Y, Astaroth on a cross) are tridents and bidents. This, with the
 negative results above (no letter-substitution plaintext in eleven languages under three transcriptions, solvers
 calibrated on matched controls), points to no linguistic content: the "answer" is a pictorial omen, not a text.
-Prior notice: Houston and Rojas, "The Devil's Writing", Maya Decipherment blog, 6 Apr 2024, discusses the image and
-(per search summaries) the tridents; not readable from this environment, to be checked before publication.
+Prior notice: Houston and Rojas, "The Devil's Writing", Maya Decipherment blog, 6 Apr 2024 (text supplied by the user,
+21 Oct 2026), transcribe and translate this passage including the trident sentence and call the signs a "pitchfork
+script" (about 143 graphs, about 35 sign types, compared with More's Utopian alphabet), but treat them as a possible
+alphabet ("if there is code here"); they do not connect the sentence to the meaning of the characters.
 
 ## Remaining gaps
 
