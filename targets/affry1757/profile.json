@@ -17,7 +17,7 @@
     "location": [
      "separate folio"
     ],
-    "source": "Lyonet's contemporary clear decipherments of eight letters (R1052, R1053, R1062, R1063, R1065, R1066, R1069, R1075) are imaged on the DECODE records; the other nine letters have none (Nationaal Archief 1.01.50 inv. 221/223 decipherments not digitised)."
+    "source": "Lyonet's contemporary clear decipherments of eight letters (R1052, R1053, R1062, R1063, R1065, R1066, R1069, R1075) are imaged on the DECODE records. The other ten letters have none on DECODE, but clerks' clear copies of all ten are in the digitised Fagel registers, Nationaal Archief 1.10.29 inv. 5186 (1757) and 5187 (1758), found by WAINUT (PR #65, 21 Oct 2026) after the reading; the Lyonet sets NA 1.01.50 inv. 221/223 are not digitised."
    },
    "length": {
     "tokens": 8523,
@@ -101,8 +101,8 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "partial",
-   "where": "Contemporary decipherments by Lyonet (Nationaal Archief 1.01.50 inv. 221, 223; not digitised); Dutch summaries with verbatim French sentences printed by Bussemaker, BMHG 27 (1906)",
+   "exists": "in archive",
+   "where": "Contemporary decipherments by Lyonet (Nationaal Archief 1.01.50 inv. 221, 223; not digitised); clerks' clear copies of all ten letters read here in the Fagel registers NA 1.10.29 inv. 5186/5187 (digitised; found by WAINUT 21 Oct 2026, after the reading, and not used for it); Dutch summaries with verbatim French sentences printed by Bussemaker, BMHG 27 (1906)",
    "found": "before attempt",
    "used": true
   },
@@ -256,6 +256,37 @@
    "kind": "verification",
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): R1071 (code C, to Stainville) moved to affry1757c. Codes A and B merged into one document (one code, per the shared values). measure_sense.py rerun without R1071: 8,282/9,306 groups = 0.890.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "literature search",
+   "what": "WAINUT (PR #65): the Fagel registers NA 1.10.29 inv. 5186 (1757, 399 scans) and 5187 (1758, 225 scans) hold clerks' clear copies, in date order with number and addressee, of all ten letters without a Lyonet sheet on DECODE (R1054, R1064, R1067, R1068, R1070, R1072, R1073, R1074, R1076, R2067). Register text transcribed by Gemini; nine pages checked line by line on the scans by WAINUT.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "WAINUT (PR #65) align_register.py: this folder's key (714 groups) against the register text of the ten letters, 4,333 of 5,554 keyed groups (0.780) take the register's word at that point; key values shuffled among groups (10 seeds) give 0.096-0.153 mean, 0.206 max per letter. R1076 and R1070 low (0.554, 0.593) because their first 157/139 groups get no register text; 0.92/0.91 on the aligned part.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "WAINUT (PR #65): the registers settle 10 of the 16 open groups at grade H (e.g. 970 projets, 109 lundi, 651 mardi, 731 là dessus, 993 doit, 426 pouvoir) and 4 at M; contradict 64 key values at least twice (e.g. 675 vingt not deux, 1106 froid not succès, 762 occasion not égard, 1151 parce que not faire); give the register's word for 151 valueless groups; correct read/R1073.md in eleven places and R1068 (664 Vendredi; recipient Starhemberg, not d'Arenberg). Recorded as proposals in wainut/; key_M and the read/ files not yet changed except R1068.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "what": "Review of PR #65 (Bourdeau with Claude Opus 5.5): align_register.py re-run, every figure reproduced (4,333/5,554 = 0.780; per-letter table identical); R1068 decoded with the key gives 'm d a re m be r g' where the register (5186 181L) has 'Mr. Starrenberg', so the recipient on the page and read/R1068.md is corrected. The settled groups and key conflicts are not yet adopted: key_M and the measured 0.89 stand.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -314,14 +345,14 @@
   "notes": "Read in part under the read bar: 0.89 of the code groups measured as sense; remaining open groups are codes several words fit and homophone clashes in the voted key. R1071, in another code, is a separate entry (affry1757c) since 14 Oct 2026.",
   "gaps": [
    {
-    "item": "open code groups where more than one word fits (970, 869, 109/651, 731/708, 1191, 1020, 1082 ...)",
-    "blocker": "open-codes",
-    "detail": "pooled over all letters 5 Oct 2026 (pool.py); no occurrence forces one value"
+    "item": "open code groups and key clashes that the Fagel registers now settle or contradict (wainut/settled.tsv: 10 H, 4 M; wainut/key_conflicts.tsv: 64 groups; wainut/open_groups.tsv: 151 groups)",
+    "blocker": "not-attempted",
+    "detail": "clear copies of all ten letters are digitised (NA 1.10.29 inv. 5186/5187, WAINUT PR #65); adopting them into key_M and re-measuring is the next step. 869 stays open even with the register."
    },
    {
-    "item": "key values that read as nonsense in place (homophone clashes in key_M), mostly R1074 (0.75) and R1067 (0.79)",
-    "blocker": "open-codes",
-    "detail": "would need Lyonet's key sheet or the NA inv. 223 decipherments"
+    "item": "register pages other than inv. 5186 scans 13R, 14L, 42R, 148R, 149L, 181L and inv. 5187 14R, 15L, 15R",
+    "blocker": "not-attempted",
+    "detail": "unchecked Gemini transcriptions (wainut/register_clear.txt); a value seen once there needs a look at the scan"
    }
   ],
   "credits": [
@@ -336,6 +367,13 @@
     "note": "1906 printed extracts (verbatim French sentences) used as crib and check",
     "date": "1906",
     "source": "Bussemaker, BMHG 27 (1906)"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "PR #65: Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters; key aligned against them; R1068 recipient corrected",
+    "date": "2026-10-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/65"
    }
   ]
  }

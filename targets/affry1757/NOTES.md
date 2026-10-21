@@ -3,6 +3,12 @@
 Status: read in part (5 Oct 2026, rerun 14 Oct 2026: 0.89 of the code groups read as sense by measure_sense.py, 8,282
 of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-up affry1757.html, 19 Sept 2026)
 
+21 Oct 2026, PR #65 (WAINUT) merged: clerks' clear copies of all ten letters without a Lyonet sheet are in the
+digitised Fagel registers NA 1.10.29 inv. 5186/5187 (section "Contribution by WAINUT" at the end; review re-run, every
+figure reproduced). The prior-reading record now says the full content exists in the archive. Corrected from it: R1068
+(664 Vendredi; the recipient is Starhemberg, not d'Arenberg). Not yet adopted: the settled groups, the 64 key conflicts
+and the R1073 corrections in `wainut/`; key_M and the 0.89 figure stand until they are folded in and re-measured.
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1071, d'Affry's letter to Stainville at
 Vienna (4/7 Aug 1757), is in a different code (code C below) and is now [`targets/affry1757c/`](../affry1757c/NOTES.md)
 (a different cipher, with its own page; `cipher_C.txt` and its DOC file moved there). Codes A and B below are one
@@ -26,7 +32,9 @@ bordeaux cookie. `parse.py` reads the DOC files; `cipher_A.txt`, `cipher_B.txt`,
   solved"; d'Affry's code to Choiseul from Dec 1758 broken later.
 - The contemporary decipherments survive as Nationaal Archief 1.01.50 (Stadhouderlijke Secretarie) inv. 221
   (d'Affry to R[ouillé], Dec 1755 - Jun 1757) and inv. 223 (d'Affry to B., Jul 1757 - Dec 1758), "grouped by the
-  cipher used". Not digitised (empty scan ids, checked 19 Sept 2026).
+  cipher used". Not digitised (empty scan ids, checked 19 Sept 2026). The Fagel registers NA 1.10.29 inv. 5186
+  (1757) and 5187 (1758) are digitised and hold clerks' clear copies of the same letters (WAINUT, 21 Oct 2026; see the
+  end of these notes).
 - Bussemaker (ed.), 'Uittreksels uit de brieven van D'Affry aan de Fransche regeering (Dec 1755 - Mei 1762)',
   BMHG 27 (1906), DBNL `_bij005190601_01_0008`: Fruin's extracts from those decipherments, Dutch summaries with
   verbatim French sentences. Entries for 7 Jan, 1 Feb, 1 Apr, 19 Jul, 22 Jul 1757 match letters here.

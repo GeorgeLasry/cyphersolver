@@ -7,7 +7,7 @@
 <meta name="description" content="Pieter Battier's Dutch reports from Madrid, read with his surviving Fagel codebook: three letters validate the key; 24 April 1687 and 8 April 1688 pass strict sense without a known contemporary decipherment; the volume remains partial.">
 <link rel="stylesheet" href="style.css?v=20261014c">
 <meta name="date" content="2026-10-07">
-<meta name="last-modified" content="2026-10-07">
+<meta name="last-modified" content="2026-10-21">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -42,9 +42,9 @@
 <p class="kicker">Madrid → Gaspar Fagel · Dutch marked number codebook · 1686–1688</p>
 <h1>Battier to Fagel: a court divided</h1>
 <p class="sub">Battier's surviving key opens Dutch reports from Madrid about appointments, money and court factions; three letters validate the key, while 24 April 1687 and 8 April 1688 meet the strict reading threshold without a known contemporary decipherment. Much of the correspondence remains open.</p>
-<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-07">7 October 2026</time></p>
+<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-07">7 October 2026</time> &middot; updated <time datetime="2026-10-21">21 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (55% of the cipher)</p><!-- /outcome -->
-<p class="credits">Contributed by <a href="contributors.html#feyseel">Feyseel Nur</a> (new cipher with solution) &middot; Also credited &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
+<p class="credits">Contributed by <a href="contributors.html#lccompany">WAINUT</a> (solution) and <a href="contributors.html#feyseel">Feyseel Nur</a> (new cipher with solution) &middot; Also credited &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
@@ -118,8 +118,10 @@
 <li><em>getwist</em> is the key reading where <em>Turck(en)</em> was inferred. The inference is not promoted to an attested value.</li>
 <li>12:6?0 on 108L is unread. Osuna, precise pronoun referents and the administrative sense of <em>toestemminge</em> remain speculative.</li>
 <li>Separate decipherment sheets near 4 December 1687 and 12 February 1688 have not been checked.</li>
+<li>The letter of 2 January 1687 (35R, 36L) was listed as having no contemporary decipherment. It has heavy interlinear decipherment over the cipher, so it was deciphered at the time and is not new (WAINUT, 21 October 2026).</li>
 <li>The independent review is software re-decoding, <strong>not independent paleography</strong>. Digit and mark choices, dictionary variants and shifted annotations still need image checks.</li>
 </ul>
+<div class="callout"><strong>Contributed, 21 October 2026.</strong> <a href="https://github.com/WAINUTAI">WAINUT</a>, a Dutch AI company, applied this key to the 1687 letters listed as not read (<a href="https://github.com/dbourdeau/cyphersolver/pull/65">pull requests #65</a> and <a href="https://github.com/dbourdeau/cyphersolver/pull/67">#67</a>): 16 January, 13 and 27 February, 13 March (55L), 10 June (67R), 20 November and 18 December (94R, lines 1&ndash;5), 1,389 groups in all, every group checked by eye on the scans and 39 left uncertain. Montalto refused the government of the Spanish Netherlands only for lack of money; Gasta&ntilde;aga is told he will not be removed before his three years are out, while complaints come in that he does nothing but spend and &ldquo;soigneuslyke borse te maken&rdquo;; the Countess of Soissons recommends her son for the same post. These readings are not counted in the figures above: 158 of their code values come from a machine read of the key not yet checked row by row, and the language-model control is not in the repository. The texts are in <code>targets/battier1686/wainut/</code>. They also correct one key row: 11:718 is <em>soetjens</em> and 11:719 <em>soetelaars</em>.</div>
 <p>The reading TSV grades are legacy labels: H secure key/sense, C contextual mark choice, M conjecture, I unread. They are preserved verbatim and are not repository-grade counts. Under repository terminology, primary-key support is H, contemporary-plaintext support C, uncertainty M and inference I. The conservative semantic screen, rather than a sum of legacy H+C labels, supplies the headline results.</p>
 
 <!-- replay:start -->

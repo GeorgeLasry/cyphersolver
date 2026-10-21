@@ -6,6 +6,12 @@ Status: read in part; **read with known key**. Two letters pass the strict sense
 validation against contemporary plaintext on 32R. The volume is not a complete decipherment.
 Decipherment by **Feyseel Nur (with Claude and Codex)**; 4–5 October 2026.
 
+21 Oct 2026, PR #65 and #67 (WAINUT) merged: the folder key applied to eight 1687 passages listed as not read
+(1,389 groups, 39 uncertain; sections "Contribution by WAINUT" at the end). They are contributed readings and are not
+counted in the figures above: 158 of their code values come from an unchecked machine read of the key, and the 4-gram
+control is not in the repository. Adopted from them: the 2 Jan 1687 letter has interlinear decipherment
+(`inv/orch_letters.tsv` corrected), and key rows 11:718 soetjens, 11:719 soetelaars (`key/dict/orch.tsv`).
+
 ## Documents and key
 
 - Nationaal Archief **3.01.18, inv. 401**, 109 scans: Pieter Battier, Dutch envoy extraordinary
