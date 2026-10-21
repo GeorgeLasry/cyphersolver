@@ -16,7 +16,7 @@ The two DECODE records contain three letters from Rusdorff, the Palatine envoy i
 
 ## The key
 
-The cipher combines a homophonic letter table with a one-part nomenclator. The 24 letters each have three two-digit homophones exactly **24 apart** (A = 16, 40, 64). Consecutive letters lie **4 apart** in runs of six (A–F 16–36, G–M 17–37, N–S 18–38, T–Z 19–39), so each new run starts one higher (F→G, M→N, S→T: +5 mod 24). 23 serves for both U and V; the theoretical V (27), Y (35) and Z (39) are not used in these letters. The three-digit codes are in **alphabetical order** of their meanings (187 Britannicus? … 760 Rusdorff), which was used to check every reading.
+The cipher combines a homophonic letter table with a one-part nomenclator. The 24 letters each have three two-digit homophones exactly **24 apart** (A = 16, 40, 64). Consecutive letters lie **4 apart** in runs of six (A–F 16–36, G–M 17–37, N–S 18–38, T–Z 19–39), so each new run starts one higher (F→G, M→N, S→T: +5 mod 24). 23 serves for both U and V; W (27), Y (35) and Z (39) are not used in these letters. The three-digit codes are in **alphabetical order** of their meanings (187 Britannicus? … 760 Rusdorff), which was used to check every reading.
 
 ![Key: letters with homophones; three-digit codes sorted](cryptiana/images/rusdorff1625_key.png)
 
