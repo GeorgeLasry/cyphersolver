@@ -307,3 +307,56 @@ in `wainut/machine_pass/` (58R, 59L and 67R lines 1-3).
 Files: `wainut/tokens_s067R_L01-03.txt`, `s067R_L01-03.tsv`, `s067R_L01-03_text.txt` (reading with English gist),
 `key_rows.tsv`, `check_67R.py` (run `python3 targets/battier1686/wainut/check_67R.py`), `machine_pass/` (method
 control only).
+
+## Further contribution by WAINUT (21 Oct 2026)
+
+This builds on #65 (the "Contribution by WAINUT" section above). It applies the folder's key (NA 1.10.29 inv. 1209) to the
+1687 letters that `inv/orch_letters.tsv` lists as "not read", and adds one correction to that inventory. Files are in
+`wainut/r24_1687/`.
+
+**Readings.** Every group below was checked by eye on the NA scans of 3.01.18 inv. 401 (scan numbers as in this folder).
+Codes are decoded with `key/letters.py` and `key/dict/*.tsv` first; codes not in `key/dict` come from
+`wainut/r24_1687/key_rows_machine.tsv` (a machine read of the code book, marked `*` in the script output).
+
+| letter | cipher pages | groups | uncertain | state |
+|---|---|---|---|---|
+| 16 Jan 1687 | 38L, 38R, 39L | 207 | 11 | nearly complete |
+| 13 Feb 1687 | 45R, 46L, 46R | 272 | 11 | nearly complete |
+| 27 Feb 1687 | 47R-50L | 575 | 8 | nearly complete |
+| 13 Mar 1687 | 55L only (54R, 55R not read) | 66 | 1 | partial |
+| 10 Jun 1687 | 67R (lines 1-3 as in #65; 67L not read) | 152 | 6 | partial |
+| 20 Nov 1687 | 89R | 60 | 1 | complete |
+| 18 Dec 1687 | 94R lines 1-5 (rest of 93R-95L not read) | 57 | 1 | partial |
+| | | **1,389** | **39** | |
+
+The running text with Battier's clear text around the cipher is in `wainut/r24_1687/readings_1687.txt`. In short:
+16 Jan: Montalto was offered the government of the Spanish Netherlands by those who lead the King, and declined only for
+lack of money; Cramprich (named in the clear text) presses to keep Castañaga. 13 Feb: Castañaga is told he will not be removed
+before his three years are out; Oropeza runs everything without the title of first minister; Lira acts as if he cared little for his post.
+27 Feb: Oropeza stays vague on remittances to the Netherlands; Spain will not turn the truce into a peace that cedes
+what France took after Nijmegen, unless the Emperor settles; the Pope could persuade them, as Oropeza's confessor is a
+Jesuit. 13 Mar: the French ambassador asks Spain at least to leave the Augsburg league. 10 Jun: the Countess of Soissons
+recommends her son, serving in Hungary, for the government of the Spanish Netherlands. 20 Nov: some have tried to stop the Admirant of
+Castille, to please the President of Castille. 18 Dec: Battier has the envoy of Syne Hoogheyt (key 8:439, between
+437 "Prince v. Orange" and 438 "de Princesse") press Lira on behalf of the French refugees.
+
+Open points: in the 16 Jan letter, 12:118 is "Stówinge" on key scan 60R (a noun), so the person who "solicits for himself"
+is unresolved; the tail of 39L has about five groups without clear sense. On 67R line 5, 103 carries the mark read as e
+elsewhere, yet neither 2:103 nor 6:103 gives sense; it is left open.
+
+**Correction to `inv/orch_letters.tsv`.** The letter of 2 Jan 1687 (35R, 36L) is listed with contemporary decipherment
+"no". The scans show heavy interlinear decipherment over the cipher on 35R and 36L. A spot check of the first cipher line,
+937\ 7.15 463 431 374 703, gives "dat is te seggen in [10:703 rabat]" against the interlinear "dat is te seggen in een".
+This letter is therefore not new, and no reading of it is offered here.
+
+**Method and control.** The number groups were transcribed by three independent machine vision passes and then corrected
+by eye on full-resolution crops; every group in the table was looked at on the scan. On the eye-checked tokens, each of the
+seven letters scores higher under the true key than under any of 20 row-shifted keys and 200 shuffled keys (Dutch letter
+4-gram model; this control needs an external model and is not included). A second check of about 265 groups on freshly
+downloaded scans found no digit misreading. Machine-only passages of these and later letters (69L, 73R, 78R, 80R, 95R, 99L,
+103R) are not offered as readings. The States General copies (1.01.02 inv. 12588.120-125) were not checked, and a short web
+search found no edition of these dispatches.
+
+Files: `wainut/r24_1687/tokens/s*.txt` (checked tokens with per-group notes), `readings_1687.txt`,
+`key_rows_machine.tsv`, `check_1687.py` (run `python3 targets/battier1686/wainut/r24_1687/check_1687.py`; it prints the
+decoded lines, the counts in the table and the inventory line for 2 Jan 1687).
