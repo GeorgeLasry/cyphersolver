@@ -1,0 +1,115 @@
+{
+  "per_image": {
+    "b1": {
+      "ctts_lines": 17,
+      "selections": 468,
+      "cleartext_placeholders": 19,
+      "cipher_elements": 449,
+      "distinct_cipher_labels": 74,
+      "repeat_signs": 3,
+      "unresolved_tokens": 2,
+      "unresolved_labels": [
+        "75_"
+      ],
+      "provisional_tokens": 4,
+      "position_histogram_matches": true
+    },
+    "b2": {
+      "ctts_lines": 10,
+      "selections": 323,
+      "cleartext_placeholders": 6,
+      "cipher_elements": 317,
+      "distinct_cipher_labels": 61,
+      "repeat_signs": 7,
+      "unresolved_tokens": 1,
+      "unresolved_labels": [
+        "74_"
+      ],
+      "provisional_tokens": 1,
+      "position_histogram_matches": true
+    },
+    "3": {
+      "ctts_lines": 2,
+      "selections": 39,
+      "cleartext_placeholders": 0,
+      "cipher_elements": 39,
+      "distinct_cipher_labels": 29,
+      "repeat_signs": 1,
+      "unresolved_tokens": 0,
+      "unresolved_labels": [],
+      "provisional_tokens": 0,
+      "position_histogram_matches": true
+    }
+  },
+  "cipher_elements_total": 805,
+  "distinct_cipher_labels": 93,
+  "repeat_examples": [
+    {
+      "image": "b1",
+      "ctts_line": 11,
+      "token": 14,
+      "repeats": "la"
+    },
+    {
+      "image": "b1",
+      "ctts_line": 13,
+      "token": 11,
+      "repeats": "l"
+    },
+    {
+      "image": "b1",
+      "ctts_line": 13,
+      "token": 24,
+      "repeats": "s"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 2,
+      "token": 21,
+      "repeats": "s"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 2,
+      "token": 25,
+      "repeats": "a"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 3,
+      "token": 11,
+      "repeats": "e"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 4,
+      "token": 12,
+      "repeats": "s"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 5,
+      "token": 44,
+      "repeats": "s"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 6,
+      "token": 13,
+      "repeats": "de"
+    },
+    {
+      "image": "b2",
+      "ctts_line": 6,
+      "token": 36,
+      "repeats": "l"
+    },
+    {
+      "image": "3",
+      "ctts_line": 2,
+      "token": 2,
+      "repeats": "s"
+    }
+  ],
+  "scope": "Counts and deterministic key application; not a semantic accuracy score."
+}
