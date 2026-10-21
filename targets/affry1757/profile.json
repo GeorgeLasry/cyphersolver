@@ -287,38 +287,75 @@
    "kind": "verification",
    "what": "Review of PR #65 (Bourdeau with Claude Opus 5.5): align_register.py re-run, every figure reproduced (4,333/5,554 = 0.780; per-letter table identical); R1068 decoded with the key gives 'm d a re m be r g' where the register (5186 181L) has 'Mr. Starrenberg', so the recipient on the page and read/R1068.md is corrected. The settled groups and key conflicts are not yet adopted: key_M and the measured 0.89 stand.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "WAINUT's register proposals checked on 16 Fagel register scans fetched from the NA file service and read here (5186 13R, 14L, 16R, 17L, 42R, 62R, 63L, 148R, 149L, 149R, 150L, 181L, 255R; 5187 14R, 15L, 15R). The 64 key conflicts sorted by printing every occurrence with its context: 41 real key errors, the rest spelling, abbreviation, person forms of one stem or alignment noise; 989 polyphonic (qu'un / re-to-ur).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "control",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Every register candidate set against Lyonet's decipherments (align/R*.tsv, grade H): 7 dropped where Lyonet reads otherwise as often or more (16 le roi de Prusse, 94 peux, 605 inconvénient, 635 faut, 727 moi/mois 4:4, 895 devoir, 1193 utilité); 8 kept at M with one contrary Lyonet occurrence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "58 values folded into key_X.tsv / key_X.json: 21 open groups valued (970 projets, 109 lundi, 651 mardi, 731 là dessus, 774 résolution, 664 vendredi ...) and 37 values replaced (675 vingt, 1106 froid, 762 occasion, 1151 parce que, 992 er, 1027 le roi, 911 ns, 1039 et ...). measure_sense.py: undeciphered letters 4,797 -> 5,006 of 5,820 (0.824 -> 0.860); whole code 8,283 -> 8,492 of 9,306 (0.890 -> 0.913); Lyonet letters within a point. Register agreement 0.780 -> 0.812 of keyed groups (partly circular). read/R1073.md given the 42R register text and its corrections.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 5640 tokens, 645 types, fr-modern order 4: reading -2.071 per letter; random keys -2.815 (z 12.4); key annealed onto shuffled ciphertext best -2.137 (mean -2.157, z 5.3); annealer on the real text -2.121. Verdict: pass.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "validation": {
-   "date": "2026-10-11",
+   "date": "2026-10-21",
    "model": "fr-modern",
    "file": "validation.tsv",
-   "tokens": 5587,
-   "types": 625,
-   "tokens_per_type": 8.94,
-   "score": -2.096,
+   "tokens": 5640,
+   "types": 645,
+   "tokens_per_type": 8.74,
+   "score": -2.071,
    "nulls": {
     "random keys": {
      "n": 200,
-     "mean": -2.798,
-     "sd": 0.053,
-     "max": -2.638,
-     "z": 13.2,
+     "mean": -2.815,
+     "sd": 0.06,
+     "max": -2.687,
+     "z": 12.4,
      "p": 0.005
     },
     "shuffled refit": {
      "n": 6,
-     "mean": -2.136,
-     "sd": 0.009,
-     "max": -2.127,
-     "z": 4.3,
+     "mean": -2.157,
+     "sd": 0.016,
+     "max": -2.137,
+     "z": 5.3,
      "p": 0.1429
     }
    },
-   "power": -2.126,
+   "power": -2.121,
    "verdict": "pass",
-   "notes": "claimed per-occurrence score -2.107; polyphony 0.0; 233 unread tokens left out; annealer on the real text from random keys reached -2.126"
+   "notes": "claimed per-occurrence score -2.081; polyphony 0.0; 180 unread tokens left out; annealer on the real text from random keys reached -2.121"
   },
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The code key (651 groups) was rebuilt by aligning Lyonet's contemporary clear decipherments of eight letters (R1052, R1053, R1062, R1063, R1065, R1066, R1069, R1075), imaged among the same DECODE records, with their ciphers; nine undeciphered letters of the same series were then read with it. Bussemaker's 1906 printed extracts served as a crib and check.",
@@ -326,12 +363,13 @@
    "transcription",
    "key recovered",
    "sender or date identified",
-   "catalogue correction"
+   "catalogue correction",
+   "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.89,
+  "fraction_read": 0.913,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure_sense.py (rerun 14 Oct 2026 without R1071): a group counts when it has a value (key_M.json, H/M rows of read/*_new.tsv, key_X.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,282/9,306 groups: Lyonet-deciphered letters (3,486) counted read, undeciphered letters 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts. The 21 Sept figure 0.86 counted groups with any value, not sense.",
+  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after the Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,492/9,306 groups: Lyonet-deciphered letters (3,486) counted read, undeciphered letters 5,006/5,820 = 0.860. 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts.",
   "key": "partial",
   "codes_open": {
    "tokens_open": 1024
@@ -340,19 +378,25 @@
   "verification": [
    "contemporary decipherment",
    "historical consistency",
-   "statistical test"
+   "statistical test",
+   "independent clear copy"
   ],
-  "notes": "Read in part under the read bar: 0.89 of the code groups measured as sense; remaining open groups are codes several words fit and homophone clashes in the voted key. R1071, in another code, is a separate entry (affry1757c) since 14 Oct 2026.",
+  "notes": "Read in part under the read bar: 0.89 of the code groups measured as sense; remaining open groups are codes several words fit and homophone clashes in the voted key. R1071, in another code, is a separate entry (affry1757c) since 14 Oct 2026. 21 Oct 2026: 0.913 of the groups (8,492/9,306) read as sense after 58 values from the Fagel register copies (NA 1.10.29 inv. 5186/5187), checked on the scans; 0.890 from the key alone, before the registers were known.",
   "gaps": [
    {
-    "item": "open code groups and key clashes that the Fagel registers now settle or contradict (wainut/settled.tsv: 10 H, 4 M; wainut/key_conflicts.tsv: 64 groups; wainut/open_groups.tsv: 151 groups)",
+    "item": "151 groups without a value for which the Fagel register gives a word (wainut/open_groups.tsv)",
     "blocker": "not-attempted",
-    "detail": "clear copies of all ten letters are digitised (NA 1.10.29 inv. 5186/5187, WAINUT PR #65); adopting them into key_M and re-measuring is the next step. 869 stays open even with the register."
+    "detail": "most seen once; each needs a look at its register scan and at Lyonet's letters before adoption"
    },
    {
-    "item": "register pages other than inv. 5186 scans 13R, 14L, 42R, 148R, 149L, 181L and inv. 5187 14R, 15L, 15R",
+    "item": "groups that take two values (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895, 1193, 16, 605 in R1074)",
+    "blocker": "open-codes",
+    "detail": "key_X holds one value per group, so the sense measure under-reads these"
+   },
+   {
+    "item": "register pages not read here (5186 63R, 248R-249L, 256L)",
     "blocker": "not-attempted",
-    "detail": "unchecked Gemini transcriptions (wainut/register_clear.txt); a value seen once there needs a look at the scan"
+    "detail": "WAINUT's Gemini transcription unchecked"
    }
   ],
   "credits": [

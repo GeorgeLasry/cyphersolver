@@ -1,6 +1,6 @@
 # d'Affry (The Hague) to Rouillé / Bernis, 1757-58: intercepted code letters
 
-Status: in progress (21 Oct 2026): the Fagel registers (WAINUT, PR #65) remove the outside blocker on the open codes; folding them into the key and re-measuring is the next step. The reading below stands until then.
+Status: in progress (21 Oct 2026): 58 register values checked on the scans and folded into key_X.tsv; 0.913 of the groups now read as sense (8,492 of 9,306; undeciphered letters 0.860). Still open and workable: the register's word for 151 valueless groups (wainut/open_groups.tsv), and the groups that take two values (section "Register values folded into the key" below).
 
 Status: read in part (5 Oct 2026, rerun 14 Oct 2026: 0.89 of the code groups read as sense by measure_sense.py, 8,282
 of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-up affry1757.html, 19 Sept 2026)
@@ -9,7 +9,8 @@ of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-
 digitised Fagel registers NA 1.10.29 inv. 5186/5187 (section "Contribution by WAINUT" at the end; review re-run, every
 figure reproduced). The prior-reading record now says the full content exists in the archive. Corrected from it: R1068
 (664 Vendredi; the recipient is Starhemberg, not d'Arenberg). Not yet adopted: the settled groups, the 64 key conflicts
-and the R1073 corrections in `wainut/`; key_M and the 0.89 figure stand until they are folded in and re-measured.
+and the R1073 corrections in `wainut/`. Folded in later the same day, after a check on the scans: see "Register values
+folded into the key (21 Oct 2026)" below.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1071, d'Affry's letter to Stainville at
 Vienna (4/7 Aug 1757), is in a different code (code C below) and is now [`targets/affry1757c/`](../affry1757c/NOTES.md)
@@ -161,10 +162,76 @@ target cannot pass 0.924 even if every other group read. Within the readable let
 clashes the 651-group vote did not settle, e.g. 1080 pêche in the date of R1074, 307 forc/pen), and (iii) the
 measure's own under-count of about an eighth.
 
+## Register values folded into the key (21 Oct 2026)
+
+WAINUT's proposals (`wainut/settled.tsv`, `wainut/key_conflicts.tsv`, the R1073 and R1068 corrections) were checked
+against the register scans themselves: NA 1.10.29 inv. 5186 scans 13R, 14L, 16R, 17L, 42R, 62R, 63L, 148R, 149L,
+149R, 150L, 181L, 255R and inv. 5187 14R, 15L, 15R, fetched from the NA file service (not committed) and read here.
+Every value adopted below was seen on at least one of these scans; the evidence column of `key_X.tsv` names the scan
+and the words.
+
+How the 64 conflicts were sorted: each occurrence was printed with four groups either side, key value against register
+piece (scratch script, not kept). A value was adopted when the register has the same word at every clean occurrence
+and the key value makes no sense there. Left alone: spelling and abbreviation (premiers/premier, s.a.r., jours/jour,
+fonds/fond, pensionnaire, villes, utilité), person and tense forms of one stem (631 avoit/avois/avoir, 968
+pouvoit/pouvois, 842 étoit/été, 1186 été/étoit), alignment noise (5, 26, 67, 89, 148, 388, 482, 836, 936, 974), and
+989, which is *qu'un* twice in R1064 but *to* in re-to-ur in R1076.
+
+Then every candidate was set against Lyonet's own decipherments (`align/R*.tsv`, grade H). Dropped because Lyonet
+reads them otherwise as often or more: 16 (Lyonet *le roi de Prusse* three times; the register *Prussien(s)*,
+*Prussienne*), 94 (Lyonet *peux*; the register *la Haye* once), 605 (Lyonet *inconvénient* twice; R1074 gives *vi*
+three times, probably a misread group there), 635 (Lyonet *faut*; *fau-droit* in the register), 727 (*moi* and *mois*
+four times each in Lyonet: a genuinely two-valued group), 895 (Lyonet *devoir* three times) and 1193 (Lyonet
+*utilité* three times). Kept at M where Lyonet has one contrary occurrence: 109, 373, 806, 923, 959, 993, 1174, 1192.
+
+Adopted (58 rows in `key_X.tsv`, after the 17 pooled values of 5 Oct; `key_X.json` regenerated from it):
+
+- open groups now valued: 970 projets, 109 lundi, 651 mardi, 731 là dessus, 708 impos, 1191 sieur, 724 mes, 1082 ers,
+  373 voy, 993 doit, 426 pouvoir, 427 mauvaise, 890 détail, 431 étrang, 1020 après, 1022 as, 776 infraction, 662 seur,
+  774 résolution, 507 exacte, 664 vendredi
+- key values replaced (old value in brackets): 806 mieux [lon], 58 fa [che], 61 fo [fou], 116 traite [pas], 125 est
+  [étant], 163 croi [a], 194 que [quequ], 240 prompt [tôt], 479 empech [v], 504 apparent [aparem], 553 produi
+  [produit], 556 contre [ssi; but *au contraire* twice], 619 grand [grande], 675 vingt [deux], 676 vo [voi], 749 donn
+  [ca], 762 occasion [égard], 834 elle [elles], 900 di [dis], 911 ns [co; but *Co-l-lo-re-do* in R1068], 923 ceux
+  [roit], 959 to [ton], 960 vu [f], 973 le [on], 992 er [des], 1014 age [usage], 1027 le roi [roi], 1039 et [lies],
+  1099 is [isle], 1103 fort [fortes], 1106 froid [succès], 1144 res [rez], 1151 parce que [faire], 1174 lu [eu], 1184
+  etat [etats], 1185 ite [iter], 1192 xe [que]
+
+Re-measured with measure_sense.py (threshold -3.0, unchanged):
+
+| letter | before | after |
+|---|---|---|
+| R1072 | 0.888 | 0.935 |
+| R1076 | 0.819 | 0.846 |
+| R1073 | 0.885 | 0.939 |
+| R1064 | 0.808 | 0.828 |
+| R1067 | 0.791 | 0.851 |
+| R1068 | 0.750 | 0.750 |
+| R1054 | 0.949 | 0.946 |
+| R1070 | 0.905 | 0.902 |
+| R1074 | 0.747 | 0.775 |
+| R2067 | 0.792 | 0.853 |
+| undeciphered letters | 4,797/5,820 = 0.824 | 5,006/5,820 = 0.860 |
+| all groups, Lyonet letters read | 8,283/9,306 = 0.890 | 8,492/9,306 = 0.913 |
+
+The Lyonet letters, measured through the key, move by at most a point either way (R1052 0.822 -> 0.815, R1069
+0.838 -> 0.830, R1063 0.915 -> 0.933). Against the register text, `wainut/align_register.py` now gives 4,551 of
+5,607 keyed groups (0.812, was 0.780), shuffled keys at most 0.219 per letter. That figure is partly circular: the new
+values were taken from the same registers. The sense measure is not.
+
+`read/R1073.md` carries the register text of 42R as read here and the corrections it makes; `read/R1068.md` the
+181L text. The other read/ files are not rewritten.
+
 ## Remaining gaps
 
-- open code groups where more than one word fits (970, 869, 109/651, 731/708, 1191, 1020, 1082, 890, 431, 373, 724, 993, 426, 427 and single groups listed as [n] in read/) - blocker: open-codes; pooled over all letters 5 Oct 2026 (pool.py), no occurrence forces one value. 21 Oct 2026: no longer blocked, the clear copies in NA 1.10.29 inv. 5186/5187 are digitised and wainut/settled.tsv settles 10 at H, 4 at M (869 still open); to fold into key_M and re-measure
-- key values that read as nonsense in place (homophone clashes in key_M, e.g. 307, 1080), most in R1074 (0.75) and R1067 (0.79) - blocker: open-codes. 21 Oct 2026: workable, wainut/key_conflicts.tsv lists 64 groups the registers contradict; each to be checked on the register scan before key_M changes
+- 151 groups without a value for which the register gives a word (`wainut/open_groups.tsv`, e.g. 409 Allemagne,
+  803 consent-; 664, 776 and 774 are now valued) - blocker: not-attempted; most seen once, each needs a look at its scan and at Lyonet's
+  letters before it is adopted
+- groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895
+  devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: open-codes; one value per group
+  is all key_X can hold, so the measure under-reads these
+- register pages other than the scans listed above (5186 63R, 248R-249L, 256L) were not read here; WAINUT's
+  Gemini transcription of them is unchecked - blocker: not-attempted
 
 Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
 R1073 and R1076 are measured on the DECODE parse (view.fix splits), not re-transcribed from the images; they already
@@ -178,7 +245,8 @@ measure 0.75-0.95, and their unread groups are the open codes above.
 - [x] print: De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked
 - [x] key-rebuild: key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)
-- [ ] clear-pages (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); aligned (0.780), not yet folded into the key
+- [x] clear-pages (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -> 0.913)
+- [ ] the register's words for the 151 valueless groups (wainut/open_groups.tsv) not yet adopted
 
 ## Contribution by WAINUT (21 Oct 2026)
 
