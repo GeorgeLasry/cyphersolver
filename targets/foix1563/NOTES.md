@@ -90,6 +90,8 @@ Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
 - Assessment: a real partial break, in de Foix's cipher, not overfitting. It is not at the read bar: 14 of the 78 key
   entries rest on a single occurrence, a dozen signs (RX, monograms, numbers 10, 20, 26, 34, 37, 40, 70, 82) are open,
   and no fraction of tokens read as sense has been measured against the images. Outcome left unchanged here.
+  (21 Oct 2026: profile fraction_read corrected from 0.976, the share of tokens carrying a value, to 0.506, the
+  long-word sense measure above; the read bar is still not reached.)
 - Five-sign audit (Beck, PR #27, 8 Oct 2026; `beck-preliminary/FIVE_SIGN_AUDIT.md`): the D, 3, 2, r, z "conflicts" were partly a
   naming collision. Beck's private labels are not qm2's: his `D` is qm2 `th` and his `r` is qm2 `c`, and the 1565 key agrees on both
   (th = t, c = u). Real conflicts remain on plain `3` (Beck s, 1565 e/t; his descended form = qm2 `Z3` = s in both), `2` (l against i)

@@ -225,6 +225,7 @@ def row(e):
     if e.get('contributed_by'):          # a cipher brought in by an outside contributor (contributors.json id)
         who = CONTRIB.get(e['contributed_by'], {}).get('name', e['contributed_by'])
         noted += f' <a class="noted by" href="contributors.html#{esc(e["contributed_by"])}" title="brought into the catalogue by {esc(who)}">via {esc(who)}</a>'
+    if e.get('workable'): noted += ' <span class="noted work" title="the key material exists (siblings, glosses); what is left is work, not an outside blocker">no outside blocker</span>'
     if e.get('on_list'): noted += f' <span class="noted" title="also on this list">{esc(e["on_list"])} list</span>'
     detail = (f'<div class="det"><div><b>Correspondents.</b> {esc(e["correspondents"])} · {esc(e["place"])} · {esc(e["language"])}</div>'
               f'<div><b>Shelfmark.</b> {esc(e["shelfmark"])}{(" · " + arks) if arks else ""}{(" · " + esc(e["folio_note"])) if e.get("folio_note") else ""}</div>'
@@ -288,7 +289,7 @@ def status_html(E):
 <details><summary>the {len(part)} open entries with known pieces</summary><ul class="sl">{"".join(one(e, "known") for e in part)}</ul></details>
 </div>
 <div class="card"><h3>What is still unsolved</h3>
-<p><b>{len(E)}</b> entries are open ({sum(1 for e in E if e['counted'])} counted targets, the rest also noted): <b>{n_blk}</b> blocked from outside (no images online, an archive order needed, or no key known to exist), <b>{n_att}</b> attempted here without a decipherment, <b>{len(E) - n_blk - n_att}</b> not yet attempted.</p>
+<p><b>{len(E)}</b> entries are open ({sum(1 for e in E if e['counted'])} counted targets, the rest also noted): <b>{n_blk}</b> blocked from outside (no images online, an archive order needed, or no key known to exist), <b>{n_att}</b> attempted here without a decipherment, <b>{len(E) - n_blk - n_att}</b> not yet attempted. <b>{sum(1 for e in E if e.get('workable'))}</b> have their key material at hand and no outside blocker ({', '.join(f'<a href="#e{e["id"]}">no. {e["id"]}</a>' for e in E if e.get('workable'))}): good places to start.</p>
 <details><summary>the {len(E)} open entries, by priority, with what is still open</summary><ul class="sl">{"".join(one(e, "open") for e in opn)}</ul></details>
 </div>
 </div>
@@ -345,6 +346,7 @@ td.prio b{{font-family:var(--display);font-size:1.35rem;color:var(--gold);font-w
 td.date{{font-family:var(--mono);font-size:.76rem;color:var(--ink2)}}td.date .num{{display:block;color:var(--muted);font-size:.68rem;margin-top:.2rem}}
 td.item b{{color:var(--head);display:block}}
 td.item .sub{{display:block;font-size:.8rem;color:var(--muted);margin-top:.15rem;line-height:1.4}}
+.noted.work{{color:var(--blue);border-color:color-mix(in srgb,var(--blue) 50%,transparent)}}
 .noted.out{{color:var(--green);border-color:color-mix(in srgb,var(--green) 50%,transparent)}}
 .noted{{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:.05rem .45rem;vertical-align:middle;margin-left:.3rem}}
 td.shelf{{font-size:.76rem;color:var(--ink2);overflow-wrap:anywhere}}

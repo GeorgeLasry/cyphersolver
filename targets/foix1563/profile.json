@@ -226,6 +226,12 @@
    "kind": "verification",
    "what": "One-key split (George Lasry, 14 Oct 2026): catalogue 92's two records are in different ciphers. R9238 (Coligny to Elizabeth, 12 Jan 1563) is in the graphic-sign cipher of the Condé key R335, the same key as Coligny's other three letters of January 1563 in coligny1563 (R9237, R9239, R9240), so it moved there; foix1563 keeps R9241 (Catherine de' Medici to Paul de Foix), in de Foix's own cipher.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "what": "Catalogue audit: fraction_read had been set to 0.976, the share of tokens carrying a key value, which NOTES says is not a reading; set to the measured sense proxy (0.506, letters in 5+-letter corpus words) to match NOTES ('not at the read bar').",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -239,9 +245,9 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.976,
+  "fraction_read": 0.506,
   "fraction_read_method": "measured",
-  "fraction_read_source": "beck-preliminary/results/literal.txt: 1,013 of Beck's 1,038 tokens carry a key value (his transcription, 96 sign types). Values given, not sense: letters falling in corpus words of 5+ letters are 50.6% (beck_control.py), hence fraction_coherent.",
+  "fraction_read_source": "beck-preliminary/results/literal.txt with beck_control.py: letters falling in corpus words of 5+ letters, 50.6% (fitted keys on shuffled ciphertext reach at most 34.2%). This is the only measure of sense; it undercounts 1563 spelling, and no token count read as sense has been made against the images (NOTES, Assessment). 1,013 of Beck's 1,038 tokens (97.6%) carry a key value, which is coverage, not sense; that figure was given here until 21 Oct 2026.",
   "verification": [
    "matched control"
   ],
