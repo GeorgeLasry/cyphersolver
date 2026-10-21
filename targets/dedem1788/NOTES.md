@@ -1,6 +1,6 @@
 # Van Dedem (Constantinople) to Van de Spiegel, 1788–1793 — DECODE R2120, R2122, R2131
 
-Status: attempted, open (R2120 found read at the time; R2122, R2131 partly read after the code layout was established on 4 Oct 2026, see "Second pass")
+Status: in progress (R2120 read at the time; R2122, R2131 decoded in part after the 4 Oct 2026 second pass, 41% of groups firm; left: transcribe the deciphered letters in the same code, R1948-R1952, R2134, R2141, as cribs to fill the open groups)
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1895 (26 Aug 1799, to the Burger Agent
 van der Goes) is in a different marked system, not this 1788–93 code, and is now its own entry, a different cipher
