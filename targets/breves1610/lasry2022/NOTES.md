@@ -1,8 +1,8 @@
-# Savary / Brèves: Lasry’s two-image document and a focused improvement to the November reading
+# Savary / Brèves: an improved reading of the larger letter and refined glyph attribution
 
 George Lasry deciphered the additional document in 2022 using CTTS (CrypTool Transcriber and Solver). The transcription, key and decryption were improved with Opus 5.5 in October 2026. Codex prepared this edition, translated the visible text, compared the scans and checked the mechanical key application.
 
-Brice Dudout, working with Claude and Codex, deciphered the Marie de Médicis passages in October 2026; Satoshi Tomokiyo contributed key identifications and checks. Daniel Bourdeau published and checked that work in the breves1610 entry on 20 October. This is a focused improvement to that reading, informed by Lasry’s two-image document, not a claim to a new first solution of the November letter.
+Brice Dudout, working with Claude and Codex, deciphered the Marie de Médicis passages in October 2026; Satoshi Tomokiyo contributed key identifications and checks. Daniel Bourdeau published and checked that work in the breves1610 entry on 20 October. For the November passage, this contribution refines the attribution of glyphs to plaintext values, particularly the repeat sign; the French reading is essentially unchanged.
 
 ## Scope and prior coverage
 
@@ -12,21 +12,27 @@ The additional document discusses marriage negotiations under apparent aliases, 
 
 The user dates this CTTS decipherment to 2022. Cryptiana’s account separately dates a related R2077 decipherment by Lasry, assisted by Biermann and Tomokiyo, to 2021. These are recorded separately, not silently harmonized. The user’s 2022 attribution applies to the additional document supplied here.
 
-## What improves Dudout’s reading
+## Contribution and relation to Dudout’s reading
 
-1. **The repeat operator resolves the second s in recognoissant.** CTTS `s-` is repeated across the two-image document. It gives LL in intelligence and brouillons, AA in aage, EE in puisnée, SS in necessaire, and repeats whole elements: LA + repeat in l’alarme, DE + repeat across multitude des esprits. The corresponding sign after S in the November fragment therefore supplies another S. This directly addresses one uncertainty in the 20 October sign-by-sign review.
-2. **Arogance is retained.** The latest CTTS transcription uses `3 d- j v x f a,` and the current key gives A R O G A N CE. An earlier local croyance reading was superseded before this submission. Dudout’s interpretation is credited, not presented as a newly discovered word.
+1. **More accurate glyph attribution in the November passage.** The French text is essentially the same as Dudout’s reading. The repeat operator explains the second s in recognoissant. CTTS `s-` is repeated across the two-image document. It gives LL in intelligence and brouillons, AA in aage, EE in puisnée, SS in necessaire, and repeats whole elements: LA + repeat in l’alarme, DE + repeat across multitude des esprits. The corresponding sign after S in the November fragment therefore supplies another S. This directly addresses one uncertainty in the 20 October sign-by-sign review.
+2. **The glyph-to-plaintext alignment is made explicit.** CTTS `3 d- j v x f a,` gives A R O G A N CE, matching the French word in Dudout’s reading.
 3. **The other document is supplied in full for the visible portions.** Both images receive a French edited reading, an English translation, the original transcription and an independently reproduced literal decode. This is the substantive added material.
 
 **Still unsettled:** the C homophone `b` in recognoissant occurs only in the November fragment. The longer images cannot by themselves resolve the archive table’s B/C discrepancy. The November passage is improved, not asserted to be free of every paleographic uncertainty. The key remains partial: 74̄ and 75̄ are unknown; FAIRE?, MOYEN?, ROY? and TOUSIOURS? retain their question marks.
 
 ## Material
 
-- [Offline illustrated edition](index.html): French/English text for all visible lines, uncertainty notes and the red CTTS overlays.
+- [Offline illustrated edition](index.html): Full French text with deciphered passages in bold, followed by the English translation, uncertainty notes and the red CTTS overlays.
 - [French reading](reading_fr.txt) and [English translation](translation_en.txt).
 - [Current CTTS key](ctts/key.txt), [machine-readable key](key.json), [alignment](alignment.tsv), [verification](verification.json).
 - `ctts/`: contributor’s original key, symbol labels, positions, transcription, decryption and edited text, copied byte for byte. `mechanical_*.txt` and `continuous_*.txt` are regenerated from this key; they preserve spelling and cleartext placeholders.
 - [Source manifest](source_manifest.json): input SHA-256 hashes and modification timestamps. Original BMP/JPG images and CTTS PNGs are included at Lasry’s explicit request; PNG display copies of the BMPs are lossless.
+
+### Original key assembled from the fragments
+
+![Original archival key, assembled from all six supplied fragments](assets/original-key-assembled.png)
+
+The fragments are registered through their overlapping glyphs and placed by integer translation. Their pixels are neither rescaled nor retouched. Blank areas fall outside the supplied fragments. The individual fragments are retained in `assets/key-fragments/`, and [assembly details](original-key-assembly.json) record the placements.
 
 ### Horizontal key
 
