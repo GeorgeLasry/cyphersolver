@@ -127,7 +127,7 @@ The five images were transcribed in CTTS: each two-digit group, three-digit code
 `targets/rusdorff1628/lasry2026/`:
 
 - `ctts/`: the CTTS project (key, colors, positions, transcription, decryption and edited exports, icons).
-- `cryptiana/`: a Cryptiana item (`rusdorff1625.html`, scoped `rusdorff1625.css`, standalone `index.html`, images).
+- `cryptiana/`: a Cryptiana entry (`entry.html` and scoped `entry.css` for insertion, a self-contained `index.html`, images).
 - `profile_proposal.json`: proposed profile entries for R4336 and R4337.
 
 Images of the documents are not committed beyond the reduced decryption overlays.
