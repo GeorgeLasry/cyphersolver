@@ -289,14 +289,23 @@ pairing score −2.23, best first-key reading −5.51 per quadgram at width 41, 
 | all reversed-direction systems | excluded by the lag scan (still valid after the 11 Oct correction) |
 | forward single columnar | excluded to width 45 (annealing to 20, direct search 21–45, 11 Oct); 46+ unproven |
 
-The open region is exactly where practice puts the answer. German-trained users of the *Doppelwürfel*
-were told to take two key phrases of 15 to 25 letters each, and a Swiss firm dealing with Franco's Germans
-in January 1937 would have been handed such a system. A single 615-letter message under two long keys is at
-or beyond the frontier of published ciphertext-only attacks (Lasry's challenge solution needed 599 letters,
+The table says what is excluded, not what the system is. Double columnar with two long keys is open, not
+likely: no evidence points to it rather than to other transpositions that have not been tested. (An earlier
+version of this paragraph claimed that German-trained users of the *Doppelwürfel* took two key phrases of 15 to
+25 letters and that the firm would have been handed such a system. That had no source and was removed on 21 Oct
+2026 after Richard Bean's issue #37.) Bean also points out that the two telegrams share more repeated strings than
+double transposition would leave: a quick count gives 9 distinct shared 4-grams against 2.0 expected from shuffles
+(at most 10 in 200 shuffles), 2 shared 5-grams against 0.12, and one 6-gram, APMOEP. That is a modest excess and
+an open lead (below), not yet a diagnosis. If the system is a double columnar with two long keys, a single
+615-letter message is at or beyond the frontier of published ciphertext-only attacks (Lasry's challenge solution needed 599 letters,
 keys of 20 and 25, and hours of computation with a method whose landscape we found to be a needle at this
 length). It is not a matter of another evening's compute.
 
 What would break it:
+
+0. **The repeats between the two telegrams** (Bean, issue #37): locate the shared 4- to 6-grams in both texts,
+   compare their positions and spacings, and test which transposition families keep plaintext strings intact
+   across two messages in the same keys. Not done yet.
 
 1. **The second telegram**, sent the same day by the same firm, probably in the same keys. **In hand since
    30 Sept 2026** (see Transcription): Schmeh's post ("Can anyone decipher these two telegrams…") shows both,

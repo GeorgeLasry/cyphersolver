@@ -232,6 +232,15 @@
    "kind": "solver", "technique": ["simulated annealing", "exhaustive search", "language-model scoring"],
    "what": "Forward single columnar, widths 21-80: column-path search at width 41 (plant -4.44, telegram -5.76) and bigram annealing with quadgram ranking at every width (plants read at 25, 33, 38, 41, 45; fail at 57, 72). Telegram best -5.62 for widths 21-45.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Richard Bean (issue #37): an unsourced claim in NOTES that the system was a German Doppelwürfel with two 15-25-letter key phrases removed. The two telegrams share 9 distinct 4-grams against 2.0 expected from 200 shuffles (max 10), 2 5-grams against 0.12 and one 6-gram, APMOEP: a modest excess, recorded as an open lead against double transposition.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -249,7 +258,8 @@
   "notes": "Open: double columnar with two long keys. The second telegram (160 letters) is in hand since 30 Sept 2026; a joint attack on both is in progress.",
   "credits": [
     {"who": "bean", "role": "transcription", "note": "GitHub issue 14: three letters of telegram 1 corrected (L misread as I), with SHA-256 checks", "date": "2026-09-30", "source": "https://github.com/dbourdeau/cyphersolver/issues/14"},
-    {"who": "bean", "role": "pointer", "note": "pointed to the full image of the second telegram in Schmeh's post", "date": "2026-09-30", "source": "https://github.com/dbourdeau/cyphersolver/issues/14"}
+    {"who": "bean", "role": "pointer", "note": "pointed to the full image of the second telegram in Schmeh's post", "date": "2026-09-30", "source": "https://github.com/dbourdeau/cyphersolver/issues/14"},
+    {"who": "bean", "role": "pointer", "note": "issue #37: unsourced Doppelwürfel claim removed; repeated strings shared by the two telegrams", "date": "2026-10-15", "source": "https://github.com/dbourdeau/cyphersolver/issues/37"}
   ]
  }
 }

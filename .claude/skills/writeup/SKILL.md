@@ -43,6 +43,11 @@ not from memory. The slug is the folder name unless a page already exists under 
   them on the page as the hero's credits line and adds them up on `contributors.html` and the front page's top
   contributors; nothing on the page is typed by hand. A result sent in by someone else gets `outcome.provenance`
   `contributed` (or `mixed`) and a `solution` credit with the PR, issue or email as `source`.
+- **No cipher type without evidence.** Until part of the text is read, name the system only as far as measured
+  evidence goes ("a transposition: letter frequencies match Spanish"). Do not name a specific system, or say what
+  its users were taught or would have been given, unless a source is cited; families not yet excluded are
+  "open", not "likely" or "where practice puts the answer" (Richard Bean, issue #37, on an unsourced
+  *Doppelwürfel* claim in `blume`). This applies to NOTES, the profile's `system` fields and the page.
 - Words (README Conventions, `python docs/_check_terms.py <slug>`): say what happened ("deciphered with Lasry's
   key", "key recovered from the clear passages", "transcribed the contemporary decipherment"); do not use "read" or
   "solved" alone as an outcome word, and do not call an item unsolved because a catalogue says "undeciphered".
