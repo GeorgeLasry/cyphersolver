@@ -1,6 +1,6 @@
 # Ranzo's code, 1528: the letter to "Garbino" (BnF fr. 3022 no. 20) and Hieronimo Ranzo's letters (fr. 2988, fr. 3019; DECODE R1894, R4450; catalogue items 7 and 170)
 
-Status: read in part (14 Oct 2026), by others: Paolo Rosson with Claude (6 Oct 2026, on this project's transcription) and George Lasry with Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026, `lasry/`). This project's own annealer recovered only function words. Split from `targets/vasto1527/` on 14 Oct 2026.
+Status: in progress (read in part 18 Oct 2026; left: check the 74 open groups of fr. 3022 no. 20 and the open codes of fr. 4050 and fr. 6638 against the images): key recovered from ciphertext-only by George Lasry with Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026, `lasry/`) and, independently, by Paolo Rosson with Claude (6 Oct 2026, on this project's transcription). Fr. 2988 (letters 1 and 2) and its copy fr. 20506 meet the read bar; fr. 3022 no. 20, fr. 4050 and fr. 6638 are read in part (measured 18 Oct 2026, below). This project's own annealer recovered only function words. Split from `targets/vasto1527/` on 14 Oct 2026.
 
 Gallica: fr. 3022 ark `btv1b90601558` (view = canvas; ink folio ≈ (view+1)/2), fr. 2988 `btv1b9059908w`, fr. 3019 `btv1b9059994n`, Clair. 327 `btv1b9000764n`.
 
@@ -107,9 +107,84 @@ Validation of the new packet reproduces 541 line-aligned readings, 6,428 cipher 
 
 This is publication of existing results, not a renewed solving run. The user ended the key-comparison exercise and requested this contribution. Original files remain untouched.
 
+## The five letters of George Lasry's package, as documents (14 Oct 2026)
+
+`profile.json` now lists every letter his edition covers (counts from `lasry/counts.json`, his non-null
+occurrences given a proposed value, tentative ones included):
+
+| profile id | letter (Lasry no.) | shelfmark | occurrences | non-null valued |
+|---|---|---|---|---|
+| fr2988f2 | 1 | BnF fr. 2988 ff. 2r-v; duplicate fr. 3019 no. 27 ff. 73r-74r (Madrid, 27 March 1528) | 818 | 764 of 790 |
+| r1894 | 2 | BnF fr. 2988 ff. 9r-10v (DECODE R1894); copy fr. 20506 ff. 136-138 (R4450) | 1,781 | 1,703 of 1,746 |
+| fr20506 | 2 (copy) | BnF fr. 20506 ff. 136-138 (DECODE R4450), parallel copy of letter 2; added 18 Oct 2026, counts are letter 2's | 1,781 | 1,703 of 1,746 |
+| no20 | 3 | BnF fr. 3022 no. 20, ff. 44-47; copy Clair. 327 ff. 279-280 | 1,314 | 1,185 of 1,249 |
+| fr4050 | 4 | BnF fr. 4050 ff. 79-81 | 1,559 | 1,440 of 1,530 |
+| fr6638 | 5 | BnF fr. 6638 pp. 67-70 | 956 | 875 of 906 |
+
+Letters 4 and 5 have not been seen or transcribed by this project; Biermann's transcription gives no Gallica link
+for them. Letter 1 is transcribed here too (`n20/ranzo_c006.txt`, `c007.txt`); Rosson's key values 88.7% of its
+groups in connected runs.
+
+## 16-18 Oct 2026: George Lasry's verdict, measured per letter
+
+**16 Oct 2026, George Lasry to Daniel Bourdeau (email):** "BTW, the Ranzo ciphers are solved Fr 2988 and Fr 20506 - my key or Rosson's key."
+
+Fr. 20506 is not a sixth letter. In his package (`lasry/transcription.json`, `counts.json`, `source.json`, `NOTES.md`)
+it appears only as the parallel copy of letter 2 (fr. 2988 ff. 9-10, R1894): "Français 20506, ff. 136–138", Gallica
+`btv1b525047581` view 275. Biermann's transcription follows fr. 2988's line layout; there is no separate
+transcription of the copy. It is now a profile document of its own (`fr20506`, DECODE R4450) with letter 2's counts;
+its own variants are not checked against the images. (R4450 was described here as a copy of f. 9 only; Lasry's source
+list gives ff. 136-138 for the whole letter.)
+
+**Measure (`measure_lasry.py`, 18 Oct 2026).** Rosson's `key/table.tsv` (from his repository, not copied here; same
+download as `measure_rosson.py`) applied to Lasry's Biermann transcription, token by token beside Lasry's
+`alignment.tsv`: `python measure_lasry.py <Rosson folder>`. Lasry's key first, Rosson's second, as George put it: a
+token is read when it is a presumed null, one of Lasry's stronger inferences, a tentative value of Lasry's that
+Rosson's key matches (same word after collapsing doubled letters, prefix of three letters or more, or difflib ratio
+0.75 or more for spelling variants such as lettere/littere), or a sure/probable value of Rosson's where Lasry has none.
+
+| letter | shelfmark | occurrences | Lasry, tentative incl. | Lasry, tentative unread | keys agree (both value) | **bar measure** | verdict |
+|---|---|---|---|---|---|---|---|
+| 1 | fr. 2988 f. 2 (+ fr. 3019) | 818 | 96.8% | 85.2% | 716/758 (94.5%) | **787 (96.2%)** | read |
+| 2 | fr. 2988 ff. 9-10 (+ fr. 20506) | 1,781 | 97.6% | 84.6% | 1,622/1,697 (95.6%) | **1,728 (97.0%)** | read |
+| 3 | fr. 3022 no. 20 | 1,314 | 95.1% | 81.6% | 1,091/1,156 (94.4%) | **1,240 (94.4%)** | read in part |
+| 4 | fr. 4050 ff. 79-81 | 1,559 | 94.2% | 80.9% | 1,255/1,303 (96.3%) | **1,368 (87.7%)** | read in part |
+| 5 | fr. 6638 pp. 67-70 | 956 | 96.8% | 83.4% | 727/760 (95.7%) | **851 (89.0%)** | read in part |
+| all | | 6,428 | | | | **5,974 (92.9%)** | read in part |
+
+- Fr. 2988 as a volume (letters 1+2): 2,515 of 2,599 (96.8%). George's "solved Fr 2988 and Fr 20506" holds under the
+  read bar, judged per letter.
+- The two keys were built separately, on different transcriptions. Rosson never saw letters 4 and 5, yet where his key
+  values a token there it agrees with Lasry's 96%: the strongest check of either key available here.
+- Letters 4 and 5 fall below the bar on this measure only because Rosson's key, built on letters 1-3, cannot confirm
+  Lasry's tentative values there (Lasry's own coverage is 94.2% and 96.8%). No. 20 misses by 0.6 point.
+- Statistical validation (`docs/_validate.py ranzo1528`, 18 Oct 2026, it-cinquecento, pairs `validation.tsv` built from Lasry's alignment, tentative values kept): **pass**, -1.992 vs random keys -2.454 (z 14.0) and shuffled refit -2.097 (z 8.9).
+- Lasry's NOTES and counts are left unedited.
+
+**Outcome method, 18 Oct 2026: key recovered from ciphertext-only** (was "read from existing decipherment"). Lasry's
+NOTES and PR #35 describe recovery from the ciphertext: Italian cribs, repeated contexts, code-family structure, and
+consistency tests across the five letters. He spot-checked entries of the "Aditione nel zifra" (fr. 3022 f. 50), but
+that is another code (1 of its 113 groups occurs here), so it could not supply values. These letters have no
+contemporary decipherment, no clear copy and no key. Rosson's key is a second, independent ciphertext-only recovery.
+Both methods are the same, so the entry has no `outcome.parts`; `provenance` stays mixed (the keys are the
+contributors', the transcription and measurement this project's).
+
+## Assumptions for George's review
+
+- All five letters are treated as one code, Ranzo's, on the evidence of his package: one 871-entry key reads all
+  five. For fr. 4050 and fr. 6638 this project has no independent check (no image seen, no shared-group count of
+  its own).
+- fr. 4050 and fr. 6638 carry no date in his files; the profile gives them the year 1528 of the other three, with
+  the date "unknown".
+- His credit stays a single "solution" credit covering the five letters; Rosson's covers what his page reads
+  (no. 20, the fr. 3019 duplicate of letter 1, the last lines of fr. 2988 view 20), and his key applied here
+  values letters 1-3 as measured above.
+
 ## Remaining gaps
 
-- No. 20 and the Ranzo letters of fr. 2988 ff. 9-10 (R1894/R4450): 84 groups without a value (of 3,903 parsed in all twelve files), 76 guesses, and 79.8% (no. 20) and 93.1% (R1894) in connected stretches - blocker: open-codes; Rosson's key (6 Oct 2026) reads the rest, our own annealer never did. Still to do: compare his islands with the images page by page; transcribe fr. 2988 ff. 2r-v and fr. 3019 f. 73 (the duplicate) here.
+- fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%): 27 without a value in either key, 47 tentative values of Lasry's that Rosson's does not match - blocker: open-codes. Still to do: compare both keys' readings with the images of ff. 44r-46v.
+- fr. 4050 and fr. 6638 (letters 4, 5): 191 and 105 tokens not read (87.7%, 89.0%), mostly Lasry's unconfirmed tentative values - blocker: open-codes; Rosson's key was built on letters 1-3 only, and these letters are not seen here (no Gallica link in Biermann's transcription).
+- fr. 2988 ff. 2 and 9-10 with the copies fr. 3019 and fr. 20506: 31 and 53 scattered open groups, over the read bar - blocker: open-codes.
 
 ## Escalation
 
@@ -118,13 +193,14 @@ This is publication of existing results, not a renewed solving run. The user end
 - [x] known-keys: none in the archive; Cipherbrain (2016-17) found no nomenclator. Rosson's key (6 Oct 2026) and George Lasry's key (6 Oct 2026) now exist and were measured or imported.
 - [x] print: Cipherbrain 2016; Tomokiyo, cryptiana ranzo.htm (6 Oct 2026); Rosson's page.
 - [x] key-rebuild: word-substitution annealer with an Italian word-bigram model, validated on an encoded Castiglione control (~46% tokens): function words only.
-- [n/a] retry: the open groups are those of Rosson's and Lasry's keys; a retry means comparing their readings with the images page by page, not yet done.
+- [x] retry: 18 Oct 2026, the two independent keys compared token by token on all five letters (`measure_lasry.py`); fr. 2988 and fr. 20506 over the bar. Page-by-page comparison with the images for no. 20 not yet done.
 
 ## Files
 
 - `n20/`: transcriptions (no. 20 `f44r.txt`-`f46v.txt` and Ranzo `ranzo_c0*.txt`), `load.py`, solvers (`solve.py` and `anchor.py` assume alphabetical order, now refuted; `free.py`, `solve2.py`), `alphatest.py`, `calib.py`
 - `additione.json`: the addition sheet (fr. 3022 f. 50-50v), another code of the same design, not this code's key
 - `measure_rosson.py`: applies Rosson's key to the transcriptions
+- `measure_lasry.py`: per-letter read fractions of Lasry's key, Rosson's key on the same Biermann transcription, and their agreement (18 Oct 2026)
 - `lasry/`: George Lasry's contributed edition (Biermann transcription, 871-entry key, decode, excerpts, verify.py)
 - `ita/`: Italian corpus preparation for the annealer; the corpus texts are not committed
 

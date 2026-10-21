@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "target": "siena12",
+ "title": "The bishop(?) of Fermo to Sforza Attendolo, Naples, 10 March 1413: a royal marriage offer, wholly in cipher (ASSi Concistoro 2308 fasc. 2 no. 12, DECODE R4790)",
+ "documents": [
+  {
+   "id": "R4790",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 12; DECODE R4790 (Concistoro_2308_44), images P1 (verso, address) and P2 (letter); second photograph R1858 p. 7",
+   "date": "10 March, sixth indiction (= 1413)",
+   "year": 1413,
+   "country": "Naples",
+   "route": "Naples -> Sforza Attendolo (at Perugia, per the report's sources)",
+   "language": "Italian, address Latin",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the record or in print; R1858 (marked Decrypted) has no document attached and its photograph of no. 12 carries no gloss (checked 18 Oct 2026).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 865,
+    "distinct": 46,
+    "unit": "symbols",
+    "measured": false,
+    "file": "lasry_report.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry with CTTS: transcription by Claude, refined by George Lasry in CTTS (report, 17 Oct 2026)",
+    "image_quality": "good",
+    "notes": "Counts from the report: 865 cipher symbols (822 in the 16-line letter on P2, 43 in the 3-line address on the verso) and 95 word dividers; the key figure's occurrence counts add up to 865 (850 letter signs, 9 nomenclature, 6 unknown). The CTTS transcription itself is not in the repository, so nothing is re-measured. The report says accurate transcription was the main obstacle across the fascicle."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution on graphic signs with word dividers: two to three signs for each vowel and several consonants, a crown sign for 'Re' and a few name signs (report: 46 distinct signs).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 46,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3,
+   "per_letter": {
+    "a": 3,
+    "b": 1,
+    "c": 2,
+    "d": 1,
+    "e": 3,
+    "f": 1,
+    "g": 1,
+    "h": 1,
+    "i": 4,
+    "l": 1,
+    "m": 1,
+    "n": 3,
+    "o": 3,
+    "p": 3,
+    "q": 1,
+    "r": 1,
+    "s": 1,
+    "t": 2,
+    "u": 1,
+    "z": 1
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 4,
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": true,
+   "count": 2
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol",
+  "doubled_letters": "unknown",
+  "sibling_key": "none known; not the key of nos. 20/23 (R4808, R4811, same spring, siena2023) and not one of the 43 filed keys of fasc. 1",
+  "notes": "Per letter counted on the report's key figure (key_lasry.jpg). Nulls and separators: two signs (53 and 42 occurrences = the report's 95 word dividers). Nomenclature: crown = RE (4), 'Signoria Vostra?' (2), two 'name?' signs (2, 1). Six signs of one occurrence each are 'unknown'. Split from siena1421 on 18 Oct 2026 under the one-key rule (report heading B, one piece)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None known. DECODE R1858 ('Siena keys and ciphers', 2020, owner 32), which holds a second photograph of no. 12, is marked Decrypted but has no document attached, and that photograph shows no gloss; R4790 is N/A with no documents (both checked 18 Oct 2026). The project's siena1421 notes (24 Sept 2026) had 'taken no. 12 as read' from R1858's status, without a reading. Cryptoole XX15XX-97 'solved/plaintext_attached' is a group status over the Concistoro records. Meister 1902 and the 1952 inventory print no reading.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry ran the work with CTTS and Claude: Claude transcribed, he refined the transcription in CTTS; Claude's own simulated annealing recovered the key, then refined; he wrote the reading, translation and historical context (report, 17 Oct 2026). This project filed the report and checked the DECODE record history.",
+  "tools": [
+   "CTTS (transcription and refinement, by George Lasry)",
+   "simulated annealing written and run by Claude (865 symbols)"
+  ],
+  "models": [
+   "Claude (model not named in the report)"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-10-15",
+  "last_date": "2026-10-17"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "access",
+   "what": "siena1421 survey: R4790 and R1858 images downloaded with the DECODE cookie; no. 12 inventoried as a whole letter in graphic signs with word separators and 'taken as read' from R1858's Decrypted status (no reading attempted, not counted).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "transcription",
+   "what": "George Lasry (report): transcription by Claude from the images, refined by him in CTTS; 865 cipher symbols, 95 word dividers.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "George Lasry (report): key recovered by Claude's own simulated annealing on the 865 symbols, ciphertext only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "George Lasry (report): key refined; reading and translation, more than 95% of the text; the crown sign = Re; two name signs, the signature and a few words open. Dated 10 March 1413 from 'sesta indictione' with a king on the throne of Naples and Migliorati alive.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "literature search",
+   "what": "This project: DECODE R1858 and R4790 record pages fetched with the cookie: no document attached to either; R1858 p. 7 and R4790 P2 viewed, no gloss or decipherment. Cryptoole's 'solved/plaintext_attached' traced to a group status. No earlier reading of no. 12 found.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "no sign-level transcription of no. 12 in the repository: George Lasry's report gives the reading and the key figure, not the CTTS transcription (asked for)"}, 
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Report, 17 Oct 2026: 'key recovered by Claude's own simulated annealing (865 symbols), then refined'; no decipherment, clear copy or filed key exists for no. 12.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "fraction_read": 0.987,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "key_lasry.jpg (the report's key figure) occurrence counts: 850 letter-sign + 4 RE occurrences of 865 symbols have a value; the 'Signoria Vostra?' sign (2), two name signs (3) and six unknown signs (6) do not. Key coverage, not sense; George's own estimate of the text read as sense is 'more than 95 %'.",
+  "fraction_coherent": 0.95,
+  "codes_open": {
+   "open": 3,
+   "total": 4,
+   "tokens_open": 5
+  },
+  "grades": "unknown",
+  "verification": [
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "With CTTS and Claude, 15-17 Oct 2026: transcription by Claude, refined in CTTS; key recovered by Claude's own simulated annealing, then refined; reading, translation and dating.",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
+    "date": "2026-10-17"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "two name signs and the 'Signoria Vostra?' sign",
+    "blocker": "open-codes",
+    "detail": "1-2 occurrences each; left open in the report"
+   },
+   {
+    "item": "the signer ('Vescovi(?) de Fermo') and the two girls' fathers",
+    "blocker": "no-key-material",
+    "detail": "identification, not decipherment"
+   },
+   {
+    "item": "a few (?) words and six unknown signs of one occurrence each",
+    "blocker": "too-short",
+    "detail": "single occurrences; no transcription in the repository to retry them"
+   }
+  ],
+  "notes": "Contributed result, filed from George Lasry's report of 17 Oct 2026; not re-derived here. fraction_coherent is his estimate ('more than 95 %'). Contamination: no earlier reading known (R1858's Decrypted status has no document behind it)."
+ }
+}

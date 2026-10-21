@@ -1,5 +1,6 @@
 {
  "_about": "Catalogue of unsolved historical ciphers not on the Tomokiyo, Schmeh or Dunin lists, plus (since 14 Oct 2026) open items pulled from Cryptoole (research/cryptoole/), some of them on Tomokiyo's list; those carry source \"Cryptoole\" and their Cryptoole ID in \"cryptoole\". Scores are 1-5 and unvalidated: importance = historical weight of what the text could add; solvability = odds of a full reading with the material available online; difficulty = technical work needed (1 trivial key alignment, 5 statistics-only on an unknown system). Priority is computed on the page from adjustable weights. Class A = siblings with decipherment in the same volume, B = partial key or known family in print, C = no key, no sibling. seen: image = leaf viewed on the Gallica image; catalogue = selected from the catalogue description only. outcome: 'attempted, open' once an entry has been taken to the leaf here without a reading. Entries read, partly read, resolved or found already in print are removed from this file (19 Sept 2026) and recorded in SOLVED_CATALOGUE.md; ids are not reused. contributed_by: the contributors.json id of an outside contributor who brought the entry in (shown on the page as 'via ...').",
+ "status_as_of": "2026-10-21",
  "weights_default": {
   "importance": 0.4,
   "solvability": 0.35,
@@ -23,40 +24,105 @@
    "cls": "C",
    "seen": "image",
    "source": "BnF harvest",
-   "status": "The other two items first catalogued here (nos. 6 and 10, del Vasto to Charles V) are read: no. 10 by Lasry (2023) with Tomokiyo's edited text, no. 6 in targets/vasto1527/ (its own page since 14 Oct 2026). No. 20 is an Italian letter, Madrid 11 Apr 1528, to 'Garbino', in the same code as Hieronimo Ranzo's letters (fr. 2988). The code is initial letter + number with non-alphabetical numbering; ~3,900 groups are transcribed, but only the function-word skeleton is recoverable without the key. No French decipherment exists; Clair. 327 ff. 279-280 is an undeciphered copy.",
+   "status": "The other two items first catalogued here (nos. 6 and 10, del Vasto to Charles V) are read: no. 10 by Lasry (2023) with Tomokiyo's edited text, no. 6 in targets/vasto1527/ (its own page since 14 Oct 2026). No. 20 is an Italian letter, Madrid 11 Apr 1528, to 'Garbino', in the same code as Hieronimo Ranzo's letters (fr. 2988). The code is initial letter + number with non-alphabetical numbering; ~3,900 groups are transcribed. The key was recovered from the ciphertext by George Lasry and, independently, by Paolo Rosson (6 Oct 2026; PRs #35, #45), and no. 20 measures 94.4% (targets/ranzo1528/, 18 Oct 2026), just under the read bar. No French decipherment exists; Clair. 327 ff. 279-280 is an undeciphered copy.",
    "why": "Five months after the Sack of Rome, during Lautrec's campaign in Italy.",
    "importance": 4,
    "solvability": 2,
    "difficulty": 5,
    "score_note": "Large one-part-looking code, one letter, no key; see targets/ranzo1528/NOTES.md.",
    "verify": "Look for Ranzo's key or a deciphered Ranzo letter (Simancas, Vienna HHStA) before any statistical attack.",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "No. 6 (del Vasto, Cipher 2) deciphered here with Lasry's key, 98.0% (vasto1527.html); no. 10 (Cipher 1) key recovered by Lasry 2023, read in part with Tomokiyo's text. No. 20: Ranzo's code key recovered from ciphertext only by George Lasry and, independently, Paolo Rosson (6 Oct 2026); no. 20 measured here at 94.4% (ranzo1528.html, PRs #35, #45).",
+   "open": "No. 20 (Garbino letter): 74 of 1,314 tokens, 27 groups with no value in either key and 47 tentative Lasry values Rosson's key does not confirm; both keys' readings still to be checked against the images of ff. 44r-46v. Blocker: open codes.",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 9,
+   "counted": true,
+   "year": 1503,
+   "date": "27 Apr 1503 – 24 Feb 1504",
+   "title": "Espagnol 318 nos. 93 and 94: two unread ciphers of Ferdinand's secretariat",
+   "correspondents": "Lorenzo Suárez de Figueroa (Venice) → the Catholic Monarchs; the viceroy of Sicily (Messina) → Ferdinand",
+   "place": "Venice, Messina → Spain",
+   "language": "Spanish",
+   "region": "Spain",
+   "period": "1497-1559",
+   "shelfmark": "BnF Espagnol 318 nos. 93, 94",
+   "ark": "btv1b52503046q",
+   "folio_note": "ff. 118-118v (no. 93), 120-121v (no. 94) = canvases 446-447, 452-455",
+   "cls": "C",
+   "seen": "image",
+   "source": "BnF harvest",
+   "status": "Narrowed 14 Oct 2026 to nos. 93 and 94 (one key per entry). The entry first covered five ciphered letters in at least four ciphers: no. 5 (Escrivà's cipher, printed by Parisi 2020; targets/federico1497/), no. 92 (Cifra general, read in part; targets/esp318/) and no. 95 (Lasry's 2022 alphabet, read in part; targets/esp318no95/) now have their own entries. Nos. 93 and 94 are unread and their keys unknown; no shared key is claimed. Code initials exclude Escrivà no. 1 and the Cifra general and fall in the band of the Gran cifra of 1501-04; a homophonic anneal of 1,016 signs of no. 93 failed (the CVC groups are atomic). No. 94 not transcribed. See targets/esp318no93/.",
+   "why": "The earliest Spanish diplomatic ciphers online; the Naples war (Cerignola, Garigliano) and Venice 1504.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Rescored by hand 14 Oct 2026 after the split: no key in hand for either letter; the Gran cifra survives only as Bergenroth's partial list (BNE MSS 20.211/52, not online) and the 'Cifra del visorrey' (BRAH 9/15 ff. 1-6) is unpublished.",
+   "verify": "Transcribe no. 94 ff. 120r-121v (clear-text islands give context) and test Bergenroth's Gran-cifra list before a cold break.",
+   "writeup": "esp318no93.html",
+   "outcome": "attempted, open",
+   "known": "Nothing for nos. 93 and 94: keys not identified; a homophonic anneal of 1,016 signs of no. 93 failed (esp318no93.html). Former siblings: no. 5 printed by Parisi 2020 (federico1497), no. 92 about 75% deciphered with the Cifra general (esp318), no. 95 with Lasry's 2022 alphabet, in progress (esp318no95).",
+   "open": "No. 93 (f. 118r-v) whole letter: CVC nomenclator, the suspected Gran cifra key survives only as Bergenroth's partial list (BNE MSS 20.211/52, not online). No. 94 (ff. 120-121v) never transcribed or tested.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 10,
    "counted": true,
    "year": 1558,
-   "date": "12–27 Dec 1558",
-   "title": "Seure (Lisbon) to de Fresne and Henri II, six letters",
-   "correspondents": "chevalier de Seure → de Fresne; → Henri II",
-   "place": "Lisbon → France",
+   "date": "13 Nov 1558",
+   "title": "Noailles (Venice) to the Cardinal de Lorraine",
+   "correspondents": "François de Noailles → the Cardinal de Lorraine",
+   "place": "Venice → France",
    "language": "French",
    "region": "Italy",
    "period": "1497-1559",
-   "shelfmark": "BnF fr. 3151 nos. 39–44",
+   "shelfmark": "BnF fr. 3151 no. 33 f. 60r",
    "ark": "btv1b9059865k",
    "folio_note": "",
    "cls": "C",
    "seen": "catalogue",
    "source": "BnF harvest",
-   "status": "La Guiche (fr. 3138 no. 22) read in part and Noailles (no. 33) read at the time: see targets/guiche1551/. Seure: six letters (40/41 and 43/44 duplicates, views 72–88), ~2,000 signs of a homophonic symbol cipher with numeral codes; no decipherment on the leaves.",
-   "why": "Parma war; Cateau-Cambrésis negotiations; Portugal after Sebastian's accession.",
+   "status": "Narrowed 18 Oct 2026 to Noailles's letter (no. 33, views 60-61), targets/noailles1558/: two short cipher blocks (about 150 signs by eye) in a symbol alphabet of their own; the court's decipherment stands in the inner margin but the binding hides the start of each gloss line; cipher not transcribed or attacked. Removed: Seure's five Lisbon letters (nos. 39-41, 43-44), key recovered by Angus Robinson (PR #40), targets/seure1558/; La Guiche (fr. 3138 no. 22) read in part, targets/guiche1551/.",
+   "why": "Venice embassy during the Cateau-Cambrésis negotiations; Levant galleys, Candia, Corfu.",
    "importance": 2,
    "solvability": 2,
    "difficulty": 4,
-   "score_note": "Six letters under one key; large corpus, transcription-bound.",
-   "verify": "Transcribe the cipher blocks; compare the duplicate copies for clear/cipher overlap.",
-   "outcome": "attempted, open"
+   "score_note": "One letter, about 150 signs, with a partly hidden marginal decipherment as crib.",
+   "verify": "Transcribe the two blocks on f. 60r; use the visible gloss words as cribs, or get the page photographed open flat.",
+   "outcome": "attempted, open",
+   "known": "The court's decipherment of the time stands in the inner margin of f. 60r and is partly legible (noailles1558.html). Former siblings: Seure's 1558 Lisbon letters, key recovered by Angus Robinson (PR #40, seure1558); La Guiche 1551, key recovered ciphertext-only here (guiche1551).",
+   "open": "The two cipher blocks (about 150 signs) are not transcribed or attacked; the start of each gloss line is hidden by the binding (needs the page photographed open flat).",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 12,
+   "counted": true,
+   "year": 1586,
+   "date": "1586",
+   "title": "Matignon in Mayenne-Forget's Cipher-2, BnF fr. 15572 ff. 218-219",
+   "correspondents": "Matignon → the Court (per Tomokiyo)",
+   "place": "Guyenne → Paris",
+   "language": "French",
+   "region": "France",
+   "period": "1560-1589",
+   "shelfmark": "BnF fr. 15572 ff. 218-219",
+   "ark": "btv1b9061879d",
+   "folio_note": "Gallica; the catalogue line first gave 'fr. 15571 ff. 218-219', a slip for fr. 15572",
+   "cls": "B",
+   "seen": "catalogue",
+   "source": "cryptiana fine print",
+   "status": "Narrowed 14 Oct 2026 (one key per entry) to the Cipher-2 leaves, the only part of the item not taken up. The rest of the item is two entries: Mayenne-Forget's Cipher-1 despatches (entry matignon1586, in progress, 31% measured) and Matignon's Cipher-3 leaves f. 276 and fr. 15571 f. 179 (entry matignon1586c3, read by alejandrozarco). f. 43 of fr. 15572, also in the original line, was solved by George Lasry in 2022. ff. 218-219 are listed by Tomokiyo as Matignon in Mayenne-Forget's Cipher-2; not yet viewed or attempted here. The 'Cipher-2' values once read off f. 79r were withdrawn: f. 79r is Cipher-1.",
+   "why": "Guyenne front of the eighth war; Matignon against Navarre.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Rescored by hand 14 Oct 2026 after the split: a different cipher from the solved Cipher-1; no key or crib identified yet for Cipher-2.",
+   "verify": "View ff. 218-219 on Gallica, confirm the cipher is not Cipher-1 or Cipher-3, and look for a Cipher-2 table on cryptiana or a deciphered sibling in fr. 15572.",
+   "outcome": null,
+   "known": "Nothing for ff. 218-219 (not viewed). Former siblings: Mayenne-Forget Cipher-1 deciphered in part here with the recovered key (matignon1586, 31%, in progress); Cipher-3 f. 276 and fr. 15571 f. 179 deciphered by alejandrozarco with Tomokiyo's key (PRs #25, #26; matignon1586c3.html); f. 43 by George Lasry 2022.",
+   "open": "fr. 15572 ff. 218-219 (Tomokiyo's Matignon in Mayenne-Forget Cipher-2): not viewed, transcribed or attempted; no key or crib identified.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 13,
@@ -82,122 +148,78 @@
    "difficulty": 4,
    "score_note": "One letter, unknown sender; Lasry's keys for the volume are the first thing to try.",
    "verify": "Test Lasry's fr. 15564 keys; read the endorsement.",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Clear frame transcribed; cipher shown not to be in Lasry's 2022 fr. 15564 key (as Lasry himself found), nor the Mayenne-Forget or Clair. 357 keys (mercoeur1586.html).",
+   "open": "All six cipher runs (217 signs of 55 kinds: Greek letters, squares, digits). Too short for ciphertext-only; needs a sibling letter or the key.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 20,
    "counted": true,
    "year": 1593,
-   "date": "14 May – 4 Aug 1593",
-   "title": "Papal-side letters: Sega, Baudouin-Desportes, Mauclerc",
-   "correspondents": "memoir → Cardinal Sega; Baudouin-Desportes → Pietro Aldobrandini and → Girolamo Frachetta; Dr Mauclerc → Creil",
+   "date": "14–15 May 1593",
+   "title": "Cardinal Sega's legation: the Curia's instruction and a Paris letter",
+   "correspondents": "the Curia → Cardinal Sega (instruction, duplicate of 14 May 1593); Paris → Rome, 15 May 1593",
    "place": "Paris → Rome",
-   "language": "Italian, French",
+   "language": "Italian",
    "region": "Italy",
    "period": "1589-1598",
-   "shelfmark": "BnF fr. 3984 nos. 6, 8, 88 (f. 186), 90 (f. 189); fr. 3985 no. 7",
+   "shelfmark": "BnF fr. 3984 nos. 6 (ff. 12-17) and 8 (f. 22r-v)",
    "ark": "btv1b9060633d",
-   "ark2": "btv1b90606498",
    "folio_note": "",
    "cls": "A",
    "seen": "image",
    "source": "BnF harvest",
-   "status": "Attempted 17 Sept 2026, not read. Tomokiyo's League polyphonic cipher (mayenne.htm) is the key; f. 188 (mostly clear, cipher on the verso) is the original of the deciphered f. 184-185, and f. 176 of f. 177. f. 186 is a clear letter with c. 58 lines of cipher passages, f. 189 one page wholly in cipher (33 lines): c. 5,000 polyphonic glyphs. A classifier trained on the 1,100 aligned glyphs of f. 188v reads 75-79 % of held-out glyphs, hand reading c. 70 %; the polyphonic decoder needs over 90 %, and no verbatim crib from f. 185 occurs in f. 189 or f. 186v (local-alignment search against a shuffled control). fr. 3985 no. 7 not examined.",
-   "why": "Written in the week of Henri IV's abjuration (25 Jul 1593) and the truce of Suresnes.",
+   "status": "Narrowed 20 Oct 2026 to the two Sega items. The Baudouin-Desportes letters (fr. 3984 f. 186, f. 189) were deciphered by Paolo Rosson on 1 Oct 2026 with Tomokiyo's League key, checked here and written up (targets/desportes1593/, desportes1593.html). The Mauclerc letters (fr. 3983 f. 268, fr. 3984 f. 33, fr. 3985 no. 7 = f. 20) were read at the time: interlinear decipherments, summarised in clear in fr. 3983 f. 140r (targets/mauclerc1593/). Open: no. 8 is a homophonic substitution with a small nomenclator (Z separates words; D, N, X nulls), no. 6 continuous figures (3 and 8 nulls, letters as figure pairs, codes framed by nulls), per Brice Dudout, whose partial candidate readings are at bdudout.github.io/europe-chiffree/en/sega-1593.html. Tomokiyo, Cryptologia 43(1) 2019, gave a preliminary decipherment of 1593 continuous-figure texts, probably including no. 6. Not yet attempted or checked here.",
+   "why": "The Curia's line on Henri IV's conversion and the Infanta's claim, and a report on the Suresnes conference, May 1593.",
    "importance": 4,
    "solvability": 4,
    "difficulty": 2,
-   "score_note": "Scores as first assigned; closed as not solvable with the present tools, see targets/sega1593/NOTES.md.",
-   "verify": "Reopen with a paleographic transcription of f. 177 (to train on f. 176, 90 more lines) or a human glyph transcription of ff. 186/189; decoder and period LM are ready.",
-   "outcome": "attempted, open"
+   "score_note": "Scores as first assigned to the whole of item 20; narrowed 20 Oct 2026, see targets/sega1593/NOTES.md.",
+   "verify": "Compare Brice Dudout's readings of nos. 6 and 8 with Tomokiyo, Cryptologia 43(1) 2019; check his no. 8 key on f. 22r-v.",
+   "outcome": "attempted, open",
+   "known": "Nos. 6 and 8: Brice Dudout described both systems and gives partial candidate readings (bdudout.github.io); Tomokiyo (Cryptologia 43(1) 2019) gave a preliminary decipherment of 1593 figure texts, probably incl. no. 6. Former siblings: Baudouin-Desportes ff. 186, 189 deciphered by Paolo Rosson with Tomokiyo's key (desportes1593.html); Mauclerc letters deciphered at the time (mauclerc1593).",
+   "open": "No. 8 (f. 22, homophonic with small nomenclator) and no. 6 (ff. 12-17, continuous figures): not attempted or checked here; Dudout's readings still to be compared with Tomokiyo 2019 (sega1593, in progress).",
+   "as_of": "2026-10-21"
   },
   {
-   "id": 25,
+   "id": 46,
    "counted": true,
-   "year": 1610,
-   "date": "10 Nov 1610",
-   "title": "Marie de Médicis to Savary de Brèves",
-   "correspondents": "Marie de Médicis → Savary de Brèves",
-   "place": "Paris → Rome",
-   "language": "French",
-   "region": "Italy",
-   "period": "1598-1610",
-   "shelfmark": "BnF fr. 3789 no. 12",
-   "ark": "btv1b9059628m",
-   "folio_note": "notice no. 12 = stamped f. 19r (canvas 36); sibling 15 Sept 1610 = stamped f. 17r",
-   "cls": "C",
-   "seen": "catalogue",
-   "source": "BnF harvest",
-   "status": "Attempted 21 Sept 2026: transcribed with its 15 Sept sibling (DECODE R2076/R2075). Probably the Henri IV–Brèves 1610 cipher broken by Lasry et al. 2021 (R2077; key BnF fr. 3642), but DECODE's 833-px key photo is partial and my reading of it gives no French. Brèves's reply of 9 Dec 1610 (Cinq cents de Colbert 351, pp. 724-730) paraphrases the Savoy/Spain points without quoting the passage.",
-   "why": "Six months after Henri IV's assassination; the regency's Rome policy.",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 4,
-   "score_note": "Single letter, no sibling; Brèves' other ciphers (1593–96, 1602–03) are known and worth testing.",
-   "verify": "Get Lasry's R2077 decryption or a legible image of BnF fr. 3642 and apply it; see targets/breves1610/NOTES.md.",
-   "outcome": "attempted, open"
-  },
-  {
-   "id": 30,
-   "counted": false,
-   "year": 1593,
-   "date": "9 Jul 1593",
-   "title": "Laurière to Nevers, Châlons, 9 Jul 1593",
-   "correspondents": "Laurière → duc de Nevers",
-   "place": "Châlons → Nevers",
-   "language": "French",
-   "region": "France",
-   "period": "1589-1598",
-   "shelfmark": "BnF fr. 3625 no. 55 (f. 66r, Gallica canvas 143)",
-   "ark": "btv1b52511322v",
-   "folio_note": "Key source: no. 10, f. 10r (canvas 31), interlinear decipherment",
-   "cls": "A",
-   "seen": "catalogue",
-   "source": "BnF harvest",
-   "status": "Read in fragments 21 Sept 2026 (targets/champagne1590/): a syllabic figure-and-sign code; 19 of 86 groups read with a 12-entry table rebuilt from the glossed runs of Laurière's 13 Jul letter (no. 10, f. 10r; key_lauriere.txt). Open: the syllable groups. Nos. 23-25, 60 of fr. 3623 read; no. 78 one group only.",
-   "why": "Nevers' government of Champagne in 1590–91.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Laurière is a direct alignment; the news-letters may share Nevers-office keys already reconstructed by Tomokiyo.",
-   "verify": "Tomokiyo's Nevers keys nos. 1–70 against no. 23.",
-   "outcome": "attempted, open"
-  },
-  {
-   "id": 36,
-   "counted": true,
-   "year": 1751,
-   "date": "28 Dec 1751",
-   "title": "King Frederick II (the Great) of Prussia (1712-1786) (London) to Louis Michell (1712-1786), Prussian resident in London",
-   "correspondents": "King Frederick II (the Great) of Prussia (1712-1786) → Louis Michell (1712-1786), Prussian resident in London",
-   "place": "London, England",
-   "language": "French",
-   "region": "Germany",
+   "year": 1710,
+   "date": "6 Mar 1710",
+   "title": "János Pápai (Belgrade) to Ferenc Rákóczi II, 6 March 1710: graphic-sign passages",
+   "correspondents": "János Pápai → Ferenc Rákóczi II",
+   "place": "Landor Fejérvár (Belgrade)",
+   "language": "Hungarian",
+   "region": "Hungary",
    "period": "1701-1800",
-   "shelfmark": "KHA The Hague, Prins Willem V, inv.nr. 198",
+   "shelfmark": "MNL OL, G15 Caps. H Fasc. 226, pp. 31-33 (DECODE R731)",
    "folio_note": "",
-   "cls": "C",
-   "status": "DECODE R1955: Non-decrypted, 2 pp., nomenclator, numerical. 19 Sept 2026: transcribed in full (targets/michell1751/transcription_r1955.txt). Heading \"Lettre du Roi de Prusse au Secrétaire Michell du 28 Decemb. 1751\", clear opening \"Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois\", 362 code groups (2 to 5346, with half-groups 1½, 10½, 40½, 150½, 180½, 660½), dated and signed Féderic. Only one letter of this date to Michell is in Politische Correspondenz 8 (no. 5263 = R1957), so this is the ministerial rescript and has no printed text. 295 of the 362 groups are distinct and the commonest occurs 5 times: a large two-part homophonic code, not breakable from this letter alone. It would need the Prussian ministerial code of 1751 (GStA), Lyonet's Dutch decipherments, or British decyphers of Michell's mail.",
-   "why": "Ciphered letter of King Frederick II (the Great) of Prussia (1712-1786) to Louis Michell (1712-1786), Prussian resident in London, 28 Dec 1751; what the cipher hides is not known.",
+   "cls": "B",
+   "status": "Narrowed 14 Oct 2026 (one key per entry) to R731; the other records of the item are read with Pápai's envoy key R580 in targets/papai1706/. R731 is a clear letter with six short passages in a graphic-sign alphabet (~330 signs), transcribed tentatively and attacked 21 Sept 2026 (targets/papai1710/): a control-validated substitution solver finds no Hungarian; the 2448-px camera images do not settle the signs. DECODE note: the image is not in the public domain; publishing only with the archive's permission.",
+   "why": "The only letter of Rákóczi's envoy to the Porte in a graphic alphabet rather than his numeric key.",
    "importance": 3,
-   "solvability": 1,
-   "difficulty": 5,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scores of entry 46 carried over unchanged when it was narrowed to R731 (14 Oct 2026).",
+   "verify": "Better photographs of pp. 31-33 or the sign alphabet; then rerun targets/papai1710/solve731.py.",
    "ark": "",
    "links": [
     {
-     "label": "DECODE R1955",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/1955"
+     "label": "DECODE R731",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/731"
     }
    ],
-   "seen": "catalogue",
+   "seen": "images",
    "source": "DECODE",
    "decode_ids": [
-    1955
+    731
    ],
+   "scored": "rule",
    "outcome": "attempted, open",
-   "scored": "rule"
+   "known": "R731's six passages transcribed tentatively (~330 signs); a control-validated solver finds no Hungarian (papai1710.html). Former siblings: Pápai's eleven numeric letters deciphered with envoy key R580, 99.7% (papai1706.html).",
+   "open": "All six graphic-sign passages of R731. Blocker: the 2448-px camera images do not settle sign segmentation and dots; needs better photographs or the sign alphabet.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 53,
@@ -248,7 +270,10 @@
     5008
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "System identified as a two-digit syllabary; R5005 transcribed (3,969 digits); seven values (11 la, 70 pre, 82 m, 34 i, 29 er, 40 e, 46 que) recovered from the rubbed-out pencil decipherment (zeschau1841.html).",
+   "open": "All four letters R5005-R5008 undeciphered; R5006-R5008 not transcribed. No key on DECODE; ciphertext-only solvers failed. Needs the key, imaging of the erased pencil, or more transcribed siblings.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 58,
@@ -264,7 +289,7 @@
    "shelfmark": "TNA, State Papers, inv.nr. 106 box 10, f. 251 · DECODE R931",
    "folio_note": "",
    "cls": "B",
-   "status": "Attempted, open (sp106box10, 21 Sept 2026). Of the four DECODE records first grouped here, R722 turned out to be the 1625 Venetian letter of the sp106box10 codebreaker's file (endorsement and clear passages read), and R656 and R662 are that codebreaker's worksheet and memorandum; they moved to sp106box10. Left: R931, a strip of ~190 numbers 10-260 with clear words ('(1) septembre 1645', 'earnestly', 'reasons'), 104 distinct numbers: a nomenclator. Lasry's 1645-46 SP 106 keys, the R932 Goring key and the Charles I-Culpeper 1645 key (R9117/R9118) do not fit.",
+   "status": "Attempted, open (21 Sept 2026; own entry sp106r931 since 14 Oct 2026). Of the four DECODE records first grouped here, R722 is the 1625 Venetian letter of the SP 106/10 codebreaker's file (now sp106r722, catalogue 66) and R656 and R662 are that codebreaker's worksheet and memorandum on it. Left here: R931, a strip of ~190 numbers 10-260 with clear words ('(1) septembre 1645', 'earnestly', 'reasons'), 104 distinct numbers: a nomenclator. Lasry's 1645-46 SP 106 keys, the R932 Goring key and the Charles I-Culpeper 1645 key (R9117/R9118) do not fit.",
    "why": "A royalist despatch of autumn 1645, after Naseby; what it says is not known.",
    "importance": 2,
    "solvability": 3,
@@ -274,18 +299,6 @@
    "ark": "",
    "links": [
     {
-     "label": "DECODE R656",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/656"
-    },
-    {
-     "label": "DECODE R662",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/662"
-    },
-    {
-     "label": "DECODE R722",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/722"
-    },
-    {
      "label": "DECODE R931",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/931"
     }
@@ -293,13 +306,68 @@
    "seen": "catalogue",
    "source": "DECODE",
    "decode_ids": [
-    656,
-    662,
-    722,
     931
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "writeup": "sp106r931.html",
+   "known": "R931 identified as a 1645 royalist nomenclator letter (~190 numbers, 104 distinct, clear words); Lasry's 1645-46 SP 106 keys, the R932 Goring key and the Charles I-Culpeper key R9117/R9118 excluded (sp106r931.html).",
+   "open": "All the code numbers. Blocker: no key; needs a Digby/Nicholas/Goring key of autumn 1645 (BL Add MS 32256 ff. 4-9, Egerton 2550, DECODE R9115-R9119, R3053-R3105).",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 66,
+   "counted": false,
+   "year": 1625,
+   "date": "first half of 1625",
+   "title": "A Venetian secretary to the Venetian ambassador in England, 1625, in a three-figure syllabic code (SP 106/10 ff. 193-195)",
+   "correspondents": "A Venetian secretary → the Venetian ambassador in England",
+   "place": "Kew",
+   "language": "Italian",
+   "region": "England",
+   "period": "1611-1650",
+   "shelfmark": "TNA, State Papers, inv.nr. 106 box 10, ff. 193-195 · DECODE R722, with the codebreaker's worksheets R703 (ff. 184-185), R656, R661, R662, R663, R667, R684, R701, R702, R720",
+   "folio_note": "",
+   "cls": "B",
+   "status": "Attempted, open (21 Sept 2026; restored 14 Oct 2026 for sp106r722). This entry first held only R703, closed on 21 Sept 2026 as a codebreaker's worksheet on a 'lost' 46-line letter; the letter is R722 (endorsed 'Cypher of a Venetian Secretary to the Embassador of that nation', 1625; Spinola before Breda, the Pope and Bethune in the clear passages). All 420 code groups (117 types) transcribed; the codebreaker's partial key on R701 p. 3 and clear-text junctions fix a few values; annealing does not converge. Split from sp106box10 under the one-key rule.",
+   "why": "A Venetian diplomatic letter of 1625 with the English codebreaker's failed attack on it; the code text is unread.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Restored 14 Oct 2026 from the removed id 66; scores set by hand at the split, not reviewed.",
+   "verify": "Another letter in the same code (Venetian correspondence of 1625, ASVe or SP 99), or more of the codebreaker's run sheets; see targets/sp106r722/NOTES.md.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R722",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/722"
+    },
+    {
+     "label": "DECODE R703",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/703"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "DECODE",
+   "decode_ids": [
+    722,
+    703,
+    656,
+    661,
+    662,
+    663,
+    667,
+    684,
+    701,
+    702,
+    720
+   ],
+   "scored": "reviewed",
+   "outcome": "attempted, open",
+   "writeup": "sp106r722.html",
+   "known": "R722 identified (Venetian secretary to the ambassador, first half of 1625); endorsement and clear Italian passages read; all 420 code groups transcribed; four values from clear-text junctions and some from the codebreaker's partial key R701 p. 3 (sp106r722.html).",
+   "open": "The code groups (420 tokens, 117 types) undeciphered; annealing does not converge. Blocker: no key; another letter in this code would be needed (ASVe or TNA SP 99, not online).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 74,
@@ -340,7 +408,10 @@
     7930
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "A few groups glossed at the time (33=e, 23=n, 10=d, 15=t, 40=long s, 230=der); R7928 shown not to be Palm's key (palm1727.html). PR #21 (Feyseel): a word solver that recovers synthetic texts finds no German in R7927, pointing to the transcription.",
+   "open": "The 14 cipher passages of R7927 (162 letter tokens plus 3-figure codes); the Palm-Visconti letter behind R7930's cover is not imaged. Needs Palm's key, the Deciphering Branch clear copy, or a re-transcription.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 75,
@@ -376,7 +447,10 @@
     8871
    ],
    "scored": "rule",
-   "outcome": "attempted, skipped: impossible without the key or the rest of the series"
+   "outcome": "attempted, skipped: impossible without the key or the rest of the series",
+   "known": "Nothing deciphered. R8871 identified as a ruled copy form, 'Suite du No 13 / No 24', 77 trigram groups; none of the 26 DECODE key records of Add MS 32280 fits (targets/r8871, no page).",
+   "open": "All 77 groups. Blocker: too short for a large or enciphered code; needs the key or the rest of the series (probably unimaged ff. 4-54).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 76,
@@ -412,7 +486,10 @@
     8870
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. R8870 transcribed (901 groups, values 1-1647, ending 'Duplicata'); none of the 27 key records of Add MS 32280 fits (targets/r8870, no page).",
+   "open": "The whole letter. Blocker: no key; a ~1,650-group code cannot be rebuilt from 901 tokens.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 77,
@@ -448,24 +525,27 @@
     7707
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. f. 37r (205 signs) transcribed; ff. 38-40 are a contemporary codebreaker's tallies and contact tables with no reading (r7707.html).",
+   "open": "The whole 205-sign text: not a simple substitution (IoC 1.07), mono, periodic and Quagmire anneals failed. Blocker: too short, no key; needs the key or the sibling letters (dockets 31 Aout, 5 8bre).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 78,
    "counted": false,
    "year": 1719,
-   "date": "7 Feb 1719 – 19 Jan 1745",
-   "title": "Paris 1719 and Carré 1742–45 code letters, 5 ciphertexts",
+   "date": "7 and 10 Feb 1719",
+   "title": "Paris 1719 code letters, 2 ciphertexts",
    "correspondents": "Unknown sender → unknown recipient",
    "place": "Paris, France",
-   "language": "...",
+   "language": "French",
    "region": "England",
    "period": "1701-1800",
-   "shelfmark": "BL, Add MS 32305 (5 items)",
+   "shelfmark": "BL, Add MS 32305 ff. 6–7 (2 items)",
    "folio_note": "",
    "cls": "B",
-   "status": "Viewed 21 Sept 2026 (targets/bl32305/). R2963 and R2974 were deciphered at the time and are dropped. R2964/R2965 (Paris 7 and 10 Feb 1719): two-part 3-figure code, ~12 contemporary glosses, 354 groups in f. 6. R2968/R2970/R2972 (letters to Mr Carré, Pall Mall, Mar 1742, received 22 Aug 1742, 19 Jan 1745): transcribed in full (1323 groups, 381 distinct, 1–800); not a letter cipher (anneal = shuffled control), not one-part (r = −0.26): two-part code of ~800 entries, closed; R2969 is a frequency count, not a key. Former entry #70 (R2970 alone) folded in here.",
-   "why": "Ciphered despatches of Unknown sender to unknown recipient, 1 Feb 1719 – 17 Nov 1749; what the cipher hides is not known.",
+   "status": "Viewed 21 Sept 2026 (targets/bl32305/). R2963 and R2974 were deciphered at the time and are dropped. R2964/R2965 (Paris 7 and 10 Feb 1719): two-part 3-figure code, ~12 contemporary glosses, 354 groups in f. 6. The Carré letters R2968/R2970/R2972 (a different code) were split off on 14 Oct 2026 to item 70 (targets/carre1742/).",
+   "why": "Ciphered letters from Paris to a correspondent in England, February 1719; what the code hides is not known.",
    "importance": 3,
    "solvability": 3,
    "difficulty": 3,
@@ -480,7 +560,44 @@
     {
      "label": "DECODE R2965",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/2965"
-    },
+    }
+   ],
+   "seen": "catalogue",
+   "source": "DECODE",
+   "decode_ids": [
+    2964,
+    2965
+   ],
+   "scored": "rule",
+   "outcome": "attempted, open",
+   "writeup": "bl32305.html",
+   "known": "R2963 and R2974 deciphered at the time (dropped). In R2964 about 33 of 354 groups carry contemporary glosses (bl32305.html). Carré letters split to entry 70.",
+   "open": "R2964's other ~321 groups and all of R2965 (not transcribed): two-part 3-figure code of ~900 entries. Blocker: no key, clear copy or other letter in the code.",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 70,
+   "counted": false,
+   "year": 1742,
+   "date": "Mar 1742 – 19 Jan 1745",
+   "title": "Letters to Mr Carré, Pall Mall, 1742–45, 3 ciphertexts",
+   "correspondents": "Anonymous sender → Mr Carré, Pall Mall, London",
+   "place": "London, England",
+   "language": "unknown (French assumed from the headings)",
+   "region": "England",
+   "period": "1701-1800",
+   "shelfmark": "BL, Add MS 32305 ff. 11–12, 14–17, 22–23 (3 items)",
+   "folio_note": "",
+   "cls": "B",
+   "status": "Viewed 21 Sept 2026 (targets/carre1742/, split on 14 Oct 2026 from bl32305, where it had been folded into item 78). R2968/R2970/R2972 (letters to Mr Carré, Pall Mall, Mar 1742, received 22 Aug 1742, 19 Jan 1745): transcribed in full (1323 groups, 381 distinct, 1–800); not a letter cipher (anneal = shuffled control), not one-part (r = −0.26): two-part code of ~800 entries, closed; R2969 is a frequency count, not a key.",
+   "why": "Three anonymous letters to a Mr Carré in Pall Mall, intercepted 1742–45, entirely in a code with no gloss; what they hide is not known.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
+   "verify": "Needs the key, a clear copy or a glossed letter in the same code: Newcastle papers Add MS 32699–32700, SP 107, SP 36 (1742), the Secret Office letter-books.",
+   "ark": "",
+   "links": [
     {
      "label": "DECODE R2968",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/2968"
@@ -497,15 +614,16 @@
    "seen": "catalogue",
    "source": "DECODE",
    "decode_ids": [
-    2964,
-    2965,
     2968,
     2970,
     2972
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "bl32305.html"
+   "writeup": "carre1742.html",
+   "known": "Nothing deciphered. R2968, R2970, R2972 transcribed in full (1,323 groups, 381 distinct) and shown to be a two-part code of ~800 entries; R2969 is a frequency count, not a key (carre1742.html).",
+   "open": "All three letters. Blocker: no key, gloss or crib; a random-order code of this size cannot be rebuilt ciphertext-only.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 87,
@@ -545,7 +663,10 @@
     9256
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Deciphered at the time by Cecil on the original, TNA SP 52/1 (calendared CSP Foreign I 1051; Bain, CSP Scotland I 501). Not deciphered here from the Forbes tracing (percy1559.html).",
+   "open": "The four passages (63 signs) on the tracing. Blocker: no key; the SP 52/1 original with Cecil's interlined decipherment is not online.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 92,
@@ -561,7 +682,7 @@
    "shelfmark": "BL, Add MS 4136 ff. 148v-149 (Forbes's copy)",
    "folio_note": "",
    "cls": "A",
-   "status": "Viewed 21 Sept 2026 (targets/foix1563/NOTES.md). The entry's two records were two different letters. R9238 (ff. 142-143, 'L'Amiral de France à la Reine d'Angleterre') is Coligny to Elizabeth, camp at Villefranche, 12 Jan 1563: deciphered at the time and calendared (CSP Foreign vi no. 76) and printed in Forbes, Full View ii; closed. R9241's own letter (margin 'La Reine-mère de France à Mr de Foix Ambass. en Angleterre, 15 Jan 1563') is in neither Forbes nor CSP Foreign vi. About 950 tokens (Latin letters, digits, ligatures, a few two-digit numbers, clear nulls 'pour', 'car'), transcribed in targets/foix1563/qm_tokens.txt. Throckmorton's first, second and third ciphers and Croft's (R9260-R9262) do not fit; homophonic annealing (French and English, with and without nulls) found no language.",
+   "status": "Viewed 21 Sept 2026 (targets/foix1563/NOTES.md). The entry's two records were two different letters. R9238 (ff. 142-143, 'L'Amiral de France à la Reine d'Angleterre') is Coligny to Elizabeth, camp at Villefranche, 12 Jan 1563: deciphered at the time and calendared (CSP Foreign vi no. 76) and printed in Forbes, Full View ii; closed, and since 14 Oct 2026 part of targets/coligny1563/ (same Condé key R335). R9241's own letter (margin 'La Reine-mère de France à Mr de Foix Ambass. en Angleterre, 15 Jan 1563') is in neither Forbes nor CSP Foreign vi. About 950 tokens (Latin letters, digits, ligatures, a few two-digit numbers, clear nulls 'pour', 'car'), transcribed in targets/foix1563/qm_tokens.txt. Throckmorton's first, second and third ciphers and Croft's (R9260-R9262) do not fit, and homophonic annealing found no language (21 Sept). Since then the sign set was matched to Paul de Foix's own cipher, Tomokiyo's reconstruction from his 1565 letters (Feyseel Nur, PR #21), and Lawrence Beck's independent partial decipherment (PRs #18, #27) agrees with it on 19 of 25 shared signs: deciphered in part, below the read bar.",
    "why": "Catherine de' Medici writing in cipher to her ambassador in England during the first War of Religion, weeks after Dreux and while the English held Le Havre; the English intercepted it and Forbes's file kept the ciphertext, apparently with no decipherment.",
    "importance": 2,
    "solvability": 3,
@@ -582,7 +703,10 @@
     9241
    ],
    "scored": "reviewed",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "R9238 (Coligny, 12 Jan 1563) deciphered at the time, in CSP Foreign vi and Forbes (coligny1563). R9241: key identified as Paul de Foix's own cipher, Tomokiyo's 1565 reconstruction (Feyseel Nur, PR #21); partial decipherment by Lawrence Beck (PRs #18, #27), converging with it (targets/foix1563, no page).",
+   "open": "R9241 not at the read bar: 14 of 78 key entries rest on one occurrence, about a dozen signs (RX, monograms, numbers 10-82) unvalued, conflicts on 3, 2, z; needs a glyph audit on the images and a de Foix letter of 1563-64.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 97,
@@ -598,7 +722,7 @@
    "shelfmark": "BL, Add MS 4136 (2 items)",
    "folio_note": "",
    "cls": "A",
-   "status": "Attempted 21 Sept 2026 (targets/wod1568/, write-up wod1568.html). Throckmorton's 10 July 1559 letter on f. 32 is read in part there. Still unread: the f. 32 margin, a word-sign code (222 groups, 113 used once), probably a copy of the 8 July 1559 despatches; needs its key or TNA SP 70/5 (CSP For. i 947, 950). Wood's 39-sign line (6 Sept 1568) has no unique solution ciphertext-only; needs Hatfield, Cecil Papers vol. 1.",
+   "status": "Attempted 21 Sept 2026; split 14 Oct 2026 into one entry per cipher. Throckmorton's 10 July 1559 letter on f. 32 (Cipher 1) is read in part in targets/throck1559/. Still unread: the f. 32 margin (targets/throck1559margin/), a word-sign code (222 groups, 113 used once), probably a copy of the 8 July 1559 despatches; needs its key or TNA SP 70/5 (CSP For. i 947, 950). Wood's 39-sign line (6 Sept 1568, targets/wod1568/) has no unique solution ciphertext-only; needs Hatfield, Cecil Papers vol. 1.",
    "why": "Ciphered despatches of Unknown sender to unknown recipient, 10 Jul 1559 – 8 Aug 1559; what the cipher hides is not known.",
    "importance": 2,
    "solvability": 4,
@@ -623,7 +747,10 @@
     2989
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Throckmorton's 10 July 1559 letter on f. 32 deciphered about 85% here with Tomokiyo's Cipher 1 key plus corrections (throck1559.html). The margin code (throck1559margin.html) and Wood's line (wod1568.html) are written up as not deciphered.",
+   "open": "f. 32 margin word-sign code (222 groups, 113 used once): needs its key or TNA SP 70/5. Wood's 39-sign line of 1568: too short, needs Hatfield Cecil Papers vol. 1. Twelve code signs in the 10 July letter.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 123,
@@ -659,7 +786,10 @@
     8363
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Clear letter-book copy, printed in Digges 1655 p. 313 with the cipher unread; Dieppe fits the port by context only as a guess (walsingham1572.html).",
+   "open": "The six-sign port name '2 1 ⌘ ε 9 4' and the copyist's [9] placeholder. Blocker: too short, no 1572-73 key survives.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 125,
@@ -699,7 +829,10 @@
     8361
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Four clear letters, printed in Digges 1655 pp. 297-301; code [3] = the Queen by context (r8361.html).",
+   "open": "Codes [7], [9], H, the cover names, and the nine-sign letter run on f. 367r. Blocker: no Walsingham-Burghley 1572 key; run too short.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 127,
@@ -739,7 +872,10 @@
     8358
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Clear letter-book copy, printed in Digges 1655 (July 1572); code [3] = the French King by context (r8358.html).",
+   "open": "Codes [2], [4], [5], the monogram, letters A and F, and the five-sign run 'm o R. d A.'. Blocker: no key known; items too few and short.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 128,
@@ -779,7 +915,10 @@
     8357
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Clear letter-book copy, printed in Digges 1655 pp. 123-124; nothing deciphered (targets/burghley1572, no page; DECODE date 1572 corrected to 1571).",
+   "open": "The two code items on f. 143v ('ʒ368' and '45 □477ה ⌐□⌐418'). Blocker: no key on DECODE, in Tomokiyo or in print.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 129,
@@ -815,7 +954,10 @@
     8356
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Elizabeth's letter is clear; Walsingham's letter is printed in Digges 1655 p. 106 with the cipher as figures (r8356.html).",
+   "open": "The nine-sign run and codes [12], [E4] in Walsingham to Burghley. Blocker: too short, no key; the sent original in TNA SP 70 (CSP For. ix 1821) is not online and may carry a decipherment.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 135,
@@ -851,7 +993,10 @@
     8342
    ],
    "scored": "reviewed",
-   "outcome": "attempted, skipped: impossible without the key (no copy known; 59% hapax)"
+   "outcome": "attempted, skipped: impossible without the key (no copy known; 59% hapax)",
+   "known": "Printed without the cipher in Halliwell 1846. The Biermann-Bosbach-Brown 1648 key (which deciphered four other Isle of Wight letters in 2021) and the Titus key are excluded (targets/charlesi, no page).",
+   "open": "The whole cipher passage (99 groups per the entry; 88 per charlesi NOTES). Blocker: the key sent via 'the noble Frend' is not known to survive; too short and non-repeating for ciphertext-only.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 137,
@@ -892,47 +1037,10 @@
     7769
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
-  },
-  {
-   "id": 151,
-   "counted": true,
-   "year": 1522,
-   "date": "19 Mar 1522",
-   "title": "Rodrigo Niño (Naples) to Charles I",
-   "correspondents": "Rodrigo Niño → Charles I",
-   "place": "Naples",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1497-1559",
-   "shelfmark": "National Library of Spain, MSS/20213/27",
-   "folio_note": "",
-   "cls": "C",
-   "status": "DECODE R1182: Non-decrypted. Viewed here 21 Sept 2026: a clear Spanish letter with one 8-line ciphered paragraph on f. 1v, bracketed by the nulls 'mer' ... 'mer por'. The system is Kolosova's Cifra 15 (Rodrigo Niño 1522: simple substitution with syllable nulls; Kolosova 2017 thesis pp. 452-459, 2024 book, via Tomokiyo), but her key was not reachable (RODERIC PDF lacks the chapter; the book is paid). A ciphertext-only annealing attack on the eye transcription did not converge. Notes: targets/nino1522/NOTES.md.",
-   "why": "Ciphered letter of Rodrigo Niño to Charles I, 19 Mar 1522; what the cipher hides is not known.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Get the Ko.15 alphabet from Kolosova 2024 ('Cifrarios', pp. 171-224), or a full-resolution BNE BDH scan of MSS/20213/27.",
-   "ark": "",
-   "links": [
-    {
-     "label": "DECODE R1182",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/1182"
-    },
-    {
-     "label": "Notes",
-     "href": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/nino1522/NOTES.md"
-    }
-   ],
-   "seen": "image",
-   "source": "DECODE",
-   "decode_ids": [
-    1182
-   ],
-   "scored": "rule",
-   "outcome": "attempted, skipped: key in print (Kolosova's Cifra 15) but not reachable; blind attack infeasible on this scan"
+   "outcome": "attempted, open",
+   "known": "Clear text of both letters read; docket identifies Abraham Cowley's hand, not 'Conley' (conley1652.html). Hyde-Barwick key ruled out.",
+   "open": "The 23 code numbers in five runs (names, a place). Blocker: too few for ciphertext-only; needs a Jermyn/Queen key of 1652-53.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 152,
@@ -948,7 +1056,7 @@
    "shelfmark": "Archivio di Stato di Mantova, Archivio Gonzaga (DECODE R1854, image 1)",
    "folio_note": "",
    "cls": "B",
-   "status": "DECODE R1854 image 1 (the record holds four letters; images 2-5 read here, see targets/r1854/). Three cipher runs, 262 letter-like signs (ſſ, η, ʒ, H, cc, ∩, I, ƀʒ ...) inside a clear Latin letter on the peace of Ferrara (April 1428). Not a simple or homophonic substitution in Latin or Italian (controls pass); the R1853 register's Malatesta keys do not fit.",
+   "status": "DECODE R1854 image 1 (the record holds four letters in four ciphers; images 2-5 deciphered here, now the entries r1854, mutiliana1428 and cattanei1430; this item is targets/malatesta1428/, split 14 Oct 2026). Three cipher runs, 262 letter-like signs (ſſ, η, ʒ, H, cc, ∩, I, ƀʒ ...) inside a clear Latin letter on the peace of Ferrara (April 1428). Not a simple or homophonic substitution in Latin or Italian (controls pass); the R1853 register's Malatesta keys do not fit.",
    "why": "Pandolfo Malatesta's secret plans for his brother-in-law after the peace of Ferrara; one of the oldest unread cipher passages with images online.",
    "importance": 1,
    "solvability": 2,
@@ -968,7 +1076,10 @@
     1854
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Clear Latin frame read. The other three letters of R1854 deciphered here: image 2 (r1854, key from ciphertext), image 3 (mutiliana1428), images 4-5 (cattanei1430) (malatesta1428.html).",
+   "open": "The three cipher runs (262 signs): not mono- or homophonic in Latin or Italian; the R1853 Malatesta keys do not fit. Likely key material, Pandolfo's 1438 letter with its translation (ASMn), is not online or printed in cipher.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 156,
@@ -1009,7 +1120,10 @@
     1127
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. Sender identified as Benedetto Fantini; R1126 transcribed (1,370 columns); Caprile's 1519 key does not fit (jantini1517.html).",
+   "open": "R1126 pp. 1-2 and R1127 (five lines). Blocker: no key, clear copy or decipherment anywhere; R1127 also too short and damaged.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 157,
@@ -1025,7 +1139,7 @@
    "shelfmark": "ASMo, Ambasciatori b. 4/23, 1, Envoy reports, Ferrara",
    "folio_note": "",
    "cls": "B",
-   "status": "DECODE R1128: seven lines in Caprile's 1519 two-tier cipher (a small letter over a base sign), no decipherment. Worked 21 Sept 2026: the rest of the item (R1129–R1139) is resolved, see targets/caprile1519/ (1882 decipherments filed as b/c on Vestigia; R1138 read by Somogyi 2025; R1136 and R1139 read in part with a key rebuilt from her text). Subject, from the clear part and the next letter: Caprile's own lawsuit at Rome. Key obtainable from the 1882 decipherments of nos. 3–8 and 10.",
+   "status": "DECODE R1128: seven lines in Caprile's 1519 two-tier cipher (a small letter over a base sign), no decipherment. Worked 21 Sept and 2 Oct 2026 (targets/caprile1519/, attempted, open: the 1519 tables rebuilt from R1133/7c and R1130/4c give no signal on R1128). The rest of the item is resolved: R1129–R1135 have 1882 decipherments (b/c on Vestigia); the 1520–21 letters (R1136, R1138, R1139) are another cipher, read in part in targets/caprile1520/ (split 14 Oct 2026). Subject, from the clear part and the next letter: Caprile's own lawsuit at Rome. Key obtainable from the 1882 decipherments of nos. 3–8 and 10.",
    "why": "A Ferrarese agent at Eger, the Hungarian see held by Ippolito d'Este, writing to Ferrara in 1519–21 on Hungarian affairs on the eve of Mohács.",
    "importance": 3,
    "solvability": 3,
@@ -1045,7 +1159,11 @@
     1128
    ],
    "scored": "reviewed",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "R1129-R1135 deciphered in 1882 (Vestigia b/c copies) or interlined. The 1520-21 letters: key recovered from Somogyi 2025's plaintext, V1921 97%, R1139 89.7%, R1136 66.9% (caprile1520.html). R1128 written up as not deciphered (caprile1519.html).",
+   "open": "R1128 (9 Mar 1519, seven lines, 183 columns). No outside blocker: the key can be rebuilt from the 1882 sibling decipherments (next step, transcribe R1132 against 6b).",
+   "as_of": "2026-10-21",
+   "workable": true
   },
   {
    "id": 158,
@@ -1061,7 +1179,7 @@
    "shelfmark": "ASMo, Ambasciatori b. 4/26, 3, Envoy reports, Ferrara",
    "folio_note": "",
    "cls": "B",
-   "status": "DECODE R1137: Partially decrypted, 3 pp., type not given; numerical; images login. Not viewed here. DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. See other related manuscripts on http://vestigia.hu/kereses. Attempted 21 Sept 2026 (targets/caprile1519/): two-digit groups mostly ending in 5 or 0 (584 groups + 83 signs); a ciphertext-only anneal gives a partial key and phrases (lettere per, presto, saria meglio, non se poteria, dua milla) but no reading; transcription needs a second reader.",
+   "status": "DECODE R1137: Partially decrypted, 3 pp., type not given; numerical; images login. Not viewed here. DECODE note: The image is not in the public domain. Publishing it is only possible with the permission of the archive. See other related manuscripts on http://vestigia.hu/kereses. Attempted 21 Sept and 2 Oct 2026 (targets/cistarelli1520/, split from caprile1519 on 14 Oct 2026; closed unread): two-digit groups mostly ending in 5 or 0 (584 groups + 83 signs); a ciphertext-only anneal gives a partial key and phrases (lettere per, presto, saria meglio, non se poteria, dua milla) but no reading; transcription needs a second reader.",
    "why": "Ciphered letter of Alfonso Cistarelli to Ippolito I d'Este, 25 Jul 1520; what the cipher hides is not known.",
    "importance": 3,
    "solvability": 3,
@@ -1081,7 +1199,10 @@
     1137
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered (DECODE calls it 'partially decrypted'). 584 groups transcribed; a ciphertext-only anneal gives fragments (lettere per, presto, dua milla) above a shuffled control but no reading (cistarelli1520.html).",
+   "open": "The whole R1137 cipher. Blocker: the only image does not settle the digits (14% disagreement on a re-reading); no key exists; needs a better ASMo photograph.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 161,
@@ -1097,7 +1218,7 @@
    "shelfmark": "BayHStA, Kurbayern Äußeres Archiv 4591 f. 96–114 and 274–277",
    "folio_note": "",
    "cls": "B",
-   "status": "Of the 14 DECODE records in this entry, 12 were read or broken here (kaa4591, 21 Sept 2026). Left open: R9319, a dot grille laid over clear cover letters (f. 115–118) that DECODE did not image; R9424, 12 June 1583 to Wilhelm V (Cologne war), monoalphabetic by IoC but no key found (R9422 cut off). R9291 is a key fragment.",
+   "status": "Of the 14 DECODE records in this entry, 12 were read or broken here (21 Sept 2026; split by key 15 Oct 2026 into kaa4591, kaa4591b, fulda1576, r9367 and r9416). Left open, each with its own page: R9319 (r9319), a dot grille laid over clear cover letters (f. 115–118) that DECODE did not image; R9424 (r9424), 12 June 1583 to Wilhelm V (Cologne war), monoalphabetic by IoC but no key found (R9422 cut off). R9291 is a key fragment.",
    "why": "Ciphered despatches of Unknown sender to unknown recipient; what the cipher hides is not known.",
    "importance": 1,
    "solvability": 3,
@@ -1115,8 +1236,12 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/9424"
     },
     {
-     "label": "write-up",
-     "href": "kaa4591.html"
+     "label": "write-up R9319",
+     "href": "r9319.html"
+    },
+    {
+     "label": "write-up R9424",
+     "href": "r9424.html"
     }
    ],
    "seen": "catalogue",
@@ -1126,7 +1251,90 @@
     9424
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "12 of 14 records deciphered here and split: kaa4591 (System A', 89.8%), kaa4591b (Łaski's cipher; R9322, R9417, R9403 over the bar), fulda1576 (known key), r9367 (known key, 55%), r9416 (key from ciphertext, 6%).",
+   "open": "R9319 grille (r9319.html): the cover letters ff. 115-118 are not imaged on DECODE. R9424 (r9424.html), 913 signs: no key (R9422 cut off), probably code groups plus transcription noise.",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 166,
+   "counted": true,
+   "year": 1816,
+   "date": "undated (1816–23?)",
+   "title": "Principe di Castelcicala to Naples, an undated letter in a second code (R9588)",
+   "correspondents": "Fabrizio Ruffo, principe di Castelcicala → Naples (recipient not named on the leaf)",
+   "place": "Paris, France",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1801-1900",
+   "shelfmark": "ASNa, Ministerio degli affari esteri 2337 (DECODE R9588)",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 (one key per entry) to R9588; the other 14 records of the item are in the Segreteria di Stato code and read in part in targets/castelcicala1816/. R9588 is in a second code (groups mostly 100–1100), shared only with R9586 (item 167); 432 groups transcribed (targets/r9586/), sparse pencil syllabic glosses; not attacked yet.",
+   "why": "A letter of the Neapolitan ambassador in a code not otherwise used in the series; the pencil glosses may give a crib.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scores of entry 166 carried over unchanged when it was narrowed to R9588 (14 Oct 2026).",
+   "verify": "Align the pencil glosses with their groups (targets/r9586/transcripts/R9588.txt), then extend through repeats with R9586.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R9588",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/9588"
+    }
+   ],
+   "seen": "images",
+   "source": "DECODE",
+   "decode_ids": [
+    9588
+   ],
+   "scored": "rule",
+   "outcome": "attempted, open",
+   "known": "R9588: 432 groups transcribed, sparse pencil syllabic glosses noted (r9586.html). Former siblings in the Segreteria di Stato code: key rebuilt from four interlinear decipherments, 46.7% of groups valued, no letter reads through (castelcicala1816.html).",
+   "open": "R9588 entirely; not attacked. No outside blocker: the pencil glosses are an untried crib, to align and extend through repeats with R9586.",
+   "as_of": "2026-10-21",
+   "workable": true
+  },
+  {
+   "id": 167,
+   "counted": true,
+   "year": 1816,
+   "date": "undated (1816–23?)",
+   "title": "Principe di Castelcicala to Naples, an undated letter in a second code (R9586)",
+   "correspondents": "Fabrizio Ruffo, principe di Castelcicala → Naples (recipient not named on the leaf)",
+   "place": "Paris, France",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1801-1900",
+   "shelfmark": "ASNa, Ministerio degli affari esteri 2337 (DECODE R9586)",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 (one key per entry) to R9586; the other 8 records of the item are in the Segreteria di Stato code and read in part in targets/castelcicala1816/. R9586 is in a second code (groups mostly 100–1100), shared only with R9588 (item 166); 537 groups transcribed (targets/r9586/), sparse pencil syllabic glosses; not attacked yet.",
+   "why": "A letter of the Neapolitan ambassador in a code not otherwise used in the series; the pencil glosses may give a crib.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Importance and difficulty of entry 167 carried over when it was narrowed to R9586 (14 Oct 2026); solvability set to entry 166's 3, since the pencil glosses are an untried crib (167's 1 was for the main code without glosses).",
+   "verify": "Align the pencil glosses with their groups (targets/r9586/transcripts/R9586.txt), then extend through repeats with R9588.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R9586",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/9586"
+    }
+   ],
+   "seen": "images",
+   "source": "DECODE",
+   "decode_ids": [
+    9586
+   ],
+   "scored": "reviewed",
+   "outcome": "attempted, open",
+   "known": "R9586: 537 groups transcribed, sparse pencil syllabic glosses noted (r9586.html). Former siblings in the Segreteria di Stato code: key rebuilt from four interlinear decipherments, 46.7% of groups valued, no letter reads through (castelcicala1816.html).",
+   "open": "R9586 entirely; not attacked. No outside blocker: the pencil glosses are an untried crib, to align and extend through repeats with R9588.",
+   "as_of": "2026-10-21",
+   "workable": true
   },
   {
    "id": 169,
@@ -1162,43 +1370,10 @@
     2877
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
-  },
-  {
-   "id": 170,
-   "counted": true,
-   "year": 1520,
-   "date": "1520s (BnF range 1520-29)",
-   "title": "Hieronimo Ranzo (Venice) to unknown recipient",
-   "correspondents": "Hieronimo Ranzo → unknown recipient",
-   "place": "Venice, Italy",
-   "language": "Italian",
-   "region": "France",
-   "period": "1497-1559",
-   "shelfmark": "Bibliotheque National Ancien Fonds inv.nr. 2988",
-   "folio_note": "",
-   "cls": "C",
-   "status": "DECODE R1894 = BnF fr. 2988 ff. 9-11, 4 pp. No key, decipherment or transcription on the DECODE record (checked 21 Sept 2026). The fr. 2988 Ranzo letters were transcribed here in targets/ranzo1528/ (n20/ranzo_c0*.txt, ~2,600 groups) with the Garbino letter (fr. 3022 no. 20), which uses the same initial-letter + number code. The numbering is not alphabetical, and a word annealer recovers only function words. No clear copy, crib or base key was found. Needs Ranzo's table or a clear copy; see entry 7. 14 Oct 2026 check of a Cryptoole alert: Paolo Rosson (with Claude, from our transcription, listed 6 Oct 2026) reads the Ranzo code in part: https://pangoleen.github.io/cipher-readings/centurione-1528.html (86% of the cipher text in connected stretches, about 85% of tokens right by their estimate; no per-letter figures; unchecked by a palaeographer). It reads the Garbino letter (fr. 3022 no. 20), the first Ranzo letter from its duplicate fr. 3019 ff. 73-74 (27 Mar 1528) and the last two lines at fr. 2988 view 20. Checked 14 Oct 2026 (targets/ranzo1528/measure_rosson.py): his key applied to our R1894 transcription (views 17-20) values 97.2% of the groups and 93.1% lie in connected stretches; below the 95% bar, so read in part by him, not by us. R4450 is a copy of f. 9.",
-   "why": "Ciphered letter of Hieronimo Ranzo to unknown recipient, 1 Jan 1520; what the cipher hides is not known.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 5,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Look for the base key or a clear copy (Gattinara papers, Simancas, Vienna HHStA); ask Lasry/Tomokiyo.",
-   "ark": "",
-   "links": [
-    {
-     "label": "DECODE R1894",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/1894"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "DECODE",
-   "decode_ids": [
-    1894
-   ],
-   "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. Identified as the alchemical codex Lumen luminum, c. 1525, not a letter; cipher located on ff. 1v-2v and a pastedown copy (mellon29.html).",
+   "open": "About 234 letters (zodiac table, Sol and Luna recipe lists). Blocker: no key or clear copy; simple, homophonic, Vigenère and Alberti attacks failed; possibly invented secret names.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 184,
@@ -1235,80 +1410,10 @@
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "vieuville1587.html"
-  },
-  {
-   "id": 189,
-   "counted": true,
-   "year": 1525,
-   "date": "1525",
-   "title": "Hieronimo Ranzo (Italy?) to unknown recipient",
-   "correspondents": "Hieronimo Ranzo → unknown recipient",
-   "place": "Italy?",
-   "language": "unknown",
-   "region": "France",
-   "period": "1497-1559",
-   "shelfmark": "BnF, Français 20506, f.136",
-   "folio_note": "",
-   "cls": "C",
-   "status": "DECODE R4450 = BnF fr. 20506 f. 136, a copy of fr. 2988 f. 9 (the R1894 letter). No key, decipherment or transcription on the DECODE record (checked 21 Sept 2026). The fr. 2988 Ranzo letters were transcribed here in targets/ranzo1528/ (n20/ranzo_c0*.txt, ~2,600 groups) with the Garbino letter (fr. 3022 no. 20), which uses the same initial-letter + number code. The numbering is not alphabetical, and a word annealer recovers only function words. No clear copy, crib or base key was found. Needs Ranzo's table or a clear copy; see entry 7. 14 Oct 2026 check of a Cryptoole alert: Paolo Rosson (with Claude, from our transcription, listed 6 Oct 2026) reads the Ranzo code in part: https://pangoleen.github.io/cipher-readings/centurione-1528.html (86% of the cipher text in connected stretches, about 85% of tokens right by their estimate; no per-letter figures; unchecked by a palaeographer). It reads the Garbino letter (fr. 3022 no. 20), the first Ranzo letter from its duplicate fr. 3019 ff. 73-74 (27 Mar 1528) and the last two lines at fr. 2988 view 20. Checked 14 Oct 2026 (targets/ranzo1528/measure_rosson.py): his key applied to our R1894 transcription (views 17-20) values 97.2% of the groups and 93.1% lie in connected stretches; below the 95% bar, so read in part by him, not by us. R4450 is a copy of f. 9.",
-   "why": "Ciphered letter of Hieronimo Ranzo to unknown recipient, 1525; what the cipher hides is not known.",
-   "importance": 2,
-   "solvability": 1,
-   "difficulty": 4,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Look for the base key or a clear copy (Gattinara papers, Simancas, Vienna HHStA); ask Lasry/Tomokiyo.",
-   "ark": "",
-   "links": [
-    {
-     "label": "DECODE R4450",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/4450"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "DECODE",
-   "decode_ids": [
-    4450
-   ],
-   "scored": "rule",
-   "on_list": "Tomokiyo",
-   "outcome": "attempted, open"
-  },
-  {
-   "id": 190,
-   "counted": false,
-   "year": null,
-   "date": "undated",
-   "title": "Sforza side to Zorzo (Giorgio) del Maino, reply of 4 May 1446",
-   "correspondents": "Unknown sender → unknown recipient",
-   "place": "Paris",
-   "language": "unknown",
-   "region": "France",
-   "period": "unknown",
-   "shelfmark": "BnF, italien 1583, f 68",
-   "folio_note": "",
-   "cls": "C",
-   "status": "DECODE R7898, BnF ital. 1583 f. 68 = Sforza side’s reply to Zorzo Maino, 4 May 1446 (Mazzatinti 1883). Attempted 21 Sept 2026: transcribed with the same-day f. 70 (Amidani, on R7899); syllabic Sforza-type cipher, no matching key among DECODE’s Sforza keys. See targets/it1583/.",
-   "why": "Ciphered letter of Unknown sender to unknown recipient; what the cipher hides is not known.",
-   "importance": 1,
-   "solvability": 1,
-   "difficulty": 4,
-   "score_note": "Scored by rule from DECODE metadata (class from key signals, solvability from key, length and language, importance from the correspondents); not yet reviewed by hand.",
-   "verify": "Search the printed correspondence and Tomokiyo for a decipherment; then view the images (DECODE login) and transcribe.",
-   "ark": "",
-   "links": [
-    {
-     "label": "DECODE R7898",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/7898"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "DECODE",
-   "decode_ids": [
-    7898
-   ],
-   "scored": "rule",
-   "outcome": "attempted, open"
+   "writeup": "vieuville1587.html",
+   "known": "Code numbers deciphered with Tomokiyo's Nevers key no. 16 (42 et 43 eschevins et maire, 63 La Vieuville, 48 chasteau, 30 artillerie) (vieuville1587.html).",
+   "open": "The letter text (only ~30-40% legible) and three letter runs (33 signs). Blocker: illegible on the B/W microfilm; needs a colour scan or the original.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 193,
@@ -1344,7 +1449,10 @@
     2285
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. Letter printed in Champollion-Figeac 1847 (CCXVIII) with the cipher omitted; 56 signs transcribed; Calvimont and Raince 1526 keys do not fit (bayard1526.html).",
+   "open": "The three cipher lines (56 signs of 29 kinds). Blocker: no key, too short; needs the original (V. 41 f. 4).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 206,
@@ -1380,24 +1488,27 @@
     4350
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. The record identified as the whole Murberg volume (KB I.g.18); cipher is 809 groups in a 1717 German peace memorandum; Görtz's French key R7691 does not fit (targets/goertz1717, no page).",
+   "open": "All five cipher passages (809 groups). Blocker: no key; ciphertext-only failed even on a synthetic control; needs Görtz's German chancery key (Riksarkivet).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 207,
    "counted": false,
    "year": 1628,
    "date": "1628 – 1633",
-   "title": "Riksarkivet key-box and Oxenstierna ciphers, 11 records (Bremen 1631 and R4282 read and removed)",
+   "title": "Riksarkivet key-box and Oxenstierna ciphers, 10 records (Bremen 1631, R4282 and R4306 read or partly read and removed)",
    "correspondents": "unknown → Camerarius?, Amsterdam; Rusdorff → Oxenstierna; Swedish agent → Oxenstierna",
    "place": "Stockholm",
    "language": "Latin, German, Swedish",
    "region": "Scandinavia",
    "period": "1611-1650",
-   "shelfmark": "Riksarkivet, TNA of Sweden (11 items)",
+   "shelfmark": "Riksarkivet, TNA of Sweden (10 items)",
    "folio_note": "",
    "cls": "A",
-   "status": "DECODE R4284–R4341, 11 records. Viewed 21 Sept 2026 (targets/riksarkivet1628/): four unrelated groups. The two Bremen letters of 1631 (R4330–R4331) are read and removed from this entry. R4282 was deciphered by George Lasry with CTTS and refined by GPT-6 Astra on 14 Oct 2026; its standalone write-up is decode4282.html, while the earlier grouped attempt is retained as historical context. Open: R4284 (Latin 1628, 108 numbers, Camerarius docket), R4306 (to Amsterdam 1632, monoalphabetic by IoC) — attacked by annealing in ten languages and against two box keys, not broken; R4333–R4337 (Rusdorff → Oxenstierna 1628, \"unsolved cipher\") and R4338–R4341 (E 708, Swedish, June 1633, not 1646; glossed in part at the time) not worked.",
-   "why": "Two key-box ciphertexts that resisted a first attack, and Oxenstierna correspondence of 1628 and 1633 with a key collection that may hold their keys.",
+   "status": "DECODE R4284–R4341, 10 records in four different ciphers, each its own entry since the one-key split of 14 Oct 2026. Viewed 21 Sept 2026. The two Bremen letters of 1631 (R4330–R4331, riksarkivet1628.html) are read and removed from this entry; R4282 was deciphered by George Lasry (decode4282.html). R4306: contributed partial Dutch decipherment by George Lasry, transcribed with CTTS then solved with Opus 5.5 (17 Oct 2026; sweden4306.html, which also records this project's failed attempt of 21 Sept 2026); pencilled 1632? and Amsterdam attribution remain qualified, four code identities open. Open: R4284 (Latin 1628, Camerarius docket; riksarkivet4284.html) — attacked with Latin annealing and against two box keys, not broken; R4333–R4337 (Rusdorff → Oxenstierna 1628; rusdorff1628.html) and R4338–R4341 (E 708, Swedish, June 1633, not 1646; glossed in part at the time; oxenstierna1633.html) surveyed only.",
+   "why": "One remaining key-box ciphertext that resisted a first attack, and Oxenstierna correspondence of 1628 and 1633 with a key collection that may hold their keys.",
    "importance": 3,
    "solvability": 4,
    "difficulty": 3,
@@ -1410,15 +1521,15 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/4284"
     },
     {
-     "label": "DECODE R4306",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/4306"
-    },
-    {
      "label": "DECODE R4333",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/4333"
     },
     {
-     "label": "+8 more records",
+     "label": "DECODE R4334",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/4334"
+    },
+    {
+     "label": "+7 more records",
      "href": null
     }
    ],
@@ -1426,7 +1537,6 @@
    "source": "DECODE",
    "decode_ids": [
     4284,
-    4306,
     4333,
     4334,
     4335,
@@ -1439,7 +1549,49 @@
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "riksarkivet1628.html"
+   "writeup": "riksarkivet4284.html",
+   "known": "Bremen letters of 1631 (R4330-R4331) deciphered in full here, key recovered from the interlinear glosses (riksarkivet1628). R4282 key recovered ciphertext-only by George Lasry (decode4282, PR #33). R4306 deciphered in part by George Lasry with CTTS and Opus 5.5, 17 Oct 2026 (sweden4306, PR #42); four code values open.",
+   "open": "R4284 (Latin, 1628, 822 groups): not deciphered; Latin annealing and two box keys failed (riksarkivet4284). R4333-R4337 (Rusdorff to Oxenstierna, 1628, rusdorff1628) and R4338-R4341 (Swedish, June 1633, glossed in part at the time, oxenstierna1633): surveyed only, not transcribed or attacked.",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 213,
+   "counted": true,
+   "year": 1757,
+   "date": "7 Aug 1757",
+   "title": "Comte d'Affry (The Hague) to the Marquis de Stainville (Choiseul), ambassador at Vienna, intercepted code letter",
+   "correspondents": "Louis Auguste Comte d'Affry (1713-1793), French ambassador in The Hague → Étienne François Marquis de Stainville, later Duc de Choiseul (1719-1785), French ambassador in Vienna",
+   "place": "The Hague → Vienna (intercepted)",
+   "language": "French",
+   "region": "Low Countries",
+   "period": "1701-1800",
+   "shelfmark": "KHA The Hague, Prins Willem V, inv.nr. 192 (DECODE R1071)",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 to R1071. The other ten records of this item (to Rouillé and Bernis, Jan 1757 - Jan 1758) are one code, key rebuilt from Lyonet's decipherments and read in part: targets/affry1757/. R1071 (761 groups) is in a different code (code C); the d'Affry key gives nonsense, there is no decipherment among the images, and the Nationaal Archief 1.01.50 decipherments (inv. 221/223) are not digitised. See targets/affry1757c/.",
+   "why": "D'Affry to the French ambassador at Vienna days after Hastenbeck, in a code not used for his letters to Paris.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Rescored by hand 14 Oct 2026 for the one letter left: 761 groups of a code with no key material.",
+   "verify": "Look for the Vienna-embassy code of 1757 (AE Paris, Correspondance politique Autriche; Stainville's papers) or the NA 1.01.50 inv. 223 decipherments; only then a statistical attack.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R1071",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/1071"
+    }
+   ],
+   "seen": "image",
+   "source": "DECODE",
+   "decode_ids": [
+    1071
+   ],
+   "scored": "reviewed",
+   "outcome": "attempted, open",
+   "known": "The ten sibling d'Affry letters of inv. 192 (to Rouillé and Bernis, 1757-58) deciphered in part here with a key rebuilt from Lyonet's decipherments (affry1757, about 0.89 of groups as sense). For R1071 itself, nothing yet.",
+   "open": "R1071 (7 Aug 1757, 761 groups) not deciphered: a separate code C, no decipherment on the images, no key on DECODE; the NA 1.01.50 inv. 221/223 decipherments are not digitised (affry1757c).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 214,
@@ -1506,7 +1658,10 @@
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "hellen1752.html"
+   "writeup": "hellen1752.html",
+   "known": "Nothing yet. Images and DECODE transcriptions audited and the repeated R1953 passage checked on the manuscript, 20 Sept 2026 (hellen1752); the three letter groups are code families only provisionally.",
+   "open": "All seven ciphertexts (R1045, R1047-R1049, R1060, R1061, R1953) not deciphered; no key, no verified plaintext. Lead: Fagel 5206 (NA 1.10.29) decipherments of 1752-53, not retrieved.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 218,
@@ -1522,7 +1677,7 @@
    "shelfmark": "KHA The Hague, Prins Willem V, inv.nr. 337 (R2236)",
    "folio_note": "",
    "cls": "C",
-   "status": "DECODE R2236: Non-decrypted, 4 pp., Dutch copies No 1 and No 2 (numbers to about 390) and a page of numbers to 2835. Its sibling R2239 (12 Mar 1796) was read here 21 Sept 2026 with the word list rebuilt from R2237 (see targets/hereditary1796/); R2236 uses another list. Attempted, open.",
+   "status": "DECODE R2236: Non-decrypted, 4 pp., Dutch copies No 1 and No 2 (numbers to about 390) and a page of numbers to 2835. Its sibling R2239 (12 Mar 1796) was read here 21 Sept 2026 with the word list rebuilt from R2237 (see targets/hereditary1796/); R2236 uses another list. Attempted, open; its own entry since 14 Oct 2026 (targets/r2236/).",
    "why": "Ciphered despatches of Willem Frederik, Prince of Orange-Nassau (1772-1843) to Prince William V, 1746-1805 / Prince William V, (1746-1805), 1 Jan 1795 – 12 Mar 1796; what the cipher hides is not known.",
    "importance": 3,
    "solvability": 3,
@@ -1542,7 +1697,11 @@
     2236
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "writeup": "r2236.html",
+   "known": "Sibling R2239 (12 Mar 1796) deciphered in full here 21 Sept 2026 with the word list rebuilt from R2237 (hereditary1796); its body is also printed in Colenbrander 1906. For R2236, nothing yet.",
+   "open": "R2236 (Copie No 1 and No 2, and a page of numbers to 2835) not deciphered and not transcribed: a different list from R2239's, no key or decipherment found (r2236).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 219,
@@ -1579,7 +1738,10 @@
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "fagel1804.html"
+   "writeup": "fagel1804.html",
+   "known": "Nothing deciphered. The 128 groups are transcribed and the letter dated to the 1804 Orange compensation talks (fagel1804); Grand Chiffre R1024 and all KHA, Fagel, BL and Uppsala keys ruled out.",
+   "open": "The whole letter (R2238) is not deciphered: no key; the codebook is most likely in the undigitised KHA A31-902.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 223,
@@ -1616,7 +1778,10 @@
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "hellen1752.html"
+   "writeup": "hellen1752.html",
+   "known": "Nothing yet. Images and DECODE transcription audited 20 Sept 2026 with the other Hellen letters (hellen1752).",
+   "open": "R1046 (15 Apr 1763) not deciphered; no key or crib; whether it shares a code with the other 1763 letters is not established.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 225,
@@ -1632,7 +1797,7 @@
    "shelfmark": "NA The Hague, 02.01.08. Ministerie van Buitenlandse Zaken, 1796-1810, inv (4 items)",
    "folio_note": "",
    "cls": "C",
-   "status": "DECODE R2122, R2131, R1895 unread. R2120 (22 Dec 1788) was read at the time: its decipherment is filed as R2121. R2122/R2131: homophonic word code, no key on DECODE; cribs R2121, R1947, R2053 transcribed but do not rebuild it. R1895: different marked system.",
+   "status": "DECODE lists R2122, R2131, R1895 with no decipherment. R2120 (22 Dec 1788) was read at the time: its decipherment is filed as R2121. R2122/R2131: homophonic word code, no key on DECODE; cribs R2121, R1947, R2053 transcribed; word aligners found no consistent values (21 Sept), but the second pass (Feyseel Nur, 4 Oct 2026, PR #21) showed the code alphabetical within 500-group blocks, and a 354-value table decodes R2122 and R2131 in part, 41% of groups firm (targets/dedem1788/). R1895: different marked system, its own entry since 14 Oct 2026 (targets/dedem1799/), not transcribed.",
    "why": "Ciphered despatches of Frederik Gijsbert van Dedem tot de Gelder (1743-1820) to Maarten van der Goes (1751-1826 / Laurens Pieter van de Spiegel (1737-1800), 11 Oct 1788 – 26 Aug 1799; what the cipher hides is not known.",
    "importance": 2,
    "solvability": 3,
@@ -1664,7 +1829,10 @@
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "dedem1788.html"
+   "writeup": "dedem1788.html",
+   "known": "R2120 (22 Dec 1788) deciphered at the time; the clear decipherment is DECODE R2121. Code layout recovered from the sibling decipherments (Feyseel Nur, 4 Oct 2026, PR #21): alphabetical within 500-group blocks; R2122 and R2131 decoded in part, 123 of 301 groups with firm values (dedem1788.html).",
+   "open": "R2122 and R2131: the groups with no attested value (open codes; more deciphered letters in the code, R1948-R1952, R2134, R2141, would test it). R1895 (1799, a different marked system, dedem1799): not transcribed, no key.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 226,
@@ -1700,7 +1868,10 @@
     1941
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. Letter (228 groups) and annex (75) transcribed 21 Sept 2026 (spaen1808); Croiset books R1891/R1035 ruled out.",
+   "open": "R1941, all 303 groups: not deciphered. No key on DECODE or in print; a 1,300+ entry code not breakable without the King of Holland's legation code or DECODE's unattached 'annex solved' reading.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 230,
@@ -1736,7 +1907,49 @@
     2034
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Code identified as Croiset's six-series Correspondentiecijffer; the same-key 1801 letters R1944/R1946 are read from their contemporary clear copy (r1944), which fixes 3 of 67 words of R2034 (394 handen, 58 brengen, 222 niet).",
+   "open": "64 of the 67 text groups of R2034 not deciphered: the key survives only as a physical booklet (NA 2.21.045/34313), not digitised (toulon1803).",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 231,
+   "counted": true,
+   "year": 1793,
+   "date": "24 Mar 1793",
+   "title": "Arend Willem van Reede (Berlin) to the Secret Committee of the States General, 24 March 1793",
+   "correspondents": "Arend Willem baron van Reede → Secret Committee of the States General",
+   "place": "Berlin, Prussia",
+   "language": "Dutch",
+   "region": "Low Countries",
+   "period": "1701-1800",
+   "shelfmark": "NA The Hague, Staten-Generaal 1.01.02, inv. 6695 (DECODE R1893)",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 (one key per entry) to R1893; R1026 and R1027 of the same item are read with William V's 1782 Grand Chiffre (R1024) in targets/vanreede1787/. Attempted 20-21 Sept 2026 (targets/vanreede1793/): a different system, three-digit groups with per-digit overmarks (696 tokens, 513 distinct marked forms); the 1793 Fagel key bundle R2842-R2852 (R2846, R2848, R2850, R2851) and R2243 tried, no fit; no crib. Needs the key or a deciphered copy (Staten-Generaal secret files, NA 1.01.02).",
+   "why": "A 1793 despatch of the Dutch envoy in Berlin to the States General's Secret Committee, in a code not otherwise read.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 5,
+   "score_note": "Scored by rule from DECODE metadata (entry 231, 3 ciphertexts); narrowed 14 Oct 2026 to the unread record, scores carried over unchanged.",
+   "verify": "Look for the 1793 key or a deciphered copy in NA 1.01.02 (Staten-Generaal secret files) and the Fagel papers.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R1893",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/1893"
+    }
+   ],
+   "seen": "images",
+   "source": "DECODE",
+   "decode_ids": [
+    1893
+   ],
+   "scored": "rule",
+   "outcome": "attempted, open",
+   "known": "The sibling records R1026 and R1027 of the same item were deciphered in part with William V's 1782 Grand Chiffre R1024 (vanreede1787). For R1893, nothing yet.",
+   "open": "R1893 (24 Mar 1793, 696 overmarked three-digit tokens) not deciphered: a different system; Fagel keys R2846, R2848, R2850, R2851 and R2243 do not fit; no crib (vanreede1793).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 233,
@@ -1777,7 +1990,10 @@
     1470
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. 2,585 groups on 13 pages viewed and measured 21 Sept 2026 (roell1809); shown not to be the Dedem 1788-93, Spaen 1808 or Fagel 1804 code.",
+   "open": "R1469-R1470 entirely not deciphered: heavily homophonic code to about 3,300, no key on DECODE or in Roell's papers, no crib.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 262,
@@ -1817,7 +2033,50 @@
     91
    ],
    "scored": "rule",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "The companion IA-2 (DECODE R92, 15 Apr 1542, Vatican Challenge Part 5): key recovered by Simon Klee, Sept 2026 (vatican5). For R91 itself nothing yet: five cipher pages measured here 18 Sept 2026 (2,956 digits).",
+   "open": "R91 (Dec 1541) not deciphered and not attacked: a different key and design from IA-2, so Klee's key does not transfer; no key sheet or decipherment on the record.",
+   "as_of": "2026-10-21"
+  },
+  {
+   "id": 264,
+   "counted": true,
+   "year": 1680,
+   "date": "11 Sep 1680",
+   "title": "Sebastiano Foscarini, Venetian ambassador in France, to the Doge, despatch no. 117",
+   "correspondents": "Sebastiano Foscarini → the Doge of Venice",
+   "place": "Paris → Venice",
+   "language": "Italian",
+   "region": "France",
+   "period": "1651-1700",
+   "shelfmark": "ASVe, IT ASVe 0045 010 (Serie) Busta 30 f. 4",
+   "folio_note": "",
+   "cls": "C",
+   "status": "Narrowed 14 Oct 2026 to R1871: the entry first joined it with R1873 (Alvise Mocenigo, Rome 25 Apr 1558), a different cipher read from Paolo Bonavoglia's published decipherment (targets/r1873/, removed from the catalogue). R1871 was catalogued as '(England?)', 1555, metadata copied from the neighbour R1872. One page of continuous digits, transcribed (1,839 digits, 612 three-digit groups, 211 distinct, a non-alphabetical table of ~300 codes); ciphertext-only annealing with an Italian model gave no text. Bonavoglia lists the despatch as deciphered, but his decipherment is offline. See targets/r1871/.",
+   "why": "A ciphered 'P.S. sola' from the Venetian embassy at the court of Louis XIV, 1680.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Rescored by hand 14 Oct 2026 after the split: one page, ~300-code table, no key on DECODE.",
+   "verify": "Ask Paolo Bonavoglia for the Foscarini decipherment or key; or find Foscarini's other 1680-84 despatches (ASVe Senato, Dispacci Francia busta 171A, Spagna) and the ASVe Cifre, chiavi e scontri key.",
+   "ark": "",
+   "links": [
+    {
+     "label": "DECODE R1871",
+     "href": "https://de-crypt.org/decrypt-web/RecordsView/1871"
+    }
+   ],
+   "seen": "image",
+   "source": "DECODE",
+   "decode_ids": [
+    1871
+   ],
+   "scored": "reviewed",
+   "writeup": "r1871.html",
+   "outcome": "attempted, open",
+   "known": "Paolo Bonavoglia lists the despatch as deciphered, but his decipherment is offline. Here: one page transcribed (612 three-digit groups); the former partner R1873 (Mocenigo 1558) is read from Bonavoglia's published decipherment and left the entry.",
+   "open": "R1871 (Foscarini, 11 Sept 1680) not deciphered: ~300-code table, ciphertext-only annealing failed, no key on DECODE; Bonavoglia's decipherment or key not reachable (r1871).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 277,
@@ -1845,7 +2104,10 @@
    "verify": "Transcribe; seeded anneal from the Nevers family alphabets.",
    "scored": "sweep",
    "prior_art": "open (checked 22 Sept 2026)",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. 17 runs (753 signs) transcribed 22 Sept 2026 (nevers1595); the Nevers keys of fr. 3995 ruled out (no. 76 deciphered in full there as a control, same design, other values).",
+   "open": "All 17 runs not deciphered: no key among the surviving Nevers keys, the letter as sent to Villeroy not located, and the nomenclator is beyond ciphertext-only attack at this length.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 279,
@@ -1864,7 +2126,7 @@
    "cls": "C",
    "seen": "catalogue",
    "source": "DECODE",
-   "status": "Checked 22 Sept 2026: DECODE R4933-R4942 are N/A with no decryption attached, and no published reading was found. The collection is at the Romanian National Archives in Cluj, not Sibiu. Attempted 23 Sept 2026 (targets/transylvania1645/): 28 images fetched with the DECODE login; a shared Hungarian alphabet family (c=p, p=c, g=u, q=t) recovered by quadgram annealing on R4936; R4940 read; R4936, R4937, R4942 in fragments; R4941 a different substitution.",
+   "status": "Checked 22 Sept 2026: DECODE R4933-R4942 are N/A with no decryption attached, and no published reading was found. The collection is at the Romanian National Archives in Cluj, not Sibiu. Attempted 23 Sept 2026 (targets/transylvania1645/): 28 images fetched with the DECODE login; a shared Hungarian alphabet family (c=p, p=c, g=u, q=t) recovered by quadgram annealing on R4936; R4940 read; R4936, R4937, R4942 in fragments; R4941 a different substitution. Split by system 14 Oct 2026 (one key per entry): the Bethlen alphabet family with R4938-R4939 uninspected in targets/transylvania1645/, R4941 in targets/r4941/, the Kemény_XIX_1628 records R4933-R4935 in targets/kemeny1628/; all in progress.",
    "why": "Transylvania under George I Rákóczi, around the peace of Linz (1645).",
    "importance": 2,
    "solvability": 4,
@@ -1927,7 +2189,10 @@
    ],
    "scored": "sweep",
    "prior_art": "open (checked 22 Sept 2026)",
-   "outcome": "attempted, open: in progress; Hungarian letter substitution recovered ciphertext-only, R4940 cipher spans read, nine records unread or unverified (23 Sept 2026, targets/transylvania1645/)"
+   "outcome": "attempted, open: in progress; Hungarian letter substitution recovered ciphertext-only, R4940 cipher spans read, nine records unread or unverified (23 Sept 2026, targets/transylvania1645/)",
+   "known": "A Hungarian letter substitution (c=p, p=c, g=u, q=t) recovered ciphertext-only here by quadgram annealing on R4936, 23 Sept 2026; R4940's cipher spans deciphered with it, R4936, R4937 and R4942 in fragments (transylvania1645).",
+   "open": "R4936, R4937, R4942 mostly not deciphered (no outside blocker; work in progress); R4938-R4939 not inspected; R4941 a different substitution, not deciphered (r4941); R4933-R4935 (Kemény XIX) not transcribed (kemeny1628).",
+   "as_of": "2026-10-21"
   },
   {
    "id": 280,
@@ -1946,13 +2211,13 @@
    "cls": "C",
    "seen": "image",
    "source": "DECODE",
-   "status": "R7524 remains unread: 232 cipher tokens transcribed, separate numerical system. No matching key or decipherment found; solver failed its synthetic control, so the negative result is inconclusive. Nine Potocka siblings transferred to potocka1714, alphabet recovered (863/887 tokens valued), person codes and uncertain readings open.",
+   "status": "R7524 remains unread: 232 cipher figures (77 values, word-divided) transcribed, separate numerical system. No matching key or decipherment found; solver failed its synthetic control, so the negative result is inconclusive. Own entry mniszech1714 since 14 Oct 2026 (attempted, not solved); the letter is dated 18 March 1714 on the page (DECODE: 16 March). The nine Potocka siblings, another cipher, are potocka1714 (844/886 tokens read as sense).",
    "why": "The Polish-Lithuanian magnates after the Great Northern War's return of Augustus II.",
    "importance": 1,
    "solvability": 4,
    "difficulty": 2,
    "score_note": "Scored by hand from the new-solves sweep of 22 Sept 2026 (catalogue descriptions, Tomokiyo's cryptiana pages, Gallica notices, calendars and recent literature); not yet viewed on the image. Kind: solve candidate (no known key).",
-   "verify": "Stronger Polish homophonic or syllabic attack, or additional same-key correspondence; see targets/potocka1714/NOTES.md.",
+   "verify": "Stronger Polish homophonic or syllabic attack, or additional same-key correspondence; see targets/mniszech1714/NOTES.md.",
    "links": [
     {
      "label": "DECODE R7524",
@@ -1964,70 +2229,35 @@
    ],
    "scored": "sweep",
    "prior_art": "open (checked 22 Sept 2026)",
-   "outcome": "attempted, open"
-  },
-  {
-   "id": 298,
-   "counted": true,
-   "year": 1652,
-   "date": "5 Jan 1652",
-   "title": "Nuncio Bagno, Paris, to the Secretariat, 1652",
-   "correspondents": "Niccolò Guidi di Bagno → Secretariat of State",
-   "place": "Paris → Rome",
-   "language": "Italian",
-   "region": "Papacy",
-   "period": "1651-1700",
-   "shelfmark": "AAV Segr. Stato Francia 104 (DECODE R5622)",
-   "ark": "",
-   "folio_note": "ff. 5r-7v; five DECODE images (first leaf clear, four pages of figures)",
-   "cls": "B",
-   "seen": "image",
-   "source": "DECODE",
-   "status": "Attempted, open (22 Sept 2026): five images inspected. The four cipher pages have unseparated decimal figures and occasional clear Italian. Lasry's Francia 346 key is structurally excluded: 6 is its separator, but R5622 repeatedly writes 66 and 666. No DECODE transcription, attached document, online decifrati register, matching sibling or printed edition found; OCR too noisy for a reliable transcript. See targets/bagno1652/ and the write-up.",
-   "why": "The Fronde from the nunciature. Ranuzzi's 1684–85 letters, first catalogued with it, are printed in Acta Nuntiaturae Gallicae 10 (1973).",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Originally scored by hand from the new-solves sweep of 22 Sept 2026. Images and candidate key were checked the same day. A new 1652 key or deciphered register is needed.",
-   "verify": "Francia 346 key excluded; seek the Paris nunciature key or Secretariat's decifrati for 1652, then transcribe ff. 6r-7v.",
-   "links": [
-    {
-     "label": "DECODE R5622",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/5622"
-    }
-   ],
-   "decode_ids": [
-    5622
-   ],
-   "scored": "sweep",
-   "prior_art": "attempted, open (checked 22 Sept 2026)",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "For R7524 nothing yet: 232 cipher figures (77 values) transcribed (mniszech1714). The nine Potocka sibling letters, in another cipher, were deciphered here (potocka1714, 844/886 tokens as sense).",
+   "open": "R7524 (Mniszech, 18 Mar 1714), all 232 figures not deciphered: no key or plaintext found and the solver fails its matched control at this length, so the negative is inconclusive.",
+   "as_of": "2026-10-21"
   },
   {
    "id": 320,
    "counted": true,
    "year": 1636,
-   "date": "30 Jun 1635 – 27 May 1636",
-   "title": "Rohan papers and Louis XIII's Franco-Dutch correspondence, 1635–36",
-   "correspondents": "d'Émery, Savoy and Canisy → Rohan; Louis XIII → Châtillon and Brézé; Châtillon → Servien",
-   "place": "Valtellina; Fontainebleau; Nijmegen",
+   "date": "25 Jan – 27 May 1636",
+   "title": "Rohan's Valtellina cipher letters of 1636 (d'Émery; Savoy and Canisy), Français 5190",
+   "correspondents": "d'Émery → Rohan, and Rohan's reply; Savoy and Canisy → Rohan",
+   "place": "Savoy and Piedmont → Valtellina",
    "language": "French",
    "region": "France",
    "period": "1611-1650",
-   "shelfmark": "BnF Français 5190 nos. 171–172, 214–215; Français 3758 nos. 100, 104",
+   "shelfmark": "BnF Français 5190 nos. 171–172, 214–215",
    "ark": "btv1b9059471x",
-   "folio_note": "Français 3758 views 126–130, 135–140; Français 5190 reproduction stops at manuscript p. 80",
+   "folio_note": "Français 5190 reproduction stops at manuscript p. 80",
    "cls": "C",
    "seen": "image",
    "source": "BnF harvest; image and print checked 22 Sept 2026",
-   "status": "Attempted 22 Sept 2026. Savoy and Canisy's 27 May 1636 cipher letters are printed deciphered in Mémoires et lettres (1758), III, but their manuscript ciphertext and d'Émery's letter (25 Jan 1636) lie beyond the supplied Français 5190 Gallica scan, which ends at p. 80. In Français 3758, the clear prose of Louis XIII's 30 June 1635 letter and Châtillon's 3 Aug letter to Servien has been read; substantial cipher passages remain. No key or matching plaintext was verified. A second witness of the 1635 correspondence is Sainte-Geneviève MS 3338. See the write-up.",
+   "status": "Attempted 22 Sept 2026; narrowed 14 Oct 2026 under the one-key split. Savoy and Canisy's 27 May 1636 cipher letters (rohan1636) are printed deciphered in Mémoires et lettres (1758), III, but their manuscript ciphertext and d'Émery's letter of 25 Jan 1636 with Rohan's reply (emery1636, no shared key shown) lie beyond the supplied Français 5190 Gallica scan, which ends at p. 80. The Français 3758 letters of 1635 once in this entry (nos. 100, 104) were deciphered by George Lasry and are louis1635 and chatillon1635.",
    "why": "Rohan's Valtellina campaign and the French entry into the Thirty Years' War.",
    "importance": 4,
    "solvability": 1,
    "difficulty": 5,
    "score_note": "Reassessed after viewing: the original class A depended on Savoy/Canisy cipher/plaintext pairs, but the paired ciphertext is absent from the linked reproduction. Class C reflects the material now accessible online.",
-   "verify": "Obtain BnF Français 5190 nos. 171–172 and 214–215; compare Bibliothèque Sainte-Geneviève MS 3338 with Français 3758 pp. 114–128, or consult the full 2020 Vignal-Souleyreau edition.",
-   "ark2": "btv1b9058223v",
+   "verify": "Obtain BnF Français 5190 nos. 171–172 and 214–215; align the Savoy/Canisy ciphertext with the 1758 print.",
    "scored": "sweep",
    "prior_art": "Savoy/Canisy printed deciphered; remaining cipher open (checked 22 Sept 2026)",
    "outcome": "attempted, open",
@@ -2035,8 +2265,15 @@
     {
      "label": "Write-up",
      "href": "rohan1636.html"
+    },
+    {
+     "label": "Write-up (d'Émery)",
+     "href": "emery1636.html"
     }
-   ]
+   ],
+   "known": "Savoy and Canisy's cipher letters of 27 May 1636 are printed deciphered in Rohan's Mémoires et lettres (1758), vol. III (rohan1636). The 1635 letters of Français 3758 once here (nos. 100, 104) were deciphered by George Lasry (louis1635, chatillon1635).",
+   "open": "The manuscript ciphertext of Français 5190 nos. 214-215 (Savoy/Canisy) and nos. 171-172 (d'Émery 25 Jan 1636 and Rohan's reply, emery1636) has not been seen: the Gallica scan ends at p. 80; needs BnF images.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2070,7 +2307,10 @@
      "href": "https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/3075984"
     }
    ],
-   "outcome": "attempted, open: blocked, no image of the letters online (23 Sept 2026, targets/florence1414/)"
+   "outcome": "attempted, open: blocked, no image of the letters online (23 Sept 2026, targets/florence1414/)",
+   "known": "Gabbrielli's 1864 partial key (printed by Meister 1902, p. 49) transcribed here as 38 signs (florence1414). No reading of any of the letters has been found.",
+   "open": "The 1414 letters themselves: not located or imaged (probably ASF Signori Responsive 7-8 or Legazioni e commissarie 8); not on DECODE, Ilardi reels or ASF PAD. Blocker: needs ASF photographs.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2079,25 +2319,25 @@
    "seen": "catalogue",
    "scored": "sweep",
    "prior_art": "open (checked 23 Sept 2026)",
-   "score_note": "Scored by hand from the archive scan of 23 Sept 2026 (outside DECODE: Meister 1902/1906, printed inventories and editions, HCPortal, Láng 2015, TNA/Kalliope catalogues); notes in research/oldest/scan_2026-09-23/. Kind: solve candidate (no key known). Oldest-cipher candidate: earlier than the project's record (1425) if read.",
+   "score_note": "Scored by hand from the archive scan of 23 Sept 2026 (outside DECODE: Meister 1902/1906, printed inventories and editions, HCPortal, Láng 2015, TNA/Kalliope catalogues); notes in research/oldest/scan_2026-09-23/. Kind: solve candidate (no key known). Was scored as an oldest-cipher candidate for the 1421 date; superseded in October 2026 by George Lasry's 1413 decipherments (nos. 12, 20, 23).",
    "id": 336,
    "year": 1421,
-   "date": "1421 (no. 1); 29 letters 15th–16th c.",
-   "title": "Siena, \"Lettere in cifra\" of the Concistoro: the unread pieces (no. 1 of 1421 unphotographed; the long system of nos. 20/23; short pieces)",
+   "date": "1421 (no. 1); nos. 7, 19, 21 1440s-1450s",
+   "title": "Siena, \"Lettere in cifra\" of the Concistoro: the pieces still unsolved (nos. 7, 19, 21; no. 1 of 1421 unphotographed)",
    "correspondents": "Sienese envoys and others → the Concistoro of Siena",
    "place": "various → Siena",
    "language": "Italian",
    "region": "Italy",
    "period": "15th century",
-   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\": no. 1 (1421), 2, 26-28 (not on DECODE); 20, 23 (R4808, R4811); 7, 9, 11, 15, 17, 19, 21 (R4796, R4798, R4800, R4803, R4805, R4807, R4809)",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308, fasc. 2 \"Lettere in cifra\": nos. 7, 19, 21 (R4796, R4807, R4809); no. 1 (1421), 2, 26-28 (not on DECODE)",
    "cls": "B",
    "source": "Calendars and literature",
-   "status": "The whole busta is on DECODE (keys R4746-R4789, letters R4790-R4814; found 24 Sept 2026). Of the 25 pieces photographed: nos. 8, 10, 13/16 read at the time; no. 25 key recovered ciphertext-only and read (96%); no. 14 key recovered ciphertext-only, read in part; no. 4 (Borghesi to Benvoglienti, Naples 12 May 1456) key rebuilt from a fragment on the letter, read in part; nos. 20/23 (~4,900 tokens) and nos. 7, 11, 17, 19, 21 open; nos. 6 and 24 deciphered 14 Oct 2026 with key R4755 by George Lasry (with Claude and ChatGPT Astra), see targets/siena1431/. No. 1 (1421) and nos. 2, 26-28 are not among the DECODE photographs. See targets/siena1421/.",
-   "why": "A 1421 letter would beat the 1425 record; the other 28 are a sizeable, never-studied Sienese corpus with 42 keys beside them.",
+   "status": "Narrowed 18 Oct 2026 to the pieces still unsolved, after George Lasry's report of 17 Oct 2026 (one entry per key; index research/siena2308/). Open: no. 7 (R4796, orator at Milan to the Balia, 1450s; 363 signs, interlinear gloss gives nine values; filed key R4750 and five others fail it; targets/siena7/), no. 19 (R4807, Sienese envoys, 9 March, 1440s; 118 signs; targets/siena19/), no. 21 (R4809, 'Karissimo come padre', 15th c.; 107 signs; targets/siena21/): attempted, too short without a key. No. 1 (1421) and nos. 2, 26-28 are not among the DECODE photographs (needs ASSi). The other pieces are deciphered on their own entries: nos. 20/23, 12, 6/24, 4, 14, 25, 11, 18, 17, 15, 5?, 9, 13/16, 10 and 8 (no. 8 from the contemporary decipherment on its sheet, aligned here 18 Oct 2026).",
+   "why": "Nos. 7, 19 and 21 are the last undeciphered 15th-century pieces of the Sienese file. No. 1 (1421) would not be its oldest letter: George Lasry's decipherments include letters of March and April 1413 (nos. 12, 20, 23; the years reconstructed, not written).",
    "importance": 4,
    "solvability": 3,
    "difficulty": 3,
-   "verify": "Order fasc. 2 from ASSi; first try the 42 filed keys on every letter, and treat those they do not read as solve targets.",
+   "verify": "Order nos. 1, 2, 26-28 from ASSi; for nos. 7, 19, 21 look for a sibling letter in the same key or a fresh transcription in CTTS (no. 7: rerun with the gloss values fixed).",
    "links": [
     {
      "label": "Concistoro inventory 1952 (PDF)",
@@ -2110,17 +2350,13 @@
    ],
    "outcome": "attempted, open",
    "decode_ids": [
-    "R4808",
-    "R4811",
     "R4796",
-    "R4798",
-    "R4800",
-    "R4803",
-    "R4805",
     "R4807",
-    "R4809",
-    "R4794"
-   ]
+    "R4809"
+   ],
+   "known": "Every other photographed piece is deciphered on its own entry (index: siena1421.html). George Lasry recovered the keys of no. 12, 10 March 1413 (the year reconstructed from the sixth indiction and the context), nos. 20 and 23, 30 March and about April 1413 (years inferred), nos. 6/24, 9, 11, 13/16, 17, R4794 and no. 15 in part; this project recovered nos. 4, 18, 25 and no. 14 in part; nos. 8 and 10 were deciphered at the time. No. 7: the interlinear gloss gives nine values.",
+   "open": "Nos. 7 (R4796, 363 signs), 19 (R4807, 118) and 21 (R4809, 107): no key; none of the filed keys fits, and neither George Lasry nor this project has deciphered them. No. 1 (Meister's 1421 letter), 2 and 26-28 are not photographed; they need the Archivio di Stato di Siena.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2154,7 +2390,10 @@
      "href": "https://archive.org/details/bub_gb_3ZkvD-9ug8IC"
     }
    ],
-   "outcome": "attempted, open: blocked, no image of the letter online (24 Sept 2026, targets/medici1425/)"
+   "outcome": "attempted, open: blocked, no image of the letter online (24 Sept 2026, targets/medici1425/)",
+   "known": "The clear part is printed in Guasti, Commissioni II 457-458 (Albizzi's copy, which breaks off at the cipher because his office could not read it). No later reading has been found.",
+   "open": "The whole cipher part of the 27 Oct 1425 letter, not deciphered and not seen: no image online (ASF Dieci di Balìa Responsive not digitised, not on DECODE); needs ASF photographs (medici1425).",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2196,7 +2435,10 @@
      "href": "https://dbourdeau.github.io/cyphersolver/waldeck1744.html"
     }
    ],
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. 717 groups transcribed 28 Sept 2026; dated 18 Jan 1744 from the prince's draft reply on f. 4v (waldeck1744).",
+   "open": "The whole letter: not deciphered. Two-part nomenclator with no key on Arcinsys, HCPortal or DECODE; synthetic controls show one letter is too little to rebuild it; possible key or copy in undigitised HStAM 118 a Nr. 1973-1980.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2234,7 +2476,10 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/392"
     }
    ],
-   "outcome": "attempted, open: blocked, no image of the despatch online; key found (DECODE R392) (23 Sept 2026, targets/ungnad1576/)"
+   "outcome": "attempted, open: blocked, no image of the despatch online; key found (DECODE R392) (23 Sept 2026, targets/ungnad1576/)",
+   "known": "Ungnad's key found on DECODE as R392 (Gévay's copy, OSZK Quart. Lat. 2254 f. 23) and transcribed here (ungnad1576/KEY.md). His Jan and Aug 1577 despatches were deciphered at the time (Láng C.Ung.04-05).",
+   "open": "The 12 Mar 1576 despatch (Türkei I 32-3 ff. 199-203), not deciphered and not seen: not digitised or on DECODE; needs an HHStA reproduction order, then a test of R392.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2272,7 +2517,10 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/1384"
     }
    ],
-   "outcome": "attempted, open: blocked, no image of the despatch online; candidate keys DECODE R1384 (Breuner 1575) and R392 (Ungnad) transcribed (24 Sept 2026, targets/sinzendorff1578/)"
+   "outcome": "attempted, open: blocked, no image of the despatch online; candidate keys DECODE R1384 (Breuner 1575) and R392 (Ungnad) transcribed (24 Sept 2026, targets/sinzendorff1578/)",
+   "known": "Two candidate keys transcribed here: Breuner's Constantinople key of 1575 (DECODE R1384) and Ungnad's R392 (sinzendorff1578). Sinzendorff and Breuner's 1581 despatches were deciphered at the time (Láng C.Sin.01-02).",
+   "open": "The 3-7 Sept 1578 despatch (Türkei I 37-2 ff. 1-8), not deciphered and not seen: not digitised or on DECODE; needs an HHStA reproduction order.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2301,7 +2549,10 @@
    "difficulty": 4,
    "verify": "Order scans of box 636 (and the 1744 drafts in box 635) from the SNA; look for the 1744 Staatskanzlei keys for Russia and Saxony in the HHStA.",
    "links": [],
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. The one published specimen (Antal et al. 2023, Fig. 6, 'Moscau 5 Oct 1744', 176 groups) measured here (esterhazy1744); Vienna chancery keys of 1740-46 on DECODE ruled out.",
+   "open": "All six box-636 letters: not deciphered; only one is online (in print), the rest need SNA scans; no key (candidates: HHStA Staatskanzlei Russia/Saxony keys of 1744, not on DECODE).",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2330,7 +2581,10 @@
    "difficulty": 5,
    "verify": "Obtain SPO images or TNA copies of SP 95/136 and SP 87/24/33 ff. 96-97; list letters per system; apply R7801/R7793-R7795 to del Puerto and R7721/R7723/R7724 to the Swedish letters; rebuild keys from those siblings where none fits.",
    "links": [],
-   "outcome": "attempted, open: blocked, no image online (SPO or TNA copy order only); Branch keys located on DECODE (28 Sept 2026, targets/sp95box136/)"
+   "outcome": "attempted, open: blocked, no image online (SPO or TNA copy order only); Branch keys located on DECODE (28 Sept 2026, targets/sp95box136/)",
+   "known": "Nothing deciphered. The Deciphering Branch keys for these correspondents were located on DECODE: R7801 (del Puerto), R7793, R7721, R7723, R7724-R7725 (sp95box136).",
+   "open": "SP 95/136 (all letters) and SP 87/24/33 ff. 96-97: not deciphered and not seen; not digitised free (Gale State Papers Online or a TNA copy order only).",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2359,34 +2613,37 @@
    "difficulty": 3,
    "verify": "Order the NA scans of inv. 12579.26 (scan on request) or view it in the reading room; count the notes and systems; use the deputies' clear covering letters and the July-Aug 1629 resolutions as cribs.",
    "links": [],
-   "outcome": "attempted, open: blocked, not digitised (NA scan-on-request order or reading room only) (28 Sept 2026, targets/sg1629/)"
+   "outcome": "attempted, open: blocked, not digitised (NA scan-on-request order or reading room only) (28 Sept 2026, targets/sg1629/)",
+   "known": "Nothing yet. No copy or decipherment found in NA 1.01.02, the Huygens Resolutions 1626-30 or the Gelders Archief (sg1629).",
+   "open": "Every cipher note in NA 1.01.02 inv. 12579.26: not seen or deciphered; not digitised (NA scan-on-request order or reading room).",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
    "ark": "",
-   "folio_note": "R1163/R1164 (17 Mar 1491) 4+4 pp.; R1165 (15 Jun 1491) 5 pp.; R1166 (21 Jun 1491) 4 pp.; R1167 (22 Dec 1491) 7 pp.; R1162 (27 Feb 1492) 2 pp.; R1168 (20 Mar 1492) 4 pp.; R1095–R1097 (13 Mar, 22 Apr, 18 Jul 1493) 1 p. each",
-   "seen": "catalogue",
+   "folio_note": "R1163 and R1164 have identical four-image sets (SHA-256 verified 20 Oct 2026). R1165 has six attached images; R1168 nine.",
+   "seen": "image",
    "scored": "cryptoole",
    "prior_art": "open (checked 14 Oct 2026)",
    "score_note": "Scored from the Cryptoole/source page on 14 Oct 2026 (research/cryptoole/)",
-   "id": 348,
+   "id": 361,
    "year": 1491,
-   "date": "17 Mar 1491 – 18 Jul 1493",
-   "title": "Beltrame Costabili, governor of the see of Esztergom, to Eleonora d'Aragona and Ercole I d'Este: ten partly ciphered despatches",
-   "correspondents": "Beltrame Costabili → Eleonora d'Aragona, Duchess of Ferrara (1491–92); → Ercole I d'Este (1493)",
+   "date": "17 Mar 1491 – 20 Mar 1492",
+   "title": "Beltrame Costabili to the Este court: six distinct partly ciphered despatches of 1491–92 (seven DECODE records)",
+   "correspondents": "Beltrame Costabili → Eleonora d'Aragona and the Este court",
    "place": "Esztergom (Hungary) → Ferrara",
    "language": "Italian",
    "region": "Central Europe",
    "period": "15th century",
-   "shelfmark": "Modena, Archivio di Stato, Ambasciatori Ungheria b. 2/20 nos. 6, 7, 12, 16, 44; b. 2/21 no. 8; b. 2/22 nos. 5, 6, 9 (DECODE R1162–R1168, R1095–R1097)",
+   "shelfmark": "Modena, Archivio di Stato, Ambasciatori Ungheria b. 2/20 nos. 6, 7, 12, 16, 44; b. 2/21 no. 8 (DECODE R1162–R1168)",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole HU1492-2 (DECODE 'Partially decrypted', 10 records). DECODE: Italian clear text with cipher passages, 'homophonic or simple substitution', graphic signs; images need a login and DECODE notes Vestigia (vestigia.hu) holds related items. research/oldest/CANDIDATES.md B2 lists these letters but they were not checked (only Sadoleto 1482–83 was, in targets/sadoleto1482/). Whether 'partially decrypted' means interlinear or filed contemporary decipherments, as it did for Sadoleto, is not known.",
+   "status": "Numbered 348 when added on 20 Oct 2026; renumbered 361 on 21 Oct 2026, since 348 already belonged to the Wallachian postscript (szembek1689). Reviewed 20 Oct 2026: all 42 photographs on the original ten DECODE records retrieved. R1095–R1097 (1493) are clear Italian, not cipher letters; classification correction in targets/costabili1493/ and costabili1493.html. All four R1163/R1164 photograph pairs are byte-for-byte identical. Six distinct earlier despatches remain open; some passages have contemporary interlinear glosses. No new key or full decipherment is claimed.",
    "why": "Ferrara's man at the Hungarian court during the succession crisis after Matthias Corvinus's death (1490–91), the fate of Queen Beatrice of Aragon, Eleonora's sister, and Ippolito d'Este's Esztergom archbishopric.",
    "importance": 3,
    "solvability": 3,
    "difficulty": 3,
-   "verify": "Log in to DECODE and download R1162–R1168 and R1095–R1097. Check each leaf for interlinear or filed decipherments as in the Sadoleto series. Search Vestigia for 'Costabili' clear copies. Then test the Ferrarese Hungary keys from targets/sadoleto1482/ (key_working.md) against the unread passages.",
+   "verify": "Transcribe cipher and glosses separately on R1162–R1168, counting the R1163/R1164 images once. Then test the Ferrarese Hungary keys; the present pass establishes duplication and separates clear letters, not a solution.",
    "links": [
     {
      "label": "DECODE R1162",
@@ -2397,7 +2654,20 @@
      "href": "https://cryptoole.satoru.net/case.html?id=HU1492-2"
     }
    ],
-   "cryptoole": "HU1492-2"
+   "cryptoole": "HU1492-2",
+   "decode_ids": [
+    1162,
+    1163,
+    1164,
+    1165,
+    1166,
+    1167,
+    1168
+   ],
+   "outcome": "attempted, open",
+   "known": "20 Oct 2026: R1095-R1097 (1493) shown to be clear Italian, not cipher (costabili1493); R1163 and R1164 carry identical photographs. Some passages of the six despatches have contemporary interlinear glosses. No key or decipherment.",
+   "open": "The six distinct 1491-92 despatches (R1162-R1168, R1163/R1164 one letter): cipher passages not transcribed or deciphered; next step is transcribing cipher and glosses and testing the Ferrarese Hungary keys.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2443,7 +2713,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=IT1498-1"
     }
    ],
-   "cryptoole": "IT1498-1"
+   "cryptoole": "IT1498-1",
+   "known": "The letter is printed deciphered by Parisi (2004, doc. 83), except its last ten lines (Tomokiyo, cryptiana unsolved.htm).",
+   "open": "The ten-line postscript in a second cipher (DECODE R10180 pp. 6-7): not transcribed or deciphered here; candidate keys (Galende's Garcilaso cipher, the Catholic Monarchs' general cipher) not yet tested.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2485,7 +2758,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1648-1"
     }
    ],
-   "cryptoole": "XX1648-1"
+   "cryptoole": "XX1648-1",
+   "known": "Nothing deciphered. R8447 and its three folios retrieved 20 Oct 2026 (research/catalogue_review_20261020); the Add MS 72438 keys were screened only against the 1645-46 Rupert letters (rupert).",
+   "open": "The cipher of the 6 Nov 1648 letter: not transcribed or deciphered; Tomokiyo says it differs from the volume's known ciphers; Add MS 72438 and 1648-49 royalist keys not yet tested on it.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2498,8 +2774,8 @@
    "id": 351,
    "year": 1654,
    "date": "15 Sept 1654 NS",
-   "title": "Louis II de Bourbon, Prince of Condé, to Barrière, his agent in London (intercepted)",
-   "correspondents": "Louis II de Bourbon, Prince of Condé → Henri de Taillefer, sieur de Barrière",
+   "title": "Barrière–Condé intercepts: 15 September 1654 and 18 June 1655",
+   "correspondents": "Barrière → Louis II de Bourbon, Prince of Condé (15 Sept 1654); Condé → Barrière (18 Jun 1655)",
    "place": "Condé's camp (Spanish Netherlands) → London",
    "language": "French (some clear text translated into English)",
    "region": "France",
@@ -2507,7 +2783,7 @@
    "shelfmark": "BL Add MS 4200 f. 98 (DECODE R8395, 1 p.); short ciphertext f. 101 (DECODE R8398, 1 p.)",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole XX1654-1 (open). Cryptiana unsolved.htm and louisxiv0.htm ('Prince of Condé (1654-1655)'): the 1654 letter f. 98 seems undeciphered and in a different cipher from the known 1655 Condé–Barrière cipher (f. 108); whether f. 101 reads with the 1655 key is untested. DECODE R8395/R8398: Thurloe papers volume, clear text in English and French, images by login. Copies of Condé–Barrière letters (partly cipher) are also in Bodleian MS. Rawl. A (Thurloe papers).",
+   "status": "Cryptoole XX1654-1 (open). Cryptiana unsolved.htm and louisxiv0.htm ('Prince of Condé (1654-1655)'): the 1654 letter f. 98 seems undeciphered and in a different cipher from the known 1655 Condé–Barrière cipher (f. 108); whether f. 101 reads with the 1655 key is untested. DECODE R8395/R8398: Thurloe papers volume, clear text in English and French, images by login. Copies of Condé–Barrière letters (partly cipher) are also in Bodleian MS. Rawl. A (Thurloe papers). Reviewed 20 Oct 2026: R8395 is Barrière to Condé, as the manuscript heading/source list state; R8398 is the reverse direction. Both images and R8405/R8406 key images retrieved. No validated diacritic-preserving reading established.",
    "why": "Condé, in Spanish service after the Fronde, courting Cromwell through his London agent in the year of the Anglo-French rapprochement; Thurloe intercepted the letter.",
    "importance": 3,
    "solvability": 3,
@@ -2531,7 +2807,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1654-1"
     }
    ],
-   "cryptoole": "XX1654-1"
+   "cryptoole": "XX1654-1",
+   "known": "The 1655 Condé-Barrière cipher (f. 108, key R8405/R8406) is known. 20 Oct 2026: R8395 shown to be Barrière to Condé (R8398 the reverse); images and key photographs retrieved. No reading of either piece.",
+   "open": "f. 98 (R8395, 15 Sept 1654, apparently another cipher) and f. 101 (R8398, 18 June 1655): not deciphered; f. 101 not yet tested with the 1655 key; diacritics need transcribing first.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2577,7 +2856,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1659-1"
     }
    ],
-   "cryptoole": "XX1659-1"
+   "cryptoole": "XX1659-1",
+   "known": "Printed without decipherment in Thurloe State Papers vii 775-776; f. 92 clear except cover names ('Mr Mills' = Hyde, 'Edmundson' = Charles Stuart). R4886 images retrieved 20 Oct 2026.",
+   "open": "The ~133 code numbers on f. 93: not deciphered; the same volume's keys R4887-R4913 and the Hyde-Barwick key not yet tested; the cover-name list is an untried crib.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2599,7 +2881,7 @@
    "shelfmark": "HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93 (manuscript shelfmark unknown)",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole XX1678-1 (open). 22 groups in two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm.",
+   "status": "Cryptoole XX1678-1 (open). 20 numbers in the quoted passage: 445 and 342 before two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm. Count corrected 20 Oct 2026 from Tomokiyo’s literal quotation: 2 + 10 + 8 = 20; the two runs alone contain 18. This is a transcription/count correction, not a decipherment.",
    "why": "Ormond testing his son with a family cipher in the Popish-Plot year; small, but from a well-documented family of reconstructed Ormond keys.",
    "importance": 2,
    "solvability": 1,
@@ -2619,7 +2901,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1678-1"
     }
    ],
-   "cryptoole": "XX1678-1"
+   "cryptoole": "XX1678-1",
+   "known": "Nothing deciphered. The passage (20 numbers, count corrected 20 Oct 2026) is printed in HMC Ormonde n.s. iv p. 93 without gloss; Tomokiyo's trial with the Ormond-Longford key was rejected.",
+   "open": "All 20 numbers: not deciphered; the 1678 Ormond-Arran code is not rebuilt and the manuscript (Ormonde papers, NLI) is unlocated; very short.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2661,7 +2946,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1702-1"
     }
    ],
-   "cryptoole": "XX1702-1"
+   "cryptoole": "XX1702-1",
+   "known": "Nothing deciphered. Tomokiyo showed the 1691 Grand Chiffre, the 1702 d'Usson code and Catinat's unread 1691 code do not fit (louisxiv.htm §9). Transcriptions by Lichtenberger and Norbert on Klausis Krypto Kolumne (2016).",
+   "open": "The whole despatch (~591 numbers, max 464): not deciphered; no key; archival signature unknown; a minute or clear copy at SHD Vincennes A1 not sought.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2707,7 +2995,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1718-2"
     }
    ],
-   "cryptoole": "XX1718-2"
+   "cryptoole": "XX1718-2",
+   "known": "Nothing deciphered. Transcribed by Turner (~309 tokens, NoAutopilot/cipher-lab); the nine legation keys R10189-R10197 retrieved 20 Oct 2026, none an established match.",
+   "open": "R10181 (30 Nov 1718), all cipher: not deciphered; the 1711-1718 legation keys not yet tested group by group; the 1718 war-office cipher not located.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2749,7 +3040,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XX1911-1"
     }
    ],
-   "cryptoole": "XX1911-1"
+   "cryptoole": "XX1911-1",
+   "known": "Nothing yet. Signed 'British Consul.' in clear; no codebook identified.",
+   "open": "All 43 five-figure groups: not deciphered; the FO/consular code of 1911 (and any additive) unidentified; the decyphered copy in TNA FO 367/371 not sought.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": false,
@@ -2771,7 +3065,7 @@
    "shelfmark": "Bodleian, MS Rawlinson A 67 (Thurloe papers vol. lxvii), p. 270; printed Thurloe State Papers vii 869",
    "cls": "C",
    "source": "Cryptoole",
-   "status": "Cryptoole XXXXXX-1 (open). About 21 numbers in three runs (6, 10 and 5 figures, values 4-72), e.g. '61 50 57 62 72 66 54 61 68 60'; printed without decipherment.",
+   "status": "Cryptoole XXXXXX-1 (open). About 21 numbers in three runs (6, 10 and 5 figures, values 4-72), e.g. '61 50 57 62 72 66 54 61 68 60'; printed without decipherment. Reviewed 20 Oct 2026: all 21 numbers extracted from Birch VII p. 869 and screened against twelve existing transcribed key tables (research/catalogue_review_20261020/brussels_key_screen.json). No coherent reading identified; some tables are partial, so their families are not excluded.",
    "why": "A royalist note from Brussels in the weeks before the Restoration; small but cheap to test.",
    "importance": 1,
    "solvability": 1,
@@ -2791,7 +3085,11 @@
      "href": "https://cryptoole.satoru.net/case.html?id=XXXXXX-1"
     }
    ],
-   "cryptoole": "XXXXXX-1"
+   "cryptoole": "XXXXXX-1",
+   "outcome": "attempted, open",
+   "known": "Nothing deciphered. The 21 numbers (Birch, Thurloe vii 869) screened 20 Oct 2026 against twelve transcribed key tables, no coherent output (research/catalogue_review_20261020/brussels_key_screen.json).",
+   "open": "All three runs (21 numbers): not deciphered; too short for a contextual guess; partial tables do not exclude their families; the Rawlinson A 67 leaf not checked for a gloss.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2813,7 +3111,7 @@
    "shelfmark": "Madrid, Biblioteca Nacional, Mss/994, ff. 83-90 (ciphertext ff. 85-87); BDH bdh0000174344",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries.",
+   "status": "Cryptoole ITXXXX-1 (partly solved). Valle broke it and said he had devised the same scheme fifteen years earlier; his solution is not extant. Transcription by Sara Gómez Hernández; partial Latin reading by Eloy Caballero (2012) on Cipher Mysteries. Review 20 Oct 2026: Caballero explicitly presents a tentative interpretation with unspecified abbreviation expansions and acknowledges excess freedom. Its Latin reading is unverified; it is not accepted here as a recovered deterministic key or a verified partial solution.",
    "why": "Sirtori's own cipher, and a test of the claim by Spain's cipher secretary that he had anticipated it.",
    "importance": 3,
    "solvability": 4,
@@ -2837,7 +3135,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=ITXXXX-1"
     }
    ],
-   "cryptoole": "ITXXXX-1"
+   "cryptoole": "ITXXXX-1",
+   "known": "Broken at the time by Luis Valle de la Cerda (his solution not extant). Transcription by Sara Gómez Hernández; Eloy Caballero's tentative partial Latin reading (2012, Cipher Mysteries) is unverified and not accepted here.",
+   "open": "The ciphertext of ff. 85-87 (~800 characters): no verified decipherment or key; needs a fresh transcription keeping the abbreviation marks.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2875,7 +3176,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=HUXXXX-1"
     }
    ],
-   "cryptoole": "HUXXXX-1"
+   "cryptoole": "HUXXXX-1",
+   "known": "Nothing yet for this letter. Ferdinand's own cipher of 1634 was rebuilt here from DECODE R1887 (28 Oct 1634; ferdinand3), a candidate key.",
+   "open": "The 13 Nov 1634 letter: not seen or deciphered; images only from SOA Plzeň (not on DECODE); length and system unknown.",
+   "as_of": "2026-10-21"
   },
   {
    "counted": true,
@@ -2917,7 +3221,10 @@
      "href": "https://cryptoole.satoru.net/case.html?id=AT1640-1"
     }
    ],
-   "cryptoole": "AT1640-1"
+   "cryptoole": "AT1640-1",
+   "known": "The Ferdinand III-Leopold Wilhelm cipher was deciphered by Ernst (2018); Tomokiyo says these sheets use different ciphers. All nine R1579 files retrieved 20 Oct 2026; nothing deciphered.",
+   "open": "I7060 (code sheet), I7066 and I7068 (symbol ciphers): not transcribed or deciphered; no key.",
+   "as_of": "2026-10-21"
   }
  ]
 }

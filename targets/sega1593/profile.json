@@ -1,23 +1,23 @@
 {
  "schema_version": 1,
  "target": "sega1593",
- "title": "Baudouin-Desportes to Aldobrandini and to Frachetta, Paris 22 July 1593, BnF fr. 3984 ff. 186, 189",
+ "title": "Cardinal Sega's legation, Paris 1593: BnF fr. 3984 nos. 6 and 8",
  "documents": [
   {
-   "id": "f186",
-   "shelfmark": "BnF fr. 3984 f. 186 (no. 88)",
-   "date": "22 Jul 1593",
+   "id": "no6",
+   "shelfmark": "BnF fr. 3984 no. 6 (ff. 12-17)",
+   "date": "14 May 1593",
    "year": 1593,
-   "country": "Catholic League",
-   "route": "Paris -> Pietro Aldobrandini, Rome",
-   "language": "French",
-   "pages": 2,
-   "cleartext_in_document": "separate passages",
+   "country": "Papal States",
+   "route": "Curia, Rome -> Cardinal Sega, Paris",
+   "language": "Italian",
+   "cleartext_in_document": "unknown",
    "plaintext": {
     "location": [
      "none"
     ],
-    "source": "Tomokiyo: enciphered passages undeciphered"
+    "source": "Tomokiyo, Cryptologia 43(1) 2019: preliminary decipherment (not read here)",
+    "partial": true
    },
    "length": {
     "tokens": "unknown",
@@ -25,27 +25,24 @@
     "measured": false
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica microfilm btv1b9060633d, full-resolution IIIF canvases; CNN classifier plus hand reading",
-    "image_quality": "fair",
-    "notes": "c. 74 cipher lines; classifier top-1 0.73-0.79, hand reading c. 70 %."
+    "by": "published",
+    "notes": "c. 14,500 figures (Brice Dudout); not transcribed here"
    }
   },
   {
-   "id": "f189",
-   "shelfmark": "BnF fr. 3984 f. 189 (no. 90)",
-   "date": "... Jul 1593",
+   "id": "no8",
+   "shelfmark": "BnF fr. 3984 no. 8 (f. 22r-v)",
+   "date": "15 May 1593",
    "year": 1593,
-   "country": "Catholic League",
-   "route": "Paris -> Girolamo Frachetta",
-   "language": "French",
-   "pages": 1,
-   "cleartext_in_document": "none",
+   "country": "Papal States",
+   "route": "Paris -> Rome (Sega legation)",
+   "language": "Italian",
+   "cleartext_in_document": "unknown",
    "plaintext": {
     "location": [
      "none"
     ],
-    "source": "Tomokiyo: undeciphered"
+    "source": "none known"
    },
    "length": {
     "tokens": "unknown",
@@ -53,120 +50,87 @@
     "measured": false
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica microfilm btv1b9060633d",
-    "image_quality": "fair",
-    "notes": "33 lines wholly in cipher. NOTES give c. 5,000 glyphs for the two letters together."
+    "by": "published",
+    "notes": "not transcribed here"
    }
   }
  ],
  "system": {
   "types": [
-   "polyphonic",
+   "homophonic",
    "nomenclator"
   ],
-  "summary": "Catholic League polyphonic cipher: eleven glyphs each stand for two letters (a/n ... m/z), with signs for que, qui, pour and a few code signs.",
-  "symbol_kind": "symbols",
+  "summary": "Two different ciphers: no. 8 a homophonic substitution with a small nomenclator (Z word separator; D, N, X nulls); no. 6 continuous figures, letters as figure pairs, 3 and 8 nulls, nomenclator numbers framed by nulls (Brice Dudout, unverified here).",
+  "symbol_kind": "digits and letters",
   "distinct_symbols": "unknown",
   "diacritics": {
    "used": false
   },
   "homophones": {
-   "used": false
+   "used": true
   },
   "nomenclator": {
    "present": true,
-   "entries": "unknown",
-   "kinds": [
-    "common words",
-    "names"
-   ],
-   "unread_groups": "unknown"
+   "entries": "unknown"
   },
   "nulls": {
    "present": true,
    "count": "unknown"
   },
-  "key_order": "alphabetical",
-  "word_division": "none",
-  "doubled_letters": "unknown",
-  "sibling_key": "Tomokiyo's reconstructed League key (mayenne.htm) and the same-day letter to Lisieux (f. 188, deciphered on ff. 184-185) used for 1,108 aligned glyphs",
-  "notes": "Occasional null strokes; the decipherer normalised spellings."
+  "key_order": "unknown"
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "Tomokiyo lists f. 186 and f. 189 as undeciphered",
-   "found": "not found",
+   "exists": "partial",
+   "where": "Tomokiyo, Cryptologia 43(1) 2019, 23-46 (preliminary decipherment of 1593 continuous-figure texts, probably no. 6); Brice Dudout's partial candidate readings (bdudout.github.io/europe-chiffree/en/sega-1593.html, Oct 2026)",
+   "found": "before attempt",
    "used": false
   },
   "inputs": [
-   "images",
-   "published key",
-   "known plaintext"
+   "published reading"
   ],
-  "attack": "published key",
+  "attack": "none",
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
-  "tools": [
-   "seg2.py (glyph segmentation)",
-   "boot2.py kNN, boot3.py CNN alignment",
-   "cnn.py classifier",
-   "soft_decode.py, decode_line.py (LM beam)",
-   "crib_search.py",
-   "fr6_period.pkl period-French LM"
-  ],
   "models": [
-   "claude-fable-5"
+   "claude-opus-5-5"
   ],
   "sessions": 1,
-  "first_date": "2026-09-17",
-  "last_date": "2026-09-17"
+  "first_date": "2026-10-20",
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
-   "date": "2026-09-17",
+   "date": "2026-10-20",
    "kind": "literature search",
-   "what": "Tomokiyo's League polyphonic key and folio list confirm the task is transcription, not key recovery.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-17",
-   "kind": "sibling key",
-   "what": "f. 188v aligned to its decipherment f. 185: 1,108 labelled glyphs of the same hand.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-17",
-   "kind": "transcription",
-   "what": "CNN, kNN, SVM and self-training classifiers read held-out glyphs at 73-79 % top-1; hand reading c. 70 %.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-17",
-   "kind": "control",
-   "what": "Soft LM decoding of held-out f. 188v ll. 7-10 recovers only 30-40 % of letters.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-09-17",
-   "kind": "crib", "technique": ["crib testing", "EM alignment", "statistical test"],
-   "what": "Line-by-line alignment of f. 186v and f. 189 against the Lisieux text versus a shuffled control: no verbatim shared passage.",
-   "result": "failed"
+   "what": "Split from the Desportes letters (catalogue 20); recorded Brice Dudout's partial readings and Tomokiyo 2019 as the comparison still to make.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "The key (Tomokiyo's League polyphonic cipher, cryptiana mayenne.htm) was known, but ff. 186 and 189 could not be transcribed: classifiers trained on the sibling f. 188v aligned to its decipherment f. 185 reached only 73-79% per glyph, below what the polyphonic decoder needs.",
-  "contribution": ["none"],
+  "method_basis": "Not yet attempted here; outside partial readings wait on a comparison with Tomokiyo 2019.",
+  "contribution": [
+   "none"
+  ],
   "class": "not read",
   "fraction_read": 0,
   "verification": [
-   "matched control"
+   "none"
   ],
-  "notes": "Needs a >90 % glyph class string: more labels from f. 176/f. 177, a human glyph transcription, or the recipients' clear copies.",
+  "notes": "Status: in progress. Split 20 Oct 2026 from the old targets/sega1593 (now targets/desportes1593).",
   "credits": [
-    {"who": "tomokiyo", "role": "key or decipherment used", "note": "League polyphonic key (cryptiana mayenne.htm), the basis of the attempt; no reading reached", "source": "cryptiana mayenne.htm"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment f. 185 of the sibling f. 188v, aligned to train the glyph classifiers"}
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "partial candidate readings of nos. 6 and 8, reported 19-20 Oct 2026; not yet checked",
+    "source": "https://bdudout.github.io/europe-chiffree/en/sega-1593.html"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "prior solution",
+    "note": "Cryptologia 43(1) 2019: segmentation and preliminary decipherment of 1593 continuous-figure texts; not read here",
+    "source": "doi:10.1080/01611194.2018.1503207"
+   }
   ]
  }
 }

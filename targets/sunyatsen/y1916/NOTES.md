@@ -196,3 +196,12 @@ solution steps for the paper.
 * `hankow.py`: the Hankow +111 digit telegram.
 * `../famtest.py`: runs the whole family plus the known keys on any telegram (`python famtest.py "w1 w2 …"`).
 * `../jacar_fetch.py`: JACAR metadata and raw-PDF fetcher (the PDFs themselves are git-ignored).
+
+## Brice Dudout's wider corpus (emails of 15, 16 and 19 Oct 2026)
+
+On bdudout.github.io/wenmi, as of 19 Oct: 194 telegrams of 1913–1916 in eight systems (8,540 codes, 7,590 read).
+Tables he added in the condenser family are "Laisaosang", "New York", "Hsuweilin", "Thirtieth", "Thirteenth",
+"Sixteenth", "Seventeenth", "Thirtyeight" and Huang Xing's "Ylchang" table. He also has the "Hong Kong"
+letter-to-digit substitution (1914). He confirms our tentative Manila table (Tokyo → "Konglipo", 6 Jan 1915) and
+Honolulu table (if w = v). The constructions are listed in `docs/sunintercepts.html#wider`. Not checked here. The
+Rosamonde telegrams are in `targets/rosamonde1915/`, the 共密/容密/辰密 numeric codes in `targets/numeric1916/`.

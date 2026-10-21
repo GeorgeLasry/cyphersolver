@@ -1,0 +1,165 @@
+{
+ "schema_version": 1,
+ "target": "siena13",
+ "title": "Siena nos. 13 and 16: a letter on the Pope and Bologna, deciphered from its plaintext twin",
+ "documents": [
+  {
+   "id": "R4801",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 no. 13; DECODE R4801 (Concistoro_2308_55); plaintext no. 16, DECODE R4804 (Concistoro_2308_58)",
+   "date": "1527-1529 (Lautrec at Modena and Reggio, the Pope's coming to Bologna; unverified)",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "unknown writer -> V. S. Ill.ma (a lord or ambassador)",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "No. 16 (DECODE R4804), the clear text of the same letter, in the same fascicle.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 553,
+    "distinct": 37,
+    "unit": "symbols",
+    "measured": false,
+    "file": "lasry_report.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry with CTTS",
+    "image_quality": "fair",
+    "notes": "553 cipher symbols on 10 lines with ten clear stretches. Transcription and initial key by Lasry in CTTS; Claude Fable 5.1 finalised the transcription from the plaintext. Count from the report, not re-measured; George Lasry names accurate transcription as the main obstacle in this fascicle."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution, one or two signs per letter (many of them numerals), four doubled-letter signs (ll, gg, ss, cc) and one null, no word codes.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 37,
+  "diacritics": {
+   "used": "unknown",
+   "note": "Several numeral signs carry superscript circles or strokes; their role is not stated in the report."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 2,
+   "max_per_consonant": 2
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true,
+   "count": 1
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "Four signs for ll, gg, ss, cc.",
+  "sibling_key": "No filed key matched; the plaintext twin no. 16 gave it.",
+  "notes": "Key figure in key_lasry.jpg (report p. 35)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "No. 16 (R4804) is the clear text of the letter, filed in the same fascicle; the project noted on 24 Sept that no. 16 is the decipherment of no. 13 but did not rebuild the key.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "George Lasry transcribed and built the initial key in CTTS; Claude Fable 5.1 finalised key and transcription from no. 16. This project filed his report.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver)"
+  ],
+  "models": [
+   "Claude Fable 5.1"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-10-17",
+  "last_date": "2026-10-18"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Project survey (siena1421): no. 16 identified as the clear text of no. 13; partial alignment (bologna, accordi con). Not taken further; listed as deciphered at the time.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "transcription",
+   "what": "George Lasry transcribed the 553 cipher symbols in CTTS and built an initial key.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Claude Fable 5.1 finalised the key and the transcription from the given plaintext of no. 16.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "reading",
+   "what": "Whole cipher deciphered; first word (baca?) and 'sabbatte' doubtful.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"}, 
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt from the plaintext copy no. 16 (R4804), filed in the same fascicle.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": "unknown",
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "George Lasry's report: 'Solved'; only the first word and 'sabbatte' doubtful",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "item": "first word (baca?) and 'sabbatte'; writer, addressee, date",
+    "blocker": "illegible",
+    "detail": "Doubtful in the report even with the plaintext twin."
+   }
+  ],
+  "verification": [
+   "independent clear copy"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Transcription and initial key in CTTS; key finalised with Claude Fable 5.1 from the plaintext no. 16 (report pp. 35-36).",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
+    "date": "2026-10-17",
+    "published": false
+   }
+  ],
+  "notes": "Contributed; no. 16 (R4804) is the clear copy."
+ }
+}

@@ -11,7 +11,7 @@
    "country": "Spain",
    "route": "Naples -> Charles V",
    "language": "Spanish",
-   "pages": 3,
+   "pages": 2,
    "cleartext_in_document": "mostly clear",
    "plaintext": {
     "location": [
@@ -20,68 +20,110 @@
     "source": "No decipherment on the leaf or on DECODE."
    },
    "length": {
-    "tokens": 128,
-    "distinct": 88,
-    "unit": "mixed",
+    "tokens": 260,
+    "distinct": 49,
+    "unit": "symbols",
     "measured": true,
-    "file": "cipher_p2.txt"
+    "file": "transcription.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Authenticated DECODE images IMG_R1182_I5903_P1, I5904_P2",
-    "image_quality": "poor",
-    "notes": "8 cipher lines on f. 1v; signs are about 12 px high and several pairs cannot be told apart reliably."
-   }
+    "by": "mixed",
+    "source": "George Lasry CTTS project; BNE MSS/20213/27 f.1v, image I5904_P2 via DECODE R1182",
+    "image_quality": "fair",
+    "notes": "8 cipher lines on one physical page; CTTS positions use 2070x1389 opening image. Two-folio letter, not three physical pages: DECODE has three attachments. 7 duplicated boxes removed; 3 null-group occurrences retained. Full cleartext letter not transcribed in this contribution."
+   },
+   "read": "read"
   }
  ],
  "system": {
   "types": [
-   "monoalphabetic"
+   "homophonic",
+   "nomenclator"
   ],
-  "summary": "Letter substitution in graphic signs with word spaces, and syllable-shaped nulls (mer, mor, pu, por) per Kolosova's Cifra 15; a double-barred cross sign follows many signs.",
+  "summary": "Homophonic graphic-sign substitution with an honorific code, two contextual word-part signs and syllable-shaped null groups.",
   "symbol_kind": "letters and symbols",
-  "distinct_symbols": 31,
+  "distinct_symbols": 49,
   "diacritics": {
-   "used": false
+   "used": true,
+   "note": "Ticks, strokes and nasal marks distinguish signs; they must not be split off as independent letters."
   },
   "homophones": {
-   "used": "unknown"
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 3,
+   "per_letter": {
+    "a": 4,
+    "b": 2,
+    "c": 1,
+    "d": 2,
+    "e": 3,
+    "f": 1,
+    "g": 3,
+    "h": 1,
+    "i": 4,
+    "l": 2,
+    "m": 2,
+    "n": 2,
+    "o": 1,
+    "p": 3,
+    "q": 1,
+    "r": 3,
+    "s": 2,
+    "t": 2,
+    "u": 2,
+    "y": 1,
+    "z": 1
+   }
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": true,
+   "entries": 3,
+   "kinds": [
+    "word parts",
+    "titles"
+   ],
+   "unread_groups": 0
   },
   "nulls": {
-   "present": true
+   "present": true,
+   "count": 2
   },
   "key_order": "unknown",
   "word_division": "kept",
-  "doubled_letters": "unknown",
-  "sibling_key": "Lope Hurtado 1522 key (targets/lopehurtado/key_codes.tsv) compared by eye: different system"
+  "doubled_letters": "Contextual special sign (50)=ll in ellos; one occurrence.",
+  "sibling_key": "Lope Hurtado 1522 key (targets/lopehurtado/key_codes.tsv) compared by eye: different system",
+  "notes": "49 observed key classes, including one unresolved p/y class and contextual LL/ND. A 2017/2024 reconstruction of a related Niño cipher is known through Cryptiana; its alphabet was not used or compared directly."
  },
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Kolosova 2017 thesis (Cifra 15, pp. 452-459) and 2024 book, via Tomokiyo cryptiana spanish2C; key not seen here; not confirmed that this letter is one of her three",
+   "where": "Kolosova 2017 thesis (Cifra 15, pp. 452-459) and 2024 book, via Tomokiyo cryptiana spanish2C; key not seen here; not confirmed that this letter is one of her three; the September research called it the same system, but exact sign-key identity and exact-letter coverage remain unconfirmed.",
    "found": "before attempt",
-   "used": false
+   "used": true
   },
   "inputs": [
-   "images"
+   "images",
+   "transcription"
   ],
   "attack": "ciphertext-only",
-  "human_role": "Selected the target; the DECODE session cookie was supplied earlier.",
+  "human_role": "George Lasry selected and transcribed the cipher with CTTS, recovered its initial key with CTTS built-in cryptanalysis, and directed refinement; attribution and prior-work timing supplied by the contributor.",
   "tools": [
    "DECODE authenticated image download",
    "DECODE API metadata",
    "lang es-golden-age 5-gram simulated annealing",
-   "web search"
+   "web search",
+   "CTTS (CrypTool Transcriber and Solver)",
+   "CTTS built-in homophonic cryptanalysis",
+   "source-position audit and deterministic decoder"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "gpt-6.1-sol",
+   "claude-opus-5.5"
   ],
   "sessions": 1,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -92,7 +134,10 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "Viewed the images: the letter is clear Spanish except one 8-line ciphered paragraph on f. 1v, opening [mer] and closing [mer por].",
    "result": "worked"
   },
@@ -116,18 +161,147 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["simulated annealing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
    "what": "Simulated annealing with es-golden-age 5-grams, max two signs per letter; variants dropping '#' and/or 'o' as nulls and merging '#' into the preceding sign. Best -2.9 to -3.5 per char (Spanish about -1.1), unreadable.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "transcription",
+   "what": "George Lasry supplied CTTS transcription and positions; 260 elements in eight lines after duplicate-box and null-group corrections.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
+   "what": "Lasry recovered the initial key with CTTS built-in cryptanalysis. User supplied this workflow attribution; no original solver seed/log is available in this contribution.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "reading",
+   "what": "GPT 6.1 Sol and Anthropic Opus 5.5 refined the key and translation; source-based glyph splitting, contextual testing and edited Spanish text; one p/y class remains unresolved.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "literature search",
+   "what": "The earlier Cryptiana/Kolosova null-group description was consulted during PR preparation, after the initial CTTS alphabet recovery; mer and por were restored as nulls. No prior alphabet key or paragraph plaintext was applied.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "what": "decode.py reproduces all eight literal lines: 260 elements, 49 key entries, 3 null occurrences, 2 ambiguous occurrences, vowel maximum 4 and consonant maximum 3.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 258 tokens, 48 types, es-golden-age order 4: reading -1.916 per letter; random keys -5.562 (z 6.0); key annealed onto shuffled ciphertext best -2.836 (mean -2.862, z 35.1); annealer on the real text -2.494. Verdict: pass.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The one ciphered paragraph of R1182 (8 lines, 336 signs) was eye-transcribed and attacked ciphertext-only without convergence; Kolosova's printed key for Nino's cipher (Cifra 15) could not be obtained.",
-  "contribution": ["transcription"],
-  "class": "not read",
-  "fraction_read": 0,
-  "verification": [],
-  "notes": "Skipped. Closed as attempted. The system is in print (Kolosova, Cifra 15), but the key was not reachable here and a blind attack on 336 doubtful signs with unresolved nulls did not converge."
+  "validation": {
+   "date": "2026-10-20",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 258,
+   "types": 48,
+   "tokens_per_type": 5.38,
+   "score": -1.916,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.562,
+     "sd": 0.606,
+     "max": -3.911,
+     "z": 6.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.862,
+     "sd": 0.027,
+     "max": -2.836,
+     "z": 35.1,
+     "p": 0.1429
+    }
+   },
+   "power": -2.494,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.916; polyphony 0.0; 2 unread tokens left out; annealer on the real text from random keys reached -2.494"
+  },
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "George Lasry recovered the initial key with CTTS from the ciphertext; later contextual/source refinement and a literature-supported correction of mer/por nulls, without applying a published alphabet key or plaintext.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected",
+   "catalogue correction"
+  ],
+  "class": "read",
+  "key": "partial",
+  "fraction_read": 0.9922178988326849,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py, transcription.txt + key.json: 255 unambiguous assignments / 257 non-null cipher occurrences; two p/y occurrences counted unread. Assignment coverage, not an independent accuracy estimate.",
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Solved by George Lasry; CTTS transcription and built-in cryptanalysis, then GPT 6.1 Sol and Anthropic Opus 5.5 refinements of key and translation.",
+    "date": "2026-10-20",
+    "source": "Contributed CTTS project and accompanying workflow attribution"
+   },
+   {
+    "who": "lasry",
+    "role": "transcription",
+    "note": "CTTS sign transcription and positions.",
+    "date": "2026-10-20"
+   },
+   {
+    "who": "kolosova",
+    "role": "prior solution",
+    "note": "Earlier reconstruction of a related 1522 Niño cipher; exact-letter coverage unconfirmed; alphabet key not applied.",
+    "published": true,
+    "source": "El lenguaje secreto de la diplomacia de Carlos V (1521-1527), 2017, Cifra 15, cited by Cryptiana"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "Published description cited in the pre-existing notes supports mer/por nulls; no alphabet key used.",
+    "source": "https://cryptiana.web.fc2.com/code/spanish2C_now.htm"
+   }
+  ],
+  "codes_open": {
+   "open": 0,
+   "total": 3,
+   "tokens_open": 0
+  },
+  "gaps": [
+   {
+    "blocker": "illegible",
+    "item": "Class (39), two occurrences: p/y identity unresolved"
+   }
+  ],
+  "notes": "Eight cipher lines covered. Two occurrences of one ambiguous sign and contextual one-occurrence LL/ND are explicit. No first-publication claim: related prior published key known, exact letter coverage unverified. Previous unsuccessful project attempt retained."
  }
 }

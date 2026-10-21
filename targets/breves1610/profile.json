@@ -18,18 +18,19 @@
     ]
    },
    "length": {
-    "tokens": 40,
+    "tokens": 39,
     "distinct": 23,
     "unit": "mixed",
     "measured": true,
-    "file": "ct_nov.txt"
+    "file": "ct_nov_v2.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "Gallica btv1b9059628m canvas 36, full resolution",
     "image_quality": "good",
-    "notes": "Code letters with a trailing comma are counted as separate tokens from the bare letter."
-   }
+    "notes": "Corrected 20 Oct 2026 against the key (alignment.tsv): 72 and 79 are overbarred; '3ᵈ' is two signs. The 21 Sept count (40, ct_nov.txt) split 'a ,' style comma codes."
+   },
+   "read": "read in part"
   },
   {
    "id": "15sept1610",
@@ -46,18 +47,19 @@
     ]
    },
    "length": {
-    "tokens": 60,
-    "distinct": 29,
+    "tokens": 59,
+    "distinct": 36,
     "unit": "mixed",
     "measured": true,
-    "file": "ct_sept.txt"
+    "file": "ct_sept_v2.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "Gallica btv1b9059628m canvas 32, full resolution",
     "image_quality": "good",
-    "notes": "Two passages in one letter."
-   }
+    "notes": "Two passages in one letter. Corrected 20 Oct 2026 (alignment.tsv): 72 overbarred; 't u' is one glyph (tu = U). The 21 Sept count was 60 (ct_sept.txt)."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -65,7 +67,7 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Probably the Henri IV-Brèves 1610 cipher (key BnF fr. 3642, DECODE R2077): homophonic alphabet using Latin letters as signs, plain and overbarred numeric codes and comma-marked letter codes.",
+  "summary": "Henri IV-Brèves cipher of 1610 (key BnF fr. 3462, Gallica view 112): homophonic alphabet of 2-5 signs per letter, comma-marked letter codes for common words, plain and overbarred number codes.",
   "symbol_kind": "digits and letters",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -81,15 +83,15 @@
    "present": "unknown"
   },
   "key_order": "unknown",
-  "word_division": "unknown",
+  "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "R2077 (Henri IV to Brèves, 5 Jan 1610), key photo on DECODE",
-  "notes": "Attribution to the R2077 key rests on shared sign types and a DECODE note; not confirmed by a reading."
+  "sibling_key": "BnF fr. 3462 view 112, the key of Henri IV to Brèves 5 Jan 1610 (DECODE R2077; R2077's note mistypes the shelfmark as 3642)",
+  "notes": "Key fits 95 of 98 glyphs (86 directly on view 112, 3 probable entries, 6 barred numbers off the page as corroborated by Tomokiyo); 3 signs conflict, so Marie's table may differ in a few cells."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "Tomokiyo (louisxiii.htm) and DECODE R2075/R2076: 'not deciphered'",
+   "where": "Tomokiyo (louisxiii.htm) and DECODE R2075/R2076: 'not deciphered'. Henri IV's own letter (R2077) was broken by Lasry, Biermann and Tomokiyo in 2021; its decryption is not on DECODE.",
    "found": "before attempt",
    "used": false
   },
@@ -101,14 +103,16 @@
   "attack": "key from archive",
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code, and posed the problem with /goal. No target-specific intervention recorded.",
   "tools": [
-   "beam.py (beam search over key-derived candidate letters, fr-1600-letters LM)"
+   "beam.py (beam search over key-derived candidate letters, fr-1600-letters LM; 21 Sept, failed)",
+   "alignment.tsv (manual glyph-to-cell comparison, 20 Oct)"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-20"
  },
  "solution": [
   {
@@ -137,7 +141,12 @@
    "result": "partial"
   },
   {
-   "kind": "solver", "technique": ["beam/DP decoding", "language-model scoring", "contextual inference"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring",
+    "contextual inference"
+   ],
    "what": "Beam search over each sign's candidate letters from the key reading, scored with fr-1600-letters.",
    "result": "failed"
   },
@@ -145,15 +154,122 @@
    "kind": "literature search",
    "what": "Found Brèves's reply of 9 Dec 1610 to the 10 Nov letter (Cinq cents de Colbert 351, pp. 724-730); it paraphrases the Savoy/Spain points, no quotation of the ciphered words.",
    "result": "partial"
+  },
+  {
+   "kind": "key from source",
+   "date": "2026-10-16",
+   "what": "Brice Dudout (with Claude and Codex) located the key at BnF fr. 3462, Gallica btv1b9058227h view 112, and deciphered both passages with it by a manual glyph-by-glyph alignment (emails 16 and 19 Oct 2026).",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "date": "2026-10-17",
+   "what": "Satoshi Tomokiyo confirmed to Brice that R2077's '3642' is a mistyping of fr. 3462 and corroborated barred 72 que, 79 re, 86 se, 90 tion (41 = leur).",
+   "result": "worked"
+  },
+  {
+   "kind": "access",
+   "date": "2026-10-20",
+   "what": "Gallica IIIF returned 403 (Cloudflare); used the key image (1800 x 1580 px) and line crops from Brice's CC BY 4.0 repository.",
+   "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "date": "2026-10-20",
+   "what": "Re-read our 21 Sept transcription against the key: bars on 72/79, 3ᵈ split, 'tu' one glyph; several of our letters lumped distinct key shapes.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "date": "2026-10-20",
+   "what": "Compared each of the 98 glyphs with the cell of view 112 it matches (alignment.tsv): 86 key, 3 probable, 6 off page (Tomokiyo), 3 conflict (re[c]ognoissant has b, one s without an S cell, acompagne[z] = E3 or Z2).",
+   "result": "partial"
+  },
+  {
+   "kind": "reading",
+   "date": "2026-10-20",
+   "what": "Settled three of Brice's brackets (am[b]ition, foi[b]lesse, [s]entant); proposed 'acompagnee' (E3) agreeing with 'ambition'.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The probable key (Henri IV-Brèves 1610, BnF fr. 3642, photo on DECODE R2077) is only available as a partial 833-px photo, and a beam search with it gave no French; Brèves's 9 Dec 1610 reply paraphrases the passage without quoting it.",
-  "contribution": ["transcription"],
-  "class": "not read",
-  "fraction_read": 0,
-  "verification": ["none"],
-  "notes": "Closed: key photo partial, reply of 9 Dec 1610 paraphrases only; 72 4 79 = [Conchine?] le pape avec is tentative. Reopen with Lasry's R2077 decryption or a BnF fr. 3642 image."
+  "method": "read after matching with key from external sources",
+  "method_basis": "Brice Dudout found that the Henri IV-Brèves key of 1610 (BnF fr. 3462 view 112, filed for another letter) fits Marie's passages and deciphered them; the project's sign-by-sign check finds 95 of 98 glyphs supported.",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "fraction_read": 0.969,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "alignment.tsv, 98 cipher glyphs: 86 key + 3 probable + 6 Tomokiyo-corroborated = 95; 3 conflict counted as unread.",
+  "codes_open": {
+   "open": 0,
+   "total": 11,
+   "tokens_open": 0
+  },
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "independent verification"
+  ],
+  "gaps": [
+   {
+    "item": "10 Nov re[c?]ognoissant, one sign",
+    "blocker": "no-key-material",
+    "detail": "B1 (b) on view 112; the word needs c. Regent's key or Lasry's R2077 decipherment needed."
+   },
+   {
+    "item": "10 Nov second s of recognoissant, one sign",
+    "blocker": "no-key-material",
+    "detail": "No S cell on view 112 has this shape (closest A4)."
+   },
+   {
+    "item": "15 Sept acompagne[z?], one sign",
+    "blocker": "illegible",
+    "detail": "E3 (e, 'acompagnee') or Z2 (z); the cells differ by a stroke."
+   },
+   {
+    "item": "barred 72, 79, 86, 90 (6 occurrences)",
+    "blocker": "no-key-material",
+    "detail": "N-Z page of the key not in hand; values as corroborated by Tomokiyo, counted as read."
+   }
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "both passages deciphered with the fr. 3462 view 112 key (with Claude and Codex)",
+    "date": "2026-10-16",
+    "source": "https://bdudout.github.io/europe-chiffree/en/marie-de-medicis.html; emails of 16 and 19 Oct 2026"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "verification",
+    "note": "confirmed fr. 3462 (not 3642) and corroborated barred 72 que, 79 re, 86 se, 90 tion",
+    "date": "2026-10-17",
+    "source": "Tomokiyo's feedback to Brice Dudout, reported in his email of 19 Oct 2026"
+   },
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "Henri IV-Brèves key, broken from R2077 with Biermann and Tomokiyo (2021)",
+    "date": "2021",
+    "source": "DECODE R2077"
+   },
+   {
+    "who": "biermann",
+    "role": "key or decipherment used",
+    "note": "R2077 break with Lasry and Tomokiyo (2021)",
+    "date": "2021",
+    "source": "DECODE R2077; Tomokiyo louisxiii.htm"
+   }
+  ],
+  "notes": "Brice's reading checked against view 112: three brackets settled (b, b, s), 'acompagnee' proposed, re[c]ognoissant has a b sign. The 21 Sept attempt failed on an 833-px key photo and a transcription that merged distinct shapes."
  }
 }

@@ -1,0 +1,204 @@
+{
+ "schema_version": 1,
+ "target": "siena5",
+ "title": "Siena R4794 (unnumbered): a slip wholly in cipher on pieces of artillery, 16th century",
+ "documents": [
+  {
+   "id": "R4794",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2, unnumbered (a faint pencil 5 was read by Lasry as no. 5, withdrawn by him 18 Oct 2026; no. 5 is R4791); DECODE R4794 (Concistoro_2308_48)",
+   "date": "16th century (orthography and nomenclator; unverified)",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "unknown writer -> 'le Signorie Vostre', presumably the Signoria of Siena",
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment; no clear text at all.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 165,
+    "distinct": 39,
+    "unit": "symbols",
+    "measured": false,
+    "file": "lasry_report.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry with CTTS",
+    "image_quality": "good",
+    "notes": "165 symbols: 160 letter signs (35 distinct) and 5 number codes (26 twice, 44, 67, 74). Transcription by Claude, refined by Lasry in CTTS. Count from the report, not re-measured. George Lasry names accurate transcription as the main obstacle in this fascicle. The project's own 24 Sept transcription is kept in project_attempt/ and was not used for the reading."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Pigpen-like homophonic substitution in which frame families stand for blocks of four letters and a dot shifts a frame to another block, with a small number nomenclator.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 39,
+  "diacritics": {
+   "used": true,
+   "note": "A dot moves a frame to another block of four letters (e, f, g, h without a dot; o, p, q, r with one)."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 4,
+   "kinds": [
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 4
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "sibling_key": "No key in Concistoro 2308 fits; pigpen-type keys R4776, R4786 share its style (report). Compared sign by sign with nos. 17 and 15: a different key.",
+  "notes": "Key figure in key_lasry.jpg (report p. 31)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None known; the project's 24 Sept survey left it unread.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Claude transcribed, George Lasry refined in CTTS; CTTS cryptanalysis gave 23 values, completed by Claude with crib guessing and dragging. This project filed his report.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver), built-in cryptanalysis"
+  ],
+  "models": [
+   "Claude (version not stated in the report)"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-10-15",
+  "last_date": "2026-10-20"
+ },
+ "solution": [
+  {
+   "date": "2026-09-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Project survey (siena1421): transcription r4794.txt and homsolve.py annealing; no key found, closed as too short.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "transcription",
+   "what": "Transcription by Claude, refined by George Lasry in CTTS.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
+   "what": "CTTS built-in cryptanalysis gave an initial key of 23 values.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Claude corrected and completed the key with crib guessing and dragging; the frame-plus-dot grid structure recognised.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "reading",
+   "what": "Whole slip deciphered; the four number codes unidentified; two encipherer slips corrected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Report key figures of nos. 5, 15 and 17 compared sign by sign: a different key from both.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "R4794: his key on the project's own 24 Sept transcription (project_attempt/r4794.txt): 83.8% (134/160); his key table has no H and no R column though his reading has h 7 times and r 11 times; our A aligns with r every time and our N with h; with those two values added, 93.1% (149/160). research/siena2308/verify_lasry.py r4794, r4794b.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-18",
+   "verdict": "not applicable",
+   "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"
+  },
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The report says CTTS cryptanalysis gave 23 values from the ciphertext and Claude completed the key by crib dragging; the slip has no clear text and no key fits.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.9697,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "George Lasry's counts in the report: all 160 letter signs have a value; the 5 number-code tokens (26 twice, 44, 67, 74) are unidentified; 160/165 cipher symbols",
+  "codes_open": {
+   "open": 4,
+   "total": 4,
+   "tokens_open": 5
+  },
+  "gaps": [
+   {
+    "item": "number codes 26 (twice), 44, 67, 74",
+    "blocker": "no-key-material",
+    "detail": "The nomenclator is lost; no key in the busta fits the slip."
+   }
+  ],
+  "verification": [
+   "historical consistency",
+   "independent verification"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Key recovered ciphertext-only with CTTS and Claude; decipherment and translation (report pp. 31-32).",
+    "source": "Email and report to Daniel Bourdeau, 17 Oct 2026",
+    "date": "2026-10-17",
+    "published": false
+   }
+  ],
+  "notes": "Contributed; figures from the report."
+ }
+}

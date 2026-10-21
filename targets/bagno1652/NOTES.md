@@ -1,20 +1,56 @@
-# Niccolò Guidi di Bagno to the Secretariat of State, Paris, 5 January 1652 — attempted, open
+# Guidi di Bagno to the Secretariat of State, Paris, 5 January 1652
 
-**Status:** not read. The DECODE images were obtained and checked in full. The suggested Francia 346 key is excluded, but no decipherment, clear copy or matching key was found. No plaintext is claimed.
+**Status:** key recovered from ciphertext-only by George Lasry; all four cipher pages deciphered with the scattered gaps and tentative code values listed below. Key state: partial.
 
-## Target
+## Contribution, 20 October 2026
+Solved by George Lasry. Transcription was made with CTTS (CrypTool Transcriber and Solver), using its machine-learning model and manual correction. Ciphertext-only cryptanalysis was performed with GPT-6 Astra and Anthropic Claude Opus 5.5 under Lasry's direction.
 
-- Niccolò Guidi di Bagno, papal nuncio in France, to the Secretariat of State in Rome.
-- Paris, 5 January 1652; Italian.
-- Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104, ff. 5r–7v; DECODE R5622.
-- DECODE's five images are ordered 005r (cover/opening), 006r, 006v, 007r and 007v. The four latter leaves are almost wholly in figures, with occasional Italian words left clear.
-- The volume description is: letters and ciphers from the nuncio to the Secretariat, 5 January–28 December 1652, ff. 5–337. R5622 is the first despatch in the volume, not the whole volume.
+The submission covers all four cipher pages, ff. 6r–7v, in reading order P3, P4, P5, P1. The record also includes a clear opening leaf, f. 5r; it is not included in the four-page cipher reading.
 
-## What the images establish
+This letter was not part of George Lasry, Beáta Megyesi and Nils Kopal, "Deciphering papal ciphers from the 16th to the 18th Century", Cryptologia 45(6), 479–540 (2021; published online 2020), DOI 10.1080/01611194.2020.1755915 (scope confirmed by George Lasry).
 
-The first leaf supplies the date and origin. Four following pages contain an unbroken decimal stream with spaces of inconsistent evidential value and clear Italian intrusions including *et*, *perche*, *hauerà*, *huomo* and *prudenza*. Repeated `66` and `666` occur inside the stream. There is no interlinear or marginal decipherment. DECODE lists no document attachment and no transcription for any of the five image records.
+## Historical context and contents
+Written from Paris on 5 January 1652, during the Fronde, the despatch concerns opposition to Cardinal Mazarin's return to France. Guidi di Bagno reports the Parlement's death sentence and 150,000-livre bounty, threats against Mazarin, and an appeal for papal intervention. The central dispute is whether a secular court can punish a cardinal or whether that authority belongs to the pope.
 
-The full image names and folio order are recorded locally; the scans themselves are not committed. The site carries one reduced crop only.
+The nuncio rejects the Parlement's jurisdiction over a cardinal. A speaker tentatively identified as the Duke of Orléans threatens that Mazarin will be killed in his cardinal's robes unless the pope summons or deprives him. The letter also reports the Queen's broken promise that Mazarin would not return.
+
+The record identifies the recipient as the Secretariat of State. The working edition calls him Cardinal Chigi; Fabio Chigi was not created cardinal until 19 February 1652. We therefore retain the record's office attribution in the public title, without silently treating the working header as proof of a personal addressee.
+
+## Files and reading order
+- `key.txt`: current CTTS key; `?` remains tentative.
+- `transcription/all.txt`: exact CTTS grouped ciphertext, export order P1/P3/P4/P5.
+- `decryption/all.txt`: exact CTTS automatic key application; not the edited prose.
+- `edited/all.txt`: full existing edited Italian rows, reordered P3/P4/P5/P1.
+- `edited/edits.txt`: original CTTS aggregate.
+- `reading_edition.txt`, `translation_en.txt`: complete contributed editions, including all four cipher pages and uncertainty conventions.
+- `snapshots/key.png`, `snapshots/decryption key.png`: refreshed CTTS snapshots, copied without recompression.
+- `token_audit.tsv`, `counts.json`, `source_hashes.json`: reproducible counts and source integrity.
+
+## Measured coverage
+1,796 cipher elements; 94 distinct labels (93 digit codes plus the unresolved x3); 3,404 represented digits. Cleartext placeholders are excluded.
+1,759/1,796 (97.94%) occurrences have unqualified key values; 35 have tentative values and 2 are unresolved. This is key-application coverage, not a claim of that percentage of correct Italian. The edited reading still has local gaps and uncertain word divisions.
+
+## Recovery
+The attack recovered the grouping of a continuous digit stream into single-digit letters, two-digit letters and syllables, and four-digit word/name codes. Repeated Italian words and crib testing constrained the values; the roughly alphabetical nomenclator helped extend them. The manuscript was revisited to correct touching-digit ligatures, duplicated boxes, and the marked 04 = qu versus plain 04 = che. Values were checked across the four cipher pages. No matching historical key or decipherment was used. Clear words interspersed in the letter supply context, not a parallel decipherment of the cipher passages.
+
+The rejected Francia 346 key, noisy OCR, and proposed generic null-5 rule did not supply the solution. No general null-5 rule was accepted. The double-digit ligatures require image checks; they cannot be inferred solely to force fluent language.
+
+## Remaining gaps
+- 2698 in the Sedan date — blocker: open-codes. One occurrence after venti; the day must remain twenty-[…], not a guessed precise date.
+- x3 at f. 6v line 21 — blocker: illegible. Ink blot obscures the grouping.
+- f. 6r lines 19–20 and f. 7v closing fragment — blocker: illegible. The edited reading retains explicit gaps; assigned letters alone do not recover the lost wording.
+- Tentative nomenclator and Queen passage — blocker: open-codes. 35 occurrences of 27 tentative labels; names and the conditional sentence remain marked with question marks.
+
+## Escalation
+- [x] siblings: previous repository investigation checked the exact shelfmark and neighbouring DECODE records; no matching sibling found.
+- [x] clear-pages: previous investigation inspected all five record images; no parallel decipherment.
+- [x] known-keys: Francia 346 excluded; the solution reconstructs this letter's own key.
+- [x] print: prior repository search found no edition of this despatch; author confirms exclusion from the papal-cipher article.
+- [x] key-rebuild: CTTS ML-assisted transcription, Italian cribs, repeated groups, alphabetical code structure and source checks.
+- [x] retry: repeated application across all four cipher pages; the residual date, blot and tentative names stay explicit.
+
+## Previous repository investigation, 22 September 2026
+The following records the earlier unsuccessful attempt, not the current outcome.
 
 ## The suggested Francia 346 key
 
@@ -33,30 +69,9 @@ This is a structural exclusion, not merely a bad language-model score: the obser
 
 Whole-line OCR and character segmentation were tried on the four cipher pages. The handwriting, touching figures, variable spacing and bleed-through produced enough substitutions and missed digits that the output cannot support cryptanalysis or publication. A glyph-clustering pass found thousands of candidates but did not yield a dependable digit sequence. These experiments are evidence about the work still needed, not a transcription.
 
-## What would finish it
-
-1. A manual, line-by-line digit transcription of ff. 6r–7v, independently checked against the scans.
-2. The corresponding 1652 Paris nunciature key or the Secretariat's register copy/decipherment, most likely in the AAV rather than online.
-3. Failing that, several more letters from Francia 104 shown to use the same key; the single four-page ciphertext is not enough to identify its code boundaries securely from noisy OCR.
-
-## Remaining gaps
-
-- **Entire cipher text — blocker: no-key-material.** No key, decipherment or clear copy is accessible online; the suggested Francia 346 table is incompatible.
-- **Reliable sign-level transcription — blocker: illegible.** The scans are human-readable, but automated output is too noisy and a full double-pass manual transcription remains substantial work.
-- **Secretariat register / 1652 Paris key — blocker: needs-physical-access.** No digitised witness was found.
-
-## Escalation
-
-- [x] Siblings: exact shelfmark and adjacent DECODE records checked; none supplies the same text or key.
-- [x] Clear pages: all five images checked; no marginal/interlinear decipherment.
-- [x] Known keys: Francia 346 tested and structurally ruled out.
-- [x] Print: exact shelfmark, date, sender and route searched; no edition of this despatch found.
-- [x] Key rebuild: OCR, segmentation and glyph clustering attempted; rejected as too inaccurate for a defensible transcript.
-- [n/a] Retry: there is no plaintext or usable key to rerun.
 
 ## Sources
-
-- DECODE R5622, `ASV_i1025_SdS_Francia_104`, images and metadata: https://de-crypt.org/decrypt-web/RecordsView/5622
-- Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104, ff. 5r–7v.
-- Julien Régibeau, “Incarner l’idéal du padre comune au milieu de la guerre civile. L’action diplomatique du nonce Niccolò Guidi di Bagno face à Mazarin durant la Fronde” (2021), for 1647–50 background only: https://orbi.uliege.be/handle/2268/210527
-- `targets/ceva1632/`, this repository: reconstructed Francia 346 table and verified 1632 application.
+- [DECODE R5622](https://de-crypt.org/decrypt-web/RecordsView/5622), AAV Segreteria di Stato, Francia 104, ff. 5r–7v; cipher on ff. 6r–7v.
+- [Julien Régibeau, study of Guidi di Bagno and Mazarin during the Fronde](https://orbi.uliege.be/handle/2268/210527), background only, not this letter's plaintext.
+- [Lasry, Megyesi and Kopal, papal-cipher article](https://doi.org/10.1080/01611194.2020.1755915), not the source of this solution.
+- [Treccani, Alessandro VII](https://www.treccani.it/enciclopedia/alessandro-vii_%28Enciclopedia-dei-Papi%29/), Chigi's promotion on 19 February 1652.

@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "target": "rosamonde1915",
+  "title": "The Rosamonde telegrams: Sun Yat-sen and Soong Ching-ling, 1915–1916",
+  "documents": [
+    {
+      "id": "1915-B03050087600",
+      "read": "read in part",
+      "shelfmark": "Diplomatic Archives of the MOFA of Japan, 1.6.1.4-2-1-2 vol. 1, JACAR B03050087600 (8 Jan - 11 Mar 1915)",
+      "date": "17 Feb - 11 Mar 1915",
+      "year": 1915,
+      "country": "China",
+      "route": "Tokyo -> Shanghai",
+      "language": "English",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Japanese copies of the telegrams with no translation; per the contributor no decipherment exists in the volume or in the literature he checked.",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "letters",
+        "measured": false
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "Brice Dudout's edition (bdudout.github.io/wenmi/en/rosamonde.html): forms transcribed from the JACAR scans by Claude and, blind, by Brice Dudout (89% of letters identical in the initial sample).",
+        "image_quality": "fair",
+        "notes": "Eleven telegrams (17, 20, 21, 23, 25, 26 Feb; 3, 6, 7, 9, 11 Mar 1915). The project transcribed two of them (20 and 26 Feb, images 45 and 52) from the scans in the contributor's repository: 15 ten-letter words, measured in ciphertext_checked.txt together with 7 July. The contributor's full transcription is not in his public repository, so the set's length is not measured here."
+      }
+    },
+    {
+      "id": "1915-B03050087700",
+      "read": "read in part",
+      "shelfmark": "Diplomatic Archives of the MOFA of Japan, 1.6.1.4-2-1-2 vol. 1, JACAR B03050087700 (Mar 1915 - Feb 1916)",
+      "date": "12 Mar - 7 Jul 1915",
+      "year": 1915,
+      "country": "China",
+      "route": "Tokyo -> Shanghai; Shanghai -> Tokyo",
+      "language": "English",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment with the copies.",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "letters",
+        "measured": false
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "Brice Dudout's edition, as above.",
+        "image_quality": "fair",
+        "notes": "Four telegrams (12, 15 Mar; 10 Jun; 7 Jul 1915). The project transcribed 7 July (image 50): 5 words, 50 letters."
+      }
+    },
+    {
+      "id": "1916-B03050089000",
+      "read": "read",
+      "shelfmark": "Diplomatic Archives of the MOFA of Japan, 1.6.1.4-2-1-2 vol. 3, JACAR B03050089000 (29 Apr - 22 May 1916)",
+      "date": "1 - 13 May 1916",
+      "year": 1916,
+      "country": "China",
+      "route": "Nagasaki/Shanghai -> Tokyo; Tokyo -> Shanghai",
+      "language": "English",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment with the copies.",
+        "partial": false
+      },
+      "length": {
+        "tokens": "unknown",
+        "unit": "letters",
+        "measured": false
+      },
+      "transcription": {
+        "by": "mixed",
+        "source": "Brice Dudout's edition; per his page the 1916 forms were transcribed blind before the key was found.",
+        "image_quality": "fair",
+        "notes": "Seven telegrams (1, 4, 8, 10, 11, 12, 13 May 1916). Not checked against the scans here."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic"
+    ],
+    "summary": "English telegraphic text, unspaced and cut into ten-letter words, enciphered by a reciprocal letter substitution (twelve swapped pairs, d and p unchanged).",
+    "symbol_kind": "letters",
+    "distinct_symbols": 26,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": false
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "random",
+    "word_division": "none",
+    "notes": "Key a-u b-g c-s e-o f-j h-y i-r k-z l-t m-w n-v q-x, d and p fixed; the same key from Feb 1915 to May 1916. Names, numbers, reply addresses and a few words (happy, Inuzuka, iron, trunk) stay in clear. The last word of a message is cut at ten letters (husba[nd]); the 7 July message ends in a stray p. The 1915 forms twice write qq where pp is expected (6 Mar). The project's 200-letter sample has 23 distinct letters (measured)."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Per the contributor, not in Bourdeau's sunintercepts work on the 1916 intercepts, Yang Tianshi 2001, Zhu Jiulin 2016, or Chang & Halliday 1986; other works not yet checked.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images",
+      "transcription"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Brice Dudout found the telegrams in the JACAR volumes and directed the work; Claude transcribed the forms, Brice re-transcribed them blind, and the key was recovered by simulated annealing with an English quadgram model (contributor's account). The project only re-deciphered three telegrams from the scans.",
+    "tools": [
+      "decipher.py"
+    ],
+    "models": [
+      "Claude Opus 5.5 (Brice Dudout's sessions; he says he mainly uses Opus 5.5)",
+      "Claude Opus 5.5 (this project's check)"
+    ]
+  },
+  "solution": [
+    {
+      "kind": "access",
+      "what": "Contributor found a family of ten-letter word telegrams (Tokyo to 'Laisaosang' and 'Rosamonde', Shanghai) among the Chinese-code telegrams in JACAR B03050087600 and B03050087700, and more in the May 1916 volume B03050089000.",
+      "result": "worked"
+    },
+    {
+      "kind": "transcription",
+      "what": "Forms transcribed from the 200-dpi JACAR scans twice, by Claude and by Brice Dudout blind (89% of letters identical in the initial 20 texts); the 6 and 7 March 1915 additions reviewed on a prefilled transcription.",
+      "result": "worked"
+    },
+    {
+      "kind": "statistics",
+      "what": "Letter index of coincidence 0.062 (natural language, so a substitution, not a code); f and q absent; trigram hea x10.",
+      "result": "worked",
+      "technique": [
+        "frequency analysis",
+        "repeat/pattern analysis"
+      ]
+    },
+    {
+      "kind": "solver",
+      "what": "Simulated annealing over all 26-letter substitutions, then over reciprocal substitutions only, scored by an English quadgram model; key a-u b-g c-s e-o f-j h-y i-r k-z l-t m-w n-v q-x, d p fixed.",
+      "result": "worked",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring",
+        "key-structure hypothesis"
+      ]
+    },
+    {
+      "kind": "control",
+      "what": "English text enciphered with a random key recovered at 100% by the same search.",
+      "result": "worked"
+    },
+    {
+      "kind": "verification",
+      "what": "Out of sample: the key from the 1915 telegrams alone scores the blind 1916 transcriptions at -5.97 against -8.01 +/- 0.27 for 2,000 random reciprocal tables (z = 7.5), and Brice's blind 1915 re-transcription at z = 10.9; a telegram in another system stays at z = 0.6 (contributor's figures).",
+      "result": "worked",
+      "technique": [
+        "statistical test"
+      ]
+    },
+    {
+      "kind": "reading",
+      "what": "22 telegrams edited with copyist confusions (n/v, i/r, g/p, a/u, e/c) corrected in brackets; about 45 of 750 letters corrected in the initial 11 complete 1915 telegrams; eight words of 9 Mar 1915, one word of 25 Feb and one group of 7 Jul not read.",
+      "result": "partial"
+    },
+    {
+      "kind": "verification",
+      "what": "Attribution cross-checked: Ching-ling's absence from Japan 28 Oct 1914 - 17 Mar 1915 fits the Tokyo-Shanghai run; Zhu Zhuowen's letters of 2 and 4 Feb 1915 on the relay office fit 'cable to Chu's'; the 9-10 Mar 1915 rumour and the May 1916 iron trunk and Porthos messages agree with Chinese-code telegrams in the same volumes (contributor's account).",
+      "result": "worked",
+      "technique": [
+        "contextual inference"
+      ]
+    },
+    {
+      "kind": "verification",
+      "date": "2026-10-20",
+      "what": "Project check: 20 Feb, 26 Feb and 7 Jul 1915 transcribed here from the three JACAR scans in the contributor's repository (20 words, 200 letters) and deciphered with the reciprocal key unchanged (decipher.py). The output agrees letter for letter with the contributor's edition, including his bracketed corrections (toi for tor[t], a for [u], x for [p]ain, e for i[n], b for esca[p]e) and the unread 'xa ins' of 7 July. Two small points: the scan gives abon (g, not p) in '[u]pon', a slip his brackets leave out, and the cipher gives 'soul are mingled' where his edition prints 'souls'.",
+      "result": "worked",
+      "technique": [
+        "key matching"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 200 tokens, 23 types, en-modern order 4: reading -2.435 per letter; random keys -7.545 (z 7.9); key annealed onto shuffled ciphertext best -4.014 (mean -4.315, z 7.4); annealer on the real text -3.456. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "kind": "verification",
+      "what": "Retry of the open words on the JACAR scans, 20 Oct 2026: B03050087600 fetched; the 25 Feb form (p. 47, frame 0209) read: ejotrubuvd = of|eliag|and, a garble in the received text; the 9 Mar form not found in frames 0163-0220. Gaps recorded as transmission garbles (blocker illegible).",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-10-20",
+      "model": "en-modern",
+      "file": "validation.tsv",
+      "tokens": 200,
+      "types": 23,
+      "tokens_per_type": 8.7,
+      "score": -2.435,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -7.545,
+          "sd": 0.65,
+          "max": -5.837,
+          "z": 7.9,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -4.315,
+          "sd": 0.254,
+          "max": -4.014,
+          "z": 7.4,
+          "p": 0.1429
+        }
+      },
+      "power": -3.456,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.435; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -3.456"
+    },
+    "class": "read in part",
+    "key": "recovered",
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "Per the contributor's page the key was found by simulated annealing over substitutions scored by an English quadgram model, from the cipher words alone, with an enciphered English control; the page names no crib or outside plaintext.",
+    "contribution": [
+      "none"
+    ],
+    "fraction_read": "unknown",
+    "fraction_read_method": "estimated",
+    "fraction_read_source": "No per-letter reading file in the contributor's public repository. Unread: eight words of 9 Mar 1915, one word of 25 Feb 1915, one group of 7 Jul 1915; the 9 Mar telegram has 30 words.",
+    "codes_open": {
+      "open": 0,
+      "total": 0,
+      "tokens_open": 0
+    },
+    "verification": [
+      "matched control",
+      "statistical test",
+      "historical consistency",
+      "key confirms"
+    ],
+    "gaps": [
+      {
+        "item": "9 Mar 1915, eight cipher words in the middle of the 30-word telegram",
+        "blocker": "illegible",
+        "detail": "Transmission garble on the copy: the contributor checked the form on the scan (15 Oct 2026) and its letters do not decipher under the complete key. Not located here: B03050087600 as downloaded holds frames 0163-0220 and the 9 Mar form was not among those inspected (20 Oct 2026)."
+      },
+      {
+        "item": "25 Feb 1915, one word after 'throw of[f]', and the end of 'de[vou]t'",
+        "blocker": "illegible",
+        "detail": "Transmission garble on the copy. Checked here on B03050087600 p. 47 (frame 0209), 20 Oct 2026: the form is clearly written; the word reads ejotrubuvd, deciphering to of|eliag|and, so five letters between 'of' and 'and' are corrupt in what the clerk received. 'de[vou]t' is dogocl on the form: n and a written g and c."
+      },
+      {
+        "item": "7 Jul 1915, one group ('Lovesick ... in torture')",
+        "blocker": "illegible",
+        "detail": "Transmission garble on the copy: the key gives lovesickxa instorture; checked on B03050087700 image 50 here."
+      }
+    ],
+    "notes": "The reading, transcription and key are Brice Dudout's, made with Claude (Opus 5.5). The identification of sender and recipient rests on cross-checks; no form names them. 'Laisaosang' and Yung's Chinese name are unidentified; 'Chang Ki' (Zhang Ji?) and 'Tai' (Dai Jitao?) are probable.",
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "dudout",
+        "role": "new cipher with solution",
+        "note": "Found the 22 Rosamonde telegrams in the JACAR volumes, recovered the reciprocal key and edited the texts, with Claude (Opus 5.5); agreed on 15 Oct 2026 to cross-posting with attribution and to inclusion in the paper metadata",
+        "date": "2026-10-15",
+        "source": "https://bdudout.github.io/wenmi/en/rosamonde.html; email 15 Oct 2026 (6 and 7 Mar 1915 added, 16 Oct 2026)",
+        "published": true
+      }
+    ]
+  }
+}

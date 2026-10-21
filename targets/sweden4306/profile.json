@@ -1,0 +1,329 @@
+{
+ "schema_version": 1,
+ "target": "sweden4306",
+ "title": "R4306: Dutch diplomatic cipher, transcribed with CTTS and solved with Opus 5.5",
+ "documents": [
+  {
+   "id": "R4306",
+   "read": "read in part",
+   "shelfmark": "Riksarkivet, Stockholm, Chifferklaver låda II:133; DECODE R4306",
+   "date": "Undated; pencilled 1632?; references letters of 23 February and 13 March",
+   "year": "unknown",
+   "country": "unknown",
+   "route": "Unknown sender → \"Mr ?ilick (Wilick?)\", Amsterdam (address leaf, DECODE image I25833, read 18 Oct 2026)",
+   "language": "Dutch (17th century)",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No interlinear or marginal decipherment on the supplied cipher page. No historical plaintext or matched archive key used in the contributed solution.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 461,
+    "distinct": 40,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher_tokens.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "George Lasry’s CTTS project; Codex merged separated digit boxes; current post-review transcription supplied with the Opus 5.5 solution.",
+    "image_quality": "good",
+    "notes": "35 CTTS rows, 463 selections; two date-numeral selections (285=23, d13=13) excluded from cipher counts. Position-label histogram matches transcription exactly. DECODE lists three record pages; only this one cipher page is submitted."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "An alphabetical numerical substitution, 30–52, with nulls and four unresolved three-digit nomenclator codes.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1–3",
+   "separation": "mixed"
+  },
+  "distinct_symbols": 40,
+  "diacritics": {
+   "used": false,
+   "note": "Dots/colons separate numbers; superscript marks on date numerals do not select a cipher alphabet."
+  },
+  "homophones": {
+   "used": false,
+   "max_per_vowel": 1,
+   "max_per_consonant": 1,
+   "per_letter": {
+    "a": 1,
+    "b": 1,
+    "c": 1,
+    "d": 1,
+    "e": 1,
+    "f": 1,
+    "g": 1,
+    "h": 1,
+    "i": 1,
+    "k": 1,
+    "l": 1,
+    "m": 1,
+    "n": 1,
+    "o": 1,
+    "p": 1,
+    "q": 1,
+    "r": 1,
+    "s": 1,
+    "t": 1,
+    "u": 1,
+    "w": 1,
+    "x": 1,
+    "y": 1
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 4,
+   "kinds": [
+    "names",
+    "titles"
+   ],
+   "unread_groups": 4
+  },
+  "nulls": {
+   "present": true,
+   "count": 15
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "doubled_letters": "Encoded twice; no general doubling operator established.",
+  "sibling_key": "No archive or sibling key used. Earlier survey tested R4296 and R4310 unsuccessfully.",
+  "notes": "23 alphabet positions (30–52), 21 observed; 45=q and 51=x are predictions. Source header calls this 24 letters but lists only 23. Fifteen observed null classes (34 occurrences), plus unobserved null 13 in the source key. No j, v or z assignment. Date labels 285 and d13 represent literal 23 and 13; they are not nomenclator entries."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "The 21 September repository survey reports failed attempts; DECODE is still Non-decrypted on 17 October 2026. No prior plaintext was located in the limited exact-phrase search; no priority claim.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry directed the work, supplied the CTTS material, and supplied the edited Dutch reading, English translation and contextual notes. He confirms: transcribed with CTTS, then solved with Opus 5.5. Codex packaged the PR and checked counts, glyphs and five mechanical lines.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver), transcription",
+   "Opus 5.5, cipher solution",
+   "Codex digit-box merging and contribution checks",
+   "build.py (counts, visual key, five-line mechanical excerpt only)",
+   "targets/riksarkivet1628/solve_num.py and qg.py (project attempt of 21 Sept 2026, failed)"
+  ],
+  "models": [
+   "Claude Opus 5.5"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-09-21",
+  "last_date": "2026-10-17"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "access",
+   "what": "Project attempt (former entry riksarkivet4306): fetched the 14 DECODE records of catalogue 207 with the project cookie; R4306 (Chifferklaver låda II:133, reported as addressed to \"Mr ?ilick\" at Amsterdam, pencilled \"1632?\") is one of four unrelated groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Project attempt: agent transcription of R4306 from the DECODE images (463 numbers; re-measured 14 Oct 2026 as 492 tokens, 51 distinct), now targets/sweden4306/project_attempt/r4306_transcription.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Project attempt: IoC 0.078 (monoalphabetic); '34 42' x31.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
+   "what": "Project attempt: simple-substitution and homophonic annealing over quadgram models in nl, de, la, fr, sv, en, it, es, pt, da (targets/riksarkivet1628/solve_num.py, qg.py), also with low/high numbers as word breaks; best about -4.3/char against about -2.5 for real text, after a search bug and a backoff-model artefact were fixed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "transcription",
+   "what": "Project attempt: re-transcribed keeping the scribe's digit variants (34/74, 40/4o/9o, 30/3o/70/7o; 465 tokens, 62 distinct; project_attempt/r4306_v2.txt) and annealed again: no fit.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "sibling key",
+   "what": "Project attempt: fetched 70 Chifferklaver låda II key records (R4259-R4329); tested the Siebenbürgen key R4310 and the 1632 word-end-30 key R4296: no fit. The other 68 were not tried.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Earlier riksarkivet1628 survey reports failed numerical attacks in multiple languages and rejected keys R4296/R4310. These are prior attempts, not new runs in this contribution.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-14",
+   "kind": "verification",
+   "what": "Project attempt split from the catalogue-207 group entry riksarkivet1628 as its own entry riksarkivet4306 under the one-key rule; both transcriptions re-measured. No new attack.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "transcription",
+   "what": "CTTS digit selections were merged into numerical units; current supplied snapshot contains 463 selections in 35 rows. Subsequent sign corrections are recorded in the preserved source-key comments.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "solver",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "George Lasry confirms that Opus 5.5 solved the cipher after CTTS transcription. The working-key header describes crib dragging; the result is an alphabetical number mapping with nulls. No historical plaintext or external key supplied the recovery. Exact prompts and run settings are not reconstructed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "verification",
+   "what": "Matched all 463 position labels to transcription counts; counted 461 cipher elements after excluding date numerals, and reapplied the current key to exactly five manuscript lines without correcting their spelling.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-17",
+   "kind": "access",
+   "what": "Checked public DECODE metadata: Riksarkivet Chifferklaver låda II:133, three record pages, broad 1600–1699 catalogue range, blank correspondents/languages and Non-decrypted status. Image manager requires login; only the supplied cipher page is independently inspected here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "Deduplicated under one key, one entry: the project's attempted-open entry riksarkivet4306 (same record R4306) folded into this contributed entry; its transcriptions moved to project_attempt/, its page made a stub pointing to sweden4306.html, its ledger rows removed. The contributed key, reading and counts were not changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "access",
+   "what": "Opened R4306's two other DECODE views at full resolution: address leaf I25833 ('Aen Mr. ?ilick (Wilick?) ... Amsterdam', confirming the earlier survey's Amsterdam) and wrapper I25834 (II:104, '1600- Chifferbref till ... i Amsterdam'). The address leaf carries a 3-line cipher note in its right margin with codes 113 and 101.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "reading",
+   "what": "Applied the contributed key to the address-leaf note: 'ler.,[torn]hlden / [113]naeldan / kn[101]na..mk'; all Caesar offsets of a 24-letter alphabet and the R4287 sequential key also tried: no Dutch.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "A faint list on the wrapper image (Nz ..., Oz ..., Tz Rex Polon., Vz Victoria ...) matched to the last leaf of R4305 (Brandenstein 1630 key, II:132, filed next to R4306): a show-through/offset from that key, not R4306's nomenclator.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "sibling key",
+   "what": "Surveyed every Chifferklaver låda II key record on DECODE for an alphabet a=30 ... y=52 with a 100+ nomenclator: the archivists' wrapper labels ('a = 7, 35, 51' etc.) of 43 records, the pages of the unlabelled and wrapperless records, and the never-downloaded R4319-R4321. None matches. R4287 ('diverse chiffernycklar ... av okänd proveniens') is a similar sequential type with another alphabet (a=2/28/10, c=31).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "hypothesis",
+   "what": "R4319 (Jacob du Moulin, 1650) is the same chancery template at another offset: sequential alphabet a=20 ... z=43, then an alphabetical nomenclator from 101 (101 Archangel ... 112 Ambassadeur, 113 Amsterdam; B from 120). By analogy R4306's 101-114 would be A/B-initial words. Not testable on five occurrences; offered to George as a proposal.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "verification",
+   "what": "Checked the doubtful spots (lines 4-5 ekll|men, line 33 Mar..y) on the page image: the scribe's tailed 0 makes 30/38 and 40/43 ambiguous; no better reading can be forced. Gap reclassified as illegible.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-17",
+   "verdict": "not applicable",
+   "notes": "The requested five manuscript lines contain only 62 literal letters, below the validator minimum of 80; no full mechanical decryption is included. No statistical accuracy claim is made."
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Transcribed with CTTS, then solved with Opus 5.5, as confirmed by George Lasry; no historical plaintext or external key used.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.9882903981264637,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "counts.json: 422 assigned letter occurrences / 427 non-null cipher occurrences. Five unresolved code occurrences; 34 nulls and two date-numeral selections excluded. Assignment coverage, not verified meaningful-reading accuracy.",
+  "fraction_coherent": "unknown",
+  "codes_open": {
+   "open": 4,
+   "total": 4,
+   "tokens_open": 5
+  },
+  "grades": "unknown",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Directed the work and supplied the CTTS project, edited Dutch text, translation and context. Transcribed with CTTS, then solved with Opus 5.5.",
+    "date": "2026-10-17",
+    "source": "https://github.com/dbourdeau/cyphersolver/tree/main/targets/sweden4306",
+    "published": true
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Codes 105, 106, 113 and 114 (and 101 in the address-leaf note)",
+    "blocker": "no-key-material",
+    "detail": "No key with this alphabet (a=30 ... y=52) is among the 61 Chifferklaver låda II key records on DECODE (the wrappers' 'a =' labels and the unlabelled keys checked 18 Oct 2026, R4319-R4321 newly fetched); R4306's own three views carry no gloss; five occurrences of four values are too few to rebuild the nomenclator. The sister template R4319 (Jacob du Moulin 1650: sequential alphabet, then an alphabetical nomenclator from 101) suggests A/B-initial words, a structural proposal only."
+   },
+   {
+    "item": "Doubtful words and literal-versus-edited discrepancies",
+    "blocker": "illegible",
+    "detail": "Checked on the page image 18 Oct 2026: the scribe writes 0 as a tailed o, so 30/38 and 40/43 are ambiguous (mondeling(e) ... ekll|men; Mar..y written 41:30:46:3ø:52); the rest are the scribe's own slips, and no better image or contemporary decipherment exists. George's editorial restorations stand."
+   },
+   {
+    "item": "Cipher note on the address leaf (image I25833, 3 lines, about 22 numbers, partly torn away)",
+    "blocker": "too-short",
+    "detail": "Newly noticed 18 Oct 2026; contains codes 113 and 101. The letter key gives 'ler.,[torn]hlden / [113]naeldan / kn[101]na..mk', not Dutch; Caesar offsets and the R4287 sequential key also fail. Too short and damaged to fit a variant key."
+   },
+   {
+    "item": "Year and sender",
+    "blocker": "needs-physical-access",
+    "detail": "The letter names neither; the wrapper (II:104, '1600- Chifferbref till ... i Amsterdam') and the pencilled 1632? are archivists' estimates. Recipient address read on I25833: 'Aen Mr. ?ilick (Wilick?) ... Amsterdam', first letter of the surname unclear. Only Riksarkivet provenance records could date it."
+   }
+  ],
+  "notes": "Belongs to: Riksarkivet key-box and Oxenstierna ciphers. Exactly five mechanical lines included; the full Dutch reading and translation are supplied editions. No full mechanical decryption or established year/identity claimed. Escalation 18 Oct 2026 (Claude, for George Lasry's review): box keys, R4306's other views and the address-leaf note worked; no gap remains workable from DECODE."
+ }
+}

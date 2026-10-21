@@ -23,7 +23,7 @@
         "tokens": 1056,
         "unit": "symbols",
         "measured": true,
-        "file": "../siena1421/transcripts/no06.tok"
+        "file": "project_attempt/no06.tok"
       },
       "transcription": {
         "by": "llm from images",
@@ -52,7 +52,7 @@
         "tokens": 2638,
         "unit": "symbols",
         "measured": true,
-        "file": "../siena1421/transcripts/no24p2.tok"
+        "file": "project_attempt/no24p2.tok"
       },
       "transcription": {
         "by": "llm from images",
@@ -97,13 +97,17 @@
       "transcription"
     ],
     "attack": "ciphertext-only",
-    "human_role": "George Lasry ran the solution with Claude and ChatGPT Astra (key recovered from the ciphertext, then the filed key R4755 found); this project verified it on its own blind transcription and decoded the dorse of no. 24",
+    "human_role": "George Lasry recovered the key ciphertext-only with CTTS's built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the filed key R4755 was found to match afterwards (consolidated report, 17 Oct 2026; his PDF of 14 Oct 2026 had said 'with Claude and the help of ChatGPT Astra'). This project verified it on its own blind transcription and decoded the dorse of no. 24.",
     "models": [
       "claude-opus-5-5",
       "chatgpt-astra-6"
     ],
     "first_date": "2026-09-24",
-    "last_date": "2026-10-14"
+    "last_date": "2026-10-14",
+    "tools": [
+      "CTTS built-in cryptanalysis (key recovery, by George Lasry)",
+      "targets/siena1431/verify.py (verification here)"
+    ]
   },
   "solution": [
     {
@@ -212,6 +216,12 @@
       "kind": "reading",
       "what": "No. 24: each <...> run of the submitted reading retried, longest first, against our transcription's merged-label alternatives (t=o/q/f, c=h/n, 0=a/i, t 0=+o=i, PHI=m/Duca, So=z, 4=u), the it-cinquecento model and the DECODE image of R4812. 23 changes (7 image-checked, 3 z/u key corrections, 13 constrained by context): ghiacciate, dirizare, usciti, Chamerino, famiglio, facto re d'Ongnaria, a Ferrara, two dropped Viniziani word signs and a Duca di Milano. 1,663/2,286 (72.7%) to 1,815/2,279 (79.6%); image-checked and z/u changes alone give 75.2%. The longest runs (carpelaelo..., vannoafonatificas, stanaeecasiscroie) stay unread.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-18",
+      "kind": "literature search",
+      "what": "George Lasry's consolidated report of 17 Oct 2026 filed (lasry_report.md, pp. 13-17): 'Solved ciphertext-only (October 2026) by George Lasry with CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the filed key R4755 was found to match afterwards'. Credits reconciled with it. The report keeps the 1431-1432 dating and calls no. 24 unsigned; this project's 1437-38 dating and the dorse signature stay, as questions for George.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -230,7 +240,7 @@
     "class": "read in part",
     "key": "recovered",
     "method": "key recovered from ciphertext-only",
-    "method_basis": "Per the solver's PDF the key was first recovered by cryptanalysis from the ciphertext alone and only afterwards matched to the filed key R4755, which then gave the readings; the ciphertext-only recovery is the first break, the match a confirmation.",
+    "method_basis": "Report of 17 Oct 2026: key recovered ciphertext-only with CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the filed key R4755 was found to match afterwards, so the ciphertext-only recovery is the first break and the match a confirmation.",
     "contribution": [
       "transcription",
       "sender or date identified",
@@ -274,9 +284,9 @@
       {
         "who": "lasry",
         "role": "solution",
-        "note": "key recovered ciphertext-only with Claude and the help of ChatGPT Astra, then matched to DECODE R4755; readings of nos. 6 and 24",
-        "date": "2026-10-14",
-        "source": "PDF 'Siena, two ciphered letters to the Signori (Concistoro 2308, nos. 6 and 24)', sent to Daniel Bourdeau on 14 Oct 2026"
+        "note": "Key recovered ciphertext-only with CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the filed key DECODE R4755 found to match afterwards (report of 17 Oct 2026); readings of nos. 6 and 24. First sent as a 7-page PDF on 14 Oct 2026 ('with Claude and the help of ChatGPT Astra').",
+        "date": "2026-10-17",
+        "source": "Email and report to Daniel Bourdeau, 17 Oct 2026 (consolidated report, pp. 13-17); earlier PDF 'Siena, two ciphered letters to the Signori (Concistoro 2308, nos. 6 and 24)', 14 Oct 2026"
       },
       {
         "who": "contemporary",
@@ -285,6 +295,6 @@
       }
     ],
     "first_break": true,
-    "notes": "Result by George Lasry (with Claude and ChatGPT Astra), verified here. No. 6 93.4% of decrypted letters understood, no. 24 P2 72.7%, revised here to 79.6% (14 Oct); dorse of no. 24 decoded here in part. Verification by this project: blind transcription of 24 Sept decoded with the key, 69% (key read by eye) to 88-91% agreement."
+    "notes": "Result by George Lasry (CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra, per his report of 17 Oct 2026), verified here. No. 6 93.4% of decrypted letters understood, no. 24 P2 72.7%, revised here to 79.6% (14 Oct); dorse of no. 24 decoded here in part. Verification by this project: blind transcription of 24 Sept decoded with the key, 69% (key read by eye) to 88-91% agreement."
   }
 }

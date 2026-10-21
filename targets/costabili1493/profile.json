@@ -1,0 +1,176 @@
+{
+ "schema_version": 1,
+ "target": "costabili1493",
+ "title": "Beltrame Costabili to Ercole I d'Este, three clear letters of 1493",
+ "documents": [
+  {
+   "id": "R1095",
+   "shelfmark": "State Archives of Modena, Ambasciatori Ungheria b. 2/22 no. 5",
+   "date": "1493-03-13",
+   "year": 1493,
+   "country": "Ferrara",
+   "route": "Esztergom -> Ferrara",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Clear original, not a decipherment",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R1095, recto and verso",
+    "image_quality": "fair",
+    "notes": "Visual inspection only; no complete transcription made. No cipher passage identified."
+   },
+   "read": "not applicable"
+  },
+  {
+   "id": "R1096",
+   "shelfmark": "State Archives of Modena, Ambasciatori Ungheria b. 2/22 no. 6",
+   "date": "1493-04-22",
+   "year": 1493,
+   "country": "Ferrara",
+   "route": "Esztergom -> Ferrara",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Clear original, not a decipherment",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R1096, recto and verso",
+    "image_quality": "fair",
+    "notes": "Visual inspection only; no complete transcription made. No cipher passage identified."
+   },
+   "read": "not applicable"
+  },
+  {
+   "id": "R1097",
+   "shelfmark": "State Archives of Modena, Ambasciatori Ungheria b. 2/22 no. 9",
+   "date": "1493-07-18",
+   "year": 1493,
+   "country": "Ferrara",
+   "route": "Esztergom -> Ferrara",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Clear original, not a decipherment",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE R1097, recto and verso",
+    "image_quality": "fair",
+    "notes": "Visual inspection only; no complete transcription made. No cipher passage identified."
+   },
+   "read": "not applicable"
+  }
+ ],
+ "system": {
+  "types": [
+   "not a cipher"
+  ],
+  "summary": "Three clear Italian chancery letters with conventional abbreviations and no cipher passage identified.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 0,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "notes": "The zero cipher-token counts are visual classification findings, not a measured transcription length."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "No edition used; these are clear originals.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "none",
+  "human_role": "Requested review of open catalogue ciphers and publication of verified results.",
+  "models": [
+   "GPT-6"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-20",
+  "last_date": "2026-10-20",
+  "tools": [
+   "Python urllib: authenticated DECODE image retrieval",
+   "Pillow: manuscript previews",
+   "SHA-256 source manifest"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-20",
+   "kind": "access",
+   "what": "Retrieved the six full photographs attached to R1095-R1097.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "reading",
+   "what": "Inspected each body and address/docket verso: continuous clear Italian with conventional chancery contractions; no cipher passage identified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verification",
+   "what": "Compared dating clauses and photograph cards; retained source filenames and SHA-256 hashes; separated these clear letters from the earlier cipher correspondence.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not applicable",
+  "method_basis": "All three original bodies and their versos show clear chancery writing; no enciphered passage was identified.",
+  "class": "not a cipher",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "verification": [
+   "none"
+  ],
+  "credits": [],
+  "notes": "Direct manuscript inspection by this project, without an independent outside check. No decipherment or recovered key claimed."
+ }
+}

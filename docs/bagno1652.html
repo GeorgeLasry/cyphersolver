@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guidi di Bagno to the Secretariat of State, 5 January 1652</title>
-<meta name="description" content="Niccolò Guidi di Bagno's despatch from Paris to the papal Secretariat of State, 5 January 1652 (AAV Francia 104, DECODE R5622): four pages of unseparated figures. The Francia 346 key of 1632 was tested and does not fit its structure. No key, clear copy or decipherment was found, and the cipher was not deciphered.">
-<link rel="stylesheet" href="style.css?v=20261014c">
-<meta name="date" content="2026-09-22">
-<meta name="last-modified" content="2026-09-24">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guidi di Bagno, 5 January 1652 — ciphertext-only key recovery</title>
+<meta name="description" content="George Lasry's ciphertext-only solution of DECODE R5622: CTTS key, full four-page Italian decryption and English translation.">
+<link rel="stylesheet" href="style.css?v=20261014c"><meta name="date" content="2026-09-22">
+<meta name="last-modified" content="2026-10-20">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-</head>
-<body id="top">
+</head><body id="top">
 <header class="nav"><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
   <nav id="sitemenu" class="links" aria-label="Site">
     <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="decode4282.html"><span class="st solved">ciphertext-only break</span><b>Riksarkivet R4282</b><span class="yr">undated (catalogue 1600&ndash;1699)</span></a></li><li><a href="siena1431.html"><span class="st partial">ciphertext-only break &middot; partial</span><b>Cristofano to Siena c. 1431&ndash;38</b><span class="yr">c. 1431&ndash;1438</span></a></li><li><a href="eugenie1859.html"><span class="st solved">ciphertext-only break</span><b>Napoleon III / Empress Eugénie</b><span class="yr">1859</span></a></li><li><a href="mondesir1769.html"><span class="st solved">ciphertext-only break</span><b>Writer in Mondesir, Isle de France</b><span class="yr">1769</span></a></li><li><a href="villeneuve1737.html"><span class="st solved">ciphertext-only break</span><b>Louis-Sauveur, marquis de Villeneuve to&hellip;</b><span class="yr">1737</span></a></li><li><a href="villardeau.html"><span class="st solved">key from adjacent plaintext</span><b>De Villardeau</b><span class="yr">1725</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><span class="st solved">44</span><b>Ciphertext-only break</b></a></li><li><a href="writeups.html#kind=extpt"><span class="st solved">12</span><b>Key from external plaintext</b></a></li><li><a href="writeups.html#kind=adjpt"><span class="st solved">72</span><b>Key from adjacent plaintext</b></a></li><li><a href="writeups.html#kind=extkey"><span class="st solved">21</span><b>External key matched</b></a></li><li><a href="writeups.html#kind=known"><span class="st solved">80</span><b>Known key applied</b></a></li><li><a href="writeups.html#kind=deciph"><span class="st solved">37</span><b>Existing decipherment</b></a></li><li><a href="writeups.html#kind=notsolved"><span class="st stuck">38</span><b>Not solved</b></a></li><li><a href="writeups.html#kind=na"><span class="st found">14</span><b>Not applicable</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 320 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="numeric1916.html"><span class="st partial">ciphertext-only break &middot; partial</span><b>Huang Xing numeric codes</b><span class="yr">June&ndash;July 1916</span></a></li><li><a href="rosamonde1915.html"><span class="st partial">ciphertext-only break &middot; partial</span><b>Rosamonde telegrams</b><span class="yr">1915&ndash;16</span></a></li><li><a href="breves1610.html"><span class="st partial">external key matched &middot; partial</span><b>Br&egrave;ves 1610</b><span class="yr">1610</span></a></li><li><a href="desportes1593.html"><span class="st solved">known key applied</span><b>Desportes to Rome 1593</b><span class="yr">1593</span></a></li><li><a href="nino1522.html"><span class="st solved">ciphertext-only break</span><b>Ni&ntilde;o 1522</b><span class="yr">1522</span></a></li><li><a href="costabili1493.html"><span class="st found">not a cipher</span><b>Costabili, clear letters 1493</b><span class="yr">1493</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><span class="st solved">61</span><b>Ciphertext-only break</b></a></li><li><a href="writeups.html#kind=extpt"><span class="st solved">12</span><b>Key from external plaintext</b></a></li><li><a href="writeups.html#kind=adjpt"><span class="st solved">80</span><b>Key from adjacent plaintext</b></a></li><li><a href="writeups.html#kind=extkey"><span class="st solved">24</span><b>External key matched</b></a></li><li><a href="writeups.html#kind=known"><span class="st solved">92</span><b>Known key applied</b></a></li><li><a href="writeups.html#kind=deciph"><span class="st solved">65</span><b>Existing decipherment</b></a></li><li><a href="writeups.html#kind=notsolved"><span class="st stuck">72</span><b>Not solved</b></a></li><li><a href="writeups.html#kind=na"><span class="st found">16</span><b>Not applicable</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 424 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a href="catalogue.html">Catalogue</a>
@@ -38,71 +32,121 @@
     <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
   </div>
 </div>
-<section class="hero">
-  <p class="kicker">Paris &rarr; Rome &middot; numerical cipher &middot; 5 January 1652</p>
-  <h1>Guidi di Bagno&rsquo;s first despatch of 1652</h1>
+<section class="hero"><p class="kicker">Paris → Rome · numerical nomenclator · 5 January 1652</p>
+<h1>Guidi di Bagno's despatch on Mazarin</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_niccolo-guidi-di-bagno.jpg" alt="Niccolò Guidi di Bagno" title="Niccolò Guidi di Bagno: Engraving by Guillaume Vallet, after 1657. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Niccolò Guidi di Bagno</figcaption></figure></div><!-- /parties -->
-  <p class="sub">Four pages of figures from the papal nunciature during the Fronde. The 1632 Francia 346 key was tested and does not fit. No key or decipherment was found, and none is known in print.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-22">22 September 2026</time> &middot; updated <time datetime="2026-09-24">24 September 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained</p><!-- /outcome -->
-<div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
-</section>
-<main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#key-test">Why the Francia 346 key fails</a><a href="#search">What was searched</a><a href="#transcription">Why there is no transcription</a><a href="#what-next">What is needed</a><a href="#sources">Sources</a></nav>
-<div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Attempted &middot; not deciphered</span></p>
-<dl>
-<dt>The letter</dt><dd>Niccolò Guidi di Bagno to the Secretariat of State, Paris to Rome, 5 January 1652.</dd>
-<dt>Where</dt><dd>Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104, ff. 5r&ndash;7v; <a href="https://de-crypt.org/decrypt-web/RecordsView/5622">DECODE R5622</a>.</dd>
-<dt>The cipher</dt><dd>Four pages of unseparated decimal figures, with occasional Italian words left clear. Its grouping and values are unknown.</dd>
-<dt>How it was tried</dt><dd>The Francia 346 key was tested and excluded by its mandatory <code>6</code> separator. Images, neighbouring records and print were checked; OCR was too noisy.</dd>
-<dt>Still open</dt><dd>All four cipher pages. No matching key, clear copy or register decipherment was found online.</dd>
-</dl>
-</div>
-
-<h2 id="the-letter"><span class="num">01</span> The letter</h2>
-<p>DECODE&rsquo;s five images are fols. 5r, 6r, 6v, 7r and 7v of Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104. The first leaf gives Paris and 5 January 1652. The next four are dense rows of decimal figures, broken occasionally by clear Italian words such as <em>et</em>, <em>perche</em>, <em>hauerà</em>, <em>huomo</em> and <em>prudenza</em>. The hand is legible, but spaces are inconsistent and the figures sometimes touch.</p>
-<figure data-credit="Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104 f. 6r, via DECODE R5622"><img src="bagno1652_lead.jpg" alt="First page of Guidi di Bagno's ciphered despatch, with long rows of figures and occasional Italian words" loading="lazy"><figcaption>f. 6r, the first cipher page. The figures run together between words left in clear. <span class="credit">Image: Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104 f. 6r, via DECODE R5622.</span></figcaption></figure>
-
-<h2 id="key-test"><span class="num">02</span> Why the Francia 346 key fails</h2>
-<p>The reconstructed key used for the 1632 Barberini&ndash;Ceva letters in Francia 346 is a mixed-width homophonic and syllabic nomenclator. In it the one-digit figure <code>6</code> separates groups and does not occur inside any code. Here, pairs and triples of sixes occur throughout the manuscript. Splitting at every six creates empty separators, orphan digits and groups absent from the table. A checked line passed through the Francia 346 decoder gives malformed groups and no Italian.</p>
-<p>This excludes that table whatever the quality of the OCR or the language-model scores. It does not identify the 1652 system.</p>
-
-<h2 id="search"><span class="num">03</span> What was searched</h2>
-<ul>
-<li>The exact shelfmark and every neighbouring DECODE record: R5617&ndash;R5621 are older Francia 32 material; R5623 is Ranuzzi&rsquo;s 1684&ndash;85 correspondence in Francia 173; R5625 onward is Francia 346. None is a clear copy or a same-key sibling.</li>
-<li>DECODE&rsquo;s document and transcription lists: R5622 has neither an attached document nor a transcription for any image.</li>
-<li>The shelfmark, correspondent, date and route in catalogues and print: no edition of this despatch was located. The published Guidi di Bagno study concerns 1647&ndash;50; Neveu&rsquo;s <em>Acta Nuntiaturae Gallicae</em> 10 concerns the later Ranuzzi material.</li>
-<li>Possible Roman office copies and <em>decifrati</em>: no digitised 1652 register or Paris nunciature key was found.</li>
-</ul>
-
-<h2 id="transcription"><span class="num">04</span> Why there is no transcription</h2>
-<p>Whole-line OCR, character segmentation and glyph clustering were tried on all four cipher pages. Touching figures, variable spacing, bleed-through and changes in the hand generated too many substitutions and omissions. In a mixed-width nomenclator a dropped or added digit shifts every later group boundary, so a noisy digit stream cannot be used. The OCR output was discarded.</p>
-
-<h2 id="what-next"><span class="num">05</span> What is needed</h2>
-<ol>
-<li>A line-by-line manual transcription of ff. 6r&ndash;7v, checked independently against the scans.</li>
-<li>The Secretariat&rsquo;s register decipherment or the Paris nunciature key for 1652, probably requiring work in the AAV.</li>
-<li>Alternatively, more letters from Francia 104 shown to use the same key, giving enough clean material to infer group boundaries and rebuild the nomenclator.</li>
-</ol>
-
+<p class="sub">George Lasry recovered the cipher with Astra and Opus 5.5, revealing threats against Mazarin and an appeal for papal intervention during the Fronde.</p>
+<p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-22">22 September 2026</time> &middot; updated <time datetime="2026-10-20">20 October 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#lasry">George Lasry</a> (solution, transcription)</p><!-- /credits --></section><main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#context">Context and document</a><a href="#method">How the key was recovered</a><a href="#key">CTTS key</a><a href="#reading">Full decryption and translation</a><a href="#gaps">Remaining uncertainties</a><a href="#sources">Sources and files</a></nav>
+<div class="callout glance"><p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from ciphertext-only · four cipher pages</span></p><dl>
+<dt>The letter</dt><dd>Niccolò Guidi di Bagno to the Secretariat of State, Paris, 5 January 1652.</dd>
+<dt>Where</dt><dd>AAV, Segreteria di Stato, Francia 104, ff. 5r–7v; cipher on ff. 6r–7v. <a href="https://de-crypt.org/decrypt-web/RecordsView/5622">DECODE R5622</a>.</dd>
+<dt>Credit</dt><dd><strong>Contributed by George Lasry.</strong> Solved by George Lasry. Transcription was made with CTTS (CrypTool Transcriber and Solver), using its machine-learning model and manual correction. Ciphertext-only cryptanalysis was performed with GPT-6 Astra and Anthropic Claude Opus 5.5 under Lasry's direction.</dd>
+<dt>The cipher</dt><dd>One-, two- and four-digit values: letters, homophones, syllables and an alphabetical sequence of word/name codes.</dd>
+<dt>Coverage</dt><dd>1,796 cipher elements; 1,759 have unqualified key values, 35 tentative values and 2 remain unresolved. The edited prose also marks local gaps.</dd>
+<dt>What it says</dt><dd>A bounty on Mazarin, threats to kill him in his cardinal's robes, and a proposed papal summons to protect the cardinalate and the royal family.</dd>
+</dl></div>
+<h2 id="context"><span class="num">01</span> Context and document</h2><p>Written from Paris on 5 January 1652, during the Fronde, the despatch concerns opposition to Cardinal Mazarin's return to France. Guidi di Bagno reports the Parlement's death sentence and 150,000-livre bounty, threats against Mazarin, and an appeal for papal intervention. The central dispute is whether a secular court can punish a cardinal or whether that authority belongs to the pope.</p><p>The submission covers all four cipher pages, ff. 6r–7v, in reading order P3, P4, P5, P1. The record also includes a clear opening leaf, f. 5r; it is not included in the four-page cipher reading.</p>
+<figure data-credit="Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104 f. 6r, via DECODE R5622"><img src="bagno1652_lead.jpg" alt="Ciphertext on f. 6r" loading="lazy"><figcaption>The opening cipher page, with Italian words interspersed among numerical groups. <span class="credit">Image: Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104 f. 6r, via DECODE R5622.</span></figcaption></figure>
+<p>This letter was not part of George Lasry, Beáta Megyesi and Nils Kopal, "Deciphering papal ciphers from the 16th to the 18th Century", Cryptologia 45(6), 479–540 (2021; published online 2020), <a href="https://doi.org/10.1080/01611194.2020.1755915">DOI 10.1080/01611194.2020.1755915</a> (scope confirmed by George Lasry).</p>
+<h2 id="method"><span class="num">02</span> How the key was recovered</h2><p>The attack recovered the grouping of a continuous digit stream into single-digit letters, two-digit letters and syllables, and four-digit word/name codes. Repeated Italian words and crib testing constrained the values; the roughly alphabetical nomenclator helped extend them. The manuscript was revisited to correct touching-digit ligatures, duplicated boxes, and the marked 04 = qu versus plain 04 = che. Values were checked across the four cipher pages. No matching historical key or decipherment was used. Clear words interspersed in the letter supply context, not a parallel decipherment of the cipher passages.</p>
+<p>The September repository attempt had excluded the Francia 346 key and found OCR too noisy. Lasry's CTTS transcription enabled a new attack. No generic null-5 rule was accepted.</p>
+<h2 id="key"><span class="num">03</span> CTTS key</h2>
+<figure data-credit="George Lasry, CTTS snapshot of the reconstructed Francia 104 key, 20 October 2026"><a href="bagno1652_key.png"><img src="bagno1652_key.png" alt="Refreshed CTTS key with code values and manuscript samples" loading="lazy"></a><figcaption>The supplied CTTS snapshot, preserved at its original resolution. Question marks are tentative values. <span class="credit">Image: George Lasry, CTTS snapshot of the reconstructed Francia 104 key, 20 October 2026.</span></figcaption></figure>
+<h2 id="reading"><span class="num">04</span> Full decryption and translation</h2>
+<figure class="creveal" data-src="reveal/bagno1652.json"></figure>
+<p>All four cipher pages follow in manuscript order. Bold Italian is deciphered text; the words originally left clear are regular. Brackets and question marks preserve gaps and tentative readings. English follows each folio.</p>
+<h3 id="folio-6r">f. 6r</h3><p lang='it'><b></b>Due giorni dopo la partita dell&#x27;ultimo ordinario<b>, con il quale auisai a</b><br>
+<b>V.E. la resolucione che fu fatta nel Parlamento contro il Mazzarino,</b><br>
+<b>fu stampato l&#x27;aresto, che mando a V.E. con la </b>presente<b>, nel quale</b><br>
+<b>la pena capitale </b>et<b> la taglia impostali di cento</b><br>
+<b>cinquanta mila </b>[cancelled]<b> lire, che si dichiara [2149: essere?] in-</b><br>
+<b>corso per le prohibicioni fattegli dalla [2517: Maestà?] del Re</b><br>
+<b>di tornare in [2416: Francia?], è fondata, </b>perche<b> fu espresso</b><br>
+<b></b>negl&#x27;<b> antecedenti aresti che, contrauenendo, sa-</b><br>
+<b>rebbe caduto in pena </b>[cancelled]<b> di lesa maestà;</b><br>
+<b>del quale delito pretendono che sia reo, essendo li uen-</b><br>
+<b>ti [2698: ?] del </b>pass.to<b> alogiato in Sedan; </b>et che<b> il Parlamento sia</b><br>
+<b>giudice competente del delito di lesa maestà di</b><br>
+<b></b>qualunque<b> persona, [2400: ancorché?] in ogni magior grado con-</b><br>
+<b>stituita. Et io ho deto, con chi mi ha parlato, con</b><br>
+<b>semplici discorsi, non </b>hauere<b> il Parlamento nè alcun</b><br>
+<b>[2560: potentato?] te[m]porale questa facoltà, la quale totalmente</b><br>
+<b>è riseruata al Sommo Pontefice; </b>et che<b></b><br>
+<b>tengo per certo che il Re sia per anularla. </b>Il(?)<b></b><br>
+<b>[2609: Signor?] [2393: Duca d&#x27;Orléans?] mi ha imposto di auisare S.S. che in[...]</b><br>
+<b>per [la] quale è interuenuto [2635: S.A.R.?], </b>che è grandemente deuoto della<b></b></p><blockquote><p>Two days after the departure of the last ordinary [post], with which I informed Your Eminence of the resolution taken in the Parlement against Mazarin, the arrêt was printed; I send it to Your Eminence with the present letter. It contains the death penalty and the bounty of one hundred and fifty thousand livres placed on his head. It declares him [2149: to have?] incurred them by violating the prohibitions issued by [2517: His Majesty?] the King against his returning to [2416: France?]. It is grounded in the earlier arrêts, which stipulated that, if he contravened them, he would fall into the penalty of lèse-majesté. They claim he is guilty of this crime [2148: since?] he was lodged at Sedan on the twenty-[2698: ?] of last month. [They also claim] that the Parlement is the competent judge of the crime of lèse-majesté of any person whatsoever, [2400: even if?] constituted in the highest rank. And I told those who spoke to me, in plain conversation, that neither the Parlement nor any temporal [2560: power?] has this faculty, which is entirely reserved to the Supreme Pontiff. And [I told them] that I hold it for certain that the King will annul it. [2609: Lord?] [2393: Duke of Orléans?] has charged me to inform His Holiness that in [...], in which [2635: His Royal Highness?] took part (he being greatly devoted to</p></blockquote>
+<h3 id="folio-6v">f. 6v</h3><p lang='it'><b>[2601: Santa Sede?], et della S.S., non ha [2158: mai?] intencione, con la dichiara-</b><br>
+<b>cione di detta pena, di offendere la dignità</b><br>
+<b>di cardinale, ma solo la persona di un nemico comu-</b><br>
+<b>ne </b>et di un<b> huomo più temerario che mai sia [2630: stato?]</b><br>
+<b>in tempo alcuno, </b>et<b> di magior[e] [d]anno(?) alla corona;</b><br>
+<b></b>et<b> a tutta la [2354: Christianità?], et pregando S.S. di liberare questo</b><br>
+<b>[2580: Regno?] et il Re et </b>et<b> la casa reale da [2080: un?] </b>huomo<b> peruer-</b><br>
+<b>so, con chiamarlo a [2600: Roma?], con pena della priuacione</b><br>
+<b>del [2334: cardinalato?]; </b>et hauere a pieno(?)<b> credere che non obedisca, [2165: onde?]</b><br>
+<b>quando uenga condannato da S.S., sarà tanto sprez-</b><br>
+<b>zato, </b>et<b> la S.S. aquistarà la </b>beneuolenza vniuersale<b> della</b><br>
+<b>[2416: Francia?], solleuando il Re pupillo dall&#x27;oppres-</b><br>
+<b>sione di </b>così<b> fiero tiranno. </b>Et<b> la Regina [2141: anco?] ne</b><br>
+<b>fosse per [2157: haver?] sentimento </b>straordinario(?)<b>, quando considera-</b><br>
+<b>sse il suo [2143: danno?], </b>et<b> del detto cardinale haurebbe d[a]</b><br>
+<b></b>hauerlo<b> caro, </b>perche<b> altrimenti lui sarà</b><br>
+<b>amazato indubitatamente, </b>et quella<b> digni-</b><br>
+<b>tà sarà tanto più offesa, </b>et<b> la Regina sarà</b><br>
+<b>forzata ritirarsi, ouero uedrà la</b><br>
+<b>totale rouina de&#x27; suoi figlioli; et soggiu-</b><br>
+<b>ngendomi che il principe e[t] [x3, blotted] </b>[blot]<b> lui uniranno</b></p><blockquote><p>[2601: the Holy See?] and to His Holiness), [he] has [2158: never?] had the intention, by declaring the said penalty, of offending the dignity of cardinal, but only the person of a common enemy and of a man more reckless than any there has ever [2630: been?] at any time, and of the greatest harm to the Crown and to all [2354: Christendom?]. And [he is] begging His Holiness to free this [2580: kingdom?], the King and the royal house from [2080: a?] perverse man, by recalling him to [2600: Rome?] under penalty of deprivation of the [2334: cardinalate?]. And [they] fully(?) believe that he will not obey; [2165: so that?], when he is condemned by His Holiness, he will be utterly despised. And His Holiness will gain the universal goodwill of [2416: France?], relieving the King, a minor, from the oppression of so fierce a tyrant. And even if the Queen [2141: too?] were to [2157: take?] exceptional(?) offence at this, on considering the [2143: harm?] to herself and to the said cardinal she would have reason to welcome it (tentative: several underlying readings are uncertain), because otherwise he will undoubtedly be killed, and that dignity [the cardinalate] would be all the more offended; and the Queen will be forced to withdraw, or will see the total ruin of her children. [The Duke] added that the Prince and he will unite</p></blockquote>
+<h3 id="folio-7r">f. 7r</h3><p lang='it'><b>le loro [2305: forze?], </b>et<b> sono resoluti uolere che,</b><br>
+<b>perisca il Mazzarino, quando non parta e uada tanto lon-</b><br>
+<b>tano che più non habbi da temere del suo ritorno,</b><br>
+<b>[85: et?] prega S.S. di [2150: far/dar?] subito questa resoluc-</b><br>
+<b>ione, con inuiare per le poste persona che ese-</b><br>
+<b>quisca il suo coma</b>[blot]<b>ndamento, al quale assisterà</b><br>
+<b>[2635: S.A.R.?]. </b>Et se<b> desiderasse prima di [2150: far/dar?] questa dichi-</b><br>
+<b>aracione che il principe e lui ne facessero</b><br>
+<b>instanza per un atto giuridico, et lo </b>faranno<b></b><br>
+<b>auanti quella persona che S.S. manderà, la quale</b><br>
+<b>potrebbe spedire secretamente, </b>acciò non<b></b><br>
+<b></b>hauesse<b> impedimento per il uiagio; et promette che</b><br>
+<b>il Parlamento istesso gli sarà fauoreuole. Et io</b><br>
+<b>promissi di scriuere il tutto a V.E., </b>ponendogli<b></b><br>
+<b>qualche dificoltà circa il rispetto delle persone</b><br>
+<b>reali, </b>qualunque<b> fossero gli difetti del [2483: ministro?], </b>et<b> la</b><br>
+<b>disobedienza del cardinale alle paterne amoni-</b><br>
+<b>cioni che S.S. gli hauer[à] fatte con il suo breue,</b><br>
+<b></b>et<b> che la disobedienza, quando S.S. si risoluesse</b><br>
+<b>di fargli [2150: far/dar?] il preceto, potrebbe arriuare</b><br>
+<b>a tal segno che fosse peggio che non [è] i[l]</b></p><blockquote><p>their [2305: forces?], and that they are determined that Mazarin should perish unless he leaves and goes so far away that his return need no longer be feared. And he begs His Holiness to take this decision at once, and to dispatch an envoy by the relay-post service to execute his command, at which [2635: His Royal Highness?] will assist. And if [His Holiness] wished, before [2150: making/giving?] this declaration, that the Prince and he should petition for it by a judicial act, they will do so before the person whom His Holiness will send. His Holiness could dispatch him secretly, so that he should meet no hindrance on the journey. And he promises that the Parlement itself will support him. And I promised to write everything to Your Eminence, and I raised objections with him concerning the respect owed to royal persons, whatever the faults of the [2483: minister?]. [I also mentioned] the cardinal&#x27;s disobedience to the paternal admonitions that His Holiness will have given him in his papal brief, and that this disobedience, if His Holiness resolved to have a formal injunction [2150: issued?] to him, could reach such a point that it would be worse than turning a blind eye to his misconduct.</p></blockquote>
+<h3 id="folio-7v">f. 7v</h3><p lang='it'><b>dissimulare li suoi mancamenti. Et replicò</b><br>
+<b>il [2393: Duca d&#x27;Orléans?]: vi dico che lo faremo amazare con l&#x27;ha-</b><br>
+<b>bito di cardinale, se il Papa non lo chiama, o non lo</b><br>
+<b>priua di quella dignità; </b>et<b> me ne protesto</b><br>
+<b>con voi, </b>come<b> suo [2483: ministro?]. Et mi disse [2140: anche?] il [2393: Duca d&#x27;Orléans?] che</b><br>
+<b>la Regina </b>haueua già<b> promesso che il Mazzarino non sa-</b><br>
+<b>rebbe tornato, </b>et fattolo<b> scriuere dal Re al Parlamento,</b><br>
+<b>[2140: anche?] con </b>l&#x27;ultima<b> [2463: lettera?] di [2638: S.M.?], che fu letta quando si</b><br>
+<b>fece l&#x27;aresto; </b>et che poi<b> ha mancato </b>così<b> uergo-</b><br>
+<b>gnosamente </b>che<b> tutti se ne scandalizano, </b>et<b> non</b><br>
+<b>sarà alcuno che più se ne fidi. Non con[...]</b></p><blockquote><p>[The last words of f. 7r and the first of f. 7v form one sentence, joined above.] And [2393: the Duke of Orléans?] replied: &quot;I tell you, we will have him killed in his cardinal&#x27;s habit, if the Pope does not summon him [to Rome] or does not deprive him of that dignity; and I formally declare this to you, as his [2483: minister?] [= representative].&quot; And [2393: the Duke of Orléans?] [2140: also?] told me that the Queen had already promised that Mazarin would not return, and had had the King write this to the Parlement, [2140: also?] in the last [2463: letter?] of [2638: His Majesty?], which was read when the arrêt was made. And [he said] that she then broke her word so shamefully that everyone is scandalized by it, and that no one will trust her any more. [...]</p></blockquote>
+<h2 id="gaps"><span class="num">05</span> Remaining uncertainties</h2>
+<ul><li>2698 in the Sedan date: One occurrence after venti; the day must remain twenty-[…], not a guessed precise date.</li><li>x3 at f. 6v line 21: Ink blot obscures the grouping.</li><li>f. 6r lines 19–20 and f. 7v closing fragment: The edited reading retains explicit gaps; assigned letters alone do not recover the lost wording.</li><li>Tentative nomenclator and Queen passage: 35 occurrences of 27 tentative labels; names and the conditional sentence remain marked with question marks.</li></ul>
+<p>The count of assigned key values must not be treated as a percentage of verified prose. The Sedan day, several names and the Queen's conditional sentence require further checking.</p>
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/bagno1652.json"></figure>
 <!-- replay:end -->
-<h2 id="sources"><span class="num">06</span> Sources</h2>
-<ul>
-<li>Archivio Apostolico Vaticano, Segreteria di Stato, Francia 104, ff. 5r&ndash;7v, images and metadata via <a href="https://de-crypt.org/decrypt-web/RecordsView/5622">DECODE R5622</a>.</li>
-<li>Julien Régibeau, <a href="https://orbi.uliege.be/handle/2268/210527">&ldquo;Incarner l&rsquo;idéal du <em>padre comune</em> au milieu de la guerre civile. L&rsquo;action diplomatique du nonce Niccolò Guidi di Bagno face à Mazarin durant la Fronde&rdquo;</a> (2021), background on the correspondence of 1647&ndash;50 only.</li>
-<li><a href="ceva1632.html">Barberini to Ceva, 1632</a>, for the Francia 346 table tested and excluded here.</li>
-</ul>
-<p class="muted">Research notes and machine-readable profile: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652">targets/bagno1652/</a>.</p>
-</main>
+<h2 id="sources"><span class="num">06</span> Sources and files</h2><ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/key.txt">key.txt</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/transcription/all.txt">transcription/all.txt</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/decryption/all.txt">decryption/all.txt</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/snapshots/key.png">snapshots/key.png</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/snapshots/decryption%20key.png">snapshots/decryption key.png</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/edited/all.txt">edited/all.txt</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/reading_edition.txt">reading_edition.txt</a></li><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652/translation_en.txt">translation_en.txt</a></li></ul>
+<p><a href="https://orbi.uliege.be/handle/2268/210527">Régibeau's study of Guidi di Bagno during the Fronde</a> supplies historical background, not the plaintext of this despatch.</p>
+<p>The source record identifies the Secretariat of State as recipient. The working edition names Chigi; its title “Cardinal” anticipates his promotion of <a href="https://www.treccani.it/enciclopedia/alessandro-vii_%28Enciclopedia-dei-Papi%29/">19 February 1652</a>.</p>
+<p class="muted">Research notes, CTTS files and measurements: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/bagno1652">targets/bagno1652/</a>.</p></main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript rights: Archivio Apostolico Vaticano, via DECODE R5622</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="urquhart.html" rel="prev">&larr; Urquhart 1652</a><a href="conley1652.html" rel="next">Cowley&rsquo;s hand 1652&ndash;53 1652&ndash;53 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="cipher-reveal.js?v=f00596e5" defer></script>
 <script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
-</body>
-</html>
+</body></html>

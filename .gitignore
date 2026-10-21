@@ -436,15 +436,15 @@ targets/dubellay/ref/tomokiyo_*.png
 targets/dubellay/ref/cryptiana_*.htm
 targets/dubellay/ref/manifest_*.json
 targets/dubellay/ref/oai_*.xml
-# sega1593: page images, line crops, renders, model weights and LM (regenerate with fetch_canvases.py, seglines.py, seg2.py, boot3.py)
-targets/sega1593/img/
-targets/sega1593/lines/*.png
-targets/sega1593/lines/*.npy
-targets/sega1593/tmp/
-targets/sega1593/*.npy
-targets/sega1593/*.pt
-targets/sega1593/*.pkl
-targets/sega1593/*.log
+# desportes1593: page images, line crops, renders, model weights and LM (regenerate with fetch_canvases.py, seglines.py, seg2.py, boot3.py)
+targets/desportes1593/img/
+targets/desportes1593/lines/*.png
+targets/desportes1593/lines/*.npy
+targets/desportes1593/tmp/
+targets/desportes1593/*.npy
+targets/desportes1593/*.pt
+targets/desportes1593/*.pkl
+targets/desportes1593/*.log
 # hesse1603: Internet Archive page images, strips and bulky OCR/hOCR texts (refetch: see targets/hesse1603/NOTES.md §1); keep Tomokiyo's key image and the page map
 targets/hesse1603/img/
 targets/hesse1603/crops/
@@ -568,6 +568,9 @@ targets/bordeaux/IMG_*
 targets/sormano1529/img/
 targets/sormano1529/crops/
 targets/sormano1529/src/*.html
+targets/sormano/arya/img/
+targets/sormano/arya/crops/
+targets/sormano/arya/src/*.html
 # herbault1626: Gallica microfilm openings and reading crops (refetch with fetch.sh / region.sh / zoom.sh)
 targets/herbault1626/img/
 targets/herbault1626/crops/
@@ -762,7 +765,16 @@ targets/sinzendorff1578/decode/docs/
 targets/sinzendorff1578/decode/*.txt
 targets/sinzendorff1578/decode/*.log
 
-# Siena Concistoro 2308 (DECODE images, not public domain)
+# Siena Concistoro 2308 (DECODE images, not public domain); the collection moved to research/siena2308/ on
+# 18 Oct 2026, the targets/siena1421/ lines stay for checkouts that still hold the images there
+research/siena2308/decode/img/
+research/siena2308/decode/*.htm
+research/siena2308/img*/
+research/siena2308/crops/
+research/siena2308/lit/*.pdf
+research/siena2308/run*.txt
+research/siena2308/r[0-9]*.txt
+research/siena2308/reel58/
 targets/siena1421/decode/img/
 targets/siena1421/decode/*.htm
 targets/siena1421/img*/

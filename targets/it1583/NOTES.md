@@ -1,8 +1,60 @@
-# BnF italien 1583 f. 68 — Sforza reply to Zorzo Maino, 4 May 1446 (DECODE R7898)
+# BnF italien 1583 ff. 68 and 70 — two Sforza cipher letters of 4 May 1446 (DECODE R7898, R7899 P1)
 
-Status: attempted, closed unread (written up as `docs/it1583.html`, 21 Sept 2026)
+Status: read in part (George Lasry's CTTS key, PR #60, 20 Oct 2026; written up as `docs/it1583.html`). Earlier:
+attempted, closed unread (21 Sept 2026).
 
-## The document
+## Result (20 Oct 2026): George Lasry's CTTS key, contributed in PR #60
+
+Credit, in George Lasry's words: "Transcribed by George Lasry with CTTS (CrypTool Transcriber and Solver), who also
+generated the initial key; the key and reading were improved by Astra and Fable 5.1." Contributed in
+https://github.com/dbourdeau/cyphersolver/pull/60; files in `lasry2026/` (`full_letter.md` edition and English
+translation, `edition.json` box-aligned edition, `ctts/` native CTTS exports, `ctts/key.txt` the shared key,
+`verify.py` checks every box, export and checksum: passes).
+
+- **Method: key recovered from ciphertext-only.** The initial key came from CTTS on the ciphertext; no outside key or
+  plaintext of the cipher passages was used (the 208 Sforza keys of September do not fit, and no decipherment exists).
+  Note: the first cipher line reads as Mazzatinti's 1883 heading ("resposta facta ad qvelo ha referito zorzo del
+  maino" vs "Risposta a quanto ha riferito Zorzo Maino"); the PR does not say it was used as a crib, so it is taken
+  as confirmation, not as the source of the key.
+- **One key, two letters.** f. 68 (R7898): reply to Zorzo del Maino about Count Francesco's obligations, "our
+  security", and a request for a written list of eight or ten trusted persons. f. 70 (photographed on R7899 image P1,
+  Mazzatinti: Vincenzo Amidani to Francesco Sforza, Milan): action against Cremona, Venice's stance, help and defence,
+  troops in the field; deciphered date line "mediolani die qvarto mai". Signature block unread.
+- System: homophonic letters (up to six signs for I and O) plus word/syllable signs CHE, CON, ET, PER, QVA, SE;
+  provisional (8)=l, (24)=n, (16)=in. No word division.
+
+### Measured (this session, `measure_sense.py`, `validation.tsv`)
+
+| | cipher tokens | types | assigned | read as sense |
+| --- | ---: | ---: | ---: | ---: |
+| f. 68 (R7898) | 425 | 52 | 399 (93.9%) | 380 (89.4%) |
+| f. 70 (R7899 P1) | 402 | 48 | 381 (94.8%) | 341 (84.8%) |
+| both | 827 | 65 | 780 (94.3%) | 721 (87.2%) |
+
+Token counts measured with `docs/_check_profile.py --measure lasry2026/cipher_tokens.txt --drop-first` (and
+`companion/`). "Assigned" = the CTTS key gives the token a value (4 of them provisional). "Read as sense" leaves out
+segments with a `?` and assigned letters that do not form words (isolated n/o/l at boundaries, f. 70's signature
+block of 24 tokens, the untranslated "se mono", "do", "da" and the extra "o o"). 87.2% < 95%: **read in part**.
+Statistical validation (`docs/_validate.py`, it-cinquecento order 4): reading -2.070 per letter; random keys -3.761
+(z 5.7); shuffled-refit best -2.544; annealer power -2.415; verdict **pass**.
+
+## Remaining gaps
+- 47 unresolved cipher occurrences in 14 sign classes (#25 x10, #30 x8, (4) x6, (6) x5, #36 x4, #35 x3, (22) x3, (25) x2, six classes once): mostly at line and paragraph openings (#35 (6) (4) opens f. 68 lines 1 and 9) - blocker: open-codes; probably nulls, titles or abbreviations, but a language-model pass over both letters could not fix any of them, and only the sibling 1446 letters could add occurrences
+- f. 70 signature block after "mediolani die qvarto mai" (24 tokens: p ? v a r qva c e et e ? s m n ? s t a ? ? m r) - blocker: open-codes; assigned letters do not form the name; Mazzatinti's attribution to Vincenzo Amidani is not confirmed by the cipher
+- provisional values (8)=l, (24)=n, (16)=in (4 occurrences) and doubtful words (f. 68 "?intita"; f. 70 "se mono", "do", "vaia", "raconmando", extra "o o") - blocker: open-codes; each rests on one or two occurrences
+- clear-text supplies: f. 68 line 5 end "[aya? ...]"; f. 70 "[fornendo?]", "[ques?]te" (written in clear over damaged or crowded strokes) - blocker: illegible; only a binarized scan of f. 68 and a DECODE photograph of f. 70; a colour BnF scan would decide them
+
+## Escalation
+- [n/a] siblings: f. 70 (the next leaf, on R7899 P1) is already deciphered with the same key; the seventeen other 1446 cipher records from ital. 1583 (R7899-R7915, ff. 75-158) were not opened this session: they need the DECODE login and a CTTS sign-level transcription of several thousand signs, a separate target. They are the one route to more occurrences of the open classes.
+- [x] clear-pages: f. 68's clear phrases are the letter's own clear text, not a decipherment; no decipherment on R7898 or R7899
+- [x] known-keys: September 2026, all 208 Sforza key records on DECODE (ASMi cart. 1591, 1597, 1598); 1597 no. 14 is the same family but a different alphabet, no. 17 (1447) different; none is this key
+- [x] print: Mazzatinti 1883 gives the headings only; no edition or decipherment found (September search)
+- [x] key-rebuild: `extend_open.py` tried every letter, the word values and null for each of the 14 open classes and the 3 provisional ones, scoring both letters with it-cinquecento: no letter value wins by a margin that would justify it (e.g. (6): o vs e, margin 0.8 nats); the scorer prefers null for most, which is consistent with nulls but biased toward them, so nothing adopted
+- [x] retry: the provisional l / n / in rechecked in the same pass ((24): t vs n, margin 0.7; (16): null vs in, 1.7): left provisional
+
+## History: the 21 Sept 2026 attempt (failed)
+
+### The document
 
 - BnF italien 1583 (Archivio Sforzesco, documents 1433–1500, bought 1867), f. 68; DECODE R7898, 1 image,
   "Non-decrypted", no metadata. A slip pasted on a guard, numbered (21.) and 68/22.
@@ -18,14 +70,14 @@ Status: attempted, closed unread (written up as `docs/it1583.html`, 21 Sept 2026
   ad quello se refferemo"; "[c] voglia essere contento mettere per scripto [c] se tra loro no gli sera noma uno
   che no habia [c] debitamente lo debiamo havere".
 
-## Cipher
+### Cipher (as seen in September)
 
 Graphic-sign cipher, 404 signs in 26 types after merging diacritic variants (draft transcription
 `transcription.txt`, codes in its header; cipher-only `f68_signs.txt`). Two signs at 12 %, two at 7 %, flat tail.
 The cross-circle sign (V) stands before clear clauses several times; in the related key below it is "de".
 Repeats: FpBHcdSp (×2), 8zBprJFp (×2), xJpg (×4), FEpS (×3), FpBHc (×5).
 
-## Attempts (21 Sept 2026)
+### Attempts (21 Sept 2026)
 
 1. Unconstrained homophonic annealing (it-cinquecento, clear text as context): collapses to "iiii".
 2. Capped homophones, then nulls allowed: degenerate / nonsense.
@@ -48,7 +100,7 @@ Repeats: FpBHcdSp (×2), 8zBprJFp (×2), xJpg (×4), FEpS (×3), FpBHc (×5).
      (1447, Sforza's envoys to Alfonso): different signs.
    - Nothing headed Maino or Amidani. cart. 1591 and 1598 are 16th–17th c.
 
-## Why it is closed
+### Why it was closed in September
 
 The system has syllable and word signs over homophonic letters, and the only scan is binarized, so the diacritics
 that may separate signs are unreliable. About 800 signs across two hands is not enough for a ciphertext-only
@@ -56,7 +108,7 @@ attack on a system like that. What would reopen it: the Maino/Amidani key of 144
 cart. 1597 at full size, and in Cerioni, *La diplomazia sforzesca*, 1970, vol. 2), or a colour scan of
 ital. 1583 ff. 68–70 from the BnF for a sign-exact transcription.
 
-## Related leads (not worked)
+### Related leads (not worked)
 
 DECODE R7899–R7915 are seventeen more 1446 cipher records from BnF ital. 1583 (ff. 75–158): Nicodemo Tranchedini,
 "Angelus" (Simonetta?), Stavoli and others. Some may be in the 1597 no. 14 key (Stavoli and Vincentius are
