@@ -14,6 +14,13 @@ This repository is a shared ledger of historical ciphers: what has been decipher
 | A new cipher with its solution | both of the above; say whether an unpublished result may be shown in full | [New cipher with solution](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher-solved.yml) |
 | A verification of a reading here | the passage and images you worked from, where your reading agrees and where it does not | [Verification](https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml) |
 
+**Full texts.** A contribution that claims a document is read, in full or in part, has to include the complete
+transcription and the complete decryption of every such document, and the key if you recovered, extended or
+corrected it. They are shown on the write-up (inline, or linked when long), so that historians can use the text and
+earlier contributors can judge the new reading. Please add a short summary of what each document says and its
+historical context. A reading sent without its texts is recorded as a pointer until they arrive. (George Lasry,
+October 2026.)
+
 Not on GitHub? Email dnbourdeau@gmail.com with the same details. The entry is made for you and credited the same way.
 
 ## Pull requests
@@ -22,7 +29,9 @@ A pull request is welcome for any of the above. The layout is in [README.md](REA
 Conventions). In short:
 
 - One folder per target under `targets/<folder>/`, with a `NOTES.md` (what the document is, the system, the key, the
-  reading, what is open and why) and the files the work used: transcription, key, decipherment, scripts.
+  reading, what is open and why) and the files the work used: transcription, key, decipherment, scripts. List the
+  transcription and decryption file of every document, and the key file, in `profile.json` `outcome.texts` /
+  `outcome.key_file` (see `docs/_texts.py`); the site shows them in a "Full texts" section.
 - Large images stay out of git; link them (Gallica, DECODE, the archive's viewer) or describe where they are.
 - Leave the generated files alone (`docs/*.html` built by `docs/_build_site.py`, `docs/search.json`,
   `docs/pages.json`, `docs/writeups.html`). They are rebuilt when the contribution is merged.

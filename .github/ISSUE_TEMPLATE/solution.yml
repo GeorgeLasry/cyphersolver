@@ -20,13 +20,13 @@ body:
     id: key
     attributes:
       label: Key
-      description: Sign-to-value table, code groups with values, nulls. Attach a file if it is long.
+      description: Sign-to-value table, code groups with values, nulls; the full improved key if you changed one. Attach a file if it is long.
     validations: {required: true}
   - type: textarea
     id: reading
     attributes:
-      label: Decipherment
-      description: Line by line against the ciphertext; mark the passages you are unsure of.
+      label: Decipherment (full texts)
+      description: "Full texts, for every document claimed as read: the transcription of the ciphertext and the complete decryption (line by line against the ciphertext; mark unsure passages and unread groups). Attach files if long. They are shown on the write-up so the reading can be used and checked by others." 
     validations: {required: true}
   - type: dropdown
     id: method

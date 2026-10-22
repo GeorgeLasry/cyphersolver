@@ -2534,6 +2534,51 @@ def attach_credits():
 attach_credits()
 FOLDER_PAGE = {f: p for p in PAGES for f in p['folders']}
 
+# Full texts (George Lasry, 22 Oct 2026): a reading shows the transcription and decryption of every document it reports
+# on, and the key when the project changed it, from profile outcome.texts / outcome.key_file (_texts.py).
+import _texts as TX
+REPO_BLOB = 'https://github.com/dbourdeau/cyphersolver/blob/main/'
+TEXT_INLINE_MAX = 16000          # bytes: shorter files are shown on the page, longer ones linked
+def texts_html(page):
+    paths = M.profile_paths()
+    out = []
+    for f in page.get('folders') or []:
+        prof = PROFILES.get(f) or {}
+        o = prof.get('outcome') or {}
+        if not o.get('texts') and not o.get('key_file'): continue
+        base = paths[f].parent
+        rel = base.resolve().relative_to(HERE.resolve().parent).as_posix()
+        docs = {d.get('id'): d for d in prof.get('documents') or []}
+        def link(p):
+            return p if str(p).startswith('http') else REPO_BLOB + rel + '/' + str(p)
+        def show(kind, p):
+            name = html.escape(pathlib.PurePosixPath(str(p)).name)
+            fp = None if str(p).startswith('http') else base / p
+            if fp and fp.is_file() and fp.stat().st_size <= TEXT_INLINE_MAX and fp.suffix.lower() in ('.txt', '.md', '.tsv', ''):
+                body = html.escape(fp.read_text(encoding='utf-8', errors='replace').rstrip())
+                return (f'<details class="ftext"><summary>{kind}</summary><p class="muted"><a href="{link(p)}">{name}</a></p>'
+                        f'<pre>{body}</pre></details>')
+            return f'<p class="ftext">{kind}: <a href="{link(p)}">{name}</a></p>'
+        for t in o.get('texts') or []:
+            ids = TX.listify(t.get('doc'))
+            labels = []
+            for i in ids:
+                d = docs.get(i) or {}
+                bits = [b for b in (d.get('shelfmark'), d.get('date')) if b]
+                labels.append(html.escape(i if i != 'all' else 'All documents') + (f' <span class="muted">({html.escape(", ".join(map(str, bits)))})</span>' if bits else ''))
+            head = html.escape(t['label']) if t.get('label') else ('; '.join(labels) or 'Texts')
+            out.append(f'<h3>{head}</h3>')
+            if t.get('summary'): out.append(f'<p>{html.escape(t["summary"])}</p>')
+            for kind, key in (('Transcription', 'transcription'), ('Decryption', 'decryption'), ('Translation', 'translation')):
+                for p in TX.listify(t.get(key)): out.append(show(kind, p))
+        keys = TX.listify(o.get('key_file'))
+        if keys:
+            out.append('<p class="ftext">Key: ' + ', '.join(f'<a href="{link(k)}">{html.escape(pathlib.PurePosixPath(str(k)).name)}</a>' for k in keys) + '</p>')
+    if not out: return ''
+    return ('<!-- texts:start -->\n<h2 id="texts">Full texts</h2>\n<p>The transcription and the decryption of every document on '
+            'this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>\n'
+            + '\n'.join(out) + '\n<!-- texts:end -->\n')
+
 def credits_html(p):
     """The hero's credits line: everyone credited on the page's target(s), grouped by person, linked to contributors.html."""
     cs = [c for c in p.get('credits') or [] if c.get('who') in CONTRIB]
@@ -3093,6 +3138,15 @@ def process(path):
         else: s = s.replace('</main>', fig + '</main>', 1)
     if 'class="creveal"' in s and 'cipher-reveal.js' not in s:
         s = s.replace('</body>', '<script src="cipher-reveal.js" defer></script>\n</body>', 1)
+    # "Full texts": every document's transcription and decryption, and the key, from profile outcome.texts (_texts.py)
+    s = re.sub(r'<!-- texts:start -->.*?<!-- texts:end -->\n?', '', s, flags=re.S)
+    s = re.sub(r'<a href="#texts">Full texts</a>', '', s)
+    tb = texts_html(page) if page else ''
+    if tb:
+        m = re.search(r'<!-- replay:start -->|<h2 id="sources"', s)
+        s = s[:m.start()] + tb + s[m.start():] if m else s.replace('</main>', tb + '</main>', 1)
+        s = re.sub(r'(<nav class="toc"[^>]*>.*?)(<a href="#sources">|</nav>)',
+                   lambda m: m.group(1) + '<a href="#texts">Full texts</a>' + m.group(2), s, count=1, flags=re.S)
     # "How it was solved": the replay of the profile's solution steps, before the sources
     s = re.sub(r'<!-- replay:start -->.*?<!-- replay:end -->\n?', '', s, flags=re.S)
     s = re.sub(r'<script src="solve-replay\.js[^"]*" defer></script>\n?', '', s)

@@ -43,6 +43,15 @@ not from memory. The slug is the folder name unless a page already exists under 
   them on the page as the hero's credits line and adds them up on `contributors.html` and the front page's top
   contributors; nothing on the page is typed by hand. A result sent in by someone else gets `outcome.provenance`
   `contributed` (or `mixed`) and a `solution` credit with the PR, issue or email as `source`.
+- **Full texts (George Lasry, 22 Oct 2026).** A target classed "read" or "read in part" shows the complete
+  transcription and the complete decryption of every document it covers, and the key when the project or a
+  contributor recovered, extended or corrected it: historians can use the text, and earlier contributors can judge
+  the reading. List them in the profile's `outcome.texts` (one entry per document or letter: `doc`, optional
+  `label`, `transcription`, `decryption`, optional `translation`, and a one-to-three-sentence `summary` of what it
+  says with its historical context) and `outcome.key_file` (`docs/_texts.py`). The builder renders a "Full texts"
+  section before the sources, short files inline; `_check_writeup.py` refuses a reading without it. A decryption is
+  the deciphered text, with unread groups marked, not only a score or a sample. If a contributor's texts are
+  missing, ask for them and keep the result as a pointer until they arrive.
 - **No cipher type without evidence.** Until part of the text is read, name the system only as far as measured
   evidence goes ("a transposition: letter frequencies match Spanish"). Do not name a specific system, or say what
   its users were taught or would have been given, unless a source is cited; families not yet excluded are

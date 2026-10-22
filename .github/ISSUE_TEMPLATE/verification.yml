@@ -19,6 +19,7 @@ body:
     id: agree
     attributes:
       label: Where your reading agrees, and every place it does not
+      description: Attach your full transcription and decryption of the pages you checked, so the comparison can be shown and judged.
     validations: {required: true}
   - type: textarea
     id: key

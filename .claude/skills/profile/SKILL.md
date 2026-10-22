@@ -49,6 +49,10 @@ reader could check against the folder. Rules:
    the `## Remaining gaps` section of NOTES.md (writeup skill, section 0a). The write-up checker rejects a partial
    outcome without them.
 
+7a. **Full texts.** For "read" and "read in part", fill `outcome.texts` (per document: transcription file,
+   decryption file, optional translation, a short `summary` of contents and context) and `outcome.key_file` when the
+   key was recovered, extended or corrected (`docs/_texts.py`; the writeup skill, section 0). Paths are relative to
+   the target folder.
 8. **Statistical validation.** A reading whose key the project recovered (`outcome.method` "key recovered ...")
    is checked against chance and overfitting: write `validation.tsv` (cipher token TAB reading, one per line;
    format in `docs/_validate.py`), then `python docs/_validate.py <folder> --write`. It records

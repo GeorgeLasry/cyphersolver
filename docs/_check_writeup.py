@@ -317,6 +317,16 @@ def check_slug(slug):
             verdict = (out.get('validation') or {}).get('verdict')
             item(bool(verdict), f'{folder}: recovered key validated statistically (python docs/_validate.py {folder} --write, '
                  f'or --na "reason")' + (f': {verdict}' if verdict else ''))
+    # every reading shows its full texts: transcription and decryption per document, the key if changed (_texts.py)
+    import _texts
+    for folder in sorted(folders):
+        try: prof = json.loads(read(tdir(folder) / 'profile.json') or '{}')
+        except ValueError: prof = {}
+        if _texts.needs_texts(prof):
+            tp = _texts.texts_problems(tdir(folder), prof)
+            item(not tp, f'{folder}: full texts listed in outcome.texts (transcription + decryption per document, key file)'
+                 + ''.join(f'\n         - {p}' for p in tp))
+            item(not _texts.summary_missing(prof), f'{folder}: a summary of contents on the texts (outcome.texts[].summary)', warn=True)
     for folder in sorted(folders):
         part, probs, _ = partial_problems(folder)
         if part:
@@ -490,6 +500,20 @@ def audit(brief=False):
     if not brief:
         for s, n, nosnip in imgs:
             print(f'   {s}: ' + ', '.join(filter(None, [f'{n} uncredited' if n else '', 'no snip' if nosnip else ''])))
+    # 9. full texts (George Lasry, 22 Oct 2026): every reading lists its transcription and decryption per document
+    import _texts
+    notext, nosum = [], []
+    for d in dirs:
+        try: prof = json.loads(read(tdir(d) / 'profile.json') or '{}')
+        except ValueError: continue
+        if not _texts.needs_texts(prof): continue
+        tp = _texts.texts_problems(tdir(d), prof)
+        if tp: notext.append((d, tp))
+        elif _texts.summary_missing(prof): nosum.append(d)
+    print(f'I. Full texts (outcome.texts): {len(notext)} readings without complete texts, {len(nosum)} with texts but no summary')
+    if not brief:
+        for d, tp in notext: print(f'   {d}/  ({tp[0]}' + (f'; +{len(tp) - 1} more' if len(tp) > 1 else '') + ')')
+        for d in nosum: print(f'   no summary: {d}/')
     return problems, gaps
 
 # ---------------------------------------------------------------------------

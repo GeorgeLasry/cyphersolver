@@ -222,6 +222,17 @@
       "item": {"type": "string"},
       "blocker": {"type": "string", "enum": ["no-key-material", "too-short", "illegible", "needs-physical-access", "open-codes", "not-attempted"]},
       "detail": {"type": "string"}}}},
+    "texts": {"type": "array",
+     "description": "Required for 'read' and 'read in part' (George Lasry, 22 Oct 2026): the transcription and the decryption of every document, so the reading can be used and checked. Paths are relative to the target folder (http(s) URLs allowed, a local copy is better). The site renders them in a 'Full texts' section (docs/_texts.py).",
+     "items": {"type": "object", "required": ["doc"], "additionalProperties": false, "properties": {
+      "doc": {"description": "documents[].id this entry covers, a list of ids, or 'all'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "label": {"type": "string", "description": "Heading for this entry when a profile document holds several letters (e.g. 'R1072, 6 Jan 1757'); else the document's id, shelfmark and date are used."},
+      "transcription": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "decryption": {"description": "The deciphered text (plaintext reading), with unread groups marked.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "translation": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "summary": {"type": "string", "description": "What the document says, in one to three sentences, with its historical context."},
+      "note": {"type": "string"}}}},
+    "key_file": {"description": "The key used, as a file in the target folder, required when outcome.contribution has 'key recovered' or 'key extended or corrected'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
     "notes": {"type": "string"}
    }
   }

@@ -943,3 +943,8 @@ blockquote.plain{font-style:italic}
 p.trans{color:var(--ink2)}
 @media (max-width:620px){table.facts th{width:auto}}
 main li a,table.facts td{overflow-wrap:anywhere}
+/* Full texts (profile outcome.texts): transcriptions and decryptions shown inline */
+details.ftext{margin:.4rem 0 .8rem}
+details.ftext > summary{cursor:pointer;font-family:var(--mono);font-size:.82rem;color:var(--ink2)}
+details.ftext pre{max-height:28rem;overflow:auto;white-space:pre-wrap;word-break:break-word;font-size:.8rem;line-height:1.45;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:.7rem .9rem}
+p.ftext{font-family:var(--mono);font-size:.82rem;margin:.3rem 0}
