@@ -96,6 +96,12 @@
       ],
       "what": "Jozef Krajčovič (issue #39) re-read f9r, f15r, f17r, f18r by hand and applied Lasry's key (not a ciphertext-only re-solution): agreements e.g. f15r sans résistance, f18r Castiglione; proposed token corrections f9r 1143->1193 (419 = es), f18r 1268->1265, f15r 1115->1155, f17r 839->889 and 353->355, provisional 1200 = sort; f21r-v (Emperor to the War Ministry) is a different nomenclator. Not applied: the transcription and key are Lasry's; passed to him. Extent corrected from 'already solved' to read in part (9 of 11 cipher pages, 84.1% of elements).",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Lasry's report excerpts (lasry_entry.md) and Krajčovič's proposed token corrections (NOTES.md) copied as separate files under texts/. Lasry's full token transcription, full decryption of the cipher pages and key table are not in the repository; Krajčovič's token streams are on issue #39 only.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -137,6 +143,20 @@
         "source": "https://github.com/dbourdeau/cyphersolver/issues/39"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r.",
+    "texts": [
+      {
+        "doc": "eugenie1859",
+        "label": "George Lasry's decipherment (excerpts of ff. 19r, 35r, 27r from his report)",
+        "decryption": "texts/eugenie1859_decryption_lasry_excerpts.md",
+        "summary": "Code telegrams between Napoleon III and Empress Eugénie during the Italian campaign, June 1859: Napoleon on the Pope and the foolish suppositions of diplomacy (f19r); the morning after Solferino, Niel made Marshal (f35r); Eugénie's reassurance that the little one is doing wonderfully (f27r)."
+      },
+      {
+        "doc": "eugenie1859",
+        "label": "Jozef Krajčovič's hand re-reading of ff. 9r, 15r, 17r, 18r and proposed token corrections (issue #39)",
+        "decryption": "texts/eugenie1859_corrections_krajcovic.md",
+        "summary": "Krajčovič applied Lasry's key to his own hand reading of four pages and lists corrections to Lasry's token transcription; f21r-v is a different nomenclator."
+      }
+    ]
   }
 }

@@ -158,7 +158,8 @@
    "what": "Split from the former combined target 'superscript' (Ghinucci R8613 with Gilino R8572), after George Lasry pointed out that the two letters share only superscript numbering: different writers, languages and keys (the Worcester syllabary vs the Sforza key R5258). Folder, profile, page and ledgers separated; earlier steps are kept as recorded. Compared the two Gilino keys on the numbered syllable signs both label: George Lasry's recovered values agree with R5258 on 101 of 106 (nulls and tentative marks normalised); the other five are H.28, R.22, R.28, x.22 (words in R5258, his et or nulls) and 6.65 (his tentative qu?, a null here). The two editions use the same key.",
    "result": "worked"
   },
-  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3102 tokens, 184 types, it-cinquecento order 4: reading -2.012 per letter; random keys -3.39 (z 11.5); key annealed onto shuffled ciphertext best -2.527 (mean -2.541, z 48.2); annealer on the real text -2.463. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3102 tokens, 184 types, it-cinquecento order 4: reading -2.012 per letter; random keys -3.39 (z 11.5); key annealed onto shuffled ciphertext best -2.527 (mean -2.541, z 48.2); annealer on the real text -2.463. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): project transcription r8572_tokens.txt (+ 24 corrections, clear passages) and reading_r8572.txt; George Lasry's own edition linked as a separate entry from lasry/ (transcription.txt, plaintext_reading.txt, literal_decode.txt, alignment.tsv); keys key_r8572.tsv / key_R5258.md (project, from R5258) and lasry/key.txt / key.json (Lasry's).", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 3102, "types": 184, "tokens_per_type": 16.86, "score": -2.012, "nulls": {"random keys": {"n": 200, "mean": -3.39, "sd": 0.12, "max": -3.108, "z": 11.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.541, "sd": 0.011, "max": -2.527, "z": 48.2, "p": 0.1429}}, "power": -2.463, "verdict": "pass", "notes": "claimed per-occurrence score -2.001; polyphony 0.026; 9 unread tokens left out; annealer on the real text from random keys reached -2.463"}, 
   "method": "read after matching with key from external sources",
@@ -202,6 +203,11 @@
     "source": "https://github.com/dbourdeau/cyphersolver/tree/main/targets/gilino1527/lasry",
     "published": true
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "gilino-R8572", "label": "R8572, deciphered with the Sforza key R5258 (project, 9 Oct 2026)", "transcription": ["r8572_tokens.txt", "transcription_corrections.txt", "r8572_clear.txt"], "decryption": "reading_r8572.txt", "summary": "\"El Gilino\", a Sforza agent at the imperial court, writes from Paredes de Nava on 15 September 1527 to Francesco II Sforza, Duke of Milan, at Cremona: Gattinara is out of favour over two intercepted letters to the Viceroy of Naples about relieving Genoa; the Duke should have the Bilia keep in with Gattinara now that Bourbon is dead; papal briefs, the Abbatino's mission, the French ambassadors insisting the Duke keep Milan, and the investiture of Milan sent to the Infante with 100,000 ducats."},
+   {"doc": "gilino-R8572", "label": "R8572: George Lasry's edition (key reconstructed from the ciphertext, 7 Oct 2026; contributed 14 Oct 2026)", "transcription": "lasry/transcription.txt", "decryption": ["lasry/plaintext_reading.txt", "lasry/literal_decode.txt", "lasry/alignment.tsv"], "summary": "George Lasry's independent nine-page transcription, literal alignment and punctuated Italian reading of the same letter, with the original clear passages inserted; his recovered key agrees with R5258 on 101 of 106 shared numbered signs."}
+  ],
+  "key_file": ["key_r8572.tsv", "key_R5258.md", "lasry/key.txt", "lasry/key.json"]
  }
 }

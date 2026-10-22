@@ -153,6 +153,12 @@
    ],
    "what": "Checked here: Lasry's image transcribed and compared with the issue's quotations of it (ll. 7, 8, 9, 10 entries are blanks over code groups or identical text, not differences); recto ll. 5, 8, 9, 10, 12, 25-26 and verso l. 2 deciphered sign by sign from the scan with Lasry's table: hazen, diz, muy tarde, palabras, haga, Santa Cruz, Alemanna as Brackx has them. Brackx's ll. 14-25 agree with the project's Sept machine reading where they overlap; our l. 12 'me toca' is 'le toca'.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Lasry's ll. 1-13 (from his cryptiana overlay), Brackx's ll. 14-33 + verso and his proposed corrections to Lasry's ll. 1-13 split from f122_reading.md into separate files under texts/; key.md points to Lasry's alphabet image and copies Brackx's proposed values. No sign-level ciphertext transcription exists (Brackx read by eye; the segmentation glyph file is git-ignored), so no transcription is linked.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -243,6 +249,31 @@
    "total": 10,
    "tokens_open": 18
   },
-  "provenance": "mixed"
+  "provenance": "mixed",
+  "texts": [
+   {
+    "doc": "no95",
+    "label": "f. 122r ll. 1–13: George Lasry's decipherment (2022, reference)",
+    "decryption": "texts/no95_decryption_lasry_ll1-13.md",
+    "summary": "Unaddressed Spanish letter from Italy, 8 January 1497: grain grows dear; the French bring victuals and offer the silk-makers licence to trade in France to win the Señoría over, while [bnh] provides very late and very little."
+   },
+   {
+    "doc": "no95",
+    "label": "f. 122r ll. 14–33 and f. 122v: Michael Brackx's reading (2026), with his proposed corrections to Lasry's ll. 1–13",
+    "decryption": [
+     "texts/no95_decryption_brackx.md",
+     "texts/no95_corrections_brackx_ll1-13.md",
+     "f122_reading.md"
+    ],
+    "summary": "Juan Luys has been brought over; [def] treats daily with those who govern; [dae] wants the [bed] of Santa Cruz to go to France to seek peace; [boo] should be ordered to defend the place, for if it were lost nothing in Italy would be safe. The verso: [def] has gone to Germany without anyone knowing (Brackx suggests Maximilian I)."
+   },
+   {
+    "doc": "no95",
+    "label": "f. 122r: the project's machine-segmented reading with Lasry's key (Sept 2026, about two thirds)",
+    "decryption": "f122r_reading.md",
+    "summary": "The September 2026 reading by segmentation and clustering, eye-checked stretches only; superseded by Lasry's and Brackx's texts where they overlap."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }
