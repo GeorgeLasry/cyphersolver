@@ -68,7 +68,8 @@
   {"kind": "transcription", "what": "Two subagents transcribed the R9957 cipher passages, pp. 1-9 and 10-18.", "result": "partial"},
   {"kind": "crib", "technique": ["crib testing", "plaintext matching"], "what": "Found the contemporary decipherment of the pp. 16-17 cipher on pp. 17-18 and two interlinear glosses on p. 16; read the decipherment.", "result": "worked"},
   {"kind": "solver", "technique": ["EM alignment", "plaintext matching"], "what": "Hard-EM monotone aligner (from balbases1677) of the p. 16-17 tokens against the decipherment.", "result": "failed"},
-  {"kind": "literature search", "what": "Tomokiyo cryptiana page (cached copy) lists R9957 as deciphered and printed in Luo 2021 p. 287, cipher AGS Estado leg. 1.1.1 doc. 169, and R9952 as deciphered in the margin.", "result": "worked"}
+  {"kind": "literature search", "what": "Tomokiyo cryptiana page (cached copy) lists R9957 as deciphered and printed in Luo 2021 p. 287, cipher AGS Estado leg. 1.1.1 doc. 169, and R9952 as deciphered in the margin.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R9957: the first-pass transcriptions (trans_p1-9.txt, trans_p10-18.txt), Luo's 2021 decipherment linked through cryptiana (modern, not copied); R9952: no transcription or decryption in the repository (contemporary decipherment on the images only).", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -80,6 +81,25 @@
   "credits": [
     {"who": "luo", "role": "prior solution", "note": "R9957 deciphered and printed (thesis 2021, p. 287) from its key AGS Estado leg. 1.1.1 doc. 169", "date": "2021", "source": "Luo, El lenguaje cifrado de Isabel de Portugal (1530-1539), thesis, Universitat de València, p. 287"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "R9952 decipherment in the margins and on ff. 13-14; interlinear glosses on R9957"}
+  ],
+  "texts": [
+   {
+    "doc": "R9957",
+    "label": "Charles V to the Empress Isabella, Borgo San Donnino, 17 May 1536",
+    "transcription": [
+     "trans_p1-9.txt",
+     "trans_p10-18.txt"
+    ],
+    "decryption": "https://cryptiana.web.fc2.com/code/spanish2C.htm",
+    "summary": "Charles V, on his way north from Rome, writes to the Empress Isabella with long cipher passages on Spain's frontier defences and the coming war with France: 25-30,000 German troops for Italy, more raised in Germany and Flanders, the Count of Nassau entering France from the Luxembourg side, and the diversion of the French King's forces. The full decipherment is Wanruo Luo's, printed in her thesis El lenguaje cifrado de Isabel de Portugal (1530-1539) (Universitat de València 2021) p. 287 with the key AGS Estado leg. 1.1.1 doc. 169; cryptiana spanish2C cites it.",
+    "note": "Decryption not copied: Luo 2021 is a modern publication (full text there; the link is Tomokiyo's page citing it). A contemporary decipherment of the pp. 16-17 passages on pp. 17-18 is on the DECODE images only, not transcribed. The transcriptions here are first passes, not good enough to check her reading sign by sign."
+   },
+   {
+    "doc": "R9952",
+    "label": "Charles V to Prince Philip, Cremona, 19 Jun 1543",
+    "summary": "Charles V to Prince Philip on the Farnese offer through the Marqués del Vasto: two million ducats and a yearly census for the investiture of Milan for Ottavio Farnese, Duke of Camerino. Deciphered at the time in the margins of ff. 10-12 and in full on ff. 13-14.",
+    "note": "The contemporary decipherment is on the DECODE images only; neither it nor the ciphertext has been transcribed (project work)."
+   }
   ]
  }
 }

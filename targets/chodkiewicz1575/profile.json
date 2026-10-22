@@ -49,7 +49,8 @@
   "last_date": "2026-09-21"
  },
  "solution": [
-  {"kind": "literature search", "what": "Read the HistoCrypt 2023 article cited on the DECODE record: R1473 = their letter E (Chiffrenschlüssel fasc. 20 kt 210-212, Szklow 22 Feb 1575), deciphered completely; plaintext deposited on DECODE.", "result": "worked"}
+  {"kind": "literature search", "what": "Read the HistoCrypt 2023 article cited on the DECODE record: R1473 = their letter E (Chiffrenschlüssel fasc. 20 kt 210-212, Szklow 22 Feb 1575), deciphered completely; plaintext deposited on DECODE.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Kopal and Waldispühl's decipherment (HistoCrypt 2023) and the DECODE record linked by URL (modern, not copied); no transcription in the repository.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -61,6 +62,18 @@
   "credits": [
     {"who": "kopal", "role": "prior solution", "note": "deciphered in full, HistoCrypt 2023; plaintext on DECODE R1473", "date": "2023", "source": "https://ecp.ep.liu.se/index.php/histocrypt/article/view/160/116"},
     {"who": "waldispuhl", "role": "prior solution", "note": "deciphered in full, HistoCrypt 2023; plaintext on DECODE R1473", "date": "2023", "source": "https://ecp.ep.liu.se/index.php/histocrypt/article/view/160/116"}
+  ],
+  "texts": [
+   {
+    "doc": "R1473",
+    "label": "Jan Chodkiewicz, Szkłów, to Maximilian II, 22 Feb 1575",
+    "decryption": [
+     "https://ecp.ep.liu.se/index.php/histocrypt/article/view/160/116",
+     "https://de-crypt.org/decrypt-web/RecordsView/1473"
+    ],
+    "summary": "Jan Chodkiewicz writes to Emperor Maximilian II during the Polish-Lithuanian interregnum: he doubts the emperor's plan would bring confusion and splits, proposes sending his servant Adam Theim to win the Lithuanian electorate and then Polish nobles for the Habsburg candidacy, and advises a contract first with the higher nobility only (Kopal and Waldispühl's summary). The full German plaintext is in Kopal and Waldispühl, HistoCrypt 2023 (their letter E), and on the DECODE record.",
+    "note": "Not copied: a modern publication (HistoCrypt 2023), full text there and on DECODE R1473. No transcription in the repository; the images were not viewed (project work)."
+   }
   ]
  }
 }

@@ -102,6 +102,12 @@
    "kind": "reading",
    "what": "Transcribed the published overlay diplomatically and normalized its secure substance, retaining all visible gaps and uncertain phrases.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): READING.md (the project's transcription of Lasry's overlay) and cryptiana GL.htm as decryptions; no ciphertext transcription (project work).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -115,6 +121,18 @@
   "notes": "The prior solution reads the letter in substance but leaves several signs or short phrases unresolved. No new cryptanalytic solve is claimed.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "plaintext overlay of both pages on cryptiana GL.htm, transcribed here", "date": "2022-05-25", "source": "https://cryptiana.web.fc2.com/code/GL.htm"}
+  ],
+  "texts": [
+   {
+    "doc": "R2789",
+    "label": "Charles IX to Philibert du Croc, undated (1565-67 or 1572)",
+    "decryption": [
+     "READING.md",
+     "http://cryptiana.web.fc2.com/code/GL.htm"
+    ],
+    "summary": "Charles IX tells his ambassador in Scotland, Philibert du Croc, to use his judgment and follow his instructions for the country's peace; above all his nephew, the young James VI, is to be well brought up, keep the Scots' traditional attachment to France, and not marry before Charles has been told and can send his intention. The postscript orders him to keep the English from gaining a foothold in Scotland. READING.md is a working transcription of George Lasry's plaintext overlay published on Tomokiyo's cryptiana GL.htm (25 May 2022), with its gaps kept.",
+    "note": "No transcription of the cipher signs exists (project work); the letter is printed in facsimile in Destray, Philibert Du Croc (1924), doc. XLIII."
+   }
   ]
  }
 }

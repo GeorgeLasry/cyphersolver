@@ -198,6 +198,12 @@
    "kind": "verification",
    "what": "One-key split (George Lasry, 14 Oct 2026): catalogue 92's two records are in different ciphers. R9238 (Coligny to Elizabeth, 12 Jan 1563) is in the graphic-sign cipher of the Condé key R335, the same key as Coligny's other three letters of January 1563 in coligny1563 (R9237, R9239, R9240), so it moved there; foix1563 keeps R9241 (Catherine de' Medici to Paul de Foix), in de Foix's own cipher. R9238 had been identified on 21 Sept 2026 from the margin glosses 'sins', 'desracine' as the Villefranche letter of 12 Jan 1563 (CSP Foreign vi no. 76; Forbes ii 272-274); the R335 check ('&' and '14' nulls, omega = La Royne d'Angleterre on the heading line of f.142) was made then.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the four clear texts printed by Forbes (1741) copied verbatim from the archive.org OCR (targets/smith1562/forbes2.txt, git-ignored) to texts/R92xx_decryption.txt; no transcription of the cipher exists (project work).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -228,6 +234,36 @@
     "note": "French clear texts printed in Full View ii (1741) 247-249, 272-274, 300-303, 319-321",
     "date": "1741",
     "source": "Forbes, A Full View of the Public Transactions in the Reign of Q. Elizabeth ii (1741)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R9237",
+    "label": "Camp at Meur, 2 Jan 1563",
+    "decryption": "texts/R9237_decryption.txt",
+    "summary": "Gaspard de Coligny, Admiral of France and leader of the Huguenot army after the battle of Dreux (19 Dec 1562) and the capture of Condé, tells Elizabeth I that the infantry was lost but the cavalry is intact, and asks for foot soldiers and money to pay the reiters. Deciphered at the time (CSP Foreign vi no. 7); clear text printed by Forbes, Full View ii (1741) pp. 247-249.",
+    "note": "No transcription of the graphic-sign cipher (key DECODE R335, the Condé cipher) in the repository (project work)."
+   },
+   {
+    "doc": "R9238",
+    "label": "Camp at Villefranche, 12 Jan 1563",
+    "decryption": "texts/R9238_decryption.txt",
+    "summary": "Coligny to Elizabeth I after Dreux: the author of the troubles, rallying his own to uproot the gospel from the kingdom, and a renewed plea for her help. Deciphered at the time (CSP Foreign vi no. 76); clear text in Forbes ii pp. 272-274.",
+    "note": "No transcription of the cipher in the repository (project work)."
+   },
+   {
+    "doc": "R9239",
+    "label": "Orléans, 24 Jan 1563",
+    "decryption": "texts/R9239_decryption.txt",
+    "summary": "Coligny to Elizabeth I: his fourth dispatch since the capture of the Prince of Condé, on the state of affairs and his request for aid. Deciphered at the time (CSP Foreign vi no. 145); clear text in Forbes ii pp. 300-303.",
+    "note": "No transcription of the cipher in the repository (project work)."
+   },
+   {
+    "doc": "R9240",
+    "label": "Orléans, 29 Jan 1563",
+    "decryption": "texts/R9240_decryption.txt",
+    "summary": "Coligny to Elizabeth I: the resolution taken that day with the reiters to march into Normandy, their pay resting on her promised aid; the reiters leaving their baggage at Orléans; the failed attempt to surprise Lyon by escalade; the bearers (the Vidame, Briquemault, La Haye) will say the rest. Deciphered at the time (CSP Foreign vi, entry before no. 186); clear text in Forbes ii pp. 319-321.",
+    "note": "No transcription of the cipher in the repository (project work)."
    }
   ]
  }

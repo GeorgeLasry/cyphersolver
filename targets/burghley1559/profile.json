@@ -142,6 +142,12 @@
    "kind": "literature search",
    "what": "Found both letters in Clifford's Sadler State Papers I (1809): 'Therle of Arrayn borrowed of me at his being at London 200 crowns', the cipher printed as deciphered by a contemporary hand.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R4847: transcription.txt and the deciphered phrase copied verbatim from NOTES.md to texts/R4847_decryption.md, with Clifford 1809 linked; R4860 has no cipher (no transcription possible), Clifford linked.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -160,6 +166,25 @@
   "notes": "Printed in 1809. The cipher is two groups in one letter; the other letter is in clear. Catalogue entry 85 removed, no write-up.",
   "credits": [
     {"who": "clifford", "role": "key or decipherment used", "note": "Sadler State Papers I (1809) no. XXXVI prints the one ciphered phrase deciphered", "date": "1809", "source": "Clifford (ed.), The State Papers and Letters of Sir Ralph Sadler I (Edinburgh 1809), no. XXXVI"}
+  ],
+  "texts": [
+   {
+    "doc": "R4847",
+    "label": "Cecil near Stamford to Sadler and Croft, 11 Sep 1559",
+    "transcription": "transcription.txt",
+    "decryption": [
+     "texts/R4847_decryption.md",
+     "https://archive.org/details/statepapers01sadl"
+    ],
+    "summary": "William Cecil writes in clear to Sir Ralph Sadler and Sir James Croft at Berwick, with one phrase in the new cipher he had just sent them: 'Therle of Arrayn borrowed of me at his being at London 200 crowns', the Earl of Arran having passed secretly through London to Cecil in late August 1559. The letter is printed in full in Clifford, Sadler State Papers I (1809) no. XXXVI, with the phrase already deciphered."
+   },
+   {
+    "doc": "R4860",
+    "label": "Cecil, London, to Sadler and Croft, 30 Oct 1559",
+    "decryption": "https://archive.org/details/statepapers01sadl",
+    "summary": "Cecil writes from London 'at midnight' to Sadler and Croft; the letter is entirely in clear and printed in Clifford, Sadler State Papers I (1809) no. XCVII, pp. 526-527.",
+    "note": "No cipher on either page, so there is no transcription to give; the letter is listed here only because DECODE grouped it with R4847."
+   }
   ]
  }
 }

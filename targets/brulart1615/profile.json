@@ -140,6 +140,12 @@
    "kind": "verification",
    "what": "Split from the former combined target louis1615 (catalogue 191) under the one-key rule (George Lasry, 14 Oct 2026): R2785/R2786 (the Brulart de Leon cipher, Tomokiyo's key) and R2748 (the 1631 Sabran cipher, Lasry's solution) are different ciphers. Folder, profile, page and ledgers separated; earlier steps kept as recorded.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Tomokiyo's readings linked by URL (DECODE R2785, R2786; cryptiana louisxiii.htm); no transcription or local decryption exists in the repository (project work).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -170,6 +176,28 @@
     "role": "key or decipherment used",
     "note": "interlinear decipherment above most cipher runs of the R2785 text page",
     "source": "DECODE R2785 image 1"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R2785",
+    "label": "Poitiers?, 15 Sep 1615",
+    "decryption": [
+     "https://de-crypt.org/decrypt-web/RecordsView/2785",
+     "https://cryptiana.web.fc2.com/code/louisxiii.htm"
+    ],
+    "summary": "Louis XIII, countersigned by Brûlart de Sillery, to Léon Brûlart, his ambassador in Venice: clear French with cipher runs (contemporary decipherments above them mention 'Marini', 'retirer a Gennes', 'domestiques', 'aucun ombrage'); the King is still held in the town by his eldest sister's illness, which fits the court at Poitiers in September 1615. The reading is Satoshi Tomokiyo's, with his key, on DECODE R2785 and cryptiana louisxiii.htm.",
+    "note": "No transcription and no local decryption: the project made no transcription and did not apply Tomokiyo's key (project work); his reading is on DECODE (login) and his site."
+   },
+   {
+    "doc": "R2786",
+    "label": "Paris, 25 Jul 1617",
+    "decryption": [
+     "https://de-crypt.org/decrypt-web/RecordsView/2786",
+     "https://cryptiana.web.fc2.com/code/louisxiii.htm"
+    ],
+    "summary": "Louis XIII (countersigned Brûlart de Sillery) to Léon Brûlart, ambassador in Venice; read by Satoshi Tomokiyo with his reconstructed Brûlart de Léon key (1615-18). Its contents are not described in the repository; only the address leaf was fetched.",
+    "note": "No transcription and no local decryption (project work); Tomokiyo's reading is on DECODE R2786 and cryptiana."
    }
   ]
  }

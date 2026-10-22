@@ -80,7 +80,8 @@
   {"kind": "literature search", "what": "Vestigia search 'Bonzagni': 46 items of Bonzagni's ASMo file; DECODE R1123/R1124/R1125 = b. 4 nos. 4, 6, 12 (Vestigia 1796, 1798, 1804).", "result": "worked"},
   {"kind": "access", "what": "Fetched the 11 DECODE images with the shared cookie.", "result": "worked"},
   {"kind": "literature search", "what": "Viewed every page: R1123 and R1124 carry contemporary interlinear decipherments over all cipher words; R1125 image 5 is a separate decipherment slip.", "result": "worked"},
-  {"kind": "verification", "what": "Aligned the slip ('Mando per Ladislao lator presto sei cavalli ...') with the first four lines of R1125's p. 3 cipher: word lengths agree and letters repeat consistently (sei, si, la, lator, poi, bacino, nove).", "result": "worked"}
+  {"kind": "verification", "what": "Aligned the slip ('Mando per Ladislao lator presto sei cavalli ...') with the first four lines of R1125's p. 3 cipher: word lengths agree and letters repeat consistently (sei, si, la, lator, poi, bacino, nove).", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries with summaries for R1123, R1124 and R1125; no transcription and no decryption in the repository (the interlinear decipherments and the R1125 slip are on the DECODE images only; project work).", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -91,6 +92,26 @@
   "notes": "Read at the time. Added here only the check that the R1125 slip is the decipherment of its cipher block. Catalogue entry 155 removed; no write-up.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherments on R1123, R1124 and the decipherment slip filed with R1125"}
+  ],
+  "texts": [
+   {
+    "doc": "R1123",
+    "label": "Eger, 2 Aug 1512",
+    "summary": "Giovanni Battista Bonzagni, Ippolito I d'Este's agent at Eger, writes to the cardinal; the political news (Bakócz, the Tatar khan, Poland, the Diet) is in clear, and the c. 14 cipher lines on p. 1 cover private and household business, the estate of a dead man's goods and jewels.",
+    "note": "Deciphered at the time: a contemporary interlinear decipherment stands over every cipher word, on the DECODE images only. Neither the ciphertext nor the interlinear decipherment has been transcribed (project work)."
+   },
+   {
+    "doc": "R1124",
+    "label": "Eger, 4 Aug 1512",
+    "summary": "Bonzagni to Ippolito I d'Este: eight cipher lines on Beatrice's jewels (cups, bowls, salts).",
+    "note": "Contemporary interlinear decipherment throughout, on the DECODE images only; neither it nor the ciphertext has been transcribed (project work)."
+   },
+   {
+    "doc": "R1125",
+    "label": "Eger, 28 Dec 1514",
+    "summary": "Bonzagni to Ippolito I d'Este: the 13-line cipher block on p. 3 says he is sending six horses by Ladislao with a list, a silver basin and a bronzina, and cannot send money; the clear p. 4 continues the same business.",
+    "note": "The decipherment is a separate slip in a later hand (DECODE image 5), aligned with the first four cipher lines here; only its opening is quoted in NOTES.md. Neither the slip nor the ciphertext has been transcribed (project work)."
+   }
   ]
  }
 }

@@ -109,6 +109,12 @@
    "kind": "verification",
    "what": "Read the endorsement on p. 2 as 'Sr Ra: Boswele. 24 Jan. 1627': the sender is Sir Ralph Boswell, a kinsman ('my ... Cosin'), not Charles I. Saturday the 15th falls (Julian) in Dec 1627 or Mar 1628; with receipt on 24 Jan 1627/8 the letter's day is 15 Dec 1627.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt (Woodard's transcription); the reading copied verbatim from NOTES.md to texts/R413_decryption.md, with Woodard's own decipherment linked on DECODE R413; the key copied from NOTES.md to texts/key.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -129,6 +135,19 @@
   "notes": "Solved by Woodard 2021. Added here: the gap readings, the sender (Sir Ralph Boswell, not the King) and the date from the endorsement. Catalogue entry 63 removed.",
   "credits": [
     {"who": "woodard", "role": "key or decipherment used", "note": "monoalphabetic key, transcription and plaintext on DECODE R413; open signs filled here", "date": "2021-11-09", "source": "DECODE R413 DOC_413_2021-Nov-09"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R413",
+    "label": "Sir Ralph Boswell to William Boswell, c. 15 Dec 1627",
+    "transcription": "transcription.txt",
+    "decryption": [
+     "texts/R413_decryption.md",
+     "https://de-crypt.org/decrypt-web/RecordsView/413"
+    ],
+    "summary": "Sir Ralph Boswell tells his kinsman William Boswell that Buckingham ('our greate Duke') has returned from Plymouth to Whitehall after the failed Île de Ré expedition, sure of the King's favour against his enemies in the Commons and backed in the Lords by the bishops and the new peers of his own making. texts/R413_decryption.md is the project's text (Woodard's key plus the gap readings of 2026); Mark Woodard's 2021 transcription and plaintext are on the DECODE record (PDF DOC_413_2021-Nov-09)."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }
