@@ -225,6 +225,12 @@
    "what": "5 Oct 2026: the old measure (stats.py) counts every sign with a key value, sense or not. New sense.py counts only signs inside French words (fr-1520s-diplomatic vocabulary + named persons/places) by best-coverage segmentation, runs under 4 letters not counted: R4232 98.5%, R3697 78.2%, both 89.9% (2230/2481), against 90.6% by signs.",
    "result": "worked",
    "date": "2026-10-05"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R3697_signs.txt / R4232_signs.txt with READING_R3697.md / READING_R4232.md; key KEY.md (Tomokiyo's table with the additions)",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -287,6 +293,23 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "key table for 'Selve's Cipher' (cryptiana francis.htm, rebuilt from fr. 3045 ff. 42-49), extended", "source": "cryptiana francis.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "the decipherer's interlinear and marginal glosses, used as cribs on the struck runs"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R3697",
+    "label": "R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535",
+    "transcription": "R3697_signs.txt",
+    "decryption": "READING_R3697.md",
+    "summary": "Georges de Selve, ambassador at Venice, to Francis I: a merchant must go to France by the Swiss road because the Imperial ambassador at Venice suspects him and has had the other road watched; that ambassador had urged him to go to the French court under colour of trade; on the verso a Hungarian matter (Hieronymus, Veszprém) and informants reporting to the Turk. The runs struck through by the King's decipherer are read only in part."
+   },
+   {
+    "doc": "R4232",
+    "label": "R4232, BnF fr. 3045 ff. 42-49, Venice, 5 July 1536",
+    "transcription": "R4232_signs.txt",
+    "decryption": "READING_R4232.md",
+    "summary": "Selve to Francis I on the Emperor's plan against Marseille (key to the kingdom; master of Provence, a land road Italy-Spain, the Mediterranean; the French galleys trapped in the port under the guns of La Garde), de Vaulx's advice to send the fleet towards Naples, La Forest's news from the Porte of an open breach with the Emperor, and the Pope's refusal of tenths to Charles. Four runs glossed by the King's decipherer agree with the reading."
+   }
+  ],
+  "key_file": "KEY.md"
  }
 }

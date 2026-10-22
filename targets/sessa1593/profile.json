@@ -278,6 +278,12 @@
    "kind": "verification",
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): no. 68 (Ibarra, Paris, 10 Jul 1593), in the Feria-Mansfeld cipher, moved to ibarra1593 with its files (ct68.txt, keyM.tsv, dec68.py, anneal68.py, fill68.py, reading68.md; its sense.tsv rows to sense68.tsv). measure_sense.py rerun on nos. 45/79/47: 1212/1310 = 0.925.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reading45.md / reading79.md / reading47.md (cipher and reading line by line) and the re-transcription sense.tsv; key key92.tsv",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -340,6 +346,48 @@
     "role": "key or decipherment used",
     "note": "the office's own key at BnF fr. 3995 f. 97 (DECODE R4076-R4077) and the interlinear gloss on no. 47"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "no45",
+    "label": "fr. 3983 no. 45, f. 98: Miranda to Feria, Naples, 25 Feb 1593",
+    "transcription": [
+     "reading45.md",
+     "sense.tsv"
+    ],
+    "decryption": [
+     "reading45.md",
+     "sense.tsv"
+    ],
+    "summary": "The Conde de Miranda, at Naples, to the Duque de Feria, in the Spanish syllabic cipher of 1592-93: advice on a confidant to be used 'con este achaque', a business 'a costa de la bolsa', and a request that a person be chosen through whom he can be written to without it being understood. Read line by line with the office key (BnF fr. 3995 f. 97); reading45.md gives cipher and reading per line, sense.tsv the 5 Oct re-transcription with its scoring."
+   },
+   {
+    "doc": "no79",
+    "label": "fr. 3983 no. 79, f. 162: Sessa to Diego de Ibarra, Rome, 11 Mar 1593",
+    "transcription": [
+     "reading79.md",
+     "sense.tsv"
+    ],
+    "decryption": [
+     "reading79.md",
+     "sense.tsv"
+    ],
+    "summary": "The Duque de Sessa, at Rome, to Diego de Ibarra, wholly in cipher: 'de ver los testemonios que a todos levantan ... los que bivimos en Roma', the election and 'diversas pretensiones', 'no puedo dexar de hazerlo, a lo menos, de que no esten ministros conformes'. Read line by line with the office key (BnF fr. 3995 f. 97); unresolved groups marked."
+   },
+   {
+    "doc": "no47",
+    "label": "fr. 3984 no. 47, f. 108: Sessa to Philip II, Rome, 30 June 1593 (copy)",
+    "transcription": [
+     "reading47.md",
+     "sense.tsv"
+    ],
+    "decryption": [
+     "reading47.md",
+     "sense.tsv"
+    ],
+    "summary": "A copy of Sessa's despatch to Philip II, with the beginning of a contemporary decipherment written above the cipher lines in lighter ink ('por via de mar ... difiriendo de dia en dia'); read with the office key, which agrees with the gloss wherever both survive."
+   }
+  ],
+  "key_file": "key92.tsv"
  }
 }
