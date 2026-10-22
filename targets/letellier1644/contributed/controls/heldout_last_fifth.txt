@@ -1,0 +1,14 @@
+# BnF Baluze 103 f.50r（c111）・f.50v（c112）の暗号文。記号名は SIGNS.md。2026-10-20、原寸の画像を目視で書き起こし（1人、1回）
+# =N は上に横線のある語の符号、[語] は平文で書かれた語、cut は綴じ目で切れて読めない記号
+# 注：ꝭꝭ（ff）と Ⱨ（H）、mm と m、ꝭʒ（hz）と ϭ（sg）、× の2形は見分けが難しく、文脈で選んだ箇所がある（docs/READING.md の注）
+# 2026-10-20 修正：別の AI（Codex）3回の書き起こしとの照合で、記号そのものの違いを直した（6→sg 10か所、y→z7 9か所、2 4→24 2か所、r06 の 2 3hat→23hat、v06 の a quoy は平文、r13 の sg を削除）。照合前は data/transcription_f50_before_xcheck.txt。詳しくは second/RESULT.md
+# 2026-10-20 修正：Codex 5回の投票（second/vote.tsv）で多数が違った15か所を画像で見直し、4か所を直した（r03 =81→81、r04 xt→xx、r17 の13番目 u→n、v04 の3番目 u→n）。second/VOTE.md
+# 2026-10-20 修正：r09 の16番目 ae→xx（横線の通った曲がった x。r12 の5番目と同じ形で、値 c）。鍵の y の主な値を、友清氏の表どおり g に直した
+# 2026-10-20 修正：mz を、尾に横線のあるもの（mz＝s、友清氏の表の s の列）と、横線のない巻いた尾のもの（mi＝i、表の i の列）に分けた（11か所を mi に。形は画像で1つずつ見た：second/RESULT.md）
+# 2026-10-20 修正：画像で確かめられたときだけ直すことにして、Codex の照合で 6→sg に直した10か所を画像で見直した。小さく上に寄った σ と確かめられた r18・v04 の2つを残し、普通の 6 と見分けのつかない8つ（r11・r12・r15・v01・v05・v08・v10・v12）を 6 に戻した（second/CORRECTIONS.md）
+v07 mm ff g mz q H z7 a bb 20 14 a hz =11 Lx 20 10 zx 12 ff
+v08 pb u hz 19 22 u mi 6 14 6 =12 19 b 10 z7 t u R u [消] 12 19
+v09 14 a ct m zx pb xx 14 9 12 H m k u f 6 q 19 x ff m hz
+v10 8 5 9 6 22 m beta 12 6 u th7 23 14 9 R 3 th =11 12 14 19 pb
+v11 21 14 9 14 12 dl z7 hz mi 21 m u 8 u 6 10 a beta u g 6
+v12 12 6 7 th 8 dl mi 6 x ct q 6 R 2 t th m 10 a hz
