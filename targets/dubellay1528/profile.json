@@ -116,7 +116,8 @@
    "kind": "verification",
    "what": "Split from the former combined target dubellay (catalogue item 4) under the one-key rule (George Lasry, 14 Oct 2026): the 28 Oct 1528 letter is in du Bellay's first cipher; the 1529 letters are in Bayonne's cipher of 1529 and keep dubellay. DECODE images of R4254 and R2287 fetched; Bourrilly's note on the cipher read.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Bourrilly and de Vaissière 1905 no. 156 linked on archive.org; no ciphertext transcription exists (project work).", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -154,6 +155,15 @@
     "role": "pointer",
     "note": "GL.htm: Lasry's key and its fit to Clair. 328 f. 291",
     "source": "cryptiana GL.htm"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "28oct1528",
+    "label": "28 Oct 1528, fr. 3077 no. 23 (Bourrilly and de Vaissière 1905, no. 156)",
+    "decryption": "https://archive.org/details/ambassadesenangl00dube/page/430/",
+    "summary": "Jean du Bellay to Montmorency from London, 28 Oct 1528, in his first cipher: the clear text covers money he cannot get, Montpezat's coming and Campeggio's reception by Henry VIII; the cipher runs say that, if the divorce and remarriage go ahead, the Queen has said the Emperor will never stop until he has ruined the King of England, and suggest working through the Duke of Gueldres or Margaret of Austria while not trusting the Pope.",
+    "note": "Decryption = Bourrilly and de Vaissière, Ambassades en Angleterre de Jean du Bellay (1905), no. 156, pp. 430-434 (cipher passages in italics), linked on archive.org; not yet copied into the folder. No transcription of the ciphertext (about fifteen lines on p. 146, DECODE R4254 images): project work."
    }
   ]
  }

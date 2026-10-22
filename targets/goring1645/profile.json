@@ -101,7 +101,8 @@
    "kind": "control",
    "what": "Applied Lasry's key to FL's raw transcription (check.py) independently of his plaintext; reads the same English, misses only run-together tokens.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ciphertext.txt (FL's DECODE transcription); Lasry's DECODE plaintext copied from NOTES into texts/R932_decryption.md.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -117,6 +118,16 @@
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "key 'TNA SP106-3' and plaintext on DECODE R932 (2020-10-23)", "date": "2020-10-23", "source": "DECODE R932"},
     {"who": "decode", "role": "transcription", "note": "FL's raw transcription on DECODE (D2358)", "source": "DECODE R932, D2358"}
+  ],
+  "texts": [
+   {
+    "doc": "R932",
+    "label": "R932, to General Goring, 5 June 1645",
+    "transcription": "ciphertext.txt",
+    "decryption": "texts/R932_decryption.md",
+    "summary": "A letter signed '<104> Yorke', 5 June 1645, for General Lord Goring: the writer asks that his excuses be made to 'his Highness' (presumably the Prince of Wales or Rupert), who may not be able to decipher his cipher, and reports that the garrison is besieged on all sides and will perish without relief soon. The garrison is not identified.",
+    "note": "Decryption is George Lasry's, as quoted in NOTES.md from DECODE R932 (D3077); the DECODE text files themselves are git-ignored. Transcription is FL's DECODE transcription (D2358), numbers only."
+   }
   ]
  }
 }

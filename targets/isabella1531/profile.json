@@ -113,7 +113,8 @@
    "kind": "literature search",
    "what": "Grepped the cached Tomokiyo page (targets/vasto1527/prior/spanish2C_now.htm) for R9955/R9956: both deciphered at the time on separate sheets, R9955 printed in Luo 2021 p. 285; R9956 not from Isabella.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries added with summaries only: neither letter's cipher nor its contemporary decipherment (separate sheets, images not viewed) is transcribed, and Luo 2021 (R9955) has no link.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -128,6 +129,20 @@
     {"who": "contemporary", "role": "prior solution", "note": "both letters deciphered at the time on separate sheets"},
     {"who": "tomokiyo", "role": "identification", "note": "identified R9955 (Charles V to Isabella, 30 Apr 1532) and R9956 (Cobos, 11 Jan 1531) as read at the time", "source": "cryptiana, Spanish ciphers of Charles V"},
     {"who": "luo", "role": "prior solution", "note": "R9955 printed in her thesis p. 285", "date": "2021", "source": "Luo (2021), thesis, Universitat de València, p. 285"}
+  ],
+  "texts": [
+   {
+    "doc": "R9955",
+    "label": "R9955, Charles V to Isabella, Regensburg 30 Apr 1532 (AGS Estado 496 ff. 195-196)",
+    "summary": "Charles V at Regensburg to the Empress Isabella, 30 April 1532 (DECODE has it as Isabella to Charles, 1531), in the general cipher AGS Estado leg. 1.1.1 doc. 112; deciphered at the time on a separate sheet, and printed by Wanruo Luo (2021) p. 285.",
+    "note": "Missing: no transcription and no decryption in the repository. The decipherment is on a separate sheet (images not viewed; project work), and Luo's modern edition (doctoral thesis, Universitat de València 2021, p. 285) has no link found."
+   },
+   {
+    "doc": "R9956",
+    "label": "R9956, Cobos? to Juan Vázquez de Molina?, Brussels 11 Jan 1531 (AGS Estado 496 ff. 205-206)",
+    "summary": "A letter from Brussels, 11 January 1531, catalogued by DECODE as Isabella to Charles V; Tomokiyo reads the signature as Francisco de los Cobos ('Covos Comendador Mayor') and the addressee 'muy noble señor sobrino' as probably Juan Vázquez de Molina. Same general cipher, deciphered at the time on a separate sheet.",
+    "note": "Missing: no transcription and no decryption. The contemporary decipherment is on a separate sheet in the images, not viewed or transcribed (project work); not known in print."
+   }
   ]
  }
 }

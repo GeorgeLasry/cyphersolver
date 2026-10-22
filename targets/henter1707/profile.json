@@ -102,7 +102,8 @@
       "kind": "verification",
       "what": "Checked the closing formula against R533: wi6xi2i4 = Felséged, with the same substitution recurring across the three Hentér letters.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the interlinear decipherment copied verbatim from NOTES into texts/mnl-g15-d80-f38_decryption.md; no cipher transcription exists (project work).", "result": "partial"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -114,6 +115,15 @@
     "notes": "The historical decipherment covers the full cipher and makes the message's substance clear. About one fifth of a publication-quality diplomatic transcription remains uncertain because the interlinear hand overlaps the cipher, not because the cryptographic values are unknown.",
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear Hungarian decipherment on fol. 38"}
+    ],
+    "texts": [
+      {
+        "doc": "mnl-g15-d80-f38",
+        "label": "R496, Hentér to Rákóczi, Constantinople 8 July 1707",
+        "decryption": "texts/mnl-g15-d80-f38_decryption.md",
+        "summary": "Mihály Hentér, Rákóczi's envoy at Constantinople, to Ferenc Rákóczi II, 8 July 1707: the pasha of Belgrade received Rákóczi's gift favourably and offered troops, gunpowder and grain if Rákóczi sent six or seven thousand men against the Serbs; Hentér pressed for the deputation to be heard by the grand vizier, whose audience was delayed amid confusion in the capital; he closes with a request about the liberation of a captive.",
+        "note": "Decryption = the interlinear Hungarian, normalized, copied from NOTES.md; some middle clauses are uncertain or unread (need a Hungarian palaeographer). No transcription of the cipher signs (project work); the archive does not allow the scans to be republished."
+      }
     ]
   }
 }

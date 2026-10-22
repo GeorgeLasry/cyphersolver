@@ -135,7 +135,8 @@
    "kind": "verification",
    "what": "Page split under the one-key rule (George Lasry, 14 Oct 2026): Erving's 24 Mar 1807 letter, in Pinckney's legation code (the = 1651), had shared the page legation.html with Adams's No. 88 in a different code (the = 1385); it now has its own page erving1807.html, card, badge and credits line. A reveal passage was built with the Pinckney key rebuilt in erving1807aug (build_reveal.py): 85 of the 97 groups of the Hanover runs have a value there.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription and Madison's decode erving_groups.txt; the project's corrections copied from NOTES into texts/no21-24mar1807_corrections.md; Founders edition linked; key pairs copied from NOTES into texts/key.md, with the sibling's rebuilt Pinckney key.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -166,6 +167,24 @@
     "role": "key or decipherment used",
     "note": "Madison's interlinear decode (printed PJM-SS 13:529-31) and Pinckney's decoded despatches"
    }
+  ],
+  "texts": [
+   {
+    "doc": "no21-24mar1807",
+    "label": "Erving to Madison, Madrid 24 Mar 1807, No. 21",
+    "transcription": "erving_groups.txt",
+    "decryption": [
+     "erving_groups.txt",
+     "texts/no21-24mar1807_corrections.md",
+     "https://founders.archives.gov/documents/Madison/02-13-02-0559"
+    ],
+    "summary": "George W. Erving, US chargé at Madrid, to Secretary of State Madison, 24 March 1807, in Pinckney's legation code: the Prussian chargé reports a secret meeting with the Prince of the Peace, who says Bonaparte offered him the Electorate of Hanover and dreams of exchanging it for Gibraltar; Erving reads the offer as a French move to weaken Spain and bind the Prince to France. Madison's interlinear decode is the reading; the project closed its holes.",
+    "note": "erving_groups.txt holds the code groups run by run with Madison's decode beside them; the corrections file gives the project's readings at his holes and slips. The full letter with the decode is in the modern edition PJM-SS 13:529-31 (Founders Online), linked, not copied."
+   }
+  ],
+  "key_file": [
+   "texts/key.md",
+   "../erving1807aug/key_pinckney.tsv"
   ]
  }
 }

@@ -58,7 +58,8 @@
  "solution": [
   {"date": "2026-09-14", "kind": "literature search", "what": "Found the target solved by David Vierra (May 2023): two alternating alphabets, even-length words reversed.", "result": "worked"},
   {"date": "2026-09-14", "kind": "verification", "what": "Re-encrypted the claimed plaintexts (verify.py): no. 3 228/231 positions match (one-letter slip and a transposed pair); no. 2 first 118 characters exact, 208/261 overall, mismatches explained by an alternation break and the encoder's wording of line 27.", "result": "worked"},
-  {"date": "2026-09-14", "kind": "reading", "what": "Independent decryption from the ciphertexts with the published alphabets and dictionary Viterbi segmentation (decrypt.py) recovers both plaintexts, garbling only at the encoder's slips.", "result": "worked"}
+  {"date": "2026-09-14", "kind": "reading", "what": "Independent decryption from the ciphertexts with the published alphabets and dictionary Viterbi segmentation (decrypt.py) recovers both plaintexts, garbling only at the encoder's slips.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertexts copied from verify.py into texts/no2|no3_transcription.txt; decrypt.py output copied verbatim from NOTES into texts/no2|no3_decryption.md.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -70,6 +71,22 @@
   "notes": "Solved by Vierra 2023; the published key and readings were confirmed here, nothing added. README lists it among entries 'solved by others with nothing to add here', not counted in the results. The folder has no profile-relevant fraction file; fraction_read not recorded.",
   "credits": [
     {"who": "vierra", "role": "key or decipherment used", "note": "solution of May 2023; key re-applied and confirmed", "date": "2023-05", "source": "https://codewarrior0.github.io/cipher-blog/2023/05/27/feynman-solved.html"}
+  ],
+  "texts": [
+   {
+    "doc": "no2",
+    "label": "Feynman cipher no. 2",
+    "transcription": "texts/no2_transcription.txt",
+    "decryption": "texts/no2_decryption.md",
+    "summary": "Feynman cipher no. 2 is lines 19-32 of A. E. Housman's 'Terence, this is stupid stuff' (A Shropshire Lad LXII), enciphered with two monoalphabetic alphabets alternating word by word, even-length words written backwards and word boundaries dropped; solved by David Vierra in May 2023 and verified here."
+   },
+   {
+    "doc": "no3",
+    "label": "Feynman cipher no. 3",
+    "transcription": "texts/no3_transcription.txt",
+    "decryption": "texts/no3_decryption.md",
+    "summary": "Feynman cipher no. 3 is the opening of Feynman's paper 'Atomic Theory of the lambda Transition in Helium' (Phys. Rev. 91, 1291, 1953), in the same two-alphabet system; solved by David Vierra in May 2023 and verified here."
+   }
   ]
  }
 }

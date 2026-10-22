@@ -120,7 +120,8 @@
    "kind": "solver", "technique": ["statistical test"],
    "what": "Blind recovery from ciphertext using word boundaries: 31 of 34 symbols, with six matched controls.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ciphertext.txt (Tomokiyo); decryption: NOTES section 2 reading copied into texts/13may1644_decryption.md, with Pitt's decoder output and README (edited reading beside the earlier Lasry/Biermann reading supplied by Britland).", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -139,6 +140,20 @@
     {"who": "lasry", "role": "prior solution", "note": "deciphered the passage after Britland's 2013 article; credited in Pitt's repository", "published": false},
     {"who": "biermann", "role": "prior solution", "note": "deciphered the passage independently; credited in Pitt's repository", "published": false},
     {"who": "tomokiyo", "role": "transcription", "note": "transcription of the ciphertext (blog, 21 Sept 2021), used verbatim", "date": "2021-09-21"}
+  ],
+  "texts": [
+   {
+    "doc": "13may1644",
+    "label": "Forster papers, 13 May 1644",
+    "transcription": "ciphertext.txt",
+    "decryption": [
+     "texts/13may1644_decryption.md",
+     "src/pitt/decoder_output.txt",
+     "src/pitt/README.md"
+    ],
+    "summary": "A ciphered French passage dated 13 May 1644 in the papers of Sir Richard Forster (Val-d'Oise 68.H.8): spiritual counsel that there is no cause for scruple, and that the correspondent should take the ways of prudence to preserve his life, the better to serve God and his brethren, weighing whether it is better to act or to endure. Recipient not established.",
+    "note": "Decryption = the project's literal decode with Pitt's key (copied from NOTES), Pitt's decoder output, and Pitt's README with his edited reading beside the earlier reading Britland supplied (Lasry's and Biermann's work, which is not in the repository; only the variant phrases quoted there are known). Transcription = Tomokiyo's, from Britland's typeset text; no manuscript image."
+   }
   ]
  }
 }

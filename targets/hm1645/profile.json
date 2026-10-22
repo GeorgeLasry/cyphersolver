@@ -175,7 +175,8 @@
    "kind": "verification",
    "what": "Split from the former combined target hm1645 under the one-key rule (George Lasry, 14 Oct 2026): R785, R790, R923 (TNA SP 106 key) stay here; R787 (SP106-2), R924 (SP106-8) and R929 (SP106-5) became sp106r787, sp106r924, sp106r929. Folder, profile, page and ledgers separated; earlier steps are kept as recorded.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions (Pettersson) and decryptions (Lasry) linked on DECODE R785, R790, R923; the files stay git-ignored in decode/ as DECODE's and Lasry's work.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -222,6 +223,32 @@
     "role": "transcription",
     "note": "DECODE ciphertext transcriptions of ff. 213-215, 230-232, 233-234",
     "date": "2019"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R785",
+    "label": "R785, St Germain, 1 Sept 1645 (ff. 213-215)",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/785",
+    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/785",
+    "summary": "A letter from Henrietta Maria's household at St Germain to Charles I, 1 September 1645, signed '120', reporting that the Queen is perfectly recovered; in English, in the 'TNA SP 106' cipher whose key and plaintext George Lasry reconstructed (DECODE, 2020).",
+    "note": "On the DECODE record: Sofia Pettersson's transcription (D1809) and Lasry's interlinear cipher/plaintext (D3060) and plaintext (D3061). Kept git-ignored here as DECODE's and Lasry's work; 58 nomenclator numbers and 11 low figures are left open in his reading."
+   },
+   {
+    "doc": "R790",
+    "label": "R790, St Germain, 22 Sept 1645 (ff. 230-232)",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/790",
+    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/790",
+    "summary": "A letter from Henrietta Maria's household at St Germain to Charles I, 22 September 1645, on the penal laws and Sir Kenelm Digby at Rome; in English, in Lasry's 'TNA SP 106' key.",
+    "note": "On the DECODE record: Pettersson's transcription (D1815) and Lasry's interlinear and plaintext files (D3065, D3066); kept git-ignored here."
+   },
+   {
+    "doc": "R923",
+    "label": "R923, St Germains, 29 Sept 1645 (ff. 233-234)",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/923",
+    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/923",
+    "summary": "A letter from Henrietta Maria's household at St Germains to Charles I, 29 September 1645, signed '120', on the Duke of Lorraine's 'little remote hopes'; in English, in Lasry's 'TNA SP 106' key.",
+    "note": "On the DECODE record: Pettersson's transcription (D1816) and Lasry's interlinear and plaintext files (D3069, D3070); kept git-ignored here."
    }
   ]
  }

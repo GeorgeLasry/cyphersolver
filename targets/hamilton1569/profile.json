@@ -112,7 +112,8 @@
    "kind": "reading",
    "what": "Transcribed the decipherment (ff. 74r-v, 53 lines) and the clear opening and close from strip crops of the full-resolution scans; listed the code signs the decipherer left unresolved.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption reading.md (the contemporary decipherment, transcribed in full); the cipher on ff. 73r-v was never transcribed (project work).", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -126,6 +127,15 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment bound as ff. 74r-v, transcribed in full"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Mary-Hamilton key (mary.htm, filed on DECODE R8347), checked on the first cipher line", "source": "cryptiana mary.htm; DECODE R8347"}
+  ],
+  "texts": [
+   {
+    "doc": "R8347",
+    "label": "R8347, Mary to Archbishop Hamilton, Bolton 18 Jan 1569",
+    "decryption": "reading.md",
+    "summary": "Mary Queen of Scots, held at Bolton Castle, to John Hamilton, Archbishop of St Andrews, leader of her party in Scotland, 18 January 1569: she has been asked to consent that her son be delivered into Elizabeth's hands, will not do so, and asks her faithful subjects to show they will never agree to such terms; the clear close concerns a commission for Argyll, Eglinton, Cassillis and Boyd.",
+    "note": "Decryption = the contemporary decipherment on ff. 74r-v, transcribed here in full with the clear opening and close (reading.md). No transcription of the cipher signs themselves (ff. 73r-v, about 62 lines): project work."
+   }
   ]
  }
 }
