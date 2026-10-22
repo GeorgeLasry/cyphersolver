@@ -142,6 +142,12 @@
    "kind": "verification",
    "what": "Tally: 983 of 998 cipher signs read as sense; 15 open (3 code groups, 12 signs).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f78_labels.txt and f78_reading.txt; key = Lasry's 2022 sheet GL_BnFfr15564.png plus the values added here, copied from NOTES to texts/key.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -165,6 +171,10 @@
   "notes": "Read with Lasry's key extended; three code groups and twelve signs open.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "2022 fr. 15564 Guise-Mercoeur key (cryptiana GL.htm), extended here", "date": "2022", "source": "cryptiana GL.htm"}
-  ]
+  ],
+  "texts": [
+   {"doc": "f78", "label": "f. 78 (R4158), 16 April 1587", "transcription": "f78_labels.txt", "decryption": "f78_reading.txt", "summary": "Henri, duc de Guise (probably) to his Lorraine cousin the duc de Mercœur, 16 April 1587: he asks Mercœur to put off his decision on going to his government of Brittany until his brother can take the place once Bellièvre arrives, reports that the Duke of Parma's troops cannot stay, and urges settling 'our affairs' and stopping the passage."}
+  ],
+  "key_file": ["GL_BnFfr15564.png", "texts/key.md"]
  }
 }
