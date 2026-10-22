@@ -164,7 +164,7 @@ def page(pages, profiles, reg, dates, version, today):
     models = collections.Counter(m for p in real.values() for m in ((p.get('conditions') or {}).get('models') or []) if isinstance(m, str) and m != 'unknown')
     # scholarship and archives
     builds = sorted([(w, ent) for w, ent in t.items() if reg[w]['kind'] in ('historical', 'archive', 'database')],
-                    key=lambda we: -len(we[1]['targets']))
+                    key=lambda we: (-len(we[1]['targets']), we[0]))     # ties by id: same order on every OS
     q = queue(pages, profiles)
     fq = further(pages)
     # by month: direct contributions from outside, dated by the credit or the page

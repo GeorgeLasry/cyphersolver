@@ -2559,7 +2559,8 @@ def texts_html(page):
         def show(kind, p):
             name = html.escape(pathlib.PurePosixPath(str(p)).name)
             fp = None if str(p).startswith('http') else base / p
-            if fp and fp.is_file() and fp.stat().st_size <= TEXT_INLINE_MAX and fp.suffix.lower() in ('.txt', '.md', '.tsv', ''):
+            # size with LF line ends, so a Windows (CRLF) checkout and the Linux CI build make the same page
+            if fp and fp.is_file() and fp.suffix.lower() in ('.txt', '.md', '.tsv', '') and len(fp.read_bytes().replace(b'\r\n', b'\n')) <= TEXT_INLINE_MAX:
                 body = html.escape(fp.read_text(encoding='utf-8', errors='replace').rstrip())
                 return (f'<details class="ftext"><summary>{kind}</summary><p class="muted"><a href="{link(p)}">{name}</a></p>'
                         f'<pre>{body}</pre></details>')
@@ -3193,7 +3194,7 @@ def process(path):
     s = s.replace('</head>', ICONS + '</head>', 1)
     # page scripts carry a hash of their own content, so an edit reaches browsers without a VERSION bump
     s = re.sub(r'<script src="(secret|cipher-reveal|atlas)\.js(?:\?[^"]*)?"',
-               lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes()).hexdigest()[:8]}"', s)
+               lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes().replace(b"\r\n", b"\n")).hexdigest()[:8]}"', s)
     s = re.sub(r'<script src="site.js[^"]*"></script>\s*', '', s)
     s = s.replace('</body>', f'<script src="site.js?v={VERSION}"></script>\n</body>', 1)
     s = re.sub(r'<body(?![^>]*id=)', '<body id="top"', s, count=1)
