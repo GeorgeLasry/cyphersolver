@@ -124,6 +124,12 @@
    "kind": "literature search",
    "result": "partial",
    "what": "Novelty re-examined. G. Lasry (21 Sept 2026): on cryptiana 'undeciphered' means no interlinear or nearby deciphered copy, not unsolved; unsolved material is on the unsolved page. The key was available (Tomokiyo); the contribution is the transcription and the reading."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reading copied from NOTES.md to texts/f74r_decryption.md; no sign-level transcription of the cipher exists in the folder (the reading was made on the image strips)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -141,6 +147,14 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Mary-Norfolk key reconstructed from ff. 66/69/75, with his partial overlay of f. 74r (cryptiana mary.htm)", "source": "cryptiana mary.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment of f. 66r, used to check the key"}
+  ],
+  "texts": [
+   {
+    "doc": "f74r",
+    "label": "Mary Queen of Scots to Norfolk, 'the 20th' [Feb or Mar 1570], BL Cotton MS Caligula C II f. 74r",
+    "decryption": "texts/f74r_decryption.md",
+    "summary": "Written after Moray's murder at Linlithgow (23 Jan 1570): Mary tells Norfolk she will undertake nothing unless it is safe for them both, urges him to write to the Bishop of Ross and to act through his sister Scrope or others, says Elizabeth blames her for Moray's death, reports rumours of Morton and Lord Talbot, and begs him not to risk writing in his own hand. No sign-level transcription of the cipher exists; the reading was made on the image strips."
+   }
   ]
  }
 }

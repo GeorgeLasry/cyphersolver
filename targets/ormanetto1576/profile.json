@@ -161,6 +161,12 @@
    "what": "The same key reads R116 (ormanetto1573), an independent ciphertext, as Italian.",
    "result": "worked",
    "date": "2026-10-01"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): AJ's token transcription with its decode (dec118.py output, texts/R118_tokens_decode.md) and the project's r118_cipher.txt; reading copied from NOTES to texts/R118_decryption.md; key in ../ormanetto1573/key_cifra_ordinaria.txt",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -183,6 +189,18 @@
   "credits": [
     {"who": "devadas", "role": "key or decipherment used", "note": "Spain nunciature cifra ordinaria (emailed 1 Oct 2026) reads R118", "date": "2026-10-01", "source": "email to the project, 1 Oct 2026"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "the Italian note on the leaf is the decifrato (minus the dateline)"}
+  ],
+  "texts": [
+   {
+    "doc": "R118",
+    "label": "Spain nunciature, 15 Oct [1576 or 1577], ASV Spagna 10 f. 365 (DECODE R118)",
+    "transcription": [
+     "texts/R118_tokens_decode.md",
+     "r118_cipher.txt"
+    ],
+    "decryption": "texts/R118_decryption.md",
+    "summary": "Written 15 October: the nuncio has communicated to Secretary Pérez everything Your Lordship (V.S. Ill.ma) wrote in the cipher of 19 September; Pérez has promised to report it to the King and obtain an answer, which will be sent at once. The clear Italian note on the leaf is the contemporary decipherment, minus the dateline; the year is open (Ormanetto in 1576 or Sega in 1577)."
+   }
   ]
  }
 }

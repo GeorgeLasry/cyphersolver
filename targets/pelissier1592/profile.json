@@ -166,6 +166,12 @@
    "kind": "control",
    "what": "Recurring groups z 6 z, 26 I, z 5 8, z 6 1 tested at every occurrence: z 6 z and 26 I also occur as ordinary letters (z+6 = p: \"pour l'opposer\", \"se pourroit\", \"importunites\"); at the name-like places the context allows Mayenne or the King, so no single value is forced. None counted.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions t46r-t50r (current pass; earlier passes in t*_p2/_p3) and the nine-page reading READING.md; calibrated key GLYPHS.md and decoder table cands.txt",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -210,6 +216,29 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Pelissier key rebuilt from nos. 45/46 (cryptiana league.htm), calibrated and applied here", "source": "cryptiana league.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "clear decipherment of nos. 45/46 on f. 115 (sign calibration) and interlinear glosses on no. 22"}
+  ],
+  "texts": [
+   {
+    "doc": "no22",
+    "label": "Pelissier to Pierre Jeannin, Burgos, 13 Sept 1592, BnF fr. 3982 no. 22, ff. 46r-50r",
+    "transcription": [
+     "t46r.txt",
+     "t46v.txt",
+     "t47r.txt",
+     "t47v.txt",
+     "t48r.txt",
+     "t48v.txt",
+     "t49r.txt",
+     "t49v.txt",
+     "t50r.txt"
+    ],
+    "decryption": "READING.md",
+    "summary": "Pelissier, the League's (Mayenne's) agent at Philip II's court, writes to Jeannin, Mayenne's councillor: his credit has run out and he asks leave to return to France; Idiáquez puts business off, and the King grants him 500 ducats payable in Madrid; at Burgos he argues to Don Juan that Parma's army should have wintered in France, since its return to the Low Countries undid the League's gains. Read in part: deciphered stretches in braces, unrecovered words marked [?]."
+   }
+  ],
+  "key_file": [
+   "GLYPHS.md",
+   "cands.txt"
   ]
  }
 }

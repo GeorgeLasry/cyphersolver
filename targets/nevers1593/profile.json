@@ -180,6 +180,12 @@
    "kind": "verification",
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): the Revol letters in key no. 60 moved to targets/revol1593/ with key60.txt, decode60.py, atlas60.md, the f. 146v/157v transcriptions and f88/. Coverage re-counted on the two Pisany letters from decode_f209.txt and decode_f168.txt: 390 of 391 figure groups resolve in key no. 46.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions ct_3985_f209.txt and ct_3986_f168.txt, decodes decode_f209.txt and decode_f168.txt, and the NOTES readings copied to texts/f209_reading.md and texts/f168_reading.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -225,6 +231,28 @@
     "role": "prior solution",
     "note": "partial readings: passage 1 of f. 209 and line 1 of f. 168",
     "source": "cryptiana"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f209",
+    "label": "Nevers to Pisany, 8 Sept 1593, BnF fr. 3985 f. 209 (copy)",
+    "transcription": "ct_3985_f209.txt",
+    "decryption": [
+     "decode_f209.txt",
+     "texts/f209_reading.md"
+    ],
+    "summary": "During his embassy to Rome for Henri IV's absolution, Nevers writes to Pisany that people were dissuading the King from seeking the Pope's absolution, that he (Nevers) argued there was no need for him to go without it, and that if there is no will to satisfy the Pope one should not go at all."
+   },
+   {
+    "doc": "f168",
+    "label": "Nevers to Pisany, 14 Oct 1593, BnF fr. 3986 f. 168 (copy)",
+    "transcription": "ct_3986_f168.txt",
+    "decryption": [
+     "decode_f168.txt",
+     "texts/f168_reading.md"
+    ],
+    "summary": "Written the day after Possevino's message at Poschiavo: the Duke of Nevers will not be received as ambassador for several reasons; Nevers reports what he was told and his intention to advance and do as he was written, with Cardinal Gondi and the Duke of Mantua named. Read in long stretches; several passages remain garbled by the copyist's figures."
    }
   ]
  }

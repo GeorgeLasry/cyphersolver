@@ -245,6 +245,12 @@
    "what": "measure.py on r116_cipher_v2.txt: A 739/756, B 559/568, 1,298/1,324 = 98.0% read as sense; strictest variant (single-context codes 62, 48, 4̇22, 47/93, 3̇22 also counted unread) 1,258/1,324 = 95.0%. Shuffled letter keys with the codes kept: mean 23.0%, max 32.9% (measure_control.py).",
    "result": "worked",
    "date": "2026-10-05"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): image-corrected r116_cipher_v2.txt and DECODE's r116_cipher.txt; AJ's graded reading reading_aj.txt and dec_aj.py run on v2 saved as texts/R116_decryption_v2.md; AJ's key key_cifra_ordinaria.txt",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -286,6 +292,22 @@
   "provenance": "mixed",
   "credits": [
     {"who": "devadas", "role": "key or decipherment used", "note": "Spain nunciature cifra ordinaria reconstructed (with Claude) from R116/R118 and emailed; applied to the project's transcription and verified", "date": "2026-10-01", "source": "email to the project, 1 Oct 2026"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R116",
+    "label": "Philip II to the nuncio Ormanetto, 1573, ASV Spagna 7 ff. 303r-304r (DECODE R116)",
+    "transcription": [
+     "r116_cipher_v2.txt",
+     "r116_cipher.txt"
+    ],
+    "decryption": [
+     "reading_aj.txt",
+     "texts/R116_decryption_v2.md"
+    ],
+    "summary": "A copy of Philip II's letter to the nuncio with two cipher passages. A: on urging the Emperor his brother to join the new league proposed by the Pope, Philip is sending a special envoy and has ordered fitting representations; His Holiness should do the same. B: he has seen the separate sheet on the affairs of Pitigliano and desires the peace of all Italy, and will do all he can to remove any occasion that might disturb it. Context: Gregory XIII's league against the Turks, which collapsed when Venice made peace in 1573."
+   }
+  ],
+  "key_file": "key_cifra_ordinaria.txt"
  }
 }

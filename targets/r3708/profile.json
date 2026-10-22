@@ -178,7 +178,8 @@
    "what": "Code glosses on f. 139 identify 10 = Espernon, 38 = Garrault, 98 = la paix, 107 = Grand Escuyer, confirm 9 = Guise, 11 = Roy, 24 = Nevers; 10 = Epernon also fits ff. 62 and 133. Gloss over 79 illegible.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 336 tokens, 42 types, fr-1600-letters order 4: reading -2.43 per letter; random keys -5.535 (z 6.8); key annealed onto shuffled ciphertext best -2.972 (mean -3.026, z 12.9); annealer on the real text -2.694. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 336 tokens, 42 types, fr-1600-letters order 4: reading -2.43 per letter; random keys -5.535 (z 6.8); key annealed onto shuffled ciphertext best -2.972 (mean -3.026, z 12.9); annealer on the real text -2.694. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext.txt and ciphertext_f139.txt with reading.tsv and reading_f139.tsv, and the NOTES readings in context copied to texts/f133_reading.md and texts/f139_reading.md; key copied from targets/nevers1588/key.md to texts/key.md", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 336, "types": 42, "tokens_per_type": 8.0, "score": -2.43, "nulls": {"random keys": {"n": 200, "mean": -5.535, "sd": 0.457, "max": -4.477, "z": 6.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.026, "sd": 0.046, "max": -2.972, "z": 12.9, "p": 0.1429}}, "power": -2.694, "verdict": "pass", "notes": "claimed per-occurrence score -2.293; polyphony 0.065; 3 unread tokens left out; annealer on the real text from random keys reached -2.694"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -215,6 +216,29 @@
   "notes": "First reading. Corrects the sibling's code 24 from Navarre to Nevers; f. 139's contemporary glosses confirm the key independently.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherments on f. 131 (key source) and glosses on f. 139 (check)"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "f133",
+    "label": "Paris informant, 6 June 1588, BnF fr. 3976 ff. 133-134 (DECODE R3708)",
+    "transcription": "ciphertext.txt",
+    "decryption": [
+     "reading.tsv",
+     "texts/f133_reading.md"
+    ],
+    "summary": "Paris three weeks after the Barricades: the informant explains why Nevers should not go to the King unsummoned, reports that everyone wants Nevers at court and that Paris is sending deputies to the King; the curés of St André and St Benoît stir up the people, and the new League municipality under the prévôt La Chapelle is steered by Guise's council, while the échevin Cotteblanche refused to let the Arsenal's artillery go to Corbeil without the King's leave."
+   },
+   {
+    "doc": "f139",
+    "label": "Paris informant, 9 June 1588, BnF fr. 3976 f. 139",
+    "transcription": "ciphertext_f139.txt",
+    "decryption": [
+     "reading_f139.tsv",
+     "texts/f139_reading.md"
+    ],
+    "summary": "The prévôt des marchands has returned to the Bastille; notaries seek money at interest guaranteed by Neuilly, Marcel, the prévôt and échevins; the Grand Écuyer courts Guise; it is held certain that the King will grant Guise the lieutenance générale and so there will be peace. Every run carries a contemporary gloss, and all agree with the key."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }

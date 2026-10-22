@@ -266,6 +266,12 @@
    "kind": "solver", "technique": ["frequency analysis", "statistical test"],
    "what": "Retry: 13 July re-decoded with key2 + alpha = r (1573 counts) and with key1573_split2 directly (hand/decode_retry.py). Control on the 16 July block, not held out: 60.3% -> 61.1% (alpha = r), 56.2% (1573 key), chance 12-15%. 13 July glyphs in stretches reading as sense: ~8% lenient, ~1% strict (hand/decode_retry.txt).",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): 9 Sept 1573 cipher f1573/ct + Court decipherment f1573/pt (tail f. 137v / f. 141r not transcribed); 4 Jan 1573 cipher + ciphertext-only decode + Didier print; 13 July 1572 cipher + retry decode; keys 1573 and 1572",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -295,6 +301,54 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "glossed 16 July 1572 letter with its decipherment (f. 64) and the Court's verbatim decipherment of 9 Sept 1573 (ff. 139-141)"},
     {"who": "didier", "role": "key or decipherment used", "note": "Lettres et négociations de Mondoucet t. 1 (1891) pp. 141-142: 4 Jan 1573 printed in clear, confirmed and completed the decode", "date": "1891", "source": "L. Didier, Lettres et négociations de Claude de Mondoucet, t. 1 (1891), pp. 141-142"}
+  ],
+  "texts": [
+   {
+    "doc": "1573-09-09",
+    "label": "Amsterdam, 9 Sept 1573, ff. 135-137 (Court decipherment ff. 139-141)",
+    "transcription": [
+     "f1573/ct/f135r.txt",
+     "f1573/ct/f135v.txt",
+     "f1573/ct/f136r.txt",
+     "f1573/ct/f136v.txt",
+     "f1573/ct/f137r.txt"
+    ],
+    "decryption": [
+     "f1573/pt/f139r_a.txt",
+     "f1573/pt/f139r_b.txt",
+     "f1573/pt/f140v.txt"
+    ],
+    "summary": "Mondoucet reports to Charles IX on Alba's siege of Alkmaar (it can be assaulted from one place only), Alba's recall by the King of Spain, Medinaceli, the King of Poland's passage and Danzig, and a letter from France predicting things greater than St Bartholomew's Day. The Court's verbatim decipherment on ff. 139-141 was typed and aligned against the cipher; the tail (f. 137v against f. 141r) was compared by length only and is not transcribed."
+   },
+   {
+    "doc": "1573-01-04",
+    "label": "Antwerp, 4 Jan 1573, ff. 126v-127v: project's ciphertext-only decode",
+    "transcription": "f1573/ct/f126v_127_v4.txt",
+    "decryption": "f1573/dec_4jan_v5.txt",
+    "summary": "Mondoucet's report from Antwerp on German captains raising men, Alba's wartgeld with the Duke of Brunswick and Saxe-Lauenburg, a hundred thousand crowns at Hamburg, and an Irish bishop kept at Antwerp by Alba for the Ireland practice. No contemporary decipherment survives; the project decoded it ciphertext-only to about 55-60% of letters."
+   },
+   {
+    "doc": "1573-01-04",
+    "label": "Antwerp, 4 Jan 1573: clear text as printed by Didier (1891), t. 1 pp. 141-142",
+    "transcription": "f1573/ct/f126v_127_v4.txt",
+    "decryption": "f1573/pt/f126v_127_didier.txt",
+    "summary": "The same passage in clear from Mondoucet's own letter register at Reims, as printed by L. Didier; it confirms the decode word for word where it read and fills its gaps."
+   },
+   {
+    "doc": "1572-07-13",
+    "label": "Brussels, 13 July 1572, ff. 60-61 (scattered words only)",
+    "transcription": [
+     "hand/ct_f60_split.txt",
+     "hand/ct_f60v_split.txt",
+     "hand/ct_f61_split.txt"
+    ],
+    "decryption": "hand/decode_retry.txt",
+    "summary": "No contemporary decipherment and not in Didier; with the 1572 key fitted on the 16 July crib only scattered words read (about 1-8% of glyphs). The decryption file is the verbatim beam output of the retry."
+   }
+  ],
+  "key_file": [
+   "f1573/key1573_split2.json",
+   "hand/key2.json"
   ]
  }
 }

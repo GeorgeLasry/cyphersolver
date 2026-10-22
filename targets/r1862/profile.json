@@ -216,7 +216,8 @@
    "result": "partial",
    "date": "2026-09-30"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1268 tokens, 153 types, it-cinquecento order 4: reading -1.965 per letter; random keys -3.023 (z 12.3); key annealed onto shuffled ciphertext best -2.332 (mean -2.349, z 38.8); annealer on the real text -2.291. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1268 tokens, 153 types, it-cinquecento order 4: reading -1.965 per letter; random keys -3.023 (z 12.3); key annealed onto shuffled ciphertext best -2.332 (mean -2.349, z 38.8); annealer on the real text -2.291. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription tx/groups.txt and decipherment tx/plain.txt; effective key written from decode.py to texts/key.tsv, with this letter's overrides key_over.json (base key ../r1874/key2.json)", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 1268, "types": 153, "tokens_per_type": 8.29, "score": -1.965, "nulls": {"random keys": {"n": 200, "mean": -3.023, "sd": 0.086, "max": -2.789, "z": 12.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.349, "sd": 0.01, "max": -2.332, "z": 38.8, "p": 0.1429}}, "power": -2.291, "verdict": "pass", "notes": "claimed per-occurrence score -1.959; polyphony 0.005; 12 unread tokens left out; annealer on the real text from random keys reached -2.291"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -264,6 +265,19 @@
   "fraction_read_method": "measured",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "chancery decipherment of the sibling R1874 (Mocenigo, Madrid 1628), aligned to rebuild the key"}
+  ],
+  "texts": [
+   {
+    "doc": "R1862",
+    "label": "Venetian ambassador at Rome to the Doge, 29 April 1628, ASVe Busta 27 f. 354 (DECODE R1862)",
+    "transcription": "tx/groups.txt",
+    "decryption": "tx/plain.txt",
+    "summary": "The ambassador reports his audience with Cardinal Francesco Barberini, who had twice asked whether Palmanova was well fortified and garrisoned and whether the Pontebba pass was secured; the Cardinal's view that the Emperor has too much to do at home and that Wallenstein would not come to Italy without his whole army; and the ambassador's urging that the Pope send a legate to settle the interests of Mantua and Savoy. The opening of the War of the Mantuan Succession."
+   }
+  ],
+  "key_file": [
+   "texts/key.tsv",
+   "key_over.json"
   ]
  }
 }

@@ -134,7 +134,8 @@
    "what": "Nomenclator checked against Wentworth's dispatches in Knowler's Strafforde's Letters (1739): seven of nine codes fixed.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 57 tokens, 36 types, en-1640s order 4: reading -2.277 per letter; random keys -2.961 (z 3.8); key annealed onto shuffled ciphertext best -2.069 (mean -2.119, z -3.6); annealer on the real text -2.113. Verdict: underdetermined.", "result": "partial"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 57 tokens, 36 types, en-1640s order 4: reading -2.277 per letter; random keys -2.961 (z 3.8); key annealed onto shuffled ciphertext best -2.069 (mean -2.119, z -3.6); annealer on the real text -2.113. Verdict: underdetermined.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): letters as printed with the figures, ciphertext.txt; reading copied from NOTES to texts/letters_decryption.md; alphabet and nomenclator copied from NOTES to texts/key_alphabet.md and texts/key_nomenclator.md", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-1640s", "file": "validation.tsv", "tokens": 57, "types": 36, "tokens_per_type": 1.58, "score": -2.277, "nulls": {"random keys": {"n": 200, "mean": -2.961, "sd": 0.179, "max": -2.389, "z": 3.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.119, "sd": 0.044, "max": -2.069, "z": -3.6, "p": 1.0}}, "power": -2.113, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.277; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -2.113"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -144,6 +145,19 @@
   "fraction_read": "unknown",
   "grades": "unknown",
   "verification": ["historical consistency"],
-  "notes": "Two person-codes (185, 149) in one clause unidentified; vowel block boundaries not fixable."
+  "notes": "Two person-codes (185, 149) in one clause unidentified; vowel block boundaries not fixable.",
+  "texts": [
+   {
+    "doc": "letters1634-35",
+    "label": "Lord Maltravers to Ormonde, 13 Sept 1634 and 22 Jan 1634/5 (HMC Ormonde I pp. 28-29)",
+    "transcription": "ciphertext.txt",
+    "decryption": "texts/letters_decryption.md",
+    "summary": "Letter 1: the Earl of Kildare came to England because he was angry with the Lord Deputy (Wentworth), and the King refused to see him because he brought no letters from the Lord Deputy. Letter 2: Sir Piers Crosby's position is likely to go worse; the Lord Deputy has written to Secretary Coke in praise of Ormonde, particularly for his good carriage in the Parliament, and on his motion Ormonde is to be made a councillor. Both match Wentworth's dispatches in Knowler's Strafforde's Letters (1739)."
+   }
+  ],
+  "key_file": [
+   "texts/key_alphabet.md",
+   "texts/key_nomenclator.md"
+  ]
  }
 }

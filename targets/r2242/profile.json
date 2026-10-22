@@ -275,6 +275,12 @@
    ],
    "what": "Outside contribution reviewed (PR #31, WAINUT): seven proposed sign values from shape matches with R1892/R2242 and context (crossed o = zijn, dagger = al, P.S. S = maar, crossed o-slash = voor, H with P/loop = verwacht, psi = over, plain delta = kan). Not measured; the R1892 control (leave-one-out 1-8 tokens, LM rank first at 5 of 47) shows measure_sense.py cannot confirm such values. Kept as proposals; key and outcome unchanged.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions and decrypts p1, p3, p4; WAINUT's proposed values copied from NOTES to texts/wainut_proposals.md for comparison; the letter square and word-sign table copied from apply.py to texts/key_square.md and texts/key_word_signs.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -329,6 +335,39 @@
     {"who": "decode", "role": "pointer", "note": "record note on R2242 asking for a pointer to R1892 (same cipher) and suggesting Prince Frederick as writer"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "clear Dutch written under the cipher lines of page 1, which confirmed the key and fixed a dozen word signs"},
     {"who": "lccompany", "role": "verification", "note": "WAINUT (PR #31): independent reading of R2242 agrees except for a few word signs; proposals not adopted", "date": "2026-10-12", "source": "https://github.com/dbourdeau/cyphersolver/pull/31"}
+  ],
+  "texts": [
+   {
+    "doc": "R2242 p1",
+    "label": "Page 1: cipher with the contemporary clear Dutch written under it",
+    "transcription": "transcription_p1.txt",
+    "decryption": "decrypt_p1.txt",
+    "summary": "Prince Frederick of Orange to his brother the Hereditary Prince, London, 7 May 1795: when the letter has been read the matter is settled; if it does not change, they need not go to sea; if the Hereditary Prince wants anything he need only say so, the writer is at his service, in death or life."
+   },
+   {
+    "doc": "R2242 p3",
+    "label": "Page 3 (17 cipher lines), continued on p. 4",
+    "transcription": "transcription_p3.txt",
+    "decryption": [
+     "decrypt_p3.txt",
+     "texts/wainut_proposals.md"
+    ],
+    "summary": "On the Batavian alliance with France: the émigré troops and dismissed officers are scattered, without cohesion or leader; the ratification of the Treaty of The Hague has been published before it arrived, and De Sitter and Van Grasveld are sent to Paris as ambassadors to carry it. WAINUT's proposed values for open signs (not adopted) are listed separately for comparison."
+   },
+   {
+    "doc": "R2242 p4",
+    "label": "Page 4 (8 cipher lines and P.S.)",
+    "transcription": "transcription_p4.txt",
+    "decryption": [
+     "decrypt_p4.txt",
+     "texts/wainut_proposals.md"
+    ],
+    "summary": "If England persists in not recognising the present government, they will not dare introduce Robespierrism, for which there is much disposition; respects to the whole company; a detailed answer is awaited; greetings to his brother. P.S.: Dankaert is also abroad."
+   }
+  ],
+  "key_file": [
+   "texts/key_square.md",
+   "texts/key_word_signs.md"
   ]
  }
 }

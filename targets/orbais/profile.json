@@ -196,6 +196,12 @@
    "kind": "solver", "technique": ["exhaustive search", "repeat/pattern analysis", "contextual inference"],
    "what": "Lexicon search for patterns ??egre, ???gre, vo?pa??s, ?o?a??s; nothing fits both the values and the context.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher groups no62_cipher.txt; decode62.py output saved as texts/no62_decryption.md; key copied from decode62.py to texts/key.md; the clear text of the letter is not transcribed",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -256,6 +262,16 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial Nevers-Piles table (cryptiana nevers.htm); he had identified no. 62 as in this cipher and read \"Cassin\"; extended here", "source": "cryptiana nevers.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment of the sibling BnF fr. 4715 f. 2 (Cardinal de Guise, 1586)"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "no62",
+    "label": "Letter to the abbé d'Orbais, Rome, 23 Aug [1589], BnF fr. 3413 no. 62",
+    "transcription": "no62_cipher.txt",
+    "decryption": "texts/no62_decryption.md",
+    "summary": "A secretary of Cardinal Pellevé writes from Rome to Jean de Piles, abbé d'Orbais, the League's envoy, with the news of Henri III's death (the Duke of Lorraine's agent writes that the King was killed at the King of Navarre's instigation and the Cardinal de Bourbon proclaimed King in Paris). The letter is almost entirely in clear; its short cipher groups read 'le doien', 'la protection', Mons. Cassin, 'vostre', 'Mr le [?] mon maistre', 'j'ay veu ung advis qui confirme' and the signature Baron. The clear text is not transcribed in the folder."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }

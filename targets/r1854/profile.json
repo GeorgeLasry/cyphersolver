@@ -171,7 +171,8 @@
    "what": "Split from the R1854 entry under the one-key rule (Lasry, 14 Oct 2026): the record's four letters use four ciphers; this entry keeps image 2. Re-count from the 5 Oct 2026 figures: 1,757 of 1,802 signs read as sense (0.975).",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1781 tokens, 51 types, la order 4: reading -2.122 per letter; random keys -4.721 (z 7.5); key annealed onto shuffled ciphertext best -3.037 (mean -3.071, z 40.1); annealer on the real text -2.145. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1781 tokens, 51 types, la order 4: reading -2.122 per letter; random keys -4.721 (z 7.5); key annealed onto shuffled ciphertext best -3.037 (mean -3.071, z 40.1); annealer on the real text -2.145. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass sign transcription p2v3.txt (first pass ct_p2.txt) and the Latin reading reading_p2.md; key key7.txt (keys.txt = key7 with comments)", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 1781, "types": 51, "tokens_per_type": 34.92, "score": -2.122, "nulls": {"random keys": {"n": 200, "mean": -4.721, "sd": 0.347, "max": -3.952, "z": 7.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.071, "sd": 0.024, "max": -3.037, "z": 40.1, "p": 0.1429}}, "power": -2.145, "verdict": "pass", "notes": "claimed per-occurrence score -2.122; polyphony 0.0; 26 unread tokens left out; annealer on the real text from random keys reached -2.145"}, 
   "method": "key recovered from ciphertext-only",
@@ -202,6 +203,22 @@
    }
   ],
   "notes": "Split 14 Oct 2026 from the four-letter R1854 entry; the pooled validation of 11 Oct 2026 was re-run on this key alone.",
-  "credits": []
+  "credits": [],
+  "texts": [
+   {
+    "doc": "R1854-P2",
+    "label": "Unnamed Gonzaga agent to Gianfrancesco Gonzaga, Rome, 9 Aug 1428 (DECODE R1854 image 2)",
+    "transcription": [
+     "p2v3.txt",
+     "ct_p2.txt"
+    ],
+    "decryption": "reading_p2.md",
+    "summary": "Marriage negotiations reported through ser Vittorio and Giovanni de Orlandis: a countess agrees to the match of her daughter; the subjects object that the lord of Mantua is too far away and that 'Carolus est nimis iuvenis ad talia' (Carlo Gonzaga, b. 1417); Antonio Colonna and the cousins of domina Palma are mentioned."
+   }
+  ],
+  "key_file": [
+   "key7.txt",
+   "keys.txt"
+  ]
  }
 }

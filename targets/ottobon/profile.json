@@ -276,6 +276,12 @@
       "kind": "verification",
       "what": "Venetian LM registered in lang/ as it-venezia (source it-relazioni, double weight); dec.py now loads it. Leave-one-page-out calibration against the 981 re-read tokens (ALPHA 0.4, BETA 0.4, CLEN 0.3): 870/981 = 88.7% with the registered model and with the old local table alike. Note: these reference tokens include the crib-fit re-reading, so the figure is not independent of the decoder's channel model; the independent figure is the 89.3% against the 721 hand-read tokens.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): first-pass transcriptions ct_f35r-ct_f38r, page readings rd_f35r-rd_f38r and the joined Italian reading.txt, in two entries for the two pieces; key keys/zifra_prima_R1789.tsv with keys/ottobon_overrides.tsv",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -322,6 +328,46 @@
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "Council of Ten Zifra Prima of 1577-78 (ASVe CX Cifre b. 4 reg. 16 ff. 64-65, DECODE R1789), plus two homophones found here"},
       {"who": "tomokiyo", "role": "pointer", "note": "his description of the Zifra Prima (b. 4 r. 16 f. 64, DECODE R1789) matched the letter's design and led to the key"}
+    ],
+    "texts": [
+      {
+        "doc": "ff35-38",
+        "label": "First piece, ff. 35r-36v: the Senate to Mocenigo, 27 April 1589",
+        "transcription": [
+          "ct_f35r.txt",
+          "ct_f35v.txt",
+          "ct_f36r.txt",
+          "ct_f36v.txt"
+        ],
+        "decryption": [
+          "rd_f35r.txt",
+          "rd_f35v.txt",
+          "rd_f36r.txt",
+          "rd_f36v.txt",
+          "reading.txt"
+        ],
+        "summary": "The Senate tells its ambassador Giovanni Mocenigo that the French ambassador, setting out the troubles and needs of Henry III, asked Venice to help him (with the Emperor) against the imminent danger to the crown, and sends a copy of its answer. Read only in part: ff. 35v-36v are mostly unread because the digits are unresolved on the available images."
+      },
+      {
+        "doc": "ff35-38",
+        "label": "Second piece, ff. 37r-38r: copy of the Senate's answer to the French request",
+        "transcription": [
+          "ct_f37r.txt",
+          "ct_f37v.txt",
+          "ct_f38r.txt"
+        ],
+        "decryption": [
+          "rd_f37r.txt",
+          "rd_f37v.txt",
+          "rd_f38r.txt",
+          "reading.txt"
+        ],
+        "summary": "The Senate assures Henry III of the Republic's affection for the French crown and resolves to interpose its intercession with Sixtus V, so that the Pope will favour the King's just cause in quieting the risings in his kingdom and quenching the fire of war, weeks before the monitorium against Henry III of 24 May 1589."
+      }
+    ],
+    "key_file": [
+      "keys/zifra_prima_R1789.tsv",
+      "keys/ottobon_overrides.tsv"
     ]
   }
 }

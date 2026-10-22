@@ -190,6 +190,12 @@
       "technique": ["key matching"],
       "what": "Project: own decoder written from the stated keys (decode.py, Unihan kTaiwanTelegraph table from targets/sunyatsen/tw.csv) applied to his re-read digits: 2472/2472 groups and 32/32 telegrams identical to his raw texts (共密 555/555, 容密 1306/1306, 辰密 239/239).",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher groups ct_gongmi/rongmi/chenmi.txt; decode.py run over groups.tsv and saved per code as texts/<code>_decryption.md; Dudout's keys copied from NOTES to texts/key.md; his annotated texts and translations linked on his Wenmi pages",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -215,6 +221,33 @@
     "provenance": "contributed",
     "credits": [
       {"who": "dudout", "role": "new cipher with solution", "note": "Three numeric telegraph codes of June–July 1916 (共密, 容密, 辰密): digits re-read on the JACAR scans, keys recovered with Claude (mainly Opus 5.5), translations and historical context", "date": "2026-10-19", "source": "https://bdudout.github.io/wenmi/en/gongmi.html; https://bdudout.github.io/wenmi/en/rongmi.html; https://bdudout.github.io/wenmi/en/chenmi.html; https://bdudout.github.io/wenmi/en/juin1916.html; https://github.com/bdudout/wenmi/tree/main/solver/numeric1916; email 19 Oct 2026", "published": true}
-    ]
+    ],
+    "texts": [
+      {
+        "doc": "gongmi",
+        "label": "共密, 9 telegrams, June-July 1916",
+        "transcription": "ct_gongmi.txt",
+        "decryption": "texts/gongmi_decryption.md",
+        "translation": "https://bdudout.github.io/wenmi/en/gongmi.html",
+        "summary": "Telegrams between Huang Xing's circle in Tokyo and the Shanghai group, intercepted in Japan: among them Huang Xing's five conditions to Li Yuanhong (restore the 1912 Provisional Constitution and the old Parliament, no amnesty, Duan's cabinet to resign, move Wang Zhanyuan, bring the party leaders to Beijing; N17). Key recovered by Brice Dudout; decrypted here with an independent decoder from his digit readings."
+      },
+      {
+        "doc": "rongmi",
+        "label": "容密, 14 telegrams, June-July 1916",
+        "transcription": "ct_rongmi.txt",
+        "decryption": "texts/rongmi_decryption.md",
+        "translation": "https://bdudout.github.io/wenmi/en/rongmi.html",
+        "summary": "Telegrams on the arms bought in Japan for Zhejiang (Governor Lü Gongwang): about 10,000 rifles, mountain guns and machine guns, ammunition and payment before 30 June, loans and tobacco taxes as security; Japan will not lend to Beijing before North and South are unified; 'no legal solution without armed force'; the meeting at Tang's house; late June, Duan back to three delegates per province."
+      },
+      {
+        "doc": "chenmi",
+        "label": "辰密, 4 telegrams, June 1916",
+        "transcription": "ct_chenmi.txt",
+        "decryption": "texts/chenmi_decryption.md",
+        "translation": "https://bdudout.github.io/wenmi/en/chenmi.html",
+        "summary": "Telegrams to the Hunanese group's address at 277 Avenue Joffre, Shanghai, including a Hunan division under Zhao Hengti for Li Yuanhong (N16)."
+      }
+    ],
+    "key_file": "texts/key.md"
   }
 }
