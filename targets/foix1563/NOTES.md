@@ -1,6 +1,13 @@
 # Catalogue 92 (part): Catherine de' Medici to Paul de Foix, 15 Jan 1563, BL Add MS 4136 ff. 148v-149 (DECODE R9241) — NOTES
 
 Status: in progress
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R9241 is **decoded, not read** in both proposed decodes. Beck's French layer gives connected clauses in passages B and D
+("son but seroit de nous faire entrer en quelque debourssement de deniers, dont nous n'avons nule intention") but
+gaps or unresolved letter strings in most sentences of A and C; Nur's v5 rendering is fragments between ellipses.
+Class read in part -> not read, method -> not solved (the de Foix 1565 key match kept as a part); 50.6% (letters in
+corpus words) withdrawn as a reading figure.
 
 Split 14 Oct 2026: R9238 (Coligny, a different cipher) moved to `../coligny1563/`; see below.
 
@@ -104,6 +111,7 @@ Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
 
 ## Remaining gaps
 
+- R9241 (passages 1-4), decoded, not read - blocker: not-attempted; glyph audit of the conflicting values on the images, then build passages A and C into sentences
 - R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4): key identified (de Foix 1565, see above) but the reading is partial; conflicts between the 1565 chart and values fitted on R9241 (r m/d, z p/i, Yb l/u, 3/Z3) and the unvalued 80 and 93 need a glyph audit on the images and a de Foix letter of 1563-64 - blocker: open-codes
 
 ## Escalation

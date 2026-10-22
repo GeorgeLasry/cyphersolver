@@ -1,8 +1,13 @@
 # R1892 — an Orange prince on the émigré "rassemblement", c. 1795 (KHA, Prins Willem V, inv. 339)
 
-Status: read (reclassed 5 Oct 2026 under the project rule that 95%+ read as sense is a full reading: 1,860/1,954 =
+Status: read in part (22 Oct 2026, reading audit; before that: read, reclassed 5 Oct 2026 under the project rule that 95%+ read as sense is a full reading: 1,860/1,954 =
 95.2% read as sense, strict measure, 3 Oct 2026. Was read in part because the Dutch postscript, p2, is 90.7% on its own;
 its recurring word signs, ⊣H 9, hook 7, slash 5, stay open and are listed under Remaining gaps)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: page 1 (French,
+unspaced but clean sentences). **Decoded, not read**: page 2, the Dutch postscript: an open word sign or a bracketed
+conjecture in almost every line. Class read -> read in part; 96.7% / 95.2% are withdrawn as reading figures; 53.9% of
+the cipher tokens are on the page that reads (1,054 of 1,954).
 
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2021 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
@@ -311,6 +316,7 @@ adopted. Two signs for dat (Λ and the flat-legged λ) is our inference; R2242's
 "UE" could equally be "u": either way the sign is the addressee. The values of the second table are context only.
 
 ## Remaining gaps
+- page 2 (Dutch postscript) decoded, not read (900 tokens) - blocker: open-codes; the recurring word signs below stand in almost every line; once they are fixed (or bounded) the postscript is to be word-divided, built into sentences and translated
 - recurring word signs on p2 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4, 8 4, S 3, Y 3, psi 2, phi 2, 7 2, cross 2, bar 2) - blocker: open-codes; jointly scored across all occurrences 3 Oct 2026 (solve_signs.py), no candidate fits every occurrence; 8 = zijn kept at I
 - eleven signs that occur once (3, 8-cross, 9, A, I, Z, check, circle-cross, delta, x on p2; dash on p1) - blocker: no-key-material; a single context cannot fix a word sign, and there is no key sheet, sibling occurrence or printed text
 - page 2 line 24 middle; page 1 line 1 - blocker: illegible; photocopy; the two digit rows drift and several pairs are ambiguous (re-examined 21 Sept and 3 Oct at full resolution: "…gesteld is geweest" fixes only the end of l24)

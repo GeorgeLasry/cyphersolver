@@ -1,6 +1,12 @@
 # Van Reede's despatches from Berlin in the Grand Chiffre, 1787–1788 (DECODE R1026, R1027)
 
-Status: read in part (R1026, R1027 read with the Grand Chiffre R1024; open codes and transcription misreads remain).
+Status: in progress. not read (reading audit, 22 Oct 2026: decoded, not read). Was: read in part (R1026, R1027 read with the Grand Chiffre R1024; open codes and transcription misreads remain).
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R1026 and R1027 are
+decoded, not read**. The Grand Chiffre R1024 fits (the R1028 control decodes word for word), but the decodes of these
+two letters have garbled runs from DECODE's digit misreads and open codes in most sentences: the gist follows (the
+alliance, the King's refusal to guarantee the overseas possessions), the sentences do not. Class now not read, method
+not solved; 447/471 groups with a value is withdrawn as a reading figure.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. This entry joined R1026/R1027
 (William V's 1782 Grand Chiffre) with R1893 (1793), which is in a different marked three-digit code. R1893 is a
@@ -74,6 +80,7 @@ Write-up: [docs/vanreede1787.html](../../docs/vanreede1787.html).
 - 2026-10-14: split; `fraction_read` on this key's letters only: 447/471 (94.9 %).
 
 ## Remaining gaps
+- R1026 and R1027 decoded, not read (471 groups; garbled runs in most sentences; reading audit 22 Oct 2026) - blocker: not-attempted; re-transcribe the groups from the images, re-decode with R1024, write out and translate
 - R1026/R1027 groups 2637, 2800, 3660, 1250, 331, 3160, 3153, 2751, 50 and damaged groups - blocker: open-codes; not in the 1782 R1024 key; 2637/2800/3660 recur, probably names
 - R1026/R1027 garbled passages from DECODE digit misreads - blocker: not-attempted; NOTES say a fresh transcription from the images would clear them; not done
 

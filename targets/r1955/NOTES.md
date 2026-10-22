@@ -5,6 +5,11 @@ Catalogue item 36 (class C, scored by rule). Split on 14 Oct 2026 from `targets/
 stays in `targets/michell1751/` (michell1751.html): a different cipher, with its own page. This entry is R1955 alone,
 in the code Michell used for his own reports.
 
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R1955 is **decoded, not read**: about three quarters of the groups have no value and the decode gives single words and
+fragments. Class read in part -> not read, method -> not solved (WAINUT's envoy-table match kept as a part); 26.4%
+withdrawn as a reading figure. The outcome line below is superseded.
+
 **Outcome: read after matching with a key from external sources, read in part.** WAINUT (PR #29, 11 Oct 2026) found
 that R1955 is in Michell's envoy code and decoded 95 of its 360 groups (26.4%, re-counted 14 Oct 2026 from
 `R1955_reading_line.txt`) with a table taken from the contemporary Dutch decipherments of two of Michell's reports
@@ -87,6 +92,7 @@ King (R1050, R1051); the King's immediate letters (R1957 and the six in Fagel 51
 listed above, the contemporary Dutch decipherments (the Lyonet lead) are the one that worked.
 
 ## Remaining gaps
+- R1955 as a whole, decoded, not read - blocker: no-key-material; see the next line
 - R1955, 265 of 360 groups without a value in the envoy table - blocker: no-key-material; the table comes from two decipherments of Michell's reports (R1050, R1051); further decipherments (probably KHA A31-1181) are not online, a contemporary decipherment of R1955 may be in Nationaal Archief 1.01.50 inv. 159 (not digitised), and ministerial rescripts are not in the Politische Correspondenz
 
 ## Escalation

@@ -199,6 +199,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Bourdeau's transcription (transcription.txt, ct.txt) and WAINUT's (key1751/R1957_tx.txt); WAINUT's group-by-group alignment with PC 5263 (key1751/R1957_decipherment.tsv), the blind v1 decode and alignment; the printed concept linked on archive.org (PC 8 is not copied into the folder); key key1751/key_cabinet_v2_final.tsv and the curated evidence file",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the blind decode and the alignment read through: the decode does not build sentences (about a third of the groups resolved); the reading rests on the printed concept (PC 8 no. 5263). Entry kept with the print as its reading (reviewed B on the print) and the decode noted as decoded, not read; class already solved, method read from existing decipherment unchanged.",
+   "result": "partial",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -212,6 +222,7 @@
   "class": "already solved",
   "key": "partial",
   "fraction_read": "unknown",
+  "fraction_read_source": "Reading audit 22 Oct 2026: the text is read from the print (PC 8 no. 5263), not from the cipher; the blind decode of the cipher with the frozen cabinet key covers about a third of the groups and does not build sentences, so no share of the cipher is counted as read by decipherment.",
   "grades": "unknown",
   "verification": [
    "historical consistency",
@@ -262,6 +273,10 @@
    {
     "doc": "R1957",
     "label": "R1957, Frederick II to Michell, Berlin, 28 Dec 1751 (PC 8 no. 5263)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Graded on the print, not the decode: PC 8 no. 5263 is a continuous French letter, summarised in NOTES (\"What the letter says (from the print)\") at the 19 Sept 2026 session; the alignment shows the dispatched cipher follows the concept with minor deviations. The cipher decode itself does not read (0% clean sentences in the blind decode, docs/_check_reading.py)."},
+    "note": "The reading is the printed text, Politische Correspondenz 8 (1882) no. 5263, pp. 576-577, edited from the concept; it is not transcribed in the repository. The project's own decode of the cipher is decoded, not read: the blind decode with the frozen cabinet key covers about a third of the groups and does not build sentences, and align_R1957.txt is the print aligned group by group with \"?\" in the unresolved blocks.",
+    "reading": "https://archive.org/details/politischecorres08freduoft",
+    "language": "fr",
     "transcription": [
      "transcription.txt",
      "ct.txt",

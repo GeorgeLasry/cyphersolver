@@ -1,5 +1,16 @@
 # Castelcicala (London, Paris) to Naples, 1816–1823: ASNa Esteri 2337 — catalogue 166 and 167
 
+Status: in progress
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+* **Read**: R9571 and R9589 (Paris, Sept and Oct 1823), from their contemporary interlinear decipherments
+  (`transcripts/R9571.txt`, `R9589.txt`), which read as continuous Italian. 244 of 9,428 groups (2.6%). English
+  translations still to be added.
+* **Decoded, not read**: the other 23 despatches. `reading_partial.txt` has unread code groups between nearly every
+  pair of known words (2 of 24 sentences clean, `docs/_check_reading.py`); R9566 p. 3 and R9569 have only fragmentary
+  glosses. The 45-47% figure is key coverage, withdrawn as a reading figure. Method now read from existing
+  decipherment (the two glossed letters); the key rebuilt from adjacent plaintext stays the work done on the rest.
+
 Outcome: read in part (21 Sept 2026). Code structure, correspondents and dates established; key rebuilt from four
 contemporary interlinear decipherments; 45% of the groups in the target letters get a value, but no letter reads
 through. Attempted, open for the rest.
@@ -127,6 +138,33 @@ still short of what a ciphertext-only attack on this code size needs.
 
 ## Remaining gaps
 
+Decoded, not read (reading audit, 22 Oct 2026): unread groups between nearly every pair of words in each; the
+blocker is the code itself (about half the groups have no value, no codebook online).
+
+- R9553 (1 Apr 1816), decoded, not read - blocker: open-codes
+- R9554 (undated), decoded, not read - blocker: open-codes
+- R9555 (3 Jun 1816), decoded, not read - blocker: open-codes
+- R9556 (30 Aug 1816), decoded, not read - blocker: open-codes
+- R9557 (6 Sep 1816), decoded, not read - blocker: open-codes
+- R9558 (4 Oct 1816), decoded, not read - blocker: open-codes
+- R9559 (17 Oct 1816), decoded, not read - blocker: open-codes
+- R9560 (19 Oct 1816), decoded, not read - blocker: open-codes
+- R9561 (30 Nov 1816), decoded, not read - blocker: open-codes
+- R9562 (3 Dec 1816), decoded, not read - blocker: open-codes
+- R9563 (no. 2814), decoded, not read - blocker: open-codes
+- R9564 (no. 3388/3588), decoded, not read - blocker: open-codes
+- R9565 (no. 3721), decoded, not read - blocker: open-codes
+- R9566 (1 Dec 1816; gloss on ten lines of p. 3 only), decoded, not read - blocker: open-codes
+- R9567 (no. 4086), decoded, not read - blocker: open-codes
+- R9569 (4 Sep 1823; syllable gloss with gaps, p. 2 out of focus), decoded, not read - blocker: open-codes
+- R9570 (11 Sep? 1823), decoded, not read - blocker: open-codes
+- R9579 (26 Sep 1816), decoded, not read - blocker: open-codes
+- R9582 (14 Nov 1817), decoded, not read - blocker: open-codes
+- R9583 (3 Apr, year cut), decoded, not read - blocker: open-codes
+- R9584 (13 Jul 1819), decoded, not read - blocker: open-codes
+- R9585 (28 Oct 1819 or 1817), decoded, not read - blocker: open-codes
+- R9587 (23 Oct 1816), decoded, not read - blocker: open-codes
+- R9571, R9589: read from the glosses; English translation not yet written - blocker: not-attempted
 - main-code groups without a value (55% of target groups) - blocker: open-codes; two-part code of ~2,450 groups; 162 values from four interlinear cribs; solve.py LM scoring did not discriminate
 - the 1816-19 Cifra della Segreteria di Stato codebook - blocker: needs-physical-access; not on DECODE (R9532-R9541 are 1859-60 keys); ASNa Esteri
 

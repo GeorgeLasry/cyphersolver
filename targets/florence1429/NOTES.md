@@ -1,5 +1,13 @@
 # ASF, Dieci di Balìa, Responsive 2 no. 171: Galeotto Fibindacci da Ricasoli to the Signoria, 1424
 
+Status: in progress
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+no. 171 is **decoded, not read**. The cipher words are deciphered (97 of 99 tokens valued), but the continuous text in
+`texts/no171_decryption.md` has gaps in nearly every sentence, mostly in the first-pass reading of the clear Italian
+("io sono stato qui mostrato per lettera … di questa …"). Class read -> not read, method -> not solved (the known-key
+work kept as a part); 0.98 withdrawn as a reading figure. Next: re-read the clear text on the image, normalise, translate.
+
 Session of 18 September 2026. Target: DECODE R3754 (`Dieci_di_Balia_Responsive_2_171`, "Non-decrypted", Latin per
 DECODE; actually Italian), old number 168, one page, image fetched with Daniel's DECODE cookie
 (`IMG_R3754_I23011_P.jpg`, 5512 × 3674, git-ignored). Goal set: read it, using the interlinear glosses as seeds.
@@ -175,6 +183,7 @@ should be checked against the rest of the collection before any upload:
 - Siblings R3755-R3757: glossed runs aligned; the letters themselves not yet deciphered end to end.
 
 ## Remaining gaps
+- no. 171 as a whole, decoded, not read - blocker: not-attempted; re-transcribe the clear text of lines 1-3, 8-10, 13-14 on the image, build sentences, translate
 - ⊀ ψ, two signs before SOSPETOSA (no. 171 line 7) - blocker: too-short; one occurrence, no gloss; "e t[ro]p[o]" fits but is not proved
 - ⊡ word sign on line 4, read "il Papa" - blocker: open-codes; not in Gabbrielli's nomenclator, rests on his ṗp̄ mark and context
 - single E before "dicesse" (line 12), read "ella" - blocker: open-codes; word sign from context only

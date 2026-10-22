@@ -11,6 +11,11 @@ with its own page. This entry is the Court symbol cipher no. 60 (Tomokiyo's numb
 state, written in it: fr. 3985 f. 88 (21 Aug), f. 115 (27 Aug, one line), f. 176 (2 Sept, no. 88 with duplicate
 no. 94), fr. 3986 f. 146v (7 Oct), f. 157v (Coire 9 Oct, no. 75), f. 198 (Desenzano 23 Oct, no. 101).
 
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+ff. 88r, 146v and 157v are **decoded, not read**: token-by-token decoder output with a few anchors and nothing between
+them that reads. Class read in part -> not read, method -> not solved (key no. 60 kept as a part); fraction_read 0. The
+outcome line below is superseded.
+
 **Outcome: read with known key, read in part.** Key no. 60 transcribed from the images (17 Sept) and corrected from
 issue #32 (Robert Węglarek, tunarob, 12 Oct 2026). Only fr. 3985 f. 88r gives words: *de absolution*, *le Roy*,
 *qu'il* (shuffle-controlled, P = 0.0002); on f. 146v Tomokiyo's anchors (*l'absolution*, *à la vérité*, *intérêt*)
@@ -118,6 +123,7 @@ worked).
   Not re-checked symbol by symbol here.
 
 ## Remaining gaps
+- ff. 88r, 146v, 157v decoded, not read (one line per passage below) - blocker: illegible; see the lines below
 - fr. 3986 f. 146v, Revol 7 Oct 1593 (nine cipher lines, key no. 60) - blocker: illegible; transcribed at 2.4-3.2x but copyist's cursive forms map to two or three table entries; atlas pass started, not finished
 - fr. 3986 f. 157v, Revol 9 Oct 1593 - blocker: illegible; faded; clear cursive and cipher run together, cipher extent not yet segmented
 - fr. 3985 f. 88r (21 Aug) - read in part (de absolution, le Roy, qu'il); rest of R3-R6 - blocker: illegible; bitonal microfilm copy in the copyist's cursive, the contributor's transcription has variant readings at about one sign in six and no colour scan exists

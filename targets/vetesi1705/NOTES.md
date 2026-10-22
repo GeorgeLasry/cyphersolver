@@ -4,6 +4,11 @@ Status: no write-up. Read at the time: the letter carries a contemporary interli
 runs, and the archive's own note cites it to the printed edition *Ráday Pál iratai* I (1955). Nothing new was read
 here beyond correcting the date.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
+The project holds no reading: the only text is DECODE's transcription, whose rendering of the interlinear is garbled
+Hungarian. The letter was read at the time and is probably printed (Ráday Pál iratai I, 1955, p. 494 n. 1), but
+neither is transcribed here, so the profile is now not read / not solved until the gloss or the print is transcribed.
+
 Catalogue entry 52 (class B, scored by rule): "László Vetési Kökényesdi (alias Casimirius de Miloftzky) to Pál
 Ráday, Ferenc Rákóczi II, 1 Jan 1705". Worked 21 Sept 2026. The images are not in the public domain (Ráday
 Archives), so they are kept in the git-ignored `img/` and not reproduced.
@@ -48,3 +53,6 @@ checked. The interlinear decipherment is enough on its own to make this "read at
 
 Status Partially → Decrypted (interlinear, read at the time), date 9 Jan 1706, sender Vetési Kökényesdi (as
 "Cassimirus Miloftzki"), receiver Ferenc Rákóczi II (kept in Ráday's papers), reference *Ráday Pál iratai* I (1955) p. 494 n. 1 (item 102).
+
+## Remaining gaps
+- R473 decoded, not read: no clean transcription of the contemporary interlinear (reading audit 22 Oct 2026) - blocker: not-attempted; transcribe the gloss from the images (img/, git-ignored) or get Ráday Pál iratai I (1955) p. 494, then translate

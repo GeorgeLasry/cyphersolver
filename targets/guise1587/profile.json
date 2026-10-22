@@ -223,17 +223,27 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): guise1587: f. 119 f119_glyphs.txt + f119_reading.txt, f. 142 f142_pinned.txt + f142_reading.txt; key.md (Lasry's 2022 table with this project's added values).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): f119_reading.txt and f142_reading.txt read through. f. 142 builds sentences with scattered holes (kept read, reviewed B); f. 119 has holes or broken grammar in more than half its sentences (3% of sentences clean by docs/_check_reading.py), relabelled decoded, not read. Class read -> read in part; fraction_read 0.951 -> 0.251.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "George Lasry's 2022 key table on cryptiana GL.htm names fr. 15564 ff. 119 and 142 among the letters it solves; it was applied sign by sign here (beam search over the homophone candidates with a 5-gram model, then line-by-line relabelling against the Gallica images), giving 95.1% of letter signs; no plaintext had been published.",
   "contribution": ["transcription", "decipherment with ambiguous key", "key extended or corrected"],
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "f119_reading.txt and f142_pinned.txt: '|| total unread' per line; code groups counted separately",
-  "fraction_read": 0.951,
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens in the documents that read as sentences, f. 142 = 623 of 2,484 (profile documents); f. 119 (1,861) is decoded, not read. Withdrawn as a reading figure: 0.951 = letter signs read or not doubtful, from f119_reading.txt and f142_pinned.txt ('|| total unread' per line; code groups counted separately).",
+  "fraction_read": 0.251,
   "codes_open": {
    "open": 12,
    "total": 12,
@@ -259,8 +269,8 @@
     {"who": "lasry", "role": "key or decipherment used", "note": "fr. 15564 key table (GL.htm, 29 May 2022), extended by about a dozen values", "date": "2022-05-29", "source": "cryptiana GL.htm"}
   ],
   "texts": [
-   {"doc": "f119", "label": "f. 119 (DECODE R4162), 27 May 1587", "transcription": "f119_glyphs.txt", "decryption": "f119_reading.txt", "summary": "The writer (Guise?) tells Mercœur the levy of reiters is assured: by August two thousand Italian or Albanian lances and four thousand reiters; his secretary has gone to colonel Pfyffer with twelve thousand écus to treat for nine thousand Swiss; the heretics' army (eight thousand reiters, twelve thousand Swiss, lansquenets, four thousand arquebusiers for Châtillon) must be defeated, sparing nothing for the glory of God and the cause."},
-   {"doc": "f142", "label": "f. 142 (DECODE R4165), 20 June 1587", "transcription": "f142_pinned.txt", "decryption": "f142_reading.txt", "summary": "After clear news of Lunebourg with nine thousand horse on the Rhine by 20 July, the cipher says the levy that was to be so far advanced is not, the thousand lances and four thousand reiters are \"ung instable secours\", hasty resolutions force the party to order its affairs less securely than its first designs, and within five or six days the writer hopes to settle the matter with [73], the forces going to find it at Meaux."}
+   {"doc": "f119", "label": "f. 119 (DECODE R4162), 27 May 1587", "transcription": "f119_glyphs.txt", "decryption": "f119_reading.txt", "summary": "The writer (Guise?) tells Mercœur the levy of reiters is assured: by August two thousand Italian or Albanian lances and four thousand reiters; his secretary has gone to colonel Pfyffer with twelve thousand écus to treat for nine thousand Swiss; the heretics' army (eight thousand reiters, twelve thousand Swiss, lansquenets, four thousand arquebusiers for Châtillon) must be defeated, sparing nothing for the glory of God and the cause.", "language": "fr", "state": "decoded, not read", "note": "f119_reading.txt has [?] runs, misplaced nomenclator words or broken grammar in more than half its sentences (ll. 00-03, 11-13, 17-18, 25, 27, 30, 33-38); only the passages on the levies (ll. 04-10, 14-16) build into sentences"},
+   {"doc": "f142", "label": "f. 142 (DECODE R4165), 20 June 1587", "transcription": "f142_pinned.txt", "decryption": "f142_reading.txt", "summary": "After clear news of Lunebourg with nine thousand horse on the Rhine by 20 July, the cipher says the levy that was to be so far advanced is not, the thousand lances and four thousand reiters are \"ung instable secours\", hasty resolutions force the party to order its affairs less securely than its first designs, and within five or six days the writer hopes to settle the matter with [73], the forces going to find it at Meaux.", "language": "fr", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "f142_reading.txt read line by line: ll. 01-15 build French sentences (the levy of a thousand lances and four thousand reiters an unstable help, resolutions taken in haste, going to find [73] at Meaux, closing) with scattered [?] signs and one name code; only l. 00 is a fragment. Audit grade C refined: the C came from f. 119."}}
   ],
   "key_file": "key.md"
  }

@@ -1,6 +1,12 @@
 # BnF fr. 20974 pp. 1-3 (DECODE R2276): a Nevers-Piles cipher letter from Reims on the chapter's postulation, 19 June [1589]
 
-Read in part: 91.8% of 3,920 signs read as sense (measured; 3600/3920 with key_v8, 5 Oct 2026), 88.9% in strict agreement with key_v7. Written up as `r2276`.
+Read in part. Earlier figure: 91.8% of 3,920 signs read as sense (measured; 3600/3920 with key_v8, 5 Oct 2026), 88.9% in strict agreement with key_v7. Written up as `r2276`.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part, 69.3% of
+transcribed signs in lines that read** (2,614 of 3,772, counted per line in t1-t3.txt). p. 1 ll. 1-15 and 27-37,
+p. 2 ll. 4-12 and 22-35 and all of p. 3 build French sentences with scattered `?`. **Decoded, not read**: p. 1 ll. 16-26
+and 38-40, p. 2 ll. 1-3, 13-21 and 36-40, the torn-edge and worst-imaged bands, with a `?` or `[...]` in nearly every
+clause. The 91.8% (signs inside real words) is withdrawn as a reading figure.
 
 
 Catalogue item 194 ("Unknown sender (France?) to Duc de Guise?, 1 Jan 1556"). DECODE R2276: "Non-decrypted, 3 pp.,
@@ -71,6 +77,7 @@ The folder was renamed from `guise1556` (the wrong catalogue date) to `r2276` at
 fr-rome-1600s (word counts >= 2; bigrams >= 2). Page images stay in the original session's img/ (git-ignored).
 
 ## Remaining gaps
+- p. 1 ll. 16-26, 38-40 and p. 2 ll. 1-3, 13-21, 36-40 decoded, not read (holes in nearly every clause; reading audit 22 Oct 2026) - blocker: needs-physical-access; these are the torn-edge lines and the unread words below, which the DECODE and Gallica images do not resolve
 - torn right edge of p. 1 ll. 1-4 and 16-31, and the left margin of p. 2 ll. 1-2, 15-28, 39-40 (about 700 px of text) - blocker: illegible; paper lost, no other copy of the letter
 - ink blot on p. 3 l. 2 (`d F z v - v m H z`) and the stained start of p. 3 l. 3 - blocker: illegible; signs under the stain cannot be told apart on the only image
 - about 25 single-sign `?` in running text (e.g. t1.9 `u`, t1.11 `t`, t1.18 `3`, t1.35 `R`, t1.38 `Y`/`P`, t2.3 `x`/`m`, t2.4 `u`, t2.32 `3`, t2.36 `D`, t3.4 `Z`, t3.7 `3`) - blocker: too-short; one sign each, the sentence reads without it, no value can be proved

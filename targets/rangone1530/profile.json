@@ -219,7 +219,8 @@
    "result": "partial"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 260 tokens, 51 types, it-cinquecento order 4: reading -2.162 per letter; random keys -3.88 (z 6.8); key annealed onto shuffled ciphertext best -2.433 (mean -2.464, z 17.2); annealer on the real text -2.404. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher.txt (both letters, lines A1-A6 and B1-B5), reading.md (both, with translation), key key.json", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher.txt (both letters, lines A1-A6 and B1-B5), reading.md (both, with translation), key key.json", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.md read through. Both cipher insertions build Italian sentences with one-sign holes (A1-A5a; B1-B5); only A6 (12 signs) reads as a fragment. Audit grade C refined to B for both letters; class and fraction_read (0.928, signs in corpus words, both letters reading) unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 260, "types": 51, "tokens_per_type": 5.1, "score": -2.162, "nulls": {"random keys": {"n": 200, "mean": -3.88, "sd": 0.254, "max": -3.215, "z": 6.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.464, "sd": 0.018, "max": -2.433, "z": 17.2, "p": 0.1429}}, "power": -2.404, "verdict": "pass", "notes": "claimed per-occurrence score -2.079; polyphony 0.012; 4 unread tokens left out; annealer on the real text from random keys reached -2.404"}, 
   "method": "key recovered from ciphertext-only",
@@ -273,14 +274,30 @@
     "label": "A. BnF fr. 3070 f. 81r, Venice, 10 Jan 1530",
     "transcription": "cipher.txt",
     "decryption": "reading.md",
-    "summary": "Guido Rangone to Anne de Montmorency: in cipher, that Venice pressed him to enter its service, then sent word to 'Signor Cesare' (Cesare Fregoso, Rangone's new brother-in-law) and made him great offers while Rangone was slighted. The clear rest is news of Venice (the Duke of Urbino, the Turkish envoy, Milan, the Swiss, Genoa's galleys). Section A of reading.md; cipher lines A1-A6 of cipher.txt."
+    "summary": "Guido Rangone to Anne de Montmorency: in cipher, that Venice pressed him to enter its service, then sent word to 'Signor Cesare' (Cesare Fregoso, Rangone's new brother-in-law) and made him great offers while Rangone was slighted. The clear rest is news of Venice (the Duke of Urbino, the Turkish envoy, Milan, the Swiss, Genoa's galleys). Section A of reading.md; cipher lines A1-A6 of cipher.txt.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "reading.md read through: A1-A5a build Italian sentences (he presses [me] to come into their service; he has sent to tell it to Signor Cesare and to make him great offers) with one-sign holes; only the last clause A6 ('la [?]icon puorano a tenderui', 12 of 149 signs) does not read. The low automatic score counts the clear passages and the editorial notes. Audit grade C refined: the cipher insertions are short but read."
+    },
+    "state": "read",
+    "language": "it"
    },
    {
     "doc": "fr3082_f42",
     "label": "B. BnF fr. 3082 f. 42r, Venice, 24 Dec 1529",
     "transcription": "cipher.txt",
     "decryption": "reading.md",
-    "summary": "Rangone to Montmorency in the same cipher: five cipher lines naming 'il Fregoso' and the business he took on 'con spada et cappa', which he never again wanted to ruin; a few signs that occur once stay unread. Section B of reading.md; cipher lines B1-B5 of cipher.txt."
+    "summary": "Rangone to Montmorency in the same cipher: five cipher lines naming 'il Fregoso' and the business he took on 'con spada et cappa', which he never again wanted to ruin; a few signs that occur once stay unread. Section B of reading.md; cipher lines B1-B5 of cipher.txt.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "reading.md read through: B1-B5 build Italian sentences ('il Fregoso ... tolse fare la cosa de [?]en, mai piu volse ruina[r] le cose ben disposte in casa ... e ho una pratica di lei mi dispiacera') with two one-sign holes (de [?]en, il f[?]); 111 of 115 signs in corpus words. Audit grade C refined: the sense of the clause 'hara il f[?] da rovinare' stays approximate, the sentence frame holds."
+    },
+    "state": "read",
+    "language": "it"
    }
   ],
   "key_file": "key.json"

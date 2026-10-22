@@ -189,20 +189,27 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct68.txt; texts/no68_decryption.md is the saved output of dec68.py with fill68.json (all 20 cipher lines), reading68.md the earlier hand reading of ll. 4-10; key keyM.tsv + fill68.json.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/no68_decryption.md and reading68.md read: the decode is a stream of syllables with the three-letter word codes unread in most clauses; a few phrases are intelligible, no sentence can be built (docs/_check_reading.py: 0 of 3 and 14 of 30 sentences clean, the clean ones mostly the clear opening). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key work kept as a part); fraction_read 0.375 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "Tomokiyo's Feria-Mansfeld key image cites this very folio (fr. 3984 f. 145); transcribed to keyM.tsv and applied, it gives Spanish against a shuffled-key control (-2.500 vs at most -3.378), with one value (57 = li) added by constrained fill.",
+  "method": "not solved",
+  "method_basis": "Tomokiyo's Feria-Mansfeld key, which cites this folio, applied (read with known key, recorded under parts), decodes the syllabic figures, but the three-letter word codes that carry much of the sense have no table, and the letter does not build sentences.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.375,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "sense68.tsv (5 Oct 2026, the no. 68 rows of sessa1593's sense.tsv): tokens read only where they form Spanish sense: 224 of 598 groups of ct68.txt (all 20 cipher lines).",
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.375, sense68.tsv (224 of 598 groups of ct68.txt marked as forming Spanish sense), which counted phrases scattered among unread codes.",
   "verification": [
    "matched control",
    "historical consistency"
@@ -240,12 +247,24 @@
      "texts/no68_decryption.md",
      "reading68.md"
     ],
-    "summary": "Ibarra writes from Paris during the Estates of 1593 in the Feria-Mansfeld cipher: the messenger he is despatching, cavalry awaited, 'no estamos desesperados', peril, and help that might come with the cavalry. The three-letter word codes, which carry much of the sense, have no published table and stay unread."
+    "summary": "Ibarra writes from Paris during the Estates of 1593 in the Feria-Mansfeld cipher: the messenger he is despatching, cavalry awaited, 'no estamos desesperados', peril, and help that might come with the cavalry. The three-letter word codes, which carry much of the sense, have no published table and stay unread.",
+    "note": "The decode is a stream of syllables with the three-letter word codes, which carry much of the sense, unread ('to do s a lo so de o di a quo u y no co ti nu a [pra] e s la de'); only a few phrases are intelligible and lines 7-10 do not give continuous Spanish (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    }
   ],
   "key_file": [
    "keyM.tsv",
    "fill68.json"
+  ],
+  "parts": [
+   {
+    "label": "no. 68 (Feria-Mansfeld key applied; text decoded, not read)",
+    "records": "BnF fr. 3984 no. 68, f. 145",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Tomokiyo's Feria-Mansfeld table (keyM.tsv) plus 57 = li gives Spanish syllables against a shuffled-key control; the three-letter word codes are unread, so the decode has holes in nearly every sentence. Decoded, not read (reading audit, 22 Oct 2026)."
+   }
   ]
  }
 }

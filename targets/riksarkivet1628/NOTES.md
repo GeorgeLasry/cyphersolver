@@ -1,5 +1,14 @@
 # Archbishop of Bremen to Johan Adler Salvius, 1631 (Riksarkivet, DECODE R4330-R4331; from catalogue #207)
 
+Status: in progress
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **key recovered, letters
+decoded, not read.** Every figure group of R4330 and R4331 has a value, but `bremen_decoded.txt` leaves the groups as
+unsegmented strings with slips (`<ouolfk>`, `<itslatdgefodert>`, `<euserstege>`) inside a clear German transcribed with
+`?` from phone photographs, with the name numbers (4, 59, 82 ...) left bare. Sentences can be rebuilt only by guesswork
+from the glosses. `outcome.class` read -> not read, method -> not solved, key stays recovered; the 100% figure (groups
+with a value) is withdrawn as a reading figure. Next: build the two letters into sentences and translate them.
+
 Outcome (21 Sept 2026): **key recovered from the interlinear glosses (adjacent plaintext); both letters deciphered in
 full.** Write-up: docs/riksarkivet1628.html.
 
@@ -39,7 +48,7 @@ R4306 deciphered in part by Lasry, sweden4306):
 `solve_num.py` and `qg.py` (the numeric annealer used on R4284 and R4306) stay here as shared tooling for those two
 entries (riksarkivet4284, and the project attempt recorded in sweden4306); `mk_validation.py` writes the Bremen `validation.tsv`.
 
-## Bremen 1631 (R4330, R4331): read
+## Bremen 1631 (R4330, R4331): key recovered, decoded, not read
 Transcribed with the interlinear glosses (`bremen_transcription.txt`). Aligning glossed words to their numbers gave a
 band key: each letter has four consecutive numbers, the bands in a scrambled order:
 
@@ -61,8 +70,10 @@ ravage the Lüneburg country and asks that the Stift be included in the accord i
 
 ## Remaining gaps
 
-None for the Bremen letters: every group has a value; the residue is transcription slips from the phone photographs
-(`occupireh`, `feldlsihen`), and the statistical validation (11 Oct 2026, `validation.tsv`) passes.
+- R4330 and R4331 decoded, not read (reading audit 22 Oct 2026): the decryption is not built into sentences - blocker: not-attempted; segment the decoded groups, correct the slips against the glosses and the images, substitute the name numbers, translate
+
+Key: every group has a value; the residue is transcription slips from the phone photographs (`occupireh`,
+`feldlsihen`), and the statistical validation (11 Oct 2026, `validation.tsv`) passes.
 
 ## Escalation
 - [x] siblings: all 14 records of catalogue 207 opened and sorted; the others are separate entries (above)

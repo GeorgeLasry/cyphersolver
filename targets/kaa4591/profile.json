@@ -433,6 +433,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): latest image transcriptions with the sysA2 sign files, the hand readings r94xx/reading*.txt (R9410 as two letters), the per-letter re-learned keys sysA2/*_g_key.json and the R9427 gloss key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the six readings read through. R9408, R9410 (both letters) and R9413 build sentences with clustered holes (kept read, reviewed B); R9409 (19% of words unread) and R9427 (23%) have holes in most sentences, relabelled decoded, not read. fraction_read 0.898 (words given a reading) -> 0.572 (words in documents that read).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -457,7 +467,7 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.898,
+  "fraction_read": 0.572,
   "notes": "System A′ only (split 15 Oct 2026). 5 Oct 2026: R9413 94.3%, R9408 92.0%, R9410 ff.246-247 (Latin, King John, Buda 30 June 1534) 88.9%, R9409 87.2%, R9410 f.244r 86.1%, R9427 84.3% of words (6,132 of 6,827 = 89.8% overall; the 89.3% given before 15 Oct 2026 was a slip of arithmetic); K = Ferdinand by context. No letter reaches the 95% bar.",
   "verification": [
    "contemporary decipherment",
@@ -505,11 +515,13 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "words read by count.py over the six hand readings (5 Oct 2026): R9413 1553/1647, R9408 1408/1531, R9410 ff.246-247 375/422, R9409 2077/2381, R9410 f.244r 261/303, R9427 458/543; 6132/6827",
+  "fraction_read_source": "Reading audit 22 Oct 2026: words of the documents that read as sentences, count.py totals of 5 Oct 2026: R9413 1,647 + R9408 1,531 + R9410 ff. 246-247 422 + R9410 f. 244r 303 = 3,903 of 6,827; R9409 (2,381) and R9427 (543) are decoded, not read. Withdrawn as a reading figure: 0.898 = words read by count.py over the six hand readings (R9413 1553/1647, R9408 1408/1531, R9410 ff.246-247 375/422, R9409 2077/2381, R9410 f.244r 261/303, R9427 458/543; 6132/6827).",
   "texts": [
    {
     "doc": "R9408",
     "label": "R9408, ff. 236-239, Ofen 8 Feb 1534",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9408/reading.txt read through: P1.07 onward builds Early New High German sentences (the Emperor Sigismund comparison, the Turk's eighty years of conquest, the 250,000 florins sent to Turkey) with scattered {?}; P1.01-06 and a few clauses (P2.06/25-30, P4.16-28) are {?} runs. 170 of 1,528 words unread (11%). Audit C refined: the holes cluster, most sentences build."},
+    "language": "de",
     "transcription": [
      "r9408/transcription_v5.txt",
      "sysA2/r9408_signs.txt"
@@ -520,6 +532,9 @@
    {
     "doc": "R9409",
     "label": "R9409, ff. 240-243, early 1534",
+    "note": "r9409/reading.txt: {?} runs and broken syntax in most sentences (450 of 2,361 words unread, 19%; P1 salutation, P3-P7 names and runs); only passages such as P2.25-35 build",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "r9409/transcription_v3.txt",
      "sysA2/r9409_signs.txt"
@@ -530,6 +545,8 @@
    {
     "doc": "R9410",
     "label": "R9410, f. 244r, 1 April 1535",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9410/reading.txt: from P1.06 the letter builds sentences (King John will make no treaty without the dukes, sworn on his word; closing and date 1 April 1535) with scattered {?} and bracketed doubtful words; P1.03-05 and P1.29-32 are holed. 49 of 304 words unread."},
+    "language": "de",
     "transcription": [
      "r9410/transcription_v3.txt",
      "sysA2/r9410_signs.txt"
@@ -540,6 +557,8 @@
    {
     "doc": "R9410",
     "label": "R9410, ff. 246-247, Buda 30 June 1534 (Latin)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9410/reading_p3p6.txt, King John's Latin letter: P3.03-P4.08 and P4.14-P6.05 read as Latin sentences (the Landgrave, the Duke of Wurttemberg, thanks for the victory, the truce broken by the adversary) with scattered {?}; P4.09-13 and P4.20-24 are holed. 72 of 422 words unread."},
+    "language": "la",
     "transcription": [
      "r9410/transcription_p3p6.txt",
      "sysA2/r9410b_signs.txt"
@@ -550,6 +569,8 @@
    {
     "doc": "R9413",
     "label": "R9413, ff. 252-256, June-July 1534",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9413/reading.txt: P1.01-14 and P2.23-33 read as continuous sentences (the two letters received through Marx Eckel, the war in Wurttemberg) with scattered {?}; the unread words (232 of 1,663, 14%) cluster in the P1 opening, P3.04-12 and the short lines of P6-P8. Audit B for this letter confirmed."},
+    "language": "de",
     "transcription": [
      "r9413/transcription_v4.txt",
      "sysA2/r9413_signs.txt"
@@ -560,6 +581,9 @@
    {
     "doc": "R9427",
     "label": "R9427, f. 287, April 1534",
+    "note": "r9427/reading.txt: {?} runs in most sentences of P1 (P1.03, P1.07-14) and the names of P2 (123 of 542 words unread, 23%); only the news formulae build",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "r9427/transcription_v3.txt",
      "sysA2/r9427_signs.txt"

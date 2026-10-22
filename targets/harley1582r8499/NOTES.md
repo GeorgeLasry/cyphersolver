@@ -1,6 +1,12 @@
 # Nicholas Wotton (Compiègne/Soissons) to Queen Mary, June 1554 (BL Harley MS 1582 ff. 8-10; DECODE R8499)
 
-Status: read in part (written up 22 Sept 2026)
+Status: attempted, open (written up 22 Sept 2026 as read in part; relabelled 22 Oct 2026)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **nothing reads**. The
+R354 key decodes the letter (75.0% firm, 89.4% with tentatives), but `final_v9.txt` has [?n] holes, tentative letters
+or broken grammar in most sentences (10% clean, `docs/_check_reading.py`); only the gist and phrases build. The letter
+is **decoded, not read**: class read in part -> not read, method -> not solved, fraction_read 0.689 -> 0 (0.689 was
+non-null signs judged sense, withdrawn as a reading figure).
 
 DECODE refill catalogue entry 120 "N. Wottoy ? to unknown recipient", Jun 1554 (rule-scored class C). Worked 22 Sept 2026.
 
@@ -304,6 +310,7 @@ Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him
   slips that only the contemporary decipherment (ff. 5r-7v) can settle.
 
 ## Remaining gaps
+- the whole letter decoded, not read (3,152 tokens) - blocker: needs-physical-access; holes in most sentences after eight key/transcription passes (reading audit 22 Oct 2026); the contemporary clear copy, Harley 1582 art. 2 (ff. 5r-7v), is not digitised and would settle it
 
 - Unread, tentative and nonsense stretches, about 31% of non-null signs measured for sense (5 Oct 2026; p1.13 run, p1.24 "(fy)ve hundrid", p2.25 tail, p6.13-14, p3.14) (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24) - blocker: needs-physical-access; the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE and needs a BL imaging order
 - Rare code signs, about 40 (.I, .p, .d, .M, N., R., C_CEDILLA, Q_TAIL, TALL_F_LOOP, CIRC_BIG) - blocker: no-key-material; no entry on R354, the only surviving copy of the key, and no other copy on DECODE

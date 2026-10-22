@@ -243,19 +243,26 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher171.tsv (token list) and TRANSCRIPTION.md; the final 24 Sept decipherment section of READING.md copied to texts/no171_decryption.md (READING.md kept as the working file); key key_extended.md.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/no171_decryption.md read: the cipher runs are deciphered word by word (PAVOLO, MADONNA, CINTADINI, SOSPETOSA ...), but the continuous text has gaps in nearly every sentence, mostly in the first-pass reading of the clear Italian ('io sono stato qui mostrato per lettera … di questa … fatto questa mia'), so the letter cannot be built into sentences or translated (docs/_check_reading.py: 21 of 51 sentences clean). Relabelled decoded, not read; class read -> not read, method read with known key -> not solved (the key work kept as a part); fraction_read 0.98 -> 0.",
+      "result": "failed",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
-    "method": "read with known key",
-    "method_basis": "Gabbrielli's 1863 key for Galeotto da Ricasoli's cipher (ASF key volume, Yale Ilardi reel 58; Meister 1902 p. 50) supplies 72 of the 97 values in no. 171; the other values come from his interlinear glosses on this letter and on siblings R3755-R3757, aligned sign by sign (key_extended.md), a minority, so the method stays known key.",
+    "method": "not solved",
+    "method_basis": "Gabbrielli's 1863 key, extended from his glosses on the siblings, gives a value to 97 of the 99 cipher tokens of no. 171 (key applied, recorded under parts), but the letter as a whole does not yet build coherent sentences: the clear text around the cipher runs is a first-pass palaeographic reading with gaps in nearly every sentence.",
     "contribution": [
       "transcription",
       "key extended or corrected",
       "sender or date identified",
       "catalogue correction"
     ],
-    "class": "read",
-    "fraction_read": 0.98,
+    "class": "not read",
+    "fraction_read": 0.0,
     "grades": {
       "H": 80,
       "M": 14,
@@ -269,7 +276,7 @@
     "notes": "The glosses are Gabbrielli's of 1863, not contemporary. Key state partial: B, H, Q and the signs of eleven unaligned sibling runs lack values; polyphones ᴗ (D/C), # (L/I), π (F/S) rest on one letter each. Clear text partly a first-pass reading.",
     "key": "partial",
     "fraction_read_method": "measured",
-    "fraction_read_source": "targets/florence1429/cipher171.tsv: 99 cipher tokens (letters, nulls, word signs), rows with value '?' counted unread; counted by targets/florence1429/measure171.py",
+    "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.98, from cipher171.tsv (97 of 99 cipher tokens with a value, measure171.py), which measures the key applied to the cipher words, not the letter's sentences.",
     "codes_open": {
       "open": 1,
       "total": 7,
@@ -309,9 +316,21 @@
           "texts/no171_decryption.md",
           "READING.md"
         ],
-        "summary": "Galeotto Fibindacci da Ricasoli, Florence's envoy at Urbino, reports to the Signoria (1424 Florentine style, early 1425) on talks about the Countess (\"Madonna\", Caterina Colonna): he advises that the Dieci send an ambassador, because the Count says Madonna is after all a woman, and suspicious, and proposes that her relatives and the citizens secretly bind themselves whatever she might say."
+        "summary": "Galeotto Fibindacci da Ricasoli, Florence's envoy at Urbino, reports to the Signoria (1424 Florentine style, early 1425) on talks about the Countess (\"Madonna\", Caterina Colonna): he advises that the Dieci send an ambassador, because the Count says Madonna is after all a woman, and suspicious, and proposes that her relatives and the citizens secretly bind themselves whatever she might say.",
+        "note": "The cipher words are deciphered (97 of 99 tokens valued with the known key), but the continuous text has gaps (…, (?)) in nearly every sentence, mostly in the first-pass, unchecked reading of the clear Italian around them; the opening cannot be parsed. Not yet a reading (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "it"
       }
     ],
-    "key_file": "key_extended.md"
+    "key_file": "key_extended.md",
+    "parts": [
+      {
+        "label": "Cipher words of no. 171 (key applied; letter not read)",
+        "records": "DECODE R3754",
+        "method": "read with known key",
+        "extent": "partial",
+        "basis": "Gabbrielli's 1863 table (Yale Ilardi reel 58) extended from his glosses on R3755-R3757: 97 of 99 cipher tokens valued (cipher171.tsv). The cipher words are deciphered; the letter they sit in is decoded, not read, because its clear text is not yet transcribed into sentences."
+      }
+    ]
   }
 }

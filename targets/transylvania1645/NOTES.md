@@ -2,6 +2,11 @@
 
 Status: in progress
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): only **R4940's two
+cipher spans read** ("votumiok", "niert dolog volna", 23 letters). **R4936, R4937 and R4942 are decoded, not read**:
+the mechanical decode and the solver outputs are letter streams with garbled words, no sentences. About 1% of the
+transcribed cipher letters read.
+
 **Split on 14 Oct 2026 (one-key rule, George Lasry).** This target first grouped the ten records R4933-R4942 by their
 DECODE number range. It now keeps the Keresdi Bethlen letters in the alphabet family of R4936/R4940 (R4936, R4940, and
 R4937, R4942, which give fragments under it), plus R4938 and R4939 of the same Keresdi_Bethlen_15 series, which are
@@ -50,6 +55,8 @@ Important transcription correction: a working shared alphabet family has c=p, p=
 
 ## Remaining gaps
 
+- R4936 decoded, not read (about 1,969 cipher letters; unspaced provisional decode with q/g, c/p, i/n open; reading audit 22 Oct 2026) - blocker: not-attempted; re-transcribe on full-resolution crops, re-decode, segment into Hungarian, translate
+- R4937 and R4942 decoded, not read (partial extracts, solver letter streams) - blocker: not-attempted; transcribe the rest and decode under the family key
 Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or uninspected (R4938, R4939), with many spans not attempted. These are NOT established outside blockers; continue work. R4940 still requires prior-art comparison and inclusion in the eventual group writeup. No percentage claimed for the group.
 
 ## Escalation / next work

@@ -314,16 +314,23 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): edition/r9635_f20r.md, r9635_f21.md and read_r9635.md (cipher groups and reading of the lines done), read_r9653.md; key key_codes.tsv with calibration_r9605.md; no full transcription of either letter exists",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). read_r9635.md, edition/r9635_f20r.md, r9635_f21.md and read_r9653.md read: f. 20r is a table of phrase fragments between untranscribed letter runs, R9653's cipher gives one phrase in its foot paragraph; what reads as sentences is the clear text (the Rhodes news, the Pace paragraph on f. 21), not decipherment. Both letters relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.6 (estimated) -> 0.",
+      "result": "failed",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
-    "method": "read with known key",
-    "method_basis": "Tomokiyo's reconstruction of Sánchez's 1522 cipher (cryptiana AlonsoSanchez.htm, 6 Sept 2025), checked against the clerk's full decipherment of R9605, was applied to R9635 and R9653, two letters outside Tomokiyo's coverage.",
+    "method": "not solved",
+    "method_basis": "Tomokiyo's 2025 reconstruction of Sánchez's 1522 cipher, checked against the clerk's decipherment of R9605 and applied to R9635 and R9653 (read with known key, recorded under parts), resolves code-group phrases only; the cipher of neither letter builds sentences.",
     "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
-    "class": "read in part",
-    "fraction_read": 0.6,
+    "class": "not read",
+    "fraction_read": 0.0,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "Not measurable: read_r9635.md and read_r9653.md list resolved code-group phrases only; the spelled-out letter runs are not transcribed, R9653's six-line head paragraph and ff. 21-22/300-301 are untranscribed, so no token base exists. Value from NOTES (share of code groups resolved on the two leaves worked)",
+    "fraction_read_source": "22 Oct 2026, reading audit: neither letter's cipher builds sentences, so nothing counts as read (0; estimated, no token base exists). Withdrawn as a reading figure: 0.6 from NOTES (share of code groups resolved on the two leaves), never measured.",
     "key": "partial",
     "verification": [
       "key confirms",
@@ -371,19 +378,34 @@
           "edition/r9635_f21.md",
           "read_r9635.md"
         ],
-        "summary": "Alonso Sánchez, imperial ambassador at Venice, to Charles V: the money owed by Venice under the treaty ('mas de xv mil ducados', 'allende de los otros xviii mil'), restitution of goods, 'los de esta republica' (calendared by Bergenroth, CSP Spain 2 no. 476). Edited against Tomokiyo's published key; only ll. 1-3, 6, 7, 14, 22 of f. 20r and the opening of f. 21 are given, cipher groups and reading side by side."
+        "summary": "Alonso Sánchez, imperial ambassador at Venice, to Charles V: the money owed by Venice under the treaty ('mas de xv mil ducados', 'allende de los otros xviii mil'), restitution of goods, 'los de esta republica' (calendared by Bergenroth, CSP Spain 2 no. 476). Edited against Tomokiyo's published key; only ll. 1-3, 6, 7, 14, 22 of f. 20r and the opening of f. 21 are given, cipher groups and reading side by side.",
+        "note": "f. 20r: a table of resolved code-group phrases ('continuous sense, not yet a continuous text'); the spelled letter runs between them are not transcribed, so no sentence of the cipher can be built; ff. 20v-22 not done (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "es"
       },
       {
         "doc": "R9653",
         "label": "R9653, Venice, 20 Nov 1522 (RAH Salazar 9/26 ff. 299-301)",
         "transcription": "read_r9653.md",
         "decryption": "read_r9653.md",
-        "summary": "Sánchez to Charles V: the clear middle gives the news of the siege of Rhodes from the Signoria's letters (fifty thousand Turks dead, the defenders hoping for relief); the two cipher lines at the foot are read with the published key; the six-line head paragraph is illegible at DECODE's resolution."
+        "summary": "Sánchez to Charles V: the clear middle gives the news of the siege of Rhodes from the Signoria's letters (fifty thousand Turks dead, the defenders hoping for relief); the two cipher lines at the foot are read with the published key; the six-line head paragraph is illegible at DECODE's resolution.",
+        "note": "The clear middle (Rhodes) reads but is not decipherment; of the cipher, the foot paragraph gives one phrase ('cartas de Francia de xxvi y xxvii del passado') and the head paragraph is illegible (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "es"
       }
     ],
     "key_file": [
       "key_codes.tsv",
       "calibration_r9605.md"
+    ],
+    "parts": [
+      {
+        "label": "R9635 and R9653 (Tomokiyo's key applied; decoded, not read)",
+        "records": "DECODE R9635, R9653",
+        "method": "read with known key",
+        "extent": "partial",
+        "basis": "Tomokiyo's key (cryptiana AlonsoSanchez.htm, 2025) with three numerals added here (cab, cef, cif); phrases resolved, letter runs untranscribed. Decoded, not read (reading audit, 22 Oct 2026)."
+      }
     ]
   }
 }

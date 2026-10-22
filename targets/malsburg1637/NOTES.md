@@ -1,6 +1,11 @@
 # Malsburg 1637: Otto von der Malsburg's cipher letters to Landgrave Wilhelm V (HStAM 4 h Nr. 1411)
 
-Status: read in part (Daniel Bourdeau's numerical cipher: 95.9% of 9,736 cipher tokens; Larry Beck with ChatGPT: separate alphabetic key recovered, substantial German recovered with source and editorial uncertainties; code referents open)
+Status: in progress (was: read in part (Daniel Bourdeau's numerical cipher: 95.9% of 9,736 cipher tokens; Larry Beck with ChatGPT: separate alphabetic key recovered, substantial German recovered with source and editorial uncertainties; code referents open))
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: ff. 12-13, 18,
+23-24, 25 and the alphabetic block (German sentences, codes as name holes). **Decoded, not read**: ff. 3, 14, 15-17,
+28-29 (and the duplicate 30-31), 32-33: open codes, bracketed letters or noise in most sentences. 95.9% (tokens in
+dictionary words) is withdrawn as a reading figure; 43.6% of the tokens are in documents that read (4,468 of 10,246).
 
 The numerical-cipher result below is Bourdeau's work. The contribution integrated on 2 October 2026 concerns
 the separate ten-line alphabetic block of 7/17 January 1637. Its repeating shifts are **4, 5, 3, 6, 2** over
@@ -234,6 +239,7 @@ The alphabetic contribution does not change Bourdeau's numerical-cipher numerato
 fraction or measured coherent fraction is claimed.
 
 ## Remaining gaps
+- ff. 3, 14, 15-17, 28-29 (with duplicate 30-31) and 32-33 decoded, not read (5,778 tokens) - blocker: not-attempted; close up word division, re-check bracketed letters on the images, build sentences around the codes, translate; ff. 32-33 need a new look at the transcription
 - about 40 three-digit codes and name signs (193 tokens: 120, 122, 129, 140, 148, 176, 193, 212 ... V, K, f, 4#, +, AA, GG ...) - blocker: open-codes; mostly single occurrences, five valued from context (128, 130, 188, 253, 273, grade I)
 - alphabetic 43, 45 and LL (three labels, five tokens) - blocker: open-codes; no primary key equation or named parallel, and no demonstrated shared nomenclature with the numerical system; LHA Koblenz 47/4400 remains uninspected
 - alphabetic source alternatives in lines 3, 6, 7, 8, 9 and 10, plus the blot - blocker: illegible; selected 510-position branch and bounded alternatives retained; a human comparison with the original or better authentic imaging is needed to decide ambiguous strokes and the blot's extent

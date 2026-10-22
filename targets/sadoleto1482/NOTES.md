@@ -1,5 +1,13 @@
 # Nicolò Sadoleto, Ferrarese envoy to Matthias Corvinus, Pozsony 1482 (ASMo Ambasciatori Ungheria b. 1/9)
 
+Status: in progress
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. R1101's
+seven-line block (checked against the clear copy 7a) and R1102's passages A-C (D in part) build Italian sentences.
+**R1103 and R1106 are decoded, not read**: R1103 gives one isolated word from the faded block, R1106 only a collation
+of a few clauses with the clear witness 26b. About half the cipher lines read (estimated); the earlier 65% is
+withdrawn as a reading figure. Two gaps below are not-attempted, hence in progress.
+
 Outcome: read in part (updated 21 Sep 2026; write-up docs/sadoleto1482.html revised). Remaining gaps are image-limited. See `review_20260920.md` for the new
 evidence and corrections. R1102 has substantial cipher on the facing manuscript
 page 3 beyond the seven-line block previously read. Its opening `ducati` confirms
@@ -135,6 +143,8 @@ non lassasse pretermittere questa opportunità laquale mai più fo, né forse se
 - The 1479–80 Sadoleto–Naples key (ASMo Cifrario b. 4 fasc. 1, Cremonini n. 39) should be compared with this key.
 
 ## Remaining gaps
+- R1106 decoded, not read (a few collated clauses, [...] between them; reading audit 22 Oct 2026) - blocker: not-attempted; collate the whole page-3 cipher word by word with 26a/26b and build it into sentences
+- R1103 decoded, not read (one word from the faded block; reading audit 22 Oct 2026) - blocker: illegible; see the R1103 line below
 - R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: open-codes; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
 - R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed
 - R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished

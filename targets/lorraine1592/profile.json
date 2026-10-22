@@ -257,21 +257,22 @@
    "result": "partial"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 823 tokens, 68 types, fr-1600-letters order 4: reading -1.635 per letter; random keys -4.932 (z 6.7); key annealed onto shuffled ciphertext best -2.752 (mean -2.841, z 27.0); annealer on the real text -2.321. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): eye transcription ct/no97_eye.txt and the graded re-read ct/no97_reread.txt (5 Oct, reading of record), the running text ct/no97_reading2.md and the clear text; the pair key copied from no97_reading2.md §1 and NOTES §10 to texts/key.md.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): eye transcription ct/no97_eye.txt and the graded re-read ct/no97_reread.txt (5 Oct, reading of record), the running text ct/no97_reading2.md and the clear text; the pair key copied from no97_reading2.md §1 and NOTES §10 to texts/key.md.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). ct/no97_reading2.md §2 and ct/no97_reread.txt read: about one sign in four is unread and nearly every line carries a [?] gap or an unvalued figure; fragments parse ('infiniment mal satisfait du peu d'execution', 'pour y commander et conserver la plaine'), sentences do not (docs/_check_reading.py: 37 of 96 sentences clean in the running text, 0 of 20 in the graded file; only the clear text reads). Relabelled decoded, not read; class read in part -> not read, method key recovered from ciphertext-only -> not solved (key kept as a part); fraction_read 0.766 -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 823, "types": 68, "tokens_per_type": 12.1, "score": -1.635, "nulls": {"random keys": {"n": 200, "mean": -4.932, "sd": 0.495, "max": -3.967, "z": 6.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.841, "sd": 0.045, "max": -2.752, "z": 27.0, "p": 0.1429}}, "power": -2.321, "verdict": "pass", "notes": "claimed per-occurrence score -1.635; polyphony 0.0; 279 unread tokens left out; annealer on the real text from random keys reached -2.321"}, 
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "The reciprocal letter-pair key was recovered by iterated local search on the eye transcription with no key known anywhere (DECODE, Tomokiyo, fr. 3995 key sheets ruled out); the page's clear text (Chasteauvillain) served only as a check, and three figures were read from context.",
+  "method": "not solved",
+  "method_basis": "The reciprocal letter-pair key recovered from the ciphertext alone (recorded under parts; Tomokiyo had broken it in 2025 without publishing a text) decodes no. 97 into fragments with a gap in almost every line; no sentence of the cipher can be built.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "ct/no97_reread.txt (5 Oct 2026 pass) measured by measure_reread.py: cipher tokens (letter signs, special signs, nulls, figures; clear words excluded) in words graded H or C, 844/1,102; measure_sense.py lexicon check: 787/1,102 = 0.714 are attested French words, nulls, figures or joined fragments (difference = spelling variants)",
-  "fraction_read": 0.766,
-  "fraction_coherent": 0.766,
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.766, ct/no97_reread.txt measured by measure_reread.py (844 of 1,102 cipher tokens in words graded H or C; 0.714 by lexicon check), which counted tokens in recognised words, not sentences.",
+  "fraction_read": 0.0,
+  "fraction_coherent": 0.0,
   "codes_open": {
    "open": 10,
    "total": 14,
@@ -326,9 +327,21 @@
      "ct/no97_reading2.md",
      "ct/clear_texts.md"
     ],
-    "summary": "A contemporary copy of Charles III of Lorraine's letter to his son the comte de Vaudémont, with clear French and cipher alternating on the same lines. The Duke is infinitely ill satisfied with the little execution of the promises of pioneers and munitions made to him, urges his son to press the attempt on Chasteauvillain, and writes of putting someone there to command and hold the plain and of bringing his army back to quarters. The volume is the duc de Nevers's intercept and correspondence file for 1591-92."
+    "summary": "A contemporary copy of Charles III of Lorraine's letter to his son the comte de Vaudémont, with clear French and cipher alternating on the same lines. The Duke is infinitely ill satisfied with the little execution of the promises of pioneers and munitions made to him, urges his son to press the attempt on Chasteauvillain, and writes of putting someone there to command and hold the plain and of bringing his army back to quarters. The volume is the duc de Nevers's intercept and correspondence file for 1591-92.",
+    "note": "The running text (ct/no97_reading2.md) has a [?] gap in almost every line, about one sign in four unread ('j'ay esté [?] infiniment [?] mal satisfait [?] du peu d'execution [?] vous'); fragments parse, sentences do not (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    }
   ],
-  "key_file": "texts/key.md"
+  "key_file": "texts/key.md",
+  "parts": [
+   {
+    "label": "no. 97 (pair key recovered; text decoded, not read)",
+    "records": "BnF fr. 3621 no. 97 (DECODE R9449)",
+    "method": "key recovered from ciphertext-only",
+    "extent": "partial",
+    "basis": "reciprocal letter-pair key by iterated local search on the eye transcription; the decode has [?] gaps in almost every line. Decoded, not read (reading audit, 22 Oct 2026)."
+   }
+  ]
  }
 }

@@ -254,7 +254,22 @@
    "what": "One-key review (Lasry's rule, 14 Oct 2026): the ten records of R4933-R4942 were grouped by DECODE number range. Split by system: this entry keeps the R4936/R4940 alphabet family (with R4937, R4942) and the uninspected R4938, R4939 of the same series (no key claimed); R4941 (a different substitution) is r4941; the Kemény_XIX_1628 records R4933-R4935 are kemeny1628.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R4936, R4937, R4940 and R4942 linked to the existing provisional transcriptions/extracts and their mechanical or solver outputs (R4936-mechanical.txt, R4937/R4942 extract-result.json, R4940-reading.md). Missing: R4938 and R4939 were never transcribed; R4936, R4937 and R4942 have no checked full reading (target in progress)", "result": "partial"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R4936, R4937, R4940 and R4942 linked to the existing provisional transcriptions/extracts and their mechanical or solver outputs (R4936-mechanical.txt, R4937/R4942 extract-result.json, R4940-reading.md). Missing: R4938 and R4939 were never transcribed; R4936, R4937 and R4942 have no checked full reading (target in progress)",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test): R4936-mechanical.txt (0 of 16 sentences clean, docs/_check_reading.py) and the R4937/R4942 solver outputs are letter streams without sentences; relabelled decoded, not read. R4940's two cipher spans read in their clear context (reviewed B). fraction_read set to ~0.008 (estimated, 23 of ~2,776 cipher letters).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  }
  ],
  "outcome": {
   "validation": {
@@ -274,14 +289,60 @@
   "verification": [
    "none"
   ],
-  "notes": "In progress: R4940 cipher expressions read, others unverified or untranscribed. No group completion or novelty claim. R4941 and R4933-R4935 split off 14 Oct 2026.",
+  "notes": "In progress: R4940 cipher expressions read, others unverified or untranscribed. No group completion or novelty claim. R4941 and R4933-R4935 split off 14 Oct 2026. 22 Oct 2026, reading audit: R4936, R4937, R4942 relabelled decoded, not read; only R4940's two spans read.",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Hungarian letter substitution recovered by quadgram annealing on R4936 (hu-modern model); R4940 cipher spans (23 letters) read with the shared alphabet family; R4937 and R4942 give fragments; R4938 and R4939 not yet inspected.",
   "texts": [
-   {"doc": "R4936", "label": "R4936, 1645 (provisional)", "transcription": ["R4936-transcription.txt", "R4936-p1-extract.txt"], "decryption": "R4936-mechanical.txt", "summary": "A Keresdi Bethlen letter with a clear Hungarian introduction and long cipher passages; the provisional mechanical decrypt with the shared alphabet family begins 'persvadealni kell' and '... succumbalna szandekaban'. Transcription and decrypt are provisional (q/g, c/p, i/n confusions open); no checked reading yet."},
-   {"doc": "R4937", "label": "R4937, 1646 (partial extract)", "transcription": "R4937-extract.txt", "decryption": "R4937-extract-result.json", "summary": "One long page; only a partial extract has been transcribed, and its substitution solver output gives Hungarian fragments beginning 'czasar dipplomaia'. No complete reading."},
-   {"doc": "R4940", "label": "R4940, Rákóczi Zsigmond to Ferenc Bethlen, Munkács, 2 Aug 1648", "transcription": "R4940-cipher.txt", "decryption": "R4940-reading.md", "summary": "A clear letter with two short cipher spans, read 'votumiok' (their votes) and 'niert dolog volna' (it would be a won matter) with the shared alphabet family."},
-   {"doc": "R4942", "label": "R4942, 1648 (partial extract of p. 2)", "transcription": "R4942-extract.txt", "decryption": "R4942-extract-result.json", "summary": "Only a partial page-2 extract has been transcribed; the solver output gives Hungarian fragments. The other cipher spans are not yet transcribed."}
-  ]
+   {
+    "doc": "R4936",
+    "label": "R4936, 1645 (provisional)",
+    "transcription": [
+     "R4936-transcription.txt",
+     "R4936-p1-extract.txt"
+    ],
+    "decryption": "R4936-mechanical.txt",
+    "summary": "A Keresdi Bethlen letter with a clear Hungarian introduction and long cipher passages; the provisional mechanical decrypt with the shared alphabet family begins 'persvadealni kell' and '... succumbalna szandekaban'. Transcription and decrypt are provisional (q/g, c/p, i/n confusions open); no checked reading yet.",
+    "language": "hu",
+    "state": "decoded, not read",
+    "note": "Unspaced provisional mechanical decode with open q/g, c/p, i/n confusions: the clear Hungarian is legible, the cipher passages run as letter streams with garbled words (reading audit, 22 Oct 2026)."
+   },
+   {
+    "doc": "R4937",
+    "label": "R4937, 1646 (partial extract)",
+    "transcription": "R4937-extract.txt",
+    "decryption": "R4937-extract-result.json",
+    "summary": "One long page; only a partial extract has been transcribed, and its substitution solver output gives Hungarian fragments beginning 'czasar dipplomaia'. No complete reading.",
+    "language": "hu",
+    "state": "decoded, not read",
+    "note": "Solver output on a partial extract under the shared-family key: letter streams, no sentences (reading audit, 22 Oct 2026)."
+   },
+   {
+    "doc": "R4940",
+    "label": "R4940, Rákóczi Zsigmond to Ferenc Bethlen, Munkács, 2 Aug 1648",
+    "transcription": "R4940-cipher.txt",
+    "decryption": "R4940-reading.md",
+    "summary": "A clear letter with two short cipher spans, read 'votumiok' (their votes) and 'niert dolog volna' (it would be a won matter) with the shared alphabet family.",
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Both cipher spans (23 letters) read as Hungarian words that fit the clear sentence around them: 'votumiok' and 'niert dolog volna' (it would be a won matter); the rest of the letter is clear."
+    }
+   },
+   {
+    "doc": "R4942",
+    "label": "R4942, 1648 (partial extract of p. 2)",
+    "transcription": "R4942-extract.txt",
+    "decryption": "R4942-extract-result.json",
+    "summary": "Only a partial page-2 extract has been transcribed; the solver output gives Hungarian fragments. The other cipher spans are not yet transcribed.",
+    "language": "hu",
+    "state": "decoded, not read",
+    "note": "Solver output on a partial extract of p. 2: letter streams, no sentences (reading audit, 22 Oct 2026)."
+   }
+  ],
+  "fraction_read": 0.008,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. R4940's two spans (23 cipher letters) read; R4936 (about 1,969 cipher letters in R4936-transcription.txt, clear text in braces left out), R4937 (549 in the extract) and R4942 (235) are decoded, not read; R4938-R4939 untranscribed. 23 of about 2,776 transcribed cipher letters, estimated (letters counted, not tokens; provisional transcriptions)."
  }
 }

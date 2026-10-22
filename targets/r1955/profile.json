@@ -185,20 +185,27 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): both transcriptions (Bourdeau transcription_r1955.txt, WAINUT R1955_tx.txt) and WAINUT's group-by-group decode R1955_reading_line.txt (95/360 groups)",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). R1955_reading_line.txt read: a single line of 1,660 characters, about three quarters '·', with single words and short fragments between unread groups; no sentence can be built (docs/_check_reading.py finds no scoreable sentence). Relabelled decoded, not read; class read in part -> not read, method read after matching with key from external sources -> not solved (the match kept as a part); fraction_read 0.264 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {"validation": {"date": "2026-10-15", "verdict": "not applicable", "notes": "Whole-word code decoded in isolated fragments (95 of 360 groups, mostly single words between unread groups); the letter n-gram test has no continuous text to score. WAINUT's word-pair coherence test (19 of 30 adjacent pairs attested against 11.1 for permutations, p = 0.001) is the statistical check."}, 
-  "method": "read after matching with key from external sources",
-  "method_basis": "The contemporary Dutch decipherments of Michell's own reports R1050/R1051 (271 code values, from DECODE's transcriptions) were matched to R1955 by WAINUT: 95 of 360 groups (26.4%) take a value, against 2.8-5.6% for the cabinet code, and adjacent decoded words are coherent above chance (19/30 against 11.1, p = 0.001); fragments only.",
+  "method": "not solved",
+  "method_basis": "The envoy-code table from the contemporary decipherments of Michell's reports R1050/R1051 matches R1955 (WAINUT; read after matching with key from external sources, recorded under parts), but gives a value to only 95 of 360 groups: fragments, no sentences.",
   "contribution": [
    "transcription",
    "catalogue correction"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.264,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "R1955_reading_line.txt: 95 of 360 groups with a value from the envoy table (WAINUT's group division of R1955_tx.txt), '·' counted as unread",
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.264, R1955_reading_line.txt (95 of 360 groups with a value from the envoy table), which counts valued groups, not sentences.",
   "grades": "unknown",
   "verification": [
    "statistical test"
@@ -240,7 +247,19 @@
      "R1955_tx.txt"
     ],
     "decryption": "R1955_reading_line.txt",
-    "summary": "The ministerial rescript in the King's name to his envoy in London, opening in clear 'Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois', then 362 code groups. WAINUT decoded 95 of 360 groups (26.4%) with the envoy table rebuilt from the Dutch decipherments of Michell's reports R1050/R1051: fragments only, the subject cannot be stated with confidence."
+    "summary": "The ministerial rescript in the King's name to his envoy in London, opening in clear 'Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois', then 362 code groups. WAINUT decoded 95 of 360 groups (26.4%) with the envoy table rebuilt from the Dutch decipherments of Michell's reports R1050/R1051: fragments only, the subject cannot be stated with confidence.",
+    "note": "One line of group-by-group decode, about three quarters '·' (no value): single words and fragments between unread groups; no sentence can be built (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
+   }
+  ],
+  "parts": [
+   {
+    "label": "R1955 (Michell's envoy code matched; decoded, not read)",
+    "records": "DECODE R1955",
+    "method": "read after matching with key from external sources",
+    "extent": "partial",
+    "basis": "WAINUT's table from the R1050/R1051 decipherments, 95 of 360 groups valued, adjacent words coherent above chance (19/30 against 11.1); fragments only. Decoded, not read (reading audit, 22 Oct 2026)."
    }
   ]
  }

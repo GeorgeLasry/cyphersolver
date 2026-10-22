@@ -1,6 +1,13 @@
 # Balbases (Nijmegen) to Fuenmayor (Copenhagen), 1677–78 — DECODE R985–R998
 
-Status: read
+Status: in progress. read in part (reading audit, 22 Oct 2026; was: read)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
+The ten margined letters read, from their contemporary margin decipherments. **R992, R996, R997 and R998 are
+decoded, not read**: the key decrypts them only into syllable streams with groups not in the key ("ve o la p ro te s
+ta que lo no ministro s ce sa re os pu b li ro n"); the gist below was summarised from those streams and is not a
+reading. 5,489 of 7,784 cipher tokens (70.5%) are in letters that read. The "Status: read" and the 97% below are
+withdrawn as reading claims (97% is the key's coverage of the groups).
 
 Fourteen ciphered despatches of Pablo Spínola Doria, 3rd marqués de los Balbases, Spanish plenipotentiary at the
 Nijmegen peace congress, to Baltasar de Fuenmayor, Spanish envoy in Denmark. They are dated 29 June 1677 to 22 March 1678.
@@ -95,3 +102,18 @@ margins in `tx/` are the fuller text.
 Dates (from the clear parts): R985 3 Aug 1677; R986 28 Aug; R987 18 (or 28) June; R988 29 June (docket 24 July);
 R989 21 Dec; R990 19 Oct; R991 5 Oct(?); R992 19 Sept; R993 28 Dec 1677; R994 15 Feb 1678; R995 26 Jan; R996 1 Mar;
 R997 8 Mar; R998 22 Mar 1678.
+
+## Remaining gaps
+- R992, R996, R997, R998 decoded, not read (2,295 cipher tokens; syllable streams from the key; reading audit 22 Oct 2026) - blocker: not-attempted; segment the streams into Spanish words, resolve the groups not in the key from context, write out and translate
+
+## Escalation
+
+Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
+not read. None of these steps has been redone since; each is open for those documents.
+
+- [ ] siblings: other letters of the same series or key, read or deciphered at the time
+- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
+- [ ] known-keys: other keys of the same correspondents tried
+- [ ] print: printed editions and calendars searched for these letters
+- [ ] key-rebuild: the key corrected against the documents that read
+- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images

@@ -2,6 +2,12 @@
 
 Status: read in part — 844/886 cipher tokens (95.3%) read as sense in Potocka's nine letters (measured 5 Oct 2026, rerun 14 Oct 2026), but R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) are each below the read bar; four person codes open.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the audit graded this C
+because outside R7526 the cipher forms no sentence of its own. Read through here: in eight letters the cipher is single
+words or short phrases inside clear French, and **every insertion decodes to a word that completes its clear anchor**;
+R7526's Polish postscript reads as continuous text. All nine kept read (reviewed B). For whole sentences, the clear
+text around the insertions is given only as anchors and would need transcribing.
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry): this entry was "Potocka and Mniszech to Jakub Dunin". Józef Mniszech's R7524 uses another numerical system and is now its own entry, [`targets/mniszech1714/`](../mniszech1714/NOTES.md) (a different cipher, with its own page, attempted, not solved). Its transcription, solver scripts, results and the synthetic control moved there. `prepare_reading.py` no longer counts R7524; it and `measure_sense.py` were rerun (counts below unchanged for Potocka).
 
 Work date: 2026-09-23. Catalogue item 280, class C (the catalogue entry was narrowed to Mniszech's R7524 when these nine letters were read; it is now mniszech1714).

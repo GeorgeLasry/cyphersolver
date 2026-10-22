@@ -231,6 +231,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R3697_signs.txt / R4232_signs.txt with READING_R3697.md / READING_R4232.md; key KEY.md (Tomokiyo's table with the additions)",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): READING_R4232.md and READING_R3697.md read through. R4232 reads as continuous French (reviewed A); R3697's unstruck cipher reads with scattered holes (reviewed B); the decipherer's struck runs (304 signs) give only fragments and are split off as decoded, not read. fraction_read 0.899 -> 0.877 (signs in text that reads).",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -242,7 +249,7 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.899,
+  "fraction_read": 0.877,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
@@ -289,7 +296,7 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "sense.py over R3697_signs.txt and R4232_signs.txt (5 Oct 2026): 2230 of 2481 non-null cipher signs sit in words read as French sense (R4232 1408/1430 = 98.5%, R3697 822/1051 = 78.2%). stats.py, which counts any sign with a key value, gives 90.6%.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Non-null signs counted in R3697_signs.txt and R4232_signs.txt: R4232 1,430 and R3697's unstruck runs 747 read; R3697's struck runs (304) are decoded, not read. 2,177 of 2,481 = 0.877. Withdrawn as a reading figure: 0.899 (sense.py, signs in words read as French over both letters, 5 Oct 2026; stats.py 90.6%).",
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "key table for 'Selve's Cipher' (cryptiana francis.htm, rebuilt from fr. 3045 ff. 42-49), extended", "source": "cryptiana francis.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "the decipherer's interlinear and marginal glosses, used as cribs on the struck runs"}
@@ -297,17 +304,42 @@
   "texts": [
    {
     "doc": "R3697",
-    "label": "R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535",
+    "label": "R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535: unstruck cipher (f. 25r r03-r16, f. 25v L1-L5)",
     "transcription": "R3697_signs.txt",
     "decryption": "READING_R3697.md",
-    "summary": "Georges de Selve, ambassador at Venice, to Francis I: a merchant must go to France by the Swiss road because the Imperial ambassador at Venice suspects him and has had the other road watched; that ambassador had urged him to go to the French court under colour of trade; on the verso a Hungarian matter (Hieronymus, Veszprém) and informants reporting to the Turk. The runs struck through by the King's decipherer are read only in part."
+    "summary": "Georges de Selve, ambassador at Venice, to Francis I: a merchant must go to France by the Swiss road because the Imperial ambassador at Venice suspects him and has had the other road watched; that ambassador had urged him to go to the French court under colour of trade; on the verso a Hungarian matter (Hieronymus, Veszprém) and informants reporting to the Turk. The runs struck through by the King's decipherer are read only in part.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "The unstruck cipher of R3697 (747 signs) reads as French sentences: the merchant must take the Swiss road; the Emperor's ambassador had him watched and had urged him to go to the French court under colour of trade; certain persons kept advising the Turk. Holes: a blot and a cancelled name (Anthon[e] de Le...), a few isolated signs. Audit grade C refined: the fragments are the struck runs, split off as decoded, not read."
+    },
+    "state": "read",
+    "language": "fr"
+   },
+   {
+    "doc": "R3697",
+    "label": "R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535: the runs struck through by the decipherer (sA, sB, sC1-3, T1-T3)",
+    "transcription": "R3697_signs.txt",
+    "decryption": "READING_R3697.md",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "304 signs under the King's decipherer's ruling: only scattered words separable on the film scan, so the runs read as fragments; their sense is known only from the contemporary glosses (reading audit, 22 Oct 2026)."
    },
    {
     "doc": "R4232",
     "label": "R4232, BnF fr. 3045 ff. 42-49, Venice, 5 July 1536",
     "transcription": "R4232_signs.txt",
     "decryption": "READING_R4232.md",
-    "summary": "Selve to Francis I on the Emperor's plan against Marseille (key to the kingdom; master of Provence, a land road Italy-Spain, the Mediterranean; the French galleys trapped in the port under the guns of La Garde), de Vaulx's advice to send the fleet towards Naples, La Forest's news from the Porte of an open breach with the Emperor, and the Pope's refusal of tenths to Charles. Four runs glossed by the King's decipherer agree with the reading."
+    "summary": "Selve to Francis I on the Emperor's plan against Marseille (key to the kingdom; master of Provence, a land road Italy-Spain, the Mediterranean; the French galleys trapped in the port under the guns of La Garde), de Vaulx's advice to send the fleet towards Naples, La Forest's news from the Porte of an open breach with the Emperor, and the Pope's refusal of tenths to Charles. Four runs glossed by the King's decipherer agree with the reading.",
+    "language": "fr",
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "READING_R4232.md reads as continuous French (the Emperor's design on Marseille, the galleys, the delay, the breach with the Emperor) with a few single-sign holes; the margin decipherment of f. 44v agrees word for word."
+    }
    }
   ],
   "key_file": "KEY.md"

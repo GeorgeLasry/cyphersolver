@@ -399,6 +399,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): token transcriptions per letter, the word-by-word aligned/ readings (unread {n}, probable ~) and the reading notes; key key.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the aligned readings read through. f. 55, pp. 357-358 and Colbert 392 p. 231 build French sentences with scattered holes (reviewed B; f. 55 against the audit, which had read the annotated working file); Colbert 390 p. 139 reads in its first seven lines only and is relabelled decoded, not read. fraction_read 0.79 -> 0.658 (sense tokens in the letters that read).",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -432,9 +439,9 @@
     "detail": "ẟ+superscript are code words (p.117 gloss); ẟao, aʓ, ℛ, ā unglossed anywhere found; faint ink"
    }
   ],
-  "fraction_read": 0.79,
+  "fraction_read": 0.658,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over aligned/f55.txt, p357.txt, p358.txt, c392.txt, p139.txt: cipher tokens aligned to the word-by-word reading by their candidate values; only non-probable words counted (nulls go with the following word). 2308 tokens: sense 0.79, probable 0.15, unread 0.06. Per letter: f.55 0.80, p.357 0.82, p.358 0.76, c392 0.83, p.139 0.70.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only letters that build sentences count. Sense tokens from measure.py per letter times measured tokens: f. 55 0.80 x 402, p. 357 0.82 x 475, p. 358 0.76 x 277, Colbert 392 p. 231 0.83 x 719 = 1,520 of 2,311 tokens (p. 139, 438 tokens, decoded, not read) = 0.658. Withdrawn as a reading figure: 0.79 (sense share over all five ciphertexts, measure.py, 5 Oct 2026).",
   "key": "recovered",
   "fraction_coherent": 0.79,
   "verification": [
@@ -455,7 +462,15 @@
      "aligned/f55.txt",
      "f55_v2_reading.md"
     ],
-    "summary": "The thirteen ciphered lines of Catherine de Médicis's letter to the bishop of Rennes that La Ferrière printed as 'Partie chiffrée': the Council of Trent and the Habsburg marriage ('avancer le concile', 'pour le bien de la Chrestienté', the December sessions)."
+    "summary": "The thirteen ciphered lines of Catherine de Médicis's letter to the bishop of Rennes that La Ferrière printed as 'Partie chiffrée': the Council of Trent and the Habsburg marriage ('avancer le concile', 'pour le bien de la Chrestienté', the December sessions).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "aligned/f55.txt read through: it builds French sentences (what you discovered about the marriage and your advice on its conduct, my intention entirely conforms; the council and its sessions) with a hole in some clauses (ll. 2, 5, 9, 13); 0.80 of tokens in sense. Audit grade C overturned for f. 55: the audit read the candidate-annotated f55_v2_reading.md working file, not the aligned reading."
+    },
+    "state": "read",
+    "language": "fr"
    },
    {
     "doc": "c390-p357",
@@ -469,7 +484,15 @@
      "aligned/p358.txt",
      "c390_p357_reading.md"
     ],
-    "summary": "The precedence dispute at the imperial court after Ferdinand I's death (1564): another pretext must be found than the one in the sieur Charon's despatch, and a secretary or one of Rennes's people be left there under colour of private business."
+    "summary": "The precedence dispute at the imperial court after Ferdinand I's death (1564): another pretext must be found than the one in the sieur Charon's despatch, and a secretary or one of Rennes's people be left there under colour of private business.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "aligned/p357.txt and p358.txt read as running French (take another pretext than the one in Charron's despatch; leave a secretary behind under colour of private affairs; news of the Diet) with scattered {n} holes."
+    },
+    "state": "read",
+    "language": "fr"
    },
    {
     "doc": "c390-p139",
@@ -479,7 +502,10 @@
      "aligned/p139.txt",
      "c390_p139_v3_reading.md"
     ],
-    "summary": "A secret note from Catherine: decipher it yourself, trust no clerk, burn it; she holds Rennes a loyal servant of the King her son and asks him to keep his eyes open to observe 'mon cousin' and his actions. The least-read of the four (about 70% strict sense)."
+    "summary": "A secret note from Catherine: decipher it yourself, trust no clerk, burn it; she holds Rennes a loyal servant of the King her son and asks him to keep his eyes open to observe 'mon cousin' and his actions. The least-read of the four (about 70% strict sense).",
+    "note": "aligned/p139.txt: ll. 1-7 build French sentences, but ll. 8-14 are mostly unread runs ({8} ce de mon cousin {1} que les {6} ...) and code words; the letter as a whole does not read (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    },
    {
     "doc": "c392-p231",
@@ -489,7 +515,15 @@
      "aligned/c392.txt",
      "c392_p231_reading.md"
     ],
-    "summary": "Bourdin encloses Catherine's letter of 15 Dec 1562 on the secret marriage overture; its leak to Spain ('sçavoit incontinant en Espaigne'), the triumph over 'la premiere ouverture ... de ce mariage', closing on friendship and alliance for the repose of Christendom."
+    "summary": "Bourdin encloses Catherine's letter of 15 Dec 1562 on the secret marriage overture; its leak to Spain ('sçavoit incontinant en Espaigne'), the triumph over 'la premiere ouverture ... de ce mariage', closing on friendship and alliance for the repose of Christendom.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "aligned/c392.txt reads as running French (the Queen's letter; the marriage overture; God grant that all succeed to their Majesties' desire) with one-to-three-sign holes in some clauses; 15/19 sentences clean."
+    },
+    "state": "read",
+    "language": "fr"
    }
   ],
   "key_file": "key.md"

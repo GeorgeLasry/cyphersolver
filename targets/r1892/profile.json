@@ -259,6 +259,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions and decrypts of both pages; for p2 also WAINUT's relabelled transcriptions and their decryption (new file wainut/decrypt_p2_wainut.txt, written by running wainut/apply.py); key table copied from NOTES to texts/key.md. Lasry's 2021 solution is private and not in the repository.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): decrypt_p1.txt reads as French sentences (reviewed B); decrypt_p2.txt has an open word sign or conjecture in almost every line, relabelled decoded, not read. Class read -> read in part; fraction_read 0.967 (tokens with a value) -> 0.539.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 1049, "types": 26, "tokens_per_type": 40.35, "score": -1.951, "nulls": {"random keys": {"n": 200, "mean": -7.687, "sd": 0.636, "max": -6.156, "z": 9.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.643, "sd": 0.029, "max": -4.603, "z": 92.4, "p": 0.1429}}, "power": -1.951, "verdict": "pass", "notes": "claimed per-occurrence score -1.951; polyphony 0.0; 5 unread tokens left out; annealer on the real text from random keys reached -1.951"}, 
@@ -270,10 +280,10 @@
    "sender or date identified",
    "key extended or corrected"
   ],
-  "class": "read",
-  "fraction_read": 0.967,
+  "class": "read in part",
+  "fraction_read": 0.539,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription_p1.txt + transcription_p2.txt with STRICT=1 apply.py --measure (3 Oct 2026): 1,889 of 1,954 cipher tokens given an H or M value (I-grade sign values counted unread); emended slips counted at their read value. p1 1049/1054, p2 840/900.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: cipher tokens of the page that reads as sentences, p1 = 1,054 of 1,954 (apply.py --measure counts); the Dutch postscript p2 (900) is decoded, not read. Withdrawn as a reading figure: 0.967 = transcription_p1.txt + transcription_p2.txt with STRICT=1 apply.py --measure (3 Oct 2026): 1,889 of 1,954 cipher tokens given an H or M value; p1 1049/1054, p2 840/900.",
   "key": "partial",
   "codes_open": {
    "tokens_open": 65
@@ -309,8 +319,8 @@
     {"who": "lccompany", "role": "verification", "note": "WAINUT (PR #31) deciphered R1892 independently and recovered the same square; sign-label splits and values proposed, not adopted", "date": "2026-10-12", "source": "https://github.com/dbourdeau/cyphersolver/pull/31"}
   ],
   "texts": [
-   {"doc": "R1892 p1", "label": "R1892 page 1 (French)", "transcription": "transcription_p1.txt", "decryption": "decrypt_p1.txt", "summary": "Prince Frederick of Orange, in England, c. late November - early December 1795, to an officer of the Dutch émigré troops (the 'rassemblement') in British pay: his father is sending Nagell back to the ministers to press for an answer, and if General Dundas declares that the pay will stop or the troops must embark, the recipient is to accept and only try to obtain a gratification for those who will not submit."},
-   {"doc": "R1892 p2", "label": "R1892 page 2 (Dutch postscript): reading adopted here, and the WAINUT proposals", "transcription": ["transcription_p2.txt", "wainut/transcription_p2_wainut.txt", "wainut/transcription_p2_wainut_tr.txt"], "decryption": ["decrypt_p2.txt", "wainut/decrypt_p2_wainut.txt"], "summary": "The Dutch postscript, 'in het hollandsch met cijffer': if the troops stay together the rassemblement is to be kept together, volunteers and officers named and employed, and officers who will not serve given a set number of days to choose; the writer has had no answer for weeks to his first letter. wainut/decrypt_p2_wainut.txt applies WAINUT's proposed sign splits and values (12 Oct 2026, not adopted) for comparison."}
+   {"doc": "R1892 p1", "label": "R1892 page 1 (French)", "transcription": "transcription_p1.txt", "decryption": "decrypt_p1.txt", "summary": "Prince Frederick of Orange, in England, c. late November - early December 1795, to an officer of the Dutch émigré troops (the 'rassemblement') in British pay: his father is sending Nagell back to the ministers to press for an answer, and if General Dundas declares that the pay will stop or the troops must embark, the recipient is to accept and only try to obtain a gratification for those who will not submit.", "language": "fr", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "decrypt_p1.txt read line by line: unspaced but clean French that splits into sentences (the father has charged Nagel to press the ministers again on the rassemblement; if General Vundas stops the pay or the troops are to embark, sign and seek a gratuity for those who will not submit; make the troops know on what footing they enter the service) with a few bracketed signs and one struck run."}},
+   {"doc": "R1892 p2", "label": "R1892 page 2 (Dutch postscript): reading adopted here, and the WAINUT proposals", "transcription": ["transcription_p2.txt", "wainut/transcription_p2_wainut.txt", "wainut/transcription_p2_wainut_tr.txt"], "decryption": ["decrypt_p2.txt", "wainut/decrypt_p2_wainut.txt"], "summary": "The Dutch postscript, 'in het hollandsch met cijffer': if the troops stay together the rassemblement is to be kept together, volunteers and officers named and employed, and officers who will not serve given a set number of days to choose; the writer has had no answer for weeks to his first letter. wainut/decrypt_p2_wainut.txt applies WAINUT's proposed sign splits and values (12 Oct 2026, not adopted) for comparison.", "language": "nl", "state": "decoded, not read", "note": "decrypt_p2.txt: the Dutch postscript is unspaced with an open word sign (<H>, <slash>, <hook>, <Y-cross>, <cf> ...) or a bracketed conjecture in almost every line, so its sentences cannot be built without guessing"}
   ],
   "key_file": ["texts/key.md", "apply.py"]
  }

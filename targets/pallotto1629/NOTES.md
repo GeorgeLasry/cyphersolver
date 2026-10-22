@@ -1,6 +1,15 @@
 # Pallotto to Barberini, 1629 — ciphered despatches of the nuncio at Vienna
 
-Status: read — contents in print (Kiewning 1897); key = the Biermann–Bosbach key of Barb.lat. 6956 (DECODE R215, 2018), identified for 6960 by George Lasry
+Status: in progress (22 Oct 2026: R286 read from Kiewning's print, R287-R313 decoded, not read). Earlier: read — contents in print (Kiewning 1897); key = the Biermann–Bosbach key of Barb.lat. 6956 (DECODE R215, 2018), identified for 6960 by George Lasry
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+* **Read**: R286, from Kiewning 1897 Nr. 153 (the Roman decipherment in print; `crib153.txt`). English translation
+  still to be written.
+* **Decoded, not read**: R287-R313. The automatic decode with the 6956 key (`texts/R*_decrypt.txt`) has garbled
+  strings and open three-digit groups in most clauses (2-24% of sentences clean); their counterparts in Kiewning
+  have not been matched.
+* Class already solved kept; method read with known key -> read from existing decipherment (parts); 0.95 withdrawn
+  as a reading figure (0.030 = R286's share). "every record decodes to running Italian" below is withdrawn.
 
 ## Update, 21 Sept 2026: the key exists, and it is the 6956 key
 
@@ -337,3 +346,34 @@ The sibling volume, **BAV Barb.lat. 6956** (catalogue entry 236, DECODE R215-R31
 sheets of the same nunciature for 1628), was broken by Biermann and Bosbach in 2018 (key on DECODE R215); see the
 update at the top. Open here: the ~1,750 three-digit groups of 6960 missing from that key. Kiewning's **Band 1, Nuntiatur des Pallotto 1628**
 (Berlin 1895) covers exactly those months and is the first place to look. Not checked here.
+
+## Remaining gaps
+
+- R287, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R288, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R289, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R290, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R291, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R292, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R293, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R294, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R295, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R296, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R297, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R298, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R299, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R300, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R301, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R302, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R303, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R304, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R305, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R306, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R307, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R308, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R309, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R310, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R311, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R312, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R313, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
+- R286 reading: English translation not yet written - blocker: not-attempted

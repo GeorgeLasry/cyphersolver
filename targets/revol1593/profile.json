@@ -312,19 +312,26 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 88 (issue #32 transcription), f. 146v and f. 157v transcriptions with decode60.py output saved to texts/ (decoder output, not readings); ff. 115, 176, 198 were never transcribed",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/f88_decode60.txt, f146v_decode60.txt and f157v_decode60.txt read: token-by-token decoder output, headed 'NOT a reading', with a few anchors and nothing between them that reads. All three entries relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read unknown -> 0 (estimated).",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "Key no. 60, the Court cipher given to Nevers (BnF fr. 3995 ff. 108-111), identified for these letters by Tomokiyo, transcribed here and corrected from issue #32; applied to the transcribed passages, it gives words only on f. 88r (de absolution, le Roy, qu'il) and anchors on f. 146v.",
+  "method": "not solved",
+  "method_basis": "Key no. 60, the Court cipher given to Nevers (BnF fr. 3995 ff. 108-111), identified by Tomokiyo and applied (read with known key, recorded under parts), gives three words on f. 88r and anchors on f. 146v; no passage reads as text.",
   "contribution": [
    "transcription",
    "catalogue correction"
   ],
-  "class": "read in part",
-  "fraction_read": "unknown",
+  "class": "not read",
+  "fraction_read": 0.0,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "No denominator: three of six passages are untranscribed and ct_3986_f146v.txt / ct_3986_f157v.txt mix clear cursive with cipher. f. 88r: three words from 86 tokens; on f. 146v and f. 157v the tagged tokens decode to table values (29 of 204 and 68 of 226 unresolved) but do not read.",
+  "fraction_read_source": "22 Oct 2026, reading audit: no passage builds sentences, so nothing counts as read (0; estimated because three of six passages are untranscribed). Earlier figure was 'unknown'; no reading figure is withdrawn.",
   "key": "recovered",
   "grades": "unknown",
   "verification": [
@@ -399,21 +406,39 @@
     "label": "BnF fr. 3985 f. 88r-v, 21 Aug 1593",
     "transcription": "f88/ct_3985_f88.txt",
     "decryption": "texts/f88_decode60.txt",
-    "summary": "Nevers to Louis de Revol, secretary of state, on the papal absolution of Henri IV; the transcription is Robert Węglarek's (tunarob, issue #32). Only 'de absolution' (shuffle-controlled), 'le Roy' and 'qu'il' read; the decoder output with key no. 60 is given as it stands, not as a reading."
+    "summary": "Nevers to Louis de Revol, secretary of state, on the papal absolution of Henri IV; the transcription is Robert Węglarek's (tunarob, issue #32). Only 'de absolution' (shuffle-controlled), 'le Roy' and 'qu'il' read; the decoder output with key no. 60 is given as it stands, not as a reading.",
+    "note": "Token-by-token decoder output with key no. 60, headed 'NOT a reading': three words (de absolution, le Roy, qu'il) among unresolved tokens; no sentence (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    },
    {
     "doc": "f146v",
     "label": "BnF fr. 3986 f. 146v, 7 Oct 1593",
     "transcription": "ct_3986_f146v.txt",
     "decryption": "texts/f146v_decode60.txt",
-    "summary": "Nevers to Revol, 7 Oct 1593. Tomokiyo's anchors (l'absolution, à la vérité, intérêt) come out of key no. 60, but the text between them does not yet read; decoder output only."
+    "summary": "Nevers to Revol, 7 Oct 1593. Tomokiyo's anchors (l'absolution, à la vérité, intérêt) come out of key no. 60, but the text between them does not yet read; decoder output only.",
+    "note": "Decoder output: Tomokiyo's anchors (l'absolution, à la vérité, intérêt) come out of the table, the text between them does not read (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    },
    {
     "doc": "f157v",
     "label": "BnF fr. 3986 f. 157v, Coire, 9 Oct 1593",
     "transcription": "ct_3986_f157v.txt",
     "decryption": "texts/f157v_decode60.txt",
-    "summary": "Nevers to Revol from Coire, 9 Oct 1593: about 90 symbols in the first lines of f. 157v; no anchor secured, and the transcription over-reads faded clear cursive as cipher (NOTES). Decoder output only."
+    "summary": "Nevers to Revol from Coire, 9 Oct 1593: about 90 symbols in the first lines of f. 157v; no anchor secured, and the transcription over-reads faded clear cursive as cipher (NOTES). Decoder output only.",
+    "note": "Decoder output on a faded passage where clear cursive and cipher run together; nothing reads (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
+   }
+  ],
+  "parts": [
+   {
+    "label": "ff. 88r, 146v, 157v (key no. 60 applied; decoded, not read)",
+    "records": "BnF fr. 3985 f. 88; fr. 3986 ff. 146v, 157v",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "key no. 60 transcribed and corrected from issue #32; three words on f. 88r (shuffle-controlled), anchors on f. 146v. Decoded, not read (reading audit, 22 Oct 2026)."
    }
   ]
  }

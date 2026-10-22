@@ -7,6 +7,12 @@ sense in `sense.tsv`: 1212 of 1310 groups, 92.5% of nos. 45/79/47; sections 9). 
 f. 97) recovered, all three leaves located on the images and read line by line, with a scatter of code groups still
 open. Written up as `docs/sessa1593.html`.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the audit graded this D
+on the first-pass files `reading45.md`, `reading79.md`, `reading47.md`, which have `·` in most lines. The reading is
+the reading column of `sense.tsv` (5 Oct re-transcription): all three letters build Spanish sentences there, with
+scattered single open groups. Grade overturned: all three stay read (reviewed B). Still to do: English translations,
+and the page quotes the first-pass excerpts rather than `sense.tsv`.
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): the fourth letter of catalogue item 19,
 fr. 3984 no. 68 (Diego de Ibarra, Paris, 10 Jul 1593), is in the Feria-Mansfeld cipher, not the office cipher, and
 is now [`targets/ibarra1593/`](../ibarra1593/NOTES.md) (a different cipher, with its own page). Its files (`ct68.txt`,

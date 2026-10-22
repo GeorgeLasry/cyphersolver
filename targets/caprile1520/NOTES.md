@@ -2,6 +2,12 @@
 
 Status: in progress (written up in docs/caprile1520.html; V1921 read 97.0 %; R1139 89.7 %, R1136 66.9 % after pass 5, 3 Oct 2026; the R1136/R1139 stretches are still workable)
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
+V1921 reads (six runs inside clear sentences, translated), and so do Somogyi's R1138 and V1920. **R1139 and R1136 are
+decoded, not read**: [..] holes in most lines of R1139 and nearly every line of R1136; only phrases come through. Of
+the three letters deciphered here, 166 of 1,421 tokens (11.7%) are in a letter that reads; the 89.7% and 66.9% below
+are shares of decoded letters inside phrases, withdrawn as reading figures.
+
 Split on 14 Oct 2026 from `caprile1519` under the one-key rule (George Lasry, 14 Oct 2026): one
 entry per key. The old entry joined three ciphers of the same ASMo file. This folder keeps the **1520–21 homophonic sign
 cipher** (R1136, R1138, R1139, Vestigia 1920, 1921). The 1519 two-tier cipher of R1128 is a different cipher, with its
@@ -140,6 +146,7 @@ episcopa[to]", "l'altro in titolo, et a questo modo excluderà …"). Details in
 
 ## Remaining gaps
 
+- R1139 and R1136 decoded, not read (1,255 tokens; holes in most lines; reading audit 22 Oct 2026) - blocker: not-attempted; separate the look-alike signs on the image, re-decode, build sentences and translate
 Blocker "left-open" is not one of the checker's outside blockers on purpose: these pieces are still workable here, and
 no outside blocker (no key material, too short, illegible, physical access) honestly applies to them.
 

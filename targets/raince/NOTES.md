@@ -3,6 +3,11 @@
 Catalogue item 5 (the "gamble" of the five-item goal list). Two sessions, 17 September 2026.
 Everything below is unvalidated until Daniel reviews it; the evidence for each claim is named.
 
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+the 13 May and 20 Nov 1526 passages are **decoded, not read**: `trans/reading_edited.txt` has `…` or `(?)` in nearly
+every line, and only isolated clauses survive. Class read in part -> not read, method -> not solved (Tomokiyo's key
+kept as a part); 0.87 withdrawn as a reading figure.
+
 ## Outcome in one paragraph
 
 The item was never a blind-solving problem. Tomokiyo published the 1526 key in 2020 and the 1529
@@ -327,6 +332,8 @@ not tracked; re-fetch with
 `https://gallica.bnf.fr/iiif/ark:/12148/btv1b90598430/f<n>/full/full/0/native.jpg`.
 
 ## Remaining gaps
+- pp. 29-31 (13 May 1526), decoded, not read - blocker: illegible; the unresolved glyphs fall in most lines on the B/W microfilm; colour photographs needed
+- p. 105 (20 Nov 1526), decoded, not read - blocker: illegible; same
 - residual unresolved glyphs, ~13 % of letters, worst on p. 105 ll. 15-17, 20-21, p. 30 ll. 30, 32-34, p. 31 ll. 1-2, 17, 23-24 - blocker: illegible; every line was re-read from the image in session 3 (trans/reading_v3.txt); the remaining glyphs do not resolve on the B/W Gallica microfilm; colour photographs of pp. 29-31 and 105 needed
 - two word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (name or title), ~4 occurrences each - blocker: open-codes; too few occurrences, no clear copy; the circled cross is now identified as i
 ## Escalation

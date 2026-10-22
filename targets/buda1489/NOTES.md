@@ -1,8 +1,13 @@
 # Milanese embassy at Buda, 1489–92: Maffeo da Treviglio's cipher (ASMi Sforzesco 642/645/650)
 
-Status: read in part (reclassified from "read" 22 Sept 2026). Both undeciphered despatches are read, the 22 Nov 1489
+Status: in progress. read in part (reclassified from "read" 22 Sept 2026). Both undeciphered despatches are read, the 22 Nov 1489
 letter only in patches on page 3 after line 19; four signs have no value; the share of signs read has never been
 measured, so the read bar (README Conventions) is not shown to be met.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. The
+12 Jan 1490 letter (R1098) reads, and so do pages 1 and 2 ll. 1-16 and the p. 4 cipher lines of the 22 Nov 1489 letter.
+**V2831 p. 2 ll. 17-32 and p. 3 are decoded, not read**: lines of fragments with [...] in most lines. About 56% of the
+cipher lines read (estimated). "Pages 1 and 2 are read almost throughout" in `v2831_reading.md` overstates p. 2.
 
 Session of 18 September 2026. Goal: read the cipher letters of the Milanese embassy in Hungary that have no
 contemporary decipherment, using the key Judit W. Somogyi reconstructed in 2016 and the cipher/clear pairs
@@ -120,6 +125,7 @@ The Vestigia record of 2831 (`vestigia/doc2831.json`, `archive_ref`) gives **Sfo
 cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. profile.json corrected.
 
 ## Remaining gaps
+- 2831 p. 2 ll. 17-32 and p. 3 ll. 1-19 decoded, not read (fragments in most lines; reading audit 22 Oct 2026) - blocker: not-attempted; re-read from the plate with per-row crops (the stacked crops drift from l. 18), then build sentences and translate
 Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
 and R1158 are other ciphers and are not part of this reading.
 - 2831 p. 3 after l. 19, about a third of that page's words - blocker: not-attempted; read only in patches, the ink is lighter and the stacked crops drift; the per-row crop pass straight from the plate (Method, on the page) has not been run, and part may prove illegible after it

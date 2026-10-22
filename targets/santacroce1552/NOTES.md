@@ -1,5 +1,14 @@
 # Prospero Santa Croce (nuncio in France) to Cardinal Innocenzo del Monte, 1553 (ASV Segr. Stato, Francia 3; DECODE R6–R10) — NOTES
 
+Status: in progress
+
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+the decodes in this folder (`texts/R6/R7/R8/R10_decryption.md`, Lasry's key on the 2016 volunteer transcriptions) have
+holes or garble in almost every clause, and R9's cancelled lines give only aligned words: all five entries are
+**decoded, not read**. The reading is the contemporary decipherment printed in Lestocquoy 1972, not copied here. Class
+already solved and method read from existing decipherment kept; `_texts.reading_problems` will flag that no entry
+reads until the printed text is transcribed (or the texts are withheld as an in-copyright edition): the lead's call.
 
 **Verdict: closed, already solved and in print.** All five DECODE records are ciphered passages of letters from
 Santa Croce's first French nunciature. Each was deciphered on arrival, and the decifrati are bound with the
@@ -57,3 +66,8 @@ Strozzi". A first pass through the strokes gave only fragments. A second pass at
 - `decode/` — the DECODE text files (transcriptions, Lasry's key). The images and the PDF are not committed.
 - `decode.py` — decrypts with Lasry's key plus an LM segmenter.
 - `r9_cancelled.txt` — my reading of the R9 cancelled lines (uncertain).
+
+## Remaining gaps
+
+- R6, R7, R8, R10 decodes, decoded, not read - blocker: not-attempted; the reading exists in Lestocquoy 1972 (pp. 157, 162-163, 218, 243-244), not transcribed here
+- R9 cancelled lines, decoded, not read - blocker: illegible; read through the strike-out strokes, aligned words only

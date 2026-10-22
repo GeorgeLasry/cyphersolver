@@ -4,7 +4,13 @@ ASV, i. 1025, Segretario di Stato, Francia, doss. 346.
 DECODE R74–R84 (eleven ciphertexts); the catalogue entry named five of them:
 R75, R77, R78, R82, R84.
 
-Status: read (second pass 5 Oct 2026: 95.8% of cipher tokens measured, R75 96.2%, R84 95.3%; was 91.4%).
+Status: not read (reading audit, 22 Oct 2026: decoded, not read). Was: read (second pass 5 Oct 2026: 95.8% of cipher tokens measured, R75 96.2%, R84 95.3%; was 91.4%).
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R75 and R84 are decoded,
+not read**. Lasry's key decodes both, but the decodes are unspaced with an open nomenclator element in nearly every
+line (117 of 123 elements unread), and the 1632 interlinear covers only lines 12-30 of R75. The gist follows, the
+sentences do not. Class now not read, method not solved; 95.8% is the share of tokens with a value, withdrawn as a
+reading figure.
 
 ## What the catalogue expected, and what was actually there
 
@@ -288,6 +294,7 @@ Failures and limits of this pass:
 
 ## Remaining gaps
 
+- R75 and R84 decoded, not read (2,400 tokens; an open element in nearly every line; reading audit 22 Oct 2026) - blocker: open-codes; the names and places are inside the 117 unread nomenclator elements and no dossier nomenclator survives on DECODE; still workable: segment and normalise the decodes, transcribe the R75 interlinear in full
 - 56 nomenclator tokens of R75/R84 (491 x5, 497/998/328 x3, 494/128/450/110 x2, ~40 singletons) - blocker: open-codes; pooled across all six letters, no single value fits; interlinear only on R75 and illegible at most of them
 - 31 noise digits at ink blots (R75 l.30, 31) and unsure parses - blocker: illegible; checked against the full-resolution images 5 Oct 2026
 - dossier key with nomenclator - blocker: needs-physical-access; none on DECODE; would need the ASV

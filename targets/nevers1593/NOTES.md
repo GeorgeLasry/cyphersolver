@@ -1,5 +1,12 @@
 # Nevers to Pisany, 8 September and 14 October 1593, in cipher no. 46 (catalogue no. 21)
 
+Status: in progress (22 Oct 2026, reading audit: f. 168 decoded, not read, workable; see Remaining gaps)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 209 (its three
+cipher passages complete the clear sentences). **Decoded, not read**: f. 168: only lines 1, 6 and 7 build sentences,
+lines 2-5 and the last are fragments. 99.7% (groups with a value) is withdrawn as a reading figure; 31.1% of the tokens
+are in the letter that reads (123 of 395).
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry): this entry is key no. 46 and the two letters to Pisany
 (fr. 3985 f. 209, fr. 3986 f. 168). The five letters to Revol are in the Court symbol cipher no. 60 and are now their
 own entry, [`targets/revol1593/`](../revol1593/) (a different cipher, with its own page, revol1593.html), with
@@ -114,6 +121,7 @@ The five letters to Revol (fr. 3985 ff. 88, 115, 176; fr. 3986 ff. 146v, 157v, 1
 sessions of 17 Sept and issue #32 (12 Oct 2026), are in `targets/revol1593/NOTES.md`.
 
 ## Remaining gaps
+- f. 168 decoded, not read (272 tokens) - blocker: not-attempted; re-read the confusable figures (1/7, 0/8, 3/5) of lines 2-5 and the last line on the image with the Gondi decipherment as a guide to the copyist, re-decode, translate
 - fr. 3986 f. 168, Pisany 14 Oct, garbled stretches of lines 2-8 - blocker: illegible; microfilm copy, 1/7, 0/8, 3/5 confusable; segscore.py did not resolve them
 
 ## Escalation

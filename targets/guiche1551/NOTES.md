@@ -8,6 +8,12 @@ ciphers, each with its own page; see section 2.
 Outcome: **La Guiche read in part (new reading, key recovered ciphertext-only)**: 429 of 431 tokens have a value
 (measured, 14 Oct 2026); the struck-through opening reads only in fragments.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the audit graded the letter
+C; read through line by line here, **L2-L12 read** as French sentences (350 of 431 tokens, one open code sign `::`);
+the "…" in `texts/laguiche1551_decryption.md` are clear words not copied, not cipher holes. Only the two struck-through
+lines L0-L1 (81 tokens) read in fragments (blocker: the writer's deletion). Reading figure 81.2% of tokens; 99.5% was
+tokens with a value.
+
 ## 1. La Guiche → Montmorency, Rome, 22 Nov 1551 (fr. 3138 no. 22)
 
 Gallica btv1b90601662, view 65 (f. 60v–61r; the cipher is all on f. 60v, signature "Claude de la Guiche e. de

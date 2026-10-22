@@ -2,7 +2,13 @@
 
 Lasry review (25 Sept 2026): Tomokiyo had already solved it (2025, see 4a). Independent re-solution, not a first break; left out of the ciphertext-only list for Klaus Schmeh (outcome.first_break = false).
 
-**Status: read in part — 76.6% of cipher tokens read as sense, measured (5 Oct 2026; 71.5% on 22 Sept).** The
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+no. 97 is **decoded, not read**: the running text (`ct/no97_reading2.md` §2) has a `[?]` gap in almost every line,
+about one sign in four unread; fragments parse, sentences do not. Class read in part -> not read, method -> not
+solved (the ciphertext-only pair key kept as a part); 76.6% withdrawn as a reading figure. The status line below is
+superseded.
+
+**Status: not read (decoded, not read; reading audit 22 Oct 2026). Earlier: read in part — 76.6% of cipher tokens read as sense, measured (5 Oct 2026; 71.5% on 22 Sept).** The
 system is broken: a reciprocal letter-pair substitution (a/i b/p c/f d/q e/t g/u l/y m/z n/s o/r h/x),
 dots for doubled letters, nulls (looped æ, and since 5 Oct λ, γ, U, π, m̄), a few special signs and
 syllable/word figures (31 = ma, 139 = vous, 145 = me, 141 = qu'il). 844 of 1,102 cipher tokens read
@@ -283,6 +289,7 @@ same system (none in fr. 3621).
 
 ## Remaining gaps
 
+- no. 97 as a whole, decoded, not read - blocker: open-codes; special signs, ten figures and three garbled runs fall in most lines (below); building sentences needs their values
 - Special signs ŧ (crossed t, 12 tokens, incl. the *ŧien* words), ⊙ (where not s), α, ꝗ, E, figure-4, π-less Z, V (about 60 tokens with the words they sit in) - blocker: open-codes; no key survives; each occurs 1-12 times and no single value fits all its occurrences (§10). λ, γ, U, π, m̄ settled as nulls 5 Oct.
 - Figures 57, 98, 122, 123, 13, 137, 88, 146, 121, 103 (14 tokens) - blocker: open-codes; one letter, no key, no sibling in the same cipher; 98 = *ville* fits but so do other nouns.
 - Garbled runs L12 (*passer … les*), L13 (*des … dira*), L20 (*[?surte]*, *z i q a s c t t*) (about 35 tokens) - blocker: open-codes; re-read at full IIIF resolution 5 Oct, glyphs legible, the sequence does not decode under the pair key, so it hides special values or a second system; L18's run was resolved (*l'effect du dict*).

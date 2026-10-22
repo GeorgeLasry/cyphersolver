@@ -12,6 +12,11 @@ Images: DECODE, login only. DECODE's rights line reads "Publishing it is only po
 Archive"; no permission has been asked for, so the images stay untracked and the site page carries no image figures.
 
 Outcome: **key recovered based on adjacent plaintext, read in part**: 958 of 1,039 words (92.2%), under the 95% bar.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part, 64.8% of
+words in lines that read** (819 of 1,263 in `r9414/reading_v5.txt`). Most of the letter builds German sentences with
+single `[..1]` holes. **Decoded, not read**: P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35 and the postscript
+P5.05-07, where a hole or a `<...>` run falls in nearly every clause. The 92.2% is withdrawn as a reading figure.
 Key state: partial (homophones with alternatives; the Ψ, swash X and K word signs have no key).
 
 ## The letter
@@ -39,6 +44,7 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
 
 ## Remaining gaps
 
+- P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35, P5.05-07 decoded, not read (fragments; reading audit 22 Oct 2026) - blocker: open-codes; they hold most of the unresolved words, code signs and blots listed below
 - code signs without a key (about 10 words: Ψ at P2.02, 08, 09, 27; swash X at P2.15, P2.25, P4.02, P4.21; K at P4.33, probably "the king") - blocker: no-key-material; single name/word signs, no key in the volume or on DECODE
 - blotted or struck signs (about 15 words) - blocker: illegible; ink blots and deletions on the DECODE images
 - legible but unresolved words (about 55; candidates in gapfill.py output) - blocker: open-codes; four full image passes, sibling keys and a one-edit lexicon search done, homophone ambiguity remains

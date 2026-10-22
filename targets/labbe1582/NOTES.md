@@ -3,6 +3,12 @@
 Status: read (7 Oct 2026). Key recovered by AngusRobinson (outside contributor, GitHub PR #20), checked here.
 Write-up: https://dbourdeau.github.io/cyphersolver/labbe1582.html
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the audit graded this C
+because the deciphered insertions stand alone without their sentences. Read through here: **every insertion reads**
+as clean French, no hole; kept read (reviewed B). For whole sentences and the English, the clear text around each
+insertion still has to be transcribed from the images (it is only outlined in `prague_reading.md` and
+`breslau_reading.md`).
+
 ## Result (PR #20, checked 7 Oct 2026)
 
 AngusRobinson recovered the key and deciphered every numerical insertion of nos. 30 and 37/38

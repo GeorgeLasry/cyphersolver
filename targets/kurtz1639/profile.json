@@ -397,14 +397,15 @@
    "result": "worked"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 22728 tokens, 133 types, de-1640s order 4: reading -2.378 per letter; random keys -4.857 (z 8.3); key annealed onto shuffled ciphertext best -3.206 (mean -3.213, z 131.9); annealer on the real text -2.781. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions tr/IMG_<record>_*.txt and the machine decipherments read/<record>.txt (with the clear copy, endorsement and summary files where they exist); key key.json and KEY.md.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions tr/IMG_<record>_*.txt and the machine decipherments read/<record>.txt (with the clear copy, endorsement and summary files where they exist); key key.json and KEY.md.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the nine read/*.txt files read through. The deciphered runs are unspaced and garbled every few lines in eight letters (by-eye coherence 55-80%), so sentences that run through the cipher cannot be built: R3811-R3815, R4625, R4645, R4736 relabelled decoded, not read; R4734's short runs read (kept read, reviewed B). fraction_read 0.999 (tokens with a value) -> 0.021.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 22728, "types": 133, "tokens_per_type": 170.89, "score": -2.378, "nulls": {"random keys": {"n": 200, "mean": -4.857, "sd": 0.299, "max": -4.207, "z": 8.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.213, "sd": 0.006, "max": -3.206, "z": 131.9, "p": 0.1429}}, "power": -2.781, "verdict": "pass", "notes": "claimed per-occurrence score -2.403; polyphony 0.0; 22 unread tokens left out; annealer on the real text from random keys reached -2.781"}, 
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was rebuilt from the contemporary interlinear decipherment on p. 1 of the 17 Jan 1639 letter (R3811) and extended by homophonic solving with a German LM across all nine letters.",
   "contribution": ["transcription", "key recovered", "sender or date identified"],
   "class": "read in part",
-  "fraction_read": 0.999,
+  "fraction_read": 0.021,
   "verification": ["contemporary decipherment", "key confirms", "historical consistency", "statistical test"],
   "notes": "Key complete; all nine letters deciphered after a checked second transcription pass (21 Sept 2026, ~360 tokens corrected, 56 skipped lines restored); residual garble in lines where the image does not decide the digits, and in Latin passages. Checks: the R3811 interlinear glosses agree with the key; R3811 matches Mírka's 2012 summary; clear text continues the deciphered sense.",
   "gaps": [
@@ -425,7 +426,7 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "coverage.json (from decode.py over tr/*.txt): cipher tokens given a value by the key, 22,534 of 22,913 (nulls counted as valued); tokens with no value counted unread. fraction_coherent (0.65) stays a by-eye estimate: read/*.txt has no per-token sense marking, so coherence could not be measured.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: cipher tokens in the letters that read as sentences, R4734 = 480 of 22,913 (profile documents); the other eight are decoded, not read. Withdrawn as a reading figure: 0.999 = coverage.json (from decode.py over tr/*.txt): cipher tokens given a value by the key, 22,534 of 22,913 (nulls counted as valued); fraction_coherent (0.65) stays a by-eye estimate: read/*.txt has no per-token sense marking.",
   "key": "recovered",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment on R3811 p. 1 used to seed the key"},
@@ -435,6 +436,9 @@
    {
     "doc": "R3812",
     "label": "R3812, Hamburg, 3 Feb 1639",
+    "note": "read/R3812.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"nitobihmedietelfehl evensialiter\", \"quuartr\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R3812_I23106_P.txt",
      "tr/IMG_R3812_I23107_P.txt",
@@ -459,6 +463,9 @@
    {
     "doc": "R3811",
     "label": "R3811, Hamburg, 17 Jan 1639",
+    "note": "read/R3811.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"elbungteesertiudefendirenisr\", \"dassalistessere\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R3811_I23099_P.txt",
      "tr/IMG_R3811_I23100_P.txt",
@@ -475,6 +482,9 @@
    {
     "doc": "R3813",
     "label": "R3813, Hamburg, 27 Jan 1639",
+    "note": "read/R3813.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"dastelckunteremsalis\", \"oblatonessowirihmthu\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R3813_I23124_P1.txt",
      "tr/IMG_R3813_I23124_P2.txt",
@@ -505,6 +515,9 @@
    {
     "doc": "R3814",
     "label": "R3814, undated, 1639",
+    "note": "read/R3814.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"komenagditur\", \"decaeteroellasitspesnecdieidenominage\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R3814_I23145_P1.txt",
      "tr/IMG_R3814_I23145_P2.txt",
@@ -520,6 +533,9 @@
    {
     "doc": "R3815",
     "label": "R3815, Hamburg, 6 Feb 1639, to Ferdinand III",
+    "note": "read/R3815.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"puschwritficirtt\", \"wafenallon?nrung\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R3815_I27184_P1.txt",
      "tr/IMG_R3815_I27184_P2.txt",
@@ -535,6 +551,9 @@
    {
     "doc": "R4625",
     "label": "R4625, undated (late Jan / 10 Feb 1639), to Trauttmansdorff",
+    "note": "read/R4625.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"ofseferiertsiichesnoch\", \"silibusconseliisteluimus\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R4625_I27189_P1.txt",
      "tr/IMG_R4625_I27189_P2.txt",
@@ -553,6 +572,9 @@
    {
     "doc": "R4645",
     "label": "R4645, Hamburg, 13 Feb 1639",
+    "note": "read/R4645.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"weigdemenciodiezahn\", \"w?lnschonnichts\"; Latin runs and the P6 postscript worst); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R4645_I27398_P1.txt",
      "tr/IMG_R4645_I27398_P2.txt",
@@ -573,6 +595,8 @@
    {
     "doc": "R4734",
     "label": "R4734, 8 Apr 1639, copy",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "read/R4734.txt: a copy with short cipher runs inside clear German; the runs read and join the clear text into sentences (\"was expirante interpositione fur ein weeg zu ergreifen zu dem lieben Frieden\"; \"bis jede forma coniunctionis versichert\"). The clear lines marked [... not transcribed] are clear text left out, not cipher holes."},
+    "language": "de",
     "transcription": [
      "tr/IMG_R4734_I27761_P1.txt",
      "tr/IMG_R4734_I27761_P2.txt",
@@ -589,6 +613,9 @@
    {
     "doc": "R4736",
     "label": "R4736, Glückstadt, 14 Apr 1639",
+    "note": "read/R4736.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"kude?prosemperhaben\", \"qumnobisaveecispenitusenerts\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "tr/IMG_R4736_I27769_P1.txt",
      "tr/IMG_R4736_I27769_P2.txt",

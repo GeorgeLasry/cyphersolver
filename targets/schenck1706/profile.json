@@ -241,6 +241,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcr/R74xx.txt and reading/R74xx.txt for all fifteen letters; key key_table.json (letter cipher), codes_key.json (code values), key.py",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). reading/R74xx.txt read letter by letter: nine letters (R7486, R7488-R7494, R7496) break in most lines on unread runs, person codes and [?] marks, R7493 almost all [?] and codes in ll. 10-23 (docs/_check_reading.py 16-41% clean): relabelled decoded, not read. Six letters (R7487, R7495, R7497-R7500, 46-59% clean) build German sentences with the person codes as the main holes: kept read with reading_review B, overturning the audit's D for them. fraction_read 0.636 -> ~0.34 (estimated).",
+      "result": "partial",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
@@ -285,10 +292,10 @@
       "catalogue correction"
     ],
     "first_break": true,
-    "fraction_read": 0.636,
-    "fraction_read_method": "measured",
-    "fraction_read_source": "measure.py: Schenck letters, 1,361 cipher tokens = 682 letter-cipher numbers + 545 code numbers (3-digit and small word codes) + 134 dotted signs; read = 638 numbers in runs giving sense + 151 code tokens + 76 signs with a value",
-    "fraction_coherent": 0.935,
+    "fraction_read": 0.34,
+    "fraction_read_method": "estimated",
+    "fraction_read_source": "22 Oct 2026, reading audit: only letters that build sentences count. R7487, R7495, R7497, R7498, R7499 and R7500 read (person codes kept as numbers); their cipher numbers are about 663 of 1,956 counted in transcr/R7486-R7500.txt (every standalone number, a rough count), so about 0.34, estimated. Withdrawn as a reading figure: 0.636, measure.py (numbers in runs giving sense plus valued codes and signs over 1,361 cipher tokens), and fraction_coherent 0.935, which counted tokens, not sentences.",
+    "fraction_coherent": 0.34,
     "codes_open": {
       "open": 65,
       "total": 77,
@@ -336,105 +343,180 @@
         "label": "R7486, N. 18, Vienna, 7 March 1706",
         "transcription": "transcr/R7486.txt",
         "decryption": "reading/R7486.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 7 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 7 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7487, Vienna, 13 March 1706",
         "transcription": "transcr/R7487.txt",
         "decryption": "reading/R7487.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 13 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 13 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
+        },
+        "state": "read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7488, N. 15, Vienna, 27 March 1706",
         "transcription": "transcr/R7488.txt",
         "decryption": "reading/R7488.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 27 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 27 March 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7489, N. 27, Vienna, 8 May 1706",
         "transcription": "transcr/R7489.txt",
         "decryption": "reading/R7489.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 8 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 8 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7490, N. 28, Vienna, 12 May 1706",
         "transcription": "transcr/R7490.txt",
         "decryption": "reading/R7490.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 12 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 12 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7491, N. 31, Vienna, 22 May 1706",
         "transcription": "transcr/R7491.txt",
         "decryption": "reading/R7491.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 22 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 22 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7492, Vienna, 26 May 1706",
         "transcription": "transcr/R7492.txt",
         "decryption": "reading/R7492.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 26 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 26 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7493, N. 32, Vienna, 29 May 1706",
         "transcription": "transcr/R7493.txt",
         "decryption": "reading/R7493.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 29 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 29 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7494, N. 35, Vienna, 5 June 1706",
         "transcription": "transcr/R7494.txt",
         "decryption": "reading/R7494.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 5 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 5 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7495, N. 38, Vienna, 15 June 1706",
         "transcription": "transcr/R7495.txt",
         "decryption": "reading/R7495.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 15 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 15 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
+        },
+        "state": "read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7496, N. 39, Vienna, 16 June 1706",
         "transcription": "transcr/R7496.txt",
         "decryption": "reading/R7496.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 16 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 16 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "note": "Diplomatic transcription in which the clear German is broken by unread letter-cipher runs, unvalued three-digit person codes and [?] marks in most lines (water damage on some leaves); sentences break in most lines (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7497, N. 40, Vienna, 19 June 1706",
         "transcription": "transcr/R7497.txt",
         "decryption": "reading/R7497.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 19 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 19 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
+        },
+        "state": "read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7498, N. 41, Vienna, 23 June 1706",
         "transcription": "transcr/R7498.txt",
         "decryption": "reading/R7498.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 23 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 23 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
+        },
+        "state": "read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7499, N. 44, Vienna, 3 July 1706",
         "transcription": "transcr/R7499.txt",
         "decryption": "reading/R7499.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 3 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 3 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
+        },
+        "state": "read",
+        "language": "de"
       },
       {
         "doc": "R7486-R7500",
         "label": "R7500, N. 47, Vienna, 14 July 1706",
         "transcription": "transcr/R7500.txt",
         "decryption": "reading/R7500.txt",
-        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 14 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open."
+        "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 14 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
+        },
+        "state": "read",
+        "language": "de"
       }
     ],
     "key_file": [

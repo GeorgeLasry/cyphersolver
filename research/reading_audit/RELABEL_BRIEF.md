@@ -32,7 +32,8 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Model: `targets/matig
    `python docs/_check_profile.py <folder>` must stay `result: valid`.
 4. **NOTES.md**: a short dated block at the top of the status ("22 Oct 2026, reading audit: ...") naming what reads
    and what is decoded, not read; a `## Remaining gaps` line per decoded-not-read document with blocker
-   `not-attempted` (workable) or the outside blocker that applies.
+   `not-attempted` (workable) or the outside blocker that applies. If any gap is `not-attempted`, the first line of the
+   status must read `Status: in progress` (the read-in-part rule in CLAUDE.md).
 5. **The page** `docs/<slug>.html` (slug from `docs/_build_site.py` PAGES; usually the folder name): if its summary,
    At a glance or headline figure claims a reading that is now decoded-not-read, correct those sentences in the same
    plain style. Do not rebuild the site; do not touch other targets, the README or ledgers (the lead does those).

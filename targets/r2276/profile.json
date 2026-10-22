@@ -225,6 +225,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass transcription t1-t3.txt and the whole-letter reading reading.txt; keys key_v8.json and the reading key key_v7.json",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.txt read line by line. The torn-edge and worst-imaged bands (p. 1 ll. 16-26, 38-40; p. 2 ll. 1-3, 13-21, 36-40) have a ? or [...] in nearly every clause and only fragments can be built; the rest builds French sentences (55% of sentences clean in docs/_check_reading.py). texts entry split; the bands relabelled decoded, not read; fraction_read 0.918 -> 0.693 (signs in the lines that read).",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -238,9 +245,9 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.918,
+  "fraction_read": 0.693,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over reading.txt and t1-t3.txt with key_v7.json: 3598 of 3920 cipher signs aligned to letters of real French words or declared nulls ('?' words and skipped signs count as unread); strict key agreement 3484/3920 = 0.889. Re-measured 5 Oct 2026 with key_v8: sense 3600/3920 = 0.918.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only lines that build sentences count. Signs per line counted in t1-t3.txt: the lines that read (p. 1 ll. 1-15, 27-37; p. 2 ll. 4-12, 22-35; p. 3) hold 2,614 of 3,772 transcribed signs = 0.693; p. 1 ll. 16-26, 38-40 and p. 2 ll. 1-3, 13-21, 36-40 (1,158 signs) are decoded, not read. Withdrawn as a reading figure: 0.918 (measure.py, 3600/3920 signs inside real French words or nulls, key_v8, 5 Oct 2026); strict key agreement 3484/3920 = 0.889.",
   "codes_open": {
    "open": 2,
    "total": "unknown",
@@ -287,14 +294,30 @@
   "texts": [
    {
     "doc": "R2276",
-    "label": "Letter from Reims, 19 June [1589], BnF fr. 20974 pp. 1-3 (DECODE R2276)",
+    "label": "Letter from Reims, 19 June [1589], BnF fr. 20974 pp. 1-3 (DECODE R2276): the lines that read (p. 1 ll. 1-15, 27-37; p. 2 ll. 4-12, 22-35; p. 3)",
     "transcription": [
      "t1.txt",
      "t2.txt",
      "t3.txt"
     ],
     "decryption": "reading.txt",
-    "summary": "Written from Reims, probably by Jean de Piles, abbé d'Orbais: while he was still in Rome the chapter of Reims made an election or postulation for the archbishopric, of the grand archdeacon Brulart (who consented in tears) and of the dean Frison, now in Rome with the act of postulation. It names the Cardinal de Lorraine, Cardinal de Pellevé, Cardinal Allen, Mayenne, the abbey of Saint-Remi, 18,000 lansquenets and 8,000 reiters for the Low Countries against Parma, and Elbeuf's ransom agreed at 50,000 écus. Read in part; '?' marks unread words."
+    "summary": "Written from Reims, probably by Jean de Piles, abbé d'Orbais: while he was still in Rome the chapter of Reims made an election or postulation for the archbishopric, of the grand archdeacon Brulart (who consented in tears) and of the dean Frison, now in Rome with the act of postulation. It names the Cardinal de Lorraine, Cardinal de Pellevé, Cardinal Allen, Mayenne, the abbey of Saint-Remi, 18,000 lansquenets and 8,000 reiters for the Low Countries against Parma, and Elbeuf's ransom agreed at 50,000 écus. Read in part; '?' marks unread words.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "reading.txt read line by line: p. 1 ll. 1-15 and 27-37, p. 2 ll. 4-12 and 22-35 and all of p. 3 build French sentences with scattered ? (the letter to the Pope on the postulation, Brulart and Frison, the Reims league assembly, the army of lansquenets and reiters, the Elbeuf ransom of 50,000 ecus). 2,614 of 3,772 transcribed signs. Audit grade C refined: the rest is split off as decoded, not read."
+    },
+    "language": "fr"
+   },
+   {
+    "doc": "R2276",
+    "label": "Letter from Reims, 19 June [1589], BnF fr. 20974 pp. 1-3 (DECODE R2276): p. 1 ll. 16-26 and 38-40, p. 2 ll. 1-3, 13-21 and 36-40",
+    "transcription": ["t1.txt", "t2.txt", "t3.txt"],
+    "decryption": "reading.txt",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Torn-edge and worst-imaged lines: a ? or [...] in nearly every clause, only fragments can be built (reading audit, 22 Oct 2026); 1,158 of 3,772 transcribed signs."
    }
   ],
   "key_file": [

@@ -5,6 +5,11 @@ item 243) held all 36 cipher enclosures of Francia 22; 34 of them are in Meister
 R17 from Francia 18: [`targets/morosini1588/`](../morosini1588/NOTES.md), page `morosini1588.html` ("a different
 key, with its own page"). These two enclosures are in a second, syllabic key that DECODE files as "ASV – F22b".
 
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R53 and R54 are **decoded, not read**: R53 gives Italian fragments with garbled strings in nearly every sentence, R54
+is mostly noise. Class read in part -> not read, method -> not solved (Lasry's F22b key kept as a part); 0.752 withdrawn
+as a reading figure. The outcome line below is superseded.
+
 **Outcome: read with known key, in part.** George Lasry's partial reconstruction of the F22b key (DECODE R53 D3187,
 R54 D3188, 24 Oct 2020, about 70 elements) was applied on 19 Sept 2026 by the decoder of `morosini1588`
 (`decrypt.py --f22b`). R53 reads in most of its length, R54 in fragments (0.752 of letters in attested words, measured). Session 2026-09-19; split, measure and key-rebuild attempt 2026-10-14.
@@ -48,6 +53,8 @@ real words); by eye R53 reads in most of its length, R54 in fragments. The 19 Se
 
 ## Remaining gaps
 
+- R53, decoded, not read - blocker: no-key-material; see the next lines
+- R54, decoded, not read - blocker: no-key-material
 - R53, R54: the stretches that do not read as sense (about a quarter of R53, more of R54) - blocker: no-key-material; Lasry's F22b reconstruction (about 70 elements) is the only key material; Meister 1906 prints no second Morosini key; no decipherment or clear copy on the records; a rebuild from these 1,448 figures does not fix the missing values (Escalation)
 - R53, R54 nomenclator groups outside Lasry's list - blocker: open-codes; few occurrences, no context yet
 

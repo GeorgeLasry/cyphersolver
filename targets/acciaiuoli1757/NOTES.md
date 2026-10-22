@@ -1,4 +1,6 @@
-# Acciaiuoli (nuncio in Lisbon) to the Secretariat of State, 1758–60 — READ
+# Acciaiuoli (nuncio in Lisbon) to the Secretariat of State, 1758–60 — read in part (reading audit, 22 Oct 2026)
+
+Status: in progress (reading audit, 22 Oct 2026: some documents are decoded, not read; see Remaining gaps).
 
 Catalogue: "Portuguese nuncio Acciaiuoli and the abbot Testa to The Secretariat", DECODE R25, R195–R201 (8 records).
 ASV (AAV), Segreteria di Stato, Portogallo 117 ("Lettere di mons. Acciaiuoli, nunzio in Portugallo, e dell'abbate
@@ -10,6 +12,11 @@ letter stream, but DECODE posted no Italian text and left the 107 distinct four-
 split into words and 25 codes are fixed from the three contemporary decipherments on the leaves (R197–R199), plus
 a few more from context. The full text is in `READING.md`. About 80 of the 107 distinct codes that occur once or twice stay open, and
 a few passages in the long R200/R201 are broken by transcription slips.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
+R196, R197, R198 and R199 read (the three deciphered on the leaf, and R196 with a few open codes). **R25, R195, R200 and
+R201 are decoded, not read**: the story follows, but an open code or a gap breaks almost every sentence. Read: 2,050 of
+8,326 cipher tokens (24.6%). The earlier "READ" claim below is withdrawn.
 
 ## Key
 
@@ -48,3 +55,18 @@ No 2-digit element begins with 2 or contains 6, so the parse is deterministic. U
 
 Contamination: Lasry's letter-level decryption was public on DECODE (logged-in attachments) and was used directly.
 The word division, the code identifications and the historical reading are new here.
+
+## Remaining gaps
+- R25, R195, R200, R201 decoded, not read (6,276 tokens; open codes in almost every sentence; reading audit 22 Oct 2026) - blocker: not-attempted; value the recurring codes from the clear letters in Portogallo 117 and the three deciphered leaves, fix the transcription slips on the images, write out and translate
+
+## Escalation
+
+Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
+not read. None of these steps has been redone since; each is open for those documents.
+
+- [ ] siblings: other letters of the same series or key, read or deciphered at the time
+- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
+- [ ] known-keys: other keys of the same correspondents tried
+- [ ] print: printed editions and calendars searched for these letters
+- [ ] key-rebuild: the key corrected against the documents that read
+- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images

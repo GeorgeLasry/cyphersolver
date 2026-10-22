@@ -176,19 +176,26 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): raince_cipher.txt (segmented token ids) and gold/labels.txt; readings trans/reading_v3.txt (latest), trans/reading_edited.txt and the clear close trans/p31_clear_close.txt",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). trans/reading_edited.txt and reading_v3.txt read: nearly every line of pp. 29, 30, 31 and 105 is broken by '…' or (?) ('… de la ca[pi]tulation faicte …', '… court … depuis …'); isolated clauses survive, the sentences cannot be assembled (docs/_check_reading.py: 28-41% of sentences clean). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.87 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "Tomokiyo's 1526 key for the Raince letters of fr. 2984 (cryptiana francis.htm, 2020) was re-measured off his key image and applied to a transcription of the unread 13 May and 20 Nov 1526 passages.",
+  "method": "not solved",
+  "method_basis": "Tomokiyo's 1526 key for the Raince letters, re-measured off his key image and applied to a glyph-by-glyph transcription (read with known key, recorded under parts), decodes the 13 May and 20 Nov 1526 passages into clauses broken by unresolved stretches in nearly every line.",
   "contribution": [
    "transcription"
   ],
-  "class": "read in part",
-  "fraction_read": 0.87,
-  "fraction_coherent": 0.87,
+  "class": "not read",
+  "fraction_read": 0.0,
+  "fraction_coherent": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure_sense.py on trans/reading_v3.txt: letters in period-French words / non-null tokens per line (5,265); ?, (?) and word signs count unread.",
+  "fraction_read_source": "22 Oct 2026, reading audit: the passages do not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.87, measure_sense.py on trans/reading_v3.txt (letters in period-French words over 5,265 non-null tokens), which counted letters in words, not sentences.",
   "key": "partial",
   "codes_open": {
    "open": 2,
@@ -228,7 +235,19 @@
      "trans/reading_edited.txt",
      "trans/p31_clear_close.txt"
     ],
-    "summary": "The ciphered residue of two letters from Nicolas Raince in Rome to Anne de Montmorency, 13 May and 20 November 1526, about 106 lines unread anywhere found: news of the court, the Castilians and Burgundians after the capitulation, the Pope and the Emperor. Deciphered with Tomokiyo's 1526 key as re-measured here (CALIBRATION.md); reading_v3.txt is the latest line-by-line reading (unresolved glyphs marked ?), reading_edited.txt the earlier running French."
+    "summary": "The ciphered residue of two letters from Nicolas Raince in Rome to Anne de Montmorency, 13 May and 20 November 1526, about 106 lines unread anywhere found: news of the court, the Castilians and Burgundians after the capitulation, the Pope and the Emperor. Deciphered with Tomokiyo's 1526 key as re-measured here (CALIBRATION.md); reading_v3.txt is the latest line-by-line reading (unresolved glyphs marked ?), reading_edited.txt the earlier running French.",
+    "note": "The edited reading (trans/reading_edited.txt) has '…' or (?) in nearly every line of pp. 29, 30, 31 and 105; only isolated clauses survive (Pietro Anthonio, la peste qui est au logis), so the letters' sentences cannot be assembled, though 86 of 106 lines were read glyph by glyph (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
+   }
+  ],
+  "parts": [
+   {
+    "label": "fr. 2984 pp. 29-31 and 105 (Tomokiyo 1526 key applied; decoded, not read)",
+    "records": "BnF fr. 2984 pp. 29-31, 105",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Tomokiyo's 1526 key re-measured (CALIBRATION.md) on a glyph-by-glyph transcription of the microfilm; clauses broken by unresolved stretches in nearly every line. Decoded, not read (reading audit, 22 Oct 2026)."
    }
   ]
  }

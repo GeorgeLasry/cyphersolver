@@ -235,7 +235,8 @@
    "result": "worked"
   },
   {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 862 tokens, 21 types, la order 4: reading -2.091 per letter; random keys -6.002 (z 7.4); key annealed onto shuffled ciphertext best -3.682 (mean -3.757, z 37.1); annealer on the real text -2.091. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign files and page tsv per letter, sysB/decoded.txt, sysB/R9323_decoded.txt, r9403/decoded.txt; key sysB/key_from_glosses.tsv.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign files and page tsv per letter, sysB/decoded.txt, sysB/R9323_decoded.txt, r9403/decoded.txt; key sysB/key_from_glosses.tsv.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the four decodes read through. R9322 and R9403 build Latin sentences (kept read, reviewed B); R9417 has systematic letter slips in most words of half the letter and R9323 a doubtful sign in nearly every line, both relabelled decoded, not read. fraction_read 0.953 -> 0.693.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 862, "types": 21, "tokens_per_type": 41.05, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -6.002, "sd": 0.527, "max": -4.269, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.757, "sd": 0.045, "max": -3.682, "z": 37.1, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.002; polyphony 0.049; 3476 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -247,9 +248,9 @@
   ],
   "class": "read in part",
   "key": "recovered",
-  "fraction_read": 0.953,
+  "fraction_read": 0.693,
   "fraction_read_method": "measured",
-  "fraction_read_source": "words: measure_sysb.py over sysB/decoded.txt and sysB/R9323_decoded.txt (R9322 429/445, R9417 217/219, R9323 124/163; machine decodes, letter slips inside recognisable words counted as read) plus r9403/decoded.txt 414/416: 1184/1243",
+  "fraction_read_source": "Reading audit 22 Oct 2026: words of the letters that read as sentences, R9322 445 + R9403 416 = 861 of 1,243 (measure_sysb.py word counts); R9417 (219) and R9323 (163) are decoded, not read. Withdrawn as a reading figure: 0.953 = words: measure_sysb.py over sysB/decoded.txt and sysB/R9323_decoded.txt (R9322 429/445, R9417 217/219, R9323 124/163; machine decodes, letter slips inside recognisable words counted as read) plus r9403/decoded.txt 414/416: 1184/1243.",
   "codes_open": {
    "open": 1,
    "total": 3,
@@ -289,6 +290,8 @@
    {
     "doc": "R9322",
     "label": "R9322, ff. 121-122, Buda 24 Nov 1529",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "sysB/decoded.txt R9322 p1-p2 read through: continuous Latin sentences (the King thanks the duke for his counsel; the Sultan withdrew for the plague and left the kingdom of Hungary to King John; King John's letter for the Jew Lazarus) with single-letter slips and a few [D]/[X] name signs; only the last lines of p2 (address, scipsit) are garbled."},
+    "language": "la",
     "transcription": [
      "sysB/R9322_signs.txt",
      "sysB/R9322_p1.tsv",
@@ -300,6 +303,9 @@
    {
     "doc": "R9417",
     "label": "R9417, f. 264, Kraków 16 June [1530]",
+    "note": "sysB/decoded.txt R9417: p2 ll. 1-11 read as Latin, but p2 ll. 12-21 and p1 are systematic letter slips (m for a, e for r, t for b: \"nisi isto mnno concoedim fist\") in most words, so sentences must be rebuilt, not read off",
+    "state": "decoded, not read",
+    "language": "la",
     "transcription": [
      "sysB/R9417_signs.txt",
      "sysB/R9417_p1.tsv",
@@ -311,6 +317,9 @@
    {
     "doc": "R9323",
     "label": "R9323, f. 123, [1529-30]",
+    "note": "sysB/R9323_decoded.txt: a ? or bracket in nearly every line (\"oaun?ia\", \"per?nci pum?\"); faint signs",
+    "state": "decoded, not read",
+    "language": "la",
     "transcription": [
      "sysB/R9323_signs.txt",
      "sysB/R9323_p1.tsv"
@@ -321,6 +330,8 @@
    {
     "doc": "R9403",
     "label": "R9403, ff. 226-228, Łask 17 Sept 1531",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9403/decoded.txt read through: continuous Latin (Łaski thanks for the letters brought by Ruffus; the Turk's answer to King Ferdinand's envoys: no peace unless he cedes Hungary to King John) with rare slips; the audit row did not read this letter."},
+    "language": "la",
     "transcription": [
      "r9403/signs.txt",
      "r9403/transcription.tsv"

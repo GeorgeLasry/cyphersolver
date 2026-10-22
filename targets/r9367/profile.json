@@ -135,21 +135,28 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): r9367/transcription.txt + signs.txt, the rough reading r9367/reading.txt (unread signs marked); key copied from NOTES.md and the reading header to texts/key.md, with r9367/key_match.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). r9367/reading.txt read line by line: the cipher runs carry unread signs mid-word in most lines ('{s w a r d e [#] i n l?}', '{sa ber vir bar niwt [#] ...}'); only a few phrases assemble (docs/_check_reading.py: 14 of 35 sentences clean, mostly the clear German). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.545 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "The key is block 2_4 of the key register R9423 in the same volume, applied after its frequent signs were matched by shape; five values were added from the letter.",
+  "method": "not solved",
+  "method_basis": "Block 2_4 of the key register R9423 in the same volume, matched by shape and extended by five values (read with known key, recorded under parts), decodes the cipher runs only into phrases with unread signs mid-word; no cipher sentence can be built.",
   "contribution": [
    "transcription",
    "key extended or corrected",
    "decipherment with ambiguous key"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.545,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over the {..} cipher runs of r9367/reading.txt: 78/143 words (words with _, ?, [#] or a single letter unread); an upper bound, since some counted words are letter strings of a working reading",
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document's cipher does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.545, measure.py over the {..} runs of r9367/reading.txt (78 of 143 words), an upper bound that counted words, not sentences.",
   "codes_open": {
    "open": 2,
    "total": "unknown"
@@ -186,12 +193,24 @@
      "r9367/signs.txt"
     ],
     "decryption": "r9367/reading.txt",
-    "summary": "A son to his father, Monday after Palm Sunday 1535, in German with cipher passages: he was questioned about strange matters and denied everything, is taken for a poor writer and sent to learn, fears for his person, and reports the Turks coming up; a postscript names a Friedrich and 'Schmalcz' (Schmalkalden?). The cipher runs are read in part with key block 2_4 of the register R9423 (# and O open)."
+    "summary": "A son to his father, Monday after Palm Sunday 1535, in German with cipher passages: he was questioned about strange matters and denied everything, is taken for a poor writer and sent to learn, fears for his person, and reports the Turks coming up; a postscript names a Friedrich and 'Schmalcz' (Schmalkalden?). The cipher runs are read in part with key block 2_4 of the register R9423 (# and O open).",
+    "note": "Per-line working reading: clear German in bars, decoded cipher in braces with '_', '[#]' and '?' marks; most cipher runs have unread signs mid-word ('{s w a r d e [#] i n l?}'), so the cipher sentences cannot be assembled beyond a few phrases (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "de"
    }
   ],
   "key_file": [
    "texts/key.md",
    "r9367/key_match.md"
+  ],
+  "parts": [
+   {
+    "label": "R9367 cipher runs (register key 2_4 applied; decoded, not read)",
+    "records": "DECODE R9367",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "R9423 block 2_4, re-matched by shape, plus five values from the letter; phrases only (seltsam khinst gefragt, aber alles verlaugnet, Tirckhen herauf ziechen). Decoded, not read (reading audit, 22 Oct 2026)."
+   }
   ]
  }
 }

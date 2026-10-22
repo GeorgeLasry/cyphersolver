@@ -2,6 +2,11 @@
 
 Status: read in part — key recovered from the ciphertext alone; 876 of 1,495 cipher tokens (58.6%) in words read as sense, 29.2% more in doubtful words.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part, lines
+L01-L06 only** (424 of about 1,500 tokens, 28%): the envoys arrived safe and are ready to follow the Signoria's
+commands; Domenico met a servant of <7H> this morning. **L07-L26 are decoded, not read**: unread runs, queried words
+and code signs in nearly every line give a gist, not sentences. The 58.6% is withdrawn as a reading figure.
+
 Split on 14 Oct 2026 from `siena1421` under the one-key rule (George Lasry, 14 Oct 2026). The old entry grouped the
 whole bundle of Sienese cipher letters (Concistoro 2308 fasc. 2), each in its own key. This letter has a key of its
 own; the other letters with recovered keys are their own entries, each a different cipher with its own page: no. 25
@@ -54,6 +59,7 @@ potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full lines + 
 `docs/_validate.py siena14 --write`: pass (see profile.json outcome.validation).
 
 ## Remaining gaps
+- L07-L26 decoded, not read (unread runs and queried words in nearly every line; reading audit 22 Oct 2026) - blocker: illegible; see the line below (small signs at the DECODE resolution)
 - doubtful and unread words (about 40% of 1,495 tokens) and the codes <7H>, <Z7>, (420) - blocker: illegible; small signs at the DECODE resolution, mostly the first lines, lines 13-15 and the subscription; the key itself is recovered
 
 ## Escalation

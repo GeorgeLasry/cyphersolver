@@ -1,6 +1,13 @@
 # A Vienna agent ("Sidon") to Baron Schenck, chamberlain of Augustus II, 1706 — DECODE R7486-R7500
 
-Status: read in part (written up 9 Oct 2026; own entry since 14 Oct 2026)
+Status: in progress (read in part; written up 9 Oct 2026; own entry since 14 Oct 2026)
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+* **Read** (reading_review B, overturning the audit's D for these): R7487, R7495, R7497, R7498, R7499, R7500. They build
+  German sentences; the holes are mostly person codes kept as numbers. English translations still to be written.
+* **Decoded, not read**: R7486, R7488, R7489, R7490, R7491, R7492, R7493, R7494, R7496 (sentences break in most lines on
+  unread runs, codes and [?]; R7493 water-damaged).
+* 63.6% (and 93.5% coherent) withdrawn as reading figures; about 0.34 (estimated) is the read letters' share.
 
 **Split on 14 Oct 2026** from `sieniawski1708` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue entry 333
 ("Letters to Hetman Sieniawski and Dresden to Schenck", DECODE R7468-R7500) joined these fifteen letters with the
@@ -111,6 +118,16 @@ tokens + 37 small codes; 77 distinct codes, 5 with a value (126 tokens). All cip
   **all cipher tokens 1,361, read 865 = 63.6%**. Validation (`docs/_validate.py`, 11 Oct 2026, `validation.tsv`): pass.
 
 ## Remaining gaps
+- R7486, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7488, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7489, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7490, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7491, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7492, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7494, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7496, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
+- R7493, decoded, not read - blocker: illegible; water damage on all leaves
+- the six read letters: English translations not yet written - blocker: not-attempted
 - 65 of 77 three-digit codes (394 tokens), mostly persons (187, 181, 166, 190, 254, 258, 132, 193, 186 ...) - blocker: no-key-material; roles fixed from context, names not; no key with the letters, on DECODE or in print; the 100s-200s are not alphabetical, so position gives no bound; the Saxon keys would be in the Hauptstaatsarchiv Dresden and the Wiener Diarium 1706 (dated cribs) is behind a bot check the session may not pass
 - dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens) - blocker: no-key-material; articles or pronouns, no value fits every occurrence and none is glossed
 - 8 letter-cipher runs, 44 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: too-short; digits confirmed twice on the images, single short runs with no second occurrence

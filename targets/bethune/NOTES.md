@@ -9,6 +9,12 @@ Villeroy-office cipher of the same design as the one Bazeries printed for Béthu
 figures and letter-shaped symbols with homophones; letters with a comma, one dot or two dots = words in alphabetical
 series; two-digit figures = names), with different values.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. The
+10 November letter reads (from its clear minute). **The 9 and 22 November letters are decoded, not read**: the 9 Nov
+decode gives about half the words, in lines that do not build sentences; the 22 Nov cipher runs are fragments inside
+clear French. About a fifth of the cipher tokens read (estimated); "about six words in ten" below is withdrawn as a
+reading figure.
+
 Working files: `corpus.txt` (known-plaintext pairs), `ct_f33.txt` (the 9 Nov cipher, 1.5× transcription),
 `em_align.py` / `em_model.json` (EM alignment and the learned P(unit | symbol)), `decode.py` (character 5-gram
 Viterbi) and `worddecode.py` (lexicon decoder, trie over the Xivrey volumes), `decode_f33.txt` (their output),
@@ -418,6 +424,7 @@ Not in Tomokiyo (his Béthune ciphers are fr. 15975 for 1602–05 and fr. 15972 
 
 ## Remaining gaps
 
+- 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs decoded, not read (2,849 tokens; reading audit 22 Oct 2026) - blocker: illegible; the glyph transcription (~70% accurate) caps the decode; re-transcribe on full-resolution crops, using the glossed leaves ff. 49v-50r, 53r, 56r to fix the confusable glyphs
 - 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
 - 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
 - code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: open-codes; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned

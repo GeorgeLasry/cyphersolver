@@ -1,5 +1,14 @@
 # Morosini (nuncio, then legate in France) to Rome, 1587–89: the Meister no. 40 key — READ
 
+Status: in progress
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+all 35 enclosures (R17-R58) are **decoded, not read**. The decode (Meister's key on DECODE's volunteer transcription)
+is lowercase word-split output with garbled words in nearly every line; the gist follows, sentences cannot be built
+without guessing (`docs/_check_reading.py`: 28-72% of sentences clean). Class read -> not read, method -> not solved
+(the known key kept as a part); 0.998 (key coverage) withdrawn as a reading figure. The "Result: read" below is
+superseded. Next: re-transcribe from the images where garbles cluster, starting with the shortest enclosures.
+
 Catalogue item 243 (class B). ASV, Segreteria di Stato, Francia 22 ("Francia, card. Morosino, 1588 e 1589",
 ff. 10–583, letters 25 July 1588 – 20 Sept 1589). DECODE R18–R22, R27–R49, R51, R52, R55–R58: 34 cipher
 enclosures, items 22/1–31 and 22/34–37 (22/29 has no DECODE record; R23–R26 and R50 in the numeric run are other
@@ -75,6 +84,41 @@ clear duplicates of the covering letters are transcribed on DECODE (R18/R19 DOC_
 Images: DECODE, login; kept git-ignored (`img/`, `decode/*.png|pdf|htm`).
 
 ## Remaining gaps
+- R17, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R18, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R19, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R20, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R21, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R22, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R27, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R28, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R29, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R30, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R31, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R32, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R33, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R34, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R35, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R36, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R37, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R38, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R39, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R40, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R41, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R42, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R43, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R44, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R45, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R46, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R47, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R48, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R49, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R51, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R52, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R55, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R56, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R57, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
+- R58, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
 - R17 five unknown codes (519, 911, 556, 722, 561) - blocker: open-codes; Meister no. 40 reads all five pages except these; most look like transcription slips, images not re-read
 - dotted nomenclator codes outside Meister's list (162, 191, 250, 516, 617, 716, 770; ~1 per page) - blocker: open-codes; most look like transcription slips of a dotted digit; not checked against the images
 - item 22/29 - blocker: needs-physical-access; no DECODE record for it; not imaged, so its key is not known

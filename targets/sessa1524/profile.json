@@ -287,7 +287,8 @@
    "result": "partial"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3617 tokens, 206 types, es-golden-age order 4: reading -2.169 per letter; random keys -3.449 (z 6.3); key annealed onto shuffled ciphertext best -2.421 (mean -2.434, z 34.3); annealer on the real text -2.167. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription_f128.txt with the reading copied from NOTES.md section 3 to texts/f128_decryption.md; r9873_cipher.txt and r9898_cipher.txt (cipher line with reading) with read_r9873.md / read_r9898.md; key key_working.md", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription_f128.txt with the reading copied from NOTES.md section 3 to texts/f128_decryption.md; r9873_cipher.txt and r9898_cipher.txt (cipher line with reading) with read_r9873.md / read_r9898.md; key key_working.md", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): texts/f128_decryption.md, r9873_cipher.txt/read_r9873.md and r9898_cipher.txt/read_r9898.md read. f. 128's nine lines build Spanish sentences with single-word holes (reviewed B); R9873 and R9898 are line-by-line working files with an open group or non-word in most sentences and English gists, relabelled decoded, not read. fraction_read 0.9 (f. 128 only) -> 0.021 (tokens of all three documents in text that reads).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3617, "types": 206, "tokens_per_type": 17.56, "score": -2.169, "nulls": {"random keys": {"n": 200, "mean": -3.449, "sd": 0.203, "max": -2.946, "z": 6.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.434, "sd": 0.008, "max": -2.421, "z": 34.3, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.119; polyphony 0.053; 1936 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -298,9 +299,9 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.9,
+  "fraction_read": 0.021,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription_f128.txt pass-2 lines P1-P8: 116 cipher tokens; after pass 16 rus (= dicho) and hay (= aunque, tentative) read, so 104/116; open: vo, per and the m-re clause plus the end 'r-[...]' (~10). Sibling letters measured separately (read_r9873.md 87.5%, read_r9898.md 77.2%).",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. f. 128's 116 cipher tokens (transcription_f128.txt, 104 read) read; R9873 (2,473 tokens in the (b) reading) and R9898 (3,059) are decoded, not read. 116 of 5,648 = 0.021. Withdrawn as a reading figure: 0.9 (f. 128 alone, 104/116) and the siblings' 92.8% / 79.8% (tokens read as sense, measure_read.py, pass 17).",
   "key": "partial",
   "codes_open": {
    "open": 2,
@@ -356,7 +357,15 @@
     "label": "R9877 / R9878, Rome, 18 Apr 1524 (RAH Salazar A-31 ff. 128-131)",
     "transcription": "transcription_f128.txt",
     "decryption": "texts/f128_decryption.md",
-    "summary": "The Duke of Sessa, imperial ambassador in Rome, to Charles V (DECODE's '1424' is a typo): the bishop of Veroli's report from Constance on the Swiss diet and cantons arming for France; in cipher, that the Pope's secretary Felice would not show the bishop's own letters, that the report agrees with what the bishop wrote to the postmaster, and that Sessa asked the Pope for a provision for the Swiss business, having opened the peace-and-truce negotiation. Key rebuilt from the sibling letters' contemporary decipherments."
+    "summary": "The Duke of Sessa, imperial ambassador in Rome, to Charles V (DECODE's '1424' is a typo): the bishop of Veroli's report from Constance on the Swiss diet and cantons arming for France; in cipher, that the Pope's secretary Felice would not show the bishop's own letters, that the report agrees with what the bishop wrote to the postmaster, and that Sessa asked the Pope for a provision for the Swiss business, having opened the peace-and-truce negotiation. Key rebuilt from the sibling letters' contemporary decipherments.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "texts/f128_decryption.md: the nine cipher lines build Spanish sentences (Felice would not show the bishop's letters; it agrees with what the bishop wrote to the postmaster; Sessa asked the Pope for a provision for the Swiss business, since he has the pretext, having opened the peace-and-truce talks) with single-group holes (vo, ruc/hay, pa) and one spelled clause unread; the sense is given in English. Audit grade C refined for f. 128: the holes are single words in a short passage whose frame holds."
+    },
+    "state": "read",
+    "language": "es"
    },
    {
     "doc": "r9873",
@@ -366,7 +375,10 @@
      "r9873_cipher.txt",
      "read_r9873.md"
     ],
-    "summary": "Sessa to Charles V, a holograph with cipher runs and a postscript wholly in cipher; no decipherment is bound with it (Bergenroth's CSP Spain ii 637 calendars Goicoechea's 19th-century reading, and nos. 636/638 the triplicate and the court abstract, used only as a topic crib). Transcribed in full; each line (a) cipher, (b) reading."
+    "summary": "Sessa to Charles V, a holograph with cipher runs and a postscript wholly in cipher; no decipherment is bound with it (Bergenroth's CSP Spain ii 637 calendars Goicoechea's 19th-century reading, and nos. 636/638 the triplicate and the court abstract, used only as a topic crib). Transcribed in full; each line (a) cipher, (b) reading.",
+    "note": "r9873_cipher.txt is a line-by-line working file: (b) lines of spelled letters and code values with an open group or a non-word in most sentences (256 tokens in open groups, 52 spelled letters without sense); read_r9873.md gives an English gist, not a text (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "r9898",
@@ -376,7 +388,10 @@
      "r9898_cipher.txt",
      "read_r9898.md"
     ],
-    "summary": "Sessa to Charles V, written on the day of Pavia, before the news: Italy, the Pope and the datary's attempt to bring the Duke over to the French; six runs carry a marginal decipherment of the time, the rest is read here with the key. Not calendared in CSP iii.1."
+    "summary": "Sessa to Charles V, written on the day of Pavia, before the news: Italy, the Pope and the datary's attempt to bring the Duke over to the French; six runs carry a marginal decipherment of the time, the rest is read here with the key. Not calendared in CSP iii.1.",
+    "note": "r9898_cipher.txt is a line-by-line working file with open groups in most sentences (300 tokens) and 398 spelled letters without sense, the bleed-through pages a sign-level transcription; only the six runs with a marginal decipherment read as sentences (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    }
   ],
   "key_file": "key_working.md"

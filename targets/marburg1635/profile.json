@@ -158,17 +158,18 @@
    "date": "2026-09-30"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 524 tokens, 21 types, de-1640s order 4: reading -2.212 per letter; random keys -5.481 (z 5.6); key annealed onto shuffled ciphertext best -3.479 (mean -3.55, z 31.6); annealer on the real text -2.179. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher_tokens.txt and the sign-by-sign reading_tokens.txt; the normalised reading and the key table copied from NOTES.md to texts/R4500_decryption.md and texts/key.md.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher_tokens.txt and the sign-by-sign reading_tokens.txt; the normalised reading and the key table copied from NOTES.md to texts/R4500_decryption.md and texts/key.md.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_tokens.txt and the normalised reading read through. Lines 8-14 build one clean German sentence (kept read, reviewed B); lines 1-7 are garbled or conjecture in brackets and were split into a second entry, decoded, not read. Class read -> read in part; fraction_read 0.974 (signs with a value) -> 0.52.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 524, "types": 21, "tokens_per_type": 24.95, "score": -2.212, "nulls": {"random keys": {"n": 200, "mean": -5.481, "sd": 0.58, "max": -4.351, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.55, "sd": 0.042, "max": -3.479, "z": 31.6, "p": 0.1429}}, "power": -2.179, "verdict": "pass", "notes": "claimed per-occurrence score -2.204; polyphony 0.002; 14 unread tokens left out; annealer on the real text from random keys reached -2.179"}, 
   "method": "key recovered from ciphertext-only",
   "method_basis": "The substitution was rebuilt by homophonic annealing against a 1500s German model, seeded with repeated 'und'/'under' patterns; the contemporary interlinear gloss on cipher lines 1-4 of R4500 served as the control and fixed two values (M = w, 8 = o).",
   "contribution": ["transcription", "key recovered"],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
-  "fraction_read": 0.974,
+  "fraction_read": 0.52,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_tokens.txt: 538 cipher signs (12 joined = one), 14 marked ? unread",
+  "fraction_read_source": "Reading audit 22 Oct 2026: signs in the cipher lines that read as sentences, ll. 8-14 = 280 of 538 (reading_tokens.txt); ll. 1-7 (258) are decoded, not read. Withdrawn as a reading figure: 0.974 = reading_tokens.txt: 538 cipher signs (12 joined = one), 14 marked ? unread.",
   "verification": ["contemporary decipherment", "historical consistency", "statistical test"],
   "gaps": [
    {
@@ -189,13 +190,27 @@
   "texts": [
    {
     "doc": "R4500",
-    "label": "R4500, HStAM 4 d Nr. 1218 no. 49",
+    "label": "R4500, HStAM 4 d Nr. 1218 no. 49: cipher lines 8-14",
     "transcription": "cipher_tokens.txt",
     "decryption": [
      "reading_tokens.txt",
      "texts/R4500_decryption.md"
     ],
-    "summary": "A German Thirty Years' War letter in the Hesse-Kassel files reporting troop movements in clear, with the last 14 lines in cipher. The writer, an officer or agent on the imperial side writing from a fortress, reports that he has set out the needs of this fortress to the Emperor and to the Elector of Bavaria, so that he may be held excused and not be found wanting in his report."
+    "summary": "A German Thirty Years' War letter in the Hesse-Kassel files reporting troop movements in clear, with the last 14 lines in cipher. The writer, an officer or agent on the imperial side writing from a fortress, reports that he has set out the needs of this fortress to the Emperor and to the Elector of Bavaria, so that he may be held excused and not be found wanting in his report.",
+    "language": "de",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "This entry: cipher lines 8-14 (280 of 538 signs, from 'dahero'). reading_tokens.txt gives one clean German sentence, one sign open (the writer has set out the needs of this fortress to the Emperor and the Elector of Bavaria, so that he may be held excused). Lines 1-7 are split off as decoded, not read."}
+   },
+   {
+    "doc": "R4500",
+    "label": "R4500, cipher lines 1-7 (before 'dahero')",
+    "transcription": "cipher_tokens.txt",
+    "decryption": [
+     "reading_tokens.txt",
+     "texts/R4500_decryption.md"
+    ],
+    "language": "de",
+    "state": "decoded, not read",
+    "note": "258 of 538 signs: the end of line 1 is unread (cramped under the gloss) and the decode of ll. 2-4 is garbled ('ennoc hnu rb eit ihr endss halUerd'); the normalised reading of these lines is conjecture in brackets ([die Landtschaft ...], [unleserlich], [ungelegen]); ll. 5-7 build only a clause with slips"
    }
   ],
   "key_file": "texts/key.md"

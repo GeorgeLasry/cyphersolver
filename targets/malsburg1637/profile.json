@@ -509,7 +509,8 @@
    "result": "partial"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 9506 tokens, 119 types, de-1640s order 4: reading -2.066 per letter; random keys -5.639 (z 15.0); key annealed onto shuffled ciphertext best -3.662 (mean -3.692, z 52.7); annealer on the real text -2.423. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-record transcriptions ct/hcp*.txt and the folio files f0*.txt; decryption reading_segmented.txt (measured text, one block per folio) and work/reading_auto.txt for the address leaves; the alphabetic block from Larry Beck's alphabetic/ package; keys key.txt, codes.txt and the alphabetic key in alphabetic_reading.md.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-record transcriptions ct/hcp*.txt and the folio files f0*.txt; decryption reading_segmented.txt (measured text, one block per folio) and work/reading_auto.txt for the address leaves; the alphabetic block from Larry Beck's alphabetic/ package; keys key.txt, codes.txt and the alphabetic key in alphabetic_reading.md.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_segmented.txt read letter by letter and the alphabetic block's edition. ff. 12-13, 18, 23-24, 25 and the alphabetic block build German sentences with codes as name holes (kept read, reviewed B); ff. 3, 14, 15-17, 28-29 (and its duplicate 30-31) and 32-33 have open codes, bracketed letters or noise in most sentences, relabelled decoded, not read. fraction_read 0.959 (tokens in dictionary words) -> 0.436.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 9506, "types": 119, "tokens_per_type": 79.88, "score": -2.066, "nulls": {"random keys": {"n": 200, "mean": -5.639, "sd": 0.238, "max": -5.024, "z": 15.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.692, "sd": 0.031, "max": -3.662, "z": 52.7, "p": 0.1429}}, "power": -2.423, "verdict": "pass", "notes": "claimed per-occurrence score -2.073; polyphony 0.0; 230 unread tokens left out; annealer on the real text from random keys reached -2.423"}, 
   "class": "read in part",
@@ -538,9 +539,9 @@
    }
   ],
   "first_break": true,
-  "fraction_read": 0.959,
+  "fraction_read": 0.436,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over the transcriptions (reading_segmented.txt): 9,736 cipher tokens of the letters, duplicate ff. 30-31 excluded; a token is read when all its letters fall in dictionary words; 193 open code/sign tokens count as unread This measure covers the numerical cipher only; the alphabetic block (Beck with ChatGPT, 2 Oct 2026) is excluded and has no measured share.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences (profile documents, duplicate HCPortal 508 excluded): 497 (712) + the alphabetic block (510) + 504 (639) + 505 (2,015) + 506 (592) = 4,468 of 10,246; 496, 502, 503, 507 and 509 are decoded, not read. Withdrawn as a reading figure: 0.959 = measure.py over reading_segmented.txt, 9,736 cipher tokens of the numerical letters, a token read when all its letters fall in dictionary words; 193 open code/sign tokens unread; alphabetic block excluded.",
   "codes_open": {
    "open": 40,
    "total": 45,
@@ -589,6 +590,9 @@
    {
     "doc": "HCPortal 496",
     "label": "ff. 3-4, 5/15 Jan 1637",
+    "note": "reading_segmented.txt f003: an open three-digit code or a bracketed single letter every few words (<201>, <239>, <+>, <193>, <f>, <210>, <4#>, <144>) and broken word division (\"reg arn [i] sonen\"); holes in most sentences",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "ct/hcp496.txt",
      "f003.txt",
@@ -603,6 +607,8 @@
    {
     "doc": "HCPortal 497",
     "label": "ff. 12-13, Wesel, 7/17 Jan 1637",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f012-f013: once the broken word division is closed up the German builds sentences (ich weis nun nicht, wie ich den Weg anstellen [soll] ... ob ich alleine zu ... soll erst erwarten, dan durch Friesslant mitt Wagen und Pferden zugehen ist unmoglich) with open codes as name holes, about one per sentence."},
+    "language": "de",
     "transcription": [
      "ct/hcp497.txt",
      "f012.txt",
@@ -617,6 +623,8 @@
    {
     "doc": "HCPortal 497, letter block",
     "label": "f. 12 foot, the alphabetic block of 7/17 Jan 1637 (Larry Beck with ChatGPT)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "alphabetic/alphabetic_reading.md: the selected literal output of the ten-line block reads as continuous German (Der [43] stehet itzo aufm Sprunge ... sie mit den Schwedischen Generalen des Commendo halber sich nicht uergleichen wurden) with an editorial German and English; holes are the code labels 43, 45, LL and two residual forms."},
+    "language": "de",
     "transcription": [
      "ct/hcp497_letters.txt",
      "alphabetic/alphabetic_selected_letters.txt"
@@ -630,6 +638,9 @@
    {
     "doc": "HCPortal 502",
     "label": "f. 14, Jan 1637",
+    "note": "reading_segmented.txt f014: open codes, <?> and bracketed letters in nearly every clause (\"dar anni tuer hind | <?> | [r] lich\"); holes in most sentences",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "ct/hcp502.txt",
      "f014.txt"
@@ -642,6 +653,9 @@
    {
     "doc": "HCPortal 503",
     "label": "ff. 15-17, Jan 1637",
+    "note": "reading_segmented.txt f015-f017: f015 is fragments between codes; f016 has <120>, <129>, <193>, <212> and bracketed letters in most sentences; holes in most sentences",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "ct/hcp503.txt",
      "f015.txt",
@@ -657,6 +671,8 @@
    {
     "doc": "HCPortal 504",
     "label": "f. 18, 14/24 Feb 1637",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f018: the frozen and crippled cavalry, the dead, the new recruits, the obligation for the Hermanstein journey; builds sentences with broken word division and a few codes."},
+    "language": "de",
     "transcription": [
      "ct/hcp504.txt",
      "f018.txt"
@@ -669,6 +685,8 @@
    {
     "doc": "HCPortal 505",
     "label": "ff. 23-24, 7/17 Feb 1637",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f023-f024: f023 reads as continuous argument (the dispute whether Hermanstein was effectivement provisioned, the Felshaber's bond, paying the carters and freeing the prisoners); f024 has more codes but its sentences build (a separate peace with the imperial commissaries; how to leave French service without harm)."},
+    "language": "de",
     "transcription": [
      "ct/hcp505.txt",
      "f023.txt",
@@ -682,6 +700,8 @@
    {
     "doc": "HCPortal 506",
     "label": "f. 25, 5 Mar / 23 Feb 1637",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f025: [120] resolved to content the carters, but not the costs for the prisoners; his brother; his private affairs. Codes and broken division, but the sentences build."},
+    "language": "de",
     "transcription": [
      "ct/hcp506.txt",
      "f025.txt"
@@ -694,6 +714,9 @@
    {
     "doc": "HCPortal 507",
     "label": "ff. 28-29, 28 Mar 1637 (old style)",
+    "note": "reading_segmented.txt f028-f029: codes, COMPAGNIEN/REGIMENT groups and bracketed letters in most clauses (\"| 7 | <193> | <212> | stuck | <197> |\"); only the route passages of f029 build; holes in most sentences",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "ct/hcp507.txt",
      "f028.txt",
@@ -707,6 +730,9 @@
    {
     "doc": "HCPortal 508",
     "label": "ff. 30-31, 'Duplicat' of ff. 28-29",
+    "note": "duplicate of ff. 28-29 (excluded from the measure); its decode is as holed as theirs",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "ct/hcp508.txt",
      "f030.txt",
@@ -720,6 +746,9 @@
    {
     "doc": "HCPortal 509",
     "label": "ff. 32-33, 3 Apr 1637 and Mar 1637",
+    "note": "reading_segmented.txt f032-f033: largely noise (\"den ream bas sad rex tra ordin\", \"sel zame dinge umb\") with a code group every few words; holes in most sentences",
+    "state": "decoded, not read",
+    "language": "de",
     "transcription": [
      "ct/hcp509.txt",
      "f032.txt",

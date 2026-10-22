@@ -2,6 +2,12 @@
 
 Status: in progress (21 Oct 2026): 144 register values checked on the scans and folded into key_X.tsv in two passes; 0.941 of the groups now read as sense (8,761 of 9,306; the ten letters with no contemporary decipherment on DECODE 0.906). Below the 95% read bar. Open: about 45 valueless groups where the register piece is noise, a single syllable or conflicts, and the groups that take two values (sections "Register values folded into the key" below).
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): graded C, overturned on
+re-reading. The eight Lyonet decipherments (`plain/`) are clean French; the ten keyed readings (`read/`) build
+sentences with scattered bracketed codes and inferred syllables in braces. The worst passage is the first paragraph of
+R1054 (holes in most sentences); the rest of that page reads. No letter relabelled; R1068 (a 60-group note, matched by
+its register copy) carries a reading review. English translations still to add.
+
 Status: read in part (5 Oct 2026, rerun 14 Oct 2026: 0.89 of the code groups read as sense by measure_sense.py, 8,282
 of 9,306; the 21 Sept figure 0.86 counted groups that merely had a value; write-up affry1757.html, 19 Sept 2026)
 

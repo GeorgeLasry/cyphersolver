@@ -238,22 +238,29 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): both proposed readings: Beck's (FRENCH_AND_ENGLISH.txt, literal.txt; his transcription restored from data/source.seed.xz to texts/beck_transcription.txt) and Nur's graded reading with the 1565 de Foix key, beside the project's qm/qm2 transcriptions (the exact token file Nur decoded is not in the folder)",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). Both proposed decodes read: Beck's French layer (FRENCH_AND_ENGLISH.txt) builds clauses in passages B and D ('son but seroit de nous faire entrer en quelque debourssement de deniers') but has gaps or unresolved letter strings in most sentences of A and C; his literal layer is unspaced letters with sporadic words; Nur's v5 rendering is fragments between ellipses (docs/_check_reading.py: 0-57% of sentences clean). Both entries relabelled decoded, not read; class read in part -> not read, method read after matching with key from external sources -> not solved (the key match kept as a part); fraction_read 0.506 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read after matching with key from external sources",
-  "method_basis": "R9241's sign set was matched (Feyseel Nur, PR #21) to Paul de Foix's own cipher as reconstructed by S. Tomokiyo from de Foix's 1565 letters (BnF fr. 15971); the frozen 1565 key and Lawrence Beck's independent key (PR #18) agree on 19 of 25 shared signs and give a partial reading.",
+  "method": "not solved",
+  "method_basis": "R9241's signs match Paul de Foix's 1565 cipher (Tomokiyo's reconstruction; Feyseel Nur, PR #21), and Lawrence Beck's independent key (PR #18) agrees on 19 of 25 shared signs, but neither decode builds the letter into sentences: the key match is recorded in parts, the text is not read.",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
    "sender or date identified",
    "catalogue correction"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.506,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "beck-preliminary/results/literal.txt with beck_control.py: letters falling in corpus words of 5+ letters, 50.6% (fitted keys on shuffled ciphertext reach at most 34.2%). This is the only measure of sense; it undercounts 1563 spelling, and no token count read as sense has been made against the images (NOTES, Assessment). 1,013 of Beck's 1,038 tokens (97.6%) carry a key value, which is coverage, not sense; that figure was given here until 21 Oct 2026.",
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences in either proposed decode, so nothing counts as read (0). Withdrawn as a reading figure: 0.506, the share of letters of Beck's literal layer (beck-preliminary/results/literal.txt) falling in corpus words of 5+ letters (shuffled-key ceiling 34.2%), which measures word fragments, not sentences.",
   "verification": [
    "matched control"
   ],
@@ -287,7 +294,7 @@
     "note": "reconstruction of Paul de Foix's 1565 cipher (henryiii.htm#Foix0), the key of R9241"
    }
   ],
-  "fraction_coherent": 0.506,
+  "fraction_coherent": 0.0,
   "texts": [
    {
     "doc": "R9241",
@@ -298,7 +305,10 @@
      "beck-preliminary/results/literal.txt"
     ],
     "translation": "beck-preliminary/FRENCH_AND_ENGLISH.txt",
-    "summary": "The Queen Mother writes to Paul de Foix, French ambassador in London, in de Foix's own cipher; the letter, copied by Patrick Forbes into his deciphering file (BL Add MS 4136), was evidently intercepted by the English. Beck's proposed partial decipherment speaks of the reconciliation needed between the two kingdoms, of how the negotiation goes, and of an aim to draw France into some outlay of money, 'dont nous n'avons nulle intention'. Partial, not at the read bar."
+    "summary": "The Queen Mother writes to Paul de Foix, French ambassador in London, in de Foix's own cipher; the letter, copied by Patrick Forbes into his deciphering file (BL Add MS 4136), was evidently intercepted by the English. Beck's proposed partial decipherment speaks of the reconciliation needed between the two kingdoms, of how the negotiation goes, and of an aim to draw France into some outlay of money, 'dont nous n'avons nulle intention'. Partial, not at the read bar.",
+    "note": "Beck's proposed reading: passages B and D give connected clauses, but A and C have gaps or unresolved letter strings in most sentences, and the literal layer is unspaced letters with sporadic words; a hypothesis-grade decode, not a reading (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    },
    {
     "doc": "R9241",
@@ -313,7 +323,19 @@
      "r9241_foix1565key/reading.md",
      "r9241_foix1565key/v5_rendering.txt"
     ],
-    "summary": "An independent reading of the same letter with the frozen key from de Foix's 1565 cipher (Tomokiyo's chart, checked on BnF fr. 15971 ff. 21-26) plus a layer of values fitted on R9241, every reading graded. It converges with Beck's on phrases such as 'la negotiation prend quelque traict' and 'quelque deboursement de deniers'. The project's own transcriptions (first pass qm, second pass qm2) are listed; the exact 1,026-token token file the reading was decoded from is not separately in the folder."
+    "summary": "An independent reading of the same letter with the frozen key from de Foix's 1565 cipher (Tomokiyo's chart, checked on BnF fr. 15971 ff. 21-26) plus a layer of values fitted on R9241, every reading graded. It converges with Beck's on phrases such as 'la negotiation prend quelque traict' and 'quelque deboursement de deniers'. The project's own transcriptions (first pass qm, second pass qm2) are listed; the exact 1,026-token token file the reading was decoded from is not separately in the folder.",
+    "note": "Nur's graded rendering with the 1565 key: dictionary fragments between ellipses, with conflicting values (r m/d, z p/i, Yb l/u) unresolved; no passage builds sentences (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
+   }
+  ],
+  "parts": [
+   {
+    "label": "R9241: de Foix's 1565 key matched (text decoded, not read)",
+    "records": "DECODE R9241",
+    "method": "read after matching with key from external sources",
+    "extent": "partial",
+    "basis": "Tomokiyo's chart of de Foix's 1565 cipher (BnF fr. 15971) fits the sign set; with values fitted on R9241 it yields clauses in passages B and D of Beck's reading only. Decoded, not read (reading audit, 22 Oct 2026)."
    }
   ]
  }

@@ -1,5 +1,7 @@
 # A son to his father, 22 March 1535: cipher passages in a German letter (BayHStA KAA 4591 f.169, DECODE R9367)
 
+Status: in progress
+
 Split on 15 Oct 2026 from `targets/kaa4591/` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue entry 161
 grouped fourteen ciphertexts of the Munich key volume KAA 4591 in at least six systems; this letter is in a key of
 the volume's key register R9423 (block 2_4). The other letters are different ciphers, each with its own page:
@@ -10,6 +12,11 @@ Opus 5) as part of kaa4591; `r9367/` moved here unchanged; `signstream.py` and `
 register transcriptions stay in `targets/kaa4591/keys9423/` (volume material: `2_4.txt`, `2_4_zoom.txt`, `index.md`).
 
 Images: DECODE, login; not public domain, kept untracked; the page shows none.
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+the cipher of R9367 is **decoded, not read**: the runs have unread signs mid-word in most lines and only a few phrases
+assemble. Class read in part -> not read, method -> not solved (register key 2_4 kept as a part); 54.5% withdrawn as a
+reading figure. The outcome line below is superseded.
 
 Outcome: **read with known key, read in part**: the clear German is read; of the cipher runs, 78 of 143 words
 (54.5%, `measure.py`, an upper bound). Key state: partial (# and O open).
@@ -37,6 +44,7 @@ upper bound. The transcription has 534 cipher signs (`signstream.py` → `r9367/
 
 ## Remaining gaps
 
+- R9367 cipher runs as a whole, decoded, not read - blocker: not-attempted; zoom re-transcription of the runs against block 2_4, then build sentences and translate
 - L01-02, L07, L09-10, L13 cipher runs mostly unread - blocker: open-codes; paused 21 Sept 2026 (workable): the # sign and O open, doubtful shapes; next: a zoom re-transcription of these lines against block 2_4
 - # (triple-barred cross, 13×) and O signs - blocker: open-codes; not in block 2_4, context does not fix them
 ## Escalation

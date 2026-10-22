@@ -1,6 +1,12 @@
 # Kurz von Senftenau (Hamburg) to Trauttmansdorff, 1638-39
 
-Status: read in part (key rebuilt in full; all nine letters deciphered; checked second transcription pass 21 Sept 2026)
+Status: in progress (was: read in part; key rebuilt in full; all nine letters deciphered; checked second transcription pass 21 Sept 2026)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R4734 only (short
+runs inside clear German). **Decoded, not read**: R3811, R3812, R3813, R3814, R3815, R4625, R4645, R4736: the clear
+German reads, but the deciphered runs are unspaced and garbled every few lines (by-eye 55-80%), so sentences through the
+cipher cannot be built. 99.9% (tokens with a value) is withdrawn as a reading figure; 2.1% of the cipher tokens read
+(480 of 22,913).
 
 Ferdinand Sigmund Kurz von Senftenau, imperial vice-chancellor, writing from Hamburg (one from Glückstadt) during the
 preliminary peace talks with Sweden and France, to Maximilian von Trauttmansdorff (one to Ferdinand III, one a copy of a
@@ -93,6 +99,7 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 - 2026-09-21: checked second transcription pass on all 73 images; comment-line bug fixed (56 lines restored); #f-cross = ta split from x in R3813; read/ regenerated; α = sa and #a-loop = m split; R4645 Banér copies and R4734 endorsement transcribed (addressee Schwarzenberg).
 
 ## Remaining gaps
+- eight letters decoded, not read (R3811-R3815, R4625, R4645, R4736; 22,433 tokens) - blocker: not-attempted; word-divide each run, check the garbled groups on the images (run-together digits, 1/7, 6/0/c), re-decode, build sentences and translate; R4625 and R3815 first
 
 - All nine letters, residual garbled lines (listed per file in tr/PASS2_LOG.md; R3814 and R4645 Latin worst) - blocker: illegible; the checked second pass (21 Sept) fixed about 360 tokens; what remains is mostly ambiguous digit groupings, blots and overwritten digits where the image does not decide, and Latin/Italian passages
 - Latin passages - blocker: illegible; checked on the images in the second pass; the residual garble sits in run-together digit groups and blots. The alpha question is settled (21 Sept): the small upright α = sa (Salvius, salvus, caesaris, universal-, sachsen), a larger looped ℒ-form = m (#a-loop, 28 tokens split out on the images); in R3813's hand the two shapes are hard to separate

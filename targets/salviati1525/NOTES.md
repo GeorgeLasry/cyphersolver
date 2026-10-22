@@ -2,6 +2,12 @@
 
 Status: no write-up of our own (result by George Lasry, presented on docs/salviati1525.html)
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the repository holds only
+his three-line excerpt of f54r, which reads with three `[?]` and has his translation (reviewed B in `profile.json`).
+His 704/838 elements identified is key coverage, not a reading figure; his report says 3/8 pages deciphered in part.
+`fraction_read` 0.84 -> about 0.1 (held text that reads, estimated). Nothing relabelled decoded, not read: the rest of
+his decryption is not here to grade.
+
 ## Source
 
 This result is George Lasry's, obtained with ChatGPT Astra 6 and Anthropic Opus 5.5 and reported in "BnF cipher research" (10 October 2026), which he sent to Daniel Bourdeau on 13 October 2026 for publication here. The transcription, the key and the reading are his. This repository only spot-checked one sample against the Gallica image (below); it did not re-solve the cipher.

@@ -1,6 +1,11 @@
 # Segreteria di Stato to the Nunciature in Spain, 1736 (ASV Segr. Stato Spagna 423)
 
-Status: read — found already solved (George Lasry, 2020); nomenclator recovered here.
+Status: in progress (was: read — found already solved (George Lasry, 2020); nomenclator recovered here)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: 423/3 only (one
+sentence, one open group). **Decoded, not read**: the other ten letters: open nomenclator groups (about one per eight to
+ten words) and ??? runs stand in almost every sentence. 95.3% (text with a value) is withdrawn as a reading figure;
+class already solved -> read in part, 1.6% of the tokens in a letter that reads.
 
 ## The target
 
@@ -88,6 +93,11 @@ Open: 120 groups, most seen once or twice. Among them 1591 (16x; "la Maestà"? I
 1596 (11x; before "Molina" and the unread 1513-a-1382: probably "Mons." with a title of Gaspar de Molina, Bishop of
 Málaga and Governor of the Council of Castile), 1236 (9x, a conjunction), and the date numerals 1953/1957/1960/1964/1985.
 
+## Remaining gaps
+
+- ten letters decoded, not read (423/1-2, 423/4-11; 7,621 tokens) - blocker: not-attempted; value more nomenclator groups from context as in "What this session adds" (120 of 166 still open), normalise u/v and word division, build sentences and translate
+- 136 two-digit tokens marked "?" in Lasry's transcription - blocker: needs-physical-access; images behind the DECODE login, to be re-read on the scans
+
 ## Content
 
 The letters are Clement XII's Secretariat to the nunciature during the **1736 rupture with Spain**. Spanish recruiting
@@ -103,3 +113,15 @@ Queen, and the nomination to cardinals' hats ("col maggior numero di cappelli").
 - `decode/keep/`: Lasry's key and decipherment and the per-item transcriptions (kept).
 - `corpus.py`: parses Lasry's aligned decipherment into `seq.json`. `ctx.py`: context viewer. `measure.py`: coverage.
 - `key_extra.txt`: the groups valued here. `reading.txt`: the running text with those values applied.
+
+## Escalation
+
+Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
+not read. None of these steps has been redone since; each is open for those documents.
+
+- [ ] siblings: other letters of the same series or key, read or deciphered at the time
+- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
+- [ ] known-keys: other keys of the same correspondents tried
+- [ ] print: printed editions and calendars searched for these letters
+- [ ] key-rebuild: the key corrected against the documents that read
+- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images

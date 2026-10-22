@@ -1,6 +1,11 @@
 # Alonso Sánchez (Venice) to Charles V, 1522 — RAH Salazar 9/23–9/26, DECODE R9593–R9657
 
 Status: in progress
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R9635 and R9653 are **decoded, not read**: f. 20r is a table of phrase fragments between untranscribed letter runs, and
+R9653's cipher gives one phrase; what reads as sentences is clear text (the Rhodes news, the Pace paragraph on f. 21),
+not decipherment. Class read in part -> not read, method -> not solved (Tomokiyo's key kept as a part); 0.6 withdrawn.
+The "Reading so far" line below is superseded.
 Reading so far: read in part (R9635 f. 20r and R9653 f. 299r; the cipher itself was already solved by Tomokiyo 2025)
 
 Catalogue entry "Alonso Sánchez (Venice) to Charles V, 29 ciphertexts" (Tomokiyo list, scored B).
@@ -368,6 +373,8 @@ Constantinople news) but does not supply the words, and "mas de xv mil ducados" 
 The new-reading claim for R9635 is therefore reduced to the Spanish text and the code values, not the content.
 
 ## Remaining gaps
+- R9635 (16 Sept 1522) as a whole, decoded, not read - blocker: not-attempted; transcribe the letter runs and build sentences (next line)
+- R9653 (20 Nov 1522) cipher, decoded, not read - blocker: illegible; head paragraph bleeds through; foot paragraph gives one phrase
 - R9635 f. 20r (about two thirds) and ff. 20v-22 - blocker: not-attempted; edition work against the published key; only ll. 1-3, 6, 7, 14, 22 done
 - R9653 f. 299r head cipher paragraph - blocker: illegible; ink bleed from the facing leaf at DECODE's resolution
 - the other Sánchez records of 9/23-9/26 (about 27) - blocker: not-attempted; most have a bound contemporary decipherment; transcription/edition not done

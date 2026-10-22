@@ -1,6 +1,13 @@
 # Alonso Sánchez (Venice) to Charles V, May–August 1523 — RAH Salazar 9/28 (A-28)
 
-Status: done — found already calendared (Bergenroth 1866) with contemporary decipherings; the key is the 1522
+Status: in progress
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the seven calendared
+letters (R9670-R9690) read only through Bergenroth's English abstracts of the contemporary decipherings (reviewed B).
+**R9767's cipher passages are decoded, not read** (code values with `…` between them; gist only), and R9769/R9770's
+short cipher was never transcribed. The spelled runs are workable with the 1522 key, hence in progress.
+
+Earlier status: done — found already calendared (Bergenroth 1866) with contemporary decipherings; the key is the 1522
 key; the uncalendared August letter is read in part.
 
 Catalogue entry 147 ("Alonso Sánchez (Venice) to unknown recipient, 10 ciphertexts", DECODE R9670–R9770).
@@ -66,3 +73,8 @@ in part**.
 - `csp/bergenroth_abstracts.txt` — the four CSP entries.
 - `read_r9767.md` — the reading.
 - Images (`img/`) are git-ignored; fetch with `python decode/fetch.py 9670 9671 …` and a DECODE cookie.
+
+## Remaining gaps
+
+- R9767, the two cipher passages of f. 563r decoded, not read (spelled runs unread, code groups pem and yol not in the key; reading audit 22 Oct 2026) - blocker: not-attempted; transcribe the spelled runs sign by sign against the 1522 key (sanchez1522/key_codes.tsv) and build the passages into sentences
+- R9769/R9770 short cipher (four lines at the head of R9770's last page) not transcribed or deciphered - blocker: not-attempted; same key

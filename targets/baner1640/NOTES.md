@@ -8,6 +8,12 @@ einer guten Fürsichtigkeit"; report "durch Espionen"; and tell Banér "wohin er
 second courier's name (S2), one corrupt stretch in S5 (both confirmed on the manuscript: the copy is corrupt), and all
 14 code words (no key). Reading of record: `reading.md`.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): graded C, overturned on
+re-reading. The cipher runs are inserted in clear German sentences, and with the clear context each sentence can be
+built: S1, S3, S4, S7 read whole, S5 and S6 mostly; open are the courier's name (S2), the corrupt stretch in S5 and
+the code words. Kept read in part (reviewed B). Still to do: a full English translation of the letter with the runs
+in place, not only the sense paragraph in `reading.md`.
+
 Catalogue: "Intercepted letter, Banér to Stålhandske" (new-solves sweep, 22 Sept 2026). Session 2026-09-22.
 
 ## Source

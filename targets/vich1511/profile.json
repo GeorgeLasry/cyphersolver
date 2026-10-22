@@ -264,17 +264,23 @@
       "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): N.73 (1515, another system) moved to targets/vich1515/ with its transcription and solver scripts. Fraction re-measured on N.45/N.57/N.60 alone with measure.py (N.60 v3): 21,750 of 22,538 tokens (0.965).",
       "result": "worked"
     },
-    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): N.45 (v2), N.57 (v2) and N.60 (v3) linked to the glyph-label transcriptions measure.py counts and their decode.py outputs; key_file key.md and decode.py", "result": "worked"}
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): N.45 (v2), N.57 (v2) and N.60 (v3) linked to the glyph-label transcriptions measure.py counts and their decode.py outputs; key_file key.md and decode.py", "result": "worked"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): n45_pp*_v2_decoded.txt, n57_decode_v4.txt and n60_v3_decoded.txt read through. All three are raw decoder output with broken word division, wrong letters and bracketed groups on most lines (20-32% of sentences clean in docs/_check_reading.py); the gist is recoverable, the sentences are not built. All three relabelled decoded, not read; class read in part -> not read, method -> not solved, key stays partial; fraction_read 0.965 -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
   ],
   "outcome": {
-    "method": "key recovered based on adjacent plaintext",
-    "method_basis": "The nomenclator was rebuilt by aligning N.46 and N.52BIS, sibling letters in the same Vich file (AHN Estado 8715) that carry the clerk's decipherment on the following leaves, with their cipher; N.45, N.57 and N.60 were then read and filled in the rest.",
+    "method": "not solved",
+    "method_basis": "The nomenclator was rebuilt by aligning N.46 and N.52BIS, sibling letters in the same Vich file (AHN Estado 8715) that carry the clerk's decipherment on the following leaves, with their cipher; N.45, N.57 and N.60 were then read and filled in the rest. Reading audit, 22 Oct 2026: the three decodes are not yet built into sentences, so the letters are decoded, not read and the method is 'not solved' until they are; the key stays as recovered from the siblings.",
     "contribution": [
       "transcription",
       "key recovered"
     ],
-    "class": "read in part",
+    "class": "not read",
     "gaps": [
+      {
+        "item": "N.45, N.57, N.60 decoded, not read",
+        "blocker": "not-attempted",
+        "detail": "normalise word division and letter forms, resolve bracketed groups from context and the siblings, build each letter into sentences and translate"
+      },
       {
         "item": "N.60 open groups gz, phi, reg, goi, sid (~250 tokens)",
         "blocker": "no-key-material",
@@ -286,9 +292,9 @@
         "detail": "qwork/q_decisions.tsv"
       }
     ],
-    "fraction_read": 0.965,
+    "fraction_read": 0.0,
     "fraction_read_method": "measured",
-    "fraction_read_source": "measure.py over n45_pp*_v2, n57_transcription_v2, n60_transcription_v3 (the three documents): 21,750/22,538 = 0.965. Per letter N.45 0.984, N.57 0.976, N.60 0.948. Siblings in the same key (reference, not documents): N.41 0.971, N.39 0.948, N.12 0.994. measure_sense.py attested-word share (a floor): N.45 0.858, N.57 0.865, N.60 0.824 (5 Oct 2026).",
+    "fraction_read_source": "22 Oct 2026, reading audit: no letter builds sentences yet, so 0 of 22,538 tokens are in text that reads. Withdrawn as a reading figure: 0.965 (measure.py, tokens with a value: N.45 0.984, N.57 0.976, N.60 0.948); measure_sense.py attested-word share N.45 0.858, N.57 0.865, N.60 0.824 (5 Oct 2026).",
     "key": "partial",
     "codes_open": {
       "open": 259,
@@ -299,7 +305,7 @@
       "historical consistency",
       "statistical test"
     ],
-    "notes": "N.45, N.57, N.60 read with about 2-5% of tokens unread (more counting garbled stretches); N.60's open groups gz, phi, reg, goi, sid have no sibling occurrence. Validation (11 Oct 2026) ran on the v2 transcriptions. Split 14 Oct 2026: N.73 of 1515, another system, is targets/vich1515/.",
+    "notes": "22 Oct 2026, reading audit: N.45, N.57 and N.60 relabelled decoded, not read (raw decodes, holes and broken words on most lines). N.45, N.57, N.60 read with about 2-5% of tokens unread (more counting garbled stretches); N.60's open groups gz, phi, reg, goi, sid have no sibling occurrence. Validation (11 Oct 2026) ran on the v2 transcriptions. Split 14 Oct 2026: N.73 of 1515, another system, is targets/vich1515/.",
     "validation": {
       "date": "2026-10-11",
       "model": "es-golden-age",
@@ -338,9 +344,9 @@
       }
     ],
     "texts": [
-      {"doc": "N.45", "label": "AHN Estado 8715 N.45, Seville, 4 Apr 1511", "transcription": ["n45_pp03-09_v2.txt", "n45_pp10-15_v2.txt"], "decryption": ["n45_pp03-09_v2_decoded.txt", "n45_pp10-15_v2_decoded.txt"], "summary": "Ferdinand the Catholic to his ambassador Jerónimo de Vich in Rome: a long complaint against Julius II (the new cardinals, the absolution of the Venetians, the Pope's refusal of his counsel) and instructions to press the Emperor-Venice concord, settle Ferrara and deliver orders to Fabrizio Colonna. The decode is mechanical, unread groups in brackets."},
-      {"doc": "N.57", "label": "AHN Estado 8715 N.57, Burgos, 5 June 1512", "transcription": "n57_transcription_v2.txt", "decryption": ["n57_transcription_v2_decoded.txt", "n57_decode_v4.txt"], "summary": "The aftermath of Ravenna: Ferdinand reconstructs how Vich's letters and the papal side pushed the viceroy Ramón de Cardona into battle against his orders, tells Vich not to do it again, and asks that the Ferrara business be treated secretly, 'sin que la sienta el Papa'."},
-      {"doc": "N.60", "label": "AHN Estado 8715 N.60, Logroño, 1 Sept 1512", "transcription": "n60_transcription_v3.txt", "decryption": "n60_v3_decoded.txt", "summary": "Written from the Navarre campaign: a reproach to Julius II for not paying his troops as the League requires, and the plan for the Sforza restoration in Milan, Massimiliano son of Duke Ludovico to be put into the state by the Emperor's hand."}
+      {"doc": "N.45", "label": "AHN Estado 8715 N.45, Seville, 4 Apr 1511", "transcription": ["n45_pp03-09_v2.txt", "n45_pp10-15_v2.txt"], "decryption": ["n45_pp03-09_v2_decoded.txt", "n45_pp10-15_v2_decoded.txt"], "summary": "Ferdinand the Catholic to his ambassador Jerónimo de Vich in Rome: a long complaint against Julius II (the new cardinals, the absolution of the Venetians, the Pope's refusal of his counsel) and instructions to press the Emperor-Venice concord, settle Ferrara and deliver orders to Fabrizio Colonna. The decode is mechanical, unread groups in brackets.", "note": "n45_pp*_v2_decoded.txt: line-by-line decoder output with broken word division (a stray space inside most words), wrong letters (n/u, v/u) and bracketed groups on most lines; the Spanish gist can be recovered with effort, the sentences are not built (reading audit, 22 Oct 2026).", "state": "decoded, not read", "language": "es"},
+      {"doc": "N.57", "label": "AHN Estado 8715 N.57, Burgos, 5 June 1512", "transcription": "n57_transcription_v2.txt", "decryption": ["n57_transcription_v2_decoded.txt", "n57_decode_v4.txt"], "summary": "The aftermath of Ravenna: Ferdinand reconstructs how Vich's letters and the papal side pushed the viceroy Ramón de Cardona into battle against his orders, tells Vich not to do it again, and asks that the Ferrara business be treated secretly, 'sin que la sienta el Papa'.", "note": "n57_transcription_v2_decoded.txt / n57_decode_v4.txt: line-by-line decoder output with broken word division (a stray space inside most words), wrong letters (n/u, v/u) and bracketed groups on most lines; the Spanish gist can be recovered with effort, the sentences are not built (reading audit, 22 Oct 2026).", "state": "decoded, not read", "language": "es"},
+      {"doc": "N.60", "label": "AHN Estado 8715 N.60, Logroño, 1 Sept 1512", "transcription": "n60_transcription_v3.txt", "decryption": "n60_v3_decoded.txt", "summary": "Written from the Navarre campaign: a reproach to Julius II for not paying his troops as the League requires, and the plan for the Sforza restoration in Milan, Massimiliano son of Duke Ludovico to be put into the state by the Emperor's hand.", "note": "n60_v3_decoded.txt: line-by-line decoder output with broken word division (a stray space inside most words), wrong letters (n/u, v/u) and bracketed groups on most lines; the Spanish gist can be recovered with effort, the sentences are not built (reading audit, 22 Oct 2026). Worst of the three; five open groups (gz, phi, reg, goi, sid) recur.", "state": "decoded, not read", "language": "es"}
     ],
     "key_file": ["key.md", "decode.py"]
   }

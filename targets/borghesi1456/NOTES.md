@@ -1,6 +1,12 @@
 # Galgano Borghesi to Leonardo Benvoglienti, Naples, 12 May 1456 (ASSi Concistoro 2308 fasc. 2 no. 4, DECODE R4793)
 
-Status: read in part — key rebuilt from an alphabet fragment and the recipient's glosses on the letter; 114 of 144 cipher signs (79%) read.
+Status: in progress. not read (reading audit, 22 Oct 2026: decoded, not read). Was: read in part — key rebuilt from an alphabet fragment and the recipient's glosses on the letter; 114 of 144 cipher signs (79%) read.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
+The first cipher runs complete their clear sentences ("A MILANO", "de le scritture", "Tunc rex parvi fecisse"), but the
+second paragraph (Antonio d'Arezzo, the Pope, the clergy, the Turk) is cipher runs, code words and unread signs between
+doubtful clear words, and cannot be built into sentences. Class now not read, method not solved; 114 of 144 signs is the
+share given a value, withdrawn as a reading figure.
 
 Split on 14 Oct 2026 from `siena1421` under the one-key rule (George Lasry, 14 Oct 2026). The old entry grouped the
 whole bundle of Sienese cipher letters (Concistoro 2308 fasc. 2), each in its own key. This letter has a key of its
@@ -48,6 +54,7 @@ Not applicable (`docs/_validate.py borghesi1456 --na`): 144 signs in 15 short ru
 test; the key is attested by the fragment written on the letter.
 
 ## Remaining gaps
+- no. 4, second paragraph (runs R9-R15) decoded, not read (reading audit 22 Oct 2026) - blocker: not-attempted; re-read the doubtful clear hand around the runs, then build and translate the sentences; the 19 rare signs stay too-short
 - 19 rare signs and the code words toffe, vapor, pedesi - blocker: too-short; each occurs once or twice; the fragment is torn on the left and no filed key fits
 
 ## Escalation

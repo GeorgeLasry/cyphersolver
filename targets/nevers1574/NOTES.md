@@ -2,6 +2,11 @@
 
 Status: read in part. Birago's f. 21 is complete from its clear copy; the duchess's f. 15 has a contemporary interlinear decipherment and clear ending but has not been transcribed continuously.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 21 (Birago's
+clear fair copy, continuous Italian). **Decoded, not read**: f. 15, the duchess's two cipher pages; only the opening of
+the interlinear gloss and the clear closing on f. 16r are given. fraction_read 0.4 -> about 0.3 (estimated; the clear
+closing is not cipher).
+
 ## Result
 
 The catalogue premise that these are two unread cipher letters is only half right. At f. 21 a ciphered flap is folded across the same recto that contains a complete fair copy in clear Italian. One image shows the flap over the text, the next shows it folded away. Renato Birago writes from Lyon on 28 September 1574. He had expected Nevers for the feast of St Michael; the bearer has arrived at the worst possible political moment and returns with an answer; Birago will discuss Piedmont orally; Their Majesties wish to provide Nevers with a government and whatever else he deserves.

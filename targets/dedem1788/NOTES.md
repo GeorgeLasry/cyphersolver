@@ -1,5 +1,11 @@
 # Van Dedem (Constantinople) to Van de Spiegel, 1788–1793 — DECODE R2120, R2122, R2131
 
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R2120 **reads** from its contemporary clear decipherment (`tx/R2121_clear.txt`, continuous Dutch; English translation
+still to be written). R2122 and R2131 are **decoded, not read**: the graded decode has holes in nearly every clause
+(4 of 113 sentences clean, `docs/_check_reading.py`). Method now read from existing decipherment (R2120), parts for
+the rest; the 41% firm-value figure is withdrawn as a reading figure (0.673 = R2120's share of the groups).
+
 Status: in progress (R2120 read at the time; R2122, R2131 decoded in part after the 4 Oct 2026 second pass, 41% of groups firm; left: transcribe the deciphered letters in the same code, R1948-R1952, R2134, R2141, as cribs to fill the open groups)
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1895 (26 Aug 1799, to the Burger Agent
@@ -76,6 +82,9 @@ value (grades A, B, T in `alpha/decoded_targets_v2.txt`). The running reading is
 
 ## Remaining gaps
 
+- R2122 (15 Jan 1789), decoded, not read - blocker: not-attempted; transcribe the deciphered letters in the same code (R1948-R1952, R2134, R2141) as cribs, then build sentences
+- R2131 (9 Feb 1793), decoded, not read - blocker: not-attempted; same cribs
+- R2120: English translation of the contemporary decipherment not yet written - blocker: not-attempted
 - R2122 and R2131: groups with no attested value (graded "-" or "?" in `alpha/decoded_targets_v2.txt`); the alphabetical bracket narrows each but does not fix it - blocker: open-codes; more deciphered letters in this code (DECODE R1948-R1952, R2134, R2141) would test the layout on unseen text.
 
 ## Escalation

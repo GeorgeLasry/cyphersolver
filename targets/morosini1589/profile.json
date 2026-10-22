@@ -194,15 +194,22 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): DECODE cipher transcriptions D1717/D1825; decryptions = the word-split decoder output copied from decode_updates/decryptions into texts/, plus plaintext_by_record.txt (both with Lasry's F22b key, decode/DOC_R53_D3187_3187.txt / DOC_R54_D3188_3188.txt).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/R53_decryption.txt, R54_decryption.txt and plaintext_by_record.txt read: R53 has Italian fragments with garbled strings in nearly every sentence, R54 is mostly noise (docs/_check_reading.py: 6 of 15 and 5 of 12 sentences clean in the word-split files). Both relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.752 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "George Lasry's partial reconstruction of the F22b key, filed on DECODE R53/R54 before the attempt, was applied with the morosini1588 segmenting decoder; R53 reads in most of its length, R54 in fragments; a key-rebuild from the two records was tried and not adopted.",
+  "method": "not solved",
+  "method_basis": "George Lasry's partial reconstruction of the F22b key (about 70 elements, on DECODE R53/R54), applied with the morosini1588 segmenting decoder (read with known key, recorded under parts), decodes R53 into fragments and R54 into little more than noise; neither builds sentences.",
   "contribution": [
    "decipherment with ambiguous key"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
   "grades": "unknown",
   "verification": [
@@ -231,12 +238,21 @@
     "published": true
    }
   ],
-  "fraction_read": 0.752,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/morosini1589/measure_sense.py: share of decoded letters in Italian word forms attested at least twice in the it-cinquecento corpora, after the LM word split (decode_updates/decryptions/R53.txt, R54.txt): R53 0.791, R54 0.707, both 893/1,187. Control: the 34 fully read Meister no. 40 records score 0.817 by the same measure. An upper bound on text read as sense.",
+  "fraction_read_source": "22 Oct 2026, reading audit: neither enclosure builds sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.752, measure_sense.py (share of decoded letters in Italian word forms attested twice in the it-cinquecento corpora, R53 0.791, R54 0.707), which a word splitter reaches on fragments.",
   "texts": [
-   {"doc": "R53", "label": "R53, Francia 22/32, image 499v, [Tours, spring 1589]", "transcription": "decode/DOC_R53_D1717_1717.txt", "decryption": ["texts/R53_decryption.txt", "plaintext_by_record.txt"], "summary": "Morosini's clear covering passage says he waits anxiously for letters from Rome granting his leave. The cipher reports that the vice-legate of Avignon has arrived at Tours and lodged near Plessis, that 'si e fata una mescolanza ala corte di heretici et di catolici', and something of Mayenne ('Umena') near Le Mans."},
-   {"doc": "R54", "label": "R54, Francia 22/33, image 502r, Moulins, 11 May 1589", "transcription": "decode/DOC_R54_D1825_1825.txt", "decryption": ["texts/R54_decryption.txt", "plaintext_by_record.txt"], "summary": "Read in fragments only: the heretics growing stronger at court beside the Catholics ('mescolati gli heretici co i catolici ala corte'), the writer's own fears, and a request to make something known."}
+   {"doc": "R53", "label": "R53, Francia 22/32, image 499v, [Tours, spring 1589]", "transcription": "decode/DOC_R53_D1717_1717.txt", "decryption": ["texts/R53_decryption.txt", "plaintext_by_record.txt"], "summary": "Morosini's clear covering passage says he waits anxiously for letters from Rome granting his leave. The cipher reports that the vice-legate of Avignon has arrived at Tours and lodged near Plessis, that 'si e fata una mescolanza ala corte di heretici et di catolici', and something of Mayenne ('Umena') near Le Mans.", "note": "Fragments of Italian ('sua maiesta la fece desinare', 'corte di heretici et di catolici') between garbled strings in nearly every sentence ('chi eodos aat utili huomini da gine chiehi o e doueua'); Lasry's partial F22b key leaves too many values open (reading audit, 22 Oct 2026).", "state": "decoded, not read", "language": "it"},
+   {"doc": "R54", "label": "R54, Francia 22/33, image 502r, Moulins, 11 May 1589", "transcription": "decode/DOC_R54_D1825_1825.txt", "decryption": ["texts/R54_decryption.txt", "plaintext_by_record.txt"], "summary": "Read in fragments only: the heretics growing stronger at court beside the Catholics ('mescolati gli heretici co i catolici ala corte'), the writer's own fears, and a request to make something known.", "note": "Mostly noise between a few words; no sentence can be built (reading audit, 22 Oct 2026).", "state": "decoded, not read", "language": "it"}
+  ],
+  "parts": [
+   {
+    "label": "R53, R54 (Lasry's F22b key applied; decoded, not read)",
+    "records": "DECODE R53, R54",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Lasry's partial F22b reconstruction with the segmenting decoder; R53 gives fragments, R54 mostly noise. Decoded, not read (reading audit, 22 Oct 2026)."
+   }
   ]
  }
 }

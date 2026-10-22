@@ -8,6 +8,10 @@ Worked 21 Sept 2026.
 Outcome: **read at the time; closed.** The ciphered passages carry a contemporary interlinear decipherment, and
 the key is bound with the letter. Nothing is left to break. The new finding is who wrote it and when.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): `plaintext.txt` is the
+contemporary decipherment of the cipher runs only; **every run reads** as Spanish without holes (reviewed B). The
+clear text between the runs was not transcribed, so whole sentences and an English translation need it from the images.
+
 ## What the record is
 
 DECODE R119 (4 images plus 2 attached documents, fetched with the session cookie; images git-ignored in `img/`)

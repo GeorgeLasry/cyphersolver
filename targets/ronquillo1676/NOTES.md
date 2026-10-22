@@ -1,6 +1,15 @@
 # Salinas (London) and Ronquillo (Nijmegen) to Fuenmayor, 1676–78 — DECODE R966–R984, R1001
 
-Status: read in part (0.88 of groups measured 21 Sept 2026; R970, R973, R982, R984 read for gist)
+Status: in progress
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **all twenty letters are
+decoded, not read.** The Balbases key gives 88% of the groups a value, but `read/R*.txt` is unspaced decoder output
+from DECODE's uncorrected transcriptions with bracketed groups every few words; even the best letters (R971 93.6%,
+R974, R978, R979, R1001) build sentences only with guesswork. `outcome.class` read in part -> not read, method -> not
+solved, key stays recovered; the 0.88 is withdrawn as a reading figure. Next: space and build the best letters into
+sentences with their margin decipherments (re-read from the images), then translate.
+
+Earlier status: read in part (0.88 of groups measured 21 Sept 2026; R970, R973, R982, R984 read for gist)
 
 The remaining ciphered letters in Baltasar de Fuenmayor's volume, Archives générales du Royaume, Brussels,
 Secrétairerie d'État et de Guerre, inv. nr. 2559 (see [hernannunez1674](../hernannunez1674/NOTES.md),
@@ -70,6 +79,7 @@ DECODE's margin transcription where there is one).
 
 ## Remaining gaps
 
+- all twenty letters decoded, not read (unspaced decode, holes every few words; reading audit 22 Oct 2026) - blocker: not-attempted; space and build each letter into sentences with the margin decipherments re-read from the images, then translate
 - R970, R973, R982, R984 (unmargined letters) unread groups: R970 23%, R973 14%, R982 29%, R984 14% - blocker: not-attempted; residue is DECODE transcription noise ('?', '*', split groups); the images were not re-transcribed, so these four are read only for gist
 - ~12% of groups across the sixteen margined letters - blocker: not-attempted; transcription noise; margins give the sense, images not re-read
 

@@ -2,6 +2,11 @@
 
 Status: in progress — System A′ read in part (89.8% of words); the remaining unread words are workable (open-codes), see Remaining gaps.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R9408, R9410 f. 244r,
+R9410 ff. 246-247 (Latin) and R9413, sentences with holes clustered in a few passages (11-17% of words unread).
+**Decoded, not read**: R9409 (19% of words unread, holes in most sentences) and R9427 (23%). 89.8% (words given a
+reading) is withdrawn as a reading figure; 57.2% of the words are in letters that read (3,903 of 6,827).
+
 **Split on 15 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026).** This folder held catalogue entry 161
 ("Unknown sender to unknown recipient, 14 ciphertexts": DECODE R9291, R9319, R9322, R9323, R9325, R9367, R9408, R9409,
 R9410, R9413, R9416, R9417, R9424, R9427), which are letters in at least six systems bound in the ducal key volume. It now
@@ -193,6 +198,7 @@ R9410 f.244r 83.9%, R9410 ff.246-247 82.9%, R9409 80.9%, R9427 77.3%; 5,724 of 6
 values the letters do not settle (merged look-alikes, rare signs, names), not missing key material.
 
 ## Remaining gaps
+- R9409 and R9427 decoded, not read (2,924 words; holes in most sentences, reading audit 22 Oct 2026) - blocker: not-attempted; image re-check of the {?} runs (R9427 has had no image re-transcription), then build sentences and translate
 
 - R9408 (5 Oct: 125 of 1,530 unread; second image pass 20/72 lines done): 170 of 1,528 words unread ({?} in `r9408/reading.txt`: P1.01-06 and P1.20-26, the P2.01 greeting, the ratschlag clauses P2.06/25-30, P3.10-16, P4.16-28, P5.01-08, P6.04-07/28-30, the signature forename) - blocker: open-codes (workable); the signs are legible but take no value the letter settles; the y (ÿ/γ) and 4 (4/ч) look-alikes were split at the image 2 Oct 2026 without opening further words; next: a second reading round.
 - R9413 (5 Oct: 94 of 1,647 unread): 232 of 1,663 words unread (P1 opening and P1.19-26, P2.05-12, P3.04-12 the ore description, the 4o group on P5, P6-P7 short lines, P8 address) - blocker: open-codes (workable); next: image check of the noisy P1 opening lines and of the 4o group, second reading round.

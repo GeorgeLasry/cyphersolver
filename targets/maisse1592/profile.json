@@ -219,6 +219,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 370: ct370.txt and the decode.py output with the Brienne comparison (texts/f370_decryption.md), opening only; f. 373 has no transcription or decryption in the repository, linked to the Gallica images of the leaf and of the Brienne 13 clear copy.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): texts/f370_decryption.md read: the 80-group opening reads and matches the Brienne copy (reviewed A), but the rest of f. 370 and all of f. 373 are not transcribed, and neither clear copy is in the repository. f. 373 relabelled decoded, not read; class read -> read in part; fraction_read 1.0 -> about 0.06 (estimated).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -228,8 +238,10 @@
    "transcription",
    "catalogue correction"
   ],
-  "class": "read",
-  "fraction_read": 1.0,
+  "class": "read in part",
+  "fraction_read": 0.06,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Reading audit 22 Oct 2026: the 80 transcribed groups of f. 370 read (identical with the Brienne copy) out of about 630 on f. 370 and an untranscribed f. 373 of unknown length, taken as the same size: about 80 of 1,260, estimated. Withdrawn: 1.0, which counted the content of both letters as known from the Brienne 13 clear copies, which are not transcribed here.",
   "verification": [
    "contemporary decipherment",
    "key confirms",
@@ -266,6 +278,8 @@
    {
     "doc": "f370",
     "label": "f. 370, S. Denis, 3 Nov 1592 (opening only)",
+    "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "The transcribed opening (80 groups) decodes to one clean French sentence, identical letter for letter with the Brienne 13 fol. 102v clear copy (\"Le Cardinal de Gondy aura passe pres de vous ...\"). Only this opening is read; the rest of f. 370 (about 550 groups) is neither transcribed nor decoded, so the letter as a whole is not read."},
+    "language": "fr",
     "transcription": "ct370.txt",
     "decryption": "texts/f370_decryption.md",
     "summary": "Henri IV to Maisse, his ambassador at Venice: Cardinal de Gondi has passed near Venice, shortly to be followed by the marquis de Pisany, going to the Pope in the name of the Catholics of the kingdom; the King presses Maisse not to leave his post, and reports that Mayenne has slipped into Paris and found the people weary of the war and against the introduction of the Spaniard. Only the opening is transcribed and deciphered here; the full text is the Brienne 13 clear copy (fol. 102v), not yet transcribed."
@@ -273,6 +287,9 @@
    {
     "doc": "f373",
     "label": "f. 373, 7 Nov 1592 (not transcribed; images only)",
+    "note": "not transcribed: neither the cipher of f. 373 nor its Brienne 13 fol. 104v clear copy is in the repository; content known only from the summary of the clear copy",
+    "state": "decoded, not read",
+    "language": "fr",
     "transcription": "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f422.item",
     "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f110.item",
     "summary": "Henri IV acknowledges Maisse's letter of 4 October and will suspend final judgement until he sees what comes of the Gondi and Pisany missions, appealing to his Catholic friends' own interest against the ruin brought by the length of the war and the King of Spain's efforts. Neither the cipher leaf nor its contemporary clear copy (Brienne 13 fol. 104v) is transcribed in this repository; the links are to the Gallica images."

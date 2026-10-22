@@ -189,17 +189,18 @@
    "result": "worked"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3551 tokens, 57 types, fr-1600-letters order 4: reading -2.265 per letter; random keys -4.815 (z 7.4); key annealed onto shuffled ciphertext best -3.082 (mean -3.101, z 59.1); annealer on the real text -2.352. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): final/f1-f4.txt (the transcription the reading uses) and reading.txt; key key.json / key_letters.txt with the sign chart signs.md", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): final/f1-f4.txt (the transcription the reading uses) and reading.txt; key key.json / key_letters.txt with the sign chart signs.md", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). reading.txt read line by line: the cipher stretches are word fragments strung together with [#] holes ('E a nouueau T impos du [#81] ou [#] eam ange ries'), some lines almost pure noise; only the clear French around them reads. docs/_check_reading.py: 84 of 185 sentences clean, the clean ones mostly clear text. Relabelled decoded, not read; class read -> not read, method key recovered from ciphertext-only -> not solved (key work kept as a part); fraction_read 0.951 -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 3551, "types": 57, "tokens_per_type": 62.3, "score": -2.265, "nulls": {"random keys": {"n": 200, "mean": -4.815, "sd": 0.345, "max": -4.003, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.101, "sd": 0.014, "max": -3.082, "z": 59.1, "p": 0.1429}}, "power": -2.352, "verdict": "pass", "notes": "claimed per-occurrence score -2.265; polyphony 0.0; 95 unread tokens left out; annealer on the real text from random keys reached -2.352"}, 
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "The homophonic sign alphabet of R8505 was rebuilt by annealing against a 1530-1600 French model after a synthetic control exposed solver faults; no key or decipherment exists on DECODE, in Tomokiyo or in print.",
+  "method": "not solved",
+  "method_basis": "The homophonic sign alphabet rebuilt by annealing against a 1530-1600 French model (key recovered from ciphertext-only, recorded under parts) decodes the cipher stretches into French word fragments with holes in most lines; no cipher clause reads as a sentence.",
   "contribution": ["transcription", "key recovered", "catalogue correction"],
-  "class": "read",
+  "class": "not read",
   "key": "recovered",
-  "fraction_read": 0.951,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "final/f1..f4.txt decoded with key.json: share of deciphered characters inside vocabulary words, Viterbi segmentation (evalct.py)",
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.951, the share of deciphered characters inside vocabulary words under Viterbi segmentation (final/f1..f4.txt with key.json, evalct.py), which a segmenter reaches on strings of short real words; it measured characters, not sentences.",
   "codes_open": {
    "open": 10,
    "total": 10,
@@ -230,9 +231,21 @@
      "final/f4.txt"
     ],
     "decryption": "reading.txt",
-    "summary": "A French political memoir, written after 1580, surveying Henri de Navarre as a political asset for an outside reader: his two 'qualitez' (first prince of the blood, chief of the reformed churches), the places and garrisons he holds in Guyenne, Languedoc, Dauphiné and Provence, his following, his alliances and the marriage question; it belongs with Navarre's embassies to the Protestant powers in the mid-1580s. The cipher carries the sensitive clauses inline in the clear French (d'Espernon, Beaucaire sur le Rosne, Besiers, Carcassonne)."
+    "summary": "A French political memoir, written after 1580, surveying Henri de Navarre as a political asset for an outside reader: his two 'qualitez' (first prince of the blood, chief of the reformed churches), the places and garrisons he holds in Guyenne, Languedoc, Dauphiné and Provence, his following, his alliances and the marriage question; it belongs with Navarre's embassies to the Protestant powers in the mid-1580s. The cipher carries the sensitive clauses inline in the clear French (d'Espernon, Beaucaire sur le Rosne, Besiers, Carcassonne).",
+    "note": "Word-split decoder output with [#] holes in most lines: the cipher stretches are strings of French word fragments (f. 263v ll. 3.38-3.41 almost pure noise), so the clauses cannot be built into sentences; the clear French around them carries the gist (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    }
   ],
-  "key_file": ["key.json", "key_letters.txt", "signs.md"]
+  "key_file": ["key.json", "key_letters.txt", "signs.md"],
+  "parts": [
+   {
+    "label": "R8505 cipher stretches (key rebuilt; text decoded, not read)",
+    "records": "DECODE R8505",
+    "method": "key recovered from ciphertext-only",
+    "extent": "partial",
+    "basis": "annealed homophonic key (key.json) against a 1530-1600 French model after a synthetic control; the decode (reading.txt) gives fragments of French words with holes in most lines. Decoded, not read (reading audit, 22 Oct 2026)."
+   }
+  ]
  }
 }

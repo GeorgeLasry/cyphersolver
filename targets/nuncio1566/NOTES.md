@@ -1,5 +1,12 @@
 # Cardinal Alessandrino to the nuncio in Spain, 1567 — READ
 
+Status: in progress
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R85-R90 are all **decoded, not read**: the decode gives Italian fragments between garbled strings in nearly every
+line. Class read -> not read, method -> not solved (Lasry's key kept as a part); fraction_read 0. The "Result: read"
+below is superseded.
+
 Catalogue item 261 (class B), listed as "Unknown sender (Spain) to unknown recipient, 6 ciphertexts, 1 Jan 1566".
 ASV (AAV), Segreteria di Stato, Spagna 1 (DECODE: "i. 1025, Segretario di Stato, doss. I"), DECODE R85–R90.
 
@@ -71,3 +78,12 @@ digit streams used for the profile counts.
 - Transcriptions are DECODE's (RebAn 2016) and were not re-checked against the images; R88's second page has more
   '?' than R89's.
 - In the France passage the nomenclator group reads S. S. where the sense needs the King of France; taken as S. M. (C).
+
+## Remaining gaps
+
+- R85, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
+- R86, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
+- R87, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
+- R88, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
+- R89, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
+- R90, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode

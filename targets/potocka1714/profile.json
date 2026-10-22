@@ -447,6 +447,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher token files R75xx-cipher.txt (plus the R7526 Polish postscript r7526-trial.txt) and the segment reading reading.md, one entry per letter; key key-potocka.json; the clear French text of the letters is not transcribed",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.md read through. Eight letters carry the cipher as single words or short phrases inside clear French, each of which decodes to a word that completes its clear anchor; R7526's Polish postscript reads as continuous text. All nine kept read, reviewed B (doubtful spellings and one unvalued code noted per letter); the clear text around the insertions is given only as anchors.",
+   "result": "worked",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -528,6 +538,8 @@
    {
     "doc": "R7525",
     "label": "R7525, Barbara Potocka to Jakub Dunin (cipher passages; section R7525 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7525: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7525-cipher.txt",
     "decryption": "reading.md",
     "summary": "Horyhorki and court influence: code 94 wants to be alone in the credit of 100; a house causes the writer harm; justice and enemies."
@@ -535,6 +547,8 @@
    {
     "doc": "R7526",
     "label": "R7526, Barbara Potocka to Jakub Dunin (cipher passages; section R7526 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7526: the long encrypted Polish postscript reads as continuous Polish with spacing, an interpretation and English; the audit graded it so."},
+    "language": "pl",
     "transcription": [
      "R7526-cipher.txt",
      "r7526-trial.txt"
@@ -545,6 +559,8 @@
    {
     "doc": "R7527",
     "label": "R7527, Barbara Potocka to Jakub Dunin (cipher passages; section R7527 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7527: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. Three insertions are doubtful in spelling (exeusant, tegn, tombap). The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7527-cipher.txt",
     "decryption": "reading.md",
     "summary": "the palatine of Vilna's obligation for *sant mil fran* on Bychow; measures to take and distrust of 94's help. The reverse concerns an accusation against the marshal of Lithuania, Biegański's confession to his father, a letter to 100, a letter through the grand chancellor, and an oath. The allegation is the correspondent's account, not an independently verified event."
@@ -552,6 +568,8 @@
    {
     "doc": "R7528",
     "label": "R7528, Barbara Potocka to Jakub Dunin (cipher passages; section R7528 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7528: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7528-cipher.txt",
     "decryption": "reading.md",
     "summary": "Rakiszki, the palatine of Mścisław, and property/reformation involving the first husband, Kroszyński. The second surname spelling is irregular (*Krodyznski*)."
@@ -559,6 +577,8 @@
    {
     "doc": "R7529",
     "label": "R7529, Barbara Potocka to Jakub Dunin (cipher passages; section R7529 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7529: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7529-cipher.txt",
     "decryption": "reading.md",
     "summary": "clear French says that since 10 May the *clef* is *rompue* and there is no way to *loubrire*. Another passage says someone has the *clef* in *ceur*. These report trouble using the cipher; they do not establish interception or cryptanalytic compromise. Later cipher words are *rayne* and *maitresse*."
@@ -566,6 +586,8 @@
    {
     "doc": "R7530",
     "label": "R7530, Barbara Potocka to Jakub Dunin (cipher passages; section R7530 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7530: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7530-cipher.txt",
     "decryption": "reading.md",
     "summary": "the grand treasurer, a confederation, the surrender of an army, and evidence concerning the arrival of a *morcowide* (probably Moscovite). Some number sequences yield corrupt spellings; the letter is not treated as a fluent verified transcript."
@@ -573,6 +595,8 @@
    {
     "doc": "R7534",
     "label": "R7534, Barbara Potocka to Jakub Dunin (cipher passages; section R7534 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7534: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. One group (zaia[73]d, probably zajazd) has an unvalued code. The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7534-cipher.txt",
     "decryption": "reading.md",
     "summary": "deputies, *libertation*, a doubtful *zaia[73]d* (possibly Polish *zajazd*), Bychowa, Białystok, Tykocin and Rybiński. Codes 87, 94 and 270 remain open."
@@ -580,6 +604,8 @@
    {
     "doc": "R7535",
     "label": "R7535, Barbara Potocka to Jakub Dunin (cipher passages; section R7535 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7535: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7535-cipher.txt",
     "decryption": "reading.md",
     "summary": "children and a brother, being Saxon, Dunin's house, Chomiński and an ensign; court correspondence, the marshal and his father, *Menzykw* (possibly Menshikov), the queen and the prince of Courland."
@@ -587,6 +613,8 @@
    {
     "doc": "R7536",
     "label": "R7536, Barbara Potocka to Jakub Dunin (cipher passages; section R7536 of reading.md)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7536: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. Two insertions carry surplus letters (adressie vos leritre; Kinisberk a Kinnik, the second name unidentified). The clear text around the insertions is given only as anchors."},
+    "language": "fr",
     "transcription": "R7536-cipher.txt",
     "decryption": "reading.md",
     "summary": "a disturbed seal and concern over correspondence; instructions to route letters via a name resembling Königsberg, followed by an unidentified *Kinnik*. The writer expects delay but greater safety. The reverse considers her security, lodging in case of war, keeping Dunin's wife company and a safeguard."

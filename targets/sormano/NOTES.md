@@ -1,5 +1,13 @@
 # Sormano and de Vaulx to François I, Ferrara, February 1529
 
+Status: read in part
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. No. 65
+reads as Italian sentences (`n65_reading.md`, continuous reading) and the three runs of no. 63 f. 123r read glyph by
+glyph. **Decoded, not read**: no. 66's own cipher stretches (letter strings that mostly make no words; their content is
+known from the twin no. 65) and no. 63 ff. 115-116, whose cipher is read only in patches. About half the cipher glyphs are in text that
+reads (estimated from `xml/`).
+
 BnF français 3096, nos. 63, 65 and 66 (Gallica `btv1b9060015d`). The letters
 concern Ferrara's defection from France before the Peace of Cambrai.
 
@@ -143,6 +151,8 @@ Point to recheck: on f. 123r the crossbarred long-s behaves as a null three time
 not changed until the sign is compared on the two leaves.
 
 ## Remaining gaps
+- no. 63 ff. 115-116 decoded, not read (patches between 《…》 in nearly every sentence; reading audit 22 Oct 2026) - blocker: illegible; see the no. 63 line below (microfilm resolution)
+- no. 66's own cipher stretches decoded, not read (n66_transcription.md decodes them to letter strings that mostly make no words; reading audit 22 Oct 2026) - blocker: illegible; the same microfilm sign confusions as no. 63; their content is no. 65's clear text of the same passages
 - no. 63 ff. 115v-116r, long cipher runs read only in patches (252 unread stretches) - blocker: illegible; 44-60 px signs on the microfilm (MF 31394) whose i/o and other homophone forms differ by less than the film records (arya/NOTES.md 5b); segmentation merges and splits signs in runs with no clear word to anchor them; a new capture of the original would settle them
 - no. 65, about a dozen words marked (?) or in braces (foot of f. 119r, foot of f. 119v, f. 120r) - blocker: illegible; same cause, the glyph strings are kept in n65_transcription.md
 - no. 63 f. 123r, three signs before "ricaduto" (V 7 4 = a e i, no word) - blocker: illegible; read as written they give no word, and context alone is not used to fill them

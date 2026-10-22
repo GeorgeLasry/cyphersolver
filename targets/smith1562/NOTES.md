@@ -1,6 +1,15 @@
 # Sir Thomas Smith to Cecil and the Queen, 1562-1566 — BL Add MS 4136 (DECODE R9236, R9248-R9254)
 
-Status: read (key found; 23 letters read in full, large part or in part in full or in large part). Session 21 Sept 2026.
+Status: in progress
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part** (was
+"read"). Six letters build English sentences: no. 02 (27 Jan 1562/3, decipher_A Letter 1, with Forbes's print),
+no. 07 (25 Jan 1563/4, Letter 4), no. 10 (Avignon 4 Oct 1564, decipher_C), nos. 12 and 14 (Arles 20 and 24 Nov 1564,
+D4, D6) and no. 21 (15/17 Dec 1562, E3). **The other seventeen are decoded, not read**: isolated names and code items
+or fragments (decipher_A Letters 2, 3, 5, 6; B Blois; D1-D3, D5, D7, D8; E1, E2, E Blocks 1-2), and nos. 01 and 04 are
+not transcribed (printed in Forbes). About 45% of the passages read (estimated).
+
+Earlier status: read (key found; 23 letters read in full, large part or in part in full or in large part). Session 21 Sept 2026.
 
 ## What the records are
 
@@ -73,3 +82,20 @@ R9236 (catalogue 94, added 21 Sept 2026): readings in decipher_E.md. New variant
 - 12 Mar 1562/3 not transcribed (it is in Forbes); 7 Mar 1562/3 half; the 1566 letter half.
 - Unread code signs: ẓ, ï, C·, F̄; the hooked-T family (here/his/they/this/thing) is read from context.
 - Marseilles (5): the key has ⊙ as Calais where CSP has Dieppe.
+
+## Remaining gaps
+
+- nos. 03, 05, 06, 08, 09, 11, 13, 15-20, 22, 23 decoded, not read (names, code items and fragments; reading audit 22 Oct 2026) - blocker: not-attempted; re-read the runs against the key image and the hooked-T code family, and build each letter's passages into sentences with CSP Foreign / Forbes
+- nos. 01 and 04 not transcribed (printed in Forbes, Full View ii) - blocker: not-attempted; transcribe and decrypt, or read from Forbes's print
+
+## Escalation
+
+Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
+not read. None of these steps has been redone since; each is open for those documents.
+
+- [ ] siblings: other letters of the same series or key, read or deciphered at the time
+- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
+- [ ] known-keys: other keys of the same correspondents tried
+- [ ] print: printed editions and calendars searched for these letters
+- [ ] key-rebuild: the key corrected against the documents that read
+- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images

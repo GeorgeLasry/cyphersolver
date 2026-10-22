@@ -1,6 +1,11 @@
 # Diego de Ibarra, Paris, 10 July 1593, in the Feria-Mansfeld cipher (BnF fr. 3984 no. 68, f. 145)
 
-Status: read in part — 224 of 598 groups read as sense (37.5%) with Tomokiyo's Feria-Mansfeld table (keyM.tsv) and one
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+no. 68 is **decoded, not read**: a stream of syllables with the three-letter word codes unread in most clauses; a few
+phrases are intelligible, no sentence can be built. Class read in part -> not read, method -> not solved (the known
+key kept as a part); 37.5% withdrawn as a reading figure. The status line below is superseded.
+
+Status: not read (decoded, not read; reading audit 22 Oct 2026). Earlier: read in part — 224 of 598 groups read as sense (37.5%) with Tomokiyo's Feria-Mansfeld table (keyM.tsv) and one
 value added (57 = li); the three-letter word codes, which carry much of the sense, have no published table.
 
 Split on 14 Oct 2026 from `sessa1593` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter was
@@ -82,6 +87,7 @@ Key files here: `keyM.tsv` (Tomokiyo's Feria-Mansfeld table), `fill68.json` (57 
 transcription `ct68.txt`; sense count `sense68.tsv` (the no. 68 rows of sessa1593's `sense.tsv`); reading `reading68.md`.
 
 ## Remaining gaps
+- no. 68 as a whole, decoded, not read - blocker: no-key-material; the three-letter word codes have no table (see next line)
 - no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and no crib fixes it; the numbers 64, 31, 77, 81, 95 are not separated by the LM control; the diacritic finals dropped in ct68.txt are still to be added from the image
 
 ## Escalation

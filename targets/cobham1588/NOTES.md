@@ -1,6 +1,12 @@
 # Lord Cobham to Walsingham, May–June 1588 (BL Harley MS 287, DECODE R8490/R8492/R8495/R8496): key partly rebuilt, not read
 
 Catalogue item: "Cobham (Belgia) to Walsingham, 4 ciphertexts" (DECODE R8490, R8492, R8495, R8496; rule-scored).
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+all four letters (R8490, R8492, R8495, R8496) are **decoded, not read**. READING.md gives isolated cipher words with
+grades between ellipses; the clear English around them reads, the cipher passages do not, and no sentence of cipher
+text can be built. Class read in part -> not read, method -> not solved; the 'about a third of the cipher words'
+figure (0.35, never measured) is withdrawn as a reading figure. The partial key (signs.tsv) stands.
+
 Outcome: **read in part** (see READING.md; was "attempted, open" until the solver loops of 21 Sept). The cipher system has been identified and most of its alphabet has been rebuilt from
 the decrypted sibling letters in the same volume. Only fragments of the four letters read with confidence.
 
@@ -92,7 +98,7 @@ Fragments only, grade M (probable) unless marked:
 3. Merge with cypher-7e's `harley287` key for R8477–R8487.
 4. Read the passages. The letters are in plain English and the context is known (Bourbourg talks, Armada news).
 
-Status: read in part.
+Status (21 Sept; superseded 22 Oct 2026, now decoded, not read): read in part.
 - Cross-link: cypher-7e read R8482-R8487 (docs/harley287.html, targets/harley287/key.tsv); its key has narrow ∧ = s, wide ∧ = t.
 
 ## Second pass, 21 Sept 2026 (with the harley287 key)
@@ -194,6 +200,10 @@ CSP Foreign vol. 21 pt 4 calendars Cobham letters of 1, 4, 9, 13, 24, 29 May and
 
 ## Remaining gaps
 
+- R8490 (ff. 80-81), decoded, not read - blocker: open-codes; unglossed signs and codes 22, 27
+- R8492 (f. 88), decoded, not read - blocker: open-codes; signs K, upsilon, rho, W glossed nowhere, polyphonic signs
+- R8495 (ff. 92-93), decoded, not read - blocker: open-codes; same unglossed and polyphonic signs
+- R8496 (ff. 96-97), decoded, not read - blocker: open-codes; same signs; f. 97r runs not transcribed
 - f. 80r-81r (R8490) long run f.80g, codes 22, 27 and the square sign - blocker: open-codes; 22, 27 and the square are unglossed in the siblings R8481/R8488/R8489/R8493; run 80g gives no word even with two edits
 - f. 88r (R8492): name after 'captain', word after 'haven of', lines 3-6 and the seven cipher words of ll. 12-20 (recurring 'Tnn') - blocker: open-codes; signs K, upsilon, rho, W not glossed on any sibling; polyphonic signs (wedge s/t/a, gamma r/y, c o/a, phi l/t/p) leave several readings
 - f. 92r (R8495) runs 92a-d - blocker: open-codes; solver finds no word with two edits; same unglossed and polyphonic signs

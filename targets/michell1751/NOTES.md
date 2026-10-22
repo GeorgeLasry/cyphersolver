@@ -12,6 +12,12 @@ vol. 8 (Berlin 1882), no. 5263, pp. 576–577, "Au secrétaire Michell à Londre
 minute ("Nach dem Concept"). The copy at The Hague is the Dutch interceptors' copy of the letter as sent, in the Prussian
 numerical nomenclator; nobody had matched the two until now. The code itself is not rebuilt here beyond the anchors below.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the reading is the **print**
+(PC 8 no. 5263), which is continuous French; it is the entry's reading in `profile.json`, though not transcribed in the
+repository. The project's **own decode of the cipher is decoded, not read**: the blind decode with the frozen cabinet
+key resolves about a third of the groups and builds no sentence (`docs/_check_reading.py`: 0% clean); `align_R1957.txt`
+is the print laid on the groups. Class and method unchanged (already solved, read from existing decipherment).
+
 ## The document
 
 Two pages (DECODE images P2 = first page, P1 = second page; the DECODE order is reversed). A clear heading and opening, 550

@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "R473",
-   "read": "read",
+   "read": "not read",
    "shelfmark": "Ráday Archives, C64-4d2-10, 92-95 (DECODE R473)",
    "date": "9 January 1706",
    "year": 1706,
@@ -114,30 +114,66 @@
   },
   {
    "date": "2026-09-21",
-   "kind": "solver", "technique": ["EM alignment", "repeat/pattern analysis", "plaintext matching"],
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "repeat/pattern analysis",
+    "plaintext matching"
+   ],
    "what": "Hard-EM alignment of cipher runs with DECODE's transcription of the glosses (align.py) to rebuild the key: too noisy, 154/373 groups in mismatched runs; key not rebuilt.",
    "result": "failed"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked DECODE's transcription with its interlinear-gloss lines; a clean transcription of the gloss is missing", "result": "partial"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked DECODE's transcription with its interlinear-gloss lines; a clean transcription of the gloss is missing",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test): DOC_R473_D3610_3610.txt read through; its PLAINTEXT lines (DECODE's rendering of the interlinear) are garbled and no sentence can be built (0 of 43 clean, docs/_check_reading.py). R473 relabelled decoded, not read; class already solved -> not read, method read from existing decipherment -> not solved (the interlinear and the print are not transcribed here).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  }
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "A contemporary interlinear decipherment stands over almost every cipher group of R473, cited to Ráday Pál iratai I (1955) p. 494 n. 1; an attempt to rebuild the key from it failed on DECODE's noisy transcription.",
-  "contribution": ["sender or date identified", "catalogue correction"],
-  "class": "already solved",
+  "method": "not solved",
+  "method_basis": "Not read here. The letter was deciphered at the time (contemporary interlinear over almost every cipher group) and is cited to Ráday Pál iratai I (1955) p. 494 n. 1, but neither the gloss nor the print has been transcribed by the project; the only text file is DECODE's noisy transcription, and an attempt to rebuild the key from it failed.",
+  "contribution": [
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "class": "not read",
   "key": "none",
-  "fraction_read": "unknown",
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "not counted; the contemporary interlinear covers nearly every cipher group (a few, incl. the place in the date line, unglossed)",
+  "fraction_read": 0.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "22 Oct 2026, reading audit: no document builds sentences (the one file is DECODE's transcription with a garbled rendering of the interlinear), so 0. Earlier: 'not counted; the contemporary interlinear covers nearly every cipher group' (class already solved), withdrawn: the reading exists on the leaf and probably in print, not in this project.",
   "verification": [
    "historical consistency"
   ],
-  "notes": "Read at the time (interlinear decipherment); date corrected to 9 Jan 1706 and addressee to Rákóczi; nothing new read.",
+  "notes": "Read at the time (interlinear decipherment); date corrected to 9 Jan 1706 and addressee to Rákóczi; nothing new read. 22 Oct 2026, reading audit: class already solved / read from existing decipherment -> not read / not solved, because the project holds no reading; transcribing the interlinear (or the Ráday 1955 print) would make it read from existing decipherment.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment over almost every group"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment over almost every group"
+   }
   ],
   "texts": [
-   {"doc": "R473", "label": "R473, 9 Jan 1706", "transcription": "DOC_R473_D3610_3610.txt", "decryption": "DOC_R473_D3610_3610.txt", "summary": "László Vetési Kökényesdi, as 'Cassimirus Miloftzki', to Ferenc Rákóczi II, 9 January 1706, in Hungarian with numerical cipher runs; the interlinear glosses name France, Italy, Spain, Holland and England, November and December, and Ráday in the third person.", "note": "DECODE's transcription (MA, 2020) holds both the cipher and, in its PLAINTEXT lines, a poor transcription of the contemporary interlinear decipherment. A clean transcription of the gloss is project work; Ráday Pál iratai I (1955) item 102 n. 1 was not checked."}
+   {
+    "doc": "R473",
+    "label": "R473, 9 Jan 1706",
+    "transcription": "DOC_R473_D3610_3610.txt",
+    "decryption": "DOC_R473_D3610_3610.txt",
+    "summary": "László Vetési Kökényesdi, as 'Cassimirus Miloftzki', to Ferenc Rákóczi II, 9 January 1706, in Hungarian with numerical cipher runs; the interlinear glosses name France, Italy, Spain, Holland and England, November and December, and Ráday in the third person.",
+    "note": "DECODE's transcription (MA, 2020) holds both the cipher and, in its PLAINTEXT lines, a poor transcription of the contemporary interlinear decipherment. A clean transcription of the gloss is project work; Ráday Pál iratai I (1955) item 102 n. 1 was not checked. Reading audit, 22 Oct 2026: the PLAINTEXT lines are garbled Hungarian between cipher numbers ('n a gy i o hglpnd', 'Foad orh. Bn l er g po s ta ad ok ot Nagod'); no sentence can be built from the file.",
+    "language": "hu",
+    "state": "decoded, not read"
+   }
   ]
  }
 }

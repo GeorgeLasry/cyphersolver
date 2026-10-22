@@ -624,6 +624,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): partial readings and parallel collations per letter, key key_working.md; no sign-level transcription of the graphic cipher exists for any of the four letters, and the contemporary clear copies 7a, 26a/26b are not transcribed in full",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the four reading files read through. R1101 (seven lines, checked against clear copy 7a) and R1102 sections A-C (with D in part) build Italian sentences; R1103 has one isolated word and R1106 is a collation of a few clauses with [...] between them. R1103 and R1106 relabelled decoded, not read; R1101 and R1102 reviewed B. fraction_read 0.65 -> ~0.5 (estimated).",
+      "result": "partial",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; only plaintext editions and anchor words"}, 
@@ -631,9 +638,9 @@
     "method_basis": "The key was built by aligning R1101 with its contemporary clear copy 7a and R1104 with its decipherment 13a, both in the same ASMo Ambasciatori Ungheria b. 1/9 file (found on Vestigia), then applied to R1102 and R1103, which have no clear copy.",
     "contribution": ["transcription", "key recovered"],
     "class": "read in part",
-    "fraction_read": 0.65,
+    "fraction_read": 0.5,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "Not measurable: no token-marked reading of the whole group; R1102 working edition keeps 20 unresolved U labels over partial page-3/4 transcriptions (cipher_inventory.md: 'not a symbol count'), R1103 has no transcription, R1101/R1106 read via contemporary clear witnesses not collated word by word. Value from NOTES",
+    "fraction_read_source": "22 Oct 2026, reading audit: only letters that build sentences count. Estimated by cipher lines in the reading files (no token count): R1101's seven-line block and R1102's sections A-D (about 31 lines) read; R1103's four-line block and R1106's page-3 cipher (about 15 lines) are decoded, not read; R1101's other cipher is not transcribed. About half. Earlier 0.65 (estimate from NOTES, all four letters) withdrawn as a reading figure.",
     "key": "partial",
     "grades": "unknown",
     "verification": [
@@ -675,7 +682,15 @@
           "r1101_queen_parallel.md",
           "alignment_r1101.md"
         ],
-        "summary": "Nicolò Sadoleto, Ferrarese envoy to Matthias Corvinus, to Ercole I d'Este: urging the King to join the league and take up 'questa impresa', for love of the league and to humble [the Venetians] once for all. Read at the time: the contemporary clear copy 7a; the files are partial parallel readings of the cipher against it."
+        "summary": "Nicolò Sadoleto, Ferrarese envoy to Matthias Corvinus, to Ercole I d'Este: urging the King to join the league and take up 'questa impresa', for love of the league and to humble [the Venetians] once for all. Read at the time: the contemporary clear copy 7a; the files are partial parallel readings of the cipher against it.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "r1101_final_parallel.md: the seven lines build an Italian sentence (that he join and take up this enterprise and not let pass this opportunity ... to abase the Venetians once so that they learn to keep within their bounds), confirmed against the contemporary clear copy 7a; three words are M restorations and one code group (W01 = Venetiani by position). Covers this block only, not every cipher passage of the letter."
+        },
+        "state": "read",
+        "language": "it"
       },
       {
         "doc": "R1102",
@@ -685,13 +700,24 @@
           "reading_r1102.md",
           "reading_r1102_additional.md"
         ],
-        "summary": "Sadoleto learnt in great secrecy from dom Francesco that the Signoria of Venice had written to Francesco Quirino to offer the King of Hungary friendship, Veglia, and the captaincy of its fleet for his (bastard) son, with a yearly payment in ducats. Deciphered in part with the alphabet rebuilt from contemporary clear copies; r1102_working_edition.md is the current edition (unread material marked [Uxx])."
+        "summary": "Sadoleto learnt in great secrecy from dom Francesco that the Signoria of Venice had written to Francesco Quirino to offer the King of Hungary friendship, Veglia, and the captaincy of its fleet for his (bastard) son, with a yearly payment in ducats. Deciphered in part with the alphabet rebuilt from contemporary clear copies; r1102_working_edition.md is the current edition (unread material marked [Uxx]).",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "r1102_working_edition.md sections A-C read as Italian sentences (in Buda he learned in great secret from dom Francesco that the Signoria had written to Francesco Quirino to offer the King friendship, Vegla, the bastard son as captain of the fleet and a hundred thousand ducats a year), with two U labels; section D (the yearly payment) has U holes in its last four lines and E is one fragment. Audit grade C refined: the main passages read."
+        },
+        "state": "read",
+        "language": "it"
       },
       {
         "doc": "R1103",
         "label": "R1103, 17 Aug 1482 (Vestigia 1294)",
         "decryption": "r1103_image_audit.md",
-        "summary": "A faded four-line cipher block; no continuous reading is established, only the isolated word 'vostro'. The file is the image audit, not a decipherment."
+        "summary": "A faded four-line cipher block; no continuous reading is established, only the isolated word 'vostro'. The file is the image audit, not a decipherment.",
+        "note": "r1103_image_audit.md establishes one isolated word (vostro) from the faded four-line block; no sentence (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "it"
       },
       {
         "doc": "R1106",
@@ -700,7 +726,10 @@
           "r1106_parallel_reading.md",
           "alignment_r1106.md"
         ],
-        "summary": "The King 'ha firmo proposito de non se scoprire' and to avoid 'involverse in guera' with the Signoria of Venice. Read at the time on the contemporary slips 26a/26b; the files collate the cipher against them unit by unit."
+        "summary": "The King 'ha firmo proposito de non se scoprire' and to avoid 'involverse in guera' with the Signoria of Venice. Read at the time on the contemporary slips 26a/26b; the files collate the cipher against them unit by unit.",
+        "note": "r1106_parallel_reading.md collates a few clauses with the clear witness 26b ('ha firmo proposito de non se scoprire ... involverse in guera a X') with [...] between them; the cipher passage is not built into sentences (reading audit, 22 Oct 2026).",
+        "state": "decoded, not read",
+        "language": "it"
       }
     ],
     "key_file": "key_working.md"

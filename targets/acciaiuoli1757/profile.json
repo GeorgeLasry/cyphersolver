@@ -114,12 +114,19 @@
    "result": "worked"
   },
   {
-   "kind": "crib", "technique": ["crib testing", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
    "what": "Contemporary decipherments on R197-R199 aligned with the cipher: 25 nomenclator codes fixed (Re, Regina, Spagna, tutto, molto, ministri ...).",
    "result": "worked"
   },
   {
-   "kind": "hypothesis", "technique": ["contextual inference"],
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
    "what": "Further codes from context (2740 prim-, 2530 chirurgo, 2394 conte, 2743 principessa).",
    "result": "partial"
   },
@@ -133,6 +140,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per letter, the NiLan/Midas digit transcriptions (decode/DOC_*_D1656-1663), George Lasry's letter-level decryption of all eight (decode/DOC_R25_D3231_3231.txt) and this project's word-split reading copied from READING.md into texts/; key = Lasry's DOC_R25_D3232 plus the code table copied to texts/key.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test): the eight texts/R*_decryption.md read through. R197-R199 (deciphered on the leaf) and R196 build sentences; R25, R195, R200 and R201 have an open <nnnn> code or gap in almost every sentence (13-38% of sentences clean, docs/_check_reading.py). Those four relabelled decoded, not read; class read -> read in part; fraction_read measured 0.246 (2,050 of 8,326 tokens).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -141,74 +158,155 @@
     "doc": "p117",
     "label": "117/1 = R25, ff. 95r-95v, 12 Sept 1758",
     "transcription": "decode/DOC_R25_D1656_1656.txt",
-    "decryption": ["texts/R25_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "The nuncio's secret account of the attempt of 3 Sept 1758 on José I: coming back from a lady \"delle prime famiglie\" (the young Marchioness of Távora), the king was fired on in his calesse, his valet and favourite Pedro Teixeira badly wounded and the king hit in the right arm. The blow was thought to come from her relatives or from Teixeira's enemies."
+    "decryption": [
+     "texts/R25_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "The nuncio's secret account of the attempt of 3 Sept 1758 on José I: coming back from a lady \"delle prime famiglie\" (the young Marchioness of Távora), the king was fired on in his calesse, his valet and favourite Pedro Teixeira badly wounded and the king hit in the right arm. The blow was thought to come from her relatives or from Teixeira's enemies.",
+    "language": "it",
+    "state": "decoded, not read",
+    "note": "R25: the story of the attempt on the king follows, but an open <nnnn> code or a [?] gap breaks almost every sentence; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
    },
    {
     "doc": "p117",
     "label": "117/2 = R195, f. 98r, Sept 1758",
     "transcription": "decode/DOC_R195_D1657_1657.txt",
-    "decryption": ["texts/R195_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "The public version of the king's injury is illness; the arm is said to be broken. Fleets and ships are held back, to the merchants' loss."
+    "decryption": [
+     "texts/R195_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "The public version of the king's injury is illness; the arm is said to be broken. Fleets and ships are held back, to the merchants' loss.",
+    "language": "it",
+    "state": "decoded, not read",
+    "note": "R195: open codes and '…' gaps in nearly every sentence; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
    },
    {
     "doc": "p117",
     "label": "117/3 = R196, f. 101r, 26 Sept 1758",
     "transcription": "decode/DOC_R196_D1658_1658.txt",
-    "decryption": ["texts/R196_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "The public version is illness: the arm is said to stay impeded and the king is in bed all day."
+    "decryption": [
+     "texts/R196_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "The public version is illness: the arm is said to stay impeded and the king is in bed all day.",
+    "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Short letter; sentences build with a few open codes (6 of 9 clean): the rumours about the king's wound, the arm that will stay impaired."
+    }
    },
    {
     "doc": "p117",
     "label": "117/4 = R197, f. 103r, 10 Oct 1758 (deciphered on the leaf)",
     "transcription": "decode/DOC_R197_D1659_1659.txt",
-    "decryption": ["texts/R197_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "Deciphered at the time on the leaf: the king is up but never out all day; most think the arm is badly damaged and will stay impaired."
+    "decryption": [
+     "texts/R197_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "Deciphered at the time on the leaf: the king is up but never out all day; most think the arm is badly damaged and will stay impaired.",
+    "language": "it",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Deciphered on the leaf: the Secretariat's clear decipherment above the figures reads as Italian sentences, and the word-split key reading agrees with it."
+    }
    },
    {
     "doc": "p117",
     "label": "117/5 = R198, f. 104r, 31 Oct 1758 (deciphered on the leaf)",
     "transcription": "decode/DOC_R198_D1660_1660.txt",
-    "decryption": ["texts/R198_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "Deciphered at the time on the leaf: abscess and fever, not erysipelas; the arm will stay impaired."
+    "decryption": [
+     "texts/R198_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "Deciphered at the time on the leaf: abscess and fever, not erysipelas; the arm will stay impaired.",
+    "language": "it",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Deciphered on the leaf: the Secretariat's clear decipherment above the figures reads as Italian sentences, and the word-split key reading agrees with it."
+    }
    },
    {
     "doc": "p117",
     "label": "117/6 = R199, f. 106r, 24 Oct 1758 (deciphered on the leaf)",
     "transcription": "decode/DOC_R199_D1661_1661.txt",
-    "decryption": ["texts/R199_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "Deciphered at the time on the leaf: after the death of his sister, Queen Barbara of Spain, José says Ferdinand VI has promised to marry his daughter Maria Francisca, which the Spanish minister contradicts."
+    "decryption": [
+     "texts/R199_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "Deciphered at the time on the leaf: after the death of his sister, Queen Barbara of Spain, José says Ferdinand VI has promised to marry his daughter Maria Francisca, which the Spanish minister contradicts.",
+    "language": "it",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Deciphered on the leaf: the Secretariat's clear decipherment above the figures reads as Italian sentences, and the word-split key reading agrees with it."
+    }
    },
    {
     "doc": "p117",
     "label": "117/7 = R200, ff. 115r-115v, 28 [Nov?] 1758",
     "transcription": "decode/DOC_R200_D1662_1662.txt",
-    "decryption": ["texts/R200_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "Carvalho (Pombal) is despotic and the king fears him; the court, the Infantes and the confessors; the expulsion of Jesuits and a lay brother of the Society; the nuncio is distrusted."
+    "decryption": [
+     "texts/R200_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "Carvalho (Pombal) is despotic and the king fears him; the court, the Infantes and the confessors; the expulsion of Jesuits and a lay brother of the Society; the nuncio is distrusted.",
+    "language": "it",
+    "state": "decoded, not read",
+    "note": "R200: open codes and '…' gaps in nearly every sentence (3 of 23 sentences clean, docs/_check_reading.py), transcription slips; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
    },
    {
     "doc": "p117",
     "label": "117/8 = R201, f. 280r, Lisbon 12 [?] 1760",
     "transcription": "decode/DOC_R201_D1663_1663.txt",
-    "decryption": ["texts/R201_decryption.md", "decode/DOC_R25_D3231_3231.txt"],
-    "summary": "Conferences of the Conde d'Oeiras (Carvalho); the Princess of Brazil's marriage to Infante Don Luis of Spain or to Don Pedro; London is alarmed at a Bourbon on the Portuguese throne. The marriage to Don Pedro took place in June 1760."
+    "decryption": [
+     "texts/R201_decryption.md",
+     "decode/DOC_R25_D3231_3231.txt"
+    ],
+    "summary": "Conferences of the Conde d'Oeiras (Carvalho); the Princess of Brazil's marriage to Infante Don Luis of Spain or to Don Pedro; London is alarmed at a Bourbon on the Portuguese throne. The marriage to Don Pedro took place in June 1760.",
+    "language": "it",
+    "state": "decoded, not read",
+    "note": "R201: open codes and gaps in nearly every sentence (4 of 23 clean), transcription slips; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
    }
   ],
-  "key_file": ["decode/DOC_R25_D3232_3232.txt", "texts/key.md"],
+  "key_file": [
+   "decode/DOC_R25_D3232_3232.txt",
+   "texts/key.md"
+  ],
   "method": "read with known key",
   "method_basis": "Lasry's reconstructed key (DECODE DOC_R25_D3232, Oct 2020) and his letter-level decryption were attached to every record (R25, R195-R201); the stream was split into Italian words here and 25 nomenclator codes fixed from the three contemporary decipherments on R197-R199.",
-  "contribution": ["key extended or corrected"],
-  "class": "read",
-  "fraction_read": "unknown",
+  "contribution": [
+   "key extended or corrected"
+  ],
+  "class": "read in part",
+  "fraction_read": 0.246,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "All eight read at the letter level; about 80 of 107 codes codes open; parts of R200/R201 garbled by transcription slips.",
+  "notes": "All eight read at the letter level; about 80 of 107 codes codes open; parts of R200/R201 garbled by transcription slips. 22 Oct 2026, reading audit: R25, R195, R200, R201 relabelled decoded, not read (open codes in almost every sentence); class read -> read in part.",
   "credits": [
-    {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed key DOC_R25_D3232 and letter-level decryption attached to R25, R195-R201", "date": "2020-10", "source": "DECODE R25 DOC_R25_D3232"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "three leaves deciphered at the time (R197-R199); 25 nomenclator codes fixed from them"}
-  ]
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "reconstructed key DOC_R25_D3232 and letter-level decryption attached to R25, R195-R201",
+    "date": "2020-10",
+    "source": "DECODE R25 DOC_R25_D3232"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "three leaves deciphered at the time (R197-R199); 25 nomenclator codes fixed from them"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Read: R196 (492 tokens), R197 (190), R198 (577), R199 (791) = 2,050 of 8,326 cipher tokens (DECODE digit transcriptions decode/DOC_R*_D1656-1663 measured with docs/_check_profile.py --measure) = 0.246. R25, R195, R200, R201 are decoded, not read. The earlier class 'read' (all eight 'read at the letter level') is withdrawn."
  }
 }

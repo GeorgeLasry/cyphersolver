@@ -1,11 +1,18 @@
 # Mihály Hentér → Ferenc Rákóczi II, Constantinople, 8 July 1707
 
+Status: in progress (22 Oct 2026: paragraphs 3-4 not read, workable; see Remaining gaps)
+
 **Result, 20 September 2026:** DECODE R496 is not an undeciphered letter. A
 contemporary or near-contemporary plaintext has been written between the cipher
 lines on the target folio itself. DECODE records `inline_plaintext = False`, so
 the catalogue has overlooked the interlinear decipherment. The manuscript date
 is **8 July 1707**, not 1 January: DECODE's 1 January--31 December dates are only
 an artificial year range.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **paragraphs 1-2** of the
+normalized interlinear **read** (the Belgrade pasha's offer; the audience sought for the deputation). **Paragraphs 3-4
+are not read**: words between [...] holes where the interlinear hand overlaps the cipher (split into a second
+`outcome.texts` entry, "decoded, not read"). fraction_read 0.8 -> about 0.5 (estimated).
 
 ## Identification
 
@@ -88,3 +95,7 @@ and the related [Aetas article](https://acta.bibl.u-szeged.hu/38710/1/aetas_2014
 3. Inline plaintext: change **False** to **True**.
 4. Page description: one folio, with the letter on the recto and address on the
    verso; DECODE exposes two image files despite listing one page.
+
+## Remaining gaps
+
+- paragraphs 3-4 of the interlinear (the delayed audience, the captive, the closing), not read - blocker: not-attempted; the decipherer's cursive overlaps the cipher signs, but the cipher itself is a simple substitution whose values are fixed from R533/R534: transcribe the cipher of those lines and decipher it, or have a Hungarian palaeographer read the interlinear on the scan

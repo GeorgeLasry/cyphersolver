@@ -255,11 +255,12 @@
    "result": "worked"
   },
   {"date": "2026-10-21", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 130 tokens, 80 types, nl-modern order 4: reading -2.009 per letter; random keys -2.142 (z 2.2); key annealed onto shuffled ciphertext best -1.651 (mean -1.684, z -10.0); annealer on the real text -1.702. Verdict: underdetermined.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked tx/ transcriptions (R2121 cipher = the two R2120 pages), the contemporary clear decipherment tx/R2121_clear.txt, and the graded partial decoding of R2122/R2131 in alpha/decoded_targets_v2.txt; key = alpha/dedem_alpha_table.tsv.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked tx/ transcriptions (R2121 cipher = the two R2120 pages), the contemporary clear decipherment tx/R2121_clear.txt, and the graded partial decoding of R2122/R2131 in alpha/decoded_targets_v2.txt; key = alpha/dedem_alpha_table.tsv.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). alpha/decoded_targets_v2.txt read group by group: R2122 (A+B 40%) and R2131 (16 of 46 firm) have holes in nearly every clause; only the clear passages read (docs/_check_reading.py: 4 of 113 sentences clean). Both relabelled decoded, not read. R2120 reads from its contemporary decipherment tx/R2121_clear.txt (continuous Dutch; reading_review A). Method key recovered based on adjacent plaintext -> read from existing decipherment (parts); fraction_read 0.41 -> 0.673 (R2120 groups of all three letters).", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-21", "model": "nl-modern", "file": "validation.tsv", "tokens": 130, "types": 80, "tokens_per_type": 1.62, "score": -2.009, "nulls": {"random keys": {"n": 200, "mean": -2.142, "sd": 0.062, "max": -2.014, "z": 2.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.684, "sd": 0.032, "max": -1.651, "z": -10.0, "p": 1.0}}, "power": -1.702, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.009; polyphony 0.0; 178 unread tokens left out; annealer on the real text from random keys reached -1.702"}, 
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "R2120 was deciphered at the time (its clear decipherment is filed as R2121). The code's layout, alphabetical within blocks of 500 groups filled row-wise in five columns, was recovered from the sibling decipherments in the same file (R2121, R1947, R2053) in the second pass of 4 Oct 2026 (Feyseel Nur, PR #21; within-block Spearman 0.799 against a null p99.9 of 0.368). A table of 354 graded values decodes R2122 and R2131 in part.",
+  "method": "read from existing decipherment",
+  "method_basis": "R2120 is read from its contemporary clear decipherment, filed as R2121 pp. 2-4; R2122 and R2131 decode only in part with the code layout recovered from the sibling decipherments (R2121, R1947, R2053), and do not build sentences.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -267,7 +268,7 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.41,
+  "fraction_read": 0.673,
   "grades": {
    "H": 0,
    "C": 0,
@@ -293,7 +294,7 @@
   ],
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "alpha/decoded_targets_v2.txt: of the 301 non-null groups of R2122 (255) and R2131 (46), 123 carry a firm table or title value (grades A, B, T: 107 + 16). Values given, not sense: with slot-and-context readings (grade C) 56%; the running reading is fragmentary and the R2131 neutrality reading is not established.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. R2120 (633 groups, read from its contemporary decipherment) of 941 groups in R2120, R2122 (258) and R2131 (50) (documents[].length) = 0.673. Withdrawn as a reading figure: 0.41, the share of the 301 non-null groups of R2122 and R2131 with a firm table value (alpha/decoded_targets_v2.txt), which counted values given, not sentences.",
   "gaps": [
    {
     "item": "R2122 and R2131: groups with no attested value (grades '-' and '?')",
@@ -302,10 +303,26 @@
    }
   ],
   "texts": [
-   {"doc": "DECODE R2120", "label": "R2120 (cipher pages re-photographed as R2121), Pera 22 Dec 1788", "transcription": "tx/R2121_cipher.txt", "decryption": "tx/R2121_clear.txt", "summary": "Van Dedem, Dutch ambassador at Constantinople, reports to Grand Pensionary Van de Spiegel the Porte's proposed loan of 7-8 million, secured on the revenues of Morea, Negropont, Salonica, Volos, Urfan, Cara Agatz, Damascus, Sorien and Rodosto and the tribute of Jenischeher, and suggests the Levant Directors or Hope & Co. take it up. The decryption is the contemporary clear decipherment filed as R2121."},
-   {"doc": "DECODE R2122", "label": "R2122, \"Duplicaat\", Pera 15 Jan 1789", "transcription": "tx/R2122_cipher.txt", "decryption": "alpha/decoded_targets_v2.txt", "summary": "Two cipher blocks (258 groups) in a clear letter to Van de Spiegel, decoded in part with the block-alphabetical table of the second pass; the firm words (envoyé, Porta, negociatie, Republicq, Leening) are consistent with the loan theme of the R2121 crib. Values, not sense: the running reading is fragmentary."},
-   {"doc": "DECODE R2131", "label": "R2131, Pera 9 Feb 1793", "transcription": "tx/R2131_cipher.txt", "decryption": "alpha/decoded_targets_v2.txt", "summary": "One cipher paragraph of 50 groups in a clear letter to Van de Spiegel, decoded in part (16 of 46 non-null groups firm); it names the Porte, an envoy, the war and the French, but the neutrality reading proposed in review is not established."}
+   {"doc": "DECODE R2120", "label": "R2120 (cipher pages re-photographed as R2121), Pera 22 Dec 1788", "transcription": "tx/R2121_cipher.txt", "decryption": "tx/R2121_clear.txt", "summary": "Van Dedem, Dutch ambassador at Constantinople, reports to Grand Pensionary Van de Spiegel the Porte's proposed loan of 7-8 million, secured on the revenues of Morea, Negropont, Salonica, Volos, Urfan, Cara Agatz, Damascus, Sorien and Rodosto and the tribute of Jenischeher, and suggests the Levant Directors or Hope & Co. take it up. The decryption is the contemporary clear decipherment filed as R2121.", "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "The contemporary clear decipherment (tx/R2121_clear.txt) reads as continuous Dutch: the Porte's proposed loan of 7-8 million and its securities. It is the decipherment of this cipher, not a separate clear letter, so R2120 reads from an existing decipherment; the low score is the word list's coverage of 18th-century Dutch spelling."}, "state": "read", "language": "nl"},
+   {"doc": "DECODE R2122", "label": "R2122, \"Duplicaat\", Pera 15 Jan 1789", "transcription": "tx/R2122_cipher.txt", "decryption": "alpha/decoded_targets_v2.txt", "summary": "Two cipher blocks (258 groups) in a clear letter to Van de Spiegel, decoded in part with the block-alphabetical table of the second pass; the firm words (envoyé, Porta, negociatie, Republicq, Leening) are consistent with the loan theme of the R2121 crib. Values, not sense: the running reading is fragmentary.", "note": "Graded decode (alpha/decoded_targets_v2.txt): 40% of groups with a firm value, the rest alphabetical brackets or guesses, so nearly every clause has holes; only the clear passages of the letter read (reading audit, 22 Oct 2026).", "state": "decoded, not read", "language": "nl"},
+   {"doc": "DECODE R2131", "label": "R2131, Pera 9 Feb 1793", "transcription": "tx/R2131_cipher.txt", "decryption": "alpha/decoded_targets_v2.txt", "summary": "One cipher paragraph of 50 groups in a clear letter to Van de Spiegel, decoded in part (16 of 46 non-null groups firm); it names the Porte, an envoy, the war and the French, but the neutrality reading proposed in review is not established.", "note": "16 of 46 non-null groups firm; the neutrality reading is not established and no sentence can be built (reading audit, 22 Oct 2026).", "state": "decoded, not read", "language": "nl"}
   ],
-  "key_file": "alpha/dedem_alpha_table.tsv"
+  "key_file": "alpha/dedem_alpha_table.tsv",
+  "parts": [
+   {
+    "label": "R2120, Pera 22 Dec 1788",
+    "records": "DECODE R2120 (decipherment R2121)",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "the contemporary clear decipherment, R2121 pp. 2-4, transcribed as tx/R2121_clear.txt"
+   },
+   {
+    "label": "R2122 (15 Jan 1789) and R2131 (9 Feb 1793), decoded, not read",
+    "records": "DECODE R2122, R2131",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "the code layout recovered from the sibling decipherments (key recovered based on adjacent plaintext, 354 graded values) gives firm values to 41% of the groups; the decode has holes in nearly every clause. Withdrawn as a reading on 22 Oct 2026 (reading audit)."
+   }
+  ]
  }
 }

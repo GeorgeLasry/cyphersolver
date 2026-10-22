@@ -1,6 +1,12 @@
 # Marburg 1635: cipher passage in a Thirty Years' War letter (DECODE R4500)
 
-Status: read (≈97% of tokens; nine signs at the end of line 1 open)
+Status: in progress (was: read, ≈97% of tokens; nine signs at the end of line 1 open)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: cipher lines 8-14,
+the closing sentence (280 of 538 signs). **Decoded, not read**: lines 1-7 (258 signs): the decode of ll. 2-4 is
+garbled and the normalised reading fills it with bracketed conjecture; ll. 5-7 give a clause with slips. Split into
+two `outcome.texts` entries; class read -> read in part; 97.4% (signs with a value) withdrawn as a reading figure, 52%
+of the signs read.
 
 - **Record.** DECODE R4500, Hessisches Staatsarchiv Marburg, HStAM 4 d Nr. 1218 no. 49 (arcinsys v1923393). One page,
   image `IMG_R4500_I26572_P.jpg` (git-ignored in `img/`). DECODE: "Partially decrypted", date span 1635–1652 (the
@@ -58,6 +64,7 @@ read; key recovered. After the line 9 correction of 30 Sept (below): 97.4% (538 
 line 2, three in line 7, one in line 10).
 
 ## Remaining gaps
+- cipher lines 1-7 decoded, not read (258 signs) - blocker: not-attempted; re-check ll. 2-7 sign by sign on the image and against the contemporary gloss of ll. 1-4, re-decode, build the sentence and translate (the end of line 1 stays illegible)
 
 - End of line 1 (~9 signs, `W 5 ? 1 7 0 4 5 6`) - blocker: illegible; cramped under the faded gloss on the only scan.
 - Line 7 "ueidiesen boni" - blocker: illegible; single signs blotted on the same scan. (Line 9 "serue st" was listed

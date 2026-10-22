@@ -5,6 +5,12 @@ deciphered in part, 62.7 % of tokens measured (981/1,565, measure_rd.py, 9 Oct 2
 re-reading; 46 % before). Open: ff.35v-36v and gaps of ff.37r-38r, blocked by the image resolution / register copy.
 See §9-§11, Remaining gaps, Escalation.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: the second piece,
+ff. 37r-38r (the Senate's answer, sentences with scattered gaps). **Decoded, not read**: the first piece, ff. 35r-36v
+(f. 35r gives a few clauses; ff. 35v-36v mostly [...] and low lines). 62.7% is withdrawn as a reading figure; 52.5% of
+the tokens are in the piece that reads (820 of 1,563). The blockers in Remaining gaps (scan resolution, register copy)
+apply to the first piece as a whole.
+
 **Verdict (2026-10-09, fourth session): the letter is enciphered in the Zifra Prima of 1577-78 (ASVe CX, Cifre, b.4
 reg.16 ff.64-65 = DECODE R1789), with two extra homophones (d83 = a, c86 = o). The first-pass transcription's digit
 errors are systematic (7 read as 2, 8 as 0, 3/5/8 confused); corrected against the key and the DECODE images, 721 of

@@ -1,5 +1,7 @@
 # Hieronymus Łaski's cipher (System B), BayHStA Kurbayern Äußeres Archiv 4591: four letters to the Bavarian court, 1529–1531
 
+Status: in progress (22 Oct 2026: R9417 decoded, not read, workable; see Remaining gaps)
+
 Split on 15 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder used to hold catalogue entry 162
 ("… to unknown recipient, 3 ciphertexts": DECODE R9403, R9414, R9415), three letters in three different ciphers. It
 now holds the one key it shares with part of catalogue entry 161 (`targets/kaa4591/`): Łaski's graphic cipher, called
@@ -21,6 +23,11 @@ only possible with the permission of the Archive"; no permission has been asked 
 Outcome: **key recovered based on adjacent plaintext, read in part.** R9322 (96.4%), R9417 (99.1%) and R9403 (99.5%)
 pass the read bar; R9323 (76.1%) does not, because of faint signs; together 1,184 of 1,243 words (95.3%,
 `measure_sysb.py` + `r9403/decoded.txt`). Key state: recovered (21 letter signs; FLW word sign open).
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R9322 and R9403
+(continuous Latin, rare slips). **Decoded, not read**: R9417 (p2 ll. 12-21 and p1 carry systematic letter slips, m for
+a, e for r, t for b, in most words) and R9323 (a doubtful sign in nearly every line). The 95.3% above counts words
+with slips as read and is withdrawn as a reading figure; 69.3% of the words are in letters that read (861 of 1,243).
 
 ## The four letters
 
@@ -86,6 +93,8 @@ with R9403 (414/416) 1,184/1,243 = 95.3%. Statistical validation (`mk_validation
 glosses only, `la` model): pass (862 read tokens, reading −2.091 against random keys −6.002 and shuffled refits −3.757).
 
 ## Remaining gaps
+- R9417 decoded, not read (219 words) - blocker: not-attempted; the slips are systematic (m/a, e/r, t/b) in the second hand or the second half: re-check those signs on the image, fix the values for that stretch, re-decode, translate
+- R9323 decoded, not read (163 words) - blocker: illegible; faint signs, a doubtful sign in nearly every line
 
 - R9323 lines 4, 8-10 (39 of 163 words) - blocker: illegible; faint signs, several '?' in the transcription
 - FLW word sign (R9322, R9323) - blocker: open-codes; probably King John's title, three occurrences, context does not fix it

@@ -1,7 +1,15 @@
 # "L'Estat du Roy de Navarre et de son party en France" (BL Harley MS 1582 ff. 263-264; DECODE R8505)
 
+Status: in progress
+
 Catalogue entry 121, "Unknown sender to unknown recipient, 2 ciphertexts, BL Harley MS 1582 (R8501, R8505)".
 Worked 22 September 2026.
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R8505 is **decoded, not read**. `reading.txt` gives the cipher clauses as strings of French word fragments with `[#]`
+holes in most lines (f. 263v 3.38-3.41 almost noise); only the clear French around them reads. Class read -> not
+read, method -> not solved (the ciphertext-only key kept as a part); 95.1% (characters in vocabulary words) withdrawn
+as a reading figure. The outcome line below is superseded.
 
 **Outcome: broken and read (95.1% measured).** The two records of the catalogue item are different things:
 
@@ -131,6 +139,7 @@ them. They are recorded as open codes.
 
 ## Remaining gaps
 
+- R8505 ff. 263r-264v, decoded, not read - blocker: not-attempted; re-read ff. 263r and 264r sign by sign as the versos were, check every break against the image and the key, build sentences, translate
 - open-codes: the ten nomenclator numbers (6, 21, 26, 36, 51, 57, 72, 81, 99, 721), 14 tokens in all, have no
   values; they are names, and nothing in the text fixes them.
 - illegible: about 5% of the text does not resolve into French words. It is scattered, not concentrated: faint

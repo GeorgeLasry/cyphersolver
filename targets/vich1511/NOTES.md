@@ -1,5 +1,14 @@
 # Ferdinand the Catholic → Jerónimo de Vich (Rome), AHN Estado 8714/8715
 
+Status: in progress
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **N.45, N.57 and N.60 are
+decoded, not read.** The decodes give 96.5% of tokens a value, but as published they are line-by-line decoder output
+with broken word division, wrong letters (n/u, v/u) and bracketed groups on most lines; the Spanish gist can be
+recovered with effort, the sentences are not built. `outcome.class` read in part -> not read, method -> not solved,
+key stays partial; the 96.5% is withdrawn as a reading figure. Next: normalise and build N.57 (the shortest) and N.45
+into sentences, then translate.
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry): this entry is the 1511-12 nomenclator and the three
 letters read in it, N.45, N.57, N.60. N.73 of 1515 is in another system and is now `targets/vich1515/`. Measured on
 the three letters alone (`measure.py`, 14 Oct 2026, N.60 v3): 21,750 of 22,538 tokens have a value (0.965); N.45
@@ -204,6 +213,7 @@ frequency count and the two solver scripts. This entry is the 1511-12 key only: 
   - Web searches (5 Oct 2026) found no transcription online.
 
 ## Remaining gaps
+- N.45, N.57, N.60 decoded, not read (raw decodes, holes and broken words on most lines; reading audit 22 Oct 2026) - blocker: not-attempted; normalise word division and letters, resolve bracketed groups from context, build sentences, translate
 - N.60 open groups gz, phi, reg, goi, sid (~250 tokens) - blocker: no-key-material; absent from all five deciphered siblings. Re-transcribed twice (v2, v3), and context gives only medium or low proposals. Terrateig 1963 (unseen, not online) may print the decipherment. Owed: L1522-L1530 and a token-by-token check of pp. 12-15
 - 8 no-bar q tokens in N.45, 2 q1 missing from the transcription - blocker: illegible; q/q1 split otherwise done (qwork/q_decisions.tsv)
 

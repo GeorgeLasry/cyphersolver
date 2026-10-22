@@ -1,6 +1,14 @@
 # Lope Hurtado de Mendoza (Rome) to Charles V, 1523–24 — catalogue no. 148
 
 Status: in progress (read in part; retry step open)
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+* **Read**: R9846 ff. 130r-v, from the clerk's contemporary clear on f. 133r (`r9846_clear.txt`), which covers the
+  transcribed cipher clause for clause. English translation still to be written.
+* **Decoded, not read**: R9667, R9683, R9695, R9866, R9867, R9868, R9869. Their clear text reads; the cipher runs give
+  word pieces with unknown code groups in nearly every clause.
+* Method now read from existing decipherment (R9846), parts for the rest; 0.45 withdrawn as a reading figure (~0.23,
+  estimated, is R9846's transcribed share).
 
 RAH Salazar A-28 (Signatura 9/28) and A-30 (9/30). DECODE R9667, R9683, R9695, R9846, R9866, R9867,
 R9868, R9869. All eight marked "Non-decrypted". Opened 2026-09-21.
@@ -63,6 +71,14 @@ The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Dig
 
 ## Remaining gaps
 
+- R9667 (5 May 1523), decoded, not read - blocker: open-codes; no crib, CSP 548 abstract only
+- R9683 (June 1523), decoded, not read - blocker: open-codes
+- R9695 (8 July 1523), decoded, not read - blocker: open-codes
+- R9866 (28 Feb 1524), decoded, not read - blocker: open-codes
+- R9867 (4 Jan 1524), decoded, not read - blocker: open-codes
+- R9868 (20 Mar 1524), decoded, not read - blocker: open-codes
+- R9869 (28 Mar 1524), decoded, not read - blocker: open-codes
+- R9846 reading: English translation not yet written - blocker: not-attempted
 - R9667 (9/28 ff. 6-9), cipher runs - blocker: open-codes; no crib (the 'Claro' is Najera's); only fragments read; CSP Spain ii 548 gives the content from a lost decipherment
 - R9846 ff. 130v-132v beyond the crib third - blocker: needs-physical-access; f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital, Salazar A-30
 - About 30 code groups (xun, xor, zad, sal, sub, rub vs yub ...) across R9683, R9695, R9866, R9867, R9868, R9869 - blocker: open-codes; each without a crib; readings a quarter to two thirds per letter

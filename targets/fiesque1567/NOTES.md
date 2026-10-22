@@ -4,6 +4,13 @@ Status: in progress (21 Oct 2026). Contributed reading (issue #52, Harumi-Matsub
 View 23 left, the second cipher page of the 15 Nov 1567 letter, is not transcribed, and the doubtful stretches and
 code words are workable, not blocked (see Remaining gaps).
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 79r and f. 94r
+only, in the contributed `READING.en.md` (continuous French with scattered holes; the first pages of the 17 Jul and
+14 Aug 1568 letters). **Decoded, not read**: the other 21 letters and the rest of those two. The 44 `decoded_*.txt` are
+unspaced mechanical output (0-17% of sentences clean, `docs/_check_reading.py`); the line readings of ff. 39r-v, 100r and
+158r have "…" holes in most lines. 99.7% (signs with a value) is withdrawn as a reading figure; about 5.6% of the signs
+read (estimated, 1,669 of 29,707).
+
 **Outcome: read with known key, read in part; contributed.** Satoshi Tomokiyo's reconstructed key for this volume
 (Cryptiana, "French Ciphers for German (and Eastern) Affairs", frencheastern.htm) applied by Harumi-Matsuba to an
 AI-made transcription of all 44 cipher pages (822 lines, 29,707 signs). All of their transcription, decoding and
@@ -89,6 +96,7 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
 - `profile.json`. Images are not kept; crops for the site are `docs/fiesque1567_*.jpg`.
 
 ## Remaining gaps
+- 21 letters decoded, not read, and ff. 79v-80, 94v-95 (all but ff. 79r and 94r; about 28,000 signs) - blocker: not-attempted; holes in most sentences (reading audit 22 Oct 2026). Workable: build sentences page by page from the decode, check breaks on the Gallica images, translate
 - View 23 left (f. 18v), the second cipher page of the 15 Nov 1567 letter, about 17 lines - blocker: open-codes; not in the contributed transcription, and the decipherment on view 23 right gives its text, so it is workable here
 - Doubtful stretches on all 44 pages, about 19% of the decoded letters outside French words; most lines of the contributed readings are marked inferred - blocker: open-codes; AI-only transcription with no human check, workable by a sign-level re-check against the images
 - Code words and signs without a settled value: ρ, K, ⊸, ꝺʒ; ŧŧ = o or ss; the s/p y-shape; Φ = Saxe where view 23 right has the duke of Wirtemberg - blocker: open-codes; values inferred from context; the margins of views 103 right and 125 right may carry contemporary decipherments, not read

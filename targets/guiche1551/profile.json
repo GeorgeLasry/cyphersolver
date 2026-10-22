@@ -185,6 +185,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): guiche_ct.txt, reading_raw.txt and the normalised reading copied from NOTES.md; key copied from NOTES.md to texts/key.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_raw.txt read through line by line; L2-L12 build French sentences with one open code sign, the struck lines L0-L1 only fragments (writer's deletion). Kept read in part, reviewed B; fraction_read 0.995 (tokens with a value) -> 0.812 (tokens in lines that read).",
+   "result": "partial",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -225,7 +235,7 @@
    "key recovered"
   ],
   "class": "read in part",
-  "fraction_read": 0.995,
+  "fraction_read": 0.812,
   "verification": [
    "historical consistency",
    "statistical test"
@@ -244,7 +254,7 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "guiche_ct.txt (431 tokens, L0-L12) against reading_raw.txt: every token has a value but the four-dot code sign (::) and sign 5 (L1). The struck-through lines L0-L1 give values that read only in fragments: about 352 of 406 first-pass signs read as sense (by eye, 21 Sept), hence fraction_coherent.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens in the lines that read as sentences, L2-L12 = 350 of 431 (guiche_ct.txt); the struck-through lines L0-L1 (81 tokens) read only in fragments. Withdrawn as a reading figure: 0.995 = every token has a value but the four-dot code sign (::) and sign 5 (L1). Earlier by-eye figure: about 352 of 406 first-pass signs read as sense (21 Sept), hence fraction_coherent.",
   "key": "partial",
   "credits": [],
   "fraction_coherent": 0.87,
@@ -252,6 +262,8 @@
    {
     "doc": "laguiche1551",
     "label": "La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_raw.txt read line by line: L2-L12 (350 of 431 tokens) build French sentences with one open code sign [::] (the ambassador of Siena gone back with Dom Diego; Count Santa Fiora ill satisfied and easily won to the King's service; Barnabe Adorno and his conditions). The \"...\" in the normalised file are clear words not copied, not cipher holes. Only the two lines the writer struck through (L0-L1) read in fragments. Audit grade C refined: the cipher text outside the struck lines reads."},
+    "language": "fr",
     "transcription": "guiche_ct.txt",
     "decryption": [
      "reading_raw.txt",

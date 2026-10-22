@@ -186,6 +186,16 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions ct_3985_f209.txt and ct_3986_f168.txt, decodes decode_f209.txt and decode_f168.txt, and the NOTES readings copied to texts/f209_reading.md and texts/f168_reading.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): f209_reading.md reads as clauses completing the clear sentences (reviewed B); f168_reading.md builds sentences only on lines 1, 6-7, the rest is fragments, relabelled decoded, not read. fraction_read 0.997 (groups with a value) -> 0.311.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -196,9 +206,9 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.997,
+  "fraction_read": 0.311,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode_f209.txt (122 of 122 figure groups resolve) and decode_f168.txt (268 of 269): 390/391 groups given a value by key no. 46. This counts values, not sense: f. 168 still has garbled stretches in lines 2-8 where the copy's figures are misread.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences, f. 209 = 123 of 395 (profile documents); f. 168 (272) is decoded, not read. Withdrawn as a reading figure: 0.997 = decode_f209.txt (122 of 122 figure groups resolve) and decode_f168.txt (268 of 269): 390/391 groups given a value by key no. 46, values not sense.",
   "key": "recovered",
   "grades": "unknown",
   "verification": [
@@ -237,6 +247,8 @@
    {
     "doc": "f209",
     "label": "Nevers to Pisany, 8 Sept 1593, BnF fr. 3985 f. 209 (copy)",
+    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "texts/f209_reading.md: the three cipher passages each read as a French clause that completes the clear sentence around it (l'on dissuadoit [Pape] de rechercher ... l'absolution; [Duc de Nevers] alleguoit qu'il n'estoyt besoin ...; l'on n'a volonte de contanter le Pape, que l'on n'y aille poynt), with a few slips explained and one short gap in passage 2."},
+    "language": "fr",
     "transcription": "ct_3985_f209.txt",
     "decryption": [
      "decode_f209.txt",
@@ -247,6 +259,9 @@
    {
     "doc": "f168",
     "label": "Nevers to Pisany, 14 Oct 1593, BnF fr. 3986 f. 168 (copy)",
+    "note": "texts/f168_reading.md: only lines 1, 6 and 7 build sentences; lines 2-5 and the last line are fragments between \"...\" (\"faict aller ... pluseurs resons ... pour en par...\"), figure misreadings on a microfilm copy",
+    "state": "decoded, not read",
+    "language": "fr",
     "transcription": "ct_3986_f168.txt",
     "decryption": [
      "decode_f168.txt",

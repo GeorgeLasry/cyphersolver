@@ -2,8 +2,14 @@
 
 Catalogue no. 17 (priority 5.0, class B). Opened 19 Sept 2026.
 
-Status: solved. Both ciphers identified and keyed; f. 370 decoded and verified letter-for-letter against the
-independent clear copy.
+Status: in progress (was: solved. Both ciphers identified and keyed; f. 370 decoded and verified letter-for-letter
+against the independent clear copy.)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: the transcribed
+opening of f. 370 (80 groups, identical with Brienne 13 fol. 102v). **Not read**: the rest of f. 370 (about 550 groups)
+and all of f. 373, neither transcribed, and neither Brienne clear copy is transcribed (f. 373 marked "decoded, not
+read" in profile.json). This answers the open question below: 1.0 does not stand; class read -> read in part,
+fraction_read about 0.06 (estimated).
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. This entry now keeps
 **ff. 370 and 373, Maisse's Cipher (1592)**. ff. 406 and 410 (with f. 404, f. 412) are in Maisse's Cipher (1592-1593),
@@ -261,3 +267,19 @@ attempt and as the matched control the repository's conventions require.
 - `fetchb.py` — Brienne 13 / NAF 6984 canvases (ark btv1b100904592)
 - `montage.py` — folio-number corner sheets used for the calibration above
 - `src/lm3.txt` — Xivrey, *Lettres missives* t. III (IA `recueildeslettre03henr`), gitignored
+
+## Remaining gaps
+
+- f. 370 after the opening (about 550 groups) and f. 373 (whole letter), not transcribed - blocker: not-attempted; transcribe the cipher from Gallica (btv1b90074656 views 419, 422), decode with key1.tsv, check against Brienne 13 fol. 102v and 104v (btv1b100904592), translate
+
+## Escalation
+
+Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
+not read. None of these steps has been redone since; each is open for those documents.
+
+- [ ] siblings: other letters of the same series or key, read or deciphered at the time
+- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
+- [ ] known-keys: other keys of the same correspondents tried
+- [ ] print: printed editions and calendars searched for these letters
+- [ ] key-rebuild: the key corrected against the documents that read
+- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images

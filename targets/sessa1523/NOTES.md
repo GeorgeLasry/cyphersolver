@@ -2,6 +2,12 @@
 
 Status: read in part (follow-up 2026-09-21: R9665 read in full; R9660 transcribed in full and ~57% read)
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R9665's three cipher
+runs read** (two confirmed by the contemporary glosses). **R9660 is decoded, not read**: open groups and spelled
+letters in nearly every line, only phrases can be built (10% of sentences clean, `docs/_check_reading.py`). The
+~57% below is the share of tokens given a value, withdrawn as a reading figure; about 2% of the transcribed cipher
+tokens read (estimated).
+
 Catalogue entry 146 ("Luis Fernández? (Sesa) to unknown recipient, 7 ciphertexts"). Worked 2026-09-21.
 
 ## 1. Identification: seven despatches of the Duke of Sessa to Charles V
@@ -69,6 +75,7 @@ Cardinals Volterra, Monte and Iacobacci; Soderini (Volterra) making war on the M
 favour; Siena after Petrucci's death (Francesco and Fabio Petrucci); the Datario, the bishopric of Tortosa; Rimini settled.
 
 ## Remaining gaps
+- R9660 decoded, not read (1,977 cipher tokens; holes in nearly every sentence, reading audit 22 Oct 2026) - blocker: needs-physical-access; the open groups need the court's decipherment leaves ff. 190, 342-343, 424-430 (RAH, not imaged); the sentences that can be built from the resolved groups are still to be written out and translated
 - R9660 code groups (~150 distinct, ~40% of its tokens; commonest cas, cag, min, rep, put, var, ges) - blocker: needs-physical-access; the letter carries no decipherment, the groups do not recur in any deciphered page on DECODE, and the court's decipherment leaves of the sister letters (9/27 ff. 190, 342-343, 424-430) are not on DECODE, only in the RAH volume
 - R9661-R9664 cipher text re-read (CSP 534, 540, 541, 544) - blocker: needs-physical-access; read at the time and calendared by Bergenroth; the full decipherments are those same unimaged leaves
 - groups open in the sessa1524 key (vo, per, hay) - blocker: needs-physical-access; inherited, no attestation in any decipherment on DECODE

@@ -2,6 +2,11 @@
 
 Status: read in part
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): both cipher insertions
+read as Italian sentences with one-sign holes (A1-A5a, B1-B5), reviewed B in `profile.json`; only the last clause of
+A (A6, 12 signs) is a fragment. The audit's C (holes in most clauses) is refined: the holes are the five places listed
+under Remaining gaps. Translation of the sure part in `reading.md`.
+
 Catalogue item 181 (class C, "Guido Ramgone (Venise)"). DECODE R4249, "Non-decrypted", 2 pp., Italian; access
 "Authentication required" (8 images fetched with the project cookie; git-ignored in `img/`).
 

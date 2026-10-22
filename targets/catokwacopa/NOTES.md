@@ -5,6 +5,12 @@ ends in clear: *"This will be intelligible if read in connection with my communi
 this column on the 8th inst."* Number 8 on Schmeh's Top 50, republished on klausschmeh.net on
 14 August 2026 with an active thread.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
+The published readings the letters force give telegraphic phrases for about half the lines (SUMMER TERM 1853, CAP TOOK
+AWAY AT COLLEGE PARTY, I ATTENDED CONINGTON LECSURES); about 13 of 28 lines are unread or junk, so the note cannot be
+read as a text. Class now not read, method not solved; 0.547 is the share of letters the forced phrases account for,
+withdrawn as a reading figure.
+
 ## State of play (September 2026)
 
 The mechanism is agreed. Line *i* of the first ad and line *i* of the second are two order-preserving
@@ -198,6 +204,7 @@ readings fit, and no image, sibling or key can choose between them.
 
 ## Remaining gaps
 
+- the 1875 note as a whole decoded, not read (about 13 of 28 lines unread; reading audit 22 Oct 2026) - blocker: too-short; the open lines are the ones listed below, each with many unrelated exact fits
 - lines 9 and 26 (mistrl / otenpu, oatvpu) - blocker: too-short; unigram and phrase-level searches give many unrelated exact fits
 - line 12 - blocker: too-short; phrase-level search gives junk
 - line 23 (48 letters) - blocker: too-short; phrase-level 5-gram search run 5 Oct 2026 (beam.py): junk, no forced reading

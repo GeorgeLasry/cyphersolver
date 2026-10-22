@@ -2,6 +2,11 @@
 
 Status: read in part (R4232 98.5% read as sense; R3697 78.2% as sense, struck runs blocked by the image; both 89.9%, `sense.py`, 5 Oct 2026)
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. R4232
+reads as continuous French; R3697's unstruck cipher (f. 25r r03-r16, f. 25v L1-L5) reads with scattered holes.
+**R3697's struck runs (304 signs) are decoded, not read**: fragments only, their sense known from the contemporary
+glosses. Reading figure 87.7% (signs in text that reads, 2,177 of 2,481); the 89.9% is withdrawn as a reading figure.
+
 - DECODE R3697 = BnF fr. **3091** f. 25r–v (Gallica btv1b9060253s views 27R, 28L), Selve to the King, Venice,
   14 Sept 1535 (catalogue card wrongly puts both records in fr. 3045).
 - DECODE R4232 = BnF fr. 3045 ff. 42–49 (Gallica btv1b9060156p views 82–95), Selve to the King, Venice, 5 July 1536.
@@ -58,6 +63,7 @@ struck runs.
 
 ## Remaining gaps
 
+- R3697 struck runs decoded, not read (fragments; reading audit 22 Oct 2026) - blocker: illegible; see the struck-runs line below (needs a colour image or the original)
 - R3697 struck runs on f. 25r (A, B, C1-C3) and f. 25v (T1-T3), 182 signs - blocker: illegible; the decipherer's
   ruling runs through the x-height of every sign and the only images (Gallica film scan; DECODE's are screenshots of
   the same film) cannot separate stroke from sign; glosses give most of the plaintext; a colour image or the

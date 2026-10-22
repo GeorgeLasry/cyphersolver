@@ -48,6 +48,12 @@ l'Empereur=e-grave-like, Roy de Boheme=V-dot
 
 Status: read in part.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. f. 55,
+Colbert 390 pp. 357-358 and Colbert 392 p. 231 build French sentences with scattered holes (`aligned/*.txt`; reviewed
+B in `profile.json`). **Colbert 390 p. 139 is decoded, not read**: its first seven lines read, lines 8-14 are mostly
+unread runs and code words. Reading figure 65.8% (sense tokens in the three letters that read, 1,520 of 2,311); the
+79% below (sense over all four) is withdrawn as a reading figure.
+
 Four letters in the same cipher, each read from its own image with values calibrated on
 contemporary glossed letters in the same hand (21 Sept 2026). Share of cipher signs in
 secure + probable French:
@@ -93,6 +99,7 @@ This is setup and key calibration, not a completed decipherment. No continuous r
 - f. 55 = fr3181 v36: 17 lines of cipher then clear text (Havre de Grace / Queen of England passage in clear).
 
 ## Remaining gaps
+- 500 Colbert 390 p. 139 as a whole decoded, not read (ll. 8-14 mostly unread runs and code words; reading audit 22 Oct 2026) - blocker: no-key-material; the open signs and the ẟ code words occur in no glossed passage or key (see the p. 139 line below)
 Measured 5 Oct 2026 with `measure.py` (strict: only words the signs give at attested values count; 2308 tokens): sense 0.79, probable 0.15, unread 0.06.
 - fr. 3181 f. 55 (0.80 sense): l.2 ꝥ, ɼ ᑲ; l.4 "10 ᑲ ɗ xy ee z r"; l.8 "ß La ᑲ ᑲ z 10 9 z"; l.9 "‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ"; l.12 "h Ə"; slips (ayt tenu, deliberay, monstrrer, sessions) - blocker: no-key-material; the signs occur in no glossed passage in this hand (f.57-58 aligned in full); re-viewed on native crops 5 Oct, no new value
 - 500 Colbert 390 pp. 357-358 (0.82 / 0.76 sense): p.357 l.3-4 "6 d 9 ∿ io ꭓ | d λ ʒ ‡ ϑ d Z ℒ d ¢ ⊤̸ d", l.5 head, l.8 avoir / l'effect, l.13 afairres; p.358 s'offrira, esperer, [ajour/gouver]nement, lumiere, remects - blocker: no-key-material; each needs a value no gloss gives (∿ = n, sh = r)

@@ -4,6 +4,11 @@ Status: read in part (outside solution, verified here). Key recovered ciphertext
 to the filed key DECODE R4755. No. 6 93.4% of its decrypted letters understood as submitted, **95.4% after the 14 Oct key correction (below)**; no. 24 72.7%, and its dorse
 (8 run-over lines) is not in the submitted reading.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. No. 6
+reads as continuous Italian with scattered `‹...›` words. **No. 24 is decoded, not read**: runs of letters not
+understood in most sentences (and the dorse unread) leave a gist, not sentences. Reading figure 28.6% (no. 6's 1,056
+of 3,694 tokens); the 84.2% (decrypted letters understood) is withdrawn as a reading figure.
+
 Split off from `targets/siena1421/` (the whole busta, catalogue 336), where nos. 6 and 24 were listed as one open
 system ("nos. 6 + 24, no-key-material"). The transcriptions used below were made there on 24 Sept 2026.
 
@@ -207,6 +212,7 @@ does not read stays in ‹...›.
 
 ## Remaining gaps
 
+- no. 24 as a whole decoded, not read (‹...› runs in most sentences; reading audit 22 Oct 2026) - blocker: illegible; see the no. 24 P2 and dorse lines below
 - no. 24 P2, the ‹...› runs left after the 14 Oct revision (464 of 2,279 decrypted letters, 20.4%) - blocker: illegible; the runs decode but do not make sense, which points to sign misreadings at this photograph's resolution (20-25 px per sign, half of no. 6's) or to errors of the encipherer; a sign-level re-check needs a better image than DECODE's (ASSi reading room).
 - no. 6, 43 letters in ‹...› (4.6%) after the 14 Oct correction - blocker: illegible; scattered single words (‹teaite›, ‹kanaa·not›, ‹rver›mo, the surname Mont‹vccia›), not legible enough at the DECODE resolution
 - no. 24 dorse P1 (637 tokens), beyond the closing formula and signature - blocker: illegible; the dorse is cramped and partly lost at the fold (first-pass transcription marked "draft"); needs a better image.

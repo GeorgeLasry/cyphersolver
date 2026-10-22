@@ -33,7 +33,7 @@
     "image_quality": "good",
     "notes": "DECODE's J+ sign stands for different digits; each resolved by a French 6-gram model over the R1024 key values (resolve_j.py)."
    },
-   "read": "read in part"
+   "read": "not read"
   },
   {
    "id": "DECODE R1027",
@@ -65,7 +65,7 @@
     "image_quality": "good",
     "notes": "DECODE's J+ sign stands for different digits; each resolved by a French 6-gram model over the R1024 key values (resolve_j.py)."
    },
-   "read": "read in part"
+   "read": "not read"
   }
  ],
  "system": {
@@ -201,15 +201,30 @@
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from vanreede1787, which had joined R1026/R1027 (William V's 1782 Grand Chiffre, R1024) with R1893 (1793, a different marked three-digit code). This profile keeps R1026 and R1027 (Grand Chiffre) only.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1026 and R1027 linked to the DECODE group transcriptions, the J+-resolved group files (resolve_j.py) and the readings with the Grand Chiffre R1024", "result": "worked"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1026 and R1027 linked to the DECODE group transcriptions, the J+-resolved group files (resolve_j.py) and the readings with the Grand Chiffre R1024",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test): reading_R1026.txt and reading_R1027.txt read through; a few sentences read, but garbled runs from DECODE digit misreads and open codes break most of them (docs/_check_reading.py 73% and 57% clean, inflated by code words that are dictionary forms). Both relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved; fraction_read 0.949 -> 0.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  }
  ],
  "outcome": {
-  "method": "read with known key",
+  "method": "not solved",
   "method_basis": "DECODE's own description names the code as likely William V's 'Grand Chiffre', and that key (R1024, 1782) read R1026 and R1027 once DECODE's catch-all J+ sign was resolved digit by digit with a French 6-gram model; R1028's DECODE plaintext served as control.",
   "contribution": [
    "catalogue correction"
   ],
-  "class": "read in part",
+  "class": "not read",
   "gaps": [
    {
     "item": "R1026/R1027 groups 2637, 2800, 3660, 1250, 331, 3160, 3153, 2751, 50 and damaged groups",
@@ -222,7 +237,7 @@
     "detail": "NOTES say a fresh transcription from the images would clear them; not done"
    }
   ],
-  "fraction_read": 0.949,
+  "fraction_read": 0.0,
   "grades": {
    "H": 0,
    "C": 0,
@@ -233,9 +248,9 @@
    "matched control",
    "historical consistency"
   ],
-  "notes": "R1026 and R1027 read (452 of 472 groups given a value in the NOTES count; 447/471 measured; some passages still garbled by transcription misreads). Split 14 Oct 2026: R1893 is vanreede1793.",
+  "notes": "R1026 and R1027 read (452 of 472 groups given a value in the NOTES count; 447/471 measured; some passages still garbled by transcription misreads). Split 14 Oct 2026: R1893 is vanreede1793. 22 Oct 2026, reading audit: both despatches relabelled decoded, not read (garbled runs from DECODE digit misreads and open codes in most sentences); class not read, method not solved; the R1024 key match stands.",
   "fraction_read_method": "measured",
-  "fraction_read_source": "ciphertext_R1026/R1027.txt (319+152 groups) against plaintext_R1026/R1027_raw.txt: groups left as [n?] counted unread (12 in R1026, 8 in R1027; 4 4 3 8 counted read as 4433); 447/471, the same count as before the split less R1893's 696 groups. Passages garbled by DECODE digit misreads counted as read",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count; both despatches (319 + 152 groups) are decoded, not read, so 0. The earlier 447/471 (0.949) is the share of groups given a value, withdrawn as a reading figure (ciphertext_R1026/R1027.txt against plaintext_R1026/R1027_raw.txt; garbled passages had been counted as read).",
   "key": "partial",
   "codes_open": {
    "open": 15,
@@ -250,8 +265,32 @@
    }
   ],
   "texts": [
-   {"doc": "DECODE R1026", "label": "R1026, Berlin, 29 Dec 1787, Van Reede to Van de Spiegel", "transcription": ["ciphertext_R1026.txt", "resolved_R1026.txt"], "decryption": "reading_R1026.txt", "summary": "Finckenstein and Hertzberg have put the Dutch alliance project to Frederick William II; the King will not guarantee the Republic's possessions overseas, and the article is kept without those words: if the Republic is attacked by a European power the King will furnish aid (cf. the Prusso-Dutch defensive treaty of 15 Apr 1788)."},
-   {"doc": "DECODE R1027", "label": "R1027, Berlin, 4 Mar 1788", "transcription": ["ciphertext_R1027.txt", "resolved_R1027.txt"], "decryption": "reading_R1027.txt", "summary": "News from Russia: the Russian ministers are anxious about the triple alliance, the Russian envoy expects no answer until the Empress hears from Vienna; the Emperor's declaration of war on Turkey; couriers sent to London."}
+   {
+    "doc": "DECODE R1026",
+    "label": "R1026, Berlin, 29 Dec 1787, Van Reede to Van de Spiegel",
+    "transcription": [
+     "ciphertext_R1026.txt",
+     "resolved_R1026.txt"
+    ],
+    "decryption": "reading_R1026.txt",
+    "summary": "Finckenstein and Hertzberg have put the Dutch alliance project to Frederick William II; the King will not guarantee the Republic's possessions overseas, and the article is kept without those words: if the Republic is attacked by a European power the King will furnish aid (cf. the Prusso-Dutch defensive treaty of 15 Apr 1788).",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Code-word decode with the Grand Chiffre R1024: a few sentences read (the conference with the King and his two ministers, the overseas possessions), most are broken by garbled runs ('comme ils mauvais oyent A differer d' la') and open codes; the gist follows but the letter cannot be built into sentences (reading audit, 22 Oct 2026)."
+   },
+   {
+    "doc": "DECODE R1027",
+    "label": "R1027, Berlin, 4 Mar 1788",
+    "transcription": [
+     "ciphertext_R1027.txt",
+     "resolved_R1027.txt"
+    ],
+    "decryption": "reading_R1027.txt",
+    "summary": "News from Russia: the Russian ministers are anxious about the triple alliance, the Russian envoy expects no answer until the Empress hears from Vienna; the Emperor's declaration of war on Turkey; couriers sent to London.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Code-word decode with the Grand Chiffre R1024: garbled runs and open codes ('Port epier que mes Sieur de se gu R et de co be nt zèle') in most sentences; the gist follows but the letter cannot be built into sentences (reading audit, 22 Oct 2026)."
+   }
   ]
  }
 }

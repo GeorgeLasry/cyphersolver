@@ -2,6 +2,12 @@
 
 Status: in progress (key being rebuilt from a contemporary decipherment; first values fixed)
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R9644/R9648 and
+R9650 (the clerk's contemporary clear versions), R9652 (wholly clear) and R9649 (its runs exact against the clear copy
+on f. 268). **Decoded, not read**: R9634, R9645, R9646, R9656: 61-80% of tokens valued, but holes, open codes or
+paraphrase in most cipher sentences. The 76% / 72.3% figures (tokens read as sense) are withdrawn as reading figures;
+of the five token-transcribed letters only R9649 reads (89 of 2,104 tokens).
+
 Catalogue entry 144 ("Lope Hurtado de Mendoza (Rome) to unknown recipient, 8 ciphertexts",
 RAH Signatura 9/26). Opened 2026-09-20, after the sanchez1522 session established that these letters
 are **not** in Alonso Sánchez's cipher.
@@ -730,6 +736,7 @@ against the faded copy: *que esta muy sospechoso el papa que de alla* (`zub`) *s
 New values: `zub` = alla, `3` = h confirmed, `ʒ` = y and `⊤` = x probable. Details in `read_r9656.md`.
 
 ## Remaining gaps
+- R9634, R9645, R9646, R9656 decoded, not read (2,015 tokens; holes in most sentences, reading audit 22 Oct 2026) - blocker: no-key-material; the open groups occur once with no gloss or clear copy (R9656's copy is faded to line ends); the sentences the valued runs allow are still to be written out and translated
 
 - R9645 (75% read): tec, ʃen, the spelled words of f.243r ll. 5, 8, 14, 17 and f.243v ll. 1, 7, 10 - blocker: no-key-material; f. 243r and upper f. 243v have no gloss, codes seen once
 - R9656 (79% read, re-transcribed 2026-10-03): ɲ4∠&ɣ̊ϑ (l. 6), ∂ɡ∂∂8 (l. 9), teɡ ∂ ϑ∠8ɣ̊oo (l. 13), ϙ8, 8x& (l. 14), ϯ7∂∂, ßϑ7, 30, f. 334v l. 1 tail, ∂∂8∂7 - blocker: illegible; no lexicon match under any reading of the signs; the f. 335r clear copy is legible only in its right half at DECODE resolution, and the spelled signs are at the scan's limit; RAH Biblioteca Digital blocked to automated requests

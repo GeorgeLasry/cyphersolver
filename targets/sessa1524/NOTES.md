@@ -3,6 +3,15 @@
 DECODE R9877 (ff. 128–129) and R9878 (ff. 130–131), catalogued "Luis Fernández, Rome, April **1424**,
 Non-decrypted, 4 pp. each". Picked on 2026-09-18 as the longest pre-1450 ciphertext (research/oldest/CANDIDATES.md A2).
 
+Status: read in part
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. f. 128's
+nine cipher lines (R9877/R9878) build Spanish sentences with single-word holes (`texts/f128_decryption.md`).
+**R9873 and R9898 are decoded, not read**: their files are line-by-line working decodes with an open code group or a
+non-word in most sentences, and `read_r9873.md` / `read_r9898.md` give English gists, not texts. Reading figure 2.1%
+(116 of 5,648 tokens across the three documents); the 90% (f. 128 alone) and the siblings' 92.8% / 79.8% are withdrawn
+as reading figures.
+
 ## 1. Not 1424: it is 1524, and not a blind break
 
 - **DECODE's date is a typo.** The same series runs on as R9888–R9895 "1524"; the senders are Luis Fernández de
@@ -152,6 +161,7 @@ the es corpora. Result, before -> after (strict = pass-17 tentative values count
 deciphered occurrence anywhere), and R9898's bleed-through pages, which do not resolve at higher zoom.
 
 ## Remaining gaps
+- R9873 and R9898 decoded, not read (open groups or non-words in most sentences; reading audit 22 Oct 2026) - blocker: open-codes; the groups occur in single contexts (see the R9873/R9898 lines below), and R9898's bleed-through pages are illegible
 - group `vo` (noun after *las dichas*, f. 128r) - blocker: open-codes; absent from R9873 and R9898 as well (pass 16) and from every other downloaded page (pass 14)
 - group `per` - blocker: open-codes; absent from R9873 and R9898 (pass 16) and every other downloaded page (pass 14)
 - `hay` = aunque is tentative (four contexts in R9873, none deciphered) - blocker: open-codes; no deciphered occurrence

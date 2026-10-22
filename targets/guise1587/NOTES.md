@@ -3,7 +3,13 @@
 Catalogue entry "Unknown sender to Philippe-Emmanuel, duke of Mercoeur ?", DECODE R4162 (f. 119) and R4165 (f. 142).
 Session 2026-09-22.
 
-Status: read (95.1% of letter signs, measured; key: Lasry 2022, extended)
+Status: in progress (was: read, 95.1% of letter signs, measured; key: Lasry 2022, extended)
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **f. 142 reads** (sentences
+with scattered [?] and one name code). **f. 119 is decoded, not read**: [?] runs, misplaced nomenclator words or broken
+grammar in more than half its sentences (ll. 00-03, 11-13, 17-18, 25, 27, 30, 33-38); only the levy passages (ll.
+04-10, 14-16) build. 95.1% is signs given a letter, withdrawn as a reading figure; 25.1% of the tokens read (f. 142,
+623 of 2,484). Class read -> read in part.
 
 ## Prior art
 
@@ -87,6 +93,7 @@ six jours j'espere avoir resolu la chose … avec [73], les forces qui seront ne
 il m'a donné … aller veoir"; "je ne faudray a vous en mander toutes nouvelles".
 
 ## Remaining gaps
+- f. 119 decoded, not read (1,861 tokens) - blocker: not-attempted; holes or broken grammar in more than half its sentences (reading audit 22 Oct 2026). Workable: re-check the broken lines on the images and the key, build sentences, translate
 - scattered unread letter signs, 121 of 2,477 (4.9%), no run longer than 8 - blocker: open-codes; each tried in three or more zoomed passes plus a candidate-class phrase search over the French corpora; several look like code pairs (98, 89, z3) rather than letters
 - name codes [21] [43] [71] [73] [N] [&] [9b] [ffv] [ffσ] [ffx] [ffou] - blocker: open-codes; Lasry's key leaves them unidentified and they occur once or twice
 

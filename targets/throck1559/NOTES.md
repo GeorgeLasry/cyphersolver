@@ -1,6 +1,11 @@
 # Nicholas Throckmorton to Elizabeth I, Paris, 10 July 1559, in his Cipher 1: BL Add MS 4136 f. 32 (DECODE R2988)
 
-Status: read in part (21 Sept 2026): the 10 July 1559 letter ~85-90% with Tomokiyo's Cipher 1 key and seven corrections. Write-up docs/throck1559.html.
+Status: in progress. not read (reading audit, 22 Oct 2026: decoded, not read). Was: read in part (21 Sept 2026): the 10 July 1559 letter ~85-90% with Tomokiyo's Cipher 1 key and seven corrections. Write-up docs/throck1559.html.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
+The opening sentence (lines 1-5, the despatches by Gray and Carew) reads; from line 6 the running reading has `[...]`
+holes every few words, so the letter cannot be built into sentences. Class now not read, method not solved; the
+85-90% below is the share of signs given a value, withdrawn as a reading figure.
 
 Split on 14 Oct 2026 from `wod1568` under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. The old entry
 (catalogue 97) joined three systems on the leaves Add MS 4136 ff. 32–33. This folder keeps **Throckmorton's own letter
@@ -55,6 +60,7 @@ throck1559margin) · `../../decode_updates/decryptions/R2988.txt` (public readin
 
 ## Remaining gaps
 
+- 10 July letter, lines 6-15 decoded, not read (holes every few words; reading audit 22 Oct 2026) - blocker: not-attempted; re-read the small signs on a better crop and work the twelve code signs from context, then write the letter out as sentences
 - 10 July letter, twelve code signs (1k̲ ρ̲ g̲ δ̄ δ̲ ō ⊓̄ q̄ r̄ π̄ ƒ̇ ʋ̲) - blocker: open-codes; not on Tomokiyo's Cipher 1 key image; values guessed from context only
 - 10 July letter, spans marked [..] in lines 5-8, 11-14 (~80 of 550 signs) - blocker: illegible; small signs at DECODE resolution, crop overlap
 - 10 July letter, the starred note keyed to line 13 - blocker: no-key-material; it is in the margin word code (throck1559margin, a different system, no key)

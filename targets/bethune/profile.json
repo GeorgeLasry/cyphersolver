@@ -63,7 +63,7 @@
     "image_quality": "fair",
     "notes": "Counted by a scratch script over the token field (the --measure line mode also counts the line labels and bars: 992/63). Three glyph families (g, m, r variants) are not separable at the available resolution; the transcription caps decoding at about 71 % of letters."
    },
-   "read": "read in part"
+   "read": "not read"
   },
   {
    "id": "22nov",
@@ -93,7 +93,7 @@
     "image_quality": "fair",
     "notes": "80 cipher runs; counted by a scratch script over the token field (the file has label columns)."
    },
-   "read": "read in part"
+   "read": "not read"
   }
  ],
  "system": {
@@ -175,7 +175,12 @@
   },
   {
    "date": "2026-09-17",
-   "kind": "crib", "technique": ["crib testing", "EM alignment", "plaintext matching"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "EM alignment",
+    "plaintext matching"
+   ],
    "what": "EM alignment of the 10 Nov cipher with its minute plus the glossed passages of 8 Nov and 10 Dec gives the letter values and word signs.",
    "result": "worked"
   },
@@ -205,7 +210,11 @@
   },
   {
    "date": "2026-09-17",
-   "kind": "solver", "technique": ["EM alignment", "beam/DP decoding"],
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding"
+   ],
    "what": "Automatic glyph segmentation and template alignment.",
    "result": "failed"
   },
@@ -227,24 +236,67 @@
    "what": "Xivrey, Melanges de Colbert 17, fr. 3677/3678 excluded; Cinq cents de Colbert 346 and Halphen's edition identified, not accessible.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1107 tokens, 100 types, fr-1600-letters order 4: reading -2.627 per letter; polyphonic: 33% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): 10 Nov corpus_v2.txt + reading_10nov.md; 9 Nov ct_f33_v2.txt + decoder output decode_f33_v3/v2 (substance only); 22 Nov reading_22nov.md + ct_22nov.txt (cipher runs decoded only in fragments); key key.tsv", "result": "partial"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1107 tokens, 100 types, fr-1600-letters order 4: reading -2.627 per letter; polyphonic: 33% of read tokens differ from their type's commonest value. Verdict: not applicable.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): 10 Nov corpus_v2.txt + reading_10nov.md; 9 Nov ct_f33_v2.txt + decoder output decode_f33_v3/v2 (substance only); 22 Nov reading_22nov.md + ct_22nov.txt (cipher runs decoded only in fragments); key key.tsv",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test): reading_10nov.md reads (83% of sentences clean, docs/_check_reading.py, from the clear minute); decode_f33_v3.txt (9 Nov) gives broken lines with nonsense words, and the 22 Nov cipher runs are fragments ('a substance, not a reading'). 9 Nov and 22 Nov relabelled decoded, not read; fraction_read 0.55 -> ~0.2 (estimated).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 1107, "types": 100, "tokens_per_type": 11.07, "score": -2.627, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 33% of read tokens differ from their type's commonest value"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "fr-1600-letters",
+   "file": "validation.tsv",
+   "tokens": 1107,
+   "types": 100,
+   "tokens_per_type": 11.07,
+   "score": -2.627,
+   "nulls": {},
+   "verdict": "not applicable",
+   "notes": "polyphonic: 33% of read tokens differ from their type's commonest value"
+  },
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was rebuilt by EM alignment of the 10 Nov 1601 cipher (f. 34) with its clear minute four leaves on (f. 36) and the marginal glosses of the 8 Nov and 10 Dec letters in the same volume (BnF fr. 3484), then applied to the unglossed 9 and 22 Nov letters.",
-  "contribution": ["transcription", "key recovered", "catalogue correction"],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
   "class": "read in part",
-  "fraction_read": 0.55,
+  "fraction_read": 0.2,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "NOTES prose, not measured: no token-level reading file exists for the 9 Nov (decode_f33_v3.txt is decoder output over a ~70%-accurate glyph transcription, with no ground truth) or 22 Nov letters (reading_22nov.md gives substance only); the 10 Nov passages are read from the clear minute (reading_10nov.md). The decoder's measured accuracy on known text is 74.5% letters / 51.8% words (eval.py).",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. The 10 Nov letter reads (17 cipher lines, about 750 tokens estimated at the 9 Nov letter's 44 tokens a line); the 9 Nov (970 tokens) and 22 Nov (1,879) letters are decoded, not read. About 750 of 3,600, estimated. The earlier 0.55 (NOTES prose) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
    "open": 19
   },
   "grades": "unknown",
-  "verification": ["independent clear copy", "historical consistency"],
-  "notes": "10 Nov read in full; 9 Nov about six words in ten; 22 Nov clear text read, cipher in fragments. Open code groups include 44, 45, 62, 66-72, 26-28, 5, 3, 8. fraction_read estimated from the notes (10 Nov full; 9 Nov about half the words; 22 Nov clear text read, cipher runs fragments only), not measured. codes_open counts the 19 code numbers listed open in NOTES (2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80); total not counted.",
+  "verification": [
+   "independent clear copy",
+   "historical consistency"
+  ],
+  "notes": "10 Nov read in full; 9 Nov about six words in ten; 22 Nov clear text read, cipher in fragments. Open code groups include 44, 45, 62, 66-72, 26-28, 5, 3, 8. fraction_read estimated from the notes (10 Nov full; 9 Nov about half the words; 22 Nov clear text read, cipher runs fragments only), not measured. codes_open counts the 19 code numbers listed open in NOTES (2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80); total not counted. 22 Oct 2026, reading audit: 9 Nov and 22 Nov letters relabelled decoded, not read; only the 10 Nov letter reads.",
   "gaps": [
    {
     "item": "9 Nov 1601 letter, f. 33 (about half the words)",
@@ -268,13 +320,60 @@
    }
   ],
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "clear minute of the 10 Nov letter (f. 36) and marginal glosses of the 8 Nov and 10 Dec letters, aligned to rebuild the key"},
-    {"who": "bazeries", "role": "key or decipherment used", "note": "1599 Béthune key printed 1901: same design; its doubling-sign rule applied (values differ)", "date": "1901", "source": "Bazeries 1901, pp. 28-29"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "clear minute of the 10 Nov letter (f. 36) and marginal glosses of the 8 Nov and 10 Dec letters, aligned to rebuild the key"
+   },
+   {
+    "who": "bazeries",
+    "role": "key or decipherment used",
+    "note": "1599 Béthune key printed 1901: same design; its doubling-sign rule applied (values differ)",
+    "date": "1901",
+    "source": "Bazeries 1901, pp. 28-29"
+   }
   ],
   "texts": [
-   {"doc": "10nov", "label": "10 Nov 1601, f. 34r-v", "transcription": "corpus_v2.txt", "decryption": "reading_10nov.md", "summary": "Henri IV tells Béthune that he paid Cardinal Aldobrandini 10,000 écus through Sillery as a gratification after the Parlement's judgment in the Este-Aldobrandini debt, and will pay 10,000 more in the first months of 1602; Béthune is to tell the Cardinal through Cardinal d'Ossat and pretend not to have received the letter. The cipher is entries A to V3 of corpus_v2.txt (the other entries are glossed passages of the 8 Nov and 10 Dec letters); the text comes from the clear minute on f. 36."},
-   {"doc": "9nov", "label": "9 Nov 1601, f. 33r", "transcription": "ct_f33_v2.txt", "decryption": ["decode_f33_v3.txt", "decode_f33_v2.txt"], "summary": "A page entirely in cipher about the Spanish news from La Rochepot's secretary and the cardinalate of Don Alexandre, with the cardinals of Joyeuse and d'Ossat. The decryption is decoder output only (about six words in ten); bracketed numbers are open code groups."},
-   {"doc": "22nov", "label": "22 Nov 1601, ff. 46r-47v", "transcription": ["reading_22nov.md", "ct_22nov.txt"], "decryption": "reading_22nov.md", "summary": "Saint-Germain-en-Laye, answering Béthune's despatch of 29 October: a rebuke of two persons named by code groups for not breaking 'ce coup', the pension of Camaiano to raise the French party in Rome, the Pope's welcome, Barberini's coming, and the baptism of the Dauphin. The clear text is transcribed in full; the 80 cipher runs decode only to fragments."}
+   {
+    "doc": "10nov",
+    "label": "10 Nov 1601, f. 34r-v",
+    "transcription": "corpus_v2.txt",
+    "decryption": "reading_10nov.md",
+    "summary": "Henri IV tells Béthune that he paid Cardinal Aldobrandini 10,000 écus through Sillery as a gratification after the Parlement's judgment in the Este-Aldobrandini debt, and will pay 10,000 more in the first months of 1602; Béthune is to tell the Cardinal through Cardinal d'Ossat and pretend not to have received the letter. The cipher is entries A to V3 of corpus_v2.txt (the other entries are glossed passages of the 8 Nov and 10 Dec letters); the text comes from the clear minute on f. 36.",
+    "language": "fr",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "The four cipher passages read from the clear minute f. 36r-v, which gives their full text; continuous French."
+    }
+   },
+   {
+    "doc": "9nov",
+    "label": "9 Nov 1601, f. 33r",
+    "transcription": "ct_f33_v2.txt",
+    "decryption": [
+     "decode_f33_v3.txt",
+     "decode_f33_v2.txt"
+    ],
+    "summary": "A page entirely in cipher about the Spanish news from La Rochepot's secretary and the cardinalate of Don Alexandre, with the cardinals of Joyeuse and d'Ossat. The decryption is decoder output only (about six words in ten); bracketed numbers are open code groups.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Decoder output over a ~70%-accurate glyph transcription: about half the words come through, the lines do not build sentences ('mil escus et la cetresioatl depentionrln sur le reuenu de naples') (reading audit, 22 Oct 2026)."
+   },
+   {
+    "doc": "22nov",
+    "label": "22 Nov 1601, ff. 46r-47v",
+    "transcription": [
+     "reading_22nov.md",
+     "ct_22nov.txt"
+    ],
+    "decryption": "reading_22nov.md",
+    "summary": "Saint-Germain-en-Laye, answering Béthune's despatch of 29 October: a rebuke of two persons named by code groups for not breaking 'ce coup', the pension of Camaiano to raise the French party in Rome, the Pope's welcome, Barberini's coming, and the baptism of the Dauphin. The clear text is transcribed in full; the 80 cipher runs decode only to fragments.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "The clear French of the letter reads; its 80 cipher runs are decoded only in fragments and the file itself calls them 'a substance, not a reading' (reading audit, 22 Oct 2026)."
+   }
   ],
   "key_file": "key.tsv"
  }

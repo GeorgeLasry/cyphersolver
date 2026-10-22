@@ -1,8 +1,14 @@
 # Siena no. 15 — Mario Bandini at the imperial court, Innsbruck, 4 January 1547 (DECODE R4803)
 
-Status: read in part (75 of 240 signs), key partly recovered from ciphertext-only by George Lasry with CTTS and Claude Opus 5.5. Contributed result, filed here 18 Oct 2026.
+Status: not read (reading audit, 22 Oct 2026: decoded, not read). Was: read in part (75 of 240 signs), key partly recovered from ciphertext-only by George Lasry with CTTS and Claude Opus 5.5. Contributed result, filed here 18 Oct 2026.
 
 Status: in progress (20 Oct 2026): George Lasry's partial reading is filed; 165 of 240 signs and the code words buf/abs/som/Za are workable from his CTTS transcription and the clear context, not yet retried here.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
+Lasry's partial decipherment gives values to 75 of 240 signs, but most cipher words still carry `?` letters and only a
+few clauses read whole ("hanno da servirsi dell'occasione"; the Latin "essent principes qui vellent persolvere centum
+milia coronatorum ..."). Class now not read, method not solved; the 75 of 240 is the share of signs with a value,
+not a reading figure.
 
 Archivio di Stato di Siena, Concistoro 2308, fasc. 2, no. 15; DECODE
 [R4803](https://de-crypt.org/decrypt-web/RecordsView/4803) (Concistoro_2308_57), catalogued "1500-1599", no status.
@@ -56,6 +62,7 @@ Not used in George's reading.
 
 ## Remaining gaps
 
+- R4803, all eleven cipher passages, decoded, not read (reading audit 22 Oct 2026) - blocker: not-attempted; build the passages into sentences from Lasry's values and the clear context, then translate
 - 165 of the 240 cipher signs on P2 and P6 - blocker: open-codes; George Lasry's own partial reading, about 30 signs without a value and many readings marked uncertain. Workable (long clear context, transcription exists), not retried here.
 - code words buf (3), abs (3), som (1), Za (1) - blocker: open-codes; no key in the busta gives them; R4764 inconclusive.
 

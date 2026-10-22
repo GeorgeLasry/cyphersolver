@@ -154,23 +154,35 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): DECODE's transcriptions copied into decode/ (from the git-ignored img/) and the key output read/R*.txt, one entry per letter (20)",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): read/R*.txt read through, best (R971 93.6%, R974, R978, R979, R1001) and worst (R970, R976, R982). Every letter is unspaced decoder output with bracketed groups every few words; even the best can be built into sentences only with guesswork (0-72% of sentences clean in docs/_check_reading.py). All twenty relabelled decoded, not read; class read in part -> not read, method -> not solved, key stays recovered; fraction_read 0.883 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "All twenty letters in Fuenmayor's volume (AGR SEG 2559) were read unchanged with the Balbases 1677 key, which the project had rebuilt earlier for other letters in the same volume; sixteen carry contemporary marginal decipherments that agree with the output.",
+  "method": "not solved",
+  "method_basis": "All twenty letters in Fuenmayor's volume (AGR SEG 2559) were read unchanged with the Balbases 1677 key, which the project had rebuilt earlier for other letters in the same volume; sixteen carry contemporary marginal decipherments that agree with the output. Reading audit, 22 Oct 2026: none of the twenty decryptions is built into sentences (unspaced output from DECODE's uncorrected transcriptions, holes every few words), so the letters are decoded, not read and the method is 'not solved' until they are.",
   "contribution": ["decipherment with ambiguous key"],
-  "class": "read in part",
-  "fraction_read": 0.88,
+  "class": "not read",
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "read/R*.txt headers (read.py, Balbases key): 23,463 code groups, 20,727 read = 0.883; unread are mostly DECODE transcription noise (?, *, split groups); unmargined R970 77%, R973 86%, R982 71%, R984 86%",
+  "fraction_read_source": "22 Oct 2026, reading audit: no letter builds sentences yet, so 0 of 23,463 groups are in text that reads. Withdrawn as a reading figure: 0.883 (read/R*.txt headers, read.py with the Balbases key: 20,727 of 23,463 groups given a value; unmargined R970 77%, R973 86%, R982 71%, R984 86%).",
   "key": "recovered",
   "verification": [
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "Read in part under the read bar: 0.88 of groups measured; the four unmargined letters are read only for gist because their DECODE transcriptions were not corrected from the images.",
+  "notes": "22 Oct 2026, reading audit: all twenty letters relabelled decoded, not read; the key (Balbases 1677) is recovered and gives 0.88 of the groups a value, but no letter is built into sentences. Earlier: read in part under the read bar, the four unmargined letters read only for gist.",
   "gaps": [
+   {
+    "item": "all twenty letters decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "space and build each decode into sentences, using the contemporary margin decipherments of the sixteen margined letters (re-read from the images, not DECODE's transcription) and re-transcribing the worst groups; then translate"
+   },
    {
     "item": "R970, R973, R982, R984 (unmargined letters) unread groups: R970 23%, R973 14%, R982 29%, R984 14%",
     "blocker": "not-attempted",
@@ -191,140 +203,200 @@
     "label": "R966, Salinas, 21 Aug 1676",
     "transcription": "decode/DOC_R966_D2817_2817.txt",
     "decryption": "read/R966.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 21 Aug 1676: deciphered with the Balbases 1677 key unchanged (87.7% of 628 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 21 Aug 1676: deciphered with the Balbases 1677 key unchanged (87.7% of 628 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (87.7% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R967, Salinas, 8 Dec 1676",
     "transcription": "decode/DOC_R967_D2818_2818.txt",
     "decryption": "read/R967.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 8 Dec 1676: deciphered with the Balbases 1677 key unchanged (86.9% of 755 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 8 Dec 1676: deciphered with the Balbases 1677 key unchanged (86.9% of 755 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (86.9% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R968, Salinas, 8 Dec 1676",
     "transcription": "decode/DOC_R968_D2819_2819.txt",
     "decryption": "read/R968.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 8 Dec 1676: deciphered with the Balbases 1677 key unchanged (82.7% of 538 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 8 Dec 1676: deciphered with the Balbases 1677 key unchanged (82.7% of 538 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (82.7% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R969, Salinas, 8 Sep 1676",
     "transcription": "decode/DOC_R969_D3582_3582.txt",
     "decryption": "read/R969.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 8 Sep 1676: deciphered with the Balbases 1677 key unchanged (87.4% of 532 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 8 Sep 1676: deciphered with the Balbases 1677 key unchanged (87.4% of 532 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (87.4% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "unmargined",
     "label": "R970, Salinas, 15 Sep 1676",
     "transcription": "decode/DOC_R970_D2814_2814.txt",
     "decryption": "read/R970.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 15 Sep 1676; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (76.9% of 663 groups). Salinas fears the 'fatal suceso' will close 'esta puerta'; the discourses at the English court turn to a peace, the progress on Fuenmayor's side moves minds there; the Danish fleet."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 15 Sep 1676; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (76.9% of 663 groups). Salinas fears the 'fatal suceso' will close 'esta puerta'; the discourses at the English court turn to a peace, the progress on Fuenmayor's side moves minds there; the Danish fleet.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (76.9% of groups have a value); sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R971, Salinas, 1 Jan 1677",
     "transcription": "decode/DOC_R971_D3015_3015.txt",
     "decryption": "read/R971.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 1 Jan 1677: deciphered with the Balbases 1677 key unchanged (93.6% of 1856 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 1 Jan 1677: deciphered with the Balbases 1677 key unchanged (93.6% of 1856 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (93.6% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R972, Salinas, 26 Jan 1677",
     "transcription": "decode/DOC_R972_D3014_3014.txt",
     "decryption": "read/R972.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 26 Jan 1677: deciphered with the Balbases 1677 key unchanged (89.3% of 1733 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 26 Jan 1677: deciphered with the Balbases 1677 key unchanged (89.3% of 1733 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (89.3% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "unmargined",
     "label": "R973, Salinas, 2 Mar 1677",
     "transcription": "decode/DOC_R973_D2847_2847.txt",
     "decryption": "read/R973.txt",
-    "summary": "Salinas (London) to Baltasar de Fuenmayor, 2 Mar 1677; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (85.9% of 199 groups). The English princes are 'no siendo tan malos' about withdrawing the troops from France; the preparations of the last months show everything is in earnest; the peace is talked of as good as made."
+    "summary": "Salinas (London) to Baltasar de Fuenmayor, 2 Mar 1677; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (85.9% of 199 groups). The English princes are 'no siendo tan malos' about withdrawing the troops from France; the preparations of the last months show everything is in earnest; the peace is talked of as good as made.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (85.9% of groups have a value); sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R974, Ronquillo, 21 Dec 1676",
     "transcription": "decode/DOC_R974_D2813_2813.txt",
     "decryption": "read/R974.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 21 Dec 1676: deciphered with the Balbases 1677 key unchanged (92.5% of 898 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 21 Dec 1676: deciphered with the Balbases 1677 key unchanged (92.5% of 898 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (92.5% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R975, Ronquillo, 28 Dec 1676",
     "transcription": "decode/DOC_R975_D2848_2848.txt",
     "decryption": "read/R975.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 28 Dec 1676: deciphered with the Balbases 1677 key unchanged (88.8% of 1871 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 28 Dec 1676: deciphered with the Balbases 1677 key unchanged (88.8% of 1871 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (88.8% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R976, Ronquillo, 10 Apr 1677",
     "transcription": "decode/DOC_R976_D3580_3580.txt",
     "decryption": "read/R976.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 10 Apr 1677: deciphered with the Balbases 1677 key unchanged (69.8% of 572 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 10 Apr 1677: deciphered with the Balbases 1677 key unchanged (69.8% of 572 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (69.8% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R977, Ronquillo, 17 Apr 1677",
     "transcription": "decode/DOC_R977_D2849_2849.txt",
     "decryption": "read/R977.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 17 Apr 1677: deciphered with the Balbases 1677 key unchanged (87.6% of 636 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 17 Apr 1677: deciphered with the Balbases 1677 key unchanged (87.6% of 636 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (87.6% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R978, Ronquillo, 20 Feb 1677",
     "transcription": "decode/DOC_R978_D2820_2820.txt",
     "decryption": "read/R978.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 20 Feb 1677: deciphered with the Balbases 1677 key unchanged (93.0% of 1691 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 20 Feb 1677: deciphered with the Balbases 1677 key unchanged (93.0% of 1691 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (93.0% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R979, Ronquillo, 9 Jan 1677",
     "transcription": "decode/DOC_R979_D2872_2872.txt",
     "decryption": "read/R979.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 9 Jan 1677: deciphered with the Balbases 1677 key unchanged (92.4% of 1848 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 9 Jan 1677: deciphered with the Balbases 1677 key unchanged (92.4% of 1848 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (92.4% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R980, Ronquillo, 27 Jan 1677",
     "transcription": "decode/DOC_R980_D3012_3012.txt",
     "decryption": "read/R980.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 27 Jan 1677: deciphered with the Balbases 1677 key unchanged (88.7% of 1697 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 27 Jan 1677: deciphered with the Balbases 1677 key unchanged (88.7% of 1697 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (88.7% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R981, Ronquillo, 27 Jan 1677",
     "transcription": "decode/DOC_R981_D3013_3013.txt",
     "decryption": "read/R981.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 27 Jan 1677: deciphered with the Balbases 1677 key unchanged (89.2% of 2089 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 27 Jan 1677: deciphered with the Balbases 1677 key unchanged (89.2% of 2089 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (89.2% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "unmargined",
     "label": "R982, Ronquillo, 19 Mar 1678",
     "transcription": "decode/DOC_R982_D2510_2510.txt",
     "decryption": "read/R982.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 19 Mar 1678; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (71.2% of 813 groups). Ten days after the fall of Ghent: the congress, Flanders surprised, the Brunswick princes, 'estamos muy mal', 'melancólicas reflexiones'. Read for gist only (DECODE's transcription is the worst of the set)."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 19 Mar 1678; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (71.2% of 813 groups). Ten days after the fall of Ghent: the congress, Flanders surprised, the Brunswick princes, 'estamos muy mal', 'melancólicas reflexiones'. Read for gist only (DECODE's transcription is the worst of the set).",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (71.2% of groups have a value); sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R983, Ronquillo, 22 May 1677",
     "transcription": "decode/DOC_R983_D2509_2509.txt",
     "decryption": "read/R983.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 22 May 1677: deciphered with the Balbases 1677 key unchanged (89.1% of 2145 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 22 May 1677: deciphered with the Balbases 1677 key unchanged (89.1% of 2145 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (89.1% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "unmargined",
     "label": "R984, Ronquillo, 26 Feb 1678",
     "transcription": "decode/DOC_R984_D2809_2809.txt",
     "decryption": "read/R984.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 26 Feb 1678; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (86.0% of 1144 groups). On Fuenmayor's reports of the assembly of the northern allies: everything hangs on the English parliament and whether the King really breaks with France; Danish complaints about subsidies; Brandenburg in Pomerania; the Duke of Hanover's intrigue through his kinship with Madame."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 26 Feb 1678; no contemporary decipherment in DECODE's transcription, a new reading with the Balbases 1677 key (86.0% of 1144 groups). On Fuenmayor's reports of the assembly of the northern allies: everything hangs on the English parliament and whether the King really breaks with France; Danish complaints about subsidies; Brandenburg in Pomerania; the Duke of Hanover's intrigue through his kinship with Madame.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (86.0% of groups have a value); sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    },
    {
     "doc": "margined",
     "label": "R1001, Ronquillo, 06 Feb 1677",
     "transcription": "decode/DOC_R1001_D2815_2815.txt",
     "decryption": "read/R1001.txt",
-    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 06 Feb 1677: deciphered with the Balbases 1677 key unchanged (92.9% of 1155 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with."
+    "summary": "Ronquillo (Nijmegen) to Baltasar de Fuenmayor, 06 Feb 1677: deciphered with the Balbases 1677 key unchanged (92.9% of 1155 groups); the file also gives DECODE's transcription of the contemporary margin decipherment, which the key output agrees with.",
+    "note": "Unspaced decode with bracketed unread or doubtful groups every few words (92.9% of groups have a value) and a contemporary margin decipherment known only from DECODE's noisy transcription; sentences can be built only with guesswork (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "es"
    }
   ]
  }

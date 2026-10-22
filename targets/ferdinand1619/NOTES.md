@@ -6,6 +6,12 @@ Catalogue entry 165 ("… to unknown recipient, 1619"). Work 22 September 2026, 
 Outcome: **read** (95.8% of cipher tokens measured, `python count.py`). Key state: rebuilt, letters complete;
 the nomenclator (32 groups, 74 tokens) is open apart from 248 = *und*.
 
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): graded C, overturned on
+re-reading. `reading.txt` is one manuscript line per row with the clear text in brackets, so it scores badly; joined,
+the cipher of R9426 reads as German sentences with scattered nomenclator groups and `...` gaps in the clear hand, and
+R9425 (`r9425/reading.md`) is continuous prose with scattered open groups. Both stay read (reviewed B). Still to do:
+join R9426 into prose and translate both letters.
+
 Images: DECODE, login only; the rights line on the record reads "The image is not in the public domain.
 Publishing it is only possible with the permission of the Archive." No permission has been asked for, so the
 images stay in the untracked `targets/kaa4591/img/` work folder (git-ignored) and the site page carries no figures.

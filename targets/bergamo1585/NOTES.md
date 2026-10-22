@@ -1,7 +1,15 @@
 # Paris nunciature, bishop of Bergamo, 1585–86 (ASV Segr. Stato Francia 18; DECODE R15, R16) — NOTES
 
-**Result: read** (R16 0.974 measured, 21 Sept 2026; open: name codes 18/48 and scattered transcription slips; see
+Status: in progress (reading audit, 22 Oct 2026: some documents are decoded, not read; see Remaining gaps).
+
+**Result (withdrawn 22 Oct 2026, reading audit: decoded, not read): read** (R16 0.974 measured, 21 Sept 2026; open: name codes 18/48 and scattered transcription slips; see
 Remaining gaps). R15 read before (Lasry); R16 read here with the same F18 key. Write-up: docs/bergamo1585.html.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R16 is decoded, not
+read**, so the "Result: read" above is withdrawn. The decode with Lasry's F18 key and Meister's nomenclator is one
+run-on block, words run together, name tags misplaced, an open group or slip in nearly every clause; the gist follows
+(Guise, Metz, the sale under the bull, the clergy's appeal to a council), the sentences have not been built. Class now
+not read, method not solved; 0.974 is the share of units with a value, withdrawn as a reading figure.
 
 **Split on 14 Oct 2026** under the one-key rule (George Lasry, 14 Oct 2026): R17 (Francia 18/3), filed in the same
 volume but in Meister's key no. 40, moved to [`targets/morosini1588/`](../morosini1588/NOTES.md) (page
@@ -50,6 +58,7 @@ transcription.
 
 ## Remaining gaps
 
+- R16 decoded, not read (3,216 tokens; run-on, a hole in nearly every clause; reading audit 22 Oct 2026) - blocker: not-attempted; re-read the slips on the images, normalise into Italian sentences, translate
 - R16 nomenclator codes 18 and 48 - blocker: open-codes; Meister's Ferrara/Parma values do not fit the contexts; the 1586 table may have moved them
 - R16 remaining ~16 unknown pairs - blocker: open-codes; unknowns after the one-digit resync; mostly transcription slips in TimB transcription D1610, images not re-read
 

@@ -1,5 +1,13 @@
 # Sauli and Riario (Portugal) to the Secretariat, 1579–81 — READ (contemporary decipherments, checked with Lasry's key)
 
+Status: in progress
+
+**22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
+R190-R194 are all **decoded, not read**. Lasry's R190/R191 decryption is sign-by-sign rows with ?-marks; the R192-R194
+decrypts have holes in nearly every line, and the contemporary interlinear decipherments are transcribed only as
+fragments. Class read -> not read, method -> not solved (the glosses kept as a partial part). The "Result: read" below
+is superseded. Next: transcribe each gloss and the clear text in full; that is the reading.
+
 Catalogue item 260 (class A). ASV, Segreteria di Stato, Portogallo 8 (DECODE R190–R194; index i. 1025, doss. 8).
 The volume holds Antonio Sauli's letters as nuncio (23 Jan – 9 Dec 1579, ff. 2–74) and Cardinal Alessandro Riario's
 as legate a latere to Philip II (6 Mar 1580 – 23 Jul 1581, ff. 107–323). The catalogue date "23 Jan 1579" is the
@@ -63,3 +71,11 @@ Added here from the glosses (R192–R194):
 
 Prior art: no edition of Riario's legation letters found (web search 21 Sept 2026); Lasry's key and partial
 decryption on DECODE (2020) are the prior solution.
+
+## Remaining gaps
+
+- R190, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
+- R191, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
+- R192, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
+- R193, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
+- R194, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full

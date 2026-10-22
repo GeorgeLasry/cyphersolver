@@ -1,10 +1,17 @@
 # Walsingham → Edward Wotton, 28 Jul – 10 Sep 1585 — BL Add MS 32657, DECODE R4838, R4839, R4840, R4844
 
 Catalogue entry 82 ("Sir Francis Walsingham … to Edward Wotton, ambassador to Scotland, 4 ciphertexts", Tomokiyo
-list, rule-scored). Worked 2026-09-21. **Outcome: read in part.** All four letters read. The name code is mostly
+list, rule-scored). Worked 2026-09-21. **Outcome: read in part.** All four letters transcribed; R4844 is decoded, not read (reading audit, 22 Oct 2026). The name code is mostly
 identified. About fourteen words in a sign alphabet in the 10 Sep letter stay unread.
 
-Status: read in part (2026-09-21). Companion to [wotton1585](../wotton1585/NOTES.md), Wotton's own drafts to
+Status: read in part (2026-09-21).
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): R4840 (21 Aug) reads as
+English sentences with its name codes glossed. **R4844 (10 Sep) is decoded, not read**: the unread sign-alphabet
+words and open codes fall in nearly every sentence. Reading figure 0.43 (units in letters that read); the pooled 0.49
+is withdrawn as a reading figure.
+
+Companion to [wotton1585](../wotton1585/NOTES.md), Wotton's own drafts to
 Walsingham in the same volume (R4841–R4843, catalogue 81), read by another session the same day.
 
 Two ciphers, two results (one-key review, 14 Oct 2026): the two-digit name code of all four letters and the sign
@@ -99,6 +106,7 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
    text to break without either. Closed unread.
 
 ## Remaining gaps
+- R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
 - R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out
 - name codes 13, 14, 23, 30, 32, 37 - blocker: open-codes; not glossed in CSP or Wotton drafts; context too thin
 - clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); nine transcription corrections found, not yet merged into the reading files

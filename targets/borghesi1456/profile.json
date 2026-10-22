@@ -27,7 +27,7 @@
     "image_quality": "good",
     "notes": "15 cipher runs + 9 code words; counts from agent G's run transcription and reading (transcripts/no04.txt, transcripts/no04_reading.txt)"
    },
-   "read": "read in part",
+   "read": "not read",
    "date": "12 May 1456",
    "route": "Naples -> Siena (Leonardo Benvoglienti)"
   }
@@ -120,21 +120,41 @@
    "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no04.txt + transcripts/no04_reading.txt; key keys/no04_key.txt", "result": "worked"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no04.txt + transcripts/no04_reading.txt; key keys/no04_key.txt",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit (George Lasry's sentence test): transcripts/no04_reading.txt read through with its running text. The first cipher runs complete their clear sentences, but the second paragraph is runs, code words and '?' signs between doubtful clear words and cannot be built into sentences; the page gives the sense as tentative. Relabelled decoded, not read; class read in part -> not read, method key recovered based on adjacent plaintext -> not solved; fraction_read 0.79 -> 0.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-14", "verdict": "not applicable", "notes": "144 cipher signs in 15 short runs, most of them a few letters long, with 9 Latin code words: too few read tokens per sign type for the shuffled-text test, and the key is attested by the alphabet fragment written on the letter"}, 
-  "method": "key recovered based on adjacent plaintext",
+ "outcome": {
+  "validation": {
+   "date": "2026-10-14",
+   "verdict": "not applicable",
+   "notes": "144 cipher signs in 15 short runs, most of them a few letters long, with 9 Latin code words: too few read tokens per sign type for the shuffled-text test, and the key is attested by the alphabet fragment written on the letter"
+  },
+  "method": "not solved",
   "method_basis": "A two-row alphabet fragment written below the letter's text (i to u, over their cipher signs) and the recipient's interlinear glosses rebuilt the key.",
   "contribution": [
    "key recovered",
    "transcription",
    "sender or date identified"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.79,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcripts/no04_reading.txt: 114 of 144 cipher sign tokens read (79%); 125 with doubtful; 19 unread.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count; the one letter (144 cipher signs) is decoded, not read, so 0. The earlier 114/144 (0.79, transcripts/no04_reading.txt, signs given a value) is withdrawn as a reading figure.",
   "verification": [
    "contemporary decipherment"
   ],
@@ -160,9 +180,18 @@
     "source": "Senatore 2009"
    }
   ],
-  "notes": "Galgano Borghesi at Naples to Leonardo Benvoglienti, 12 May 1456. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only.",
+  "notes": "Galgano Borghesi at Naples to Leonardo Benvoglienti, 12 May 1456. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only. 22 Oct 2026, reading audit: relabelled decoded, not read; class not read, method not solved (the key from the fragment and glosses stands as key work).",
   "texts": [
-   {"doc": "no04", "label": "Naples, 12 May 1456, ASSi Concistoro 2308 fasc. 2 no. 4 (DECODE R4793)", "transcription": "transcripts/no04.txt", "decryption": "transcripts/no04_reading.txt", "summary": "Galgano Borghesi, orator at Naples, writes to Leonardo Benvoglienti that at his urging King Alfonso wanted the settlement to include the promises made when Lucca was besieged by the Florentines, and that the Pope, the Florentine clergy and the cardinals are to contribute against the Turk. The sense is tentative: 114 of the 144 cipher signs are read."}
+   {
+    "doc": "no04",
+    "label": "Naples, 12 May 1456, ASSi Concistoro 2308 fasc. 2 no. 4 (DECODE R4793)",
+    "transcription": "transcripts/no04.txt",
+    "decryption": "transcripts/no04_reading.txt",
+    "summary": "Galgano Borghesi, orator at Naples, writes to Leonardo Benvoglienti that at his urging King Alfonso wanted the settlement to include the promises made when Lucca was besieged by the Florentines, and that the Pope, the Florentine clergy and the cardinals are to contribute against the Turk. The sense is tentative: 114 of the 144 cipher signs are read.",
+    "language": "it",
+    "state": "decoded, not read",
+    "note": "The early runs fit their clear sentences ('A MILANO', 'de le scritture', 'Tunc rex parvi fecisse'), but the second paragraph (Antonio d'Arezzo, the Pope, the clergy) is runs, code words and '?' signs between doubtful clear words, and cannot be built into sentences; the sense is given only as a tentative summary (reading audit, 22 Oct 2026)."
+   }
   ],
   "key_file": "keys/no04_key.txt"
  }
