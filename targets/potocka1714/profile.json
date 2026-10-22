@@ -441,6 +441,12 @@
    "kind": "verification",
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): Mniszech's R7524, another cipher, moved to mniszech1714. prepare_reading.py and measure_sense.py rerun on Potocka's nine letters only: 862/886 tokens valued (97.3%), 844/886 read as sense (95.3%); 95.3% overall, but R7527, R7534 and R7536 are below 95% each, so the entry stays read in part (read bar judged per document).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher token files R75xx-cipher.txt (plus the R7526 Polish postscript r7526-trial.txt) and the segment reading reading.md, one entry per letter; key key-potocka.json; the clear French text of the letters is not transcribed",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -517,6 +523,75 @@
     "detail": "re-read at full resolution 5 Oct 2026; the figures are as transcribed (one surplus 25 removed from Kinisberk), the words remain unestablished; no parallel witness."
    }
   ],
-  "notes": "844/886 tokens read as sense (95.3%), measured word by word; 862/886 valued. Per letter: R7525 96.4, R7526 100, R7527 94.3, R7528 98.0, R7529 97.1, R7530 96.8, R7534 82.8, R7535 96.0, R7536 93.1. Read in part: the bar is judged per document and R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) fall below it. Open: four person codes (87, 94, 100, 270; 23 tokens), figure 73, and four words not established (19 tokens). Split on 14 Oct 2026: Mniszech R7524 is targets/mniszech1714."
+  "notes": "844/886 tokens read as sense (95.3%), measured word by word; 862/886 valued. Per letter: R7525 96.4, R7526 100, R7527 94.3, R7528 98.0, R7529 97.1, R7530 96.8, R7534 82.8, R7535 96.0, R7536 93.1. Read in part: the bar is judged per document and R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) fall below it. Open: four person codes (87, 94, 100, 270; 23 tokens), figure 73, and four words not established (19 tokens). Split on 14 Oct 2026: Mniszech R7524 is targets/mniszech1714.",
+  "texts": [
+   {
+    "doc": "R7525",
+    "label": "R7525, Barbara Potocka to Jakub Dunin (cipher passages; section R7525 of reading.md)",
+    "transcription": "R7525-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "Horyhorki and court influence: code 94 wants to be alone in the credit of 100; a house causes the writer harm; justice and enemies."
+   },
+   {
+    "doc": "R7526",
+    "label": "R7526, Barbara Potocka to Jakub Dunin (cipher passages; section R7526 of reading.md)",
+    "transcription": [
+     "R7526-cipher.txt",
+     "r7526-trial.txt"
+    ],
+    "decryption": "reading.md",
+    "summary": "the starosta is present; she asked whether he had arranged anything, and he has nothing; a journey to Lublin; a report that he was with the Dominicans at the time when Dunin danced with a woman in the field (*iakeś tańcował*, corrected 30 Sept 2026, item 7). The office/place name reads *serecki* and the reporting name *Stabrowski* (corrected from *p. Tabrowski*, item 8); the letters are clear, the persons unidentified. Do not silently replace them with Merecki, *serejski* or Dąbrowski."
+   },
+   {
+    "doc": "R7527",
+    "label": "R7527, Barbara Potocka to Jakub Dunin (cipher passages; section R7527 of reading.md)",
+    "transcription": "R7527-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "the palatine of Vilna's obligation for *sant mil fran* on Bychow; measures to take and distrust of 94's help. The reverse concerns an accusation against the marshal of Lithuania, Biegański's confession to his father, a letter to 100, a letter through the grand chancellor, and an oath. The allegation is the correspondent's account, not an independently verified event."
+   },
+   {
+    "doc": "R7528",
+    "label": "R7528, Barbara Potocka to Jakub Dunin (cipher passages; section R7528 of reading.md)",
+    "transcription": "R7528-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "Rakiszki, the palatine of Mścisław, and property/reformation involving the first husband, Kroszyński. The second surname spelling is irregular (*Krodyznski*)."
+   },
+   {
+    "doc": "R7529",
+    "label": "R7529, Barbara Potocka to Jakub Dunin (cipher passages; section R7529 of reading.md)",
+    "transcription": "R7529-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "clear French says that since 10 May the *clef* is *rompue* and there is no way to *loubrire*. Another passage says someone has the *clef* in *ceur*. These report trouble using the cipher; they do not establish interception or cryptanalytic compromise. Later cipher words are *rayne* and *maitresse*."
+   },
+   {
+    "doc": "R7530",
+    "label": "R7530, Barbara Potocka to Jakub Dunin (cipher passages; section R7530 of reading.md)",
+    "transcription": "R7530-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "the grand treasurer, a confederation, the surrender of an army, and evidence concerning the arrival of a *morcowide* (probably Moscovite). Some number sequences yield corrupt spellings; the letter is not treated as a fluent verified transcript."
+   },
+   {
+    "doc": "R7534",
+    "label": "R7534, Barbara Potocka to Jakub Dunin (cipher passages; section R7534 of reading.md)",
+    "transcription": "R7534-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "deputies, *libertation*, a doubtful *zaia[73]d* (possibly Polish *zajazd*), Bychowa, Białystok, Tykocin and Rybiński. Codes 87, 94 and 270 remain open."
+   },
+   {
+    "doc": "R7535",
+    "label": "R7535, Barbara Potocka to Jakub Dunin (cipher passages; section R7535 of reading.md)",
+    "transcription": "R7535-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "children and a brother, being Saxon, Dunin's house, Chomiński and an ensign; court correspondence, the marshal and his father, *Menzykw* (possibly Menshikov), the queen and the prince of Courland."
+   },
+   {
+    "doc": "R7536",
+    "label": "R7536, Barbara Potocka to Jakub Dunin (cipher passages; section R7536 of reading.md)",
+    "transcription": "R7536-cipher.txt",
+    "decryption": "reading.md",
+    "summary": "a disturbed seal and concern over correspondence; instructions to route letters via a name resembling Königsberg, followed by an unidentified *Kinnik*. The writer expects delay but greater safety. The reverse considers her security, lodging in case of war, keeping Dunin's wife company and a safeguard."
+   }
+  ],
+  "key_file": "key-potocka.json"
  }
 }

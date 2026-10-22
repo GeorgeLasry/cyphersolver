@@ -132,6 +132,12 @@
    "kind": "control",
    "what": "Tried R1210's name codes on the unkeyed numbers 24, 15, 10, 41, 70, 55, 78, 18, 52: no sense.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): first-pass transcriptions transcription_p1-2.md / _p3-4.md and the full-resolution readings reading_p1-2.md / _p3-4.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -173,6 +179,21 @@
   ],
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "key sheet DECODE R1211, the leaf before the letter (HHStA Kt. 13 Fasc. 20 f. 37); interlinear decipherment on the letter"}
+  ],
+  "texts": [
+   {
+    "doc": "R1212",
+    "label": "Pál Bornemisza to Ferdinand I, c. 1556, HHStA Chiffrenschlüssel Kt. 13 Fasc. 20 ff. 38-39 (DECODE R1212)",
+    "transcription": [
+     "transcription_p1-2.md",
+     "transcription_p3-4.md"
+    ],
+    "decryption": [
+     "reading_p1-2.md",
+     "reading_p3-4.md"
+    ],
+    "summary": "Two reports by the Bishop of Transylvania on the revolt: Ferenc Kendi, 'ter perfidus', is its sole cause, drew Antal Kendi, Menyhért Balassa and other nobles in, and lost the kingdom to the King; the voivodes' soldiers committed atrocities before the three nations; Kendi urged the bishop to give up Alba and live at Gyalu; Babócsa and other castles were lost. Clear Latin with enciphered runs, deciphered at the time between the lines and re-read here from the signs with key R1211."
+   }
   ]
  }
 }
