@@ -199,6 +199,12 @@
    "what": "Push pass on fr. 3045 (fr3045_f28_final.md '## Push pass'): sibling y = B and phrase reading give 'come batale perduta, ogniuno voleva andare ale stancie' (l.5-6), 'che obsante ogni mio mal tratamento' (l.20), loro written LO-R-R-O, 'dico che lui proveda' (dotted p = U from sense only, flagged); enhancement and a second web search changed nothing else. 715 -> 741/778 (95.2%); target 1408/1477 (95.3%), read by a thin margin (94.6% on fr. 3045 without the two judgement calls).",
    "result": "worked",
    "date": "2026-09-22"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per letter, the glyph token transcription, the second-pass final reading and the first-pass reading; key = KEY.md, Lasry's table as extended on visconti1528 (his table image is ../visconti1528/key_fr3045_f28.png).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -245,6 +251,11 @@
   "fraction_read_source": "targets/visconti1529/fr3045_f28_final.md (push pass) and fr3096_f91_final.md, by script over the token files: 741/778 + 667/699 = 1408/1477 cipher glyphs read as sense; sense-open, unread and code glyphs counted as unread",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "key table 'BNF Francais 3045f28 and 3034f154' on cryptiana GL.htm, as extended on visconti1528", "date": "2023-11-05", "source": "https://cryptiana.web.fc2.com/code/GL.htm"}
-  ]
+  ],
+  "texts": [
+   {"doc": "fr3045_f28", "label": "Letter 1: BnF fr. 3045 f. 28 (R4230), Galeazzo Visconti to Angelo Bolano, Alessandria, 15 Oct 1528", "transcription": "fr3045_f28_tokens.txt", "decryption": ["fr3045_f28_final.md", "fr3045_f28_reading.md"], "summary": "Visconti to Angelo Bolano: the only news is that Savona has been relieved, 'for the slowness of the world'; divisions have cost the command its reputation, 'like a lost battle, everyone wanted to go into winter quarters', the adventurer infantry have left for want of pay, the advance money is 'in Puglia' with the wreck of Lautrec's army, and the lances are few and late."},
+   {"doc": "fr3096_f91", "label": "Letter 2: BnF fr. 3096 f. 91r (R4256), Galeazzo Visconti to Francis I, camp at the pieve de Locate, 15 June 1529", "transcription": "fr3096_f91_tokens.txt", "decryption": ["fr3096_f91_final.md", "fr3096_f91_reading.md"], "summary": "Visconti to Francis I: knowing the Venetians' fear of a peace, above all of being bound against the Turk, he assured the Duke of Urbino and the provveditore that the King will never abandon the Signoria, and said as much of the Duke of Milan; the council's plan to try to force Milan will fail, 'et il tuto, Sire, è a uno fine non bono'. In clear he begs to be paid his two quarters."}
+  ],
+  "key_file": "KEY.md"
  }
 }
