@@ -44,6 +44,9 @@ images of f9r and f17r. No change to his transcription or key follows. His token
   518; f15r, in the unread tail, 925 and 656 against 935 and 616 (not re-checked against the image); the header
   numbers 753 (f15r) and 1098 (f17r) are outside his cipher streams; 329 is his marked code 329z.
 - He agrees that f21r-v uses a different nomenclator.
+- Checked here (22 Oct 2026) against his TSV: 1193, 1265, 1155, 889, 355, 459 = es, 1210 = sort, 151 = bataille and
+  868 = o all occur on the folios he names; 1143, 1268, 1115, 839, 353, 419, 1200, 751 and 808 do not. The images
+  were not re-checked here.
 
 ## His metadata
 
