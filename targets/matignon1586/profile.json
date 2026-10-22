@@ -22,16 +22,16 @@
     "partial": false
    },
    "length": {
-    "tokens": 724,
+    "tokens": 704,
     "unit": "mixed",
     "measured": true,
-    "file": "cipher_f143.txt"
+    "file": "brackx2026/f143r_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images, flattened and unsharp-masked (flatten.py), tiled per line",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "21 cipher lines after a clear first half; three passes; about two thirds read (f143_reading.md). Measured (measure.py, 22 Sept 2026): 59% of transcribed tokens read as sense (424/724); scrambled-key floor 11%, chance-corrected 54%; 21/21 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 21 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 70% of tokens read as sense. Earlier transcription kept: 21 cipher lines after a clear first half; three passes; about two thirds read (f143_reading.md). Measured (measure.py, 22 Sept 2026): 59% of transcribed tokens read as sense (424/724); scrambled-key floor 11%, chance-corrected 54%; 21/21 lines transcribed."
    }
   },
   {
@@ -53,22 +53,53 @@
     "partial": false
    },
    "length": {
-    "tokens": 1182,
+    "tokens": 1212,
     "unit": "mixed",
     "measured": true,
-    "file": "f143v_cipher.txt"
+    "file": "brackx2026/f143v_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images, flattened and unsharp-masked (flatten.py), tiled per line",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "33 cipher lines, then clear close; same letter as the recto; roughly half reads (f143_reading.md). Measured (measure.py, 22 Sept 2026): 55% of transcribed tokens read as sense (654/1182); scrambled-key floor 8%, chance-corrected 51%; 33/33 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 34 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 71% of tokens read as sense. Earlier transcription kept: 33 cipher lines, then clear close; same letter as the recto; roughly half reads (f143_reading.md). Measured (measure.py, 22 Sept 2026): 55% of transcribed tokens read as sense (654/1182); scrambled-key floor 8%, chance-corrected 51%; 33/33 lines transcribed."
+   }
+  },
+  {
+   "id": "f150r",
+   "read": "read",
+   "shelfmark": "BnF fr. 15572 f. 150r (canvas 157 right; foliated 150, 159 struck)",
+   "date": "Apr 1586",
+   "year": 1586,
+   "country": "France",
+   "route": "Forget -> Villeroy",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "f. 155v (lower half): contemporary clear copy (issue #83). ff. 155v-156r: Contemporary clear copies in another (secretary's) hand, bound after the despatches as ff. 155-157 (canvases 162 right-164 right): f. 155r-v copies f. 143r-v, ff. 155v-156r copy the ff. 149v-150 cipher, f. 157 copies f. 154r-v; endorsed 'Mr du Mayne' and 'Mr Forget de ... avril 1586'.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1132,
+    "unit": "mixed",
+    "measured": true,
+    "file": "brackx2026/f150r_cipher.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
+    "image_quality": "fair",
+    "notes": "32 cipher lines after a clear opening, never transcribed before #83 (checked on canvas 157 here). 66% of tokens read as sense; 0.84 letter agreement with the copy f. 155v (control 0.25)."
    }
   },
   {
    "id": "f150",
    "read": "read",
-   "shelfmark": "BnF fr. 15572 f. 150 (canvas 158 left)",
+   "shelfmark": "BnF fr. 15572 f. 150v (canvas 158 left)",
    "date": "Apr 1586",
    "year": 1586,
    "country": "France",
@@ -84,16 +115,16 @@
     "partial": false
    },
    "length": {
-    "tokens": 445,
+    "tokens": 441,
     "unit": "mixed",
     "measured": true,
-    "file": "f150_cipher.txt"
+    "file": "brackx2026/f150v_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "13 cipher lines over a clear letter; perhaps half reads as continuous French (f150_reading.md). Measured (measure.py, 22 Sept 2026): 42% of transcribed tokens read as sense (189/445); scrambled-key floor 4%, chance-corrected 40%; 13/13 lines transcribed. The cipher begins on f. 149v (canvas 157 right, not transcribed); the clear copy ff. 155v-156r covers both."
+    "notes": "Re-transcribed by Brackx, 13 lines; this leaf is f. 150 VERSO (canvas 158 left), not the recto (#83). Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 63% of tokens read as sense. Earlier transcription kept: 13 cipher lines over a clear letter; perhaps half reads as continuous French (f150_reading.md). Measured (measure.py, 22 Sept 2026): 42% of transcribed tokens read as sense (189/445); scrambled-key floor 4%, chance-corrected 40%; 13/13 lines transcribed. The cipher begins on f. 149v (canvas 157 right, not transcribed); the clear copy ff. 155v-156r covers both."
    }
   },
   {
@@ -115,16 +146,16 @@
     "partial": false
    },
    "length": {
-    "tokens": 1061,
+    "tokens": 1056,
     "unit": "mixed",
     "measured": true,
-    "file": "f154_cipher.txt"
+    "file": "brackx2026/f154r_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images, two tiles a line from three-line strips (strips.py)",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "28 cipher lines; about half reads as continuous French (f154_reading.md). Measured (measure.py, 22 Sept 2026): 47% of transcribed tokens read as sense (501/1061); scrambled-key floor 8%, chance-corrected 43%; 28/28 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 29 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 63% of tokens read as sense. Earlier transcription kept: 28 cipher lines; about half reads as continuous French (f154_reading.md). Measured (measure.py, 22 Sept 2026): 47% of transcribed tokens read as sense (501/1061); scrambled-key floor 8%, chance-corrected 43%; 28/28 lines transcribed."
    }
   },
   {
@@ -146,15 +177,16 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 710,
     "unit": "mixed",
-    "measured": false
+    "measured": true,
+    "file": "brackx2026/f154vA_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "not transcribed figure by figure",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "Two cipher blocks of about 11 lines each with clear text between and after, signed Forget at Bordeaux, April 1586; missed by the 18 Sept count, which took only the 28 recto lines (Brackx, #70; seen on canvas 162 here 21 Oct 2026). One line spot-checked by Brackx against the copy."
+    "notes": "Re-transcribed by Brackx, two blocks of 10 and 11 lines (f154vA/B_cipher.txt). Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 68% of tokens read as sense. Earlier transcription kept: Two cipher blocks of about 11 lines each with clear text between and after, signed Forget at Bordeaux, April 1586; missed by the 18 Sept count, which took only the 28 recto lines (Brackx, #70; seen on canvas 162 here 21 Oct 2026). One line spot-checked by Brackx against the copy."
    }
   },
   {
@@ -175,16 +207,16 @@
     "source": "No decipherment on the leaf; none in print found."
    },
    "length": {
-    "tokens": 1082,
+    "tokens": 1072,
     "unit": "mixed",
     "measured": true,
-    "file": "f173_cipher.txt"
+    "file": "brackx2026/f173_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images, rows cut with alternate tints (rowcut.py)",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "33 cipher lines; roughly half the words read (f173_reading.md). Measured (measure.py, 22 Sept 2026): 28% of transcribed tokens read as sense (306/1082); scrambled-key floor 8%, chance-corrected 22%; 33/33 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 33 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 50% of tokens read as sense. Earlier transcription kept: 33 cipher lines; roughly half the words read (f173_reading.md). Measured (measure.py, 22 Sept 2026): 28% of transcribed tokens read as sense (306/1082); scrambled-key floor 8%, chance-corrected 22%; 33/33 lines transcribed."
    }
   },
   {
@@ -206,16 +238,16 @@
     "partial": true
    },
    "length": {
-    "tokens": 840,
+    "tokens": 975,
     "unit": "mixed",
     "measured": true,
-    "file": "f196_cipher.txt"
+    "file": "brackx2026/f196_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images; line fit needed comb, DP and manual offset",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "26 of 31 cipher lines transcribed (a part-line after \"auquel\" and 30 full lines on the image; the first three full lines and the 13th are not transcribed). About half the words read (f196_reading.md). Measured (measure.py, 22 Sept 2026): 45% of transcribed tokens read as sense (376/840); scrambled-key floor 6%, chance-corrected 41%; 26/31 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 31 of 31 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 59% of tokens read as sense. Earlier transcription kept: 26 of 31 cipher lines transcribed (a part-line after \"auquel\" and 30 full lines on the image; the first three full lines and the 13th are not transcribed). About half the words read (f196_reading.md). Measured (measure.py, 22 Sept 2026): 45% of transcribed tokens read as sense (376/840); scrambled-key floor 6%, chance-corrected 41%; 26/31 lines transcribed."
    }
   },
   {
@@ -237,16 +269,16 @@
     "partial": true
    },
    "length": {
-    "tokens": 987,
+    "tokens": 972,
     "unit": "mixed",
     "measured": true,
-    "file": "f201_cipher.txt"
+    "file": "brackx2026/f201_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "30 cipher lines. Aligned with f. 196: 57% of figures identical, 8 runs of 8+; shuffled control 12%. Perhaps two thirds read (f201_reading.md). Measured (measure.py, 22 Sept 2026): 46% of transcribed tokens read as sense (455/987); scrambled-key floor 7%, chance-corrected 42%; 30/30 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 30 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 71% of tokens read as sense. Earlier transcription kept: 30 cipher lines. Aligned with f. 196: 57% of figures identical, 8 runs of 8+; shuffled control 12%. Perhaps two thirds read (f201_reading.md). Measured (measure.py, 22 Sept 2026): 46% of transcribed tokens read as sense (455/987); scrambled-key floor 7%, chance-corrected 42%; 30/30 lines transcribed."
    }
   },
   {
@@ -267,16 +299,16 @@
     "source": "No decipherment on the leaves; none in print found."
    },
    "length": {
-    "tokens": 1097,
+    "tokens": 1113,
     "unit": "mixed",
     "measured": true,
-    "file": "f123r_cipher.txt"
+    "file": "brackx2026/f123r_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "First page transcribed in this hand; reads badly. f. 123r opens in clear before the cipher. Measured (measure.py, 22 Sept 2026): 21% of transcribed tokens read as sense (228/1097); scrambled-key floor 12%, chance-corrected 10%; 36/36 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 36 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 47% of tokens read as sense. Earlier transcription kept: First page transcribed in this hand; reads badly. f. 123r opens in clear before the cipher. Measured (measure.py, 22 Sept 2026): 21% of transcribed tokens read as sense (228/1097); scrambled-key floor 12%, chance-corrected 10%; 36/36 lines transcribed."
    }
   },
   {
@@ -297,16 +329,16 @@
     "source": "No decipherment on the leaves; none in print found."
    },
    "length": {
-    "tokens": 1251,
+    "tokens": 1374,
     "unit": "mixed",
     "measured": true,
-    "file": "f123v_cipher.txt"
+    "file": "brackx2026/f123v_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "Reads in fragments at most; no coverage figure given. Measured (measure.py, 22 Sept 2026): 32% of transcribed tokens read as sense (403/1251); scrambled-key floor 12%, chance-corrected 23%; 41/41 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 41 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 56% of tokens read as sense. Earlier transcription kept: Reads in fragments at most; no coverage figure given. Measured (measure.py, 22 Sept 2026): 32% of transcribed tokens read as sense (403/1251); scrambled-key floor 12%, chance-corrected 23%; 41/41 lines transcribed."
    }
   },
   {
@@ -327,16 +359,16 @@
     "source": "No decipherment on the leaves; none in print found."
    },
    "length": {
-    "tokens": 1203,
+    "tokens": 1405,
     "unit": "mixed",
     "measured": true,
-    "file": "f124r_cipher.txt"
+    "file": "brackx2026/f124r_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "Reads well (f123_124_reading.md), no coverage figure given. Measured (measure.py, 22 Sept 2026): 26% of transcribed tokens read as sense (314/1203); scrambled-key floor 12%, chance-corrected 16%; 35/35 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 41 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 60% of tokens read as sense. Earlier transcription kept: Reads well (f123_124_reading.md), no coverage figure given. Measured (measure.py, 22 Sept 2026): 26% of transcribed tokens read as sense (314/1203); scrambled-key floor 12%, chance-corrected 16%; 35/35 lines transcribed."
    }
   },
   {
@@ -357,21 +389,21 @@
     "source": "No decipherment on the leaves; none in print found."
    },
    "length": {
-    "tokens": 727,
+    "tokens": 1183,
     "unit": "mixed",
     "measured": true,
-    "file": "f124v_cipher.txt"
+    "file": "brackx2026/f124v_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "Reads in fragments. Measured (measure.py, 22 Sept 2026): 19% of transcribed tokens read as sense (141/727); scrambled-key floor 12%, chance-corrected 8%; 22/22 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 38 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 68% of tokens read as sense. Earlier transcription kept: Reads in fragments. Measured (measure.py, 22 Sept 2026): 19% of transcribed tokens read as sense (141/727); scrambled-key floor 12%, chance-corrected 8%; 22/22 lines transcribed."
    }
   },
   {
    "id": "f110",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "BnF fr. 15572 f. 110 (canvas 116 right)",
    "date": "Mar 1586",
    "year": 1586,
@@ -387,16 +419,16 @@
     "source": "Wholly in cipher, no margin decipherment; Tomokiyo's 'f. 111' opening is probably this leaf (NOTES)."
    },
    "length": {
-    "tokens": 1699,
+    "tokens": 2164,
     "unit": "mixed",
     "measured": true,
-    "file": "f110_cipher.txt"
+    "file": "brackx2026/f110_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images at three and five columns a row",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "poor",
-    "notes": "37 rows of the 54 lines transcribed; 41 distinct labels measured (f110_status.md says 42). Seeded solver moves 23 of 27 labels off the key: the transcription is internally inconsistent. Measured (measure.py, 22 Sept 2026): 10% of transcribed tokens read as sense (167/1699); scrambled-key floor 8%, chance-corrected 1%; 37/54 lines transcribed."
+    "notes": "Re-transcribed by Brackx, 38 of 38 cipher lines (the leaf has 38, not 54). Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 61% of tokens read as sense. Earlier transcription kept: 37 rows of the 54 lines transcribed; 41 distinct labels measured (f110_status.md says 42). Seeded solver moves 23 of 27 labels off the key: the transcription is internally inconsistent. Measured (measure.py, 22 Sept 2026): 10% of transcribed tokens read as sense (167/1699); scrambled-key floor 8%, chance-corrected 1%; 37/54 lines transcribed."
    }
   },
   {
@@ -417,16 +449,16 @@
     "source": "Archivist's summary on the leaf only."
    },
    "length": {
-    "tokens": 696,
+    "tokens": 1164,
     "unit": "mixed",
     "measured": true,
-    "file": "f177_cipher.txt"
+    "file": "brackx2026/f177r_cipher.txt"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Gallica IIIF images",
+    "by": "mixed",
+    "source": "Michael Brackx (issues #73, #77-#79, #83), from full-size deskewed line crops (openapi.bnf.fr), AI-assisted (Claude Code), unchecked by a second person; brackx2026/",
     "image_quality": "fair",
-    "notes": "29 cipher lines on the image (f177_reading.md says 28), 24 transcribed, smaller hand; about a third of the words read (f177_reading.md). Measured (measure.py, 22 Sept 2026): 24% of transcribed tokens read as sense (167/696); scrambled-key floor 14%, chance-corrected 12%; 24/29 lines transcribed."
+    "notes": "Re-transcribed by Brackx, f. 177r 29 lines and f. 177v 11 lines (f177v_cipher.txt; the verso was never transcribed before). Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 60% of tokens read as sense. Earlier transcription kept: 29 cipher lines on the image (f177_reading.md says 28), 24 transcribed, smaller hand; about a third of the words read (f177_reading.md). Measured (measure.py, 22 Sept 2026): 24% of transcribed tokens read as sense (167/696); scrambled-key floor 14%, chance-corrected 12%; 24/29 lines transcribed."
    }
   }
  ],
@@ -500,7 +532,7 @@
   ],
   "sessions": 4,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-21"
+  "last_date": "2026-10-22"
  },
  "solution": [
   {
@@ -729,6 +761,55 @@
    ],
    "what": "Re-measured with measure.py --key key_contrib.json (key.json plus Brackx's letter sets and the copy codes; BOX = u, 44 = Sire and 79 = pour not adopted): 5,480 of 12,994 transcribed tokens read as sense (0.422; 0.389 of ~14,082), up from 4,325 (0.333 / 0.307); scrambled-key control corrected 0.351 / 0.324, up from 0.26 / 0.24. Gains largest on f. 173 (0.28 -> 0.49), f. 201 (0.46 -> 0.62), f. 123v-124v; f. 110 stays at its floor. Part of the gain is the wider letter sets (floors rose 0-2 points).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "Brackx (#73): fr. 15571 f. 177r re-transcribed (29 lines) and f. 177v transcribed for the first time (11 lines), in a label set that separates figures the old transcription merged; per-leaf key_f177.json; 84 = le vicomte de Turenne (matches the archivist's summary on the leaf), 24 = mais, 27 = nostre.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "what": "Brackx (#77): f. 154v, two cipher blocks (10 + 11 lines) never transcribed, decoded and aligned with the contemporary copy f. 157r: 95.7 / 96.4% letter agreement by his count; δ = c vs ∂ = s, θ = m vs ɟ = s, ꝭ = x, ⊔ = q, 51 = pas, 47 = tous/tout.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "beam/DP decoding"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "what": "Brackx (#78): the f. 18/19 crib completed (ff. 18r 22 lines, 18v 34, 20r 17 against the clear f. 19r-v); ff. 123-124 re-transcribed (156 lines); codes 15 = quoy, 73 = oi, 78 = le roy de Navarre, 82 = le gouverneur de Coul., 84 = le viconte de Turenne, 44 a stop or null (not Sire); code groups split in the old files (4 9 = 49, t 8 = 48, 8 t = 84).",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "beam/DP decoding"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "Brackx (#79): f. 110, the leaf recorded as unread, transcribed in full (38 lines; the repo's 54 was a mis-fitted grid) and decoded with the ff. 123-124 key plus H = o/c, w = d/q, + = m/s, long s = p/s, £ = r/f: 78.5% of decoded letters in corpus words by his count (shuffled 35%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "Brackx (#83): ff. 143r-v, 150v, 154r, 173, 196, 201 re-transcribed and f. 150r (32 lines, canvas 157 right) transcribed for the first time; the repo's f150_cipher.txt is the verso; θ = m / ϑ = s, ꝺ̄ = u, ɛ = i; 46 = rien, 61 = beaucoup, 34 = ainsi; copy agreement 87-94% (f. 155r, 155v, 156r, 157r) by his count; misreadings of the copies corrected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "control",
+   "what": "Validated here (brackx_validate.py): his transcriptions and per-leaf keys decoded with this project's beam and 6-gram (not his decoder). Copy agreement f. 154v 0.90/0.94, f. 143r 0.94, f. 143v (covered lines) 0.88, f. 150r 0.84, f. 150v 0.83 (0.91 with his corrected copy), f. 154r 0.90, f. 18r/18v 0.86/0.74 against f. 19; twins ff. 196/201 0.78; set-size-preserving scrambled keys 0.23-0.38 (twins 0.50). Every leaf far above its control; canvases 157 and 116 checked on the image (f. 150r exists, f. 110 has ~38 lines). Target re-measured: 10,303 of 16,677 tokens read as sense (0.618; 0.576 corrected).",
+   "result": "worked",
+   "technique": [
+    "language-model scoring",
+    "crib testing",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -741,12 +822,12 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.389,
+  "fraction_read": 0.618,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py --key key_contrib.json over the Cipher-1 transcription files (rule in its docstring; output measure_key_contrib.json), 21 Oct 2026: 5,480 read of 12,994 transcribed tokens (0.422); denominator ~14,082 with the untranscribed lines of ff. 110, 196, 177 estimated -> 0.389; scrambled-key corrected 0.324. The 22 Sept measure with key.json (measure.json) gave 4,325 (0.307). The leaves with contemporary clear copies (ff. 143r-v, 150, 154r-v) are counted here only as far as the key decodes them; counting their tokens as read from the copies gives about 6,850 of 14,082 (0.49), and f. 154v and f. 149v are not in the denominator.",
+  "fraction_read_source": "brackx_validate.py, 22 Oct 2026: Brackx's complete re-transcription of every Cipher-1 leaf (issues #73, #77-#79, #83) decoded with this project's beam and 6-gram over his per-leaf keys, measure.py's sense rule: 10,303 of 16,677 tokens (0.618), set-size-preserving scrambled-key floor 0.098, corrected 0.576. f. 150r and f. 154v are new in the denominator; f. 110 now 38/38 lines. Before: 5,480 of ~14,082 (0.389, key_contrib.json, 21 Oct); 4,325 (0.307, key.json, 22 Sept). The f. 18-20 crib leaves are not target documents and are not counted.",
   "codes_open": {
-   "open": 12,
-   "total": 42
+   "open": 11,
+   "total": 50
   },
   "grades": "unknown",
   "verification": [
@@ -757,43 +838,28 @@
   ],
   "gaps": [
    {
-    "item": "fr. 15572 f. 110 (54 lines; 37 transcribed, 1,699 figures; ~0% read)",
-    "blocker": "not-attempted",
-    "detail": "Same key (beats scrambled keys by +2.07/figure); the transcription is internally inconsistent. An exemplar set cut from this leaf and labelled against keyed figures has not been built; that is workable desk work, not an outside blocker."
-   },
-   {
-    "item": "fr. 15572 ff. 123r, 123v, 124r, 124v (4,278 figures; 21%/32%/26%/19% read)",
-    "blocker": "not-attempted",
-    "detail": "Key known and verified on these leaves; f. 123r was the first page transcribed in this hand. Re-transcription against the key143 visual key not done."
-   },
-   {
-    "item": "fr. 15572 f. 196: 5 of 31 lines untranscribed; 55% of the transcribed tokens unread",
-    "blocker": "not-attempted",
-    "detail": "The part-line after 'auquel', the first three full lines and the 13th line were never transcribed; f. 201 carries the same despatch as a crib."
-   },
-   {
-    "item": "fr. 15571 f. 177: 5 of 29 lines untranscribed; 76% of the transcribed tokens unread",
-    "blocker": "not-attempted",
-    "detail": "Smaller hand, noisier transcription; re-transcription not done."
-   },
-   {
-    "item": "Unread share of ff. 173, 196, 201 (after Brackx: 51%, 46%, 38% of transcribed tokens unread)",
-    "blocker": "not-attempted",
-    "detail": "Single-figure slips on confusable shapes; Brackx re-read f. 201 and parts of ff. 143v, 173 on the image; a figure-by-figure second pass of ff. 173 and 196 is still workable."
-   },
-   {
-    "item": "fr. 15572 f. 154v and f. 149v cipher (covered by the clear copies ff. 157 and 155v-156)",
-    "blocker": "not-attempted",
-    "detail": "Never transcribed figure by figure; the text is known from the copies, so this is only a check of the key."
-   },
-   {
-    "item": "Code groups still unvalued: 15, 19, 23, 27, 44, 46, 79 and the name codes 82, 84, 98",
+    "item": "unread share of every leaf (29-53% of tokens outside sense runs)",
     "blocker": "open-codes",
-    "detail": "44 = Sire was proposed and withdrawn (it stands mid-sentence on f. 173); 79 = pour rests on one context; the clear copies do not contain them."
+    "detail": "Brackx's transcriptions reach 83-94% letter agreement where copies exist; the residue is spelling the corpus does not know, single-figure slips and open codes; a merged key and a second reading of the labels are workable"
+   },
+   {
+    "item": "code groups 16, 19, 23, 45, 59, 64, 101, 102, 103, me, 98",
+    "blocker": "open-codes",
+    "detail": "one to three contexts each, none in a clear copy; 64 = un and me = mesme proposed, not adopted"
+   },
+   {
+    "item": "copy of f. 20r (rest of f. 19v)",
+    "blocker": "open-codes",
+    "detail": "read by Brackx, not given in #78; his 86.7% unchecked here"
+   },
+   {
+    "item": "per-leaf keys not merged into one Cipher-1 key",
+    "blocker": "open-codes",
+    "detail": "θ (m or m/s) and the e/ɛ split differ between hands"
    }
   ],
-  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress.",
-  "fraction_coherent": 0.324,
+  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress. 22 Oct 2026: Brackx's issues #73, #77, #78, #79, #83 folded in (complete re-transcription, per-leaf keys, codes 15, 34, 46, 51, 61, 73, 78, 82, 84), validated with this project's decoder against the clear copies and a control (brackx_validate.json). Still in progress: read bar not met, codes open, keys not merged.",
+  "fraction_coherent": 0.576,
   "provenance": "mixed",
   "credits": [
    {
@@ -830,22 +896,62 @@
     "date": "2026-10-21",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/70",
     "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "transcription",
+    "note": "fr. 15571 f. 177r-v re-transcribed (f. 177v new) and decoded; 84 = le vicomte de Turenne, 24 = mais, 27 = nostre",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/73",
+    "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "verification",
+    "note": "f. 154v transcribed for the first time and tested against the clear copy f. 157r; figure splits δ/∂, θ/ɟ, ꝭ = x",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/77",
+    "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "transcription",
+    "note": "f. 18/19 crib completed (ff. 18r-v, 20r); ff. 123-124 re-transcribed; codes 15, 73, 78, 82, 84; 44 not Sire",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/78",
+    "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "solution",
+    "note": "f. 110 transcribed in full (38 lines) and decoded for the first time",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/79",
+    "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "transcription",
+    "note": "ff. 143, 150r (new), 150v, 154r, 173, 196, 201 re-transcribed; codes 46 = rien, 61 = beaucoup; copy readings corrected",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/83",
+    "published": true
    }
   ],
   "parts": [
    {
-    "label": "Cipher-1 despatches deciphered with the key (ff. 110, 123-124, 173, 196, 201, fr. 15571 f. 177)",
-    "records": "BnF fr. 15572 ff. 110, 123-124, 173, 196, 201; fr. 15571 f. 177",
+    "label": "Cipher-1 despatches deciphered with the key (ff. 110, 123-124, 150r, 173, 196, 201, fr. 15571 f. 177r-v)",
+    "records": "BnF fr. 15572 ff. 110, 123-124, 150r, 173, 196, 201; fr. 15571 f. 177r-v",
     "method": "read with known key",
     "extent": "partial",
-    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs and extended by Brackx's corrections and the copy codes; 0.389 of tokens read as sense (measure.py, key_contrib.json)"
+    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs, extended by Brackx's corrections and per-leaf keys (issues #64-#83); 0.618 of the target's tokens read as sense on his re-transcription (brackx_validate.py, 22 Oct 2026)"
    },
    {
     "label": "ff. 143r-v, 149v-150, 154r-v (clear copies ff. 155-157)",
     "records": "BnF fr. 15572 ff. 143, 149v-150, 154",
     "method": "read from existing decipherment",
     "extent": "complete",
-    "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them"
+    "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them; what the notes called the 'f. 149v' cipher is f. 150r, a full page (#83); Brackx's decodes of ff. 143r-v, 150r-v and 154r-v agree with the copies on 83-94% of letters (brackx_validate.json)"
    }
   ]
  }
