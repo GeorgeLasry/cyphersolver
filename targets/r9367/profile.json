@@ -129,6 +129,12 @@
    "kind": "verification",
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment. Words of the decoded runs counted with measure.py.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): r9367/transcription.txt + signs.txt, the rough reading r9367/reading.txt (unread signs marked); key copied from NOTES.md and the reading header to texts/key.md, with r9367/key_match.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -170,6 +176,22 @@
     "role": "key or decipherment used",
     "note": "key register R9423, block 2_4, in the same volume"
    }
+  ],
+  "texts": [
+   {
+    "doc": "R9367",
+    "label": "KAA 4591 f. 169, 22 March 1535",
+    "transcription": [
+     "r9367/transcription.txt",
+     "r9367/signs.txt"
+    ],
+    "decryption": "r9367/reading.txt",
+    "summary": "A son to his father, Monday after Palm Sunday 1535, in German with cipher passages: he was questioned about strange matters and denied everything, is taken for a poor writer and sent to learn, fears for his person, and reports the Turks coming up; a postscript names a Friedrich and 'Schmalcz' (Schmalkalden?). The cipher runs are read in part with key block 2_4 of the register R9423 (# and O open)."
+   }
+  ],
+  "key_file": [
+   "texts/key.md",
+   "r9367/key_match.md"
   ]
  }
 }

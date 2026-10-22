@@ -179,7 +179,8 @@
    "result": "worked",
    "date": "2026-10-01"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 12 tokens, 8 types, en-modern order 4: reading -2.386 per letter; Verdict: too short.", "result": "partial"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 12 tokens, 8 types, en-modern order 4: reading -2.386 per letter; Verdict: too short.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt / cipher_tokens.txt (the cipher items in context) and reading.txt (the letter with the readings and the unread items marked)", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 12, "types": 8, "tokens_per_type": 1.5, "score": -2.386, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.386; polyphony 0.0; 14 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -223,6 +224,18 @@
   ],
   "credits": [
     {"who": "wright", "role": "pointer", "note": "pointed to the Folger 'Elizabethan Court Day by Day, 1573' summary of this letter (after Read 1960), which identified the cover-names (Davison = Maisonfleur, Hall = the Queen, Glasgow and [9] = Alençon, La Mole)", "date": "2026-10-01", "source": "email, 1 Oct 2026", "published": false}
+  ],
+  "texts": [
+   {
+    "doc": "f419",
+    "label": "Harley MS 260 f. 419r-v, 29 Jan 1573",
+    "transcription": [
+     "transcription.txt",
+     "cipher_tokens.txt"
+    ],
+    "decryption": "reading.txt",
+    "summary": "Walsingham's letter-book copy of Burghley's letter of 29 Jan 1573 to Walsingham, ambassador in France, about Alençon's agents (Maisonfleur as 'Davison', La Mole as 'the laste gentleman') and the ship sent to (St) Valery. The six-sign place name is read as VALERY; the boxed [9] as Alençon from the Folger/Conyers Read summary (via Adam Wright); the nine-sign run and the name codes 3, tt and II stay unread."
+   }
   ]
  }
 }

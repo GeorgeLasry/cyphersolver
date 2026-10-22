@@ -132,7 +132,8 @@
       "what": "All five lines read. VOM and OFFEN complete prior work; GEFAE remains literal, with Gefaess explicitly conjectural. 78/79 coherent without emendation.",
       "result": "worked"
     },
-    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 79 tokens, 19 types, de-1640s order 4: reading -2.144 per letter; Verdict: too short.", "result": "partial"}
+    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 79 tokens, 19 types, de-1640s order 4: reading -2.144 per letter; Verdict: too short.", "result": "partial"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt, literal.txt and READING.md (reading with the GEFAE emendation marked), key key.json / key-decode.txt", "result": "worked"}
    ],
   "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 79, "types": 19, "tokens_per_type": 4.16, "score": -2.144, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.144; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
     "method": "key recovered based on plaintext from external sources",
@@ -157,6 +158,22 @@
     "notes": "Internal substitution consistency and German syntax; no independent plaintext or archive key. Rous partial reading used before attack. All occurring signs read; literal GEFAE preserved, Gefaess conjectural. Alchemical interpretation and annotation date/author remain unknown.",
     "credits": [
       {"who": "rous", "role": "prior solution", "note": "identified the monoalphabetic substitution and gave a partial decipherment, used here as the crib; published in Korn 2023 n. 41", "date": "2023", "source": "U. M. Korn, 'Bilderfahrzeug' of the Rosicrucians, Between Manuscript and Print (2023), p. 178 n. 41, https://doi.org/10.1515/9783111242699-007"}
+    ],
+    "texts": [
+      {
+        "doc": "flyleaf",
+        "label": "SCH R 201, cipher flyleaf",
+        "transcription": "transcription.txt",
+        "decryption": [
+          "literal.txt",
+          "READING.md"
+        ],
+        "summary": "Five lines of German alchemical note on the inside front board of Mögling's Speculum sophicum rhodo-stauroticum (catalogued 1618): 'Prima materia ist die Galle vom Widder. Das Gefä[ß] ist eine halbrunde Kugel. Der Ofen ist die Waage.' Unsigned and undated; Anne-Simone Rous's partial decipherment (Korn 2023) was the crib."
+      }
+    ],
+    "key_file": [
+      "key.json",
+      "key-decode.txt"
     ]
   }
 }
