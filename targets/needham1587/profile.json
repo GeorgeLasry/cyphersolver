@@ -141,7 +141,8 @@
    "what": "Content matches the calendared same-day despatch (bridge across the haven of Sluys, fireship).",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 211 tokens, 21 types, en-1640s order 4: reading -2.487 per letter; random keys -6.534 (z 5.9); key annealed onto shuffled ciphertext best -3.583 (mean -3.723, z 11.0); annealer on the real text -3.272. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 211 tokens, 21 types, en-1640s order 4: reading -2.487 per letter; random keys -6.534 (z 5.9); key annealed onto shuffled ciphertext best -3.583 (mean -3.723, z 11.0); annealer on the real text -3.272. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign transcription cipher.txt; decode.py output saved as texts/f39v_decryption.md and the NOTES reading of f. 39v copied to texts/f39v_reading.md; key table copied to texts/key.md", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-1640s", "file": "validation.tsv", "tokens": 211, "types": 21, "tokens_per_type": 10.05, "score": -2.487, "nulls": {"random keys": {"n": 200, "mean": -6.534, "sd": 0.686, "max": -4.441, "z": 5.9, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.723, "sd": 0.112, "max": -3.583, "z": 11.0, "p": 0.1429}}, "power": -3.272, "verdict": "pass", "notes": "claimed per-occurrence score -2.487; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -3.272"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -166,6 +167,19 @@
   "notes": "Every cipher run of f. 39v read; the f. 39r/40r runs were glossed at the time. fraction_read = decoded signs / all signs of the six unglossed runs in cipher.txt (182/186); glossed words excluded.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear glosses and margin note on ff. 39r-40r"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "f39",
+    "label": "Needham to Walsingham, 28 July 1587, f. 39v cipher runs",
+    "transcription": "cipher.txt",
+    "decryption": [
+     "texts/f39v_decryption.md",
+     "texts/f39v_reading.md"
+    ],
+    "summary": "Francis Needham, Walsingham's servant with Leicester at the relief of Sluys, reports that they had no intelligence out of the enemy's camp or the town for five days, did not know whether there was any bridge or anything at the channel, and that the channel was closed with hoys and flyboats fastened with chains and strengthened behind with flat boats. The f. 39r and f. 40r cipher words were glossed at the time; the clear text of the letter is not transcribed here."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }
