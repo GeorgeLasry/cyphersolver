@@ -393,6 +393,12 @@
    "kind": "literature search",
    "what": "Surveyed every view of 500 Colbert 393 (198 views), 500 Colbert 396 (135), BnF fr. 3180 (120) and fr. 3182 (144) on Gallica by 12-view contact sheets, candidates opened: no cipher in the Rennes key or any other, no gloss, decipherment or key sheet (sister_volumes.md). The whole Bochetel series (Colbert 390-396) and fr. 3180-3182 are now negative; no crib, measurement unchanged at 0.79.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): token transcriptions per letter, the word-by-word aligned/ readings (unread {n}, probable ~) and the reading notes; key key.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -439,6 +445,53 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstruction of the Bishop of Rennes' cipher (cryptiana henryiii.htm), calibrated per hand", "source": "cryptiana henryiii.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "glosses on sibling letters (fr. 3181 ff. 57-58, Colbert 390) used to fix each hand's sign values"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "fr3181-f55",
+    "label": "BnF fr. 3181 f. 55, Catherine de Médicis, 31 July 1563",
+    "transcription": "f55_v2.txt",
+    "decryption": [
+     "aligned/f55.txt",
+     "f55_v2_reading.md"
+    ],
+    "summary": "The thirteen ciphered lines of Catherine de Médicis's letter to the bishop of Rennes, ambassador to the Emperor, that La Ferrière printed as 'Partie chiffrée': the Council of Trent and the Habsburg marriage ('avancer le concile', 'pour le bien de la Chrestienté', the December sessions)."
+   },
+   {
+    "doc": "c390-p357",
+    "label": "500 Colbert 390 pp. 357-358, late summer 1564",
+    "transcription": [
+     "c390_p357.txt",
+     "c390_p358.txt"
+    ],
+    "decryption": [
+     "aligned/p357.txt",
+     "aligned/p358.txt",
+     "c390_p357_reading.md"
+    ],
+    "summary": "The precedence dispute at the imperial court after Ferdinand I's death (1564): another pretext must be found than the one in the sieur Charon's despatch, and a secretary or one of Rennes's people be left there under colour of private business."
+   },
+   {
+    "doc": "c390-p139",
+    "label": "500 Colbert 390 p. 139, 'Deschiffrez vous mesmes', 1562-63",
+    "transcription": "c390_p139_v4.txt",
+    "decryption": [
+     "aligned/p139.txt",
+     "c390_p139_v3_reading.md"
+    ],
+    "summary": "A secret note from Catherine: decipher it yourself, trust no clerk, burn it; she holds Rennes a loyal servant of the King her son and asks him to keep his eyes open to observe 'mon cousin' and his actions. The least-read of the four (about 70% strict sense)."
+   },
+   {
+    "doc": "c392-p231",
+    "label": "500 Colbert 392 p. 231, Bourdin, Dec 1562",
+    "transcription": "c392_p231n.txt",
+    "decryption": [
+     "aligned/c392.txt",
+     "c392_p231_reading.md"
+    ],
+    "summary": "Bourdin encloses Catherine's letter of 15 Dec 1562 on the secret marriage overture; its leak to Spain ('sçavoit incontinant en Espaigne'), the triumph over 'la premiere ouverture ... de ce mariage', closing on friendship and alliance for the repose of Christendom."
+   }
+  ],
+  "key_file": "key.md"
  }
 }

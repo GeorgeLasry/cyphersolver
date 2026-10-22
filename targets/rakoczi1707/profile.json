@@ -150,6 +150,12 @@
       "kind": "control",
       "what": "Measured with measure_tr.py over all three transcription files, fillers excluded, line-initial 121/129 counted unread: 982/1017 = 96.6% read as sense; p. 277 l. 13-14 (10 groups) and ~25 scattered groups stay unread.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): tr/ image transcriptions of pp. 277-278 and the readings R902_reading.md / R902_p278_reading.md",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -190,6 +196,22 @@
     "notes": "Whole letter retranscribed from the images (30 Sept, 5 Oct 2026) and read: R902_reading.md. 12 grade-C context corrections plus 89 = Et. Earlier 0.92 was a has-a-value count over DECODE digits.",
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "Bonac-Groffey key sheet, DECODE R639 (G15 Caps. C Fasc. 44/08), matched by scoring the NAH G15 keys"}
+    ],
+    "texts": [
+      {
+        "doc": "R902",
+        "label": "R902, Słupca, 15 Oct 1707",
+        "transcription": [
+          "tr/R902_p277.txt",
+          "tr/R902_p278_l01-09.txt",
+          "tr/R902_p278_l10-18.txt"
+        ],
+        "decryption": [
+          "R902_reading.md",
+          "R902_p278_reading.md"
+        ],
+        "summary": "An intelligence and lobbying report to Rákóczi (addressed in clear to 'Pompeio Cesoni'), very probably from his agent Philippe Groffey: how the affair of the Swedes with the Emperor was settled, the Swedes waiting near Poznań for recruits from Stettin, and the damage done at the Swedish court by Pál Ráday's letters to Rehnskiöld. Deciphered with the preserved Bonac-Groffey key R639; unread groups in [ ]."
+      }
     ]
   }
 }

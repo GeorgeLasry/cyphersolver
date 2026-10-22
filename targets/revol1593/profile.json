@@ -306,6 +306,12 @@
    "kind": "verification",
    "what": "Split from nevers1593 under the one-key rule (Lasry, 14 Oct 2026): key no. 60 and the Revol letters are their own entry; fr. 3986 no. 68 (7 Oct), listed as not located in the first session, identified as f. 146v from Tomokiyo's list.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 88 (issue #32 transcription), f. 146v and f. 157v transcriptions with decode60.py output saved to texts/ (decoder output, not readings); ff. 115, 176, 198 were never transcribed",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -385,6 +391,29 @@
     "note": "issue #32: transcription of fr. 3985 f. 88r-v (116 units of f. 88v)",
     "date": "2026-10-12",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/32"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f88",
+    "label": "BnF fr. 3985 f. 88r-v, 21 Aug 1593",
+    "transcription": "f88/ct_3985_f88.txt",
+    "decryption": "texts/f88_decode60.txt",
+    "summary": "Nevers to Louis de Revol, secretary of state, on the papal absolution of Henri IV; the transcription is Robert Węglarek's (tunarob, issue #32). Only 'de absolution' (shuffle-controlled), 'le Roy' and 'qu'il' read; the decoder output with key no. 60 is given as it stands, not as a reading."
+   },
+   {
+    "doc": "f146v",
+    "label": "BnF fr. 3986 f. 146v, 7 Oct 1593",
+    "transcription": "ct_3986_f146v.txt",
+    "decryption": "texts/f146v_decode60.txt",
+    "summary": "Nevers to Revol, 7 Oct 1593. Tomokiyo's anchors (l'absolution, à la vérité, intérêt) come out of key no. 60, but the text between them does not yet read; decoder output only."
+   },
+   {
+    "doc": "f157v",
+    "label": "BnF fr. 3986 f. 157v, Coire, 9 Oct 1593",
+    "transcription": "ct_3986_f157v.txt",
+    "decryption": "texts/f157v_decode60.txt",
+    "summary": "Nevers to Revol from Coire, 9 Oct 1593: about 90 symbols in the first lines of f. 157v; no anchor secured, and the transcription over-reads faded clear cursive as cipher (NOTES). Decoder output only."
    }
   ]
  }
