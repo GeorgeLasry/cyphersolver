@@ -207,6 +207,12 @@
    ],
    "what": "Re-measured with the matignon1586c3 rule (f276/scripts/measure.py, fr-1600-letters, 20 shuffled keys) after to_read.py: f. 385r 851/1,054, 385v 851/998; f. 218r 611/713, 218v 790/926, 219r 454/499; f. 120r 814/885, 120v 188/218; per document with pages joined 1,856 + 1,002 + 1,702 = 4,560 of 5,293 tokens (86.1%); shuffled medians 9.5-15.9%, max 36%. The measure counts sense, not correctness: on known text the transcriptions were 75-93% right.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contributors' own files linked: Harumi-Matsuba's sign transcriptions, mechanical decodes and READING.en.md for ff. 218-219 and f. 120; Brett Burford's signs.txt, plaintext-by-line, French and English text for f. 385; their keys as key_file.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -319,6 +325,58 @@
     "role": "key or decipherment used",
     "note": "decipherments of the time on fr. 15573 ff. 103v-104r, 7v-8r, 32r-33r, 97r and 149r-150r, used by Burford to check and extend the key"
    }
+  ],
+  "texts": [
+   {
+    "doc": "f218-219",
+    "label": "fr. 15572 ff. 218r-219r, Matignon to Henri III, camp before Monségur, May 1586 (Harumi-Matsuba)",
+    "transcription": [
+     "f218_219_harumi/transcription_f218r.txt",
+     "f218_219_harumi/transcription_f218v.txt",
+     "f218_219_harumi/transcription_f219r.txt"
+    ],
+    "decryption": [
+     "f218_219_harumi/READING.en.md",
+     "f218_219_harumi/decoded_f218r.txt",
+     "f218_219_harumi/decoded_f218v.txt",
+     "f218_219_harumi/decoded_f219r.txt"
+    ],
+    "summary": "Matignon reports the battery before Monségur: about twelve hundred shots with less effect than hoped, three breaches, Sacramore de Birague badly wounded trying for the lodgement. The army is in need, the forces shrink daily and the pay is what matters most; Mayenne has a fever, but the physicians see no danger."
+   },
+   {
+    "doc": "fr15573-f120",
+    "label": "fr. 15573 f. 120r-v, autumn 1586, sender and recipient unknown (Harumi-Matsuba)",
+    "transcription": [
+     "f120_harumi/transcription_f120r.txt",
+     "f120_harumi/transcription_f120v.txt"
+    ],
+    "decryption": [
+     "f120_harumi/READING.en.md",
+     "f120_harumi/decoded_f120r.txt",
+     "f120_harumi/decoded_f120v.txt"
+    ],
+    "summary": "\"This prince\" is more vexed than ever; the treasurer Bilart wrote that thirty thousand écus in gold have been ready for ten days, the Cardinal of Guise writes that five thousand are coming, but not even a hundred and five thousand would set the army right. Biron cannot be kept; deputies of the army have come; papers of the secretary La Marsilière have fallen into \"our\" hands."
+   },
+   {
+    "doc": "fr15573-f385",
+    "label": "fr. 15573 f. 385r-v, from Mayenne's side, autumn 1586 (Brett Burford, v0.2)",
+    "transcription": [
+     "f385_burford/f385r/signs.txt",
+     "f385_burford/f385v/signs.txt"
+    ],
+    "decryption": [
+     "f385_burford/f385-french.md",
+     "f385_burford/f385r/plaintext-by-line.txt",
+     "f385_burford/f385v/plaintext-by-line.txt"
+    ],
+    "translation": "f385_burford/f385-english.md",
+    "summary": "The army in Guyenne is breaking up at the start of winter 1586: not a thousand foot left, men asking for leave, no powder. The letter asks what to do with the regiments and the foreigners over the winter, and names the landsknechts from Champagne, a company of light horse, Monsieur d'Halincourt, Monsieur de Matignon and La Roche."
+   }
+  ],
+  "key_file": [
+   "f385_burford/key-cipher2.json",
+   "f218_219_harumi/key.tsv",
+   "f120_harumi/key.tsv"
   ]
  }
 }

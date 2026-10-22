@@ -119,6 +119,13 @@
    "what": "Third pass on the two words left without sense: l. 12 OCVPEES 'oc[c]upees'; l. 15 a sign misread as E is M row 2 (as in 'en ma-'), giving 'des armes'. Coverage counted: 1,339/1,341 tokens.",
    "result": "worked"
   }
+,
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 41v letter stream and line-by-line sign transcriptions linked, running decryption copied from NOTES.md to texts/f41v_decryption.md, key adjustments copied to texts/key.md; f. 41r points to Lasry's overlays on cryptiana GL.htm (his f. 41r text is not in the repository).",
+   "result": "partial"
+  }
  ],
  "outcome": {
   "method": "read with known key",
@@ -156,6 +163,23 @@
   ],
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "BnF fr. 3081 key (24 May 2022) and f. 41r overlays on cryptiana GL.htm; f. 41r read by him, f. 41v read here with his key", "date": "2022-05-24", "source": "cryptiana GL.htm, francis.htm"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R2322",
+    "label": "f. 41r (George Lasry, 24 May 2022)",
+    "transcription": "https://cryptiana.web.fc2.com/code/GL.htm",
+    "decryption": "https://cryptiana.web.fc2.com/code/GL.htm",
+    "summary": "The heading of the articles: 'Articles iurés par monsieur le cardinal Campege es mains de messeigneurs les cardinaulx de Bourbon, Lorraine et Tornon'. Lasry's decipherment is given as red overlays on the page crops on Tomokiyo's cryptiana; no text copy is in this repository."
+   },
+   {
+    "doc": "R2322",
+    "label": "f. 41v",
+    "transcription": ["f41v_letters.txt", "f41v_lines01-19.md", "f41v_lines20-38.md"],
+    "decryption": "texts/f41v_decryption.md",
+    "summary": "Francis I refuses to join a crusade against the Turk until Milan, Asti and Genoa are restored to him; Cardinal Campeggio swears that, if elected pope, he will press the Emperor and the holders of Milan to return them. Tournon became a cardinal in 1530 and Campeggio died in 1539, so these are articles for the conclave of October 1534; the page breaks off mid-sentence."
+   }
+  ],
+  "key_file": ["texts/key.md", "https://cryptiana.web.fc2.com/code/GL.htm"]
  }
 }
