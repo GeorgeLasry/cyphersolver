@@ -23,6 +23,31 @@ attached to the issue.
 He also pointed out that the page said "Extent: complete" against 9 of 11 cipher pages deciphered; the profile class
 was corrected to read in part on 21 Oct 2026.
 
+## Lasry's answer to the proposed corrections (22 Oct 2026)
+
+George Lasry checked each proposal against his final transcription and key (10 Oct 2026) and against the Gallica
+images of f9r and f17r. No change to his transcription or key follows. His token streams for the four pages are in
+`lasry_tokens_f9_f15_f17_f18.tsv` (code, value, confidence, as in his working files).
+
+- Already in his transcription: f9r 1193 = sion, f18r 1265 = ti, f15r 1155 = sans, f17r 889 = ons and 355 = der.
+  The values these were to replace (1143, 1268, 1115, 839, 353) are not in his transcription or his key.
+- f9r *expr-es-sion* is 501 **459** 1193, not 419. The middle digit is the scribe's long ʃ-shaped 5, as in 515,
+  54 and 598 on the same page. 459 = es also sits in the alphabetical run 453 er, 457 er, 459 es, 462 esp; 419
+  would fall before 425 em.
+- f9r *en sortant avec le roi* is 432 **1210** 85 126 708 1132; 1210 = sort is in his key. The image shows 1210
+  twice, in the struck-out first line and in the clean line. Not 1200.
+- f17r line 2 begins **151**, not 751: the first stroke is the hooked 1 of 1232 on the line, not the barred 7 of
+  753 and 708. His key has 151 = bataille (between 142 bai and 160 bien), so the passage reads *nous espérons une
+  bataille sur Chiese*. That keeps 1325 = une, as Krajčovič suggested, and removes the anomaly of *une main*.
+- f17r ends 237 **868** (*Min-ci-o*), not 808 (808 = mon in his key).
+- Other differences in the token streams: f9r line 4 (ink blot) has 751? 717? 515 in his reading against ?51 773
+  518; f15r, in the unread tail, 925 and 656 against 935 and 616 (not re-checked against the image); the header
+  numbers 753 (f15r) and 1098 (f17r) are outside his cipher streams; 329 is his marked code 329z.
+- He agrees that f21r-v uses a different nomenclator.
+- Checked here (22 Oct 2026) against his TSV: 1193, 1265, 1155, 889, 355, 459 = es, 1210 = sort, 151 = bataille and
+  868 = o all occur on the folios he names; 1143, 1268, 1115, 839, 353, 419, 1200, 751 and 808 do not. The images
+  were not re-checked here.
+
 ## His metadata
 
 - Report status: 15/15 pages transcribed; 9/11 cipher pages deciphered; 2 more in part

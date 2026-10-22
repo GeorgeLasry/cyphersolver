@@ -3194,6 +3194,134 @@
    "known": "The Ferdinand III-Leopold Wilhelm cipher was deciphered by Ernst (2018); Tomokiyo says these sheets use different ciphers. All nine R1579 files retrieved 20 Oct 2026; nothing deciphered.",
    "open": "I7060 (code sheet), I7066 and I7068 (symbol ciphers): not transcribed or deciphered; no key.",
    "as_of": "2026-10-21"
+  },
+  {
+   "counted": true,
+   "ark": "",
+   "seen": "catalogue",
+   "scored": "reviewed",
+   "prior_art": "open (checked 22 Oct 2026)",
+   "contributed_by": "brackx",
+   "as_of": "2026-10-22",
+   "id": 362,
+   "year": 1594,
+   "date": "28 Feb 1594 (seizure)",
+   "title": "Dispatches seized from Hugues Delaval at Châlons, with their nomenclator for \"Monsieur le Bailly Nérole\" (Archives municipales de Châlons-en-Champagne FF 52)",
+   "correspondents": "unknown (League side?) → \"Monsieur\"; key addressed to Monsieur le Bailly Nérole",
+   "place": "Châlons-en-Champagne (seized); brought from Melun",
+   "language": "French",
+   "region": "France",
+   "period": "1589-1598",
+   "shelfmark": "Archives municipales de Châlons-en-Champagne, FF 52 (liasse, 74 pièces, 1587–1594), last item",
+   "folio_note": "No piece number in Pélicier's inventory (1903) pp. 252–253: 'ci-joint la clef des dépêches chiffrées apportées par ledit Delaval'. Letter part clear, part cipher; key: vertical alphabet with homophones, word codes, at least 23 nulls.",
+   "cls": "A",
+   "source": "GitHub issue #80 (Michael Brackx)",
+   "status": "Reported by Michael Brackx (issue #80, 22 Oct 2026). Daniel Tant, 'La lettre chiffrée de Châlons en Champagne' (ARCSI PDF, Jan. 2014; checked here 22 Oct 2026), says the letter 'n'a jusqu'à présent jamais été décodée' despite the surviving nomenclator; with the key he reads scattered words (le roy d'Espagne, Monsieur du Mayne, Troyes est mal assure, Mr de Guise) and asks whether there is a second layer. Not on DECODE or Cryptoole; no images online.",
+   "why": "A League-period letter seized with its own key: correctly transcribed, the key should read it, and the content (Mayenne, Guise, Nevers, the King of Spain, Troyes) falls in the last months of the League in Champagne.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 2,
+   "verify": "Request photographs of the letter and the key from the Archives municipales de Châlons-en-Champagne (or the Reims copies Tant used); transcribe the key's look-alike signs and nulls and apply it.",
+   "links": [
+    {
+     "label": "Tant, ARCSI 2014 (PDF)",
+     "href": "https://www.arcsi.fr/doc/Tant/Chalons.pdf"
+    },
+    {
+     "label": "Pélicier 1903, p. 252",
+     "href": "https://books.google.be/books?id=zrnvEiJrP-QC&pg=PA252"
+    },
+    {
+     "label": "Issue #80",
+     "href": "https://github.com/dbourdeau/cyphersolver/issues/80"
+    }
+   ],
+   "known": "Tant 2014 applied the key and read only scattered words; the clear part was transcribed by Carine Manigot (Archives de Reims).",
+   "open": "The whole ciphered part; images of the letter and the key are not online (needs a request to Châlons)."
+  },
+  {
+   "counted": true,
+   "ark": "",
+   "seen": "catalogue",
+   "scored": "reviewed",
+   "prior_art": "open (checked 22 Oct 2026)",
+   "contributed_by": "brackx",
+   "as_of": "2026-10-22",
+   "id": 363,
+   "year": 1635,
+   "date": "1635 (Arsenal letter 13 Apr 1635)",
+   "title": "Méliand's ciphered lines to Bouthillier (Arsenal 4540 f. 167) and the 1635 keys in Bellièvre's Italian embassy papers (BnF fr. 15913 ff. 1 ff.)",
+   "correspondents": "Blaise Méliand (Soleure) → Claude Bouthillier; Méliand and others → Pomponne II de Bellièvre",
+   "place": "Soleure; Italy",
+   "language": "French",
+   "region": "France",
+   "period": "1611-1650",
+   "shelfmark": "Bibliothèque de l'Arsenal, Ms 4540 f. 167 (copy); BnF Français 15913 f. 1 ff. (keys), ff. 24, 86 etc. (Méliand)",
+   "folio_note": "Rott, Inventaire sommaire (1610–1648 volume) p. 173: '1635. Chiffre employé dans la correspondance échangée entre Mr Méliand et la Cour. B. N. f. fr. 15913, fo. 1.'; p. 177: '13 Avril, Soleure. Méliand à Bouthillier. Arsenal 4540. fo. 167 cop. [Quelques lignes chiffrées.]' (both checked here in the archive.org text, 22 Oct 2026).",
+   "cls": "A",
+   "source": "GitHub issue #81 (Michael Brackx)",
+   "status": "Reported by Michael Brackx (issue #81, 22 Oct 2026). Rott lists the Arsenal letter without 'déchiffré' and the Méliand–Court key in fr. 15913; Omont (1898) calls ff. 1 ff. Bellièvre's keys. Not on DECODE or Cryptoole; fr. 15913 and Arsenal 4540 not found on Gallica by the reporter (Gallica's bot check blocked a further look here on 22 Oct 2026).",
+   "why": "A ciphered passage from the French embassy in Switzerland during Rohan's Valtellina campaign, with the key apparently surviving in a BnF volume of the same year.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 2,
+   "verify": "Check Gallica and Biblissima for fr. 15913–15916 and Arsenal 4540; otherwise request photographs of fr. 15913 ff. 1 ff., 24, 86 and Arsenal 4540 f. 167, and test each key in fr. 15913 on the Arsenal lines.",
+   "links": [
+    {
+     "label": "Rott (archive.org)",
+     "href": "https://archive.org/details/inventairesomma00rottgoog"
+    },
+    {
+     "label": "Issue #81",
+     "href": "https://github.com/dbourdeau/cyphersolver/issues/81"
+    }
+   ],
+   "known": "No decipherment known; the keys may be in fr. 15913 f. 1 ff.",
+   "open": "Arsenal 4540 f. 167 and any ciphered Méliand letters in fr. 15913; images not online."
+  },
+  {
+   "counted": true,
+   "ark": "",
+   "seen": "catalogue",
+   "scored": "reviewed",
+   "prior_art": "open (checked 22 Oct 2026)",
+   "contributed_by": "brackx",
+   "as_of": "2026-10-22",
+   "id": 364,
+   "year": 1584,
+   "date": "22 Apr 1584; 8 Dec 1585",
+   "title": "Henri Clausse de Fleury to Villeroy, Soleure: ciphers marked 'non déchiffré' by Rott (BnF fr. 16026 f. 99 and pp. 130, 130bis)",
+   "correspondents": "Henri Clausse, sieur de Fleury (ambassador to the Swiss) → Nicolas de Neufville de Villeroy",
+   "place": "Soleure",
+   "language": "French",
+   "region": "France",
+   "period": "1560-1589",
+   "shelfmark": "BnF Français 16026 f. 99, pp. 130 and 130bis; sibling Cinq cents de Colbert 427 f. 325 (Gallica btv1b10033949q, view 344)",
+   "folio_note": "Deciphered at the time: Colbert 427 f. 325 (to Henri III, Fribourg, 23 Apr 1585; marginal decipherment), fr. 16026 f. 120, f. 126, p. 129. Michael Brackx's provisional transcription of f. 325 (issue #82 comment): about 244 signs, figures and invented symbols; a 17-sign glossed group on f. 325v gives a tentative homophonic partial key; a sliding test of that key on the main block was no better than chance.",
+   "cls": "A",
+   "source": "GitHub issue #82 (Michael Brackx)",
+   "status": "Reported by Michael Brackx (issue #82, 22 Oct 2026), from Rott, Inventaire sommaire I (1882) pp. 193–197. Rott marks only f. 99 and part of pp. 130–130bis 'non déchiffré'. Fr. 16026 is not digitised (Biblissima: numérisation indisponible); Colbert 427 is on Gallica. Rott vol. I could not be checked here (only the index volume is on archive.org; it confirms Fleury's embassy), and Gallica's bot check blocked a look at f. 325 on 22 Oct 2026. Not on DECODE or Cryptoole.",
+   "why": "French embassy to the Swiss under Henri III: a key that can be rebuilt from the online deciphered sibling, with four more deciphered letters in the same volume as the unread ones.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Transcribe Colbert 427 f. 325 at full resolution and align it with its marginal decipherment to rebuild the key; request photographs of fr. 16026 f. 99, f. 120, f. 126, pp. 129–130bis and apply it.",
+   "links": [
+    {
+     "label": "Colbert 427 f. 325 (Gallica view 344)",
+     "href": "https://gallica.bnf.fr/ark:/12148/btv1b10033949q/f344.item"
+    },
+    {
+     "label": "Rott I p. 197 (Google Books)",
+     "href": "https://books.google.be/books?id=tEJFAAAAYAAJ&pg=PA197"
+    },
+    {
+     "label": "Issue #82",
+     "href": "https://github.com/dbourdeau/cyphersolver/issues/82"
+    }
+   ],
+   "known": "Siblings deciphered at the time (Colbert 427 f. 325, fr. 16026 f. 120, f. 126, p. 129). Brackx's tentative partial key from the f. 325v name group (17 signs: messieurs de Surich).",
+   "open": "fr. 16026 f. 99 and the undeciphered part of pp. 130–130bis; the key itself is not yet rebuilt."
   }
  ]
 }
