@@ -359,6 +359,12 @@
    "kind": "verification",
    "what": "Entry split from champagne1590 under the one-key rule (Lasry, 14 Oct 2026): the letters in Nevers key no. 57 (fr. 3625 nos. 55 and 10, fr. 3985 f. 58) are this entry; check_3625_10.py and decode58.py rerun after the move, results unchanged (blind test 157/196, f. 58 235/248).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no. 55 (ct_3625_55.txt, reading_3625_55.txt), no. 10 (ct_3625_10_*.txt; decryption saved from check_3625_10.py output to texts/n10_decryption.md), f. 58 (fr3985_f58/ct.txt, clear.txt, reading.md); key key57.txt + words57.tsv.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -451,6 +457,40 @@
     "note": "his entry for key no. 57 names fr. 3985 f. 58, then deciphered here with the key; anchor phrase",
     "source": "cryptiana nevers.htm"
    }
+  ],
+  "texts": [
+   {
+    "doc": "n55",
+    "label": "fr. 3625 no. 55, f. 66r, Châlons, 9 July 1593",
+    "transcription": "ct_3625_55.txt",
+    "decryption": "reading_3625_55.txt",
+    "summary": "In the weeks before Henri IV's abjuration (25 July 1593), Laurière urges Nevers to go to the King so that he does not put off his assembly by a day, since his enemies will do all they can to turn him from it; he reports that Lorraine will treat only once the King is Catholic, that the Leaguers joke about an election, and asks whether the Pope's consent is to be awaited."
+   },
+   {
+    "doc": "n10",
+    "label": "fr. 3625 no. 10, f. 10r, Courgenay, 13 July 1593",
+    "transcription": [
+     "ct_3625_10_blind.txt",
+     "ct_3625_10_rest.txt",
+     "ct_3625_10_glossed.txt"
+    ],
+    "decryption": "texts/n10_decryption.md",
+    "summary": "Laurière to Nevers four days later: they cannot recognise the King until they have the Pope's will, Spain will make every effort to stop the Pope from receiving him, the Marquis de Pont will follow the duc de Lorraine, and Nevers's presence at the assembly is very necessary. The cipher runs reproduce the office's interlinear decipherment; one unglossed run concerns the Grand Duke of Tuscany."
+   },
+   {
+    "doc": "f3985_58",
+    "label": "fr. 3985 f. 58r, Poissy, 12 Aug 1593",
+    "transcription": [
+     "fr3985_f58/ct.txt",
+     "fr3985_f58/clear.txt"
+    ],
+    "decryption": "fr3985_f58/reading.md",
+    "summary": "A fortnight after the abjuration, during the truce talks, La Verrière reports to Nevers on the young prince de Conty, whose chief support is the Montmorency house and who wants to choose a faithful servant and win over M. de La Trémoille; run B reports letters of the Pope for an attempt on the person of the Cardinal de Bourbon. The clear text deals with Revol, Fresne, Sancy and a payment of 1000 écus."
+   }
+  ],
+  "key_file": [
+   "key57.txt",
+   "fr3985_f58/words57.tsv"
   ]
  }
 }

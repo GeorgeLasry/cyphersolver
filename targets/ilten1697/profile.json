@@ -124,6 +124,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split under the one-key rule: letters B, C, D (code B, 1705-06) moved to ilten1705 with their ciphertexts and transcriptions; this entry keeps letter A in code A; tables.py rerun on A alone (74 groups, 57 distinct, 0 unglossed)."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext_A.txt (code runs) and letter_A_1697.txt (clear text with each run and its contemporary gloss).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -156,6 +162,15 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "interlinear decipherments on every code run (recipient's office)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "A",
+    "label": "Hattorf to Ilten, Hannover, 7 Nov 1697, Ms XXIII 1245:4 ff. 212r-213r",
+    "transcription": "ciphertext_A.txt",
+    "decryption": "letter_A_1697.txt",
+    "summary": "Hattorf writes that the Elector thinks it would help his affairs to sow discord between Kolbe (Wartenberg) and Barfus at Berlin and win one of them, perhaps through Kolbe's wife, with whom Ilten is said to stand very well; Hattorf doubts it will be so easy. The decryption is the contemporary interlinear gloss, transcribed with the clear text."
    }
   ]
  }

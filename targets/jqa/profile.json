@@ -311,6 +311,12 @@
    "kind": "verification",
    "what": "Page split under the one-key rule (George Lasry, 14 Oct 2026): No. 88, in Adams's own St Petersburg code (the = 1385), had shared the page legation.html with Erving's 1807 letter in Pinckney's code (the = 1651); it now has its own page jqa.html, card, badge and credits line. Profile content unchanged.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): gap88.txt and rem88.txt; the readings copied from NOTES.md sections 3-4 with render.py output into texts/no88_*_decryption.md; key code_table.tsv.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -402,6 +408,23 @@
     "note": "printed decipherments of 1811-12 despatches in Writings of JQA vol. 4, aligned as known plaintext",
     "source": "Ford, Writings of John Quincy Adams, vol. 4"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "no88-gap",
+    "label": "No. 88, 25 June 1812: the nine lines Ford did not decipher",
+    "transcription": "gap88.txt",
+    "decryption": "texts/no88_gap_decryption.md",
+    "summary": "John Quincy Adams at St Petersburg to the Secretary of State, the day after Napoleon crossed the Niemen: Chancellor Rumyantsev opposed Alexander's journey to Wilna, suffered an apoplectic stroke soon after arriving and a second, worse one since; a German report of his death was false, and JQA judges he cannot long remain at the foreign ministry."
+   },
+   {
+    "doc": "no88-remainder",
+    "label": "No. 88, 25 June 1812: the remainder Ford printed as undecyphered (frame 0207)",
+    "transcription": "rem88.txt",
+    "decryption": "texts/no88_remainder_decryption.md",
+    "summary": "The rest of No. 88: a proposal to evacuate Prussia as a preliminary to negotiation would have been neither unreasonable nor offensive; the French ambassador Lauriston took Prince Kurakin's note as proof that Alexander would not negotiate; and JQA expects that early French success would let Napoleon strike directly at the centre of the empire rather than along the Baltic."
+   }
+  ],
+  "key_file": "code_table.tsv"
  }
 }

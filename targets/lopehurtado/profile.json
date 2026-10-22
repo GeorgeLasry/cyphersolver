@@ -729,7 +729,8 @@
       "what": "Decoded with the pooled key and checked against the faded f. 335r copy: f. 334v 'que esta muy sospechoso (z&∂⊃8ɣ3&∂m, exact) el papa que de alla (zub) se le haya mandado (ϯ74xHo9&, exact) lo que ha fecho' read in full; f. 334r adds no quiere el papa, que hara el papa, me ha dicho, de perder, la cosa del mundo que mas, de lo que truxiere. 177/225 = 78.7% read as sense (was 61.2%). Ten spelled runs still give no word.",
       "result": "partial"
     },
-    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 86 tokens, 47 types, es-golden-age order 4: reading -2.031 per letter; random keys -3.463 (z 6.3); key annealed onto shuffled ciphertext best -1.956 (mean -2.019, z -0.3); annealer on the real text -1.916. Verdict: underdetermined.", "result": "partial"}
+    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 86 tokens, 47 types, es-golden-age order 4: reading -2.031 per letter; random keys -3.463 (z 6.3); key annealed onto shuffled ciphertext best -1.956 (mean -2.019, z -0.3); annealer on the real text -1.916. Verdict: underdetermined.", "result": "partial"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): nine records in eight entries: R9634/R9645/R9656 cipher files and read_*.md + *_reading.tsv; R9646 and R9649 sign lines copied from read_*.md to texts/; R9644/R9648/R9650 read from the clerks' clear versions, their ciphered leaves transcribed only in the NOTES alignments; R9652 is clear; key_codes.tsv and key_1522_*.tsv.", "result": "partial"}
    ],
   "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 86, "types": 47, "tokens_per_type": 1.83, "score": -2.031, "nulls": {"random keys": {"n": 200, "mean": -3.463, "sd": 0.226, "max": -2.855, "z": 6.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.019, "sd": 0.037, "max": -1.956, "z": -0.3, "p": 0.5714}}, "power": -1.916, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.031; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -1.916"}, 
     "method": "key recovered based on adjacent plaintext",
@@ -785,6 +786,88 @@
     "key": "partial",
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "clerk's clear versions bound in R9644 (ff. 241-242, 'Claro') and R9650 (f. 272)"}
+    ],
+    "texts": [
+      {
+        "doc": [
+          "R9644",
+          "R9648"
+        ],
+        "label": "R9644, Rome, 1 Nov 1522 (ff. 237-243), with its duplicate R9648 (9 Nov, ff. 260-265)",
+        "transcription": "NOTES.md",
+        "decryption": "read_r9644.md",
+        "summary": "Hurtado's running account of Adrian VI: the Pope's good will but unsatisfying deeds, his parsimony while he waits for the archbishop of Bari, the payment of the papal household before the other side buys it, the French King's request for a safe-conduct for an ambassador, and a leak of letters shown in copy in Castile. Read from the clerk's contemporary clear version (ff. 241-242); no full transcription of the ciphered leaves was made, only the passages aligned in NOTES.md."
+      },
+      {
+        "doc": "R9650",
+        "label": "R9650, Rome, Nov 1522 (ff. 269-272)",
+        "transcription": "NOTES.md",
+        "decryption": "read_r9650.md",
+        "summary": "The French are resolved to come into Italy and send a great sum of money to Lyon; Hieronymo Adorno has intercepted letters; the Pope, urged to act, answers lukewarmly and will not declare himself. Read from the clerk's clear version on f. 272; the ciphered leaves (ff. 269-271) are transcribed only in the passages aligned in NOTES.md."
+      },
+      {
+        "doc": "R9652",
+        "label": "R9652, Rome, Nov 1522 (ff. 295-296), wholly in clear",
+        "transcription": "read_r9652.md",
+        "decryption": "read_r9652.md",
+        "summary": "A letter entirely in clear: the licenciado Bernardino, a 'gran bellaco', has turned up in Rome and Adrian VI declines a night arrest in the city; the viceroy of Naples' news of the siege of Rhodes is forwarded in copy."
+      },
+      {
+        "doc": "R9634",
+        "label": "R9634, Genoa, 13 Sept 1522 (ff. 14-16)",
+        "transcription": [
+          "r9634_cipher.txt",
+          "r9634_tokens.txt"
+        ],
+        "decryption": [
+          "read_r9634.md",
+          "r9634_reading.tsv"
+        ],
+        "summary": "Four months after the imperial sack of Genoa, Hurtado reports a plan put to him by Geronimo Adorno: the Emperor and the King of England should make war on the King of France through Provence, his weakest land, with six hundred men-at-arms, light horse and soldiers at 70,000 ducats a month, settled now for March; an early form of the 1524 Provence invasion."
+      },
+      {
+        "doc": "R9646",
+        "label": "R9646, Rome, [Nov 1522] (f. 252r)",
+        "transcription": "texts/R9646_transcription.txt",
+        "decryption": "read_r9646.md",
+        "summary": "Adrian VI has concluded his settlement with Alfonso d'Este, duke of Ferrara, and a copy of the capitulation is being sent; Charles's request meets papal caution, and the archbishop [of Bari] advises an offer of money for the Pope's needs."
+      },
+      {
+        "doc": "R9649",
+        "label": "R9649, Rome, 9 Nov 1522 (ff. 266-268)",
+        "transcription": "texts/R9649_transcription.txt",
+        "decryption": "read_r9649.md",
+        "summary": "Adrian VI asks Charles V to write urging him to garrison Ostia and give the fortress to no one, since Cardinal Santa Cruz (Carvajal) presses for it by seniority; the licenciado Bernardino has landed from Barcelona and hides at his brother's house. The cipher runs are read against the contemporary clear version on f. 268."
+      },
+      {
+        "doc": "R9645",
+        "label": "R9645, Rome, Nov 1522 (ff. 243-244)",
+        "transcription": "r9645_cipher.txt",
+        "decryption": [
+          "read_r9645.md",
+          "r9645_reading.tsv"
+        ],
+        "summary": "The terms of Adrian VI's capitulation with Alfonso d'Este, duke of Ferrara (the feudal dues, service to the Church, no confederation except with the Pope and the Emperor, no harbouring of disservants), then news of the duke's men and the Pope; f. 243r has no gloss and the reading rests on the key."
+      },
+      {
+        "doc": "R9656",
+        "label": "R9656, Rome, Nov 1522 (ff. 334-335)",
+        "transcription": [
+          "r9656_cipher.txt",
+          "r9656_cipher_1524notation.txt"
+        ],
+        "decryption": [
+          "read_r9656.md",
+          "r9656_reading.tsv"
+        ],
+        "summary": "The archbishop of Bari wrote no certain news of the coming of the French; the Pope will not fail the Emperor and is content for peace, but is very suspicious that Don Juan [Manuel] was ordered from there to do what he has done. A faded contemporary clear copy on f. 335r supports part of the reading."
+      }
+    ],
+    "key_file": [
+      "key_codes.tsv",
+      "key_1522_r9634.tsv",
+      "key_1522_from1524.tsv",
+      "key_1522_from1524_B.tsv"
     ]
   }
 }

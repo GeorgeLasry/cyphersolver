@@ -427,6 +427,12 @@
    "kind": "verification",
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment. This entry keeps the five System A′ records (six letters); its measures were already per letter and System A′ only (validation.tsv likewise).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): latest image transcriptions with the sysA2 sign files, the hand readings r94xx/reading*.txt (R9410 as two letters), the per-letter re-learned keys sysA2/*_g_key.json and the R9427 gloss key.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -499,6 +505,77 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "words read by count.py over the six hand readings (5 Oct 2026): R9413 1553/1647, R9408 1408/1531, R9410 ff.246-247 375/422, R9409 2077/2381, R9410 f.244r 261/303, R9427 458/543; 6132/6827"
+  "fraction_read_source": "words read by count.py over the six hand readings (5 Oct 2026): R9413 1553/1647, R9408 1408/1531, R9410 ff.246-247 375/422, R9409 2077/2381, R9410 f.244r 261/303, R9427 458/543; 6132/6827",
+  "texts": [
+   {
+    "doc": "R9408",
+    "label": "R9408, ff. 236-239, Ofen 8 Feb 1534",
+    "transcription": [
+     "r9408/transcription_v5.txt",
+     "sysA2/r9408_signs.txt"
+    ],
+    "decryption": "r9408/reading.txt",
+    "summary": "Jörg Weinmeister (signed in cipher) to the Dukes of Bavaria from Ofen, 8 Feb 1534, with Latin clear passages: his mission, the Turk's power and money, mining (Schmaltz, Reinhart), Katzianer before Kaschau, the priest-bishop Emericus and bad coin with the dukes' stamp; a separate news page on Emperor Sigmund, Constantinople and Syria."
+   },
+   {
+    "doc": "R9409",
+    "label": "R9409, ff. 240-243, early 1534",
+    "transcription": [
+     "r9409/transcription_v3.txt",
+     "sysA2/r9409_signs.txt"
+    ],
+    "decryption": "r9409/reading.txt",
+    "summary": "German intelligence report of early 1534: Ferdinand and the confederation, the Turkish embassy, Pressburg, Katzianer and Majláth in Transylvania, Késmárk, Poland and Muscovy, with numbered articles on mining (Antoni Slesinger, Schmaltz, Freiberger, gold-exchangers) and a postscript on the Reichstag."
+   },
+   {
+    "doc": "R9410",
+    "label": "R9410, f. 244r, 1 April 1535",
+    "transcription": [
+     "r9410/transcription_v3.txt",
+     "sysA2/r9410_signs.txt"
+    ],
+    "decryption": "r9410/reading.txt",
+    "summary": "German letter to the dukes dated the first of April 1535: a treaty, the King of France, and holding together as brothers against the Turks."
+   },
+   {
+    "doc": "R9410",
+    "label": "R9410, ff. 246-247, Buda 30 June 1534 (Latin)",
+    "transcription": [
+     "r9410/transcription_p3p6.txt",
+     "sysA2/r9410b_signs.txt"
+    ],
+    "decryption": "r9410/reading_p3p6.txt",
+    "summary": "A second letter in Latin, evidently King John (Zápolya) to the Dukes of Bavaria, Buda 30 June 1534: thanks for their letters and for the Landgrave's and the Duke of Württemberg's news; he has a truce, not peace, with his adversary, which the other side breaks; an envoy is back at Constantinople; he offers friendship and brotherhood."
+   },
+   {
+    "doc": "R9413",
+    "label": "R9413, ff. 252-256, June-July 1534",
+    "transcription": [
+     "r9413/transcription_v4.txt",
+     "sysA2/r9413_signs.txt"
+    ],
+    "decryption": "r9413/reading.txt",
+    "summary": "Letters of a Bavarian agent to the dukes, 7 June and July 1534, addressed to secretary Waisenfelder: Cornelius, the French orator Antonius Rincon at Constantinople, Katzianer, the bishop of Wardein before Hunyad, the Württemberg war, an ore sample from near Ofen, the Turk's fleet and the Pressburg diet."
+   },
+   {
+    "doc": "R9427",
+    "label": "R9427, f. 287, April 1534",
+    "transcription": [
+     "r9427/transcription_v3.txt",
+     "sysA2/r9427_signs.txt"
+    ],
+    "decryption": "r9427/reading.txt",
+    "summary": "German newsletter to a duke, 15/21/24 April 1534 with a postscript of 25 April: the Württemberg affair (the Bund, the dukes of Württemberg, the Landgrave), Ferdinand, and a provost-priest who married and was imprisoned; lines 1-10 carry a contemporary gloss."
+   }
+  ],
+  "key_file": [
+   "sysA2/r9408m_g_key.json",
+   "sysA2/r9409_g_key.json",
+   "sysA2/r9410_g_key.json",
+   "sysA2/r9410b_g_key.json",
+   "sysA2/r9413_g_key.json",
+   "sysA2/r9427_g_key.json",
+   "r9427/key_full.tsv"
+  ]
  }
 }

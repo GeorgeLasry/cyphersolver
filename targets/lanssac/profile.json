@@ -582,7 +582,8 @@
    "what": "Raw first-value decode vs shuffles for ff. 160/164/174: -2.26/-2.11/-1.94 per char vs -3.8 to -4.3.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1842 tokens, 73 types, fr-1600-letters order 4: reading -1.997 per letter; random keys -4.815 (z 8.3); key annealed onto shuffled ciphertext best -2.912 (mean -2.947, z 46.2); annealer on the real text -2.06. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1842 tokens, 73 types, fr-1600-letters order 4: reading -1.997 per letter; random keys -4.815 (z 8.3); key annealed onto shuffled ciphertext best -2.912 (mean -2.947, z 46.2); annealer on the real text -2.06. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 124 (ct_f124.txt, reading.txt), ff. 154r-v (ct_f154/ct_f154v, read_f154.md), ff. 156-157 (ct_f156/ct_f156v, read_f156.md), ff. 160/164/174 (ct_*, read_f160_f174.md); key key.tsv.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 1842, "types": 73, "tokens_per_type": 25.23, "score": -1.997, "nulls": {"random keys": {"n": 200, "mean": -4.815, "sd": 0.34, "max": -3.84, "z": 8.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.947, "sd": 0.021, "max": -2.912, "z": 46.2, "p": 0.1429}}, "power": -2.06, "verdict": "pass", "notes": "claimed per-occurrence score -1.931; polyphony 0.038; 217 unread tokens left out; annealer on the real text from random keys reached -2.06"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -640,6 +641,58 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "marginal decipherments on f. 124 and the sibling f. 154v (gutter-cut)"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "cryptiana henryiii.htm table compared sign by sign; agreeing values adopted, first row found shifted", "source": "cryptiana henryiii.htm (henryiii_Lansac.png)"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "f124",
+    "label": "f. 124, to Charles IX, Warsaw, 26 April 1573 (no. 51)",
+    "transcription": "ct_f124.txt",
+    "decryption": "reading.txt",
+    "summary": "Lanssac tells Charles IX that the obstacles in Thuringia, Meissen and the Mark of Brandenburg delayed him so that he reached Poland (Mezeritz) only on 25 February, and that without the escort of the King's pensioners Alexander von Miltitz and George Luelz he would at the least have been detained; the ciphered passages hide the dangers Frenchmen met in Germany. The rest, in clear, refers to his recueil on Polish affairs."
+   },
+   {
+    "doc": [
+     "f154",
+     "f154v"
+    ],
+    "label": "ff. 154r-v, to the duc d'Anjou, Warsaw, 24 April 1573 (no. 60)",
+    "transcription": [
+     "ct_f154.txt",
+     "ct_f154v.txt"
+    ],
+    "decryption": "read_f154.md",
+    "summary": "On the eve of the Polish election, Lanssac reports to Anjou that the Lithuanian chiefs have promised their vote to him, which with the party already won should put the crown on his head, unless the Grand Seigneur's recommendation of him, made with ruse through the voivode of Wallachia, brings some unexpected change."
+   },
+   {
+    "doc": [
+     "f156",
+     "f156v"
+    ],
+    "label": "ff. 156-157, to Catherine de Médicis, Warsaw, 24 April 1573 (no. 61)",
+    "transcription": [
+     "ct_f156.txt",
+     "ct_f156v.txt",
+     "ct_f156v_pass1.txt"
+    ],
+    "decryption": "read_f156.md",
+    "summary": "Lanssac tells Catherine that matters stand so that by next Monday she should be mother of the two greatest kings in the world, barring a change of minds, and fears that the Emperor might surprise them and that the King of Denmark, bending to his will, might give them much trouble on that side because of the strait, not half a league wide. The end of the letter (f. 157r) is in clear."
+   },
+   {
+    "doc": [
+     "f160",
+     "f164",
+     "f174"
+    ],
+    "label": "ff. 160, 164, 174, to Charles IX and Anjou, 1 and 9 May 1573 (nos. 63, 65, 70)",
+    "transcription": [
+     "ct_f160.txt",
+     "ct_f164.txt",
+     "ct_f174.txt"
+    ],
+    "decryption": "read_f160_f174.md",
+    "summary": "f. 160: the Polish nation is as venal as its German neighbours. f. 164: the Emperor has spent more than 300,000 écus in the negotiation against 30,000 on the other side and achieves nothing but to trouble Anjou's design. f. 174 (Płock, 9 May), announcing the election: it succeeded against the will of the Grand Seigneur, the Emperor, the princes of the Empire, the King of Spain, the Muscovite and the King of Sweden."
+   }
+  ],
+  "key_file": "key.tsv"
  }
 }

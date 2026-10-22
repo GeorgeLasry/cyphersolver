@@ -354,7 +354,8 @@
       "what": "Applied the key to R9869, R9866, R9868. Dates fixed from subscriptions: 28 Mar, 28 Feb, 20 Mar 1524; R9866 and R9868 to Gattinara. R9869 ~2/3 reads, R9868 f.430r mostly, R9866 a quarter to a third. New: barred m = f (confirmed), tef = nec- confirmed three times (1522: paz).",
       "result": "partial"
     },
-    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2868 tokens, 150 types, es-golden-age order 4: reading -2.148 per letter; random keys -3.719 (z 6.1); key annealed onto shuffled ciphertext best -2.509 (mean -2.517, z 29.4); annealer on the real text -2.196. Verdict: pass.", "result": "worked"}
+    {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2868 tokens, 150 types, es-golden-age order 4: reading -2.148 per letter; random keys -3.719 (z 6.1); key annealed onto shuffled ciphertext best -2.509 (mean -2.517, z 29.4); annealer on the real text -2.196. Verdict: pass.", "result": "worked"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): eight records: cipher files r96*/r98*_cipher.txt; transcriptions of R9866/R9868/R9869 copied from their read_*.md to texts/; decryptions read_*.md, R9846 clear + alignment, R9667 alignment + retry; key_1524*.tsv, key_1523*.tsv, key_merged.tsv, key_retry.tsv.", "result": "worked"}
    ],
   "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 2868, "types": 150, "tokens_per_type": 19.12, "score": -2.148, "nulls": {"random keys": {"n": 200, "mean": -3.719, "sd": 0.257, "max": -3.176, "z": 6.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.517, "sd": 0.013, "max": -2.509, "z": 29.4, "p": 0.1429}}, "power": -2.196, "verdict": "pass", "notes": "claimed per-occurrence score -2.148; polyphony 0.0; 198 unread tokens left out; annealer on the real text from random keys reached -2.196"}, 
     "method": "key recovered based on adjacent plaintext",
@@ -395,6 +396,78 @@
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "clerk's clear of the 5 Feb 1524 letter on f. 133r (R9846)"},
       {"who": "bergenroth", "role": "prior solution", "note": "CSP Spain ii nos. 548 and 617 abstract R9667 and R9846 from contemporary decipherments (not used as cribs)", "date": "1866", "source": "Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), nos. 548, 617"}
+    ],
+    "texts": [
+      {
+        "doc": "R9667",
+        "label": "R9667, Rome, 5 May 1523, to Charles V (9/28 ff. 6-9)",
+        "transcription": "r9667_cipher.txt",
+        "decryption": [
+          "r9667_alignment.md",
+          "retry_2026-09-21.md"
+        ],
+        "summary": "Clear letter with cipher runs on the Pope's servants and the benefices the Pope wants for them; CSP Spain ii no. 548 abstracts it from a lost contemporary decipherment (the Pope has not yet declared his alliance, the French have lost hope, Theodorico was most suspected). Only fragments of the cipher runs are read; the 'Claro' leaf beside it is the Abbot of Nájera's clear of 2 May 1523, not Hurtado's."
+      },
+      {
+        "doc": "R9683",
+        "label": "R9683, Rome, June 1523, to Charles V (9/28 f. 171)",
+        "transcription": "r9683_cipher.txt",
+        "decryption": "read_r9683.md",
+        "summary": "The Duke of Sessa's letters report the Pope's good will after the arrest of Cardinal Soderini of Volterra; the Emperor should restore the benefices of the chamberlain Pedro and Francisco and pay the Pope what is owed him. The cipher passages are mostly unread."
+      },
+      {
+        "doc": "R9695",
+        "label": "R9695, Rome, 8 July 1523, autograph draft to Charles V (9/28 ff. 339-340)",
+        "transcription": "r9695_cipher.txt",
+        "decryption": "read_r9695.md",
+        "summary": "The Pope was pleased with the Emperor's letter; the rumoured poisoning could not be verified, the Pope guards his person and eats apart, and Hurtado asks for naturalisations for the Pope's intimates (Pedro de Roma, Francisco, Theodorico). The clear is read in part; the cipher lines are not read."
+      },
+      {
+        "doc": "R9846",
+        "label": "R9846, Rome, 3 and 5 Feb 1524, to Charles V (9/30 ff. 130-133)",
+        "transcription": "r9846_cipher.txt",
+        "decryption": [
+          "r9846_clear.txt",
+          "r9846_alignment.md"
+        ],
+        "summary": "The Pope is glad of the coming of Monsieur de Beaurain; on the contribution, money is short and every help is needed; the Pope wants France ruined or a truce (CSP Spain ii no. 617). The first third is read from the clerk's clear on f. 133r, aligned with the cipher; the rest of the clear (f. 133v) is not imaged."
+      },
+      {
+        "doc": "R9866",
+        "label": "R9866, Rome, 28 Feb 1524, to Grand Chancellor Gattinara (9/30 ff. 285-286)",
+        "transcription": "texts/R9866_transcription.md",
+        "decryption": "read_r9866.md",
+        "summary": "To Gattinara: Beaurain's coming was timely; the French mean, by craft or force, to stay on this side of the Alps, and the Emperor must not lose the world's respect while he spends so much on the war; Hurtado asks Gattinara's help to be paid what he is owed. Read a quarter to a third."
+      },
+      {
+        "doc": "R9867",
+        "label": "R9867, Rome, 4 Jan 1524, to Charles V (9/30 f. 351)",
+        "transcription": "r9867_cipher.txt",
+        "decryption": "read_r9867.md",
+        "summary": "Wholly in cipher: Monsieur de Beaurain has left the Pope content with what he said on the Emperor's behalf; the Emperor must not show need of money, little can be raised; mention of the archbishop [of Capua] and the French in Italy; the writer asks for what is owed to him."
+      },
+      {
+        "doc": "R9868",
+        "label": "R9868, Rome, 20 Mar 1524, to Grand Chancellor Gattinara (9/30 ff. 430-431)",
+        "transcription": "texts/R9868_transcription.md",
+        "decryption": "read_r9868.md",
+        "summary": "Hurtado sends Gattinara a copy of his 11 March letter: the archbishop of Capua has left and all business hangs on the Datary [Giberti], who must be satisfied; benefices shared among the Cardinals; the Pope's servants should be rewarded and many Cardinals want to be Protector."
+      },
+      {
+        "doc": "R9869",
+        "label": "R9869, Rome, 28 Mar 1524, to Charles V (9/30 ff. 444-445)",
+        "transcription": "texts/R9869_transcription.md",
+        "decryption": "read_r9869.md",
+        "summary": "The money the Pope offered through Beaurain; Florence has taken no decision; Cardinal Cortona and Ippolito de' Medici leave for Florence; the archbishop of Capua should be well received by the Emperor; the Pope's goodwill and words could not be better. The rest (Easter news, Hungary and the Turk, the Infante) is in clear."
+      }
+    ],
+    "key_file": [
+      "key_1524.tsv",
+      "key_1524_additions.tsv",
+      "key_1523_additions.tsv",
+      "key_1523_r9667.tsv",
+      "key_merged.tsv",
+      "key_retry.tsv"
     ]
   }
 }
