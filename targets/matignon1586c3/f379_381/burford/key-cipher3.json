@@ -1,0 +1,426 @@
+{
+ "name": "Matignon's Cipher-3 (as used in BnF fr. 15572 ff. 277-280 and fr. 15573 ff. 379-381)",
+ "sign_names": "visual names of reference sheet v2 (stageA/sheet-v2.json) plus q, v, oo, Lp, Lx2; stage E adds Bn, eps, z3 (split from B, xi, 9t on the image) 60, Sq and 4; stage F adds zz (split from xi on the image), Noo and 13; Gc (a 9 in a circle) and 6 (a plain figure 6), told apart from S on the image",
+ "origins": {
+  "T": "Tomokiyo's published table (henryiii_Matignon3.png, cryptiana.web.fc2.com/code/henryiii.htm)",
+  "E": "EM alignment of our reading of fr. 15572 ff. 277r and 278r with their contemporary decipherment ff. 279r and 280r (stageA/key-v2.json counts); stage E adds f. 277v aligned by eye with f. 279v; stage F adds fr. 15570 ff. 271r-272r (Sept. 1585) aligned with its decipherment f. 273r-v",
+  "E?": "EM, few occurrences (< 6) or split: doubtful",
+  "C?": "conjecture from context in the target itself (a code value); doubtful, listed for checking"
+ },
+ "note": "Values are plaintext units; a list means the sign stands for any of them (homophones are separate signs; a list is a polyphone or a code with variants); \"\" = null. Nothing here was taken from anyone's modern reading of these letters.",
+ "key": {
+  "k": {
+   "values": [
+    "e"
+   ],
+   "origin": "T+E"
+  },
+  "u": {
+   "values": [
+    "e"
+   ],
+   "origin": "T+E"
+  },
+  "xi": {
+   "values": [
+    "e"
+   ],
+   "origin": "T+E"
+  },
+  "T": {
+   "values": [
+    "r"
+   ],
+   "origin": "T+E"
+  },
+  "F": {
+   "values": [
+    "r"
+   ],
+   "origin": "T+E"
+  },
+  "b": {
+   "values": [
+    "s"
+   ],
+   "origin": "T+E"
+  },
+  "ss": {
+   "values": [
+    "s"
+   ],
+   "origin": "E"
+  },
+  "Z": {
+   "values": [
+    "i",
+    "y"
+   ],
+   "origin": "T+E (i); y E? (5 of 69 on ff. 277r/278r)"
+  },
+  "th": {
+   "values": [
+    "i"
+   ],
+   "origin": "T+E"
+  },
+  "eta": {
+   "values": [
+    "a"
+   ],
+   "origin": "E"
+  },
+  "o": {
+   "values": [
+    "a"
+   ],
+   "origin": "T+E"
+  },
+  "p": {
+   "values": [
+    "a"
+   ],
+   "origin": "T+E"
+  },
+  "p+": {
+   "values": [
+    "a"
+   ],
+   "origin": "E?"
+  },
+  "y": {
+   "values": [
+    "t",
+    "n"
+   ],
+   "origin": "T+E"
+  },
+  "yv": {
+   "values": [
+    "n",
+    "t"
+   ],
+   "origin": "E"
+  },
+  "a": {
+   "values": [
+    "t"
+   ],
+   "origin": "T+E"
+  },
+  "57": {
+   "values": [
+    "u"
+   ],
+   "origin": "T+E"
+  },
+  "C": {
+   "values": [
+    "u"
+   ],
+   "origin": "T+E"
+  },
+  "9t": {
+   "values": [
+    "u"
+   ],
+   "origin": "T+E"
+  },
+  "mq": {
+   "values": [
+    "n"
+   ],
+   "origin": "T+E"
+  },
+  "2": {
+   "values": [
+    "c"
+   ],
+   "origin": "T+E"
+  },
+  "+": {
+   "values": [
+    "l"
+   ],
+   "origin": "T+E"
+  },
+  "q": {
+   "values": [
+    "l"
+   ],
+   "origin": "T+E?"
+  },
+  "ss^": {
+   "values": [
+    "ll"
+   ],
+   "origin": "E"
+  },
+  "30": {
+   "values": [
+    "m"
+   ],
+   "origin": "T+E"
+  },
+  "hook": {
+   "values": [
+    "m"
+   ],
+   "origin": "T+E?"
+  },
+  "S": {
+   "values": [
+    "o"
+   ],
+   "origin": "T+E"
+  },
+  "Lq": {
+   "values": [
+    "o",
+    "y"
+   ],
+   "origin": "E (o 13, y 6 on ff. 277r/278r; f. 277v l. 29 'luy')"
+  },
+  "Lr": {
+   "values": [
+    "o"
+   ],
+   "origin": "E"
+  },
+  "8": {
+   "values": [
+    "v",
+    "o"
+   ],
+   "origin": "E?"
+  },
+  "m": {
+   "values": [
+    "d"
+   ],
+   "origin": "T+E"
+  },
+  "L": {
+   "values": [
+    "d"
+   ],
+   "origin": "T+E"
+  },
+  "Lx": {
+   "values": [
+    "d",
+    "e",
+    "ee"
+   ],
+   "origin": "E (d 5, ee 4, e 3 on ff. 277r/278r)"
+  },
+  "d": {
+   "values": [
+    "f",
+    "vostre"
+   ],
+   "origin": "T (f) + E (vostre: 8 aligned occurrences on fr. 15570 ff. 271-272 vs f. 273)"
+  },
+  "alpha": {
+   "values": [
+    "f"
+   ],
+   "origin": "T"
+  },
+  "lambda": {
+   "values": [
+    "f"
+   ],
+   "origin": "T?+E?"
+  },
+  "g": {
+   "values": [
+    "p"
+   ],
+   "origin": "E"
+  },
+  "14": {
+   "values": [
+    "p"
+   ],
+   "origin": "T+E"
+  },
+  "23": {
+   "values": [
+    "g"
+   ],
+   "origin": "T+E"
+  },
+  "7": {
+   "values": [
+    "g"
+   ],
+   "origin": "T+E"
+  },
+  "19": {
+   "values": [
+    "h"
+   ],
+   "origin": "T+E?"
+  },
+  "longs": {
+   "values": [
+    "b",
+    "bl"
+   ],
+   "origin": "T (b = long s; the sheet's longs is a long s joined to +, l) + E (b 3, br 1)"
+  },
+  "v": {
+   "values": [
+    "x"
+   ],
+   "origin": "T"
+  },
+  "B": {
+   "values": [
+    "de"
+   ],
+   "origin": "T+E"
+  },
+  "20": {
+   "values": [
+    "la"
+   ],
+   "origin": "T+E"
+  },
+  "18": {
+   "values": [
+    "le"
+   ],
+   "origin": "T+E"
+  },
+  "Cu": {
+   "values": [
+    "que"
+   ],
+   "origin": "T+E"
+  },
+  "dots": {
+   "values": [
+    "qui"
+   ],
+   "origin": "T+E"
+  },
+  "Lp": {
+   "values": [
+    "pour"
+   ],
+   "origin": "T+E?"
+  },
+  "///": {
+   "values": [
+    "et"
+   ],
+   "origin": "E"
+  },
+  "#": {
+   "values": [
+    "i",
+    "r"
+   ],
+   "origin": "i: E (3 of 5 on f. 277r; target pres#dent, ma#este); r: T (Tomokiyo's r column, row 6) + E (rr once)"
+  },
+  "oo": {
+   "values": [
+    "y"
+   ],
+   "origin": "E? (y 2 of 6 on ff. 277r/278r)"
+  },
+  "tri": {
+   "values": [
+    "t"
+   ],
+   "origin": "E? (t 1 of 1 on f. 277r; f. 277v l. 32 'batterie')"
+  },
+  "excl": {
+   "values": [
+    "qui"
+   ],
+   "origin": "E? (f. 277v l. 16 'les suisses qui sont'; a variant of dots)"
+  },
+  "Bn": {
+   "values": [
+    "n"
+   ],
+   "origin": "T (Tomokiyo n column, row 6); class split from B on the image"
+  },
+  "eps": {
+   "values": [
+    "c"
+   ],
+   "origin": "T (Tomokiyo c column, row 2); class split from xi on the image"
+  },
+  "z3": {
+   "values": [
+    "m"
+   ],
+   "origin": "T (Tomokiyo m column, row 6); class split from 9t on the image"
+  },
+  "60": {
+   "values": [
+    "faire"
+   ],
+   "origin": "T (Tomokiyo code row: faire = 60)"
+  },
+  "Lx2": {
+   "values": [
+    "uu"
+   ],
+   "origin": "E? (uu 1, uuermons 1 on f. 277r)"
+  },
+  "Sq": {
+   "values": [
+    "q"
+   ],
+   "origin": "T (Tomokiyo's q column: an S/5 on a swash, drawn grey there); class split on the image from S, g, Lq, Lr"
+  },
+  "4": {
+   "values": [
+    "s"
+   ],
+   "origin": "T (Tomokiyo's s column: a plain 4); class split from 14 on the image"
+  },
+  "zz": {
+   "values": [
+    "ss"
+   ],
+   "origin": "E (fr. 15570 ff. 271r-272r vs f. 273: rassemble, sasseure, assembler, asseure, ieusse; f. 278r promesse); class split from xi on the image"
+  },
+  "Noo": {
+   "values": [
+    "le_roy_de_navarre"
+   ],
+   "origin": "E? (code group; one aligned occurrence, fr. 15570 f. 271v l. 9 vs f. 273r 'empescher le roy de Navarre conduire')"
+  },
+  "13": {
+   "values": [
+    "faict"
+   ],
+   "origin": "E? (one aligned occurrence, fr. 15570 f. 271v l. 9 vs f. 273r 'quil a faict sortir'; doubtful)"
+  },
+  "Gc": {
+   "values": [
+    "par"
+   ],
+   "origin": "E (fr. 15570 f. 272r 'revanche par la prinse', 'par l'intelligence' vs f. 273v; known-answer page f. 278r 'mande par le sieur' vs f. 280r)"
+  },
+  "6": {
+   "values": [
+    "s"
+   ],
+   "origin": "E? (one aligned occurrence: fr. 15570 f. 271r 'venus trouver' vs f. 273r)"
+  }
+ },
+ "unknown": [
+  "x",
+  "word",
+  "?"
+ ],
+ "revision": 9,
+ "revision_note": "18-19 Oct 2026 (stage F): Gc = par (E), 6 = s (E?), from fr. 15570 ff. 271r-272r and its 1585 decipherment f. 273; Gc also on the known-answer page."
+}

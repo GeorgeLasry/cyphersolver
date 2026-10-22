@@ -1,0 +1,560 @@
+{
+ "format": "polyphone-key/1",
+ "target": "BnF fr. 15573 f. 379v",
+ "key_revision": 9,
+ "tokenisation": {
+  "rule": "glyph-ids",
+  "params": {}
+ },
+ "plaintext_alphabet": "abcdefghilmnopqrstuvxyz",
+ "pipeline": [
+  {
+   "step": "substitution",
+   "id": "main",
+   "table": {
+    "k": {
+     "v": "e",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "u": {
+     "v": "e",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "xi": {
+     "v": "e",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "T": {
+     "v": "r",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "F": {
+     "v": "r",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "b": {
+     "v": "s",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "ss": {
+     "v": "s",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E"
+    },
+    "Z": {
+     "v": [
+      "i",
+      "y"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T+E (i); y E? (5 of 69 on ff. 277r/278r)"
+    },
+    "th": {
+     "v": "i",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "eta": {
+     "v": "a",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E"
+    },
+    "o": {
+     "v": "a",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "p": {
+     "v": "a",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "p+": {
+     "v": "a",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E?"
+    },
+    "y": {
+     "v": [
+      "t",
+      "n"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T+E"
+    },
+    "yv": {
+     "v": [
+      "n",
+      "t"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin E"
+    },
+    "a": {
+     "v": "t",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "57": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "C": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "9t": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "mq": {
+     "v": "n",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "2": {
+     "v": "c",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "+": {
+     "v": "l",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "q": {
+     "v": "l",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T+E?"
+    },
+    "ss^": {
+     "v": "ll",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin E"
+    },
+    "30": {
+     "v": "m",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "hook": {
+     "v": "m",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T+E?"
+    },
+    "S": {
+     "v": "o",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "Lq": {
+     "v": [
+      "o",
+      "y"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin E (o 13, y 6 on ff. 277r/278r; f. 277v l. 29 'luy')"
+    },
+    "Lr": {
+     "v": "o",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E"
+    },
+    "8": {
+     "v": [
+      "v",
+      "o"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin E?"
+    },
+    "m": {
+     "v": "d",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "L": {
+     "v": "d",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "Lx": {
+     "v": [
+      "d",
+      "e",
+      "ee"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin E (d 5, ee 4, e 3 on ff. 277r/278r)"
+    },
+    "d": {
+     "v": [
+      "f",
+      "vostre"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T (f) + E (vostre: 8 aligned occurrences on fr. 15570 ff. 271-272 vs f. 273)"
+    },
+    "alpha": {
+     "v": "f",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "lambda": {
+     "v": "f",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T?+E?"
+    },
+    "g": {
+     "v": "p",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E"
+    },
+    "14": {
+     "v": "p",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "23": {
+     "v": "g",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "7": {
+     "v": "g",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "19": {
+     "v": "h",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T+E?"
+    },
+    "longs": {
+     "v": [
+      "b",
+      "bl"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T (b = long s; the sheet's longs is a long s joined to +, l) + E (b 3, br 1)"
+    },
+    "v": {
+     "v": "x",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "B": {
+     "v": "de",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "20": {
+     "v": "la",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "18": {
+     "v": "le",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "Cu": {
+     "v": "que",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "dots": {
+     "v": "qui",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T+E"
+    },
+    "Lp": {
+     "v": "pour",
+     "type": "word",
+     "conf": "probable",
+     "note": "origin T+E?"
+    },
+    "///": {
+     "v": "et",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin E"
+    },
+    "#": {
+     "v": [
+      "i",
+      "r"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin i: E (3 of 5 on f. 277r; target pres#dent, ma#este); r: T (Tomokiyo's r column, row 6) + E (rr once)"
+    },
+    "oo": {
+     "v": "y",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E? (y 2 of 6 on ff. 277r/278r)"
+    },
+    "tri": {
+     "v": "t",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E? (t 1 of 1 on f. 277r; f. 277v l. 32 'batterie')"
+    },
+    "excl": {
+     "v": "qui",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin E? (f. 277v l. 16 'les suisses qui sont'; a variant of dots)"
+    },
+    "Bn": {
+     "v": "n",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo n column, row 6); class split from B on the image"
+    },
+    "eps": {
+     "v": "c",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo c column, row 2); class split from xi on the image"
+    },
+    "z3": {
+     "v": "m",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo m column, row 6); class split from 9t on the image"
+    },
+    "60": {
+     "v": "faire",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo code row: faire = 60)"
+    },
+    "Lx2": {
+     "v": "uu",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin E? (uu 1, uuermons 1 on f. 277r)"
+    },
+    "Sq": {
+     "v": "q",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo's q column: an S/5 on a swash, drawn grey there); class split on the image from S, g, Lq, Lr"
+    },
+    "4": {
+     "v": "s",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo's s column: a plain 4); class split from 14 on the image"
+    },
+    "zz": {
+     "v": "ss",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin E (fr. 15570 ff. 271r-272r vs f. 273: rassemble, sasseure, assembler, asseure, ieusse; f. 278r promesse); class split from xi on the image"
+    },
+    "Noo": {
+     "v": "le_roy_de_navarre",
+     "type": "word",
+     "conf": "probable",
+     "note": "origin E? (code group; one aligned occurrence, fr. 15570 f. 271v l. 9 vs f. 273r 'empescher le roy de Navarre conduire')"
+    },
+    "13": {
+     "v": "faict",
+     "type": "word",
+     "conf": "probable",
+     "note": "origin E? (one aligned occurrence, fr. 15570 f. 271v l. 9 vs f. 273r 'quil a faict sortir'; doubtful)"
+    },
+    "Gc": {
+     "v": "par",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin E (fr. 15570 f. 272r 'revanche par la prinse', 'par l'intelligence' vs f. 273v; known-answer page f. 278r 'mande par le sieur' vs f. 280r)"
+    },
+    "6": {
+     "v": "s",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E? (one aligned occurrence: fr. 15570 f. 271r 'venus trouver' vs f. 273r)"
+    },
+    "x": {
+     "v": null,
+     "type": "unknown",
+     "note": "sign with no value in the key (or not on the sheet)"
+    },
+    "word": {
+     "v": null,
+     "type": "unknown",
+     "note": "sign with no value in the key (or not on the sheet)"
+    },
+    "?": {
+     "v": null,
+     "type": "unknown",
+     "note": "sign with no value in the key (or not on the sheet)"
+    }
+   },
+   "choices": {
+    "longs": [
+     "b",
+     "b",
+     "b",
+     "b",
+     "bl",
+     "b"
+    ],
+    "y": [
+     "t",
+     "n",
+     "n",
+     "t",
+     "t",
+     "t",
+     "t",
+     "t",
+     "n",
+     "t",
+     "n",
+     "n",
+     "t",
+     "n",
+     "t",
+     "t",
+     "t",
+     "n",
+     "t",
+     "n",
+     "t",
+     "t",
+     "t"
+    ],
+    "yv": [
+     "n",
+     "n",
+     "t",
+     "n",
+     "n",
+     "n",
+     "t",
+     "n",
+     "t",
+     "n"
+    ],
+    "Z": [
+     "i",
+     "i",
+     "i",
+     "i",
+     "i",
+     "i",
+     "i",
+     "i",
+     "y",
+     "i",
+     "i",
+     "i",
+     "i",
+     "i",
+     "i"
+    ],
+    "#": [
+     "r",
+     "i",
+     "r",
+     "r",
+     "i",
+     "r"
+    ],
+    "d": [
+     "f",
+     "vostre",
+     "f",
+     "vostre",
+     "f",
+     "f",
+     "vostre",
+     "vostre",
+     "f",
+     "vostre"
+    ],
+    "Lq": [
+     "y",
+     "o"
+    ],
+    "Lx": [
+     "ee",
+     "e",
+     "e"
+    ],
+    "8": [
+     "o",
+     "v"
+    ]
+   },
+   "unknown_render": "[?{sym}]"
+  }
+ ],
+ "notes": "Matignon's Cipher-3. Values: Tomokiyo's published table (T) and EM alignment of our reading of fr. 15572 ff. 277r-278r with their contemporary decipherment ff. 279r-280r (E); see data/key-cipher3.json. Sign names are the visual names of reference sheet v2. Polyphone values per occurrence chosen by the word-level decoder with the period French lexicon and recorded here, so decryption is mechanical.",
+ "provenance": {
+  "origin": "archive",
+  "source": "Tomokiyo (cryptiana henryiii.htm, Matignon's Cipher-3) and the 1586 decipherment in BnF fr. 15572 ff. 279-280"
+ }
+}

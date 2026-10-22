@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "matignon1586c3",
- "title": "Two Poitou intelligence notes of 1586 in Matignon's Cipher-3: BnF fr. 15572 f. 276 and fr. 15571 f. 179 (catalogue item 12)",
+ "title": "Matignon's Cipher-3, 1586: two Poitou intelligence notes (BnF fr. 15572 f. 276, fr. 15571 f. 179) and a six-page despatch to the King (fr. 15573 ff. 379-381)",
  "documents": [
   {
    "id": "f276",
@@ -63,6 +63,37 @@
     "image_quality": "fair",
     "notes": "21 cipher lines; the two reads agree on 472 of 516 signs (91.5%)."
    }
+  },
+  {
+   "id": "fr15573-f379-381",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 15573 ff. 379r-381v (Gallica btv1b90618780, views 740-745)",
+   "date": "autumn 1586",
+   "year": 1586,
+   "country": "France",
+   "route": "probably Matignon -> Henri III",
+   "language": "French",
+   "pages": 6,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Tomokiyo, cryptiana henryiii.htm: the opening line only ('a ce quil plaist [votre] majeste me commander ...'); listed as undeciphered.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 2836,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f379_381/read_all.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Brett Burford (issue #44; github.com/BravoBravoIX/matignon-1586-cipher-reading v0.5, CC BY 4.0): Claude Opus 5.5 read each line under a 50-sign reference sheet cut from f. 277r, five passes voted, image-decided corrections; copied to f379_381/burford/",
+    "image_quality": "fair",
+    "notes": "127 lines, 2,836 signs (to_read.py count). Reader calibrated at 0.962 per sign (0.933 strict) on f. 278r ll. 12-18 against its contemporary decipherment; all three v0.1 passes agree on 0.77-0.82 of positions on the target pages. No person has checked it sign by sign; line count and the opening lines of f. 379r compared with the image here."
+   }
   }
  ],
  "system": {
@@ -86,7 +117,7 @@
    "kinds": [
     "common words"
    ],
-   "unread_groups": 3
+   "unread_groups": 8
   },
   "nulls": {
    "present": true
@@ -95,12 +126,12 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "Tomokiyo's partial Cipher-3 table (cryptiana, Henry III's Cipher with Ambassadors), checked on the deciphered sibling ff. 277r-278r / 279r-280r",
-  "notes": "Split on 14 Oct 2026 from matignon1586 under the one-key rule: that entry joined these two Cipher-3 leaves with the Mayenne-Forget Cipher-1 despatches. The two leaves share names (Iehan Durant, La Rousière) and belong together; deciphered siblings in the same key: f. 189 (in f. 190), ff. 277-278 (in ff. 279-280), f. 282 (margin)."
+  "notes": "Split on 14 Oct 2026 from matignon1586 under the one-key rule: that entry joined these two Cipher-3 leaves with the Mayenne-Forget Cipher-1 despatches. The two leaves share names (Iehan Durant, La Rousière) and belong together; deciphered siblings in the same key: f. 189 (in f. 190), ff. 277-278 (in ff. 279-280), f. 282 (margin). From 21 Oct 2026 the entry also holds fr. 15573 ff. 379-381 (Burford, issue #44), same key; he took six values from a further deciphered Cipher-3 letter, fr. 15570 ff. 271-273 (1585): long zigzag = ss, circled 9 = par, d = vostre, barred double o = le roy de Navarre (doubtful), 13 = faict (doubtful), 6 = s (doubtful)."
  },
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "f. 276: no reading beyond Tomokiyo's published opening; fr. 15571 f. 179: Tomokiyo's interlinear decipherment on his image (cryptiana), unpublished as text",
+   "where": "f. 276: no reading beyond Tomokiyo's published opening; fr. 15571 f. 179: Tomokiyo's interlinear decipherment on his image (cryptiana), unpublished as text; fr. 15573 ff. 379-381: Tomokiyo's published opening line only (henryiii.htm, 2023), which Burford's reading matches without having used it",
    "found": "before attempt",
    "used": true
   },
@@ -110,7 +141,7 @@
    "crib"
   ],
   "attack": "published key",
-  "human_role": "Contributed: alejandrozarco did the transcription, alignment and reading (PR #25, 6-7 Oct 2026); the project reviewed and re-measured it.",
+  "human_role": "Contributed: alejandrozarco did the transcription, alignment and reading (PR #25, 6-7 Oct 2026); the project reviewed and re-measured it. fr. 15573 ff. 379-381: contributed by Brett Burford (issue #44, 18-19 Oct 2026; Claude Opus 5.5 as sign reader), reviewed and re-measured here 21 Oct 2026.",
   "tools": [
    "f276/scripts/align_em.py (hard-EM alignment of a blind transcription of f. 277r against ff. 279-280)",
    "f276/scripts/compare_reads.py",
@@ -121,7 +152,7 @@
   ],
   "sessions": 3,
   "first_date": "2026-09-18",
-  "last_date": "2026-10-14"
+  "last_date": "2026-10-21"
  },
  "solution": [
   {
@@ -165,11 +196,32 @@
    "kind": "verification",
    "what": "Split from the former combined target matignon1586 under the one-key rule (George Lasry, 14 Oct 2026): the two Cipher-3 leaves are their own entry; f276/ and f179/ moved here. measure.py re-run on both read_final.txt files reproduces 706/734 and 473/509.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-18",
+   "kind": "reading",
+   "technique": [
+    "key matching",
+    "language-model scoring",
+    "beam/DP decoding"
+   ],
+   "what": "Contributed (Brett Burford, issue #44, v0.1-v0.5 18-19 Oct 2026): fr. 15573 ff. 379r-381v, 2,836 signs read by Claude Opus 5.5 under a sign sheet, five passes voted, corrections decided on the image; Tomokiyo's Cipher-3 key checked on ff. 277-280 and extended from the 1585 letter fr. 15570 ff. 271-273; two-valued signs chosen by whole words. His measure: 0.90-0.95 of signs per page in French words, shuffled 0.59-0.78; 5 short runs and 5 rare code signs open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Re-measured here with this entry's rule (f276/scripts/measure.py, fr-1600-letters, 20 shuffled keys) on his signs through his recorded key choices (f379_381/to_read.py): f. 379r 440/503, 379v 447/490, 380r 420/492, 380v 493/532, 381r 479/524, 381v 261/295 = 2,540/2,836 (89.6%); shuffled medians 5.8-9.8%, max 33%. View 740 compared with his f. 379r signs: 22 cipher lines as he has them, and the opening signs of l. 2 (b, a, a hooked sign, 30) correspond.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "f. 276 was deciphered with Tomokiyo's partial Cipher-3 table, checked and extended on the deciphered sibling ff. 277r/279-280; f. 179 was transcribed blind and reconciled with Tomokiyo's interlinear decipherment.",
+  "method_basis": "f. 276 and fr. 15573 ff. 379-381 were deciphered with Tomokiyo's partial Cipher-3 table, checked and extended on deciphered siblings (ff. 277r/279-280; fr. 15570 ff. 271-273); f. 179 was transcribed blind and reconciled with Tomokiyo's interlinear decipherment.",
   "parts": [
    {
     "label": "f. 276",
@@ -184,17 +236,27 @@
     "method": "read from existing decipherment",
     "extent": "partial",
     "basis": "Tomokiyo's interlinear decipherment in magenta on his image of the leaf, checked by two blind sign-by-sign readings with his key; 473 of 509 signs (92.9%), measured; shuffled median 3.5%"
+   },
+   {
+    "label": "fr. 15573 ff. 379r-381v",
+    "records": "BnF fr. 15573 ff. 379-381",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Brett Burford (issue #44): Tomokiyo's Cipher-3 table with values from the 1585 deciphered letter fr. 15570 ff. 271-273, five voted LLM reader passes; 2,540 of 2,836 signs (89.6%) in sense runs, measured here; 5 rare code signs and 5 short runs open"
    }
   ],
-  "contribution": ["transcription", "key extended or corrected"],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
   "class": "read in part",
-  "fraction_read": 0.9485,
+  "fraction_read": 0.9118,
   "fraction_read_method": "measured",
-  "fraction_read_source": "f276/scripts/measure.py over f276/read_final.txt (706/734) and f179/read_final.txt (473/509): 1179 of 1243 signs inside sense runs (lang model fr-1600-letters, the targets/matignon1586/measure.py rule); re-run 14 Oct 2026",
+  "fraction_read_source": "f276/scripts/measure.py (lang model fr-1600-letters, the targets/matignon1586/measure.py rule): f276/read_final.txt 706/734, f179/read_final.txt 473/509, f379_381/read_<page>.txt 2,540/2,836 (Burford v0.5 through to_read.py); 3,719 of 4,079 signs, 21 Oct 2026",
   "key": "partial",
   "codes_open": {
-   "open": 3,
-   "tokens_open": 3
+   "open": 8,
+   "tokens_open": "unknown"
   },
   "gaps": [
    {
@@ -216,6 +278,16 @@
     "item": "f. 276 L22 closing (one or two signs before the plaintext 'ou...'), f. 179 L20 'de la D[...]use' and a struck sign, and a few short spans",
     "blocker": "illegible",
     "detail": "Faint or struck signs at the edge of the slip; the rest of the 28 + 36 unread signs are words the period lexicon holds fewer than 20 times (prieure, escriuent)."
+   },
+   {
+    "item": "fr. 15573 ff. 379-381: five rare code signs (barred double o where not le roy de Navarre, the circle on a cross, the looped epsilon with a stroke, the zigzag-tailed 3, the m with a z-like tail)",
+    "blocker": "open-codes",
+    "detail": "Each occurs once to three times and in none of the deciphered Cipher-3 letters Burford checked (fr. 15572 ff. 189-190, 277-280, 282; fr. 15573 f. 373; fr. 15570 ff. 271-273)."
+   },
+   {
+    "item": "fr. 15573 ff. 379-381: about 300 signs outside sense runs (5 short runs of clear signs Burford could not read, doubtful words, smudged signs)",
+    "blocker": "open-codes",
+    "detail": "Mostly names, period spellings and reader errors (0.93-0.96 per sign on known text); Burford's v0.5 list (f379_381/burford/unresolved-v0.5.md) explains 110 of 115 items; the 5 unexplained runs are clear on the image and may be names or code. A sign-by-sign human check has not been made."
    }
   ],
   "grades": "unknown",
@@ -224,7 +296,7 @@
    "matched control"
   ],
   "provenance": "contributed",
-  "notes": "Contributed by alejandrozarco (PR #25, 6-7 Oct 2026), reviewed and re-measured here. Content: a Poitou intelligence note on the Catholic factions round La Roussière (f. 276) and a sibling naming Pons, sickness in the army and Lansac for the sea army (f. 179).",
+  "notes": "Contributed by alejandrozarco (PR #25, 6-7 Oct 2026), reviewed and re-measured here. Content: a Poitou intelligence note on the Catholic factions round La Roussière (f. 276) and a sibling naming Pons, sickness in the army and Lansac for the sea army (f. 179). 21 Oct 2026: Brett Burford's reading of fr. 15573 ff. 379-381 (issue #44) added as a third part; measured here 89.6%.",
   "credits": [
    {
     "who": "zarco",
@@ -236,13 +308,21 @@
    {
     "who": "tomokiyo",
     "role": "key or decipherment used",
-    "note": "partial Cipher-3 table (cryptiana) and his interlinear decipherment of fr. 15571 f. 179 on his image",
+    "note": "partial Cipher-3 table (cryptiana), his interlinear decipherment of fr. 15571 f. 179 on his image, and the opening line of fr. 15573 f. 379r",
     "source": "cryptiana"
    },
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "the decipherment of ff. 277r-278r on ff. 279-280, used to check the key"
+    "note": "the decipherments of ff. 277r-278r on ff. 279-280 and of fr. 15570 ff. 271-272 on f. 273, used to check and extend the key"
+   },
+   {
+    "who": "burford",
+    "role": "new cipher with solution",
+    "note": "fr. 15573 ff. 379r-381v, a six-page Cipher-3 despatch not in the ledger: first reading of the whole despatch with Claude Opus 5.5 (v0.5, 19 Oct 2026), key values from fr. 15570 ff. 271-273; 89.6% measured here",
+    "date": "2026-10-18",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/44",
+    "published": true
    }
   ]
  }
