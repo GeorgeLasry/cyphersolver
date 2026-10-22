@@ -254,7 +254,8 @@
    "what": "Catalogue audit: profile, page and README brought into line with the second pass (they still said 'not solved' and 'not alphabetical'); fraction of firm values measured from alpha/decoded_targets_v2.txt.",
    "result": "worked"
   },
-  {"date": "2026-10-21", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 130 tokens, 80 types, nl-modern order 4: reading -2.009 per letter; random keys -2.142 (z 2.2); key annealed onto shuffled ciphertext best -1.651 (mean -1.684, z -10.0); annealer on the real text -1.702. Verdict: underdetermined.", "result": "partial"}
+  {"date": "2026-10-21", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 130 tokens, 80 types, nl-modern order 4: reading -2.009 per letter; random keys -2.142 (z 2.2); key annealed onto shuffled ciphertext best -1.651 (mean -1.684, z -10.0); annealer on the real text -1.702. Verdict: underdetermined.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked tx/ transcriptions (R2121 cipher = the two R2120 pages), the contemporary clear decipherment tx/R2121_clear.txt, and the graded partial decoding of R2122/R2131 in alpha/decoded_targets_v2.txt; key = alpha/dedem_alpha_table.tsv.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-21", "model": "nl-modern", "file": "validation.tsv", "tokens": 130, "types": 80, "tokens_per_type": 1.62, "score": -2.009, "nulls": {"random keys": {"n": 200, "mean": -2.142, "sd": 0.062, "max": -2.014, "z": 2.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.684, "sd": 0.032, "max": -1.651, "z": -10.0, "p": 1.0}}, "power": -1.702, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.009; polyphony 0.0; 178 unread tokens left out; annealer on the real text from random keys reached -1.702"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -299,6 +300,12 @@
     "blocker": "open-codes",
     "detail": "the alphabetical bracket narrows each group but does not fix it; more deciphered letters in this code (DECODE R1948-R1952, R2134, R2141) are online and not yet transcribed"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "DECODE R2120", "label": "R2120 (cipher pages re-photographed as R2121), Pera 22 Dec 1788", "transcription": "tx/R2121_cipher.txt", "decryption": "tx/R2121_clear.txt", "summary": "Van Dedem, Dutch ambassador at Constantinople, reports to Grand Pensionary Van de Spiegel the Porte's proposed loan of 7-8 million, secured on the revenues of Morea, Negropont, Salonica, Volos, Urfan, Cara Agatz, Damascus, Sorien and Rodosto and the tribute of Jenischeher, and suggests the Levant Directors or Hope & Co. take it up. The decryption is the contemporary clear decipherment filed as R2121."},
+   {"doc": "DECODE R2122", "label": "R2122, \"Duplicaat\", Pera 15 Jan 1789", "transcription": "tx/R2122_cipher.txt", "decryption": "alpha/decoded_targets_v2.txt", "summary": "Two cipher blocks (258 groups) in a clear letter to Van de Spiegel, decoded in part with the block-alphabetical table of the second pass; the firm words (envoyé, Porta, negociatie, Republicq, Leening) are consistent with the loan theme of the R2121 crib. Values, not sense: the running reading is fragmentary."},
+   {"doc": "DECODE R2131", "label": "R2131, Pera 9 Feb 1793", "transcription": "tx/R2131_cipher.txt", "decryption": "alpha/decoded_targets_v2.txt", "summary": "One cipher paragraph of 50 groups in a clear letter to Van de Spiegel, decoded in part (16 of 46 non-null groups firm); it names the Porte, an envoy, the war and the French, but the neutrality reading proposed in review is not established."}
+  ],
+  "key_file": "alpha/dedem_alpha_table.tsv"
  }
 }

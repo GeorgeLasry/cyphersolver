@@ -131,7 +131,8 @@
     {"date": "2026-10", "kind": "prediction", "technique": ["language-model scoring", "statistical test"], "what": "Contributor: C09123116600, no translation, reads ヨヨウノカンコクチズダイヨ (要用ノ韓国地図貸与), fitting the reply draft sending maps of Korea; kana-bigram control 0/1000 permuted tables at or above the reading.", "result": "worked"},
     {"date": "2026-10", "kind": "solver", "technique": ["key-structure hypothesis", "exhaustive search"], "what": "Contributor: C09122806100 (1901) tried with the 1902 table, periodic additives of period 1-7, vowel-digit rules and iroha/gojuon shifts; nothing fits (the same ニ is 91 and 69).", "result": "failed"},
     {"date": "2026-10-21", "kind": "verification", "technique": ["key matching", "statistical test"], "what": "Project: decode.py written from the stated table; the four telegrams decode as claimed (35/35, 11/12, 10/12, ヨヨウノカンコクチズダイヨ); shuffled-digit control, 1,000 tables each: max 16, 6, 6 against 35, 11, 10.", "result": "worked"},
-    {"date": "2026-10-21", "kind": "verification", "what": "Project: JACAR PDFs fetched; every digit of frames 0110 and 0026 checked against the images. Found the contributor's data/transcription.txt and telegrams.tsv stale for 0110 (34 pairs, missing 18); the image and the form's 72-character count support READING.md's 35 pairs.", "result": "worked"}
+    {"date": "2026-10-21", "kind": "verification", "what": "Project: JACAR PDFs fetched; every digit of frames 0110 and 0026 checked against the images. Found the contributor's data/transcription.txt and telegrams.tsv stale for 0110 (34 pairs, missing 18); the image and the form's 72-character count support READING.md's 35 pairs.", "result": "worked"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the four ct_*.txt transcriptions; copied the readings table from NOTES.md with decode_out.txt (decode.py output) to texts/readings.md, and the coordinate table from NOTES.md to texts/key.md.", "result": "worked"}
   ],
   "outcome": {"validation": {"date": "2026-10-21", "verdict": "not applicable", "notes": "Japanese kana plaintext, no Japanese model in lang/; a shuffled-digit permutation control against the filed translations was run instead (decode.py control: max 16, 6, 6 of 1,000 against 35, 11, 10)"}, 
     "class": "read",
@@ -154,6 +155,13 @@
     "credits": [
       {"who": "harumi-matsuba", "role": "new cipher with solution", "note": "Found the numeric kana telegrams in JACAR, reconstructed the 1902-04 table, read four telegrams with controls; Claude Opus 5.5, Codex and Sonnet, no human check", "date": "2026-10-20", "source": "https://github.com/dbourdeau/cyphersolver/issues/58; https://github.com/Harumi-Matsuba/kagigo1901-public", "published": true},
       {"who": "contemporary", "role": "key or decipherment used", "note": "The General Staff's and Army Ministry's filed translations and the furigana of the outgoing draft, used as cribs", "date": "1902-03", "source": "JACAR C09122911500 fr. 0108, C09122909800 fr. 0077, C03020059400", "published": false}
-    ]
+    ],
+    "texts": [
+      {"doc": "C09122911500", "label": "27 Mar 1902, Osaka", "transcription": "ct_C09122911500.txt", "decryption": "texts/readings.md", "summary": "Chief of Staff Ōyama in Osaka to Lt-Gen. Terauchi: until he returns to the capital, Terauchi is asked to handle the business of the General Staff (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ)."},
+      {"doc": "C09123116600", "label": "25 Jan 1904, Kokura", "transcription": "ct_C09123116600.txt", "decryption": "texts/readings.md", "summary": "A request from Kokura to Maj.-Gen. Iguchi of the General Staff for the loan of the needed maps of Korea (要用ノ韓国地図貸与サレタシ); the reply draft in the same file sends maps of Korea."},
+      {"doc": "C09122909900", "label": "28 Mar 1902, Osaka", "transcription": "ct_C09122909900.txt", "decryption": "texts/readings.md", "summary": "Ōyama in Osaka to Maj.-Gen. Fukushima about observing the naval exercise (カイグン…エンシウケンガク)."},
+      {"doc": "C03020059400", "label": "Jan 1904", "transcription": "ct_C03020059400.txt", "decryption": "texts/readings.md", "summary": "Division commander Inoue to the War Minister: a 12-pair run reading シンテイアクゼウシレイブ (辛碇泊場司令部, an anchorage command), with two pairs off the table."}
+    ],
+    "key_file": "texts/key.md"
   }
 }

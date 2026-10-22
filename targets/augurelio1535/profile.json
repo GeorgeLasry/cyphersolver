@@ -231,7 +231,8 @@
    "what": "The pass-2 key was carried to the other System A′ letters of KAA 4591 (R9408, R9409, R9410, R9413, R9427; targets/kaa4591 sysA2/) and re-learned per letter; they read in part (77-89% of words). Nothing found there changes the R9407 reading; their K word sign and R9407's ∇ name sign stay open.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 4128 tokens, 54 types, de-1500s order 4: reading -2.593 per letter; polyphonic: 11% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 4128 tokens, 54 types, de-1500s order 4: reading -2.593 per letter; polyphonic: 11% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked pass2/transcription.txt (all cipher pages, one character per sign), pass2/reading.txt (reading of the whole letter, {?} for unread words) and pass2/key.txt.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1500s", "file": "validation.tsv", "tokens": 4128, "types": 54, "tokens_per_type": 76.44, "score": -2.593, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 11% of read tokens differ from their type's commonest value"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -268,6 +269,10 @@
   },
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear gloss over f. 233 ll. 1-3 and the R9427 sibling gloss the key was built from"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R9407", "label": "Weinmeister to the Dukes of Bavaria, spring 1533 (ff. 232-235)", "transcription": "pass2/transcription.txt", "decryption": "pass2/reading.txt", "summary": "Jörg Weinmeister, a Bavarian agent in Hungary, reports to Dukes Wilhelm IV and Ludwig X on King John's siege of Palota (Várpalota), held by László Móré, during the spring of 1533, Ferdinand standing aside after his peace with the Turk; a slip adds news that fifty thousand Turks have marched from Belgrade towards Buda."}
+  ],
+  "key_file": "pass2/key.txt"
  }
 }

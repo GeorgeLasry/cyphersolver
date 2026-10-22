@@ -143,7 +143,8 @@
    "what": "Compared the stream with the 34 interlinear French lines and the closing clear formula; the earlier conclusion that the French is not the decipherment was an artefact of per-line alignment.",
    "result": "worked",
    "date": "2026-10-09"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked transcription.txt (471 groups with the interlinear French) and reading.txt (the continuous-stream reading with Tomokiyo's table, open groups marked).", "result": "worked"}
  ],
  "outcome": {
   "class": "read",
@@ -181,6 +182,9 @@
     {"who": "pillon", "role": "key or decipherment used", "note": "alignment behind Tomokiyo's 1710 table"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "secretary's interlinear and out-of-sync clear text on the sheet"},
     {"who": "yuanyi", "role": "pointer", "note": "issue #28: Tomokiyo's 1710 table and the continuous-stream reading", "date": "2026-10-09", "source": "https://github.com/dbourdeau/cyphersolver/issues/28"}
+  ],
+  "texts": [
+   {"doc": "R10198", "label": "R10198, Marly 4 June 1710", "transcription": "transcription.txt", "decryption": "reading.txt", "summary": "Nicolas Desmarets, Controller General of Finances, writes from Marly on 4 June 1710 to an unnamed \"Monsieur\": the King wants peace, a safe peace, but means to protect \"l'honneur du gouvernement\"; further demands must not reach \"demembrements entiers\"; the powers sent are wide enough, and the relaxation \"peut produire la paix\"."}
   ]
  }
 }

@@ -323,7 +323,8 @@
    "kind": "reading",
    "what": "Read all seven letters, five of them for the first time in print.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): letters/L1-L7.txt each carry the word-segmented decryption and, below it, the groups as printed (the transcription); key_file points to Bazeries' Grand Chiffre table as transcribed in ../feuquieres/grand_chiffre_1691.tsv (the context readings of blank entries are not tabulated separately).", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -340,6 +341,16 @@
   "notes": "Seven groups unread (six misprinted above 587, one damaged); about a hundred blank-table groups read from context.",
   "credits": [
     {"who": "bazeries", "role": "key or decipherment used", "note": "Grand Chiffre table (Le Masque de fer, 1893) applied; his clear texts of L1 and L3 used as controls", "date": "1893", "source": "Bazeries, Le Masque de fer (1893)"}
-  ]
+  ],
+  "texts": [
+   {"doc": "L1", "label": "L1, Louvois to Catinat, Versailles, 8 Jul 1691", "transcription": "letters/L1.txt", "decryption": "letters/L1.txt", "summary": "The King is surprised the news of Coni came by the post and not by courier; Bulonde is to be arrested and taken to the citadel of Pignerol, shut in a room at night and free by day to walk the ramparts \"avec un masque\"; fortify Carmagnole, destroy Quiers and Villeneuve d'Ast if they cannot be held. As Bazeries printed it (1893)."},
+   {"doc": "L2", "label": "L2, Louvois to Catinat, Versailles, 9 Jul 1691", "transcription": "letters/L2.txt", "decryption": "letters/L2.txt", "summary": "After the failure at Coni: fortify Carmagnole, burn the places the enemy could hold in winter (Villeneuve d'Ast, Quiers), seek a battle before the Germans arrive and avoid one after; the King prescribes nothing but \"vous ouvre seulement des vues\". New beyond the first 130 groups Bazeries printed."},
+   {"doc": "L3", "label": "L3, Louis XIV to Catinat, Versailles, 19 Aug 1691", "transcription": "letters/L3.txt", "decryption": "letters/L3.txt", "summary": "Carmagnole's weakness, Caraffa's foresight in stocking grain, Chamlay sent out with the King's full intentions; pull the grain of Saluces, Savillan and Fossano into Carmagnole or Pignerol. As Bazeries printed it."},
+   {"doc": "L4", "label": "L4, Louis XIV to Catinat, 24 Aug 1691", "transcription": "letters/L4.txt", "decryption": "letters/L4.txt", "summary": "Chamlay is to weigh with Catinat every course open in the war; the Rome negotiation makes it desirable to prolong the army's stay beyond the mountains; Casale to be palisaded and supplied; the King hopes Carmagnole can be kept and Coni taken at the end of the campaign; Pignerol's safety is \"le premier objet\"."},
+   {"doc": "L5", "label": "L5, Louis XIV to Catinat, 29 Aug 1691", "transcription": "letters/L5.txt", "decryption": "letters/L5.txt", "summary": "Proposals for a treaty with the people of Mondovì may be concluded as Catinat judges; the enemy is reported to seek passage by Geneva or the Valais into the Chablais; la Hoguette keeps his troops at Suze; do not go far from Carmagnole for supplies."},
+   {"doc": "L6", "label": "L6, Louis XIV to Catinat, Versailles, 6 Sept 1691", "transcription": "letters/L6.txt", "decryption": "letters/L6.txt", "summary": "The only road to Casale in winter is by Genoa and unsafe; Larray has sent an Irish battalion to Briançon fearing the Barbets; if Catinat is to pass the Po, do it before the enemy moves; Chamlay has arrived."},
+   {"doc": "L7", "label": "L7, Louis XIV to Catinat, Fontainebleau, 14 Sept 1691", "transcription": "letters/L7.txt", "decryption": "letters/L7.txt", "summary": "After Chamlay's report the King decides \"à préférer le parti solide à l'honorable\": recross the mountains at the end of the campaign, not return to Piedmont in 1692, and fight a defensive war in the Alpine cols, while prolonging the campaign and keeping Carmagnole as long as possible for the negotiation with the Pope and the Italian states; then attack Coni."}
+  ],
+  "key_file": "../feuquieres/grand_chiffre_1691.tsv"
  }
 }

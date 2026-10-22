@@ -198,7 +198,8 @@
    "result": "worked",
    "date": "2026-10-05"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 252 tokens, 77 types, de-1640s order 4: reading -1.731 per letter; random keys -5.997 (z 10.4); key annealed onto shuffled ciphertext best -2.583 (mean -2.692, z 11.8); annealer on the real text -2.583. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 252 tokens, 77 types, de-1640s order 4: reading -1.731 per letter; random keys -5.997 (z 10.4); key annealed onto shuffled ciphertext best -2.583 (mean -2.692, z 11.8); annealer on the real text -2.583. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked ct_neal.txt (Philip Neal's transcription with the manuscript checks), reading.md (segment-by-segment decryption, code words left as [nnn]) and key.json.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 252, "types": 77, "tokens_per_type": 3.27, "score": -1.731, "nulls": {"random keys": {"n": 200, "mean": -5.997, "sd": 0.412, "max": -4.969, "z": 10.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.692, "sd": 0.081, "max": -2.583, "z": 11.8, "p": 0.1429}}, "power": -2.583, "verdict": "pass", "notes": "claimed per-occurrence score -1.736; polyphony 0.004; 37 unread tokens left out; annealer on the real text from random keys reached -2.583"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -236,6 +237,10 @@
     "detail": "No key survives; each occurs once. 766, 770, 772, 778, 783 read as letters."
    }
   ],
-  "notes": "First reading of the letter. Key rebuilt here from context cribs; no Swedish key on DECODE matches."
+  "notes": "First reading of the letter. Key rebuilt here from context cribs; no Swedish key on DECODE matches.",
+  "texts": [
+   {"doc": "APUG568-239", "label": "Banér to Stålhandske, Hof, 29 Dec 1640", "transcription": "ct_neal.txt", "decryption": "reading.md", "summary": "An intercepted copy, sent to Athanasius Kircher, of a letter from the Swedish general Johan Banér to Torsten Stålhandske, commanding in Silesia: Banér means to march into the Upper Palatinate, expects the enemy to gather against him and draw in the forces operating in Silesia, and tells Stålhandske to keep good watch, follow with caution when the enemy moves, report through spies and tell him where to direct his march."}
+  ],
+  "key_file": "key.json"
  }
 }

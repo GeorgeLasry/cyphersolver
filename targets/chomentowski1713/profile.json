@@ -179,7 +179,8 @@
       "kind": "verification",
       "what": "Entry split on 14 Oct 2026 from sieniawski1708 under the one-key rule (Lasry, 14 Oct 2026): the Vienna-Schenck letters are schenck1706; the Sieniawski letters are one entry per key: key A (sieniawski1708), key B (turculet1709), the R7475 table (r7475), the Chomentowski syllabary (chomentowski1713). ",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions R7476.txt (pass-5 digit corrections marked), R7484.txt, R7485.txt; decryptions R7476_reading.txt, R7484_reading.txt, R7485_reading.txt (pass files R7476_pass2/pass5, R7484_pass2, R7485_pass2 hold the checks); syllabary.tsv not linked as key_file since the contribution is not key recovery.", "result": "worked"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -243,6 +244,11 @@
         "role": "key or decipherment used",
         "note": "interlinear syllable glosses on R7476, R7484, R7485 and the clear copy on R7485"
       }
+    ],
+    "texts": [
+      {"doc": "R7476", "label": "R7476, Constantinople, May-August 1714 (by content)", "transcription": "R7476.txt", "decryption": "R7476_reading.txt", "summary": "Probably Chomentowski to Hetman Sieniawski from Constantinople, dated May-August 1714 because code XVIII is glossed Hospodar Multański (Brâncoveanu, held in Yedikule from April 1714). New passages include \"on z tąd nie ruszy, póki mu Porta nie da takiego konwoju\", \"z listu przejętego\", \"sołtan gałga uciekł do Czerkies\" and \"donieść Jmci Panu Kanclerzowi Koronnemu\"."},
+      {"doc": "R7484-R7485", "label": "R7484, Adrianople, 9 May 1713", "transcription": "R7484.txt", "decryption": "R7484_reading.txt", "summary": "Chomentowski, voivode of Mazovia and Polish envoy at the Porte, to Hetman Sieniawski: the Kapudan Pasha, made vizier, began to change course; a public divan on 24 April declared war sub ignoto nomine, with fear of a march on Chocim and the envoys sent to Yedikule; on the 26th the vizier was deposed and strangled, so things are in confusion."},
+      {"doc": "R7484-R7485", "label": "R7485, undated (1713/14)", "transcription": "R7485.txt", "decryption": "R7485_reading.txt", "summary": "Chomentowski to Sieniawski; the cipher passage is also written out in clear at the head of the page: the Turks will not believe the Seraskier and the Khan, and the Seraskier wrote to the hospodar of Wallachia to persuade the envoy to go to Bender."}
     ]
   }
 }

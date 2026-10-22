@@ -197,7 +197,8 @@
    "kind": "literature search",
    "what": "Priority: Tomokiyo mayenne.htm (2023) lists both as undeciphered; polyphonic1593.htm (3 Oct 2026) credits Rosson with the first full decipherment; Burford's independent re-reading (18 Oct 2026) agrees on 93-96% of signs and prefers Rosson's text.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Paolo Rosson's sign-class dumps (rosson/raw/dump_*.txt) as the transcriptions and his readings rosson/f186_reading.txt and rosson/f189_reading.txt as the decryptions; the clear opening of f. 186r (ll. 0-10) is only summarised in his file.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -277,6 +278,10 @@
     "role": "key or decipherment used",
     "note": "the royal office's decipherments of the sister letters, f. 177-178 (of f. 176) and f. 184-185 (of f. 188), the training labels"
    }
+  ],
+  "texts": [
+   {"doc": "f186", "label": "f. 186r-v (no. 88), to Pietro Aldobrandini, Paris 22 July 1593", "transcription": ["rosson/raw/dump_f186r.txt", "rosson/raw/dump_f186v.txt"], "decryption": "rosson/f186_reading.txt", "summary": "Baudouin-Desportes tells Aldobrandini that the papal commissaries Matteucci and Malvasia did more harm than the enemy, that the Spanish army stayed on the frontier, and that the Legate presses for a king's election just as the enemy wins votes by seeming to turn Catholic and \"doit dimanche aller a la messe\" (Henri IV heard Mass at Saint-Denis on Sunday 25 July). He recalls his requests in Rome and their refusal; Mayenne was willing to accept Guise as king. Reading by Paolo Rosson (v0.2, 1 Oct 2026) with Tomokiyo's key; the clear opening is only summarised in it."},
+   {"doc": "f189", "label": "f. 189 (no. 90), to Girolamo Frachetta, July 1593", "transcription": "rosson/raw/dump_f189.txt", "decryption": "rosson/f189_reading.txt", "summary": "A letter in cover names (\"nostre oncle\", \"l'homme de la chesne\", \"l'homme du colege\", \"nostre docteur Gratian\"): the truce is expected \"dans peu de jours\", an envoy's journey \"a fait changer de religion au [roy de Navarre]\", and the Legate held back \"nos brefz\". Reading by Paolo Rosson (v0.2, 1 Oct 2026) with Tomokiyo's key."}
   ]
  }
 }
