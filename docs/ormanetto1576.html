@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>key matched</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-two-records">The two records</a><a href="#the-reading">The reading</a><a href="#the-key">The key, and why 21 September missed it</a><a href="#checks">Checks</a><a href="#what-remains-open">What remains open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-two-records">The two records</a><a href="#the-reading">The reading</a><a href="#the-key">The key, and why 21 September missed it</a><a href="#checks">Checks</a><a href="#what-remains-open">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> On 21 September this page said R118 was not deciphered. The figures are the Spain nunciature&rsquo;s own cipher, and they read: a short report, dated 15 October, that the nuncio has told Secretary Antonio P&eacute;rez what the Cardinal of Como wrote in his cipher of 19 September, and that the King will be informed and an answer procured. The key, a homophonic table of two signs per letter with stroke-marked word ends, a small list of code groups and a few dotted syllables, was reconstructed by Ajaydas Devadas from the images and ciphertext published here, and was checked against our own copies of the scan and of R116. The clear note on the leaf turns out to be the decipherment, minus the dateline. R117 remains a clear memorial with no cipher.</div>
 
 <h2 id="the-two-records"><span class="num">01</span> The two records</h2>
@@ -105,6 +105,40 @@ which is only the start of the volume&rsquo;s date range.</p>
 <li>R117 needs nothing: a clear Spanish memorial.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Spain nunciature, 15 Oct [1576 or 1577], ASV Spagna 10 f. 365 (DECODE R118)</h3>
+<p>Written 15 October: the nuncio has communicated to Secretary Pérez everything Your Lordship (V.S. Ill.ma) wrote in the cipher of 19 September; Pérez has promised to report it to the King and obtain an answer, which will be sent at once. The clear Italian note on the leaf is the contemporary decipherment, minus the dateline; the year is open (Ormanetto in 1576 or Sega in 1577).</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ormanetto1576/texts/R118_tokens_decode.md">R118_tokens_decode.md</a></p><pre># Output of dec118.py, run 22 Oct 2026: A. Devadas&#x27;s token transcription of the six lines (dots kept, | = word-end stroke, [x] = code group) decoded with the cifra ordinaria and compared with his plaintext. Verbatim script output.
+ok   20 7. 05 3 07 40 | 4. 2. 08 | [15] | 04 3 | 03 07 03 02 05 60 -&gt; scrita ali [15] di otobre
+ok   3 80 | 90 10 6. 07 3 03 | 40 | 7. 03 2 10 90 3 50 40 9 6 | 50 03 80 -&gt; il nuntio a comunicato col
+ok   9. 60 50 05 60 9 40 05 3 03 | 30 60 05 60 09 -&gt; secretario perez
+ok   [6.11] | [2.44] | [66] | [9.11] -&gt; [6.11] [2.44] [66] [9.11]
+ok   20 7. 05 3 10 60 50 03 90 | 2. 40 | 50 3 06 05 40 -&gt; scriuecon la cifra
+ok   04 3 | [19] | 04 3 | 9. 60 9 5. 01 4 05 60 -&gt; di [19] di setembre
+ok   3 80 | [5.2.2] 80 60 | 20 60 7: 05 60 9 40 05 3 03 -&gt; il [5.2.2]le segretario
+ok   40 | 30 05 6 2 60 9. 03 | 04 3 | 04 40 05 90 60 | 50 6 90 9 6 | 40 80 | [3.44] -&gt; a promeso di darne conto al [3.44]
+ok   [3] | 04 3 | 30 05 6 7. 10 05 40 05 90 60 | 05 3 9. 30 6 9. 07 40 -&gt; [3] di procurarne risposta
+ok   7 60 2. 40 | [5.2.2] 80 60 | [9.11] | 9. 40 05 4. -&gt; dela [5.2.2]le [9.11] sara
+ok   30 03 08 | 9. 10 4 3 07 03 | 40 10 3 9. 40 07 40 -&gt; poi subito auisata
+ok   20 07 50 09 30 2. -&gt; stczpl
+12 lines consistent, 0 differ</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ormanetto1576/r118_cipher.txt">r118_cipher.txt</a></p><pre># DECODE R118, ASV Segr. Stato Spagna 10, f. 365 (stamped 350). Digits as read from the scan, dots over digits ignored,
+# X = the 4 with a double cross-bar. Lines 1-2 read at 3x zoom; lines 3-6 at 2x and less certain.
+2070530740244208X15240434X03070302056024380X90106073032440X703210903550
+40962450038042960505056094005303243060056009246112424456624911242070531060
+5003902424040X503060540240432419410432496095014056024380245228060242060
+70560940053032404X300562609032404324044005906024506090624408024344243043
+30056721005400590602405393063074024760240245228060249112494005424300308
+910430703244010394007402420075009302</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ormanetto1576/texts/R118_decryption.md">R118_decryption.md</a></p><pre># Copied verbatim from NOTES.md, section &#x27;R118 as read&#x27; (22 Oct 2026): the reading with code groups resolved, and its translation.
+Italian: *scrita ali 15 di otobre. Il nuntio a comunicato col secretario Perez tutto quello che V.S. Ill.ma scrive con la cifra di 19 di setembre; il quale segretario
+a promeso di darne conto al Re, et di procurarne risposta, de la quale V.S. Ill.ma sara poi subito avisata* + six null signs (s t c z p l). &quot;Written 15 October. The Nuncio
+has communicated to Secretary Perez everything Your Lordship writes in the cipher of 19 September; the Secretary has promised to report it to the King and to procure
+an answer, of which Your Lordship will shortly be advised.&quot; The clear Italian note on the leaf is the contemporary decifrato of this text, **minus the dateline**. Our 21 Sept
+readings of the note (&quot;trattato&quot;, &quot;Sig.r&quot;, &quot;buoni uffici&quot;, &quot;sabbato&quot;) were abbreviations misread, which is why the crib test failed.</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/ormanetto1576.json"></figure>
 <!-- replay:end -->

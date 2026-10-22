@@ -232,6 +232,12 @@
    "kind": "verification",
    "what": "Catalogue audit: fraction_read had been set to 0.976, the share of tokens carrying a key value, which NOTES says is not a reading; set to the measured sense proxy (0.506, letters in 5+-letter corpus words) to match NOTES ('not at the read bar').",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): both proposed readings: Beck's (FRENCH_AND_ENGLISH.txt, literal.txt; his transcription restored from data/source.seed.xz to texts/beck_transcription.txt) and Nur's graded reading with the 1565 de Foix key, beside the project's qm/qm2 transcriptions (the exact token file Nur decoded is not in the folder)",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -281,6 +287,34 @@
     "note": "reconstruction of Paul de Foix's 1565 cipher (henryiii.htm#Foix0), the key of R9241"
    }
   ],
-  "fraction_coherent": 0.506
+  "fraction_coherent": 0.506,
+  "texts": [
+   {
+    "doc": "R9241",
+    "label": "R9241, Catherine de' Medici to Paul de Foix, 15 Jan 1563: Lawrence Beck's proposed reading (PR #18)",
+    "transcription": "texts/beck_transcription.txt",
+    "decryption": [
+     "beck-preliminary/FRENCH_AND_ENGLISH.txt",
+     "beck-preliminary/results/literal.txt"
+    ],
+    "translation": "beck-preliminary/FRENCH_AND_ENGLISH.txt",
+    "summary": "The Queen Mother writes to Paul de Foix, French ambassador in London, in de Foix's own cipher; the letter, copied by Patrick Forbes into his deciphering file (BL Add MS 4136), was evidently intercepted by the English. Beck's proposed partial decipherment speaks of the reconciliation needed between the two kingdoms, of how the negotiation goes, and of an aim to draw France into some outlay of money, 'dont nous n'avons nulle intention'. Partial, not at the read bar."
+   },
+   {
+    "doc": "R9241",
+    "label": "R9241: Feyseel Nur's graded reading with de Foix's 1565 key (PR #21)",
+    "transcription": [
+     "qm_tokens.txt",
+     "qm2_tokens.txt",
+     "qm2_f148.txt",
+     "qm2_f149.txt"
+    ],
+    "decryption": [
+     "r9241_foix1565key/reading.md",
+     "r9241_foix1565key/v5_rendering.txt"
+    ],
+    "summary": "An independent reading of the same letter with the frozen key from de Foix's 1565 cipher (Tomokiyo's chart, checked on BnF fr. 15971 ff. 21-26) plus a layer of values fitted on R9241, every reading graded. It converges with Beck's on phrases such as 'la negotiation prend quelque traict' and 'quelque deboursement de deniers'. The project's own transcriptions (first pass qm, second pass qm2) are listed; the exact 1,026-token token file the reading was decoded from is not separately in the folder."
+   }
+  ]
  }
 }

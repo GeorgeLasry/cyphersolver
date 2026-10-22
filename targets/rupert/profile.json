@@ -352,6 +352,12 @@
    "kind": "verification",
    "what": "Write-up count: f107_reading.txt measured (129 tokens less the editorial '[one]' = 128 cipher words, 122 read = 95.3%); line 6 transcribed sign by sign and decoded with the f. 106 lower alphabet (f107_decode.py) for the reveal; all six documents measured for fraction_read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 107: reading f107_reading.txt, sign transcription only of line 6 (f107_decode.py); the five undeciphered documents listed with their transcriptions and no decryption",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -440,6 +446,45 @@
   },
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "lower alphabet of the royalist key sheet f. 106 (DECODE R8727), and the partial interlinear gloss on f. 107 used as crib"}
+  ],
+  "texts": [
+   {
+    "doc": "addms72438-f107",
+    "label": "BL Add MS 72438 f. 107r (DECODE R8728)",
+    "transcription": "f107_decode.py",
+    "decryption": "f107_reading.txt",
+    "summary": "A woman's graphic-sign letter in English to a royalist officer: she had heard he was killed or taken, rejoices that he got safe to the King, and reproaches him for neglect after so many years' acquaintance. Deciphered with the lower alphabet of the neighbouring key sheet f. 106 (R8727), checked against the partial interlinear gloss; 122 of 128 words. Only line 6 is transcribed sign by sign (in f107_decode.py)."
+   },
+   {
+    "doc": "maurice1645",
+    "label": "Maurice to Rupert, Worcester, 7 July 1645 (Warburton iii. 133)",
+    "transcription": "maurice1645_groups.txt",
+    "summary": "Prince Maurice explains why he cannot bring his regiments to Rupert at Bristol, with the Scots army four miles from Worcester ('By your cipher, you may observe ...'). Not deciphered: no key in Add MS 72438 or in print fits the 93 groups."
+   },
+   {
+    "doc": "addms72438-f9",
+    "label": "BL Add MS 72438 f. 9r (DECODE R8623), 21 May 1646",
+    "transcription": "f9_transcription.txt",
+    "summary": "Intercepted royalist letter to 'My Lord', largely in a numerical cipher; not deciphered (no key of the volume fits)."
+   },
+   {
+    "doc": "addms72438-f10",
+    "label": "BL Add MS 72438 f. 10r-v (DECODE R8624), 13 May 1646",
+    "transcription": "f10_transcription.txt",
+    "summary": "Intercepted letter to King Charles I, endorsed 'Quadrupl.' (fourth copy), in a numerical cipher; not deciphered."
+   },
+   {
+    "doc": "r8433-trevor1645",
+    "label": "BL Add MS 18982 ff. 51-52 (DECODE R8433), [28] Apr 1645",
+    "transcription": "trevor1645_transcription.txt",
+    "summary": "Arthur Trevor to Prince Rupert from Bristol, mostly clear (Sir Vivian Molineux, Sir Bryan O'Neile, the Prince of Wales's journey westward) with short numerical cipher passages; not deciphered."
+   },
+   {
+    "doc": "addms72438-f104",
+    "label": "BL Add MS 72438 f. 104r (DECODE R8725)",
+    "transcription": "f104_transcription.txt",
+    "summary": "An all-numeric cipher sheet, marked 'Decrypted' on DECODE though no decipherment is on it; not deciphered."
+   }
   ]
  }
 }

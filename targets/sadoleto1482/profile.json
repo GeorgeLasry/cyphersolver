@@ -618,6 +618,12 @@
       "kind": "transcription",
       "what": "Blue-channel background-subtracted enhancement of the stained right edge of I5657. Read dinari and a questo tempo (C), spesa (C), et se vol[e]no spen[dere] (M). U06, U11, U15/U16 and the R1103 block remain unread after the same enhancement.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): partial readings and parallel collations per letter, key key_working.md; no sign-level transcription of the graphic cipher exists for any of the four letters, and the contemporary clear copies 7a, 26a/26b are not transcribed in full",
+      "result": "partial"
     }
   ],
   "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; only plaintext editions and anchor words"}, 
@@ -659,6 +665,44 @@
     ],
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy 7a of R1101 and decipherment 13a of R1104 (key built from them); clear copies 26a/26b of R1106"}
-    ]
+    ],
+    "texts": [
+      {
+        "doc": "R1101",
+        "label": "R1101, Pozsony, 15 Jul 1482 (Vestigia 1284; clear copy 7a)",
+        "decryption": [
+          "r1101_final_parallel.md",
+          "r1101_queen_parallel.md",
+          "alignment_r1101.md"
+        ],
+        "summary": "Nicolò Sadoleto, Ferrarese envoy to Matthias Corvinus, to Ercole I d'Este: urging the King to join the league and take up 'questa impresa', for love of the league and to humble [the Venetians] once for all. Read at the time: the contemporary clear copy 7a; the files are partial parallel readings of the cipher against it."
+      },
+      {
+        "doc": "R1102",
+        "label": "R1102, 16 Jul 1482 (Vestigia 1286)",
+        "decryption": [
+          "r1102_working_edition.md",
+          "reading_r1102.md",
+          "reading_r1102_additional.md"
+        ],
+        "summary": "Sadoleto learnt in great secrecy from dom Francesco that the Signoria of Venice had written to Francesco Quirino to offer the King of Hungary friendship, Veglia, and the captaincy of its fleet for his (bastard) son, with a yearly payment in ducats. Deciphered in part with the alphabet rebuilt from contemporary clear copies; r1102_working_edition.md is the current edition (unread material marked [Uxx])."
+      },
+      {
+        "doc": "R1103",
+        "label": "R1103, 17 Aug 1482 (Vestigia 1294)",
+        "decryption": "r1103_image_audit.md",
+        "summary": "A faded four-line cipher block; no continuous reading is established, only the isolated word 'vostro'. The file is the image audit, not a decipherment."
+      },
+      {
+        "doc": "R1106",
+        "label": "R1106, 27 Nov 1482 (Vestigia 1318; clear copies 26a/26b)",
+        "decryption": [
+          "r1106_parallel_reading.md",
+          "alignment_r1106.md"
+        ],
+        "summary": "The King 'ha firmo proposito de non se scoprire' and to avoid 'involverse in guera' with the Signoria of Venice. Read at the time on the contemporary slips 26a/26b; the files collate the cipher against them unit by unit."
+      }
+    ],
+    "key_file": "key_working.md"
   }
 }

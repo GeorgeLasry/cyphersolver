@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-document-and-the-key">The document and the key</a><a href="#the-reading">The decoded text</a><a href="#method">Method</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-document-and-the-key">The document and the key</a><a href="#the-reading">The decoded text</a><a href="#method">Method</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The project catalogue listed this letter (item 217) from the DECODE record: a numerical nomenclator, partially decrypted, contents unknown. DECODE&rsquo;s own note already named the code as William V&rsquo;s &ldquo;Grand Chiffre&rdquo;, and the key survives as DECODE R1024; it had just decoded two other Van Reede despatches (<a href="vanreede1787.html">Van Reede 1787</a>). A contemporary hand glossed the first eight lines between the figures, but DECODE&rsquo;s transcription of that gloss is garbled (&ldquo;monsieur de Raney eal avenant&hellip; blanc he de ci r cle&rdquo;) and no complete decoding of the letter was found. Decoded with R1024, all 62 message groups give sense at once, with one transcription correction (4204 &rarr; 4202, <i>tro</i>). The letter tells M. de Larrey that there is <i>citron</i>, lemon juice, on the four blank half-pages of the enclosure, and asks him to warn the Prince of Orange and hand him the letter. It ends: &ldquo;les chiffres suivants sont des non-valeurs&rdquo;. The 21 groups after it are nulls. The enclosure, which carried the actual news, is not on the record.</div>
 
 <figure data-credit="Koninklijk Huisarchief, The Hague, Prins Willem V inv. 205, via DECODE R1057 (rotated here)"><img src="vanreede1792_lead.jpg" alt="The letter, rotated upright: rows of four-digit groups with a pencil gloss between the lines" loading="lazy"><figcaption>The letter, with the contemporary pencil gloss over the figures (&ldquo;tro n sur le(s) &hellip; demi&rdquo;, &ldquo;blanc he de l i n clu&rdquo;). The last three rows carry no gloss: they are the nulls. <span class="credit">Image: Koninklijk Huisarchief, The Hague, Prins Willem V inv. 205, via DECODE R1057 (rotated here).</span></figcaption></figure>
@@ -77,6 +77,40 @@
 <li>The invisible-ink enclosure itself is not on DECODE R1057; whether it survives in KHA inv. 205 is not known.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R1057, Berlin, 4 Feb 1792, Van Reede to William V</h3>
+<p>A cover note, not a despatch: Van Reede warns the Prince&#x27;s secretary Thomas Isaac de Larrey that the real letter is written in lemon juice on the four blank half-pages of the enclosure, to be handed to the Prince of Orange; the last 21 groups are declared nulls.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vanreede1792/ciphertext_R1057.txt">ciphertext_R1057.txt</a></p><pre>4519 604 886 54 3032 1131 2476 1777 3104 4202 130 4152 2012 2217 2743 2137 1896 1601 801 1496 67 4896 2664 4102 1959 4242 3192 2604 51 3608 1406 119 3430 2123 55 465 1497 488 1496 4493 315 908 2019 2222 1945 131 3194 4694 4102 1067 231 604 186 4115 3439 2659 2847 4131 2364 148 2900 64 3633 3160 370 1229 3645 50 3139 3650 2768 2800 3370 1681 559 57 3268 2775 1391 1268 2239 2560 57</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vanreede1792/texts/R1057_decryption.md">R1057_decryption.md</a></p><pre># R1057, Van Reede to William V, Berlin 4 Feb 1792: decipherment (copied verbatim from NOTES.md, &quot;Reading&quot;, 22 Oct 2026)
+
+Key: the 1782 &quot;Grand Chiffre&quot; of William V, DECODE R1024 (`../vanreede1787/decode_grand_chiffre.py`). Transcription
+corrected in one place: 4204 is 4202 (*tro*, which the gloss confirms).
+
+4519 604 886 54 3032 1131 2476 1777 3104 4202 130 4152 2012 2217 2743 2137 1896 1601 801
+1496 67 4896 2664 4102 1959 4242 3192 2604 51 3608 1406 119 3430 2123 55 465 1497 488 1496
+4493 315 908 2019 2222 1945 131 3194 4694 4102 1067 231 604 186 4115 3439 2659 2847 4131
+2364 148 2900 64
+
+&gt; Monsieur de Larrey est averti qu&#x27;il y a du ci-tro-n sur les quatre demi-pages blanches
+&gt; de l&#x27;in-clu-se. Il voudra bien en prévenir Monseigneur le Prince d&#x27;Orange et avoir la bonté
+&gt; de lui remettre ma lettre, que je n&#x27;adresse point pour ne pas se[r?]… Les chiffres suivants
+&gt; sont des non-valeurs.
+
+&quot;M. de Larrey is warned that there is lemon juice [invisible ink] on the four blank
+half-pages of the enclosure. He will kindly tell His Highness the Prince of Orange and be so
+good as to hand him my letter, which I do not address [to him directly] so as not to [draw
+notice]. The following figures are nulls.&quot;
+
+The rest (3633 3160 370 1229 3645 50 3139 3650 2768 2800 3370 1681 559 57 3268 2775 1391
+1268 2239 2560 57) are, by the letter&#x27;s own statement, nulls; decoded they give a jumble
+(Conseil d&#x27;Etat, la Russie, Archiduc, reconnoître) planted to occupy a reader. Larrey is
+Thomas Isaac de Larrey, the Prince&#x27;s secretary.
+
+Open: &quot;pour ne pas 186 4115&quot; (pais-ser) — probably *passer*/*paraître*, wording of
+one group uncertain.</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/vanreede1792.json"></figure>
 <!-- replay:end -->

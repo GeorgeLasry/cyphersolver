@@ -175,6 +175,12 @@
    "kind": "verification",
    "what": "One-key review (Lasry's rule, 14 Oct 2026): the colophon's vowel shift and the six-sign slip are two unrelated ciphers (different hand, date and system), so the outcome is given per part: colophon read with known key, 125/125; slip not solved, 0/6, too short. The pooled 95.4% is kept only as a labelled total.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): colophon ciphertext.txt with the decode.py reading reading.txt; slip: the six signs signs.txt and the clear letter slip.txt (signs unread)",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -229,6 +235,22 @@
     "method": "not solved",
     "extent": "none",
     "basis": "0 of 6 signs read; too short; the colophon's vowel shift fails (none of b f k p x occurs), and all alphabet shifts fail; no key, sibling or crib"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R4349",
+    "label": "Colophon of the Strängnäs Sequentiarium, 1517, Uppsala UB C 513 f. 19v",
+    "transcription": "ciphertext.txt",
+    "decryption": "reading.txt",
+    "summary": "The scribe's dated colophon in a vowel-shift cipher set under chant notation: 'In the year of the Lord 1517 the present sequentiary was written in the convent of Strängnäs for the convent of Västerås' (insulensis = the Dominican house of Västerås). The rule and reading were already printed in the Uppsala manuscript catalogue (1992); read here in full and checked."
+   },
+   {
+    "doc": "R4349-slip",
+    "label": "Slip pasted on f. 1r: Old Swedish letter ending in six signs (not read)",
+    "transcription": "signs.txt",
+    "decryption": "slip.txt",
+    "summary": "A short private letter in Old Swedish to Anders Larsson, sending a little cinnamon bark for his chest, closing 'til liff oth sel' and then six cipher signs, probably a concealed signature. The six signs are not read (too short, no key, no sibling); the decryption file is the transcription of the clear letter with the signs as written."
    }
   ]
  }

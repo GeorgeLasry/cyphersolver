@@ -179,7 +179,8 @@
    "what": "R9660 read in part: ~57% of tokens resolve; ~150 code groups open with no decipherment on DECODE to value them.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2004 tokens, 139 types, es-golden-age order 4: reading -2.273 per letter; random keys -3.661 (z 6.5); key annealed onto shuffled ciphertext best -2.319 (mean -2.341, z 5.0); annealer on the real text -2.215. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2004 tokens, 139 types, es-golden-age order 4: reading -2.273 per letter; random keys -3.661 (z 6.5); key annealed onto shuffled ciphertext best -2.319 (mean -2.341, z 5.0); annealer on the real text -2.215. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reading_r9660.txt and reading_r9665.txt (cipher line with reading); key = sessa1524/key_working.md (linked); R9661-R9664 not transcribed (calendared in CSP Spain 2)", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 2004, "types": 139, "tokens_per_type": 14.42, "score": -2.273, "nulls": {"random keys": {"n": 200, "mean": -3.661, "sd": 0.213, "max": -3.126, "z": 6.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.341, "sd": 0.014, "max": -2.319, "z": 5.0, "p": 0.1429}}, "power": -2.215, "verdict": "pass", "notes": "claimed per-occurrence score -2.136; polyphony 0.086; 1562 unread tokens left out; annealer on the real text from random keys reached -2.215"}, 
   "method": "read after matching with key from external sources",
@@ -216,6 +217,26 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "the court's decipherments in Salazar A-31 (key source, via sessa1524) and R9665's margin note and interlinears (checks); four letters read at the time"},
     {"who": "bergenroth", "role": "prior solution", "note": "CSP Spain 2 nos. 534, 540, 541, 544 calendar four of the letters from the contemporary decipherments", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), nos. 534, 540, 541, 544, 545"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R9660",
+    "label": "R9660, Sessa, 20 Feb 1523 (RAH Salazar A-27 ff. 141r-147r)",
+    "transcription": "reading_r9660.txt",
+    "decryption": [
+     "reading_r9660.txt",
+     "reading_f141_sample.txt"
+    ],
+    "summary": "The Duke of Sessa, imperial ambassador in Rome, to Charles V, from his duchy: no contemporary decipherment and not calendared by Bergenroth. Transcribed in full and deciphered in part (about 57%) with the 1524 Sessa key; the file gives each cipher line (a) with its reading (b), open groups in [ ]; it opens on letters sent 'por via de Francia' and 'la letra al duque de Bari'."
+   },
+   {
+    "doc": "R9661-R9666",
+    "label": "R9665, Rome, 26 Apr 1523 (ff. 437-438)",
+    "transcription": "reading_r9665.txt",
+    "decryption": "reading_r9665.txt",
+    "summary": "A mostly clear letter on the arrest of Cardinal Soderini of Volterra, with three short cipher runs, all read: 'Su Santidad por esta bula es declarado contra Francia' (confirmed by a contemporary margin note), the Cardinal of Ancona 'muy buen servidor de V. Mt.', and 'Su Sd. mejoro ayer'. The other records of this group (R9661-R9664) are duplicates of letters Bergenroth calendared from the court's decipherments (CSP Spain 2 nos. 534, 540, 541, 544); their ciphers are not transcribed here, and R9666 is clear."
+   }
+  ],
+  "key_file": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/key_working.md"
  }
 }

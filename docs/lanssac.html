@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#structure">The cipher</a><a href="#key">The key, and how it was found</a><a href="#reading">Decipherment</a><a href="#siblings">The election letters, deciphered with the same k</a><a href="#april24">The letters of 24 April to Anjou and to Catherin</a><a href="#residuals">What remains uncertain</a><a href="#method">Method</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#structure">The cipher</a><a href="#key">The key, and how it was found</a><a href="#reading">Decipherment</a><a href="#siblings">The election letters, deciphered with the same k</a><a href="#april24">The letters of 24 April to Anjou and to Catherin</a><a href="#residuals">What remains uncertain</a><a href="#method">Method</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; complete &middot; 2,094 of 2,159 cipher signs (97.0%), every letter over 95%</span></p>
 <dl>
@@ -234,6 +234,773 @@ gutter takes the start of the line.</li>
 <li>Third pass (3 October 2026): every open group of ff. 154&ndash;156 cut out at twice the scale and read again; the key compared sign by sign with Tomokiyo&rsquo;s current table; ff. 160, 164 and 174 transcribed again at full scale with word-aligned groups; the share of signs giving sense measured per letter (<code>measure.py --letters</code>); controls rerun (&minus;1.94 to &minus;2.49 per character against &minus;3.8 to &minus;4.7 shuffled).</li>
 </ol>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>f. 124, to Charles IX, Warsaw, 26 April 1573 (no. 51)</h3>
+<p>Lanssac tells Charles IX that the obstacles in Thuringia, Meissen and the Mark of Brandenburg delayed him so that he reached Poland (Mezeritz) only on 25 February, and that without the escort of the King&#x27;s pensioners Alexander von Miltitz and George Luelz he would at the least have been detained; the ciphered passages hide the dangers Frenchmen met in Germany. The rest, in clear, refers to his recueil on Polish affairs.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f124.txt">ct_f124.txt</a></p><pre># f. 124 (canvas 242) cipher passages, own transcription 17 Sept 2026 from the 4417-px Gallica image.
+# Token labels are provisional glyph names, not readings. &#x27;|&#x27; = line break, &#x27;.&#x27; and &#x27;,&#x27; = marks in the MS.
+# Passage 1 (lines 1-4, after &quot;Sire&quot;)
+L1: s3 g N ff d IIII 3 x | x g N pi longs 8inf Ti ast Fq Lo B r oo 7 c
+L2: et phi x B , r s Z , T ast Lo , of Fq | Fq T s cross c phi g . ff r . phi y pi g Lo x B .
+L3: et T g 3 Fq x . Lo r phi c phi cross - | ast
+# clear: Les empeschementz et les plus grandes causes qui ayent este depuis deux ans lesquelles ...
+# Passage 2 (lines 9-10, after &quot;doubte&quot;)
+L9: cross T x . 8 c Ti oo g . ast 8 r . Ti phi x 3 ast s ot . ocross r Tl y x g Ti 7 cross ast . Lh
+L10: y pi g Lo x phi c ff 3 IIII Fq r . Tl - | pi B Lo
+# clear: La grace a Dieu ...</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/reading.txt">reading.txt</a></p><pre>BnF fr. 4735 f. 124 — Guy de Saint-Gelais de Lanssac to Charles IX, Warsaw, 26 April 1573.
+Cipher passages in [brackets] read 17 Sept 2026 with the key in key.tsv; ? marks an uncertain sign; {..} unread.
+Spelling as in the manuscript; abbreviations expanded in ( ).
+
+Sire, [despuis? les dangiers qu&#x27;encontrent en Allemagne les françois qui passent, et vostre ser{o r h e}]
+Les empeschementz et les plus grandes causes qui ayent esté depuis deux {ans?} {...} toute la Turinge,
+Misnie et Marche de Brandebourg m&#x27;ont tellement retardé que je n&#x27;arrivay en Polongne à Mezeritz que le
+vingt-cinq(iesm)e de febvrier. Et sans la faveur que j&#x27;ay receue d&#x27;aulcuns des serviteurs et pensionnaires de
+vostre Majesté, principalement des S(ieu)rs Alexandre de Militiz et George Luelz(?), qui me y ont accompagné
+avec bonne et forte troupe de leurs amis et assisté de leurs moyens, j&#x27;eusse sans doubte [pour le moins esté
+retenu ou empesché de passer oultre. Mais], la grace à Dieu, je me suis rendu il y a desjà long temps avec
+Monsieur de Valence, lequel m&#x27;a (en)seigné l&#x27;estat auquel estoient les affaires qu&#x27;il a bien et dignement
+commencées et continuées jusques icy, et dont j&#x27;ay faict ung recueil ensemble de ce que j&#x27;ay peu juger, lequel
+j&#x27;envoye à vostre Majesté. Et ne sçachant à présent rien digne d&#x27;escrire oultre le contenu audict recueil, sinon
+que j&#x27;ay receu la lettre qu&#x27;il a pleu à vostre Majesté m&#x27;escrire du xxiii(?) de febvrier, en obéissant à laquelle
+je me fauldray(?) à me comporter de sorte que j&#x27;espère que le bien de vostre service et les affaires qui sont à
+promouvoir par deçà en demeureront advancez. Je priray le Créateur vous donner, Sire, en très parfaicte santé
+très contente et longue vie. De Warsauvia, le xxvi(e) d&#x27;avril 1573.
+
+Token-by-token, passage 1 (ll. 1-3):
+  2 g N ff q9 IIII | 3 X g | hh pi s oo i X F Lo | B G nn 7 c et phi X sm | G s | Zc | ol X Lo | of F T s cross c phi g | qq G | phi? Y pi g Lo X sm | et u2 L g 3h F X | Lo G phi | c phi h ast
+  de s p u i s | l e s | d a n g i e r s | qu e n c o nt r e nt | e n | Allemagne | l e s | f r a n c o r(i?) s | qui | (r?) p a s s e nt | et v o s t r e | s e r | o r h e
+Passage 2 (ll. 9-10):
+  pour ol X | 8 c i nn g | ast st G | phi X 3h ast s ot | de4 G ll Y X g 7 h ast | 4h | Y pi g Lo X phi | c ff 3 sh F G | ll pi qq Lo
+  pour l e | m o i n s | e st e | r e t e n u | ou e m p e s c h e | de | p a s s e r | o u l t r e | m a i s
+Marginal glosses (decipherer&#x27;s hand, cut by the gutter): &quot;…es dangier&quot;, &quot;…d&#x27;Allemagne&quot;, &quot;…qui passent&quot;, &quot;moins esté retenu&quot;, &quot;…ou oultre&quot;.</pre></details>
+<h3>ff. 154r-v, to the duc d&#x27;Anjou, Warsaw, 24 April 1573 (no. 60)</h3>
+<p>On the eve of the Polish election, Lanssac reports to Anjou that the Lithuanian chiefs have promised their vote to him, which with the party already won should put the crown on his head, unless the Grand Seigneur&#x27;s recommendation of him, made with ruse through the voivode of Wallachia, brings some unexpected change.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f154.txt">ct_f154.txt</a></p><pre># BnF fr. 4735 no. 60, f. 154r (Gallica btv1b9060724s canvas 294): Lanssac to the duc d&#x27;Anjou, Warsaw, 24 April 1573.
+# Session 3 (2 Oct 2026) re-transcription from img/c294.jpg (deskewed: img/s154_deskew.png, 19 lines).
+# Format: &quot;@Lnn&quot; then a token line and a &quot;=&quot; reading line with the same number of &#x27;|&#x27; groups.
+#   Token labels as in key.tsv (new labels added this session are listed there). Groups follow plaintext words, not the
+#   manuscript separators. Reading: {..} = unread group (counted as unread), ? after a word = uncertain value, [..] = sign
+#   read but not in the key value (context value), &#x27;-&#x27; joins a word across lines.
+# Clear text before: &quot;... Depuis la conclusion desquelz&quot;  (block begins at the end of the clear line)
+# Gloss (inner margin, gutter-cut; only line ends survive): &quot;...que nous | ...causé l&#x27;autre | ...[me tr]ouble beaucoup |
+#   ...est que j&#x27;ay | ...de Lithuanie(?) | ...[ch]efz desquelz nous | ...prendre que donner | ...Roy a aucuns qui |
+#   ...qui sera de | ...importance | ...bonne part | ...[royau]me au Roy(?) | ...doubte ou vous | ...est grande |
+#   ...sur la teste | ...recommandé(e) | ...grand seigneur | ...[q]u&#x27;il a faicte | ...l&#x27;estime | ...par le Vaynode de |
+#   ...qui nous | ...[?]nament&quot;
+@L01
+de4 g ff
+= {et su-}
+@L02
+X i sm | i T q9 | pi Y F blot s g | hh ast ot Mx | 7 h c g X Lo | ol | u2
+= {-e i nt} | j&#x27;ay | aprins | deux | choses | l&#x27; | u-
+@L03
+s ast | B i | Gf | hh c 5 nn X | oo T i s D | 4h | 7 T ot Lo G | 3 | T ff sh
+= -ne | qui | me | donne | gaing | de | cause | l&#x27; | aut-
+@L04
+phi X | Ng i | Gf | 3 F c ff 4 3 X | 4 G pi ot 7 L ff Y | 3 T | Y phi ast 8
+= -re | qui | me | trouble | beaucoup | la | prem-
+@L05
+i X F ast | G st | B X | q9 pi i | G st X | pi ot | 4h u2 T sm | 4h g | 3 q9 sh ot H ns
+= -iere | est | que | j&#x27;ay | esté | au | devant | des | Lituans
+@L06
+3 G g | 7 h X of Mx | 4h g B X 3 sh | Gf c sm | Y F L 8 G g | s X | hh c nn
+= les | chefz | desquelz | m&#x27;ont | promis | ne | don-
+@L07
+5 s X phi | ol ast ot F | ot c G u2 | pi | T ot 3 sh F X | B blot G | pi | ot c
+= -ner | leur | voeu | à | aultre | que | à | vo-
+@L08
+u2 g
+= -us
+# clear: &quot;qui sera de telle importance que&quot;
+@L08b
+pi ff G 7 | 3 T | 4 L
+= avec | la | bo-
+@L09
+nn s X | qq sh | B G | Gf | pi ff c ns | T ot | F c q9 T ff 8 X | g T ns
+= -nne | part | que | nous | avons | au | royaume | sans
+@L10
+hh c ot 4 3 X | c 5 | ot c ff g | 8 G 3 sh F G | 7 X st ast | oo phi pi sm
+= doubte | ou | vous | mettre | ceste | grant
+@L11
+Z c u2 F L nn s X | g ot phi | 3 T | sh X st G | g q9 | 3 pi | F G 7 c ll sm8 T
+= couronne | sur | la | teste | si | la | recommanda-
+@L12
+s cross pi 3 q9 c s | hh ot | oo phi pi nn sh | g X i oo s G ot F | 3 pi B X ol
+= -ndation | du | grant | seigneur | laquel-
+@L13
+3 G | N | T | of pi q9 7 3 X | 4h | ot c ot u2 g | 7 c 8 ll X | q9 G st i 8 ast | pi
+= -le | [il] | a | faicte | de | vous | comme | j&#x27;estime | a-
+@L14
+ff X 7 | F ot g ast | qq | 3 G | ot pi q9 u2 c 4h | B ff i de4~ | 4h
+= -vec | ruse | par | le | vaivode | qui? | de
+@L14b
+3 T | u2 H 3 T B q9 X | Mu i G X st | qq sh i X s | T sm8 G q9 nn ast
+= la | Valaquie | qui est? | {qq sh i X s} | ameine
+# session 3 pass 2 (final retry with the extended key, full-scale check): Gf = nous before &#x27;avons&#x27; and before &#x27;esperons&#x27;
+# (gloss &#x27;...qui nous&#x27;); B ff i = qui after &#x27;vaivode&#x27; (the de4 after it is struck); Mu i G X st = qui est (doubled e);
+# T sm8 G q9 nn ast = ameine. x1 is the half-lost first sign of l. 19, the e of Dieu.
+# the first two groups of L14b are the end of L14 and the start of L15 in the manuscript (Valaquie runs across)
+@L15
+cd X 3 Ng X | q9 s G g Y X F ast | 7 h pi s oo X 8 G sm | B i | X st | 3 ast | g G 7 c s hh
+= quelque | inespéré | changement | qui | est | le | second
+@L17
+Y c q9 nn 7 sh | B i | Gf | hh c nn s X | ot nn ast | sh F pi ff X phi g G
+= poinct | qui | me | donne | une | traverse
+@L18
+4h | 3 pi B G ol 3 X | pi ot G 7 | 3 pi q9 4h | de4 ff mm sm | 4h | hh q9
+= de | laquelle | avec | l&#x27;aide | {de4 ff mm sm} | de | Di-
+@L19
+x1 ot | Gf | X g Y ast F c ns | s X T u2 8 c q9 s g | Lo c phi 3 i F
+= -[e]u | nous | esperons | neaumoins | sortir
+# clear after: &quot;Je seray aussi vous supplier tres humblement Monseigneur vouloir recommander le Sr de Balagny ...&quot;</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f154v.txt">ct_f154v.txt</a></p><pre># BnF fr. 4735 no. 60, f. 154v (canvas 297): Lanssac to Anjou, 24 April 1573, continued. Session 3 transcription.
+# Format as ct_f154.txt. The right ends of the cipher lines run into the gutter on the microfilm; signs lost there are
+# not counted (marked ~ in the reading). The decipherment is in the OUTER (left) margin of the verso and survives in full:
+# Gloss, block 1: &quot;Car je n&#x27;ay pas | cinquante escuz | et y ay emprunté | plus de xvᶜ aussy | estoit le party |
+#   [bien] belistre pour | venir si loing | demeurer si long | temps et faire | contrecarre a celuy | qui par beaucoup de |
+#   grandz dons ne | sçauroyt vaincre | les ... du frere(?)&quot;
+# Gloss, block 2: &quot;Je espere que dans | peu de jours tous | ceulx la avec beaucoup | d&#x27;aultres seront voz [subjectz]&quot;
+# Clear before: &quot;Monseigneur, ... ne pourroit faire sans l&#x27;argent pour ses affaires&quot;
+@A
+Z i X | s pi q9 | Y T g | 7 i s B pi s 3 X | G
+= car je | n&#x27;ay | pas | cinquante | e[scus]
+# ~ gutter: es[cus]
+@B
+ot Lo | cross c 8 obul | B X | q9 G s | pi i | ast nn Y F ff nn sh ast | Y 3
+= -us | combien | que | j&#x27;en | ay | emprunté | pl-
+# ~ gutter: [us]
+@C
+4h | Ng q9 s sh X | 7 ast s g
+= de | quinze | cens
+# clear: &quot;Aussi estois je party&quot;
+@C2
+obul | 4 X 3 i st F
+= bien | belistr-
+# ~ gutter: [e]
+@D
+pour | ot X s i F | Lo q9 3 c i s oo | de4 | 4h 8 X ot phi ast F | g i 3 c s oo sh X
+= pour | venir | si loing | et | demeurer | si longte-
+# ~ gutter: [mps]
+@E
+g | de4 | of T i F X | 7 c s sh phi ast | 7 pi phi F X | T | 7 X ff 3 Pi2 | B i
+= [longtemp]s | et | faire | contre- | -carre | à | celuy | qui
+# ~ gutter: [par] (gloss &quot;qui par beaucoup&quot;)
+@F
+4 X T ot 7 c u2 Y | 4h | oo phi T ns | hh L ns | nn X | g 7 pi ot F c sm
+= beaucoup | de | grans | dons | ne | sçauront
+# ~ gutter: [va]
+@G
+# pass 3 (3 Oct, full-scale re-read): the gloss ends at &quot;vaincre&quot;; the cipher continues &quot;le[s] nostre si inferieur&quot;
+# (the nostre: the French candidate); x2 = G (e of escus, rest in the gutter), x3 was not a sign, x4 = g (s of longtemps)
+q9 s 7 F X | 3 G g s c st F ast | Lo i | i s of X phi q9 ast ot F | Co sm
+= -incre | le[s] nostre | si | inferieur | {Co sm}
+# clear: &quot;... vous avoir fasché par ceste importunité pour m&#x27;excuser ... valdroient bien en France plus de trois cens escus la piece&quot;
+@H
+et | X g Y G F ast | B X | hh pi ns | Y X ot | 4h | q9
+= et | espere | que | dans | peu | de | j-
+# ~ gutter: [our]
+@I
+g | sh c ot Lo | 7 X ff 3 Pi2 | 3 pi | T ot X 7 | 4 X pi u2
+= -s | tous | ceulx | là | avec | beau-
+# ~ gutter: [coup]
+@J
+hh pi u2 sh F X g | Lo ast F c sm | ot L g | Lo ot 4 i X 7 sh
+= d&#x27;autres | seront | vos | subjectz
+# clear: &quot;Monseigneur, apres vous avoir baisé tres humblement les mains ... De Varsovie le xxiiije jour d&#x27;avril 1573&quot;</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/read_f154.md">read_f154.md</a></p><pre># f. 154r-v — Lanssac to the duc d&#x27;Anjou, Warsaw, 24 April 1573 (BnF fr. 4735 no. 60)
+
+Gallica btv1b9060724s canvases 294 (f. 154r), 297 (f. 154v). Session 3, 2 Oct 2026. Transcription: ct_f154.txt (recto),
+ct_f154v.txt (verso). Measured with `python measure.py ct_f154.txt` (measure.log).
+
+**Status: read** (README read bar: over 95 %, every open piece blocked by the gutter). Recto 439 of 454 cipher tokens
+read as sense (96.7 %); verso 221 of 223 (99.1 %, pass 3, 3 Oct 2026); the letter 660 of 677 (97.5 %). Key: key.tsv (session 1 key plus the session 3 rows). Control (control3.py): the raw first-value
+decode scores -2.25 / -2.20 per char under `fr-1600-letters` (no spaces) against -4.4 to -4.7 for the same tokens shuffled.
+
+Check against the contemporary decipherment: the recto gloss is in the inner margin and the gutter leaves only line
+ends; every surviving fragment agrees with the reading (&quot;…causé l&#x27;autre&quot;, &quot;…[me tr]ouble beaucoup&quot;, &quot;…est que j&#x27;ay&quot;,
+&quot;…[ch]efz desquelz nous&quot;, &quot;…prendre que donner&quot;, &quot;…doubte ou vous&quot;, &quot;…sur la teste&quot;, &quot;…recommandé&quot;, &quot;…grand seigneur&quot;,
+&quot;…[q]u&#x27;il a faicte&quot;, &quot;…l&#x27;estime&quot;, &quot;…par le Vaynode de&quot;). The verso gloss is in the outer margin and survives whole; it
+reads the first cipher block word for word as below.
+
+## Reading (cipher in italics; {…} unread)
+
+Clear: *… Depuis la conclusion desquelz* — cipher:
+
+&gt; {*et su-e i nt*} j&#x27;ay aprins deux choses, l&#x27;une qui me donne gaing de cause, l&#x27;autre qui me trouble beaucoup. La
+&gt; premiere est que j&#x27;ay esté au devant des Lituans, les chefz desquelz m&#x27;ont promis ne donner leur voeu à aultre que à
+&gt; vous, [clear: *qui sera de telle importance que*] avec la bonne part que nous avons au royaume sans doubte ou[1] vous
+&gt; mettre ceste grant couronne sur la teste, si la recommandation du Grant Seigneur, laquelle il a faicte de vous comme
+&gt; j&#x27;estime avec ruse par le vaivode qui(?) de la Valaquie, qui est(?) {5 signs} ameine quelque inespéré changement, qui est
+&gt; le second poinct qui me donne une traverse, de laquelle avec l&#x27;aide {4 signs} de Dieu nous esperons neaumoins sortir.
+
+[1] *ou* = *on* (the script-z sign 5, here as in *donne*). Sense: the Lithuanian lords have promised their vote to Anjou,
+which with the party he has in the kingdom would make the crown certain — unless the Sultan&#x27;s recommendation of Anjou,
+made (Lanssac thinks) with guile through the voivode of Wallachia, brings some unexpected change; that is the second
+point, a setback from which, with God&#x27;s help, they hope to come out.
+
+f. 154v, first block (clear before: *… ne pourroit faire sans l&#x27;argent*):
+
+&gt; Car je n&#x27;ay pas cinquante e[sc]us, combien que j&#x27;en ay emprunté plus de quinze cens. [clear: *Aussi estois je party*]
+&gt; bien belistre pour venir si loing et demeurer si longtemps et faire contrecarre à celuy qui [par] beaucoup de grans
+&gt; dons ne sçauront vaincre le[s] nostre, si inferieur {2 signs, gutter}.
+
+Gloss: &quot;Car je n&#x27;ay pas cinquante escuz et y ay emprunté plus de xvᶜ. Aussy estoit le party bien belistre pour venir si
+loing demeurer si longtemps et faire contrecarre a celuy qui par beaucoup de grandz dons ne sçauroyt vaincre …&quot;.
+
+Second block (clear before: *… plus de trois cens escus la piece*):
+
+&gt; Et espere que dans peu de jours tous ceulx-là avec beaucoup d&#x27;autres seront vos subjectz.
+
+Gloss: &quot;Je espere que dans peu de jours tous ceulx la avec beaucoup d&#x27;aultres seront voz [subjectz]&quot;.
+
+## Unread groups and why
+
+| place | signs | state |
+|---|---|---|
+| r l. 1-2 | de4 g ff X i sm | opening words after &quot;desquelz&quot;; gloss line cut to &quot;…que nous&quot; |
+| r l. 15 | qq sh i X s | before &quot;ameine&quot;; gloss end &quot;…nament&quot; does not reach it |
+| r l. 18 | de4 ff mm sm | after &quot;l&#x27;aide&quot;; no word under the key |
+| v l. 7 | Co sm | two signs after &quot;inferieur&quot;, half in the gutter |
+
+Pass 2 retry (2 Oct 2026, extended key, full-scale check): Gf = *nous* before *avons* and before *esperons*; B ff i =
+*qui* after *vaivode* (the sign after it is struck); Mu i G X st = *qui est*; T sm8 G q9 nn ast = *ameine*; the half-lost
+first sign of l. 19 is the *e* of *Dieu*. Pass 3 (3 Oct) on f. 154v: the gloss ends at &quot;vaincre&quot;; the cipher goes on &quot;le[s] nostre si inferieur&quot; (stacked 8 =
+*st*, Tomokiyo); the line-end signs of ll. 1 and 5 are the *e* of *escus* and the *s* of *longtemps*; one pass-1 token was
+not a sign.
+
+All gaps are on the microfilm gutter or in the faint lines of the recto gloss; nothing in the volume gives another
+copy (see NOTES, Remaining gaps).</pre></details>
+<h3>ff. 156-157, to Catherine de Médicis, Warsaw, 24 April 1573 (no. 61)</h3>
+<p>Lanssac tells Catherine that matters stand so that by next Monday she should be mother of the two greatest kings in the world, barring a change of minds, and fears that the Emperor might surprise them and that the King of Denmark, bending to his will, might give them much trouble on that side because of the strait, not half a league wide. The end of the letter (f. 157r) is in clear.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f156.txt">ct_f156.txt</a></p><pre># BnF fr. 4735 no. 61, f. 156r (canvas 300): Lanssac to Catherine de Médicis, Warsaw, 24 April 1573. Session 3 transcription.
+# Format as ct_f154.txt. Gloss in the inner margin, gutter-cut; line ends:
+#   block A: &quot;...[cho]ses sont de | ...[te]lz termes | ...[es]pere dedans | ...[prochai]n vous serez | ...[me]re des deux plus |
+#             ...[roy]s du monde | ...[n] quelque&quot;
+#   blocks B-C: &quot;...[pu]blique(?) a ne | ...mal faict | ...[Ma]jesté envoyast | ...vers le Roy de | ...[Danne]march non pour luy |
+#             demander passage | ...[con]sidere(?) | ...Imperiaulx&quot;
+# Clear before block A: &quot;... et de ceulx de mon maistre. Vous advisant, Madame, que&quot;
+@A1
+sm s cross hh de4 | 3 X g | 7 h c Lo ast g | Lo c sm | 4h Y phi X Lo ast
+= {sm s cross hh de4} | les | choses | sont | de prese-
+# de4 here is struck through in the manuscript (a deleted sign)
+@A2
+sm | ast s | 3 X 3 sh | sh ast F 8 X g | B G | q9 ast g Y X F G | 4h hh pi ns | 3 ot
+= -nt | en | telz | termes | que | j&#x27;espere | dedans | lu-
+@A3
+s hh q9 | Y F c 7 h T i nn | u2 c ff g | Lo X F ast sh | blot 8 X F ast
+= -ndi | prochain | vous | serez | mere
+@A4
+4h N | 4h ot sq | Y 3 u2 g | oo F pi s | phi c q9 Lo | hh ot | 8 c s 4h | Lo
+= des | deux | plus | grans | roys | du | monde | s&#x27;
+@A5
+i 3 | nn pi hh ot i X sm | B G 3 | Ng ast | 7 h T s oo X 8 ast sm | 4h ot
+= il | n&#x27;advient | quel | que | changement | de v-
+@A6
+c 3 u2 s sh ast sh | pour | Ng X 3 B G | oo F pi s 4h | h | i s c Y q9 s G X
+= -oluntez | pour | quelque | grande | {h} | inopinée
+@A7
+L 7 cross pi Lo i c s | hh L sm
+= occasion | dont
+# clear: &quot;Vous avez a rendre graces a Dieu ... afin qu&#x27;il n&#x27;empeschast le passage de son destroit en mer si Monseigneur estoit esleu&quot;
+@B1
+N | 8 X | g ast 8 4 ol X
+= il | me | semble
+@B2
+B ast | 7 X | s ast | Lo G F pi | Y T Lo | 8 pi 3 | of pi i 7 sh | ff G
+= que | ce | ne | sera | pas | mal | faict | {ff G}
+@B3
+ot c st F X | 8 T q9 ast st G | X s u2 c q9 pi st | Ng X 3 B
+= vostre | Majesté | envoyast | quelqu-
+@B4
+2 s oo | x5 | u2 X F g | 3 G | F c q9 | 4h | hh X s nn ast 8 T F 7 | s c nn
+= [u]ng | {x5} | vers | le | roy | de | Dennemarc | non
+@B5
+pour | 3 ot q9 | 4h 8 pi s 4h phi | Y T g Lo pi oo X | ot ast ff | B G
+= pour | luy | demander | passage | veu | que
+# clear: &quot;la chose n&#x27;est encores reduite a son effect. Mais bien&quot;
+@C1
+pour | 3 ot q9
+= pour | luy
+@C2
+of T q9 F X | ast s 3 G s hh phi X | Ng ast | 3 G g | i 8 Y X F ast pi ot 3 Pi2
+= faire | entendre | que | les | imperiaulx
+@C3
+nn c Lo | X s nn G 8 q9 Lo | ast s | 7 X | of H q9 7 3
+= nos | ennemis | en | ce | faict
+# clear: &quot;n&#x27;ont sceu objecter autre difficulté pour empescher la promotion de Monseigneur, sinon qu&#x27;ilz disent ...&quot;</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f156v.txt">ct_f156v.txt</a></p><pre># BnF fr. 4735 no. 61, f. 156v (canvas 301): Lanssac to Catherine de Médicis, Warsaw, 24 April 1573, continued.
+# Session 3, PASS 2 (2 Oct 2026): re-transcribed line by line at full scale from img/v156a_deskew.png and
+# img/v156b_deskew.png (crops img/F_v156a_*.png, F_v156b_*.png). Pass 1 (reduced scale) is kept as ct_f156v_pass1.txt.
+# Format as ct_f154.txt. Signs struck through by the writer are written with a trailing ~ in the label (e.g. &quot;Lox~&quot;)
+# and are left out of the count (measure.py skips labels ending in ~). Signs lost in the gutter are not counted.
+# The contemporary decipherment is in the outer (left) margin and survives nearly whole, a few lines behind the cipher:
+#   &quot;Mais de crainte que | l&#x27;Empereur cependant | ne nous surprenne et | que le Roy de Dannemarch | ayant obtemperé a sa |
+#   volunté ne nous | donnast beaucoup d&#x27;aff[aires] | de ce costé la a cause | du destroit qui n&#x27;a | pas demie lieue de |
+#   large et deux fortz | situez des deux costez | de venir par terre | Il n&#x27;y a aucune apparence | que monseigneur le doibve |
+#   faire aussi ne luy | vouldrois je conseiller | de se mettre a la mercy | de ceulx qui par tous | avec propos et actions |
+#   si monsieur estoit | ennemy(?) d&#x27;icy de la | France et specialement de | monseigneur ... | sont extremement marrys |
+#   s&#x27;il fault qu&#x27;il[z] | se voyent enclos de deux | si puissans roix ... | ...lez seront. Que mons. | seigneur vienne par l&#x27;Italie |
+#   et la Dalmace. Oultre | la difficulté longueur [du chemin] | la despense y seroit | trop grande. Car | j&#x27;estime que ces
+#   seigneurs | demanderont qu&#x27;il | amaine iiii mil gascons | dont vous avez ouy parler | Il ne me reste plus | a vous ...
+#   sinon | que vous recueilliez le | plus d&#x27;argent que vous | pourrez ensemble afin | que quant ces seigneurs de | deça
+#   envoyeront ambassad. | pour porter la couronne | a Monseigneur et y arriveront | ... vous ne soyez | lors empesché d&#x27;y
+#   trouver ... | sera hors de propos aussi de [commander] a ses estatz que leurs navires seront propres a l&#x27;embarquement
+#   et mettre en ordre les galleres pour pouvoir servir. J&#x27;en ose parler avec telle asseurance d&#x27;autant que [de ceste]
+#   nation il n&#x27;y a que quatre [serviteurs?] ... et que toute la noblesse crie pour avoir ung roy ...&quot;
+# Clear before L01: &quot;... on pourroit bien faire apres avoir esté advertys de la conclusion de ces estatz&quot;
+@L01
+8 cross g lf | hh X | Lox~ phi~ X~ | 7 F pi i s g | B ast
+= mais(gloss) | de | | crainte | que
+# 8 has &quot;mais&quot; written above it with a caret by the decipherer; the four-sign group recurs at L10 in the same place
+# (before &quot;si monsieur estoit&quot;), so it is read as one word sign group; signs struck by the writer after &quot;de&quot; not counted
+@L02
+of | hh pi sm | Nb | s i | Lo c i 3h | Y F X ot ast nn u2 | sm | Mu X 3h
+= l&#x27;Empereur | {hh pi sm} | il | n&#x27;y | soit | prevenu | et | que l[e]
+# gloss &quot;l&#x27;Empereur cependant ne nous surprenne et que&quot;: pass 3 at 2x: the group is d-a-nt (the tall stroke over pi is
+# the gloss&#x27;s descender) followed by the barred N &quot;il&quot; (Tomokiyo&#x27;s il); &quot;[cepen]dant&quot; is not written in full, left unread
+@L03
+7 3h | F Co q9 | 4h | hh X nn s ast ll pi F 7
+= {7 3h} | roy | de | Dennemarc
+# &quot;le&quot; expected before &quot;roy&quot;; the line end of L02 and start of L03 run into the gutter and the three signs give no word
+# clear: &quot;ayant obtemperé a sa volunté ne&quot;
+@L04
+Gf | hh c s nn T st | 4 X pi ot 7 c u2 Y | hh T
+= nous(gloss) | donnast | beaucoup | d&#x27;a-
+# Gf is &quot;me&quot; on ff. 154/156r; here the gloss has &quot;nous&quot; in &quot;ne nous donnast&quot;
+@L05
+pi i F X g | 4h | 7 ast | 7 Co st ast | 3 pi | T | cross T H ot Lo X | hh Ne
+= -ffaires | de | ce | costé | là | à | cause | d&#x27;est-
+# cross T H ... = c a a u s e with the a doubled at the turn; Ne (barred N with a loop) = est (new, C)
+@L06
+phi c q9 3h | B blot i nn | pi Y T g | 4h 8 i X | 3 q9 ast ot X | 4h | Mx 3h
+= -roit | qui n&#x27; | a pas | demie | lieue | de | {Mx 3h}
+# &quot;de large&quot; in the gloss: the two signs after &quot;de&quot; do not give &quot;large&quot; (the line ends in the gutter)
+@L07
+cross | 4h g | of c F 3h sh | g i 3h ot X sh | 4h g | 4h ot Mx | 7 c st X sh | 4h
+= {cross} | des | fortz | situez | des | deux | costez | de
+@L08
+qq phi Co | 3h X F phi ast
+= par? | terre
+# qq (8-like with strokes) is &quot;par&quot; on f. 160; the second and third signs are its flourish or &quot;ar&quot;; read with the gloss
+# clear: &quot;Il n&#x27;y a aulcune apparence que monseigneur le doibve faire, aussi ne luy vouldrois je conseiller&quot;
+@L09
+4h | ll X 7 3h F X | T 3 pi | 8 X F 7 q9 | 4h | cross X ot 3 Mx | Mu | B i
+= de | mectre | à la | mercy | de | ceulx | {Mu} | qui
+# clear: &quot;par tous ... propos et actions&quot;
+@L10
+8 cross g lf | Lo G | 8 c s st F X clov | ast~ st F X | ast nn
+= mais | se | monstrent | [e]stre | en-
+# pass 3 (3 Oct): the sign read &quot;B/f&quot; in pass 2 is the stacked 8 (Tomokiyo&#x27;s st); with it the line reads
+# &quot;se monstrent estre en[ne]mis jurez&quot; (clov, the clover sign, = -ment/-nt, as in &quot;special-ement&quot; at L12); the writer struck
+# the e of &quot;estre&quot;. The decipherer&#x27;s &quot;si monsieur estoit&quot; misread &quot;se monstrent estre&quot;. Pass 2&#x27;s &quot;mon frere&quot; is withdrawn.
+@L11
+8 i g | q9 ot F X sh | 4h | ol~ i | of F pi nn 7 X | de4~ | g q9 X 7 i pi 3
+= -nemis | jurez | de | {i} | France | | special-
+# pass 3: &quot;-nemis jurez&quot; (q9 = j); the gloss &quot;ennemy d&#x27;icy de la France&quot; agrees; {i} after the struck l is unread
+@L12
+X~ clov | 4h | 8 c s | sm Lo X i oo nn ast ot F | de4 | 3 X g 6 ot ast 3 sh
+= -ement | de | mon | seigneur | et | lesquelz
+@L13
+B | X Mx 3h F ast 8 G ll X B | 8 T phi F i Y | Lo q9 3 | of pi ot 3 3h | 6 q9 3
+= [so]nt | extremement | marrys | s&#x27;il | fault | qu&#x27;il
+@L14
+g X | ot c i X B | ast nn 7 3 c g | 4h | hh X ot Mx | Lo blot | i Y u2 i
+= se | voient | enclos | de | deux | si | puiss-
+@L15
+T s 3h sh | F c q9 g | 7 c 8 ll X | Nb sh | g X F c sm
+= -antz | roys | comme | ilz | seront
+# clear: &quot;Que monseigneur vienst par l&#x27;Italie et la Dalmace, oultre la difficulté et longueur du chemin la despence y seroit
+#   trop grande. J&#x27;estime que&quot;
+@L16
+de4 q9 g cross m B | 7 ast g | Lo ast q9 oo nn X ot F g | 4h 8
+= {de4 q9 g cross m B} | ces | seigneurs | dem-
+@L17
+4h F c sm | 6 i 3 | pi 8 X q9 s G | 6 T 3h F X | 8 i 3 | oo pi Lo
+= -anderont | qu&#x27;il | ameine | quatre | mil | gas-
+# 4h F c sm = de r o nt, with &quot;an&quot; lost in the gutter at the end of L16
+# clear: &quot;[gas]cons dont vous avez ouy parler. Il ne me reste plus a vous supplier tres humblement, Madame, sinon que vous&quot;
+@L19
+F de4~ cross~ B~ X 7 ast ot i | q9 X sh | 3 ast Y ol ot g | hh pi F oo X sm | 6 G ast~ F G sh | X s g ast 8
+= recuei- | -liez | le plus | d&#x27;argent | querez? | ensem-
+# struck signs after F are a correction by the writer; &quot;ll&quot; of &quot;recueilliez&quot; lost in the gutter
+@L21
+Pb cross nn | 6 G
+= {Pb cross nn} | que
+# gloss &quot;ensemble afin que&quot;; the three signs are not &quot;ble afin&quot;
+# clear: &quot;Quant les seigneurs de deça&quot;
+@L22
+pi 8 4 T | T 4h ot F g | X~ | Y c phi 3h X F | 3 T | 7 c ot F L nn s X | pi | sh
+= ambas- | -sadeurs | | porter | la | couronne | à | {sh}
+# &quot;pour&quot; is not written before &quot;porter&quot;; pi sh = &quot;a&quot; + the three-stroke sign, gloss &quot;a Monseigneur&quot; (not counted as read)
+@L23
+phi i ot X F c sm | Mu X F g | 3 u2 q9 | ot c Mu g | nn X g c i
+= -riveront | vers | luy | vous | ne soi-
+# gloss &quot;et y arriveront&quot;; the start of the word is in the gutter
+@L24
+c phi g | X 8 Y ast g 7 h X | G | hh ast s 3h F c u2 Mx~ X F | cross T
+= [l]ors | empesché | -e | d&#x27;en trouver | ca[r]
+# pass 3: G = e gives the feminine &quot;empeschée&quot; (the letter is to Catherine); cross T = ca[r] (gloss &quot;Car ilz halteront&quot;)
+# clear: &quot;Ilz halteront sa venue par deça le plus qu&#x27;ilz pourront pour beaucoup de raisons. Il ne sera hors de propos&quot;
+@L25
+pi ot g i | T | c 8 ll X s 7 G phi | pi of T i F X | ast st pi Mt | 6 X | 3h sh | s pi
+= aussi | à | commencer | à faire | estat | que | {3h sh} | na-
+@L26
+F X g | Lo X F c sm | Y F c Y F X g | X 3 | ast 8 4 pi F Gq X 8 ast
+= -vires | seront | propres | à l&#x27;? | embarqueme-
+@L27
+de4 | 4h | of pi i F X | 8 G 3h sh phi X | ast s | c F hh phi G | 3 X g | oo pi 3h
+= et | de | faire | mettre | en | ordre | les | gal-
+@L28
+X g | X~ Y c ot u2 c i phi | g X F ot i phi
+= -eres | pouvoir | servir
+# clear: &quot;J&#x27;en ose parler avec telle asseurance, Madame, d&#x27;aultant que&quot;
+@L29
+4h c | 7 3h T B X Lo i
+= {4h c} | {7 3h T B X Lo i}
+# gloss &quot;d&#x27;autant que de ceste nation&quot;; the 7 signs begin c-t-a and do not give &quot;ceste nation&quot; under the key
+@L30
+sh ast ot F g | blot Nb s | q9 X s pi | B ast | Mu G sh F X | 7 c s
+= -teurs | il n&#x27; | y en a | que | quatre? | con-
+# Mu G sh F X: Mu = qu (here), G = a?, sh = t: &quot;quatre&quot; with the gloss; marked ? (G = a not met elsewhere)
+@L31
+ast | Gf | de4 6 X 3h c ot sh ast | 3h G | s c 4 3 X g Lo G | 7 F q9 X
+= [-tr]e | nous | et que toute | la | noblesse | crie
+@L32
+u2 c i F | ot s oo | F c i | de4 | s c 8 ll X 8 G sm | ot X u2 3 G
+= [pour a]voir | ung | roy | et | nommement | veule[nt]
+@L33
+nn X pi u2 8 c i s g
+= neaumoins
+# clear: &quot;toutes choses sont en la main de Dieu&quot; (continues on f. 157r)</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f156v_pass1.txt">ct_f156v_pass1.txt</a></p><pre># BnF fr. 4735 no. 61, f. 156v (canvas 301): Lanssac to Catherine de Médicis, Warsaw, 24 April 1573, continued.
+# Session 3 (2 Oct 2026), FIRST PASS from img/c301.jpg (deskewed v156a, v156b) at 0.5-0.8 scale. Format as ct_f154.txt.
+# Cipher runs alternate with clear text across the page; the right ends of lines run into the gutter (lost signs not counted).
+# The contemporary decipherment is in the LEFT (outer) margin and survives almost in full on this verso. It is written as a
+# running text of the whole passage (clear words included), a few lines behind the cipher it explains:
+#   &quot;Mais de crainte que | l&#x27;Empereur cependant | ne vous surprenne et | que le Roy de Dannemarch | ayant obtemperé a sa
+#   volunté | volunté. Mais nous(?) | donnast beaucoup d&#x27;affaires | de ce costé la a cause | du destroit qui n&#x27;a [pas] |
+#   demie lieue de large et bien fortz | situez des deux costez de | venir par terre | Il n&#x27;y a aucune apparence |
+#   monseigneur en doibve | ... aussi ne luy | vouldrois je conseiller | de se mettre a la mercy | de ceulx qui par terre |
+#   avec propos et actions | si monsieur estoit | ...(e)nnemy(?) d&#x27;icy de la | France et special(ement) des(?) |
+#   monseigneur passe(?) qu&#x27;ilz | sont extremement marrys | S&#x27;il fault qu&#x27;il | se voyent enclos de deux | si puissans roix(?) |
+#   ...lez seront. Quant mons. | seigneur viendra par l&#x27;Italie | et la Dalmace. Oultre | la difficulté longueur du chemin |
+#   la despense y seroit | trop grande. Car | ...ces seigneurs | demanderont qu&#x27;il | [amaine?] ... quatre mil gascons |
+#   dont vous avez ouy parler | Il ne me reste plus a | vous supplier tres humblement | que vous recueilliez(?) |
+#   plus d&#x27;argent que vous | pourrez assembler afin | que quant ces seigneurs de | deça envoyeront ambassad(eurs) |
+#   pour porter la couronne | a Monseigneur ilz arriveront | vers luy(?) ... | ...bien empesché d&#x27;y trouver | ...sera hors de
+#   propos aussi de [demander, struck] armer(?) | a ses estatz que leurs navires seront propres ... | mettre en ordre les
+#   galleres pour pouvoir servir. J&#x27;en ose parler avec telle asseurance d&#x27;autant que ... | ...nation il n&#x27;y a que quatre
+#   ... | ...ville(?) en Monseigneur ...&quot;
+# Clear before L01: &quot;... necessairement venir en ce royaulme, c&#x27;est chose que tousjours on pourroit bien faire apres avoir esté
+#   advertys de la conclusion de ces estatz&quot;
+@L01
+8 cross g lf | hh X | Lox phi X | 7 F pi i 5 g | B ast
+= mais(gloss) | de | {Lox phi X} | crainte | que
+# 8 has &quot;mais&quot; written over it by the decipherer; Lox is struck through; g read t/e here (context of the gloss)
+@L02
+vo | hh llp Cq Nb 5 i Lo | c i 3h Y F X ot ast nn u2 st | M X 3
+= l&#x27;Empereur | {hh llp Cq Nb 5 i Lo} | {c i 3h Y F X ot ast nn u2 st} | {M X 3}
+@L03
+7 3h | F Co q9 | 4h | hh X nn 5 ast ll pi F 7
+= {7 3h} | roy | de | Dennemarc
+# clear: &quot;ayant obtemperé a l&#x27;emp[ereur] ... sa volunté, ne&quot;
+@L04
+Gf | hh c 5 nn T st | 4 X pi ot 7 c u2 Y | hh T
+= me | donnast | beaucoup | d&#x27;a-
+@L05
+pi i F X g | 4h | 7 ast | 7 Co st ast 3h | 3 pi | T | cross H ot Lo X | hh M
+= -ffaires | de | ce | costé | là | à | cause | {hh M}
+@L06
+phi c q9 3h | B blot i nn | pi Y T g | 4h 8 i X | 3 q9 ast ot X | 4h | 3 pi
+= -roit | qui n&#x27; | a pas | demie | lieue | de | la-
+@L07
+cross | 4h g | of c F 3h sh | g i 3h ot X sh | 4h g | 4h ot M | 7 c st X sh | 4h
+= {cross} | {4h g} | fortz | situez | des | deux | costez | de
+@L08
+phi q9 Co | 3h X F phi ast
+= {phi q9 Co} | terre
+# clear: &quot;Il n&#x27;y a aulcune apparence que monseigneur le doibve faire, aussi ne luy vouldrois je conseiller.&quot;
+@L09
+4h | ll X 7 3h 4h X | T | 3 pi | 8 X F 7 q9 | 4h | cross X ot 3 Pi2 | st i
+= de | {ll X 7 3h 4h X} | à | la | mercy | de | ceulx | {st i}
+# clear: &quot;par tous ... propos et actions&quot;
+@L10
+8 cross g lf | Lo Gf | 8 c 5 8 F X g X 8 F X ast
+= mais(gloss) | si | {8 c 5 8 F X g X 8 F X ast}
+@L11
+8 i g phi ot F X ll | 4h ol i of F pi nn 7 X | 3h | g Y X 7 i pi 3
+= {8 i g phi ot F X ll} | de la France | et | special-
+@L12
+X 8 | 4h | 8 L 5 | Lo X i oo nn ast ot F | 4h 3 X g | 6 ot ast 3 ll
+= -ement | de | mon- | -seigneur | {4h 3 X g} | {6 ot ast 3 ll}
+@L13
+6 | X M 3h F ast 8 L ll X g | 8 T phi F i Y | Lo q9 3 of pi ot 3 3h | 6 q9 3
+= {6} | extremement | marrys | s&#x27;il fault | qu&#x27;il
+@L14
+g X | ot c i X oo | ast nn 7 3 c g | 4h | hh X ot M | Lo q9 | i Y ot nn ot Y
+= se | voient | enclos | de | deux | si | {i Y ot nn ot Y}
+@L15
+T 5 3h ll | F c q9 g | 7 c 8 ll X | Nb | ll g X F c g
+= {T 5 3h ll} | roys | comme | il | {ll g X F c g}
+# clear: &quot;Que monseigneur vienst par l&#x27;Italie et la Dalmace, oultre la difficulté et longueur du chemin la despence y seroit
+#   trop grande. J&#x27;estime que&quot;
+@L16
+de4 q9 g cross m Co | 7 ast g Lo ast q9 oo nn X ot F g | 4h 8
+= {de4 q9 g cross m Co} | ces seigneurs | {4h 8}
+@L17
+4h F c Co | 6 i 3 | pi 8 X q9 5 of | 6 T 3h F X | 8 i 3 | oo pi Lo
+= {4h F c Co} | qu&#x27;il | {pi 8 X q9 5 of} | quatre | mil | gas-
+@L18
+c g
+= -cons
+# clear: &quot;dont vous avez ouy parler. Il ne me reste plus a vous supplier tres humblement, Madame, sinon que vous&quot;
+@L19
+F de4x cross qq X 7 ast ot
+= {F de4x cross qq X 7 ast ot}
+@L20
+q9 X ll 3h ast | Y ol ot g | hh pi F cross oo X Co | 6 Gf M F Gf ll | X 5 g ast 8
+= {q9 X ll 3h ast} | plus | d&#x27;argent | {6 Gf M F Gf ll} | ensem-
+@L21
+Pb qq i vo c Lo
+= {Pb qq i vo c Lo}
+# clear: &quot;Quant les seigneurs de deça&quot;
+@L22
+pi 8 4 T Y | T i 4h ot F | pour | oo c 3h X F | 3 T | 7 c ot F L nn 5 X | pi sh
+= ambas- | -sadeur | pour | porter | la | couronne | {pi sh}
+@L23
+u2 Co i F | ot s oo | F Co i | 4h | s Co 8 ll X | 8 Gf st ot X u2 3 Gf
+= voir | ung | roy | de | nomme | {8 Gf st ot X u2 3 Gf}
+# L23-L24 re-read at full scale (img/gc3.png, gc4.png); the first pass had them as &quot;vers luy vous ne soyez ... empesché&quot;, which was the gloss, not the signs
+@L24
+nn X pi u2 8 Co cross s g
+= neaumoins?
+# clear: &quot;Ilz halteront sa venue par deça le plus qu&#x27;ilz pourront pour beaucoup de raisons. Il ne sera hors de propos&quot;
+@L25
+pi ot g i | 7 c 8 ll X 5 7 G phi | pi oo T G F X | G 8 pi ll | 6 X 3 ll 5 pi
+= aussi | commencer | {pi oo T G F X} | {G 8 pi ll} | {6 X 3 ll 5 pi}
+@L26
+X g | Lo X F Co oo | Y q9 Co Y F X g | X 3 | ast 8 4 pi F Gf X 8
+= {X g} | seront | propres | {X 3} | {ast 8 4 pi F Gf X 8}
+# the remaining cipher lines of v156b (lines at y 1990-2170) and the clear close follow on f. 157r; not transcribed this pass</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/read_f156.md">read_f156.md</a></p><pre># ff. 156-157 — Lanssac to Catherine de Médicis, Warsaw, 24 April 1573 (BnF fr. 4735 no. 61)
+
+Gallica btv1b9060724s canvases 300 (f. 156r), 301 (f. 156v), 302 (f. 157r, clear only). Session 3, 2 Oct 2026.
+Transcription: ct_f156.txt (recto), ct_f156v.txt (verso, pass 2 at full scale; pass 1 in ct_f156v_pass1.txt). Measured
+with measure.py (measure.log).
+
+**Status: read** (README read bar). Recto 307 of 316 tokens read as sense (97.2 %); verso 614 of 645 (95.2 %, pass 3
+of 3 Oct 2026; pass 2 88.2 %, pass 1 67.2 %). The letter: 921 of 961 (95.8 %). f. 157r is clear (the end of the letter: &quot;… la main de Dieu. Lequel je
+supplie, Madame, vous donner en parfaite santé tres contente vie. De Varsovia le xxiiij jour d&#x27;avril 1573&quot;, and a
+postscript in clear about the Diet: forty thousand horse, the great tent, the Emperor&#x27;s ambassadors). Control
+(control3.py): raw decode -1.93 (recto) and -2.49 (verso, pass 3) per char against -4.4 to -4.7 shuffled.
+
+## Recto (f. 156r)
+
+Clear before: *Vous advisant, Madame, que* — cipher:
+
+&gt; {5 signs, one struck through} les choses sont de present en telz termes que j&#x27;espere dedans lundi prochain vous serez
+&gt; mere des deux plus grans roys du monde, s&#x27;il n&#x27;advient quelque changement de voluntez pour quelque grande {1}
+&gt; inopinée occasion, dont [clear: *Vous avez à rendre graces à Dieu …*]
+
+Gloss ends: &quot;…[cho]ses sont de&quot;, &quot;…[te]lz termes&quot;, &quot;…[es]pere dedans&quot;, &quot;…[prochai]n vous serez&quot;, &quot;…[me]re des deux plus&quot;,
+&quot;…[roy]s du monde&quot;, &quot;…n quelque&quot;. All agree.
+
+Second block (after the clear sentence on the Danish straits):
+
+&gt; il me semble que ce ne sera pas mal faict {2} vostre Majesté envoyast quelqu&#x27;ung {1} vers le roy de Dennemarc, non
+&gt; pour luy demander passage, veu que [clear: *la chose n&#x27;est encores reduite à son effect. Mais bien*] pour luy faire
+&gt; entendre que les Imperiaulx, nos ennemis en ce faict …
+
+Gloss ends: &quot;…mal faict&quot;, &quot;…[Ma]jesté envoyast&quot;, &quot;…vers le Roy de&quot;, &quot;…[Danne]march non pour luy&quot;, &quot;demander passage&quot;,
+&quot;…Imperiaulx&quot;. All agree.
+
+## Verso (f. 156v), pass 3
+
+The decipherment on the verso is in the outer margin and survives nearly whole as a running text a few lines behind the
+cipher; it was used as the crib and as the check. Pass 2 re-read all 33 cipher lines at full scale; pass 3 re-read every
+open group at 2x against Tomokiyo&#x27;s current table. Reading (cipher in plain type, [clear] in brackets, {…} unread):
+
+&gt; [… on pourroit bien faire après avoir esté advertys de la conclusion de ces estatz.] Mais de crainte que l&#x27;Empereur
+&gt; {[cepen]dant} il n&#x27;y soit prevenu, et que l[e] {…} roy de Dennemarc [ayant obtemperé à sa volunté, ne] nous donnast
+&gt; beaucoup d&#x27;affaires de ce costé-là, à cause d&#x27;estroit qui n&#x27;a pas demie lieue de {la(rge)}, {1} des fortz situez des
+&gt; deux costez de par terre. [Il n&#x27;y a aulcune apparence que monseigneur le doibve faire, aussi ne luy vouldrois je
+&gt; conseiller] de mectre à la mercy de ceulx {1} qui [par tous … propos et actions.] Mais se monstrent estre ennemis
+&gt; jurez de {1} France, et specialement de Monseigneur, et lesquelz [so]nt extremement marrys s&#x27;il fault qu&#x27;il se voient
+&gt; enclos de deux si puissantz roys comme ilz seront. [Que monseigneur vienst par l&#x27;Italie et la Dalmace, oultre la
+&gt; difficulté et longueur du chemin la despence y seroit trop grande. J&#x27;estime que] {6} ces seigneurs demanderont qu&#x27;il
+&gt; ameine quatre mil gascons [dont vous avez ouy parler. Il ne me reste plus à vous supplier tres humblement, Madame,
+&gt; sinon que vous] recueilliez le plus d&#x27;argent querez(?) ensem{ble af}in que [quant les seigneurs de deça]
+&gt; ambassadeurs porter la couronne à {Monseigneur, et y ar}riveront vers luy, vous ne soiez lors empeschée d&#x27;en
+&gt; trouver. Ca[r] [ilz halteront sa venue par deça le plus qu&#x27;ilz pourront pour beaucoup de raisons. Il ne sera hors de
+&gt; propos] aussi à commencer à faire estat que {[le]urs} navires seront propres à l&#x27;embarquement, et de faire mettre en
+&gt; ordre les galleres pour pouvoir servir. [J&#x27;en ose parler avec telle asseurance, Madame, d&#x27;aultant que] {de ceste
+&gt; nation … servi}teurs, il n&#x27;y en a que quatre con[tr]e nous, et que toute la noblesse crie pour avoir ung roy, et
+&gt; nommement veule[nt Monseigneur]. Neaumoins [toutes choses sont en la main de Dieu …]
+
+Where pass 3 departs from the decipherer: he wrote &quot;si monsieur estoit ennemy d&#x27;icy de la France&quot;; the cipher, with the
+stacked 8 as *st* (Tomokiyo) and the clover as *-nt*, reads &quot;se monstrent estre ennemis jurez de … France&quot; — the German
+princes, not Monsieur. Pass 2&#x27;s &quot;mon frere&quot; (from a supposed *f* value) is withdrawn.
+
+Sense: Lanssac fears that the Emperor will forestall them and that the King of Denmark, bending to the Emperor&#x27;s will,
+could make trouble at the Sound, less than half a league wide and fortified on both sides; going by land would put
+Anjou at the mercy of the German princes, who show themselves sworn enemies of France and of Anjou and are extremely
+sorry to see themselves shut in between two such powerful kings; the road by Italy and Dalmatia is too long and costly;
+the Polish lords will ask him to bring 4,000 Gascons; Catherine should gather all the money she can so that when the
+embassy comes to bring the crown she is not then embarrassed to find it, should reckon on the ships being fit for
+embarking and have the galleys made ready. Of the Polish lords only four are against them; the whole nobility cries
+out for a king, and namely wants Anjou.
+
+## Unread groups and why
+
+f. 156r: the 5-sign opening group (one sign struck through by the writer, the rest give *nt n c d ou*), one sign before
+*inopinée*, the 2-sign group *ff G* before *vostre Majesté* (gloss &quot;…mal faict&quot; ends the line), one sign after
+*quelqu&#x27;ung* (x5, a figure like &quot;S&quot; with bar: *homme*?).
+f. 156v: 31 tokens in 12 groups (listed in ct_f156v.txt with a note on each), all retried at 2x in pass 3. They sit at
+line ends against the gutter or under the decipherer&#x27;s overwriting, where the gloss paraphrases. Blocker: illegible
+(one microfilm digitisation only; NOTES, Remaining gaps).</pre></details>
+<h3>ff. 160, 164, 174, to Charles IX and Anjou, 1 and 9 May 1573 (nos. 63, 65, 70)</h3>
+<p>f. 160: the Polish nation is as venal as its German neighbours. f. 164: the Emperor has spent more than 300,000 écus in the negotiation against 30,000 on the other side and achieves nothing but to trouble Anjou&#x27;s design. f. 174 (Płock, 9 May), announcing the election: it succeeded against the will of the Grand Seigneur, the Emperor, the princes of the Empire, the King of Spain, the Muscovite and the King of Sweden.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f160.txt">ct_f160.txt</a></p><pre># BnF fr. 4735 no. 63, f. 160r (canvas 307): Lanssac to Charles IX, Warsaw, 1 May 1573. Session 3 pass 3 (3 Oct 2026),
+# word-aligned from img/c307.jpg (deskewed img/s160_deskew.png); supersedes the session-2 f160_tokens.txt.
+# Gloss (gutter-cut): &quot;…qui reste / …autant / …liberté à(?) / …gaigner / …comme son(t) / …[voi]sins&quot;
+# Clear before: &quot;... selon que les occasions des affaires premierement surviennent.&quot;
+@L01
+Z | q9 X | ffx G c i
+= car | je | veoy
+@L02
+ffq ast | 7 G st X | s T 3h q9 c nn | ast st | T u2 sh pi sm | ot X s pi 3 ast
+= que | ceste | nation | est | autant | venale
+# ffq = barred ff with a loop, qu (one occurrence, C); T in &quot;autant&quot; was misread as a barred N in session 2
+@L03
+et | Lo ot q9 ast 3h sh X | H | g G | 3 pi q9 g Lo X F | D pi i oo s G phi | pq | H F
+= et | sujette | à | se | laisser | gaigner | par | ar-
+# pq = looped 9, Tomokiyo&#x27;s &quot;par&quot;
+@L04
+D G sm | 7 c ll 8 X | g c sm | 3 ast g | H ol X 8 T ns | 3 ast ot F g | u2 c q9 Lo i ns
+= -gent | comme | sont | les | Alemans | leurs | voisins
+# clear: &quot;Ce jourd&#x27;huy ilz mettent en deliberation s&#x27;ilz doibvent prendre pour Roy ung Piaste ou ung prince estrangier ...&quot;</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f164.txt">ct_f164.txt</a></p><pre># BnF fr. 4735 no. 65, f. 164r (canvas 313): Lanssac to the duc d&#x27;Anjou, Warsaw, 1 May 1573. Session 3 pass 3 (3 Oct 2026),
+# word-aligned re-transcription at full scale from img/c313.jpg (deskewed img/s164_deskew.png). Format as ct_f154.txt.
+# Replaces the session-2 first pass f164_tokens.txt, which had skipped the first cipher line and merged several signs.
+# Gloss: inner margin, gutter-cut (&quot;…négotiation&quot; survives); used only as a check.
+# Clear before: &quot;... c&#x27;est de latin et d&#x27;argent, et a bonne quantité, car il y aura de quoy l&#x27;employer&quot;
+@L01
+X s | 3h c ot sh G g | Lo c F 3h X g | Xp | c | u2 ast s q9 phi | pi
+= en | toutes | sortes | pour | {c} | venir | à
+# Xp = the slanted cross, Tomokiyo&#x27;s &quot;pour&quot;; the c between &quot;pour&quot; and &quot;venir&quot; gives no word (&quot;pour o-venir&quot;): left unread
+@L02
+ot c st F X | 4h g i phi
+= vostre | desir
+# clear: &quot;A quoy nous ne fauldrons, de tousjours, comme nous avons faict, de faire fidellement et diligemment nostre debvoir,
+#   mesmes a remonstrer les traverses de nos contraires qui n&#x27;y espargnent rien pour nous empescher&quot;
+@L03
+Z | g i | q9 ot g 6 X Lo
+= car | si | jusques
+@L04
+7 q9 | Mc | pi | 4h g Y X s hh ff | 3h F X s sh ast | 8 i 3 | X g 7 u2 Lo | ast s
+= cy | {Mc} | a | despendu | trente | mil | escus | en
+# Mc = large M with a hooked c-stroke before it, a word sign (the subject who spent 30,000 écus: the King or Anjou&#x27;s side);
+# not in the key and not glossed; left unread
+@L05
+7 X st G | nn ast D c cross q9 pi 3h q9 c s | Ef | X s | q9 | pi | 4h g Y ast s hh ff
+= ceste | negotiation | l&#x27;Empereur | en | y | a | despendu
+# Ef = tall dagger with loop, the word sign l&#x27;Empereur (gloss f. 174 &quot;de l&#x27;Empereur&quot; beside it)
+@L06
+Y 3 ot g | 4h | 3h F c i g | 7 X ns | 8 q9 3 | et | s q9 | of pi i 7 3h | sh c ot
+= plus | de | trois | cens | mil | et | n&#x27;y | faict | tou-
+@L07
+3h X of hhx c i g | F q9 X s | 6 q9 | ot pi i 3 ol X | Xp | Lo c q9 | 8
+= -tefois | riens | qui | vaille | pour | soy | m-
+# hhx = the double cross with slanted bars, here o in &quot;toutefois&quot; (one occurrence, C)
+@L08
+T i g | Lo ast ot 3 ast ll G sm | i 3 | 3 q9 | 3h F c u2 4 3 X | ot c st
+= -ais | seulement | il | {3 q9} | trouble | vost-
+# &quot;il le trouble&quot; is the sense; the second sign is the i/j sign, giving &quot;li&quot;; left unread
+@L09
+phi X | 4h g ast q9 s D | of H i g pi sm | 3 X | Y i g | 6 q9 3 | Y X ot 3 sh
+= -re | desseing | faisant | le | pis | qu&#x27;il | peult
+@L10
+7 c s 3h F X | ot c ff g
+= contre | vous
+# clear: &quot;Encores ne veulx je faillir, Monseigneur, de vous ramentevoir ...&quot;</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/ct_f174.txt">ct_f174.txt</a></p><pre># BnF fr. 4735 no. 70, f. 174r (canvas 329): Lanssac to Charles IX, Plock, 9 May 1573. Session 3 pass 3 (3 Oct 2026),
+# word-aligned from img/c329.jpg (deskewed img/s174_deskew.png); supersedes the session-2 f174_tokens.txt.
+# Gloss (left margin, partly cut): &quot;…la volunté et / …du Grand / …eur, de l&#x27;Empereur / …[prince]s de l&#x27;Empire /
+#   …de Spaigne / …secours et du / …Suède, qui tout / …bandez contr[e] / …Majesté&quot;
+# Clear before: &quot;... et qui est reussy tant heureusement&quot;
+@L01
+cross c s sh F X | 3 pi
+= contre | la
+@L02
+ot Co ol u2 s 3h ast | et | 8 X s G ast g | hh ff | D phi G sm
+= volunté | et | menees | du | Grant
+# &quot;Grant&quot;: G read a here (gloss &quot;du Grand&quot;); elsewhere G = e
+@L03
+Lo X i D s G ot phi | 4h | Ef | 4h g | Y F i s cross X g | 4h | 3 ast 8
+= Seigneur | de | l&#x27;Empereur | des | princes | de | l&#x27;Em-
+@L04
+P q9 phi G | hh ff F c q9 | 4h g Y pi q9 D s X | hh ot | 8 c Lo 7
+= -pire | du roy | d&#x27;Espaigne | du | Mosc-
+@L05
+u2 q9 3h X | et | dT ot | phi c q9 | 4h | g u2 X 4h | Ng i | 3h Co ot g
+= -ovite | et | du | roy | de | Suede | qui | tous
+# dT = Tomokiyo&#x27;s row-1 d (a T with the bar to the left); the o of Moscovite is not written
+@L06
+G st c i X sm | 4 pi s 4h sh | cross c s sh F X | ot c st phi G | 8 pi
+= estoient | bandez | contre | vostre | Ma-
+@L07
+q9 G st ast
+= -jesté
+# clear: &quot;Si est ce que j&#x27;auray encores plus d&#x27;occasion de louer Dieu ...&quot;</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/read_f160_f174.md">read_f160_f174.md</a></p><pre># ff. 160, 164, 174 — Lanssac&#x27;s letters of 1 and 9 May 1573 (BnF fr. 4735 nos. 63, 65, 70)
+
+Session 3, pass 3 (3 Oct 2026): word-aligned re-transcriptions from the full-size scans (ct_f160.txt, ct_f164.txt,
+ct_f174.txt), decoded with key.tsv and Tomokiyo&#x27;s current table, measured with `python measure.py --letters`
+(measure.log). They supersede the session-2 first passes (f160/f164/f174_tokens.txt, reading_siblings.txt).
+
+| letter | read as sense | open |
+|---|---|---|
+| f. 160, to Charles IX, Warsaw, 1 May (canvas 307) | 91 / 91 = 100 % | — |
+| f. 164, to Anjou, Warsaw, 1 May (canvas 313) | 203 / 207 = 98.1 % | word sign Mc; one stray *c*; *l?* in &quot;il l[e] trouble&quot; |
+| f. 174, to Charles IX, Płock, 9 May (canvas 329) | 123 / 123 = 100 % | — |
+
+Control (control3.py): raw first-value decode −2.26 / −2.11 / −1.94 per char against −3.8 to −4.3 shuffled.
+
+## f. 160
+
+&gt; [… selon que les occasions des affaires premierement surviennent.] Car je veoy que ceste nation est autant venale et
+&gt; sujette à se laisser gaigner par argent comme sont les Alemans, leurs voisins. [Ce jourd&#x27;huy ilz mettent en
+&gt; deliberation s&#x27;ilz doibvent prendre pour Roy ung Piaste ou ung prince estrangier …]
+
+Session 2 had *et?* and *par* by context; the o-with-cross is Tomokiyo&#x27;s *et*, the looped 9 his *par*; the first sign of
+*autant* is the tall T, not a barred N.
+
+## f. 164
+
+&gt; [… car il y aura de quoy l&#x27;employer] en toutes sortes pour {c} venir à vostre desir. [A quoy nous ne fauldrons … de
+&gt; remonstrer les traverses de nos contraires qui n&#x27;y espargnent rien pour nous empescher,] car si jusques cy {Mc} a
+&gt; despendu trente mil escus en ceste negotiation, l&#x27;Empereur en y a despendu plus de trois cens mil, et n&#x27;y faict
+&gt; toutefois riens qui vaille pour soy; mais seulement il l[e] trouble vostre desseing, faisant le pis qu&#x27;il peult contre
+&gt; vous. [Encores ne veulx je faillir, Monseigneur, de vous ramentevoir …]
+
+Session 2 had skipped the first cipher line and left four runs unread; pass 3 reads them: *en toutes sortes pour venir
+à vostre desir*, *car si jusques cy … a despendu trente mil escus*, *et n&#x27;y faict toutefois riens qui vaille pour soy;
+mais seulement*, *vostre desseing*. {Mc} is a word sign (the party that spent 30,000 écus, against the Emperor&#x27;s
+300,000: the King&#x27;s side, or a Polish faction) with no key entry and the gloss cut by the gutter.
+
+## f. 174
+
+&gt; [… en un affaire de telle importance et qui est reussy tant heureusement] contre la volunté et menees du Grant
+&gt; Seigneur, de l&#x27;Empereur, des princes de l&#x27;Empire, du Roy d&#x27;Espaigne, du Moscovite et du Roy de Suede, qui tous
+&gt; estoient bandez contre vostre Majesté. [Si est ce que j&#x27;auray encores plus d&#x27;occasion de louer Dieu …]
+
+The session-2 run {st T ot} after *Moscovite* was a misdivision; every sign now reads. Two irregularities, both forced
+by the gloss: Γ (elsewhere *e*) stands for *a* in *Grant*, and *Moscovite* is written without its second *o*.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lanssac/key.tsv">key.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/lanssac.json"></figure>
 <!-- replay:end -->

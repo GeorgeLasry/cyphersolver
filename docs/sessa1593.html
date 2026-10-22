@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#pieces">What the three pieces are</a><a href="#keys">Two keys, published as images</a><a href="#office">The office key, and its nomenclature</a><a href="#reading">The decipherment</a><a href="#open">What is open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#pieces">What the three pieces are</a><a href="#keys">Two keys, published as images</a><a href="#office">The office key, and its nomenclature</a><a href="#reading">The decipherment</a><a href="#open">What is open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Three Spanish despatches of 1593 (the Conde de Miranda to the duque de Feria, the duque de Sessa to Diego de Ibarra, and Sessa to Philip&nbsp;II) are listed in the catalogue with no decipherment and cited only by piece number. The BnF <em>d&eacute;pouillement</em> gives their folios, and the leaves were found on the images: ff.&nbsp;98, 162 and 108. Satoshi Tomokiyo had reconstructed their cipher, the Spanish office cipher of 1592&ndash;93, and published it as an image file, like the Maisse keys, which a text dump of his page drops. His table gives only the letters and syllables. The code list (the nomenclature) is missing, and code groups are frequent enough on these leaves to leave gaps in every line. The catalogue entry says <em>&ldquo;verify first &hellip; DECODE for Sessa&rdquo;</em>. DECODE&rsquo;s only two records for these correspondents are keys, both in the Nevers cipher book BnF fr.&nbsp;3995. Folio&nbsp;97 of that volume is the Spanish office&rsquo;s own key: alphabet, syllable table (identical to Tomokiyo&rsquo;s) and the full code list. <em>Status: the key was known, and the work was locating the leaves and the office key, transcription and decryption. Measured as sense, 1,212 of the 1,310 cipher groups (92.5%) read, in agreement with the 1593 gloss on no.&nbsp;47; scattered groups remain open in each.</em> The fourth letter of the catalogue item, Ibarra&rsquo;s from Paris of 10 July 1593 (fr.&nbsp;3984 no.&nbsp;68), is in another cipher, the Feria&ndash;Mansfeld key, and has its own page: <a href="ibarra1593.html">Ibarra from Paris, 1593</a>.</div>
 
@@ -145,6 +145,631 @@
 <li>The other leaves of fr.&nbsp;3995 near the key (ff.&nbsp;94, 96, 98) hold further Spanish keys of the same office, including the one already identified here as <em>&ldquo;1592 / Chifre d&rsquo;entre le Duc de Parme et le Roy Cath[olique]&rdquo;</em> at f.&nbsp;98. They have not been worked.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>fr. 3983 no. 45, f. 98: Miranda to Feria, Naples, 25 Feb 1593</h3>
+<p>The Conde de Miranda, at Naples, to the Duque de Feria, in the Spanish syllabic cipher of 1592-93: advice on a confidant to be used &#x27;con este achaque&#x27;, a business &#x27;a costa de la bolsa&#x27;, and a request that a person be chosen through whom he can be written to without it being understood. Read line by line with the office key (BnF fr. 3995 f. 97); reading45.md gives cipher and reading per line, sense.tsv the 5 Oct re-transcription with its scoring.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/reading45.md">reading45.md</a></p><pre># fr. 3983 no. 45, f. 98 (canvas 178) — Conde de Miranda to the duque de Feria, Naples, 25 Feb 1593
+
+Cipher: the Spanish syllabic cipher of 1592-93. Key: the office original, **BnF fr. 3995 fol. 97**
+(Gallica btv1b525085665, canvas 188), found through DECODE records 4076/4077. Tomokiyo&#x27;s published
+table (`phelippes2.png`) gives the same syllables but no nomenclature.
+
+Transcribed from the native 4810x6996 scan, deskewed (-3.0°) and cut into centred line strips
+(`deskew.py` -&gt; `D98/`). Line numbers are of the deskewed strips. `·` marks a group not yet resolved.
+Diacritics: dot above = final -l, `+` = -m, dot after = -n, `:` = -r, `^` = -s, ring = -h-,
+hook = -l- or -r-, bar = the number itself, umlaut = doubled consonant, T = nomenclature.
+
+| line | cipher | reading |
+|---|---|---|
+| 1 | ṅ ∂i 16. n̂ 81 ʒ 1̊9 73 73 92 n. 21 16. 27 23. 81 · 50T | **el** [alla] **con este achaque, que siendo confidente** · |
+| 2 | se 91 68 ũ 4 68 15 75: · 29 n · 4 î6 80 23 45 i̇3 | · **se po**[drá] **procurar** · **fue** · **a costa de la bolsa** |
+| 3 | 90 · 50T se 38 66 94 68. 31 73 40 89 23 91: 68 ũ ʒ | · **yo supongo que hava de ser** · |
+| 4 | 91: · hur 68 88 1̊6 94 76 92 23. 17 4 n. · 38 n̂ 17 87 | **ser** · [**mucho**] · **residencia en** · **yo es**· |
+| 5 | 93 11 n̂ 83 4 Val 9 48 40. ⊤o 5̲7 4 0 57 82 21 9 ʒ 92 18 | **sobre esto a** [Val·] · **lo han** · **mi** · **mitido** · |
+| 6 | ʒ 73 40 89 24 21 50 4 30 64 Vor 4 · 93 ũ n ä8 9 92 | **a que hava dado ya alguna** [Roma] **a** · **so**· |
+| 7 | 61 · 88. 75 48 73 n. n̂ 83 16. 88: 64 40 705: 73 38 | **no** [se] **verá lo que en esto convernà hazer, que yo** |
+| 8 | 56 76 57 83 ʒ 94 69 23. 17 4 93 48 46 94 67 16 73 | **me remito a su prudencia. Solo le suplico que** |
+| 9 | 84 87 n 76 ral 56 55 23 ʃep: 16 6̲1T 45 66: 93 64 73 91 | **tuviere** [lettera] **me mande** [causa]**r** · **la persona que se** |
+| 11 | n 46 32 75 9 4 21.23 46 68 ũ ʒ38 n̂ 12 4: ʒ 24: | **elegirá** · **donde le po**[drá] · **escrib**[i]**ar a dar** |
+| 12 | ä 30. 76 19 21 92 29 n · ner ä 65 · ʒ ʒe se 69 n | **algun recado, si fue**[re] · **al pa**· · **se pue**[de] |
+| 13 | 24 91: 23 cer 73 61 91 n. 82 n. 24 68: 73 45 43 75 73 | **dar de manera que no se entienda, por que la hora que** |
+| 14 | 46 81. 34. 68: pir 66: 23 75 hur ∆ 72 45 81 n nor 7· | **le tengan por** · **perderá mucho**[s] · **la te**· [negocios] |
+| 15 | · n · 31 73 69 n 23 40 705: ʒ ʃo 55 23 a 64 55 | · **que puede hazer a** [en] **made una ma**· |
+
+**Every cipher line on the leaf is read.** Band 10 of the deskewed strips is not a cipher line at all: it is a
+blank gap carrying only show-through from the verso. What remains open is the groups marked `·` within the
+lines — mostly rarer nomenclature and a few diacritics ambiguous at this resolution. The last line runs into the clear
+*&quot;Dios Gu. al S. de Nap.s a 25 de hebre.o 1593&quot;*, Miranda&#x27;s signature and the docket *&quot;S. duq de feria&quot;*.
+
+## Sense
+
+Miranda writes to Feria under cover of an errand (*con este achaque*) and as a confidant; the business can
+be pursued, but **at the expense of the purse** (*a costa de la bolsa*), and he **supposes it will have to
+be** so. Residence; Rome; what has already been given. **No one will see what it will be fitting to do in
+this, and I refer myself to his prudence. I only beg him that** — when he has a letter — **he have the person
+who** … **write to give some message, if it should be** … **and to do it in such a way that it is not
+understood, because the hour that** … he will **lose much** …
+
+Code groups resolve from the office key: *hur* = **mucho**, *cer* = **manera**, *ʃes* = **aviso**,
+*ra* = **lettera**, *vul* = **estados**, *vos* = **Roma**, *nor* = **negocios**.</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/sense.tsv">sense.tsv</a></p><pre># Sense measure, 5 Oct 2026. Every cipher line re-transcribed from the Gallica images at 3200-3600 px (crops of the cipher block;
+# img3983/r0178_*, r0286_*, img3984/r0198_*, r0268_*). A token counts as READ only when it is part of a word that reads as Spanish
+# sense in its context (nulls identified from the f. 97 sheet count as read). Doubtful readings (&#x27;?&#x27;) and code groups without a value
+# count as UNREAD. no. 47: tokens under a legible contemporary gloss count as read where the gloss gives the word.
+# doc	line	tokens	read	unread groups	reading (Spanish, modern word division)
+no45	1	18	18		el, alla, con este achaque, que siendo confidente de S.M. [9̈5 = de, f. 97]
+no45	2	18	17	se	· se podria procurar, assi [ʃo] fuesse a costa de la bol-
+no45	3	17	14	se 66 ʒ	-sa de [9̈4] S.M. · yo · supongo que havra de ser, podria ·
+no45	4	18	17	ʒe	ser de mucho provecho su residencia en [ʒe] · yo escrivi
+no45	5	20	16	Val T°# 5̲7 4	sobre esto a [Val] y lo han · · · omitido, y assi cre-
+no45	6	19	18	9̈1	-o que havra dado [5̈0 null] alguna (written a-gu-na) opinion a · sobre ello, y si
+no45	7	16	16		no se vera lo que en esto convernà hazer, que yo
+no45	8	18	18		me remito a su prudencia. Solo le suplico que si
+no45	9	18	16	ral ʃep:	tuviere [ral] me mande [ʃep:] con tiempo la persona que se
+no45	10	18	17	ʒ	elegira, y adonde le podria · yo embiar a dar
+no45	11	18	16	ner ʒe	algun recado si fuesse [ner] al passar a [ʒe], se pue-
+no45	12	17	17		-da ser de manera que no se entienda, porque la hora que
+no45	13	16	10	pir ∆ 72 45 8̂1 ṅ	le tengan por [pir] perdera mucho · · · · · [nor?] res-
+no45	14	17	16	i3	-peto · servicio que puede hazer a S.M. mas de una ma-
+no45	15	6	4	2 89	-nera que de · ·  (then clear: Dios Gu. ... a 25 de hebrero 1593)
+no79	1	23	23		de ver los testimonios que a todos levantan, creo que avra sido a
+no79	2	22	20	4 dir	proposito mostrar la · a Su Santidad [4̈9] para [dir] particularmente enterar al legato de su intencion; lastima ten-
+no79	3	26	22	ʃ 4 87T fe4^	-go al señor duque [pal] de Feria · · · · que han de tratar con personas tan ambiciosas
+no79	4	27	25	ʃ 9.	· · constantes; si bien los que bivimos en Roma no deseemos de tener experi-
+no79	5	24	24		-encia de lo uno e de lo otro, e si por un aviso que no dura 4 dias ni
+no79	6	23	22	mal^	passa a los sucesores se hazen tan estraordinarias [mal^] no me ma-
+no79	7	26	24	57 is	-ravillo que se ofrezcan · di-fi-[is]-tades en la election de un señor; con todo esso
+no79	8	26	23	ʃT 0 21	es negocio tan · portante a la cristiandad · que espero que le ha de · vo-re-cer
+no79	9	25	20	mil 90 34 se xom	[mil] de manera que · · · conviene, que entre los principes que siguen la [xom] hoy di-
+no79	10	26	24	vu xor?	-versas pretensiones, e poca [vu], e cada uno pretenda para [xor] si, no me espanto
+no79	11	25	24	as	[as] no puedo dexar de hazerlo, a lo menos de que no esten ministros conformes
+no79	12	28	27	is	e unidos en la · sion de los de la sangre, e desengañados de que no se pue-
+no79	13	24	24		-den fiar de ninguno dellos. A proposito, de ver es particular cuan embarcado ha quedado el duque
+no79	14	23	21	rili xom	por la carta de [Des]portes, dixe ayer a mi proposito que se la llevo, que es [rili] de la [xom]
+no79	15	26	26		le avia mostrado unas cartas del duque en que le escrivia que assi [ʃo] devia agrade-
+no79	16	26	24	mos 86T	-cimiento a la [mos] [86T] de Desportes; todavia le avia pesado que uvie-
+no79	17	25	24	mil	-sse tratado de sus personas con Su Santidad, porque sabia [mil] que el no tenia ambicion
+no79	18	22	21	ʃer#	ninguna, sino que su fin [ʃer] era desear que se hiziesse election de un Rey qua-
+no79	19	24	21	quaʃ n. 4	-l mas, aunque para la conservacion de la religion · · · que Reyno e poderoso para de-
+no79	20	24	22	h̊o ho	-fenderle, e que [h̊o] lo asegurase de su parte a Su Santidad, e [ho] dicho la firmeza
+no79	21	25	17	∆ ʃ 21^ n̂ 23 11 4: 63	con que estavan, no dar · · · a la paz que proponia · · · · que
+no79	22	26	26		porque negocios en que convenia que abriesse mucho los ojos Su Santidad e no le engañassen
+no47	1	24	24		a 30 del passado con correo propio avise a V.M. largamente todo lo que aqui se ofre-   [gloss above]
+no47	2	26	26		-cia en particular sobre la materia de Francia, de que en(vi)ado correo duplicados   [gloss]
+no47	3	25	25		por via de mar e tierra e ha ydo difiriendo de dia en dia el despacho, otro correo   [gloss]
+no47	4	24	23	∂ir	a V.M. esperando a ver si venia alguna nueva cierta de Paris, de don de la [∂ir]   [gloss]
+no47	5	26	22	hir^ ʃ 20 75	a V.M. fresca carta con que me hallo de los [hir] de V.M., es de don Diego de · · ·
+no47	6	26	26		de los 28 de abril, con una copia de lo que escrivio a V.M., e tambien se que
+no47	7	22	19	95 n̂ xir	· · [xir] de que no tiene cartas del legato muchos dias, e creo sin duda que
+no47	8	22	19	xox lir ʃep:	se deven de perder los correos; a me · cido con este que passa de [lir] [ʃep]
+no47	9	27	25	48 21	a V.M. de recibo de la carta que mando V.M. es servirme · · de mayo, e llego aqui a
+no47	10	25	22	ī9 ∂ir 48	los · deste e de lo de [∂ir], que sobre esto negocios se ofre · reservando es res-
+no47	11	17	17		-ponder a otras cartas de V.M. para con otro, por no detener este
+no47	12	25	25		el dicho dia de recibir esta carta tuve a la tarde audiencia de Su Santidad, e
+no47	13	25	23	hum us	antes de ir a ella me envio el [hum] del duque de Mantua a la carta de su amo [us]
+no47	14	26	24	ho 35	· copia va con esta. A dicho tiempo que yo salia de mi posada e [ho] la lei en el
+no47	15	25	24	yos	coche, e por [yos] que en ella me encomienda, resolvi de no dezir nada
+no47	16	24	23	4̈9?	a Su Santidad, si no me hablasse en ello; assi pensava contar de lo que V.M. me escri-
+no47	17	24	23	ru	-ve de Gondi y de Pisani, ver si Su Santidad me apuntava algo desta [ru] del duque
+no47	18	27	20	26 56: 19: 4 88h 66 4	de Mantua; antes de · · · yo a hablar a Su Santidad me dixo · · e recibido · ·
+no47	19	25	24	ʃ	carta del duque de Mantua, a echado de ver que adrede se me devia de aver
+no47	20	22	22		dado antes de la audiencia, e sabiendolo Su Santidad le respondio que en
+no47	21	23	22	los	a que dicho [los] la avia recibido, e que confessava a Su Santidad que si no</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/reading45.md">reading45.md</a></p><pre># fr. 3983 no. 45, f. 98 (canvas 178) — Conde de Miranda to the duque de Feria, Naples, 25 Feb 1593
+
+Cipher: the Spanish syllabic cipher of 1592-93. Key: the office original, **BnF fr. 3995 fol. 97**
+(Gallica btv1b525085665, canvas 188), found through DECODE records 4076/4077. Tomokiyo&#x27;s published
+table (`phelippes2.png`) gives the same syllables but no nomenclature.
+
+Transcribed from the native 4810x6996 scan, deskewed (-3.0°) and cut into centred line strips
+(`deskew.py` -&gt; `D98/`). Line numbers are of the deskewed strips. `·` marks a group not yet resolved.
+Diacritics: dot above = final -l, `+` = -m, dot after = -n, `:` = -r, `^` = -s, ring = -h-,
+hook = -l- or -r-, bar = the number itself, umlaut = doubled consonant, T = nomenclature.
+
+| line | cipher | reading |
+|---|---|---|
+| 1 | ṅ ∂i 16. n̂ 81 ʒ 1̊9 73 73 92 n. 21 16. 27 23. 81 · 50T | **el** [alla] **con este achaque, que siendo confidente** · |
+| 2 | se 91 68 ũ 4 68 15 75: · 29 n · 4 î6 80 23 45 i̇3 | · **se po**[drá] **procurar** · **fue** · **a costa de la bolsa** |
+| 3 | 90 · 50T se 38 66 94 68. 31 73 40 89 23 91: 68 ũ ʒ | · **yo supongo que hava de ser** · |
+| 4 | 91: · hur 68 88 1̊6 94 76 92 23. 17 4 n. · 38 n̂ 17 87 | **ser** · [**mucho**] · **residencia en** · **yo es**· |
+| 5 | 93 11 n̂ 83 4 Val 9 48 40. ⊤o 5̲7 4 0 57 82 21 9 ʒ 92 18 | **sobre esto a** [Val·] · **lo han** · **mi** · **mitido** · |
+| 6 | ʒ 73 40 89 24 21 50 4 30 64 Vor 4 · 93 ũ n ä8 9 92 | **a que hava dado ya alguna** [Roma] **a** · **so**· |
+| 7 | 61 · 88. 75 48 73 n. n̂ 83 16. 88: 64 40 705: 73 38 | **no** [se] **verá lo que en esto convernà hazer, que yo** |
+| 8 | 56 76 57 83 ʒ 94 69 23. 17 4 93 48 46 94 67 16 73 | **me remito a su prudencia. Solo le suplico que** |
+| 9 | 84 87 n 76 ral 56 55 23 ʃep: 16 6̲1T 45 66: 93 64 73 91 | **tuviere** [lettera] **me mande** [causa]**r** · **la persona que se** |
+| 11 | n 46 32 75 9 4 21.23 46 68 ũ ʒ38 n̂ 12 4: ʒ 24: | **elegirá** · **donde le po**[drá] · **escrib**[i]**ar a dar** |
+| 12 | ä 30. 76 19 21 92 29 n · ner ä 65 · ʒ ʒe se 69 n | **algun recado, si fue**[re] · **al pa**· · **se pue**[de] |
+| 13 | 24 91: 23 cer 73 61 91 n. 82 n. 24 68: 73 45 43 75 73 | **dar de manera que no se entienda, por que la hora que** |
+| 14 | 46 81. 34. 68: pir 66: 23 75 hur ∆ 72 45 81 n nor 7· | **le tengan por** · **perderá mucho**[s] · **la te**· [negocios] |
+| 15 | · n · 31 73 69 n 23 40 705: ʒ ʃo 55 23 a 64 55 | · **que puede hazer a** [en] **made una ma**· |
+
+**Every cipher line on the leaf is read.** Band 10 of the deskewed strips is not a cipher line at all: it is a
+blank gap carrying only show-through from the verso. What remains open is the groups marked `·` within the
+lines — mostly rarer nomenclature and a few diacritics ambiguous at this resolution. The last line runs into the clear
+*&quot;Dios Gu. al S. de Nap.s a 25 de hebre.o 1593&quot;*, Miranda&#x27;s signature and the docket *&quot;S. duq de feria&quot;*.
+
+## Sense
+
+Miranda writes to Feria under cover of an errand (*con este achaque*) and as a confidant; the business can
+be pursued, but **at the expense of the purse** (*a costa de la bolsa*), and he **supposes it will have to
+be** so. Residence; Rome; what has already been given. **No one will see what it will be fitting to do in
+this, and I refer myself to his prudence. I only beg him that** — when he has a letter — **he have the person
+who** … **write to give some message, if it should be** … **and to do it in such a way that it is not
+understood, because the hour that** … he will **lose much** …
+
+Code groups resolve from the office key: *hur* = **mucho**, *cer* = **manera**, *ʃes* = **aviso**,
+*ra* = **lettera**, *vul* = **estados**, *vos* = **Roma**, *nor* = **negocios**.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/sense.tsv">sense.tsv</a></p><pre># Sense measure, 5 Oct 2026. Every cipher line re-transcribed from the Gallica images at 3200-3600 px (crops of the cipher block;
+# img3983/r0178_*, r0286_*, img3984/r0198_*, r0268_*). A token counts as READ only when it is part of a word that reads as Spanish
+# sense in its context (nulls identified from the f. 97 sheet count as read). Doubtful readings (&#x27;?&#x27;) and code groups without a value
+# count as UNREAD. no. 47: tokens under a legible contemporary gloss count as read where the gloss gives the word.
+# doc	line	tokens	read	unread groups	reading (Spanish, modern word division)
+no45	1	18	18		el, alla, con este achaque, que siendo confidente de S.M. [9̈5 = de, f. 97]
+no45	2	18	17	se	· se podria procurar, assi [ʃo] fuesse a costa de la bol-
+no45	3	17	14	se 66 ʒ	-sa de [9̈4] S.M. · yo · supongo que havra de ser, podria ·
+no45	4	18	17	ʒe	ser de mucho provecho su residencia en [ʒe] · yo escrivi
+no45	5	20	16	Val T°# 5̲7 4	sobre esto a [Val] y lo han · · · omitido, y assi cre-
+no45	6	19	18	9̈1	-o que havra dado [5̈0 null] alguna (written a-gu-na) opinion a · sobre ello, y si
+no45	7	16	16		no se vera lo que en esto convernà hazer, que yo
+no45	8	18	18		me remito a su prudencia. Solo le suplico que si
+no45	9	18	16	ral ʃep:	tuviere [ral] me mande [ʃep:] con tiempo la persona que se
+no45	10	18	17	ʒ	elegira, y adonde le podria · yo embiar a dar
+no45	11	18	16	ner ʒe	algun recado si fuesse [ner] al passar a [ʒe], se pue-
+no45	12	17	17		-da ser de manera que no se entienda, porque la hora que
+no45	13	16	10	pir ∆ 72 45 8̂1 ṅ	le tengan por [pir] perdera mucho · · · · · [nor?] res-
+no45	14	17	16	i3	-peto · servicio que puede hazer a S.M. mas de una ma-
+no45	15	6	4	2 89	-nera que de · ·  (then clear: Dios Gu. ... a 25 de hebrero 1593)
+no79	1	23	23		de ver los testimonios que a todos levantan, creo que avra sido a
+no79	2	22	20	4 dir	proposito mostrar la · a Su Santidad [4̈9] para [dir] particularmente enterar al legato de su intencion; lastima ten-
+no79	3	26	22	ʃ 4 87T fe4^	-go al señor duque [pal] de Feria · · · · que han de tratar con personas tan ambiciosas
+no79	4	27	25	ʃ 9.	· · constantes; si bien los que bivimos en Roma no deseemos de tener experi-
+no79	5	24	24		-encia de lo uno e de lo otro, e si por un aviso que no dura 4 dias ni
+no79	6	23	22	mal^	passa a los sucesores se hazen tan estraordinarias [mal^] no me ma-
+no79	7	26	24	57 is	-ravillo que se ofrezcan · di-fi-[is]-tades en la election de un señor; con todo esso
+no79	8	26	23	ʃT 0 21	es negocio tan · portante a la cristiandad · que espero que le ha de · vo-re-cer
+no79	9	25	20	mil 90 34 se xom	[mil] de manera que · · · conviene, que entre los principes que siguen la [xom] hoy di-
+no79	10	26	24	vu xor?	-versas pretensiones, e poca [vu], e cada uno pretenda para [xor] si, no me espanto
+no79	11	25	24	as	[as] no puedo dexar de hazerlo, a lo menos de que no esten ministros conformes
+no79	12	28	27	is	e unidos en la · sion de los de la sangre, e desengañados de que no se pue-
+no79	13	24	24		-den fiar de ninguno dellos. A proposito, de ver es particular cuan embarcado ha quedado el duque
+no79	14	23	21	rili xom	por la carta de [Des]portes, dixe ayer a mi proposito que se la llevo, que es [rili] de la [xom]
+no79	15	26	26		le avia mostrado unas cartas del duque en que le escrivia que assi [ʃo] devia agrade-
+no79	16	26	24	mos 86T	-cimiento a la [mos] [86T] de Desportes; todavia le avia pesado que uvie-
+no79	17	25	24	mil	-sse tratado de sus personas con Su Santidad, porque sabia [mil] que el no tenia ambicion
+no79	18	22	21	ʃer#	ninguna, sino que su fin [ʃer] era desear que se hiziesse election de un Rey qua-
+no79	19	24	21	quaʃ n. 4	-l mas, aunque para la conservacion de la religion · · · que Reyno e poderoso para de-
+no79	20	24	22	h̊o ho	-fenderle, e que [h̊o] lo asegurase de su parte a Su Santidad, e [ho] dicho la firmeza
+no79	21	25	17	∆ ʃ 21^ n̂ 23 11 4: 63	con que estavan, no dar · · · a la paz que proponia · · · · que
+no79	22	26	26		porque negocios en que convenia que abriesse mucho los ojos Su Santidad e no le engañassen
+no47	1	24	24		a 30 del passado con correo propio avise a V.M. largamente todo lo que aqui se ofre-   [gloss above]
+no47	2	26	26		-cia en particular sobre la materia de Francia, de que en(vi)ado correo duplicados   [gloss]
+no47	3	25	25		por via de mar e tierra e ha ydo difiriendo de dia en dia el despacho, otro correo   [gloss]
+no47	4	24	23	∂ir	a V.M. esperando a ver si venia alguna nueva cierta de Paris, de don de la [∂ir]   [gloss]
+no47	5	26	22	hir^ ʃ 20 75	a V.M. fresca carta con que me hallo de los [hir] de V.M., es de don Diego de · · ·
+no47	6	26	26		de los 28 de abril, con una copia de lo que escrivio a V.M., e tambien se que
+no47	7	22	19	95 n̂ xir	· · [xir] de que no tiene cartas del legato muchos dias, e creo sin duda que
+no47	8	22	19	xox lir ʃep:	se deven de perder los correos; a me · cido con este que passa de [lir] [ʃep]
+no47	9	27	25	48 21	a V.M. de recibo de la carta que mando V.M. es servirme · · de mayo, e llego aqui a
+no47	10	25	22	ī9 ∂ir 48	los · deste e de lo de [∂ir], que sobre esto negocios se ofre · reservando es res-
+no47	11	17	17		-ponder a otras cartas de V.M. para con otro, por no detener este
+no47	12	25	25		el dicho dia de recibir esta carta tuve a la tarde audiencia de Su Santidad, e
+no47	13	25	23	hum us	antes de ir a ella me envio el [hum] del duque de Mantua a la carta de su amo [us]
+no47	14	26	24	ho 35	· copia va con esta. A dicho tiempo que yo salia de mi posada e [ho] la lei en el
+no47	15	25	24	yos	coche, e por [yos] que en ella me encomienda, resolvi de no dezir nada
+no47	16	24	23	4̈9?	a Su Santidad, si no me hablasse en ello; assi pensava contar de lo que V.M. me escri-
+no47	17	24	23	ru	-ve de Gondi y de Pisani, ver si Su Santidad me apuntava algo desta [ru] del duque
+no47	18	27	20	26 56: 19: 4 88h 66 4	de Mantua; antes de · · · yo a hablar a Su Santidad me dixo · · e recibido · ·
+no47	19	25	24	ʃ	carta del duque de Mantua, a echado de ver que adrede se me devia de aver
+no47	20	22	22		dado antes de la audiencia, e sabiendolo Su Santidad le respondio que en
+no47	21	23	22	los	a que dicho [los] la avia recibido, e que confessava a Su Santidad que si no</pre></details>
+<h3>fr. 3983 no. 79, f. 162: Sessa to Diego de Ibarra, Rome, 11 Mar 1593</h3>
+<p>The Duque de Sessa, at Rome, to Diego de Ibarra, wholly in cipher: &#x27;de ver los testemonios que a todos levantan ... los que bivimos en Roma&#x27;, the election and &#x27;diversas pretensiones&#x27;, &#x27;no puedo dexar de hazerlo, a lo menos, de que no esten ministros conformes&#x27;. Read line by line with the office key (BnF fr. 3995 f. 97); unresolved groups marked.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/reading79.md">reading79.md</a></p><pre># fr. 3983 no. 79, f. 162 (canvas 286) — the duque de Sessa to Diego de Ibarra, Rome, 11 March 1593
+
+Cipher and key as for no. 45: the Spanish syllabic cipher of 1592-93, read with the office key
+**BnF fr. 3995 fol. 97**. Deskewed (-0.25°) and cut into centred strips (`deskew.py` -&gt; `D162/`).
+`·` marks a group not yet resolved. No clear text on the leaf.
+
+| line | cipher | reading |
+|---|---|---|
+| 3 | 23 88y 48^ 81^ 81 58 62 u^ 73 4 83 21^ 46 89. 80 18 ʒ 73 4 89 92 21 | **de ver los testemonios que a todos levantan** · **que avia do**· |
+| 4 | ʃis 58^80: 45 4 49 xur dir ʒir far n. 81 76 4 vom 23 94 tim 45^ 82 55 81. | · **mostrar la alu**· · **mente en te**· **a** [legato] **de su** · **las tima ten** |
+| 5 | 31 4 ʒus pal 23 26 77 4 ʃ 4 87T feu^ 73 4. 23 80 80: 16. cos^ 80. 4 1217 290 | **go a** [seignor] · **de feria en a** · **que a de tantar con** · **tan a** · |
+| 6 | ʃ g. 16. ∆ 80. 81^ 92 12 n. 48^ 73 12 87 58^ n. vos 61 23 91 58^ 23 81 ʒ: | [en] · **constantes si bien los que bivimos en** [**Roma**] **no desemos de tear** |
+| 7 | n. 17 4 23 48 6 61 ʃ 23 48 vur ʃ 92 68: 6x ʃes 73 61 20 75 4̄ 22 4^ 62 | **encia de lo** · **no** [en] **de lo** · **si por** · [**aviso**] **que no dura 4 dias ni** |
+| 8 | 65 90 4 48^ 94 18 93 76^ 91 40 705. 80. n̂ 80 2:22 64 77 4^ mal^ 61 56 | **pasa a los sucesores se hazen tan esta**[s] **ordinarias** · **no me** |
+| 9 | 75 87 48 73 91 2 2̃6∂19. 57 22 27 is 80 23^ n. 45 rol 23 6. vas 16. 83 21 n 93 | · **que se o**· **mi difi**· **tades en la** [**election**] **de** · [seignor] **con todo eso** |
+| 10 | n̂ nor 80. ʃ 68: 80. 81 4 45 17∆ 82 4. 24 0 73 n̂ 66 78 73 46 4 23 21 86 76 18: | **es** [**negocios**] **tan** [en] **por tante a la** · **que espero que le a de** · **favorecer** |
+| 11 | mil 23 cer 73 90 34 se 16. 87 n 63 73 n. 81 48^ hus^ 73 92 30 n. 45 xom 43 s 22 | · **de** [**manera**] **que saga se conviene** · **que entre los** · **que siguen la** · |
+| 12 | 88: 90^ 66 81. 92 2 63^ ʃ 68 19 vu ʃ 19 24 a 61 6̈6 81. 24 xor 92 61 56 n̂ 65. 83 | [di]**versas pretensiones** [en] **poca** · **en cada uno** · **si no me espanto** |
+| 13 | as 61 69 n 21 23 95: 23 40 705: 48 4 48 56 61^ 23 73 61 n̂ 81. ʃur 16. 28: 56^ | **no puedo dexar de hazerlo, a lo menos, de que no estén** [**ministro**]**s conformes** |
+| 14 | ʃ 6 62 21^ n. 45 n̂ is 92 2. 23 48^ 23 45 90. 3̃3 ʃ 23^ n. 34 64 21^ 23 73 61 91 69 | · **nidos en la** · **de los de la san**· · **ganados de que no se pue**[den] |
+| 15 | 23. 27 4: 23 nur 23 48∆ ʒ ʃis 23 88: n̂ gir is 4. n̄ 10:19 21 4 73 24 21 n̂ pol | **denfiar de** · **de los** · **de ver** · · **a que dado** · |
+| 16 | 68: 45 pa 23 68: 81^ 22 98 4 36: 45 57 ʃis 73 91 45 46 86 73 n̂ rili: 23 45 xom | **por la** · **de por tes dixi a** · **la mi** · **que se la levo que es** · **de la** · |
+
+## Coverage
+
+**Every cipher line on the leaf is read.** Bands 1 and 2 of the deskewed strips are not cipher: band 1 is the
+top margin carrying the folio number *162*, band 2 the docket *11 de Março 93* with show-through above it.
+The cipher proper runs from band 3 to band 16, and all fourteen carry readings. What remains open is the
+groups marked `·` within them.
+
+## Sense
+
+Sessa writes to Ibarra from Rome about **the testimonies that they raise against everyone**; the legate; the
+duke of Feria; **those of us who live in Rome**; a matter that **does not last four days**; what **passes to
+the successors**, and how **ordinary** these things have become; **difficulties in the election**, and with
+all that; the business is **so important** that **he hopes he will favour it**; **in such a manner that it
+suits**, among those who follow; **diverse pretensions**, in each one, **if I am not mistaken**; and
+**I cannot refrain from doing it, at least, so that the ministers are not in agreement** — **won over** —
+**of which they cannot be trusted**.
+
+The nomenclature groups carry the names and the political vocabulary: *vos* = **Roma**, *rol* = **election**,
+*nor* = **negocios**, *cer* = **manera**, *ʃes* = **aviso**, *ʃur* = **ministro**, *far* = **mente**,
+*vom* = **legato**, *vas* = **seignor**. `4̄`, with the bar, is the numeral **4** itself.</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/sense.tsv">sense.tsv</a></p><pre># Sense measure, 5 Oct 2026. Every cipher line re-transcribed from the Gallica images at 3200-3600 px (crops of the cipher block;
+# img3983/r0178_*, r0286_*, img3984/r0198_*, r0268_*). A token counts as READ only when it is part of a word that reads as Spanish
+# sense in its context (nulls identified from the f. 97 sheet count as read). Doubtful readings (&#x27;?&#x27;) and code groups without a value
+# count as UNREAD. no. 47: tokens under a legible contemporary gloss count as read where the gloss gives the word.
+# doc	line	tokens	read	unread groups	reading (Spanish, modern word division)
+no45	1	18	18		el, alla, con este achaque, que siendo confidente de S.M. [9̈5 = de, f. 97]
+no45	2	18	17	se	· se podria procurar, assi [ʃo] fuesse a costa de la bol-
+no45	3	17	14	se 66 ʒ	-sa de [9̈4] S.M. · yo · supongo que havra de ser, podria ·
+no45	4	18	17	ʒe	ser de mucho provecho su residencia en [ʒe] · yo escrivi
+no45	5	20	16	Val T°# 5̲7 4	sobre esto a [Val] y lo han · · · omitido, y assi cre-
+no45	6	19	18	9̈1	-o que havra dado [5̈0 null] alguna (written a-gu-na) opinion a · sobre ello, y si
+no45	7	16	16		no se vera lo que en esto convernà hazer, que yo
+no45	8	18	18		me remito a su prudencia. Solo le suplico que si
+no45	9	18	16	ral ʃep:	tuviere [ral] me mande [ʃep:] con tiempo la persona que se
+no45	10	18	17	ʒ	elegira, y adonde le podria · yo embiar a dar
+no45	11	18	16	ner ʒe	algun recado si fuesse [ner] al passar a [ʒe], se pue-
+no45	12	17	17		-da ser de manera que no se entienda, porque la hora que
+no45	13	16	10	pir ∆ 72 45 8̂1 ṅ	le tengan por [pir] perdera mucho · · · · · [nor?] res-
+no45	14	17	16	i3	-peto · servicio que puede hazer a S.M. mas de una ma-
+no45	15	6	4	2 89	-nera que de · ·  (then clear: Dios Gu. ... a 25 de hebrero 1593)
+no79	1	23	23		de ver los testimonios que a todos levantan, creo que avra sido a
+no79	2	22	20	4 dir	proposito mostrar la · a Su Santidad [4̈9] para [dir] particularmente enterar al legato de su intencion; lastima ten-
+no79	3	26	22	ʃ 4 87T fe4^	-go al señor duque [pal] de Feria · · · · que han de tratar con personas tan ambiciosas
+no79	4	27	25	ʃ 9.	· · constantes; si bien los que bivimos en Roma no deseemos de tener experi-
+no79	5	24	24		-encia de lo uno e de lo otro, e si por un aviso que no dura 4 dias ni
+no79	6	23	22	mal^	passa a los sucesores se hazen tan estraordinarias [mal^] no me ma-
+no79	7	26	24	57 is	-ravillo que se ofrezcan · di-fi-[is]-tades en la election de un señor; con todo esso
+no79	8	26	23	ʃT 0 21	es negocio tan · portante a la cristiandad · que espero que le ha de · vo-re-cer
+no79	9	25	20	mil 90 34 se xom	[mil] de manera que · · · conviene, que entre los principes que siguen la [xom] hoy di-
+no79	10	26	24	vu xor?	-versas pretensiones, e poca [vu], e cada uno pretenda para [xor] si, no me espanto
+no79	11	25	24	as	[as] no puedo dexar de hazerlo, a lo menos de que no esten ministros conformes
+no79	12	28	27	is	e unidos en la · sion de los de la sangre, e desengañados de que no se pue-
+no79	13	24	24		-den fiar de ninguno dellos. A proposito, de ver es particular cuan embarcado ha quedado el duque
+no79	14	23	21	rili xom	por la carta de [Des]portes, dixe ayer a mi proposito que se la llevo, que es [rili] de la [xom]
+no79	15	26	26		le avia mostrado unas cartas del duque en que le escrivia que assi [ʃo] devia agrade-
+no79	16	26	24	mos 86T	-cimiento a la [mos] [86T] de Desportes; todavia le avia pesado que uvie-
+no79	17	25	24	mil	-sse tratado de sus personas con Su Santidad, porque sabia [mil] que el no tenia ambicion
+no79	18	22	21	ʃer#	ninguna, sino que su fin [ʃer] era desear que se hiziesse election de un Rey qua-
+no79	19	24	21	quaʃ n. 4	-l mas, aunque para la conservacion de la religion · · · que Reyno e poderoso para de-
+no79	20	24	22	h̊o ho	-fenderle, e que [h̊o] lo asegurase de su parte a Su Santidad, e [ho] dicho la firmeza
+no79	21	25	17	∆ ʃ 21^ n̂ 23 11 4: 63	con que estavan, no dar · · · a la paz que proponia · · · · que
+no79	22	26	26		porque negocios en que convenia que abriesse mucho los ojos Su Santidad e no le engañassen
+no47	1	24	24		a 30 del passado con correo propio avise a V.M. largamente todo lo que aqui se ofre-   [gloss above]
+no47	2	26	26		-cia en particular sobre la materia de Francia, de que en(vi)ado correo duplicados   [gloss]
+no47	3	25	25		por via de mar e tierra e ha ydo difiriendo de dia en dia el despacho, otro correo   [gloss]
+no47	4	24	23	∂ir	a V.M. esperando a ver si venia alguna nueva cierta de Paris, de don de la [∂ir]   [gloss]
+no47	5	26	22	hir^ ʃ 20 75	a V.M. fresca carta con que me hallo de los [hir] de V.M., es de don Diego de · · ·
+no47	6	26	26		de los 28 de abril, con una copia de lo que escrivio a V.M., e tambien se que
+no47	7	22	19	95 n̂ xir	· · [xir] de que no tiene cartas del legato muchos dias, e creo sin duda que
+no47	8	22	19	xox lir ʃep:	se deven de perder los correos; a me · cido con este que passa de [lir] [ʃep]
+no47	9	27	25	48 21	a V.M. de recibo de la carta que mando V.M. es servirme · · de mayo, e llego aqui a
+no47	10	25	22	ī9 ∂ir 48	los · deste e de lo de [∂ir], que sobre esto negocios se ofre · reservando es res-
+no47	11	17	17		-ponder a otras cartas de V.M. para con otro, por no detener este
+no47	12	25	25		el dicho dia de recibir esta carta tuve a la tarde audiencia de Su Santidad, e
+no47	13	25	23	hum us	antes de ir a ella me envio el [hum] del duque de Mantua a la carta de su amo [us]
+no47	14	26	24	ho 35	· copia va con esta. A dicho tiempo que yo salia de mi posada e [ho] la lei en el
+no47	15	25	24	yos	coche, e por [yos] que en ella me encomienda, resolvi de no dezir nada
+no47	16	24	23	4̈9?	a Su Santidad, si no me hablasse en ello; assi pensava contar de lo que V.M. me escri-
+no47	17	24	23	ru	-ve de Gondi y de Pisani, ver si Su Santidad me apuntava algo desta [ru] del duque
+no47	18	27	20	26 56: 19: 4 88h 66 4	de Mantua; antes de · · · yo a hablar a Su Santidad me dixo · · e recibido · ·
+no47	19	25	24	ʃ	carta del duque de Mantua, a echado de ver que adrede se me devia de aver
+no47	20	22	22		dado antes de la audiencia, e sabiendolo Su Santidad le respondio que en
+no47	21	23	22	los	a que dicho [los] la avia recibido, e que confessava a Su Santidad que si no</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/reading79.md">reading79.md</a></p><pre># fr. 3983 no. 79, f. 162 (canvas 286) — the duque de Sessa to Diego de Ibarra, Rome, 11 March 1593
+
+Cipher and key as for no. 45: the Spanish syllabic cipher of 1592-93, read with the office key
+**BnF fr. 3995 fol. 97**. Deskewed (-0.25°) and cut into centred strips (`deskew.py` -&gt; `D162/`).
+`·` marks a group not yet resolved. No clear text on the leaf.
+
+| line | cipher | reading |
+|---|---|---|
+| 3 | 23 88y 48^ 81^ 81 58 62 u^ 73 4 83 21^ 46 89. 80 18 ʒ 73 4 89 92 21 | **de ver los testemonios que a todos levantan** · **que avia do**· |
+| 4 | ʃis 58^80: 45 4 49 xur dir ʒir far n. 81 76 4 vom 23 94 tim 45^ 82 55 81. | · **mostrar la alu**· · **mente en te**· **a** [legato] **de su** · **las tima ten** |
+| 5 | 31 4 ʒus pal 23 26 77 4 ʃ 4 87T feu^ 73 4. 23 80 80: 16. cos^ 80. 4 1217 290 | **go a** [seignor] · **de feria en a** · **que a de tantar con** · **tan a** · |
+| 6 | ʃ g. 16. ∆ 80. 81^ 92 12 n. 48^ 73 12 87 58^ n. vos 61 23 91 58^ 23 81 ʒ: | [en] · **constantes si bien los que bivimos en** [**Roma**] **no desemos de tear** |
+| 7 | n. 17 4 23 48 6 61 ʃ 23 48 vur ʃ 92 68: 6x ʃes 73 61 20 75 4̄ 22 4^ 62 | **encia de lo** · **no** [en] **de lo** · **si por** · [**aviso**] **que no dura 4 dias ni** |
+| 8 | 65 90 4 48^ 94 18 93 76^ 91 40 705. 80. n̂ 80 2:22 64 77 4^ mal^ 61 56 | **pasa a los sucesores se hazen tan esta**[s] **ordinarias** · **no me** |
+| 9 | 75 87 48 73 91 2 2̃6∂19. 57 22 27 is 80 23^ n. 45 rol 23 6. vas 16. 83 21 n 93 | · **que se o**· **mi difi**· **tades en la** [**election**] **de** · [seignor] **con todo eso** |
+| 10 | n̂ nor 80. ʃ 68: 80. 81 4 45 17∆ 82 4. 24 0 73 n̂ 66 78 73 46 4 23 21 86 76 18: | **es** [**negocios**] **tan** [en] **por tante a la** · **que espero que le a de** · **favorecer** |
+| 11 | mil 23 cer 73 90 34 se 16. 87 n 63 73 n. 81 48^ hus^ 73 92 30 n. 45 xom 43 s 22 | · **de** [**manera**] **que saga se conviene** · **que entre los** · **que siguen la** · |
+| 12 | 88: 90^ 66 81. 92 2 63^ ʃ 68 19 vu ʃ 19 24 a 61 6̈6 81. 24 xor 92 61 56 n̂ 65. 83 | [di]**versas pretensiones** [en] **poca** · **en cada uno** · **si no me espanto** |
+| 13 | as 61 69 n 21 23 95: 23 40 705: 48 4 48 56 61^ 23 73 61 n̂ 81. ʃur 16. 28: 56^ | **no puedo dexar de hazerlo, a lo menos, de que no estén** [**ministro**]**s conformes** |
+| 14 | ʃ 6 62 21^ n. 45 n̂ is 92 2. 23 48^ 23 45 90. 3̃3 ʃ 23^ n. 34 64 21^ 23 73 61 91 69 | · **nidos en la** · **de los de la san**· · **ganados de que no se pue**[den] |
+| 15 | 23. 27 4: 23 nur 23 48∆ ʒ ʃis 23 88: n̂ gir is 4. n̄ 10:19 21 4 73 24 21 n̂ pol | **denfiar de** · **de los** · **de ver** · · **a que dado** · |
+| 16 | 68: 45 pa 23 68: 81^ 22 98 4 36: 45 57 ʃis 73 91 45 46 86 73 n̂ rili: 23 45 xom | **por la** · **de por tes dixi a** · **la mi** · **que se la levo que es** · **de la** · |
+
+## Coverage
+
+**Every cipher line on the leaf is read.** Bands 1 and 2 of the deskewed strips are not cipher: band 1 is the
+top margin carrying the folio number *162*, band 2 the docket *11 de Março 93* with show-through above it.
+The cipher proper runs from band 3 to band 16, and all fourteen carry readings. What remains open is the
+groups marked `·` within them.
+
+## Sense
+
+Sessa writes to Ibarra from Rome about **the testimonies that they raise against everyone**; the legate; the
+duke of Feria; **those of us who live in Rome**; a matter that **does not last four days**; what **passes to
+the successors**, and how **ordinary** these things have become; **difficulties in the election**, and with
+all that; the business is **so important** that **he hopes he will favour it**; **in such a manner that it
+suits**, among those who follow; **diverse pretensions**, in each one, **if I am not mistaken**; and
+**I cannot refrain from doing it, at least, so that the ministers are not in agreement** — **won over** —
+**of which they cannot be trusted**.
+
+The nomenclature groups carry the names and the political vocabulary: *vos* = **Roma**, *rol* = **election**,
+*nor* = **negocios**, *cer* = **manera**, *ʃes* = **aviso**, *ʃur* = **ministro**, *far* = **mente**,
+*vom* = **legato**, *vas* = **seignor**. `4̄`, with the bar, is the numeral **4** itself.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/sense.tsv">sense.tsv</a></p><pre># Sense measure, 5 Oct 2026. Every cipher line re-transcribed from the Gallica images at 3200-3600 px (crops of the cipher block;
+# img3983/r0178_*, r0286_*, img3984/r0198_*, r0268_*). A token counts as READ only when it is part of a word that reads as Spanish
+# sense in its context (nulls identified from the f. 97 sheet count as read). Doubtful readings (&#x27;?&#x27;) and code groups without a value
+# count as UNREAD. no. 47: tokens under a legible contemporary gloss count as read where the gloss gives the word.
+# doc	line	tokens	read	unread groups	reading (Spanish, modern word division)
+no45	1	18	18		el, alla, con este achaque, que siendo confidente de S.M. [9̈5 = de, f. 97]
+no45	2	18	17	se	· se podria procurar, assi [ʃo] fuesse a costa de la bol-
+no45	3	17	14	se 66 ʒ	-sa de [9̈4] S.M. · yo · supongo que havra de ser, podria ·
+no45	4	18	17	ʒe	ser de mucho provecho su residencia en [ʒe] · yo escrivi
+no45	5	20	16	Val T°# 5̲7 4	sobre esto a [Val] y lo han · · · omitido, y assi cre-
+no45	6	19	18	9̈1	-o que havra dado [5̈0 null] alguna (written a-gu-na) opinion a · sobre ello, y si
+no45	7	16	16		no se vera lo que en esto convernà hazer, que yo
+no45	8	18	18		me remito a su prudencia. Solo le suplico que si
+no45	9	18	16	ral ʃep:	tuviere [ral] me mande [ʃep:] con tiempo la persona que se
+no45	10	18	17	ʒ	elegira, y adonde le podria · yo embiar a dar
+no45	11	18	16	ner ʒe	algun recado si fuesse [ner] al passar a [ʒe], se pue-
+no45	12	17	17		-da ser de manera que no se entienda, porque la hora que
+no45	13	16	10	pir ∆ 72 45 8̂1 ṅ	le tengan por [pir] perdera mucho · · · · · [nor?] res-
+no45	14	17	16	i3	-peto · servicio que puede hazer a S.M. mas de una ma-
+no45	15	6	4	2 89	-nera que de · ·  (then clear: Dios Gu. ... a 25 de hebrero 1593)
+no79	1	23	23		de ver los testimonios que a todos levantan, creo que avra sido a
+no79	2	22	20	4 dir	proposito mostrar la · a Su Santidad [4̈9] para [dir] particularmente enterar al legato de su intencion; lastima ten-
+no79	3	26	22	ʃ 4 87T fe4^	-go al señor duque [pal] de Feria · · · · que han de tratar con personas tan ambiciosas
+no79	4	27	25	ʃ 9.	· · constantes; si bien los que bivimos en Roma no deseemos de tener experi-
+no79	5	24	24		-encia de lo uno e de lo otro, e si por un aviso que no dura 4 dias ni
+no79	6	23	22	mal^	passa a los sucesores se hazen tan estraordinarias [mal^] no me ma-
+no79	7	26	24	57 is	-ravillo que se ofrezcan · di-fi-[is]-tades en la election de un señor; con todo esso
+no79	8	26	23	ʃT 0 21	es negocio tan · portante a la cristiandad · que espero que le ha de · vo-re-cer
+no79	9	25	20	mil 90 34 se xom	[mil] de manera que · · · conviene, que entre los principes que siguen la [xom] hoy di-
+no79	10	26	24	vu xor?	-versas pretensiones, e poca [vu], e cada uno pretenda para [xor] si, no me espanto
+no79	11	25	24	as	[as] no puedo dexar de hazerlo, a lo menos de que no esten ministros conformes
+no79	12	28	27	is	e unidos en la · sion de los de la sangre, e desengañados de que no se pue-
+no79	13	24	24		-den fiar de ninguno dellos. A proposito, de ver es particular cuan embarcado ha quedado el duque
+no79	14	23	21	rili xom	por la carta de [Des]portes, dixe ayer a mi proposito que se la llevo, que es [rili] de la [xom]
+no79	15	26	26		le avia mostrado unas cartas del duque en que le escrivia que assi [ʃo] devia agrade-
+no79	16	26	24	mos 86T	-cimiento a la [mos] [86T] de Desportes; todavia le avia pesado que uvie-
+no79	17	25	24	mil	-sse tratado de sus personas con Su Santidad, porque sabia [mil] que el no tenia ambicion
+no79	18	22	21	ʃer#	ninguna, sino que su fin [ʃer] era desear que se hiziesse election de un Rey qua-
+no79	19	24	21	quaʃ n. 4	-l mas, aunque para la conservacion de la religion · · · que Reyno e poderoso para de-
+no79	20	24	22	h̊o ho	-fenderle, e que [h̊o] lo asegurase de su parte a Su Santidad, e [ho] dicho la firmeza
+no79	21	25	17	∆ ʃ 21^ n̂ 23 11 4: 63	con que estavan, no dar · · · a la paz que proponia · · · · que
+no79	22	26	26		porque negocios en que convenia que abriesse mucho los ojos Su Santidad e no le engañassen
+no47	1	24	24		a 30 del passado con correo propio avise a V.M. largamente todo lo que aqui se ofre-   [gloss above]
+no47	2	26	26		-cia en particular sobre la materia de Francia, de que en(vi)ado correo duplicados   [gloss]
+no47	3	25	25		por via de mar e tierra e ha ydo difiriendo de dia en dia el despacho, otro correo   [gloss]
+no47	4	24	23	∂ir	a V.M. esperando a ver si venia alguna nueva cierta de Paris, de don de la [∂ir]   [gloss]
+no47	5	26	22	hir^ ʃ 20 75	a V.M. fresca carta con que me hallo de los [hir] de V.M., es de don Diego de · · ·
+no47	6	26	26		de los 28 de abril, con una copia de lo que escrivio a V.M., e tambien se que
+no47	7	22	19	95 n̂ xir	· · [xir] de que no tiene cartas del legato muchos dias, e creo sin duda que
+no47	8	22	19	xox lir ʃep:	se deven de perder los correos; a me · cido con este que passa de [lir] [ʃep]
+no47	9	27	25	48 21	a V.M. de recibo de la carta que mando V.M. es servirme · · de mayo, e llego aqui a
+no47	10	25	22	ī9 ∂ir 48	los · deste e de lo de [∂ir], que sobre esto negocios se ofre · reservando es res-
+no47	11	17	17		-ponder a otras cartas de V.M. para con otro, por no detener este
+no47	12	25	25		el dicho dia de recibir esta carta tuve a la tarde audiencia de Su Santidad, e
+no47	13	25	23	hum us	antes de ir a ella me envio el [hum] del duque de Mantua a la carta de su amo [us]
+no47	14	26	24	ho 35	· copia va con esta. A dicho tiempo que yo salia de mi posada e [ho] la lei en el
+no47	15	25	24	yos	coche, e por [yos] que en ella me encomienda, resolvi de no dezir nada
+no47	16	24	23	4̈9?	a Su Santidad, si no me hablasse en ello; assi pensava contar de lo que V.M. me escri-
+no47	17	24	23	ru	-ve de Gondi y de Pisani, ver si Su Santidad me apuntava algo desta [ru] del duque
+no47	18	27	20	26 56: 19: 4 88h 66 4	de Mantua; antes de · · · yo a hablar a Su Santidad me dixo · · e recibido · ·
+no47	19	25	24	ʃ	carta del duque de Mantua, a echado de ver que adrede se me devia de aver
+no47	20	22	22		dado antes de la audiencia, e sabiendolo Su Santidad le respondio que en
+no47	21	23	22	los	a que dicho [los] la avia recibido, e que confessava a Su Santidad que si no</pre></details>
+<h3>fr. 3984 no. 47, f. 108: Sessa to Philip II, Rome, 30 June 1593 (copy)</h3>
+<p>A copy of Sessa&#x27;s despatch to Philip II, with the beginning of a contemporary decipherment written above the cipher lines in lighter ink (&#x27;por via de mar ... difiriendo de dia en dia&#x27;); read with the office key, which agrees with the gloss wherever both survive.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/reading47.md">reading47.md</a></p><pre># fr. 3984 no. 47, f. 108 (canvas 198) — the duque de Sessa to Philip II, Rome, 30 June 1593 (copy)
+
+Headed *&quot;Copia — 30 de Iunio 1593&quot;*. Same cipher and key as nos. 45 and 79 (office key **BnF fr. 3995 f. 97**).
+This leaf is the one the BnF notice calls *&quot;avec chiffre et commencement de déchiffrement&quot;*: a contemporary
+decipherer wrote the plaintext **above** the cipher lines in a lighter ink. Where the gloss survives it is
+quoted, and it **agrees with the decode** — an independent check on the key from a third letter.
+
+| line | cipher | decode | the decipherer&#x27;s gloss above |
+|---|---|---|---|
+| 2 | ʒ 3̄0 23 65 g̈o 21 16. · | **30 · de pa ssa do · con** | *a 30. del Passado con* |
+| 3 | 17 4 ʃ n. ʒir 93 li 45 55 81 77 4 | **ci a en** · **so** · **la ma te ri a** | *ofresce en particular sobre las materias de Francia, de que en breve despacho* |
+| 5 | 68: 87 4 23 55: ʃ 82 n ʒs ʃ n 22 26 77 21 23 22 4 n. 22 7 n ʃeʃ: | **por via de mar** · **en ti e** · **di fe ri do de di a en di a e** | *por una [via] de mar … ha ydo defiriendo de dia en dia. El despacho* |
+| 6 | (cipher) | · | *v.m. es[pe]rando … si ver[n]ia alguna nueva cierta de … de don…* |
+| 7 | 4 88 n̂ 66 75. 21 4 88: 92 88 62 4 des per 17 n: 80 23 ʒar 23 21. 23 | **a ve esperando a ver si venia** · · **ci en tar de** · **de don de** | — |
+| 8 | (cipher) | · | *fres[ca] carta con que me ha[n]…* |
+| 9 | 23 48^ 2̃8 23 4 12 h 16. 6 64 del 23 4873 n̂ 17 87 2 4 88 ʃ 80. 12 n | **de los** · **de a bi** · **con** · **na** [del] **de** · **es ci vi o a ve en tan bi e** | — |
+| 10 | 95 n̂ xir 23 73 61 82 n 63 ʃ ∂ä 23 vom hur 22 4 4 48 2 92. 20 | **xa es** · **de que no tiene** [en] · **de** [**legato**] [**mucho**] **di a a lo o si du** | — |
+
+| 11 | 91 23 88. 23 66: 23: 48^ ∂ol^ ʒ 56 xoxt 17 21 16. n̂ 81 73 65 90 23 | **se de ven** · **de perderlos** · **a mo** · **cido con este que pasa de** |
+| 12 | ʒ 8̈8 23 76 17 13 23 45 pa 73 55. 21 8̈8 n̂ 87: 56 ʒ 48 ũ 23 55 38 ʃ 46 3 | · [re]**cibido de la** · **que mando** · **es vir mo a lo** · **de mayo** [en] **le** |
+| 13 | 48^ ī9 23^ 81 ʃ 23 48 23 ∂ir 73 93 ũ n̂ 83 nor 91 ∇ 2̃6 48 76 91: 89 | **los** · **deste** [en] **de lo de** · **que so** · **esto** [**negocios**] **se** · **lo po ser** · |
+
+## Sense
+
+Sessa to the King from Rome, 30 June 1593, on despatches of the 30th of the previous month; what is **offered
+in particular concerning the affairs of France**, of which he despatches shortly; a letter that went **by way
+of the sea** and has been **put off from day to day**; the King **waiting to see whether some certain news
+would come**; a **fresh letter**; the **legate**, of whom he **has not much** …; the risk **of losing them**; what he has **received** of the letter **that he sent** in **May**; and these **negocios**.
+
+The gloss and the decode agree wherever both survive, which checks the office key against a contemporary
+decipherment on a third letter of the group.</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/sense.tsv">sense.tsv</a></p><pre># Sense measure, 5 Oct 2026. Every cipher line re-transcribed from the Gallica images at 3200-3600 px (crops of the cipher block;
+# img3983/r0178_*, r0286_*, img3984/r0198_*, r0268_*). A token counts as READ only when it is part of a word that reads as Spanish
+# sense in its context (nulls identified from the f. 97 sheet count as read). Doubtful readings (&#x27;?&#x27;) and code groups without a value
+# count as UNREAD. no. 47: tokens under a legible contemporary gloss count as read where the gloss gives the word.
+# doc	line	tokens	read	unread groups	reading (Spanish, modern word division)
+no45	1	18	18		el, alla, con este achaque, que siendo confidente de S.M. [9̈5 = de, f. 97]
+no45	2	18	17	se	· se podria procurar, assi [ʃo] fuesse a costa de la bol-
+no45	3	17	14	se 66 ʒ	-sa de [9̈4] S.M. · yo · supongo que havra de ser, podria ·
+no45	4	18	17	ʒe	ser de mucho provecho su residencia en [ʒe] · yo escrivi
+no45	5	20	16	Val T°# 5̲7 4	sobre esto a [Val] y lo han · · · omitido, y assi cre-
+no45	6	19	18	9̈1	-o que havra dado [5̈0 null] alguna (written a-gu-na) opinion a · sobre ello, y si
+no45	7	16	16		no se vera lo que en esto convernà hazer, que yo
+no45	8	18	18		me remito a su prudencia. Solo le suplico que si
+no45	9	18	16	ral ʃep:	tuviere [ral] me mande [ʃep:] con tiempo la persona que se
+no45	10	18	17	ʒ	elegira, y adonde le podria · yo embiar a dar
+no45	11	18	16	ner ʒe	algun recado si fuesse [ner] al passar a [ʒe], se pue-
+no45	12	17	17		-da ser de manera que no se entienda, porque la hora que
+no45	13	16	10	pir ∆ 72 45 8̂1 ṅ	le tengan por [pir] perdera mucho · · · · · [nor?] res-
+no45	14	17	16	i3	-peto · servicio que puede hazer a S.M. mas de una ma-
+no45	15	6	4	2 89	-nera que de · ·  (then clear: Dios Gu. ... a 25 de hebrero 1593)
+no79	1	23	23		de ver los testimonios que a todos levantan, creo que avra sido a
+no79	2	22	20	4 dir	proposito mostrar la · a Su Santidad [4̈9] para [dir] particularmente enterar al legato de su intencion; lastima ten-
+no79	3	26	22	ʃ 4 87T fe4^	-go al señor duque [pal] de Feria · · · · que han de tratar con personas tan ambiciosas
+no79	4	27	25	ʃ 9.	· · constantes; si bien los que bivimos en Roma no deseemos de tener experi-
+no79	5	24	24		-encia de lo uno e de lo otro, e si por un aviso que no dura 4 dias ni
+no79	6	23	22	mal^	passa a los sucesores se hazen tan estraordinarias [mal^] no me ma-
+no79	7	26	24	57 is	-ravillo que se ofrezcan · di-fi-[is]-tades en la election de un señor; con todo esso
+no79	8	26	23	ʃT 0 21	es negocio tan · portante a la cristiandad · que espero que le ha de · vo-re-cer
+no79	9	25	20	mil 90 34 se xom	[mil] de manera que · · · conviene, que entre los principes que siguen la [xom] hoy di-
+no79	10	26	24	vu xor?	-versas pretensiones, e poca [vu], e cada uno pretenda para [xor] si, no me espanto
+no79	11	25	24	as	[as] no puedo dexar de hazerlo, a lo menos de que no esten ministros conformes
+no79	12	28	27	is	e unidos en la · sion de los de la sangre, e desengañados de que no se pue-
+no79	13	24	24		-den fiar de ninguno dellos. A proposito, de ver es particular cuan embarcado ha quedado el duque
+no79	14	23	21	rili xom	por la carta de [Des]portes, dixe ayer a mi proposito que se la llevo, que es [rili] de la [xom]
+no79	15	26	26		le avia mostrado unas cartas del duque en que le escrivia que assi [ʃo] devia agrade-
+no79	16	26	24	mos 86T	-cimiento a la [mos] [86T] de Desportes; todavia le avia pesado que uvie-
+no79	17	25	24	mil	-sse tratado de sus personas con Su Santidad, porque sabia [mil] que el no tenia ambicion
+no79	18	22	21	ʃer#	ninguna, sino que su fin [ʃer] era desear que se hiziesse election de un Rey qua-
+no79	19	24	21	quaʃ n. 4	-l mas, aunque para la conservacion de la religion · · · que Reyno e poderoso para de-
+no79	20	24	22	h̊o ho	-fenderle, e que [h̊o] lo asegurase de su parte a Su Santidad, e [ho] dicho la firmeza
+no79	21	25	17	∆ ʃ 21^ n̂ 23 11 4: 63	con que estavan, no dar · · · a la paz que proponia · · · · que
+no79	22	26	26		porque negocios en que convenia que abriesse mucho los ojos Su Santidad e no le engañassen
+no47	1	24	24		a 30 del passado con correo propio avise a V.M. largamente todo lo que aqui se ofre-   [gloss above]
+no47	2	26	26		-cia en particular sobre la materia de Francia, de que en(vi)ado correo duplicados   [gloss]
+no47	3	25	25		por via de mar e tierra e ha ydo difiriendo de dia en dia el despacho, otro correo   [gloss]
+no47	4	24	23	∂ir	a V.M. esperando a ver si venia alguna nueva cierta de Paris, de don de la [∂ir]   [gloss]
+no47	5	26	22	hir^ ʃ 20 75	a V.M. fresca carta con que me hallo de los [hir] de V.M., es de don Diego de · · ·
+no47	6	26	26		de los 28 de abril, con una copia de lo que escrivio a V.M., e tambien se que
+no47	7	22	19	95 n̂ xir	· · [xir] de que no tiene cartas del legato muchos dias, e creo sin duda que
+no47	8	22	19	xox lir ʃep:	se deven de perder los correos; a me · cido con este que passa de [lir] [ʃep]
+no47	9	27	25	48 21	a V.M. de recibo de la carta que mando V.M. es servirme · · de mayo, e llego aqui a
+no47	10	25	22	ī9 ∂ir 48	los · deste e de lo de [∂ir], que sobre esto negocios se ofre · reservando es res-
+no47	11	17	17		-ponder a otras cartas de V.M. para con otro, por no detener este
+no47	12	25	25		el dicho dia de recibir esta carta tuve a la tarde audiencia de Su Santidad, e
+no47	13	25	23	hum us	antes de ir a ella me envio el [hum] del duque de Mantua a la carta de su amo [us]
+no47	14	26	24	ho 35	· copia va con esta. A dicho tiempo que yo salia de mi posada e [ho] la lei en el
+no47	15	25	24	yos	coche, e por [yos] que en ella me encomienda, resolvi de no dezir nada
+no47	16	24	23	4̈9?	a Su Santidad, si no me hablasse en ello; assi pensava contar de lo que V.M. me escri-
+no47	17	24	23	ru	-ve de Gondi y de Pisani, ver si Su Santidad me apuntava algo desta [ru] del duque
+no47	18	27	20	26 56: 19: 4 88h 66 4	de Mantua; antes de · · · yo a hablar a Su Santidad me dixo · · e recibido · ·
+no47	19	25	24	ʃ	carta del duque de Mantua, a echado de ver que adrede se me devia de aver
+no47	20	22	22		dado antes de la audiencia, e sabiendolo Su Santidad le respondio que en
+no47	21	23	22	los	a que dicho [los] la avia recibido, e que confessava a Su Santidad que si no</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/reading47.md">reading47.md</a></p><pre># fr. 3984 no. 47, f. 108 (canvas 198) — the duque de Sessa to Philip II, Rome, 30 June 1593 (copy)
+
+Headed *&quot;Copia — 30 de Iunio 1593&quot;*. Same cipher and key as nos. 45 and 79 (office key **BnF fr. 3995 f. 97**).
+This leaf is the one the BnF notice calls *&quot;avec chiffre et commencement de déchiffrement&quot;*: a contemporary
+decipherer wrote the plaintext **above** the cipher lines in a lighter ink. Where the gloss survives it is
+quoted, and it **agrees with the decode** — an independent check on the key from a third letter.
+
+| line | cipher | decode | the decipherer&#x27;s gloss above |
+|---|---|---|---|
+| 2 | ʒ 3̄0 23 65 g̈o 21 16. · | **30 · de pa ssa do · con** | *a 30. del Passado con* |
+| 3 | 17 4 ʃ n. ʒir 93 li 45 55 81 77 4 | **ci a en** · **so** · **la ma te ri a** | *ofresce en particular sobre las materias de Francia, de que en breve despacho* |
+| 5 | 68: 87 4 23 55: ʃ 82 n ʒs ʃ n 22 26 77 21 23 22 4 n. 22 7 n ʃeʃ: | **por via de mar** · **en ti e** · **di fe ri do de di a en di a e** | *por una [via] de mar … ha ydo defiriendo de dia en dia. El despacho* |
+| 6 | (cipher) | · | *v.m. es[pe]rando … si ver[n]ia alguna nueva cierta de … de don…* |
+| 7 | 4 88 n̂ 66 75. 21 4 88: 92 88 62 4 des per 17 n: 80 23 ʒar 23 21. 23 | **a ve esperando a ver si venia** · · **ci en tar de** · **de don de** | — |
+| 8 | (cipher) | · | *fres[ca] carta con que me ha[n]…* |
+| 9 | 23 48^ 2̃8 23 4 12 h 16. 6 64 del 23 4873 n̂ 17 87 2 4 88 ʃ 80. 12 n | **de los** · **de a bi** · **con** · **na** [del] **de** · **es ci vi o a ve en tan bi e** | — |
+| 10 | 95 n̂ xir 23 73 61 82 n 63 ʃ ∂ä 23 vom hur 22 4 4 48 2 92. 20 | **xa es** · **de que no tiene** [en] · **de** [**legato**] [**mucho**] **di a a lo o si du** | — |
+
+| 11 | 91 23 88. 23 66: 23: 48^ ∂ol^ ʒ 56 xoxt 17 21 16. n̂ 81 73 65 90 23 | **se de ven** · **de perderlos** · **a mo** · **cido con este que pasa de** |
+| 12 | ʒ 8̈8 23 76 17 13 23 45 pa 73 55. 21 8̈8 n̂ 87: 56 ʒ 48 ũ 23 55 38 ʃ 46 3 | · [re]**cibido de la** · **que mando** · **es vir mo a lo** · **de mayo** [en] **le** |
+| 13 | 48^ ī9 23^ 81 ʃ 23 48 23 ∂ir 73 93 ũ n̂ 83 nor 91 ∇ 2̃6 48 76 91: 89 | **los** · **deste** [en] **de lo de** · **que so** · **esto** [**negocios**] **se** · **lo po ser** · |
+
+## Sense
+
+Sessa to the King from Rome, 30 June 1593, on despatches of the 30th of the previous month; what is **offered
+in particular concerning the affairs of France**, of which he despatches shortly; a letter that went **by way
+of the sea** and has been **put off from day to day**; the King **waiting to see whether some certain news
+would come**; a **fresh letter**; the **legate**, of whom he **has not much** …; the risk **of losing them**; what he has **received** of the letter **that he sent** in **May**; and these **negocios**.
+
+The gloss and the decode agree wherever both survive, which checks the office key against a contemporary
+decipherment on a third letter of the group.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/sense.tsv">sense.tsv</a></p><pre># Sense measure, 5 Oct 2026. Every cipher line re-transcribed from the Gallica images at 3200-3600 px (crops of the cipher block;
+# img3983/r0178_*, r0286_*, img3984/r0198_*, r0268_*). A token counts as READ only when it is part of a word that reads as Spanish
+# sense in its context (nulls identified from the f. 97 sheet count as read). Doubtful readings (&#x27;?&#x27;) and code groups without a value
+# count as UNREAD. no. 47: tokens under a legible contemporary gloss count as read where the gloss gives the word.
+# doc	line	tokens	read	unread groups	reading (Spanish, modern word division)
+no45	1	18	18		el, alla, con este achaque, que siendo confidente de S.M. [9̈5 = de, f. 97]
+no45	2	18	17	se	· se podria procurar, assi [ʃo] fuesse a costa de la bol-
+no45	3	17	14	se 66 ʒ	-sa de [9̈4] S.M. · yo · supongo que havra de ser, podria ·
+no45	4	18	17	ʒe	ser de mucho provecho su residencia en [ʒe] · yo escrivi
+no45	5	20	16	Val T°# 5̲7 4	sobre esto a [Val] y lo han · · · omitido, y assi cre-
+no45	6	19	18	9̈1	-o que havra dado [5̈0 null] alguna (written a-gu-na) opinion a · sobre ello, y si
+no45	7	16	16		no se vera lo que en esto convernà hazer, que yo
+no45	8	18	18		me remito a su prudencia. Solo le suplico que si
+no45	9	18	16	ral ʃep:	tuviere [ral] me mande [ʃep:] con tiempo la persona que se
+no45	10	18	17	ʒ	elegira, y adonde le podria · yo embiar a dar
+no45	11	18	16	ner ʒe	algun recado si fuesse [ner] al passar a [ʒe], se pue-
+no45	12	17	17		-da ser de manera que no se entienda, porque la hora que
+no45	13	16	10	pir ∆ 72 45 8̂1 ṅ	le tengan por [pir] perdera mucho · · · · · [nor?] res-
+no45	14	17	16	i3	-peto · servicio que puede hazer a S.M. mas de una ma-
+no45	15	6	4	2 89	-nera que de · ·  (then clear: Dios Gu. ... a 25 de hebrero 1593)
+no79	1	23	23		de ver los testimonios que a todos levantan, creo que avra sido a
+no79	2	22	20	4 dir	proposito mostrar la · a Su Santidad [4̈9] para [dir] particularmente enterar al legato de su intencion; lastima ten-
+no79	3	26	22	ʃ 4 87T fe4^	-go al señor duque [pal] de Feria · · · · que han de tratar con personas tan ambiciosas
+no79	4	27	25	ʃ 9.	· · constantes; si bien los que bivimos en Roma no deseemos de tener experi-
+no79	5	24	24		-encia de lo uno e de lo otro, e si por un aviso que no dura 4 dias ni
+no79	6	23	22	mal^	passa a los sucesores se hazen tan estraordinarias [mal^] no me ma-
+no79	7	26	24	57 is	-ravillo que se ofrezcan · di-fi-[is]-tades en la election de un señor; con todo esso
+no79	8	26	23	ʃT 0 21	es negocio tan · portante a la cristiandad · que espero que le ha de · vo-re-cer
+no79	9	25	20	mil 90 34 se xom	[mil] de manera que · · · conviene, que entre los principes que siguen la [xom] hoy di-
+no79	10	26	24	vu xor?	-versas pretensiones, e poca [vu], e cada uno pretenda para [xor] si, no me espanto
+no79	11	25	24	as	[as] no puedo dexar de hazerlo, a lo menos de que no esten ministros conformes
+no79	12	28	27	is	e unidos en la · sion de los de la sangre, e desengañados de que no se pue-
+no79	13	24	24		-den fiar de ninguno dellos. A proposito, de ver es particular cuan embarcado ha quedado el duque
+no79	14	23	21	rili xom	por la carta de [Des]portes, dixe ayer a mi proposito que se la llevo, que es [rili] de la [xom]
+no79	15	26	26		le avia mostrado unas cartas del duque en que le escrivia que assi [ʃo] devia agrade-
+no79	16	26	24	mos 86T	-cimiento a la [mos] [86T] de Desportes; todavia le avia pesado que uvie-
+no79	17	25	24	mil	-sse tratado de sus personas con Su Santidad, porque sabia [mil] que el no tenia ambicion
+no79	18	22	21	ʃer#	ninguna, sino que su fin [ʃer] era desear que se hiziesse election de un Rey qua-
+no79	19	24	21	quaʃ n. 4	-l mas, aunque para la conservacion de la religion · · · que Reyno e poderoso para de-
+no79	20	24	22	h̊o ho	-fenderle, e que [h̊o] lo asegurase de su parte a Su Santidad, e [ho] dicho la firmeza
+no79	21	25	17	∆ ʃ 21^ n̂ 23 11 4: 63	con que estavan, no dar · · · a la paz que proponia · · · · que
+no79	22	26	26		porque negocios en que convenia que abriesse mucho los ojos Su Santidad e no le engañassen
+no47	1	24	24		a 30 del passado con correo propio avise a V.M. largamente todo lo que aqui se ofre-   [gloss above]
+no47	2	26	26		-cia en particular sobre la materia de Francia, de que en(vi)ado correo duplicados   [gloss]
+no47	3	25	25		por via de mar e tierra e ha ydo difiriendo de dia en dia el despacho, otro correo   [gloss]
+no47	4	24	23	∂ir	a V.M. esperando a ver si venia alguna nueva cierta de Paris, de don de la [∂ir]   [gloss]
+no47	5	26	22	hir^ ʃ 20 75	a V.M. fresca carta con que me hallo de los [hir] de V.M., es de don Diego de · · ·
+no47	6	26	26		de los 28 de abril, con una copia de lo que escrivio a V.M., e tambien se que
+no47	7	22	19	95 n̂ xir	· · [xir] de que no tiene cartas del legato muchos dias, e creo sin duda que
+no47	8	22	19	xox lir ʃep:	se deven de perder los correos; a me · cido con este que passa de [lir] [ʃep]
+no47	9	27	25	48 21	a V.M. de recibo de la carta que mando V.M. es servirme · · de mayo, e llego aqui a
+no47	10	25	22	ī9 ∂ir 48	los · deste e de lo de [∂ir], que sobre esto negocios se ofre · reservando es res-
+no47	11	17	17		-ponder a otras cartas de V.M. para con otro, por no detener este
+no47	12	25	25		el dicho dia de recibir esta carta tuve a la tarde audiencia de Su Santidad, e
+no47	13	25	23	hum us	antes de ir a ella me envio el [hum] del duque de Mantua a la carta de su amo [us]
+no47	14	26	24	ho 35	· copia va con esta. A dicho tiempo que yo salia de mi posada e [ho] la lei en el
+no47	15	25	24	yos	coche, e por [yos] que en ella me encomienda, resolvi de no dezir nada
+no47	16	24	23	4̈9?	a Su Santidad, si no me hablasse en ello; assi pensava contar de lo que V.M. me escri-
+no47	17	24	23	ru	-ve de Gondi y de Pisani, ver si Su Santidad me apuntava algo desta [ru] del duque
+no47	18	27	20	26 56: 19: 4 88h 66 4	de Mantua; antes de · · · yo a hablar a Su Santidad me dixo · · e recibido · ·
+no47	19	25	24	ʃ	carta del duque de Mantua, a echado de ver que adrede se me devia de aver
+no47	20	22	22		dado antes de la audiencia, e sabiendolo Su Santidad le respondio que en
+no47	21	23	22	los	a que dicho [los] la avia recibido, e que confessava a Su Santidad que si no</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1593/key92.tsv">key92.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/sessa1593.json"></figure>
 <!-- replay:end -->

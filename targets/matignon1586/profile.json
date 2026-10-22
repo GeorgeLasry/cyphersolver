@@ -813,6 +813,12 @@
   },
   {
    "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-leaf transcriptions and the existing reading_f*.txt / f*_reading.md files; dec.py run with key_contrib.json on every transcribed leaf and saved to texts/<leaf>_decryption.md; f. 154v (never transcribed) linked to the Gallica images of the leaf and its clear copy f. 157r; f. 110 linked to its status note (not read). Missing: the clear copies ff. 155-157 and Michael Brackx's own decodes (issues #64, #68-#71), not in the folder.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
    "kind": "solver",
    "what": "One Cipher-1 key from Brackx's eleven per-leaf keys (merge_keys.py): each figure takes the union of the letter sets the leaves give it, each code every value any leaf gives it. Decoded every leaf with it (this project's beam and 6-gram) and scored as brackx_validate.py: the target's 15 documents read 9,855 of 15,705 tokens as sense against 9,609 with the per-leaf keys; every leaf equal or better, copy agreement unchanged within one point (f. 143r 0.93, f. 154r 0.89, f. 154v 0.89/0.93, f. 150r 0.85); scrambled floor 0.121 against 0.100. The per-leaf keys are one key read by different hands, not different keys.",
    "result": "worked",

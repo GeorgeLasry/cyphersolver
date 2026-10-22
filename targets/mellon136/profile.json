@@ -128,6 +128,12 @@
    "kind": "transcription",
    "what": "Transcribed the clear German around every cipher passage (pp. 24-32, 43-48, 50-56, 59-63, 69-71, 73-77) with two image-reading agents and translated the 13 recipes that carry cipher into English; the clear text shows the p. 60 cipher \"Glas No. S.\" should be P.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt and reading.txt linked, with the clear-text translations clear/pp24-49.md and clear/pp50-77.md; the 2022 p. 24 reading (Lasry's transcription, Kopal's decryption) and Rieber's blog comment are listed separately as pointers to Schmeh's post, since neither text is in the repository.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -164,6 +170,30 @@
     {"who": "lasry", "role": "prior solution", "note": "transcription of p. 24 from which Kopal decrypted it; used as a check", "date": "2022", "source": "Schmeh, Cipherbrain, 4 March 2022"},
     {"who": "kopal", "role": "prior solution", "note": "decrypted p. 24 (video), and gave Schmeh the tip; used as a check", "date": "2022", "source": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/"},
     {"who": "rieber", "role": "prior solution", "note": "blog comment reading most short passages, with gaps; used as a check", "date": "2022-03-10", "source": "Comment 4 on Schmeh, Cipherbrain, 4 March 2022"}
+  ],
+  "texts": [
+   {
+    "doc": "R2873",
+    "label": "All 31 cipher passages, pp. 24-76 (this project, 22 Sept 2026)",
+    "transcription": "transcription.txt",
+    "decryption": "reading.txt",
+    "translation": ["clear/pp24-49.md", "clear/pp50-77.md"],
+    "summary": "A 129-page alchemical manuscript book, Das zweyte Silentium Dei (pseudo-Arndt, copied at Glücksbrunn in 1798), describing a 'magische Machine' of three burning glasses that focus sunlight onto glass dishes and capels. The cipher words are the working parts of the recipes: vessels and materials, procedures, and on p. 24 the key to the lettered figures of the machine."
+   },
+   {
+    "doc": "R2873",
+    "label": "p. 24, 2022 reading (George Lasry's transcription, Nils Kopal's decryption), as printed on Schmeh's Cipherbrain",
+    "transcription": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
+    "decryption": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
+    "summary": "The earlier reading of the long p. 24 passage (the legend of the machine's figures). It agrees with the reading here except Stöpsel (not 'Stopfel'), Löchlein, 'zu lit. b. muss lutirt werden', arbeitet, and the open sign after 'No. M. ist ein gläserner'. Lasry's transcription itself is not in this repository."
+   },
+   {
+    "doc": "R2873",
+    "label": "Short passages, Christof Rieber's comment of 10 March 2022 on the same post",
+    "transcription": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
+    "decryption": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
+    "summary": "A reader's reading of most short passages, with gaps; differences from the reading here are listed in NOTES.md (lutire, No., nach und nach, sta=cken, and four passages he does not have)."
+   }
   ]
  }
 }

@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#poems">The two poems</a><a href="#numbers">The 285 numbers</a><a href="#test">A test that never sees the plaintext</a><a href="#reading">The decryption</a><a href="#distich">The distich does not follow</a><a href="#remaining">What remains</a><a href="#method">Method and reproduction</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#poems">The two poems</a><a href="#numbers">The 285 numbers</a><a href="#test">A test that never sees the plaintext</a><a href="#reading">The decryption</a><a href="#distich">The distich does not follow</a><a href="#remaining">What remains</a><a href="#method">Method and reproduction</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Urquhart printed a verse under the octastich saying the key was “gather’d out of my Exskybalorum” and that he loved “an aphaeresified treason”:
 the cipher takes word-initials from the book it is printed in. The <em>k</em>-th number, counting straight through the poem, is a word index into physical page <em>k</em>
@@ -248,6 +248,353 @@ numberings; <code>decode_1983_full.tsv</code> gives every position with page, wo
 plaintext (<code>measure_sense.txt</code>); <code>align.py</code> is the alignment used on the defective transcription; the controls are in the notes. The TCP text comes from the Text Creation Partnership’s GitHub mirror; the 1983 page photographs from the
 HCPortal record, whose API answers at api.hcportal.eu.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>The Cyphral Octastich, The Jewel (London, 1652), last leaf</h3>
+<p>A royalist prayer for Charles II in ottava rima (&#x27;Great Lord, mantaine that regal familie / Whereof King Charls the second is the head&#x27;), written in London in March 1652 by Urquhart, a prisoner of Worcester, and hidden as a book cipher on The Jewel itself.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/octastich_transcription.txt">octastich_transcription.txt</a></p><pre># Urquhart, the Cyphral Octastich (1652): the 285 numbers, written out from ct.py OCTASTICH_1983 on 22 Oct 2026.
+# Transcribed 16 Sept 2026 from the HCPortal photographs of the 1983 Jack &amp; Lyall edition, p. 212 and facing
+# (src/octastich_part1.jpg, src/octastich_part2.jpg). One line per stanza-line (with its run-over); last line = the Decagram.
+L1: 25 11 39 4 4 10 3 54 50 19 1 18 1 5 9 58 15 1 4 17 1 42 32 77 23 75 6 3 18 20 36 8 21
+L2: 4 10 22 3 5 11 3 162 18 21 44 79 42 2 17 61 32 7 7 107 8 59 28 54 31 113 42 31 5 19 32 3 115 3 22
+L3: 1 16 96 31 87 5 88 1 4 30 10 15 8 47 28 17 139 17 69 5 29 9 9 1 51 6 114 8 34 30 2 18 24 41 33 74 93 8
+L4: 5 12 58 162 12 44 1 66 9 15 100 42 2 28 16 6 27 4 196 70 53 7 1 69 2 15 89 34 11 13 12 29 15 76 40 22 8 24 75
+L5: 3 58 15 2 1 4 5 56 5 5 2 4 12 20 19 14 80 37 45 34 3 95 6 38 1 18 11 27 4 13 7 24
+L6: 5 20 5 87 40 25 9 56 21 29 2 81 50 147 2 6 16 15 14 9 13 27 3 16 14 7 6 2 10 16 69 1 44
+L7: 38 3 3 2 10 34 8 18 9 28 2 4 6 2 201 10 13 6 1 36 1 31 4 17 54 16 5 22 11 5 31
+L8: 71 96 15 45 19 6 64 10 42 7 83 37 6 3 7 74 4 14 8 91 27 12 11 2 28 50 68 3 2 12 1 5 49 3
+Decagram: 7 7 95 66 1 11 33 51 50 6</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/octastich_decryption.md">octastich_decryption.md</a></p><pre># Urquhart, the Cyphral Octastich: the reading (copied verbatim from NOTES.md, 22 Oct 2026)
+
+Rule: the k-th number, counting straight through the poem, is a word index into physical page k of *The Jewel*
+(1652); the letter is that word&#x27;s initial. The number-by-number decode (page, word, letter, first-occurrence flag) is
+`decode_1983_full.tsv`; the raw letter string is `reading_octastich.txt`. Line 5 re-read 5 Oct 2026 (NOTES §5); one
+letter (position 149) stays open.
+
+```
+Great Lord, mantaine that regal familie
+Whereof King Charls the second is the head,
+And grant that he may beare the supreme sweigh
+Where English, Scots and Irsh are borne and bred;
+And [?] overthrow his usurp&#x27;d authoritie
+Reigne in his royal predecessors stead:
+Let him be our sole Cesar, Artur, Hector,
+Our Emperour, King, Monarch and Protector.
+                              Amen, so be it.
+```</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/decode_1983_full.tsv">decode_1983_full.tsv</a></p><pre>k	n	word	letter	first	first_index_of_letter
+1	25	Worcester	W	False	7
+2	11	rushing	R	True	11
+3	39	every	E	True	39
+4	4	another	A	True	4
+5	4	to	T	True	4
+6	10	Language	L	True	10
+7	3	of	O	True	3
+8	54	real	R	True	54
+9	50	divided	D	True	50
+10	19	matter	M	True	19
+11	1	as	A	True	1
+12	18	produce	P	False	9
+13	1	the	T	True	1
+14	5	and	A	True	5
+15	9	is	I	True	9
+16	58	never	N	False	31
+17	15	extent	E	True	15
+18	1	their	T	True	1
+19	4	have	H	True	4
+20	17	a	A	True	17
+21	1	tenet	T	True	1
+22	42	runs	R	True	42
+23	32	even	E	True	32
+24	77	Grammatical	G	True	77
+25	23	teeth	T	False	1
+26	75	As	A	False	11
+27	6	for	F	True	6
+28	3	after	A	True	3
+29	18	my	M	True	18
+30	20	in	I	True	20
+31	36	Languages	L	True	36
+32	8	it	I	True	8
+33	21	every	E	True	21
+34	4	with	W	True	4
+35	10	the	T	False	4
+36	22	express	E	True	22
+37	3	Rules	R	True	3
+38	5	every	E	True	5
+39	11	out	O	True	11
+40	3	fiftiethly	F	True	3
+41	162	knowledge	K	True	162
+42	18	in	I	True	18
+43	21	new	N	True	21
+44	44	great	G	True	44
+45	79	concealed	C	True	79
+46	42	have	H	True	42
+47	2	and	A	True	2
+48	17	respect	R	True	17
+49	61	limits	L	True	61
+50	32	strongest	S	True	32
+51	7	their	T	False	6
+52	7	he	H	True	7
+53	107	a	A	False	10
+54	8	shall	S	True	8
+55	59	their	T	False	1
+56	28	Cretians	C	True	28
+57	54	of	O	True	54
+58	31	notorious	N	True	31
+59	113	this	T	False	12
+60	42	in	I	True	42
+61	31	say	S	True	31
+62	5	themselves	T	True	5
+63	19	any	A	False	5
+64	32	esse	E	True	32
+65	3	High-Germans	H	True	3
+66	115	in	I	False	4
+67	3	and	A	True	3
+68	22	discretion	D	True	22
+69	1	And	A	True	1
+70	16	no	N	True	16
+71	96	Denmark	D	True	96
+72	31	Gordon	G	True	31
+73	87	Rodomontads	R	True	87
+74	5	a	A	True	5
+75	88	Naples	N	False	53
+76	1	those	T	True	1
+77	4	that	T	True	4
+78	30	Henry	H	True	30
+79	10	any	A	False	7
+80	15	therefore	T	False	8
+81	8	half	H	True	8
+82	47	eternal	E	True	47
+83	28	duellists	D	True	28
+84	17	after	A	True	17
+85	139	yet	Y	True	139
+86	17	being	B	True	17
+87	69	encouragement	E	True	69
+88	5	adversary	A	True	5
+89	29	respective	R	True	29
+90	9	executed	E	True	9
+91	9	this	T	True	9
+92	1	hand	H	True	1
+93	51	external	E	True	51
+94	6	faculty	F	True	6
+95	114	unprepared	U	True	114
+96	8	playing	P	True	8
+97	34	a	A	False	15
+98	30	eloquent	E	True	30
+99	2	matter	M	True	2
+100	18	extractions	E	True	18
+101	24	subtleties	S	True	24
+102	41	God	G	False	39
+103	33	end	E	True	33
+104	74	in	I	True	74
+105	93	gestures	G	True	93
+106	8	servant	S	True	8
+107	5	which	W	True	5
+108	12	he	H	True	12
+109	58	end	E	True	58
+110	162	ready	R	True	162
+111	12	Drammatical	D	True	12
+112	44	excessive	E	True	44
+113	1	note	N	True	1
+114	66	Gentlemen	G	True	66
+115	9	liberty	L	True	9
+116	15	if	I	True	15
+117	100	several	S	False	98
+118	42	he	H	True	42
+119	2	seemed	S	True	2
+120	28	Coach-man	C	True	28
+121	16	or	O	False	2
+122	6	to	T	True	6
+123	27	strained	S	True	27
+124	4	as	A	True	4
+125	196	not	N	True	196
+126	70	discourse	D	True	70
+127	53	is	I	True	53
+128	7	orders	O	True	7
+129	1	she	S	True	1
+130	69	of	O	False	2
+131	2	and	A	True	2
+132	15	rich	R	True	15
+133	89	expectation	E	True	89
+134	34	before	B	True	34
+135	11	of	O	True	11
+136	13	resorts	R	True	13
+137	12	no	N	True	12
+138	29	exterior	E	True	29
+139	15	a	A	True	15
+140	76	not	N	True	76
+141	40	did	D	True	40
+142	22	be	B	True	22
+143	8	rows	R	True	8
+144	24	elevate	E	True	24
+145	75	dead	D	True	75
+146	3	and	A	True	3
+147	58	and	A	False	3
+148	15	ducats	D	True	15
+149	2	Colonel	C	True	2
+150	1	of	O	True	1
+151	4	nor	N	False	2
+152	5	elected	E	True	5
+153	56	Russia	R	True	56
+154	5	the	T	True	5
+155	5	his	H	True	5
+156	2	to	T	True	2
+157	4	of	O	True	4
+158	12	-	_	None	None
+159	20	and	A	False	6
+160	19	included	I	True	19
+161	14	the	T	False	7
+162	80	the	T	False	4
+163	37	service	S	True	37
+164	45	upbraid	U	True	45
+165	34	and	A	False	3
+166	3	plowed	P	True	3
+167	95	did	D	True	95
+168	6	an	A	True	6
+169	38	pain	P	False	4
+170	1	they	T	True	1
+171	18	have	H	True	18
+172	11	other	O	True	11
+173	27	rebus	R	True	27
+174	4	I	I	True	4
+175	13	endowments	E	True	13
+176	7	improvement	I	True	7
+177	24	excellenti	E	True	24
+178	5	regular	R	True	5
+179	20	ever	E	True	20
+180	5	in	I	True	5
+181	87	great	G	True	87
+182	40	that	T	False	1
+183	25	excelling	E	True	25
+184	9	Icon	I	True	9
+185	56	not	N	True	56
+186	21	many	M	True	21
+187	29	in	I	True	29
+188	2	Scotish	S	True	2
+189	81	nor	N	False	3
+190	50	of	O	True	50
+191	147	the	T	False	9
+192	2	according	A	True	2
+193	6	laws	L	True	6
+194	16	people	P	True	16
+195	15	Religion	R	True	15
+196	14	eminent	E	True	14
+197	9	Doctor	D	True	9
+198	13	excuse	E	True	13
+199	27	committed	C	True	27
+200	3	ever	E	True	3
+201	16	Several	S	True	16
+202	14	Straloch	S	True	14
+203	7	open	O	True	7
+204	6	reason	R	True	6
+205	2	should	S	True	2
+206	10	since	S	True	10
+207	16	is	I	False	8
+208	69	for	F	False	14
+209	1	Alexander	A	True	1
+210	44	to	T	False	6
+211	38	Sterlin	S	True	38
+212	3	esteemed	E	True	3
+213	3	that	T	True	3
+214	2	had	H	True	2
+215	10	Physician	P	False	8
+216	34	left	L	True	34
+217	8	but	B	True	8
+218	18	excellent	E	True	18
+219	9	or	O	True	9
+220	28	under	U	True	28
+221	2	received	R	True	2
+222	4	set	S	True	4
+223	6	of	O	True	6
+224	2	literate	L	True	2
+225	201	the	T	False	2
+226	10	constrained	C	True	10
+227	13	experience	E	True	13
+228	6	Sinclair	S	True	6
+229	1	as	A	True	1
+230	36	the	T	False	6
+231	1	and	A	True	1
+232	31	men	M	False	13
+233	4	to	T	False	3
+234	17	and	A	False	4
+235	54	relation	R	True	54
+236	16	he	H	True	16
+237	5	emnia	E	True	5
+238	22	coming	C	True	22
+239	11	be	B	True	11
+240	5	of	O	True	5
+241	31	Rexdolars	R	True	31
+242	71	of	O	True	71
+243	96	Eternity	E	False	3
+244	15	Romania	R	True	15
+245	45	excusable	E	True	45
+246	19	most	M	True	19
+247	6	prefers	P	True	6
+248	64	of	O	False	11
+249	10	remain	R	True	10
+250	42	parent	P	True	42
+251	7	upon	U	True	7
+252	83	when	W	False	1
+253	37	James	J	True	37
+254	6	I	I	True	6
+255	3	not	N	True	3
+256	7	gaine	G	True	7
+257	74	memorable	M	True	74
+258	4	of	O	True	4
+259	14	nevertheless	N	True	14
+260	8	again	A	True	8
+261	91	Realms	R	True	91
+262	27	comfort	C	True	27
+263	12	hath	H	True	12
+264	11	and	A	True	11
+265	2	name	N	True	2
+266	28	dream	D	True	28
+267	50	pari	P	True	50
+268	68	renewed	R	True	68
+269	3	of	O	True	3
+270	2	that	T	True	2
+271	12	England	E	True	12
+272	1	circumobresistence	C	True	1
+273	5	the	T	True	5
+274	49	of	O	True	49
+275	3	Romans	R	True	3
+276	7	a	A	True	7
+277	7	man	M	True	7
+278	95	some	S	False	18
+279	66	no	N	True	66
+280	1	Subjection	S	True	1
+281	11	of	O	True	11
+282	33	with	W	False	5
+283	51	Logical	L	True	51
+284	50	Therefore	T	False	6
+285	6	those	T	False	3</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/reading_octastich.txt">reading_octastich.txt</a></p><pre>wREATLORDMApTAInETHATREGtaFAMILIE
+WtEREOFKINGCHARLStHaStCONtISTaEHiAD
+ANDGRAnTTHatHEDAYBEARETHEFUPaEMESgEIGS
+WHERDENGLIsHSCoTSANDIOSoAREBORNEANDBRED
+AaDCOnERTHTO_aIttSUaPDApTHORIEIE
+REIGtEINMISnOtALPREDECESSORSSifAt
+SETHpLBEOURSOLtCESAtAmtaRHECBOR
+OeREMPoRPUwJINGMONARCHANDPROTECTOR
+AMsNSOwLtt</pre></details>
+<h3>The Cyphral Distich, Logopandecteision (1653), last leaf</h3>
+<p>64 numbers in two lines; not deciphered. The published Proquiritation reading does not reproduce here.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/distich_transcription.txt">distich_transcription.txt</a></p><pre># Urquhart, the Cyphral Distich: the 64 numbers, written out from ct.py DISTICH on 22 Oct 2026.
+# Two lines of 32 as printed (Maitland Club Works 1834 p. 417; 1653 Logopandecteision, NLS H.32.a.39 per Scheers).
+# Position 56 is 38 in the 1653 print and the 1834 Works (Schmeh has 33).
+5 3 27 38 32 14 21 8 66 8 70 39 5 9 12 18 2 3 56 5 1 7 3 2 13 19 3 25 9 3 16 6
+25 15 13 6 11 20 5 1 2 12 1 20 20 49 20 20 35 33 4 6 8 35 5 38 5 5 18 10 3 11 32 42</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/texts/distich_decryption.md">distich_decryption.md</a></p><pre># Urquhart, the Cyphral Distich: no decipherment
+
+The distich is not deciphered (outcome.parts: not solved, 0/64). The August 2026 claim (the i-th number indexes a
+word of the i-th Proquiritation, first letters taken; claimed text `OGODUPHOLDKINGCHARLSTHESECONDANDMAKEHIMTHESUPREMERULEROFTHISLAND`, ct.py `CLAIM`)
+does not reproduce here. From NOTES.md §6 (copied verbatim, 22 Oct 2026): &quot;The first-occurrence test on Reticuli&#x27;s
+tokenised Proquiritations gives 34 of 64 hits and the string
+`NTMAMNDN_OHTISEABRPTTSGSNTAATVTD / ASOTHDOSTTTBHPBTHBIPFSWTLVWTABV_`, not the claimed prayer.&quot; Page-index variants
+and David Scheers&#x27;s suggested variants (20 Oct 2026, `distich_scheers_variants.py`) score at chance.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/urquhart/decode_1983_full.tsv">decode_1983_full.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/urquhart.json"></figure>
 <!-- replay:end -->

@@ -48,7 +48,7 @@
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The letter and its two cipher passages</a><a href="#ponte">Ponte, Escudero and a possible quarrel</a><a href="#comet">“El mundo se acabará o morirá el rey”</a><a href="#method">How the key was recovered</a><a href="#uncertain">What is still tentative</a><a href="#sources">Sources and files</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The letter and its two cipher passages</a><a href="#ponte">Ponte, Escudero and a possible quarrel</a><a href="#comet">“El mundo se acabará o morirá el rey”</a><a href="#method">How the key was recovered</a><a href="#uncertain">What is still tentative</a><a href="#texts">Full texts</a><a href="#sources">Sources and files</a></nav>
 <div class="callout" data-term-ok><strong>Summary.</strong> Tomokiyo lists this as the remaining undeciphered letter in espagnol 336 after Lasry's 2023 solutions of other items; that means no decipherment is known, contemporary or modern. The old view number leads to a different folio: this letter occupies Gallica views 336–340, with cipher on 337 and 338. A Spanish homophonic solver produced Spanish only after joined signs were transcribed as separate signs. Checking the manuscript against that output then gave both passages, including a report that the world would end or the king die around September. The shorter passage concerns Ponte or Aponte and Escudero. All 125 cipher tokens have proposed values; 119, or 95.2%, remain when six tentative assignments are excluded. No independent decipherment or contemporary key was found, so the decipherment has internal support only and has not been checked against an outside source. Devos's full 1950 key tables were not obtained.</div>
 
 <h2 id="document"><span class="num">01</span> The letter and its two cipher passages</h2>
@@ -85,6 +85,218 @@
 </tbody></table>
 <p>Dotted signs are not all nulls: the values <code>ad=r</code>, <code>Yd=i</code> and the tentative <code>ud=ll</code> are kept. The reconstructed key covers only the signs that occur here. Further key material could confirm or revise the singletons, the segmentation of the proper name and the awkward wording of the shorter passage.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>BnF espagnol 336 no. 99 ff. 196r-198r, Madrid, 8 Aug 1596</h3>
+<p>Matheo de Segura to the Constable of Castile: after a grave councillor&#x27;s report of a meeting about a recent comet, the cipher says &#x27;dizen que el mundo se acabará o morirá el rey por setiembre. Él bien cerca dello paresce que anda. Creo en Dios&#x27;; a shorter passage names A Ponte and Escudero. Key rebuilt ciphertext-only from this letter; six singleton values are graded M.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/cipher_final.txt">cipher_final.txt</a></p><pre>[que estava yo contento si se guarda]
+Hd r R z L
+Y n o rd a l z o D l a openC k
+[se le deve amistad y no se si se conforman]
+o z L E z a T r Q l b u l three
+o inf e n a k
+[ny sy ay rason de encuentro entre ellos]
+
+[Un consejero muy grave me ha dicho que han hecho aqui junta sobre la cometa que ha avido estos dias y]
+e D bar8 n L qshape d l l b T inf L e z three l r o s g H a s
+k T z a D hash r l b ad l u R z a three l Y D l X
+g a n l b g D l L o l hash c s e l ud z R r
+a l three o l qshape d l r L e r o a l k l L e Yd J three
+[Tambien disen que se tratan treguas entre su magestad y Bearne]</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/cipher_tokens.txt">cipher_tokens.txt</a></p><pre>Hd r R z L
+Y n o rd a l z o D l a openC k
+o z L E z a T r Q l b u l three
+o inf e n a k
+e D bar8 n L qshape d l l b T inf L e z three l r o s g H a s
+k T z a D hash r l b ad l u R z a three l Y D l X
+g a n l b g D l L o l hash c s e l ud z R r
+a l three o l qshape d l r L e r o a l k l L e Yd J three</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/reading.md">reading.md</a></p><pre># Matheo de Segura to the Constable of Castile, Madrid, 8 August 1596
+
+BnF espagnol 336 no. 99, ff. 196r–198r; Gallica views 336–340.
+Reading made 23 September 2026 from the images, without an external decipherment.
+
+## Editorial conventions
+
+Bold text below was encrypted. Spaces, accents, capitalization and punctuation are editorial. Clear-text excerpts are lightly normalized, not a diplomatic edition of the five-page letter. `cipher_tokens.txt` preserves the eight cipher runs/lines in reading order; `token_reading.tsv` gives every sign, its proposed value and its grade. The labels are modern identifiers, not facsimiles of the signs. All 125 tokens have proposed values; 119 (95.2%) remain if the six context-dependent M readings are excluded. This measures the proposal, not independent proof of its correctness.
+
+## A — f. 196v, view 337
+
+…que no quieren hazer gracia sino mera justicia, con que estaría yo contento si se guarda. **A Ponte creo cierto** se le deve amistad, y no sé si se conforman **conforman él y Escudero**, ni si ay razón de encuentro entre ellos, que si la huviesse a entrambos les costaría su dinero; el de V.Ex. no querría que menguase por esta causa, y los demás cada uno le ayude su suerte, y así yo me bolveré a Toledo a dar mate a estas cosas, y avisaré de lo que huviere.
+
+Literal decrypted runs:
+
+```
+apon
+tecreocierto
+conformanelyes
+cudero
+```
+
+The first name may be segmented **A Ponte** or **Aponte**; the signs alone do not decide. No first name is established for this person or for Escudero. The apparent clear/cipher repetition *se conforman / conforman* is retained. Its awkwardness must not be hidden by silently replacing cipher text with a different name or verb. In sense, Segura discusses friendship owed to Ponte/Aponte, agreement between him and Escudero, and the financial consequences of a quarrel.
+
+## B — f. 197r, view 338
+
+Un consejero muy grave me ha dicho que han hecho aquí junta sobre la cometa que ha avido estos días, y **dizen que el mundo se acabará o morirá el rey por setiembre. Él bien cerca dello paresce que anda. Creo en Dios.**
+
+Literal decrypted lines (the first begins with the two cipher signs at the end of the introductory line):
+
+```
+dizenqueelmundoseacabara
+omoriraelreyporsetiem
+breelbiencercadellopa
+rescequeandacreoendios
+```
+
+English: “A very weighty councillor has told me that they have held a meeting here about the comet that has appeared these days, and they say the world will end or the king will die around September. He seems to be very close to it. I believe in God.”
+
+This reports what a councillor told Segura. It does not establish an official council decision or the astronomical identity of the comet. The punctuation and tone of the final pious formula remain editorial.
+
+## Other pages
+
+196r: money, expenses, debts and payments involving the Council of Italy; concern for services and reputation. 196v: royal help and consultation with Don Alonso Idiáquez, followed by passage A. 197r: passage B, truce and military news, Carmona, the adelantado and Cebiaur, ships and men, Lisbon/Portalegre, and the sale of Don Blasco&#x27;s estate. 197v–198r: marriage negotiations involving García de Alvarado, the Duke of Alba&#x27;s sister, Jerónimo de Salamanca, Gaspar Bullón and Haro; dowry and vocation; the Cortes&#x27; grant of thirty million over six years. The last page supplies Madrid, 8 August 1596, and Matheo de Segura&#x27;s signature, with a postscript about infantry for the expedition. These are contextual summaries, not additional recovered ciphertext.
+
+## Doubtful assignments
+
+| Token | Proposed value | Occurrence | Grade and reason |
+|---|---|---|---|
+| Hd | null | A, run 1 | M: underdotted sign, deletion inferred from the name/context |
+| rd | null | A, run 2 | M: underdotted sign, deletion inferred from *creo* |
+| openC | t | A, run 2 | M: singleton in *cierto* |
+| Q | n | A, run 3 | M: singleton in *conforman* |
+| X | m | B, line 2 | M: overwritten end-of-line sign in *setiem-bre* |
+| ud | ll | B, line 3 | M: dotted singleton in *dello* |
+
+The other 119 token readings are I, inferred from the substitution and Spanish context. None is graded H or C: no contemporary key or independent plaintext was obtained. Dotted signs are not indiscriminately erased: `ad=r`, `Yd=i` and `ud=ll` are kept. The reconstructed key covers the signs used here, not the complete historical cipher alphabet.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/token_reading.tsv">token_reading.tsv</a></p><pre>line	position	token	plaintext	grade
+1	1	Hd	[null]	M
+1	2	r	a	I
+1	3	R	p	I
+1	4	z	o	I
+1	5	L	n	I
+2	1	Y	t	I
+2	2	n	e	I
+2	3	o	c	I
+2	4	rd	[null]	M
+2	5	a	r	I
+2	6	l	e	I
+2	7	z	o	I
+2	8	o	c	I
+2	9	D	i	I
+2	10	l	e	I
+2	11	a	r	I
+2	12	openC	t	M
+2	13	k	o	I
+3	1	o	c	I
+3	2	z	o	I
+3	3	L	n	I
+3	4	E	f	I
+3	5	z	o	I
+3	6	a	r	I
+3	7	T	m	I
+3	8	r	a	I
+3	9	Q	n	M
+3	10	l	e	I
+3	11	b	l	I
+3	12	u	y	I
+3	13	l	e	I
+3	14	three	s	I
+4	1	o	c	I
+4	2	inf	u	I
+4	3	e	d	I
+4	4	n	e	I
+4	5	a	r	I
+4	6	k	o	I
+5	1	e	d	I
+5	2	D	i	I
+5	3	bar8	z	I
+5	4	n	e	I
+5	5	L	n	I
+5	6	qshape	q	I
+5	7	d	u	I
+5	8	l	e	I
+5	9	l	e	I
+5	10	b	l	I
+5	11	T	m	I
+5	12	inf	u	I
+5	13	L	n	I
+5	14	e	d	I
+5	15	z	o	I
+5	16	three	s	I
+5	17	l	e	I
+5	18	r	a	I
+5	19	o	c	I
+5	20	s	a	I
+5	21	g	b	I
+5	22	H	a	I
+5	23	a	r	I
+5	24	s	a	I
+6	1	k	o	I
+6	2	T	m	I
+6	3	z	o	I
+6	4	a	r	I
+6	5	D	i	I
+6	6	hash	r	I
+6	7	r	a	I
+6	8	l	e	I
+6	9	b	l	I
+6	10	ad	r	I
+6	11	l	e	I
+6	12	u	y	I
+6	13	R	p	I
+6	14	z	o	I
+6	15	a	r	I
+6	16	three	s	I
+6	17	l	e	I
+6	18	Y	t	I
+6	19	D	i	I
+6	20	l	e	I
+6	21	X	m	M
+7	1	g	b	I
+7	2	a	r	I
+7	3	n	e	I
+7	4	l	e	I
+7	5	b	l	I
+7	6	g	b	I
+7	7	D	i	I
+7	8	l	e	I
+7	9	L	n	I
+7	10	o	c	I
+7	11	l	e	I
+7	12	hash	r	I
+7	13	c	c	I
+7	14	s	a	I
+7	15	e	d	I
+7	16	l	e	I
+7	17	ud	ll	M
+7	18	z	o	I
+7	19	R	p	I
+7	20	r	a	I
+8	1	a	r	I
+8	2	l	e	I
+8	3	three	s	I
+8	4	o	c	I
+8	5	l	e	I
+8	6	qshape	q	I
+8	7	d	u	I
+8	8	l	e	I
+8	9	r	a	I
+8	10	L	n	I
+8	11	e	d	I
+8	12	r	a	I
+8	13	o	c	I
+8	14	a	r	I
+8	15	l	e	I
+8	16	k	o	I
+8	17	l	e	I
+8	18	L	n	I
+8	19	e	d	I
+8	20	Yd	i	I
+8	21	J	o	I
+8	22	three	s	I</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/segura1596/key.json">key.json</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/segura1596.json"></figure>
 <!-- replay:end -->

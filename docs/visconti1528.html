@@ -50,7 +50,7 @@
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-the-key">The letter and the key</a><a href="#the-reading">The decipherment</a><a href="#method">Method</a><a href="#what-remains">What remains</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-the-key">The letter and the key</a><a href="#the-reading">The decipherment</a><a href="#method">Method</a><a href="#what-remains">What remains</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout" data-term-ok><strong>Summary.</strong> DECODE lists R4223 as a two-page cipher letter from an unknown sender to Anne de Montmorency, with no decipherment (&ldquo;Non-decrypted&rdquo;). It is unsigned, but the cipher is Galeazzo Visconti&rsquo;s: Satoshi Tomokiyo&rsquo;s cryptiana lists the leaf with two letters Visconti signed, and George Lasry&rsquo;s key table of 5 November 2023 is headed &ldquo;BNF Francais 3045f28 and 3034f154 &ndash; Italian&rdquo;. Only the key had been published, not the text. The 39 cipher lines were transcribed sign by sign from the Gallica images and decrypted with Lasry&rsquo;s table, which the letter itself extended. 1248 of 1337 cipher signs give sense (93.3%). Visconti describes a council of war held the day before at Landriano on whether the League army should march on Milan or on Pavia. He argued for Milan and lost: a scheme of &ldquo;Francesco&rdquo;, whispered to the Venetian officers, swung the Duke of Urbino and the proveditor to Pavia, and Visconti was interrupted when he spoke. The sibling letters show that the crossed sign is the figure 4, so the name groups 48, 4&theta; and 4r are numbered codes. No list of them survives, and they stay open with a few one-off signs.</div>
 
 <h2 id="the-letter-and-the-key"><span class="num">01</span> The letter and the key</h2>
@@ -84,6 +84,495 @@
 <li><strong>Values decrypted, sense open</strong> (M): <em>la mia</em> (r03), <em>asciilati</em> (r07), <em>ascicsai pui</em> (r09), <em>acuvante</em> (r21), <em>lasoreno</em> and <em>se non</em> (r26&ndash;27, C), and in v03 and v07 the runs marked (?).</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>BnF fr. 3034 f. 154r-v (R4223), Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528</h3>
+<p>Galeazzo Visconti to the grand master Montmorency from the League camp at Landriano: a council of war on whether the League army should march on Milan or Pavia; Visconti argued for Milan, but a scheme of Francesco&#x27;s (Francesco Maria Sforza?), whispered to the Venetian officers, swung the vote, and the Duke of Urbino and the Venetian provveditore chose Pavia. &#x27;A stew of bad digestion&#x27; if this goes on. tokens.txt is the measured glyph transcription (cipher.txt the superseded first pass); final.md the full reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/tokens.txt">tokens.txt</a></p><pre># BnF fr. 3034 f.154r-v, Visconti to Montmorency, Landriano 30 Aug 1528. One line per MS cipher line.
+# token=VALUE read as sense; token=VALUE? value read, sense open; token=? unread; token=[code] code group.
+# Codes counted per written glyph: X8/ǂθ = 2, ǂr = 2, rr = 2, qq = 2, peu = 1, rex = 1. &quot;far&quot; counts as 1 glyph.
+# Clear text not counted: &quot;Poco scritti le lre&quot; before r01 and the clear close after v09.
+# Token names as in reading_r01-15.md, reading_r16-30.md and final.md (verso table).
+r01 Y=I M=L l=C n=O y=N S=S YB=I 8=G M=L t=O D=D d=E q=H d=E k=R Y=I qF=F s=U n=O o=P d=E k=R a=T Y=I k=R 7=A k=R d=E
+r02 Q=Q s=U d=E M=L Y=I l=C 7=A o=P Y=I a=T 7=A y=N d=E Y=I F=CHE d=E k=R 7=A y=N n=O M=L Y=I 7=A M=L 7=A n=O o=P Y=I y=N YB=I X=O y=N d=E F=CHE
+r03 y=N n=O f=FU S=S d=E z=A y=N D=D z=A S=S d=E 7=A p=M Y=I YB=I M=L 7=A y=N n=O o=P d=E k=R F=CHE d=E k=R 7=A M=L 7=A p=M? Y=I? 7=A? a=T s=U a=T n=O
+r04 L=C 7=A s=U S=S 7=A a=T n=O L=C n=O p=M a=T 7=A 8=G Y=I n=O S=S l=C k=R Y=I a=T n=O Q=Q s=U d=E S=S a=T n=O S=S d=E l=C q=H Y=I 7=A k=R Y=I a=T n=O Q=Q s=U d=E S=S
+r05 a=T 7=A p=M 7=A y=N d=E q=H z=A d=E S=S d=E y=N D=D n=O s=V d=E y=N s=U a=T n=O Y=I M=L D=D s=U L=C A*=A D=D s=U k=R yb=B Y=I Y&#x27;=N n=O 7=A l=C LA=A S=S 7=A D=D d=E X8=[X8] X8=[X8]
+r06 o=P d=E k=R D=D d=E M=L Y=I yb=B d=E k=R 7=A k=R d=E n=O 7=A Ym=M Y=I M=L 7=A y=N n=O t=O 7=A o=P 7=A s=V Y=I 7=A n=O s=V d=E d=E k=R 7=A y=N t=O
+r07 7=A? S=S? L=C? YB=I? Y=I? M=L? 7=A? a=T? Y=I? a=T s=U a=T Y=I M=L Y=I l=C 7=A o=P Y=I a=T 7=A y=N d=E Y=I X=O y=N n=O S=S a=T k=R Y=I F=CHE ʃu=? S=S n=O y=N n=O
+r08 p=M n=O M=L a=T Y=I d=E a=T 7=A Q=Q s=U d=E S=S Y=I D=D d=E M=L 7=A S=S Y=I 8=G y=N n=O k=R Y=I 7=A F=CHE S=S n=O y=N n=O 7=A S=S
+r09 l=C? Y=I? l=C? S=S? 7=A? Y=I? o=P? s=U? Y=I? q=[qq] q=[qq] 5=V n=O M=L S=S d=E X8=[X8] X8=[X8] F=CHE Y=I M=L D=D s=U l=C 7=A D=D s=U k=R yb=B Y=I Y&#x27;=N t=O
+r10 a=T Y=I k=R 7=A S=S d=E a=T s=U a=T Y=I M=L Y=I S=S n=O y=I? Y&#x27;=I? D=D 7=A s=U Y&#x27;=N n=O l=C 7=A y=N a=T n=O d=E A*=T M=L s=U Y=I M=L Y=I
+r11 M=L n=O y=I? Y&#x27;=I? D=D 7=A 5=V y=N n=O 7=A M=L a=T k=R n=O 7=A l=C Y=I n=O D=D Y=I a=T n=O n=O 8=G y=N Y=I s=U y=N n=O S=S s=U 7=A n=O o=P Y=I y=N Y=I n=O y=N d=E
+r12 M=L s=U Y=I D=D n=O y=I? Y&#x27;=I? D=D d=E M=L Y=I yb=B d=E k=R 7=A S=S d=E y=N n=O Y=? r=? d=E Q=Q s=U d=E S=S A*=A qF=F s=U n=O Y=I y=N s=V d=E
+r13 y=N a=T Y=I n=O y=N d=E D=D d=E qF=F k=R 7=A y=N L=C d=E S=S L=C n=O D=D Y=I a=T 7=A Y=I y=N S=S d=E l=C k=R d=E a=T n=O q=H z=A Q=Q s=U d=E
+r14 M=L Y=I D=D d=E M=L 7=A S=S Y=I 8=G y=N n=O k=R Y=I 7=A d=E k=R 7=A y=N n=O a=T k=R n=O o=P n=O 7=A l=C Y=I n=O F=CHE S=S d=E
+r15 s=V Y=I y=N l=C d=E S=S d=E M=L 7=A n=O o=P Y=I y=N Y=I n=O y=N d=E D=D d=E 7=A y=N D=D 7=A k=R d=E 7=A p=M Y=I M=L 7=A y=N n=O
+r16 rex=REX Y=I M=L l=C q=H d=E m=? u=? r=? d=E ω=? o=P 7=A k=R S=S 7=A M=L D=D s=U L=C 7=A D=D s=U k=R y=B Y=I X=N n=O o=P k=R n=O s=V Y=I D=D Y=I a=T n=O k=R d=E
+r17 d=E a=T p=M 7=A Y=I n=O k=R d=E o=P 7=A k=R a=T d=E D=D d=E M=L n=O k=R n=O D=D 7=A M=L L=C 7=A y=N a=T n=O y=N n=O S=S a=T k=R n=O Y=I n=O d=E k=R 7=A
+r18 S=S n=O M=L Y=I a=T n=O S=S d=E p=M o=P k=R d=E d*=E S=S d=E k=R d=E L=C q=H Y=I 7=A p=M 7=A a=T n=O Y=I M=L o=P k=R Y=I p=M n=O o=P d=E k=R
+r19 7=A o=P k=R Y=I k=R d=E Y=I M=L L=C 7=A p=M Y=I y=N n=O 7=A M=L Y=I 7=A M=L a=T k=R Y=I d=E a=T Q=Q s=U d=E S=S a=T 7=A s=V n=O M=L
+r20 a=T 7=A q=H 7=A L=C n=O p=M d=E y=N L=C Y=I 7=A a=T n=O 7=A q&#x27;=F k=R 7=A y=N L=C Y=I S=S L=C n=O o=P n=O Y=I 7=A M=L Y=I 7=A M=L a=T k=R Y=I o=P n=O L=C q=H Y=I
+r21 o=P n=O Y=I 7=A p=M d=E r=[rr] r=[rr] ᵽ=? 7=A L=C s=U 5=V 7=A y=N a=T d=E S=S d=E D=D Y=I L=C d=E S=S d=E y=N s=U M=L 7=A X=[ǂθ] 8=[ǂθ] D=D Y=I S=S d=E
+r22 F=CHE d=E k=R d=E D=D 7=A z=A y=N D=D 7=A k=R d=E 7=A o=P 7=A s=V Y=I 7=A Y=I n=O L=C n=O p=M d=E y=N L=C Y=I 7=A Y=I 7=A D=D Y=I k=R d=E
+r23 Q=Q s=U d=E M=L n=O 7=A 8=G Y=I n=O S=S l=C k=R Y=I a=T n=O D=D d=E 7=A y=N D=D 7=A k=R d=E 7=A p=M Y=I M=L 7=A y=N n=O o=P d=E y=N
+r24 S=S 7=A a=T d=E F=CHE q&#x27;=F k=R 7=A y=N L=C d=E S=S L=C n=O Y=I M=L o=P k=R Y=I p=M n=O 7=A Y=I y=N a=T d=E k=R n=O p=M o=P d=E k=R d=E
+r25 o=P n=O Y=I Q=Q s=U 7=A M=L L=C q=H d=E s=U y=N n=O 7=A M=L a=T k=R n=O F=CHE p=M Y=I s=V d=E k=R 8=G n=O 8=G y=N n=O D=D Y=I k=R M=L n=O X=[ǂr] r=[ǂr]
+r26 S=S 7=A o=P d=E y=N D=D n=O M=L n=O D=D Y=I S=S Y=I p=M s=U M=L 7=A k=R d=E rex=REX Y=I M=L q&#x27;=F? Y=I y=N d=E p=M Y=I M=L 7=A S=S
+r27 n=O k=R d=E y=N t=? D=D Y=I k=R d*=E L=C s=U p=M q&#x27;=F 7=A a=T Y=I L=C 7=A S=S p=N? n=O y=N q&#x27;=F Y=I S=S S=S d=E S=S Y=I 5=V 7=A z=A Q=Q s=U d=E
+r28 S=S a=T n=O p=M n=O D=D n=O S=S d=E q=H 7=A k=R 7=A s=U y=N n=O o=P 7=A S=S a=T n=O y=N d=E D=D d=E p=M 7=A M=L 7=A D=D Y=I 8=G d=E
+r29 S=S a=T Y=I n=O y=N d=E Y=I n=O s=V d=E D=D n=O 7=A S=S 7=A Y=I L=C n=O S=S d=E p=M 7=A F=CHE d=E Y=I y=N p=M Y=I 7=A
+r30 o=P n=O S=S 7=A v=? b=? 7=A o=P k=R n=O s=V d=E D=D d=E k=R M=L Y=I d=E S=S 7=A o=P Y=I 7=A a=T d=E F=CHE a=T s=U a=T Y=I M=L Y=I
+v01 y=N n=O S=S a=T k=R Y=I D=D Y=I l=C n=O a=T s=U a=T Y=I l=C n=O p=M d=E y=N l=C Y=I 7=A y=N D=D n=O 7=A L=L L=C 7=A o=P n=O k=R Y=I ψ̄=? d=E? θ=G? 7=A? ſt=?
+v02 D=D Y=I n=O l=C q=H Y=I n=O S=S l=C a=R? Y=I s=V 7=A 2=A L=L peu=[peu] d=E a=T 7=A s=V n=O S=S a=T k=R 7=A S=S o=P R=R? n=O s=V d=E D=D 7=A S=S d=E
+v03 D=D 7=A L=L Y=I far=CHE o=P d=E k=R p=M d=E Y=I d=E S=S n=O y=N n=O ∂=D? m=? l=C? s=U? S=S? ρ=F? 7=A? d=E? n=O? n=N? m=? Y=I? a=T? ǂ=[4r] ï=? r=[4r] l=C d=E L=L
+v04 7=A k=R n=O o=P d=E k=R n=O p=M 7=A Y=I D=D d=E D=D Y=I k=R d=E Y=I L=L S=S d=E k=R s=V Y=I l=C Y=I n=O D=D Y=I L=L
+v05 peu=[peu] d=E s=V 7=A θ=G L=L Y=I 7=A Q=Q s=U 7=A y=N a=T n=O o=P n=O a=T k=R 7=A a=T s=U a=T 7=A s=V n=O L=L a=T 7=A l=C d=E k=R a=T Y=I q=F Y=I l=C n=O
+v06 d=E? p=M? far=CHE q=H 7=A s=V d=E p=M w=O S=S Y=I y=N d=E y=? D=D Y=I a=T n=O Y=I L=L D=D s=U l=C 7=A D=D s=U k=R y=B Y=I Y=I n=O o=P k=R +=O
+v07 s=V Y=I D=D Y=I a=T n=O k=R d=E d=E a=T Y=I n=O far=CHE S=S d=E 7=A y=N D=D 7=A k=R 7=A o=P d=E k=R +=O? S=S? ρ=F? s=U? m=? n=O? 7=A a=T k=R 7=A s=V d=E
+v08 k=R S=S 7=A a=T Π=? Y=I L=L L=C +=A p=M Y=I y=N n=O a=T k=R 7=A p=M Y=I L=L 7=A y=N n=O d=E o=P 7=A s=V Y=I 7=A d=E ∂=D y=N n=O
+v09 ▮=? d=E Y=I y=N Y=I S=S o=P Y=I k=R d=E Λ=R? k=R 7=A o=P n=O Y=I Y=I L=L k=R d=E S=S a=T n=O</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/cipher.txt">cipher.txt</a></p><pre># BnF fr. 3034 f.154r-v (Gallica btv1b90600370 views 243-244), deskewed strips ch243_*.jpg ch244_*.jpg
+# Clear opening &quot;Poco scritti le lre&quot; precedes r01; clear closing follows v09.
+# tokens: Y=psi  L=L-foot  X=crossed psi  M=me-sign  S=ne-sign  d=E(d with flourish)  D=round d  7=tau
+#         Q=hooked tau  z=2  8=theta  F=far  U=fu  t=+ ; others as they look (a o k n y s l 5 q p r v b g)
+r01 Y M l n y S X g M t D d q d n y Y q s n u d k a Y n 7 k d
+r02 Q s D M Y l 7 o Y a 7 y d Y F d 7 y n M Y 7 M 7 n o Y y Y X y d F
+r03 y n f S d z y D 7 S d 7 p Y Y M t y n o d F d 7 M 7 p Y 7 a s a n
+r04 L 7 s S 7 a n L n p a 7 8 Y n S l k Y a n Q s d S a n S d l q Y 7 k Y a n Q s d S
+r05 a 7 p 7 y d q z d n p d y D n s d y s a n Y M D s k D s k y Y Y n 7 L S 7 D d X 8
+r06 o d k D d M Y y d a 7 k d n 7 Y Y M 7 y n t 7 o 7 s Y 7 n s d d k y t
+r07 7 S L y Y M 7 a Y a s a Y M Y L 7 o Y a 7 y d Y X n S a k Y F U S n y n
+r08 p n M a Y d a 7 Q s d S Y D d M 7 S Y 8 y n k Y 7 F S n y n 7 S
+r09 L Y L S 7 Y o s Y q q s n M S d X 8 F Y M D s L 7 D s k y Y Y t
+r10 a Y k 7 S d a s a Y M Y S n y Y D 7 s Y n L 7 y a n d M s Y M Y
+r11 M n y D 7 5 y n 7 M a k n 7 l y n D Y a n n 8 y Y s y n S s 7 n o Y Y Y n y d
+r12 M s Y D n y D d M Y y d k 7 S d y n Y r d Q s d S a q s n Y X s d
+r13 y a Y n y d D d q k 7 y L d S L n D Y a 7 Y X S d l k d a n q z Q s d
+r14 M Y D d M 7 S Y 8 y n k Y 7 d k 7 y n a k n o n 7 L y n F S d
+r15 s Y X L d S d M 7 S n o Y Y X Y n y d D d 7 y D 7 k d 7 p Y M 7 y n
+r16 rex Y M d l q d p s r d o 7 k n S n 7 M d D s L 7 D s k y Y X n o k n s Y D Y a n k d
+r17 d a p 7 Y n k d o 7 k a d D d M S n k n D 7 M L 7 y a n y n S a k n Y n d k 7
+r18 S n M Y a n S d p o k d D S d d n d L q Y 7 p 7 a n Y M d o k Y p n o d k
+r19 7 o k Y k d Y M d L 7 p Y Y n 7 M Y 7 M d a k Y d a Q s d S d a 7 s n M
+r20 a 7 q 7 L n p d y L Y 7 a n 7 q k 7 y L Y S L n o n Y 7 M Y 7 M d a k Y o n L q Y
+r21 o n Y 7 p d r r p 7 L s 7 Y a d S d D Y L d S d y s M 7 X 8 D Y S d
+r22 F d k d D 7 L y D 7 k d 7 o 7 s Y 7 Y n L n p d y L Y 7 Y 7 D Y k d
+r23 Q s d M n 7 8 y n S d k Y a n D d 7 y D 7 n d 7 p Y Y M 7 y n o d y
+r24 S 7 a d F q k 7 y L d S L n Y M o k Y p n 7 Y Y a d k n p o d k d
+r25 o n Y Q s 7 M d q a s y n 7 M a k n F p Y s d k o n Y y n D Y k M n X r
+r26 S 7 o d y D n M d n D Y S Y p s M 7 k d rex Y M q Y X d p Y M S S
+r27 n k d y t D Y n d L s p q 7 a Y L 7 S p n y q Y S S d S Y s 7 L Q s d
+r28 S a n p n d n S d q 7 k 7 s y n o 7 S a n y d D d p 7 M 7 D Y 8 d
+r29 S a Y n y d Y n s d D n 7 S 7 Y L n n S d p 7 F d Y y p Y 7
+r30 o n n S 7 v b 7 o k n s d D d k M Y d S 7 o Y 7 a d F a s a Y M Y
+v01 y n S a k Y D Y L n a s a Y L n p d y L Y 7 y D n 7 M d L 7 o n k Y n d 8 7 s t
+v02 D y n l q Y n S d k Y s 7 z m p p d r i d 7 s n n S a k 7 S o d n s d D Y S d
+v03 D 7 M Y F o d k p d Y d S n y n d M L s n g d n M t X r L d M
+v04 7 k n o d k n p 7 Y D d D Y k d Y M S d k s Y L Y n D Y M
+v05 p d r i d s 7 8 M Y 7 Q s 7 Y a n n a k 7 a s a 7 s n M a 7 L d k a Y q Y L n
+v06 d p F q 7 s d p r S Y Y d Y D Y a n Y M d D s L 7 D s k Y Y n o k t
+v07 s Y D Y a n k d d 7 Y n F S d 7 y D 7 k 7 o d k t S s M n 7 a k 7 s d
+v08 k S 7 a Y M L p Y Y n a k 7 p Y M 7 y n d o 7 s Y 7 d y n
+v09 X d Y y S o y k d k 7 o n Y Y M k k d n S a n</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/final.md">final.md</a></p><pre># Visconti to Montmorency, 30 Aug 1528 (BnF fr. 3034 f.154r-v): final reading, second pass
+
+`[..]` = an unread glyph. `(?)` = the values are read but the sense is not established. `[X8]`, `[peu]`, `[ǂr]` = code groups.
+
+## Verso, redone glyph by glyph (desk244.png, crops in scratchpad a3/)
+
+| line | tokens | reading | glyphs | unread | values read, sense open |
+|---|---|---|---|---|---|
+| v01 | y n S a k Y · D Y l n · a s a Y · l n p d y l Y 7 y D n · 7 L · L 7 o n k Y · ψ̄ d θ 7 ſt | nostri, dico tuti, comenciando al capori, [ψ̄] e ga[ſt] | 38 | 2 (blotted psi; final ſt sign) | 3 (e ga) |
+| v02 | D Y n · l q Y n · S l a Y s 7 · 2 L · peu · d a · 7 · s n S a k 7 · S · o [R] n s d D 7 S d | Dio ch&#x27;io scriva al [peu] et a vostra S. provedase | 35 (peu = 1) | 0 | 2: the &quot;a&quot;-shaped sign in scriva (read R); the R of provedase, a d-plus-stroke shape. The cross above it is the descender of v01&#x27;s blotted psi. |
+| v03 | D 7 L Y · far · o d k · p d · Y d · S n y n · ∂ m l s S o 7 d n · n m Y a · ǂ · ï r · l d L | da li che per me ie sono [d ? c u s p a e o](?) [n ? i t](?) [ǂ][ï][r] cel- | 35 | 5 (m twice, ǂ, ï, r) | 11 |
+| v04 | 7 k n · o d k n · p 7 Y · D d D Y k d · Y L · S d k s Y l Y n · D Y L | -aro; però mai de dire il servicio dil | 29 | 0 | 0 |
+| v05 | peu · d s 7 θ L Y 7 · Q s 7 y a n · o n a k 7 · a s a 7 s n L a 7 · l d k a Y q Y l n | [peu], e vaglia quanto potrà, tuta volta certifico | 37 (peu = 1) | 0 | 0 |
+| v06 | d p · far · q 7 s d p · w · S Y · y d y · D Y a n · Y L · D s l 7 · D s k y Y Y n · o k + | em(?) che havem [w] si ne [y] dito il duca d&#x27;Urbino pro- | 34 | 2 (small w after havem; second y) | 2 (em) |
+| v07 | s Y D Y a n k d · d a · 7 Y n · far · S d 7 y D 7 k 7 · o d k · + · S ρ s m n · 7 a k 7 s d | -viditore, et a io che se andarà per o(?) s[ρ]u[m]o(?) a trave- | 37 | 2 (ρ, m) | 5 (a in &quot;a io&quot;; + S s n) |
+| v08 | k S 7 a Π · Y L · L + p Y y n · a k 7 · p Y L 7 y n · d · o 7 s Y 7 · d ∂ y n | -rsat[Π] il c[+]mino tra Milano e Pavia, e d[y]n- | 32 | 1 (Π) | 2 (+ in camino, A or O; y in &quot;don-&quot;) |
+| v09 | ▮ d · Y y Y S o Y k d Π k 7 · o n Y · Y L · k d S a n | [▮]de ini(?) spire[Π]rà(?) poi il resto | 23 | 2 (blotted sign; Π) | 0 |
+| clear | – | che ca fin de questa ma[teria], pregando n[ost]ro S[ign]or Dio dona a V. S. bona e longa vitta. Da al Campo a Landriano ali XXX d&#x27;aust | – | – | – |
+
+Corrections to the first verso pass:
+- v05 &quot;non a[r]a&quot; is **potrà**: `o n a k 7` = P-O-T-R-A. The first sign is the small o (P), not n.
+- v07 opens &quot;-viditore&quot;, the same spelling as recto r16 &quot;providitore&quot;.
+- The v09 &quot;ρ&quot; before &quot;resto&quot; is the e-tail of the me-sign in &quot;il&quot;, not a letter.
+- Π occurs twice, in &quot;traversat[Π]&quot; (v08) and &quot;spire[Π]rà&quot; (v09). Both words read without it, so Π is probably a null. That is not proved.
+- `peu` recurs twice (&quot;scriva al peu&quot;, &quot;servicio dil peu&quot;) and is a code group for a person, probably the King. Unproven.
+
+## Recto: retry of the open spots
+
+| spot | result | reason |
+|---|---|---|
+| r03 &quot;la mia&quot; | kept as &quot;la mia&quot;, sense open | All the values are clear. &quot;era la mia [..] tuto causato comtagio&quot; seems to lack a word, perhaps an omitted &quot;opinione&quot;. Not resolved. |
+| r05, r09 [X8], r21 [ǂθ] | unread: code | A 2-sign code group for a person (host of the council). |
+| r07 &quot;asc[i]ilati&quot; | values confirmed, sense open | 9 clear glyphs. No Italian word fits exactly. &quot;ascoltati&quot; would need O and L. |
+| r09 &quot;as-cicsai pui&quot; | values confirmed, sense open | &quot;assai più&quot; fits except for the &quot;cic&quot;. Possibly a dittography. Not adopted. |
+| r09 [q q]uolse | tentative &quot;volse&quot; | Two q&#x27;s give V, which is unproven. The sense (&quot;volse [X8] che il duca...&quot;) fits. |
+| r10/r11/r12 so[y Y&#x27;] / lo[y Y&#x27;] / do[y Y&#x27;] | unread (6 glyphs) | The same final pair `y Y&#x27;` occurs in all three. N-N gives no word. Sense suggests &quot;soi&quot; (Lombard suoi), &quot;loi/loro&quot; and &quot;doi&quot; (two), which would make `y Y&#x27;` a single I-value group. Proposal only. |
+| r12 [Y r] | unread | Possibly &quot;ire&quot;. It occurs once. |
+| r16 [mur·][ω] | unread, probably nulls | Small r/u signs of Lasry&#x27;s &quot;unknown&quot; row, plus a retouched blot. The line reads correctly without them. |
+| r21 [r r ᵽ] &quot;acuvante&quot; | unread, sense open | Small unknown signs, occurring once. &quot;acuvante&quot; may be &quot;a cui avante&quot;, but that is not proved. |
+| r25 [ǂr] | unread: code | It begins with the crossed ǂ like the person codes. It stands before &quot;sapendolo dissimulare&quot;. |
+| r26-27 &quot;mi las-oren+ dire&quot; | new tentative reading &quot;mi lasoreno dire&quot; (+ = O) | This gives &quot;Rex: al fine mi lasoreno [= lasserono] dire cum fatica&quot;, i.e. &quot;in the end they let me speak, with difficulty&quot;. It fits the r22-23 narrative. |
+| r27 &quot;s mon fisse&quot; | tentative &quot;s[e] non fisse&quot; | The p here reads as the hooked-p N. The shape is not decisive. |
+| r30 [v b] | unread, probably nulls | The line reads &quot;in mia posa a provederli&quot; without them. |
+
+## Full text
+
+**Recto (r01-r30).**
+Poco scritti le lre. Il consiglio de heri fu[o] per tirare queli capitanei che erano lì a la opinione che no fuse andase a Milano, perché era la mia(?) tuto causato comtagio. Scrito questo, s&#x27;è chiarito questa mane, ha esendo venuto il duca d&#x27;Urbino a casa de [X8], per deliberare o a Milano o a Pavia. Ove erano asciilati(?) tuti li capitanei o nostri che [ʃu] sono, molti, et a quesi de la Signoria che sono ascicsai pui(?). [q q]uolse(?) [X8] che il duca d&#x27;Urbino tirase tuti li so[..][..] da uno canto et lui li lo[..][..] da uno altro, aciò dito ognuno sua opinione, lui do[..][..] deliberaseno [..][..]. E questa fu[o] inventione de Francesco, dita in secreto ha queli de la Signoria, erano tropo, aciò che se vincese la opinione de andare a Milano. Rex. Il che [..][..][..] è [..] parso al duca d&#x27;Urbino providitore et maiore parte de loro dal canto nostro. Io era solito sempre esere chiamato il primo per aprire il camino ali altri, et questa volta ha comenciato a Francisco, poi ali altri pochi, poi a me [..][..][..] acuvante(?) se; dicese nula, [ǂθ] dise che ere da andare a Pavia. Io comenciai a dire quelo agio scrito de andare a Milano. Pensate che Francesco il primo a interompere, poi qualche uno altro che mi vergogno dirlo, [ǂr] sapendolo dissimulare. Rex: il fine mi lasoren[o](?) dire cum fatica, s[e] non(?) fisse. Si va a questo modo se harà uno pastone de mala digestione. Io vedo asai cose, ma che è in mia posa [..][..] a provederli; e sapiate che tuti li
+
+**Verso (v01-v09).**
+nostri, dico tuti, comenciando al capori, [..] e ga[..] Dio ch&#x27;io scriva al [peu] et a vostra S. provedase da li che per me ie sono d[..]cuspaeo(?) n[..]ita(?) [..][..][..] celaro(?); però mai de dire il servicio dil [peu], e vaglia quanto potrà. Tuta volta certifico em(?) che havem [..] si ne [..] dito il duca d&#x27;Urbino providitore, et a io che se andarà per o s[..]u[..]o(?) a traversat[..] il camino tra Milano e Pavia, e don[..]de i ni spire[..]rà(?) poi il resto,
+
+**Clear closing.** che ca fin de questa ma[teria], pregando n[ost]ro S[ign]or Dio dona a V. S. bona e longa vitta. Da al Campo a Landriano ali XXX d&#x27;aust.
+
+## Glyph totals (code groups counted as in the reading files: X8 = 2 glyphs; rex, far, peu = 1 each)
+
+| page | cipher glyphs | read with confidence | values read, sense open or tentative | unread (no value) |
+|---|---|---|---|---|
+| recto r01-r15 | 522 | 476 | 21 | 25 (includes X8 ×2, the y Y&#x27; pairs, Y r, ʃu, qq) |
+| recto r16-r30 | 516 | 500 | 2 (fine, s non) | 14 (includes ǂθ, ǂr) |
+| verso v01-v09 | 300 | 264 | 22 | 14 |
+| **total** | **1338** | **1240 (92.7%)** | **45** | **53** |
+
+These are glyph counts made by eye: recto from the two reading files (not re-counted on this pass), verso counted on this pass. The r26-27 retries (&quot;lasoreno&quot;, &quot;se non&quot;) are tentative and stay in the middle column.
+
+## English summary
+Galeazzo Visconti writes from the camp at Landriano on 30 August 1528, in the aftermath of a council of war held at the lodging of a commander whose name is in code [X8]. The question was whether the army should march on Milan or on Pavia, and Visconti had argued for Milan. He says a scheme of Francesco&#x27;s, whispered to the Venetian (Signoria) officers, was meant to swing the vote, and that the Duke of Urbino, the Venetian proveditor and most of the captains then favoured Pavia. Visconti, who was usually asked to speak first, was this time called on after Francesco and the others. When he made the case for Milan he was interrupted, first by Francesco and then by others he is ashamed to name, and in the end he was let speak only with difficulty. He warns that if things go on this way the result will be &quot;a stew of bad digestion&quot;. He says he sees much but can do little to remedy it, and asks Montmorency to see to matters for all the captains, in the service of the King (the code &quot;peu&quot;). He reports that the Duke of Urbino and the proveditor have said the army will go to cut the road between Milan and Pavia, and he will write the rest later. The closing, in clear, sends good wishes and is dated from the camp at Landriano, 30 August.
+
+## Third pass (sibling rules)
+
+Token file: `tokens.txt` (all 39 cipher lines). Counts come from `count_tokens.py`. The second-pass state is kept in the same format, and it counts to 1338 glyphs, 1235 read, 54 sense open, 39 unread and 10 code.
+**Baseline check.** The second-pass table says 1240 read. The token file gives 1235. The difference of 5 has two causes:
+- `peu` ×2 is counted as code here, but the table counted it as read (2 glyphs).
+- The verso per-line &quot;sense open&quot; cells add up to 25, but the table&#x27;s total says 22 (3 glyphs). The table&#x27;s verso total was wrong.
+
+The X8, ǂθ and ǂr groups, which the table counted as unread, are counted here as code.
+
+Changes:
+1. **r01, r12 &quot;fuo&quot; is read as sense** (+6). It is the Lombard form of &quot;fu&quot;. The sibling fr. 3096 has &quot;che fuo&quot; and &quot;se fuose&quot;.
+2. **The blotted A\* signs in r05 &quot;duca&quot;, r10 &quot;et&quot; and r12 &quot;quest[a]&quot; are read** (+3). Each one is a retouch over a letter that the word fixes.
+3. **The YB in r03 &quot;Miilano&quot; is read as I** (+1). It is a written dittography inside a secure word.
+4. **r09 `q q` is the overlined code group [qq]** (2 glyphs, now code). This is the same group as in fr. 3045 l.2 and l.16. The image shows `5 n` after it, not `s n`, so the text is **[qq] volse [X8] che il duca d&#x27;Urbino tirase ...**.
+5. **v07 has no A between &quot;et&quot; and &quot;io&quot;.** The image shows `d a · Y n · far`, so the reading is &quot;et io che se andarà&quot;. One spurious token is removed, which brings the total to 1337.
+6. **v08: + = A in &quot;camino&quot; and y = N in &quot;don-&quot; are read** (+2). Both words are secure.
+7. **v07 ρ = F** under the sibling rule: `+ S ρ s m n` = &quot;o sfu[m]o&quot;. The sense is still open.
+8. **v09: the &quot;Π&quot; of &quot;spire[Π]rà&quot; is a bare Λ before k.** Under the doubling rule it gives &quot;spire-rrà&quot;. That is not a known form, so the sense stays open. The v08 Π in &quot;traversat[Π]&quot; is a true Π shape, not Λ. It is still unread.
+9. **r10-r12 `y Y&#x27;`:** the values I-I (&quot;soi / loi / doi&quot;) are now entered as sense open, not unread. &quot;soi&quot; and &quot;doi&quot; fit Lombard, but &quot;loi&quot; does not settle it.
+
+Checked with no change:
+- **r03 &quot;la mia&quot;:** the sign read as E in &quot;era&quot; is the rising-tail E, not a bare Λ.
+- **r07 &quot;asc-i-ilati&quot;:** there is no Λ and no &#x27;far&#x27; in it.
+- **r09 &quot;cicsai pui&quot;:** it has no Λ, and &quot;l Y l&quot; are plain ʟ ψ ʟ signs.
+- **v03 middle:** the Λ-shaped signs there are E, as in &quot;per&quot; and &quot;me&quot; on the same line.
+- **v06 &quot;em&quot;:** it may be a clear abbreviation.
+- **&#x27;far&#x27; is CHE at every one of its places here.** NTO fits none of them.
+- **r12 [Y r], r16 [mur·][ω], r21 [r r ᵽ], r25 [ǂr], r27 &quot;+&quot;, r30 [v b], v01 [ψ̄]…[ſt] and v06 w, y:** these were not resolved.
+
+| | glyphs | read as sense | sense open | unread | code |
+|---|---|---|---|---|---|
+| second pass (token file) | 1338 | 1235 (92.3%) | 54 | 39 | 10 |
+| third pass | 1337 | **1247 (93.3%)** | 53 | 25 | 12 |
+
+The letter is below the 95% bar. That bar would need 1271 glyphs read.
+
+### Third pass, addendum: enhancement and native-reader review
+
+I enhanced the open spots with autocontrast, unsharp mask and 2x zoom, working on the line crops taken from the deskewed natives (scratchpad c1/enh1.png).
+- **r21 `r r` has an overbar.** It is the sibling code group **[rr]**, the French agent of fr. 3096. That gives &quot;poi a me [rr] [ᵽ] acuvante se&quot;. The 2 glyphs move from unread to code. The ᵽ and &quot;acuvante&quot; stay open.
+- **Still illegible after enhancement:**
+  - v01: the blotted ψ̄ is a solid blob, and ſt is a ligature with a flourish.
+  - v03 middle: `Λ m l s S o 7 d n m m ı t ǂ ï r`. The strokes are clear, but they give no word.
+  - The following were not resolved either: r07 ʃu, r16 [m u r·][ω], r27 +, r30 [v b], v06 w and y, and v09 ▮.
+- **Readings tested and not adopted** (the rule was at most one scribal slip per word, with every glyph supporting the reading):
+  - r07 &quot;asc-i-ilati&quot;: asociati, aconsigliati, radunati and ascoltati each need two or more changes.
+  - r09 &quot;cicsai pui&quot;: &quot;(as)sai più&quot; leaves &quot;cic&quot; (3 glyphs) unexplained.
+  - v09: &quot;inspirerà&quot; would need the Λ to be a spurious doubling and the first Y to be dropped, which is two slips.
+  - v07: &quot;sfumo&quot; is not a sense-bearing verb here.
+  - r10-12: &quot;soi / doi&quot; are Lombard forms, but &quot;loi&quot; is not secure, so all three stay sense open.
+
+Final counts: 1337 glyphs, **1247 read (93.3%)**, 53 sense open, 23 unread, 14 code.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/reading_r01-15.md">reading_r01-15.md</a></p><pre># fr. 3034 f.154r, lines 1-15: transcription and reading
+
+Transcribed from desk243.png at native scale and at 1.5-3x zoom. The line centres drift upwards to the right by up to about 90 px by line 15. Measured centres at x=550 / 1950 / 2950: line 1 at 148/182/189 and line 15 at 2188/2141/2062. Because of that drift, zz243_N and a fixed 142-px step both fall onto the wrong line from about line 6.
+
+## Token legend (extends cipher.txt)
+Y = plain psi (I). Y&#x27; = psi with a left tick on the arm (N; see below). YB = bold forked psi, heavy V-arms (I, homophone).
+Ym = short, thick, stubby bold y (M, distinct from YB). y = small y (N). yb = y with a bent/looped left arm (B).
+X = crossed psi (O; written fused with a following y in &quot;opi-ni-ON-e&quot;, &quot;ON-ostri&quot;). X8 = the code group (its first sign is a &quot;4&quot;-like crossed sign, not the O sign).
+L = tall L with foot (C). l = small l/ʟ (C). LA = L whose foot rises to the right, like a &quot;2&quot; (A). lY = small l plus psi, read &quot;ci&quot;.
+q = H. qF = q in &quot;Francesco&quot; and in the group &quot;q s n&quot; (F). A* = a letter blotted over in dark ink (retouched), read from context.
+7 = A (plain tau). A &quot;⊤&quot; with only a top bar is also tau = A. t = true &quot;+&quot; cross = O. Other tokens as in cipher.txt.
+
+**The long, thin diagonal strokes under most lines are not parts of glyphs.** They are word dividers, added later by the decipherer, and they run between words through the descenders. They caused the &quot;hooked p&quot; (contagio, mane), the &quot;crossed q&quot; in line 1 and the &quot;crossed y&quot; in opinione. Leave them out of the transcription.
+
+## Lines
+
+**r01** (clear &quot;Poco scritti le lre&quot;, then cipher)
+`Y M l n y S YB 8 M t | D d | q d k Y | qF s n · | o d k | a Y k 7 k d`
+il consiglo | de | heri | fuo · | per | tirare
+= &quot;Il consiglio de heri fu per tirare ...&quot; Correction to cipher.txt: `q d n y Y` is `q d k Y` (heri). Correction: `a Y n 7 k d` is `a Y k 7 k d` (tirare).
+Unresolved: 0. Tentative: 3 (qF s n = &quot;fuo&quot;, read as &quot;fu&quot;; see key notes).
+
+**r02**
+`Q s d M Y | l 7 o Y a 7 y d Y | F | d k 7 y n | M Y | 7 | M 7 | n o Y y YB X y d | F`
+queli capitanei che erano li a la opinione che
+Corrections: &quot;erano&quot; is `d k 7 y n`, with the bold R inked over, not `d 7 y n`. &quot;Opinione&quot; is `n o Y y YB X y d`.
+Unresolved: 0.
+
+**r03**
+`y n | f S d | z y D z S d | 7 p Y YB M 7 y n | o d k F | d k 7 | M 7 | p Y 7 | a s a n`
+no fuse andase a Mi[i]lano perché era la mia tuto
+The YB in Milano is superfluous: it gives &quot;Miilano&quot;. &quot;la mia tuto&quot; reads letter for letter but gives no clear sense (&quot;era la mia [?] tuto causato contagio&quot;).
+Unresolved: 1 (YB here).
+
+**r04**
+`L 7 s S 7 a n | L n p a 7 8 Y n | S l k Y a n | Q s d S a n | S d | l q Y 7 k Y a n | Q s d S`
+causato comtagio, scrito questo, s&#x27;è chiarito ques-
+The p is a plain M (&quot;comtagio&quot;). Its &quot;hook&quot; is a divider stroke.
+Unresolved: 0.
+
+**r05**
+`a 7 p 7 y d | q z d S d y D n | s d y s a n | Y M | D s L A* | D s k yb Y Y&#x27; n | 7 | l LA S 7 | D d | X8`
+-ta mane, ha esendo venuto il duca d&#x27;Urbino a casa de [X8]
+&quot;ha esendo&quot; is written in full (`q z` + esendo). It is probably a slip for &quot;essendo&quot;.
+Corrections: &quot;duca&quot; ends in a blotted A. &quot;Urbino&quot; is `D s k yb Y Y&#x27; n`. &quot;a casa&quot; is `7 l LA S 7`: the second C-like sign is LA = A, matching George Lasry&#x27;s third A sign.
+Unresolved: 2 (X8). Tentative: 1 (A*).
+
+**r06**
+`o d k | D d M Y yb d k 7 k d | n | 7 | Ym Y M 7 y n | t | 7 | o 7 s Y 7 | n s d | d k 7 y t`
+per deliberare o a Milano o a Pavia ove erano
+Unresolved: 0.
+
+**r07**
+`7 S L YB Y M 7 a Y | a s a Y | M Y | l 7 o Y a 7 y d Y | X y n S a k Y | F | ʃu | S n y n`
+asc[i]ilati(?) tuti li capitanei o nostri che [ʃu = vi?] sono
+The first word reads a-s-c-i-i-l-a-t-i. Every glyph is clear, but the word is not understood.
+Unresolved: 1 (ʃu). Sense unconfirmed: 9 (the first word).
+
+**r08**
+`p n M a Y | d a | 7 | Q s d S Y | D d | M 7 | S Y 8 y n k Y 7 | F | S n y n | 7 S`
+molti et a quesi[= questi, t omitted] de la Signoria che sono as-
+Unresolved: 0.
+
+**r09**
+`l Y l S 7 Y o s Y | q q s n (overlined) | M S d | X8 | F | Y M | D s l 7 | D s k yb Y Y&#x27; t`
+-cicsai pui [q q]uo lse [X8] che il duca d&#x27;Urbino
+The glyphs of `l Y l S 7 Y o s Y` are all clear (&quot;as-cicsai pui&quot;). &quot;assai più&quot; is a possible target, but it leaves `l Y l` unexplained, so the reading is not adopted. `q q s n M S d` could be &quot;(v)uolse&quot; (= volse, &quot;wanted&quot;), which would make &quot;volse [X8] che il duca d&#x27;Urbino tirase ...&quot;; both q&#x27;s are unproven.
+Unresolved: 4 (q q, X8). Sense unconfirmed: 9.
+
+**r10**
+`a Y k 7 S d | a s a Y | M Y | S n y Y&#x27; | D 7 | s Y&#x27; n | l 7 y a n | d A* | M s Y | M Y`
+tirase tuti li so[n?][i?] da uno canto et lui li
+&quot;uno&quot; is `s Y&#x27; n`, which gives the value Y&#x27; = N. The word `S n y Y&#x27;` should mean &quot;suoi&quot;. It reads &quot;so-n-n/i&quot;, unresolved.
+Unresolved: 2.
+
+**r11**
+`M n y Y&#x27; | D 7 5 y n | 7 M a k n | 7 lY n | D Y a n | n 8 y Y s y n | S s 7 | n o Y y Y n y d`
+lo[n?][i?] da vno altro, a ciò dito ognuno sua opinione
+cipher.txt&#x27;s `M n y D` is `M n y Y&#x27;`. Its `7 l y n` is `7 lY n` = &quot;a ciò&quot;, the same group as in r14. `M n y Y&#x27;` parallels r10&#x27;s &quot;so..&quot;: expected something like &quot;loro&quot;; unresolved.
+Unresolved: 2.
+
+**r12**
+`M s Y | D n y Y&#x27; | D d M Y yb d k 7 S d y n | Y r | d | Q s d S A* | qF s n | Y y s d`
+lui do[n?][i?] deliberaseno [Y r] e quest[a] fuo inve-
+&quot;deliberaseno&quot; = deliberassero. `Y r` could be &quot;ir(e)&quot; = to go, but that is not proven.
+Unresolved: 4 (y Y&#x27;, Y r). Tentative: 4 (A*, qF s n).
+
+**r13**
+`y a Y n y d | D d | qF k 7 y L d S L n | D Y a 7 | Y y S d l k d a n | q z | Q s d`
+-ntione de Francesco dita in secreto ha que-
+cipher.txt&#x27;s `Y X S d...` is `Y y S d...` (&quot;in secreto&quot;): the &quot;X&quot; is a y with a divider stroke through it.
+Unresolved: 0.
+
+**r14**
+`M Y | D d | M 7 | S Y 8 y n k Y 7 | d k 7 y n | a k n o n | 7 lY n | F | S d`
+-li de la Signoria erano tropo, aciò che se
+Unresolved: 0.
+
+**r15**
+`s Y y l d S d | M 7 | n o Y y Y n y d | D d | 7 y D 7 k d | 7 | p Y M 7 y n`
+vincese la opinione de andare a Milano
+Corrections: cipher.txt&#x27;s `s Y X L` is `s Y y l`. Its `M 7 S n o` is `M 7 n o`; the `S` is spurious (overlap duplication).
+Unresolved: 0.
+
+### Running text
+Poco scritti le lre, il consiglio de heri fu per tirare queli capitanei che erano lì a la opinione che no fuse andase a Milano, perché era la mia(?) tuto causato comtagio. Scrito questo, s&#x27;è chiarito questa mane, ha[v]esendo venuto il duca d&#x27;Urbino a casa de [X8], per deliberare o a Milano o a Pavia. Ove erano asc?ilati(?) tuti li capitanei o nostri che [vi?] sono, molti, et a quesi de la Signoria che sono as-cicsai pui(?) [qq]uolse(?) [X8] che il duca d&#x27;Urbino tirase tuti li so[..] da uno canto et lui li lo[..] da uno altro, aciò dito ognuno sua opinione. Lui do[..] deliberaseno [Y r], e questa fu[o] inventione de Francesco, dita in secreto a queli de la Signoria, [che] erano tropo, aciò che se vincese la opinione de andare a Milano.
+
+## Key additions and corrections (with evidence)
+1. **Word dividers.** The long thin diagonal strokes are dividers, not glyph parts. This removes &quot;p with hook = N&quot; (contagio is spelled &quot;comtagio&quot;; mane is `a 7 p 7 y d`), the &quot;crossed q&quot; in line 1, and the &quot;crossed y&quot; in opinione and &quot;in secreto&quot;.
+2. **Two different bold Y signs.**
+   - YB, a forked bold psi with heavy V-arms, is **I**. Evidence: &quot;consiglo&quot; (r01 `S YB 8 M t`), &quot;opinione&quot; (r02 `Y y YB X y d`), &quot;asc-YB-ilati&quot; (r07). In r03 Milano (`p Y YB M 7 y n`) it is a superfluous extra i.
+   - Ym, a short thick stubby y, is **M**. Evidence: r06 &quot;o a Milano&quot; `7 Ym Y M 7 y n`.
+3. **+ = O.** Evidence: &quot;consiglo&quot; r01, &quot;o a Pavia&quot; r06, &quot;erano&quot; r06 end (`d k 7 y t`), &quot;Urbino&quot; r09 end. The Milano sign in r03 is a tau with only a top bar (⊤) = A, not +.
+4. **Crossed psi X = O.** It is written fused with a following y (N) in &quot;opinione&quot; (r02 `X y` = on) and in &quot;o nostri&quot; (r07 `X y n S a k Y`). The first sign of the X8 code group is a different, 4-like sign.
+5. **Y&#x27; = N.** This is a psi-like sign with a left tick on the arm. Evidence: &quot;uno&quot; (r10 `s Y&#x27; n`) and &quot;Urbino&quot; (r05 `k yb Y Y&#x27; n`, r09 `k yb Y Y&#x27; t`). The same sign closes the unresolved words `S n y Y&#x27;`, `M n y Y&#x27;` and `D n y Y&#x27;` (r10-12), where N gives no sense. So either there is a second value, or it is a look-alike not yet separated.
+6. **yb = B.** This is a y with a bent left arm. Evidence: &quot;deliberare&quot; (r06), &quot;deliberaseno&quot; (r12), &quot;Urbino&quot; (r05, r09). The plain y stays N (sono, erano, signoria, opinione, ognuno).
+7. **LA = A.** This is an L whose foot turns up like a &quot;2&quot;. Evidence: &quot;a casa&quot; (r05 `7 l LA S 7`). This is George Lasry&#x27;s third A sign. The tall L-with-foot stays C (causato, capitanei, Francesco).
+8. **lY = &quot;ci&quot;.** This is a small l joined to psi. Evidence: &quot;aciò che se vincese&quot; (r14 `7 lY n F S d`) and &quot;a ciò dito&quot; (r11).
+9. **q.**
+   - Plain q is H. Evidence: &quot;heri&quot; (r01), &quot;chiarito&quot; (r04), &quot;ha&quot; (r05, r13).
+   - q is F in &quot;Francesco&quot; (r13 `qF k 7 y L d S L n`).
+   - The recurring group `q s n`, &quot;fuo&quot;, is read as the verb &quot;fu&quot;: &quot;il consiglio de heri fu per tirare&quot; (r01) and &quot;questa fu[o] inventione&quot; (r12). Tentative: the group is overlined in r09, which may mark a code group.
+10. **Bold k = R.** Evidence: &quot;erano&quot; (r02). Some other dark blobs are later ink retouches over the underlying letter: A in &quot;duca&quot; (r05), T in &quot;et&quot; (r10), and &quot;quest[a]&quot; (r12). Read them from context. They are not new signs.
+11. **X8 (the ǂ8 group).** It occurs in r05 &quot;a casa de [X8]&quot; and r09 &quot;[X8] che il duca d&#x27;Urbino tirase tuti li so[i] ...&quot;. The context fits a person: the host of the council, whose word decides how the Duke of Urbino deploys his men. Most likely that is the French commander at Landriano, the comte de Saint-Pol. This is not proven from the text.
+12. **ʃu (bold)** in r07 &quot;che [ʃu] sono&quot;: &quot;vi&quot; fits, not proven.
+
+## Totals
+- Glyphs transcribed in r01-r15 (cipher part only; the code group X8 counts as 2): **522**.
+  - Per line: 28, 34, 35, 41, 42, 36, 37, 32, 32, 33, 40, 34, 35, 31, 32.
+- Unresolved or tentative in value: **25**. They are:
+  - X8 twice: 4
+  - q q in r09: 2
+  - the &quot;fuo&quot; groups: 6
+  - y Y&#x27; in the so../lo../do.. words: 6
+  - Y r: 2
+  - ʃu: 1
+  - YB in r03: 1
+  - blotted A*: 3
+- Values read, but the word&#x27;s sense unconfirmed: about **21** (r07 first word 9, r09 &quot;cicsaipui&quot; 9, r03 &quot;mia&quot; 3).
+- Read with confidence (value and word): **about 476 of 522 (91%)**.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/reading_r16-30.md">reading_r16-30.md</a></p><pre># fr. 3034 f.154r, lines r16-r30: glyph transcription and reading
+
+Tokens as in cipher.txt, plus: `d*` = E drawn as a round d with a long flat top bar (r18, r27); `q&#x27;` = the closed-bowl
+q (bowl closed, stem sometimes rising through or above the bowl, &quot;φ/ϙ&quot;), read F; `z` = the &quot;2&quot; form of A; `?x` = unresolved.
+The ne-sign (S) is written as &quot;n&quot; + a looped e-tail: the rough transcription often split it into `n S` or `S d`, and
+the me-sign (M) likewise into `M d`. Those spurious extra n/d tokens are removed below.
+
+Crops: line centre y = 179 + (n-1)*142.7 - 0.04*(x-1000) on desk243.png (the line rises to the right). r30&#x27;s lower
+edge is clipped in desk243; checked on zz243_30.
+
+## Per line
+
+**r16** `rex Y M l q d | ?m ?u ?r | d | ?ω | o 7 k S 7 M | D s L 7 | D s k y Y X n | o k n s Y D Y a n k d`
+Rex, il che [mur·] è [ω] parso al duca d&#x27;Urbino providitore
+39 glyphs, 4 unresolved (&quot;mur·&quot; = three small clear-looking letters with a point; ω = a heavily inked, retouched sign after the E).
+
+**r17** `d a | p 7 Y n k d | o 7 k a d | D d | M n k n | D 7 M | L 7 y a n | y n S a k n | Y n | d k 7`
+et maiore parte de loro dal canto nostro io era
+38 glyphs, 0 unresolved.
+
+**r18** `S n M Y a n | S d p o k d | d* S d k d | L q Y 7 p 7 a n | Y M | o k Y p n | o d k`
+solito sempre esere chiamato il primo per
+35 glyphs, 0 unresolved.
+
+**r19** `7 o k Y k d | Y M | L 7 p Y y n | 7 M Y | 7 M a k Y | d a | Q s d S a 7 | s n M`
+aprire il camino ali altri et questa vol-
+33 glyphs, 0 unresolved.
+
+**r20** `a 7 | q 7 | L n p d y L Y 7 a n | 7 | q&#x27; k 7 y L Y S L n | o n Y | 7 M Y | 7 M a k Y | o n L q Y`
+-ta ha comenciato a Francisco, poi ali altri pochi
+40 glyphs, 0 unresolved.
+
+**r21** `o n Y | 7 p d | ?r ?r | ?ᵽ | 7 L s 5 7 y a d | S d | D Y L d S d | y s M 7 | X 8 | D Y S d`
+poi a me [r r ᵽ] acuvante se, dicese nula [ǂθ] dise
+35 glyphs, 5 unresolved: the two small r&#x27;s, the heavy flagged p (&quot;ᵽ&quot;), and the code group ǂθ (X 8, the recurring
+name code from r05/r09). &quot;acuvante&quot; reads literally; it may be a form of &quot;avante&quot; with L s unexplained, and I have not
+forced it.
+
+**r22** `F | d k d | D 7 | z y D 7 k d | 7 | o 7 s Y 7 | Y n | L n p d y L Y 7 Y | 7 | D Y k d`
+che ere da andare a Pavia io comenciai a dire
+34 glyphs, 0 unresolved (&quot;ere&quot; as written).
+
+**r23** `Q s d M n | 7 8 Y n | S l k Y a n | D d | 7 y D 7 k d | 7 | p Y M 7 y n | o d y`
+quelo agio scrito de andare a Milano pen-
+33 glyphs, 0 unresolved.
+
+**r24** `S 7 a d | F | q&#x27; k 7 y L d S L n | Y M | o k Y p n | 7 | Y y a d k n p o d k d`
+-sate che Francesco il primo a interompere
+33 glyphs, 0 unresolved.
+
+**r25** `o n Y | Q s 7 M | L q d | s y n | 7 M a k n | F | p Y | s d k 8 n 8 y n | D Y k M n | ?X ?r`
+poi qualche uno altro che mi vergogno dirlo [ǂr]
+36 glyphs, 2 unresolved (the final &quot;ǂr&quot; pair, which looks like a crossed f/7 plus r; &quot;non&quot; would fit the sense
+before &quot;sapendolo&quot; but is not proved).
+
+**r26** `S 7 o d y D n M n | D Y S Y p s M 7 k d | rex | Y M | q&#x27; Y y d | p Y M 7 S`
+sapendolo dissimulare. Rex il fine mi las-
+31 glyphs, 0 unresolved at glyph level. `q&#x27;` read F gives &quot;fine&quot;. The sense of &quot;Rex il fine mi las- / oren...&quot; is not established.
+
+**r27** `n k d y ?t | D Y k d* | L s p | q&#x27; 7 a Y L 7 | S p n y | q&#x27; Y S | S d | S Y | 5 7 | z | Q s d`
+-oren[+] dire cum fatica s mon(?) fisse, si va a que-
+35 glyphs, 1 unresolved (the + sign). Values of the rest are standard, but the words &quot;las-oren+&quot; and &quot;s mon&quot; (S p n y) do not
+yet make sense: p in &quot;S p n y&quot; could be the hooked p (N) giving &quot;s non&quot;, and I cannot tell from the shape.
+
+**r28** `S a n | p n D n | S d | q 7 k 7 | s y n | o 7 S a n y d | D d | p 7 M 7 | D Y 8 d`
+-sto modo se harà uno pastone de mala dige-
+33 glyphs, 0 unresolved.
+
+**r29** `S a Y n y d | Y n | s d D n | 7 S 7 Y | L n S d | p 7 | F | d | Y y p Y 7`
+-stione. Io vedo asai cose, ma che è in mia
+29 glyphs, 0 unresolved.
+
+**r30** `o n S 7 | ?v ?b | 7 | o k n s d D d k M Y | d | S 7 o Y 7 a d | F | a s a Y | M Y`
+posa [v b] a provederli, e sapiate che tuti li
+32 glyphs, 2 unresolved (a small v and a b). Without them the line reads &quot;è in mia posa a provederli&quot;.
+
+### Running text
+Rex, il che [mur] è [ω] parso al duca d&#x27;Urbino providitore, et maiore parte de loro dal canto nostro. Io era solito
+sempre esere chiamato il primo per aprire il camino ali altri, et questa volta ha comenciato a Francisco, poi ali altri
+pochi, poi a me [r r ᵽ] acuvante se, dicese nula, [ǂθ] dise che ere da andare a Pavia. Io comenciai a dire quelo agio
+scrito de andare a Milano. Pensate che Francesco il primo a interompere, poi qualche uno altro che mi vergogno dirlo,
+[ǂr] sapendolo dissimulare. Rex il fine mi las-oren[+] dire cum fatica s mon(?) fisse; si va a questo modo se harà uno
+pastone de mala digestione. Io vedo asai cose, ma che è in mia posa [v b] a provederli, e sapiate che tuti li ...
+
+## Key additions and corrections (with evidence)
+
+1. **ne-sign = one glyph written &quot;n&quot; + looped e-tail.** &quot;parso&quot; r16 (o 7 k S n) reads P-A-R-S-O only
+   if the &quot;n&quot; before the tail is part of S; same in &quot;nostro&quot; r17, &quot;solito&quot; r18, &quot;posa&quot; r30, &quot;cose&quot; r29, &quot;questa&quot; r19.
+   The rough file&#x27;s `n S` and `S d` pairs are single S.
+2. **me-sign likewise swallows its e-tail**: &quot;il camino&quot; r19, &quot;ali altri&quot; r19/r20, &quot;sapendolo&quot; r26. The rough `M d` = M.
+3. **E has a third form, d with a long flat top bar (d\*)**: &quot;esere&quot; r18 (S-E-M-P-R-E | d\*-S-E-R-E) and &quot;dire&quot; r27.
+   The rough file had it as D.
+4. **q&#x27; (closed bowl, stem rising through or above it) = F**, open &quot;9&quot;-shaped q = H. F in &quot;Francisco&quot; r20, &quot;Francesco&quot;
+   r24, &quot;fatica&quot; r27, &quot;fisse&quot; r27, and probably &quot;fine&quot; r26; H in &quot;ha&quot; r20, &quot;che&quot; r16/r25, &quot;chiamato&quot; r18, &quot;pochi&quot; r20,
+   &quot;harà&quot; r28. The shapes differ, but the difference is small (compare crops at r20 x≈480 &quot;ha&quot; vs x≈1260 &quot;Francisco&quot;).
+5. **z (&quot;2&quot;) = A in r22 &quot;da andare&quot;**: the rough file had L there (D 7 L y ...). It reads D-A | A-N-D-A-R-E.
+6. **y = B in &quot;d&#x27;Urbino&quot; r16** (D s k y Y X n), where the y looks like the ordinary y. Elsewhere y = N (canto, nostro,
+   camino, andare, vergogno, pastone). Crossed psi X = N in &quot;Urbino&quot;, matching Lasry&#x27;s N row (not O).
+7. **theta (8) = G twice in &quot;vergogno&quot; r25** (s d k 8 n 8 y n), and in &quot;agio&quot; r23 and &quot;digestione&quot; r28.
+8. **plain p = M** in &quot;maiore&quot;, &quot;sempre&quot;, &quot;primo&quot;, &quot;camino&quot;, &quot;modo&quot;, &quot;mala&quot;, &quot;interompere&quot;, &quot;mia&quot;. The dot over the p of
+   &quot;modo&quot; r28 is a stray point, not the hooked-p (N) form.
+9. **Hooked tau Q confirmed**: &quot;questa&quot; r19, &quot;quelo&quot; r23, &quot;qualche&quot; r25, &quot;que-sto&quot; r27/28.
+10. **Unresolved small signs**: &quot;mur·&quot; r16, &quot;r r&quot; and the heavy flagged p r21, &quot;ǂr&quot; r25, &quot;v b&quot; r30. They are all small
+    r/u/v shapes, like Lasry&#x27;s &quot;Unknown&quot; row (r·, v·). Dropping them gives good Italian in r16 (&quot;il che è parso&quot;) and
+    r30 (&quot;in mia posa a provederli&quot;), so they may be nulls, but that is not proved.
+11. **Rough transcription errors fixed**: r17 `y n S` (not `y n S` + extra n), r18 `d* S d k d` (not `D S d d n d`),
+    r19 `L 7 p Y y n` (not `Y Y`) and `Q s d S a 7` (extra d dropped), r20 F not H in Francisco, r22 z not L,
+    r23 `S l k Y a n` (not `S d k`), r25 `L q d s y n` and `s d k 8 n 8 y n`.
+
+## Totals
+- Glyphs r16-r30: **516** (rex counted as 1; far as 1).
+- Unresolved: **14** (r16: 4, r21: 5 including the ǂθ code group, r25: 2, r27: 1, r30: 2).
+- Read with confidence: **500**. Two more have values but are tentative: q&#x27; = F in r26 &quot;fine&quot;, and p in r27 &quot;S p n y&quot;.
+- Open sense (values known, words not understood): r21 &quot;acuvante&quot;, r26-27 &quot;Rex il fine mi las-oren+ dire&quot;, r27 &quot;s mon&quot;.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/reading_verso.md">reading_verso.md</a></p><pre># f.154v, cipher lines v01-v09 (Gallica view 244, deskewed desk244.png, crops v01-v09.png)
+
+Glyph values as in KEY.md. `[..]` = unread glyphs, `(?)` = doubtful word.
+
+| line | reading | unread glyphs |
+|---|---|---|
+| v01 | nostri, dico tuti, comenciando al capor[i]… [e g a u t] | 5 |
+| v02 | Dio ch&#x27;io scriva al [peu] e a vostra S. provedase | 0 |
+| v03 | da li che per me ie sono el c[u]o sp[a]e[o] mi[t][ǂ] i[r] ce l- | 8 |
+| v04 | -aro; però mai de dire il servicio dil | 0 |
+| v05 | [peu], e vaglia quanto non a[r]a; tuta volta certifico | 1 |
+| v06 | [em] che havem[?] [si]e[n]e dito il duca d&#x27;Urbino pro- | 5 |
+| v07 | -veditore, e a io che se andara per [t] su[m]o a trave- | 3 |
+| v08 | -rsati il camino tra Milano e Pavia, d[o]n- | 1 |
+| v09 | -[d]e i[n] sp[n]rera poi il resto | 4 |
+| clear | che ca fin de questa ma[teria], pregando n[ost]ro S[ign]or Dio dona a V. S. bona e longa vitta. Da al Campo a Landriano ali XXX d&#x27;aust | – |
+
+Notes
+- `peu` (v02 end, v05 start) is written like the clear letters p-e-u and stands where a person is named: &quot;scriva al peu&quot;, &quot;il servicio dil peu&quot;. A code word, most likely the King.
+- q = F in &quot;certifico&quot; (v05), as in &quot;Francesco&quot; on the recto; q = H in &quot;chiarito&quot; and &quot;havem-&quot;. Two look-alike signs, not separated on this scan.
+- + = A in &quot;camino&quot; (v08).</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/KEY.md">KEY.md</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/visconti1528/key_fr3045_f28.png">key_fr3045_f28.png</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/visconti1528.json"></figure>
 <!-- replay:end -->

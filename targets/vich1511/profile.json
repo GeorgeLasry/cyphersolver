@@ -263,7 +263,8 @@
       "kind": "verification",
       "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): N.73 (1515, another system) moved to targets/vich1515/ with its transcription and solver scripts. Fraction re-measured on N.45/N.57/N.60 alone with measure.py (N.60 v3): 21,750 of 22,538 tokens (0.965).",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): N.45 (v2), N.57 (v2) and N.60 (v3) linked to the glyph-label transcriptions measure.py counts and their decode.py outputs; key_file key.md and decode.py", "result": "worked"}
   ],
   "outcome": {
     "method": "key recovered based on adjacent plaintext",
@@ -335,6 +336,12 @@
         "role": "key or decipherment used",
         "note": "clerk's decipherments of the siblings N.46 and N.52BIS (and N.41, N.39, N.12)"
       }
-    ]
+    ],
+    "texts": [
+      {"doc": "N.45", "label": "AHN Estado 8715 N.45, Seville, 4 Apr 1511", "transcription": ["n45_pp03-09_v2.txt", "n45_pp10-15_v2.txt"], "decryption": ["n45_pp03-09_v2_decoded.txt", "n45_pp10-15_v2_decoded.txt"], "summary": "Ferdinand the Catholic to his ambassador Jerónimo de Vich in Rome: a long complaint against Julius II (the new cardinals, the absolution of the Venetians, the Pope's refusal of his counsel) and instructions to press the Emperor-Venice concord, settle Ferrara and deliver orders to Fabrizio Colonna. The decode is mechanical, unread groups in brackets."},
+      {"doc": "N.57", "label": "AHN Estado 8715 N.57, Burgos, 5 June 1512", "transcription": "n57_transcription_v2.txt", "decryption": ["n57_transcription_v2_decoded.txt", "n57_decode_v4.txt"], "summary": "The aftermath of Ravenna: Ferdinand reconstructs how Vich's letters and the papal side pushed the viceroy Ramón de Cardona into battle against his orders, tells Vich not to do it again, and asks that the Ferrara business be treated secretly, 'sin que la sienta el Papa'."},
+      {"doc": "N.60", "label": "AHN Estado 8715 N.60, Logroño, 1 Sept 1512", "transcription": "n60_transcription_v3.txt", "decryption": "n60_v3_decoded.txt", "summary": "Written from the Navarre campaign: a reproach to Julius II for not paying his troops as the League requires, and the plan for the Sforza restoration in Milan, Massimiliano son of Duke Ludovico to be put into the state by the Emperor's hand."}
+    ],
+    "key_file": ["key.md", "decode.py"]
   }
 }

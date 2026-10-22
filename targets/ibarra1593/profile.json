@@ -183,6 +183,12 @@
    "kind": "verification",
    "what": "Entry split from sessa1593 under the one-key rule (Lasry, 14 Oct 2026): no. 68 is in the Feria-Mansfeld cipher, not the office cipher of nos. 45/79/47. Files moved; dec68.py rerun with fill68.json (598 tokens); sense rows moved to sense68.tsv: 224/598.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct68.txt; texts/no68_decryption.md is the saved output of dec68.py with fill68.json (all 20 cipher lines), reading68.md the earlier hand reading of ll. 4-10; key keyM.tsv + fill68.json.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -224,6 +230,22 @@
     "note": "key image of the Feria-Mansfeld cipher, 1593 (cryptiana spanish3.htm, spanish3mansfeld.png)",
     "source": "cryptiana spanish3.htm"
    }
+  ],
+  "texts": [
+   {
+    "doc": "no68",
+    "label": "Diego de Ibarra, Paris, 10 July 1593, BnF fr. 3984 no. 68, f. 145",
+    "transcription": "ct68.txt",
+    "decryption": [
+     "texts/no68_decryption.md",
+     "reading68.md"
+    ],
+    "summary": "Ibarra writes from Paris during the Estates of 1593 in the Feria-Mansfeld cipher: the messenger he is despatching, cavalry awaited, 'no estamos desesperados', peril, and help that might come with the cavalry. The three-letter word codes, which carry much of the sense, have no published table and stay unread."
+   }
+  ],
+  "key_file": [
+   "keyM.tsv",
+   "fill68.json"
   ]
  }
 }

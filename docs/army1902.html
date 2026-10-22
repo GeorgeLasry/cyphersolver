@@ -66,7 +66,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#table">The table</a><a href="#telegrams">The four telegrams</a><a href="#method">How the table was found</a><a href="#checks">What was checked here</a><a href="#open">Still open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#table">The table</a><a href="#telegrams">The four telegrams</a><a href="#method">How the table was found</a><a href="#checks">What was checked here</a><a href="#open">Still open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; 69 of 72 pairs agree or give sense</span></p>
 <dl>
@@ -130,6 +130,151 @@
 <li>The name of the cipher (鑰号, or the numeric part of 特号), and the 1901 Hiroshima telegram in another method.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>27 Mar 1902, Osaka</h3>
+<p>Chief of Staff Ōyama in Osaka to Lt-Gen. Terauchi: until he returns to the capital, Terauchi is asked to handle the business of the General Staff (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ).</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/ct_C09122911500.txt">ct_C09122911500.txt</a></p><pre># Japanese Army numeric kana cipher, 1902-04: the enciphered digit runs, in two-digit pairs, in reading order
+# (columns right to left, top to bottom). Plain kana around the runs are given after &quot;|&quot; and are not counted.
+# Source of the digits: Harumi-Matsuba, kagigo1901-public docs/READING.md (issue #58). The pairs of C09122911500 and
+# C09123116600 were checked here against the JACAR images on 21 Oct 2026 (every column); the other two were not.
+# NB the contributor&#x27;s data/transcription.txt and telegrams.tsv give C09122911500 without the second 18 (34 pairs);
+# the image shows 一八一八 at the head of column 2, as in READING.md (35 pairs + 80, 72 digits = the form&#x27;s count).
+== C09122911500 fr. 0110, Osaka 27 Mar 1902, Oyama -&gt; Terauchi (whole text)
+44 10 17 42 28 18 18 42 29 03 87 44 10 76 45 68 23 04 18 28 00 10 42 41 17 28 46 11 04 08 01 04 31 06 17 80</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/texts/readings.md">readings.md</a></p><pre># Japanese Army numeric kana cipher, 1902-04: decryptions of the four telegrams
+
+The table section below is copied verbatim from NOTES.md (&quot;The telegrams&quot;); the block after it is decode_out.txt, the saved output of decode.py.
+
+### The telegrams (one table, four telegrams)
+
+| JACAR | frame | date, route | pairs | reading | against |
+|---|---|---|---|---|---|
+| C09122911500 | 0110 (translation 0108) | 27 Mar 1902, Osaka: Chief of Staff Ōyama → Lt-Gen. Terauchi | 35 + 80 | ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ) | 35/35 |
+| C09123116600 | 0026 (reply draft 0025) | 25 Jan 1904, Kokura → Maj.-Gen. Iguchi, General Staff | 13 | ヨヨウノカンコクチズダイヨ + clear サレタシ ヲハラ (要用ノ韓国地図貸与サレタシ) | no translation; reply draft sends maps of Korea |
+| C09122909900 | 0079 (translation 0078) | 28 Mar 1902, Osaka: Ōyama → Maj.-Gen. Fukushima | 12 | カシグンエンシウケンガク (カイグン…, naval exercise observation) | 11/12: イ written 17 (シ), table 19 |
+| C03020059400 | 0119 | Jan 1904, Div. commander Inoue → War Minister | 12 | シンテイアクゼウシレイブ (辛碇泊場司令部) | 10/12: 09 (ア) for ハ 04, 88 (ゼ) for ジ 68 |
+
+Not included: C09122806100 (18 Feb 1901, Hiroshima, Manabe → Tamura), 15 pairs in four runs that the 1902 table does
+not read (the same ニ is 91 and 69). A different method, so by the one-key rule it is not part of this target; the
+contributor&#x27;s OPEN.md lists what was tried. Unread.
+
+## decode.py output (decode_out.txt)
+
+```
+C03020059400: 12 pairs  シンテイアクゼウシレイブ  | agrees 10/12 4:09=ア/ハ 6:88=ゼ/ジ
+C09122909900: 12 pairs  カシグンエンシウケンガク  | agrees 11/12 1:17=シ/イ
+C09122911500: 36 pairs  ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ|  | agrees 35/35 
+C09123116600: 13 pairs  ヨヨウノカンコクチズダイヨ
+```</pre></details>
+<h3>25 Jan 1904, Kokura</h3>
+<p>A request from Kokura to Maj.-Gen. Iguchi of the General Staff for the loan of the needed maps of Korea (要用ノ韓国地図貸与サレタシ); the reply draft in the same file sends maps of Korea.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/ct_C09123116600.txt">ct_C09123116600.txt</a></p><pre># Japanese Army numeric kana cipher, 1902-04: the enciphered digit runs, in two-digit pairs, in reading order
+# (columns right to left, top to bottom). Plain kana around the runs are given after &quot;|&quot; and are not counted.
+# Source of the digits: Harumi-Matsuba, kagigo1901-public docs/READING.md (issue #58). The pairs of C09122911500 and
+# C09123116600 were checked here against the JACAR images on 21 Oct 2026 (every column); the other two were not.
+# NB the contributor&#x27;s data/transcription.txt and telegrams.tsv give C09122911500 without the second 18 (34 pairs);
+# the image shows 一八一八 at the head of column 2, as in READING.md (35 pairs + 80, 72 digits = the form&#x27;s count).
+== C09123116600 fr. 0026, Kokura 25 Jan 1904 -&gt; Iguchi, General Staff (plain コロクニシ before, サレタシ ヲハラ after)
+42 42 29 45 08 10 48 28 16 78 57 19 42</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/texts/readings.md">readings.md</a></p><pre># Japanese Army numeric kana cipher, 1902-04: decryptions of the four telegrams
+
+The table section below is copied verbatim from NOTES.md (&quot;The telegrams&quot;); the block after it is decode_out.txt, the saved output of decode.py.
+
+### The telegrams (one table, four telegrams)
+
+| JACAR | frame | date, route | pairs | reading | against |
+|---|---|---|---|---|---|
+| C09122911500 | 0110 (translation 0108) | 27 Mar 1902, Osaka: Chief of Staff Ōyama → Lt-Gen. Terauchi | 35 + 80 | ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ) | 35/35 |
+| C09123116600 | 0026 (reply draft 0025) | 25 Jan 1904, Kokura → Maj.-Gen. Iguchi, General Staff | 13 | ヨヨウノカンコクチズダイヨ + clear サレタシ ヲハラ (要用ノ韓国地図貸与サレタシ) | no translation; reply draft sends maps of Korea |
+| C09122909900 | 0079 (translation 0078) | 28 Mar 1902, Osaka: Ōyama → Maj.-Gen. Fukushima | 12 | カシグンエンシウケンガク (カイグン…, naval exercise observation) | 11/12: イ written 17 (シ), table 19 |
+| C03020059400 | 0119 | Jan 1904, Div. commander Inoue → War Minister | 12 | シンテイアクゼウシレイブ (辛碇泊場司令部) | 10/12: 09 (ア) for ハ 04, 88 (ゼ) for ジ 68 |
+
+Not included: C09122806100 (18 Feb 1901, Hiroshima, Manabe → Tamura), 15 pairs in four runs that the 1902 table does
+not read (the same ニ is 91 and 69). A different method, so by the one-key rule it is not part of this target; the
+contributor&#x27;s OPEN.md lists what was tried. Unread.
+
+## decode.py output (decode_out.txt)
+
+```
+C03020059400: 12 pairs  シンテイアクゼウシレイブ  | agrees 10/12 4:09=ア/ハ 6:88=ゼ/ジ
+C09122909900: 12 pairs  カシグンエンシウケンガク  | agrees 11/12 1:17=シ/イ
+C09122911500: 36 pairs  ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ|  | agrees 35/35 
+C09123116600: 13 pairs  ヨヨウノカンコクチズダイヨ
+```</pre></details>
+<h3>28 Mar 1902, Osaka</h3>
+<p>Ōyama in Osaka to Maj.-Gen. Fukushima about observing the naval exercise (カイグン…エンシウケンガク).</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/ct_C09122909900.txt">ct_C09122909900.txt</a></p><pre># Japanese Army numeric kana cipher, 1902-04: the enciphered digit runs, in two-digit pairs, in reading order
+# (columns right to left, top to bottom). Plain kana around the runs are given after &quot;|&quot; and are not counted.
+# Source of the digits: Harumi-Matsuba, kagigo1901-public docs/READING.md (issue #58). The pairs of C09122911500 and
+# C09123116600 were checked here against the JACAR images on 21 Oct 2026 (every column); the other two were not.
+# NB the contributor&#x27;s data/transcription.txt and telegrams.tsv give C09122911500 without the second 18 (34 pairs);
+# the image shows 一八一八 at the head of column 2, as in READING.md (35 pairs + 80, 72 digits = the form&#x27;s count).
+== C09122909900 fr. 0079, Osaka 28 Mar 1902, Oyama -&gt; Fukushima (plain ソ(ノ)ケンキヨカス 80 after)
+08 17 79 10 39 10 17 29 38 10 59 28</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/texts/readings.md">readings.md</a></p><pre># Japanese Army numeric kana cipher, 1902-04: decryptions of the four telegrams
+
+The table section below is copied verbatim from NOTES.md (&quot;The telegrams&quot;); the block after it is decode_out.txt, the saved output of decode.py.
+
+### The telegrams (one table, four telegrams)
+
+| JACAR | frame | date, route | pairs | reading | against |
+|---|---|---|---|---|---|
+| C09122911500 | 0110 (translation 0108) | 27 Mar 1902, Osaka: Chief of Staff Ōyama → Lt-Gen. Terauchi | 35 + 80 | ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ) | 35/35 |
+| C09123116600 | 0026 (reply draft 0025) | 25 Jan 1904, Kokura → Maj.-Gen. Iguchi, General Staff | 13 | ヨヨウノカンコクチズダイヨ + clear サレタシ ヲハラ (要用ノ韓国地図貸与サレタシ) | no translation; reply draft sends maps of Korea |
+| C09122909900 | 0079 (translation 0078) | 28 Mar 1902, Osaka: Ōyama → Maj.-Gen. Fukushima | 12 | カシグンエンシウケンガク (カイグン…, naval exercise observation) | 11/12: イ written 17 (シ), table 19 |
+| C03020059400 | 0119 | Jan 1904, Div. commander Inoue → War Minister | 12 | シンテイアクゼウシレイブ (辛碇泊場司令部) | 10/12: 09 (ア) for ハ 04, 88 (ゼ) for ジ 68 |
+
+Not included: C09122806100 (18 Feb 1901, Hiroshima, Manabe → Tamura), 15 pairs in four runs that the 1902 table does
+not read (the same ニ is 91 and 69). A different method, so by the one-key rule it is not part of this target; the
+contributor&#x27;s OPEN.md lists what was tried. Unread.
+
+## decode.py output (decode_out.txt)
+
+```
+C03020059400: 12 pairs  シンテイアクゼウシレイブ  | agrees 10/12 4:09=ア/ハ 6:88=ゼ/ジ
+C09122909900: 12 pairs  カシグンエンシウケンガク  | agrees 11/12 1:17=シ/イ
+C09122911500: 36 pairs  ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ|  | agrees 35/35 
+C09123116600: 13 pairs  ヨヨウノカンコクチズダイヨ
+```</pre></details>
+<h3>Jan 1904</h3>
+<p>Division commander Inoue to the War Minister: a 12-pair run reading シンテイアクゼウシレイブ (辛碇泊場司令部, an anchorage command), with two pairs off the table.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/ct_C03020059400.txt">ct_C03020059400.txt</a></p><pre># Japanese Army numeric kana cipher, 1902-04: the enciphered digit runs, in two-digit pairs, in reading order
+# (columns right to left, top to bottom). Plain kana around the runs are given after &quot;|&quot; and are not counted.
+# Source of the digits: Harumi-Matsuba, kagigo1901-public docs/READING.md (issue #58). The pairs of C09122911500 and
+# C09123116600 were checked here against the JACAR images on 21 Oct 2026 (every column); the other two were not.
+# NB the contributor&#x27;s data/transcription.txt and telegrams.tsv give C09122911500 without the second 18 (34 pairs);
+# the image shows 一八一八 at the head of column 2, as in READING.md (35 pairs + 80, 72 digits = the form&#x27;s count).
+== C03020059400 fr. 0119, Jan 1904, Division commander Inoue -&gt; War Minister (kana follow)
+17 10 36 19 09 28 88 29 17 31 19 76</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/texts/readings.md">readings.md</a></p><pre># Japanese Army numeric kana cipher, 1902-04: decryptions of the four telegrams
+
+The table section below is copied verbatim from NOTES.md (&quot;The telegrams&quot;); the block after it is decode_out.txt, the saved output of decode.py.
+
+### The telegrams (one table, four telegrams)
+
+| JACAR | frame | date, route | pairs | reading | against |
+|---|---|---|---|---|---|
+| C09122911500 | 0110 (translation 0108) | 27 Mar 1902, Osaka: Chief of Staff Ōyama → Lt-Gen. Terauchi | 35 + 80 | ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ) | 35/35 |
+| C09123116600 | 0026 (reply draft 0025) | 25 Jan 1904, Kokura → Maj.-Gen. Iguchi, General Staff | 13 | ヨヨウノカンコクチズダイヨ + clear サレタシ ヲハラ (要用ノ韓国地図貸与サレタシ) | no translation; reply draft sends maps of Korea |
+| C09122909900 | 0079 (translation 0078) | 28 Mar 1902, Osaka: Ōyama → Maj.-Gen. Fukushima | 12 | カシグンエンシウケンガク (カイグン…, naval exercise observation) | 11/12: イ written 17 (シ), table 19 |
+| C03020059400 | 0119 | Jan 1904, Div. commander Inoue → War Minister | 12 | シンテイアクゼウシレイブ (辛碇泊場司令部) | 10/12: 09 (ア) for ハ 04, 88 (ゼ) for ジ 68 |
+
+Not included: C09122806100 (18 Feb 1901, Hiroshima, Manabe → Tamura), 15 pairs in four runs that the 1902 table does
+not read (the same ニ is 91 and 69). A different method, so by the one-key rule it is not part of this target; the
+contributor&#x27;s OPEN.md lists what was tried. Unread.
+
+## decode.py output (decode_out.txt)
+
+```
+C03020059400: 12 pairs  シンテイアクゼウシレイブ  | agrees 10/12 4:09=ア/ハ 6:88=ゼ/ジ
+C09122909900: 12 pairs  カシグンエンシウケンガク  | agrees 11/12 1:17=シ/イ
+C09122911500: 36 pairs  ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ|  | agrees 35/35 
+C09123116600: 13 pairs  ヨヨウノカンコクチズダイヨ
+```</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/army1902/texts/key.md">key.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/army1902.json"></figure>
 <!-- replay:end -->

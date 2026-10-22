@@ -51,7 +51,7 @@
 <div class="seal solved" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The letter and its key</a><a href="#reading">f. 333, La Rochelle, 10 July 1586</a><a href="#method">Method and checks</a><a href="#residuals">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The letter and its key</a><a href="#reading">f. 333, La Rochelle, 10 July 1586</a><a href="#method">Method and checks</a><a href="#residuals">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied &middot; 103 of 108 figures</span></p>
 <dl>
@@ -98,6 +98,30 @@ figures (93&nbsp;%) as in Tomokiyo&rsquo;s table, and 90&nbsp;% on a matched con
 <li>The name numbers 204, 189, 190, 166 and 167, each once and outside Tomokiyo&rsquo;s table.</li>
 <li>A figure-by-figure check of Tomokiyo&rsquo;s table against f. 321, which needs the leaf itself or a raking-light image.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>La Rochelle, 10 July 1586 (BnF 500 de Colbert 401 f. 333)</h3>
+<p>A news-sheet in the third person signed Henry at La Rochelle, 10 July 1586, sent to Ségur: the King of Navarre wants news and advice on the road he should take, and will mount as soon as the reiters march; the levy must be hastened and set marching as soon as possible. The clear parts report Mayenne&#x27;s army, the plot at Montauban, Drake&#x27;s raids, and Vesin de la Marsillière&#x27;s mission to Berne.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/ct_333.txt">ct_333.txt</a></p><pre># BnF 500 Colbert 401 f.333 — Henry of Navarre, La Rochelle, 10 July 1586 (Gallica canvas 369). Secretary hand, countersigned.
+# Transcribed 2026-09-16 from the full-resolution IIIF image at 2x; clear text in [brackets]; INS = superscript insertion.
+[L&#x27;armee du duc de Mayenne doit ... assieger Castillon ... Montauban a failly d&#x27;estre surprise par la trahison et conspiration du Sr de Claux ... Drak a faict ravage en Espagnols. Il a ruiné et rasé l&#x27;isle de St Dominique. Il est allé a Cartagene et fait terreur a tous les Espagnols.] 162 [desire fort d&#x27;avoir des nouvelles de] 204 74 189 190 61 120 31 126
+62 99 54 46 12 19 140 55 132 47 99 17 89 105 38 108 34 76 31 52 134 110 47
+62 71 36 104 37 51 [Il attend en bonne devotion ce qui luy sera mandé pour l&#x27;effectuer]
+167 [assurer qu&#x27;aussi tost que les] 48 124 32 50 52 46 23 49 103 47 18 89 126 38 52 31 34 106 38
+134 123 14 19 89 138 31 166 62 131 37 24 124 46 23 131 38 51 74 66 38 109 141
+101 37 134 32 34 88 55 52 13 138 38 69 47 98 99 139 22 61 98 78 31 124 103
+47 20 89 46 [le plustost qu&#x27;on pourra. Le Roy de Navarre a envoyé comme vous savez le Sr de Vesin de la Marsilliere a Berne avec les ambassadeurs des quatre Cantons de Suisse]</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/texts/f333_decryption.md">f333_decryption.md</a></p><pre># Output of targets/segur/decode.py, run 22 Oct 2026 with key_321.json on ct_333.txt (BLOCK0=63 NBLK=16). Clear text in capitals, cipher decoded in lower case, {n} = no value (name codes; 162 = Le Roy de Navarre in Tomokiyo&#x27;s table). Verbatim script output, not edited.
+ L&#x27;ARMEE DU DUC DE MAYENNE DOIT ... ASSIEGER CASTILLON ... MONTAUBAN A FAILLY D&#x27;ESTRE SURPRISE PAR LA TRAHISON ET CONSPIRATION DU SR DE CLAUX ... DRAK A FAICT RAVAGE EN ESPAGNOLS. IL A RUINÉ ET RASÉ L&#x27;ISLE DE ST DOMINIQUE. IL EST ALLÉ A CARTAGENE ET FAIT TERREUR A TOUS LES ESPAGNOLS. {162} DESIRE FORT D&#x27;AVOIR DES NOUVELLES DE {204}de{189}{190}etqiiro
+etleuradviusurlecheminnaldoittenir
+etcomment IL ATTEND EN BONNE DEVOTION CE QUI LUY SERA MANDÉ POUR L&#x27;EFFECTUER 
+{167} ASSURER QU&#x27;AUSSI TOST QUE LES sreistresmarcherontilmon
+teraadhevai{166}etsonfreresontdebonnevo
+lonteilhautavancerlaleveeetlafairema
+reher LE PLUSTOST QU&#x27;ON POURRA. LE ROY DE NAVARRE A ENVOYÉ COMME VOUS SAVEZ LE SR DE VESIN DE LA MARSILLIERE A BERNE AVEC LES AMBASSADEURS DES QUATRE CANTONS DE SUISSE</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/navarre1586/key_321.json">key_321.json</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/navarre1586.json"></figure>
 <!-- replay:end -->

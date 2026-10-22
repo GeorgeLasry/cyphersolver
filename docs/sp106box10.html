@@ -49,7 +49,7 @@
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#systemb">Values from the interlinear glosses</a><a href="#method">Method, and the check that the alignment is soun</a><a href="#grid">The codebreaker’s own table of “the Venetian Cif</a><a href="#date">Date</a><a href="#open">What is uncertain, and what remains</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#systemb">Values from the interlinear glosses</a><a href="#method">Method, and the check that the alignment is soun</a><a href="#grid">The codebreaker’s own table of “the Venetian Cif</a><a href="#date">Date</a><a href="#open">What is uncertain, and what remains</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied &middot; partial &middot; phrases of R664, 46 of 46 glossed groups on R702</span></p>
 <dl>
@@ -122,6 +122,329 @@ The table also corrects four values first aligned on R664 alone: 260 is <em>ta</
 <li>Not done: a group-by-group transcription of R664 and R660, decoded through with the table; a search of the Venetian and Domestic calendars for the letters; the writers.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R664, ff. 167-169, intercepted letter (passages only)</h3>
+<p>An Italian intercept written half in clear, half in the three-figure syllabic &#x27;Venetian Cifer&#x27;, glossed by the English codebreaker. Only passages are deciphered (&#x27;della loro sicurezza&#x27;, &#x27;et hoggi terzo giorno quelle de nuovo senza&#x27;); the letter has not been transcribed through.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/texts/R664_fragments.md">R664_fragments.md</a></p><pre># R664 (SP 106/10 ff. 167-169): the passages deciphered so far (copied verbatim from NOTES.md, 22 Oct 2026)
+
+Not a full text: the letter has never been transcribed group by group (NOTES.md, Remaining gaps). These are the
+only passages of R664 written out in the repository: group transcription above, decoding below.
+
+R664 f. 1 line 44 is wholly clear:
+
+&gt; &quot;potrete continuare nel modo cominciato, osservando però il [mutamento … alle volte … col … numeri suppositi]&quot;
+
+Line 38:
+
+    211 433 436 154 253 319 152 560 312 359 518 367 433
+    del la  lo  ro  si  cu  re  za  ·   n   do  ·   la
+    → &quot;della loro sicurezza … -ndo … la&quot;
+
+Line 41: `240 | hoggi terzo giorno | 468 434 516 146 456 461 252 359` + line 42 `560`
+→ &quot;et hoggi terzo giorno quelle de nuovo senza…&quot;. The one apparent conflict (252 sen/se, 359 za/n) resolves when
+*senza* runs over the line break (252 se + 359 n + 560 za), which confirms the alignment.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/texts/R664_fragments.md">R664_fragments.md</a></p><pre># R664 (SP 106/10 ff. 167-169): the passages deciphered so far (copied verbatim from NOTES.md, 22 Oct 2026)
+
+Not a full text: the letter has never been transcribed group by group (NOTES.md, Remaining gaps). These are the
+only passages of R664 written out in the repository: group transcription above, decoding below.
+
+R664 f. 1 line 44 is wholly clear:
+
+&gt; &quot;potrete continuare nel modo cominciato, osservando però il [mutamento … alle volte … col … numeri suppositi]&quot;
+
+Line 38:
+
+    211 433 436 154 253 319 152 560 312 359 518 367 433
+    del la  lo  ro  si  cu  re  za  ·   n   do  ·   la
+    → &quot;della loro sicurezza … -ndo … la&quot;
+
+Line 41: `240 | hoggi terzo giorno | 468 434 516 146 456 461 252 359` + line 42 `560`
+→ &quot;et hoggi terzo giorno quelle de nuovo senza…&quot;. The one apparent conflict (252 sen/se, 359 za/n) resolves when
+*senza* runs over the line break (252 se + 359 n + 560 za), which confirms the alignment.</pre></details>
+<h3>R658, f. 125, the codebreaker&#x27;s grid of the code</h3>
+<p>The codebreaker&#x27;s own grid of every group 136-565 with his counts and values, rebuilt here as a systematic syllabary of 117 values.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/cat62/venetian_code.tsv">venetian_code.tsv</a></p><pre># System B, the &quot;Venetian Cifer&quot; (R701 p.1 heading), three-figure syllabic code.
+# Rebuilt from the codebreaker&#x27;s grid R658 (every group 136-565 with a count and his value) and his glosses on R702 p.2.
+# grade: H = written on R658 or R702 by the codebreaker; P = predicted from the table&#x27;s pattern (consonant x a-e-i-o-u
+# in five consecutive rows, one consonant per hundreds column), not seen written.
+# Words take a superscript ending letter: 369° nostro, 369ª nostra, 369ᵉ nostre (&quot;Wordes marked with letters&quot;).
+group	value	grade	source
+111	al	H	R664 gloss (sp106box10 notes)
+142	na	P	R658 row pattern
+143	ne	H	R658; R702 &quot;i co lo ne li&quot;
+144	ni	P	R658 row pattern
+145	no	P	R658 row pattern
+146	nu	H	R664 gloss
+151	ra	H	R658
+152	re	H	R658; R664
+153	ri	H	R658 (written pri, struck)
+154	ro	H	R658; R702 &quot;della loro&quot;
+155	ru	P	pattern
+156	a	H	R658 column head; R702
+157	b	H	R658
+158	c	H	R658
+159	d	H	R658
+165	che	H	R658; R702
+167	con	H	R702 &quot;conservarsi&quot;
+242	pa	H	R658
+243	pe	H	R658
+244	pi	H	R658
+245	po	H	R658; R702 &quot;possi&quot;
+246	pu	H	R658 column head
+251	sa	H	R658
+252	se	H	R658; R702; R664
+253	si	H	R658; R702; R664
+254	so	H	R658
+255	su	H	R658
+256	e	H	R658 column head
+257	f	H	R658
+258	g	H	R658
+259	h	P	R658 (sign unclear)
+260	ta	H	R658; R702 &quot;capitate&quot;, &quot;in tanto&quot; (notes of 2026-09-20 had &quot;mento&quot;: corrected)
+261	te	H	R658; R702 &quot;capitate&quot;, &quot;prometter&quot;
+262	ti	H	R658 (notes had &quot;to&quot;: corrected)
+263	to	H	R658; R702 &quot;in tanto&quot; (notes had &quot;ti&quot;: corrected)
+264	tu	H	R658
+315	ca	P	pattern (notes had 316 &quot;ta&quot;)
+316	ce	P	pattern
+317	ci	P	pattern
+318	co	H	R702 &quot;i colonelli&quot;, &quot;come&quot;, &quot;col&quot;
+319	cu	H	R664
+339	liga	H	R658 (word)
+340	lettere	H	R658 (word); R664
+341	del	H	R702 &quot;della loro&quot;
+351	sca	H	R658
+352	sce	H	R658
+353	sci	P	pattern
+354	sco	H	R658
+355	scu	H	R658
+356	i	H	R658; R702 &quot;i colonelli&quot;
+357	l	H	R658; R664
+358	m	H	R658
+359	n	H	R658; R702 &quot;sendosi&quot;, &quot;in tanto&quot;
+360	tra	H	R658
+361	tre	H	R658
+362	tri	H	R658
+363	tro	H	R658
+364	tru	H	R658
+369	nostro	H	R658; R701 (word, ending by superscript)
+411	qui	H	R658 word list (R664 gloss &quot;que&quot;)
+430	passato	H	R658; R701 (word, ending by superscript)
+433	la	H	R664; R702 &quot;della&quot;
+434	le	H	R664
+435	li	H	R702 &quot;colonelli&quot;
+436	lo	H	R658; R702
+437	lu	H	R658
+439	per	H	R658 (word)
+440	Spagn(a)	H	R658 word list, reading uncertain
+442	pra	H	R658 (written pla)
+443	pre	H	R658
+444	pri	H	R658
+445	pro	H	R658; R702 &quot;prometter&quot;
+446	pru	H	R658 column head
+451	stra	H	R658
+452	stre	P	pattern
+453	stri	P	pattern
+454	stro	P	pattern
+456	o	H	R658 column head; R664
+457	p	H	R658
+458	q	H	R658
+459	r	H	R658; R702 &quot;conservarsi&quot;, &quot;prometter&quot; (notes had &quot;v&quot;: corrected)
+460	va	H	R658
+461	ve	H	R658; R664
+462	vi	H	R658
+463	vo	H	R658
+465	quel	H	R658
+467	questo	H	R658; R701 (word)
+515	da	H	R664
+516	de	H	R664; R702
+517	di	P	pattern
+518	do	H	R664; R702 &quot;sendosi&quot;
+519	du	P	pattern
+526	mo	H	R702 &quot;possiamo&quot; (homophone of 536)
+533	ma	P	pattern
+534	me	H	R702 &quot;come&quot;, &quot;prometter&quot;
+535	mi	H	R664
+536	mo	H	R658; R702 &quot;temo&quot;
+537	mu	H	R658; R664
+542	qua	H	R658; R664
+543	que	H	R658
+544	qui	H	R658
+545	quo	H	R658
+551	sta	H	R658
+552	ste	H	R658
+553	sti	H	R658
+554	sto	H	R658
+555	stu	H	R658
+556	s	H	R702 &quot;possi&quot; (R658 column head unclear)
+557	l	H	R702 &quot;col&quot; (homophone of 357)
+560	za	H	R658; R664 &quot;senza&quot;
+561	ze	H	R658
+562	zi	H	R658
+563	zo	H	R658
+564	zu	H	R658
+568	vostro	H	R658 (word)</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/cat62/venetian_code.tsv">venetian_code.tsv</a></p><pre># System B, the &quot;Venetian Cifer&quot; (R701 p.1 heading), three-figure syllabic code.
+# Rebuilt from the codebreaker&#x27;s grid R658 (every group 136-565 with a count and his value) and his glosses on R702 p.2.
+# grade: H = written on R658 or R702 by the codebreaker; P = predicted from the table&#x27;s pattern (consonant x a-e-i-o-u
+# in five consecutive rows, one consonant per hundreds column), not seen written.
+# Words take a superscript ending letter: 369° nostro, 369ª nostra, 369ᵉ nostre (&quot;Wordes marked with letters&quot;).
+group	value	grade	source
+111	al	H	R664 gloss (sp106box10 notes)
+142	na	P	R658 row pattern
+143	ne	H	R658; R702 &quot;i co lo ne li&quot;
+144	ni	P	R658 row pattern
+145	no	P	R658 row pattern
+146	nu	H	R664 gloss
+151	ra	H	R658
+152	re	H	R658; R664
+153	ri	H	R658 (written pri, struck)
+154	ro	H	R658; R702 &quot;della loro&quot;
+155	ru	P	pattern
+156	a	H	R658 column head; R702
+157	b	H	R658
+158	c	H	R658
+159	d	H	R658
+165	che	H	R658; R702
+167	con	H	R702 &quot;conservarsi&quot;
+242	pa	H	R658
+243	pe	H	R658
+244	pi	H	R658
+245	po	H	R658; R702 &quot;possi&quot;
+246	pu	H	R658 column head
+251	sa	H	R658
+252	se	H	R658; R702; R664
+253	si	H	R658; R702; R664
+254	so	H	R658
+255	su	H	R658
+256	e	H	R658 column head
+257	f	H	R658
+258	g	H	R658
+259	h	P	R658 (sign unclear)
+260	ta	H	R658; R702 &quot;capitate&quot;, &quot;in tanto&quot; (notes of 2026-09-20 had &quot;mento&quot;: corrected)
+261	te	H	R658; R702 &quot;capitate&quot;, &quot;prometter&quot;
+262	ti	H	R658 (notes had &quot;to&quot;: corrected)
+263	to	H	R658; R702 &quot;in tanto&quot; (notes had &quot;ti&quot;: corrected)
+264	tu	H	R658
+315	ca	P	pattern (notes had 316 &quot;ta&quot;)
+316	ce	P	pattern
+317	ci	P	pattern
+318	co	H	R702 &quot;i colonelli&quot;, &quot;come&quot;, &quot;col&quot;
+319	cu	H	R664
+339	liga	H	R658 (word)
+340	lettere	H	R658 (word); R664
+341	del	H	R702 &quot;della loro&quot;
+351	sca	H	R658
+352	sce	H	R658
+353	sci	P	pattern
+354	sco	H	R658
+355	scu	H	R658
+356	i	H	R658; R702 &quot;i colonelli&quot;
+357	l	H	R658; R664
+358	m	H	R658
+359	n	H	R658; R702 &quot;sendosi&quot;, &quot;in tanto&quot;
+360	tra	H	R658
+361	tre	H	R658
+362	tri	H	R658
+363	tro	H	R658
+364	tru	H	R658
+369	nostro	H	R658; R701 (word, ending by superscript)
+411	qui	H	R658 word list (R664 gloss &quot;que&quot;)
+430	passato	H	R658; R701 (word, ending by superscript)
+433	la	H	R664; R702 &quot;della&quot;
+434	le	H	R664
+435	li	H	R702 &quot;colonelli&quot;
+436	lo	H	R658; R702
+437	lu	H	R658
+439	per	H	R658 (word)
+440	Spagn(a)	H	R658 word list, reading uncertain
+442	pra	H	R658 (written pla)
+443	pre	H	R658
+444	pri	H	R658
+445	pro	H	R658; R702 &quot;prometter&quot;
+446	pru	H	R658 column head
+451	stra	H	R658
+452	stre	P	pattern
+453	stri	P	pattern
+454	stro	P	pattern
+456	o	H	R658 column head; R664
+457	p	H	R658
+458	q	H	R658
+459	r	H	R658; R702 &quot;conservarsi&quot;, &quot;prometter&quot; (notes had &quot;v&quot;: corrected)
+460	va	H	R658
+461	ve	H	R658; R664
+462	vi	H	R658
+463	vo	H	R658
+465	quel	H	R658
+467	questo	H	R658; R701 (word)
+515	da	H	R664
+516	de	H	R664; R702
+517	di	P	pattern
+518	do	H	R664; R702 &quot;sendosi&quot;
+519	du	P	pattern
+526	mo	H	R702 &quot;possiamo&quot; (homophone of 536)
+533	ma	P	pattern
+534	me	H	R702 &quot;come&quot;, &quot;prometter&quot;
+535	mi	H	R664
+536	mo	H	R658; R702 &quot;temo&quot;
+537	mu	H	R658; R664
+542	qua	H	R658; R664
+543	que	H	R658
+544	qui	H	R658
+545	quo	H	R658
+551	sta	H	R658
+552	ste	H	R658
+553	sti	H	R658
+554	sto	H	R658
+555	stu	H	R658
+556	s	H	R702 &quot;possi&quot; (R658 column head unclear)
+557	l	H	R702 &quot;col&quot; (homophone of 357)
+560	za	H	R658; R664 &quot;senza&quot;
+561	ze	H	R658
+562	zi	H	R658
+563	zo	H	R658
+564	zu	H	R658
+568	vostro	H	R658 (word)</pre></details>
+<h3>R702 p. 2, f. 182, his glossed group strings</h3>
+<p>Strings of the code with the codebreaker&#x27;s glosses (&#x27;i colonelli&#x27;, &#x27;della loro&#x27;, &#x27;che possiamo prometter&#x27;); with &#x27;di 24 di maggio&#x27; and colonels they point to a letter of late May, c. 1624-25.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/texts/R702_p2.txt">R702_p2.txt</a></p><pre># R702 p. 2 (SP 106/10 f. 182): the codebreaker&#x27;s glossed group strings of the Venetian Cifer, decoded with cat62/venetian_code.tsv.
+# Output of cat62/check_r702.py, run 22 Oct 2026 (columns: groups as written | table decode | the codebreaker&#x27;s gloss).
+356 318 436 143 435                           icoloneli                    | i colonelli
+341 433 436 154                               dellaloro                    | della loro
+252 359 518 253                               sendosi                      | sendosi
+167 252 459 459 253                           conserrsi                    | conservarsi (one group struck through)
+362 318 534 261 536 318 557                   tricometemocol               | di come temo col
+165 245 556 253 252 459                       chepossiser                  | che possi ser...
+165 245 556 253 156 526 445 534 261 459       chepossiamoprometer          | che possiamo prometter
+260 261                                       tate                         | capitate (sono capita-te)
+260 359 263                                   tanto                        | in tanto
+46/46 groups covered by the table</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/texts/R702_p2.txt">R702_p2.txt</a></p><pre># R702 p. 2 (SP 106/10 f. 182): the codebreaker&#x27;s glossed group strings of the Venetian Cifer, decoded with cat62/venetian_code.tsv.
+# Output of cat62/check_r702.py, run 22 Oct 2026 (columns: groups as written | table decode | the codebreaker&#x27;s gloss).
+356 318 436 143 435                           icoloneli                    | i colonelli
+341 433 436 154                               dellaloro                    | della loro
+252 359 518 253                               sendosi                      | sendosi
+167 252 459 459 253                           conserrsi                    | conservarsi (one group struck through)
+362 318 534 261 536 318 557                   tricometemocol               | di come temo col
+165 245 556 253 252 459                       chepossiser                  | che possi ser...
+165 245 556 253 156 526 445 534 261 459       chepossiamoprometer          | che possiamo prometter
+260 261                                       tate                         | capitate (sono capita-te)
+260 359 263                                   tanto                        | in tanto
+46/46 groups covered by the table</pre></details>
+<h3>R701 p. 1, f. 175, &#x27;Wordes marked with letters in the Venetian Cifer&#x27;</h3>
+<p>The codebreaker&#x27;s heading naming the code &#x27;the Venetian Cifer&#x27; and listing its word groups with superscript endings.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/texts/R701_p1.md">R701_p1.md</a></p><pre># R701 p. 1 (SP 106/10 f. 175): the codebreaker&#x27;s heading and word list (copied verbatim from NOTES.md, 22 Oct 2026)
+
+His heading &quot;Wordes marked with letters in the Venetian Cifer&quot;: 369° nostro, 340° misura(?), 467° questo, 369ᵉ nostre,
+420&#x27; altri, 233ʳ esser, 121ᶜ, 430ᵃ passata (p. 3 belongs to sp106r722, p. 2 is a separate letter cipher, not part of this entry).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/texts/R701_p1.md">R701_p1.md</a></p><pre># R701 p. 1 (SP 106/10 f. 175): the codebreaker&#x27;s heading and word list (copied verbatim from NOTES.md, 22 Oct 2026)
+
+His heading &quot;Wordes marked with letters in the Venetian Cifer&quot;: 369° nostro, 340° misura(?), 467° questo, 369ᵉ nostre,
+420&#x27; altri, 233ʳ esser, 121ᶜ, 430ᵃ passata (p. 3 belongs to sp106r722, p. 2 is a separate letter cipher, not part of this entry).</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sp106box10/cat62/venetian_code.tsv">venetian_code.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/sp106box10.json"></figure>
 <!-- replay:end -->

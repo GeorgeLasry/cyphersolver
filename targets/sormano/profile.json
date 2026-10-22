@@ -214,6 +214,12 @@
    "kind": "reading",
    "what": "f. 123r, the third sheet of no. 63, deciphered with Lasry's key and the KEY.md corrections: seven cipher runs, about 386 of 389 glyphs into Italian (end of the Naples/captaincy passage; postscript: letters from Rome of the 18th report the Pope relapsed, the French cardinals to prepare for a conclave). Three signs before 'ricaduto' give no word. The crossbarred long-s acts as a null here.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per letter, the line-by-line transcriptions with their glyph-level XML and the readings (n63 with the f. 123r sheet); Patel's (arya) separate reading of no. 65's Duke's answer and his clear-text transcriptions; key = KEY.md with the corrections made here, beside Lasry's published table key_lasry3.png.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -280,6 +286,12 @@
     "detail": "read as written they give a e i, no word; not filled from context"
    }
   ],
-  "provenance": "mixed"
+  "provenance": "mixed",
+  "texts": [
+   {"doc": "no65", "label": "No. 65, BnF fr. 3096 ff. 119-120, Sormano and de Vaulx (Passano) to François I, Ferrara, 23 Feb 1529", "transcription": ["n65_transcription.md", "xml/no65.xml"], "decryption": ["n65_reading.md", "arya/ct/read_no65_duke_answer.md"], "summary": "The French envoys at Ferrara to François I on their audience with Alfonso I d'Este, duke of Ferrara, after the reverence to Madama Renée and Don Ercole: the duke refuses to take the kingdom of Naples for himself or the captaincy of the French army, offers only to accept whatever accord the King negotiates for him with the Pope, and pleads the want of provisions; the agents judge his difficulties pretexts and fall back on Ercole and on Trivulzio. arya/ct/read_no65_duke_answer.md is Patel's separate reading of the Duke's answer (f. 119v) with Lasry's key, controlled on the clear twin no. 66."},
+   {"doc": "no66", "label": "No. 66, BnF fr. 3096 ff. 121-122, the 'duplicata' of no. 65, Ferrara, 23 Feb 1529", "transcription": ["n66_transcription.md", "xml/no66.xml"], "decryption": ["n66_reading.md", "arya/ct/clear_texts.md"], "summary": "The independently drafted duplicate of no. 65, which writes in clear many of the passages no. 65 enciphers and the reverse, so that the pair cribs each other; it opens with Gian Gioacchino de Passano's arrival at the lodging of the ambassador Gaspare Sormano. arya/ct/clear_texts.md holds Patel's transcription of the clear passages of nos. 63, 65, 66 and 67."},
+   {"doc": "no63", "label": "No. 63, BnF fr. 3096 ff. 115-116 and 123, Ferrara, 27 Feb 1529", "transcription": ["n63_transcription.md", "xml/no63.xml"], "decryption": ["n63_reading.md", "n63_f123r_reading.md"], "summary": "The follow-up to the duplicate pair of 23 February, the most heavily enciphered of the three; its third sheet f. 123r, bound out of order and dated 'penultimo de Febraro', ends the letter on Naples and the captaincy, and its postscript reports from Rome that the Pope has relapsed, 'sensa speransa di salute', and that the French cardinals should make ready for a conclave."}
+  ],
+  "key_file": ["KEY.md", "key_lasry3.png"]
  }
 }

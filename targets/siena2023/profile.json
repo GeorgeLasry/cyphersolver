@@ -260,6 +260,12 @@
    ],
    "what": "No. 20: the project's independent 24 Sept transcription (project_attempt/no20.tok, agent C, 1,230 tokens, other sign names) aligned with his reading R4808_reading.txt by EM, starting from his key values for the sign names both transcriptions share: 71.1% of our tokens carry the majority letter of their sign (78.6% allowing two letters for signs our names merge). Control, his no. 23 plaintext against the same tokens: 14.8% / 23.0%. Our transcription carries his reading. research/siena2308/verify_lasry.py no20.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per document, George Lasry's CTTS transcription and token files, his reading, edited lines and translation (PR #41) and his report's section (lasry_report.md), and the project's independent 24 Sept transcriptions; key = his working key key.txt, key figure and visual key.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -346,6 +352,11 @@
     "detail": "Occurrence-level verification of the CTTS transcription against the original leaves; the DECODE photographs are the only images and already the basis of George's edition. Selected five-line agreement is not whole-text validation."
    }
   ],
-  "notes": "Credit and class follow George Lasry's consolidated report of 17 Oct 2026 ('both sheets read in full'); PR #41's material (edited lines, five-line mechanical check, visual key, validation) is kept. fraction_read is PR #41's measured key coverage; seven name signs and the subscription of no. 20 stay open."
+  "notes": "Credit and class follow George Lasry's consolidated report of 17 Oct 2026 ('both sheets read in full'); PR #41's material (edited lines, five-line mechanical check, visual key, validation) is kept. fraction_read is PR #41's measured key coverage; seven name signs and the subscription of no. 20 stay open.",
+  "texts": [
+   {"doc": "R4808", "label": "No. 20 (R4808), [Muzio Attendolo Sforza?] to King Ladislaus, Perugia, 30 March [1413] (George Lasry)", "transcription": ["R4808_transcription.txt", "R4808_cipher_tokens.txt", "project_attempt/no20.txt"], "decryption": ["R4808_reading.txt", "R4808_edited_lines.txt", "lasry_report.md"], "translation": "R4808_translation.txt", "summary": "A captain in the king's pay, most probably Muzio Attendolo Sforza, to King Ladislaus of Naples, Perugia, 30 March 1413: an enemy, 'quel traditore de [Paolo Orsini?]', has taken fully 200 horses, and the writer threatens retaliation despite the risk of royal punishment, while promising not to harm the Church's lands, people or livestock. Decryption and translation are George Lasry's (PR #41 edition and his report of 17 Oct 2026); project_attempt/no20.txt is this project's independent 24 Sept transcription, on which his reading was checked."},
+   {"doc": "R4811", "label": "No. 23 (R4811), two memoranda of King Ladislaus's chancery, [mid-April 1413] (George Lasry)", "transcription": ["R4811_transcription.txt", "R4811_cipher_tokens.txt", "project_attempt/no23a.txt", "project_attempt/no23b.txt"], "decryption": ["R4811_reading.txt", "R4811_edited_lines.txt", "lasry_report.md"], "translation": "R4811_translation.txt", "summary": "Two royal memoranda, probably Ladislaus's orders, for Iacobo Spinelo going to the Marche and for Francesco Gattola of Naples going to Tartaglia: the first coordinates the guarding of passes near Ascoli, the Tronto, Arquata and Montemonaco to contain a hostile captain in the Marche and orders the recovery of castles with 140 lances; the second arranges a royal muster at 'Maccione de le Rose' and a payment of 1,000 ducats. Their 4 May date is an arrival deadline. Decryption and translation are George Lasry's; the project_attempt/ files are this project's 24 Sept transcriptions."}
+  ],
+  "key_file": ["key.txt", "key_lasry.jpg", "visual_key.png"]
  }
 }

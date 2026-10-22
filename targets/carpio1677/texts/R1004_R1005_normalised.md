@@ -1,0 +1,16 @@
+<!-- Copied verbatim from NOTES.md ("The two letters DECODE lists as unread"), 22 Oct 2026. The full machine readings are read/R1004.raw.txt and read/R1005.raw.txt. -->
+
+**R1004, Rome, 13 Nov 1677** (normalised, reading confirmed by the faint marginal decipherment):
+
+> … [y al mesmo tiempo devo] lamentarme con V.S. de lo que en todas partes nos persigue nuestra mala fortuna, pues
+> con la llegada del Cardenal de Estrées a Turín se teme alguna gran novedad en Italia; y las cosas de [Flandes] se
+> hallan en el estado que V.S. sabe. Si bien en las materias del Congreso parece debemos suspender el juicio hasta ver
+> lo que resulte del abocamiento del Príncipe de Orange con el Rey de Inglaterra. En los embarazos de esta corte no se
+> me ofrece qué añadir a lo que diré a V.S. en mis antecedentes, sino que, si bien aguardaba este correo las órdenes
+> de S.M., no las he recibido; pero no dudo las traerá el siguiente, pues de Madrid me avisan que habían llegado allá
+> las cartas en que di los primeros avisos sobre estas dependencias.
+
+**R1005, Rome, 20 Nov 1677:**
+
+> … más de que nos tienen con gran cuidado las apariencias y evidentes señales de que la próxima campaña habrá
+> guerra en Milán, pues el Cardenal de Estrées, que está en Turín, no se descuida.

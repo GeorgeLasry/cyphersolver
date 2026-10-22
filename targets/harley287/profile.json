@@ -194,6 +194,12 @@
    "kind": "verification",
    "what": "Reclassified from 'read' (solved) to 'read in part' (solved in part): every run read in sense but the share of cipher tokens read was never measured, and code 42, .7., the Jesuit's surname (f. 71r), one verb (f. 70r) and scattered words stay open. Verification corrected: there is no contemporary decipherment on the leaves; the f. 89 glosses of the sibling letter (R8493) confirm the key values. NOTES gain Remaining gaps and Escalation sections.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): READING.md (readings by DECODE record) and key.tsv; no glyph-level transcription of ff. 70r-72v exists, so the transcriptions point to the DECODE records' images",
+   "result": "partial"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; the reading is word-level only"}, 
@@ -248,6 +254,37 @@
   ],
   "credits": [
     {"who": "contemporary", "role": "verification", "note": "glosses on f. 89 (R8493) confirm the letter values"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "22mar",
+    "label": "R8482-R8483, Lord Cobham to [Walsingham], Ostend, 22 Mar 1587/8 (ff. 70r-v)",
+    "transcription": [
+     "https://de-crypt.org/decrypt-web/RecordsView/8482",
+     "https://de-crypt.org/decrypt-web/RecordsView/8483"
+    ],
+    "decryption": "READING.md",
+    "summary": "Henry Brooke, Lord Cobham, one of Elizabeth's peace commissioners at Ostend in spring 1588, asks that ships be sent to attend on the coast, warns that the garrison is too weak and short of money and victuals, and reports Parma's new ditch from Ghent by Eeclo to Sluys, nearly navigable for his float-boats, and the threat to the town and haven. No sign-level transcription exists: the cipher runs were read word by word from crops of the DECODE images."
+   },
+   {
+    "doc": "middelburg",
+    "label": "R8484, intelligence from Middelburg enclosed (f. 71r)",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/8484",
+    "decryption": "READING.md",
+    "summary": "An enclosed intelligence report in another hand: Grenier's intrigue in clear, then in cipher advice that the ships be well guarded with two or three pinnaces in the channel, and news that a Jesuit (surname read Bastune?) has been sent post into Italy. No sign-level transcription exists."
+   },
+   {
+    "doc": "20mar",
+    "label": "R8485-R8487, Lord Cobham to [Walsingham], Ostend, 20 Mar 1587/8 (ff. 71v-72v)",
+    "transcription": [
+     "https://de-crypt.org/decrypt-web/RecordsView/8485",
+     "https://de-crypt.org/decrypt-web/RecordsView/8486",
+     "https://de-crypt.org/decrypt-web/RecordsView/8487"
+    ],
+    "decryption": "READING.md",
+    "summary": "Cobham reports new companies at Oudenburg and stone and fagots coming by water from Eeclo, suspects an attempt on Ostend and asks to be removed to a safer place; he would think himself unhappy to be a means to conclude an irreligious peace, and argues against handing the prisoners Pigot and Barney over to the States. No sign-level transcription exists."
+   }
+  ],
+  "key_file": "key.tsv"
  }
 }

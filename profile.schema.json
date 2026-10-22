@@ -232,6 +232,7 @@
       "translation": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "summary": {"type": "string", "description": "What the document says, in one to three sentences, with its historical context."},
       "note": {"type": "string"}}}},
+    "texts_withheld": {"type": "string", "description": "Why the full texts are not shown (the owner asked that they not be republished). Exempts the target from the texts check."},
     "key_file": {"description": "The key used, as a file in the target folder, required when outcome.contribution has 'key recovered' or 'key extended or corrected'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
     "notes": {"type": "string"}
    }

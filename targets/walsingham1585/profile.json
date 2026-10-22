@@ -220,7 +220,8 @@
    "kind": "transcription",
    "what": "Second pass on the clear-text gaps of R4840 and R4844 from the DECODE images (clear_gaps_pass2.md): 46 places, 32 read H/C, 8 M, 6 illegible; nine corrections to the working transcriptions (e.g. 'they are all borne under one planett', 'the ffrenche K.'), not yet merged into reading_R4840/R4844.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R4840 and R4844 linked to the working transcriptions with glossed numbers (reading_R48xx.txt) and the second-pass gap readings (clear_gaps_pass2.md); the R4844 sign words and the name-code table copied verbatim from NOTES.md into texts/. Missing: R4838 (28 Jul) and R4839 (7 Aug) were left to CSP Scotland viii nos. 40 and 65 and have no transcription in the folder", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -288,6 +289,11 @@
     "extent": "none",
     "basis": "homophonic sign alphabet with dot/dash nulls; Wotton's interlinear decipherment blotted out on purpose; no key on DECODE or in Tomokiyo, no crib in Wotton's drafts; too short to break"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "R4840", "label": "R4840, Add MS 32657 ff. 163-164, the Court, 21 Aug 1585", "transcription": "reading_R4840.txt", "decryption": ["reading_R4840.txt", "clear_gaps_pass2.md"], "summary": "Walsingham warns Edward Wotton, ambassador to James VI, that the Master of Gray [39] complains of Wotton's coldness and offers proof of his devotion if the banished lords join Maxwell [20] on the Borders, lest the King be carried away from England while the French party grows; Walsingham advises dealing warily with them all. The letter is clear English with a two-digit name code; clear_gaps_pass2.md holds the 14 Oct 2026 gap readings and nine corrections not yet merged."},
+   {"doc": "R4844", "label": "R4844, Add MS 32657 ff. 194-195, the Court, 10 Sep 1585", "transcription": ["reading_R4844.txt", "texts/R4844_sign_words.md"], "decryption": ["reading_R4844.txt", "clear_gaps_pass2.md"], "summary": "Walsingham to Wotton on the articles set down by the Master of Gray, the banished lords and Arran, with about fourteen words in a separate sign alphabet that stay unread (Wotton's interlinear decipherment is blotted out); a postscript says a go-between [23] deals between the King and the Jesuits."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

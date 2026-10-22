@@ -136,6 +136,12 @@
    "kind": "control",
    "what": "Pushed for a fuller reading: all PARES image routes re-tested (max 997x1396, no IIIF); 4-6x sharpened strips read against Galende's sign plate. Isolated words gained; the open letter runs stay ambiguous.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reading_X.md (codes with values, letter runs as read, [..] unread) and the partial sign transcription of copy Y ll. 1-10; no full sign-level transcription exists (PARES resolution)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -173,6 +179,18 @@
   "credits": [
     {"who": "galende", "role": "key or decipherment used", "note": "Cifra general de los Reyes Católicos (Galende 1994), applied unchanged", "date": "1994"},
     {"who": "tomokiyo", "role": "pointer", "note": "named the Galende cipher for PTR 53/69 before the attempt"}
+  ],
+  "texts": [
+   {
+    "doc": "PTR53-69",
+    "label": "Isabella to the Duke of Estrada, Segovia, 20 Aug 1503 (PTR 53/69, copy X collated with Y and Z)",
+    "transcription": [
+     "reading_X.md",
+     "work_Y.md"
+    ],
+    "decryption": "reading_X.md",
+    "summary": "Isabella tells Estrada that the King of France broke the peace in Naples without cause, has sent his power by sea and land to the frontiers of Roussillon and Fuenterrabía, and has opened war in Aragon, Guipúzcoa and Galicia; the King of England is bound by the treaties to help defend what is theirs, and Estrada is to ask for two thousand English foot with ships. About half of the letter-sign runs stay unread at the resolution PARES serves. reading_X.md gives code groups with their values and the letter runs as read; the sign-level transcription exists only for copy Y lines 1-10 (work_Y.md)."
+   }
   ]
  }
 }

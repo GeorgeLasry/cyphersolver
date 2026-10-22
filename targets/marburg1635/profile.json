@@ -157,7 +157,8 @@
    "result": "worked",
    "date": "2026-09-30"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 524 tokens, 21 types, de-1640s order 4: reading -2.212 per letter; random keys -5.481 (z 5.6); key annealed onto shuffled ciphertext best -3.479 (mean -3.55, z 31.6); annealer on the real text -2.179. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 524 tokens, 21 types, de-1640s order 4: reading -2.212 per letter; random keys -5.481 (z 5.6); key annealed onto shuffled ciphertext best -3.479 (mean -3.55, z 31.6); annealer on the real text -2.179. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher_tokens.txt and the sign-by-sign reading_tokens.txt; the normalised reading and the key table copied from NOTES.md to texts/R4500_decryption.md and texts/key.md.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 524, "types": 21, "tokens_per_type": 24.95, "score": -2.212, "nulls": {"random keys": {"n": 200, "mean": -5.481, "sd": 0.58, "max": -4.351, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.55, "sd": 0.042, "max": -3.479, "z": 31.6, "p": 0.1429}}, "power": -2.179, "verdict": "pass", "notes": "claimed per-occurrence score -2.204; polyphony 0.002; 14 unread tokens left out; annealer on the real text from random keys reached -2.179"}, 
   "method": "key recovered from ciphertext-only",
@@ -184,6 +185,19 @@
   "notes": "Report to Hesse-Kassel from a fortress: its needs ('die notturft dieser Vestung') set out to the Emperor and the Elector of Bavaria; writer asks to be held excused.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear gloss on cipher lines 1-4 used as control; fixed two values"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R4500",
+    "label": "R4500, HStAM 4 d Nr. 1218 no. 49",
+    "transcription": "cipher_tokens.txt",
+    "decryption": [
+     "reading_tokens.txt",
+     "texts/R4500_decryption.md"
+    ],
+    "summary": "A German Thirty Years' War letter in the Hesse-Kassel files reporting troop movements in clear, with the last 14 lines in cipher. The writer, an officer or agent on the imperial side writing from a fortress, reports that he has set out the needs of this fortress to the Emperor and to the Elector of Bavaria, so that he may be held excused and not be found wanting in his report."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }

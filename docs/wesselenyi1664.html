@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-record">The record</a><a href="#the-cipher">The cipher</a><a href="#the-reading">The decipherment</a><a href="#method">Method</a><a href="#what-remains-open">What remains open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-record">The record</a><a href="#the-cipher">The cipher</a><a href="#the-reading">The decipherment</a><a href="#method">Method</a><a href="#what-remains-open">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> R674 is one page from the papers of Ferenc Wessel&eacute;nyi, Palatine of Hungary: Latin clear text with sixteen runs of dotted numbers between 3 and 29 and two higher numbers, 60 and 64. DECODE records no decipherment and an unknown recipient, and dates it 1 January 1664, which is only the start of the folder&rsquo;s 1664&ndash;1670 span. A substitution solver with a Latin language model, allowed two numbers per letter, returned readable Latin on every run; the key was then fixed by hand from <em>generalis</em>, <em>tria millia hominum</em> and <em>duo millia peditum</em>. The cipher is the alphabet written backwards, 24 = a down to 3 = x, with extra numbers 25, 26, 28, 29 for a, e, o, u. Among the neighbouring DECODE records, key R672 in the Teleki collection has the same reversed alphabet, which confirms the letters. The page asks the King (&ldquo;praesidium Maiestatis Vestrae&rdquo;) to have the general join the regiments of Heister, Schneidau and Sporck, camp before a place, and make it take an imperial garrison, by force if need be: <q>this very hard nut must at last be cracked</q>. Corrections in the hand show it is Wessel&eacute;nyi&rsquo;s draft or file copy. Of 244 cipher tokens, 241 decrypt to sense (98.8%); open are code 60 (the general) and code 64 (the place), for which no key survives.</div>
 
 <h2 id="the-record"><span class="num">01</span> The record</h2>
@@ -84,6 +84,116 @@
 <li>In the clear text, the first word (<em>Castrorum</em>?), <em>certum</em>(?) and the heading are uncertain readings of the hand. They do not affect the cipher.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R674, MNL OL E 199, Wesselényi&#x27;s Latin draft, c. 1663-64</h3>
+<p>A Latin draft of Ferenc Wesselényi, probably to Leopold I, in the Turkish war of 1663-64: if the Lord General [60] joins the regiments of Heister, Schneidau and Sporck and 2,000 foot are added, &#x27;we&#x27; can camp at [64], which would then more readily accept an imperial garrison; otherwise &#x27;ista nux durissima ... frangi debet&#x27;.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wesselenyi1664/transcription.txt">transcription.txt</a></p><pre># DECODE R674 (MNL OL E 199, 8. pallium 1. 01): cipher runs in order, one run per line.
+# From DECODE transcription DOC_R674_D1892 (EK 2020), checked against the image; b-&gt;6, g-&gt;9, i-&gt;1, o-&gt;0; after &quot;prius&quot; 10 not 20.
+18 20 12 20 8 24 14 16 7 60
+17 24 7 6 26 8 7 12 24 16 21 24 29
+7 9 11 8 15
+6 8 16 25 13 16 14 14 16 24 17 11 13 16 12 5 13 22 11 12 7 6 16 6 5 20 8 20
+7 16 24 21 16 5 12 18 20 8 20 12 6 29 8
+21 29 28 13 16 14 14 16 24 10 20 21 16 6 29 13
+12 28 7 24 21 64 16 12 22 24 7 6 8 16 7
+64
+10 8 20 7 16 21 16 5 13 13 24 16 20 7 6 24 6 16 7 5 20 7 6 8 20 8 20 22 16 10 20 8 20 12 6
+7 10 11 12 6 20 20 6 23 20 12 20 5 11 14 20 24 22 22 20 10 6 24 8 20 12 11 14 14 20 12 6
+24 22 6 16 11 12 16 23 5 7 6 20 13 10 11 8 16 7 11 22 22 24 7 16 11 12 16 12 11 7
+12 29 3
+21 29 8 16 7 7 16 13 24
+19 8 24 12 18 16
+24 23 16 12 21 5 7 16 28
+6 16 13 20 8 20 20 6 19 11 8 13 16 21 24 8 20</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wesselenyi1664/reading.md">reading.md</a></p><pre># R674 — reading
+
+Cipher runs in **bold**, deciphered with the key in `key.py` (reversed alphabet, 24=a … 1=z, vowel homophones 25=a,
+26=e, 28=o, 29=u; the alphabet of DECODE key R672). Clear text transcribed from the image; `(?)` marks a doubtful
+clear-text word. Struck words in ⟦ ⟧. Codes left as [60], [64].
+
+Heading (top centre): &quot;S…zzi&quot; (?), not read with confidence; perhaps a name or &quot;Secreti(?)&quot;.
+
+&gt; Castrorum(?) mutationes etiam necessariae essent, quo facto, si Dominus **Generalis [60]** regimenta Dominorum
+&gt; **Haster, Snaidau** et **Spork** coniungeret, possent ad minimum **tria millia hominum constituere**, quibus
+&gt; **si adiungerentur** adhuc **duo millia peditum**, ut cum illis **nos ad [64] in castris** collo-caremus, quam
+&gt; necessitatem videns **[64]** forte promptius **praesidium Maiestatis Vestrae reciperent**. Quod si vero illud
+&gt; **sponte et benevole acceptare nollent**, extunc de ulterioribus faciendis **actionibus temporis occasioni nos**
+&gt; accommodari ⟦…⟧ debebimus, quia hoc est certum(?), quod ista **nux** ⟦tandem aliquando necessario⟧
+&gt; **durissima** tandem aliquando necessario **frangi** debet. Alioquin non esset bonum, si hoc modo **ab indusio**
+&gt; quoque nostro **timere et formidare** deberemus.
+
+## Translation
+
+&gt; Changes of camp would also be necessary; this done, if the Lord General [60] were to join the regiments of Messrs
+&gt; Heister, Schneidau and Sporck, they could make up at least three thousand men; if two thousand foot were added to
+&gt; them, so that with them we might set ourselves in camp at [64], seeing that necessity [64] would perhaps the more
+&gt; readily receive Your Majesty&#x27;s garrison. But if they would not accept it of their own free will and goodwill,
+&gt; then for the further actions to be taken we shall have to adapt ourselves to the occasion of the time, for this
+&gt; is certain, that this very hard nut must at last, of necessity, be cracked. Otherwise it would not be good if in
+&gt; this way we had to fear and dread even our own shirt.
+
+## Notes on the cipher words
+
+- `hastersnaidau` = Haster + Snaidau: the imperial colonels Heister and Schneidau, spelled by ear. 26 (e) occurs only
+  here; its value is the vowel slot &quot;Be&quot; of R672 and the only reading that gives a name.
+- `spork` is written 7 9 11 8 15: in the reversed alphabet 9 is q and 10 is p; the writer slipped one place (10 is
+  used for p everywhere else: presidium, sponte, acceptare, temporis, peditum).
+- `nux` (12 29 3): 3 = x in R672; &quot;ista nux durissima … frangi debet&quot;, this very hard nut must be cracked.
+- `ab indusio quoque nostro timere`: indusium, an undershirt; afraid even of our own shirt.
+- The writer duplicated `14` in &quot;millia&quot; (line 5) and struck it: a draft.
+
+## Measurement
+
+244 cipher tokens (`python docs/_check_profile.py --measure targets/wesselenyi1664/transcription.txt`). Read as sense: 241
+(all letter tokens, including the slip 9 for p). Unread: code 60 (once), code 64 (twice). 241/244 = 0.988.
+Grades: H 239 (letters on the reversed alphabet confirmed by DECODE key R672 and by sense), M 2 (26=e, once, in
+&quot;Haster&quot;; the slip 9 for p in &quot;Spork&quot;); the 3 code tokens unread.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wesselenyi1664/decode_out.txt">decode_out.txt</a></p><pre>    Stru**? !
+    Casennum? m*lamim*? e*a*? necessarie? efhue? , quo Ra^&#x27;ce o^~
+    di Dominus
+&gt;&gt; generalis[60]    [18 20 12 20 8 24 14 16 7 60]
+    Regimenta
+    Dnoru^&#x27;m
+&gt;&gt; hastersnaidau    [17 24 7 6 26 8 7 12 24 16 21 24 29]
+    et
+&gt;&gt; spork    [7 9 11 8 15]
+    anquing*nt?, R*ssut ad minimum
+&gt;&gt; triamilliahominumconstituere    [6 8 16 25 13 16 14 14 16 24 17 11 13 16 12 5 13 22 11 12 7 6 16 6 5 20 8 20]
+    quibus?
+&gt;&gt; siadiungerentur    [7 16 24 21 16 5 12 18 20 8 20 12 6 29 8]
+    adhuc
+&gt;&gt; duomilliapeditum    [21 29 28 13 16 14 14 16 24 10 20 21 16 6 29 13]
+    ut um illis?
+&gt;&gt; nosad[64]incastris    [12 28 7 24 21 64 16 12 22 24 7 6 8 16 7]
+    collo?
+    caremus , quam necessitate^&#x27;m vidus?
+&gt;&gt; [64]    [64]
+    forte pro*a?
+    priu^&#x27;s
+&gt;&gt; presidiummaiestatisuestrereciperent    [10 8 20 7 16 21 16 5 13 13 24 16 20 7 6 24 6 16 7 5 20 7 6 8 20 8 20 22 16 10 20 8 20 12 6]
+    quod di vero^&#x27;? illud
+&gt;&gt; sponteetbeneuoleacceptarenollent    [7 10 11 12 6 20 20 6 23 20 12 20 5 11 14 20 24 22 22 20 10 6 24 8 20 12 11 14 14 20 12 6]
+    extuno
+    di &#x27; ulterioribu*? faciendis
+&gt;&gt; actionibustemporisoccasioninos    [24 22 6 16 11 12 16 23 5 7 6 20 13 10 11 8 16 7 11 22 22 24 7 16 11 12 16 12 11 7]
+    accommodari? f__e__m__*__i__m__u__s__?
+    dibelimu*? , quia hoc est artum , quod ista
+&gt;&gt; nux    [12 29 3]
+    t__a__n__d___*__m__? a__l__i__q__u__a__n__d__i? m__a__s__s__a__r__i__o__?
+&gt;&gt; durissima    [21 29 8 16 7 7 16 13 24]
+    dand? &#x27; aliquand?
+    necessari &#x27;
+&gt;&gt; frangi    [19 8 24 12 18 16]
+    debe^&#x27;t . alioqui?
+    un? esset bonum, di hoc modo
+&gt;&gt; abindusio    [24 23 16 12 21 5 7 16 28]
+    quoq^&#x27;* nostro?
+&gt;&gt; timereetformidare    [6 16 13 20 8 20 20 6 19 11 8 13 16 21 24 8 20]
+    deberemus .</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/wesselenyi1664/key.py">key.py</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/wesselenyi1664.json"></figure>
 <!-- replay:end -->

@@ -155,6 +155,12 @@
    "what": "Second independent image: BnF microfilm on Gallica (btv1b9060544v, canvases 160-162) used to re-read every unread stretch. f. 93r l4 q-like sign = key's non, ● = che, 'si come non ho mancato in quello che'; l5 14 35 31 38 'hora'. 92r l5 tail, 92r l8 middle, 92v 'la mondeza a me' and 93r l8 code group match the DECODE digits and stay unread. Measured 878 of 923 tokens (95.1%).",
    "result": "worked",
    "date": "2026-09-21"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the three page transcriptions ct_92r/ct_92v/ct_93r and the reading reading.md (clear and deciphered text together)",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -202,6 +208,19 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Nevers's key sheet 'Per Cavare 1590', BnF fr. 3995 f. 64, applied unchanged"},
     {"who": "tomokiyo", "role": "pointer", "note": "listed Nevers cipher no. 35 as used by the Duke of Mantua in 1590, and said the letter can be read with a key"}
+  ],
+  "texts": [
+   {
+    "doc": "f92",
+    "label": "BnF fr. 3979 ff. 92-93, Vincenzo Gonzaga to Nevers, Mantua, 17 Sept 1590",
+    "transcription": [
+     "ct_92r.txt",
+     "ct_92v.txt",
+     "ct_93r.txt"
+    ],
+    "decryption": "reading.md",
+    "summary": "Vincenzo I Gonzaga, Duke of Mantua, writes to his uncle Louis de Gonzague, duc de Nevers: he reports the rumour that Sixtus V was poisoned by the Spaniards, welcomes Henri IV's expected conversion, and assures Nevers (for the King) of his devotion to the French crown against the 'common enemy', a guarded pro-Bourbon declaration of September 1590. Deciphered with Nevers cipher no. 35 (BnF fr. 3995 f. 64)."
+   }
   ]
  }
 }

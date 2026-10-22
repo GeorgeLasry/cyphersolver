@@ -119,9 +119,25 @@
    "kind": "verification",
    "what": "Split under the one-key rule: R17 (Meister no. 40, Morosini's key) moved to morosini1588 with its transcription and decryption; this entry keeps R16 in the F18 key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): TimB's DECODE transcription D1610 and the decryption made here with Lasry's F18 key (key_F18_lasry.txt, DECODE D3105) plus the Meister p. 324 nomenclator (meister324_nomenclator.txt); R15 is Lasry's own decryption on DECODE (D3102) and is not a document of this profile",
+   "result": "worked"
   }
  ],
  "outcome": {
+  "texts": [
+   {
+    "doc": "R16",
+    "label": "R16, Francia 18/2, f. 206r-v, 3 March 1586",
+    "transcription": "R16_transcription_decode.txt",
+    "decryption": "R16_decryption.txt",
+    "summary": "The French clergy's resistance to the papal bull permitting the alienation of church property, 1586: Guise will not let the King sell church property under the bull unless he gets Metz and money, and the clergy's assembly means to appeal to a future council, hoping for the Pope's help."
+   }
+  ],
+  "key_file": ["key_F18_lasry.txt", "meister324_nomenclator.txt"],
   "method": "read with known key",
   "method_basis": "R16 was read with Lasry's F18 key filed on the R15/R16 DECODE records (D3103/D3105); its nomenclator was added from Meister p. 324 no. 2 (Ragazzoni's 1583 Paris key); R15 had already been read by Lasry (2020).",
   "contribution": [

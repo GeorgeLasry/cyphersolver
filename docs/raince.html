@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#key">The key as first transcribed was one column off</a><a href="#pages">pp. 29–31, not ff. 29r, 30v, 31r</a><a href="#reading-method">Reading a microfilm</a><a href="#may">The letter of 13 May 1526</a><a href="#november">The letter of 20 November 1526</a><a href="#open">What remains open</a><a href="#method">Method</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#key">The key as first transcribed was one column off</a><a href="#pages">pp. 29–31, not ff. 29r, 30v, 31r</a><a href="#reading-method">Reading a microfilm</a><a href="#may">The letter of 13 May 1526</a><a href="#november">The letter of 20 November 1526</a><a href="#open">What remains open</a><a href="#method">Method</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Nicolas Raince was the French embassy&rsquo;s secretary at Rome, and BnF fr. 2984 (B&eacute;thune 8509) keeps eight of his despatches of 1526 in cipher.
 Tomokiyo published the key for them in 2020, DECODE holds two of the letters as decrypted, Mignet noted in 1886 that the one letter &ldquo;entirely in cipher&rdquo; has its clear
@@ -213,6 +213,416 @@ the moves is what stops the collapse into a degenerate map that defeats an uncon
 labels in <code>targets/raince/gold/labels.txt</code>, the edited reading in <code>targets/raince/trans/reading_edited.txt</code>, the line-by-line text with each line marked hand or machine in
 <code>targets/raince/trans/reading.txt</code>, and the clear close of 13 May in <code>targets/raince/trans/p31_clear_close.txt</code>.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>BnF fr. 2984 pp. 29-31 (13 May 1526) and p. 105 (20 Nov 1526)</h3>
+<p>The ciphered residue of two letters from Nicolas Raince in Rome to Anne de Montmorency, 13 May and 20 November 1526, about 106 lines unread anywhere found: news of the court, the Castilians and Burgundians after the capitulation, the Pope and the Emperor. Deciphered with Tomokiyo&#x27;s 1526 key as re-measured here (CALIBRATION.md); reading_v3.txt is the latest line-by-line reading (unresolved glyphs marked ?), reading_edited.txt the earlier running French.</p>
+<p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/raince/raince_cipher.txt">raince_cipher.txt</a></p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/raince/gold/labels.txt">labels.txt</a></p><pre># One line per hand-labelled manuscript line: PAGE LINE LABELS
+# LABELS has exactly one character per token, in x order:
+#   a-z = plaintext letter, _ = null, C = the *con* word sign, ? = not resolved.
+# Read off img/idx/&lt;page&gt;_&lt;NN&gt;.png, where every token is boxed and numbered.
+f29r 20 s_quiestoitenlacourtdesavoye___estpartypourveniricy
+f30v 08 _responduaceaquecequonaenvoyedicyetdev_enisepardeu
+f29r 11 etCduictensiuiepourperdrelabeleocca?sion__quilavoi
+f105r 04 icatse_roit__lacause___delatotale_ruinedesamaison_?de
+f30v 02 esbaydeceque?naescriptautrementau?nepardecadepuis_s
+f30v 03 onretouren_son___royaumeetmenaparleplusieursfoismesm
+f30v 04 ?ementqueledictseigneurna?voyequelquepersonaigepourvi
+f30v 05 siter?desapartpouraut?tquemesire_ca?in__avoitfaicte
+f30v 06 ntendreasonretourde?quemondictseigneur?admiral_luyav
+f30v 07 oitdictqueseroitceluy_?quiy?iendroitiaytousiours
+f30v 09 ersled_ictseigneur?e?a??rdepar??nestrebesoing_ausi
+f30v 10 _ledict_mesireca?inyasatisfaictparses__lectres?quiest
+f30v 12 esteacceptedeluyensatisfaction?senestbien?ainctamoyde
+f30v 11 ?tou?tau_tantetquece??nes?sfaictquepourbonrespect_qui?
+f30v 14 ctedisantprendretoutpourlemieul_?bienest?_vraymonsei
+f30v 15 ?_gneurque_??nedesfoysieu????quid?ustcausede??????
+f30v 16 bayretquece_quilavoitfaictsisoudainement????envedey
+f30v 18 coresentoutdeluyil_responditquecetempslaestoitpase
+f30v 19 e?avoiteusdeli?dequoymonseig_neurievousaybienvo?
+f30v 20 luavertirpourcequeia??neuquia??n?esteetsont????enc
+f30v 22 intautrementneicyneavenise_ledict??maf?ictvngdiscour?
+f30v 24 ??ante_ntendreil?_feroyentetaseureroyent?eursesta_???_?
+f30v 28 tilseseroitaseuredeu??leurdoneroit_enno?trelafi????_?
+f31r 10 sfoysescriptdesadvis_quivienentau?imper?iau??parleu
+f31r 22 secretaireouseruiteurdudict_quiestoiticypourluy???????????????????
+f105r 11 tiamaispense_?quel_eschose___s?sent___prinstetlefor
+f105r 13 since?r__emen____til_??estoite?tree?bes??ng?__e?t_faictc?
+f105r 02 ?meetsenfuire_tquee_ncore?s??die??lvi_?feist_?la?race
+f29r 05 adyere?squ?enseraperpetuelememoire_e?quilneceser?
+f29r 23 encoresentre_autreschosesbienlonguementde???????etde
+f29r 13 ereprendrelechemindevalence??acestefinetquil?nevoul???
+f29r 19 da?nsdeu?utroysiourspourse?retourneret????????????????
+f105r 04 icatse_roit__lacause___delatotale_ruinedesamaison_?de
+f31r 21 tun?iourenplaineplacepresdupalaisun?nomepietroanthonio????????
+f31r 07 tpeurcquilneluy?voitparler?causedeque???suspects??
+f31r 08 e____pestequiestau_logis?_?dictluc?ma?stelicte???????
+f31r 13 eesgrantdomaigeentoutesles_?sort??qu?onpou?r???????
+f31r 19 mement??gnoistrebien??personageetsaporteemaiscequ??i?u?
+f31r 23 rops?que?estoitcausedetoutlemalles?n??is??e?ed??ve??u??u?troys?
+f31r 20 lementienvoyme?tra??nctfais??????????????????advertire
+f29r 16 ?o?etquil?serontcausedeladestru?ctiondelapartd?oirfaic
+f29r 24 monseigneuraa??irl?etmachargevousfa?ireatousdeu???se
+f29r 17 ttcapituleravec?pours???li?ranceesontbien???voyedese
+f29r 21 _sila??ort?quelquechosedn??eav?ousensere??adverty___?
+f29r 22 ?mon__s_eig_neu__r?stant__aui?urdhuy_avec?ilmaparle
+f29r 25 shumbles__recommandationsetnestposible?s?monstrerplusa?e
+f30v 13 u??utroisfois_quiau?e?enir?a?r?ome___??????cedesusdi
+f30v 33 aetedonealvi??aceua?de?licyquevng??entilhommeduqu???e?
+f30v 34 eae_francescole_sore___quilavoitenvoye????ers?a??s??
+f30v 17 e?ereavechapou?itcauseroccasionquelonnesaseur?sten?
+f30v 26 se_squiontduvraysemb?a?lesiai?nsifeut?que____??????t?reit
+f30v 27 e?nbesoingnequenon____etluyaybien?i?irespon?u????????????????
+f31r 14 _er_carlesgensludict_sontnuyte?iouraveclesdict__im??ieu??
+f31r 16 ?yaytgranto?ligation?pourlesdommaigesquil??disentledict?avoirs?
+f31r 25 dictamedire_te?sparo?__es??????
+f31r 12 __u_pointdefaultecela?porteetport?_s??????????????????
+f105r 07 ste?laplusgr___a???si???????deetma?icte?la____pre
+f105r 09 ?roieit_etqueq?a?rt???npen_se?roitl?yresp??r?de?
+f105r 17 loitqu?feist?ceq?????????????????????????????????
+f105r 20 etasiquile___st?it?b?encler_quen?rost??t??ct?ede
+f29r 06 iamaisquilnaytdestruictled_ictseigneur?_is?nsv?g
+f29r 07 tasdautresprop????ainsdevert?etmensongess?ilsest???
+f29r 09 ye?ensembles??a?a????ysbourguignomsyaynoy???s???????
+f29r 10 me?s__itrec?u???ecasti??___quil?disent???i???ust??__
+f29r 14 royentquilfeust??sigrant_seigneurlescastiliens?li
+f29r 18 rompre?ngi?ureaestestes?nledicthe?r?adoitpartirde
+f29r 15 ___senta?traireque_l?sdesusdict??sontv?i???cas____et?a??c?
+f29r 12 atdepo?iirpasere?nit?aie___?equesanseul??ilavoitdelib
+f31r 05 cute___dtantqueiaype?ent?are???plusou?re_??ayscu??e???
+f31r 02 rochepresde??v?riteetcest__?????????????????????????????
+f29r 08 deu?bendese????courtde?l?p?ui?adepui????????????????????
+f30v 21 _o?resen????????peudedoubteme?smement?pourcequonnescr?ptp
+f30v 31 _endentbien_tout?ai__ns???
+f30v 25 sanslu?ctdedesp?nceet?leurprou?ict??t?toutplai?dautresc?
+f30v 01 ctio?e_avousfairetous_seruicesetplaisirs?qu_ilest??est
+f29r 03 _ten?eoedu?estret?uta?tura?iredelac?pitulationfai?
+f31r 09 aescript_????croymonseig?neurqu?vre??eucequ?iaya_t??
+f31r 11 ensleferareie_nescaypasoui??????????????????????????
+f105r 10 partdenture?lin???nedetro???it_p??sicy?etquilne?s
+f105r 08 senced?___?queiescrip?isel?????????????????????????sent
+f105r 06 rant___sipron?le??????????????????????????????????????
+f105r 01 ob?ier___iblne_feusti___traincte?nbref???????????????
+f105r 18 faict___qu??????????????????????????????????????????
+f105r 14 el_qu??c?uyt___etqueli?divenien?t?__lperil?a?q?i??e?r
+f30v 35 arl??__asonretour__et?lictavoirsceu?court_toutc?quise
+f30v 23 slesbeaul?????????spartit?que?leurpresent?e__?isantqu?y??
+f31r 17 v?ertpourluyvoula???????????????????????????????????????????</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/raince/trans/reading_v3.txt">reading_v3.txt</a></p><pre># Raince, BnF fr. 2984: the reading of the ciphered residue (v3, 5 Oct 2026)
+
+v3: every one of the 106 lines re-read off the numbered-token images (img/idx/, regenerated
+from fresh Gallica natives) against the measured key, using the machine labels (show.py) as a
+first guess and correcting each against the glyphs. Lines so re-read are marked R. Word signs
+are expanded in brackets: [roy] [pape] [le pape] [l empereur]; [X] = the two-crossbar sign
+(Remaining gaps); [X2] = the four-armed circled cross, not in the key. ? = unresolved.
+Measured with measure_sense.py (period-French lexicon; ?, (?) and bracketed signs count unread).
+
+Each line is given twice: `H` = read glyph by glyph off the microfilm against the
+measured key, one character per segmented token (gold/labels.txt); `M` = the machine
+decode (classifier + period-French 6-gram beam, draft9.txt) for lines not yet read by
+hand, which is right on about 85-90 % of letters and is NOT a reading. `?` = a token
+that did not resolve; word spacing is supplied by a lexicon segmenter and is a reading
+aid, not evidence. Lines run on: a word broken at a line end continues on the next.
+
+
+## p. 29  (13 May 1526, to Montmorency - first ciphered page, lines 11-35)
+
+01 R | e??r ce ? sicy ??? peuent et qu il soit ainsi le ?? ict ?er
+02 R | era ? encores dict (con)me s est bien sceu que ??? est tout cler ???
+03 R | tention du ? estre tout au (con)traire de la capitulation fai
+04 R | cte entre eulx mais qu il luy fera tant de guerre et ? ses ?
+05 R | adherens qu il en sera perpetuelle memoire et qu il ne cessera
+06 R | iamais qu il n ayt destruict ledict seigneur disans(?) ung
+07 R | tas d autres propoz plains de vent et mensonges il s est faict
+08 R | deu? ben des en la court de ??? depuis de partement du ????? ses ??
+09 R | yez ensemble les aragonoys bourguignoms haynoyers et fla
+10 R | mens (con)tre ceulx de castile qu ilz disent ? avoir abuse ??
+11 R | et (con)duict en si vie pour perdre la belle occasion qu il avoi
+12 R | t de pouoir passer en italie et que sans seulx [X] il avoit delib
+13 R | ere prendre le chemin de valence a ceste fin et qu ilz ne vould
+14 R | royent qu il feust [X2] si grant seigneur les castiliens di
+15 R | sent au (con)traire que les dessusdictz sont veillacos et borach
+16 R | os et qu ilz seront cause de la destruction de [l empereur] pour avoir faic
+17 R | t capituler avec [le roy](?) pour sa delivrance et sont bien envoyez de se
+18 R | rompre ung iour ?? est ????? ledict herrera doit partir de
+19 R | dans deux ou troys iours pour s en retourner et lopes hortado
+20 R | s qui estoit en la court de savoye est party pour venir icy
+21 R | s il apporte quelque chose de nouveau vous en serez adverty
+22 R | [X] son seigneur estant auiourdhuy avec ? il m a parle
+23 R | encores entre autres choses bien longuement de vous et de
+24 R | monseigneur ? l admiral [X2] et m a charge vous faire a tous deux se
+25 R | s humbles recommandations et n est possible de se monstrer plus affe
+
+## p. 30  (13 May 1526 - second page, whole)
+
+01 R | ction de vous faire tous seruices et plaisirs [X] qu il est ? l est
+02 R | esbay de ce que [le roy](?) n a escript autrement au [pape] ne par deca depuis s
+03 R | on retour en son royaume et m en a parle plusieurs fois mes m
+04 R | ement que ledict seigneur n a envoye quelque personnaige pour vi
+05 R | siter [le pape] de sa part pour autant que messire capin avoit faict e
+06 R | ntendre a son retour de ? que mondict seigneur l admiral luy av
+07 R | oit dict que seroit celuy ? qui y viendroit iay tousiours
+08 R | respondu a ce que ce qu on a envoye d icy et de venise par deu
+09 R | ers ledict seigneur ????? de par ? n estre besoing aussi
+10 R | ledict messire capin y a satisfaict par ses lectres qui est
+11 R | tout autant et que ce ?? ne s est faict que pour bon respect qui a
+12 R | este accepte de luy en satisfaction et s en est bien plainct a moy de
+13 R | u deux ou trois fois qui avoit deu venir a rome ? respo?? ce dessusdi
+14 R | cte disant prendre tout pour le mieulx ? bien est ? vray monsei
+15 H | ? gneur que ?? ne des foysieu ???? qui d ? ust cause de ??????
+16 R | bayr et que ce qu il avoit faict si soudainement ???? en vedey
+17 R | e????? [l empereur] avec ? pouoit causer occasion que l on ne s asseure et en
+18 R | cores en tout de luy il respondit que ce temps la estoit passe
+19 R | en avoit ?? deli? de quoy monseigneur ie vous ay bien vo
+20 R | lu advertir pour ce que i ay (con)gneu qu ilz ont este et sont [sont] enc
+21 R | ores en quelque peu de doubte mesmement pour ce qu on n escript po
+22 R | int autrement ne icy ne a venise ledict ? m a faict ung discour
+23 R | s les beaulx et larges partiz que [l empereur] leur presente disant que ? ??
+24 R | ? ??? entendre ilz feroyent et asseureroyent leurs estatz
+25 R | sans aucune despence et a leur prouffict et tout plain d autres cho
+26 R | ses qui ont du vraysemblable si ainsi feust que ??? (con)tre ? droit(?)
+27 R | en besoingne que non et luy ay bien ainsi respondu luy disant que ??
+28 R | t il se seroit asseure de eulx leur donneroit ? noistre(?) la fin ???
+29 R | y il tend qui est de les supediter ruiner et de dire ce
+30 R | que dedict [l empereur] n a sceu n yer(?) mais (con)fesse qu ilz le (con)?? ? et en
+31 R | endent bien tout [X2] ains ?
+32 R | [X] mon seigneur iay sceu hyer soir de bon lieu que de mantoue
+33 R | a este donne aduis a ce ua? de [Y] icy que ung gentilhomme du ?????? ???? ?
+34 R | e a francesco ? sore(?) qu il avoit envoye deuers ? a ?????
+35 R | ardi a son retour et a dict avoir sceu en court tout ce qui se
+
+## p. 31  (13 May 1526 - third page, the 25 ciphered lines; the clear close follows in trans/p31_clear_close.txt)
+
+01 R | traicte entre [le pape] ? et [l empereur] et en a dict tant de particularitez qu ? l a approche
+02 R | pres de la verite et c est ceste nuyt passee les dictz de [Y] en ont
+03 R | donne aduis au (con)te de sainct seuerin et (con)seil de ? par la poste et
+04 R | ont despesche ung courier ? a toute diligence a la ?? a c
+05 R | cuted tant que iay peu d en entendre plus outre et ay sceu que l ambassadeur
+06 R | dudict ? a faict entendre de semblable au duc de sesse et
+07 R | pour ce qu il ne luy pouoit parler a cause de quelque suspect de
+08 R | peste qui est au logis dudict duc ? m a este dict qu il le luy
+09 R | a escript ie croy monseigneur qu aurez veu ce qu iay autres
+10 R | foys escript des aduis qui viennent aux imperiaulx par les
+11 R | ?ens le fera ?? ie ne scay pas ou ilz les forgent mais sans
+12 R | point de faulte cela aporte et porte monseigneur ung tres
+13 R | grant dommaige en toutes les sortes qu on pouroit pens
+14 R | er car les gens dudict ? sont nuyt et iour avec les dictz imperiaulx
+15 R | et avec ? et semble selon leurs propos(?) que [roy] ne tiengne que dudict ? et qu il
+16 R | luy ayt grant obligation pour les dommaiges qu ilz disent ledict ? avoir
+17 R | souffert(?) pour luy voulant quasi inferer que le prieur(?) ou ?oire estre son ???
+18 R | ien me suis peu tenir de vous en escripre largement encores que ie croy fermement
+19 R | mement [roy] (con)gnoistre bien le personage et sa portee mais ce que (con)tinuellement
+20 R | ie n voy me (con)trainct faisant mon devoir vous en advertir e
+21 R | t ung iour en plaine place pres du palais ung nomme pietro anthonio thorel(?)
+22 R | secretaire ou seruiteur dudict ? qui estoit icy pour luy me dict en barbe(?) sans p
+23 R | ropoz que [roy] estoit cause de tout le mal de son maistre [X] et que deux ou troys foys
+24 R | il avoit este en voye d estre destruict pour luy et ?? ne scay qui mouvoit(?) ? dessusdict
+25 R | a me dire teles paroles
+
+## p. 105 (20 Nov 1526, to Montmorency - the unglossed lower part)
+
+01 R | obuier qu il ne feust (con)trainct en bref ? abandonner rome
+02 R | et s enfuir et que encores dieu luy feist la grace
+03 R | qu il le peust ? faire sceurement et que son pontif
+04 R | icat seroit la cause de la totale ruine de sa maison ? de
+05 R | s? desirant la mort et parlant de sorte en souspirant
+06 R | rant si profondement qu il n y a si dur cueur qui ne n
+07 R | eust eu la plus gran (con)pasion du monde et m a dict en la pre
+08 R | sence du ? que i escripvise le tout au [roy] et l estat ou il se sent
+09 R | ? ro??it et que quant l on penseroit luy respondre de ?
+10 R | par aduenture l on ne de trouueroit plus icy et qu il neust
+11 R | t iamais pense que les choses eusent prins tele for
+12 R | me et qu on l eust ainsi laisse la ve??e si franchement et
+13 R | sincerement il estoit entre en besoingne et faict c
+14 R | ela qu on scayt et que la ???? uenuent(?) le peril auquel il s est p
+15 R | ouoit procedoit seulement de ce que du coste de dela
+16 R | ne s estoit rompo(?) (con)tre [Y] (con)me l on devoit et qu il enten
+17 R | doit qu on feist i ce que ne voudant(?) faire au ? it este tres mal
+18 R | faict qu on ne l en avoit adverty ouvertement ainsi(?)
+19 R | d ne feust entre si avant et qu on pouoit bien (con)siderer ?
+20 R | et aussi qu il estoit bien cler que n ?rospant(?) du coste de
+21 R | de la (con)tre ledict [Y] il auroit tousiours le moyen n</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/raince/trans/reading_edited.txt">reading_edited.txt</a></p><pre># Nicolas Raince to Anne de Montmorency: the ciphered residue of BnF fr. 2984, read
+
+Read 17 September 2026 off the Gallica microfilm (ark btv1b90598430) with Tomokiyo&#x27;s 1526 key
+as re-measured in CALIBRATION.md. 86 of the 106 lines were read glyph by glyph against
+numbered-token images (gold/labels.txt); the machine decode was used only to scaffold the
+reading, never to fill a gap. Word division and the expansion of abbreviations are editorial.
+
+Conventions
+  …        a stretch that did not resolve; nothing is supplied by conjecture
+  [ ]      letters supplied by the editor where the sense is certain
+  (?)      a reading that fits the glyphs and the sense but is not secure
+  (con)    the *con* word sign; (l&#x27;empereur), (le pape) likewise
+  ·        the unidentified bold double-barred glyph, which always falls at a clause
+           boundary and is probably a point or a fourth null (see NOTES.md)
+  -        a word broken at the end of a line and continued on the next
+
+Lines are numbered within the segmented region, not from the top of the page: p. 29 line 01
+here is line 11 of the leaf (lines 1–10 carry the contemporary gloss and were not segmented).
+
+--------------------------------------------------------------------------------
+p. 29 — 13 May 1526, first ciphered page (lines 11–35 of the leaf)
+--------------------------------------------------------------------------------
+
+03  … de la ca[pi]tulation faicte …
+05  … qu&#x27;en sera perpetuelle memoire, et qu&#x27;il ne cesser[a]
+06  jamais qu&#x27;il n&#x27;ayt destruict ledict seigneur …
+07  … d&#x27;autres propo[s] … ains de vert[u] et mensonges … il s&#x27;est …
+08  … court … depuis …
+09  … ensemble … les bourguignons …
+10  … ont receu … de Castille, qu&#x27;ilz disent …
+11  et (con)duict ensuivie(?) pour perdre la belle occasion qu&#x27;il avoi-
+12  -t … et que sans eul[x] il avoit delib-
+13  -eré prendre le chemin de Valence … à ceste fin, et qu&#x27;il ne voul-
+14  -oyent qu&#x27;il feust … si grant seigneur. Les castilliens li-
+15  -sent(?) au (con)traire que lesdessusdict[z] sont … cas …
+16  … et qu&#x27;il[z] seront cause de la destruction, de la part d&#x27;avoir faic-
+17  -t capituler avec … pour … France(?), et sont bien [en]voyé de se
+18  rompre … Ledict He[rr]er[a](?) doit partir de
+19  dans deux ou troys jours pour s&#x27;en retourner, et …
+20  …s qui estoit en la court de Savoye est party pour venir icy.
+21  Si la … quelque chose de … vous en serez … adverty[z]
+22  · Monseigneur … estant aujourd&#x27;huy avec … il m&#x27;a parlé,
+23  encores, entre autres choses, bien longuement de … et de
+24  monseigneur … et m&#x27;a chargé vous faire … à tous de …
+25  … [tres]humbles recommandations. Et n&#x27;est possible … monstrer plus a[ffe]-
+
+--------------------------------------------------------------------------------
+p. 30 — 13 May 1526, second page (whole)
+--------------------------------------------------------------------------------
+
+01  -ction, et à vous faire tous services et plaisirs · qu&#x27;il est. (L&#x27;empereur) est
+02  esbay de ce que … n&#x27;a escript autrement, aucune(?) part deça, depuis s-
+03  -on retour … en son royaume; et m&#x27;en a parlé plusieurs fois, mesm-
+04  -ement que ledict seigneur n&#x27;a envoyé quelque personaige pour vi-
+05  -siter de sa part, pour autant que messire Ca?in n&#x27;avoit faicte
+06  [faict] entendre, à son retour de …, que mondict seigneur l&#x27;Admiral luy av-
+07  -oit dict que seroit celuy qui y tiendroit. J&#x27;ay tousiours
+08  respondu à ce que ce qu&#x27;on a envoyé d&#x27;icy et de Venise par devers
+09  ledict seigneur … n&#x27;estre besoing aussi.
+10  Ledict messire Ca?in y a satisfaict par ses lettres · qui est
+11  le tout autant, et que ce … n&#x27;est faict que pour bon respect, qui n&#x27;
+12  est accepté de luy en satisfaction; s&#x27;en est bien …aincte à moy de
+13  deux ou trois fois qui a[voit] deu venir à Rome … de l&#x27;espece dessusdi-
+14  -cte, disant prendre tout pour le mieul[x] … Bien est vray, monsei-
+15  -gneur, que … des foys … qui deust cause de …
+16  -bahyr, et que ce qu&#x27;il avoit faict si soudainement … en veu[e] de y-
+17  … avec … pourroit causer occasion que l&#x27;on ne s&#x27;asseure … est en-
+18  -cores en tout de luy. Il respondit que ce temps là n&#x27;estoit pas e-
+19  … avoit eu … de quoy, monseigneur, je vous ay bien vou-
+20  -lu advertir, pour ce que j&#x27;a[y] … esté, et sont … encores
+21  … peu de doubte, mesmement pour ce qu&#x27;on ne s&#x27;escript p-
+22  -oint autrement, ne icy ne à Venise. Ledict … m&#x27;a faict vng discours
+23  … les beaulx … partit … que leur presente … disant que …
+24  … entendre ilz feroyent et asseureroyent leurs estat[z]
+25  sans … de despence, et leur promect … tout plaisir d&#x27;autres cho-
+26  -ses qui ont du vray semblable … ainsi feust que …
+27  en besoing … que non … et luy ay bien … respondu …
+28  …t il se seroit asseuré de … leur doneroit … en nostre …
+31  … endent bien, tout … ains …
+33  a esté donné à … que vng gentilhomme, duquel …
+34  … de France; escolle(?) … qu&#x27;il avoit envoyé …
+35  … à son retour … et ledict avoir sceu … court … tout ce qui se-
+
+--------------------------------------------------------------------------------
+p. 31 — 13 May 1526, third page (25 ciphered lines; the clear close follows,
+       transcribed in trans/p31_clear_close.txt)
+--------------------------------------------------------------------------------
+
+02  … Roche(?) pres de … verité, et c&#x27;est …
+05  … d&#x27;autant que j&#x27;ay peu … plus oultre … ay sceu …
+07  … [ce] qu&#x27;il ne luy [a]voit parler … cause de que … suspects
+08  … la peste qui est au logis … dudict Luc…
+09  a escript … croy, monseigneur, qu&#x27;à v… et ce que j&#x27;ay esté
+10  …s foys escript des advis qui viennent aux imperiaulx par leu[rs]
+11  …ens le fera … ne sçay pas où il …
+12  … point de faulte; cela porte, et port[e] …
+13  … es grant dommaige en toutes les sortes qu&#x27;on pourroit …
+14  …-er, car les gens ludict(?) sont nuyt et jour avec lesdict[z] …
+16  · [il] y ayt grant obligation pour les dommaiges qu&#x27;ilz disent ledict avoir s-
+17  v…ert pour luy voulan[t](?) …
+19  -mement cognoistre bien le personage et sa portee; mais ce qu…
+20  -lement j&#x27;en voy … advertir …
+21  …t un jour, en plaine place pres du palais, un nommé Pietro Anthonio …
+22  secretaire ou serviteur dudict, qui estoit icy pour luy …
+23  propos … quel estoit cause de tout le mal … deux ou trois fois
+25  … dict à me dire telles paroles(?) … est
+
+--------------------------------------------------------------------------------
+p. 105 — 20 November 1526 (the unglossed lower part of the leaf)
+--------------------------------------------------------------------------------
+
+01  … feust … trainct[é] en bref …
+02  …me, et s&#x27;en fuire; et que encores … luy feist … la grace
+03  … qui a … peust … faire s[e]cre[te]ment · et … pontif-
+04  -icat seroit la cause de la totale(?) ruine de sa maison, de-
+06  -rant … si pron…le …
+07  … est la plus gr[ande] … et ma…icte … la … pre-
+08  -sence de … que je escrip[s] … sent
+09  · … et que … l&#x27;on penseroit … y respondre de
+10  part de nature, l&#x27;in… ne de tro[uv]er … icy; et qu&#x27;il ne [e]s-
+11  -t jamais pensé que les choses … prinst, et le for[t]-
+13  sincerement … qu&#x27;il estoit … en besoing … faict
+14  …el que … et que l&#x27;i[n]convenient … peril à qu[oy] …
+17  …loit qu&#x27;il feist … ce q…
+18  faict … qu[e] …
+20  et aussi qu&#x27;il estoit … bien cler que n&#x27;estoit … dicte de
+
+--------------------------------------------------------------------------------
+What the ciphered passages are about
+--------------------------------------------------------------------------------
+
+The 13 May 1526 letter, written nine days before the League of Cognac was signed, reports
+on the Emperor&#x27;s side of the negotiation and on the movement of agents: someone &quot;qui estoit
+en la court de Savoye est party pour venir icy&quot;; the Castilians and &quot;les bourguignons&quot;;
+a plan to &quot;prendre le chemin de Valence&quot;; a capitulation already made, which &quot;il[z] seront
+cause de la destruction … de la part d&#x27;avoir faict capituler&quot;; an agent Herrera(?) who
+&quot;doit partir … dans deux ou troys jours pour s&#x27;en retourner&quot;. Rome&#x27;s own despatches are
+described as going &quot;d&#x27;icy et de Venise par devers ledict seigneur&quot;, and the Emperor &quot;est
+esbay de ce que … n&#x27;a escript autrement&quot;. The Admiral of France is quoted at second hand
+(&quot;mondict seigneur l&#x27;Admiral luy avoit dict que seroit celuy qui y tiendroit&quot;). The plague
+is in Rome (&quot;la peste qui est au logis&quot;), advices reach the Imperials through their own
+people (&quot;des advis qui viennent aux imperiaulx par leurs …&quot;), a named man — Pietro Anthonio,
+secretary or servant of the same — was taken &quot;un jour, en plaine place pres du palais&quot;, and
+there is talk of &quot;grant obligation pour les dommaiges qu&#x27;ilz disent ledict avoir …&quot;.
+The clear close of the same letter, on p. 31, expects Andrea Doria at Civitavecchia within
+a day with six galleys and two brigantines.
+
+The 20 November letter, two months after the Colonna raid on the Vatican, turns on the
+Pope: a pontificate that &quot;seroit la cause de la totale ruine de sa maison&quot; — Clement VII
+and the Medici — with talk of doing something &quot;secretement&quot;, of flight (&quot;s&#x27;en fuire&quot;), of
+&quot;le peril à quoy&quot;, and of what &quot;l&#x27;on penseroit&quot;.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/raince/trans/p31_clear_close.txt">p31_clear_close.txt</a></p><pre># BnF fr. 2984, p. 31 (Gallica view f17, right-hand page), the clear close of Raince&#x27;s
+# letter of 13 May 1526 to Montmorency, below the 25 ciphered lines. Read from the
+# microfilm 17 Sept 2026. Abbreviations expanded in [ ]; ? marks an uncertain word.
+
+Monseigneur, il n&#x27;y a autre pour le pre[se]nt, sinon que l&#x27;on attend aujourd&#x27;huy ou demain
+l&#x27;arrivee de m[essire] Andre Dorye [Andrea Doria] avec six galleres et deux brigantins a
+Civitavech[ia], qui ha fin a la p[rese]nte. Me recommandant treshumblement a v[ost]re
+bonne grace. Sans vouloir oublier, monseig[neu]r, vous f[air]e les recommand[ations]
+tres cordialles de monseig[neu]r le R[everendissi]me de Ro[m]e(?), qui instamment m&#x27;en a
+charge comme celuy qui desire vous faire tout plaisir. Le Roy quand et bien que dict
+m[onsieu]r du p[rese]nt veult en luy escripre (?) il continue que tousio[ur]s, et est plus
+ve?u en luy qu&#x27;en autre de sa dignite et desira (?) que Roy (?) ... assez, et plus des biens
+grans et autres.
+
+Monseig[neu]r, je prie Dieu vous donner tresbonne et longue vie. De Rome, ce xiij[e]
+jo[ur] de may, 15c xxvj.
+
+    V[ost]re treshumble et tresobeissant serviteur,   Nicolas Rainse [Raince]
+
+# Notes
+# - The date &quot;ce xiij jour de may 1526&quot; on the leaf confirms the letter as the 13 May 1526
+#   despatch (catalogue item 7 of the volume).
+# - &quot;m. Andre Dorye ... a Civitavecchia with six galleys and two brigantines, expected today
+#   or tomorrow&quot; is Andrea Doria entering papal service for the League of Cognac; the League
+#   was signed at Cognac nine days later, 22 May 1526.
+# - The last four lines of the close (from &quot;Le Roy quand et bien...&quot;) are cramped and
+#   partly unresolved; they are left with ? rather than guessed.</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/raince.json"></figure>
 <!-- replay:end -->

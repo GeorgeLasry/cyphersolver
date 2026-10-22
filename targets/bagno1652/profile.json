@@ -213,9 +213,26 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 1759 tokens, 65 types, it-cinquecento order 4: reading -1.969 per letter; random keys -3.761 (z 5.9); key annealed onto shuffled ciphertext best -2.677 (mean -2.694, z 79.7); annealer on the real text -1.954. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's contributed CTTS transcription (transcription/all.txt), reading edition, edited rows and automatic key application, English translation, and key.txt; all already in the folder",
+   "result": "worked"
   }
  ],
  "outcome": {
+  "texts": [
+   {
+    "doc": "R5622",
+    "label": "R5622, ff. 6r-7v, Paris, 5 January 1652 (George Lasry's contributed solution)",
+    "transcription": "transcription/all.txt",
+    "decryption": ["reading_edition.txt", "edited/all.txt", "decryption/all.txt"],
+    "translation": "translation_en.txt",
+    "summary": "Written from Paris during the Fronde, the despatch concerns opposition to Cardinal Mazarin's return to France: the Parlement's death sentence and 150,000-livre bounty, threats against Mazarin, and an appeal for papal intervention. The nuncio rejects the Parlement's jurisdiction over a cardinal; a speaker tentatively identified as the Duke of Orléans threatens that Mazarin will be killed in his cardinal's robes unless the pope summons or deprives him."
+   }
+  ],
+  "key_file": "key.txt",
   "validation": {
    "date": "2026-10-20",
    "model": "it-cinquecento",

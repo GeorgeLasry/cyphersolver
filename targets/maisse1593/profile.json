@@ -171,6 +171,12 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from maisse1592, which had joined ff. 370/373 (Maisse's Cipher of 1592) with ff. 406/410 (Maisse's Cipher of 1592-93, the Breves cipher). This profile keeps ff. 406 and 410 (Maisse's Cipher of 1592-93) only.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no transcription or decryption of ff. 406/410 exists in the repository (the text was read from the Brienne 13 clear copies, not transcribed); entries link the Gallica images of the cipher leaves (and twin f. 404) and of the Brienne copies.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -210,6 +216,25 @@
     "role": "identification",
     "note": "assigned ff. 406 and 410 to Maisse's Cipher (1592-1593) and published its key (henryiv_Maisse2.png), not applied here",
     "source": "cryptiana Henri IV page"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f406",
+    "label": "f. 406 (twin f. 404), Chartres, 8 Feb 1593 (not transcribed; images only)",
+    "transcription": [
+     "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f457.item",
+     "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f455.item"
+    ],
+    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f176.item",
+    "summary": "Henri IV to Maisse at Venice: the King has answered every despatch and docketed the dates so Maisse can tell what is lost; the Spanish insolence and the Pope; Pisany and Cardinal Gondi should not leave Rome, since their entry among those of the League could breed division. The leaf, its twin f. 404 (partial interlinear decipherment) and the Brienne 13 fol. 171r clear copy are not transcribed in this repository; the links are to the Gallica images."
+   },
+   {
+    "doc": "f410",
+    "label": "f. 410 (twin f. 412), Mantes, 27 Apr 1593 (not transcribed; images only)",
+    "transcription": "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f461.item",
+    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f199.item",
+    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar, notes that the duc de Nevers held one courier in Champagne, assures Maisse that his absence will cost him nothing in the King's favour, and says experience has proved his long-standing judgement of the affairs of Rome right. Neither the leaf nor its Brienne 13 fol. 193v clear copy is transcribed in this repository; the links are to the Gallica images."
    }
   ]
  }

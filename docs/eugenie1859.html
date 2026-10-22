@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF NAF 11355 &middot; Emperor–Empress code</td></tr>
@@ -95,6 +95,665 @@
 <li>Notes: 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r.</li>
 </ul>
 <p><b>Independent verification and Lasry&rsquo;s answer.</b> Jozef Krajčovič re-read f9r, f15r, f17r and f18r by hand and applied the key (<a href="https://github.com/dbourdeau/cyphersolver/issues/39" rel="noopener">issue #39</a>); his readings agree in the passages he checked, and he showed that f21r&ndash;v (Emperor to the War Ministry) uses another nomenclator. George Lasry answered his proposed token corrections on 22 October 2026: five of them (f9r 1193, f18r 1265, f15r 1155, f17r 889 and 355) were already in his transcription, and the others do not stand on the image (f9r 459 = <i>es</i> and 1210 = <i>sort</i>; f17r line 2 begins 151 = <i>bataille</i>, so the passage reads <i>nous esp&eacute;rons une bataille sur Chiese</i>). His key and transcription are unchanged; his token streams for the four pages are in the working folder.</p>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s tokens and values, ff. 9r, 15r, 17r, 18r</h3>
+<p>Lasry&#x27;s token transcription and values for the four pages Jozef Krajčovič checked (issue #39), sent by Lasry in answer to it.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/lasry_tokens_f9_f15_f17_f18.tsv">lasry_tokens_f9_f15_f17_f18.tsv</a></p><pre>folio	pdf_page	line	ordinal	code	value	confidence
+f9r	25	1	1	432	en	high
+f9r	25	1	2	1210	sort	high
+f9r	25	1	3	85	ant	high
+f9r	25	1	4	126	avec	high
+f9r	25	1	5	708	le	high
+f9r	25	1	6	1132	roi	probable_contextual_primary_checked
+f9r	25	2	7	1290	tous	medium
+f9r	25	2	8	717	les	high
+f9r	25	2	9	996	pre	medium
+f9r	25	2	10	1304	tres	high
+f9r	25	2	11	773	me	high
+f9r	25	2	12	890	ont	high
+f9r	25	2	13	142	bai	medium
+f9r	25	3	14	1162	se	high_contextual_primary_checked
+f9r	25	3	15	717	les	high
+f9r	25	3	16	751?	main	high
+f9r	25	3	17	717?	les	high
+f9r	25	3	18	515	fe	medium
+f9r	25	3	19	747	m	medium
+f9r	25	3	20	787	mes	medium
+f9r	25	4	21	1162	se	high_contextual_primary_checked
+f9r	25	4	22	54	age	medium
+f9r	25	4	23	848	no	medium
+f9r	25	4	24	1318	u	medium
+f9r	25	4	25	621	il	high
+f9r	25	4	26	704	lai	medium
+f9r	25	4	27	717	les	high
+f9r	25	5	28	598	hommes	medium
+f9r	25	5	29	479	etait	probable_contextual_primary_checked
+f9r	25	5	30	494	ex	medium
+f9r	25	5	31	65	al	medium
+f9r	25	5	32	1261	tes	high
+f9r	25	5	33	114	au	high
+f9r	25	5	34	337	del	high
+f9r	25	6	35	30	a	high
+f9r	25	6	36	323	de	high
+f9r	25	6	37	1294	toute	medium
+f9r	25	6	38	501	expr	medium
+f9r	25	6	39	459	es	medium
+f9r	25	6	40	1193	sion	medium
+f9r	25	6	41	1291	tous les	medium
+f9r	25	7	42	1311	troupes	medium
+f9r	25	7	43	479	etait	probable_contextual_primary_checked
+f9r	25	7	44	297	cou	high
+f9r	25	7	45	1346	ver	high
+f9r	25	7	46	1261	tes	high
+f9r	25	7	47	323	de	high
+f9r	25	7	48	524	fleurs	medium
+f9r	25	8	49	485	?	unverified_transcription
+f9r	25	8	50	753	mais	high
+f9r	25	8	51	858	nous	high
+f9r	25	8	52	135	avons	high
+f9r	25	8	53	324	de la	probable_contextual_primary_checked
+f9r	25	8	54	933	peine	high_lexical_source_checked
+f9r	25	8	55	30	a	high
+f9r	25	9	56	1312	trouv	high
+f9r	25	9	57	453	er	high
+f9r	25	9	58	398	du	high
+f9r	25	9	59	910	pain	high
+f15r	37	1	1	702	la	high
+f15r	37	1	2	102	armee	high
+f15r	37	1	3	116	aura	medium
+f15r	37	1	4	927	passé	supported_structural_context
+f15r	37	1	5	115	aujourd’hui	supported_structural_context
+f15r	37	1	6	708	le	high
+f15r	37	1	7	868	o	high
+f15r	37	2	8	548	g	high
+f15r	37	2	9	721	li	high
+f15r	37	2	10	868	o	high
+f15r	37	2	11	1155	sans	high
+f15r	37	2	12	1113	res	high
+f15r	37	2	13	660	is	high
+f15r	37	2	14	1244	tan	high_contextual
+f15r	37	3	15	199	ce	high
+f15r	37	3	16	858	nous	high
+f15r	37	3	17	1226	sui	high
+f15r	37	3	18	1376	vons	high
+f15r	37	3	19	702	la	high
+f15r	37	3	20	102	armee	high
+f15r	37	3	21	329z	Autrichien	assumed
+f15r	37	4	22	926	pas	high
+f15r	37	4	23	30	a	high
+f15r	37	4	24	926	pas	high
+f15r	37	4	25	677	je	high
+f15r	37	4	26	1074	re	high
+f15r	37	4	27	310	?	unverified_transcription
+f15r	37	4	28	925	?	unverified_transcription
+f15r	37	5	29	357	des	high
+f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	31	708	le	high
+f15r	37	5	32	81	?	unverified_transcription
+f15r	37	5	33	1099	?	unverified_transcription
+f15r	37	5	34	123	?	unverified_transcription
+f15r	37	5	35	495	?	unverified_transcription
+f15r	37	6	36	656	?	unverified_transcription
+f15r	37	6	37	257	?	unverified_transcription
+f15r	37	6	38	914	par	medium
+f15r	37	6	39	439	ennemi	high
+f17r	41	1	1	858	nous	high
+f17r	41	1	2	462	esp	high
+f17r	41	1	3	457	er	high
+f17r	41	1	4	889	ons	high
+f17r	41	1	5	1325	une	probable_contextual_primary_checked
+f17r	41	2	6	151	bataille	medium
+f17r	41	2	7	1232	sur	medium
+f17r	41	2	8	233	chi	medium
+f17r	41	2	9	402	e	medium
+f17r	41	2	10	1162	se	high_contextual_primary_checked
+f17r	41	3	11	753	mais	high
+f17r	41	3	12	708	le	high
+f17r	41	3	13	439	ennemi	high
+f17r	41	3	14	916	parait	high
+f17r	41	3	15	332	deci	high
+f17r	41	3	16	323	de	high
+f17r	41	4	17	783	ment	high
+f17r	41	4	18	1162	se	high_contextual_primary_checked
+f17r	41	4	19	1074	re	high
+f17r	41	4	20	1275	tir	high
+f17r	41	4	21	453	er	high
+f17r	41	4	22	355	der	high
+f17r	41	5	23	1127	rie	high
+f17r	41	5	24	1074	re	high
+f17r	41	5	25	708	le	high
+f17r	41	5	26	796	min	high
+f17r	41	5	27	237	ci	high
+f17r	41	5	28	868	o	high
+f18r	43	1	1	1187	si	high
+f18r	43	1	2	717	les	high
+f18r	43	1	3	329z	Autrichien	assumed
+f18r	43	1	4	335	defend	high
+f18r	43	1	5	1135	ront	high
+f18r	43	1	6	717	les	high
+f18r	43	1	7	978	posi	high
+f18r	43	1	8	1274	tions	high
+f18r	43	2	9	323	de	high
+f18r	43	2	10	732	lo	high
+f18r	43	2	11	826	na	high
+f18r	43	2	12	1278	to	high
+f18r	43	2	13	465	et	high
+f18r	43	2	14	323	de	high
+f18r	43	2	15	195	cas	high
+f18r	43	2	16	1265	ti	high
+f18r	43	3	17	563	gl	high
+f18r	43	3	18	608	i	high
+f18r	43	3	19	888	on	high</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/lasry_tokens_f9_f15_f17_f18.tsv">lasry_tokens_f9_f15_f17_f18.tsv</a></p><pre>folio	pdf_page	line	ordinal	code	value	confidence
+f9r	25	1	1	432	en	high
+f9r	25	1	2	1210	sort	high
+f9r	25	1	3	85	ant	high
+f9r	25	1	4	126	avec	high
+f9r	25	1	5	708	le	high
+f9r	25	1	6	1132	roi	probable_contextual_primary_checked
+f9r	25	2	7	1290	tous	medium
+f9r	25	2	8	717	les	high
+f9r	25	2	9	996	pre	medium
+f9r	25	2	10	1304	tres	high
+f9r	25	2	11	773	me	high
+f9r	25	2	12	890	ont	high
+f9r	25	2	13	142	bai	medium
+f9r	25	3	14	1162	se	high_contextual_primary_checked
+f9r	25	3	15	717	les	high
+f9r	25	3	16	751?	main	high
+f9r	25	3	17	717?	les	high
+f9r	25	3	18	515	fe	medium
+f9r	25	3	19	747	m	medium
+f9r	25	3	20	787	mes	medium
+f9r	25	4	21	1162	se	high_contextual_primary_checked
+f9r	25	4	22	54	age	medium
+f9r	25	4	23	848	no	medium
+f9r	25	4	24	1318	u	medium
+f9r	25	4	25	621	il	high
+f9r	25	4	26	704	lai	medium
+f9r	25	4	27	717	les	high
+f9r	25	5	28	598	hommes	medium
+f9r	25	5	29	479	etait	probable_contextual_primary_checked
+f9r	25	5	30	494	ex	medium
+f9r	25	5	31	65	al	medium
+f9r	25	5	32	1261	tes	high
+f9r	25	5	33	114	au	high
+f9r	25	5	34	337	del	high
+f9r	25	6	35	30	a	high
+f9r	25	6	36	323	de	high
+f9r	25	6	37	1294	toute	medium
+f9r	25	6	38	501	expr	medium
+f9r	25	6	39	459	es	medium
+f9r	25	6	40	1193	sion	medium
+f9r	25	6	41	1291	tous les	medium
+f9r	25	7	42	1311	troupes	medium
+f9r	25	7	43	479	etait	probable_contextual_primary_checked
+f9r	25	7	44	297	cou	high
+f9r	25	7	45	1346	ver	high
+f9r	25	7	46	1261	tes	high
+f9r	25	7	47	323	de	high
+f9r	25	7	48	524	fleurs	medium
+f9r	25	8	49	485	?	unverified_transcription
+f9r	25	8	50	753	mais	high
+f9r	25	8	51	858	nous	high
+f9r	25	8	52	135	avons	high
+f9r	25	8	53	324	de la	probable_contextual_primary_checked
+f9r	25	8	54	933	peine	high_lexical_source_checked
+f9r	25	8	55	30	a	high
+f9r	25	9	56	1312	trouv	high
+f9r	25	9	57	453	er	high
+f9r	25	9	58	398	du	high
+f9r	25	9	59	910	pain	high
+f15r	37	1	1	702	la	high
+f15r	37	1	2	102	armee	high
+f15r	37	1	3	116	aura	medium
+f15r	37	1	4	927	passé	supported_structural_context
+f15r	37	1	5	115	aujourd’hui	supported_structural_context
+f15r	37	1	6	708	le	high
+f15r	37	1	7	868	o	high
+f15r	37	2	8	548	g	high
+f15r	37	2	9	721	li	high
+f15r	37	2	10	868	o	high
+f15r	37	2	11	1155	sans	high
+f15r	37	2	12	1113	res	high
+f15r	37	2	13	660	is	high
+f15r	37	2	14	1244	tan	high_contextual
+f15r	37	3	15	199	ce	high
+f15r	37	3	16	858	nous	high
+f15r	37	3	17	1226	sui	high
+f15r	37	3	18	1376	vons	high
+f15r	37	3	19	702	la	high
+f15r	37	3	20	102	armee	high
+f15r	37	3	21	329z	Autrichien	assumed
+f15r	37	4	22	926	pas	high
+f15r	37	4	23	30	a	high
+f15r	37	4	24	926	pas	high
+f15r	37	4	25	677	je	high
+f15r	37	4	26	1074	re	high
+f15r	37	4	27	310	?	unverified_transcription
+f15r	37	4	28	925	?	unverified_transcription
+f15r	37	5	29	357	des	high
+f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	31	708	le	high
+f15r	37	5	32	81	?	unverified_transcription
+f15r	37	5	33	1099	?	unverified_transcription
+f15r	37	5	34	123	?	unverified_transcription
+f15r	37	5	35	495	?	unverified_transcription
+f15r	37	6	36	656	?	unverified_transcription
+f15r	37	6	37	257	?	unverified_transcription
+f15r	37	6	38	914	par	medium
+f15r	37	6	39	439	ennemi	high
+f17r	41	1	1	858	nous	high
+f17r	41	1	2	462	esp	high
+f17r	41	1	3	457	er	high
+f17r	41	1	4	889	ons	high
+f17r	41	1	5	1325	une	probable_contextual_primary_checked
+f17r	41	2	6	151	bataille	medium
+f17r	41	2	7	1232	sur	medium
+f17r	41	2	8	233	chi	medium
+f17r	41	2	9	402	e	medium
+f17r	41	2	10	1162	se	high_contextual_primary_checked
+f17r	41	3	11	753	mais	high
+f17r	41	3	12	708	le	high
+f17r	41	3	13	439	ennemi	high
+f17r	41	3	14	916	parait	high
+f17r	41	3	15	332	deci	high
+f17r	41	3	16	323	de	high
+f17r	41	4	17	783	ment	high
+f17r	41	4	18	1162	se	high_contextual_primary_checked
+f17r	41	4	19	1074	re	high
+f17r	41	4	20	1275	tir	high
+f17r	41	4	21	453	er	high
+f17r	41	4	22	355	der	high
+f17r	41	5	23	1127	rie	high
+f17r	41	5	24	1074	re	high
+f17r	41	5	25	708	le	high
+f17r	41	5	26	796	min	high
+f17r	41	5	27	237	ci	high
+f17r	41	5	28	868	o	high
+f18r	43	1	1	1187	si	high
+f18r	43	1	2	717	les	high
+f18r	43	1	3	329z	Autrichien	assumed
+f18r	43	1	4	335	defend	high
+f18r	43	1	5	1135	ront	high
+f18r	43	1	6	717	les	high
+f18r	43	1	7	978	posi	high
+f18r	43	1	8	1274	tions	high
+f18r	43	2	9	323	de	high
+f18r	43	2	10	732	lo	high
+f18r	43	2	11	826	na	high
+f18r	43	2	12	1278	to	high
+f18r	43	2	13	465	et	high
+f18r	43	2	14	323	de	high
+f18r	43	2	15	195	cas	high
+f18r	43	2	16	1265	ti	high
+f18r	43	3	17	563	gl	high
+f18r	43	3	18	608	i	high
+f18r	43	3	19	888	on	high</pre></details>
+<h3>Lasry&#x27;s report: decipherment excerpts and translations</h3>
+<p>Napoleon III to the Empress and back, June 1859: his policy toward the Pope, criticism of diplomatic speculation, reports from the Italian campaign, and family news. Excerpts from Lasry&#x27;s report of 10 Oct 2026; the full 15-page transcription and decryption are his and not yet in the repository.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/lasry_tokens_f9_f15_f17_f18.tsv">lasry_tokens_f9_f15_f17_f18.tsv</a></p><pre>folio	pdf_page	line	ordinal	code	value	confidence
+f9r	25	1	1	432	en	high
+f9r	25	1	2	1210	sort	high
+f9r	25	1	3	85	ant	high
+f9r	25	1	4	126	avec	high
+f9r	25	1	5	708	le	high
+f9r	25	1	6	1132	roi	probable_contextual_primary_checked
+f9r	25	2	7	1290	tous	medium
+f9r	25	2	8	717	les	high
+f9r	25	2	9	996	pre	medium
+f9r	25	2	10	1304	tres	high
+f9r	25	2	11	773	me	high
+f9r	25	2	12	890	ont	high
+f9r	25	2	13	142	bai	medium
+f9r	25	3	14	1162	se	high_contextual_primary_checked
+f9r	25	3	15	717	les	high
+f9r	25	3	16	751?	main	high
+f9r	25	3	17	717?	les	high
+f9r	25	3	18	515	fe	medium
+f9r	25	3	19	747	m	medium
+f9r	25	3	20	787	mes	medium
+f9r	25	4	21	1162	se	high_contextual_primary_checked
+f9r	25	4	22	54	age	medium
+f9r	25	4	23	848	no	medium
+f9r	25	4	24	1318	u	medium
+f9r	25	4	25	621	il	high
+f9r	25	4	26	704	lai	medium
+f9r	25	4	27	717	les	high
+f9r	25	5	28	598	hommes	medium
+f9r	25	5	29	479	etait	probable_contextual_primary_checked
+f9r	25	5	30	494	ex	medium
+f9r	25	5	31	65	al	medium
+f9r	25	5	32	1261	tes	high
+f9r	25	5	33	114	au	high
+f9r	25	5	34	337	del	high
+f9r	25	6	35	30	a	high
+f9r	25	6	36	323	de	high
+f9r	25	6	37	1294	toute	medium
+f9r	25	6	38	501	expr	medium
+f9r	25	6	39	459	es	medium
+f9r	25	6	40	1193	sion	medium
+f9r	25	6	41	1291	tous les	medium
+f9r	25	7	42	1311	troupes	medium
+f9r	25	7	43	479	etait	probable_contextual_primary_checked
+f9r	25	7	44	297	cou	high
+f9r	25	7	45	1346	ver	high
+f9r	25	7	46	1261	tes	high
+f9r	25	7	47	323	de	high
+f9r	25	7	48	524	fleurs	medium
+f9r	25	8	49	485	?	unverified_transcription
+f9r	25	8	50	753	mais	high
+f9r	25	8	51	858	nous	high
+f9r	25	8	52	135	avons	high
+f9r	25	8	53	324	de la	probable_contextual_primary_checked
+f9r	25	8	54	933	peine	high_lexical_source_checked
+f9r	25	8	55	30	a	high
+f9r	25	9	56	1312	trouv	high
+f9r	25	9	57	453	er	high
+f9r	25	9	58	398	du	high
+f9r	25	9	59	910	pain	high
+f15r	37	1	1	702	la	high
+f15r	37	1	2	102	armee	high
+f15r	37	1	3	116	aura	medium
+f15r	37	1	4	927	passé	supported_structural_context
+f15r	37	1	5	115	aujourd’hui	supported_structural_context
+f15r	37	1	6	708	le	high
+f15r	37	1	7	868	o	high
+f15r	37	2	8	548	g	high
+f15r	37	2	9	721	li	high
+f15r	37	2	10	868	o	high
+f15r	37	2	11	1155	sans	high
+f15r	37	2	12	1113	res	high
+f15r	37	2	13	660	is	high
+f15r	37	2	14	1244	tan	high_contextual
+f15r	37	3	15	199	ce	high
+f15r	37	3	16	858	nous	high
+f15r	37	3	17	1226	sui	high
+f15r	37	3	18	1376	vons	high
+f15r	37	3	19	702	la	high
+f15r	37	3	20	102	armee	high
+f15r	37	3	21	329z	Autrichien	assumed
+f15r	37	4	22	926	pas	high
+f15r	37	4	23	30	a	high
+f15r	37	4	24	926	pas	high
+f15r	37	4	25	677	je	high
+f15r	37	4	26	1074	re	high
+f15r	37	4	27	310	?	unverified_transcription
+f15r	37	4	28	925	?	unverified_transcription
+f15r	37	5	29	357	des	high
+f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	31	708	le	high
+f15r	37	5	32	81	?	unverified_transcription
+f15r	37	5	33	1099	?	unverified_transcription
+f15r	37	5	34	123	?	unverified_transcription
+f15r	37	5	35	495	?	unverified_transcription
+f15r	37	6	36	656	?	unverified_transcription
+f15r	37	6	37	257	?	unverified_transcription
+f15r	37	6	38	914	par	medium
+f15r	37	6	39	439	ennemi	high
+f17r	41	1	1	858	nous	high
+f17r	41	1	2	462	esp	high
+f17r	41	1	3	457	er	high
+f17r	41	1	4	889	ons	high
+f17r	41	1	5	1325	une	probable_contextual_primary_checked
+f17r	41	2	6	151	bataille	medium
+f17r	41	2	7	1232	sur	medium
+f17r	41	2	8	233	chi	medium
+f17r	41	2	9	402	e	medium
+f17r	41	2	10	1162	se	high_contextual_primary_checked
+f17r	41	3	11	753	mais	high
+f17r	41	3	12	708	le	high
+f17r	41	3	13	439	ennemi	high
+f17r	41	3	14	916	parait	high
+f17r	41	3	15	332	deci	high
+f17r	41	3	16	323	de	high
+f17r	41	4	17	783	ment	high
+f17r	41	4	18	1162	se	high_contextual_primary_checked
+f17r	41	4	19	1074	re	high
+f17r	41	4	20	1275	tir	high
+f17r	41	4	21	453	er	high
+f17r	41	4	22	355	der	high
+f17r	41	5	23	1127	rie	high
+f17r	41	5	24	1074	re	high
+f17r	41	5	25	708	le	high
+f17r	41	5	26	796	min	high
+f17r	41	5	27	237	ci	high
+f17r	41	5	28	868	o	high
+f18r	43	1	1	1187	si	high
+f18r	43	1	2	717	les	high
+f18r	43	1	3	329z	Autrichien	assumed
+f18r	43	1	4	335	defend	high
+f18r	43	1	5	1135	ront	high
+f18r	43	1	6	717	les	high
+f18r	43	1	7	978	posi	high
+f18r	43	1	8	1274	tions	high
+f18r	43	2	9	323	de	high
+f18r	43	2	10	732	lo	high
+f18r	43	2	11	826	na	high
+f18r	43	2	12	1278	to	high
+f18r	43	2	13	465	et	high
+f18r	43	2	14	323	de	high
+f18r	43	2	15	195	cas	high
+f18r	43	2	16	1265	ti	high
+f18r	43	3	17	563	gl	high
+f18r	43	3	18	608	i	high
+f18r	43	3	19	888	on	high</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/texts/eugenie1859_decryption_lasry_excerpts.md">eugenie1859_decryption_lasry_excerpts.md</a></p><pre># NAF 11355, June 1859: George Lasry&#x27;s decipherment, the excerpts in his report
+
+Copied verbatim from `lasry_entry.md` (PDF pages 28-30 of George Lasry, &quot;BnF cipher research&quot;, 10 Oct 2026, with ChatGPT Astra 6 and Anthropic Opus 5.5). These are the only parts of his decipherment in the repository: the report gives excerpts of ff. 19r, 35r and 27r, not the full decryption of the eleven cipher pages, and his token transcription and key table are not in the repository (two key images of the report are in `docs/eugenie1859_lasry_p026_1.png` and `_p027_2.png`). Jozef Krajčovič&#x27;s proposed token corrections are in `eugenie1859_corrections_krajcovic.md`, beside this file.
+
+```text
+
+--- PDF page 28
+Excerpt and Translation
+Excerpt
+f19r — the Pope and diplomacy
+Je suis bien peiné au milieu de mes travaux d’avoir à répondre à toutes les sotte[s] suppositions de
+la diplomatie. Je maintiens le pape à Rome avec mon armée. Je ne me mêle en rien du reste de
+ses États.
+Translation
+I am very distressed, amid my work, to have to answer all the foolish suppositions of diplomacy. I keep the
+Pope in Rome with my army. I do not interfere in any way with the rest of his States.
+BnF cipher research
+28 / 134
+
+--- PDF page 29
+Excerpt
+f35r — the battle and the Austrian emperor’s room
+Impossible de donner des détails sur la bataille d’hier. Tout [le] monde était mort de fatigue. L’ennemi
+s’est retiré cette nuit. J’ignore le nombre précis de canons, de drapeaux et de prisonniers. J’ai couché
+cette nuit dans la chambre où l’Empereur d’Autriche a déjeuné hier matin. Niel est nommé Maréchal. La
+bataille prendra le nom de Solférino.
+Translation
+It is impossible to give details of yesterday’s battle. Everyone was dead tired; the enemy withdrew during the
+night. I do not know the exact number of cannon, flags and prisoners. I slept last night in the room where the
+Emperor of Austria had breakfast yesterday morning. Niel has been appointed Marshal. The battle will be
+named Solferino.
+BnF cipher research
+29 / 134
+
+--- PDF page 30
+Excerpt
+f27r — Eugénie’s message
+Je suis désolée de vous avoir fait de la peine, ce n’était? pas mon intention. Ne vous inquiétez
+pas du petit, il va à merveille. J’écris aujourd’hui par la poste.
+Translation
+I am sorry to have caused you sorrow; that was not? my intention. Do not worry about the little one; he is
+doing wonderfully. I am writing today by post.
+BnF cipher research
+30 / 134
+```</pre></details>
+<h3>Jozef Krajčovič&#x27;s proposed token corrections (issue #39)</h3>
+<p>The corrections Krajčovič proposed, to be read against Lasry&#x27;s tokens and his answer in NOTES.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/lasry_tokens_f9_f15_f17_f18.tsv">lasry_tokens_f9_f15_f17_f18.tsv</a></p><pre>folio	pdf_page	line	ordinal	code	value	confidence
+f9r	25	1	1	432	en	high
+f9r	25	1	2	1210	sort	high
+f9r	25	1	3	85	ant	high
+f9r	25	1	4	126	avec	high
+f9r	25	1	5	708	le	high
+f9r	25	1	6	1132	roi	probable_contextual_primary_checked
+f9r	25	2	7	1290	tous	medium
+f9r	25	2	8	717	les	high
+f9r	25	2	9	996	pre	medium
+f9r	25	2	10	1304	tres	high
+f9r	25	2	11	773	me	high
+f9r	25	2	12	890	ont	high
+f9r	25	2	13	142	bai	medium
+f9r	25	3	14	1162	se	high_contextual_primary_checked
+f9r	25	3	15	717	les	high
+f9r	25	3	16	751?	main	high
+f9r	25	3	17	717?	les	high
+f9r	25	3	18	515	fe	medium
+f9r	25	3	19	747	m	medium
+f9r	25	3	20	787	mes	medium
+f9r	25	4	21	1162	se	high_contextual_primary_checked
+f9r	25	4	22	54	age	medium
+f9r	25	4	23	848	no	medium
+f9r	25	4	24	1318	u	medium
+f9r	25	4	25	621	il	high
+f9r	25	4	26	704	lai	medium
+f9r	25	4	27	717	les	high
+f9r	25	5	28	598	hommes	medium
+f9r	25	5	29	479	etait	probable_contextual_primary_checked
+f9r	25	5	30	494	ex	medium
+f9r	25	5	31	65	al	medium
+f9r	25	5	32	1261	tes	high
+f9r	25	5	33	114	au	high
+f9r	25	5	34	337	del	high
+f9r	25	6	35	30	a	high
+f9r	25	6	36	323	de	high
+f9r	25	6	37	1294	toute	medium
+f9r	25	6	38	501	expr	medium
+f9r	25	6	39	459	es	medium
+f9r	25	6	40	1193	sion	medium
+f9r	25	6	41	1291	tous les	medium
+f9r	25	7	42	1311	troupes	medium
+f9r	25	7	43	479	etait	probable_contextual_primary_checked
+f9r	25	7	44	297	cou	high
+f9r	25	7	45	1346	ver	high
+f9r	25	7	46	1261	tes	high
+f9r	25	7	47	323	de	high
+f9r	25	7	48	524	fleurs	medium
+f9r	25	8	49	485	?	unverified_transcription
+f9r	25	8	50	753	mais	high
+f9r	25	8	51	858	nous	high
+f9r	25	8	52	135	avons	high
+f9r	25	8	53	324	de la	probable_contextual_primary_checked
+f9r	25	8	54	933	peine	high_lexical_source_checked
+f9r	25	8	55	30	a	high
+f9r	25	9	56	1312	trouv	high
+f9r	25	9	57	453	er	high
+f9r	25	9	58	398	du	high
+f9r	25	9	59	910	pain	high
+f15r	37	1	1	702	la	high
+f15r	37	1	2	102	armee	high
+f15r	37	1	3	116	aura	medium
+f15r	37	1	4	927	passé	supported_structural_context
+f15r	37	1	5	115	aujourd’hui	supported_structural_context
+f15r	37	1	6	708	le	high
+f15r	37	1	7	868	o	high
+f15r	37	2	8	548	g	high
+f15r	37	2	9	721	li	high
+f15r	37	2	10	868	o	high
+f15r	37	2	11	1155	sans	high
+f15r	37	2	12	1113	res	high
+f15r	37	2	13	660	is	high
+f15r	37	2	14	1244	tan	high_contextual
+f15r	37	3	15	199	ce	high
+f15r	37	3	16	858	nous	high
+f15r	37	3	17	1226	sui	high
+f15r	37	3	18	1376	vons	high
+f15r	37	3	19	702	la	high
+f15r	37	3	20	102	armee	high
+f15r	37	3	21	329z	Autrichien	assumed
+f15r	37	4	22	926	pas	high
+f15r	37	4	23	30	a	high
+f15r	37	4	24	926	pas	high
+f15r	37	4	25	677	je	high
+f15r	37	4	26	1074	re	high
+f15r	37	4	27	310	?	unverified_transcription
+f15r	37	4	28	925	?	unverified_transcription
+f15r	37	5	29	357	des	high
+f15r	37	5	30	981	?	unverified_transcription
+f15r	37	5	31	708	le	high
+f15r	37	5	32	81	?	unverified_transcription
+f15r	37	5	33	1099	?	unverified_transcription
+f15r	37	5	34	123	?	unverified_transcription
+f15r	37	5	35	495	?	unverified_transcription
+f15r	37	6	36	656	?	unverified_transcription
+f15r	37	6	37	257	?	unverified_transcription
+f15r	37	6	38	914	par	medium
+f15r	37	6	39	439	ennemi	high
+f17r	41	1	1	858	nous	high
+f17r	41	1	2	462	esp	high
+f17r	41	1	3	457	er	high
+f17r	41	1	4	889	ons	high
+f17r	41	1	5	1325	une	probable_contextual_primary_checked
+f17r	41	2	6	151	bataille	medium
+f17r	41	2	7	1232	sur	medium
+f17r	41	2	8	233	chi	medium
+f17r	41	2	9	402	e	medium
+f17r	41	2	10	1162	se	high_contextual_primary_checked
+f17r	41	3	11	753	mais	high
+f17r	41	3	12	708	le	high
+f17r	41	3	13	439	ennemi	high
+f17r	41	3	14	916	parait	high
+f17r	41	3	15	332	deci	high
+f17r	41	3	16	323	de	high
+f17r	41	4	17	783	ment	high
+f17r	41	4	18	1162	se	high_contextual_primary_checked
+f17r	41	4	19	1074	re	high
+f17r	41	4	20	1275	tir	high
+f17r	41	4	21	453	er	high
+f17r	41	4	22	355	der	high
+f17r	41	5	23	1127	rie	high
+f17r	41	5	24	1074	re	high
+f17r	41	5	25	708	le	high
+f17r	41	5	26	796	min	high
+f17r	41	5	27	237	ci	high
+f17r	41	5	28	868	o	high
+f18r	43	1	1	1187	si	high
+f18r	43	1	2	717	les	high
+f18r	43	1	3	329z	Autrichien	assumed
+f18r	43	1	4	335	defend	high
+f18r	43	1	5	1135	ront	high
+f18r	43	1	6	717	les	high
+f18r	43	1	7	978	posi	high
+f18r	43	1	8	1274	tions	high
+f18r	43	2	9	323	de	high
+f18r	43	2	10	732	lo	high
+f18r	43	2	11	826	na	high
+f18r	43	2	12	1278	to	high
+f18r	43	2	13	465	et	high
+f18r	43	2	14	323	de	high
+f18r	43	2	15	195	cas	high
+f18r	43	2	16	1265	ti	high
+f18r	43	3	17	563	gl	high
+f18r	43	3	18	608	i	high
+f18r	43	3	19	888	on	high</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/eugenie1859/texts/eugenie1859_corrections_krajcovic.md">eugenie1859_corrections_krajcovic.md</a></p><pre># NAF 11355, June 1859: Jozef Krajčovič&#x27;s verification and proposed token corrections to Lasry&#x27;s transcription (issue #39, 16 Oct 2026)
+
+Copied verbatim from NOTES.md (section &quot;Verification by Jozef Krajčovič&quot;). Not applied to Lasry&#x27;s text; the transcription and key are Lasry&#x27;s and the list goes to him. Krajčovič&#x27;s own package (token streams, a verification script, page locators) is attached to https://github.com/dbourdeau/cyphersolver/issues/39 and is not in the repository.
+
+## Verification by Jozef Krajčovič (issue #39, 16 Oct 2026)
+
+Jozef Krajčovič (GitHub kjfriedo) re-read f9r, f15r, f17r and f18r by hand, then applied Lasry&#x27;s key; he says
+plainly this is not a ciphertext-only re-solution. Crib and control pages f19r, f27r, f29r, f30r, f35r; negative
+control f21r-v (headed Emperor to the War Ministry: values above the Emperor-Empress range, no French under this
+key, so a different nomenclator). Agreements, for example f15r 1155 1113 660 1244 199 *sans résistance*, f18r 195
+1265 563 608 888 *Castiglione*, f27r/f30r 1333 30 785 1342 *va à merveille*.
+
+Proposed corrections to the token transcription (not applied here; the transcription and key are Lasry&#x27;s, and the
+list goes to him): f9r 1143 -&gt; 1193 (501 419 1193 = expr-[419]-sion, so 419 = es); f18r 1268 -&gt; 1265 (1265 = ti,
+also in fa-ti-gue); f15r 1115 -&gt; 1155; f17r 839 -&gt; 889 and 353 -&gt; 355; provisional f9r 1200 = sort (*en sortant
+avec le roi*). He would keep f17r 1325 = une. His package (token streams, a verification script, page locators) is
+attached to the issue.
+
+He also pointed out that the page said &quot;Extent: complete&quot; against 9 of 11 cipher pages deciphered; the profile class
+was corrected to read in part on 21 Oct 2026.</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/eugenie1859.json"></figure>
 <!-- replay:end -->

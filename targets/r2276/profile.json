@@ -219,6 +219,12 @@
    "kind": "access",
    "what": "Fetched Gallica btv1b9062131g via IIIF at full resolution (views ~7470x5960 px, each a two-page spread; p. 1 is the right half of f2). Text block ~2,850 px wide, same as the DECODE PNGs; a grey microfilm-style capture with lower contrast. The rare-sign strokes (U, W, q, k, overlined Z) are no clearer; the t1.39 / t1.16 / t2.2 corrections could not be confirmed. No transcription change; measure unchanged at 3600/3920 = 0.918.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass transcription t1-t3.txt and the whole-letter reading reading.txt; keys key_v8.json and the reading key key_v7.json",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -277,6 +283,23 @@
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Nevers-Piles alphabet (cryptiana nevers.htm, from BnF fr. 3612), extended here"},
     {"who": "biermann", "role": "pointer", "note": "identified the Nevers-Piles cipher as the one that reads this letter (reported on Tomokiyo's guise.htm); no text published", "date": "2021", "source": "cryptiana guise.htm", "published": false},
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment of sibling BnF fr. 4715 f. 2 aligned for key values"}
+  ],
+  "texts": [
+   {
+    "doc": "R2276",
+    "label": "Letter from Reims, 19 June [1589], BnF fr. 20974 pp. 1-3 (DECODE R2276)",
+    "transcription": [
+     "t1.txt",
+     "t2.txt",
+     "t3.txt"
+    ],
+    "decryption": "reading.txt",
+    "summary": "Written from Reims, probably by Jean de Piles, abbé d'Orbais: while he was still in Rome the chapter of Reims made an election or postulation for the archbishopric, of the grand archdeacon Brulart (who consented in tears) and of the dean Frison, now in Rome with the act of postulation. It names the Cardinal de Lorraine, Cardinal de Pellevé, Cardinal Allen, Mayenne, the abbey of Saint-Remi, 18,000 lansquenets and 8,000 reiters for the Low Countries against Parma, and Elbeuf's ransom agreed at 50,000 écus. Read in part; '?' marks unread words."
+   }
+  ],
+  "key_file": [
+   "key_v8.json",
+   "key_v7.json"
   ]
  }
 }

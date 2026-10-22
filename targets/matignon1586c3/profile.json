@@ -217,6 +217,12 @@
    ],
    "what": "Re-measured here with this entry's rule (f276/scripts/measure.py, fr-1600-letters, 20 shuffled keys) on his signs through his recorded key choices (f379_381/to_read.py): f. 379r 440/503, 379v 447/490, 380r 420/492, 380v 493/532, 381r 479/524, 381v 261/295 = 2,540/2,836 (89.6%); shuffled medians 5.8-9.8%, max 33%. View 740 compared with his f. 379r signs: 22 cipher lines as he has them, and the opening signs of l. 2 (b, a, a hooked sign, 30) correspond.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): alejandrozarco's sign-by-sign reads and reconciled readings for f. 276 and f. 179 (with SOLUTION.md), Brett Burford's per-page signs, plaintext, French text and English gist for fr. 15573 ff. 379-381 plus read_all.txt; keys key-cipher3.json, key_em_all.tsv and the Key section of f276/SOLUTION.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -324,6 +330,63 @@
     "source": "https://github.com/dbourdeau/cyphersolver/issues/44",
     "published": true
    }
+  ],
+  "texts": [
+   {
+    "doc": "f276",
+    "label": "fr. 15572 f. 276, 1586 (alejandrozarco, PR #25)",
+    "transcription": [
+     "f276/read1.txt",
+     "f276/read2.txt"
+    ],
+    "decryption": [
+     "f276/read_final.txt",
+     "f276/SOLUTION.md"
+    ],
+    "summary": "A Poitou intelligence note on the Catholic factions round La Roussière, Henri III's governor of Fontenay(-le-Comte): La Guiolle unsure of Le Puy, La Saussaie, the priory promised to Aubois, the sieurs de la Fontaine, la Chaie and Mirebeau; 'Le Pui est ennuyé de la guerre'. Writer and recipient are not named. The transcriptions are the two independent sign-by-sign reads (one letter per sign)."
+   },
+   {
+    "doc": "fr15571-f179",
+    "label": "fr. 15571 f. 179, 1586 (alejandrozarco, PR #25)",
+    "transcription": [
+     "f179/readA.txt",
+     "f179/readB.txt"
+    ],
+    "decryption": [
+     "f179/read_final.txt",
+     "f179/SOLUTION.md"
+    ],
+    "summary": "Frontin is to come to terms with La Rousière's children; the writer is resolved to attack Pons, 'il se poura prendre en ung mois'; sickness among the foot; 'employer Lansac en ... l'armée de mer'. The siege and the sickness fit, without being established, the plague in Mayenne's and Matignon's army round Castillon (Aug-Sept 1586); Tomokiyo's interlinear decipherment was the check."
+   },
+   {
+    "doc": "fr15573-f379-381",
+    "label": "fr. 15573 ff. 379r-381v, autumn 1586 (Brett Burford, issue #44)",
+    "transcription": [
+     "f379_381/burford/f379r/signs.txt",
+     "f379_381/burford/f379v/signs.txt",
+     "f379_381/burford/f380r/signs.txt",
+     "f379_381/burford/f380v/signs.txt",
+     "f379_381/burford/f381r/signs.txt",
+     "f379_381/burford/f381v/signs.txt"
+    ],
+    "decryption": [
+     "f379_381/burford/ff379-381-french.md",
+     "f379_381/read_all.txt",
+     "f379_381/burford/f379r/plaintext-by-line.txt",
+     "f379_381/burford/f379v/plaintext-by-line.txt",
+     "f379_381/burford/f380r/plaintext-by-line.txt",
+     "f379_381/burford/f380v/plaintext-by-line.txt",
+     "f379_381/burford/f381r/plaintext-by-line.txt",
+     "f379_381/burford/f381v/plaintext-by-line.txt"
+    ],
+    "translation": "f379_381/burford/ff379-381-english.md",
+    "summary": "A six-page despatch wholly in cipher, addressed to the King and probably from Matignon: a military report on the Guyenne campaign, the river trade on the Garonne between Toulouse and Bordeaux from which the Huguenots draw dues, Caumont and the Mas de Verdun, Castillon, the Isle and the Dordogne, the King of Navarre, 'your sister' at Agen, the artillery from Navarrenx, Marmande and fifteen to sixteen thousand crowns. Read by Brett Burford (v0.5, 19 Oct 2026); his files are copied with his licence."
+   }
+  ],
+  "key_file": [
+   "f379_381/burford/key-cipher3.json",
+   "f276/crib/key_em_all.tsv",
+   "f276/SOLUTION.md"
   ]
  }
 }

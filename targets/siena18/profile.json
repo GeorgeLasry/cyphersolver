@@ -168,6 +168,12 @@
    ],
    "what": "Second comparison, made on main from George Lasry's page (merged 20 Oct 2026): the one passage his page prints ('restituerentur, ita tamen quod ipsi Senenses ad requisitionem Florentinorum sint contenti de stando iuri coram Cesare, dummodo Florentini etiam de illis que ipsi occupant sint contenti stare iuri coram ÷') is word for word transcripts/no18_reading.txt L4.24-28 (ours spells 'ocupant'). His key table against ours by shape: every common sign and every look-alike split found here on the images agrees. Its two apparent differences (our d = a, a = i against his i, u) came from the stale solver output keys/no18_key.txt; the final key in no18_reading.txt has d = i and a = u, as lasry_comparison.md records. Dating sources added: Regesta Imperii XIV, Sanudo Diarii I, Ulmann 1884, Pecci 1755.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): this project's transcription (agent K, verified by agent L), George Lasry's decryption and translation (lasry_report.md, verbatim) and, as a separate file, the project's own earlier reading, with the comparison of the two; key = the project's keys/no18_key.txt (Lasry's key figure is docs/siena18_key.png, outside the folder; his CTTS transcription is not in the repository).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -250,6 +256,10 @@
     "published": false
    }
   ],
-  "first_break": true
+  "first_break": true,
+  "texts": [
+   {"doc": "no18", "label": "No. 18 (R4806), treaty articles subscribed by Niccolo Ziegler, [Pisa, Oct-Nov 1496]: George Lasry's reading and this project's independent one", "transcription": ["transcripts/no18v.txt", "transcripts/no18.txt"], "decryption": ["lasry_report.md", "transcripts/no18_reading.txt", "lasry_comparison.md"], "translation": "lasry_report.md", "summary": "Latin articles negotiated by Sienese orators with Maximilian I's side, subscribed by his secretary Niklas Ziegler, dated by George Lasry to Pisa, October-November 1496: Siena to ready artillery and lend the King 5,000 ducats repayable in two months, open war near Ponte a Valiano against the Florentines with passage, victuals, 100 men-at-arms and 60 light horse, and have its claims against Florence judged by the Emperor. Two independent ciphertext-only readings: Lasry's complete one (decryption and translation in lasry_report.md, adopted) and this project's of 24 Sept 2026 (transcripts/no18_reading.txt, 87.1%), compared in lasry_comparison.md."}
+  ],
+  "key_file": "keys/no18_key.txt"
  }
 }

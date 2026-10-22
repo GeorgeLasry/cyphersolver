@@ -198,7 +198,8 @@
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): no. 23 (Bienvenut, name code with its key slip f. 36r) moved to bienvenut1590, and Lauriere's letters in Nevers key no. 57 (fr. 3625 nos. 55 and 10, fr. 3985 f. 58) to lauriere1593. This entry keeps the two-digit alphabet of nos. 24/25/60, with no. 78 listed unread; fraction recomputed on its documents: 63 of 110 tokens.",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 83 tokens, 28 types, fr-1600-letters order 4: reading -2.075 per letter; Verdict: too short.", "result": "partial"}
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 83 tokens, 28 types, fr-1600-letters order 4: reading -2.075 per letter; Verdict: too short.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions ct_3623_twodigit.txt and ct_3623_78.txt; readings table, no. 78 note and the two-digit alphabet copied verbatim from NOTES.md into texts/ (n24-25-60_decryption.md, n78_decryption.md, key.md). No. 78 has no decryption (unread).", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 83, "types": 28, "tokens_per_type": 2.96, "score": -2.075, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.075; polyphony 0.0; 21 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -243,6 +244,11 @@
     "role": "key or decipherment used",
     "note": "interlinear glosses over single figures in nos. 25 and 60"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "n24-25-60", "label": "Nos. 24 (15 Jun 1590), 25 (5 Jun 1590), 60 (7 Jun 1590)", "transcription": "ct_3623_twodigit.txt", "decryption": "texts/n24-25-60_decryption.md", "summary": "Anonymous news-letters from Champagne to the duc de Nevers, June 1590, one hand, hiding names and phrases in a two-digit alphabet inside clear French: \"l'union\", \"la ligue\", \"de la defiance\", Chazeron (named in clear in no. 24) and Ludovic are deciphered; the code numbers and two passages of no. 24 stay open."},
+   {"doc": "n78", "label": "No. 78, f. 111r, 1591", "transcription": "ct_3623_78.txt", "decryption": "texts/n78_decryption.md", "summary": "A clear letter of 1591 on the tailles of the Nivernais with one cipher group of mixed figures and signs near the end, probably a name, in another code; not deciphered."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

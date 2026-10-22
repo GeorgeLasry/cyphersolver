@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#solving">Recovering the key</a><a href="#key">The key</a><a href="#reading">Decipherment</a><a href="#context">Context</a><a href="#image">The image, the sibling and the key records (2 Oc</a><a href="#method">Method and files</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#solving">Recovering the key</a><a href="#key">The key</a><a href="#reading">Decipherment</a><a href="#context">Context</a><a href="#image">The image, the sibling and the key records (2 Oc</a><a href="#method">Method and files</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> S. Tomokiyo transcribed this one-page letter in his article on variable-length figure codes in the Austrian archives and noted only
 that the dateline makes the language Italian. The figures and letters are written without breaks; his grouping gives 295 two-figure groups, 13 three-figure
@@ -207,6 +207,85 @@ nor addressee is named in the enciphered text. The image, checked on 2 October 2
 symbol against its value, word-level Italian throughout, the manuscript image, the neighbouring record R1409 and the fascicle&rsquo;s key records (2 October 2026). Not checked: the sender, the word codes. The addressee in &sect;05
 is an inference from the content, now supported by the docket.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R1408, HHStA Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176, &#x27;Di Varsouia 24 Xbre 1627&#x27;</h3>
+<p>An Italian letter written from Warsaw on 24 Dec 1627, most likely to Cardinal Franz von Dietrichstein, Bishop of Olmütz (an inference; nothing names sender or addressee): the promised Olmütz canonry for one of the sons of the Polish royal couple has not yet been given; &#x27;these Majesties&#x27; want it, and the writer asks that it be done or that he have a prompt answer.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/warsaw/ct.txt">ct.txt</a></p><pre>33 29 a m 22 29 17 16 z g l u 16 a 47 m 23 22 13 m 31 29 m a 41 l l 22 29 a 27 16 f i 16 22 29
+m a 47 a 12 o m 33 29 a m p r 21 17 21 m 29 14 a 14 29 17 16 t h 24 18 28 z g 25 a 33
+29 m 40 23 29 19 16 m 19 a m 27 13 28 21 22 p 45 26 16 m a 29 14 l l 21 f i 26 29 16 06 a
+13 a 20 28 21 24 26 13 a 50 21 z g 21 14 29 24 01 33 13 m 100 m 113 m 09 a 28 16 31 21 22 m 46
+23 21 22 29 z g 21 m 28 14 a 17 13 05 29 17 13 26 16 a 19 m 16 31 33 29 32 a 13 l u a 28 14 16 a m
+44 31 29 a 123 m 24 28 16 29 m a 23 29 25 31 29 m n a 27 13 28 21 14 19 16 m 29 16 a 03 a 24
+13 18 28 26 16 m 29 f i m 160 a 17 16 22 26 21 m 47 m a l l 13 t h a 28 16 31 16 14 26 13 m 19
+29 a m 120 m 05 m 21 m 151 a 24 26 13 l l 13 a 33 21 24 24 13 a 29 f i a 21 24 50 17 28 26 29
+16 06 a 01 154 m 19 21 01 l u 21 22 13 14 16 m a 157 a 20 28 21 24 l l 21 a m 33 13 21 24 26 13 a m 27
+16 m 24 26  33 13 l l 16 m 16 23 29 17 29 16 a m 09 m 09 28 16 26 16 m 50 22 28 29 l l 16 z g 21
+m 154 m 29 16 a 31 21 a 24 16 14 16 m 43 a m 24 28 18 31 29 17 13 22 42 a 154 a 23 16 m 13 m
+28 16 31 21 22 m 23 13 22 m 21 p r 21 26 28 13 22 21 m 160 m a 223 a 159 m 18 22 29 33 13 a 04
+a 01 a 19 21 25 14 29 m 45 22 06 m a 24 28 15 29 26 16 m 13 a 33 21 a 15 21 14 29 25 14 13 m 22 29
+24 18 16 24 26 13</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/warsaw/plaintext.txt">plaintext.txt</a></p><pre>DECODE R1408 - Di Varsouia 24 Xbre 1627 - reading of 2026-09-16 from Tomokiyo&#x27;s transcription (variable2.htm)
+
+Image check, 2 Oct 2026 (DECODE image IMG_R1408_I6588_P1.png): Tomokiyo&#x27;s line 2 &#x27;a 12 o&#x27; is the code group
+120 (written 1-2-0 as on line 8), so the old {12} is [120]; line 10 has a 29 (i) he left as a gap: &#x27;stimato&#x27;.
+&#x27;Seerenissima&#x27; is as enciphered (50 21 zg). decode.py applies both corrections; -t gives Tomokiyo&#x27;s text as filed.
+
+Raw decode (nulls a m dropped; letter pairs, syllables and codes substituted; codes in brackets):
+
+miricordochefralialtrihonoriche [120] miffeceinnicolspurgmiconfidodhauerdatointentioneaquestaseerenissima
+[100] [113] deuolerconferireuncanonicatodolmizadunodeli [123] suoifiglihauendoio{03}saputoin [160] corteche
+taluolontadi [120] none [151] statamessainessecutionesi [154] desiderano [157] questemaestahostimatooficio
+dedeuotoseruitore [154] iolesonodisuplicarla [154] foauolerfareffetuare [160] [223] [159] prima{04}sidegni
+darnesubitoamebenignarisposta
+
+Word-divided, spelling as enciphered:
+
+Mi ricordo che, fra li altri honori che [120] mi f(f)ece in Nicolspurg, mi confido d&#x27;hauer dato intentione a
+questa Se(e)renissima [100] [113] de uoler conferire un canonicato d&#x27;Olmiz ad uno de li [123] suoi figli;
+hauendo io {03} saputo in [160] corte che tal uolonta di [120] non e [151] stata messa in essecutione, si
+[154] desiderano [157] queste Maesta, ho stimato oficio de deuoto seruitore, [154] io le sono, di
+suplicarla, [154] fo, a uoler far effetuare [160] [223] [159], prima {04} si degni darne subito a me
+benigna risposta.
+
+Codes and unread groups (glosses are inferences from context, not readings):
+  [100] [113]  after &quot;questa Serenissima&quot;          -&gt; the Queen (Regina) + a second title word?
+  [123]        &quot;ad uno de li [123] suoi figli&quot;      -&gt; Serenissimi?
+  [160]        &quot;in [160] corte&quot;, &quot;effetuare [160]&quot;  -&gt; questa (fits both places)
+  [120] x2     &quot;honori che [120] mi fece&quot;, &quot;tal uolonta di [120]&quot; -&gt; the addressee&#x27;s title (V.S. Ill.ma);
+               the docket at the foot of the page names Card. Dietrichstein
+  [151]        &quot;non e [151] stata&quot;                  -&gt; ancora?
+  [154] x3     &quot;si [154] desiderano&quot;, &quot;[154] io le sono&quot;, &quot;suplicarla [154] fo&quot; -&gt; come (fits all three)
+  [157]        &quot;desiderano [157] queste Maesta&quot;     -&gt; adverb (sommamente? ambedue?)
+  [223] [159]  &quot;effetuare [160] [223] [159]&quot;        -&gt; object of the request (questa ... sua ... gratia/promessa?)
+  {03}         &quot;hauendo io {03} saputo&quot;             -&gt; adverb (poi? gia? hora?)
+  {04}         &quot;prima {04} si degni&quot;                -&gt; conjunction (o? et?)
+
+English (working translation):
+I recall that, among the other honours that [Your Lordship] did me at Nikolsburg, I am confident I gave this
+Most Serene [Queen] to understand that [you] would confer a canonry of Olmütz on one of [her] sons. Having
+[since] learned at [this] court that that intention of [Your Lordship&#x27;s] has not [yet] been carried out, as
+these Majesties desire, I have judged it the duty of a devoted servant, such as I am to her, to beg you, as I
+do, to see [this ...] carried into effect, [or] first to deign to give me at once a kind answer about it.
+
+Alternative for the first sentence (30 Sept 2026; the cipher has no accents, so &quot;mi confido&quot; may be &quot;mi confidò&quot;,
+passato remoto, see NOTES section 3):
+I recall that, among the other honours [Your Lordship] did me at Nikolsburg, [you] confided to me that [you] had
+given this Most Serene [Queen] to understand that [you] would confer a canonry of Olmütz on one of [her] sons.
+
+Continuous conjectural reading (30 Sept 2026; every bracketed word grade I, inferred from context, not read;
+{03} = poi and {04} = pero are new glosses; [157] left open; see NOTES section 3a for the alphabetical-order test):
+Mi ricordo che, fra li altri honori che [V.S. Ill.ma] mi fece in Nicolspurg, mi confido d&#x27;hauer dato intentione a
+questa Serenissima [Regina ...] de uoler conferire un canonicato d&#x27;Olmiz ad uno de li [Serenissimi] suoi figli;
+hauendo io [poi] saputo in [questa] corte che tal uolonta di [V.S. Ill.ma] non e [ancora] stata messa in
+essecutione, si [come] desiderano [...] queste Maesta, ho stimato oficio de deuoto seruitore, [come] io le
+sono, di suplicarla, [come] fo, a uoler far effetuare [questa] [sua] [promessa], prima [pero] si degni darne
+subito a me benigna risposta.
+English: ... to beg you, as I do, to have [this] [promise] [of yours] carried out, [but] first to deign to give
+me at once a kind answer.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/warsaw/decode.py">decode.py</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/warsaw.json"></figure>
 <!-- replay:end -->

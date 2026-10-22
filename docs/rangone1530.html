@@ -50,7 +50,7 @@
 <div class="seal partial" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-cipher">The cipher</a><a href="#the-letter-of-24-december-1529">The letter of 24 December 1529</a><a href="#the-letter-of-10-january-1530">The letter of 10 January 1530</a><a href="#how-it-was-broken">How the key was recovered</a><a href="#what-remains">What remains open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-cipher">The cipher</a><a href="#the-letter-of-24-december-1529">The letter of 24 December 1529</a><a href="#the-letter-of-10-january-1530">The letter of 10 January 1530</a><a href="#how-it-was-broken">How the key was recovered</a><a href="#what-remains">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The catalogue card was DECODE R4249, a letter of &ldquo;Guido Ramgone&rdquo; from Venice, 10 January 1530, with seven lines of cipher and no decipherment. Tomokiyo had listed its Clairambault copy and a copy of a second Rangone letter (24 December 1529), in the same cipher, as having no decipherment; no key or decipherment was found on Lasry&rsquo;s key list or in print. The Clairambault headings give the old B&eacute;thune volume numbers, and that led to the original of the second letter, Fran&ccedil;ais 3082 f. 42, which DECODE does not have. The two passages together are 264 signs of 54 kinds. No key survives and none of the keys known for Italians in French service in these years uses these signs. So the key was recovered from the ciphertext alone: simulated annealing against a sixteenth-century Italian letter model, 40 long runs, until one reached the score of real Italian and produced &ldquo;malissimo satisfato di lui&rdquo;, &ldquo;il signore Cesare&rdquo; and &ldquo;il Fregoso&rdquo;. Hand corrections from the words and a check of every sign&rsquo;s weight finished the key: 245 of 264 signs (92.8%) give sense. Both passages are about Cesare Fregoso, who had just married Rangone&rsquo;s sister and whom Venice made governor of Verona that January, the &ldquo;grande oferte&rdquo; of the January letter. Four short runs of signs that occur only once stay open, because there is no more ciphertext.</div>
 
 <h2 id="the-letters"><span class="num">01</span> The letters</h2>
@@ -100,6 +100,201 @@
 </ul>
 <p>These are blocked by length: the two passages are all the known text in this cipher.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>A. BnF fr. 3070 f. 81r, Venice, 10 Jan 1530</h3>
+<p>Guido Rangone to Anne de Montmorency: in cipher, that Venice pressed him to enter its service, then sent word to &#x27;Signor Cesare&#x27; (Cesare Fregoso, Rangone&#x27;s new brother-in-law) and made him great offers while Rangone was slighted. The clear rest is news of Venice (the Duke of Urbino, the Turkish envoy, Milan, the Swiss, Genoa&#x27;s galleys). Section A of reading.md; cipher lines A1-A6 of cipher.txt.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rangone1530/cipher.txt">cipher.txt</a></p><pre># Guido Rangone cipher. One token per sign, ASCII aliases (see NOTES.md, Sign aliases).
+# &#x27;|&#x27; = clear text interrupts. Lines prefixed with the witness and line.
+# A = BnF fr. 3070 f. 81r (original, DECODE R4249), Venice 10 Jan 1530; Clair. 331 f. 15 = 18th-c. copy.
+A1: hex pi I l k p phi J ob Th L J y S V P Z w k 6 t oo I xi N P t E r
+A2: x G 8 W 8 t q y W w oc theta w X I W r p N L X 8 p J phi L p pi J
+A3: phi q + L W g theta 6 I X U ob V I phi 8 I + r t xi 8 J W phi r m
+A4: ob 8 t w O w N J t P theta pi I t W r # t I ob V P 8 e w
+A5: t phi w | P p w k V 8 N w m Z r
+A6: phi 8 W I xo M x 8 B A Z 8 t J ob 8 I phi w k + oo t Z L
+# B = BnF fr. 3082 f. 42r (original), Venice 24 Dec 1529; Clair. 330 f. 206 = 18th-c. copy.
+B1: L W pi t P vt m 8 N 8
+B2: phi q xi p oo pi I t w W J O 8 N U
+B3: + P a w k iii I theta A M Z 8 xi N oo t c d 9 U W P x 8 N P D w ob
+B4: V E2 p D2 q N phi w theta B dv J N U P 6 I t U L xi e V I t 8 E r U t P P
+B5: 6 8 Z ob J D2 t I phi L O U + L hex S2 M iii L + r p D2 L I x P t J</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rangone1530/reading.md">reading.md</a></p><pre># Reading: Guido Rangone to Montmorency, Venice, 24 Dec 1529 and 10 Jan 1530
+
+Key: `key.json` (sign → letter), rebuilt here ciphertext-only (see NOTES.md). Signs as in `cipher.txt`.
+Clear text in plain type; the decipherment in bold, spaced and punctuated by me. `[?]` = sign or run not read.
+Spelling as enciphered (single consonants, Lombard forms).
+
+## B. BnF fr. 3082 f. 42r, Venice, 24 December 1529 (Clair. 330 f. 206 is a copy)
+
+Clear: &quot;La S.ta di N. S. haura saputo che non si mancava cercar di satisfarli et n&#x27;haura obligo a S. M.ta senza
+dubio sopra le cose di Ravenna et Cervia; ancora che la recuperi per questa altra via, haura visto sua bona
+voluntade&quot;
+
+B1 **il Fre[·]goso** (the fifth sign, `vt`, is a null)
+
+Clear: &quot;li giorni passati con spada et cappa&quot;
+
+B2-B5 **tolse fare la cosa de [? ·] en mai piu volse ruina[r] le cose ben disposte in casa, e hara il f[?] da
+rovi[n]are, e ho una pratica di lei mi dispiacera.**
+
+- &quot;de [?]en&quot;: the sign `a` occurs once (Fregoso&#x27;s Genoa enterprise, &quot;la cosa de Gen[ova]&quot;, would give `a` = g, but
+  the word is then cut short; &quot;de ben&quot; is as good).
+- &quot;volse r[? ? ?]a&quot;: three signs (`c d 9`) that occur only here; &quot;ruina&quot;, &quot;dina[r]&quot; and similar fit equally.
+- &quot;il f[?] da rovi[n]are&quot;: the tailed sign `e` reads f in &quot;oferte&quot; (A); here &quot;il f&quot; makes no word; `rovi[n]are`
+  lacks the n.
+
+Translation (the sure part): &quot;... will have seen his good will. Fregoso, in these past days, &#x27;with sword and cloak&#x27;,
+undertook to do the business of [?] ... never again wanted [?] the things well arranged in the house, and will have
+the [?] to ruin [?], and I have a negotiation about her [or: Your Excellency] which will displease me.&quot;
+
+## A. BnF fr. 3070 f. 81r, Venice, 10 January 1530 (Clair. 331 f. 15 is a copy)
+
+Clear: &quot;Io vi scrissi ultimamente Ill.mo S.re uno certo caso acaduto mi et non li dissi piu oltra per alhora;
+adesso lo diro piu brevemente che io potro. Mons.r&quot;
+
+A1-A5a **&#x27;l fa instantia [a m]e de ven[i]re al servicio loro, o[?] le mie ... malissimo satisfato di lui; ha
+mandato a dirlo al [s]ignore Cesare e farli grande oferte.**
+
+Clear: &quot;Vida V. Ex. che tratti sono questi&quot;
+
+A5b-A6 **essendo seguito la [? ·] icon [?] uorano a tenderui.**
+
+Clear: &quot;Hora lassamo andare questi mei particulari; a qualche tempo faro cognoscer a V. Ex. che non mancaro al
+debito mio ...&quot;
+
+- 30 Sept 2026: the cipher has no separate &quot;a&quot; after &quot;instantia&quot; (hex pi I | l k p phi J ob Th L J = &quot;l fa instantia&quot;,
+  then `y S`). &quot;[a m]e&quot; is now printed as a conjecture, grade I: `y S` = &quot;me&quot; (S, a blotted star, occurs only here,
+  so &quot;e&quot; is contextual too), with the preposition taken as written once with the last &quot;a&quot; of &quot;instantia&quot;; the
+  clear sentence before the cipher (&quot;uno certo caso acaduto mi&quot;) says the case concerns the writer. A2 &quot;o[?] le
+  mie&quot;: q = o is sure; no single letter for `y` gives Italian there (m, b, n, e, a, i, v, g, d, s all tried by
+  hand), so the A2 place stays open.
+- &quot;a [? ?] de venire&quot;: `y S` = &quot;me&quot; or &quot;mi&quot; reads naturally (&quot;fa instantia a me de venire al servicio loro&quot;), but
+  `y` then gives &quot;o m le mie&quot; in A2, which is not Italian; the annealer prefers `y` = b (&quot;o b le mie&quot;), which does
+  not read either. Both `y` places are counted unread.
+- &quot;ven[i]re&quot;: the sign `6` is h everywhere else (&quot;ha mandato&quot;, &quot;e hara&quot;, &quot;ho una&quot;); here it stands for i
+  (encipherer&#x27;s slip, or h/i share a sign).
+- &quot;al [s]ignore&quot;: enciphered with ɸ (t) for ρ (s), probably a slip between the two long-tailed signs.
+- &quot;Cesare e farli&quot;: θ (i) for &quot;e&quot;.
+- &quot;la [?]icon[?]uorano a tenderui&quot;: `xo` and ✳ occur once each here; ✳ is p in &quot;mai piu&quot; (B3), which gives
+  &quot;la [?]icon puorano&quot;; not read. &quot;atenderui&quot; = &quot;attendervi&quot;.
+
+Translation (the sure part): &quot;My Lord, he urges [me] to come into their service ... is very ill satisfied with him;
+he has sent to tell it to Signor Cesare [Fregoso] and to make him great offers. See, Your Excellency, what
+treatment this is, it having followed [?] ...&quot;
+
+## Context
+
+Cesare Fregoso married Rangone&#x27;s sister Costanza in autumn 1529 (DBI, &quot;Fregoso, Cesare&quot;); he had commanded Ravenna
+and Cervia for Venice since September 1528, the towns the clear text of B is about, and in January 1530 the Venetian
+Senate made him military governor of Verona at 2,500 ducats a year: the &quot;grande oferte&quot; of A. Rangone&#x27;s grievance
+(&quot;che tratti sono questi&quot;) is that Venice courted his brother-in-law while slighting him. In October 1530 the French
+dismissed Rangone over his complaints about a reduced pension (condottieridiventura.it).
+
+## Measure
+
+`python measure.py` (5 Oct 2026): 264 cipher signs; a sign is counted read only inside a corpus word. Unread: A1 2
+(y S), A2 1 (y), A6 12 (&quot;?icon puorano&quot;), B3 3 (&quot;?en&quot;), B4 1 (&quot;f&quot;) = 19. A 134/149 = 89.9%, B 111/115 = 96.5%,
+overall 245/264 = 92.8%. B3 &quot;r[c d 9]a&quot; is now &quot;ruina&quot;: d is the cursive theta (i), and ruina is the only corpus word
+of that shape; c = u and 9 = n are set by the word. The earlier 87.9% was a phrase-level hand count.</pre></details>
+<h3>B. BnF fr. 3082 f. 42r, Venice, 24 Dec 1529</h3>
+<p>Rangone to Montmorency in the same cipher: five cipher lines naming &#x27;il Fregoso&#x27; and the business he took on &#x27;con spada et cappa&#x27;, which he never again wanted to ruin; a few signs that occur once stay unread. Section B of reading.md; cipher lines B1-B5 of cipher.txt.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rangone1530/cipher.txt">cipher.txt</a></p><pre># Guido Rangone cipher. One token per sign, ASCII aliases (see NOTES.md, Sign aliases).
+# &#x27;|&#x27; = clear text interrupts. Lines prefixed with the witness and line.
+# A = BnF fr. 3070 f. 81r (original, DECODE R4249), Venice 10 Jan 1530; Clair. 331 f. 15 = 18th-c. copy.
+A1: hex pi I l k p phi J ob Th L J y S V P Z w k 6 t oo I xi N P t E r
+A2: x G 8 W 8 t q y W w oc theta w X I W r p N L X 8 p J phi L p pi J
+A3: phi q + L W g theta 6 I X U ob V I phi 8 I + r t xi 8 J W phi r m
+A4: ob 8 t w O w N J t P theta pi I t W r # t I ob V P 8 e w
+A5: t phi w | P p w k V 8 N w m Z r
+A6: phi 8 W I xo M x 8 B A Z 8 t J ob 8 I phi w k + oo t Z L
+# B = BnF fr. 3082 f. 42r (original), Venice 24 Dec 1529; Clair. 330 f. 206 = 18th-c. copy.
+B1: L W pi t P vt m 8 N 8
+B2: phi q xi p oo pi I t w W J O 8 N U
+B3: + P a w k iii I theta A M Z 8 xi N oo t c d 9 U W P x 8 N P D w ob
+B4: V E2 p D2 q N phi w theta B dv J N U P 6 I t U L xi e V I t 8 E r U t P P
+B5: 6 8 Z ob J D2 t I phi L O U + L hex S2 M iii L + r p D2 L I x P t J</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rangone1530/reading.md">reading.md</a></p><pre># Reading: Guido Rangone to Montmorency, Venice, 24 Dec 1529 and 10 Jan 1530
+
+Key: `key.json` (sign → letter), rebuilt here ciphertext-only (see NOTES.md). Signs as in `cipher.txt`.
+Clear text in plain type; the decipherment in bold, spaced and punctuated by me. `[?]` = sign or run not read.
+Spelling as enciphered (single consonants, Lombard forms).
+
+## B. BnF fr. 3082 f. 42r, Venice, 24 December 1529 (Clair. 330 f. 206 is a copy)
+
+Clear: &quot;La S.ta di N. S. haura saputo che non si mancava cercar di satisfarli et n&#x27;haura obligo a S. M.ta senza
+dubio sopra le cose di Ravenna et Cervia; ancora che la recuperi per questa altra via, haura visto sua bona
+voluntade&quot;
+
+B1 **il Fre[·]goso** (the fifth sign, `vt`, is a null)
+
+Clear: &quot;li giorni passati con spada et cappa&quot;
+
+B2-B5 **tolse fare la cosa de [? ·] en mai piu volse ruina[r] le cose ben disposte in casa, e hara il f[?] da
+rovi[n]are, e ho una pratica di lei mi dispiacera.**
+
+- &quot;de [?]en&quot;: the sign `a` occurs once (Fregoso&#x27;s Genoa enterprise, &quot;la cosa de Gen[ova]&quot;, would give `a` = g, but
+  the word is then cut short; &quot;de ben&quot; is as good).
+- &quot;volse r[? ? ?]a&quot;: three signs (`c d 9`) that occur only here; &quot;ruina&quot;, &quot;dina[r]&quot; and similar fit equally.
+- &quot;il f[?] da rovi[n]are&quot;: the tailed sign `e` reads f in &quot;oferte&quot; (A); here &quot;il f&quot; makes no word; `rovi[n]are`
+  lacks the n.
+
+Translation (the sure part): &quot;... will have seen his good will. Fregoso, in these past days, &#x27;with sword and cloak&#x27;,
+undertook to do the business of [?] ... never again wanted [?] the things well arranged in the house, and will have
+the [?] to ruin [?], and I have a negotiation about her [or: Your Excellency] which will displease me.&quot;
+
+## A. BnF fr. 3070 f. 81r, Venice, 10 January 1530 (Clair. 331 f. 15 is a copy)
+
+Clear: &quot;Io vi scrissi ultimamente Ill.mo S.re uno certo caso acaduto mi et non li dissi piu oltra per alhora;
+adesso lo diro piu brevemente che io potro. Mons.r&quot;
+
+A1-A5a **&#x27;l fa instantia [a m]e de ven[i]re al servicio loro, o[?] le mie ... malissimo satisfato di lui; ha
+mandato a dirlo al [s]ignore Cesare e farli grande oferte.**
+
+Clear: &quot;Vida V. Ex. che tratti sono questi&quot;
+
+A5b-A6 **essendo seguito la [? ·] icon [?] uorano a tenderui.**
+
+Clear: &quot;Hora lassamo andare questi mei particulari; a qualche tempo faro cognoscer a V. Ex. che non mancaro al
+debito mio ...&quot;
+
+- 30 Sept 2026: the cipher has no separate &quot;a&quot; after &quot;instantia&quot; (hex pi I | l k p phi J ob Th L J = &quot;l fa instantia&quot;,
+  then `y S`). &quot;[a m]e&quot; is now printed as a conjecture, grade I: `y S` = &quot;me&quot; (S, a blotted star, occurs only here,
+  so &quot;e&quot; is contextual too), with the preposition taken as written once with the last &quot;a&quot; of &quot;instantia&quot;; the
+  clear sentence before the cipher (&quot;uno certo caso acaduto mi&quot;) says the case concerns the writer. A2 &quot;o[?] le
+  mie&quot;: q = o is sure; no single letter for `y` gives Italian there (m, b, n, e, a, i, v, g, d, s all tried by
+  hand), so the A2 place stays open.
+- &quot;a [? ?] de venire&quot;: `y S` = &quot;me&quot; or &quot;mi&quot; reads naturally (&quot;fa instantia a me de venire al servicio loro&quot;), but
+  `y` then gives &quot;o m le mie&quot; in A2, which is not Italian; the annealer prefers `y` = b (&quot;o b le mie&quot;), which does
+  not read either. Both `y` places are counted unread.
+- &quot;ven[i]re&quot;: the sign `6` is h everywhere else (&quot;ha mandato&quot;, &quot;e hara&quot;, &quot;ho una&quot;); here it stands for i
+  (encipherer&#x27;s slip, or h/i share a sign).
+- &quot;al [s]ignore&quot;: enciphered with ɸ (t) for ρ (s), probably a slip between the two long-tailed signs.
+- &quot;Cesare e farli&quot;: θ (i) for &quot;e&quot;.
+- &quot;la [?]icon[?]uorano a tenderui&quot;: `xo` and ✳ occur once each here; ✳ is p in &quot;mai piu&quot; (B3), which gives
+  &quot;la [?]icon puorano&quot;; not read. &quot;atenderui&quot; = &quot;attendervi&quot;.
+
+Translation (the sure part): &quot;My Lord, he urges [me] to come into their service ... is very ill satisfied with him;
+he has sent to tell it to Signor Cesare [Fregoso] and to make him great offers. See, Your Excellency, what
+treatment this is, it having followed [?] ...&quot;
+
+## Context
+
+Cesare Fregoso married Rangone&#x27;s sister Costanza in autumn 1529 (DBI, &quot;Fregoso, Cesare&quot;); he had commanded Ravenna
+and Cervia for Venice since September 1528, the towns the clear text of B is about, and in January 1530 the Venetian
+Senate made him military governor of Verona at 2,500 ducats a year: the &quot;grande oferte&quot; of A. Rangone&#x27;s grievance
+(&quot;che tratti sono questi&quot;) is that Venice courted his brother-in-law while slighting him. In October 1530 the French
+dismissed Rangone over his complaints about a reduced pension (condottieridiventura.it).
+
+## Measure
+
+`python measure.py` (5 Oct 2026): 264 cipher signs; a sign is counted read only inside a corpus word. Unread: A1 2
+(y S), A2 1 (y), A6 12 (&quot;?icon puorano&quot;), B3 3 (&quot;?en&quot;), B4 1 (&quot;f&quot;) = 19. A 134/149 = 89.9%, B 111/115 = 96.5%,
+overall 245/264 = 92.8%. B3 &quot;r[c d 9]a&quot; is now &quot;ruina&quot;: d is the cursive theta (i), and ruina is the only corpus word
+of that shape; c = u and 9 = n are set by the word. The earlier 87.9% was a phrase-level hand count.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/rangone1530/key.json">key.json</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/rangone1530.json"></figure>
 <!-- replay:end -->

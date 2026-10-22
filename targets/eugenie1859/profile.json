@@ -102,6 +102,12 @@
       "kind": "verification",
       "what": "George Lasry's answer to issue #39: f9r 1193, f18r 1265, f15r 1155, f17r 889 and 355 are already in his transcription (1143, 1268, 1115, 839, 353 are not in it). Not adopted: f9r is 501 459 1193 (459 = es, not 419) and 432 1210 85 (1210 = sort, not 1200), checked on the image; f17r line 2 is 151 = bataille, not 751, giving une bataille sur Chiese and keeping 1325 = une; f17r ends 868 = o, not 808. No change to his transcription or key. Token streams: lasry_tokens_f9_f15_f17_f18.tsv.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts (George Lasry's request of 22 Oct 2026): Lasry's tokens for ff. 9r, 15r, 17r, 18r, his report excerpts and Krajčovič's corrections listed; the full transcription and decryption of all 15 pages are still to come from Lasry.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -143,6 +149,29 @@
         "source": "https://github.com/dbourdeau/cyphersolver/issues/39"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r.",
+    "texts": [
+      {
+        "doc": "eugenie1859",
+        "label": "George Lasry's tokens and values, ff. 9r, 15r, 17r, 18r",
+        "transcription": "lasry_tokens_f9_f15_f17_f18.tsv",
+        "decryption": "lasry_tokens_f9_f15_f17_f18.tsv",
+        "summary": "Lasry's token transcription and values for the four pages Jozef Krajčovič checked (issue #39), sent by Lasry in answer to it."
+      },
+      {
+        "doc": "eugenie1859",
+        "label": "Lasry's report: decipherment excerpts and translations",
+        "transcription": "lasry_tokens_f9_f15_f17_f18.tsv",
+        "decryption": "texts/eugenie1859_decryption_lasry_excerpts.md",
+        "summary": "Napoleon III to the Empress and back, June 1859: his policy toward the Pope, criticism of diplomatic speculation, reports from the Italian campaign, and family news. Excerpts from Lasry's report of 10 Oct 2026; the full 15-page transcription and decryption are his and not yet in the repository."
+      },
+      {
+        "doc": "eugenie1859",
+        "label": "Jozef Krajčovič's proposed token corrections (issue #39)",
+        "transcription": "lasry_tokens_f9_f15_f17_f18.tsv",
+        "decryption": "texts/eugenie1859_corrections_krajcovic.md",
+        "summary": "The corrections Krajčovič proposed, to be read against Lasry's tokens and his answer in NOTES."
+      }
+    ]
   }
 }

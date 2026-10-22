@@ -303,6 +303,12 @@
    "kind": "literature search",
    "result": "partial",
    "what": "Framing corrected: Rommel's key 'never applied' becomes 'no published application' after Lasry's note on overclaiming."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-letter transcriptions ct/*.txt, raw decodes letters/*_decode.txt and the hand readings letters/READINGS.md; key.py (Rommel 1846 key with the corrections).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -322,6 +328,83 @@
   "credits": [
     {"who": "arya", "role": "solution", "note": "PR #1: the King's ciphered passages in Rommel 1840 read with Rommel's 1846 key", "source": "https://github.com/dbourdeau/cyphersolver/pull/1"},
     {"who": "rommel", "role": "key or decipherment used", "note": "key printed 1846 (Allg. Zeitschrift f. Geschichte V, 402-403); ciphertext from his 1840 edition", "date": "1846", "source": "Allgemeine Zeitschrift für Geschichte V (1846), pp. 402-403"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "22nov1602",
+    "label": "22 Nov 1602, Rommel p. 84",
+    "transcription": "ct/p084.txt",
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p084_decode.txt"
+    ],
+    "summary": "Henri IV asks the Landgrave for his promised advice on the coming Imperial diet, what to propose there for his allies, and whether to send his ambassador on to Saxony and Denmark."
+   },
+   {
+    "doc": "12jan1603",
+    "label": "12 Jan 1603, Rommel p. 99",
+    "transcription": "ct/p099.txt",
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p099_decode.txt"
+    ],
+    "summary": "With the Emperor absent from the diet, the King expects nothing important there, notably no election of a King of the Romans; he complains that the duc de Bouillon wrote nothing of the Administrator of Strasbourg's visit."
+   },
+   {
+    "doc": "27dec1604",
+    "label": "27 Dec 1604, Rommel pp. 211-214",
+    "transcription": [
+     "ct/p211_212.txt",
+     "ct/p213_214.txt"
+    ],
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p211_212_decode.txt",
+     "letters/p213_214_decode.txt"
+    ],
+    "summary": "The King explains why he has not sent an embassy to the German princes (the Protestants' disunity and their support for Bouillon), reports the United Provinces' resolve to fight on, and his trouble with Spanish intrigues and the comte d'Auvergne."
+   },
+   {
+    "doc": "28apr1605",
+    "label": "28 Apr 1605, Rommel p. 230",
+    "transcription": "ct/p230.txt",
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p230_decode.txt"
+    ],
+    "summary": "The passage Rommel regretted he could not decipher: the King's aid to the United Provinces and Geneva proves his care to maintain those of the reformed religion."
+   },
+   {
+    "doc": "22dec1605",
+    "label": "Paris, 22 Dec 1605, Rommel pp. 269-272",
+    "transcription": "ct/p269_272.txt",
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p269_272_decode.txt"
+    ],
+    "summary": "After the Mérargues affair and the conspiracy in England the King urges the German princes to help the United Provinces with money and troops, promises to continue his own aid of two million livres, and asks what the Emperor intends at the diet."
+   },
+   {
+    "doc": "20may1606",
+    "label": "Fontainebleau, 20 May 1606, Rommel pp. 307-314",
+    "transcription": "ct/p307_314.txt",
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p307_314_decode.txt"
+    ],
+    "summary": "The King's programme against the Spanish-Habsburg design on the Imperial diet: the kings and princes jealous of Spain should concert in defence of 'la liberté germanique'; the King of England's neutrality, Spinola's coming campaign and the weakness of the States."
+   },
+   {
+    "doc": "24jan1609",
+    "label": "24 Jan 1609, Rommel p. 391",
+    "transcription": "ct/p391.txt",
+    "decryption": [
+     "letters/READINGS.md",
+     "letters/p391_decode.txt"
+    ],
+    "summary": "One line: the ministers of the Pope and the King of Spain will do all they can to reconcile Archduke Matthias with the Emperor."
+   }
+  ],
+  "key_file": "key.py"
  }
 }

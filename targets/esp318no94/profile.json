@@ -151,7 +151,8 @@
    "what": "Review here: code inventories of nos. 93 and 94 compared (ct93_eye.txt trigrams against ct94_brackx.txt groups). No. 93's top groups gto, pie, heg, zoe, zoc, hug never occur in no. 94; no. 94's qa, rah, mny, qag do not occur in no. 93 (pif twice). muy occurs three times in no. 93 against mny 47 times in no. 94. Different keys; no. 94 split into its own entry. The g- initials of the earlier sample were q- (the same 9-shaped letter).",
    "result": "worked"
   },
-  {"date": "2026-10-21", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3127 tokens, 58 types, es-golden-age order 4: reading -2.351 per letter; random keys -4.578 (z 8.0); key annealed onto shuffled ciphertext best -3.12 (mean -3.154, z 27.5); annealer on the real text -2.374. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-21", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3127 tokens, 58 types, es-golden-age order 4: reading -2.351 per letter; random keys -4.578 (z 8.0); key annealed onto shuffled ciphertext best -3.12 (mean -3.154, z 27.5); annealer on the real text -2.374. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Brackx's sign transcription ct94_brackx.txt; his normalised decryption is only in issue #62 (linked; a copy in the folder is still needed)", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-21", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3127, "types": 58, "tokens_per_type": 53.91, "score": -2.351, "nulls": {"random keys": {"n": 200, "mean": -4.578, "sd": 0.279, "max": -3.962, "z": 8.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.154, "sd": 0.029, "max": -3.12, "z": 27.5, "p": 0.1429}}, "power": -2.374, "verdict": "pass", "notes": "claimed per-occurrence score -2.351; polyphony 0.0; 269 unread tokens left out; annealer on the real text from random keys reached -2.374"}, 
   "method": "key recovered from ciphertext-only",
@@ -212,6 +213,15 @@
     "note": "his Gran cifra reconstruction (muy = de; BNE MSS 20.211/52, via Quirantes 2018) agrees with mny = de"
    }
   ],
-  "notes": "Status: in progress. The content (Seminara and its aftermath, Portocarrero's death, Hugo de Cardona's faction, 800 peones, a proposed election among the captains) is readable in outline; single words stay provisional."
+  "notes": "Status: in progress. The content (Seminara and its aftermath, Portocarrero's death, Hugo de Cardona's faction, 800 peones, a proposed election among the captains) is readable in outline; single words stay provisional.",
+  "texts": [
+   {
+    "doc": "no94",
+    "label": "no. 94, ff. 120r-121r, the viceroy of Sicily to Ferdinand, Messina, 27 Apr 1503",
+    "transcription": "ct94_brackx.txt",
+    "decryption": "https://github.com/dbourdeau/cyphersolver/issues/62",
+    "summary": "The viceroy of Sicily reports from Messina, the day before Cerignola and six days after Andrada's victory at Seminara: the galley could not cross the Faro, a night entry with the infantry looting, a pesquisa under oath into the spoil, three principal prisoners kept in the castle until the king orders, and the dispute over the post Portocarrero had given after his death. Michael Brackx's normalised reading (provisional word by word) is in GitHub issue #62, not yet in the repository."
+   }
+  ]
  }
 }

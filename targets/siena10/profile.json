@@ -105,6 +105,12 @@
    ],
    "what": "Gloss checked against the signs: 22 signs carry a letter, every repeated sign (S, 3, 7, 1, 9, L) the same letter; a and o have two signs each; three signs carry none (nulls?).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no10.txt (each sign with its contemporary gloss letter) and no10.tok",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -140,6 +146,18 @@
     "note": "the decipherment written over the cipher run on the slip"
    }
   ],
-  "notes": "Read at the time; transcribed and aligned here. George Lasry's report has 'pressura'; the gloss has one s."
+  "notes": "Read at the time; transcribed and aligned here. George Lasry's report has 'pressura'; the gloss has one s.",
+  "texts": [
+   {
+    "doc": "R4799",
+    "label": "Siena, Concistoro 2308 fasc. 2 no. 10 (DECODE R4799)",
+    "transcription": [
+     "transcripts/no10.txt",
+     "transcripts/no10.tok"
+    ],
+    "decryption": "transcripts/no10.txt",
+    "summary": "A narrow undated slip: 'Et riuscendo o no la presura di Montepulciano, in ogni modo ragunato che sarà ...' ('whether or not the taking of Montepulciano succeeds ...'). The single cipher run of 25 signs was deciphered at the time letter by letter above the signs; no10.txt gives each sign with the letter written over it."
+   }
+  ]
  }
 }

@@ -175,6 +175,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 1079 tokens, 36 types, la order 4: reading -2.17 per letter; random keys -4.847 (z 9.5); key annealed onto shuffled ciphertext best -3.479 (mean -3.506, z 87.6); annealer on the real text -2.17. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Lasry's CTTS transcription.txt, the continuous edition readable.txt and the literal CTTS export literal_decryption.txt, translation.txt; key = Lasry's CTTS key.txt (with key.json).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -255,6 +261,20 @@
     "detail": "SIMPIR, AGLO, PRSRSVS, PRSMITAT and IT are retained in literal output; readable Latin marks contextual restoration, not proven new mappings."
    }
   ],
-  "notes": "Both text pages covered in full. The conservative coherence floor 773/805 excludes all 27 tokens in five restored words plus 5 open word tokens. This is not an LLM-only break or a first-publication claim."
+  "notes": "Both text pages covered in full. The conservative coherence floor 773/805 excludes all 27 tokens in five restored words plus 5 open word tokens. This is not an LLM-only break or a first-publication claim.",
+  "texts": [
+   {
+    "doc": "R4282",
+    "label": "R4282, two text pages (George Lasry, CTTS; refined with GPT-6 Astra)",
+    "transcription": "transcription.txt",
+    "decryption": [
+     "readable.txt",
+     "literal_decryption.txt"
+    ],
+    "translation": "translation.txt",
+    "summary": "A Latin letter of unknown sender, recipient and date (DECODE catalogue range 1600-1699): the writer discusses a marriage in England, opposition to a foreign husband, religious uncertainty and coronation expenses, then asks urgently for a reply and money. Ferdinand and the dukes of Alba and Savoy are mentioned; three word signs remain unidentified."
+   }
+  ],
+  "key_file": ["key.txt", "key.json"]
  }
 }

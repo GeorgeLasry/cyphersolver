@@ -185,6 +185,12 @@
    "kind": "verification",
    "what": "The three doubtful signs re-examined at 3x on the full-resolution scans: the dateline's last two (ι ⊕) are a pale false start struck through with '=', i.e. cancelled; the ƥ in the f. 30 run stays a probable null.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher items ciphertext.txt; both letters in full with the cipher items resolved in reading.md, the decode in reading.tsv (key BnF fr. 3995 no. 11 used unchanged)",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -221,6 +227,28 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Nevers key book no. 11 (BnF fr. 3995 f. 23), unchanged; interlinear decipherment of the sibling fr. 3413 f. 102 calibrated the hand"},
     {"who": "tomokiyo", "role": "pointer", "note": "catalogue of the fr. 3995 keys (no. 11) and the note that no. 11 is used in fr. 3413 f. 102, the glossed sibling", "source": "cryptiana nevers.htm"}
+  ],
+  "texts": [
+   {
+    "doc": "f28",
+    "label": "Randan, 27 March 1587, f. 28r-v (DECODE R4285)",
+    "transcription": "ciphertext.txt",
+    "decryption": [
+     "reading.md",
+     "reading.tsv"
+    ],
+    "summary": "A correspondent at Randan in Auvergne, probably the comte de Randan, answers the duc de Nevers that he went to Lyon on private business while Tournon, St Vidal and the bishop of Le Puy met Mandelot about the war in Vivarais; 94 (le marquis) sold an estate there to 6 (M. d'Entragues), and he has never meddled in the affairs of 23 (the reine de Navarre). The cipher items are three code numbers and the dateline 'De Randan'; the letter is otherwise clear."
+   },
+   {
+    "doc": "f30",
+    "label": "4 April 1587, f. 30r (DECODE R4286)",
+    "transcription": "ciphertext.txt",
+    "decryption": [
+     "reading.md",
+     "reading.tsv"
+    ],
+    "summary": "The same correspondent reports that 45 (the duc d'Espernon) was in great alarm passing near Lyon and that country, without any cause, since no one ever thought of doing him harm. Clear French with one code and one 13-sign run."
+   }
   ]
  }
 }

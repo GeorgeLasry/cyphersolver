@@ -294,7 +294,8 @@
    "what": "research/top50/NOTES.md and README corrected: Ernst 2017 (Top 50 #27) concerns Ferdinand III to Leopold Wilhelm 1640/41, not the Brussels letters.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1244 tokens, 112 types, la order 4: reading -2.023 per letter; random keys -4.505 (z 12.6); key annealed onto shuffled ciphertext best -2.969 (mean -3.007, z 31.5); annealer on the real text -2.883. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1244 tokens, 112 types, la order 4: reading -2.023 per letter; random keys -4.505 (z 12.6); key annealed onto shuffled ciphertext best -2.969 (mean -3.007, z 31.5); annealer on the real text -2.883. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): DECODE and own transcriptions of R1887/R1889/R1890; decryptions copied from NOTES.md to texts/ beside the alignments and literal decode; keys work/key1889.json, key1890_extra.json, key1887.json", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "la", "file": "validation.tsv", "tokens": 1244, "types": 112, "tokens_per_type": 11.11, "score": -2.023, "nulls": {"random keys": {"n": 200, "mean": -4.505, "sd": 0.196, "max": -4.031, "z": 12.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.007, "sd": 0.031, "max": -2.969, "z": 31.5, "p": 0.1429}}, "power": -2.883, "verdict": "pass", "notes": "claimed per-occurrence score -1.993; polyphony 0.009; 1 unread tokens left out; annealer on the real text from random keys reached -2.883"}, 
   "class": "read in part",
@@ -370,6 +371,48 @@
   "credits": [
     {"who": "aymeloglu", "role": "prior solution", "note": "R1889, R1890 read and R1887 partial, github.com/aaymeloglu/unsolved-ciphers", "date": "2026-09-18", "source": "https://github.com/aaymeloglu/unsolved-ciphers"},
     {"who": "aymeloglu", "role": "pointer", "note": "README: the 1640 additions are mostly syllables (read before the R1890 recovery)", "date": "2026-10-09"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R1887",
+    "label": "R1887, Ferdinand, King of Hungary, to the Cardinal-Infante, Stuttgart, 28 Oct 1634",
+    "transcription": [
+     "transcription/R1887.txt",
+     "transcription/R1887_tokens.txt"
+    ],
+    "decryption": [
+     "texts/R1887_decryption.md",
+     "work/align1887.txt"
+    ],
+    "summary": "Written after the victory at Nördlingen: the other side is expected to spare no attempt to restore the princes who put themselves under its protection, above all Württemberg and Durlach, and Ferdinand asks the Cardinal-Infante to oppose the designs of the enemies of the House by a movement and diversion of his arms. A 6-token word and a 16-token span remain open."
+   },
+   {
+    "doc": "R1889",
+    "label": "R1889, the Cardinal-Infante to Ferdinand, King of Hungary, Brussels, 16 Nov 1635",
+    "transcription": [
+     "decode/DOC_R1889_D3605_3605.txt",
+     "transcription/R1889_tokens.txt"
+    ],
+    "decryption": [
+     "texts/R1889_decryption.md",
+     "work/align1889.txt"
+    ],
+    "summary": "The Cardinal-Infante refuses imperial winter quarters in the archbishopric and city of Trier, which has been under Spanish protection and garrison for two hundred years, and asks that the Spanish garrison keep the town and its surroundings for its own and the Elector's upkeep. Key recovered from the draft R954."
+   },
+   {
+    "doc": "R1890",
+    "label": "R1890, Ferdinand III to the Cardinal-Infante, Vienna, 22 Feb 1640",
+    "transcription": [
+     "decode/DOC_R1890_D3604_3604.txt",
+     "transcription/R1890_tokens.txt"
+    ],
+    "decryption": [
+     "texts/R1890_decryption.md",
+     "work/R1890_literal.txt"
+    ],
+    "summary": "Ferdinand III answers the new levies of the Elector of Cologne and the Westphalian circle: Count Hatzfeldt is to go to Cologne and raise a larger force, and the Cardinal-Infante is asked again for the hundred thousand florins, to be consigned at Cologne to the imperial commissaries; the Spanish envoy, the marques de Castaneda, will explain further."
+   }
+  ],
+  "key_file": ["work/key1889.json", "work/key1890_extra.json", "work/key1887.json"]
  }
 }

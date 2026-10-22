@@ -144,6 +144,12 @@
    ],
    "what": "No. 17: George Lasry's key table (signs cut from the manuscript) matched by shape and count to the sign names of the project's own 24 Sept transcription (project_attempt/no17.txt, agent A, made before his work); our 283 tokens deciphered with his key, without fitting, and aligned with his reading: 252 agree (89.0%) with the first identification, 263 (92.9%) after re-identifying three signs by count (our 7 = his open A, SS = his P '+δ', 5o = his T); the rest fall on his own uncertain words ('el Mustetto', 'Otto', 'lco[..]stren') and on our 6, which merges his O and V. research/siena2308/verify_lasry.py no17.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's decipherment and translation (reading.txt, translation.txt, lasry_report.md), his key figure and table; transcription = this project's 24 Sept one (project_attempt/no17.txt), his CTTS transcription not being in the repository.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -195,6 +201,10 @@
     "published": false
    }
   ],
-  "notes": "Contributed; figures from the report."
+  "notes": "Contributed; figures from the report.",
+  "texts": [
+   {"doc": "R4805", "label": "No. 17 (R4805), Bartolomeo Tantucci to Antonio del Vescovo, Sarteano(?), 25 August 1528 (George Lasry)", "transcription": "project_attempt/no17.txt", "decryption": ["reading.txt", "lasry_report.md"], "translation": "translation.txt", "summary": "Bartolomeo Tantucci to messer Antonio del Vescovo, rector of the cathedral, in the cipher of the Balìa, 25 (or 20) August 1528: bishoprics promised to 'the nephews' by 'el Mustetto'(?), the Cardinal of Naples (Vincenzo Carafa?) and Pitigliano, and the 'Otto'(?) wanting to constrain Pitigliano; 'Parlo breve et in substantia perché la cifra vuol così.' Decryption and translation are George Lasry's; the transcription linked is this project's independent one of 24 Sept 2026, on which his key was checked (92.9% agreement), since his CTTS transcription is not in the repository."}
+  ],
+  "key_file": ["key_lasry.jpg", "key.md"]
  }
 }

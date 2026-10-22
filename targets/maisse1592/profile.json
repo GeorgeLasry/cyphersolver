@@ -213,6 +213,12 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from maisse1592, which had joined ff. 370/373 (Maisse's Cipher of 1592) with ff. 406/410 (Maisse's Cipher of 1592-93, the Breves cipher). This profile keeps ff. 370 and 373 (Maisse's Cipher of 1592) only.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 370: ct370.txt and the decode.py output with the Brienne comparison (texts/f370_decryption.md), opening only; f. 373 has no transcription or decryption in the repository, linked to the Gallica images of the leaf and of the Brienne 13 clear copy.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -254,6 +260,22 @@
     "role": "pointer",
     "note": "his citations of the old Harlay pièce numbers located the Brienne clear copies",
     "source": "Berger de Xivrey, Recueil des lettres missives de Henri IV"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f370",
+    "label": "f. 370, S. Denis, 3 Nov 1592 (opening only)",
+    "transcription": "ct370.txt",
+    "decryption": "texts/f370_decryption.md",
+    "summary": "Henri IV to Maisse, his ambassador at Venice: Cardinal de Gondi has passed near Venice, shortly to be followed by the marquis de Pisany, going to the Pope in the name of the Catholics of the kingdom; the King presses Maisse not to leave his post, and reports that Mayenne has slipped into Paris and found the people weary of the war and against the introduction of the Spaniard. Only the opening is transcribed and deciphered here; the full text is the Brienne 13 clear copy (fol. 102v), not yet transcribed."
+   },
+   {
+    "doc": "f373",
+    "label": "f. 373, 7 Nov 1592 (not transcribed; images only)",
+    "transcription": "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f422.item",
+    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f110.item",
+    "summary": "Henri IV acknowledges Maisse's letter of 4 October and will suspend final judgement until he sees what comes of the Gondi and Pisany missions, appealing to his Catholic friends' own interest against the ruin brought by the length of the war and the King of Spain's efforts. Neither the cipher leaf nor its contemporary clear copy (Brienne 13 fol. 104v) is transcribed in this repository; the links are to the Gallica images."
    }
   ]
  }

@@ -188,6 +188,12 @@
    "kind": "verification",
    "what": "Split from morosini1588 under the one-key rule: R53/R54 (F22b key) made their own entry; transcriptions, Lasry's key files and the decoder output moved here; Lasry credit scoped to the F22b key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): DECODE cipher transcriptions D1717/D1825; decryptions = the word-split decoder output copied from decode_updates/decryptions into texts/, plus plaintext_by_record.txt (both with Lasry's F22b key, decode/DOC_R53_D3187_3187.txt / DOC_R54_D3188_3188.txt).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -227,6 +233,10 @@
   ],
   "fraction_read": 0.752,
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/morosini1589/measure_sense.py: share of decoded letters in Italian word forms attested at least twice in the it-cinquecento corpora, after the LM word split (decode_updates/decryptions/R53.txt, R54.txt): R53 0.791, R54 0.707, both 893/1,187. Control: the 34 fully read Meister no. 40 records score 0.817 by the same measure. An upper bound on text read as sense."
+  "fraction_read_source": "targets/morosini1589/measure_sense.py: share of decoded letters in Italian word forms attested at least twice in the it-cinquecento corpora, after the LM word split (decode_updates/decryptions/R53.txt, R54.txt): R53 0.791, R54 0.707, both 893/1,187. Control: the 34 fully read Meister no. 40 records score 0.817 by the same measure. An upper bound on text read as sense.",
+  "texts": [
+   {"doc": "R53", "label": "R53, Francia 22/32, image 499v, [Tours, spring 1589]", "transcription": "decode/DOC_R53_D1717_1717.txt", "decryption": ["texts/R53_decryption.txt", "plaintext_by_record.txt"], "summary": "Morosini's clear covering passage says he waits anxiously for letters from Rome granting his leave. The cipher reports that the vice-legate of Avignon has arrived at Tours and lodged near Plessis, that 'si e fata una mescolanza ala corte di heretici et di catolici', and something of Mayenne ('Umena') near Le Mans."},
+   {"doc": "R54", "label": "R54, Francia 22/33, image 502r, Moulins, 11 May 1589", "transcription": "decode/DOC_R54_D1825_1825.txt", "decryption": ["texts/R54_decryption.txt", "plaintext_by_record.txt"], "summary": "Read in fragments only: the heretics growing stronger at court beside the Catholics ('mescolati gli heretici co i catolici ala corte'), the writer's own fears, and a request to make something known."}
+  ]
  }
 }

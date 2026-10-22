@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span class="long">deciphered copy</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#record">The record and its cipher</a><a href="#reading">The reading, from the decipherment on f. 86</a><a href="#residuals">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#record">The record and its cipher</a><a href="#reading">The reading, from the decipherment on f. 86</a><a href="#residuals">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Existing decipherment transcribed &middot; the whole cipher passage</span></p>
 <dl>
@@ -92,6 +92,62 @@ the DECODE images.</li>
 <li>Who wrote the letter and who the cardinal was. No signature survives on the images.</li>
 <li>The key table: it could be rebuilt by aligning f. 85 with f. 86, since the plaintext is complete, but the reading does not need it.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Unsigned letter to Montmorency, [1536], BnF fr. 3053 ff. 85-87, decipherment on f. 86 (DECODE R4248)</h3>
+<p>The writer, after a day in the country with &#x27;monsieur le cardinal Carafe(?)&#x27;, urged him that everything, above all the conduct of the war, should pass through Montmorency&#x27;s hands and that anything else was &#x27;fumee et vent&#x27;; the cardinal seemed persuaded, and said that the cardinal of Lorraine, in his capitulation with the Pope, had conceded things never thought of before, which they meant to undo. The decryption is the transcription of the contemporary clear decipherment on f. 86; the cipher of f. 85 was not transcribed sign by sign.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4248/R4248.md">R4248.md</a></p><pre># R4248 - letter to Montmorency (fr. 3053 f. 85, with a clear decipherment on f. 86), 1536
+
+Images: P2-P3 = f. 85r/v (letter, clear + cipher), P5-P6 = continuation (clear), P8-P9 = f. 86 (clear decipherment).
+No date or place is visible on the downloaded crops (the letter ends on P6 &quot;Hors deux jours je seray a Rome ...&quot; with
+folio number 87 at the foot; no signature seen).
+
+## Clear-text summary
+&quot;Monsieur le cardinal Carafe [?] et moy fusmes hyer en campagne pour parler ensemble suyvant ce que vous m&#x27;avons
+[avez] au paravant advisé. Le Legat feist tout son effort pour me mener le soir a Rome pour parler avec le pappe, ce que
+je le priay differer encores deux jours pour ma plus grande commodité.&quot; They talked all day; the cardinal professed
+himself entirely devoted to the King&#x27;s service. The writer then urged him (&quot;je luy remonstray apres ung long
+discours&quot;) - here the cipher begins. The clear links inside the cipher block read &quot;et partant&quot;, &quot;et que toute autre
+chose estoit fumee et vent&quot;, &quot;Je luy dys davantaige&quot;, &quot;comme&quot;, &quot;car en fin il falloit&quot;, &quot;Et seroit chose trop longue de
+vous racompter toutes les ...&quot;, &quot;Il me dist aussi qu&#x27;il&quot; etc. Later (P5/P6) in clear: the cardinal&#x27;s assurances; &quot;je
+ne veulx faillir de le vous escripre&quot;; he will be in Rome in two days to see the Emperor&#x27;s (?) ministers.
+
+## The cipher on f. 85 is NOT Mâcon&#x27;s cipher
+The glyph set is different: &quot;ǂ&quot; (triple-barred cross, very frequent, often word-final), &quot;W&quot;, &quot;~&quot;, &quot;α&quot;, &quot;∞&quot;, &quot;Ɛ&quot;, &quot;ꝗ&quot;,
+&quot;ʃ/∫ with loop&quot;, &quot;φ&quot;, &quot;#&quot;, &quot;11&quot;, &quot;z&quot;, &quot;k&quot;, &quot;30&quot; (frequent, apparently a null here, not &quot;pape&quot;). With Mâcon&#x27;s key
+(W = LL, ~ = null, 30 = pape) it decodes to nonsense. The signs match S. Tomokiyo&#x27;s second fr. 3053 table
+(img/francisMacon2.png: nulls 30, ǂ, 22; I/J = ~; L = 7/11; R = W; O = 3; U = α; P = ʃ; ...) - e.g. after &quot;et partant&quot;
+the cipher &quot;ꭓ m Ɛ 3 30 11 ǂ&quot; starts &quot;JE LE CO[NSEILLOIS]&quot; as in the decipherment. I did not rebuild the table; the
+decipherment makes it unnecessary.
+About 20 cipher lines: 2 on P2 (after &quot;apres ung long discours&quot;), ~11 on P3, ~9 on P5 (top).
+
+## Contemporary decipherment on f. 86 (P8-P9), transcribed
+f. 86 is a clear copy of the ciphered part of the letter (cipher + its clear connecting words), ending &quot;Il me dist
+aussi[..]&quot; with a &quot;#&quot; mark (the cue where the original resumes):
+
+&quot;[...] en toutes choses et particulierement celles de la guerre avoient a passer par voz mains, et partant je le
+conseilloie de s&#x27;adresser a faire fondement de vous seul, car c&#x27;est a scavoir le premier [pouvoir?], et que toute autre
+chose estoit fumee et vent. Je luy dys davantaige qu&#x27;il cognoistroit totallement le [Roy?] en ce jugement tant de la
+maniere de faire la guerre comme au lieu et du temps, par ce que en fin il falloit que tout homme feist son mestier et
+ceulx qui le font le mieulx sont les plus praticques. Et seroit chose trop longue de vous racompter toutes les
+particularitez de ce propos. Bien vous diray je que je trouve led. Sr cardinal enclin de luy mesme a suivre ce conseil,
+et l&#x27;ay laissé en volunté, comme il me semble en tout persuadé. Il me dict entre autres choses c&#x27;est y digne de vous
+estre escripte, que le cardinal de Lorraine par la cappitulacion faicte avec le Pape avoit accordé choses ausquelles
+auparavant ilz n&#x27;avoient jamais pensé, comme de partir [?] et autres qu&#x27;il me nomma, adjoustant par apres ces mesmes
+parolles qu&#x27;ilz estoient deliberez par leurs moyens [de] rompre [?] les conditions passees par led. seigneur cardinal
+de Lorraine, par ce qu&#x27;ilz congnoissoient qu&#x27;il leur avoit plus concedé que n&#x27;estoit le devoir, et que eulx mesmes ne
+vouloient, mais que a vous seroit remise toute l&#x27;application de qui vouldroient entierement se rendre, congnoissant ung
+seul fondement aux choses qui passeroient par voz mains. Il me dist aussi [#]&quot;
+
+Confidence in this transcription of the decipherment: ~85% of words (secretary hand, a few words [?]).
+It agrees with every clear link I checked on f. 85 (&quot;et partant&quot;, &quot;fumee et vent&quot;, &quot;Je luy dys davantaige&quot;, &quot;comme&quot;,
+&quot;car en fin il falloit&quot;, &quot;Et seroit chose trop longue ...&quot;, &quot;en tout persuadé. Il me dict entre autres choses&quot;).
+
+## Key notes
+- Mâcon&#x27;s key does not apply to this record. Cipher = Tomokiyo&#x27;s fr. 3053 &quot;table 2&quot; type; 30 and ǂ look like nulls.
+- If wanted, the full key can be rebuilt by aligning f. 85 with f. 86 (plaintext is complete).</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/r4248.json"></figure>
 <!-- replay:end -->

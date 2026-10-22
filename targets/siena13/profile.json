@@ -120,6 +120,12 @@
    "kind": "reading",
    "what": "Whole cipher deciphered; first word (baca?) and 'sabbatte' doubtful.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's decipherment and translation (reading.txt, translation.txt, lasry_report.md) and his key figure key_lasry.jpg with the table key.md; no transcription of no. 13 is in the repository (neither his CTTS transcription nor a project one).",
+   "result": "partial"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"}, 
@@ -160,6 +166,10 @@
     "published": false
    }
   ],
-  "notes": "Contributed; no. 16 (R4804) is the clear copy."
+  "notes": "Contributed; no. 16 (R4804) is the clear copy.",
+  "texts": [
+   {"doc": "R4801", "label": "No. 13 (R4801), a letter on the Pope and Bologna, [1527-1529] (George Lasry)", "transcription": [], "decryption": ["reading.txt", "lasry_report.md"], "translation": "translation.txt", "summary": "To 'V. S. Ill.ma': the Pope's agreements and the delay of his coming to Bologna have left 'qualche ruggine'; the writer would spend everything to abase the neighbours and, claiming some castle, do as Lautrec did when he took Modena and Reggio, 'perché al peggio non si ha sinon a rendere'. Dated 1527-1530 from the content, unverified; no. 16 (R4804) is its clear copy. Decryption and translation are George Lasry's, verbatim from his report; his CTTS transcription is not in the repository."}
+  ],
+  "key_file": ["key_lasry.jpg", "key.md"]
  }
 }

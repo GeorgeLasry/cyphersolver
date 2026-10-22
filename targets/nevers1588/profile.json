@@ -214,7 +214,8 @@
    "what": "fr-1600-letters LM on the runs as read: -1.56 per char (real text -1.1 to -1.8); 33/33 words read as French, 30/33 in the fr-henri4 corpus vocabulary (Caterine, perissoit, perist are not).",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 464 tokens, 44 types, fr-1600-letters order 4: reading -2.141 per letter; random keys -5.261 (z 8.2); key annealed onto shuffled ciphertext best -3.016 (mean -3.115, z 15.5); annealer on the real text -2.599. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 464 tokens, 44 types, fr-1600-letters order 4: reading -2.141 per letter; random keys -5.261 (z 8.2); key annealed onto shuffled ciphertext best -3.016 (mean -3.115, z 15.5); annealer on the real text -2.599. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 62 ciphertext.txt with reading.tsv and the NOTES reading copied to texts/f62_reading.md; f. 131 transcription, ciphertext, reading.md and reading.tsv; key key.md", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 464, "types": 44, "tokens_per_type": 10.55, "score": -2.141, "nulls": {"random keys": {"n": 200, "mean": -5.261, "sd": 0.379, "max": -4.504, "z": 8.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.115, "sd": 0.063, "max": -3.016, "z": 15.5, "p": 0.1429}}, "power": -2.599, "verdict": "pass", "notes": "claimed per-occurrence score -1.875; polyphony 0.06; 13 unread tokens left out; annealer on the real text from random keys reached -2.599"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -238,6 +239,32 @@
   "verification": ["historical consistency", "contemporary decipherment", "statistical test"],
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherments on f. 131 (and f. 139 glosses) of the same informant's letters"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "f62",
+    "label": "Paris, 29 April 1588, BnF fr. 3976 f. 62 (DECODE R3705)",
+    "transcription": "ciphertext.txt",
+    "decryption": [
+     "reading.tsv",
+     "texts/f62_reading.md"
+    ],
+    "summary": "A court informant writes to the Nevers household with the Paris news of late April 1588, a fortnight before the Day of the Barricades: Henri III was tempted in council to have five or six League leaders of Paris thrown in the water, was talked out of it by Villeroy and (probably) the Queen Mother, and Guise (9) answered that he had forty thousand men at his command."
+   },
+   {
+    "doc": "f131",
+    "label": "Paris, 4 June 1588, BnF fr. 3976 f. 131r",
+    "transcription": [
+     "f131/transcription.md",
+     "f131/ciphertext.txt"
+    ],
+    "decryption": [
+     "f131/reading.md",
+     "f131/reading.tsv"
+    ],
+    "summary": "The same informant reports the Hôtel de Ville assembly of 3 June moving to an apology to the King, rumours from Rouen about Brissac and Elbeuf, Meulan invested by Biron and Aumont, Corbeil surrounded by Guise, and Épernon at Loches saying that if he perished he wanted the whole kingdom to perish with him; a postscript says Savoy is arming to take the marquisate of Saluzzo. Every run carries a gloss of the time, and all agree with the key."
+   }
+  ],
+  "key_file": "key.md"
  }
 }

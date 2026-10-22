@@ -210,7 +210,8 @@
    "result": "partial",
    "date": "2026-10-05"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2876 tokens, 212 types, en-1640s order 4: reading -2.332 per letter; random keys -3.575 (z 10.7); key annealed onto shuffled ciphertext best -2.529 (mean -2.543, z 12.9); annealer on the real text -2.385. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2876 tokens, 212 types, en-1640s order 4: reading -2.332 per letter; random keys -3.575 (z 10.7); key annealed onto shuffled ciphertext best -2.529 (mean -2.543, z 12.9); annealer on the real text -2.385. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the v4 page transcriptions and final_v9.txt (latest tokens per line with the reading); key = R354 as read plus the unified key v6, the v7 codes, the shape pass and the nomenclator", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-1640s", "file": "validation.tsv", "tokens": 2876, "types": 212, "tokens_per_type": 13.57, "score": -2.332, "nulls": {"random keys": {"n": 200, "mean": -3.575, "sd": 0.117, "max": -3.293, "z": 10.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.543, "sd": 0.016, "max": -2.529, "z": 12.9, "p": 0.1429}}, "power": -2.385, "verdict": "pass", "notes": "claimed per-occurrence score -2.187; polyphony 0.054; 273 unread tokens left out; annealer on the real text from random keys reached -2.385"}, 
   "method": "read after matching with key from external sources",
@@ -244,6 +245,20 @@
   "notes": "Read in part with key R354: 68.9% of 2,727 non-null signs read as sense (measure_sense.py on final_v9.txt; the old non-[?] measure gave 74.7%). The contemporary decipherment (Harley 1582 ff. 5r-7v) is not digitised; ~40 rare codes are not on R354.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "key R354 (TNA SP 106/2 f. 162, 'France 1554'), matched, applied and corrected", "source": "DECODE R354"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R8499",
+    "label": "R8499, Nicholas Wotton to Queen Mary, Soissons, 13 June 1554 (Harley MS 1582 ff. 8-10)",
+    "transcription": [
+     "transcription_v4_p12.txt",
+     "transcription_v4_p36.txt",
+     "final_v9.txt"
+    ],
+    "decryption": "final_v9.txt",
+    "summary": "Dr Nicholas Wotton, English ambassador in France, reports to Queen Mary that Peter Carew was at Compiègne and spoke with the French king and the Constable, on the English rebels in France, and that the Constable discussed with Carew how the Isle of Wight might be taken and kept. Read with the 1554 France key DECODE R354; about 31% of non-null signs remain unread or tentative, and the contemporary decipherment (ff. 5r-7v) is not digitised. final_v9.txt gives the tokens per line beside the reading."
+   }
+  ],
+  "key_file": ["key_R354.md", "key_v6.md", "key_v7_codes.md", "shape_pass.md", "nomenclator_full.md"]
  }
 }

@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-the-key">The letter and the key</a><a href="#the-reading">The decrypted text</a><a href="#method">Method</a><a href="#what-remains">What remains</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-the-key">The letter and the key</a><a href="#the-reading">The decrypted text</a><a href="#method">Method</a><a href="#what-remains">What remains</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> Catalogue item 188 is a letter of 17 September 1590 to Louis de Gonzague, duc de Nevers. The cipher passages are two-digit figures written without breaks. Satoshi Tomokiyo&rsquo;s list of the Nevers ciphers describes no. 35 as &ldquo;used by the Duke of Mantua&rdquo; in 1590. That key is BnF fr. 3995 f. 64, headed <em>Per Cavare 1590</em>, and it fits the letter at once, applied unchanged. Figures 11&ndash;40 are letters with homophones, 41&ndash;99 are words and names, and signs stand for titles and common words. A sixteenth-century Italian language model chose between the writer&rsquo;s look-alike figures (3/9, 0/8, 7/8) when the digits were divided into pairs. 878 of 923 tokens decrypt to sense (95.1%, measured). Mantua reports that many believe Sixtus V (d. 27 August 1590) was poisoned by the Spaniards. He says the Italian powers want nothing more than Henri IV&rsquo;s conversion, and he assures Nevers, for the King, of his devotion to the French crown against the &ldquo;common enemy&rdquo;. Still open are four short garbled stretches (writer&rsquo;s slips and one looped code group), the same on both surviving images. No earlier decipherment was found on DECODE or in Tomokiyo&rsquo;s lists, which give the key but not this letter&rsquo;s text.</div>
 
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3979 f. 92r, via DECODE R4176 (image P2)"><img src="gonzaga1590_lead.jpg" alt="Lower half of f. 92r: clear text ending che la morte del Papa, then lines of unbroken two-digit figures" loading="lazy"><figcaption>BnF fr. 3979 f. 92r (DECODE R4176 image P2): the clear text runs to <em>che la morte del Papa</em>, then the figures <em>40 37 22 40 23 13 23 38 17 31 25 96 28 31 &hellip;</em> = <em>sia stata procurata con veleno da Spagnoli</em>. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3979 f. 92r, via DECODE R4176 (image P2).</span></figcaption></figure>
@@ -99,6 +99,207 @@
 </ul>
 <p>No other letter in this cipher is on DECODE, and there is no clear copy. The key is complete. The digits there are the same on the DECODE scans and the microfilm, so these are the writer&rsquo;s own enciphering slips; only a second copy of the letter would settle them.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>BnF fr. 3979 ff. 92-93, Vincenzo Gonzaga to Nevers, Mantua, 17 Sept 1590</h3>
+<p>Vincenzo I Gonzaga, Duke of Mantua, writes to his uncle Louis de Gonzague, duc de Nevers: he reports the rumour that Sixtus V was poisoned by the Spaniards, welcomes Henri IV&#x27;s expected conversion, and assures Nevers (for the King) of his devotion to the French crown against the &#x27;common enemy&#x27;, a guarded pro-Bourbon declaration of September 1590. Deciphered with Nevers cipher no. 35 (BnF fr. 3995 f. 64).</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_92r.txt">ct_92r.txt</a></p><pre># BnF fr. 3979 f. 92r (DECODE R4176 images P2-P4). Transcribed from the DECODE scans at 3x.
+# after &quot;che la morte del Papa&quot;
+p1l1 | 40372240231323381731259628312222338362516241530361639212296
+# decode: sia stata procurata con veleno da [96 Spagnoli]
+# after &quot;non lo potendo&quot; (runs on to &quot;del quale&quot;)
+p1l1b | 12133131324035
+# decode: far riso-
+p1l2 | 802815313622129828393130253135363516233139362523154023357284301336351640153124302332
+# was: 8028153136221298283931302531355936351623313993625123114023357204301336351640153124302332
+# note (blind re-read 4x, 21 Sept): no 59; 36 35 16 23 31 39 = contro, 36 25 23 15 40 23 35 = cotesto (one stray 1 after 36 25 omitted), 72 84 = Regno di Francia (ct had 72 04).
+# decode: -[80 = 30 l?]uere a fauor loro contro cotesto [72 Regno di] [84 Francia] la conser-
+p1l3 | 391615
+# decode: -uatione
+# after &quot;del quale&quot;
+p1l3b | 152136403721113122222313213823322723343719283916373223223037381634
+# was: 152136403721113122222313213823322723343719283916379373222322290{blot}3737381634
+# note (blind re-read 4x, 21 Sept): under the blot is the 0 of 30: 16 37 | 32 23 22 30 37 38 16 34 = ni | italiani.
+# decode: e desiderata da tutti i buoni italiani
+# after &quot;conoscendosi P.{sign}&quot;
+p1l4 | 381632361437303823223635231540233817352315162022{M}30371115213640113496
+# was: 38163322361433730382232223635231540233817352315162022{M}30371115213640113496
+# note (blind re-read 4x, 21 Sept): 38 16 32 36 14 37 30 38 23 22 = a n i c h i l a t a (one stray 2 in &quot;3 2 2&quot; omitted).
+# decode: anichilata cotesta potenza {M} li medesimi [96 Spagnoli]
+p1l5 | 173125362431153113163921344025233517353140322225181628163530131616212222382137{⊡}2138{che}
+# was: 173125333624311531131639213440252333351733353140322225181628163530131616212222382137{⊡}2138{che}
+# note (blind re-read 4x, 21 Sept): no extra 33s: 17 31 25 36 24 = procu-, 40 25 23 35 17 35 31 40 32 = sottoporsi as written. Tail still unread.
+# was: 1731253336243115311131363921344025233315173359353140322225181620163530131616212222382137{⊡}2138{che}
+# note: re-read at 3x (y≈500): 31 13 16 39 (not 31 11 31 36 39) = &quot;rano&quot;; 28 16 35 (not 20 16 35) = &quot;uno&quot;. 33 36 24 = &quot;ceu&quot; as written (procureranno with a stray 36). 23 33 35 17 33 35 31 40 32 = &quot;tcopcorsi&quot;: sottoporsi fits the sense but needs 33-&gt;34 and a dropped 33, left as written. Tail 30 13 16 16 21 22 22 38 21 37 unresolved.
+# decode: procureranno di sottoporsi a ognuno [la nda a a di] {⊡ S. Ecc.za} da {che}
+# after the ☐ line: runs to &quot;per i molti buoni&quot;
+p1l6 | 11344017373730383615
+# decode: mi spiace
+# after &quot;per i molti buoni&quot;
+p1l6b | 1512362332{che}11341731391115233225{che}161521361913163940151824373116
+# decode: effetti {che} mi prometto {che} ne debbano seguire
+# after &quot;della conuersione del Re al Catolicismo&quot;
+p1l7 | 3230{che}4015182836162139403424152115361437383122221115161623152222171531232222303038
+# was: 3230{che}40111518283616211339403434241521111536143737383122221115161623152222171531232222303038
+# note (blind re-read 4x, 21 Sept): no 11 after 40, no 13 before 39, one 34, one 37: 40 34 | 24 15 21 15 = si vede.
+# decode: il {che} seguendo si vede chiaramente aperta alla
+# after &quot;alla&quot; (line 8, to &quot;Serenissimo&quot;)
+p1l8 | 273422213330381831381621152022222132{che}15233133303833332438322115223336222132223623262215223315402333397284
+# was: 27342221333038381831383816221115201522222132{che}1523313330383833332438322115223336222132223623262215223315402333339720
+# note: re-read at 3x (y≈1200): 38 18 31 38 16 21 15 20 22 22 = &quot;a grandeza a&quot; (one 20 only, as written); 33 in 21 33 30 38 probably the scribe&#x27;s 36 (e): &quot;della&quot;. End re-read 39 72 84 (Regno di Francia), not 33 97 20. Middle 15 23 31 33 30 38 38 33 33 24 38 32 21 15 22 33 36 22 21 32 22 36 23 [26] 22 15 22 33 15 40 23 33 39 still nonsense (etr-la-acqu-ati de acce a di acet [Inglesi] ae a qu est co); 33 = q throughout (key has no q), so &quot;a qu[e]sto Regno di Francia&quot; at the end.
+# decode: [u]ia d[e]lla grandeza a di {che} [e tr.la acqu.. ati de acce a di acet (26 Inglesi) ae] a qu[e]sto [72 Regno di] [84 Francia]</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_92v.txt">ct_92v.txt</a></p><pre># f. 92v (IMG_R4176_I24620_P5 overview; strips P7 = l1-l5, P8 = l6-l8)
+# passage 1: after &quot;dell&#x27;altra lega, cose tutte&quot; ; ends before clear &quot;Mi è piaciuto infinitamente intendere che quello&quot;
+p92vl1 | {0Δ}{●-θ-}32162315313640152137402313232530132115243516391217
+p92vl2 | 3131324035302415313622363931153115301312393123281638{T}{4-sign}36251115123816393327
+p92vl3 | 38403423242337183037383023313217313716363717{⊔}163919373023221231131636154036
+p92vl4 | {9}21241937233816213940231316231530221139162115203822111530224024133625164036371516
+p92vl5 | 2038{●-}32163625403428163424153140223036351636253140394015303617254022391725
+p92vl6 | 31151113163638111516233522303336241635{θ}362516233921153038311530321837351615
+# note: l1 end &quot;1217&quot; read as written (7 clear) though &quot;far&quot; (1213 31) would fit; l3 after 22 I may have an extra 2 (read 2212311316 = &quot;francese&quot;); l4 &quot;22111530 22&quot; = &quot;amela&quot; where &quot;della&quot; (2115303022) is expected; l6 &quot;3336&quot; (alc-e-uno) the 36 is doubtful; ω-shaped 8 after 1 read as 18 (g)
+# decode: {0Δ}{●-θ-} interesse di stato la deuono f[p] | risoluere a correre la fortuna {T}{4-sign} come fanno c[27=Venetia] | a sì tutti gli altri principi {⊔} nobiltà francese {9} dubitando stante la mondezza a me[della?] la sua conscienza {●-} in così universal concorso se le posa [possa] opporre mancamento alc(e)uno {θ} conto della religione.
+# passage 2: after &quot;intendere che quello&quot;; clear &quot;ha scritto in Italia nel parti S.&quot; follows
+p92vl7 | {●-}323060
+# decode: {●-} ti l [60] -&gt; &quot;quello {●-}[..][60] ha scritto&quot; (60 a code word; 32 30 may be &#x27;il&#x27;)
+# passage 3: after &quot;nel parti S.&quot;; clear &quot;ò ò sia stato menzognero&quot; follows
+p92vl8 | {T}112516403218163931
+# decode: {T} Monsignor -&gt; &quot;{T} Monsignor ... sia stato menzognero&quot;</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/ct_93r.txt">ct_93r.txt</a></p><pre># f. 93r (img/IMG_R4176_I24620_P10.jpg; overview P9). P11 = lower half, clear text only; P13/P14 belong to other pages (no cipher).
+# Clear text before: &quot;... presupongo che questa mia la trouerà&quot;  |  after: &quot;Hò una lite in Milano di molta importanza ...&quot;
+# Signs: {circle-plus} = circle with cross; {bar-circle} = small circle on a horizontal bar; {T-sign} = T/Γ with hooked foot;
+#        {box-sign} = square with a vertical stroke rising from it (like ь); {blot-sign} = inked blob with bar (l10); {q-sign} = q-like 9 with descender standing apart (l4).
+p93l1 | 1732154039{circle-plus}1330383324
+# was: 1732154039{circle-plus}133030133224
+# note: re-read at 3x: 13 30 38 33 24 = &quot;alla qu&quot; (33 = q; the key has no q), running on to l2 &quot;22 30 15&quot; = &quot;ale&quot;. 17 32 15 40 39 = &quot;presso&quot; as written (32 for 31, one s).
+p93l2 | 22301530131732151839121332313227153136162022{bar-circle}111536251636153123371232
+# was: 22301530131732151839121331213132227113123616162022{bar-circle}111536251636153123371232
+# note (blind re-read 4x, 21 Sept): 12 13 32 31 32 27 15 31 36 16 20 22 = far riverenza (32 for 31 and 27 for 28, the writer&#x27;s habits).
+p93l3 | 3622313038211530133923371122221137382839302516231324153140353230402425
+# was: 36223130382115301339239711222118738282839302516231324153140353230402425
+# note: re-read at 3x: 39 23 37 11 22 = &quot;otima&quot; (the 97 was the 3 of 37 plus a flourish), then 22 11 37 38 = &quot;(a) mia&quot; (one 22 extra as written), 28 39 30 25 16 23 13 = &quot;volontà&quot;.
+p93l4 | 311538304015312732233735{Γ}{●}40343639111591435111316363823335321633324 15
+# was: 311538304015312732233735{Γ}{●}40343639111591435111316363023335321633324 15
+# note: Gallica btv1b9060544v f162: the figure after 36 is the looped 8, not 0: 14 35 11 13 16 36 38 23 [33] 35 = &quot;ho mancato&quot; (one stray 33, writer&#x27;s slip). The q-like sign before 14 is the key&#x27;s ♀ = non, and the {●} after {Γ} = che: &quot;si come non ho mancato in quello che ho potuto sin hora&quot; (read, 21 Sept, Gallica pass).
+# note (blind re-read 4x, 21 Sept): 32 16 33 24 15 | l5 30 35 = &quot;in quello&quot; (33 = q), not &quot;[..] e lo&quot;.
+# was: 311538304015312732233735{T-sign}{bar-circle}40343639111591435111316363023335321633324 15
+# note: re-read at 3x: the two signs after &quot;servitio&quot; are Γ (di, as on f.92v &quot;{T} Monsignor&quot;) and a filled ● with bar (che), not the θ-bar per sign.
+p93l5 | 3035{bar-circle}1439173523272325403716143531 38{T-sign}21133116153613172231303639403440
+# was: 3035{bar-circle}143917352327232540371614935323080{T-sign}21133116153613172231303639403440
+# note: Gallica btv1b9060544v f162: after 40 37 16 (sin) the figures are 14 35 31 38 = &quot;hora&quot;; DECODE&#x27;s 9 was the descender of the 3, and 32 30 80 are 31 38 (ʅ = 1, looped 8).
+p93l6 | 32134037362031343022{circle-plus}{bar-circle}39302331153030131134222173031233736353022313716
+p93l7 | 903216382334391615271531403536252315402330363531251613{box-sign}17222311151623153022
+p93l8 | 363916{circle-plus}18183032371623153136403436251623391353230588183625112441615161511343639
+p93l9 | 1115303631151621363130162540151117311521152425233240371125401531243423393136
+p93l10 | 362511152222315111735{box-sign}302425183536391624151637361623 15{blot-sign}363516394036153122
+p93l11 | 361437383113111516233621222118303237712152334
+# note: &quot;27&quot; read in l3(end 4-5)/l4/l5/l7 each time where context needs 28 = u/v (servitio, potuto, e verso): the scribe&#x27;s 8 there looks like 7, or I misread; left as seen.
+# note: l1 &quot;1732154039&quot; decodes pieso (preso/presso?), 32 may be 31. l1-l2 &quot;133030133224|22301530 13&quot; = alla i u a l e l a: unclear.
+# note: l2 &quot;...121331213132227113123616162022&quot; (x 1150-2150) uncertain digit by digit; decodes far d r i a [71?]..nn za; possibly ...licenza/presenza.
+# note: l3 &quot;2397&quot; -&gt; probably 23 37 (ottima); &quot;2118738282&quot; before &quot;39302516 2313&quot; (volontà) unclear, 8s/0s uncertain.
+# note: l4 &quot;1636302333&quot; after 14351113 probably &quot;ho mancato&quot;/&quot;ho mandato&quot;; digits uncertain.
+# note: l5 &quot;14935323080&quot; uncertain (tens 9 impossible); l6 &quot;2217303123&quot; uncertain.
+# note: l7 &quot;17222311151623153022&quot; decodes patmentela (parimente la?); a digit may be lost.
+# note: l8 &quot;1818&quot; before 3032 37 (gli) may be one 18; &quot;13532305881836251124416&quot; = contro il ? comune: several digits wrong, phase lost here.
+# note: l10 start &quot;3625111522223151117 35&quot; has one 2 too many for &quot;come a tempo&quot;; l11 &quot;3237712152334&quot; -&gt; gli effetti, 7 likely misread.
+# note (pass 2): l2 middle re-read at 3x, digits still do not give a word; &quot;far riverenza per me&quot; fits the sense but is not in the digits as seen. l5 &quot;14 9 35 32 30 80&quot; after &quot;sin&quot; (hora?) still unread. l8 re-read: 36 25 16 23 [39 13 53 23 0] reads best as 31 35 32 30 (&quot;contro il&quot;), then 4 looped glyphs (5? 8 8 8, dotted) = a code group before 36 25 11 24 16 15 &quot;comune&quot;; left as transcribed.
+# decode: presso {⊕ S. M.tà} alla quale la priego far riverenza {θ per} me con certificarla della otima (a) mia volontà verso il suo Re, al servitio {Γ di} {● che} si come {♀ non} ho mancato in quello {sign: che} ho potuto sin hora {Γ di} darne c[..] parte, e si stia sicura la {⊕ S. M.tà} {θ per} oltre la mia particolar inclinatione e verso cotesta corona {⌊ et} parimente la con {⊕ S. M.tà} gli interesi contro il [code, 58/81/88?] comune nemico me le renderà sempre devotissimo servitore come a tempo {⌊ et} luogo conveniente {●} conoscerà chiaramente da gli effetti.
+# was-decode: presso(?) {circle-plus} alla ... la piego far ... {bar-circle} me concertifi|carlo della ottima ... volontà verso il suo Re al servitio {T-sign}{bar-circle} si come {q-sign} ho man(cato/dato) ... con ... e lo {bar-circle} ho potuto sin hora ... {T-sign} darne ca... parle o si sta sicuri la {circle-plus}{bar-circle} oltre la mia particolar inclinatione e verso cotesta corona {box-sign} pa(ri)mente la con {circle-plus} gli interessi contro il ... comune nemico me le renderà sempre devotissimo servitore come a tempo {box-sign} luogo conveniente {blot-sign} conoscerà chiaramente da gli effetti.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gonzaga1590/reading.md">reading.md</a></p><pre># Vincenzo Gonzaga to Nevers, Mantua 17 Sept 1590 (BnF fr. 3979 ff. 92–93): working reading
+
+Clear text is plain, deciphered passages are **bold**, `[..]` marks a piece still unread, `[?]` a doubtful
+word. Code words and signs are resolved from the key (fr. 3995 f. 64) and shown in the reading. The spelling is the
+writer&#x27;s (single consonants, *u* for *v*). The digits, with the old readings kept in `# was:` lines, are in
+`ct_92r.txt`, `ct_92v.txt` and `ct_93r.txt`.
+
+## f. 92r
+
+*17 de Sett.re 1590.* Ill.mo et Ecc.mo Sig.r mio Zio Oss.mo
+
+Mi trovo debitore di risposta à quattro di V. Ecc.a, l&#x27;una del 12, l&#x27;altra del 27, la terza del 20 di Luglio, et
+l&#x27;ultima del 6 Agosto, alle quali andarò rispondendo per ordine, pregandola ad iscusarmi se hò tardato à farlo,
+perche la morte di N. S.re successa alli 27 del passato à 23 hore, n&#x27;è stata cagione, parendomi ispediente che l&#x27;E. V.
+sia de primi avisati del successore che piacerà à Dio darci, non lasciando di dirle, che è opinione di molti, che la
+morte del Papa **sia stata procurata con veleno da Spagnoli**, non lo potendo **far risolvere a favor loro
+contro cotesto Regno di Francia, la conservatione** del quale **e desiderata da tutti i buoni Italiani,** conoscendosi P.— **che, anichilata cotesta
+potenza, {M} li medesimi Spagnoli procureranno di sottoporsi a ognuno [..] S. Ecc.za da che mi spiace** per i molti
+buoni **effetti che mi prometto che ne debbano seguire**, et veram.te da tutti i Potentati Italiani non è cosa più
+desiderata della conversione del Rè al Catolicismo, **il che seguendo, si vede chiaramente aperta alla via della
+grandeza a di che [..] a questo Regno di Francia.**
+
+S&#x27;io non hò mandato sin hora altro huomo in iscambio del Malegnano, è proceduto dalla carestia de soggetti fedeli,
+sufficienti, et sbrigati, tuttavia hò finalm.te fatto elettione di Giulio Capilupi, il quale frà poco si porrà in
+camino per costà. Ringratio V. E. degli amorevoli avertimenti che l&#x27;è piacciuto darmi intorno alla fabrica della
+Cittadella di Casale, et ne farò quel capitale nell&#x27;essecutione che meritano la prudenza, intelligenza, et
+amorevolezza di lei. Farò pigliar informatione di quel Vincenzo Badalocchio proposto all&#x27;E. V. per sec.rio in Roma, et
+della relatione che ne haurò, ella ne sarà fedelm.te avisata. Fù vera la retentione in casa del
+
+## f. 92v
+
+Patriarca Alessandrino, et la carceratione di due P.ri Giesuiti per haver questi à suggestione di quello nelle
+prediche moteggiato contro le attioni di S. S.tà in questi motivi di Francia, mà furono liberati poco dopo. Il
+Piccolomini è dichiarato ribelle del Gran Duca per molti suoi misfatti, mà non già perche l&#x27;havesse trattato in Siena,
+mà egli hà la testa che vale per le taglie poste da S. A. et da altri Potentati molte decene di migliaia di scudi,
+et è così perseguitato dal Gran Duca in tutti i modi che hà carestia di terreno, et è di già abbandonato da suoi
+seguaci, sì che non può tardare à dar nella rete, et tanto basti per risposta della sua del 27. Stata aperta à Lione
+da deputati della Città. Ringratio V. E. degli avisi quali le è piacciuto darmi, et mi spiace sommam.te il danno
+ch&#x27;ella patisce nel suo Palaggio di Parigi, mà molto più la prigionia della S.ra sua figlia, et mia cugina, et
+l&#x27;occupatione de suoi beni fattale da quelli della lega, cose tutte [{0Δ}] **che per interesse di stato la devono
+far risolvere a correre la fortuna di [{4-sign}] come fanno Venetia et sì tutti gli altri principi et nobiltà
+francese [{9}] dubitando stante la [..] la sua conscienza, che in così universal concorso se le possa opporre
+mancamento alcuno per conto della religione.** Mi è piacciuto infinitam.te intender che quello **che il Legato** hà
+scritto in Italia nel partir **di Monsignor** [..] sia stato menzognero, et prometto a V. E. che ne godo altretanto di
+presente, quanto grande fù il travaglio che m&#x27;apportò l&#x27;aviso in contrario che hebbi di buonissimo luogo. Stante
+quello che V. E. mi scrive colla sua del
+
+## f. 93r
+
+6 d&#x27;Agosto, presupongo che questa mia la troverà **presso S. M.tà, alla quale la priego far riverenza per me, con
+certificarla della ottima mia volontà verso il suo Re, al servitio di che, sì come **non hò mancato** in quello
+che hò potuto **sin hora** di darne c[..] parte, e si stia sicura la S. M.tà per[?] oltre la mia particolar
+inclinatione, et verso cotesta corona, et parimente la con S. M.tà gli interessi contro il [..] comune nemico, me le
+renderà sempre devotissimo servitore, come a tempo et luogo conveniente conoscerà chiaramente da gli effetti.**
+
+Hò una lite in Milano di molta importanza con la Duchessa Dorotea di Bransvich per servitù della quale mi
+bisognarebbe giustificare ch&#x27;ella goda in Francia la Contea di Clermont che era del marito, di che suppl.co V. E. a far
+pigliare quanto prima diligente informatione, et trovandosi che così sia, farne cavar fede autentica, et mandarmela
+subito, poiche giustificato questo punto la vittoria restarebbe sicura dal canto mio. Se bene la Zifra mandata da
+V. E. è molto artificiosa, nondimeno porta seco qualche difficoltà, massime quando si fà qualche errore nel zifrato,
+però le piacerà servirsi dell&#x27;ultima che le mandai, la quale s&#x27;è adoperata anco nella presente. A Firenze hò fatto
+inviare le lettere mandatemi dall&#x27;E. V. alla quale bacio le mani pregandole da Dio longo, et felice corso di vita [..]
+
+(The close and signature, below P11, were not re-read in this pass.)
+
+## Tokens read vs unread
+
+Gallica pass (21 Sept): the six stretches were re-read on the independent BnF microfilm (Gallica btv1b9060544v, canvases 160-162). 93r &quot;sin hora&quot; and &quot;hò mancato&quot; read (+14, and 93r l5 is 1.5 tokens shorter, 3 spurious digits); the 92r l5 tail shows one 16, not two; 92r l8 middle, 92v and the 93r l8 code group match the DECODE digits and stay unread.
+
+One token is one figure pair or one sign; nulls count as read. Totals are measured from the digit lines of
+`ct_92r.txt`, `ct_92v.txt`, `ct_93r.txt` (digits ÷ 2 + signs, the {blot} not counted), after the blind 4x re-read of
+21 Sept removed the spurious digits it found (hence 926, not the earlier 945). Unread counts are the lengths of the
+unread stretches, counted in pairs.
+
+| page | tokens | unread | read |
+|---|---|---|---|
+| f. 92r | 328 | 37 | 291 |
+| f. 92v | 233 | 6 | 227 |
+| f. 93r | 362 | 2 | 360 |
+| **total** | **923** | **45** | **878 (95.1%)** |
+
+Read in the blind re-read (21 Sept, 4x, digits taken before the old transcription was opened): 92r &quot;contro cotesto
+Regno di Francia&quot;, &quot;tutti i buoni Italiani&quot;, &quot;anichilata cotesta potenza&quot;, &quot;sottoporsi&quot; as written, &quot;si vede
+chiaramente&quot;; 93r &quot;far riverenza per me&quot;, &quot;in quello&quot;. Two stray digits (92r l2, l4) are left out as writer&#x27;s slips.
+
+Unread pieces (each re-read independently at 4x twice; blocker: illegible, writer&#x27;s slips or looped glyphs):
+
+- 92r l5 tail (~10): &quot;la nda a a di&quot; (30 13 16 16 21 22 22 38 21 37) before ⊡.
+- 92r l8 middle (~27): &quot;e tr.la acqu.. ati de acce a di acet [26 Inglesi] ae&quot; before &quot;a questo Regno di Francia&quot;.
+  Writer&#x27;s slips; re-read twice and run through the beam with any-digit substitution, no Italian.
+- 92v (~6): &quot;la mondezza a me&quot; (dubitando stante la ..). The signs {0Δ}, {4-sign}, {9} are nulls on the key.
+- 93r l4 middle: read. The q-like sign is the key&#x27;s ♀ = non and the ● after it = che: &quot;sì come non hò mancato in quello che hò potuto sin hora&quot; (digits 14 35 11 13 16 36 38 23 33 35, one stray 33, writer&#x27;s slip). (The rest was read from the Gallica microfilm, btv1b9060544v f162: 36 38, not 36 30, gives &quot;mancato&quot; with one stray 33.)
+- 93r l5: read from the Gallica microfilm (btv1b9060544v f162) as 14 35 31 38 &quot;hora&quot;; no longer unread.
+- 93r l8 (~2): a looped, dotted code group before &quot;comune nemico&quot;.</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/gonzaga1590.json"></figure>
 <!-- replay:end -->

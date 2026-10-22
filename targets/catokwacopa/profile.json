@@ -141,7 +141,8 @@
    "kind": "verification",
    "what": "Sense measure (measure.py): a character counts only if a misprint-free, forced reading consumes it and the words score as English. The 0.747 figure had counted lines 5, 6, 13, 19, 20 and 21 on proposals with misprints or no reading. Result 257/470 = 0.547 (8 May 0.563, 20 May 0.530).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): texts/ads-1875_transcription.txt copies Ernst's BNA-checked text and line pairing from ads.py; texts/ads-1875_decryption.md is the saved line-by-line output of measure.py (published readings the letters force, unread lines with their reason).", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -202,6 +203,9 @@
     {"who": "bosbach", "role": "prior solution", "note": "DYING DECLARATION"},
     {"who": "estes", "role": "prior solution", "note": "Oxford vocabulary (with 'Dave'): SUMMER TERM, 1853, CONINGTON, JOWETT, BALLIOL ..."},
     {"who": "krajcovic", "role": "prior solution", "note": "QUI FIT (Horace, Satires 1.1) and 2026 exact-cost audits"}
+  ],
+  "texts": [
+   {"doc": "ads-1875", "label": "The Standard, 8 and 20 May 1875 (both halves)", "transcription": "texts/ads-1875_transcription.txt", "decryption": "texts/ads-1875_decryption.md", "summary": "Two personal advertisements signed W. in The Standard, whose lines pair up as two order-preserving halves of one plaintext with letters dropped. The forced lines give the Oxford reading in outline: SUMMER TERM 1853, a cap taken away at a college party, Conington's and Jowett's lectures, the Hertford scholarship examination, a second motto (QUI FIT, Horace), TOLD SHIRLEY, DYING DECLARATION."}
   ]
  }
 }

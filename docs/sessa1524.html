@@ -51,7 +51,7 @@
 <div class="seal partial" aria-hidden="true"><span>adjacent text</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents and their date</a><a href="#cipher">The cipher</a><a href="#reading">The letter of 18 April 1524</a><a href="#r9873">The letter of 14 April 1524 (R9873)</a><a href="#r9898">The letter of 24 February 1525 (R9898)</a><a href="#method">How the key was rebuilt</a><a href="#open">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents and their date</a><a href="#cipher">The cipher</a><a href="#reading">The letter of 18 April 1524</a><a href="#r9873">The letter of 14 April 1524 (R9873)</a><a href="#r9898">The letter of 24 February 1525 (R9898)</a><a href="#method">How the key was rebuilt</a><a href="#open">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; partial &middot; f. 128: 104 of 116 tokens; R9873 92.8%; R9898 79.8%</span></p>
 <dl>
@@ -160,6 +160,272 @@
 <li>The clause <em>los m-re que r-ido los que no m-r-e-van</em>: every sign has a value, but the sequence is not yet Spanish, so one value in it is wrong.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R9877 / R9878, Rome, 18 Apr 1524 (RAH Salazar A-31 ff. 128-131)</h3>
+<p>The Duke of Sessa, imperial ambassador in Rome, to Charles V (DECODE&#x27;s &#x27;1424&#x27; is a typo): the bishop of Veroli&#x27;s report from Constance on the Swiss diet and cantons arming for France; in cipher, that the Pope&#x27;s secretary Felice would not show the bishop&#x27;s own letters, that the report agrees with what the bishop wrote to the postmaster, and that Sessa asked the Pope for a provision for the Swiss business, having opened the peace-and-truce negotiation. Key rebuilt from the sibling letters&#x27; contemporary decipherments.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/transcription_f128.txt">transcription_f128.txt</a></p><pre># Sessa -&gt; Charles V, Rome 18 Apr 1524 (RAH 9/31 = Salazar A-31 f.128r-v; duplicate ff.130-131). Cipher passage, pass 1.
+# Two copies collated (f.128 = R9877_P1 right page; f.130 = R9878_P1 right page). f~ = clear/cipher switch. ꝑo = plural-s sign.
+# ꝺ and 3 are two r-like signs not yet told apart reliably; g and 3 similar; x and ⅄ similar.
+[clear] ... exortase a sus. q buscase alguna buena forma de paz. esto es lo q me ha Referido α—
+L0: f~ v db mus ꝑo rad ꝑo vo ꝑo ler le mus ꝑo lif 3 z y gap le nf 4 do x
+L1: ꝑo Jim nf g ttt bo3 do gap sof ꝺ x α boe ꝺ an # 4 gap g3 oo Є x ꝺ o     (f.130: ...gap g3 oo Є x ꝺ o)
+L2: Є x ꝺ α suf 4 cih ꝑo z rus hay lex f~ me parece q concuerda mucho
+L3: con lo primero y postrero q el dicho obpo dize al maestro de postas
+L4: f~ bla g qid mus 4 ꝺ α α coh α f~ pedirle q haya provisio f~ sof
+L5: per ꝺ α kel ꝑo ttt α ꝑo Jim sof cum nf g ꝺ cih α g ꝺ qid ram
+L6: kef ꝑo v ⅄g gap ꝺ boy kef ꝑo gap lex v ꝺ g bad do f~ pues tiene
+L7: color para ello / aviendo comenzado f~ mus hud suf α Jep 4 bob ꝺ
+L8 (f.128v): q α f~ entender lo q mas podre α— Al visorrey escrivo en el mismo punto / Sa.ma Ce. Ca. Mt. nro sor guarde la Sa.ma persona de V.M. con augmento de mayores Reynos e Senorios / De Roma xviij de Abril 1524
+
+# ---- pass 2 (token sheets tok/f128_L*.png, lines located by ink profile; token numbers in brackets) ----
+# Signs: ꝑo = plural -s (follows the group); ꝑ = y (the p-with-bar sign, = q+ of pass 1); Ɉ = d (hooked y-like sign, distinct from g); ꝺ = r (6-like); 3 = i; g = e; nf = p; 4 = o; α = a; ott = t; tto = b; ttt = c(a)?; cih = su.
+P1: f~ v db | mus | ꝑo?rad | ꝑo?vo | ꝑo | lex | le | mus ꝑo | lif | ꝺ z y | gap | le | nf 4 | do x
+P2: ꝑo | Jim | nf g | ttt | bo3 | do | gap | sof | ꝺ x | α | boe | ꝺ an | # 4 | gap | ꝺ 3 | oo | Є
+P3: Є | x | ꝺ | α | suf 4 | cih | ꝑo | z | rus | hay | lex | f~ me parece q concuerda mucho
+P4: con lo primero y postrero q el dicho obpo dize al maestro de postas
+P5: f~ | b | la | g | qid | mus | 4 ꝺ α | α | coh | α | f~ pedirle q haya provisio f~ | sof
+P6: per ꝺ α | kel ꝑo | ttt α ꝑo | Jim | sof | cum | nf g ꝺ | cih | α Ɉ | 3 | qid | ram
+P7: kef ꝑo | ⅄ | g | gap | ꝺ | boy | kef ꝑo | gap | lex | v | ꝺ | g | bad | do | f~ pues tiene
+P8: color para ello / aviendo comenzado f~ | mus | hud | suf α | lep | ꝑ | bob | ꝺ</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/texts/f128_decryption.md">f128_decryption.md</a></p><pre># f. 128 (R9877, duplicate R9878): Sessa to Charles V, Rome, 18 Apr 1524, the reading
+
+Copied 22 Oct 2026 verbatim from NOTES.md, section 3. The cipher transcription is `transcription_f128.txt`; the key `key_working.md`.
+
+## 3. Reading of ff. 128–131 (2026-09-18, in part; eight passes, see key_working.md)
+
+Clear opening (f. 128r): *Teniendo escripto y cerrado el pliego del duplicado de xiiij deste que sera con esta, vi
+una letra del obispo Verulano que esta en Constancia, de que aqui embio copia. Luego embie a Su Santidad a
+suplicalle me mandase avisar de alguna particularidad para dar noticia della do conviniese. Mandome a mi Felice su
+secretario, el qual me ha dicho que las letras que tiene son del dicho Verulano de vj y vij del presente, do dize
+que hera acabada la dieta, y que Lucerna no concluyo de dar ayuda a franceses; que los cantones de Berna y Friburk
+y Solodor, y para mas facilitarla y traer los animos del pueblo, publican que los suyços en Lombardia estavan
+cercados y en grand peligro, con que juntava hasta el numero de ocho mill, que davan nombre de partir muy presto,
+pero que el no podia saber el quando, por estar en Costancia donde algunos de sus amigos de Suyça le escrivian para
+que exortase a Sus. que buscase alguna buena forma de paz. Esto es lo que me ha referido.*
+
+Cipher (eight lines on f. 128r, one on f. 128v; the duplicate ff. 130–131 is token-for-token the same). Method:
+every line cut into tokens by `tokens.py` (sheets in `tok/`, one PNG per token in `tok/*_tiles/`), the same done
+for the deciphered siblings f. 138, ff. 168v, 170–171 and 322, and values assigned by aligning those against
+their clears (f. 140, f. 172, f. 324). Transcription: [transcription_f128.txt](transcription_f128.txt).
+
+&gt; ¶ las dichas [vo]s no le las mostraron, que le ponen sospecha que desea aver algo que r-e-f-i-e-r-a de lo suso
+&gt; [ruc] [hay] no / **me parece que concuerda mucho con lo primero y postrero que el dicho obispo dize al maestro de
+&gt; postas** / hablé en la ora a Su Santidad a **pedirle que haya provisión** de [pa]-r-a los casos de suyços,
+&gt; persuadiéndole los m-re que r-ido los que no m-r-e-van / **pues tiene color para ello, aviendo començado** la
+&gt; plática de la paz y tregua r-[…] **entender lo que mas podré. Al visorrey escrivo en el mismo punto.**
+
+Sense: Felice will not show Sessa the bishop&#x27;s own letters, since they make him suspect that Sessa wants to get
+something out of them for himself; Sessa nonetheless finds the report consistent with what the bishop writes to
+the postmaster (Gabriel de Tassis: his Italian letter of 6 April, *tutti Elvetij son in arme … expedisca volando a
+Milano et Roma*, is bound as f. 131); he went at once to the Pope to ask for a provision of money for the Swiss
+business, persuading him that he has the colour (pretext) for it, having opened the peace-and-truce negotiation.
+This is the news Bergenroth abstracts from the 22 April letter (CSP 643).
+
+Pass 10 (the January 1525 letter R9897, same cipher, verbose clear on ff. 14v–15; fetched with the saved DECODE
+cookie) attested `rad` = *dicha*, `boy`/`bez` = *-ido*, `Є` = *h*, `kel` = `kef` (*los*), and `lif 3` = *quiere*
+(key_working.md, pass 10). Unread now: `vo` (the noun after *dichas*: the bishop&#x27;s letters or their copies),
+`z y` (the verb after *quiere*, *mostrar* from the sense), `per`, `rus`, `hay`, and the clause *los m-re que r-ido
+los que no m-r-e-van*, where one sign value (probably `v`) is still wrong. The other 1525 letter, R9898 (14 pp.),
+was then read through as well (pass 12): it seemed to carry no decipherment (wrong: see section 5, it has six marginal ones), so it gave only
+contexts (`z y` also after *si*; `ruc`/`rus` is a person who *ha respondido*; `hud` again in *la plática de la paz*).
+Pass 13 (the 24 July 1524 letter R9893, cipher f. 483 with its clear on f. 485) corrected `lif` to *mostrar*
+(*ni se quiere mostrar* = `lep dim fa lif 3 α`, `fa` = *quiere*) and gave `zum` = *hay*, `tas` *cosa*, `luh`
+*mundo*, `qit` *estado*, `lic` *monsieur*, `gel` *qual*. Open now: `vo`, `z y` (after *mostrar*; also after
+*si* in 1525; probably a conjunction, *porque* or *diziendo*), `per`, `rus`/`ruc` (a person), and the clause
+*los m-re que r-ido*.
+
+Pass 14 matched templates of the unread tokens against every downloaded page (`tmatch.py`). The September 1523
+letter R9834, whose cipher faces its clear on f. 38, gives `z y` = *-on* (*dilataron*, *concedieron*), so the first
+sentence reads *las dichas [vo]s no le las mostraron*. `ruc` and `hay` occur only in the 14 April 1524 letter R9873,
+which has no decipherment; `vo` and `per` match nowhere. Those four are the residue.
+
+The seven 1523 Sessa letters DECODE marks &quot;Decrypted&quot; (R9676, R9691, R9693, R9781, R9834, R9836, R9841; about 50
+pages, fetched into `img/` with the cookie) use **the same cipher** (`sof`, `gap`, `ram`, `bas`, `qes`, `lex`, `cih`
+all recur; R9781&#x27;s August 1523 cipher block has its clear on f. 651). They are the remaining source for the four
+open groups; aligning them is the same token-sheet work as passes 1–13. Pass 11 (the rest of
+R9897, ff. 10–13v, against ff. 14v–15) confirmed `hud` = *plática*, `rad` = *dicha*, and added *larga*, *fue*,
+*esto*, *tiempo*, *para*, *después*, *llegar*, *miento*, but none of the five (key_working.md, pass 11).</pre></details>
+<h3>R9873, Rome, 14 Apr 1524 (RAH Salazar A-31 ff. 79-86)</h3>
+<p>Sessa to Charles V, a holograph with cipher runs and a postscript wholly in cipher; no decipherment is bound with it (Bergenroth&#x27;s CSP Spain ii 637 calendars Goicoechea&#x27;s 19th-century reading, and nos. 636/638 the triplicate and the court abstract, used only as a topic crib). Transcribed in full; each line (a) cipher, (b) reading.</p>
+<p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/r9873_cipher.txt">r9873_cipher.txt</a></p>
+<p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/r9873_cipher.txt">r9873_cipher.txt</a></p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/read_r9873.md">read_r9873.md</a></p><pre># R9873: Duke of Sessa to Charles V, Rome, 14 April 1524 (RAH Salazar A-31 ff. 79-86)
+
+Status: read in part (2 Oct 2026; pass 17 3 Oct 2026). Transcription and reading line by line: [r9873_cipher.txt](r9873_cipher.txt).
+Key: [key_working.md](key_working.md), passes 1-16. Measured with `python measure_read.py r9873_cipher.txt`.
+
+## The document
+
+DECODE R9873, 8 images (P1 = f. 86v address + f. 79r; P7 = ff. 79v-80r; P3 = 80v-81r; P5 = 81v-82r; P2 = 82v-83r;
+P4 = 83v-84r; P8 = 84v-85r; P6 = 85v-86r). Holograph, clear with cipher runs on ff. 80v-84r and a postscript wholly in
+cipher on f. 86r, dated in clear *A xiiij de Abril 1524*. ff. 79r-80r, 84v-85v are clear.
+
+No decipherment is bound with it. Bergenroth (CSP Spain ii no. 637) calendars it as &quot;deciphered by Don Manuel de
+Goicoechea&quot; (19th century) and &quot;in all essential parts identical with&quot; no. 636, the triplicate of the same despatch
+(Gayangos MS, contemporary deciphering), and no. 638 is a court abstract of it with Gattinara&#x27;s notes. Those three
+abstracts ([csp/csp2_636_638.txt](csp/csp2_636_638.txt)) were used as a topic crib only: they paraphrase in English,
+so no group value was taken from them without a second Spanish context.
+
+## Measurement
+
+| | tokens |
+|---|---|
+| cipher tokens in the (b) reading | 2,473 |
+| read as sense, pass 16 | 2,165 (87.5%) |
+| read as sense, pass 17 (pooled tentative values; key_working.md) | 2,295 of 2,474 (**92.8%**); strict, pass-17 values open: 87.8% |
+| in open code groups | 256 |
+| spelled letters that do not make a word (a sign value or a transcription slip) | 52 |
+| tentative values counted as read | 69 groups |
+
+`lm.best_language` on the assembled reading: es-modern -2.03, ca -2.35, pt -2.67.
+
+## Content (cipher passages, in order)
+
+- **f. 80v-81r.** The disbanding of the army in Navarre was already known in Rome; it is said there that the Emperor
+  will hold cortes in Burgos and then in Aragon and Catalonia and, with the service granted, come to Italy, which
+  does not please this court. The coming of the Archbishop of Capua (he left Blois on the 7th with the truce
+  articles; the Pope had a copy given to Sessa) would settle *estas alteraciones*. Sessa proposed two things: that
+  the archbishop go from France to England first, *para satisfazer a la autoridad del rey*, and that the King of
+  France pay the King of England the pension he used to pay before the war, for the length of the truce. Starting
+  from the Pope it would have been easier; it was not done, *no se si del poco aparejo que saben* there is for
+  carrying the war on; they try to settle things with less difficult conditions. Couriers by sea and by land
+  (Rodrigo de Mayorga); the coming, quality and nature of *el dicho duque*.
+- **f. 81v.** The Emperor&#x27;s estimation; the 4,000 ducats the Lodi men took at the Stradella, sent by the Pope *con
+  nombre que yva al [kam] de su casa*.
+- **f. 82r.** The Pope at first *muy bravo*, then cooled; his difficulty in contributing to the army; the Florentines
+  have given nothing; he has told Sessa he will write this week to the Cardinal of Cortona that Ippolito, his nephew,
+  is to assist at the government (of Florence); he has made good the said 4,000 ducats lost and is sending another
+  4,000 this week; he is *en grandissimo conflicto*, temporising, not willing to disdain the enemies; nothing hoped
+  for has come from England; those near him conform him in this irresolution and draw him away, *si no Micer
+  Agostino Foyeta* (Foglietta); Sessa declares himself *mas aficionado* (to the Pope&#x27;s service).
+- **f. 82v.** Sessa has found a sum of ducats on exchange for the viceroy&#x27;s need to keep the army (with the bishops
+  of Salamanca and Ávila). England: the nuncio&#x27;s letters of 26 March say the King takes no great heart to undertake
+  the war and waits for the Emperor&#x27;s resolution; the Cardinal (Wolsey) said lately that if the Pope got the King of
+  France to send a person *debaxo de alguna onesta color*, the truce or peace would be heard, so as not to seem to
+  incline to it himself, *que seria perder de reputacion*; the English will not contribute to the war in Italy *por
+  ninguna via*; Madama (Margaret) writes the same.
+- **f. 83r.** Advice: the Emperor&#x27;s estimation, in peace or in war, must grow and be kept, more with friends than
+  with enemies; the confederates; to treat with the Pope; marriages and the advancement of his nephews; the Emperor&#x27;s
+  coming to Italy, *sin hablarlo con Su Sd.*; *no fiandose V.Md. en la que hizo con la buena memoria del papa Leon*.
+- **f. 83v.** If the Emperor came to Italy with great power ...; the pontificate; Alberto Pio, Count of Carpi *(que
+  da al B-e-r-t-o del C-a-r-p-i-o)* and his credit with the Datary.
+- **f. 86r (postscript).** The Pope and his ministers are grieved beyond measure at the disbanding; those who advised
+  his irresolution think they have won; he will not declare himself in a defensive or offensive league, although they
+  judge there was never a time so fit to break the wings of the French; if on that frontier and in Picardy something
+  were done, the Pope would decide, though Sessa has always known him inclined to abase the French; what holds him
+  back is fear; they wait for what the Archbishop of Capua brings.
+
+The order and substance match CSP 636 point for point (cortes; Capua from Blois; the two proposals; the pension; ill
+prepared for war; 4,000 ducats at Lodi; the nuncio&#x27;s letters of 26 March; the English will not contribute; Madame
+Margaret; friends and enemies). That agreement is the check on the reading.
+
+## Key additions from this letter (pass 16)
+
+`ruc`/`rus` = dicho (with `rad` = dicha), `hay` = aunque (tentative), `fed` = rey de Francia, `xir` = cardenal,
+`lot` = nuncio, `pof` = exercito, `kuc` = liga, `tig` = contra, `cuq` = tengo, `yod`/`quf` = amigo/enemigo,
+`gat` = esto (*estonces*), and the name *Micer Agostino Foyeta*. These close the f. 128 residue *de lo suso[rus]
+[hay] no* = *de lo susodicho, aunque no*.
+
+## Remaining gaps
+
+- about 120 code groups open, most attested once (`xoc` x4; `qat`, `var` x3; `yeg`, `siz`, `som`, `col`, `yam`,
+  `Jam`, `cox`, `lon`, `dis`, `leg`, `gig`, `caz`, `lez`, `gul` x2) - blocker: open-codes; a single context does not
+  fix them and no sibling decipherment contains them (pass-14 template search; the R9898 marginal decipherments)
+- 52 spelled-letter tokens that do not assemble into words (e.g. *a-t-a-r-a-r*, *b-r-i-l-i-a*, *p-u-e-r-e*) -
+  blocker: open-codes; one sign value or a transcription slip in each; a token-tile check (tokens.py) would settle them
+- the duplicate/triplicate with Goicoechea&#x27;s reading is not imaged - blocker: needs-physical-access (RAH; the
+  triplicate is in the Gayangos MS, CSP 636)</pre></details>
+<h3>R9898, Rome, 24 Feb 1525 (RAH Salazar A-34 ff. 150-156)</h3>
+<p>Sessa to Charles V, written on the day of Pavia, before the news: Italy, the Pope and the datary&#x27;s attempt to bring the Duke over to the French; six runs carry a marginal decipherment of the time, the rest is read here with the key. Not calendared in CSP iii.1.</p>
+<p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/r9898_cipher.txt">r9898_cipher.txt</a></p>
+<p class="ftext">Decryption: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/r9898_cipher.txt">r9898_cipher.txt</a></p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/read_r9898.md">read_r9898.md</a></p><pre># R9898: Duke of Sessa to Charles V, Rome, 24 February 1525 (RAH Salazar A-34 ff. 150-156)
+
+Status: read in part (2 Oct 2026; pass 17 3 Oct 2026). Transcription and reading line by line: [r9898_cipher.txt](r9898_cipher.txt).
+Key: [key_working.md](key_working.md), passes 1-16. Measured with `python measure_read.py r9898_cipher.txt`.
+
+## The document
+
+DECODE R9898, 7 images (P1 = f. 150r; P2 = 150v-151r; P5 = 151v-152r; P3 = 152v-153r; P4 = 153v-154r;
+P6 = 154v-155r; P7 = 155v-156r). A long despatch in a secretary&#x27;s cursive hand, clear and cipher interleaved, dated
+in clear *De Roma a xxiiij de hebrero 1525*, the day of Pavia and so written before the news (the next letter, CSP
+Spain iii.1 no. 23 of 26 Feb, congratulates the Emperor). It is not calendared in CSP iii.1 (checked on BHO by
+Salazar A-34 folio). f. 155r is clear; heavy bleed-through on 150v-151r and 155v.
+
+**Correction to pass 12 (NOTES):** the letter does carry a decipherment of the time, in part. Six cipher runs have a
+marginal decipherment in a second hand: f. 150r (the opening reply), f. 152r (*que aqui ninguna cosa nos comunican
+...*), f. 153v (*o de color del papa*), f. 154r (*se de buena parte que el datario ha tentado de reduzir al duque a
+franceses ...*), f. 154v (three runs: *para que a la ...ra se pierda ... y cierto si mi obligacion no me forçara*;
+*y viendo la malissima providencia que ha avido, dueleme grandemente hallarme ...*; *que tenemos toda Italia ...*)
+and f. 156r (*no le plaze mucho al papa, aunque no quiere confessar, es en su menosprecio y que franceses le ayan
+tomado en su protecion*). They were used as cribs (key_working.md pass 16); the rest of the cipher has none.
+
+## Measurement
+
+| | tokens |
+|---|---|
+| cipher tokens in the (b) reading | 3,059 |
+| read as sense, pass 16 | 2,361 (77.2%) |
+| read as sense, pass 17 (pooled tentative values) | 2,441 (**79.8%**); strict 77.9% |
+| in open code groups | 300 |
+| spelled letters that do not make a word | 398 |
+| tentative values counted as read | 98 groups |
+
+`lm.best_language` on the assembled reading: es-modern -2.28, ca -2.57, pt -2.86. The 398 letters without sense sit
+mostly in the bleed-through pages (150v, 151r, 155v), where the cursive *r*/*u*/*n* signs (`ꝍ`, `Ɉ`, `b`) are not
+told apart reliably; the reading there is a sign-level transcription, not a reading.
+
+## Content (cipher passages, in order)
+
+- **f. 150r.** Reply to the Emperor&#x27;s letters of 15 Nov and 15 Dec: the Pope did not answer; he wants what was sent
+  not seen there; it must not be let known to the Swiss what has been sent from the Emperor; from past works one can
+  judge the government from here on (margin).
+- **f. 150v-151r.** The Pope&#x27;s arrangement with the King of France and the French, a copy of which he says he sent
+  the Emperor; his accustomed neutrality; the Datary&#x27;s French partisanship, *que abiertamente se conoce*; the
+  French *han yntentado con el embaxador de Inglaterra* ...; the Pope told him he would assure him of the pension
+  due during the truce if the Emperor or the King of France did not agree; *el dicho [embaxador] ha respondido muy
+  bien*; the invasion of the Kingdom of Naples; *su fin principal ha consistido e consiste* (clear) in a run that is
+  open (`hem`, `lin`); the dicha tregua o paz; the Datary and the French; *la experiencia le ha mostrado*; the
+  Emperor&#x27;s agents.
+- **f. 151v-152r.** The French *han efetado y efetan*; the Emperor may be sure of the dissimulation used; they
+  promise *los mismos partidos*; the viceroy; the ministers outside the Pope&#x27;s circle; *aqui ninguna cosa nos
+  comunican, sabiendo que las entendemos y conocemos; por conjeturas sabemos lo que ocurre* (margin).
+- **f. 152v-153r.** The Pope&#x27;s attitude to Albany&#x27;s coming and the invasion of Naples; *lo de Inglaterra se va
+  calentando*; the Datary and the money that did not reach the camp, *la grandissima necesidad que en el canpo se
+  pudiese*; the Venetians and the Pope blame each other; the Archbishop of Capua at Piacenza, *con color de la
+  platica de la paz*, to keep him away; *Micer Agostino Foyeta*; the Duke of Albany&#x27;s reception (clear) and *su
+  venida a la ynvasion del Reyno*; the King of France.
+- **f. 153v-154r.** No provision made in the Kingdom (of Naples); the Duke of Albany&#x27;s men are badly paid, horse
+  short; *se de buena parte que el datario ha tentado de reduzir al duque a franceses* (margin) with money and
+  promises from the King of France; the Datary approves; *Micer Agostino Foyeta*.
+- **f. 154v.** Sessa ordered to San Germano by the viceroy *para que ... se pierda, que no para defensar lo; y
+  cierto si mi obligacion no me forçara* ...; *y viendo la malissima providencia que ha avido, dueleme grandemente
+  hallarme a lo que por razon y no por caso temo que suceda*; *que tenemos toda Italia ... y no partira* (margins).
+- **f. 155v-156r.** Pavia expects relief; forcing the French in their strong position would be a manifest
+  disadvantage; what results in Lombardy; *el datario*; the Emperor must either content himself with *la perdida*
+  or ...; postscript (clear): the Duke of Ferrara has lent the King of France another 50,000 ducats and munitions,
+  and (cipher, margin) *no le plaze mucho al papa, aunque no quiere confessar, es en su menosprecio y que franceses
+  le ayan tomado en su protecion*.
+
+## Key additions from this letter (pass 16)
+
+From the margins: `v em` = cierto, `li` = mi, `Jac` = obliga-, `le` = me, `net` = halla (not *toma*), `nuh` =
+grande, `kch` = mal (confirmed), `cap` = tem-, `lec` = -mos, `dug` = sabi-, `doh` = sabe-, `yol` = aqui, `sud` =
+datario, `pand`/`Jur` = buena/parte, `kun` = duque, `nah` = govierno (tentative). From context: `ruc` = dicho,
+`ges` = embaxador, `cex` = trata-, `lin` = necesidad, `tig` = contra (tentative values in key_working.md).
+
+## Remaining gaps
+
+- about 140 code groups open (`cas` x6; `bup`, `sur`, `pam`, `kal` x4-5; `pol`, `tuf`, `cor`, `var`, `Jir` x3; the
+  rest once or twice) - blocker: open-codes; single contexts, absent from every deciphered sibling and from the six
+  marginal decipherments
+- 398 spelled-letter tokens without sense, mostly on ff. 150v-151r and 155v - blocker: illegible; bleed-through on
+  the DECODE images makes the cursive r/u/n signs ambiguous; a better image (RAH) is needed
+- the opening run on f. 150r is half lost under the margin decipherment and the gutter - blocker: illegible</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/key_working.md">key_working.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/sessa1524.json"></figure>
 <!-- replay:end -->

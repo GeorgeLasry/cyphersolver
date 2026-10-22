@@ -163,6 +163,12 @@
    "kind": "reading",
    "what": "Re-read the gutter digits from a full-resolution crop: 51, 407, 59, 95, 70, 705 ('ce dernier point'); 75? stays open.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext_feb26/mar29.txt and the decipherments in reading.md with the sign-by-sign decode_*_signs.txt; no key work claimed, key1743/ not linked.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -201,6 +207,28 @@
   "notes": "Letter 1 had no decipherment at all; letter 2's contemporary worksheet was incomplete and partly wrong.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Chiffre-Tabelle in the Ilten papers (Ms XXIII 1234:31,1 pp. 386-391) and the office worksheet of letter 2"}
+  ],
+  "texts": [
+   {
+    "doc": "feb26",
+    "label": "Unsigned letter from London, 15/26 Feb 1743 (pp. 73-75)",
+    "transcription": "ciphertext_feb26.txt",
+    "decryption": [
+     "reading.md",
+     "decode_feb26_signs.txt"
+    ],
+    "summary": "Unsigned letter from London to Johann Georg von Ilten, Hanoverian lieutenant-general with the Pragmatic Army. The French cipher passage approves Du Pontpietin's instructions to Lieutenant-General Sommerfeldt about forage and asks that the troops eat up the forage in their quarters so the French find nothing if they quarter there after them."
+   },
+   {
+    "doc": "mar29",
+    "label": "Ernst von Steinberg, London, 29 Mar / 9 Apr 1743 (pp. 119-121)",
+    "transcription": "ciphertext_mar29.txt",
+    "decryption": [
+     "reading.md",
+     "decode_mar29_signs.txt"
+    ],
+    "summary": "German letter from Ernst von Steinberg to Ilten with three code runs: it encloses an extract of the instruction just sent to Lord Stair, to be used with the utmost secrecy among His Majesty's German generals. A contemporary worksheet (p. 121) glosses the groups, partly wrongly."
+   }
   ]
  }
 }

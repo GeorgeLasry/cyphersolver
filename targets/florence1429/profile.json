@@ -237,6 +237,12 @@
       "kind": "verification",
       "what": "Measured with targets/florence1429/measure171.py: 97 of 99 tokens given a value (98.0%), 94 at grade H or M; 72 of the values from Gabbrielli's table, 16 from recovered values, 5 nomenclator, 4 context only. ⊀ ψ before SOSPETOSA unread.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher171.tsv (token list) and TRANSCRIPTION.md; the final 24 Sept decipherment section of READING.md copied to texts/no171_decryption.md (READING.md kept as the working file); key key_extended.md.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -290,6 +296,22 @@
       {"who": "gabbrielli", "role": "key or decipherment used", "note": "1863 key and interlinear glosses on no. 171 and siblings", "date": "1863"},
       {"who": "meister", "role": "key or decipherment used", "note": "printed Gabbrielli's key, 1902 p. 50", "date": "1902"},
       {"who": "lasry", "role": "pointer", "note": "suggested the sibling letters could give the full key", "date": "2026-09-21"}
-    ]
+    ],
+    "texts": [
+      {
+        "doc": "no171",
+        "label": "Responsive 2 no. 171 (DECODE R3754)",
+        "transcription": [
+          "cipher171.tsv",
+          "TRANSCRIPTION.md"
+        ],
+        "decryption": [
+          "texts/no171_decryption.md",
+          "READING.md"
+        ],
+        "summary": "Galeotto Fibindacci da Ricasoli, Florence's envoy at Urbino, reports to the Signoria (1424 Florentine style, early 1425) on talks about the Countess (\"Madonna\", Caterina Colonna): he advises that the Dieci send an ambassador, because the Count says Madonna is after all a woman, and suspicious, and proposes that her relatives and the citizens secretly bind themselves whatever she might say."
+      }
+    ],
+    "key_file": "key_extended.md"
   }
 }

@@ -216,7 +216,8 @@
    "kind": "verification",
    "what": "Reclassified from 'read' to 'read in part': no measured share of signs read; page 3 of the 1489 letter after l. 19 read only in patches (about a third of its words), four signs unvalued, R1098 ll. 5, 6, 9 short groups open. NOTES gain Remaining gaps and Escalation sections; next step is a full token transcription and a measured count.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): V2831 per-page sign transcriptions (trans/v2831p*) and v2831_reading.md; R1098 trans/r1098p1_v.txt/.csv and r1098_reading.md; V267 trans/v267.csv with the clear extract (plaintexts.md, plain267.txt); key.md and key.json. 2831 has sign-by-line notes, not one token file, as Remaining gaps says.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -271,6 +272,12 @@
   "credits": [
     {"who": "somogyi", "role": "key or decipherment used", "note": "2016 numeric key and lines 1-2 of the 22 Nov 1489 letter; tied to the signs and extended here", "date": "2016", "source": "Somogyi, Verbum 17 (2016)"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "clear extract Vestigia 268 and R1098 p. 2 clear text, used to calibrate the signs"}
-  ]
+  ],
+  "texts": [
+   {"doc": "V2831", "label": "Vestigia 2831, Buda 22 Nov 1489", "transcription": ["trans/v2831p1_a_v.txt", "trans/v2831p1_read2.md", "trans/v2831p1_read3.md", "trans/v2831p2_read.md", "trans/v2831p2_read2.md", "trans/v2831p2_read3.md", "trans/v2831p3_read.md", "trans/v2831p3b_read.md", "trans/v2831p3b_read2.md", "trans/v2831p4_read.md"], "decryption": "v2831_reading.md", "summary": "Maffeo da Treviglio to Ludovico Sforza: King Matthias Corvinus wants peace but not on terms to his dishonour, and will not go to the Diet unless he can come away justified; the new Neapolitan ambassador is to negotiate a reconciliation with the Emperor, and talk of a marriage for the King's son John Corvinus is raised again. Page 3 is read only in patches after line 19."},
+   {"doc": "R1098", "label": "DECODE R1098, Buda 12 Jan 1490", "transcription": ["trans/r1098p1_v.txt", "trans/r1098p1_v.csv"], "decryption": "r1098_reading.md", "summary": "Maffeo to Ludovico Sforza: the King left on the 8th for Vienna, less drawn by hope of the Diet than by his own wish to go; the legate, the other ambassadors and Maffeo have decided to leave on the 15th. Ten cipher lines after a clear passage; short groups in ll. 5, 6 and 9 unread."},
+   {"doc": "V267", "label": "Vestigia 267, Vienna 2 Apr 1490 (calibration letter)", "transcription": "trans/v267.csv", "decryption": ["plaintexts.md", "plain267.txt"], "summary": "Calibration pair: the cipher letter of 2 Apr 1490 with its contemporary clear extract (Vestigia 268): the Turkish ambassador is still at court and treats, among other things, of a prolongation of the peace."}
+  ],
+  "key_file": ["key.md", "key.json"]
  }
 }

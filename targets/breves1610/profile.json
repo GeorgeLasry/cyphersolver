@@ -240,6 +240,12 @@
    "kind": "verification",
    "what": "Review on merging PR #61: verify.py passes (hashes, deterministic token alignment, links); the second s of recognoissant is Lasry's repeat sign s-, used ten times in the longer document, which closes one conflict (96/98 Marie glyphs supported); re[c]ognoissant stays a B1/C conflict; the table's M column has a/b/c/d-shaped signs while Lasry's CTTS labels a=M, b=C, c=S, d=P are glyph names, not facsimiles; 'm, = dict' checked on the assembled key image ('Dict - m,'), not a typo. BMPs dropped, PNGs recompressed losslessly, assembled key halved with assemble_key.py to rebuild it.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Dudout's reading (reading.txt) on the project's transcriptions ct_sept_v2/ct_nov_v2; George Lasry's CTTS transcriptions, decryptions and edited texts (lasry2022/ctts/) for 10 Nov and the additional document b1/b2 as separate entries; the Codex edition reading_fr.txt with translation_en.txt as a separate entry; key_file Lasry's CTTS key.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -325,6 +331,68 @@
     "published": true
    }
   ],
-  "notes": "Brice's reading checked against view 112: three brackets settled (b, b, s), 'acompagnee' proposed, re[c]ognoissant has a b sign. The 21 Sept attempt failed on an 833-px key photo and a transcription that merged distinct shapes. 21 Oct 2026: George Lasry's CTTS key and a second document in the key (PR #61, lasry2022/); the repeat sign settles the second s of recognoissant."
+  "notes": "Brice's reading checked against view 112: three brackets settled (b, b, s), 'acompagnee' proposed, re[c]ognoissant has a b sign. The 21 Sept attempt failed on an 833-px key photo and a transcription that merged distinct shapes. 21 Oct 2026: George Lasry's CTTS key and a second document in the key (PR #61, lasry2022/); the repeat sign settles the second s of recognoissant.",
+  "texts": [
+   {
+    "doc": "15sept1610",
+    "label": "15 Sept 1610, f. 17r (R2075), Brice Dudout's reading",
+    "transcription": "ct_sept_v2.txt",
+    "decryption": "reading.txt",
+    "summary": "Marie de Médicis to Brèves, two ciphered passages on Savoy's son's journey to Spain: their persistence in raising difficulties \"will show too plainly their malice and ambition\", which she judges would be \"accompanied by imprudence and weakness\" given the present state of their affairs. Deciphered by Brice Dudout with the Henri IV-Brèves key (BnF fr. 3462 view 112) and checked sign by sign here (alignment.tsv)."
+   },
+   {
+    "doc": "10nov1610",
+    "label": "10 Nov 1610, f. 19r (R2076), Brice Dudout's reading",
+    "transcription": "ct_nov_v2.txt",
+    "decryption": "reading.txt",
+    "summary": "In mid-sentence, on Savoy's disarmament after Henri IV's death and Spain's refusal: \"the pope, recognising their arrogance and sensing his own timidity\", would not press Spain to the point of disarmament only to receive the shame of a flat refusal. Brice Dudout's reading, checked sign by sign here (alignment.tsv)."
+   },
+   {
+    "doc": "10nov1610",
+    "label": "10 Nov 1610, image 3, George Lasry's CTTS transcription and decryption",
+    "transcription": "lasry2022/ctts/transcription/3.txt",
+    "decryption": [
+     "lasry2022/ctts/decryption/3.txt",
+     "lasry2022/ctts/edited/3_edits.txt"
+    ],
+    "summary": "George Lasry's CTTS decipherment of the same passage (2022, improved with Opus 5.5 in Oct 2026, PR #61): mechanical CTTS decryption and his edited text. It agrees with Dudout's reading word for word and shows the second s of recognoissant as the key's repeat sign."
+   },
+   {
+    "doc": "lasry-additional",
+    "label": "Additional document, image b1 (George Lasry's CTTS files)",
+    "transcription": "lasry2022/ctts/transcription/b1.txt",
+    "decryption": [
+     "lasry2022/ctts/decryption/b1.txt",
+     "lasry2022/ctts/edited/b1_edits.txt"
+    ],
+    "summary": "A letter in the same key, read by George Lasry (CTTS, 2022; improved with Opus 5.5, Oct 2026): marriage negotiations under aliases (La Hale, Le Cormier, La Cheville, Pindare, Saint Paul). Shelfmark and date not established; it may be Henri IV to Brèves (R2077), but Lasry asks that it not be identified with R2077 without a matching archival image."
+   },
+   {
+    "doc": "lasry-additional",
+    "label": "Additional document, image b2 (George Lasry's CTTS files)",
+    "transcription": "lasry2022/ctts/transcription/b2.txt",
+    "decryption": [
+     "lasry2022/ctts/decryption/b2.txt",
+     "lasry2022/ctts/edited/b2_edits.txt"
+    ],
+    "summary": "Second image of the same document (Lasry's CTTS files): the reaction to an alliance, calm at home and friendship with neighbours, \"au grand desplaisir de Sa Sainteté\"; barred 74 and 75 unresolved."
+   },
+   {
+    "doc": "lasry-additional",
+    "label": "Additional document and 10 Nov excerpt, edited reading with Codex's image checks (PR #61)",
+    "transcription": [
+     "lasry2022/ctts/transcription/b1.txt",
+     "lasry2022/ctts/transcription/b2.txt",
+     "lasry2022/ctts/transcription/3.txt"
+    ],
+    "decryption": "lasry2022/reading_fr.txt",
+    "translation": "lasry2022/translation_en.txt",
+    "summary": "The edition prepared by Codex in the contribution, taking Lasry's CTTS key and reading as its base and departing from his edited export where the images support it (Pindare not Vendosme?, prester l'oreille not rejetter?, desquels not de Lesdiguières?, rompu omitted). Lasry's own edited text is in ctts/edited/, unchanged, for comparison."
+   }
+  ],
+  "key_file": [
+   "lasry2022/ctts/key.txt",
+   "lasry2022/key.json"
+  ]
  }
 }

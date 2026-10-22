@@ -176,6 +176,12 @@
    "kind": "verification",
    "what": "Reading compared with the contemporary decipherment and the edition: agrees except 'et non devant', 'ne laisserons de le nommer', 'Monpensier'.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass sign transcription tokens.txt and the block reading reading.txt; key key.tsv (Tomokiyo's reconstruction extended by twelve values)",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -216,6 +222,16 @@
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstructed key for BnF fr. 15564 f. 33, extended by twelve values", "source": "cryptiana, French ciphers under Charles IX and Henry III"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "marginal decipherment on the page, used as the check"},
     {"who": "baguenault", "role": "key or decipherment used", "note": "Lettres de Catherine de Médicis t. VII prints the letter with the contemporary decipherment; used as the check", "date": "1899", "source": "Lettres de Catherine de Médicis, t. VII, pp. 349-353"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "f33",
+    "label": "Catherine de Médicis to Villeroy, Chenonceau, 7 Feb 1581, BnF fr. 15564 f. 33r (DECODE R4157)",
+    "transcription": "tokens.txt",
+    "decryption": "reading.txt",
+    "summary": "The one cipher block of the Queen Mother's letter: it is said that the prince Dauphin is to go to Flanders to receive the oath of fidelity of the Low Countries for her son Anjou and stay there, that the prince de Condé is to lead the forces assembling, and that Anjou says he will go at the time Villeroy wrote and not before; but they will still name him with Montpensier in the powers of the legation to England. The letter was already in print (1899); the cipher differs from the printed text in three small places."
+   }
+  ],
+  "key_file": "key.tsv"
  }
 }

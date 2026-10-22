@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">Two letters, three witnesses</a><a href="#march">Prague: a cipher sent in February</a><a href="#may">Breslau: a duplicate, without plaintext</a><a href="#method">What was tested</a><a href="#remaining">What remains open</a><a href="#sources">Sources and research record</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">Two letters, three witnesses</a><a href="#march">Prague: a cipher sent in February</a><a href="#may">Breslau: a duplicate, without plaintext</a><a href="#method">What was tested</a><a href="#remaining">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources and research record</a></nav>
 <div class="callout"><strong>Summary.</strong> Desiderio l’Abbé wrote to the duke of Nevers from Prague on 2 March 1577 and from Breslau on 2 May. The March letter contains numerous short numerical insertions; the May cipher survives in two copies. A draft transcription lists 29 March insertions and two May spans separated by the clear word <em>plusieurs</em>. The counts of 834 and 77 digits are from the draft; the cipher units are not established. Substitution solvers under several hypotheses about unit length and nulls gave no coherent plaintext. A synthetic control text was recovered, which tests the solver only. In the March letter l’Abbé reports sending a copy of the cipher on 24 February; that copy is the best lead to the key. No key was recovered and no part of the cipher is deciphered.</div>
 
 <h2 id="documents"><span class="num">01</span> Two letters, three witnesses</h2>
@@ -93,6 +93,268 @@
 <p><strong>No cipher insertion is deciphered.</strong> No plaintext at grade H or C is claimed. The transcription retains an obscured <code>[?]</code> at run <code>f64r08</code>, uncertain figures and unresolved joins; no token-level completeness percentage is available. The March and May clear-text files are provisional, with doubtful names and expressions still requiring an editorial pass. <em>Barquin</em> is a tentative (M-grade) name reading; its identification with Barchino is unproved.</p>
 <p>The best next evidence would be the February correspondence or a surviving cipher enclosure, especially around français 4695 no. 51. Restored digital access or another copy is needed to inspect that lead. There is no verified DECODE record to update, no named key to connect in the key web, and no deciphering replay to show. The destination is known only broadly as France, so no city has been guessed for the atlas.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Nos. 30 (Prague, 2 March 1577), 37 and 38 (Breslau, 2 May 1577): the cipher insertions, AngusRobinson&#x27;s decipherment (PR #20)</h3>
+<p>Desiderio l&#x27;Abbé reports to Nevers from the imperial court. The March cipher runs concern Poland after Báthory&#x27;s election (the nuncio of Mondovì, Zborowski, Danzig, &quot;puisse prendre femme en hongrie&quot;, the Emperor and the &quot;titre de roi&quot;, peace with the Turk; the Poles are divided and show Báthory a good face while their hearts are contrary); the May run follows Weber&#x27;s resignation: &quot;mais plusieurs ne pleureroient s&#x27;il n&#x27;y retournoit jamais&quot;.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/labbe1582/KEY_AND_DECRYPTION.txt">KEY_AND_DECRYPTION.txt</a></p><pre>L’ABBÉ, 1577 — KEY AND DECRYPTION
+
+Key: a=02/04 b=08 c=01 d=03 e=1/11 f=21 g=31 h=09 i=3/13
+     l=23 m=33 n=43 o=5/15 p=25 q=07 r=35 s=45 t=55
+     u=9/19 x=8/18 z=29 space=6
+
+| separates tokens; leading zeroes matter. i includes j/y;
+u includes v; uu can represent w. Dots adjoining 6 are ignored.
+
+VIEW 63
+https://gallica.bnf.fr/ark:/12148/btv1b9060073v/f63
+
+f63r01
+33|5|43|03|1|9|3
+mondeui
+
+VIEW 64
+https://gallica.bnf.fr/ark:/12148/btv1b9060073v/f64
+
+f64r01
+09|02|3|6|03|1|6|55|15|19|45
+hai de tous
+
+f64r02
+45|08|15|35|5|45|01|09|3
+sboroschi
+
+f64r03
+15|3+[hidden]|9|11|13|23
+o[rg]ueil
+
+f64r04
+03|15|43|43|1|6|25|04|35|5|23|23|1
+donne parolle
+
+f64r05
+45|1|13|31|43|1|9|35|6|9|19|02|35|45|02|9|3|01|13|5
+seigneur uuarsauicio
+
+f64r06
+25|5|19|35|6|9|5|3|35|6|03|1|6|55|35|15|19|11|35|6|33|15|13|11|43|6|07|19|11
+pour uoir de trouer moien que
+
+f64r07
+03|04|43|45|07|9|3|6|45|02|01|01|15|35|03|04|45|45|1|43|55
+dansqui saccordassent
+
+f64r08
+35|1|02|19|[hidden]|33|11|6|1|55|6|03|11|6|01|09|35|11|45|55|3|1|43|55|1
+reau[l]me et de chrestiente
+
+f64r09
+19|9|04|35|45|02|19|13|01|3|15
+[uuarsauicio]
+
+VIEW 65
+https://gallica.bnf.fr/ark:/12148/btv1b9060073v/f65
+
+f65r01
+03|19|03|13|01|55|6|19|9|02|45|02|19|9|3|01|13|15
+dudict [uuasauuicio]
+
+f65r02
+25|9|13|45|45|11|6|25|35|1|43|03|35|11|6|21|1|33|33|1|6|1|43|6|09|5|43|31|35|3|1
+puisse prendre femme en hongrie
+
+f65r03
+45|13|6|23|11|33|25|1|35|1|9|35
+si lempereur
+
+f65r04
+55|13|55|35|11|6|03|1|6|35|15|13
+titre de roi
+
+f65r05
+19|11|35|45|6|45|04|6|33|02|3|11|45|55|1|6|19|43
+uers sa maieste un
+
+f65r06
+02|33|13|6|03|11|6|01|1|45|55|11|6|33|04|3|45|5|43
+ami de ceste maison
+
+f65r07
+03|19|6|55|19|35|01
+du turc
+
+f65r08
+02|19|15|13|35|6|25|02|3|18
+auoir paix
+
+f65r09
+21|1|35|03|13|43|02|43|03|6|1|33|25|1|35|1|9|35
+ferdinand empereur
+
+f65r10
+23|1|6|9|9|11|08|1|35|6|11|55|6|23|11|6|55|35|02|19|55|29|11|43
+le uueber et le trautzen
+
+f65r11
+45|15|43|55|6|03|13|19|13|45|1|45
+[sont diuises]
+
+f65r12
+33|15|43|45|55|35|1|43|55|6|08|5|43|6|9|13|45|02|31|11|6|02|19|6|08|04|55|5|35|3|6|02|19|8|6|01|15|11|19|35|45|6|11|45|55|6|23|1|6|01|15|43|55|35|02|3|35|11
+monstrent bon uisage au batori aux coeurs est le contraire
+
+f65r13
+9|19|04|35|45|02|9|13|01|13|15
+uuarsauicio
+
+f65r14
+19|9|02|35|45|04|9|13|01|13|15
+uuarsauicio
+
+f65r15
+23|11|33|25|1|35|11|19|35
+lempereur
+
+f65r16
+33|15|45|01|15|19|13|19|6|1|55|6|03|11|6|25|15|23|5|31|43|11
+moscoui[u] et de pologne
+
+f65r17
+02|9|18|6|21|23|5|35|1|43|55|3|43|45
+aux florentins
+
+VIEW 66
+https://gallica.bnf.fr/ark:/12148/btv1b9060073v/f66
+
+f66v01
+04|19|8|6|45|02|9|15|13|11|43|45
+aux sauoiens
+
+f66v02
+03|11|6|43|15|9|19|11|23|23|1|6|11|23|1|01|55|13|15|43
+de nouuelle election
+
+VIEW 77
+https://gallica.bnf.fr/ark:/12148/btv1b9060073v/f77
+
+breslau
+33|02|13|45|6
+mais
+
+VIEW 79
+https://gallica.bnf.fr/ark:/12148/btv1b9060073v/f79
+
+breslau2
+43|1|6|25|23|11|9|35|1|35|15|3|11|43|55|6|45|3|23|6|43|13|6|35|1|55|5|19|35|43|15|13|55|6|13|04|33|02|13|45
+ne pleureroient sil ni retournoit iamais</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/labbe1582/reading_pr20.txt">reading_pr20.txt</a></p><pre>f63r01	33|5|43|03|1|9|3	mondeui	mondeui
+f64r01	09|02|3|6|03|1|6|55|15|19|45	hai de tous	hai de tous
+f64r02	45|08|15|35|5|45|01|09|3	sboroschi	sboroschi
+f64r03	15|3+[hidden]|9|11|13|23	oi?ueil	o[rg]ueil
+f64r04	03|15|43|43|1|6|25|04|35|5|23|23|1	donne parolle	donne parolle
+f64r05	45|1|13|31|43|1|9|35|6|9|19|02|35|45|02|9|3|01|13|5	seigneur uuarsauicio	seigneur uuarsauicio
+f64r06	25|5|19|35|6|9|5|3|35|6|03|1|6|55|35|15|19|11|35|6|33|15|13|11|43|6|07|19|11	pour uoir de trouer moien que	pour uoir de trouer moien que
+f64r07	03|04|43|45|07|9|3|6|45|02|01|01|15|35|03|04|45|45|1|43|55	dansqui saccordassent	dansqui saccordassent
+f64r08	35|1|02|19|[hidden]|33|11|6|1|55|6|03|11|6|01|09|35|11|45|55|3|1|43|55|1	reau?me et de chrestiente	reau[l]me et de chrestiente
+f64r09	19|9|04|35|45|02|19|13|01|3|15	uuarsauicio	[uuarsauicio]
+f65r01	03|19|03|13|01|55|6|19|9|02|45|02|19|9|3|01|13|15	dudict uuasauuicio	dudict [uuasauuicio]
+f65r02	25|9|13|45|45|11|6|25|35|1|43|03|35|11|6|21|1|33|33|1|6|1|43|6|09|5|43|31|35|3|1	puisse prendre femme en hongrie	puisse prendre femme en hongrie
+f65r03	45|13|6|23|11|33|25|1|35|1|9|35	si lempereur	si lempereur
+f65r04	55|13|55|35|11|6|03|1|6|35|15|13	titre de roi	titre de roi
+f65r05	19|11|35|45|6|45|04|6|33|02|3|11|45|55|1|6|19|43	uers sa maieste un	uers sa maieste un
+f65r06	02|33|13|6|03|11|6|01|1|45|55|11|6|33|04|3|45|5|43	ami de ceste maison	ami de ceste maison
+f65r07	03|19|6|55|19|35|01	du turc	du turc
+f65r08	02|19|15|13|35|6|25|02|3|18	auoir paix	auoir paix
+f65r09	21|1|35|03|13|43|02|43|03|6|1|33|25|1|35|1|9|35	ferdinand empereur	ferdinand empereur
+f65r10	23|1|6|9|9|11|08|1|35|6|11|55|6|23|11|6|55|35|02|19|55|29|11|43	le uueber et le trautzen	le uueber et le trautzen
+f65r11	45|15|43|55|6|03|13|19|13|45|1|45	sont diuises	[sont diuises]
+f65r12	33|15|43|45|55|35|1|43|55|6|08|5|43|6|9|13|45|02|31|11|6|02|19|6|08|04|55|5|35|3|6|02|19|8|6|01|15|11|19|35|45|6|11|45|55|6|23|1|6|01|15|43|55|35|02|3|35|11	monstrent bon uisage au batori aux coeurs est le contraire	monstrent bon uisage au batori aux coeurs est le contraire
+f65r13	9|19|04|35|45|02|9|13|01|13|15	uuarsauicio	uuarsauicio
+f65r14	19|9|02|35|45|04|9|13|01|13|15	uuarsauicio	uuarsauicio
+f65r15	23|11|33|25|1|35|11|19|35	lempereur	lempereur
+f65r16	33|15|45|01|15|19|13|19|6|1|55|6|03|11|6|25|15|23|5|31|43|11	moscouiu et de pologne	moscoui[u] et de pologne
+f65r17	02|9|18|6|21|23|5|35|1|43|55|3|43|45	aux florentins	aux florentins
+f66v01	04|19|8|6|45|02|9|15|13|11|43|45	aux sauoiens	aux sauoiens
+f66v02	03|11|6|43|15|9|19|11|23|23|1|6|11|23|1|01|55|13|15|43	de nouuelle election	de nouuelle election
+breslau	33|02|13|45|6	mais 	mais
+breslau2	43|1|6|25|23|11|9|35|1|35|15|3|11|43|55|6|45|3|23|6|43|13|6|35|1|55|5|19|35|43|15|13|55|6|13|04|33|02|13|45	ne pleureroient sil ni retournoit iamais	ne pleureroient sil ni retournoit iamais</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/labbe1582/SOLUTION.txt">SOLUTION.txt</a></p><pre>L’ABBÉ TO NEVERS, 1577 — DECIPHERMENT
+
+BnF français 3198: Prague, 2 March (no. 30), and Breslau, 2 May
+(nos. 37–38). Both letters use the same numerical substitution.
+
+The breakthrough was guessing that three similar strings meant l’empereur
+or empereur. Matching their figures to the letters revealed one- and two-digit
+codes, with several codes for some letters (homophones). Decoding other
+passages supplied the rest of the key and showed that 6 separates words.
+The same key decodes both letters.
+
+2 MARCH
+
+f63r01: mondeui
+
+f64r01: hai de tous
+
+f64r02: sboroschi
+
+f64r03: o[rg]ueil
+
+f64r04: donne parolle
+
+f64r05: seigneur uuarsauicio
+
+f64r06: pour uoir de trouer moien que
+
+f64r07: dansqui saccordassent
+
+f64r08: reau[l]me et de chrestiente
+
+f64r09: [uuarsauicio]
+
+f65r01: dudict [uuasauuicio]
+
+f65r02: puisse prendre femme en hongrie
+
+f65r03: si lempereur
+
+f65r04: titre de roi
+
+f65r05: uers sa maieste un
+
+f65r06: ami de ceste maison
+
+f65r07: du turc
+
+f65r08: auoir paix
+
+f65r09: ferdinand empereur
+
+f65r10: le uueber et le trautzen
+
+f65r11: [sont diuises]
+
+f65r12: monstrent bon uisage au batori aux coeurs est le contraire
+
+f65r13: uuarsauicio
+
+f65r14: uuarsauicio
+
+f65r15: lempereur
+
+f65r16: moscoui[u] et de pologne
+
+f65r17: aux florentins
+
+f66v01: aux sauoiens
+
+f66v02: de nouuelle election
+
+2 MAY
+
+Mais plusieurs ne pleureroient s’il n’y retournoit jamais.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/labbe1582/KEY_AND_DECRYPTION.txt">KEY_AND_DECRYPTION.txt</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/labbe1582.json"></figure>
 <!-- replay:end -->

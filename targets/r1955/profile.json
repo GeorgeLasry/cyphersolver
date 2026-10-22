@@ -179,6 +179,12 @@
    "kind": "verification",
    "what": "Split from michell1751 under the one-key rule (Lasry, 14 Oct 2026): R1955 is in Michell's envoy code, not the cabinet code of R1957, so it is its own entry. Fraction re-counted from R1955_reading_line.txt: 95 of 360 groups have a value.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): both transcriptions (Bourdeau transcription_r1955.txt, WAINUT R1955_tx.txt) and WAINUT's group-by-group decode R1955_reading_line.txt (95/360 groups)",
+   "result": "worked"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-15", "verdict": "not applicable", "notes": "Whole-word code decoded in isolated fragments (95 of 360 groups, mostly single words between unread groups); the letter n-gram test has no continuous text to score. WAINUT's word-pair coherence test (19 of 30 adjacent pairs attested against 11.1 for permutations, p = 0.001) is the statistical check."}, 
@@ -223,6 +229,18 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Dutch decipherments of Michell's reports R1050/R1051 (DECODE), source of the envoy table"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R1955",
+    "label": "Frederick II (ministerial rescript) to Louis Michell, Berlin, 28 Dec 1751 (DECODE R1955)",
+    "transcription": [
+     "transcription_r1955.txt",
+     "R1955_tx.txt"
+    ],
+    "decryption": "R1955_reading_line.txt",
+    "summary": "The ministerial rescript in the King's name to his envoy in London, opening in clear 'Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois', then 362 code groups. WAINUT decoded 95 of 360 groups (26.4%) with the envoy table rebuilt from the Dutch decipherments of Michell's reports R1050/R1051: fragments only, the subject cannot be stated with confidence."
    }
   ]
  }

@@ -239,7 +239,8 @@
    "what": "Solver loops on deskewed lines of ff. 88, 92, 96v with leads from harley287 READING and CSP Foreign 1588 (Semple to Scotland): Italians, Antonio, deliverd, divers, number of, within France, servants, priests, Portugals(?), Bruges(?).",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 100 tokens, 22 types, en-modern order 4: reading -4.345 per letter; Verdict: too short.", "result": "partial"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 100 tokens, 22 types, en-modern order 4: reading -4.345 per letter; Verdict: too short.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the sign-level runs (runs.txt; f. 96v sign copies in reading_f96v.md) and the consolidated and per-folio readings (READING.md, reading_*.md); key = signs.tsv. Missing: sign transcription of the f. 97r runs, and no full transcription of the clear English of the four letters (decryptions give the cipher passages with their clear context only).", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 100, "types": 22, "tokens_per_type": 4.55, "score": -4.345, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.065; polyphony 0.18; 166 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -280,6 +281,13 @@
   },
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherments of sibling Cobham letters, Harley 287 ff. 75, 79, 89"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R8490", "label": "R8490, ff. 80-81, Ostend 5 May 1588", "transcription": "runs.txt", "decryption": ["READING.md", "reading_ff80_92_96_full.md"], "summary": "Lord Cobham, one of Elizabeth's commissioners for the Bourbourg peace talks with Parma's deputies, writes to Walsingham from Ostend in clear English with short cipher passages; Julio Romeo, Cristophero Mondragon and Doctor Dale are named in clear, and the cipher words concern hostages, the haven and the armada."},
+   {"doc": "R8492", "label": "R8492, f. 88, undated 1588", "transcription": "runs.txt", "decryption": ["READING.md", "reading_f88_full.md", "reading_f88.md"], "summary": "The densest cipher of the four letters: captain Montgomery has lately gone into Scotland with 40 men, a haven has been promised to Parma (code 15), Italians are arriving, and other Scotsmen are coming; the clear lower half reports Parma's commissioners and 80 sail with saddles, bridles, boots and spurs."},
+   {"doc": "R8495", "label": "R8495, ff. 92-93, 27 May 1588", "transcription": "runs.txt", "decryption": ["READING.md", "reading_ff80_92_96_full.md"], "summary": "News from Cobham to Walsingham: the Armada still at Lisbon, Gonzaga, 200 mariners at Sluys; the cipher passages mention men imprisoned in Bruges, letters, the ancient of Newport and Irish noblemen."},
+   {"doc": "R8496", "label": "R8496, ff. 96-97, Bourbourg 9 June 1588", "transcription": "reading_f96v.md", "decryption": ["READING.md", "reading_ff80_92_96_full.md", "reading_f96v.md"], "summary": "Cobham at Bourbourg (\"Binborow\"), 9 June 1588, with scattered cipher words; those read include \"passed\", \"within France\", \"servants\", \"priests\" and \"of letters for the people\"."}
+  ],
+  "key_file": "signs.tsv"
  }
 }

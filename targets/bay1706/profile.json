@@ -134,7 +134,8 @@
    "kind": "reading",
    "what": "Correction reported while quotations were pulled for Lasry's list: the normalised Hungarian had drifted from R478_read.txt in five places, each checked against the R609 group values and the images and corrected: 'vissza is ment' (was 'viszaismét [elment]'; group 81 = n), 'a moszkva békességre kéri a svédet' with no 13 = hogy (was 'hogy ... békességet kéri a svédtől'), 'minden elvött várakat', all the fortresses taken (was 'mindenekelőtt várakat'), 'Pekri uram általa' (was 'által'), 'minden szándéka' (was 'mindenben szándéka'). English corrected to match; decrypt, counts and key unchanged.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked R478_transcription.txt (DECODE's transcription corrected against the images) and R478_read.txt (raw key output); copied the normalised reading with its English gist from NOTES.md to texts/R478_decryption.md.", "result": "worked"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -157,6 +158,9 @@
   "notes": "Report from the Moldavian court: Muscovite and Polish envoys, Tsar seeking peace with Charles XII, Pekri's message to the voivode, the Swede at Vilna.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Rákóczi chancery syllabic key, DECODE R609, read the letter unchanged"}
+  ],
+  "texts": [
+   {"doc": "R478", "label": "Bay to Rákóczi, Jászvásár 8 Mar 1706", "transcription": "R478_transcription.txt", "decryption": ["texts/R478_decryption.md", "R478_read.txt"], "summary": "András Bay reports to Ferenc Rákóczi II from Jászvásár (Iași, Moldavia) that Muscovite and Polish envoys have come to the voivode's court and that the Tsar is asking the Swede for peace, offering back the fortresses taken and his war expenses; Pekri has sent word to the voivode that, once Rákóczi settles the Hungarians' affairs with the Emperor, his whole intention is war against the Turk; the Swede has moved to Vilna."}
   ]
  }
 }

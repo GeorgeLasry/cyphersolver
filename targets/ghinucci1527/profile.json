@@ -272,7 +272,8 @@
    "what": "Split from the former combined target 'superscript' (Ghinucci R8613 with Gilino R8572), after George Lasry pointed out that the two letters share only superscript numbering: different writers, languages and keys (the Worcester syllabary vs the Sforza key R5258). Folder, profile, page and ledgers separated; earlier steps are kept as recorded.",
    "result": "worked"
   },
-  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 804 tokens, 200 types, la order 4: reading -2.135 per letter; random keys -3.26 (z 11.7); key annealed onto shuffled ciphertext best -2.365 (mean -2.397, z 14.9); annealer on the real text -2.342. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 804 tokens, 200 types, la order 4: reading -2.135 per letter; random keys -3.26 (z 11.7); key annealed onto shuffled ciphertext best -2.365 (mean -2.397, z 14.9); annealer on the real text -2.342. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R8613 transcription and reading; R8589 and R8476 token-value alignments; key.tsv, key.md, r8476_key.tsv. R8590 (key source, first cipher line read against the interlinear) has no transcription file in the folder", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "la", "file": "validation.tsv", "tokens": 804, "types": 200, "tokens_per_type": 4.02, "score": -2.135, "nulls": {"random keys": {"n": 200, "mean": -3.26, "sd": 0.096, "max": -3.049, "z": 11.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.397, "sd": 0.018, "max": -2.365, "z": 14.9, "p": 0.1429}}, "power": -2.342, "verdict": "pass", "notes": "claimed per-occurrence score -2.135; polyphony 0.0; 10 unread tokens left out; annealer on the real text from random keys reached -2.342"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -340,6 +341,33 @@
     "role": "key or decipherment used",
     "note": "L&P iv 5282 prints the deciphered Latin of R8589, aligned for the key"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "worcester-R8613",
+    "label": "R8613, Ghinucci to Wolsey, duplicate of 22 July 1527",
+    "transcription": [
+     "r8613_cipher.txt",
+     "r8613_tokens.txt"
+    ],
+    "decryption": "r8613_reading.txt",
+    "summary": "Girolamo Ghinucci, Bishop of Worcester, at the Emperor's court, reports that the Imperialists want to draw Henry VIII to themselves and part him from the French king, that the French offered three millions through Avemaria, that the Imperial envoy to the Pope has no commission for his release, and the rumour that Wolsey goes to France to separate the English and French church from Rome 'ad perpetuam divisionem'. L&P iv 3291 calls this duplicate 'undeciphered'; 17 of 814 tokens remain open."
+   },
+   {
+    "doc": "worcester-R8589",
+    "label": "R8589, Ghinucci to Wolsey, Valladolid, 12 Feb 1529 (key source)",
+    "transcription": "r8589_tokens.txt",
+    "decryption": "r8589_tokens.txt",
+    "summary": "Sibling letter whose cipher passage is printed deciphered in L&P iv 5282 ('Cum animadvertissemus ...'); the file gives each token with its value aligned to that plaintext, and was the first key source."
+   },
+   {
+    "doc": "worcester-R8476",
+    "label": "R8476, Ghinucci to Wolsey, Poissy, 24 Dec 1526 (key source)",
+    "transcription": "r8476_tokens.txt",
+    "decryption": "r8476_tokens.txt",
+    "summary": "Sibling letter printed with its deciphered passages in State Papers Henry VIII vol. VI pp. 552-556 (from the contemporary Record Office decipher); the file aligns the 845 cipher tokens with that text and gave the code words (Regia Majestas, Rex Gallorum, Cesar, Pontifex ...)."
+   }
+  ],
+  "key_file": ["key.tsv", "key.md", "r8476_key.tsv"]
  }
 }

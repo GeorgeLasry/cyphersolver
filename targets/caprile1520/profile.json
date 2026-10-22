@@ -423,7 +423,8 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from caprile1519, which had joined three ciphers of the same ASMo file: the 1519 two-tier cipher (caprile1519), the 1520-21 sign cipher (caprile1520) and Cistarelli's figure cipher (cistarelli1520). This profile keeps the documents and steps of the 1520-21 sign cipher (R1136, R1138, R1139, V1920, V1921) only.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions caprile1521_transcription.txt, r1139_pass4.txt, r1136_pass4.txt, v1921_signs.txt; decryptions pass3_r1136_r1139.md with beam21 decrypts, read_v1921.md, and Somogyi's printed R1138/V1920 decipherment (crib_somogyi.md); key21.json.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -506,6 +507,13 @@
     "date": "2025",
     "source": "W. Somogyi, Scriptorium VI (2025) 247-264"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "R1139", "label": "R1139, slip of 6 Apr 1521", "transcription": ["caprile1521_transcription.txt", "r1139_pass4.txt"], "decryption": ["pass3_r1136_r1139.md", "beam21_r1139_pass4.txt"], "summary": "Postscript slip from Giuliano Caprile to Ferrara about the custode (castellan) of Eger, the governor's return, money of the late bishop's estate, and someone's wish to go to Italy: the Ippolito d'Este estate business of Somogyi's article. About 90 % of decoded letters fall inside read phrases; two numeral-like groups are open."},
+   {"doc": "R1136", "label": "R1136, 8 Mar 1520", "transcription": ["caprile1521_transcription.txt", "r1136_pass4.txt"], "decryption": ["pass3_r1136_r1139.md", "beam21_r1136_pass5.txt"], "summary": "Twelve cipher lines on the see of Eger, its custode and governor, Lactantio, money and debts, written as Ippolito d'Este was leaving Hungary (he crossed the border on 7 Mar 1520). Read in part (66.9 %)."},
+   {"doc": ["R1138", "V1920"], "label": "R1138 (Vestigia 1919) and Vestigia 1920, two versions of the 16 Feb 1521 postscript", "transcription": "caprile1521_transcription.txt", "decryption": "crib_somogyi.md", "summary": "Caprile's advice to the Duke: if he means to reclaim from the kingdom the forty thousand and the eight thousand owed by the King, a codicil must be made the same day as the testament. Decipherment as printed by Somogyi (2025), used here as the crib for the key."},
+   {"doc": "V1921", "label": "Vestigia 1921, Esztergom 25 Feb 1521", "transcription": "v1921_signs.txt", "decryption": "read_v1921.md", "summary": "Six cipher runs inside clear sentences: someone at Esztergom blames the custode of Eger for the claim that the see had been given away before the successor arrived, and Caprile advises the Duke to reclaim Ippolito's due from that man's goods. Read 97.0 %."}
+  ],
+  "key_file": "key21.json"
  }
 }

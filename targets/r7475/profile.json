@@ -105,6 +105,12 @@
       "kind": "verification",
       "what": "Entry split on 14 Oct 2026 from sieniawski1708 under the one-key rule (Lasry, 14 Oct 2026): the Vienna-Schenck letters are schenck1706; the Sieniawski letters are one entry per key: key A (sieniawski1708), key B (turculet1709), the R7475 table (r7475), the Chomentowski syllabary (chomentowski1713). ",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R7475.txt (numbers with the interlinear gloss); gloss lines copied verbatim to texts/R7475_decryption.md",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -141,6 +147,15 @@
         "who": "contemporary",
         "role": "key or decipherment used",
         "note": "full letter-by-letter interlinear decipherment on R7475"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "R7475",
+        "label": "R7475, pp. 29-30, c. 1707",
+        "transcription": "R7475.txt",
+        "decryption": "texts/R7475_decryption.md",
+        "summary": "An unsigned, undated Polish letter (with Latin phrases) to Grand Crown Hetman Adam Mikołaj Sieniawski from an adviser in his camp, most likely 1707: he warns against the Bishop of Chełmno's (Teodor Potocki's) mediation and Stanisław Leszczyński's treaty offers, and advises waiting for the outcome of the Swedish march on Moscow and concluding only together with all."
       }
     ]
   }

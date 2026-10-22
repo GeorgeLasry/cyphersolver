@@ -282,7 +282,8 @@
    "kind": "verification",
    "what": "Here: spot-check on BnF IIIF 2400 px images, p. 525 l. 9-10 and p. 565 l. 5: 126 signs, sequence and count agree; two i/n choices on p. 525 l. 9 not separable at this resolution.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Harumi-Matsuba's contributed/transcription/p*.txt, contributed/decoded/p*.txt (unsegmented key output) and contributed/READING.en.md (word-divided reading of all passages), with the contributor's key.tsv (Tomokiyo's table plus additions).", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -363,6 +364,13 @@
     "role": "key or decipherment used",
     "note": "Margin decipherments of pp. 33, 258, 285, 321, 440, 569 used to check key additions and code words."
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "p525-526", "label": "22 Oct 1577, pp. 524 end-526", "transcription": ["contributed/transcription/p525.txt", "contributed/transcription/p526.txt"], "decryption": ["contributed/READING.en.md", "contributed/decoded/p525.txt", "contributed/decoded/p526.txt"], "summary": "Ancel on Archduke Matthias's flight to the Low Countries: he thinks the Emperor [saturnus] will deny any part in it, since the young prince could hardly step out of his room without his brother's leave or leave the castle, shut at night (contributor's summary)."},
+   {"doc": "p539", "label": "2 Nov 1577, p. 539", "transcription": "contributed/transcription/p539.txt", "decryption": ["contributed/READING.en.md", "contributed/decoded/p539.txt"], "summary": "The Emperor does all he can to persuade the Spaniards that Matthias's departure happened without his knowledge (contributor's summary)."},
+   {"doc": "p561-563", "label": "14 Dec 1577, pp. 561-563", "transcription": ["contributed/transcription/p561.txt", "contributed/transcription/p562.txt", "contributed/transcription/p563.txt"], "decryption": ["contributed/READING.en.md", "contributed/decoded/p561.txt", "contributed/decoded/p562.txt", "contributed/decoded/p563.txt"], "summary": "Varambon, sent by Don John, has waited three weeks for leave to levy troops; Borgia says the Emperor must back his brother in earnest, as the Catholic King will defend his right; the Estates will hardly grant extraordinary aid (contributor's summary)."},
+   {"doc": "p565", "label": "21 Dec 1577, p. 565", "transcription": "contributed/transcription/p565.txt", "decryption": ["contributed/READING.en.md", "contributed/decoded/p565.txt"], "summary": "Varambon is back from Archduke Charles's court with nothing; the Emperor waits for the King of Spain's [Juno] answer (contributor's summary)."}
+  ],
+  "key_file": "contributed/key.tsv"
  }
 }

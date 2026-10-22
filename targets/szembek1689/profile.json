@@ -133,7 +133,8 @@
    "what": "Wrote out the whole postscript, clear and deciphered, with a translation (reading.md); code group 202 left open.",
    "result": "worked",
    "date": "2026-09-28"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked runs.tsv (every run with its contemporary gloss) and ct.txt as transcription, reading.md (with translation) as decryption; key_file key.tsv", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -169,6 +170,10 @@
   "notes": "Read at the time; key rebuilt and checked here. Catalogue 348's 'unknown to the Szembek family, early 18th c.' corrected: Wallachian court after Şerban Cantacuzino's death (Oct 1688), denouncing Antide Dunod SJ. Postscript only; the letter's main body is not in the item.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment over every run but one"}
-  ]
+  ],
+  "texts": [
+   {"doc": "WBC 343124", "label": "BK 1560 'List zaszyfrowany', Latin cipher postscript, after Oct 1688", "transcription": ["runs.tsv", "ct.txt"], "decryption": "reading.md", "summary": "A writer in the service of a 'Celsissimus Princeps' (most likely Constantin Brâncoveanu) thanks a 'Reverendissimus Pater', protests the Wallachian side's sincerity against imperial broken promises, and denounces Antide Dunod as an impostor who misled the late Prince Şerban Cantacuzino; he adds that Gegenbey was killed by a false friend's treachery."}
+  ],
+  "key_file": "key.tsv"
  }
 }

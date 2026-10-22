@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-folio">The colophon on f. 19v</a><a href="#the-reading">The decoded colophon</a><a href="#the-slip">The note on f. 1r and its six signs</a><a href="#method">Method</a><a href="#what-stays-uncertain">What stays open or uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-folio">The colophon on f. 19v</a><a href="#the-reading">The decoded colophon</a><a href="#the-slip">The note on f. 1r and its six signs</a><a href="#method">Method</a><a href="#what-stays-uncertain">What stays open or uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> Catalogue entry 235 came from DECODE R4349, which has one placeholder image, a scan of two catalogue pages, and a note describing &ldquo;a short ciphertext of six symbols out in a note&rdquo;. The manuscript, Uppsala UB C 513, is a Dominican sequentiary with two ciphered pieces. The long one is the scribe&rsquo;s dating colophon on f. 19v, four lines set under chant notation, with every vowel written as the next letter (a→b, e→f, i→k, o→p, u→x). Andersson-Schmitt, Hallberg and Hedlund&rsquo;s catalogue of the Uppsala C collection (1992) gives the rule and the decipherment. Here the folio was found in the library&rsquo;s Alvin scans, transcribed letter by letter (125 letters), and decoded to the printed text word for word: the book was written in 1517 in the Strängnäs convent for the convent of Västerås. The short one is the piece DECODE&rsquo;s note means. It is a paper slip pasted on f. 1r, a private note in Old Swedish sending herbs and cinnamon bark for Anders Larsson&rsquo;s chest, which ends where a signature would stand with six signs, <em>ÿ ɑ M ÿ u ꝺ</em>. The colophon&rsquo;s rule does not fit them, no shift of the alphabet gives a name, and six signs cannot fix a key, so they are not deciphered. Of 131 cipher tokens, 125 are decoded.</div>
 
 <h2 id="the-folio"><span class="num">01</span> The colophon on f. 19v</h2>
@@ -94,6 +94,50 @@ strfngfnfnsk prp cpnxfntx knsxlfnsk</pre>
 <li>The catalogue cites earlier literature on the book: Collijn (1917), Moberg (1927) and Hedlund&rsquo;s plate of 1977. Whether any of these printed the decipherment before 1992 was not checked.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Colophon of the Strängnäs Sequentiarium, 1517, Uppsala UB C 513 f. 19v</h3>
+<p>The scribe&#x27;s dated colophon in a vowel-shift cipher set under chant notation: &#x27;In the year of the Lord 1517 the present sequentiary was written in the convent of Strängnäs for the convent of Västerås&#x27; (insulensis = the Dominican house of Västerås). The rule and reading were already printed in the Uppsala manuscript catalogue (1992); read here in full and checked.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4349/ciphertext.txt">ciphertext.txt</a></p><pre>Annp dpmknk mkllfskmp qxkngfntfsk-
+mp dfckmp sfptkmp prfsfns lkbfr sf-
+qxfnckpnbrkxs fst scrkptxs kn cpnxfntx
+strfngfnfnsk prp cpnxfntx knsxlfnsk</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4349/reading.txt">reading.txt</a></p><pre>annp               -&gt; anno                (next annp, margin 0.220/char)
+dpmknk             -&gt; domini              (next dpmini, margin 0.261/char)
+mkllfskmp          -&gt; millesimo           (next millesimp, margin 0.084/char)
+qxkngfntfskmp      -&gt; quingentesimo       (next quingentesimp, margin 0.081/char)
+dfckmp             -&gt; decimo              (next decimp, margin 0.118/char)
+sfptkmp            -&gt; septimo             (next septimp, margin 0.137/char)
+prfsfns            -&gt; presens             (next oresens, margin 0.074/char)
+lkbfr              -&gt; liber               (next liaer, margin 0.147/char)
+sfqxfnckpnbrkxs    -&gt; sequencionarius     (next sequencionbrius, margin 0.145/char)
+fst                -&gt; est                 (next fst, margin 0.231/char)
+scrkptxs           -&gt; scriptus            (next scriotus, margin 0.138/char)
+kn                 -&gt; in                
+cpnxfntx           -&gt; conuentu            (next cpnuentu, margin 0.234/char)
+strfngfnfnsk       -&gt; strengenensi        (next strengfnensi, margin 0.161/char)
+prp                -&gt; pro                 (next oro, margin 0.082/char)
+cpnxfntx           -&gt; conuentu            (next cpnuentu, margin 0.223/char)
+knsxlfnsk          -&gt; insulensi           (next insulfnsi, margin 0.165/char)
+
+anno domini millesimo quingentesimo decimo septimo presens liber sequencionarius est scriptus in conuentu strengenensi pro conuentu insulensi</pre></details>
+<h3>Slip pasted on f. 1r: Old Swedish letter ending in six signs (not read)</h3>
+<p>A short private letter in Old Swedish to Anders Larsson, sending a little cinnamon bark for his chest, closing &#x27;til liff oth sel&#x27; and then six cipher signs, probably a concealed signature. The six signs are not read (too short, no key, no sibling); the decryption file is the transcription of the clear letter with the signs as written.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4349/signs.txt">signs.txt</a></p><pre>ÿ ɑ M ÿ u ꝺ</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4349/slip.txt">slip.txt</a></p><pre>[Uppsala UB C 513, slip pasted on f. 1r (Alvin attachment 3). Old Swedish, post-medieval hand. ? = uncertain word; the
+six signs at the end are the cipher.]
+thetta skal wal[?] larens?+ andhers hess?
+lass son wara andhers y brygghe stuffuan      [+ skriffue, interlined]
+kære hertans brodher andhers larsson h[elsa]?
+sändher yagh edher littit örther til edher
+brysth kanelbark men yak ffruchthar ath
+han är gammal kære brodher edhra
+[w]älgärningar? är yak ffor ringa til at betala
+hwilket yak tager then effuige gudh
+til help then yak edher beffaller til
+liff oth sel  ÿ ɑ M  ÿ u ꝺ</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/r4349.json"></figure>
 <!-- replay:end -->

@@ -217,6 +217,12 @@
    "kind": "verification",
    "what": "Measured: f. 119 1861 signs 84 unread; f. 142 623 signs 44 unread (7 code groups); 95.1% of letter signs read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): guise1587: f. 119 f119_glyphs.txt + f119_reading.txt, f. 142 f142_pinned.txt + f142_reading.txt; key.md (Lasry's 2022 table with this project's added values).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -251,6 +257,11 @@
   "notes": "Lasry published the key (2022) but no plaintext; both letters read here for the first time as far as found.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "fr. 15564 key table (GL.htm, 29 May 2022), extended by about a dozen values", "date": "2022-05-29", "source": "cryptiana GL.htm"}
-  ]
+  ],
+  "texts": [
+   {"doc": "f119", "label": "f. 119 (DECODE R4162), 27 May 1587", "transcription": "f119_glyphs.txt", "decryption": "f119_reading.txt", "summary": "The writer (Guise?) tells Mercœur the levy of reiters is assured: by August two thousand Italian or Albanian lances and four thousand reiters; his secretary has gone to colonel Pfyffer with twelve thousand écus to treat for nine thousand Swiss; the heretics' army (eight thousand reiters, twelve thousand Swiss, lansquenets, four thousand arquebusiers for Châtillon) must be defeated, sparing nothing for the glory of God and the cause."},
+   {"doc": "f142", "label": "f. 142 (DECODE R4165), 20 June 1587", "transcription": "f142_pinned.txt", "decryption": "f142_reading.txt", "summary": "After clear news of Lunebourg with nine thousand horse on the Rhine by 20 July, the cipher says the levy that was to be so far advanced is not, the thousand lances and four thousand reiters are \"ung instable secours\", hasty resolutions force the party to order its affairs less securely than its first designs, and within five or six days the writer hopes to settle the matter with [73], the forces going to find it at Meaux."}
+  ],
+  "key_file": "key.md"
  }
 }

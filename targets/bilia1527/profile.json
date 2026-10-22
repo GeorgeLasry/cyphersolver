@@ -168,9 +168,32 @@
    ],
    "what": "Project: f. 102v decoded with the project's key: 102/118 signs valued, 94/102 agree with the contributor; LM -2.597 vs best shuffle -2.750: some words, no continuous sense; left unconfirmed.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Harumi-Matsuba's transcriptions of ff. 102r-v, reading and decoded text of f. 102r and key (contributed/), and this project's own decodes of both pages as separate files; no contributor reading of f. 102v exists (they withheld it as unconfirmed)",
+   "result": "partial"
   }
  ],
  "outcome": {
+  "texts": [
+   {
+    "doc": "f102",
+    "label": "f. 102r (30 cipher lines)",
+    "transcription": "contributed/data/transcription_f102r.txt",
+    "decryption": ["contributed/docs/READING.en.md", "contributed/data/decoded_f102r.txt", "decoded_ours_f102r.txt"],
+    "summary": "Bilia dined with an old lord (name code B.58) who complained that, by letters from his son-in-law, the Duke was troubling conte Theophimo(?) over earlier prohibitions; Bilia calmed him and advises the Duke to write a letter showing in deed the good will promised in words. Harumi-Matsuba's reading (contributed/) and this project's independent decode with its own R5258 key (decoded_ours_f102r.txt) are given separately."
+   },
+   {
+    "doc": "f102",
+    "label": "f. 102v (7 cipher lines, then clear close, Burgos 22 Nov 1527)",
+    "transcription": "contributed/data/transcription_f102v_unconfirmed.txt",
+    "decryption": "decoded_ours_f102v.txt",
+    "summary": "Seven cipher lines continuing the letter, then the clear close dated Burgos 22 November 1527, a clear postscript on the Emperor's journey to Valencia for Christmas, and Bilia's signature. The contributor gave no reading of the cipher lines; this project's decode gives words but no continuous sense."
+   }
+  ],
+  "key_file": "contributed/data/key.tsv",
   "method": "read with known key",
   "method_basis": "The key DECODE R5258 is docketed 'Cum equite Bilie', the Sforza chancery's key for this correspondent; the contributor applied it to the letter, and the project re-applied its own transcription of the sheet.",
   "first_break": true,

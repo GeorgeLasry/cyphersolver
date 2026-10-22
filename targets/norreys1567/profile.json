@@ -183,7 +183,8 @@
    "what": "Target 9 Mar 1568 settled: (1) French King name sign restored (H, same sign as 6 Feb 5/13, 9 Feb 5); (2) 'a t ? l' not read, 'Pope' and 'Catholic' rejected on Cabala p.152 (crossed arrowhead is not p); (3) Queen of Scots? by position (I).",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 85 tokens, 40 types, en-modern order 4: reading -2.538 per letter; random keys -3.11 (z 3.3); key annealed onto shuffled ciphertext best -2.006 (mean -2.045, z -15.7); annealer on the real text -1.985. Verdict: underdetermined.", "result": "partial"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 85 tokens, 40 types, en-modern order 4: reading -2.538 per letter; random keys -3.11 (z 3.3); key annealed onto shuffled ciphertext best -2.006 (mean -2.045, z -15.7); annealer on the real text -1.985. Verdict: underdetermined.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt (all groups); reading.md for 9 Mar 1568 and the full group-by-group decrypt work/tomokiyo_apply.out for the siblings", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 85, "types": 40, "tokens_per_type": 2.12, "score": -2.538, "nulls": {"random keys": {"n": 200, "mean": -3.11, "sd": 0.172, "max": -2.576, "z": 3.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.045, "sd": 0.031, "max": -2.006, "z": -15.7, "p": 1.0}}, "power": -1.985, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.538; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -1.985"}, 
   "method": "read with known key",
@@ -215,6 +216,22 @@
   ],
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Cecil-Norris table of 1567-70, reconstructed from Cabala (1663) (cryptiana elizabeth.htm)", "source": "cryptiana elizabeth.htm, \"Cecil-Norris Ciphers (1567-1570)\""}
+  ],
+  "texts": [
+   {
+    "doc": "9mar1568",
+    "label": "Norreys to Cecil, Paris, 9 March 1567/8 (Add MS 4136 f. 161, DECODE R9251)",
+    "transcription": "transcription.txt",
+    "decryption": "reading.md",
+    "summary": "Forbes's copy of the three ciphered items of Norreys's letter: the French King, an unread five-sign word, and probably the Queen of Scots. In context (CSP Foreign viii no. 2054) Norreys reports that after the treaty of Longjumeau the King sent gentlemen to the Pope, the Emperor, the King Catholic and the Swiss, and that if peace is concluded an attempt will be made into Scotland for the delivery of the Queen."
+   },
+   {
+    "doc": "siblings1567-68",
+    "label": "Norreys's earlier letters, 4 June 1567 to 24 Feb 1567/8 (ff. 160-161)",
+    "transcription": "transcription.txt",
+    "decryption": "work/tomokiyo_apply.out",
+    "summary": "The ciphered words of Norreys's letters of 4 June, 6 July and 10 July 1567 and 6, 9 and 24 Feb 1567/8, as copied by Forbes, decrypted group by group with Tomokiyo's 1568 Cecil-Norris table and checked against the calendared letters in CSP Foreign viii."
+   }
   ]
  }
 }

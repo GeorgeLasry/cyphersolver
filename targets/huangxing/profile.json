@@ -128,7 +128,8 @@
     {"date": "2026-10-20", "kind": "reading", "technique": ["key matching", "contextual inference"], "what": "Contributor (issue #48): both 20 May telegrams read with the formula: 133 groups as written, 86 after spelling corrections, 5 filled from the print, 4 inferred; telegram 1 matches the print 102/107; second copy found in B03050731100; reply re-decoded from Tomokiyo's romaji gives 詔 鬯 / 正寄函 / no 章.", "result": "worked"},
     {"date": "2026-10-21", "kind": "verification", "technique": ["key matching"], "what": "Project: decoder written here from the formula alone (threekana.py) with the repository's own code table (sunyatsen/tw.csv); this project's 15 Sept transcription of the reply, with only the O HI -> CHI correction, decodes all 46 groups to 隱印崧詔鬯行諸兄鑒正寄函間適接哿電敬悉一切護國軍能速入湘贑甚好行嚴何日東渡望速啓行先電示興徑, the contributor's text exactly; the project's earlier 誥/蕘 邕 正發書 and 章 were misreadings of the cursive.", "result": "worked"},
     {"date": "2026-10-21", "kind": "verification", "technique": ["key matching", "plaintext matching"], "what": "Project: all 219 coded groups of the contributor's final table decode under threekana.py and tw.csv to the contributor's character (219/219); telegram 1 against the print as transcribed by saberwatchmanga: 101 identical of 107 plus 刪/删 a variant form, so 102/107. The 86 spelling corrections themselves were not re-derived.", "result": "worked"},
-    {"date": "2026-10-21", "kind": "verification", "what": "Project: B03050731100 fetched; images 24-26 are consul Ota's telegram no. 42 (Zhaoqing, 21 May 1916) forwarding the romaji stream at Cen Chunxuan's request, beginning sokahokaet arakotsuka atauichire as in B03050089100.", "result": "worked"}
+    {"date": "2026-10-21", "kind": "verification", "what": "Project: B03050731100 fetched; images 24-26 are consul Ota's telegram no. 42 (Zhaoqing, 21 May 1916) forwarding the romaji stream at Cen Chunxuan's request, beginning sokahokaet arakotsuka atauichire as in B03050089100.", "result": "worked"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reply_groups.txt / reply_out.txt for the 25 May reply; stream_t1/t2_groups.txt, the contributed sankana/ romaji and groups.csv, and stream_out.txt (threekana.py stream) for the two 20 May telegrams.", "result": "worked"}
   ],
   "outcome": {
     "class": "read",
@@ -156,6 +157,43 @@
       {"who": "harumi-matsuba", "role": "key corrected", "note": "Showed that this project's cursive transcription of the reply (誥/蕘 邕, 正發書, 章行嚴) disagrees with the cipher", "date": "2026-10-20", "source": "https://github.com/dbourdeau/cyphersolver/issues/48", "published": true},
       {"who": "saberwatchmanga", "role": "identification", "note": "Found the 1916 print of telegram 1 (護國軍紀事 no. 5) and transcribed it; audit of the stream", "date": "2026-10-10", "source": "https://github.com/saberwatchmanga/sun-circle-cipher-1916", "published": true},
       {"who": "contemporary", "role": "key or decipherment used", "note": "The Japanese Foreign Ministry's 1916 decode of the reply (frame 0247)", "date": "1916-05", "source": "JACAR B03050731500 frames 0247-0248", "published": false}
+    ],
+    "texts": [
+      {
+        "doc": "reply",
+        "label": "Huang Xing to Lin Hu, Li Genyuan and others, 25 May 1916 (B03050731500 fr. 0246)",
+        "transcription": "reply_groups.txt",
+        "decryption": "reply_out.txt",
+        "summary": "Huang Xing's reply, addressed by courtesy names to Lin Hu, Li Genyuan, Cheng Zikai, Wen Qun, Yang Yongtai and Zhang Shizhao: he has their telegram, is glad the National Protection Army can enter Hunan and Jiangxi quickly, and asks when Zhang Shizhao will cross east to Japan."
+      },
+      {
+        "doc": "t1-0520",
+        "label": "Military Affairs Council to Huang Xing, 20 May 1916 (groups 0-107)",
+        "transcription": [
+          "stream_t1_groups.txt",
+          "sankana/romaji_raw.txt",
+          "sankana/romaji_copy2.txt"
+        ],
+        "decryption": [
+          "stream_out.txt",
+          "sankana/groups.csv"
+        ],
+        "summary": "The Military Affairs Council welcomes Huang Xing's arrival in Japan and asks for his guidance on domestic and foreign affairs, signed by Tang Jiyao, Cen Chunxuan, Liang Qichao and others; already printed in 1916 (護國軍紀事 no. 5). Transcription and corrections contributed by Harumi-Matsuba (issue #48)."
+      },
+      {
+        "doc": "t2-0520",
+        "label": "Lin Hu, Li Genyuan and four others to Huang Xing, 20 May 1916 (groups 108-228)",
+        "transcription": [
+          "stream_t2_groups.txt",
+          "sankana/romaji_raw.txt",
+          "sankana/romaji_copy2.txt"
+        ],
+        "decryption": [
+          "stream_out.txt",
+          "sankana/groups.csv"
+        ],
+        "summary": "The six at Zhaoqing report that the Military Affairs Council holds only a name, its committees not yet organised; the Xiehe army will soon enter Jiangxi from Shaozhou; Lin Hu takes the Fourth Division; and Zhang Shizhao plans to come east to report in person. Transcription and corrections contributed by Harumi-Matsuba (issue #48)."
+      }
     ]
   }
 }

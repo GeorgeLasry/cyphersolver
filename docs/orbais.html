@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#keys">The three bound keys</a><a href="#cipher">The cipher, and a key from 1586</a><a href="#reading">What the ciphered words say</a><a href="#residuals">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#keys">The three bound keys</a><a href="#cipher">The cipher, and a key from 1586</a><a href="#reading">What the ciphered words say</a><a href="#residuals">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> The catalogue entry supposed that one of three keys bound in BnF fr. 3413, nos. 53, 61 and 69, might fit the letter at no. 62.
 <strong>None of them does.</strong> No. 53 is a numerical key and the letter has no figures. No. 61 is an Italian key with a different set of signs. No. 69 is a League key in which the square sign is <em>e</em>, where the letter needs <em>n</em>.
@@ -144,6 +144,50 @@ A &ldquo;S<sup>r</sup> Baron&rdquo; writes in the same League dossier of 1593 as
 <li>The rest of fr.&nbsp;4715 f.&nbsp;2 (lines 7, 9&ndash;11, 13, 16, 18 and 21&ndash;29) is not aligned sign by sign and might still give τ, ʃ&deg;, Ƃ or the n&ndash;a pair. The real key source is Tomokiyo&rsquo;s, BnF fr. 3612, six letters of Piles with interlinear decipherments. A new search of Gallica confirms it is not digitised; it has to be seen at the BnF.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Letter to the abbé d&#x27;Orbais, Rome, 23 Aug [1589], BnF fr. 3413 no. 62</h3>
+<p>A secretary of Cardinal Pellevé writes from Rome to Jean de Piles, abbé d&#x27;Orbais, the League&#x27;s envoy, with the news of Henri III&#x27;s death (the Duke of Lorraine&#x27;s agent writes that the King was killed at the King of Navarre&#x27;s instigation and the Cardinal de Bourbon proclaimed King in Paris). The letter is almost entirely in clear; its short cipher groups read &#x27;le doien&#x27;, &#x27;la protection&#x27;, Mons. Cassin, &#x27;vostre&#x27;, &#x27;Mr le [?] mon maistre&#x27;, &#x27;j&#x27;ay veu ung advis qui confirme&#x27; and the signature Baron. The clear text is not transcribed in the folder.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/no62_cipher.txt">no62_cipher.txt</a></p><pre># BnF fr. 3413 no. 62 (Rome, 23 Aug [1589]) - the cipher groups, one per line, in letter order.
+# First field = group label; then one token per cipher sign (labels as in NOTES.md / decode62.py).
+# Measure with: python docs/_check_profile.py --measure targets/orbais/no62_cipher.txt --drop-first
+# 5 Oct 2026 re-check at native resolution: V2 fifth sign has an inner mark like V1&#x27;s ⊡ (not the clean ◻ of Cassin) -&gt; ⊡;
+# C sixth sign ʃ° is the small hooked ʃ that fr. 4715 uses for y/ay (&quot;+ v ʃ&quot; = l&#x27;ay); C last sign = V1/Cassin ÷.
+# Transcribed from the Gallica full-resolution images (ff. 126v-127r, canvases 260-261), 22 Sept 2026.
+S1a  Ƃ 1 6 θ ÷
+S1b  W 4 æ ⊡ − ʃ
+S2   Ƒ 3 tt ħ θ ◻
+C    φ tt o V æ ʃ° ÷
+P1   ꝥ V 6 ⊡ m ooo θ W 8
+P2   ɸ tt ◻
+Cas  W V ÷ 9 ◻
+V1   ɔ tt ÷ ooo ⊡ θ
+V2   n a æ η ⊡ θ
+G1   ⌘ Ƒ τ x ⋕ ◻ ∇ V 9
+G2   ÷ ooo ⊡ θ
+H    ʃ ɔ θ φ ɔ ◻ η − 7 b ɸ q
+I    W ⋕ ◻ Ⱥ 9 ⊡ x æ
+Sig  2 V ⊡ m Ħ</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/no62_decryption.md">no62_decryption.md</a></p><pre># Output of decode62.py, run 22 Oct 2026: per cipher group, the LM score, the signs, the letter-value decode and the reading; [x] = code sign without a value, &#x27;(no sense)&#x27; = group not read. The clear text of the letter is not transcribed in this folder. Verbatim script output.
+LM  -3.25 sense  S1a  Ƃ 1 6 θ ÷                    -&gt; ?depes                 | [Ƃ] de-pes             C  4/5
+LM  -3.25 sense  S1b  W 4 æ ⊡ − ʃ                  -&gt; chera?                 | chera [ʃ]              C  5/6
+LM  -2.79 sense  S2   Ƒ 3 tt ħ θ ◻                 -&gt; ledoien                | le doien               C  6/6
+LM  -6.36 NO  C    φ tt o V æ ʃ° ÷              -&gt; uopaeys                | (no sense)             -  0/7
+LM  -0.92 sense  P1   ꝥ V 6 ⊡ m ooo θ W 8          -&gt; laprotect              | la protect             H  9/9
+LM   0.00 sense  P2   ɸ tt ◻                       -&gt; ion                    | ion                    H  3/3
+LM  -2.21 sense  Cas  W V ÷ 9 ◻                    -&gt; casin                  | Cassin                 H  5/5
+LM  -0.03 sense  V1   ɔ tt ÷ ooo ⊡ θ               -&gt; uostre                 | vostre                 H  6/6
+LM  -4.54 NO  V2   n a æ η ⊡ θ                  -&gt; etfegre                | (no sense)             -  0/6
+LM  -1.42 sense  G1   ⌘ Ƒ τ x ⋕ ◻ ∇ V 9            -&gt; Mrle?monmai            | Mr le [τ] mon mai      C  8/9
+LM   0.00 sense  G2   ÷ ooo ⊡ θ                    -&gt; stre                   | stre                   H  4/4
+LM  -3.05 sense  H    ʃ ɔ θ φ ɔ ◻ η − 7 b ɸ q      -&gt; jayueuungaduis         | j&#x27;ay veu ung advis     C  12/12
+LM  -0.59 sense  I    W ⋕ ◻ Ⱥ 9 ⊡ x æ              -&gt; confirme               | confirme               C  8/8
+LM  -0.03 sense  Sig  2 V ⊡ m Ħ                    -&gt; baron                  | Baron                  H  5/5
+
+cipher tokens 91, read as sense 75, fraction 0.824</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/orbais/texts/key.md">key.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/orbais.json"></figure>
 <!-- replay:end -->

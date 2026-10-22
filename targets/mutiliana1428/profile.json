@@ -127,7 +127,8 @@
    "what": "Split from the R1854 entry under the one-key rule (Lasry, 14 Oct 2026): the record's four letters use four ciphers; image 3 is this entry. 869 of 894 signs read as sense (0.972, 5 Oct 2026 count).",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 875 tokens, 50 types, it-cinquecento order 4: reading -2.145 per letter; random keys -4.343 (z 6.2); key annealed onto shuffled ciphertext best -2.864 (mean -2.909, z 22.7); annealer on the real text -2.267. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 875 tokens, 50 types, it-cinquecento order 4: reading -2.145 per letter; random keys -4.343 (z 6.2); key annealed onto shuffled ciphertext best -2.864 (mean -2.909, z 22.7); annealer on the real text -2.267. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign transcription p3_signs.txt, reading reading_p3.md with the line-by-line decode p3_decoded.txt; key key3_p3.txt", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 875, "types": 50, "tokens_per_type": 17.5, "score": -2.145, "nulls": {"random keys": {"n": 200, "mean": -4.343, "sd": 0.357, "max": -3.567, "z": 6.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.909, "sd": 0.034, "max": -2.864, "z": 22.7, "p": 0.1429}}, "power": -2.267, "verdict": "pass", "notes": "claimed per-occurrence score -2.145; polyphony 0.0; 19 unread tokens left out; annealer on the real text from random keys reached -2.267"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -158,6 +159,19 @@
     "role": "key or decipherment used",
     "note": "interlinear decipherment of the letter, the key source"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R1854-P3",
+    "label": "Forlì, 6 Nov 1428 (DECODE R1854 image 3)",
+    "transcription": "p3_signs.txt",
+    "decryption": [
+     "reading_p3.md",
+     "p3_decoded.txt"
+    ],
+    "summary": "A Gonzaga informant at Forlì tells Gianfrancesco Gonzaga that the papal governor of Forlì secretly favours the marquess's sons and that the pope is said to be with them; an enterprise with the lord Malatesta and the count of Urbino would make the lord of Mantua a great lord in a short time; and the count of Urbino (Guidantonio da Montefeltro) is secretly in close contact with Giovanni de Ramberto."
+   }
+  ],
+  "key_file": "key3_p3.txt"
  }
 }

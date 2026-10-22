@@ -98,7 +98,8 @@
     {"date": "2026-09-22", "kind": "reading", "what": "Identified the small writing between the cipher lines of f. 15 as a contemporary word-by-word decipherment, not random pen trials.", "result": "worked"},
     {"date": "2026-09-22", "kind": "key from source", "what": "Fetched Nevers no. 2 of 1584 from BnF fr. 3995 f. 16 and confirmed that it is only a sibling key, not the exact target alphabet.", "result": "partial"},
     {"date": "2026-09-22", "kind": "literature search", "what": "Checked a superficially similar Henri III appeal printed by Lavisse and rejected it as a crib because it predates this letter and has a different sender.", "result": "failed"},
-    {"date": "2026-09-22", "kind": "reading", "what": "Read the opening on f. 15 and the clear ending on f. 16r; continuous transcription of the cipher leaves remained blocked by the overwritten minute hand.", "result": "partial"}
+    {"date": "2026-09-22", "kind": "reading", "what": "Read the opening on f. 15 and the clear ending on f. 16r; continuous transcription of the cipher leaves remained blocked by the overwritten minute hand.", "result": "partial"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryptions f15_reading.md (opening, address and clear ending only) and f21_transcription.md (the clear fair copy); no sign-level transcription of either cipher exists in the folder", "result": "partial"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -120,6 +121,20 @@
     ],
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy under the cipher flap (f. 21) and interlinear decipherment of f. 15"}
+    ],
+    "texts": [
+      {
+        "doc": "f15",
+        "label": "Henriette de Clèves to the duke of Nevers, Lyon, 16 Sept [1574], ff. 15-16",
+        "decryption": "f15_reading.md",
+        "summary": "The duchess of Nevers writes to her husband; a contemporary reader wrote a word-by-word French decipherment between the cipher lines. Only the opening, the address and the clear ending on f. 16r are edited: it is midnight, her eyes hurt from weeping, and seeing how they are treated she would rather be in paradise. No transcription of the cipher signs or continuous transcription of the interlinear gloss exists (the gloss is too crowded to transcribe defensibly)."
+      },
+      {
+        "doc": "f21",
+        "label": "Renato Birago to the duke of Nevers, Lyon, 28 Sept 1574, f. 21",
+        "decryption": "f21_transcription.md",
+        "summary": "Birago had expected Nevers in Lyon for St Michael's day; the bearer's business comes at the worst moment, as the affairs of the kingdom make anything else more urgent; Birago will speak of Piedmont by mouth; Their Majesties are well disposed to give Nevers a government and whatever else he deserves. The decryption is the clear fair copy on the same recto; the cipher flap itself was not transcribed sign by sign."
+      }
     ]
   }
 }
