@@ -193,6 +193,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 1226 tokens, 44 types, es-golden-age order 4: reading -1.96 per letter; random keys -6.156 (z 8.5); key annealed onto shuffled ciphertext best -3.462 (mean -3.514, z 36.7); annealer on the real text -2.095. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts (George Lasry's request of 22 Oct 2026): Brackx's reading and his proposed corrections to Lasry's 2022 ll. 1-13 listed beside Lasry's 2026 reading, for comparison.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -327,10 +333,27 @@
   "texts": [
    {
     "doc": "no95",
-    "label": "BnF Espagnol 318 f. 122, 8 Jan 1497",
+    "label": "George Lasry's reading (PR 75, 2026): BnF Espagnol 318 f. 122, 8 Jan 1497",
     "transcription": "lasry2021/ctts/transcription/all.txt",
     "decryption": "reading.txt",
     "summary": "Bread cannot be had even for money; the French court the city's silk workers with trade licences; the King provides 'muy tarde y muy poco'; the Pope wants the cardinal of Santa Cruz to seek peace in France."
+   },
+   {
+    "doc": "no95",
+    "label": "Michael Brackx's reading (issue #63): ll. 14-33 and the verso",
+    "transcription": "lasry2021/ctts/transcription/all.txt",
+    "decryption": "texts/no95_decryption_brackx.md",
+    "summary": "Brackx's independent reading of ll. 14-33 and the verso, for comparison with Lasry's; it agrees except at 'rogaria a los que le ruegan' (NOTES)."
+   },
+   {
+    "doc": "no95",
+    "label": "Lasry's 2022 reading of ll. 1-13 and Brackx's proposed corrections",
+    "transcription": "lasry2021/ctts/transcription/all.txt",
+    "decryption": [
+     "texts/no95_decryption_lasry_ll1-13.md",
+     "texts/no95_corrections_brackx_ll1-13.md"
+    ],
+    "summary": "Lasry's earlier decipherment of ll. 1-13 (the image on Tomokiyo's GL page) and the nine corrections Brackx proposed to it in issue #63."
    }
   ],
   "key_file": "lasry2021/ctts/key.txt"
