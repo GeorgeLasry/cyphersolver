@@ -8,8 +8,9 @@ Reyes Católicos*. The other letters are different ciphers, each with its own en
   deciphered in print by Ivan Parisi (2020);
 - [`targets/esp318no95/`](../esp318no95/NOTES.md), no. 95 (f. 122r–v, 8 Jan 1497): George Lasry's 2022 alphabet,
   applied here in stretches;
-- [`targets/esp318no93/`](../esp318no93/NOTES.md), nos. 93 and 94 (ff. 118–121v, 1503–04): not solved; key not
-  identified, and whether the two share a key is not established.
+- [`targets/esp318no93/`](../esp318no93/NOTES.md), no. 93 (f. 118r–v, 1504): not solved; key not identified;
+- [`targets/esp318no94/`](../esp318no94/NOTES.md), no. 94 (ff. 120r–121v, 27 Apr 1503): a different key, recovered
+  from the ciphertext by Michael Brackx (issue #62, 21 Oct 2026), deciphered in part.
 
 The volume's shared material stays here: the IIIF manifest, notice and folio map, the full-size scans of all
 thirteen cipher folios (`full/`), the literature (`lit/`), the key transcription (`keys/`) and the segmentation
