@@ -29,6 +29,12 @@ body:
       description: "Full texts, for every document claimed as read: the transcription of the ciphertext and the complete decryption (line by line against the ciphertext; mark unsure passages and unread groups). Attach files if long. They are shown on the write-up so the reading can be used and checked by others." 
     validations: {required: true}
   - type: textarea
+    id: sentences
+    attributes:
+      label: Reading and English translation
+      description: "For every document: the plaintext as coherent sentences in its own language (any language), holes marked in place ([...], [?word], [47] for an unidentified code), and an English translation with the same holes. A mechanical decryption is not a reading: if most sentences still have holes, go back to the images and the key, or send it marked 'decoded, not read'. A few holes are fine (George Lasry, 22 Oct 2026)."
+    validations: {required: true}
+  - type: textarea
     id: method
     attributes:
       label: How the key was obtained

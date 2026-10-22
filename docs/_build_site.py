@@ -2573,9 +2573,16 @@ def texts_html(page):
                 bits = [b for b in (d.get('shelfmark'), d.get('date')) if b]
                 labels.append(html.escape(i if i != 'all' else 'All documents') + (f' <span class="muted">({html.escape(", ".join(map(str, bits)))})</span>' if bits else ''))
             head = html.escape(t['label']) if t.get('label') else ('; '.join(labels) or 'Texts')
-            out.append(f'<h3>{head}</h3>')
+            # a mechanical decode that does not yet build sentences is shown for checking, labelled as such (Lasry, 22 Oct 2026)
+            state = TX.entry_state(t)
+            tag = {'decoded, not read': ' <span class="st stuck">decoded, not read</span>',
+                   'not prose': ' <span class="st found">not prose</span>'}.get(state, '')
+            out.append(f'<h3>{head}{tag}</h3>')
             if t.get('summary'): out.append(f'<p>{html.escape(t["summary"])}</p>')
-            for kind, key in (('Transcription', 'transcription'), ('Decryption', 'decryption'), ('Translation', 'translation')):
+            if state == 'decoded, not read':
+                out.append('<p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription '
+                           'and the key can be checked and improved, not as a reading.</p>')
+            for kind, key in (('Transcription', 'transcription'), ('Decryption', 'decryption'), ('Reading', 'reading'), ('Translation', 'translation')):
                 for p in TX.listify(t.get(key)): out.append(show(kind, p))
         keys = TX.listify(o.get('key_file'))
         if keys:

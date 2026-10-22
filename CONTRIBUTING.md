@@ -22,6 +22,21 @@ earlier contributors can judge the new reading. Please add a short summary of wh
 historical context. A reading sent without its texts is recorded as a pointer until they arrive. (George Lasry,
 October 2026.)
 
+**A reading must read, in any language.** A mechanical decryption is not a reading. Before a contribution with a
+reading is accepted, it must show for each document (George Lasry, 22 Oct 2026):
+
+1. **The plaintext as coherent sentences** in the document's own language (French, Italian, Spanish, Latin, German,
+   Dutch, Hungarian, English ...): word division, punctuation and resolved code groups, with every hole marked in
+   place (`[...]`, `[?word]`, `[47]` for an unidentified code). A few holes are fine; holes in almost every sentence
+   are not, and mean the transcription or the key needs another pass against the images.
+2. **An English translation** of those sentences, with the same holes. Not needed if the plaintext is English.
+3. The decryption itself, line by line against the transcription, so the reading can be checked.
+
+A document that decodes but does not yet build sentences can still be sent, marked "decoded, not read": it is shown
+for others to improve, and is not counted as read. Key sheets, code lists and worksheets are marked "not prose".
+`python docs/_check_reading.py <folder>` measures the share of sentences without holes; the write-up checker refuses
+a reading below the floor. Please run it before opening the pull request.
+
 Not on GitHub? Email dnbourdeau@gmail.com with the same details. The entry is made for you and credited the same way.
 
 ## Pull requests

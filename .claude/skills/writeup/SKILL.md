@@ -53,6 +53,19 @@ not from memory. The slug is the folder name unless a page already exists under 
   section before the sources, short files inline; `_check_writeup.py` refuses a reading without it. A decryption is
   the deciphered text, with unread groups marked, not only a score or a sample. If a contributor's texts are
   missing, ask for them and keep the result as a pointer until they arrive.
+- **A reading must read, and be translated (George Lasry, 22 Oct 2026, on matignon1586).** A mechanical decryption
+  is not a reading. Before anything is called read or read in part, build the decode into coherent sentences in its
+  own language and translate them into English; where a sentence will not form, go back to the image and the key
+  (a figure misread, a homophone mislabelled, a code group), fix, re-decode, and repeat until the sentences hold.
+  A few holes are fine; holes in almost every sentence are not. Per `outcome.texts` entry: the `decryption`, a
+  `reading` file when the decryption is raw (unspaced, capitals, decoder lines), a `translation` into English (not
+  needed when `language` is `en`), and `state`: `read`, or `decoded, not read` for a leaf that does not yet build
+  sentences (shown for checking, not counted, and never inside a target classed "read"), or `not prose` for key
+  sheets, code lists and worksheets. `python docs/_check_reading.py <folder>` scores the sentences (language-neutral:
+  at most one hole in ten words makes a sentence clean; 45% clean is the floor, 70% and prose is readable); below the
+  floor `_check_writeup.py` refuses the entry unless a reader records `reading_review` {grade A|B, by, date, note}
+  because the scorer's word list fails that language. The headline percentage on the page is never a token-run
+  figure for a text that does not read.
 - **No cipher type without evidence.** Until part of the text is read, name the system only as far as measured
   evidence goes ("a transposition: letter frequencies match Spanish"). Do not name a specific system, or say what
   its users were taught or would have been given, unless a source is cited; families not yet excluded are

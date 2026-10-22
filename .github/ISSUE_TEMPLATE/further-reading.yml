@@ -25,7 +25,7 @@ body:
     id: evidence
     attributes:
       label: Evidence
-      description: Every place the value occurs and how it reads there, the images or sources you worked from, and anything that still does not fit.
+      description: Every place the value occurs and how it reads there (as sentences, with an English translation of the passage it changes), the images or sources you worked from, and anything that still does not fit.
     validations: {required: true}
   - type: input
     id: credit

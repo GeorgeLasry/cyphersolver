@@ -1,13 +1,23 @@
 # Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: read in part, written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)). Measured
-with the **merged Cipher-1 key** (`key_cipher1.json`, section "One key, 22 Oct 2026" below) on Michael Brackx's
-complete re-transcription (issues #73, #77, #78, #79, #83): **63.7% of the target's cipher tokens read as sense
-(10,616 of 16,677; 58.7% after a scrambled-key control)**, every Cipher-1 leaf transcribed in full. Where a contemporary
-clear copy exists the decode agrees with it on 85-93% of letters. Before: 61.8% with his per-leaf keys, 39%
-(`key_contrib.json`, 21 Oct), 31% (`key.json`, 22 Sept). **ff. 143r-v, 149v-150 and 154r-v were deciphered at the
-time**: ff. 155-157 are contemporary clear copies of them (found by Brackx, #70). The read bar (95%) is not met; ten
-code groups and the residue of each leaf stay open (Remaining gaps). Full decryptions per document: `texts/`.
+Status: in progress. Written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)) and corrected the
+same day after **George Lasry's review**: "The decryptions are not useful. They seem to have many errors, making it
+impossible to assemble coherent French sentences." He is right for the leaves without a copy. Now:
+
+* **Read and translated (6 of 15 pages, 5,255 of 16,677 tokens, 31.5%)**: ff. 143r-v, 149v-150v and 154r-v, from their
+  contemporary clear copies ff. 155-157 (found by Brackx, #70). Reading and English per letter: `texts/reading_f143.md`,
+  `reading_f150.md`, `reading_f154.md` and the `_en.md` files. The key's decode agrees with the copies on 85-93% of
+  letters. The f. 155r copy breaks off on f. 143v ("où il eust …"); the rest of f. 143v is decode only.
+* **Decoded, not read (9 pages)**: ff. 110, 123r-124v, 173, 196, 201, fr. 15571 f. 177r-v. The merged-key decode has
+  holes in most sentences: 5-24% of sentences clean (`python docs/_check_reading.py matignon1586`), against 78-88% for
+  the readings from the copies. Marked `"state": "decoded, not read"` in `profile.json` and on the page.
+* Withdrawn as a reading: the token-run figure, **63.7% of tokens in runs of French** (10,616 of 16,677; scrambled floor
+  12.1%). It shows the key is real, but `measure.py`'s rule passes short corpus words strung together ("la que le
+  estoit"), so it overstated what can be read. Earlier figures: 61.8% (Brackx's per-leaf keys), 39% (21 Oct), 31%
+  (22 Sept).
+* **Next**: build each decoded leaf into sentences, check every break against the image (Brackx's figure labels have
+  had no second reader) and the key, re-decode, translate; ff. 196/201 first (the same text twice), then f. 173, f. 110,
+  ff. 123-124. Ten code groups stay open (Remaining gaps).
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder keeps **Mayenne–Forget's
 Cipher-1** only. Matignon's **Cipher-3** leaves (fr. 15572 f. 276 and fr. 15571 f. 179, read by alejandrozarco in
@@ -482,7 +492,8 @@ where there is one). Per document 0.51 (f. 123r) to 0.77 (f. 201).
 
 ## Remaining gaps
 
-- unread share of every leaf (23-49% of tokens outside sense runs; ff. 123r and 173 lowest) - blocker: open-codes; with the merged key the decode agrees with the clear copies on 85-93% of letters, so most of the residue is spelling the corpus does not know, single-figure slips and the open codes below; a second reading of the figure labels is still workable
+- nine leaves decoded, not read: ff. 110, 123r, 123v, 124r, 124v, 173, 196, 201, fr. 15571 f. 177r-v (11,422 tokens) - blocker: not-attempted; holes in most sentences (5-24% of sentences clean, `docs/_check_reading.py`; George Lasry, 22 Oct 2026). Workable: build sentences leaf by leaf, check each break on the image and the key, re-decode, translate; ff. 196/201 first
+- f. 143v after "où il eust", where the f. 155r copy breaks off - blocker: not-attempted; decode only, to be read as for the uncopied leaves
 - code groups 16, 19, 23, 45, 64, 101, 102, 103, `me`, 9, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (64 = *un* and `me` = *mesme* fit, not adopted; 9 is two different words against the copies)
 - the copy of f. 20r (rest of f. 19v, about 11 lines) - blocker: open-codes; read by Brackx but not given in #78, so his 86.7% for f. 20r is unchecked here
 

@@ -327,6 +327,12 @@ def check_slug(slug):
             item(not tp, f'{folder}: full texts listed in outcome.texts (transcription + decryption per document, key file)'
                  + ''.join(f'\n         - {p}' for p in tp))
             item(not _texts.summary_missing(prof), f'{folder}: a summary of contents on the texts (outcome.texts[].summary)', warn=True)
+            # the texts must read as sentences, with an English translation (George Lasry, 22 Oct 2026, matignon1586)
+            hard, soft = _texts.reading_problems(tdir(folder), prof)
+            item(not hard, f'{folder}: the reading builds coherent sentences and is translated (docs/_check_reading.py {folder})'
+                 + ''.join(f'\n         - {p}' for p in hard))
+            if soft:
+                item(False, f'{folder}: readability notes' + ''.join(f'\n         - {p}' for p in soft), warn=True)
     for folder in sorted(folders):
         part, probs, _ = partial_problems(folder)
         if part:
@@ -514,6 +520,20 @@ def audit(brief=False):
     if not brief:
         for d, tp in notext: print(f'   {d}/  ({tp[0]}' + (f'; +{len(tp) - 1} more' if len(tp) > 1 else '') + ')')
         for d in nosum: print(f'   no summary: {d}/')
+    # 10. readability (George Lasry, 22 Oct 2026): texts that do not build sentences, readings with no translation.
+    # Structural only here (no scoring, which is slow); research/reading_audit/ holds the scored and read audit.
+    untrans, decoded = [], []
+    for d in dirs:
+        try: prof = json.loads(read(tdir(d) / 'profile.json') or '{}')
+        except ValueError: continue
+        if not _texts.needs_texts(prof): continue
+        hard, _ = _texts.reading_problems(tdir(d), prof, score=False)
+        if any('translation' in h for h in hard): untrans.append(d)
+        if any('decoded, not read' in h for h in hard): decoded.append(d)
+    print(f'J. Readability: {len(untrans)} readings without an English translation, {len(decoded)} classed as readings '
+          f'with decoded-not-read texts (python docs/_check_reading.py --audit scores the sentences)')
+    if not brief:
+        for d in decoded: print(f'   decoded, not read: {d}/')
     return problems, gaps
 
 # ---------------------------------------------------------------------------

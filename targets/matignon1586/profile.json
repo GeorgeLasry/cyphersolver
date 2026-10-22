@@ -868,11 +868,21 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "George Lasry reviewed the page: the decryptions cannot be built into coherent French sentences. Sentence-level check (docs/_check_reading.py, at most one hole in ten words per clean sentence): the nine leaves without a copy give 5-24% clean sentences, the readings from the clear copies 78-88%. The nine leaves were relabelled decoded, not read; the six with copies were given a reading and an English translation (texts/reading_*.md); fraction_read 0.637 -> 0.315.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "The Cipher-1 leaves were deciphered with Tomokiyo's published partial table, verified and completed against same-volume decipherments (f. 14v/15r, f. 18/19) and corrected by Michael Brackx; ff. 143, 149v-150 and 154r-v also have contemporary clear copies (ff. 155-157), which give their full text.",
+  "method": "read from existing decipherment",
+  "method_basis": "ff. 143r-v, 149v-150v and 154r-v are read from their contemporary clear copies (ff. 155-157, found by Michael Brackx), which the key's decode matches on 85-93% of letters; the other nine leaves decode with the key (Tomokiyo's table, checked on the f. 14/15 and f. 18/19 cribs, merged from Brackx's corrections) but do not yet build sentences.",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
@@ -880,9 +890,9 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.637,
+  "fraction_read": 0.315,
   "fraction_read_method": "measured",
-  "fraction_read_source": "final_texts.py, 22 Oct 2026: Brackx's complete re-transcription of every Cipher-1 leaf (issues #73, #77-#79, #83) decoded with the merged Cipher-1 key key_cipher1.json (the union of his eleven per-leaf keys + 59 = argent) by this project's beam and 6-gram, measure.py's sense rule: 10,616 of 16,677 tokens (0.637), set-size-preserving scrambled-key floor 0.121, corrected 0.587. Before: per-leaf keys 10,303 (0.618, brackx_validate.py); 5,480 of ~14,082 (0.389, key_contrib.json, 21 Oct); 4,325 (0.307, key.json, 22 Sept). The f. 18-20 crib leaves are not target documents and are not counted.",
+  "fraction_read_source": "22 Oct 2026, after George Lasry's review of the page: only the documents that build coherent sentences count. Those are the six leaves with contemporary clear copies (ff. 143r-v, 149v-150v, 154r-v; 1,916 + 1,573 + 1,766 = 5,255 of 16,677 Cipher-1 tokens = 0.315), read from the copies and translated (texts/reading_*.md). The other nine leaves are decoded, not read (docs/_check_reading.py: 5-24% of sentences clean). Earlier token-run figure, kept as evidence that the key works, not as a reading: 10,616 of 16,677 tokens in runs of French (0.637), scrambled floor 0.121.",
   "codes_open": {
    "open": 10,
    "total": 50
@@ -896,9 +906,14 @@
   ],
   "gaps": [
    {
-    "item": "unread share of every leaf (23-49% of tokens outside sense runs; ff. 123r and 173 lowest)",
-    "blocker": "open-codes",
-    "detail": "with the merged key the decode agrees with the clear copies on 85-93% of letters; the residue is spelling the corpus does not know, single-figure slips in the transcription and the open codes; no second reader has checked the figure labels"
+    "item": "nine leaves decoded, not read: ff. 110, 123r, 123v, 124r, 124v, 173, 196, 201, fr. 15571 f. 177r-v (11,422 tokens)",
+    "blocker": "not-attempted",
+    "detail": "The merged-key decode has holes in most sentences (5-24% of sentences clean, docs/_check_reading.py; George Lasry, 22 Oct 2026). No contemporary copy. Next: build sentences leaf by leaf, check every break against the image (Brackx's labels have had no second reader) and the key, re-decode, translate; ff. 196/201 first (the same plaintext twice)."
+   },
+   {
+    "item": "f. 143v after \"où il eust\": the clear copy breaks off, the rest is decode only",
+    "blocker": "not-attempted",
+    "detail": "read the rest of the cipher against the decode as for the uncopied leaves"
    },
    {
     "item": "code groups 16, 19, 23, 45, 64, 101, 102, 103, me, 9, and the name code 98",
@@ -912,7 +927,7 @@
    }
   ],
   "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress. 22 Oct 2026: Brackx's issues #73, #77, #78, #79, #83 folded in (complete re-transcription, per-leaf keys, codes 15, 34, 46, 51, 61, 73, 78, 82, 84), validated with this project's decoder against the clear copies and a control (brackx_validate.json). Still in progress: read bar not met, codes open, keys not merged. 22 Oct 2026 (later): the per-leaf keys merged into one Cipher-1 key (key_cipher1.json; merge_keys.py), which reads every leaf as well or better; 59 = argent from the f. 157r copy; re-measured 0.637; site page written.",
-  "fraction_coherent": 0.587,
+  "fraction_coherent": 0.315,
   "provenance": "mixed",
   "credits": [
    {
@@ -993,18 +1008,18 @@
   ],
   "parts": [
    {
-    "label": "Cipher-1 despatches deciphered with the key (ff. 110, 123-124, 150r, 173, 196, 201, fr. 15571 f. 177r-v)",
-    "records": "BnF fr. 15572 ff. 110, 123-124, 150r, 173, 196, 201; fr. 15571 f. 177r-v",
-    "method": "read with known key",
-    "extent": "partial",
-    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs, extended by Brackx's corrections and per-leaf keys (issues #64-#83), merged here into one key (key_cipher1.json); 0.637 of the target's tokens read as sense on his re-transcription (final_texts.py, 22 Oct 2026)"
-   },
-   {
-    "label": "ff. 143r-v, 149v-150, 154r-v (clear copies ff. 155-157)",
-    "records": "BnF fr. 15572 ff. 143, 149v-150, 154",
+    "label": "ff. 143r-v, 149v-150v, 154r-v (clear copies ff. 155-157)",
+    "records": "BnF fr. 15572 ff. 143, 149v-150v, 154",
     "method": "read from existing decipherment",
     "extent": "complete",
     "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them; what the notes called the 'f. 149v' cipher is f. 150r, a full page (#83); Brackx's decodes of ff. 143r-v, 150r-v and 154r-v agree with the copies on 83-94% of letters (brackx_validate.json)"
+   },
+   {
+    "label": "Cipher-1 despatches decoded with the key, not yet read (ff. 110, 123-124, 173, 196, 201, fr. 15571 f. 177r-v)",
+    "records": "BnF fr. 15572 ff. 110, 123-124, 173, 196, 201; fr. 15571 f. 177r-v",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs and merged from Brackx's per-leaf keys (key_cipher1.json), decodes these leaves into fragments with holes in most sentences (5-24% of sentences clean, docs/_check_reading.py). Withdrawn as a reading on 22 Oct 2026 after George Lasry's review; shown as decoded, not read."
    }
   ],
   "key_file": [
@@ -1017,35 +1032,55 @@
     "label": "f. 143r",
     "transcription": "brackx2026/f143r_cipher.txt",
     "decryption": "texts/f143r.txt",
-    "summary": "Mayenne to the King, April 1586, after the capitulation of Castets: its captain, unhappy with the King of Navarre, has agreed to leave him; a treaty of twelve thousand ecus in three months, leave to sell his property and a pardon to be registered by the Parlement. The clear copy is f. 155r."
+    "summary": "Mayenne to the King, April 1586, after the capitulation of Castets: its captain, unhappy with the King of Navarre, has agreed to leave him; a treaty of twelve thousand ecus in three months, leave to sell his property and a pardon to be registered by the Parlement. The clear copy is f. 155r.",
+    "language": "fr",
+    "reading": "texts/reading_f143.md",
+    "translation": "texts/reading_f143_en.md",
+    "state": "read"
    },
    {
     "doc": "f143v",
     "label": "f. 143v",
     "transcription": "brackx2026/f143v_cipher.txt",
     "decryption": "texts/f143v.txt",
-    "summary": "The Castets despatch continued, on the terms and the march of the army; the clear copy is f. 155r-v."
+    "summary": "The Castets despatch continued, on the terms and the march of the army; the clear copy is f. 155r-v.",
+    "language": "fr",
+    "reading": "texts/reading_f143.md",
+    "translation": "texts/reading_f143_en.md",
+    "state": "read"
    },
    {
     "doc": "f150r",
     "label": "f. 149v-150r",
     "transcription": "brackx2026/f150r_cipher.txt",
     "decryption": "texts/f150r.txt",
-    "summary": "Forget to Villeroy, April 1586, on how the composition of Castets was made: 'if there was a fault in the substance, there was more in the form'. The clear copy is f. 155v."
+    "summary": "Forget to Villeroy, April 1586, on how the composition of Castets was made: 'if there was a fault in the substance, there was more in the form'. The clear copy is f. 155v.",
+    "language": "fr",
+    "reading": "texts/reading_f150.md",
+    "translation": "texts/reading_f150_en.md",
+    "state": "read"
    },
    {
     "doc": "f150",
     "label": "f. 150v",
     "transcription": "brackx2026/f150v_cipher.txt",
     "decryption": "texts/f150.txt",
-    "summary": "The same letter continued: the two commanders listen too readily to their own people, who want no company of one another; Forget thinks he has earned his wages. The clear copy is f. 156r."
+    "summary": "The same letter continued: the two commanders listen too readily to their own people, who want no company of one another; Forget thinks he has earned his wages. The clear copy is f. 156r.",
+    "language": "fr",
+    "reading": "texts/reading_f150.md",
+    "translation": "texts/reading_f150_en.md",
+    "state": "read"
    },
    {
     "doc": "f154",
     "label": "f. 154r",
     "transcription": "brackx2026/f154r_cipher.txt",
     "decryption": "texts/f154.txt",
-    "summary": "Forget to Villeroy after Easter 1586: the pay of two musters owed, captains' complaints, and lenders who had promised money to be repaid in Paris drawing back; forty thousand ecus. The clear copy is f. 157r."
+    "summary": "Forget to Villeroy after Easter 1586: the pay of two musters owed, captains' complaints, and lenders who had promised money to be repaid in Paris drawing back; forty thousand ecus. The clear copy is f. 157r.",
+    "language": "fr",
+    "reading": "texts/reading_f154.md",
+    "translation": "texts/reading_f154_en.md",
+    "state": "read"
    },
    {
     "doc": "f154v",
@@ -1055,63 +1090,91 @@
      "brackx2026/f154vB_cipher.txt"
     ],
     "decryption": "texts/f154v.txt",
-    "summary": "The same letter continued in two cipher blocks: Villeroy's advice to raise money on exchange, and the difficulty of doing it at Bordeaux. Clear copy f. 157r."
+    "summary": "The same letter continued in two cipher blocks: Villeroy's advice to raise money on exchange, and the difficulty of doing it at Bordeaux. Clear copy f. 157r.",
+    "language": "fr",
+    "reading": "texts/reading_f154.md",
+    "translation": "texts/reading_f154_en.md",
+    "state": "read"
    },
    {
     "doc": "f173",
     "label": "f. 173",
     "transcription": "brackx2026/f173_cipher.txt",
     "decryption": "texts/f173.txt",
-    "summary": "To the King, 1586: the credit crisis; no means to pay two musters, the town refuses to contribute on the strength of the King's letters, no one will stand surety, and only merchants of Paris lend on the writer's word."
+    "summary": "To the King, 1586: the credit crisis; no means to pay two musters, the town refuses to contribute on the strength of the King's letters, no one will stand surety, and only merchants of Paris lend on the writer's word.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f196",
     "label": "f. 196",
     "transcription": "brackx2026/f196_cipher.txt",
     "decryption": "texts/f196.txt",
-    "summary": "To the King, 1586, 'Depuis le partement du S.r de Bosseval': a siege report naming Sainct-Chamarand, la Barge, Montberault and la Binault, Mayenne's fever, Marshal Matignon pressed to come, two trenches and a battery of fifteen cannon."
+    "summary": "To the King, 1586, 'Depuis le partement du S.r de Bosseval': a siege report naming Sainct-Chamarand, la Barge, Montberault and la Binault, Mayenne's fever, Marshal Matignon pressed to come, two trenches and a battery of fifteen cannon.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f201",
     "label": "f. 201",
     "transcription": "brackx2026/f201_cipher.txt",
     "decryption": "texts/f201.txt",
-    "summary": "The same despatch as f. 196, enciphered again with different homophones and with more of it in clear; the two were aligned figure by figure."
+    "summary": "The same despatch as f. 196, enciphered again with different homophones and with more of it in clear; the two were aligned figure by figure.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f123r",
     "label": "f. 123r",
     "transcription": "brackx2026/f123r_cipher.txt",
     "decryption": "texts/f123r.txt",
-    "summary": "Mayenne to the King from Marmande, March 1586, opening in clear ('la dernière que j'ay eu l'honneur est du huictiesme de ce moys'): no money, contributions to be had only by garrisons, the troops cannot be kept together."
+    "summary": "Mayenne to the King from Marmande, March 1586, opening in clear ('la dernière que j'ay eu l'honneur est du huictiesme de ce moys'): no money, contributions to be had only by garrisons, the troops cannot be kept together.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f123v",
     "label": "f. 123v",
     "transcription": "brackx2026/f123v_cipher.txt",
     "decryption": "texts/f123v.txt",
-    "summary": "The Marmande despatch continued: Turenne back over the Garonne, the relief of places, the army's wants."
+    "summary": "The Marmande despatch continued: Turenne back over the Garonne, the relief of places, the army's wants.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f124r",
     "label": "f. 124r",
     "transcription": "brackx2026/f124r_cipher.txt",
     "decryption": "texts/f124r.txt",
-    "summary": "The Marmande despatch continued: the bearer sent to learn the King's intention."
+    "summary": "The Marmande despatch continued: the bearer sent to learn the King's intention.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f124v",
     "label": "f. 124v",
     "transcription": "brackx2026/f124v_cipher.txt",
     "decryption": "texts/f124v.txt",
-    "summary": "The end of the Marmande despatch."
+    "summary": "The end of the Marmande despatch.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "f110",
     "label": "f. 110",
     "transcription": "brackx2026/f110_cipher.txt",
     "decryption": "texts/f110.txt",
-    "summary": "Mayenne to Villeroy from Bellebourg, March 1586: on making war without money and what it does to his reputation; the leaf is wholly in cipher."
+    "summary": "Mayenne to Villeroy from Bellebourg, March 1586: on making war without money and what it does to his reputation; the leaf is wholly in cipher.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    },
    {
     "doc": "fr15571-f177",
@@ -1121,7 +1184,10 @@
      "brackx2026/f177v_cipher.txt"
     ],
     "decryption": "texts/fr15571-f177.txt",
-    "summary": "Forget, 31 December 1585, on Mayenne's design for Gascony: a plan on Pons and Taillebourg, with Taillebourg's toll on the Charente and thirty thousand ecus to be raised from the country, given up when the vicomte de Turenne took the field with guns. The verso (11 lines) continues it."
+    "summary": "Forget, 31 December 1585, on Mayenne's design for Gascony: a plan on Pons and Taillebourg, with Taillebourg's toll on the Charente and thirty thousand ecus to be raised from the country, given up when the vicomte de Turenne took the field with guns. The verso (11 lines) continues it.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
    }
   ]
  }

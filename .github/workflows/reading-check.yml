@@ -1,0 +1,48 @@
+# A reading must read (George Lasry, 22 Oct 2026): for every target a pull request touches, check that each document
+# counted as read builds into coherent sentences and has an English translation (docs/_texts.py reading_problems,
+# scored by docs/_check_reading.py with the committed word lists in lang/lexicons/). Read-only: no secrets, no writes.
+name: Reading check
+
+on:
+  pull_request:
+    paths: ['targets/**']
+
+permissions:
+  contents: read
+
+jobs:
+  reading:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install numpy
+
+      - name: Check the readings of the targets this PR changes
+        env:
+          PYTHONUTF8: '1'
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          folders=$(git diff --name-only "$BASE"...HEAD -- targets | cut -d/ -f2 | sort -u)
+          python - $folders <<'EOF'
+          import json, pathlib, sys
+          sys.path.insert(0, 'docs')
+          import _texts
+          bad = 0
+          for f in sys.argv[1:]:
+              p = pathlib.Path('targets') / f / 'profile.json'
+              if not p.exists(): continue
+              prof = json.loads(p.read_text(encoding='utf-8'))
+              hard, soft = _texts.reading_problems(p.parent, prof)
+              print(f'== {f}: ' + ('ok' if not hard else f'{len(hard)} problem(s)'))
+              for h in hard: print('   MISS', h)
+              for s in soft: print('   warn', s)
+              bad += bool(hard)
+          sys.exit(1 if bad else 0)
+          EOF
