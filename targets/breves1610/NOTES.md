@@ -4,6 +4,13 @@
 view 112; checked here sign by sign, read in part (95 of 98 glyphs supported, 3 signs in conflict with the key).**
 See "Brice Dudout's reading" below.
 
+**21 Oct 2026: George Lasry's CTTS decipherment of the key's own correspondence (PR #61), in
+[`lasry2022/`](lasry2022/NOTES.md).** This is the "ask Lasry" item below. He supplied his 2022 CTTS project (improved
+with Opus 5.5 in Oct 2026): a full CTTS key for this cipher, a second document in the same key read from two images,
+and his decryption of the 10 Nov passage. It settles one of the three conflicting signs (the second s of
+recognoissant is the key's repeat sign) and leaves the other two. See "George Lasry's CTTS key and the additional
+document" below.
+
 **Earlier result, 21 Sept 2026: attempted, not read.** The passage is found and transcribed, its sibling (15 Sept 1610) too,
 and the key it most probably uses is located. The only copy of that key available here is not good enough to apply.
 
@@ -47,7 +54,7 @@ itself (a related table), or both.
 ## What would move it
 
 1. **Lasry's R2077 decryption** (ciphertext plus plaintext) would calibrate every sign. He is the paper's
-   co-author; ask him.
+   co-author; ask him. (Done 21 Oct 2026: PR #61, `lasry2022/`; see the section on it below.)
 2. A full-resolution image of **BnF fr. 3642** (not on Gallica, SRU search 0 hits), including the M–Z code page.
 
 ## Brèves's reply (checked 21 Sept 2026)
@@ -114,16 +121,52 @@ The reading is Brice's; this check confirms most of it from the key and adds the
 b/c conflict. Outcome method: read after matching with key from external sources (Henri IV's key for an earlier
 letter, filed in another volume, found to fit). Provenance: contributed.
 
+## George Lasry's CTTS key and the additional document (PR #61, 21 Oct 2026)
+
+Merged as a squash of PR #61 (branch contribution/savary-ctts-2022) so that the two submitted BMPs, which duplicate
+lossless PNGs, never enter the history. Files in `lasry2022/` (his `NOTES.md` there is the full account); on merging the
+BMPs were dropped (the manifest keeps their checksums), the CTTS PNGs recompressed losslessly (pixel-identical), and
+the 8.9 MB `original-key-assembled.png` reduced to half size, with `assemble_key.py` rebuilding the full image pixel
+for pixel from the six key fragments. `verify.py` passes.
+
+- **What it adds.** (1) A CTTS key for the whole cipher (`lasry2022/ctts/key.txt`, `key.json`: 24 letters with 1-4
+  homophones, comma-letters and barred numbers for words, `s-` a repeat sign). (2) An *additional document* in the same
+  key, two images (b1, b2; 766 cipher elements, 3 unresolved code tokens 74̄/75̄, 5 provisional), French reading and
+  translation: marriage negotiations under aliases (La Hale, Le Cormier, La Cheville, Pindare, Saint Paul), the
+  reaction to an alliance, calm at home and friendship with neighbours, "au grand desplaisir de Sa Sainteté". Its
+  shelfmark and date are not established; it reads like Henri IV writing to his ambassador in Rome, so it may be the
+  key's own letter R2077 (Henri IV → Brèves, 5 Jan 1610, fr. 3541 ff. 4-7), but Lasry asks that it not be identified
+  with R2077 without a matching archival image, and that is how it is recorded. Dated 2022 by Lasry; Tomokiyo dates
+  the R2077 break (Lasry with Biermann and Tomokiyo) to 2021; kept apart. (3) His decryption of the 10 Nov passage
+  (image 3), which agrees with Dudout's reading word for word ("recognoissant leur arogance et sentant sa timidité").
+- **The second s of recognoissant is settled.** It is the repeat sign `s-`, which the longer document uses ten times
+  (l'alarme, intelligence, aage, puisnée, necessaire, brouillons, "de" + repeat in "des esprits"), so it needs no S cell
+  on view 112. This gap is closed: 96 of the 98 glyphs of the two Marie passages are now supported.
+- **re[c]ognoissant stays open.** Lasry's key gives his label `b` the value C, taken from this one word; the table on
+  view 112 has that flagged b in its B column (B1, our 20 Oct check). His longer document does not use the sign, so the
+  B/C conflict is unchanged.
+- **Labels are names, not the table's letters (reconciled with our 21 Sept photo reading).** The table's M column holds
+  four signs shaped like a, b, c, d (checked on Lasry's assembled key, 21 Oct 2026: under M the signs a, flagged b, c,
+  d), which is what "a b c d under M" above meant. Lasry's CTTS labels are arbitrary glyph names (his `key.json`:
+  "CTTS labels, not typographic facsimiles"): his `a`, `e`, `l` are M (our M3, the c-shaped sign, is his `e`), his `b`
+  is the B1 sign he reads as C, and his `c` and `d` label signs he reads as S and P, which do not occur in Marie's
+  passages and were not matched here cell by cell. So "a=M, b=C, c=S, d=P" and "a b c d under M" do not contradict
+  each other, except for `b` (above).
+- **`m,` = "dict" is right, not a slip for DIT.** The key's word list on the assembled image reads "De — j," "Du — k,"
+  "D[..] — l," **"Dict — m,"** "donne — n,"; the old spelling *dict* is used in the text ("la dict[e] union", "la
+  dict[e] Cheville", with e enciphered after it). Left as he wrote it.
+- **Open in his material:** 74̄, 75̄ unknown; FAIRE?, MOYEN? (48̄), ROY? (78̄), TOUSIOURS? provisional; the shelfmark
+  and date of the additional document.
+
 ## Remaining gaps
-- 10 Nov, re[c?]ognoissant, one sign (B1 on view 112, c needed) - blocker: no-key-material; the regent's key or Lasry's R2077 decipherment would show whether c has this homophone
-- 10 Nov, second s of recognoissant, one sign with no S cell on view 112 - blocker: no-key-material; same
+- 10 Nov, re[c?]ognoissant, one sign (B1 on view 112, c needed) - blocker: no-key-material; Lasry's CTTS key (PR #61) gives this sign C from this word only; his longer document does not use it, so the table conflict stands
 - 15 Sept, acompagne[z?]/acompagnee, one sign (E3 or Z2) - blocker: illegible; the two cells differ by a stroke and the crop does not settle it
-- barred 72, 79, 86, 90 (6 occurrences) - blocker: no-key-material; the N-Z page of the key is not in hand; values as corroborated by Tomokiyo
+- barred 72, 79, 86, 90 (6 occurrences) - blocker: no-key-material; the N-Z page of the key is not in hand; values as corroborated by Tomokiyo and, independently, in Lasry's CTTS key (72̄ que, 79̄ re, 86̄ se, 90̄ tion; PR #61)
 
 ## Escalation
-- [x] siblings: R2077 (Henri IV to Brèves, 5 Jan 1610) is the key's own letter; Lasry's decryption of it is not on DECODE or in hand (Brice asked; we do not have it)
+- [x] siblings: R2077 (Henri IV to Brèves, 5 Jan 1610) is the key's own letter; Lasry supplied his CTTS key and a second document in the key (PR #61, 21 Oct 2026), which settles the repeat sign; whether that document is R2077 is not established
 - [x] clear-pages: f. 17v/19v hold show-through only; Brèves's reply of 9 Dec 1610 (Cinq cents de Colbert 351) paraphrases
 - [x] known-keys: the Villeroy 1605 code (fr. 3789 f. 26) ruled out on 21 Sept; fr. 3462 view 112 fits
 - [x] print: Tomokiyo louisxiii.htm and DECODE list both as not deciphered; no edition found
 - [n/a] key-rebuild: the three conflicting signs occur once each; there is nothing to rebuild them from
-- [x] retry: every glyph re-read against view 112 (alignment.tsv), 20 Oct 2026
+- [x] retry: every glyph re-read against view 112 (alignment.tsv), 20 Oct 2026; regraded 21 Oct 2026 against Lasry's CTTS key (second s = repeat sign)
