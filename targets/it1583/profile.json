@@ -231,7 +231,8 @@
    "what": "Escalation (extend_open.py): every letter, word value and null tried for the 14 open classes and 3 provisional ones, both letters scored with it-cinquecento. No letter value wins by a usable margin; nothing adopted.",
    "result": "failed"
   },
-  {"date": "2026-10-20", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 780 tokens, 51 types, it-cinquecento order 4: reading -2.07 per letter; random keys -3.761 (z 5.7); key annealed onto shuffled ciphertext best -2.544 (mean -2.567, z 26.2); annealer on the real text -2.415. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-20", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 780 tokens, 51 types, it-cinquecento order 4: reading -2.07 per letter; random keys -3.761 (z 5.7); key annealed onto shuffled ciphertext best -2.544 (mean -2.567, z 26.2); annealer on the real text -2.415. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): it1583: George Lasry's CTTS files from PR #60 linked: ctts/transcription and ctts/decryption per letter, his edited readings (edited.txt, companion/edited.txt), full_letter.md (edition with English translation) and ctts/key.txt.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-20", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 780, "types": 51, "tokens_per_type": 15.29, "score": -2.07, "nulls": {"random keys": {"n": 200, "mean": -3.761, "sd": 0.296, "max": -3.179, "z": 5.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.567, "sd": 0.019, "max": -2.544, "z": 26.2, "p": 0.1429}}, "power": -2.415, "verdict": "pass", "notes": "claimed per-occurrence score -2.07; polyphony 0.0; 47 unread tokens left out; annealer on the real text from random keys reached -2.415"}, 
   "method": "key recovered from ciphertext-only",
@@ -299,6 +300,11 @@
     "blocker": "illegible",
     "detail": "Binarized scan of f. 68 and a DECODE photograph of f. 70 only."
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "R7898", "label": "f. 68 (DECODE R7898), 4 May 1446, reply concerning Zorzo del Maino's report", "transcription": "lasry2026/ctts/transcription/1.txt", "decryption": ["lasry2026/ctts/decryption/1.txt", "lasry2026/edited.txt"], "translation": "lasry2026/full_letter.md", "summary": "An unidentified writer replies to Zorzo del Maino's report concerning Count Francesco (probably Francesco Sforza): the count's obligations to others are his own affair, the writer seeks only God's honour and his own security, and asks for eight or ten names in writing from which trusted intermediaries could be chosen."},
+   {"doc": "f70", "label": "f. 70 (DECODE R7899 image P1), Milan, 4 May 1446, catalogued as Vincenzo Amidani to Francesco Sforza", "transcription": "lasry2026/ctts/transcription/IMG_R7899_I35638_P1.txt", "decryption": ["lasry2026/ctts/decryption/IMG_R7899_I35638_P1.txt", "lasry2026/companion/edited.txt"], "translation": "lasry2026/full_letter.md", "summary": "The writer reports prospective action against Cremona and how the Venetian government might declare itself, with help, defence and troops soon in the field, and closes that he writes to do his duty; dated Milan, the fourth of May; the signature is unread."}
+  ],
+  "key_file": "lasry2026/ctts/key.txt"
  }
 }

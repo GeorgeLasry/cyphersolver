@@ -142,6 +142,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split the combined catalogue item 6 entry under the one-key rule (George Lasry, 14 Oct 2026): four letters in four keys. gramont1529 keeps fr. 3091 no. 23 (Gramont's cipher 1529); langeac1529 takes fr. 3083 no. 8 (Avranches' cipher 1); gramont1530 takes fr. 3071 no. 7 (Gramont's cipher 1530); the Mâcon letter fr. 3071 no. 4 moved to rome1536 with the other letters in Mascon's cipher."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): gramont1529: glyph-alias transcription (aliases/f45r-f47v.txt) and reading fr3091_no23_gramont.md linked; key = Lasry's table image img/BnF_fr3040_f16.png, decode.py, and texts/key.md (this project's key notes, copied verbatim from the reading file).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -180,6 +186,10 @@
     "date": "2023",
     "published": false
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "gramont1529", "label": "BnF fr. 3091 no. 23, ff. 45r-47v, Rome, 11 Oct [1529]", "transcription": ["aliases/f45r.txt", "aliases/f45v.txt", "aliases/f46r.txt", "aliases/f46v.txt", "aliases/f47r.txt", "aliases/f47v.txt"], "decryption": "fr3091_no23_gramont.md", "summary": "Gramont writes to Montmorency as Clement VII sets out for Bologna (October 1529): he vouches for the Pope's secret alignment with France; Clement dreads the general council and plans to grant it in principle and then stall it, offers to feign illness on the road to wait for the Admiral Chabot, fears soothsayers who foretell his deposition or death \"du costé de\" the Emperor, and had a dream before leaving Rome (enclosed). Orange is dealing to restore the Medici in Florence against Pisa and Livorno going to the Emperor.", "note": "Deciphered here with George Lasry's 2023 table applied unchanged (img/BnF_fr3040_f16.png); the glyph-alias transcription and the reading are this project's. Per-page line tables with alias, decoded string and reading side by side: f45r_transcription.md ... f47v_transcription.md. Lasry's own 2023 decipherment of this letter is unpublished and not in the repository."}
+  ],
+  "key_file": ["img/BnF_fr3040_f16.png", "decode.py", "texts/key.md"]
  }
 }
