@@ -1,4 +1,4 @@
-<!-- Copied verbatim from NOTES.md ("The key"), 22 Oct 2026. The same key is coded in dec.py. -->
+<!-- Copied verbatim from NOTES.md ("The key"), updated 22 Oct 2026 after the margins were aligned. The same key is coded in dec.py; texts/key_decode.json is the code - value list for DECODE. -->
 
 ## The key
 
@@ -19,7 +19,7 @@ This is a syllabic nomenclator. Every token is separated by a point. There are f
    - vowel + n 40–44 (an en in on un)
    - vowel + r 45–49
    - que 50, qua 51, qui 52
-   - 14 is a word not yet fixed. It comes before -s/-sta, as in "[14]sta mente" and "[14]ticia", so possibly "ju".
+   - 14 is ju ("[14]sta mente" justamente, "[14]ticia" justicia, "a[14]ste" ajuste; confirmed by the margins).
 
    Struck N, R, g and 4 are nulls. They sit mainly at the start and end of each cipher block.
 4. **Letter pairs: syllables with the consonant disguised, vowel kept.** Cipher → plain:
@@ -44,7 +44,12 @@ This is a syllabic nomenclator. Every token is separated by a point. There are f
    | gon | señor(es) |
    | ran / xan | gobernador |
    | xon | guerra |
-   | cun iles | españoles (?) |
+   | cun / cun iles | España / españoles (margin, R1011) |
+   | cen | Duque (de Lorena, R1003) |
+   | ren / xen | gobierno (R1007, R1008) |
+   | xin | gente (R1011) |
+   | tin | Francia, franceses (R1011) |
+   | gen | enemigos (R1009) |
    | lun | cart(as) |
    | men / Jen (R1010) | Reino |
 
@@ -53,4 +58,3 @@ This is a syllabic nomenclator. Every token is separated by a point. There are f
 Scripts: `parse.py` reads DECODE's transcription files and `dec.py <record>` prints a reading. The raw machine
 readings are in `read/R*.raw.txt`. They inherit DECODE's transcription slips: a few misread numbers show up as
 `{..}` or as nonsense syllables.
-

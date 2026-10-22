@@ -1,6 +1,21 @@
 # Carpio (Rome) to Fuenmayor (Copenhagen), 1677 — DECODE R1002–R1011
 
-Status: read
+Status: read (22 Oct 2026: margins transcribed, all ten letters read and translated; write-up updated the same day:
+docs/carpio1677.html, README row, SOLVED_CATALOGUE/RANKING, DECODE queue with the ten readings and texts/key_decode.json)
+
+22 Oct 2026, later: **all ten letters read.** The contemporary margin decipherments of R1002, R1003 and R1006-R1011
+were transcribed from the images and aligned word by word with the key decode. Each letter is now normalised Spanish
+(`read/R*_reading.md`, holes marked) with an English translation (`read/R*_en.md`; R1004/R1005 translated too).
+3,504 of 3,504 tokens are in letters that read; the holes are a handful of words (see Remaining gaps). New code
+words from the margins: cen = Duque, ren / xen = gobierno, xin = gente, cun = España (cun iles = españoles),
+tin = Francia (franceses), gen = enemigos, {110} = cuando; struck 14 = ju (ajuste, justicia, justamente); pa + struck
+55 = Papa. The earlier block below is kept as the record of the audit.
+
+22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
+R1004 and R1005 read (normalised Spanish, confirmed by their faint margins). **The other eight letters are decoded,
+not read** here: `read/R*.raw.txt` are syllable streams with stray letters and DECODE slips, and their contemporary
+margin decipherments, which are the readings, have not been transcribed. 425 of 3,504 tokens (12.1%) are in letters
+that read. "Status: read" and 96.1% are withdrawn as reading claims (96.1% is tokens with a value).
 
 Ten ciphered despatches of Gaspar Méndez de Haro, 7th Marqués del Carpio, Spanish ambassador in Rome, to Baltasar de
 Fuenmayor, Spanish envoy in Denmark, 4 Sept – 11 Dec 1677. Archives générales du Royaume, Brussels, Secrétairerie
@@ -32,7 +47,7 @@ This is a syllabic nomenclator. Every token is separated by a point. There are f
    - vowel + n 40–44 (an en in on un)
    - vowel + r 45–49
    - que 50, qua 51, qui 52
-   - 14 is a word not yet fixed. It comes before -s/-sta, as in "[14]sta mente" and "[14]ticia", so possibly "ju".
+   - 14 is ju ("[14]sta mente" justamente, "[14]ticia" justicia, "a[14]ste" ajuste; confirmed by the margins).
 
    Struck N, R, g and 4 are nulls. They sit mainly at the start and end of each cipher block.
 4. **Letter pairs: syllables with the consonant disguised, vowel kept.** Cipher → plain:
@@ -57,7 +72,12 @@ This is a syllabic nomenclator. Every token is separated by a point. There are f
    | gon | señor(es) |
    | ran / xan | gobernador |
    | xon | guerra |
-   | cun iles | españoles (?) |
+   | cun / cun iles | España / españoles (margin, R1011) |
+   | cen | Duque (de Lorena, R1003) |
+   | ren / xen | gobierno (R1007, R1008) |
+   | xin | gente (R1011) |
+   | tin | Francia, franceses (R1011) |
+   | gen | enemigos (R1009) |
    | lun | cart(as) |
    | men / Jen (R1010) | Reino |
 
@@ -89,14 +109,16 @@ readings are in `read/R*.raw.txt`. They inherit DECODE's transcription slips: a 
 - **R1010, 4 Sept.** The French fleet (la armada de Francia) has left Messina. It was rumoured to be bound for
   Brindisi, but its design is Catania. Carpio is dismayed by news from Brussels that the Prince of Orange raised the
   siege of Charleroi "intempestivamente".
-- **R1011, 18 Sept.** Rome's reaction to Charleroi. Anti-Spanish rumours are stirring the populace. Carpio has had no
-  satisfaction from the Pope or his ministers. The militia of the district was called out, and guns were mounted
-  ("encabalgado … más piezas") on Castel Sant'Angelo.
+- **R1011, 18 Sept.** Rome's reaction to Charleroi. Rumours that Spaniards were raising men by force for Sicily set
+  the populace against them; Spaniards have been insulted and stoned in the streets for over fifteen days. Carpio has
+  had no satisfaction from the Pope or his ministers. Militia cavalry was brought in, and more guns were mounted
+  ("encabalgado … más piezas") on Castel Sant'Angelo. He contrasts the tolerance shown to the French, whose galleys
+  at Civitavecchia pressed more than a hundred men, reapers included.
 - **R1009, 25 Sept.** The false rumours spread against the Spaniards. Carpio pressed the Pope for remedy and got
   neither remedy nor an inquiry. He has referred the matter to the viceroy of Naples and the governor of Milan.
 - **R1006, 2 Oct.** The offences to the Spanish nation continue. He has asked the governor of Milan and the cardinals
-  of the Spanish party for advice. The French fleet and galleys kept station off Catania and then returned to Toulon,
-  much battered.
+  of the Spanish party for advice. The French fleet and galleys kept station off Catania and turned back towards
+  [?Toulon] and [?Hyères], the galleys much battered.
 - **R1007, 9 Oct.** Still no satisfaction. He stays away from papal audiences on the cardinals' advice, awaiting the
   viceroy of Naples' answer.
 - **R1008, 16 Oct.** No news at this court. He stands firm and awaits orders on how to proceed.
@@ -105,8 +127,24 @@ readings are in `read/R*.raw.txt`. They inherit DECODE's transcription slips: a 
   orders. The Pope refused it twice and would receive business "del Rey" only through a cardinal. Carpio declines to
   treat the principal business until the point is settled.
 - **R1003, 11 Dec.** The loss of Freiburg ("el sitio de Fri[bur]go", taken by Créqui on 16 Nov 1677): its
-  consequences may force the imperial troops back over the Rhine. He also writes of the miserable state of [Flanders]. The Pope refused audience again. He is awaiting the Marqués de
-  los Vélez (viceroy of Naples).
+  consequences may change the plan of the winter quarters, the Duke of Lorraine having to recross the Rhine; Flanders is left in a miserable state. He recalls the two refusals
+  of audience already reported, has not asked again, and is awaiting the advice of the Marqués de los Vélez (viceroy
+  of Naples).
 
-These are working summaries of the machine readings. A line-by-line edition of the eight margin-deciphered letters
-would need each DECODE ciphertext transcription checked against the image.
+These summaries were first made from the machine readings and corrected on 22 Oct 2026 against the margins (R1010
+"temer el logro", R1011 stonings and Civitavecchia, R1006 Toulon/Hyères, R1003 audiences recalled). The full readings, aligned with the margins, are in
+`read/R*_reading.md`, with English in `read/R*_en.md`.
+
+## Remaining gaps
+- R1006 last sentence: two place names, code "rin" and spelled "vi ve re s", read [?Tolón] and [?Hyères] - blocker: illegible (the margin is unreadable there on the DECODE scan; a better image of AGR SEG inv. 2559 would settle it)
+- R1002 one misread group after "que Dios guarde" ({7}); R1003 one verb not written in cipher or margin - blocker: illegible (DECODE slip; margin runs on without it)
+- key: struck 55 and a few struck numbers ([25], [80]) not fixed in the table - blocker: open-codes (each read from context in its letter)
+
+## Escalation
+
+- [x] siblings: the ten letters of the series share one key; R1004 and R1005 normalised and read
+- [x] clear-pages: the margin decipherments of R1002, R1003, R1006-R1011 transcribed from the images (22 Oct 2026; DECODE's partial margin transcriptions in decode/ checked against them) and aligned with the key decode
+- [x] known-keys: the syllabic nomenclator rebuilt here applies to all ten letters
+- [x] print: searched 22 Oct 2026 for a printed edition of Carpio's 1677 Rome letters to Baltasar de Fuenmayor (Spanish, English queries): none found. Carpio's Roman embassy (1677-83) is studied for his art collecting; a UNED study of Spain-Denmark diplomatic agents 1640-1680 (portalcientifico.uned.es) turned up but could not be opened, so whether it quotes these letters is unchecked
+- [x] key-rebuild: done (NOTES "The key")
+- [x] retry: each margined letter normalised against its margin and translated (read/R*_reading.md, read/R*_en.md)
