@@ -199,7 +199,8 @@
    "what": "Context readings for the quotation list: margin sums CL/L/LX/XX/CCL/CC/XX with a raised sign taken as thousands (foot total DCCL under M); [D] = [Cardinale] (four masculine-person places, 'al deto [D]' echoes the clear 'predetto Cardinale'); [Q] = [il Re] (receiver of the goods); [S2] left open. Grade I, bracketed, not key values; coverage unchanged.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 395 tokens, 25 types, it-cinquecento order 4: reading -2.338 per letter; random keys -4.658 (z 5.6); key annealed onto shuffled ciphertext best -2.884 (mean -2.95, z 11.7); annealer on the real text -2.641. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 395 tokens, 25 types, it-cinquecento order 4: reading -2.338 per letter; random keys -4.658 (z 5.6); key annealed onto shuffled ciphertext best -2.884 (mean -2.95, z 11.7); annealer on the real text -2.641. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext_rechecked.txt, READING.md with decode.py's reading_emended/literal.txt, key.json.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 395, "types": 25, "tokens_per_type": 15.8, "score": -2.338, "nulls": {"random keys": {"n": 200, "mean": -4.658, "sd": 0.413, "max": -3.861, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.95, "sd": 0.053, "max": -2.884, "z": 11.7, "p": 0.1429}}, "power": -2.641, "verdict": "pass", "notes": "claimed per-occurrence score -2.167; polyphony 0.028; 7 unread tokens left out; annealer on the real text from random keys reached -2.641"}, 
   "method": "key recovered from ciphertext-only",
@@ -238,6 +239,20 @@
     "detail": "Absent original continuation; no token count, no reading. Needs an original or independent complete digital copy."
    }
   ],
-  "notes": "Read applies to the surviving account only. Coverage is an explicit editorial audit, not independently known accuracy. All inferred values grade I, no H or C. The whole original letter is not claimed decrypted."
+  "notes": "Read applies to the surviving account only. Coverage is an explicit editorial audit, not independently known accuracy. All inferred values grade I, no H or C. The whole original letter is not claimed decrypted.",
+  "texts": [
+   {
+    "doc": "clair331-f156-157",
+    "label": "BnF Clairambault 331 f. 157r-v, 15 March 1530",
+    "transcription": "ciphertext_rechecked.txt",
+    "decryption": [
+     "READING.md",
+     "reading_emended.txt",
+     "reading_literal.txt"
+    ],
+    "summary": "Ciphered account in a copied letter to Francis I attributed to Giovan Gioacchino da Passano, London, 15 March 1530: it lists Cardinal Wolsey's ready cash, credits, one year's revenues, jewels, gold and silver vessels and household furnishings, and names Winchester, St Albans and York. The copyist left out a further page and three lines of cipher."
+   }
+  ],
+  "key_file": "key.json"
  }
 }

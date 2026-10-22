@@ -234,7 +234,8 @@
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): the four letters in Łaski's System B (R9322, R9323, R9417 from kaa4591; R9403 from kaa4591b) gathered into this entry; R9414 (system G) moved to wardein1537 and R9415 (system L) to sperantio1534, whose key it shares. Words re-counted per letter (measure_sysb.py; R9403 r9403/decoded.txt).",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 862 tokens, 21 types, la order 4: reading -2.091 per letter; random keys -6.002 (z 7.4); key annealed onto shuffled ciphertext best -3.682 (mean -3.757, z 37.1); annealer on the real text -2.091. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 862 tokens, 21 types, la order 4: reading -2.091 per letter; random keys -6.002 (z 7.4); key annealed onto shuffled ciphertext best -3.682 (mean -3.757, z 37.1); annealer on the real text -2.091. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign files and page tsv per letter, sysB/decoded.txt, sysB/R9323_decoded.txt, r9403/decoded.txt; key sysB/key_from_glosses.tsv.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 862, "types": 21, "tokens_per_type": 41.05, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -6.002, "sd": 0.527, "max": -4.269, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.757, "sd": 0.045, "max": -3.682, "z": 37.1, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.002; polyphony 0.049; 3476 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -283,6 +284,51 @@
     "role": "key or decipherment used",
     "note": "interlinear glosses on R9322, R9323 and R9417, from which the key was rebuilt"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R9322",
+    "label": "R9322, ff. 121-122, Buda 24 Nov 1529",
+    "transcription": [
+     "sysB/R9322_signs.txt",
+     "sysB/R9322_p1.tsv",
+     "sysB/R9322_p2.tsv"
+    ],
+    "decryption": "sysB/decoded.txt",
+    "summary": "f. 121: Hieronymus Łaski to a Bavarian duke, Buda 24 Nov 1529: the Sultan, forced home by plague in his army, left King John the kingdom of Hungary without tribute, with fifty guns and powder, and will return next summer against Ferdinand's lands unless there is a concord. f. 122: King John of Hungary to Duke Ludwig of Bavaria, sending Lazarus the Jew as envoy."
+   },
+   {
+    "doc": "R9417",
+    "label": "R9417, f. 264, Kraków 16 June [1530]",
+    "transcription": [
+     "sysB/R9417_signs.txt",
+     "sysB/R9417_p1.tsv",
+     "sysB/R9417_p2.tsv"
+    ],
+    "decryption": "sysB/decoded.txt",
+    "summary": "Łaski to the dukes' secretary Waisenfelder, Kraków 16 June [1530]: the siege army before Buda; a concord best made through the imperial princes; an envoy sent to the King of France; the Sultan willing to receive in friendship whom King John names; envoys asked to meet at Coburg in July."
+   },
+   {
+    "doc": "R9323",
+    "label": "R9323, f. 123, [1529-30]",
+    "transcription": [
+     "sysB/R9323_signs.txt",
+     "sysB/R9323_p1.tsv"
+    ],
+    "decryption": "sysB/R9323_decoded.txt",
+    "summary": "Latin note to the Bavarian secretary from Łaski's circle: King John loves the Duke of Bavaria; Łaski wants concord between King John and Ferdinand, for without it the Turk will consume Bohemia and Austria. Several lines are faint."
+   },
+   {
+    "doc": "R9403",
+    "label": "R9403, ff. 226-228, Łask 17 Sept 1531",
+    "transcription": [
+     "r9403/signs.txt",
+     "r9403/transcription.tsv"
+    ],
+    "decryption": "r9403/decoded.txt",
+    "summary": "Łaski to a councillor of the Bavarian dukes, 17 Sept 1531: the Sultan told Ferdinand's envoys there would be no peace or truce unless Hungary is given up to King John, and is preparing ships, guns and grain on the Danube; Łaski will ride to the Speyer diet and asks the dukes to stop any decision against the king; the royal marriage will be settled with the King of Poland."
+   }
+  ],
+  "key_file": "sysB/key_from_glosses.tsv"
  }
 }

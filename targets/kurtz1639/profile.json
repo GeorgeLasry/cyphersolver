@@ -396,7 +396,8 @@
    "what": "Clear text transcribed: R4645 Banér copies (to Lüneburg 10 Jan 1639; to Lower Saxon envoys 29 Jan 1639); R4734 endorsement shows the addressee is Count Schwarzenberg.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 22728 tokens, 133 types, de-1640s order 4: reading -2.378 per letter; random keys -4.857 (z 8.3); key annealed onto shuffled ciphertext best -3.206 (mean -3.213, z 131.9); annealer on the real text -2.781. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 22728 tokens, 133 types, de-1640s order 4: reading -2.378 per letter; random keys -4.857 (z 8.3); key annealed onto shuffled ciphertext best -3.206 (mean -3.213, z 131.9); annealer on the real text -2.781. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions tr/IMG_<record>_*.txt and the machine decipherments read/<record>.txt (with the clear copy, endorsement and summary files where they exist); key key.json and KEY.md.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 22728, "types": 133, "tokens_per_type": 170.89, "score": -2.378, "nulls": {"random keys": {"n": 200, "mean": -4.857, "sd": 0.299, "max": -4.207, "z": 8.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.213, "sd": 0.006, "max": -3.206, "z": 131.9, "p": 0.1429}}, "power": -2.781, "verdict": "pass", "notes": "claimed per-occurrence score -2.403; polyphony 0.0; 22 unread tokens left out; annealer on the real text from random keys reached -2.781"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -429,6 +430,179 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment on R3811 p. 1 used to seed the key"},
     {"who": "mirka", "role": "prior solution", "note": "rebuilt the key and read R3811 (summary only, key not printed)", "date": "2012", "source": "Mírka, Západočeské archivy 2012, 44-72; Crypto-World 11-12/2012"}
+  ],
+  "texts": [
+   {
+    "doc": "R3812",
+    "label": "R3812, Hamburg, 3 Feb 1639",
+    "transcription": [
+     "tr/IMG_R3812_I23106_P.txt",
+     "tr/IMG_R3812_I23107_P.txt",
+     "tr/IMG_R3812_I23108_P.txt",
+     "tr/IMG_R3812_I23109_P.txt",
+     "tr/IMG_R3812_I23113_P.txt",
+     "tr/IMG_R3812_I23114_P.txt",
+     "tr/IMG_R3812_I23115_P.txt",
+     "tr/IMG_R3812_I23117_P.txt",
+     "tr/IMG_R3812_I23118_P.txt",
+     "tr/IMG_R3812_I23119_P.txt",
+     "tr/IMG_R3812_I23120_P.txt",
+     "tr/IMG_R3812_I23121_P.txt",
+     "tr/IMG_R3812_I23122_P.txt",
+     "tr/IMG_R3812_I23123_P.txt"
+    ],
+    "decryption": [
+     "read/R3812.txt"
+    ],
+    "summary": "Kurz von Senftenau on the quartering of six imperial regiments and the Lower Saxon Kreistag: Banér's plundering will ruin the Stift Halberstadt, Duke Georg of Lüneburg will not resist; he sees no real Swedish or French wish for peace and great ill-feeling between Denmark and Sweden. Postscript on Arnim's visit after escaping Swedish captivity."
+   },
+   {
+    "doc": "R3811",
+    "label": "R3811, Hamburg, 17 Jan 1639",
+    "transcription": [
+     "tr/IMG_R3811_I23099_P.txt",
+     "tr/IMG_R3811_I23100_P.txt",
+     "tr/IMG_R3811_I23101_P.txt",
+     "tr/IMG_R3811_I23102_P.txt",
+     "tr/IMG_R3811_I23103_P.txt",
+     "tr/IMG_R3811_I23104_P.txt"
+    ],
+    "decryption": [
+     "read/R3811.txt"
+    ],
+    "summary": "Nothing can be done with Duke Georg; France, Sweden and Holland plan an embassy to the King of Denmark to prevent a congress in Sweden; Duke August of Saxe-Lauenburg is said to seek Danish protection; Arnim denies plotting against the Peace of Prague and Kurz advises a protectorium. The letter carries an interlinear decipherment (summarised by Mírka in 2012)."
+   },
+   {
+    "doc": "R3813",
+    "label": "R3813, Hamburg, 27 Jan 1639",
+    "transcription": [
+     "tr/IMG_R3813_I23124_P1.txt",
+     "tr/IMG_R3813_I23124_P2.txt",
+     "tr/IMG_R3813_I23124_P3.txt",
+     "tr/IMG_R3813_I23124_P4.txt",
+     "tr/IMG_R3813_I23124_P5.txt",
+     "tr/IMG_R3813_I23124_P6.txt",
+     "tr/IMG_R3813_I23124_P7.txt",
+     "tr/IMG_R3813_I23124_P8.txt",
+     "tr/IMG_R3813_I23124_P9.txt",
+     "tr/IMG_R3813_I23124_P10.txt",
+     "tr/IMG_R3813_I23124_P11.txt",
+     "tr/IMG_R3813_I23124_P12.txt",
+     "tr/IMG_R3813_I23124_P13.txt",
+     "tr/IMG_R3813_I23124_P14.txt",
+     "tr/IMG_R3813_I23124_P15.txt",
+     "tr/IMG_R3813_I23124_P16.txt",
+     "tr/IMG_R3813_I23124_P17.txt",
+     "tr/IMG_R3813_I23124_P18.txt",
+     "tr/IMG_R3813_I23124_P19.txt",
+     "tr/IMG_R3813_I23124_P20.txt"
+    ],
+    "decryption": [
+     "read/R3813.txt"
+    ],
+    "summary": "Twenty-page memorandum: the enemy advances unopposed towards Salzwedel; a Kreistag broken up by the enemy is better than one concluded with express neutrality; Kurz advises a defensive strategy, distrusts Salvius, weighs a secret particular treaty with Sweden through Brandenburg or Denmark, and says France wants Lorraine, Alsace and even the imperial crown."
+   },
+   {
+    "doc": "R3814",
+    "label": "R3814, undated, 1639",
+    "transcription": [
+     "tr/IMG_R3814_I23145_P1.txt",
+     "tr/IMG_R3814_I23145_P2.txt",
+     "tr/IMG_R3814_I23145_P3.txt",
+     "tr/IMG_R3814_I23145_P4.txt",
+     "tr/IMG_R3814_I23145_P5.txt"
+    ],
+    "decryption": [
+     "read/R3814.txt"
+    ],
+    "summary": "The Swedish agent Mithoff and the Danish mediation; safe-conducts; Lorraine, Mantua and Pomerania in pledge; Rákóczi said to take French money with the Turk's consent; Kurz defends his secret particular dealing with Mithoff and describes a secret post route via Ehrenberg and Wolfenbüttel."
+   },
+   {
+    "doc": "R3815",
+    "label": "R3815, Hamburg, 6 Feb 1639, to Ferdinand III",
+    "transcription": [
+     "tr/IMG_R3815_I27184_P1.txt",
+     "tr/IMG_R3815_I27184_P2.txt",
+     "tr/IMG_R3815_I27184_P3.txt",
+     "tr/IMG_R3815_I27184_P4.txt"
+    ],
+    "decryption": [
+     "read/R3815.txt",
+     "read/SUMMARY_R3815.md"
+    ],
+    "summary": "The King of Denmark is perplexed and perhaps stalling to avoid a conjunction with the Emperor; the Danish Reichsrat is irresolute; with 8-9,000 men the princes could deal with a starved, exhausted enemy; Salis sent to Hildesheim, Duke Georg, the Kreis resolution, Hatzfeldt."
+   },
+   {
+    "doc": "R4625",
+    "label": "R4625, undated (late Jan / 10 Feb 1639), to Trauttmansdorff",
+    "transcription": [
+     "tr/IMG_R4625_I27189_P1.txt",
+     "tr/IMG_R4625_I27189_P2.txt",
+     "tr/IMG_R4625_I27189_P3.txt",
+     "tr/IMG_R4625_I27189_P4.txt",
+     "tr/IMG_R4625_I27189_P5.txt",
+     "tr/IMG_R4625_I27189_P6.txt",
+     "tr/IMG_R4625_I27189_P7.txt"
+    ],
+    "decryption": [
+     "read/R4625.txt",
+     "read/SUMMARY_R4625.md"
+    ],
+    "summary": "Memorandum on keeping the Lower Saxon Circle divided and holding Halberstadt, Magdeburg, Hildesheim and Wolfenbüttel; 8,000 Danish men in Holstein; three grades of Circle war; the imperial army is ruined."
+   },
+   {
+    "doc": "R4645",
+    "label": "R4645, Hamburg, 13 Feb 1639",
+    "transcription": [
+     "tr/IMG_R4645_I27398_P1.txt",
+     "tr/IMG_R4645_I27398_P2.txt",
+     "tr/IMG_R4645_I27398_P3.txt",
+     "tr/IMG_R4645_I27398_P4.txt",
+     "tr/IMG_R4645_I27398_P5.txt",
+     "tr/IMG_R4645_I27398_P6.txt",
+     "tr/IMG_R4645_I27398_P7.txt",
+     "tr/IMG_R4645_I27398_P8.txt",
+     "tr/IMG_R4645_I27398_P9.txt"
+    ],
+    "decryption": [
+     "read/R4645.txt",
+     "read/R4645_clear.md"
+    ],
+    "summary": "The Danish interposition and a possible conjunction with the Emperor: the King's distinctions proved mere lies; Count Pentz says the King must drop the mediation and denounce Sweden. With clear copies of two letters of Banér of 29 Jan 1639."
+   },
+   {
+    "doc": "R4734",
+    "label": "R4734, 8 Apr 1639, copy",
+    "transcription": [
+     "tr/IMG_R4734_I27761_P1.txt",
+     "tr/IMG_R4734_I27761_P2.txt",
+     "tr/IMG_R4734_I27761_P3.txt",
+     "tr/IMG_R4734_I27761_P4.txt",
+     "tr/IMG_R4734_I27761_P5.txt"
+    ],
+    "decryption": [
+     "read/R4734.txt",
+     "read/R4734_endorsement.md"
+    ],
+    "summary": "The Danish mediation has expired and the King has his hands tied; the Lower Saxon Circle must contribute to war or to compensation; Stralsund or other lands might go to Brandenburg. Addressed to 'E. Excell.' (Schwarzenberg per DECODE)."
+   },
+   {
+    "doc": "R4736",
+    "label": "R4736, Glückstadt, 14 Apr 1639",
+    "transcription": [
+     "tr/IMG_R4736_I27769_P1.txt",
+     "tr/IMG_R4736_I27769_P2.txt",
+     "tr/IMG_R4736_I27769_P3.txt"
+    ],
+    "decryption": [
+     "read/R4736.txt"
+    ],
+    "summary": "At the Danish court: the Danes complain that war in Austria is bought with peace in Lower Saxony while the Swedes stay in Mecklenburg and Pomerania; papers to be sent to Schwarzenberg; outward respect for the Emperor nowhere greater than at Glückstadt."
+   }
+  ],
+  "key_file": [
+   "key.json",
+   "KEY.md"
   ]
  }
 }

@@ -810,6 +810,12 @@
     "crib testing",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-leaf transcriptions and the existing reading_f*.txt / f*_reading.md files; dec.py run with key_contrib.json on every transcribed leaf and saved to texts/<leaf>_decryption.md; f. 154v (never transcribed) linked to the Gallica images of the leaf and its clear copy f. 157r; f. 110 linked to its status note (not read). Missing: the clear copies ff. 155-157 and Michael Brackx's own decodes (issues #64, #68-#71), not in the folder.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -953,6 +959,157 @@
     "extent": "complete",
     "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them; what the notes called the 'f. 149v' cipher is f. 150r, a full page (#83); Brackx's decodes of ff. 143r-v, 150r-v and 154r-v agree with the copies on 83-94% of letters (brackx_validate.json)"
    }
+  ],
+  "texts": [
+   {
+    "doc": "f143r",
+    "label": "fr. 15572 f. 143r, 1586",
+    "transcription": "cipher_f143.txt",
+    "decryption": [
+     "reading_f143.txt",
+     "f143_reading.md",
+     "texts/f143r_decryption.md"
+    ],
+    "summary": "Mayenne to Henri III: the captain of Castets, very ill content with the King of Navarre, has let it be understood that he wishes to leave him, and Mayenne has treated with him. Deciphered at the time: f. 155r is the contemporary clear copy (found by Michael Brackx, issue #70), which is not transcribed here. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f143v",
+    "label": "fr. 15572 f. 143v, 1586",
+    "transcription": "f143v_cipher.txt",
+    "decryption": [
+     "reading_f143v.txt",
+     "f143_reading.md",
+     "texts/f143v_decryption.md"
+    ],
+    "summary": "The continuation of the f. 143 despatch: the treaty with the captain of Castets (12,000 écus in three months, leave to sell his property, a pardon to be registered by the Parlement). Its clear copy is f. 155r-v, not transcribed here. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f150",
+    "label": "fr. 15572 f. 150, Apr 1586",
+    "transcription": "f150_cipher.txt",
+    "decryption": [
+     "f150_reading.md",
+     "texts/f150_decryption.md"
+    ],
+    "summary": "Forget to Villeroy, April 1586: thirteen lines of cipher at the head, then a clear body signed Forget. The cipher was deciphered at the time; its clear copy is ff. 155v-156r, not transcribed here."
+   },
+   {
+    "doc": "f154",
+    "label": "fr. 15572 f. 154r, after 6 Apr 1586",
+    "transcription": "f154_cipher.txt",
+    "decryption": [
+     "reading_f154.txt",
+     "f154_reading.md",
+     "texts/f154_decryption.md"
+    ],
+    "summary": "Forget to Villeroy after Easter 1586: a complaint about money and the army's discontent, beginning with the payment of the two musters. Its clear copy is f. 157r, not transcribed here. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f154v",
+    "label": "fr. 15572 f. 154v (not transcribed; images only)",
+    "transcription": "https://gallica.bnf.fr/ark:/12148/btv1b9061879d/f162.item",
+    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b9061879d/f164.item",
+    "summary": "Two cipher blocks continuing the f. 154 despatch, with clear text between and after, signed Forget at Bordeaux. Never transcribed figure by figure; the text is known from the contemporary clear copy f. 157r (canvas 164 right), which Michael Brackx read (issue #70) but which is not transcribed in this folder; the links are to the Gallica images."
+   },
+   {
+    "doc": "f173",
+    "label": "fr. 15572 f. 173",
+    "transcription": "f173_cipher.txt",
+    "decryption": [
+     "reading_f173.txt",
+     "f173_reading.md",
+     "texts/f173_decryption.md"
+    ],
+    "summary": "To the King: the credit has run out. There are no means to pay two musters, the town refuses to contribute on the strength of letters from the King, no one will stand surety, and only merchants of Paris lend on the writer's word. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f196",
+    "label": "fr. 15572 f. 196",
+    "transcription": "f196_cipher.txt",
+    "decryption": [
+     "f196_reading.md",
+     "f196_f201.md",
+     "texts/f196_decryption.md"
+    ],
+    "summary": "'Sire, depuis le partement du S.r de Bosseval...': the same despatch as f. 201, on the siege conducted with Matignon: Mayenne's fever, Matignon pressed to come, two trenches and a battery of fifteen cannon, and the dead, among them Sainct-Chamarand, la Barge, Montberault and la Binault (names from Michael Brackx's joint alignment, issue #64). Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f201",
+    "label": "fr. 15572 f. 201",
+    "transcription": "f201_cipher.txt",
+    "decryption": [
+     "f201_reading.md",
+     "f196_f201.md",
+     "texts/f201_decryption.md"
+    ],
+    "summary": "The second copy of the f. 196 despatch: Matignon, the siege and the dead, with the clear phrase 'Le regard dud. siege il s'advance fort' inside the cipher block. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f123r",
+    "label": "fr. 15572 f. 123r (despatch ff. 123-124)",
+    "transcription": "f123r_cipher.txt",
+    "decryption": [
+     "reading_f123_124.txt",
+     "f123_124_reading.md",
+     "texts/f123r_decryption.md"
+    ],
+    "summary": "One four-page despatch to the King ('Sire...'): no contributions can be raised without garrisons, the troops cannot be kept, the bearer is sent for the King's intention, and the relief of places. Read in part only; no clear copy was found. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f123v",
+    "label": "fr. 15572 f. 123v (despatch ff. 123-124)",
+    "transcription": "f123v_cipher.txt",
+    "decryption": [
+     "reading_f123_124.txt",
+     "f123_124_reading.md",
+     "texts/f123v_decryption.md"
+    ],
+    "summary": "One four-page despatch to the King ('Sire...'): no contributions can be raised without garrisons, the troops cannot be kept, the bearer is sent for the King's intention, and the relief of places. Read in part only; no clear copy was found. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f124r",
+    "label": "fr. 15572 f. 124r (despatch ff. 123-124)",
+    "transcription": "f124r_cipher.txt",
+    "decryption": [
+     "reading_f123_124.txt",
+     "f123_124_reading.md",
+     "texts/f124r_decryption.md"
+    ],
+    "summary": "One four-page despatch to the King ('Sire...'): no contributions can be raised without garrisons, the troops cannot be kept, the bearer is sent for the King's intention, and the relief of places. Read in part only; no clear copy was found. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f124v",
+    "label": "fr. 15572 f. 124v (despatch ff. 123-124)",
+    "transcription": "f124v_cipher.txt",
+    "decryption": [
+     "reading_f123_124.txt",
+     "f123_124_reading.md",
+     "texts/f124v_decryption.md"
+    ],
+    "summary": "One four-page despatch to the King ('Sire...'): no contributions can be raised without garrisons, the troops cannot be kept, the bearer is sent for the King's intention, and the relief of places. Read in part only; no clear copy was found. Michael Brackx's own decode and reading (issues #64, #68-#71) is in the GitHub issues only, not in this folder."
+   },
+   {
+    "doc": "f110",
+    "label": "fr. 15572 f. 110, Mar 1586 (not read)",
+    "transcription": "f110_cipher.txt",
+    "decryption": "f110_status.md",
+    "summary": "Fifty-four lines wholly in cipher, ending 'De Bellebourg ... jour de Mars 1586', in a far smaller hand. Not read: 37 lines are transcribed and the decode is at the scrambled-key floor; the 'decryption' file is the status note of what was tried, not a decipherment."
+   },
+   {
+    "doc": "fr15571-f177",
+    "label": "fr. 15571 f. 177, 31 Dec 1585",
+    "transcription": "f177_cipher.txt",
+    "decryption": [
+     "reading_f177.txt",
+     "f177_reading.md",
+     "texts/f177_decryption.md"
+    ],
+    "summary": "Forget, 31 December 1585: Mayenne's design for leading his army into Gascony and the difficulties met there; the plan for Pons or Taillebourg was changed when the Vicomte de Turenne took the field with men and cannon."
+   }
+  ],
+  "key_file": [
+   "key_contrib.json",
+   "key.json"
   ]
  }
 }

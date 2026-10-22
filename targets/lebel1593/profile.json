@@ -221,6 +221,12 @@
    "kind": "reading",
    "what": "Third pass on no. 100 (reading100_final.md): 103 venir, 257 faveur(s), 142 serviteur, 115 bon by agreeing contexts; all 1000 enciphered tokens valued (codes 65 H, 26 C, 19 M).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): nos. 11, 62, 100: sign-by-sign transcriptions reading*_full.md, decryptions reading*_final.md; key: Tomokiyo's src/savoy.png, codes_harvest.tsv, and the NOTES key corrections copied to texts/key.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -257,6 +263,34 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Lebel-Savoy key table (cryptiana savoy.htm, 2017, rev. 2023) applied to nos. 11, 62, 100", "date": "2017", "source": "cryptiana savoy.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "code values harvested from the sibling letters deciphered at the time (fr. 3983 no. 80, fr. 3984 f. 182, fr. 3985 f. 23)"}
+  ],
+  "texts": [
+   {
+    "doc": "no11",
+    "label": "no. 11, Paris, 17 January 1593 (f. 26r-v)",
+    "transcription": "reading11_full.md",
+    "decryption": "reading11_final.md",
+    "summary": "Lebel reports to Charles Emmanuel I that Mayenne is again thinking of claiming the crown, encouraged by letters from Rome; the Pope and the King of Spain want a Catholic king elected, Mayenne will favour whichever candidate brings him most advantage, and his secret council is the archbishop of Lyon (Épinac), Villeroy and président Jeannin."
+   },
+   {
+    "doc": "no62",
+    "label": "no. 62, Paris, 10 March 1593 (f. 130r-v)",
+    "transcription": "reading62_full.md",
+    "decryption": "reading62_final.md",
+    "summary": "Mayenne's discontent has been bought off with 40,000 écus down and assignations up to 260,000 écus; Feria brings a doctor who wants to dispute the crown on points of law, which is openly mocked; the Spanish army is smaller than any before it, those around Mayenne will propose a truce, and Lebel advises courting Mayenne."
+   },
+   {
+    "doc": "no100",
+    "label": "no. 100, Paris, 27 March 1593 (ff. 194r-195r)",
+    "transcription": "reading100_full.md",
+    "decryption": "reading100_final.md",
+    "summary": "If Philip II's designs for the Infanta fail, Savoy could with more reason than any other prince hope for the crown from the Estates; money for his 'compagnon' and président Jeannin, paid through Zamet, Feria's and Commandeur Tassis's letters, good offices with the Pope, the Provence governorship, Vaudemont and the château of Miolans. With nos. 11 and 62 it follows Savoy's candidacy at the Estates of the League, January to March 1593."
+   }
+  ],
+  "key_file": [
+   "texts/key.md",
+   "codes_harvest.tsv",
+   "src/savoy.png"
   ]
  }
 }

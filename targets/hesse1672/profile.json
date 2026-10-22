@@ -195,6 +195,12 @@
    "what": "Contemporary context: the defensive alliance of Denmark, Brandenburg, Brunswick, Hessen-Kassel and the Emperor concluded at Braunschweig 12/22 Sept 1672, matching the letter's plan; no edition of the letter or name for 625 found. HCPortal cryptogram list re-checked: no sibling of Nr. 125.",
    "result": "partial",
    "date": "2026-10-09"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct.txt (letter-cipher passages) and codes.txt (code numbers with glosses), reading.txt; key = letter table of HCPortal key 255 in decrypt.py plus the code list codes.txt.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -232,6 +238,22 @@
   "notes": "59 of 64 cipher tokens read as sense (92.2%), unchanged after escalation. Letter table from HCPortal key 255 (one cell differs in 1672); the nomenclature is a different, lost word list whose values come from the glosses. 625 gloss only partly legible. Writer not identified.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Hessian chancery letter table, Secretary Lincker 1666/1676 (HStAM 4 d Nr. 1234, HCPortal key 255); code values from the contemporary glosses on the leaf"}
+  ],
+  "texts": [
+   {
+    "doc": "HCPortal 494",
+    "label": "Hamburg, 4/14 May 1672, HStAM 4 f Dänemark Nr. 125, ff. 2-4",
+    "transcription": [
+     "ct.txt",
+     "codes.txt"
+    ],
+    "decryption": "reading.txt",
+    "summary": "A despatch from Hamburg to the Hessian chancellor at Kassel on the writer's reception at the Danish court, Blumenthal's mission and Brandenburg-Danish ceremonial quarrels, the French-Swedish treaty that passed Denmark by, the plan to draw Brandenburg into the Danish-Brunswick alliance, and the Holstein Landtag's refusal of contributions."
+   }
+  ],
+  "key_file": [
+   "decrypt.py",
+   "codes.txt"
   ]
  }
 }

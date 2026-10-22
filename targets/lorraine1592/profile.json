@@ -256,7 +256,8 @@
    "what": "measure_reread.py on the 5 Oct file: 861/1,102 = 0.781; fragments quelq, auld+is, promes fail the lexicon check and were downgraded to M: final 844/1,102 = 0.766 (letters 0.771, figures 24/38); measure_sense.py 787/1,102 = 0.714.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 823 tokens, 68 types, fr-1600-letters order 4: reading -1.635 per letter; random keys -4.932 (z 6.7); key annealed onto shuffled ciphertext best -2.752 (mean -2.841, z 27.0); annealer on the real text -2.321. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 823 tokens, 68 types, fr-1600-letters order 4: reading -1.635 per letter; random keys -4.932 (z 6.7); key annealed onto shuffled ciphertext best -2.752 (mean -2.841, z 27.0); annealer on the real text -2.321. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): eye transcription ct/no97_eye.txt and the graded re-read ct/no97_reread.txt (5 Oct, reading of record), the running text ct/no97_reading2.md and the clear text; the pair key copied from no97_reading2.md §1 and NOTES §10 to texts/key.md.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 823, "types": 68, "tokens_per_type": 12.1, "score": -1.635, "nulls": {"random keys": {"n": 200, "mean": -4.932, "sd": 0.495, "max": -3.967, "z": 6.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.841, "sd": 0.045, "max": -2.752, "z": 27.0, "p": 0.1429}}, "power": -2.321, "verdict": "pass", "notes": "claimed per-occurrence score -1.635; polyphony 0.0; 279 unread tokens left out; annealer on the real text from random keys reached -2.321"}, 
   "method": "key recovered from ciphertext-only",
@@ -311,6 +312,23 @@
   "credits": [
     {"who": "arya", "role": "solution", "note": "PR #4: broke the cipher ciphertext-only and recovered the key (18 Sept 2026); re-read and extended by the project", "date": "2026-09-18", "source": "https://github.com/dbourdeau/cyphersolver/pull/4"},
     {"who": "tomokiyo", "role": "prior solution", "note": "solved it in 2025; only the opening quoted, no key or text published", "date": "2025", "source": "cryptiana unsolved.htm, 'Duke of Lorraine (1592)'", "published": false}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "no97",
+    "label": "fr. 3621 no. 97, Nancy, 18 June 1592",
+    "transcription": [
+     "ct/no97_eye.txt",
+     "ct/no97_reread.txt"
+    ],
+    "decryption": [
+     "ct/no97_reread.txt",
+     "ct/no97_reading2.md",
+     "ct/clear_texts.md"
+    ],
+    "summary": "A contemporary copy of Charles III of Lorraine's letter to his son the comte de Vaudémont, with clear French and cipher alternating on the same lines. The Duke is infinitely ill satisfied with the little execution of the promises of pioneers and munitions made to him, urges his son to press the attempt on Chasteauvillain, and writes of putting someone there to command and hold the plain and of bringing his army back to quarters. The volume is the duc de Nevers's intercept and correspondence file for 1591-92."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }

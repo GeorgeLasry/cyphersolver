@@ -508,7 +508,8 @@
    "what": "Integrated inspected documentary findings and their limits: Geyso p.99 n.2 paraphrases an uninspected Malsburg letter of 16 November 1636 concerning Melander and authority; retention letters complicate an actual-dismissal hypothesis. Koblenz 47/4400 is a catalogue lead for cipher codes, not an inspected matching key. No values for 43, 45 or LL established.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 9506 tokens, 119 types, de-1640s order 4: reading -2.066 per letter; random keys -5.639 (z 15.0); key annealed onto shuffled ciphertext best -3.662 (mean -3.692, z 52.7); annealer on the real text -2.423. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 9506 tokens, 119 types, de-1640s order 4: reading -2.066 per letter; random keys -5.639 (z 15.0); key annealed onto shuffled ciphertext best -3.662 (mean -3.692, z 52.7); annealer on the real text -2.423. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-record transcriptions ct/hcp*.txt and the folio files f0*.txt; decryption reading_segmented.txt (measured text, one block per folio) and work/reading_auto.txt for the address leaves; the alphabetic block from Larry Beck's alphabetic/ package; keys key.txt, codes.txt and the alphabetic key in alphabetic_reading.md.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 9506, "types": 119, "tokens_per_type": 79.88, "score": -2.066, "nulls": {"random keys": {"n": 200, "mean": -5.639, "sd": 0.238, "max": -5.024, "z": 15.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.692, "sd": 0.031, "max": -3.662, "z": 52.7, "p": 0.1429}}, "power": -2.423, "verdict": "pass", "notes": "claimed per-occurrence score -2.073; polyphony 0.0; 230 unread tokens left out; annealer on the real text from random keys reached -2.423"}, 
   "class": "read in part",
@@ -583,6 +584,157 @@
   "provenance": "mixed",
   "credits": [
     {"who": "beck", "role": "solution", "note": "PR #17: period-five key of the f. 12 alphabetic block recovered (with ChatGPT), critical reading", "source": "https://github.com/dbourdeau/cyphersolver/pull/17"}
+  ],
+  "texts": [
+   {
+    "doc": "HCPortal 496",
+    "label": "ff. 3-4, 5/15 Jan 1637",
+    "transcription": [
+     "ct/hcp496.txt",
+     "f003.txt",
+     "f004.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt",
+     "work/reading_auto.txt"
+    ],
+    "summary": "Malsburg reports that he does not know where the garrisons' upkeep is to come from now that the contributions from the open country have ended, and urges that a safe-conduct for the envoys to the peace talks at <128 Cöln> be solicited from the King of Hungary. Block 'work/f003.txt' of reading_segmented.txt; f. 4 (address leaf) only in work/reading_auto.txt."
+   },
+   {
+    "doc": "HCPortal 497",
+    "label": "ff. 12-13, Wesel, 7/17 Jan 1637",
+    "transcription": [
+     "ct/hcp497.txt",
+     "f012.txt",
+     "f013.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt",
+     "work/reading_auto.txt"
+    ],
+    "summary": "From Wesel: he does not know whether to go to <148> or to the army; the recruits and Dalwig's Verehrungsgelder, Eberstein's regiment, and the impossibility of travelling through Friesland with wagons and horses; word that it was decided at Regensburg to give the envoys to <128 Cöln> no safe-conduct, and of talks apart at <130 Hamburg> or Lübeck. Block 'work/f012.txt' of reading_segmented.txt."
+   },
+   {
+    "doc": "HCPortal 497, letter block",
+    "label": "f. 12 foot, the alphabetic block of 7/17 Jan 1637 (Larry Beck with ChatGPT)",
+    "transcription": [
+     "ct/hcp497_letters.txt",
+     "alphabetic/alphabetic_selected_letters.txt"
+    ],
+    "decryption": [
+     "alphabetic/alphabetic_reading.md",
+     "alphabetic/alphabetic_edition.csv"
+    ],
+    "summary": "A separate ten-line block in a letter cipher with repeating shifts 4, 5, 3, 6, 2, deciphered by Larry Beck with ChatGPT; the selected reading discusses command, the Swedish generals, the reciprocal joining of forces and the authority requested. A working edition: the code labels 43, 45 and LL are unidentified."
+   },
+   {
+    "doc": "HCPortal 502",
+    "label": "f. 14, Jan 1637",
+    "transcription": [
+     "ct/hcp502.txt",
+     "f014.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "The provisioning of Hermannstein (Ehrenbreitstein); Obrist Hoffman's troops; marches by Marburg, Corbach and Brilon on the road from <128 Cöln>; Jan de Werth at Cologne. Block 'work/f014.txt' of reading_segmented.txt."
+   },
+   {
+    "doc": "HCPortal 503",
+    "label": "ff. 15-17, Jan 1637",
+    "transcription": [
+     "ct/hcp503.txt",
+     "f015.txt",
+     "f016.txt",
+     "f017.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt",
+     "work/reading_auto.txt"
+    ],
+    "summary": "No audience yet; notice of the end of the Stillstand; companies and dragoons, with recruiting patents already issued; the ambassador of <188 die Staaten>; money and horses. Blocks 'work/f015.txt' and 'work/f016.txt' of reading_segmented.txt; f. 17 only in work/reading_auto.txt."
+   },
+   {
+    "doc": "HCPortal 504",
+    "label": "f. 18, 14/24 Feb 1637",
+    "transcription": [
+     "ct/hcp504.txt",
+     "f018.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "Some of the <212> are so frozen that several have become cripples; the obligation over the loss before Hermannstein; the new recruiters. Block 'work/f018.txt' of reading_segmented.txt."
+   },
+   {
+    "doc": "HCPortal 505",
+    "label": "ff. 23-24, 7/17 Feb 1637",
+    "transcription": [
+     "ct/hcp505.txt",
+     "f023.txt",
+     "f024.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "The dispute over whether Hermannstein was effectively provisioned; ransom and gifts for the commanders; the finding that 'we have dealt with a Frenchman'; peace talks in Picardy with nobody sent to <128>; a separate peace with the imperial commissioners; the garrisons ruined. Blocks 'work/f023.txt' and 'work/f024.txt' of reading_segmented.txt."
+   },
+   {
+    "doc": "HCPortal 506",
+    "label": "f. 25, 5 Mar / 23 Feb 1637",
+    "transcription": [
+     "ct/hcp506.txt",
+     "f025.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "<120> has resolved to content the Reuter; ransom for prisoners; letters of exchange. Block 'work/f025.txt' of reading_segmented.txt."
+   },
+   {
+    "doc": "HCPortal 507",
+    "label": "ff. 28-29, 28 Mar 1637 (old style)",
+    "transcription": [
+     "ct/hcp507.txt",
+     "f028.txt",
+     "f029.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "The journey by the Watten; twelve-pound cannon and constables; Jan de Werth between Ruhr and <268>; the States' alliance and a muster place in Cleves; the conjunction at Cloppenburg, Quakenbrück, Minden, Vechta, Wildeshausen and Diepholz. Blocks 'work/f028.txt' and 'work/f029.txt' of reading_segmented.txt."
+   },
+   {
+    "doc": "HCPortal 508",
+    "label": "ff. 30-31, 'Duplicat' of ff. 28-29",
+    "transcription": [
+     "ct/hcp508.txt",
+     "f030.txt",
+     "f031.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "The duplicate of the 28 March letter, re-copied with different line breaks; used only as a check copy and not deciphered or counted separately, so its text is that of HCPortal 507 (blocks 'work/f028.txt' and 'work/f029.txt')."
+   },
+   {
+    "doc": "HCPortal 509",
+    "label": "ff. 32-33, 3 Apr 1637 and Mar 1637",
+    "transcription": [
+     "ct/hcp509.txt",
+     "f032.txt",
+     "f033.txt"
+    ],
+    "decryption": [
+     "reading_segmented.txt"
+    ],
+    "summary": "A French letter signed '232' of 3 Apr 1637, citing a letter of the ambassador extraordinary in London, and German news extracts from London of 16/26 Mar in a second hand, in the same key; paired large capitals are name signs. Blocks 'work/f032.txt' and 'work/f033.txt' of reading_segmented.txt."
+   }
+  ],
+  "key_file": [
+   "key.txt",
+   "codes.txt",
+   "alphabetic/alphabetic_reading.md"
   ]
  }
 }
