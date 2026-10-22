@@ -120,6 +120,12 @@
    "kind": "verification",
    "what": "Split from the former combined target (catalogue 26, nos. 41-43) under the one-key rule (George Lasry, 14 Oct 2026): nos. 41-42 (Lasry's poly-homophonic letter cipher) keep conti1649; no. 43 (numeric letter-and-syllable code, key rebuilt from its glosses) is now laigue1649. Earlier steps kept as recorded; nos. 41-42 measured: 1,689 of 1,692 cipher signs have a value (99.8%).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt (made here), decryption READING.md + decoded.txt (here) and George Lasry's HistoCrypt 2023 paper lasry2023.pdf (his full text and translation, §4) as a separate file; his key is printed in the paper.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -161,6 +167,19 @@
    "open": 0,
    "tokens_open": 0
   },
-  "gaps": []
+  "gaps": [],
+  "texts": [
+   {
+    "doc": "41-42",
+    "label": "Nos. 41-42, 26 and 27 March 1649, ff. 113r-v, 115r",
+    "transcription": "transcription.txt",
+    "decryption": [
+     "READING.md",
+     "decoded.txt",
+     "lasry2023.pdf"
+    ],
+    "summary": "Conti, a leader of the Fronde, reports on the Saint-Germain conference to (probably) Noirmoutier: the insistence on the interests of the Parlement de Normandie, to which the Parlement de Paris is closely joined; the first president and président de Mesmes declaring a rupture if Normandy were not satisfied; and the demand for the Cardinal's exclusion. Written after the Peace of Rueil and days before the Peace of Saint-Germain. READING.md is the decipherment made here from a fresh transcription (raw decoder output decoded.txt); George Lasry's own full text and translation are §4 of his HistoCrypt 2023 paper (lasry2023.pdf), with three small differences listed in READING.md."
+   }
+  ]
  }
 }
