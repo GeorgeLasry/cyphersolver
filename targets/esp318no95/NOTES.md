@@ -1,15 +1,19 @@
 # BnF Espagnol 318 no. 95: an unaddressed Spanish cipher letter, 8 Jan 1497 — George Lasry's alphabet
 
-Status: in progress (f. 122v not decoded; the line-by-line correction walk of f. 122r and the retry are still to do)
-
 Split on 14 Oct 2026 from `esp318` (the whole volume, catalogue no. 9) under the one-key rule (George Lasry,
 14 Oct 2026). This letter is the only one in the volume in Lasry's 2022 alphabet; the other ciphered letters of
 Espagnol 318 are different ciphers, each with its own entry and page: [`targets/esp318/`](../esp318/NOTES.md)
 (no. 92, the *Cifra general*), [`targets/federico1497/`](../federico1497/NOTES.md) (no. 5, Escrivà's cipher),
-[`targets/esp318no93/`](../esp318no93/NOTES.md) (nos. 93–94, key not identified).
+[`targets/esp318no93/`](../esp318no93/NOTES.md) (no. 93, key not identified), [`targets/esp318no94/`](../esp318no94/NOTES.md)
+(no. 94, alphabet recovered by Michael Brackx).
 
-**Outcome so far: read with known key, read in part** (about two thirds of f. 122r; f. 122v not yet decoded).
-Sessions of 17 and 21 Sept 2026.
+**Outcome: read with known key, read in part — nearly the whole letter.** Lasry's 2022 decipherment covers ll. 1–13
+and is the reference for them; Michael Brackx ([issue #63](https://github.com/dbourdeau/cyphersolver/issues/63),
+21 Oct 2026, with Claude Opus 5.5) read ll. 14–33 and the verso for the first time with Lasry's alphabet and
+proposes corrections to ll. 1–13 (pending Lasry). Open: ten code groups (about 18 tokens), five burn holes, one word
+in l. 13. The project's own machine reading (Sept 2026, below) covered about two thirds of the recto and agrees with
+Brackx where they overlap. The combined text, with the corrections listed, is `f122_reading.md`.
+Sessions of 17 and 21 Sept and 21 Oct 2026.
 
 The segmentation pipeline built for this letter, its outputs and its git-ignored intermediates stay in
 `targets/esp318/`, run from there (shared with no. 93, whose glyphs it also segmented): `seg.py`, `glyphs.py`,
@@ -19,16 +23,67 @@ The segmentation pipeline built for this letter, its outputs and its git-ignored
 
 ## The letter and the key
 
-F. 122 is a single leaf of 31 dense lines (canvases 458–459 of ark `btv1b52503046q`), no address, no salutation, no
-clear word anywhere, dated 8 January 1497, three days before Federico's no. 5 at the other end of the volume.
+F. 122 is a single leaf of 31 dense lines by the segmentation (33 line bands as Brackx cuts them) and four cipher lines
+on the verso above a clear date line and signature (canvases 458–459 of ark `btv1b52503046q`); no address, no
+salutation, dated 8 January 1497, three days before Federico's no. 5 at the other end of the volume.
 
-Solved "approximately" by George Lasry in May 2022; Tomokiyo prints the key as an image only
-(on cryptiana's page of Lasry's solutions; the page is saved as `targets/esp318/lit/crypt/GL.htm`, the image was not
-kept), and GL.htm says the letter "is solved"; no
-plaintext has been published. The alphabet is homophonic, one to three signs per letter, plus unassigned signs and the
-code groups `bac bnh bon dah daf dae oht bed dal boo del`.
+Solved "approximately" by George Lasry in May 2022. Tomokiyo's page of Lasry's solutions (saved as
+`targets/esp318/lit/crypt/GL.htm`) carries **two** images, both now kept beside it in `targets/esp318/lit/crypt/GL/`:
+the alphabet (`BnF_es318_f122.png`) and **his decipherment of ll. 1–13** as a red overlay on the scan
+(`BnF_es318_f122_decipher.png`, "provided by George Lasry"). Until 21 Oct 2026 these notes said no plaintext had been
+published: that was wrong, the second image was missed (Brackx pointed it out). The alphabet is homophonic, one to
+three signs per letter, plus unassigned signs and the code groups `bac bnh bon dah daf dae oht bed dal boo del`.
 
-## Lasry's key applied by machine and checked by eye
+## Lasry's ll. 1–13 and Brackx's reading (21 Oct 2026)
+
+Lasry's decipherment of ll. 1–13, transcribed from his image, is the reference reading of those lines. Brackx read
+the rest by eye with Lasry's alphabet on 1.5–3× crops, each doubtful word re-cut and re-read (about seventeen
+passes), adopting a new sign value only when it made sense of two or more independent words. No solver and no
+language model; the project's machine segmentation was not used. Both are in `f122_reading.md`.
+
+In outline: grain is getting dear; the French bring victuals and offer the silk-makers, "a third of" `[bac]`, licence
+to trade in France, to win `[bon]` over; `[bnh]` provides "very late and very little"; the Señoría leans to the
+French. Juan Luys has been brought over; `[def]` treats daily with "those who govern"; they hide from `[bnh]` and
+bear him ill will, and the writer hinders the harm to `[bnh]` as he can. `[dae]` wants the `[bed]` of Santa Cruz to
+go to France to seek peace; the League should do its duty; `[dal]` should order `[boo]` to come and defend "this",
+for if it were lost "no auia cosa segura en Ytalia". The verso: `[def]` has gone to Germany (*Alemanna*) without
+anyone knowing, with no hope of his return. Brackx's suggestions for the groups (contextual, not read): `def`
+Maximilian I, whose withdrawal from Italy in December 1496 fits; `bed` cardinal (Carvajal, of Santa Croce); `dae`
+the Pope?
+
+**Proposed corrections to Lasry's ll. 1–13** (Brackx; pending George Lasry, who has not yet seen them; his reading
+stays the reference on the site). Compared here with the image itself, letters only:
+
+| l. | Lasry 2022 | Brackx proposes | checked here on the scan |
+|---|---|---|---|
+| 1 | first sign *i* | null (large ꝺ-shaped sign) | no |
+| 1 | *no a lo ve debir* | *no ay que dezir* | no |
+| 1 | *[r]emitiendo e* | *remitiendome* | no |
+| 5 | *haben* | *hazen* (*la seda*) | yes |
+| 8 | *dib* | *diz* | yes |
+| 10 | *con la ladras* | *con palabras* | yes |
+| 12 | *hama* | *haga* | yes |
+| 13 | *no ven estado* | *no buen estado* | no |
+| 13 | *i a ices* | *y* + null + one unread word | no |
+
+The issue's table also lists ll. 7, 8, 9, 10 as corrections where Lasry's overlay only leaves a blank over the code
+groups `bon` and `bnh` (written in clear letters on the leaf) or has the same text (*provee como suele mui tarde*);
+those are not differences. Brackx confirms ll. 2, 3, 4, 6 as Lasry has them, and Lasry's two 7-forms (crossed 7 = S,
+plain 7 = D).
+
+**Sign values proposed for Lasry's "Unknown" signs** (Brackx; for Lasry's review): ∝-like alpha = l; b-bowl with two
+crossbars = z; 8-shape = a; hooked lightning variant = d; `9.` = *con* or null; ꝑ = h in *haura*; and, not in
+Lasry's table, the small solid circle = z, a two-crossbar stroke that doubles the preceding consonant, and a π/o sign
+with two crossbars = o. `dah` (l. 23) and `dal` (ll. 29, 31) are different groups; `oht` was not found.
+
+**Checks here (21 Oct 2026).** Recto ll. 5, 8, 9, 10, 12, 25–26 and verso l. 2 were deciphered sign by sign from
+the scan with Lasry's table: *los que ha[z]en la seda*, *con la mas [bon] que pueden*, *provee como suele muy tarde*,
+*con palabras y la*, *a que el [bnh] haga*, *dificultad. Y el [dae] di[z]…*, *-ta Cru[z]*, *y del [def] no se que
+siga, sino que esta en Alemanna* — all as Brackx has them. Where his lines overlap the project's September machine
+reading they agree (ll. 15, 16, 17, 18, 19–20, 22, 23, 25), except that our l. 12 *me toca* is *le toca* (Lasry and
+Brackx agree). Not checked: the remaining lines of 14–33 sign by sign.
+
+## Lasry's key applied by machine and checked by eye (Sept 2026)
 
 Reading the signs by eye alone was not reliable (÷ against ≐, plain 7 against ᵒ7 and crossed 7), so f. 122r was
 segmented and clustered: adaptive-threshold binarisation (`seg.py`), connected components grouped into glyphs by
@@ -66,25 +121,29 @@ this resolution, not the method.
 
 ## Remaining gaps
 
-- f. 122r, about a third of the glyphs - blocker: illegible; eye, cluster-hybrid and tiling readings agree on the same two thirds; touching signs at 4077 px full resolution; the line-by-line correction walk is still to do
-- f. 122v (five lines) - blocker: not-attempted; segmented (targets/esp318/f122v_reseg.pkl) but not decoded with the f. 122r templates
+- ten code groups (bac, bon, bnh, def, del, dae, bed, dah, dal, boo), about 18 tokens - blocker: no-key-material; Lasry's table lists them without values and no other letter in this key is known; Brackx's identifications are contextual suggestions only
+- burn holes in ll. 12, 15, 20, 21, 28 - blocker: illegible; the paper is burnt through, one image only
+- one word at the end of l. 13, after the null - blocker: illegible; Lasry reads *a ices*, Brackx leaves it unread
+- the clear date line and signature of f. 122v, read only as "… de enero …" - blocker: illegible; faded clear hand, not cipher
 
 ## Escalation
 
 - [x] siblings: all thirteen cipher folios of the volume opened; no other letter in this alphabet, no decipherment of f. 122 anywhere in the volume
-- [x] clear-pages: none; the leaf has no clear word
-- [x] known-keys: Lasry's 2022 alphabet is the key; two of its signs corrected here
-- [x] print: Tomokiyo's cryptiana (GL.htm and the key image); no plaintext published anywhere
-- [x] key-rebuild: cluster labelling against the key, FFT template re-explanation, beam search with a Spanish 5-gram, DP tiling (see above)
-- [ ] retry: not done — correct f122r_local2_keyed.txt line by line against ov/R95_*.png, then run the templates over f. 122v
+- [x] clear-pages: none; the cipher pages have no clear word
+- [x] known-keys: Lasry's 2022 alphabet is the key; values proposed for his Unknown signs (Brackx) and two signs corrected here in Sept
+- [x] print: cryptiana GL.htm: Lasry's alphabet and his decipherment of ll. 1-13 (the second image was missed until Brackx's issue #63); nothing else in print
+- [x] key-rebuild: cluster labelling, FFT template re-explanation, beam search and DP tiling (Sept); Brackx's sign values for the Unknown row, each from two or more words (Oct)
+- [x] retry: Brackx re-read every doubtful word over about seventeen passes and withdrew conjectures that failed (Ingalaterra, a value for ŧ); seven passages re-deciphered here from the scan agree
 
 ## Next step
 
-Finish the reading by correcting `targets/esp318/f122r_local2_keyed.txt` line by line against `ov/R95_*.png`, then run
-the same templates over f. 122v. This is transcription work, not cryptanalysis. Lasry's own plaintext (2022), if he
-will share it, would settle the unresolved third.
+Send George Lasry the proposed corrections to ll. 1–13 and the new sign values; record his answer here. Ask Brackx
+whether he can send a sign-level transcription, which would allow a measured fraction and a "watch it decipher"
+replay.
 
 ## Assumptions for George's review
 
-- Your 2022 alphabet is credited on this entry only, as the key used and as a prior solution (GL.htm: "is solved"),
-  with first_break "unpublished prior". None of the other letters of Espagnol 318 carries your credit.
+- Your 2022 alphabet and your decipherment of ll. 1–13 are credited on this entry only; your ll. 1–13 stay the
+  reference reading on the site, and Brackx's corrections are shown as proposals for you to accept or reject.
+- None of the other letters of Espagnol 318 carries your credit.
+- The reading of ll. 14–33 and the verso is Brackx's (contributed); the project checked seven passages against the scan.

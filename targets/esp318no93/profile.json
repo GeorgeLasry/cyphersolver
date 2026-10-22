@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "esp318no93",
- "title": "Lorenzo Suárez (Venice, 24 Feb 1504) and the viceroy of Sicily (Messina, 27 Apr 1503) to the Catholic Monarchs: BnF Espagnol 318 nos. 93 and 94, ff. 118-121v, keys not identified (catalogue item 9)",
+ "title": "Lorenzo Suárez de Figueroa (Venice) to the Catholic Monarchs, 24 Feb 1504: BnF Espagnol 318 no. 93, f. 118r-v, key not identified (catalogue item 9)",
  "documents": [
   {
    "id": "no93",
@@ -32,33 +32,6 @@
     "notes": "Transcribed as a character stream in which the CVC code groups are split into letter signs; covers lines 1-21 of f. 118r only."
    },
    "read": "not read"
-  },
-  {
-   "id": "no94",
-   "shelfmark": "BnF Espagnol 318 no. 94, ff. 120r-121v",
-   "date": "27 Apr 1503",
-   "year": 1503,
-   "country": "Spain",
-   "route": "the viceroy of Sicily, Messina -> Ferdinand",
-   "language": "Spanish",
-   "pages": 4,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ]
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "mixed"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "Gallica full images (targets/esp318/full/f120r-f121v.jpg)",
-    "image_quality": "good",
-    "notes": "Not transcribed; code groups sampled only."
-   },
-   "read": "not read"
   }
  ],
  "system": {
@@ -66,7 +39,7 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Both letters are built like the secretariat ciphers of Ferdinand: single invented signs for letters, with homophones, interleaved with groups of two to four Latin letters (nomenclator). Whether the two letters share one key is not established.",
+  "summary": "A cipher of Ferdinand's secretariat: single invented signs for letters, with homophones, interleaved with groups of two to four Latin letters (nomenclator); the groups are atomic code units.",
   "symbol_kind": "letters and symbols",
   "distinct_symbols": "unknown",
   "diacritics": {
@@ -84,8 +57,8 @@
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "unknown; suspected: the Gran cifra of 1501-04 (Bergenroth's partial reconstruction, BNE MSS 20.211/52) or, for no. 94, the unpublished 'Cifra del visorrey' (BRAH 9/15 ff. 1-6); neither obtained",
-  "notes": "Split on 14 Oct 2026 from esp318 (the whole volume) under the one-key rule. The two letters are one entry only because both are unread with unknown keys; no shared key is claimed (their code-initial bands differ: no. 93 c/g/h/l/m/n/p/q/r/t/z, no. 94 g/l/m/n/p/r/v/z). Other entries: esp318 (no. 92), federico1497 (no. 5), esp318no95 (no. 95)."
+  "sibling_key": "unknown; Escrivà no. 1 and the Cifra general excluded by code initials; no. 94's key (recovered by Brackx 2026, esp318no94) does not fit; the Gran cifra of 1501-04 (Bergenroth's partial reconstruction, BNE MSS 20.211/52) not obtained",
+  "notes": "Split on 14 Oct 2026 from esp318 (the whole volume) under the one-key rule; held nos. 93 and 94 until 21 Oct 2026, when no. 94 (key recovered by Michael Brackx, issue #62) moved to its own entry esp318no94: the code inventories barely overlap (no. 93's gto, pie, heg, zoe, zoc, hug never occur in no. 94). Other entries: esp318 (no. 92), federico1497 (no. 5), esp318no94 (no. 94), esp318no95 (no. 95)."
  },
  "conditions": {
   "prior_solution": {
@@ -104,12 +77,13 @@
    "solve93.py (homophonic annealing against a Spanish 5-gram model)"
   ],
   "models": [
+   "claude-fable-5-1",
    "claude-opus-5",
-   "claude-fable-5-1"
+   "claude-opus-5-5"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-14"
+  "last_date": "2026-10-21"
  },
  "solution": [
   {
@@ -120,13 +94,20 @@
   },
   {
    "date": "2026-09-17",
-   "kind": "statistics", "technique": ["frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
    "what": "No. 93 f. 118r segmented and clustered: sign alphabet plus CVC groups; the code initials of both letters fall outside the two keys in print (Escrivà no. 1, Cifra general) and inside the band of the Gran cifra.",
    "result": "worked"
   },
   {
    "date": "2026-09-17",
-   "kind": "solver", "technique": ["simulated annealing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
    "what": "No. 93 as plain homophonic letter stream (ct93_eye.txt, 1016 tokens), annealed against Spanish 5-grams from eight starts: best -3.5 nats/token against -1.8 for real Spanish; the CVC groups are atomic.",
    "result": "ruled out"
   },
@@ -135,12 +116,23 @@
    "kind": "verification",
    "what": "Split from the former whole-volume target esp318 under the one-key rule (George Lasry, 14 Oct 2026): nos. 93 and 94 kept together as one attempted entry with no shared-key claim. ct93_eye.txt and solve93.py moved here.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Michael Brackx (issue #62) recovered no. 94's alphabet and reported that it does not break no. 93 (no convergence, best -3.08 nats/char; fixing the shared glyphs to no. 94's values makes it worse; 7 shared groups). Checked here on the code inventories: no. 93's top trigrams (gto x21, pie x19, heg x13, zoe, zoc, hug) never occur in no. 94; no. 94's qa, rah, mny, qag absent from ct93_eye.txt except pif x2; muy x3 in no. 93. No. 94 split into esp318no94.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Neither letter has a key: the two keys in print are excluded by code-initial range, the suspected Gran cifra survives only as Bergenroth's partial list in a manuscript not served online, and a homophonic anneal of no. 93 failed.",
-  "contribution": ["catalogue correction"],
+  "method_basis": "No key for no. 93: the two keys in print are excluded by code-initial range, no. 94's key (Brackx 2026) does not fit, the suspected Gran cifra survives only as Bergenroth's partial list in a manuscript not served online, and a homophonic anneal of no. 93 as a letter stream failed.",
+  "contribution": [
+   "catalogue correction"
+  ],
   "class": "not read",
   "fraction_read": 0,
   "key": "none",
@@ -148,19 +140,22 @@
    {
     "item": "No. 93 (f. 118r-v), whole letter",
     "blocker": "no-key-material",
-    "detail": "CVC nomenclator with atomic groups (homophonic anneal on ct93_eye.txt failed, -3.5 vs -1.8 nats); the suspected Gran cifra key survives only as Bergenroth's partial list (BNE MSS 20.211/52)"
-   },
-   {
-    "item": "No. 94 (ff. 120r-121v), whole letter",
-    "blocker": "not-attempted",
-    "detail": "never transcribed; Bergenroth's Gran-cifra list not tested against it"
+    "detail": "CVC nomenclator with atomic groups (homophonic anneal on ct93_eye.txt failed, -3.5 vs -1.8 nats); the suspected Gran cifra key survives only as Bergenroth's partial list (BNE MSS 20.211/52); no. 94's key (Brackx 2026) does not fit it"
    }
   ],
   "grades": "unknown",
   "verification": [
    "none"
   ],
-  "notes": "Attempted, open. Both letters are standard products of Ferdinand's secretariat; no shared key is claimed for them.",
-  "credits": []
+  "notes": "Attempted, open. No. 94 split off on 21 Oct 2026 (esp318no94).",
+  "credits": [
+   {
+    "who": "brackxm",
+    "role": "identification",
+    "note": "showed no. 94 is in a different key from no. 93 (no convergence with no. 94's alphabet, 7 shared code groups, different initials); the entry was split",
+    "date": "2026-10-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/62"
+   }
+  ]
  }
 }

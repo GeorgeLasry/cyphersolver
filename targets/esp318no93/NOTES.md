@@ -1,23 +1,28 @@
-# BnF Espagnol 318 nos. 93 and 94: Lorenzo Suárez (Venice, 1504) and the viceroy of Sicily (Messina, 1503) — keys not identified
+# BnF Espagnol 318 no. 93: Lorenzo Suárez (Venice, 1504) — key not identified
 
 Split on 14 Oct 2026 from `esp318` (the whole volume, catalogue no. 9) under the one-key rule (George Lasry,
-14 Oct 2026). **Attempted, not solved.** The two letters are kept together in one entry only because both are unread
-and neither key is identified: **no shared key is claimed for them**, and their code-initial bands differ. The other
+14 Oct 2026). **Attempted, not solved.** Until 21 Oct 2026 this entry also held no. 94, the viceroy of Sicily's letter
+(Messina, 1503), with no shared key claimed. Michael Brackx then recovered no. 94's alphabet and part of its code
+([issue #62](https://github.com/dbourdeau/cyphersolver/issues/62)) and found it in a different key from no. 93; the
+check here agrees (no. 93's commonest groups `gto` ×21, `pie` ×19, `heg` ×13, `zoe`, `zoc`, `hug` never occur in
+no. 94, and no. 94's `qa`, `rah`, `mny`, `qag` are absent from no. 93 except `pif` twice), so **no. 94 now has its own
+entry, [`targets/esp318no94/`](../esp318no94/NOTES.md)**, and this one covers no. 93 only. The other
 ciphered letters of Espagnol 318 are different ciphers, each with its own entry and page:
 [`targets/esp318/`](../esp318/NOTES.md) (no. 92, the *Cifra general*), [`targets/federico1497/`](../federico1497/NOTES.md)
-(no. 5, Escrivà's cipher), [`targets/esp318no95/`](../esp318no95/NOTES.md) (no. 95, Lasry's alphabet).
+(no. 5, Escrivà's cipher), [`targets/esp318no94/`](../esp318no94/NOTES.md) (no. 94, alphabet recovered by Brackx),
+[`targets/esp318no95/`](../esp318no95/NOTES.md) (no. 95, Lasry's alphabet).
 
 `ct93_eye.txt` and `solve93.py` moved here (the script now reads the Spanish model `lm.py` / `lm_tabs.pkl` from
 `targets/esp318/`). The scans (`full/f118r.jpg` … `full/f121v.jpg`), the segmentation of f. 118r
 (`f118r_glyphs.pkl`, `ov/m93a.png`) and the literature (`lit/`, with Quirantes's photographs of the Gran Capitán key
 sheets in `lit/crypt/img/`) stay in `targets/esp318/`. Session of 17 Sept 2026.
 
-## The two letters
+## The letter, and its former companion
 
 | no. | ff. | canvases | letter | code initials |
 |---|---|---|---|---|
 | 93 | 118–118v | 446–447 | Lorenzo Suárez (de Figueroa), ambassador at Venice, to the Catholic Monarchs, Venice, 24 Feb 1504. Wholly in cipher | c/g/h/l/m/n/p/q/r/t/z |
-| 94 | 120–121v | 452–455 | The viceroy of Sicily to Ferdinand, Messina, 27 Apr 1503. Spanish, clear and cipher mixed, four pages | g/l/m/n/p/r/v/z |
+| 94 | 120–121v | 452–455 | The viceroy of Sicily to Ferdinand, Messina, 27 Apr 1503. Now its own entry (`esp318no94`) | m/q/n/r/p/l (Brackx's full count; the earlier g- reading of the sample was q-) |
 
 f. 121v carries the superscription "Alto y muy poderoso prinçipe Rey y Señor", the wax seal, and a later Spanish
 endorsement written sideways in the left margin: **"Del virrey de Siçilia en çifra"**. There is no decipherment
@@ -45,6 +50,11 @@ and `muy` occurs in no. 93. That is a lead, not a demonstration: both Bergenroth
 needs a full transcription of one of the two. A second candidate, untested because unpublished: Galende Díaz's file
 BRAH 9/15 opens with **"Cifra del visorrey" (ff. 1–6)**, which he describes but does not reproduce. No. 94 is a
 viceroy's letter.
+
+**Since 21 Oct 2026** (the paragraphs above are the state of 17 Sept): Brackx's reading of no. 94 makes `mny` = de
+there, which is Bergenroth's `muy` = de, so no. 94 sits in the *Gran cifra* family. No. 93 uses `muy` only three
+times in 1,016 signs and its commonest groups begin with g- and z-, outside Bergenroth's band, so its relation to the
+*Gran cifra* is open: it may be a different key of the same office.
 
 The segmentation run over f. 118r (910 glyphs on 33 lines) makes the architecture measurable. The clean clusters
 split into two kinds. Single signs with letter-like frequencies: the p-with-loop sign in three drawings (81 tokens,
@@ -76,26 +86,24 @@ The dates, for whoever continues: no. 94 is Messina, 27 April 1503 — the day b
 
 ## Remaining gaps
 
-- No. 93 (f. 118r-v), whole letter - blocker: no-key-material; CVC nomenclator with atomic groups; the suspected Gran cifra key survives only as Bergenroth's partial list (BNE MSS 20.211/52), not online
-- No. 94 (ff. 120r-121v), whole letter - blocker: not-attempted; never transcribed; Bergenroth's Gran-cifra list not tested against it
+- No. 93 (f. 118r-v), whole letter - blocker: no-key-material; CVC nomenclator with atomic groups; the suspected Gran cifra key survives only as Bergenroth's partial list (BNE MSS 20.211/52), not online; no. 94's key (Brackx 2026) does not fit it
 
 ## Escalation
 
-- [x] siblings: all thirteen cipher folios of the volume opened; no decipherment of nos. 93-94 anywhere in it
-- [x] clear-pages: none for no. 93; the clear islands of no. 94 give context but no crib has been placed
-- [x] known-keys: Escrivà no. 1 and the Cifra general excluded by code-initial range; Bergenroth's Gran-cifra list and the 'Cifra del visorrey' not obtained or not tested
+- [x] siblings: all thirteen cipher folios of the volume opened; no decipherment of no. 93 anywhere in it; no. 94's alphabet and code, recovered by Brackx in Oct 2026, do not fit no. 93 (he reports the anneal gets worse with no. 94's shared glyph values fixed; the code inventories barely overlap)
+- [x] clear-pages: none for no. 93; it is wholly in cipher
+- [x] known-keys: Escrivà no. 1 and the Cifra general excluded by code-initial range; no. 94's key (esp318no94) tried by Brackx and not fitting; Bergenroth's Gran-cifra list not obtained
 - [x] print: Parisi 2004 and 2020, Galende Díaz 1994, Tomokiyo's Spanish-cipher and Lasry pages, Quirantes 2018
-- [ ] key-rebuild: not done — a solver that treats the CVC groups as unknown words while annealing the sign alphabet against Spanish was not built
-- [ ] retry: not done — no. 94 to be transcribed first
+- [ ] key-rebuild: not done — a solver that treats the CVC groups as unknown words while annealing the sign alphabet against Spanish was not built (Brackx re-transcribed f. 118r-v with groups as units, 998 signs and 239 groups, and offers it; his anneal did not converge, best -3.08 nats/char)
+- [ ] retry: not done
 
 ## Next step, in order
 
-1. Transcribe no. 94, ff. 120r–121v. It keeps dropping into clear (*"para poder passar esta nao la galea de allá …
-   donde llegó don Fernando de Andrada y Benavides y Carvajal y bolvióse de los aquí …"*, *"commo esto passamos en
-   anocheçiendo"*, *"En lo de la hazienda luego …"*), so every ciphered stretch has context on both sides.
-2. Test Bergenroth's Gran-cifra list against that transcription before attempting a cold break.
+1. Ask Brackx for his f. 118r-v transcription with the code groups as units (998 signs, 239 groups) and run the
+   word-unit solver on it: anneal the sign alphabet while treating each group as an unknown word.
+2. Bergenroth's Gran-cifra list (BNE MSS 20.211/52) if the BNE viewer becomes reachable; no. 93's g-/h-/z- initials
+   fall partly outside its band, so it may be a different key of the same office.
 
 ## Assumptions for George's review
 
-- Nos. 93 and 94 are one entry only as "attempted, open, key relationship not established"; the earlier "four keys"
-  count for the volume is not a verified count, and no shared key is claimed for these two.
+- No. 93 alone; no. 94 split off on 21 Oct 2026 on the code-inventory evidence (Brackx, issue #62, checked here).
