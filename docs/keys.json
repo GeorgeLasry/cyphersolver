@@ -2224,7 +2224,8 @@
    }
   },
   {"id": "k-wainut-cabinet1751", "label": "WAINUT, Frederick II's cabinet code of 1751", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "179 values rebuilt by aligning six King-to-Michell letters (Nationaal Archief 1.10.29 inv. 5177) and R1957 with their printed concepts in Politische Correspondenz 8; the first 72 values tested blind on R1957 (PR #29)."},
-  {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."}
+  {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."},
+{"id": "k-tomokiyo-threekana", "label": "Three-kana rule for the Chinese telegraph code (Tomokiyo, chinesecrypto_e2.htm)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1916, "found": 2026, "note": "Code c written as S1[c div 200], S2[(c-1) mod 10], S3[((c-1) div 10) mod 20] over the kana; found from the Huang Xing reply and the 1916 worksheets, 23 Sept 2026."}
  ],
  "links": [
 {
@@ -3478,7 +3479,8 @@
    "target": "decode4282",
    "how": "rebuilt from",
    "note": "Ciphertext-only key recovery in CTTS, followed by manuscript and cleartext-context refinement; both pages deciphered, three code signs still open."
-  }
+  },
+{"key": "k-tomokiyo-threekana", "target": "huangxing", "how": "read unchanged", "note": "Reply decoded from this project's transcription with one correction (O HI = CHI); the 20 May telegrams by Harumi-Matsuba, with spelling corrections to the romaji."}
  ],
  "sources": [
   {
@@ -4001,7 +4003,8 @@
   {
    "source": "s-lasry",
    "key": "k-lasry-gilino1527"
-  }
+  },
+{"source": "s-tomokiyo", "key": "k-tomokiyo-threekana"}
  ],
  "unlinked": {
   "devil1539": "Not a cipher: the characters are a pictorial omen (tridents); no key exists. Amadi's demon-named sign table (c. 1588) was tested as values and gives no text.",
