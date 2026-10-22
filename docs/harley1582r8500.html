@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>adjacent text</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-the-cipher">The letter and the cipher</a><a href="#rebuilding-the-key">Recovering the key</a><a href="#the-reading">The decipherment</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-the-cipher">The letter and the cipher</a><a href="#rebuilding-the-key">Recovering the key</a><a href="#the-reading">The decipherment</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> DECODE lists R8500, with no decryption, as a letter of &ldquo;&hellip;&rdquo; to an unknown recipient, London, 20 August 1586. The images show a holograph despatch in clear English signed by Sir Edward Stafford, &ldquo;Paris this xxth of August 1586&rdquo;, endorsed &ldquo;From Sr Edw. Stafford&rdquo;; the recipient is almost certainly Sir Francis Walsingham, like the sibling letter R8503. The cipher is five short runs in the postscript on f. 65v, with no glosses. Stafford&rsquo;s letter key was rebuilt from two siblings: f. 73r (R8502, September 1586), whose cipher words are glossed <i>Junius</i>, <i>Cambray</i>, <i>Balagny</i>, <i>Germany</i>; and f. 72r (R8501), a contemporary clear decipherment of the long cipher passages on f. 71. Aligned sign by sign they give a homophonic alphabet in which <code>6</code> is <i>e</i>, not a null as the R8503 runs had suggested. With it the postscript deciphers as follows: Junius&rsquo; son came from Cambrai with letters from his father and papers &ldquo;of his credit with Balagny&rdquo;; Stafford fears Balagny means them mischief. Four symbol values rest on context; nothing is left open. The letter is not calendared in CSP Foreign.</div>
 
 <h2 id="the-letter-and-the-cipher"><span class="num">01</span> The letter and the cipher</h2>
@@ -99,6 +99,24 @@
 <li>All other signs are confirmed by the sibling key (H). 61 tokens, all giving sense.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R8500, Sir Edward Stafford to [Walsingham], Paris, 20 Aug 1586, postscript f. 65v</h3>
+<p>A clear holograph despatch from Stafford in Paris about Captain Blaize, Locatello, Cambrai and a book printed at Rome by Dr Sanders; the five ciphered runs of the postscript say that Junius&#x27; son came from Cambrai with letters, about papers of his credit with Balagny (governor of Cambrai), and Stafford&#x27;s fear that Balagny means them some mischief. Key rebuilt from the glossed and deciphered sibling letters in the same volume.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8500/ciphertext.txt">ciphertext.txt</a></p><pre># DECODE R8500, BL Harley MS 1582 f. 65v, postscript; five cipher runs (sign names as in NOTES.md)
+x D h x D II II n n h 6
+f O+ n oo d x oo 24 O+ w 7 H 6
+d O+ 6 w x A D d x u λ 24 w a w h H x
+24 w a w h H x
+oo w H x h u w σ H δ h 6</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8500/plaintext.txt">plaintext.txt</a></p><pre>1  Junius sonne                (came hither Junius&#x27; son)
+2  from Cambraye
+3  credit with Balagny         (to keep of his credit with Balagny)
+4  Balagny                     (I am afraid Balagny dare them some mischief)
+5  mayntayne?                  (probable; two signs uncertain)</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8500/key.tsv">key.tsv</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8500/alignment.txt">alignment.txt</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/harley1582r8500.json"></figure>
 <!-- replay:end -->

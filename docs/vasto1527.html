@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#volume">The volume</a><a href="#prior">Checked first: existing decipherments</a><a href="#n6">No. 6: del Vasto’s December letter</a><a href="#open">What remains uncertain in no. 6</a><a href="#next">What would finish it</a><a href="#sources">Sources and files</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#volume">The volume</a><a href="#prior">Checked first: existing decipherments</a><a href="#n6">No. 6: del Vasto’s December letter</a><a href="#open">What remains uncertain in no. 6</a><a href="#next">What would finish it</a><a href="#texts">Full texts</a><a href="#sources">Sources and files</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Fran&ccedil;ais 3022 no. 6 is catalogued as an anonymous &ldquo;Rapport &hellip; &agrave; l&rsquo;empereur&rdquo;. <b>It is del Vasto&rsquo;s own letter of early December 1527.</b> George Lasry had its letter layer but not its code groups, and some of his syllable signs are paired wrongly. Code groups identified here from context, and syllable signs corrected against the manuscript, bring it from 92.6&nbsp;% with Lasry&rsquo;s key alone to <b>98.0&nbsp;% of 1,680 cipher signs, measured</b>. The plaintext is del Vasto&rsquo;s plan for moving the army out of Rome. Two other cipher pieces in the same volume use different systems and are not part of this page: del Vasto&rsquo;s letter of 27 September 1527 (no. 10, his Cipher 1, read by Lasry and Tomokiyo), and the letter to &ldquo;Garbino&rdquo; (no. 20), which is in Hieronimo Ranzo&rsquo;s initial-letter code and has <a href="ranzo1528.html">its own page</a>.
 <em>Outcome: known key (Lasry&rsquo;s) applied and extended. 98.0&nbsp;% of cipher signs measured, with ten code groups (11 signs) and nine short stretches (23 signs) open.</em>
@@ -149,6 +149,589 @@
 <h2 id="next"><span class="num">05</span> What would finish it</h2>
 <p>The work is in hand here: a full transcription of no. 19 ff.&nbsp;41&ndash;43 for more contexts of the ten open groups, and a glyph-level retranscription of no. 6 to separate the syllable signs Lasry&rsquo;s labels merge.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>No. 6, BnF fr. 3022 ff. 16v-17v, del Vasto to Charles V, [Rome, early December 1527]: George Lasry&#x27;s preliminary decryption, and this project&#x27;s reading</h3>
+<p>The Marquis del Vasto to Charles V from Rome, early December 1527, after the agreement for the Pope&#x27;s liberty: his plan to take the army out of Rome toward Tuscany, secure Siena, threaten Florence, take Perugia and the state of Urbino and pass into the Marche, with the warning that the army cannot be sustained &#x27;desta manera&#x27; without money. prior/BnF_fr3022_f16_decryption.txt is George Lasry&#x27;s preliminary letter-level decryption (cryptiana GL.htm), which also serves as the sign transcription; texts/no6_decryption.txt is this project&#x27;s current reading of the cipher runs with the code groups identified (98.0% of 1,680 tokens), and n6_reading.md its edited text of 18 Sept.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/n6_signs.tsv">n6_signs.tsv</a></p><pre># BnF fr. 3022 no. 6 (ff. 16v-17v): sign-level reading file, measured by n6_measure.py.
+# Tokens are the cipher signs of Lasry&#x27;s 2026 decryption (prior/BnF_fr3022_f16_decryption.txt, sections 16, 17a,
+# 17b, 17va, 17vb), one token per sign, in his labels: a single letter = a letter sign (value from Lasry&#x27;s key);
+# a word label (qve, de, por, con, esta, ha/te ...) = one of his two-per-syllable code signs; [xxx] = nomenclator
+# group; &lt;33&gt; &lt;12&gt; &lt;37&gt; = his &#x27;unknown&#x27; glyphs; ? = an unlabelled sign (mostly the barred sign, a stop).
+# The &#x27;_&#x27; word breaks and &lt;plaintext&gt; markers of his file are dropped. Checked against Gallica views 32-34
+# (hi/c032-c034) on 2026-09-22 where the reading turns on which glyph is written.
+# Columns: loc (Lasry section.line) | tokens | reading | status | note
+# status: r = read with Lasry&#x27;s key/labels as they stand; i = read with a value inferred from context in the
+#   18 Sept 2026 pass (n6_reading.md); n = read with a value inferred from context or a glyph check in the
+#   22 Sept 2026 pass (i and n are grade I: a code identified, or a Lasry label/letter corrected); u = not read;
+#   x = sign seen on the image but absent from Lasry&#x27;s token list (counted, not read); w = the same, read.
+# The measure counts tokens: read = r + i + n + w; fraction = read / (all tokens, x and w included).
+16.1	&lt;33&gt; s	[at]	n	&#x27;at&#x27; = clear/cipher switch marker, not text: it stands at every boundary in nos. 6 and 19 (after &#x27;Mylan.&#x27;, after &#x27;socorrido.&#x27; on f. 17r, at the ends of cipher runs on ff. 41r and 41v)
+16.1	y y por	[y y por]	u	&#x27;y y por [mq] creo&#x27;: does not join; not read
+16.2	&lt;12&gt; p	[mq]	u	&#x27;mq&#x27; word, &lt;12&gt; glyph unknown
+16.2	c r e o m a s p r e s t o s e a	creo mas presto sea	r
+16.2	fin	esto	n	boz: Lasry &#x27;fin&#x27;; = esto (5 contexts in nos. 6 and 19)
+16.2	por qve s e g v n la	porque segun la	r
+16.2	[dnh]	[dnh]	u	&#x27;segun la [dnh]&#x27;; &#x27;en [dnh] ya no se halla que comer&#x27; (no. 19) suggests Roma, which does not fit here
+16.3	no la s e g v i r a n en v e n i r t a n	no la seguiran en venir tan	r
+16.3	a a &lt;33&gt; i n t e	adelante	n	&#x27;bbato&#x27; + t e on the image; = adelante as spelled in 16.8; transcription or scribal slip
+16.3	no qve d a n d o	no quedando	r
+16.4	en lo b a r d i a e x e r c i t o	en Lombardia exercito	r
+16.4	[bet] s	dellos	n	bet = dello: &#x27;exercito dellos tan pujante&#x27;; no. 19 f. 41v &#x27;el poco cuidado que [bet] he&#x27; (= dello)
+16.4	t a n p v i a n t e qve p v d i e s e r e s i s t i r a v n a g r v e s a b a n d a	tan pujante que pudiese resistir a una gruesa banda	r
+16.5	al	de	n	glyph &#x27;bis&#x27; (de); Lasry &#x27;al&#x27;
+16.5	a l e m a n e s qve p o d r i a	alemanes que podria	r
+16.6	al	el	i	glyph &#x27;bie&#x27; = el (el bolver, el quedar, el camino, el exercito)
+16.6	r e i de v n g r i a por	rey de Ungria por	r
+16.6	[di]	mandado	i	&#x27;por [di] de V. M.&#x27;
+16.6	de [title1] [title2]	de V. M.	r
+16.7	ha/te n e r b a x a r en	hazer baxar en	r
+16.7	[coy]	Italia	i	&#x27;hazer baxar en [coy]&#x27; (Germans brought down by the King of Hungary)
+16.7	?	.	n	barred stop sign before &#x27;y&#x27;
+16.7	y s v c e d i e n d o y ha/te ll a n d o s e	y sucediendo y hallandose	r
+16.8	con s	ellos	n	glyph &#x27;bopt&#x27; (Lasry &#x27;con s&#x27;); = ellos in both places (16.8, 17b.14); plain &#x27;bop&#x27; = como
+16.8	p a s a d o s	pasados	r
+16.8	con	tan	n	glyph &#x27;bar&#x27; = tan (also &#x27;tenemos tan cerca&#x27;, 17b.9)
+16.8	a de la n t e c r e o qve t e r n i a n d i f i c v l t o s o	adelante creo que ternian dificultoso	r
+16.9	al	el	i	bie = el
+16.9	b o l v e r y qve m a s	bolver y que mas	r
+16.9	al	el	i	bie = el
+16.9	qve d a r y	quedar y	r
+16.9	[bnq]	[bnq]	u	&#x27;el quedar y [bnq] y finalmente no podrian ...&#x27;
+16.9	y	y	r
+17a.1	&lt;37&gt;	final	n	&lt;37&gt; (ʃ-like sign) = final(mente); &#x27;y finalmente yo veo&#x27;, &#x27;y finalmente el exercito esta&#x27; in no. 19
+17a.1	m e n t e no p o d r i a n s i n o e s p e r a r g r a n p e r d i d a y por	mente no podrian sino esperar gran perdida y por	r
+17a.2	fin	esto	n	boz = esto: &#x27;y por esto pienso&#x27;
+17a.2	p i e n s o qve qve r a n	pienso que querran	r
+17a.2	[baf]	primero	i
+17a.2	a c a b a r lo de lo n b a r d i a qve ha/te n e r o t r o c a m i n o y	acabar lo de Lombardia que hazer otro camino y	r
+17a.5	&lt;33&gt; s p l &lt;33&gt;	[at quia]	w	&#x27;at quia&#x27; on the image after &#x27;socorrido.&#x27;, before the cipher (Lasry put it in &lt;plaintext&gt;); both switch markers (&#x27;quia&#x27; also before the cipher at 17b.1 and on f. 41r)
+17a.5	es g a n a r en	es ganar en	r
+17a.5	al	el	i	bie = el
+17a.5	c a m i n o a	camino a	r
+17a.6	[rar]	[rar]	u	&#x27;ganar en el camino a [rar] y ponella debaxo el mando de V. M.&#x27;: Florencia or Luca, not decided (cac = Florencia)
+17a.6	y p o n e ll a de b a x o el m a n d o de [title1] [title2] qve en	y ponella debaxo el mando de V. M. que en	r
+17a.7	fin s	estos	n	boz = esto
+17a.7	[dop] s	tiempos	n	dop = tiempo (&#x27;si el [tiempo] que ya entra fuerte no lo estorva&#x27;, no. 19)
+17a.7	es	es	r
+17a.7	e n de la s lo s	[en delas los]	u	&#x27;es en de las los que mas se ha de trabajar&#x27;: &#x27;es [una] de las [cosas]&#x27;? not read
+17a.7	qve m a s s e ha/te de t r a b a i a r de a c a b a r s e p v e s	que mas se ha de trabajar de acabarse pues	r
+17a.8	[bad]	basta	i	&#x27;[bad]ra a sustentar&#x27; = bastara
+17a.8	r a a s v s t e n t a r	ra a sustentar	r
+17a.8	al	el	i	bie = el
+17a.9	e x e r c i t o qve es por lo m a s p r i n c i p a l y la qve [title1] [title2]	exercito que es por lo mas principal y la que V. M.	r
+17a.10	[bas]	deve	i	&#x27;la que V. M. [bas] mas desear&#x27; (deve or puede)
+17a.10	m a s de s e a r y	mas desear y	r
+17b.1	p l &lt;33&gt; ?	[quia] .	n	&#x27;quia&#x27; + barred stop: switch marker before the cipher (as on f. 17r and f. 41r)
+17b.1	al	el	i	bie = el
+17b.1	[biq]	duque	i
+17b.1	d v r b i n o	de Urbino	r
+17b.1	es de	[es de]	u	&#x27;el duque de Urbino [es de] otro exercito&#x27;: expected &#x27;con el&#x27;; not read
+17b.1	[da]	otro	n	da = otro: &#x27;no[da]s&#x27; = nosotros (no. 19), &#x27;no hiziesen [otro] fruto&#x27; (no. 19)
+17b.1	e x e r c i t o esta e n a r n i y t o d r i t i e r a s el p a t r i m o n i o es	exercito esta en Narni y Todi, tierras del Patrimonio, es	r
+17b.2	[der]	poca	i	&#x27;es [der] gente&#x27;, &#x27;se hallara [der] resistencia&#x27;
+17b.2	g e n t e y	gente y	r
+17b.2	[raq]	mi	i
+17b.3	p a r e c e r es	parecer es	r
+17b.3	[baf]	primero	i
+17b.3	qve s a l g a el e x e r c i t o qve s e p r o v e s i e n a la	que salga el exercito que se provea Siena la	r
+17b.4	[dnd]	qual	i
+17b.4	es m v i de v o t a de [title1] [title2] y y en esta	es muy devota de V. M. y en esta	r
+17b.5	[bim]	empresa	i
+17b.5	s e r v i r a	servira	r
+17b.5	qve de con	[que de con]	u	&#x27;servira [que de con] mil [cny]&#x27;: not read
+17b.5	[cip]	mil	i	cip = mil (&#x27;[biz] [cip] [ceg]s&#x27; = N mil hombres, no. 19)
+17b.5	[cny]	[cny]	u
+17b.5	qve en v e r d a d lo s t e n e m o s a ll e s por t e n e ll a s e g v r a y	que en verdad los tenemos a ellos por tenella segura y	r
+17b.6	?	.	n	stop
+17b.6	y	y	r
+17b.6	[dod]	quando	i
+17b.6	s a l g a	salga	r
+17b.6	al	el	i	bie = el
+17b.7	e x e r c i t o i r a	exercito ira	r
+17b.7	qve l	[que l]	u	&#x27;ira [que l] camino&#x27;: &#x27;por el camino&#x27; expected; not read
+17b.7	c a m i no por qve no f a l t a r a n b i t v a ll a s y s e r a p o n e r es p a n t o a	camino porque no faltaran vituallas y sera poner espanto a	r
+17b.8	[car]	[car]	u	&#x27;poner espanto a [car]&#x27;: los florentinos? not decided
+17b.8	y o c a s i o n a	y ocasion a	r
+17b.9	fin s	estos	n	boz = esto
+17b.9	e n e m i g o s qve t e n e m o s	enemigos que tenemos	r
+17b.9	con	tan	n	bar = tan
+17b.9	c e r c a de ha/te n e ll e s ha/te n e r	cerca de hazelles hazer	r
+17b.10	[bny]	[bny]	u	&#x27;hazer [bny] un movimiento&#x27;
+17b.10	v n m o v i m i e n t o y qve qve s i v e r a n qve s e v a s o b r e	un movimiento y que si veran que se va sobre	r
+17b.11	[cac]	Florencia	i	&#x27;se va sobre [cac] creen que iran a socorrella&#x27;; &#x27;no tienen gente para defender [cac]&#x27;
+17b.11	c r e n qve i r a n a s o c o r e ll a qve lo p v e de s ha/te n e r y s i lo	creen que iran a socorrella que lo pueden hazer y si lo	r
+17b.12	i	s	n	sign t (I or S in the key): &#x27;si los recogeran&#x27;
+17b.12	r e c o g e r a n qve p o d r i a s e r qve no	recogeran que podria ser que no	r
+17b.13	?	.	n	stop
+17b.13	p o d r a i r	podra ir	r
+17b.13	al	el	i	bie = el
+17b.13	e x e r c i t o la	exercito la	r
+17b.13	[bog]	buelta	i
+17b.13	de p e r o s a qve s e ha/te ll a r a de s p r o v e i d a por qve	de Perosa que se hallara desproveida porque	r
+17b.14	con s	ellos	n	glyph &#x27;bopt&#x27; = ellos
+17b.14	no	no	r
+17b.14	[dab]	tiene	n	&#x27;[dab]n gente&#x27; = tienen; cf. das &#x27;el exercito que [das]n aca cerca&#x27; (no. 19)
+17b.14	n g e n t e p a r a de f e n de	n gente para defender	r
+17b.15	[cac]	Florencia	i
+17b.15	y de x a r g v a r n e c i d a la d i c h a p e r o s a qve es v n a t i e r a el p a t r i m o n i o m v i	y dexar guarnecida la dicha Perosa que es una tierra del Patrimonio muy	r
+17va.2	[bag]	rica	i	&#x27;muy [bag] y muy gruesa&#x27;
+17va.2	y m v i g r v e s a y la p r i n c i p a l de	y muy gruesa y la principal de	r
+17va.2	[der] de	[der de]	u	&#x27;la principal de [der] de pais&#x27;: der = poca elsewhere does not fit; not read
+17va.2	p a i s qve c i e r t a m e n t e s e t o m a r a	pais que ciertamente se tomara	r
+17va.3	&lt;37&gt;	finalmente	n	&lt;37&gt; = final(mente), as 17a.1
+17va.3	y de x a n d o s e p r o v e i d a s e p v e de	y dexandose proveida se puede	r
+17va.4	s	i	n	sign t read I: &#x27;se puede ir al estado&#x27;
+17va.4	r a ll	r al	r
+17va.4	[boq]	estado	i
+17va.4	de v r b i n o y t o m a ll o en	de Urbino y tomallo en	r
+17va.5	al	el	i	bie = el
+17va.5	[dnd]	qual	i
+17va.5	se?	se	r
+17va.5	ha/te ll a r a	hallara	r
+17va.5	[der]	poca	i
+17va.5	r e s i s t e n c i a y p a s e r e n la	resistencia y pasaren la	r
+17va.6	[deh]	Marca	i	&#x27;su camino es por la [deh] porque traen su artilleria por agua hasta Ravena&#x27; (no. 19)
+17va.6	d o n de no p v e de n f a l t a r v i t v a ll a s y	donde no pueden faltar vituallas y	r
+17va.7	sin	mas	i	bab = mas: &#x27;y de[mas] pasaren&#x27;, &#x27;y de[mas] tienen el camino&#x27; (no. 19)
+17va.7	s e p o d r a v e r lo qve ha/te n e	se podra ver lo que haze	r
+17va.7	al	el	i	bie = el
+17va.7	e x e r c i t o qve esta en lo b a r d i a s i c a m i n a r a e n	exercito que esta en Lombardia si caminara en	r
+17va.8	no	[cnt]	u	glyph &#x27;cnt&#x27;, not the &#x27;cnz&#x27; of no; &#x27;en [cnt] parte se puede esperar&#x27;: ninguna or otra, not decided
+17va.8	p a r t e s e p v e de e s p e r a r	parte se puede esperar	r
+17va.9	es	[es]	u	&#x27;esperar [es] mas ventaja&#x27;: not read
+17va.9	m a s v e n t a i a por qve es f v e r a el r e i n o y e n p a r t e qve s e g v a r d a	mas ventaja porque es fuera del reino y en parte que se guarda	r
+17va.10	con	como	i	glyph &#x27;bop&#x27; = como (also 17vb.4, 17vb.8, 17vb.10)
+17va.10	s i s e e s t v t i e s e	si se estuviese	r
+17va.11	al	el	i	bie = el
+17va.11	e x e r c i t o de n t r o	exercito dentro	r
+17va.11	[ge+]	[ge+]	u	after &#x27;dentro&#x27; and before &#x27;y&#x27;; also after clear text before &#x27;y piensase&#x27; (no. 19); a stop? not read
+17va.11	y s i p e r s e v e r a	y si persevera	r
+17va.11	&lt;37&gt;	r	n	the glyph is ſ (r), not &lt;37&gt;: &#x27;perseverara&#x27;
+17va.11	a e n lo de lo n b a r d i a p o d r a s e i r m a s f a c i l m e n t e a s o c o r e ll a	a en lo de Lombardia podrase ir mas facilmente a socorrella	r
+17va.13	[beb]	[beb]	u	&#x27;socorrella [beb] porque es mejor el camino&#x27;
+17va.13	por qve e s m e i o r e l c a m i n o y m a s a b v n d a n t e de b i t v a ll a s	porque es mejor el camino y mas abundante de vituallas	r
+17va.14	&lt;37&gt;	finalmente	n	&lt;37&gt; = final(mente)
+17va.14	s i no lo s s v i s s e s e n a c o i e r e n	si no los suyços se acogieren	r
+17va.15	[rar]	[rar]	u
+17va.15	p o d r a s e t o m a r a p v n t a m i e n t o	podrase tomar apuntamiento	r
+17va.15	es [bnc]	[es bnc]	u	&#x27;tomar apuntamiento [es] [bnc]&#x27;; bnc also &#x27;podran llegar [es] [bnc]&#x27; (no. 19); not read
+17vb.1	y de	y de	r
+17vb.1	sin	mas	i	bab = mas: demas
+17vb.1	p a s a r e n lo n b a r d i a y	pasaren Lombardia y	r
+17vb.1	es	en	n	glyph bep here = en (&#x27;y en todo&#x27;); see 17vb.4-8
+17vb.1	t o d o no de x a r e de de n i r a [title1] [title2] qve el e x e r c i t o por lo de a d v e n i r no s e p v e de s o s t e n e r de esta m a n e r a y qve [title1] [title2] p i e n t e	todo no dexare de dezir a V. M. que el exercito por lo de advenir no se puede sostener desta manera y que V. M. piense	r
+17vb.4	con	como	i	bop = como
+17vb.4	por o t r a s l e	por otras le	r
+17vb.4	[det]	he	i
+17vb.4	e s c r i t o y o	escrito y o	r
+17vb.4	es	en	n	bep = en: &#x27;y o en alguna manera de dinero o en hazelles la guerra&#x27;
+17vb.4	a l g v n a m a n e r a de	alguna manera de	r
+17vb.5	[dnb]	dinero	i
+17vb.5	o	o	r
+17vb.5	es	en	n	bep = en
+17vb.5	ha/te n e ll e s la g v e r a de la m a n e r a qve s e de v e ha/te n e r de p o n e ll o s e n e l a p r i e t o qve e ll o s la de m a n de n y qve qve c r e a [title1] [title2] qve	hazelles la guerra de la manera que se deve hazer de ponellos en el aprieto que ellos la demanden y que crea V. M. que	r
+17vb.8	es	en	n	bep = en: &#x27;que en tantas faltas como ay&#x27;
+17vb.8	t a n t a s f a l t a s	tantas faltas	r
+17vb.8	con	como	i	bop = como
+17vb.8	a i e n e s t e e x e r c i t o y t a n t a s m i s e r i a s e s i n p o s i b l e qve e l s e r v i c i o de [title1] [title2] s e ha/te g a	ay en este exercito y tantas miserias es imposible que el servicio de V. M. se haga	r
+17vb.10	con	como	i	bop = como
+17vb.10	s v s f i e l e s v a s a ll o s de s e a m o s y	sus fieles vasallos deseamos y	r
+17vb.11	?	.	n	stop before the clear close</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/prior/BnF_fr3022_f16_decryption.txt">BnF_fr3022_f16_decryption.txt</a></p><pre>(UTF-8)
+Preliminary decryption of the ciphertext in letters including one from Marquis of Gasto to Emperor Charles V (6 November 1527)
+provided by George Lasry
+BnF fr.3022 f.16, 40-43
+See https://cryptiana.web.fc2.com/code/GL.htm#SEC3
+
+# 16.jpg
+&lt;33&gt; s y y por 
+&lt;12&gt; p c r e o _ m a s _ p r e s t o _ s e a _ fin por qve _ s e g v n _ la [dnh] 
+no la _ s e g v i r a n _ en _ v e n i r _ t a n _ a a &lt;33&gt; i n t e _ no qve d a n d o 
+en lo b a r d i a _ e x e r c i t o _ [bet] s _ t a n _ p v i a n t e _ qve 
+p v d i e s e _ r e s i s t i r a _ v n a _ g r v e s a _ b a n d a al a l e 
+m a n e s _ qve _ p o d r i a al r e i _ de _ v n g r i a _ por [di] de [title1] [title2] 
+ha/te n e r _ b a x a r _ en [coy] ? y _ s v c e d i e n d o y _ ha/te ll a n d o s e 
+con s _ p a s a d o s _ con _ a de la n t e _ c r e o _ qve t e r n i a n _ d i f i 
+c v l t o s o _ al _ b o l v e r y _ qve _ m a s _ al _ qve d a r y _ [bnq] _ y 
+
+# 17a.jpg
+&lt;37&gt; m e n t e _ no p o d r i a n _ s i n o e s p e r a r g r a n _ p e r d i d a _ y 
+por fin _ p i e n s o _ qve _ qve r a n _ [baf] _ a c a b a r _ lo _ de _ lo n b a r d i a 
+qve _ ha/te n e r _ o t r o _ c a m i n o y _ &lt;plaintext&gt; 
+&lt;plaintext&gt; 
+&lt;plaintext&gt; es g a n a r en al c a m i 
+n o a _ [rar] y p o n e ll a de b a x o _ el m a n d o _ de [title1] [title2] _ qve 
+en fin s _ [dop] s _ es _ e n _ de la s _ lo s _ qve _ m a s _ s e ha/te _ de 
+t r a b a i a r _ de a c a b a r s e _ p v e s _ [bad] r a a _ s v s t e n t a r al 
+e x e r c i t o _ qve _ es _ por _ lo m a s _ p r i n c i p a l _ y _ la qve _ [title1] 
+[title2] _ [bas] _ m a s _ de s e a r y &lt;plaintext&gt; 
+
+# 17b.jpg
+p l &lt;33&gt; ? _ al [biq] _ d v r b i n o _ es de _ [da] e x e r c i t o esta e n a r n i 
+y t o d r i _ t i e r a s _ el _ p a t r i m o n i o _ es _ [der] _ g e n t e _ y [raq] 
+p a r e c e r es [baf] qve s a l g a _ el _ e x e r c i t o _ qve _ s e p r o v e 
+s i e n a la _ [dnd] es _ m v i _ de v o t a _ de [title1] [title2] y y _ en esta 
+[bim] _ s e r v i r a _ qve de _ con _ [cip] [cny] qve en v e r d a d _ lo s t e n e 
+m o s _ a ll e s _ por t e n e ll a _ s e g v r a _ y ? _ y [dod] _ s a l g a al 
+e x e r c i t o _ i r a qve l c a m i no _ por qve no f a l t a r a n b i 
+t v a ll a s _ y _ s e r a _ p o n e r _ es p a n t o a [car] y o c a s i o n a 
+fin s _ e n e m i g o s _ qve _ t e n e m o s con c e r c a de ha/te n e ll e s 
+ha/te n e r [bny] v n m o v i m i e n t o _ y qve _ qve _ s i v e r a n qve 
+s e v a s o b r e [cac] _ c r e n _ qve _ i r a n _ a s o c o r e ll a _ qve lo 
+p v e de s ha/te n e r y _ s i lo i _ r e c o g e r a n _ qve p o d r i a _ s e r qve 
+no ? p o d r a _ i r al e x e r c i t o _ la [bog] de _ p e r o s a _ qve 
+s e ha/te ll a r a _ de s p r o v e i d a _ por qve _ con s no _ [dab] n g e n t e 
+p a r a de f e n de _ [cac] _ y _ de x a r _ g v a r n e c i d a la d i c h a 
+
+# 17va.jpg
+p e r o s a _ qve es v n a t i e r a _ el _ p a t r i m o n i o _ m v i 
+[bag] y _ m v i _ g r v e s a _ y _ la _ p r i n c i p a l _ de _ [der] de p a i s 
+qve c i e r t a _ m e n t e _ s e t o m a r a _ &lt;37&gt; y de x a n d o s _ e 
+p r o v e i d a _ s e p v e de s r a ll _ [boq] de _ v r b i n o y t o m a ll o 
+en al [dnd] se? ha/te ll a r a _ [der] _ r e s i s t e n c i a _ y _ p a s e r 
+e n la [deh] d o n de no p v e de n _ f a l t a r _ v i t v a ll a s _ y 
+sin _ s e _ p o d r a v e r lo qve ha/te n e _ al _ e x e r c i t o qve _ esta 
+en lo b a r d i a _ s i _ c a m i n a r a _ e n _ no _ p a r t e _ s e _ p v e de 
+e s p e r a r _ es _ m a s _ v e n t a i a _ por qve es _ f v e r a el _ r e i n o 
+y e n _ p a r t e _ qve s e g v a r d a _ con _ s i _ s e _ e s t v t i e s e 
+al e x e r c i t o _ de n t r o _ [ge+] _ y s i p e r s e _ v e r a &lt;37&gt; a e n lo _ de 
+lo n b a r d i a _ p o d r a s e i r _ m a s _ f a c i l _ m e n t e _ a _ s o c o r e 
+ll a [beb] por qve _ e s _ m e i o r e l _ c a m i n o _ y _ m _ a s _ a b v n 
+d a n t e de _ b i t v a ll a s _ &lt;37&gt; _ s i no _ lo s s v i s s e s e n _ a c o 
+i e r e n _ [rar] _ p o d r a s _ e t o m a r _ a p v n t a m i e n t o _ es _ [bnc] 
+
+# 17vb.jpg
+y _ de sin _ p a s a r e n _ lo n b a r d i a _ y es _ t o d o _ no _ de x a r e de 
+de n i r a [title1] [title2] qve el _ e x e r c i t o _ por _ lo de _ a d v e n i r 
+no s e _ p v e de _ s o s t e n e r de _ esta _ m a n e r a _ y qve _ [title1] [title2] 
+p i e n t e _ con por _ o t r a s l e _ [det] _ e s c r i t o _ y o es _ a l g v 
+n a m a n e r a de _ [dnb] _ o _ es _ ha/te n e ll e s _ la g v e r a de 
+la m a n e r a _ qve _ s e _ de v e _ ha/te n e r _ de _ p o n e ll o s _ e n e l 
+a p r i e t o _ qve _ e ll o s _ la de m a n de n y _ qve _ qve _ c r e a _ [title1] 
+[title2] _ qve es _ t a n t a s f a l t a s _ con _ a i _ e n e s t e _ e x e r 
+c i t o _ y _ t a n t a s _ m i s e r i a s _ e s _ i n p o s i b l e _ qve e l 
+s e r v i c i o _ de _ [title1] [title2] _ s e _ ha/te g a _ con _ s v s f i e l e s _ v a 
+s a ll o s _ de _ s e a m o s y ? &lt;plaintext&gt; 
+
+# 40.jpg
+&lt;plaintext&gt; &lt;37&gt; _ s e g v n _ el _ se? _ en t i e n para [bi] por 
+v i a _ de _ [dum] _ s a n t i d a d _ con _ por _ o t r a s i n t i l i g e n c i a _ s 
+es _ qve por v t r e qve a de x es _ s o b r e [cnn] [biz] [cip] [ceg] s [bns] s 
+[dec] s de _ f r a n c i s c o _ e s f o r c i a _ es _ a ll _ g v n a _ [cof] _ c a v a ll o 
+n o _ por _ qve _ s e a n _ p a r t e _ de _ t o m a ll a _ m a i _ por _ e s t o r v a r 
+qve _ n o _ p v e d a n _ p r o v e e r s e _ de _ m a s _ b i t v a ll a s _ para la s 
+qve _ s e _ h a ll a n _ de n t r o _ y _ es _ e l _ r e s t o _ el _ e x e r c i t o 
+d i n e n _ qve _ c a m i n a _ la _ [bog] _ el _ r e i n o _ y _ qve _ s v _ c a m i n o es 
+por _ la _ [deh] _ por _ qve _ t r a e n _ s v _ a r t i ll e r i a _ por _ a g v a ha/te s t a 
+r e v e n a _ y _ de sin _ t i _ e n e n _ e l _ c a m i n o _ m v i _ a ll e _ y _ ll a n o 
+y _ p r e s t o _ p o d r a n _ ll e g a r es [bnc] _ d o n _ de _ no _ p v e d a n _ ha/te n e r 
+
+# 40va.jpg
+&lt;plaintext&gt; _ [ge+] y _ p i e n s a s e _ qve [doz] 
+s e r a _ [dor] _ i r _ s o b r e l _ r e i n o _ [don] _ al _ [dop] _ qve _ y a _ en t r a _ f v e r t e 
+n o _ lo _ es t o r v a _ y _ el _ e x e r c i t o _ qve [das] n _ a c a _ c e r c a para 
+no [da] s _ esta t o d a _ v i a _ f i r m e _ y _ c r e o _ es _ p e n s a m i e n t o qve 
+[don] _ no [dn] s _ c a m i n a m o s _ por _ [bog] _ de _ no _ de _ v e n i r s e a c a 
+p v e s _ no [dn] s _ n o _ p o de m o s _ i r _ s o b r e ll o s _ por _ la s _ [coq] s 
+f a l t a s _ qve _ a s _ en _ el _ e x e r c i t o _ qve _ e n v e r d a d _ s o n [daz] s 
+qve _ [cit] _ la s _ p o d r i a _ a c a b a r _ de _ de n i r a _ [title1] _ [title2] y _ [bac] _ en 
+[dnh] _ i a _ no _ s e _ ha/te ll a _ qve _ c o m e r _ n i p v e de _ la _ g e n t e 
+esta r _ m a s _ v n _ d i a _ y _ f v e r a _ en _ esta s _ t i e r a s _ en v e n i n a s 
+no se? _ ha/te ll a v n _ p a n _ por qve [bi] para lo s _ [rat] s _ con de lo s _ e n e 
+m i g o s _ a n s i d o _ r v i n a d a s _ r o b a d a s _ y _ de s t e v i d a s _ y _ en 
+a l g v n a s _ qve _ s e ha/te ll a r i a _ esta n por _ lo s _ e n e m i g o s _ qve no 
+s e r a _ m e n e s t e r _ t o m a ll a s _ por _ f v e r c a _ y _ &lt;37&gt; _ el _ e x e r c i 
+t o _ esta de m a n e r a _ qve no se? _ p v e de _ m o v e r _ [cez] d a r v n _ p a s o 
+
+# 40vb.jpg
+es al por qve a i _ f a l t a de a r t i ll e r i a _ b i t v a ll a s g a s 
+t es r e s _ y _ [de] s c s e n t [cip] lo s qve [dor] c a m i n a r v n e x e r 
+c i t o _ se? _ r e [daf] n _ y esta _ [cef] _ ha/te _ v e n i d o _ en _ v n _ n v m e r o 
+t a n _ [dar] _ qve s _ la _ [cop] _ la s _ t i m a _ el _ m v n d o v e ll o s 
+por qve la _ p e s t i l e n c i a _ lo s ha/te t r a t a d o qve para 
+y en v e r d a d _ c r e n qve [cm] ll e g a n a [bom] y c i n c v e n t a 
+y fin s t a n _ para _ p a g a d o s _ qve _ t o d o s _ d a n e n qve no [daf] n 
+s e r m a s _ [ceg] s _ d a r m a s _ y _ con esta r en esta t i e r a _ c a d a 
+d i a _ s e r v i n a s _ m a s _ y _ s a _ esta v a n [dor] i r s e a l _ r e i n o 
+de de s e s p e r a d o s _ y &lt;37&gt; _ [fn] _ v e o _ esta s _ lo s _ de _ [coh] _ [boe] a r para 
+m v i _ para a r t e _ y _ v e o _ qve s _ e n e m i g o s y _ [dar] s [bib] s _ y _ [don] 
+al e x e r c i t o qve t r a e por v t r e qve _ y _ la _ a r m a d a de m a r 
+i r a _ a l _ r e i n o _ c r e a _ [title1] [title2] _ qve [fn] _ p i e n s o _ qve _ ha/te ll a r a n _ [dar] 
+de f e n s a _ y _ [dod] _ no _ &lt;44&gt; i n s e s e n _ [da] f r v t o _ qve _ ha/te _ n e r 
+i r el _ e x e r c i t o [beb] _ qve _ para _ s e _ p o d r i a n de f e n de r _ de _ [de] 
+
+# 41a.jpg
+(not transcribed)
+# 41b.jpg
+(not transcribed)
+# 41va.jpg
+(not transcribed)
+# 41vb.jpg
+(not transcribed)
+# 42a.jpg
+(not transcribed)
+# 42b.jpg
+(not transcribed)</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/prior/BnF_fr3022_f16_decryption.txt">BnF_fr3022_f16_decryption.txt</a></p><pre>(UTF-8)
+Preliminary decryption of the ciphertext in letters including one from Marquis of Gasto to Emperor Charles V (6 November 1527)
+provided by George Lasry
+BnF fr.3022 f.16, 40-43
+See https://cryptiana.web.fc2.com/code/GL.htm#SEC3
+
+# 16.jpg
+&lt;33&gt; s y y por 
+&lt;12&gt; p c r e o _ m a s _ p r e s t o _ s e a _ fin por qve _ s e g v n _ la [dnh] 
+no la _ s e g v i r a n _ en _ v e n i r _ t a n _ a a &lt;33&gt; i n t e _ no qve d a n d o 
+en lo b a r d i a _ e x e r c i t o _ [bet] s _ t a n _ p v i a n t e _ qve 
+p v d i e s e _ r e s i s t i r a _ v n a _ g r v e s a _ b a n d a al a l e 
+m a n e s _ qve _ p o d r i a al r e i _ de _ v n g r i a _ por [di] de [title1] [title2] 
+ha/te n e r _ b a x a r _ en [coy] ? y _ s v c e d i e n d o y _ ha/te ll a n d o s e 
+con s _ p a s a d o s _ con _ a de la n t e _ c r e o _ qve t e r n i a n _ d i f i 
+c v l t o s o _ al _ b o l v e r y _ qve _ m a s _ al _ qve d a r y _ [bnq] _ y 
+
+# 17a.jpg
+&lt;37&gt; m e n t e _ no p o d r i a n _ s i n o e s p e r a r g r a n _ p e r d i d a _ y 
+por fin _ p i e n s o _ qve _ qve r a n _ [baf] _ a c a b a r _ lo _ de _ lo n b a r d i a 
+qve _ ha/te n e r _ o t r o _ c a m i n o y _ &lt;plaintext&gt; 
+&lt;plaintext&gt; 
+&lt;plaintext&gt; es g a n a r en al c a m i 
+n o a _ [rar] y p o n e ll a de b a x o _ el m a n d o _ de [title1] [title2] _ qve 
+en fin s _ [dop] s _ es _ e n _ de la s _ lo s _ qve _ m a s _ s e ha/te _ de 
+t r a b a i a r _ de a c a b a r s e _ p v e s _ [bad] r a a _ s v s t e n t a r al 
+e x e r c i t o _ qve _ es _ por _ lo m a s _ p r i n c i p a l _ y _ la qve _ [title1] 
+[title2] _ [bas] _ m a s _ de s e a r y &lt;plaintext&gt; 
+
+# 17b.jpg
+p l &lt;33&gt; ? _ al [biq] _ d v r b i n o _ es de _ [da] e x e r c i t o esta e n a r n i 
+y t o d r i _ t i e r a s _ el _ p a t r i m o n i o _ es _ [der] _ g e n t e _ y [raq] 
+p a r e c e r es [baf] qve s a l g a _ el _ e x e r c i t o _ qve _ s e p r o v e 
+s i e n a la _ [dnd] es _ m v i _ de v o t a _ de [title1] [title2] y y _ en esta 
+[bim] _ s e r v i r a _ qve de _ con _ [cip] [cny] qve en v e r d a d _ lo s t e n e 
+m o s _ a ll e s _ por t e n e ll a _ s e g v r a _ y ? _ y [dod] _ s a l g a al 
+e x e r c i t o _ i r a qve l c a m i no _ por qve no f a l t a r a n b i 
+t v a ll a s _ y _ s e r a _ p o n e r _ es p a n t o a [car] y o c a s i o n a 
+fin s _ e n e m i g o s _ qve _ t e n e m o s con c e r c a de ha/te n e ll e s 
+ha/te n e r [bny] v n m o v i m i e n t o _ y qve _ qve _ s i v e r a n qve 
+s e v a s o b r e [cac] _ c r e n _ qve _ i r a n _ a s o c o r e ll a _ qve lo 
+p v e de s ha/te n e r y _ s i lo i _ r e c o g e r a n _ qve p o d r i a _ s e r qve 
+no ? p o d r a _ i r al e x e r c i t o _ la [bog] de _ p e r o s a _ qve 
+s e ha/te ll a r a _ de s p r o v e i d a _ por qve _ con s no _ [dab] n g e n t e 
+p a r a de f e n de _ [cac] _ y _ de x a r _ g v a r n e c i d a la d i c h a 
+
+# 17va.jpg
+p e r o s a _ qve es v n a t i e r a _ el _ p a t r i m o n i o _ m v i 
+[bag] y _ m v i _ g r v e s a _ y _ la _ p r i n c i p a l _ de _ [der] de p a i s 
+qve c i e r t a _ m e n t e _ s e t o m a r a _ &lt;37&gt; y de x a n d o s _ e 
+p r o v e i d a _ s e p v e de s r a ll _ [boq] de _ v r b i n o y t o m a ll o 
+en al [dnd] se? ha/te ll a r a _ [der] _ r e s i s t e n c i a _ y _ p a s e r 
+e n la [deh] d o n de no p v e de n _ f a l t a r _ v i t v a ll a s _ y 
+sin _ s e _ p o d r a v e r lo qve ha/te n e _ al _ e x e r c i t o qve _ esta 
+en lo b a r d i a _ s i _ c a m i n a r a _ e n _ no _ p a r t e _ s e _ p v e de 
+e s p e r a r _ es _ m a s _ v e n t a i a _ por qve es _ f v e r a el _ r e i n o 
+y e n _ p a r t e _ qve s e g v a r d a _ con _ s i _ s e _ e s t v t i e s e 
+al e x e r c i t o _ de n t r o _ [ge+] _ y s i p e r s e _ v e r a &lt;37&gt; a e n lo _ de 
+lo n b a r d i a _ p o d r a s e i r _ m a s _ f a c i l _ m e n t e _ a _ s o c o r e 
+ll a [beb] por qve _ e s _ m e i o r e l _ c a m i n o _ y _ m _ a s _ a b v n 
+d a n t e de _ b i t v a ll a s _ &lt;37&gt; _ s i no _ lo s s v i s s e s e n _ a c o 
+i e r e n _ [rar] _ p o d r a s _ e t o m a r _ a p v n t a m i e n t o _ es _ [bnc] 
+
+# 17vb.jpg
+y _ de sin _ p a s a r e n _ lo n b a r d i a _ y es _ t o d o _ no _ de x a r e de 
+de n i r a [title1] [title2] qve el _ e x e r c i t o _ por _ lo de _ a d v e n i r 
+no s e _ p v e de _ s o s t e n e r de _ esta _ m a n e r a _ y qve _ [title1] [title2] 
+p i e n t e _ con por _ o t r a s l e _ [det] _ e s c r i t o _ y o es _ a l g v 
+n a m a n e r a de _ [dnb] _ o _ es _ ha/te n e ll e s _ la g v e r a de 
+la m a n e r a _ qve _ s e _ de v e _ ha/te n e r _ de _ p o n e ll o s _ e n e l 
+a p r i e t o _ qve _ e ll o s _ la de m a n de n y _ qve _ qve _ c r e a _ [title1] 
+[title2] _ qve es _ t a n t a s f a l t a s _ con _ a i _ e n e s t e _ e x e r 
+c i t o _ y _ t a n t a s _ m i s e r i a s _ e s _ i n p o s i b l e _ qve e l 
+s e r v i c i o _ de _ [title1] [title2] _ s e _ ha/te g a _ con _ s v s f i e l e s _ v a 
+s a ll o s _ de _ s e a m o s y ? &lt;plaintext&gt; 
+
+# 40.jpg
+&lt;plaintext&gt; &lt;37&gt; _ s e g v n _ el _ se? _ en t i e n para [bi] por 
+v i a _ de _ [dum] _ s a n t i d a d _ con _ por _ o t r a s i n t i l i g e n c i a _ s 
+es _ qve por v t r e qve a de x es _ s o b r e [cnn] [biz] [cip] [ceg] s [bns] s 
+[dec] s de _ f r a n c i s c o _ e s f o r c i a _ es _ a ll _ g v n a _ [cof] _ c a v a ll o 
+n o _ por _ qve _ s e a n _ p a r t e _ de _ t o m a ll a _ m a i _ por _ e s t o r v a r 
+qve _ n o _ p v e d a n _ p r o v e e r s e _ de _ m a s _ b i t v a ll a s _ para la s 
+qve _ s e _ h a ll a n _ de n t r o _ y _ es _ e l _ r e s t o _ el _ e x e r c i t o 
+d i n e n _ qve _ c a m i n a _ la _ [bog] _ el _ r e i n o _ y _ qve _ s v _ c a m i n o es 
+por _ la _ [deh] _ por _ qve _ t r a e n _ s v _ a r t i ll e r i a _ por _ a g v a ha/te s t a 
+r e v e n a _ y _ de sin _ t i _ e n e n _ e l _ c a m i n o _ m v i _ a ll e _ y _ ll a n o 
+y _ p r e s t o _ p o d r a n _ ll e g a r es [bnc] _ d o n _ de _ no _ p v e d a n _ ha/te n e r 
+
+# 40va.jpg
+&lt;plaintext&gt; _ [ge+] y _ p i e n s a s e _ qve [doz] 
+s e r a _ [dor] _ i r _ s o b r e l _ r e i n o _ [don] _ al _ [dop] _ qve _ y a _ en t r a _ f v e r t e 
+n o _ lo _ es t o r v a _ y _ el _ e x e r c i t o _ qve [das] n _ a c a _ c e r c a para 
+no [da] s _ esta t o d a _ v i a _ f i r m e _ y _ c r e o _ es _ p e n s a m i e n t o qve 
+[don] _ no [dn] s _ c a m i n a m o s _ por _ [bog] _ de _ no _ de _ v e n i r s e a c a 
+p v e s _ no [dn] s _ n o _ p o de m o s _ i r _ s o b r e ll o s _ por _ la s _ [coq] s 
+f a l t a s _ qve _ a s _ en _ el _ e x e r c i t o _ qve _ e n v e r d a d _ s o n [daz] s 
+qve _ [cit] _ la s _ p o d r i a _ a c a b a r _ de _ de n i r a _ [title1] _ [title2] y _ [bac] _ en 
+[dnh] _ i a _ no _ s e _ ha/te ll a _ qve _ c o m e r _ n i p v e de _ la _ g e n t e 
+esta r _ m a s _ v n _ d i a _ y _ f v e r a _ en _ esta s _ t i e r a s _ en v e n i n a s 
+no se? _ ha/te ll a v n _ p a n _ por qve [bi] para lo s _ [rat] s _ con de lo s _ e n e 
+m i g o s _ a n s i d o _ r v i n a d a s _ r o b a d a s _ y _ de s t e v i d a s _ y _ en 
+a l g v n a s _ qve _ s e ha/te ll a r i a _ esta n por _ lo s _ e n e m i g o s _ qve no 
+s e r a _ m e n e s t e r _ t o m a ll a s _ por _ f v e r c a _ y _ &lt;37&gt; _ el _ e x e r c i 
+t o _ esta de m a n e r a _ qve no se? _ p v e de _ m o v e r _ [cez] d a r v n _ p a s o 
+
+# 40vb.jpg
+es al por qve a i _ f a l t a de a r t i ll e r i a _ b i t v a ll a s g a s 
+t es r e s _ y _ [de] s c s e n t [cip] lo s qve [dor] c a m i n a r v n e x e r 
+c i t o _ se? _ r e [daf] n _ y esta _ [cef] _ ha/te _ v e n i d o _ en _ v n _ n v m e r o 
+t a n _ [dar] _ qve s _ la _ [cop] _ la s _ t i m a _ el _ m v n d o v e ll o s 
+por qve la _ p e s t i l e n c i a _ lo s ha/te t r a t a d o qve para 
+y en v e r d a d _ c r e n qve [cm] ll e g a n a [bom] y c i n c v e n t a 
+y fin s t a n _ para _ p a g a d o s _ qve _ t o d o s _ d a n e n qve no [daf] n 
+s e r m a s _ [ceg] s _ d a r m a s _ y _ con esta r en esta t i e r a _ c a d a 
+d i a _ s e r v i n a s _ m a s _ y _ s a _ esta v a n [dor] i r s e a l _ r e i n o 
+de de s e s p e r a d o s _ y &lt;37&gt; _ [fn] _ v e o _ esta s _ lo s _ de _ [coh] _ [boe] a r para 
+m v i _ para a r t e _ y _ v e o _ qve s _ e n e m i g o s y _ [dar] s [bib] s _ y _ [don] 
+al e x e r c i t o qve t r a e por v t r e qve _ y _ la _ a r m a d a de m a r 
+i r a _ a l _ r e i n o _ c r e a _ [title1] [title2] _ qve [fn] _ p i e n s o _ qve _ ha/te ll a r a n _ [dar] 
+de f e n s a _ y _ [dod] _ no _ &lt;44&gt; i n s e s e n _ [da] f r v t o _ qve _ ha/te _ n e r 
+i r el _ e x e r c i t o [beb] _ qve _ para _ s e _ p o d r i a n de f e n de r _ de _ [de] 
+
+# 41a.jpg
+(not transcribed)
+# 41b.jpg
+(not transcribed)
+# 41va.jpg
+(not transcribed)
+# 41vb.jpg
+(not transcribed)
+# 42a.jpg
+(not transcribed)
+# 42b.jpg
+(not transcribed)</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/texts/no6_decryption.txt">no6_decryption.txt</a></p><pre># BnF fr. 3022 no. 6, ff. 16v-17v: the current reading of the cipher passages (22 Sept 2026 state), the output of
+# `PYTHONUTF8=1 python targets/vasto1527/n6_measure.py --text`, run and saved here on 22 Oct 2026, unchanged.
+# The cipher runs only, joined in order (clear text between them is not included; see n6_reading.md for the
+# edited letter). &lt;[...]&gt; = signs not read; [at], [quia] = clear/cipher switch markers. George Lasry&#x27;s own
+# preliminary decryption, on which this builds, is prior/BnF_fr3022_f16_decryption.txt.
+
+no. 6 cipher tokens: 1680 (Lasry list 1675 + 5 seen only on the image)
+  read with Lasry key as it stands (r):        1555
+  read, value inferred 18 Sept 2026 (i):       40
+  read, value inferred 22 Sept 2026 (n, w):    51
+  not read (u + x):                            34
+  Lasry key alone:            1555/1680 = 0.9256
+  with the 18 Sept readings:  1595/1680 = 0.9494
+  fraction read now:          1646/1680 = 0.9798
+  nomenclator group tokens (titles excluded): read 27, open 11
+
+[at] &lt;[y y por]&gt; &lt;[mq]&gt; creo mas presto sea esto porque segun la &lt;[dnh]&gt; no la seguiran en venir tan adelante no quedando en Lombardia exercito dellos tan pujante que pudiese resistir a una gruesa banda de alemanes que podria el rey de Ungria por mandado de V. M. hazer baxar en Italia . y sucediendo y hallandose ellos pasados tan adelante creo que ternian dificultoso el bolver y que mas el quedar y &lt;[bnq]&gt; y final mente no podrian sino esperar gran perdida y por esto pienso que querran primero acabar lo de Lombardia que hazer otro camino y [at quia] es ganar en el camino a &lt;[rar]&gt; y ponella debaxo el mando de V. M. que en estos tiempos es &lt;[en delas los]&gt; que mas se ha de trabajar de acabarse pues basta ra a sustentar el exercito que es por lo mas principal y la que V. M. deve mas desear y [quia] . el duque de Urbino &lt;[es de]&gt; otro exercito esta en Narni y Todi, tierras del Patrimonio, es poca gente y mi parecer es primero que salga el exercito que se provea Siena la qual es muy devota de V. M. y en esta empresa servira &lt;[que de con]&gt; mil &lt;[cny]&gt; que en verdad los tenemos a ellos por tenella segura y . y quando salga el exercito ira &lt;[que l]&gt; camino porque no faltaran vituallas y sera poner espanto a &lt;[car]&gt; y ocasion a estos enemigos que tenemos tan cerca de hazelles hazer &lt;[bny]&gt; un movimiento y que si veran que se va sobre Florencia creen que iran a socorrella que lo pueden hazer y si lo s recogeran que podria ser que no . podra ir el exercito la buelta de Perosa que se hallara desproveida porque ellos no tiene n gente para defender Florencia y dexar guarnecida la dicha Perosa que es una tierra del Patrimonio muy rica y muy gruesa y la principal de &lt;[der de]&gt; pais que ciertamente se tomara finalmente y dexandose proveida se puede i r al estado de Urbino y tomallo en el qual se hallara poca resistencia y pasaren la Marca donde no pueden faltar vituallas y mas se podra ver lo que haze el exercito que esta en Lombardia si caminara en &lt;[cnt]&gt; parte se puede esperar &lt;[es]&gt; mas ventaja porque es fuera del reino y en parte que se guarda como si se estuviese el exercito dentro &lt;[ge+]&gt; y si persevera r a en lo de Lombardia podrase ir mas facilmente a socorrella &lt;[beb]&gt; porque es mejor el camino y mas abundante de vituallas finalmente si no los suyços se acogieren &lt;[rar]&gt; podrase tomar apuntamiento &lt;[es bnc]&gt; y de mas pasaren Lombardia y en todo no dexare de dezir a V. M. que el exercito por lo de advenir no se puede sostener desta manera y que V. M. piense como por otras le he escrito y o en alguna manera de dinero o en hazelles la guerra de la manera que se deve hazer de ponellos en el aprieto que ellos la demanden y que crea V. M. que en tantas faltas como ay en este exercito y tantas miserias es imposible que el servicio de V. M. se haga como sus fieles vasallos deseamos y .</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/n6_reading.md">n6_reading.md</a></p><pre># BnF fr. 3022 no. 6 (ff. 16–17v): Marquis del Vasto to Charles V, [Rome, early December 1527]
+
+&gt; **Superseded in part (22 Sept 2026).** The measured reading is `n6_signs.tsv` (`n6_measure.py`: 98.0% of 1,680 cipher tokens). Changed since this file: da = otro (not liga), dop = tiempo (not invierno), bet = dello, dab = tiene; Lasry&#x27;s syllable labels corrected (boz = esto, bab = mas, bar = tan, bop = como, bopt = ellos, bie = el, bis = de, bep = es/en); &lt;37&gt; = final(mente); &quot;at&quot; and &quot;quia&quot; are switch markers. See NOTES.md.
+
+The catalogue lists this as &quot;Rapport, en espagnol, avec chiffre, à l&#x27;empereur&quot; (no author). It is del Vasto&#x27;s.
+It opens &quot;A seis de noviembre escrivi a V. M. muy largo y tanbien a xxvij de setiembre, cuyos duplicados
+van con esta&quot;, and reports the agreement for the Pope&#x27;s liberty &quot;y de los cardenales&quot;. Del Vasto stays in Rome only until the Prince of Orange arrives, &quot;el qual se espera que verna de aqui a tres dias&quot;, which dates it to early December 1527.
+
+**Cipher.** This is Lasry&#x27;s &quot;Gasto–Charles V Cipher 2&quot;: a Caesar +1 substitution over a 21-letter alphabet,
+with homophones, plus a nomenclator of three-letter groups beginning with b-, c- or d-. Lasry&#x27;s preliminary
+letter-level decryption (cryptiana, GL/BnF_fr3022_f16_decryption.txt, 2026) is sound. I checked it against the
+f. 16v ciphertext: dʃfp = creo, nnbt = mas, qʃftxp = presto. What it lacks is the meaning of the code groups.
+
+## Code groups identified from context (this session)
+
+Confidence: **sure** means two or more independent contexts agree; *probable* means one good context.
+The contexts come from Lasry&#x27;s decryption of both no. 6 (ff. 16v–17v) and no. 19 (f. 40, 6 Nov 1527), which
+share the key.
+
+| group | reading | evidence |
+|---|---|---|
+| doz | **Lautreque** | &quot;piensase que [doz] sera para ir sobre el reino&quot; |
+| deh | **la Marca** | &quot;su camino es por la [deh] porque traen su artilleria por agua hasta Ravena&quot;; &quot;pasaren la [deh] donde no pueden faltar vituallas&quot; |
+| cnn | *Milán* | &quot;sobre [cnn] … de Francisco Esforcia&quot; |
+| bog | **buelta** | &quot;camina la [bog] del reino&quot;; &quot;ir … la [bog] de Perosa&quot;; &quot;caminamos por [bog] de&quot; |
+| ceg | **hombre** | &quot;no quieren ser mas [ceg]s d&#x27;armas&quot;; &quot;[ceg]s … de Francisco Esforcia&quot; |
+| daf | **quiere** | &quot;para caminar un exercito se re[daf]n&quot; (= requieren); &quot;no [daf]n ser mas hombres d&#x27;armas&quot; |
+| dor | **para** | &quot;para ir sobre el reino&quot;, &quot;para caminar&quot;, &quot;estavan [dor] irse al reino&quot; |
+| baf | **primero** | &quot;mi parecer es [baf] que salga el exercito&quot;; &quot;querran [baf] acabar lo de Lombardia&quot; |
+| raq | **mi** | &quot;y [raq] parecer es primero&quot; |
+| dnd | **qual** | &quot;Siena, la [dnd] es muy devota de V. M.&quot;; &quot;tomallo, en el [dnd] se hallara poca resistencia&quot; |
+| dod | **quando** | &quot;y [dod] salga el exercito ira…&quot;; &quot;y [dod] no hiziesen…&quot; |
+| don | **si** | &quot;sobre el reino [don] el invierno … no lo estorva&quot;; &quot;y [don] el exercito que trae…&quot; |
+| dum | **su** | &quot;por via de [dum] Santidad&quot; |
+| cez | **ni** | &quot;no se puede mover [cez] dar un paso&quot; |
+| dnb | **dinero** | &quot;alguna manera de [dnb] o de hazelles la guerra&quot; |
+| biq | **duque** | &quot;al [biq] de Urbino&quot; |
+| boq | **estado** | &quot;el [boq] de Urbino y tomallo, en el qual…&quot; |
+| cef | **gente** | &quot;esta [cef] ha venido en un numero tan poco&quot; |
+| das | *tiene* | &quot;el exercito que [das]n aca cerca&quot; |
+| det | *he* | &quot;como por otras le [det] escrito&quot; |
+| fn | *yo* | &quot;crea V. M. que [fn] pienso&quot;; &quot;[fn] veo&quot; |
+| coq | *grande* | &quot;por las [coq]s faltas que ay en el exercito&quot; |
+| dar / der | *poco / poca* | &quot;numero tan [dar]&quot;; &quot;hallaran [dar] defensa&quot;; &quot;hallara [der] resistencia&quot;; &quot;el patrimonio es [der] gente&quot; |
+| daz | *tanta* | &quot;son [daz]s que … las podria acabar de dezir&quot; |
+| cm | *no* | &quot;creen que [cm] llegan a [bom] y cincuenta&quot; |
+| bom | *a number (e.g. dozientos)* | same |
+| cip | *mil* | &quot;[biz] [cip] [ceg]s&quot; = &quot;N mil hombres&quot;; also in f. 40 |
+| biz | *a number* | same |
+| cof | *gente de* | &quot;alguna [cof] cavallo&quot; |
+| bim | *empresa* | &quot;en esta [bim] servira&quot; |
+| bag | *rica* | &quot;Perosa … tierra … muy [bag] y muy gruesa&quot; |
+| bad | *basta* | &quot;pues [bad]ra a sustentar el exercito&quot; (= bastara) |
+| bas | *deve / puede* | &quot;la que V. M. [bas] mas desear&quot; |
+| coy | *Italia* | &quot;podria el rey de Ungria por [di] de V. M. hazer baxar en [coy]&quot; |
+| di | *mandado* | same |
+| dnh | *Roma* | &quot;en [dnh] ya no se halla que comer&quot; |
+| cac, rar | *Florencia (homophones?)* | &quot;si veran que se va sobre [cac] creen que iran a socorrella&quot;; &quot;ganar en el camino a [rar] y ponella debaxo el mando de V. M.&quot; |
+| da | *liga* | &quot;el [da] exercito esta en Narni y Todi&quot; |
+| dop | *invierno* (1 of 2 contexts) | &quot;si el [dop] que ya entra fuerte no lo estorva&quot; |
+| rat | *lugar* | &quot;para los [rat]s … de los enemigos an sido ruinadas&quot; |
+
+The letter-level corrections noted above also apply: &quot;con&quot; → como, &quot;al&quot; → el in places, &quot;fin&quot; → (de)mas in places.
+
+## Edited reading (ff. 16v–17v), normalised
+
+Brackets mark code readings; &quot;?&quot; marks guesses; &quot;…&quot; marks stretches not yet understood.
+
+&gt; (f. 16v, clear) … De Lautreque ay nuevas varias, porque de algunas partes se entiende que viene hazia el reino
+&gt; por el camino de la Marina, que es por la Romaña, y por otros se sabe como han buelto sobre Milan.
+&gt; (cipher) … creo mas presto sea [mas?] porque segun la [Roma?] no la seguiran en venir tan adelante … no que,
+&gt; dando en Lombardia exercito [frances?] tan pujante que pudiese resistir a una gruesa banda de alemanes que
+&gt; podria el rey de Ungria por [mandado] de V. M. hazer baxar en [Italia], y sucediendo y hallandose como
+&gt; pasados … adelante, creo que ternian dificultoso el bolver, y que mas el quedar … no podrian sino esperar gran
+&gt; perdida. Y en fin pienso que querran [primero] acabar lo de Lombardia que tener otro camino …
+&gt;
+&gt; (f. 17r) … es ganar en el camino a [Florencia] y ponella debaxo el mando de V. M. … que es lo mas principal,
+&gt; y lo que V. M. [deve] mas desear. … El [duque] de Urbino [con el exercito de la liga] esta en Narni y Todi,
+&gt; tierras del Patrimonio; es [poca] gente. Y [mi] parecer es [primero] que salga el exercito, que se provea Siena,
+&gt; la [qual] es muy devota de V. M., y en esta [empresa] servira … que en verdad los tenemos a ella por tenella
+&gt; segura. Y [quando] salga el exercito ira [por] el camino, porque no faltaran vituallas, y sera poner espanto a
+&gt; [los florentinos?] y ocasion [a los] enemigos que tenemos cerca de hazelles hazer … un movimiento, y que si
+&gt; veran que se va sobre [Florencia] creen que iran a socorrella, que lo pueden hazer; y si lo hazen, podria ser
+&gt; que … podra ir el exercito la [buelta] de Perosa, que se hallara desproveida, porque [no tienen] gente para
+&gt; defender [Florencia] y dexar guarnecida la dicha Perosa, que es una tierra del Patrimonio muy [rica] y muy
+&gt; gruesa, y la principal de [todo aquel] pais, que ciertamente se tomara; y dexandose proveida se puede [sacar]
+&gt; el [estado] de Urbino y tomallo, en el [qual] se hallara [poca] resistencia, y pasaran la [Marca], donde no
+&gt; pueden faltar vituallas …
+&gt;
+&gt; (f. 17v) … y si el exercito que esta en Lombardia caminara, en [ninguna] parte se puede esperar [mas] ventaja,
+&gt; porque es fuera del reino y en parte que se guarda como si se estuviese el exercito dentro …; y si persevera
+&gt; en lo de Lombardia, podrase ir mas facilmente a socorrella …, porque es mejor el camino y mas abundante de
+&gt; vituallas; y si no los suizos … [Florencia] podra tomar apuntamiento … y [demas] pasaran Lombardia.
+&gt; Y esto todo no dexare de dezir a V. M.: que el exercito por lo de advenir no se puede sostener desta manera,
+&gt; y que V. M. piense, como por otras le [he] escrito, en alguna manera de [dinero] o de hazelles la guerra de la
+&gt; manera que se deve hazer, de ponellos en el aprieto que ellos la demanden; y que crea V. M. que con tantas
+&gt; faltas como ay en este exercito y tantas miserias es imposible que el servicio de V. M. se haga como sus
+&gt; fieles vasallos deseamos …
+
+Del Vasto&#x27;s strategic proposal to the Emperor is readable: march the army out of Rome toward Tuscany, secure
+Siena, threaten Florence so as to draw off the League, take Perugia and the state of Urbino, and cross into the
+Marche. This came before Lautrec&#x27;s march to Naples was confirmed. f. 39 (the loose sheet the archivist linked
+to this piece with &quot;voy devant f. 17 v°&quot;) is in Cipher 1 and belongs to no. 10, as Lasry and Tomokiyo already
+found.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/prior/BnF_fr3022_f16.png">BnF_fr3022_f16.png</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/texts/key.md">key.md</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/n6_codes.json">n6_codes.json</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/vasto1527.json"></figure>
 <!-- replay:end -->

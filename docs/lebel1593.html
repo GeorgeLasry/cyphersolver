@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters-and-the-key">The letters and the key</a><a href="#no-11-17-january-1593">No. 11, 17 January 1593</a><a href="#no-62-10-march-1593">No. 62, 10 March 1593</a><a href="#no-100-27-march-1593">No. 100, 27 March 1593</a><a href="#method-and-what-stays-open">Method, and what stays open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters-and-the-key">The letters and the key</a><a href="#no-11-17-january-1593">No. 11, 17 January 1593</a><a href="#no-62-10-march-1593">No. 62, 10 March 1593</a><a href="#no-100-27-march-1593">No. 100, 27 March 1593</a><a href="#method-and-what-stays-open">Method, and what stays open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The <span data-term-ok>Unsolved Catalogue</span> listed three letters from Lebel, Savoy&rsquo;s agent in Paris, as having no decipherment noted. Tomokiyo&rsquo;s article <span data-term-ok>&ldquo;Reading Undeciphered Letters to the Duke of Savoy (1593)&rdquo;</span> (cryptiana, 2017, revised 2023) gives the key he rebuilt from fr. 3983 no. 80 and fr. 3984 f. 182, and shows these three letters as images only. The key was published; a decipherment of these letters was not. With his table, about a dozen corrections to its letter signs, and code values aligned from the letters deciphered in 1593 (fr. 3983 no. 80, fr. 3984 f. 182, fr. 3985 f. 23) and from context in the unglossed BnF esp. 336 nos. 79&ndash;80, all three letters are now deciphered. No. 11: about 720 letter signs, all but about 6 valued, and all 58 code tokens valued (41 H, 11 C, 6 M). No. 62: on the recto 607 of 617 enciphered tokens valued (98%) with all 62 code tokens valued (36 H, 13 C, 13 M); the three verso lines, under the recto&rsquo;s bleed-through, about 70 of 101. No. 100: all 1,000 enciphered tokens valued, codes 65 H, 26 C, 19 M. Overall about 98% of the enciphered tokens have a value. The letters follow Savoy&rsquo;s hope of the French crown through the first months of the Estates General: Mayenne wanting the crown or the regency, Spain paying him 40,000 &eacute;cus down and assignations up to 260,000 and offering four millions, the Cardinal de Bourbon courting him with a marriage to his daughter, Mayenne&rsquo;s secret council of the archbishop of Lyon, Villeroy and Jeannin, Philip II&rsquo;s plans for the Infanta judged impossible, Feria&rsquo;s jurist laughed at, and a truce proposed. What stays open is physical (the no. 62 verso) and a set of single-context code values graded M, listed in section 05.</div>
 
 <figure data-credit="Biblioth&egrave;que nationale de France, fr. 3983 f. 130r (no. 62), via Gallica btv1b9059406b"><img src="lebel1593_lead.jpg" alt="Top of f. 130r: clear French lines followed by rows of cipher signs with dotted code numbers such as 26, 85, 113, 251, 129, 280" loading="lazy"><figcaption>No. 62, f. 130r (10 March 1593): after the clear &ldquo;J&rsquo;ay appris d&egrave;s la mienne derniere que&rdquo; the cipher begins, letter signs run together, code numbers set off by dots. <span class="credit">Image: Biblioth&egrave;que nationale de France, fr. 3983 f. 130r (no. 62), via Gallica btv1b9059406b.</span></figcaption></figure>
@@ -93,6 +93,447 @@
 </ul>
 <p><strong>Why these stay open:</strong> every surviving decipherment in this key has been harvested (fr. 3983 f. 167, fr. 3984 f. 182r&ndash;v, fr. 3985 f. 23, esp. 336 no. 81), and the unglossed esp. 336 nos. 79&ndash;80 have been decrypted for context. None of the M-grade numbers occurs under a gloss; only the office&rsquo;s own nomenclator, not known to survive, would confirm them. The verso gaps are physical.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>no. 11, Paris, 17 January 1593 (f. 26r-v)</h3>
+<p>Lebel reports to Charles Emmanuel I that Mayenne is again thinking of claiming the crown, encouraged by letters from Rome; the Pope and the King of Spain want a Catholic king elected, Mayenne will favour whichever candidate brings him most advantage, and his secret council is the archbishop of Lyon (Épinac), Villeroy and président Jeannin.</p>
+<p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/reading11_full.md">reading11_full.md</a></p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/reading11_final.md">reading11_final.md</a></p><pre># no. 11 — Lebel to Charles Emmanuel I, Paris, 17 January 1593 — BnF fr. 3983 f. 26r-v — final reading (pass 3)
+
+Built on `reading11_full.md` (pass 2, sign by sign) with every value from `codes_harvest.tsv` re-applied.
+Clear text roman, *deciphered italics*, [n value]. Grades: H = key or contemporary gloss; C = by alignment or
+strong context; M = inferred here from grammar and sense.
+
+## Text
+
+…je luy diray seullement par ceste que j&#x27;ay sceu et de bon lieu que le duc de Mayenne va de jour a aultre *rentrant
+en opinion de [305 pretendre M] la [292 couronne M] [110 pour] [113 luy]*, pource principallement a *ceste fantasie
+[108 par] [283 lettres] [280 de] Rome, [108 par] lesquelles on [113 luy] escrit que le [21 pape]* a dict qu&#x27;il seroit
+bien [137 mal] *a(i)lles(?) si pouvant [130 avoir M] la [292 couronne] [110 pour] [113 luy] [112 il] la donneroit a un
+aultre*. V. A. voit assez quelle apparence il y a que ce *second(?)* dessein, ou pour mieulx dire congé, puisse avoir
+effect. A faulte de ce [112 il] desireroit [178 fort] *la regence [280 de] l&#x27;estat*, faisant naistre plusieurs
+difficultés sur tous les *subjects qui pourront estre proposés*, esperant que le temps luy donnant moien de *regagner
+aultant du credit entre les [83 François]* par quelques heureux succès *[280 de] ses actions, comme [112 il] en a
+perdu [108 par]* le desavantage que ce party a receu dès que *la charge et administration de l&#x27;estat [113 luy] a esté
+commise, [112 il] pourroit hors* obtenir plus aisement ce en quoy [112 il] *treuvera a present toutte [106 non M] pas
+difficulté, mais* impossibilité. Le second dessein sera [178 fort] *alterer [108 par] la resolution que le [21 pape]
+et [261 Roy d&#x27;Espaigne] ont prise [280 de] vouloir l&#x27;election d&#x27;un roy desirée* avec toutte affection des bons
+catholiques. A quoy *au(?)… [112 il] se voiroit contrainct [280 de] consentir, [112 il] taschera [280 de] favoriser
+celuy duquel [112 il] pourra* non pas esperer mais recepvoir en effect *plus [280 de] commodité: le [261 Roy
+d&#x27;Espaigne] [113 luy] [250 tout] presenter quatre millions; le [170 cardinal] [280 de] Bourbon le [250 tout]
+rechercher et solliciter, [113 luy] promettant d&#x27;espouser sa fille* et tous les honneurs et biens *qu&#x27;il vouldra
+desmander, disant que avec [113 luy] les [297 catholiques]* principaulx qui suivent le party *du [29 Roy de Navarre] se
+rangeront a l&#x27;union*. Cest ouverture et proposition est favorisée a toutte reste par deux des trois *que [26 le duc de
+Mayenne] a choisis [110 pour] son conseil secret en ce [250 tout], qui sont [64 le] [280 de] [50 Lyon M], Villeroy, et
+le troisiesme qu&#x27;est le [235 président] Jannin*, s&#x27;y laira aisement ranger. V. A. voit assez les difficultés et
+contrastes esquels cest ouverture sera subjecte. Je ne perdrey temps a [105 faire] *(en m&#x27;)entre(m)ettant(?) les
+offices requis au* service de V. A., a laquelle je ne desmanderey pardon … puis que la mattiere de laquelle il se
+traitte *et l&#x27;humeur [280 de] ceste nation l&#x27;ont* … comme je m&#x27;asseure desia obtenu pour moy de V. A.
+
+## Decisions this pass
+
+- l.2 end + l.3: *le..* + *quelles* = **par lesquelles on luy escrit** (the &quot;quelqu&#x27;on&quot; of pass 2 dropped; the two
+  signs after *le* are an s-form, C). Checked on m00r/m01l.
+- 113 = *luy* in all seven places (grammar forces it every time; the harvest&#x27;s &quot;celuy&quot; gloss is best read &quot;[ce]luy&quot;).
+- 64.280.50 re-read at resolution (n04l): digits certain. With 64 = *le*, &quot;le de [50]&quot; is the usual &quot;Mr de Lyon&quot;
+  ellipsis for Pierre d&#x27;Épinac, archbishop of Lyon, the third member of Mayenne&#x27;s council (history; esp. 336 has
+  the same &quot;le .. de 50&quot; pattern). 50 = Lyon, M.
+- 250 re-read at resolution (m13r, m14r): all three are 250, not 251. Kept as *tout* (H). Two uses (&quot;luy tout
+  presenter&quot;, &quot;le tout rechercher&quot;) read awkwardly. The sense is still clear: Spain offers everything, four millions.
+- 130 and 305 are certain as digits. Both sit in a &quot;… la couronne pour luy&quot; slot, so M: *avoir* / *pretendre*
+  (forced; 310 is *avoir* in the key, so 130 may be a slip for 310).
+- 292: the harvest gives *promesse* (C, 362.292); here &quot;la [292] pour luy&quot; twice needs *couronne*. Kept couronne (M).
+
+## Counts (enciphered tokens)
+
+| | total | H | C | M | open |
+|---|---|---|---|---|---|
+| letter signs (nulls excluded; 20 nulls) | ~720 | ~680 | ~34 | 0 | ~6 |
+| code groups | 58 | 41 | 11 | 6 | 0 |
+
+Code grades: H = 280×11, 112×8, 108×4, 110×3, 21×2, 261×2, 178×2, 250×3, 26, 29, 83, 105, 137, 297. C = 113×7, 170,
+64, 235, 283. M = 106, 292×2, 305, 130, 50. (Pass 2&#x27;s figure of &quot;about 1,150 letter signs&quot; was an overestimate.
+The count here comes from the sign lists.)
+
+## Remaining uncertainties
+
+1. l.4 start *a(i)lles(?)*: probably *ailleurs*, with letters missing.
+2. l.6 start, under an ink smudge: *second(?)*, 3 signs unread.
+3. l.20 end *au(?)…*: 1 sign unread. The sense (*au cas qu&#x27;il se voiroit contrainct*) is clear.
+4. v10 *(en m&#x27;)entre(m)ettant*: 2 signs doubtful.
+5. l.5 *donno(r)it a (u)n*: one extra sign [4ƒ].
+6. The M codes: 305, 130, 292 (conflicts with the harvest), 106, 50.
+7. 250 *tout* is syntactically odd in two of its three uses.</pre></details>
+<h3>no. 62, Paris, 10 March 1593 (f. 130r-v)</h3>
+<p>Mayenne&#x27;s discontent has been bought off with 40,000 écus down and assignations up to 260,000 écus; Feria brings a doctor who wants to dispute the crown on points of law, which is openly mocked; the Spanish army is smaller than any before it, those around Mayenne will propose a truce, and Lebel advises courting Mayenne.</p>
+<p class="ftext">Transcription: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/reading62_full.md">reading62_full.md</a></p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/reading62_final.md">reading62_final.md</a></p><pre># Lebel to the Duke of Savoy, Paris, 10 March 1593 — BnF fr. 3983 f. 130r-v — final reading (pass 3)
+
+This pass builds on reading62_full.md. Code values come from codes_harvest.tsv and the key corrections from NOTES.md section 5.
+Grades: **H** means read from the letter signs or a code glossed at the time. **C** means a code value that sibling contexts confirm.
+**M** means a value inferred from grammar and sense in this letter. **open** means no value.
+Clear text is in roman, *deciphered text in italics*, [codes] in brackets.
+
+## Full text, f. 130r
+
+J&#x27;ay appris dès la mienne derniere que *le mescontantemant qu&#x27;avoit* [26 le duc de Mayenne, H] *de* [85 Monsieur, C]
+*a esté remedié,* [113 luy, H] *ayant* [251 faict, H] [129 donner, H] *contantemant de ce que* [113 luy] *estoit
+deu, et estoit* la somme plus grande que je n&#x27;ay escrit cy devant; [112 il, H] [113 luy] *ont* [251 faict] [275
+offre, M] *quarante mille escus et* [129 donner] *assignation tant en* [69 Flandres?, M, forced] *que Espagne,
+jusques au comptant de deux cents soixante mille escus.* L&#x27;on estimoit que sur tant et tant de remonstrances
+qu&#x27;ont esté faittes aux [142 serviteurs/ministres, C/M] [280 du, H] [261 Roy d&#x27;Espaigne, C] *de l&#x27;impossibilité de
+ses pretantions sur ces[te couronne?] … le* [292 royaume/couronne, M; the harvest value &quot;promesse&quot; does not fit
+*disputter la 292*] *soit* [110 pour, H] [113 luy/celuy] [24 l&#x27;Infante, H] *et le* [163 prince, C] *qu&#x27;*[112 il]
+*se seroit resolu d&#x27;y* [105 faire, H] [257 parvenir, H] *a quelque aultre de ses proches; mays ses ministres*
+continuent plus que jamais en leur opinion, *conduysant le duc* [280 de] *Feria ung docteur* [109 qui, M; the
+harvest value &quot;promettoit?&quot; does not fit here] *veult disputter la* [292 couronne] [108 par, H] *poincts de droict,
+dont l&#x27;on se mocque* [250 tout, H] ouvertemant pardessa, ou l&#x27;on remarque aussy que [261 le Roy d&#x27;Espaigne] *est
+tres* [137 mal, M] *conseillé de* [105 faire] *en ce tenps et* en la face des estatz *voir une armée moindre
+qu&#x27;aulcune* [109 qui] *soit encores venue, et l&#x27;*[190 argent, C] *plus court que jamays.* [278 J&#x27;ay, M] *sceu que
+les* [236 capitaines, C] *de* [26 Mayenne] voiant peu de jour de pouvoir [105 faire] [129 donner] *la* [292
+couronne] *au dict* [26 duc de Mayenne] *ny la* [105 faire] *tumber en la* [240 maison, M strong] *de Borbon,*
+tascheront de faire proposer *une* [255 tresve, H] [ⅅX, M: a personal sign, &quot;quelqu&#x27;un / un gentilhomme&quot;]
+*partira* [136 bien, C] [134 tost, C] [100 pour, M, forced; Tomokiyo&#x27;s &quot;condescendre&quot; does not fit] [102 aller, C]
+[253 trouver, M] *a* [23 V.re Alt.e, C] [280 de] *la part de* [26 Mayenne]. Je croy que ce sera le service de V.re
+Alt.e de [113 luy] [129 donner] [250 tout] *contantemant et le caresser.* Et a la verité *sans son assistance* je
+me fusse treuvé empesché [30 en ceste, M, forced] [94 negotiation, C] plus que jamais. [26 Le duc de Mayenne]
+*et* [113 luy] [251 faict] [105 faire] [280 de] *grandes offres.*
+
+Settled at native resolution (from pass 2): the X in *remedié* is i. The &quot;g&quot; sign before an i-sign is a flourish
+that goes with the i (*qu&#x27;avoit, soit, seroit, voir*). o→ is h in *proches*. &quot;g u&quot; is *en*.
+Still doubtful: the four signs after clear &quot;que&quot; at the head of the page (read as nulls or &quot;l&quot;); the sign read as
+∀ in l.8 *sur ces[te] …* (1 to 2 signs); the stray &quot;11&quot; in *estoit* (l.3), read as a null.
+
+## Full text, f. 130v (cleaned strips W_line1-3 and this pass&#x27;s Z9 crops)
+
+… Gondy envoié par le Duc de Florence … present auprès du Roy de Navarre [100 ?, open here] *a e[n/s]t… oma*
+[252 dict, C] [191 le juriste, C] … *pes* [221 mariage, C] *b… de la niece du duc* [280 de] *Florance … au …* [46
+Lorraine] | *et …* [223 open] *…* [45 le duc de Lorraine] *avec* [29 le Roy de Navarre] [4+ null] [blot: 1 sign,
+probably i] *l se* [251 faict] [247 open]. Je suis attendant …
+
+- Line 1: the run between *a e* and *ma* has 8 signs: pp g 11 ł t s # # δδ 12. That is &quot;a e n l/s t s o o m a&quot;
+  in clean ink with no blot. It does not segment into good French. The reading *a esté …ma* is the best offered (M).
+- Line 3: the dense blot after [29] is exactly **one sign**. It sits between the null 4+ and h(l): the h, ooo and m
+  after it are legible on the autocontrast crop Z9_l3b. With i it reads *il se [faict] [247]*, and 247 is probably
+  a participle (M: *fort*? *declarer*?), left open.
+- Line 2: about 6 signs before 46 are under recto ink and cannot be recovered.
+
+## Counts (enciphered tokens: letter signs excluding nulls, plus code groups)
+
+| | letter signs | codes | total |
+|---|---|---|---|
+| f. 130r | 555 | 62 | 617 |
+| f. 130v | ~88 | 13 | ~101 |
+
+Grades on f. 130r:
+- Letter signs: H 540, C/M 5 (the &quot;g&quot;-flourish i&#x27;s and &quot;gu&quot; = en), open 10 (the 4 at the top of the page, the 1-2 in
+  l.8 and the l.3 &quot;11&quot;). That is 98% valued.
+- Codes (62 tokens): H 36 (26, 113, 251, 129, 112, 280, 105, 110, 108, 250, 24, 257, 255), C 13 (85, 261, 163, 190,
+  236, 136, 134, 102, 23, 94, 142), M 13 (275, 69, 292 ×4, 109 ×2, 137, 278, 240, 100, 253, 30, ⅅX), open 0.
+
+Grades on f. 130v:
+- Letter signs: H ~50, M ~10 (the line-1 run, the blot i), open ~28 (under the bleed or the blot).
+- Codes: C 9 (252, 191, 221, 280, 46, 45, 29, 251), open 4 (100 in this context, 223, 247, plus one more code
+  that may sit before 46).
+
+## Remaining uncertainties
+
+- Forced M values: 69 (Flandres), 100 (pour, which contradicts the harvest&#x27;s &quot;condescendre&quot;), 30 (en ceste) and
+  ⅅX (an envoy sign).
+- 292 conflicts with the harvest&#x27;s &quot;promesse&quot;. 109 conflicts with the harvest&#x27;s &quot;promettoit&quot;.
+- Open with no value: 223, 247, verso 100, and the verso line-1 run and line-2 run before 46.</pre></details>
+<h3>no. 100, Paris, 27 March 1593 (ff. 194r-195r)</h3>
+<p>If Philip II&#x27;s designs for the Infanta fail, Savoy could with more reason than any other prince hope for the crown from the Estates; money for his &#x27;compagnon&#x27; and président Jeannin, paid through Zamet, Feria&#x27;s and Commandeur Tassis&#x27;s letters, good offices with the Pope, the Provence governorship, Vaudemont and the château of Miolans. With nos. 11 and 62 it follows Savoy&#x27;s candidacy at the Estates of the League, January to March 1593.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/reading100_full.md">reading100_full.md</a></p><pre># Lebel to Charles Emmanuel I, Paris, 27 March 1593 (BnF fr. 3983 ff. 194r-195r, canvases 333-335)
+
+Tomokiyo key (savoy.htm). Clear roman, *deciphered italics*, [code]. Per cipher line: (1) sign labels, (2) reading.
+
+## f. 194r
+
+Clear (ll. 1-6): Les 13. du present j&#x27;ay escrit a V.re Alt.e et suis tousiours attendant en bonne devotion les
+commandemantz de V.re Alt.e, n&#x27;en aiant receu aulcun des miens partant(?) et mesmes d&#x27;entendre que la mienne du
+25. du passé soit arrivée a bon port, par laquelle je luy redisois les principaulx poinctz de ce qu&#x27;estoit contenu
+en mes lettres des 5. et 15. janvier, que je tiens avoir esté retenues a Nevers. Et par lesquelles je luy disois
+aussi que [hw = le? l+?] [227 ?] n&#x27;a pardessa faict de credit
+
+L7 (y~1575): clear &quot;comm&#x27;il a voulu faire croire.&quot; + [112] g ooo λ [178] ɱ ƒ pp 10 3ſ ʌe g (3)ſ? m [280] dd #
+  -&gt; [112 il] *est* [178 fort] *en arriere* [280 de] *mo-*
+L8: ʌ̇ g 11 4t [112] 12 pp w 12 ŝ g 10 ʌ̇ λ m δ g ooo [227] ℓℓf [150] 8T pp 10 ay ∀ [114] + clear &quot;Et&quot;
+  -&gt; *-iens.* [112 il] *a, a la verite, des* [227 ?] *et* [150 ?] *parmy* [114 ?]. Et
+L9: clear &quot;marche come je croy de bon pied, s&#x27;estant adressé a&quot; [23] [110] pp □ ✱(g) ʌ̇ 3ſ
+  -&gt; marche come je croy de bon pied, s&#x27;estant adressé a [23 votre altesse] [110 pour] *avoir*
+L10: ∇ 10 g ŝ m □ + ŝ g 4t 2e h m ooo 8T 3ſ g ay ʌ̇ m 10 4+ δ g 4t ooo m 2e ƒ 4t bm g [261] 11 g 8T #
+  -&gt; *preveu que si les premier(s) [4+ null] desseins de* [261 le Roy d&#x27;Espaigne] *ne po-*
+L11: □ ŝ ✱(g) ʌ̇ ƒ λ 3ſ m □ 4t 8 2e 10 [23] ∇ # ŝ 3ſ 10 ✱(g) ʌ̇ 4→ pp ŝ m 8 ∇ w □ ooo δ g 3ſ pp ʌ̇ 4t
+  -&gt; *-uvoient reuscir,* [23 votre altesse] *pourroit avec plus de rais-*
+L12: # 11 3f □ g 12 ŝ h λ 3ſ m [163] + clear &quot;beaucoup esperer de cest&#x27;occasion, et que se&quot;
+  -&gt; *-on que aultre* [163 prince?] beaucoup esperer de cest&#x27;occasion, et que se
+  (note: ✱ is regularly followed by a g-shaped tail before i; read ✱g as o. 3ℓ/3ſ ambiguity: context decides q vs r.)
+L13: clear &quot;rendant comme principal&quot; X 4+ o-f 8 # ƒ δ □ 8 λ g ŝ 10 δm 8 g [84] [112] ƒ m ∇
+  -&gt; rendant comme principal *[nulls X 4+ o-f] conducteur de ce* [84 ?] [112 il] *ne p-*
+L14: # ŝ 3ſ 10 ✱g ʌ̇ λ 4t 2e ƒ # 11 g ƒ [274] b(#barred) g pp ŝ 8 ✱ ∇ δm [230] bm g ooo 12
+  -&gt; *-ourroit sinon en* [274 ?] *beaucoup de* [230 ?] *des a-*
+L15: 8T 10 m 4t(struck) pp? ƒ λ ℓℓf 12 w pp δ □ g ƒ 2e 10 [250] [136] ℓℓf pp ŝ 12 ƒ 8 g ay pp ƒ 4→
+  -&gt; *-presant et a l&#x27;advenir* (des apresant = dès à présent) [250 tout] [136 bien] *et avancemant*
+L16: [110] [113] g λ w m 4t(struck) ooo 2e g 11 4t 3f ŝ m 2e g ooo λ ʌ̇ dd #g 2e ooo 8 m + ŝ g [23]
+  -&gt; [110 pour] [113 luy] *et les siens, que j&#x27;estimois ce que* [23 votre altesse]
+L17: [113] ŝ # □ h δ 3ſ ✱g 2e λ [105] [129] bm g ooo pp 8T 10 g 4t 12 ƒ 4→ [110] [136]
+  -&gt; [113 luy] *vouldroit* [105 faire] [129 donner] *des apresant* [110 pour] [136 bien]
+L18: g ay ∇ h ✱ ∀ m + clear &quot;Je luy en disois de mesmes pour le regard de&quot; X 4t # 11
+  -&gt; *employe.* Je luy en disois de mesmes pour le regard de *[X null] son*
+L19: 8 ✱ dd ∇ pp o→ 11 # ƒ ℓℓf δ □ [235] ʌ̇ 12 ƒ 2e 11 ay 12 ∀ ooo 3f □ g [280] [113] 3ſ m dd
+  -&gt; *compagnon et du* [235 President?] *Jannin, mays que* [280 de] [113 luy] *rem-*
+L20: g λ 4→ 10 m bm g o→ 3ſ pp 11 δ m 4t ooo # ay dd g 4t m ƒ 4→ 10 g [161] + clear &quot;Je n&#x27;estois&quot;
+  -&gt; *-ettre de grandes sommes entre* [161 ses mains?]. Je n&#x27;estois
+Clear: pas de cest advis, bien ay je tousiours estimé comme je fais encores
+L21: clear &quot;estre tres requis que&quot; [23] bm # 2e b(barred) λ [105] [103] [133] 12 pp(?) [49] [190] [110]
+  -&gt; estre tres requis que [23 votre altesse] *doibt* [105 faire] [103 ?] [133 ?] *a(?)* [49 ?] [190 ?] [110 pour]
+L22: g 11 [105] 4t # ƒ ooo g 10 ŝ ʌ̇ 8 m pp □ T(barred=b) g 4t ✱g 2e 11 + clear &quot;sans que toutesfoys ledict&quot;
+  -&gt; *en* [105 faire] *son service au besoin,* sans que toutesfoys ledict
+L23: clear &quot;[227] le sache.&quot; [109] ƒ m 8 g 4t ooo g 3ſ # m? ʌ̇ 4→ δ g 11 [305] w m δ g ooo b(barred) ✱
+  -&gt; [227 ?] le sache, [109 qui] *ne cesseroit(?) d&#x27;en* [305 ?] *le desbo-*
+L24: ŝ 10 4t g dd pp ƒ λ w g [154] α 12 ay m 4→ + clear &quot;seroit tres propre s&#x27;il en voulloit&quot;
+  -&gt; *-ursemant. Le* [154 sieur?] *Zamet* seroit tres propre s&#x27;il en voulloit
+  (α = z, a sign not in Tomokiyo&#x27;s table; Zamet = Sébastien Zamet, the Paris financier)
+L25 (clear): prendre la charge. Il doibt venir bien tost pardessa, je tascheray
+
+## f. 194v
+L1 (clear): de descouvrir son intantion. Je diray au reste a V.re Alt.e qu&#x27;il semble
+L2: clear &quot;que&quot; [260] ŝ 12 8 ✱ 11 δ □ 2e ooo pp ƒ 4→ w g ooo [98] pp ŝ T(barred=b) □ λ + □ g [250] [115] [142]
+  -&gt; que [260 ?] *va conduisant les* [98 affaires] *au but que* [250 ?] [115 bon] [142 ?]
+L3: [280] [23] δ g ooo 2e 10 m w g 4t δ m 4t ooo g 2e 11 4t [280] [261] [110] [24] [163] ℓℓf [113]
+  -&gt; [280 de] [23 votre altesse] *desire, les desseins* [280 de] [261 le Roy d&#x27;Espaigne] [110 pour] [24 ?] [163 prince?] *et* [113 luy]
+L4: 4t # 11 λ ∇ h g ʌ̇ 11 4t δ m 4→ # ŝ λ 4→ g ʌ̇ dd ∇ ✱ 4t ooo 2e b(ff) ʌ̇ w (h?) 2e λ m h g ooo
+  -&gt; *sont pleins de toutte impossibilité, les*
+L5: [257] + □ g 2e m 3ſ g g? 8 # ʌ̇ ooo bm □ δ ŝ 8 [280] 20 g 3ſ ʌ̇ pp ℓℓf δ □ [164] 4→ 12 4t ooo
+  -&gt; [257 ?] *que ie re?..ch(o)is(?) du duc* [280 de] *Feria et du* [164 ?] *tas-/tass-*
+L6: 2e ooo dd m b1 # ƒ λ g 4t 8T m 3ſ g 10 + □ m ƒ g ∇ # □ ŝ 12 ƒ 4→ 10 g ŝ ooo 8 ʌ̇ 3ſ h m ooo δ 2e
+  -&gt; *-sis me font esperer que ne pouvant reuscir les di-*  (4→12 4t ooo 2e ooo = Tassis, J. B. de Tassis)
+L7: 8 4→ δ m 4t ooo g ʌ̇ 11 4t [280] [261] g w h m 4t ✱ 2e λ 3ſ g ooo # w □ m [280] [108]
+  -&gt; *-cts desseins* [280 de] [261 le Roy d&#x27;Espaigne], *elle soit resolue* [280 de] [108 par?]
+L8: [257] pp 12 [23] + clear &quot;Et mesmes j&#x27;ay sceu que&quot; o-f X w g δ ʌ̇ 8 λ [104] 4→ 12 4t ooo
+  -&gt; [257 ?] *a a(?)* [23 votre altesse]. Et mesmes j&#x27;ay sceu que *[nulls o-f X] ledict* [104 ?] *Tass-*
+L9: 2e 4t pp δ 2e 8 λ 12 □ 11 8T g 10 ooo # ƒ 11 pp o→ m 3f □ ʌ̇ w 8 3ſ #g 2e 4→ [112] g 11
+  -&gt; *-is a dict a un personnage qu&#x27;il croit,* [112 il] *en*
+L10: b1 pp □ h δ 3ſ 12 [103] w 12 [64] [170] [71] + clear &quot;a aussi tiré quelque mot en passant&quot;
+  -&gt; *faudra* [103 ?] *la* [64 ?] [170 Mr le Cardinal] [71 ?]. a aussi tiré quelque mot en passant
+L11 (clear): qui approche de cella et m&#x27;asseure que V.e A. n&#x27;a oublié de faire [105 faire] h m ooo
+  -&gt; ... de faire *les*
+L12: # b1 20 2e 8 g 4t 3ſ g + □ ʌ̇ ooo ŝ g 10 4t w m [21] ℓℓf [22] 8T ✱ □ ŝ pp 11 λ 12 4t ooo g ŝ 10 m 3ſ
+  -&gt; *offices requis vers le* [21 pape] *et* [22 ?]*, pouvant asseurer*
+L13: [23] 3f □ g 4t 2e h m [21] □ # ∀ pp ƒ 4→ w g ooo δ m 4t ooo g ʌ̇ ƒ ooo bm g [261] ƒ m ∇ ✱ □
+  -&gt; [23 votre altesse] *que si le* [21 pape], *voyant les desseins de* [261 le Roy d&#x27;Espaigne] *ne pou-*
+L14: ŝ #g 2e 10 3ſ m □ 4t 8 ʌ̇ 10 2e ƒ 8 h ʌ̇ ƒ #g λ [280] [105] [257] pp 12 [23] g w h m ƒ g
+  -&gt; *-voir reuscir, inclinoit* [280 de] [105 faire] [257 plaisir?] *a(?) a* [23 votre altesse], *elle ne-*
+L15: 8T # ŝ 3ſ 10 ✱g 2e 4→ bm g ooo ʌ̇ 3ſ m 10 δ pp ŝ #g ʌ̇ 3ſ ∇ 12 10 δ g 4t ooo pp □ ƒ dd m ʌ̇ h w
+  -&gt; *-pourroit desirer d&#x27;avoir pardessa un meill-*
+L16: 2e g ŝ 10 [227] 3f □ m [113] 4t g 3ſ pp h m δ 2e 8 4→ [170] [71] [278?] [108] ay m ooo
+  -&gt; *-eur* [227 ?] *que* [113 luy]. *Sera ledict* [170 Mr le Cardinal] [71 de Plaisance?] [278 j&#x27;ay?] [108 par] *mes-*
+  (278 and 108: the final 8 of each is overwritten/blotted)
+L17: 12 ŝ h λ 3ſ g 4t [283] [251] 4t 8 pp □ #g 2e 3ſ 12 [23] 8 ✱ dd ay g + clear &quot;Les procureurs du&quot;
+  -&gt; *aultres* [283 lettres?] [251 faict] *sçavoir a* [23 votre altesse] *comme* Les procureurs du
+  (so L16-17: [278 j&#x27;ay] [108 par] mes aultres [283 lettres] [251 faict] sçavoir ...)
+Clear (ll. 18-24): pais de Provence et la Court de Parlemant mesmes ont escrit icy a leurs deputez de prier Mons.r
+du Maienne de donner le gouvernemant dudict pais a Monsieur de Vaudemont, a quoy ledict seig.r ne s&#x27;est voulu
+resoultre jusques a ce qu&#x27;il sache la volonté de V.re Alt.e. Le porteur et sollicitteur desdittes lettres est
+garre(?) bien cognu, comme je croy, de V. A., qui est de ceste ville et a demeuré fort long temps a Marseille. Il a,
+des que je suis pardessa, desia faict deux voiages en Provence, et s&#x27;y en est retourné il n&#x27;y a pas
+L25: clear &quot;long temps.&quot; [112] 8T 12 4t ooo m 4→ # □ ooo 2e # ŝ 3ſ 4t [108] [50] 4t 2e [27] ŝ # □ h
+  -&gt; long temps. [112 il] *passe tousiours* [108 par] [50 ?], *si* [27 ?] *voul-*
+L26: w ✱g ʌ̇ λ m ƒ [105] □ 11 ∇ 10 g ooo pp ƒ λ pp [23] + clear &quot;Il me semble qu&#x27;il seroit fort bien&quot;
+  -&gt; *-loit, en* [105 faire] *un presant a* [23 votre altesse]. Il me semble qu&#x27;il seroit fort bien
+L27: clear &quot;logé&quot; 12 □ [241] [280] dd ∀ # h w pp ƒ 4t + clear &quot;Je suis attendant d&#x27;heure a aultre&quot;
+  -&gt; logé *au* [241 chasteau?] [280 de] *Myollans* (Miolans, the Savoy state prison). Je suis attendant d&#x27;heure a aultre
+
+## f. 195r
+Clear (ll. 1-20, summary transcription): [l&#x27;hom]me de l&#x27;Amy et par mesme voie quelque notable secours, et congé de me
+pouvoir acheminer devers V.re Alt.e incontinant que l&#x27;assemblée des estatz se separera, suivant la treshumble
+requeste que j&#x27;en ay faict cy devant a V.re Alt.e, et le requerant ainsi son service. Le Roy de Navarre se resoult
+de travaillier et incomoder ceste ville plus que jamais, et a commandé a touttes les garnisons voisines de n&#x27;y
+laisser plus venir aulcungs vivres, par ou la cherté qui estoit extreme se rendra insupportable a ceulx qui ne
+seront bien fournis d&#x27;argent pour quelques moys; a quoy je supplie treshumblemant V.re Alt.e faire consideration,
+mesmes que je suis aux emprunts des deux moys en ça et ne puis plus esperer telle commodité. Monsieur du Maienne est
+au siege de Noyon, qu&#x27;il a battu de quatorze pieces, l&#x27;on attend d&#x27;heure a aultre advis du succes et croit on qu&#x27;il
+l&#x27;emportera. Le Roy de Navarre a mandé toutte la Noblesse de son party de monter promptemant a cheval et faict
+estat de se rendre en brief le plus fort en la campagne. Mons.r du Maienne partant du siege de Noyon viendra droit
+icy pour assister a la continuation des estatz, ou lors le Duc de Feria entrera pour presenter ses lettres de Sa
+Ma.te et faire entendre a l&#x27;assemblée la continuation de sa bonne volonté, puis priera ladicte assemblée de
+commettre quelques uns pour traittez particulierement avec luy.
+L21: clear &quot;traittez particulierement avec luy.&quot; [109] X g 4t λ [178] m ooo 4→ # ƒ 11 g
+  -&gt; ... avec luy. [109 qui] *[X null] est* [178 fort] *estonné*
+L22: [280] ƒ m λ 3ſ g □ ŝ m 10 ʌ̇ 8 ∀ ∇ g 3ſ 4t ✱ ƒ 11 g [302] pp w 12 [153] [280] [261] [258]
+  -&gt; [280 de] *ne treuver icy personne* [302 affectionné?] *a la* [153 ?] [280 de] [261 le Roy d&#x27;Espaigne] [258 ?]
+L23: + ŝ m [26] 4t g 3ſ pp ŝ m ƒ □ [112] δ g 8T m 4t 8 → g 3ſ 12 [XC sign] 12 pp [23] dd m ƒ h? 12 ∀
+  -&gt; *que* [26 le duc de Mayenne] *sera venu,* [112 il] *depeschera* [XC ?] *a* [23 votre altesse]. *M&#x27;en (l?)ay-*
+L24: pp ƒ λ + clear &quot;ainsy escrit du Camp.&quot;
+  -&gt; *-ant* ainsy escrit du Camp.  (dd m ƒ h 12 ∀ pp ƒ λ = &quot;m&#x27;en ayant&quot; with h as an extra/l sign)
+Clear (rest): Par mes premieres lettres qu&#x27;on(?) este esgarées je donnois advis a V.re Alt.e d&#x27;une representation
+en forme de dialogue qui fust recitée au logis de Mons.r le Legat apres le festin qu&#x27;il fist aux Princes, Princesses
+et aultres principaux qui s&#x27;y treuverent. J&#x27;en envoie de rechef le discours a Mons.r Bruyset pour l&#x27;envoier a V. A.
+... [baise] treshumblemant les mains, supplie le Createur luy donner en parfaitte santé tout contentemant. A Paris le
+27 mars 1593. Postscript (left margin): L&#x27;on tient que revenant icy Monsieur du Maienne, Monsieur de Guise
+commandera a l&#x27;Armée. Signed: treshumble et treshobeissant et tresfidelle subject et serviteur [Lebel].
+
+## Summary
+
+- Cipher read confidently: about 85% of the letter-signs; all plain-letter runs read except a few doubtful letters
+  (f.194v L5 &quot;...ch(o)is&quot;). Codes read from Tomokiyo&#x27;s table where listed.
+- Unknown / proposed code numbers (context):
+  22 (after &quot;vers le [21 pape] et&quot; -&gt; another Roman figure, e.g. the Cardinal-nephew / Sacred College);
+  24 (&quot;les desseins de [261] pour [24] [163]&quot; -&gt; perhaps &quot;quelque&quot;?); 27 (&quot;si [27] vouloit&quot; -&gt; a person);
+  49, 103, 133, 190 (f.194r L21, &quot;doibt faire [103][133] a [49][190] pour en faire son service au besoin&quot;);
+  50 (&quot;il passe tousiours par [50]&quot; -&gt; a place, e.g. Lyon); 64, 71 (&quot;la [64] [170] [71]&quot;: 71 likely &quot;de Plaisance&quot;
+  = Card. Sega, the legate; 64 perhaps &quot;venue&quot;/&quot;personne&quot;); 84 (&quot;conducteur de ce [84]&quot; -&gt; dessein/party);
+  103; 104 (&quot;ledict [104] Tassis&quot; -&gt; &quot;Commandeur&quot;? cf. &#x27;dire?&#x27; in key does not fit); 114 (&quot;parmy [114]&quot; -&gt; ceux de
+  la Ligue?); 142 (&quot;au but que [250] [115 bon] [142]&quot; -&gt; catholique? François?); 150; 153 (&quot;a la [153] du Roy
+  d&#x27;Espaigne&quot; -&gt; devotion/grandeur); 154 (&quot;le [154] Zamet&quot; -&gt; sieur); 161 (&quot;sommes entre [161]&quot; -&gt; ses mains);
+  163 (twice, &quot;aultre [163]&quot; / &quot;pour [24] [163]&quot; -&gt; prince); 164 (&quot;du duc de Feria et du [164] Tassis&quot; -&gt;
+  Commandeur); 227 (x3: &quot;des [227]&quot;, &quot;meilleur [227] que luy&quot;, &quot;[227] le sache&quot;); 230; 235 (&quot;du [235] Jannin&quot; -&gt;
+  President); 241 (&quot;logé au [241] de Myollans&quot; -&gt; chasteau); 257 (x3, &quot;faire [257] a V.A.&quot; -&gt; plaisir/service);
+  258; 260 (subject of &quot;va conduisant les affaires&quot; -&gt; the Pope/Legate?); 274; 283 (&quot;mes aultres [283]&quot; -&gt; lettres);
+  302 (addendum, a-word: affectionné?); 305.
+- Key notes: (1) α-like sign = z (Zamet), not in Tomokiyo&#x27;s table. (2) &quot;✱&quot; is written with a g-like tail
+  (✱g) = o. (3) &quot;T&quot; barred sign with a crossbar over □ = b (as in &quot;but&quot;, &quot;desbours&quot;); &quot;ff/b1&quot; = f. (4) &quot;3ſ&quot; = r
+  and &quot;3f/3ℓ&quot; = q are easily confused; context decided. (5) &quot;□&quot; = u (also v). (6) &quot;h&quot; = l as in key.
+  (7) &quot;ʌ̇&quot; (caret) = i. (8) &quot;XC&quot; is an unlisted large sign, probably a person code (the envoy Mayenne will send).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/reading100_final.md">reading100_final.md</a></p><pre># Lebel to Charles Emmanuel I, Paris, 27 March 1593: final reading (third pass)
+
+BnF fr. 3983 ff. 194r-195r, canvases 333-335. This pass builds on `reading100_full.md` (the sign-by-sign second
+pass, which holds the sign labels) and applies every value in `codes_harvest.tsv`. Clear text is in roman,
+*deciphered text in italics*, and codes are shown as [n value]. A &quot;?&quot; marks a code value inferred from context
+(grade M).
+
+## Text
+
+### f. 194r
+
+Les 13. du present j&#x27;ay escrit a V.re Alt.e et suis tousiours attendant en bonne devotion les commandemantz de
+V.re Alt.e, n&#x27;en aiant receu aulcun des miens partant, et mesmes d&#x27;entendre que la mienne du 25. du passé soit
+arrivée a bon port, par laquelle je luy redisois les principaulx poinctz de ce qu&#x27;estoit contenu en mes lettres
+des 5. et 15. janvier, que je tiens avoir esté retenues a Nevers. Et par lesquelles je luy disois aussi que *le*
+[227 seigneur] n&#x27;a pardessa faict de credit comm&#x27;il a voulu faire croire. [112 il] *est* [178 fort] *en arriere*
+[280 de] *moiens.* [112 il] *a, a la verité, des* [227 seigneurs] *et* [150 amis?] *parmy* [114 eulx]. Et marche
+come je croy de bon pied, s&#x27;estant adressé a [23 votre altesse] [110 pour] *avoir preveu que si les premiers
+desseins de* [261 le Roy d&#x27;Espaigne] *ne pouvoient reuscir,* [23 votre altesse] *pourroit avec plus de raison que
+aultre* [163 prince] beaucoup esperer de cest&#x27;occasion, et que se rendant comme principal *conducteur de ce* [84
+negotiation], [112 il] *ne pourroit sinon en* [274 recevoir?] *beaucoup de* [230 commodité?] *des apresant et a
+l&#x27;advenir,* [250 tout] [136 bien] *et avancemant* [110 pour] [113 luy] *et les siens, que j&#x27;estimois ce que* [23
+votre altesse] [113 luy] *vouldroit* [105 faire] [129 donner] *des apresant* [110 pour] [136 bien] *employé.* Je luy
+en disois de mesmes pour le regard de *son compagnon et du* [235 président?] *Jannin, mays que* [280 de] [113 luy]
+*remettre de grandes sommes entre* [161 ses mains?]. Je n&#x27;estois pas de cest advis, bien ay je tousiours estimé
+comme je fais encores estre tres requis que [23 votre altesse] *doibt* [105 faire] [103 venir] [133 incontinant]
+*a* [49 Paris?] [190 argent] [110 pour] *en* [105 faire] *son service au besoin,* sans que toutesfoys ledict [227
+seigneur] le sache, [109 qui] *ne cesseroit d&#x27;en* [305 avancer?] *le desboursemant. Le* [154 sieur?] *Zamet*
+seroit tres propre s&#x27;il en voulloit prendre la charge. Il doibt venir bien tost pardessa, je tascheray
+
+### f. 194v
+
+de descouvrir son intantion. Je diray au reste a V.re Alt.e qu&#x27;il semble que [260 Dieu?] *va conduisant les* [98
+affaires] *au but que* [250 tout] [115 bon] [142 serviteur] [280 de] [23 votre altesse] *desire. Les desseins* [280
+du] [261 Roy d&#x27;Espaigne] [110 pour] [24 l&#x27;Infante], [163 prince(s)] *et* [113 luy] *sont pleins de toutte
+impossibilité. Les* [257 faveurs] *que je reçois du duc* [280 de] *Feria et du* [164 filz?] *Tassis me font esperer
+que, ne pouvant reuscir les dicts desseins* [280 du] [261 Roy d&#x27;Espaigne], *elle soit resolue* [280 de] [108(105?)
+faire] [257 faveur] *a* [23 votre altesse]. Et mesmes j&#x27;ay sceu que *ledict* [104 Commandeur?] *Tassis a dict a un
+personnage qu&#x27;il croit* [qu&#x27;][112 il] *en faudra* [103 venir] *la.* [64 le] [170 Cardinal] [71 Pelvé] a aussi tiré
+quelque mot en passant qui approche de cella, et m&#x27;asseure que V.e A. n&#x27;a oublié de faire [105 faire] *les
+offices requis vers le* [21 pape] *et* [22 le Legat?/les Cardinaux?], *pouvant asseurer* [23 votre altesse] *que si
+le* [21 pape], *voyant les desseins de* [261 le Roy d&#x27;Espaigne] *ne pouvoir reuscir, inclinoit* [280 de] [105
+faire] [257 faveur] *a* [23 votre altesse], *elle ne pourroit desirer d&#x27;avoir pardessa un meilleur* [227 seigneur]
+*que* [113 luy] *sera ledict* [170 Cardinal] [71 Pelvé], [278 comme j&#x27;ay?] [108 par] *mes aultres* [283 lettres]
+[251 faict] *sçavoir a* [23 votre altesse], *comme* les procureurs du pais de Provence et la Court de Parlemant
+mesmes ont escrit icy a leurs deputez de prier Mons.r du Maienne de donner le gouvernemant dudict pais a Monsieur
+de Vaudemont, a quoy ledict seig.r ne s&#x27;est voulu resoultre jusques a ce qu&#x27;il sache la volonté de V.re Alt.e. Le
+porteur et sollicitteur desdittes lettres est garre(?) bien cognu, comme je croy, de V. A., qui est de ceste ville
+et a demeuré fort long temps a Marseille. Il a, des que je suis pardessa, desia faict deux voiages en Provence, et
+s&#x27;y en est retourné il n&#x27;y a pas long temps. [112 Il] *passe tousiours* [108 par] [50 Lyon?]; *si* [27 Mr de
+Nemours?] *voulloit, en* [105 faire] *un presant a* [23 votre altesse]. Il me semble qu&#x27;il seroit fort bien logé
+*au* [241 chasteau] [280 de] *Myollans.* Je suis attendant d&#x27;heure a aultre
+
+### f. 195r
+
+[l&#x27;hom]me de l&#x27;Amy et par mesme voie quelque notable secours, et congé de me pouvoir acheminer devers V.re Alt.e
+incontinant que l&#x27;assemblée des estatz se separera, suivant la treshumble requeste que j&#x27;en ay faict cy devant a
+V.re Alt.e, et le requerant ainsi son service. Le Roy de Navarre se resoult de travaillier et incomoder ceste
+ville plus que jamais, et a commandé a touttes les garnisons voisines de n&#x27;y laisser plus venir aulcungs vivres,
+par ou la cherté qui estoit extreme se rendra insupportable a ceulx qui ne seront bien fournis d&#x27;argent pour
+quelques moys; a quoy je supplie treshumblemant V.re Alt.e faire consideration, mesmes que je suis aux emprunts
+des deux moys en ça et ne puis plus esperer telle commodité. Monsieur du Maienne est au siege de Noyon, qu&#x27;il a
+battu de quatorze pieces; l&#x27;on attend d&#x27;heure a aultre advis du succes et croit on qu&#x27;il l&#x27;emportera. Le Roy de
+Navarre a mandé toutte la Noblesse de son party de monter promptemant a cheval et faict estat de se rendre en
+brief le plus fort en la campagne. Mons.r du Maienne partant du siege de Noyon viendra droit icy pour assister a
+la continuation des estatz, ou lors le Duc de Feria entrera pour presenter ses lettres de Sa Ma.te et faire
+entendre a l&#x27;assemblée la continuation de sa bonne volonté, puis priera ladicte assemblée de commettre quelques
+uns pour traittez particulierement avec luy, [109 qui] *est* [178 fort] *estonné* [280 de] *ne treuver icy
+personne* [302 affectionné?] *a la* [153 grandeur?] [280 du] [261 Roy d&#x27;Espaigne]. [258 Aussitost?] *que* [26 Mr
+du Mayne] *sera venu,* [112 il] *depeschera* [XC quelqu&#x27;un?] *a* [23 votre altesse]. *M&#x27;en ayant* ainsy escrit du
+Camp. Par mes premieres lettres qu&#x27;ont esté esgarées je donnois advis a V.re Alt.e d&#x27;une representation en forme
+de dialogue qui fust recitée au logis de Mons.r le Legat apres le festin qu&#x27;il fist aux Princes, Princesses et
+aultres principaux qui s&#x27;y treuverent. J&#x27;en envoie de rechef le discours a Mons.r Bruyset pour l&#x27;envoier a V. A.
+... [baise] treshumblemant les mains, supplie le Createur luy donner en parfaitte santé tout contentemant. A
+Paris le 27 mars 1593. (Postscript, left margin:) L&#x27;on tient que revenant icy Monsieur du Maienne, Monsieur de
+Guise commandera a l&#x27;Armée. Signed: treshumble et treshobeissant et tresfidelle subject et serviteur [Lebel].
+
+## Decisions taken in this pass
+
+- f.194r l.6 &quot;h w .227.&quot; = *le* [227 seigneur] (h = l; w taken as the e form here, forced by the sense).
+- f.194v l.5 &quot;+ □ g 2e m 3ſ g ʃ 8 # ʌ̇ ooo&quot; = *que je reçois*: at 2x zoom the doubtful sign is the tail of g
+  with a cedilla-like stroke before 8 = c. Settled.
+- 103 = **venir**, from two contexts that fit each other: &quot;il en faudra *venir la*&quot; (f.194v l.10) and &quot;doibt
+  faire *venir incontinant* a [49] argent&quot; (f.194r l.21, *faire venir argent*). This also splits the f.194v l.10
+  sentence: &quot;... *venir la*. [64 le] [170 Cardinal] [71 Pelvé] a aussi tiré quelque mot ...&quot;.
+- 257 = **faveur(s)** in all three places (&quot;les faveurs que je reçois&quot;, &quot;faire faveur a V.A.&quot; twice), matching the
+  gloss &quot;en la faveur de l&#x27;Infante&quot;. The &quot;parvenir&quot; gloss is not needed here.
+- f.194v l.7 &quot;280.108.&quot; before 257: the last digit is blotted. It is read as [105 faire] (&quot;resolue de faire faveur
+  a V.A.&quot;), the same wording as l.14 &quot;inclinoit de faire faveur a V.A.&quot;.
+- &quot;pp 12&quot; / &quot;12 pp&quot; (three places, set between dots) = *a* (à), written with two a-signs. Taken as one word.
+- 142 = **serviteur** (&quot;au but que tout bon serviteur de V.A. desire&quot;); 115 = bon.
+- ✱ with a g-tail = o; barred T/□ = b; struck 4t signs in l.15-16 are the writer&#x27;s own cancellations and are dropped.
+
+## Counts (f. 194r-195r cipher, measured on the sign transcription of `reading100_full.md`)
+
+| | tokens | with a value |
+|---|---|---|
+| Letter signs (incl. q/et signs) | 882 | 882 (key values); 6 of them settled by sense, not by shape (below) |
+| Nulls (X, 4+, o-f) | 8 | n/a |
+| Code tokens | 110 (54 distinct numbers + the XC sign) | 110 |
+| All enciphered tokens | 1000 | 1000 |
+
+Code tokens by grade:
+
+| grade | tokens | numbers |
+|---|---|---|
+| H (Tomokiyo&#x27;s list or glossed at the time) | 65 | 21, 23, 24, 26, 71, 84, 98, 105, 108, 109, 110, 112, 113, 114, 129, 250, 251, 257, 280 |
+| C (aligned or several contexts) | 26 | 64, 103, 115, 133, 136, 142, 163, 164, 170, 178, 190, 227, 261, 283 |
+| M (single-context inference) | 19 | 22, 27, 49, 50, 104, 150, 153, 154, 161, 230, 235, 241, 258, 260, 274, 278, 302, 305, XC |
+| open | 0 | none |
+
+The M codes where only one word fits (forced): 154 sieur (le _ Zamet), 161 ses mains (sommes entre _), 235
+président (du _ Jannin), 241 chasteau (logé au _ de Myollans). Also near-forced: 260 Dieu (_ va conduisant les
+affaires au but que ... desire), 258 &quot;aussitost/des&quot; (the sense &quot;as soon as&quot; is forced, the word is not). The
+rest are the sense only: 22, 27, 49, 50, 104, 150, 153, 230, 274, 278, 302, 305, XC.
+
+## Remaining uncertainties
+
+1. Codes with a sense but no word: 22 (a Roman figure beside the Pope: Legate or Cardinals?), 27 (a man who could
+   seize the porteur on the road; Nemours, governor of Lyon, by history), 49 (where the money is to be sent:
+   Paris?), 50 (the porteur&#x27;s route, &quot;par [50]&quot;; Lyon?), 104 (title before Tassis; Tomokiyo&#x27;s &quot;dire&quot; does not fit
+   here, so the digits may be misread), 150 (amis/serviteurs), 153 (grandeur/devotion/service), 230 and 274
+   (&quot;en [274] beaucoup de [230]&quot;: recevoir/tirer ... commodité/contentement), 278 (before &quot;par mes aultres
+   lettres faict sçavoir&quot;: comme j&#x27;ay?), 302 (an a- word from the addendum, affectionné?), 305 (an a- word
+   between 302 and 310 avoir: avancer?), XC (a large sign not in the key: the person Mayenne will send).
+2. 164 &quot;filz&quot; (harvest, from &quot;le filz de Vaudemont&quot;) gives &quot;du filz Tassis&quot;, which is odd; Commandeur fits history
+   better. 104 and 164 both stand before Tassis and are different numbers.
+3. f.194v l.7 code 108/105 before 257 (blotted digit; read 105 by the parallel phrase); l.16 278 and 108 are also
+   blotted in their last digit.
+4. 227 &quot;seigneur&quot; is C from esp. 336; &quot;amy&quot; would also read in most places.
+5. Letter signs settled by sense, not shape: f.194r l.7 3ſ in *arriere*; l.23 m in *cesseroit*; f.194v l.4 h in
+   *impossibilité*; l.5 the sign before 8 in *reçois*; f.195r l.23 h in *m&#x27;en ayant* (an extra sign, dropped);
+   the &quot;pp 12&quot; doublings for *a*.
+6. Clear text: &quot;partant&quot; (f.194r l.2) and &quot;garre&quot; (f.194v l.21, the porteur&#x27;s name) are uncertain readings of the
+   clear hand, not cipher.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/texts/key.md">key.md</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/codes_harvest.tsv">codes_harvest.tsv</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/lebel1593/src/savoy.png">savoy.png</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/lebel1593.json"></figure>
 <!-- replay:end -->

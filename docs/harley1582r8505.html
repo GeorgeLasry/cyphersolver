@@ -50,7 +50,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#records">Two records, one deciphered at the time</a><a href="#memoir">What the memoir is</a><a href="#cipher">The cipher, and the letter written as dots</a><a href="#break">How the key was recovered</a><a href="#reading">The decipherment</a><a href="#open">What stays open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#records">Two records, one deciphered at the time</a><a href="#memoir">What the memoir is</a><a href="#cipher">The cipher, and the letter written as dots</a><a href="#break">How the key was recovered</a><a href="#reading">The decipherment</a><a href="#open">What stays open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> The catalogue item paired two Harley 1582 records as &ldquo;unknown sender to unknown recipient&rdquo;. They are two separate problems. R8501 is one of Sir Edward Stafford&rsquo;s 1586 despatches, with a contemporary decipherment on its own f. 72r (<a href="harley1582r8500.html">Stafford, 20 August 1586</a>). R8505 is a French political memoir in a cipher for which no key or decipherment was found on DECODE, in the volume&rsquo;s other records or in print. Its clear passages give it a title, <em>L&rsquo;Estat du Roy de Navarre &amp; de son party en France</em>, and a date after 1580. All four sides were transcribed (about 3,600 symbols) and the key recovered from the ciphertext alone, with no crib. The first solver runs failed. A control (real French enciphered with a homophonic key of the same shape) failed in the same way, which placed the fault in the solver, not in the text. With the solver corrected the key came out, and the recovered alphabet exposed a transcription error: it had <em>no symbol for m or b</em>, which is impossible for French. The dot groups, dropped as punctuation by every earlier pass, are the letter m; a closed oval pierced by a stem is b. After re-transcription on that basis, 95.1% of the deciphered text falls in French words: the prince of Parma, a party of malcontents, an Italian engineer at Lisbon, Beaucaire on the Rh&ocirc;ne, B&eacute;ziers, Carcassonne, Montmorency, d&rsquo;&Eacute;pernon.
 <em>Extent: key recovered; 95.1% of the deciphered characters fall in French words (measured). Open: the ten nomenclator numbers, which are names, and about 5% of scattered characters where the ink is faint or two shapes of one family cannot be told apart.</em>
@@ -111,6 +111,221 @@
 <p>Two things are left. The <strong>ten nomenclator numbers</strong> are names. Three have contexts that narrow them: 72 is a country and almost certainly France (&ldquo;la guere contre ceus dela religion en <b>72</b>&rdquo;, &ldquo;demeurera ferme en <b>72</b>&rdquo;); 81 is a person and probably the King (&ldquo;le <b>81</b> son frere&rdquo;); 21 is a feminine noun, the League or the army (&ldquo;<b>21</b> ch[ar]gee dela guere&rdquo;). None is fixed by the text. About <strong>5% of the characters</strong> do not resolve into French words: faint ink, and shapes ambiguous within one family.</p>
 <p>A note on method, since it bears on the figure. ff. 263v and 264v were re-transcribed symbol by symbol from the images against the recovered key. On ff. 263r and 264r the first-pass transcription was corrected only by a constrained pass. A token could be swapped only between shapes that the second transcription proved confusable (the dot groups and the f symbol, a stem with a dot cluster at its upper right, so a faint stem looks like a bare cluster; &phi; and the long-s; the two epsilons; the two stem-loops; &chi; and the hourglass; the three bar-shapes; the bracket and &Pi;), and only where the word model gained clearly. That is 77 tokens, 2% of the text, each listed in <code>emendations_all.txt</code> so it can be checked against the manuscript.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R8505, &quot;L&#x27;Estat du Roy de Navarre et de son party en France&quot; (Harley MS 1582 ff. 263-264)</h3>
+<p>A French political memoir, written after 1580, surveying Henri de Navarre as a political asset for an outside reader: his two &#x27;qualitez&#x27; (first prince of the blood, chief of the reformed churches), the places and garrisons he holds in Guyenne, Languedoc, Dauphiné and Provence, his following, his alliances and the marriage question; it belongs with Navarre&#x27;s embassies to the Protestant powers in the mid-1580s. The cipher carries the sensitive clauses inline in the clear French (d&#x27;Espernon, Beaucaire sur le Rosne, Besiers, Carcassonne).</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/final/f1.txt">f1.txt</a></p><pre>1.1|sa faveur. Joinct que| Xo 7 : psi X wf G Xo n U Gm o B |(cont.)
+1.2|(line start)| L b d # b Br sh q f 7 w o Gm : L b wf hg wT L E3 L o d # T #81 7 B f q u Xo n E wf L b ne 7 o Eb H Gm #21 |(end)
+1.3|(line start)| Oi X psi f Gm o dd w |vers les exemples et eschantillons|  
+1.3b|eschantillons| hg T G Xo 7 b : Pi o E3 B wT L |donne grand|  
+1.3c|donne grand| Xo q U wf w 7 E T |(end)
+1.4|(line start)| #51 ne f cy T L Xo |personne n&#x27;a occasion de se plaindre et auquel nul ne peut
+1.5|Il a tant paty| PiG f # 7 E b Pi q T L Oi f F dd : hg sh n ne q #81 Pi f # L E : psi b Usq Gm w dd Gm U # Gm E3 |(end)
+1.6|(line start)| B wT Pi q hg Gm n ne L #21 w0 T u Xo II |ont suivi a une haine
+1.7|quon a se plaindre de| Eb PiG q E3 : Pi wT U cy f 7 ne L Xo T y |.
+1.8|Et y a apparent qu&#x27;il a eu| q L T : 7 E3 : Gm U |(end)
+1.9|(line start)| X L # 7 n ne E G b I # L E dd b Eb w Gm n |la plus part la recherchent et prendront goust a luy.
+1.10|est lors que| Eb Pi f E3 + 7 U G b dd w0 T Gm n 7 wf sh o 7 w Gm f U L # G + B I E3 7 U Pi o Eb eq psi G Tn wf Gm B phi q 7 X L U hg E wT Xo 7 : L o wf II |(end)
+1.11|Quils ont plonge| ne Gm f E b d 7 n hg L wT o Pi o 7 wf dd sh y Gm T E3 L + Pi : L Tn psi? b Gm? E |(end)
+1.12|(line start)| b 7 psi d f Oi w q L B I |. con endure nulle vergongne
+1.13|aussy bien| psi Xo X dd L 7 d E X f y : 7 ne L Om PiG w E3 X L wT sh v E q : 7 Tn Pi : 7 u Xo L n wf phi G L o : I sh b ne Gm H 7 # E b U |que plusieurs personnages</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/final/f2.txt">f2.txt</a></p><pre>2.1|peussent Joindre selon a Allemagne| ti 7 hg L o ne psi b B o 7 Xo E dd n E3 Gm b wf # Tu q PiG T wT q b sh w ne wT L 7 B T o 7 II eq Pi w : 7 ne L J sh b # f G q Gm phi dd 7 o cy q L |�
+2.2|(line start)| hg Xo T n E3 L ti w Gm B 7 L wf b V E X L d dd B tr sh o o PiG b G X o y psi dd wf psi q 7 Xo w0 q L Br Gm o wf dd Xo G sh : 7 J E hg psi phi X L |
+2.3|(line start)| L d U o Pi dd psi Xo X L Tu q cy T Gm X E E ne w L n U 7 b d X Gm E3 psi II : E dd w L n w0 f G L o q b phi L U PiG o b Pi E3 Gm wT Pi dd B |�
+2.4|(line start)| E3 f y q y Gm d Pi phi L y # Gm n E q wf w L U |Et dautant plus
+2.5|les premiers susdits| V psi bx sh b PiG Gm dd X I 7 n B Tu phi Xo dd E |pour la direction des affaires de la religion| X Gm U 
+2.6|(line start)| w0 q 7 Xo II wT E hg PiG wT B L b d wf sh f q dd Tu T |Conseil du Roy de Navarre
+2.7|des plus grands de la religion| X Gm w hg X 7 Pi |
+2.8|(line start)| Gm o J 7 n B psi eq eq E dd w L |Chiffre ont este baillees pour secret entre les officiers| Xo L E J psi T U Gm E3 # 7 # L I : I G E b ti 7 # f wT 
+2.9|(line start)| 7 o wf L b J sh wT q 7 f G? w0 T 7 X Gm #? o ti d b 7 E3 B L F 7 J f d L 7 o f o II T X Tu wT B dd J Xo 7 T Gm f w0 q 7 # L wf sh f B L U Xo L E3 |�
+2.10|(line start)| J PiG b B wT E phi L o d G Pi o E3 sh o n L hg X psi dd o B L o T E u b phi T X L E3 # 7 Xo Pi V Tu f d L II cy T Pi b q sh dd wf B Pi b E X Gm n o PiG T w E |
+2.11|(line start)| hg wT Tu B dd w0 f L w E X L T # wT PiG G wf ne 7 J Gm T U H L Xo E w Gm Xo dd Br G sh b f 7 q E T n U V X L n hg w L hg psi wT Tu B T : E3 7 d X Gm T U |
+2.12|(line start)| n w0 T G dd E n Gm : PiG b B Gm o n q y n E3 7 L B E X 7 : E Br b 7 X L U : q o dd B G Pi b n cy T T E E : psi n U 7 o B Tu Xo o Pi b hg sh q wT |
+2.13|(line start)| tr PiG T X Gm wT d PiG q B E J sh f hg hg E w X 7 wT Om Pi n b 7 L b Gm wf X L E3 B w Pi T hg L n f o T G E3 L o T PiG V L b B Gm o Usq E E3 J Pi b Br o 7 X q dd E |
+2.14|(line start)| ne sh b J w0 q 7 X L E3 tr E f n L n # 7 # L eq dd psi b ti 7 # T w L o B Gm eq T X wf o hg X dd Gm b wf X E wT psi dd U PiG b # 7 Xo L E wT 7 d L o dd w |
+2.15|(line start)| tr 7 : 7 T w I hg psi wT I? dd X Xo 7 : 7 b B L o U PiG b Gm o B dd Gm w |. Mais tout ainsi
+2.16|En la juste occasion que nous avons| # Gm ne dd : 7 w Gm wT X E w L o # o B G PiG T # 7 n ne dd B Gm E3 hg Xo E tr 7 U E3 dd PiG b n L phi sh dd PiG G B |�
+2.17|(line start)| psi n U L f w Gm # T b Gm phi sh b o 7 E wT : 7 L ne L wT Gm o n d w L E w0 q dd hg Gm T n B d Gm o dd w Xo E J psi : hg Tu Br b 7 L wf Gm n X sh dd Usq dd Gm |
+2.18|(line start)| X E Br f L w wT L # b tr 7 b wf wT L # 7 b sh U hg wT PiG T dd o 7 E q 7 w E3 X E J dd w tr Pi o : Gm w L o F 7 # L X psi eq wT Tu o ti 7 |Je feray
+2.19|aise de se resouldre| psi # o eq 7 w L wT Xo E wT Gm : dd U L # o ti 7 X L E3 7 B w0 q Tu o ne b PiG n 7 b o L : G E3 |s attireront que leurs
+2.20|le soulagement ... fardeau et le suis tout ensemble.| E dd X b 7 T PiG o B hg Xo T n J Xo E dd w E q U? 7 tr Pi T wT E3 # 7 # L u sh wT U PiG f G Xo b E f L T o q E w0 T 7 n psi hg w L U 7 b B dd Xo n L |�
+2.21|(line start)| wT 7 E3 Pi T ne w E |par advis des Eglises de France ... la volonte de son ennemi| hg f y n G q dd X b 7 |�
+2.22|reddition des places, toutes toutes nous contes (next line)| Xo E hg 7 T B w L wf L o dd w hg psi wT hg Xo T n eq PiG wT B L E3 7 d E n U 7 q w L 7 n : |Et abregera ... Samson ... la gueule
+2.23|du lion mesmes| E dd X L n : sh G L o E3 Xo T y U PiG b d w L eq f n L II hg E w J Gm T U hg sh T w Xo E J Pi o n 7 w f E B dd PiG b # Gm U? |
+2.24|(line start)| cy T b 7 X I dd Xo b 7 B w psi b w0 T X Xo 7 Br T 7 wT L E : PiG dd b Br n w0 f L hg sh T wT Xo E E3 G L o b 7 L B cy T d L o Xo Tu E o 7 b 7 b 7 o 7 n sh o |
+2.25|(line start)| Usq f L w Gm E : PiG o T U dd o wf L w Gm n E3 L II phi T L X q V |. (end of letter)</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/final/f3.txt">f3.txt</a></p><pre>3.1|a mesure que ses ennemis se rallient| E3 sh dd b Gm o X L f w 7 b Eb wT L B 7 o E T w L n f n + dd B psi b wf # 7 E3 L F # G + 7 n L B dd wT psi f y b Usq w0 q dd # G T 7 w |(line end, right margin)  [y=282]
+3.2|(line start)| w dd n R 7 b B Xo 7 T wT L n hg w u B 7 Eb Xo 7 T w E3 :3 sh dd Gm b n E Xo Gm T w n |les plus grands princes de la Chrestiente| J PiG :3 :3 7 X L #36 #81 |Et l&#x27;alliance par ladite d&#x27;un  [y=301]
+3.4|brac[?]e a[uec] cite[?] Catholiques (faint)| Gm B L n hg sh T n 7 w E X 7 E3 psi eq eq L tl B G o Pi b n L eq d J B dd sh o E # T hg psi X L w0 q dd ne Pi w Gm E3 L o d f psi b wf X Gm :2 7 w E n PiG b phi w psi n |(line-fill dash, line end)   [decodes: etesl-ouseralea-atmtm-ectinonsetm-action-adulale-quidoresenauant-lemerasonbras; &quot;qui dores en auant le m... son bras&quot; is firm, the first half is not]  [y=551]
+3.5|(line start; cipher begins at the left margin)| ne w sh dd # B Gm dd Xo 7 Br L + f B 7 T wT # 7 n Gm n hg Xo T n X Gm wT o q :2 dd I f cy? ne # L n n 7 dd b Br E |. (full stop; paragraph ends, rest of line blank)  [y=566]
+3.7|Religion. Il ne s&#x27;y peut plus fier: Et se voyant forclos de ce Party, il voudra s&#x27;appuier d&#x27;vn autre ou il y aura a la besongne| J Gm n B # 7 n L w 7 b ne w L |(line-fill dash, line end)   [decodes: cestdeserendre = &quot;c&#x27;est de se rendre&quot;]  [y=592]
+3.8|(line start; cipher fills the whole line)| sh f J Usq L I PiG T dd o n Eb wT f :3 7 b wf hg wT dd o + G hg E Xo # 7 Xo psi w T G b 7 ne L tl Gm T II # Gm X d wT L Xo u Br G sh b J Pi :4 L E dd b n G R PiG dd Eb cy T G X o L |(line-fill dash, line end)   [decodes: oucgetm ou instrument principal de la ruine de ceus de la religion come ainsi soit quil ne]  [y=603]
+3.9|(line start; cipher fills the left half)| hg L f B # L E3 Usq f dd R 7 w J Gm eq psi dd + B ne d o T 7 w n E f B wT L :3 7 b B |Execrable envers tous hommes qu&#x27;ils s&#x27;agissent en zele e y r[?]auoter sua a q[uelque]   [decodes: peutde(s)guisercetmaictdanuersautrement; first sign hourglass (hg) not chi; the E after &quot;L&quot; is where the plaintext wants s - see header note]  [y=615]
+3.10|...pour que ce fust le party de sa Religion de sa gl[oi]re o[?] est notam[m]ent q[ue] sans la vi[ctoire]| # L :3 PiG b n dd Gm T w ne L f Gm Xo q Gm T wT 7 o X psi Xo sh dd d B w E c wf . L wT |(line end)   [decodes: demonsieur de uelueur en la loi a trait.er - &quot;de Monsieur ...&quot; is firm, the rest not]  [y=628]
+3.11|(line start; cipher fills the whole line)| d f L + X L hg wT c b tl 7 # L hg E w :4 7 hg PiG q wT Xo f y wT 7 o # w L Xo 7 R hg Xo E tr 7 E3 psi T dd Xo wf L o U dd d psi b Br L n q d d B I J Gm I U T dd Xo Xo f y |(line end)   [decodes: auec le prince de parme pour luy rendre les places a-auil tensia... ; &quot;auec le prince de Parme pour luy rendre les places&quot; is firm]  [y=640]
+3.12|(line start)| J u n n T d ne psi |pour sauuer les personnes qui ch[?] en r[?]s[?]m este ch[?] i any[?]   [decodes: cissnada - does not read; the old ct had &quot;J o R n T d ne psi&quot;]  [y=653]
+3.16|Personne maintenant a fondement certain quil retiendra en France -| Pi T n psi o R # sh q Eb L Xo L w PiG psi E # o eq wT Gm wT L tl w d G o # w E w0 f dd Xo o 7 wT L X 7 q L |(line end)  [y=790]
+3.17|(line start)| J sh o B wT L Xo T y , f b hg d w B psi ne L :3 E Xo J sh b wf L o n |dont le subiect estant beau, veu que le nombre e croist e multiplie tous les jours  [y=806]
+3.18|soubz lestat present: Luy a il de plus plausible que de luy mettre en main, pour le moins en lesprit| w0 f L X w0 T 7 # L n E3 7 dd b Br L o d o Br Xo 7 |(line end)  [y=821]
+3.19|(line start)| B 7 w wT L 7 wf L E3 J sh n R 7 |en delivrant par mesmes moiens e le Roy de France de s&#x27;embrouiller e le Roy d&#x27;Espagne de peine? Et Je scay que des l&#x27;an-  [y=836]
+3.20|passé le Roy d&#x27;Espagne faisoit traicter a la soubz main avec luy par un certain| G B E X dd 7 b cy T c n Gm w B # dd o Br L o G L f wT psi X c E3 phi sh b 7 ne Pi b wf |(line end)  [y=853]
+3.21|(line start)| Xo 7 E3 X Gm Eb wT L R :4 7 n sh b wf q L o T 7 E3 Gm R :3 E G b R |Maintenant aussi la Roine sa mere va traicter avec luy le mariage de sa fille [de]  [y=868]
+3.22|Lorraine| hg sh f w X 7 wT L G Pi dd o ne wT L psi T 7 J Gm n B L :4 d G R PiG b L o o 7 :4 dd L ne L Xo E J Om w L n Eb dd L o B 7 L q hg? d w B dd J f Xo c 7 wT L |(line end)  [y=884]
+3.23|(line start)| :4 L o B # L Xo 7 E3 wf E Eb # d b Br Xo 7 B L wT w L psi cy T PiG y q 7 f X 7 E3 hg w d wf c w0 f L E3 sh wT ne c b E G wT L n # 7 J Gm T Pi ne L Br T y E3 Gm L o 7 E3? J Pi |(line end)  [y=900]
+3.24|(line start)| R 7 #6 H Pi dd B wT L :4 7 ne G 7 w |(line ends short, rest of the line blank)  [y=916]
+3.25|Car quant a fu(?)| #21 J Usq L I ne L X E Usq f L w L + Pi b B w L tr 7 f II ne 7 Xo psi wT L X dd Br G PiG b L o #72 X 7 #81 n sh b eq w L wT 7 E |ses pratiques  [y=928]
+3.26|e Pour avenir se suspecte quil ne le laissera jamais tenir la campagne e France. Et d&#x27;autre part il se| ne L L eq dd 7 B E o wf # T w PiG y n Pi b eq wT Gm w L |(line-fill dash, line end)  [y=938]
+3.27|(line start)| w0 f dd X |ne prendra jamais| Xo E J Om psi w Br L ne T o L d wT :? 7 L |qui ne sont| d E3 E ne L f sh B c Pi b tl L cy T dd Xo T y d psi hg E w L o ne 7 w0 f L Xo 7 |(line-fill dash, line end)  [y=951]
+3.28|(line start)| wT PiG y Xo q y hg L w :3 L B 7 |(short line, rest of the line blank)  [y=963]
+3.29|(line start)| #57 n + E G dd Gm phi c 7 b |n&#x27;est pas si facile a vaincre? Mais quoy qu&#x27;on confesse aussy quelle est aisee a troubler| X L E3 q Xo :4 psi w dd d Usq Gm ne #721? |(line-fill dash, line end) [the final group is written between dots; it may instead be the sign 7 followed by the number .21.]  [y=977]
+3.30|aggreable aux uns ... partir le Pais en Ligue e mis la Court e au Conseil en combustion| J Gm n B wf d f wT L E3? B L f b hg wT dd o + 7 |(dash, line end)  [y=1041]
+3.31|(line start)| w0 f dd |sans les beaucoup examiner ...  [y=1062]
+3.32|maintenues? e savoir tousiours| E3 sh wT B dd wT ne L Xo d f o Gm T? wT :3 7 L # L wT 7 dd R wf w L E3 hg sh T wT Xo E dd L B 7 wT L wf 7 n hg d b ne wT L E3 f wT X 7 |(dash, line end)  [y=1248]
+3.33|(line start)| hg d dd R # 7 J Gm Xo f y w0 q dd |la voudroit troubler en elle. A cest effect savoir ...  [y=1271]
+3.34|que seule ombre e protestation de mariage �| wf d o ne dd n w0 f L X 7 hg psi wT B V ne L tl 7 q II # 7 Xo psi w L X dd Usq G sh b ne L :4 7 T wT L w psi eq 7 w :4 7 L o #72 L wf |(line end)  [y=1398]
+3.35|(line start)| 7 E #99 Xo Gm U #81 #36 E q w sh o B hg 7 T ne 7 :4 Pi V L o # 7 X q y :2 E Xo eq psi dd wf L 7 B hg Pi T w d u? o b 7 X L psi L o b 7 w L n q E3 d? Gm X L E T psi c E3 n 7 w T Gm w wf? L |(line end)  [y=1413]
+3.36|(line start)| Gm B hg Pi T w w? Xo 7 E3 #99 |Si dea la amendemens elle ait tenu la ligue que s&#x27;estoit touchant ... les choses ne fussent au poinct ou elles sont ... (line end; all clear after the run)  [y=1427]
+3.37|et celluy ou elle a est� tres marrie de les voir| PiG sh T E b ne E X psi :2 w T? o J Gm |Le Roy de Navarre ... (line end)  [y=1443]
+3.38|mieulx| 7 T w f w0 w? L Xo 7 psi Xo T q 7 w c c? B 7 b psi dd w w? E d T L n o V E3 7 X Pi b U T w0 cy T psi X q B L o y n L X X? sh b Xo E X 7 T w L X 7 Xo Gm E3 E3 psi f f T o ne Pi 7 n L E T w T G b L I |(line end) [PROVISIONAL]  [y=1461]
+3.39|(line start)| q L E3 Pi Pi Pi d d X 7 n psi X q b T q n E3 7 I Gm o B sh o B f b 7 b L Xo 7 T L T L n n w w L 7 7 Eb L o w d w d n L I Gm b c o X w T? sh V L y X L f w E3 7 b o T o 7 :2 G n X L E3 E :2 7 w w d sh o # 7 Eb L X Gm |(line-fill dash, line end) [PROVISIONAL]  [y=1487]
+3.40|(line start, x=468; the line above the brief&#x27;s first line)| d o ne q 7 b Gm :3 7 o B L o X Gm T w n X Gm wf n PiG phi? Gm Usq? 7 w G? H L n X 7 L q w E |qui est gratuit ... honorable-| 7 b rho? L w n Eb Pi T E3 psi f B w L n L B o sh T rho? E d o 7 B b 7 |(line-fill dash, line end)  [y=1499]
+3.41|(line start, x=469)| w0 T psi X dd B Gm U cy T 7 G? # |Cela faut quy ne| E f sh n Gm B X X X q 7 n psi B Gm o ne w w L psi U sh b E :4 d b b G 7 L w0 T G X II Pi d T Eb psi o T w L F? Om 7 phi? L psi E3 L Gm 7 Gm o b 7 E |(line end, x~1292)  [y=1515]
+3.42|(line start, x=471)| E3 psi T? 7 b B n d X Xo T? V :2 I sh o? Gm? X Xo dd? n G w # L Xo T? L Pi eq w w0? wf X L rho? wf Usq? 7 w T G J Gm |On ... [blotted word] ... la Roine qu&#x27;elle a faict merveille e quelques (clear to the line end)  [y=1531]
+3.43|fois en reproche d&#x27;ingratitude. Mais elle se peut souvenir q depuis l&#x27;an 70| Gm X L T psi hg psi n H 7 Gm X Gm Br? # 7 b o # 7 b G L w X sh T? T? w L I? Gm? n :2 |(line-fill dash, line end)  [y=1547]
+3.44|(line start, x=471)| w0? T 7 |Jamais Je n&#x27;en di tam d&#x27;affect suy passe tam de peril. Et croy a quelle fin l&#x27;an 79 fins| :3? Pi b V L o T? psi o B Gm w B E G? d Gm? E3 f 7 n? |(line-fill dash, line end)  [y=1580]
+3.46|(line start, x=473; the whole line is cipher)| cy T d X Gm b B L E3 d w L 7 b n E 7 b? w f d 7 o 7 n dd? L E3 d? n E V b B d X L :2? 7 T w L :2 hg Xo sh d Gm L d X Gm T w E3 n d L n B J Gm w T L X X? L E cy? |(line end, x~1240)  [y=1628]
+3.47|ron so[n]uoir e plus estre [c]onuenoir puis n[a]tre quilz se conseruassent [i]aux tant aux mesmes sans auoir est honnuer(?) dy k[e] sa part .| L Gm wf # E E? Xo dd? E o? F? 7 E3? |(line end, x~1312)  [y=1647]</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/final/f4.txt">f4.txt</a></p><pre>4.1|(line start; the clear above ends &quot;...Item les pais de Toulouse&quot;)| 7 Eb :2 psi G o B Gm b Tu o wf dd sh f u n U E o Eb H L Xo psi :3 G B dd 7 Gm E3 wf w Pi u Eb L # 7 :4 PiG b n c Gm q wT ne L |(line end)
+4.2|(line start)| :3 PiG o n u 7 T wT :4 PiG o :4 sh w L o J y E f cy T Gm Xo X d Xo 7 q wT L n Eb b Gm J L E3 n psi dd w L R? 7 X L T b 7 b B |(line end)
+4.3|(line start)| E n U Gm T w L wT Om Pi wT E3 # 7 b Br PiG f T w PiG q n hg Xo E tr 7 E3 ne L B Pi T wf L X d hg w sh f dd o J Gm # L Xo psi b Usq T Gm |(line-fill dash, line end)
+4.4|(line start)| ne Pi J w0 f u? L n wf |la plus riche e importante de toute la France| 7? R? Eb E b B G tr 7 Xo f V d E3 n L f w 7 H Gm phi L E f |(line-fill dash, line end)
+4.5|(line start)| tr psi dd wT L n q wT Xo Gm w Pi E3 b L wf # 7 Xo E U 7 o Gm n J G Tu f E3 L 7 ne Gm phi L II dd L w n H L X L eq 7 o E3 # 7 J d wT |(line end)
+4.6|(line start)| ti psi n E3 sh b o 7 ne T? Pi H L # Gm Xo L y tr E B Om 7 Gm Eb psi T w L E3 hg Xo Tu tr 7 n ne dd :3 hg PiG wT Eb E b tr L B psi o wf E f q b n |(line end)
+4.7|(line start)| cy T 7 U E f o B Xo d o Usq q L H PiG J . |De ceste province vient de la Religion ...
+4.8|... e maintenant y en a plus de cinq cent des familles| hg Xo f E3? dd # |(line-fill dash, line end)
+4.9|(line start)| w n f q b Xo 7 E3 y U Pi B psi Xo E3 # L T sh Eb G sh o ne T wT Pi V # L b E3 Tu? E? wT w 7 :4 psi dd n |une seule circonstance e ...
+4.10|... tenu les villes de Nismes e d&#x27;Arles haute e basse| 7 B J PiG T f L wT wT L :2 |(line end)
+4.11|(line start)| Gm o Eb hg Xo q E3 dd 7 T Tu? w n E f Eb wT Gm U Xo Tu hg hg? w G b q G o hg E f B L ne sh w L o U Gm y L n wf T Pi V E3 dd o 7 |qui les a tousiours</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/reading.txt">reading.txt</a></p><pre>1.1    &lt;sa faveur. Joinct que&gt;  le mal tils sent  &lt;(cont.)&gt;
+1.2    &lt;(line start)&gt;  en a | [#] | N gouuernement presen a | [#] | U | [#81] | et U uils a tendent de | [#21]  &lt;(end)&gt;
+1.3    &lt;(line start)&gt;  a la uenir  &lt;&gt;
+1.3b   &lt;eschantillons&gt;  P uil en monstre  &lt;&gt;
+1.3c   &lt;donne grand&gt;  lustre au  &lt;(end)&gt;
+1.4    &lt;(line start)&gt;  [#51] | duquel  &lt;personne n&#x27;a occasion de se plaindre et &gt;
+1.5    &lt;Il a tant paty&gt;  ou | [#] | E a nouueau T impos du | [#81] | ou | [#] | eam ange ries | [#] | E S  &lt;(end)&gt;
+1.6    &lt;(line start)&gt;  troupes de | [#21] | quils  &lt;ont suivi a une haine&gt;
+1.7    &lt;quon a se plaindre de&gt;  tous mors que de lui  &lt;.&gt;
+1.8    &lt;Et y a apparent qu&#x27;il a eu&gt;  ueu mesmes  &lt;(end)&gt;
+1.9    &lt;(line start)&gt;  le | [#] | E S D aine | [#] | E ain tres  &lt;la plus part la recherchent et prendront&gt;
+1.10   &lt;est lors que&gt;  tous ces iniques et one reuse | [#] | ict ese sont fais T et bue les parlements  &lt;(end)&gt;
+1.11   &lt;Quils ont plonge&gt;  de uan a espernon et ioie use come sane a  &lt;(end)&gt;
+1.12   &lt;(line start)&gt;  ne a a uar uete  &lt;. con endure nulle vergongne&gt;
+1.13   &lt;aussy bien&gt;  alliee a a lui me dehors le royaume some il est bien me onde de | [#] | ans  &lt;que plusieurs personnages&gt;
+2.1    &lt;peussent Joindre selon a Allemagne&gt;  cependant ne laissent | [#] | au our un ordre et unes forme de con | [#] | uiue bien que  &lt;�&gt;
+2.2    &lt;(line start)&gt;  plus secrete et nia le ait con non il nia ita uelque gentil iom E capable  &lt;&gt;
+2.3    &lt;(line start)&gt;  E a S noi alle auquel a adresse N a les a S maires qui en un B E son N oseroit  &lt;�&gt;
+2.4    &lt;(line start)&gt;  suiuie a obei | [#] | E S autres  &lt;Et dautant plus&gt;
+2.5    &lt;les premiers susdits&gt;  iason oeil E establi a | les  &lt;X Gm U&gt;
+2.6    &lt;(line start)&gt;  quels R a porte nat o uui au  &lt;Conseil du Roy de Navarre&gt;
+2.7    &lt;des plus grands de la religion&gt;  ler ple o  &lt;&gt;
+2.8    &lt;(line start)&gt;  en cest affaire | le a causes | [#] | E | [#] | E E me ian ce | [#] | U R  &lt;Xo L E J psi T U Gm E3 # 7 # L I : I G E&gt;
+2.9    &lt;(line start)&gt;  ent encor ueu I que le | [#] | N can est et ecu a E en un sul article ueu que | [#] | E toutes les  &lt;�&gt;
+2.10   &lt;(line start)&gt;  contra B en a ion son se plaint en uain B U les | [#] | eloi au aes qu on uoit ton a les nour a  &lt;&gt;
+2.11   &lt;(line start)&gt;  pratiquer a leu | [#] | roit de ceus dela religion ueu aussi les pre paratum seal eus  &lt;&gt;
+2.12   &lt;(line start)&gt;  S qui iase mont en suisse et a lemagne les munitions qu U a amasse N tal non pour  &lt;&gt;
+2.13   &lt;(line start)&gt;  couler aout a coup parler hos ne en et les troupes un uis enuoient en gascongne lui a  &lt;&gt;
+2.14   &lt;(line start)&gt;  donc que les causes | [#] | E | [#] | E fiance | [#] | U rente F ult N P lient la raison | [#] | ele are a E nir  &lt;&gt;
+2.15   &lt;(line start)&gt;  ce meure pareillement en son entier  &lt;. Mais tout ainsi&gt;
+2.16   &lt;En la juste occasion que nous avons&gt;  [#] | edi mere R la ren | [#] | N T iou | [#] | E S dites places sion se boi oit  &lt;�&gt;
+2.17   &lt;(line start)&gt;  asseure | [#] | une bonne armee de rens are a qui peust a E nir la campagne et esloi gie  &lt;&gt;
+2.18   &lt;(line start)&gt;  la guerre | [#] | N centre | [#] | E nos proui ne a uers la circon me rente | [#] | E la france  &lt;Je feray&gt;
+2.19   &lt;aise de se resouldre&gt;  a | [#] | N ferer la remise | [#] | nce les et quand nos ennemis  &lt;s attireront que leurs&gt;
+2.20   &lt;le soulagement ... fardeau et le suis to&gt;  a il ne uont plus clair au secours | [#] | E | [#] | E I o R sou il N aueu nua que sa present il se  &lt;�&gt;
+2.21   &lt;(line start)&gt;  resoudra | puis iuil ne  &lt;�&gt;
+2.22   &lt;reddition des places, toutes toutes nous&gt;  la peut retenir par plus forte se a asseurees M  &lt;Et abregera ... Samson ... la gueule&gt;
+2.23   &lt;du lion mesmes&gt;  ailes moiens lui son a refuses par ceus pour la conseruation | [#] | E S  &lt;&gt;
+2.24   &lt;(line start)&gt;  qu ne le il ne tran qu lle guere a moings que pour la sienne et qu a en la a ne ne ne ne son  &lt;&gt;
+2.25   &lt;(line start)&gt;  guere a mon U S interesses bue lui  &lt;. (end of letter)&gt;
+3.1    &lt;a mesure que ses ennemis se rallient&gt;  soin en leur entrete naure sus citant | [#] | E set | [#] | I ces et I rauin G qui | [#] | iuer  &lt;(line end, right margin)  [y=282]&gt;
+3.2    &lt;(line start)&gt;  ris sent leur esprit et leurs moiens a leurs | comme le | [#36] | [#81]  &lt;Et l&#x27;alliance par ladite d&#x27;un  [y=301]&gt;
+3.4    &lt;brac[?]e a[uec] cite[?] Catholiques (fai&gt;  et espouser a les affec tin on se faction a | [#] | U pale qui dores en auant le mer a son bras  &lt;(line-fill dash, line end)   [decodes: e&gt;
+3.5    &lt;(line start; cipher begins at the left m&gt;  D roi | [#] | te ile G ecu teur | [#] | E ses plus ler num ieu Q D | [#] | E S seing a  &lt;. (full stop; paragraph ends, rest of li&gt;
+3.7    &lt;Religion. Il ne s&#x27;y peut plus fier: Et s&gt;  cest | [#] | ese rendre  &lt;(line-fill dash, line end)   [decodes: c&gt;
+3.8    &lt;(line start; cipher fills the whole line&gt;  ou C gee ou instrument principal | [#] | E la ruine de ceus | [#] | E la religion come ainsi soit quil ne  &lt;(line-fill dash, line end)   [decodes: o&gt;
+3.9    &lt;(line start; cipher fills the left half)&gt;  peut | [#] | E S guise R ce faict dan uers autrement  &lt;Execrable envers tous hommes qu&#x27;ils s&#x27;ag&gt;
+3.10   &lt;...pour que ce fust le party de sa Relig&gt;  [#] | E monsieur deue lueur en la loi a trait mer  &lt;(line end)   [decodes: demonsieur de uel&gt;
+3.11   &lt;(line start; cipher fills the whole line&gt;  auec le prince | [#] | E parme pour lui ren | [#] | R E les places au il ten si a ange sua a te ce E S uil lui  &lt;(line end)   [decodes: auec le prince de&gt;
+3.12   &lt;(line start)&gt;  cis sua D a  &lt;pour sauuer les personnes qui ch[?] en r&gt;
+3.16   &lt;Personne maintenant a fondement certain &gt;  ou sans | [#] | oute ler o a a | [#] | N frere crain | [#] | R a quil ne releue  &lt;(line end)  [y=790]&gt;
+3.17   &lt;(line start)&gt;  contre luit un part a de malcontens  &lt;dont le subiect estant beau, veu que le &gt;
+3.18   &lt;soubz lestat present: Luy a il de plus p&gt;  quelque | [#] | E S seing en angle  &lt;(line end)  [y=821]&gt;
+3.19   &lt;(line start)&gt;  terre et escosse  &lt;en delivrant par mesmes moiens e le Roy &gt;
+3.20   &lt;passé le Roy d&#x27;Espagne faisoit traicter a&gt;  italien qui sert | [#] | ingenieur a lisbone dont  &lt;(line end)  [y=853]&gt;
+3.21   &lt;(line start)&gt;  les letres me sont uenues es mains  &lt;Maintenant aussi la Roine sa mere va tra&gt;
+3.22   &lt;Lorraine&gt;  pour le reioindre auec [c]este maison ennemie dela chrestiente e[t] particuliere  &lt;(line end)  [y=884]&gt;
+3.23   &lt;(line start)&gt;  ment | [#] | E lestat | [#] | angleterre a quoi ueu les pratiques ordinaires | [#] | E ceu[s] de guise en esco  &lt;(line end)  [y=900]&gt;
+3.24   &lt;(line start)&gt;  se | [#6] | doit remedier  &lt;(line ends short, rest of the line blank&gt;
+3.25   &lt;Car quant a fu(?)&gt;  [#21] | C gee dela guere contre ceus dela religion en | [#72] | le | [#81] | son frere a  &lt;ses pratiques  [y=928]&gt;
+3.26   &lt;e Pour avenir se suspecte quil ne le lai&gt;  de efi etant | [#] | U roi son frere  &lt;(line-fill dash, line end)  [y=938]&gt;
+3.27   &lt;(line start)&gt;  quil | la charged une armee | a sa deuotion ce qui lui a a par en de que le  &lt;(line-fill dash, line end)  [y=951]&gt;
+3.28   &lt;(line start)&gt;  roi lui permet E  &lt;(short line, rest of the line blank)  [y&gt;
+3.29   &lt;(line start)&gt;  [#57] | sca iie bien | le sul mariage D | [#721]  &lt;(line-fill dash, line end) [the final gr&gt;
+3.30   &lt;aggreable aux uns ... partir le Pais en &gt;  cest taures te un prince  &lt;(dash, line end)  [y=1041]&gt;
+3.31   &lt;(line start)&gt;  qui  &lt;sans les beaucoup examiner ...  [y=1062]&gt;
+3.32   &lt;maintenues? e savoir tousiours&gt;  sortir dela un eur mee | [#] | E reistres pour la ieter et espandre sur le  &lt;(dash, line end)  [y=1248]&gt;
+3.33   &lt;(line start)&gt;  pais | [#] | E celui qui  &lt;la voudroit troubler en elle. A cest eff&gt;
+3.34   &lt;que seule ombre e protestation de mariag&gt;  tandis que le parti de ceus | [#] | E la religion demeurera ferme en | [#72] | et  &lt;(line end)  [y=1398]&gt;
+3.35   &lt;(line start)&gt;  E a | [#99] | les | [#81] | [#36] | auront peu de moien | [#] | E lui mal faite et pour ain ne le a en neres usa ele auais seruer te  &lt;(line end)  [y=1413]&gt;
+3.36   &lt;(line start)&gt;  et pour R les | [#99]  &lt;Si dea la amendemens elle ait tenu la li&gt;
+3.37   &lt;et celluy ou elle a est� tres marrie de &gt;  o ou and a la M run ce  &lt;Le Roy de Navarre ... (line end)  [y=144&gt;
+3.38   &lt;mieulx&gt;  eur U Q R ele a L uue rii ten air R a aues nise lons U Q Q ualut enise L lon la leure le les sau U un does eau ruinee  &lt;(line end) [PROVISIONAL]  [y=1461]&gt;
+3.39   &lt;(line start)&gt;  ues ooo a a les a L un uus see ent ont une ne le ueues S R ree et en R a rase E en inl R uoie I leurs en N une mis les amer R a on | [#] | ete le  &lt;(line-fill dash, line end) [PROVISIONAL]&gt;
+3.40   &lt;(line start, x=468; the line above the b&gt;  and uen ement en leurs lets o beg eri des le eur a | en sers tous autres et nous a anet ne  &lt;(line-fill dash, line end)  [y=1499]&gt;
+3.41   &lt;(line start, x=469)&gt;  qualites quei | [#] | a uos et L L lue sa tend R reason a man nie E quils o autan ure thebe a see E enne a  &lt;(line end, x~1292)  [y=1515]&gt;
+3.42   &lt;(line start, x=471)&gt;  sauent sal lui me on ell I sir | [#] | elue o F R Q T lest G eruice  &lt;On ... [blotted word] ... la Roine qu&#x27;el&gt;
+3.43   &lt;fois en reproche d&#x27;ingratitude. Mais ell&gt;  eleua pas de ele G | [#] | en N | [#] | en ier louure ees M  &lt;(line-fill dash, line end)  [y=1547]&gt;
+3.44   &lt;(line start, x=471)&gt;  que | mon ien uanter tai aes ues  &lt;(line-fill dash, line end)  [y=1580]&gt;
+3.46   &lt;(line start, x=473; the whole line is ci&gt;  qu a lentes are en sa en rua en E sies a saint a le meure M P L o a E E a leurs sa est ceruelle a Q  &lt;(line end, x~1240)  [y=1628]&gt;
+3.47   &lt;ron so[n]uoir e plus estre [c]onuenoir p&gt;  E et | [#] | a ali antes  &lt;(line end, x~1312)  [y=1647]&gt;
+4.1    &lt;(line start; the clear above ends &quot;...It&gt;  et maintenant iouissant del amitie estroite | [#] | E monsieur de  &lt;(line end)&gt;
+4.2    &lt;(line start)&gt;  monsieur mon mor en C I auquel la leur est necessaire se le un ent  &lt;(line end)&gt;
+4.3    &lt;(line start)&gt;  asseurer hors | [#] | en gou U rous places de toute la prouince | [#] | E langue  &lt;(line-fill dash, line end)&gt;
+4.4    &lt;(line start)&gt;  doc qui est | estant I celui asseure de beau  &lt;(line-fill dash, line end)&gt;
+4.5    &lt;(line start)&gt;  caire sur le rosne T | [#] | E las en esci au see de besiers de le F ens | [#] | E car  &lt;(line end)&gt;
+4.6    &lt;(line start)&gt;  cas sonne duo de | [#] | ele I cathe et aures places D importance tant au uns  &lt;(line end)&gt;
+4.7    &lt;(line start)&gt;  que sa un T languedoc M  &lt;De ceste province vient de la Religion .&gt;
+4.8    &lt;... e maintenant y en a plus de cinq cen&gt;  plus I | [#]  &lt;(line-fill dash, line end)&gt;
+4.9    &lt;(line start)&gt;  R S U un les iso tal S | [#] | E uotion du roi | [#] | en sa arre mais  &lt;une seule circonstance e ...&gt;
+4.10   &lt;... tenu les villes de Nismes e d&#x27;Arles &gt;  et couuer rem  &lt;(line end)&gt;
+4.11   &lt;(line start)&gt;  ent plus ieu ars autres la P prin uin pau te dor en sei est uoisine  &lt;qui les a tousiours&gt;
+
+## f. 263v 3.18-3.24 normalised (30 Sept 2026)
+
+Re-read on the image (img/p3.jpg) and re-decoded sign by sign with key.json; cipher in plain type, clear words in
+&lt;angle brackets&gt;. Grades: every cipher word H (key values) unless marked.
+
+&lt;Luy a il de plus plausible que de luy mettre en main, pour le moins en l&#x27;esprit,&gt; quelque dessein en Angleterre
+et Escosse, &lt;en delivrant par mesmes moiens e le Roy de France de s&#x27;embrouiller e le Roy d&#x27;Espagne de peine? Et je
+scay que des l&#x27;an passé le Roy d&#x27;Espagne faisoit traicter a la soubz main avec luy par un certain&gt; italien qui sert
+d&#x27;ingenieur a Lisbone, dont les letres me sont venues es mains. &lt;Maintenant aussi la Roine sa mere va traicter avec
+luy le mariage de sa fille [de] Lorraine,&gt; pour le rejoindre avec [c]este maison ennemie de la chrestienté e[t]
+particulierement de l&#x27;estat d&#x27;Angleterre, a quoi, veu les pratiques ordinaires de ceu[s] de Guise en Escosse,
+[6] doit remedier.
+
+- &quot;letres me sont venues es mains&quot;: `X Gm Eb wT L R :4 7 n sh b wf q L o T 7 E3 Gm R :3 E G b R`; the dot group :4 is m.
+- &quot;[c]este&quot;: `J Gm n B L` after &quot;auec&quot; (`psi T 7 J`); one c serves both words (M).
+- &quot;e[t]&quot;: after &quot;chrestiente&quot; the signs are `L q` (e, then the sign read u); the clear text writes &quot;e&quot; for &quot;et&quot;, so
+  `L` is &quot;e[t]&quot; and `q` a slip (M).
+- &quot;ceu[s] de Guise en Escosse&quot;: `J Gm T Pi ne L Br T y E3 Gm L o 7 E3 J Pi | R 7`; the third sign has the same
+  shape as the u of &quot;Guise&quot; (T, as the second transcription had it; final/f3.txt corrected from b), the fourth is
+  the o-sign where s is wanted (M). [6] is a nomenclator number, open.
+- Clear words: &quot;des l&#x27;an passé&quot; (end of 3.19 and start of 3.20, first transcribed &quot;des lan- / part&quot;) and &quot;faisoit
+  traicter&quot; (first &quot;faisons traictes&quot;) were re-read on the image; &quot;sa fille [de] Lorraine&quot;: the line ends with a
+  sign read &quot;&amp;&quot; or &quot;de&quot;.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/key.json">key.json</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/key_letters.txt">key_letters.txt</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/harley1582r8505/signs.md">signs.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/harley1582r8505.json"></figure>
 <!-- replay:end -->

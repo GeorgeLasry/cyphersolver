@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>key matched</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The two letters and the key</a><a href="#sibling">The glossed letter from Clermont</a><a href="#reading">The decipherment</a><a href="#writer">Who wrote</a><a href="#open">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The two letters and the key</a><a href="#sibling">The glossed letter from Clermont</a><a href="#reading">The decipherment</a><a href="#writer">Who wrote</a><a href="#open">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The catalogue entry was two DECODE records: letters to Nevers of 27 March and 4 April 1587 from an unknown sender, said to be at Rome, with &ldquo;what the cipher hides not known&rdquo;. The leaves are letters in clear French. The cipher is four code numbers, a ten-sign place name in the dateline of the first letter, and one thirteen-sign run in the second. Two words of the second were glossed at the time (&ldquo;Le duc d&rsquo;Espernon&rdquo; over 45, &ldquo;Lyon&rdquo; under the run). Those glosses matched key no. 11 of Nevers&rsquo;s key book (BnF fr. 3995 f. 23), and that key decodes every code: 94 the marquis, 6 M. d&rsquo;Entragues, 23 the queen of Navarre, 45 the duc d&rsquo;&Eacute;pernon. Applied directly from the key table, the rest of the run and the dateline gave no sense. A third letter resolved this. Tomokiyo notes that key no. 11 is used in a letter in fr. 3413, which he assigns to the cardinal de Guise. It is in fact this correspondent&rsquo;s, from Clermont, with five cipher lines and an interlinear decipherment, and it shows how this writer draws the key (&#x166; for p, the capital F for &ldquo;et&rdquo;, a dotted 1 for d). With that, the run deciphers as &ldquo;passant pres <b>Lyon et ce pais</b>&rdquo; and the first letter is dated <b>&ldquo;De Randan&rdquo;</b>, in Auvergne. 26 of the 27 cipher units are accounted for: letters, words, codes, three nulls, and two signs of a false start the writer struck out. One sign, between a null and &ldquo;et&rdquo;, is taken as a null against its key value.</div>
 
 <h2 id="documents"><span class="num">01</span> The two letters and the key</h2>
@@ -101,6 +101,220 @@
 </ul>
 <p>Measured on <code>reading.tsv</code>: 27 cipher units. 26 are accounted for (0.963): 22 letters, words and codes, 3 nulls and 2 struck-out symbols. The one doubtful symbol, the &#x1A5; in the run, is a single occurrence with nothing to test it against.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Randan, 27 March 1587, f. 28r-v (DECODE R4285)</h3>
+<p>A correspondent at Randan in Auvergne, probably the comte de Randan, answers the duc de Nevers that he went to Lyon on private business while Tournon, St Vidal and the bishop of Le Puy met Mandelot about the war in Vivarais; 94 (le marquis) sold an estate there to 6 (M. d&#x27;Entragues), and he has never meddled in the affairs of 23 (the reine de Navarre). The cipher items are three code numbers and the dateline &#x27;De Randan&#x27;; the letter is otherwise clear.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1587/ciphertext.txt">ciphertext.txt</a></p><pre># Cipher items in BnF fr. 3975 ff. 28 and 30, one sign per space-separated token.
+# Code numbers carry the key&#x27;s virgule in the letters (&quot;94,&quot; &quot;6,&quot;); it is dropped here.
+# Glyphs: see key.md. Transcribed 22 Sept 2026 from Gallica btv1b90605473 canvases 52, 53, 56 (full resolution).
+R4285 f28r code 94
+R4285 f28r code 6
+R4285 f28r code 23
+R4285 f28v dateline C ∞ 6 ƥ z ι ◊ é ι ⊕
+R4286 f30r code 45
+R4286 f30r run π ^ ꭓ é ∞ ƥ F ƨ h Ŧ ◊ 7 o</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1587/reading.md">reading.md</a></p><pre># Reading: BnF fr. 3975 ff. 28 and 30
+
+Working transcription from the Gallica scans (canvases 52, 53, 56), 22 Sept 2026. Spelling kept, abbreviations expanded
+silently, punctuation light. Cipher items in **bold** with their reading in brackets; [?] marks a doubtful clear word.
+
+## f. 28r–v (DECODE R4285): 27 March 1587, from Randan
+
+Docket at the head: *27 de Mars 1587*.
+
+Monseigneur, j&#x27;ay receu par ce laquay la lettre qu&#x27;il vous a pleu m&#x27;escrire, recevant trop d&#x27;honneur de la
+continuation de voz bonnes graces, desquelles vous ne rendrez jamais digne un plus obeissant serviteur que je le vous
+suis. Je loue Dieu de vostre heureux retour, et doublement pour l&#x27;esperance qu&#x27;il me donne que vous viendrez pour
+quelques jours a Nevers, ou j&#x27;auray cest honneur de vous aller tres humblement baiser les mains. Et pour respondre a ce
+qu&#x27;il vous plaist me mander, je vous diray que si j&#x27;eusse pensé que le voyage que je fis a Lyon eust merité de vous en
+donner advis, je l&#x27;eusse faict, et vous supplie tres humblement de croyre que j&#x27;y allé pour mes affaires
+particulieres. Bien y estoient messrs de Tournon et St Vidal avec monsr l&#x27;Evesque du Puy pour resouldre avec monsr de
+Mandelot et les gens de sa charge sur l&#x27;occasion de la guerre en Vivarez, de la façon que les deputés en allerent
+demander la permission au Roy; et en ce temps mesme **94,** [le marquis] y arriva, qui vendit une terre a **6,**
+[M. d&#x27;Entragues], dont ils s&#x27;estoient remis a monsr de Lyon pour le marché: voila ce qui s&#x27;y fist, qui ne m&#x27;a semblé
+digne de vous en importuner. Pour ce qui est de **23** [la reine de Navarre], je ne m&#x27;en suis voulu jamais mesler, et
+vous supplie tres humblement de le croyre; je sçay combien je doibs de respect en ces lieux la, et pource les honore
+sans m&#x27;en entremettre davantage. Pour ce | qui est de ce dont il vous a pleu, Monseigneur, vouloir prendre trop de
+peyne pour moy, il y a quelques jours [?], ce n&#x27;est des lors ny cest heure que je recognois les tres grandes
+obligations que je vous ay, mais de tout temps, me faisant trop d&#x27;honneur de m&#x27;aymer comme je le sçay; pource
+librement je vous diray que resolution aulcune je ne puis faire en ce faict sans avoir cest heur que de vous
+entretenir une heure, et cependant je vous requiers en toute humilité de laisser les choses comme elles sont. Dieu,
+s&#x27;il luy plaist, me conservera tel que je doibs estre, et rendra plus fortuné que je n&#x27;ay esté jusques a ceste heure;
+et quel que je soys, je ne diray avec verité [que] vostre tres fidelle serviteur, vous suppliant tres humblement pour
+tel m&#x27;aymer tousjours et conserver en voz bonnes graces, lesquelles saluant avec toute humilité, je suppliray Dieu,
+Monseigneur, vous donner en tres parfaicte santé tres heureuse et tres longue vie.
+
+**C ∞ 6 ƥ z ι ◊ é** [de · null · Randan] ~~ι ⊕~~ [a false start, &#x27;de&#x27;, struck through], ce xxvij Mars.
+
+Vostre tres humble et tres obeissant serviteur [monogram].
+
+## f. 30r (DECODE R4286): 4 April 1587
+
+Docket at the head: *4 d&#x27;avril 1587*. Two interlinear glosses in another hand: *Le duc d&#x27;Espernon* over 45, *Lyon*
+under the first four signs of the run.
+
+Monseigneur, je vous ay renvoyé le laquay qu&#x27;il vous a pleu me depescher, lequel je croy n&#x27;aura si tost esté vers vous,
+pour vous estre allé chercher a Chenonceau, ou vous me mandiez que demeureriez jusqu&#x27;apres de Pasques; et espere
+doresnavant amender la faulte que j&#x27;ay faict de ne vous faire sçavoir des nouvelles de ces quartiers, mais il m&#x27;estoit
+quasi impossible, veu la distance des lieux et l&#x27;incertitude en laquelle j&#x27;estois de vostre sejour. Je loue Dieu de
+vostre heureux retour a Paris, et le supplie me faire la grace de vous pouvoir autant tesmoigner par digne effect le
+tres fidelle service que je vous doibs et ay voué, que j&#x27;en ay d&#x27;obligation et immortelle volonté. **45,** [le duc
+d&#x27;Espernon] a esté en tres grande alarme, passant pres **π ^ ꭓ é ∞ ƥ F ƨ h Ŧ ◊ 7 o** [Lyon · null null · et · ce ·
+pais], et sans aucun subject, car je vous puis asseurer qu&#x27;on n&#x27;a jamais songé de luy faire desplaisir; ce sont les
+charités qu&#x27;on preste en ce temps cy, lesquelles, je m&#x27;asseure, tomberont sur les inventeurs, car la verité, si elle
+ne l&#x27;est desja, sera bien tost cogneue: c&#x27;est tout ce que je sçay qui merite vous estre escript, Monseigneur, et
+pource vous suppliant tres humblement m&#x27;honorer tousjours de voz bonnes graces comme vostre tres obeissant serviteur,
+je vous baiseray en toute humilité les mains, avec supplication a Dieu, Monseigneur, qu&#x27;il vous donne en tres
+parfaicte santé tres heureuse vie.
+
+Ce iiij apvril 1587.
+
+Vostre tres humble et tres obeissant serviteur [monogram].
+
+## Translation of the cipher-bearing sentences
+
+* f. 28r: &quot;and at that very time the marquis arrived there, who sold an estate to M. d&#x27;Entragues, for whose price they
+  had left it to the archbishop of Lyon … As for the queen of Navarre, I have never wished to meddle in it.&quot;
+* f. 28v: &quot;From Randan, this 27th of March.&quot;
+* f. 30r: &quot;The duc d&#x27;Épernon was in very great alarm passing near Lyon and this country, and without any cause, for I
+  can assure you no one ever thought of doing him harm; these are the charities people lend one another these days,
+  which, I am sure, will fall on their inventors.&quot;</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1587/reading.tsv">reading.tsv</a></p><pre>record	folio	item	sign	value	class
+R4285	f28r	code	94	le marquis	code
+R4285	f28r	code	6	M. d&#x27;Entragues	code
+R4285	f28r	code	23	la reine de Navarre	code
+R4285	f28v	dateline	C	de	word
+R4285	f28v	dateline	∞		null
+R4285	f28v	dateline	6	r	letter
+R4285	f28v	dateline	ƥ	a	letter
+R4285	f28v	dateline	z	n	letter
+R4285	f28v	dateline	ι	d	letter
+R4285	f28v	dateline	◊	a	letter
+R4285	f28v	dateline	é	n	letter
+R4285	f28v	dateline	ι	d	cancelled
+R4285	f28v	dateline	⊕	e	cancelled
+R4286	f30r	code	45	le duc d&#x27;Espernon	code
+R4286	f30r	run	π	l	letter
+R4286	f30r	run	^	y	letter
+R4286	f30r	run	ꭓ	o	letter
+R4286	f30r	run	é	n	letter
+R4286	f30r	run	∞		null
+R4286	f30r	run	ƥ		null
+R4286	f30r	run	F	et	word
+R4286	f30r	run	ƨ	c	letter
+R4286	f30r	run	h	e	letter
+R4286	f30r	run	Ŧ	p	letter
+R4286	f30r	run	◊	a	letter
+R4286	f30r	run	7	i	letter
+R4286	f30r	run	o	s	letter</pre></details>
+<h3>4 April 1587, f. 30r (DECODE R4286)</h3>
+<p>The same correspondent reports that 45 (the duc d&#x27;Espernon) was in great alarm passing near Lyon and that country, without any cause, since no one ever thought of doing him harm. Clear French with one code and one 13-sign run.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1587/ciphertext.txt">ciphertext.txt</a></p><pre># Cipher items in BnF fr. 3975 ff. 28 and 30, one sign per space-separated token.
+# Code numbers carry the key&#x27;s virgule in the letters (&quot;94,&quot; &quot;6,&quot;); it is dropped here.
+# Glyphs: see key.md. Transcribed 22 Sept 2026 from Gallica btv1b90605473 canvases 52, 53, 56 (full resolution).
+R4285 f28r code 94
+R4285 f28r code 6
+R4285 f28r code 23
+R4285 f28v dateline C ∞ 6 ƥ z ι ◊ é ι ⊕
+R4286 f30r code 45
+R4286 f30r run π ^ ꭓ é ∞ ƥ F ƨ h Ŧ ◊ 7 o</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1587/reading.md">reading.md</a></p><pre># Reading: BnF fr. 3975 ff. 28 and 30
+
+Working transcription from the Gallica scans (canvases 52, 53, 56), 22 Sept 2026. Spelling kept, abbreviations expanded
+silently, punctuation light. Cipher items in **bold** with their reading in brackets; [?] marks a doubtful clear word.
+
+## f. 28r–v (DECODE R4285): 27 March 1587, from Randan
+
+Docket at the head: *27 de Mars 1587*.
+
+Monseigneur, j&#x27;ay receu par ce laquay la lettre qu&#x27;il vous a pleu m&#x27;escrire, recevant trop d&#x27;honneur de la
+continuation de voz bonnes graces, desquelles vous ne rendrez jamais digne un plus obeissant serviteur que je le vous
+suis. Je loue Dieu de vostre heureux retour, et doublement pour l&#x27;esperance qu&#x27;il me donne que vous viendrez pour
+quelques jours a Nevers, ou j&#x27;auray cest honneur de vous aller tres humblement baiser les mains. Et pour respondre a ce
+qu&#x27;il vous plaist me mander, je vous diray que si j&#x27;eusse pensé que le voyage que je fis a Lyon eust merité de vous en
+donner advis, je l&#x27;eusse faict, et vous supplie tres humblement de croyre que j&#x27;y allé pour mes affaires
+particulieres. Bien y estoient messrs de Tournon et St Vidal avec monsr l&#x27;Evesque du Puy pour resouldre avec monsr de
+Mandelot et les gens de sa charge sur l&#x27;occasion de la guerre en Vivarez, de la façon que les deputés en allerent
+demander la permission au Roy; et en ce temps mesme **94,** [le marquis] y arriva, qui vendit une terre a **6,**
+[M. d&#x27;Entragues], dont ils s&#x27;estoient remis a monsr de Lyon pour le marché: voila ce qui s&#x27;y fist, qui ne m&#x27;a semblé
+digne de vous en importuner. Pour ce qui est de **23** [la reine de Navarre], je ne m&#x27;en suis voulu jamais mesler, et
+vous supplie tres humblement de le croyre; je sçay combien je doibs de respect en ces lieux la, et pource les honore
+sans m&#x27;en entremettre davantage. Pour ce | qui est de ce dont il vous a pleu, Monseigneur, vouloir prendre trop de
+peyne pour moy, il y a quelques jours [?], ce n&#x27;est des lors ny cest heure que je recognois les tres grandes
+obligations que je vous ay, mais de tout temps, me faisant trop d&#x27;honneur de m&#x27;aymer comme je le sçay; pource
+librement je vous diray que resolution aulcune je ne puis faire en ce faict sans avoir cest heur que de vous
+entretenir une heure, et cependant je vous requiers en toute humilité de laisser les choses comme elles sont. Dieu,
+s&#x27;il luy plaist, me conservera tel que je doibs estre, et rendra plus fortuné que je n&#x27;ay esté jusques a ceste heure;
+et quel que je soys, je ne diray avec verité [que] vostre tres fidelle serviteur, vous suppliant tres humblement pour
+tel m&#x27;aymer tousjours et conserver en voz bonnes graces, lesquelles saluant avec toute humilité, je suppliray Dieu,
+Monseigneur, vous donner en tres parfaicte santé tres heureuse et tres longue vie.
+
+**C ∞ 6 ƥ z ι ◊ é** [de · null · Randan] ~~ι ⊕~~ [a false start, &#x27;de&#x27;, struck through], ce xxvij Mars.
+
+Vostre tres humble et tres obeissant serviteur [monogram].
+
+## f. 30r (DECODE R4286): 4 April 1587
+
+Docket at the head: *4 d&#x27;avril 1587*. Two interlinear glosses in another hand: *Le duc d&#x27;Espernon* over 45, *Lyon*
+under the first four signs of the run.
+
+Monseigneur, je vous ay renvoyé le laquay qu&#x27;il vous a pleu me depescher, lequel je croy n&#x27;aura si tost esté vers vous,
+pour vous estre allé chercher a Chenonceau, ou vous me mandiez que demeureriez jusqu&#x27;apres de Pasques; et espere
+doresnavant amender la faulte que j&#x27;ay faict de ne vous faire sçavoir des nouvelles de ces quartiers, mais il m&#x27;estoit
+quasi impossible, veu la distance des lieux et l&#x27;incertitude en laquelle j&#x27;estois de vostre sejour. Je loue Dieu de
+vostre heureux retour a Paris, et le supplie me faire la grace de vous pouvoir autant tesmoigner par digne effect le
+tres fidelle service que je vous doibs et ay voué, que j&#x27;en ay d&#x27;obligation et immortelle volonté. **45,** [le duc
+d&#x27;Espernon] a esté en tres grande alarme, passant pres **π ^ ꭓ é ∞ ƥ F ƨ h Ŧ ◊ 7 o** [Lyon · null null · et · ce ·
+pais], et sans aucun subject, car je vous puis asseurer qu&#x27;on n&#x27;a jamais songé de luy faire desplaisir; ce sont les
+charités qu&#x27;on preste en ce temps cy, lesquelles, je m&#x27;asseure, tomberont sur les inventeurs, car la verité, si elle
+ne l&#x27;est desja, sera bien tost cogneue: c&#x27;est tout ce que je sçay qui merite vous estre escript, Monseigneur, et
+pource vous suppliant tres humblement m&#x27;honorer tousjours de voz bonnes graces comme vostre tres obeissant serviteur,
+je vous baiseray en toute humilité les mains, avec supplication a Dieu, Monseigneur, qu&#x27;il vous donne en tres
+parfaicte santé tres heureuse vie.
+
+Ce iiij apvril 1587.
+
+Vostre tres humble et tres obeissant serviteur [monogram].
+
+## Translation of the cipher-bearing sentences
+
+* f. 28r: &quot;and at that very time the marquis arrived there, who sold an estate to M. d&#x27;Entragues, for whose price they
+  had left it to the archbishop of Lyon … As for the queen of Navarre, I have never wished to meddle in it.&quot;
+* f. 28v: &quot;From Randan, this 27th of March.&quot;
+* f. 30r: &quot;The duc d&#x27;Épernon was in very great alarm passing near Lyon and this country, and without any cause, for I
+  can assure you no one ever thought of doing him harm; these are the charities people lend one another these days,
+  which, I am sure, will fall on their inventors.&quot;</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1587/reading.tsv">reading.tsv</a></p><pre>record	folio	item	sign	value	class
+R4285	f28r	code	94	le marquis	code
+R4285	f28r	code	6	M. d&#x27;Entragues	code
+R4285	f28r	code	23	la reine de Navarre	code
+R4285	f28v	dateline	C	de	word
+R4285	f28v	dateline	∞		null
+R4285	f28v	dateline	6	r	letter
+R4285	f28v	dateline	ƥ	a	letter
+R4285	f28v	dateline	z	n	letter
+R4285	f28v	dateline	ι	d	letter
+R4285	f28v	dateline	◊	a	letter
+R4285	f28v	dateline	é	n	letter
+R4285	f28v	dateline	ι	d	cancelled
+R4285	f28v	dateline	⊕	e	cancelled
+R4286	f30r	code	45	le duc d&#x27;Espernon	code
+R4286	f30r	run	π	l	letter
+R4286	f30r	run	^	y	letter
+R4286	f30r	run	ꭓ	o	letter
+R4286	f30r	run	é	n	letter
+R4286	f30r	run	∞		null
+R4286	f30r	run	ƥ		null
+R4286	f30r	run	F	et	word
+R4286	f30r	run	ƨ	c	letter
+R4286	f30r	run	h	e	letter
+R4286	f30r	run	Ŧ	p	letter
+R4286	f30r	run	◊	a	letter
+R4286	f30r	run	7	i	letter
+R4286	f30r	run	o	s	letter</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/nevers1587.json"></figure>
 <!-- replay:end -->

@@ -50,7 +50,7 @@
 <div class="seal partial" aria-hidden="true"><span>adjacent text</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-key-from-the-glossed-siblings">The key, from the glossed siblings</a><a href="#what-reads">The sign inventory, and what is deciphered</a><a href="#what-stays-open">What stays open</a><a href="#reading">The decipherment, letter by letter</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letters">The letters</a><a href="#the-key-from-the-glossed-siblings">The key, from the glossed siblings</a><a href="#what-reads">The sign inventory, and what is deciphered</a><a href="#what-stays-open">What stays open</a><a href="#reading">The decipherment, letter by letter</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> DECODE catalogues four letters of Lord Cobham to Walsingham from the spring of 1588 with no decipherment. They are clear English with passages in Greek-like signs. The key record the catalogue suggested is Bodley&rsquo;s 1590 cipher and does not fit. The right key comes from Cobham&rsquo;s own April letters in the same volume, which were deciphered between the lines at the time. About sixty glossed words, aligned at full scan resolution, give a sign inventory (<code>signs.tsv</code>) and the code numbers: 7 is the Queen, 10 the Lord Admiral, 15 Parma and 16 the King of Spain. The system is polyphonic, with one sign for s, t and a, and another for r and y. A small solver (<code>solve.py</code>) therefore gives each sign its set of letters and matches the cipher words against a word list drawn from the Calendar of State Papers Foreign for 1588. Checking the runs line by line against its candidates deciphers about a third of the cipher words: &ldquo;in all armadas&rdquo;, &ldquo;so forwarde in the action that he promised Q[ueen]&rdquo;, &ldquo;have promised the haven of Rain&rdquo;, &ldquo;Italians arriving &hellip; Antonio&rdquo;, &ldquo;within France&rdquo;. The consolidated decipherment, with a grade on every word, is in <code>targets/cobham1588/READING.md</code>. The rest is not deciphered, because its signs could not be resolved from the scans.</div>
 
 <h2 id="the-letters"><span class="num">01</span> The letters</h2>
@@ -98,6 +98,560 @@
 <li><b>f. 96v (9 June):</b> &ldquo;passed &hellip;&rdquo;, &ldquo;within France&rdquo;, &ldquo;his servants &hellip; priests&rdquo;, &ldquo;seventy&rdquo;.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R8490, ff. 80-81, Ostend 5 May 1588</h3>
+<p>Lord Cobham, one of Elizabeth&#x27;s commissioners for the Bourbourg peace talks with Parma&#x27;s deputies, writes to Walsingham from Ostend in clear English with short cipher passages; Julio Romeo, Cristophero Mondragon and Doctor Dale are named in clear, and the cipher words concern hostages, the haven and the armada.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
+# One run per line:  folio | clear text before | cipher words (space-separated) | clear text after
+# Sign codes (see signs.tsv for the glossed evidence):
+#   U cup (a)          A caret ∧ (s t a)     + (b)        8 (c)          D ∞ (d)        T barred t ŧ (d t)
+#   7 (e)              H barred H (f)        G Ӿ (g)      h stem+bowl (h)               I ⊥ (i a y)
+#   k ω (k)            l circle+stem ϕ (l t) m ∽ (m)      # plain double cross (m n)    n ǂǂ (n)
+#   z 2-shape (o)      d (o)                 c (o a e)    p loop+tail ϑ (p)             V (r)
+#   y γ (r y)          : two dots / colon (u v)           w dot+stroke (w)              X undotted x (i)
+#   Q reversed c ɔ (a, r?; &#x27;Italian&#x27; f.88)   L L-shape (e; glossed nowhere, fixed by &#x27;haven&#x27; on f.88 and f.80)   K K-shape (unknown)
+#   ? unidentified sign (any letter)         [..] code sign or number, left as is
+# Doubtful readings of a sign are written as the first choice; the solver treats every sign as its whole set.
+f80a | hoping them | Xn Ah7 [◻] pUn87A | for what chaunces so ever you bestow
+f80b | (and that must be great) it will | ncA +7 ??lA Ah7 hc:7n IA Xd+z:87 | ) and me
+f80c | yf honorable for | 7 AcD7mncI Ap7p :VAI Ac Ah7A AcVm7A | as usuall
+f80d | as usuall in all | AVmATA | in numbers
+f80e | that at the | AVmAT dn V7DD | which was the 20
+f80f | which was the 20 and the | A: IG8A | theyr
+f80g | Dunkergh: 22 is so | HcVwUVd7 | yn the
+f80h | yn the | cAAIcn | that he promised Q:
+f80i | that he promised Q: to | Ahnc AD V?IA | 27 to begin the
+f88a | There is captain Montgomery of late gone into Scotland. | 8IpAkcn ?UllApcV?h | with 40 men of
+f88b | with 40 men of | A8cnU | have promised
+f88c | have promised | Ah7 hc:Ln | of
+f88d | of | VUIn ApdIl | yn
+f88g | of 30 | cnn | [struck]
+f88h | Ther | 7A?T IAQlIUnA UQV:InG cAAh7 | 
+f88i | | hdc:y IA nQpIcA UnAcnIc | 
+f88e | yn | XcIVU Ah7V | to 15:
+f88f | of latte there is | A7H?V?A | which have
+f92a | Dunkergh: 4 sent by | pcc:GlcA | are
+f92b | are | I7GIA lIGhl7n | and
+f92c | and | 8lIUV Icn Ucn | sent by
+f92d | imprisoned in | V+c?7A | it is reported that they have
+f92e | it is reported that they have | 8hcV? |
+f92f | of | l7AA:IVA | which</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+
+Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
+Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
+
+## f. 80r (R8490, Ostend 5 May 1588)
+- &quot;hoping them **in the** ◻**pances** [expences] (M) for what chaunces so ever you bestow&quot;
+- &quot;it will **not be** … **the haven** (H) is …&quot;
+- &quot;… **to these termes** (M) as usuall **in all armadas** (H) in numbers, that at the **armada** (M) **on** … which was the 20&quot;
+- &quot;Dunkergh: 22 is so **forwarde** (H) in the **action** (M) that he promised Q[ueen] to … 27 to begin the …&quot;
+
+## f. 80r, second full-resolution pass (reading_ff80_92_96_full.md)
+- New sign: a short horizontal stroke &quot;-&quot; = b (&quot;be&quot;, &quot;subiects&quot;, &quot;Brede&quot;).
+- &quot;hoping theym in the ◻ lances(?)&quot;; the sign after ◻ is the circle-with-stem sign (l/t), so &quot;expences&quot; is doubtful.
+- &quot;touching **hostages** (M) yt ys honorable for **7** [the Queen] (H) … **they** (H) … **to these termes** (H)&quot;
+- &quot;in all **armada** (H) … at the armad[a] **of Brede**(I) which was the 20 and the **subiects** (H)&quot;
+- &quot;22 … promised Q: to **send** (M) … 27 to begin the **openning** (M) **of the** (H)&quot;
+- &quot;a **broth[er]**(I) about 15 who promised the mayor … a **haven** (M) to open&quot;
+
+## f. 81r top
+- &quot;22 hath a **desire** (M) **to retourne** (M) from theym yf he be not more **restrain[ed]**(I)&quot;
+
+## f. 88r (R8492) — see reading_f88.md
+- &quot;captain Montgomery of late gone into Scotland … **captain** (M) [name] with 40 men of …, [who] have promised
+  **the haven** (H) **of Rain** (M) … **spoil** (M) … **there** (H) to **15** [Parma] (H)&quot;
+- &quot;… promised they **deliverd** (M) of the … to us by reason of our abode&quot;
+- &quot;**Italians** (H) **arriving** (M) … **Antonio** (H) … **Naples**(I)&quot;
+- &quot;there are coming of other Scottishmen **divers** (H) … **soldiers** (I) … away the **number of** (M) …&quot;
+
+## f. 92r (R8495, 27 May 1588)
+- &quot;4 sent by the **Portugals** (I) are …&quot;; &quot;imprisoned in **Bruges** (I)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;
+
+## f. 96v (R8496, Bourbourg 9 June 1588) — see reading_f96v.md
+- &quot;**passed** (M) … in Bruges works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;his **servants** (M) … **priests** (M)&quot;;
+  &quot;**seventy** (M)&quot;
+
+## Third pass on ff. 88 (lower half), 92r and 96v (reading_f88_full.md, reading_ff80_92_96_full.md)
+- f. 88 lines 12–20 are mostly clear (Parma&#x27;s commissioners; &quot;80 sayles … with saddelles, bryddelles, bootes and
+  spurres&quot;; &quot;he ys goyng to Caleys&quot;); the seven cipher words there stay unread (a recurring group &quot;Tnn&quot; unresolved).
+- f. 92r: &quot;imprisoned in **Bridges** [Bruges] (M)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;; &quot;**ancient of
+  Newport** (M)&quot;; &quot;**captain** (M) [surname] is also **in prison** (M) [at] **Bridges** (M), the cause whereof is not
+  knowen&quot;; &quot;of late ther are come … from **Irish** (M) **noblemen**(I)&quot;.
+- f. 96v: &quot;**the** … **passed** (M) yn B… works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;**Roper**(I) and of his
+  **servants** (M) … **priests** (M) a doctor in …&quot;; &quot;caried **of letters for the people** (M)&quot;.
+- New sign value: ϕ (circle crossed by stem) also = p (captain, prison, priests, people). &quot;seventy&quot; on f. 96v withdrawn.
+
+## Status
+Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
+read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
+the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
+
+Grades: H certain, M one doubtful sign / 1-2 edits, I guess. Sign codes as in runs.txt.
+
+## f. 80r (R8490 P1, Ostend 5 May 1588)
+
+L1 &quot;...to our drawe our forces from ... hoping theym **in** (Xn, H) **the** (Ah7, H) [◻ code] **lances?** (pUn87A read lUn87A; circle+stem = l/t, I) for what chaunces so ever you bestowe&quot;
+- note: the sign after ◻ is the circle-with-stem ϕ (l/t), not the p-loop; &quot;lances&quot;/&quot;tances&quot; both unsatisfying; possibly ◻+word = one code group.
+
+L2 &quot;(and that muste be great) yt will **not** (#cA, H) **be** (+7, dash-like +, M) **we?t** (wLlA; &quot;wells&quot;/&quot;west&quot; I) **the** (Ah7, H) **haven** (hc:7n, H) **is** (IA, H) [**Xd+c:87** unread: i-o/d-b-o/a/e-u/v-c-e; solver nothing] ) and me ...&quot;
+- The &quot;-&quot; sign in this hand is a short horizontal stroke used for **b** (= &quot;+&quot;): confirmed by &quot;subiects&quot; below; hence #cA-7 &quot;not be&quot;.
+
+L3 &quot;...touching **hostages?** (HcAVUGL A: f?-o-s/t-r-a-g-e-s; the 1st and 4th signs doubtful, solver fuzzy 2 = hostages, M/I) yt ys honorable for **7** [her Majesty] (code, H) [**AcdD7p#cI** unread: t-o-?-d-e-p-n-o-i/e; possibly &quot;to d...&quot;, solver nothing] **they** (Ah7y, H; last sign loop read as γ) [**A:VAI** unread: s/t-u-r-s/t-i; &#x27;stay&#x27;/&#x27;surety&#x27;? I] **to** (Ac, H) **these** (Ah7A, H) **termes** (AcVm7A, H) as usuall&quot;
+- Word dividers | separate every word in this run.
+
+L4 &quot;in all **armada** (AVmATA = a-r-m-a-d-a, ∧=a, H) in numbers, that at the **armad[a]** (AVmAT, M) **of** (dH, H) **Brede?** (-V7D7: b-r-e-d-e, Breda? I) which was the 20 and the **subiects** (A:-I78A = s-u-b-i-e-c-t-s, H) ther wer ... Julio Romeo, Cristophero Mondragon, Mor Dausey&quot;
+
+L5 &quot;Dunkergh: 22 is so **forwarde** (HcVw UVD7, H) yn the **action** (cAAIcn, 2nd sign doubtful, M) that he promised Q: to **send** (A7nd: small 7 between ∧ and ǂǂ, last sign d-type = o/d, M) [**Ac-D:XL** unread: t/s-o-b-?-u-i-e ...] 27 to begin the **openning** (dp7# | #I#G split by a line-end hyphen; o-p-e-n-n-i-n-g, the first two signs blotted together, M) **of** (dH, H) **the** (Ah7, H) [**-Tcw7A** unread: b-d/t-o-w-e-s; &#x27;Downes&#x27;? I]: w[hich] myght bee to the [**Ac## GcH AcVIw7** unread: t-o-n-n ... ; I] ...&quot;
+L6 &quot;... that a **broth[er]?** (-VcAh + 1-2 signs, b-r-o-t-h, solver exact &#x27;broth&#x27;, I) about 15 who promised the mayor [**V z L ### A l c c A** unread: signs uncertain] a **haven** (h:7n, missing the a-sign, M) to open...&quot;
+
+## f. 81r top (R8490 P2, continuation of 5 May letter)
+
+L1 &quot;22 hath a **desire** (?7AI?V: d-e-s-i-(r)-r, two doubtful signs, M) **to** (Ac, M: run-on, divider not visible) **retourne** (V7ATcVn: r-e-t-?-o-r-n, M) [ʃʃ mark] from theym yf he be not more&quot;
+L2 &quot;**restrain[ed]?** (VGAAVcIn-8: r-?-s-t-r-a-i-n-?-?; solver fuzzy &#x27;restrained&#x27;, 2nd and last two signs doubtful, I): ther ys great want of us to cumfort our poure soldiers ...&quot;
+
+## f. 92r (R8495 P1, 27 May 1588) - partial pass only
+
+L1 &quot;that 200 maryners of Hambourgh that wer at Sluse are retourned to Dunkergh: 4 sent by the **Portugals?** (pd?:XlcA: p-o-?-u-i-l-a-s; r-sign not seen, I) are&quot;
+L2 &quot;[**I7GIA dp IXpp7#** unread: i-e-g-i-s / o-p / i-i-p-p-e-n; solver nothing] and [**8-l:Vd Icn AcH** unread: c-b-l-u-r-o / ian / sof] sent by ...&quot;
+- Remaining f.92r lines (imprisoned in -V?c?7A ..., charge, letters, and the four further cipher lines down to &quot;of latte ther are ...&quot;) NOT re-read in this pass.
+
+## f. 96v top five lines (R8496 P2) - NOT re-read in this pass; see reading_f96v.md.
+
+## f.92r lines 3–end (R8495 P1; deskew −3.25°, per-line crops at full resolution, 21 Sept 2026)
+
+Line numbering continues from the two cipher lines above (&quot;4 sent by the Portugals? are / I7GIA ... sent by ...&quot;).
+
+L3 &quot;imprisoned in **Bridges** [= Bruges] (-V+dӾ7A: b-r-(+ read i)-d-g-e-s; 4th sign is the o/d sign, Elizabethan &#x27;Bridges&#x27; for Bruges; same word recurs in L8 as -V⊥dӾLA, M). It is reported that they have **charge** (8hcVX with the final sign read as Ӿ g, final e unwritten; M)&quot;
+L4 &quot;**detain?** (TcAA·n: d-e-t-a-(i)-n, the 5th mark a small tick read as I; I) [**l7XA** unread: l/t-e-i/g-s; &#x27;legs&#x27; fits signs, not context] [**l+HAT nUnA** unread: l/t-b-f-s-d / n-a-n-s; solver nothing] of words of **letters** (l7AAALVA: l-e-t-t-(t)-e-r-s, one extra caret; M) whereupon (clear?)&quot;
+L5 &quot;to have been determined and appointed [**cn pc&#x27;n cz +lcAA** unread: o/a-n / p-e-n / o-? / b-l-o-s-s; solver nothing usable]&quot;
+L6 &quot;[**-λ ApLcA** unread: b-? / s-p-e-o-s] [**n7V** unread: &#x27;ner&#x27;] [**w+Ap··Xcl** unread] — (end of sentence, flourish)&quot;
+L7 &quot;That day was [**Al7VLAT8:·** unread: s-l-e-r-e-t-d-c-u; solver &#x27;already&#x27; at 2 edits, rejected] [**A+c 7n** unread: a-b-o / e-n] **ancient** (cnϸI7nA: a-n-c-i-e-n-t, the 3rd sign a stem-and-bowl read as c; solver exact with 8; M) **of** (cH, H) **Newport** (nL·\pcVA: n-e-w-p-o-r-t = Nieuport; exact; M)&quot;
+L8 &quot;**forward** (HdV·\VT: f-o-r-w-(a)-r-d, one letter missing; M) [**nXcH** unread: n-i-o-f]; [**··7VA** unread: &#x27;verse&#x27; exact, no sense] **it/is** (IA, M) **to** (Ac, H) [**Ap77l** unread: s-p-e-e-l; &#x27;speed&#x27; at 1 edit, I] [**V?XAT** unread: &#x27;raised&#x27; at 1 edit, I]&quot;
+L9 &quot;**captain** (8cϕA7In: c-a-(p)-t-e-i-n, the ϕ-like sign taken as p; fuzzy 1 &#x27;captain&#x27;; M) [**-cX8L** unread: b-o-i-c-e, likely a surname; I &#x27;Boice&#x27;?] is also **in prison** (In ϕVIAcn: i-n / p-r-i-s-o-n with ϕ for p; exact as two words; M) [**LcVA** unread: e-o-r-s] **Bridges** (-V⊥dӾLA, M) [clear: the cause whereof] is not knowen:&quot;
+L10 &quot;Of late ther are come to [**AA7n ϕIX** unread: two carets then e-n / p?-i-i; possibly a place name] from **Irish** (IVILAϸ: i-r-i-(e)-s-h; fuzzy 1; M) **noblemen?** (nc-l7 / ϑcn across the line end: n-o-b-l-e / ?-e-n, the ϑ unexplained as m; I) —&quot;
+
+f.92r counts (this pass): H 2 (of in L7, to in L8), M 11 (Bridges x2, charge, letters, ancient, Newport, forward, it/is, captain, in prison, Irish), I 2 (detain, noblemen), unread 22 sign groups (incl. the surname -cX8L).
+
+## f.96v (R8496 P2; deskew −1.5°, top four cipher lines and the cipher run on the eighth line)
+
+L1 &quot;**the** (AϸT, H) [**TVϕϕLcH** unread: d/t-r-l/t-l/t-e-o-f; perhaps &#x27;... of&#x27; with cH = of; &#x27;troops of&#x27; does not fit the ϕ signs] [**·\7∩Aϑ·· Vϑ?+c** unread: w-e-s-s-p-u / r-p-?-b-o; solver nothing] **passed** (ϑUAAT∞: p-a-s-s-e-d with ŧ = e; exact; M) **by?** (-X: b-i/y; I) yn B[…] works overthrown&quot; (the clear place name is not certain from the crop)
+L2 &quot;**within** (·\⊥AϸcN: w-i-t-h-o-n, fuzzy 1; M) **France** (HVTn8L: f-r-a-n-c-e with ŧ = a; fuzzy 1; M) [**A?V:·cA** &#x27;serves&#x27; exact, sense unclear; I] of they commanding hes informed you of&quot;
+L3 &quot;**Roper?** (Vcϕ7V: r-o-p-e-r with ϕ for p; a surname, exact in lexicon as &#x27;roper&#x27;; I) and of his **servants** (A?V··7nA: s-e-r-v-e-n-t-s; fuzzy 1; M) [**⊥ϸcn** unread: i-h-o-n; &#x27;Iohn&#x27; would fit the signs, I] **priests** (ϕV7XAA: p-r-e-i-s-t-s with ϕ for p; M) a doctor in [**AV7AA7ϑ** unread: s-r-e-s-s-e-p; solver &#x27;treated/arrested&#x27; at 1 edit, no fit] and a&quot;
+L4 &quot;caried **of** (cH, H) **letters** (ϕLAAALVA: l-e-t-t-(t)-e-r-s, same spelling as f.92r L4; M) **for** (HcV, H) **the** (AϸT with ŧ = e, M) **people** (ϕ7cϕl: p-e-o-p-l; exact with ϕ = p; M) [**·\U··8T** unread: w-a-u-c-d; solver nothing] and that shortly&quot;
+L8 &quot;that he had **written?** (·\VLAAATn: w-r-e-t-t-(t/e)-n, one carries a tilde; I) [**AnAAT7nӾ ϕ7nc** unread: s-n-s-s-d-e-n-g / l-e-n-o] is fully ...&quot;
+
+f.96v counts: H 3 (the, of, for), M 8 (passed, within, France, servants, priests, letters, the, people), I 4 (by, serves, Roper, written), unread 8 sign groups (incl. ⊥ϸcn, possibly &quot;Iohn&quot;).</pre></details>
+<h3>R8492, f. 88, undated 1588</h3>
+<p>The densest cipher of the four letters: captain Montgomery has lately gone into Scotland with 40 men, a haven has been promised to Parma (code 15), Italians are arriving, and other Scotsmen are coming; the clear lower half reports Parma&#x27;s commissioners and 80 sail with saddles, bridles, boots and spurs.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
+# One run per line:  folio | clear text before | cipher words (space-separated) | clear text after
+# Sign codes (see signs.tsv for the glossed evidence):
+#   U cup (a)          A caret ∧ (s t a)     + (b)        8 (c)          D ∞ (d)        T barred t ŧ (d t)
+#   7 (e)              H barred H (f)        G Ӿ (g)      h stem+bowl (h)               I ⊥ (i a y)
+#   k ω (k)            l circle+stem ϕ (l t) m ∽ (m)      # plain double cross (m n)    n ǂǂ (n)
+#   z 2-shape (o)      d (o)                 c (o a e)    p loop+tail ϑ (p)             V (r)
+#   y γ (r y)          : two dots / colon (u v)           w dot+stroke (w)              X undotted x (i)
+#   Q reversed c ɔ (a, r?; &#x27;Italian&#x27; f.88)   L L-shape (e; glossed nowhere, fixed by &#x27;haven&#x27; on f.88 and f.80)   K K-shape (unknown)
+#   ? unidentified sign (any letter)         [..] code sign or number, left as is
+# Doubtful readings of a sign are written as the first choice; the solver treats every sign as its whole set.
+f80a | hoping them | Xn Ah7 [◻] pUn87A | for what chaunces so ever you bestow
+f80b | (and that must be great) it will | ncA +7 ??lA Ah7 hc:7n IA Xd+z:87 | ) and me
+f80c | yf honorable for | 7 AcD7mncI Ap7p :VAI Ac Ah7A AcVm7A | as usuall
+f80d | as usuall in all | AVmATA | in numbers
+f80e | that at the | AVmAT dn V7DD | which was the 20
+f80f | which was the 20 and the | A: IG8A | theyr
+f80g | Dunkergh: 22 is so | HcVwUVd7 | yn the
+f80h | yn the | cAAIcn | that he promised Q:
+f80i | that he promised Q: to | Ahnc AD V?IA | 27 to begin the
+f88a | There is captain Montgomery of late gone into Scotland. | 8IpAkcn ?UllApcV?h | with 40 men of
+f88b | with 40 men of | A8cnU | have promised
+f88c | have promised | Ah7 hc:Ln | of
+f88d | of | VUIn ApdIl | yn
+f88g | of 30 | cnn | [struck]
+f88h | Ther | 7A?T IAQlIUnA UQV:InG cAAh7 | 
+f88i | | hdc:y IA nQpIcA UnAcnIc | 
+f88e | yn | XcIVU Ah7V | to 15:
+f88f | of latte there is | A7H?V?A | which have
+f92a | Dunkergh: 4 sent by | pcc:GlcA | are
+f92b | are | I7GIA lIGhl7n | and
+f92c | and | 8lIUV Icn Ucn | sent by
+f92d | imprisoned in | V+c?7A | it is reported that they have
+f92e | it is reported that they have | 8hcV? |
+f92f | of | l7AA:IVA | which</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+
+Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
+Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
+
+## f. 80r (R8490, Ostend 5 May 1588)
+- &quot;hoping them **in the** ◻**pances** [expences] (M) for what chaunces so ever you bestow&quot;
+- &quot;it will **not be** … **the haven** (H) is …&quot;
+- &quot;… **to these termes** (M) as usuall **in all armadas** (H) in numbers, that at the **armada** (M) **on** … which was the 20&quot;
+- &quot;Dunkergh: 22 is so **forwarde** (H) in the **action** (M) that he promised Q[ueen] to … 27 to begin the …&quot;
+
+## f. 80r, second full-resolution pass (reading_ff80_92_96_full.md)
+- New sign: a short horizontal stroke &quot;-&quot; = b (&quot;be&quot;, &quot;subiects&quot;, &quot;Brede&quot;).
+- &quot;hoping theym in the ◻ lances(?)&quot;; the sign after ◻ is the circle-with-stem sign (l/t), so &quot;expences&quot; is doubtful.
+- &quot;touching **hostages** (M) yt ys honorable for **7** [the Queen] (H) … **they** (H) … **to these termes** (H)&quot;
+- &quot;in all **armada** (H) … at the armad[a] **of Brede**(I) which was the 20 and the **subiects** (H)&quot;
+- &quot;22 … promised Q: to **send** (M) … 27 to begin the **openning** (M) **of the** (H)&quot;
+- &quot;a **broth[er]**(I) about 15 who promised the mayor … a **haven** (M) to open&quot;
+
+## f. 81r top
+- &quot;22 hath a **desire** (M) **to retourne** (M) from theym yf he be not more **restrain[ed]**(I)&quot;
+
+## f. 88r (R8492) — see reading_f88.md
+- &quot;captain Montgomery of late gone into Scotland … **captain** (M) [name] with 40 men of …, [who] have promised
+  **the haven** (H) **of Rain** (M) … **spoil** (M) … **there** (H) to **15** [Parma] (H)&quot;
+- &quot;… promised they **deliverd** (M) of the … to us by reason of our abode&quot;
+- &quot;**Italians** (H) **arriving** (M) … **Antonio** (H) … **Naples**(I)&quot;
+- &quot;there are coming of other Scottishmen **divers** (H) … **soldiers** (I) … away the **number of** (M) …&quot;
+
+## f. 92r (R8495, 27 May 1588)
+- &quot;4 sent by the **Portugals** (I) are …&quot;; &quot;imprisoned in **Bruges** (I)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;
+
+## f. 96v (R8496, Bourbourg 9 June 1588) — see reading_f96v.md
+- &quot;**passed** (M) … in Bruges works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;his **servants** (M) … **priests** (M)&quot;;
+  &quot;**seventy** (M)&quot;
+
+## Third pass on ff. 88 (lower half), 92r and 96v (reading_f88_full.md, reading_ff80_92_96_full.md)
+- f. 88 lines 12–20 are mostly clear (Parma&#x27;s commissioners; &quot;80 sayles … with saddelles, bryddelles, bootes and
+  spurres&quot;; &quot;he ys goyng to Caleys&quot;); the seven cipher words there stay unread (a recurring group &quot;Tnn&quot; unresolved).
+- f. 92r: &quot;imprisoned in **Bridges** [Bruges] (M)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;; &quot;**ancient of
+  Newport** (M)&quot;; &quot;**captain** (M) [surname] is also **in prison** (M) [at] **Bridges** (M), the cause whereof is not
+  knowen&quot;; &quot;of late ther are come … from **Irish** (M) **noblemen**(I)&quot;.
+- f. 96v: &quot;**the** … **passed** (M) yn B… works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;**Roper**(I) and of his
+  **servants** (M) … **priests** (M) a doctor in …&quot;; &quot;caried **of letters for the people** (M)&quot;.
+- New sign value: ϕ (circle crossed by stem) also = p (captain, prison, priests, people). &quot;seventy&quot; on f. 96v withdrawn.
+
+## Status
+Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
+read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
+the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f88_full.md">reading_f88_full.md</a></p><pre># f.88 fuller pass (21 Sept 2026) - PARTIAL, lines 1-11 only
+Line numbers follow the deskewed page. Sign codes as in runs.txt. Grades H/M/I; [...] unread.
+
+L1: There is captain Montgomery ... 8AAkwTn (captain? M, prior) Kc?llApcV [...] with 40 men of [pc8cn...] have promised the p[...]
+L2: [hc]:Ln (haven, prior M) of V:Ln (Rain/Raen? I) [...] Dp8Dcl [...] yn XcIVU [...] Ah7V (there H) to 15: of latte there is
+L3: [sorry?] of 30 [struck] T7HLVTA [...] which have promised they p7nATcn [...] pcnAllT [...]
+L4: Ther 7AAT (east H) IAQlIUnA (Italians H) QV:InG (arriving M) cAAh7 [...] hdc:y (honour M) IA nQpIcA (Naples I) UnAcnIc (Antonio H)
+L5: the other ?cAp:V [...] theys be bootes(?) ... ys good ... they have promised they cllT: 7VTcnA pLAcn [...] to us by reason of our aboode
+L6: there are coming of other Scottishmen cl..7VAcn (divers M, prior) Xd:Vz (your? I) Acllc7Vp (soldiers? I) [...] pcTVDn [...] of latt they have sent
+L7: nc:pll..7VTc [...] away the n:.x.. (number of M, prior)
+L8: lVXTlVc [...] IAIA [...] unto them 500 7nIAIAT (ensigns? I) cA8cA [...] who have sent them
+L9: those as she more / our aboode doeth me grieve here, which
+L10: ... IHAcpllIXlnA [...] they ys ...
+L11: me the 7n?pT [...] 15 [...] V:nAcVAT [...] to XV7ALV [...] pnAV [...]
+Lines 12-21: see below.
+
+## Lines 12–21
+(21 Sept 2026, second pass.) The page ends at line 20 on the deskewed image (last line &quot;delivered ... sent&quot;); there is no line 21 of text. The lower half is mostly clear English; cipher is confined to lines 12, 17 and 19. Clear-text readings are palaeographic, cipher grades as above.
+
+L12: Tnn (ten? I; solver fuzzy don/ten) HVcnnG: [...] (solver only &#x27;freeing&#x27;, 2 edits, rejected) they that he wyll have cp-IQ--V [...] (no candidate) to ... with [...]
+L13: b?ll? the D[uke] of Parmas comm[i]ssioners ... wind(?) lyeth far(?) there   [clear, several words uncertain]
+L14: yeare; and ther b: have ... here a great Mercado ys   [clear, middle unread]
+L15: [pu]bly(?); ... days ther passed by 80 sayles which ys the Landers   [clear]
+L16: Landers with saddelles, bryddelles(?), bootes and spurres with ...   [clear]
+L17: made readie: as blade(?): and [struck; &#x27;2000&#x27; interlined] Lo?? 56 [struck; interlined TAcnn = ten/tone I] Lo...
+L18: for his Lettres(?); he ys goyng to Caleys: I praye forgett yt not.   [clear]
+L19: [T..7?]TnnX (deny? I, 1 edit) and [?.]TnnAVV [...] (no candidate) worde(s) / send money to them by such ...
+L20: delivered to be ... whether yt maye be taken and sent   [clear]
+
+Counts for lines 12-20 cipher words: H 0, M 0, I 3 (ten, ten/tone, deny), unread 4 (HVcnnG:, cp-IQ--V, TnnAVV, and the prefix of L19&#x27;s first group).
+Note: the recurring group &quot;Tnn&quot; (L12, L17 interlineation, L19 twice) is probably one sign cluster misread as T + n n; recheck at higher zoom before trusting any of these.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f88.md">reading_f88.md</a></p><pre># f. 88 (DECODE R8492), working reading, 21 Sept 2026
+
+Clear text in roman, deciphered words in **bold**, unread runs as […]. Grades: H certain from signs + solver exact,
+M one sign doubtful or 1–2 edits, I guess.
+
+There is captain Montgomery of late gone into Scotland. **captain** (M) […name…] with 40 men of […], […] have
+promised **the haven** (H) of **Rain** (M) […] **spoil** (M) yn […] **there** (H) to **15** [the Duke of Parma] (H):
+of latte there is […] which have promised they **deliverd** (M) of **the** […] to us by reason of our abode …
+[struck: 30 …] **east(?)** **Italians** (H) **arriving** (M) … **honour(?)** … **Naples(?)** (I) **Antonio** (H) …
+there are coming of other Scottishmen **divers** (H) … **soldiers(?)** (I) … away the **number of** (M) […]
+… unto them 500 **ensigns(?)** (I) … who have sent him …
+
+Grades show how little of the line is secure: the letter is read in part. Clear-text lines 4–9 were read from the
+deskewed page (tmp/cobham/f88_deskew.png, rotation −1.75°).</pre></details>
+<h3>R8495, ff. 92-93, 27 May 1588</h3>
+<p>News from Cobham to Walsingham: the Armada still at Lisbon, Gonzaga, 200 mariners at Sluys; the cipher passages mention men imprisoned in Bruges, letters, the ancient of Newport and Irish noblemen.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/runs.txt">runs.txt</a></p><pre># Sign-level transcription of the cipher runs in the four Cobham letters (Harley 287), from full-resolution crops.
+# One run per line:  folio | clear text before | cipher words (space-separated) | clear text after
+# Sign codes (see signs.tsv for the glossed evidence):
+#   U cup (a)          A caret ∧ (s t a)     + (b)        8 (c)          D ∞ (d)        T barred t ŧ (d t)
+#   7 (e)              H barred H (f)        G Ӿ (g)      h stem+bowl (h)               I ⊥ (i a y)
+#   k ω (k)            l circle+stem ϕ (l t) m ∽ (m)      # plain double cross (m n)    n ǂǂ (n)
+#   z 2-shape (o)      d (o)                 c (o a e)    p loop+tail ϑ (p)             V (r)
+#   y γ (r y)          : two dots / colon (u v)           w dot+stroke (w)              X undotted x (i)
+#   Q reversed c ɔ (a, r?; &#x27;Italian&#x27; f.88)   L L-shape (e; glossed nowhere, fixed by &#x27;haven&#x27; on f.88 and f.80)   K K-shape (unknown)
+#   ? unidentified sign (any letter)         [..] code sign or number, left as is
+# Doubtful readings of a sign are written as the first choice; the solver treats every sign as its whole set.
+f80a | hoping them | Xn Ah7 [◻] pUn87A | for what chaunces so ever you bestow
+f80b | (and that must be great) it will | ncA +7 ??lA Ah7 hc:7n IA Xd+z:87 | ) and me
+f80c | yf honorable for | 7 AcD7mncI Ap7p :VAI Ac Ah7A AcVm7A | as usuall
+f80d | as usuall in all | AVmATA | in numbers
+f80e | that at the | AVmAT dn V7DD | which was the 20
+f80f | which was the 20 and the | A: IG8A | theyr
+f80g | Dunkergh: 22 is so | HcVwUVd7 | yn the
+f80h | yn the | cAAIcn | that he promised Q:
+f80i | that he promised Q: to | Ahnc AD V?IA | 27 to begin the
+f88a | There is captain Montgomery of late gone into Scotland. | 8IpAkcn ?UllApcV?h | with 40 men of
+f88b | with 40 men of | A8cnU | have promised
+f88c | have promised | Ah7 hc:Ln | of
+f88d | of | VUIn ApdIl | yn
+f88g | of 30 | cnn | [struck]
+f88h | Ther | 7A?T IAQlIUnA UQV:InG cAAh7 | 
+f88i | | hdc:y IA nQpIcA UnAcnIc | 
+f88e | yn | XcIVU Ah7V | to 15:
+f88f | of latte there is | A7H?V?A | which have
+f92a | Dunkergh: 4 sent by | pcc:GlcA | are
+f92b | are | I7GIA lIGhl7n | and
+f92c | and | 8lIUV Icn Ucn | sent by
+f92d | imprisoned in | V+c?7A | it is reported that they have
+f92e | it is reported that they have | 8hcV? |
+f92f | of | l7AA:IVA | which</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+
+Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
+Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
+
+## f. 80r (R8490, Ostend 5 May 1588)
+- &quot;hoping them **in the** ◻**pances** [expences] (M) for what chaunces so ever you bestow&quot;
+- &quot;it will **not be** … **the haven** (H) is …&quot;
+- &quot;… **to these termes** (M) as usuall **in all armadas** (H) in numbers, that at the **armada** (M) **on** … which was the 20&quot;
+- &quot;Dunkergh: 22 is so **forwarde** (H) in the **action** (M) that he promised Q[ueen] to … 27 to begin the …&quot;
+
+## f. 80r, second full-resolution pass (reading_ff80_92_96_full.md)
+- New sign: a short horizontal stroke &quot;-&quot; = b (&quot;be&quot;, &quot;subiects&quot;, &quot;Brede&quot;).
+- &quot;hoping theym in the ◻ lances(?)&quot;; the sign after ◻ is the circle-with-stem sign (l/t), so &quot;expences&quot; is doubtful.
+- &quot;touching **hostages** (M) yt ys honorable for **7** [the Queen] (H) … **they** (H) … **to these termes** (H)&quot;
+- &quot;in all **armada** (H) … at the armad[a] **of Brede**(I) which was the 20 and the **subiects** (H)&quot;
+- &quot;22 … promised Q: to **send** (M) … 27 to begin the **openning** (M) **of the** (H)&quot;
+- &quot;a **broth[er]**(I) about 15 who promised the mayor … a **haven** (M) to open&quot;
+
+## f. 81r top
+- &quot;22 hath a **desire** (M) **to retourne** (M) from theym yf he be not more **restrain[ed]**(I)&quot;
+
+## f. 88r (R8492) — see reading_f88.md
+- &quot;captain Montgomery of late gone into Scotland … **captain** (M) [name] with 40 men of …, [who] have promised
+  **the haven** (H) **of Rain** (M) … **spoil** (M) … **there** (H) to **15** [Parma] (H)&quot;
+- &quot;… promised they **deliverd** (M) of the … to us by reason of our abode&quot;
+- &quot;**Italians** (H) **arriving** (M) … **Antonio** (H) … **Naples**(I)&quot;
+- &quot;there are coming of other Scottishmen **divers** (H) … **soldiers** (I) … away the **number of** (M) …&quot;
+
+## f. 92r (R8495, 27 May 1588)
+- &quot;4 sent by the **Portugals** (I) are …&quot;; &quot;imprisoned in **Bruges** (I)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;
+
+## f. 96v (R8496, Bourbourg 9 June 1588) — see reading_f96v.md
+- &quot;**passed** (M) … in Bruges works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;his **servants** (M) … **priests** (M)&quot;;
+  &quot;**seventy** (M)&quot;
+
+## Third pass on ff. 88 (lower half), 92r and 96v (reading_f88_full.md, reading_ff80_92_96_full.md)
+- f. 88 lines 12–20 are mostly clear (Parma&#x27;s commissioners; &quot;80 sayles … with saddelles, bryddelles, bootes and
+  spurres&quot;; &quot;he ys goyng to Caleys&quot;); the seven cipher words there stay unread (a recurring group &quot;Tnn&quot; unresolved).
+- f. 92r: &quot;imprisoned in **Bridges** [Bruges] (M)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;; &quot;**ancient of
+  Newport** (M)&quot;; &quot;**captain** (M) [surname] is also **in prison** (M) [at] **Bridges** (M), the cause whereof is not
+  knowen&quot;; &quot;of late ther are come … from **Irish** (M) **noblemen**(I)&quot;.
+- f. 96v: &quot;**the** … **passed** (M) yn B… works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;**Roper**(I) and of his
+  **servants** (M) … **priests** (M) a doctor in …&quot;; &quot;caried **of letters for the people** (M)&quot;.
+- New sign value: ϕ (circle crossed by stem) also = p (captain, prison, priests, people). &quot;seventy&quot; on f. 96v withdrawn.
+
+## Status
+Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
+read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
+the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
+
+Grades: H certain, M one doubtful sign / 1-2 edits, I guess. Sign codes as in runs.txt.
+
+## f. 80r (R8490 P1, Ostend 5 May 1588)
+
+L1 &quot;...to our drawe our forces from ... hoping theym **in** (Xn, H) **the** (Ah7, H) [◻ code] **lances?** (pUn87A read lUn87A; circle+stem = l/t, I) for what chaunces so ever you bestowe&quot;
+- note: the sign after ◻ is the circle-with-stem ϕ (l/t), not the p-loop; &quot;lances&quot;/&quot;tances&quot; both unsatisfying; possibly ◻+word = one code group.
+
+L2 &quot;(and that muste be great) yt will **not** (#cA, H) **be** (+7, dash-like +, M) **we?t** (wLlA; &quot;wells&quot;/&quot;west&quot; I) **the** (Ah7, H) **haven** (hc:7n, H) **is** (IA, H) [**Xd+c:87** unread: i-o/d-b-o/a/e-u/v-c-e; solver nothing] ) and me ...&quot;
+- The &quot;-&quot; sign in this hand is a short horizontal stroke used for **b** (= &quot;+&quot;): confirmed by &quot;subiects&quot; below; hence #cA-7 &quot;not be&quot;.
+
+L3 &quot;...touching **hostages?** (HcAVUGL A: f?-o-s/t-r-a-g-e-s; the 1st and 4th signs doubtful, solver fuzzy 2 = hostages, M/I) yt ys honorable for **7** [her Majesty] (code, H) [**AcdD7p#cI** unread: t-o-?-d-e-p-n-o-i/e; possibly &quot;to d...&quot;, solver nothing] **they** (Ah7y, H; last sign loop read as γ) [**A:VAI** unread: s/t-u-r-s/t-i; &#x27;stay&#x27;/&#x27;surety&#x27;? I] **to** (Ac, H) **these** (Ah7A, H) **termes** (AcVm7A, H) as usuall&quot;
+- Word dividers | separate every word in this run.
+
+L4 &quot;in all **armada** (AVmATA = a-r-m-a-d-a, ∧=a, H) in numbers, that at the **armad[a]** (AVmAT, M) **of** (dH, H) **Brede?** (-V7D7: b-r-e-d-e, Breda? I) which was the 20 and the **subiects** (A:-I78A = s-u-b-i-e-c-t-s, H) ther wer ... Julio Romeo, Cristophero Mondragon, Mor Dausey&quot;
+
+L5 &quot;Dunkergh: 22 is so **forwarde** (HcVw UVD7, H) yn the **action** (cAAIcn, 2nd sign doubtful, M) that he promised Q: to **send** (A7nd: small 7 between ∧ and ǂǂ, last sign d-type = o/d, M) [**Ac-D:XL** unread: t/s-o-b-?-u-i-e ...] 27 to begin the **openning** (dp7# | #I#G split by a line-end hyphen; o-p-e-n-n-i-n-g, the first two signs blotted together, M) **of** (dH, H) **the** (Ah7, H) [**-Tcw7A** unread: b-d/t-o-w-e-s; &#x27;Downes&#x27;? I]: w[hich] myght bee to the [**Ac## GcH AcVIw7** unread: t-o-n-n ... ; I] ...&quot;
+L6 &quot;... that a **broth[er]?** (-VcAh + 1-2 signs, b-r-o-t-h, solver exact &#x27;broth&#x27;, I) about 15 who promised the mayor [**V z L ### A l c c A** unread: signs uncertain] a **haven** (h:7n, missing the a-sign, M) to open...&quot;
+
+## f. 81r top (R8490 P2, continuation of 5 May letter)
+
+L1 &quot;22 hath a **desire** (?7AI?V: d-e-s-i-(r)-r, two doubtful signs, M) **to** (Ac, M: run-on, divider not visible) **retourne** (V7ATcVn: r-e-t-?-o-r-n, M) [ʃʃ mark] from theym yf he be not more&quot;
+L2 &quot;**restrain[ed]?** (VGAAVcIn-8: r-?-s-t-r-a-i-n-?-?; solver fuzzy &#x27;restrained&#x27;, 2nd and last two signs doubtful, I): ther ys great want of us to cumfort our poure soldiers ...&quot;
+
+## f. 92r (R8495 P1, 27 May 1588) - partial pass only
+
+L1 &quot;that 200 maryners of Hambourgh that wer at Sluse are retourned to Dunkergh: 4 sent by the **Portugals?** (pd?:XlcA: p-o-?-u-i-l-a-s; r-sign not seen, I) are&quot;
+L2 &quot;[**I7GIA dp IXpp7#** unread: i-e-g-i-s / o-p / i-i-p-p-e-n; solver nothing] and [**8-l:Vd Icn AcH** unread: c-b-l-u-r-o / ian / sof] sent by ...&quot;
+- Remaining f.92r lines (imprisoned in -V?c?7A ..., charge, letters, and the four further cipher lines down to &quot;of latte ther are ...&quot;) NOT re-read in this pass.
+
+## f. 96v top five lines (R8496 P2) - NOT re-read in this pass; see reading_f96v.md.
+
+## f.92r lines 3–end (R8495 P1; deskew −3.25°, per-line crops at full resolution, 21 Sept 2026)
+
+Line numbering continues from the two cipher lines above (&quot;4 sent by the Portugals? are / I7GIA ... sent by ...&quot;).
+
+L3 &quot;imprisoned in **Bridges** [= Bruges] (-V+dӾ7A: b-r-(+ read i)-d-g-e-s; 4th sign is the o/d sign, Elizabethan &#x27;Bridges&#x27; for Bruges; same word recurs in L8 as -V⊥dӾLA, M). It is reported that they have **charge** (8hcVX with the final sign read as Ӿ g, final e unwritten; M)&quot;
+L4 &quot;**detain?** (TcAA·n: d-e-t-a-(i)-n, the 5th mark a small tick read as I; I) [**l7XA** unread: l/t-e-i/g-s; &#x27;legs&#x27; fits signs, not context] [**l+HAT nUnA** unread: l/t-b-f-s-d / n-a-n-s; solver nothing] of words of **letters** (l7AAALVA: l-e-t-t-(t)-e-r-s, one extra caret; M) whereupon (clear?)&quot;
+L5 &quot;to have been determined and appointed [**cn pc&#x27;n cz +lcAA** unread: o/a-n / p-e-n / o-? / b-l-o-s-s; solver nothing usable]&quot;
+L6 &quot;[**-λ ApLcA** unread: b-? / s-p-e-o-s] [**n7V** unread: &#x27;ner&#x27;] [**w+Ap··Xcl** unread] — (end of sentence, flourish)&quot;
+L7 &quot;That day was [**Al7VLAT8:·** unread: s-l-e-r-e-t-d-c-u; solver &#x27;already&#x27; at 2 edits, rejected] [**A+c 7n** unread: a-b-o / e-n] **ancient** (cnϸI7nA: a-n-c-i-e-n-t, the 3rd sign a stem-and-bowl read as c; solver exact with 8; M) **of** (cH, H) **Newport** (nL·\pcVA: n-e-w-p-o-r-t = Nieuport; exact; M)&quot;
+L8 &quot;**forward** (HdV·\VT: f-o-r-w-(a)-r-d, one letter missing; M) [**nXcH** unread: n-i-o-f]; [**··7VA** unread: &#x27;verse&#x27; exact, no sense] **it/is** (IA, M) **to** (Ac, H) [**Ap77l** unread: s-p-e-e-l; &#x27;speed&#x27; at 1 edit, I] [**V?XAT** unread: &#x27;raised&#x27; at 1 edit, I]&quot;
+L9 &quot;**captain** (8cϕA7In: c-a-(p)-t-e-i-n, the ϕ-like sign taken as p; fuzzy 1 &#x27;captain&#x27;; M) [**-cX8L** unread: b-o-i-c-e, likely a surname; I &#x27;Boice&#x27;?] is also **in prison** (In ϕVIAcn: i-n / p-r-i-s-o-n with ϕ for p; exact as two words; M) [**LcVA** unread: e-o-r-s] **Bridges** (-V⊥dӾLA, M) [clear: the cause whereof] is not knowen:&quot;
+L10 &quot;Of late ther are come to [**AA7n ϕIX** unread: two carets then e-n / p?-i-i; possibly a place name] from **Irish** (IVILAϸ: i-r-i-(e)-s-h; fuzzy 1; M) **noblemen?** (nc-l7 / ϑcn across the line end: n-o-b-l-e / ?-e-n, the ϑ unexplained as m; I) —&quot;
+
+f.92r counts (this pass): H 2 (of in L7, to in L8), M 11 (Bridges x2, charge, letters, ancient, Newport, forward, it/is, captain, in prison, Irish), I 2 (detain, noblemen), unread 22 sign groups (incl. the surname -cX8L).
+
+## f.96v (R8496 P2; deskew −1.5°, top four cipher lines and the cipher run on the eighth line)
+
+L1 &quot;**the** (AϸT, H) [**TVϕϕLcH** unread: d/t-r-l/t-l/t-e-o-f; perhaps &#x27;... of&#x27; with cH = of; &#x27;troops of&#x27; does not fit the ϕ signs] [**·\7∩Aϑ·· Vϑ?+c** unread: w-e-s-s-p-u / r-p-?-b-o; solver nothing] **passed** (ϑUAAT∞: p-a-s-s-e-d with ŧ = e; exact; M) **by?** (-X: b-i/y; I) yn B[…] works overthrown&quot; (the clear place name is not certain from the crop)
+L2 &quot;**within** (·\⊥AϸcN: w-i-t-h-o-n, fuzzy 1; M) **France** (HVTn8L: f-r-a-n-c-e with ŧ = a; fuzzy 1; M) [**A?V:·cA** &#x27;serves&#x27; exact, sense unclear; I] of they commanding hes informed you of&quot;
+L3 &quot;**Roper?** (Vcϕ7V: r-o-p-e-r with ϕ for p; a surname, exact in lexicon as &#x27;roper&#x27;; I) and of his **servants** (A?V··7nA: s-e-r-v-e-n-t-s; fuzzy 1; M) [**⊥ϸcn** unread: i-h-o-n; &#x27;Iohn&#x27; would fit the signs, I] **priests** (ϕV7XAA: p-r-e-i-s-t-s with ϕ for p; M) a doctor in [**AV7AA7ϑ** unread: s-r-e-s-s-e-p; solver &#x27;treated/arrested&#x27; at 1 edit, no fit] and a&quot;
+L4 &quot;caried **of** (cH, H) **letters** (ϕLAAALVA: l-e-t-t-(t)-e-r-s, same spelling as f.92r L4; M) **for** (HcV, H) **the** (AϸT with ŧ = e, M) **people** (ϕ7cϕl: p-e-o-p-l; exact with ϕ = p; M) [**·\U··8T** unread: w-a-u-c-d; solver nothing] and that shortly&quot;
+L8 &quot;that he had **written?** (·\VLAAATn: w-r-e-t-t-(t/e)-n, one carries a tilde; I) [**AnAAT7nӾ ϕ7nc** unread: s-n-s-s-d-e-n-g / l-e-n-o] is fully ...&quot;
+
+f.96v counts: H 3 (the, of, for), M 8 (passed, within, France, servants, priests, letters, the, people), I 4 (by, serves, Roper, written), unread 8 sign groups (incl. ⊥ϸcn, possibly &quot;Iohn&quot;).</pre></details>
+<h3>R8496, ff. 96-97, Bourbourg 9 June 1588</h3>
+<p>Cobham at Bourbourg (&quot;Binborow&quot;), 9 June 1588, with scattered cipher words; those read include &quot;passed&quot;, &quot;within France&quot;, &quot;servants&quot;, &quot;priests&quot; and &quot;of letters for the people&quot;.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f96v.md">reading_f96v.md</a></p><pre># f. 96v (DECODE R8496, Bourbourg 9 June 1588), cipher lines at the head: working reading
+
+Line 1: Λϑ7ŧVϕϕLcH ·\7ΩΛγϑ·· Vϑz+o ϑ∪ΛΛŧ∞ – X yn Bruges&#x27; works overthrown …
+        **passed** (M; ϑ=p, ŧ=e) … &quot;in Bruges works overthrown&quot; clear.
+Line 2: ·\⊥Λϑc∞∞ HVŧǂǂ8L Λɔ V:·cΛ o[f] they commanding his forces …
+        **within** (M) **France** (M; H-r-a-n-c-e with ŧ=a, L=e) …
+Line 3: [clear] and of his ɔV··7ǂǂΛ ⊥ϑcǂǂ ϕV7XɔΛ a letter …
+        **servants** (M; ɔ=s) … **priests** (M) …
+Line 4: … ·7ǂǂΛ7Vϑ ϕ·IV ·· 8ŧ and that shortly …  (unread)
+Line 8: … ΛΛΛ·· 7ǂǂΛ ⊥ϑcǂǂ …  **seventy** (M, solver exact A7:7nAI) …</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/READING.md">READING.md</a></p><pre># Cobham to Walsingham, May–June 1588 (Harley 287): consolidated reading, 21 Sept 2026
+
+Deciphered words in **bold** with grades (H sign-certain + solver exact; M one sign or 1–2 edits; I guess).
+Code numbers glossed on f. 79: 7 = the Queen, 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain.
+
+## f. 80r (R8490, Ostend 5 May 1588)
+- &quot;hoping them **in the** ◻**pances** [expences] (M) for what chaunces so ever you bestow&quot;
+- &quot;it will **not be** … **the haven** (H) is …&quot;
+- &quot;… **to these termes** (M) as usuall **in all armadas** (H) in numbers, that at the **armada** (M) **on** … which was the 20&quot;
+- &quot;Dunkergh: 22 is so **forwarde** (H) in the **action** (M) that he promised Q[ueen] to … 27 to begin the …&quot;
+
+## f. 80r, second full-resolution pass (reading_ff80_92_96_full.md)
+- New sign: a short horizontal stroke &quot;-&quot; = b (&quot;be&quot;, &quot;subiects&quot;, &quot;Brede&quot;).
+- &quot;hoping theym in the ◻ lances(?)&quot;; the sign after ◻ is the circle-with-stem sign (l/t), so &quot;expences&quot; is doubtful.
+- &quot;touching **hostages** (M) yt ys honorable for **7** [the Queen] (H) … **they** (H) … **to these termes** (H)&quot;
+- &quot;in all **armada** (H) … at the armad[a] **of Brede**(I) which was the 20 and the **subiects** (H)&quot;
+- &quot;22 … promised Q: to **send** (M) … 27 to begin the **openning** (M) **of the** (H)&quot;
+- &quot;a **broth[er]**(I) about 15 who promised the mayor … a **haven** (M) to open&quot;
+
+## f. 81r top
+- &quot;22 hath a **desire** (M) **to retourne** (M) from theym yf he be not more **restrain[ed]**(I)&quot;
+
+## f. 88r (R8492) — see reading_f88.md
+- &quot;captain Montgomery of late gone into Scotland … **captain** (M) [name] with 40 men of …, [who] have promised
+  **the haven** (H) **of Rain** (M) … **spoil** (M) … **there** (H) to **15** [Parma] (H)&quot;
+- &quot;… promised they **deliverd** (M) of the … to us by reason of our abode&quot;
+- &quot;**Italians** (H) **arriving** (M) … **Antonio** (H) … **Naples**(I)&quot;
+- &quot;there are coming of other Scottishmen **divers** (H) … **soldiers** (I) … away the **number of** (M) …&quot;
+
+## f. 92r (R8495, 27 May 1588)
+- &quot;4 sent by the **Portugals** (I) are …&quot;; &quot;imprisoned in **Bruges** (I)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;
+
+## f. 96v (R8496, Bourbourg 9 June 1588) — see reading_f96v.md
+- &quot;**passed** (M) … in Bruges works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;his **servants** (M) … **priests** (M)&quot;;
+  &quot;**seventy** (M)&quot;
+
+## Third pass on ff. 88 (lower half), 92r and 96v (reading_f88_full.md, reading_ff80_92_96_full.md)
+- f. 88 lines 12–20 are mostly clear (Parma&#x27;s commissioners; &quot;80 sayles … with saddelles, bryddelles, bootes and
+  spurres&quot;; &quot;he ys goyng to Caleys&quot;); the seven cipher words there stay unread (a recurring group &quot;Tnn&quot; unresolved).
+- f. 92r: &quot;imprisoned in **Bridges** [Bruges] (M)&quot;; &quot;they have **charge** (M)&quot;; &quot;of **letters** (M)&quot;; &quot;**ancient of
+  Newport** (M)&quot;; &quot;**captain** (M) [surname] is also **in prison** (M) [at] **Bridges** (M), the cause whereof is not
+  knowen&quot;; &quot;of late ther are come … from **Irish** (M) **noblemen**(I)&quot;.
+- f. 96v: &quot;**the** … **passed** (M) yn B… works overthrown&quot;; &quot;**within France** (M)&quot;; &quot;**Roper**(I) and of his
+  **servants** (M) … **priests** (M) a doctor in …&quot;; &quot;caried **of letters for the people** (M)&quot;.
+- New sign value: ϕ (circle crossed by stem) also = p (captain, prison, priests, people). &quot;seventy&quot; on f. 96v withdrawn.
+
+## Status
+Read in part: the key and sign inventory are fixed, the code numbers glossed, and about a third of the cipher words
+read with grade H or M. The rest are unread because their signs could not be resolved confidently from the scans:
+the ∧ and γ signs stand for several letters, and a few signs are glossed nowhere.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_ff80_92_96_full.md">reading_ff80_92_96_full.md</a></p><pre># Cobham to Walsingham: full-resolution re-read of ff. 80r, 81r, 92r, 96v (cipher runs)
+
+Grades: H certain, M one doubtful sign / 1-2 edits, I guess. Sign codes as in runs.txt.
+
+## f. 80r (R8490 P1, Ostend 5 May 1588)
+
+L1 &quot;...to our drawe our forces from ... hoping theym **in** (Xn, H) **the** (Ah7, H) [◻ code] **lances?** (pUn87A read lUn87A; circle+stem = l/t, I) for what chaunces so ever you bestowe&quot;
+- note: the sign after ◻ is the circle-with-stem ϕ (l/t), not the p-loop; &quot;lances&quot;/&quot;tances&quot; both unsatisfying; possibly ◻+word = one code group.
+
+L2 &quot;(and that muste be great) yt will **not** (#cA, H) **be** (+7, dash-like +, M) **we?t** (wLlA; &quot;wells&quot;/&quot;west&quot; I) **the** (Ah7, H) **haven** (hc:7n, H) **is** (IA, H) [**Xd+c:87** unread: i-o/d-b-o/a/e-u/v-c-e; solver nothing] ) and me ...&quot;
+- The &quot;-&quot; sign in this hand is a short horizontal stroke used for **b** (= &quot;+&quot;): confirmed by &quot;subiects&quot; below; hence #cA-7 &quot;not be&quot;.
+
+L3 &quot;...touching **hostages?** (HcAVUGL A: f?-o-s/t-r-a-g-e-s; the 1st and 4th signs doubtful, solver fuzzy 2 = hostages, M/I) yt ys honorable for **7** [her Majesty] (code, H) [**AcdD7p#cI** unread: t-o-?-d-e-p-n-o-i/e; possibly &quot;to d...&quot;, solver nothing] **they** (Ah7y, H; last sign loop read as γ) [**A:VAI** unread: s/t-u-r-s/t-i; &#x27;stay&#x27;/&#x27;surety&#x27;? I] **to** (Ac, H) **these** (Ah7A, H) **termes** (AcVm7A, H) as usuall&quot;
+- Word dividers | separate every word in this run.
+
+L4 &quot;in all **armada** (AVmATA = a-r-m-a-d-a, ∧=a, H) in numbers, that at the **armad[a]** (AVmAT, M) **of** (dH, H) **Brede?** (-V7D7: b-r-e-d-e, Breda? I) which was the 20 and the **subiects** (A:-I78A = s-u-b-i-e-c-t-s, H) ther wer ... Julio Romeo, Cristophero Mondragon, Mor Dausey&quot;
+
+L5 &quot;Dunkergh: 22 is so **forwarde** (HcVw UVD7, H) yn the **action** (cAAIcn, 2nd sign doubtful, M) that he promised Q: to **send** (A7nd: small 7 between ∧ and ǂǂ, last sign d-type = o/d, M) [**Ac-D:XL** unread: t/s-o-b-?-u-i-e ...] 27 to begin the **openning** (dp7# | #I#G split by a line-end hyphen; o-p-e-n-n-i-n-g, the first two signs blotted together, M) **of** (dH, H) **the** (Ah7, H) [**-Tcw7A** unread: b-d/t-o-w-e-s; &#x27;Downes&#x27;? I]: w[hich] myght bee to the [**Ac## GcH AcVIw7** unread: t-o-n-n ... ; I] ...&quot;
+L6 &quot;... that a **broth[er]?** (-VcAh + 1-2 signs, b-r-o-t-h, solver exact &#x27;broth&#x27;, I) about 15 who promised the mayor [**V z L ### A l c c A** unread: signs uncertain] a **haven** (h:7n, missing the a-sign, M) to open...&quot;
+
+## f. 81r top (R8490 P2, continuation of 5 May letter)
+
+L1 &quot;22 hath a **desire** (?7AI?V: d-e-s-i-(r)-r, two doubtful signs, M) **to** (Ac, M: run-on, divider not visible) **retourne** (V7ATcVn: r-e-t-?-o-r-n, M) [ʃʃ mark] from theym yf he be not more&quot;
+L2 &quot;**restrain[ed]?** (VGAAVcIn-8: r-?-s-t-r-a-i-n-?-?; solver fuzzy &#x27;restrained&#x27;, 2nd and last two signs doubtful, I): ther ys great want of us to cumfort our poure soldiers ...&quot;
+
+## f. 92r (R8495 P1, 27 May 1588) - partial pass only
+
+L1 &quot;that 200 maryners of Hambourgh that wer at Sluse are retourned to Dunkergh: 4 sent by the **Portugals?** (pd?:XlcA: p-o-?-u-i-l-a-s; r-sign not seen, I) are&quot;
+L2 &quot;[**I7GIA dp IXpp7#** unread: i-e-g-i-s / o-p / i-i-p-p-e-n; solver nothing] and [**8-l:Vd Icn AcH** unread: c-b-l-u-r-o / ian / sof] sent by ...&quot;
+- Remaining f.92r lines (imprisoned in -V?c?7A ..., charge, letters, and the four further cipher lines down to &quot;of latte ther are ...&quot;) NOT re-read in this pass.
+
+## f. 96v top five lines (R8496 P2) - NOT re-read in this pass; see reading_f96v.md.
+
+## f.92r lines 3–end (R8495 P1; deskew −3.25°, per-line crops at full resolution, 21 Sept 2026)
+
+Line numbering continues from the two cipher lines above (&quot;4 sent by the Portugals? are / I7GIA ... sent by ...&quot;).
+
+L3 &quot;imprisoned in **Bridges** [= Bruges] (-V+dӾ7A: b-r-(+ read i)-d-g-e-s; 4th sign is the o/d sign, Elizabethan &#x27;Bridges&#x27; for Bruges; same word recurs in L8 as -V⊥dӾLA, M). It is reported that they have **charge** (8hcVX with the final sign read as Ӿ g, final e unwritten; M)&quot;
+L4 &quot;**detain?** (TcAA·n: d-e-t-a-(i)-n, the 5th mark a small tick read as I; I) [**l7XA** unread: l/t-e-i/g-s; &#x27;legs&#x27; fits signs, not context] [**l+HAT nUnA** unread: l/t-b-f-s-d / n-a-n-s; solver nothing] of words of **letters** (l7AAALVA: l-e-t-t-(t)-e-r-s, one extra caret; M) whereupon (clear?)&quot;
+L5 &quot;to have been determined and appointed [**cn pc&#x27;n cz +lcAA** unread: o/a-n / p-e-n / o-? / b-l-o-s-s; solver nothing usable]&quot;
+L6 &quot;[**-λ ApLcA** unread: b-? / s-p-e-o-s] [**n7V** unread: &#x27;ner&#x27;] [**w+Ap··Xcl** unread] — (end of sentence, flourish)&quot;
+L7 &quot;That day was [**Al7VLAT8:·** unread: s-l-e-r-e-t-d-c-u; solver &#x27;already&#x27; at 2 edits, rejected] [**A+c 7n** unread: a-b-o / e-n] **ancient** (cnϸI7nA: a-n-c-i-e-n-t, the 3rd sign a stem-and-bowl read as c; solver exact with 8; M) **of** (cH, H) **Newport** (nL·\pcVA: n-e-w-p-o-r-t = Nieuport; exact; M)&quot;
+L8 &quot;**forward** (HdV·\VT: f-o-r-w-(a)-r-d, one letter missing; M) [**nXcH** unread: n-i-o-f]; [**··7VA** unread: &#x27;verse&#x27; exact, no sense] **it/is** (IA, M) **to** (Ac, H) [**Ap77l** unread: s-p-e-e-l; &#x27;speed&#x27; at 1 edit, I] [**V?XAT** unread: &#x27;raised&#x27; at 1 edit, I]&quot;
+L9 &quot;**captain** (8cϕA7In: c-a-(p)-t-e-i-n, the ϕ-like sign taken as p; fuzzy 1 &#x27;captain&#x27;; M) [**-cX8L** unread: b-o-i-c-e, likely a surname; I &#x27;Boice&#x27;?] is also **in prison** (In ϕVIAcn: i-n / p-r-i-s-o-n with ϕ for p; exact as two words; M) [**LcVA** unread: e-o-r-s] **Bridges** (-V⊥dӾLA, M) [clear: the cause whereof] is not knowen:&quot;
+L10 &quot;Of late ther are come to [**AA7n ϕIX** unread: two carets then e-n / p?-i-i; possibly a place name] from **Irish** (IVILAϸ: i-r-i-(e)-s-h; fuzzy 1; M) **noblemen?** (nc-l7 / ϑcn across the line end: n-o-b-l-e / ?-e-n, the ϑ unexplained as m; I) —&quot;
+
+f.92r counts (this pass): H 2 (of in L7, to in L8), M 11 (Bridges x2, charge, letters, ancient, Newport, forward, it/is, captain, in prison, Irish), I 2 (detain, noblemen), unread 22 sign groups (incl. the surname -cX8L).
+
+## f.96v (R8496 P2; deskew −1.5°, top four cipher lines and the cipher run on the eighth line)
+
+L1 &quot;**the** (AϸT, H) [**TVϕϕLcH** unread: d/t-r-l/t-l/t-e-o-f; perhaps &#x27;... of&#x27; with cH = of; &#x27;troops of&#x27; does not fit the ϕ signs] [**·\7∩Aϑ·· Vϑ?+c** unread: w-e-s-s-p-u / r-p-?-b-o; solver nothing] **passed** (ϑUAAT∞: p-a-s-s-e-d with ŧ = e; exact; M) **by?** (-X: b-i/y; I) yn B[…] works overthrown&quot; (the clear place name is not certain from the crop)
+L2 &quot;**within** (·\⊥AϸcN: w-i-t-h-o-n, fuzzy 1; M) **France** (HVTn8L: f-r-a-n-c-e with ŧ = a; fuzzy 1; M) [**A?V:·cA** &#x27;serves&#x27; exact, sense unclear; I] of they commanding hes informed you of&quot;
+L3 &quot;**Roper?** (Vcϕ7V: r-o-p-e-r with ϕ for p; a surname, exact in lexicon as &#x27;roper&#x27;; I) and of his **servants** (A?V··7nA: s-e-r-v-e-n-t-s; fuzzy 1; M) [**⊥ϸcn** unread: i-h-o-n; &#x27;Iohn&#x27; would fit the signs, I] **priests** (ϕV7XAA: p-r-e-i-s-t-s with ϕ for p; M) a doctor in [**AV7AA7ϑ** unread: s-r-e-s-s-e-p; solver &#x27;treated/arrested&#x27; at 1 edit, no fit] and a&quot;
+L4 &quot;caried **of** (cH, H) **letters** (ϕLAAALVA: l-e-t-t-(t)-e-r-s, same spelling as f.92r L4; M) **for** (HcV, H) **the** (AϸT with ŧ = e, M) **people** (ϕ7cϕl: p-e-o-p-l; exact with ϕ = p; M) [**·\U··8T** unread: w-a-u-c-d; solver nothing] and that shortly&quot;
+L8 &quot;that he had **written?** (·\VLAAATn: w-r-e-t-t-(t/e)-n, one carries a tilde; I) [**AnAAT7nӾ ϕ7nc** unread: s-n-s-s-d-e-n-g / l-e-n-o] is fully ...&quot;
+
+f.96v counts: H 3 (the, of, for), M 8 (passed, within, France, servants, priests, letters, the, people), I 4 (by, serves, Roper, written), unread 8 sign groups (incl. ⊥ϸcn, possibly &quot;Iohn&quot;).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/reading_f96v.md">reading_f96v.md</a></p><pre># f. 96v (DECODE R8496, Bourbourg 9 June 1588), cipher lines at the head: working reading
+
+Line 1: Λϑ7ŧVϕϕLcH ·\7ΩΛγϑ·· Vϑz+o ϑ∪ΛΛŧ∞ – X yn Bruges&#x27; works overthrown …
+        **passed** (M; ϑ=p, ŧ=e) … &quot;in Bruges works overthrown&quot; clear.
+Line 2: ·\⊥Λϑc∞∞ HVŧǂǂ8L Λɔ V:·cΛ o[f] they commanding his forces …
+        **within** (M) **France** (M; H-r-a-n-c-e with ŧ=a, L=e) …
+Line 3: [clear] and of his ɔV··7ǂǂΛ ⊥ϑcǂǂ ϕV7XɔΛ a letter …
+        **servants** (M; ɔ=s) … **priests** (M) …
+Line 4: … ·7ǂǂΛ7Vϑ ϕ·IV ·· 8ŧ and that shortly …  (unread)
+Line 8: … ΛΛΛ·· 7ǂǂΛ ⊥ϑcǂǂ …  **seventy** (M, solver exact A7:7nAI) …</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/signs.tsv">signs.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/cobham1588.json"></figure>
 <!-- replay:end -->

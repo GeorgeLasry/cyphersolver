@@ -51,7 +51,7 @@
 <div class="seal solved" aria-hidden="true"><span class="long">ciphertext-only</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#keys">The two keys</a><a href="#method">How key A was recovered</a><a href="#june">June 1523 (R9488–R9490, key A)</a><a href="#july">July 1523 (R9492–R9493, key A)</a><a href="#gattinara">20 July 1523, to Gattinara (R9491, key B)</a><a href="#july26">26 July 1523 (R9494–R9496, key B)</a><a href="#august">13 August 1523 (R9497–R9498, key B)</a><a href="#open">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The documents</a><a href="#keys">The two keys</a><a href="#method">How key A was recovered</a><a href="#june">June 1523 (R9488–R9490, key A)</a><a href="#july">July 1523 (R9492–R9493, key A)</a><a href="#gattinara">20 July 1523, to Gattinara (R9491, key B)</a><a href="#july26">26 July 1523 (R9494–R9496, key B)</a><a href="#august">13 August 1523 (R9497–R9498, key B)</a><a href="#open">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> DECODE lists eleven ciphered letters of Lope de Soria to Charles V, 1523&ndash;24, as not deciphered. They are five despatches from Genoa, June to 13 August 1523, most in two or three copies; one is to the chancellor Gattinara. Bergenroth calendared only the letter of 13 August, from its clear parts. The letters use two ciphers. Soria switched in late July: the letter of July has its body in the first and its post data in the second. The key of the later cipher (key B) was rebuilt by aligning a Soria letter of December 1523 (DECODE R9844) with the court&rsquo;s decipherment filed beside it. The earlier cipher (key A) had no key and no crib. About a thousand signs were transcribed, and its key was recovered from the ciphertext alone: a simulated-annealing substitution solver scored on Castilian state papers of 1520&ndash;21 found the alphabet from random starts. The three copies of the June letter then confirmed the homophones. The letters report the league with Venice being closed, the French king&rsquo;s expected descent on Italy, a proposal to open war on the Venetians in the Bergamasco and Bresciano, Siena&rsquo;s government, Beaurain&rsquo;s mission to Bourbon, money for the Swiss, and Andrea Doria offering his galleys to the Emperor.
 <em>Extent: partial. The June and July letters are deciphered nearly throughout. The key-B passages are deciphered in their main content, with some code groups open, among them rip, pur, qed and mul in key A and a dozen groups in key B.</em>
@@ -118,6 +118,1511 @@
 <li>Not collated sign by sign: R9490 (spot checks only), R9493 (checked at the doubtful words), R9496, and R9498 beyond the Doria passage.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R9488-R9490, Genoa, June 1523, to Charles V (three copies, key A)</h3>
+<p>Milan&#x27;s secretary has reached Venice with the Infante&#x27;s mandate to conclude the league; the Duke of Milan has promised the Infante 18,000 ducats; Caracciolo leaves for Venice; the infantry mutiny over pay and the Doge&#x27;s offer of 500 infantry for a month.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/keyA_june.txt">keyA_june.txt</a></p><pre># Lope de Soria, Genoa, June 1523, to Charles V -- cipher block (key A), three copies R9488 / R9489 / R9490.
+# Base text: R9488 (f.248r = img P2 right page, then f.248v = img P1 left page). One line per R9488 MS line.
+# Line numbers: L01-L09 = f.248r lines 1-9; L10-L28 = f.248v lines 1-19.
+# Glyph names as keyA_r9492_f444.txt:
+#  z = tailed z   Z = crossed z (ǂ)   O = circle with bar   o = plain o   T = tt-ligature   a = alpha  e = epsilon
+#  c  2 3 7 9 as written (7 includes the &#x27;6-hanging-below&#x27; form, as in keyA &#x27;ZeOo73zc&#x27;)
+#  f = phi   p = p with loop   P = p with double cross-bar   q = &#x27;2&#x27; with looped tail   Q = 9/q with crossed tail
+#  d = partial-d   b = 6 with ascender bar   n = pi   L = L-hook   V = triangle
+# New signs:
+#  U = small circle with a cross-stroke on its right (o+): L02 zUo9, L28 end, R9489 opens &quot;Z o+&quot;
+#  S = small closed &#x27;S/5&#x27;-shaped sign sitting on the line, loop at the base (f.248r L1 only so far)
+#  Y = T-like sign with a double bar on top (like ╤) (f.248r L2)
+#  R = small circle on a short stem (like ♀), occurs before 9 or p: 7cR9cTz, cRp (maybe a 9 variant)
+#  H = heavy &#x27;#&#x27; (double-crossed hatch, bigger than T) (f.248r L3)
+# Lower-case three-letter code words (lod lih luc cap cip cae dus mos ...) kept as words. Spacing is the writer&#x27;s.
+# {x} = doubtful or variant reading; {?} = illegible.
+L01: To{R9489: Z o+} p 9cn7d{oo?; R9489 7}eda zS{=e form; R9489 Ze}Oo77{R9489 73}Zc lod{R9489 cTZ} lih Oqda{R9489 Oadq} Tzc7pc{R9489 Tzc79c} c3{read T3; R9489 c3}
+L02: zUo9{R9489 Z3p} cap Zo9{o read O; R9489 zo9} pY779{R9489 Y739} Ta{R9489 cTa} zc{R9489 Zc} 3zcZO79{R9489 cip (code word)} 3cnzOoZ{R9489 zcnzOoZ}
+L03: T9o7a{R9489 To77q} cTHZ2{H superfluous: plain needs cTZ2 del; R9489 cTz2} luc lod lih z2 V392 937p To97 cTq{R9489 p379 To9f cTa}
+L04: z2d9c cTpTa{R9489 cTpTq} cTZ27 cR9cTz{R9489 cTZ2 7cR9cTz} b9op OacO237o
+L05: 29 27Pp Oac{R9489 Oqc} 2qe{R9489 2ae} cip cae f cap bqo{R9489 bao} zeTa Z2 luc
+L06: lod lih 937p boqd ZTz{R9489 zT7; plain needs e t i} cTq{R9489 cTa} 92 cT7OQa 7cR9cTz{R9489 7cR9cTZ} cT7
+L07: zLof aOQq d72{R9489 looks lim} cT3O9 cTae f cap Oac ZeTq Tz
+L08: c79c bao O7ZoTq cap nz OqcO23fo79{q read d; R9489 OqcO237o79} 2p{R9489 29} cT7
+L09: OQ9{R9489 OQp} 27Pp{7 read 2; R9489 27P9} fbao ZeTq nz b9oT7p Oqc{R9489 Oac} cT727
+L10: PzcO79{R9489 PZcO79} z2 baoTqcaT 9o7q O9opOQq2a{R9489 O9op OQa2q}
+L11: b9op 7op3Zcz O79{R9489 7o po cip} f 9cn7 d7eda zeOo73zc{R9489 ZeOo73Zc}
+L12: lod lih Oadq 937Zc{R9489 937zc} cTqnz{R9489 cTanz} OadZc{R9489 OqdZc} O{mark below}9 cTq{R9489 cTa} lod pdaT7{R9489 9daT7; R9490 9daT7}
+L13: c9o297cRp{R9489 c9o29 mos (code word); R9490 cpo nz 29 7cR9} cTZo79{R9490 cTZo7p} lod dus 2ze 937pc Zc379
+L14: cTa{R9490 cTq} 3c9 b9Pp{read bpP9; R9489,R9490 b9Pp} f cap Oac zeTq{R9489 ZeTq} bZcn93pc{R9490 bzc..} lod nqnz{R9489 nqnZ; R9490 cTzna nz?}
+L15: P9o2p{R9489 Pp9o2p; R9490 P9o2p} bao{R9489,R9490 bqo} 9Pqop{R9489 PPaop; R9490 9Paop} fbpoo9{doubtful; R9489 fb9o9; R9490 fb9op} ZeTq{R9489,R9490 omit} 9Op79o{R9489 pO93po; R9490 9Op79o} cTZb9{R9489 lod b9; R9490 cTz b9}
+L16: Ppo2Ze{R9489 Ppo2ze} 2a{R9490 2q} cap nZ2ze{R9490 nz2Ze} cTZ3z{R9490 cTz3Z} 9c ZeOo7Tq{R9489 ZOo7Ta; R9490 ZeOo7Ta} Z2{R9490 z2} luc
+L17: lod lih fz2{R9489 fZ2} nZc7ao{R9489 nZcfao} boaebzoq{R9489 baebZoq} 92 luc lod cop{sic, not cap} cap V37
+L18: Zo9{R9489 zop} ZeRqo{R9489 ze Rao} O{mark below}9onz{R9489 O9onZ} lod 9f3cTpo Oac 92P3c9n3dp{R9489 p2P3c9 n3d9}
+L19: lod cT7cZoae{R9489 cT7cZoqe} fZ2{R9489 f32?} Yzebqc{R9489 YZebqc} cTZ{R9489 cT7a} cap cq b3Z cTz cT9o cT7
+L20: czoqebzoa{R9489 czoaebZoq} cap Tad9op V37c7ZcTae 7cR9cTZe
+L21: cTz2ae{R9489 cTZ2ae} cTz2{R9489 cTZ2} ZmzoO7Ta{R9489 ZmZo O7Tq} b9op cap zeTZc9V37{R9489 ZeTzc 9V37}
+L22: f2ae b9Pp o9{R9489 b9PPo9} bao3cdZe{R9489 bqo3cdZe} fb9oZOZ2z{R9489 f b9ozOZ2z} cap Oac
+L23: zeTa{R9489 ZeTq} cTZeO9o Pp lod P9eTq{P read p; R9489 P9eTq} 92{R9489 po2} ZmzoO7Ta f
+L24: P39o cT9 dz7qo{R9489 dZ7ao} ZeT9 O73 cT9 cT f{blotted} V37 T9 Z23ea
+L25: 92qe{R9489 92ae} cap T7zcZc O9opq{R9489 O9oPq} bao{R9489 bqo} dus lod bzcT7o2z{R9489 bzcT7o2Z}
+L26: cT7cZoae{R9489 cT7cZoa} f 9Z2 cTz{R9489 po zz, no cTz} cT9o2ae{R9489 cT9o2qe} lod d9czop cap
+L27: c9{R9489 c9cT7} cT7 pT7zc{R9489 9T7Zc} cTZ n7cq{R9489 cTZn7 ca} . 9 .{R9489 po} n3 baob7q 7cTzoZ{R9489 7cTzoz}
+L28: nz Z{written as ≠} U{R9489 ends &#x27;nZ po To&#x27;}
+# end of cipher block; clear follows &#x27;Segun publican los franceses ...&#x27;
+
+# ---------------------------------------------------------------------------------------------
+# Collation notes
+# R9489 f.250r-f.251v: collated line by line against all of L01-L28 (the line breaks differ; variants shown in {}).
+# R9490 f.252r?-253v: collated only in spot checks (f.253v lines 1-4 = L12-L16). Not a full collation.
+# R9488 L01 opens &#x27;To p&#x27;; R9489 opens &#x27;Z(≠) o+&#x27;; R9488 ends &#x27;nz ≠ o+&#x27;, R9489 ends &#x27;nZ po To&#x27;.
+#
+# Systematic differences between copies (homophones)
+#  a ~ q  the commonest swap, dozens of cases: Oac/Oqc, 2qe/2ae, bao/bqo, cTa/cTq, Ta/Tq, OQq2a/OQa2q,
+#         cT7cZoae/cT7cZoqe, czoqebzoa/czoaebZoq. Both = o in the key.
+#  z ~ Z  very frequent: zeTq/ZeTq, cTz2/cTZ2, bzc/bZc, Pzc/PZc, 937Zc/937zc, zeOo73zc/ZeOo73Zc. Both = e.
+#  9 ~ p  frequent: Tzc7pc/Tzc79c, 2p/29, OQ9/OQp, pdaT7/9daT7, 27Pp/27P9, Zo9/zop, 7cRp/7cR9, c9o/cpo. Both = a.
+#  p ~ P  occasional: O9opq/O9oPq, 9Pp/9PP (P = g, so these may be errors rather than homophones).
+#  f ~ 7  in &#x27;concluyria&#x27; (R9488 23fo79 vs R9489 237o79) and nZc7ao/nZcfao: y/i.
+#  3 ~ 7  in &#x27;arriuado&#x27; (R9488 pY779, R9489 Y739), &#x27;escriuen&#x27; (L01), &#x27;acauar&#x27; (L15: R9488 and R9490 7, R9489 3).
+#  code word vs spelled-out: R9489 &#x27;cip&#x27; where R9488 spells 3zcZO79 (L02, &#x27;uenecia&#x27;) and &#x27;7op3Zcz O79&#x27; (L11);
+#         R9489 &#x27;mos&#x27; where R9488 has &#x27;7cRp cTZo79&#x27; (L13, &#x27;infanteria&#x27;). R9489 &#x27;lim&#x27; where R9488 has d72 (L07, &#x27;mil&#x27;).
+#
+# New signs: R (= f in the plaintext check), Y (= r/rr), U (o+), S (e form, once), H (superfluous, once), m (as keyA).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9488.md">read_r9488.md</a></p><pre># R9488 / R9489 / R9490 (9/28 ff. 248-253), Soria to Charles V, Genoa, June 1523 — key A, reading
+
+One letter in three copies. Cipher block f. 248r-248v (R9488), 28 lines, transcribed and collated with R9489
+(full) and R9490 (spot checks) in keyA_june.txt. Decoded with the key-A alphabet (keyA.md) plus R = f, Y = r.
+Code words fixed here: cap = que, lod = de, luc = duque, lih = Milan, cip = Venecia (R9489 writes cip where
+R9488 spells &#x27;uenecia&#x27;), mos = infanteria (same), lim = mil (same). Open: dus (2x), cop (1x), nra (L17).
+
+## Reading (normalised spelling kept close to the letter; [ ] = tentative)
+
+[... y ansi mismo] escriven de Milan como tenian nueva que era arrivado en Venecia un secretario del duque de
+Milan, el qual avia traido el mandado del Infante para concluir la liga con los venecianos, y que por esto el
+duque de Milan avia prometido al dicho Infante diez y ocho mil ducados, y que con esto tenian por cierto que se
+concluiria la dicha liga, y por esto se partia con diligencia el protonotario Caracciolo para ir a Venecia.
+
+Y ansi mismo escriven de Milan como aviendose [comen]çado de amotinar la infanteria de [dus], les avian enviado
+una paga, y que con esto pensavan de sosegarla por agora; y para esto, y acabar de pagarles lo que se les deve,
+an escrito el duque de Milan y el señor Prospero al duque de [Genova] que quiera esforçarse de ayudar con alguna
+suma de dineros, y el respondio que no puede dar dineros, pero que tomara quinientos infantes de los del exercito
+para que esten aqui y los pagara por un mes; y pareceles que con esto descarga de gasto al exercito y guarda
+mejor esta ciudad, y quita el uso a los que tienen cargo por [dus] de pedirle dineros, y a el de darlos; de
+manera que nadie atiende sino a su propio interese.
+
+## English
+
+They write from Milan that news had come that a secretary of the Duke of Milan had arrived in Venice with the
+Infante&#x27;s mandate to conclude the league with the Venetians; for this the Duke of Milan had promised the Infante
+18,000 ducats, and so they took the league as certain, and the protonotary Caracciolo was leaving in haste for
+Venice. They also write that the infantry having begun to mutiny, a pay had been sent them, with which they hoped
+to quiet it for now; and to finish paying what is owed, the Duke of Milan and Signor Prospero [Colonna] have
+written to the Doge [of Genoa] to make an effort to help with some sum of money. He answered that he cannot give
+money, but will take five hundred infantry of the army to be here and pay them for a month; they think this
+relieves the army of cost, guards this city better, and ends the habit of those in charge of [..] asking him for
+money and his of giving it: so that no one looks to anything but his own interest.
+
+Context: the Venetian league with the Emperor was concluded on 29 July 1523 and published 15 August (CSP Spain
+vol. 2 no. 587); Marino Caracciolo was the imperial protonotary sent to Venice. &#x27;El Infante&#x27; = Archduke Ferdinand.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/measure/r_june.txt">r_june.txt</a></p><pre># Reading of the key-A block of the June letter (R9488, collated R9489/R9490), one line per cipher line of keyA_june.txt.
+# {x} = declared opener/closer/null mark (not counted); [x] = unread or context-only guess (counted as unread);
+# a word split over two lines is written &#x27;pa-&#x27; / &#x27;-sado&#x27;.
+L01: {To} [p] ansimismo escriuen de Milan como tenian nu-
+L02: -eua que era arriuado en Uenecia un secre-
+L03: -tario del duque de Milan el qual auia traido el
+L04: mandado del infante para concluir
+L05: la liga con los uenecianos y que por esto el duque
+L06: de Milan auia prometido al dicho infante di-
+L07: -ez y ocho mil ducados y que con esto te-
+L08: -nian por cierto que se concluiria la di-
+L09: -cha liga y por esto se partia con dili-
+L10: -gencia el protonotario Caracciolo
+L11: para ir a Uenecia y ansi mismo escriuen
+L12: de Milan como auiendose comencado de amoti-
+L13: -nar la infanteria de [dus] les auian enuia-
+L14: -do una paga y que con esto pensauan de sose-
+L15: -garla por agora y para esto acabar de pa-
+L16: -garles lo que se les deue an escrito el duque
+L17: de Milan y el senor Prospero al duque de [cop] que qui-
+L18: -era esforcarse de ayudar con alguna suma
+L19: de dineros y el respondio que no puede dar di-
+L20: -neros pero que tomara quinientos infantes
+L21: de los del exercito para que esten aqui
+L22: y los pagara por un mes y pareceles que con
+L23: esto descarga de gasto al exercito y
+L24: guarda mejor esta ciudad y quita el uso
+L25: a los que tienen cargo por [dus] de pedirle
+L26: dineros y a el de darlos de manera que
+L27: nadie atiende sino {.} a {.} su propio interese
+L28: se {Z} {U}</pre></details>
+<h3>R9491, Genoa, 20 July 1523, to Gattinara (key B)</h3>
+<p>Siena, its &#x27;comunidades&#x27; and &#x27;tiranos&#x27;, should be governed at the Emperor&#x27;s hand; Beaurain is at Turin.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9491_b.md">read_r9491_b.md</a></p><pre># R9491 f. 441r cipher block, second pass (Soria to Gattinara, Genoa 20 July 1523)
+
+Crops: scratchpad r91b_N{n}a/b.jpg (the lines slope, so the left half of line n sits about 0.019 lower than the
+right half). There are 19 cipher lines. The clear text before the block is &quot;no se en que terminos esta la negociacion de
+Sena porque agora anda alli la peste muy rezia y porque entendido&quot;. The clear text after it: &quot;El señor de Ponblin anda
+por casarse / bien seria que fuese de mano de su Mag. la muger que ha de tomar porque es un buen pie en Ytalia aquel
+estado / digolo a V. S.a porque pueda pensar en ello&quot;.
+
+Same sign names as read_r9491.md. New distinctions made in this pass:
+- n4 (p-hook with 4) = p is a different sign from r4 = i.
+- ƍ (open-topped g) = c is a different sign from 9 = d.
+- t# has two forms: t# = v/b (republica, libertad, avra, aprovechar, govierno) and t# = t (contento, proposito).
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | fH. sub yoc yac zog pu ∞∞ | [opener] que el [yac] de se [∞∞] → &quot;que el [yac] desea(?)&quot; |
+| 2 | fob 8 sub pu V r T q 7 c y H si xin 6 8 K ♀ t# t r4 h m# ▽ sub tef | [fob]e **que se govierne por la republica y que no** (V=g, 6=r, K=p, ♀=u, t#=b, t=l) |
+| 3 | K ∞∞ taf lb sub pu m# f∞ t 7 h α tef pu pob zog yof tu pud m# zo r4 c ꝑ̄ | a[∞∞] [taf]o que se a c a ? e c a (?), **no se si desto** [tu] [pud]a al p r o… |
+| 4 | 4 r ƀ ∞ t# ꝑ̄ zog ʋ peb ƍ q lb zog pic tab si sub c 8 7 r4 ∞ f r ƀ m# yef | …p o s i t o → **al proposito del servicio de su Magestad, porque rezia(?) cosa es** (ʋ=l, lb=o, 7 here Ƶ=z?) |
+| 5 | α pel zog xod K7c pu seb sob∞ h r ƀ m# si T ꝑ̄ L ȶ zog tuc ƀ 2 ∞ ʒ q 4 7 | a [pel] **de hazerse** [seb sob∞] **cosa por voto de muchos maxime** (xod=ha, ʒ=x, 4=m) |
+| 6 | m# yic y zog ∞ ▽ zog pug c r4 α ƀ r n4 q y ∞∞ ꝑ̄ δ 7 ƀ zuf ∞ ▽ zib ∞ sib | **adonde ay** de[pug]r?as (= diversas?) **opiniones, como ay** [zib]a [sib] (δ=n, ∞∞=i) |
+| 7 | yic r T ∞ 8 pu p p L ꝑ̄ zog 2 m# y r zog pic tab seb sob∞ h ꝑ̄ ƀ m# pu c q ∞ | [yic]o v a e se [ppto: puesto?] **de mano de su Magestad** [seb sob∞] **cosa seria** |
+| 8 | to m ∞ h q l zog xe c pu si sub ∞ sub ʋ L 7 y 9 c m# si zed zog pud ♂ zof L 7 y | [to] **facil de hazerse, porque aquel tendra por bien de** [pud] **con-ten-** (m=f, zed=bien) |
+| 9 | t# ꝑ̄ α pic tab si pic 4 6 ȶ# q r r4 δ φ 8 c 7 pu ▽ tadƀ T H 7 8 ƀ pu | **-to a su Magestad por su propio(?) interese, y** [tad]s **vezes se** |
+| 10 | K lb 9 c q m# 4 ∞ y 9 m# c xip sub tef pu sab ∞ pep m# c 7 K T t# ƀ q h m# ▽ | **podria mandar lo que no se** [sab] **a una republica, y** (pep=un, K=p, t#ƀ=bl) |
+| 11 | pob tef xub ω 7 sub 4 m# c 8 ƍ 7 zed sub pic tab pud yed sob t# 7 c L ∞ 9 | **si no fuese que parece bien que su Magestad** [pud: ponga] **en libertad** (xub=fue, sob=li, ƍ=c; 4=p here?) |
+| 12 | yufƀ f r 2 T y r4 9 m# 6 7 ƀ ▽ tef pic V H φ ∞ ƀ m# L q c ∞ y r ƀ sib t# ꝑ̄ α | **estas comunidades y no sujetas a tiranos** [sib] [t#ꝑ̄] a (yuf=esta, V=j) |
+| 13 | xip sub φ r ƍ ∞ m# pic peb f∞ ȶ tuc tac pu n4 r 9 c q m# ∞ K c r t# 7 ʒ z ∞ c | **lo que toca a su servicio, mucho** [tac: mas] **se podria aprovechar** (n4=p, t#=v, ʒ=c, z=h) |
+| 14 | yuf y 9 r pep r zog 2 m# y r zog pic tab sub E r T 8 c y ∞ ω 7 ▽ ∞ ƀ h m# | **estando uno de mano de su Magestad que governase, y al ca-** (ƀ=l here) |
+| 15 | t# r f c 7 r sub ∞ t# c m# zog T H y q c m# yof si pic xipƀ ω 8 y 7 ƀ H ƀ | **-bo creo que avra de venir a esto por** [pic] **los seneses** |
+| 16 | zog xin zof 9 ∞ ƍ q r y sub ω r y sub f ∞ 9 m# seb sub X m# pu c ω 8 y q r c | **de la condicion que son, que cada qual querra ser señor** (∞=i, seb=qual, X=rr) |
+| 17 | ▽ xipƀ to ya ƀ tef K ∞∞ 7 y ω m# y pob tef ω r xip yed pic ɑ4 c r n4 q r | **y los** [to ya]s **no piensan sino solo en su propio** |
+| 18 | r4 y L 8 c 7 ω H n4 ∞∞ 8 y ω 7 yed ync pup ω 8 y q r c q ∞ si sub xif q y | **interese. Piense en ello V. Señoria, porque** [xif] in- (ync=ello, n4=p) |
+| 19 | ? r c ꝑ m# ∞ pic tab yoc zid g# r t# 4 8 c y r zog α sub Q m# f q T 9 ∞ 9 / ∂ | -[c]or[p]a(?) **a su Magestad el** [zid] **govierno de aquella ciudad** (Q=ll) (end) |
+
+## New key values
+
+| sign / code | value | proof word |
+|---|---|---|
+| V (in this letter) | g / j | govierne (l.2); sujetas (l.12) |
+| 6 | r (not d) | republica (l.2), propio (l.9) |
+| K (crossed alpha) | p | publica (l.2), podria (l.10), piensan (l.17), aprovechar (l.13) |
+| ♀ | u | publica (l.2) |
+| t# (b-form) | b / v | publica, libertad, avra, aprovechar, govierno |
+| t# (t-form) | t | contento (l.8-9), proposito (l.3-4) |
+| t | l | publica (l.2) |
+| n4 | p (distinct from r4 = i) | podria (l.13), piense (l.18), propio (l.17) |
+| ƍ | c (distinct from 9 = d) | toca (l.13), parece (l.11), servicio (l.4) |
+| ∞∞ | i | piensan (l.17), piense (l.18), opiniones (l.6) |
+| ∞ | i sometimes (otherwise a) | condicion (l.16), proposito (l.4) |
+| δ | n | opiniones (l.6), interese (l.9) |
+| ʒ | x (l.5) / c (l.13) | maxime; aprovechar |
+| 4 | m (l.5); p (l.11, doubtful) | maxime; parece |
+| ƀ | l in some places (otherwise s) | republica (t#ƀ = bl), al cabo |
+| ʋ (small v) | l | del (zog ʋ), aquel (l.8) |
+| lb | o | servicio (l.4), podria (l.10) |
+| Q | ll | aquella (l.19) |
+| xod | ha | hazerse (l.5) |
+| xub | fue | fuese (l.11) |
+| sob | li | libertad (l.11) |
+| yuf | esta | estas comunidades (l.12), estando (l.14) |
+| zed | bien | tendra por bien (l.8), parece bien (l.11) |
+| seb | qual | cada qual (l.16) |
+| pep | un | una republica (l.10), uno (l.14) |
+| ync | ello | piense en ello (l.18; the clear postscript has &quot;pensar en ello&quot;) |
+| tac | mas (?) | mucho mas se podria (l.13) |
+| pud | pon- (?) | que su Magestad ponga en libertad (l.11) |
+| zid | buen (?) | el buen govierno (l.19) |
+| tad(ƀ) | a la(s) (?) | a las vezes (l.9) |
+
+## Running text
+
+... que el [yac] desea[?] [fob]e que se govierne por la republica, y que no a[ya] [taf]o que se [acabe?],
+no se si desto [tu] [pon]ga al proposito del servicio de su Magestad, porque [rezia] cosa es a[pel] de hazerse
+[semejante?] cosa por voto de muchos, maxime adonde ay [diversas] opiniones, como ay [zib]a [sib] [..] [puesto?]
+de mano de su Magestad. [Semejante?] cosa seria [muy] facil de hazerse, porque aquel tendra por bien de [poner]
+contento a su Magestad por su [propio] interese, y [a las] vezes se podria mandar lo que no se [sab] a una
+republica. Y si no fuese que parece bien que su Magestad [ponga] en libertad estas comunidades y no sujetas a
+tiranos, [sib] [..] a lo que toca a su servicio mucho [mas] se podria aprovechar estando uno de mano de su
+Magestad que governase. Y al cabo creo que avra de venir a esto, por[que] los seneses, de la condicion que son,
+que cada qual querra ser señor, y los [otros?] no piensan sino solo en su propio interese. Piense en ello
+V. Señoria, porque [xif] in[corpor]a(?) a su Magestad el [buen] govierno de aquella ciudad.
+
+## English summary
+
+Soria reports that someone (the [yac], maybe the Cardinal or a party in Siena) wants Siena to be governed as a
+republic. He argues that decisions taken by vote of many are hard to carry out where opinions are divided, and that
+it would serve the Emperor better to have one man governing Siena &quot;de mano de su Magestad&quot;. That man would keep the
+Emperor content out of self-interest, and a single man can be ordered in ways a republic cannot. He grants that
+freeing the Sienese communes from their tyrants looks well, but says the city will end up under one ruler anyway,
+because every Sienese wants to be master and thinks only of his own interest. He asks Gattinara to think about
+securing the government of the city for the Emperor.
+
+Confidence: medium for lines 8-19; low for lines 1-7, which have unresolved codes (yac, fob, taf, tu, pel, pug,
+zib, sib) and signs whose values differ from the table.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9491_b.md">read_r9491_b.md</a></p><pre># R9491 f. 441r cipher block, second pass (Soria to Gattinara, Genoa 20 July 1523)
+
+Crops: scratchpad r91b_N{n}a/b.jpg (the lines slope, so the left half of line n sits about 0.019 lower than the
+right half). There are 19 cipher lines. The clear text before the block is &quot;no se en que terminos esta la negociacion de
+Sena porque agora anda alli la peste muy rezia y porque entendido&quot;. The clear text after it: &quot;El señor de Ponblin anda
+por casarse / bien seria que fuese de mano de su Mag. la muger que ha de tomar porque es un buen pie en Ytalia aquel
+estado / digolo a V. S.a porque pueda pensar en ello&quot;.
+
+Same sign names as read_r9491.md. New distinctions made in this pass:
+- n4 (p-hook with 4) = p is a different sign from r4 = i.
+- ƍ (open-topped g) = c is a different sign from 9 = d.
+- t# has two forms: t# = v/b (republica, libertad, avra, aprovechar, govierno) and t# = t (contento, proposito).
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | fH. sub yoc yac zog pu ∞∞ | [opener] que el [yac] de se [∞∞] → &quot;que el [yac] desea(?)&quot; |
+| 2 | fob 8 sub pu V r T q 7 c y H si xin 6 8 K ♀ t# t r4 h m# ▽ sub tef | [fob]e **que se govierne por la republica y que no** (V=g, 6=r, K=p, ♀=u, t#=b, t=l) |
+| 3 | K ∞∞ taf lb sub pu m# f∞ t 7 h α tef pu pob zog yof tu pud m# zo r4 c ꝑ̄ | a[∞∞] [taf]o que se a c a ? e c a (?), **no se si desto** [tu] [pud]a al p r o… |
+| 4 | 4 r ƀ ∞ t# ꝑ̄ zog ʋ peb ƍ q lb zog pic tab si sub c 8 7 r4 ∞ f r ƀ m# yef | …p o s i t o → **al proposito del servicio de su Magestad, porque rezia(?) cosa es** (ʋ=l, lb=o, 7 here Ƶ=z?) |
+| 5 | α pel zog xod K7c pu seb sob∞ h r ƀ m# si T ꝑ̄ L ȶ zog tuc ƀ 2 ∞ ʒ q 4 7 | a [pel] **de hazerse** [seb sob∞] **cosa por voto de muchos maxime** (xod=ha, ʒ=x, 4=m) |
+| 6 | m# yic y zog ∞ ▽ zog pug c r4 α ƀ r n4 q y ∞∞ ꝑ̄ δ 7 ƀ zuf ∞ ▽ zib ∞ sib | **adonde ay** de[pug]r?as (= diversas?) **opiniones, como ay** [zib]a [sib] (δ=n, ∞∞=i) |
+| 7 | yic r T ∞ 8 pu p p L ꝑ̄ zog 2 m# y r zog pic tab seb sob∞ h ꝑ̄ ƀ m# pu c q ∞ | [yic]o v a e se [ppto: puesto?] **de mano de su Magestad** [seb sob∞] **cosa seria** |
+| 8 | to m ∞ h q l zog xe c pu si sub ∞ sub ʋ L 7 y 9 c m# si zed zog pud ♂ zof L 7 y | [to] **facil de hazerse, porque aquel tendra por bien de** [pud] **con-ten-** (m=f, zed=bien) |
+| 9 | t# ꝑ̄ α pic tab si pic 4 6 ȶ# q r r4 δ φ 8 c 7 pu ▽ tadƀ T H 7 8 ƀ pu | **-to a su Magestad por su propio(?) interese, y** [tad]s **vezes se** |
+| 10 | K lb 9 c q m# 4 ∞ y 9 m# c xip sub tef pu sab ∞ pep m# c 7 K T t# ƀ q h m# ▽ | **podria mandar lo que no se** [sab] **a una republica, y** (pep=un, K=p, t#ƀ=bl) |
+| 11 | pob tef xub ω 7 sub 4 m# c 8 ƍ 7 zed sub pic tab pud yed sob t# 7 c L ∞ 9 | **si no fuese que parece bien que su Magestad** [pud: ponga] **en libertad** (xub=fue, sob=li, ƍ=c; 4=p here?) |
+| 12 | yufƀ f r 2 T y r4 9 m# 6 7 ƀ ▽ tef pic V H φ ∞ ƀ m# L q c ∞ y r ƀ sib t# ꝑ̄ α | **estas comunidades y no sujetas a tiranos** [sib] [t#ꝑ̄] a (yuf=esta, V=j) |
+| 13 | xip sub φ r ƍ ∞ m# pic peb f∞ ȶ tuc tac pu n4 r 9 c q m# ∞ K c r t# 7 ʒ z ∞ c | **lo que toca a su servicio, mucho** [tac: mas] **se podria aprovechar** (n4=p, t#=v, ʒ=c, z=h) |
+| 14 | yuf y 9 r pep r zog 2 m# y r zog pic tab sub E r T 8 c y ∞ ω 7 ▽ ∞ ƀ h m# | **estando uno de mano de su Magestad que governase, y al ca-** (ƀ=l here) |
+| 15 | t# r f c 7 r sub ∞ t# c m# zog T H y q c m# yof si pic xipƀ ω 8 y 7 ƀ H ƀ | **-bo creo que avra de venir a esto por** [pic] **los seneses** |
+| 16 | zog xin zof 9 ∞ ƍ q r y sub ω r y sub f ∞ 9 m# seb sub X m# pu c ω 8 y q r c | **de la condicion que son, que cada qual querra ser señor** (∞=i, seb=qual, X=rr) |
+| 17 | ▽ xipƀ to ya ƀ tef K ∞∞ 7 y ω m# y pob tef ω r xip yed pic ɑ4 c r n4 q r | **y los** [to ya]s **no piensan sino solo en su propio** |
+| 18 | r4 y L 8 c 7 ω H n4 ∞∞ 8 y ω 7 yed ync pup ω 8 y q r c q ∞ si sub xif q y | **interese. Piense en ello V. Señoria, porque** [xif] in- (ync=ello, n4=p) |
+| 19 | ? r c ꝑ m# ∞ pic tab yoc zid g# r t# 4 8 c y r zog α sub Q m# f q T 9 ∞ 9 / ∂ | -[c]or[p]a(?) **a su Magestad el** [zid] **govierno de aquella ciudad** (Q=ll) (end) |
+
+## New key values
+
+| sign / code | value | proof word |
+|---|---|---|
+| V (in this letter) | g / j | govierne (l.2); sujetas (l.12) |
+| 6 | r (not d) | republica (l.2), propio (l.9) |
+| K (crossed alpha) | p | publica (l.2), podria (l.10), piensan (l.17), aprovechar (l.13) |
+| ♀ | u | publica (l.2) |
+| t# (b-form) | b / v | publica, libertad, avra, aprovechar, govierno |
+| t# (t-form) | t | contento (l.8-9), proposito (l.3-4) |
+| t | l | publica (l.2) |
+| n4 | p (distinct from r4 = i) | podria (l.13), piense (l.18), propio (l.17) |
+| ƍ | c (distinct from 9 = d) | toca (l.13), parece (l.11), servicio (l.4) |
+| ∞∞ | i | piensan (l.17), piense (l.18), opiniones (l.6) |
+| ∞ | i sometimes (otherwise a) | condicion (l.16), proposito (l.4) |
+| δ | n | opiniones (l.6), interese (l.9) |
+| ʒ | x (l.5) / c (l.13) | maxime; aprovechar |
+| 4 | m (l.5); p (l.11, doubtful) | maxime; parece |
+| ƀ | l in some places (otherwise s) | republica (t#ƀ = bl), al cabo |
+| ʋ (small v) | l | del (zog ʋ), aquel (l.8) |
+| lb | o | servicio (l.4), podria (l.10) |
+| Q | ll | aquella (l.19) |
+| xod | ha | hazerse (l.5) |
+| xub | fue | fuese (l.11) |
+| sob | li | libertad (l.11) |
+| yuf | esta | estas comunidades (l.12), estando (l.14) |
+| zed | bien | tendra por bien (l.8), parece bien (l.11) |
+| seb | qual | cada qual (l.16) |
+| pep | un | una republica (l.10), uno (l.14) |
+| ync | ello | piense en ello (l.18; the clear postscript has &quot;pensar en ello&quot;) |
+| tac | mas (?) | mucho mas se podria (l.13) |
+| pud | pon- (?) | que su Magestad ponga en libertad (l.11) |
+| zid | buen (?) | el buen govierno (l.19) |
+| tad(ƀ) | a la(s) (?) | a las vezes (l.9) |
+
+## Running text
+
+... que el [yac] desea[?] [fob]e que se govierne por la republica, y que no a[ya] [taf]o que se [acabe?],
+no se si desto [tu] [pon]ga al proposito del servicio de su Magestad, porque [rezia] cosa es a[pel] de hazerse
+[semejante?] cosa por voto de muchos, maxime adonde ay [diversas] opiniones, como ay [zib]a [sib] [..] [puesto?]
+de mano de su Magestad. [Semejante?] cosa seria [muy] facil de hazerse, porque aquel tendra por bien de [poner]
+contento a su Magestad por su [propio] interese, y [a las] vezes se podria mandar lo que no se [sab] a una
+republica. Y si no fuese que parece bien que su Magestad [ponga] en libertad estas comunidades y no sujetas a
+tiranos, [sib] [..] a lo que toca a su servicio mucho [mas] se podria aprovechar estando uno de mano de su
+Magestad que governase. Y al cabo creo que avra de venir a esto, por[que] los seneses, de la condicion que son,
+que cada qual querra ser señor, y los [otros?] no piensan sino solo en su propio interese. Piense en ello
+V. Señoria, porque [xif] in[corpor]a(?) a su Magestad el [buen] govierno de aquella ciudad.
+
+## English summary
+
+Soria reports that someone (the [yac], maybe the Cardinal or a party in Siena) wants Siena to be governed as a
+republic. He argues that decisions taken by vote of many are hard to carry out where opinions are divided, and that
+it would serve the Emperor better to have one man governing Siena &quot;de mano de su Magestad&quot;. That man would keep the
+Emperor content out of self-interest, and a single man can be ordered in ways a republic cannot. He grants that
+freeing the Sienese communes from their tyrants looks well, but says the city will end up under one ruler anyway,
+because every Sienese wants to be master and thinks only of his own interest. He asks Gattinara to think about
+securing the government of the city for the Emperor.
+
+Confidence: medium for lines 8-19; low for lines 1-7, which have unresolved codes (yac, fob, taf, tu, pel, pug,
+zib, sib) and signs whose values differ from the table.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/measure/kb_r9491.txt">kb_r9491.txt</a></p><pre># R9491 (Genoa, 20 July 1523, to Gattinara), key B. Re-read 5 Oct 2026 from img P3 (f.441r, 19 lines) at 1.25x,
+# units as read_r9491_b.md (second pass). One plaintext word per line: word = cipher units.
+# [x] unread or context only; {x} opener/closer.
+{opener} = f H .
+que = sub
+el = yoc
+duque = yac          # yac = duque (R9496 &quot;este duque y comunidad de Genova&quot;)
+de = zog
+[pu∞∞] = pu ∞∞        # &#x27;de se-i&#x27; ... &#x27;Sena&#x27;? unread
+quiere = sob 8         # sob = quier (R9497 &#x27;sob 7&#x27; quiere)
+que = sub
+se = pu
+govierne = V r T q 7 c y H
+por = si
+la = xin
+republica = 6 8 K ♀ t# t r4 h m#
+y = ▽
+que = sub
+no = tef
+ay = α ∞∞
+[taf] = taf
+[lb] = lb
+que = sub
+se = pu
+[m#f∞t7hα] = m# f ∞ t 7 h α
+no = tef
+se = pu
+si = pob
+de- = zog
+-sto = yof
+[tu] = tu
+[pud] = pud
+[m#] = m#
+al = zo
+pro- = n+ c ꝑ̄
+-posito = 4 r ƀ ∞ t# ꝑ̄
+del = zog ʋ
+servicio = peb ƍ q lb
+de = zog
+su = pic
+Magestad = tab
+porque = si sub
+rezia = c 8 7 r4 ∞
+cosa = f r ƀ m#
+es = yef
+a- = α
+-ver = pel             # pel = ver- (R9492 post data &#x27;pel gantines&#x27; = vergantines, twice)
+de = zog
+hazer- = xod K 7 c
+-se = pu
+qualquiera = seb sob∞
+cosa = h r ƀ m#
+por = si
+voto = T ꝑ̄ L ȶ
+de = zog
+muchos = tuc ƀ
+maxime = 2 ∞ ʒ q 4 7
+adonde = m# yic y zog
+ay = ∞ ▽
+de = zog
+[varias] = pug c r4 α ƀ   # pug a p-block code: &#x27;va-rias&#x27; fits, unproved
+opiniones = r n4 q y ∞∞ ꝑ̄ δ 7 ƀ
+como = zuf
+ay = ∞ ▽
+[zib] = zib
+[a] = ∞
+[sib] = sib
+[yicrT∞8] = yic r T ∞ 8
+[pu] = pu
+[pppL] = ꝑ ꝑ ꝑ̄
+de = zog
+mano = 2 m# y r
+de = zog
+su = pic
+Magestad = tab
+qualquiera = seb sob∞
+cosa = h ꝑ̄ ƀ m#
+seria = pu c q ∞
+mas = to             # to = mas: R9493 interlinear &quot;lo mas ocurre&quot; (key-B closing of R9492)
+facil = m ∞ h q l
+de = zog
+hazer- = xe c
+-se = pu
+porque = si sub
+aquel = ∞ sub ʋ
+tendra = L 7 y 9 c m#
+por = si
+bien = zed
+de = zog
+[pud] = pud
+[∂] = ♂
+conten- = zof L 7 y
+-to = t# ꝑ̄
+a = α
+su = pic
+Magestad = tab
+por = si
+su = pic
+propio = n+ 7 ȶ# q r
+interese = r4 δ φ 8 c 7 pu
+y = ▽
+[tads] = tad ƀ
+vezes = T H 7 8 ƀ
+se = pu
+podria = K lb 9 c q m#
+mandar = 4 ∞ y 9 m# c
+lo = xip
+que = sub
+no = tef
+se = pu
+puede = sab           # s-block (Pa-R); also R9497 &#x27;no se [sab] parlar nada&#x27;: both read &#x27;puede&#x27;
+a = ∞
+una = pep m#
+republica = c 7 K T t# ƀ q h m#
+y = ▽
+si = pob
+no = tef
+fuese = xub ω 7
+que = sub
+parece = 4 m# c 8 ƍ 7
+bien = zed
+que = sub
+su = pic
+Magestad = tab
+[pud] = pud
+en = yed
+[libertad] = sob t# 7 c L ∞ 9   # sob is &#x27;quier&#x27; elsewhere: the sense &#x27;libertad&#x27; is not proved by the signs
+estas = yuf ƀ
+comunidades = f r 2 T y r4 9 m# 6 7 ƀ
+y = ▽
+no = tef
+sujetas = pic V H φ ∞ ƀ
+a = m#
+tiranos = L q c ∞ y r ƀ
+[sib] = sib
+[t#ꝑ̄α] = t# ꝑ̄ α
+lo = xip
+que = sub
+toca = φ r ƍ ∞
+a = m#
+su = pic
+servicio = peb f ∞ ȶ
+mucho = tuc
+[tac] = tac
+se = pu
+podria = n4 r 9 c q m#
+aprovechar = ∞ K c r t# 7 ʒ z ∞ c
+estando = yuf y 9 r
+uno = pep r
+de = zog
+mano = 2 m# y r
+de = zog
+su = pic
+Magestad = tab
+que = sub
+governase = E r T 8 c y ∞ ω 7
+y = ▽
+al = ∞ ƀ
+ca- = h m#
+-bo = t# r
+creo = f c 7 r
+que = sub
+avra = ∞ t# c m#
+de = zog
+venir = T H y q c
+a = m#
+esto = yof
+por = si
+[pic] = pic
+los = xipƀ
+seneses = ω 8 y 7 ƀ H ƀ
+de = zog
+la = xin
+condicion = zof 9 ∞ ƍ q r y
+que = sub
+son = ω r y
+que = sub
+cada = f ∞ 9 m#
+qual = seb
+querra = sub X m#
+ser = pu c
+señor = ω 8 y q r c
+y = ▽
+los = xipƀ
+[toyas] = to ya ƀ
+no = tef
+piensan = K ∞∞ 7 y ω m# y
+si- = pob
+-no = tef
+solo = ω r xip
+en = yed
+su = pic
+propio = ɑ4 c r n4 q r
+interese = r4 y L 8 c 7 ω H
+piense = n4 ∞∞ 8 y ω 7
+en = yed
+ello = ync
+V. = pup
+Señoria = ω 8 y q r c q ∞
+porque = si sub
+[xif] = xif
+im- = q y
+-porta = α+ r c ϖ m#    # ϖ for t (slip)
+a = ∞
+su = pic
+Magestad = tab
+el = yoc
+buen = zid
+govierno = g# r t# q 8 c y r
+de = zog
+aquella = α sub Q m#
+ciudad = f q T 9 ∞ 9
+{closer} = / ∂
+# --- short string f.441v, after &#x27;se turin y lo mismo afirma&#x27;
+{opener} = f H .
+Musiur = 2 T ω q ♀ c
+de = zog
+Beurren = t 8 T X 7 y
+{closer} = ∂</pre></details>
+<h3>R9492-R9493, Genoa, July 1523, to Charles V (key A body, key B closing and post data)</h3>
+<p>The French king&#x27;s expected descent on Italy, 5,000 infantry in Provence, the fear of being played as Ottaviano Fregoso played the league in 1515, and money for pay. The key-B post data: Monsieur de Beaurain (Adrien de Croy, envoy to Bourbon) has arrived and will go on by carrack rather than by the brigantine leaving with Lorenzo Mormino.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/keyA_r9492_v2.txt">keyA_r9492_v2.txt</a></p><pre># R9492 key-A cipher block, second reading (2026-09-19), f.444r L1-L13 + f.445v L14-L32, one line per MS line.
+# Re-read at 2x/4x from img/IMG_R9492_I44719_P2.jpg (right page, lower half) and _P3.jpg (left page, top).
+# Collated with the duplicate R9493 (img/IMG_R9493_I44726_P6.jpg, f.450v left page 25 lines + f.451r top 5 lines).
+# Glyph scheme as keyA_r9492_f444.txt / keyA_june.txt. {R93 x} = R9493 reading; {=x} = my note/value.
+# Corrections to the key found in this pass:
+#  d (partial-d) = m, not r: mes, como, cinco mil, armada, mar, amigos, milagro, manera, mas, comenzar.
+#  q-with-stem-and-loop (hooked q, &#x27;ꝗ&#x27;) is very often R = f: fasta, fara, faran, fuera, forma, fizo, efetos, fec..
+#     where the difference from q (ꝓ = o / que) is only the length of the stem; marked R where the value is f.
+#  &#x27;Lo&#x27; (L-hook + small circle, written as a unit) = ç/z: fizo, vez, deçia, veçes, doçientas, començarles.
+#  Y (T with double bar) = r (rr): guerra, tierra.
+#  n (π) confirmed = s in pasar (b9npo, R93 same).
+#  P (p with double bar) takes both g (gente, grisones, enemigo, amigos, luego, seguirian, milagro) and a
+#     (esperauan, armar, usaran, enviar, alguna?) -- two forms not separated reliably on this image.
+#  7 (slanted/hanging) = i, but b/v in 73Zcae &#x27;buenos&#x27;, 73Zcq &#x27;bueno&#x27;, 7oze9ca &#x27;bresano&#x27;, 7zoP9da &#x27;bergamo&#x27;.
+#  cT = d, but c+T = nt in cTZ &#x27;nte&#x27; (veinte), 73cT.. &#x27;junta..&#x27;, ZcTo9o &#x27;entrar&#x27;, 7cRpcTze &#x27;infantes&#x27;.
+L1: TZ lod 2zac ZeOo73zc 92ae 3z7 cTZ f Toze cTz2 dzeb9
+L2: n9cTq Oad2q Zebzo93pc cap 3zc cTo7p 9Oo7{R93 pOo7} d37 bozeTa{R93 bozeTq}
+L3: z2 sig lod saq b9op{R93 b9o9} b9npo leh fT927p{R93 fT9279} bzoq fpeT9 pPao9
+L4: canz 73cTP39c{R93 73cT93pc} PzcTz lod P3zYp b9op cap b3ZcT9c b9n9o
+L5: T9c bozeTa{R93 bozenTa} Oac zmZoO7Tq baTo7p nzo cap bzcn9nzc
+L6: lod b9n9o Oac nq2a 29 PzcTZ cTpodqe{R93 cT9od9e} Oac Zebzo9cOp
+L7: cap Op29Oqc{R93 O92po9c} 2ae qed f Oac 29 Zebzo9cOp cTz 2ae cip cae f
+L8: bzcn9cTa 392zonZ cTZ 2ae O7cOqd72 7cRpcTze{R93 7cq9cTze} cap
+L9: T7zcZ leh boazcO9 bpoq9 bacz o zcZ2 pod9cTp lod d9o
+L10: z fa TzcPq 937eq{R93 937ea} lod 7ozeP zeP{R93 omits zeP} Oadq lod 9Oo7 Pc RzO q 2p 2z
+L11: 39o 2ae rip cTaLo7Zc T9e 3P29e{R93 3p29e} lod OanP2zTze Q?o
+L12: Lo79 T7zYp lod 2ae Po7 eacZe fb7zcna cap nz9c bpoq
+L13: 9odPo 92qe qed fOozq cap 2ae cT7OQqe rip 3e9oPc Oqc
+L14: {pur} 2ae To9Tqe cap 3ea aT937pcq{R93 a aT937pcq} Og9cba RoPPaeq V39cTq
+L15: nz R7Loa 2p 27Pp ZZczo92{R93 PzZcZo92} fb9nP3p{R93 fb9n93p} ZeTz sig lod saq
+L16: leh rap cap 3c9 3zLo cqe cTZLo79 cap V3Zo779{R93 V3Zo7p} ZcTo9o leh
+L17: 29 27P9 f aTo9e3ZLoZe cT93p b92p7ope bqo cT729T9o
+L18: R9eTp{Q read; =fasta} cap b9nq z2 cT7Oqa sig f 92 qop Z2 nz cTzO29oq
+L19: c3zeTo q Zczd7Pa f 9cn7 b7zcna cap R9Opc{R93 R9opc} 2ae rip
+L20: cap cT729Tpo9c z2 pOaocT7q Oac {pur} R9eTp{R93 R9eT9} 3zo 2ea{R93 2a cap}
+L21: cap R9oPZ2{R93 R9op z2} sig lod saq fn73zopc cap n7zcZ Rqodp b9oq3z
+L22: c7o q zc37Po ZmzoO7Tq leh rap nzo9c nze 9d7Pae f
+L23: cq RPo9c paOaocT7a Oqc {pur} f 937zc cTa cTz nzo cTZeT9
+L24: d9czop R3zo9 73Zcq{R93 73Zca} Oadzc O9o2Ze 23zPa 29 P3zY9{R93 R3zY9} mul{R93 nul}
+L25: cTzeTa nz nzP37o79c cTae 73Zcae ZRzTae 2a 3cq cap
+L26: nz cTZePoP39o79 z2 ZeT9cTq lod lih cTz2 9bae7zcTa
+L27: cTz2 ZmzoO7Ta f zeT9o7p dz7qo 92a79 cTa zcZ2
+L28: 3zoP9d9ea f 7oze9ca{R93 7oZn9ca} f 2aToa cap 23Z Pq nzo79 Ta
+L29: d9 cTa 7zoP9da{R93 7zoPPda} lod cTacTz baTo7pc n9O9o cT7czoae
+L30: b9op 92P3cp b9Pp 92pa{R93 92p} mos f cq nzo7p d72 9Poa cap
+L31: nz Tad9nz bozeTa 7ozn9 q 3zoac9 f 93zo T9cTq
+L32: d9e cT7czoae b9o9 2aeP9eTae cTz2 ZmZoO7Ta p ol</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/keyA_r9492_rest.txt">keyA_r9492_rest.txt</a></p><pre># R9492 (Soria to Charles V, Genoa, July 1523): all cipher outside the f.444r-445v block (keyA_r9492_f444.txt).
+# Survey of P1-P6: the only other cipher is on P5 right page (f.448r): a 3-line block in the closing and a
+# 8-line Post data. It is NOT key A: the signs are the key-B type (lemniscate, alpha+, m-with-bar, code words
+# sub/zog/zof/yed/xip/xin/xab/tef/si/pu/yoc, cf. keyB.md). The key-A letter scheme does not fit, so signs are
+# named by the legend below (matched to keyB.md letters where the shape is the same).
+# Legend (this file):
+#  8 = lemniscate (lying ∞)          E = standing figure-8 / delta-like (keyB E)
+#  w = two joined circles with bar (ꝏ)   oo = two small circles linked by a stroke
+#  t = tau-shaped T-bar sign          L = L-shaped hook with raised stroke
+#  T = triangle ▽                     X = crossed x (æ-like)
+#  M = m with crossing stroke (m+)    N = m with stroke underneath (m underlined)
+#  A = alpha with cross below (ɑ+)    a = plain alpha α
+#  F = p with double cross-bar on descender (ǂ)   Q = q with crossed tail
+#  D = ∂-like sign with hook (ɗ)      r = small r/ɤ-like sign
+#  R = ℞-like sign (L8 only)          v = check/√-like sign
+#  h = h-like sign                    9# = 9 with small # superscript;  ^b = small superscript b after a sign
+#  @ = circle with dot (⊙)            P = capital P with loop (L4 only)
+#  c 2 4 7 9 y as written; lower-case code words as written.
+# Word spacing is the writer&#x27;s.
+# block 1: P5 right (f.448r) top, after &quot;Estando para cerrar la pnte&quot;, before &quot;enesta no dire otra cosa&quot;
+L1: {fH} yef 8XQtM9r zub 4 t w oo t c
+L2: zog DEtX7 T AtE^b si yoc pu cM 4yNrc289F pup tab zog
+L3: pef xip sub to rhtX7 @ E
+# block 2: P5 right (f.448r) Post data, after &quot;Post data&quot;, before &quot;En este mismo dia tengo letra del abbad de najara&quot;
+L4: gto P sub cQ7y9F pu yed t#8chM c yoc yeb DEtX7y zof
+L5: yif tEc v 8y LQy pes xap zog^b zof pu Qa yic sub tef pub pu2 pob
+L6: tef yed pep M zid a haX8hM si sub ynfy yic xin^b 9#a v7c8E
+L7: zog xab T tol^b pel 9#ayLQyE^b si ynfE 2McQy8E cahQv27y
+L8: LERr9cQ8y LrMac zof yoc T pof c xip xip sub tef N8cay
+L9: zof xin h8XMha T si yof 8t72r^b AEy wa9r sub pu M8c
+L10: LM yif pel 9#8yLQy zof xip c7y hr 2Fc4Qyr T yoc pu
+L11: M8cLQcM zog zub aLc7^b 9Q8^b zof pep 8 h8XMha ///</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9492_v2.md">read_r9492_v2.md</a></p><pre># R9492 (Soria to Charles V, Genoa, July 1523): key-A block, second reading
+
+Source: `keyA_r9492_v2.txt`, a re-read of f.444r (13 lines) and f.445v (19 lines, L14-L32) collated with the
+duplicate R9493 (f.450v-451r). The old transcription stopped at L31 and had lost words in L26-L31. This reading
+adds L32 and fills the gaps.
+
+Key corrections from this pass: d = m (not r). The hooked q with a long stem = R = f. &#x27;Lo&#x27; = ç/z. Y = r(r).
+P (barred p) stands for both g and a. The slanted 7 is sometimes b. cT = d, but some occurrences split as c+T = nt.
+
+## Running text (code words resolved, [..] = doubt)
+
+[Te] de Leon escriven a los veinte y tres del mes pasado, como lo esperavan, que vendria [aqui] muy presto el Rey
+de Francia para pasar en Italia; pero hasta agora no se juntavan gente de guerra para que puedan pasar tan presto
+con exercito. Podria ser que pensasen de pasar con solo la gente d&#x27;armas, con esperança que calaran los [qed], y
+con la esperança de los venecianos y pensado valerse de los cinco mil infantes que tiene en Provença para poner en
+el armada de mar.
+
+E yo tengo aviso de [Bres..] [esa] como de aqui [an fec(ho)] que la [le] var los [rip] doçientas [balas] de
+coseletes [..]rria tierra de los Grisones, y pienso que sean para armar a los [qed]. Y creo que los dichos [rip]
+usaran con [pur] los tratos que uso Otaviano Campo[fregoso] quando se fizo la liga general, y [pasava] este Rey de
+Francia en Italia, que una vez nos deçia que querria entrar en la liga y otras veçes dava palabras por dilatar,
+fasta que paso el dicho Rey, y a la ora el se declaro nuestro enemigo. Y ansi pienso que haran los [rip]: que
+dilataran el acordio con [pur] hasta ver lo que hara el Rey de Francia; y si vieren que tiene forma para venir o
+enviar exercito en Italia, seran sus amigos y no haran acordio con [pur].
+
+Y aviendo de ser desta manera, fuera bueno començarles luego la guerra [mul]. Desto se seguirian dos buenos
+efetos: lo uno, que se desgravaria el estado de Milan del aposiento del exercito, y estaria mejor alojado en el
+Bergamasco y Bresano; y lo otro, que luego seria tomado Bergamo, de donde podrian sacar dineros para alguna paga a
+la infanteria. Y no seria milagro que se tomase presto Bresa o Verona, y aver tanto mas dineros para los gastos
+del exercito [a ..].
+
+## English summary
+
+Soria reports that letters from [the ambassador] in Lyon of the 23rd of last month say the King of France was
+expected to come soon to cross into Italy. So far, though, no troops have been raised to cross quickly with an
+army. The King may mean to come with his gendarmes alone, counting on the [qed] coming down (probably the Swiss),
+on the Venetians, and on the 5,000 infantry he has in Provence to put aboard his fleet. Soria has word that the
+[rip] are moving some 200 bales of corselets through the Grisons&#x27; country to arm the [qed]. He expects the [rip]
+to deal with [pur] as Ottaviano Fregoso did when the general league was made: promise, stall, and then declare
+against the Emperor once the French king had crossed. So they will drag out the agreement with [pur] until they
+see what France does. If France looks able to come or send an army, they will side with France and make no
+agreement with [pur].
+
+He therefore advises opening war on them at once [mul]. This would do two good things. The duchy of Milan would be
+spared the billeting of the imperial army, which would be better quartered in the Bergamasco and Bresciano. Bergamo
+would be taken quickly, and its money would pay part of what the infantry is owed. Brescia or Verona might fall
+soon after, giving more money for the army.
+
+The target is Venice&#x27;s mainland territory (Bergamo, Brescia, Verona). So [rip] is almost certainly the Venetians
+or their Signoria, and [pur] the Emperor or the imperial side in the league talks with Venice. Venice in fact
+joined the Emperor on 29 July 1523.
+
+## Code words still unknown
+
+| code | occurrences (line: context) | guess |
+|---|---|---|
+| qed | L7 &quot;que calaran los [qed] y con la esperança de los venecianos&quot;; L13 &quot;para armar a los [qed]&quot; | Suizos/Esguizaros (calar = to come down into Italy; the letter&#x27;s clear text mentions Suyçaros) |
+| rip | L11 &quot;var los [rip] doçientas balas de coseletes&quot;; L13 &quot;los dichos [rip] usaran con [pur] los tratos&quot;; L19 &quot;asi pienso que haran los [rip]&quot; | Venecianos / la Señoria. But cip = Venecia and &quot;cip cae&quot; = venecia-nos in L7, so rip may be a different body |
+| pur | L14 &quot;usaran con [pur] los tratos&quot;; L20 &quot;dilataran el acordio con [pur]&quot;; L23 &quot;no haran acordio con [pur]&quot; | V. Mag. / el Emperador (or &quot;la liga&quot;) |
+| mul (R9493 nul) | L24 &quot;fuera bueno començarles luego la guerra [mul]&quot; | e.g. &quot;por aca&quot;, &quot;desde Milan&quot;; one occurrence only |
+| sig | alone in L18 &quot;paso el dicho [sig]&quot; | = Rey (sig lod saq = Rey de Francia, so saq = Francia, lod = de) |
+| lod, cap, leh, rap, lih, cip, cae, mos | de, que, en, Italia, Milan, Venecia, &quot;-nos&quot;, infanteria | as in keyA.md; these readings are consistent here |
+| TZ (L1 start) | &quot;[TZ] de Leon escriven&quot; | probably a code or abbreviation for &quot;el embajador&quot; / &quot;Te(sorero)&quot;; R9493 has the same |
+
+Doubtful sign readings to recheck:
+- L2 &quot;9Oo7&quot; (&#x27;aqui&#x27;?; R9493 has pOo7).
+- L10 &quot;7ozeP zeP ... 9Oo7 Pc RzO q 2p 2z&quot; (Bresa esa ... aqui an fec que la le?).
+- L11 end &quot;Q?o&quot; and L12 &quot;Lo79&quot; (&#x27;..rria/..çia&#x27;).
+- L15 &quot;fb9nP3p&quot; (R9493 fb9n93p = pasava).
+- L32 end &quot;p ol&quot;.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/measure/r_july.txt">r_july.txt</a></p><pre># Reading of the key-A block of the July letter (R9492 f.444r-445v, collated R9493), lines of keyA_r9492_v2.txt.
+L1: {TZ} de Leon escriuen a los ueinte y tres del mes pa-
+L2: -sado como lo esperauan que uendria aqui muy presto
+L3: el Rey de Francia para pasar en Ytalia pero fasta agora
+L4: no se iuntauan gente de guerra para que puedan pasar
+L5: tan presto con exercito podria ser que pensasen
+L6: de pasar con solo la gente darmas con esperanca
+L7: que calaran los [qed] y con la esperanca de los uenecianos y
+L8: pensado ualerse de los cinco mil infantes que
+L9: tiene en Prouenca para poner en el armada de mar
+L10: e yo tengo auiso de Bresa como de aqui [an] [fec] [que] [la] le-
+L11: -uar los [rip] docientas ualas de coseletes [Qo]
+L12: [Locia] tierra de los grisones y pienso que sean para
+L13: armar a los [qed] y creo que los dichos [rip] usaran con
+L14: [pur] los tratos que uso Otauiano Campofregoso quando
+L15: se fizo la liga general y pasaua este Rey de Francia
+L16: en Ytalia que una uez nos decia que querria entrar en
+L17: la liga y otras uezes daua palabras por dilatar
+L18: fasta que paso el dicho Rey y al ora el se declaro
+L19: nuestro enemigo y ansi pienso que faran los [rip]
+L20: que dilataran el acordio con [pur] fasta uer lo
+L21: que fara el Rey de Francia y si uieren que tiene forma para ue-
+L22: -nir o enuiar exercito en Ytalia seran sus amigos y
+L23: no faran acordio con [pur] y auiendo de ser desta
+L24: manera fuera bueno comencarles luego la guerra porque
+L25: desto se seguirian dos buenos efetos lo uno que
+L26: se desgrauaria el estado de Milan del aposiento
+L27: del exercito y estaria mejor alojado en el
+L28: Bergamasco y Bresano y lo otro que luego seria to-
+L29: -mado Bergamo de donde podrian sacar dineros
+L30: para alguna paga a la infanteria y no seria milagro que
+L31: se tomase presto Bresa o Uerona y auer tanto
+L32: mas dineros para los gastos del exercito [p] [ol]</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/measure/kb_r9492.txt">kb_r9492.txt</a></p><pre># R9492 f.448r (late July 1523): the key-B closing (3 lines) and Post data (8 lines). Re-read 5 Oct 2026 from
+# img P5 (right page) at 1.3x; units as keyA_r9492_rest.txt, letter values from keyB.md.
+# [x] unread or context only; {x} opener/closer.
+# --- closing block
+{opener} = f H
+es = yef
+arrivado = 8 X Q t M 9 r
+aqui = zub          # R9493 interlinear &#x27;es arrivado aqui monsr de beaurre&#x27;; also L11
+Musiur = 4 t w oo t c
+de = zog
+Beurre = D E t X 7  # Beurren, final n omitted (writer&#x27;s slip)
+y = T
+pues = A t E ^b
+por = si
+el = yoc
+se = pu
+ha = c M
+informado = 4 y N r c 2 8 9 F
+V. = pup
+Magestad = tab
+de = zog
+todo = pef          # R9493 interlinear &#x27;de todo&#x27;
+lo = xip
+que = sub
+mas = to            # R9493 f.455r: the same closing in key A, struck, with the clerk&#x27;s interlinear &#x27;lo mas ocurre&#x27;
+ocurre = r h t X 7
+{closer} = @ E
+# --- Post data
+{opener} = g t o P
+que- = sub
+-riendo = c Q 7 y 9 F
+se = pu
+en- = yed
+-barcar = t# 8 c h M c
+el = yoc
+dicho = yeb
+Beurren = D E t X 7 y
+con = zof
+este = yif           # yif = este (y-block Di-Es): clear R9491 f.441r &quot;se a detenido este vergantin y Lorenzo Mormino&quot;
+ver- = t E c
+-gantin = v 8 y L Q y   # V = g as in R9494 &#x27;Geneva&#x27;
+yo = pes
+le = xap
+des- = zog ^b
+-con- = zof
+-se- = pu
+-jado = Q a yic
+que = sub
+no = tef
+vaya = pub          # R9493 (key A copy of the post data): &#x27;que no vaya si no en una buena carraca&#x27;
+[pu2] = pu 2        # not in R9493; unread (slip?)
+si = pob
+no = tef
+en = yed
+una = pep M
+buena = zid a
+carraca = h a X 8 h M
+porque = si sub
+estando = y n f y yic
+las = xin ^b
+galeras = 9# a v 7 c 8 E   # last sign E/9 read as s: slip
+de = zog
+Francia = xab
+y = T
+otros = tol ^b      # t-block (M-Pa) + s; also R9494 &#x27;tol s doze mil&#x27;
+ver- = pel          # p-block (Se-Y): ver-, with &#x27;gantines&#x27; twice here
+-gantines = 9# a y L Q y E ^b
+por = si
+esta = y n f E
+marina = 2 M c Q y 8
+[E] = E             # stray sign, R9493 has none: unread
+facilmen- = c a h Q v 2 7 y   # R9493 &#x27;OPo72dzc Tz&#x27; = (f)acilmente; c for m (f) a slip
+-te = L E
+podrian = R r 9 c Q 8 y        # R9493 baTo7pc &#x27;podrian&#x27;
+topar = L r M a c   # R9493 &#x27;TPbPo&#x27; t-a-p-a-r; two witnesses + sense &#x27;topar con el y tomarlo&#x27;
+con = zof
+el = yoc
+y = T
+toma- = pof          # p-block (Se-Y); R9493 &#x27;TPd9o2a&#x27; = tomarlo
+-r = c
+lo = xip
+lo = xip
+que = sub
+no = tef
+faran = N 8 c a y
+con = zof
+la = xin
+carraca = h 8 X M h a
+y = T
+por = si
+esto = yof
+avemos = 8 t 7 2 r ^b
+pensado = A E y w a 9 r
+que = sub
+se = pu
+parta = M 8 c L M
+este = yif
+ver- = pel
+-gantin = 9# 8 y L Q y
+con = zof
+Lorenço = xip c 7 y h r   # xip (lo) as a syllable + r-e-n-ç-o; the clear text of R9491 f.441r names &#x27;Lorenzo Mormino&#x27; with this brigantine
+Mormino = 2 F c 4 Q y r   # 4 = m as in R9491 &#x27;maxime&#x27;
+y = T
+el = yoc
+se = pu
+partira = M 8 c L Q c M
+de = zog
+aqui = zub
+a = a
+tres = L c 7 ^b
+dias = 9 Q 8 ^b
+con = zof
+una = pep 8
+carraca = h 8 X M h a</pre></details>
+<h3>R9494-R9496, Genoa, 26 July 1523, to Charles V (key B, three copies)</h3>
+<p>Beaurain is the bearer; a Piedmontese courier; 28,000 escudos to a doctor at Constance to pay Swiss who are to descend on France, 12,000 to the treasurer. R9496 adds a paragraph on Beaurain sailing to Barcelona with Martin Centurion, ambassador of the duke and commune of Genoa.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9494.md">read_r9494.md</a></p><pre># R9494 (RAH Salazar A-28 ff. 478-479), Soria to Charles V, Genoa 26 July 1523 — key B cipher, reading
+
+Images: img/IMG_R9494_I44734_P2.jpg (f.478v bottom, f.479r top). Checked against the duplicate R9495 (IMG_R9495_I44735_P2.jpg, f.481r,
+where both blocks run on as one). Glyph names as keyB.md / read_r9497.md; M# = m with double vertical bar, m̲ = m with underbar,
+Ƶ = 7 with bar, ɡʒ = g with z-tail, ꝑ̄ = p with two bars, K = alpha-like crossed sign.
+
+## Block 1 (f. 478v, after &#x27;de Roma ni de napoles no tengo cartas ...&#x27;)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | HB ɡʒ 8 T X 7 ∞(R9495: ɡʒ 7 T X 8 y) yef yoc si L∞9rc zog ynf zo seb 7 q y m̲ r c 2 α | [HB opener] [name ?e?rren] es el portador de esta, al [seb=qual?] e (he) informa- |
+| 2 | yic zog pef xip zog znb(R9495 za) ▽ yoc 7 pes α T 7 2 ꝑ̄ ƀ yef hcqLꝑ̄ ∞ pup tab | -do de [pef = todo?] lo de [znb/za = aca?] y el(?) [7 pes] avemos escrito a V. Magestad. |
+| 3 | Lc7ƀ 9q∞ƀ ·∞·(R9495 xod) si Lq8X∞(R9495 Lq8XM#) zof pep hꝑ̄X7r ɑ+q∞2r y L7ƀ sub pu | Tres dias ha, por tierra, con [pep = un] correo piamontes, que se |
+| 4 | yab qTM# [∞ struck] ∞ y ꝑ? r (R9495 qT∞∂ ∞ K y ꝑ̄) sub K ɑ+ c ꝑ̄ 2 7 L q 9 ꝑ̄ zog tep c yed ∞7Ƶ8? | dize iva a [a n ? o], que ha prometido de [tep c = bolver?] en [?eze] |
+| 5 | 9qM#ƀ · yoc yeb ɡʒ 7 T X 8 y ∞ 7ƀ hcqLꝑ̄ zo K ɡ̣∞9 zog y∞ | dias. El dicho [name ?e?rren] ha escrito al abad de Na- |
+| 6 | qαcM# | -jara. |
+
+## Block 2 (f. 479r top, before &#x27;de venecia no tengo otra nueva&#x27;)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | sub te K c r T 7 ∞ (R9495 ɑ+ c α T 7 ∞) zuf pu ∞y zog yicƀ per ▽ r h ʒ ꝑ̄ 2qV yef hT9ꝑ̄ƀ | que [te] provea como se an de [yicƀ = dar?] [per = veinte?] y ocho mil escudos |
+| 2 | zo 9rLꝑ̄c ɑ+c∞yL7y8c yed hꝑ̄ƀL∞y hqM# sa ɑ+∞9#M#c hq7cLrƀ | al dotor [Prantener?] en Costancia (Konstanz) [sa = para] pagar ciertos |
+| 3 | zu 7ƀ sub K zog ꝑ K yic zof h7cL∞ yic sub M#y zog 97h7y98c | [zu]es (suizos?) que ha [zog ꝑ a do = dexado?] concertado, que an de decender |
+| 4 | yed xab ▽ tolƀ 9rƵ8 2qV zo L7ƀꝑ̄c8c r Tqr qry7L yed V7 | en Francia, y [tol]s doze mil al tesorero [? Tqr qry7L] en [V7-] |
+| 5 | y8T∞ ⊙ ∃ | -neva (Geneva/Ginebra?) [end marks] |
+
+## New key values
+
+| sign / group | value | proving word |
+|---|---|---|
+| 2 | m | piamontes (ɑ+q∞2ry L7ƀ), prometido, avemos, mil (2qV) |
+| m̲ (m with underbar) | f | informado (qym̲rc2α yic); = keyB &#x27;m = f&#x27; |
+| M# (m with double bar) | a | tierra (Lq8XM#, R9495), dias (9qM#ƀ), Najara, Costancia, pagar |
+| 8 (upright) | e | tierra, decender, doze, tesorero |
+| ɑ+ / n+ | p | piamontes, prometido, pagar |
+| K (crossed alpha) | a / ha | &#x27;que ha prometido&#x27; (R9495 α), abad |
+| ɡ̣ | b | abad |
+| Ƶ (7 with bar) | z | doze (9rƵ8) |
+| ʒ | h | ocho (▽rhʒꝑ̄: y o c h o) |
+| 9# | g | pagar |
+| V | l | mil; possibly g in &#x27;V7y8T∞&#x27; = Geneva (?) |
+| yef (as syllable) | es | es-crito (yef hcqLꝑ̄), es-cudos (yef hT9ꝑ̄ƀ) |
+| yic | -do (syllable) | informa-do, concerta-do, dexa-do? |
+| ymf / ynf | esta | &#x27;portador de esta&#x27; |
+| seb | qual? | &#x27;al qual he informado&#x27; |
+| sa | para? | &#x27;para pagar ciertos&#x27; |
+| si + L∞9rc | por-tador | portador |
+| xod | ha (as &#x27;tres dias ha&#x27;; R9495 variant of ·∞·) | tres dias ha |
+| pep | un? | con un correo |
+| tep c | bolver? | ha prometido de bolver en ... dias |
+| pef, znb/za, 7 pes, per, tol, zu, te, yicƀ | open | see readings |
+
+## Running text (plain Spanish, doubtful parts bracketed)
+
+[Name: ?e?rren], es el portador desta, al qual he informado de [todo] lo de [aca], y el(?) [..] avemos escrito a V. Magestad.
+Tres dias ha, por tierra, con [un] correo piamontes, que se dize iva a [...], que ha prometido de [bolver] en [..] dias, el dicho
+[name] ha escrito al abad de Najara.
+... que [V.M.?] provea como se an de [dar] [veinte?] y ocho mil escudos al dotor [Prantener?] en Costancia para pagar ciertos
+[suizos?] que ha [dexado] concertado, que an de decender en Francia, y [..]s doze mil al tesorero [...] en [Geneva?].</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9494.md">read_r9494.md</a></p><pre># R9494 (RAH Salazar A-28 ff. 478-479), Soria to Charles V, Genoa 26 July 1523 — key B cipher, reading
+
+Images: img/IMG_R9494_I44734_P2.jpg (f.478v bottom, f.479r top). Checked against the duplicate R9495 (IMG_R9495_I44735_P2.jpg, f.481r,
+where both blocks run on as one). Glyph names as keyB.md / read_r9497.md; M# = m with double vertical bar, m̲ = m with underbar,
+Ƶ = 7 with bar, ɡʒ = g with z-tail, ꝑ̄ = p with two bars, K = alpha-like crossed sign.
+
+## Block 1 (f. 478v, after &#x27;de Roma ni de napoles no tengo cartas ...&#x27;)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | HB ɡʒ 8 T X 7 ∞(R9495: ɡʒ 7 T X 8 y) yef yoc si L∞9rc zog ynf zo seb 7 q y m̲ r c 2 α | [HB opener] [name ?e?rren] es el portador de esta, al [seb=qual?] e (he) informa- |
+| 2 | yic zog pef xip zog znb(R9495 za) ▽ yoc 7 pes α T 7 2 ꝑ̄ ƀ yef hcqLꝑ̄ ∞ pup tab | -do de [pef = todo?] lo de [znb/za = aca?] y el(?) [7 pes] avemos escrito a V. Magestad. |
+| 3 | Lc7ƀ 9q∞ƀ ·∞·(R9495 xod) si Lq8X∞(R9495 Lq8XM#) zof pep hꝑ̄X7r ɑ+q∞2r y L7ƀ sub pu | Tres dias ha, por tierra, con [pep = un] correo piamontes, que se |
+| 4 | yab qTM# [∞ struck] ∞ y ꝑ? r (R9495 qT∞∂ ∞ K y ꝑ̄) sub K ɑ+ c ꝑ̄ 2 7 L q 9 ꝑ̄ zog tep c yed ∞7Ƶ8? | dize iva a [a n ? o], que ha prometido de [tep c = bolver?] en [?eze] |
+| 5 | 9qM#ƀ · yoc yeb ɡʒ 7 T X 8 y ∞ 7ƀ hcqLꝑ̄ zo K ɡ̣∞9 zog y∞ | dias. El dicho [name ?e?rren] ha escrito al abad de Na- |
+| 6 | qαcM# | -jara. |
+
+## Block 2 (f. 479r top, before &#x27;de venecia no tengo otra nueva&#x27;)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | sub te K c r T 7 ∞ (R9495 ɑ+ c α T 7 ∞) zuf pu ∞y zog yicƀ per ▽ r h ʒ ꝑ̄ 2qV yef hT9ꝑ̄ƀ | que [te] provea como se an de [yicƀ = dar?] [per = veinte?] y ocho mil escudos |
+| 2 | zo 9rLꝑ̄c ɑ+c∞yL7y8c yed hꝑ̄ƀL∞y hqM# sa ɑ+∞9#M#c hq7cLrƀ | al dotor [Prantener?] en Costancia (Konstanz) [sa = para] pagar ciertos |
+| 3 | zu 7ƀ sub K zog ꝑ K yic zof h7cL∞ yic sub M#y zog 97h7y98c | [zu]es (suizos?) que ha [zog ꝑ a do = dexado?] concertado, que an de decender |
+| 4 | yed xab ▽ tolƀ 9rƵ8 2qV zo L7ƀꝑ̄c8c r Tqr qry7L yed V7 | en Francia, y [tol]s doze mil al tesorero [? Tqr qry7L] en [V7-] |
+| 5 | y8T∞ ⊙ ∃ | -neva (Geneva/Ginebra?) [end marks] |
+
+## New key values
+
+| sign / group | value | proving word |
+|---|---|---|
+| 2 | m | piamontes (ɑ+q∞2ry L7ƀ), prometido, avemos, mil (2qV) |
+| m̲ (m with underbar) | f | informado (qym̲rc2α yic); = keyB &#x27;m = f&#x27; |
+| M# (m with double bar) | a | tierra (Lq8XM#, R9495), dias (9qM#ƀ), Najara, Costancia, pagar |
+| 8 (upright) | e | tierra, decender, doze, tesorero |
+| ɑ+ / n+ | p | piamontes, prometido, pagar |
+| K (crossed alpha) | a / ha | &#x27;que ha prometido&#x27; (R9495 α), abad |
+| ɡ̣ | b | abad |
+| Ƶ (7 with bar) | z | doze (9rƵ8) |
+| ʒ | h | ocho (▽rhʒꝑ̄: y o c h o) |
+| 9# | g | pagar |
+| V | l | mil; possibly g in &#x27;V7y8T∞&#x27; = Geneva (?) |
+| yef (as syllable) | es | es-crito (yef hcqLꝑ̄), es-cudos (yef hT9ꝑ̄ƀ) |
+| yic | -do (syllable) | informa-do, concerta-do, dexa-do? |
+| ymf / ynf | esta | &#x27;portador de esta&#x27; |
+| seb | qual? | &#x27;al qual he informado&#x27; |
+| sa | para? | &#x27;para pagar ciertos&#x27; |
+| si + L∞9rc | por-tador | portador |
+| xod | ha (as &#x27;tres dias ha&#x27;; R9495 variant of ·∞·) | tres dias ha |
+| pep | un? | con un correo |
+| tep c | bolver? | ha prometido de bolver en ... dias |
+| pef, znb/za, 7 pes, per, tol, zu, te, yicƀ | open | see readings |
+
+## Running text (plain Spanish, doubtful parts bracketed)
+
+[Name: ?e?rren], es el portador desta, al qual he informado de [todo] lo de [aca], y el(?) [..] avemos escrito a V. Magestad.
+Tres dias ha, por tierra, con [un] correo piamontes, que se dize iva a [...], que ha prometido de [bolver] en [..] dias, el dicho
+[name] ha escrito al abad de Najara.
+... que [V.M.?] provea como se an de [dar] [veinte?] y ocho mil escudos al dotor [Prantener?] en Costancia para pagar ciertos
+[suizos?] que ha [dexado] concertado, que an de decender en Francia, y [..]s doze mil al tesorero [...] en [Geneva?].</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/measure/kb_r9494.txt">kb_r9494.txt</a></p><pre># R9494 (26 July 1523), key B, re-read 5 Oct 2026 from img P2 (f.478v foot, f.479r top) and collated with R9495
+# (P2, f.481r). R9496 is a third copy (not used here). One plaintext word per line: word = cipher units.
+# [x] unread or context only; {x} opener/closer.
+# --- block 1
+{opener} = H B
+Beurren = ɡʒ 8 T X 7 y
+es = yef
+el = yoc
+portador = si L ∞ 9 r c
+de = zog
+esta = ymf
+al = zo
+qual = seb
+e = 7
+informado = q y m̲ r c 2 α yic
+de = zog
+todo = pef          # p-block (Se-Y) code; the only fit in &#x27;informado de [pef] lo de [znb]&#x27;
+lo = xip
+de = zog
+aca = znb           # R9495 za; z-block (A-De), &#x27;alla&#x27; is zeb
+y = ▽
+el = yoc
+e = 7
+yo = pes            # pes = yo, also R9497 &#x27;pes e apretado&#x27;; here &#x27;el e yo avemos&#x27;
+avemos = α T 7 2 ꝑ̄ ƀ
+escrito = yef h c q L ꝑ̄
+a = ∞
+V. = pup
+Magestad = tab
+tres = L c 7 ƀ
+dias = 9 q ∞ ƀ
+ha = ∞              # R9495 xod = ha
+por = si
+tierra = L q 8 X ∞
+con = zof
+un = pep
+correo = h ꝑ̄ X 7 r
+piamontes = ɑ+ q ∞ 2 r y L 7 ƀ
+que = sub
+se = pu
+dize = yab
+iva = q T M#
+a = ∞
+[aqo] = y r         # R9494 &#x27;y ꝑ r&#x27; after a struck ∞; R9495 writes &#x27;α ʒ ꝑ̄&#x27; here: the copies disagree, unread
+que = sub
+a = K
+prometido = ɑ+ c ꝑ̄ 2 7 L q 9 ꝑ̄
+de = zog
+[tep-] = tep        # t-block (M-Pa) code + r: &#x27;de [..]r&#x27;, unread
+[-r] = c
+en = yed
+[aeze] = ∞ 7 Ƶ 8    # a number of days ending -ze (onze/doze/treze?); signs do not give one, unread
+dias = 9 q M# ƀ
+el = yoc
+dicho = yeb
+Beurren = ɡʒ 7 T X 8 y
+a = ∞               # &#x27;a escrito&#x27; = ha escrito
+escrito = 7 ƀ h c q L ꝑ̄
+al = zo
+abad = K ɡ̣ ∞ 9
+de = zog
+Najara = y ∞ q α c M#
+# --- block 2
+que = sub
+[te] = te           # t-block code before &#x27;provea&#x27;, unread
+provea = K c r T 7 ∞
+como = zuf
+se = pu
+an = ∞ y
+de = zog
+[dos] = yic ƀ       # yic = do elsewhere; &#x27;an de dos&#x27; does not parse: unread
+[per] = per         # p-block (Se-Y), &#x27;veinte&#x27; fits, R9495 differs here: unread
+y = ▽
+ocho = r h ʒ ꝑ̄
+mil = 2 q V
+escudos = yef h T 9 ꝑ̄ ƀ
+al = zo
+dotor = 9 r L ꝑ̄ c
+Prantener = ɑ+ c ∞ y L 7 y 8 c
+en = yed
+Costancia = h ꝑ̄ ƀ L ∞ y h q M#
+para = sa
+pagar = ɑ+ ∞ 9# M# c
+ciertos = h q 7 c L r ƀ
+[zu-] = zu          # z-block code + es (cantones? alemanes?), unread
+[-es] = 7 ƀ
+que = sub
+a = K
+dexado = zog ꝑ K yic   # R9495 &#x27;zog ʒ ∞ yic&#x27;: ʒ = x as in R9491 &#x27;maxime&#x27;
+concertado = zof h 7 c L ∞ yic
+que = sub
+an = M# y
+de = zog
+decender = 9 7 h 7 y 9 8 c
+en = yed
+Francia = xab
+y = ▽
+[otros] = tol ƀ     # t-block (M-Pa) + s; &#x27;otros&#x27; fits but is not proved
+doze = 9 r Ƶ 8
+mil = 2 q V
+al = zo
+tesorero = L 7 ƀ ꝑ̄ c 8 c r
+Vionet = T q r y 7 L   # name spelled in letters (v-i-o-n-e-t); not identified
+en = yed
+Geneva = V 7 y 8 T ∞   # R9495 &#x27;9# 7 y 8 T ∞&#x27; (g)
+{closer} = ⊙ ∃
+# --- R9496 (third copy, f.483r) opens with a paragraph that R9494/R9495 do not have (re-read 5 Oct 2026, img P2 right)
+{opener} = f H
+Beurren = ɡʒ 7 T X 8 ∂
+[partira] = tap c ∞        # t-block (M-Pa) + ra: &#x27;partira&#x27; fits, unproved
+[2m#9qα∂∞] = 2 m# 9 q α ∂ ∞   # &#x27;mañana&#x27;? the signs give m-a-d-i-a-?-a: unread
+con = zof
+una = pep ∞
+carraca = h m# X α H ∞
+yra = ▽ c ∞
+derecho = 9 c 7 f ʒ r      # d-r-e-c-h-o, f = c and ʒ = h as in the table
+a = ∞
+Barcelona = t# m# c h 7 V r Y α
+y = ▽
+con = zof
+el = yoc
+[pus] = pus
+[m#] = m#
+Martin = L ∞ c L q y
+Centurion = h 8 ∂ L T c q ꝑ̄ y
+por = si
+embaxador = yud r c        # y-block (Di-Es) + -or; Martin Centurione was Genoa&#x27;s envoy to Charles V (R9497 f.579r)
+de = zog
+este = yif                 # yif = este: R9492 &#x27;parta [yif] vergantin&#x27;, clear R9491 &#x27;se a detenido este vergantin&#x27;
+duque = yac                # y-block (Di-Es); &#x27;este duque y comunidad&#x27; is Soria&#x27;s clear phrase for Genoa
+y = ▽
+comunidad = h r 2 T y q 9 ∞ 6
+de = zog
+Genova = xic               # x-block (F-L); &#x27;este duque y comunidad de&#x27; = Genoa, the place of writing
+y = ▽
+el = yoc</pre></details>
+<h3>R9497-R9498, Genoa, 13 Aug 1523, to Charles V (key B)</h3>
+<p>Andrea Doria and the Prince of Salerno are discontented with the King of France, who took the enterprise of Genoa from them; Jeronimo Doria approaches Soria on Andrea Doria&#x27;s behalf, offering his four galleys to the Emperor; Antoniotto Adorno and the republic&#x27;s capitulation.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9497_full.md">read_r9497_full.md</a></p><pre># R9497 (ff. 577-579) Soria to Charles V, Genoa 13 Aug 1523: full reading of the key-B cipher
+
+Lines 1-6 of block 1 are from read_r9497.md. Lines 7-10, block 2 and f. 579r were read from band crops of P2.
+Block 1 was collated sign by sign with the duplicate R9498 (f. 583v) on 30 Sept 2026; see &#x27;Collation with R9498&#x27;
+and &#x27;Block 1, continuous text&#x27; below.
+
+## Block 1 (f. 578v)
+
+| line | transcription | reading |
+|---|---|---|
+| 1-6 | see read_r9497.md | Andrea Doria and the principe de Salerno are discontented with the king [of France], because he had taken from them the enterprise of this city and given it to the Bastard of Savoy. And one who calls himself Jeronimo Doria, one of the leading men of this city, has [spoken] to me on behalf of the said Andrea Doria (corrected 30 Sept 2026: see below) |
+| 7 | yab sub pob pup tab sob 7. ∞h7ɑ+L∞c yed pic peb hqr zo yeb | dizen que si V. Mag. [sob 7. = quiere] aceptar en su servicio al dicho |
+| 8 | αy9c7∞ 9ꝑ̄c∞α zof ϖ+ƀ Ŀ+α Lcꝑ̄ 9#M# V8c∞θ sub yoc | Andrea Doria con sus quatro galeras, que el (Ŀ = tall capital L, a sign for q distinct from the small angular L = t) |
+| 9 | xip ϖ7c+qc∞ zog 4+▽ zid ∞ pap ▽ xip 4qƀ4r z7∞ yeb | lo servira de muy buen-a voluntad, y lo mismo [z7∞ = hará] el dicho |
+| 10 | zog ɑ+∞cL7 97V zic zog ϖ∞V7cyr ▽ [ꝑ̄ gto?] | de parte del principe de Salerno y [?] (clear: para que lo escriva a V. Ces. Mag. y al visorey de Napoles...) |
+
+## Block 2 (f. 578v foot)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | fE· pes 7 ∞ɑ+c7L∞9r αyLryqꝑ̄Lr α9ꝑ̄cyꝑ̄ sa sub ɑ+∞[g]+7 | [opener] [pes = yo] e apretado Antonioto Adorno para que pague |
+| 2 | ymf x7ɑ++ɡ̣Vqh∞ xip sub zog+7y 9∞cα pup tab si xin | esta republica lo que de-ven dar a V. Mag. por la |
+| 3 | h∞ɑ+qL▽Vαhqry xob yed paf zog V. tin V7ry / ▽∞48 | capitulacion [xob = hecha] en [paf = tiempo] del [tin = papa] Leon, y a me |
+
+## f. 579r top (continues block 2)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | yeb sub α hrz7Lq9ꝑ̄ ∞ 4∞cLqy h7y ꝑ̄▽cqry sub xag | dicho que a acometido a Martin Centurion que [xag = hable/escriva] |
+| 2 | ϖrɡ̣c7 ymc α pup tab ▽ sub xa α+7c pic sud tef pu sab | sobre esto a V. Mag., y que [xa = hasta] aver su [sud = respuesta] no se [sab = ?] |
+| 3 | ɑ+∞V∞c yα9M# ∃ Θ· | [palar = parlar/hablar] nada [closer ∃ Θ] (clear: y pues el dicho Martin Centurion abra hablado sobre ello...) |
+
+## New key values
+
+| sign/group | value | proof word |
+|---|---|---|
+| + | u (also v) | sus, muy, servira, pague, deven |
+| z | m (besides h) | acometido |
+| ꝑ̄ (barred, in &#x27;Centurion&#x27;) | t | Centurion (maybe the φ = t of keyB) |
+| M# | a | galeras, nada |
+| 9# | g | galeras |
+| x | r | republica, servira? (x7ɑ++ɡ̣Vqh∞) |
+| zog as a syllable | de- | deven (zog+7y) |
+| zog V. | del | del rey (block 1 l.2), del papa (block 2 l.3) |
+| zid ∞ | buena (zid = buen) | de muy buena voluntad |
+| pap | voluntad | same |
+| ymc | esto | sobre esto |
+| xuf | habla- (xuf yic = hablado), grade I; not &#x27;dicho&#x27;, which is yeb | y a me hablado |
+| sob 7. | quier + e = quiere (was &#x27;quisiere?&#x27;) | si V. Mag. quiere aceptar; sob∞ = quiera in R9491 &#x27;seb sob∞ cosa&#x27; = qualquiera cosa (twice) |
+| pes | yo? | yo e apretado |
+| xob | hecha? | capitulacion hecha en tiempo |
+| paf | tiempo? | same |
+| tin | papa? | del papa Leon |
+| xag | hable/escriva? | que hable sobre esto a V. Mag. |
+| xa | hasta? | hasta aver su respuesta |
+| sud | respuesta? | same |
+| sab | open (puede? / hará?) | no se [sab] parlar nada |
+| fE·, Θ E | openers; ∃ Θ· closer | |
+
+## Running text
+
+Andrea Doria and the Prince of Salerno are discontented with the King [of France], because he had promised them
+the enterprise of this city and gave it to the Bastard of Savoy. And one who calls himself Jeronimo Doria, a
+kinsman of the leading men of this city, told me on behalf of the said Andrea Doria that, [if] Your Majesty
+[would be willing] to take the said Andrea Doria into your service with his [four] galleys, he will serve you
+most willingly, and the said [Jeronimo] will do the same on behalf of the Prince of Salerno, and [?] (clear:
+so that I write it to Your Caesarean Majesty and to the viceroy of Naples...).
+
+I have pressed Antonioto Adorno to make this republic pay what they owe Your Majesty under the capitulation
+[made] in the [time] of [Pope] Leo. He has told me that he has approached Martin Centurion to [write/speak]
+to Your Majesty about this, and that [until] he has your [answer] nothing can be [discussed/done].
+
+## Confidence
+
+High for the cipher in block 1 lines 7-10 and the running shape of block 2 and f.579r (Antonioto Adorno,
+republica, capitulacion, Martin Centurion, galeras, servira, mismo, nada all spell out). The code-group
+meanings marked ? (pes, xob, paf, tin, xag, xa, sud, sab) are guesses from context. &#x27;Ŀ+α&#x27; in &#x27;quatro&#x27; is not
+L = t: both copies write a tall capital L there and the small angular L for the t (30 Sept 2026). &#x27;z7∞&#x27; is read as &#x27;hará&#x27; only from the sense. The signs after Salerno, &#x27;ꝑ̄ gto&#x27;,
+are unread (R9498 writes &#x27;yꝑ̄. g+o ∃ ⊙.&#x27; there: &#x27;Salerno&#x27; then a closer). Block 1 collated with R9498.
+
+## Collation with R9498 (30 Sept 2026)
+
+R9498 (9/28 ff. 581-584, image P2 left, f. 583v) repeats block 1 with other homophones and some code groups where
+R9497 spells in letters. Differences that fix values:
+
+| R9497 | R9498 | value | grade |
+|---|---|---|---|
+| ꝑ° ▽ q L ∞ 9 r (l. 2) | ꝛ° T ∞ φ ∞ 9 ꝑ̄ | quitado: ꝑ°/ꝛ° = q, ▽/T = u, then -itado; the earlier &#x27;pro...(prometido)&#x27; was wrong, the word ends -tado in both copies | H (u-i-t-a-d-o from the key), q from the word |
+| V7ƀ (les) | xap ƀ. | xap = le (x-block runs F-L) | C (collation) |
+| ▽yꝑ̄ (uno, l. 4) | pep ꝑ̄. | pep = un | C (collation) |
+| yef pep r. (l. 5) | yef pep r. | es uno (not &#x27;pari[ente]&#x27;): &#x27;que es uno de los principales de esta ciudad&#x27; | C |
+| ɑ+∞cL7 (parte, l. 6) | tun | tun = parte (also R9498 l. 10 &#x27;zog tun zog V. zic&#x27; = de parte del principe) | C (collation) |
+| sob 7. | sob 7 | quiere (sob = quier; R9491 &#x27;seb sob∞ cosa&#x27; = qualquiera cosa twice; s-block runs P-R) | M |
+| Ŀ + α ∠ c ꝑ̄ | Ŀ T ∞ ∠ c r | quatro: tall L = q in both copies, the t is the small angular L | H for -uatro, q from the word |
+| ϖ7c+qc∞ (servira) | peb c∞ | peb = servi- confirmed | C |
+| 4▽q (muy) | z▽▽ | muy | H |
+| z7∞ (l. 9, read &#x27;hará&#x27; from sense) | tec ∞ | still open: tec is a code group (t-block, M-P), so &#x27;hará&#x27; stays a guess (ofrecerá?) | I |
+| yab sub | yab q+ꝑ ⊙ sub | R9498 inserts &#x27;q+ꝑ ⊙&#x27; (a closer-like ⊙); not in R9497, treated as a slip/null | open |
+
+Alphabetical order of the code: each initial consonant covers a stretch of the plaintext alphabet (z: al, alla,
+buena, como, con, de; y: dicho, dizen, el, ella, en, es, esta, esto; x: Francia, gana, guerra, hable, haze, la, le,
+lo; t: Magestad, mucho, no, papa, parte; s: para, por, qual, que, rey; p: se, servi-, si, su, tiempo, un, V.,
+voluntad, yo). xuf therefore stands between F and L: &#x27;xuf yic&#x27; = habla-do (I), not &#x27;dicho&#x27; (= yeb).
+
+## Block 1, continuous text (30 Sept 2026)
+
+Andrea Doria y el principe de Salerno estan muy descontentos del rey, porque les avia quitado la enpresa de esta
+ciudad y la avia dado al bastardo de Saboya; y a me [hablado] uno que se dize Jeronimo Doria, que es uno de los
+principales de esta ciudad, de parte del dicho Andrea Doria, y dizen que si V. Mag. [quiere] aceptar en su
+servicio al dicho Andrea Doria con sus quatro galeras, que el lo servira de muy buena voluntad, y lo mismo [hará]
+el dicho de parte del principe de Salerno.
+
+Andrea Doria and the Prince of Salerno are very discontented with the King, because he had taken from them the
+enterprise of this city and had given it to the Bastard of Savoy; and one who calls himself Jeronimo Doria, one of
+the leading men of this city, has [spoken] to me on behalf of the said Andrea Doria, and they say that if Your
+Majesty [will] accept the said Andrea Doria into your service with his four galleys, he will serve you very
+willingly, and the said [Jeronimo] will [do] the same on behalf of the Prince of Salerno.
+
+Grades: all words H/C except [hablado] (xuf yic, I from alphabetical position and sense), [quiere] (sob 7., M) and
+[hará] (z7∞, I). &#x27;bastardo&#x27; is ɡ̣∞ƀLαc + yic (-do); &#x27;estan&#x27; is ymf (esta) + y (n).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/read_r9497_full.md">read_r9497_full.md</a></p><pre># R9497 (ff. 577-579) Soria to Charles V, Genoa 13 Aug 1523: full reading of the key-B cipher
+
+Lines 1-6 of block 1 are from read_r9497.md. Lines 7-10, block 2 and f. 579r were read from band crops of P2.
+Block 1 was collated sign by sign with the duplicate R9498 (f. 583v) on 30 Sept 2026; see &#x27;Collation with R9498&#x27;
+and &#x27;Block 1, continuous text&#x27; below.
+
+## Block 1 (f. 578v)
+
+| line | transcription | reading |
+|---|---|---|
+| 1-6 | see read_r9497.md | Andrea Doria and the principe de Salerno are discontented with the king [of France], because he had taken from them the enterprise of this city and given it to the Bastard of Savoy. And one who calls himself Jeronimo Doria, one of the leading men of this city, has [spoken] to me on behalf of the said Andrea Doria (corrected 30 Sept 2026: see below) |
+| 7 | yab sub pob pup tab sob 7. ∞h7ɑ+L∞c yed pic peb hqr zo yeb | dizen que si V. Mag. [sob 7. = quiere] aceptar en su servicio al dicho |
+| 8 | αy9c7∞ 9ꝑ̄c∞α zof ϖ+ƀ Ŀ+α Lcꝑ̄ 9#M# V8c∞θ sub yoc | Andrea Doria con sus quatro galeras, que el (Ŀ = tall capital L, a sign for q distinct from the small angular L = t) |
+| 9 | xip ϖ7c+qc∞ zog 4+▽ zid ∞ pap ▽ xip 4qƀ4r z7∞ yeb | lo servira de muy buen-a voluntad, y lo mismo [z7∞ = hará] el dicho |
+| 10 | zog ɑ+∞cL7 97V zic zog ϖ∞V7cyr ▽ [ꝑ̄ gto?] | de parte del principe de Salerno y [?] (clear: para que lo escriva a V. Ces. Mag. y al visorey de Napoles...) |
+
+## Block 2 (f. 578v foot)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | fE· pes 7 ∞ɑ+c7L∞9r αyLryqꝑ̄Lr α9ꝑ̄cyꝑ̄ sa sub ɑ+∞[g]+7 | [opener] [pes = yo] e apretado Antonioto Adorno para que pague |
+| 2 | ymf x7ɑ++ɡ̣Vqh∞ xip sub zog+7y 9∞cα pup tab si xin | esta republica lo que de-ven dar a V. Mag. por la |
+| 3 | h∞ɑ+qL▽Vαhqry xob yed paf zog V. tin V7ry / ▽∞48 | capitulacion [xob = hecha] en [paf = tiempo] del [tin = papa] Leon, y a me |
+
+## f. 579r top (continues block 2)
+
+| line | transcription | reading |
+|---|---|---|
+| 1 | yeb sub α hrz7Lq9ꝑ̄ ∞ 4∞cLqy h7y ꝑ̄▽cqry sub xag | dicho que a acometido a Martin Centurion que [xag = hable/escriva] |
+| 2 | ϖrɡ̣c7 ymc α pup tab ▽ sub xa α+7c pic sud tef pu sab | sobre esto a V. Mag., y que [xa = hasta] aver su [sud = respuesta] no se [sab = ?] |
+| 3 | ɑ+∞V∞c yα9M# ∃ Θ· | [palar = parlar/hablar] nada [closer ∃ Θ] (clear: y pues el dicho Martin Centurion abra hablado sobre ello...) |
+
+## New key values
+
+| sign/group | value | proof word |
+|---|---|---|
+| + | u (also v) | sus, muy, servira, pague, deven |
+| z | m (besides h) | acometido |
+| ꝑ̄ (barred, in &#x27;Centurion&#x27;) | t | Centurion (maybe the φ = t of keyB) |
+| M# | a | galeras, nada |
+| 9# | g | galeras |
+| x | r | republica, servira? (x7ɑ++ɡ̣Vqh∞) |
+| zog as a syllable | de- | deven (zog+7y) |
+| zog V. | del | del rey (block 1 l.2), del papa (block 2 l.3) |
+| zid ∞ | buena (zid = buen) | de muy buena voluntad |
+| pap | voluntad | same |
+| ymc | esto | sobre esto |
+| xuf | habla- (xuf yic = hablado), grade I; not &#x27;dicho&#x27;, which is yeb | y a me hablado |
+| sob 7. | quier + e = quiere (was &#x27;quisiere?&#x27;) | si V. Mag. quiere aceptar; sob∞ = quiera in R9491 &#x27;seb sob∞ cosa&#x27; = qualquiera cosa (twice) |
+| pes | yo? | yo e apretado |
+| xob | hecha? | capitulacion hecha en tiempo |
+| paf | tiempo? | same |
+| tin | papa? | del papa Leon |
+| xag | hable/escriva? | que hable sobre esto a V. Mag. |
+| xa | hasta? | hasta aver su respuesta |
+| sud | respuesta? | same |
+| sab | open (puede? / hará?) | no se [sab] parlar nada |
+| fE·, Θ E | openers; ∃ Θ· closer | |
+
+## Running text
+
+Andrea Doria and the Prince of Salerno are discontented with the King [of France], because he had promised them
+the enterprise of this city and gave it to the Bastard of Savoy. And one who calls himself Jeronimo Doria, a
+kinsman of the leading men of this city, told me on behalf of the said Andrea Doria that, [if] Your Majesty
+[would be willing] to take the said Andrea Doria into your service with his [four] galleys, he will serve you
+most willingly, and the said [Jeronimo] will do the same on behalf of the Prince of Salerno, and [?] (clear:
+so that I write it to Your Caesarean Majesty and to the viceroy of Naples...).
+
+I have pressed Antonioto Adorno to make this republic pay what they owe Your Majesty under the capitulation
+[made] in the [time] of [Pope] Leo. He has told me that he has approached Martin Centurion to [write/speak]
+to Your Majesty about this, and that [until] he has your [answer] nothing can be [discussed/done].
+
+## Confidence
+
+High for the cipher in block 1 lines 7-10 and the running shape of block 2 and f.579r (Antonioto Adorno,
+republica, capitulacion, Martin Centurion, galeras, servira, mismo, nada all spell out). The code-group
+meanings marked ? (pes, xob, paf, tin, xag, xa, sud, sab) are guesses from context. &#x27;Ŀ+α&#x27; in &#x27;quatro&#x27; is not
+L = t: both copies write a tall capital L there and the small angular L for the t (30 Sept 2026). &#x27;z7∞&#x27; is read as &#x27;hará&#x27; only from the sense. The signs after Salerno, &#x27;ꝑ̄ gto&#x27;,
+are unread (R9498 writes &#x27;yꝑ̄. g+o ∃ ⊙.&#x27; there: &#x27;Salerno&#x27; then a closer). Block 1 collated with R9498.
+
+## Collation with R9498 (30 Sept 2026)
+
+R9498 (9/28 ff. 581-584, image P2 left, f. 583v) repeats block 1 with other homophones and some code groups where
+R9497 spells in letters. Differences that fix values:
+
+| R9497 | R9498 | value | grade |
+|---|---|---|---|
+| ꝑ° ▽ q L ∞ 9 r (l. 2) | ꝛ° T ∞ φ ∞ 9 ꝑ̄ | quitado: ꝑ°/ꝛ° = q, ▽/T = u, then -itado; the earlier &#x27;pro...(prometido)&#x27; was wrong, the word ends -tado in both copies | H (u-i-t-a-d-o from the key), q from the word |
+| V7ƀ (les) | xap ƀ. | xap = le (x-block runs F-L) | C (collation) |
+| ▽yꝑ̄ (uno, l. 4) | pep ꝑ̄. | pep = un | C (collation) |
+| yef pep r. (l. 5) | yef pep r. | es uno (not &#x27;pari[ente]&#x27;): &#x27;que es uno de los principales de esta ciudad&#x27; | C |
+| ɑ+∞cL7 (parte, l. 6) | tun | tun = parte (also R9498 l. 10 &#x27;zog tun zog V. zic&#x27; = de parte del principe) | C (collation) |
+| sob 7. | sob 7 | quiere (sob = quier; R9491 &#x27;seb sob∞ cosa&#x27; = qualquiera cosa twice; s-block runs P-R) | M |
+| Ŀ + α ∠ c ꝑ̄ | Ŀ T ∞ ∠ c r | quatro: tall L = q in both copies, the t is the small angular L | H for -uatro, q from the word |
+| ϖ7c+qc∞ (servira) | peb c∞ | peb = servi- confirmed | C |
+| 4▽q (muy) | z▽▽ | muy | H |
+| z7∞ (l. 9, read &#x27;hará&#x27; from sense) | tec ∞ | still open: tec is a code group (t-block, M-P), so &#x27;hará&#x27; stays a guess (ofrecerá?) | I |
+| yab sub | yab q+ꝑ ⊙ sub | R9498 inserts &#x27;q+ꝑ ⊙&#x27; (a closer-like ⊙); not in R9497, treated as a slip/null | open |
+
+Alphabetical order of the code: each initial consonant covers a stretch of the plaintext alphabet (z: al, alla,
+buena, como, con, de; y: dicho, dizen, el, ella, en, es, esta, esto; x: Francia, gana, guerra, hable, haze, la, le,
+lo; t: Magestad, mucho, no, papa, parte; s: para, por, qual, que, rey; p: se, servi-, si, su, tiempo, un, V.,
+voluntad, yo). xuf therefore stands between F and L: &#x27;xuf yic&#x27; = habla-do (I), not &#x27;dicho&#x27; (= yeb).
+
+## Block 1, continuous text (30 Sept 2026)
+
+Andrea Doria y el principe de Salerno estan muy descontentos del rey, porque les avia quitado la enpresa de esta
+ciudad y la avia dado al bastardo de Saboya; y a me [hablado] uno que se dize Jeronimo Doria, que es uno de los
+principales de esta ciudad, de parte del dicho Andrea Doria, y dizen que si V. Mag. [quiere] aceptar en su
+servicio al dicho Andrea Doria con sus quatro galeras, que el lo servira de muy buena voluntad, y lo mismo [hará]
+el dicho de parte del principe de Salerno.
+
+Andrea Doria and the Prince of Salerno are very discontented with the King, because he had taken from them the
+enterprise of this city and had given it to the Bastard of Savoy; and one who calls himself Jeronimo Doria, one of
+the leading men of this city, has [spoken] to me on behalf of the said Andrea Doria, and they say that if Your
+Majesty [will] accept the said Andrea Doria into your service with his four galleys, he will serve you very
+willingly, and the said [Jeronimo] will [do] the same on behalf of the Prince of Salerno.
+
+Grades: all words H/C except [hablado] (xuf yic, I from alphabetical position and sense), [quiere] (sob 7., M) and
+[hará] (z7∞, I). &#x27;bastardo&#x27; is ɡ̣∞ƀLαc + yic (-do); &#x27;estan&#x27; is ymf (esta) + y (n).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/measure/kb_r9497.txt">kb_r9497.txt</a></p><pre># R9497 (13 Aug 1523), key B, collated with R9498. One plaintext word per line: word = its cipher units.
+# Units as transcribed in read_r9497.md / read_r9497_full.md, re-checked on img P2 (5 Oct 2026).
+# [x] unread / context only; {x} opener, closer.
+# --- block 1, f. 578v
+{opener} = Θ E
+Andrea = ∞ y 9 c 7 α
+Doria = 9 r c q M
+y = ▽
+el = yoc
+principe = zic
+de = zog
+Salerno = ϖ ∞ V 8 c y ꝑ̄
+estan = ymf y
+muy = 4 ▽ q
+descontentos = 97ƀ zof L 7 X L ꝑ̄ θ
+del = zog V.
+rey = soc
+porque = si sub
+les = V 7 ƀ
+avia = ∞ ▽ q α
+quitado = ꝑ° r ▽ q L ∞ 9 r
+la = xin
+enpresa = 8 y ɑ+ c 7 ƀ ∞
+de = zog
+esta = ymf
+ciudad = h q ▽ 9 ∞ 9
+y = ▽
+la = xin
+avia = α ▽ q ∞
+dado = 9 α 9 r
+al = zo
+bastardo = ɡ̣ ∞ ƀ L α c yic
+de = zog
+Saboya = ϖ α ɡ̣ r ▽ α
+y = ▽
+a = ∞
+me = 4 7
+[hablado] = xuf yic
+uno = ▽ y ꝑ̄
+que = sub
+se = pu
+dize = yab
+Jeronimo = q 7 c r y q = ꝑ̄
+Doria = 9 r c q ∞
+que = sub
+es = yef
+uno = pep r.
+de = zog
+los = xip ƀ.
+principales = ſ c q y h q ∞ + ∞ V 7 ƀ
+de = zog
+esta = ymf
+ciudad = h q ▽ 9 ∞ 9
+de = zog
+parte = ∞ + ∞ c L 7
+del = 9 7 V
+dicho = yeb
+Andrea = α y 9 c 7 8
+Doria = 9 r c q ∞
+y = ▽
+dizen = yab
+que = sub
+si = pob
+V. = pup
+Magestad = tab
+quiere = sob 7.
+aceptar = ∞ h 7 ɑ+ L ∞ c
+en = yed
+su = pic
+servicio = peb h q r
+al = zo
+dicho = yeb
+Andrea = α y 9 c 7 ∞
+Doria = 9 ꝑ̄ c ∞ α
+con = zof
+sus = ϖ + ƀ
+quatro = Ŀ + α L c ꝑ̄
+galeras = 9# M# V 8 c ∞ θ
+que = sub
+el = yoc
+lo = xip
+servira = ϖ 7 c + q c ∞
+de = zog
+muy = 4 + ▽
+buena = zid ∞
+voluntad = pap
+y = ▽
+lo = xip
+mismo = 4 q ƀ 4 r
+[hara] = z 7 ∞
+el =
+dicho = yeb
+de = zog
+parte = ɑ+ ∞ c L 7
+del = 9 7 V
+principe = zic
+de = zog
+Salerno = ϖ ∞ V 7 c y r
+[y] = ▽
+[o] = ꝑ̄
+{closer} = g t o
+# --- block 2, f. 578v foot
+{opener} = f E ·
+yo = pes
+e = 7
+apretado = ∞ ɑ+ c 7 L ∞ 9 r
+Antonioto = α y L r y q ꝑ̄ L r
+Adorno = α 9 ꝑ̄ c y ꝑ̄
+para = sa
+que = sub
+pague = ɑ+ ∞ [g] + 7
+esta = ymf
+republica = x 7 ɑ+ + ɡ̣ V q h ∞
+lo = xip
+que = sub
+deven = zog + 7 y
+dar = 9 ∞ c
+a = α
+V. = pup
+Magestad = tab
+por = si
+la = xin
+capitulacion = h ∞ ɑ+ q L ▽ V α h q r y
+hecha = xob
+en = yed
+[tiempo] = paf
+del = zog V.
+papa = tin
+Leon = V 7 r y
+y = ▽
+a = ∞
+me = 4 8
+dicho = yeb
+que = sub
+a = α
+acometido = h r z 7 L q 9 ꝑ̄
+a = ∞
+Martin = 4 ∞ c L q y
+Centurion = h 7 y ꝑ̄ ▽ c q r y
+que = sub
+hable = xag
+sobre = ϖ r ɡ̣ c 7
+esto = ymc
+a = α
+V. = pup
+Magestad = tab
+y = ▽
+que = sub
+hasta = xa
+aver = α + 7 c
+su = pic
+[respuesta] = sud
+no = tef
+se = pu
+puede = sab          # s-block (Pa-R); also R9491 l.10 &quot;lo que no se [sab] a una republica&quot;: both read puede
+parlar = ɑ+ ∞ V ∞ c
+nada = y α 9 M#
+{closer} = ∃ Θ ·</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/keyA.md">keyA.md</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soria1523/keyB.md">keyB.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/soria1523.json"></figure>
 <!-- replay:end -->

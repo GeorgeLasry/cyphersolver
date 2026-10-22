@@ -45,7 +45,7 @@
 <p class="credits">Credits &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 </div></section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-its-key">The letter and its key</a><a href="#what-stays-open">What stays open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter-and-its-key">The letter and its key</a><a href="#what-stays-open">What stays open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied &middot; 26 of 26 code numbers</span></p>
 <dl>
@@ -69,6 +69,37 @@
 <li>The recipient, &ldquo;Vostre Altesse&rdquo;, is probably the duc de Nevers (the volume is his correspondence); the letter does not name him.</li>
 <li>The copy has 26 code numbers (15 on the recto, 11 on the verso), all nine values on the slip.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Paris, 28 Feb 1590, BnF fr. 3623 no. 23, ff. 35r-v (key f. 36r)</h3>
+<p>Bienvenut reports from Paris to &#x27;Vostre Altesse&#x27; (probably the duc de Nevers, not proven) that Madame de Nemours showed him advices from Saint-Sorlin of a close understanding between the Pope and the King of Spain, and that the Legate&#x27;s courier went to Rome to keep the war going until the Pope can send 8 or 10,000 men to stiffen Mayenne. The copy is in clear except nine persons and provinces coded by small numbers, all on the key slip bound with it.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bienvenut1590/codes.txt">codes.txt</a></p><pre># BnF fr. 3623 no. 23, ff. 35r-v (Gallica btv1b525245007 canvases 79-80): the code numbers of Bienvenut&#x27;s copy, in
+# text order, read from the full-resolution images 14 Oct 2026 (main checkout targets/champagne1590/img/
+# full_5007_79.jpg, _80.jpg). Plain numbers (8 ou 10000 hommes, 1000 ou 1200 harquebusiers) are not codes and are
+# left out. Every code is on the key slip f. 36r (key.txt).
+# f. 35r
+36 53 37 37 1 37 10 1 35 15 1 17 1 10 1
+# f. 35v
+10 10 35 26 10 1 10 35 15 17 17</pre></details>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bienvenut1590/key.txt">key.txt</a></p><pre># Key slip bound after the copy, BnF fr. 3623 f. 36r (canvas 81), transcribed 21 Sept 2026.
+1	Le Roy d&#x27;Espaigne
+10	Le Pape
+15	Les villes de l&#x27;Union, ou Provence &amp; Daulphiné
+17	Le Duc de Parme, ou Picardie
+26	Le Roy
+35	Monsr du Maine
+36	Madame de Nemours
+37	Monsieur de Nemours
+53	Monsr de St Sorlin</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/bienvenut1590/texts/n23_decryption.md">n23_decryption.md</a></p><pre>Copied verbatim from NOTES.md (&quot;The letter&quot;, 21 Sept 2026) on 22 Oct 2026. Only a sample: the full clear text of ff. 35r-v has not yet been transcribed in this repository. Code numbers are shown resolved in [brackets] from the key slip f. 36r (key.txt); the 26 codes in text order are in codes.txt.
+
+&quot;[Mme de Nemours] me pourmena hyer par la gallerie du logis de la
+Reyne ... elle me monstra plus[ieu]rs avis qu&#x27;elle avoit eu de [St Sorlin] ... qu&#x27;il y a une tres estroicte
+intelligence entre [le Pape] &amp; [le Roy d&#x27;Espagne] ... le courrier que Mr le Legat despescha a Rome ... pour entretenir
+la guerre jusques a ce que [le Pape] puysse envoyer 8 ou 10000 hommes de guerre avec lesquelz il baste l&#x27;ame a
+[Mayenne] &amp; les porte sans qu&#x27;il a d&#x27;accabler [le Roy]&quot;. Grade H (key in the document).</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/bienvenut1590.json"></figure>
 <!-- replay:end -->

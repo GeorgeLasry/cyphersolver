@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter and the record</a><a href="#the-cipher">The cipher block</a><a href="#the-reading">The decrypted text</a><a href="#method">Method</a><a href="#the-last-line">The last line</a><a href="#what-stays-open">What stays open</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter and the record</a><a href="#the-cipher">The cipher block</a><a href="#the-reading">The decrypted text</a><a href="#method">Method</a><a href="#the-last-line">The last line</a><a href="#what-stays-open">What stays open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The catalogue entry came from DECODE, which lists R4157 as a partly enciphered letter of 5 February 1587 from an unknown sender, with Villeroy in the title. The docket on the address leaf reads &ldquo;Double de la lettre de la Royne mere du Roy &agrave; Mr de Villeroy du v[ii]e febvrier 1581&rdquo;: the letter is Catherine de M&eacute;dicis&rsquo;s, written at Chenonceau on 7 February 1581 with a postscript of the 8th and an autograph postscript. It is printed in the <i>Lettres de Catherine de M&eacute;dicis</i>, vol. VII (1899), pp. 349&ndash;353, where the cipher appears silently in clear, taken from a contemporary decipherment written in the margin and under the block. Satoshi Tomokiyo had reconstructed the cipher from this page, noting that the last line &ldquo;cannot be read except for the first d&rdquo;, without publishing a plaintext. With his key, corrected and extended by twelve values (among them 18 = <i>dict</i>, 4/b = <i>nous</i>, the codes for <i>mais</i>, <i>la</i> and <i>Angleterre</i>), every one of the 289 signs is accounted for: 262 decrypt to French and 27 are nulls. The last line he left open is the code for &ldquo;Angleterre&rdquo; after the <i>d&rsquo;</i>, then twenty signs of padding. The cipher adds two words the edition lacks (&ldquo;et non devant&rdquo;, &ldquo;ne laisserons <b>de</b> le nommer&rdquo;).</div>
 
 <h2 id="the-letter"><span class="num">01</span> The letter and the record</h2>
@@ -108,6 +108,45 @@ ONS [DE] [LE] NOMMER [AVEC] [LE][DICT] SIEUR [DE] MONPENSIER AU[DICT] POUOI(R)<b
 <li>Everything else decrypts with a key value (H from Tomokiyo&rsquo;s table, or C against the contemporary decipherment).</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Catherine de Médicis to Villeroy, Chenonceau, 7 Feb 1581, BnF fr. 15564 f. 33r (DECODE R4157)</h3>
+<p>The one cipher block of the Queen Mother&#x27;s letter: it is said that the prince Dauphin is to go to Flanders to receive the oath of fidelity of the Low Countries for her son Anjou and stay there, that the prince de Condé is to lead the forces assembling, and that Anjou says he will go at the time Villeroy wrote and not before; but they will still name him with Montpensier in the powers of the legation to England. The letter was already in print (1899); the cipher differs from the printed text in three small places.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4157/tokens.txt">tokens.txt</a></p><pre># R4157 = BnF fr. 15564 f. 33r, cipher block of 8 lines (Gallica btv1b9064027v view 43; DECODE R4157 P5).
+# One line per manuscript line; labels defined in key.tsv. Second pass (2026-09-22), shapes checked at 2x zoom.
+N3+ Nff Nsm r S H pi q x rho
+3 oo v PHI D e w PHI u oo 6e db n 3 8 v f th H oo T + v oo phi 3 PHI q Z D H z o xi psit 3 Z alpha v 6u dd d Z db PIb
+A6 dfl H oms 2 x + J phi S PHI p H e Az v q cv e F u th H pi psit z phi th f vv v n v psit tt T DD z alpha th PHI Z e2 u th
+H 2 q phi 3 PHI v oo T + D S oo alpha 3 db cv + x yo 3 phi pi e 3 PHI psit v q C9 V alpha 3 cv e amp J oo th PHI q J
+T db 3 oo 6u H alpha v z phi th PHI 18 D H e Az cv + 3 18 dfl 6u yo Fi F z 2 f th H oo x rho v n Dst 4+ Z7
+w f q 3 phi A6 + tt 4b w 6u 3 Az v + alpha oo H A6 q 3 psit PHI th PHI z f w psin q Cs 4b PHI v dd dfl H yo 3 oo
+th PHI + z T PHI th SS v oo 3b T 18 + H 3 f oo z phi th PHI A6 v psin + H 3 oo w f 18 B th PHIo S H
+Z Bb T omg w pt H th PHI r ob xe Z7 Nsm N3+ x Nsm dd SS x aq xe Z7 PIb tt Nsm Nff N3+ xe Nsm Nz</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4157/reading.txt">reading.txt</a></p><pre># R4157 = BnF fr. 15564 f. 33r: Catherine de Médicis to Villeroy, Chenonceau, 7 Feb 1581. Cipher block, read with key.tsv.
+# One line per manuscript line. [..] = nomenclator code; {..} = null or padding; ? = graded M (context).
+# Clear text before: &quot;car, à ce que j&#x27;entends, nous n&#x27;i gaingnerions rien, se dizant par deçà qu&#x27;il&quot;
+
+L0  {N3+ Nff Nsm} doibt al|
+L1  er en flandres receuoir [le] serment [de] fi[de]lite [de] ceulx [de]s {PIb}|
+L2  pais bas [pour] mon filz et [qui]l y doibt [de]mourer et [que] [le] [prince] [de] con[de]e? do|
+L3  ibt mener [le]s forces [qui] s&#x27;assemblent et [faire] [tout] ce [qui]lz [pour]ront [pour]|
+L4  [le] seruice [de] mon[dict] filz [qui] se [dict] aussi y [de]buoir aler {Dst 4+ Z7}|
+L5  au temps [que] [nous] auez escript et non [de]uant [mais] [nous] ne laisser|
+L6  ons [de] [le] nommer [avec] [le][dict] sieur [de] monpensier au[dict] pouoi&lt;r omitted&gt;|
+L7  [de] [la] [le]gation d [Angleterre?] {xe Z7 Nsm N3+ x Nsm dd SS x aq xe Z7 PIb tt Nsm Nff N3+ xe Nsm Nz}
+
+# Normalised:
+# ... qu&#x27;il doibt aller en Flandres recevoir le serment de fidélité de ceulx des Païs-Bas pour mon filz, et qu&#x27;il y doibt
+# demourer, et que le prince de Condé doibt mener les forces qui s&#x27;assemblent, et faire tout ce qu&#x27;ilz pourront pour le
+# service de mondict filz, qui se dict aussi y debvoir aller au temps que nous avez escript, et non devant; mais nous ne
+# laisserons de le nommer avec ledict sieur de Montpensier audict pouvoir de la légation d&#x27;Angleterre.
+#
+# Tally (tokens.txt, 289 tokens): 262 message signs read as sense (3 graded M: e2 in &quot;Condé&quot;, ō = Angleterre, and the
+# missing r of &quot;pouoir&quot;); 7 nulls inside the text (declared nulls Dst, 4+, Z7; start padding N3+ Nff Nsm; line-end π̄);
+# 20-sign tail after ō = padding (see NOTES.md).</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4157/key.tsv">key.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/r4157.json"></figure>
 <!-- replay:end -->

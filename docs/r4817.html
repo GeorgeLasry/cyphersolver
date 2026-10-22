@@ -43,7 +43,7 @@
 <div class="seal solved" aria-hidden="true"><span>external text</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">What the object is</a><a href="#reading">All five lines</a><a href="#method">Separating similar signs</a><a href="#limits">The emendation</a><a href="#sources">Sources and credit</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">What the object is</a><a href="#reading">All five lines</a><a href="#method">Separating similar signs</a><a href="#limits">The emendation</a><a href="#texts">Full texts</a><a href="#sources">Sources and credit</a></nav>
 <div class="callout"><strong>Summary.</strong> DECODE R4817 lists this one-page cipher of graphic signs as <span data-term-ok>&ldquo;Non-decrypted&rdquo;</span>, meaning no decipherment is attached to the record. It is an anonymous annotation in Zentralbibliothek Zürich, SCH R 201, rather than an identifiable letter. Anne-Simone Rous had already identified the substitution and deciphered much of the note; Uwe Maximilian Korn published her partial result in 2023. It was found before work began and used as a crib. Checking the original scan distinguishes M from N and D, P from B, and O from I; the cross reads F. The opening becomes <em>Prima materia ist die Galle vom Widder</em>. All 79 signs have a value; 78 give sense without a textual correction. The cipher gives <em>GEFAE</em> where the sentence wants <em>Gefäß</em>, so the last letter is marked as an emendation. No independent clear copy or historical key was found.</div>
 
 <figure data-credit="Zentralbibliothek Zürich, SCH R 201, image 1033442, via e-manuscripta; Public Domain Mark"><img src="r4817_lead.jpg" alt="The five cipher lines on the blank surface before the title page"><figcaption>The complete cipher. Source: Zentralbibliothek Zürich, SCH R 201, image 1033442, via e-manuscripta; Public Domain Mark. <span class="credit">Image: Zentralbibliothek Zürich, SCH R 201, image 1033442, via e-manuscripta; Public Domain Mark.</span></figcaption></figure>
@@ -73,6 +73,62 @@ OFFEN IST DIE WAGE</pre>
 <p>The last sign of <em>GEFAE</em>, line 3 position 8, looks like E and is decoded E by the same table as every other occurrence. Changing its key value globally destroys the rest of the reading. <em>Gefäß</em> is strongly indicated by “is a half-round sphere,” but the required S/ß is not there. A copying or enciphering error is the likely explanation; it remains a conjecture.</p>
 <p>Coverage is reported in two ways: <strong>79/79 assigned</strong>, and <strong>78/79 (98.73%) coherent without emendation</strong>. The latter is the conservative completion measure. Under this repository's provenance grades, reconstructed values are I (context-derived) and the editorial repair is M (uncertain). The key is complete only for occurring signs; unobserved letters are unknown. The writer, annotation date and precise alchemical meaning remain open.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>SCH R 201, cipher flyleaf</h3>
+<p>Five lines of German alchemical note on the inside front board of Mögling&#x27;s Speculum sophicum rhodo-stauroticum (catalogued 1618): &#x27;Prima materia ist die Galle vom Widder. Das Gefä[ß] ist eine halbrunde Kugel. Der Ofen ist die Waage.&#x27; Unsigned and undated; Anne-Simone Rous&#x27;s partial decipherment (Korn 2023) was the crib.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4817/transcription.txt">transcription.txt</a></p><pre>01 02 03 04 05 04 05 06 07 02 03 05 03 08 06
+09 03 07 10 05 11 11 07 12 13 04 14 03 09 09 07 02
+09 05 08 10 07 15 05 07 03 08 06 07 03 16 07
+17 05 11 18 02 12 16 09 07 19 12 10 07 11 09 07 02
+13 15 15 07 16 03 08 06 09 03 07 14 05 10 07</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4817/literal.txt">literal.txt</a></p><pre>PRIMA MATERIA IST
+DIE GALLE UOM WIDDER
+DAS GEFAE IST EINE
+HALB RUNDE KUGEL DER
+OFFEN IST DIE WAGE</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4817/READING.md">READING.md</a></p><pre># Reading of the cipher flyleaf, SCH R 201
+
+Primary source: e-manuscripta, image 1033442, canvas [2], the inside front board / first blank surface before the title page. The book is catalogued 1618; the cipher itself carries no date or signature.
+
+## Literal substitution
+
+```text
+PRIMA MATERIA IST
+DIE GALLE UOM WIDDER
+DAS GEFAE IST EINE
+HALB RUNDE KUGEL DER
+OFFEN IST DIE WAGE
+```
+
+U and V share one sign: UOM is read VOM. Commas are visible after GALLE, WIDDER, KUGEL and at the end; they are not cipher tokens. The first one need not be modern syntactic punctuation. Spaces above are editorial word divisions consistent with the broad manuscript spacing.
+
+## Conservative reading
+
+Prima materia ist die Galle vom Widder. Das Gefae [wohl: Gefäß] ist eine halb runde Kugel. Der Offen ist die Wage.
+
+## Normalized German (one explicit emendation)
+
+Die Prima Materia ist die Galle vom Widder. Das Gefä[ß] ist eine halbrunde Kugel. Der Ofen ist die Waage.
+
+The final ß of Gefäß is an editorial replacement of the E actually obtained from the cipher, not a recovered sign. The f is an inferred key value, supported again by both crosses in OFFEN.
+
+## English
+
+The prime matter is the gall of the ram. The vessel [emended] is a half-round sphere. The furnace is the balance [or Libra].
+
+These are the words, not a demonstrated chemical recipe. Whether ram and balance carry zodiacal or other alchemical meanings remains undetermined.
+
+## Confidence and coverage
+
+All 79 signs in 19 classes receive values. Of them, 78/79 (98.73%) read without a conjectural textual correction; line 3 sign 8 is clearly the E sign, but GEFAE does not make a satisfactory word in context. GEFAS / Gefäß is the likely intended word, graded M. The remaining reconstructed mappings are I under this repository&#x27;s provenance grades (inferred from repeated words and context, not read from an archival key). This is a reading assisted by prior partial work, not an independent ciphertext-only break.
+
+## Prior work and the changes
+
+Anne-Simone Rous&#x27;s partial reading is printed by Uwe Maximilian Korn (2023), p. 178 n. 41. It was found before this attempt and used. The main corrections are PRIMA MATERIA (distinguish the two forms of curled staff and the triple angles), VOM (ring rather than dot; triple rather than double angles), F for the crosses, and N for the double angles ending OFFEN. The anomalous final E of GEFAE is retained as a source discrepancy. No full earlier decipherment was found in the searches recorded in NOTES.md.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4817/key.json">key.json</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/r4817/key-decode.txt">key-decode.txt</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/r4817.json"></figure>
 <!-- replay:end -->

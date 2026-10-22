@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#system">The system</a><a href="#method">How the key was recovered</a><a href="#reading">The decipherment</a><a href="#rank">The code words, checked by rank</a><a href="#history">History: a day late</a><a href="#open">The eleven open groups</a><a href="#residuals">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#system">The system</a><a href="#method">How the key was recovered</a><a href="#reading">The decipherment</a><a href="#rank">The code words, checked by rank</a><a href="#history">History: a day late</a><a href="#open">The eleven open groups</a><a href="#residuals">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> On 30 June 1848 Mazzini&rsquo;s Milan paper printed a letter and a ciphered dispatch of Cardinal Soglia, Pius IX&rsquo;s Secretary of State, to
 Mgr Michele Viale Prel&agrave;, nuncio to the Emperor, who had fled Vienna for Innsbruck. The pair had been posted at Turin on 20 June and never reached him. The paper
@@ -271,6 +271,40 @@ are the cipher clerk&rsquo;s or the Milan compositor&rsquo;s cannot be told from
 <li>The broadsheet is a Roman reprint of the Milan paper. The Milan issue itself (on repubblicaromana-1849.it) was not collated digit by digit.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Cardinal Soglia to the nuncio Viale Prelà, Rome, 15 June 1848 (L&#x27;Italia del Popolo no. 40)</h3>
+<p>The papal Secretary of State&#x27;s counter-order to the nuncio at Innsbruck, where the Emperor had fled: instead of asking for his passports after Lützow&#x27;s departure from Rome, he is to remain with the Emperor wherever he goes, and show the dispatch at once to Mgr Morichini. Printed in cipher by Mazzini&#x27;s L&#x27;Italia del Popolo (30 June 1848) and posted by Klaus Schmeh as unsolved; the key was recovered here, some code words remain unread ([8xxx]).</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/ct2.txt">ct2.txt</a></p><pre>3734468247501873487608904873984135648554121164611964469700926512543947067765402084246753171509047009521901621419221247409560863251582275425927036744670705425097733099739462409492186205521419209564561091621994350157909496750954967102140492156751909059909844667563549216667367067496450723593463424099769515466353793704964512581162682118346095012358310558120215870421541465097021994359049213970768422545873756352470467021044679490972946770246951667499046660997742155922158433166719465809381025015842952652192235496714247209512512997949709003519492104994654158319521554670702430215212056146044356354921900949645251269974097934664599460419210409523124290090654041673321490981365492123717009507235934614973909540519090499098446675351269492199040981315098429558122095247046700983405152692215706721225124249677474090656353649215427021494357067211581105090464167049094922541509494967704654550983745964649671024675634292706750249145474121579490971265096191673169205</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/texts/plaintext.md">plaintext.md</a></p><pre># Soglia to Viale Prelà, Rome, 15 June 1848: normalised plaintext and English
+
+Copied 22 Oct 2026 verbatim from NOTES.md. The literal decoder outputs are `plaintext_raw.txt` (code words not read in [8xxx]) and `plaintext_guess.txt` (with the code-word readings).
+
+## Plaintext (normalised; `(…)` = code word, `[8xxx]` = code group not read)
+
+&gt; Con mio (foglio) del [8734][8760][8904][8739][8413] si le commetteva che in seguito degli ordini dati a Sua
+&gt; Eccellenza il (Signor), [8227] di Lützow di abbandonare Roma, Ella si facesse del pari a richiedere i passaporti
+&gt; per restituirsi alla Dominante, o per condursi in (Colonia), che (è) (lontan)a della (guerra), (com)e [8704]e,
+&gt; lo avesse creduto opportuno. (Tuttavia) per nuove sopraggiunte circostanze Le partecipo [8093][8102] del (Padre)
+&gt; che Ella rimanga in Inspruck presso l&#x27;Imperatore e ovunque egli fosse per recarsi; intendendosi sospesa la
+&gt; indicata delibera [8136] relativa alla domanda de&#x27; passaporti: interessa [8131] a (Padre) (cotest)a nuova
+&gt; istruzione, che Le viene indirizzata per tre diverse vie, (col fine di) assicurarne l&#x27;arrivo.
+&gt;
+&gt; *(clear:)* A risparmio di tempo dovrà con ogni sollecitudine rendere ostensibile il presente dispaccio
+&gt; *(cipher:)* a Monsignor Morichini per di lui norma alle pratiche affidategli.
+
+**English.** &quot;By my letter of […] you were instructed that, after the orders given to His Excellency the Signor
+[…] Lützow to leave Rome, you should likewise ask for your passports in order to return to the capital, or to go
+to Cologne, which is far from the war, [as …] you thought fit. However, because of new circumstances, I inform you
+[…] of the Holy Father that you remain at Innsbruck with the Emperor and wherever he may go; the decision […]
+about asking for the passports is to be considered suspended. It matters […] to the Holy Father [that] this new
+instruction, which is sent to you by three different routes so as to ensure it arrives… To save time you must
+at once show this dispatch to Mgr Morichini, for his guidance in the negotiations entrusted to him.&quot;</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/plaintext_raw.txt">plaintext_raw.txt</a></p><pre>conmio(dispaccio) del[8734][8760][8904][8739][8413] si{8} lecommetevache in segvito degli(ordin)i dati asva eccellenza il[8632], [8227] di lvtzovv di abbandonare(Roma) ella si facesse del pari a richiedere i passa(port)i per restitvirsi alla dominante, oper condvrsi in [8116]che[8211][8346]a della [8310] [8120]e [8704]e lo avesse credvto(opportuno). [8737] per nvovesopraggivnte circostanze le (parte)cipo [8093][8102] del (Padre) che ella rimanga in insprvck presso l (Imperatore) e ovvnque egli fosse per recarsi; intendendosi sospesa laindicata delibera[8136] relativa alla domanda de passa(port)i: interessa[8131] a(Padre) [8122]a nvova(istruzione), chele viene indirizzata per tre diverse vie, [8110] assicvrarne l arrivo. a(Monsignor) morichini perdilvi norma alle pratiche affidategli</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/plaintext_guess.txt">plaintext_guess.txt</a></p><pre>conmio(foglio) del[8734][8760][8904][8739][8413] si{8} lecommetevache in segvito degli(ordin)i dati asva eccellenza il(Signor), [8227] di lvtzovv di abbandonare(Roma) ella si facesse del pari a richiedere i passa(port)i per restitvirsi alla dominante, oper condvrsi in (Colonia)che(è)(lontan)a della (guerra) (com)e [8704]e lo avesse credvto(opportuno). (Tuttavia) per nvovesopraggivnte circostanze le (parte)cipo [8093][8102] del (Padre) che ella rimanga in insprvck presso l (Imperatore) e ovvnque egli fosse per recarsi; intendendosi sospesa laindicata delibera[8136] relativa alla domanda de passa(port)i: interessa[8131] a(Padre) (cotest)a nvova(istruzione), chele viene indirizzata per tre diverse vie, (col fine di) assicvrarne l arrivo. a(Monsignor) morichini perdilvi norma alle pratiche affidategli</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/key.json">key.json</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/soglia1848/codes.json">codes.json</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/soglia1848.json"></figure>
 <!-- replay:end -->

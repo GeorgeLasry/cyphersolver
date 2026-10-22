@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#code">The code</a><a href="#sources-key">Sources for the key</a><a href="#decipherment">Decipherment of the postscript</a><a href="#method">Method</a><a href="#corrections">Corrections to the printed transcription, and on</a><a href="#despatches">The other despatches in THE=972, 1807–1810</a><a href="#try">Try the key</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#code">The code</a><a href="#sources-key">Sources for the key</a><a href="#decipherment">Decipherment of the postscript</a><a href="#method">Method</a><a href="#corrections">Corrections to the printed transcription, and on</a><a href="#despatches">The other despatches in THE=972, 1807–1810</a><a href="#try">Try the key</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout blue">
 <strong>Summary.</strong> John Armstrong, United States Minister to France, ended a private letter to Secretary of State James Madison
 (Bourbon-l'Archambault, 30 August 1808) with a postscript of 49 numerical code groups. The letter is printed in Founders Online with
@@ -330,6 +330,36 @@ addEventListener('DOMContentLoaded',decode);
 })();
 </script>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Coded postscript, 30 Aug 1808</h3>
+<p>John Armstrong, US minister in France, tells Madison in a coded postscript that Russel (most probably Jonathan Russell) ought to be the consul, being American-born and better qualified than any other candidate, and that O&#x27;Mealy comes next but is, like Warden, an Irishman: the same animus against David Bailie Warden that led Armstrong to remove him in 1810.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/armstrong/texts/ps30aug1808_transcription.txt">ps30aug1808_transcription.txt</a></p><pre># Armstrong to Madison, coded postscript of 30 Aug 1808 (LoC Madison Papers reel 10 frame 0521). Copied verbatim from the PS string in decode972.py.
+# Code groups as read from the LoC manuscript; | separates code runs from plain words; the last group is 555 in the MS, taken as a slip for 1555.
+1394 1116 1273 250 1165 1405 | 972 148 1459 1482 1201 821 130 821 | 1429 720 970 | and | 1482 |
+much better | 992 1319 1048 584 687 249 736 1013 | 750 967 | In a word | 1459 1482 1202 | 1561 |
+in general. Next to | 927 1090 1052 | 832 1482 934 510 860 | but | 1459 1482 | 1320 384 1280 1216 1481 1483 [555=&gt;1555]</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/armstrong/texts/ps30aug1808_decryption.md">ps30aug1808_decryption.md</a></p><pre># Armstrong to Madison, coded postscript of 30 Aug 1808: decryption
+
+Group-by-group key output saved from `python decode972.py ps` (22 Oct 2026); `?` = uncertain (M), `*` = inferred (I).
+The connected reading below is copied verbatim from NOTES.md, &quot;Result&quot;.
+
+```
+== PS 30 Aug 1808 ==
+ru s el* ought* to be | the consul? he is a n America? n | by bir* th | and | is | much better | qua* li fi(ed)* than any other can di | da te | In a word | he is above? | men | in general. Next to | him in fit? | ness is o mea ly | but | he is | like ward* en an ir ish* [ re =&gt; man ]
+
+```
+
+    P.S. Ru-s-el ought to be the consul: he is a-n America-n by bir-th, and is much better
+    qua-li-fi(ed) than any other can-di-da-te. In a word he is above men in general. Next to
+    him in fit-ness is O-mea-ly, but he is like Ward-en an Ir-ish-[man].
+
+&gt; Russel ought to be the consul: he is an American by birth, and is much better qualified than any other
+&gt; candidate. In a word, he is above men in general. Next to him in fitness is O&#x27;Mealy, but he is, like Warden,
+&gt; an Irishman.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/armstrong/code972_partial.json">code972_partial.json</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/armstrong/pairs.txt">pairs.txt</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/armstrong/additions972.tsv">additions972.tsv</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/armstrong.json"></figure>
 <!-- replay:end -->

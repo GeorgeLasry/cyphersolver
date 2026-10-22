@@ -50,7 +50,7 @@
 <div class="seal solved" aria-hidden="true"><span>adjacent text</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-cipher">The cipher</a><a href="#the-reading-of-f-39v">The decipherment of f. 39v</a><a href="#method">Method</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-cipher">The cipher</a><a href="#the-reading-of-f-39v">The decipherment of f. 39v</a><a href="#method">Method</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> DECODE lists R8479 as a three-page, partially decrypted letter of &ldquo;Needham&rdquo; to an unknown recipient, 28 July 1587, with an unknown cipher of graphic signs. The writer is Francis Needham, Walsingham&rsquo;s servant, who sailed with the Earl of Leicester to relieve Sluys, and the letter is to Walsingham; its clear text follows the despatch of the same day calendared in <em>CSP Foreign</em> 1587 (pp. 206&ndash;8), which the Harley leaves are not. The cipher is a pigpen of nine box shapes in three forms (plain, dot below, dot inside) carrying the alphabet a&ndash;i, k&ndash;s, t&ndash;z in order. A contemporary hand glossed a few cipher words and the runs of f. 39r; the six runs of f. 39v were left bare. From the glosses <em>advise</em>, <em>enemyes</em>, <em>campe nor the towne</em> and <em>Burgrave</em> half the alphabet came out, the first bare lines gave &ldquo;want of intelligence&rdquo; and &ldquo;whether there was any bridge&rdquo;, and the order of the grids gave the rest. Every run of f. 39v is now deciphered. The besiegers knew nothing of the enemy, did not know whether there was a bridge, and found the channel closed with hoys and flyboats fastened with chains and strengthened behind with flat boats. One word of about six letters is unsure.</div>
 
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
@@ -96,6 +96,55 @@
 <li>The clear text of ff. 39r&ndash;40r is summarised, not transcribed.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Needham to Walsingham, 28 July 1587, f. 39v cipher runs</h3>
+<p>Francis Needham, Walsingham&#x27;s servant with Leicester at the relief of Sluys, reports that they had no intelligence out of the enemy&#x27;s camp or the town for five days, did not know whether there was any bridge or anything at the channel, and that the channel was closed with hoys and flyboats fastened with chains and strengthened behind with flat boats. The f. 39r and f. 40r cipher words were glossed at the time; the clear text of the letter is not transcribed here.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/cipher.txt">cipher.txt</a></p><pre># Needham to Walsingham, 28 July 1587, BL Harley MS 287 f. 39v (DECODE R8479, image 4)
+# Sign-level transcription. Shape = which sides of the box are drawn:
+#   J = right+bottom (top-left cell), U = open top, L = left+bottom, C = open right, O = full box,
+#   F = left+top, N = open bottom, 7 = top+right, D = open left.
+# Mark: none = first grid (a-i), &#x27;.&#x27; dot below = second grid (k-s), &#x27;:&#x27; dot inside = third grid (t-z).
+# &#x27;|&#x27; = visible word gap. Readings checked sign by sign on full-resolution crops.
+A  L: J C. J: O O. F D C. J: O U. U. O N O C. L O
+C  J. C. O L: O | C. O. J: | L: 7 O
+D  J: 7 O 7. | J: 7 O 7. O | L: J D. | J C. O: | U 7. D C N O | O. 7. | C. O. J: | O. 7. | L: 7 O J: 7 O 7. | J: 7 O 7. O | L: O 7. O | J C. O: | J J: | J: 7 O | L 7 J C. O U.
+G  L 7 J C. O U. | L: J D. | U ? ? ? ? O C | L: D J: 7 | 7 O. O: O D. | J C. C | F U. O: U O. J J: O D. | F J D. J: O C. O C | L: O: J: 7
+H  L 7 J O: C. O D. | D. J: 7. O C. N J: 7 C. O C | U O 7 D C. C | L: O: J: 7 | F U. J J: J: | U O. O. J: O D.
+F  J C. C | J: 7 J J: | J: 7 O
+# Glossed at the time (interlinear), transcribed for the key:
+advise   J C U: D D. O
+enemyes  O C. O L. O: O D.
+campe nor the towne   L J L. F. O | C. O. 7. | J: 7 O | J: O. L: C. O</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/f39v_decryption.md">f39v_decryption.md</a></p><pre># Output of decode.py on cipher.txt, run 22 Oct 2026 (three-grid pigpen key). One line per cipher run of f. 39v (lines A-H) plus the three glossed words; ? = sign without a value (line G, word 3, open). Verbatim script output.
+A          wanteofintellegence
+C          knewe not whe
+D          ther there was any bridge or not or whether there were any at the chanel
+G          chanel was b????ed with hoyes and flyboates fastened wyth
+H          chaynes strengthned behind wyth flatt bootes
+F          and that the
+advise     aduise
+enemyes    enemyes
+campe nor the towne campe nor the towne</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/f39v_reading.md">f39v_reading.md</a></p><pre># Copied verbatim from NOTES.md, section &#x27;Reading of f. 39v&#x27; (22 Oct 2026): the cipher runs in their clear context.
+## Reading of f. 39v (cipher in italics; clear text paraphrased where not transcribed)
+
+- **A**: &quot;... we had *want of intelligence* these five days last past ...&quot; — the gloss &quot;advise&quot; above the next
+  cipher word: &quot;we could have no *advise* out of the *enemyes campe nor the towne*&quot;.
+- **C–D**: &quot;and we were so far from knowing what was meet to be done at that time [that] we *knewe not whether
+  there was any bridge or not, or whether there were any at the chanel*&quot;.
+- **F–G–H**: &quot;... *and that the chanel was b[…]ed with hoyes and flyboates fastened wyth chaynes, strengthned
+  behind wyth flatt bootes*.&quot;
+
+The rest of f. 39v is clear: Sir Roger Williams&#x27; sally, the storm, the enemy&#x27;s hundred files at the walls, the
+state of the town, Count Maurice, Colonel Morgan and Russell; the lower glosses (&quot;Mr Burley&quot;, &quot;the Spaniard&quot;,
+&quot;were removed hence&quot;) were read at the time.
+
+The reading agrees with the calendared despatch of the same day, which says the fireship could hardly be brought
+up to &quot;the bridge&quot; across the haven: Parma had closed the channel with a boom of boats.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/needham1587/texts/key.md">key.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/needham1587.json"></figure>
 <!-- replay:end -->

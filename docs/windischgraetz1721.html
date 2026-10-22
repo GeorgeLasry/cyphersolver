@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-document-and-the-key">The document and the key</a><a href="#the-reading">The decipherment</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-document-and-the-key">The document and the key</a><a href="#the-reading">The decipherment</a><a href="#what-remains-uncertain">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The catalogue listed this as a letter from Leopold Viktorin von Windischgrätz to his brother Ernst Friedrich, Brussels, 18 November 1721, eight pages, with no decipherment and two keys of the family series on DECODE. Neither of those keys (R5017, R5018, the Emperor&rsquo;s) is the right one. The right one is on the record itself: a spreadsheet by Jakub Mírka (19 June 2023) reconstructing the brothers&rsquo; own cipher from their letters of late 1721, most of which carry interlinear decipherments. His code list includes codes that occur in this letter, but no decipherment of it was published, and DECODE lists none. Applied here, it decrypts every letter-spelled passage to German at once: <i>eine Excusation zu machen</i>, <i>verliehret</i>, <i>Succession</i>, <i>niemahlen anzunehmen</i>, <i>Dienste zu</i>. Of 181 cipher groups, 148 (82%) had a value on 21 September; after the second pass of 5 October, 155 (85.6%) read as sense and 26 groups, 19 distinct nomenclator codes, stay open because neither the key nor the letter fixes them. No cryptanalysis was needed. The work was transcribing the numbers and applying a published key.</div>
 
 <h2 id="the-document-and-the-key"><span class="num">01</span> The document and the key</h2>
@@ -83,6 +83,39 @@
 <li>All letter-spelled words are grade H: the key gives them without choice.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R5029, Brussels, 18 Nov 1721</h3>
+<p>A Windischgrätz brother writes in German with thirteen enciphered passages, read with Jakub Mírka&#x27;s key from the DECODE record: the Emperor advised making an excuse; [205] holds under hand; everyone, even the Emperor, daily loses love for [103] after the courier brought the Prince&#x27;s plan; the Congress of Cambrai should open soon and the Madrid courier brought Pozobueno orders on the renunciations. 23 code numbers stay open.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/windischgraetz1721/ct.txt">ct.txt</a></p><pre># R5029, Brussels 18 Nov 1721. Cipher groups by passage, clear text around them in [brackets]. Image/page per line.
+p2 | [dass] 85 103 7 20 16 [gar] 18 32 35 9 15 130 209 [willen] 152 [selbst widerrathen] 146 [eine] 22 38 23 3 40 36 27 20 6 30 1 3 7 24 35 45 22 18
+p2 | [Wan] 145 [von dort aus nur einiges souteniert werde, ist der rath sehr gutt, sonsten aber nicht] 85 205 9 36 19 15 34 27 [unter der hand vermuthlich auch] 172 198
+p3L | 205 [sicherlich gegen niemand davon melden wird ... auch selbst] 85 54 [nicht]
+p3L | [Ich glaube es heisset bey] 205 [manus manum lavat]
+p3L | [In puncto] 85 78 [ist fast nicht zu glauben, wie nicht allein] 86 151 [sondern auch sonsten jederman] 86 19 20 34 12 22 [vor] 103 [ia selbsten] 152 [täglich] 164 3 22 16 31 20 22 9 28 34 27
+p3L | [in ansehen, dass nach dem der curier endlich nach so langer zeit] 172 47 22 4 198 197
+p3R | 37 39 225 [angelanget] 103 [selben schon über 2 monathe] 182 101 [Casse(?) ... ] 152 [aber ganz gelassen] 1 39 4 22 9 34 [auf solche weise könte] 145 [...]
+p3R | 85 99 [wie auch] 111 [wollen nacher haus gehen, und dörften als dan] 3 18 4 22 16 24 30 139 [und] 204 [wenig rühmliches durchschnid ... ] 102 [...]
+p3R | 145 [wirdt succumbiren,] 85 198 [gloriren,] 152 [aber will] 168 3 22 16 19 32 34 9 28 22 78 [und] 86
+p4L | 181 206 [worden, welches der effect bald weisen solle]
+p4R | [dass das] 167 [versprechen einen guten effect haben, sonsten will der Wartheimber nicht mehr zuhalten]
+p4R | [an eine Grentze] 40 3 23 35 22 40 4 20 6 18 182 [zu gedencken ist mir umb so lieber, als ich mir ein principe d&#x27;honneur gemacht solches nebst villen anderen ursachen hauptsächlich derumb] 30 32 22 45 34 7 36 9 31 22 30 24 18 37 3 18 22 45 43 34 30 [damit] 182 [seine,] 145 135 85 198 206 [umb dessen] 47 20 22 18 4 15 34 1 3 131 [welches schändlich]
+p5L | [...nur] 37 39 149 152 21 22 27 9 24 18 131 [ich bitte aber ...]</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/windischgraetz1721/dec.txt">dec.txt</a></p><pre>p2: dass «der/dem» «Eugen» MIR gar NICHT «gut?» «seyn?» willen «Kayser» selbst widerrathen «ihm?» eine EXCVSATIONZVMACHEN
+p2: Wan «ich» von dort aus nur einiges souteniert werde, ist der rath sehr gutt, sonsten aber nicht «der/dem» «Rialp?» HALTET unter der hand vermuthlich auch «mit?» «Prinz»
+p3L: «Rialp?» sicherlich gegen niemand davon melden wird ... auch selbst «der/dem» «Althann» nicht
+p3L: Ich glaube es heisset bey «Rialp?» manus manum lavat
+p3L: In puncto «der/dem» «Compagnie» ist fast nicht zu glauben, wie nicht allein «die» «Kaiserin?» sondern auch sonsten jederman «die» LIEBE vor «Eugen» ia selbsten «Kayser» täglich «mehr?» VERLIEHRET
+p3L: in ansehen, dass nach dem der curier endlich nach so langer zeit «mit?» DES «Prinz» «Plan»
+p3R: ZV «225» angelanget «Eugen» selben schon über 2 monathe «nicht?» «101» Casse(?) ...  «Kayser» aber ganz gelassen ZVSEHE auf solche weise könte «ich» ...
+p3R: «der/dem» «Engländer» wie auch «Franzosen?» wollen nacher haus gehen, und dörften als dan VNSERAN «Hof?» und «204» wenig rühmliches durchschnid ...  «102» ...
+p3R: «ich» wirdt succumbiren, «der/dem» «Prinz» gloriren, «Kayser» aber will «mir?» VERLIEHRE «Compagnie» und «die»
+p4L: «181» «206» worden, welches der effect bald weisen solle
+p4R: dass das «Miosch» versprechen einen guten effect haben, sonsten will der Wartheimber nicht mehr zuhalten
+p4R: an eine Grentze SVCCESSION «nicht?» zu gedencken ist mir umb so lieber, als ich mir ein principe d&#x27;honneur gemacht solches nebst villen anderen ursachen hauptsächlich derumb NIEHEMAHLENANZVNEHMEN damit «nicht?» seine, «ich» «hat» «der/dem» «Prinz» «206» umb dessen DIENSTEZV «haben?» welches schändlich
+p5L: ...nur ZV «ihro?» «Kayser» GETHAN «haben?» ich bitte aber ...</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/windischgraetz1721.json"></figure>
 <!-- replay:end -->

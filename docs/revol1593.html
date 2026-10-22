@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#set">The letters</a><a href="#key">Key no. 60</a><a href="#cribs">The cribs in the copyist’s hand</a><a href="#passages">The passages</a><a href="#open">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#set">The letters</a><a href="#key">Key no. 60</a><a href="#cribs">The cribs in the copyist’s hand</a><a href="#passages">The passages</a><a href="#open">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied, partial &middot; three words of f. 88r</span></p>
 <dl>
@@ -122,6 +122,112 @@ two or three table entries. The next pass is a glyph-level alignment of the copy
 <li>ff. 115, 176 and 198: located and cut, not yet transcribed. Status: in progress.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>BnF fr. 3985 f. 88r-v, 21 Aug 1593</h3>
+<p>Nevers to Louis de Revol, secretary of state, on the papal absolution of Henri IV; the transcription is Robert Węglarek&#x27;s (tunarob, issue #32). Only &#x27;de absolution&#x27; (shuffle-controlled), &#x27;le Roy&#x27; and &#x27;qu&#x27;il&#x27; read; the decoder output with key no. 60 is given as it stands, not as a reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/revol1593/f88/ct_3985_f88.txt">ct_3985_f88.txt</a></p><pre># Nevers to Revol, 21 August 1593, BnF fr. 3985 f. 88r-v (Gallica btv1b90606498 views 176-177), cipher no. 60, copy.
+# Transcription by tunarob (Robert Węglarek), GitHub issue #32, 12 Oct 2026, from his PDF appendix
+# (f. 88r version 3, f. 88v version 5). LLM-assisted (Claude Code); not checked by a palaeographer.
+# We re-checked R5 and R6 on the full-resolution image (openapi.bnf.fr IIIF v3): R5 reads as below; in R6 the
+# contributor&#x27;s &quot;f ++&quot; is one compound f++ (qu&#x27;il) on the image. Variants {a|b}: first variant used by the control.
+# &quot;/&quot; = clear/cipher boundary; ? = uncertain sign. Tags as in key60.txt (o– = b, ſ+ = l, 4 = x, 2+ = u|i).
+R3: [clear: ... a cest effect sur] to g ı L x ‡ q λ q π ⊥ y v r 2+ Δ? T R? ꝺ o– Ⱡ ∂ ⱶⱶ ıı
+R4: T ∂ ꝑ L σ f E ꝶ L T [clear: deu... to end of line]
+R5: [clear: ...rant] to oꝛ? g ∂ o– Ⱡ ſ+ 20 8 ++ π ⊥ [clear: un ...]
+R6: 12 –Δ (m 7 c 12 {16|ı 6} F oo+ {ſ+|4+} o w L x –o– e y 2+ ∞ ꝑ q {10|ı o} E q 4 x x ur f++ ∂ π c L x q {30|3 o} 11 Δ ſ ıı
+V1: [clear: ... marquis de Pisany qui me dit] [clear?: C ꝑ luy] + q L π T 8 ur + p o ++ Ⱡ x ꝛ pı v– q T 2+ λ ŋ y Δ‡ ++ r x x 2+ Δ ⊥ ϕ d+ ∂ 7 8
+V2: π o– o L ꝑ ++ X⨳ ⊥ 2 2+ η 2+ ‡ ∂ 8 ++ 4 T f++ x&#x27; X⫻ ſ̃ {est|e s t} X ℓ x g T q ıı ꝑ /// {r|ꝛ} [clear: sachant? ...]
+V3: [clear: ... pour C] [clear?: ꝑ ſ L a b t i ŋ] + X⨳ n ⊥ y ꝺ o o X ++ q λ [clear: depuis]
+V4: [clear: ... appres? C] Δ‡ h3 o ++ c X⨳ oto x x ꝸ Ⱡ x m y λ g g 20 y b ꝫ
+V5: T ◇ c p ıı ro ſ q {r|ꝛ} λ + ɱ {14|1 4} ꝯm f [clear: Je ...]
+#
+# Readings (manual; R5 checked by the shuffle control in shuffle_control.py):
+#   R5  g ∂ o– Ⱡ ſ+ 20 8 ++ π ⊥ = de a b so l u t i o n -&gt; &quot;... de absolution&quot; (read in part, confirmed)
+#   R6  oo+ = le Roy (f. 111 col. 1); f++ = qu&#x27;il. The rest of R6 does not read.
+#   R3-R4 &quot;absolusion&quot; across the line break: candidate only. Tomokiyo&#x27;s &quot;conversion&quot; (R3) needs q = c; key gives q = te.
+#   f. 88v: 116 units transcribed, no reading under key no. 60 (contributor&#x27;s tests with keys 60, 65, 66, 76).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/revol1593/texts/f88_decode60.txt">f88_decode60.txt</a></p><pre># Output of `python decode60.py f88/ct_3985_f88.txt` (key no. 60 as corrected from issue #32), saved 22 Oct 2026.
+# Token-by-token decoder output, NOT a reading: ?tag = sign not in the table, [d]/[..] = Roman-numeral codes, · = null.
+# f. 88r-v (21 Aug 1593). Manual readings so far (see the transcription header and NOTES): R5 &quot;de absolution&quot; (shuffle-controlled), R6 &quot;le Roy&quot;, &quot;qu&#x27;il&quot;; the rest does not read and f. 88v has no reading.
+R3: [clear: ... a cest effect sur] i de ?ı f [d] d te la te o n s li s u|i o? n Duc de Mantoue? r b ?Ⱡ a u ?ıı
+R4: n a so f ?σ e re ?ꝶ f n [clear: deu... to end of line]
+R5: [clear: ...rant] i ?oꝛ? de a b ?Ⱡ l u t i o n [clear: un ...]
+R6: du ?–Δ ?(m p s du ?{16|ı ?6} Armes le Roy ?{ſ+|4+} a fu f [d] tu to s u|i b so te ?{10|ı ?o} re te x [d] [d] e qu&#x27;il a o s f [d] te ?{30|3 ?o} ?11 o m ?ıı
+V1: [clear: ... marquis de Pisany qui me dit] [clear?: y so ?luy] nostre te f o n t e nostre da a i ?Ⱡ [d] luy ?pı ?v– te n u|i la ?ŋ s ?Δ‡ i s [d] [d] u|i o n ?ϕ i a p t
+V2: o b a f so i ?X⨳ n sa u|i bo u|i d a t i x n qu&#x27;il ?x&#x27; ?X⫻ ?ſ̃ ?{est|e n ?t} o ?ℓ [d] de n te ?ıı so r ?{r|ꝛ} [clear: sachant? ...]
+V3: [clear: ... pour C] [clear?: so m f ?a s ru ?i ?ŋ] nostre ?X⨳ et n s r a a o i te la [clear: depuis]
+V4: [clear: ... appres? C] ?Δ‡ ceulx a i s ?X⨳ y [d] [d] ?ꝸ ?Ⱡ [d] m s la de de u s s ?ꝫ
+V5: n ?◇ s da ?ıı me m te ?{r|ꝛ} la nostre m ?{14|1 ?4} ?ꝯm e [clear: Je ...]</pre></details>
+<h3>BnF fr. 3986 f. 146v, 7 Oct 1593</h3>
+<p>Nevers to Revol, 7 Oct 1593. Tomokiyo&#x27;s anchors (l&#x27;absolution, à la vérité, intérêt) come out of key no. 60, but the text between them does not yet read; decoder output only.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/revol1593/ct_3986_f146v.txt">ct_3986_f146v.txt</a></p><pre># Nevers to Revol, Vese (Vezza?) 7 October 1593, BnF fr. 3986 f. 146v (Gallica btv1b9060631k canvas 287),
+# cipher no. 60, copy. Nine text lines in the block at 0.29-0.46 of page height; lines 2-4 wholly in cipher,
+# lines 1, 5-8 mixed clear/cipher. Transcribed 17 Sept 2026 from the full-resolution IIIF image, deskewed -2.25 deg.
+#
+# REVISED READING GUIDE (17 Sept 2026, second pass at 3.2x): like the interlined Instruction (fr. 3985
+# c. 264-268) and f. 157v, this copy MIXES faded clear cursive with cipher. Several stretches transcribed
+# below as symbol runs are in fact clear French run together (e.g. line 3 middle: &quot;jamais et leur la...&quot;;
+# line 4-5: &quot;sur et pour...&quot;, &quot;Mr L... morgue...&quot;). Re-segment clear vs cipher against the atlas
+# (atlas60.md) before trusting any symbol below that is not one of the anchors.
+# Tags as in key60.txt; [clear: ...] for plaintext words; ? = uncertain glyph; | = quarter boundary in the crops.
+#
+L1: [clear ... lay] oe p~ p w | |- 2 y r A+ | A+‡ p~ E p+ ∂ c g X++ 9 ꝝ
+L2: + g λ 14 ꝑ ſ+ 20 xx ‡ π ⊥ | n pi ∂ .:. ı. yx m | x m 8 s g ll o- q n *** ꝑ 4+b T ɤ | ɤ X++ θ7 ro u r Q+ ꝑ V ıı m
+L3: ꝑ ro ⊥ = ꝑ æ g+ oo y V(inv) | u+ p ıı ⊥ h L++ g p f++ ꝝ ∂ L | ∂ Lx |- ⱶⱶ 3 π ⊥ r n ∂ λ y 3 q | X++ y .|. ſ e c m o ᶻ
+L4: V(inv)+ ro g Lo s ᵘ x x x ∝ ‡ 12 m ᵛ | 2+ T q E c T pi ɤ x | ɤ xxx ı ur 8 4 4 o+ q 2+ v r [clear: Monsieur]
+L5: [clear: De ...] 7 ııı π ıı 20 v ∂ ꝑ X++ T [clear: qui n&#x27;est pourtant ...]
+L6: [clear line; ends &quot;de tout ay peu(?)&quot;]
+L7: [clear: ... afin de ... ]
+L8: ꝑ ꝑ ıı 1 ⱶⱶ &gt; q ∂e n x x iij 14 v ıı ll L4 ꝑ e T
+L9: xx d m 7 X g o F o++ [clear: et estant] G r Q q m ⱶⱶ p L ıı ... 4 ur ıı y f L e T y p y [clear: ... a part ... avec ...]
+#
+# Readings (17 Sept 2026):
+#   L2 λ 14 ꝑ ſ+ 20 xx ‡ π ⊥ = la b so l u t ? o n (‡ is d on the sheet; read i here by context) -&gt; &quot;l&#x27;absolution&quot; (Tomokiyo: &quot;demander l&#x27;absolution&quot;)
+#   L3 ∂ λ y 3 q = a la ve ri te -&gt; &quot;a la verite&quot; (Tomokiyo)
+#   L4 2+ T q E c T = i n te re s n/t -&gt; &quot;interest&quot; (Tomokiyo)
+#   L3 f++ = qu&#x27;il ; L2 4+b = bien ; L2 n = et ; L2 pi = que
+# The rest is transcribed but not yet read; see NOTES.md.
+# Re-tagged 12 Oct 2026 after issue #32 (tunarob): the old tag 4 in &quot;l&#x27;absolution&quot; is the sheet&#x27;s ſ+ (l); the
+# &quot;bien&quot; sign is 4+b (closed 4); the copyist&#x27;s ++ is tagged ⱶⱶ (= u, atlas60.md) because the sheet&#x27;s ++ is i.
+# Other 4 / 2+ tokens were not re-checked on canvas 287 and keep their tags (4 = x, 2+ = u|i).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/revol1593/texts/f146v_decode60.txt">f146v_decode60.txt</a></p><pre># Output of `python decode60.py ct_3986_f146v.txt` (key no. 60 as corrected from issue #32), saved 22 Oct 2026.
+# Token-by-token decoder output, NOT a reading: ?tag = sign not in the table, [d]/[..] = Roman-numeral codes, · = null.
+# f. 146v (7 Oct 1593). Tomokiyo&#x27;s anchors (l&#x27;absolution, a la verite, interest) come out of the table; the text between them does not yet read.
+L1: [clear ?... ?lay] r l da fu nous sa s s ?A+ ?A+‡ l re ?p+ a s de si e ?ꝝ
+L2: nostre de la b so l u t d o n et que a Je ?ı. ?yx m [d] m t n de bon tu te et · so bien n t t si fait me ?u s Mr de Mercure so lo ?ıı m
+L3: so me n d so ?æ gu b s deffaute aussi da ?ıı n ?h y de da qu&#x27;il ?ꝝ a f a ?Lx nous u ri o n s et a la s ri te si s mi m to s m a ?ᶻ
+L4: ?V(inv)+ me de fi n ?ᵘ [d] [d] [d] co d du m ?ᵛ u|i n te re s n que t [d] t [Italiens] ?ı e t x x ?o+ te u|i li s [clear: Monsieur]
+L5: [clear: De ...] p ?ııı o ?ıı u li a so si n [clear: qui n&#x27;est pourtant ...]
+L6: [clear ?line; ?ends ?&quot;de ?tout ?ay ?peu(?)&quot;]
+L7: [clear: ... afin de ... ]
+L8: so so ?ıı n u f te ?∂e et [d] [d] [d] b li ?ıı bon ?L4 so to n
+L9: t be m p o de a Armes ?o++ [clear: et estant] vitoire s so te m u da f ?ıı ?... x e ?ıı s e f to n s da s [clear: ... a part ... avec ...]</pre></details>
+<h3>BnF fr. 3986 f. 157v, Coire, 9 Oct 1593</h3>
+<p>Nevers to Revol from Coire, 9 Oct 1593: about 90 symbols in the first lines of f. 157v; no anchor secured, and the transcription over-reads faded clear cursive as cipher (NOTES). Decoder output only.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/revol1593/ct_3986_f157v.txt">ct_3986_f157v.txt</a></p><pre># Nevers to Revol, Coire 9 October 1593, BnF fr. 3986 f. 157v (Gallica btv1b9060631k canvas 309), cipher no. 60, copy.
+# Four lines at the top of the verso (0.06-0.20 of page height), deskewed -1.5 deg, read at 2.4x on 17 Sept 2026.
+# Tags as in key60.txt; ? = uncertain glyph; | = fifth boundary in the crops G157_n_k.jpg.
+L1: [clear, faint] Cg v ∂ i x 4 ue T | φ x g 4 p j r v m ig E n oo | oo + x v h + 8 m ⱶⱶ q T q u | d m r v a p x u y n b ro L | y ma b lo e
+L2: [clear: ... de ...] p oe v r p a n d w | w&#x27; v i y l A ∝ p r ⱶⱶ y | y x x ⱶⱶ h 24 x o+ ·:· 3 do | do pi r ı o k y A ⱶⱶ q q 2 r | r o u n ſ i g
+L3: [clear] ... ∂ r o w r Cg 2 | 2 ꝛ ꝑ ꝓ ı v ı y | k o ı ı i n w | w&#x27; G d ı o d 20 m ı ı d d ı m p o ıı | ıı b ı y f ꝑ ı ı ı k l ı n v | V r a ſ ı n ı ıı
+L4: [clear: ... Ce que ...] ∂ ı c t u r r 2 | e s l a ı ı r ı ı d 3 p a ıı | ı ı ſ ı m ꝓ ı ı r a ı ı q r ı ı ı h Cg ıı | H c g ıı 12 xx ıı E ∝ y v | v xx q c g l xx
+#
+# Tomokiyo (henryiv2.htm) read &quot;aduis&quot; and &quot;endroit&quot; somewhere in these lines; neither anchor is yet located with
+# certainty in the transcription above. &quot;l xx&quot; at the end of L4 is a Roman numeral (lxx = Vernon) or &quot;l&quot; + t.
+# Status: transcribed, not read. The copyist runs symbols together (ue / ur / ıı / v ligatures) and uses cursive
+# forms that differ from the Court hand of the table; a glyph-level alignment against the crib letters in the
+# same copyist&#x27;s hand (fr. 3986 f. 151, canvases 296-297) is the next step.
+# Re-tagged 12 Oct 2026 after issue #32: copyist ++ -&gt; ⱶⱶ (u). The two 4 tokens of L1 were not re-checked (4 = x).</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/revol1593/texts/f157v_decode60.txt">f157v_decode60.txt</a></p><pre># Output of `python decode60.py ct_3986_f157v.txt` (key no. 60 as corrected from issue #32), saved 22 Oct 2026.
+# Token-by-token decoder output, NOT a reading: ?tag = sign not in the table, [d]/[..] = Roman-numeral codes, · = null.
+# f. 157v (9 Oct 1593). No anchor secured; NOTES warn that this transcription over-reads faded clear cursive as cipher.
+L1: [clear, ?faint] ?Cg li a ?i [d] x e n ca [d] de x da ?j s li m ?ig re et b b nostre [d] li ?h nostre t m u te n te ?u be m s li ?a da [d] ?u s et s me f s ?ma s ?lo to
+L2: [clear: ... de ...] da r li s da ?a et be fu vu li ?i s cu m co da s u s s [d] [d] u ?h ?24 [d] ?o+ ?·:· ri r r que s ?ı a ont s m u te te sa s s a ?u et m ?i de
+L3: [clear] ?... a s a fu s ?Cg sa sa luy so ?ꝓ ?ı li ?ı s ont a ?ı ?ı ?i et fu vu vitoire be ?ı a be u m ?ı ?ı be be ?ı m da a ?ıı ?ıı s ?ı s e so ?ı ?ı ?ı ont cu ?ı et li lo s ?a m ?ı et ?ı ?ıı
+L4: [clear: ... Ce que ...] a ?ı s ru ?u s s sa to n cu ?a ?ı ?ı s ?ı ?ı be ri da ?a ?ıı ?ı ?ı m ?ı m ?ꝓ ?ı ?ı s ?a ?ı ?ı te s ?ı ?ı ?ı ?h ?Cg ?ıı St Pol s de ?ıı du t ?ıı re co s li li t te s de cu t</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/revol1593.json"></figure>
 <!-- replay:end -->

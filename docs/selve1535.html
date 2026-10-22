@@ -50,7 +50,7 @@
 <div class="seal partial" aria-hidden="true"><span>known key</span></div>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-documents-and-the-key">The documents and the key</a><a href="#the-1536-letter">The letter of 5 July 1536</a><a href="#the-1535-letter">The letter of 14 September 1535</a><a href="#method">Method</a><a href="#what-remains">What remains</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-documents-and-the-key">The documents and the key</a><a href="#the-1536-letter">The letter of 5 July 1536</a><a href="#the-1535-letter">The letter of 14 September 1535</a><a href="#method">Method</a><a href="#what-remains">What remains</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout"><strong>Summary.</strong> The catalogue card listed two ciphertexts of Georges de Selve, bishop of Lavaur and French ambassador at Venice, to Francis I, both listed on DECODE as not decrypted and both said to be in BnF fr. 3045. One is: the despatch of 5 July 1536 (fr. 3045 ff. 42&ndash;49). The other, DECODE R3697, is in fr. 3091 (f. 25, 14 September 1535). Satoshi Tomokiyo had reconstructed the key from the 1536 letter and published it as a table, with no plaintext. Applied sign by sign, the table decrypts the 1536 letter directly: 98.5% of its cipher signs fall in French words, giving the Emperor&rsquo;s reasons for going after Marseille, the French galleys in its port under the guns of the hill of La Garde, de Vaulx&rsquo;s advice to send the fleet towards Naples, and the Pope&rsquo;s promise that Charles V would have no clerical tenths from him that year. The King&rsquo;s decipherer glossed four of the runs, and every gloss agrees. The 1535 letter survives only as a soft film scan, and the decipherer ruled through several of its runs. Of its 1,051 non-null signs, 822 (78.2%) fall in French words; most of the rest is under his strike. It shows the Emperor&rsquo;s ambassador at Venice sending a merchant to the French court, under colour of trade, to find out how the King stood with Charles V, and setting a watch on the other road to seize him. The struck runs, a proper name and a few short groups stay open.</div>
 
 <h2 id="the-documents-and-the-key"><span class="num">01</span> The documents and the key</h2>
@@ -98,6 +98,240 @@
 <li>Readings marked (?) in the text above are M or I; everything else is H or C. The sibling fr. 3019 f. 97r (Rodez and Selve, 16 November 1536) carries three short glossed runs in the same cipher, and none of them helps with the open name.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535</h3>
+<p>Georges de Selve, ambassador at Venice, to Francis I: a merchant must go to France by the Swiss road because the Imperial ambassador at Venice suspects him and has had the other road watched; that ambassador had urged him to go to the French court under colour of trade; on the verso a Hungarian matter (Hieronymus, Veszprém) and informants reporting to the Turk. The runs struck through by the King&#x27;s decipherer are read only in part.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R3697_signs.txt">R3697_signs.txt</a></p><pre># R3697 = BnF fr. 3091 f. 25r-v, Selve to Francis I, Venice, 14 Sept 1535. Cipher passages only.
+# One character per cipher sign: a-z = value as read; . = null; ? = not read (unread, or under the decipherer&#x27;s strike
+# and not separable on the film scan). Struck runs (sA, sB, sC1-3, T1-T3) carry contemporary glosses; only signs
+# whose shape agrees with the key are counted as read. Sources: work/f25r_pass2.md, f25r_pass3.md, f25v_pass2.md,
+# f25v_pass3.md. Struck runs are laid out as read letters plus ? for the rest of the agents&#x27; per-strip counts.
+sA   aumar.chant
+sB   ?n??a?sa????ecyprochain????
+r03  passeparlechemindessuis.sescarlaultrene
+r04  luyseroitpasseuracausequelambas.sadeurqui
+r05  est??lapourlempe.reurtostapresquelesus
+r06  dictmar.chantfustar.rivecom.medeslheure
+r07  ?efusadvertymeudeconiecturequilfustvenu
+r08  pourallerenfra.ncea????????????ton.
+r09  ?dele???deluytenirleguetpourleretenirsilpassepa
+r10  mar.chantin??
+r11  ????ambas.saluyavoitdictquilseroitbonquiltro
+r12  u.vastfaconsoubzumbre.demarchandiseoudaultre
+r13  oc.casiondefairesonvoyageenfra.nceetal.lerenvo
+r14  strecourtpourentendreenquelztermesestoient
+r15  vosaf.fairesaveclempe.reuretsilse.faisoitpoint
+r16  quelqueac.cordentre.vous?????
+sC1  ???????????????????????????????????????????????????????
+sC2  sesamisetgran???????????????????????????avoit????
+sC3  ?????????
+T1   ?????????????????????????tretienent
+T2   amiablementpourlachargequiladevesprimdelaguerreenluy????????????
+T3   onfait??????????la??????????contreses??????????????????
+L1   nefailloientpasdadviseretfaireadviserpardaultresdes
+L2   oc.cur.rancesdecasansespecifieraultremententendre
+L3   etlesadvisquilzdonnentautu.rcetquilzluyfontdonner
+L4   parlemarchantsusdict?quandenontquelquefois
+L5   tenuproposcommedeuxdeusscaure.s???????</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R3697.md">READING_R3697.md</a></p><pre># R3697 — Georges de Selve to Francis I, Venice, 14 Sept 1535 (BnF fr. 3091 f. 25r–v, no. 14)
+
+The BnF catalogue dates it &quot;IIIIe de septembre 1535&quot;; DECODE has 14 Sept. Gallica btv1b9060253s views 27 (right
+half = f. 25r) and 28 (left half = f. 25v); the only images are a soft black-and-white film scan.
+Per-sign file: `R3697_signs.txt` (1,076 signs: unstruck cipher 94.9% read, struck runs 40%, whole 79.1%).
+Work files: `work/f25r*.md`, `work/f25v*.md` (three passes each).
+
+Cipher in plain type, clear text in [brackets]; [..] = unread signs; (?) = doubtful. Several cipher runs were ruled
+through by the King&#x27;s decipherer, who wrote the plaintext above or in the margin; those glosses are quoted.
+
+## f. 25r
+
+[Sire, je feis … au] marchant [gloss: &quot;au marchant&quot;], [duquel je vous ay … escript …]
+[… Gueny(?)] ung sansacque cy prochain [….] [gloss: &quot;ung sansacque cy prochain&quot;] (a sanjak-bey near here)
+
+[Il est force, Sire, qu&#x27;il] passe par le chemin des Suisses, car l&#x27;aultre ne luy seroit pas seur, a cause que
+l&#x27;ambassadeur qui est [..] ça(?) pour l&#x27;Empereur, tost apres que le susdict marchant fust arrivé, comme des
+l&#x27;heure [.]e fus adverty, meu de coniecture qu&#x27;il fust venu pour aller en France, a pr[.............] Anthon[e](?)
+de Le[…](?) de luy tenir le guet, pour le retenir s&#x27;il passe par …
+
+[Sire, je vous ay bien adverty par … ledict Gueny(?)] marchant, [a]insi [comme j&#x27;ay faict par plusieurs foys …
+Il luy est party de … que] [....] ambassa[deur] luy avoit dict qu&#x27;il seroit bon qu&#x27;il trouvast façon, soubz
+umbre de marchandise ou d&#x27;aultre occasion, de faire son voyage en France et aller en vostre court, pour entendre
+en quelz termes estoient vos affaires avec l&#x27;Empereur, et s&#x27;il se faisoit point quelque accord entre vous
+[5 signs erased by the writer] …
+
+[struck run, gloss: &quot;Il a consumé ses facultez et la plus part de ses amys […] et grand du T[urc](?)&quot;; beside the
+next line &quot;… Hieronymus&quot;] … ses amis et gran[d] [….] avoit …
+
+## f. 25v
+
+[… me semble que est bonne sorte. Quand depu(is)] [struck: …] (l&#x27;en)tretienent(?) amiablement pour la charge
+qu&#x27;il a de Vesprim de la guerre(?) en luy […] on fait […] la […] contre ses […]
+[margin, contemporary decipherment: &quot;en Hongrie — Hiero[nimo] … — amiablement pour la charge qu&#x27;il a de Vesprym
+de la guerre, en luy on fait s.. fond.. contre ses ad..&quot;]
+
+[… entreprinse cy dessus,] ne failloient pas d&#x27;adviser et faire adviser par d&#x27;aultres des occurrances de ça, sans
+especifier aultrement; entendre, et les advis qu&#x27;ilz donnent au Turc, et qu&#x27;ilz luy font donner par le marchant
+susdict, [a] quand en ont quelquefois tenu propos comme d&#x27;eux deux(?), [vous] sçaurés(?) [.......] [pour
+continuer le propos dudict Duc …]
+
+## English gist
+
+A merchant (Gueny?; a struck run nearby mentions &quot;a sanjak-bey near here&quot;) has to travel to France by the
+Swiss road: the Emperor&#x27;s ambassador at Venice guessed as soon as he arrived that he meant to go to France and
+asked someone — probably Antonio de Leyva, governor of Milan (read &quot;Anthon[e] de Le…&quot;, not secured) — to watch
+the other road and seize him. The same Imperial ambassador had urged the merchant to find a way, under colour of
+trade, to go to the French court and learn how the King stood with the Emperor and whether any agreement was being
+made between them: the merchant was being used as an Imperial informant. On the verso, a man in Hungary
+(Hieronymus; a bishopric of Veszprém) is being kept friendly; and certain persons at Venice kept reporting news
+from here without saying more, and what advice they give the Turk, and have the merchant pass to him.
+
+## Open
+
+- Struck runs (182 signs): the decipherer&#x27;s ruling crosses every sign at the film scan&#x27;s resolution; the glosses give
+  most of the content (externally blocked: a colour image or the original is needed).
+- f. 25r r8–r9, 17 signs around &quot;a pr… Anthon[e] de Le…&quot;: legible in part, not secured; r11 four signs before
+  &quot;ambassa[deur]&quot;; r5 two signs; r7 one sign with no key value; r16 five signs erased by the writer; r9 one blot.
+- f. 25v L5: the last group before the clear text, and &quot;d&#x27;eux deux&quot; vs &quot;d&#x27;eux vous&quot;.</pre></details>
+<h3>R4232, BnF fr. 3045 ff. 42-49, Venice, 5 July 1536</h3>
+<p>Selve to Francis I on the Emperor&#x27;s plan against Marseille (key to the kingdom; master of Provence, a land road Italy-Spain, the Mediterranean; the French galleys trapped in the port under the guns of La Garde), de Vaulx&#x27;s advice to send the fleet towards Naples, La Forest&#x27;s news from the Porte of an open breach with the Emperor, and the Pope&#x27;s refusal of tenths to Charles. Four runs glossed by the King&#x27;s decipherer agree with the reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/R4232_signs.txt">R4232_signs.txt</a></p><pre># R4232 = BnF fr. 3045 ff. 42-49, Selve to Francis I, Venice, 5 July 1536. Cipher passages only.
+# One character per cipher sign: a-z = the sign&#x27;s value as read; . = null; ? = sign not read;
+# N = the day numeral (a figure, not a cipher sign); 6 signs of the name code are written ###### (read from the
+# interlinear gloss &quot;mons^r de Rang..&quot;). Doubtful choices between two values are resolved to the one the French needs.
+# Line labels: view (Gallica btv1b9060156p) and line. Source: work/v84.md ... v94.md and their Resolution sections.
+v84l01 .entresgrand.dangercombienqu
+v84l02 elenombredesassiegeansfust?sans
+v84l03 comparaisonmoindrequeceluyquil
+v84l04 entend.dymeneretcommeainsisoitque
+v84l05 ladictevillesoitprenablecommeilenfaic
+v84l06 tsoncompteestantuneclefdevostre.
+v84l07 royaulmesi?importantecommeellest
+v84l08 cel.luysemblequelavoyantendangier
+v84l09 vousvousvouldrestireraupres
+v84l10 avecvostrepuissancepourlasecou
+v84l11 rir
+v84l12 alleeamarseil
+v84l13 leseracausedeluydonnerloc.casion
+v84l14 ducombat
+v84l15 loing
+v84l16 sanssecourirladictevil.lequilenvi
+v84l17 endraaudessusetlaconquestera
+v84l18 patrondelaprouvenceetneluyrester
+v85l01 oitpasbeaucopagaignerpouravoirle
+v85l02 passaigefrancparterre?ditalieene
+v85l03 spaignecomoditepourluisigrandequil
+v85l04 nelascauroitcherachapteretvouslev
+v85l05 eroitlanavigationdelamermediterr
+v85l06 enelequeluy??asseureroitgennesna
+v85l07 plesetsicille.?
+v85l08 linvit?entaladict
+v85l09 entreprisedemarseil.leluysemble
+v85l10 questantvostrearmeedemerdansle
+v85l11 portdeladictevillequellenelupeultes
+v85l12 chapperaiantarmeedemerpluspuissan
+v85l13 tequiserasuffisantepourlagarder
+v85l14 desortire
+v85l15 porttellemente
+v85l16 xposealabateriedeceulxquiserontas
+v85l17 sisducostedelamontaignedelagar
+v85l18 dequilniauravaisseauquisyp?eus
+v85l19 sesaulve?dedans
+v85l20 monsieurde######.
+v86l01 devaulxes?tousioursdop.pin
+v86l02 ionquepourlasauvetedevozgaleres
+v86l03 demettrehorsvos?trearmedemeret
+v86l04 lenvoyerversnaples
+v86l05 pourroitconservermectant
+v86l06 dessusnombredegensdeguerresu
+v86l07 ffisant
+v88l01 retardatio
+v88l02 naestcauseenvozaf.faireslebru
+v88l03 ictquisestfaictpardelalequelamonad
+v88l04 vissepourraestreamorty
+v88l05 ?dela.forestduNdemay
+v88l08 alexpresserou
+v88l09 pt.uredelaguerredentre.vouset
+v88l10 lempereurs
+v94l06 ?.lepapelavoitasseurequele
+v94l07 mpereurnauroitaucunesdecimes
+v94l08 deluypourceste.anneequelque.
+v94l09 descenteetarmeequebarbarousse
+v94l10 face</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/READING_R4232.md">READING_R4232.md</a></p><pre># R4232 — Georges de Selve to Francis I, Venice, 5 July 1536 (BnF fr. 3045 ff. 42–49, no. 31)
+
+Reading of the cipher passages, in the flow of the letter. Clear text in [brackets], cipher in plain type.
+Per-sign file: `R4232_signs.txt` (1,448 signs; 99.1% of non-null signs read). Line-by-line work: `work/v84.md` …
+`work/v94.md`. Gallica btv1b9060156p views 82–95 (f. 42r = view 82).
+
+Setting: Charles V had invaded Provence (crossing the Var on 25 July 1536); in early July his army was gathering
+in Piedmont and Liguria. Selve reports what is said at Venice of the Emperor&#x27;s plan.
+
+## f. 43v (view 84) – f. 44r (view 85): the Emperor&#x27;s design on Marseille
+
+[…] [ville fut] en tres grand danger, combien que le nombre des assiegeans fust sans comparaison moindre que celuy
+qu&#x27;il entend d&#x27;y mener. Et comme ainsi soit que ladicte ville soit prenable, comme il en faict son compte,
+estant une clef de vostre royaulme si importante comme elle est, ce luy semble que, la voyant en dangier, vous
+vous vouldrez tirer aupres avec vostre puissance pour la secourir. [Tourlucan(?) ainsy que son(?)] allee a Marseille
+sera cause de luy donner l&#x27;occasion du combat [qu&#x27;il desire, pour sortir de ce pays dont il se treuve chargé,
+ou bien le tiendra vostre puissance] loing, sans secourir ladicte ville, qu&#x27;il en viendra au dessus et la
+conquestera, [qui est bien la chose que plus il desire, car elle le feroit] patron de la Prouvence, et ne luy
+resteroit pas beaucop a gaigner pour avoir le passaige franc par terre d&#x27;Italie en Espaigne, comodité pour luy si
+grande qu&#x27;il ne la sçauroit cher achapter; et vous leveroit la navigation de la mer Mediterrenée, lequel luy
+asseureroit Gennes, Naples et Sicille.
+
+[Et quand les predictes raisons que] l&#x27;invitent a ladicte entreprise de Marseille, luy semble qu&#x27;estant vostre
+armee de mer dans le port de ladicte ville, qu&#x27;elle ne luy peult eschapper, aiant armee de mer plus puissante qui
+sera suffisante pour la garder de sortir. [Et estant ledict] port tellement exposé a la baterie de ceulx qui
+seront assis du costé de la montaigne de la Garde, qu&#x27;il n&#x27;y aura vaisseau qui s&#x27;y peusse saulver dedans.
+
+[… au S(ieu)r] monsieur de ⟨name code, glossed &quot;Rang…&quot;: Guido Rangone⟩ [fugitifs(?) …]
+
+## f. 44v (view 86): the galleys
+
+[Sire, ledict S(ieu)r] de Vaulx est tousiours d&#x27;oppinion que pour la sauveté de voz galeres [… two clear lines …]
+de mettre hors vostre armee de mer et l&#x27;envoyer vers Naples. [Ce qui … seullement la vous] pourroit conserver,
+mectant dessus nombre de gens de guerre suffisant.
+
+(Contemporary decipherment in the left margin, word for word the same.)
+
+## f. 45r (view 88): the delay; La Forest; the breach
+
+[…] le retardation n&#x27;a esté cause en voz affaires; le bruict qui s&#x27;est faict par dela, lequel a mon advis se
+pourra estre amorty. [… audict] s(ieu)r(?) de la Forest du [N]ᵉ de may [… sera faict …] a l&#x27;expresse
+rupture de la guerre d&#x27;entre vous et l&#x27;Empereur, [… rupture de guerre …]
+
+(Margin and interlinear decipherments for the first two runs; the third run has none.)
+
+## f. 48r (view 94): the Pope and the tenths
+
+[…] le Pape l&#x27;avoit asseuré que l&#x27;Empereur n&#x27;auroit aucunes decimes de luy pour ceste annee, quelque descente et
+armee que Barbarousse face.
+
+(Contemporary decipherment in the left margin: &quot;Le pape lavoit asseure que lempereur n&#x27;auroit aucunes decymes de
+luy pour a?hanner(?) quelque descente &amp; armee que Barberousse far[a]&quot;; its doubtful word is
+read here as &quot;cest annee&quot;, which the cipher gives).
+
+## English gist
+
+The Emperor means to besiege Marseille, a key to the kingdom, reckoning either that Francis will come to relieve
+it and give him the pitched battle he wants, or will stay away and let it fall; with Marseille he would be master
+of Provence, have a free land route from Italy to Spain, take the Mediterranean from France and secure Genoa,
+Naples and Sicily. With his stronger fleet he expects to bottle up the French galleys in Marseille harbour, which
+guns on the hill of Notre-Dame-de-la-Garde would command. De Vaulx advises sending the French fleet out towards
+Naples with enough soldiers aboard. A rumour about the delay will die down; news from La Forest (the French
+envoy at the Porte) of [N] May bears on an open breach of the peace between Francis and the Emperor. The Pope has
+assured Selve that he will grant the Emperor no clerical tenths this year, whatever landing or fleet Barbarossa
+may bring.
+
+## Open signs
+
+13 single signs (blots, corrections under the ruling, a slip Ƶ, a struck sign) — none alters the sense; the name
+code &quot;/ X ʒ X / X&quot; (6 signs) is read only through the gloss; the day numeral of La Forest&#x27;s letter is copied by the
+glossator unresolved; one crossed sign before &quot;de la Forest&quot; is taken as an abbreviation for &quot;sieur&quot; (probable).</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/selve1535/KEY.md">KEY.md</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/selve1535.json"></figure>
 <!-- replay:end -->

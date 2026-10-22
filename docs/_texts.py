@@ -64,4 +64,5 @@ def texts_problems(folder_path, profile):
 
 def summary_missing(profile):
     """True when no document entry carries a summary of its contents (a nudge, not a refusal)."""
+    if ((profile or {}).get('outcome') or {}).get('texts_withheld'): return False
     return needs_texts(profile) and not any(t.get('summary') for t in ((profile.get('outcome') or {}).get('texts') or []))

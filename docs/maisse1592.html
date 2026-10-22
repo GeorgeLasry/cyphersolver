@@ -53,7 +53,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#leaves">The leaves and the cipher</a><a href="#piece">The pièce numbers, and where they lead</a><a href="#text">What the letters say</a><a href="#lists">A correction to the catalogue</a><a href="#residuals">The keys, and the decipherment of f. 370</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#leaves">The leaves and the cipher</a><a href="#piece">The pièce numbers, and where they lead</a><a href="#text">What the letters say</a><a href="#lists">A correction to the catalogue</a><a href="#residuals">The keys, and the decipherment of f. 370</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Four letters from Henri IV to Andr&eacute; Hurault de Maisse, ambassador at Venice, <span data-term-ok>were catalogued as undeciphered from Satoshi Tomokiyo&rsquo;s page for the reign, where the word means that no contemporary decipherment stands beside them.</span> They are two groups in two ciphers, and this page presents one of them: <strong>ff.&nbsp;370 and 373</strong>, of November 1592, in <em>Maisse&rsquo;s Cipher (1592)</em>, a numerical cipher. (ff.&nbsp;406 and 410, of 1593, mix letter-shaped symbols with figures and have <a href="maisse1593.html">their own page</a>.) Each leaf carries, above its modern foliation, an <strong>old Harlay pi&egrave;ce number</strong>, and Berger de Xivrey cites that number in the <em>Lettres missives</em>, usually with a second reference, <em>&ldquo;Cop. &mdash; Fonds Brienne, Ms.&nbsp;13&rdquo;</em>. Brienne 13 is <strong>BnF NAF 6984</strong>, a clean clerk&rsquo;s copy of this embassy&rsquo;s correspondence for June 1592 to April 1594, and it copies these despatches <strong>in clear, including the passages the originals encipher</strong>. Both were located there and confirmed on the image by heading and by the wording they share with the original&rsquo;s clear preamble. Tomokiyo had also reconstructed the key from the sibling letters and published it <strong>as an image</strong>, which is why it is invisible in a text dump of his page. It decrypts the opening of f.&nbsp;370 <strong>letter for letter as the Brienne copy has it, 81 of 81 characters</strong>, and shows an <strong>omega-shaped sign for <em>d</em> that is not in his table</strong>. <em>Status: the text of both letters is transcribed from the contemporary clear copies; the key is verified on the opening of f.&nbsp;370. The rest of f.&nbsp;370 and f.&nbsp;373 are not transcribed group by group.</em>
 </div>
@@ -171,6 +171,59 @@
 <li>A blind attack on f.&nbsp;370, made before the keys were found, is kept in the repository with its matched control: aligning the transcription against the Brienne text placed 12 groups where a shuffled-cipher control placed a mean of 8.2 (p95 11), which is chance level. It failed for two reasons: the transcription mis-split <em>9 7</em> (c, a) as a single group <em>97</em>, and homophony was assumed for what is a simple substitution.</li>
 </ul>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>f. 370, S. Denis, 3 Nov 1592 (opening only)</h3>
+<p>Henri IV to Maisse, his ambassador at Venice: Cardinal de Gondi has passed near Venice, shortly to be followed by the marquis de Pisany, going to the Pope in the name of the Catholics of the kingdom; the King presses Maisse not to leave his post, and reports that Mayenne has slipped into Paris and found the people weary of the war and against the introduction of the Spaniard. Only the opening is transcribed and deciphered here; the full text is the Brienne 13 clear copy (fol. 102v), not yet transcribed.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/maisse1592/ct370.txt">ct370.txt</a></p><pre># f.370, BnF fr. 16093, Henri IV to Maisse, S. Denis, 3 November 1592.
+# Cipher: Maisse&#x27;s Cipher (1592). Key: Tomokiyo, henryiv_Maisse1.png (&quot;Cipher used in BnF fr.16093 f.317&quot;).
+# Hand transcription from the native 7029x6142 Gallica scan at 4.5-6x.
+# &#x27;w&#x27; = an omega-shaped sign that is not in Tomokiyo&#x27;s table; it resolves as a second sign for d.
+# Groups marked ? are uncertain readings.
+5 11 9 7 16 10 4 12 7 5
+w 11 2 13 12 10 21
+7 19 16 7
+14 7 72 11
+14 16 11 17
+10 11 19 13 19 17
+4 5 21 14 11 19 5 18
+4 7
+7 19 13 4 16
+15 19 11 5 15 19 11
+4 13 19 16 17
+5 11 15 19 11 5
+19 13 19 17
+7 19 16 7
+1 7 4 18</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/maisse1592/texts/f370_decryption.md">f370_decryption.md</a></p><pre># f. 370, decryption of the transcribed opening (ct370.txt)
+
+Saved output of `python decode.py ct370.txt` (run 22 Oct 2026; Tomokiyo&#x27;s key in `key1.tsv`; `[w]` = the omega
+sign, read as d), followed by the Brienne 13 comparison and reading copied verbatim from NOTES.md section 6. Only
+the opening 80 groups of the roughly 630 on the recto are transcribed; the rest of the leaf is not transcribed
+group by group, and its content rests on the Brienne 13 fol. 102v clear copy, which is not transcribed in this
+repository.
+
+```
+lecardinal[w]egondyaurapassepresdeuousilypeultiaauoirquelqueiourslequeluousaurafait
+```
+
+From NOTES.md section 6:
+
+&gt; lecardinaldegondyaurapassepresdeuousilypeultiaauoirquelqueiourslequeluousaurafait
+
+and Brienne 13 fol. 102v, normalised the same way (v-&gt;u, j-&gt;i, spaces dropped), gives
+
+&gt; lecardinaldegondyaurapassepresdeuousilypeultiaauoirquelqueiourslequeluousaurafait
+
+**Identical, 81 of 81 characters.** The decipherment is therefore confirmed against a source independent of
+the key: *&quot;Le Cardinal de Gondy aura passé prés de vous, il y peult ja avoir quelque jours, lequel vous aura
+fait [entendre de mes nouvelles]&quot;*.</pre></details>
+<h3>f. 373, 7 Nov 1592 (not transcribed; images only)</h3>
+<p>Henri IV acknowledges Maisse&#x27;s letter of 4 October and will suspend final judgement until he sees what comes of the Gondi and Pisany missions, appealing to his Catholic friends&#x27; own interest against the ruin brought by the length of the war and the King of Spain&#x27;s efforts. Neither the cipher leaf nor its contemporary clear copy (Brienne 13 fol. 104v) is transcribed in this repository; the links are to the Gallica images.</p>
+<p class="ftext">Transcription: <a href="https://gallica.bnf.fr/ark:/12148/btv1b90074656/f422.item">f422.item</a></p>
+<p class="ftext">Decryption: <a href="https://gallica.bnf.fr/ark:/12148/btv1b100904592/f110.item">f110.item</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/maisse1592.json"></figure>
 <!-- replay:end -->

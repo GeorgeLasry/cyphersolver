@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The record, and what was known about it</a><a href="#cipher">The cipher</a><a href="#method">How the key was recovered</a><a href="#reading">The letter</a><a href="#albert">The sibling: Archduke Albert’s resolution, 15 De</a><a href="#residuals">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#documents">The record, and what was known about it</a><a href="#cipher">The cipher</a><a href="#method">How the key was recovered</a><a href="#reading">The letter</a><a href="#albert">The sibling: Archduke Albert’s resolution, 15 De</a><a href="#residuals">What remains uncertain</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> DECODE R9426 is ten pages of figures in the Bavarian chancery&rsquo;s cipher-key volume, entered with no
 author, no recipient, no place and no language: &ldquo;Ciphered letter of &hellip; to unknown recipient, 1619.&rdquo; Nothing about it
@@ -271,6 +271,879 @@ November&ndash;December 1619 answers to this letter; Hurter&rsquo;s <em>Ferdinan
 <em>Maximilian I</em> iv and Pastor were checked as well. &ldquo;Kurbayern &Auml;u&szlig;eres Archiv 4591&rdquo; is cited
 nowhere in the literature that can be searched.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>R9426, Ferdinand of Bavaria to Maximilian I, Bonn, 22 Dec 1619</h3>
+<p>Ferdinand of Bavaria, Elector of Cologne, writes to his brother Duke Maximilian I of Bavaria about quartering and paying the Catholic League&#x27;s troops in the Rhine-Westphalian circle (Horn, Montfort, Deutz, Lintelo&#x27;s and Herberstorff&#x27;s companies, a year&#x27;s respite for Paderborn), and argues that the common union is needed for the conservation of the Catholic religion. Six weeks after Frederick V&#x27;s coronation in Prague; nomenclator groups apart from 248 = und are open.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/transcription.txt">transcription.txt</a></p><pre># R9426 BayHStA KAA 4591 f.281-286, Ferdinand II to Maximilian I, Wien 22 Dec 1619
+# Format: one manuscript line per row, prefixed P&lt;page&gt;.&lt;line&gt;. Clear text in [ ].
+# Cipher tokens: numbers as written; separators: z = the 7-shaped sign, c = the c/tau-shaped sign; - = line-end hyphen sign (4-shaped).
+P1.01 [Durchleuchtiger Fürst, freundlicher mein hertzliebster]
+P1.02 [herr Schwager, E. L. schreiben vom 10. dits ist]
+P1.03 [mir gestrigen tags woll eingeliefert. Und ob woll]
+P1.04 [ich ... hette, es dannoch] 54 40 50 18 48 50 c 32 18 48 40 z
+P1.05 414 z 122 z 30 z [sich ... gefallen lassen, zu Ihrem]
+P1.06 30 18 30 10 48 34 50 14 32 18 40 c 419 z [kan oder] 38 42 40 52 -
+P1.07 20 60 48 52 c [und an ... orten vernemmen würde]
+P1.08 30 48 10 20 50 14 32 60 20 52 c 32 42 48 40 z [das] 54 76 40 c
+P1.09 18 48 78 64 52 62 c 14 42 38 44 60 30 40 34 18 40 c 58 54 -
+P1.10 60 14 14 42 38 38 66 16 34 18 48 40 c [Do hat doch] 50 42 36 -
+P1.11 14 32 72 50 c 40 34 52 c 58 54 36 10 40 30 18 40 z [wollen]
+P1.12 78 64 18 c 414 z 18 c 419 z 36 c 60 54 50 z 12 18 34 -
+P1.13 30 18 20 54 18 30 52 72 48 z 78 66 36 18 48 38 62 36 52 z
+P1.14 122 c 36 z 412 c 18 48 74 36 72 48 54 40 30 c [nitt]
+P1.15 416 z 38 18 48 18 48 38 z 58 68 54 62 48 40 72 38 38 18 40 z
+P1.16 [Und erfreut mich mein ... under das hat]
+P1.17 248 z 60 30 18 40 52 c 36 34 14 18 40 52 04 60 52 z 38 42 -
+P1.18 48 48 18 50 c [das] 239 c [... das Herr L.]
+P1.19 [... wurde] 60 54 20 c 16 18 40 z [woll] 30 18 36 72 -
+P1.20 30 62 40 18 40 c 30 48 10 34 40 58 18 40 c [zu denen sol-]
+P1.21 [chen nicht] 20 54 48 32 10 12 18 40 16 72 40 z 52 10 48 -
+P1.22 14 72 18 40 z 78 72 48 12 54 40 30 72 40 c 40 34 52 z
+P1.23 50 54 20 20 34 14 04 18 40 52 c [an würde,] [Weil]
+P1.24 [ich mich das darbey erinnert, das beiderseits ...]
+P1.25 20 54 48 40 18 32 38 72 z 44 10 48 52 32 18 34 72 40 c
+P1.26 [zu besagter] 30 48 10 20 50 14 32 60 20 52 z 32 42 48 40 c
+P1.27 [also welches ich ... zu meinem] 416 z 232 c
+P1.28 183 c [gebracht, ...] 34 40 52 18 48 72 50 50 64 48 52 c
+P2.01 32 60 52 52 18 40 c [und] 16 34 18 c 238 z [selbst]
+P2.02 [wegen contentierung etlicher doch] 410 c 54 40 48 34 -
+P2.03 14 32 52 34 30 18 48 c 60 14 52 34 42 40 62 40 z [darauf]
+P2.04 44 48 18 52 62 40 16 34 48 40 c [Und demnach halben, wir]
+P2.05 [auch sonsten wegen des] 50 34 52 54 50 c [ohne] 58 08 52 32 -
+P2.06 54 18 40 c [wolbemelten] 122 z 414 c 60 40 30 48 -
+P2.07 18 34 40 52 58 62 40 16 62 48 c 42 48 52 72 48 c [braucht]
+P2.08 14 60 38 44 60 30 40 34 72 40 z [mit] 78 66 36 c 54 18 48 -
+P2.09 50 64 14 32 18 48 52 z [ein mögen.] [So hab ich dis-]
+P2.10 [falls meine] 54 42 48 34 30 62 z 215 c 414 z [noch-]
+P2.11 [wendig] 54 18 48 10 40 16 18 48 40 z [mit ihm, damit]
+P2.12 [gleichwoll E. L. intention nach müglichkeit secundirt]
+P2.13 [werden möchte. So hab ich heutigs tags] 62 48 -
+P2.14 38 18 36 52 62 38 c 18 48 78 64 52 18 c 414 z [zu mir ...]
+P2.15 [angefangen, dass in meinen] 40 18 30 50 52 c 12 18 34 c
+P2.16 16 18 48 z 50 52 10 52 c 52 z 30 18 36 62 30 72 40 72 40 c
+P2.17 16 42 48 20 18 48 40 c 248 c 20 48 18 34 32 62 34 52 z
+P2.18 16 18 54 52 58 c [nur] 50 62 64 40 18 c 216 c 46 54 10 48 -
+P2.19 52 34 18 48 z 30 18 12 62 40 c [lassen, Und zu solchem end]
+P2.20 [...] 46 54 60 48 52 64 18 48 38 10 34 50 52 18 48 50 c [dem]
+P2.21 [selben] 44 10 48 42 34 14 68 36 10 48 c 42 48 16 40 54 40 30 c
+P2.22 [zu vertheilen,] 419 c 18 48 78 60 48 52 18 40 c [wolle]
+P2.23 [das hinterstand solches werde, wegen] 60 54 50 30 18 -
+P2.24 12 54 40 30 z [der] 48 68 50 52 54 40 30 18 40 c [und]
+P2.25 [anderen gelegenheiten] 16 18 40 c 20 42 48 52 58 54 30 c
+P2.26 [selbigen] 68 66 36 14 74 50 c [wann es anders des] 62 48 -
+P2.27 78 34 52 72 c 72 48 52 48 42 50 52 54 40 30 c 40 10 14 32 -
+P2.28 12 18 48 10 34 52 z 50 18 04 40 c 78 34 48 16 52 z [mit]
+P3.01 78 18 40 34 30 c 12 18 20 60 48 16 72 48 40 c [Weil aber]
+P3.02 [ich] 16 18 40 62 40 c 42 48 52 62 48 40 c 16 10 50 18 36 12 50 52 z
+P3.03 [besagter] 14 42 38 44 60 30 40 34 62 40 z 18 34 40 58 54 46 54 10 48 -
+P3.04 52 64 18 48 40 c [mein] 52 32 54 38 12 z 102 c 248 z 102 c
+P3.05 58 54 z 47 z [Ihr] 54 40 10 18 48 32 62 48 50 14 32 10 20 20 72 40 c
+P3.06 [und] 52 62 48 48 34 52 60 48 66 60 c [habe, dieselbe auch]
+P3.07 34 42 48 z 248 c 40 10 14 32 c 38 34 48 c 18 34 40 36 42 -
+P3.08 30 64 48 54 40 30 c 38 62 64 40 72 50 c 54 66 36 14 74 50 c
+P3.09 [mit auch etlicher massen, das kan] 12 42 40 64 40 14 74 -
+P3.10 32 60 68 50 18 40 z 216 c 40 34 52 78 18 40 34 30 c 12 18 50 14 32 78 62 48 54 z 78 66 -
+P3.11 48 16 18 40 c [So hab ich es mit anderen geschrieben, dass]
+P3.12 [des andertheils zu] 54 18 48 44 20 36 62 30 54 40 30 z 76 12 -
+P3.13 12 72 50 70 30 52 72 48 z 216 z 20 54 48 [nichts] 34 62 16 52 -
+P3.14 78 72 16 62 48 40 z 58 78 18 34 z 74 66 44 20 50 52 54 14 74 32 z
+P3.15 [oder] 58 78 10 64 c 42 48 52 c [wird] 74 76 40 34 30 50 z
+P3.16 16 10 36 18 48 50 c 52 10 30 36 64 14 32 c 54 18 48 50 44 48 -
+P3.17 72 14 32 62 40 c [zulassen. Und wolle zu E. L. ich]
+P3.18 [mich freundlich getrösten, Sie werden, was dariber so]
+P3.19 [ich dissfalls mit] 414 z 16 18 38 c 16 42 14 52 76 48 c
+P3.20 36 18 34 14 74 72 48 [abhandlen und Ihr ... werden]
+P3.21 [zur ... halten. E. L. können gedenken, dass mir]
+P3.22 [obligen will] 38 62 64 40 c 52 32 54 38 12 z 102 c 248 z
+P3.23 36 60 40 16 52 50 52 18 40 16 52 z [auch in] 30 68 18 52 62 38 z
+P3.24 78 34 36 36 18 40 z [und] 16 18 54 66 52 64 42 40 c 58 54 -
+P3.25 18 48 32 60 36 52 72 40 c [Darneben will ich] 18 12 62 40 z 34 40 -
+P3.26 60 48 12 72 34 52 z 12 34 40 c 34 40 c 38 18 64 40 62 38 -
+P3.27 60 36 32 34 18 50 64 30 18 38 z 221 z [ihre] 72 48 52 58 z 232 z
+P3.28 [meinen] 36 60 40 16 52 60 30 c 70 54 50 58 54 52 14 32 48 18 34 -
+P3.29 12 18 40 c 248 z [zu erhalten. Und demnach zu befor-]
+P3.30 [derung des gemeinen wesens und billich daheim]
+P4.01 [zu trachten, dass] 38 62 34 40 18 z 50 52 62 40 16 52 z
+P4.02 40 64 52 c 60 36 04 18 40 34 48 52 z [werden. Ich hab]
+P4.03 [sonsten die verschung gethan, dass] 36 34 40 52 62 36 42 z
+P4.04 14 42 38 44 60 30 40 64 70 c 70 54 14 32 c 68 40 78 18 34 52 z
+P4.05 [nach dem] 50 52 10 52 z 57 c 60 40 z 30 18 36 62 30 18 40 -
+P4.06 72 40 z 66 48 52 18 48 40 c 10 14 14 76 38 38 66 16 34 48 52 z
+P4.07 34 14 32 z 78 64 36 z [auch des] 68 66 40 z 16 18 48 -
+P4.08 40 62 48 50 18 40 c 32 18 48 12 72 48 50 52 76 48 20 z 248 z
+P4.09 60 40 16 18 48 72 48 z 78 18 48 12 68 40 30 62 40 z [so]
+P4.10 [E. L.] 16 34 18 50 62 48 z 62 40 52 50 c 20 54 48 58 54 -
+P4.11 40 18 38 38 62 40 z [allerhand] 54 18 48 66 48 16 40 18 52 -
+P4.12 30 18 48 40 z 60 36 36 18 40 z 38 54 30 36 64 14 32 72 -
+P4.13 20 54 48 50 14 32 68 12 z 52 32 54 18 40 c [und] 16 10 48 -
+P4.14 70 40 c 40 34 14 32 52 50 c 62 48 78 64 40 16 18 40 [lassen]
+P4.15 [Weil aber] 38 62 64 40 18 38 z 221 [ihre] 18 48 52 58 z 232 z
+P4.16 248 c 136 c 258 c 60 64 14 32 z 232 c 44 10 16 18 48 -
+P4.17 16 62 48 12 42 48 40 c [wegen des mangels aber] 32 10 -
+P4.18 12 18 40 z 34 60 32 48 50 z 20 48 64 50 52 z 68 40 16 18 -
+P4.19 32 70 36 52 18 40 z 248 c 16 10 50 18 36 12 50 52 z 30 18 78 42 -
+P4.20 48 12 40 62 40 z 74 48 34 18 30 50 68 66 36 14 74 50 c
+P4.21 [auch allbereit] 30 72 78 34 36 36 64 30 52 z 248 z 18 -
+P4.22 68 66 48 52 50 72 52 58 54 40 30 c [den] 30 18 30 10 64 40 -
+P4.23 62 48 z 50 60 14 32 72 40 z [ferners] 18 48 78 60 48 52 -
+P4.24 72 40 16 72 48 z 14 42 40 52 48 34 12 68 52 34 42 40 18 -
+P4.25 [weiters] 18 34 40 36 18 30 72 48 54 40 30 c 248 z 38 68 -
+P4.26 52 62 48 44 36 10 52 58 z 40 34 52 z 60 40 58 54 38 68 -
+P4.27 52 62 40 z [So kan ich dann E. L. wegen der ...]
+P4.28 60 36 36 18 40 z 58 42 10 16 18 48 12 48 34 40 30 62 40 50 c
+P4.29 74 62 34 40 72 z 30 18 78 64 50 18 z 54 18 48 52 -
+P4.30 48 06 50 52 54 40 30 z 52 32 68 18 40 z 16 18 50 78 18 -
+P4.31 30 62 40 z [Ich thue auch von diesem wolmeinentlich]
+P5.01 [... erinnert, bei] 54 40 50 18 48 50 z 50 14 32 78 10 30 18 48 40 -
+P5.02 213 z 414 c 36 z 60 40 50 54 14 32 68 40 30 z 58 54 52 32 -
+P5.03 68 18 40 z [dass in derselben] 62 64 40 38 10 12 62 40 16 72 40 -
+P5.04 142 z [ihre] 46 54 10 48 52 34 48 40 z [andere E. L.] 20 54 48 32 10 -
+P5.05 12 72 40 16 62 z 78 18 48 12 68 40 30 18 40 z 20 68 48 30 18 -
+P5.06 40 60 38 38 72 40 c [werden möchten. Ich will gleich-]
+P5.07 [woll nit underlassen zu befürderung E. L. intention]
+P5.08 38 18 34 40 c 62 54 50 50 62 48 34 50 52 c 60 40 58 54 78 -
+P5.09 18 40 16 18 40 z [Und werden E. L. sich nit zu wundern sein]
+P5.10 [lassen, dass es des] 52 10 30 36 34 14 32 18 40 z 68 40 16 18 -
+P5.11 48 32 60 36 52 50 z [wegen des] 54 60 40 c 18 48 78 34 52 18 -
+P5.12 216 z 30 36 18 34 14 32 z [erhalten und zu dem end]
+P5.13 54 18 48 42 48 16 40 54 40 30 c 32 18 48 60 12 30 72 50 14 32 -
+P5.14 32 72 40 z 30 c
+P5.15 [Wessen sich aber des Hertzogs ... auf die zu] 38 72 34 -
+P5.16 40 18 48 z 72 48 52 58 z 248 c 232 z 54 62 48 50 34 14 32 18 -
+P5.17 48 68 40 30 c [durch meinen Doctor] 248 c 60 30 18 40 52 18 c
+P5.18 [abgelegte werbung erklert, was auch beineben]
+P5.19 58 78 34 50 14 32 62 40 c 239 z 248 z 18 48 38 62 36 52 72 40 -
+P5.20 38 18 34 40 18 40 c [für discurses gehalten, solches haben]
+P5.21 [E. L. beinebens mit mehrerm zuvernemmen. Wie]
+P5.22 [ich mich nun darbey] 30 18 50 34 14 32 62 48 52 z 32 60 52 -
+P5.23 52 62 40 z 38 54 30 18 z [mag die] 58 18 34 52 z 18 48 30 62 -
+P5.24 48 72 40 z [Und werde ich mit zuvoriger] 38 18 34 40 z
+P5.25 68 66 36 14 74 z 38 64 52 z 18 32 34 50 52 18 38 c 20 42 48 -
+P5.26 58 34 18 32 72 40 [lassen. Wie ich dann meines] 38 60 48 -
+P5.27 50 14 32 60 36 14 74 50 c [des] 54 66 40 z 16 18 48 z 32 70 -
+P5.28 54 18 36 34 14 32 c [dann ich zu der] 38 68 52 18 48 54 40 30 -
+P5.29 34 40 c 258 c [und beförderung] 16 18 50 z 20 42 48 52 -
+P6.01 58 54 30 50 z [selbigen] 54 42 36 14 74 50 z 16 10 50 18 36 -
+P6.02 12 50 52 z 68 18 48 36 60 50 50 18 40 c [allhie mit ersten]
+P6.03 [wiederumb ... und alsdann] 16 60 50 z 414 c
+P6.04 54 66 36 14 74 52 c [in] 38 18 34 40 18 38 z 54 50 14 32 18 40 c
+P6.05 221 z 18 48 52 58 z 232 c 416 c 30 54 14 32 z 58 54 -
+P6.06 30 36 18 64 14 32 c 20 42 48 52 58 34 18 32 62 40 c 58 54 -
+P6.07 36 60 50 50 18 40 c 12 72 16 10 14 32 52 z [wegen auch]
+P6.08 18 48 78 64 52 18 c [under dessen] 38 34 52 c 50 64 64 40 -
+P6.09 62 40 c 216 z 20 18 48 52 64 30 c [sein könte,] 38 66 14 -
+P6.10 32 52 72 c 62 48 z [mit dem] 70 40 16 18 48 40 z 20 42 48 -
+P6.11 52 58 34 18 32 72 40 c [Wie ich das solches] 47 z
+P6.12 419 c 415 c 36 z [der] 46 68 10 48 52 64 18 48 40 [halben] 60 40 20 54 18 30 62 40 [lassen.]
+P6.13 [Sonsten bin ich mit E. L. gänzlich einig, dass] 221 z 248 z
+P6.14 122 z 414 c 36 z [wegen] 14 42 40 50 18 48 54 10 -
+P6.15 52 34 66 40 c 34 48 18 50 c 154 z 248 c 14 42 40 -
+P6.16 50 72 46 68 18 40 52 62 48 c 60 36 36 18 48 c 78 66 36 -
+P6.17 20 70 48 52 z 16 64 50 c 78 18 48 14 74 z 12 64 36 36 -
+P6.18 64 14 32 z [mit mehrerm] 72 64 20 62 48 z 248 c 18 48 -
+P6.19 40 50 52 z [als] 60 40 16 18 48 72 z 14 10 52 42 36 64 -
+P6.20 50 14 32 62 c [zu] 14 42 38 44 48 18 32 62 40 16 34 48 -
+P6.21 [welches das] 38 18 64 40 18 38 z 60 30 18 40 52 18 -
+P6.22 38 60 48 48 18 42 z [in denen ihme ertheilten Memorialibus]
+P6.23 [hier und mich] 78 66 36 z 34 40 14 54 36 -
+P6.24 14 64 48 52 z [Ich bin auch der meinung, dass]
+P6.25 [solches so woll gegen] 414 c 160 z [als] 165 c 34 40 z
+P6.26 225 z [und] 122 z 414 c 36 z [also] 58 54 12 18 -
+P6.27 32 60 48 48 64 40 z [seine ...] [Was aber]
+P6.28 [ferner] 30 48 54 40 16 52 z 48 z 18 14 32 52 z 18 34 40 -
+P8.01 30 62 50 72 52 62 40 c [meinet, so] 50 14 32 18 34 40 52 z
+P8.02 62 50 c 58 78 10 48 c [was dass] 416 c 154 z 200 c 48 18 -
+P8.03 44 48 34 38 64 48 52 z [und] 60 68 50 30 18 54 66 36 30 18 52 z
+P8.04 44 36 62 64 12 18 40 [und dem] 30 18 30 62 40 52 32 18 34 36 40 z
+P8.05 38 66 14 32 52 z [mit] 50 66 36 14 32 18 38 z 60 40 50 62 -
+P8.06 32 18 40 36 64 14 32 72 40 z 58 68 62 50 10 52 58 c 30 18 -
+P8.07 50 52 72 48 14 74 52 z [der] 14 60 52 32 60 36 64 50 14 32 18 40 z
+P8.08 38 10 14 32 52 z 10 12 18 48 c [fügungen daher salt] 30 18 -
+P8.09 48 64 40 30 62 48 52 z [werden sollen, dass] 16 18 40 z
+P8.10 14 10 52 76 36 34 50 14 32 18 40 c 64 40 50 c 30 18 38 18 34 -
+P8.11 40 c 248 c [ohne underschied geringer] 58 18 34 52 z 54 -
+P8.12 12 48 34 30 c 50 18 34 40 c [wirdet,] 50 64 14 32 z [das] 60 40 -
+P8.13 16 18 48 40 z 52 32 18 34 36 50 c 62 64 40 20 60 36 c
+P8.14 30 78 10 36 52 z 248 c 12 18 52 48 70 40 30 40 54 50 c [zu]
+P8.15 62 40 52 78 18 48 18 40 c [Ich vermeine, das die]
+P8.16 50 18 38 62 34 40 72 z 58 54 50 60 38 18 40 50 18 52 58 68 40 30 c
+P8.17 [zu] 14 42 40 50 62 48 54 10 52 c 64 66 40 c 54 40 50 18 48 c
+P8.18 248 z [in kurzer zeit] 54 40 50 18 48 z 14 10 42 66 36 64 50 -
+P8.19 14 32 18 48 c 48 64 36 34 30 64 76 40 c [und] 50 18 62 36 72 40 -
+P8.20 c 50 18 36 34 30 74 72 34 52 c [darab bei der] 44 66 50 -
+P8.21 52 18 48 64 52 62 52 c [bis dahin hier nötig erachtet]
+P8.22 [werden, Ich vernimme gleichwoll] 66 68 50 c 38 18 64 -
+P8.23 40 18 50 c 60 30 18 40 52 18 40 c 48 18 36 10 52 34 42 40 c
+P8.24 [das mag] 419 z 58 68 z 33 z 48 18 50 66 36 54 64 48 54 z
+P8.25 50 18 34 c 16 10 50 c 72 54 50 18 48 34 50 52 c 60 40 -
+P8.26 58 54 78 18 40 16 18 40 c [zu dem ...] 52 10 30 36 34 14 32 50 z
+P8.27 16 34 18 z 215 z [nes] 60 68 50 c 225 z 18 48 78 60 48 52 72 52 z
+P8.28 [Aber] 78 66 36 z 58 54 12 18 50 66 48 30 62 40 z 38 60 40 z
+P9.01 [mochte, so seien] 78 18 48 12 54 40 30 18 40 z 20 54 48 z [der]
+P9.02 20 48 54 18 36 62 40 30 c 40 54 40 c 60 54 20 74 42 38 z
+P9.03 58 18 40 [Mit ... E. L. ... des] 414 c
+P9.04 34 48 18 38 z 146 c 60 36 18 56 10 40 16 48 42 z [des] 16 38 c
+P9.05 30 48 60 20 52 c [commun particulariteten deren vernemmen.]
+P9.06 [Was E. L. wegen des] 49 z 50 14 32 48 18 34 12 18 40 50 c
+P9.07 60 32 40 c 51 z [darneben, solches hab ich ebenmessig]
+P9.08 [in achtung genommen, Und darinnen kein anderes]
+P9.09 [beschluss machen können, Als dass] 417 c 18 50 c 49 z
+P9.10 52 32 18 34 36 50 c [erben] 62 48 36 10 40 30 54 40 30 c
+P9.11 [dem] 60 40 50 18 32 62 40 36 34 14 32 18 48 c 74 42 40 34 30 -
+P9.12 [Erzig.] 248 z 36 10 40 16 18 40 c 20 42 48 52 c [und]
+P9.13 60 68 50 52 34 36 30 68 40 30 c 16 18 48 c 14 10 52 42 36 34 -
+P9.14 50 14 32 18 40 z 48 72 36 64 30 34 42 40 z 58 58 52 32 54 40 -</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/reading.txt">reading.txt</a></p><pre>P1.01 [Durchleuchtiger Fürst, freundlicher mein hertzliebster]
+P1.02 [herr Schwager, E. L. schreiben vom 10. dits ist]
+P1.03 [mir gestrigen tags woll eingeliefert. Und ob woll]
+P1.04 [ich ... hette, es dannoch] unsers hern
+P1.05 &lt;414&gt; &lt;122&gt; &lt;30&gt; [sich ... gefallen lassen, zu Ihrem]
+P1.06 gegarischen &lt;419&gt; [kan oder]
+P1.07 MONTFART [und an ... orten vernemmen würde]
+P1.08 GRAFSCHAFT horn [das] uon
+P1.09 ERWITE compagnien
+P1.10 zuaccommodiern [Do hat doch]
+P1.11 solches nit zulangen [wollen]
+P1.12 wie &lt;414&gt; &lt;18&gt; &lt;419&gt; &lt;36&gt; aus
+P1.13 beigefuegter wolermelt
+P1.14 &lt;122&gt; &lt;36&gt; &lt;412&gt; erklerung [nitt]
+P1.15 &lt;416&gt; MERERM zuuernemmen
+P1.16 [Und erfreut mich mein ... under das hat]
+P1.17 &lt;248&gt; agent licentiat
+P1.18 MORRES [das] &lt;239&gt; [... das Herr L.]
+P1.19 [... wurde] AUF den [woll]
+P1.20 gelegenen GRAINZEN [zu denen sol-]
+P1.21 [chen nicht] furhabenden
+P1.22 TARCEEN werbungen nit
+P1.23 sufficient [an würde,] [Weil]
+P1.24 [ich mich das darbey erinnert, das beiderseits ...]
+P1.25 furnehme partheien
+P1.26 [zu besagter] GRAFSCHAFT horn
+P1.27 [also welches ich ... zu meinem] &lt;416&gt; &lt;232&gt;
+P1.28 &lt;183&gt; [gebracht, ...] interessirt
+P2.01 hatten [und] die &lt;238&gt; [selbst]
+P2.02 [wegen contentierung etlicher doch] &lt;410&gt;
+P2.03 unrichtiger actionen [darauf]
+P2.04 pretendirn [Und demnach halben, wir]
+P2.05 [auch sonsten wegen des] situs [ohne]
+P2.06 zuthuen [wolbemelten] &lt;122&gt; &lt;414&gt;
+P2.07 angreintzender orter [braucht]
+P2.08 campagnien [mit] wol
+P2.09 uersichert [ein mögen.] [So hab ich dis-]
+P2.10 [falls meine] uorige &lt;215&gt; &lt;414&gt; [noch-]
+P2.11 [wendig] uerandern [mit ihm, damit]
+P2.12 [gleichwoll E. L. intention nach müglichkeit secundirt]
+P2.13 [werden möchte. So hab ich heutigs tags]
+P2.14 ermeltem ERWITE &lt;414&gt; [zu mir ...]
+P2.15 [angefangen, dass in meinen] negst bei
+P2.16 der stat &lt;52&gt; gelegenen
+P2.17 DORFERN &lt;248&gt; freiheit
+P2.18 deutz [nur] seine &lt;216&gt;
+P2.19 quartier geben [lassen, Und zu solchem end]
+P2.20 [...] quartiermaisters [dem]
+P2.21 [selben] PAROICULAR ordnung
+P2.22 [zu vertheilen,] &lt;419&gt; erwarten [wolle]
+P2.23 [das hinterstand solches werde, wegen]
+P2.24 ausgebung [der] rustungen [und]
+P2.25 [anderen gelegenheiten] den fortzug
+P2.26 [selbigen] uolcks [wann es anders des]
+P2.27 ERWITE ertrostung
+P2.28 nachberait sein wirdt [mit]
+P3.01 wenig befardern [Weil aber]
+P3.02 [ich] denen ortern daselbst
+P3.03 [besagter] compagnien
+P3.04 EINZUQUARTIERN [mein] thumb &lt;102&gt; &lt;248&gt; &lt;102&gt;
+P3.05 zu &lt;47&gt; [Ihr] unaerherschaffen
+P3.06 [und] TERRITAROA [habe, dieselbe auch]
+P3.07 ior &lt;248&gt; nach mir
+P3.08 EINLOGIRUNG meines uolcks
+P3.09 [mit auch etlicher massen, das kan]
+P3.10 boninckhausen &lt;216&gt; NITWENIG beschweru
+P3.11 worden [So hab ich es mit anderen geschrieben, dass]
+P3.12 [des andertheils zu] uerpflegung
+P3.13 obbesagter &lt;216&gt; fur [nichts]
+P3.14 iedtwedern zwei KOPFSTUCKH
+P3.15 [oder] ZWAI ort [wird] konigs
+P3.16 dalers taglich
+P3.17 uersprechen [zulassen. Und wolle zu E. L. ich]
+P3.18 [mich freundlich getrösten, Sie werden, was dariber so]
+P3.19 [ich dissfalls mit] &lt;414&gt; dem doctor
+P3.20 leicker [abhandlen und Ihr ... werden]
+P3.21 [zur ... halten. E. L. können gedenken, dass mir]
+P3.22 [obligen will] mein thumb &lt;102&gt; &lt;248&gt;
+P3.23 landtstendt [auch in] guetem
+P3.24 willen [und] deuotion
+P3.25 zuerhalten [Darneben will ich] eben
+P3.26 inarbeit bin in
+P3.27 meinemalhiesigem &lt;221&gt; [ihre] ertz &lt;232&gt;
+P3.28 [meinen] landtag
+P3.29 auszutchreiben &lt;248&gt; [zu erhalten. Und demnach zu befor-]
+P3.30 [derung des gemeinen wesens und billich daheim]
+P4.01 [zu trachten, dass] meine stendt
+P4.02 nit alienirt [werden. Ich hab]
+P4.03 [sonsten die verschung gethan, dass] LINTELO
+P4.04 compagnia auch unweit
+P4.05 [nach dem] stat &lt;57&gt; an
+P4.06 gelegenen ortern accommodirt
+P4.07 ich wil [auch des] uon
+P4.08 DERNERSEN HERBERSTORF &lt;248&gt;
+P4.09 anderer werbungen [so]
+P4.10 [E. L.] dieser ents
+P4.11 furzunemmen [allerhand]
+P4.12 uerordnetgern allen
+P4.13 MUGLICHEFURSCHUB thuen [und]
+P4.14 daran nichts erwinden [lassen]
+P4.15 [Weil aber] meinem &lt;221&gt; [ihre] ertz &lt;232&gt;
+P4.16 &lt;248&gt; &lt;136&gt; &lt;258&gt; aich &lt;232&gt;
+P4.17 paderderborn [wegen des mangels aber]
+P4.18 haben iahrs frist
+P4.19 undehalten &lt;248&gt; daselbst
+P4.20 geworbnen kriegsuolcks
+P4.21 [auch allbereit] gewilligt &lt;248&gt;
+P4.22 euortsetzung [den]
+P4.23 GEGAINER sachen [ferners]
+P4.24 erwartender
+P4.25 contributione [weiters] einlegerung &lt;248&gt;
+P4.26 muterplatz nit
+P4.27 anzumuten [So kan ich dann E. L. wegen der ...]
+P4.28 allen zoaderbringens
+P4.29 keine gewise
+P4.30 uertrostung thuen
+P4.31 deswegen [Ich thue auch von diesem wolmeinentlich]
+P5.01 [... erinnert, bei] unsers
+P5.02 &lt;50.14.32.78.10.30.18.48.40.213&gt; &lt;414&gt; &lt;36&gt; ansuchung
+P5.03 zuthuen [dass in derselben]
+P5.04 &lt;62.64.40.38.10.12.62.40.16.72.40.142&gt; [ihre] quartirn [andere E. L.]
+P5.05 furhabende werbungen
+P5.06 furgenammen [werden möchten. Ich will gleich-]
+P5.07 [woll nit underlassen zu befürderung E. L. intention]
+P5.08 mein eusserist
+P5.09 anzuwenden [Und werden E. L. sich nit zu wundern sein]
+P5.10 [lassen, dass es des] taglichen
+P5.11 underhalts [wegen des] uan
+P5.12 &lt;18.48.78.34.52.18.216&gt; gleich [erhalten und zu dem end]
+P5.13 uerordnung
+P5.14 herabgeschhen &lt;30&gt;
+P5.15 [Wessen sich aber des Hertzogs ... auf die zu]
+P5.16 meiner ertz &lt;248&gt; &lt;232&gt;
+P5.17 uersicherung [durch meinen Doctor] &lt;248&gt; agente
+P5.18 [abgelegte werbung erklert, was auch beineben]
+P5.19 zwischen &lt;239&gt; &lt;248&gt;
+P5.20 ermeltenmeinen [für discurses gehalten, solches haben]
+P5.21 [E. L. beinebens mit mehrerm zuvernemmen. Wie]
+P5.22 [ich mich nun darbey] gesichert
+P5.23 hatten muge [mag die] zeit
+P5.24 ergeren [Und werde ich mit zuvoriger] mein
+P5.25 uolck mit ehistem
+P5.26 forziehen [lassen. Wie ich dann meines]
+P5.27 marschalcks [des] uon der
+P5.28 hauelich [dann ich zu der]
+P5.29 muterungin &lt;258&gt; [und beförderung] des
+P6.01 fortzugs [selbigen] uolcks
+P6.02 daselbst uerlassen [allhie mit ersten]
+P6.03 [wiederumb ... und alsdann] das &lt;414&gt;
+P6.04 uolckt [in] meinem uschen
+P6.05 &lt;221&gt; ertz &lt;232&gt; &lt;416&gt; guch
+P6.06 zugleich fortziehen
+P6.07 zulassen bedacht [wegen auch]
+P6.08 ERWITE [under dessen] mit
+P6.09 SIINEN &lt;216&gt; fertig [sein könte,]
+P6.10 mochte er [mit dem] andern
+P6.11 fortziehen [Wie ich das solches] &lt;47&gt;
+P6.12 &lt;419&gt; &lt;415&gt; &lt;36&gt; [der] quartiern [halben] anfuegen [lassen.]
+P6.13 [Sonsten bin ich mit E. L. gänzlich einig, dass] &lt;221&gt; &lt;248&gt;
+P6.14 &lt;122&gt; &lt;414&gt; &lt;36&gt; [wegen]
+P6.15 conseruation ires &lt;154&gt; &lt;248&gt;
+P6.16 consequenter aller
+P6.17 wolfart dis werck
+P6.18 billich [mit mehrerm] eifer &lt;248&gt;
+P6.19 ernst [als] andere
+P6.20 catolische [zu]
+P6.21 comprehendir [welches das] meinem
+P6.22 AGENTEMARREO [in denen ihme ertheilten Memorialibus]
+P6.23 [hier und mich] wol
+P6.24 inculcirt [Ich bin auch der meinung, dass]
+P6.25 [solches so woll gegen] &lt;414&gt; &lt;160&gt; [als] &lt;165&gt; in
+P6.26 &lt;225&gt; [und] &lt;122&gt; &lt;414&gt; &lt;36&gt; [also]
+P6.27 zubeharrin [seine ...] [Was aber]
+P6.28 [ferner] grundt &lt;48&gt; echt
+P8.01 eingeseten [meinet, so] scheint
+P8.02 es zwar [was dass] &lt;416&gt; &lt;154&gt; &lt;200&gt;
+P8.03 reprimirt [und] ausgeuolget
+P8.04 pleiben [und dem] gegentheiln
+P8.05 mocht [mit] solchem
+P8.06 ansehenlichen ZUESATZ
+P8.07 gesterckt [der] cathalischen
+P8.08 macht aber [fügungen daher salt]
+P8.09 geringert [werden sollen, dass] den
+P8.10 catolischen ins
+P8.11 gemein &lt;248&gt; [ohne underschied geringer] zeit
+P8.12 ubrig sein [wirdet,] sich [das]
+P8.13 andern theils einfal
+P8.14 gwalt &lt;248&gt; betrangnus [zu]
+P8.15 entweren [Ich vermeine, das die]
+P8.16 semeine zusamensetzung
+P8.17 [zu] conseruat ION unser
+P8.18 &lt;248&gt; [in kurzer zeit] unser
+P8.19 caoolischer riligion [und]
+P8.20 seelen seligkeit [darab bei der]
+P8.21 posteritet [bis dahin hier nötig erachtet]
+P8.22 [werden, Ich vernimme gleichwoll] ous
+P8.23 meines agenten relation
+P8.24 [das mag] &lt;419&gt; zu &lt;33&gt; resoluiru
+P8.25 SEI das euserist
+P8.26 anzuwenden [zu dem ...] taglichs
+P8.27 die &lt;215&gt; [nes] aus &lt;225&gt; erwartet
+P8.28 [Aber] wol zubesorgen man
+P9.01 [mochte, so seien] werbungen fur [der]
+P9.02 frueleng nun AUFKOM
+P9.03 zen [Mit ... E. L. ... des] &lt;414&gt;
+P9.04 irem &lt;146&gt; alexandro [des] dm
+P9.05 GRAFT [commun particulariteten deren vernemmen.]
+P9.06 [Was E. L. wegen des] &lt;49&gt; schreibens
+P9.07 ahn &lt;51&gt; [darneben, solches hab ich ebenmessig]
+P9.08 [in achtung genommen, Und darinnen kein anderes]
+P9.09 [beschluss machen können, Als dass] &lt;417&gt; es &lt;49&gt;
+P9.10 theils [erben] erlangung
+P9.11 [dem] ansehenlicher
+P9.12 konig [Erzig.] &lt;248&gt; landen fort [und]
+P9.13 austilgung der
+P9.14 catolischen religion
+
+--- 32 of 352 cipher words flagged ---
+P1.07 38.42.40.52.20.60.48.52 montfart -3.25
+P1.08 30.48.10.20.50.14.32.60.20.52 grafschaft -3.49
+P1.09 18.48.78.64.52.62 erwite -5.02
+P1.15 38.18.48.18.48.38 mererm -3.57
+P1.18 38.42.48.48.18.50 morres -3.69
+P1.19 60.54.20 auf -4.97
+P1.20 30.48.10.34.40.58.18.40 grainzen -4.58
+P1.22 52.10.48.14.72.18.40 tarceen -6.19
+P1.26 30.48.10.20.50.14.32.60.20.52 grafschaft -3.49
+P2.14 18.48.78.64.52.18 erwite -5.02
+P2.17 16.42.48.20.18.48.40 dorfern -3.5
+P2.21 44.10.48.42.34.14.68.36.10.48 paroicular -3.56
+P2.27 62.48.78.34.52.72 erwite -5.02
+P3.04 18.34.40.58.54.46.54.10.48.52.64.18.48.40 einzuquartiern -4.04
+P3.06 52.62.48.48.34.52.60.48.66.60 territaroa -4.92
+P3.08 18.34.40.36.42.30.64.48.54.40.30 einlogirung -3.86
+P3.10 40.34.52.78.18.40.34.30 nitwenig -4.51
+P3.14 74.66.44.20.50.52.54.14.74.32 kopfstuckh -4.7
+P3.15 58.78.10.64 zwai -6.23
+P4.03 36.34.40.52.62.36.42 lintelo -4.12
+P4.08 16.18.48.40.62.48.50.18.40 dernersen -3.99
+P4.08 32.18.48.12.72.48.50.52.76.48.20 herberstorf -3.36
+P4.13 38.54.30.36.64.14.32.72.20.54.48.50.14.32.68.12 muglichefurschub -3.41
+P4.23 30.18.30.10.64.40.62.48 gegainer -4.09
+P6.08 18.48.78.64.52.18 erwite -5.02
+P6.09 50.64.64.40.62.40 siinen -3.33
+P6.22 60.30.18.40.52.18.38.60.48.48.18.42 agentemarreo -4.82
+P8.06 58.68.62.50.10.52.58 zuesatz -3.84
+P8.17 64.66.40 ion -3.53
+P8.25 50.18.34 sei -5.5
+P9.02 60.54.20.74.42.38 aufkom -10.13
+P9.05 30.48.60.20.52 graft -4.15</pre></details>
+<h3>R9425, Archduke Albert&#x27;s resolution for Licentiate Morreus, 15 Dec 1619</h3>
+<p>Archduke Albert&#x27;s written resolution for the League agent Licentiate Morreus: he agrees on the recovery of the kingdom of Bohemia, has done good offices with the Emperor and the King of Spain, will send troops on foot if needed but cannot grant the muster place, the regiment of foot and the 500 horse, and refers the 1000 cuirassiers to Ambrogio Spinola. Read with the R9426 key unchanged.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/transcription.txt">transcription.txt</a></p><pre># R9425 BayHStA KAA 4591 ff. 278-280, 1619 (Archduke Albert&#x27;s answer/resolution, sent on to Munich). Transcribed 2 Oct 2026
+# from targets/kaa4591/img/IMG_R9425_I44571_P1-P6.jpg (page order of the letter: P1 f.278r, P2 f.278v, P6 f.279r, P3 f.279v, P4 f.280r clear close, P5 endorsement).
+# Format as ../transcription.txt: one manuscript line per row, P&lt;image&gt;.&lt;line&gt;; clear text in [ ]; z / c = the two word-end signs;
+# - = line-end continuation sign. Clear text is a working reading only (&quot;...&quot; = not read); the cipher is transcribed as written.
+P1.01 60 36 12 48 18 14 32 52 z 54 42 40 c 30 66 52 52 18 50 c
+P1.02 30 40 10 16 18 40 z [Wir haben gelobt das Schreiben so]
+P1.03 [... mit mehrem und was ... titul:] 45 z 248 c 149 z
+P1.04 32 42 14 32 18 48 38 18 36 52 72 50 z 32 62 48 40 z 45 z 36 c
+P1.05 218 z 414 c 248 z 60 30 18 40 52 c z 36 34 14 18 40 52 64 -
+P1.06 70 52 z 38 42 48 48 18 54 50 z [... und anders] 32 42 14 32 -
+P1.07 78 34 14 32 52 64 30 18 40 c 60 40 30 36 18 30 72 40 62 40 z 50 10 -
+P1.08 14 32 18 40 z [... nach verantwortung ungeachtet Ihrem E. L.]
+P1.09 [schreiben, so woll mündlich als schriftlich underthenigst für-]
+P1.10 [und andacht, mit mehrerm angehört und vernommen,]
+P1.11 [und lassen Ihme daraus zu unserer gutten erklerung nicht]
+P1.12 [folgendes ... anzuzaigen, darauß Ihme E. L. ... sonder ...]
+P1.13 [... zu vernemmen wissen,]
+P1.14 [Wir hetten auch aus des begehren und] c 414 z 38 42 48 48 72 34
+P1.15 415 z [anbringen gern vernommen,] [Daß] 414 z 34 48 18
+P1.16 30 36 z 415 c 64 40 18 40 c [die] 14 42 40 50 18 48 54 10 52 34 66 40
+P1.17 248 c 18 48 32 60 36 52 54 40 30 c 160 z [unsers] 30 40 18 16 34 -
+P1.18 30 50 52 18 40 z 20 48 18 54 40 16 52 XX z 30 36 34 72 12 52 62 40
+P1.19 32 18 48 40 z 248 c 31 z 74 10 34 50 18 48 36 34 14 32 72 40 c
+P1.20 32 42 14 32 18 34 52 c 248 z 54 40 50 72 48 50 c 414 z 32 66 14 -
+P1.21 32 36 76 12 36 34 14 32 72 40 z 154 c 10 40 30 18 36 62 30 72 40 -
+P1.22 32 18 34 52 [als] 52 48 18 78 36 64 14 32 z 36 60 50 50 18 40 z 12 18 -
+P1.23 68 66 36 62 40 z 50 18 34 40 c [Und müssen] 414 z 34 48 18 40 z
+P1.24 36 z 415 c 36 c 16 62 50 32 10 36 12 72 40 c 248 z [Daß die ...]
+P1.25 [... wegen] 38 34 52 z 54 40 50 c [als] 62 z 54 18 48 52 72 78 36 64 -
+# P1.33: last token 58 (z) on zoom, not 48.
+# P2.06: 4th token overwritten, 50 -&gt; 52 (erstens). P2.23: re-read on zoom 30 18 52 48 72 78 18 (getrewe); the last token of the next word is blurred 62/64.
+# P1.16: the first token is written 30, where the formula elsewhere is &#x27;ire L.&#x27; (36); P1.18: one token after 16 52 is illegible (XX).
+# P2.05: 78 42 36 36 78 40 is written so (scribe&#x27;s slip for 72 in &#x27;wollen&#x27;). P2.31: an interlinear gloss of 3 letters (unread) stands over 155.
+# P1.25-26: a superscript 48 stands over the struck 48 after 54 18 (correction mark); the word is written 54 18 48 52 72 78 36 64 | 14 32
+P1.26 14 32 z 14 76 38 38 54 40 34 14 64 18 48 40 z [lassen] 30 10 40 52 58
+P1.27 20 48 18 34 40 16 52 36 64 14 32 z 16 10 40 14 74 c [Und] 44 10 52 -
+P1.28 52 18 40 c 34 48 18 c 36 z 415 z 36 c [Wir wollen also auch]
+P1.29 20 42 48 52 32 34 40 c 38 34 52 c 54 40 50 c [unbeschwert]
+P1.30 14 42 40 52 34 40 54 34 48 40 c 248 c 54 18 48 50 34 14 -
+P1.31 32 62 48 52 c 50 18 34 40 z [Das wir Ihme E. L.]
+P1.32 [mit] 30 36 10 34 14 32 62 48 z 14 66 48 48 72 50 44 42 40 16 -
+P1.33 18 40 52 58 z [hinwiderumb] 12 18 30 62 30 40 72 40 c 248 z
+P1.34 [solche] 419 z 58 54 z 54 40 50 c 248 z 68 40 50 18 48 z 32 42 14 32
+P2.01 36 42 12 36 34 14 32 z 154 c 12 18 58 18 68 30 72 40 16 62 z
+P2.02 52 48 72 54 54 18 52 52 62 48 36 64 14 32 18 z 16 18 54 40 52 34 -
+P2.03 66 40 c [allermüglichst] 78 18 72 30 c 18 48 74 72 40 40 18 40
+P2.04 248 z 16 10 40 14 74 12 60 48 36 34 14 32 z 12 18 50 14 32 54 -
+P2.05 36 16 62 40 z 78 42 36 36 78 40 c
+P2.06 [Belangend] 18 48 50 52 72 40 50 z 16 34 18 c 414 z 48 18 -
+P2.07 14 54 44 18 48 10 52 64 42 40 z 248 c 78 34 18 16 62 48 -
+P2.08 72 48 66 12 18 48 54 40 30 c [deß] z 74 42 40 34 30 z 219 c
+P2.09 153 z 414 c 248 z 15 c [anderer, ... wir mit Ihrer L.]
+P2.10 [allerdings ainig, Das was] 416 z 70 40 c 50 18 34 52 18 40
+P2.11 54 40 50 18 48 40 c 154 z [zu solchem] 18 40 16 52 c 44 34 -
+P2.12 36 36 34 14 32 c 60 36 36 18 c 72 54 50 50 18 48 34 50 52 72
+P2.13 38 10 14 32 52 c 60 40 78 18 40 16 18 c
+P2.14 [Also auch] 60 40 16 18 48 40 50 c 34 48 18 c 74 10 34 50 z 47 z
+P2.15 248 c 74 42 40 c 414 z 38 c 54 40 16 c 36 z 419 c
+P2.16 58 68 c 225 z 248 c [Wir allerdings ainig] 41 z 20 54 48 -
+P2.17 50 52 18 40 c 68 40 16 z 50 52 18 40 16 52 z [so] 54 40 50 z
+P2.18 [zu gedachtem] 419 c 18 40 16 z [ainige] 157 z 248 c 60 50 -
+P2.19 50 64 50 52 18 40 58 c 36 10 34 50 42 18 40 z 78 18 48 -
+P2.20 16 18 40 c [sollen; Wir hetten deßhalben auch] 414 z
+P2.21 12 18 34 z 32 42 14 32 50 52 18 48 38 18 36 52 62 c [ihr]
+P2.22 248 c 36 z [nur gute zeit ...] 60 36 36 18 z 38 54 30 -
+P2.23 36 34 14 32 50 52 18 z 30 18 52 48 72 78 18 c 30 54 52 62
+P2.24 42 20 20 34 14 64 10 z 44 48 62 50 52 34 48 52 z [und]
+P2.25 [zum] 52 32 62 34 36 z 60 36 12 72 48 10 34 52 c 165 z 248 z
+P2.26 36 c 215 z [werden aber noch weiteren bescheids ...]
+P2.27 [lich gewertig;]
+P2.28 [Under dessen gleichwoll, so weit] 18 40 52 50 14 32 36 -
+P2.29 42 50 50 18 40 c [Daß wir auf] 60 36 36 18 40 c 68 40 -
+P2.30 54 18 48 32 66 70 20 18 40 16 18 40 c 20 60 36 c [da] z 10 34
+# P2.30-32: the right edge runs into the gutter; tokens after &quot;10 34&quot; on P2.30 and after &quot;34 48 18&quot; on P2.31 may be lost (?)
+P2.31 155 z 248 c 18 34 40 64 30 c 68 66 36 14 74 c 34 48 18 XX
+P2.32 60 40 34 52 58 76 c [auf den] 12 18 34 40 72 40 c 32 10 12 18 40
+# P6 = f. 279r (the letter continues here from f. 278v)
+P6.01 16 18 40 c 62 50 72 48 14 34 52 42 c [daran] 414 c 16 34 18 z
+P6.02 14 10 52 32 42 36 64 50 14 32 18 c 41 z 20 54 48 50 52 18 40 c 248 z
+# P6.03: an interlinear gloss of 3-4 letters (read &quot;ipsl&quot;?) stands over 221
+P6.03 52 18 40 16 [und] 221 z 16 34 50 52 48 34 14 52 50 c 32 34 40 -
+P6.04 60 68 20 50 14 52 34 14 74 18 40 c [wenden, hingegen so vil]
+P6.05 16 18 48 z 68 40 30 18 48 34 30 18 40 c 70 54 14 32 c 10 36 50 -
+P6.06 12 10 36 52 c [zu] 48 18 52 52 54 40 30 z 248 c 16 18 20 72 -
+P6.07 40 50 64 66 40 c [der] 12 18 52 48 10 40 30 52 62 40 z 14 10 -
+P6.08 52 42 36 34 50 14 32 18 40 c 50 52 18 40 16 z 32 64 40 -
+P6.09 10 54 20 z 54 18 48 42 48 16 40 18 40 [wolten,] [Mit dem]
+P6.10 60 68 50 16 48 54 14 74 36 34 14 32 18 38 z 12 18 20 72 36 -
+P6.11 14 32 c 50 64 14 32 z [zu den] 14 10 52 36 34 50 14 32 18 40 z
+P6.12 54 42 36 14 74 c [zu] 50 14 32 36 10 30 18 40 c 248 z [denn]
+P6.13 [jenigen so denselben] 14 42 38 10 40 16 34 48 40 c
+P6.14 [und] 54 42 48 30 18 50 18 52 58 52 [sein wirdt, zu]
+P6.15 54 40 16 18 48 30 18 12 72 40 c [und zu] 30 18 32 42 48 -
+P6.16 50 10 38 18 40 c
+P6.17 [Belangend] 36 10 68 20 c [und] 38 54 50 52 18 48 44 36 -
+P6.18 10 52 58 c [auch ein] 48 18 30 34 38 62 40 52 z 20 54 50 -
+P6.19 54 42 36 14 74 z [und] 20 54 40 20 32 54 40 16 18 48 52 z
+P6.20 216 z [werden wir] 58 78 10 48 z [zu besuchung des]
+P6.21 32 42 14 32 50 52 62 40 c 40 66 52 32 z [und] 60 36 30 18 -
+P6.22 38 18 64 40 18 48 z 30 18 20 10 32 48 z 34 48 62 40 z 36
+P6.23 414 z 36 c [so] 30 18 48 40 c [Wir auch] 78 66 36 52 72 40
+P6.24 20 48 18 34 40 16 52 54 18 52 52 72 48 36 34 14 32 z 58 54 -
+P6.25 78 34 36 20 10 32 48 18 40 c 30 40 10 34 30 52 c 74 42 40 -
+P6.26 52 18 40 c 10 12 18 48 z 34 48 18 40 z 36 c 414 z 36 z
+P6.27 50 42 z 30 18 48 40 c 78 34 48 c 10 68 14 32 c 78 66 36 -
+P6.28 52 18 40 c [hierinnen auß] 16 34 50 38 10 32 36 c 40 34 52
+P6.29 30 48 10 52 54 34 20 34 14 34 48 40 c [zu Erwegung wir]
+P6.30 [täglich unsrer] 78 18 48 12 54 40 30 c [auch anhörendern]
+P6.31 [bedencken, und dan zu unser] 136 c 36 54 52 58 18 40 -
+P6.32 12 54 48 30 z [insonderheit wegen] 16 18 50 50 72 40 z
+P6.33 50 34 52 54 10 52 64 66 40 z 16 18 50 52 34 40 64 48 52
+# P3 = f. 279v
+P3.01 [Weil] 149 z 36 c 414 c [die] 54 18 50 52 54 40 30 c
+P3.02 12 48 34 50 10 14 32 c 38 34 52 [sambt dem] 32 18 48 40 c 41 z
+P3.03 54 66 36 14 74 z 12 18 50 72 52 58 72 40 z [zulassen be-]
+P3.04 [dencken tragen, Auch schreiben wir bey Jetziger]
+# P3.05: the 5th token of the first group is unclear (a 52 with a stroke; context wants 30)
+P3.05 [ordinari dem] 74 42 40 64 XX c 16 18 38 z 140 c
+P3.06 249 c 42 40 40 10 52 72 z [zu, Von dem würdet]
+P3.07 [E. L. vernemmen,]
+P3.08 [Betreffend die] 10 34 40 52 10 54 50 18 40 16 52 z
+P3.09 14 54 48 34 50 50 34 18 48 z [so in nahmen der] 74 66 40
+P3.10 165 z 248 c 36 c 58 54 z 225 c 16 18 48 z 14 66 52 66 -
+P3.11 36 34 50 14 32 72 40 c 36 34 30 10 z [zu] 30 54 18 52 18
+P3.12 [zu] 78 18 48 12 72 40 z [begert würdt, Deßhalben]
+P3.13 [schreiben wir bey Jetziger ordinari gedachtem]
+# P3.14: the single digit 2 stands alone between word signs; the red margin beside it reads &quot;Ambr.&quot; (Ambrogio Spinola)
+P3.14 c 2 z [zu gleicher gestalt zu, Und wolten also]
+P3.15 50 18 34 40 c 16 18 50 z 32 72 48 52 58 76 30 18 40 z
+P3.16 36 z 60 32 40 z 34 40 18 40 c [hiemit, deß puncts]
+P3.17 [halben, nunmehriger gestalt,] 30 18 78 34 18 50 18 40
+P3.18 32 10 12 18 40 z 38 34 52 c 34 32 38 72 z [damitten]
+P3.19 14 42 40 20 18 48 34 48 40 c 248 c [die] 40 76 52 52 -
+P3.20 54 48 20 52 z 32 10 40 16 36 18 40 c [zulassen,]
+P3.21 [Was E. L. auß ainiger] 34 48 18 48 z 74 42 40 -
+P3.22 c 38 c 417 z 242 c 415 z 36 c 12 18 50 52 72 36 52 -
+P3.23 [ihm] 169 z 218 c 248 z [andere bevelchs] 46 54 10 36 34 -
+P3.24 20 34 14 64 48 52 72 c 52 60 68 30 36 34 14 32 62
+P3.25 44 18 48 50 66 40 18 40 c [so nicht in] 78 54 48 14 74 -
+P3.26 36 34 14 32 18 48 z 169 c 12 18 20 72 30 14 32 z 12 62 -
+P3.27 30 48 64 20 20 18 40 z 78 54 48 16 18 40 z 40 10 38 -
+P3.28 32 60 20 52 [machen lassen,] [Wolten wir E. L.]
+P3.29 [darauf aller gunstiger gutter Satisfaction geben ...]
+# P3.30: a small interlinear mark (&quot;60&quot;?) stands over 414
+P3.30 [so bey ... des] 414 z 32 18 48 40 c 41 z 218 c
+P3.31 248 c 60 30 18 40 52 c [Ihrem E. L. ... freundlich ...]
+P3.32 [... freundlichen ... wie ... ...]
+# P4 = f. 280r, clear closing line
+P4.01 [Zur fernern nachricht und nachschreiben, den 15. 10bris Ao 1619]
+# P5 = f. 280v, endorsement (clear): &quot;Resolutio | deß hertzogs albrechts dem L. Morreo (?) ... ertailt&quot; and &quot;15 Xbr 619&quot;</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/decoded.txt">decoded.txt</a></p><pre>P1.01 albrecht uon gottes
+P1.02 gnaden [Wir haben gelobt das Schreiben so]
+P1.03 [... mit mehrem und was ... titul:] &lt;45&gt; {und} &lt;149&gt;
+P1.04 hochermeltes hern &lt;45&gt; L.
+P1.05 {Rath?} {-} {und} agent
+P1.06 licentiat morreus [... und anders]
+P1.07 hochwichtigen anglegenen
+P1.08 sachen [... nach verantwortung ungeachtet Ihrem E. L.]
+P1.09 [schreiben, so woll mündlich als schriftlich underthenigst für-]
+P1.10 [und andacht, mit mehrerm angehört und vernommen,]
+P1.11 [und lassen Ihme daraus zu unserer gutten erklerung nicht]
+P1.12 [folgendes ... anzuzaigen, darauß Ihme E. L. ... sonder ...]
+P1.13 [... zu vernemmen wissen,]
+P1.14 [Wir hetten auch aus des begehren und] {-} morrei
+P1.15 {-} [anbringen gern vernommen,] [Daß] {-} ire
+P1.16 gl {-} inen [die] conseruation
+P1.17 {und} erhaltung &lt;160&gt; [unsers]
+P1.18 gnedigsten freundt? gliebten
+P1.19 hern {und} {Vettern?} kaiserlichen
+P1.20 hocheit {und} unsers {-}
+P1.21 hochloblichen {Haus?}
+P1.22 angelegenheit [als] trewlich lassen
+P1.23 beuolen sein [Und müssen] {-} iren
+P1.24 L. {-} L. deshalben {und} [Daß die ...]
+P1.25 [... wegen] mit uns [als] E.
+P1.26 uertewlich communiciern [lassen] gantz
+P1.27 freindtlich danck [Und]
+P1.28 patten ire L. {-} L. [Wir wollen also auch]
+P1.29 forthin mit uns [unbeschwert]
+P1.30 continuirn {und}
+P1.31 uersichert sein [Das wir Ihme E. L.]
+P1.32 [mit] glaicher
+P1.33 correspondentz [hinwiderumb] begegnen {und}
+P1.34 [solche] {-} zu uns {und} unser hoch
+P2.01 loblich {Haus?} bezeugende
+P2.02 treuuetterliche
+P2.03 deuntion [allermüglichst] weeg erkennen
+P2.04 {und} danckbarlich
+P2.05 beschulden wollwn
+P2.06 [Belangend] erstens die {-}
+P2.07 recuperation {und}
+P2.08 wiedereroberung [deß] konig &lt;219&gt;
+P2.09 &lt;153&gt; {-} {und} &lt;15&gt; [anderer, ... wir mit Ihrer L.]
+P2.10 [allerdings ainig, Das was] {-} an seiten
+P2.11 unsern {Haus?} [zu solchem] endt
+P2.12 pillich alle eusseriste
+P2.13 macht anwende
+P2.14 [Also auch] anderns ire kais {Mt.?}
+P2.15 {und} kon {-} M. und L. {-}
+P2.16 zu &lt;225&gt; {und} [Wir allerdings ainig] {Chur-?}
+P2.17 fursten und stendt [so] uns
+P2.18 [zu gedachtem] {-} end [ainige] {Hilf?} {und}
+P2.19 assistenz laisoen
+P2.20 werden [sollen; Wir hetten deßhalben auch] {-}
+P2.21 bei hochstermelte [ihr]
+P2.22 {und} L. [nur gute zeit ...] alle
+P2.23 muglichste getrewe gute
+P2.24 officia prestirt [und]
+P2.25 [zum] theil alberait {Mt.} {und}
+P2.26 L. &lt;215&gt; [werden aber noch weiteren bescheids ...]
+P2.27 [lich gewertig;]
+P2.28 [Under dessen gleichwoll, so weit]
+P2.29 entschlossen [Daß wir auf] allen
+P2.30 unuerhoafenden fal [da] ai
+P2.31 &lt;155&gt; {und} einig uolck ire?
+P2.32 anitzo [auf den] beinen haben
+P6.01 den esercito [daran] {-} die
+P6.02 catholische {Chur-?} fursten {und}
+P6.03 tend [und] &lt;221&gt; districts
+P6.04 hinaufscticken [wenden, hingegen so vil]
+P6.05 der ungerigen auch
+P6.06 alsbalt [zu] rettung {und}
+P6.07 defension [der] betrangten
+P6.08 catolischen stend
+P6.09 hinauf uerordnen [wolten,] [Mit dem]
+P6.10 ausdrucklichem
+P6.11 befelch sich [zu den] catlischen
+P6.12 uolck [zu] schlagen {und} [denn]
+P6.13 [jenigen so denselben] comandirn
+P6.14 [und] uorgesetzt [sein wirdt, zu]
+P6.15 undergeben [und zu]
+P6.16 gehorsamen
+P6.17 [Belangend] lauf [und]
+P6.18 musterplatz [auch ein] regiment
+P6.19 fusuolck [und] funfhundert
+P6.20 {Pferd?} [werden wir] zwar [zu besuchung des]
+P6.21 hochsten noth [und]
+P6.22 algemeiner gefahr iren L.
+P6.23 {-} L. [so] gern [Wir auch] wolten
+P6.24 freindtuetterlich
+P6.25 zuwilfahren gnaigt
+P6.26 konten aber iren L. {-} L.
+P6.27 so gern wir auch
+P6.28 wolten [hierinnen auß] dismahl nit
+P6.29 gratuificirn [zu Erwegung wir]
+P6.30 [täglich unsrer] werbung [auch anhörendern]
+P6.31 [bedencken, und dan zu unser] &lt;136&gt;
+P6.32 lutzenburg [insonderheit wegen] dessen
+P6.33 situation destinirt
+P3.01 [Weil] &lt;149&gt; L. {-} [die] uestung
+P3.02 brisach mit [sambt dem] hern {Chur-?}
+P3.03 uolck besetzen [zulassen be-]
+P3.04 [dencken tragen, Auch schreiben wir bey Jetziger]
+P3.05 [ordinari dem] koni? dem &lt;140&gt;
+P3.06 &lt;249&gt; onnate [zu, Von dem würdet]
+P3.07 [E. L. vernemmen,]
+P3.08 [Betreffend die] aintausendt
+P3.09 curissier [so in nahmen der] kon
+P3.10 {Mt.} {und} L. zu &lt;225&gt; der
+P3.11 cotolischen liga [zu] guete
+P3.12 [zu] werben [begert würdt, Deßhalben]
+P3.13 [schreiben wir bey Jetziger ordinari gedachtem]
+P3.14 {Ambrosio [Spinola]} [zu gleicher gestalt zu, Und wolten also]
+P3.15 sein des hertzogen
+P3.16 L. ahn inen [hiemit, deß puncts]
+P3.17 [halben, nunmehriger gestalt,] gewiesen
+P3.18 haben mit ihme [damitten]
+P3.19 conferirn {und} [die]
+P3.20 notturft handlen [zulassen,]
+P3.21 [Was E. L. auß ainiger] irer
+P3.22 kon M. {-} {und} {-} L.
+P3.23 bestelt [ihm] {Kriegs-?} {Rath?} {und} [andere bevelchs]
+P3.24 qualificirte taugliche
+P3.25 personen [so nicht in]
+P3.26 wurcklicher {Kriegs-?} befegch
+P3.27 begriffen wurden
+P3.28 namhaft [machen lassen,] [Wolten wir E. L.]
+P3.29 [darauf aller gunstiger gutter Satisfaction geben ...]
+P3.30 [so bey ... des] {-} hern {Chur-?} {Rath?}
+P3.31 {und} agent [Ihrem E. L. ... freundlich ...]
+P3.32 [... freundlichen ... wie ... ...]
+P4.01 [Zur fernern nachricht und nachschreiben, den 15. 10bris Ao 1619]</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/reading.md">reading.md</a></p><pre># R9425: Archduke Albert&#x27;s resolution for Licentiate Morreus, [Brussels], 15 December 1619
+
+BayHStA, Kurbayern Äußeres Archiv 4591, ff. 278–280 (DECODE R9425). Four cipher pages (images P1 f. 278r, P2 f. 278v,
+P6 f. 279r, P3 f. 279v), a clear closing line on f. 280r (P4: &quot;Zur fernern nachricht … den 15. 10bris Ao 1619&quot;) and
+the endorsement on f. 280v (P5: &quot;Resolutio deß hertzogs Albrechts dem L. Morreo … ertailt&quot;, &quot;15 Xbr 619&quot;).
+Transcribed 2 October 2026 from the DECODE images (`../../kaa4591/img/IMG_R9425_I44571_P1-P6.jpg`) into
+`transcription.txt`. Deciphered with the key rebuilt on R9426 (`../key.txt`), letters unchanged, and the nomenclator
+values in `codes.txt`. `decode_r9425.py` prints the decrypt (`decoded.txt`); `count_r9425.py` measures it.
+
+**Measured: 97.3% of the 1567 enciphered tokens read** (letters 1471 of 1482; nomenclator 53 of 85 tokens, of which 24
+are nulls). Without the null tokens: 1500 of 1543 = 97.2%. Language check on the decrypt: `lm.best_language` gives
+de-modern first (−2.50 per character, Latin next at −3.14); `de-1500s` −1.89 per character.
+
+The clear passages in the transcription are a working reading, not an edition; &quot;…&quot; marks words not read. The cipher
+is given as read: cipher in roman, clear text in *italics*, nomenclator values in {braces}, open groups as ⟨n⟩.
+Nulls are left out.
+
+## The reading
+
+**f. 278r.** Albrecht von Gottes Gnaden *[Erzherzog …]. Wir haben gelobt, das Schreiben … und was … titul:* ⟨45⟩ und
+⟨149⟩ hochermeltes Herrn ⟨45⟩ L. ⟨218⟩ und Agent Licentiat Morreus *[… und anders]* hochwichtigen angelegenen
+Sachen *[… ungeachtet Ihrem E. L. Schreiben, so woll mündlich als schriftlich underthenigst für- und andacht, mit
+mehrerm angehört und vernommen, und lassen Ihme daraus zu unserer gutten Erklerung … folgendes anzuzaigen …]*.
+
+*Wir hetten auch aus des begehren und* Morrei *anbringen gern vernommen, Daß* ire L. *(written &quot;gl&quot;)* inen *die*
+Conservation und Erhaltung ⟨160⟩ *unsers* gnedigsten freundt[l.] geliebten Herrn und ⟨31⟩ kaiserlichen Hocheit, und
+unsers hochlöblichen ⟨154⟩ Angelegenheit *als* treulich lassen befohlen sein. *Und müssen* iren L. L. deshalben
+und *daß die … wegen* mit uns *als* E. vert[r]eulich communiciern *lassen* ganz freundlich Dank. *Und* patten ire
+L. L. *wir wollen also auch* forthin mit uns *unbeschwert* continuirn und versichert sein, *das wir Ihme E. L. mit*
+gleicher Correspondenz *hinwiderumb* begegnen und *solche* zu uns und unser hochlöblich ⟨154⟩ bezeugende
+treuvetterliche Devotion *allermüglichst* weeg erkennen und dankbarlich beschulden wollen.
+
+**f. 278v.** *Belangend* erstens die Recuperation und Wiedereroberung *deß* König ⟨219⟩ ⟨153⟩ und ⟨15⟩ *anderer …,
+[sind] wir mit Ihrer L. allerdings ainig, Das was* an seiten unsern ⟨154⟩ *zu solchem* End billich alle eusserist
+Macht anwende; *also auch* andern ire Kais. ⟨47⟩ und Kön. M. und L. zu ⟨225⟩ und. *Wir [sind] allerdings ainig*
+⟨41⟩ Fürsten und Stendt, *so* uns *zu gedachtem* End *ainige* ⟨157⟩ und Assistenz laisten werden *sollen. Wir
+hetten deßhalben auch* bei höchstermelter *ihr[er]* und L. *nur gute zeit …* alle müglichste getrewe gute Officia
+prestirt *und zum* Theil albereit {Mt.} und L. ⟨215⟩ *werden aber noch weiteren bescheids … gewertig. Under dessen
+gleichwoll, so weit* entschlossen, *daß wir auf* allen unverhof[f]enden Fall, *da* ai[…] ⟨155⟩ und einig Volck
+ire[…] anitzo *auf den* Beinen haben,
+
+**f. 279r.** den Esercito *daran* die catholische ⟨41⟩ Fürsten und [S]tend *und* ⟨221⟩ Districts hinaufschicken
+*wenden, hingegen so vil* der Ungerigen auch alsbald *zu* Rettung und Defension *der* betrangten catholischen Stend
+hinauf verordnen *wolten, mit dem* ausdrücklichem Befelch, sich *zu den* catholischen Volck *zu* schlagen und *denn
+jenigen, so denselben* comandirn *und* vorgesetzt *sein wirdt, zu* undergeben *und zu* gehorsamen.
+*Belangend* Lauf- *und* Musterplatz *auch ein* Regiment Fußvolck *und* fünfhundert ⟨216⟩, *werden wir* zwar *zu
+besuchung des* höchsten Noth *und* allgemeiner Gefahr iren L. L. *so gern wir auch* wolten freundvetterlich zu
+willfahren genaigt; könten aber iren L. L., so gern wir auch wolten, *hierinnen auß* dißmahl nit gratificirn, *zu
+Erwegung wir täglich unsrer* Werbung *auch anhörender … bedencken, und dan zu unser* ⟨136⟩ Lützenburg, *insonderheit
+wegen* dessen Situation, destinirt.
+
+**f. 279v.** *Weil* ⟨149⟩ L. *die* Vestung Brisach mit *sambt dem* Herrn ⟨41⟩ Volck besetzen *zulassen bedencken
+tragen, auch schreiben wir bey jetziger ordinari dem* Kön[ig] dem ⟨140⟩ ⟨249⟩ Oñate *zu, von dem würdet E. L.
+vernemmen. Betreffend die* aintausend Curissier, *so in nahmen der* Kön. {Mt.} und L. zu ⟨225⟩ der catholischen Liga
+*zu* gute *zu* werben *begert würdt, deßhalben schreiben wir bey jetziger ordinari gedachtem* {Ambrosio [Spinola]}
+*zu gleicher gestalt zu, und wolten also* sein des Herzogen L. ahn inen *hiemit deß puncts halben, nunmehriger
+gestalt,* gewiesen haben, mit ihme *damit* zu conferirn und *die* Notdurft handlen *zulassen. Was E. L. auß ainiger*
+irer Kön. M. und L. bestelt- *ihm* ⟨169⟩ ⟨218⟩ und *andere bevelchs* qualificirte taugliche Personen, *so nicht in*
+würcklicher ⟨169⟩ Befelch begriffen wurden, namhaft *machen lassen, wolten wir E. L. darauf aller günstiger gutter
+Satisfaction geben … des* Herrn ⟨41⟩ ⟨218⟩ und Agent *Ihrem E. L. …*
+
+**f. 280r (clear).** *Zur fernern nachricht und nachschreiben, den 15. 10bris Ao 1619.*
+
+## Summary (modern English)
+
+Archduke Albert, sovereign of the Spanish Netherlands, answers in writing what Licentiate **Morreus**, the agent of a
+prince he calls &quot;E. L.&quot; and &quot;des Herzogen L.&quot; (the Duke of Bavaria, as head of the Catholic League), has put to him
+orally and in writing. He thanks the prince for commending to him the preservation of the Emperor (&quot;our most gracious,
+beloved lord and cousin, his Imperial Highness&quot;) and of the interests of &quot;our most praiseworthy House&quot;, and promises
+the same correspondence in return.
+
+On the substance: he agrees that the **recovery and reconquest of the kingdom [of Bohemia]** and the other lands calls
+for every possible effort; the Catholic princes and Estates should give help and assistance to that end, and he has
+already done good offices with the Emperor and the King [of Spain] and awaits further answer. Meanwhile he has resolved
+that, should the worst happen, the troops he has now on foot will be sent up with orders to join the Catholic army and
+obey its commander, and that Hungarian troops [being sent by the other side?] be countered by help for the oppressed
+Catholic Estates. A **muster place, a regiment of foot and five hundred [horse]** he cannot grant at present, though
+he would like to: his own levies are destined for **Luxembourg**, because of its situation. Since [Archduke Leopold?]
+hesitates to garrison the fortress of **Breisach** with the [Elector&#x27;s?] troops, Albert writes by this ordinary post to
+the King and to **Oñate** (the Spanish ambassador in Vienna). For the **thousand cuirassiers** that the League asks to
+raise in the name of the King [of Spain], he writes to **Ambrogio [Spinola]** and refers the Duke to him to confer.
+If the Duke names qualified officers not in active command, Albert will give satisfaction. Dated 15 December 1619;
+endorsed as Albert&#x27;s *Resolutio* given to Licentiate Morreo.
+
+The letter is the answer to the mission that R9426 (Ferdinand of Cologne, 22 December 1619) reports on: there the
+agent &quot;Morres&quot; is named and the League&#x27;s quarters and levies in the Rhine–Westphalian circle are the subject.
+
+## Nomenclator: values fixed here, and the open groups
+
+Fixed (counted as read):
+
+| group | value | evidence |
+|---|---|---|
+| 414, 415, 416, 417, 419 | nulls | &quot;Kön. 414 M. und L.&quot; beside &quot;Kön. 165 und L.&quot; and &quot;Kön. M. 417 242 415 L.&quot;; &quot;unsers 414 hochlöblichen&quot;; &quot;zu gedachtem 419 End&quot;; &quot;iren L. 414 L.&quot; and &quot;ire L. 415 L.&quot; in the same formula; &quot;Das was 416 an seiten&quot; |
+| 242 | und | &quot;Kön. M. 417 242 415 L.&quot; = the formula &quot;Kön. M. und L.&quot; written out twice |
+| 165 | Mt. (Majestät) | &quot;Kön. 165 und L.&quot; (f. 279v) beside &quot;Kön. M. und L.&quot;; &quot;albereit 165 und L.&quot; |
+| 2 | Ambrosio [Spinola] | the decipherer&#x27;s red margin beside it reads &quot;Ambr.&quot; |
+
+Probable (not counted): 47 = Mt. (&quot;ire Kais. 47 und Kön. M.&quot;), 41 = Chur- (&quot;die catholische 41 Fürsten und
+Stend&quot;; &quot;des Herrn 41 Rath und Agent&quot;; &quot;dem Herrn 41 Volck&quot;), 218 = Rath (&quot;218 und Agent Licentiat Morreus&quot;; &quot;des
+Herrn 41 218 und Agent&quot;), 169 = Kriegs- (&quot;bestelt- 169 218 und andere bevelchs&quot;; &quot;in würcklicher 169 Befelch&quot;),
+216 = Pferd/Reiter (&quot;ein Regiment Fußvolck und fünfhundert 216&quot;), 154 = Haus (&quot;unsers hochlöblichen 154
+Angelegenheit&quot;), 31 = Vettern, 157 = Hilf.
+
+Open: 45 (2×, a title: &quot;titul: 45 und 149&quot;, &quot;hochermeltes Herrn 45 L.&quot;), 149 (2×, &quot;Weil 149 L. die Vestung
+Brisach … bedencken tragen&quot;: probably Archduke Leopold), 225 (2×, &quot;Kön. Mt. und L. zu 225&quot;), 160, 219 + 153 + 15
+(&quot;Wiedereroberung deß König 219 153 und 15 anderer&quot;: probably -reichs Böheim and …), 215, 155 (an unread
+interlinear gloss over it), 221 (&quot;und 221 Districts&quot;), 136 (&quot;zu unser 136 Lützenburg&quot;: Provinz?), 140 + 249 (&quot;dem
+140 249 Oñate&quot;: Spanish ambassador?). 32 tokens in all, 2.0% of the text.
+
+Letter tokens not read (11): P1.16 &quot;gl&quot; for &quot;L.&quot; (one token), P1.18 one illegible sign, P3.05 one unclear sign in
+&quot;Kön[ig]&quot;, P2.30–31 two to three signs lost in the gutter (&quot;ai…&quot;, &quot;ire…&quot;), and five single-token slips whose word is
+clear (devotion, laisten, hinaufschicken, Befelch, unverhoffenden), counted unread.</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/key.txt">key.txt</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferdinand1619/r9425/codes.txt">codes.txt</a></p>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/ferdinand1619.json"></figure>
 <!-- replay:end -->
