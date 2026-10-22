@@ -3,6 +3,15 @@
 {"id": "k-breves1610-henri4", "label": "Henri IV-Brèves key of 1610 (BnF fr. 3462 view 112; DECODE R2077)", "kind": "archive key", "by": "French royal chancery", "year": 1610, "note": "Broken on R2077 by George Lasry with Biermann and Tomokiyo (2021); table found by Camille Desenclos in fr. 3462 (R2077 says 3642); Lasry's CTTS key adds a repeat sign (PR #61)."},
 {"id": "k-vanreede1793-wainut", "label": "Van Reede's 1792-93 marked code, rebuilt from inv. 6695 (WAINUT)", "kind": "scholar's key", "by": "WAINUT", "year": 1793, "found": 2026, "note": "Rebuilt from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 (PR #66): 2,385 marked group forms; leave-one-out 0.599 of groups exact. A proposal."},
 {
+ "id": "k-brackx-esp318no94",
+ "label": "Viceroy of Sicily 1503, Espagnol 318 no. 94 (Brackx)",
+ "kind": "scholar's key",
+ "by": "Michael Brackx with Claude Opus 5.5",
+ "year": 1503,
+ "found": 2026,
+ "note": "Recovered from the ciphertext of no. 94 (GitHub issue #62): 39 homophonic sign classes for 21 letters; about 20 code groups firm from context (qa que, rah y, mny de, qag se ...), 14 tentative; two-part code. Close to the Gran cifra of 1501-04 (Bergenroth's muy = de)."
+},
+{
  "id": "k-tomokiyo-league1593",
  "label": "Catholic League polyphonic cipher of 1592-93 (Tomokiyo, mayenne.htm)",
  "kind": "scholar's key",
@@ -2243,6 +2252,12 @@
 {"key": "k-breves1610-henri4", "target": "breves1610", "how": "read unchanged", "note": "Brice Dudout matched the key to Marie de Médicis's 1610 passages; two signs conflict with the table."},
 {"key": "k-vanreede1793-wainut", "target": "vanreede1793", "how": "partial", "note": "WAINUT's rebuilt code decodes R1893 in part (601/696 groups valued), recorded as a proposal."},
 {
+ "key": "k-brackx-esp318no94",
+ "target": "esp318no94",
+ "how": "rebuilt from",
+ "note": "alphabet recovered ciphertext-only and code read in part by Brackx; reproduced here from random starts"
+},
+{
  "key": "k-tomokiyo-league1593",
  "target": "desportes1593",
  "how": "read unchanged",
@@ -2603,7 +2618,7 @@
    "key": "k-lasry-esp318",
    "target": "esp318no95",
    "how": "partial",
-   "note": "no. 95 in stretches (about two thirds of f. 122r); two signs corrected"
+   "note": "Lasry's own decipherment of ll. 1-13; ll. 14-33 and the verso deciphered with it by Brackx (2026); values for his Unknown signs proposed"
   },
   {
    "key": "k-lasry-bergamo",
@@ -4052,7 +4067,7 @@
   "malatesta1428": "not solved: the system of Pandolfo Malatesta's runs is not identified and no register or sibling key fits",
   "dubellay1528": "read from Bourrilly and de Vaissière's printed text (1905); their key is not printed and Lasry's (2022) was not applied here",
   "federico1497": "read from Ivan Parisi's printed decipherment (2020); Escrivà's key (Parisi 2004) was not applied here",
-  "esp318no93": "not solved: no key identified for nos. 93-94; Escrivà no. 1 and the Cifra general excluded, the Gran cifra not obtained",
+  "esp318no93": "not solved: no key identified for no. 93; Escrivà no. 1, the Cifra general and no. 94's key excluded, the Gran cifra not obtained",
   "siena7": "not solved: no filed key fits (R4750 and five others contradict the letter's own gloss) and none was rebuilt; the gloss gives nine values",
   "siena19": "not solved: no filed key fits and none was rebuilt; too short without one",
   "siena21": "not solved: no filed key fits and none was rebuilt; too short without one",
@@ -4116,6 +4131,7 @@
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online"
  },
  "tried": [
+  {"key": "k-brackx-esp318no94", "target": "esp318no93", "note": "no. 94's alphabet does not break no. 93 (Brackx); the two code inventories barely overlap"},
   {"key": "k-tomokiyo-ibarra92", "target": "ibarra1593", "note": "the 1592-93 office cipher does not fit no. 68 (higher figures, three-letter word codes): a different cipher"},
   {"key": "k-tomokiyo-nevers57", "target": "champagne1590", "note": "applied to the two-digit runs of nos. 24/25/60 and no. 78's group: no sense, a different system"},
   {"key": "k-lyonet", "target": "affry1757c", "note": "d'Affry's 1757 code to Rouillé and Bernis gives nonsense on R1071: a different code"},
@@ -4293,12 +4309,12 @@
   {
    "key": "k-escriva1",
    "target": "esp318no93",
-   "note": "Escrivá no. 1 excluded for nos. 93/94 by code-initial range"
+   "note": "Escrivá no. 1 excluded for no. 93 by code-initial range"
   },
   {
    "key": "k-cifra-general",
    "target": "esp318no93",
-   "note": "Cifra general excluded for nos. 93/94 by code-initial range (v, x, y, z, b, c)"
+   "note": "Cifra general excluded for no. 93 by code-initial range (v, x, y, z, b, c)"
   },
   {
    "key": "k-tomokiyo-estrada",
