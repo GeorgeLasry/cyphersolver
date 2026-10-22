@@ -1,12 +1,13 @@
 # Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: in progress. Read in part. Re-measured 21 Oct 2026 after Michael Brackx's contributions (issues #64, #68-#71;
-section "Contributions of 21 Oct 2026" below): 39% of the target's cipher tokens read as sense (5,480 of ~14,082;
-42% of the 12,994 transcribed; 32% after a scrambled-key control), with `measure.py --key key_contrib.json`
-(`measure_key_contrib.json`). The 22 Sept measure with `key.json` alone was 31% (4,325; `measure.json`).
-**ff. 143r-v, 149v-150 and 154r-v were deciphered at the time**: ff. 155-157 are contemporary clear copies of them
-(found by Brackx, #70; checked on the images here). Most other gaps are workable (see "Remaining gaps"), so the
-target is not closed and has no page yet.
+Status: in progress. Read in part. Re-measured 22 Oct 2026 on Michael Brackx's complete re-transcription (issues
+#73, #77, #78, #79, #83; section "Contributions of 22 Oct 2026" below): **61.8% of the target's cipher tokens read as
+sense (10,303 of 16,677; 57.6% after a scrambled-key control)**, every Cipher-1 leaf now transcribed in full, f. 110
+included, and the two leaves the repo had not transcribed (f. 150r, f. 154v) added. Where a contemporary clear copy
+exists the decode agrees with it on 83-94% of letters. Before: 39% (5,480 of ~14,082, `key_contrib.json`, 21 Oct) and
+31% (`key.json`, 22 Sept). **ff. 143r-v, 149v-150 and 154r-v were deciphered at the time**: ff. 155-157 are
+contemporary clear copies of them (found by Brackx, #70). The read bar (95%) is not met and the code groups below are
+open, so the target is not closed and has no page yet.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder keeps **Mayenne–Forget's
 Cipher-1** only. Matignon's **Cipher-3** leaves (fr. 15572 f. 276 and fr. 15571 f. 179, read by alejandrozarco in
@@ -404,24 +405,70 @@ it does not credit ff. 143, 150 and 154 with their clear copies.
 - Not checked here: the names in ff. 196/201 figure by figure, the f. 173 and ff. 123-124 decodes, and Brackx's
   transcription of the copies beyond the lines quoted above.
 
+## Contributions of 22 Oct 2026 (Michael Brackx, issues #73, #77, #78, #79, #83)
+
+Brackx re-transcribed every Cipher-1 leaf from full-size, deskewed line crops (openapi.bnf.fr IIIF) in a new label set
+that keeps apart figures Tomokiyo's table separates and our transcriptions had merged, and decoded each with a per-leaf
+key (beam search under his own French 5-gram from Montaigne). His figures and keys are in `brackx2026/` (copied from the
+issues; his readings are summarised here). Credit in `profile.json` (provenance `mixed`).
+
+| issue | leaves | what it adds |
+|---|---|---|
+| #73 | fr. 15571 f. 177r (29 lines) and **f. 177v (11 lines, new)** | the Pons–Taillebourg plan (Taillebourg's toll on the Charente, *trente mil escus* from the country) given up when **[84] = le vicomte de Turenne** took the field with guns; matches the archivist's summary on the leaf; 24 = *mais*, 27 = *nostre* |
+| #77 | **f. 154v, two blocks of 10 and 11 lines (new)** | the first figure-by-figure test of the key against a contemporary copy (f. 157r); figure splits δ = c / ∂ = s, θ = m / ɟ = s, ꝭ = x, ⊔ = q; 51 = *pas*, 47 = *tous/tout* |
+| #78 | the f. 18/19 crib completed: ff. 18r (22 lines), **18v (34), 20r (17)**; ff. 123-124 re-transcribed (36/41/41/38 lines, f. 124r-v completed) | codes **15 = quoy, 73 = oi** (syllable), **78 = le roy de Navarre**, **82 = le gouverneur de Coul[…]**, 84 = le viconte de Turenne, 44 = a stop or null (not *Sire*); code groups split into two figures in the old files (`4 9` = 49, `t 8` = 48, `8 t` = 84); ff. 123-124: Mayenne at Marmande, March 1586, no money, contributions only by garrisons, Turenne back over the Garonne |
+| #79 | f. 110 (38 lines, all) | the leaf has 38 cipher lines, not 54 (checked on canvas 116 here); it reads: Mayenne to Villeroy, Bellebourg, March 1586, on war without money and his reputation |
+| #83 | ff. 143r-v, **150r (32 lines, new)**, 150v, 154r, 173, 196 (31/31), 201 | the repo's `f150_cipher.txt` is the **verso**, f. 150v; f. 150r (canvas 157 right, checked here) was never transcribed; splits θ = m / ϑ = s, ꝺ̄ = u, ɛ = i; codes **46 = rien, 61 = beaucoup**, 34 = *ainsi*; eleven code groups the old files had split into two figures; five misreadings of the copies f. 155r and f. 157r and seven of f. 156r corrected |
+
+**Validated here (22 Oct 2026), `brackx_validate.py` -> `brackx_validate.json`.** His transcriptions and keys, decoded
+with this project's beam and period-French 6-gram (`lm.pkl`), not his decoder. Control: each key's letter sets
+permuted among its figures, set sizes kept (so the decoder keeps its freedom), 3 seeds.
+
+| leaf | tokens | read as sense (floor) | clear copy, letters matched (floor) | his figure |
+|---|---|---|---|---|
+| fr. 15571 f. 177r / 177v | 863 / 301 | 0.60 (0.11) / 0.62 (0.18) | none | — |
+| f. 154v block A / B | 360 / 350 | 0.61 (0.15) / 0.74 (0.12) | f. 157r: 0.90 (0.37) / 0.94 (0.38) | 95.7 / 96.4% |
+| f. 18r / 18v | 722 / 1,163 | 0.50 (0.06) / 0.61 (0.06) | f. 19 (his reading): 0.86 (0.27) / 0.74 (0.23) | 85.9 / 80.8% |
+| f. 20r | 575 | 0.60 (0.07) | its copy (end of f. 19v) is not in the issue | 86.7% |
+| ff. 123r / 123v / 124r / 124v | 1,113 / 1,374 / 1,405 / 1,183 | 0.47 / 0.56 / 0.61 / 0.68 (0.06-0.11) | none | — |
+| f. 110 | 2,164 | 0.61 (0.14) | none | — |
+| f. 143r | 704 | 0.70 (0.14) | f. 155r: 0.94 (0.31); with his corrections 0.95 | 94.4% |
+| f. 143v | 1,212 | 0.71 (0.08) | f. 155r, the 25 lines it covers: 0.88 (0.31); corrected 0.90 | 88.8% |
+| f. 150r | 1,132 | 0.66 (0.06) | f. 155v: 0.84 (0.25) | 87.0% |
+| f. 150v | 441 | 0.63 (0.10) | f. 156r as read in #70: 0.83 (0.36); corrected 0.91 | 90.2% |
+| f. 154r | 1,056 | 0.63 (0.04) | f. 157r: 0.90 (0.28); corrected 0.91 | 89.8% |
+| f. 173 | 1,072 | 0.50 (0.14) | none | — |
+| ff. 196 / 201 | 975 / 972 | 0.59 (0.10) / 0.71 (0.07) | each other: 0.78 (0.50-0.52) | 79.5% |
+
+His copy percentages reproduce within 1-5 points with a different decoder and language model; the f. 18v gap (74 against
+81%) is the largest. The copy readings marked "corrected" were re-read by him with the cipher beside them, so they are
+not independent; the uncorrected readings (#70) give 0.83-0.94 on their own. Every leaf stands far above its control.
+Image checks here: canvas 157 right is f. 150 (159 struck), a clear opening then about 32 cipher lines; canvas 116 right
+(f. 110) has about 38 lines. Not checked here: his figure labels line by line (no second reader has done so) and his
+reading of the copies of f. 19 and f. 19v.
+
+**Taken in:** the transcriptions (`brackx2026/*_cipher.txt`; for measuring they supersede `f110_cipher.txt`, `f123*`,
+`f124*`, `cipher_f143.txt`, `f143v_cipher.txt`, `f150_cipher.txt` (= f. 150v), `f154_cipher.txt`, `f173_cipher.txt`,
+`f196_cipher.txt`, `f201_cipher.txt` and `f177_cipher.txt`, which are kept), the per-leaf keys, the code values above
+and the figure separations. **Not taken:** 64 = *un* and `me` = *mesme* (open, as he says); the f. 20r copy agreement,
+which cannot be checked without its copy text. The keys differ from leaf to leaf (θ = m on ff. 143, 150, 154r but m/s on
+ff. 173, 196, 201): a merged key for the whole target is still to be made.
+
 ## Remaining gaps
 
-- fr. 15572 f. 110 (54 lines, 37 transcribed; ~0% read) - blocker: not-attempted; same key, but the transcription is internally inconsistent and the exemplar set for this hand (cut glyphs, label against keyed figures) has not been built
-- ff. 123r, 123v, 124r, 124v (4,278 figures; 27/39/35/38% read with key_contrib) - blocker: not-attempted; Brackx resolved three merged figure classes (#71) and found no clear copy; a fresh figure-by-figure transcription of about 140 lines is still to do
-- unread share of ff. 173 (51%), 196 (46%), 201 (38%) - blocker: not-attempted; single-figure slips on confusable shapes; Brackx re-read f. 201 and nine lines of f. 173 on the image, a full second pass is still workable
-- f. 196: 5 of 31 lines untranscribed - blocker: not-attempted; part-line after *auquel* (Brackx gives its figures in #64), full lines 1-3 and 13 never transcribed; f. 201 is the same despatch
-- fr. 15571 f. 177: 5 of 29 lines untranscribed, 70% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
-- f. 154v and f. 149v cipher - blocker: not-attempted; never transcribed figure by figure; the text is known from the copies ff. 157 and 155v-156, so this is a check of the key only
-- code groups 15, 19, 23, 27, 44, 46, 79 and the name codes 82, 84, 98 - blocker: open-codes; 44 = *Sire* was proposed and withdrawn (it stands mid-sentence on f. 173), 79 = *pour* rests on one context, and none occurs in the clear copies
+- unread share of every leaf (29-53% of tokens outside sense runs; ff. 123r and 173 lowest) - blocker: open-codes; where copies exist Brackx's transcriptions reach 83-94% letter agreement, so most of the residue is spelling the corpus does not know, single-figure slips and the open codes below; a merged key and a second reading of the figure labels are still workable
+- code groups 16, 19, 23, 45, 59, 64, 101, 102, 103, `me`, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (64 = *un* and `me` = *mesme* proposed, not adopted)
+- the copy of f. 20r (rest of f. 19v, about 11 lines) - blocker: open-codes; read by Brackx but not given in #78, so his 86.7% for f. 20r is unchecked here
+- per-leaf keys not merged into one Cipher-1 key - blocker: open-codes; θ (m or m/s) and the e/ɛ split differ between hands
 
 ## Escalation
 
-- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures; Brackx's joint alignment, #64); f. 125r clear letter read for context; canvases 128-139 round ff. 123-124 checked for a copy, none (Brackx, #71). Not yet: ff. 91-92
+- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures; Brackx's joint alignment, #64); f. 125r clear letter read for context; canvases 128-139 round ff. 123-124 checked for a copy, none (Brackx, #71). The f. 18/19 crib completed through f. 20r (Brackx, #78). Not yet: ff. 91-92
 - [x] clear-pages: **ff. 155-157 are the contemporary clear copies of ff. 143, 149v-150 and 154r-v** (Brackx, #70; checked here). f. 144 is a separate letter; f. 19 is the decipherment of f. 18; f. 125r is a clear letter
 - [x] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); the Cipher-3 leaves and their key are matignon1586c3; the Cipher-2 leaves (ff. 218-219, fr. 15573 ff. 120, 385) are mayenne1586c2
 - [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks
-- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; Brackx's letter sets and eleven code values from the clear copies (`key_contrib.json`)
-- [ ] retry: done on f. 143r (three passes), f. 110 (3 and 5 columns), f. 201 (Brackx, every line) and part of f. 173; not done on ff. 123-124, 150, 177, 196, whose unread lines have had one transcription pass only
+- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; Brackx's letter sets and eleven code values from the clear copies (`key_contrib.json`); his per-leaf keys and codes 15, 34, 46, 51, 61, 73, 78, 82, 84 (`brackx2026/`, 22 Oct)
+- [x] retry: every Cipher-1 leaf re-transcribed in full and re-decoded by Brackx (issues #73, #77-#79, #83, 22 Oct 2026) and re-scored here with this project's decoder and a control (`brackx_validate.py`)
 
 ## Assumptions for George's review
 
