@@ -8,6 +8,7 @@ corrected it. Paths are relative to the target folder (or http(s) URLs, discoura
              "transcription": "transcr/R1072.txt", "decryption": "read/R1072.md",
              "translation": "read/R1072_en.md", "summary": "One or two sentences on what the document says."}],
   "key_file": "key_X.tsv"          (or a list)
+  "texts_withheld": "reason"         when the texts must not be republished (the owner asked); exempts the target
 
 One entry may cover several documents ("doc": ["a", "b"]) when one file holds them all. The site builder renders a
 "Full texts" section from it (short files inline, long ones linked); docs/_check_writeup.py refuses a reading
@@ -32,6 +33,7 @@ def texts_problems(folder_path, profile):
     """Problems with outcome.texts / key_file for a reading; [] when fine or when the target is not a reading."""
     if not needs_texts(profile): return []
     o = profile.get('outcome') or {}
+    if o.get('texts_withheld'): return []          # e.g. fr3029/fr3092: Lasry asked (22 Sept 2026) not to republish
     probs = []
     texts = o.get('texts') or []
     if not texts:
