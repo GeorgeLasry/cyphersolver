@@ -191,6 +191,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split under the one-key rule: R2236 (Dutch copies in another list) moved to its own entry r2236; this entry keeps R2239 (with R2237 as the key source)."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): r2239_groups.txt, the reading and the group-by-group decode; key = the word list rebuilt from R2237 and its alignment with the contemporary decipherment",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -252,6 +258,22 @@
     "date": "1906",
     "source": "Colenbrander, Gedenkstukken der algemeene geschiedenis van Nederland II (1906), no. 752, pp. 910-911"
    }
+  ],
+  "texts": [
+   {
+    "doc": "R2239",
+    "label": "R2239, the Hereditary Prince, Berlin, 12 Mar 1796",
+    "transcription": "r2239_groups.txt",
+    "decryption": [
+     "r2239_reading.txt",
+     "r2239_decoded.txt"
+    ],
+    "summary": "The Hereditary Prince (later King William I), in Berlin, reports the conference between Haugwitz and Lord Elgin on a Prussian démarche in France for the Orange restoration and the Dutch colonies. The body is printed in Colenbrander, Gedenkstukken II no. 752 (as to Prince Frederik), which was used as a crib after 70% was read without it; the opening paragraph, which Colenbrander omits, is read from the cipher alone."
+   }
+  ],
+  "key_file": [
+   "key_wordlist.txt",
+   "r2237_assign.txt"
   ]
  }
 }
