@@ -11,7 +11,7 @@
  "found": 2026,
  "note": "Recovered from the ciphertext of no. 94 (GitHub issue #62): 39 homophonic sign classes for 21 letters; about 20 code groups firm from context (qa que, rah y, mny de, qag se ...), 14 tentative; two-part code. Close to the Gran cifra of 1501-04 (Bergenroth's muy = de)."
 },
-  {"id": "k-lasry-sabran1631", "label": "Louis XIII-Sabran cipher of 1631 (Lasry, BNF Francais 4134)", "kind": "scholar's key", "by": "George Lasry", "year": 1631, "found": 2022, "note": "Reconstructed by Lasry; published as an image on Tomokiyo's GL.htm ('Melchior de Sabran (1631)'). Homophonic letters, a doubling sign and a few word signs; it also reads Louis XIII's letter in Baluze 155 f. 79."},
+  {"id": "k-lasry-sabran1631", "label": "Louis XIII-Sabran cipher of 1631 (Lasry, BNF Francais 4134)", "kind": "scholar's key", "by": "George Lasry", "year": 1631, "found": 2022, "note": "Recovered ciphertext-only by Lasry with CTTS (2022) and published as an image on Tomokiyo's GL.htm ('Melchior de Sabran (1631)'); completed in 2026 (PR 84): 22 letters with up to four signs, 41 two-digit word codes, ten name signs, three doubling signs. Reads Baluze 155 f. 79 and the letter-books fr. 4134 and fr. 4135.", "image": {"src": "sabran1633_key.png", "credit": "George Lasry, key sheet drawn in CTTS from BnF Francais 4134 (Gallica)", "caption": "Letters with their signs, word codes and name signs.", "page": "sabran1633.html"}},
   {"id": "k-tomokiyo-letellier-marca1644", "label": "Le Tellier-Marca cipher of 1644 (Tomokiyo's table)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1644, "note": "Rebuilt by Tomokiyo from the Le Tellier letters of 1644 in BnF Baluze 103 that carry decipherments of the time (ff. 171, 189, 200, 230); Cryptiana louisxiv0.htm."},
   {"id": "k-tomokiyo-vulcob-ancel", "label": "Vulcob and Ancel's Cipher 1575-1584 (Tomokiyo, frencheastern.htm)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1577, "found": 2026, "note": "Homophonic symbol alphabet with double-letter signs, word signs and plain-letter code words; reconstructed from the margin decipherments of BnF Colbert 398. Additions by Harumi-Matsuba (uu, g, ff, nn, null c; saturnus = l'Empereur, Juno = le Roy d'Espagne)."},
   {"id": "k-tomokiyo-fiesque", "label": "Tomokiyo's reconstructed table of Fiesque's cipher (French ciphers for German affairs)", "kind": "scholar's key", "by": "Satoshi Tomokiyo (Cryptiana)", "year": 1568, "note": "Cryptiana frencheastern.htm, reconstructed for BnF fr. 15919; values for signs outside the table inferred by Harumi-Matsuba (issue #52)."},
@@ -2261,7 +2261,7 @@
  "how": "rebuilt from",
  "note": "alphabet recovered ciphertext-only and code read in part by Brackx; reproduced here from random starts"
 },
-  {"key": "k-lasry-sabran1631", "target": "sabran1633", "how": "read unchanged", "note": "Applied by Harumi-Matsuba (issue #56) to nine leaves of fr. 4134; five name codes are not in the key"},
+  {"key": "k-lasry-sabran1631", "target": "sabran1633", "how": "rebuilt from", "note": "recovered ciphertext-only by George Lasry with CTTS (2022), nomenclator completed with Claude Opus 5.5 (2026); reads all 43 images of Baluze 155, fr. 4134 and fr. 4135, one code open"},
   {"key": "k-r5258", "target": "bilia1527", "how": "read unchanged", "note": "Bilia's own key; f. 102r deciphered by Harumi-Matsuba (issue #55) with the sheet values plus five context values; the project's copy agrees on 440 of 459 signs"},
   {"key": "k-tomokiyo-letellier-marca1644", "target": "letellier1644", "how": "adapted", "note": "Applied by Harumi-Matsuba (issue #54) with values added from the sister letter f. 230r aligned against its decipherment f. 232r"},
   {"key": "k-tomokiyo-vulcob-ancel", "target": "ancel1577", "how": "adapted", "note": "Applied by Harumi-Matsuba (issue #53) to Ancel's Oct-Dec 1577 passages, with small additions from the volume's margin decipherments"},
@@ -4084,7 +4084,6 @@
   "rohan1636": "not solved: the ciphertext is not in hand and no key was rebuilt",
   "emery1636": "not solved: the letters have not been seen; no key known",
   "r4248":"read from the contemporary decipherment on f. 86; Tomokiyo's second fr. 3053 table identified as its cipher but not applied; Mascon's cipher tried and gives nonsense",
-  "sabran1631": "read from George Lasry's published decipherment (GL.htm, 2022); his key not re-applied here",
   "brulart1615": "read from Satoshi Tomokiyo's reading with his reconstructed key (DECODE, 2021); key not re-applied here",
   "riksarkivet4284": "not solved: no key fits and none was rebuilt; nothing deciphered",
   "rusdorff1628": "surveyed only: no key identified or rebuilt; nothing deciphered",

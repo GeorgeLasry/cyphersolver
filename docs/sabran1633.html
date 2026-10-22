@@ -1,129 +1,104 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sabran to Bouthillier, Genoa 1633 — Read in part</title>
-<meta name="description" content="The cipher passages of Melchior de Sabran's 1633 letters from Genoa to Claude Bouthillier, copied in his letter-book BnF fr. 4134, deciphered in part with George Lasry's 2022 key by Harumi-Matsuba, an AI-only reading sent in as issue #56 and re-measured and spot-checked here. They report a plot to hand over Savona.">
-<link rel="stylesheet" href="style.css?v=20261014c">
-<meta name="date" content="2026-10-21">
-<meta name="last-modified" content="2026-10-21">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-</head><body id="top">
-<header class="nav"><div class="in">
-  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
-  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
-  <nav id="sitemenu" class="links" aria-label="Site">
-    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="army1902.html"><span class="st solved">key from adjacent plaintext</span><b>Japanese Army kana cipher</b><span class="yr">1902&ndash;04</span></a></li><li><a href="letellier1644.html"><span class="st partial">known key applied &middot; partial</span><b>Le Tellier to Marca 1644</b><span class="yr">1644</span></a></li><li><a href="sabran1633.html" aria-current="page"><span class="st partial">known key applied &middot; partial</span><b>Sabran to Bouthillier 1633</b><span class="yr">1633</span></a></li><li><a href="rusdorff1625.html"><span class="st solved">ciphertext-only break</span><b>Rusdorff to Oxenstierna 1625</b><span class="yr">1625</span></a></li><li><a href="mayenne1586c2.html"><span class="st partial">known key applied &middot; partial</span><b>Cipher-2 1586</b><span class="yr">1586</span></a></li><li><a href="ancel1577.html"><span class="st partial">known key applied &middot; partial</span><b>Ancel, Vienna 1577</b><span class="yr">1577</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><span class="st solved">63</span><b>Ciphertext-only break</b></a></li><li><a href="writeups.html#kind=extpt"><span class="st solved">12</span><b>Key from external plaintext</b></a></li><li><a href="writeups.html#kind=adjpt"><span class="st solved">80</span><b>Key from adjacent plaintext</b></a></li><li><a href="writeups.html#kind=extkey"><span class="st solved">24</span><b>External key matched</b></a></li><li><a href="writeups.html#kind=known"><span class="st solved">99</span><b>Known key applied</b></a></li><li><a href="writeups.html#kind=deciph"><span class="st solved">65</span><b>Existing decipherment</b></a></li><li><a href="writeups.html#kind=notsolved"><span class="st stuck">72</span><b>Not solved</b></a></li><li><a href="writeups.html#kind=na"><span class="st found">17</span><b>Not applicable</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 434 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
-    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="contributors.html">Contributors</a>
-    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
-    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
-  </nav>
-</div></header>
-<div class="search" id="search" hidden>
-  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
-    <form class="sform" role="search" onsubmit="return false">
-      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
-      <button type="button" class="sclose" aria-label="Close search">Esc</button>
-    </form>
-    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
-    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
-  </div>
-</div>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Louis XIII–Sabran cipher (1631–1635) — Read in part</title>
+<meta name="description" content="Louis XIII&rsquo;s letter of 1631 to Melchior de Sabran, French resident at Genoa, and the cipher passages of Sabran&rsquo;s letter-books of 1633 and 1635 (BnF Baluze 155, fr. 4134, fr. 4135), all in one cipher. George Lasry recovered the key from the ciphertext alone and deciphered 18 letters: Monaco, the Savona plot of 1633 and Genoa in the war of 1635.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<!-- site:nav -->
 <section class="hero">
-  <div class="cipherstrip">m a 3i 5 8 ff 7 S g dd pl 5 10 11 &middot; 9 ff tt z 9 nt g dd 9 pl z ff &hellip;<br>la &#10216;3i&#10217; de Savone dou[vestre] descouverte, l&rsquo;on a mis prisonniers le munitionnaire &hellip;</div>
-  <p class="kicker">Genoa &rarr; Paris &middot; homophonic letters with word signs (Lasry&rsquo;s key) &middot; 1633 &middot; known key, partial</p>
-  <h1>Sabran to Bouthillier, Genoa 1633</h1>
-<div class="parties"><figure class="party recipient"><img src="portrait_claude-bouthillier.jpg" alt="Claude Bouthillier" title="Claude Bouthillier: Portrait, 17th century, unknown artist. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Claude Bouthillier</figcaption></figure></div><!-- /parties -->
-  <p class="sub">Short cipher passages in the French resident&rsquo;s 1633 letter-book, deciphered in part with George Lasry&rsquo;s key by an outside contributor&rsquo;s AI pipeline: they tell of a plot to hand over Savona.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-21">21 October 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (74% of the cipher)</p><!-- /outcome -->
-<p class="credits">Contributed by <a href="contributors.html#harumi-matsuba">Harumi-Matsuba</a> (solution) and <a href="contributors.html#lasry">George Lasry</a> (key or decipherment used) &middot; Also credited &middot; <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (pointer to a source)</p><!-- /credits -->
-<div class="seal partial" aria-hidden="true"><span>known key</span></div>
+  <div class="cipherstrip">58 e2 y2 11 r q 8 m n h1 a+ e1 55 c2 8 e3 9- y1 7 r b 10 &hellip;<br>que touche ledit prince de Monacho &hellip;<br>7 a k = A &middot; 8 n = E &middot; 55 = prince &middot; 35 = Genes &middot; 2 = doubled letter</div>
+  <p class="kicker">Dijon and Genoa &rarr; Paris &middot; homophonic letters with a word nomenclator &middot; 1631&ndash;1635 &middot; key recovered by George Lasry</p>
+  <h1>The Louis XIII&ndash;Sabran cipher, 1631&ndash;1635</h1>
+  <p class="sub">One cipher served the King&rsquo;s letters to his resident at Genoa and the resident&rsquo;s reports home. George Lasry recovered its key from the cipher alone and deciphered 18 letters, from Monaco to a plot to seize Savona.</p>
+  <p class="meta">Daniel Bourdeau</p>
 </section>
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letters">The letters</a><a href="#cipher">The cipher and the key</a><a href="#reading">What the cipher says</a><a href="#checks">How it was checked</a><a href="#open">What remains open</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied, partial &middot; 879 of 891 symbols given a value, about three quarters in words</span></p>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from the ciphertext alone &middot; 3,352 of 3,353 signs in 43 images</span></p>
 <dl>
-  <dt>The letters</dt><dd>Copies of Melchior de Sabran&rsquo;s despatches from Genoa to Claude Bouthillier, secretary of state, in 1633. Nine leaves carry short passages in cipher inside clear French text.</dd>
-  <dt>Where</dt><dd>Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134 (Sabran&rsquo;s letter-book), ff. 46v, 50v, 54r, 57r, 57v, 66r, 66v, 69v, 73v; Gallica. No DECODE record.</dd>
-  <dt>The cipher</dt><dd>The cipher of Louis XIII&rsquo;s 1631 letter to Sabran: several signs for each letter (letters, digits, shapes), a doubling sign, a few signs for words, and some number codes for names that are not in the key.</dd>
-  <dt>How it was deciphered</dt><dd>Harumi-Matsuba transcribed the signs with AI models (Claude, checked by Codex and Claude Sonnet) and applied George Lasry&rsquo;s 2022 key. Here the reading was re-measured with the project&rsquo;s language model and two leaves were compared with the images.</dd>
-  <dt>What it says</dt><dd>A plot at Savona was discovered in September 1633; the munitionnaire and two others were arrested and brought to Genoa, and those taken spoke of &ldquo;donner la place&rdquo;.</dd>
-  <dt>Still open</dt><dd>Most of f. 50v and parts of ff. 54r and 57r form no words; five name codes; a few AI corrections that read worse; the 1635 volume fr. 4135. No person has checked the transcription.</dd>
-  <dt>Credit</dt><dd>Harumi-Matsuba (the transcription and reading, AI-only, <a href="https://github.com/dbourdeau/cyphersolver/issues/56">issue #56</a>); George Lasry (the key); Satoshi Tomokiyo (published the key and listed the passages).</dd>
+  <dt>The letters</dt><dd>Louis XIII to Melchior de Sabran, French resident at Genoa, Dijon, 28 March 1631; and 17 letters of Sabran to Bouthillier, secretary of state, copied in his letter-books of 1633 and 1635. All in French.</dd>
+  <dt>Where</dt><dd>Biblioth&egrave;que nationale de France: Baluze 155 f. 79 (DECODE R2748); Fran&ccedil;ais 4134 ff. 46v&ndash;73v; Fran&ccedil;ais 4135 ff. 132&ndash;252. All on Gallica.</dd>
+  <dt>The cipher</dt><dd>22 letters with up to four signs each (letters, digits and invented shapes), 41 two-digit codes for common words, ten signs for names, and signs that double the letter before them.</dd>
+  <dt>How it was solved</dt><dd>George Lasry recovered the key in 2022 with the built-in cryptanalysis of CTTS (CrypTool Transcriber and Solver), from the King&rsquo;s letter. In October 2026 he transcribed all 43 images and completed the code list with Claude Opus 5.5 and OpenAI Codex. Re-checked here mechanically, statistically and against an earlier independent reading.</dd>
+  <dt>What it says</dt><dd>The King keeps the Prince of Monaco in play without a treaty (1631); a sergeant-major offers Sabran the castles of Savona, a plot Savoy is running, and it is discovered (1633); Genoa helps the Spanish fleet while France fights for Valenza (1635).</dd>
+  <dt>Credit</dt><dd>Key, transcription, edition and translation by <a href="contributors.html#lasry">George Lasry</a> (pull request 84). An earlier AI reading of nine 1633 leaves by Harumi-Matsuba (issue 56) agrees with his on 88% of the letters.</dd>
+  <dt>Still open</dt><dd>One code (46); 212 name signs read from context only; a few runs that do not read; seven listed leaves and a 1636 copy not yet done.</dd>
 </dl>
 </div>
+<p>This page joins two earlier entries: Louis XIII&rsquo;s letter of 1631, which had its own page, and a partial reading of the 1633 letter-book sent in as issue 56. They are one cipher, so they are one entry.</p>
 
-<p>This is a sibling of <a href="sabran1631.html">Louis XIII to Sabran, 1631</a>, the letter in the same cipher that George Lasry deciphered in 2022. These are different letters, read by a different route, so they have their own page.</p>
+<h2 id="letters"><span class="num">01</span>The letters</h2>
+<p>Melchior de Sabran was the King&rsquo;s resident at Genoa from the end of 1629 to about 1638. Fran&ccedil;ais 4134 and 4135 are his own letter-books: copies of his despatches to &ldquo;Monsieur Bouthillier&rdquo;, with the secret passages copied in cipher. Claude Bouthillier countersigned the King&rsquo;s letter of 1631; his son L&eacute;on, comte de Chavigny, held the office from March 1632, and which of the two received each later letter is not settled. Most photographs show only part of a letter.</p>
+<table>
+<thead><tr><th>Source</th><th>Images</th><th>Cipher signs</th><th>Letters</th></tr></thead>
+<tbody>
+<tr><td>Baluze 155 f. 79r&ndash;v: Louis XIII to Sabran, Dijon, 28 March 1631</td><td>2</td><td>528</td><td>1</td></tr>
+<tr><td>Fran&ccedil;ais 4134 ff. 46v&ndash;73v: Sabran to Bouthillier, June&ndash;October 1633</td><td>14</td><td>1,061</td><td>8</td></tr>
+<tr><td>Fran&ccedil;ais 4135 ff. 132&ndash;252: Sabran to Bouthillier, May&ndash;December 1635</td><td>27</td><td>1,764</td><td>9</td></tr>
+</tbody>
+</table>
 
-<h2 id="letters"><span class="num">01</span> The letters</h2>
-<p>Melchior de Sabran was the French resident in Genoa from 1630 to 1637. BnF fr. 4134 is his letter-book for 1633, &ldquo;Troisi&egrave;me livre des negotiations du Sr de Sabran &agrave; Gennes&rdquo;: fair copies of his despatches to Claude Bouthillier, who handled foreign affairs for Louis XIII. The copies are in clear French, with short passages left in cipher, usually a line or a few lines, sometimes a single word between clear phrases. The copyist reproduced the cipher signs carefully; nothing was deciphered on the page.</p>
-<p>Satoshi Tomokiyo lists the passages on ff. 46, 50, 51, 54, 57, 66, 69 and 73 as having no contemporary decipherment and reports that Lasry found his 1631 key applies to them. The contribution covers nine leaves, 891 signs; f. 51 was not opened.</p>
-<figure data-credit="Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134 f. 66r, via Gallica (BnF IIIF)"><img src="sabran1633_f66r.jpg" alt="Five lines of French handwriting in which runs of letters, digits and invented signs alternate with clear words" loading="lazy"><figcaption>f. 66r, letter of 23 September 1633: &ldquo;Il est a croire que&rdquo; in clear, then <i>la &#10216;3i&#10217; de Savone douvestre descouverte, l&rsquo;on a mis prisonniers le munitionnaire et deux avec luy amenes</i> in cipher, with clear words between the runs. <span class="credit">Image: Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134 f. 66r, via Gallica (BnF IIIF).</span></figcaption></figure>
-
-<h2 id="cipher"><span class="num">02</span> The cipher and the key</h2>
-<p>Lasry reconstructed the key from Louis XIII&rsquo;s letter of 28 March 1631 to Sabran (Baluze 155 f. 79) and published it on Tomokiyo&rsquo;s Cryptiana as &ldquo;BNF Francais 4134&rdquo; (25 May 2022). Each letter has up to five signs: the copyist&rsquo;s <i>p</i> with a loop, <i>8</i>, a hooked <i>l</i>, an <i>N</i> and a barred <i>q</i> all stand for <i>e</i>. A few numbers are words (26 <i>de</i>, 28 <i>en</i>, 44 <i>la</i>, 58 <i>qui</i>, 59 <i>que</i>, 66 <i>tion</i>), 27 is a title, and the sign 2 doubles the letter before it. There is no word division. Sixty-six different signs occur in these nine leaves. Five codes are not in Lasry&rsquo;s table (3i, 35, 12, 20, 33) and are probably names.</p>
-
-<h2 id="reading"><span class="num">03</span> What the cipher says</h2>
-<figure class="creveal" data-src="reveal/sabran1633.json"></figure>
-<p>The passages that read form a running report on an affair at Savona, the Genoese port and fortress, in September 1633. In the contributor&rsquo;s word division (their conjectures in brackets):</p>
+<h2 id="key"><span class="num">02</span>The key</h2>
+<figure data-credit="George Lasry, key sheet drawn in CTTS from BnF Fran&ccedil;ais 4134 (Gallica), 22 Oct 2026"><img src="sabran1633_key.png" alt="Key sheet: each letter of the alphabet with its cipher signs drawn from the manuscript, then the codes for words and names" loading="lazy"><figcaption>George Lasry&rsquo;s key sheet, with the signs as the fr. 4134 clerk wrote them. Codes in brackets with a question mark are identified from context.</figcaption></figure>
 <ul>
-<li>f. 46v: <i>les citadins la desirent &hellip; fier les armes &hellip; le senat &hellip; avec moy</i></li>
-<li>f. 57v: <i>Savone &hellip; du chateau &hellip; assurer ses compagnons</i></li>
-<li>f. 66r (23 Sept): <i>la &#10216;3i&#10217; de Savone dou[vestre] descouverte, l&rsquo;on a mis prisonniers le munitionnaire et deux avec luy amenes &hellip; ceux qui sont pris &hellip; donner la place &hellip; troup[es] &hellip; l[e] gouvernement</i></li>
-<li>f. 66v (23 Sept): <i>du soup&ccedil;on &hellip; descouvert &hellip; de l&rsquo;intelligence dans cet estat</i></li>
-<li>f. 69v: <i>le munitionnaire de Savone &hellip; amenes ici &hellip; le discours</i></li>
-<li>f. 73v: <i>le general des postes &hellip; consil[l]</i></li>
+<li><b>Letters.</b> 22 letters, each with one to four signs: lower-case letters used for other letters, digits (7 = A, 8 = E, 9 = I, 10 = O, 11 = V) and invented shapes. There are 51 letter signs in all; S has four.</li>
+<li><b>Word codes.</b> 41 two-digit numbers for common words and syllables, numbered in the order of their first letter: 17 <i>bon</i>, 24 <i>ce</i>, 26 <i>de</i>, 35 <i>Genes</i>, 47 <i>monsieur</i>, 55 <i>prince</i>, 59 <i>que</i>, 66 <i>tion</i>, 68 <i>vous</i>.</li>
+<li><b>Names.</b> Ten signs for names, identified from their context: France, Spain, the Republic (of Genoa), Savoy, the Senate, Parma, Mantua, Piacenza, an agent, and Garbarino.</li>
+<li><b>Doubling.</b> Three signs repeat the letter before them.</li>
 </ul>
-<p>So a plot (<i>intelligence</i>) to deliver Savona was uncovered; the munitions officer and two others were arrested and brought to Genoa, and those taken spoke of handing over the place. Sabran wrote this in cipher because it touched French dealings inside the Genoese state. The code 3i, &ldquo;la &#10216;3i&#10217; de Savone&rdquo;, may be the citadel; that is a guess.</p>
-<p>Most of f. 50v, the longest passage (269 signs), does not read: a few words (<i>les places</i>, <i>il estoit dispose</i>, <i>secret</i>, <i>faire surprise</i>) stand among strings such as <i>aeed eteeittete</i>. Lines on ff. 54r and 57r are the same. The values are mostly legible on the images and the key fits the rest of the volume, so these stretches are more likely misread signs than a different key.</p>
-<figure data-credit="Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134 f. 66v, via Gallica (BnF IIIF)"><img src="sabran1633_f66v.jpg" alt="Four lines of French handwriting with runs of cipher signs among clear words" loading="lazy"><figcaption>f. 66v: <i>du soup&ccedil;on</i>, <i>descouvert</i> and, on the last line, <i>de l&rsquo;intelligence dans cet estat</i>. All 59 signs on this leaf agree with the contributed transcription. <span class="credit">Image: Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134 f. 66v, via Gallica (BnF IIIF).</span></figcaption></figure>
+<p>The clerks&rsquo; hands differ from leaf to leaf, so the same sign can look different. The clerk of ff.&nbsp;57 and 242v&ndash;245v, for example, writes H with a straight stem and F as a script L, where the others use a &ldquo;6&rdquo; and a straight b.</p>
 
-<h2 id="checks"><span class="num">04</span> How it was checked</h2>
-<p>Harumi-Matsuba&rsquo;s transcription was made by Claude Opus 5.5; where an independent transcription by OpenAI Codex disagreed, Codex and Claude Sonnet judged the sign on the image, and it was changed only when both agreed. Their figures: 879 of 891 signs have a value; on every leaf none of 1,000 shuffled keys scores as French-like as Lasry&rsquo;s; three fresh Codex transcriptions agree on 92.4&ndash;92.7% of signs; and the same procedure, run blind on Lasry&rsquo;s 1631 letter, recovers 92.0% of the letters of his decipherment. They call the result a partial reading. All of this is agreement between AI models: no person has checked the transcription.</p>
-<p>Re-measured here (21 October 2026, <code>measure.py</code>):</p>
+<h2 id="letter1631"><span class="num">03</span>The King&rsquo;s letter of 1631</h2>
+<figure data-credit="Biblioth&egrave;que nationale de France, Baluze 155 f. 79r, via DECODE R2748"><img src="sabran1633_baluze155.jpg" alt="French handwriting with runs of cipher letters, numbers and signs set among clear words" loading="lazy"><figcaption>Baluze 155 f. 79r: the first cipher passage, on the Prince of Monaco and Sabran&rsquo;s stay at Genoa, and the start of the second.</figcaption></figure>
+<p>The King thanks Sabran for his despatches and answers two points. The cipher carries the first, the Prince of Monaco, who had offered through his agent Orazio Rossi to come over to France. In George Lasry&rsquo;s reading the King declines the conditions, and keeps the door open:</p>
+<blockquote lang="fr">je n&rsquo;ai pas ivge a propos d&rsquo;y entendre pour plvsievrs bonnes raisons, n&rsquo;y de faire venir ici le sievr Rossy &hellip; sans entrer pour le present en avcvn avtre traicte avec luy, ny avssi faire avcvne rvptvre de la negociation</blockquote>
+<p>Richelieu broke off the Monaco talks after the peace of Cherasco so as not to offend Savoy; Monaco came under French protection only in 1641.</p>
+
+<h2 id="savona"><span class="num">04</span>The Savona plot, 1633</h2>
+<figure data-credit="BnF Fran&ccedil;ais 4134 f. 50v (Gallica); decipherment overlay by George Lasry in CTTS"><img src="sabran1633_50v.jpg" alt="A page of the 1633 letter-book with runs of cipher signs; George Lasry's decipherment is written in red above each sign" loading="lazy"><figcaption>Fran&ccedil;ais 4134 f. 50v, the page with the most cipher (276 signs), with George Lasry&rsquo;s decipherment in red: <i>sergent maior des chasteavx ve savine nomme garbarin</i> (<i>sergent maior des chasteavx de Savine nomme Garbarin</i>ldquo;ve savine<i>sergent maior des chasteavx de Savine nomme Garbarin</i>rdquo; for <i>de Savone</i>).</figcaption></figure>
+<p>In June 1633 Garbarino, sergeant-major of the castles of Savona, offered to hand them to France or to Savoy. Sabran passed the offer in cipher to the French agent in Savoy and kept out of sight, suspecting a trap. In the summer Garbarino came back dressed as a peasant and set out Savoy&rsquo;s plan; Sabran sent him away without an answer. In September the plot was discovered and the munitioner of Savona and two others were brought to Genoa. Genoese histories record Giambattista Garbarino of Sassello, executed for treating with Victor Amadeus of Savoy; Sabran&rsquo;s letters show the affair from the French side.</p>
+<p>From the letter on f. 57 (summer 1633), with the enciphered words in bold:</p>
+<blockquote lang="fr">qu&rsquo;il luy faisoit scavoir le lieu ou seroit <b>les echeles</b>, celluy ou debvoit arriver <b>mile homm[e]s</b> seullement <b>par mer</b>, nomme <b>le fornace</b>, <b>vn mile</b> sur <b>savone</b> a deux mousquettades de l&rsquo;endroict <b>dv chateav</b></blockquote>
+<p>&ldquo;He let him know the place where the ladders would be, and the one where a thousand men were to land, by sea only, named Le Fornace, a mile from Savona, two musket shots from the castle.&rdquo;</p>
+<figure data-credit="Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134 f. 66r, via Gallica (BnF IIIF)"><img src="sabran1633_f66r.jpg" alt="Lines of French handwriting in which runs of letters, digits and invented signs alternate with clear words" loading="lazy"><figcaption>Fran&ccedil;ais 4134 f. 66r, 23 September 1633: the plot discovered.</figcaption></figure>
+
+<h2 id="campaign"><span class="num">05</span>Genoa in the war of 1635</h2>
+<p>The nine letters of 1635 (Fran&ccedil;ais 4135) follow the first year of the open war with Spain. France, Savoy, Parma and Mantua besieged Valenza from September to the end of October and failed; on 13 September a Spanish fleet took the L&eacute;rins islands off Provence, and Genoa, formally neutral, let it use its ports. Sabran&rsquo;s ciphered passages propose to reopen the Monaco talks or to surprise Monaco with troops from Pinerolo (&ldquo;fewer than thirty Spaniards&rdquo; there), to take Tortona and Serravalle and prefer Novi to Gavi so as not to alarm Genoa, and record that Genoa&rsquo;s state inquisitors paid his own servants 25 &eacute;cus a month. The last letter, of 18 December, reports 4,000 Spaniards landed at Vado.</p>
+<p>The French text and English translation of all 18 letters, with notes, are in George Lasry&rsquo;s <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sabran1633/lasry2022/READING.md">READING.md</a>.</p>
+
+<h2 id="checks"><span class="num">06</span>How it was checked</h2>
 <ul>
-<li>The project&rsquo;s French model for 1570&ndash;1640 scores the decoded runs higher than all 1,000 shuffled keys on all nine leaves.</li>
-<li>666 of 896 decoded letters (74.3%) fall in French words of three or more letters; shuffled keys reach 27.0%. The measure is generous, so three quarters is an upper bound on what reads, below the project&rsquo;s 95% bar for a complete reading.</li>
-<li>The calibration recomputes from their files: 551 of 599 letters (92.0%); 540 (90.2%) for the blind first transcription alone.</li>
-<li>f. 66r and f. 66v compared sign by sign with the BnF images: 172 of 175 signs agree. On f. 66r one pair of signs is counted twice, and one correction the AI judges agreed on is wrong: the sign is <i>z</i> (r), not a hooked <i>l</i> (e), and with it the run reads <i>secre[t]</i>, as the contributor had suspected.</li>
+<li><b>Mechanically.</b> A short script (<code>decode.py</code>) applies George Lasry&rsquo;s key file to his transcription and gives his counts exactly: 3,353 cipher signs, 2,853 letter signs, 287 firm and 212 tentative code readings, and one unknown code.</li>
+<li><b>Statistically</b> (<code>docs/_validate.py</code>, French letter model, letter signs only). The reading scores &minus;2.13 per letter; random keys of the same shape score &minus;5.73 (7.8 standard deviations lower), and a key fitted to the shuffled signs &minus;3.26 (94 lower). Verdict: pass.</li>
+<li><b>Word cover.</b> 84% of the deciphered text falls in French words of three letters or more. The same measure gives 92% on the King&rsquo;s letter, which George Lasry deciphered in full in 2022, so that is its ceiling; shuffled keys give 37%.</li>
+<li><b>Against an independent reading.</b> Harumi-Matsuba&rsquo;s AI pipeline read nine 1633 leaves with Lasry&rsquo;s published key (issue 56). 88% of their decoded letters agree with his; on f.&nbsp;73v all of them, on f.&nbsp;66v 98%. On f.&nbsp;50v, where their runs formed no words, his read.</li>
+<li><b>On the image.</b> One cipher line of the King&rsquo;s letter was checked sign by sign on the DECODE photograph: 26 of 26 signs agree.</li>
+<li><b>Earlier readings.</b> George Lasry published the key and the 1631 decipherment on S. Tomokiyo&rsquo;s Cryptiana in 2022. No edition of the 1633 and 1635 passages was found.</li>
 </ul>
 
-<h2 id="open"><span class="num">05</span> What remains open</h2>
+<h2 id="open"><span class="num">07</span>What remains open</h2>
 <ul>
-<li>f. 50v, most of lines 17&ndash;23, 25, 26, 29, 30, 32 (about 200 signs); f. 57r lines 21, 24, 27, 36, 38; f. 54r line 9: no words. A person&rsquo;s transcription against the key is the next step.</li>
-<li>Name codes 3i, 35, 12, 20, 33, not in Lasry&rsquo;s key.</li>
-<li>AI corrections that read worse: f. 46v (<i>ie les excite</i> broken to <i>ieleseecite</i>), f. 57r line 24 (<i>capitan del&hellip;</i>), and f. 66r line 23 (wrong on the image, above).</li>
-<li>f. 51 (listed by Tomokiyo) and the 1635 volume, BnF fr. 4135 (ten leaves): same key, another copyist&rsquo;s forms; a trial gave only scattered words (<i>le Milanois</i>, <i>de la ligue</i>).</li>
-<li>The despatches as received by Bouthillier (Archives diplomatiques, Correspondance politique, G&ecirc;nes) are not digitised and were not checked for contemporary decipherments.</li>
-<li>Lasry found that his key applies to these letters and may have readings of his own; he has not been asked yet.</li>
+<li><b>Code 46</b>, once, in &ldquo;d&rsquo;une [46] de l&rsquo;arm&eacute;e navale&rdquo; (fr. 4135 f. 219).</li>
+<li><b>Name signs</b> read from context: 212 occurrences of France, Spain, the Republic, Savoy and the rest. In the hand of ff. 215v&ndash;216 the signs for France and Spain may be confused.</li>
+<li><b>Runs that do not read</b>, probably copyists&rsquo; slips: on f. 50v <i>veraivre</i>, <i>fevitga</i>; on f. 215 <i>parico</i>; on f. 228v <i>duc de s / vop</i>.</li>
+<li><b>Leaves not yet done</b> in the same cipher, all on Gallica: fr. 4134 f. 51; fr. 4135 ff. 217, 226v, 227v, 231v, 239v, 243; and a 1636 copy in Baluze 156 f. 157.</li>
+<li><b>The originals</b> as Bouthillier received them should be in the Archives diplomatiques (Correspondance politique, G&ecirc;nes); they are not digitised.</li>
 </ul>
 
-<!-- replay:start -->
-<figure class="sreplay" data-src="steps/sabran1633.json"></figure>
-<!-- replay:end -->
-<h2 id="sources"><span class="num">06</span> Sources</h2>
+<h2 id="sources"><span class="num">08</span>Sources</h2>
 <ul>
-<li>Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134, <a href="https://gallica.bnf.fr/ark:/12148/btv1b9060193z">Gallica btv1b9060193z</a>, views 100, 108, 115, 121, 122, 139, 140, 146, 154. Fran&ccedil;ais 4135, Gallica btv1b9060194c.</li>
-<li>Harumi-Matsuba, <a href="https://github.com/Harumi-Matsuba/sabran1631-public">sabran1631-public</a> (CC BY 4.0 data, MIT code), sent as <a href="https://github.com/dbourdeau/cyphersolver/issues/56">issue #56</a>, 20 October 2026; copied into the repository folder.</li>
-<li>George Lasry, key &ldquo;BNF Francais 4134&rdquo; (2022), in Satoshi Tomokiyo, &ldquo;George Lasry&rsquo;s solutions&rdquo;, <a href="https://cryptiana.web.fc2.com/code/GL.htm">Cryptiana</a>, &ldquo;Melchior de Sabran (1631)&rdquo;.</li>
-<li>Satoshi Tomokiyo, &ldquo;French Ciphers during the Reign of Louis XIII&rdquo;, <a href="https://cryptiana.web.fc2.com/code/louisxiii.htm">Cryptiana</a>.</li>
+<li>Biblioth&egrave;que nationale de France: <a href="https://gallica.bnf.fr/ark:/12148/btv1b9001401d">Baluze 155</a> (also DECODE <a href="https://de-crypt.org/decrypt-web/RecordsView/2748">R2748</a>), <a href="https://gallica.bnf.fr/ark:/12148/btv1b9060193z">Fran&ccedil;ais 4134</a>, <a href="https://gallica.bnf.fr/ark:/12148/btv1b9060194c">Fran&ccedil;ais 4135</a>; the <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc505343">catalogue of fr. 4133&ndash;4138</a>, which dates the letters by folio.</li>
+<li>George Lasry: the key, transcription, edition and translation, <a href="https://github.com/dbourdeau/cyphersolver/pull/84">pull request 84</a>, files in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sabran1633/lasry2022">targets/sabran1633/lasry2022/</a>.</li>
+<li>S. Tomokiyo, <i>Cryptiana</i>: <a href="https://cryptiana.web.fc2.com/code/GL.htm">&ldquo;Ciphers Solved by George Lasry&rdquo;</a> (&ldquo;Melchior de Sabran (1631)&rdquo;, the 2022 key and overlays) and <a href="https://cryptiana.web.fc2.com/code/louisxiii.htm">&ldquo;French Ciphers during the Reign of Louis XIII&rdquo;</a> (the list of Sabran cipher passages).</li>
+<li>Harumi-Matsuba, the earlier reading of nine fr. 4134 leaves: <a href="https://github.com/dbourdeau/cyphersolver/issues/56">issue 56</a>.</li>
+<li>G. Saige, <i>Monaco, ses origines et son histoire</i> (1897), pp. 195&ndash;197; F. Donaver, <i>La storia della repubblica di Genova</i>, II (1913), pp. 278&ndash;281; D.-L.-M. Avenel, <i>Lettres &hellip; du cardinal de Richelieu</i>, III&ndash;VI (1858&ndash;1867); E. Sue (ed.), <i>Correspondance de Sourdis</i>, I (1839).</li>
 </ul>
-<p class="muted">Notes, the contributed files and the re-measure: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sabran1633">targets/sabran1633/</a> in the repository.</p>
+<p class="muted">Notes, George Lasry&rsquo;s files and the checks: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sabran1633">targets/sabran1633/</a>.</p>
 </main>
-<footer><div class="in">
-  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France, Fran&ccedil;ais 4134, via Gallica</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="oxenstierna1633.html" rel="prev">&larr; Letters to Oxenstierna 1633 1633</a><a href="ormonde.html" rel="next">Ormonde 1634&ndash;35 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
-</div></footer>
-<script src="cipher-reveal.js?v=f00596e5" defer></script>
-<script src="solve-replay.js?v=20261014c" defer></script>
-<script src="zoom.js?v=20261014c" defer></script>
-<script src="site.js?v=20261014c"></script>
+<!-- site:footer -->
 </body>
 </html>
