@@ -165,6 +165,12 @@
    "kind": "reading",
    "what": "Cross-reading the letters fills groups the decipherers left blank (pur, mes, san, dun, tam) and corrects two copyist errors; fourteen groups still open.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Cg.13 transcriptions f10_cipher.txt and f12_cipher.txt, the 1589 decipherer's fair copies f14_clear.txt and f76_clear.txt, and this project's readings copied from NOTES.md to texts/A_reading.md and texts/B_reading.md; key key_cg13_partial.tsv",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -183,6 +189,11 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "1589 decipherer's fair copies ff. 14 and 76; Phelippes's interlinear readings f. 5", "date": "1589"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "published Cg.13 table fragment, used to check and fill the partial table", "source": "S. Tomokiyo, Thomas Phelippes' Deciphering of Spanish Ciphers Found in French Archives (cryptiana)"}
-  ]
+  ],
+  "texts": [
+   {"doc": "A_f10", "label": "Letter A, f. 10 (sent original) / f. 14 (the 1589 decipherer's copy), San Lorenzo, 7 Sept 1589", "transcription": "f10_cipher.txt", "decryption": ["f14_clear.txt", "texts/A_reading.md"], "summary": "Philip II to Bernardino de Mendoza, his ambassador in France: two papers smuggled out of England report that Manuel de Andrada, a Portuguese, has gone to France with letters for the King of France and the Prince of Béarn, and that Antonio de Goda, governor of a castle at the mouth of the harbour of Plymouth, might hand it over; Mendoza is to report what he learns."},
+   {"doc": "B_f12", "label": "Letter B, f. 12 (sent original) / f. 76 (the 1589 decipherer's copy), San Lorenzo, 7 Sept 1589", "transcription": "f12_cipher.txt", "decryption": ["f76_clear.txt", "texts/B_reading.md"], "summary": "Philip II to Mendoza: receipt of his letters of July and August; the death of Henry III is a great pity; with France in confusion Mendoza is not to leave the kingdom without a new order, and is to send news of England's designs and of its plots with the Prince of Béarn."}
+  ],
+  "key_file": "key_cg13_partial.tsv"
  }
 }

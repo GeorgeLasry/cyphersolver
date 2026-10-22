@@ -193,6 +193,12 @@
    "kind": "verification",
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): the ministerial letter R1955, in Michell's envoy code, moved to its own entry targets/r1955/ with its transcriptions and WAINUT's partial decoding; this entry keeps R1957 and the cabinet code.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Bourdeau's transcription (transcription.txt, ct.txt) and WAINUT's (key1751/R1957_tx.txt); WAINUT's group-by-group alignment with PC 5263 (key1751/R1957_decipherment.tsv), the blind v1 decode and alignment; the printed concept linked on archive.org (PC 8 is not copied into the folder); key key1751/key_cabinet_v2_final.tsv and the curated evidence file",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -251,6 +257,25 @@
     "date": "2026-10-11",
     "source": "https://github.com/dbourdeau/cyphersolver/pull/29"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R1957",
+    "label": "R1957, Frederick II to Michell, Berlin, 28 Dec 1751 (PC 8 no. 5263)",
+    "transcription": [
+     "transcription.txt",
+     "ct.txt",
+     "key1751/R1957_tx.txt"
+    ],
+    "decryption": [
+     "key1751/R1957_decipherment.tsv",
+     "key1751/blind_R1957_key_cabinet_v1_frozen_20261011T210822.txt",
+     "key1751/align_R1957.txt",
+     "https://archive.org/details/politischecorres08freduoft"
+    ],
+    "summary": "Frederick II to his secretary Louis Michell in London: he agrees that the King of Sardinia will join the Austro-Spanish treaty, has learned that Vienna and St Petersburg plan to make Prince Charles of Lorraine King of Poland, and asks Michell to find out what London knows, how long the English ministry's pacific system will last, and to report to the King alone. The text is printed from the minute in the Politische Correspondenz, vol. 8 (1882), no. 5263."
+   }
+  ],
+  "key_file": ["key1751/key_cabinet_v2_final.tsv", "key1751/key_cabinet_v2_curated.tsv"]
  }
 }

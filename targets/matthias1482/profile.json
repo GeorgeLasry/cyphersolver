@@ -141,6 +141,12 @@
    "kind": "reading",
    "what": "'illic faciet [q-sign] venient' against printed 'convenire', and two signs after 'regina' on line 3, left unresolved.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the letter with its cipher runs as read from the glyphs (NOTES.md, copied to texts/R1156_decryption.md), Fraknói's 1895 printed text extracted from fraknoi_v2.txt (texts/R1156_fraknoi1895.txt), and the rebuilt key copied from NOTES.md (texts/key.md); the glyph sequence itself was never written out, so there is no transcription (project work)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -166,6 +172,10 @@
   "notes": "Printed 1877/1895; re-read here from the glyphs with four corrections to the print. NOTES Status says 'read'; the README lists it under 'Found already solved by others', which this class follows. codes_open counts the three identified name signs plus the two unread signs after 'regina' as 5 (the README row calls those two 'name signs'; NOTES only '2 signs').",
   "credits": [
     {"who": "fraknoi", "role": "key or decipherment used", "note": "printed text (Mátyás király levelei II no. 131; also Magyar diplomácziai emlékek III no. 14, 1877) aligned to rebuild the key; four passages corrected", "date": "1895", "source": "Fraknói, Mátyás király levelei. Külügyi osztály II (1895), no. 131, pp. 232-233"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R1156", "label": "R1156, Pozsony, 1 June 1482", "decryption": ["texts/R1156_decryption.md", "texts/R1156_fraknoi1895.txt"], "summary": "King Matthias Corvinus to Duke Ercole I of Ferrara, his brother-in-law, five weeks after Venice opened the War of Ferrara: he and Queen Beatrix had resolved to send 500 horse, among them 100 hussars, but found no safe road; his captain Balázs Magyar goes to Croatia towards the Venetian border to gather troops. Printed by Fraknói (1895, no. 131); re-read here from the glyphs, correcting four passages of the print."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

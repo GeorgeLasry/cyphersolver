@@ -106,6 +106,12 @@
    "kind": "verification",
    "what": "Paragraph letters match the letter's margin letters; decipherment openings continue the clear text before each block; code sign ba (V. Md.) sits where the decipherment has 'a V. Md.' in block C.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contemporary decipherment (doc. 91 bis) and marginal glosses, as transcribed in NOTES.md, copied to texts/R9961_decryption.md; the cipher (Luo's Cifrario 22) was never transcribed (project work)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -119,6 +125,9 @@
   "notes": "Read at the time; decipherment bound as doc. 91 bis. Catalogue entry 203 removed; no write-up.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment bound as doc. 91 bis, with marginal decipherments"}
+  ],
+  "texts": [
+   {"doc": "R9961", "label": "R9961 (R9962 = its first leaf), AGS Estado leg. 853 doc. 91, Rome, 24 Oct 1531", "decryption": "texts/R9961_decryption.md", "summary": "Giovanni Antonio Muscetula, Charles V's agent in Rome, reports the Pope's talk: the French King used his mother's death as a pretext to avoid the meeting with the Emperor; England urges France to make war on the Emperor; the Pope advises Charles to move the diet of Speyer nearer Italy and Austria in case of Lutheran unrest. Deciphered at the time; the decipherment is bound with the letter as doc. 91 bis."}
   ]
  }
 }
