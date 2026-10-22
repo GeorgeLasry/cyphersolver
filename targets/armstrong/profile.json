@@ -283,7 +283,8 @@
    "what": "The 1804-07 printed decoded despatches were not re-read against roll-13 group lists in this session.",
    "result": "failed"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1581 tokens, 539 types, en-modern order 4: reading -2.032 per letter; random keys -3.11 (z 11.7); key annealed onto shuffled ciphertext best -2.243 (mean -2.254, z 18.1); annealer on the real text -2.233. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1581 tokens, 539 types, en-modern order 4: reading -2.032 per letter; random keys -3.11 (z 11.7); key annealed onto shuffled ciphertext best -2.243 (mean -2.254, z 18.1); annealer on the real text -2.233. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): copied the code groups from the PS string in decode972.py to texts/ps30aug1808_transcription.txt; saved the decode972.py ps output with the connected reading from NOTES.md as texts/ps30aug1808_decryption.md; key files code972_partial.json, pairs.txt, additions972.tsv.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 1581, "types": 539, "tokens_per_type": 2.93, "score": -2.032, "nulls": {"random keys": {"n": 200, "mean": -3.11, "sd": 0.092, "max": -2.918, "z": 11.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.254, "sd": 0.012, "max": -2.243, "z": 18.1, "p": 0.1429}}, "power": -2.233, "verdict": "pass", "notes": "claimed per-occurrence score -2.018; polyphony 0.01; 6 unread tokens left out; annealer on the real text from random keys reached -2.233"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -310,6 +311,10 @@
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial THE=972 table from the 4 May 1806 known-plaintext letter (code972_partial.json, 227 entries)"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "State Department clerk's interlinear pencil decodes on NARA M34 rolls 13-14"},
     {"who": "feyseel", "role": "transcription", "note": "PR #21: frame collation of the 15 and 22 Feb 1808 despatches, correcting Founders' group lists", "date": "2026-10-04", "source": "https://github.com/dbourdeau/cyphersolver/pull/21"}
-  ]
+  ],
+  "texts": [
+   {"doc": "ps30aug1808", "label": "Coded postscript, 30 Aug 1808", "transcription": "texts/ps30aug1808_transcription.txt", "decryption": "texts/ps30aug1808_decryption.md", "summary": "John Armstrong, US minister in France, tells Madison in a coded postscript that Russel (most probably Jonathan Russell) ought to be the consul, being American-born and better qualified than any other candidate, and that O'Mealy comes next but is, like Warden, an Irishman: the same animus against David Bailie Warden that led Armstrong to remove him in 1810."}
+  ],
+  "key_file": ["code972_partial.json", "pairs.txt", "additions972.tsv"]
  }
 }
