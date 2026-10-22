@@ -125,6 +125,12 @@
    "kind": "verification",
    "what": "Split from orpo1942 under the one-key rule (George Lasry, 14 Oct 2026): A115 is in the daily key of 16 June 1942 (discriminator ARTTN), not the 27 Feb key, and its text exists as Bletchley's decrypt; the 27 Feb messages stay in orpo1942. align115c.py, align115h.py and hsspf_decrypt_1.png moved here.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the ciphertext a115.txt (from Weierud 2020) and Bletchley's contemporary decrypt, quoted in NOTES.md, copied to texts/A115_decryption.md; nothing was deciphered here",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -170,6 +176,15 @@
     "date": "2026-09",
     "source": "reader email, Sept 2026",
     "published": false
+   }
+  ],
+  "texts": [
+   {
+    "doc": "A115",
+    "label": "A115, SQF Mogilev to ALQ via DQH Berlin, 16 June 1942 (Bletchley Park's decrypt)",
+    "transcription": "a115.txt",
+    "decryption": "texts/A115_decryption.md",
+    "summary": "An Ordnungspolizei radiogram of the Higher SS and Police Leader Russia Centre to Himmler and the Chief of the Order Police: in partisan fighting on the Bobruisk-Mogilev road 16 men of Police Battalion 51 fell; the village of Borki, where arms and ammunition were found, was razed and its inhabitants 'liquidated'. Borki (Kirovsk district, Mogilev region) was destroyed with six neighbouring settlements on 15 June 1942."
    }
   ]
  }

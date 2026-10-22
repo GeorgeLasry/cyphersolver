@@ -74,7 +74,8 @@
   {"date": "2026-09-15", "kind": "solver", "technique": ["hill climbing", "language-model scoring"], "what": "Quadgram hill-climber over the order of rows 2-21 (solve20.py), without the published plaintext, finds the cyclic key; its start is fixed by the text and by the 14 longer columns.", "result": "worked"},
   {"date": "2026-09-15", "kind": "verification", "what": "The 414 plaintext cells equal the token count of the published plaintext and read as it does, apart from transcription slips (c/e, U for ll, 6 for o).", "result": "worked"},
   {"date": "2026-09-24", "kind": "literature search", "what": "Checked Curran's Camden edition of Perwich's despatches (1903), pp. 82-83: it prints this despatch and omits the cipher block without a mark (only deciphered portions printed).", "result": "worked"},
-  {"date": "2026-09-24", "kind": "verification", "what": "Aligned the first 173 plaintext cells in key order with the published text for a site reveal (page withdrawn): every difference is a transcription slip (c/e, u/v, U for ll).", "result": "worked"}
+  {"date": "2026-09-24", "kind": "verification", "what": "Aligned the first 173 plaintext cells in key order with the published text for a site reveal (page withdrawn): every difference is a transcription slip (c/e, u/v, U for ll).", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Tomokiyo's transcription perwich.txt, the published plaintext plaintext_tna.txt with the TNA announcement linked, and the reproduction from the transcription copied from NOTES.md to texts/f180_reproduction.md", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -95,6 +96,9 @@
     {"who": "biermann", "role": "key or decipherment used", "note": "broke it independently with Lasry and Tomokiyo; TNA published plaintext reproduced here", "date": "2025-10-14", "source": "https://www.nationalarchives.gov.uk/explore-the-collection/the-collection-blog/secret-diplomatic-message-deciphered-after-350-years/"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "broke it independently with Lasry and Biermann; TNA published plaintext reproduced here", "date": "2025-10-14", "source": "https://www.nationalarchives.gov.uk/explore-the-collection/the-collection-blog/secret-diplomatic-message-deciphered-after-350-years/"},
     {"who": "tomokiyo", "role": "transcription", "note": "transcription of SP 78/129 f. 180, from which the column order was reproduced"}
+  ],
+  "texts": [
+   {"doc": "f180", "label": "TNA SP 78/129 f. 180, Perwich to Arlington, Paris, 9 April 1670", "transcription": "perwich.txt", "decryption": ["plaintext_tna.txt", "texts/f180_reproduction.md", "https://www.nationalarchives.gov.uk/explore-the-collection/the-collection-blog/secret-diplomatic-message-deciphered-after-350-years/"], "summary": "A ciphered block in William Perwich's despatch from Paris to Lord Arlington: the French soldiers grumble that Louis XIV has grown cool towards them and is given up to his mistresses, who favour peace; a great man said that the King told his brother not to oppose Madame's journey. Broken in 2025 by Matthew Brown, and independently by George Lasry, Norbert Biermann and Satoshi Tomokiyo (a 20-column transposition with nulls); the numbers are unread nomenclator codes."}
   ]
  }
 }
