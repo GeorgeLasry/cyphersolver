@@ -109,6 +109,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split under the one-key rule from benedict1399: this letter is from another sender and its key is not shown to be Benedict XIII's (the key was rebuilt on doc. 1068 only), so it gets its own entry with no claim about its key."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the one printed deciphered sentence copied from NOTES.md to texts/jafet1400_decryption.md, with Puig y Puig 1920 on Google Books linked; Puig's full printed passage not yet copied (project work); no transcription, since the cipher is neither imaged nor printed (needs physical access to the ACB original)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -138,6 +144,17 @@
     "note": "printed decipherment (1920), appendix XXXVII n. 2",
     "date": "1920",
     "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "jafet1400",
+    "label": "P. Jafet to Francesc Climent, 15 Sep 1400 (Puig y Puig's printed decipherment)",
+    "decryption": [
+     "texts/jafet1400_decryption.md",
+     "https://books.google.com/books?id=CuOlkxWnk-EC"
+    ],
+    "summary": "A cipher letter of P. Jafet, of Benedict XIII's circle, to Francesc Climent, Benedict XIII's chamberlain and agent, among Climent's Schism papers in the Arxiu Capitular de Barcelona. Puig y Puig deciphered and printed it in 1920; the one deciphered sentence he prints says that some of Climent's letters 'sunt intercepte hodie et recuperate'."
    }
   ]
  }

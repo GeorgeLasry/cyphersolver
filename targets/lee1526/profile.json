@@ -393,6 +393,12 @@
    "what": "Catalogue 115 (R8551, Vesp. C IV f. 156): both images viewed at full resolution; Lee's own clear English hand, Valladolid 5 June 1527, no cipher sign (a struck-through passage is ordinary script); matched to L&P IV 3152 by the christening of Prince Philip.",
    "result": "worked",
    "date": "2026-09-22"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): sign-by-sign readings r8473_reading.txt and r8533_reading.txt (transcription and decryption in one file); R8465 signs copied from NOTES.md to texts/R8465_transcription.txt; R8566's contemporary interlinear decipherment plaintext.txt (its cipher signs were never transcribed); key additions to Tomokiyo's table copied from NOTES.md and r8473_reading.txt to texts/key.md",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -410,6 +416,13 @@
     {"who": "contemporary", "role": "key or decipherment used", "note": "Tuke's decipherments and interlinear decipherments (R8566, R8473 image 4, R8559), used as checks"},
     {"who": "brewer", "role": "key or decipherment used", "note": "Letters and Papers Henry VIII IV no. 3028 used as crib for R8533", "source": "Letters and Papers, Henry VIII, vol. IV"},
     {"who": "brewer", "role": "prior solution", "note": "L&P IV no. 2097 already prints the catalogue 102 passage read by the editors", "source": "Letters and Papers, Henry VIII, vol. IV, no. 2097"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R8566", "label": "R8566, Vesp. C IV ff. 170-173, Valladolid, 17 July 1527 (contemporary interlinear decipherment)", "decryption": "plaintext.txt", "summary": "Joint despatch of Edward Lee and Girolamo Ghinucci to Wolsey; four short cipher runs, each deciphered above the line at the time. Among them, Lee and Ghinucci propose the daughter of Portugal for the Duke of Richmond (Henry Fitzroy) and discuss giving the duchy of Milan back to Francesco Sforza."},
+   {"doc": "R8465", "label": "R8465, Vesp. C III f. 238v, Seville, 15 April 1526", "transcription": "texts/R8465_transcription.txt", "decryption": "r8465_reading.txt", "summary": "Lee to Wolsey, holograph: three cipher lines advising that if Wolsey speaks of the matter to the Emperor's ambassador who is coming, they will be glad to see him content. Letters and Papers Henry VIII iv no. 2097 already prints the passage."},
+   {"doc": "R8473", "label": "R8473, Vesp. C III f. 245, Seville, 13 May 1526", "transcription": "r8473_reading.txt", "decryption": "r8473_reading.txt", "summary": "Lee to Henry VIII: two cipher blocks, read sign by sign with Tomokiyo's key and checked against Tuke's contemporary decipherment (the record's image 4). The Imperial court waits on events in France; the Spaniards about Milan; the French King sends men-of-arms and foot into Burgundy; Hesdin not to be delivered; Moncada's commission after suppressing the Moors of Valencia (L&P IV 2173)."},
+   {"doc": "R8533", "label": "R8533, Vesp. C IV ff. 109-110, Valladolid, 20 April 1527 (read in part, 414 of 457 cipher words)", "transcription": ["r8533_reading.txt", "r8533_reading_pass1.txt"], "decryption": ["r8533_reading.txt", "r8533_reading_pass1.txt"], "summary": "Lee to Wolsey, a duplicate of his letter of 8 April (L&P IV 3028, used as crib, lp3028.txt): Almain's warning not to trust the French King, Perot's letter on the King of England's offer of his daughter and Boulogne, the Duke of Richmond 'whome they intend to make kynge of Irelande', the French King hated in France, and wives for Richmond (the daughter of the queen of Portugal, the daughters of Denmark)."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

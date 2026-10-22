@@ -90,6 +90,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9059630p/f148/full/1600,/0/default.jpg): f86r cipher lines 8-11: contemporary interlinear reads \"comme a tous ceux qui affectionnent ceste union sans toutesfois par trop vous fonder ou confier aux belles parolles de son agent ny des autres qui penchent de son coste car ilz sont tous trompeurs Mais si nous\" = his excerpt; no own sign-by-sign decode (key table not checked) Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): only George Lasry's report excerpt (lasry_entry.md) is in the repository; his full transcription and decryption are not, so they are recorded as missing (needs contributor: George Lasry). A contemporary interlinear decipherment is on ff. 86 and 112 (image only); the letters are probably printed in Jeannin, Négociations (1656; 1875).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,14 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Only 2/15 pages deciphered (+2 in part). Interlinear on ff86 and 112. Jeannin negotiations 1607 printed (Negociations du president Jeannin, 1656) - likely in print.",
-    "first_break": false
+    "first_break": false,
+    "texts": [
+      {
+        "doc": "jeannin1607",
+        "label": "George Lasry's reading (report status: 2/15 pages transcribed; 2 more in part; 2/15 pages deciphered; 2 more in part); only the excerpt from his report is in the repository",
+        "decryption": "lasry_entry.md",
+        "summary": "Instructions on negotiations with England and the United Provinces, support for Prince Maurice, and the choice between peace and a truce with Spain."
+      }
+    ]
   }
 }

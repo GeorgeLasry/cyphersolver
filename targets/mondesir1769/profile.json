@@ -86,6 +86,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b9060477w/f53.item): f50r \"Duplicata. De mondesir a l isle de france le 20 9bre 1769\", \"ma chere amie\", clear French with pigpen-style cipher runs (e.g. after \"pour ne pas\"); sign shapes match his table (angle/box signs, dotted variants); a symbol-level decode of a run was not completed at this resolution Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): only George Lasry's report excerpt (lasry_entry.md) is in the repository; his full transcription and decryption are not, so they are recorded as missing (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -121,6 +127,14 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 3950 of 4923 elements deciphered, 949 counted as separators, 24 unidentified - complete by sense likely but his own figures are ambiguous. Clear text names Herman and M. de Bougainville; writer probably identifiable from the forge enterprise.",
-    "first_break": true
+    "first_break": true,
+    "texts": [
+      {
+        "doc": "mondesir1769",
+        "label": "George Lasry's reading (report status: 13/13 pages transcribed; 11/11 cipher pages deciphered); only the excerpt from his report is in the repository",
+        "decryption": "lasry_entry.md",
+        "summary": "A private letter from Isle de France criticizes the governor’s conduct, weak coastal defence and food shortages caused by price controls. The writer also discusses an artillery appointment, the forge enterprise, debts, and selling his share to provide for his wife."
+      }
+    ]
   }
 }
