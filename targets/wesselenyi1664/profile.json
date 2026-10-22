@@ -75,7 +75,8 @@
   {"date": "2026-09-22", "kind": "literature search", "what": "Web search for a printed edition or prior decipherment of the draft.", "result": "failed"},
   {"date": "2026-09-22", "kind": "sibling key", "what": "Fetched R675 and keys R665-R673, R676-R690; scored each against the recovered values. R672 has the same reversed alphabet (19 agreements); its 60/64 (Ka/Ku) do not fit.", "result": "partial"},
   {"date": "2026-09-22", "kind": "verification", "what": "Re-decoded every run with the final key; all Latin in context. Codes 60, 64 left unread.", "result": "worked"},
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 241 tokens, 25 types, la order 4: reading -2.164 per letter; random keys -5.101 (z 5.8); key annealed onto shuffled ciphertext best -2.866 (mean -2.98, z 10.0); annealer on the real text -2.573. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 241 tokens, 25 types, la order 4: reading -2.164 per letter; random keys -5.101 (z 5.8); key annealed onto shuffled ciphertext best -2.866 (mean -2.98, z 10.0); annealer on the real text -2.573. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R674 linked to transcription.txt, reading.md (text, translation, notes) and decode_out.txt; key_file key.py", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "la", "file": "validation.tsv", "tokens": 241, "types": 25, "tokens_per_type": 9.64, "score": -2.164, "nulls": {"random keys": {"n": 200, "mean": -5.101, "sd": 0.51, "max": -3.728, "z": 5.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.98, "sd": 0.082, "max": -2.866, "z": 10.0, "p": 0.1429}}, "power": -2.573, "verdict": "pass", "notes": "claimed per-occurrence score -2.164; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.573"}, 
   "method": "key recovered from ciphertext-only",
@@ -96,6 +97,10 @@
   "notes": "Whole draft read ciphertext-only; alphabet later confirmed by DECODE key R672. Open: two code numbers.",
   "credits": [
     {"who": "contemporary", "role": "verification", "note": "Teleki collection key no. 12 (DECODE R672), found afterwards, has the same alphabet"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R674", "label": "R674, MNL OL E 199, Wesselényi's Latin draft, c. 1663-64", "transcription": "transcription.txt", "decryption": ["reading.md", "decode_out.txt"], "summary": "A Latin draft of Ferenc Wesselényi, probably to Leopold I, in the Turkish war of 1663-64: if the Lord General [60] joins the regiments of Heister, Schneidau and Sporck and 2,000 foot are added, 'we' can camp at [64], which would then more readily accept an imperial garrison; otherwise 'ista nux durissima ... frangi debet'."}
+  ],
+  "key_file": "key.py"
  }
 }
