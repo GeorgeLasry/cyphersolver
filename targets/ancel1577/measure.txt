@@ -1,0 +1,17 @@
+# ancel1577 measure (measure.py), lang model fr-1530-despatches order 5 no spaces, vocabulary 20298 words
+page	tokens	sym	unk	codes	codes_checked	fraction_read	LM_real	LM_shuf_med	coh_real	coh_shuf_med
+p525	930	904	4	22	8	0.981	-1.888	-6.618	0.962	0.490
+p526	538	531	1	6	4	0.994	-2.290	-6.616	0.952	0.509
+p539	197	183	0	14	4	0.949	-1.810	-6.261	0.919	0.497
+p561	739	725	1	13	9	0.993	-2.205	-6.543	0.959	0.510
+p562	856	838	10	8	6	0.986	-2.068	-6.471	0.956	0.500
+p563	562	549	2	11	4	0.984	-1.987	-6.454	0.957	0.489
+p565	563	545	0	18	7	0.980	-2.269	-6.475	0.943	0.508
+p570	26	24	0	2	0	0.923	-2.387	-6.911	0.885	0.500
+p033	261	253	0	8	0	0.969	-1.918	-6.274	0.954	0.513
+seven read pages: tokens 4385, symbols with value 4275, unreadable/unkeyed 18, plain-letter groups 92; fraction_read 0.984; coherent share (tokens inside dictionary words) 0.954 vs shuffled-key median 0.500
+calib p258: 22 rows in p258_decode.tsv, header ['258.01', 'quel {plus}A nui sancea {Bellum} a{benitor} soNfilzau sQ']
+calib p285: 13 rows in p285_decode.tsv, header ['285.01', '{Lesd} {Deputez} {de} {Saxe} {ont} {opinion} {quelcun?} {Medira?} {parachever?} {cette} {saison}']
+calibration recomputed with their calib.py (run read-only on contributed/calib, margin = five-reader word majority, *_margin_vote_text.txt):
+  p258 339/398 = 85.2%, p285 133/158 = 84.2%, both 472/556 = 84.9% (they report 469/546 = 85.9%; same order, small file drift)
+reading marks in contributed/READING.en.md (125 lines incl. 524 end and 570): ◎ 27, ○ 69, △ 29 (△ = larger conjecture, unreadable symbols or unclear syntax)
