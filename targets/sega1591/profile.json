@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b90582263/f158.item): f148v (canvas f158) after clear \"Che Lignerac e stato inuiato di ordine di\": \"12 8.. omega 33 32+ 28 37 38 41 21 35 24 37 42 26 31 42\" with Meister key 65 -> [Umena] in Poitu et Bretagna, matching his excerpt; f148r clear text (Navarre, Christmas mass at St Denis) matches contents Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Key printed by Meister 1906 (key 65), so a published-key reading. Only 100 cipher elements. Cited link f157 is f148r (clear); cipher is on f148v = canvas f158."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Key printed by Meister 1906 (key 65), so a published-key reading. Only 100 cipher elements. Cited link f157 is f148r (clear); cipher is on f148v = canvas f158.",
+    "texts": [
+      {
+        "doc": "sega1591",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Filippo Sega to Cardinal Caetano, 9 January 1591. A religious book, Navarre at Christmas Mass, and plans for an undertaking at Tours.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }

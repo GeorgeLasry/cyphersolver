@@ -86,6 +86,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b90600674/f55.item): f54r: interleaved clear words \"Pure a me pare ... maxime. Stando ancora le cose ... come stanno hora\" match his L13-15 excerpt; cipher sign after \"pare\" = H-10 = \"che\" per his key, consistent with \"che l essere\"; longer cipher run not decoded Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -121,6 +127,15 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Opening reads \"Rdo Dno Lang. Ptri\" - recipient looks named (Langeac?/Langi?), though he says not established. 704/838 identified, 3/8 pages in part.",
-    "first_break": true
+    "first_break": true,
+    "texts": [
+      {
+        "doc": "salviati1525",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Cardinal Giovanni Salviati, 16 October 1525, to a recipient Lasry leaves not established. Salviati discusses restoration of possession and imperial territory, defence and government of the state, nobles and people, captains and guards, the archbishop of Toledo, Modena, and correspondence sent by land and sea.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }

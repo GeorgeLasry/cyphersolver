@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9000658k/f73/full/1400,/0/default.jpg): p124 (canvas 73): clear \"Veue degayer ma lettre mais parceque je scais\" then interlinear over 3 code rows \"quil est important quun ministre sache si un prince qui aspire a une couronne est en estat davoir des successeurs\" = his excerpt; signed De Villardeau on p125 Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Mentions Campredon ill at St Petersburg, so 1725-26 (Holstein wedding 1725). Interlinear present on the cipher pages; 99.1% identified."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Mentions Campredon ill at St Petersburg, so 1725-26 (Holstein wedding 1725). Interlinear present on the cipher pages; 99.1% identified.",
+    "texts": [
+      {
+        "doc": "villardeau",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Sheets from the Russian-correspondence dossier of 1725-1730: a Holstein letter signed by De Villardeau and an anonymous memorandum on the testament, recipient not established. The Czarina’s disputed will and succession; the Holstein wedding and confidential comments on the duke’s reputation and ability to produce heirs.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }

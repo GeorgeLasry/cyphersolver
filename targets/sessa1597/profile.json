@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b9063548f/f272.item): f145r \"El Rey / Duque de Sessa\", Madrid 31 Mar 1597, signed Yo el Rey; codes \"459 988 661 439 ... 437 ... 387\" with his key: 661=se, 439=puede, 437=prudencia, 387=socorro, agreeing with the interlinear \"que no se les puede dar ... de la prudencia de S.S. ... socorros\" and his excerpt Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Entry links only Cryptiana; the Gallica page is Fr. 23054 canvas f272. Full contemporary interlinear decipherment present and Cp.39 key published by Cryptiana - mostly an existing decipherment. 89.7% identified. The shared key across the two letters (Philip II to Sessa 1597, Archduke Albert to Philip II 1596) is assumed from Lasry's report, not tested here: only f. 145r was checked against Cp.39."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Entry links only Cryptiana; the Gallica page is Fr. 23054 canvas f272. Full contemporary interlinear decipherment present and Cp.39 key published by Cryptiana - mostly an existing decipherment. 89.7% identified. The shared key across the two letters (Philip II to Sessa 1597, Archduke Albert to Philip II 1596) is assumed from Lasry's report, not tested here: only f. 145r was checked against Cp.39.",
+    "texts": [
+      {
+        "doc": "sessa1597",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Philip II to the Duke of Sessa, 31 March 1597, and Archduke Albert to Philip II, 25 August 1596. Philip II discusses Ottoman negotiations, aid to Transylvania and the Emperor, and the conversion of Condé’s mother; the earlier letter reports the capture of Hulst and payments to the army.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }

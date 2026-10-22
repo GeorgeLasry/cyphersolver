@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b9059540q/f127.item): Fr. 4696 f62r: Italian letter \"Ill.mo et Ecc.mo S. mio\" with clear text (Padre Toledo, Giulio Cesare, Pasqua) and Greek-like graphic cipher runs; excerpt is from f62v, not imaged here; sign-level decode with his table not completed (glyph forms at this scan only loosely match his crops) Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Only 1147/3078 groups identified (37%); 4698 letter mostly unread. Interlinear on f5r gave the key. Two volumes/senders bundled in one entry."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Only 1147/3078 groups identified (37%); 4698 letter mostly unread. Interlinear on f5r gave the key. Two volumes/senders bundled in one entry.",
+    "texts": [
+      {
+        "doc": "scipion1585",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Scipion de Gonzague to the Duke of Nevers, 1585-1589 (BnF fr. 4696), and a letter of 1590 by an unestablished writer (fr. 4698). Confidential warnings and cavalry arrangements: horses, payments, dispatches and service in war. The fr. 4698 fragment contains a request for an appeal or intercession, and the Paris letter of 16 February 1590 discusses friendship, the King of Spain and a request; most of both remains unread.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }

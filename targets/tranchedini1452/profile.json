@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b100387843/f83.item): f89r \"Post data ... Signore\" cipher postscript dated 28 Jun 1452, signed Nicodemus; facing f88v carries the contemporary decipherment (clear: \"vescovo de Novara ... la V. Ill. hauria ben facto ... paragonata ... Certificandone Signore\"), which matches the clear islands on f89r and his contents; no symbol-level decode of a run done Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -120,6 +126,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. A literal 15th-c. decipherment sits on f88r-v next to the cipher, and the key is Domnina 2018s reconstruction, so little is new beyond alignment. Transcription incomplete; status Partly deciphered."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. A literal 15th-c. decipherment sits on f88r-v next to the cipher, and the key is Domnina 2018s reconstruction, so little is new beyond alignment. Transcription incomplete; status Partly deciphered.",
+    "texts": [
+      {
+        "doc": "tranchedini1452",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Nicodemo Tranchedini to Francesco Sforza, 28 June 1452. The postscript discusses the bishops of Parma and Novara, the pope’s response, and the bishop’s reputation.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here. The contemporary decipherment exists only on the manuscript images (not transcribed here)."
+      }
+    ]
   }
 }

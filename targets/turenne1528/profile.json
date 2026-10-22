@@ -90,6 +90,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90599722/f13/full/1600,/0/default.jpg): f13r cipher rows 2-4: contemporary interlinear \"...pance que le vouloir quil a de se vanger des Florentins et du duc de Ferrare luy feroist beaucoup de choses qui par advanture\" = his excerpt; sign-level decode not done Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -124,6 +130,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. f13v only in part (1/2 pages fully deciphered) though 98.7% of elements identified. Docket \"1528 Italie\". Turenne (Francois de La Tour) in Rome 1528 fits."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. f13v only in part (1/2 pages fully deciphered) though 98.7% of elements identified. Docket \"1528 Italie\". Turenne (Francois de La Tour) in Rome 1528 fits.",
+    "texts": [
+      {
+        "doc": "turenne1528",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "The Vicomte de Turenne to the Grand Master, 1 June 1528. Turenne reports on papal negotiations, revenge against the Florentines and the duke of Ferrara, and royal assistance; his postscript discusses Andrea Doria’s intended change of allegiance.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }

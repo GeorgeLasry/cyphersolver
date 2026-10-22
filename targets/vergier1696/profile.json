@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b90009665/f263.item): f260r \"Boulogne ce 30 mars 1696\", Monseigneur, signed Vergier (facing leaf); canvas f255 shows f251v numeric codes with interlinear (\"277 14 176 143 259 186 50 ...\" = \"que je scache aussi qu ... \", \"208 17 226 34 301 197 30 289\" = \"mon nouveliste\"), confirming interlinear plaintext; f249v excerpt not compared symbol by symbol Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Slug says 1690 but every letter is 1696. Canvas f255 shows a letter \"a Dunkerque ce 16e avril 1696\" (f252r) - his \"6 April 1696?\" is probably 16 April. Interlinear decipherments throughout."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Slug says 1690 but every letter is 1696. Canvas f255 shows a letter \"a Dunkerque ce 16e avril 1696\" (f252r) - his \"6 April 1696?\" is probably 16 April. Interlinear decipherments throughout.",
+    "texts": [
+      {
+        "doc": "vergier1696",
+        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
+        "decryption": "lasry_entry.md",
+        "summary": "Jacques Vergier to Monseigneur, probably Jérôme de Pontchartrain, letters of 10, 20, 26, 29 and 30 March and 6 (16?) April 1696. Vergier reports the Anglo-Dutch fleet off Calais, Jacobite landing plans, and his conversations with James II’s entourage; he also discusses naval preparations at Dunkerque.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+      }
+    ]
   }
 }
