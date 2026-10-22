@@ -56,7 +56,6 @@ here or published (Tomokiyo, Lasry, Friedmann, Cerioni, the Nevers collection, a
 out the same day to the list of letters readable with keys in hand; the key for each:
 
 - Nevers to the Duchess, 36 figures (BnF fr. 4712 f. 10; catalogue 282): too short (36 figures) and only key trials left.
-- Bilia to Zaberna and to the Duke of Milan, Burgos (BnF fr. 3013 nos. 42–43; catalogue 291): Sforza keys printed (Cerioni 1970).
 - Châteauneuf, La Marck and d'Iberville: the twelve despatches with no over-written plaintext (BL Add MS 61574 (DECODE R8052, R8054, R8068, R8070, R8075, R8078, R8080, R8081, R8086–R8088); catalogue 294): plaintext written over the cipher in 26 sibling records.
 - Cardinal Gualterio and Abbé Botti (BL Add MS 20443 (DECODE R8617–R8718, 48 records); catalogue 295): Gualterio cipher tables at the BL (Add MS 20244).
 - Nuncio Sega, Paris, to the Secretariat (AAV Segr. Stato Francia 32; catalogue 297): Meister and morosini1588 keys to try.
@@ -176,6 +175,7 @@ Feuquières and Catinat); **B** partial key in print (Tomokiyo) or known family;
 
 ## Read or resolved here, and removed
 
+- **291 (part) — Jo. Antonio Bilia to Francesco II Sforza, Burgos, 22 Nov 1527, BnF fr. 3013 no. 43 ff. 102r–v**: f. 102r deciphered with Bilia's own Sforza key DECODE R5258 ("Cum equite Bilie") by Harumi-Matsuba (issue #55, AI-only transcription, no human check), checked here 21 Oct 2026 with the project's copy of the key (440 of 459 values agree); f. 102v (seven cipher lines) and the name code B.58 stay open. **No. 42** (Bilia to the ambassador Jo. Francesco Taverna, "Zaberna", same date, ff. 99r–v, Gallica views 159–162) is in a different cipher that neither R5258 nor R5237 fits: it stays open and needs cryptanalysis, not a key lookup. Removed from the keys-in-hand list 21 Oct 2026. [Write-up](https://dbourdeau.github.io/cyphersolver/bilia1527.html)
 - **170 and 189 — Hieronimo Ranzo's letters, BnF fr. 2988 ff. 9–10 (DECODE R1894) and its copy fr. 20506 ff. 136–138 (R4450)**: key recovered from the ciphertext by George Lasry and, independently, Paolo Rosson (6 Oct 2026); measured here 18 Oct 2026, ff. 9–10 97.0%, f. 2 96.2%; removed 21 Oct 2026. [Write-up](https://dbourdeau.github.io/cyphersolver/ranzo1528.html).
 - **25 — Marie de Médicis to Savary de Brèves, 15 Sept and 10 Nov 1610 (BnF fr. 3789; R2075/R2076)**: deciphered by Brice Dudout with the Henri IV–Brèves key, BnF fr. 3462 view 112 (not 3642); checked here, 95 of 98 glyphs supported. [Write-up](https://dbourdeau.github.io/cyphersolver/breves1610.html).
 - **190 — Two Sforza letters of 4 May 1446: the reply to Zorzo del Maino (BnF italien 1583 f. 68; DECODE R7898) and Amidani to Sforza (f. 70, on R7899)**: George Lasry recovered the key from the ciphertext with CTTS, refined by Astra and Fable 5.1 (PR #60), 20 October 2026; 721 of 827 cipher signs give sense, 14 sign classes and the f. 70 signature open. [Write-up](https://dbourdeau.github.io/cyphersolver/it1583.html).

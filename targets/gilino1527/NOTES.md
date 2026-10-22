@@ -2,6 +2,8 @@
 
 Status: read (9 Oct 2026). Deciphered to 96.1% (2,872 of 2,989 significant tokens) with the Sforza key DECODE R5258, found by scanning the Milan key sheets on DECODE. George Lasry had reconstructed the same key from the ciphertext by 7 Oct 2026 (Codex-assisted; contributed 14 Oct 2026, `lasry/`). Written up as docs/gilino1527.html. Until 14 Oct 2026 this letter sat in `targets/superscript/` with Ghinucci R8613 (now `targets/ghinucci1527/`), a different cipher.
 
+Same key, another letter: Bilia's own letter to the Duke, Burgos 22 Nov 1527 (BnF fr. 3013 no. 43), read in part with R5258 by Harumi-Matsuba (issue #55, 20 Oct 2026); [`targets/bilia1527/`](../bilia1527/NOTES.md), page `bilia1527.html`.
+
 ## The letter
 
 - Cotton MS Vespasian C IV ff.214-218 (old f.199 ff.), DECODE R8572 ("Non-decrypted", city "Daredos" = Paredes [de Nava]).
