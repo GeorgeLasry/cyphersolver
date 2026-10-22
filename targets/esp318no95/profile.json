@@ -17,20 +17,22 @@
     "location": [
      "unrelated source"
     ],
-    "source": "George Lasry's decipherment of ll. 1-13 (2022), an image on cryptiana GL.htm (BnF_es318_f122_decipher.png); the rest of the letter read by Michael Brackx (issue #63, 2026)"
+    "source": "George Lasry's own approximate decipherment of ll. 1-13 (2022, image on cryptiana GL.htm); Brackx's reading of the rest (issue #63); Lasry's complete recto (PR 75, 2026)"
    },
    "length": {
-    "tokens": 963,
+    "tokens": 1245,
+    "distinct": 57,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "decode.py"
    },
    "transcription": {
-    "by": "llm from images",
-    "source": "Segmentation and Ward clustering of f. 122r (targets/esp318/glyphs.py, cluster.py)",
+    "by": "human (project)",
+    "source": "George Lasry, CTTS transcription of the recto on three overlapping photographs f122a-c (lasry2021/ctts/transcription); the project's Sept segmentation (963 glyphs) and Brackx's eye reading are kept as history",
     "image_quality": "fair",
-    "notes": "963 glyphs on 31 lines of f. 122r (NOTES; the glyph file f122r_glyphs.pkl is git-ignored in targets/esp318/); f. 122v (five lines) not done. Touching signs defeat segmentation for about a third. Brackx (Oct 2026) read every line of both pages by eye against Lasry's table on crops of the scan; he counts 33 line bands on the recto. No sign-level transcription of his is in the repository."
+    "notes": "1,323 transcribed symbols, of which 78 are the last two lines of f122a photographed again at the top of f122b; 1,245 once counted. The two transcriptions of those lines differ in a few signs. Verso (four cipher lines) not in the CTTS project; read by Brackx."
    },
-   "read": "read in part"
+   "read": "read"
   }
  ],
  "system": {
@@ -38,9 +40,9 @@
    "homophonic",
    "nomenclator"
   ],
-  "summary": "Lasry's 2022 reconstruction (published by Tomokiyo as an image): a homophonic alphabet of invented signs, one to three per letter, with unassigned signs and code groups written in clear letters (bac bnh bon dah daf dae oht bed dal boo del); scriptio continua.",
+  "summary": "George Lasry's key (CTTS, 2021-22; revised 2026): a homophonic alphabet of 43 invented signs for 21 letters (one to four each), 11 code groups written in ordinary letters (bac, bcd/bed, bnh, bon, boo, dae, dah, dal, dcl/del, dif/def, dnl), three special signs (a presumed null, 9 = y?, oN = aunque?); scriptio continua.",
   "symbol_kind": "letters and symbols",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 57,
   "diacritics": {
    "used": true
   },
@@ -53,13 +55,14 @@
    "present": true
   },
   "nulls": {
-   "present": "unknown"
+   "present": true,
+   "count": 2
   },
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "Lasry's no. 95 alphabet (image on cryptiana GL.htm)",
-  "notes": "Split on 14 Oct 2026 from esp318 (the whole volume) under the one-key rule. Lasry's alphabet applies to this letter only. The segmentation pipeline and its outputs stay in targets/esp318/; f122r_reading.md moved here. Two of Lasry's signs corrected here (the n with a cross-tail is M, not Y; plain 7 = D and 7 with a small o = S confirmed). Oct 2026: Brackx proposes values for most of Lasry's 'Unknown' signs (alpha with tail = l, b-bowl with two crossbars = z, 8-shape = a, hooked lightning variant = d, 9. = con or null, p with crossed descender = h) and three signs not in his table (small solid circle = z, a two-crossbar stroke doubling the preceding consonant, a pi/o sign with two crossbars = o); dah and dal are different groups; oht not found on the leaf."
+  "notes": "Split on 14 Oct 2026 from esp318 (the whole volume) under the one-key rule. Lasry's alphabet applies to this letter only. The segmentation pipeline and its outputs stay in targets/esp318/; f122r_reading.md moved here. Two of Lasry's signs corrected here (the n with a cross-tail is M, not Y; plain 7 = D and 7 with a small o = S confirmed). Oct 2026: Brackx proposes values for most of Lasry's 'Unknown' signs (alpha with tail = l, b-bowl with two crossbars = z, 8-shape = a, hooked lightning variant = d, 9. = con or null, p with crossed descender = h) and three signs not in his table (small solid circle = z, a two-crossbar stroke doubling the preceding consonant, a pi/o sign with two crossbars = o); dah and dal are different groups; oht not found on the leaf. Oct 2026 (PR 75): Lasry's revised key adopts the small solid circle = Z (not B) and the l-shaped sign = R (not S); CTTS writes some code groups as bcd, dcl, dif, dnl where Brackx read bed, del, def, dhl."
  },
  "conditions": {
   "prior_solution": {
@@ -69,11 +72,10 @@
    "used": true
   },
   "inputs": [
-   "images",
-   "published key"
+   "images"
   ],
-  "attack": "published key",
-  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry transcribed the recto in CTTS and recovered the key with its built-in cryptanalysis (2021-22), revised it with Claude Opus 5.5 and read the code groups from context (2026, PR 75). Before that: the project's segmentation reading (Sept 2026) and Michael Brackx's eye reading of ll. 14-33 and the verso (issue #63).",
   "tools": [
    "seg.py, glyphs.py (segmentation; in targets/esp318/)",
    "cluster.py, montage.py, assign95.py (Ward clustering and labelling)",
@@ -81,7 +83,10 @@
    "lm.py (Spanish 5-gram)",
    "linedp95.py (DP tiling)",
    "band95.py",
-   "Brackx: crops at 1.5-3x of the scans, read by eye against Lasry's table (Claude Opus 5.5); no solver"
+   "Brackx: crops at 1.5-3x of the scans, read by eye against Lasry's table (Claude Opus 5.5); no solver",
+   "CTTS (George Lasry): transcription and built-in cryptanalysis",
+   "decode.py (mechanical re-application of Lasry's key)",
+   "docs/_validate.py"
   ],
   "models": [
    "claude-fable-5-1",
@@ -90,7 +95,7 @@
   ],
   "sessions": 4,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-21"
+  "last_date": "2026-10-22"
  },
  "solution": [
   {
@@ -153,36 +158,63 @@
    ],
    "what": "Checked here: Lasry's image transcribed and compared with the issue's quotations of it (ll. 7, 8, 9, 10 entries are blanks over code groups or identical text, not differences); recto ll. 5, 8, 9, 10, 12, 25-26 and verso l. 2 deciphered sign by sign from the scan with Lasry's table: hazen, diz, muy tarde, palabras, haga, Santa Cruz, Alemanna as Brackx has them. Brackx's ll. 14-25 agree with the project's Sept machine reading where they overlap; our l. 12 'me toca' is 'le toca'.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)",
+    "contextual inference"
+   ],
+   "what": "George Lasry's PR 75: recto transcribed in CTTS (three photographs), key from CTTS's built-in cryptanalysis (2021-22), revised with Claude Opus 5.5 (Z and R corrected) and the code groups read from context (ciudad, gente, rey, papa, cardenal; rey de romanos? tentative; five names unidentified). Edited Spanish and English translation of the whole recto.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Merged PR 75. decode.py re-applies lasry2021/ctts/key.txt: 1,323 transcribed symbols, 78 of them the two lines repeated across f122a/f122b; 1,245 once counted (1,224 letters, 2 nulls, 19 code and special signs), none unassigned, as George counts. Statistical validation (es-golden-age): -1.960 against -6.156 random (z 8.5) and -3.514 shuffled refit (z 36.7): pass. f122c overlay compared with the decode.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "Lasry's 2026 recto agrees with Brackx's reading of ll. 14-33 (adopting his 'avemos traido aca'); it differs at 'rogaria a los que le ruegan' (Brackx 'logaria ... llegan'), 'para que' (Brackx 'parece que') and 'Claver avra' (Brackx 'Claue haura'). It agrees with Brackx's proposed corrections to ll. 1-13 (no ay que dezir, remitiendome, hazen, diz, con palabras, haga, no buen estado).",
+   "result": "worked"
+  },
+  {"date": "2026-10-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1226 tokens, 44 types, es-golden-age order 4: reading -1.96 per letter; random keys -6.156 (z 8.5); key annealed onto shuffled ciphertext best -3.462 (mean -3.514, z 36.7); annealer on the real text -2.095. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
-  "method": "read with known key",
-  "method_basis": "Lasry's 2022 alphabet applied: his own decipherment covers ll. 1-13; Brackx read ll. 14-33 and the verso with it by eye (contributed); the project's Sept reading by segmentation covered about two thirds of the recto, and seven passages were re-deciphered here from the scan.",
+ "outcome": {"validation": {"date": "2026-10-22", "model": "es-golden-age", "file": "validation.tsv", "tokens": 1226, "types": 44, "tokens_per_type": 27.86, "score": -1.96, "nulls": {"random keys": {"n": 200, "mean": -6.156, "sd": 0.492, "max": -5.061, "z": 8.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.514, "sd": 0.042, "max": -3.462, "z": 36.7, "p": 0.1429}}, "power": -2.095, "verdict": "pass", "notes": "claimed per-occurrence score -1.96; polyphony 0.0; 19 unread tokens left out; annealer on the real text from random keys reached -2.095"}, 
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "George Lasry recovered the alphabet with CTTS's built-in cryptanalysis from the ciphertext alone (2021-22) and completed the recto with it in 2026 (PR 75); Brackx's verso reading uses the same alphabet. No clear copy or outside key.",
   "contribution": [
    "transcription",
-   "key extended or corrected"
+   "key extended or corrected",
+   "key recovered"
   ],
   "first_break": false,
-  "class": "read in part",
-  "fraction_read": 0.97,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Not counted sign by sign (no sign-level transcription of Brackx's reading). Recto 963 glyphs by segmentation plus about 130 on the verso; unread: about 18 code-group tokens (10 groups), five burn holes and one word in l. 13 (f122_reading.md).",
-  "key": "partial",
+  "class": "read",
+  "fraction_read": 0.996,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py --counts: all 1,245 recto symbols carry a value; the five name codes Name1-Name5 are unidentified (1240/1245). Code readings ciudad, gente, rey, papa, cardenal rest on context; rey de romanos?, aunque?, y? tentative. The four verso lines (Brackx) are outside this count.",
+  "key": "recovered",
   "gaps": [
    {
-    "item": "ten code groups (bac, bon, bnh, def, del, dae, bed, dah, dal, boo), about 18 tokens",
-    "blocker": "no-key-material",
-    "detail": "Lasry's table lists them without values and no other letter in this key is known; Brackx's identifications are contextual suggestions only"
+    "item": "five name code groups (Name1-Name5: dcl, dah, dal, dnl, boo), one occurrence each",
+    "blocker": "open-codes",
+    "detail": "no other letter in this key is known; context suggests persons (the recipient's master, a commander) but does not name them"
    },
    {
-    "item": "burn holes in ll. 12, 15, 20, 21, 28",
-    "blocker": "illegible",
-    "detail": "the paper is burnt through; one image only"
+    "item": "tentative readings: rey de romanos? (dif, x2; supported by the verso's Alemanna), aunque? (oN), y? (9)",
+    "blocker": "too-short",
+    "detail": "one or two occurrences each"
    },
    {
-    "item": "one word at the end of l. 13, after the null",
+    "item": "'en al' in l. 20",
     "blocker": "illegible",
-    "detail": "Lasry reads 'a ices', Brackx leaves it unread"
+    "detail": "a burn hole according to Brackx; one image only"
    },
    {
     "item": "the clear date line and signature of f. 122v",
@@ -191,12 +223,17 @@
    }
   ],
   "grades": "unknown",
-  "verification": [
-   "key confirms",
-   "historical consistency"
-  ],
-  "notes": "Spanish, from Italy (a Señoría, probably Venice), Jan 1497: the French bid for the Señoría, a peace mission of the cardinal of Santa Cruz, an appeal for defence; the verso has [def] gone to Germany. Lasry's ll. 1-13 stay the reference; Brackx's corrections to them are proposals pending Lasry (f122_reading.md, NOTES).",
+  "verification": ["key confirms", "historical consistency", "statistical test"],
+  "notes": "Spanish, from an Italian city with a Signoria (Genoa fits best, per Lasry; unproved), 8 Jan 1497: famine, the French bid for the city's people, the king's slowness, the cardinal of Santa Cruz to seek peace in France, an appeal for a force to defend the city. Lasry's 2026 recto supersedes the partial 2022 overlay and settles Brackx's proposed corrections; the verso is Brackx's.",
   "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "complete recto: CTTS transcription and key (2021-22), revised with Claude Opus 5.5 (2026), code groups read from context, edition and translation",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/75",
+    "published": true
+   },
    {
     "who": "lasry",
     "role": "key or decipherment used",
@@ -239,9 +276,9 @@
    }
   ],
   "codes_open": {
-   "open": 10,
-   "total": 10,
-   "tokens_open": 18
+   "open": 5,
+   "total": 11,
+   "tokens_open": 5
   },
   "provenance": "mixed"
  }

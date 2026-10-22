@@ -7,12 +7,12 @@ Espagnol 318 are different ciphers, each with its own entry and page: [`targets/
 [`targets/esp318no93/`](../esp318no93/NOTES.md) (no. 93, key not identified), [`targets/esp318no94/`](../esp318no94/NOTES.md)
 (no. 94, alphabet recovered by Michael Brackx).
 
-**Outcome: read with known key, read in part — nearly the whole letter.** Lasry's 2022 decipherment covers ll. 1–13
-and is the reference for them; Michael Brackx ([issue #63](https://github.com/dbourdeau/cyphersolver/issues/63),
-21 Oct 2026, with Claude Opus 5.5) read ll. 14–33 and the verso for the first time with Lasry's alphabet and
-proposes corrections to ll. 1–13 (pending Lasry). Open: ten code groups (about 18 tokens), five burn holes, one word
-in l. 13. The project's own machine reading (Sept 2026, below) covered about two thirds of the recto and agrees with
-Brackx where they overlap. The combined text, with the corrections listed, is `f122_reading.md`.
+**Outcome (22 Oct 2026): key recovered from ciphertext-only by George Lasry; recto deciphered in full** (PR 75).
+George's CTTS key (2021-22, revised 2026 with Claude Opus 5.5) gives every one of the 1,245 recto symbols a value;
+five name code groups are unidentified and three readings tentative. The verso's four cipher lines are Michael
+Brackx's reading ([issue #63](https://github.com/dbourdeau/cyphersolver/issues/63)) with the same alphabet. Before
+PR 75: Lasry's approximate ll. 1-13 (2022), Brackx's ll. 14-33 and verso, and the project's machine reading of about
+two thirds of the recto (Sept 2026), all kept below as history; `f122_reading.md` is the pre-PR-75 combined text.
 Sessions of 17 and 21 Sept and 21 Oct 2026.
 
 The segmentation pipeline built for this letter, its outputs and its git-ignored intermediates stay in
@@ -33,6 +33,31 @@ the alphabet (`BnF_es318_f122.png`) and **his decipherment of ll. 1–13** as a 
 (`BnF_es318_f122_decipher.png`, "provided by George Lasry"). Until 21 Oct 2026 these notes said no plaintext had been
 published: that was wrong, the second image was missed (Brackx pointed it out). The alphabet is homophonic, one to
 three signs per letter, plus unassigned signs and the code groups `bac bnh bon dah daf dae oht bed dal boo del`.
+
+## George Lasry's complete recto (PR 75, 22 Oct 2026)
+
+`lasry2021/` holds his CTTS project (transcription of the three overlapping photographs f122a-c, key, decryption and
+edited readings), `CONTRIBUTION.md` (Spanish edition, English translation, notes, context) and two images. Key: 21
+letters with 43 invented signs (one to four each), 11 code groups written in letters, three special signs
+(`lasry2021/ctts/key.txt`). In 2026 he corrected two values (small solid circle = Z, not B; the l-shaped sign = R, not
+S), read the code groups from context (bac ciudad, bon gente, bnh rey, dae papa, bcd cardenal; dif rey de romanos?)
+and left five names unidentified (dcl, dah, dal, dnl, boo). CTTS writes some groups as bcd, dcl, dif, dnl where
+Brackx read bed, del, def, dhl. The full reading is `reading.txt`.
+
+His recto agrees with Brackx's ll. 14-33 (and adopts his *avemos traido aca*), except *rogaria a los que le ruegan*
+(Brackx *logaria ... llegan*), *para que* (Brackx *parece que*) and *Claver avra* (Brackx *Claue haura*). It agrees
+with every correction Brackx proposed to Lasry's 2022 ll. 1-13 (*no ay que dezir*, *remitiendome*, *hazen*, *diz*,
+*con palabras*, *haga*, *no buen estado*), which therefore stand.
+
+Checked here (22 Oct 2026):
+- `decode.py` re-applies the key: 1,323 transcribed symbols, of which 78 are the last two lines of f122a photographed
+  again at the top of f122b (the two transcriptions of those lines differ in a few signs: *toca/tocad*, *no uen/no
+  buen*, *amicer/amier*); 1,245 counted once = 1,224 letters + 2 nulls + 19 code and special signs, none unassigned.
+  George's count is 1,245.
+- `docs/_validate.py` (model `es-golden-age`, codes left unread): reading -1.960 per letter; random keys -6.156 (z
+  8.5); key fitted to shuffled text -3.514 (z 36.7); annealer on the real text -2.095. Verdict: pass.
+- The f122c overlay compared by eye with the decode: the code groups `dal` and `bnh` and the letters around them fall
+  where the decoder puts them.
 
 ## Lasry's ll. 1–13 and Brackx's reading (21 Oct 2026)
 
@@ -121,9 +146,9 @@ this resolution, not the method.
 
 ## Remaining gaps
 
-- ten code groups (bac, bon, bnh, def, del, dae, bed, dah, dal, boo), about 18 tokens - blocker: no-key-material; Lasry's table lists them without values and no other letter in this key is known; Brackx's identifications are contextual suggestions only
-- burn holes in ll. 12, 15, 20, 21, 28 - blocker: illegible; the paper is burnt through, one image only
-- one word at the end of l. 13, after the null - blocker: illegible; Lasry reads *a ices*, Brackx leaves it unread
+- five name code groups (dcl, dah, dal, dnl, boo; Name1-Name5 in Lasry's key), one occurrence each - blocker: open-codes; no other letter in this key is known, context suggests persons but does not name them
+- tentative readings rey de romanos? (dif, x2), aunque? (oN), y? (9) - blocker: too-short; one or two occurrences each
+- *en al* in l. 20 - blocker: illegible; a burn hole according to Brackx, one image only
 - the clear date line and signature of f. 122v, read only as "… de enero …" - blocker: illegible; faded clear hand, not cipher
 
 ## Escalation
@@ -133,17 +158,17 @@ this resolution, not the method.
 - [x] known-keys: Lasry's 2022 alphabet is the key; values proposed for his Unknown signs (Brackx) and two signs corrected here in Sept
 - [x] print: cryptiana GL.htm: Lasry's alphabet and his decipherment of ll. 1-13 (the second image was missed until Brackx's issue #63); nothing else in print
 - [x] key-rebuild: cluster labelling, FFT template re-explanation, beam search and DP tiling (Sept); Brackx's sign values for the Unknown row, each from two or more words (Oct)
-- [x] retry: Brackx re-read every doubtful word over about seventeen passes and withdrew conjectures that failed (Ingalaterra, a value for ŧ); seven passages re-deciphered here from the scan agree
+- [x] retry: Lasry's revised key re-run over the whole recto (PR 75, every symbol assigned); Brackx re-read every doubtful word over about seventeen passes and withdrew conjectures that failed (Ingalaterra, a value for ŧ); seven passages re-deciphered here from the scan agree
 
 ## Next step
 
-Send George Lasry the proposed corrections to ll. 1–13 and the new sign values; record his answer here. Ask Brackx
-whether he can send a sign-level transcription, which would allow a measured fraction and a "watch it decipher"
-replay.
+Answered by PR 75 (22 Oct 2026): George's complete recto replaces his 2022 overlay as the reference and agrees with
+Brackx's corrections. Open for George: whether the verso (four cipher lines, Brackx's reading) should be added to his
+CTTS project; whether *en al* (l. 20) is a burn hole.
 
 ## Assumptions for George's review
 
-- Your 2022 alphabet and your decipherment of ll. 1–13 are credited on this entry only; your ll. 1–13 stay the
-  reference reading on the site, and Brackx's corrections are shown as proposals for you to accept or reject.
+- Your 2026 recto (PR 75) is now the reference reading of the whole recto; the 2022 overlay and Brackx's proposals
+  are kept as history. The outcome is recorded as your ciphertext-only key recovery (CTTS), not as a known key.
+- The verso stays Brackx's reading with your alphabet (issue #63).
 - None of the other letters of Espagnol 318 carries your credit.
-- The reading of ll. 14–33 and the verso is Brackx's (contributed); the project checked seven passages against the scan.
