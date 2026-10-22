@@ -144,7 +144,8 @@
    "kind": "verification",
    "what": "One-key review (Lasry's rule, 14 Oct 2026): this profile is the Swatow telegram of 3 Apr 1916 and its one condenser key. The credits for other keys were taken off it: Brice Dudout's decipherment of the July-November 1916 systems and his transcription corrections (y1916, sibling intercepts, not the Swatow sheet), and wanglu2016's issue #23 identifications (1917 telegrams, y1917). They stay credited in y1916/NOTES.md, y1917/NOTES.md and on the sunintercepts page, which has no profile of its own yet.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Tomokiyo's transcription and the Chinese/English decipherment copied verbatim from NOTES.md into texts/; decode_out.txt (decode.py output, codes and the recovered condenser table) linked as decryption and key", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "plaintext is Chinese (telegraph code); no letter model"}, 
   "method": "key recovered from ciphertext-only",
@@ -162,6 +163,10 @@
   "notes": "42 of about 44 characters (港 restored from a Morse slip, M, 30 Sept 2026); the last word, about two codes, is garbled in the received copy; 翼□ second character unresolved.",
   "credits": [
     {"who": "tomokiyo", "role": "transcription", "note": "transcription of the Swatow telegram (frame 680682), checked on the image", "source": "https://cryptiana.web.fc2.com/"}
-  ]
+  ],
+  "texts": [
+   {"doc": "swatow", "label": "Swatow to 'Rosamonde Tokio', 3 Apr 1916 (JACAR B03050738800)", "transcription": "texts/swatow_transcription.txt", "decryption": ["texts/swatow_decryption.md", "decode_out.txt"], "summary": "A telegram signed 'Tanaka' from Swatow to Sun Yat-sen's household in Tokyo, intercepted by the Japanese Foreign Ministry, which could not read it. It reports that Mo Qingyu declared Chaozhou independent against Yuan Shikai, that Sun's men recovered Swatow, and that Mo then came with a large force and ordered them out of the garrison headquarters."}
+  ],
+  "key_file": "decode_out.txt"
  }
 }
