@@ -183,6 +183,12 @@
    "kind": "verification",
    "what": "Credit corrected under the one-key rule (George Lasry, 14 Oct 2026): Lasry's 2025 solution is of item B (1654), a different key that does not read item A (1653); his credit here changed from 'prior solution' to 'pointer' (the key design his item-B key showed). Item B is not a document of this entry.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R8390: transcription ct2.txt (corrected) and ciphertext.txt (Tomokiyo's, normalised), decryption plaintext_1653.txt; key_file key_work.txt (R7537 sheet + context additions) and key7537.txt (the sheet as transcribed).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -220,6 +226,22 @@
     "date": "2025-02-19",
     "source": "cryptiana louisxiv0.htm (louisxiv_0mazarin.png)"
    }
+  ],
+  "texts": [
+   {
+    "doc": "A",
+    "label": "R8390, 30 May 1653, BL Add MS 4200 ff. 88-90",
+    "transcription": [
+     "ct2.txt",
+     "ciphertext.txt"
+    ],
+    "decryption": "plaintext_1653.txt",
+    "summary": "Bordeaux reports that the Council heard the Bordeaux (Ormée) deputies through two commissioners before Cromwell (\"le General\") gave him his audience, and that the treaty agreed after the Parliament's resolutions is still unsigned. England may help Bordeaux indirectly, so Brienne should hold back the offer of French mediation; English fear that a France rid of sedition would back the Stuart party could push Cromwell against French interests. ct2.txt is the transcription corrected here against the page images; ciphertext.txt is Tomokiyo's provisional transcription as normalised."
+   }
+  ],
+  "key_file": [
+   "key_work.txt",
+   "key7537.txt"
   ]
  }
 }

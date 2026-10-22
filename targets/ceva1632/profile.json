@@ -268,6 +268,12 @@
    "kind": "hypothesis", "technique": ["plaintext matching", "contextual inference"],
    "result": "failed",
    "what": "491 (5 tokens) tested as 'Goto' (interlinear l.16): fails its contexts in Lasry's letters. 497, 998, 328 pooled across all six letters: no single value fits. Left open."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R75 and R84 each with DECODE's transcription and the re-transcription from the images, the second-pass decryption (r75/r84.read2.txt); R75 also the 1632 interlinear decipherment (r75.interlinear.txt) as a separate file; key_file cipher.py (key with the elements valued here) and Lasry's reconstructed key DOC_R75_D3210.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -314,6 +320,11 @@
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed key on R74-R84 (24 Oct 2020) and his aligned decipherments of R74, R77, R78, R82 (used as gold and to fix codes)", "date": "2020-10-24", "source": "DECODE R74-R84 (DOC_R*_D32*.txt)"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "1632 interlinear decipherment on R75, used as control and to fix nomenclator values"}
-  ]
+  ],
+  "texts": [
+    {"doc": "R75", "label": "R75, 346-2, 25 Sept 1632", "transcription": ["decode/DOC_R75_D2532_2532.txt", "r75.retrans.txt"], "decryption": ["r75.read2.txt", "r75.interlinear.txt"], "summary": "Barberini on the consequences of the Swedish victories for the French alliance: they make the accommodation easier but the union far harder, and the nuncio is to make the French court see how dangerous that power's reach towards the Mediterranean is to France itself. r75.read2.txt is the decryption made here with Lasry's key (unresolved elements in <>); r75.interlinear.txt is the 1632 interlinear decipherment, as legible."},
+    {"doc": "R84", "label": "R84, 346-11, 18 Dec 1632", "transcription": ["decode/DOC_R84_D2161_2161.txt", "r84.retrans.txt"], "decryption": "r84.read2.txt", "summary": "Written a month after Lützen, the page turns on 'quella vittoria'; the first folio is largely in clear (Barberini acknowledging Ceva's despatch of the 8th and referring him to Mons. Bichi). The cipher ends with the Roman fear that the consequences will hold France disunited for a long time and unable to help her allies."}
+  ],
+  "key_file": ["cipher.py", "decode/DOC_R75_D3210_3210.txt"]
  }
 }

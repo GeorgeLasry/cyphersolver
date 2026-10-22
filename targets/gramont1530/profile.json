@@ -132,6 +132,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split the combined catalogue item 6 entry under the one-key rule (George Lasry, 14 Oct 2026): four letters in four keys. gramont1529 keeps fr. 3091 no. 23 (Gramont's cipher 1529); langeac1529 takes fr. 3083 no. 8 (Avranches' cipher 1); gramont1530 takes fr. 3071 no. 7 (Gramont's cipher 1530); the Mâcon letter fr. 3071 no. 4 moved to rome1536 with the other letters in Mascon's cipher. This entry is fr3071_no7_gramont.md, moved from targets/gramont1529/."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): gramont1530: reading fr3071_no7_gramont.md linked; key = Lasry's table image img/BnF_fr3071_f17.png and texts/key.md (copied verbatim from the reading file). No ciphertext transcription exists in the folder.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -188,6 +194,10 @@
     "note": "partial table of Gramont's 1530 cipher from the sibling fr. 3019 f. 20 (cryptiana francis.htm)",
     "source": "cryptiana francis.htm"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "gramont1530", "label": "BnF fr. 3071 no. 7, f. 17, Rome, 21 July [1530]", "decryption": "fr3071_no7_gramont.md", "summary": "Gramont, cardinal, writes from Rome to Montmorency: the Pope keeps \"Francisque\" on the mission rather than Gramont, for fear of Imperial suspicion; Rodolfo Pio, bishop of Faenza and nephew of Carpi, is to leave in 3-4 days to congratulate the King on the return of the Queen and the princes (handed over at the Bidassoa, 1 July 1530).", "note": "No transcription of the 14 cipher lines was kept (read by eye against Lasry's table); the reading gives the deciphered text in capitals with gaps marked. Lasry's own 2023 decipherment is unpublished and not in the repository."}
+  ],
+  "key_file": ["img/BnF_fr3071_f17.png", "texts/key.md"]
  }
 }
