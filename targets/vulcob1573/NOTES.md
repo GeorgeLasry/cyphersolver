@@ -50,6 +50,8 @@ brother, the Duke of Lorraine, and it could well be ?.
 
 ## Links
 
+- Related cipher: Ancel's letters of Oct-Dec 1577 in Colbert 398, in Tomokiyo's Vulcob-Ancel cipher (1575-1584), contributed by Harumi-Matsuba (issue #53), have their own folder and page: [`targets/ancel1577/`](../ancel1577/NOTES.md), `ancel1577.html`. Whether the 1573 cipher is the same was not established.
+
 - <https://gallica.bnf.fr/ark:/12148/btv1b9060207j/f33.item>
 
 ## Images

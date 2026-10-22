@@ -11592,6 +11592,35 @@
      }
     }
    }
+  },
+  "letellier1644": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/letellier1644.html",
+   "key": {
+    "file": "targets/letellier1644/contributed/data/key.tsv",
+    "lang": "French",
+    "how": "Tomokiyo's Le Tellier-Marca table of 1644 (Cryptiana louisxiv0.htm) with values added from f. 230r against its decipherment f. 232r, by Harumi-Matsuba (issue #54)"
+   },
+   "cite": "S. Tomokiyo, Cryptiana, louisxiv0.htm, 'Le Tellier-Marca Cipher (1644)'; Harumi-Matsuba, github.com/Harumi-Matsuba/letellier1644-public (CC BY 4.0), Oct 2026",
+   "fields": {
+    "folio": "f. 50r-v (the record gives f. 51-52; f. 51 is the address leaf)",
+    "date": "26 April 1644",
+    "receiver": "Pierre de Marca, visitor general in Catalonia",
+    "cleartext_language": "French",
+    "plaintext_language": "French"
+   },
+   "records": {
+    "R2742": {
+     "decode_status": "Decrypted",
+     "proposed": "Partially decrypted",
+     "note": "No decipherment of f. 50 exists in Baluze 103 (all views searched by Harumi-Matsuba); the status Decrypted came with no text. Deciphered with Tomokiyo's 1644 table by Harumi-Matsuba (AI transcription, no human check), checked by cyphersolver 21 Oct 2026: all 32 cipher lines, seven signs or code groups open, 18 lines lean on context.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R2742.txt"
+      }
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {

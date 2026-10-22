@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ancel&rsquo;s cipher, Vienna 1577 — Read in part</title>
+<meta name="description" content="Guillaume Ancel, French resident at the Imperial court, wrote four letters of October–December 1577 (BnF Cinq Cents de Colbert 398 pp. 525–565) partly in a symbol cipher that has no contemporary decipherment. Harumi-Matsuba transcribed them with AI and applied Satoshi Tomokiyo's reconstructed Vulcob–Ancel key; the passages report Archduke Matthias's flight to the Low Countries and the Emperor's double game with Spain. Contributed, AI-only transcription, re-measured and spot-checked here.">
+<link rel="stylesheet" href="style.css?v=20261014c">
+<meta name="date" content="2026-10-21">
+<meta name="last-modified" content="2026-10-21">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top">
+<header class="nav"><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary class="active">Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="grp latest"><h4>Latest</h4><ul><li><a href="letellier1644.html"><span class="st partial">known key applied &middot; partial</span><b>Le Tellier to Marca 1644</b><span class="yr">1644</span></a></li><li><a href="sabran1633.html"><span class="st partial">known key applied &middot; partial</span><b>Sabran to Bouthillier 1633</b><span class="yr">1633</span></a></li><li><a href="ancel1577.html" aria-current="page"><span class="st partial">known key applied &middot; partial</span><b>Ancel, Vienna 1577</b><span class="yr">1577</span></a></li><li><a href="fiesque1567.html"><span class="st partial">known key applied &middot; partial</span><b>Fiesque from Vienna 1567&ndash;69</b><span class="yr">1567&ndash;69</span></a></li><li><a href="devil1539.html"><span class="st found">not a cipher</span><b>The Devil&rsquo;s Handwriting 1539</b><span class="yr">1539</span></a></li><li><a href="bilia1527.html"><span class="st partial">known key applied &middot; partial</span><b>Bilia 1527</b><span class="yr">1527</span></a></li></ul></div><div class="grp"><h4>By outcome</h4><ul><li><a href="writeups.html#kind=ct"><span class="st solved">61</span><b>Ciphertext-only break</b></a></li><li><a href="writeups.html#kind=extpt"><span class="st solved">12</span><b>Key from external plaintext</b></a></li><li><a href="writeups.html#kind=adjpt"><span class="st solved">80</span><b>Key from adjacent plaintext</b></a></li><li><a href="writeups.html#kind=extkey"><span class="st solved">24</span><b>External key matched</b></a></li><li><a href="writeups.html#kind=known"><span class="st solved">97</span><b>Known key applied</b></a></li><li><a href="writeups.html#kind=deciph"><span class="st solved">65</span><b>Existing decipherment</b></a></li><li><a href="writeups.html#kind=notsolved"><span class="st stuck">72</span><b>Not solved</b></a></li><li><a href="writeups.html#kind=na"><span class="st found">17</span><b>Not applicable</b></a></li><li><a href="writeups.html#kind=survey"><span class="st todo">2</span><b>Surveys</b></a></li></ul></div><div class="foot"><a href="writeups.html">All 430 write-ups, with filters &rarr;</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="cipherstrip">h + β (y 9 π (y 7 8 // 7 3 o β ω &hellip; = hors de sa chambre&hellip;<br>saturnus = l&rsquo;Empereur &middot; Juno = le Roy d&rsquo;Espagne</div>
+  <p class="kicker">Vienna &rarr; France &middot; homophonic symbol cipher with plain-letter code words &middot; October&ndash;December 1577 &middot; contributed, partial</p>
+  <h1>Ancel&rsquo;s cipher, Vienna 1577: Archduke Matthias leaves for the Low Countries</h1>
+  <p class="sub">Four letters from the French resident at the Emperor&rsquo;s court, deciphered by an outside contributor with AI and a published key; the text reads as French, but no person has yet checked the transcription.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-21">21 October 2026</time></p>
+<p class="outcome">Method: <a href="glossary.html#known">read with known key</a> &middot; Extent: partial (95% of the cipher)</p><!-- /outcome -->
+<p class="credits">Contributed by <a href="contributors.html#matsuba">Harumi-Matsuba</a> (solution, transcription) and <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (key or decipherment used) &middot; Also credited &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
+<div class="seal partial" aria-hidden="true"><span>known key</span></div>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letters">The letters</a><a href="#key">The key</a><a href="#the-reading">The reading</a><a href="#checks">How it was checked</a><a href="#open">What remains open</a><a href="#sources">Sources</a></nav>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Known key applied, partial &middot; contributed &middot; 4,385 cipher tokens on seven pages</span></p>
+<dl>
+  <dt>The letters</dt><dd>Guillaume Ancel, French resident at the Imperial court in Vienna, to a &ldquo;Monseigneur&rdquo; in France: 22 October, 2 November, 14 and 21 December 1577. Clear letters with long passages in cipher.</dd>
+  <dt>Where</dt><dd>Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 398, pp. 524&ndash;526, 539, 561&ndash;563 and 565 (Gallica views 558&ndash;599). Most other cipher pages in the volume carry a decipherment in the margin; these do not. No DECODE record.</dd>
+  <dt>The cipher</dt><dd>A symbol alphabet with two to four signs per letter, signs for double letters, a few word signs, and code words written in plain letters (saturnus, Juno, my) mixed with plain-letter nulls.</dd>
+  <dt>How it was deciphered</dt><dd>Harumi-Matsuba transcribed the signs with Claude and checked them with OpenAI Codex, then applied Satoshi Tomokiyo&rsquo;s reconstructed key. Here the files were re-measured with this project&rsquo;s language models and three lines were compared with the images.</dd>
+  <dt>What it says</dt><dd>Archduke Matthias slipped away to the Low Countries; Ancel thinks the Emperor will deny any part in it, but notes he plays both sides with Spain while Don John&rsquo;s envoy Varambon waits for leave to levy troops.</dd>
+  <dt>Credit</dt><dd>Reading, transcription and checks: Harumi-Matsuba (issue #53, 20 October 2026), done with AI only (Claude and Codex). Key: Satoshi Tomokiyo. No human has checked the transcription.</dd>
+  <dt>Still open</dt><dd>A human check of the transcription; most code words; 29 of 125 lines the contributor marks as conjectural.</dd>
+</dl>
+</div>
+
+<h2 id="letters"><span class="num">01</span> The letters</h2>
+<p>Cinq Cents de Colbert 398 gathers original letters on German affairs addressed to Charles IX, Henri III, Catherine de M&eacute;dicis and their ministers, among them the despatches of the two French residents at the Imperial court, Jean de Vulcob (1575&ndash;76) and Guillaume Ancel (1576&ndash;78, 1584). Most of their cipher passages were deciphered on arrival in the left margin. Four letters of late 1577 were not:</p>
+<ul>
+<li><b>22 October 1577</b> (heading on p. 523; cipher from the end of p. 524 to p. 526): the flight of Archduke Matthias, the Emperor&rsquo;s brother, to the Low Countries.</li>
+<li><b>2 November 1577</b> (p. 539): six lines.</li>
+<li><b>14 December 1577</b> (pp. 561&ndash;563): the Marquis of Varambon, Don John of Austria&rsquo;s envoy, and the Spanish ambassador Borgia.</li>
+<li><b>21 December 1577</b> (p. 565).</li>
+</ul>
+<p>The letters open &ldquo;Monseigneur&rdquo; rather than &ldquo;Sire&rdquo;, so the addressee is not the King himself; who it is has not been settled. The single cipher line at the top of p. 570 turned out to be deciphered in the last margin line of p. 569, and the key gives the same words.</p>
+<figure data-credit="Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 398 p. 525, via Gallica (btv1b525218133, view 559)"><img src="ancel1577_p525.jpg" alt="Five lines of symbol cipher with the words Monseigneur, saturnus and Juno written in plain letters among the signs" loading="lazy"><figcaption>The top of p. 525, the letter of 22 October 1577. Plain-letter words stand among the signs: <i>Monseigneur</i> is clear text, <i>saturnus</i> is the code word for the Emperor, <i>Juno</i> (start of the last line) the King of Spain. <span class="credit">Image: Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 398 p. 525, via Gallica (btv1b525218133, view 559).</span></figcaption></figure>
+
+<h2 id="key"><span class="num">02</span> The key</h2>
+<p>Satoshi Tomokiyo reconstructed the cipher of Vulcob and Ancel (1575&ndash;1584) from the margin decipherments of this volume and published the table on Cryptiana (&ldquo;French Ciphers for German (and Eastern) Affairs&rdquo;, 15 March 2026), noting that it would allow the letters without a contemporary decipherment to be deciphered; he published no readings. The table has two to four homophones per letter (4, 7 and &alpha; for <i>a</i>; &omega; and &pi; for <i>e</i>; &part; and &mu; for <i>i</i>), single signs for doubled letters (ss, tt, pp, rr, mm, nn), and word signs such as <i>plus</i> = que, <i>ros</i> = pour, <i>ucl</i> = est. He also notes that Vulcob&rsquo;s letter of 2 August 1572 (BnF fr. 18989) uses it. George Lasry&rsquo;s 1573 letter of Charles IX to Vulcob (<a href="vulcob1573.html">vulcob1573</a>) is in a related cipher: he compared it with a key in this volume and found 14 shared letter forms.</p>
+<p>The contributor added a few values from context and from the margin of p. 33: an m-shaped sign = uu, a flat L-like sign = g, the crossed q = ff, a lone c = null. Names and titles hide in plain-letter code words. Those checked against margin decipherments elsewhere in the volume: <i>saturnus</i> = l&rsquo;Empereur (p. 258), <i>Juno</i> = le Roy d&rsquo;Espagne (p. 440), <i>my</i> = qu&rsquo;il and <i>my3&theta;</i> = qu&rsquo;ilz (pp. 258, 321).</p>
+
+<h2 id="the-reading"><span class="num">03</span> The reading</h2>
+<figure class="creveal" data-src="reveal/ancel1577.json"></figure>
+<p>The contributor&rsquo;s line-by-line key output and word division are in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ancel1577/contributed/READING.en.md">READING.en.md</a>; code words are in brackets. Two passages:</p>
+<p><b>22 October 1577, p. 525 ll. 9&ndash;13:</b> &ldquo;&hellip;tellement que a peine pouvoit il faire un pas hors de sa chambre sans le cong&eacute; d&rsquo;iceluy seigneur [saturnus] son frere; tant s&rsquo;en faut qu&rsquo;a une telle heure il eust peu sortir du chasteau, qui ferme toute la nuit&hellip;&rdquo; &mdash; Matthias could hardly step out of his room without his brother the Emperor&rsquo;s leave, still less leave a castle shut all night; so, Ancel argues, the Emperor will deny any part in the escape.</p>
+<p><b>14 December 1577, pp. 561&ndash;562:</b> the Emperor must declare himself for the King of Spain [Juno] or for the Archduke; if for the first, he will show it by giving Don John leave to levy troops in Germany, as Varambon has asked; meanwhile Borgia says that if the Emperor backs his brother he must do it in earnest, &ldquo;d&rsquo;autant que le roy catholique fera toutes les provisions possibles pour maintenir son droit&rdquo;.</p>
+<p>On 2 November the Emperor &ldquo;fait toute la demonstration [qu&rsquo;il] luy est possible pour persuader les Espagnolz que tel depart est advenu a son desceu&rdquo;; on 21 December Varambon is back from Archduke Charles&rsquo;s court with nothing, and the Emperor waits for the King of Spain&rsquo;s answer.</p>
+<figure data-credit="Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 398 p. 565, via Gallica (btv1b525218133, view 599)"><img src="ancel1577_p565.jpg" alt="Three lines of symbol cipher with the plain-letter words saturnus and Juno" loading="lazy"><figcaption>p. 565, 21 December 1577: &ldquo;&hellip;se remettant [saturnus] a la response qu&rsquo;il attend du [Juno] sur ce qu&rsquo;il luy a rescrit depuis le partement de l&rsquo;archiduc Mathias&rdquo;. <span class="credit">Image: Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 398 p. 565, via Gallica (btv1b525218133, view 599).</span></figcaption></figure>
+
+<h2 id="checks"><span class="num">04</span> How it was checked</h2>
+<p><b>By the contributor</b> (all with AI): a first transcription in sign names by Claude Sonnet 5.5 and Opus 5.5 from enlarged tiles; a cross-check transcription by OpenAI Codex from the line images, without the key; two rounds of image adjudication by Claude Sonnet; then three independent Codex transcriptions, which agree with the final one on 95.2&ndash;96.1% of values (lowest page 88.8%, p. 565). With 1,000 shuffled keys, none scores as well as the real key on any page. As a calibration, two pages that do have a margin decipherment (pp. 258 and 285) were run through the same procedure without the margin being seen: 85.9% of letters agree with the margin.</p>
+<p><b>Here</b> (21 October 2026): the files were copied into the repository and re-measured (<code>measure.py</code>). Of 4,385 cipher tokens on the seven pages, 98.4% get a value from the key or a checked code word. Under the project&rsquo;s 16th-century French model the key output scores &minus;1.8 to &minus;2.3 per character, against &minus;6.3 to &minus;6.6 for shuffled keys. Split into words of a 16th-century vocabulary, 95.4% of tokens fall inside words, against 50% for shuffled keys; this is a lenient measure, an upper bound on what reads. Recomputing the calibration from the contributor&rsquo;s files gives 472 of 556 letters, 84.9%. Three lines were compared sign by sign with the BnF images (p. 525 ll. 9&ndash;10, p. 565 l. 5): all 126 signs agree in order and count; two &part;/&delta; (i/n) choices could not be told apart at 2,400 pixels and rest on context, as the contributor says of that pair.</p>
+<p>The figures support the reading as French and the key as right. They do not make it a checked reading: the transcription is AI-made throughout, the adjudications are AI judgements, and the contributor marks 29 of 125 lines as conjecture or unclear syntax. The extent therefore stays partial.</p>
+
+<h2 id="open"><span class="num">05</span> What remains open</h2>
+<ul>
+<li>A human check of the transcription against the images, starting with the 29 conjectural lines.</li>
+<li>Code words without a meaning: <i>manua/manue</i> (a person), <i>mare</i>, <i>grinter</i>, <i>totum</i> (probably l&rsquo;Empire), <i>nez</i>, <i>bel</i>, <i>mim</i>; probable nulls <i>fec, sec, sanc, sane, pome, estre, roc, vib</i>.</li>
+<li>Look-alike sign pairs settled by context: 3/&#658; (m/r), p/&phi; (f/m), &part;/&delta; (i/n), 9/q (d/l), the cross/4 (o/a).</li>
+<li>Unclear stretches: p. 526 ll. 9&ndash;14, p. 539 ll. 2&ndash;3, p. 561 ll. 1&ndash;4 and 18&ndash;19, p. 562 ll. 25&ndash;26 (line ends lost in the gutter), p. 565 ll. 9 and 15&ndash;16.</li>
+<li>The addressee (&ldquo;Monseigneur&rdquo;) and the signatures were not checked.</li>
+</ul>
+
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/ancel1577.json"></figure>
+<!-- replay:end -->
+<h2 id="sources"><span class="num">06</span> Sources</h2>
+<ul>
+<li>BnF, Cinq Cents de Colbert 398, <a href="https://gallica.bnf.fr/ark:/12148/btv1b525218133/f559.item">Gallica btv1b525218133</a>: p. 523 view 557, p. 525 view 559, p. 539 view 573, pp. 561&ndash;563 views 595&ndash;597, p. 565 view 599.</li>
+<li>Harumi-Matsuba, <a href="https://github.com/Harumi-Matsuba/vulcob1575-public">vulcob1575-public</a> (CC BY 4.0 data, MIT code), and <a href="https://github.com/dbourdeau/cyphersolver/issues/53">issue #53</a>, 20 October 2026.</li>
+<li>S. Tomokiyo, <a href="https://cryptiana.web.fc2.com/code/frencheastern.htm">&ldquo;French Ciphers for German (and Eastern) Affairs&rdquo;</a>, Cryptiana, 15 March 2026: the key.</li>
+<li>Prior work found by the contributor: G. Labouch&egrave;re, &ldquo;Guillaume Ancel, envoy&eacute; r&eacute;sident en Allemagne&rdquo;, <i>Revue d&rsquo;histoire diplomatique</i> 37 (1923), the clear text only; D. Fontvieille on Vulcob&rsquo;s cipher correspondence (Heidelberg, April 2024), working from the margin decipherments.</li>
+</ul>
+
+<p class="muted">The contributor&rsquo;s transcription, key, reading and calibration files, the re-measure and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ancel1577"><code>targets/ancel1577/</code></a>.</p>
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Biblioth&egrave;que nationale de France, Cinq Cents de Colbert 398, via Gallica</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="labbe1582.html" rel="prev">&larr; L&rsquo;Abb&eacute; to Nevers 1577 1577</a><a href="sauli1579.html" rel="next">Sauli and Riario 1579 1579&ndash;81 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="cipher-reveal.js?v=f00596e5" defer></script>
+<script src="solve-replay.js?v=20261014c" defer></script>
+<script src="zoom.js?v=20261014c" defer></script>
+<script src="site.js?v=20261014c"></script>
+</body>
+</html>

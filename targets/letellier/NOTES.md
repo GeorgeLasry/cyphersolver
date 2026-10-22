@@ -1,5 +1,8 @@
 # Le Tellier -> Marquis de Castelnau, 12 May 1657 — tracker item #15
 
+Not to be confused with `targets/letellier1644/`: Le Tellier to Marca, 26 April 1644 (BnF Baluze 103 f. 50), a
+different cipher (Tomokiyo's Le Tellier-Marca table of 1644), with its own page letellier1644.html.
+
 Ciphertext: cryptiana transcription `LeTellier_Castelnau1657.txt` (202 tokens after "le dessein de Sa Majesté
 estant"); image `LeTellier1657.jpg`. Three numeric classes (plain 3-72, macron 2-53, double-prime 12-48) plus
 letter tokens (a c l p f t m h o q, h- ss J- x- y- z- m- p-, ap rp ff oo tt, &). Most frequent: ~28 (9), 13 (6),

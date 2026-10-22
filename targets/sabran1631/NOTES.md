@@ -24,7 +24,9 @@ transcription in this project. Session 2026-09-21; split and written up 2026-10-
   think it right to take up the conditions proposed, but wants Sabran to keep the prince in his devotion to the
   crown and assure him of the King's goodwill and protection. (Summary from Lasry's overlay, not re-checked here.)
 - Lasry also found the same cipher in Sabran's own letters to Bouthillier, BnF fr. 4134 (1633) and fr. 4135 (1635)
-  (Tomokiyo, louisxiii.htm). Those letters were not opened here.
+  (Tomokiyo, louisxiii.htm). The fr. 4134 passages were deciphered in part with Lasry's key by Harumi-Matsuba
+  (issue #56, 20 Oct 2026): sibling target [`targets/sabran1633/`](../sabran1633/NOTES.md), page `sabran1633.html`.
+  fr. 4135 is still open.
 
 ## Sources
 

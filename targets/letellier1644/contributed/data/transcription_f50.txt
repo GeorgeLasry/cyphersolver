@@ -1,0 +1,40 @@
+# BnF Baluze 103 f.50r（c111）・f.50v（c112）の暗号文。記号名は SIGNS.md。2026-10-20、原寸の画像を目視で書き起こし（1人、1回）
+# =N は上に横線のある語の符号、[語] は平文で書かれた語、cut は綴じ目で切れて読めない記号
+# 注：ꝭꝭ（ff）と Ⱨ（H）、mm と m、ꝭʒ（hz）と ϭ（sg）、× の2形は見分けが難しく、文脈で選んだ箇所がある（docs/READING.md の注）
+# 2026-10-20 修正：別の AI（Codex）3回の書き起こしとの照合で、記号そのものの違いを直した（6→sg 10か所、y→z7 9か所、2 4→24 2か所、r06 の 2 3hat→23hat、v06 の a quoy は平文、r13 の sg を削除）。照合前は data/transcription_f50_before_xcheck.txt。詳しくは second/RESULT.md
+# 2026-10-20 修正：Codex 5回の投票（second/vote.tsv）で多数が違った15か所を画像で見直し、4か所を直した（r03 =81→81、r04 xt→xx、r17 の13番目 u→n、v04 の3番目 u→n）。second/VOTE.md
+# 2026-10-20 修正：r09 の16番目 ae→xx（横線の通った曲がった x。r12 の5番目と同じ形で、値 c）。鍵の y の主な値を、友清氏の表どおり g に直した
+# 2026-10-20 修正：mz を、尾に横線のあるもの（mz＝s、友清氏の表の s の列）と、横線のない巻いた尾のもの（mi＝i、表の i の列）に分けた（11か所を mi に。形は画像で1つずつ見た：second/RESULT.md）
+# 2026-10-20 修正：画像で確かめられたときだけ直すことにして、Codex の照合で 6→sg に直した10か所を画像で見直した。小さく上に寄った σ と確かめられた r18・v04 の2つを残し、普通の 6 と見分けのつかない8つ（r11・r12・r15・v01・v05・v08・v10・v12）を 6 に戻した（second/CORRECTIONS.md）
+r01 19 u mz 12 dl a g th mi hz sg 14 9 7 13 u sg 10
+r02 qb pb f R 14 19 dl a z7 u 10 n ct 21 6 p 23 zc
+r03 7 E rho a y t u 81 mm 9 14 c ff f u dd m a sg
+r04 10 Lx xx bb th7 pb f R 10 dl a hz u g 6 14 22
+r05 xx th 12 3 E mi 7 sg f aq ct b ff rho g dl a t m dl
+r06 pb th7 mi 9 xx th =y =3 =12 10 bb 9 hz rho 20 u 23hat
+r07 m 10 dd R th Lx 22 rho 14 a mz bb 8 hz 9 14 18 z7
+r08 c dl 21 R hz m th hz sg u b u dl 6 t bb hz H m 6 ax bb
+r09 =11 19 th t mi 6 g q u m zx th7 pb 9 f xx 10 15 14
+r10 E hb xx 18 9 ct 13 u R th =11 12 22 a 6 rho th z7 13 cut
+r11 6 u g t u mz mm th g ax 17 bb g =11 rho 19 zx th R bb
+r12 13 u hz ff xx dl m g dl 4 =11 rho 6 u 14 a m dl 2 g
+r13 xx E a hz pb th g 6 mi b 14 t u m H q zx rho z7 x dl f l
+r14 sg u t q 6 9f Lx pb 9 R ff 10 x 15 mi a =11 18 19
+r15 mm g u a dl th y ct dd t u 14 beta z7 bb g 14 6 ff
+r16 23 10 7 c u dd mz k pb ff th g mm 10 g oo 22
+r17 12 14 hz m 2 =12 gx 10 mi 6 q R n ct x 15 pb rho
+r18 t u =32 7 th g 6 23 sg pb mi a t mm 19 m g q u
+r19 x dl 18 7 xx bb R u =11 dl a 22 4 m 9 th pb =3
+r20 10 18 a 8 u =12 19 23 f 14 6 u a 13 hz H m g 19
+v01 mm 10 24 4 th 6 p =11 6 u g R ff hz pb 19 10 a g
+v02 aq 5 u ct 13 f u g 7 th z7 6 [et] [tous] 10 4 hz f u g =9
+v03 13 u g ax dl m 4 f q f R 24 m 14 22 a 20 pb z7 13 u
+v04 q 12 n 14 6 10 x gx 18 a xx dl 9 hz u f 19 ff sg 18 y u dd 6 th
+v05 [de] [faire] =18 6 u g 12 17 H mz 14 8 =12 7 th
+v06 23 7 8 14 a 6 14 21 39 [a] [quoy] =11 =o 13 u g 18 f bb
+v07 mm ff g mz q H z7 a bb 20 14 a hz =11 Lx 20 10 zx 12 ff
+v08 pb u hz 19 22 u mi 6 14 6 =12 19 b 10 z7 t u R u [消] 12 19
+v09 14 a ct m zx pb xx 14 9 12 H m k u f 6 q 19 x ff m hz
+v10 8 5 9 6 22 m beta 12 6 u th7 23 14 9 R 3 th =11 12 14 19 pb
+v11 21 14 9 14 12 dl z7 hz mi 21 m u 8 u 6 10 a beta u g 6
+v12 12 6 7 th 8 dl mi 6 x ct q 6 R 2 t th m 10 a hz
