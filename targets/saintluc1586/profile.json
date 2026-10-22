@@ -1,0 +1,195 @@
+{
+ "schema_version": 1,
+ "target": "saintluc1586",
+ "title": "Saint-Luc(?) to the King or Villeroy, 30 January 1586 (BnF fr. 15572 f. 43): key recovered by George Lasry",
+ "documents": [
+  {
+   "id": "f43",
+   "read": "read",
+   "shelfmark": "BnF Français 15572, f. 43 (three photographs f43a, f43b, f43c)",
+   "date": "1586-01-30",
+   "year": 1586,
+   "country": "France",
+   "route": "François d'Espinay de Saint-Luc (attributed by hand, Tomokiyo) -> unnamed (the volume's letters go to Henri III and Villeroy)",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none; only the date line is in clear",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1315,
+    "distinct": 83,
+    "unit": "symbols",
+    "measured": true,
+    "file": "decode.py"
+   },
+   "transcription": {
+    "by": "human (project)",
+    "source": "George Lasry, in CTTS (CrypTool Transcriber and Solver), 2022; lasry2022/ctts/transcription",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution of 20 letters plus x with 51 two-digit-labelled symbols (two or three per letter; i five, s four), 20 signs for 17 words and syllables (que, qui, est, de, et, dict, tout, faire, je, vous, lui, bien, plus, peut, pas, mal, ons), one doubling sign, one abbreviation sign and 10 nulls.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 83,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 5,
+   "max_per_consonant": 4
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 20,
+   "kinds": [
+    "common words",
+    "syllables"
+   ],
+   "unread_groups": 0
+  },
+  "nulls": {
+   "present": true,
+   "count": 26
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "A doubling sign [x2] after the letter (36 occurrences).",
+  "sibling_key": "None. Saint-Luc's other ciphered letters in the volume (ff. 245, 260) use another table (Tomokiyo); f. 43 is not Mayenne-Forget's Cipher-1 or Matignon's Cipher-3 (matignon1586 NOTES).",
+  "notes": "Sign labels are CTTS's two-digit numbers for invented symbols. 36 = et and 84 = lui are tentative."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "George Lasry's own 2022 solution: Tomokiyo's cryptiana page of Lasry's solutions (GL.htm, 'An Unsigned Letter in BnF fr.15572 (1586)') publishes his key image; no plaintext published. Tomokiyo's henryiii.htm lists f. 43 as undeciphered apart from the clear date line. No printed decipherment found (web search 22 Oct 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "George Lasry transcribed the three images in CTTS and recovered the key with its built-in cryptanalysis (2022); in 2026 he resolved the last thirteen signs from context with Claude Opus 5.5, edited and translated the French, and contributed it as PR 76. In this repository: merge, mechanical re-application of the key, statistical validation, prior-solution check, write-up.",
+  "tools": [
+   "CTTS (CrypTool Transcriber and Solver): transcription and built-in cryptanalysis",
+   "decode.py (mechanical re-application of the key)",
+   "docs/_validate.py"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": "unknown",
+  "first_date": "2022-01-01",
+  "last_date": "2026-10-22"
+ },
+ "solution": [
+  {
+   "date": "2022-01-01",
+   "kind": "transcription",
+   "what": "George Lasry transcribed f. 43 (three photographs) in CTTS: 1,315 signs.",
+   "result": "worked"
+  },
+  {
+   "date": "2022-01-01",
+   "kind": "solver",
+   "technique": [
+    "automated search (unspecified)"
+   ],
+   "what": "CTTS's built-in cryptanalysis recovered the letter homophones (George Lasry, 2022); the key image was published by Tomokiyo on cryptiana GL.htm. Date within 2022 not recorded.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "solver",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "The thirteen signs still unassigned were resolved from context with Claude Opus 5.5 (71 = ons, 23 = q, 68 = je, 101 = vous, 70/89 = peut, 91 = bien, 100 = plus, 102 = pas, 103 = mal, 97 = abbreviation r; 36 = et and 84 = lui tentative).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "George Lasry edited and translated the French and checked it against CTTS overlays of all three images (PR 76): an intelligence report in cover names (the concierge, the gardener, the stonecutters, the governor, the planter).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Merged PR 76. decode.py re-applies lasry2022/ctts/key.txt to the transcription and reproduces George's counts exactly: 1,315 signs = 1,168 letter homophones + 77 word signs + 44 doubling and abbreviation signs + 26 nulls, none unassigned. The f43a overlay checked by eye against the decode.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Prior-solution check: GL.htm carries only Lasry's key image for f. 43 ('It is solved as follows'), no plaintext; no printed decipherment found on the web; matignon1586 records f. 43 as outside the Mayenne-Forget and Matignon ciphers.",
+   "result": "worked"
+  },
+  {"date": "2026-10-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1271 tokens, 81 types, fr-1600-letters order 4: reading -2.091 per letter; random keys -4.722 (z 9.9); key annealed onto shuffled ciphertext best -2.968 (mean -3.014, z 25.7); annealer on the real text -2.203. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-10-22", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 1271, "types": 81, "tokens_per_type": 15.69, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -4.722, "sd": 0.266, "max": -3.88, "z": 9.9, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.014, "sd": 0.036, "max": -2.968, "z": 25.7, "p": 0.1429}}, "power": -2.203, "verdict": "pass", "notes": "claimed per-occurrence score -2.091; polyphony 0.0; 44 unread tokens left out; annealer on the real text from random keys reached -2.203"}, 
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "George Lasry recovered the homophonic table with CTTS's built-in cryptanalysis from the ciphertext alone (2022) and resolved the last signs from context with Claude Opus 5.5 (2026); no clear copy or outside key exists.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py --counts: all 1,315 signs carry a value (1,168 letters, 77 word signs, 44 doubling/abbreviation, 26 nulls); four words marked [?] in the edition and two tentative sign values (36 = et, 84 = lui).",
+  "codes_open": {
+   "open": 0,
+   "total": 20,
+   "tokens_open": 0
+  },
+  "grades": "unknown",
+  "verification": ["key confirms", "statistical test"],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "solution",
+    "note": "Transcribed with CTTS and key recovered with its built-in cryptanalysis (2022); last signs, edition and translation with Claude Opus 5.5 (2026).",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/76",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "described f. 43, its clear date line and its hand (Saint-Luc's, as at f. 35), and published Lasry's key image (cryptiana henryiii.htm, GL.htm)"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "four doubtful words (f43a ll. 7, 15; f43b ll. 5-6) and the tentative values 36 = et, 84 = lui",
+    "blocker": "too-short",
+    "detail": "single occurrences; no clear copy of the letter is known"
+   },
+   {
+    "item": "recipient and the people behind the cover names",
+    "blocker": "no-key-material",
+    "detail": "the letter names nobody but Sermelles, Jugan, Nimier, Saint-Sulpice and 'Monsieur Lue'; the cover names need an outside key to the correspondence"
+   }
+  ],
+  "notes": "Contributed by George Lasry, PR 76 (22 Oct 2026). Writer attributed to Saint-Luc by Tomokiyo from the hand."
+ }
+}
