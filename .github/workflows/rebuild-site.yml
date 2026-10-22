@@ -1,0 +1,53 @@
+# Rebuild the site (docs/) whenever main changes or a pull request opens, closes or merges, so the generated pages
+# (catalogue "Where things stand", its open-PR card, write-ups, contributors, search index, README glance) never
+# lag behind the repository. The build is stdlib-only Python; gh lists the open PRs for the catalogue card.
+# Pushes made with GITHUB_TOKEN do not trigger workflows, so the commit below does not loop.
+name: Rebuild site
+
+on:
+  push:
+    branches: [main]
+  pull_request_target:          # base-branch context: PR code is never checked out or run here
+    types: [opened, reopened, closed]
+  schedule:
+    - cron: '17 5 * * *'        # daily backstop (PR edits, anything missed)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: rebuild-site
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build, commit and push if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PYTHONUTF8: '1'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            (cd docs && python _build_site.py > /tmp/build.log 2>&1) || { tail -40 /tmp/build.log; exit 1; }
+            git add docs README.md
+            if git diff --cached --quiet; then echo 'site already up to date'; exit 0; fi
+            git commit -q -m "Site: rebuild after ${GITHUB_EVENT_NAME} (${GITHUB_SHA::9})"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push rejected (main moved); rebuilding on the new main"
+            git fetch -q origin main && git reset -q --hard origin/main
+          done
+          exit 1

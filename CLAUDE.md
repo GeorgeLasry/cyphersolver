@@ -71,4 +71,7 @@ the model was given, the solution steps and the outcome (`profile.schema.json`; 
   branch is not the one you mean, commit from your own worktree and push `HEAD:main`.
 - Stage by explicit path, never `git add -A`.
 - Build from `docs/` with `PYTHONUTF8=1` set; `_build_stats.py` crashes on the cp1252 console without it.
+- `.github/workflows/rebuild-site.yml` rebuilds `docs/` (catalogue included) on every push to main, every PR opened or
+  closed, and daily, and commits the result as github-actions[bot]. Pull before pushing; on a conflict in a generated
+  file (`search.json`, `_dates.json`, `*.html`) take main's copy and rebuild.
 - Write long HTML with the Write tool, not a Bash heredoc.

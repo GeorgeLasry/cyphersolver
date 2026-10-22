@@ -3353,6 +3353,8 @@ def check_keys(meta):
 
 if __name__ == '__main__':
     print('solution replays:', write_steps())
+    import _catalogue_page as C                 # catalogue.html reads README results and open PRs too: rebuilt every time
+    C.build_html()
     for f in sorted(HERE.glob('*.html')):      # date every page before any menu is built: the menu lists the newest
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')

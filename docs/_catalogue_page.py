@@ -260,7 +260,7 @@ def is_blocked(e):
 
 def status_html(E):
     """The two lists a reader needs before starting work: what is known and what is still open, both dated."""
-    day = fmt_day(AS_OF) or fmt_day(datetime.date.today().isoformat())
+    day = fmt_day(datetime.date.today().isoformat())     # the build day: solved list, counts and PRs are computed now
     ids = {e['id'] for e in E}
     gone = sorted(set(SOLVED) - ids)
     part = sorted([e for e in E if (e.get('known') and not e['known'].startswith('Nothing')) or e['id'] in SOLVED], key=lambda e: e['id'])
@@ -282,18 +282,18 @@ def status_html(E):
                     f'<span class="d">{esc((r.get("author") or {}).get("login", ""))}, updated {fmt_day(r["updatedAt"][:10])}</span></li>' for r in prs)
     html_ = f"""<section class="state" id="status">
 <h2>Where things stand, {day}</h2>
-<p>Before starting on an entry, read its <b>known</b> and <b>open</b> lines in the table and the open pull requests below. Work that has landed is folded into both lists at each rebuild; work still in a pull request is not. If a number you were given is not in the table, it has left the catalogue: <a href="#gone">look it up</a>.</p>
+<p>Before starting on an entry, read its <b>known</b> and <b>open</b> lines in the table and the open pull requests below. Work that has landed is folded into both lists at each rebuild; work still in a pull request is not. If a number you were given is not in the table, it has left the catalogue: <a href="#gone">look it up</a>. The lists and the pull requests are recomputed at every rebuild; each entry&rsquo;s known and open lines were written by hand and carry the day they were checked (all of them on {fmt_day(AS_OF)} at the latest full pass).</p>
 <div class="cols">
-<div class="card"><h3>What is solved or known so far</h3>
+<div class="scard"><h3>What is solved or known so far</h3>
 <p><b>{len(gone)}</b> catalogue numbers have been deciphered, explained or found in print and have left the open list (<a href="#gone">the list</a>; every write-up is on the <a href="writeups.html">write-ups</a> page). <b>{len(part)}</b> of the entries still open have pieces already deciphered or identified.</p>
 <details><summary>the {len(part)} open entries with known pieces</summary><ul class="sl">{"".join(one(e, "known") for e in part)}</ul></details>
 </div>
-<div class="card"><h3>What is still unsolved</h3>
+<div class="scard"><h3>What is still unsolved</h3>
 <p><b>{len(E)}</b> entries are open ({sum(1 for e in E if e['counted'])} counted targets, the rest also noted): <b>{n_blk}</b> blocked from outside (no images online, an archive order needed, or no key known to exist), <b>{n_att}</b> attempted here without a decipherment, <b>{len(E) - n_blk - n_att}</b> not yet attempted. <b>{sum(1 for e in E if e.get('workable'))}</b> have their key material at hand and no outside blocker ({', '.join(f'<a href="#e{e["id"]}">no. {e["id"]}</a>' for e in E if e.get('workable'))}): good places to start.</p>
 <details><summary>the {len(E)} open entries, by priority, with what is still open</summary><ul class="sl">{"".join(one(e, "open") for e in opn)}</ul></details>
 </div>
 </div>
-<div class="card wide"><h3>Work in progress: {len(prs)} open pull request{"s" if len(prs) != 1 else ""}</h3>
+<div class="scard wide"><h3>Work in progress: {len(prs)} open pull request{"s" if len(prs) != 1 else ""}</h3>
 {f'<ul class="sl">{pr_li}</ul>' if prs else '<p>None.</p>'}</div>
 </section>"""
     return html_, gone_rows, len(gone)
@@ -365,8 +365,8 @@ tr.d td{{padding:0 1.2rem 1rem 1.2rem;background:color-mix(in srgb,var(--gold) 1
 .ko i.k{{background:var(--green-bg);color:var(--green)}}.ko i.o{{background:var(--amber-bg);color:var(--amber)}}
 .det .kn b{{color:var(--green)}}.det .op b{{color:var(--amber)}}.asof{{font-family:var(--mono);font-size:.7rem;color:var(--muted)}}
 .state .cols{{display:grid;grid-template-columns:1fr 1fr;gap:1rem}}
-.state .card{{background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:.6rem 1.1rem .8rem}}
-.state .card.wide{{margin-top:1rem}}.state h3{{margin:.4rem 0 .5rem}}
+.state .scard{{background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:.6rem 1.1rem .8rem}}
+.state .scard.wide{{margin-top:1rem}}.state h3{{margin:.4rem 0 .5rem}}
 .state summary{{cursor:pointer;font-family:var(--mono);font-size:.78rem;color:var(--gold)}}
 ul.sl{{font-size:.84rem;padding-left:1.1rem;max-height:32rem;overflow-y:auto}}ul.sl li{{margin:.3rem 0}}.d{{color:var(--muted);font-size:.78rem}}
 table.gone{{border-collapse:collapse;font-size:.84rem;width:100%}}table.gone td,table.gone th{{border-bottom:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}}
@@ -419,7 +419,7 @@ table.gone{{border-collapse:collapse;font-size:.84rem;width:100%}}table.gone td,
 </tbody></table></div>
 
 <h2 id="gone">Numbers that have left the catalogue</h2>
-<p>{n_gone} catalogue numbers as of {fmt_day(AS_OF)}, with the write-ups that took them out and the day each landed. <i>(part)</i> marks a split entry: that piece has an outcome, and any piece still open stays in the table above under its number.</p>
+<p>{n_gone} catalogue numbers as of {fmt_day(datetime.date.today().isoformat())}, with the write-ups that took them out and the day each landed. <i>(part)</i> marks a split entry: that piece has an outcome, and any piece still open stays in the table above under its number.</p>
 <div style="overflow-x:auto"><table class="gone"><thead><tr><th>No.</th><th>Write-up</th><th>Outcome</th><th>Landed</th></tr></thead><tbody>{gone_rows}</tbody></table></div>
 
 <h2>How the scores were set</h2>
