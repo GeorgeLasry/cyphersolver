@@ -200,7 +200,8 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from vanreede1787, which had joined R1026/R1027 (William V's 1782 Grand Chiffre, R1024) with R1893 (1793, a different marked three-digit code). This profile keeps R1026 and R1027 (Grand Chiffre) only.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1026 and R1027 linked to the DECODE group transcriptions, the J+-resolved group files (resolve_j.py) and the readings with the Grand Chiffre R1024", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -247,6 +248,10 @@
     "role": "key or decipherment used",
     "note": "William V's 1782 Grand Chiffre (DECODE R1024); R1028 plaintext as control"
    }
+  ],
+  "texts": [
+   {"doc": "DECODE R1026", "label": "R1026, Berlin, 29 Dec 1787, Van Reede to Van de Spiegel", "transcription": ["ciphertext_R1026.txt", "resolved_R1026.txt"], "decryption": "reading_R1026.txt", "summary": "Finckenstein and Hertzberg have put the Dutch alliance project to Frederick William II; the King will not guarantee the Republic's possessions overseas, and the article is kept without those words: if the Republic is attacked by a European power the King will furnish aid (cf. the Prusso-Dutch defensive treaty of 15 Apr 1788)."},
+   {"doc": "DECODE R1027", "label": "R1027, Berlin, 4 Mar 1788", "transcription": ["ciphertext_R1027.txt", "resolved_R1027.txt"], "decryption": "reading_R1027.txt", "summary": "News from Russia: the Russian ministers are anxious about the triple alliance, the Russian envoy expects no answer until the Empress hears from Vienna; the Emperor's declaration of war on Turkey; couriers sent to London."}
   ]
  }
 }
