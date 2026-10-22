@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "DECODE R1893",
-   "shelfmark": "Nationaal Archief 1.01.02, Staten-Generaal, inv. 6695",
+   "shelfmark": "Nationaal Archief 1.01.02, Staten-Generaal, inv. 6695 (per DECODE; not among the inventory's online scans, WAINUT 21 Oct 2026)",
    "date": "24 Mar 1793",
    "year": 1793,
    "country": "Dutch Republic",
@@ -31,7 +31,7 @@
     "source": "DECODE document D3608",
     "corrections": 0,
     "image_quality": "fair",
-    "notes": "Three-digit groups include systematic overmarks and undermarks; the supplied HU language tag is erroneous."
+    "notes": "Three-digit groups include systematic overmarks and undermarks; the supplied HU language tag is erroneous. WAINUT (PR #66) checked about 88 groups of the head of p. 1 against the image: rows 5 and 6 drop 2 groups each and 960 is split as 9 60 (about 5 of 88 groups); not corrected in ciphertext_R1893.txt."
    },
    "read": "not read"
   }
@@ -63,13 +63,13 @@
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "none found: the 1793 Fagel key bundle (R2842-R2852; R2846, R2848, R2850, R2851 examined) and R2243 tried, no fit",
-  "notes": "Not the 1782 Grand Chiffre (R1024) that reads van Reede's 1787-88 despatches (vanreede1787). distinct_symbols = distinct marked forms."
+  "sibling_key": "none found: of the 1793 Fagel key bundle R2842-R2852 only R2846, R2848, R2850, R2851 were examined (R2842-R2845, R2847, R2849 as thumbnails, R2852 not fetched), with R2243; no fit",
+  "notes": "Not the 1782 Grand Chiffre (R1024) that reads van Reede's 1787-88 despatches (vanreede1787). distinct_symbols = distinct marked forms. WAINUT (PR #66): a homophonic nomenclator in which the mark is part of the group (773m, 319v, 442B, 751B differ from the unmarked forms); 2,385 group forms rebuilt from 44 cipher/clear pairs in inv. 6695 (proposal)."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "no key or reading of R1893 found on DECODE or in print",
+   "where": "no key or reading of R1893 found on DECODE or in print; WAINUT found no decipherment in the digitised inv. 6695 (21 Oct 2026); the Fagel archive (NA 1.10.29) and Colenbrander's Gedenkstukken not searched",
    "found": "not found",
    "used": false
   },
@@ -89,7 +89,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-20",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-21"
  },
  "solution": [
   {
@@ -133,6 +133,41 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from vanreede1787, which had joined R1026/R1027 (William V's 1782 Grand Chiffre, R1024) with R1893 (1793, a different marked three-digit code). This profile keeps R1893 only.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "key from source",
+   "technique": [
+    "EM alignment",
+    "plaintext matching"
+   ],
+   "what": "WAINUT (PR #66): 44 of Van Reede's 1792-93 secret despatches in NA 1.01.02 inv. 6695 filed with their registered clear copies; number groups and copies transcribed with Gemini, 116 runs (10,250 groups, 8,286 words) aligned on uncoded clear words; hard-EM segmentation of each copy span gives 2,385 marked group forms (1,416 seen twice or more), wainut/code_marks.json.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT (PR #66): leave one letter out over the 44 training letters: coverage 0.897, 0.599 of groups exactly right, character similarity 0.701; shuffled code 0.003/0.203, rotated code 0.013/0.210; all 44 letters beat both controls.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "language-model scoring"
+   ],
+   "what": "WAINUT (PR #66): code applied to R1893: 601 of 696 groups in the code (459 supported, 142 tentative, 95 unknown); a character 5-gram model from the clear copies scores the true order above 200 permutations (z 10.0) but only z 2.7 against shuffled codes. Crib: groups 356-359 = 'Maarschalk Potocki' as in the PS of 16 June 1792. Hedged gist: Polish affairs before the Grodno Diet; no continuous translation.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "what": "Review of PR #66 (Bourdeau with Claude Opus 5.5): recorded as a proposal, not a reading (0.599 exact on held-out letters is below what a reading needs); outcome kept 'not solved', status 'attempted, partial'; shelfmark (R1893 not in the online inv. 6695 scans) and Fagel bundle coverage (only R2846, R2848, R2850, R2851 examined) reconciled in NOTES.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -142,19 +177,28 @@
    "transcription"
   ],
   "class": "not read",
-  "key": "none",
+  "key": "partial",
   "fraction_read": 0,
   "fraction_read_method": "measured",
   "fraction_read_source": "No group of ciphertext_R1893.txt is claimed as read.",
   "verification": [],
-  "notes": "Attempted, closed unread 21 Sept 2026. Needs the key or a deciphered copy (Staten-Generaal secret files, NA 1.01.02). DECODE's language tag HU is wrong (Dutch). Split 14 Oct 2026 from vanreede1787.",
+  "notes": "Attempted, closed unread 21 Sept 2026; attempted, partial since 21 Oct 2026: WAINUT's code rebuilt from inv. 6695 (PR #66) decodes R1893 in part, recorded as a proposal (leave-one-out 0.599 exact), not counted in fraction_read. DECODE's language tag HU is wrong (Dutch). Split 14 Oct 2026 from vanreede1787.",
   "gaps": [
    {
     "item": "R1893 (24 Mar 1793, 696 tokens)",
     "blocker": "no-key-material",
-    "detail": "different three-digit overmarked code, 513 distinct forms; keys R2846, R2848, R2850, R2851, R2243 tried; no crib"
+    "detail": "different three-digit overmarked code; keys R2846, R2848, R2850, R2851, R2243 tried; WAINUT's rebuilt code (PR #66) reads it only as a proposal (601/696 groups valued, 0.599 leave-one-out exact); a deciphered copy (Fagel archive NA 1.10.29) not searched"
    }
   ],
-  "credits": []
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR #66: code rebuilt from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 and applied to R1893; partial decode recorded as a proposal (leave-one-out 0.599 exact)",
+    "date": "2026-10-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/66"
+   }
+  ],
+  "provenance": "mixed"
  }
 }

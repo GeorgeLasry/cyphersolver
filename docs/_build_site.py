@@ -1205,7 +1205,7 @@ PAGES = [
          rights='The National Archives, Kew, via DECODE R597'),
     dict(slug='vanreede1793', label='Van Reede 1793', year='1793', y=1793.23, place='Berlin &rarr; The Hague', st='stuck', stt='not solved',
          title='Van Reede to the Secret Committee, 24 March 1793',
-         blurb='The Dutch envoy in Berlin to the Secret Committee of the States General (Nationaal Archief 1.01.02 inv. 6695, DECODE R1893), in a code of three-digit groups with marks over single digits: 696 groups in 513 distinct forms. Not the Grand Chiffre of his earlier despatches; the 1793 keys on DECODE do not fit, there is no crib, and the text is too short to rebuild a code this large.',
+         blurb='The Dutch envoy in Berlin to the Secret Committee of the States General (Nationaal Archief 1.01.02 inv. 6695, DECODE R1893), in a code of three-digit groups with marks over single digits: 696 groups in 513 distinct forms. Not the Grand Chiffre of his earlier despatches; the 1793 keys on DECODE do not fit, there is no crib, and the text is too short to rebuild a code this large. WAINUT rebuilt the code from 44 cipher/clear pairs of his other despatches (PR #66) and decoded the letter in part, recorded as a proposal.',
          quote='&ldquo;Secret&rdquo; &middot; the only clear word above the code',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1893'),
     dict(slug='loeschnen1816', label='Loeschner&rsquo;s cipher memorandum', year='1816', y=1816.5, place='Vienna', st='found', stt='not a cipher',

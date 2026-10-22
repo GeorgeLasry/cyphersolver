@@ -3,6 +3,24 @@
 Attempted, not solved: closed unread on 21 Sept 2026 (a marked three-digit code with no key and no crib).
 Write-up docs/vanreede1793.html.
 
+Status 21 Oct 2026: attempted, partial (a contributed proposal, not "read in part"). PR #66 (WAINUT) rebuilt the code
+from 44 cipher/clear pairs of Van Reede's 1792-93 secret despatches in NA 1.01.02 inv. 6695 and applied it to R1893
+(section "Contribution by WAINUT" at the end): 601 of 696 groups (0.864) have a value, 459 with support, 142 tentative,
+95 unknown. Blind leave-one-letter-out on the 44 training letters gives only 0.599 of groups exactly right (0.701
+character similarity), so the R1893 decode is recorded as a proposal with a hedged gist (Polish affairs before the
+Grodno Diet, the "Maarschalk Potocki" crib), not as a reading; outcome stays "not solved" until a deciphered copy or
+a better-validated code confirms it.
+
+Shelfmark: DECODE files R1893 under NA 1.01.02 inv. 6695 (kept above as the record's metadata), but WAINUT found it is
+not among that inventory's online scans (no letter between the P.S. of 16 March and the despatch of 6 May 1793), so
+the original is either outside the digitised run or misfiled; where DECODE's photographs were taken is not
+established.
+
+Fagel key bundle: of R2842-R2852, only R2846, R2848, R2850 and R2851 were examined against R1893 (21 Sept 2026);
+R2842-R2845 and R2847 were seen only as thumbnail montages, R2849 as a thumbnail, and R2852 was never fetched
+(`fetch_key_thumbnails.py` loops 2842-2851). The bundle is not fully checked; testing its keys against WAINUT's
+rebuilt values (e.g. 444B van, 973B en) is the obvious next step.
+
 Split on 14 Oct 2026 from `vanreede1787` under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. The old
 entry (catalogue 231) joined Arend Willem van Reede's despatches of 1787–88, which are in William V's 1782 Grand
 Chiffre (DECODE key R1024), with this despatch of 1793, which is not. The Grand Chiffre letters are a different cipher,
@@ -40,10 +58,12 @@ Closed until a key or a deciphered copy turns up (Staten-Generaal secret files, 
 - 2026-09-20: records and transcription fetched; R1893 separated as a different system (per-digit marks).
 - 2026-09-21: the Fagel key bundle and R2243 tried; ciphertext-only attack judged not feasible; closed unread.
 - 2026-10-14: split from `vanreede1787`; the R1893 files moved here.
+- 2026-10-21: PR #66 (WAINUT) merged: code rebuilt from 44 pairs in inv. 6695, R1893 decoded in part (proposal);
+  reviewed, status lines, shelfmark and Fagel-bundle coverage reconciled above.
 
 ## Remaining gaps
 
-- R1893 (24 Mar 1793, 696 tokens) - blocker: no-key-material; different three-digit overmarked code, 513 distinct forms; keys R2846, R2848, R2850, R2851, R2243 tried; no crib
+- R1893 (24 Mar 1793, 696 tokens) - blocker: no-key-material; different three-digit overmarked code, 513 distinct forms; keys R2846, R2848, R2850, R2851, R2243 tried; WAINUT's code rebuilt from inv. 6695 (PR #66) gives a partial proposal (0.599 leave-one-out exact), not a reading; R2842-R2845, R2847, R2849, R2852 not examined in detail
 
 ## Escalation
 
