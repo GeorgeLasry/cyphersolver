@@ -143,6 +143,12 @@
    "kind": "literature search",
    "what": "No DECODE record for fr. 4134 or fr. 4135; Tomokiyo louisxiii.htm/GL.htm list the passages as undeciphered and credit Lasry with finding that the key applies; Lasry to be asked whether he holds readings.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Harumi-Matsuba's final and first transcriptions, key-applied output and word-divided reading (contributed/), this project's image spot-check spotcheck.md as a separate file, and Lasry's key as rewritten with sign names (contributed/data/key.tsv). Lasry's own image of the key (GL/BnF_fr4134.jpg on Cryptiana) is not in the folder.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -229,6 +235,10 @@
     "note": "published Lasry's key on GL.htm and listed the fr. 4134 and fr. 4135 cipher passages on louisxiii.htm",
     "source": "cryptiana GL.htm, louisxiii.htm"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "fr4134", "label": "BnF fr. 4134, cipher passages of ff. 46v-73v, 1633 (Harumi-Matsuba's reading with Lasry's key; this project's image check)", "transcription": ["contributed/data/transcription.tsv", "contributed/data/transcription_first.tsv"], "decryption": ["contributed/data/decoded.txt", "contributed/docs/READING.en.md", "spotcheck.md"], "summary": "Copies in the letter-book of Melchior de Sabran, French resident at Genoa, of his despatches to the secretary of state Claude Bouthillier, 1633. The cipher passages report the discovery in September 1633 of a plot to hand over Savona: the munitionnaire and two others arrested and brought to Genoa, 'ceux qui sont pris' speaking of 'donner la place'. spotcheck.md records this project's image check of ff. 66r-v, with two corrections to the contributed transcription."}
+  ],
+  "key_file": "contributed/data/key.tsv"
  }
 }
