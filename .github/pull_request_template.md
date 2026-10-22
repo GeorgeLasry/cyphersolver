@@ -22,8 +22,10 @@ A mechanical decryption is not a reading (George Lasry, 22 Oct 2026). For each d
 
 ## Reviewer, before merging
 
-- [ ] Read three sentences picked at random against the images and their translation: they say what the
-      translation says.
+- [ ] Read each document's reading as sentences against its translation, and three sentences picked at random
+      against the images. Record it on each `outcome.texts` entry: `"reading_review": {"grade": "A|B", "by": "...",
+      "date": "YYYY-MM-DD", "note": "..."}` (A coherent with scattered holes, B coherent but raw). A document with
+      holes in most sentences gets `"state": "decoded, not read"` instead.
 
 ## How to credit you
 

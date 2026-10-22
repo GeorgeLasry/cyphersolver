@@ -61,10 +61,10 @@ not from memory. The slug is the folder name unless a page already exists under 
   `reading` file when the decryption is raw (unspaced, capitals, decoder lines), a `translation` into English (not
   needed when `language` is `en`), and `state`: `read`, or `decoded, not read` for a leaf that does not yet build
   sentences (shown for checking, not counted, and never inside a target classed "read"), or `not prose` for key
-  sheets, code lists and worksheets. `python docs/_check_reading.py <folder>` scores the sentences (language-neutral:
-  at most one hole in ten words makes a sentence clean; 45% clean is the floor, 70% and prose is readable); below the
-  floor `_check_writeup.py` refuses the entry unless a reader records `reading_review` {grade A|B, by, date, note}
-  because the scorer's word list fails that language. The headline percentage on the page is never a token-run
+  sheets, code lists and worksheets. Each `read` entry carries `reading_review` {grade A|B, by, date, note}: someone read
+  the decryption as sentences (A coherent with scattered holes, B coherent but raw) — `_check_writeup.py` refuses an
+  entry without it. `python docs/_check_reading.py <folder>` scores the sentences (language-neutral: a sentence is
+  clean with at most one hole in ten words) and points the reader at the weak ones; it is not the verdict. The headline percentage on the page is never a token-run
   figure for a text that does not read.
 - **No cipher type without evidence.** Until part of the text is read, name the system only as far as measured
   evidence goes ("a transposition: letter frequencies match Spanish"). Do not name a specific system, or say what

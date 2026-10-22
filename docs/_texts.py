@@ -21,9 +21,10 @@ A reading must read (George Lasry, 22 Oct 2026, on matignon1586): "the LLM can b
 later be translated to English ... It is OK to have a few holes, but not holes in almost every sentence."
 reading_problems() is that check, per entry:
 
-  state "read" (default)    the decryption scores at or above MARGINAL on docs/_check_reading.py (sentences with at
-                            most one hole in ten words), or a reader has recorded reading_review {grade A|B, by, date};
-                            and it carries an English translation unless language is "en"
+  state "read" (default)    a reader has read the decryption as sentences and recorded reading_review {grade A|B,
+                            by, date, note} (A coherent with scattered holes; B coherent but raw, normalised in the
+                            reading or translation); and it carries an English translation unless language is "en".
+                            docs/_check_reading.py's sentence score is printed as a pointer for the reader
   state "decoded, not read" a mechanical decode shown for checking, not counted as a reading; no translation needed
   state "not prose"         a key sheet, code list, worksheet, numbers or names; say what in note
 A target classed "read" may not hold a "decoded, not read" entry.
@@ -85,6 +86,19 @@ def entry_state(t):
     return t.get('state') or 'read'
 
 
+_AUDIT = None
+
+
+def audit_review(folder_path):
+    """The 22 Oct 2026 reading audit's grade for a target (research/reading_audit/reviews.json), standing in for the
+    reading_review of entries that have none of their own: A or B passes, C, D and N do not."""
+    global _AUDIT
+    if _AUDIT is None:
+        p = ROOT / 'research' / 'reading_audit' / 'reviews.json'
+        _AUDIT = json.loads(p.read_text(encoding='utf-8')) if p.exists() else {}
+    return _AUDIT.get(pathlib.Path(folder_path).name) or {}
+
+
 def reading_problems(folder_path, profile, score=True):
     """Problems with the readability of a reading's texts (George Lasry, 22 Oct 2026): [] when fine.
     Returns (hard, soft): hard refuses the write-up, soft is a warning."""
@@ -107,8 +121,15 @@ def reading_problems(folder_path, profile, score=True):
         if st == 'decoded, not read': continue
         if not listify(t.get('translation')) and (t.get('language') or '').lower() != 'en':
             hard.append(f'{label}: no English translation (outcome.texts[].translation; or language "en")')
-        rv = t.get('reading_review') or {}
-        if not score or rv.get('grade') in ('A', 'B'): continue
+        # the test is a reader's: someone read the decryption as sentences and recorded it (Lasry: "the acceptance
+        # process should validate that the submission includes ... readable coherent text + translations"). The
+        # sentence score is a pointer for that reader, not the verdict: on the 327 readings of the 22 Oct 2026 audit
+        # it did not separate the readers' D grades from their A grades (research/reading_audit/README.md).
+        rv = t.get('reading_review') or audit_review(folder_path)
+        if rv.get('grade') not in ('A', 'B'):
+            hard.append(f'{label}: no reading_review: a reader must read the decryption as sentences and record '
+                        f'{{"grade": "A|B", "by": ..., "date": ..., "note": ...}} (or mark it "decoded, not read")')
+        if not score: continue
         if cr is None:
             import _check_reading as cr
         best = None
@@ -118,15 +139,11 @@ def reading_problems(folder_path, profile, score=True):
             r = cr.score_text(fp.read_text(encoding='utf-8', errors='ignore'), lang=(t.get('language') or None))
             if r['shape'] == 'other script': best = ('n/a', r); break
             if best is None or (r['clean_share'] or 0) > (best[1]['clean_share'] or 0): best = (f, r)
-        if best is None or best[0] == 'n/a':
-            if best and not rv: soft.append(f'{label}: not in the Latin alphabet, so not scored: record reading_review after reading it')
-            continue
+        if best is None or best[0] == 'n/a': continue
         share = best[1]['clean_share'] or 0
-        if share < cr.MARGINAL:
-            hard.append(f'{label}: holes in most sentences ({share:.0%} of sentences clean in {best[0]}, bar {cr.MARGINAL:.0%}): '
-                        f're-read it, mark it state "decoded, not read", or record reading_review if a reader finds it coherent')
-        elif share < cr.READABLE or best[1]['shape'] != 'reading':
-            soft.append(f'{label}: {share:.0%} of sentences clean, shape {best[1]["shape"]} (readable: {cr.READABLE:.0%}, prose)')
+        if share < cr.READABLE or best[1]['shape'] != 'reading':
+            soft.append(f'{label}: {share:.0%} of sentences clean in {best[0]} (shape {best[1]["shape"]}): '
+                        f'look at the weak sentences before recording the review')
     return hard, soft
 
 

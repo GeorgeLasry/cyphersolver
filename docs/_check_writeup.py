@@ -522,7 +522,7 @@ def audit(brief=False):
         for d in nosum: print(f'   no summary: {d}/')
     # 10. readability (George Lasry, 22 Oct 2026): texts that do not build sentences, readings with no translation.
     # Structural only here (no scoring, which is slow); research/reading_audit/ holds the scored and read audit.
-    untrans, decoded = [], []
+    untrans, decoded, unreviewed = [], [], []
     for d in dirs:
         try: prof = json.loads(read(tdir(d) / 'profile.json') or '{}')
         except ValueError: continue
@@ -530,8 +530,10 @@ def audit(brief=False):
         hard, _ = _texts.reading_problems(tdir(d), prof, score=False)
         if any('translation' in h for h in hard): untrans.append(d)
         if any('decoded, not read' in h for h in hard): decoded.append(d)
-    print(f'J. Readability: {len(untrans)} readings without an English translation, {len(decoded)} classed as readings '
-          f'with decoded-not-read texts (python docs/_check_reading.py --audit scores the sentences)')
+        if any('no reading_review' in h for h in hard): unreviewed.append(d)
+    print(f'J. Readability: {len(unreviewed)} readings with a document no reader has reviewed as sentences, '
+          f'{len(untrans)} without an English translation, {len(decoded)} classed "read" with decoded-not-read texts '
+          f'(research/reading_audit/ holds the 22 Oct 2026 audit)')
     if not brief:
         for d in decoded: print(f'   decoded, not read: {d}/')
     return problems, gaps

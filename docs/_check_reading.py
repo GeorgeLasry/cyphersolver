@@ -15,8 +15,10 @@ in profile.json outcome.texts:
     period word list of the text's language does not know it (one- and two-letter words count only if among the
     language's 40 commonest). A resolved code word ([SUA MAESTA], {Bassa}) is not a hole;
   * a sentence is clean when at most one word in ten is a hole (one hole for a sentence of up to 19 words);
-  * clean share = clean sentences / sentences. The language is the one whose word list covers the text best. Word
-    lists are built from the corpora in lang/, so the check is the same for every language. Texts not in the Latin
+  * clean share = clean sentences / sentences. Each sentence is judged against the word list of the language that
+    covers it best (a file often mixes an English header, clear text and a reading in another language), unless the
+    entry names its language. Word lists are built from the corpora in lang/, so the check is the same for every
+    language. Texts not in the Latin
     alphabet (Chinese, Japanese ...) are reported 'not scored' and need a reader.
 
 It also reports the shape of the file: 'decode' when it is mostly upper case or carries the |...| marks of a raw
@@ -191,6 +193,7 @@ def detect_unspaced(text, langs=None):
 
 
 def score_text(raw, lang=None):
+    fixed = lang
     text = clean_text(raw)
     shp = shape(text)
     empty = dict(lang=None, coverage=None, shape=shp, sentences=0, clean=0, clean_share=None, words=0, hole_rate=None)
@@ -208,13 +211,15 @@ def score_text(raw, lang=None):
     lex = lexicon(lang) if lang else {}
     # a raw decode's |...| marks a doubtful stretch: count it as one gap
     sents = sentences(re.sub(r'\|[^|\n]*\|', ' [?] ', text))
+    # each sentence is judged in its own language: a file often mixes an English header, clear text in one language
+    # and a reading in another (the file's main language comes first, then the others only if they do better)
+    others = [lexicon(lg) for lg in languages() if lg != lang] if fixed is None else []
     clean = holes = nwords = 0
     for s in sents:
-        h = n = 0
-        for tok in s:
-            for w, gap in words_of(tok):
-                n += 1
-                if gap or (w not in lex and w != 'codeword'): h += 1
+        ws = [(w, gap) for tok in s for w, gap in words_of(tok)]
+        known = lambda lx: sum(1 for w, gap in ws if not gap and (w in lx or w == 'codeword'))
+        best = max([lex] + others, key=known) if others and known(lex) < len(ws) else lex
+        n = len(ws); h = n - known(best)
         nwords += n; holes += h
         if n and h <= max(1, n // 10): clean += 1
     return dict(lang=lang, coverage=round(cov, 3) if cov is not None else None, shape=shp,

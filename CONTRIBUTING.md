@@ -34,8 +34,9 @@ reading is accepted, it must show for each document (George Lasry, 22 Oct 2026):
 
 A document that decodes but does not yet build sentences can still be sent, marked "decoded, not read": it is shown
 for others to improve, and is not counted as read. Key sheets, code lists and worksheets are marked "not prose".
-`python docs/_check_reading.py <folder>` measures the share of sentences without holes; the write-up checker refuses
-a reading below the floor. Please run it before opening the pull request.
+`python docs/_check_reading.py <folder>` measures the share of sentences without holes and shows the weak ones; please
+run it before opening the pull request. Before merging, a reviewer reads the text as sentences against its translation
+and records it on each document (`reading_review` in `profile.json`); the write-up checker refuses a reading without it.
 
 Not on GitHub? Email dnbourdeau@gmail.com with the same details. The entry is made for you and credited the same way.
 
