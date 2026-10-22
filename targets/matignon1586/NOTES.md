@@ -1,13 +1,13 @@
 # Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: in progress. Read in part. Re-measured 22 Oct 2026 on Michael Brackx's complete re-transcription (issues
-#73, #77, #78, #79, #83; section "Contributions of 22 Oct 2026" below): **61.8% of the target's cipher tokens read as
-sense (10,303 of 16,677; 57.6% after a scrambled-key control)**, every Cipher-1 leaf now transcribed in full, f. 110
-included, and the two leaves the repo had not transcribed (f. 150r, f. 154v) added. Where a contemporary clear copy
-exists the decode agrees with it on 83-94% of letters. Before: 39% (5,480 of ~14,082, `key_contrib.json`, 21 Oct) and
-31% (`key.json`, 22 Sept). **ff. 143r-v, 149v-150 and 154r-v were deciphered at the time**: ff. 155-157 are
-contemporary clear copies of them (found by Brackx, #70). The read bar (95%) is not met and the code groups below are
-open, so the target is not closed and has no page yet.
+Status: read in part, written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)). Measured
+with the **merged Cipher-1 key** (`key_cipher1.json`, section "One key, 22 Oct 2026" below) on Michael Brackx's
+complete re-transcription (issues #73, #77, #78, #79, #83): **63.7% of the target's cipher tokens read as sense
+(10,616 of 16,677; 58.7% after a scrambled-key control)**, every Cipher-1 leaf transcribed in full. Where a contemporary
+clear copy exists the decode agrees with it on 85-93% of letters. Before: 61.8% with his per-leaf keys, 39%
+(`key_contrib.json`, 21 Oct), 31% (`key.json`, 22 Sept). **ff. 143r-v, 149v-150 and 154r-v were deciphered at the
+time**: ff. 155-157 are contemporary clear copies of them (found by Brackx, #70). The read bar (95%) is not met; ten
+code groups and the residue of each leaf stay open (Remaining gaps). Full decryptions per document: `texts/`.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder keeps **Mayenne–Forget's
 Cipher-1** only. Matignon's **Cipher-3** leaves (fr. 15572 f. 276 and fr. 15571 f. 179, read by alejandrozarco in
@@ -454,12 +454,37 @@ and the figure separations. **Not taken:** 64 = *un* and `me` = *mesme* (open, a
 which cannot be checked without its copy text. The keys differ from leaf to leaf (θ = m on ff. 143, 150, 154r but m/s on
 ff. 173, 196, 201): a merged key for the whole target is still to be made.
 
+## One key, 22 Oct 2026
+
+`merge_keys.py` -> `key_merged_union.json`, `merge_keys.json`. Brackx's eleven per-leaf keys were merged by union: each
+figure takes every letter any leaf gives it, each code every value (a word in one leaf beats `+` in another). Decoded
+with this project's beam and 6-gram and scored as `brackx_validate.py`, the union key reads **every leaf as well as or
+better than its own key**: 9,855 of 15,705 document tokens against 9,609, copy agreement unchanged within a point
+(f. 143r 0.93, f. 154r 0.89, f. 154v 0.89/0.93, f. 150r 0.85, f. 150v 0.90 on the corrected copy), scrambled floor 0.121
+against 0.100. So the differences between the per-leaf keys (θ = m or m/s, e/ɛ) are differences of hand and reading,
+not of key, and the target has one key. Pruning the union (dropping letters a figure took in under 5% of its
+occurrences) lowered the score (0.628 -> 0.610; f. 110 0.62 -> 0.57) and was dropped.
+
+Open codes, retried (`code_lm_test.py`, `code_lm_test.json`, and the copies):
+- **59 = argent**, adopted: f. 154r "nous prester icy de l'[59] a rendre a Paris" is "de l'argent à rendre à Paris" in the
+  copy f. 157r; the other four contexts fit (f. 124r "pour faire [59] pour l'employer", f. 154r "leur [59] leur seroit
+  rendu a Paris", f. 173 "recouvrer de l'[59] soubs ses obligations", "qui avoient de l'[59]").
+- 44: at a sentence end both times it meets the f. 156r copy (f. 150v); a stop, as Brackx said (already read as nothing).
+- 9: "Comme il estoit" in one copy context (f. 150r), "Mais s'il y avoit" in the other: not one word; open.
+- 103 (f. 18v): the f. 19 copy itself has an unread word there, before "chevaulx légers"; open.
+- me = *mesme* ("a eu mesme advis de Bourdeaux") and 64 = *un* ("avec un peu de forces") fit, no copy covers them; not adopted.
+- Ranking candidate words by the 6-gram over 30-letter contexts does not work: the model picks two-letter function
+  words everywhere (it would make 59 *es*). Recorded as a failed step.
+
+`final_texts.py` -> `key_cipher1.json` (union + 59), `final_texts.json`, `texts/<doc>.txt` (per line: figures, then the
+decode cut into words, upper case inside a sense run, `|...|` outside one, `[nn]` open codes; the clear copy appended
+where there is one). Per document 0.51 (f. 123r) to 0.77 (f. 201).
+
 ## Remaining gaps
 
-- unread share of every leaf (29-53% of tokens outside sense runs; ff. 123r and 173 lowest) - blocker: open-codes; where copies exist Brackx's transcriptions reach 83-94% letter agreement, so most of the residue is spelling the corpus does not know, single-figure slips and the open codes below; a merged key and a second reading of the figure labels are still workable
-- code groups 16, 19, 23, 45, 59, 64, 101, 102, 103, `me`, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (64 = *un* and `me` = *mesme* proposed, not adopted)
+- unread share of every leaf (23-49% of tokens outside sense runs; ff. 123r and 173 lowest) - blocker: open-codes; with the merged key the decode agrees with the clear copies on 85-93% of letters, so most of the residue is spelling the corpus does not know, single-figure slips and the open codes below; a second reading of the figure labels is still workable
+- code groups 16, 19, 23, 45, 64, 101, 102, 103, `me`, 9, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (64 = *un* and `me` = *mesme* fit, not adopted; 9 is two different words against the copies)
 - the copy of f. 20r (rest of f. 19v, about 11 lines) - blocker: open-codes; read by Brackx but not given in #78, so his 86.7% for f. 20r is unchecked here
-- per-leaf keys not merged into one Cipher-1 key - blocker: open-codes; θ (m or m/s) and the e/ɛ split differ between hands
 
 ## Escalation
 
@@ -467,8 +492,8 @@ ff. 173, 196, 201): a merged key for the whole target is still to be made.
 - [x] clear-pages: **ff. 155-157 are the contemporary clear copies of ff. 143, 149v-150 and 154r-v** (Brackx, #70; checked here). f. 144 is a separate letter; f. 19 is the decipherment of f. 18; f. 125r is a clear letter
 - [x] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); the Cipher-3 leaves and their key are matignon1586c3; the Cipher-2 leaves (ff. 218-219, fr. 15573 ff. 120, 385) are mayenne1586c2
 - [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks
-- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; Brackx's letter sets and eleven code values from the clear copies (`key_contrib.json`); his per-leaf keys and codes 15, 34, 46, 51, 61, 73, 78, 82, 84 (`brackx2026/`, 22 Oct)
-- [x] retry: every Cipher-1 leaf re-transcribed in full and re-decoded by Brackx (issues #73, #77-#79, #83, 22 Oct 2026) and re-scored here with this project's decoder and a control (`brackx_validate.py`)
+- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; Brackx's letter sets and eleven code values from the clear copies (`key_contrib.json`); his per-leaf keys and codes 15, 34, 46, 51, 61, 73, 78, 82, 84 (`brackx2026/`, 22 Oct), merged here into one key (`key_cipher1.json`, union; pruning tried and dropped); 59 = argent from the f. 157r copy
+- [x] retry: every Cipher-1 leaf re-transcribed in full and re-decoded by Brackx (issues #73, #77-#79, #83, 22 Oct 2026) and re-scored here with this project's decoder and a control (`brackx_validate.py`); every open code retried against the copies and by LM ranking (`code_lm_test.py`), 59 recovered
 
 ## Assumptions for George's review
 

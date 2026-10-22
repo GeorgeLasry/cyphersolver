@@ -810,6 +810,58 @@
     "crib testing",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "solver",
+   "what": "One Cipher-1 key from Brackx's eleven per-leaf keys (merge_keys.py): each figure takes the union of the letter sets the leaves give it, each code every value any leaf gives it. Decoded every leaf with it (this project's beam and 6-gram) and scored as brackx_validate.py: the target's 15 documents read 9,855 of 15,705 tokens as sense against 9,609 with the per-leaf keys; every leaf equal or better, copy agreement unchanged within one point (f. 143r 0.93, f. 154r 0.89, f. 154v 0.89/0.93, f. 150r 0.85); scrambled floor 0.121 against 0.100. The per-leaf keys are one key read by different hands, not different keys.",
+   "result": "worked",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "solver",
+   "what": "Pruned the union key: dropped any letter a figure took in under 5% of its occurrences across the target (U=a, y=x, B=ss, L=f, ss=h, zb=u). Sense fell from 0.628 to 0.610 (f. 110 0.62 to 0.57), so the union key is kept.",
+   "result": "failed",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "hypothesis",
+   "what": "Open code groups 16, 45, 59, 64, me, 101, 102, 103, 9, 44 ranked against the 400 commonest corpus words by the 6-gram score of their contexts in the merged decode (code_lm_test.py). The model prefers two-letter function words everywhere (it would make 59 'es'), so it cannot choose codes from 30-letter contexts.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "what": "Code contexts checked against the clear copies: 59 = argent (f. 154r 'nous prester icy de l'[59] a rendre a Paris' = copy f. 157r 'de l'argent à rendre à Paris'; the other contexts, ff. 124r, 154r, 173 twice, fit: 'recouvrer de l'argent soubs ses obligations'); 44 falls at a sentence end both times it meets the f. 156r copy (a stop, as Brackx said); 9 gives 'Comme il' in one copy context and 'Mais s'il' in the other, so it is not one word; 103 (f. 18v) stands where the f. 19 copy itself has an unread word before 'chevaulx légers'. me = mesme and 64 = un fit their contexts ('a eu mesme advis de Bourdeaux', 'avec un peu de forces') but no copy covers them.",
+   "result": "partial",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Final measure with key_cipher1.json (union key + 59 = argent; final_texts.py): 10,616 of 16,677 tokens read as sense (0.637), set-size-preserving scrambled floor 0.121, corrected 0.587. Per document 0.51 (f. 123r) to 0.77 (f. 201). Full decryptions written per document to texts/.",
+   "result": "worked",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring",
+    "statistical test"
+   ]
   }
  ],
  "outcome": {
@@ -822,11 +874,11 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.618,
+  "fraction_read": 0.637,
   "fraction_read_method": "measured",
-  "fraction_read_source": "brackx_validate.py, 22 Oct 2026: Brackx's complete re-transcription of every Cipher-1 leaf (issues #73, #77-#79, #83) decoded with this project's beam and 6-gram over his per-leaf keys, measure.py's sense rule: 10,303 of 16,677 tokens (0.618), set-size-preserving scrambled-key floor 0.098, corrected 0.576. f. 150r and f. 154v are new in the denominator; f. 110 now 38/38 lines. Before: 5,480 of ~14,082 (0.389, key_contrib.json, 21 Oct); 4,325 (0.307, key.json, 22 Sept). The f. 18-20 crib leaves are not target documents and are not counted.",
+  "fraction_read_source": "final_texts.py, 22 Oct 2026: Brackx's complete re-transcription of every Cipher-1 leaf (issues #73, #77-#79, #83) decoded with the merged Cipher-1 key key_cipher1.json (the union of his eleven per-leaf keys + 59 = argent) by this project's beam and 6-gram, measure.py's sense rule: 10,616 of 16,677 tokens (0.637), set-size-preserving scrambled-key floor 0.121, corrected 0.587. Before: per-leaf keys 10,303 (0.618, brackx_validate.py); 5,480 of ~14,082 (0.389, key_contrib.json, 21 Oct); 4,325 (0.307, key.json, 22 Sept). The f. 18-20 crib leaves are not target documents and are not counted.",
   "codes_open": {
-   "open": 11,
+   "open": 10,
    "total": 50
   },
   "grades": "unknown",
@@ -838,28 +890,23 @@
   ],
   "gaps": [
    {
-    "item": "unread share of every leaf (29-53% of tokens outside sense runs)",
+    "item": "unread share of every leaf (23-49% of tokens outside sense runs; ff. 123r and 173 lowest)",
     "blocker": "open-codes",
-    "detail": "Brackx's transcriptions reach 83-94% letter agreement where copies exist; the residue is spelling the corpus does not know, single-figure slips and open codes; a merged key and a second reading of the labels are workable"
+    "detail": "with the merged key the decode agrees with the clear copies on 85-93% of letters; the residue is spelling the corpus does not know, single-figure slips in the transcription and the open codes; no second reader has checked the figure labels"
    },
    {
-    "item": "code groups 16, 19, 23, 45, 59, 64, 101, 102, 103, me, 98",
+    "item": "code groups 16, 19, 23, 45, 64, 101, 102, 103, me, 9, and the name code 98",
     "blocker": "open-codes",
-    "detail": "one to three contexts each, none in a clear copy; 64 = un and me = mesme proposed, not adopted"
+    "detail": "one to three contexts each, none in a clear copy (59 = argent now from f. 157r; 64 = un and me = mesme fit but are not adopted; 9 gives two different words against the copies; 103 meets an unread word in the f. 19 copy itself)"
    },
    {
     "item": "copy of f. 20r (rest of f. 19v)",
     "blocker": "open-codes",
-    "detail": "read by Brackx, not given in #78; his 86.7% unchecked here"
-   },
-   {
-    "item": "per-leaf keys not merged into one Cipher-1 key",
-    "blocker": "open-codes",
-    "detail": "θ (m or m/s) and the e/ɛ split differ between hands"
+    "detail": "read by Brackx, not given in #78; his 86.7% for f. 20r unchecked here"
    }
   ],
-  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress. 22 Oct 2026: Brackx's issues #73, #77, #78, #79, #83 folded in (complete re-transcription, per-leaf keys, codes 15, 34, 46, 51, 61, 73, 78, 82, 84), validated with this project's decoder against the clear copies and a control (brackx_validate.json). Still in progress: read bar not met, codes open, keys not merged.",
-  "fraction_coherent": 0.576,
+  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress. 22 Oct 2026: Brackx's issues #73, #77, #78, #79, #83 folded in (complete re-transcription, per-leaf keys, codes 15, 34, 46, 51, 61, 73, 78, 82, 84), validated with this project's decoder against the clear copies and a control (brackx_validate.json). Still in progress: read bar not met, codes open, keys not merged. 22 Oct 2026 (later): the per-leaf keys merged into one Cipher-1 key (key_cipher1.json; merge_keys.py), which reads every leaf as well or better; 59 = argent from the f. 157r copy; re-measured 0.637; site page written.",
+  "fraction_coherent": 0.587,
   "provenance": "mixed",
   "credits": [
    {
@@ -944,7 +991,7 @@
     "records": "BnF fr. 15572 ff. 110, 123-124, 150r, 173, 196, 201; fr. 15571 f. 177r-v",
     "method": "read with known key",
     "extent": "partial",
-    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs, extended by Brackx's corrections and per-leaf keys (issues #64-#83); 0.618 of the target's tokens read as sense on his re-transcription (brackx_validate.py, 22 Oct 2026)"
+    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs, extended by Brackx's corrections and per-leaf keys (issues #64-#83), merged here into one key (key_cipher1.json); 0.637 of the target's tokens read as sense on his re-transcription (final_texts.py, 22 Oct 2026)"
    },
    {
     "label": "ff. 143r-v, 149v-150, 154r-v (clear copies ff. 155-157)",
@@ -952,6 +999,123 @@
     "method": "read from existing decipherment",
     "extent": "complete",
     "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them; what the notes called the 'f. 149v' cipher is f. 150r, a full page (#83); Brackx's decodes of ff. 143r-v, 150r-v and 154r-v agree with the copies on 83-94% of letters (brackx_validate.json)"
+   }
+  ],
+  "key_file": [
+   "key_cipher1.json",
+   "brackx2026/"
+  ],
+  "texts": [
+   {
+    "doc": "f143r",
+    "label": "f. 143r",
+    "transcription": "brackx2026/f143r_cipher.txt",
+    "decryption": "texts/f143r.txt",
+    "summary": "Mayenne to the King, April 1586, after the capitulation of Castets: its captain, unhappy with the King of Navarre, has agreed to leave him; a treaty of twelve thousand ecus in three months, leave to sell his property and a pardon to be registered by the Parlement. The clear copy is f. 155r."
+   },
+   {
+    "doc": "f143v",
+    "label": "f. 143v",
+    "transcription": "brackx2026/f143v_cipher.txt",
+    "decryption": "texts/f143v.txt",
+    "summary": "The Castets despatch continued, on the terms and the march of the army; the clear copy is f. 155r-v."
+   },
+   {
+    "doc": "f150r",
+    "label": "f. 149v-150r",
+    "transcription": "brackx2026/f150r_cipher.txt",
+    "decryption": "texts/f150r.txt",
+    "summary": "Forget to Villeroy, April 1586, on how the composition of Castets was made: 'if there was a fault in the substance, there was more in the form'. The clear copy is f. 155v."
+   },
+   {
+    "doc": "f150",
+    "label": "f. 150v",
+    "transcription": "brackx2026/f150v_cipher.txt",
+    "decryption": "texts/f150.txt",
+    "summary": "The same letter continued: the two commanders listen too readily to their own people, who want no company of one another; Forget thinks he has earned his wages. The clear copy is f. 156r."
+   },
+   {
+    "doc": "f154",
+    "label": "f. 154r",
+    "transcription": "brackx2026/f154r_cipher.txt",
+    "decryption": "texts/f154.txt",
+    "summary": "Forget to Villeroy after Easter 1586: the pay of two musters owed, captains' complaints, and lenders who had promised money to be repaid in Paris drawing back; forty thousand ecus. The clear copy is f. 157r."
+   },
+   {
+    "doc": "f154v",
+    "label": "f. 154v",
+    "transcription": [
+     "brackx2026/f154vA_cipher.txt",
+     "brackx2026/f154vB_cipher.txt"
+    ],
+    "decryption": "texts/f154v.txt",
+    "summary": "The same letter continued in two cipher blocks: Villeroy's advice to raise money on exchange, and the difficulty of doing it at Bordeaux. Clear copy f. 157r."
+   },
+   {
+    "doc": "f173",
+    "label": "f. 173",
+    "transcription": "brackx2026/f173_cipher.txt",
+    "decryption": "texts/f173.txt",
+    "summary": "To the King, 1586: the credit crisis; no means to pay two musters, the town refuses to contribute on the strength of the King's letters, no one will stand surety, and only merchants of Paris lend on the writer's word."
+   },
+   {
+    "doc": "f196",
+    "label": "f. 196",
+    "transcription": "brackx2026/f196_cipher.txt",
+    "decryption": "texts/f196.txt",
+    "summary": "To the King, 1586, 'Depuis le partement du S.r de Bosseval': a siege report naming Sainct-Chamarand, la Barge, Montberault and la Binault, Mayenne's fever, Marshal Matignon pressed to come, two trenches and a battery of fifteen cannon."
+   },
+   {
+    "doc": "f201",
+    "label": "f. 201",
+    "transcription": "brackx2026/f201_cipher.txt",
+    "decryption": "texts/f201.txt",
+    "summary": "The same despatch as f. 196, enciphered again with different homophones and with more of it in clear; the two were aligned figure by figure."
+   },
+   {
+    "doc": "f123r",
+    "label": "f. 123r",
+    "transcription": "brackx2026/f123r_cipher.txt",
+    "decryption": "texts/f123r.txt",
+    "summary": "Mayenne to the King from Marmande, March 1586, opening in clear ('la dernière que j'ay eu l'honneur est du huictiesme de ce moys'): no money, contributions to be had only by garrisons, the troops cannot be kept together."
+   },
+   {
+    "doc": "f123v",
+    "label": "f. 123v",
+    "transcription": "brackx2026/f123v_cipher.txt",
+    "decryption": "texts/f123v.txt",
+    "summary": "The Marmande despatch continued: Turenne back over the Garonne, the relief of places, the army's wants."
+   },
+   {
+    "doc": "f124r",
+    "label": "f. 124r",
+    "transcription": "brackx2026/f124r_cipher.txt",
+    "decryption": "texts/f124r.txt",
+    "summary": "The Marmande despatch continued: the bearer sent to learn the King's intention."
+   },
+   {
+    "doc": "f124v",
+    "label": "f. 124v",
+    "transcription": "brackx2026/f124v_cipher.txt",
+    "decryption": "texts/f124v.txt",
+    "summary": "The end of the Marmande despatch."
+   },
+   {
+    "doc": "f110",
+    "label": "f. 110",
+    "transcription": "brackx2026/f110_cipher.txt",
+    "decryption": "texts/f110.txt",
+    "summary": "Mayenne to Villeroy from Bellebourg, March 1586: on making war without money and what it does to his reputation; the leaf is wholly in cipher."
+   },
+   {
+    "doc": "fr15571-f177",
+    "label": "fr. 15571 f. 177r-v",
+    "transcription": [
+     "brackx2026/f177r_cipher.txt",
+     "brackx2026/f177v_cipher.txt"
+    ],
+    "decryption": "texts/fr15571-f177.txt",
+    "summary": "Forget, 31 December 1585, on Mayenne's design for Gascony: a plan on Pons and Taillebourg, with Taillebourg's toll on the Charente and thirty thousand ecus to be raised from the country, given up when the vicomte de Turenne took the field with guns. The verso (11 lines) continues it."
    }
   ]
  }

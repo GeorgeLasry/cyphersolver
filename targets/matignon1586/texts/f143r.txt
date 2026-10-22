@@ -1,0 +1,72 @@
+# fr. 15572 f. 143r, Mayenne to the King, April 1586: decryption with the merged Cipher-1 key (key_cipher1.json)
+# Transcription: Michael Brackx (issues #73, #77-#79, #83), brackx2026/. Decoded here with this
+# project's beam and period-French 6-gram (final_texts.py). Per manuscript line: the figures, then the
+# decode cut into words. UPPER CASE = inside a run of French (measure.py sense rule); |lower case| =
+# outside one (doubtful letters, unknown spellings, slips); [nn] = code group not identified.
+# Measured: 529 of 704 tokens read as sense (75.1%); scrambled-key floor 11.7%.
+ 1  z yy c z x dd m ao v Ze n D o yy t h ff m t 6 w L h 49 12 dd t g 7 s he
+    |s ssu| ESTANT LAISSE ENTENDRE COMME IL SE UOUL
+ 2  H 6 Ze w h c ao L m o L oo s 76 w g 14 n ei t dd dc ao B 13 A x dd Ze m L t
+    ONT DEPARTIR DU ROI DE NAUARRE DUQUEL IE |s cin qui| LES TTRE
+ 3  Tm D n f 7 v Ze ao 6 m x Ze ao ei D ff Ze dd 7 v z o w x L t 14 ei h n ao ei 47
+    MAL CON |tint et aiant| CONSIDERE QUE IE LA |i tout|
+ 4  q L z 7 s B Ze t v B L c 7 s L n t Tm h o he x g e f 7 x t w h 49 ao v w
+    |ur uoue| TENIR POUR LE ME A LEUR |coe e du comme in d|
+ 5  pl h 6 m 13 n ao ei Ze t m 14 z t v h dd x L 7 o Ze S o c t Ze o m t w x z M
+    MENT QUI LAIT ET QUE ME NE SEROIT PA PETITE DES |f|
+ 6  g t s L R 7 g L z t dd ao o D B L t dd 14 w t n t L h Ze B v B e ei ao B Ze
+    |ueur pour mes mi aires| QUE DE LE RETENIR IAN |t|
+ 7  e ao o dd m t D g B dd n g ei x Ze B v dd 7 v dd o w t L ao m o Hc v w s v t
+    |r aicte auec| LUI ET EN CONSIDERATION DU NE
+ 8  c L 7 Tm x yy t 13 n Tm ao M D o dd m t w h v t c 7 L Ze t e n t dd ao L Tm x q
+    PROMESSE QU IL MA FAICTE DU NE PORTER LES ARMES
+ 9  c Hc g L dd t c ao e Ze o w h z o x Tm 7 B oo h z 14 n q 14 c ao L m B dd g
+    POUR CE PART IDEM IE MON DESQUELS QUE PARTICU
+10  he B x e z t L g o dd t 13 n Tm D c L 7 Tm B q w h 26 M ao B L t c h v w o
+    LIER SERUICE QU IL MA PROMIS DE UOUS FAIRE PEND A
+11  6 m dd t m h Tm c dd x m 48 7 g ao n D g x z ei Ze h 12 z x q Ze e t z 7 n s
+    NT CE TEMPS ET AUSSI OU IL AU |euite| ILS EST RESOLU
+12  w g ao z o D 47 dd t 14 25 ao g Hc v dd q 7 s n box c Hc g L n ao dd 7 Tm c
+    QU AU |i| A TOUT CE QUE NOUS AUONS UOULU POUR LA |comp|
+13  q o Ze B Hc v w h z ao c n D dd t n ao 14 he t h z Ze 7 o m x v dd 7 L t
+    UATION DE SA PLACE LA QUE LE ESTOIT ENCORE
+14  ao yy t z lam 7 B t S 7 s L 25 L t Ze h v B L ao dd t q ei x 8 t z B n q n t
+    A SES BON |e| POUR NOUS RETENIR A CE |sieges ils le|
+15  B t v m g 7 s n q 7 c e v 3 ao q Ze L t e x v dd 7 L t q 14 n dd 14 Ze t Tm c q
+    |ient uoulu opiniastrer| ENCORES QUELS QUE TEMPS
+16  13 x g z Ze B Tm c 7 L m t 61 w h oo t z S t v dd t x Ze x v dd 7 L t q c n
+    QUI EUST IMPORTE BEAUCOUP DE DESPENSE ET ENCORES P L
+17  s dd w h z t ei Hc g L 13 25 x z Ze m L t z dd f x e 35 12 Tm x s q Ze M
+    US DE SEIOUR QUI NOUS EST TRES CHER PARCE QUE IL |m eust f|
+18  ao he g c ao yy t T A ao L o g 3 x T h S Hc s e ei ao he t T x Ze c g o q n ao
+    |ilus a sser| LA RIUIERE POUR |i mler et puis la|
+19  T h R ao yy t T S 7 g L s t v 3 T o dd 3 S Hc s L 47 x z q t dd dd 7 v f B w
+    |repasser| POUR UENIR A CE POUR TOUTES SES CON CE |d|
+20  h L ao Ze o q v z h Ze S Hc s e n t dd c L t Tm B t L h q S n s y 14 lam 7
+    |eration s| ET POUR LES PREMIERES PLUS QUE |bo|
+21  T n x q ao s Ze L t q ei t n g ei ao B g h L lam ao he t Tm h 6 m c L 7 Tm B q w h
+    |r| LES AUTRES IE LUI AN |uerbalement promis de|
+
+# The contemporary clear copy (brackx2026/copies/f155r_f143_corr.txt), as read by Michael Brackx:
+
+s'estant laissé entendre comme il se vouloit départir du Roy de Navarre, duquel je sçay qu'il est tres mal contant; et ayant considéré que je l'ay tousjours ouy tenir pour le meilleur homme de commandement qu'il ayt,
+et que ce ne seroit pas petite faveur pour ses affaires que de le retenir, j'ay traicté avec luy, et en
+considération d'une promesse qu'il m'a faicte de ne porter les armes pour son party de six mois, et de quelque
+particulier service qu'il m'a promis de vous faire pendant ce temps; et aussi ou à la vérité il s'est résolu
+quasi à tout ce que nous avons voulu pour la composition de sa place, laquelle estoit encores assez bonne pour
+nous retenir à ce siège s'ils eussent voulu s'opiniastrer encores quelque temps, qui eust importé beaucoup de
+despense, et encores plus de séjour, qui nous est très cher, parce qu'il m'eust fallu passer la rivière pour
+y aller et puis la repasser pour venir icy. Toutes ces considérations, et pour les premières plus que pour
+les autres, je luy ay verbalement promis de luy faire payer dans trois mois la somme de douze mil escus, de luy
+faire obtenir permission [interlined: *de V. Mté*] de pouvoir jouir de son bien, ou avoir permission de le
+vendre, oultre d'intercéder envers Vostre Majesté pour luy faire accorder un pardon de toutes les faultes
+passées. Ce que je supplie très humblement Vostre Majesté de confirmer, et croire comme je n'aye rien de cela resolu que soubz vostre bon plaisir. Toutesfois que je ne me fusse pas tant advancé en ce traicté si je
+n'eusse sceu que c'est assez porter à approcher(?) de beaucoup de fruict, et péril de peu de perte(?). Car la
+condition de la permission de vendre son bien n'est comme rien, parce qu'il ne s'en peut ayder, estant quasi
+tout sondict bien, mesme ledict lieu de Castets, du costé de sa femme et substitué à ses enfans. Et quant au
+pardon, il ne peut estre vallable qu'il n'aye passé au Parlement, où il est bien certain qu'ils ne le
+vérifieront pas, attendu(?) tant de charges et submissions qu'il ne s'en pourra ayder qu'il n'aye obéy aux
+édicts et du tout renoncé à l'aultre party. Et aussi qu'il n'y avoit plus de hasard que pour la somme, dont je
+m'estois(?) bien garanty(?) en partie par le temps qu'il nous a espargné du siège de Castets; et l'autre(?), elle
+n'est pas aussi du tout inutile, ayant de luy ceste obligation de ne porter les armes de six mois pour son
+party, où il eust …
