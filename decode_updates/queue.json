@@ -2461,7 +2461,7 @@
     "R4333": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
-     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 1 of 5 (R4333-R4337): figure runs inside clear German and Latin; surveyed only, not deciphered. Sender, receiver and place empty on DECODE.",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 1 of 3 (R4333-R4335): figure runs inside clear German and Latin; surveyed only, not deciphered. Sender, receiver and place empty on DECODE. R4336-R4337, filed with these under the same name, are London letters of Feb 1625 in another cipher (see rusdorff1625).",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -2469,7 +2469,7 @@
     "R4334": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
-     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 2 of 5; surveyed only, not deciphered.",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 2 of 3; surveyed only, not deciphered.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -2477,23 +2477,7 @@
     "R4335": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
-     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 3 of 5; surveyed only, not deciphered.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R4336": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 4 of 5; surveyed only, not deciphered.",
-     "reading": null,
-     "sent": false,
-     "reading_not_needed": true
-    },
-    "R4337": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 5 of 5; surveyed only, not deciphered.",
+     "note": "Rusdorff to Oxenstierna, The Hague 1628, letter 3 of 3; surveyed only, not deciphered.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -11556,6 +11540,56 @@
      "reading": null,
      "reading_not_needed": true,
      "sent": false
+    }
+   }
+  },
+  "rusdorff1625": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/rusdorff1625.html",
+   "key": {
+    "file": "targets/rusdorff1625/lasry2026/ctts/key.txt",
+    "lang": "LA",
+    "how": "Recovered from the ciphertext by George Lasry: CTTS built-in cryptanalysis and the 24-step rule for the letter table; three-digit codes with Claude Opus 5.5 (PR 72)."
+   },
+   "cite": "George Lasry, transcription, key, edited Latin and translation, 21 October 2026 (github.com/dbourdeau/cyphersolver pull 72).",
+   "fields": {
+    "sender": "Johann Joachim von Rusdorff",
+    "receiver": "Axel Oxenstierna",
+    "origin_city": "London",
+    "start_year": "1625",
+    "cleartext_lang": "Latin",
+    "plaintext_lang": "Latin",
+    "cipher_type": "Homophonic substitution (three two-digit numbers per letter, 24 apart) with a one-part alphabetical three-digit nomenclator"
+   },
+   "records": {
+    "R4336": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Rusdorff to Oxenstierna, London, 15/25 February 1625 (not The Hague 1628). Every letter sign read; codes read, a few tentative; code 701 unknown. The subscription runs past the photographed page.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R4336.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "start_month": "2",
+      "start_day": "25"
+     }
+    },
+    "R4337": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Two letters: images 1-2 Rusdorff to Oxenstierna, London, 26 February 1625 old style, signed Rusdorff (code 760), first page not photographed; image 3 the opening of a further, undated letter. Every letter sign read; code 628 unknown, some codes tentative.",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R4337.txt"
+      }
+     ],
+     "sent": false,
+     "fields": {
+      "start_month": "2",
+      "start_day": "26"
+     }
     }
    }
   }

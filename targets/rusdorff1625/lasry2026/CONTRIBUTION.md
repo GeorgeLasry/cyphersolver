@@ -124,7 +124,7 @@ The five images were transcribed in CTTS: each two-digit group, three-digit code
 
 ## Files
 
-`targets/rusdorff1628/lasry2026/`:
+`targets/rusdorff1625/lasry2026/` (moved from `targets/rusdorff1628/lasry2026/` on merge, 21 Oct 2026):
 
 - `ctts/`: the CTTS project (key, colors, positions, transcription, decryption and edited exports, icons).
 - `cryptiana/`: a Cryptiana entry (`entry.html` and scoped `entry.css` for insertion, a self-contained `index.html`, images).

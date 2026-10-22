@@ -328,6 +328,11 @@ PAGES = [
          blurb='Two Italian letters (DECODE R704, R721) in a third cipher of the SP 106/10 codebreaker&rsquo;s file: groups of a letter and one or two figures, with his syllables above them. Identified and separated from the file&rsquo;s other ciphers; not yet transcribed or deciphered. Split on 14 Oct 2026 from sp106box10.',
          quote='Z6 n54 m56 g42 n24 m62',
          rights='Manuscript rights: The National Archives, Kew, via DECODE'),
+    dict(slug='rusdorff1625', label='Rusdorff to Oxenstierna 1625', year='1625', y=1625.15, place='London &rarr; Axel Oxenstierna', st='solved', stt='key recovered from ciphertext-only',
+         title='Rusdorff to Oxenstierna: London, February 1625',
+         blurb='Three Latin letters of the Palatine envoy Johann Joachim von Rusdorff to Axel Oxenstierna, London, February 1625 (Riksarkivet E 701, DECODE R4336&ndash;R4337, catalogued The Hague 1628). George Lasry recovered the key from the cipher alone: a homophonic table with numbers 24 apart and an alphabetical three-digit nomenclator. The Swedish and Danish offers for the Palatinate, the French marriage and a French subsidy; two codes open.',
+         quote='Nam sex tantum millia peditum et equitum mille &hellip; ab Rege Magnae Britanniae petit',
+         rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE R4336&ndash;R4337'),
     dict(slug='sp106r722', label='Venetian secretary 1625', year='1625', y=1625.3, place='Low Countries or Rome? &rarr; the Venetian ambassador in England', st='stuck', stt='not solved',
          title='A Venetian secretary to the Venetian ambassador in England, 1625',
          blurb='An intercepted Italian letter of the first half of 1625 (TNA SP 106/10, DECODE R722), half in clear and half in a three-figure syllabic code, with ten worksheets of the English codebreaker who tried to break it, all catalogued as anonymous ciphertexts. The endorsement and the clear text (Spinola before Breda, the Pope and B&eacute;thune) are read and the 420 groups transcribed; the codebreaker&rsquo;s partial key and annealing do not break the code. Split on 14 Oct 2026 from sp106box10.',
@@ -375,7 +380,7 @@ PAGES = [
          rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE R4284'),
     dict(slug='rusdorff1628', label='Rusdorff to Oxenstierna 1628', year='1628', y=1628.6, place='The Hague &rarr; Axel Oxenstierna', st='stuck', stt='surveyed only',
          title='Rusdorff to Oxenstierna, 1628',
-         blurb='Five letters of the Palatine diplomat Johann Joachim von Rusdorff to Axel Oxenstierna from The Hague (Riksarkivet, DECODE R4333&ndash;R4337), with runs of figures inside clear German and Latin. Opened and described, not yet transcribed or attacked; whether they share one key is not known.',
+         blurb='Three letters of the Palatine diplomat Johann Joachim von Rusdorff to Axel Oxenstierna from The Hague (Riksarkivet, DECODE R4333&ndash;R4335), with runs of figures inside clear German. Opened and described, not yet transcribed or attacked. Two more records of the volume, R4336&ndash;R4337, are London letters of 1625 in another cipher, deciphered by George Lasry.',
          quote='120. 65. 47. 83. 56. 103. 61. 77 &middot; undeciphered',
          rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE'),
     dict(slug='sweden4306', label='Riksarkivet R4306', year='undated (pencilled 1632?)', y=1632, place='Riksarkivet key-box and Oxenstierna ciphers', st='partial', stt='read in part',
@@ -3269,6 +3274,7 @@ IMAGES['lanssac'] = ('lanssac_f124.jpg', 'BnF fr. 4735 f. 124, the head of Lanss
 IMAGES['vasto1527'] = ('vasto1527_f16v_cipher.jpg', 'BnF fr. 3022 f. 16v: the clear news of Lautrec, then the first cipher lines of no. 6', 'Biblioth&egrave;que nationale de France, fr. 3022 f. 16v, via Gallica (btv1b90601558, view 32)')
 IMAGES['ranzo1528'] = ('ranzo1528_f44r_head.jpg', 'BnF fr. 3022 f. 44r: the clear opening of the letter to Garbino and the first lines of the code', 'Biblioth&egrave;que nationale de France, fr. 3022 f. 44r, via Gallica (btv1b90601558, view 86)')
 IMAGES['riksarkivet4284'] = ('riksarkivet4284_lead.jpg', 'R4284 p. 1: comma-separated numbers with the clear Latin Sequentes etiam, pro eo tempore, praeter omnia alia', 'Riksarkivet, Stockholm, Chifferklaver l&aring;da II:114, first page, via DECODE R4284')
+IMAGES['rusdorff1625'] = ('rusdorff1625_lead.jpg', 'The opening of the letter of 15/25 February 1625: secretissimis in letter signs, then codes 678 (propositio) and 490 with their Latin endings.', 'Riksarkivet, Stockholm, E 701, Rusdorff to Oxenstierna 15/25 Feb. 1625, image 1, via DECODE R4336')
 IMAGES['sweden4306'] = ('sweden4306_lead.jpg', 'The first five cipher lines, mechanically deciphered below; no interlinear plaintext is visible.', 'Riksarkivet, Chifferklaver låda II:133, via DECODE R4306')
 IMAGES['rusdorff1628'] = ('rusdorff1628_lead.jpg', 'R4333 image 1: a German sentence with the figures 120. 65. 47. 83. 56. 103. 61. 77', 'Riksarkivet, Stockholm, Rusdorff to Oxenstierna 1628, letter 1, image 1, via DECODE R4333')
 IMAGES['oxenstierna1633'] = ('oxenstierna1633_lead.jpg', 'E 708 f. 20: four-digit codes inside clear Swedish, several glossed above', 'Riksarkivet, Stockholm, Oxenstiernska samlingen E 708, letter of 8/18 June 1633, f. 20, via DECODE R4338')

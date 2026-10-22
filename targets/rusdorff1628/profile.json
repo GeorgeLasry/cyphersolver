@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "rusdorff1628",
- "title": "Johann Joachim von Rusdorff to Axel Oxenstierna, The Hague 1628 (Riksarkivet, DECODE R4333-R4337; from catalogue item 207)",
+ "title": "Johann Joachim von Rusdorff to Axel Oxenstierna, The Hague 1628 (Riksarkivet, DECODE R4333-R4335; from catalogue item 207)",
  "documents": [
   {
    "id": "R4333",
@@ -77,56 +77,6 @@
     "measured": false
    },
    "transcription": "unknown"
-  },
-  {
-   "id": "R4336",
-   "read": "not read",
-   "shelfmark": "Riksarkivet, Oxenstiernska samlingen (E 701, Ser. B, Rusdorff), DECODE R4336 (Riksarkivet_Rusdorff_Oxenstierna_1628-4)",
-   "date": "1628",
-   "year": 1628,
-   "country": "Dutch Republic",
-   "route": "Johann Joachim von Rusdorff, The Hague -> Axel Oxenstierna",
-   "language": "German and Latin",
-   "pages": 2,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none seen in the survey",
-    "partial": false
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "code groups",
-    "measured": false
-   },
-   "transcription": "unknown"
-  },
-  {
-   "id": "R4337",
-   "read": "not read",
-   "shelfmark": "Riksarkivet, Oxenstiernska samlingen (E 701, Ser. B, Rusdorff), DECODE R4337 (Riksarkivet_Rusdorff_Oxenstierna_1628-5)",
-   "date": "1628",
-   "year": 1628,
-   "country": "Dutch Republic",
-   "route": "Johann Joachim von Rusdorff, The Hague -> Axel Oxenstierna",
-   "language": "German and Latin",
-   "pages": 3,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "none"
-    ],
-    "source": "none seen in the survey",
-    "partial": false
-   },
-   "length": {
-    "tokens": "unknown",
-    "unit": "code groups",
-    "measured": false
-   },
-   "transcription": "unknown"
   }
  ],
  "system": {
@@ -176,7 +126,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-21",
-  "last_date": "2026-10-14"
+  "last_date": "2026-10-21"
  },
  "solution": [
   {
@@ -190,11 +140,17 @@
    "kind": "verification",
    "what": "Split from the former catalogue-207 group entry riksarkivet1628 under the one-key rule (George Lasry, 14 Oct 2026); the Rusdorff letters are another correspondence and cipher. Image 1 of R4333 viewed again (a cipher sentence of eight figure groups). Not transcribed, not attacked.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "what": "George Lasry's PR 72 recovered the key of R4336/R4337 (London 1625; homophonic 16-87 with an alphabetical 187-760 nomenclator); they move to rusdorff1625. R4333 image 3 is German with numbers 8-107, outside that table, so R4333-R4335 stay here as a different cipher. Kröger 1876 reports Rusdorf's copybook of his Oxenstierna letters 1624-1628 at Kassel (unprinted then), a probable clear-text source; not consulted.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Surveyed only: the five letters were opened and their cipher noted, but nothing was transcribed or attacked.",
+  "method_basis": "Surveyed only: the three letters were opened and their cipher noted, but nothing was transcribed or attacked.",
   "contribution": [
    "catalogue correction",
    "sender or date identified"
@@ -210,11 +166,11 @@
   "grades": "unknown",
   "gaps": [
    {
-    "item": "R4333-R4337, all cipher passages",
+    "item": "R4333-R4335, all cipher passages",
     "blocker": "not-attempted",
-    "detail": "surveyed only; no transcription, no key search; Oxenstierna's printed correspondence (Rikskanslern Axel Oxenstiernas skrifter och brefvexling) not searched"
+    "detail": "surveyed only; no transcription, no key search; the rusdorff1625 key does not fit R4333; Rusdorf's Kassel copybook (Kröger 1876) not consulted; Oxenstierna's printed correspondence not searched"
    }
   ],
-  "notes": "Split on 14 Oct 2026 from riksarkivet1628. In progress: not yet worked."
+  "notes": "Split on 14 Oct 2026 from riksarkivet1628; R4336/R4337 moved to rusdorff1625 on 21 Oct 2026. In progress: not yet worked."
  }
 }
