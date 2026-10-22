@@ -86,7 +86,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b525172213/f393.item): p.351 line 1 \"C?TD, L T φ ...\" -> \"Ceux, qui ...\" with his key (L=q,T=u,φ=i); recurrent group \"P X T Y\" = v o u s throughout; consistent with his excerpts \"Ceux, qui auront le bonheur ... vous\" Verdict: confirmed.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -121,6 +122,15 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. 93.3% identified (61 ?), so below the complete bar. Alchemical recipe, page ends with a flourish; date \"18th century?\" unverified.",
-    "first_break": true
+    "first_break": true,
+    "texts": [
+      {
+        "doc": "fr14765p351",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "An alchemical recipe using mercury, with promises of success and a warning against misuse; writer, recipient and date (18th century?) not established, as given in George Lasry's report.",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry."
+      }
+    ]
   }
 }

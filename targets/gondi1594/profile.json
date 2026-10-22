@@ -89,7 +89,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90582908/f21/pct:0,0,52,100/1400,/0/default.jpg): f9v rows 10-13 (canvas 21): contemporary Italian interlinear \"luogo di queste parti doppo la reductione di Parigi non abbiamo auto qui alcuna lettere di Mr di Revol ne daltri ne fatta alcuna dimostratione di ralegramento con noi et si va dubitando...\" = his excerpt Verdict: confirmed.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -123,6 +124,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Only 3/6 pages deciphered though 98.6% of transcribed elements identified. f9r opens in clear to Nevers; Italian."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Only 3/6 pages deciphered though 98.6% of transcribed elements identified. f9r opens in clear to Nevers; Italian.",
+    "texts": [
+      {
+        "doc": "gondi1594",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "Negotiations over the Pope’s absolution of the French king, with warnings that the Duke of Sessa was delaying a settlement; references to Savoy and Monsieur de Maisse. (Girolamo Gondi to Duke of Nevers and Rethel, 15 May 1594, as given in George Lasry's report.)",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry. The contemporary interlinear decipherment on the leaves is on the Gallica images only, not transcribed here."
+      }
+    ]
   }
 }

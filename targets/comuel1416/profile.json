@@ -109,7 +109,8 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split under the one-key rule from benedict1399: this letter is from another sender and its key is not shown to be Benedict XIII's (the key was rebuilt on doc. 1068 only), so it gets its own entry with no claim about its key."
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Puig y Puig 1920 app. CXXXV on Google Books (URL); no transcription exists (ciphertext not imaged).", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -138,6 +139,15 @@
     "note": "printed decipherment (1920), appendix CXXXV",
     "date": "1920",
     "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "comuel1416",
+    "label": "Comuel to Climent, 27 Jun 1416",
+    "decryption": "https://books.google.com/books?id=CuOlkxWnk-EC&pg=PA578",
+    "summary": "Pedro Comuel to Francesc Climent, 27 Jun 1416, in Benedict XIII's circle during the Schism: his coming to Aragon. Puig y Puig printed it in 1920 (appendix CXXXV, pp. 578-579) with the deciphered passages in italics; his note 2 cites another Comuel letter, doc. 661, not printed.",
+    "note": "No transcription: the ciphertext is neither imaged nor printed (needs physical access to the Arxiu Capitular de Barcelona original). The decryption is Puig's 1920 print, linked on Google Books; not yet copied into the folder."
    }
   ]
  }

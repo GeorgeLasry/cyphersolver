@@ -89,7 +89,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b10034035f/f77.item): f41r \"Inserto alla lettera de X di maggio 1597\", numeric cipher with full interlinear Italian: \"et se V.A. nel principio si fusse contentata di por quel luogo in mano di una terza persona confidente ad ambe le parti perche lo conservassi a chi fusse stato legitimo et Catolico Re di Francia\" = his excerpt; numbers not re-decoded Verdict: confirmed.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -120,6 +121,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Full contemporary interlinear decipherment on the page, plus Cryptiana key (Dupuy 63) - essentially an existing decipherment. Only 2/9 pages done. Sender \"Guicciardini?\" uncertain."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Full contemporary interlinear decipherment on the page, plus Cryptiana key (Dupuy 63) - essentially an existing decipherment. Only 2/9 pages done. Sender \"Guicciardini?\" uncertain.",
+    "texts": [
+      {
+        "doc": "dupuy155",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "The Tuscan ambassador and Don Juan discuss neutral custody of Chateau d'If. The Grand Duke cannot compel Bussetto or surrender the Italian garrison's position without breaking his promise. (Francesco Guicciardini? to Ferdinando I de Medici, Grand Duke of Tuscany, 10 May 1597, as given in George Lasry's report.)",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry. The contemporary interlinear decipherment on the leaves is on the Gallica images only, not transcribed here."
+      }
+    ]
   }
 }

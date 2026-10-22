@@ -183,7 +183,8 @@
    "what": "R59 (catalogue 255): three glossed passages decoded with the same key: 'generale de le galere', 'l'ambasciar...', '...contraria'.",
    "result": "worked",
    "date": "2026-09-21"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions r59/r60/r61_digits.txt; the interlinear decipherments copied verbatim from NOTES.md into texts/R59-R61_decryption.md; R60's gloss is transcribed only in part (rest on the image) and R61's letter-sign line is untranscribed.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -200,6 +201,31 @@
     {"who": "biermann", "role": "key or decipherment used", "note": "Biermann-Bosbach key for ASV Francia 64 (1625), on DECODE", "source": "DECODE R60/R61 (D3246, D3247)"},
     {"who": "bosbach", "role": "key or decipherment used", "note": "Biermann-Bosbach key for ASV Francia 64 (1625), on DECODE", "source": "DECODE R60/R61 (D3246, D3247)"},
     {"who": "lasry", "role": "key or decipherment used", "note": "his transcription of the Biermann-Bosbach key on DECODE", "date": "2020-10-24", "source": "DECODE D3246, D3247"}
+  ],
+  "texts": [
+   {
+    "doc": "R59",
+    "label": "R59, Naro, Paris 14 Apr 1625",
+    "transcription": "r59_digits.txt",
+    "decryption": "texts/R59_decryption.md",
+    "summary": "Bernardino Naro, Paris 14 April 1625, to the Secretariat of State: Richelieu, the Aldobrandini precedent and lodging for the coming legate; the three cipher passages (the General of the galleys, procuring the ordinary embassy at Rome, the Cardinal of Lyon will oppose it) carry the contemporary decipherment above them."
+   },
+   {
+    "doc": "R60",
+    "label": "R60, Spada, Paris 15 Aug 1625",
+    "transcription": "r60_digits.txt",
+    "decryption": "texts/R60_decryption.md",
+    "summary": "The nuncio Bernardino Spada, archbishop of Damiata, Paris 15 August 1625: clear Italian news (Fontainebleau, Richelieu, Mansfeld's officer, the English fleet, Vaudémont, Verdun) with three short cipher runs on f. 138r about a copy of a letter shown by the brother of an archbishop.",
+    "note": "Decryption incomplete: only the opening of the interlinear decipherment was transcribed (NOTES.md); the rest is on the DECODE image only (project work)."
+   },
+   {
+    "doc": "R61",
+    "label": "R61, Naro, Paris 28 Feb 1625",
+    "transcription": "r61_digits.txt",
+    "decryption": "texts/R61_decryption.md",
+    "summary": "Bernardino Naro, Paris, last day of February 1625, with a copy of a Brussels letter of 21 Feb 1625 (Mirabello, the Savoy ambassador); two lines of figures, deciphered above, on the French being very suspicious and jealous by nature.",
+    "note": "The letter-sign line on f. 186r is neither transcribed nor read."
+   }
   ]
  }
 }

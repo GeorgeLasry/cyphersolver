@@ -90,7 +90,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060212v/f105/full/1600,/0/default.jpg): f103r l.2 after \"Car\": l u n i o n [est] s i f o r t (14 signs incl. est code) = \"lunion est si fort\"; also Espernon code after \"Ruyne de\"; matches excerpt and interlinear Verdict: confirmed.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -125,6 +126,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Only 49 cipher elements; 93.9% identified (<95%). Signed with monogram, \"xxme may\". Ligue context (union vs Epernon) suggests 1588."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Only 49 cipher elements; 93.9% identified (<95%). Signed with monogram, \"xxme may\". Ligue context (union vs Epernon) suggests 1588.",
+    "texts": [
+      {
+        "doc": "fr3321dc",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "A political letter says the union can impose its terms and describes an escape from execution, drowning and plunder; several named opponents remain uncertain. Signed DC, 20 May, year and recipient not established (the League against Epernon suggests 1588), as given in George Lasry's report and our spot-check.",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry. The contemporary interlinear decipherment on the leaves is on the Gallica images only, not transcribed here."
+      }
+    ]
   }
 }

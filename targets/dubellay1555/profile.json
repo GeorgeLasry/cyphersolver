@@ -88,7 +88,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (none (no Gallica link; fr. 3142 ark not resolvable offline)): his f60v crop, row 1: ψ π a ψ — + = t o u t e s (\"toutes\") with his table, then signs consistent with \"leurs espiez\"; only ~6-10 signs readable at crop resolution Verdict: partly confirmed.",
       "result": "partial"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -122,6 +123,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Historical decipherment of the memorandum at ff62r-v (same volume), so reading rests on it; only 109/193 transcribed elements identified, ciphertext not fully transcribed. Date 1555 unverified."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Historical decipherment of the memorandum at ff62r-v (same volume), so reading rests on it; only 109/193 transcribed elements identified, ciphertext not fully transcribed. Date 1555 unverified.",
+    "texts": [
+      {
+        "doc": "dubellay1555",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "Memorandum to the Constable, including discussion of a promotion; a historical decipherment survives at ff62r–v. (Jean, cardinal Du Bellay to The Constable, 1555, as given in George Lasry's report.)",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry."
+      }
+    ]
   }
 }

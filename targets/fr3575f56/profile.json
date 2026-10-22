@@ -86,7 +86,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b90605406/f116.item): f56r line 20: \"27 58 60 36 52 58 27 44 61 53 55 30 42 36 33 22 55\" = l u y v o u l e z p r o c u r e r = \"lvy vovlez procvrer\", matches his L19-22 excerpt Verdict: confirmed.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -121,6 +122,15 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Page is all-cipher numeric (two homophones per letter, 18-61). Sender/recipient/date unknown; mentions Montgomery and Clermont (Wars of Religion, c.1560s-70s).",
-    "first_break": true
+    "first_break": true,
+    "texts": [
+      {
+        "doc": "fr3575f56",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "The proposed surrender of the château of Clermont to the comte de Montgomery, the danger of alienating the religious party, and a recommendation for a judicial appointment; sender, recipient and date not identified (Wars of Religion), as given in George Lasry's report.",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry."
+      }
+    ]
   }
 }

@@ -88,7 +88,8 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b9064322t (volume link only; folio not fetched, checked on his crops of f759v and f761r)): Clear letter with name signs only. In his f759v crop: \"je verray [3]\" and \"revolte en [X]\", \"[E] favorisera\"; the f761r key (\"Copia d una cifra trovata...\") gives 3 = Mons. d Entragues, X = l Angleterre, E (variant) = l Escosse = his reading Verdict: partly confirmed.",
       "result": "partial"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -122,6 +123,15 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Only ~87 cipher elements (names) in otherwise clear text; key is in the same volume (f761r), so little cryptanalysis involved. 89.7% identified; 8 signs unknown. Several ? in his clear-text transcription. The shared key across the two letters (ff. 759-760 and ff. 780-781) is assumed from Lasry's report, not tested here: only f. 759v and the f. 761r key were checked."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Only ~87 cipher elements (names) in otherwise clear text; key is in the same volume (f761r), so little cryptanalysis involved. 89.7% identified; 8 signs unknown. Several ? in his clear-text transcription. The shared key across the two letters (ff. 759-760 and ff. 780-781) is assumed from Lasry's report, not tested here: only f. 759v and the f. 761r key were checked.",
+    "texts": [
+      {
+        "doc": "entragues1581",
+        "label": "George Lasry's report entry (excerpts and translation)",
+        "decryption": "lasry_entry.md",
+        "summary": "Plans for a revolt and landing in England, Spanish support and a royal marriage, with sensitive names enciphered. A separate letter discusses a prisoner’s statements under torture and before execution. ([François ?] d'Entragues to Comte de Saint-Aignan, auprès du duc d’Anjou, 1581–1582 (catalogue), as given in George Lasry's report.)",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry."
+      }
+    ]
   }
 }
