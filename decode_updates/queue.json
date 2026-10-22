@@ -2776,29 +2776,6 @@
     }
    }
   },
-  "sabran1631": {
-   "writeup": "https://dbourdeau.github.io/cyphersolver/sabran1631.html",
-   "key": {
-    "none": "no key file on DECODE; George Lasry's key (2022) is published as an image on S. Tomokiyo's Cryptiana GL.htm, 'Melchior de Sabran (1631)'"
-   },
-   "cite": "S. Tomokiyo, 'George Lasry's solutions', https://cryptiana.web.fc2.com/code/GL.htm ('Melchior de Sabran (1631)'); S. Tomokiyo, 'French Ciphers during the Reign of Louis XIII', https://cryptiana.web.fc2.com/code/louisxiii.htm",
-   "fields": {
-    "R2748": {
-     "plaintext_lang": "French"
-    }
-   },
-   "records": {
-    "R2748": {
-     "decode_status": "Non-decrypted",
-     "proposed": "Decrypted",
-     "note": "Both cipher paragraphs of f. 79r were deciphered by George Lasry in 2022: his key and his decipherment (overlaid on the image) are on Tomokiyo's Cryptiana GL.htm, 'Melchior de Sabran (1631)'. Plaintext French; the passages concern the Prince of Monaco. Lasry found the same cipher in Sabran's letters to Bouthillier, BnF fr. 4134 (1633) and fr. 4135 (1635). Not re-deciphered here. Formerly grouped with R2785/R2786 (Brulart de Leon cipher, a different key).",
-     "reading": null,
-     "reading_not_needed": true,
-     "transcription": [],
-     "sent": false
-    }
-   }
-  },
   "brulart1615": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/brulart1615.html",
    "key": {
@@ -11627,6 +11604,45 @@
   },
   "esp318no95": {
    "skip": "BnF Espagnol 318 f. 122 has no DECODE record (Gallica only); nothing to update on DECODE"
+  },
+  "sabran1633": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/sabran1633.html",
+   "key": {
+    "file": "targets/sabran1633/lasry2022/ctts/key.txt",
+    "lang": "FR",
+    "how": "George Lasry's key, recovered ciphertext-only with CTTS's built-in cryptanalysis (2022), completed with Claude Opus 5.5 (2026, PR 84)."
+   },
+   "cite": "George Lasry, transcription and decipherment of Baluze 155 f. 79, fr. 4134 and fr. 4135 (PR 84, 22 Oct 2026); key published 2022 on S. Tomokiyo's Cryptiana GL.htm, 'Melchior de Sabran (1631)'.",
+   "fields": {
+    "R2748": {
+     "plaintext_lang": "French",
+     "cleartext_lang": "French",
+     "sender": "Louis XIII",
+     "receiver": "Melchior de Sabran",
+     "origin_city": "Dijon",
+     "start_year": "1631",
+     "start_month": "3",
+     "start_day": "28",
+     "cipher_type": "Homophonic substitution with a word nomenclator and doubling signs"
+    }
+   },
+   "records": {
+    "R2748": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Louis XIII to Melchior de Sabran, Dijon, 28 March 1631. Both cipher passages deciphered by George Lasry (2022; full transcription 2026): the Prince of Monaco. The same cipher is used in Sabran's letter-books BnF fr. 4134 and fr. 4135 (not on DECODE).",
+     "reading": [
+      {
+       "file": "decode_updates/decryptions/R2748.txt"
+      }
+     ],
+     "transcription": [
+      "targets/sabran1633/lasry2022/ctts/transcription/a1.txt",
+      "targets/sabran1633/lasry2022/ctts/transcription/a2.txt"
+     ],
+     "sent": false
+    }
+   }
   }
  },
  "rechteren1785": {
