@@ -229,7 +229,8 @@
    "what": "Re-examined the one doubtful group '17.0' at 5x: a reduced 3 or blot between 7 and 0; only 17 30 keeps the run even and gives 'entrado'. Not settled from the image.",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2066 tokens, 34 types, es-golden-age order 4: reading -2.136 per letter; random keys -5.309 (z 8.6); key annealed onto shuffled ciphertext best -3.462 (mean -3.484, z 82.6); annealer on the real text -2.127. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2066 tokens, 34 types, es-golden-age order 4: reading -2.136 per letter; random keys -5.309 (z 8.6); key annealed onto shuffled ciphertext best -3.462 (mean -3.484, z 82.6); annealer on the real text -2.127. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): nos. 247 and 249 linked to their figure transcriptions and readings (reading.md, reading_raw.md, read_249.md); key_file key.json", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 2066, "types": 34, "tokens_per_type": 60.76, "score": -2.136, "nulls": {"random keys": {"n": 200, "mean": -5.309, "sd": 0.371, "max": -4.276, "z": 8.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.484, "sd": 0.016, "max": -3.462, "z": 82.6, "p": 0.1429}}, "power": -2.127, "verdict": "pass", "notes": "claimed per-occurrence score -2.136; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.127"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -242,6 +243,11 @@
   "fraction_read": 1.0,
   "grades": "unknown",
   "verification": ["key confirms", "historical consistency", "statistical test"],
-  "notes": "No. 247: open word readings only (yaretas, secanos); every group has a value. No. 249 (2 Oct 2026): 150/150 tokens read with the same key; one doubtful group (17.0 = 17 30) and one single-occurrence M-like sign read as r."
+  "notes": "No. 247: open word readings only (yaretas, secanos); every group has a value. No. 249 (2 Oct 2026): 150/150 tokens read with the same key; one doubtful group (17.0 = 17 30) and one single-occurrence M-like sign read as r.",
+  "texts": [
+   {"doc": "duplicado", "label": "AGS Estado leg. 1394 no. 247, Messina, 16 July 1565", "transcription": "transcription.txt", "decryption": ["reading.md", "reading_raw.md"], "summary": "García de Toledo, viceroy of Sicily, tells Philip II of a second relief run to besieged Malta that failed: the galleys came within four miles of the harbour, but La Valette twice signalled that they should not enter, so they slipped back out to sea. He adds the state of the siege and blunt financial complaints: 'El estar sin galeras me destruye'."},
+   {"doc": "no249", "label": "AGS Estado leg. 1394 no. 249, Messina, 16 July 1565", "transcription": ["transcription_249.txt", "figures_249.txt"], "decryption": "read_249.md", "summary": "A one-page companion letter of the same day in the same key: the relief has entered, ships from Cape Bon and Algiers, the galleys to La Goleta, the Grand Master's answer on putting more men in, and the galleys leaving the next day."}
+  ],
+  "key_file": "key.json"
  }
 }
