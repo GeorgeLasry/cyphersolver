@@ -152,6 +152,12 @@
    "kind": "literature search",
    "what": "This project: DECODE R1858 and R4790 record pages fetched with the cookie: no document attached to either; R1858 p. 7 and R4790 P2 viewed, no gloss or decipherment. Cryptoole's 'solved/plaintext_attached' traced to a group status. No earlier reading of no. 12 found.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's decipherment and translation (reading_no12.txt, translation_no12.txt, lasry_report.md) and his key figure key_lasry.jpg with the table key.md; no transcription of no. 12 is in the repository (his CTTS transcription has been asked for).",
+   "result": "partial"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "no sign-level transcription of no. 12 in the repository: George Lasry's report gives the reading and the key figure, not the CTTS transcription (asked for)"}, 
@@ -202,6 +208,10 @@
     "detail": "single occurrences; no transcription in the repository to retry them"
    }
   ],
-  "notes": "Contributed result, filed from George Lasry's report of 17 Oct 2026; not re-derived here. fraction_coherent is his estimate ('more than 95 %'). Contamination: no earlier reading known (R1858's Decrypted status has no document behind it)."
+  "notes": "Contributed result, filed from George Lasry's report of 17 Oct 2026; not re-derived here. fraction_coherent is his estimate ('more than 95 %'). Contamination: no earlier reading known (R1858's Decrypted status has no document behind it).",
+  "texts": [
+   {"doc": "R4790", "label": "No. 12 (R4790), [the bishop of Fermo?] to Sforza Attendolo, Naples, 10 March 1413 (George Lasry)", "transcription": [], "decryption": ["reading_no12.txt", "lasry_report.md"], "translation": "translation_no12.txt", "summary": "Signed 'Vescovi(?) de Fermo', to Sforza Attendolo, 'magnifico capitanio', Naples, 10 March 1413: Carlo di Ludovico da Cesena reports that King Ladislaus is willing to make a marriage alliance with Sforza and offers two girls of his house, the daughter of Ludovico di messer Gianni de' Malatesti or the daughter of Niccolò Filippo Brancaleoni of Castel Durante. Sforza married Caterina Alopo in 1415, so the offer came to nothing. Decryption and translation are George Lasry's, verbatim from his report; his CTTS transcription is not in the repository."}
+  ],
+  "key_file": ["key_lasry.jpg", "key.md"]
  }
 }

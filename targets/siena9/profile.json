@@ -130,6 +130,12 @@
    "kind": "verification",
    "what": "This project counted the reading: 36 of 44 letter values in the cipher passages without a query (81.8%).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's decryption and translation (lasry_report.md, verbatim), his key as counts (key.md; his key figure is docs/siena9_key.png, outside the folder); transcription = this project's 24 Sept one (transcripts/no09.txt), his CTTS transcription not being in the repository.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -184,6 +190,10 @@
     "note": "Key recovered with CTTS and Claude from the second hand's decipherment; reading, translation, context and dating (report pp. 33-34)."
    }
   ],
-  "notes": "Contributed. The project had taken the decipherment lines for clear text (24 Sept)."
+  "notes": "Contributed. The project had taken the decipherment lines for clear text (24 Sept).",
+  "texts": [
+   {"doc": "R4798", "label": "No. 9 (R4798), a slip on Castiglione this winter, [1447-48?] (George Lasry)", "transcription": "transcripts/no09.txt", "decryption": "lasry_report.md", "translation": "lasry_report.md", "summary": "A slip in Italian clear text with two cipher passages, deciphered in a second hand below them: '[la pratica?] [di?] Chastiglone questa vernata con lo sentimento di [re d'Aragona] e nutrire questa guerra uno altro anno', with a final group read 'Francesco? i?'. George Lasry dates it to the 1440s-1450s (Castiglione held by Alfonso V from 1447; the winter of 1447-48 fits best), unverified. Decryption and translation are his (lasry_report.md); the transcription linked is this project's independent one of 24 Sept 2026, since his CTTS transcription is not in the repository."}
+  ],
+  "key_file": "key.md"
  }
 }
