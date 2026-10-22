@@ -2683,6 +2683,24 @@ README_SECTIONS = [(M.SECTION[m], M.status_class(m, 'complete'), M.LABEL[m]) for
 def period_of(y):
     return next((k for k, _, f in PERIODS if f(y)), 'survey')
 
+# the writeups.html Language facet: plaintext languages from profile documents[].language, matched by the first words
+# ('Latin with Catalan and Castilian phrases' counts as Latin, 'French and German' as both); the rest is 'other'
+LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish']
+LANG_ALIAS = {'castilian': 'Spanish', 'scots': 'English'}
+
+def langs_of(folders):
+    """Space-separated language keys of a page's or note's target folders, for data-lang."""
+    out = set()
+    for f in folders:
+        prof = PROFILES.get(f.lower())
+        for d in (prof or {}).get('documents') or []:
+            v = str(d.get('language') or '')
+            if not v or v.startswith(('unknown', 'none')): continue
+            head = re.split(r'[(;,]| with ', v)[0]
+            found = {LANG_ALIAS.get(w.lower(), w.capitalize()) for w in re.findall(r'[A-Za-z]+', head)} & set(LANGS)
+            out |= found or {'other'}
+    return ' '.join(sorted(l.lower() for l in out))
+
 def repo_url(link):
     if link.startswith('http'): return link
     link = link.lstrip('./')
@@ -2732,6 +2750,7 @@ def readme_notes():
         notes.append(dict(target=md_inline(target), date=html.escape(date, quote=False), y=year_of(date),
                           result=md_inline(result), url=repo_url(links[0]), st=st[0], stt=st[1], kind='active' if st[1] == 'in progress' else 'other', extent=''))
         folder = re.sub(r'^targets/', '', links[0].lstrip('./')).split('/')[0].lower()
+        notes[-1]['lang'] = langs_of([folder])
         prof = M.load(PATHS[folder]) if folder in PATHS else None
         out = (prof or {}).get('outcome') or {}
         if out.get('method') not in M.METHODS and folder in M.PAGE_METHOD:      # famous targets keep no profile
@@ -2782,6 +2801,7 @@ def writeups_html():
     for p in sorted(PAGES, key=lambda p: p['y']):
         by = ' '.join(sorted({c['who'] for c in p.get('credits') or [] if c.get('who') in CONTRIB}))
         rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-period="{period_of(p["y"])}" data-src="page" data-by="{by}" '
+                    f'data-lang="{langs_of(p.get("folders") or [])}" '
                     f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
                     f'<span class="t">{avatars_html(p["slug"])}{p["title"]}</span>{when_html(p, cls="dt")}<span class="yr">{p["year"]}</span>'
@@ -2789,7 +2809,7 @@ def writeups_html():
     notes = readme_notes()
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
-        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-period="{period_of(n["y"])}" data-src="notes" '
+        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-period="{period_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
                      f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
@@ -2801,13 +2821,13 @@ def writeups_html():
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<title>All write-ups &mdash; {len(rows)} ciphers by outcome and date, and {len(nrows)} results still in the notes</title>\n'
-        f'<meta name="description" content="Every write-up on the site, filterable by outcome, period and text, followed by the '
+        f'<meta name="description" content="Every write-up on the site, filterable by outcome, language, period and text, followed by the '
         f'results that exist only as notes in the repository: read, explained, attempted or waiting on an archive.">\n'
         f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>\n<body id="top">\n<!-- site:nav -->\n\n'
         '<section class="hero">\n'
         f'  <p class="kicker">Index &middot; {len(rows)} write-ups &middot; {len(nrows)} results only in the notes</p>\n'
         '  <h1>Every write-up</h1>\n'
-        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by outcome or period, or search '
+        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by outcome, language or period, or search '
         'the titles and summaries. The second list is work that exists only as notes in the repository: results not yet written up, '
         'attempts closed from the evidence, and items waiting on an archive.</p>\n'
         '  <div class="jump"><a href="#pages">Write-ups</a><a href="#notes">Only in the notes</a><a href="catalogue.html">Catalogue</a></div>\n'
@@ -2816,6 +2836,7 @@ def writeups_html():
         f'  <div class="facet"><span class="flabel">Method</span>{chips("kind", [k for k in KINDS if k[0] in used])}'
         '<a class="gl" href="glossary.html">what these mean</a></div>\n'
         f'  <div class="facet"><span class="flabel">Extent</span>{chips("extent", EXTENTS)}</div>\n'
+        f'  <div class="facet"><span class="flabel">Language</span>{chips("lang", [(l.lower(), l.lower()) for l in LANGS] + [("other", "other")])}</div>\n'
         f'  <div class="facet"><span class="flabel">Period</span>{chips("period", [(k, l) for k, l, _ in PERIODS])}</div>\n'
         f'  <div class="facet"><span class="flabel">Where</span>{chips("src", [("page", "site page"), ("notes", "notes only")])}</div>\n'
         '  <div class="facet"><span class="flabel">Search</span><input id="wq" type="search" placeholder="titles, places, summaries" aria-label="Search the write-ups">'

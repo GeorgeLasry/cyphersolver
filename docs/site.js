@@ -107,8 +107,8 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     if(q.value!==state.q) q.value=state.q;
     const needle=state.q.trim().toLowerCase(); let n=0;
     items.forEach(li=>{ let ok=true;
-      for(const k in state.f){ const vs=state.f[k], d=li.dataset[k]||'';   // by= (a contributor id) matches any of a row's space-separated ids
-        if(vs.length && !(k==='by' ? vs.some(v=>d.split(' ').includes(v)) : vs.includes(d))) ok=false; }
+      for(const k in state.f){ const vs=state.f[k], d=li.dataset[k]||'';   // by= (a contributor id) and lang= match any of a row's space-separated ids
+        if(vs.length && !(k==='by'||k==='lang' ? vs.some(v=>d.split(' ').includes(v)) : vs.includes(d))) ok=false; }
       if(ok && needle && !(li.dataset.q||'').includes(needle)) ok=false;
       li.hidden=!ok; if(ok) n++; });
     document.querySelectorAll('.wsec').forEach(s=>{ s.hidden=![...s.querySelectorAll('li')].some(li=>!li.hidden); });
