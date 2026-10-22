@@ -1,0 +1,654 @@
+{
+ "format": "polyphone-key/1",
+ "target": "BnF fr. 15573 f. 385r",
+ "key_revision": 6,
+ "tokenisation": {
+  "rule": "glyph-ids",
+  "params": {}
+ },
+ "plaintext_alphabet": "abcdefghilmnopqrstuvxyz",
+ "pipeline": [
+  {
+   "step": "substitution",
+   "id": "main",
+   "table": {
+    "a": {
+     "v": "t",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "alpha": {
+     "v": "t",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "8": {
+     "v": "t",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "6": {
+     "v": "n",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "dbar": {
+     "v": "y",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo y, row 3) + E: 9 places"
+    },
+    "n": {
+     "v": "i",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "f2": {
+     "v": "n",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo n, f with two bars) + E (held-out f. 104r l. 19 'menant')"
+    },
+    "r": {
+     "v": "e",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "delta": {
+     "v": "e",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "4t": {
+     "v": "e",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "box": {
+     "v": "f",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (row 5, between e and f) + E: 'difficulté' f. 103v l. 8"
+    },
+    "phi": {
+     "v": "en",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T (form of Tomokiyo's 'en' sign) + E: 2 calibration places"
+    },
+    "ls": {
+     "v": "r",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "#": {
+     "v": "r",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "S": {
+     "v": "c",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "9": {
+     "v": "d",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "g": {
+     "v": "s",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E-eye"
+    },
+    "+": {
+     "v": "a",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "4": {
+     "v": "a",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "L": {
+     "v": [
+      "a",
+      "n"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T a + E: n 4 places"
+    },
+    "th": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "x": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "T": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "Id": {
+     "v": "u",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "I": {
+     "v": "u",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "zk": {
+     "v": "p",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E-eye"
+    },
+    "Lbar": {
+     "v": "p",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E-eye?"
+    },
+    "q+": {
+     "v": "l",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "f": {
+     "v": [
+      "i",
+      "s"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T+E: i 10 places, s 3 (the reader names Tomokiyo's i-f and s-f alike)"
+    },
+    "//": {
+     "v": "o",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "dots": {
+     "v": "o",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    ":": {
+     "v": "o",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "tri": {
+     "v": "g",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "lambda": {
+     "v": "x",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E: 3 places (Xaintonge)"
+    },
+    "xo": {
+     "v": "q",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "pi": {
+     "v": "b",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "F": {
+     "v": "h",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "m": {
+     "v": "f",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "2": {
+     "v": "m",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "H": {
+     "v": "l",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E: 5 places"
+    },
+    "40": {
+     "v": "m",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "xbar": {
+     "v": [
+      "s",
+      "ss"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin T (s, row 5) + E: 'ss' 3 calibration places"
+    },
+    "Q": {
+     "v": "que",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "w": {
+     "v": "est",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "%": {
+     "v": "et",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "z9": {
+     "v": "de",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "2u": {
+     "v": "de",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin E-eye"
+    },
+    "curl": {
+     "v": "pour",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "Ee": {
+     "v": "la",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "eps": {
+     "v": "ment",
+     "type": "word",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "8s": {
+     "v": "m",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin E: 3 places ending in m (mesmes, Xaintonge m'ont, emporter), plus held-out lines"
+    },
+    "2o": {
+     "v": "qui",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin T?"
+    },
+    "A": {
+     "v": "monsieur",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "10": {
+     "v": "ie",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "12": {
+     "v": "des",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T+E-eye"
+    },
+    "16": {
+     "v": "fois",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "18": {
+     "v": "quant",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "20": {
+     "v": "mais",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "21": {
+     "v": "beaucoup",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "23": {
+     "v": "apres",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "24": {
+     "v": "peu",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "25": {
+     "v": "parceque",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "26": {
+     "v": "car",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "31": {
+     "v": "pas",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "32": {
+     "v": "sans",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "/": {
+     "v": "",
+     "type": "null",
+     "conf": "sure",
+     "note": "origin divider"
+    },
+    "hs": {
+     "v": "r",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo r, row 2) + E: 6 places"
+    },
+    "ooC": {
+     "v": "en",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo 'en' code sign; our name ooC) + E: 5 calibration places"
+    },
+    "dsi": {
+     "v": "si",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo 'si')"
+    },
+    "B": {
+     "v": "s",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E?: 1-2 places"
+    },
+    "2x": {
+     "v": "a",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E?: 3 places"
+    },
+    "gg": {
+     "v": "par",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin T? (Tomokiyo 'par' ff; our name gg)"
+    },
+    "tt": {
+     "v": "les",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo tt)"
+    },
+    "rect": {
+     "v": "icy",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin E-eye? (qui reste icy, f. 104r l. 20, held-out)"
+    },
+    "3": {
+     "v": "de",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo de = 3)"
+    },
+    "Gamma": {
+     "v": "vous",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "fe": {
+     "v": "bien",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T"
+    },
+    "0": {
+     "v": "i",
+     "type": "letter",
+     "conf": "probable",
+     "note": "origin E?: 2 places"
+    },
+    "y": {
+     "v": "l",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo l, row 2: a y-shape; our name y)"
+    },
+    "d": {
+     "v": "g",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (Tomokiyo g, row 2: a round d / delta-like sign; our name d)"
+    },
+    "uC": {
+     "v": "moy",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin T? (Tomokiyo 'moy' code: an M over e; our name uC)"
+    },
+    "rC": {
+     "v": [
+      "s",
+      "z"
+     ],
+     "type": "polyphone",
+     "conf": "probable",
+     "note": "origin E?: z 3 places, s 1 (calibration); doubtful"
+    },
+    "Tl": {
+     "v": "plus",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin T (code 'plus')"
+    },
+    "ud": {
+     "v": "u",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (u, row 4)"
+    },
+    "pdots": {
+     "v": "p",
+     "type": "letter",
+     "conf": "sure",
+     "note": "origin T (p, row 5)"
+    },
+    "Qh": {
+     "v": "armee",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin F: 3 places (ff. 150r, 7v, 33r margins)"
+    },
+    "hb": {
+     "v": "tout",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin F: 2 places (f. 150r margin)"
+    },
+    "N": {
+     "v": "ee",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin F: 2 places (f. 150r margin; f. 97r clear decipherment)"
+    },
+    "17": {
+     "v": "tant",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin F: 2 places (f. 97r and f. 150r margins)"
+    },
+    "13": {
+     "v": "tre",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin F?: 1 place (f. 32v margin, 'entreprendre')"
+    },
+    "ub": {
+     "v": "droit",
+     "type": "word",
+     "conf": "probable",
+     "note": "origin F?: 1 place (f. 33r margin, 'faudroit'); f. 97r fits"
+    },
+    "30": {
+     "v": null,
+     "type": "unknown",
+     "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
+    },
+    "invT": {
+     "v": null,
+     "type": "unknown",
+     "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
+    },
+    "x?": {
+     "v": null,
+     "type": "unknown",
+     "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
+    }
+   },
+   "choices": {
+    "xbar": [
+     "s",
+     "ss",
+     "ss",
+     "ss",
+     "ss"
+    ],
+    "f": [
+     "i",
+     "s",
+     "i",
+     "s",
+     "s",
+     "i",
+     "i",
+     "i",
+     "i",
+     "s",
+     "i",
+     "s",
+     "s",
+     "s",
+     "i",
+     "s",
+     "s",
+     "s",
+     "s",
+     "i",
+     "s",
+     "i",
+     "i",
+     "i",
+     "s",
+     "i"
+    ],
+    "L": [
+     "n",
+     "a",
+     "a",
+     "n",
+     "n",
+     "n"
+    ],
+    "rC": [
+     "s",
+     "s",
+     "s",
+     "s",
+     "s",
+     "s",
+     "s",
+     "s",
+     "s",
+     "s"
+    ]
+   },
+   "unknown_render": "[?{sym}]"
+  }
+ ],
+ "notes": "Mayenne-Forget's Cipher-2 (Tomokiyo). Values: Tomokiyo's published table (T) and aligned places in our reading of the calibration letter BnF fr. 15573 ff. 103v-104r against its contemporary decipherment (E); see data/key-cipher2.json. Sign names are the visual names of reference sheet v3; '/' is a word divider (null). Polyphone values per occurrence were chosen by the whole-word decoder with the period French lexicon and are recorded here, so decryption is mechanical.",
+ "provenance": {
+  "origin": "archive",
+  "source": "Tomokiyo (cryptiana henryiii.htm, Mayenne-Forget's Cipher-2) and the 1586 decipherment in the margins of BnF fr. 15573 ff. 103v-104r"
+ }
+}
