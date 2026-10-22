@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 22225</td></tr>
@@ -90,6 +90,85 @@
 <li>Verdict: <b>confirmed</b> (method key recovered from ciphertext-only, extent complete). The check is a sample, not a re-solution.</li>
 <li>Notes: Large 2-part-ish nomenclator (323 codes); 27 codes structurally inferred. Otter = Jean Otter, orientalist sent to Persia.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s excerpt and translation (BnF cipher research, 10 Oct 2026)</h3>
+<p>Louis-Sauveur, marquis de Villeneuve to Jean Otter, 29 June and 19 August 1737. French commercial and diplomatic plans in Persia, including an approach to Chah Nadir and a consul at Ispahan; reports of Ottoman, Russian and Imperial military affairs. The June letter repeats the commercial instructions and discusses Otter’s journey, oriental languages and political work.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/villeneuve1737/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 12
+Français 22225
+Contents: French commercial and diplomatic plans in Persia, including an approach to Chah Nadir and a
+consul at Ispahan; reports of Ottoman, Russian and Imperial military affairs. The June letter repeats the
+commercial instructions and discusses Otter’s journey, oriental languages and political work.
+6/6 pages transcribed; 5/5 cipher pages deciphered
+Ciphertext-only: Yes
+Sender: Louis-Sauveur, marquis de Villeneuve
+Recipient: Jean Otter
+Year: 29 June and 19 August 1737
+Key: 323 codes: 46 letter signs, 273 in nomenclature, 4 unidentified; 27 structurally inferred
+Ciphertext: 815 elements, 811 identified (99.5%)
+Gallica f143r
+BnF cipher research
+12 / 134
+
+--- PDF page 13
+BnF cipher research
+13 / 134
+
+--- PDF page 14
+BnF cipher research
+14 / 134
+
+--- PDF page 15
+Excerpt and Translation
+Excerpt
+f145v — beginning of the excerpt
+f146r — cipher continuation and cleartext
+J’ay fait icy le plu[s] de caresses que j’ay pu à Kerim Bey ; &amp; quoique je n’aye pu avoir avec luy
+aucune conférence, j’ay lieu d’estre content des disposition favorables qu’il a fait paroître pour
+notre nation au personnes qui ont été luy parler de ma part. Il faut continuer de cultiver son amitié et
+luy témoigner la satisfaction que j’ay des marques qu’il m’a donné de la sienne.
+Translation
+I have shown Kerim Bey as much favour as I could. Although I have been unable to confer with him, I
+have reason to be pleased with the favourable disposition toward our nation that he showed to the
+people who spoke to him on my behalf. You must continue to cultivate his friendship and tell him how
+pleased I am with the signs he has given me of his own.
+BnF cipher research
+15 / 134
+
+--- PDF page 16
+Excerpt
+f145v
+l’avenir un consul à Ispahan. Le raport que vous nous faires de ce que vous aures pu decourvrir
+des disposition de ce prince à ce sujet doit estre accompagné d’un[e] relation exacte &amp;
+circonstanciee de la situation des affaires de Perse &amp; de quelques refflection mesme sur le tour
+que vous pouves prévoir qu’elle prendront, pour eviter que les demarches que [le] Roy pourroit
+faire en cette occasion ne nous missent en conpromis
+Translation
+[…] in future? a consul at Isfahan. Your report on what you have been able to discover about this prince’s
+intentions on that subject must be accompanied by an accurate? and detailed? account of the state of affairs
+in Persia, and some? reflections? on the course you can? foresee they will take, so that any steps the King
+might take on this occasion do not compromise us.
+BnF cipher research
+16 / 134
+
+--- PDF page 17
+Excerpt
+f143v — five completecipherlines
+Je vous fis conn[oistre] avant votre depart d’icy qu’il conviendroit au intérêt de la France de
+retablir le commerce que nous avions autrefois en Perse. Cette idée, qui ne venoit allors que de
+moy, me paroît avoir esté goutée.
+Translation
+Before you left here I made [known] to you that it would be in France’s interest to re-establish the
+trade we formerly had in Persia. This idea, which then came only from me, seems to have been
+welcomed.
+BnF cipher research
+17 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/villeneuve1737.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 12; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -100,6 +179,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="nunzio1736.html" rel="prev">&larr; Nunziatura di Spagna 1736 1736</a><a href="carre1742.html" rel="next">Carr&eacute; 1742&ndash;45 1742&ndash;45 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

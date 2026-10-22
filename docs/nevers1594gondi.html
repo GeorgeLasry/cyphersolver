@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 3622</td></tr>
@@ -83,6 +83,46 @@
 <li>Verdict: <b>partly confirmed</b> (method read after matching with key from external sources, extent partial). The check is a sample, not a re-solution.</li>
 <li>Notes: 93.9% identified and pages transcribed only in part. Key also in Cryptiana (no. 66), i.e. previously published key.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s reading (report status: 3/3 pages transcribed in part; Deciphered); only the excerpt from his report is in the repository</h3>
+<p>Arrangements to send money to Lyon and check Swiss muster rolls; a promised payment by the end of April and a mission to the aldermen of Lyon.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1594gondi/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 43
+Français 3622
+Contents: Arrangements to send money to Lyon and check Swiss muster rolls; a promised payment by the
+end of April and a mission to the aldermen of Lyon.
+3/3 pages transcribed in part; Deciphered
+Ciphertext-only: No
+Sender: Duke of Nevers
+Recipient: M. de Gondi
+Year: 27 March 1594
+Key: 54 symbols: 39 letter signs, 1 double-letter sign, 14 in nomenclature
+Ciphertext: 245 elements, 230 identified (93.9%)
+Key elsewhere: Original key in a different volume: Français 3995, ff122v–123r (Cryptiana no66). ·
+Source
+Gallica f91r
+BnF cipher research
+43 / 134
+
+--- PDF page 44
+Excerpt and Translation
+Excerpt
+f91r — four complete body lines
+facent monstre sur les vieu? rooles parce qu’il y va grand perte. Rasseure le Roy qui l’auroit le
+tout à la fyn d’avril selon que vous me dites. Au demeurant, j’ay despesché aussy ? Asdrubal vers
+le Corse et eschevyns de Lyon pour l’affaire
+Translation
+[They] muster on the old? rolls, because a great loss is at stake. Reassure the King that he would have
+everything by the end of April, as you tell me. Meanwhile, I have also sent ? Asdrubal to the Corsican and the
+aldermen of Lyon about the business.
+BnF cipher research
+44 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/nevers1594gondi.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 43; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -93,6 +133,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="gondi1594.html" rel="prev">&larr; Girolamo Gondi to Duke of Nevers and&hellip; 1594</a><a href="sloane3188.html" rel="next">Shippen&rsquo;s notes on Dee 17th c. &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

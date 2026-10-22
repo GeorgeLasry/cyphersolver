@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#notes">Notes and corrections</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#notes">Notes and corrections</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 3234</td></tr>
@@ -89,6 +89,61 @@
 </ul>
 <h2 id="notes"><span class="num">05</span> Notes and corrections</h2>
 <p>The recipient is in the heading: the letter is addressed "Serenma Madama", a duchess. The report says the recipient is not established in the checked postscript.</p>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s report entry (excerpts and translation)</h3>
+<p>Fogliani privately criticizes an unidentified person’s handling of the duke’s affairs and says that fuller disclosure would surprise his correspondent. Gasparo Fogliani, Paris 20 October 1568, to a duchess addressed &quot;Serenma Madama&quot; (the recipient is not established in Lasry&#x27;s report; the heading is noted in NOTES.md).</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/fogliani1568/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 8
+Français 3234
+Contents: Fogliani privately criticizes an unidentified person’s handling of the duke’s affairs and says that
+fuller disclosure would surprise his correspondent.
+2/2 pages transcribed; 2/2 pages deciphered
+Ciphertext-only: Yes
+Sender: Gasparo Fogliani
+Recipient: Not established in the checked postscript
+Year: 20 October 1568
+Key: 27 symbols, 21 letter signs, 3 nulls, 3 unidentified
+Ciphertext: f103r–v: 422 elements, 418 identified (99.1%)
+Gallica Gallica — f103r
+Excerpt and Translation
+Excerpt
+f103r, cipher lines1–3; saved editorial reading — 103r
+Io n[o]n posso mancare di dire a uostra alteza che mi pare che il [?] non habb[i?] fauorito le
+cos[e] del signor duca di quel modo che mi pare che douea, essendo lui che gouerna come fa in
+questi tempi, et se io pitessi dirle ogni cosa in poca scri…
+Translation
+I cannot fail to tell Your Highness that it seems to me that [?] has not [helped?] the duke’s affairs as he should
+have, since he governs as he does at present; and if I could tell you everything in a short wri…
+BnF cipher research
+8 / 134
+
+--- PDF page 9
+Excerpt
+f103r, cipher lines R3–R5
+…che gouerna come fa in questi tempi, et se io pitessi dirle ogni cosa in poca scrittura, uostra
+alteza uedria che ha mostratto tenire poco conto di sua ecelenza, che mi ha fatto marauigliare
+assai, perche non lo haurei mai pensato, e[t] se…
+Translation
+…who governs as he does at present; and if I could tell you everything in a short letter, Your Highness would
+see that he has shown little regard for His Excellency. This has greatly astonished me, because I would never
+have expected it; and if…
+Excerpt
+f103v, cipher lines V1–V2
+io fossi in parte che io le potessi parlare, le direi cose che le parerebb[o]no strane, come parsero
+a me quando soccesse il fatto. Io ho inteso in questo punto da una persona degna di fede et homo di
+qualita…
+Translation
+I were somewhere I could speak to you, I would tell you things that would seem strange to you, just as they
+seemed to me when the incident occurred. I have just heard from a trustworthy person and a man of
+standing…
+BnF cipher research
+9 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/fogliani1568.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 8; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -99,6 +154,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="norreys1567.html" rel="prev">&larr; Norreys 1567&ndash;68 1567&ndash;68</a><a href="fiesque1567.html" rel="next">Fiesque from Vienna 1567&ndash;69 1567&ndash;69 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

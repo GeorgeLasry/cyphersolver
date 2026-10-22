@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 2999 &middot; Turenne, ff13r–13v</td></tr>
@@ -85,6 +85,39 @@
 <li>Verdict: <b>confirmed</b> (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.</li>
 <li>Notes: f13v only in part (1/2 pages fully deciphered) though 98.7% of elements identified. Docket "1528 Italie". Turenne (Francois de La Tour) in Rome 1528 fits.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s excerpt and translation (BnF cipher research, 10 Oct 2026)</h3>
+<p>The Vicomte de Turenne to the Grand Master, 1 June 1528. Turenne reports on papal negotiations, revenge against the Florentines and the duke of Ferrara, and royal assistance; his postscript discusses Andrea Doria’s intended change of allegiance.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/turenne1528/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 131
+Français 2999 — Turenne, ff13r–13v
+Contents: Turenne reports on papal negotiations, revenge against the Florentines and the duke of Ferrara,
+and royal assistance. His postscript discusses André Doria’s intended change of allegiance.
+2/2 pages transcribed; 1/2 pages deciphered; 1 more in part
+Ciphertext-only: No
+Sender: Vicomte de Turenne
+Recipient: The Grand Master
+Year: 1 June 1528
+Key: 46 symbols: 31 letter signs, 4 in nomenclature, 6 nulls, 5 unidentified; 2 further sign readings uncertain.
+Ciphertext: 785 elements, 775 identified (98.7%)
+Interlinear plaintext: Interlinear plaintext on the same selected pages, f13r–v. ·
+Gallica Gallica — f13r
+Excerpt and Translation
+Excerpt
+f13r, three complete consecutive rows2–4
+ne qu’il face, ie pance que le vouloir qu’il a de se vanger des Florentins et du duc de Ferrare lui
+feroist faire beaucoup de choses qui par advanture
+Translation
+nor whatever he does, I think that his wish to take revenge on the Florentines and the Duke of Ferrara would
+make him do many things that perhaps …
+BnF cipher research
+131 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/turenne1528.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 131; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -96,6 +129,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="vasto1527.html" rel="prev">&larr; Del Vasto 1527 1527</a><a href="ranzo1528.html" rel="next">Ranzo 1528 1528 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

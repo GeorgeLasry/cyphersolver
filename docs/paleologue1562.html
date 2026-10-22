@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 4687 &middot; ff5v–7v</td></tr>
@@ -78,6 +78,38 @@
 <li>Verdict: <b>partly confirmed</b> (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.</li>
 <li>Notes: Mixed Italian clear+numeric letter. Margins of f6r carry contemporary interlinear-style glosses ("questo e quello ...", "Sera ... che segui"), i.e. partial adjacent plaintext he may not have used. Only 2/4 pages in part; attribution from catalogue.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s reading (report status: 4/4 pages transcribed in part; 2/4 pages deciphered in part); only the excerpt from his report is in the repository</h3>
+<p>Italian family correspondence mentioning Milan, a stable master, Carlo, a brother, and an offer of scudi for a state. The letter remains partly unread.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/paleologue1562/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 33
+Français 4687 — ff5v–7v
+Contents: Italian family correspondence mentioning Milan, a stable master, Carlo, a brother, and an offer of
+scudi for a state. The letter remains partly unread.
+4/4 pages transcribed in part; 2/4 pages deciphered in part
+Ciphertext-only: Yes
+Sender: Marguerite Paléologue (catalogue attribution for ff1 onward)
+Recipient: Louis de Gonzague, duke of Nevers (catalogue attribution)
+Year: 1562–1564 (catalogue group; individual dates unchecked)
+Key: 17 numerical code classes; some written forms remain uncertain.
+Ciphertext: f5v/f6r: 241 elements transcribed and deciphered. f6v/f7v: 356 base signs transcribed, none
+deciphered; code groups unresolved.
+Gallica f5v
+Excerpt and Translation
+Excerpt
+f6r, cipher rows 8–10
+Averia dat volontier a cuatr cento mila scudi per aver cuel stato et pareva ? ascoltase ? parla
+Translation
+[He] would willingly have given four hundred thousand scudi to obtain that state, and it seemed ? would listen
+? speaks.
+BnF cipher research
+33 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/paleologue1562.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 33; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -88,6 +120,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="throckmorton.html" rel="prev">&larr; Throckmorton 1560&ndash;63</a><a href="rennes1563.html" rel="next">Rennes 1562&ndash;64 1562&ndash;64 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

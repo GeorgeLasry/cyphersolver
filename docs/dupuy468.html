@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Dupuy 468</td></tr>
@@ -85,6 +85,46 @@
 <li>Verdict: <b>confirmed</b> (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.</li>
 <li>Notes: Addressed Christianissime rex, signed Ernestus/Joachimus; interlinear on most runs; 96.5% identified, 2/2 cipher pages; 1 page only partly transcribed (clear text). Date c.1519 is his inference.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s report entry (excerpts and translation)</h3>
+<p>A German princely league would admit new members by majority consent, promise pensions, and later bring in the French king. Signed Ernestus dux and Joachimus (probably Ernst of Brunswick-Lüneburg and Joachim von Maltzan) to Francis I, King of France, on the eve of Saint Paul with no year (c. 1519 by Lasry&#x27;s inference), as given in George Lasry&#x27;s report.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dupuy468/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 77
+Dupuy 468
+Contents: A German princely league would admit new members by majority consent, promise pensions, and
+later bring in the French king.
+2/3 pages transcribed; 1 more in part; 2/2 cipher pages deciphered
+Ciphertext-only: No
+Sender: Ernestus dux and Joachimus; probably Ernst of Brunswick-Lüneburg and Joachim von Maltzan
+Recipient: Francis I, King of France
+Year: Eve of Saint Paul, at five in the morning; no year. Context suggests c.1518–1520;1519 remains
+plausible.
+Key: 30 symbols, 20 letter signs, 6 in nomenclature, 3 nulls?, 1 unidentified
+Ciphertext: 684 elements, 660 identified (96.5%)
+Interlinear plaintext: Interlinear decipherment accompanies most cipher runs on f28r–v,PDF65–
+66/Gallica63–64.
+Gallica Selected letter, f28r–f29r
+BnF cipher research
+77 / 134
+
+--- PDF page 78
+Excerpt and Translation
+Excerpt
+f28r, final four cipher lines
+Tunc optimum erit ut christianissimus hoc fedus petat velle inire; hoc modo etiam si aliquando
+noluissent esse in federe cu[m] christianissimo, hoc modo astricti erunt esse confederatores
+christianissimi.
+Translation
+Then it will be best for the Most Christian King to ask to join this alliance. In this way, even if some had not
+wished to ally themselves with him, they will be bound to become his allies.
+BnF cipher research
+78 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/dupuy468.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 77; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -96,6 +136,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="jantini1517.html" rel="prev">&larr; Fantini 1517&ndash;18 1517&ndash;1518</a><a href="caprile1519.html" rel="next">Caprile 1519 1519 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

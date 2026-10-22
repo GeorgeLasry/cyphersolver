@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 4700 &middot; Gondi symbol cipher, ff9r–10r</td></tr>
@@ -85,6 +85,47 @@
 <li>Verdict: <b>confirmed</b> (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.</li>
 <li>Notes: Only 3/6 pages deciphered though 98.6% of transcribed elements identified. f9r opens in clear to Nevers; Italian.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s report entry (excerpts and translation)</h3>
+<p>Negotiations over the Pope’s absolution of the French king, with warnings that the Duke of Sessa was delaying a settlement; references to Savoy and Monsieur de Maisse. (Girolamo Gondi to Duke of Nevers and Rethel, 15 May 1594, as given in George Lasry&#x27;s report.)</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/gondi1594/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 92
+Français 4700 — Gondi symbol cipher, ff9r–10r
+Contents: Negotiations over the Pope’s absolution of the French king, with warnings that the Duke of Sessa
+was delaying a settlement; references to Savoy and Monsieur de Maisse.
+5/6 pages transcribed; 1 more in part; 3/6 pages deciphered
+Ciphertext-only: No
+Sender: Girolamo Gondi
+Recipient: Duke of Nevers and Rethel
+Year: 15 May 1594
+Key: 54 symbols: 42 letter signs, 4 doubled-letter signs, 8 in nomenclature
+Ciphertext: 1,469 elements, 1,449 identified (98.6%)
+Interlinear plaintext: Historical Italian interlinear decipherments accompany the selected cipher lines
+on ff9r–10r / PDF21 and23.
+Gallica ff9r–10r
+Gallica separate PDF94 opening
+BnF cipher research
+92 / 134
+
+--- PDF page 93
+Excerpt and Translation
+Excerpt
+f9v, rows 10–13
+luogo di queste parti doppa la reductione di parigi non abbiamo auto qui alcuna lettere di
+monsieur di reuol ne daltri ne fatta alcuna dimostratione di ralegramento con noi et si ua
+dubitando che si sia stato fatto qualche cattiuo uffitio da
+Translation
+… place in these parts. Since the submission of Paris, we have received no letters here from Monsieur de
+Revol or anyone else, nor any expression of congratulations; and there is suspicion that someone has done
+us a disservice …
+BnF cipher research
+93 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/gondi1594.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 92; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -96,6 +137,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="desportes1593.html" rel="prev">&larr; Desportes to Rome 1593 1593</a><a href="nevers1594gondi.html" rel="next">Duke of Nevers to M. de Gondi, 27 March&hellip; 1594 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

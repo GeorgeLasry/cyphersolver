@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#plaintext">Plaintext and other sources</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 3321</td></tr>
@@ -84,6 +84,45 @@
 <li>Verdict: <b>confirmed</b> (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.</li>
 <li>Notes: Only 49 cipher elements; 93.9% identified (&lt;95%). Signed with monogram, "xxme may". Ligue context (union vs Epernon) suggests 1588.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s report entry (excerpts and translation)</h3>
+<p>A political letter says the union can impose its terms and describes an escape from execution, drowning and plunder; several named opponents remain uncertain. Signed DC, 20 May, year and recipient not established (the League against Epernon suggests 1588), as given in George Lasry&#x27;s report and our spot-check.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/fr3321dc/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 80
+Français 3321
+Contents: A political letter says the union can impose its terms and describes an escape from execution,
+drowning and plunder; several named opponents remain uncertain.
+Transcribed; Deciphered
+Ciphertext-only: No
+Sender: Signed DC
+Recipient: Not established
+Year: 20 May; year not established
+Key: 32 symbols, 25 letter signs, 5 in nomenclature, 1 null ?, 1 unidentified
+Ciphertext: 49 elements, 46 identified (93.9%); 2 ?, 1 unidentified
+Interlinear plaintext: Interlinear plaintext on the same page, f103r. ·
+Gallica f103r
+BnF cipher research
+80 / 134
+
+--- PDF page 81
+Excerpt and Translation
+Excerpt
+f103r, first four lines
+Les affaires sont en tel termes qu&#x27;infalliblement la Ruyne de Espernon s&#x27;en ensuivra, ou de cest estat.
+Car l&#x27;union est si forte qu&#x27;elle peult mieux donner la loy que la recepvoir. Demain la req[ueste] s&#x27;en
+doibt partir, vous en aurez Incontinent la coppie Comme on vous envoye du reste.
+Translation
+Affairs have reached such a point that Épernon’s ruin, or the ruin of this state, will inevitably follow. The union
+is so strong that it can dictate the law rather than receive it. The petition is to be sent tomorrow; you will
+immediately receive a copy, as the other material is being sent to you.
+BnF cipher research
+81 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/fr3321dc.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">06</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 80; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -95,6 +134,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="dubellay65.html" rel="prev">&larr; Jean, cardinal Du Bellay to The&hellip; undated</a><a href="fr3575f56.html" rel="next">Unidentified to Unidentified, Undated undated &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

@@ -51,7 +51,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-letter">The letter</a><a href="#the-key">The key</a><a href="#the-decipherment">The decipherment</a><a href="#our-check">Our check</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <h2 id="the-letter"><span class="num">01</span> The letter</h2>
 <div class="tw"><table class="facts">
 <tr><th>Shelfmark</th><td>BnF Français 14765 &middot; p351</td></tr>
@@ -83,6 +83,48 @@
 <li>Verdict: <b>confirmed</b> (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.</li>
 <li>Notes: 93.3% identified (61 ?), so below the complete bar. Alchemical recipe, page ends with a flourish; date "18th century?" unverified.</li>
 </ul>
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>George Lasry&#x27;s report entry (excerpts and translation)</h3>
+<p>An alchemical recipe using mercury, with promises of success and a warning against misuse; writer, recipient and date (18th century?) not established, as given in George Lasry&#x27;s report.</p>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/fr14765p351/lasry_entry.md">lasry_entry.md</a></p><pre>
+--- PDF page 18
+Français 14765 — p351
+Contents: An alchemical recipe using mercury, with promises of success and a warning against misuse.
+Transcribed; Deciphered
+Ciphertext-only: Yes
+Sender: Not established
+Recipient: Not established
+Year: 18th century?
+Key: 37 symbols, 36 letter signs, 1 ligature; 2 unidentified signs
+Ciphertext: 936 elements, 873 identified (93.3%); 61 ?, 2 unidentified
+Gallica p351
+Excerpt and Translation
+Excerpt
+p351
+soies sure, que vous aures reusi dans vos entrepresi, enco[r] vous seres heureux, si vous non
+feres acun mau vaise usage —
+Translation
+Be assured that you will have succeeded in your undertakings, and that you will be happy if you make no bad
+use of it.
+BnF cipher research
+18 / 134
+
+--- PDF page 19
+Excerpt
+p351
+Ceux, qui auront le bonheur, de décou[v]rir cet secret, seront heureux, etant bon chretien, et
+suivant ce, qui suit —
+Translation
+Those fortunate enough to discover this secret will be happy, provided they are good Christians and follow
+what comes next.
+BnF cipher research
+19 / 134</pre></details>
+<!-- texts:end -->
+<!-- replay:start -->
+<figure class="sreplay" data-src="steps/fr14765p351.json"></figure>
+<!-- replay:end -->
 <h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul>
 <li>George Lasry, with ChatGPT Astra 6 and Anthropic Opus 5.5, <i>BnF cipher research</i>, 10 October 2026 (sent to Daniel Bourdeau on 13 October 2026 for publication here), p. 18; his other items are listed on <a href="contributors.html#lasry">his contributor card</a>.</li>
@@ -93,6 +135,7 @@
   <span>George Lasry, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="borghesi1456.html" rel="prev">&larr; Borghesi to Benvoglienti 1456 1456</a><a href="siena11.html" rel="next">Siena no. 11, Acciaiuoli 1478 13 June 1478 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
+<script src="solve-replay.js?v=20261014c" defer></script>
 <script src="zoom.js?v=20261014c" defer></script>
 <script src="site.js?v=20261014c"></script>
 </body>

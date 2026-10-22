@@ -52,7 +52,7 @@
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The passage</a><a href="#key">The key (Pitt; Lasry and Biermann earlier)</a><a href="#control">Permutation control</a><a href="#blind">Ciphertext-only recovery and the controls</a><a href="#open">What stays open</a><a href="#method">Method and files</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The passage</a><a href="#key">The key (Pitt; Lasry and Biermann earlier)</a><a href="#control">Permutation control</a><a href="#blind">Ciphertext-only recovery and the controls</a><a href="#open">What stays open</a><a href="#method">Method and files</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout">
 <strong>Summary.</strong> Tomokiyo still lists this passage among ciphers with no known decipherment, but it had been deciphered: by Lasry after
 Britland&rsquo;s article, independently by Biermann, and again in September 2026 by Pitt, whose key is public. <strong>Nothing about the text is new here</strong>,
@@ -143,6 +143,284 @@ depend on it.</li>
 <p class="muted">Checked: Pitt&rsquo;s input against the blog text; the key against 20,000 permutations; ciphertext-only recovery and six matched controls under four
 models. Not checked: the manuscript; Britland&rsquo;s article itself beyond its abstract and the readings quoted by Pitt.</p>
 
+<!-- texts:start -->
+<h2 id="texts">Full texts</h2>
+<p>The transcription and the decryption of every document on this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>
+<h3>Forster papers, 13 May 1644</h3>
+<p>A ciphered French passage dated 13 May 1644 in the papers of Sir Richard Forster (Val-d&#x27;Oise 68.H.8): spiritual counsel that there is no cause for scruple, and that the correspondent should take the ways of prudence to preserve his life, the better to serve God and his brethren, weighing whether it is better to act or to endure. Recipient not established.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/ciphertext.txt">ciphertext.txt</a></p><pre>d. c., t. g., p., 4. 30. q. 30. 19., x. 30. f. 16. 2. 50., a. 0. 40. 12. 20.
+30. y. 30. c. 2., 7. 0., u. 4. t. 88. 30. 0. l. p., a. d. 2. 30.,
+ie vous en responds et mesmes dans c. 0. x. l. 2. d. e. c.
+0. 40., 7. 2., y. 0. 20. n. 2. 12. 50. 16. s. t., 90. 20. 0. t. 2. 14.
+x. a. 30. c. 2. u. 0. t. b., 80. 2. x. 30. s. g. 0. x. a. 2., 90. 20.
+30. a. 0. t. q. 2., 90. 16. 30. 20., 12. s. t. q. 0. l. 30. 2. 20., 30. s.
+50. 20. 2., 30. d. 0., y. s. 30. 20., 2. 19. n. p. d. l. 0., 4., a. 16.
+2. 30., 30. t., y. c. 30. x., 5. 20. 4. 19. 7., 40. 4. 12. l. 16. 70.
+d. g. 0., 90. 4. 20. c. p., u. 30. 80. 50. 16. y. c. d. q. 4. 8.
+16. s. 19., a. 2. 40., 30. s. x., 40. 0. 20. 30. d. 12. 2. x., y.
+s. 30. 20., 80. 0. x. 4. c. 30. 50., 7. 0., 30. s. x., 70. 20
+2. l. 0. 40. et mesurer a cela sil est meilleur d’agir, ou
+de soupir 13. de may. 1644</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/texts/13may1644_decryption.md">13may1644_decryption.md</a></p><pre># Forster, 13 May 1644: decryption with Pitt&#x27;s key (copied from NOTES.md section 2)
+
+Copied verbatim from NOTES.md: `key.py` applies Robert Pitt&#x27;s table (`src/pitt/recovered_key.json`) literally; the
+tokens in bold conflict with the other occurrences of their symbol (slips). `|` marks the clear passages. Pitt&#x27;s own
+literal decoder output, with the group alignment, is `src/pitt/decoder_output.txt`.
+
+&gt; il ny a aucun subiet descrupule de manquera dieu | ie vous en responds et mesmes dans | lesreigles de perfection
+&gt; prenez**sd**ulement lesuoyesde prudence p**i**ur con**c**eruer uotre uie pour enfaire a dieu un plus grand
+&gt; sacrifi**y**e parla multiplication des uos seruices pour lesalut de uos freres | et mesurer a cela sil est
+&gt; meilleur d&#x27;agir, ou de soupir 13. de may. 1644
+
+&quot;Il n&#x27;y a aucun sujet de scrupule de manquer à Dieu; je vous en réponds, et même dans les règles de perfection.
+Prenez seulement les voies de prudence pour conserver votre vie, pour en faire à Dieu un plus grand sacrifice par
+la multiplication de vos services pour le salut de vos frères, et mesurez à cela s&#x27;il est meilleur d&#x27;agir ou de
+souffrir/subir.&quot;
+
+Variant readings (NOTES.md): Britland&#x27;s correspondents read &quot;aucune voie de scrupule&quot; and &quot;preveu seulement&quot; where
+Pitt reads &quot;aucun subiet&quot; and &quot;prenez&quot;; Britland gives the clear phrase as &quot;de soubir&quot; where Tomokiyo has &quot;soupir&quot;.</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/src/pitt/decoder_output.txt">decoder_output.txt</a></p><pre>LITERAL DECODING WITH THE SUPPLIED PROPOSED KEY
+207 cipher tokens; 34 distinct symbols
+No editorial repairs; f -&gt; b is a tentative lexical assignment.
+
+il, ny, a, aucun, subiet, descrupule, de, manquera, dieu
+[ALREADY PLAINTEXT] ie vous en responds et mesmes dans
+lesreigles, de, perfection, prenezsdulement, lesuoyesde, prudence, piur, conceruer, uotre, uie, pour, enfaire, a, dieu, un, plus, grand, sacrifiye, parla, multiplication, des, uos, seruices, pour, lesalut, de, uos, freres
+[ALREADY PLAINTEXT] et mesurer a cela sil est meilleur d’agir, ou
+de soupir 13. de may. 1644
+
+COMPLETE CIPHER GROUP ALIGNMENT
+ 1.   1-  2: d c -&gt; il
+ 2.   3-  4: t g -&gt; ny
+ 3.   5-  5: p -&gt; a
+ 4.   6- 10: 4 30 q 30 19 -&gt; aucun
+ 5.  11- 16: x 30 f 16 2 50 -&gt; subiet
+ 6.  17- 26: a 0 40 12 20 30 y 30 c 2 -&gt; descrupule
+ 7.  27- 28: 7 0 -&gt; de
+ 8.  29- 36: u 4 t 88 30 0 l p -&gt; manquera
+ 9.  37- 40: a d 2 30 -&gt; dieu
+[ALREADY PLAINTEXT] ie vous en responds et mesmes dans
+10.  41- 50: c 0 x l 2 d e c 0 40 -&gt; lesreigles
+11.  51- 52: 7 2 -&gt; de
+12.  53- 62: y 0 20 n 2 12 50 16 s t -&gt; perfection
+13.  63- 77: 90 20 0 t 2 14 x a 30 c 2 u 0 t b -&gt; prenezsdulement
+14.  78- 87: 80 2 x 30 s g 0 x a 2 -&gt; lesuoyesde
+15.  88- 95: 90 20 30 a 0 t q 2 -&gt; prudence
+16.  96- 99: 90 16 30 20 -&gt; piur
+17. 100-108: 12 s t q 0 l 30 2 20 -&gt; conceruer
+18. 109-113: 30 s 50 20 2 -&gt; uotre
+19. 114-116: 30 d 0 -&gt; uie
+20. 117-120: y s 30 20 -&gt; pour
+21. 121-127: 2 19 n p d l 0 -&gt; enfaire
+22. 128-128: 4 -&gt; a
+23. 129-132: a 16 2 30 -&gt; dieu
+24. 133-134: 30 t -&gt; un
+25. 135-138: y c 30 x -&gt; plus
+26. 139-143: 5 20 4 19 7 -&gt; grand
+27. 144-152: 40 4 12 l 16 70 d g 0 -&gt; sacrifiye
+28. 153-157: 90 4 20 c p -&gt; parla
+29. 158-171: u 30 80 50 16 y c d q 4 8 16 s 19 -&gt; multiplication
+30. 172-174: a 2 40 -&gt; des
+31. 175-177: 30 s x -&gt; uos
+32. 178-185: 40 0 20 30 d 12 2 x -&gt; seruices
+33. 186-189: y s 30 20 -&gt; pour
+34. 190-196: 80 0 x 4 c 30 50 -&gt; lesalut
+35. 197-198: 7 0 -&gt; de
+36. 199-201: 30 s x -&gt; uos
+37. 202-207: 70 20 2 l 0 40 -&gt; freres
+[ALREADY PLAINTEXT] et mesurer a cela sil est meilleur d’agir, ou
+de soupir 13. de may. 1644</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/forster/src/pitt/README.md">README.md</a></p><pre># Forster cipher — 13 May 1644
+
+A reproducible AI-assisted reconstruction of the French passage dated
+**13 May 1644** in the Richard Forster papers: ciphertext, proposed key, Python
+decoder, literal output, and an edited French reading with an English translation.
+
+**Earlier decipherments:** Karen Britland has informed Robert Pitt that George
+Lasry supplied a decipherment after publication of her article, and that Norbert
+Biermann independently reached the same solution. This project acknowledges their
+earlier work and makes no claim to the first decipherment.
+
+The supplied key decodes **207 encrypted tokens using 34 fixed symbol assignments**.
+Four letters require editorial repair in the readable version. This repository&#x27;s
+specific key and editorial choices have not been verified against the handwritten
+manuscript or independently reviewed.
+
+## Update — 15 September 2026
+
+Britland&#x27;s reply identifies the earlier work by **George Lasry** and **Norbert
+Biermann**. The reading she supplied agrees with the overall meaning of the
+reconstruction here, with some differences in wording:
+
+| Passage | Earlier reading supplied by Britland | This repository&#x27;s edited reading |
+| --- | --- | --- |
+| Opening | `aucune voie de scrupule` | `aucun sujet de scrupule` (literal: `aucun subiet`) |
+| Prudence clause | `preveu seulement` | `prenez seulement` (literal: `prenez sdulement`) |
+| Final verb | `soupir` | `subir` (the supplied source plaintext also says `soupir`) |
+
+The reply did not include the earlier keys, working notes, or a manuscript image.
+It therefore provides evidence of prior decipherment and broad agreement in
+meaning, while the differences above and the four disputed cipher-derived letters
+remain unresolved. The original input, proposed key, and literal decoder output
+are retained for comparison.
+
+Source: Karen Britland&#x27;s correspondence with Robert Pitt, reported by Pitt in
+this update. The correspondence is not a published source or a review of this
+repository&#x27;s exact key.
+
+## Files and reproduction
+
+| File | Purpose |
+| --- | --- |
+| [ciphertext_source.txt](ciphertext_source.txt) | Supplied transcription, preserved unchanged, including existing plaintext and date. |
+| [recovered_key.json](recovered_key.json) | Proposed token-to-letter key and uncertainty notes. |
+| [decode_forster.py](decode_forster.py) | Deterministic decoder; applies the supplied key without editorial repairs. |
+| [decoder_output.txt](decoder_output.txt) | Complete literal output and numbered alignment of all 37 encrypted groups. |
+| [test_decoder.py](test_decoder.py) | Checks coverage, input validation, key use, and preservation of disputed letters. |
+
+Requires Python 3.9+ and only the standard library. From the repository directory:
+
+```sh
+python3 decode_forster.py
+python3 decode_forster.py --alignment
+python3 -m unittest -v
+```
+
+Check that a fresh run exactly reproduces the committed output:
+
+```sh
+python3 decode_forster.py --alignment | diff -u decoder_output.txt -
+```
+
+## How the cipher and key work
+
+The proposed key is a **homophonic substitution**: each number or letter token
+maps to one plaintext letter, and several tokens can share a letter. For example,
+both `0` and `2` mean `e`; `4 30 q 30 19` gives `a u c u n` → `aucun`.
+Comma-separated groups can contain several words: `descrupule` is read as
+`de scrupule`. Word spacing within groups is editorial.
+
+| Plaintext letter | Cipher tokens |
+| --- | --- |
+| a | `4`, `p` |
+| b | `f` (tentative) |
+| c | `12`, `q` |
+| d | `7`, `a` |
+| e | `0`, `2` |
+| f | `70`, `n` |
+| g | `5`, `e` |
+| i | `16`, `d` |
+| l | `80`, `c` |
+| m | `u` |
+| n | `19`, `t` |
+| o | `s` |
+| p | `90`, `y` |
+| q | `88` |
+| r | `20`, `l` |
+| s | `40`, `x` |
+| t | `8`, `50`, `b` |
+| u | `30` |
+| y | `g` |
+| z | `14` |
+
+The two existing plaintext spans, beginning `ie vous en responds` and
+`et mesurer a cela`, pass through unchanged. The date is already plaintext.
+The decoder applies the supplied key; it does not automate recovery of the key.
+
+## Edited reading
+
+These are this project&#x27;s readings, incorporating the editorial choices documented
+below. They are not a transcription of Lasry&#x27;s or Biermann&#x27;s original working.
+
+**Modernised French**
+
+&gt; Il n’y a aucun sujet de scrupule de manquer à Dieu ; je vous en réponds, et même
+&gt; dans les règles de perfection. Prenez seulement les voies de prudence pour
+&gt; conserver votre vie, pour en faire à Dieu un plus grand sacrifice, par la
+&gt; multiplication de vos services pour le salut de vos frères, et mesurez à cela
+&gt; s’il est meilleur d’agir ou de subir.
+&gt;
+&gt; 13 mai 1644
+
+**English**
+
+&gt; There is no reason to worry that you are failing in your duty to God; I assure
+&gt; you of this, even according to the rules of spiritual perfection. Simply take
+&gt; prudent steps to preserve your life, so that you may offer it to God as a
+&gt; greater sacrifice by multiplying your services for the salvation of your
+&gt; brethren. Judge by that whether it is better to act or to endure.
+&gt;
+&gt; 13 May 1644
+
+## Findings and uncertainties
+
+Four literal letters conflict with the proposed reading. Positions are numbered
+from 1 across encrypted tokens only, as in the output alignment.
+
+| Token position | Cipher → literal | Editorial repair |
+| --- | --- | --- |
+| 70 | `a` → `d` | `sdulement` → `seulement` |
+| 97 | `16` → `i` | `piur` → `pour` |
+| 103 | `q` → `c` | `conceruer` → `conseruer` |
+| 151 | `g` → `y` | `sacrifiye` → `sacrifice` |
+
+These repairs are confined to the edited reading. Changing the key globally
+would alter other occurrences of the same symbols. Their cause remains unresolved.
+
+- **Tentative assignment:** `f` appears once, at token 13. Assigning `f` → `b`
+  produces `subiet`, a historical spelling corresponding to `sujet`.
+  [Nicot’s 1606 dictionary](https://fr.wikisource.org/wiki/Page:Thresor_de_la_langue_francoyse_-_1606_-_1_-_Nicot.djvu/217)
+  attests the spelling; it does not establish this cipher assignment.
+- **Additional editing:** `des uos` becomes `de vos`, omitting the `s` at token
+  174. The key always gives `30` → `u`; `u/v` and `i/j` distinctions, modern
+  spellings, accents, apostrophes, and sentence punctuation are editorial.
+  Examples include `subiet` → `sujet`, `reigles` → `règles`, `uoyes` → `voies`,
+  `ie` → `je`, `responds` → `réponds`, and `mesmes` → `même`. The existing
+  plaintext `mesurer` is edited to `mesurez`.
+- **Uncertain ending:** the supplied transcription ends with `soupir`.
+  The [article abstract displayed by ResearchGate](https://www.researchgate.net/publication/260410273_Reading_between_the_lines_royalist_letters_and_encryption_in_the_English_civil_wars)
+  gives `soubir`. The edited `subir` / “endure” follows that variant and remains
+  uncertain. This word is already plaintext and supplies no evidence for the key.
+- **Verification scope:** all 207 encrypted tokens are retained, every observed
+  symbol is mapped, and the decoder applies no position-specific substitutions.
+  Tests establish mechanical reproducibility. The archive’s 203/207 agreement
+  with a proposed comparison reading measures internal consistency, not
+  independently established accuracy or statistical confidence.
+
+The interpretation is counsel to preserve one’s life for continued service to
+God and one’s brethren. It does not identify the correspondent or establish a
+specific political event. The published passage may be only part of a letter;
+no missing text is supplied here.
+
+## Sources and provenance
+
+Prepared from `forster_end_to_end_evidence.zip`. Its 13 manifest checksums were
+verified; the input, key, decoder, tests, and stored output retain their supplied
+contents. The narrative and editorial notes are consolidated in this document.
+Robert Pitt, a software engineer experimenting with modern AI, assembled this
+AI-assisted reconstruction and reproducible repository. The earlier decipherments
+are credited in the update above.
+
+- Karen Britland, [“Reading between the lines: royalist letters and encryption
+  in the English civil wars”](https://onlinelibrary.wiley.com/doi/10.1111/criq.12072),
+  *Critical Quarterly* 55(4), 15–26 (December 2013 issue; published online
+  21 January 2014), DOI: 10.1111/criq.12072. Note 1 identifies the Forster papers
+  as **Archives départementales (Val-d’Oise), MS 68.H.8, troisième liasse**.
+  This is the published reference; no manuscript image was available for verification.
+- [Publisher’s first-page image](https://onlinelibrary.wiley.com/cms/asset/74d4d7e9-abb5-4ab0-95ba-a9a271a1d09c/criq.12072.fp.png):
+  the typeset transcription identified in the supplied evidence, rather than
+  a photograph of the manuscript.
+- [Cryptiana, September 2021 archive](https://cryptiana.blogspot.com/2021/09/):
+  the supplied evidence identifies the 21 September entry as a reproduction of
+  Britland’s ciphertext, not an independent manuscript transcription.
+
+## License
+
+This repository’s code, key, and editorial documentation are released under the
+[MIT License](LICENSE), permitting free use, modification, and redistribution,
+including commercial use. The historical passage is attributed above; the license
+does not extend to external publications linked as sources.</pre></details>
+<!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/forster.json"></figure>
 <!-- replay:end -->
