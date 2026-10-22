@@ -2,7 +2,7 @@
 
 **Reference.** Bibliothèque nationale de France, Espagnol 318, f. 122r (no. 95), [Gallica ark btv1b52503046q, view 458](https://gallica.bnf.fr/ark:/12148/btv1b52503046q/f458.item). Cyphersolver target `esp318no95`.
 
-**Solved by Lasry with CTTS in 2021 and its built-in cryptanalysis.** The letter was transcribed in CTTS (CrypTool Transcriber and Solver), and the key was recovered with CTTS's built-in cryptanalysis. In October 2026 the key was revised with Claude Opus 5.5: two letter values were corrected, and the nomenclator groups were read from context where the text allows it. The recto (33 lines on three overlapping photographs) is deciphered in full: 1,245 cipher tokens, all assigned. The reading is no longer approximate.
+**Solved by Lasry with CTTS in 2021 and its built-in cryptanalysis.** The letter was transcribed in CTTS (CrypTool Transcriber and Solver), and the key was recovered with CTTS's built-in cryptanalysis. In October 2026 the key was revised with Claude Opus 5.5: two letter values were corrected, and the nomenclator groups were read from context where the text allows it. The recto (33 lines on three overlapping photographs) is deciphered in full: 1,246 cipher tokens, all assigned. The reading is no longer approximate.
 
 ## Summary
 
@@ -25,7 +25,7 @@ The whole letter is enciphered. **Bold** marks the nomenclator code groups, with
 
 ## The letter — f. 122r (images f122a, f122b, f122c)
 
-The three photographs overlap: the last two lines of f122a are repeated at the top of f122b. The text below follows the leaf once, without the repetition.
+The three photographs overlap: the last two lines of f122a are repeated at the top of f122b. They are transcribed once, from f122b, the higher-resolution photograph; the text below follows the leaf once.
 
 ![f122c with decryption in red](cryptiana/images/esp318_1497_f122c_decryption.jpg)
 
