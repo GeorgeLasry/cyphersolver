@@ -136,6 +136,12 @@
    "kind": "verification",
    "what": "Outcome split into parts per period key (one key per entry): six keys with their messages (9 solved, 3 partial) and the ten messages no known key fits (not solved), from the NOTES table; README one row per part.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): msgs.txt (Lasry's list of the 22 ciphertexts) as transcription; the readings table copied verbatim from NOTES.md to texts/residue22_decryption.md; keys.json (fifteen keys incl. the rebuilt CHI key) as key file. Ten messages have no reading.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -243,6 +249,18 @@
     "extent": "none",
     "basis": "0 solved, 0 partial, 10 open. None of the fifteen keys gives text with up to two block edits (best -6.7 nats per window against -4.4 to -6.0 for the solved pages); the CHI key fails on both p. 153 messages; a key-free attack fails its planted 224-letter control. Needs the Childs originals or an unlisted key."
    }
+  ],
+  "texts": [
+   {
+    "doc": "residue22",
+    "label": "22 ADFGVX messages, Childs pages 73-217 (Nov 1918)",
+    "transcription": "msgs.txt",
+    "decryption": "texts/residue22_decryption.md",
+    "summary": "German ADFGVX radio messages of November 1918 from James Rives Childs's transcription, listed as unsolved by George Lasry on Schmeh's blog in 2017. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; ten messages remain unread."
+   }
+  ],
+  "key_file": [
+   "keys.json"
   ]
  }
 }

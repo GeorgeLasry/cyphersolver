@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060495t/f24/full/1600,/0/default.jpg): f9r (canvas 24) after \"ordres que vous avez receu\": 36 60 33 n 39 x 21 , 6 28 ... -> de la co-n-du-i-te , que vo... = \"de la conduite que vo(us)\" with his table (36=de,60=la,33=co,39=du,21=te,6bar=que,28bar=vo); fits the f10r plaintext context. Excerpt f18r not imaged by me. Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Clear copies of letters B and C in same volume (f10r, ff17r-v). 96.5% incl. 40 probable nulls; several nomenclator values marked ?. 1653 consistent (Bordeaux fell Jul/Aug 1653)."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Clear copies of letters B and C in same volume (f10r, ff17r-v). 96.5% incl. 40 probable nulls; several nomenclator values marked ?. 1653 consistent (Bordeaux fell Jul/Aug 1653).",
+    "texts": [
+      {
+        "doc": "brienne5160",
+        "summary": "Savoy’s policy toward Spain and the proposed marriage of the Infanta; the Duke of Mantua, Casale and the Monferrat dispute. Brienne also reports army news, the fall of Bordeaux and the succession to La Vieuville in financial administration.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Clear copies of letters B and C in same volume (f10r, ff17r-v). 96.5% incl. 40 probable nulls; several nomenclator values marked ?. 1653 consistent (Bordeaux fell Jul/Aug 1653)."
+      }
+    ]
   }
 }

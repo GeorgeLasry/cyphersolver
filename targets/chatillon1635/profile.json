@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (none (no Gallica link in dossier; fr. 3758 ark not found offline, gallica.bnf.fr behind Cloudflare)): his f127v crop: clear \"mais Je Vous respon que\" then 95(nous)...46(ennemi)...33(de)... codes consistent with his table, but sign-level read of 8+ symbols from the small crop was not reliable Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Plaintext of the same letters elsewhere in the volume (f123v, f126r, f127r). 93.7% identified. Repo CATALOGUE lists Chatillon-Servien fr. 3758 nos.100,104 (ark btv1b9059471x?)."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Plaintext of the same letters elsewhere in the volume (f123v, f126r, f127r). 93.7% identified. Repo CATALOGUE lists Chatillon-Servien fr. 3758 nos.100,104 (ark btv1b9059471x?).",
+    "texts": [
+      {
+        "doc": "chatillon1635",
+        "summary": "Châtillon criticizes the army’s condition and discusses withdrawal across the Rhine for greater safety.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Plaintext of the same letters elsewhere in the volume (f123v, f126r, f127r). 93.7% identified. Repo CATALOGUE lists Chatillon-Servien fr. 3758 nos.100,104 (ark btv1b9059471x?)."
+      }
+    ]
   }
 }

@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9059466m/f108/full/1600,/0/default.jpg): f53r: clear \"vous les fassiez valloir et peser a sa Ste y adioustant de plus la recommandation des grands\" + interlinear over cipher \"services de mon cousin le cardinal de Richelieu son frere de qui la [struck] conduite et les actions\" = his excerpt; next 4 cipher rows uninterlined (his own decipherment, not checked) Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Addressed \"Monsr de Bethune\"; Archbishop of Lyon (Alphonse de Richelieu) cardinalate 1629 fits. 93.8%, partly deciphered."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Addressed \"Monsr de Bethune\"; Archbishop of Lyon (Alphonse de Richelieu) cardinalate 1629 fits. 93.8%, partly deciphered.",
+    "texts": [
+      {
+        "doc": "bethune1629",
+        "summary": "Louis XIII nominates the Archbishop of Lyon for a cardinal’s hat, citing the services of his brother Richelieu.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Addressed \"Monsr de Bethune\"; Archbishop of Lyon (Alphonse de Richelieu) cardinalate 1629 fits. 93.8%, partly deciphered."
+      }
+    ]
   }
 }

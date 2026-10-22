@@ -139,6 +139,12 @@
    "kind": "verification",
    "what": "Aligned all 61 runs with the print (alignment.tsv); recurring groups hold one meaning at every place (534 to x8, 678 the, 839 you, 894 him, 609 his, 1373 religion, 1219.563 Protestant).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt; the clear text printed by Parke (1798) in print/parke1798_v1_p310-311.txt and the run-by-run alignment.tsv as decryption.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -155,6 +161,18 @@
   "notes": "Every code run is matched to the printed clear text; two runs (91, 261) have no printed word. The code table itself is not rebuilt.",
   "credits": [
     {"who": "parke", "role": "key or decipherment used", "note": "clear text of the instructions printed from the office draft; all 61 code runs aligned to it", "date": "1798", "source": "Parke, Letters and Correspondence of Bolingbroke (1798) i 310-311"}
+  ],
+  "texts": [
+   {
+    "doc": "R4878",
+    "label": "Instructions to Peterborough, St James's, 22 Feb 1711/12",
+    "transcription": "transcription.txt",
+    "decryption": [
+     "print/parke1798_v1_p310-311.txt",
+     "alignment.tsv"
+    ],
+    "summary": "Queen Anne's instructions to the Earl of Peterborough: the coded passages hide his real errand, to meet the Electoral Prince of Saxony (the future Augustus III) on his way to Rome to abjure Protestantism, urge him to remain Protestant and, if he wished to flee, concert his rescue to England or another Protestant state, under cover of a visit to Rome. The clear text is printed from the office draft in Parke's Bolingbroke correspondence (1798, vol. 1 pp. 310-311); alignment.tsv matches all 61 code runs to it."
+   }
   ]
  }
 }

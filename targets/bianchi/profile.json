@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b10033498f/f74/full/1600,/0/default.jpg): f73r: after clear \"per questa volta et dirli con queste sole parole\": u35 u32 / m13 u2 u32 t41 u31 t38 u18 -> Che Dal / [Villeroy] et Dal [Amb.] Del [Re] Qui; u-codes checked against the original codebook page in his crop (u2 et, u18 Qui, u31 Del, u32 Dal, u35 Che) = his excerpt Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Original codebook in the same volume (views 126-128) and a clear copy of letter XXIII at f131r; signed Antonio Bianchi, Venice 3 Feb 1610, to Castrino. 99.2%."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Original codebook in the same volume (views 126-128) and a clear copy of letter XXIII at f131r; signed Antonio Bianchi, Venice 3 Feb 1610, to Castrino. 99.2%.",
+    "texts": [
+      {
+        "doc": "bianchi",
+        "summary": "Italian diplomatic correspondence on Spanish funds and troops, papal involvement, France and Venice, ambassadors, and the Duke of Savoy.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Original codebook in the same volume (views 126-128) and a clear copy of letter XXIII at f131r; signed Antonio Bianchi, Venice 3 Feb 1610, to Castrino. 99.2%."
+      }
+    ]
   }
 }

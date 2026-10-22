@@ -88,6 +88,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (none (no Gallica link in entry; NAF 28227(9) checked only via his crops)): his PDF199 crop \"80.50.5, 29.80.5.36.5.97.5, 41.9.38.71.99.7.80.97.99.5.36.5\" with the original key sheet he images (u=80 n=50 e=5 q=29 r=36 l=97 p=41 a=9 t=71 i=99 c=7) = \"une querele particuliere\", agreeing with interlinear and his excerpt Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -120,6 +126,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Could not check folio identity against Gallica (no link). Original key is in the same volume and interlinear plaintext survives, so this is reading with the contemporary key. Only 12/28 cipher pages deciphered."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Could not check folio identity against Gallica (no link). Original key is in the same volume and interlinear plaintext survives, so this is reading with the contemporary key. Only 12/28 cipher pages deciphered.",
+    "texts": [
+      {
+        "doc": "bossuet",
+        "summary": "Bossuet correspondence concerning ecclesiastical controversy, censures and ordinances, assemblies, printed works, diplomacy in Rome, and church appointments.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Could not check folio identity against Gallica (no link). Original key is in the same volume and interlinear plaintext survives, so this is reading with the contemporary key. Only 12/28 cipher pages deciphered."
+      }
+    ]
   }
 }

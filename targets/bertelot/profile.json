@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (none (no Gallica link in dossier; fr. 3822 ark not available offline)): his f133r crop: interlinear \"Il ny a point de doute que S.A. ne se sente griefvement offense du refus faict de la levee des deux mil hommes sans conge ce qui nest maintenant a propos\" = his excerpt; mixed code/letter cipher not decoded independently Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. 1/5 pages deciphered, 686/1646 identified. Sender not given; recipient Bertelot. Date not given (Nemours-Savoy dispute, c.1580s?)."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. 1/5 pages deciphered, 686/1646 identified. Sender not given; recipient Bertelot. Date not given (Nemours-Savoy dispute, c.1580s?).",
+    "texts": [
+      {
+        "doc": "bertelot",
+        "summary": "The Nemours–Savoy dispute: a refused levy of two thousand men, reconciliation with Savoy, Piedmont, and crossing the mountains.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): 1/5 pages deciphered, 686/1646 identified. Sender not given; recipient Bertelot. Date not given (Nemours-Savoy dispute, c.1580s?)."
+      }
+    ]
   }
 }

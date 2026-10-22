@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060232m/f37/full/1600,/0/default.jpg): Canvas 37 shows f36r of the letter (Italian, \"Il sig. Biagio...\"), with cipher blocks identical to his crops; faint letter-by-letter interlinear visible over the signs, but I did not decode lines 7-9 sign by sign Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Key matched from fr. 4702 f37 / fr. 3251 and the Cryptiana Ceppo-Nevers key; 87.2% identified. His meta labels the btv1b9060232m link as fr. 4702 key, but it is the letter itself."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): partly confirmed. Key matched from fr. 4702 f37 / fr. 3251 and the Cryptiana Ceppo-Nevers key; 87.2% identified. His meta labels the btv1b9060232m link as fr. 4702 key, but it is the letter itself.",
+    "texts": [
+      {
+        "doc": "birago1571",
+        "summary": "Birago reports delayed infantry pay and troop movements, private diplomatic conversations, dealings over Finale and Savona, religious arrests, and a legal dispute.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Key matched from fr. 4702 f37 / fr. 3251 and the Cryptiana Ceppo-Nevers key; 87.2% identified. His meta labels the btv1b9060232m link as fr. 4702 key, but it is the letter itself."
+      }
+    ]
   }
 }

@@ -193,6 +193,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split under the one-key rule: the letters of Benedict's circle (Santa Cruz 1399, Jafet 1400, Exea 1408, Comuel 1415 and 1416), whose key is not shown to be his, each moved to its own entry (santacruz1399, jafet1400, exea1408, comuel1415, comuel1416), and the 1398 Vico line in an unknown key to vico1398; this entry keeps Benedict XIII's ten letters of 1399-1403."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): src/plate475_check.tsv (word-by-word check of the only ciphertext image, the p. 475 plate) as transcription; Puig's 1920 printed decipherment linked by its Google Books URL (no local text copy yet); key.md as key file.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -241,6 +247,16 @@
     "date": "1920",
     "source": "Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "benedict-1399-1403",
+    "label": "Ten letters, Puig app. XXVI-LII (22 Sep 1399 - 8 Feb 1403); facsimile p. 475 = app. XXXV, 22 Jun 1400",
+    "transcription": "src/plate475_check.tsv",
+    "decryption": "https://books.google.com/books?id=CuOlkxWnk-EC",
+    "summary": "Benedict XIII (Pedro de Luna), besieged in Avignon, writes in cipher to his agent Francesc Climent (Çapera) in Barcelona on the Schism diplomacy of 1399-1403: the embassy of Aragon, Castile and Navarre, the 'submission' he refused, the see of Lérida, a demand for 3,000 francs, and the bulls for Castile's restitution of obedience. The decipherment is Sebastián Puig y Puig's, printed with the cipher passages in italics in Pedro de Luna (Barcelona 1920), appendix pp. 466-491 (Google Books scan); the only image of the cipher is the p. 475 facsimile, checked word by word in src/plate475_check.tsv."
+   }
+  ],
+  "key_file": "key.md"
  }
 }

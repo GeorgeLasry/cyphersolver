@@ -87,6 +87,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (none (no Gallica link in entry; Clairambault 460 pp53-55 checked only via his p55 crop)): p55 crop last cipher line \"x h e [i] 13 | 3 | [box] 3 h m 8\" with his system-A table (x=d, h=r, e=o, 13=t, 3=a, box=p, m=i, 8=s) = \"droit a paris\", matching interlinear \"marcher droit a paris\" and his excerpt Verdict: partly confirmed.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -122,6 +128,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Folio identity not checked on Gallica. Interlinear plaintext throughout pp53-55; reading largely restates it. Same volume as clair460alpha."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Folio identity not checked on Gallica. Interlinear plaintext throughout pp53-55; reading largely restates it. Same volume as clair460alpha.",
+    "texts": [
+      {
+        "doc": "bouillon1650",
+        "summary": "Spanish financial and military support for Bouillon: promised payments, eight armed frigates, and an advance toward Paris.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Folio identity not checked on Gallica. Interlinear plaintext throughout pp53-55; reading largely restates it. Same volume as clair460alpha."
+      }
+    ]
   }
 }

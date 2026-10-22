@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90008551/f48/full/1600,/0/default.jpg): f226r: \"Madame\", clear text then cipher row with interlinear \"que je communicasse sa despesche a la Reyne\"; f226v show-through shows interlinear \"...le souverain conseil est de gaigner temps...\" as in his excerpt; codes not decoded independently Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -123,6 +129,13 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Fully interlined by a contemporary hand; 99.7% identified. Recipient Queen of Poland (Marie-Louise Gonzague) fits the Nevers/Mantua content."
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Fully interlined by a contemporary hand; 99.7% identified. Recipient Queen of Poland (Marie-Louise Gonzague) fits the Nevers/Mantua content.",
+    "texts": [
+      {
+        "doc": "brienne1067",
+        "summary": "Brienne advises delaying replies about the government of Nivernais, so continued possession may strengthen the claim. He also reports French and Dutch military preparations and Prince Thomas’s embarkation for an Italian expedition.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Fully interlined by a contemporary hand; 99.7% identified. Recipient Queen of Poland (Marie-Louise Gonzague) fits the Nevers/Mantua content."
+      }
+    ]
   }
 }

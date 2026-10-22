@@ -89,6 +89,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9059630p/f227/full/1600,/0/default.jpg): f132r (canvas 227 of fr. 3516; no link in dossier) cipher lines 7-9: interlinear \"aucun fondement que de quelques advis qui leur viennent du lieu ou vous estes, ou sans doute il y a bien de la corruption. de ne manqueray sil se presente chose digne de\" = his excerpt; signed Brulart de Berny, Brussels 26 July 1607; address to Jeannin on f228 Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -124,6 +130,13 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch B): confirmed. Fully interlined; also printed in Jeannin (1875) p. 104. 95.9% identified.",
-    "first_break": false
+    "first_break": false,
+    "texts": [
+      {
+        "doc": "berny1607",
+        "summary": "A Brussels report on peace or a long truce, the cordelier’s assurances in Spain, and accusations that French interference and corruption are obstructing negotiations.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Fully interlined; also printed in Jeannin (1875) p. 104. 95.9% identified."
+      }
+    ]
   }
 }

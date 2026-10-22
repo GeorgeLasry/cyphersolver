@@ -86,6 +86,12 @@
       "kind": "verification",
       "what": "Spot-check against the Gallica image (https://gallica.bnf.fr/ark:/12148/btv1b9063548f/f134.item): Gallica f71r = Spanish letter, clear \"Señor\" heading, Blasco hand; cipher check on his f72r crop: \"13.7.20.8.14 2.29.20 9.3 10.14.8.20.2.7.18.3\" = venir con la princesa, matching his excerpt Verdict: confirmed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no texts in the repository for George Lasry's result (only the report excerpt in lasry_entry.md); entry added with a summary and a note naming the missing transcription, decryption and key (needs contributor: George Lasry).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -121,6 +127,13 @@
       }
     ],
     "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): confirmed. Only 107 cipher elements (numbers in clear Spanish text); 16-value key from a short sample, so mostly context-driven. f71r itself is clear text; f72 holds most cipher.",
-    "first_break": true
+    "first_break": true,
+    "texts": [
+      {
+        "doc": "blasco1597",
+        "summary": "Juan Blasco reports court negotiations, the prospect of coming with the princess, and efforts to obtain royal favors. He discusses a gift for Don Cristóbal and the support of Don Juan, Chinchón and Miranda.",
+        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Only 107 cipher elements (numbers in clear Spanish text); 16-value key from a short sample, so mostly context-driven. f71r itself is clear text; f72 holds most cipher."
+      }
+    ]
   }
 }

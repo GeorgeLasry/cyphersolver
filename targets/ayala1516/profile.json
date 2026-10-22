@@ -138,6 +138,12 @@
    "kind": "verification",
    "what": "Independent reading compared with the 1875 print: the seven open words settled, about half a dozen other words corrected, otherwise agreement.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the line-by-line working transcriptions (plain_*, third_*; sign strings given only for re-read lines, not a full sign transcription); reading.txt and the 1875 print (lit/printed_XLIX.txt, lit/printed_LIV.txt) as decryptions; KEY.md plus the key corrections copied verbatim from NOTES.md to texts/key_corrections.md.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -154,6 +160,28 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "key rebuilt from R10024 (cryptiana spanish2C), read the letter; corrected here", "source": "cryptiana spanish2C"},
     {"who": "gayangos", "role": "prior solution", "note": "1875 print of the 1849 Simancas decipherment (cartas XLIX, LIV); found after the reading, settled seven words", "date": "1875", "source": "Gayangos & de la Fuente, Cartas de los secretarios del cardenal Cisneros (Madrid 1875), cartas XLIX, LIV"}
+  ],
+  "texts": [
+   {
+    "doc": "R9954",
+    "label": "Brussels, 30 Aug 1516 (AGS 0002-0006)",
+    "transcription": [
+     "plain_0002_0003.txt",
+     "plain_0004_0006.txt",
+     "third_0002_0003.txt",
+     "third_0004_0006.txt"
+    ],
+    "decryption": [
+     "reading.txt",
+     "lit/printed_XLIX.txt",
+     "lit/printed_LIV.txt"
+    ],
+    "summary": "Diego López de Ayala, Cisneros's agent at Charles's court in Brussels, reports that offices in Castile are sold at court to unworthy men and granted from Flanders over the regent's head, on the Arévalo and Málaga affairs and the power over the military Orders, and that peace (probably with France) is concluded and the king resolved to embark from Zeeland. reading.txt is the project's reading; the two print files are the 1849 Simancas decipherment as printed by Gayangos and de la Fuente (1875), split into Cartas XLIX and LIV."
+   }
+  ],
+  "key_file": [
+   "KEY.md",
+   "texts/key_corrections.md"
   ]
  }
 }

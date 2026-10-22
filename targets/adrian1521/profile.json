@@ -139,7 +139,13 @@
    "what": "Rey de Inglaterra corrected to the King of Portugal (Manuel I, d. 13 Dec 1521) from the cipher and the letter's content.",
    "result": "worked"
   },
-  {"date": "2026-09-30", "kind": "hypothesis", "technique": ["simulated annealing"], "what": "Gap [suf] re-examined for the quotation list (30 Sept): the line reads Log fun per suf =δ roc t= pex, so Gredilla's 'que no' is the single m-n group per and two spelled signs follow suf; 'en coyuntura muy peligro-sa a los negocios' fits the code blocks only if the δ-like sign is a, but it is y in 'pierde y sentirá'. Left as a guess (I), not put in the text.", "result": "partial"}
+  {"date": "2026-09-30", "kind": "hypothesis", "technique": ["simulated annealing"], "what": "Gap [suf] re-examined for the quotation list (30 Sept): the line reads Log fun per suf =δ roc t= pex, so Gredilla's 'que no' is the single m-n group per and two spelled signs follow suf; 'en coyuntura muy peligro-sa a los negocios' fits the code blocks only if the δ-like sign is a, but it is y in 'pierde y sentirá'. Left as a guess (I), not put in the text.", "result": "partial"},
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt; the corrected reading plaintext_corrected.txt and Gredilla's printed decipherment gredilla_1880s.txt as two decryptions; the code table copied verbatim from NOTES.md to texts/key.md, with key_working.md.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "method": "key recovered based on plaintext from external sources",
@@ -155,6 +161,22 @@
   "notes": "Read in full via the 19th-century decipherment, checked and corrected; about ten groups open (suf, xub, yo, ren nod, xac, sif, tib, xit, Lag, ne).",
   "credits": [
     {"who": "gredilla", "role": "key or decipherment used", "note": "19th-c. decipherment printed by Danvila, aligned group by group to rebuild the code", "date": "1899", "source": "Danvila, Memorial Histórico Español 38 (1899), pp. 703-705"}
+  ],
+  "texts": [
+   {
+    "doc": "est8_150",
+    "label": "Vitoria, 30 Dec 1521",
+    "transcription": "transcription.txt",
+    "decryption": [
+     "plaintext_corrected.txt",
+     "gredilla_1880s.txt"
+    ],
+    "summary": "The three governors of Castile (Adrian of Utrecht, the Admiral and the Constable) write to Charles V ten days before Adrian's election as pope, on the consequences of the death of Manuel I of Portugal (13 Dec 1521): the widowed queen Leonor, Charles's sister, the young João III, and Portugal's old alliance with France. plaintext_corrected.txt is the project's corrected text; gredilla_1880s.txt is Claudio Pérez Gredilla's decipherment as printed by Danvila (1899), which misreads Portugal as 'Inglaterra'."
+   }
+  ],
+  "key_file": [
+   "texts/key.md",
+   "key_working.md"
   ]
  }
 }
