@@ -139,7 +139,8 @@
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591 (catalogue 161), whose fourteen records are letters in at least six systems: System A′ stays in kaa4591; Łaski's System B is kaa4591b; R9325 is fulda1576; R9367, R9416, R9424 and R9319 are r9367, r9416, r9424 and r9319; R9291 is a key fragment. R9416 keeps outcome.parts: f.262 and f.263 are two sign sets in one record.",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 199 tokens, 25 types, de-1500s order 4: reading -2.667 per letter; polyphonic: 13% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"}
+  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 199 tokens, 25 types, de-1500s order 4: reading -2.667 per letter; polyphonic: 13% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f.263: v2 transcription, solver decrypt and the hand-keyed lines 11-16; f.262: the contemporary gloss only, its cipher signs are not transcribed (missing)", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "de-1500s", "file": "validation.tsv", "tokens": 199, "types": 25, "tokens_per_type": 7.96, "score": -2.667, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 13% of read tokens differ from their type's commonest value"}, 
   "method": "key recovered from ciphertext-only",
@@ -195,6 +196,31 @@
     "role": "key or decipherment used",
     "note": "the interlinear decipherment of f. 262 and the gloss over the first lines of f. 263"
    }
+  ],
+  "texts": [
+   {
+    "doc": "R9416",
+    "label": "f.263 (pp. 3-4), report on the Pressburg talks, c. 1533-34",
+    "transcription": [
+     "r9416/p34_v2.txt",
+     "r9416/signs_f263.txt"
+    ],
+    "decryption": [
+     "r9416/decrypt_f263.txt",
+     "r9416/reading_p3_11-16.txt"
+    ],
+    "summary": "A Bavarian agent's report on the Pressburg negotiations between 'beden kunigen' (Ferdinand and John Zápolya), a Turkish embassy, Imre Czibak's offer of tribute to the Sultan and Alvise Gritti's dispatch, so c. 1533-34. Broken ciphertext-only by constrained annealing: decrypt_f263.txt is the solver's working decrypt of the whole leaf (local errors, before the look-alike split); recto lines 11-16 are re-keyed by hand and checked on the image (reading_p3_11-16.txt)."
+   },
+   {
+    "doc": "R9416",
+    "label": "f.262 (pp. 1-2), servant's letter to his duke, 'eritags nach Jacobi'",
+    "decryption": "r9416/gloss.txt",
+    "summary": "A Bavarian servant to his duke, Tuesday after 25 July: troops in Austria and Styria, the Italian and Spanish foot to move through Styria and by the Danube into Hungary; he asks for seven years' pension and the Oberrichter post at Straubing. Read at the time: the faint contemporary interlinear gloss is transcribed in part; the cipher signs of this leaf were never transcribed."
+   }
+  ],
+  "key_file": [
+   "r9416/_c/key.txt",
+   "r9416/reading_p3_11-16.txt"
   ]
  }
 }

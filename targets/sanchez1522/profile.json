@@ -308,6 +308,12 @@
       "kind": "literature search",
       "what": "Grepped Bergenroth, CSP Spain vol. 2 (1866; british-history.ac.uk pp380-519) by Salazar folio A.23-A.26 and 'Alonso Sanchez'. Fourteen of this folder's DECODE records are calendared as 'Autograph in cipher. Contemporary deciphering' (nos. 429, 439, 444?, 447?, 462, 470, 473, 476, 482, 487, 488/489, 491, 495?, 500). R9635 = no. 476 (16 Sept 1522, A.26 ff. 20-22): the abstract confirms the 18,000 ducats outstanding and the Pace memorial, and shows the 'restituydas sus tierras' gloss is the Venetians' demand that their towns be restored. May 9/24 run and R9653 (20 Nov) not calendared.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): edition/r9635_f20r.md, r9635_f21.md and read_r9635.md (cipher groups and reading of the lines done), read_r9653.md; key key_codes.tsv with calibration_r9605.md; no full transcription of either letter exists",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -351,6 +357,33 @@
       {"who": "tomokiyo", "role": "key or decipherment used", "note": "reconstruction of Sánchez's 1522 cipher (alphabet, ~177 code groups) from R9605, extended here", "date": "2025-09-06", "source": "https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm"},
       {"who": "contemporary", "role": "key or decipherment used", "note": "clerk's full decipherment of R9605 (calibration) and the interlinear glosses on R9635"},
       {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain 2 no. 476 abstract (from the contemporary deciphering) confirms R9635 and fills the gist of unread lines", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 476"}
+    ],
+    "texts": [
+      {
+        "doc": "R9635",
+        "label": "R9635, Venice, 16 Sept 1522 (RAH Salazar 9/26 ff. 20-22)",
+        "transcription": [
+          "edition/r9635_f20r.md",
+          "edition/r9635_f21.md"
+        ],
+        "decryption": [
+          "edition/r9635_f20r.md",
+          "edition/r9635_f21.md",
+          "read_r9635.md"
+        ],
+        "summary": "Alonso Sánchez, imperial ambassador at Venice, to Charles V: the money owed by Venice under the treaty ('mas de xv mil ducados', 'allende de los otros xviii mil'), restitution of goods, 'los de esta republica' (calendared by Bergenroth, CSP Spain 2 no. 476). Edited against Tomokiyo's published key; only ll. 1-3, 6, 7, 14, 22 of f. 20r and the opening of f. 21 are given, cipher groups and reading side by side."
+      },
+      {
+        "doc": "R9653",
+        "label": "R9653, Venice, 20 Nov 1522 (RAH Salazar 9/26 ff. 299-301)",
+        "transcription": "read_r9653.md",
+        "decryption": "read_r9653.md",
+        "summary": "Sánchez to Charles V: the clear middle gives the news of the siege of Rhodes from the Signoria's letters (fifty thousand Turks dead, the defenders hoping for relief); the two cipher lines at the foot are read with the published key; the six-line head paragraph is illegible at DECODE's resolution."
+      }
+    ],
+    "key_file": [
+      "key_codes.tsv",
+      "calibration_r9605.md"
     ]
   }
 }

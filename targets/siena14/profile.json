@@ -146,7 +146,8 @@
    "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 14 only. Fraction taken from the second reading pass (transcripts/no14_reading2.txt: 876 of 1,495 tokens in words read as sense); validation rerun on no. 14 alone.",
    "result": "worked"
   },
-  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 845 tokens, 35 types, it-cinquecento order 4: reading -2.153 per letter; random keys -3.953 (z 6.1); key annealed onto shuffled ciphertext best -2.793 (mean -2.828, z 29.9); annealer on the real text -2.659. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 845 tokens, 35 types, it-cinquecento order 4: reading -2.153 per letter; random keys -3.953 (z 6.1); key annealed onto shuffled ciphertext best -2.793 (mean -2.828, z 29.9); annealer on the real text -2.659. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no14b.txt (revised transcription) and no14_signs.tok; readings no14_reading2.txt (second pass) and no14_reading.txt; key key14.txt", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 845, "types": 35, "tokens_per_type": 24.14, "score": -2.153, "nulls": {"random keys": {"n": 200, "mean": -3.953, "sd": 0.296, "max": -3.304, "z": 6.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.828, "sd": 0.023, "max": -2.793, "z": 29.9, "p": 0.1429}}, "power": -2.659, "verdict": "pass", "notes": "claimed per-occurrence score -2.004; polyphony 0.043; 636 unread tokens left out; annealer on the real text from random keys reached -2.659"}, 
   "method": "key recovered from ciphertext-only",
@@ -174,6 +175,22 @@
     "detail": "small signs at the DECODE resolution, mostly the first lines, lines 13-15 and the subscription; the key itself is recovered"
    }
   ],
-  "notes": "Sienese envoys (signed '...Marco', place Rome?) to the Priori and Capitano del Popolo, before 1429. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 14 only."
+  "notes": "Sienese envoys (signed '...Marco', place Rome?) to the Priori and Capitano del Popolo, before 1429. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 14 only.",
+  "texts": [
+   {
+    "doc": "no14",
+    "label": "Siena, Concistoro 2308 fasc. 2 no. 14 (DECODE R4802), before 1429",
+    "transcription": [
+     "transcripts/no14b.txt",
+     "transcripts/no14_signs.tok"
+    ],
+    "decryption": [
+     "transcripts/no14_reading2.txt",
+     "transcripts/no14_reading.txt"
+    ],
+    "summary": "Sienese envoys on a journey to the Priori and Capitano of Siena: they arrived safely, and report Domenico's two hours' talk with a servant of <7H>, the friend's word that Carlo Malatesti and others share the same jealousy, Tuscany united with the three powers, and war with <Z7>; <7H> is at Naples. Key recovered ciphertext-only; the second reading pass (no14_reading2.txt) marks doubtful and unread words."
+   }
+  ],
+  "key_file": "key14.txt"
  }
 }

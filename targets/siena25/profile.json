@@ -122,7 +122,8 @@
    "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 25 only. Validation rerun on no. 25 alone (validation.tsv by mk_validation.py).",
    "result": "worked"
   },
-  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 471 tokens, 20 types, it-cinquecento order 4: reading -2.184 per letter; random keys -5.093 (z 6.6); key annealed onto shuffled ciphertext best -3.224 (mean -3.289, z 28.7); annealer on the real text -2.417. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 471 tokens, 20 types, it-cinquecento order 4: reading -2.184 per letter; random keys -5.093 (z 6.6); key annealed onto shuffled ciphertext best -3.224 (mean -3.289, z 28.7); annealer on the real text -2.417. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no25.txt / no25_signs.tok and the reading transcripts/no25_reading.txt; key keys/no25_key.txt", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 471, "types": 20, "tokens_per_type": 23.55, "score": -2.184, "nulls": {"random keys": {"n": 200, "mean": -5.093, "sd": 0.444, "max": -3.879, "z": 6.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.289, "sd": 0.039, "max": -3.224, "z": 28.7, "p": 0.1429}}, "power": -2.417, "verdict": "pass", "notes": "claimed per-occurrence score -2.184; polyphony 0.0; 25 unread tokens left out; annealer on the real text from random keys reached -2.417"}, 
   "method": "key recovered from ciphertext-only",
@@ -149,6 +150,19 @@
     "detail": "each occurs once; no context or sibling fixes them"
    }
   ],
-  "notes": "Undated slip: an armed lord's route by Lajatico, Radicondoli and Casole into Sienese territory. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 25 only."
+  "notes": "Undated slip: an armed lord's route by Lajatico, Radicondoli and Casole into Sienese territory. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 25 only.",
+  "texts": [
+   {
+    "doc": "no25",
+    "label": "Siena, Concistoro 2308 fasc. 2 no. 25 (DECODE R4813), undated",
+    "transcription": [
+     "transcripts/no25.txt",
+     "transcripts/no25_signs.tok"
+    ],
+    "decryption": "transcripts/no25_reading.txt",
+    "summary": "An undated, unsigned slip: a lord will not ride as the people there wished but will leave without further halt, by Lajatico, then Radicondoli and Casole, probably next Saturday; the Signoria of Siena is asked to provide bread, wine and fodder in those places. Key recovered ciphertext-only; 477 of 496 signs in words read as Italian."
+   }
+  ],
+  "key_file": "keys/no25_key.txt"
  }
 }

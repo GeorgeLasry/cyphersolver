@@ -171,6 +171,12 @@
    ],
    "what": "A second, independent alignment by a parallel session (main commit 883fa6f41, made without transcripts/no08.txt or decode.py, in its own sign names): image re-fetched with the DECODE cookie and three cipher passages aligned with the memorandum at 2x: '÷ 59t95 75□ø I2 7øϕϕ2 9ff2ϕ +c5' = '[duca di Milano] aveva dato [ma]donna biancha' (aveva = ABCBA), 'I2ɷ+ctɱt' = 'marchese' twice, 'o-tɷɷ2ɷ2' = 'ferrara', 't ϕøϕ ff9ø I2ϕ+c2 ot +ct' = 'e non può manchare che'. Its values are those of decode.py under other names; its one doubt (sign I in 'la' and 'manchare') is settled by the 166-sign reading: the cipher has 'madonna', I = m throughout.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no08.txt / no08.tok; decode.py output saved to texts/no08_decryption.txt (each run beside the memorandum's words); key key.json",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -210,6 +216,19 @@
     "note": "The clear memorandum on the same sheet, c. 1440-41, deciphering the slip (paragraphs 5-7)."
    }
   ],
-  "notes": "George Lasry's report (17 Oct 2026) lists no. 8 as unsolved and calls the relation to the memorandum speculative; the alignment of 18 Oct 2026 shows the memorandum is its decipherment. To be confirmed with him."
+  "notes": "George Lasry's report (17 Oct 2026) lists no. 8 as unsolved and calls the relation to the memorandum speculative; the alignment of 18 Oct 2026 shows the memorandum is its decipherment. To be confirmed with him.",
+  "texts": [
+   {
+    "doc": "R4797",
+    "label": "Siena, Concistoro 2308 fasc. 2 no. 8 (DECODE R4797), c. 1440-41",
+    "transcription": [
+     "transcripts/no08.txt",
+     "transcripts/no08.tok"
+    ],
+    "decryption": "texts/no08_decryption.txt",
+    "summary": "A ciphered slip on the Milan-Ferrara league: the league between the Duke of Milan and the Marquis of Ferrara against the Venetians and their league, the Duke of Milan having given 'madonna Biancha' to messer Leonello, the Marquis's son, and 'grandissimi facti' to be expected. The clear memorandum on the same sheet (paragraphs 5-7) is its contemporary decipherment; the key rebuilt from the alignment reads all 166 signs."
+   }
+  ],
+  "key_file": "key.json"
  }
 }

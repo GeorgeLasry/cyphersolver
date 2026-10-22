@@ -170,6 +170,12 @@
    "kind": "literature search",
    "what": "Pastor IX (archive.org historyofpopesfr09past) app. 38 prints Raince 26 Nov 1526 (f.109): parallel wording ('habandonner et s'enfuyr', 'du coste de dela') confirms p.105 readings, but it is a different letter. Grethen 1887 not found digitised.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): raince_cipher.txt (segmented token ids) and gold/labels.txt; readings trans/reading_v3.txt (latest), trans/reading_edited.txt and the clear close trans/p31_clear_close.txt",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -208,6 +214,22 @@
   ],
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "1526 key for the Raince letters of BnF fr. 2984 (cryptiana francis.htm), re-measured off his key image", "date": "2020", "source": "cryptiana francis.htm, 'French Ciphers during the Reign of Francis I', section BnF fr.2984 (1526)"}
+  ],
+  "texts": [
+   {
+    "doc": "residue1526",
+    "label": "BnF fr. 2984 pp. 29-31 (13 May 1526) and p. 105 (20 Nov 1526)",
+    "transcription": [
+     "raince_cipher.txt",
+     "gold/labels.txt"
+    ],
+    "decryption": [
+     "trans/reading_v3.txt",
+     "trans/reading_edited.txt",
+     "trans/p31_clear_close.txt"
+    ],
+    "summary": "The ciphered residue of two letters from Nicolas Raince in Rome to Anne de Montmorency, 13 May and 20 November 1526, about 106 lines unread anywhere found: news of the court, the Castilians and Burgundians after the capitulation, the Pope and the Emperor. Deciphered with Tomokiyo's 1526 key as re-measured here (CALIBRATION.md); reading_v3.txt is the latest line-by-line reading (unresolved glyphs marked ?), reading_edited.txt the earlier running French."
+   }
   ]
  }
 }
