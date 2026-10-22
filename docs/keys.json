@@ -1,5 +1,6 @@
 {
  "keys": [
+  {"id": "k-lasry-sabran1631", "label": "Louis XIII-Sabran cipher of 1631 (Lasry, BNF Francais 4134)", "kind": "scholar's key", "by": "George Lasry", "year": 1631, "found": 2022, "note": "Reconstructed by Lasry; published as an image on Tomokiyo's GL.htm ('Melchior de Sabran (1631)'). Homophonic letters, a doubling sign and a few word signs; it also reads Louis XIII's letter in Baluze 155 f. 79."},
   {"id": "k-tomokiyo-letellier-marca1644", "label": "Le Tellier-Marca cipher of 1644 (Tomokiyo's table)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1644, "note": "Rebuilt by Tomokiyo from the Le Tellier letters of 1644 in BnF Baluze 103 that carry decipherments of the time (ff. 171, 189, 200, 230); Cryptiana louisxiv0.htm."},
   {"id": "k-tomokiyo-vulcob-ancel", "label": "Vulcob and Ancel's Cipher 1575-1584 (Tomokiyo, frencheastern.htm)", "kind": "scholar's key", "by": "Satoshi Tomokiyo", "year": 1577, "found": 2026, "note": "Homophonic symbol alphabet with double-letter signs, word signs and plain-letter code words; reconstructed from the margin decipherments of BnF Colbert 398. Additions by Harumi-Matsuba (uu, g, ff, nn, null c; saturnus = l'Empereur, Juno = le Roy d'Espagne)."},
   {"id": "k-tomokiyo-fiesque", "label": "Tomokiyo's reconstructed table of Fiesque's cipher (French ciphers for German affairs)", "kind": "scholar's key", "by": "Satoshi Tomokiyo (Cryptiana)", "year": 1568, "note": "Cryptiana frencheastern.htm, reconstructed for BnF fr. 15919; values for signs outside the table inferred by Harumi-Matsuba (issue #52)."},
@@ -2230,6 +2231,7 @@
   {"id": "k-michell-envoy1751", "label": "Michell's envoy code, from the Dutch decipherments of R1050/R1051", "kind": "scholar's key", "by": "WAINUT", "year": 1751, "found": 2026, "note": "271 code values paired from DECODE's transcriptions of the contemporary Dutch decipherments written over Michell's reports of 12 Nov 1751 and 5 Sep 1752 (PR #29)."}
  ],
  "links": [
+  {"key": "k-lasry-sabran1631", "target": "sabran1633", "how": "read unchanged", "note": "Applied by Harumi-Matsuba (issue #56) to nine leaves of fr. 4134; five name codes are not in the key"},
   {"key": "k-r5258", "target": "bilia1527", "how": "read unchanged", "note": "Bilia's own key; f. 102r deciphered by Harumi-Matsuba (issue #55) with the sheet values plus five context values; the project's copy agrees on 440 of 459 signs"},
   {"key": "k-tomokiyo-letellier-marca1644", "target": "letellier1644", "how": "adapted", "note": "Applied by Harumi-Matsuba (issue #54) with values added from the sister letter f. 230r aligned against its decipherment f. 232r"},
   {"key": "k-tomokiyo-vulcob-ancel", "target": "ancel1577", "how": "adapted", "note": "Applied by Harumi-Matsuba (issue #53) to Ancel's Oct-Dec 1577 passages, with small additions from the volume's margin decipherments"},

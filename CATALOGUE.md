@@ -65,7 +65,7 @@ out the same day to the list of letters readable with keys in hand; the key for 
 - Spinelly to Wolsey (Letters and Papers ii 1553 (“not deciphered”); catalogue 305): Tomokiyo 2023 Spinelly key.
 - Dodieu de Vély to Montmorency (BnF fr. 20506 ff. 49, 52; catalogue 308): Tomokiyo Dodieu Cipher 1.
 - Nicolas de Baugy to Mangot (BnF Clairambault 369 ff. 2, 59; catalogue 309): Tomokiyo Baugy key.
-- Sabran to Bouthillier (about 18 passages) (BnF fr. 4134 ff. 46–73; fr. 4135 ff. 132–251; catalogue 310): Lasry 1631 Sabran key.
+- Sabran to Bouthillier, 1635 (BnF fr. 4135 ff. 132–251; from catalogue 310): Lasry 1631 Sabran key; another copyist's forms. The fr. 4134 passages are written up as sabran1633.
 - Sancy, Constantinople, to the King and Puisieux (BnF fr. 16148 ff. 200, 206; catalogue 311): Sancy Cipher-2 from glossed pairs in the volume.
 - Péricard to an unknown recipient, Paris (BnF fr. 3984 no. 73 f. 152; catalogue 313): Tomokiyo Péricard key (no. 69).
 - Spanish ciphers in fr. 3641: the unread letters (nos. 27, 48, 50, 58) (BnF fr. 3641 nos. 27, 48, 50, 58; catalogue 319): Nevers key no. 54 and Cp.30.
@@ -175,6 +175,7 @@ Feuquières and Catinat); **B** partial key in print (Tomokiyo) or known family;
 
 ## Read or resolved here, and removed
 
+- **310 (part) — Melchior de Sabran to Claude Bouthillier, Genoa 1633, BnF fr. 4134 ff. 46v–73v**: nine leaves deciphered in part with George Lasry's 1631 Sabran key by Harumi-Matsuba (issue #56, AI-only transcription, no human check), measured here 21 Oct 2026 at 879 of 891 symbols valued and about 74% of letters in words. Still open: most of f. 50v, stretches of ff. 54r and 57r, five name codes; fr. 4135 stays in the keys-in-hand list. Lasry may hold readings of these letters; to be asked. [Write-up](https://dbourdeau.github.io/cyphersolver/sabran1633.html)
 - **291 (part) — Jo. Antonio Bilia to Francesco II Sforza, Burgos, 22 Nov 1527, BnF fr. 3013 no. 43 ff. 102r–v**: f. 102r deciphered with Bilia's own Sforza key DECODE R5258 ("Cum equite Bilie") by Harumi-Matsuba (issue #55, AI-only transcription, no human check), checked here 21 Oct 2026 with the project's copy of the key (440 of 459 values agree); f. 102v (seven cipher lines) and the name code B.58 stay open. **No. 42** (Bilia to the ambassador Jo. Francesco Taverna, "Zaberna", same date, ff. 99r–v, Gallica views 159–162) is in a different cipher that neither R5258 nor R5237 fits: it stays open and needs cryptanalysis, not a key lookup. Removed from the keys-in-hand list 21 Oct 2026. [Write-up](https://dbourdeau.github.io/cyphersolver/bilia1527.html)
 - **170 and 189 — Hieronimo Ranzo's letters, BnF fr. 2988 ff. 9–10 (DECODE R1894) and its copy fr. 20506 ff. 136–138 (R4450)**: key recovered from the ciphertext by George Lasry and, independently, Paolo Rosson (6 Oct 2026); measured here 18 Oct 2026, ff. 9–10 97.0%, f. 2 96.2%; removed 21 Oct 2026. [Write-up](https://dbourdeau.github.io/cyphersolver/ranzo1528.html).
 - **25 — Marie de Médicis to Savary de Brèves, 15 Sept and 10 Nov 1610 (BnF fr. 3789; R2075/R2076)**: deciphered by Brice Dudout with the Henri IV–Brèves key, BnF fr. 3462 view 112 (not 3642); checked here, 95 of 98 glyphs supported. [Write-up](https://dbourdeau.github.io/cyphersolver/breves1610.html).

@@ -1,0 +1,50 @@
+This repository is published under different licences for its parts.
+
+1. Code (the files in src/ and tests/): MIT License (text below).
+2. Own documents and data (README.md, README.en.md, SOURCES.md, docs/, data/, calib/, second/):
+   Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+   The values in data/key.tsv are George Lasry's reconstructed key ("BNF Francais 4134", 2022), published as an image
+   on Satoshi Tomokiyo's Cryptiana (GL.htm), rewritten with sign names; the rights in that key are his.
+   calib/lasry_plain.tsv is a transcription of Lasry's published decipherment of BnF Baluze 155 f. 79; the rights in
+   that decipherment are his.
+   second/ and calib/ files named codex_* are outputs of OpenAI Codex given only images and the prompts stored next to them.
+
+These licences do not extend to the content of the historical sources or of other people's work quoted here.
+
+------------------------------------------------------------------------
+（日本語）
+このリポジトリは、部分ごとに次のライセンスで公開する。
+
+1. コード（src/ と tests/ の中のファイル）: MIT License
+2. 文書とデータの自作部分（README.md、README.en.md、SOURCES.md、docs/、data/、calib/、second/）:
+   Creative Commons Attribution 4.0 International (CC BY 4.0)
+   ただし data/key.tsv の値は、George Lasry 氏が復元した鍵（"BNF Francais 4134"、2022年。友清理士氏の Cryptiana GL.htm に
+   画像で掲載）を記号名に置き換えたもの。その鍵の権利は同氏にある。calib/lasry_plain.tsv は、同氏が公開した BnF Baluze 155
+   f. 79 の解読の書き写しで、その解読の権利は同氏にある。
+   second/ と calib/ の codex_ で始まるファイルは、画像と同じ場所に置いた依頼文だけを渡した OpenAI Codex の出力。
+
+引用した史料・他の研究の内容には、上のライセンスは及ばない。
+
+------------------------------------------------------------------------
+MIT License
+
+Copyright (c) 2026 Harumi-Matsuba
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+------------------------------------------------------------------------
