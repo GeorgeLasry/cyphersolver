@@ -69,7 +69,8 @@
   {"date": "2026-09-16", "kind": "crib", "technique": ["crib testing"], "what": "Hand anchoring of the d'Herleville second paragraph and propagation between the two letters.", "result": "worked"},
   {"date": "2026-09-16", "kind": "reading", "what": "Both letters read: 586 of 601 tokens, 167 of 179 groups.", "result": "worked"},
   {"date": "2026-09-16", "kind": "verification", "what": "d'Herleville reading matches its printed translation; Feuquières text matches Catinat's Veillane memoir of 19 Jan.", "result": "worked"},
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 586 tokens, 167 types, fr-grand-siecle order 4: reading -2.078 per letter; random keys -3.514 (z 11.0); key annealed onto shuffled ciphertext best -2.271 (mean -2.295, z 12.8); annealer on the real text -2.27. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 586 tokens, 167 types, fr-grand-siecle order 4: reading -2.078 per letter; random keys -3.514 (z 11.0); key annealed onto shuffled ciphertext best -2.271 (mean -2.295, z 12.8); annealer on the real text -2.27. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions ciphertext.txt and herleville.txt; decryptions and the English translation copied from NOTES.md to texts/, beside the group alignment reading.txt; key key_petit_chiffre_1690.tsv", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-grand-siecle", "file": "validation.tsv", "tokens": 586, "types": 167, "tokens_per_type": 3.51, "score": -2.078, "nulls": {"random keys": {"n": 200, "mean": -3.514, "sd": 0.131, "max": -3.211, "z": 11.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.295, "sd": 0.017, "max": -2.271, "z": 12.8, "p": 0.1429}}, "power": -2.27, "verdict": "pass", "notes": "claimed per-occurrence score -2.078; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.27"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -85,6 +86,31 @@
     {"who": "bazeries", "role": "prior solution", "note": "deciphered the petit chiffre despatch in 1893, never published", "date": "1893", "published": false},
     {"who": "contemporary", "role": "key or decipherment used", "note": "contemporary translation of Louvois to d'Herleville, 6 Sept 1690, printed in the 1819 Mémoires de Catinat"},
     {"who": "tomokiyo", "role": "transcription", "note": "his transcription of the ciphertext, collated (three corrections)"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "feuquieres1691",
+    "label": "Feuquières to Catinat, Pignerol, 25 Jan 1691",
+    "transcription": "ciphertext.txt",
+    "decryption": [
+     "texts/feuquieres1691_decryption.md",
+     "reading.txt"
+    ],
+    "translation": "texts/translation_en.md",
+    "summary": "Feuquières acknowledges Catinat's letter of the 24th and sets out the plan for the surprise of Veillane (Avigliana): the enemy will not defend it seriously, he cannot see how to get the eighty horse to Sant'Ambrogio, and he will attack at two points and keep the dragoons from escaping. It matches Catinat's 'Mémoire pour l'entreprise de Veillane' of 19 Jan; printed in cipher in the 1819 Mémoires de Catinat, t. II pp. 283-284."
+   },
+   {
+    "doc": "herleville1690",
+    "label": "Louvois to d'Herleville, Versailles, 6 Sept 1690 (control)",
+    "transcription": "herleville.txt",
+    "decryption": [
+     "texts/herleville1690_decryption.md",
+     "reading.txt"
+    ],
+    "translation": "texts/translation_en.md",
+    "summary": "Louvois tells d'Herleville, governor of Pignerol, that the King permits him to demand the contribution of the country of Mondovì and, if he sees fit, to exempt it and let the inhabitants raze the citadel, and awaits news of his enterprise on Villefranche. Printed in cipher with its contemporary 'traduction' in the 1819 Mémoires de Catinat, t. I pp. 140-142; the alignment of the two gave the key."
+   }
+  ],
+  "key_file": "key_petit_chiffre_1690.tsv"
  }
 }

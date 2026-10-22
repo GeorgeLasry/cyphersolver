@@ -278,7 +278,8 @@
    "what": "feedback to R9426: with 414-419 null, 23 of its 74 open nomenclator tokens become nulls (95.8% -> 96.7%) and 232 = stift is nearly forced; noted in NOTES, not yet applied to R9426's count or the site",
    "result": "partial"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3942 tokens, 43 types, de-1640s order 4: reading -2.051 per letter; random keys -5.831 (z 7.3); key annealed onto shuffled ciphertext best -3.686 (mean -3.718, z 74.5); annealer on the real text -3.353. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3942 tokens, 43 types, de-1640s order 4: reading -2.051 per letter; random keys -5.831 (z 7.3); key annealed onto shuffled ciphertext best -3.686 (mean -3.718, z 74.5); annealer on the real text -3.353. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R9426 transcription and reading; R9425 transcription, decode and reading in r9425/; key = key.txt plus the R9425 code table", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 3942, "types": 43, "tokens_per_type": 91.67, "score": -2.051, "nulls": {"random keys": {"n": 200, "mean": -5.831, "sd": 0.515, "max": -4.55, "z": 7.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.718, "sd": 0.022, "max": -3.686, "z": 74.5, "p": 0.1429}}, "power": -3.353, "verdict": "pass", "notes": "claimed per-occurrence score -2.051; polyphony 0.0; 239 unread tokens left out; annealer on the real text from random keys reached -3.353"}, 
   "method": "key recovered from ciphertext-only",
@@ -299,6 +300,26 @@
    "tokens_open": 74
   },
   "verification": ["matched control", "historical consistency", "statistical test"],
-  "notes": "Letters: 2483 of 2519 read. Nomenclator: only 248 = 'und' is established, from its own contexts. Four words (37 tokens) still do not read and three read as proper names whose bearers are not identified. R9425 (Albert's resolution of 15 Dec 1619, ff. 278-280) read 2 Oct 2026 with the key unchanged: 97.3% measured (r9425/count_r9425.py); it fixes 414/415/416/417/419 as nulls, 242 = und, 165 = Mt., 2 = Ambrosio. outcome.fraction_read still gives R9426's figure."
+  "notes": "Letters: 2483 of 2519 read. Nomenclator: only 248 = 'und' is established, from its own contexts. Four words (37 tokens) still do not read and three read as proper names whose bearers are not identified. R9425 (Albert's resolution of 15 Dec 1619, ff. 278-280) read 2 Oct 2026 with the key unchanged: 97.3% measured (r9425/count_r9425.py); it fixes 414/415/416/417/419 as nulls, 242 = und, 165 = Mt., 2 = Ambrosio. outcome.fraction_read still gives R9426's figure.",
+  "texts": [
+   {
+    "doc": "R9426",
+    "label": "R9426, Ferdinand of Bavaria to Maximilian I, Bonn, 22 Dec 1619",
+    "transcription": "transcription.txt",
+    "decryption": "reading.txt",
+    "summary": "Ferdinand of Bavaria, Elector of Cologne, writes to his brother Duke Maximilian I of Bavaria about quartering and paying the Catholic League's troops in the Rhine-Westphalian circle (Horn, Montfort, Deutz, Lintelo's and Herberstorff's companies, a year's respite for Paderborn), and argues that the common union is needed for the conservation of the Catholic religion. Six weeks after Frederick V's coronation in Prague; nomenclator groups apart from 248 = und are open."
+   },
+   {
+    "doc": "R9425",
+    "label": "R9425, Archduke Albert's resolution for Licentiate Morreus, 15 Dec 1619",
+    "transcription": "r9425/transcription.txt",
+    "decryption": [
+     "r9425/decoded.txt",
+     "r9425/reading.md"
+    ],
+    "summary": "Archduke Albert's written resolution for the League agent Licentiate Morreus: he agrees on the recovery of the kingdom of Bohemia, has done good offices with the Emperor and the King of Spain, will send troops on foot if needed but cannot grant the muster place, the regiment of foot and the 500 horse, and refers the 1000 cuirassiers to Ambrogio Spinola. Read with the R9426 key unchanged."
+   }
+  ],
+  "key_file": ["key.txt", "r9425/codes.txt"]
  }
 }
