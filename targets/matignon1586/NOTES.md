@@ -64,7 +64,7 @@ be read off the leaf. Fixed here:
 | 14r / 14v | 16 right / 17 left | Forget to Villeroy, 24 Jan 1586; 4-line ciphered postscript on 14v |
 | 15r | 17 right | the decipherment of that postscript, in clear, 3 lines |
 | 78v, 79r | 85 left, 85 right | Mayenne to the King, camp de Tonneins(?), March 1586; cipher blocks with marginal decipherment |
-| **110** | **116 right** | one leaf wholly in cipher, c. 48 lines, ending "De Bellebourg … jour de Mars 1586" |
+| **110** | **116 right** | one leaf wholly in cipher, c. 48 lines, ending "De Villeneufve Dagenoys … jour de Mars 1586" (read "De Bellebourg" until 22 Oct 2026; checked on the image) |
 | **123-124** | **129 right – 131 left** | despatch to the King: f. 123r opens in clear, then c. 140 lines of cipher over four pages |
 | **143** | **150 right** | Mayenne to the King: clear first half (Marmande, Sainte-Bazeille, Castets, the capitulation), then 22 lines of cipher |
 | **150** | **158 left** | a full page of cipher |
@@ -427,7 +427,7 @@ issues; his readings are summarised here). Credit in `profile.json` (provenance 
 | #73 | fr. 15571 f. 177r (29 lines) and **f. 177v (11 lines, new)** | the Pons–Taillebourg plan (Taillebourg's toll on the Charente, *trente mil escus* from the country) given up when **[84] = le vicomte de Turenne** took the field with guns; matches the archivist's summary on the leaf; 24 = *mais*, 27 = *nostre* |
 | #77 | **f. 154v, two blocks of 10 and 11 lines (new)** | the first figure-by-figure test of the key against a contemporary copy (f. 157r); figure splits δ = c / ∂ = s, θ = m / ɟ = s, ꝭ = x, ⊔ = q; 51 = *pas*, 47 = *tous/tout* |
 | #78 | the f. 18/19 crib completed: ff. 18r (22 lines), **18v (34), 20r (17)**; ff. 123-124 re-transcribed (36/41/41/38 lines, f. 124r-v completed) | codes **15 = quoy, 73 = oi** (syllable), **78 = le roy de Navarre**, **82 = le gouverneur de Coul[…]**, 84 = le viconte de Turenne, 44 = a stop or null (not *Sire*); code groups split into two figures in the old files (`4 9` = 49, `t 8` = 48, `8 t` = 84); ff. 123-124: Mayenne at Marmande, March 1586, no money, contributions only by garrisons, Turenne back over the Garonne |
-| #79 | f. 110 (38 lines, all) | the leaf has 38 cipher lines, not 54 (checked on canvas 116 here); it reads: Mayenne to Villeroy, Bellebourg, March 1586, on war without money and his reputation |
+| #79 | f. 110 (38 lines, all) | the leaf has 38 cipher lines, not 54 (checked on canvas 116 here); it reads: Mayenne to Villeroy, [Villeneuve-d'Agenais], March 1586, on war without money and his reputation |
 | #83 | ff. 143r-v, **150r (32 lines, new)**, 150v, 154r, 173, 196 (31/31), 201 | the repo's `f150_cipher.txt` is the **verso**, f. 150v; f. 150r (canvas 157 right, checked here) was never transcribed; splits θ = m / ϑ = s, ꝺ̄ = u, ɛ = i; codes **46 = rien, 61 = beaucoup**, 34 = *ainsi*; eleven code groups the old files had split into two figures; five misreadings of the copies f. 155r and f. 157r and seven of f. 156r corrected |
 
 **Validated here (22 Oct 2026), `brackx_validate.py` -> `brackx_validate.json`.** His transcriptions and keys, decoded
@@ -492,7 +492,8 @@ where there is one). Per document 0.51 (f. 123r) to 0.77 (f. 201).
 
 ## Remaining gaps
 
-- nine leaves decoded, not read: ff. 110, 123r, 123v, 124r, 124v, 173, 196, 201, fr. 15571 f. 177r-v (11,422 tokens) - blocker: not-attempted; holes in most sentences (5-24% of sentences clean, `docs/_check_reading.py`; George Lasry, 22 Oct 2026). Workable: build sentences leaf by leaf, check each break on the image and the key, re-decode, translate; ff. 196/201 first
+- six pages decoded, not read: ff. 110, 123r, 123v, 124r, 124v, fr. 15571 f. 177r-v - blocker: not-attempted; holes in most sentences (George Lasry, 22 Oct 2026). ff. 173 and 196/201 were read the same day by building sentences against the images (texts/reading_f173.md, reading_f196_201.md); f. 110 and ff. 123r-v are being read the same way; then ff. 124r-v and f. 177
+- f. 196v (canvas 204 left): the continuation of the ff. 196/201 despatch, about 45 cipher lines signed in clear "Du camp devant Monségur ce ... de May 1586"; never transcribed - blocker: not-attempted
 - f. 143v after "où il eust", where the f. 155r copy breaks off - blocker: not-attempted; decode only, to be read as for the uncopied leaves
 - code groups 16, 19, 23, 45, 64, 101, 102, 103, `me`, 9, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (64 = *un* and `me` = *mesme* fit, not adopted; 9 is two different words against the copies)
 - the copy of f. 20r (rest of f. 19v, about 11 lines) - blocker: open-codes; read by Brackx but not given in #78, so his 86.7% for f. 20r is unchecked here
