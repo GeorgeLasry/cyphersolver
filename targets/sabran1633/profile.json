@@ -84,7 +84,7 @@
     "partial": false
    },
    "length": {
-    "tokens": 1764,
+    "tokens": 1781,
     "distinct": 87,
     "unit": "symbols",
     "measured": true,
@@ -92,7 +92,38 @@
    },
    "transcription": {
     "by": "human (project)",
-    "source": "George Lasry, CTTS, reviewed with Claude Opus 5.5 and Codex",
+    "source": "George Lasry, CTTS, reviewed with Claude Opus 5.5 and Codex; f. 218r marginal cipher (17 signs) added by Claude Opus 5.5 from the image, 22 Oct 2026",
+    "image_quality": "good"
+   }
+  },
+  {
+   "id": "baluze156-f157",
+   "read": "not read",
+   "shelfmark": "BnF Baluze 156 f. 157r (Gallica btv1b9001409q, view 161): 'Coppie du 9e febvrier 1636' to 'Monseigneur'",
+   "date": "9 Feb 1636",
+   "year": 1636,
+   "country": "Italy",
+   "route": "Sabran's household at Genoa (written after Sabran had left for court) -> 'Monseigneur' (unnamed)",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "copy; no decipherment on the leaf (ff. 157v-158 clear)",
+    "partial": false
+   },
+   "length": {
+    "tokens": 136,
+    "distinct": 33,
+    "unit": "symbols",
+    "measured": true,
+    "file": "baluze156/f157r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude Opus 5.5 from the BnF IIIF image, 22 Oct 2026 (sign shapes; doubled-stroke signs nn, tt, ll, ff kept apart)",
     "image_quality": "good"
    }
   }
@@ -306,6 +337,80 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 2853 tokens, 52 types, fr-1600-letters order 4: reading -2.125 per letter; random keys -5.728 (z 7.8); key annealed onto shuffled ciphertext best -3.239 (mean -3.255, z 94.3); annealer on the real text -2.916. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "technique": [
+    "other"
+   ],
+   "what": "Gallica scripted IIIF refused (403); the same images fetched through openapi.bnf.fr IIIF. Mapped Gallica views to folios: fr. 4134 one page per view (f. 51r = view 109); fr. 4135 one opening per view, view v = f.(v-9)v | f.(v-8)r; Baluze 156 f. 157r = view 161.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "The eight leaves listed as not attempted, read on the image. fr. 4134 f. 51r-v is all clear text: the letter 'du 2e Juillet 1633' (Lasry's letter 4, dated [1 Jul]) starts on f. 51r; its cipher is on f. 52, already imaged. Tomokiyo's fr. 4135 folios name Gallica openings: 216v|217r (f. 217r clear: Sabran to the duc de Crequy, 7 Oct 1635), 226v|227r (226v clear), 227v|228r (227v blank below the letter end; its faint cipher block is the show-through of f. 227r, mirror image matches '... 8 59 43 45'; 228r clear), 231v|232r (231v clear), 239v|240r (both clear), 242v|243r (243r clear: to Crequy, 10 Dec 1635); f. 215v also clear. Every cipher passage on these openings is in Lasry's images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Lasry's image '215v' is f. 216v, not f. 215v: its text ('incommodite que l'on souffrira par l'impuissance ...') is the left page of the 216v|217r opening, and real f. 215v is clear. Letter 11 therefore runs f. 216r (images 215a, 215b) -> f. 216v ('215v') and ends there with the signature and a summary note; the 'unimaged end on f. 216v' of his notes is the image he called 215v.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "New cipher found: two lines (17 signs) in the left margin of fr. 4135 f. 218r at the '+' after 'la raison que le Roy a d'avoir'; Lasry's image 218 records only '[marg.: Cll]'. With the values of Lasry's key sheet it reads '[c]a d'avoir / [s]antimant', the cipher of the clear words at that place ('a d'avoir ... ressentiment'); first sign of each line doubtful.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Baluze 156 f. 157r, 'Coppie du 9e febvrier 1636', written at Genoa after Sabran had left for court: Duke Doria at the Lerins islands gathering the Spanish galleys of Naples and Sicily for a design on Marseille, learnt from a Gascon. 15 cipher runs transcribed (136 signs, 33 types including codes 12, 36, 94) to baluze156/f157r.txt; ff. 157v-158 clear.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "hypothesis",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Lasry's key on Baluze 156 f. 157r by sign shape: run 2 ('jay envoye [n z y 10 p ll g 7 4 t o e] a Mgr le Mareschal') gives 'eroobliag?cm'; no run forms French. Tomokiyo's Servien-Sabran key of 1632 (also lower-case-letter signs) gives no French either (run 12 'ag?la?agnq'). The leaf is in another letter table.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Cribs on Baluze 156 f. 157r: 'munitions [g n 36 6 g tt g n b u]' = 'en GALERES de genes' if 36 = galeres as in Lasry's nomenclator (g=e n=n 6=d tt=g b=e u=s); 'faire [d o 4 n g ff] audit' = 'donner' (d=d o=o 4=n ff=r), consistent with the first. g is the commonest sign (21 of 136), as e should be. Nothing else confirmed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "baluze156/solve.py: homophonic anneal of the 15 runs scored inside their clear context (fr-1600-letters, order 5, letters only), 6 restarts free and 6 with the ten crib values fixed: best keys collapse to 'iiii' / 'eneeses' strings, no run reads. 136 signs over 28 letter types (4.9 per type) is too little for a ciphertext-only homophonic solve.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -348,9 +453,9 @@
   ],
   "class": "read in part",
   "key": "recovered",
-  "fraction_read": 0.9997,
+  "fraction_read": 0.9609,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode.py --counts: 3,352 of 3,353 cipher signs in the 43 images carry a value (code 46 unknown); 212 code readings are tentative. Word cover (coherence.py) 83.7% against a 91.6% ceiling on Lasry's fully deciphered 1631 letter. Leaves of the same key not among the images are open (see gaps).",
+  "fraction_read_source": "decode.py --counts: 3,352 of 3,353 cipher signs in Lasry's 43 images carry a value (code 46 unknown; 212 code readings tentative), plus the 17-sign f. 218r margin (baluze156/fr4135_f218r_margin.txt); Baluze 156 f. 157r, 136 signs in another key, unread: 3,369 of 3,506 = 0.9609. The other seven listed leaves have no cipher of their own (22 Oct 2026). Word cover (coherence.py) 83.7% against a 91.6% ceiling on the 1631 letter.",
   "grades": "unknown",
   "codes_open": {
    "open": 1,
@@ -405,9 +510,14 @@
     "detail": "signs reviewed against the images by the contributor; probably clerks' slips in the letter-book copies"
    },
    {
-    "item": "leaves of the same key not among the images: fr. 4134 f. 51; fr. 4135 ff. 217, 226v, 227v, 231v, 239v, 243; Baluze 156 f. 157 (1636)",
-    "blocker": "not-attempted",
-    "detail": "listed by Tomokiyo; on Gallica; workable with the key"
+    "item": "Baluze 156 f. 157r (9 Feb 1636 copy): 15 cipher runs, 136 signs",
+    "blocker": "too-short",
+    "detail": "not Lasry's letter table nor Tomokiyo's Servien key; two cribs (en galeres de genes, donner) give 10 values; the anneal is degenerate at 4.9 signs per type; needs a sibling in the same key"
+   },
+   {
+    "item": "fr. 4135 f. 218r margin, first sign of each line ('[c]a d'avoir / [s]antimant')",
+    "blocker": "illegible",
+    "detail": "the two signs sit against the gutter and do not match a sign of the key sheet"
    },
    {
     "item": "the originals as received (Archives diplomatiques, Correspondance politique, Genes)",
@@ -428,6 +538,24 @@
     "decryption": "lasry2022/ctts/decryption/all.txt",
     "translation": "lasry2022/CONTRIBUTION.md",
     "summary": "The King keeps the Prince of Monaco in play without a treaty (1631); a sergeant-major offers Sabran the castles of Savona, a Savoyard plot that is discovered (1633); Genoa helps the Spanish fleet while France fights for Valenza (1635)."
+   },
+   {
+    "doc": [
+     "baluze156-f157"
+    ],
+    "label": "Baluze 156 f. 157r, copy of 9 Feb 1636 (unread)",
+    "transcription": "baluze156/f157r.txt",
+    "summary": "Duke Doria, at the Lerins islands, gathers the Spanish galleys for a design on Marseille; a Gascon who knows the plan is sent to the marechal de Vitry. The cipher runs (names and the means) are in a key not yet recovered.",
+    "decryption": "baluze156/f157r_partial.txt"
+   },
+   {
+    "doc": [
+     "fr4135"
+    ],
+    "label": "fr. 4135 f. 218r, marginal cipher (17 signs)",
+    "transcription": "baluze156/fr4135_f218r_margin.txt",
+    "decryption": "baluze156/fr4135_f218r_margin.txt",
+    "summary": "Two marginal cipher lines: '[c]a d'avoir / [s]antimant', the words of the clear text at the '+' mark."
    }
   ],
   "key_file": "lasry2022/ctts/key.txt"
