@@ -115,6 +115,12 @@
    "kind": "verification",
    "what": "Re-read the scan (corrected renvoy, positiever); checked consecutive folio stamps 294/295 and that ~90 words fit ~110 code groups.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contemporary clear copy and its translation, copied from NOTES.md to texts/; the ~110 code groups were never transcribed (project work)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -130,6 +136,9 @@
   "notes": "Plaintext from the contemporary clear copy; the code was not decoded group by group.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "ministry's clear copy (fol. 295, N. 16), misfiled as image 3 of DECODE R1946"}
+  ],
+  "texts": [
+   {"doc": "R1944", "label": "R1944, Etienne Bourdeaux, Berlin, 31 Jan 1801 (clear copy, no. 16)", "decryption": "texts/R1944_decryption.md", "translation": "texts/R1944_translation.md", "summary": "The Dutch chargé d'affaires in Berlin reports that Rosenkrantz does not know why he was dismissed and supposes his cipher was taken and copied by a servant; Lusi says more definitely that the desk holding his cipher was forced open, which is why Schuer was to be sent to Petersburg with a new cipher. So the letter, itself in cipher, reports a compromised codebook."}
   ]
  }
 }

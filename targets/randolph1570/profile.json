@@ -70,7 +70,8 @@
   {"kind": "solver", "technique": ["simulated annealing"], "what": "Unconstrained homophonic anneal (en-1640s, word divisions): produced 'murderers and traitors', 'regent', 'whome ... conscience they thinke them selues ... unto'.", "result": "partial"},
   {"kind": "solver", "technique": ["simulated annealing", "crib testing"], "what": "Anneal with crib words pinned to fill the ~25 open words: did not converge (merged sign classes).", "result": "failed"},
   {"kind": "sibling key", "what": "Swept DECODE records of the same volume: R4932 (f. 278) is the contemporary decipherment of f. 277.", "result": "worked"},
-  {"kind": "reading", "what": "Transcribed the f. 278 glosses and checked them against the f. 277 cipher; all five runs read, three gloss words doubtful.", "result": "worked"}
+  {"kind": "reading", "what": "Transcribed the f. 278 glosses and checked them against the f. 277 cipher; all five runs read, three gloss words doubtful.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): token transcription of the cipher runs (transcription.txt) and the reading from the contemporary decipherment f. 278, copied from NOTES.md to texts/R4931_decryption.md", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -83,6 +84,9 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment on the next leaf, f. 278 (DECODE R4932)"},
     {"who": "boyd", "role": "key or decipherment used", "note": "CSP Scotland iii no. 339 abstract of Sussex's clear copy, used as the crib that read ~70% before f. 278 was found", "date": "1903", "source": "Boyd, Calendar of State Papers, Scotland iii (1903) no. 339"}
+  ],
+  "texts": [
+   {"doc": "R4931", "label": "R4931, Cotton Caligula C II f. 277, Edinburgh, 5 July 1570 (decipherment f. 278, DECODE R4932)", "transcription": "transcription.txt", "decryption": "texts/R4931_decryption.md", "summary": "Thomas Randolph to the Earl of Sussex from Edinburgh: the Scottish Queen's party have little confidence in Elizabeth, 'that so ofte changeth her course', and stayed the making of a regent against their will; Randolph has spoken with the Earl of Morton, asks that the soldiers be kept in pay until the Convention ends, and reports that Grange does not look for the Scottish Queen's return. Deciphered at the time on f. 278; abstracted in CSP Scotland iii (1903) no. 339."}
   ]
  }
 }

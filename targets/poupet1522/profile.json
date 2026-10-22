@@ -64,7 +64,8 @@
   {"date": "2026-09-21", "kind": "literature search", "what": "Web and archive.org search for a printed edition (Gachard 1859 Charles-Quint/Adrien VI).", "result": "failed"},
   {"date": "2026-09-21", "kind": "reading", "what": "Identified images 9-11 as a contemporary decipherment keyed A-E to the five marked cipher passages; letter is French, dated Vitoria 28 May 1522, not Spanish 1 Jan.", "result": "worked"},
   {"date": "2026-09-21", "kind": "verification", "what": "Aligned the first line of passage A with the decipherment: sign counts fit combien/que/je, e homophonic.", "result": "worked"},
-  {"date": "2026-09-21", "kind": "reading", "what": "Transcribed decipherment sections A and b.", "result": "worked"}
+  {"date": "2026-09-21", "kind": "reading", "what": "Transcribed decipherment sections A and b.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contemporary decipherment (39/2) as transcribed for sections A and b (reading.md); sections C, D and E of the decipherment are only summarised in NOTES.md, and the cipher (~1,500 signs) was never transcribed (project work)", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -77,6 +78,9 @@
   "notes": "Read at the time; key not rebuilt.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "1522 decipherment bound in as MSS/20212/39/2, with interlinear glosses"}
+  ],
+  "texts": [
+   {"doc": "R1187", "label": "R1187, BNE MSS/20212/39/1-2, Vitoria, 28 May 1522 (contemporary decipherment 39/2, sections A and b)", "decryption": "reading.md", "summary": "Charles de Poupet de La Chaulx, Charles V's envoy to Pope Adrian VI, writes in French from Vitoria: however much Adrian loves the Emperor, once in Rome he will be worked on from every side; the Pope's departure is delayed by plague at Barcelona and Seville and waits on the galleys of Naples. Further passages concern money and the Cortes, Madame Catherine and the King of Portugal, and news from France, the Swiss and England. Deciphered at the time; the decipherment is bound in as 39/2."}
   ]
  }
 }

@@ -90,6 +90,12 @@
    "kind": "literature search",
    "what": "Fetched Bergenroth CSP Spain ii December 1522 (pp. 510-519) and grepped Salazar A. 26: no. 510 = ff. 371-377, Lope Hurtado to the Emperor, 23 Dec 1522, 'Autograph in cipher. Contemporary deciphering.'",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): only Bergenroth's 1866 calendar abstract (csp_510.txt); the contemporary decipherment is at the RAH, not imaged, and the cipher (about 11 pages) was never transcribed (needs physical access / project work)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -104,6 +110,9 @@
   "credits": [
     {"who": "bergenroth", "role": "key or decipherment used", "note": "CSP Spain ii no. 510 abstracts the letter from its contemporary decipherment; content taken from it, cipher not re-read", "date": "1866", "source": "G. A. Bergenroth, Calendar of State Papers, Spain, vol. 2 (1866), no. 510"},
     {"who": "contemporary", "role": "prior solution", "note": "contemporary deciphering in RAH Salazar A-26 (not imaged on DECODE), source of Bergenroth's abstract"}
+  ],
+  "texts": [
+   {"doc": "R9658", "label": "R9658, RAH 9/26 ff. 371-376, Lope Hurtado de Mendoza, Rome, 23 Dec 1522 (CSP Spain ii no. 510, calendared from the contemporary decipherment)", "decryption": "csp_510.txt", "summary": "Lope Hurtado de Mendoza to Charles V from Rome: the Pope will not enter a league with the Emperor and the King of England while he hopes for a general peace; the Bishop of Veroli is in Rome with the Swiss ambassadors, who ask 36,000 ducats, to be shared by the Apostolic See, the Emperor and the Duke of Milan. Bergenroth (1866) calendared it from the contemporary decipherment, which is not imaged on DECODE."}
   ]
  }
 }

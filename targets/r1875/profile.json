@@ -117,6 +117,12 @@
    "kind": "reading",
    "what": "Identified the interlinear text of p. 1 and pp. 3-4 as the chancery decipherment (catch-words 'dell'Ecc.mo Senato'; p. 4 ends 'Sono per ogni conto', resumed in clear on p. 5); transcribed it in full.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contemporary decipherment (decipherment.txt) and its ciphered portion alone (plain_ciphered.txt); the digit cipher was never transcribed (project work)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -143,6 +149,9 @@
   "notes": "Read at the time; sender, recipient and content identified; key not rebuilt.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "chancery decipherment written on the despatch (interlinear p. 1, pp. 3-4)"}
+  ],
+  "texts": [
+   {"doc": "R1875", "label": "R1875, Sebastiano Foscarini, Escorial, 13 Oct 1761 (the chancery's decipherment written on the despatch)", "decryption": ["decipherment.txt", "plain_ciphered.txt"], "summary": "Sebastiano Foscarini, Venetian ambassador in Spain, to the Doge and Senate: the court has moved to the Escorial; the broken-off peace talks between London and Versailles feed conjecture in Madrid, some holding that Spain can no longer look on while France is beaten in America, others that Charles III will stay neutral; the first foresee a union with 'another court', the still secret Third Family Compact with France of 15 August 1761."}
   ]
  }
 }

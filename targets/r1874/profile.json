@@ -69,7 +69,8 @@
   {"date": "2026-09-21", "kind": "literature search", "what": "Dated the letter from clear text (La Rochelle, Piet Heyn, Spinola in Madrid); matched CSP Venice 21 no. 515, Mocenigo, Madrid 26 Oct 1628.", "result": "worked"},
   {"date": "2026-09-21", "kind": "reading", "what": "Identified images 8955-8959 as the contemporary decipherment (paragraph numbers 6-9; Cottington passage of CSP 515 on 8958).", "result": "worked"},
   {"date": "2026-09-21", "kind": "verification", "what": "Paragraph marks 6499 split the cipher into paragraphs 6/7 at ~2 letters per group; 'conte di Olivares' group run at 26/71/92% vs 25/70/91% of the plaintext.", "result": "worked"},
-  {"date": "2026-09-21", "kind": "solver", "technique": ["EM alignment", "plaintext matching"], "what": "Hard-EM alignment of cipher groups to the decipherment, with Olivares anchors, to rebuild the key.", "result": "failed"}
+  {"date": "2026-09-21", "kind": "solver", "technique": ["EM alignment", "plaintext matching"], "what": "Hard-EM alignment of cipher groups to the decipherment, with Olivares anchors, to rebuild the key.", "result": "failed"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): DECODE's group transcription (tx/groups_decode.txt) and the contemporary decipherment transcribed in full (tx/decipherment.txt; paragraphs 6-7 re-read in tx/para6-7.txt)", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -82,6 +83,9 @@
   "notes": "Read at the time; sender and date identified; key not rebuilt.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Venetian chancery decipherment imaged in the same record (images 8955-8959)"}
+  ],
+  "texts": [
+   {"doc": "R1874", "label": "R1874, Alvise Mocenigo, Madrid, 26 Oct 1628 (the chancery's decipherment, images 8955-8959)", "transcription": "tx/groups_decode.txt", "decryption": ["tx/decipherment.txt", "tx/para6-7.txt"], "summary": "Alvise Mocenigo, Venetian ambassador in Spain, to the Doge and Senate: the English repulsed at La Rochelle, Spinola and Leganés, the Duke of Alcalá's departure for Naples; in cipher, Cottington's planned journey to Spain, dropped since Buckingham's death, Endymion Porter waiting for orders, and Rubens negotiating a truce with the Dutch (CSP Venice 21 no. 515). The record holds the cipher and the contemporary decipherment."}
   ]
  }
 }
