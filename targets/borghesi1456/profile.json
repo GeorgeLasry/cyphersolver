@@ -119,7 +119,8 @@
    "kind": "verification",
    "what": "Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no04.txt + transcripts/no04_reading.txt; key keys/no04_key.txt", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "verdict": "not applicable", "notes": "144 cipher signs in 15 short runs, most of them a few letters long, with 9 Latin code words: too few read tokens per sign type for the shuffled-text test, and the key is attested by the alphabet fragment written on the letter"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -159,6 +160,10 @@
     "source": "Senatore 2009"
    }
   ],
-  "notes": "Galgano Borghesi at Naples to Leonardo Benvoglienti, 12 May 1456. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only."
+  "notes": "Galgano Borghesi at Naples to Leonardo Benvoglienti, 12 May 1456. Split on 14 Oct 2026 from siena1421 under the one-key rule (George Lasry, 14 Oct 2026): each letter of the bundle has its own key; this entry is no. 4 only.",
+  "texts": [
+   {"doc": "no04", "label": "Naples, 12 May 1456, ASSi Concistoro 2308 fasc. 2 no. 4 (DECODE R4793)", "transcription": "transcripts/no04.txt", "decryption": "transcripts/no04_reading.txt", "summary": "Galgano Borghesi, orator at Naples, writes to Leonardo Benvoglienti that at his urging King Alfonso wanted the settlement to include the promises made when Lucca was besieged by the Florentines, and that the Pope, the Florentine clergy and the cardinals are to contribute against the Turk. The sense is tentative: 114 of the 144 cipher signs are read."}
+  ],
+  "key_file": "keys/no04_key.txt"
  }
 }

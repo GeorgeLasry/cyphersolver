@@ -127,7 +127,8 @@
    "kind": "transcription",
    "what": "Second pass on every line at 4x: superscript belongs to the preceding sign, bare ♀ = r, barred g = f, dotted = null; lines 5-11 and the cancelled line read ('Elvetii', 'frumento', 'harriano', 'quante volte').",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption reading.txt (deciphered with Luo's Cifrario 38); only line 1 has a sign transcription, copied from NOTES.md to texts/R9966_transcription.txt; lines 2-11 were never transcribed sign by sign.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -147,6 +148,9 @@
     {"who": "luo", "role": "key or decipherment used", "note": "Cifrario 38 (2021 thesis), read the letter unchanged", "date": "2021", "source": "Luo, El lenguaje cifrado de Isabel de Portugal (1530-1539), PhD thesis, Universitat de València"},
     {"who": "tomokiyo", "role": "pointer", "note": "named Lu.38 as the key of R9966 on cryptiana", "source": "cryptiana, Spanish ciphers during the reign of Charles V (Luo update)"},
     {"who": "tomokiyo", "role": "prior solution", "note": "first four lines read (two words corrected here)"}
+  ],
+  "texts": [
+   {"doc": "R9966", "label": "R9966, Milan 14 Nov 1537", "transcription": "texts/R9966_transcription.txt", "decryption": "reading.txt", "summary": "Cardinal Caracciolo, governor at Milan, to Charles V: Marno(l), the imperial agent with the Swiss, was to treat with the Grisons only if they would come to terms as the Swiss had; Caracciolo would give them the duty-free grain export gratis under fitting articles, and Marno now sees the malice and perfidy of the Swiss and their ministers."}
   ]
  }
 }
