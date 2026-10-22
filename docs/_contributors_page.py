@@ -4,13 +4,15 @@ typed by hand except the prose.
 
 contributors.html: who has contributed and how (a table with a count per kind of contribution, each count a link
 into writeups.html filtered to that person), one card per contributor with every target they are credited on, the
-project's own share, the scholarship and archives the ledger builds on, and the readings that wait for an
-independent check (the verification queue).
+project's own share, the scholarship and archives the ledger builds on, the readings that wait for an
+independent check (the verification queue), and the partial readings someone could take further, each with the kinds
+of gap its NOTES.md lists as open.
 """
-import html, collections, datetime
+import html, collections, datetime, re
 import _credits as CR
 import _methods as M
 from _check_writeup import FAMOUS  # no profile data: kept out of every count here
+import _check_writeup as CW
 
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 e = lambda s: html.escape(str(s), quote=True)
@@ -21,6 +23,10 @@ COLUMNS = [('Solutions', ('solution', 'new cipher with solution')), ('New cipher
            ('Transcriptions, identifications', ('transcription', 'identification')), ('Pointers', ('pointer',)),
            ('Keys used', ('key or decipherment used',)), ('Earlier solutions', ('prior solution',))]
 QUEUE_METHODS = (M.CT, M.EXT_PT, M.ADJ_PT, M.EXT_KEY)
+# NOTES.md "## Remaining gaps" blocker types (_check_writeup.BLOCKERS), as a contributor would put them
+GAP_LABEL = {'open-codes': 'code groups open', 'illegible': 'passages hard to read', 'no-key-material': 'no key known',
+             'too-short': 'too short to break', 'needs-physical-access': 'needs the archive', 'not-attempted': 'not yet tried',
+             'left-open': 'left open'}
 
 
 def target_link(folder, pages_by_folder, profiles):
@@ -128,6 +134,18 @@ def queue(pages, profiles):
     return sorted(out, key=lambda p: (M.METHODS.index(p['method']), p['extent'] != 'complete', p['y']))
 
 
+def further(pages):
+    """Write-ups read in part, each with the blocker types its NOTES.md lists under Remaining gaps, most workable first."""
+    out = []
+    for p in pages:
+        if p.get('extent') != 'partial' or not p.get('folders'): continue
+        gaps = collections.Counter(m.lower() for f in p['folders'] if f not in FAMOUS
+                                   for m in re.findall(r'^\s*[-*].*?blocker:\s*([a-z-]+)', CW.section(CW.read(CW.tdir(f) / 'NOTES.md'), 'Remaining gaps') or '', re.M | re.I))
+        out.append((p, gaps))
+    workable = lambda g: -(g['open-codes'] + g['not-attempted'])
+    return sorted(out, key=lambda pg: (workable(pg[1]) == 0, pg[0]['y']))
+
+
 def page(pages, profiles, reg, dates, version, today):
     t = CR.tally(profiles, reg)
     pages_by_folder = {f: p for p in pages for f in p.get('folders', [])}
@@ -148,6 +166,7 @@ def page(pages, profiles, reg, dates, version, today):
     builds = sorted([(w, ent) for w, ent in t.items() if reg[w]['kind'] in ('historical', 'archive', 'database')],
                     key=lambda we: -len(we[1]['targets']))
     q = queue(pages, profiles)
+    fq = further(pages)
     # by month: direct contributions from outside, dated by the credit or the page
     months = collections.Counter()
     for w, ent in ranked:
@@ -164,6 +183,11 @@ def page(pages, profiles, reg, dates, version, today):
     queue_rows = ''.join(
         f'<li><a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span><span class="t">{p["title"]}</span>'
         f'<span class="yr">{p["year"]}</span></a></li>' for p in q)
+    further_rows = ''.join(
+        f'<li><a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span><span class="t">{p["title"]}</span>'
+        f'<span class="yr">{p["year"]}</span>'
+        + (f'<span class="b">Open: {", ".join(GAP_LABEL.get(b, b) + (f" ({n})" if n > 1 else "") for b, n in g.most_common())}</span>' if g else '')
+        + '</a></li>' for p, g in fq)
     n_verified = sum(CR.provenance_of(p) == 'contributed' for p in real.values())
     credited = {f for w, ent in ranked for f in ent['targets']}
     n_overlap = len(credited & set(own))
@@ -189,8 +213,8 @@ def page(pages, profiles, reg, dates, version, today):
 <section class="hero">
   <p class="kicker">Contributors &middot; {n_people} people &middot; {n_credits} credits</p>
   <h1>Contributors</h1>
-  <p class="sub">The ledger is a shared project. Anyone can add to it at four levels: a solution to a cipher already listed, a new unsolved cipher, a new cipher with its solution, or an independent check of a reading already here. Every write-up names who contributed and whose keys or decipherments it used; this page adds them up.</p>
-  <div class="jump"><a href="contribute.html">How to contribute</a><a href="#who">Who</a><a href="#people">Contributions in detail</a><a href="#builds-on">What the work builds on</a><a href="#verify">Waiting for a check</a></div>
+  <p class="sub">The ledger is a shared project. Anyone can add to it: a solution to a cipher already listed, a reading left partial taken further, a new unsolved cipher, a new cipher with its solution, or an independent check of a reading already here. Every write-up names who contributed and whose keys or decipherments it used; this page adds them up.</p>
+  <div class="jump"><a href="contribute.html">How to contribute</a><a href="#who">Who</a><a href="#people">Contributions in detail</a><a href="#builds-on">What the work builds on</a><a href="#verify">Waiting for a check</a><a href="#further">Readings to take further</a></div>
   <p class="meta">Daniel Bourdeau and contributors</p>
 </section>
 
@@ -221,6 +245,12 @@ def page(pages, profiles, reg, dates, version, today):
 {queue_rows}
 </ul>
 
+<h2 id="further"><span class="num">06</span> Readings to take further</h2>
+<p>{len(fq)} write-ups are read in part. Each lists what is still open in its notes: code groups with no value yet, passages hard to read on the images, letters for which no key is known, pieces that need the original in the archive. Any of these can be pushed towards a fuller reading: a value for a code group, a better reading of a line, a key found in another volume, a look at the manuscript. Those with open code groups come first, as the most workable from the images alone; <a href="contribute.html#further">how to send it</a>. The same list, with the summaries, is <a href="writeups.html#extent=partial">on the write-ups page</a>.</p>
+<ul class="list wl cqueue">
+{further_rows}
+</ul>
+
 </main>
 <!-- site:footer -->
 </body>
@@ -240,6 +270,7 @@ def strip(pages, profiles, reg, n=8):
         f'<li><a href="contributors.html#{c["id"]}"><b>{e(c["name"])}</b><span>project lead &middot; {n_own} targets</span></a></li>'
         for c in leads(reg)) + chips
     q = len(queue(pages, profiles))
+    fn = sum(p.get('extent') == 'partial' and bool(p.get('folders')) for p in pages)
     return f'''<!-- contrib:start -->
 <section class="contribstrip" id="contributors" aria-labelledby="cs-h">
 <h2 id="cs-h"><span class="num">&#9993;</span> A shared ledger</h2>
@@ -247,7 +278,8 @@ def strip(pages, profiles, reg, n=8):
 <div class="cs-call">
 <p>Anyone can add to this ledger. Contributions are credited on the write-up and on the <a href="contributors.html">contributors page</a>:</p>
 <ul class="cs-kinds">
-<li><b>A solution</b> to a cipher already listed, in the catalogue or in a write-up left partial.</li>
+<li><b>A solution</b> to a cipher already listed in the catalogue.</li>
+<li><b>A fuller reading</b> of one left partial: {fn} write-ups have <a href="contributors.html#further">open gaps</a> to work on.</li>
 <li><b>A new unsolved cipher</b>, with its shelfmark and images.</li>
 <li><b>A new cipher with its solution.</b></li>
 <li><b>A verification</b> of a reading already here: {q} are waiting for an independent check.</li>

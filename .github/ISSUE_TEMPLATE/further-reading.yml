@@ -1,0 +1,33 @@
+name: Fuller reading
+description: A step towards a fuller reading of a write-up read in part (see contributors.html#further).
+title: "Fuller reading: <write-up page>"
+labels: [contribution, fuller reading]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Write-up
+      placeholder: "https://dbourdeau.github.io/cyphersolver/<page>.html"
+    validations: {required: true}
+  - type: textarea
+    id: gap
+    attributes:
+      label: The gap you worked on
+      description: The line from the target's Remaining gaps, or the code group, folio and line.
+    validations: {required: true}
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you propose
+      description: A value for a code group, a corrected key value, a new reading of a passage, a key or clear copy found elsewhere, a reading from the original.
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Every place the value occurs and how it reads there, the images or sources you worked from, and anything that still does not fit.
+    validations: {required: true}
+  - type: input
+    id: credit
+    attributes:
+      label: How to credit you

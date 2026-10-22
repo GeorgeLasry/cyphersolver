@@ -5,11 +5,12 @@ This repository is a shared ledger of historical ciphers: what has been decipher
 [contribute.html](https://dbourdeau.github.io/cyphersolver/contribute.html), and everyone credited so far is on
 [contributors.html](https://dbourdeau.github.io/cyphersolver/contributors.html).
 
-## Four kinds of contribution
+## Five kinds of contribution
 
 | Kind | What to send | Issue form |
 |---|---|---|
 | A solution to a cipher in the ledger | target, documents covered, key, decipherment against the ciphertext, how the key was obtained, prior publication | [Solution](https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml) |
+| A fuller reading of a partial one | the write-up and the gap (from its NOTES.md `## Remaining gaps` or [contributors.html#further](https://dbourdeau.github.io/cyphersolver/contributors.html#further)), the value or reading you propose, the evidence for it | [Fuller reading](https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml) |
 | A new unsolved cipher | archive, shelfmark, folio, image link, date and correspondents if known, what you know of its status | [New cipher](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher.yml) |
 | A new cipher with its solution | both of the above; say whether an unpublished result may be shown in full | [New cipher with solution](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher-solved.yml) |
 | A verification of a reading here | the passage and images you worked from, where your reading agrees and where it does not | [Verification](https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml) |
