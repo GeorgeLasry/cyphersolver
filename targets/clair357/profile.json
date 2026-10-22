@@ -121,7 +121,8 @@
    "kind": "reading",
    "what": "Transcribed f. 168r and the interlinear glosses as the text of the letter.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption (f. 168r clear copy + interlinear glosses) and key table copied from NOTES.md to texts/; no full cipher transcription exists, so texts/f167_transcription.txt holds only the sample figure runs from NOTES.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -138,6 +139,10 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy f. 168r and interlinear decipherment on f. 167r-v, bound with the letter"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial key (henryiii.htm, Anonymous Figure Cipher 1586), checked and extended here", "source": "cryptiana henryiii.htm"}
-  ]
+  ],
+  "texts": [
+   {"doc": "f167", "label": "ff. 167-168, 28 Oct 1586", "transcription": "texts/f167_transcription.txt", "decryption": "texts/f167_decryption.md", "summary": "A Catholic nobleman of the Angoumois or Saintonge writes on 28 October 1586, probably to Henri, duc de Guise: he has been ill for two months, reports Catherine de Médicis's negotiation with Navarre, says Navarre's Catholic confidant Fumé, vice-admiral of Guyenne, has repeatedly proposed a reconciliation between Navarre and the addressee, and mentions the Queen of England and Villeroy's letter about satisfying Mayenne."}
+  ],
+  "key_file": "texts/key.md"
  }
 }
