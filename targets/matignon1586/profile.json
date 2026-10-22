@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "f143r",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "BnF fr. 15572 f. 143r (Gallica btv1b9061879d, canvas 150 right)",
    "date": "1586",
    "year": 1586,
@@ -16,10 +16,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "printed edition"
+     "separate folio"
     ],
-    "source": "Tomokiyo, cryptiana (online), 'Henry III's Cipher with Ambassadors': a short opening of the recto only; no decipherment on the leaf; f. 144 checked and is not a clear copy.",
-    "partial": true
+    "source": "f. 155r: Contemporary clear copies in another (secretary's) hand, bound after the despatches as ff. 155-157 (canvases 162 right-164 right): f. 155r-v copies f. 143r-v, ff. 155v-156r copy the ff. 149v-150 cipher, f. 157 copies f. 154r-v; endorsed 'Mr du Mayne' and 'Mr Forget de ... avril 1586'. Found by Michael Brackx (issue #70, 21 Oct 2026); checked on the images here the same day. Transcribed by him (AI-assisted, unchecked by a second person).",
+    "partial": false
    },
    "length": {
     "tokens": 724,
@@ -36,7 +36,7 @@
   },
   {
    "id": "f143v",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "BnF fr. 15572 f. 143v (canvas 151 left)",
    "date": "1586",
    "year": 1586,
@@ -47,9 +47,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "No decipherment; Tomokiyo's opening covers the recto only; f. 144 is not a clear copy."
+    "source": "f. 155r-v: Contemporary clear copies in another (secretary's) hand, bound after the despatches as ff. 155-157 (canvases 162 right-164 right): f. 155r-v copies f. 143r-v, ff. 155v-156r copy the ff. 149v-150 cipher, f. 157 copies f. 154r-v; endorsed 'Mr du Mayne' and 'Mr Forget de ... avril 1586'. Found by Michael Brackx (issue #70, 21 Oct 2026); checked on the images here the same day. Transcribed by him (AI-assisted, unchecked by a second person).",
+    "partial": false
    },
    "length": {
     "tokens": 1182,
@@ -66,7 +67,7 @@
   },
   {
    "id": "f150",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "BnF fr. 15572 f. 150 (canvas 158 left)",
    "date": "Apr 1586",
    "year": 1586,
@@ -77,10 +78,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "printed edition"
+     "separate folio"
     ],
-    "source": "Tomokiyo, cryptiana (online): short opening only.",
-    "partial": true
+    "source": "ff. 155v-156r: Contemporary clear copies in another (secretary's) hand, bound after the despatches as ff. 155-157 (canvases 162 right-164 right): f. 155r-v copies f. 143r-v, ff. 155v-156r copy the ff. 149v-150 cipher, f. 157 copies f. 154r-v; endorsed 'Mr du Mayne' and 'Mr Forget de ... avril 1586'. Found by Michael Brackx (issue #70, 21 Oct 2026); checked on the images here the same day. Transcribed by him (AI-assisted, unchecked by a second person).",
+    "partial": false
    },
    "length": {
     "tokens": 445,
@@ -92,26 +93,26 @@
     "by": "llm from images",
     "source": "Gallica IIIF images",
     "image_quality": "fair",
-    "notes": "13 cipher lines over a clear letter; perhaps half reads as continuous French (f150_reading.md). Measured (measure.py, 22 Sept 2026): 42% of transcribed tokens read as sense (189/445); scrambled-key floor 4%, chance-corrected 40%; 13/13 lines transcribed."
+    "notes": "13 cipher lines over a clear letter; perhaps half reads as continuous French (f150_reading.md). Measured (measure.py, 22 Sept 2026): 42% of transcribed tokens read as sense (189/445); scrambled-key floor 4%, chance-corrected 40%; 13/13 lines transcribed. The cipher begins on f. 149v (canvas 157 right, not transcribed); the clear copy ff. 155v-156r covers both."
    }
   },
   {
    "id": "f154",
-   "read": "read in part",
-   "shelfmark": "BnF fr. 15572 f. 154 (canvas 161 right)",
+   "read": "read",
+   "shelfmark": "BnF fr. 15572 f. 154r (canvas 161 right); the despatch continues in cipher on f. 154v (canvas 162 left), document f154v",
    "date": "after 6 Apr 1586",
    "year": 1586,
    "country": "France",
-   "route": "unknown -> Villeroy",
+   "route": "Forget -> Villeroy",
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "printed edition"
+     "separate folio"
     ],
-    "source": "Tomokiyo, cryptiana (online): short opening only ('en quelle peine [nous] estion...').",
-    "partial": true
+    "source": "f. 157r: Contemporary clear copies in another (secretary's) hand, bound after the despatches as ff. 155-157 (canvases 162 right-164 right): f. 155r-v copies f. 143r-v, ff. 155v-156r copy the ff. 149v-150 cipher, f. 157 copies f. 154r-v; endorsed 'Mr du Mayne' and 'Mr Forget de ... avril 1586'. Found by Michael Brackx (issue #70, 21 Oct 2026); checked on the images here the same day. Transcribed by him (AI-assisted, unchecked by a second person).",
+    "partial": false
    },
    "length": {
     "tokens": 1061,
@@ -124,6 +125,36 @@
     "source": "Gallica IIIF images, two tiles a line from three-line strips (strips.py)",
     "image_quality": "fair",
     "notes": "28 cipher lines; about half reads as continuous French (f154_reading.md). Measured (measure.py, 22 Sept 2026): 47% of transcribed tokens read as sense (501/1061); scrambled-key floor 8%, chance-corrected 43%; 28/28 lines transcribed."
+   }
+  },
+  {
+   "id": "f154v",
+   "read": "read",
+   "shelfmark": "BnF fr. 15572 f. 154v (Gallica btv1b9061879d, canvas 162 left)",
+   "date": "after 6 Apr 1586",
+   "year": 1586,
+   "country": "France",
+   "route": "Forget -> Villeroy",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "f. 157r (the second half): Contemporary clear copies in another (secretary's) hand, bound after the despatches as ff. 155-157 (canvases 162 right-164 right): f. 155r-v copies f. 143r-v, ff. 155v-156r copy the ff. 149v-150 cipher, f. 157 copies f. 154r-v; endorsed 'Mr du Mayne' and 'Mr Forget de ... avril 1586'. Found by Michael Brackx (issue #70, 21 Oct 2026); checked on the images here the same day. Transcribed by him (AI-assisted, unchecked by a second person).",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not transcribed figure by figure",
+    "image_quality": "fair",
+    "notes": "Two cipher blocks of about 11 lines each with clear text between and after, signed Forget at Bordeaux, April 1586; missed by the 18 Sept count, which took only the 28 recto lines (Brackx, #70; seen on canvas 162 here 21 Oct 2026). One line spot-checked by Brackx against the copy."
    }
   },
   {
@@ -440,8 +471,8 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Tomokiyo, cryptiana: partial key tables for Cipher-1 and short openings of ff. 143, 150, 154 and 'f. 111'; contemporary decipherments of sibling leaves in the same volume (f. 14v in f. 15r, f. 18 in f. 19, ff. 78-79 in the margin). No printed decipherment of the target leaves found (17 Sept 2026).",
-   "found": "before attempt",
+   "where": "Tomokiyo, cryptiana: partial key tables for Cipher-1 and short openings of ff. 143, 150, 154 and 'f. 111'; contemporary decipherments of sibling leaves (f. 14v in f. 15r, f. 18 in f. 19, ff. 78-79 in the margin). Contemporary clear copies of ff. 143, 149v-150 and 154r-v bound as ff. 155-157 of the same volume, overlooked here until Michael Brackx found them (issue #70, 21 Oct 2026). No printed decipherment found (17 Sept 2026).",
+   "found": "during attempt",
    "used": true
   },
   "inputs": [
@@ -451,7 +482,7 @@
    "crib"
   ],
   "attack": "published key",
-  "human_role": "unknown (no target-specific intervention recorded in NOTES or commits).",
+  "human_role": "Project work: no target-specific intervention recorded. From 21 Oct 2026 the entry also carries Michael Brackx's contributed readings and key corrections (issues #64, #68-#71), reviewed and spot-checked here.",
   "tools": [
    "Gallica IIIF fetch (fetch.py)",
    "background flattening (flatten.py)",
@@ -464,11 +495,12 @@
    "crib EM aligner (cribem.py)"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5.5"
   ],
-  "sessions": 3,
+  "sessions": 4,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-14"
+  "last_date": "2026-10-21"
  },
  "solution": [
   {
@@ -628,11 +660,80 @@
    "kind": "verification",
    "what": "Split from the former combined target under the one-key rule (George Lasry, 14 Oct 2026): the two Cipher-3 leaves (f. 276, fr. 15571 f. 179; alejandrozarco, PR #25) became matignon1586c3 with their steps and credit; George Lasry's f. 43 credit (a leaf outside this target) removed. Coverage recalculated from measure.json on the Cipher-1 leaves only: 4,325 of 12,994 transcribed tokens (0.333), of ~14,082 with the untranscribed lines (0.307); chance-corrected 0.26 / 0.24. measure.py no longer lists the Cipher-3 leaves.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring",
+    "crib testing"
+   ],
+   "what": "Contributed (Michael Brackx, issue #64, with Claude Code): ff. 196/201 aligned figure by figure (914 columns, 487 identical) and decoded jointly; f. 201 re-read on the image; names Sainct-Chamarand, la Barge, Montberault, la Binault read on both leaves; q = s (already implied by this folder's own f. 196 head crib), f = h, ss = h, BOX = u and other key corrections; codes 49, 36, 68 proposed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Contributed (Brackx, issue #68): f. 143r-v decoded with the corrected key, T= = r, f = h, a = a/m, c = p/l; verso ll. 1-7 checked on the image; codes 62 peut, 33 vostre, 40 bien, 54 aussi; 44 = Sire proposed, then withdrawn by him.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Contributed (Brackx, issue #69): f. 173 decoded with the corrected key, 4+ = m/n, 8 = g/e; nine lines checked on the image; codes 15, 27 open, 79 = pour weak.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Contributed (Brackx, issue #70): ff. 155-157 identified as contemporary clear copies of ff. 143r-v, 149v-150 and 154r-v; copies read by eye and aligned with the decodes; codes fixed: 33 vostre, 36 toutesfois, 40 bien, 49 comme, 53 affin, 54 aussi, 62 peut, 76 roi de Navarre, 88 Monsieur du Mayne, 104 mil, hash coustume. f. 154v found to carry two further cipher blocks.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "reading",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Contributed (Brackx, issue #71): ff. 123-124 decoded with U = u/e/a, d = s/c, q = s/o/a and the copy codes; f. 123v and 124r give connected stretches, f. 123r does not; no clear copy among canvases 128-139.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Review here: canvases 162-164 viewed. f. 155r opens 'S'estant laissé entendre comme il se vouloit départir du Roy de Navarre ...' (the f. 143 cipher, with 49 = comme), 'soubz vostre bon plaisir toutesfois' and 'Et aussi qu'il n'y avoit plus de hasard' legible; f. 155v ends 'Mr du Mayne de ... avril 1586' and begins 'Comme il estoit bien besoing ...' (ff. 149v-150), f. 156r ends 'Mr Forget de ... avril 1586'; f. 157r opens 'En quelle peine nous estions lors pour le payement des deux monstres' and has 'quarante mil escus' (the f. 154 cipher); f. 154v carries two cipher blocks. On canvas 208 the clear phrase 'Le regard dud. siege il s'advance fort' stands inside the f. 201 cipher block, followed by code 36, as #64 says.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-21",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Re-measured with measure.py --key key_contrib.json (key.json plus Brackx's letter sets and the copy codes; BOX = u, 44 = Sire and 79 = pour not adopted): 5,480 of 12,994 transcribed tokens read as sense (0.422; 0.389 of ~14,082), up from 4,325 (0.333 / 0.307); scrambled-key control corrected 0.351 / 0.324, up from 0.26 / 0.24. Gains largest on f. 173 (0.28 -> 0.49), f. 201 (0.46 -> 0.62), f. 123v-124v; f. 110 stays at its floor. Part of the gain is the wider letter sets (floors rose 0-2 points).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "The Cipher-1 leaves were read with Tomokiyo's published partial table for the Mayenne-Forget cipher (cryptiana), verified and completed against same-volume decipherments (f. 14v with f. 15r, f. 18 with f. 19) and read through a beam decoder because several figures are indistinguishable.",
+  "method_basis": "The Cipher-1 leaves were deciphered with Tomokiyo's published partial table, verified and completed against same-volume decipherments (f. 14v/15r, f. 18/19) and corrected by Michael Brackx; ff. 143, 149v-150 and 154r-v also have contemporary clear copies (ff. 155-157), which give their full text.",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
@@ -640,16 +741,17 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.3071,
+  "fraction_read": 0.389,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py over the Cipher-1 transcription files (cipher_f143.txt, f143v_cipher.txt, f150/f154/f173/f196/f201/f110/f123r/f123v/f124r/f124v/f177_cipher.txt) with key.json and lm.pkl; output measure.json. Unit: cipher tokens (figures and code groups). A token is read if key.json gives it a value (BOX, '?', tokens not in the key and unidentified codes count unread) AND its decoded letters fall inside a run of >=3 corpus words (count >=20) and >=10 letters. 4,325 read of 12,994 transcribed tokens (0.333); denominator ~14,082 adds the untranscribed lines of f. 110 (17 rows), f. 196 (5 lines) and f. 177 (5 lines), estimated from line counts -> 0.307 (recalculated 14 Oct 2026 without the Cipher-3 leaves, which had been counted in the denominator only). Scrambled-key control floor per leaf 4-14%; chance-corrected 0.26 of transcribed, 0.24 of the whole. Keyed (value from the key, sense or not): 0.90 of transcribed tokens.",
+  "fraction_read_source": "measure.py --key key_contrib.json over the Cipher-1 transcription files (rule in its docstring; output measure_key_contrib.json), 21 Oct 2026: 5,480 read of 12,994 transcribed tokens (0.422); denominator ~14,082 with the untranscribed lines of ff. 110, 196, 177 estimated -> 0.389; scrambled-key corrected 0.324. The 22 Sept measure with key.json (measure.json) gave 4,325 (0.307). The leaves with contemporary clear copies (ff. 143r-v, 150, 154r-v) are counted here only as far as the key decodes them; counting their tokens as read from the copies gives about 6,850 of 14,082 (0.49), and f. 154v and f. 149v are not in the denominator.",
   "codes_open": {
-   "open": 22,
+   "open": 12,
    "total": 42
   },
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
+   "independent clear copy",
    "matched control",
    "historical consistency"
   ],
@@ -665,11 +767,6 @@
     "detail": "Key known and verified on these leaves; f. 123r was the first page transcribed in this hand. Re-transcription against the key143 visual key not done."
    },
    {
-    "item": "Unread share of ff. 143r (41%), 143v (45%), 150 (58%), 154 (53%), 173 (72%), 201 (54%)",
-    "blocker": "not-attempted",
-    "detail": "Single-figure slips on confusable shapes; a second pass at higher magnification against the visual key has closed lines before (f. 143r l. 7) and has not been run on these lines."
-   },
-   {
     "item": "fr. 15572 f. 196: 5 of 31 lines untranscribed; 55% of the transcribed tokens unread",
     "blocker": "not-attempted",
     "detail": "The part-line after 'auquel', the first three full lines and the 13th line were never transcribed; f. 201 carries the same despatch as a crib."
@@ -680,19 +777,24 @@
     "detail": "Smaller hand, noisier transcription; re-transcription not done."
    },
    {
-    "item": "Code 49 (frequent) and the other code groups valued '+' in key.json; name codes 82, 84, 98",
-    "blocker": "open-codes",
-    "detail": "No context yet fixes them; the f. 18/19 crib and siblings ff. 14/15, 78-79, 91-92 have not been searched for all of them."
+    "item": "Unread share of ff. 173, 196, 201 (after Brackx: 51%, 46%, 38% of transcribed tokens unread)",
+    "blocker": "not-attempted",
+    "detail": "Single-figure slips on confusable shapes; Brackx re-read f. 201 and parts of ff. 143v, 173 on the image; a figure-by-figure second pass of ff. 173 and 196 is still workable."
    },
    {
-    "item": "Names in ff. 196/201 (Sainct M-, la Bar-/la Garde, Montb-, la B-ault)",
+    "item": "fr. 15572 f. 154v and f. 149v cipher (covered by the clear copies ff. 157 and 155v-156)",
     "blocker": "not-attempted",
-    "detail": "Break off on ambiguous figures; joint reading of the two encipherments figure by figure not done."
+    "detail": "Never transcribed figure by figure; the text is known from the copies, so this is only a check of the key."
+   },
+   {
+    "item": "Code groups still unvalued: 15, 19, 23, 27, 44, 46, 79 and the name codes 82, 84, 98",
+    "blocker": "open-codes",
+    "detail": "44 = Sire was proposed and withdrawn (it stands mid-sentence on f. 173); 79 = pour rests on one context; the clear copies do not contain them."
    }
   ],
-  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'.",
-  "fraction_coherent": 0.24,
-  "provenance": "project",
+  "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress.",
+  "fraction_coherent": 0.324,
+  "provenance": "mixed",
   "credits": [
    {
     "who": "tomokiyo",
@@ -703,7 +805,47 @@
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "same-volume decipherments (f. 14v in f. 15r, f. 18 in f. 19, f. 78v margin) used to verify and complete the key"
+    "note": "same-volume decipherments (f. 14v in f. 15r, f. 18 in f. 19, f. 78v margin) used to verify and complete the key; clear copies ff. 155-157 of ff. 143, 149v-150 and 154r-v"
+   },
+   {
+    "who": "brackx",
+    "role": "solution",
+    "note": "extended readings with Claude Code of ff. 196/201 (all four names), 143r-v, 173 and 123-124 (issues #64, #68, #69, #71)",
+    "date": "2026-10-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/64",
+    "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "key corrected",
+    "note": "letter values q = s, f = h, T= = r, 4+ = m/n, U = u/e/a, d = s/c and others; codes 68 Vostre Majesté and, from the clear copies, 33, 36, 40, 49, 53, 54, 62, 88, 104, hash",
+    "date": "2026-10-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/68",
+    "published": true
+   },
+   {
+    "who": "brackx",
+    "role": "identification",
+    "note": "found that ff. 155-157 are contemporary clear copies of ff. 143, 149v-150 and 154r-v, and that f. 154v carries more cipher",
+    "date": "2026-10-21",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/70",
+    "published": true
+   }
+  ],
+  "parts": [
+   {
+    "label": "Cipher-1 despatches deciphered with the key (ff. 110, 123-124, 173, 196, 201, fr. 15571 f. 177)",
+    "records": "BnF fr. 15572 ff. 110, 123-124, 173, 196, 201; fr. 15571 f. 177",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs and extended by Brackx's corrections and the copy codes; 0.389 of tokens read as sense (measure.py, key_contrib.json)"
+   },
+   {
+    "label": "ff. 143r-v, 149v-150, 154r-v (clear copies ff. 155-157)",
+    "records": "BnF fr. 15572 ff. 143, 149v-150, 154",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them"
    }
   ]
  }
