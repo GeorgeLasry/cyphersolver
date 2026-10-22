@@ -1,23 +1,46 @@
 # Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: in progress. Written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)) and corrected the
-same day after **George Lasry's review**: "The decryptions are not useful. They seem to have many errors, making it
-impossible to assemble coherent French sentences." He is right for the leaves without a copy. Now:
+Status: in progress. Written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)); page and
+ledgers brought up to date the same evening. ff. 123r and 124r are still workable, so the target stays open.
 
-* **Read and translated (6 of 15 pages, 5,255 of 16,677 tokens, 31.5%)**: ff. 143r-v, 149v-150v and 154r-v, from their
-  contemporary clear copies ff. 155-157 (found by Brackx, #70). Reading and English per letter: `texts/reading_f143.md`,
-  `reading_f150.md`, `reading_f154.md` and the `_en.md` files. The key's decode agrees with the copies on 85-93% of
-  letters. The f. 155r copy breaks off on f. 143v ("où il eust …"); the rest of f. 143v is decode only.
-* **Decoded, not read (9 pages)**: ff. 110, 123r-124v, 173, 196, 201, fr. 15571 f. 177r-v. The merged-key decode has
-  holes in most sentences: 5-24% of sentences clean (`python docs/_check_reading.py matignon1586`), against 78-88% for
-  the readings from the copies. Marked `"state": "decoded, not read"` in `profile.json` and on the page.
-* Withdrawn as a reading: the token-run figure, **63.7% of tokens in runs of French** (10,616 of 16,677; scrambled floor
-  12.1%). It shows the key is real, but `measure.py`'s rule passes short corpus words strung together ("la que le
-  estoit"), so it overstated what can be read. Earlier figures: 61.8% (Brackx's per-leaf keys), 39% (21 Oct), 31%
-  (22 Sept).
-* **Next**: build each decoded leaf into sentences, check every break against the image (Brackx's figure labels have
-  had no second reader) and the key, re-decode, translate; ff. 196/201 first (the same text twice), then f. 173, f. 110,
-  ff. 123-124. Ten code groups stay open (Remaining gaps).
+**22 Oct 2026, the day in short.** George Lasry reviewed the page: "The decryptions are not useful. They seem to have
+many errors, making it impossible to assemble coherent French sentences." The nine pages without a clear copy were
+first relabelled *decoded, not read* (commit 021b4de9f). Then, following his method, each leaf was built into
+sentences against the full-resolution images: every break cropped and looked at, Brackx's figure labels corrected
+where the image disagrees (about 400 changes, `brackx2026/corrections/`), letter values added per leaf
+(`key_cipher1_<leaf>.json`), the leaf re-decoded and read again, and an English translation written. Clean sentences
+(`docs/_check_reading.py`, cipher part; a sentence is clean with at most one hole in ten words), before -> after:
+
+| leaf | before | after | state | reading / log |
+|---|---|---|---|---|
+| f. 173 | 0.16 | 0.71 | read | `texts/reading_f173.md`, `_log.md` |
+| ff. 196 / 201 (two fair copies of one enciphered draft) | 0.14 / 0.44 | 0.79 | read | `texts/reading_f196_201.md` |
+| f. 196v (found untranscribed; Monségur, May 1586; 1,236 figures) | - | 0.71 | read | `texts/reading_f196v.md` |
+| fr. 15571 f. 177r-v (clear copy found on f. 176r-v and transcribed) | 0.24 | 0.69 | read | `texts/reading_f177.md`, `reading_f177_vs_copy.md` |
+| f. 110 (three passes; dateline Villeneuve-d'Agenais, not Bellebourg) | 0.23 | 0.70 | read | `texts/reading_f110.md` |
+| f. 123v | 0.19 | 0.66 | read | `texts/reading_f123.md` |
+| f. 124v | 0.12 | 0.72 | read | `texts/reading_f124.md` |
+| f. 143v ll. 26-35 (after the copy's break; the copy continues on f. 155v) | 0.14 | 1.0 | read | `texts/reading_f143v_tail.md` |
+| f. 123r (two passes) | 0.05 | 0.41 | decoded, not read | `texts/reading_f123.md` |
+| f. 124r (two passes) | 0.28 | 0.56 | decoded, not read | `texts/reading_f124.md` |
+
+* **Read and translated: 14 of 16 documents, 15,395 of 17,913 tokens (85.9%, measured on `documents[].length`).**
+  Seven leaves read with the Cipher-1 key on the images (ff. 110, 123v, 124v, 173, 196, 196v, 201); ff. 143r-v,
+  149v-150v and 154r-v read from their contemporary clear copies ff. 155-157 (Brackx, #70), and fr. 15571 f. 177r-v
+  from its copy on f. 176r-v (found 22 Oct 2026), which the key's decode matches. The method is now *read with known
+  key* (the copies are the second part, *read from existing decipherment*).
+* **Decoded, not read: ff. 123r (0.41) and 124r (0.56).** Figures legible; the breaks are letter values the merged
+  key lacks or writer's slips. Not counted.
+* **Open inside the leaves that read:** f. 110 ll. 1-4, 8, 10, 14-16, 24-25, 36; code groups 16, 19, 23, 45, 47, 60,
+  65, 67, 99, 101, 102, 103, 9 and the name code 98 (Remaining gaps). Settled today: 73 = *le Roy* and 64 = *quelque*
+  on f. 177 (its copy), 63 = *après* (f. 201's clear tail), 59 = *argent* (f. 157r copy).
+* **Not a second reader yet:** the label corrections were made and checked by one reader (Claude) on the images.
+* Withdrawn as reading figures: 0.637 of tokens in runs of French (`measure.py`, before the review) and 0.315 (copies
+  only, after it).
+* **Next**: a hand-mapped atlas of the f. 123r and f. 124r hands (exemplars per figure, as for f. 110 pass 2) to test
+  the remaining letter values, then the open codes; a second reader of the corrections.
+
+The sections below are the history of the target, kept as written.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder keeps **Mayenne–Forget's
 Cipher-1** only. Matignon's **Cipher-3** leaves (fr. 15572 f. 276 and fr. 15571 f. 179, read by alejandrozarco in
@@ -492,10 +515,9 @@ where there is one). Per document 0.51 (f. 123r) to 0.77 (f. 201).
 
 ## Remaining gaps
 
-- six pages decoded, not read: ff. 110, 123r, 123v, 124r, 124v, fr. 15571 f. 177r-v - blocker: not-attempted; holes in most sentences (George Lasry, 22 Oct 2026). ff. 173 and 196/201 were read the same day by building sentences against the images (texts/reading_f173.md, reading_f196_201.md); f. 110 and ff. 123r-v are being read the same way; then ff. 124r-v and f. 177
-- f. 196v (canvas 204 left): the continuation of the ff. 196/201 despatch, about 45 cipher lines signed in clear "Du camp devant Monségur ce ... de May 1586"; never transcribed - blocker: not-attempted
-- f. 143v after "où il eust", where the f. 155r copy breaks off - blocker: not-attempted; decode only, to be read as for the uncopied leaves
-- code groups 16, 19, 23, 45, 64, 101, 102, 103, `me`, 9, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (64 = *un* and `me` = *mesme* fit, not adopted; 9 is two different words against the copies)
+- two pages decoded, not read: f. 123r (0.41 clean sentences after two passes) and f. 124r (0.56 after two passes) - blocker: not-attempted; figures legible, the breaks are letter values the merged key lacks or writer's slips; next a hand-mapped atlas of each hand to test them. ff. 110, 123v, 124v, 173, 196, 196v, 201 and fr. 15571 f. 177 were read as sentences on 22 Oct 2026 (texts/reading_*.md)
+- f. 110: ll. 1-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47 inside a leaf that reads at 0.70 - blocker: not-attempted
+- code groups 16, 19, 23, 45, 47 (f. 110), 60, 67 (f. 124), 65, 99 (f. 196v), 101, 102, 103, 9, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (9 is two different words against the copies). Settled 22 Oct 2026: 64 = *quelque*, 62 = *peu*, 73 = *le Roy* on fr. 15571 f. 177 (its clear copy f. 176), 63 = *après* (f. 201's clear tail), `me` a null on f. 177
 - the copy of f. 20r (rest of f. 19v, about 11 lines) - blocker: open-codes; read by Brackx but not given in #78, so his 86.7% for f. 20r is unchecked here
 
 ## Escalation

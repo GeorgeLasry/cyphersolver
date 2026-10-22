@@ -89,14 +89,20 @@ def entry_state(t):
 _AUDIT = None
 
 
-def audit_review(folder_path):
-    """The 22 Oct 2026 reading audit's grade for a target (research/reading_audit/reviews.json), standing in for the
-    reading_review of entries that have none of their own: A or B passes, C, D and N do not."""
+def audit_review(folder_path, entry=None):
+    """The 22 Oct 2026 reading audit's grade (research/reading_audit/reviews.json), standing in for the reading_review
+    of entries that have none of their own: the document's own grade when the per-document pass reached it, else the
+    target's. A or B passes; C, D and N do not."""
     global _AUDIT
     if _AUDIT is None:
         p = ROOT / 'research' / 'reading_audit' / 'reviews.json'
         _AUDIT = json.loads(p.read_text(encoding='utf-8')) if p.exists() else {}
-    return _AUDIT.get(pathlib.Path(folder_path).name) or {}
+    rec = _AUDIT.get(pathlib.Path(folder_path).name) or {}
+    if entry is not None:
+        key = '/'.join(map(str, listify(entry.get('doc'))))
+        doc = (rec.get('docs') or {}).get(key)
+        if doc: return doc
+    return rec
 
 
 def reading_problems(folder_path, profile, score=True):
@@ -125,7 +131,7 @@ def reading_problems(folder_path, profile, score=True):
         # process should validate that the submission includes ... readable coherent text + translations"). The
         # sentence score is a pointer for that reader, not the verdict: on the 327 readings of the 22 Oct 2026 audit
         # it did not separate the readers' D grades from their A grades (research/reading_audit/README.md).
-        rv = t.get('reading_review') or audit_review(folder_path)
+        rv = t.get('reading_review') or audit_review(folder_path, t)
         if rv.get('grade') not in ('A', 'B'):
             hard.append(f'{label}: no reading_review: a reader must read the decryption as sentences and record '
                         f'{{"grade": "A|B", "by": ..., "date": ..., "note": ...}} (or mark it "decoded, not read")')

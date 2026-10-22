@@ -33,4 +33,4 @@ m'estois(?) bien garanty(?) en partie par le temps qu'il nous a espargné du si�
 n'est pas aussi du tout inutile, ayant de luy ceste obligation de ne porter les armes de six mois pour son party,
 où il eust …
 
-[The copy breaks off here; the rest of f. 143v is read only in the decode.]
+[The copy continues on f. 155v (canvas 163 left), ll. 1-7, transcribed 22 Oct 2026 in `brackx2026/copies/f155v_f143_tail.txt`; the rest of f. 143v, read from the cipher on the image and checked against it, is in `reading_f143v_tail.md`.]

@@ -30,4 +30,4 @@ party. And there was no other risk than the sum, against which I had(?) partly c
 saved us in the siege of Castets; and the other(?) is not wholly useless either, since we have from him this
 undertaking not to bear arms for his party for six months, where he would have …
 
-[The copy breaks off here.]
+[Continued in `reading_f143v_tail_en.md`, from the cipher on the image and the rest of the copy on f. 155v.]

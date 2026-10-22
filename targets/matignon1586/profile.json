@@ -251,6 +251,37 @@
    }
   },
   {
+   "id": "f196v",
+   "read": "read",
+   "shelfmark": "BnF fr. 15572 f. 196v (canvas 204 left)",
+   "date": "1586-05",
+   "year": 1586,
+   "country": "France",
+   "route": "camp before Monségur -> Henri III",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "f. 201's clear tail overlaps lines 1-8 (gives code 63 = après)",
+    "partial": true
+   },
+   "length": {
+    "tokens": 1236,
+    "unit": "mixed",
+    "measured": true,
+    "file": "brackx2026/corrections/f196v_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "transcribed here 22 Oct 2026 figure by figure from the openapi.bnf.fr image (Claude Opus 5.5), in Brackx's label set as corrected for this hand; never transcribed before; unchecked by a second reader",
+    "image_quality": "fair",
+    "notes": "Re-transcribed by Brackx, 31 of 31 lines. Measured 22 Oct 2026 (brackx_validate.py, this project's decoder over his per-leaf key): 59% of tokens read as sense. Earlier transcription kept: 26 of 31 cipher lines transcribed (a part-line after \"auquel\" and 30 full lines on the image; the first three full lines and the 13th are not transcribed). About half the words read (f196_reading.md). Measured (measure.py, 22 Sept 2026): 45% of transcribed tokens read as sense (376/840); scrambled-key floor 6%, chance-corrected 41%; 26/31 lines transcribed."
+   }
+  },
+  {
    "id": "f201",
    "read": "read in part",
    "shelfmark": "BnF fr. 15572 f. 201 (canvas 208 right)",
@@ -941,11 +972,83 @@
    "technique": [
     "plaintext matching"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "ff. 124r-v read as sentences on the images: 65 label corrections (tm also a filled b = a; q1 also a crossed o = u; Cl/U two shapes; sigma pairs = ff; codes 68, 59, 76+14 misread as letters; two interlinear insertions missing), leaf key key_cipher1_f124.json, reading force-aligned back onto the figures. f. 124v 0.12 -> 0.72 clean sentences (read); f. 124r 0.28 -> 0.50 (still decoded, not read). Codes 60, 67 open.",
+   "result": "partial",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "f. 110 pass 3: 8 more label corrections (sw = s, a looped tilde; n -> m, U -> 8, t -> pl, th -> h), leaf key sw = s; four pass-2 words withdrawn where the figures do not carry them; tests B = a, 3 = o, crossed 8 = o/n failed on ten open spans. Clean sentences 0.566 -> 0.703; holes cluster in ll. 1-4, 8, 10, 14-16, 24-25, 36.",
+   "result": "worked",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "ff. 123r-v read as sentences on the images: 126 label corrections (Brackx's U is two figures, a barred V = e/u and a C with a small v = s/x, which also hides under many Cl; looped double s = ée/é; dc = m; ff also o; 6i = code 61), f. 123r l. 37 (30 figures, untranscribed) added, the joins to f. 123v and f. 124r found; leaf key key_cipher1_f123.json. f. 123r 0.05 -> 0.37 (decoded, not read); f. 123v 0.19 -> 0.66 (read). Codes 16, 101, 102 open.",
+   "result": "partial",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "f. 196v (canvas 204 left), the never-transcribed continuation of ff. 196/201, transcribed figure by figure (1,236 figures, 36 cipher lines, then the clear close 'Du camp devant Monségur ce [...] jour de May 1586') and read as sentences: 0.71 clean (reading part). f. 201's clear tail lines up with ll. 1-8 and gives 63 = après; four labels new to the key (tt = t/tt, fZ = r/rr, xl = x, yz = z); codes 65, 99 open; the writer struck four figures on l. 17.",
+   "result": "worked",
+   "technique": [
+    "manual reconstruction",
+    "plaintext matching",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "f. 124r pass 2: re-cut line by line, 10 label changes (looped crossed d = m/s; missing curl s; barred o = a; omega d/q; a 6 written over E2), no key change; clean sentences 0.50 -> 0.56, still below the bar. An automatic exemplar set by width drifted and was not used.",
+   "result": "partial",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "f. 143v ll. 26-35 (after 'où il eust') read from the cipher on the image: 10 label corrections (6 -> 61, x -> xb = mm, a new label; 6 8 -> 68; l. 35 untranscribed, added); 0.14 -> 1.0 clean sentences on the tail. The clear copy does not break off: it continues on f. 155v ll. 1-7 (canvas 163 left, docket 'M.r du Mayne du x(?)me avril 1586'), transcribed, and agrees with the cipher reading word for word.",
+   "result": "worked",
+   "technique": [
+    "manual reconstruction",
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "f. 123r pass 2: line by line figure by figure against an exemplar set (Cl/Cv, Hc vs slanted ff, q-family vs looped 4, ao vs t-cross, t-cross vs closed 4); 12 label changes (6 B = code 66; s y = code 59 argent; Hc -> ff; a new sign Hl); clean sentences 0.37 -> 0.41, still decoded, not read.",
+   "result": "partial",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ]
   }
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "ff. 143r-v, 149v-150v and 154r-v are read from their contemporary clear copies (ff. 155-157, found by Michael Brackx), which the key's decode matches on 85-93% of letters; the other nine leaves decode with the key (Tomokiyo's table, checked on the f. 14/15 and f. 18/19 cribs, merged from Brackx's corrections) but do not yet build sentences.",
+  "method": "read with known key",
+  "method_basis": "Seven leaves read with the Cipher-1 key on the images (Tomokiyo's table, verified on the f. 14/15 and f. 18/19 cribs, merged from Brackx's corrections and extended per leaf), sentence by sentence after George Lasry's review of 22 Oct 2026; four read from contemporary clear copies (ff. 155-157 for ff. 143, 149v-150v, 154; f. 176 for fr. 15571 f. 177), which the key's decode matches.",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
@@ -953,9 +1056,9 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.315,
+  "fraction_read": 0.859,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, after George Lasry's review of the page: only the documents that build coherent sentences count. Those are the six leaves with contemporary clear copies (ff. 143r-v, 149v-150v, 154r-v; 1,916 + 1,573 + 1,766 = 5,255 of 16,677 Cipher-1 tokens = 0.315), read from the copies and translated (texts/reading_*.md). The other nine leaves are decoded, not read (docs/_check_reading.py: 5-24% of sentences clean). Earlier token-run figure, kept as evidence that the key works, not as a reading: 10,616 of 16,677 tokens in runs of French (0.637), scrambled floor 0.121.",
+  "fraction_read_source": "22 Oct 2026, measured: tokens (documents[].length) of the documents that read as sentences, 15,395 of 17,913 (14 of 16 documents; f. 196v, never transcribed before, added 1,236). Read means the reading builds coherent sentences and is translated (George Lasry, 22 Oct 2026): per leaf 0.66-0.79 clean sentences on docs/_check_reading.py, 1.0 on the f. 143v tail; the clear-copy readings 0.78-0.88. Open: ff. 123r (0.41) and 124r (0.56), decoded, not read, and scattered holes and codes inside the leaves that read. Withdrawn as reading figures: 0.637 tokens in runs of French (measure.py, before the review) and 0.315 (copies only, after it).",
   "codes_open": {
    "open": 10,
    "total": 50
@@ -969,33 +1072,28 @@
   ],
   "gaps": [
    {
-    "item": "pages decoded, not read: ff. 110, 123r, 123v, 124r, 124v (being read)",
+    "item": "two pages decoded, not read: f. 123r (0.41 clean sentences after two passes) and f. 124r (0.56 after two passes)",
     "blocker": "not-attempted",
-    "detail": "Holes in most sentences (George Lasry, 22 Oct 2026). ff. 173 and 196/201 were read the same day by building sentences against the images and correcting the labels; the same method for these."
+    "detail": "figures legible; the breaks are letter values the merged key lacks or writer's slips; next a hand-mapped atlas of each hand to test them"
    },
    {
-    "item": "f. 143v after \"où il eust\": the clear copy breaks off, the rest is decode only",
+    "item": "f. 110: ll. 1-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47 (the leaf reads at 0.70 clean sentences)",
     "blocker": "not-attempted",
-    "detail": "read the rest of the cipher against the decode as for the uncopied leaves"
+    "detail": "wrong letter sets or slips of this hand that no single key change fixes; l. 1 corner damaged"
    },
    {
-    "item": "code groups 16, 19, 23, 45, 64, 101, 102, 103, me, 9, and the name code 98",
+    "item": "code groups 16, 19, 23, 45, 47, 60, 65, 66, 67, 99, 101, 102, 103, 9 and the name code 98",
     "blocker": "open-codes",
-    "detail": "one to three contexts each, none in a clear copy (59 = argent now from f. 157r; 64 = un and me = mesme fit but are not adopted; 9 gives two different words against the copies; 103 meets an unread word in the f. 19 copy itself)"
+    "detail": "one to three contexts each, none in a clear copy; settled 22 Oct 2026: 64 = quelque, 62 = peu, 73 = le Roy (fr. 15571 f. 177 and its copy f. 176), 63 = après (f. 201 clear tail), me a null on f. 177"
    },
    {
     "item": "copy of f. 20r (rest of f. 19v)",
     "blocker": "open-codes",
     "detail": "read by Brackx, not given in #78; his 86.7% for f. 20r unchecked here"
-   },
-   {
-    "item": "f. 196v (canvas 204 left): the continuation of the ff. 196/201 despatch, about 45 cipher lines, signed in clear \"Du camp devant Monségur ce ... de May 1586\"; never transcribed",
-    "blocker": "not-attempted",
-    "detail": "found 22 Oct 2026 by the f. 196/201 reading pass; f. 201's clear tail belongs to it"
    }
   ],
   "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress. 22 Oct 2026: Brackx's issues #73, #77, #78, #79, #83 folded in (complete re-transcription, per-leaf keys, codes 15, 34, 46, 51, 61, 73, 78, 82, 84), validated with this project's decoder against the clear copies and a control (brackx_validate.json). Still in progress: read bar not met, codes open, keys not merged. 22 Oct 2026 (later): the per-leaf keys merged into one Cipher-1 key (key_cipher1.json; merge_keys.py), which reads every leaf as well or better; 59 = argent from the f. 157r copy; re-measured 0.637; site page written.",
-  "fraction_coherent": 0.315,
+  "fraction_coherent": 0.859,
   "provenance": "mixed",
   "credits": [
    {
@@ -1076,18 +1174,18 @@
   ],
   "parts": [
    {
+    "label": "Cipher-1 despatches read with the key on the images (ff. 110, 123v, 124v, 173, 196, 196v, 201); ff. 123r and 124r decoded, not read",
+    "records": "BnF fr. 15572 ff. 110, 123-124, 173, 196r-v, 201",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs, merged from Brackx's per-leaf keys (key_cipher1.json) and extended per leaf (key_cipher1_<leaf>.json); after George Lasry's review (22 Oct 2026) each leaf was built into sentences against the full-resolution images, correcting Brackx's labels (about 400 changes, brackx2026/corrections/), until the sentences held: 0.66-0.79 clean sentences per leaf read; ff. 123r (0.41) and 124r (0.56) stay decoded, not read."
+   },
+   {
     "label": "ff. 143r-v, 149v-150v, 154r-v (clear copies ff. 155-157) and fr. 15571 f. 177r-v (clear copy f. 176r-v)",
     "records": "BnF fr. 15572 ff. 143, 149v-150v, 154; fr. 15571 f. 177r-v",
     "method": "read from existing decipherment",
     "extent": "complete",
     "basis": "contemporary clear copies bound as ff. 155-157, found by Michael Brackx (issue #70) and checked on the images here; the key's decode of ff. 143, 150 and 154r agrees with them; what the notes called the 'f. 149v' cipher is f. 150r, a full page (#83); Brackx's decodes of ff. 143r-v, 150r-v and 154r-v agree with the copies on 83-94% of letters (brackx_validate.json)"
-   },
-   {
-    "label": "Cipher-1 despatches decoded with the key, not yet read (ff. 110, 123-124, 173, 196, 201)",
-    "records": "BnF fr. 15572 ff. 110, 123-124, 173, 196, 201",
-    "method": "not solved",
-    "extent": "none",
-    "basis": "Tomokiyo's Cipher-1 table, verified on the f. 14/15 and f. 18/19 cribs and merged from Brackx's per-leaf keys (key_cipher1.json), decodes these leaves into fragments with holes in most sentences (5-24% of sentences clean, docs/_check_reading.py). Withdrawn as a reading on 22 Oct 2026 after George Lasry's review; shown as decoded, not read."
    }
   ],
   "key_file": [
@@ -1115,12 +1213,21 @@
    {
     "doc": "f143v",
     "label": "f. 143v",
-    "transcription": "brackx2026/f143v_cipher.txt",
+    "transcription": [
+     "brackx2026/f143v_cipher.txt",
+     "brackx2026/corrections/f143v_cipher.txt"
+    ],
     "decryption": "texts/f143v.txt",
     "summary": "The Castets despatch continued, on the terms and the march of the army; the clear copy is f. 155r-v.",
     "language": "fr",
-    "reading": "texts/reading_f143.md",
-    "translation": "texts/reading_f143_en.md",
+    "reading": [
+     "texts/reading_f143.md",
+     "texts/reading_f143v_tail.md"
+    ],
+    "translation": [
+     "texts/reading_f143_en.md",
+     "texts/reading_f143v_tail_en.md"
+    ],
     "state": "read",
     "reading_review": {
      "grade": "A",
@@ -1237,7 +1344,7 @@
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
-     "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, untranscribed."
+     "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, transcribed and read the same day (reading_f196v.md)."
     }
    },
    {
@@ -1257,63 +1364,117 @@
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
-     "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, untranscribed."
+     "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, transcribed and read the same day (reading_f196v.md)."
+    }
+   },
+   {
+    "doc": "f196v",
+    "label": "f. 196v",
+    "transcription": "brackx2026/corrections/f196v_cipher.txt",
+    "decryption": "texts/reading_f196v.md",
+    "reading": "texts/reading_f196v.md",
+    "translation": "texts/reading_f196v_en.md",
+    "language": "fr",
+    "state": "read",
+    "summary": "The continuation of the ff. 196/201 despatch, dated in clear 'Du camp devant Monségur ce [...] jour de May 1586': the siege of Monségur, a battery of fifteen cannon to open the day after tomorrow, the defenders resolved to hold out after Navarre's treatment of the commander of Sainte-Bazeille, Navarre leaving for Saintonge to meet his reiters while Turenne holds the province from Nérac, the army short of money and the third month's pay.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "0.71 clean sentences (reading part); read against the English; 1,236 figures transcribed here for the first time; four new labels (tt, fZ, xl, yz) in key_cipher1_f196v.json; codes 65 and 99 open; no second reader of the labels."
     }
    },
    {
     "doc": "f123r",
     "label": "f. 123r",
-    "transcription": "brackx2026/f123r_cipher.txt",
+    "transcription": [
+     "brackx2026/f123r_cipher.txt",
+     "brackx2026/corrections/f123_cipher.txt",
+     "brackx2026/corrections/f123r_v2_cipher.txt"
+    ],
     "decryption": "texts/f123r.txt",
     "summary": "Mayenne to the King from Marmande, March 1586, opening in clear ('la dernière que j'ay eu l'honneur est du huictiesme de ce moys'): no money, contributions to be had only by garrisons, the troops cannot be kept together.",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
+    "note": "Decoded, not read: two reading passes (texts/reading_f123.md) reach 0.41 clean sentences (0.56 if period spellings the word list lacks are counted as words); figures legible; about 14 words one figure short and five runs that do not form; codes 16, 66, 101, 102 open.",
+    "reading": "texts/reading_f123.md",
+    "translation": "texts/reading_f123_en.md"
    },
    {
     "doc": "f123v",
     "label": "f. 123v",
-    "transcription": "brackx2026/f123v_cipher.txt",
+    "transcription": [
+     "brackx2026/f123v_cipher.txt",
+     "brackx2026/corrections/f123_cipher.txt"
+    ],
     "decryption": "texts/f123v.txt",
     "summary": "The Marmande despatch continued: Turenne back over the Garonne, the relief of places, the army's wants.",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
+    "state": "read",
+    "reading": "texts/reading_f123.md",
+    "translation": "texts/reading_f123_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "f. 123v section of reading_f123.md: 0.66 clean sentences by the scorer, about a third of the failures being period spellings the word list lacks (laquele, demourés, douse); read against the English; about 18 [?] words; 58 label corrections on the image."
+    }
    },
    {
     "doc": "f124r",
     "label": "f. 124r",
-    "transcription": "brackx2026/f124r_cipher.txt",
+    "transcription": [
+     "brackx2026/f124r_cipher.txt",
+     "brackx2026/corrections/f124_cipher.txt",
+     "brackx2026/corrections/f124r_v2_cipher.txt"
+    ],
     "decryption": "texts/f124r.txt",
     "summary": "The Marmande despatch continued: the bearer sent to learn the King's intention.",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
+    "note": "Decoded, not read: two reading passes (texts/reading_f124.md) reach 0.56 clean sentences; the figures are legible, the remaining breaks are letter values the merged key lacks or writer's slips; testing them needs a hand-mapped atlas of this hand (f. 124v).",
+    "reading": "texts/reading_f124.md",
+    "translation": "texts/reading_f124_en.md"
    },
    {
     "doc": "f124v",
     "label": "f. 124v",
-    "transcription": "brackx2026/f124v_cipher.txt",
+    "transcription": [
+     "brackx2026/f124v_cipher.txt",
+     "brackx2026/corrections/f124_cipher.txt"
+    ],
     "decryption": "texts/f124v.txt",
     "summary": "The end of the Marmande despatch.",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Mechanical decode with the merged key: holes in most sentences (George Lasry, 22 Oct 2026). No contemporary copy; shown so the transcription and key can be checked and improved, not counted as read."
+    "state": "read",
+    "reading": "texts/reading_f124.md",
+    "translation": "texts/reading_f124_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "f. 124v section of reading_f124.md: 0.72 clean sentences; read against the English; 65 label corrections across ff. 124r-v checked on the image, the reading force-aligned back onto the corrected figures; codes 60 and 67 open."
+    }
    },
    {
     "doc": "f110",
     "label": "f. 110",
     "transcription": [
      "brackx2026/f110_cipher.txt",
-     "brackx2026/corrections/f110_v2_cipher.txt"
+     "brackx2026/corrections/f110_v3_cipher.txt"
     ],
     "decryption": "texts/f110.txt",
     "summary": "Mayenne to Villeroy from Villeneuve-d'Agenais, March 1586: on making war without money and what it does to his reputation; the leaf is wholly in cipher.",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Decoded, not read: after two reading passes on the image (texts/reading_f110.md; 123 label changes, brackx2026/corrections/f110_v2.tsv) 0.57 of sentences are clean, below the bar; holes cluster in ll. 1-4, 12-16, 24-25, 29-36. A third pass is open.",
+    "state": "read",
     "reading": "texts/reading_f110.md",
-    "translation": "texts/reading_f110_en.md"
+    "translation": "texts/reading_f110_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "after three passes on the image (f110_v2/v3 tsv: 131 label changes; leaf key Cl = l/r, sw = s) 0.70 of sentences clean, about 0.77 within the cipher; open: ll. 1-2 (damaged corner), 3-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47. Read against the English."
+    }
    },
    {
     "doc": "fr15571-f177",
