@@ -179,6 +179,12 @@
    "kind": "verification",
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): catalogue item 10 had grouped three letters in three different ciphers. La Guiche's 22-sign substitution stays in guiche1551; Noailles's Venice letter (another symbol alphabet) went to noailles1558 and Seure's six Lisbon letters (homophonic with numeral codes) to seure1558. fraction_read re-measured on La Guiche alone: 429 of 431 tokens have a value (the code sign :: and sign 5 do not).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): guiche_ct.txt, reading_raw.txt and the normalised reading copied from NOTES.md; key copied from NOTES.md to texts/key.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -241,6 +247,19 @@
   "fraction_read_source": "guiche_ct.txt (431 tokens, L0-L12) against reading_raw.txt: every token has a value but the four-dot code sign (::) and sign 5 (L1). The struck-through lines L0-L1 give values that read only in fragments: about 352 of 406 first-pass signs read as sense (by eye, 21 Sept), hence fraction_coherent.",
   "key": "partial",
   "credits": [],
-  "fraction_coherent": 0.87
+  "fraction_coherent": 0.87,
+  "texts": [
+   {
+    "doc": "laguiche1551",
+    "label": "La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v)",
+    "transcription": "guiche_ct.txt",
+    "decryption": [
+     "reading_raw.txt",
+     "texts/laguiche1551_decryption.md"
+    ],
+    "summary": "Claude de la Guiche, in Rome, reports to Montmorency that the Sienese envoy has left Rome with Dom Diego (Diego Hurtado de Mendoza, imperial ambassador and master of Siena) and that the Count of Santa Fiora is discontented and would readily come over to the king's service on conditions; the winter of the Parma war, months before the Sienese rising of July 1552. The first two struck-through lines read only in part."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }

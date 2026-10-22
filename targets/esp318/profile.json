@@ -142,6 +142,12 @@
    "kind": "verification",
    "what": "Split from the former whole-volume target esp318 under the one-key rule (George Lasry, 14 Oct 2026): no. 92 (Cifra general) stays here; no. 5 (Escrivà's cipher, printed by Parisi) became federico1497, no. 95 (Lasry's alphabet) esp318no95, nos. 93-94 (key unknown) esp318no93. Steps that concerned only the other letters moved with them; the earlier steps are kept as recorded.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f116_reading.md (transcription and reading line by line); key = the printed Cifra general plus the sign table and code corrections copied from f116_reading.md to texts/key.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -179,6 +185,16 @@
     {"who": "tomokiyo", "role": "pointer", "note": "proposed the Cifra general for no. 92"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial reading of the no. 92 opening (commented out in spanish.htm) settled zap, bac, xie"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "partial interlinear decipherment on f. 116r, proved the key"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "no92",
+    "label": "no. 92, ff. 116r-v, the Great Captain to Lorenzo Suárez, 17 Aug 1500",
+    "transcription": "f116_reading.md",
+    "decryption": "f116_reading.md",
+    "summary": "Gonzalo Fernández de Córdoba answers Lorenzo Suárez's request, on the Pope's and Venice's behalf, that he take the fleet against the Turk (the Cephalonia campaign of autumn 1500): he will go, but asks for great remuneration and for ports in Italy (Venice holds Brindisi and Otranto in Apulia) where the fleet can land its sick and wounded and refit. f116_reading.md gives the transcription and the reading line by line; about three quarters of the words read, with open codes and letter stretches listed there."
+   }
+  ],
+  "key_file": ["keys/cifra_general.txt", "texts/key.md"]
  }
 }

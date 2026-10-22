@@ -183,6 +183,12 @@
       "what": "Push-to-95% pass: the margin entry for 650 beside 591-600 on R9115 f.1 examined at full resolution (crop rotated): it reads '650. w[r]it' with an h written above (writ? with? wait?), not 'way'. No reading fits 'The only ___ is conceived to be that His Majesty will please to prevent'; 650 stays conjecture. The other 12 open code values were checked for side notes in the 300-700 margin lists of both key pages: none present. 201 of 215 (93.5%) stays; 95% needs 205, i.e. 4 more of the 14 single-occurrence blanks, which have no key material.",
       "result": "failed",
       "date": "2026-10-05"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct.txt / ciphertext.txt and reading.txt; key and conjectures in key.py",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -215,6 +221,19 @@
     "notes": "193/215 significant tokens from key values, 8 from values rebuilt here, 14 conjectured (re-measured 30 Sept 2026 with key.py).",
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "Windebank family cipher, Deciphering Branch reconstruction (BL Add MS 32256 f. 4, DECODE R9115)"}
-    ]
+    ],
+    "texts": [
+      {
+        "doc": "R7766",
+        "label": "R7766, Robert Reade to his cousin, Paris, 19 Apr 1641 (Harley MS 7001 ff. 148-149)",
+        "transcription": [
+          "ct.txt",
+          "ciphertext.txt"
+        ],
+        "decryption": "reading.txt",
+        "summary": "Robert Reade, nephew and secretary of Secretary Sir Francis Windebank, who followed him into exile in Paris, writes to a cousin at court, probably Thomas Windebank. The first cipher passage weighs what to do if a proclamation goes out against Windebank: they have not enough against him to confiscate his fortune, his person would not be safe if he returned, and only His Majesty can prevent it; the second says Sir William St Ravy has done Mr Forster no good offices. Read with the Windebank cipher reconstruction DECODE R9115; 14 tokens are conjectures."
+      }
+    ],
+    "key_file": "key.py"
   }
 }

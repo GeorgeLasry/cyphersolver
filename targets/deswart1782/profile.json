@@ -209,6 +209,12 @@
    "kind": "verification",
    "what": "One-key review (Lasry's rule, 14 Oct 2026): R1040 changes codebook at group 180 of image 5459, so the outcome is given per key in outcome.parts: the Croiset 1765 key (R1036 and the second part of R1040, 5,256 of 5,956 groups given a value, counted from R1040_second_key_tokens.tsv) and the missing Rechteren-family code (first 1,928 groups, not solved). The entry is read in part because R1040 is not read in full.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1036 and R1040 DECODE transcriptions and the machine decipherments (R1040 second part only; the first part's key is missing); key = parsed R1038 codebook with context values, plus the scan readings",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -272,6 +278,26 @@
     "detail": "entries lost in the binding shadow of the R1038 key scans, blank or too faint"
    }
   ],
-  "key": "partial"
+  "key": "partial",
+  "texts": [
+   {
+    "doc": "R1036",
+    "label": "R1036, de Swart to van Bleiswijk, 8 Mar 1782",
+    "transcription": "R1036_transcription.txt",
+    "decryption": "R1036_machine_decipherment.txt",
+    "summary": "Johan Isaac de Swart, Dutch resident at St Petersburg, reports to the Grand Pensionary Pieter van Bleiswijk on the French and Spanish answers to the Austro-Russian mediation proposal, Catherine II's Greek project (Grand Duke Constantine taught Greek and given Greek attendants), and Prussia's accession to the Armed Neutrality. Token-level decipherment with the 1765 Croiset key (R1038); 56 groups unread, listed in R1036_unknowns.txt."
+   },
+   {
+    "doc": "R1040",
+    "label": "R1040, de Swart, 29 Nov 1787 (second part, 1765 key)",
+    "transcription": "R1040_transcription.txt",
+    "decryption": "R1040_second_key_machine_decipherment.txt",
+    "summary": "De Swart's despatch of 29 November 1787, coded with two codebooks. The second part, decoded with the 1765 key, reports evidence of an Austrian-French alliance, the attention of the Prussian and British representatives at St Petersburg, Kaunitz and the Bavarian exchange project. The first 1,928 groups use a missing Rechteren-family code and are not deciphered."
+   }
+  ],
+  "key_file": [
+   "R1038_key_parsed.tsv",
+   "R1038_scan_readings.tsv"
+  ]
  }
 }

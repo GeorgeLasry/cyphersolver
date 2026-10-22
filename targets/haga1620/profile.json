@@ -163,6 +163,12 @@
    "kind": "verification",
    "what": "Code values check against context: [19] Buda, [62] Transylvania, [70] Spain, [3] Vizier Azem, [4] Capitan Bassa, [7] Mufti, [58] the States General, [43] the Emperor's ambassador. [50] does not fit its key line and stays open; 37-45 rest on inferred order.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the two readings (cipher spans deciphered in braces) and the key files; no sign-level transcription of the cipher spans exists, so the transcription points to the DECODE records' images",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -179,6 +185,23 @@
   "notes": "Both catalogued ciphertexts read in sense; a handful of short cipher words and the code [50] stay open, and the clear Dutch was read for sense rather than transcribed verbatim.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "key R2118 (alphabet and 116-code nomenclator), filed in the same NA inventory number", "source": "DECODE R2118"}
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "R2113",
+    "label": "R2113 pp. 3+2, Haga to the States General, Constantinople, 31 Mar 1620 (p. 1 is the clear close of 1 Feb 1620)",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/2113",
+    "decryption": "R2113_reading.md",
+    "summary": "Cornelis Haga, Dutch ambassador at Constantinople, reports that the Porte would let Transylvania be resigned to Bethlen Gábor's brother, that Transylvania must keep good correspondence with Hungary, and that the Turks would think better of the Hungarians if they too elected a king of Bohemia; the Grand Vizier, Capitan Bassa and Mufti press him on whether the States mean to extend the truce with Spain, make peace or take up arms again. No sign-level transcription of the cipher spans exists; the reading gives them deciphered in braces, and the images are on the DECODE record."
+   },
+   {
+    "doc": "R2115",
+    "label": "R2115, Haga to the States General, Constantinople, 24 Apr and 4 May 1620",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/2115",
+    "decryption": "R2115_reading.md",
+    "summary": "The envoys of the confederated Bohemian and Hungarian lands from the Pressburg Easter diet were received by the Grand Vizier and the Sultan, and the Porte is resolved to treat with them; in cipher Haga urges that the Hungarian Estates proceed to the election and crowning of a new king, reports the order to the Bassa of Buda to assist them, and warns that nothing done in the name of the Emperor's ambassador is to be believed. No sign-level transcription of the cipher spans exists; the images are on the DECODE record."
+   }
+  ],
+  "key_file": ["KEY_ALPHABET.md", "KEY_NOMENCLATOR.md"]
  }
 }

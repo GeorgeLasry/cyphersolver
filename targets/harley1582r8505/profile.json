@@ -188,7 +188,8 @@
    "what": "f. 263v lines 3.18-3.24 re-read on the image and re-decoded sign by sign with key.json to give one continuous run with its clear context (Italian engineer at Lisbon, whose letters came into the writer's hands; the Lorraine marriage 'pour le rejoindre avec [c]este maison ennemie de la chrestienté e[t] particulierement de l'estat d'Angleterre', 'ceu[s] de Guise en Escosse'); one transcription sign corrected (3.23 b -> T), clear words re-read; key unchanged.",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3551 tokens, 57 types, fr-1600-letters order 4: reading -2.265 per letter; random keys -4.815 (z 7.4); key annealed onto shuffled ciphertext best -3.082 (mean -3.101, z 59.1); annealer on the real text -2.352. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3551 tokens, 57 types, fr-1600-letters order 4: reading -2.265 per letter; random keys -4.815 (z 7.4); key annealed onto shuffled ciphertext best -3.082 (mean -3.101, z 59.1); annealer on the real text -2.352. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): final/f1-f4.txt (the transcription the reading uses) and reading.txt; key key.json / key_letters.txt with the sign chart signs.md", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 3551, "types": 57, "tokens_per_type": 62.3, "score": -2.265, "nulls": {"random keys": {"n": 200, "mean": -4.815, "sd": 0.345, "max": -4.003, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.101, "sd": 0.014, "max": -3.082, "z": 59.1, "p": 0.1429}}, "power": -2.352, "verdict": "pass", "notes": "claimed per-occurrence score -2.265; polyphony 0.0; 95 unread tokens left out; annealer on the real text from random keys reached -2.352"}, 
   "method": "key recovered from ciphertext-only",
@@ -217,6 +218,21 @@
     "detail": "faint ink and shapes ambiguous within a family; ff. 263r and 264r would gain most from the sign-by-sign re-reading the two versos got"
    }
   ],
-  "notes": "The cipher was broken here from the ciphertext alone. ff. 263v and 264v were re-read sign by sign against the recovered key; ff. 263r and 264r keep the first transcription corrected by a constrained pass that swaps a token only between shapes the second reading proved confusable and only where the word model gains clearly - 77 tokens, 2% of the text, all logged in emendations_all.txt."
+  "notes": "The cipher was broken here from the ciphertext alone. ff. 263v and 264v were re-read sign by sign against the recovered key; ff. 263r and 264r keep the first transcription corrected by a constrained pass that swaps a token only between shapes the second reading proved confusable and only where the word model gains clearly - 77 tokens, 2% of the text, all logged in emendations_all.txt.",
+  "texts": [
+   {
+    "doc": "R8505",
+    "label": "R8505, \"L'Estat du Roy de Navarre et de son party en France\" (Harley MS 1582 ff. 263-264)",
+    "transcription": [
+     "final/f1.txt",
+     "final/f2.txt",
+     "final/f3.txt",
+     "final/f4.txt"
+    ],
+    "decryption": "reading.txt",
+    "summary": "A French political memoir, written after 1580, surveying Henri de Navarre as a political asset for an outside reader: his two 'qualitez' (first prince of the blood, chief of the reformed churches), the places and garrisons he holds in Guyenne, Languedoc, Dauphiné and Provence, his following, his alliances and the marriage question; it belongs with Navarre's embassies to the Protestant powers in the mid-1580s. The cipher carries the sensitive clauses inline in the clear French (d'Espernon, Beaucaire sur le Rosne, Besiers, Carcassonne)."
+   }
+  ],
+  "key_file": ["key.json", "key_letters.txt", "signs.md"]
  }
 }
