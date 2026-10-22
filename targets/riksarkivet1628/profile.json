@@ -140,6 +140,12 @@
    "kind": "verification",
    "what": "Split from the former catalogue-207 group entry under the one-key rule (George Lasry, 14 Oct 2026): this entry keeps the Bremen band key (R4330-R4331). R4282 is George Lasry's decode4282; R4284, R4306, the Rusdorff letters R4333-R4337 and E 708 (R4338-R4341) are other ciphers, now riksarkivet4284, an R4306 entry (folded on 18 Oct 2026 into George Lasry's contributed sweden4306), rusdorff1628 and oxenstierna1633. Earlier steps on those records moved to their profiles (for R4306, now sweden4306).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): bremen_transcription.txt (numbers with the glosses of the time) and bremen_decoded.txt (every group deciphered); band key copied from NOTES.md to texts/key.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -200,6 +206,16 @@
     "role": "key or decipherment used",
     "note": "the clerk's interlinear glosses on the Bremen 1631 letters (~80% of groups), aligned to rebuild the band key"
    }
-  ]
+  ],
+  "texts": [
+   {
+    "doc": "bremen1631",
+    "label": "R4330 (27 Nov 1631) and R4331 (2? Dec 1631)",
+    "transcription": "bremen_transcription.txt",
+    "decryption": "bremen_decoded.txt",
+    "summary": "Two German letters of Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius, Swedish resident at Hamburg, pressing for Swedish succour (foot, dragoons, 'etliche tausend') against Gronsfeld's and Bönninghausen's imperial/League troops in Westphalia; he fears the Lüneburg country will be ravaged and asks that the Stift be included in the accord if the Neuenburg garrison marches out. Both letters are in one file each (R4330 and R4331 image sections)."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }
