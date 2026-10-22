@@ -125,7 +125,8 @@
    "kind": "verification",
    "what": "Reading agrees with Avenel word for word; nomenclature codes resolved from his footnotes.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the cryptiana transcription; saved the final.py decryption; copied the Avenel reading and the key table from SOLUTION.md to texts/", "result": "worked"}
  ],
  "outcome": {
   "method": "key recovered based on adjacent plaintext",
@@ -142,6 +143,11 @@
   "credits": [
     {"who": "tomokiyo", "role": "transcription", "note": "cryptiana transcription of BnF fr. 3829 ff. 87, 89 (richelieu1629.txt), the source text of the solve", "source": "cryptiana, Unsolved Historical Ciphers"},
     {"who": "avenel", "role": "prior solution", "note": "deciphered both letters in Lettres de Richelieu t. III (key 'recomposé'); found after the reading, used to confirm it and to name ten nomenclator codes", "date": "1858", "source": "Avenel, Lettres, instructions diplomatiques et papiers d'État du cardinal de Richelieu, t. III (1858), pp. 368-369, 381-383"}
-  ]
+  ],
+  "texts": [
+   {"doc": "ff87-89", "label": "ff. 87 and 89 (7 and mid-July 1629), recovered key applied", "transcription": "richelieu1629.txt", "decryption": "texts/ff87-89_decryption.md", "summary": "Richelieu to M. de Rancé, July 1629: the King's anger at Bonneuil, a wish that the Duchesse de Chevreuse be seized near the frontier and taken to Vincennes, the cabals of Lorraine with Spain; and in mid-July the stalled peace with England, Henrietta Maria's French bishop and priests, and Brassac proposed for the Rome embassy.", "note": "Transcription: S. Tomokiyo's (cryptiana), with the slips listed in SOLUTION.md."},
+   {"doc": "ff87-89", "label": "ff. 87 and 89, Avenel's printed text (1858)", "transcription": "richelieu1629.txt", "decryption": "texts/ff87-89_decryption_avenel.md", "summary": "The same two letters as printed by Avenel (Lettres de Richelieu III, nos. CXCIX and CCV), which agree with the key recovered here."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

@@ -116,7 +116,8 @@
    "what": "Run 1 read as one run across the line break with 6 as null: D x ◇ ◇ Δ Ɗ X ⊕ ꟻ ʃ = v i l l e q u i e r; run 3 M x ◇ h = k y l l with the same x and ◇ and 6 again null; 47/59/74 name codes.",
    "result": "worked",
    "date": "2026-09-21"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked ciphertext.txt and plaintext.txt", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -137,6 +138,9 @@
   "notes": "Read at the time; all four runs re-read sign by sign and the letter values rebuilt (partial alphabet, three name codes, null 6). DECODE recipient 'unknown' is Walsingham; place is Paris.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment of the four runs on f. 74v"}
+  ],
+  "texts": [
+   {"doc": "R8503", "label": "R8503, Paris, 19 Sept 1586: the four cipher runs", "transcription": "ciphertext.txt", "decryption": "plaintext.txt", "summary": "Sir Edward Stafford at Paris to Walsingham, 19 September 1586, a clear despatch on Mary Queen of Scots, Mendoza and Charles Paget; the four cipher runs name Villequier, the King of Navarre, the plan to kill him and the Prince of Condé, and the Duke of Guise's guard.", "note": "The letter is otherwise in clear; only the cipher runs are transcribed."}
   ]
  }
 }

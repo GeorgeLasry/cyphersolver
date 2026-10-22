@@ -116,6 +116,12 @@
    "kind": "verification",
    "what": "Split from the former combined target hm1645 under the one-key rule (George Lasry, 14 Oct 2026): R929 is the only letter of the six in the SP106-5 key, and the only one where his key was applied here before his plaintext was compared. Folder, profile, page and ledgers separated; earlier steps are kept as recorded.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the DECODE record holding Pettersson's transcription and Lasry's plaintext; no local copy",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -163,6 +169,16 @@
     "role": "transcription",
     "note": "DECODE ciphertext transcription of f. 247 (R929) used",
     "date": "2019"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R929",
+    "label": "R929, Paris, 26 Jan 1646",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/929",
+    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/929",
+    "summary": "Henrietta Maria's household at Paris to 'Sir': thanks for the weekly news of the affairs of <241> (probably the King), hopes they can hold until relief takes effect, and the embassage and Prince Charles's marriage.",
+    "note": "Transcription: Sofia Pettersson's (DECODE, 2019); decryption: George Lasry's key and interlinear plaintext (DECODE, 23 Oct 2020), both files on the DECODE record. The local copies in decode/ are git-ignored and not in this checkout; a committed copy is wanted."
    }
   ]
  }

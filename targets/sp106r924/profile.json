@@ -111,6 +111,12 @@
    "kind": "verification",
    "what": "Split from the former combined target hm1645 under the one-key rule (George Lasry, 14 Oct 2026): R924 is the only letter of the six in the SP106-8 key. Folder, profile, page and ledgers separated; the earlier step is kept as recorded.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the DECODE record holding Pettersson's transcription and Lasry's plaintext; no local copy",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -158,6 +164,16 @@
     "role": "transcription",
     "note": "DECODE ciphertext transcription of ff. 235-236",
     "date": "2019"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R924",
+    "label": "R924, Paris, January 1646",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/924",
+    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/924",
+    "summary": "A writer at Paris to Charles I against Sir H. Compton's journey and the treaty for Prince Charles's marriage with Portugal, on Montreuil's mission, the frost that stopped the river traffic, and levies of five or six thousand men to send over.",
+    "note": "Transcription: Sofia Pettersson's (DECODE, 2019); decryption: George Lasry's key and interlinear plaintext (DECODE, 23 Oct 2020), both files on the DECODE record. The local copies in decode/ are git-ignored and not in this checkout; a committed copy is wanted."
    }
   ]
  }

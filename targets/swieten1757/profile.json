@@ -116,6 +116,12 @@
    "kind": "verification",
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R955 (1757 table, 202-586, read from the decipherment on its own page) stays in swieten1757; R956/R957 (the 1759 table, 100-442, rebuilt ciphertext-only) moved to swieten1759 with msolve.py, dec.py, key.json, overrides.json, runs.txt, validation.tsv. A reveal of R955 was built from the 1757 values in NOTES.md (build_reveal955.py): 86 of 89 groups valued.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked cipher/R955.txt and READING.md; copied the 1757 table from NOTES to texts/key.md",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -147,6 +153,17 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "cipher/R955.txt (89 groups): every group falls under the contemporary decipherment; 86 of them carry a value in the aligned 1757 table (NOTES.md), 400, 297 and 586 inside \"conclure même\" do not."
+  "fraction_read_source": "cipher/R955.txt (89 groups): every group falls under the contemporary decipherment; 86 of them carry a value in the aligned 1757 table (NOTES.md), 400, 297 and 586 inside \"conclure même\" do not.",
+  "texts": [
+   {
+    "doc": "R955",
+    "label": "R955, f. 141 (1757-58)",
+    "transcription": "cipher/R955.txt",
+    "decryption": "READING.md",
+    "summary": "Gottfried van Swieten at Bonn to Count Cobenzl at Brussels, 1757-58: the magistrate deliberated what to do if the French had to abandon Hanau, dared to advise neutrality and even decided on it, but keeps it a profound secret.",
+    "note": "Decryption: the letter's own clear copy below the numbers; groups 400, 297, 586 are not split."
+   }
+  ],
+  "key_file": "texts/key.md"
  }
 }

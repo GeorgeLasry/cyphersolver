@@ -111,6 +111,12 @@
    "kind": "verification",
    "what": "Split from the former combined target hm1645 under the one-key rule (George Lasry, 14 Oct 2026): R787 is the only letter of the six in the SP106-2 key. Folder, profile, page and ledgers separated; the earlier step is kept as recorded.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the DECODE record holding Pettersson's transcription and Lasry's plaintext; no local copy",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -153,6 +159,16 @@
     "role": "transcription",
     "note": "DECODE ciphertext transcription of ff. 216-217",
     "date": "2019"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "R787",
+    "label": "R787, 19/29 July 1645",
+    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/787",
+    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/787",
+    "summary": "A French news letter (a duplicate) forwarded to Henrietta Maria's household: the Parlement de Paris and the duc d'\u00c9pernon, an envoy refusing to be heard except as ambassador, Enghien taking Heidelberg, the fort of Linck taken, Piccolomini entrenched round Dunkirk, a check to Montrose.",
+    "note": "Transcription: Sofia Pettersson's (DECODE, 2019); decryption: George Lasry's key and interlinear plaintext (DECODE, 23 Oct 2020), both files on the DECODE record. The local copies in decode/ are git-ignored and not in this checkout; a committed copy is wanted."
    }
   ]
  }

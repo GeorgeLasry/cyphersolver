@@ -70,7 +70,8 @@
    "kind": "solver", "technique": ["simulated annealing", "EM alignment", "language-model scoring"],
    "what": "Compared key to manuscript and attempted numeric-label alignment and language-model solving. French 5-gram homophonic annealing (48 restarts x 10M) and English passes gave nonsense; no label-to-glyph concordance could be fixed from the short published opening.",
    "result": "failed"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Tomokiyo's numeric transcription and his solution page by URL", "result": "partial"}
  ],
  "outcome": {
   "class": "already solved",
@@ -90,6 +91,9 @@
     {"who": "biermann", "role": "key or decipherment used", "note": "2023 solution with Lasry; published opening and key checked on the manuscript", "date": "2023", "source": "https://cryptiana.web.fc2.com/code/mary3.htm"},
     {"who": "lasry", "role": "key or decipherment used", "note": "2023 solution with Biermann; published opening and key checked on the manuscript", "date": "2023", "source": "https://cryptiana.web.fc2.com/code/mary3.htm"},
     {"who": "tomokiyo", "role": "transcription", "note": "published the Biermann-Lasry solution, glyph key and numeric transcription (mary3.htm)", "date": "2026-09-16", "source": "https://cryptiana.web.fc2.com/code/mary3.htm"}
+  ],
+  "texts": [
+   {"doc": "no50I", "label": "SP 53/11 no. 50I, f. 138 (21 July 1581 enclosure)", "transcription": "SP53_11_50b.txt", "decryption": "https://cryptiana.web.fc2.com/code/mary3.htm", "summary": "The cipher enclosure Walsingham sent to John Somer on 21 July 1581, found in an intercepted letter of Mary, Queen of Scots; its opening reads \"The beirar is domestik servand to the erle of shrevisbvry\".", "note": "Transcription: Tomokiyo's numeric transcription. Decryption: Biermann and Lasry's 2023 solution, published in part by Tomokiyo (cryptiana, 16 Sept 2026), a modern publication linked, not copied; the full plaintext is not published."}
   ]
  },
  "system": {

@@ -117,7 +117,8 @@
    "kind": "solver", "technique": ["EM alignment", "repeat/pattern analysis", "plaintext matching"],
    "what": "Hard-EM alignment of cipher runs with DECODE's transcription of the glosses (align.py) to rebuild the key: too noisy, 154/373 groups in mismatched runs; key not rebuilt.",
    "result": "failed"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked DECODE's transcription with its interlinear-gloss lines; a clean transcription of the gloss is missing", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -134,6 +135,9 @@
   "notes": "Read at the time (interlinear decipherment); date corrected to 9 Jan 1706 and addressee to Rákóczi; nothing new read.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment over almost every group"}
+  ],
+  "texts": [
+   {"doc": "R473", "label": "R473, 9 Jan 1706", "transcription": "DOC_R473_D3610_3610.txt", "decryption": "DOC_R473_D3610_3610.txt", "summary": "László Vetési Kökényesdi, as 'Cassimirus Miloftzki', to Ferenc Rákóczi II, 9 January 1706, in Hungarian with numerical cipher runs; the interlinear glosses name France, Italy, Spain, Holland and England, November and December, and Ráday in the third person.", "note": "DECODE's transcription (MA, 2020) holds both the cipher and, in its PLAINTEXT lines, a poor transcription of the contemporary interlinear decipherment. A clean transcription of the gloss is project work; Ráday Pál iratai I (1955) item 102 n. 1 was not checked."}
   ]
  }
 }

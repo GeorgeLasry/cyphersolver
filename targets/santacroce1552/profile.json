@@ -254,7 +254,8 @@
    "kind": "reading",
    "what": "Re-read R9's cancelled lines at full resolution; long stretches align under the key (Corsica, fortuna, come ne, dove, aviso del Strozzi): the cancelled cipher is the clear P.S. below, not printed in 1972.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the 2016 DECODE transcriptions; saved decode.py output with Lasry's key for R6, R7, R8, R10; R9 cancelled lines from r9_cancelled.txt; Lestocquoy 1972 cited, not copied", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -272,6 +273,13 @@
     {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed letter key on DECODE R6-R10 (with a scan of Lestocquoy's edition), applied as a check and to read R9's cancelled lines", "date": "2020-10-24", "source": "DECODE R6-R10"},
     {"who": "lestocquoy", "role": "key or decipherment used", "note": "Acta Nuntiaturae Gallicae 9 prints all five letters with the cipher passages deciphered", "date": "1972", "source": "J. Lestocquoy (ed.), Correspondance du nonce en France Prospero Santa Croce (1552-1554), Acta Nuntiaturae Gallicae 9 (1972)"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "decifrati bound in Nunziatura di Francia 3"}
+  ],
+  "texts": [
+   {"doc": "R6", "label": "R6, no. 67, Poissy, 26 Mar 1553", "transcription": "decode/DOC_R6_D1624_1624.txt", "decryption": "texts/R6_decryption.md", "summary": "Prospero Santa Croce, nuncio in France, to Cardinal Innocenzo del Monte. There is close dealing with the Duke, perhaps for money from merchants, a league or artillery on the excuse the Duke of Florence used at Siena.", "note": "Full text (deciphered at the time) in J. Lestocquoy (ed.), Correspondance du nonce en France Prospero Santa Croce, ANG 9 (1972); not copied."},
+   {"doc": "R7", "label": "R7, no. 71, Poissy, 5 Apr 1553", "transcription": "decode/DOC_R7_D1625_1625.txt", "decryption": "texts/R7_decryption.md", "summary": "Prospero Santa Croce, nuncio in France, to Cardinal Innocenzo del Monte. The cipher passage printed by Lestocquoy pp. 162-163, on a supreme general for Italy with twenty thousand scudi.", "note": "Full text (deciphered at the time) in J. Lestocquoy (ed.), Correspondance du nonce en France Prospero Santa Croce, ANG 9 (1972); not copied."},
+   {"doc": "R8", "label": "R8, no. 112, Abbaye d'Ourscamp, 28 Sept 1553", "transcription": "decode/DOC_R8_D1626_1626.txt", "decryption": "texts/R8_decryption.md", "summary": "Prospero Santa Croce, nuncio in France, to Cardinal Innocenzo del Monte. The Most Christian King is displeased with the Corsica enterprise but resolves to maintain it, partly with provision of forty thousand scudi for the affairs of Parma.", "note": "Full text (deciphered at the time) in J. Lestocquoy (ed.), Correspondance du nonce en France Prospero Santa Croce, ANG 9 (1972); not copied."},
+   {"doc": "R10", "label": "R10, second letter of 23 Dec 1553", "transcription": "decode/DOC_R10_D1627_1627.txt", "decryption": "texts/R10_decryption.md", "summary": "Prospero Santa Croce, nuncio in France, to Cardinal Innocenzo del Monte. Many urge His Majesty to make war in Italy.", "note": "Full text (deciphered at the time) in J. Lestocquoy (ed.), Correspondance du nonce en France Prospero Santa Croce, ANG 9 (1972); not copied."},
+   {"doc": "R9", "label": "R9, no. 124, Paris, 14 Dec 1553: the three cancelled lines", "transcription": "r9_cancelled.txt", "decryption": "r9_cancelled.txt", "summary": "Santa Croce to del Monte, 14 Dec 1553. Three struck-through cipher lines, not printed by Lestocquoy, which correspond to the clear postscript written below them: the royal fleet that left for Corsica has met a storm, no one knows where it is, and there is no news of Strozzi.", "note": "Uncertain reading of the cancelled lines only (the stretches aligned with Lasry's key are in the file's comments); the rest of the letter's cipher has no DECODE transcription. Full text in Lestocquoy 1972, p. 240."}
   ]
  }
 }

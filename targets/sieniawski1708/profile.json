@@ -115,6 +115,12 @@
       "kind": "verification",
       "what": "Entry split on 14 Oct 2026 from sieniawski1708 under the one-key rule (Lasry, 14 Oct 2026): the Vienna-Schenck letters are schenck1706; the Sieniawski letters are one entry per key: key A (sieniawski1708), key B (turculet1709), the R7475 table (r7475), the Chomentowski syllabary (chomentowski1713). ",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Kaczka 2012 by URL and the R7473 ten-line check; the other letters not transcribed",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -150,6 +156,19 @@
         "who": "contemporary",
         "role": "key or decipherment used",
         "note": "interlinear glosses on the 1709 letters and on R7473"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "R7468-R7474, R7477-R7480, R7483",
+        "label": "Kaczka 2012 edition; R7473 p. 17 checked",
+        "transcription": "sien/R7473_check.txt",
+        "decryption": [
+          "https://revistadanubius.ro/wp-content/uploads/2023/07/xxx_05_KACZKA_format_a.pdf",
+          "sien/R7473_check.txt"
+        ],
+        "summary": "Letters of Constantin Brâncoveanu, prince of Wallachia, and Constantin Cantacuzino to Hetman Adam Mikołaj Sieniawski, 1709-1714, in Polish in the Wallachian chancellery key, with contemporary interlinear decipherments.",
+        "note": "Decryption: M. W. Kaczka, Danubius XXX (2012), pp. 101-140, a modern edition, linked, not copied. The project transcribed and decoded only the first ten lines of R7473 (sien/R7473_check.txt); the other letters are not transcribed."
       }
     ]
   }

@@ -97,7 +97,8 @@
    "kind": "literature search",
    "what": "British History Online, CSP Spain XII, Feb 1554 16-20: 'Simon Renard to Prince Philip', 19 Feb, Simancas E. 808, Spanish translation, ~650 words, opening 'Since I last wrote' = the cipher's opening.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the CSP Spain XII calendar text (Tyler 1949) by URL; no transcription of the ciphertext and no local copy of the decipherment", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -116,6 +117,9 @@
     {"who": "tyler", "role": "key or decipherment used", "note": "CSP Spain XII calendars the letter from its contemporary Spanish decipherment (Simancas E. 808)", "date": "1949", "source": "R. Tyler (ed.), Calendar of State Papers, Spain XII (1949), 19 Feb 1554"},
     {"who": "contemporary", "role": "prior solution", "note": "Spanish decipherment made at the time (Simancas E. 808)"},
     {"who": "tomokiyo", "role": "prior solution", "note": "identifies the key (PP1) and reads the opening (cryptiana spanish2C)", "date": "2026", "source": "cryptiana spanish2C"}
+  ],
+  "texts": [
+   {"doc": "R9959", "label": "R9959, 19 Feb 1554", "decryption": "https://www.british-history.ac.uk/cal-state-papers/spain/vol12/pp100-123", "summary": "Simon Renard in London to Prince Philip, 19 February 1554: French plots discovered show that Courtenay and the Lady Elizabeth, through Peter Carew, Wyatt, Crofts and Lord Thomas Grey, conspired to throw the Queen of England into the Tower; the powers sent by way of France have come and the Pope has granted a dispensation.", "note": "Decryption: the English calendar text (Royall Tyler, CSP Spain XII, 1949, pp. 100-123) of the Spanish version of the contemporary decipherment; a modern edition, linked, not copied. The decipherment itself ('no. 21' in AGS E. 808) was not located and the French plaintext not rebuilt. No transcription of the ciphertext (DECODE images not transcribed)."}
   ]
  }
 }

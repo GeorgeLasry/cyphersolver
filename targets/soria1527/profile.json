@@ -105,7 +105,8 @@
    "kind": "verification",
    "what": "Redated the letter to 1527 from its content (Genoa lost, Pope at Orvieto, Leyva at Milan, Bourbon's jewels) and the docket.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed contemporary Claro; no transcription of the ciphertext", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -118,6 +119,9 @@
   "notes": "Read at the time; decipherment f. 34r (torn in B/C). DECODE date 1517 corrected to 1527. Catalogue entry 142 removed; no write-up.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "court decipherment \"Claro\" bound as f. 34r"}
+  ],
+  "texts": [
+   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the Claro, f. 34r", "decryption": "claro.md", "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "Decryption: the court's contemporary decipherment ('Claro', sections A-C), transcribed in claro.md; B and C are torn. No sign-by-sign transcription of the ciphertext (project work)."}
   ]
  }
 }

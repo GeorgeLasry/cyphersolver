@@ -132,7 +132,8 @@
    "kind": "access",
    "what": "Looked for images of ff.100-101 elsewhere: no other DECODE record in records.json covers them (R2989 f.33, R9220 f.110), and the BL catalogue record 040-002109587 (Forbes Papers V) has no digitised content.",
    "result": "failed"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the Forbes 1740 excerpts; no transcription (no images on the record)", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -151,6 +152,10 @@
   "credits": [
     {"who": "forbes", "role": "key or decipherment used", "note": "Full View i (1740) pp. 324-25, 328 prints both letters with the cipher deciphered", "date": "1740"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment on the originals (\"portions in cipher, deciphered\")"}
+  ],
+  "texts": [
+   {"doc": "R3026a", "label": "8 Feb 1560, to Cecil", "decryption": "forbes1_8feb.txt", "summary": "Throckmorton at Paris to Cecil, 8 February 1560: a passport for Thomas Keys, Huntly's servant; Aumale to Metz; the Imperial ambassadors (CSP Foreign ii no. 706).", "note": "Decryption: Forbes, Full View I (1740), pp. 324-325, which prints the contemporary decipherment (archive.org OCR excerpt). No transcription: DECODE R3026 has no images."},
+   {"doc": "R3026b", "label": "20 Feb 1560, to the Council", "decryption": "forbes1_20feb.txt", "summary": "Throckmorton at Blois to the Lords of the Council, 20 February 1560: the audience put off until Amboise; coldness at court (CSP Foreign ii no. 751).", "note": "Decryption: Forbes, Full View I (1740), p. 328 (archive.org OCR excerpt). No transcription: DECODE R3026 has no images."}
   ]
  }
 }
