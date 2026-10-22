@@ -1,0 +1,39 @@
+このリポジトリは、部分ごとに次のライセンスで公開する。
+
+1. コード（src/ と tests/ の中のファイル）: MIT License
+   src/decode.py、src/control.py、src/calib.py は Harumi-Matsuba/matignon1586-public のものを元にした。
+2. 文書とデータの自作部分（README.md、README.en.md、SOURCES.md、SOURCES.en.md、docs/、data/、calib/、second/、third/、codex/、check/）:
+   Creative Commons Attribution 4.0 International (CC BY 4.0)
+   https://creativecommons.org/licenses/by/4.0/
+   ただし data/key.tsv の table と burford の行の値と、data/transcription_*.txt の記号の名前は、
+   Brett Burford 氏の鍵と見本表（CC BY 4.0、
+   https://github.com/BravoBravoIX/mayenne-forget-1586-cipher-reading 、コミット cc0daf74）による。
+   table の値の元は、友清理士氏が復元した表（Cryptiana）で、その表の権利は同氏にある。
+   calib/ref_f104r_l18-24.txt と calib/ref_signs_f104r_burford.txt は、Brett Burford 氏の
+   同じリポジトリ（data/known-text/、CC BY 4.0）から写したもの。
+
+引用した史料・他の研究の内容には、上のライセンスは及ばない。
+
+------------------------------------------------------------------------
+MIT License
+
+Copyright (c) 2026 Harumi-Matsuba
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+------------------------------------------------------------------------

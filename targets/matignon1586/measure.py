@@ -64,7 +64,11 @@ LEAVES = [
     # matignon1586c3, measured there with its own key; this script measures Cipher-1 only.
 ]
 
-KEY = json.load(open('key.json', encoding='utf-8'))
+# --key FILE measures with another key (e.g. key_contrib.json); its decodes are cached and its output written
+# under a suffix taken from the file name, so the key.json measure (measure.json) is left as it was.
+KEYFILE = sys.argv[sys.argv.index('--key') + 1] if '--key' in sys.argv else 'key.json'
+SUFFIX = '' if KEYFILE == 'key.json' else '_' + os.path.splitext(os.path.basename(KEYFILE))[0]
+KEY = json.load(open(KEYFILE, encoding='utf-8'))
 
 
 def keyed(tok):
@@ -211,7 +215,7 @@ def main():
         hdr += f" {'scramb':>7} {'corr':>6}"
     print(hdr)
     for name, files, page_lines, note in LEAVES:
-        tag = name.replace(' ', '_').replace('.', '')
+        tag = name.replace(' ', '_').replace('.', '') + SUFFIX
         if files:
             res = decode_leaf(files, KEY, tag)
             n, read, ctx, unk, text, mask = score(res)
@@ -249,8 +253,8 @@ def main():
     if control:
         corr_read = sum(r.get('corrected_of_transcribed', 0) * r['tokens_transcribed'] for r in rows)
         print(f"scrambled-control corrected: {corr_read / T['tok']:.3f} of transcribed, {corr_read / tot:.3f} of the whole target")
-    json.dump(dict(rule=__doc__.split('THE RULE')[1].split('"""')[0].strip(), leaves=rows, totals=T),
-              open('measure.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    json.dump(dict(rule=__doc__.split('THE RULE')[1].split('"""')[0].strip(), key=KEYFILE, leaves=rows, totals=T),
+              open('measure' + SUFFIX + '.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 
 
 if __name__ == '__main__':

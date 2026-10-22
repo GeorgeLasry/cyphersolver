@@ -452,7 +452,15 @@
    "kind": "scholar's key",
    "by": "Satoshi Tomokiyo",
    "year": 1586,
-   "note": "cryptiana, Henry III's Cipher with Ambassadors; checked and extended by alejandrozarco on ff. 277r/279-280 (PR #25)."
+   "note": "cryptiana, Henry III's Cipher with Ambassadors; checked and extended by alejandrozarco on ff. 277r/279-280 (PR #25) and by Brett Burford on fr. 15570 ff. 271-273 (issue #44)."
+  },
+  {
+   "id": "k-tomokiyo-mayenne2",
+   "label": "Tomokiyo's table of Mayenne-Forget's Cipher-2",
+   "kind": "scholar's key",
+   "by": "Satoshi Tomokiyo",
+   "year": 1586,
+   "note": "cryptiana, Henry III's Cipher with Ambassadors; checked by Brett Burford on fr. 15573 ff. 103v-104r and extended with code values from five more letters deciphered at the time (issue #46)."
   },
   {
    "id": "k-tomokiyo-1522",
@@ -2433,7 +2441,13 @@
    "key": "k-tomokiyo-matignon3",
    "target": "matignon1586c3",
    "how": "adapted",
-   "note": "applied by alejandrozarco to f. 276 and checked on f. 179; extended with ### = et, the split columns and the C-family signs"
+   "note": "applied by alejandrozarco to f. 276 and checked on f. 179; extended with ### = et, the split columns and the C-family signs; applied by Brett Burford to fr. 15573 ff. 379-381 with six values from fr. 15570 ff. 271-273"
+  },
+  {
+   "key": "k-tomokiyo-mayenne2",
+   "target": "mayenne1586c2",
+   "how": "adapted",
+   "note": "applied by Harumi-Matsuba to fr. 15572 ff. 218-219 and fr. 15573 f. 120, and by Brett Burford to f. 385, with code values Burford aligned on letters deciphered at the time"
   },
   {
    "key": "k-lasry-sp106-5",
@@ -3544,6 +3558,7 @@
   {"source": "s-cyphersolver", "key": "k-bayonne1529"},
   {"source": "s-tomokiyo", "key": "k-tomokiyo-bayonne1529"},
   {"source": "s-tomokiyo", "key": "k-tomokiyo-matignon3"},
+  {"source": "s-tomokiyo", "key": "k-tomokiyo-mayenne2"},
   {"source": "s-cyphersolver", "key": "k-worcester1527"},
   {"source": "s-decode", "key": "k-r5258"},
   {"source": "s-decode", "key": "k-r5256"},

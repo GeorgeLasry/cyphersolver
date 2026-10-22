@@ -1,15 +1,20 @@
 # Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: in progress. Read in part, measured 22 Sept 2026 and recalculated on Cipher-1 alone 14 Oct 2026: 31% of
-the target's cipher tokens read as sense (4,325 of ~14,082; 4,325 of 12,994 transcribed figures, 33%; 24% after a
-scrambled-key control), key for Cipher-1 recovered. Most gaps are workable (see "Remaining gaps"), so the target is
-not closed. Per leaf: "Coverage, measured" below; `measure.py`, `measure.json`.
+Status: in progress. Read in part. Re-measured 21 Oct 2026 after Michael Brackx's contributions (issues #64, #68-#71;
+section "Contributions of 21 Oct 2026" below): 39% of the target's cipher tokens read as sense (5,480 of ~14,082;
+42% of the 12,994 transcribed; 32% after a scrambled-key control), with `measure.py --key key_contrib.json`
+(`measure_key_contrib.json`). The 22 Sept measure with `key.json` alone was 31% (4,325; `measure.json`).
+**ff. 143r-v, 149v-150 and 154r-v were deciphered at the time**: ff. 155-157 are contemporary clear copies of them
+(found by Brackx, #70; checked on the images here). Most other gaps are workable (see "Remaining gaps"), so the
+target is not closed and has no page yet.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder keeps **Mayenne–Forget's
 Cipher-1** only. Matignon's **Cipher-3** leaves (fr. 15572 f. 276 and fr. 15571 f. 179, read by alejandrozarco in
 PR #25) are a different cipher with their own entry and page: [`targets/matignon1586c3/`](../matignon1586c3/NOTES.md)
 (`f276/` and `f179/` moved there). f. 79r is Cipher-1 (see below). The genuine Cipher-2 leaves, fr. 15572 ff. 218–219,
-were never attempted and are in no entry; catalogue item 12 is restored to them. fr. 15572 f. 43, solved by George
+were not attempted here; Harumi-Matsuba read them (issue #49) and they are now the entry
+[`targets/mayenne1586c2/`](../mayenne1586c2/NOTES.md), with two more Cipher-2 letters of fr. 15573 (ff. 120, 385).
+fr. 15572 f. 43, solved by George
 Lasry in 2022, is not a document of this entry and carries no credit here.
 
 Catalogue item 12 (`CATALOGUE.md`), class B, solvability 5. Ten leaves that S. Tomokiyo
@@ -342,24 +347,81 @@ scores at its scrambled floor: unread, as `f110_status.md` says. Line counts che
 f. 196 has 31 cipher lines (26 transcribed; untranscribed are the part-line after *auquel*, the first
 three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transcribed).
 
+## Contributions of 21 Oct 2026 (Michael Brackx, issues #64, #68-#71)
+
+Michael Brackx (@brackxm), working with Claude Code (Opus 5.5), posted five issues on 21 Oct 2026. They are folded
+in here as contributed work, with credit in `profile.json` (provenance `mixed`). He gave no licence and no
+repository, so his readings are summarised here, not copied; the issues hold his full text and figure tables.
+None of it was checked by a second person against the images; what was checked here is listed at the end.
+
+| issue | leaves | what he did | adopted here |
+|---|---|---|---|
+| #64 | ff. 196, 201 | joint figure-by-figure alignment of the two encipherments (914 columns, 487 identical), beam decode, f. 201 re-read on the image | all four names: **Sainct-Chamarand, la Barge, Montberault, la Binault**; content (Mayenne's fever, Matignon pressed to come, two trenches, battery of fifteen cannon); q = s (our own f. 196 head crib already implies it), f = h, ss = h; the clear phrase *Le regard dud. siege il s'advance fort* inside the f. 201 cipher block (checked) |
+| #68 | f. 143r-v | decode with the corrected key; verso ll. 1-7 checked on the image | the treaty with the captain of **Castets** (12,000 écus in three months, leave to sell his property, a pardon to be registered by the Parlement); T= = r, a = a/m, c = p/l; 62 *peut*, 33 *vostre*, 40 *bien*, 54 *aussi*. **Not adopted:** 44 = *Sire* (he withdrew it himself); code 54's first value was inconsistent until the copy fixed it |
+| #69 | f. 173 | decode; nine lines checked on the image | the credit crisis: no means to pay two musters, the town refuses to contribute on the strength of letters from the King, no one will stand surety, only merchants of Paris lend on the writer's word; 4+ = m/n, 8 = g/e. **Not adopted:** 79 = *pour* (one context). His notation block is pasted twice in the issue |
+| #70 | ff. 154r-v, 155-157 | **found that ff. 155-157 are contemporary clear copies** of f. 143r-v (f. 155r-v), the ff. 149v-150 cipher (ff. 155v-156r) and f. 154r-v (f. 157r); read the copies by eye and aligned them with the decodes; found the f. 154v cipher (two blocks of about 11 lines) | the copies as the text of those leaves; codes 33 *vostre*, 36 *toutesfois* (not *avant*), 40 *bien*, 49 *comme* (not a null), 53 *affin*, 54 *aussi*, 62 *peut*, 76 *roi de Navarre*, 88 *Monsieur du Mayne*, 104 *mil*, `hash` *coustume* |
+| #71 | ff. 123-124 | U = u/e/a, d = s/c, q = s/o/a (merged figure classes in our transcription); canvases 128-139 checked, no clear copy | the letter sets and the outline (no contributions without garrisons, the troops cannot be kept, the bearer sent for the King's intention, relief of places); partial, as he says: f. 123r still does not read |
+
+**Key.** `key_contrib.json` (built by `mk_key_contrib.py`) is `key.json` plus his letter sets and the copy codes.
+Not taken: `BOX` = u (in this transcription `BOX` also marks figures that could not be read), 44 = *Sire*,
+79 = *pour*, and his figure names that have no token in our transcription (δ, ω, λ, ʒ as he names them).
+
+**Re-measured (21 Oct 2026).** `measure.py --key key_contrib.json --control`, same rule as 22 Sept:
+
+| leaf | read / transcribed, key.json | with key_contrib.json | scrambled floor | corrected |
+|---|---|---|---|---|
+| f. 110 | 0.10 | 0.09 | 0.09 | 0.01 |
+| f. 123r | 0.21 | 0.27 | 0.15 | 0.14 |
+| f. 123v | 0.32 | 0.39 | 0.15 | 0.28 |
+| f. 124r | 0.26 | 0.35 | 0.10 | 0.28 |
+| f. 124v | 0.19 | 0.38 | 0.12 | 0.29 |
+| f. 143r | 0.59 | 0.63 | 0.09 | 0.59 |
+| f. 143v | 0.55 | 0.66 | 0.07 | 0.64 |
+| f. 150 | 0.42 | 0.48 | 0.08 | 0.43 |
+| f. 154 | 0.47 | 0.56 | 0.08 | 0.53 |
+| f. 173 | 0.28 | 0.49 | 0.09 | 0.44 |
+| f. 196 | 0.45 | 0.54 | 0.07 | 0.50 |
+| f. 201 | 0.46 | 0.62 | 0.10 | 0.58 |
+| fr. 15571 f. 177 | 0.24 | 0.30 | 0.17 | 0.16 |
+| **total** | 4,325 (0.333) | **5,480 (0.422)** | | 0.351 |
+
+Of the whole target (~14,082 tokens) 0.389 (0.324 corrected). The floors rose by up to 3 points: part of the gain is the
+wider letter sets, the rest is the code values and the corrected letters. The measure counts what the key decodes;
+it does not credit ff. 143, 150 and 154 with their clear copies.
+
+**Checked here on the images (21 Oct 2026, openapi.bnf.fr IIIF; gallica.bnf.fr/iiif answers 403).**
+- Canvas 162 right (f. 155r): a clear page in a secretary's hand, opening *S'estant laissé entendre comme il se
+  vouloit départir du Roy de Nav[arre] duquel je sçay qu'il est tres mal contant*; *soubz vostre bon plaisir
+  toutesfois que je ne me fusse pas tant advancé* and *Et aussi qu'il n'y avoit plus de hasard* are legible. That is
+  the f. 143 cipher, with 49 = *comme*, 33 = *vostre*, 36 = *toutesfois*, 54 = *aussi*.
+- Canvas 163: f. 155v ends with the endorsement *Mr du Mayne de ... avril 1586*, then *Comme il estoit bien besoing
+  ... Castetz*; f. 156r ends *Mr Forget de ... avril 1586*.
+- Canvas 164 right (f. 157r): *En quelle peine nous estions lors pour le payement des deux monstres ...*, *quarante
+  mil escus*: the f. 154 cipher. The left page (f. 156v) is blank but for an endorsement.
+- Canvas 162 left (f. 154v): two cipher blocks with clear text between and after, signed Forget at Bordeaux.
+- Canvas 208 (f. 201): the clear words *Le regard dud. siege il s'advance fort* followed by the code 36 inside the
+  cipher block, as #64 reports.
+- Not checked here: the names in ff. 196/201 figure by figure, the f. 173 and ff. 123-124 decodes, and Brackx's
+  transcription of the copies beyond the lines quoted above.
+
 ## Remaining gaps
 
 - fr. 15572 f. 110 (54 lines, 37 transcribed; ~0% read) - blocker: not-attempted; same key, but the transcription is internally inconsistent and the exemplar set for this hand (cut glyphs, label against keyed figures) has not been built
-- ff. 123r, 123v, 124r, 124v (4,278 figures; 21/32/26/19% read) - blocker: not-attempted; key verified on these leaves; re-transcription against the `key143_*.png` visual key not done (f. 123r was the first page transcribed in this hand)
-- unread share of ff. 143r (41%), 143v (45%), 150 (58%), 154 (53%), 173 (72%), 201 (54%) - blocker: not-attempted; single-figure slips on confusable shapes; the higher-magnification second pass that closed f. 143r l. 7 has not been run on these lines
-- f. 196: 5 of 31 lines untranscribed, 55% of transcribed tokens unread - blocker: not-attempted; part-line after *auquel*, full lines 1-3 and 13 never transcribed; f. 201 is the same despatch and a figure-by-figure crib
-- fr. 15571 f. 177: 5 of 29 lines untranscribed, 76% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
-- names in ff. 196/201 (Sainct M-, la Bar-/la Garde, Montb-, la B-ault) - blocker: not-attempted; joint figure-by-figure reading of the two encipherments not done
-- code 49 (frequent) and the other codes valued `+` in `key.json`; name codes 82, 84, 98 - blocker: open-codes; no context fixes them yet, and the siblings ff. 14/15, 18/19, 78-79, 91-92 have not been searched for each
+- ff. 123r, 123v, 124r, 124v (4,278 figures; 27/39/35/38% read with key_contrib) - blocker: not-attempted; Brackx resolved three merged figure classes (#71) and found no clear copy; a fresh figure-by-figure transcription of about 140 lines is still to do
+- unread share of ff. 173 (51%), 196 (46%), 201 (38%) - blocker: not-attempted; single-figure slips on confusable shapes; Brackx re-read f. 201 and nine lines of f. 173 on the image, a full second pass is still workable
+- f. 196: 5 of 31 lines untranscribed - blocker: not-attempted; part-line after *auquel* (Brackx gives its figures in #64), full lines 1-3 and 13 never transcribed; f. 201 is the same despatch
+- fr. 15571 f. 177: 5 of 29 lines untranscribed, 70% of transcribed tokens unread - blocker: not-attempted; smaller hand, noisy transcription, no second pass
+- f. 154v and f. 149v cipher - blocker: not-attempted; never transcribed figure by figure; the text is known from the copies ff. 157 and 155v-156, so this is a check of the key only
+- code groups 15, 19, 23, 27, 44, 46, 79 and the name codes 82, 84, 98 - blocker: open-codes; 44 = *Sire* was proposed and withdrawn (it stands mid-sentence on f. 173), 79 = *pour* rests on one context, and none occurs in the clear copies
 
 ## Escalation
 
-- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures); f. 125r clear letter read for context. Not yet: ff. 91-92 (the Cipher-3 siblings belong to matignon1586c3)
-- [x] clear-pages: f. 144 checked (a separate letter, not a clear copy of f. 143); f. 19 found to be the decipherment of f. 18; f. 125r is a clear letter, not a decipherment
-- [x] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); the Cipher-3 leaves and their key are matignon1586c3
-- [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks. (his f. 179 image is matignon1586c3's)
-- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; cold and seeded solves on f. 110
-- [ ] retry: done on f. 143r (three passes) and f. 110 (3 and 5 columns); not done on ff. 123-124, 143v, 150, 154, 173, 196, 201, 177, whose unread lines have had one transcription pass only
+- [x] siblings: ff. 14/15 and 18/19 cribs used to re-derive and verify the key; f. 78v margin decipherment used as a control (`cribem.py`); ff. 196/201 aligned (57% identical figures; Brackx's joint alignment, #64); f. 125r clear letter read for context; canvases 128-139 round ff. 123-124 checked for a copy, none (Brackx, #71). Not yet: ff. 91-92
+- [x] clear-pages: **ff. 155-157 are the contemporary clear copies of ff. 143, 149v-150 and 154r-v** (Brackx, #70; checked here). f. 144 is a separate letter; f. 19 is the decipherment of f. 18; f. 125r is a clear letter
+- [x] known-keys: Cipher-1 done (Tomokiyo's table, re-derived and verified on every Cipher-1 leaf); the Cipher-3 leaves and their key are matignon1586c3; the Cipher-2 leaves (ff. 218-219, fr. 15573 ff. 120, 385) are mayenne1586c2
+- [x] print: BnF catalogue and literature searched 17 Sept 2026, no printed decipherment; Tomokiyo's cryptiana openings for ff. 143, 150, 154, "111" used as checks
+- [x] key-rebuild: key re-derived from the ff. 14/15 and 18/19 cribs, confusable figures modelled as letter sets, code values such as 17 *car*, 25 *nous* and 52 *plustost* added from context and the crib; Brackx's letter sets and eleven code values from the clear copies (`key_contrib.json`)
+- [ ] retry: done on f. 143r (three passes), f. 110 (3 and 5 columns), f. 201 (Brackx, every line) and part of f. 173; not done on ff. 123-124, 150, 177, 196, whose unread lines have had one transcription pass only
 
 ## Assumptions for George's review
 
@@ -367,3 +429,4 @@ three full lines and the 13th, "mo£7om…"), fr. 15571 f. 177 has 29 (24 transc
   not one of this entry's documents and its cipher was not identified here as Cipher-1. It is credited nowhere until
   its key is shown.
 - f. 79r is treated as Cipher-1 (the solved key reads it); the earlier "Cipher-2 crib" values from it stay withdrawn.
+- ff. 143r-v, 149v-150 and 154r-v now count as read from an existing decipherment (the clear copies ff. 155-157, outcome.parts), while the key decode of the same leaves stays in the measure. Is that the right split, or should those leaves leave the key-read part altogether?

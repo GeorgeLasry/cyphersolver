@@ -1,0 +1,568 @@
+{
+ "name": "Mayenne-Forget's Cipher-2 (as used in BnF fr. 15573 ff. 103v-104r and f. 385)",
+ "sign_names": "visual names of reference sheet v3 ; numbers are written as numbers",
+ "origins": {
+  "T": "Tomokiyo's published table (henryiii_MayenneForget2.png, cryptiana.web.fc2.com/code/henryiii.htm), as we map his drawn signs to our names",
+  "T?": "Tomokiyo's table, but our mapping of his drawn sign to our name is uncertain",
+  "E": "aligned places in our reading of the calibration letter ff. 103v-104r against its contemporary decipherment",
+  "E?": "as E, few places: doubtful",
+  "E-eye": "seen by eye in the calibration letter against its decipherment",
+  "divider": "the slash is a word divider, not a letter",
+  "F": "aligned places in our reading (one pass, looked at by eye) of the other Cipher-2 letters of fr. 15573 with a decipherment of the time: ff. 7v, 32r-33r, 97r, 149r-150r",
+  "F?": "as F, one place or a weak alignment: doubtful"
+ },
+ "note": "Values are plaintext units; a list means any of them (a polyphone at our naming level); \"\" = null. Nothing here was taken from anyone's modern reading of f. 385.",
+ "key": {
+  "a": {
+   "values": [
+    "t"
+   ],
+   "origin": "T+E-eye"
+  },
+  "alpha": {
+   "values": [
+    "t"
+   ],
+   "origin": "T+E-eye"
+  },
+  "8": {
+   "values": [
+    "t"
+   ],
+   "origin": "T+E-eye"
+  },
+  "6": {
+   "values": [
+    "n"
+   ],
+   "origin": "T"
+  },
+  "dbar": {
+   "values": [
+    "y"
+   ],
+   "origin": "T (Tomokiyo y, row 3) + E: 9 places"
+  },
+  "n": {
+   "values": [
+    "i"
+   ],
+   "origin": "T+E-eye"
+  },
+  "f2": {
+   "values": [
+    "n"
+   ],
+   "origin": "T (Tomokiyo n, f with two bars) + E (held-out f. 104r l. 19 'menant')"
+  },
+  "r": {
+   "values": [
+    "e"
+   ],
+   "origin": "T+E-eye"
+  },
+  "delta": {
+   "values": [
+    "e"
+   ],
+   "origin": "T+E-eye"
+  },
+  "4t": {
+   "values": [
+    "e"
+   ],
+   "origin": "T+E-eye"
+  },
+  "box": {
+   "values": [
+    "f"
+   ],
+   "origin": "T (row 5, between e and f) + E: 'difficulté' f. 103v l. 8"
+  },
+  "phi": {
+   "values": [
+    "en"
+   ],
+   "origin": "T (form of Tomokiyo's 'en' sign) + E: 2 calibration places"
+  },
+  "ls": {
+   "values": [
+    "r"
+   ],
+   "origin": "T+E-eye"
+  },
+  "#": {
+   "values": [
+    "r"
+   ],
+   "origin": "T+E-eye"
+  },
+  "S": {
+   "values": [
+    "c"
+   ],
+   "origin": "T+E-eye"
+  },
+  "9": {
+   "values": [
+    "d"
+   ],
+   "origin": "T"
+  },
+  "g": {
+   "values": [
+    "s"
+   ],
+   "origin": "E-eye"
+  },
+  "+": {
+   "values": [
+    "a"
+   ],
+   "origin": "T"
+  },
+  "4": {
+   "values": [
+    "a"
+   ],
+   "origin": "T+E-eye"
+  },
+  "L": {
+   "values": [
+    "a",
+    "n"
+   ],
+   "origin": "T a + E: n 4 places"
+  },
+  "th": {
+   "values": [
+    "u"
+   ],
+   "origin": "T+E-eye"
+  },
+  "x": {
+   "values": [
+    "u"
+   ],
+   "origin": "T"
+  },
+  "T": {
+   "values": [
+    "u"
+   ],
+   "origin": "T+E-eye"
+  },
+  "Id": {
+   "values": [
+    "u"
+   ],
+   "origin": "T?"
+  },
+  "I": {
+   "values": [
+    "u"
+   ],
+   "origin": "T?"
+  },
+  "zk": {
+   "values": [
+    "p"
+   ],
+   "origin": "E-eye"
+  },
+  "Lbar": {
+   "values": [
+    "p"
+   ],
+   "origin": "E-eye?"
+  },
+  "q+": {
+   "values": [
+    "l"
+   ],
+   "origin": "T+E-eye"
+  },
+  "f": {
+   "values": [
+    "i",
+    "s"
+   ],
+   "origin": "T+E: i 10 places, s 3 (the reader names Tomokiyo's i-f and s-f alike)"
+  },
+  "//": {
+   "values": [
+    "o"
+   ],
+   "origin": "T+E-eye"
+  },
+  "dots": {
+   "values": [
+    "o"
+   ],
+   "origin": "T"
+  },
+  ":": {
+   "values": [
+    "o"
+   ],
+   "origin": "T?"
+  },
+  "tri": {
+   "values": [
+    "g"
+   ],
+   "origin": "T"
+  },
+  "lambda": {
+   "values": [
+    "x"
+   ],
+   "origin": "E: 3 places (Xaintonge)"
+  },
+  "xo": {
+   "values": [
+    "q"
+   ],
+   "origin": "T"
+  },
+  "pi": {
+   "values": [
+    "b"
+   ],
+   "origin": "T"
+  },
+  "F": {
+   "values": [
+    "h"
+   ],
+   "origin": "T"
+  },
+  "m": {
+   "values": [
+    "f"
+   ],
+   "origin": "T"
+  },
+  "2": {
+   "values": [
+    "m"
+   ],
+   "origin": "T"
+  },
+  "H": {
+   "values": [
+    "l"
+   ],
+   "origin": "E: 5 places"
+  },
+  "40": {
+   "values": [
+    "m"
+   ],
+   "origin": "T?"
+  },
+  "xbar": {
+   "values": [
+    "s",
+    "ss"
+   ],
+   "origin": "T (s, row 5) + E: 'ss' 3 calibration places"
+  },
+  "Q": {
+   "values": [
+    "que"
+   ],
+   "origin": "T"
+  },
+  "w": {
+   "values": [
+    "est"
+   ],
+   "origin": "T"
+  },
+  "%": {
+   "values": [
+    "et"
+   ],
+   "origin": "T"
+  },
+  "z9": {
+   "values": [
+    "de"
+   ],
+   "origin": "T?"
+  },
+  "2u": {
+   "values": [
+    "de"
+   ],
+   "origin": "E-eye"
+  },
+  "curl": {
+   "values": [
+    "pour"
+   ],
+   "origin": "T+E-eye"
+  },
+  "Ee": {
+   "values": [
+    "la"
+   ],
+   "origin": "T"
+  },
+  "eps": {
+   "values": [
+    "ment"
+   ],
+   "origin": "T?"
+  },
+  "8s": {
+   "values": [
+    "m"
+   ],
+   "origin": "E: 3 places ending in m (mesmes, Xaintonge m'ont, emporter), plus held-out lines"
+  },
+  "2o": {
+   "values": [
+    "qui"
+   ],
+   "origin": "T?"
+  },
+  "A": {
+   "values": [
+    "monsieur"
+   ],
+   "origin": "T"
+  },
+  "10": {
+   "values": [
+    "ie"
+   ],
+   "origin": "T"
+  },
+  "12": {
+   "values": [
+    "des"
+   ],
+   "origin": "T+E-eye"
+  },
+  "16": {
+   "values": [
+    "fois"
+   ],
+   "origin": "T"
+  },
+  "18": {
+   "values": [
+    "quant"
+   ],
+   "origin": "T"
+  },
+  "20": {
+   "values": [
+    "mais"
+   ],
+   "origin": "T"
+  },
+  "21": {
+   "values": [
+    "beaucoup"
+   ],
+   "origin": "T"
+  },
+  "23": {
+   "values": [
+    "apres"
+   ],
+   "origin": "T"
+  },
+  "24": {
+   "values": [
+    "peu"
+   ],
+   "origin": "T"
+  },
+  "25": {
+   "values": [
+    "parceque"
+   ],
+   "origin": "T"
+  },
+  "26": {
+   "values": [
+    "car"
+   ],
+   "origin": "T"
+  },
+  "31": {
+   "values": [
+    "pas"
+   ],
+   "origin": "T"
+  },
+  "32": {
+   "values": [
+    "sans"
+   ],
+   "origin": "T"
+  },
+  "/": {
+   "values": [
+    ""
+   ],
+   "origin": "divider"
+  },
+  "hs": {
+   "values": [
+    "r"
+   ],
+   "origin": "T (Tomokiyo r, row 2) + E: 6 places"
+  },
+  "ooC": {
+   "values": [
+    "en"
+   ],
+   "origin": "T (Tomokiyo 'en' code sign; our name ooC) + E: 5 calibration places"
+  },
+  "dsi": {
+   "values": [
+    "si"
+   ],
+   "origin": "T (Tomokiyo 'si')"
+  },
+  "B": {
+   "values": [
+    "s"
+   ],
+   "origin": "E?: 1-2 places"
+  },
+  "2x": {
+   "values": [
+    "a"
+   ],
+   "origin": "E?: 3 places"
+  },
+  "gg": {
+   "values": [
+    "par"
+   ],
+   "origin": "T? (Tomokiyo 'par' ff; our name gg)"
+  },
+  "tt": {
+   "values": [
+    "les"
+   ],
+   "origin": "T (Tomokiyo tt)"
+  },
+  "rect": {
+   "values": [
+    "icy"
+   ],
+   "origin": "E-eye? (qui reste icy, f. 104r l. 20, held-out)"
+  },
+  "3": {
+   "values": [
+    "de"
+   ],
+   "origin": "T (Tomokiyo de = 3)"
+  },
+  "Gamma": {
+   "values": [
+    "vous"
+   ],
+   "origin": "T"
+  },
+  "fe": {
+   "values": [
+    "bien"
+   ],
+   "origin": "T"
+  },
+  "0": {
+   "values": [
+    "i"
+   ],
+   "origin": "E?: 2 places"
+  },
+  "y": {
+   "values": [
+    "l"
+   ],
+   "origin": "T (Tomokiyo l, row 2: a y-shape; our name y)"
+  },
+  "d": {
+   "values": [
+    "g"
+   ],
+   "origin": "T (Tomokiyo g, row 2: a round d / delta-like sign; our name d)"
+  },
+  "uC": {
+   "values": [
+    "moy"
+   ],
+   "origin": "T? (Tomokiyo 'moy' code: an M over e; our name uC)"
+  },
+  "rC": {
+   "values": [
+    "s",
+    "z"
+   ],
+   "origin": "E?: z 3 places, s 1 (calibration); doubtful"
+  },
+  "Tl": {
+   "values": [
+    "plus"
+   ],
+   "origin": "T (code 'plus')"
+  },
+  "ud": {
+   "values": [
+    "u"
+   ],
+   "origin": "T (u, row 4)"
+  },
+  "pdots": {
+   "values": [
+    "p"
+   ],
+   "origin": "T (p, row 5)"
+  },
+  "Qh": {
+   "values": [
+    "armee"
+   ],
+   "origin": "F: 3 places (ff. 150r, 7v, 33r margins)"
+  },
+  "hb": {
+   "values": [
+    "tout"
+   ],
+   "origin": "F: 2 places (f. 150r margin)"
+  },
+  "N": {
+   "values": [
+    "ee"
+   ],
+   "origin": "F: 2 places (f. 150r margin; f. 97r clear decipherment)"
+  },
+  "17": {
+   "values": [
+    "tant"
+   ],
+   "origin": "F: 2 places (f. 97r and f. 150r margins)"
+  },
+  "13": {
+   "values": [
+    "tre"
+   ],
+   "origin": "F?: 1 place (f. 32v margin, 'entreprendre')"
+  },
+  "ub": {
+   "values": [
+    "droit"
+   ],
+   "origin": "F?: 1 place (f. 33r margin, 'faudroit'); f. 97r fits"
+  }
+ },
+ "revision": 6
+}
