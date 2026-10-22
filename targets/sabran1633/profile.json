@@ -297,9 +297,48 @@
    "what": "No edition of the fr. 4134/4135 cipher passages found (web search, Tomokiyo louisxiii.htm and GL.htm, the contributor's sources); Sabran's 1636-37 despatches printed in the Correspondance de Sourdis are later. The former entries sabran1631 (Baluze 155) and the fr. 4134 entry merged here under the one-key rule.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2853 tokens, 52 types, fr-1600-letters order 4: reading -2.125 per letter; random keys -5.728 (z 7.8); key annealed onto shuffled ciphertext best -3.239 (mean -3.255, z 94.3); annealer on the real text -2.916. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 2853 tokens, 52 types, fr-1600-letters order 4: reading -2.125 per letter; random keys -5.728 (z 7.8); key annealed onto shuffled ciphertext best -3.239 (mean -3.255, z 94.3); annealer on the real text -2.916. Verdict: pass.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-22", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 2853, "types": 52, "tokens_per_type": 54.87, "score": -2.125, "nulls": {"random keys": {"n": 200, "mean": -5.728, "sd": 0.46, "max": -4.785, "z": 7.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.255, "sd": 0.012, "max": -3.239, "z": 94.3, "p": 0.1429}}, "power": -2.916, "verdict": "pass", "notes": "claimed per-occurrence score -2.125; polyphony 0.0; 354 unread tokens left out; annealer on the real text from random keys reached -2.916"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-22",
+   "model": "fr-1600-letters",
+   "file": "validation.tsv",
+   "tokens": 2853,
+   "types": 52,
+   "tokens_per_type": 54.87,
+   "score": -2.125,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.728,
+     "sd": 0.46,
+     "max": -4.785,
+     "z": 7.8,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.255,
+     "sd": 0.012,
+     "max": -3.239,
+     "z": 94.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.916,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.125; polyphony 0.0; 354 unread tokens left out; annealer on the real text from random keys reached -2.916"
+  },
   "method": "key recovered from ciphertext-only",
   "method_basis": "George Lasry recovered the letter table from the 1631 letter with CTTS's built-in cryptanalysis (2022) and completed the nomenclator from context with Claude Opus 5.5 (2026); no clear copy or outside key was used.",
   "contribution": [
@@ -318,7 +357,12 @@
    "total": 54,
    "tokens_open": 1
   },
-  "verification": ["key confirms", "independent verification", "matched control", "statistical test"],
+  "verification": [
+   "key confirms",
+   "independent verification",
+   "matched control",
+   "statistical test"
+  ],
   "provenance": "contributed",
   "credits": [
    {
@@ -371,6 +415,21 @@
     "detail": "not digitised"
    }
   ],
-  "notes": "One key, one entry: Baluze 155 (former entry sabran1631) and the fr. 4134 partial contributed reading merged here with fr. 4135 on 22 Oct 2026. Status: in progress while the uncovered leaves are open."
+  "notes": "One key, one entry: Baluze 155 (former entry sabran1631) and the fr. 4134 partial contributed reading merged here with fr. 4135 on 22 Oct 2026. Status: in progress while the uncovered leaves are open.",
+  "texts": [
+   {
+    "doc": [
+     "R2748",
+     "fr4134",
+     "fr4135"
+    ],
+    "label": "Baluze 155 f. 79, fr. 4134, fr. 4135 (43 images)",
+    "transcription": "lasry2022/ctts/transcription/all.txt",
+    "decryption": "lasry2022/ctts/decryption/all.txt",
+    "translation": "lasry2022/CONTRIBUTION.md",
+    "summary": "The King keeps the Prince of Monaco in play without a treaty (1631); a sergeant-major offers Sabran the castles of Savona, a Savoyard plot that is discovered (1633); Genoa helps the Spanish fleet while France fights for Valenza (1635)."
+   }
+  ],
+  "key_file": "lasry2022/ctts/key.txt"
  }
 }

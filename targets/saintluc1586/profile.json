@@ -140,9 +140,48 @@
    "what": "Prior-solution check: GL.htm carries only Lasry's key image for f. 43 ('It is solved as follows'), no plaintext; no printed decipherment found on the web; matignon1586 records f. 43 as outside the Mayenne-Forget and Matignon ciphers.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1271 tokens, 81 types, fr-1600-letters order 4: reading -2.091 per letter; random keys -4.722 (z 9.9); key annealed onto shuffled ciphertext best -2.968 (mean -3.014, z 25.7); annealer on the real text -2.203. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1271 tokens, 81 types, fr-1600-letters order 4: reading -2.091 per letter; random keys -4.722 (z 9.9); key annealed onto shuffled ciphertext best -2.968 (mean -3.014, z 25.7); annealer on the real text -2.203. Verdict: pass.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-22", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 1271, "types": 81, "tokens_per_type": 15.69, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -4.722, "sd": 0.266, "max": -3.88, "z": 9.9, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.014, "sd": 0.036, "max": -2.968, "z": 25.7, "p": 0.1429}}, "power": -2.203, "verdict": "pass", "notes": "claimed per-occurrence score -2.091; polyphony 0.0; 44 unread tokens left out; annealer on the real text from random keys reached -2.203"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-22",
+   "model": "fr-1600-letters",
+   "file": "validation.tsv",
+   "tokens": 1271,
+   "types": 81,
+   "tokens_per_type": 15.69,
+   "score": -2.091,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.722,
+     "sd": 0.266,
+     "max": -3.88,
+     "z": 9.9,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.014,
+     "sd": 0.036,
+     "max": -2.968,
+     "z": 25.7,
+     "p": 0.1429
+    }
+   },
+   "power": -2.203,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.091; polyphony 0.0; 44 unread tokens left out; annealer on the real text from random keys reached -2.203"
+  },
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
@@ -161,7 +200,10 @@
    "tokens_open": 0
   },
   "grades": "unknown",
-  "verification": ["key confirms", "statistical test"],
+  "verification": [
+   "key confirms",
+   "statistical test"
+  ],
   "provenance": "contributed",
   "credits": [
    {
@@ -190,6 +232,17 @@
     "detail": "the letter names nobody but Sermelles, Jugan, Nimier, Saint-Sulpice and 'Monsieur Lue'; the cover names need an outside key to the correspondence"
    }
   ],
-  "notes": "Contributed by George Lasry, PR 76 (22 Oct 2026). Writer attributed to Saint-Luc by Tomokiyo from the hand."
+  "notes": "Contributed by George Lasry, PR 76 (22 Oct 2026). Writer attributed to Saint-Luc by Tomokiyo from the hand.",
+  "texts": [
+   {
+    "doc": "f43",
+    "label": "BnF fr. 15572 f. 43, 30 Jan 1586",
+    "transcription": "lasry2022/ctts/transcription/all.txt",
+    "decryption": "reading.txt",
+    "translation": "lasry2022/CONTRIBUTION.md",
+    "summary": "'Monsieur' has sent an agent to work on the concierge's household; the writer proposes to win over the gardener, spoil a marriage the concierge wants and frighten her with a rumour."
+   }
+  ],
+  "key_file": "lasry2022/ctts/key.txt"
  }
 }

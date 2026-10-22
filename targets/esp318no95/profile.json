@@ -184,9 +184,48 @@
    "what": "Lasry's 2026 recto agrees with Brackx's reading of ll. 14-33 (adopting his 'avemos traido aca'); it differs at 'rogaria a los que le ruegan' (Brackx 'logaria ... llegan'), 'para que' (Brackx 'parece que') and 'Claver avra' (Brackx 'Claue haura'). It agrees with Brackx's proposed corrections to ll. 1-13 (no ay que dezir, remitiendome, hazen, diz, con palabras, haga, no buen estado).",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1226 tokens, 44 types, es-golden-age order 4: reading -1.96 per letter; random keys -6.156 (z 8.5); key annealed onto shuffled ciphertext best -3.462 (mean -3.514, z 36.7); annealer on the real text -2.095. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1226 tokens, 44 types, es-golden-age order 4: reading -1.96 per letter; random keys -6.156 (z 8.5); key annealed onto shuffled ciphertext best -3.462 (mean -3.514, z 36.7); annealer on the real text -2.095. Verdict: pass.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-22", "model": "es-golden-age", "file": "validation.tsv", "tokens": 1226, "types": 44, "tokens_per_type": 27.86, "score": -1.96, "nulls": {"random keys": {"n": 200, "mean": -6.156, "sd": 0.492, "max": -5.061, "z": 8.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.514, "sd": 0.042, "max": -3.462, "z": 36.7, "p": 0.1429}}, "power": -2.095, "verdict": "pass", "notes": "claimed per-occurrence score -1.96; polyphony 0.0; 19 unread tokens left out; annealer on the real text from random keys reached -2.095"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-22",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 1226,
+   "types": 44,
+   "tokens_per_type": 27.86,
+   "score": -1.96,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.156,
+     "sd": 0.492,
+     "max": -5.061,
+     "z": 8.5,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.514,
+     "sd": 0.042,
+     "max": -3.462,
+     "z": 36.7,
+     "p": 0.1429
+    }
+   },
+   "power": -2.095,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.96; polyphony 0.0; 19 unread tokens left out; annealer on the real text from random keys reached -2.095"
+  },
   "method": "key recovered from ciphertext-only",
   "method_basis": "George Lasry recovered the alphabet with CTTS's built-in cryptanalysis from the ciphertext alone (2021-22) and completed the recto with it in 2026 (PR 75); Brackx's verso reading uses the same alphabet. No clear copy or outside key.",
   "contribution": [
@@ -223,7 +262,11 @@
    }
   ],
   "grades": "unknown",
-  "verification": ["key confirms", "historical consistency", "statistical test"],
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "statistical test"
+  ],
   "notes": "Spanish, from an Italian city with a Signoria (Genoa fits best, per Lasry; unproved), 8 Jan 1497: famine, the French bid for the city's people, the king's slowness, the cardinal of Santa Cruz to seek peace in France, an appeal for a force to defend the city. Lasry's 2026 recto supersedes the partial 2022 overlay and settles Brackx's proposed corrections; the verso is Brackx's.",
   "credits": [
    {
@@ -280,6 +323,16 @@
    "total": 11,
    "tokens_open": 5
   },
-  "provenance": "mixed"
+  "provenance": "mixed",
+  "texts": [
+   {
+    "doc": "no95",
+    "label": "BnF Espagnol 318 f. 122, 8 Jan 1497",
+    "transcription": "lasry2021/ctts/transcription/all.txt",
+    "decryption": "reading.txt",
+    "summary": "Bread cannot be had even for money; the French court the city's silk workers with trade licences; the King provides 'muy tarde y muy poco'; the Pope wants the cardinal of Santa Cruz to seek peace in France."
+   }
+  ],
+  "key_file": "lasry2021/ctts/key.txt"
  }
 }
