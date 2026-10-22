@@ -223,7 +223,7 @@
       "blocker": {"type": "string", "enum": ["no-key-material", "too-short", "illegible", "needs-physical-access", "open-codes", "not-attempted"]},
       "detail": {"type": "string"}}}},
     "texts": {"type": "array",
-     "description": "Required for 'read' and 'read in part' (George Lasry, 22 Oct 2026): the transcription and the decryption of every document, so the reading can be used and checked. Paths are relative to the target folder (http(s) URLs allowed, a local copy is better). The site renders them in a 'Full texts' section (docs/_texts.py).",
+     "description": "Required for 'read', 'read in part', and 'already solved' with a reading method (George Lasry, 22 Oct 2026): the transcription and the decryption of every document, so the reading can be used and checked. Paths are relative to the target folder (http(s) URLs allowed, a local copy is better). The site renders them in a 'Full texts' section (docs/_texts.py).",
      "items": {"type": "object", "required": ["doc"], "additionalProperties": false, "properties": {
       "doc": {"description": "documents[].id this entry covers, a list of ids, or 'all'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "label": {"type": "string", "description": "Heading for this entry when a profile document holds several letters (e.g. 'R1072, 6 Jan 1757'); else the document's id, shelfmark and date are used."},

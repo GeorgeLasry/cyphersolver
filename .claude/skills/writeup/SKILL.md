@@ -43,7 +43,8 @@ not from memory. The slug is the folder name unless a page already exists under 
   them on the page as the hero's credits line and adds them up on `contributors.html` and the front page's top
   contributors; nothing on the page is typed by hand. A result sent in by someone else gets `outcome.provenance`
   `contributed` (or `mixed`) and a `solution` credit with the PR, issue or email as `source`.
-- **Full texts (George Lasry, 22 Oct 2026).** A target classed "read" or "read in part" shows the complete
+- **Full texts (George Lasry, 22 Oct 2026).** A reading (classed "read" or "read in part", or "already solved" with a
+  reading method such as read from existing decipherment or read with known key) shows the complete
   transcription and the complete decryption of every document it covers, and the key when the project or a
   contributor recovered, extended or corrected it: historians can use the text, and earlier contributors can judge
   the reading. List them in the profile's `outcome.texts` (one entry per document or letter: `doc`, optional

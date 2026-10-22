@@ -1,6 +1,6 @@
 """Full texts on every reading (George Lasry, 22 Oct 2026).
 
-A target classed "read" or "read in part" lists, in profile.json outcome.texts, the transcription and the decryption of
+A reading (classed "read" or "read in part", or "already solved" with a reading method) lists, in profile.json outcome.texts, the transcription and the decryption of
 every document it reports on, and in outcome.key_file the key it used when the project recovered, extended or
 corrected it. Paths are relative to the target folder (or http(s) URLs, discouraged: a copy in the folder survives).
 
@@ -18,6 +18,7 @@ import json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 READING = ('read', 'read in part')
+NOT_READINGS = ('not solved', 'not applicable')   # methods that mean no reading exists
 KEY_WORK = ('key recovered', 'key extended or corrected')
 
 
@@ -26,7 +27,11 @@ def listify(v):
 
 
 def needs_texts(profile):
-    return ((profile or {}).get('outcome') or {}).get('class') in READING
+    """A reading: classed read / read in part, or already solved elsewhere with a reading method (from an existing
+    decipherment, a known or external key, plaintext ...): the text was deciphered, so it is shown (22 Oct 2026)."""
+    o = (profile or {}).get('outcome') or {}
+    if o.get('class') in READING: return True
+    return o.get('class') == 'already solved' and o.get('method') not in NOT_READINGS and bool(o.get('method'))
 
 
 def texts_problems(folder_path, profile):
