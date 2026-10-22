@@ -120,7 +120,8 @@
    "result": "worked",
    "date": "2026-09-21"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1207 tokens, 113 types, fr-modern order 4: reading -2.599 per letter; random keys -7.231 (z 12.1); key annealed onto shuffled ciphertext best -3.604 (mean -3.675, z 28.7); annealer on the real text -3.113. Verdict: pass.", "result": "worked"}
+  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1207 tokens, 113 types, fr-modern order 4: reading -2.599 per letter; random keys -7.231 (z 12.1); key annealed onto shuffled ciphertext best -3.604 (mean -3.675, z 28.7); annealer on the real text -3.113. Verdict: pass.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ct.txt, reading reading.txt and the raw decrypt decrypt_raw.txt", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 1207, "types": 113, "tokens_per_type": 10.68, "score": -2.599, "nulls": {"random keys": {"n": 200, "mean": -7.231, "sd": 0.384, "max": -6.385, "z": 12.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.675, "sd": 0.037, "max": -3.604, "z": 28.7, "p": 0.1429}}, "power": -3.113, "verdict": "pass", "notes": "claimed per-occurrence score -2.08; polyphony 0.082; 107 unread tokens left out; annealer on the real text from random keys reached -3.113"}, 
   "method": "read with known key",
@@ -133,6 +134,18 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "five-alphabet key sheet R2235 (Schrijf Tafel) in the same KHA inventory number"},
     {"who": "decode", "role": "pointer", "note": "record note on R2234 pointing to R2235 as the likely key"}
+  ],
+  "texts": [
+   {
+    "doc": "R2234",
+    "label": "Orangist correspondent at Basle to William V, 17 Aug 1796 (DECODE R2234)",
+    "transcription": "ct.txt",
+    "decryption": [
+     "reading.txt",
+     "decrypt_raw.txt"
+    ],
+    "summary": "A correspondent at Basle, writing in Republican dating to the Stadholder in exile, asks for a decision on keeping his lodging and for a bill of exchange of 50 louis every three months; he reports that the Prince of Salm is raising a hussar regiment for the King of Prussia, fears that the Prussian ministers are lulled by the French, and that Barthélemy's secretary expects the Army of Italy to join the Army of the Rhine through the Tyrol, 'which does not look like peace'."
+   }
   ]
  }
 }
