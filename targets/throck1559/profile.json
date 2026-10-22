@@ -134,7 +134,8 @@
    "kind": "verification",
    "what": "Entry split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from wod1568, which had joined three systems on BL Add MS 4136 ff. 32-33: Throckmorton's Cipher 1 letter of 10 July 1559 (throck1559), the f. 32 marginal word-sign code (throck1559margin) and John Wood's 1568 line (wod1568). This profile keeps Throckmorton's 10 July 1559 letter in Cipher 1 (R2988 main text) only.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R2988 linked to main_decrypt.txt (sign transcription with passes 1-3 interlined); the key corrections and additions copied verbatim from NOTES.md and main_decrypt.txt to texts/key.md (the base Tomokiyo key is an image on DECODE). Line 16 was never transcribed", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -181,6 +182,10 @@
     "note": "Cipher 1 key image for Throckmorton's correspondence, seven values corrected",
     "source": "https://cryptiana.web.fc2.com/"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "R2988", "label": "R2988, Add MS 4136 f. 32, Throckmorton to Elizabeth I, Paris, 10 July 1559", "transcription": "main_decrypt.txt", "decryption": "main_decrypt.txt", "summary": "Throckmorton sends a gentleman, the bearer, to report the French King's state by word of mouth after his two despatches of 8 July (by Gray and, at midnight, by Carew); he asks the Queen to give the bearer credit, praises his diverse and sundry service and asks that it be rewarded. An unpublished letter, not in Forbes or CSP Foreign."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

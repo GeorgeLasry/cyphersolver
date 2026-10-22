@@ -279,7 +279,8 @@
       "kind": "verification",
       "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): sp106box10 keeps system B, the 'Venetian Cifer' of R664/R660 with the grid R658 and the glossed strings of R702 p. 2; system A (R725/R657) is now sp106r725, the second three-figure code (R722 and its worksheets) sp106r722, system C (R704/R721) sp106r704, R931 sp106r931. No new attack.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R702 p. 2 decode saved from cat62/check_r702.py; the R664 passages and the R701 p. 1 list copied verbatim from NOTES.md into texts/; R658 and the key linked to cat62/venetian_code.tsv. Missing: no transcription or decryption of R664 in full or of R660 exists (never transcribed group by group)", "result": "partial"}
   ],
   "outcome": {
     "method": "read with known key",
@@ -326,6 +327,13 @@
         "role": "key or decipherment used",
         "note": "the Jacobean codebreaker's grid R658 of the 'Venetian Cifer' and his interlinear glosses on R664 and R702"
       }
-    ]
+    ],
+    "texts": [
+      {"doc": "R664", "label": "R664, ff. 167-169, intercepted letter (passages only)", "transcription": "texts/R664_fragments.md", "decryption": "texts/R664_fragments.md", "summary": "An Italian intercept written half in clear, half in the three-figure syllabic 'Venetian Cifer', glossed by the English codebreaker. Only passages are deciphered ('della loro sicurezza', 'et hoggi terzo giorno quelle de nuovo senza'); the letter has not been transcribed through."},
+      {"doc": "R658", "label": "R658, f. 125, the codebreaker's grid of the code", "transcription": "cat62/venetian_code.tsv", "decryption": "cat62/venetian_code.tsv", "summary": "The codebreaker's own grid of every group 136-565 with his counts and values, rebuilt here as a systematic syllabary of 117 values."},
+      {"doc": "R702", "label": "R702 p. 2, f. 182, his glossed group strings", "transcription": "texts/R702_p2.txt", "decryption": "texts/R702_p2.txt", "summary": "Strings of the code with the codebreaker's glosses ('i colonelli', 'della loro', 'che possiamo prometter'); with 'di 24 di maggio' and colonels they point to a letter of late May, c. 1624-25."},
+      {"doc": "R701", "label": "R701 p. 1, f. 175, 'Wordes marked with letters in the Venetian Cifer'", "transcription": "texts/R701_p1.md", "decryption": "texts/R701_p1.md", "summary": "The codebreaker's heading naming the code 'the Venetian Cifer' and listing its word groups with superscript endings."}
+    ],
+    "key_file": "cat62/venetian_code.tsv"
   }
 }

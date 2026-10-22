@@ -147,7 +147,8 @@
    "kind": "control",
    "what": "New measure.py: letter runs checked word by word and LM-scored (de-1740s); codes counted only with listed or glossed values. 155/181 = 0.856.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R5029 linked to ct.txt (numbers with clear context) and dec.txt (dec.py output with Mírka's table, key.tsv)", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -183,6 +184,9 @@
   "notes": "148 of 181 groups read; 23 nomenclator codes (33 groups) open.",
   "credits": [
     {"who": "mirka", "role": "key or decipherment used", "note": "reconstructed key (xlsx on DECODE R5029), applied unchanged", "date": "2023-06-19"}
+  ],
+  "texts": [
+   {"doc": "R5029", "label": "R5029, Brussels, 18 Nov 1721", "transcription": "ct.txt", "decryption": "dec.txt", "summary": "A Windischgrätz brother writes in German with thirteen enciphered passages, read with Jakub Mírka's key from the DECODE record: the Emperor advised making an excuse; [205] holds under hand; everyone, even the Emperor, daily loses love for [103] after the courier brought the Prince's plan; the Congress of Cambrai should open soon and the Madrid courier brought Pozobueno orders on the renunciations. 23 code numbers stay open."}
   ]
  }
 }

@@ -187,7 +187,8 @@
    "kind": "verification",
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026) from kaa4591b (catalogue 162), whose other two letters are in Łaski's System B (R9403, now with the other System B letters in kaa4591b) and system L (R9415, moved to sperantio1534). Profile, validation and measure carried over: they were already R9414's alone.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R9414 linked to the latest sign transcriptions (transcription_p12.txt, transcription_p34.txt), the reading reading_v5.txt and the raw decrypt decrypt_v2.txt; key_file keyb.txt with its alternatives alt_p12.txt", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -265,6 +266,10 @@
     "role": "key or decipherment used",
     "note": "the interlinear gloss over P1 l.6-8 that seeded the key"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "R9414", "label": "R9414, KAA 4591 ff. 257-259, Wardein, 14 Mar 1537", "transcription": ["r9414/transcription_p12.txt", "r9414/transcription_p34.txt"], "decryption": ["r9414/reading_v5.txt", "r9414/decrypt_v2.txt"], "summary": "An unnamed Bavarian servant at King John's court writes to Duke Ludwig of Bavaria from Wardein (Nagyvárad): his journey back into Hungary, envoys of the pashas of Belgrade and Bosnia, the Sultan arming 'hundert tausent man' to win Hungary and then turn on Austria, the Ferdinandists taking towns; he asks Ludwig to intercede with Duke Wilhelm, and mentions debts, mining and ore specimens."}
+  ],
+  "key_file": ["r9414/keyb.txt", "r9414/cp12/alt_p12.txt"]
  }
 }
