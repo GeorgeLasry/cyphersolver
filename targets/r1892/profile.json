@@ -253,6 +253,12 @@
    ],
    "what": "Outside contribution reviewed (PR #31, WAINUT, independent reading 11-12 Oct 2026 with Claude subagents): sign-label splits on p2, 15 proposed sign values, heading 'uit Hampton Court', l13 'myn vader', l24 re-read. Strict p2 coverage 816/900 -> 843/900 -> 859/903 reproduced. Controls (review_control.py): their shuffled-values control scores the same; leave-one-out per added value costs 1-8 tokens; per-occurrence LM ranking against a 62-word pool puts the proposed value first at 5 of 47 places. The measure is coverage, not confirmation; all values kept as proposals, key and outcome unchanged. Heading and l24 digit pairs agree with the full-resolution image; l13 not checked.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions and decrypts of both pages; for p2 also WAINUT's relabelled transcriptions and their decryption (new file wainut/decrypt_p2_wainut.txt, written by running wainut/apply.py); key table copied from NOTES to texts/key.md. Lasry's 2021 solution is private and not in the repository.",
+   "result": "worked"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 1049, "types": 26, "tokens_per_type": 40.35, "score": -1.951, "nulls": {"random keys": {"n": 200, "mean": -7.687, "sd": 0.636, "max": -6.156, "z": 9.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.643, "sd": 0.029, "max": -4.603, "z": 92.4, "p": 0.1429}}, "power": -1.951, "verdict": "pass", "notes": "claimed per-occurrence score -1.951; polyphony 0.0; 5 unread tokens left out; annealer on the real text from random keys reached -1.951"}, 
@@ -301,6 +307,11 @@
   "credits": [
     {"who": "lasry", "role": "prior solution", "note": "solved it independently in 2021, unpublished (private communication, 25 Sept 2026)", "date": "2021", "source": "private communication, 25 Sept 2026", "published": false},
     {"who": "lccompany", "role": "verification", "note": "WAINUT (PR #31) deciphered R1892 independently and recovered the same square; sign-label splits and values proposed, not adopted", "date": "2026-10-12", "source": "https://github.com/dbourdeau/cyphersolver/pull/31"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R1892 p1", "label": "R1892 page 1 (French)", "transcription": "transcription_p1.txt", "decryption": "decrypt_p1.txt", "summary": "Prince Frederick of Orange, in England, c. late November - early December 1795, to an officer of the Dutch émigré troops (the 'rassemblement') in British pay: his father is sending Nagell back to the ministers to press for an answer, and if General Dundas declares that the pay will stop or the troops must embark, the recipient is to accept and only try to obtain a gratification for those who will not submit."},
+   {"doc": "R1892 p2", "label": "R1892 page 2 (Dutch postscript): reading adopted here, and the WAINUT proposals", "transcription": ["transcription_p2.txt", "wainut/transcription_p2_wainut.txt", "wainut/transcription_p2_wainut_tr.txt"], "decryption": ["decrypt_p2.txt", "wainut/decrypt_p2_wainut.txt"], "summary": "The Dutch postscript, 'in het hollandsch met cijffer': if the troops stay together the rassemblement is to be kept together, volunteers and officers named and employed, and officers who will not serve given a set number of days to choose; the writer has had no answer for weeks to his first letter. wainut/decrypt_p2_wainut.txt applies WAINUT's proposed sign splits and values (12 Oct 2026, not adopted) for comparison."}
+  ],
+  "key_file": ["texts/key.md", "apply.py"]
  }
 }

@@ -296,6 +296,12 @@
    "kind": "verification",
    "what": "Historical consistency: Morvilliers, l'Aubespine, Montmorency, Conde and Coligny in arms date R88-R90 to Oct-Nov 1567; Cologne (von Wied, unconfirmed) and the Milan dispute fit 1567; the two copies R88/R89 agree.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): DECODE transcriptions (RebAn 2016) per record; decryptions = the word-split DECODE bodies from decode_updates/decryptions copied into texts/, plus decrypt_raw.txt, all with Lasry's key as filed (decode/DOC_R85_D3265_3265.txt etc.).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -311,6 +317,14 @@
   "notes": "Machine output under a polyphonic key: letters are model choices, so isolated letters, the recurring group 'colospo' and unlisted dotted groups ([NN.]) are uncertain; the sense is continuous throughout. Not checked against Serrano.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed key on DECODE R85-R90 (24 Oct 2020), identical to the R93-R102 key, applied unchanged", "date": "2020-10-24", "source": "DECODE R85-R90"}
+  ],
+  "texts": [
+   {"doc": "R85", "label": "R85, Spagna 1 item 1, f. 165r [1567]", "transcription": "decode/DOC_R85_D1646_1646.txt", "decryption": ["texts/R85_decryption.txt", "decrypt_raw.txt"], "summary": "Cardinal Alessandrino (Michele Bonelli) to the nuncio at Madrid, Giovan Battista Castagna, 1567: the Pope wishes to be certain whether the King's journey to Flanders will take place, because he then wants an interview (abboccamento) with him, and the nuncio is to find out and exhort the King."},
+   {"doc": "R86", "label": "R86, Spagna 1 item 2, f. 236r [1567]", "transcription": "decode/DOC_R86_D1647_1647.txt", "decryption": ["texts/R86_decryption.txt", "decrypt_raw.txt"], "summary": "Milan: the proceedings against the authors of the outrage on the jurisdiction of the archbishop (Borromeo). The Pope will use spiritual arms and a monitorium; the dignity of the Holy See requires proceeding at least against the Capitano di giustizia, the fiscal and some of the Senate, and the King should deprive his ministers concerned."},
+   {"doc": "R87", "label": "R87, Spagna 1 item 3, ff. 249r-250r [1567]", "transcription": "decode/DOC_R87_D1648_1648.txt", "decryption": ["texts/R87_decryption.txt", "decrypt_raw.txt"], "summary": "The Pope wants the King's journey to Flanders, for the restoration of religion there and in Germany. The archbishop of Cologne (Friedrich von Wied) has not sought confirmation nor made the Tridentine profession of faith; the Pope means to proceed to his deprivation, and the King should work so that the Cologne chapter does not designate a suspect successor."},
+   {"doc": "R88", "label": "R88, Spagna 1 item 4, f. 301r-v [autumn 1567]", "transcription": "decode/DOC_R88_D1649_1649.txt", "decryption": ["texts/R88_decryption.txt", "decrypt_raw.txt"], "summary": "On the troubles of France (the second civil war): the King of France trusts the Chancellor, Morvilliers and l'Aubespine too much, the Queen Mother's ambition keeps the kingdom divided, and if the Constable Montmorency and his son were imprisoned until the Admiral and the Prince laid down their arms, an end would soon be put to the troubles. One of two copies of the letter (with R89)."},
+   {"doc": "R89", "label": "R89, Spagna 1 item 5, f. 314r-v [autumn 1567]", "transcription": "decode/DOC_R89_D1650_1650.txt", "decryption": ["texts/R89_decryption.txt", "decrypt_raw.txt"], "summary": "The second copy of the R88 letter on the troubles of France; the two copies correct each other (R89 is cleaner on 314r)."},
+   {"doc": "R90", "label": "R90, Spagna 1 item 6, f. 324r [autumn 1567]", "transcription": "decode/DOC_R90_D1651_1651.txt", "decryption": ["texts/R90_decryption.txt", "decrypt_raw.txt"], "summary": "The same closing passage of the France letter again (the Catholic King should be instructed of the nature of that court and its principal persons), a third copy's last page or its continuation."}
   ]
  }
 }

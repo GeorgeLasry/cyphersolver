@@ -132,6 +132,12 @@
    ],
    "what": "Report key figures of nos. 15, 17 and 5 compared sign by sign: different keys (Lambda is c here, e in no. 5; theta e here, z in no. 5; square-U n here, i in no. 17).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's partial decipherment and translation (reading.txt, translation.txt, lasry_report.md), his key figure and table; transcription = this project's 24 Sept one (project_attempt/), his CTTS transcription not being in the repository.",
+   "result": "partial"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-18", "verdict": "not applicable", "notes": "contributed reading: George Lasry's sign-level CTTS transcription and key are not in the repository, so no token alignment can be scored"}, 
@@ -177,6 +183,10 @@
     "published": false
    }
   ],
-  "notes": "Contributed; figures from the report."
+  "notes": "Contributed; figures from the report.",
+  "texts": [
+   {"doc": "R4803", "label": "No. 15 (R4803), Mario Bandini to the Signori of Siena, Innsbruck, 4 January 1547 (George Lasry's partial reading)", "transcription": ["project_attempt/no15v.txt", "project_attempt/no15.txt"], "decryption": ["reading.txt", "lasry_report.md"], "translation": "translation.txt", "summary": "Mario Bandini, Sienese orator at the imperial court, to the Signori of Siena, Innsbruck, 4 January 1547, after the Schmalkaldic campaign: Piergiovanni Salvestri at Innsbruck with the Florentine orator, an occasion to be used and discord in cipher, a minister (Granvelle?) warning that a fire would be kindled in a coded place, and Sienese vases 'all'antica' for Burgundy via Figueroa. Decryption and translation are George Lasry's (75 of 240 signs); the transcription linked is this project's own of 24 Sept 2026, not used in his reading, since his CTTS transcription is not in the repository."}
+  ],
+  "key_file": ["key_lasry.jpg", "key.md"]
  }
 }

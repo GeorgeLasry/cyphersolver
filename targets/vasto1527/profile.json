@@ -169,6 +169,12 @@
    "kind": "verification",
    "result": "worked",
    "what": "Split the combined catalogue item 7 target after George Lasry pointed out that it mixed different ciphers: del Vasto's no. 6 (Cipher 2, shifted letters with code groups; sibling no. 19) stays in vasto1527; no. 20 and the Ranzo letters (initial-letter code with numbered word lists) moved to ranzo1528; no. 10 (Cipher 1, read by Lasry and Tomokiyo, not reworked) is a cross-reference only."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Lasry's preliminary decryption (prior/, his file) and, as separate files, this project's sign-level reading file n6_signs.tsv, its current reading of the cipher runs (texts/no6_decryption.txt, saved from n6_measure.py --text) and the 18 Sept edited reading; key = Lasry's key image plus the code values added here, copied from NOTES to texts/key.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -247,6 +253,10 @@
     "date": "2026",
     "source": "https://cryptiana.web.fc2.com/code/GL.htm"
    }
-  ]
+  ],
+  "texts": [
+   {"doc": "no6", "label": "No. 6, BnF fr. 3022 ff. 16v-17v, del Vasto to Charles V, [Rome, early December 1527]: George Lasry's preliminary decryption, and this project's reading", "transcription": ["n6_signs.tsv", "prior/BnF_fr3022_f16_decryption.txt"], "decryption": ["prior/BnF_fr3022_f16_decryption.txt", "texts/no6_decryption.txt", "n6_reading.md"], "summary": "The Marquis del Vasto to Charles V from Rome, early December 1527, after the agreement for the Pope's liberty: his plan to take the army out of Rome toward Tuscany, secure Siena, threaten Florence, take Perugia and the state of Urbino and pass into the Marche, with the warning that the army cannot be sustained 'desta manera' without money. prior/BnF_fr3022_f16_decryption.txt is George Lasry's preliminary letter-level decryption (cryptiana GL.htm), which also serves as the sign transcription; texts/no6_decryption.txt is this project's current reading of the cipher runs with the code groups identified (98.0% of 1,680 tokens), and n6_reading.md its edited text of 18 Sept."}
+  ],
+  "key_file": ["prior/BnF_fr3022_f16.png", "texts/key.md", "n6_codes.json"]
  }
 }

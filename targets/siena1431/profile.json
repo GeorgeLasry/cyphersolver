@@ -222,6 +222,12 @@
       "kind": "literature search",
       "what": "George Lasry's consolidated report of 17 Oct 2026 filed (lasry_report.md, pp. 13-17): 'Solved ciphertext-only (October 2026) by George Lasry with CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra; the filed key R4755 was found to match afterwards'. Credits reconciled with it. The report keeps the 1431-1432 dating and calls no. 24 unsigned; this project's 1437-38 dating and the dorse signature stay, as questions for George.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's submitted readings of nos. 6 and 24 and, as separate files, this project's revised readings, its own decodes and the no. 24 dorse; this project's blind transcriptions (project_attempt/; Lasry's sign transcription is not in the repository); key R4755 as read from the DECODE sheet (key_R4755.tsv).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -295,6 +301,11 @@
       }
     ],
     "first_break": true,
-    "notes": "Result by George Lasry (CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra, per his report of 17 Oct 2026), verified here. No. 6 93.4% of decrypted letters understood, no. 24 P2 72.7%, revised here to 79.6% (14 Oct); dorse of no. 24 decoded here in part. Verification by this project: blind transcription of 24 Sept decoded with the key, 69% (key read by eye) to 88-91% agreement."
+    "notes": "Result by George Lasry (CTTS built-in cryptanalysis, refined by Claude Opus 5.5 and GPT-6 Astra, per his report of 17 Oct 2026), verified here. No. 6 93.4% of decrypted letters understood, no. 24 P2 72.7%, revised here to 79.6% (14 Oct); dorse of no. 24 decoded here in part. Verification by this project: blind transcription of 24 Sept decoded with the key, 69% (key read by eye) to 88-91% agreement.",
+    "texts": [
+      {"doc": "no06", "label": "No. 6 (R4795), Cristofano to the Signori of Siena, 19 February [c. 1431-38]: George Lasry's reading, and this project's corrections", "transcription": "project_attempt/no06.txt", "decryption": ["reading_no06.txt", "reading_no06_rev.txt", "decode_no06.txt"], "summary": "Cristofano de Mont[...] to the Signori of Siena, 19 February: Piccinino's men opening the road to Lucca, and Antonio Petrucci's chancellor back from Milan 'senza avere fact[o] nula'. reading_no06.txt is George Lasry's reading as submitted; reading_no06_rev.txt is this project's correction of it (z = So, 4 = u on the key sheet, 14 Oct 2026); decode_no06.txt is this project's own transcription decoded with the key. Lasry's sign transcription is not in the repository; the transcription linked is this project's blind one of 24 Sept."},
+      {"doc": "no24", "label": "No. 24 (R4812), Cristofano to the Signori of Siena, [early 1438]: George Lasry's reading, and this project's revision and dorse", "transcription": ["project_attempt/no24_p2a.txt", "project_attempt/no24_p2b.txt", "project_attempt/no24.txt"], "decryption": ["reading_no24.txt", "reading_no24_rev.txt", "decode_no24.txt", "decode_no24_dorse.txt"], "summary": "A letter from the same Cristofano, signed on its dorse: news of Lucca and Piccinino, the Venetians, the marquis of Mantua 'acordato col Duca di Milano', 'il ducha Alberto, duca d'Isterlic, che è a facto re d'Ongnaria' and the Council 'a Fer[r]ara', which put it in early 1438. reading_no24.txt is George Lasry's reading as submitted; reading_no24_rev.txt is this project's revision (72.7% to 79.6% understood), decode_no24_dorse.txt the dorse, which his reading does not cover."}
+    ],
+    "key_file": "key_R4755.tsv"
   }
 }

@@ -75,7 +75,8 @@
   {"kind": "key from source", "what": "Applied Lasry's reconstructed key TNA SP106-5 (DECODE R929) unchanged: fluent English at once (FOR THE PRESENT ... TO TRANSPORT ... SENT FOR GORING ... NO TIME SHALL BE LOST).", "result": "worked"},
   {"kind": "reading", "what": "Read 95 = my and 98 = artillery from context; c2 = do, b2 = can, k4 = nor, 412ant = warrant as conjectures; about 15 code groups left open.", "result": "partial"},
   {"kind": "verification", "what": "Content matches Digby's letters of 27 and 30 April 1645 (the King cannot bring the train to Rupert; Rupert should march) and Rupert's march on Oxford in May.", "result": "worked"},
-  {"kind": "transcription", "what": "Correction after an outside check of the phrase 'you may come and fetch it' against the key: the groups 68 4 | 75 86 93 c-o-m-e e5 f-e-t-c-h 83 f2 give y-e-u [86][93] come IN fetch it. On the image the 4 stands at the torn edge (probably 45, so 'you'); 86 and 93 are outside the key and mark phrase ends elsewhere, so 'may' is supplied, not read; and the sign transcribed e5 is the King's clear '&' (same form as in 'friday & sonday' and 'Oncle & most', unlike his three small e5 groups), so 'and' stands as his own word. Transcription and ciphertext corrected (304 groups); page, reading.md and NOTES now print 'you [may] come and fetch it'.", "result": "worked", "date": "2026-09-30"}
+  {"kind": "transcription", "what": "Correction after an outside check of the phrase 'you may come and fetch it' against the key: the groups 68 4 | 75 86 93 c-o-m-e e5 f-e-t-c-h 83 f2 give y-e-u [86][93] come IN fetch it. On the image the 4 stands at the torn edge (probably 45, so 'you'); 86 and 93 are outside the key and mark phrase ends elsewhere, so 'may' is supplied, not read; and the sign transcribed e5 is the King's clear '&' (same form as in 'friday & sonday' and 'Oncle & most', unlike his three small e5 groups), so 'and' stands as his own word. Transcription and ciphertext corrected (304 groups); page, reading.md and NOTES now print 'you [may] come and fetch it'.", "result": "worked", "date": "2026-09-30"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt, ciphertext.txt and reading.md; the values added to Lasry's SP106-5 key copied from NOTES to texts/key.md (his DECODE R929 key file is in the git-ignored decode/ folder, not in the repository).", "result": "worked"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -92,6 +93,10 @@
   "notes": "Read with Lasry's SP106-5 key. The sense is complete; about 20 of 304 groups (code words) are open or read from context only.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "King-Queen key 'TNA SP106-5' on DECODE R929 (2020 reconstruction), applied unchanged", "date": "2020", "source": "DECODE R929"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R4921", "label": "R4921, BL Add MS 18983 f. 14, Oxford, 29 April 1645", "transcription": ["transcription.txt", "ciphertext.txt"], "decryption": "reading.md", "summary": "Charles I at Oxford, hemmed in by Cromwell's raids, to Prince Rupert: he cannot move his train of artillery without horses and a convoy, has sent for Goring, and asks Rupert to march speedily to fetch it. This agrees with Digby's letters of 27 and 30 April and with Rupert's march on Oxford in early May, which led to Naseby."}
+  ],
+  "key_file": "texts/key.md"
  }
 }

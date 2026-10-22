@@ -193,6 +193,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 376 tokens, 48 types, la order 4: reading -1.997 per letter; random keys -5.2 (z 7.4); key annealed onto shuffled ciphertext best -2.684 (mean -2.724, z 28.5); annealer on the real text -2.545. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per letter, George Lasry's CTTS transcription, CTTS decryption and edited Latin pages (lasry2026/ctts/), the project's gap-marked copy reading.txt, his English translation (lasry2026/CONTRIBUTION.md) and his key lasry2026/ctts/key.txt.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -277,19 +283,49 @@
   "texts": [
    {
     "doc": "R4336",
-    "label": "R4336, London, 15/25 Feb 1625",
-    "transcription": "lasry2026/ctts/transcription/all.txt",
-    "decryption": "reading.txt",
+    "label": "Letter 1, R4336 images 1-2, London, 15/25 February 1625 (George Lasry)",
+    "transcription": [
+     "lasry2026/ctts/transcription/IMG_R4336_I25992_P1.txt",
+     "lasry2026/ctts/transcription/IMG_R4336_I25992_P2.txt"
+    ],
+    "decryption": [
+     "lasry2026/ctts/decryption/IMG_R4336_I25992_P1.txt",
+     "lasry2026/ctts/decryption/IMG_R4336_I25992_P2.txt",
+     "lasry2026/ctts/edited/IMG_R4336_I25992_P1_edits.txt",
+     "lasry2026/ctts/edited/IMG_R4336_I25992_P2_edits.txt",
+     "reading.txt"
+    ],
     "translation": "lasry2026/CONTRIBUTION.md",
-    "summary": "Rusdorff has seen the secret Swedish proposals put to Anstruther for restoring the Palatinate; London leans to Christian IV, whose terms are modest (6,000 foot and 1,000 horse asked, 4,000 and 1,000 offered)."
+    "summary": "Rusdorff, the Palatine envoy in London, to Axel Oxenstierna: he has been shown the secret Swedish propositions laid before the British envoy Sir Robert Anstruther for the restoration of the Palatinate, which London received eagerly. Christian IV asks King James for 6,000 foot and 1,000 horse and offers 4,000 foot and 1,000 horse himself; the matter is to be settled at the next meeting of the confederates."
    },
    {
     "doc": "R4337",
-    "label": "R4337, London, 26 Feb 1625 (o.s.) and a further undated letter",
-    "transcription": "lasry2026/ctts/transcription/all.txt",
-    "decryption": "reading.txt",
+    "label": "Letter 2, R4337 images 1-2, London, 26 February 1625 old style (George Lasry)",
+    "transcription": [
+     "lasry2026/ctts/transcription/IMG_R4337_I25993_P1.txt",
+     "lasry2026/ctts/transcription/IMG_R4337_I25993_P2.txt"
+    ],
+    "decryption": [
+     "lasry2026/ctts/decryption/IMG_R4337_I25993_P1.txt",
+     "lasry2026/ctts/decryption/IMG_R4337_I25993_P2.txt",
+     "lasry2026/ctts/edited/IMG_R4337_I25993_P1_edits.txt",
+     "lasry2026/ctts/edited/IMG_R4337_I25993_P2_edits.txt",
+     "reading.txt"
+    ],
     "translation": "lasry2026/CONTRIBUTION.md",
-    "summary": "Buckingham prepares to fetch the French bride but the papal dispensation and Parliament stand in the way; France offers 500,000 livres to the confederation on condition of joint arbitration in Germany."
+    "summary": "The answer to Anstruther is still unknown; Sir James Spens will report it. Buckingham is preparing a magnificent journey to France for the royal wedding, but the papal dispensation came with harsh clauses, the King of France reportedly wants Parliament to ratify the articles first, and people and Parliament dislike Catholic marriages. Signed by Rusdorff; the first page is not among the photographs."
+   },
+   {
+    "doc": "R4337",
+    "label": "Letter 3, R4337 image 3, beginning of a further letter, undated (George Lasry)",
+    "transcription": "lasry2026/ctts/transcription/IMG_R4337_I25993_P3.txt",
+    "decryption": [
+     "lasry2026/ctts/decryption/IMG_R4337_I25993_P3.txt",
+     "lasry2026/ctts/edited/IMG_R4337_I25993_P3_edits.txt",
+     "reading.txt"
+    ],
+    "translation": "lasry2026/CONTRIBUTION.md",
+    "summary": "The Brandenburg agent Christian Bellin will have reported how far the confederation had advanced in France: the King of France promises to join, with 500,000 livres tournois in advance, if he and the King of Great Britain jointly arbitrate the disputes in Germany. Rusdorff advises accepting with suitable safeguards."
    }
   ],
   "key_file": "lasry2026/ctts/key.txt"

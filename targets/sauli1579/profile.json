@@ -158,6 +158,12 @@
    "what": "Code words added to the key from gloss alignment: 16 Inghilterra, 30 S.S.ta, 36 Francia, 40 cattolici, 10 Italia(?).",
    "result": "partial",
    "date": "2026-09-21"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R190/R191: DECODE transcriptions (Midas) and Lasry's own decryption file D3249/D3250; R192-R194: the per-passage transcription/decrypt/gloss files and the DECODE decryption bodies copied from decode_updates/decryptions into texts/; key = Lasry's DOC_R190_D3258 plus the five code words added here, copied from NOTES to texts/key.md.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -175,6 +181,14 @@
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "the secretariat's interlinear decipherments on nearly every passage"},
     {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed Portugal nunciature key and decryption of R190-R191 on DECODE (DOC_R190_D3258, D3249), extended here by five code words", "date": "2020-10", "source": "DECODE R190-R194"}
-  ]
+  ],
+  "texts": [
+   {"doc": "R190-R191", "label": "R190, Portogallo 8 ff. 92r-95r (George Lasry's DECODE decryption)", "transcription": "decode/DOC_R190_D1643_1643.txt", "decryption": "decode/DOC_R190_D3249_3249.txt", "summary": "A letter in the Portugal nunciature cipher, with a passage 'Al conte di Desmon[d]' on the soldiers of His Holiness in Ireland; undated, filed between Sauli's and Riario's runs. Lasry's decryption file (DECODE D3249, Oct 2020, on Midas's 2017 transcription) covers R190 and R191 together."},
+   {"doc": "R190-R191", "label": "R191, Portogallo 8 ff. 98r-101r (George Lasry's DECODE decryption)", "transcription": "decode/DOC_R191_D1644_1644.txt", "decryption": "decode/DOC_R191_D3250_3250.txt", "summary": "Ortiz, the 'distruttione di quelli poveri Italiani' (Smerwick, Nov 1580?), Anselmo and the soldiers' pay; author and date not established. The decryption is the same Lasry file as on R190, as filed on R191."},
+   {"doc": "R192-R194", "label": "R192, Portogallo 8 ff. 195-197, Riario, Nov-Dec 1580", "transcription": "transcription_R192.md", "decryption": ["texts/R192_decryption.txt", "transcription_R192.md"], "summary": "Cardinal Riario, legate to Philip II, reports the Pope's warning of a plot 'sopra il negotio di Piamonte' (the Marquis of Ayamonte, the Anselmi, Huguenots of the Dauphiné), which Philip II answers with thanks and the promise that nothing will disturb Italy; pp. 5-6 are a copy dated 29 Nov 1580."},
+   {"doc": "R192-R194", "label": "R193, Portogallo 8 ff. 236-238, Riario to Cardinal di Como, Badajoz 2 [Oct?] 1580 and Elvas, Dec 1580", "transcription": "transcription_R193_R194.md", "decryption": ["texts/R193_decryption.txt", "transcription_R193_R194.md"], "summary": "Idiáquez answers for Philip II on the 'impresa d'Inghilterra' requested in the Pope's name: the King lacks the means and defers it until Flanders is subdued. A clear decifrato on p. 3, dated Elvas, December 1580, says the President 'è pietra scandali et mal sodisfatto della Corte romana'."},
+   {"doc": "R192-R194", "label": "R194, Portogallo 8 f. 281, Riario, 1580-81", "transcription": "transcription_R193_R194.md", "decryption": ["texts/R194_decryption.txt", "transcription_R193_R194.md"], "summary": "Undated and unsigned, in Riario's hand: the Irish captains, money, Flanders first, and the truce; the Italian troops embarked on the Lisbon river are to be sent back toward Italy."}
+  ],
+  "key_file": ["decode/DOC_R190_D3258_3258.txt", "texts/key.md"]
  }
 }

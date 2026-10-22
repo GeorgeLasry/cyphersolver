@@ -211,6 +211,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 258 tokens, 48 types, es-golden-age order 4: reading -1.916 per letter; random keys -5.562 (z 6.0); key annealed onto shuffled ciphertext best -2.836 (mean -2.862, z 35.1); annealer on the real text -2.494. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's CTTS transcription (ctts/transcription/1.txt) and edited reading (ctts/edited/1_edits.txt), the labelled transcription, literal, token-aligned and edited decryptions, the English translation and the CTTS key (key.txt) with its status table.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -302,6 +308,10 @@
     "item": "Class (39), two occurrences: p/y identity unresolved"
    }
   ],
-  "notes": "Eight cipher lines covered. Two occurrences of one ambiguous sign and contextual one-occurrence LL/ND are explicit. No first-publication claim: related prior published key known, exact letter coverage unverified. Previous unsuccessful project attempt retained."
+  "notes": "Eight cipher lines covered. Two occurrences of one ambiguous sign and contextual one-occurrence LL/ND are explicit. No first-publication claim: related prior published key known, exact letter coverage unverified. Previous unsuccessful project attempt retained.",
+  "texts": [
+   {"doc": "R1182", "label": "R1182, Rodrigo Niño (Naples) to Charles V, 19 March 1522: the eight-line cipher block (George Lasry, CTTS)", "transcription": ["ctts/transcription/1.txt", "transcription.txt"], "decryption": ["decryption_literal.txt", "decryption_tokens.txt", "decryption_edited.txt", "ctts/edited/1_edits.txt"], "translation": "translation_en.txt", "summary": "Rodrigo Niño, imperial ambassador at Naples, to Charles V, 19 March 1522. The ciphered paragraph begs the Emperor, for the love of God, to have Spain provide the pay of the rear-guard, since the soldiers have no bread to live on and the towns cannot bear the harm being done to them."}
+  ],
+  "key_file": ["key.txt", "key.tsv", "key.json"]
  }
 }

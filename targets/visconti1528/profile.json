@@ -169,6 +169,12 @@
    "what": "Sign-by-sign re-read of the remaining open stretches on full-resolution deskewed line crops (recto 3, 10-12, 16, 21, 27, 30; verso 1-3, 6-9): v06 w = O ('che havemo') read; v03 'o' re-read as ρ; r16 and r30 show a bare Λ; no other change. 1248/1337 = 93.3%.",
    "result": "partial",
    "date": "2026-10-05"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): glyph token transcription (tokens.txt, with the superseded cipher.txt), the final reading and the per-section glyph readings; key = KEY.md (Lasry's table extended here) beside Lasry's table key_fr3045_f28.png.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -215,6 +221,10 @@
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "key table 'BNF Francais 3045f28 and 3034f154' on cryptiana GL.htm, extended here", "date": "2023-11-05", "source": "https://cryptiana.web.fc2.com/code/GL.htm"},
     {"who": "tomokiyo", "role": "identification", "note": "listed the leaf with Visconti's signed siblings (sender) and described the address (recipient)", "source": "https://cryptiana.web.fc2.com/code/GL.htm"}
-  ]
+  ],
+  "texts": [
+   {"doc": "f154", "label": "BnF fr. 3034 f. 154r-v (R4223), Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528", "transcription": ["tokens.txt", "cipher.txt"], "decryption": ["final.md", "reading_r01-15.md", "reading_r16-30.md", "reading_verso.md"], "summary": "Galeazzo Visconti to the grand master Montmorency from the League camp at Landriano: a council of war on whether the League army should march on Milan or Pavia; Visconti argued for Milan, but a scheme of Francesco's (Francesco Maria Sforza?), whispered to the Venetian officers, swung the vote, and the Duke of Urbino and the Venetian provveditore chose Pavia. 'A stew of bad digestion' if this goes on. tokens.txt is the measured glyph transcription (cipher.txt the superseded first pass); final.md the full reading."}
+  ],
+  "key_file": ["KEY.md", "key_fr3045_f28.png"]
  }
 }
