@@ -86,13 +86,13 @@ The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Dig
 
 ## Remaining gaps
 
-- R9667 (5 May 1523), cipher runs decoded, not read - blocker: open-codes (1523 sign set, no crib); needs-physical-access for the contemporary decipherment CSP 548 used (RAH Salazar A-28)
-- R9683 (June 1523), cipher passage decoded, not read - blocker: open-codes (1523 sign set, no crib)
-- R9695 (8 July 1523), decoded, not read - blocker: open-codes; not attempted further on 22 Oct (struck autograph draft)
-- R9867 (4 Jan 1524), decoded, not read (0.389) - blocker: open-codes (rub, ʃug, tol, xer, xal, xir, ʃal, co, ℮, ʃφ)
-- R9866, R9868, R9869: read 22 Oct 2026 (b07); scattered holes on open codes - blocker: open-codes
+- R9667 (5 May 1523), cipher runs decoded, not read - blocker: no-key-material (1523 sign set, no crib); needs-physical-access for the contemporary decipherment CSP 548 used (RAH Salazar A-28)
+- R9683 (June 1523), cipher passage decoded, not read - blocker: no-key-material (1523 sign set, no crib)
+- R9695 (8 July 1523), decoded, not read - blocker: no-key-material; not attempted further on 22 Oct (struck autograph draft)
+- R9867 (4 Jan 1524), decoded, not read (0.389) - blocker: no-key-material (rub, ʃug, tol, xer, xal, xir, ʃal, co, ℮, ʃφ)
+- R9866, R9868, R9869: read 22 Oct 2026 (b07); scattered holes on open codes - blocker: no-key-material
 - R9846 ff. 130v-132v beyond the crib third - blocker: needs-physical-access; f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital (bot check), Salazar A-30
-- About 20 code groups (rub, ʃug, zid, tol, tid, zib, xer, xir, xal, ʃal, yab, tas, toc, yic, co ...) - blocker: open-codes; no crib
+- About 20 code groups (rub, ʃug, zid, tol, tid, zib, xer, xir, xal, ʃal, yab, tas, toc, yic, co ...) - blocker: no-key-material; no crib
 - Look-alike signs - mostly resolved word by word on 22 Oct (`<doc>_corrections.tsv`); the rest blocker: illegible at DECODE resolution
 
 ## Escalation
