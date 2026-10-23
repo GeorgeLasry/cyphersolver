@@ -316,6 +316,13 @@
    "technique": ["statistical test"],
    "what": "r2l: v2_score.py (it): p. 2 ll. 18-31 + p. 3 0.636 explicit-hole (35/55; before 0.466), plain 0.491; p. 1, p. 2 ll. 1-17, p. 4 0.698 (before 0.642). Look-alike letters recounted by the brief's definition 1.8% (b25's broad count 4.3%). Second part set read (grade B); class stays read in part (hole rate 0.12, read bar of 95% not met).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["other"],
+   "what": "Independent second reader (sr) on V2831 p. 2 ll. 18-31 + p. 3: 8 lines drawn with random.seed(20261023) (p. 2 L30; p. 3 L02, L03, L09, L10, L21, L23, L31), signs transcribed blind on per-line crops of the Vestigia plates (3240x4320) and decoded with key_R5411.md, then compared with trans/v2831p2_b25.md, v2831p3_b25.md, trans/v2831_r2l_corrections.tsv and v2831_p2p3_r2l_reading.md (trans/v2831_sr_blind.tsv). Signs 388/416 agree (93.3%); reading words not carried by the blind decode 26/92 (28%), after the second reader's own re-crops of each disputed sign 9/92 (9.8%: sua x2, mando, andisse, arte, et x2, che, Turco).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -406,7 +413,7 @@
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "r2l 23 Oct 2026 (v2831_r2l_reread_log.md): fourth pass on the b25/r2e sign strings: every unread group run through the lang/ model it-cinquecento as a segmenter with the alternative values of multi-valued signs enumerated (research/reading_audit/r2l_seg.py), and p. 3 re-cropped from the full-resolution Vestigia plate where a group was in doubt (trans/v2831_r2l_corrections.tsv: per quanto, persuadere, l'invito facto, fare x4, al Papa, non [?venga] a alienare l'animo, tertio in iustificare, calumnie, apresso el Papa offerendoli de mandarlo li, innocentia, cosa, sento d'avere). Body 0.636 explicit-hole (35/55; p. 2 ll. 18-31 0.611, p. 3 0.649), plain 0.491 (before 0.466 / 0.293). Look-alike letters 33 of about 1,800 (1.8%) by the brief's definition (b25's broad count of every shape choice 4.3%); the o-form read t against the key's b about 40 times, listed separately. Still fragmentary: p. 2 ll. 28-31 between secure words, p. 3 ll. 1-3, 5-8 middles, 27, 29, 31 tail (no-key-material: torn R5411 columns; one blot, illegible)."
+     "note": "r2l 23 Oct 2026 (v2831_r2l_reread_log.md): fourth pass on the b25/r2e sign strings: every unread group run through the lang/ model it-cinquecento as a segmenter with the alternative values of multi-valued signs enumerated (research/reading_audit/r2l_seg.py), and p. 3 re-cropped from the full-resolution Vestigia plate where a group was in doubt (trans/v2831_r2l_corrections.tsv: per quanto, persuadere, l'invito facto, fare x4, al Papa, non [?venga] a alienare l'animo, tertio in iustificare, calumnie, apresso el Papa offerendoli de mandarlo li, innocentia, cosa, sento d'avere). Body 0.636 explicit-hole (35/55; p. 2 ll. 18-31 0.611, p. 3 0.649), plain 0.491 (before 0.466 / 0.293). Look-alike letters 33 of about 1,800 (1.8%) by the brief's definition (b25's broad count of every shape choice 4.3%); the o-form read t against the key's b about 40 times, listed separately. Still fragmentary: p. 2 ll. 28-31 between secure words, p. 3 ll. 1-3, 5-8 middles, 27, 29, 31 tail (no-key-material: torn R5411 columns; one blot, illegible). Second reader (sr, 23 Oct 2026, trans/v2831_sr_blind.tsv): 8 random lines (seed 20261023: p. 2 L30, p. 3 L02, L03, L09, L10, L21, L23, L31) transcribed blind from the plates with R5411 before the first reader's files were opened: signs agree 388/416 (93.3%); of 92 unbracketed reading words 26 (28%) were not carried by the blind decode, mostly the blind reader's own misses (crossbar of ƀ, dotted ɔ, straight-ascender d = s), and 9 (9.8%) still not carried after re-cropping each disputed sign (sua twice from d s r with s = u, not a key value; mando; andisse where the sign is a single stroke 1 = a; arte with the blotted ß = ʒ; et for x̄ on p. 2 where the key note gives Ma; et and che on p. 3 L21/L09; Turco's 6). At the ~1-in-10 limit, not over it: kept read, grade B."
     }
    },
    {

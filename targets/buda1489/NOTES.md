@@ -192,6 +192,23 @@ cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. pr
 - fraction_read 0.563 -> 1.0 (documents that read / all, by lines; hole rate inside the readings 0.11-0.12). Class stays
   **read in part**: the README read bar (95% of tokens as sense) is not met.
 
+## 23 Oct 2026: independent second reader on p. 2 ll. 18-31 + p. 3 (sr)
+
+- Sample: 8 lines drawn with `random.seed(20261023)` from p. 2 L18-L31 and p. 3 L01-L31: **p. 2 L30, p. 3 L02, L03,
+  L09, L10, L21, L23, L31**. Signs transcribed blind from per-line crops of the Vestigia plates (`img/v2831_p2r.jpg`,
+  `v2831_p3r.jpg`, 3240x4320; own row finder, crops in the session scratchpad only), decoded with `key_R5411.md` and
+  segmented, before the b25/r2l files were opened; then compared (`trans/v2831_sr_blind.tsv`).
+- **Signs: 388 of 416 agree (93.3%)**, per line 90-98%. Disagreements: dotted ɔ read ε, the top crossbar of ƀ missed,
+  r/v, a/d, a struck group counted as two signs, the first x̸ of p. 3 L03.
+- **Words: of 92 unbracketed reading words, 26 (28%) were not carried by the blind decode**; most were the second
+  reader's own misses, confirmed on re-crop (fa, dia, staro/epso/questo/modestia with the straight-ascender d = s, which
+  is a real shape distinction on the plate, l'invito facto, per, intendire). **After re-cropping each disputed sign, 9
+  (9.8%) are still not carried**: "sua" twice (d s r: s = u is not a key value), "mando" (x' or x + dotted 1),
+  "andisse" (the sign after x is a single stroke, the key's 1 = a: andasse), "arte" (the blotted ß read ʒ), "et" for x̄
+  on p. 2 L30 (the key note gives x̄ = Ma), "et" and "che" on p. 3 L21/L09 (not settled), "Turco" (the 6).
+- Decision: at the ~1-in-10 limit, not over it: **stays read, grade B**. The nine words would be better marked [?…] in
+  `v2831_p2p3_r2l_reading.md` at the next pass (not changed here).
+
 ## Remaining gaps
 - 2831 letter groups that decode letter for letter but give no word: p. 1 L03, L04, L08, L11, L12, L17, L19-L22, L25-L29; p. 2 L15, L16, L19-L21, L25, L28-L31 between secure words; p. 3 L02, L03 head, L05-L08 middles, L15, L18, L21, L22, L27, L29, L31; p. 4 L02 - blocker: no-key-material; four passes (b25 twice, r2e with R5411, r2l 23 Oct 2026 with the lang/ it-cinquecento segmenter over every alternative sign value and a full-resolution p. 3 re-crop); they need the values of the torn R5411 columns (T, U/V, X, Y, Z, &) or of signs not in the key (r-ring, the n-stroke in 'ochi aperti', the lone x on p. 3 l. 29)
 Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
@@ -206,4 +223,4 @@ and R1158 are other ciphers and are not part of this reading.
 - [x] known-keys: Somogyi's 2016 key used first; 23 Oct 2026 the original key found, ASMi Sforzesco cart. 1597 no. 111 (DECODE R5411, key_R5411.md), and used for p. 2 ll. 17-30 and p. 3; the abbot of Forlì's cipher (R1146/R1147) is a different system
 - [x] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, MDE IV (1878): R1098 is printed as no. 91 (contemporary extract), 2831 is not in it (search of 9 Oct 2026 recorded in the main checkout's uncommitted NOTES); Vestigia 2831 lists no publication
 - [x] key-rebuild: about twenty sign values beyond Somogyi's table recovered from the unread letters by single-word cribs (7 = f, n+crossed 4 = ss, x' = do, a: = gli, q^o = re, b^a = na)
-- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; 23 Oct 2026 (r2e) p. 1, p. 2 ll. 1-17 and p. 4 re-read sign by sign with R5411 (read, 0.642) and a third pass on b25's p. 2 lines; 23 Oct 2026 (r2l) fourth pass: the unread groups segmented with the lang/ it-cinquecento model over every alternative sign value, p. 3 re-cropped at full resolution (p. 2 ll. 18-31 and p. 3 read, 0.636)
+- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; 23 Oct 2026 (r2e) p. 1, p. 2 ll. 1-17 and p. 4 re-read sign by sign with R5411 (read, 0.642) and a third pass on b25's p. 2 lines; 23 Oct 2026 (r2l) fourth pass: the unread groups segmented with the lang/ it-cinquecento model over every alternative sign value, p. 3 re-cropped at full resolution (p. 2 ll. 18-31 and p. 3 read, 0.636); 23 Oct 2026 (sr) independent second reader on 8 random lines: signs 93.3%, words not carried 9.8% after re-crop (kept read)

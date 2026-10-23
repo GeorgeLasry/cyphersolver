@@ -355,6 +355,13 @@
    "what": "r2h: R4938's three cipher spans (54 letters, image P2) transcribed and decoded with the family key unchanged: 'az Rakoczi Sigmon', 'az nekunk [...] volna', 'mi [?nevunkre] forogion'; a later pencil gloss agrees. Phrase fragments, one word unread (too-short): decoded, not read. Neither record settles R4936's g/q look-alikes.",
    "result": "partial",
    "technique": ["key matching"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["key-structure hypothesis", "plaintext matching"],
+   "what": "Independent second reader (sr) on R4939: 6 cipher lines drawn with random.seed(4939) (16, 17, 24, 29, 32, 45; lines 1-12 excluded as already seen), transcribed blind on 2-3x crops of IMG_R4939_I28645_P1/P2, decoded with R4939_key.md and compared with R4939-transcription.txt and R4939_reading.md (R4939_sr_blind.tsv). Letters 200/213 agree (93.9%); reading words not carried 8/36 blind, 3/36 (8.3%) after re-crops (bizoeta-, azekatru-, kegylme). Key checked: one cipher letter one plain letter, 23 distinct values, ten reciprocal pairs; the decode reads as 1648 Hungarian by sense.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -453,7 +460,7 @@
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "R4939_reading.md: key recovered ciphertext-only (R4939_key.md, annealing with hu-modern on the first-pass transcription), 50 look-alike labels corrected on 3x crops (q/g, r/t/s/x), reading aligned word by word with the decode of the corrected labels; 16 of 1,449 letters (1.1%) still rest on a look-alike alternate by sense; words not carried bracketed. v2_score explicit holes 0.75 (18/24), plain 0.0 (modern word list; period spelling). Lines 03-09 keep unread groups; from line 10 the sentences hold."
+     "note": "R4939_reading.md: key recovered ciphertext-only (R4939_key.md, annealing with hu-modern on the first-pass transcription), 50 look-alike labels corrected on 3x crops (q/g, r/t/s/x), reading aligned word by word with the decode of the corrected labels; 16 of 1,449 letters (1.1%) still rest on a look-alike alternate by sense; words not carried bracketed. v2_score explicit holes 0.75 (18/24), plain 0.0 (modern word list; period spelling). Lines 03-09 keep unread groups; from line 10 the sentences hold. Second reader (sr, 23 Oct 2026, R4939_sr_blind.tsv): 6 random lines (seed 4939: 16, 17, 24, 29, 32, 45) transcribed blind from the DECODE scans: letters agree 200/213 (93.9%; 5 of the 13 differences the q/g pair); of 36 reading words 8 (22%) not carried by the blind decode, 3 (8.3%) after re-cropping the disputed letters (bizoeta-, azekatru- where sr sees ÿ, kegylme where the scan has kegyelme). The key is a consistent simple substitution (23 cipher letters, 23 distinct values) and mostly reciprocal (a-m, b-i, c-p, d-u, e-g, f-v, h-l, o-y, r-z, s-t), which confirms it independently of the annealer; the decoded lines are Hungarian of the period by sense (ra vetni nem akariuc az porta alapattia miben legyen tudhattia kegyelmetek). Kept read, grade B."
     }
    },
    {

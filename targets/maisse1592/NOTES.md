@@ -22,6 +22,16 @@ were read against the enciphered copy, so agreement is partly by construction; t
 shows. fraction_read 0.99 (estimated) -> **0.999 measured** (6,250 of 6,251 visible cipher groups: f. 370 2,293, f. 373
 3,958; group 90 unread). Class read in part -> **read**.
 
+23 Oct 2026, independent second reader (sr): **blind re-transcription of a sample of f. 373.** Six lines drawn with
+`random.seed(373)` from recto ll. 3-53 and verso ll. 1-15 (**r07, r15, r17, r18, r48, v13**, 366 groups) read group by
+group from Gallica views 422-423 at full size (openapi.bnf.fr IIIF; crops in the session scratchpad only), decoded with
+`key1.tsv`, without opening `texts/f373_figures.txt`, the Brienne copy or its enciphered form. Compared group by group
+(`texts/f373_sr_blind.txt`): **342 groups agree, 94.1% independent agreement** (Dice on 366 vs 361 groups; per line
+r07 95.4%, r15 92.7%, r17 97.5%, r18 97.6%, r48 95.7%, v13 84.7%). Every difference re-checked on the image falls on the
+blind reader's side (v13 "par deca que vous" skipped, r48 "aduiserez" read as "aduisement", r15 "faire", r18
+"pourueu", two crop-overlap repeats), so the figures file stands and the 97.8% agreement with the copy is not only by
+construction. The reading still rests on the copy for the wording; the sample confirms the figures carry it.
+
 23 Oct 2026, r2f (REREAD_BRIEF): **f. 370's figures aligned with the copy.** The whole cipher passage of f. 370r-v
 transcribed group by group from openapi.bnf.fr views 419-420 (`texts/f370_figures.txt`, 2,293 figure groups measured,
 63 lines), decoded with `key1.tsv` and aligned letter by letter with the Brienne 13 copy (now kept separately as

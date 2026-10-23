@@ -304,6 +304,13 @@
    "technique": ["plaintext matching"],
    "what": "r2l: figures aligned letter by letter with the Brienne 13 copy (research/reading_audit/r2l_align373.py, copy of r2f_align370.py) -> texts/f373_figures_vs_copy.md: 3,972 of 4,062 copy letters agree (97.8%), 29 substituted, 48 missing, 13 in code 24. Differences in wording followed in the reading (pouvez tascher de, fort bon, asseurer ce faisant, Verac sa, combien qui, par faulte d'estre, le moien que j'ay); v2_score 0.913 plain, 0.957 explicit holes. fraction_read measured 0.999; class read in part -> read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "Independent blind re-transcription of f. 373 (sr): 6 lines drawn with random.seed(373) from recto ll. 3-53 + verso ll. 1-15 (r07, r15, r17, r18, r48, v13) read group by group from Gallica btv1b90074656 views 422-423 (full size), decoded with key1.tsv, without opening texts/f373_figures.txt or the Brienne copy; then compared group by group with f373_figures.txt (texts/f373_sr_blind.txt): 342 of 366 groups agree (94.1% Dice); the differences re-checked on the image fall on the blind reader's side.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -373,7 +380,7 @@
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "r2l 23 Oct 2026: the whole cipher of f. 373r-v transcribed group by group from the full-size Gallica views 422-423 (texts/f373_figures.txt, 3,958 groups in 66 lines, 36 doubtful, 3 struck; line spec f373_figures_spec.txt) and aligned letter by letter with the Brienne 13 fol. 104v-106v copy by research/reading_audit/r2l_align373.py (texts/f373_figures_vs_copy.md): 3,972 of the 4,062 copy letters of the cipher passage agree (97.8%), 29 substituted, 48 missing from the figures, 13 in code 24 (Roy d'Espagne). The reading now follows the figures where they differ in wording (vous pouvez tascher de, fort bon, asseurer ce faisant, Verac sa partialite, combien qui, par faulte d'estre, le moien que j'ay) and spelling. The figures were read line by line against the enciphered copy, so agreement is partly by construction; the 77 differences are what the image shows. v2_score 0.913 plain, 0.957 explicit holes. Earlier: b29 read from the copy, checked at five places; r2f Verac, charmez, sainement."
+     "note": "r2l 23 Oct 2026: the whole cipher of f. 373r-v transcribed group by group from the full-size Gallica views 422-423 (texts/f373_figures.txt, 3,958 groups in 66 lines, 36 doubtful, 3 struck; line spec f373_figures_spec.txt) and aligned letter by letter with the Brienne 13 fol. 104v-106v copy by research/reading_audit/r2l_align373.py (texts/f373_figures_vs_copy.md): 3,972 of the 4,062 copy letters of the cipher passage agree (97.8%), 29 substituted, 48 missing from the figures, 13 in code 24 (Roy d'Espagne). The reading now follows the figures where they differ in wording (vous pouvez tascher de, fort bon, asseurer ce faisant, Verac sa partialite, combien qui, par faulte d'estre, le moien que j'ay) and spelling. The figures were read line by line against the enciphered copy, so agreement is partly by construction; the 77 differences are what the image shows. v2_score 0.913 plain, 0.957 explicit holes. Earlier: b29 read from the copy, checked at five places; r2f Verac, charmez, sainement. Independent check (sr, 23 Oct 2026, texts/f373_sr_blind.txt): 6 lines drawn with random.seed(373) (r07, r15, r17, r18, r48, v13; 366 groups) transcribed blind from openapi.bnf.fr views 422-423 at full size, without f373_figures.txt or the enciphered copy: 342 groups agree, 94.1% (Dice, 366 vs 361 groups); per line 84.7-97.6%. The differences checked on re-crop (v13 'par deca que vous', r48 'aduiserez', r15 'faire', r18 'pourueu') are the blind reader's misses or crop-overlap repeats, the figures file is right where checked; so the 97.8% agreement with the copy is not only by construction. Grade A kept."
     }
    }
   ],

@@ -1,0 +1,46 @@
+# sr blind, fr. 16093 f. 373 (Gallica btv1b90074656 f422 recto / f423 verso, full resolution), seed random.seed(373) over recto 3-53 + verso 1-15: r7 r15 r17 r18 r48 v13
+r7	10 11 2 13 12 10 4 11 18 10 19 6 7 16 15 19 4 17 10 11 14 4 17 7 12 4 11 12 15 19 13 21 4 11 14 11 12 17 11 7 19 13 4 16 17 4 7 19 7 12 18 17 7 18 4 17 1 7 4 9 18 7 9 11 15 19
+r15	19 5 18 14 5 19 17 7 4 17 11 6 11 12 18 17 4 16 11 17 19 8 17 4 17 18 11 16 15 19 11 8 11 7 19 7 19 9 13 19 14 10 7 19 7 12 18 7 2 4 6 11 16 11 19 11 16 10 19 12 11
+r17	17 7 12 17 1 5 7 18 11 16 4 11 10 11 6 13 4 6 11 17 6 11 12 18 17 19 16 5 11 17 10 4 17 9 13 19 16 17 15 19 4 17 11 1 13 12 18 15 19 4 5 5 11 19 16 17 19 66 4 9 18
+r18	14 13 19 16 9 11 15 19 11 9 11 17 18 11 9 13 19 16 13 68 11 17 13 4 18 9 13 12 17 11 16 19 11 11 15 19 11 9 11 5 7 12 11 17 11 14 11 19 5 18 11 12 7 19 18 16 11 14 11 16 17 13
+r48	6 11 10 13 68 11 10 11 5 7 14 11 4 12 11 19 13 19 17 7 10 19 4 17 11 6 11 12 18 10 11 12 10 13 68 11 16 17 13 19 8 22 6 7 4 12 18 13 19 18 5 11 17 11 12 18 4 6 11
+v13	12 11 7 9 11 12 18 6 13 4 12 17 5 7 17 7 4 17 13 12 11 17 18 11 12 9 13 16 6 11 17 17 4 6 7 5 14 16 13 14 16 11 14 7 16 10 11 12 12 11 11 12 9 13 16 11 17
+# comparison (sr_cmp373.py, difflib on groups, Dice):
+# r7 -> r07 mine 66 theirs(span) 64 match 62 95.4%
+#     replace ['4'] ['21'] i | y
+#     delete ['10', '19'] [] du | 
+#     replace ['4'] ['21'] i | y
+#    mine  : degondietdumarquisdepisanienquoyiepenseauoirsiauantsatisfaictacequ
+#    theirs: degondyetmarquisdepisanyenquoyiepenseauoirsiauantsatisfaictacequ
+# r15 -> r15 mine 61 theirs(span) 62 match 57 92.7%
+#     replace ['17'] ['1', '7'] s | fa
+#     delete ['7', '19'] [] au | 
+#     replace ['4'] ['11'] i | e
+#     insert [] ['11', '5']  | el
+#    mine  : ultplusaisementsiresubsisterquebeauaucoupdauantagimereuerdune
+#    theirs: ultplusaisementfairesubsisterquebeaucoupdauantagemereleuerdune
+# r17 -> r17 mine 61 theirs(span) 60 match 59 97.5%
+#     replace ['12'] ['11'] n | e
+#     delete ['9'] [] c | 
+#    mine  : sansflateriedemoimesmentsurlesdiscoursquisefontquilleursuffict
+#    theirs: sansflateriedemoimesmeetsurlesdiscoursquisefontquilleursuffit
+# r18 -> r18 mine 62 theirs(span) 63 match 61 97.6%
+#     replace ['9'] ['19'] c | u
+#     insert [] ['19']  | u
+#    mine  : pourcequecestecouronnesoitconserueequecelanesepeultenautreperso
+#    theirs: pourueuquecestecouronnesoitconserueequecelanesepeultenautreperso
+# r48 -> r48 mine 59 theirs(span) 58 match 56 95.7%
+#     replace ['6'] ['16'] m | r
+#     replace ['12', '18'] ['22'] nt | z
+#    mine  : medonnedelapeineuousaduisementdendonnersoubzmaintoutlesentime
+#    theirs: medonnedelapeineuousaduiserezdendonnersoubzmaintoutlesentime
+# v13 -> v13 mine 57 theirs(span) 54 match 47 84.7%
+#     delete ['9', '11'] [] ce | 
+#     insert [] ['X']  | [X]
+#     delete ['6'] [] m | 
+#     replace ['12', '12'] ['9', '7', '15', '19'] nn | caqu
+#     replace ['11', '12', '9'] ['19'] enc | u
+#     replace ['16', '11'] ['19'] re | u
+#    mine  : neacentmoinslasaisonestencormessimalproprepardenneencores
+#    theirs: neantmoinsla[X]saisonestencoressimalproprepardecaqueuous
+# total mine 366 theirs 361 match 342 agreement 94.1%

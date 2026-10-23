@@ -78,7 +78,7 @@ Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not re
 - [x] known-keys: the family key (shared-key-hypothesis.json) applied unchanged
 - [x] print: Lukinich 1908 (both instalments), Szilágyi 1885 (Linz), Erdély és az északkeleti háború I grepped; no edition
 - [x] key-rebuild: not needed; the transcription was redone instead
-- [x] retry: R4936 re-transcribed and read; R4937, R4942 transcribed in full and read (23 Oct 2026); R4938 spans decoded and R4939 broken and read (23 Oct 2026, r2h)
+- [x] retry: R4936 re-transcribed and read; R4937, R4942 transcribed in full and read (23 Oct 2026); R4938 spans decoded and R4939 broken and read (23 Oct 2026, r2h); R4939 checked by an independent second reader on 6 random lines (letters 93.9%, words not carried 8.3%; 23 Oct 2026, sr)
 
 ## Next work (earlier list)
 
@@ -120,3 +120,18 @@ Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not re
 - **R4936's g/q**: not settled. R4938's spans contain no t, so they cannot test the g/q choice; R4939's hand separates g
   and q on scans of the same width, so the limit is R4936's hand. Blocker unchanged (illegible).
 - fraction_read 0.22 -> 0.58 (measured letters: R4937 + R4942 + R4940 + R4939 of all six transcriptions).
+
+## 23 Oct 2026 — independent second reader on R4939 (sr, `R4939_sr_blind.tsv`)
+- Sample: 6 cipher lines drawn with `random.seed(4939)` from lines 13-46 (lines 01-12 excluded: their first-pass labels
+  had been seen before the draw): **16, 17, 24, 29, 32, 45**. Transcribed blind on 2-3x crops of the DECODE scans
+  (P1/P2, 1704x2272, scratchpad only), decoded with `R4939_key.md`, then compared.
+- **Letters: 200 of 213 agree (93.9%)**; 5 of the 13 differences are the q/g pair, the rest a/e, c/o, ÿ/g and one
+  letter the first reader dropped. **Words: 8 of 36 (22%) not carried by the blind decode; 3 (8.3%) after re-cropping**:
+  "bizoeta-" (l. 24; sr sees a y-descender, and neither reading gives a word: "bizontalan" would want q), "azekatru-"
+  (l. 32; sr sees ÿ, "azokat-"), "kegylme" (l. 45; the scan has x g e o g h a g, "kegyelme").
+- **Key**: one cipher letter one plain letter, 23 distinct values, and ten reciprocal pairs (a-m, b-i, c-p, d-u, e-g,
+  f-v, h-l, o-y, r-z, s-t): a paired alphabet, which confirms the annealer's key on its structure. The blind decode reads
+  as Hungarian of 1648 by sense ("ra vetni nem akariuc, az porta alapattia miben legyen tudhattia kegyelmetek, io
+  securitas"; "az hol kivantatik, oeczem uram").
+- Decision: under 1 in 10: **stays read, grade B**. The three words would be better given as [?bizon]talan, azokatru-,
+  kegyelme at the next pass (reading not changed here).
