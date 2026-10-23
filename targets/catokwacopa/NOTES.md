@@ -11,6 +11,12 @@ AWAY AT COLLEGE PARTY, I ATTENDED CONINGTON LECSURES); about 13 of 28 lines are 
 read as a text. Class now not read, method not solved; 0.547 is the share of letters the forced phrases account for,
 withdrawn as a reading figure.
 
+23 Oct 2026, re-read (batch b25, REREAD_BRIEF): nothing new to read from. There is no key, archive or contemporary
+text; the only other readings are in the Schmeh thread (klausschmeh.net, post of 14 Aug 2026, 16 comments to
+3 Sept 2026), all already above. Ernst's MOST PRIVATE for lines 9/26 needs 5 misprints (`mech.cost`), MASTER PUPIL 4.
+15 of 28 lines carry a forced phrase and 13 stay open, so the note remains telegraphic fragments: **decoded, not
+read**.
+
 ## State of play (September 2026)
 
 The mechanism is agreed. Line *i* of the first ad and line *i* of the second are two order-preserving
@@ -221,4 +227,4 @@ readings fit, and no image, sibling or key can choose between them.
 - [n/a] known-keys: no key: the mechanism is interleaving with omissions, not substitution
 - [x] print: Schmeh blog thread, Bosbach, Estes, Ernst BNA text, Krajcovic audits reviewed
 - [x] key-rebuild: open-vocabulary exact-fit search (English 30k, Latin 19k) and name-frame tests
-- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked
+- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked; 23 Oct 2026 (b25) blog thread re-checked, MOST PRIVATE costed (5 misprints)

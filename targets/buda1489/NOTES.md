@@ -9,6 +9,18 @@ measured, so the read bar (README Conventions) is not shown to be met.
 **V2831 p. 2 ll. 17-32 and p. 3 are decoded, not read**: lines of fragments with [...] in most lines. About 56% of the
 cipher lines read (estimated). "Pages 1 and 2 are read almost throughout" in `v2831_reading.md` overstates p. 2.
 
+**23 Oct 2026, re-read (b25)** (`v2831_p2p3_reread_log.md`): **the original key was found**: ASMi Sforzesco
+cart. 1597 no. 111 (DECODE R5411, undated and unattributed there) is headed "Cum Mapheo Triviliensi", with alphabet
+(torn at T-&), doubles, nulls, syllables and a 22-entry nomenclator; transcribed in `key_R5411.md`. It confirms
+Somogyi's reconstruction where both exist and names the word signs (q^s x̄ = Roma, M+ = Regina, a# = Vostra
+Dominatio, Q. = Duca de Milano, Ra = madonna Bianca, + = Vescovo Varadino). (R1099/R1169 are the 1488
+Arcimboldo-Oliva key, a different one; cart. 1597 no. 107, R5407, "Cum Mafeo Triviliensi", is a second, different
+alphabet, perhaps R1152/R1158's.) V2831 p. 2 ll. 17-30 (the page has 30 lines, not 32) and p. 3 (31 lines, not 28)
+re-read sign by sign from the plates with per-row crops and decoded with it (`trans/v2831p2_b25.md`,
+`trans/v2831p3_b25.md`; partial reading `v2831_p2p3_reading.md`, English `v2831_p2p3_en.md`). Body 0.322 clean
+sentences (before 0.158), explicit holes 0.542: p. 2 ll. 17-27 and half of p. 3 now build sentences, the rest stays
+fragments. **Still decoded, not read.** Flagged: the key gives the o-forms as b, but an o-form reads t in most words.
+
 Session of 18 September 2026. Goal: read the cipher letters of the Milanese embassy in Hungary that have no
 contemporary decipherment, using the key Judit W. Somogyi reconstructed in 2016 and the cipher/clear pairs
 she used, so as to beat the project's oldest reading (1497) with texts of 1489–90.
@@ -125,21 +137,19 @@ The Vestigia record of 2831 (`vestigia/doc2831.json`, `archive_ref`) gives **Sfo
 cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. profile.json corrected.
 
 ## Remaining gaps
-- 2831 p. 2 ll. 17-32 and p. 3 ll. 1-19 decoded, not read (fragments in most lines; reading audit 22 Oct 2026) - blocker: not-attempted; re-read from the plate with per-row crops (the stacked crops drift from l. 18), then build sentences and translate
+- 2831 p. 2 ll. 19, 21, 23-30 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31: legible groups not yet segmented into words (re-read 23 Oct 2026 with the original key R5411, two passes) - blocker: not-attempted; a third pass with key_R5411.md is worthwhile
 Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
 and R1158 are other ciphers and are not part of this reading.
-- 2831 p. 3 after l. 19, about a third of that page's words - blocker: not-attempted; read only in patches, the ink is lighter and the stacked crops drift; the per-row crop pass straight from the plate (Method, on the page) has not been run, and part may prove illegible after it
+- 2831 p. 3 l. 15, signs under an ink blot - blocker: illegible
 - 2831 p. 1 ll. 21–26, last words of each line - blocker: illegible; stain at the right edge, no other image (DECODE and Vestigia serve the same negative)
-- four unvalued signs (♀-like sign with a cross below, capital E with three bars, a wavy horizontal null, a stroke that may be a second null) - blocker: open-codes; not in Somogyi's table as printed, each too rare to fix from context so far
-- the recurring ro+et pair on p. 3 after "ad" (a place name) - blocker: open-codes; probably a nomenclator entry Somogyi's key does not list
-- nomenclator signs for madonna Bianca, zo. Corvino and il vescovo varadino - blocker: open-codes; met once each, shapes not confirmed
-- R1098 ll. 5, 6 and 9, short groups including the word after "divertira ad" (Tulln?) - blocker: not-attempted; not retried with the sign values gained later from the 1489 letter
-- share of cipher signs read - blocker: not-attempted; never measured (only 2831 p. 1 ll. 1–10 and R1098 were transcribed to tokens). Next step: a full token transcription of 2831 pp. 1–4 and a measured count against the reading files
+- signs in the torn columns of R5411 (x, y, z, &, part of t), r-ring on p. 3 l. 15, and the o-form (b by the key, t in most words) - blocker: no-key-material; R5411 is torn at the upper right
+- R1098 ll. 5, 6 and 9 - blocker: not-attempted; the MDE IV no. 91 extract gives the text (main checkout NOTES, 9 Oct 2026), not re-aligned here
+- share of cipher signs read - blocker: not-attempted; never measured; p. 2-3 sign strings now in trans/v2831p2_b25.md and v2831p3_b25.md
 
 ## Escalation
 - [x] siblings: Maffeo's and the embassy's letters in cart. 642/645/650 opened on Vestigia and DECODE: R1155 (clear copy Vestigia 2240), R1147 (Vestigia 603, Labancz no. 45), R1152 (clear draft), R1146 and R1158 (other ciphers); no clear copy of 2831 or R1098 exists among them
 - [x] clear-pages: R1098 p. 2 is clear and restates cipher ll. 7–10 (used as a control); 2831 p. 4 ll. 3–17 are a clear postscript; Somogyi's five cipher/clear pairs located, 267/268 used for calibration
-- [x] known-keys: Somogyi's 2016 key is the only known key of this cipher and is the one used; the abbot of Forlì's cipher (R1146/R1147) is a different system
-- [ ] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, *Magyar diplomácziai emlékek Mátyás király korából* (1875–78), which prints Milanese despatches from Hungary to 1490, not yet searched for these two letters
+- [x] known-keys: Somogyi's 2016 key used first; 23 Oct 2026 the original key found, ASMi Sforzesco cart. 1597 no. 111 (DECODE R5411, key_R5411.md), and used for p. 2 ll. 17-30 and p. 3; the abbot of Forlì's cipher (R1146/R1147) is a different system
+- [x] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, MDE IV (1878): R1098 is printed as no. 91 (contemporary extract), 2831 is not in it (search of 9 Oct 2026 recorded in the main checkout's uncommitted NOTES); Vestigia 2831 lists no publication
 - [x] key-rebuild: about twenty sign values beyond Somogyi's table recovered from the unread letters by single-word cribs (7 = f, n+crossed 4 = ss, x' = do, a: = gli, q^o = re, b^a = na)
-- [ ] retry: not done after the last sign gains; p. 3 of 2831 and R1098 ll. 5, 6, 9 have not been re-run with the full sign list
+- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); R1098 ll. 5, 6, 9 not re-run here

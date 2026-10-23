@@ -175,6 +175,13 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["crib testing"],
+   "what": "Re-read brief b25: checked for any new reading (Schmeh blog post of 14 Aug 2026 and its 16 comments to 3 Sept 2026: nothing beyond NOTES); Ernst's MOST PRIVATE for lines 9/26 costed with mech.cost: 3-5 omitted letters and 5 misprints against mistrl/otenpu and mistrl/oatvpu (MASTER PUPIL 2 omitted, 4 misprints): not forced. The line-by-line decryption scored as a sentence list (en): 15 of 28 lines carry a forced phrase, 13 open; telegraphic fragments, not sentences. Stays decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -257,13 +264,13 @@
   "texts": [
    {
     "doc": "ads-1875",
+    "note": "Re-read 23 Oct 2026 (b25): no key, archive or contemporary text exists (two newspaper advertisements, interleaving with omissions); the Schmeh blog thread (klausschmeh.net, 14 Aug 2026, 16 comments to 3 Sept) has no reading beyond those in NOTES; Ernst's MOST PRIVATE for lines 9/26 needs 5 misprints (mech.cost), MASTER PUPIL 4. 15 of 28 lines carry a forced phrase, 13 stay open with many exact fits each; the note is a list of telegraphic fragments, not sentences. Stays decoded, not read (blocker too-short; the originals on the paywalled BNA: needs-physical-access).",
     "label": "The Standard, 8 and 20 May 1875 (both halves)",
     "transcription": "texts/ads-1875_transcription.txt",
     "decryption": "texts/ads-1875_decryption.md",
     "summary": "Two personal advertisements signed W. in The Standard, whose lines pair up as two order-preserving halves of one plaintext with letters dropped. The forced lines give the Oxford reading in outline: SUMMER TERM 1853, a cap taken away at a college party, Conington's and Jowett's lectures, the Hertford scholarship examination, a second motto (QUI FIT, Horace), TOLD SHIRLEY, DYING DECLARATION.",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Telegraphic phrases read line by line (SUMMER TERM 1853, CAP TOOK AWAY AT COLLEGE PARTY), but about 13 of 28 lines are unread or junk, so the note reads as a list of fragments, not as sentences (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    }
   ]
  }

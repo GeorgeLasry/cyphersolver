@@ -26,10 +26,10 @@
     "measured": false
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed; DECODE images viewed",
+    "by": "llm from images",
+    "source": "texts/f54_decipherment.txt (the f. 54r contemporary decipherment, line by line) and the letter's clear text in texts/R9963_reading.md; cipher signs not transcribed",
     "image_quality": "good",
-    "notes": "About 36 cipher lines on ff. 53r-54r."
+    "notes": "About 36 cipher lines on ff. 53r-54r; decipherment 28 lines (DECODE image 6, file _005)."
    }
   }
  ],
@@ -112,13 +112,34 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R9963 is in the repository beyond fragments quoted in NOTES. Relabelled decoded, not read; class already solved -> not read; method read from existing decipherment -> not solved, until f. 54 is transcribed.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["other"],
+   "what": "Re-read brief b25: all six DECODE images opened; the decipherment is record image 6 (file _005), image 5 its faint verso. f. 54r decipherment transcribed line by line (texts/f54_decipherment.txt) and the letter's clear text from images 2 and 4.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "Decipherment checked against the cipher letter: clear islands at the same places; the clear numeral xviij at the end of a f. 53r cipher line carries the decipherment's '[?e] viij meses'; the run 'q L 20 4 m b' repeats where the decipherment repeats 'embaxador'. No sign-by-sign decode (no key in the repository).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching"],
+   "what": "Reading written from clear text + decipherment (texts/R9963_reading.md, R9963_en.md, log R9963_reread_log.md); no word supplied. b17_score.py (es) on the body: 0.756 (31/41), explicit holes 1.00; before: no text. Set read, grade A; class not read -> already solved, method -> read from existing decipherment.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Read at the time: the decipherment is bound with the letter as f. 54 (DECODE R9963 image 5), but it is not transcribed in the repository (NOTES quotes fragments only), so no reading is claimed (reading audit, 22 Oct 2026). Once transcribed the method is read from existing decipherment.",
+  "method": "read from existing decipherment",
+  "method_basis": "Read at the time: the contemporary decipherment is bound with the letter as f. 54r (DECODE R9963 image 6, file _005). Transcribed 23 Oct 2026 (b25) and the reading written from it and the letter's clear text (texts/R9963_reading.md).",
   "contribution": ["catalogue correction"],
-  "class": "not read",
+  "class": "already solved",
   "verification": [
    "contemporary decipherment"
   ],
@@ -131,17 +152,34 @@
     "doc": "R9963",
     "label": "Count of Cifuentes, Rome, to Charles V, 3 Sep 1534",
     "summary": "The imperial ambassador in Rome reports Clement VII's last illness (the doctors hold little hope for his life); Ercole II of Ferrara presses through Cifuentes for his investiture before the Pope dies, the French ambassador offers to settle Ferrara with Charles, the Landgrave of Hesse and the Duke of Saxony are said to be treating with Francis I, and there is news of Nassau going to Flanders. Deciphered at the time: the decipherment is bound with the letter as f. 54r (DECODE image 5).",
-    "note": "No transcription or decipherment text in the repository; NOTES quote fragments of the f. 54 decipherment. Image in the main checkout targets/cifuentes1534/decode/IMG_R9963_I46336_P5.jpg (reading audit, 22 Oct 2026); fix: transcribe f. 54 and check it against the cipher.",
-    "state": "decoded, not read",
-    "language": "es"
+    "state": "read",
+    "language": "es",
+    "transcription": ["texts/f54_decipherment.txt"],
+    "decryption": "texts/R9963_reading.md",
+    "reading": "texts/R9963_reading.md",
+    "translation": "texts/R9963_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Read 23 Oct 2026 (b25): the letter's clear text and the contemporary decipherment bound as f. 54r (DECODE record image 6, file _005), transcribed from the images for the first time; the decipherment's clear islands, the clear numeral xviij and a repeated cipher run checked against the letter; no sign-by-sign decode (no key in the repository). No word supplied. Body 0.756 clean sentences (31/41), explicit holes 1.00; unclean sentences are period spellings and names."
+    }
    }
   ],
   "gaps": [
    {
-    "item": "R9963: the contemporary decipherment on f. 54, not transcribed",
+    "item": "R9963 f. 54r l. 25: 'el dicho [...]', a short abbreviation in the decipherment",
+    "blocker": "illegible",
+    "detail": "zoomed on the DECODE image; conde or duque cannot be told"
+   },
+   {
+    "item": "R9963: the cipher not decoded sign by sign against a key",
     "blocker": "not-attempted",
-    "detail": "image 5 in the main checkout targets/cifuentes1534/decode/ (git-ignored)"
+    "detail": "the decipherment covers every cipher line; key for the 1530s Rome cipher reconstructed by Luo (2021), not consulted"
    }
-  ]
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "23 Oct 2026 (b25): the one document, R9963, reads (texts/R9963_reading.md, from the contemporary decipherment); tokens of documents that read / all = 1.0."
  }
 }

@@ -232,6 +232,34 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "key from source",
+   "technique": ["key matching"],
+   "what": "Re-read brief b25: DECODE key records of Milan 1480s-90s checked: R1099/R1169 = the 1488 Arcimboldo-Oliva key (different: che = ds, a+ = Protonotario). Headings of all 134 ASMi Sforzesco cart. 1597 key records read on contact sheets (research/reading_audit/b25_keysheets.py): no. 111 (DECODE R5411) is headed 'Cum Mapheo Triviliensi', the original key of this cipher (alphabet torn at T-&, doubles, nulls, syllable table, 22-entry nomenclator), transcribed in key_R5411.md; it confirms Somogyi's values where both exist. No. 107 (R5407) 'Cum Mafeo Triviliensi' is a different alphabet.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "V2831 p. 2 ll. 17-30 and p. 3 (31 lines) re-transcribed sign by sign from the Vestigia plates with per-row crops (two helper agents, one per page; trans/v2831p2_b25.md, v2831p3_b25.md, corrections tsv). Line counts corrected: p. 2 has 30 lines, p. 3 31.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["key matching"],
+   "what": "Both pages re-decoded with R5411: x-bar = Ma (q^s x-bar = Roma, 4 times), M+ = Regina, a# = Vostra Dominatio, Q. = Duca de Milano, Ra = madonna Bianca, + = Vescovo Varadino, fa, bi, pp, rr adopted (each holds at every occurrence). Flagged: the o-form (b by the key, t in most words), delta+ = Papa (sense), g = x in excusar (torn column). Look-alike letters: p. 2 15 (+9 o-form), p. 3 59 of ~1,360.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["language-model scoring"],
+   "what": "Partial reading v2831_p2p3_reading.md (English v2831_p2p3_en.md, log v2831_p2p3_reread_log.md). b17_score.py LANG_=it on the body: 0.322 (19/59), explicit holes 0.542; before 0.158 / 0.342. p. 2 ll. 17-27 and half of p. 3 build sentences; the rest fragments. Stays decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -252,39 +280,34 @@
   "key": "partial",
   "gaps": [
    {
-    "item": "2831 p. 3 after l. 19, about a third of that page's words",
+    "item": "V2831 p. 2 ll. 19, 21, 23-30 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31: legible letter groups not yet segmented into words",
     "blocker": "not-attempted",
-    "detail": "read only in patches, the ink is lighter and the stacked crops drift; the per-row crop pass straight from the plate (Method, on the page) has not been run, and part may prove illegible after it"
+    "detail": "two sign-by-sign passes on 23 Oct 2026 (b25), the second with the original key R5411; a third pass is worthwhile"
    },
    {
-    "item": "2831 p. 1 ll. 21–26, last words of each line",
+    "item": "V2831 p. 3 l. 15, one or two signs under an ink blot",
+    "blocker": "illegible",
+    "detail": "Vestigia plate, the only image"
+   },
+   {
+    "item": "signs whose key column is torn away on R5411 (x, y, z, &, part of t) and r-ring (p. 3 l. 15); the o-form read t in most words but b by the key",
+    "blocker": "no-key-material",
+    "detail": "R5411 is torn at the upper right; the o-form value needs review against R1098 and V267"
+   },
+   {
+    "item": "2831 p. 1 ll. 21-26, last words of each line",
     "blocker": "illegible",
     "detail": "stain at the right edge, no other image (DECODE and Vestigia serve the same negative)"
    },
    {
-    "item": "four unvalued signs (♀-like sign with a cross below, capital E with three bars, a wavy horizontal null, a stroke that may be a second null)",
-    "blocker": "open-codes",
-    "detail": "not in Somogyi's table as printed, each too rare to fix from context so far"
-   },
-   {
-    "item": "the recurring ro+et pair on p. 3 after \"ad\" (a place name)",
-    "blocker": "open-codes",
-    "detail": "probably a nomenclator entry Somogyi's key does not list"
-   },
-   {
-    "item": "nomenclator signs for madonna Bianca, zo. Corvino and il vescovo varadino",
-    "blocker": "open-codes",
-    "detail": "met once each, shapes not confirmed"
-   },
-   {
-    "item": "R1098 ll. 5, 6 and 9, short groups including the word after \"divertira ad\" (Tulln?)",
+    "item": "R1098 ll. 5, 6 and 9",
     "blocker": "not-attempted",
-    "detail": "not retried with the sign values gained later from the 1489 letter"
+    "detail": "the contemporary extract MDE IV no. 91 gives the text (main-checkout NOTES, 9 Oct 2026); not re-aligned in this worktree"
    },
    {
     "item": "share of cipher signs read",
     "blocker": "not-attempted",
-    "detail": "never measured (only 2831 p. 1 ll. 1–10 and R1098 were transcribed to tokens). Next step: a full token transcription of 2831 pp. 1–4 and a measured count against the reading files"
+    "detail": "never measured; p. 2-3 sign strings now in trans/v2831p2_b25.md, v2831p3_b25.md"
    }
   ],
   "credits": [
@@ -299,6 +322,11 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "clear extract Vestigia 268 and R1098 p. 2 clear text, used to calibrate the signs"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the original key 'Cum Mapheo Triviliensi', ASMi Sforzesco cart. 1597 no. 111 (DECODE R5411, undated and unattributed there), found 23 Oct 2026 (b25) and used for V2831 p. 2 ll. 17-30 and p. 3; transcribed in key_R5411.md"
    }
   ],
   "texts": [
@@ -329,7 +357,7 @@
    },
    {
     "doc": "V2831",
-    "label": "Vestigia 2831, Buda 22 Nov 1489: p. 2 ll. 17-32 and p. 3",
+    "label": "Vestigia 2831, Buda 22 Nov 1489: p. 2 ll. 17-30 and p. 3 (p. 2 has 30 lines, p. 3 31)",
     "transcription": [
      "trans/v2831p1_a_v.txt",
      "trans/v2831p1_read2.md",
@@ -345,7 +373,9 @@
     "decryption": "v2831_reading.md",
     "language": "it",
     "state": "decoded, not read",
-    "note": "Lines of fragments with [...] in most lines (the ink is lighter and the crops drift); sentences cannot be built beyond the first lines of p. 3 (reading audit, 22 Oct 2026)."
+    "note": "Re-read 23 Oct 2026 (b25; v2831_p2p3_reread_log.md): the original key 'Cum Mapheo Triviliensi' (ASMi Sforzesco cart. 1597 no. 111, DECODE R5411) found and both pages re-read sign by sign from the plates with per-row crops (trans/v2831p2_b25.md, v2831p3_b25.md): Roma (q^s x-bar), la Regina, Vostra Dominatio, the Duke of Milan, the Pope, madonna Bianca, the bishop of Varad now read. p. 2 ll. 17-27 and about half of p. 3 build sentences, but p. 2 ll. 28-30 and eleven lines of p. 3 stay fragments: body 0.322 clean sentences (it; before 0.158), explicit holes 0.542. Still decoded, not read; the remaining groups are legible but not yet segmented (not-attempted after two passes), one blot (illegible), torn key columns (no-key-material).",
+    "reading": "v2831_p2p3_reading.md",
+    "translation": "v2831_p2p3_en.md"
    },
    {
     "doc": "R1098",

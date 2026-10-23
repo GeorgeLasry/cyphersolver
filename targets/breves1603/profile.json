@@ -132,6 +132,13 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): berger/table_pp667-682.txt is the printed table of abstracts, not the nine letters. That entry relabelled decoded, not read (summaries only); the three letters printed in full (ff. 60, 63, 66) read.",
    "result": "partial",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Re-read brief b25 for the nine summarised letters: BnF archivesetmanuscrits notices of fr. 4029 (cc50451m) and fr. 3541 (cc49988x) fetched, still no digitisation link; Gallica SRU returned a Cloudflare block; web search for an edition of Henri IV's letters to Breves found none. No text of the nine beyond Berger's summaries; stays decoded, not read (needs-physical-access).",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -181,7 +188,7 @@
     "label": "Nine further letters, 1 May - 23/24 Dec 1603 (ff. 69-104)",
     "decryption": "berger/table_pp667-682.txt",
     "summary": "The nine other ciphered letters of 1603 from Henri IV to Brèves, known only from Berger de Xivrey's summaries (Lettres missives VI, pp. 667-682, Wikisource OCR).",
-    "note": "Summaries only, not the letters: berger/table_pp667-682.txt is the OCR of Berger de Xivrey's printed table (one-paragraph abstracts of many letters 1603-1606). Excerpt only: the full clear text is in BnF fr. 4029 ff. 118-128 (register of Henri IV's letters to Breves), not digitised; fr. 3541 is not digitised either (reading audit, 22 Oct 2026).",
+    "note": "Summaries only, not the letters: berger/table_pp667-682.txt is Berger de Xivrey's printed table of abstracts. Re-read 23 Oct 2026 (b25): no fuller text found; the BnF notices of fr. 4029 (cc50451m, the clear register ff. 118-128) and fr. 3541 (cc49988x, the ciphers) still carry no digitisation link (Gallica SRU blocked by Cloudflare from here); Guadet's supplements print none of the nine (checked 18 Sept); no modern edition of the Henri IV - Breves letters found. Stays decoded, not read; blocker needs-physical-access (a BnF reproduction of fr. 4029 ff. 117-128).",
     "state": "decoded, not read",
     "language": "fr"
    }

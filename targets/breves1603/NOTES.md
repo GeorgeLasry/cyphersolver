@@ -2,6 +2,11 @@
 
 **22 Oct 2026, reading audit** (George Lasry's test): the three letters printed in full by Berger (ff. 60, 63, 66) read. The entry for the nine further letters is *decoded, not read*: berger/table_pp667-682.txt holds Berger's summaries, not the letters; their full clear text is in fr. 4029 (not digitised).
 
+**23 Oct 2026, re-read (b25)**: nothing new is reachable for the nine summarised letters. The BnF notices of fr. 4029
+(cc50451m) and fr. 3541 (cc49988x) still have no digitisation link, Gallica's SRU answers with a Cloudflare block,
+and no edition of the Henri IV - Brèves letters turned up. The entry stays *decoded, not read*; blocker
+needs-physical-access (a reproduction of fr. 4029 ff. 117-128).
+
 **Result, 18 Sept 2026:** the "undeciphered" letters were decoded long ago in a contemporary clear copy, and the
 original key survives. Three of the twelve ciphered letters are in print in full. The other nine are in print as
 summaries. What stays open is the cipher text itself: fr. 3541 is not digitised, so the ciphertext of the nine
@@ -152,4 +157,4 @@ Folios in brackets are not given by the notice. It gives folios only where a new
 - [x] known-keys: office key located in BnF fr. 3462 f. 103
 - [x] print: Berger de Xivrey, Lettres missives VI (3 letters in full, 9 in summary)
 - [n/a] key-rebuild: key survives
-- [ ] retry: blocked until fr. 3541 or fr. 4029 can be seen
+- [ ] retry: blocked until fr. 3541 or fr. 4029 can be seen (re-checked 23 Oct 2026, b25: still not digitised)

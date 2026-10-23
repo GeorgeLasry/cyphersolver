@@ -8,6 +8,15 @@ second paragraph (Antonio d'Arezzo, the Pope, the clergy, the Turk) is cipher ru
 doubtful clear words, and cannot be built into sentences. Class now not read, method not solved; 114 of 144 signs is the
 share given a value, withdrawn as a reading figure.
 
+**23 Oct 2026, re-read (b25)** (`transcripts/no04_reread_log.md`): DECODE R4793 re-fetched (two images, no
+attachment); the glosses of ll. 17-20 re-read on the image: *pedesi* is glossed **"Iacopino"** (Iacopo Piccinino; the
+24 Sept pass read "sa? più"), *cras* **"a pace"/"pace"** (not "parte"), *toffe* "al papa"; l. 17 reads "el duca"
+(`4 longs`), and ll. 19-20 "che non aveva anche permesso ne al papa ne a cardinali se ne pigliasse". A partial reading
+of the whole letter is in `transcripts/no04_reading.md` (English `no04_en.md`): body 0.594 clean sentences (it),
+explicit holes 0.719. **Still decoded, not read**: the second paragraph builds only its first sentence ("Antonio
+d'Arezzo qua era detto el duca essere bene disposto et a Lucca et a pace"); the rest is holes around the rapid clear
+hand of ll. 20-23, which does not resolve at 2-3x.
+
 Split on 14 Oct 2026 from `siena1421` under the one-key rule (George Lasry, 14 Oct 2026). The old entry grouped the
 whole bundle of Sienese cipher letters (Concistoro 2308 fasc. 2), each in its own key. This letter has a key of its
 own; the other letters with recovered keys are their own entries, each a different cipher with its own page: no. 25
@@ -54,7 +63,7 @@ Not applicable (`docs/_validate.py borghesi1456 --na`): 144 signs in 15 short ru
 test; the key is attested by the fragment written on the letter.
 
 ## Remaining gaps
-- no. 4, second paragraph (runs R9-R15) decoded, not read (reading audit 22 Oct 2026) - blocker: not-attempted; re-read the doubtful clear hand around the runs, then build and translate the sentences; the 19 rare signs stay too-short
+- no. 4, second paragraph (runs R9-R15) decoded, not read: glosses and runs re-read 23 Oct 2026 (b25), partial reading written; the rapid clear hand of ll. 18-23 - blocker: illegible; re-read at 2-3x on the only image
 - 19 rare signs and the code words toffe, vapor, pedesi - blocker: too-short; each occurs once or twice; the fragment is torn on the left and no filed key fits
 
 ## Escalation
@@ -63,4 +72,4 @@ test; the key is attested by the fragment written on the letter.
 - [x] known-keys: R4750, R4753, R4754, R4756, R4757, R4762 transcribed and tested sign by sign; none fits
 - [x] print: Senatore 2009 identifies the letter; no printed decipherment found
 - [x] key-rebuild: key rebuilt from the fragment and glosses, extended from context
-- [x] retry: every run re-read with the extended key; doubtful readings marked in the reading file
+- [x] retry: every run re-read with the extended key; doubtful readings marked in the reading file; 23 Oct 2026 (b25) glosses and ll. 17-24 re-read on the image, pedesi = Iacopino, cras = pace

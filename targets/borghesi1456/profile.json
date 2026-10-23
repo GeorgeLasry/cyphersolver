@@ -135,6 +135,20 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["plaintext matching"],
+   "what": "Re-read brief b25: DECODE R4793 re-fetched (two images, no attachment); ll. 17-24 and their interlinear glosses re-read on per-line crops. Gloss over pedesi = 'Iacopino' (was 'sa? piu'), over cras = 'a pace'/'pace' (was 'parte'), over toffe = 'al papa'; l. 17 '4 longs' = EL before Calor. Code words cras = pace, pedesi = Iacopino adopted (both cras glosses agree).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["language-model scoring"],
+   "what": "Partial reading of the whole letter written (transcripts/no04_reading.md, no04_en.md, log no04_reread_log.md). b17_score.py LANG_=it on the body: 0.594 (19/32), explicit holes 0.719; before: no reading body. Reader's test fails for the second paragraph (only its first sentence holds); stays decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -161,9 +175,14 @@
   "grades": "unknown",
   "gaps": [
    {
-    "item": "19 rare signs (1, //, 8, F, x_slash, T_long, 4_hook, +, R, delta, B, b°) and code words toffe, vapor, pedesi",
+    "item": "no. 4 ll. 18-23: the rapid clear hand around the cipher runs (abbreviations 'miss. p. ve.', 'ad quas instituit', 'volent', 'tantudi', 'vernit')",
+    "blocker": "illegible",
+    "detail": "re-read at 2-3x on 23 Oct 2026 (b25); the DECODE image (2248 px wide) is the only one"
+   },
+   {
+    "item": "19 rare signs (1, //, 8, F, x_slash, T_long, 4_hook, +, R, delta, B, b°) and the code words toffe, vapor beyond their glosses",
     "blocker": "too-short",
-    "detail": "each occurs once or twice; the fragment is torn on the left and no filed key fits"
+    "detail": "each occurs once or twice; the fragment is torn on the left and no filed key fits; pedesi = Iacopino and cras = pace now from the glosses"
    }
   ],
   "credits": [
@@ -184,13 +203,15 @@
   "texts": [
    {
     "doc": "no04",
+    "note": "Re-read 23 Oct 2026 (b25; transcripts/no04_reread_log.md): glosses re-read on the image (pedesi = 'Iacopino', i.e. Iacopo Piccinino; cras = 'pace'; toffe = 'al papa'; 'ne al papa ne a cardinali'), and a partial reading of the whole letter written (transcripts/no04_reading.md, English no04_en.md): body 0.594 clean sentences (it), explicit holes 0.719. Still decoded, not read: the second paragraph (ll. 17-24) builds only its first sentence; the rapid clear hand of ll. 20-23 does not resolve (illegible at 2-3x on the only image) and 19 rare cipher signs stay unread (too-short).",
     "label": "Naples, 12 May 1456, ASSi Concistoro 2308 fasc. 2 no. 4 (DECODE R4793)",
     "transcription": "transcripts/no04.txt",
     "decryption": "transcripts/no04_reading.txt",
     "summary": "Galgano Borghesi, orator at Naples, writes to Leonardo Benvoglienti that at his urging King Alfonso wanted the settlement to include the promises made when Lucca was besieged by the Florentines, and that the Pope, the Florentine clergy and the cardinals are to contribute against the Turk. The sense is tentative: 114 of the 144 cipher signs are read.",
     "language": "it",
     "state": "decoded, not read",
-    "note": "The early runs fit their clear sentences ('A MILANO', 'de le scritture', 'Tunc rex parvi fecisse'), but the second paragraph (Antonio d'Arezzo, the Pope, the clergy) is runs, code words and '?' signs between doubtful clear words, and cannot be built into sentences; the sense is given only as a tentative summary (reading audit, 22 Oct 2026)."
+    "reading": "transcripts/no04_reading.md",
+    "translation": "transcripts/no04_en.md"
    }
   ],
   "key_file": "keys/no04_key.txt"
