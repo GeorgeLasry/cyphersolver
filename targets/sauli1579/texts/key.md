@@ -20,3 +20,9 @@ Added here from the glosses (R192–R194):
 - Unresolved: 4-digit prefixes 6371/7771/7361/7761 + 9 before several phrases in R193–R194 (null flourish or code);
   "religione cattolica" in R194 p.2 enciphered short (unread code group); tail "0?9 32 0 9 75 71 63" after
   "dubbio che ha S.S.tà" on R192 p.1 (unglossed, not decrypted).
+
+Added 22 Oct 2026 (full re-read, texts/R190-R194_reread_log.md):
+- 82 = navi (R191 f. 99r twice, R192 f. 196v); Lasry's "Hune" is Midas's misreading of the gloss "navi"
+- 72 = Regina (R190 ff. 93r, 94v; R192 f. 196v) and denari (R191 f. 101r, R192 f. 197v, R194 f. 281r)
+- 60 = Duca (R191 f. 99v); 77 9 00 = il Marchese (R192 f. 195r)
+- 40 also glossed "guerra" ("in una 40", R192 f. 197r; R190 f. 94v)

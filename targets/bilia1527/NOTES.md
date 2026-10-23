@@ -3,6 +3,8 @@
 Status: in progress. f. 102r is read in part from a contributed AI-only transcription (issue #55, Harumi-Matsuba),
 checked here; f. 102v (seven cipher lines) has no confirmed reading and needs a human re-transcription; the name code
 B.58 is open.
+**22 Oct 2026, reading audit:** the f. 102v entry is *decoded, not read* in profile.json (raw decoder lines with no continuous sense), as the status above says; fraction_read already counted it as unread.
+
 
 **Outcome: read with known key, read in part; contributed.** Harumi-Matsuba (GitHub issue #55, 20 Oct 2026; repository
 https://github.com/Harumi-Matsuba/bilia1527-public, CC BY 4.0 data / MIT code) transcribed the cipher of f. 102r and

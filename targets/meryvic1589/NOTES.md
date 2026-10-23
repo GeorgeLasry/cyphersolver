@@ -1,6 +1,10 @@
 # Méry de Vic → Henri IV, 28 August 1589, BnF Dupuy 61 — Méry de Vic, f43r
 
-Status: no write-up of our own (result by George Lasry, presented on docs/meryvic1589.html)
+Status: in progress. Lasry's reading; only excerpts with holes in every sentence are in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): both excerpts in lasry_entry.md have holes in every sentence and the report says "Partly deciphered": *decoded, not read* (excerpt only). Class already solved -> not read, method -> not solved; Lasry's ciphertext-only key recovery is recorded in method_basis; fraction_read 0.96 -> 0.
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up of our own (result by George Lasry, presented on docs/meryvic1589.html)
 
 ## Source
 
@@ -77,3 +81,16 @@ Translation
 ## Notes and corrections
 
 One excerpt line disagrees with the manuscript. Lasry gives "s'est déclaré comme plusieurs du ? m'ont asseuré"; the clear words on f43r read "… roy q2 change come on ma asseure". The other clear words and the cipher block match. That line should be checked again.
+
+## Remaining gaps
+
+- Lasry's full decipherment, not in the repository - blocker: not-attempted; ask George Lasry for his transcription and decryption files (report: 6/6 pages transcribed, partly deciphered)
+
+## Escalation
+
+- [x] siblings: not this project's reading; George Lasry's report covers the volume
+- [n/a] clear-pages: not looked for here; the result is Lasry's
+- [x] known-keys: Lasry's key is the key; his key table is not in the repository
+- [x] print: Lasry's report (BnF cipher research, 10 Oct 2026) is the source
+- [n/a] key-rebuild: not this project's work
+- [ ] retry: ask Lasry for his full transcription and decryption

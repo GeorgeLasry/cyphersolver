@@ -126,7 +126,8 @@
    "what": "Reading agrees with Avenel word for word; nomenclature codes resolved from his footnotes.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the cryptiana transcription; saved the final.py decryption; copied the Avenel reading and the key table from SOLUTION.md to texts/", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the cryptiana transcription; saved the final.py decryption; copied the Avenel reading and the key table from SOLUTION.md to texts/", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the two entries read: the raw decode of the partial transcription does not join into sentences (decoded, not read); Avenel's printed text reads (A, excerpt note added). Class already solved kept.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "key recovered based on adjacent plaintext",
@@ -139,15 +140,22 @@
    "independent clear copy",
    "historical consistency"
   ],
-  "notes": "Independent ciphertext-only recovery, later matched to Avenel's 1858 decipherment; Brassac's appointment to Rome in 1630 confirms.",
+  "notes": "Independent ciphertext-only recovery, later matched to Avenel's 1858 decipherment; Brassac's appointment to Rome in 1630 confirms. 22 Oct 2026, reading audit: the raw key decode is decoded, not read; Avenel's text reads (excerpt). Class already solved kept.",
   "credits": [
     {"who": "tomokiyo", "role": "transcription", "note": "cryptiana transcription of BnF fr. 3829 ff. 87, 89 (richelieu1629.txt), the source text of the solve", "source": "cryptiana, Unsolved Historical Ciphers"},
     {"who": "avenel", "role": "prior solution", "note": "deciphered both letters in Lettres de Richelieu t. III (key 'recomposé'); found after the reading, used to confirm it and to name ten nomenclator codes", "date": "1858", "source": "Avenel, Lettres, instructions diplomatiques et papiers d'État du cardinal de Richelieu, t. III (1858), pp. 368-369, 381-383"}
   ],
   "texts": [
-   {"doc": "ff87-89", "label": "ff. 87 and 89 (7 and mid-July 1629), recovered key applied", "transcription": "richelieu1629.txt", "decryption": "texts/ff87-89_decryption.md", "summary": "Richelieu to M. de Rancé, July 1629: the King's anger at Bonneuil, a wish that the Duchesse de Chevreuse be seized near the frontier and taken to Vincennes, the cabals of Lorraine with Spain; and in mid-July the stalled peace with England, Henrietta Maria's French bishop and priests, and Brassac proposed for the Rome embassy.", "note": "Transcription: S. Tomokiyo's (cryptiana), with the slips listed in SOLUTION.md."},
-   {"doc": "ff87-89", "label": "ff. 87 and 89, Avenel's printed text (1858)", "transcription": "richelieu1629.txt", "decryption": "texts/ff87-89_decryption_avenel.md", "summary": "The same two letters as printed by Avenel (Lettres de Richelieu III, nos. CXCIX and CCV), which agree with the key recovered here."}
+   {"doc": "ff87-89", "label": "ff. 87 and 89 (7 and mid-July 1629), recovered key applied", "transcription": "richelieu1629.txt", "decryption": "texts/ff87-89_decryption.md", "summary": "Richelieu to M. de Rancé, July 1629: the King's anger at Bonneuil, a wish that the Duchesse de Chevreuse be seized near the frontier and taken to Vincennes, the cabals of Lorraine with Spain; and in mid-July the stalled peace with England, Henrietta Maria's French bishop and priests, and Brassac proposed for the Rome embassy.", "note": "The recovered key applied to Tomokiyo's partial transcription: cipher letters run together, the clear text only in part, so the lines do not join into sentences on their own (reading audit, 22 Oct 2026); the reading is the Avenel entry.", "language": "fr", "state": "decoded, not read"},
+   {"doc": "ff87-89", "label": "ff. 87 and 89, Avenel's printed text (1858)", "transcription": "richelieu1629.txt", "decryption": "texts/ff87-89_decryption_avenel.md", "summary": "The same two letters as printed by Avenel (Lettres de Richelieu III, nos. CXCIX and CCV), which agree with the key recovered here.", "language": "fr", "state": "read", "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Avenel's printed text with the codes resolved reads and translates; it is abridged with ellipses."}, "note": "Excerpt only: the full printed text is Avenel, Lettres de Richelieu III (1858), nos. CXCIX and CCV (reading audit, 22 Oct 2026)."}
   ],
-  "key_file": "texts/key.md"
+  "key_file": "texts/key.md",
+  "gaps": [
+   {
+    "item": "the full text of ff. 87 and 89",
+    "blocker": "not-attempted",
+    "detail": "only an abridged copy of Avenel's text is in texts/; copy nos. CXCIX and CCV in full from Avenel, Lettres de Richelieu III (1858), on Gallica or archive.org"
+   }
+  ]
  }
 }

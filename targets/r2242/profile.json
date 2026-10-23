@@ -281,6 +281,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions and decrypts p1, p3, p4; WAINUT's proposed values copied from NOTES to texts/wainut_proposals.md for comparison; the letter square and word-sign table copied from apply.py to texts/key_square.md and texts/key_word_signs.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): decrypt_p3.txt and decrypt_p4.txt divided into words and read: the Dutch builds sentences; the open tokens are single word signs with no key material and two ink blots. Per-document C overturned to B for both pages. Claim unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -342,7 +349,8 @@
     "label": "Page 1: cipher with the contemporary clear Dutch written under it",
     "transcription": "transcription_p1.txt",
     "decryption": "decrypt_p1.txt",
-    "summary": "Prince Frederick of Orange to his brother the Hereditary Prince, London, 7 May 1795: when the letter has been read the matter is settled; if it does not change, they need not go to sea; if the Hereditary Prince wants anything he need only say so, the writer is at his service, in death or life."
+    "summary": "Prince Frederick of Orange to his brother the Hereditary Prince, London, 7 May 1795: when the letter has been read the matter is settled; if it does not change, they need not go to sea; if the Hereditary Prince wants anything he need only say so, the writer is at his service, in death or life.",
+    "language": "nl"
    },
    {
     "doc": "R2242 p3",
@@ -352,7 +360,15 @@
      "decrypt_p3.txt",
      "texts/wainut_proposals.md"
     ],
-    "summary": "On the Batavian alliance with France: the émigré troops and dismissed officers are scattered, without cohesion or leader; the ratification of the Treaty of The Hague has been published before it arrived, and De Sitter and Van Grasveld are sent to Paris as ambassadors to carry it. WAINUT's proposed values for open signs (not adopted) are listed separately for comparison."
+    "summary": "On the Batavian alliance with France: the émigré troops and dismissed officers are scattered, without cohesion or leader; the ratification of the Treaty of The Hague has been published before it arrived, and De Sitter and Van Grasveld are sent to Paris as ambassadors to carry it. WAINUT's proposed values for open signs (not adopted) are listed separately for comparison.",
+    "language": "nl",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. Divided into words the unspaced Dutch builds sentences: \"men heeft de offeciers en de trouppes zoo wel uit malkander gelegen ... ook is er geen de minste saamenhang tussen dezelve; zy zijn geheel verstrooyd en zonder hooft ... men heeft de ratificatie van ons met frankrijk gepubliceert ofschoon de ratificatie zelve nog niet gekoomen was\". The holes are single word signs with no key material (<Δ>, <%>, <T with bar>), heaviest in the two sentences of lines 8-10."
+    }
    },
    {
     "doc": "R2242 p4",
@@ -362,7 +378,15 @@
      "decrypt_p4.txt",
      "texts/wainut_proposals.md"
     ],
-    "summary": "If England persists in not recognising the present government, they will not dare introduce Robespierrism, for which there is much disposition; respects to the whole company; a detailed answer is awaited; greetings to his brother. P.S.: Dankaert is also abroad."
+    "summary": "If England persists in not recognising the present government, they will not dare introduce Robespierrism, for which there is much disposition; respects to the whole company; a detailed answer is awaited; greetings to his brother. P.S.: Dankaert is also abroad.",
+    "language": "nl",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. \"Als engeland maar blyft persisteern om het tegenwoordig gouvernement niet te erkennen dan zoo zy geen robespierrismus durven te introduseeren, daar <%> zeer veel dispositie is\" builds; the holes are single word signs and the ink-blotted P.S."
+    }
    }
   ],
   "key_file": [

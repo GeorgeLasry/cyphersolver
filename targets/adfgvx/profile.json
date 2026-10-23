@@ -142,6 +142,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): msgs.txt (Lasry's list of the 22 ciphertexts) as transcription; the readings table copied verbatim from NOTES.md to texts/residue22_decryption.md; keys.json (fifteen keys incl. the rebuilt CHI key) as key file. Ten messages have no reading.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/residue22_decryption.md read message by message. The nine full readings build German sentences; the three partial readings have \"...\" gaps in most sentences and ten messages have no reading. The entry split into a read entry and a decoded, not read entry; class already solved -> read in part; fraction_read unknown -> 0.49 (letters).",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -151,14 +158,14 @@
    "key extended or corrected",
    "catalogue correction"
   ],
-  "class": "already solved",
-  "fraction_read": "unknown",
+  "class": "read in part",
+  "fraction_read": 0.49,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "matched control"
   ],
-  "notes": "Nothing read here that the 2017 readers had not read; the thread consolidated and the sixteenth key rebuilt. Ten messages remain open, needing the Childs originals or an unlisted key. Split into outcome.parts per period key on 14 Oct 2026 (one key per entry, parts because the messages form one filed set): 9 solved, 3 partial, 10 open.",
+  "notes": "Nothing read here that the 2017 readers had not read; the thread consolidated and the sixteenth key rebuilt. Ten messages remain open, needing the Childs originals or an unlisted key. Split into outcome.parts per period key on 14 Oct 2026 (one key per entry, parts because the messages form one filed set): 9 solved, 3 partial, 10 open. 22 Oct 2026, reading audit: the readings table split into two entries, the nine messages that read (state read) and the thirteen partial or open ones (decoded, not read); class already solved -> read in part, fraction_read 0.49 by letters.",
   "credits": [
    {
     "who": "lasry",
@@ -253,14 +260,47 @@
   "texts": [
    {
     "doc": "residue22",
-    "label": "22 ADFGVX messages, Childs pages 73-217 (Nov 1918)",
+    "label": "22 ADFGVX messages, Childs pages 73-217 (Nov 1918): the nine read in full (pp. 100, 105, 109, 132, 146, 171, 176, 187 part 1 and its part 2 AFAFF)",
     "transcription": "msgs.txt",
     "decryption": "texts/residue22_decryption.md",
-    "summary": "German ADFGVX radio messages of November 1918 from James Rives Childs's transcription, listed as unsolved by George Lasry on Schmeh's blog in 2017. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; ten messages remain unread."
+    "summary": "German ADFGVX radio messages of November 1918 from James Rives Childs's transcription, listed as unsolved by George Lasry on Schmeh's blog in 2017. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; ten messages remain unread.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "The nine full readings are German telegrams in capitals with X as stop (the 2017 Cipherbrain readers'); each builds sentences and translates, e.g. p. 171 \"In Ukraine und Polen Rubelkurse stark steigend infolge Bruches zwischen Deutschland und Sowjetregierung\". The per-document audit graded the whole table C because the other thirteen messages are in the same file; they are now a separate entry."
+    },
+    "state": "read",
+    "language": "de"
+   },
+   {
+    "doc": "residue22",
+    "transcription": "msgs.txt",
+    "decryption": "texts/residue22_decryption.md",
+    "label": "the same file: three messages read only in part (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) and ten with no reading (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198, 217)",
+    "summary": "Thirteen of the 22 residue messages: three give fragments joined by \"...\" (Temesvar, Mirco, the Entente fleet at Kertsch with New Zealand, English and French divisions); ten have no reading, because no published period key fits them and several carry marked transmission gaps.",
+    "language": "de",
+    "state": "decoded, not read",
+    "note": "Three partial readings with gaps in most sentences and ten messages with no reading at all (shown as \"-\"); not counted as a reading (reading audit, 22 Oct 2026)."
    }
   ],
   "key_file": [
    "keys.json"
-  ]
+  ],
+  "gaps": [
+   {
+    "item": "ten open messages (pp. 73, 152, 153 x2, 158, 170, 176 GGDAA, 189, 198, 217; 1,490 letters)",
+    "blocker": "no-key-material",
+    "detail": "no published period key fits, including Lasry's CHI key; the block-edit search allows two insertions or one deletion; heavier mutilation or an unlisted key needs the Childs originals"
+   },
+   {
+    "item": "three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215)",
+    "blocker": "needs-physical-access",
+    "detail": "marked transmission gaps (44, 44 and 11 letters) in the printed transcription; the lost letters need the Childs originals"
+   }
+  ],
+  "fraction_read_source": "texts/residue22_decryption.md, letters per message (marked gaps excluded): the nine messages that read hold 1,945 of the 3,966 letters (0.490); the three partial (531 letters) and ten open (1,490) count as unread. The earlier \"unknown\" left the field unmeasured.",
+  "fraction_read_method": "measured",
+  "key": "partial"
  }
 }

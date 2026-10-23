@@ -1,6 +1,10 @@
 # Isabella of Portugal → Charles V, 1531 (catalogue 200; DECODE R9955, R9956)
 
-Status: no write-up
+Status: in progress. Both letters deciphered at the time; neither decipherment is transcribed here (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): no text of R9955 or R9956 is in the repository. Both are *decoded, not read* in profile.json; class already solved is kept (R9955 printed by Luo 2021; both deciphered at the time).
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up
 
 AGS, Estado, leg. 496 (2 records). DECODE lists both as "Non-decrypted", Isabella → Charles V, Brussels, 1531.
 
@@ -18,3 +22,17 @@ Tomokiyo's cryptiana page on Spanish ciphers of Charles V (cached at `targets/va
 
 Nothing to add. Images not viewed this session (the literature check came first, per the charles1536 lesson). The
 catalogue entry is removed and the DECODE corrections are queued. Sibling: `targets/charles1536/` (R9957, R9952).
+
+## Remaining gaps
+
+- R9955: Luo's printed decipherment (2021, p. 285) not in the repository - blocker: not-attempted; the thesis is on RODERIC (Universitat de Valencia); the contemporary sheet is on the DECODE images
+- R9956: the contemporary decipherment sheet, not transcribed - blocker: not-attempted; DECODE images reachable with the shared cookie
+
+## Escalation
+
+- [x] siblings: charles1536 (R9957, R9952) is the same general cipher
+- [ ] clear-pages: the decipherment sheets on the DECODE images not fetched
+- [x] known-keys: AGS Estado leg. 1.1.1 doc. 112 (Tomokiyo)
+- [ ] print: Luo 2021 p. 285 not copied
+- [n/a] key-rebuild: deciphered at the time
+- [ ] retry: none yet

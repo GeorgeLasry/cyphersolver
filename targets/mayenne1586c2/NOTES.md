@@ -3,6 +3,8 @@
 Status: in progress. Read in part, contributed: 86.1% of 5,293 cipher tokens fall in runs of period French (measured
 here 21 Oct 2026), but the transcriptions are AI readings with no human sign check, calibrated at 75-93% per sign on
 known text, and every gap below is still workable. Page: `docs/mayenne1586c2.html`.
+**22 Oct 2026, reading audit** (George Lasry's test): ff. 218-219 read. f. 120 has holes in most sentences of c01-c05, c15-c19, c28-c31 and f. 120v c03-c05, and f. 385 is a self-declared partial unspaced decode: both *decoded, not read*. fraction_read 0.861 (tokens in sense runs) -> 0.404 (tokens in ff. 218-219).
+
 
 Created 21 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from three contributions in the same cipher,
 **Mayenne–Forget's Cipher-2** (S. Tomokiyo, cryptiana *Henry III's Cipher with Ambassadors*). It is a different
@@ -97,6 +99,8 @@ h where the decipherment has *tous*); and the χ° sign, *q* in the table, stand
 - ff. 218-219: stretches that do not read (f. 218r ll. 10-12, 22, 25-26; f. 218v ll. 9-10, 21-22; f. 219r ll. 1-5, 12-17) - blocker: open-codes; one AI reading pass calibrated at 74.8%; a voted second pass with Burford's sign sheet and image checks is the next step
 - f. 385: 36 short stretches not read, 41 doubtful words - blocker: open-codes; misread signs, names and abbreviations; Burford's planned second image round not yet made
 - f. 120: short stretches and three values inferred in this letter only (ooo = *escus*, struck gg = *nous*, curled stroke = *o*) - blocker: open-codes; no person has checked the transcription
+- fr. 15573 f. 120: decoded, not read - blocker: not-attempted; re-read the holed paragraphs on views 246-247
+- fr. 15573 f. 385: decoded, not read - blocker: not-attempted; v0.2 partial, unspaced; resolve the open stretches on views 752-753 and normalise
 
 ## Escalation
 

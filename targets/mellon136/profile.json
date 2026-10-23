@@ -134,6 +134,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt and reading.txt linked, with the clear-text translations clear/pp24-49.md and clear/pp50-77.md; the 2022 p. 24 reading (Lasry's transcription, Kopal's decryption) and Rieber's blog comment are listed separately as pointers to Schmeh's post, since neither text is in the repository.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): reading.txt (all 31 passages) reads; Rieber's 2022 comment, a pointer with partial entries, and the 2022 p. 24 pointer (nothing of either in the repository) left out of outcome.texts; reading_review A on the project's reading. Claim unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -152,7 +159,7 @@
   "grades": {
    "C": 4
   },
-  "notes": "Key drawn in the book, used unchanged. p. 24 was already read online (2022); this is the first complete, gap-checked reading of all passages. Not a letter: an alchemical manuscript book (pseudo-Arndt, Rosicrucian-Paracelsian) describing a burning-glass 'magische Machine'.",
+  "notes": "Key drawn in the book, used unchanged. p. 24 was already read online (2022); this is the first complete, gap-checked reading of all passages. Not a letter: an alchemical manuscript book (pseudo-Arndt, Rosicrucian-Paracelsian) describing a burning-glass 'magische Machine'. 22 Oct 2026, reading audit: the two pointers to Schmeh's Cipherbrain post (the 2022 p. 24 reading by Lasry and Kopal, and Christof Rieber's comment of 10 March 2022, a partial list with entries cut short) are left out of outcome.texts: nothing of either text is in the repository, and Rieber's list does not read as sentences (per-document C). Both are credited in NOTES and on the page.",
   "gaps": [
    {
     "item": "p. 24, No. M., one sign after 'ist ein gläserner'",
@@ -178,21 +185,15 @@
     "transcription": "transcription.txt",
     "decryption": "reading.txt",
     "translation": ["clear/pp24-49.md", "clear/pp50-77.md"],
-    "summary": "A 129-page alchemical manuscript book, Das zweyte Silentium Dei (pseudo-Arndt, copied at Glücksbrunn in 1798), describing a 'magische Machine' of three burning glasses that focus sunlight onto glass dishes and capels. The cipher words are the working parts of the recipes: vessels and materials, procedures, and on p. 24 the key to the lettered figures of the machine."
-   },
-   {
-    "doc": "R2873",
-    "label": "p. 24, 2022 reading (George Lasry's transcription, Nils Kopal's decryption), as printed on Schmeh's Cipherbrain",
-    "transcription": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
-    "decryption": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
-    "summary": "The earlier reading of the long p. 24 passage (the legend of the machine's figures). It agrees with the reading here except Stöpsel (not 'Stopfel'), Löchlein, 'zu lit. b. muss lutirt werden', arbeitet, and the open sign after 'No. M. ist ein gläserner'. Lasry's transcription itself is not in this repository."
-   },
-   {
-    "doc": "R2873",
-    "label": "Short passages, Christof Rieber's comment of 10 March 2022 on the same post",
-    "transcription": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
-    "decryption": "https://scienceblogs.de/klausis-krypto-kolumne/2022/03/04/ein-verschluesseltes-buch-aus-dem-jahr-1798/",
-    "summary": "A reader's reading of most short passages, with gaps; differences from the reading here are listed in NOTES.md (lutire, No., nach und nach, sta=cken, and four passages he does not have)."
+    "summary": "A 129-page alchemical manuscript book, Das zweyte Silentium Dei (pseudo-Arndt, copied at Glücksbrunn in 1798), describing a 'magische Machine' of three burning glasses that focus sunlight onto glass dishes and capels. The cipher words are the working parts of the recipes: vessels and materials, procedures, and on p. 24 the key to the lettered figures of the machine.",
+    "language": "de",
+    "state": "read",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "reading.txt gives every cipher passage in its clear sentence; the p. 24 block reads as a continuous German description of the machine (\"No. A. B. C. zeigen die hohlgeschliffene Glaesern ...\"), with one {?} and two [C] doubtful words; the short passages are words and phrases that complete their clear sentences. Translated in clear/pp24-49.md and pp50-77.md. The per-document C concerned Rieber's 2022 blog comment, not this reading."
+    }
    }
   ]
  }

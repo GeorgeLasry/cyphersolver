@@ -202,20 +202,27 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher groups no62_cipher.txt; decode62.py output saved as texts/no62_decryption.md; key copied from decode62.py to texts/key.md; the clear text of the letter is not transcribed",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/no62_decryption.md is one line per cipher group with no clear text around it; the groups read as words but no sentence can be built. Per-document D confirmed; no. 62 relabelled decoded, not read; class read in part -> not read; method read with known key -> not solved; fraction_read 0.824 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "Tomokiyo's partial Nevers-Piles table (cryptiana nevers.htm), which already identified BnF fr. 3413 no. 62 as in this cipher and read 'Cassin', was extended from the interlinear decipherment of BnF fr. 4715 f. 2 (same cipher, another letter) and from cribs in the letter's clear context.",
+  "method": "not solved",
+  "method_basis": "The cipher runs of no. 62 were decoded with the key of the letter's own volume (fr. 3413) and scored with the fr-1600-letters model, but the clear text of the letter is not transcribed, so the runs stand as isolated groups (\"la protect\", \"Cassin\", \"j'ay veu ung advis\") and no sentence can be built (reading audit, 22 Oct 2026); with the clear text written out around them the method is read with known key.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.824,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode62.py over no62_cipher.txt: 91 cipher signs, 75 in runs that read as sense (code signs Ƃ, ʃ, τ and runs C, V2 counted unread). Same count over the 18 Sept readings: 47/91 = 0.516. 5 Oct 2026: re-measured after re-transcription with an added LM sense test (fr-1600-letters); unchanged 75/91.",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: no. 62, the only document, is decoded, not read, so no tokens are in a document that reads. The earlier 0.824 (75 of 91 cipher signs in runs that read as sense, decode62.py) is withdrawn as a reading figure.",
   "codes_open": {
    "open": 3,
    "total": "unknown",
@@ -256,9 +263,14 @@
     "item": "Run V2 n a æ η ⊡ θ",
     "blocker": "no-key-material",
     "detail": "re-transcribed 5 Oct (⊡ = r): et-f-e-g-r-e, not sense; fr. 3612 not digitised"
+   },
+   {
+    "item": "no. 62 as a running text: clear text not transcribed",
+    "blocker": "not-attempted",
+    "detail": "transcribe the clear text of ff. 126r-127r from Gallica (reachable through openapi.bnf.fr IIIF) and place the 14 cipher runs in it"
    }
   ],
-  "notes": "Letter substance is in clear. Cipher runs: depeschera … le doien; la protection; Cassin; vostre […]; Mr le [τ] mon maistre; j'ay veu ung advis qui confirme; Baron. Grades count cipher runs (decode62.py READ): H = protection (2 runs), Cassin, vostre, stre, Baron; C = de-pes, chera, le doien, Mr le … mon mai, j'ay veu ung advis, confirme.",
+  "notes": "Letter substance is in clear. Cipher runs: depeschera … le doien; la protection; Cassin; vostre […]; Mr le [τ] mon maistre; j'ay veu ung advis qui confirme; Baron. Grades count cipher runs (decode62.py READ): H = protection (2 runs), Cassin, vostre, stre, Baron; C = de-pes, chera, le doien, Mr le … mon mai, j'ay veu ung advis, confirme. 22 Oct 2026, reading audit: no. 62 decoded, not read (cipher groups without their clear context); class read in part -> not read, method -> not solved, fraction_read 0.824 -> 0.",
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial Nevers-Piles table (cryptiana nevers.htm); he had identified no. 62 as in this cipher and read \"Cassin\"; extended here", "source": "cryptiana nevers.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment of the sibling BnF fr. 4715 f. 2 (Cardinal de Guise, 1586)"}
@@ -269,7 +281,10 @@
     "label": "Letter to the abbé d'Orbais, Rome, 23 Aug [1589], BnF fr. 3413 no. 62",
     "transcription": "no62_cipher.txt",
     "decryption": "texts/no62_decryption.md",
-    "summary": "A secretary of Cardinal Pellevé writes from Rome to Jean de Piles, abbé d'Orbais, the League's envoy, with the news of Henri III's death (the Duke of Lorraine's agent writes that the King was killed at the King of Navarre's instigation and the Cardinal de Bourbon proclaimed King in Paris). The letter is almost entirely in clear; its short cipher groups read 'le doien', 'la protection', Mons. Cassin, 'vostre', 'Mr le [?] mon maistre', 'j'ay veu ung advis qui confirme' and the signature Baron. The clear text is not transcribed in the folder."
+    "summary": "A secretary of Cardinal Pellevé writes from Rome to Jean de Piles, abbé d'Orbais, the League's envoy, with the news of Henri III's death (the Duke of Lorraine's agent writes that the King was killed at the King of Navarre's instigation and the Cardinal de Bourbon proclaimed King in Paris). The letter is almost entirely in clear; its short cipher groups read 'le doien', 'la protection', Mons. Cassin, 'vostre', 'Mr le [?] mon maistre', 'j'ay veu ung advis qui confirme' and the signature Baron. The clear text is not transcribed in the folder.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "One line per cipher group, not running text: the groups read as words, two are \"(no sense)\", and the letter's clear text is not transcribed, so no connected sentence can be built (reading audit, 22 Oct 2026); fix: transcribe ff. 126r-127r from Gallica (btv1b52510705j, canvases 259-261) and set the cipher runs in their clauses, with a translation."
    }
   ],
   "key_file": "texts/key.md"

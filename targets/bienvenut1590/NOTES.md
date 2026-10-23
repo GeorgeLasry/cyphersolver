@@ -1,6 +1,10 @@
 # Bienvenut to "Vostre Altesse" (the duc de Nevers?), Paris, 28 February 1590 (BnF fr. 3623 no. 23; DECODE R9453)
 
-Status: read. A clear copy in which only nine persons and provinces are coded by small numbers; the key is bound with
+Status: in progress. The letter reads, but only a sample of ff. 35r-v is transcribed (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): texts/n23_decryption.md is a sample of about 90 words joined by "..."; it reads, but most of the letter is not in the repository. Claim read -> read in part (about 15%, estimated) until ff. 35r-v are transcribed; every code is already resolved by the key slip.
+
+Earlier status (before the 22 Oct 2026 reading audit): read. A clear copy in which only nine persons and provinces are coded by small numbers; the key is bound with
 it on f. 36r, and every number in the letter is on it.
 
 Split on 14 Oct 2026 from `champagne1590` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter
@@ -48,3 +52,16 @@ la guerre jusques a ce que [le Pape] puysse envoyer 8 ou 10000 hommes de guerre 
 
 DECODE R9453 lists the record as a key; the copy and its key were not connected to a reading there. No printed text
 found (Tomokiyo nevers.htm and GL.htm, Mémoires de Nevers index checked 21 Sept 2026).
+
+## Remaining gaps
+
+- n23, ff. 35r-v beyond the sample: not transcribed - blocker: not-attempted; Gallica btv1b525245007 canvases 79-80 (copies in the main checkout targets/champagne1590/img/)
+
+## Escalation
+
+- [x] siblings: champagne1590 and lauriere1593 split off (other keys)
+- [x] clear-pages: the letter is itself a clear copy; key slip f. 36r
+- [x] known-keys: the key slip resolves all 26 codes
+- [x] print: none found
+- [n/a] key-rebuild: key complete
+- [ ] retry: full transcription of ff. 35r-v still to do

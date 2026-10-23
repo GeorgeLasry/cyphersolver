@@ -196,6 +196,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher groups ct_gongmi/rongmi/chenmi.txt; decode.py run over groups.tsv and saved per code as texts/<code>_decryption.md; Dudout's keys copied from NOTES to texts/key.md; his annotated texts and translations linked on his Wenmi pages",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit, per-document pass (George Lasry's sentence test): the three decode files read telegram by telegram: chenmi reads; gongmi (N32, N33, N35) and rongmi (N19b, N21, V4D) carry garbled character clusters that break whole clauses. Per-document C confirmed for both; relabelled decoded, not read; class read in part kept; fraction_read 0.9238 -> 0.11.",
+      "result": "failed",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
@@ -204,9 +211,9 @@
     "method": "key recovered from ciphertext-only",
     "method_basis": "All three keys were found by key searches scored with a telegraph-code language model, without cribs or plaintext (Dudout's method pages); only the form dates served as checks.",
     "contribution": ["transcription", "key recovered"],
-    "fraction_read": 0.9238,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "Contributor's counts (email 19 Oct 2026): 510/555 + 1198/1306 + 232/239 = 1940/2100 cipher groups read without doubt; doubtful and illegible counted as unread. The group count 2100 is measured here.",
+    "fraction_read": 0.11,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "Reading audit, 22 Oct 2026: of the three codebooks only 辰密 (chenmi) reads in the repository; 共密 and 容密 are decoded, not read. Contributor's counts (email 19 Oct 2026), chenmi 232 of 239 groups read, over the 2,100 groups measured here: 232/2,100 = 0.11. The earlier 0.9238 (1,940/2,100, all three codebooks) is withdrawn as a reading figure.",
     "codes_open": {"open": 0, "total": 0, "tokens_open": 0},
     "verification": ["statistical test", "historical consistency", "key confirms", "independent verification"],
     "validation": {"date": "2026-10-20", "verdict": "not applicable", "notes": "plaintext is Chinese (telegraph code numbers); no letter model in lang/. The contributor's verify.py random-key and digit-shuffle nulls were rerun instead (2026-10-20)."},
@@ -215,9 +222,10 @@
       {"item": "容密: 102 doubtful and 6 illegible characters", "blocker": "illegible", "detail": "Uncertain digits; recurring anomalous codes (繒 for 生, 盻 for 盼) kept as marked."},
       {"item": "辰密: 7 doubtful characters", "blocker": "illegible", "detail": "Four single-digit probable readings, 一不 for 不一, 盻 for 盼."},
       {"item": "V4B: 18 of 22 sheets not yet re-read blind; framing repairs in V4B, V4D, V4E", "blocker": "needs-physical-access", "detail": "Contributor's re-reading of the JACAR scans, not done here."},
-      {"item": "N07 (prefix 共密), N06 (和密), N09 (乾密), N01, N03", "blocker": "no-key-material", "detail": "N07 does not read under the 共密 key; the others are other books; only first sheets transcribed, no plaintext."}
+      {"item": "N07 (prefix 共密), N06 (和密), N09 (乾密), N01, N03", "blocker": "no-key-material", "detail": "N07 does not read under the 共密 key; the others are other books; only first sheets transcribed, no plaintext."},
+      {"item": "共密 and 容密 telegrams: decoded, not read", "blocker": "not-attempted", "detail": "the raw decode has garbled clusters (gongmi N32, N33, N35; rongmi N19b, N21, V4D); Dudout's Wenmi pages (bdudout.github.io/wenmi, reachable) carry translations; copy them in and repair the groups"}
     ],
-    "notes": "Contributed result checked here, not redone: the keys decode his digits into his texts exactly and his controls rerun as reported. Three different keys in one target, against the one-key rule.",
+    "notes": "Contributed result checked here, not redone: the keys decode his digits into his texts exactly and his controls rerun as reported. Three different keys in one target, against the one-key rule. 22 Oct 2026, reading audit: gongmi and rongmi decoded, not read (garbled clusters in several telegrams, no translation in the folder); chenmi reads; fraction_read 0.9238 -> 0.11.",
     "provenance": "contributed",
     "credits": [
       {"who": "dudout", "role": "new cipher with solution", "note": "Three numeric telegraph codes of June–July 1916 (共密, 容密, 辰密): digits re-read on the JACAR scans, keys recovered with Claude (mainly Opus 5.5), translations and historical context", "date": "2026-10-19", "source": "https://bdudout.github.io/wenmi/en/gongmi.html; https://bdudout.github.io/wenmi/en/rongmi.html; https://bdudout.github.io/wenmi/en/chenmi.html; https://bdudout.github.io/wenmi/en/juin1916.html; https://github.com/bdudout/wenmi/tree/main/solver/numeric1916; email 19 Oct 2026", "published": true}
@@ -229,7 +237,10 @@
         "transcription": "ct_gongmi.txt",
         "decryption": "texts/gongmi_decryption.md",
         "translation": "https://bdudout.github.io/wenmi/en/gongmi.html",
-        "summary": "Telegrams between Huang Xing's circle in Tokyo and the Shanghai group, intercepted in Japan: among them Huang Xing's five conditions to Li Yuanhong (restore the 1912 Provisional Constitution and the old Parliament, no amnesty, Duan's cabinet to resign, move Wang Zhanyuan, bring the party leaders to Beijing; N17). Key recovered by Brice Dudout; decrypted here with an independent decoder from his digit readings."
+        "summary": "Telegrams between Huang Xing's circle in Tokyo and the Shanghai group, intercepted in Japan: among them Huang Xing's five conditions to Li Yuanhong (restore the 1912 Provisional Constitution and the old Parliament, no amnesty, Duan's cabinet to resign, move Wang Zhanyuan, bring the party leaders to Beijing; N17). Key recovered by Brice Dudout; decrypted here with an independent decoder from his digit readings.",
+        "language": "zh",
+        "state": "decoded, not read",
+        "note": "Verbatim decoder output: N17, N18, N23 are near-clean classical Chinese, but N32, N33 and N35 carry strings of wrong characters (代噸 for 代表, 圄會 for 國會) so whole clauses fail, and no translation is in the folder (reading audit, 22 Oct 2026); fix: copy Brice Dudout's edited texts and translations from his Wenmi pages into texts/, check the garbled groups against groups.tsv and the JACAR scans, and repair them."
       },
       {
         "doc": "rongmi",
@@ -237,7 +248,10 @@
         "transcription": "ct_rongmi.txt",
         "decryption": "texts/rongmi_decryption.md",
         "translation": "https://bdudout.github.io/wenmi/en/rongmi.html",
-        "summary": "Telegrams on the arms bought in Japan for Zhejiang (Governor Lü Gongwang): about 10,000 rifles, mountain guns and machine guns, ammunition and payment before 30 June, loans and tobacco taxes as security; Japan will not lend to Beijing before North and South are unified; 'no legal solution without armed force'; the meeting at Tang's house; late June, Duan back to three delegates per province."
+        "summary": "Telegrams on the arms bought in Japan for Zhejiang (Governor Lü Gongwang): about 10,000 rifles, mountain guns and machine guns, ammunition and payment before 30 June, loans and tobacco taxes as security; Japan will not lend to Beijing before North and South are unified; 'no legal solution without armed force'; the meeting at Tang's house; late June, Duan back to three delegates per province.",
+        "language": "zh",
+        "state": "decoded, not read",
+        "note": "Most telegrams (N08, N11, N14, N19a) read, but N19b, N21 and V4D have clusters of mis-decoded characters (圄會, 恢徨) and N21's second half is garbled; verbatim decoder output, no translation in the folder (reading audit, 22 Oct 2026); fix: copy Brice Dudout's edited texts and translations from his Wenmi pages into texts/, check the garbled groups against groups.tsv and the JACAR scans, and repair them."
       },
       {
         "doc": "chenmi",
@@ -245,7 +259,8 @@
         "transcription": "ct_chenmi.txt",
         "decryption": "texts/chenmi_decryption.md",
         "translation": "https://bdudout.github.io/wenmi/en/chenmi.html",
-        "summary": "Telegrams to the Hunanese group's address at 277 Avenue Joffre, Shanghai, including a Hunan division under Zhao Hengti for Li Yuanhong (N16)."
+        "summary": "Telegrams to the Hunanese group's address at 277 Avenue Joffre, Shanghai, including a Hunan division under Zhao Hengti for Li Yuanhong (N16).",
+        "language": "zh"
       }
     ],
     "key_file": "texts/key.md"

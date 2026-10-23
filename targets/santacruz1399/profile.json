@@ -115,6 +115,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Puig y Puig 1920 (Google Books); no transcription possible (the cipher is not imaged)",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): the only text is a Google Books link, now blocked to scripts, and archive.org has no copy of Puig 1920; outcome.texts_withheld set with the citation, class already solved kept.",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -134,9 +141,14 @@
     "item": "The ciphertext itself (no image, not transcribed)",
     "blocker": "needs-physical-access",
     "detail": "The reading is Puig's, complete as printed; the cipher and its key could be checked only on the ACB original."
+   },
+   {
+    "item": "Puig's printed text of the letter (pp. 469-470), not in the repository",
+    "blocker": "needs-physical-access",
+    "detail": "Google Books blocks automated access; HathiTrust is behind a Cloudflare challenge; archive.org has no copy; a copy of the book is needed"
    }
   ],
-  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's.",
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's. 22 Oct 2026, reading audit: no text of the letter is in the repository; texts_withheld set with the citation. Class already solved kept (the text exists in print).",
   "credits": [
    {
     "who": "puig",
@@ -152,8 +164,10 @@
     "label": "Puig 1920, app. XXIX",
     "decryption": "https://books.google.com/books?id=CuOlkxWnk-EC",
     "summary": "Fr. P. de Santa Cruz to Francesc Climent, 22 October 1399: the French ambassadors leave, and the besieged household (of Benedict XIII at Avignon) is 'in periculo mortis'.",
-    "note": "Decryption: Puig y Puig, Pedro de Luna (1920), appendix XXIX, pp. 469-470, deciphered passages in italics (Google Books full view); no local copy yet. No transcription: the ciphertext is not imaged or printed."
+    "note": "Decryption: Puig y Puig, Pedro de Luna (1920), appendix XXIX, pp. 469-470, deciphered passages in italics (Google Books full view); no local copy yet. No transcription: the ciphertext is not imaged or printed. Not in the repository: Google Books blocks scripted access (reading audit, 22 Oct 2026).",
+    "language": "la"
    }
-  ]
+  ],
+  "texts_withheld": "The only text is Puig y Puig's print: Sebastián Puig y Puig, Pedro de Luna, último papa de Aviñón (Barcelona 1920), appendix XXIX, pp. 469-470, deciphered passages in italics. It was read on Google Books (CuOlkxWnk-EC) on 23 Sept 2026; Google Books and HathiTrust now block scripted access and archive.org has no copy, so nothing of the letter is in the repository (reading audit, 22 Oct 2026)."
  }
 }

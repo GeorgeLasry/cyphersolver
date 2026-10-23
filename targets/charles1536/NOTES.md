@@ -1,6 +1,10 @@
 # Charles V to the Empress Isabella (1536) and to Prince Philip (1543), AGS Estado (DECODE R9957, R9952) — NOTES
 
-Status: no write-up
+Status: in progress. Neither letter's text is in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): R9957 is here only as fragments of its contemporary decipherment (pp. 17-18; Luo's 2021 print not copied) and R9952 has no text at all; both are *decoded, not read*. Class already solved is kept because R9957 is in print (Luo 2021, p. 287).
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up
 
 **Verdict: both letters were already read. R9952 was deciphered at the time. R9957 was deciphered and printed by
 Wanruo Luo (2021) from its original key.** Catalogue entry 199 ("Charles V (Burgos) to Isabella of Portugal /
@@ -65,3 +69,17 @@ Prince Philip, 2 ciphertexts") is resolved and removed. Checked in one session o
 
 Luo's key (AGS Estado leg. 1.1.1 doc. 169, her p. 603) and her edition (p. 287) are the starting point. The
 transcriptions here are not good enough to check her reading sign by sign.
+
+## Remaining gaps
+
+- R9957: Luo's printed decipherment (2021, p. 287) not in the repository - blocker: not-attempted; the thesis is on RODERIC (Universitat de Valencia); the pp. 17-18 contemporary decipherment is on the images (main checkout img/)
+- R9952: contemporary decipherment (margins of ff. 10-12, full on ff. 13-14) not transcribed - blocker: not-attempted; images in the main checkout targets/charles1536/img/r9952_p*.jpg
+
+## Escalation
+
+- [x] siblings: R9952 and R9957 separated (two unrelated letters)
+- [x] clear-pages: R9957 pp. 16-18 glosses and decipherment found; R9952 ff. 10-14 decipherment found
+- [x] known-keys: Luo's key AGS Estado leg. 1.1.1 doc. 169 identified
+- [x] print: Luo 2021 p. 287 (R9957)
+- [ ] key-rebuild: crib alignment on pp. 16-17 did not converge
+- [ ] retry: copy Luo's text, transcribe R9952 ff. 13-14

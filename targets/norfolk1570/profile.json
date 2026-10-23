@@ -130,20 +130,27 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reading copied from NOTES.md to texts/f74r_decryption.md; no sign-level transcription of the cipher exists in the folder (the reading was made on the image strips)",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): the f. 74r reading (texts/f74r_decryption.md, copied from NOTES) read line by line: about half the lines carry [..] holes or unkeyed signs and the argument builds only in part. Per-document C confirmed; f. 74r relabelled decoded, not read; class read -> not read; method read with known key -> not solved; fraction_read unknown -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "Tomokiyo's key for the Mary-Norfolk series, reconstructed from ff. 66/69/75 of the same volume (Cotton Caligula C II) and published on cryptiana mary.htm with a partial overlay of f. 74r, was checked on f. 66r against its decipherment and applied to 23 line strips from the new BL IIIF images.",
+  "method": "not solved",
+  "method_basis": "Tomokiyo's key for the Mary-Norfolk series (from ff. 66/69/75, checked on f. 66r against its decipherment) was applied to 23 line strips of f. 74r. The line-by-line reading has [..] holes or unkeyed signs in about half the lines, so no reading is claimed (reading audit, 22 Oct 2026); once the lines are re-read into sentences the method is read with known key.",
   "contribution": ["transcription"],
-  "class": "read",
-  "fraction_read": "unknown",
+  "class": "not read",
+  "fraction_read": 0.0,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Open: five unkeyed signs, two groups in line 1, stained end of line 4, single words.",
+  "notes": "Open: five unkeyed signs, two groups in line 1, stained end of line 4, single words. 22 Oct 2026, reading audit: f. 74r decoded, not read (holes in about half the lines); class read -> not read, method -> not solved.",
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "Mary-Norfolk key reconstructed from ff. 66/69/75, with his partial overlay of f. 74r (cryptiana mary.htm)", "source": "cryptiana mary.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment of f. 66r, used to check the key"}
@@ -153,7 +160,24 @@
     "doc": "f74r",
     "label": "Mary Queen of Scots to Norfolk, 'the 20th' [Feb or Mar 1570], BL Cotton MS Caligula C II f. 74r",
     "decryption": "texts/f74r_decryption.md",
-    "summary": "Written after Moray's murder at Linlithgow (23 Jan 1570): Mary tells Norfolk she will undertake nothing unless it is safe for them both, urges him to write to the Bishop of Ross and to act through his sister Scrope or others, says Elizabeth blames her for Moray's death, reports rumours of Morton and Lord Talbot, and begs him not to risk writing in his own hand. No sign-level transcription of the cipher exists; the reading was made on the image strips."
+    "summary": "Written after Moray's murder at Linlithgow (23 Jan 1570): Mary tells Norfolk she will undertake nothing unless it is safe for them both, urges him to write to the Bishop of Ross and to act through his sister Scrope or others, says Elizabeth blames her for Moray's death, reports rumours of Morton and Lord Talbot, and begs him not to risk writing in his own hand. No sign-level transcription of the cipher exists; the reading was made on the image strips.",
+    "language": "en",
+    "state": "decoded, not read",
+    "note": "Mary's Scots-English reads in places, but lines 1, 4-6, 8-10 and 12-17 carry [..] holes, a stain or unkeyed nomenclator signs, so about half the sentences do not build (reading audit, 22 Oct 2026); fix: re-read those lines on the line strips (view/Lnn*.jpg, from the BL IIIF images) and settle the six unkeyed signs from the sibling letters ff. 66, 69, 75, then write a running text with a modern English version."
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: f. 74r, the only document, is decoded, not read, so no tokens are in a document that reads. The field was \"unknown\" before.",
+  "gaps": [
+   {
+    "item": "f. 74r as a running text: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "re-read lines 1, 4-6, 8-10, 12-17 on the BL IIIF strips (fetch.py/strips.py) against Tomokiyo's key; place the signs ⊕, ⊘, ø, ⊗ and the dash signs from ff. 66/69/75"
+   },
+   {
+    "item": "unkeyed nomenclator signs ⊕, ⊘, ø, ⊗, {a—}, {o—}",
+    "blocker": "open-codes",
+    "detail": "not in Tomokiyo's key; each occurs once or twice"
    }
   ]
  }

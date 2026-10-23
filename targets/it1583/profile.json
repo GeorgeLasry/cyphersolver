@@ -232,7 +232,8 @@
    "result": "failed"
   },
   {"date": "2026-10-20", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 780 tokens, 51 types, it-cinquecento order 4: reading -2.07 per letter; random keys -3.761 (z 5.7); key annealed onto shuffled ciphertext best -2.544 (mean -2.567, z 26.2); annealer on the real text -2.415. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): it1583: George Lasry's CTTS files from PR #60 linked: ctts/transcription and ctts/decryption per letter, his edited readings (edited.txt, companion/edited.txt), full_letter.md (edition with English translation) and ctts/key.txt.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): it1583: George Lasry's CTTS files from PR #60 linked: ctts/transcription and ctts/decryption per letter, his edited readings (edited.txt, companion/edited.txt), full_letter.md (edition with English translation) and ctts/key.txt.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): edited.txt, companion/edited.txt and full_letter.md read. f. 68 builds sentences with holes at line openings (C overturned to B); f. 70 has holes in every clause of lines 1-5 (C confirmed), relabelled decoded, not read. Class read in part kept; fraction_read 0.9432 -> 0.514.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-20", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 780, "types": 51, "tokens_per_type": 15.29, "score": -2.07, "nulls": {"random keys": {"n": 200, "mean": -3.761, "sd": 0.296, "max": -3.179, "z": 5.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.567, "sd": 0.019, "max": -2.544, "z": 26.2, "p": 0.1429}}, "power": -2.415, "verdict": "pass", "notes": "claimed per-occurrence score -2.07; polyphony 0.0; 47 unread tokens left out; annealer on the real text from random keys reached -2.415"}, 
   "method": "key recovered from ciphertext-only",
@@ -243,9 +244,9 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.9432,
+  "fraction_read": 0.514,
   "verification": ["key confirms", "historical consistency", "statistical test"],
-  "notes": "Both letters read in part with one key: 87.2% of cipher tokens read as sense. Earlier 'closed unread' (21 Sept 2026) superseded by the contributed CTTS key.",
+  "notes": "Both letters read in part with one key: 87.2% of cipher tokens read as sense. Earlier 'closed unread' (21 Sept 2026) superseded by the contributed CTTS key. 22 Oct 2026, reading audit: f. 68 reads (C overturned to B); f. 70 decoded, not read; fraction_read 0.9432 (assigned) -> 0.514 (tokens in the letter that reads).",
   "credits": [
    {
     "who": "mazzatinti",
@@ -272,7 +273,7 @@
   "key": "partial",
   "fraction_coherent": 0.8718,
   "fraction_read_method": "measured",
-  "fraction_read_source": "lasry2026/edition.json via measure_sense.py, cipher tokens: 780 of 827 assigned (4 provisional); 721 of 827 in segments that read as Italian words",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: f. 68 (R7898, 425 cipher tokens, lasry2026/cipher_tokens.txt) reads; f. 70 (402 tokens) is decoded, not read: 425 of 827 = 0.514. The earlier 0.9432 (edition.json via measure_sense.py: 780 of 827 tokens assigned) is withdrawn as a reading figure.",
   "codes_open": {
    "open": 14,
    "total": 65,
@@ -299,11 +300,16 @@
     "item": "Clear-text supplies [aya? ...], [fornendo?], [ques?]te",
     "blocker": "illegible",
     "detail": "Binarized scan of f. 68 and a DECODE photograph of f. 70 only."
+   },
+   {
+    "item": "f. 70: decoded, not read (lines 1-5)",
+    "blocker": "not-attempted",
+    "detail": "one to three unread signs in every clause of lines 1-5; re-read them on the image with the shared key, and look for the sibling 1446 letters for more occurrences"
    }
   ],
   "texts": [
-   {"doc": "R7898", "label": "f. 68 (DECODE R7898), 4 May 1446, reply concerning Zorzo del Maino's report", "transcription": "lasry2026/ctts/transcription/1.txt", "decryption": ["lasry2026/ctts/decryption/1.txt", "lasry2026/edited.txt"], "translation": "lasry2026/full_letter.md", "summary": "An unidentified writer replies to Zorzo del Maino's report concerning Count Francesco (probably Francesco Sforza): the count's obligations to others are his own affair, the writer seeks only God's honour and his own security, and asks for eight or ten names in writing from which trusted intermediaries could be chosen."},
-   {"doc": "f70", "label": "f. 70 (DECODE R7899 image P1), Milan, 4 May 1446, catalogued as Vincenzo Amidani to Francesco Sforza", "transcription": "lasry2026/ctts/transcription/IMG_R7899_I35638_P1.txt", "decryption": ["lasry2026/ctts/decryption/IMG_R7899_I35638_P1.txt", "lasry2026/companion/edited.txt"], "translation": "lasry2026/full_letter.md", "summary": "The writer reports prospective action against Cremona and how the Venetian government might declare itself, with help, defence and troops soon in the field, and closes that he writes to do his duty; dated Milan, the fourth of May; the signature is unread."}
+   {"doc": "R7898", "label": "f. 68 (DECODE R7898), 4 May 1446, reply concerning Zorzo del Maino's report", "transcription": "lasry2026/ctts/transcription/1.txt", "decryption": ["lasry2026/ctts/decryption/1.txt", "lasry2026/edited.txt"], "translation": "lasry2026/full_letter.md", "summary": "An unidentified writer replies to Zorzo del Maino's report concerning Count Francesco (probably Francesco Sforza): the count's obligations to others are his own affair, the writer seeks only God's honour and his own security, and asks for eight or ten names in writing from which trusted intermediaries could be chosen.", "language": "it", "state": "read", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C. The edited text and Lasry's English translation build sentences from line 2 to line 11 (Zorzo del Maino's report, the count's obligations, \"la secvreza nostra\", eight or ten names); the ? runs sit at line openings and ends, where NOTES and the gap list take them for nulls or titles, and two mid-sentence holes (l. 10 \"?intita\", l. 11) are scattered."}},
+   {"doc": "f70", "label": "f. 70 (DECODE R7899 image P1), Milan, 4 May 1446, catalogued as Vincenzo Amidani to Francesco Sforza", "transcription": "lasry2026/ctts/transcription/IMG_R7899_I35638_P1.txt", "decryption": ["lasry2026/ctts/decryption/IMG_R7899_I35638_P1.txt", "lasry2026/companion/edited.txt"], "translation": "lasry2026/full_letter.md", "summary": "The writer reports prospective action against Cremona and how the Venetian government might declare itself, with help, defence and troops soon in the field, and closes that he writes to do his duty; dated Milan, the fourth of May; the signature is unread.", "language": "it", "state": "decoded, not read", "note": "Lines 6-8 read (\"tamen per fare mio debito ne adviso ..., mediolani die qvarto mai\"), but lines 1-5 have one to three ? holes in each clause (\"a adviso vi l ? se mono ad fare contra cremona\", \"revnito ? ? ? da ? ad tvte le ?\") and the signature is unread (reading audit, 22 Oct 2026); fix: re-read the open signs of lines 1-5 against the images and the f. 68 key, and work the signature against Mazzatinti's attribution."}
   ],
   "key_file": "lasry2026/ctts/key.txt"
  }

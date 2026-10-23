@@ -415,17 +415,18 @@
    "result": "worked"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 8509 tokens, 60 types, fr-modern order 4: reading -2.364 per letter; random keys -5.279 (z 10.0); key annealed onto shuffled ciphertext best -3.522 (mean -3.531, z 107.9); annealer on the real text -2.403. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher/R*.txt with the hand readings read/R*.txt and the machine readings read/machine_R*.txt; key key.json.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher/R*.txt with the hand readings read/R*.txt and the machine readings read/machine_R*.txt; key key.json.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the ten hand readings read; nine build French sentences (A); read/R1954.txt (about 65% read on a weak transcription) has holes in most sentences (D confirmed). R1954 relabelled decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81 (groups in letters that read).", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 8509, "types": 60, "tokens_per_type": 141.82, "score": -2.364, "nulls": {"random keys": {"n": 200, "mean": -5.279, "sd": 0.292, "max": -4.589, "z": 10.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.531, "sd": 0.011, "max": -3.522, "z": 107.9, "p": 0.1429}}, "power": -2.403, "verdict": "pass", "notes": "claimed per-occurrence score -2.286; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.403"}, 
   "method": "key recovered from ciphertext-only",
   "method_basis": "Nulls and the two-figure code table were found by statistics, and the code values were recovered by simulated annealing onto the plaintext vocabulary (letters and syllables) of Kauderbach's 1761 key (DECODE R936), whose numbers do not fit this 1754-58 table.",
   "contribution": ["transcription", "key recovered"],
-  "class": "read",
-  "fraction_read": 0.998,
+  "class": "read in part",
+  "fraction_read": 0.81,
   "grades": "unknown",
   "verification": ["historical consistency", "key confirms", "statistical test"],
-  "notes": "fraction_read = share of the 8,512 groups carrying a key value (only 10, 20, 40, 90 guessed, 12 occurrences). Readers estimate 65-97% of the text read in sense per letter; R1954 weakest; the clear sigla are read from context only.",
+  "notes": "fraction_read = share of the 8,512 groups carrying a key value (only 10, 20, 40, 90 guessed, 12 occurrences). Readers estimate 65-97% of the text read in sense per letter; R1954 weakest; the clear sigla are read from context only. 22 Oct 2026, reading audit: R1954 decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Kauderbach's 1761 key (HStAD, DECODE R936) used for its plaintext vocabulary; numbers do not fit"}
   ],
@@ -438,7 +439,8 @@
      "read/R2078.txt",
      "read/machine_R2078.txt"
     ],
-    "summary": "Kauderbach, Saxon-Polish resident at The Hague, to Dresden: the States of Holland face their most difficult deliberations in years, the Comte d'Affry's overture on one side and Colonel Yorke's memorial asking what the Republic's engagements amount to on the other."
+    "summary": "Kauderbach, Saxon-Polish resident at The Hague, to Dresden: the States of Holland face their most difficult deliberations in years, the Comte d'Affry's overture on one side and Colonel Yorke's memorial asking what the Republic's engagements amount to on the other.",
+    "language": "fr"
    },
    {
     "doc": "R1958",
@@ -448,7 +450,8 @@
      "read/R1958.txt",
      "read/machine_R1958.txt"
     ],
-    "summary": "Colonel Yorke assures Kauderbach that his court is well disposed to renewing the subsidy treaty, and that he will second Saxon interests at The Hague with all his strength; if the transport of [Q.] arrives safely there will be no war in Europe. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "Colonel Yorke assures Kauderbach that his court is well disposed to renewing the subsidy treaty, and that he will second Saxon interests at The Hague with all his strength; if the transport of [Q.] arrives safely there will be no war in Europe. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr"
    },
    {
     "doc": "R2079",
@@ -458,7 +461,8 @@
      "read/R2079.txt",
      "read/machine_R2079.txt"
     ],
-    "summary": "Haslang tells the Bavarian resident he has Newcastle's word that his subsidy treaty will be renewed; the prospects for the augmentation fade, which Kauderbach thinks will help the renewal of subsidies. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "Haslang tells the Bavarian resident he has Newcastle's word that his subsidy treaty will be renewed; the prospects for the augmentation fade, which Kauderbach thinks will help the renewal of subsidies. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr"
    },
    {
     "doc": "R2080",
@@ -468,7 +472,8 @@
      "read/R2080.txt",
      "read/machine_R2080.txt"
     ],
-    "summary": "The arguments raised in the States of Holland against the proposed augmentation of thirteen thousand men urged by Lord Holderness: it would not suffice against the danger, the danger must first be established, and the other provinces must contribute equally."
+    "summary": "The arguments raised in the States of Holland against the proposed augmentation of thirteen thousand men urged by Lord Holderness: it would not suffice against the danger, the danger must first be established, and the other provinces must contribute equally.",
+    "language": "fr"
    },
    {
     "doc": "R1959",
@@ -478,7 +483,8 @@
      "read/R1959.txt",
      "read/machine_R1959.txt"
     ],
-    "summary": "The rumour that [E.M.] is negotiating with [P.] seems not wholly unfounded and is spread by the [M.] party in Amsterdam; the ambassador of [Q.] sounds Kauderbach about a subsidy treaty, and he refers him to the Saxon minister in Paris. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "The rumour that [E.M.] is negotiating with [P.] seems not wholly unfounded and is spread by the [M.] party in Amsterdam; the ambassador of [Q.] sounds Kauderbach about a subsidy treaty, and he refers him to the Saxon minister in Paris. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr"
    },
    {
     "doc": "R2081",
@@ -488,7 +494,8 @@
      "read/R2081.txt",
      "read/machine_R2081.txt"
     ],
-    "summary": "The [P.] are as dissatisfied with [J. C.] as with [S.] and suspect [U.] of not truly embracing their measures, though [U.] is constrained by her situation at home and abroad; a sudden move had been expected from [Q.]. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "The [P.] are as dissatisfied with [J. C.] as with [S.] and suspect [U.] of not truly embracing their measures, though [U.] is constrained by her situation at home and abroad; a sudden move had been expected from [Q.]. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr"
    },
    {
     "doc": "R2082",
@@ -498,7 +505,8 @@
      "read/R2082.txt",
      "read/machine_R2082.txt"
     ],
-    "summary": "The ambassador of [Q.] says [E.M.] wrote to his king in his own hand of an army of 150,000 men; [P.] declares it will abandon the continent if no defensive measures are taken here; [U.] will push the augmentation at the next assembly. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "The ambassador of [Q.] says [E.M.] wrote to his king in his own hand of an army of 150,000 men; [P.] declares it will abandon the continent if no defensive measures are taken here; [U.] will push the augmentation at the next assembly. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr"
    },
    {
     "doc": "R1044",
@@ -508,7 +516,8 @@
      "read/R1044.txt",
      "read/machine_R1044.txt"
     ],
-    "summary": "Members of the States complain that [P.] takes so many prizes in Europe without giving a reason, fearing [G.] will use it as a pretext to fall on the Low Countries; the [M.] party credits its prince with [G.]'s moderation there. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "Members of the States complain that [P.] takes so many prizes in Europe without giving a reason, fearing [G.] will use it as a pretext to fall on the Low Countries; the [M.] party credits its prince with [G.]'s moderation there. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr"
    },
    {
     "doc": "R1954",
@@ -518,7 +527,10 @@
      "read/R1954.txt",
      "read/machine_R1954.txt"
     ],
-    "summary": "Fragmentary reading (weak transcription): Holland has not yet deliberated on Colonel Yorke's requisition or on d'Affry's memorial, and the deliberation will stay suspended until [Q.] has explained itself on the representations [W.] made to the Comte d'Affry. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)"
+    "summary": "Fragmentary reading (weak transcription): Holland has not yet deliberated on Colonel Yorke's requisition or on d'Affry's memorial, and the deliberation will stay suspended until [Q.] has explained itself on the representations [W.] made to the Comte d'Affry. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Self-declared about 65% read on a weak transcription; the long paragraph has [...] and bracketed guesses in most sentences and some clauses do not parse (reading audit, 22 Oct 2026); fix: re-transcribe R1954 from the DECODE images and decode it again with key.json."
    },
    {
     "doc": "R1043",
@@ -528,9 +540,19 @@
      "read/R1043.txt",
      "read/machine_R1043.txt"
     ],
-    "summary": "Certain news that the long-rumoured treaty was signed at Versailles on the 2nd of the month: neutrality of the Low Countries, no help to the other party's enemy, and reportedly an undertaking about the election of a King of the Romans; it caused consternation at The Hague for fear of secret articles."
+    "summary": "Certain news that the long-rumoured treaty was signed at Versailles on the 2nd of the month: neutrality of the Low Countries, no help to the other party's enemy, and reportedly an undertaking about the election of a King of the Romans; it caused consternation at The Hague for fear of secret articles.",
+    "language": "fr"
    }
   ],
-  "key_file": "key.json"
+  "key_file": "key.json",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Reading audit, 22 Oct 2026, code groups per letter (documents[].length): the nine letters that read hold 6,891 of 8,512 groups (0.810); R1954 (1,621) is decoded, not read. The earlier 0.998 (groups given a value by the key) is withdrawn as a reading figure.",
+  "gaps": [
+   {
+    "item": "R1954 (March 1756, 1,621 groups): decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "weak transcription; re-transcribe from the DECODE images and re-decode with key.json"
+   }
+  ]
  }
 }

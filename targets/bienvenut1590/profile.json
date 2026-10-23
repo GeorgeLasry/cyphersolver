@@ -126,7 +126,8 @@
    "what": "Entry split from champagne1590 under the one-key rule (Lasry, 14 Oct 2026): no. 23's name code (35 = Mayenne, 37 = M. de Nemours, 53 = Saint-Sorlin) conflicts with the two-digit alphabet of nos. 24/25/60 (35 = a, 37 = c, 53 = i), so it is a different key.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): codes.txt + key.txt as transcription; decryption sample copied from NOTES.md to texts/n23_decryption.md; the full clear text of ff. 35r-v is not yet transcribed", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): codes.txt + key.txt as transcription; decryption sample copied from NOTES.md to texts/n23_decryption.md; the full clear text of ff. 35r-v is not yet transcribed", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/n23_decryption.md is a sample of fragments joined by \"...\"; it reads, but most of the letter is not transcribed. Kept read for the sample with an excerpt note; class read -> read in part; fraction_read 1.0 -> about 0.15 (estimated).", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read with known key",
@@ -134,16 +135,16 @@
   "contribution": [
    "transcription"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
-  "fraction_read": 1.0,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "codes.txt: 26 code numbers in ff. 35r-v, all on the key slip (key.txt): 26 of 26.",
+  "fraction_read": 0.15,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Estimated, 22 Oct 2026 reading audit: texts/n23_decryption.md holds a sample of about 90 words of the two-page letter ff. 35r-v; the rest is not transcribed. The earlier 1.0 (26 of 26 code numbers on the key slip, codes.txt) is the share of codes resolved, withdrawn as a reading figure.",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Split on 14 Oct 2026 from champagne1590. The copy is in clear except for nine name codes; it reports the League court in Paris (Madame de Nemours, Saint-Sorlin, the Pope and Spain, Mayenne).",
+  "notes": "Split on 14 Oct 2026 from champagne1590. The copy is in clear except for nine name codes; it reports the League court in Paris (Madame de Nemours, Saint-Sorlin, the Pope and Spain, Mayenne). 22 Oct 2026, reading audit: only a sample of the letter is in the repository; class read -> read in part until ff. 35r-v are transcribed.",
   "credits": [
    {
     "who": "contemporary",
@@ -152,7 +153,14 @@
    }
   ],
   "texts": [
-   {"doc": "n23", "label": "Paris, 28 Feb 1590, BnF fr. 3623 no. 23, ff. 35r-v (key f. 36r)", "transcription": ["codes.txt", "key.txt"], "decryption": "texts/n23_decryption.md", "summary": "Bienvenut reports from Paris to 'Vostre Altesse' (probably the duc de Nevers, not proven) that Madame de Nemours showed him advices from Saint-Sorlin of a close understanding between the Pope and the King of Spain, and that the Legate's courier went to Rome to keep the war going until the Pope can send 8 or 10,000 men to stiffen Mayenne. The copy is in clear except nine persons and provinces coded by small numbers, all on the key slip bound with it."}
+   {"doc": "n23", "label": "Paris, 28 Feb 1590, BnF fr. 3623 no. 23, ff. 35r-v (key f. 36r)", "transcription": ["codes.txt", "key.txt"], "decryption": "texts/n23_decryption.md", "summary": "Bienvenut reports from Paris to 'Vostre Altesse' (probably the duc de Nevers, not proven) that Madame de Nemours showed him advices from Saint-Sorlin of a close understanding between the Pope and the King of Spain, and that the Legate's courier went to Rome to keep the war going until the Pope can send 8 or 10,000 men to stiffen Mayenne. The copy is in clear except nine persons and provinces coded by small numbers, all on the key slip bound with it.", "note": "Excerpt only: the full letter is the clear copy on BnF fr. 3623 ff. 35r-v (Gallica btv1b525245007, canvases 79-80; copies in the main checkout's targets/champagne1590/img/), not yet transcribed (reading audit, 22 Oct 2026).", "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Excerpt only: the sample reads as French sentences with the codes resolved (\"[Mme de Nemours] me pourmena hyer par la gallerie du logis de la Reyne ...\"); the rest of ff. 35r-v is not transcribed."}, "state": "read", "language": "fr"}
+  ],
+  "gaps": [
+   {
+    "item": "n23, ff. 35r-v: the clear text beyond the sample, not transcribed",
+    "blocker": "not-attempted",
+    "detail": "Gallica btv1b525245007 canvases 79-80 (copies in the main checkout targets/champagne1590/img/); every code is on the key slip f. 36r, so transcription is all that is needed"
+   }
   ]
  }
 }

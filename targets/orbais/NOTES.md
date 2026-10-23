@@ -1,5 +1,9 @@
 # BnF fr. 3413 no. 62 — letter to the abbé d'Orbais (Rome, 23 August [1589])
 
+Status: in progress. no. 62 decoded, not read: the clear text is not transcribed (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): texts/no62_decryption.md is one line per cipher group and the letter's clear text is not transcribed, so the runs stand as isolated words and no sentence can be built: no. 62 is *decoded, not read*. Class read in part -> not read, method -> not solved, fraction_read 0.824 -> 0 (75/91 signs read as sense, withdrawn as a reading figure).
+
 Catalogue item: "Letter to the abbé d'Orbais, with three loose keys in the volume" (Gallica `btv1b52510705j`).
 
 ## The letter
@@ -158,6 +162,7 @@ depeschera … dedans deux jours **le doien**; **la protection**; Mons. **Cassin
 - G `τ` (after "Mr le") - blocker: open-codes; one code sign, sense probably "Cardinal", no key entry
 - C `φ tt o V æ ʃ° ÷` ("ce qui touche …") - blocker: no-key-material; known values give v-o-p-a-e-y-s (5 Oct: ʃ° = y), not sense; the missing values would come from fr. 3612 (not digitised)
 - V2 `n a æ η ⊡ θ` ("à vostre …") - blocker: no-key-material; re-transcribed 5 Oct (⊡ not ◻), known values give et-f-e-g-r-e, not sense; same source missing
+- no. 62 as a running text: clear text not transcribed - blocker: not-attempted; transcribe ff. 126r-127r from Gallica (btv1b52510705j, canvases 259-261) and set the 14 cipher runs in their clauses, with a translation
 
 ## Escalation
 

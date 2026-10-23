@@ -223,6 +223,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): alejandrozarco's sign-by-sign reads and reconciled readings for f. 276 and f. 179 (with SOLUTION.md), Brett Burford's per-page signs, plaintext, French text and English gist for fr. 15573 ff. 379-381 plus read_all.txt; keys key-cipher3.json, key_em_all.tsv and the Key section of f276/SOLUTION.md.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): f. 276 and f. 179 read from SOLUTION.md (A); fr. 15573 ff. 379-381 (Burford v0.5) has a garbled word in nearly every sentence and no translation (C confirmed). Relabelled decoded, not read; class read in part kept; fraction_read 0.9118 -> 0.305.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -256,9 +263,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.9118,
+  "fraction_read": 0.305,
   "fraction_read_method": "measured",
-  "fraction_read_source": "f276/scripts/measure.py (lang model fr-1600-letters, the targets/matignon1586/measure.py rule): f276/read_final.txt 706/734, f179/read_final.txt 473/509, f379_381/read_<page>.txt 2,540/2,836 (Burford v0.5 through to_read.py); 3,719 of 4,079 signs, 21 Oct 2026",
+  "fraction_read_source": "Reading audit, 22 Oct 2026, signs per document: f. 276 (734) and fr. 15571 f. 179 (509) read, 1,243 of 4,079 signs (0.305); fr. 15573 ff. 379-381 (2,836) is decoded, not read. The earlier 0.9118 (3,719 of 4,079 signs in sense runs, f276/scripts/measure.py, 21 Oct 2026) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
    "open": 8,
@@ -294,6 +301,11 @@
     "item": "fr. 15573 ff. 379-381: about 300 signs outside sense runs (5 short runs of clear signs Burford could not read, doubtful words, smudged signs)",
     "blocker": "open-codes",
     "detail": "Mostly names, period spellings and reader errors (0.93-0.96 per sign on known text); Burford's v0.5 list (f379_381/burford/unresolved-v0.5.md) explains 110 of 115 items; the 5 unexplained runs are clear on the image and may be names or code. A sign-by-sign human check has not been made."
+   },
+   {
+    "item": "fr. 15573 ff. 379-381: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "machine decode with a garbled word in most sentences; repair on the Gallica images (btv1b90618780 views 740-745), punctuate and translate"
    }
   ],
   "grades": "unknown",
@@ -302,7 +314,7 @@
    "matched control"
   ],
   "provenance": "contributed",
-  "notes": "Contributed by alejandrozarco (PR #25, 6-7 Oct 2026), reviewed and re-measured here. Content: a Poitou intelligence note on the Catholic factions round La Roussière (f. 276) and a sibling naming Pons, sickness in the army and Lansac for the sea army (f. 179). 21 Oct 2026: Brett Burford's reading of fr. 15573 ff. 379-381 (issue #44) added as a third part; measured here 89.6%.",
+  "notes": "Contributed by alejandrozarco (PR #25, 6-7 Oct 2026), reviewed and re-measured here. Content: a Poitou intelligence note on the Catholic factions round La Roussière (f. 276) and a sibling naming Pons, sickness in the army and Lansac for the sea army (f. 179). 21 Oct 2026: Brett Burford's reading of fr. 15573 ff. 379-381 (issue #44) added as a third part; measured here 89.6%. 22 Oct 2026, reading audit: fr. 15573 ff. 379-381 decoded, not read; fraction_read 0.9118 -> 0.305 (signs in the two slips that read).",
   "credits": [
    {
     "who": "zarco",
@@ -343,7 +355,8 @@
      "f276/read_final.txt",
      "f276/SOLUTION.md"
     ],
-    "summary": "A Poitou intelligence note on the Catholic factions round La Roussière, Henri III's governor of Fontenay(-le-Comte): La Guiolle unsure of Le Puy, La Saussaie, the priory promised to Aubois, the sieurs de la Fontaine, la Chaie and Mirebeau; 'Le Pui est ennuyé de la guerre'. Writer and recipient are not named. The transcriptions are the two independent sign-by-sign reads (one letter per sign)."
+    "summary": "A Poitou intelligence note on the Catholic factions round La Roussière, Henri III's governor of Fontenay(-le-Comte): La Guiolle unsure of Le Puy, La Saussaie, the priory promised to Aubois, the sieurs de la Fontaine, la Chaie and Mirebeau; 'Le Pui est ennuyé de la guerre'. Writer and recipient are not named. The transcriptions are the two independent sign-by-sign reads (one letter per sign).",
+    "language": "fr"
    },
    {
     "doc": "fr15571-f179",
@@ -356,7 +369,8 @@
      "f179/read_final.txt",
      "f179/SOLUTION.md"
     ],
-    "summary": "Frontin is to come to terms with La Rousière's children; the writer is resolved to attack Pons, 'il se poura prendre en ung mois'; sickness among the foot; 'employer Lansac en ... l'armée de mer'. The siege and the sickness fit, without being established, the plague in Mayenne's and Matignon's army round Castillon (Aug-Sept 1586); Tomokiyo's interlinear decipherment was the check."
+    "summary": "Frontin is to come to terms with La Rousière's children; the writer is resolved to attack Pons, 'il se poura prendre en ung mois'; sickness among the foot; 'employer Lansac en ... l'armée de mer'. The siege and the sickness fit, without being established, the plague in Mayenne's and Matignon's army round Castillon (Aug-Sept 1586); Tomokiyo's interlinear decipherment was the check.",
+    "language": "fr"
    },
    {
     "doc": "fr15573-f379-381",
@@ -380,7 +394,10 @@
      "f379_381/burford/f381v/plaintext-by-line.txt"
     ],
     "translation": "f379_381/burford/ff379-381-english.md",
-    "summary": "A six-page despatch wholly in cipher, addressed to the King and probably from Matignon: a military report on the Guyenne campaign, the river trade on the Garonne between Toulouse and Bordeaux from which the Huguenots draw dues, Caumont and the Mas de Verdun, Castillon, the Isle and the Dordogne, the King of Navarre, 'your sister' at Agen, the artillery from Navarrenx, Marmande and fifteen to sixteen thousand crowns. Read by Brett Burford (v0.5, 19 Oct 2026); his files are copied with his licence."
+    "summary": "A six-page despatch wholly in cipher, addressed to the King and probably from Matignon: a military report on the Guyenne campaign, the river trade on the Garonne between Toulouse and Bordeaux from which the Huguenots draw dues, Caumont and the Mas de Verdun, Castillon, the Isle and the Dordogne, the King of Navarre, 'your sister' at Agen, the artillery from Navarrenx, Marmande and fifteen to sixteen thousand crowns. Read by Brett Burford (v0.5, 19 Oct 2026); his files are copied with his licence.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "A word-divided but unpunctuated machine decode (~1,139 words, 87 bracketed non-words; the file estimates one sign in twenty wrong): stretches build (the Garonne places, the artillery of Navarre), but nearly every sentence has a garbled word, and there is no translation (reading audit, 22 Oct 2026); fix: repair the sentences on the images (views 740-745), punctuate, and translate."
    }
   ],
   "key_file": [

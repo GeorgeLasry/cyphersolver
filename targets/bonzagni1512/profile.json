@@ -81,15 +81,16 @@
   {"kind": "access", "what": "Fetched the 11 DECODE images with the shared cookie.", "result": "worked"},
   {"kind": "literature search", "what": "Viewed every page: R1123 and R1124 carry contemporary interlinear decipherments over all cipher words; R1125 image 5 is a separate decipherment slip.", "result": "worked"},
   {"kind": "verification", "what": "Aligned the slip ('Mando per Ladislao lator presto sei cavalli ...') with the first four lines of R1125's p. 3 cipher: word lengths agree and letters repeat consistently (sei, si, la, lator, poi, bacino, nove).", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries with summaries for R1123, R1124 and R1125; no transcription and no decryption in the repository (the interlinear decipherments and the R1125 slip are on the DECODE images only; project work).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries with summaries for R1123, R1124 and R1125; no transcription and no decryption in the repository (the interlinear decipherments and the R1125 slip are on the DECODE images only; project work).", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R1123, R1124 or R1125 is in the repository (decode/*.htm are record pages; the decipherments are on the images only). All three relabelled decoded, not read; class already solved -> not read; method read from existing decipherment -> not solved, until the contemporary decipherments are transcribed.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "R1123 and R1124 carry contemporary interlinear decipherments over every cipher word, and R1125's cipher block has a decipherment slip filed with it (DECODE image 5), which was aligned with the first four cipher lines to confirm it belongs.",
+  "method": "not solved",
+  "method_basis": "Read at the time (interlinear decipherments over R1123 and R1124, a decipherment slip for R1125), but none of it is transcribed in the repository, so no reading is claimed (reading audit, 22 Oct 2026). Once the contemporary decipherments are transcribed the method is read from existing decipherment.",
   "contribution": ["none"],
-  "class": "already solved",
+  "class": "not read",
   "verification": ["contemporary decipherment"],
-  "notes": "Read at the time. Added here only the check that the R1125 slip is the decipherment of its cipher block. Catalogue entry 155 removed; no write-up.",
+  "notes": "Read at the time. Added here only the check that the R1125 slip is the decipherment of its cipher block. Catalogue entry 155 removed; no write-up. 22 Oct 2026, reading audit: none of the three decipherments is transcribed here; all three entries decoded, not read; class already solved -> not read, method -> not solved until they are transcribed.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherments on R1123, R1124 and the decipherment slip filed with R1125"}
   ],
@@ -98,19 +99,32 @@
     "doc": "R1123",
     "label": "Eger, 2 Aug 1512",
     "summary": "Giovanni Battista Bonzagni, Ippolito I d'Este's agent at Eger, writes to the cardinal; the political news (Bakócz, the Tatar khan, Poland, the Diet) is in clear, and the c. 14 cipher lines on p. 1 cover private and household business, the estate of a dead man's goods and jewels.",
-    "note": "Deciphered at the time: a contemporary interlinear decipherment stands over every cipher word, on the DECODE images only. Neither the ciphertext nor the interlinear decipherment has been transcribed (project work)."
+    "note": "No transcription or decipherment text in the repository: the contemporary interlinear decipherment over every word is on the DECODE images (main checkout targets/bonzagni1512/img/IMG_R1123_I5692_P1.png); not counted as a reading (reading audit, 22 Oct 2026); fix: transcribe it.",
+    "state": "decoded, not read",
+    "language": "it"
    },
    {
     "doc": "R1124",
     "label": "Eger, 4 Aug 1512",
     "summary": "Bonzagni to Ippolito I d'Este: eight cipher lines on Beatrice's jewels (cups, bowls, salts).",
-    "note": "Contemporary interlinear decipherment throughout, on the DECODE images only; neither it nor the ciphertext has been transcribed (project work)."
+    "note": "No transcription or decipherment text in the repository: the contemporary interlinear decipherment is on the DECODE images (main checkout targets/bonzagni1512/img/IMG_R1124_I5696_P1.png); not counted as a reading (reading audit, 22 Oct 2026); fix: transcribe it.",
+    "state": "decoded, not read",
+    "language": "it"
    },
    {
     "doc": "R1125",
     "label": "Eger, 28 Dec 1514",
     "summary": "Bonzagni to Ippolito I d'Este: the 13-line cipher block on p. 3 says he is sending six horses by Ladislao with a list, a silver basin and a bronzina, and cannot send money; the clear p. 4 continues the same business.",
-    "note": "The decipherment is a separate slip in a later hand (DECODE image 5), aligned with the first four cipher lines here; only its opening is quoted in NOTES.md. Neither the slip nor the ciphertext has been transcribed (project work)."
+    "note": "No transcription or decipherment text in the repository: the contemporary decipherment slip (image 5; its first lines are quoted in NOTES) is on the DECODE images (main checkout targets/bonzagni1512/img/IMG_R1125_I5702_P5.png and the cipher on _P3); not counted as a reading (reading audit, 22 Oct 2026); fix: transcribe it.",
+    "state": "decoded, not read",
+    "language": "it"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "R1123, R1124, R1125: the contemporary decipherments, not transcribed",
+    "blocker": "not-attempted",
+    "detail": "images fetched to the main checkout targets/bonzagni1512/img/ (git-ignored); transcribe the interlinear glosses (R1123 p. 1-2, R1124 p. 1) and the R1125 slip, and check them against the cipher"
    }
   ]
  }

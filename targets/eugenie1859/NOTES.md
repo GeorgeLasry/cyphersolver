@@ -1,6 +1,10 @@
 # Napoleon III / Empress Eugénie (both directions) → Empress Eugénie / Napoleon III (both directions), June 1859, BnF NAF 11355 — Emperor–Empress code
 
-Status: no write-up of our own (result by George Lasry, presented on docs/eugenie1859.html)
+Status: in progress. Lasry's reading; only four pages of tokens and three excerpts are in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): the token table of ff. 9r, 15r, 17r, 18r, taken in order, builds French sentences, and the three report excerpts (ff. 19r, 35r, 27r) read; both are *excerpts* of Lasry's reading, whose full text is not in the repository. Krajcovic's corrections file is *not prose*. fraction_read 0.841 (Lasry's identified elements) -> about 0.31, what the repository shows.
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up of our own (result by George Lasry, presented on docs/eugenie1859.html)
 
 ## Source
 
@@ -139,3 +143,16 @@ doing wonderfully. I am writing today by post.
 - What we checked: f32r = Solferino telegram "Cavriana 24 juin 1859, Empereur a Imperatrice", clear text + code "941 325 274 1155 / 163 1142 1162"; his key gives 274=connais, 163=ble, 1142=s (fragmentary, no excerpt covers this run); f19r/f35r excerpts not image-checked
 - Verdict: **partly confirmed** (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.
 - Notes: 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r.
+
+## Remaining gaps
+
+- Lasry's full decipherment of the eleven cipher pages, not in the repository - blocker: not-attempted; ask George Lasry for his transcription and decryption files
+
+## Escalation
+
+- [x] siblings: not this project's reading; George Lasry's report covers the volume
+- [n/a] clear-pages: not looked for here; the result is Lasry's
+- [x] known-keys: Lasry's key is the key; his key table is not in the repository
+- [x] print: Lasry's report (BnF cipher research, 10 Oct 2026) is the source
+- [n/a] key-rebuild: not this project's work
+- [ ] retry: ask Lasry for his full transcription and decryption

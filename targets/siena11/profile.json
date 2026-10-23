@@ -149,6 +149,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): George Lasry's decryption and translation in lasry_report.md, the project's own 24 Sept transcription transcripts/no11.txt (his CTTS transcription is not in the repository), his key as counts in key.md.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): lasry_report.md read: both cipher blocks build sentences and translate; the doubts are one holed sign and five words, with outside blockers. Per-document C overturned to B. Claim unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -207,7 +214,7 @@
   ],
   "notes": "Contributed. A Florentine letter in the Sienese file; the project's 24 Sept attempt failed.",
   "texts": [
-   {"doc": "R4800", "label": "No. 11 (R4800), Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (George Lasry)", "transcription": "transcripts/no11.txt", "decryption": "lasry_report.md", "translation": "lasry_report.md", "summary": "Donato Acciaiuoli, Florentine orator in Rome, to Lorenzo de' Medici, seven weeks after the Pazzi conspiracy: the lord of Faenza, like the lord of Forlì, is to stay in his lands and send two squadrons of men-at-arms into the field, and Giovan Francesco Gonzaga will gladly enter Lorenzo's service with at least 80 men-at-arms, asking 7,000 ducats for the troops and 1,000 for himself. Decryption and translation are George Lasry's (report of 17 Oct 2026, quoted whole); the transcription linked is this project's independent one of 24 Sept 2026, on which his key was checked (94.4% agreement), since his own sign-level CTTS transcription is not in the repository."}
+   {"doc": "R4800", "label": "No. 11 (R4800), Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (George Lasry)", "transcription": "transcripts/no11.txt", "decryption": "lasry_report.md", "translation": "lasry_report.md", "summary": "Donato Acciaiuoli, Florentine orator in Rome, to Lorenzo de' Medici, seven weeks after the Pazzi conspiracy: the lord of Faenza, like the lord of Forlì, is to stay in his lands and send two squadrons of men-at-arms into the field, and Giovan Francesco Gonzaga will gladly enter Lorenzo's service with at least 80 men-at-arms, asking 7,000 ducats for the troops and 1,000 for himself. Decryption and translation are George Lasry's (report of 17 Oct 2026, quoted whole); the transcription linked is this project's independent one of 24 Sept 2026, on which his key was checked (94.4% agreement), since his own sign-level CTTS transcription is not in the repository.", "language": "it", "state": "read", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C. Both blocks of Lasry's decryption build Italian sentences with an English translation; the \"?\" fall in one sentence of block A, around one sign lost in a hole in the paper (illegible), and in five single words of a 393-sign text (too short to settle), both outside blockers."}}
   ],
   "key_file": "key.md"
  }

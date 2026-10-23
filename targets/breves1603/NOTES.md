@@ -1,5 +1,7 @@
 # Henri IV → Savary de Brèves, 1603 (BnF fr. 3541) — catalogue item 23
 
+**22 Oct 2026, reading audit** (George Lasry's test): the three letters printed in full by Berger (ff. 60, 63, 66) read. The entry for the nine further letters is *decoded, not read*: berger/table_pp667-682.txt holds Berger's summaries, not the letters; their full clear text is in fr. 4029 (not digitised).
+
 **Result, 18 Sept 2026:** the "undeciphered" letters were decoded long ago in a contemporary clear copy, and the
 original key survives. Three of the twelve ciphered letters are in print in full. The other nine are in print as
 summaries. What stays open is the cipher text itself: fr. 3541 is not digitised, so the ciphertext of the nine
@@ -138,3 +140,16 @@ Folios in brackets are not given by the notice. It gives folios only where a new
   que la mort du grand … estranglé … du prince …", the Porte events of late 1603). Canvas 197 = f. 185v–186.
   Canvas 200 = f. 189 and canvas 240 = f. 220 are anchors for locating ff. 194 and 196. This is the material for
   settling the sign names in `key.md` before any fr. 3541 images arrive. Not yet transcribed.
+
+## Remaining gaps
+
+- the nine further letters of 1603 (fr. 3541 ff. 69-104): only Berger's summaries in the repository - blocker: needs-physical-access; full clear text in BnF fr. 4029 ff. 118-128, ciphertext in fr. 3541; neither is digitised
+
+## Escalation
+
+- [x] siblings: the twelve 1603 letters listed (fr. 3541); Tomokiyo's partial reading of f. 60 used as a check
+- [x] clear-pages: second clear copy found in BnF fr. 4029 (not digitised)
+- [x] known-keys: office key located in BnF fr. 3462 f. 103
+- [x] print: Berger de Xivrey, Lettres missives VI (3 letters in full, 9 in summary)
+- [n/a] key-rebuild: key survives
+- [ ] retry: blocked until fr. 3541 or fr. 4029 can be seen

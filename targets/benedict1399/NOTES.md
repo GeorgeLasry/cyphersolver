@@ -12,6 +12,8 @@ all fourteen items; the gaps and escalation are Benedict's letters only.
 
 Status: found already read (Puig y Puig 1920); key rebuilt here from the p. 475 facsimile (second session, 23 Sept
 2026; `key.md`). Written up as `docs/benedict1399.html`.
+**22 Oct 2026, reading audit** (George Lasry's test): the repository holds only the p. 475 plate check (src/plate475_check.tsv), which builds Latin clauses; the text of the ten letters is Puig's print (Google Books, blocked to scripts), not copied here. The entry stays read for the plate only, with an excerpt note; fraction_read (91.4%) is the plate's sign-confirmed share, not a share of the ten letters.
+
 
 **Result, 23 Sept 2026:** the "best shot" at an unread cipher from c. 1400 was read a century ago. Meister (1906,
 pp. 22–23, second-hand from Ehrle) reported in the Barcelona cathedral archive a letter of Benedict XIII with some
@@ -142,6 +144,7 @@ word each.
   sign - blocker: too-short (four instances on one page).
 - The key applies to the other nine letters of Benedict of 1399–1403 (it was built by Puig from Climent's lines on
   three of them), but their ciphertext is not imaged anywhere - blocker: needs-physical-access.
+- Puig's printed text of the ten letters, not in the repository - blocker: needs-physical-access; Google Books blocks automated access and HathiTrust 100676638 is behind a Cloudflare challenge
 
 ## Escalation
 

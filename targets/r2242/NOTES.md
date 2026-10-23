@@ -2,6 +2,8 @@
 
 Status: read (3 Oct 2026: 994/1,037 tokens = 95.9% read as sense, strict measure; meets the read bar. The open tokens are
 single word signs with no key material and two ink blots. Key: partial, the square complete, word signs open.)
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): decrypt_p3.txt and decrypt_p4.txt, divided into words, build Dutch sentences; the open tokens are single word signs with no key material and two ink blots. Per-document C overturned to B for both pages; claim unchanged.
+
 
 DECODE R2242 ("KHA_A35_KWI_inr.XVIII-3_Prince_Frederick_to_Heredary_Prince_1795-05-07"), Non-decrypted,
 4 pp., authentication-required images IMG_R2242_I15891–I15894 (photographs of photocopies, sideways; git-ignored

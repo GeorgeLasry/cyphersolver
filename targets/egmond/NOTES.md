@@ -1,6 +1,8 @@
 # Charles of Egmond, BnF français 3015 no. 8
 
 Status: read, with minor uncertainties retained. Already solved by George Lasry in 2023 (key on cryptiana GL.htm §2; he pointed this out on 21 Sept 2026): this reading is an independent re-solution, not a first reading.
+**22 Oct 2026, reading audit:** the ciphered address (three lines, "A mon bon cousin / Monsieur le grant maistre / de France") is *not prose* in profile.json; the letter body reads.
+
 
 Lasry review (25 Sept 2026): not a first break, so left out of the ciphertext-only list sent to Klaus Schmeh (profile outcome.first_break = false).
 

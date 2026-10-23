@@ -114,7 +114,8 @@
    "what": "Grepped the cached Tomokiyo page (targets/vasto1527/prior/spanish2C_now.htm) for R9955/R9956: both deciphered at the time on separate sheets, R9955 printed in Luo 2021 p. 285; R9956 not from Isabella.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries added with summaries only: neither letter's cipher nor its contemporary decipherment (separate sheets, images not viewed) is transcribed, and Luo 2021 (R9955) has no link.", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries added with summaries only: neither letter's cipher nor its contemporary decipherment (separate sheets, images not viewed) is transcribed, and Luo 2021 (R9955) has no link.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R9955 or R9956 is in the repository (decipherment sheets on the DECODE images; R9955 printed by Luo 2021). Both relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -124,7 +125,7 @@
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Nothing new read. DECODE metadata corrected (R9955 direction and date; R9956 sender, recipient). Catalogue entry 200 removed; no write-up.",
+  "notes": "Nothing new read. DECODE metadata corrected (R9955 direction and date; R9956 sender, recipient). Catalogue entry 200 removed; no write-up. 22 Oct 2026, reading audit: neither letter's text is in the repository; both decoded, not read. Class already solved kept: R9955 is in print (Luo 2021) and both were deciphered at the time.",
   "credits": [
     {"who": "contemporary", "role": "prior solution", "note": "both letters deciphered at the time on separate sheets"},
     {"who": "tomokiyo", "role": "identification", "note": "identified R9955 (Charles V to Isabella, 30 Apr 1532) and R9956 (Cobos, 11 Jan 1531) as read at the time", "source": "cryptiana, Spanish ciphers of Charles V"},
@@ -135,13 +136,29 @@
     "doc": "R9955",
     "label": "R9955, Charles V to Isabella, Regensburg 30 Apr 1532 (AGS Estado 496 ff. 195-196)",
     "summary": "Charles V at Regensburg to the Empress Isabella, 30 April 1532 (DECODE has it as Isabella to Charles, 1531), in the general cipher AGS Estado leg. 1.1.1 doc. 112; deciphered at the time on a separate sheet, and printed by Wanruo Luo (2021) p. 285.",
-    "note": "Missing: no transcription and no decryption in the repository. The decipherment is on a separate sheet (images not viewed; project work), and Luo's modern edition (doctoral thesis, Universitat de València 2021, p. 285) has no link found."
+    "note": "No transcription or decipherment in the repository; the full decipherment is printed in Wanruo Luo, El lenguaje cifrado de Isabel de Portugal (thesis, Universitat de Valencia 2021, RODERIC), p. 285, and the contemporary decipherment is on a separate sheet on the DECODE images (reading audit, 22 Oct 2026); fix: copy Luo's text, or transcribe the sheet.",
+    "language": "es",
+    "state": "decoded, not read"
    },
    {
     "doc": "R9956",
     "label": "R9956, Cobos? to Juan Vázquez de Molina?, Brussels 11 Jan 1531 (AGS Estado 496 ff. 205-206)",
     "summary": "A letter from Brussels, 11 January 1531, catalogued by DECODE as Isabella to Charles V; Tomokiyo reads the signature as Francisco de los Cobos ('Covos Comendador Mayor') and the addressee 'muy noble señor sobrino' as probably Juan Vázquez de Molina. Same general cipher, deciphered at the time on a separate sheet.",
-    "note": "Missing: no transcription and no decryption. The contemporary decipherment is on a separate sheet in the images, not viewed or transcribed (project work); not known in print."
+    "note": "No transcription or decipherment in the repository; the contemporary decipherment is on a separate sheet on the DECODE images, not fetched or transcribed, and not known in print (reading audit, 22 Oct 2026); fix: fetch the images with the shared DECODE cookie and transcribe the sheet.",
+    "language": "es",
+    "state": "decoded, not read"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "R9955: Luo's printed decipherment (2021, p. 285) not in the repository",
+    "blocker": "not-attempted",
+    "detail": "the thesis is on RODERIC (Universitat de Valencia); the contemporary decipherment sheet is on the DECODE images"
+   },
+   {
+    "item": "R9956: the contemporary decipherment sheet, not transcribed",
+    "blocker": "not-attempted",
+    "detail": "DECODE images reachable with the shared cookie; not fetched yet"
    }
   ]
  }

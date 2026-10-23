@@ -93,27 +93,34 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): only George Lasry's report excerpt (lasry_entry.md) is in the repository; his full transcription and decryption are not, so they are recorded as missing (needs contributor: George Lasry).",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit, per-document pass (George Lasry's sentence test): lasry_entry.md read; both excerpts have holes in every sentence (C confirmed) and the report says partly deciphered. Relabelled decoded, not read; class already solved -> not read; method -> not solved; fraction_read 0.96 -> 0.",
+      "result": "failed",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "not read",
     "key": "unknown",
-    "method": "key recovered from ciphertext-only",
+    "method": "not solved",
     "parts": [
       {
         "label": "Lasry's reading",
-        "method": "key recovered from ciphertext-only",
-        "extent": "partial",
-        "basis": "George Lasry, BnF cipher research, 10 Oct 2026"
+        "method": "not solved",
+        "extent": "none",
+        "basis": "George Lasry, BnF cipher research, 10 Oct 2026: key recovered ciphertext-only, 523 of 545 elements identified, \"Partly deciphered\"; the repository holds only his excerpts, with holes in every sentence (reading audit, 22 Oct 2026)."
       }
     ],
-    "method_basis": "Method category from our spot-check of Lasry's report (ciphertext-only: Yes).",
+    "method_basis": "George Lasry reports a key recovered from the ciphertext only (81 symbols; 523 of 545 elements identified) and calls the letter \"Partly deciphered\"; only his report excerpts are in the repository and they have holes in every sentence, so no reading is claimed here (reading audit, 22 Oct 2026). With his full decipherment the method would be key recovered from ciphertext-only.",
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.96,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 0.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "Reading audit, 22 Oct 2026: the only document is decoded, not read in the repository (excerpts with holes in every sentence). Lasry's 0.96 (identified elements / elements) is withdrawn as a reading figure.",
     "verification": [
       "independent verification"
     ],
@@ -127,14 +134,24 @@
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Excerpt clear-text words do not exactly match the MS clear words (change come on ma asseure); 96% identified, status Partly deciphered; worth rechecking that excerpt line.",
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Excerpt clear-text words do not exactly match the MS clear words (change come on ma asseure); 96% identified, status Partly deciphered; worth rechecking that excerpt line. 22 Oct 2026, reading audit: the excerpts have holes in every sentence; decoded, not read; class already solved -> not read, method -> not solved; Lasry's key recovery is recorded in method_basis.",
     "first_break": true,
     "texts": [
       {
         "doc": "meryvic1589",
         "label": "George Lasry's reading (report status: 6/6 pages transcribed; Partly deciphered); only the excerpt from his report is in the repository",
         "decryption": "lasry_entry.md",
-        "summary": "Méry de Vic writes after the assassination of Henri III and the accession of Henri IV. The opening cleartext reports the arrival of the news and local allegiances. The cipher reports troops near Limoges and divided loyalties; later cleartext discusses expenses, elections, intercepted dispatches and cannon for rebel forts."
+        "summary": "Méry de Vic writes after the assassination of Henri III and the accession of Henri IV. The opening cleartext reports the arrival of the news and local allegiances. The cipher reports troops near Limoges and divided loyalties; later cleartext discusses expenses, elections, intercepted dispatches and cannon for rebel forts.",
+        "language": "fr",
+        "state": "decoded, not read",
+        "note": "Excerpt only: both excerpts in Lasry's entry have ? holes in each sentence (a leading missing word, \"hommes? de pied?\") and his report says \"Partly deciphered\"; the gist (troops near Limoges, declared loyalties) translates. The full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026)."
+      }
+    ],
+    "gaps": [
+      {
+        "item": "Lasry's full decipherment, not in the repository",
+        "blocker": "not-attempted",
+        "detail": "ask George Lasry for his transcription and decryption files (report: 6/6 pages transcribed, partly deciphered)"
       }
     ]
   }

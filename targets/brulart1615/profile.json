@@ -146,22 +146,29 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Tomokiyo's readings linked by URL (DECODE R2785, R2786; cryptiana louisxiii.htm); no transcription or local decryption exists in the repository (project work).",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R2785 or R2786 is in the repository, and cryptiana louisxiii.htm gives the key and remarks on undeciphered symbols, not the letters. Both relabelled decoded, not read; class already solved -> not read; method read from existing decipherment -> not solved.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "Satoshi Tomokiyo read both letters in 2021 with the key he reconstructed (on DECODE and cryptiana louisxiii.htm), and the 1615 letter carries a contemporary interlinear decipherment; nothing was deciphered here and the key was not re-applied.",
+  "method": "not solved",
+  "method_basis": "Satoshi Tomokiyo reconstructed the Brulart de Leon key (1615-18) and attached it to both DECODE records, but no plaintext of either letter is published or in the repository, so no reading is claimed (reading audit, 22 Oct 2026); with his key applied the method would be read with known key.",
   "contribution": [
    "none"
   ],
-  "class": "already solved",
+  "class": "not read",
   "key": "none",
   "fraction_read": "unknown",
   "grades": "unknown",
   "verification": [
    "none"
   ],
-  "notes": "Tomokiyo leaves some symbols undeciphered (probably nulls or cancelled signs, per his DECODE notes); not re-checked here. Nothing new about the text. Catalogue entry 191 removed 21 Sept 2026.",
+  "notes": "Tomokiyo leaves some symbols undeciphered (probably nulls or cancelled signs, per his DECODE notes); not re-checked here. Nothing new about the text. Catalogue entry 191 removed 21 Sept 2026. 22 Oct 2026, reading audit: no plaintext of either letter exists in the repository or on Tomokiyo's page; both decoded, not read; class already solved -> not read, method -> not solved.",
   "credits": [
    {
     "who": "tomokiyo",
@@ -187,7 +194,9 @@
      "https://cryptiana.web.fc2.com/code/louisxiii.htm"
     ],
     "summary": "Louis XIII, countersigned by Brûlart de Sillery, to Léon Brûlart, his ambassador in Venice: clear French with cipher runs (contemporary decipherments above them mention 'Marini', 'retirer a Gennes', 'domestiques', 'aucun ombrage'); the King is still held in the town by his eldest sister's illness, which fits the court at Poitiers in September 1615. The reading is Satoshi Tomokiyo's, with his key, on DECODE R2785 and cryptiana louisxiii.htm.",
-    "note": "No transcription and no local decryption: the project made no transcription and did not apply Tomokiyo's key (project work); his reading is on DECODE (login) and his site."
+    "note": "Tomokiyo's key is on the record, but no plaintext is in the repository or on his page (key image and remarks only); one page image (main checkout targets/louis1615/decode/IMG_R2785_I17344_P1.jpg) shows contemporary decipherments over most cipher runs; not counted as a reading (reading audit, 22 Oct 2026); fix: fetch the record's pages with the DECODE cookie and read them with his key and the interlinear glosses.",
+    "state": "decoded, not read",
+    "language": "fr"
    },
    {
     "doc": "R2786",
@@ -197,7 +206,16 @@
      "https://cryptiana.web.fc2.com/code/louisxiii.htm"
     ],
     "summary": "Louis XIII (countersigned Brûlart de Sillery) to Léon Brûlart, ambassador in Venice; read by Satoshi Tomokiyo with his reconstructed Brûlart de Léon key (1615-18). Its contents are not described in the repository; only the address leaf was fetched.",
-    "note": "No transcription and no local decryption (project work); Tomokiyo's reading is on DECODE R2786 and cryptiana."
+    "note": "Tomokiyo's key is on the record, but no plaintext is in the repository or on his page (key image and remarks only); only the address leaf was fetched; not counted as a reading (reading audit, 22 Oct 2026); fix: fetch the record's pages with the DECODE cookie and read them with his key.",
+    "state": "decoded, not read",
+    "language": "fr"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "R2785 and R2786: no plaintext in the repository",
+    "blocker": "not-attempted",
+    "detail": "DECODE pages (3 each) reachable with the shared cookie; R2785 has contemporary interlinear decipherments; Tomokiyo's key table is on both records (DOC_2785/2786 png)"
    }
   ]
  }

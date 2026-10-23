@@ -411,6 +411,13 @@
    ],
    "what": "baluze156/solve.py: homophonic anneal of the 15 runs scored inside their clear context (fr-1600-letters, order 5, letters only), 6 restarts free and 6 with the ten crib values fixed: best keys collapse to 'iiii' / 'eneeses' strings, no run reads. 136 signs over 28 letter types (4.9 per type) is too little for a ciphertext-only homophonic solve.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): Baluze 156 f. 157r (two crib values, \"not a reading\" by its own heading) relabelled decoded, not read; the f. 218r margin (two words) relabelled not prose. Claim unchanged: f. 157r was already counted unread and its gap is blocked (too-short).",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -537,7 +544,8 @@
     "transcription": "lasry2022/ctts/transcription/all.txt",
     "decryption": "lasry2022/ctts/decryption/all.txt",
     "translation": "lasry2022/CONTRIBUTION.md",
-    "summary": "The King keeps the Prince of Monaco in play without a treaty (1631); a sergeant-major offers Sabran the castles of Savona, a Savoyard plot that is discovered (1633); Genoa helps the Spanish fleet while France fights for Valenza (1635)."
+    "summary": "The King keeps the Prince of Monaco in play without a treaty (1631); a sergeant-major offers Sabran the castles of Savona, a Savoyard plot that is discovered (1633); Genoa helps the Spanish fleet while France fights for Valenza (1635).",
+    "language": "fr"
    },
    {
     "doc": [
@@ -546,7 +554,10 @@
     "label": "Baluze 156 f. 157r, copy of 9 Feb 1636 (unread)",
     "transcription": "baluze156/f157r.txt",
     "summary": "Duke Doria, at the Lerins islands, gathers the Spanish galleys for a design on Marseille; a Gascon who knows the plan is sent to the marechal de Vitry. The cipher runs (names and the means) are in a key not yet recovered.",
-    "decryption": "baluze156/f157r_partial.txt"
+    "decryption": "baluze156/f157r_partial.txt",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "A partial decryption with two crib values only; the file says \"Not a reading\": most lines are \"?\" strings inside brackets and only the opening clause translates (reading audit, 22 Oct 2026); blocked: another key, 136 signs, too short to break alone."
    },
    {
     "doc": [
@@ -555,7 +566,10 @@
     "label": "fr. 4135 f. 218r, marginal cipher (17 signs)",
     "transcription": "baluze156/fr4135_f218r_margin.txt",
     "decryption": "baluze156/fr4135_f218r_margin.txt",
-    "summary": "Two marginal cipher lines: '[c]a d'avoir / [s]antimant', the words of the clear text at the '+' mark."
+    "summary": "Two marginal cipher lines: '[c]a d'avoir / [s]antimant', the words of the clear text at the '+' mark.",
+    "language": "fr",
+    "state": "not prose",
+    "note": "A 17-sign marginal run of two words (\"[c]a d'avoir / [s]antimant\"), the words of the clear text at the \"+\" mark (reading audit, 22 Oct 2026)."
    }
   ],
   "key_file": "lasry2022/ctts/key.txt"

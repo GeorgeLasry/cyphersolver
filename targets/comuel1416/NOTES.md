@@ -1,6 +1,8 @@
 # Pedro Comuel to Francesc Climent, 27 Jun 1416 (Puig y Puig 1920, app. CXXXV)
 
 Status: found already read (Puig y Puig 1920); the cipher itself is not imaged and its key is not known.
+**22 Oct 2026, reading audit:** nothing of the letter is in the repository (the Google Books link returns 403 to scripts), so the entry is *decoded, not read* in profile.json; class already solved is kept because the text is in print (Puig 1920).
+
 
 Split on 14 Oct 2026 from `benedict1399` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter was
 filed with Benedict XIII's own cipher letters to Climent because Puig printed them together. Benedict's key was rebuilt
@@ -32,6 +34,7 @@ Puig's note 2 to this letter cites another letter of Comuel, doc. 661, which he 
 
 ## Remaining gaps
 - The ciphertext itself (no image, not transcribed) - blocker: needs-physical-access; the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original
+- Puig's printed text (pp. 578-579), not in the repository - blocker: needs-physical-access; Google Books blocks automated access, HathiTrust 100676638 is behind Cloudflare
 
 ## Escalation
 - [x] siblings: Puig's appendix index (pp. 623-627) and a full-text search for cifra/cifrada/cifrado/clave read; every cipher item listed in benedict1399 NOTES section 3

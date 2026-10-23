@@ -1,5 +1,7 @@
 # Japanese Army numeric kana cipher, 1902–04 (JACAR, NIDS holdings)
 
+**22 Oct 2026, reading audit** (George Lasry's test): C09122911500 and C09123116600 read as sentences. C09122909900 is a twelve-kana noun phrase ("observation of the naval exercise"), *not prose*; C03020059400 is a twelve-kana phrase with two signs off the table whose sense (an anchorage command) is a guess: *decoded, not read*. Claim read -> read in part, 49 of 73 pairs in telegrams that read.
+
 Contributed by Harumi-Matsuba (GitHub issue #58, 20 Oct 2026; repository
 https://github.com/Harumi-Matsuba/kagigo1901-public, code MIT, documents and data CC BY 4.0). Checked here 21 Oct 2026.
 Page: `docs/army1902.html`. Outside the LLM paper's scope (Japanese, not a European classical cipher); contributed.

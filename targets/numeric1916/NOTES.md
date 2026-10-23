@@ -1,5 +1,9 @@
 # Numeric telegraph codes of June–July 1916: 共密, 容密, 辰密 (Huang Xing and the Shanghai group)
 
+Status: in progress. 辰密 reads; 共密 and 容密 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the decode files are verbatim decoder output. 辰密 reads; 共密 (N32, N33, N35) and 容密 (N19b, N21, V4D) carry clusters of mis-decoded characters (圄會 for 國會, 代噸 for 代表) that break whole clauses, and no translation is in the folder (Dudout's Wenmi pages have them). Both are *decoded, not read*; class read in part kept; fraction_read 0.9238 -> 0.11 (辰密's 232 of 2,100 groups).
+
 Contributed result. Brice Dudout (contributors.json `dudout`), working with Claude (mainly Opus 5.5; early trials with
 Codex), recovered three keys for numeric telegrams intercepted in Japan in June and early July 1916, and sent them in
 an email of 19 Oct 2026. On 15 Oct 2026 he agreed to cross-posting with attribution and to inclusion in the paper
@@ -114,6 +118,7 @@ the group of Yin Ruli, Huang Fu and Ge Jing'en (signing 李/驪, 郛, 恩), rela
 - 辰密: 7 doubtful characters (four single-digit probable readings, 一不 for 不一, 盻 for 盼) - blocker: illegible; single-digit uncertainties on the forms
 - V4B (容密, 265 groups): only 4 of its 22 sheets re-read blind; framing repairs in V4B, V4D, V4E still to be checked on the scans - blocker: needs-physical-access; contributor's re-reading of the JACAR scans, not done here
 - N07 (prefix 共密, does not decode under the 共密 key; only the first sheet transcribed), N06 (和密), N09 (乾密), N01 and N03 (no prefix) - blocker: no-key-material; other keys or the other direction's book, no plaintext, only first sheets transcribed by the contributor
+- 共密 and 容密 telegrams: decoded, not read - blocker: not-attempted; copy Dudout's edited texts and translations from bdudout.github.io/wenmi into texts/, repair the garbled groups against groups.tsv and the JACAR scans
 
 ## Escalation
 - [x] siblings: his 32-telegram set covers every form in B03050089200-89500 and the vol. 4 items; the unread five are listed above

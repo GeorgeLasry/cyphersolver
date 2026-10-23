@@ -200,6 +200,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): READING.md (readings by DECODE record) and key.tsv; no glyph-level transcription of ff. 70r-72v exists, so the transcriptions point to the DECODE records' images",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): READING.md for 20 March read. R8485 and R8486 build sentences; R8487 holds three short runs with holes. Per-document C overturned to B (the holes are on the short last page); claim unchanged (read in part).",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; the reading is word-level only"}, 
@@ -264,14 +271,16 @@
      "https://de-crypt.org/decrypt-web/RecordsView/8483"
     ],
     "decryption": "READING.md",
-    "summary": "Henry Brooke, Lord Cobham, one of Elizabeth's peace commissioners at Ostend in spring 1588, asks that ships be sent to attend on the coast, warns that the garrison is too weak and short of money and victuals, and reports Parma's new ditch from Ghent by Eeclo to Sluys, nearly navigable for his float-boats, and the threat to the town and haven. No sign-level transcription exists: the cipher runs were read word by word from crops of the DECODE images."
+    "summary": "Henry Brooke, Lord Cobham, one of Elizabeth's peace commissioners at Ostend in spring 1588, asks that ships be sent to attend on the coast, warns that the garrison is too weak and short of money and victuals, and reports Parma's new ditch from Ghent by Eeclo to Sluys, nearly navigable for his float-boats, and the threat to the town and haven. No sign-level transcription exists: the cipher runs were read word by word from crops of the DECODE images.",
+    "language": "en"
    },
    {
     "doc": "middelburg",
     "label": "R8484, intelligence from Middelburg enclosed (f. 71r)",
     "transcription": "https://de-crypt.org/decrypt-web/RecordsView/8484",
     "decryption": "READING.md",
-    "summary": "An enclosed intelligence report in another hand: Grenier's intrigue in clear, then in cipher advice that the ships be well guarded with two or three pinnaces in the channel, and news that a Jesuit (surname read Bastune?) has been sent post into Italy. No sign-level transcription exists."
+    "summary": "An enclosed intelligence report in another hand: Grenier's intrigue in clear, then in cipher advice that the ships be well guarded with two or three pinnaces in the channel, and news that a Jesuit (surname read Bastune?) has been sent post into Italy. No sign-level transcription exists.",
+    "language": "en"
    },
    {
     "doc": "20mar",
@@ -282,7 +291,15 @@
      "https://de-crypt.org/decrypt-web/RecordsView/8487"
     ],
     "decryption": "READING.md",
-    "summary": "Cobham reports new companies at Oudenburg and stone and fagots coming by water from Eeclo, suspects an attempt on Ostend and asks to be removed to a safer place; he would think himself unhappy to be a means to conclude an irreligious peace, and argues against handing the prisoners Pigot and Barney over to the States. No sign-level transcription exists."
+    "summary": "Cobham reports new companies at Oudenburg and stone and fagots coming by water from Eeclo, suspects an attempt on Ostend and asks to be removed to a safer place; he would think himself unhappy to be a means to conclude an irreligious peace, and argues against handing the prisoners Pigot and Barney over to the States. No sign-level transcription exists.",
+    "language": "en",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. R8485 and R8486, the two full pages of the letter, read as English sentences with a few ellipses; R8487 is the end of the letter with three short cipher runs and holes (\"hath assured means to a special service, ... being ... as I wrote unto you\"), a small share of the document; its holes are listed as gaps."
+    }
    }
   ],
   "key_file": "key.tsv"

@@ -1,5 +1,9 @@
 # Matignon's Cipher-3, 1586: BnF fr. 15572 f. 276, fr. 15571 f. 179 and fr. 15573 ff. 379-381 — NOTES
 
+Status: in progress. f. 276 and f. 179 read; fr. 15573 ff. 379-381 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): f. 276 and f. 179 read from SOLUTION.md. fr. 15573 ff. 379-381 (Burford v0.5) is an unpunctuated machine decode with a garbled word in nearly every sentence and no translation: *decoded, not read*. fraction_read 0.9118 -> 0.305 (signs in the two slips that read).
+
 Split on 14 Oct 2026 from `matignon1586` under the one-key rule (George Lasry, 14 Oct 2026). That entry (catalogue
 item 12) joined these two leaves in **Matignon's Cipher-3** with the Mayenne–Forget despatches in **Cipher-1**, a
 different cipher with its own entry: [`targets/matignon1586/`](../matignon1586/NOTES.md) (in progress, no page yet).
@@ -84,6 +88,7 @@ two-stroke # = i, the C with ε inside = q.
 - f. 179 L13, the omega-with-overbar code sign (a person, Navarre?) - blocker: open-codes; one occurrence, Tomokiyo's 680-px magenta does not settle it
 - blots: f. 276 L04 after "de lui", f. 179 L18 after "en" - blocker: illegible; ink blots, checked on the Gallica natives
 - f. 276 L22 closing and f. 179 L20 "de la D[…]use", a struck sign and a few short spans - blocker: illegible; faint or struck signs at the edge of the slip; the other unread signs are words the period lexicon holds fewer than 20 times (prieure, escriuent)
+- fr. 15573 ff. 379-381: decoded, not read - blocker: not-attempted; repair the sentences on the Gallica images (btv1b90618780 views 740-745), punctuate and translate
 
 ## Escalation
 

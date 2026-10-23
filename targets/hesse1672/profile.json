@@ -201,6 +201,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct.txt (letter-cipher passages) and codes.txt (code numbers with glosses), reading.txt; key = letter table of HCPortal key 255 in decrypt.py plus the code list codes.txt.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): reading.txt gives the cipher items in their clauses; each builds except the five-sign word of passage 1. Per-document C (no connected letter) overturned to B: the missing context is clear text, not cipher. fraction_read 1.0 -> 0.922 (read as sense, as fraction_coherent already said); excerpt note added.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -213,10 +220,10 @@
    "key extended or corrected",
    "catalogue correction"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.922,
   "fraction_coherent": 0.922,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.txt over ct.txt (38 letter-cipher signs) and codes.txt (26 code numbers): 64 tokens, all given a value, 59 read as sense",
+  "fraction_read_source": "reading.txt over ct.txt (38 letter-cipher signs) and codes.txt (26 code numbers): 59 of the 64 cipher tokens read as sense (0.922); the earlier 1.0 (all 64 given a value) is withdrawn as a reading figure (reading audit, 22 Oct 2026).",
   "codes_open": {
    "open": 0,
    "total": 20,
@@ -235,7 +242,7 @@
     "detail": "The 1672 letter table differs from key 255 in at least one cell (55 = g here, h in 1666), and the glosser, with the 1672 key, got the same letters ('erta?in'); whether the table differs in these cells or the encipherer slipped cannot be settled without the 1672 key or another copy, neither online. Glyph, free-cell and corpus searches found no word."
    }
   ],
-  "notes": "59 of 64 cipher tokens read as sense (92.2%), unchanged after escalation. Letter table from HCPortal key 255 (one cell differs in 1672); the nomenclature is a different, lost word list whose values come from the glosses. 625 gloss only partly legible. Writer not identified.",
+  "notes": "59 of 64 cipher tokens read as sense (92.2%), unchanged after escalation. Letter table from HCPortal key 255 (one cell differs in 1672); the nomenclature is a different, lost word list whose values come from the glosses. 625 gloss only partly legible. Writer not identified. 22 Oct 2026, reading audit: the cipher parts read (C overturned to B); fraction_read 1.0 (values given) -> 0.922 (read as sense).",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Hessian chancery letter table, Secretary Lincker 1666/1676 (HStAM 4 d Nr. 1234, HCPortal key 255); code values from the contemporary glosses on the leaf"}
   ],
@@ -248,7 +255,16 @@
      "codes.txt"
     ],
     "decryption": "reading.txt",
-    "summary": "A despatch from Hamburg to the Hessian chancellor at Kassel on the writer's reception at the Danish court, Blumenthal's mission and Brandenburg-Danish ceremonial quarrels, the French-Swedish treaty that passed Denmark by, the plan to draw Brandenburg into the Danish-Brunswick alliance, and the Holstein Landtag's refusal of contributions."
+    "summary": "A despatch from Hamburg to the Hessian chancellor at Kassel on the writer's reception at the Danish court, Blumenthal's mission and Brandenburg-Danish ceremonial quarrels, the French-Swedish treaty that passed Denmark by, the plan to draw Brandenburg into the Danish-Brunswick alliance, and the Holstein Landtag's refusal of contributions.",
+    "language": "de",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. The letter is clear German with 26 code numbers and two short letter-cipher passages; reading.txt gives every cipher item in its clause, and each clause builds (passage 1 \"Totaliter disgustirt und ?? in Holstein, nun sowohl als in Dennemarck Adell, Burger und Bauern ... in plainten combiniret\"; passage 2 \"Gott geb das all wol ablauff\"). What is missing is the clear text between the cipher items, which is not cipher; one five-sign word is open."
+    },
+    "note": "Excerpt only: the cipher items with their clauses; the full letter (clear German) is on the HCPortal images (media 1385-1387, images/f2-f4.jpg, git-ignored), not transcribed (reading audit, 22 Oct 2026)."
    }
   ],
   "key_file": [

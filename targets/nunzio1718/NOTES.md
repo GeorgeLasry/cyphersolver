@@ -1,6 +1,10 @@
 # Segreteria di Stato to the Nuncio in Spain, 1718-19 (ASV Segr. Stato Spagna 364D)
 
-Status: read — found already solved (George Lasry, 2020); key extended here.
+Status: in progress. Lasry's reading of Spagna 364D; R154 and R173 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's decode rows, joined into running text, build Italian sentences in 22 of the 24 despatches (R166, R168 and R170 were re-read and pass). R154 (364D/1) and R173 (364D/20) have runs of unread two-digit groups and open codes in most or half their sentences: *decoded, not read*. Class already solved kept; fraction_read 0.9789 -> 0.889 (groups in documents that read).
+
+Earlier status (before the 22 Oct 2026 reading audit): read — found already solved (George Lasry, 2020); key extended here.
 
 ## The target
 
@@ -144,3 +148,16 @@ for the Levante, the Emperor, the Turk and the Trattato di Pace.
 - `lasry/364D-*.txt` — the 24 items cut out of the corpus dump
 - `corpus.py`, `ctx.py`, `measure.py` — parser, context viewer, coverage measurement
 - `key_extra.txt` — groups recovered here, beyond Lasry's filed key
+
+## Remaining gaps
+
+- R154 and R173: decoded, not read - blocker: not-attempted; re-read the two-digit groups on the DECODE images (cookie at targets/bordeaux/decode/cookie.txt) and fill the codes from key_extra.txt, then write a running text
+
+## Escalation
+
+- [x] siblings: all 24 despatches of 364D and the 364C corpus used for the codes
+- [x] clear-pages: the DECODE transcribers copied the interlinear decipherment into the PLAINTEXT lines
+- [x] known-keys: Lasry's reconstructed key (DECODE) is the key
+- [ ] print: no search for a printed text is recorded in these notes
+- [x] key-rebuild: nomenclator extended here (key_extra.txt)
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

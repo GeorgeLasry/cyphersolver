@@ -1,5 +1,7 @@
 # Hamburg letter to the Hessian chancellor, 4/14 May 1672 (HStAM 4 f Dänemark Nr. 125, ff. 2-4; HCPortal 494)
 
+**22 Oct 2026, reading audit** (George Lasry's test): reading.txt gives the cipher items in their clauses and each builds except the five-sign word of passage 1; the per-document C (no connected letter) is overturned to B, since the missing context is clear text. Excerpt note added: the full letter is on the HCPortal images, not transcribed. fraction_read 1.0 (values given) -> 0.922 (read as sense).
+
 Catalogue item 341. Opened and worked 9 Oct 2026 (one session, claude-opus-5-5). Outcome: read in part (92.2% of
 cipher tokens as sense, measured); one five-sign word open, blocked by the missing 1672 letter table.
 

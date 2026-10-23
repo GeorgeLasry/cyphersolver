@@ -1,5 +1,9 @@
 # Cornelis Haga (Constantinople) to the States General, 1620 — DECODE R2113, R2115 (+ R2114), key R2118
 
+Status: in progress. R2113 read; R2115 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): R2113_reading.md builds Dutch sentences. R2115_reading.md calls itself partial: P2 and P4 are strings of [...], {?...} and bare codes, so R2115 is *decoded, not read*. Class read -> read in part; fraction_read about 0.48 (by words of the two reading files, estimated).
+
 Catalogue entry 229. Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. nr. 6894.
 
 ## Records
@@ -72,3 +76,16 @@ Open:
 
 R2114 (11 May 1620, 6 pp.) is marked Decrypted on DECODE and was not re-read here.
 
+## Remaining gaps
+
+- R2115: decoded, not read - blocker: not-attempted; transcribe P2 and P4 in full from the DECODE images and re-read the cipher spans with the R2118 key (m = 4); codes from R2113 and the decrypted R2114
+- nomenclator codes [3], [7], [15], [19], [43], [46], [58], [62] - blocker: open-codes; the key's code column 37-45 is cut by the photograph's edge; most occur once or twice
+
+## Escalation
+
+- [x] siblings: R2113, R2115 and R2114 (decrypted) are the same series and key
+- [ ] clear-pages: R2114's decryption not yet used for the codes
+- [x] known-keys: R2118 is the key
+- [ ] print: Haga's despatches in print (Heeringa) not searched
+- [x] key-rebuild: m = 4 added from context
+- [ ] retry: R2115 P2 and P4 not re-read

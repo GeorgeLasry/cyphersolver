@@ -1,6 +1,10 @@
 # Lee, Ghinucci and Poyntz to Wolsey, Valladolid, July 1527 (BL Cotton MS Vespasian C IV ff. 174-177 and 182-185; DECODE R8565, R8567)
 
 
+Status: in progress. R8567 read at the time; R8565's decipherment not yet transcribed (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R8567's three runs (plaintext.txt) read. Nothing of R8565's decipherment is in the repository, only the calendar paraphrases below, so R8565 is *decoded, not read*, with an excerpt note: the full decipherment is Tuke's, on the DECODE images and in L&P IV 3271 (British History Online). Class already solved kept; fraction_read 1 -> about 0.38 (by runs, estimated).
+
 Catalogue no. 110 (DECODE refill, rule-scored class B). Worked 21 Sept 2026.
 
 Outcome: **read at the time; closed.** Nothing new to read.
@@ -70,3 +74,16 @@ marry the Princess Mary, and the offer of the daughter of Portugal for Richmond 
 
 Cipher: the Lee-Worcester sign cipher, S. Tomokiyo's reconstruction (document on R8566). DECODE corrections queued
 under poyntz1527 in decode_updates/queue.json (R8565 and R8567). Removed from the catalogue 21 Sept 2026.
+
+## Remaining gaps
+
+- R8565: Tuke's decipherment not transcribed - blocker: not-attempted; transcribe the five interlinear bands from the DECODE images (cookie at targets/bordeaux/decode/cookie.txt) and check them against L&P IV 3271 and Tomokiyo's key
+
+## Escalation
+
+- [x] siblings: R8566 and R8567, the same despatch series, checked
+- [x] clear-pages: the interlinear decipherment is the reading
+- [x] known-keys: Tomokiyo's Lee-Worcester key, spot-checked
+- [x] print: L&P IV 3271 and 3272
+- [n/a] key-rebuild: read at the time
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

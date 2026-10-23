@@ -138,6 +138,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): first-pass transcriptions transcription_p1-2.md / _p3-4.md and the full-resolution readings reading_p1-2.md / _p3-4.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): reading_p3-4.md re-read: the cipher runs of pp. 3-4, read in order, make continuous Latin sentences (the clear words between them do not belong to them); pp. 1-2 read already. Per-document C overturned to B. Claim unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -192,7 +199,15 @@
      "reading_p1-2.md",
      "reading_p3-4.md"
     ],
-    "summary": "Two reports by the Bishop of Transylvania on the revolt: Ferenc Kendi, 'ter perfidus', is its sole cause, drew Antal Kendi, Menyhért Balassa and other nobles in, and lost the kingdom to the King; the voivodes' soldiers committed atrocities before the three nations; Kendi urged the bishop to give up Alba and live at Gyalu; Babócsa and other castles were lost. Clear Latin with enciphered runs, deciphered at the time between the lines and re-read here from the signs with key R1211."
+    "summary": "Two reports by the Bishop of Transylvania on the revolt: Ferenc Kendi, 'ter perfidus', is its sole cause, drew Antal Kendi, Menyhért Balassa and other nobles in, and lost the kingdom to the King; the voivodes' soldiers committed atrocities before the three nations; Kendi urged the bishop to give up Alba and live at Gyalu; Babócsa and other castles were lost. Clear Latin with enciphered runs, deciphered at the time between the lines and re-read here from the signs with key R1211.",
+    "language": "la",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. On pp. 3-4 the bracketed cipher runs, taken in order, are themselves a continuous Latin text: \"horum omnium motuum et perniciosarum factionum unicus author et certissimus est Franciscus Kendi ... desperatus de defensione sacre maiestatis vestre posteaquam intellexerunt arces Babolchia et alias amissas esse ... et me sub quodam praetextu alliciebat blandiciis suis in isto Episcopatu debere permanere sed quod Albam cederem ... Hec sunt verba Francisci Kendi ad me in Vasarhel sub comiciis\"; the clear words between them are separate scraps. Holes: one run [...] and nine unkeyed codes."
+    }
    }
   ]
  }

@@ -1,6 +1,10 @@
 # BnF italien 1583 ff. 68 and 70 — two Sforza cipher letters of 4 May 1446 (DECODE R7898, R7899 P1)
 
-Status: read in part (George Lasry's CTTS key, PR #60, 20 Oct 2026; written up as `docs/it1583.html`). Earlier:
+Status: in progress. f. 68 read; f. 70 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): f. 68 (R7898) builds sentences from line 2 to line 11; its ? runs sit at line openings (per-document C overturned to B). f. 70 has holes in every clause of lines 1-5 and an unread signature: *decoded, not read*. Class read in part kept; fraction_read 0.9432 (assigned) -> 0.514 (tokens in f. 68).
+
+Earlier status (before the 22 Oct 2026 reading audit): read in part (George Lasry's CTTS key, PR #60, 20 Oct 2026; written up as `docs/it1583.html`). Earlier:
 attempted, closed unread (21 Sept 2026).
 
 ## Result (20 Oct 2026): George Lasry's CTTS key, contributed in PR #60
@@ -43,6 +47,7 @@ Statistical validation (`docs/_validate.py`, it-cinquecento order 4): reading -2
 - f. 70 signature block after "mediolani die qvarto mai" (24 tokens: p ? v a r qva c e et e ? s m n ? s t a ? ? m r) - blocker: open-codes; assigned letters do not form the name; Mazzatinti's attribution to Vincenzo Amidani is not confirmed by the cipher
 - provisional values (8)=l, (24)=n, (16)=in (4 occurrences) and doubtful words (f. 68 "?intita"; f. 70 "se mono", "do", "vaia", "raconmando", extra "o o") - blocker: open-codes; each rests on one or two occurrences
 - clear-text supplies: f. 68 line 5 end "[aya? ...]"; f. 70 "[fornendo?]", "[ques?]te" (written in clear over damaged or crowded strokes) - blocker: illegible; only a binarized scan of f. 68 and a DECODE photograph of f. 70; a colour BnF scan would decide them
+- f. 70 lines 1-5: decoded, not read - blocker: not-attempted; one to three unread signs in every clause; re-read them on the image with the shared key, and look for the sibling 1446 letters
 
 ## Escalation
 - [n/a] siblings: f. 70 (the next leaf, on R7899 P1) is already deciphered with the same key; the seventeen other 1446 cipher records from ital. 1583 (R7899-R7915, ff. 75-158) were not opened this session: they need the DECODE login and a CTTS sign-level transcription of several thousand signs, a separate target. They are the one route to more occurrences of the open classes.

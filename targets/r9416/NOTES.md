@@ -1,6 +1,8 @@
 # A Bavarian servant to his duke, and a report on the Pressburg talks, c. 1533–34 (BayHStA KAA 4591 ff.262–263, DECODE R9416)
 
 Status: in progress — f.263 is a working decipherment beyond recto lines 11-16; the hand re-keying of the rest (the retry step) is still to do.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the f. 262 gloss reads on page B but not on page A ("..." and [?] in most lines), so f. 262 is *decoded, not read*. The f. 263 entry counts only recto lines 11-16 (excerpt note); fraction_read 0.06 unchanged.
+
 
 Split on 15 Oct 2026 from `targets/kaa4591/` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue entry 161
 grouped fourteen ciphertexts of the Munich key volume KAA 4591 in at least six systems; R9416 is a record of two leaves
@@ -68,6 +70,7 @@ lines 11-16 sign by sign (225 signs, 199 read; 6.0% of f.263 read clean, a lower
 - f.263 clean reading beyond recto lines 11-16 - blocker: open-codes; paused 21 Sept 2026 (workable): v2 re-keyed (Pressburg talks read throughout); one sign serves ch but the annealer gives it s ("auss"=auch) — needs a digraph value set by hand. 30 Sept 2026: recto lines 11-16 read clean by hand (`r9416/reading_p3_11-16.txt`; z split into e and a two-bar s, b into d and l); the rest still to do the same way.
 - f.263 person codes "der d", "der g", "der h" - blocker: open-codes; probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once
 - f.262 gloss lines A09-A11 and the faint words - blocker: illegible; the contemporary gloss is faint and the signs are not transcribed
+- f. 262 page A from its signs - blocker: not-attempted; the f. 262 signs are not transcribed; key them from page B's full gloss (DECODE images, cookie) and read page A where the gloss is faint
 
 ## Escalation
 

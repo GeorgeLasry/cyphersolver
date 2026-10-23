@@ -110,7 +110,8 @@
    "result": "worked",
    "what": "Split under the one-key rule from benedict1399: this letter is from another sender and its key is not shown to be Benedict XIII's (the key was rebuilt on doc. 1068 only), so it gets its own entry with no claim about its key."
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Puig y Puig 1920 app. CXVI on Google Books (URL); no transcription exists (ciphertext not imaged).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Puig y Puig 1920 app. CXVI on Google Books (URL); no transcription exists (ciphertext not imaged).", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the only text is a Google Books link that returns 403 to scripts; nothing of the letter is in the repository. Relabelled decoded, not read; class already solved kept because the decipherment is in print.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -119,6 +120,7 @@
    "catalogue correction"
   ],
   "class": "already solved",
+  "texts_withheld": "The decipherment is in print, Puig y Puig 1920 (Pedro de Luna); Google Books and HathiTrust refuse automated access, so its text is not in the repository and is cited, not shown. Nothing of the project's own is a reading (reading audit, 22 Oct 2026).",
   "key": "none",
   "fraction_read": "unknown",
   "verification": [
@@ -129,9 +131,14 @@
     "item": "The ciphertext itself (no image, not transcribed)",
     "blocker": "needs-physical-access",
     "detail": "The reading is Puig's, complete as printed; the cipher and its key could be checked only on the ACB original."
+   },
+   {
+    "item": "Puig's printed text of the letter (pp. 562-563), not in the repository",
+    "blocker": "needs-physical-access",
+    "detail": "Google Books blocks automated access (403/CAPTCHA); HathiTrust 100676638 is behind a Cloudflare challenge; a copy of the book is needed"
    }
   ],
-  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's.",
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's. 22 Oct 2026, reading audit: no text of the letter is in the repository; decoded, not read. Class kept: the text exists in print (Puig 1920).",
   "credits": [
    {
     "who": "puig",
@@ -147,7 +154,9 @@
     "label": "Comuel to Climent, 21 Dec 1415",
     "decryption": "https://books.google.com/books?id=CuOlkxWnk-EC&pg=PA562",
     "summary": "Pedro Comuel to Francesc Climent, 21 Dec 1415, in Benedict XIII's circle during the Schism: a secret mission to the Queen of Castile. Puig y Puig printed the letter in 1920 (appendix CXVI, printed CXVII, pp. 562-563) with the deciphered passages in italics.",
-    "note": "No transcription: the ciphertext is neither imaged nor printed (needs physical access to the Arxiu Capitular de Barcelona original). The decryption is Puig's 1920 print, linked on Google Books; not yet copied into the folder."
+    "note": "Not in the repository: the reading is Puig y Puig's print (Pedro de Luna, 1920, pp. 562-563), linked on Google Books, which blocks automated access; nothing of the letter is here, so it is not counted as a reading (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "la"
    }
   ]
  }

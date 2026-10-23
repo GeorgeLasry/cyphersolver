@@ -3,6 +3,8 @@
 Status: read in part (22 Oct 2026). George Lasry's key reads all 43 imaged pages (PR 84). The eight leaves Tomokiyo
 lists beside them were checked on the image the same day: seven carry no cipher outside Lasry's images, f. 218r has
 a 17-sign marginal run he missed, and Baluze 156 f. 157 (1636) is in another key, too short to break alone.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Baluze 156 f. 157r (two crib values only) is marked *decoded, not read* and the two-word f. 218r margin *not prose* in profile.json. Claim unchanged.
+
 
 **Outcome: key recovered from ciphertext-only by George Lasry, read in part (contributed, PR 84).** He recovered
 the key with CTTS's built-in cryptanalysis in 2022 on the King's letter of 1631, and in October 2026, with Claude

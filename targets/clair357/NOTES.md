@@ -1,5 +1,9 @@
 # Anonymous figure cipher, 28 October 1586 (BnF Clairambault 357, ff. 167-168)
 
+Status: in progress. f. 168r (the clear copy) reads; the f. 167 interlinear part is decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): the f. 168r clear copy of f. 167r ll. 1-30 builds sentences; the interlinear decipherment after the cross mark (f. 167r) and on f. 167v is transcribed only as fragments, with holes in most sentences: *decoded, not read*. The entry is split in two in profile.json; claim read -> read in part (about half, estimated).
+
 Catalogue item 14. Session 2026-09-18.
 
 ## Result
@@ -150,3 +154,16 @@ The sender's signs at the foot of f. 167v are not identified.
 - Several uncertain words in the f. 168 transcription (ll. 2-3, 6-7, 17-19).
 - The f. 167v glosses, especially the proper names at Cambaronne [?] and Coride [?], and the sender's signs.
 - Identity of Fumé (a vice-admiral of Guyenne of that name, probably of the Fumée family) and of the addressee.
+
+## Remaining gaps
+
+- f. 167r after the cross mark and f. 167v: interlinear decipherment read only in fragments - blocker: not-attempted; read the glosses word by word at full resolution (canvases 331-332) and decode unglossed figures with the table
+
+## Escalation
+
+- [x] siblings: none found in Clair. 357 round ff. 167-168
+- [x] clear-pages: f. 168r clear copy and the f. 167 interlinear found
+- [x] known-keys: Tomokiyo's partial table, checked and extended
+- [x] print: none found
+- [ ] key-rebuild: word-by-word decoding of the cipher done on sample runs only
+- [ ] retry: the verso glosses not yet read word by word

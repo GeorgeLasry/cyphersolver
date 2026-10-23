@@ -130,28 +130,35 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): tr/R483_p1-p6.txt, the clerk's decipherment R483_clerk.txt and the rebuilt-key decode R483_key_read.txt; key R483_key_rebuilt.json",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): R483_clerk.txt read: most lines carry doubts or alternatives and the clear passages are interleaved out of order, so many sentences are only half secure. Per-document C confirmed; relabelled decoded, not read; class read -> not read; method read from existing decipherment -> not solved; fraction_read 0.997 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "The clerk's contemporary interlinear decipherment covers 2,524 of the 2,531 cipher groups; it was transcribed and checked here against a 224-code key rebuilt from it by alignment.",
+  "method": "not solved",
+  "method_basis": "The clerk's contemporary interlinear decipherment covers every ciphered stretch (2,524 of 2,531 groups) and the key was rebuilt from it, but the merged text in R483_clerk.txt interleaves clear and cipher lines out of reading order with doubts and alternatives on most lines, so no reading is claimed (reading audit, 22 Oct 2026); once it is written out as a running Latin text the method is read from existing decipherment.",
   "contribution": [
    "transcription",
    "key recovered",
    "sender or date identified",
    "catalogue correction"
   ],
-  "class": "read",
+  "class": "not read",
   "key": "partial",
-  "fraction_read": 0.997,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/rakoczi1711/tr/R483_p1-p6.txt: 2,524 of 2,531 cipher groups on lines with the clerk's interlinear (the other seven continue words written on the neighbouring line).",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: R483, the only document, is decoded, not read, so no tokens are in a document that reads. The earlier 0.997 (2,524 of 2,531 groups under the clerk's interlinear) is withdrawn as a reading figure.",
   "verification": [
    "contemporary decipherment",
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Split on 14 Oct 2026 from rakoczi1704, which keeps the three French letters in the R639 table. The rebuilt key reproduces 69.9% of the clerk's letters (3,180/4,547); 68 of its 224 codes occur once (grade C). DECODE date 7 June corrected to 27 June 1711.",
+  "notes": "Split on 14 Oct 2026 from rakoczi1704, which keeps the three French letters in the R639 table. The rebuilt key reproduces 69.9% of the clerk's letters (3,180/4,547); 68 of its 224 codes occur once (grade C). DECODE date 7 June corrected to 27 June 1711. 22 Oct 2026, reading audit: R483 decoded, not read (doubts on most lines, text not in reading order); class read -> not read, method -> not solved until it is written out.",
   "credits": [
    {
     "who": "contemporary",
@@ -175,9 +182,19 @@
      "R483_clerk.txt",
      "R483_key_read.txt"
     ],
-    "summary": "Rákóczi's own Latin letter, signed 'Franciscus Princeps', to an envoy bound for Holland: he sends a copy of the 'Pax Caroliana' (Szatmár), which he calls a fraud engineered in Vienna, reports Archduke Charles proclaimed king in the Hungarian counties, and deals with money and the mathematical instruments ordered from Mangold. The text is the clerk's contemporary interlinear decipherment merged with the clear passages (R483_clerk.txt); R483_key_read.txt is the control decode with the key rebuilt here."
+    "summary": "Rákóczi's own Latin letter, signed 'Franciscus Princeps', to an envoy bound for Holland: he sends a copy of the 'Pax Caroliana' (Szatmár), which he calls a fraud engineered in Vienna, reports Archduke Charles proclaimed king in the Hungarian counties, and deals with money and the mathematical instruments ordered from Mangold. The text is the clerk's contemporary interlinear decipherment merged with the clear passages (R483_clerk.txt); R483_key_read.txt is the control decode with the key rebuilt here.",
+    "language": "la",
+    "state": "decoded, not read",
+    "note": "The themes (the \"Pax Caroliana\", the Palatine, the Diet) can be followed, but most lines carry \"?\" doubts or alternatives (latens?/haerens?), a struck stretch and unreadable words, and the clear passages are interleaved line by line rather than in reading order, so many sentences are only half secure (reading audit, 22 Oct 2026); fix: re-read the clear text and the interlinear on the images (DECODE cookie) and write one running Latin text, checked with the rebuilt key, with a translation."
    }
   ],
-  "key_file": "R483_key_rebuilt.json"
+  "key_file": "R483_key_rebuilt.json",
+  "gaps": [
+   {
+    "item": "R483 as a running text: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "write the clerk's decipherment and the clear passages out in reading order from the images (DECODE cookie), settle the doubtful words with the rebuilt key, translate"
+   }
+  ]
  }
 }

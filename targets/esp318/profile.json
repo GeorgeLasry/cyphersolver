@@ -148,16 +148,23 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f116_reading.md (transcription and reading line by line); key = the printed Cifra general plus the sign table and code corrections copied from f116_reading.md to texts/key.md",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): f116_reading.md read line by line. The clear opening and several cipher lines build Spanish clauses, but about half the cipher lines are sign strings with open codes and unplaced letters, so most cipher sentences have holes (docs/_check_reading.py 0.35 clean). Per-document grade C confirmed; no. 92 relabelled decoded, not read; class read in part -> not read; method read with known key -> not solved; fraction_read 0.75 -> 0.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "No. 92 was deciphered with the Cifra general printed by Galende Díaz (1994), which Tomokiyo had assigned to the letter; the project proved the assignment against eight interlinear glosses on f. 116r.",
+  "method": "not solved",
+  "method_basis": "No. 92 was decoded with the Cifra general printed by Galende Diaz (1994), which Tomokiyo had assigned to the letter; the assignment is proved against eight interlinear glosses on f. 116r. The decode (f116_reading.md) is a line table of sign strings with a gloss column that leaves holes in most cipher sentences, so no reading is claimed (reading audit, 22 Oct 2026); once the letter is built into sentences the method is read with known key.",
   "contribution": ["transcription", "key extended or corrected", "catalogue correction"],
-  "class": "read in part",
-  "fraction_read": 0.75,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "NOTES.md and f116_reading.md: 'about three quarters of the words' of no. 92 (an estimate by line from the prose reading; no token-level unread marks)",
+  "class": "not read",
+  "fraction_read": 0.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: no. 92, the only document, is decoded, not read, so no tokens are in a document that reads. The earlier 0.75 (NOTES and f116_reading.md: \"about three quarters of the words\", estimated by line) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
    "open": 5
@@ -172,6 +179,11 @@
     "item": "about ten stretches of letter signs (grade I)",
     "blocker": "illegible",
     "detail": "Mostly where the q-shaped N and the reversed-9 S cannot be told apart at Gallica's 4155-px resolution; each placed stretch was settled by the word."
+   },
+   {
+    "item": "no. 92 as a running text: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "the line table has holes in most cipher sentences; re-read ff. 116r ll. 8-11, 16, 18-21, 26-31, 34 and f. 116v ll. 1-2, 10-11 on the full scans against the Cifra general, then write a normalised reading and an English translation"
    }
   ],
   "grades": "unknown",
@@ -179,7 +191,7 @@
    "contemporary decipherment",
    "key confirms"
   ],
-  "notes": "Both pages transcribed and about three quarters of the words deciphered (21 Sept 2026). The other ciphered letters of Espagnol 318 are separate entries (federico1497, esp318no95, esp318no93).",
+  "notes": "Both pages transcribed and about three quarters of the words deciphered (21 Sept 2026). The other ciphered letters of Espagnol 318 are separate entries (federico1497, esp318no95, esp318no93). 22 Oct 2026, reading audit: no. 92 decoded, not read (holes in most cipher sentences); class read in part -> not read, method -> not solved, fraction_read 0.75 -> 0.",
   "credits": [
     {"who": "galende", "role": "key or decipherment used", "note": "Cifra general de los Reyes Católicos printed 1994; read no. 92", "date": "1994"},
     {"who": "tomokiyo", "role": "pointer", "note": "proposed the Cifra general for no. 92"},
@@ -192,7 +204,10 @@
     "label": "no. 92, ff. 116r-v, the Great Captain to Lorenzo Suárez, 17 Aug 1500",
     "transcription": "f116_reading.md",
     "decryption": "f116_reading.md",
-    "summary": "Gonzalo Fernández de Córdoba answers Lorenzo Suárez's request, on the Pope's and Venice's behalf, that he take the fleet against the Turk (the Cephalonia campaign of autumn 1500): he will go, but asks for great remuneration and for ports in Italy (Venice holds Brindisi and Otranto in Apulia) where the fleet can land its sick and wounded and refit. f116_reading.md gives the transcription and the reading line by line; about three quarters of the words read, with open codes and letter stretches listed there."
+    "summary": "Gonzalo Fernández de Córdoba answers Lorenzo Suárez's request, on the Pope's and Venice's behalf, that he take the fleet against the Turk (the Cephalonia campaign of autumn 1500): he will go, but asks for great remuneration and for ports in Italy (Venice holds Brindisi and Otranto in Apulia) where the fleet can land its sick and wounded and refit. f116_reading.md gives the transcription and the reading line by line; about three quarters of the words read, with open codes and letter stretches listed there.",
+    "language": "es",
+    "state": "decoded, not read",
+    "note": "The clear opening (ll. 1-4) and the clear islands read, and some cipher lines build Spanish clauses (f. 116r ll. 6-7, 15, 17, 22-25, 33; f. 116v ll. 3-9), but ll. 8-11, 16, 18-21, 26-31 and 34 are sign strings with open codes (xob, zeb, zog, zems, bog) and unplaced letter runs, so most cipher sentences have holes (reading audit, 22 Oct 2026); fix: re-read those lines on full/f116r.jpg and f116v.jpg against the Cifra general and write a normalised running text with a translation."
    }
   ],
   "key_file": ["keys/cifra_general.txt", "texts/key.md"]

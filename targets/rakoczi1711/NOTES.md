@@ -1,6 +1,10 @@
 # Ferenc Rákóczi II to an envoy bound for Holland, Lwów, 27 June 1711 (DECODE R483)
 
-Status: read. Rákóczi's own Latin letter, in a syllabic cipher with homophones, carries a contemporary interlinear
+Status: in progress. R483 decoded from the clerk's decipherment, not yet read as a running text (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R483_clerk.txt merges the clerk's interlinear decipherment with the clear passages line by line, out of reading order, with "?" doubts or alternatives on most lines; the themes can be followed but many sentences are only half secure: R483 is *decoded, not read*. Class read -> not read, method read from existing decipherment -> not solved until the text is written out; fraction_read 0.997 -> 0.
+
+Earlier status (before the 22 Oct 2026 reading audit): read. Rákóczi's own Latin letter, in a syllabic cipher with homophones, carries a contemporary interlinear
 decipherment over every ciphered stretch (2,524 of 2,531 groups lie under it; measured 14 Oct 2026). Its key, not
 preserved, was rebuilt here from that decipherment: 224 codes, which reproduce 70% of the clerk's letters.
 
@@ -74,3 +78,16 @@ reading), and the clerk's doubtful words where the key does not settle them. The
   the reading queued for DECODE.
 - In `../rakoczi1704/`: `DOC_R483_D2172_2172.txt` (DECODE's transcription), `R483_key08_read.txt` (the R639
   control), `fetch_decode.py` and `fetch_img.py`.
+
+## Remaining gaps
+
+- R483 as a running text: decoded, not read - blocker: not-attempted; write the clerk's decipherment and the clear passages out in reading order from the images (DECODE cookie), settle the doubtful words with the rebuilt key, translate
+
+## Escalation
+
+- [n/a] siblings: no other letter in this key
+- [x] clear-pages: the clerk's interlinear decipherment over every ciphered stretch
+- [n/a] known-keys: the key is not preserved
+- [ ] print: no search for a printed text is recorded in these notes
+- [x] key-rebuild: 224 codes rebuilt from the interlinear
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

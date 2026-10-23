@@ -1,5 +1,7 @@
 # Henry of Navarre, La Rochelle, 10 July 1586: news-sheet to Ségur in the f. 321 key (BnF 500 de Colbert 401 f. 333)
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): texts/f333_decryption.md is raw decoder output, but the normalised reading of f. 333 below builds French sentences; the holes are the five name codes (no key material). The per-document C is overturned to B. Claim unchanged.
+
 Read on 16 Sept 2026 in `targets/segur/`. Gallica ark:/12148/btv1b10035574w, f. 333 = canvas 369, f. 321 = canvas 359.
 
 **Split on 14 Oct 2026 from `segur`** under the one-key rule (George Lasry): f. 333 was read with **Tomokiyo's f. 321

@@ -23,7 +23,9 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
    (`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/<ark>/f<n>/<x,y,w,h>/<w>,/0/default.jpg`; gallica.bnf.fr/iiif
    gives 403), BL through bl.digirati.io IIIF (memory note: 1024-px tiles, stitch them), DECODE images if they are
    already in the main checkout (`C:\Users\dbour\cypher\targets\<folder>\`, git-ignored folders such as `img/`,
-   `decode/`); DECODE behind its login is out of reach — say so. Go sentence by sentence; at each break look at the
+   `decode/`), and DECODE records and images through the project's cookie
+   (`C:\Users\dbour\cypher\targets\bordeaux\decode\cookie.txt`, working on 22 Oct 2026; see the sauli1579 reread log for
+   the request form). Only if all of these fail is a text out of reach — say which failed. Go sentence by sentence; at each break look at the
    figures, correct the transcription label (keep a tsv), adjust the key only with values that hold across the
    document, re-decode, continue.
 3. **Do not invent.** Every word of a reading is carried by its figures or by a contemporary/printed text you name.

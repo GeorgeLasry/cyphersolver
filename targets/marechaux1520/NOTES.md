@@ -1,6 +1,10 @@
 # "French marshals to the King", BnF fr. 3081 f. 41 (DECODE R2322): Cardinal Campeggio's conclave articles, c. 1534 — NOTES
 
-Status: read
+Status: in progress. f. 41v read here; f. 41r is Lasry's reading on overlay images, not transcribed (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): texts/f41v_decryption.md reads. f. 41r's entry points only to Lasry's overlay images on cryptiana, with no text in the repository: *decoded, not read* (excerpt only). Class read -> read in part; fraction_read 0.998 (f. 41v alone) -> about 0.5 of the leaf (estimated).
+
+Earlier status (before the 22 Oct 2026 reading audit): read
 
 **Verdict: f. 41r was already READ by George Lasry (key and overlay dated 24 May 2022, on Tomokiyo's cryptiana
 pages). f. 41v, a second full page of cipher, had no published reading; it is read here with Lasry's key
@@ -77,6 +81,7 @@ given a value; with the M-graded 'flame' and code counted as unread, 99.8%.
 - l. 19 sign 4 of "fla?e" - blocker: no-key-material; sign absent from Lasry's table, "flame" from context only (M).
 - l. 30 the code cluster (Lasry's Unknown 2) before "et ses successeurs" - blocker: open-codes; the Emperor from context (M).
 - The rest of the articles after f. 41v - blocker: needs-physical-access; fr. 3081 unseen beyond ff. 41-42, the text breaks off, f. 42 blank.
+- f. 41r: Lasry's reading, on overlay images only - blocker: not-attempted; transcribe his three overlay crops (main checkout prior/, git-ignored; cryptiana GL.htm) and join them to the f. 41v running text
 
 ## Escalation
 

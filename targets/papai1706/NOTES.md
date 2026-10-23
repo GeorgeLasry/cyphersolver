@@ -2,6 +2,8 @@
 
 Status: read — the eleven numeric letters read with the envoy's own key (second pass: 16,641 of 16,698 numeric
 groups, 99.7%; 16,641 of ~16,739 with DECODE's '?' tokens, 99.4%); the open groups are DECODE transcription slips.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R795 was graded C for its "·" marks; they are the 251 declared nulls (groups above 322), not gaps, and without them R795 reads like the other ten letters. Per-document C overturned to B; claim unchanged.
+
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. R731 (6 Mar 1710,
 Belgrade), whose six passages are in a graphic-sign alphabet, is a different cipher, with its own page

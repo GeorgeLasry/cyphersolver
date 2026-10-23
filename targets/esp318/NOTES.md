@@ -1,5 +1,9 @@
 # BnF Espagnol 318 no. 92: the Great Captain to Lorenzo Suárez, 17 Aug 1500, in the Cifra general (catalogue no. 9)
 
+Status: in progress. No. 92 decoded with the Cifra general, not yet read as sentences (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): f116_reading.md is a line table of sign strings with a gloss column. The clear opening and some cipher lines build Spanish clauses (f. 116r ll. 6-7, 15, 17, 22-25, 33; f. 116v ll. 3-9), but ll. 8-11, 16, 18-21, 26-31 and 34 are open codes and unplaced letter runs, so most cipher sentences have holes: no. 92 is *decoded, not read*. Class read in part -> not read, method -> not solved, fraction_read 0.75 -> 0 (the three-quarters estimate is withdrawn as a reading figure). The key identification and the summary below stand as a gist.
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder used to be the whole volume:
 five ciphered letters in at least four ciphers. It now keeps **no. 92** (ff. 116r–v), in the *Cifra general de los
 Reyes Católicos*. The other letters are different ciphers, each with its own entry and page:
@@ -133,6 +137,7 @@ plates carry misprints there or the hand uses a variant; about ten letter-sign s
 
 - five code groups (bog ×3, zeb, zems, xob, bue) - blocker: needs-physical-access; they contradict Galende's printed values in context; his plates misprint others, and the manuscript BRAH 9/15 ff. 7-9, not digitised, would settle them
 - about ten stretches of letter signs (grade I) - blocker: illegible; the q-shaped N and the reversed-9 S cannot be told apart at Gallica's 4155-px resolution
+- no. 92 as a running text: decoded, not read - blocker: not-attempted; re-read f. 116r ll. 8-11, 16, 18-21, 26-31, 34 and f. 116v ll. 1-2, 10-11 on the full scans against the Cifra general, then write a normalised reading and a translation
 
 ## Escalation
 

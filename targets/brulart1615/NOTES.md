@@ -1,5 +1,9 @@
 # Louis XIII to Brûlart de Léon, ambassador in Venice, 1615 and 1617 — BnF fr. 18043 f. 83–84, fr. 18044 f. 109–110 (DECODE R2785, R2786) — NOTES
 
+Status: in progress. No plaintext of either letter is in the repository or on Tomokiyo's page (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): Tomokiyo's key is on both DECODE records, but his page gives the key and remarks on undeciphered symbols, not the letters, and nothing of either letter is transcribed here. Both are *decoded, not read*; class already solved -> not read, method -> not solved. The R2785 page image shows contemporary decipherments over most cipher runs, so the letters are workable with his key.
+
 Split on 14 Oct 2026 from `louis1615` under the one-key rule (George Lasry, 14 Oct 2026). The old entry (catalogue
 191) grouped these two letters with Louis XIII's letter of 1631 to Melchior de Sabran because DECODE lists all three
 with Louis XIII as author. The Sabran letter is in another cipher, solved by George Lasry, with its own entry:
@@ -62,3 +66,7 @@ two pages of each record were not fetched.
 - [x] print: louisxiii.htm checked
 - [n/a] key-rebuild: the key exists (Tomokiyo); nothing rebuilt here
 - [n/a] retry: no reading of our own to retry
+
+## Remaining gaps
+
+- R2785 and R2786: no plaintext in the repository - blocker: not-attempted; fetch the three pages of each record with the DECODE cookie, transcribe R2785's interlinear decipherments, apply Tomokiyo's key (DOC_2785/2786 png)

@@ -1,6 +1,8 @@
 # Ambrogio Bizozola (Bizzozero) to Maximilian Sforza, Bologna, 4 November 1529: BnF fr. 3034 f. 156 (DECODE R4224)
 
 Status: read
+**22 Oct 2026, reading audit** (George Lasry's test): the per-document grade C was overturned to B. reading_raw.txt is raw line-by-line output with the key's homophone slips (a/u, e/p), but read through, nearly every line builds Italian sense; the open stretches are those in doubtful.txt and the date line. A normalised Italian text and an English translation are still to be written.
+
 
 Catalogue item 176 (class C). DECODE R4224, "Non-decrypted", 4 pp., Italian, dated 1520/1529.
 

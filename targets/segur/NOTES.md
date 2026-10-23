@@ -1,5 +1,7 @@
 # Henry of Navarre to Ségur, BnF 500 de Colbert 401 ff. 233, 239, 288v (1585–86) — SOLVED 2026-09-16
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): f. 288v, read with the word-sign values given in reading.md's notes ({gne} = Je, {na} = nouvelles/affaires, {Ra} = faictes, {qu} = vous), builds French sentences; the date and name signs stay open. Per-document C overturned to B; claim unchanged.
+
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2024 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
 **Split on 14 Oct 2026** under the one-key rule (George Lasry): this entry is **key A** only, the key recovered here for

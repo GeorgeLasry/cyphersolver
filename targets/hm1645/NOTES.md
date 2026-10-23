@@ -1,5 +1,9 @@
 # Henrietta Maria's household (St Germain) to Charles I, September 1645 — Lasry's "TNA SP 106" key — TNA SP 106/10 — NOTES
 
+Status: in progress. Lasry's decipherment exists on DECODE; none of it is in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): Lasry's plaintexts of R785, R790 and R923 are on the DECODE records only; the git-ignored copies are no longer in any checkout, so nothing could be read. All three are *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.9099 -> 0.
+
 Split on 14 Oct 2026 from the former `hm1645` under the one-key rule (George Lasry, 14 Oct 2026). The old entry
 (catalogue 59) joined six letters in four of Lasry's reconstructed keys. This folder keeps the three letters in his
 **"TNA SP 106"** key (R785, R790, R923). The others are different ciphers, each with its own entry and page:
@@ -76,6 +80,7 @@ They look like word dividers or nulls, against the "no nulls" of his key file; n
 
 - three-digit nomenclator numbers in brackets (58 distinct, 99 tokens; e.g. 295, 498, 326, 474) - blocker: open-codes; Lasry left them open and this entry takes his decipherment as it is; most are names, some could be fixed from context across the run
 - one- and two-digit figures with no key value (11 distinct, 205 tokens) - blocker: open-codes; between words, dividers or nulls, not settled
+- R785, R790, R923: Lasry's plaintext not in the repository - blocker: not-attempted; fetch his interlinear and plaintext files with the shared DECODE cookie (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept
 
 ## Escalation
 

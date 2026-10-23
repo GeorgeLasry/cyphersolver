@@ -169,20 +169,27 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the two readings (cipher spans deciphered in braces) and the key files; no sign-level transcription of the cipher spans exists, so the transcription points to the DECODE records' images",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): R2113_reading.md builds Dutch sentences (B); R2115_reading.md calls itself partial, and P2/P4 are strings of [...], {?...} and bare codes. R2115 relabelled decoded, not read; class read -> read in part; fraction_read unknown -> about 0.48 (words).",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The key is DECODE R2118, filed in the same Nationaal Archief series (inv. nr. 6894) as the letters R2113-R2115; its alphabet and 116-code nomenclator were read off the two key pages and fitted at once (arbeiden, tusschen, suspensie).",
   "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
-  "class": "read",
-  "fraction_read": "unknown",
+  "class": "read in part",
+  "fraction_read": 0.48,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Both catalogued ciphertexts read in sense; a handful of short cipher words and the code [50] stay open, and the clear Dutch was read for sense rather than transcribed verbatim.",
+  "notes": "Both catalogued ciphertexts read in sense; a handful of short cipher words and the code [50] stay open, and the clear Dutch was read for sense rather than transcribed verbatim. 22 Oct 2026, reading audit: R2115 decoded, not read; class read -> read in part.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "key R2118 (alphabet and 116-code nomenclator), filed in the same NA inventory number", "source": "DECODE R2118"}
   ],
@@ -192,16 +199,36 @@
     "label": "R2113 pp. 3+2, Haga to the States General, Constantinople, 31 Mar 1620 (p. 1 is the clear close of 1 Feb 1620)",
     "transcription": "https://de-crypt.org/decrypt-web/RecordsView/2113",
     "decryption": "R2113_reading.md",
-    "summary": "Cornelis Haga, Dutch ambassador at Constantinople, reports that the Porte would let Transylvania be resigned to Bethlen Gábor's brother, that Transylvania must keep good correspondence with Hungary, and that the Turks would think better of the Hungarians if they too elected a king of Bohemia; the Grand Vizier, Capitan Bassa and Mufti press him on whether the States mean to extend the truce with Spain, make peace or take up arms again. No sign-level transcription of the cipher spans exists; the reading gives them deciphered in braces, and the images are on the DECODE record."
+    "summary": "Cornelis Haga, Dutch ambassador at Constantinople, reports that the Porte would let Transylvania be resigned to Bethlen Gábor's brother, that Transylvania must keep good correspondence with Hungary, and that the Turks would think better of the Hungarians if they too elected a king of Bohemia; the Grand Vizier, Capitan Bassa and Mufti press him on whether the States mean to extend the truce with Spain, make peace or take up arms again. No sign-level transcription of the cipher spans exists; the reading gives them deciphered in braces, and the images are on the DECODE record.",
+    "language": "nl",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Line-numbered Dutch with cipher spans in braces; the argument about Hungary, Bohemia and the Porte builds in sentences with a few ? and unresolved codes (per-document B)."
+    }
    },
    {
     "doc": "R2115",
     "label": "R2115, Haga to the States General, Constantinople, 24 Apr and 4 May 1620",
     "transcription": "https://de-crypt.org/decrypt-web/RecordsView/2115",
     "decryption": "R2115_reading.md",
-    "summary": "The envoys of the confederated Bohemian and Hungarian lands from the Pressburg Easter diet were received by the Grand Vizier and the Sultan, and the Porte is resolved to treat with them; in cipher Haga urges that the Hungarian Estates proceed to the election and crowning of a new king, reports the order to the Bassa of Buda to assist them, and warns that nothing done in the name of the Emperor's ambassador is to be believed. No sign-level transcription of the cipher spans exists; the images are on the DECODE record."
+    "summary": "The envoys of the confederated Bohemian and Hungarian lands from the Pressburg Easter diet were received by the Grand Vizier and the Sultan, and the Porte is resolved to treat with them; in cipher Haga urges that the Hungarian Estates proceed to the election and crowning of a new king, reports the order to the Bassa of Buda to assist them, and warns that nothing done in the name of the Emperor's ambassador is to be believed. No sign-level transcription of the cipher spans exists; the images are on the DECODE record.",
+    "language": "nl",
+    "state": "decoded, not read",
+    "note": "P3's clear opening reads, but the file is a partial reading: clear passages are given as [...] where not transcribed, and on P2 and P4 the cipher spans are strings of {?...} and bare codes ([43], [62]) with a sentence rarely complete (reading audit, 22 Oct 2026); fix: transcribe P2 and P4 in full, re-read the cipher spans with the R2118 key (m = 4), and fix the codes from R2113 and the decrypted R2114."
    }
   ],
-  "key_file": ["KEY_ALPHABET.md", "KEY_NOMENCLATOR.md"]
+  "key_file": ["KEY_ALPHABET.md", "KEY_NOMENCLATOR.md"],
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Estimated, reading audit 22 Oct 2026, by words of the two reading files: R2113_reading.md (1,249 words) reads, R2115_reading.md (1,337) is decoded, not read: 0.48. No token count of the cipher spans exists. The field was \"unknown\" before.",
+  "gaps": [
+   {
+    "item": "R2115: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "clear passages on P2 and P4 not transcribed and cipher spans with uncertain letters; transcribe the four pages in full from the DECODE images (decode/, git-ignored) and re-read with the R2118 key"
+   }
+  ]
  }
 }

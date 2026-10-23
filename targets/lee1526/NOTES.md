@@ -1,6 +1,10 @@
 # Edward Lee (and Ghinucci) to Wolsey from Spain, 1526-1529 (BL Cotton MS Vespasian C III-C IV; DECODE R8458-R8587, 17 records)
 
-Status: no write-up
+Status: in progress. Read at the time; R8533's own reading is a worksheet, decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): R8566, R8465 and R8473 read. r8533_reading.txt is a sign-level worksheet with holes in several sentences, and f. 109r was not re-read in pass 2: R8533 is *decoded, not read*. fraction_read 1 -> 0.445 (tokens in documents that read); class already solved kept (every run was deciphered at the time, L&P IV).
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up
 
 Catalogue no. 103 (DECODE refill, rule-scored class B, "Ed. Lee (Hispania) to unknown recipient, 17 ciphertexts").
 Worked 21 Sept 2026.
@@ -262,3 +266,16 @@ advises its correspondent how to answer the Emperor: the particular peace betwee
 delivery of the pledges (the French princes) and the French king's assurance, commissions and mandates, and Jean
 Allemand's communications. Wolsey is "my lord Cardinal" in the third person, so he is not the recipient; the
 recipient is not identified here. Closed as no cipher and removed from the catalogue; DECODE correction queued (N/A).
+
+## Remaining gaps
+
+- R8533: decoded, not read (f. 109r, f. 109v ll. 1-4 and 17-22, name codes) - blocker: not-attempted; re-read f. 109r and f. 110r at full resolution on the DECODE images and write a running text
+
+## Escalation
+
+- [x] siblings: all 17 records of catalogue 103 opened; four carry cipher
+- [x] clear-pages: R8566 interlinear decipherment; L&P IV 3028 crib for R8533
+- [x] known-keys: Tomokiyo's Lee-Worcester key (on R8566)
+- [x] print: L&P IV calendars Tuke's decipherments
+- [n/a] key-rebuild: the key is known
+- [ ] retry: R8533 f. 109r and f. 110r not re-read at full resolution

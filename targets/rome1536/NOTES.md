@@ -1,5 +1,9 @@
 # The cardinal de Mâcon in Rome to Montmorency, 1536-37, in Mascon's cipher (BnF fr. 3053, DECODE R4233-R4247; BnF fr. 3071 no. 4)
 
+Status: in progress. Mascon's cipher letters read in part; fr. 3071 no. 4 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R4234 and R4239 (graded C) were re-read on their pass-5 running readings and build French sentences with scattered holes (overturned to B). The 11 April 1537 letter (fr. 3071 no. 4) is read only 35-40% by its own count and is *decoded, not read*. fraction_read 0.95 -> about 0.91 (its ~840 signs added to the denominator).
+
 **Split on 14 Oct 2026** under the one-key rule (George Lasry): this entry holds every letter read in
 **Mascon's cipher**. Two changes: (1) R4248 (fr. 3053 f. 85), in a second, unrelated fr. 3053 cipher and read from
 its contemporary decipherment on f. 86, is now its own entry, `targets/r4248/` (`docs/r4248.html`), a different
@@ -261,6 +265,8 @@ and the reading, made first, matches it almost word for word.
 - R4239 short cipher runs in f36r L01-L06 and f35v L27-L31, and f38v L4 end, L8 end and the margin block (whose interlinear does not fit the signs) - blocker: illegible; not transcribed or not resolved in pass 5, no clear copy for them
 - proper names (the Sienese gentleman "For[?]", the count "Mer[?]le", Christofle's surname and two German captains in R4238, "Cesane", "Palmier") - blocker: open-codes; spelled in cipher but the letters do not settle to a known name
 - R4239 f38r L06-L07 - blocker: illegible; doubtful in the contemporary clear copy itself
+- fr. 3071 no. 4: decoded, not read (35-40% of the cipher) - blocker: not-attempted; re-transcribe f. 9r ll. 3-25 by sign shape from the Gallica native scan, decode with macon_decode.py, read f. 9v against the slip f. 9bis
+- R4239 letter 1, f. 35r-v first paragraph, as a running text - blocker: not-attempted; summarised with elisions in pass5/R4239_pass5.md; write it out from the per-line record
 
 ## Escalation
 - [x] siblings: R4236, R4237, R4241-R4246 opened via the DECODE API: all status Decrypted, no transcription or plaintext file attached (six Rome letters to Montmorency 1535-37, one to Mâcon from Venice); outside catalogue 180 and left for a later session; every full-page view of R4234 opened (P10/P13/P14/P18 duplicate the crops; P14 = P15 clear slip used as crib)

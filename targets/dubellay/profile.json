@@ -292,7 +292,8 @@
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): fr. 3077 no. 23 (28 Oct 1528) is in du Bellay's first cipher (Bourrilly 1905; Lasry 2022) and is now dubellay1528; this entry keeps Bayonne's cipher of 1529. Credits for Bourrilly (1528 key) and Lasry (1528 cipher) moved to dubellay1528.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): 16 June: p21_signs.txt + texts/16jun1529_decryption.md (copied from p21_transcription.md/NOTES); 22 June, 30 June, 17 Oct: Le Grand 1688 OCR in ref/; 17 Oct partial sign transcription copied from NOTES section 5; 22 Oct: Scheurer 1969 linked; key_file key_p21.tsv. No ciphertext transcription for 22 June, 30 June, 22 Oct.", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): 16 June: p21_signs.txt + texts/16jun1529_decryption.md (copied from p21_transcription.md/NOTES); 22 June, 30 June, 17 Oct: Le Grand 1688 OCR in ref/; 17 Oct partial sign transcription copied from NOTES section 5; 22 Oct: Scheurer 1969 linked; key_file key_p21.tsv. No ciphertext transcription for 22 June, 30 June, 22 Oct.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): for 22 Oct 1529 the repository has only Le Grand's clear part; the ciphered opening is Scheurer's (snippets). Relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -309,7 +310,7 @@
    "contemporary decipherment",
    "independent clear copy"
   ],
-  "notes": "16 June 1529 block: 194 signs, 191 with an established value (98.5%), all plaintext words read and matching Scheurer; three isolated signs in line 7 unexplained. Catalogue item found already solved; R4229 (30 June 1529) also in print. Open question: the boxed cross is 'madame Marguerite' on p. 21 (Scheurer) but lined up with 'le Cardinal' on p. 113; one sign or two not settled.",
+  "notes": "16 June 1529 block: 194 signs, 191 with an established value (98.5%), all plaintext words read and matching Scheurer; three isolated signs in line 7 unexplained. Catalogue item found already solved; R4229 (30 June 1529) also in print. Open question: the boxed cross is 'madame Marguerite' on p. 21 (Scheurer) but lined up with 'le Cardinal' on p. 113; one sign or two not settled. 22 Oct 2026, reading audit: the 22 Oct 1529 entry is decoded, not read (its ciphered opening is not in the repository); class kept: Scheurer prints it.",
   "fraction_read_method": "measured",
   "fraction_read_source": "p21_signs.txt (191 of 194 signs with an established value; the 16 June block only)",
   "credits": [
@@ -347,14 +348,16 @@
      "https://books.google.com/books?id=eNw8AAAAIAAJ"
     ],
     "summary": "Jean du Bellay, bishop of Bayonne, to Montmorency from London, 16 June 1529: the clear text is about the bishopric he hoped for and a move against him; the cipher block advises, if his earlier counsel is followed (to pretend that Madame had not gone to conclude, and that Margaret of Austria, being there, had by importunity had a power sent for), to have that power dated from that time and from the place where the King will be (the Cambrai peace negotiation). Deciphered here from the leaf; Scheurer (1969) prints the same text.",
-    "note": "Scheurer's edition (1969) is a modern publication, linked (Google Books snippet view), not copied."
+    "note": "Scheurer's edition (1969) is a modern publication, linked (Google Books snippet view), not copied.",
+    "language": "fr"
    },
    {
     "doc": "22jun1529",
     "label": "22 June 1529, fr. 3078 pp. 25-27 (Le Grand III pp. 327-332)",
     "decryption": "ref/legrand3_p318_330.txt",
     "summary": "Du Bellay to Montmorency from London, 22 June 1529, with the Court decipherer's word-by-word interlinear reading on the leaf; printed by Le Grand, Histoire du divorce III (1688) pp. 327-332, and used here to re-derive the key.",
-    "note": "Decryption = OCR of Le Grand 1688 (the letter is at pp. 327-332 of the file, which holds other letters too). No transcription of the ciphertext (signs were only aligned with the interlinear to derive the key): project work."
+    "note": "Decryption = OCR of Le Grand 1688 (the letter is at pp. 327-332 of the file, which holds other letters too). No transcription of the ciphertext (signs were only aligned with the interlinear to derive the key): project work.",
+    "language": "fr"
    },
    {
     "doc": "17oct1529",
@@ -362,14 +365,16 @@
     "transcription": "texts/17oct1529_transcription.txt",
     "decryption": "ref/legrand3_p330_400.txt",
     "summary": "Du Bellay to Montmorency from London, 17 Oct 1529, on Wolsey's fall (\"j'ay esté voir le Cardinal en ses ennuis\"); printed by Le Grand III pp. 369-375 from a deciphered copy (Clair. 330 f. 71); the first cipher lines were read here on the leaf as a check of the key.",
-    "note": "Transcription covers only the first cipher lines of p. 113 (NOTES section 5); the rest of the four pages is not transcribed (project work). Decryption = OCR of Le Grand 1688, pp. 369-375 of the file."
+    "note": "Transcription covers only the first cipher lines of p. 113 (NOTES section 5); the rest of the four pages is not transcribed (project work). Decryption = OCR of Le Grand 1688, pp. 369-375 of the file.",
+    "language": "fr"
    },
    {
     "doc": "30jun1529",
     "label": "30 June 1529, fr. 3040 f. 68 (R4229; Le Grand III pp. 333 ff.)",
     "decryption": "ref/legrand3_p330_400.txt",
     "summary": "Du Bellay to Montmorency from London, last day of June 1529, about two of its four pages in cipher; printed in clear by Le Grand III pp. 333 ff. and calendared in L&P IV 5742; Tomokiyo's Clair. 329 f. 139 is the deciphered copy.",
-    "note": "Decryption = OCR of Le Grand 1688, from p. 333 of the file. No transcription of the ciphertext (identified, not transcribed): project work."
+    "note": "Decryption = OCR of Le Grand 1688, from p. 333 of the file. No transcription of the ciphertext (identified, not transcribed): project work.",
+    "language": "fr"
    },
    {
     "doc": "22oct1529",
@@ -379,9 +384,18 @@
      "ref/legrand3_p330_400.txt"
     ],
     "summary": "Du Bellay to Montmorency from London, 22 Oct 1529: the ciphered opening, on granting the cardinal of York's request made through his Italian servant (Agostino, Wolsey's physician), was called undeciphered by Le Grand 1688, Brewer and Tomokiyo but is printed by Scheurer (1969); the clear part, on the Legate being turned out of his house, is in Le Grand III pp. 377-379.",
-    "note": "The deciphered opening is in Scheurer's modern edition (1969), linked, not copied; Le Grand's OCR has only the clear part. No transcription: the leaf fr. 3005 f. 165 was not seen (Gallica blocked scripts; no DECODE record)."
+    "note": "Excerpt only: the ciphered opening (the point of the entry) is printed by Scheurer, Correspondance du cardinal Jean du Bellay t. I (1969) pp. 111-112, seen in Google Books snippets (first lines quoted in NOTES); the repository holds Le Grand's clear part only, where the opening is \"non dechiffre\". The leaf fr. 3005 f. 165 was not seen (reading audit, 22 Oct 2026); fix: fetch it through the Gallica IIIF (openapi.bnf.fr) and decipher the opening with key_p21.tsv.",
+    "language": "fr",
+    "state": "decoded, not read"
    }
   ],
-  "key_file": "key_p21.tsv"
+  "key_file": "key_p21.tsv",
+  "gaps": [
+   {
+    "item": "22 Oct 1529 opening (fr. 3005 f. 165): not in the repository",
+    "blocker": "not-attempted",
+    "detail": "the leaf is on Gallica, reachable through the IIIF at openapi.bnf.fr; decipher it with the 1529 key (key_p21.tsv) and compare with Scheurer's snippets"
+   }
+  ]
  }
 }

@@ -1,6 +1,8 @@
 # Siena no. 11 — Donato Acciaiuoli to Lorenzo de' Medici, Rome, 13 June 1478 (DECODE R4800)
 
 Status: read in part; key recovered from ciphertext-only by George Lasry with CTTS and Claude (about 90% certain; 357 of 381 plaintext letters in words without a query, 93.7%). Contributed result, filed here 18 Oct 2026.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): both cipher blocks of Lasry's decryption build Italian sentences with a translation; the doubts are one sign lost in a hole and five words of a 393-sign text, both outside blockers. Per-document C overturned to B; claim unchanged.
+
 
 Archivio di Stato di Siena, Concistoro 2308, fasc. 2 ("Lettere in cifra"), no. 11; DECODE
 [R4800](https://de-crypt.org/decrypt-web/RecordsView/4800) (Concistoro_2308_54), catalogued "1500-1599", status N/A.

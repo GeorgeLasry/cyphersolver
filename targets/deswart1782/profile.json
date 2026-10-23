@@ -215,22 +215,29 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1036 and R1040 DECODE transcriptions and the machine decipherments (R1040 second part only; the first part's key is missing); key = parsed R1038 codebook with context values, plus the scan readings",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): R1036_machine_decipherment.txt and R1040_second_key_machine_decipherment.txt read through; words split into letters, bracketed codes and query marks break nearly every sentence (docs/_check_reading.py 0.18 and 0.11 clean). Both relabelled decoded, not read; class read in part -> not read; method read after matching with key from external sources -> not solved; fraction_read 0.967 -> 0. The R1038 key match stands.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read after matching with key from external sources",
+  "method": "not solved",
   "method_basis": "DECODE said the codebook could not be identified; the 1765 Croiset codebook of the Russia legation (DECODE R1038, a separate key record) was found here to fit and read 84% of R1036 as transcribed on DECODE; 34 values from context and 41 entries read directly from the R1038 scans raised it to 96.7%.",
   "contribution": [
    "key extended or corrected"
   ],
-  "class": "read in part",
-  "fraction_read": 0.967,
+  "class": "not read",
+  "fraction_read": 0.0,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Two keys in R1040 (one-key review, 14 Oct 2026): parts per key. R1036 read (96.7%); R1040 second part in the same 1765 key, 88.2% given a value; R1040 first part (1,928 groups) in a missing Rechteren-family code, not solved. 56 groups (51 distinct rare codes) of R1036 open, mostly entries lost in the scan's binding shadow.",
+  "notes": "Two keys in R1040 (one-key review, 14 Oct 2026): parts per key. R1036 read (96.7%); R1040 second part in the same 1765 key, 88.2% given a value; R1040 first part (1,928 groups) in a missing Rechteren-family code, not solved. 56 groups (51 distinct rare codes) of R1036 open, mostly entries lost in the scan's binding shadow. 22 Oct 2026, reading audit: R1036 and R1040 decoded, not read; class read in part -> not read, method -> not solved (the 1765 key match stands); fraction_read 0.967 -> 0.",
   "credits": [
    {
     "who": "contemporary",
@@ -248,9 +255,9 @@
    {
     "label": "Croiset 1765 Russia-legation codebook (DECODE R1038)",
     "records": "R1036 (whole, 1,719 groups); R1040 from group 180 of image 5459 to image 5474 (5,956 groups)",
-    "method": "read after matching with key from external sources",
-    "extent": "partial",
-    "basis": "R1036 96.7% (1,663/1,719, measured) with 34 context values and 41 entries read from the R1038 scans; R1040 second part 5,256/5,956 groups given a value (88.2%, counted from R1040_second_key_tokens.tsv), with the R1036 context values and scan readings; no context pass yet on its own unread groups"
+    "method": "not solved",
+    "extent": "none",
+    "basis": "22 Oct 2026, reading audit: the 1765 key fits (R1036 1,663/1,719 groups given a value; R1040 second part 5,256/5,956), but the machine decipherments do not build sentences, so nothing is counted as read. Earlier basis: R1036 96.7% (1,663/1,719, measured) with 34 context values and 41 entries read from the R1038 scans; R1040 second part 5,256/5,956 groups given a value (88.2%, counted from R1040_second_key_tokens.tsv), with the R1036 context values and scan readings; no context pass yet on its own unread groups"
    },
    {
     "label": "missing Rechteren-family nomenclator",
@@ -260,7 +267,7 @@
     "basis": "neither the 1765 key nor the 1803 Croiset relative fits; crib transfers from R2032, R2051, R2052 (1784-86) cover 2-3% and give no prose; the key is probably Nationaal Archief inv. 158, not online"
    }
   ],
-  "fraction_read_source": "R1036 only (1,663 of 1,719 groups, R1036_codes.txt); per part in outcome.parts",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count; R1036 and R1040 are decoded, not read, so 0 (the normalised Greek-project passage in NOTES, tokens 239-466 and 686-775, reads but is not a document). The earlier 0.967 (1,663 of 1,719 groups of R1036 given a value, R1036_codes.txt) is withdrawn as a reading figure.",
   "gaps": [
    {
     "item": "R1040 first part, 1,928 groups (images 5453-5458, 5459 groups 1-179)",
@@ -276,6 +283,16 @@
     "item": "R1036, 56 groups (51 distinct rare codes)",
     "blocker": "illegible",
     "detail": "entries lost in the binding shadow of the R1038 key scans, blank or too faint"
+   },
+   {
+    "item": "R1036: machine decipherment not yet built into sentences",
+    "blocker": "not-attempted",
+    "detail": "apply the 30 Sept 2026 corrections to decode_1765.py, regenerate, and normalise line by line"
+   },
+   {
+    "item": "R1040 second part: machine decipherment not yet built into sentences",
+    "blocker": "not-attempted",
+    "detail": "context pass on its own unread groups, then a normalised reading"
    }
   ],
   "key": "partial",
@@ -285,19 +302,26 @@
     "label": "R1036, de Swart to van Bleiswijk, 8 Mar 1782",
     "transcription": "R1036_transcription.txt",
     "decryption": "R1036_machine_decipherment.txt",
-    "summary": "Johan Isaac de Swart, Dutch resident at St Petersburg, reports to the Grand Pensionary Pieter van Bleiswijk on the French and Spanish answers to the Austro-Russian mediation proposal, Catherine II's Greek project (Grand Duke Constantine taught Greek and given Greek attendants), and Prussia's accession to the Armed Neutrality. Token-level decipherment with the 1765 Croiset key (R1038); 56 groups unread, listed in R1036_unknowns.txt."
+    "summary": "Johan Isaac de Swart, Dutch resident at St Petersburg, reports to the Grand Pensionary Pieter van Bleiswijk on the French and Spanish answers to the Austro-Russian mediation proposal, Catherine II's Greek project (Grand Duke Constantine taught Greek and given Greek attendants), and Prussia's accession to the Armed Neutrality. Token-level decipherment with the 1765 Croiset key (R1038); 56 groups unread, listed in R1036_unknowns.txt.",
+    "language": "nl",
+    "state": "decoded, not read",
+    "note": "Raw machine decipherment: words split into letters (\"be trek ke lijk\", \"p r u y ss chi n\"), bracketed codes and \"?\" in almost every line, misreadings (\"dak? se\" = dat zij); the topic follows, the sentences do not (reading audit, 22 Oct 2026); fix: apply the 30 Sept corrections (leading-dash rule, 47^_ = k, the key misreadings) and normalise line by line, as was done for the Greek passage."
    },
    {
     "doc": "R1040",
     "label": "R1040, de Swart, 29 Nov 1787 (second part, 1765 key)",
     "transcription": "R1040_transcription.txt",
     "decryption": "R1040_second_key_machine_decipherment.txt",
-    "summary": "De Swart's despatch of 29 November 1787, coded with two codebooks. The second part, decoded with the 1765 key, reports evidence of an Austrian-French alliance, the attention of the Prussian and British representatives at St Petersburg, Kaunitz and the Bavarian exchange project. The first 1,928 groups use a missing Rechteren-family code and are not deciphered."
+    "summary": "De Swart's despatch of 29 November 1787, coded with two codebooks. The second part, decoded with the 1765 key, reports evidence of an Austrian-French alliance, the attention of the Prussian and British representatives at St Petersburg, Kaunitz and the Bavarian exchange project. The first 1,928 groups use a missing Rechteren-family code and are not deciphered.",
+    "language": "nl",
+    "state": "decoded, not read",
+    "note": "Same raw output with a bracketed code in most lines; the opening pages build partial sentences, the last stretch is fragments of Dutch, French and unread codes (reading audit, 22 Oct 2026); fix: the context pass on its ~700 unread groups, then a normalised reading."
    }
   ],
   "key_file": [
    "R1038_key_parsed.tsv",
    "R1038_scan_readings.tsv"
-  ]
+  ],
+  "fraction_read_method": "measured"
  }
 }

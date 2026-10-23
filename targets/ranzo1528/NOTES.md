@@ -1,6 +1,8 @@
 # Ranzo's code, 1528: the letter to "Garbino" (BnF fr. 3022 no. 20) and Hieronimo Ranzo's letters (fr. 2988, fr. 3019; DECODE R1894, R4450; catalogue items 7 and 170)
 
 Status: in progress (read in part 18 Oct 2026; left: check the 74 open groups of fr. 3022 no. 20 and the open codes of fr. 4050 and fr. 6638 against the images): key recovered from ciphertext-only by George Lasry with Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026, `lasry/`) and, independently, by Paolo Rosson with Claude (6 Oct 2026, on this project's transcription). Fr. 2988 (letters 1 and 2) and its copy fr. 20506 meet the read bar; fr. 3022 no. 20, fr. 4050 and fr. 6638 are read in part (measured 18 Oct 2026, below). This project's own annealer recovered only function words. Split from `targets/vasto1527/` on 14 Oct 2026.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): letter 4 (fr. 4050) reads at its opening and close, but 54 of its 128 lines carry an open code and in the middle runs of codes break most sentences: *decoded, not read*. Letters 1, 2, 3 and 5 read. Class read in part kept; fraction_read 0.929 -> 0.717 (bar-measure tokens of the four letters that read).
+
 
 Gallica: fr. 3022 ark `btv1b90601558` (view = canvas; ink folio ≈ (view+1)/2), fr. 2988 `btv1b9059908w`, fr. 3019 `btv1b9059994n`, Clair. 327 `btv1b9000764n`.
 
@@ -185,6 +187,7 @@ contributors', the transcription and measurement this project's).
 - fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%): 27 without a value in either key, 47 tentative values of Lasry's that Rosson's does not match - blocker: open-codes. Still to do: compare both keys' readings with the images of ff. 44r-46v.
 - fr. 4050 and fr. 6638 (letters 4, 5): 191 and 105 tokens not read (87.7%, 89.0%), mostly Lasry's unconfirmed tentative values - blocker: open-codes; Rosson's key was built on letters 1-3 only, and these letters are not seen here (no Gallica link in Biermann's transcription).
 - fr. 2988 ff. 2 and 9-10 with the copies fr. 3019 and fr. 20506: 31 and 53 scattered open groups, over the read bar - blocker: open-codes.
+- letter 4 (fr. 4050): decoded, not read - blocker: not-attempted; read the codes from context across the five letters and check them on the Gallica images of fr. 4050 ff. 79-81
 
 ## Escalation
 

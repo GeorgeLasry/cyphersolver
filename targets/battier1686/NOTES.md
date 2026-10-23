@@ -1,6 +1,8 @@
 # Pieter Battier to Gaspar Fagel, Madrid, 1686–1688
 
 Status: in progress (21 Oct 2026): the unread letters are workable with the same key; WAINUT's eight 1687 passages (PR #65, #67) wait on an eye check of 158 machine-read key rows.
+**22 Oct 2026, reading audit** (George Lasry's test): the 4 December 1687 (92L) and 12 February 1688 (100R) cipher blocks have holes in most sentences and are now *decoded, not read* in profile.json, as the strict screen already said. fraction_read 55% -> about 49% (estimated; the two letters' 482 tokens no longer count).
+
 
 Status: read in part; **read with known key**. Two letters pass the strict sense screen without a known contemporary decipherment:
 **24 April 1687, 230/235 = 97.9% conservatively**, and 8 April 1688,
@@ -225,6 +227,7 @@ Shifted annotations, dictionary variants and mark choices still require image ch
 - Focus-letter unresolved groups and sense: 12:6?0; getwist versus inferred Turck(en); Novelli/Hofmeester, gesoubconneert gouverneren and Sex.; name repairs, 81 and other emendations in semantic_adjustments.tsv - blocker: open-codes; key lookup alone does not settle the meaning or mark choices
 - Unread volume letters listed individually in inv/orch_letters.tsv, including 102L and the untranscribed cipher on 95R - blocker: not-attempted; not yet transcribed; workable with the same key. Eight 1687 passages read by WAINUT (wainut/, PR #65/#67) need the 158 machine-read key rows in wainut/r24_1687/key_rows_machine.tsv eye-checked before they count
 - States General parallel set NA 1.01.02 inv. 12588.120–125 - blocker: needs-physical-access; not digitised
+- 4 Dec 1687 (92L) and 12 Feb 1688 (100R) cipher blocks: decoded, not read - blocker: not-attempted; re-read on the images against the inv. 1209 key, and check the nearby decipherment sheets
 
 ## Escalation
 - [x] siblings: all 109 scans inventoried; unread letters listed in inv/orch_letters.tsv are not yet transcribed; workable with the same key

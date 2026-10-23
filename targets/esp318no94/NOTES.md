@@ -1,6 +1,8 @@
 # BnF Espagnol 318 no. 94: the viceroy of Sicily to Ferdinand, Messina, 27 April 1503 — alphabet recovered ciphertext-only and code partly read by Michael Brackx
 
 Status: in progress (contributed reading, about 90 code groups open; the decrypt needs a line-by-line check against the scans)
+**22 Oct 2026, reading audit** (George Lasry's test): the repository holds only Brackx's sign transcription; his provisional decryption (issue #62) has holes in most sentences around about 90 open code groups. No. 94 is *decoded, not read*: class read in part -> not read, method -> not solved, fraction_read 0.929 -> 0. The ciphertext-only recovery of the alphabet stands.
+
 
 Split on 21 Oct 2026 from [`targets/esp318no93/`](../esp318no93/NOTES.md), which held nos. 93 and 94 together as
 "keys not identified, no shared key claimed". Michael Brackx (GitHub [issue #62](https://github.com/dbourdeau/cyphersolver/issues/62),
@@ -106,6 +108,7 @@ What the issue raised, and what was checked here (`check94.py`):
 - about 90 code groups, 143 tokens, mostly once or twice - blocker: open-codes; two-part code, no alphabetical bracket; nouns, names and verbs that context does not fix; the Gran cifra list (BNE MSS 20.211/52) and the 'Cifra del visorrey' (BRAH 9/15 ff. 1-6) are not online
 - 14 tentative code readings (93 tokens) - blocker: open-codes; one or two contexts each
 - spelled-out stretches that do not parse (about a fifth of the letter-sign text) - blocker: open-codes; single misread glyphs in a transcription by eye; a third of the ß/thorn/B glyphs not cropped and checked; sign K unstable
+- no. 94 decryption: decoded, not read, and not in the folder - blocker: not-attempted; copy Brackx's decryption from issue #62 into texts/, check it line by line on the scans, build sentences around the open codes
 
 ## Escalation
 

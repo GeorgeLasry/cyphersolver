@@ -1,6 +1,8 @@
 # Fr. P. de Santa Cruz to Francesc Climent, 22 Oct 1399 (Puig y Puig 1920, app. XXIX)
 
 Status: found already read (Puig y Puig 1920); the cipher itself is not imaged and its key is not known.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): nothing of the letter is in the repository: Puig's print (1920, pp. 469-470) was read on Google Books in September, which now blocks scripts, and archive.org has no copy. outcome.texts_withheld carries the citation; class already solved kept.
+
 
 Split on 14 Oct 2026 from `benedict1399` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter was
 filed with Benedict XIII's own cipher letters to Climent because Puig printed them together. Benedict's key was rebuilt
@@ -30,6 +32,7 @@ The work below was done in the benedict1399 sessions of 23 Sept 2026 and is carr
 
 ## Remaining gaps
 - The ciphertext itself (no image, not transcribed) - blocker: needs-physical-access; the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original
+- Puig's printed text of the letter (pp. 469-470), not in the repository - blocker: needs-physical-access; Google Books blocks automated access, HathiTrust is behind a Cloudflare challenge, archive.org has no copy
 
 ## Escalation
 - [x] siblings: Puig's appendix index (pp. 623-627) and a full-text search for cifra/cifrada/cifrado/clave read; every cipher item listed in benedict1399 NOTES section 3

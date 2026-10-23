@@ -1,6 +1,8 @@
 # Stanisław Chomentowski at the Porte to Hetman Sieniawski, 1713-1714, in a three-digit syllabary (DECODE R7476, R7484, R7485)
 
 Status: read in part (written up 9 Oct 2026 in sieniawski1708, own entry 14 Oct 2026)
+**22 Oct 2026, reading audit:** the per-document grade C on R7484-R7485 was overturned to A: R7484 reads with scattered holes, and in R7485 the cipher passage reads in full; its holes are in the faint clear body, and pp. 116-117 are clear text, not cipher.
+
 
 **Split on 14 Oct 2026** from `sieniawski1708` under the one-key rule (George Lasry, 14 Oct 2026). These three letters
 share one syllabary; the letters once filed with them are in other keys and have their own entries and pages (a

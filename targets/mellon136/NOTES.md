@@ -6,6 +6,8 @@ cipher passage in the book, 31 passages on 19 pages between pp. 24 and 76, was t
 already read in 2022 (Lasry's transcription, Kopal's decryption, published on Schmeh's blog), and a blog reader
 had read most of the short passages, with gaps. This is the first complete reading of the cipher text in the
 book.
+**22 Oct 2026, reading audit** (George Lasry's test): reading.txt (all 31 passages) reads. The two pointers to Schmeh's post (the 2022 p. 24 reading by Lasry and Kopal, and Rieber's comment, a partial list with entries cut short) are left out of profile.json's outcome.texts: nothing of either text is in the repository, and Rieber's list does not read as sentences. They stay credited here and on the page. Claim unchanged.
+
 
 ## What the catalogue entry gets wrong
 

@@ -84,19 +84,26 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no files: the contemporary interlinear decipherment is only on the Gallica images (btv1b90606498, views 6-13), not transcribed, and the cipher was never transcribed (project work)",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): no text or link for fr. 3985 f. 20 is in the repository. Relabelled decoded, not read; class already solved -> not read; method read from existing decipherment -> not solved, until the interlinear decipherment is transcribed.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
-  "method": "read from existing decipherment",
-  "method_basis": "Read at the time: interlinear decipherments and a clear summary in the 1593 register (reported by Brice Dudout); nothing was transcribed or added here.",
+  "method": "not solved",
+  "method_basis": "Read at the time (interlinear decipherments and a clear summary in the 1593 register fr. 3983 f. 140r, reported by Brice Dudout), but none of it is transcribed in the repository, so no reading is claimed (reading audit, 22 Oct 2026). Once transcribed the method is read from existing decipherment.",
   "contribution": [
    "catalogue correction"
   ],
-  "class": "already solved",
+  "class": "not read",
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Status: no write-up. Not checked on the images here.",
+  "notes": "Status: no write-up. Not checked on the images here. 22 Oct 2026, reading audit: nothing of the letter is transcribed here; decoded, not read; class already solved -> not read, method -> not solved until it is.",
   "credits": [
    {
     "who": "dudout",
@@ -114,7 +121,17 @@
    {
     "doc": "fr3985f20",
     "label": "BnF fr. 3985 no. 7 (f. 20), Dr Mauclerc to Creil, 1593",
-    "summary": "A papal-side letter of Dr Mauclerc to Creil, 1593, one of three Mauclerc letters (fr. 3983 f. 268, fr. 3984 f. 33, fr. 3985 f. 20) that carry contemporary interlinear decipherments; the royal office's register fr. 3983 f. 140r summarises them in clear (Brice Dudout, 19 Oct 2026)."
+    "summary": "A papal-side letter of Dr Mauclerc to Creil, 1593, one of three Mauclerc letters (fr. 3983 f. 268, fr. 3984 f. 33, fr. 3985 f. 20) that carry contemporary interlinear decipherments; the royal office's register fr. 3983 f. 140r summarises them in clear (Brice Dudout, 19 Oct 2026).",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "No text and no link in the repository: the interlinear decipherment is on the Gallica images (btv1b90606498, views 6-13), never transcribed (reading audit, 22 Oct 2026); fix: fetch them through the Gallica IIIF (openapi.bnf.fr) and transcribe the interlinear text."
+   }
+  ],
+  "gaps": [
+   {
+    "item": "fr. 3985 f. 20: the interlinear decipherment, not transcribed",
+    "blocker": "not-attempted",
+    "detail": "Gallica btv1b90606498 views 6-13, reachable through the IIIF at openapi.bnf.fr (scripted downloads from gallica.bnf.fr were refused on 20 Oct 2026); also fr. 3983 f. 140r, the register summary"
    }
   ]
  }

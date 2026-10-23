@@ -140,7 +140,8 @@
    "result": "worked"
   },
   {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 199 tokens, 25 types, de-1500s order 4: reading -2.667 per letter; polyphonic: 13% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f.263: v2 transcription, solver decrypt and the hand-keyed lines 11-16; f.262: the contemporary gloss only, its cipher signs are not transcribed (missing)", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f.263: v2 transcription, solver decrypt and the hand-keyed lines 11-16; f.262: the contemporary gloss only, its cipher signs are not transcribed (missing)", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): gloss.txt (f. 262) read: page B builds, page A does not; relabelled decoded, not read. The f. 263 entry is read only on recto ll. 11-16, which is what fraction_read 0.06 counts; excerpt note added. Claim unchanged.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "de-1500s", "file": "validation.tsv", "tokens": 199, "types": 25, "tokens_per_type": 7.96, "score": -2.667, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 13% of read tokens differ from their type's commonest value"}, 
   "method": "key recovered from ciphertext-only",
@@ -156,7 +157,7 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "mk_validation.py: 199 of the 3,313 transcription codes of f.263 (p34_v2.txt) read clean on recto lines 11-16 (the rest a working decrypt, not counted); a lower bound. f.262 not counted (signs not transcribed)",
   "verification": ["contemporary decipherment", "historical consistency"],
-  "notes": "f.263: running German with local errors (working decrypt), recto lines 11-16 deciphered clean by hand (30 Sept 2026); codes der d / der g / der h are persons. f.262: the gloss is faint and only partly transcribed.",
+  "notes": "f.263: running German with local errors (working decrypt), recto lines 11-16 deciphered clean by hand (30 Sept 2026); codes der d / der g / der h are persons. f.262: the gloss is faint and only partly transcribed. 22 Oct 2026, reading audit: f. 262 decoded, not read (page A gloss faint); the f. 263 entry counts only recto ll. 11-16 (excerpt note). Claim unchanged.",
   "gaps": [
    {
     "item": "f.263 clean reading beyond recto lines 11-16",
@@ -172,6 +173,11 @@
     "item": "f.262 gloss lines A09-A11 and the faint words",
     "blocker": "illegible",
     "detail": "the contemporary gloss is faint; signs not transcribed"
+   },
+   {
+    "item": "f. 262 page A from its signs",
+    "blocker": "not-attempted",
+    "detail": "the f. 262 signs are not transcribed; page B's gloss covers every line and gives a key; transcribe both pages from the DECODE images (cookie) and read page A where the gloss is faint"
    }
   ],
   "parts": [
@@ -209,13 +215,18 @@
      "r9416/decrypt_f263.txt",
      "r9416/reading_p3_11-16.txt"
     ],
-    "summary": "A Bavarian agent's report on the Pressburg negotiations between 'beden kunigen' (Ferdinand and John Zápolya), a Turkish embassy, Imre Czibak's offer of tribute to the Sultan and Alvise Gritti's dispatch, so c. 1533-34. Broken ciphertext-only by constrained annealing: decrypt_f263.txt is the solver's working decrypt of the whole leaf (local errors, before the look-alike split); recto lines 11-16 are re-keyed by hand and checked on the image (reading_p3_11-16.txt)."
+    "summary": "A Bavarian agent's report on the Pressburg negotiations between 'beden kunigen' (Ferdinand and John Zápolya), a Turkish embassy, Imre Czibak's offer of tribute to the Sultan and Alvise Gritti's dispatch, so c. 1533-34. Broken ciphertext-only by constrained annealing: decrypt_f263.txt is the solver's working decrypt of the whole leaf (local errors, before the look-alike split); recto lines 11-16 are re-keyed by hand and checked on the image (reading_p3_11-16.txt).",
+    "language": "de",
+    "note": "Excerpt only: recto lines 11-16 are read (reading_p3_11-16.txt, 199 of 3,313 codes); the rest of f. 263 is a working decrypt, not counted (reading audit, 22 Oct 2026)."
    },
    {
     "doc": "R9416",
     "label": "f.262 (pp. 1-2), servant's letter to his duke, 'eritags nach Jacobi'",
     "decryption": "r9416/gloss.txt",
-    "summary": "A Bavarian servant to his duke, Tuesday after 25 July: troops in Austria and Styria, the Italian and Spanish foot to move through Styria and by the Danube into Hungary; he asks for seven years' pension and the Oberrichter post at Straubing. Read at the time: the faint contemporary interlinear gloss is transcribed in part; the cipher signs of this leaf were never transcribed."
+    "summary": "A Bavarian servant to his duke, Tuesday after 25 July: troops in Austria and Styria, the Italian and Spanish foot to move through Styria and by the Danube into Hungary; he asks for seven years' pension and the Oberrichter post at Straubing. Read at the time: the faint contemporary interlinear gloss is transcribed in part; the cipher signs of this leaf were never transcribed.",
+    "language": "de",
+    "state": "decoded, not read",
+    "note": "The contemporary interlinear gloss of f. 262: page B (15 lines) reads as German with a few holes, but page A (25 lines) has \"...\" and [?] in most lines and A09-A11 carry no visible gloss, so the first page does not build sentences (reading audit, 22 Oct 2026); fix: transcribe the f. 262 signs and key them from page B's full gloss, then read page A from its signs."
    }
   ],
   "key_file": [

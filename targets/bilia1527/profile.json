@@ -174,6 +174,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Harumi-Matsuba's transcriptions of ff. 102r-v, reading and decoded text of f. 102r and key (contributed/), and this project's own decodes of both pages as separate files; no contributor reading of f. 102v exists (they withheld it as unconfirmed)",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): decoded_ours_f102v.txt read; no continuous sense in any of its seven lines. The f. 102v entry relabelled decoded, not read; class and fraction_read unchanged (504/623 already counted f. 102v as unread).",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -183,14 +190,18 @@
     "label": "f. 102r (30 cipher lines)",
     "transcription": "contributed/data/transcription_f102r.txt",
     "decryption": ["contributed/docs/READING.en.md", "contributed/data/decoded_f102r.txt", "decoded_ours_f102r.txt"],
-    "summary": "Bilia dined with an old lord (name code B.58) who complained that, by letters from his son-in-law, the Duke was troubling conte Theophimo(?) over earlier prohibitions; Bilia calmed him and advises the Duke to write a letter showing in deed the good will promised in words. Harumi-Matsuba's reading (contributed/) and this project's independent decode with its own R5258 key (decoded_ours_f102r.txt) are given separately."
+    "summary": "Bilia dined with an old lord (name code B.58) who complained that, by letters from his son-in-law, the Duke was troubling conte Theophimo(?) over earlier prohibitions; Bilia calmed him and advises the Duke to write a letter showing in deed the good will promised in words. Harumi-Matsuba's reading (contributed/) and this project's independent decode with its own R5258 key (decoded_ours_f102r.txt) are given separately.",
+    "language": "it"
    },
    {
     "doc": "f102",
     "label": "f. 102v (7 cipher lines, then clear close, Burgos 22 Nov 1527)",
     "transcription": "contributed/data/transcription_f102v_unconfirmed.txt",
     "decryption": "decoded_ours_f102v.txt",
-    "summary": "Seven cipher lines continuing the letter, then the clear close dated Burgos 22 November 1527, a clear postscript on the Emperor's journey to Valencia for Christmas, and Bilia's signature. The contributor gave no reading of the cipher lines; this project's decode gives words but no continuous sense."
+    "summary": "Seven cipher lines continuing the letter, then the clear close dated Burgos 22 November 1527, a clear postscript on the Emperor's journey to Valencia for Christmas, and Bilia's signature. The contributor gave no reading of the cipher lines; this project's decode gives words but no continuous sense.",
+    "note": "Raw decoder output for the seven cipher lines of f. 102v: bracketed unknown signs in every line and letter-level nonsense (\"isoizde\", \"axaroaltn\"); no continuous sense (reading audit, 22 Oct 2026); fix: a human sign-by-sign re-transcription of f. 102v. The clear close is described in the summary but is not part of this decryption.",
+    "state": "decoded, not read",
+    "language": "it"
    }
   ],
   "key_file": "contributed/data/key.tsv",
@@ -261,6 +272,6 @@
     "published": true
    }
   ],
-  "notes": "Contributed result, checked here: the project's own R5258 key agrees with the contributor's values on 440 of 459 signs of f. 102r, and the sheet image supports the contributor on the rest (crossed x = s, θ = o). Coherent share of f. 102r estimated at about 94% (doubtful readings marked by the contributor), not measured. No. 42 of fr. 3013 (to the ambassador Taverna) is another cipher, outside this target."
+  "notes": "Contributed result, checked here: the project's own R5258 key agrees with the contributor's values on 440 of 459 signs of f. 102r, and the sheet image supports the contributor on the rest (crossed x = s, θ = o). Coherent share of f. 102r estimated at about 94% (doubtful readings marked by the contributor), not measured. No. 42 of fr. 3013 (to the ambassador Taverna) is another cipher, outside this target. 22 Oct 2026, reading audit: f. 102v decoded, not read (fraction_read already excluded it)."
  }
 }

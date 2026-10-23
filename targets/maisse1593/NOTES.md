@@ -1,6 +1,10 @@
 # Henri IV to Maisse (Venice), 8 February and 27 April 1593, in Maisse's Cipher (1592-1593) — BnF fr. 16093 ff. 406, 410
 
-Status: read from the contemporary clear copies (Brienne 13); the cipher itself not deciphered on these leaves. Written up as docs/maisse1593.html.
+Status: in progress. The Brienne 13 clear copies are not transcribed; both letters decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): no text of f. 406 or f. 410 is in the repository, only links to the cipher leaves and to the Brienne 13 copies. Both are *decoded, not read*; class read -> not read, method read from existing decipherment -> not solved until the copies are transcribed; fraction_read 1.0 -> 0.
+
+Earlier status (before the 22 Oct 2026 reading audit): read from the contemporary clear copies (Brienne 13); the cipher itself not deciphered on these leaves. Written up as docs/maisse1593.html.
 
 Split on 14 Oct 2026 from `maisse1592` under the one-key rule (George Lasry, 14 Oct 2026): one entry per key. The old
 entry (catalogue 17) joined four leaves of fr. 16093 that Tomokiyo assigns to two different ciphers. ff. 370 and 373
@@ -59,3 +63,16 @@ on ff. 406/410. The text comes from the Brienne copies (and, for f. 406, the int
 - The outcome is "read from existing decipherment", class read, with `fraction_read` 1.0 carried from the parent entry
   as the share of content obtained from the clear copies; no token of the cipher was deciphered with Tomokiyo's key
   here. If the read bar should require a sign-level decipherment, this entry is "read in part" or "not applicable".
+
+## Remaining gaps
+
+- ff. 406 and 410: the Brienne 13 clear copies, not transcribed - blocker: not-attempted; Gallica btv1b100904592 canvases 176 and 199 through the IIIF at openapi.bnf.fr; then check them against the cipher leaves and f. 404's interlinear decipherment
+
+## Escalation
+
+- [x] siblings: f. 404 (twin of f. 406, partial interlinear) and f. 412 (twin of f. 410) identified
+- [x] clear-pages: Brienne 13 fol. 171r and 193v located
+- [ ] known-keys: Tomokiyo's key for this cipher (src/henryiv_Maisse2.png) not applied
+- [x] print: Berger de Xivrey used to locate the copies
+- [n/a] key-rebuild: the key exists (Tomokiyo)
+- [ ] retry: none yet

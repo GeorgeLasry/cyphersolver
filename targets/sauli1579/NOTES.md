@@ -1,6 +1,25 @@
 # Sauli and Riario (Portugal) to the Secretariat, 1579–81 — READ (contemporary decipherments, checked with Lasry's key)
 
-Status: in progress
+Status: read (22 Oct 2026 re-read: all five records transcribed in full from the images with their interlinear
+decipherments and translated; the site page and ledgers are not updated in this pass)
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch sauli): all five records read.** The 22 DECODE images were fetched again
+(cookie) and every page transcribed in full: the clear text (Midas's 2017 draft corrected on the image for R190/R191)
+and, for every cipher passage, the secretariat's interlinear decipherment, each checked against the key decode. The
+readings are `texts/R190_reading.md` ... `R194_reading.md` with English in `texts/R19*_en.md`; the log is
+`texts/R190-R194_reread_log.md`, label corrections `texts/R190-R194_corrections.tsv`. _check_reading on the text bodies:
+0.78-0.96 clean sentences; real holes about a dozen words in all.
+- Dates and authors: R190 = Riario to the Earl of Desmond, **Elvas 12 January 1581**, a court news note and a memorial
+  to Philip II on the Italian infantry; R191 = Riario to the Secretary, mid-January 1581 (Smerwick massacre, Alba's report
+  on the 700 Italians, two ships to Ireland, the Duke of Sora, an extract "Del Gran Duca al Duara", Anselmo to be paid
+  off); R192 = Riario, **4-5 January 1581** ("Hoggi li 4 di genaro"), with a copy of 29 Nov 1580; R193 = Badajoz 2 [Oct?]
+  1580 and Elvas 1[0] Dec 1580, both signed by Riario; R194 = undated leaf.
+- Key: **82 = navi** (R191 f. 99r "dui navi" twice; R192 "la Regina d'Inghilterra navi"): Lasry's "Hune" is Midas's
+  misreading of the gloss "navi". 72 = Regina (R190, R192) and = denari (R191, R192 copy, R194). 60 = Duca, 77 9 00 = il
+  Marchese. 10, 20/28 and 40 keep two glossed senses each (0 and the looped 8 are one shape in this hand; 40 "guerra" in
+  "in una 40"). R191 f. 101r lines 4-7 have no gloss and were decoded with the key.
+- The earlier blocks below are kept as the record; the "decoded, not read" audit verdict is superseded.
+
 
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 R190-R194 are all **decoded, not read**. Lasry's R190/R191 decryption is sign-by-sign rows with ?-marks; the R192-R194
@@ -74,8 +93,16 @@ decryption on DECODE (2020) are the prior solution.
 
 ## Remaining gaps
 
-- R190, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
-- R191, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
-- R192, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
-- R193, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
-- R194, decoded, not read - blocker: not-attempted; transcribe the contemporary interlinear decipherment and the clear text in full
+- R190-R194 code groups 10 (Italia / V.S. Ill.ma), 20/28 (S.M.tà / Italiani), 40 (cattolici / guerra), 72 (Regina / denari): each read from its gloss in place - blocker: open-codes (two senses glossed; the 0/8 shapes cannot be separated on the images)
+- R193/R194 four-digit prefixes 6371/7771/7361/7761 before "per"/"de la": no gloss word - blocker: open-codes (no decipherment of them anywhere)
+- R194 short group for "religione cattolica" and the unwritten object of "condescendere a li" - blocker: open-codes
+- R190 f. 93r, R192 ff. 196r and 197r: three short clear-text stretches left as [...] - blocker: illegible (cramped hand at the DECODE image resolution)
+
+## Escalation
+
+- [x] siblings: R190-R194 read together; the code groups compared across all five (82 navi from R191 settles R192)
+- [x] clear-pages: every interlinear decipherment and the clear text transcribed from the 22 DECODE images (22 Oct 2026); R193 f. 238r is itself the deciphered copy
+- [x] known-keys: Lasry's key (DECODE D3258) applied to every passage; unglossed R191 f. 101r lines decoded with it
+- [x] print: web search 21 Sept 2026 for an edition of Riario's legation letters: none found
+- [x] key-rebuild: not needed (key on DECODE, extended from the glosses)
+- [x] retry: 22 Oct 2026 full re-read (texts/R190-R194_reread_log.md)

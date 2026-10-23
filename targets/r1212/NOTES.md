@@ -1,6 +1,8 @@
 # R1212 — Pál Bornemisza's cipher report to Ferdinand I on the Kendi treason (Transylvania, c. 1556)
 
 Status: read (22 Sept 2026). Key: recovered (DECODE R1211, used unchanged). Written up: docs/r1212.html.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): on pp. 3-4 the cipher runs, read in order, make continuous Latin ("horum omnium motuum et perniciosarum factionum unicus author et certissimus est Franciscus Kendi ..."); the clear scraps between them are separate. Per-document C overturned to B; claim unchanged.
+
 
 ÖStA HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 13, Fasc. 20, ff. 38–39 (DECODE R1212, 4 pp., Latin).
 Catalogue #267 "Unknown sender to Paulo Borne?".

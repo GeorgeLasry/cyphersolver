@@ -1,6 +1,10 @@
 # "Ferenc Rákóczi II to unknown recipient": three French letters to Rákóczi — DECODE R852, R912, R922
 
-Status: read. The three French letters (R852, R912, R922) are reports *to* Rákóczi. R912 and R922 read with the
+Status: in progress. R852 read from its clear copy; R912 and R922 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R912_image_read.txt and R922_image_read.txt are syllable-split decodes with misreadings in most lines; after the openings no coherent sentence can be built, so both are *decoded, not read*. R852 reads from its contemporary clear copy. Class read -> read in part; fraction_read 0.974 -> 0.182 (R852's 523 of 2,875 groups).
+
+Earlier status (before the 22 Oct 2026 reading audit): read. The three French letters (R852, R912, R922) are reports *to* Rákóczi. R912 and R922 read with the
 preserved key DECODE R639 at about 97% of groups from a fresh transcription of the images. About a third of those
 groups had been deciphered at the time, between the lines: nearly all of R912's first page, the first lines of its
 pages 2 and 3, and the first two lines of R922 (recorded 30 Sept 2026, "Deciphered at the time" below). R852 has its own clear
@@ -157,3 +161,16 @@ rebuilt key and its reading are now in `../rakoczi1711/`.
 - `decode_tr.py`: the corrected R639 table. `R922_image_read.txt`, `R912_image_read.txt`: readings.
 - `R852_clear.txt`: the contemporary clear copy of R852.
 - `decode.py`, `R*_key08_read.txt`: pass 1 on DECODE's transcriptions.
+
+## Remaining gaps
+
+- R912 and R922: decoded, not read - blocker: not-attempted; re-read the groups on the images (img/, DECODE cookie) with the R639 key and write normalised French with word division and a translation
+
+## Escalation
+
+- [x] siblings: the other records of catalogue item 44 checked (R483 is a different cipher, now rakoczi1711)
+- [x] clear-pages: R852's clear copy; the interlinear decipherment on R912 p. 1 and R922's first lines
+- [x] known-keys: DECODE R639 (Bonac-Groffey) is the key
+- [ ] print: no search for a printed text is recorded in these notes
+- [x] key-rebuild: R639's table corrected from the image
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

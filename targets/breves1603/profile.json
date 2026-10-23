@@ -125,6 +125,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Berger de Xivrey's 1853 printed texts of the three full letters (berger/*.txt) and his summaries of the other nine (berger/table_pp667-682.txt); key.md (the office key, fr. 3462 f. 103). No transcription (fr. 3541 not digitised); nine letters only as summaries.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): berger/table_pp667-682.txt is the printed table of abstracts, not the nine letters. That entry relabelled decoded, not read (summaries only); the three letters printed in full (ff. 60, 63, 66) read.",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -138,7 +145,7 @@
    "contemporary decipherment",
    "key confirms"
   ],
-  "notes": "Not deciphered here: the ciphertext of fr. 3541 is not online. Clear text exists in print (3 full, 9 summaries) and in fr. 4029.",
+  "notes": "Not deciphered here: the ciphertext of fr. 3541 is not online. Clear text exists in print (3 full, 9 summaries) and in fr. 4029. 22 Oct 2026, reading audit: the nine summarised letters relabelled decoded, not read (summaries, not texts); the three printed in full stand.",
   "credits": [
     {"who": "berger", "role": "key or decipherment used", "note": "Lettres missives VI (1853), printed from a contemporary clear copy: 3 letters in full, 9 in summary", "date": "1853", "source": "Berger de Xivrey, Recueil des lettres missives de Henri IV, VI (1853)"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "office key BnF fr. 3462 f. 103, checked against the figures"},
@@ -150,30 +157,42 @@
     "label": "Paris, 18 Feb 1603 (fr. 3541 f. 60)",
     "decryption": "berger/1603-02-18_f60.txt",
     "summary": "Henri IV to François Savary de Brèves, his ambassador at the Porte (1591-1605): among other matters, Leopold's coadjutorship obtained by the Cardinal of Lorraine without the King's knowledge, and the arms of protestants and catholics 'jà prestes d'une part et d'aultre'. Text: Berger de Xivrey, Lettres missives VI (1853) pp. 31-32, printed from a contemporary clear copy (Monmerqué's 'Lettres à l'ambassadeur du Levant'); Tomokiyo's partial overlay reading of f. 60 is corrected against it in NOTES.md.",
-    "note": "No transcription: fr. 3541 is not digitised (project work once a reproduction is obtained)."
+    "note": "No transcription: fr. 3541 is not digitised (project work once a reproduction is obtained).",
+    "language": "fr"
    },
    {
     "doc": "fr3541-1603",
     "label": "Metz, 31 Mar 1603 (f. 63)",
     "decryption": "berger/1603-03-31_f63.txt",
     "summary": "Henri IV to Brèves, written at Metz 'le dernier jour de mars' (not 1 March as usually cited); full text in Berger de Xivrey, Lettres missives VI (1853) pp. 63-65, from the clear copy.",
-    "note": "No transcription: fr. 3541 is not digitised."
+    "note": "No transcription: fr. 3541 is not digitised.",
+    "language": "fr"
    },
    {
     "doc": "fr3541-1603",
     "label": "Fontainebleau, 17 Apr 1603 (f. 66)",
     "decryption": "berger/1603-04-17_f66.txt",
     "summary": "Henri IV to Brèves from Fontainebleau; full text in Berger de Xivrey, Lettres missives VI (1853) pp. 76-78, with the cipher passages in italics.",
-    "note": "No transcription: fr. 3541 is not digitised."
+    "note": "No transcription: fr. 3541 is not digitised.",
+    "language": "fr"
    },
    {
     "doc": "fr3541-1603",
     "label": "Nine further letters, 1 May - 23/24 Dec 1603 (ff. 69-104)",
     "decryption": "berger/table_pp667-682.txt",
     "summary": "The nine other ciphered letters of 1603 from Henri IV to Brèves, known only from Berger de Xivrey's summaries (Lettres missives VI, pp. 667-682, Wikisource OCR).",
-    "note": "Summaries only, not full decryptions. The full clear text is in BnF fr. 4029 ff. 118-128 (register of Henri IV's letters to Brèves), not digitised; no transcription, fr. 3541 is not digitised (project work: reproductions of fr. 4029 and fr. 3541)."
+    "note": "Summaries only, not the letters: berger/table_pp667-682.txt is the OCR of Berger de Xivrey's printed table (one-paragraph abstracts of many letters 1603-1606). Excerpt only: the full clear text is in BnF fr. 4029 ff. 118-128 (register of Henri IV's letters to Breves), not digitised; fr. 3541 is not digitised either (reading audit, 22 Oct 2026).",
+    "state": "decoded, not read",
+    "language": "fr"
    }
   ],
-  "key_file": "key.md"
+  "key_file": "key.md",
+  "gaps": [
+   {
+    "item": "The nine further letters of 1603 (ff. 69-104): only Berger's summaries in the repository",
+    "blocker": "needs-physical-access",
+    "detail": "the full clear text is in BnF fr. 4029 ff. 118-128 and the ciphertext in fr. 3541; neither volume is digitised"
+   }
+  ]
  }
 }

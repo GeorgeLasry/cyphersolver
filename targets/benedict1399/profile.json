@@ -199,6 +199,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): src/plate475_check.tsv (word-by-word check of the only ciphertext image, the p. 475 plate) as transcription; Puig's 1920 printed decipherment linked by its Google Books URL (no local text copy yet); key.md as key file.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): the entry's text in the repository is the p. 475 plate check, which builds Latin clauses; the ten letters are Puig's print (Google Books, blocked). Kept read for the plate only, with an excerpt note; fraction_read_source restated as the plate's sign-confirmed share.",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -235,9 +242,14 @@
     "item": "The other nine letters' ciphertext (1399-1403)",
     "blocker": "needs-physical-access",
     "detail": "The key applies, but no image exists; Puig's reading stands for them."
+   },
+   {
+    "item": "Puig's printed text of the ten letters, not in the repository",
+    "blocker": "needs-physical-access",
+    "detail": "Google Books blocks automated access (403/CAPTCHA) and HathiTrust 100676638 sits behind a Cloudflare challenge; the reading is Puig's and is not claimed here beyond the p. 475 plate"
    }
   ],
-  "notes": "Read by Puig y Puig in 1920 (the reading is his). Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed (Benedict's ten kept here; the others split off on 14 Oct 2026); in a second session the key Puig never printed rebuilt from the p. 475 facsimile against his text (20 letters, name sign, null separators), confirming 91.4% of the plate's cipher letters sign by sign (96.3% of the legible part) with no contradiction, and correcting Puig in three places (tenendum, absque congedio, necessaria). fraction_read is the plate's sign-by-sign confirmed share, not the reading of the text, which is Puig's and complete.",
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Added here: Meister's second-hand ACB report identified with Puig's printed decipherments; the 14 cipher items listed (Benedict's ten kept here; the others split off on 14 Oct 2026); in a second session the key Puig never printed rebuilt from the p. 475 facsimile against his text (20 letters, name sign, null separators), confirming 91.4% of the plate's cipher letters sign by sign (96.3% of the legible part) with no contradiction, and correcting Puig in three places (tenendum, absque congedio, necessaria). fraction_read is the plate's sign-by-sign confirmed share, not the reading of the text, which is Puig's and complete. 22 Oct 2026, reading audit: only the p. 475 plate check is in the repository; the reading of the ten letters is Puig's print, not copied here.",
   "fraction_read_method": "measured",
   "credits": [
    {
@@ -251,12 +263,22 @@
   "texts": [
    {
     "doc": "benedict-1399-1403",
-    "label": "Ten letters, Puig app. XXVI-LII (22 Sep 1399 - 8 Feb 1403); facsimile p. 475 = app. XXXV, 22 Jun 1400",
+    "label": "Ten letters, Puig app. XXVI-LII (22 Sep 1399 - 8 Feb 1403); in the repository only the facsimile p. 475 (app. XXXV, 22 Jun 1400), checked word by word",
     "transcription": "src/plate475_check.tsv",
     "decryption": "https://books.google.com/books?id=CuOlkxWnk-EC",
-    "summary": "Benedict XIII (Pedro de Luna), besieged in Avignon, writes in cipher to his agent Francesc Climent (Çapera) in Barcelona on the Schism diplomacy of 1399-1403: the embassy of Aragon, Castile and Navarre, the 'submission' he refused, the see of Lérida, a demand for 3,000 francs, and the bulls for Castile's restitution of obedience. The decipherment is Sebastián Puig y Puig's, printed with the cipher passages in italics in Pedro de Luna (Barcelona 1920), appendix pp. 466-491 (Google Books scan); the only image of the cipher is the p. 475 facsimile, checked word by word in src/plate475_check.tsv."
+    "summary": "Benedict XIII (Pedro de Luna), besieged in Avignon, writes in cipher to his agent Francesc Climent (Çapera) in Barcelona on the Schism diplomacy of 1399-1403: the embassy of Aragon, Castile and Navarre, the 'submission' he refused, the see of Lérida, a demand for 3,000 francs, and the bulls for Castile's restitution of obedience. The decipherment is Sebastián Puig y Puig's, printed with the cipher passages in italics in Pedro de Luna (Barcelona 1920), appendix pp. 466-491 (Google Books scan); the only image of the cipher is the p. 475 facsimile, checked word by word in src/plate475_check.tsv.",
+    "note": "Excerpt only: the full decipherment is Puig y Puig, Pedro de Luna (Barcelona 1920), app. XXVI-LII, pp. 466-491 (Google Books CuOlkxWnk-EC, blocked for automated access; HathiTrust 100676638 behind Cloudflare). Read by Puig; the repository holds the p. 475 plate check only (reading audit, 22 Oct 2026).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Excerpt only: src/plate475_check.tsv, taken in order, builds Latin clauses (\"K cum duce burgundie et ideo est sic negocium tenendum in suspenso ... quod revertitur in siciliam, alii vero asserunt quod K factus cancellarius debet in catalonia\"); line 4 is unchecked. The other nine letters are Puig's print and are not in the repository."
+    },
+    "state": "read",
+    "language": "la"
    }
   ],
-  "key_file": "key.md"
+  "key_file": "key.md",
+  "fraction_read_source": "src/plate475_check.tsv: share of the p. 475 plate's cipher letters (one page of app. XXXV) confirmed sign by sign against the rebuilt key. Not a share of the ten letters: their text is Puig y Puig's print (1920), which is not in the repository (reading audit, 22 Oct 2026)."
  }
 }

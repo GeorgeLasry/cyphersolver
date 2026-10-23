@@ -125,14 +125,21 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 41v letter stream and line-by-line sign transcriptions linked, running decryption copied from NOTES.md to texts/f41v_decryption.md, key adjustments copied to texts/key.md; f. 41r points to Lasry's overlays on cryptiana GL.htm (his f. 41r text is not in the repository).",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/f41v_decryption.md reads (A); f. 41r points only to Lasry's overlay images, with no text in the repository. f. 41r relabelled decoded, not read (excerpt only); class read -> read in part; fraction_read 0.998 -> about 0.5 (estimated).",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Lasry's 2022 key for BnF fr. 3081 f. 41 (cryptiana GL.htm, francis.htm) read f. 41r before; the project read f. 41v, which had no published reading, with the same key.",
   "contribution": ["transcription", "key extended or corrected", "sender or date identified"],
-  "class": "read",
-  "fraction_read": 0.998,
+  "class": "read in part",
+  "fraction_read": 0.5,
   "grades": {
    "H": 4,
    "C": 8,
@@ -142,7 +149,7 @@
   "verification": [
    "key confirms"
   ],
-  "notes": "f. 41r read by Lasry 2022; f. 41v read here. fraction_read counted on f41v_letters.txt: 2 of 1,341 tokens without a value (l. 19 sign, l. 30 code). Catalogue entry 195 removed.",
+  "notes": "f. 41r read by Lasry 2022; f. 41v read here. fraction_read counted on f41v_letters.txt: 2 of 1,341 tokens without a value (l. 19 sign, l. 30 code). Catalogue entry 195 removed. 22 Oct 2026, reading audit: f. 41r decoded, not read here (Lasry's reading exists only as overlay images); class read -> read in part.",
   "key": "partial",
   "gaps": [
    {
@@ -159,6 +166,11 @@
     "item": "the articles after f. 41v",
     "blocker": "needs-physical-access",
     "detail": "text breaks off; f. 42 blank"
+   },
+   {
+    "item": "f. 41r: Lasry's reading, on overlay images only",
+    "blocker": "not-attempted",
+    "detail": "transcribe his three overlay crops (main checkout prior/, git-ignored; cryptiana GL.htm) into a text file and join it to the f. 41v running text"
    }
   ],
   "credits": [
@@ -170,16 +182,22 @@
     "label": "f. 41r (George Lasry, 24 May 2022)",
     "transcription": "https://cryptiana.web.fc2.com/code/GL.htm",
     "decryption": "https://cryptiana.web.fc2.com/code/GL.htm",
-    "summary": "The heading of the articles: 'Articles iurés par monsieur le cardinal Campege es mains de messeigneurs les cardinaulx de Bourbon, Lorraine et Tornon'. Lasry's decipherment is given as red overlays on the page crops on Tomokiyo's cryptiana; no text copy is in this repository."
+    "summary": "The heading of the articles: 'Articles iurés par monsieur le cardinal Campege es mains de messeigneurs les cardinaulx de Bourbon, Lorraine et Tornon'. Lasry's decipherment is given as red overlays on the page crops on Tomokiyo's cryptiana; no text copy is in this repository.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Excerpt only: read by George Lasry (24 May 2022); his decipherment is drawn on overlay images on cryptiana GL.htm (copies in the main checkout targets/marechaux1520/prior/GL_BnFfr3081_f41_decipher1-3.png), and no text of it is in the repository (reading audit, 22 Oct 2026); fix: transcribe the overlays into texts/."
    },
    {
     "doc": "R2322",
     "label": "f. 41v",
     "transcription": ["f41v_letters.txt", "f41v_lines01-19.md", "f41v_lines20-38.md"],
     "decryption": "texts/f41v_decryption.md",
-    "summary": "Francis I refuses to join a crusade against the Turk until Milan, Asti and Genoa are restored to him; Cardinal Campeggio swears that, if elected pope, he will press the Emperor and the holders of Milan to return them. Tournon became a cardinal in 1530 and Campeggio died in 1539, so these are articles for the conclave of October 1534; the page breaks off mid-sentence."
+    "summary": "Francis I refuses to join a crusade against the Turk until Milan, Asti and Genoa are restored to him; Cardinal Campeggio swears that, if elected pope, he will press the Emperor and the holders of Milan to return them. Tournon became a cardinal in 1530 and Campeggio died in 1539, so these are articles for the conclave of October 1534; the page breaks off mid-sentence.",
+    "language": "fr"
    }
   ],
-  "key_file": ["texts/key.md", "https://cryptiana.web.fc2.com/code/GL.htm"]
+  "key_file": ["texts/key.md", "https://cryptiana.web.fc2.com/code/GL.htm"],
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Estimated, reading audit 22 Oct 2026: f. 41v reads (1,339 of 1,341 letter tokens given a value, f41v_letters.txt); f. 41r, a full page of the same cipher, is Lasry's reading on overlay images and is not transcribed here, so about half the cipher of the leaf is in a document that reads in the repository. The earlier 0.998 (f. 41v only) is withdrawn as a figure for the leaf."
  }
 }

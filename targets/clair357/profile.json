@@ -122,27 +122,39 @@
    "what": "Transcribed f. 168r and the interlinear glosses as the text of the letter.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption (f. 168r clear copy + interlinear glosses) and key table copied from NOTES.md to texts/; no full cipher transcription exists, so texts/f167_transcription.txt holds only the sample figure runs from NOTES.", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption (f. 168r clear copy + interlinear glosses) and key table copied from NOTES.md to texts/; no full cipher transcription exists, so texts/f167_transcription.txt holds only the sample figure runs from NOTES.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/f167_decryption.md read. The f. 168r clear copy builds sentences; the interlinear part (f. 167r after the cross, f. 167v) is fragments with holes in most sentences. Entry split into a read part and a decoded, not read part; class read -> read in part; fraction_read unknown -> about 0.5 (estimated).", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "The letter is covered by a contemporary clear copy on f. 168r (to the cross mark) and an interlinear decipherment on f. 167r-v after it, both bound with the cipher; Tomokiyo's partial key was used only to check the two layers against the figures.",
   "contribution": ["key extended or corrected"],
-  "class": "read",
-  "fraction_read": "unknown",
+  "class": "read in part",
+  "fraction_read": 0.5,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
    "key confirms"
   ],
-  "notes": "Read from the contemporary decipherment, not by decoding every group; several uncertain words and verso names remain open.",
+  "notes": "Read from the contemporary decipherment, not by decoding every group; several uncertain words and verso names remain open. 22 Oct 2026, reading audit: the entry split; the f. 168r copy reads, the f. 167 interlinear part is decoded, not read; class read -> read in part.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy f. 168r and interlinear decipherment on f. 167r-v, bound with the letter"},
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial key (henryiii.htm, Anonymous Figure Cipher 1586), checked and extended here", "source": "cryptiana henryiii.htm"}
   ],
   "texts": [
-   {"doc": "f167", "label": "ff. 167-168, 28 Oct 1586", "transcription": "texts/f167_transcription.txt", "decryption": "texts/f167_decryption.md", "summary": "A Catholic nobleman of the Angoumois or Saintonge writes on 28 October 1586, probably to Henri, duc de Guise: he has been ill for two months, reports Catherine de Médicis's negotiation with Navarre, says Navarre's Catholic confidant Fumé, vice-admiral of Guyenne, has repeatedly proposed a reconciliation between Navarre and the addressee, and mentions the Queen of England and Villeroy's letter about satisfying Mayenne."}
+   {"doc": "f167", "label": "ff. 167-168, 28 Oct 1586: f. 168r, the contemporary clear copy of f. 167r ll. 1-30 (to the cross mark)", "transcription": "texts/f167_transcription.txt", "decryption": "texts/f167_decryption.md", "summary": "A Catholic nobleman of the Angoumois or Saintonge writes on 28 October 1586, probably to Henri, duc de Guise: he has been ill for two months, reports Catherine de Médicis's negotiation with Navarre, says Navarre's Catholic confidant Fumé, vice-admiral of Guyenne, has repeatedly proposed a reconciliation between Navarre and the addressee, and mentions the Queen of England and Villeroy's letter about satisfying Mayenne.", "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "The f. 168r clear copy builds French sentences with scattered [?] and (…) holes; the last sentence is uncertain."}, "state": "read", "language": "fr"},
+   {"doc": "f167", "transcription": "texts/f167_transcription.txt", "decryption": "texts/f167_decryption.md", "label": "ff. 167-168, 28 Oct 1586: f. 167r from the cross mark and f. 167v, interlinear decipherment", "summary": "The rest of the letter, glossed word by word over the figures: Fume, vice-admiral of Guyenne and Navarre's Catholic confidant, proposes a reconciliation; the Queen of England; Villeroy writes about satisfying Mayenne.", "language": "fr", "state": "decoded, not read", "note": "The glosses are transcribed as fragments (\"... des [⊖] ... de la court ...\", \"Il se trouvera [?] ... mesme ... la guerre\"); most sentences are only partly recoverable, and the verso glosses were not read word by word (reading audit, 22 Oct 2026); fix: read the glosses at full resolution (Gallica btv1b9001053r canvases 331-332) and decode the unglossed figures with the key."}
   ],
-  "key_file": "texts/key.md"
+  "key_file": "texts/key.md",
+  "gaps": [
+   {
+    "item": "f. 167r after the cross mark and f. 167v: interlinear decipherment read only in fragments",
+    "blocker": "not-attempted",
+    "detail": "Gallica btv1b9001053r canvases 331-332 (full-resolution copies in the main checkout img/); read the glosses word by word and decode unglossed figures with Tomokiyo's table as extended here"
+   }
+  ],
+  "fraction_read_source": "Estimated, 22 Oct 2026 reading audit: only the f. 168r clear copy (f. 167r ll. 1-30) reads as sentences, roughly half the letter; by words of texts/f167_decryption.md it is 383 of 667 (0.57), but the glossed part's \"...\" hide unread words. The field was \"unknown\" before.",
+  "fraction_read_method": "estimated",
+  "key": "partial"
  }
 }

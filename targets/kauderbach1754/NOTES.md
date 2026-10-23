@@ -1,6 +1,10 @@
 # Kauderbach (The Hague) to Friedrich August II, 1754-58 — KHA Prins Willem V inv. 201
 
-Status: read (19 Sept 2026); written up as docs/kauderbach1754.html
+Status: in progress. Nine letters read; R1954 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): nine of the ten hand readings build French sentences. read/R1954.txt (March 1756, about 65% read on a weak transcription) has holes in most sentences: *decoded, not read*. Class read -> read in part; fraction_read 0.998 (groups given a value) -> 0.81 (groups in letters that read).
+
+Earlier status (before the 22 Oct 2026 reading audit): read (19 Sept 2026); written up as docs/kauderbach1754.html
 
 Catalogue target: Johann Heinrich Kauderbach, Saxon-Polish resident at The Hague, despatches to Dresden intercepted
 by the Dutch (copies in the Stadtholder's archive, KHA Prins Willem V inv. 201). DECODE R1043, R1044, R1954, R1958,
@@ -72,3 +76,17 @@ abbreviations inside the runs (`E.M.`, `C./.`, `Q./.`, `M./.`, `S./.`, `J./.`, `
    dernier sol et combattre" is "... pour combatre" (66 96 94 31 19 29 03 pour-co-m-b-a-t-re; no 26 = et). Corrected
    in both reading files and in the write-up (summary, R2080 and R1043 extracts). Still to correct in the shared
    files: `decode_updates/decryptions/R1043.txt` and `R2080.txt` repeat the old wording.
+
+## Remaining gaps
+
+- R1954 (March 1756, 1,621 groups): decoded, not read - blocker: not-attempted; re-transcribe from the DECODE images and re-decode with key.json
+- nomenclator names left as code letters ([C./.], [Q./.], [S./.] ...) - blocker: open-codes; the 1761 key R936 does not carry this table's names
+
+## Escalation
+
+- [x] siblings: all ten records of KHA Prins Willem V inv. 201 decoded with one key
+- [ ] clear-pages: not looked for
+- [x] known-keys: Kauderbach's 1761 key R936 (vocabulary only; numbers differ)
+- [ ] print: not searched for R1954
+- [x] key-rebuild: table recovered by annealing
+- [ ] retry: R1954 not re-transcribed

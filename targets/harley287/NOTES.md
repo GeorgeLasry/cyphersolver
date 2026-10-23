@@ -1,6 +1,10 @@
 # Harley MS 287: Lord Cobham at Ostend, 20–22 March 1587/8 (DECODE R8477, R8482–R8487)
 
-Status: read in part (every cipher run of ff. 70r–72v read in sense; one surname, one verb, scattered words and the code numbers 42 and .7. open; share read not measured; f. 11 is a different item, not read). Reclassified from "read" 22 Sept 2026: nothing measures the share of cipher tokens read, so the read bar (README Conventions) is not shown to be met.
+Status: in progress. Every cipher run read in sense, with not-attempted gaps below (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): the three documents read; the per-document C on the 20 March letter is overturned to B (R8485 and R8486 read; the holes are in the three short runs of R8487). Claim unchanged; the status line now says in progress because gaps below are not-attempted.
+
+Earlier status (before the 22 Oct 2026 reading audit): read in part (every cipher run of ff. 70r–72v read in sense; one surname, one verb, scattered words and the code numbers 42 and .7. open; share read not measured; f. 11 is a different item, not read). Reclassified from "read" 22 Sept 2026: nothing measures the share of cipher tokens read, so the read bar (README Conventions) is not shown to be met.
 
 Catalogue item 132 ("Unknown sender to unknown recipient, 7 ciphertexts, 20–22 Mar 1587"). Sibling item 131
 (R8490–R8496, Cobham to Walsingham, May–June 1588) is worked in `targets/cobham1588/` by another session, which uses the

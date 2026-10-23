@@ -148,6 +148,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): this project's shape-code transcription (codes.txt) and the letter-level decryption reading_raw.txt (output of decode.py, rerun and identical); key = Lasry's table as shown by Tomokiyo (tomokiyo_key.png) plus the extended table copied from NOTES.md to texts/key.md. Lasry published the key only, no plaintext",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): reading_raw.txt read line by line against NOTES' summary and second-pass resolutions. The letter-level slips are the key's homophones and normalise mechanically; the sentences build except in the doubtful stretches already listed. Audit grade C overturned to B; class and fraction unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -157,7 +164,15 @@
     "label": "BnF fr. 3034 ff. 156r-157v, Bologna, 4 November 1529",
     "transcription": "codes.txt",
     "decryption": "reading_raw.txt",
-    "summary": "Ambrogio Bizozola reports to Maximilian Sforza, then in France, that the Emperor's council has several times discussed dividing the state of Milan among the Duke of Savoy, the Marquises of Monferrato and Mantua and the Duke of Ferrara, and whether Duke Francesco would have to be satisfied. The Emperor is at the Certosa outside Bologna, with his entry the next day (Charles V entered Bologna on 5 November 1529); the letter also deals with misere Iulio, Trivulzio and Alessandro Attavante."
+    "summary": "Ambrogio Bizozola reports to Maximilian Sforza, then in France, that the Emperor's council has several times discussed dividing the state of Milan among the Duke of Savoy, the Marquises of Monferrato and Mantua and the Duke of Ferrara, and whether Duke Francesco would have to be satisfied. The Emperor is at the Certosa outside Bologna, with his entry the next day (Charles V entered Bologna on 5 November 1529); the letter also deals with misere Iulio, Trivulzio and Alessandro Attavante.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. reading_raw.txt is spaced, line-by-line decoder output with the key's systematic homophone slips (a/u, e/p: \"dacato\" ducato, \"qaesta\" questa, \"rpg ione\" ragione); read through, nearly every line builds Italian sense: the council's talk of dividing Milan among Savoy, Monferrato, Mantua and Ferrara, the Archbishop of Bari's view, the Emperor at the Certosa and the cardinals riding out to him, misser Iulio's affair, Attavante and Trivulzio's spenditore. Open: the date line (157v ll. 9-10) and about 35 doubtful signs (doubtful.txt). A normalised Italian text and a translation are still to be written."
+    },
+    "state": "read",
+    "language": "it"
    }
   ],
   "key_file": ["tomokiyo_key.png", "texts/key.md"],
@@ -171,7 +186,7 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "All four pages read; 54 of 1907 signs doubtful; Lasry key plus homophones; dated from content.",
+  "notes": "All four pages read; 54 of 1907 signs doubtful; Lasry key plus homophones; dated from content. 22 Oct 2026, reading audit: the per-document C overturned (B, raw but readable line by line); a normalised text and translation are still to be written.",
   "key": "recovered",
   "gaps": [
    {

@@ -1,5 +1,7 @@
 # The unsolved ADFGVX messages of 1918 — a working decoder, and page 100 reproduced
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the nine messages read in full in 2017 (pp. 100, 105, 109, 132, 146, 171, 176, 187 and its second part) read as German telegrams; the three partial readings (p. 164 twice, VGADA p. 215) and the ten open messages are *decoded, not read*. The readings table is now two entries in profile.json, and the claim is read in part: 1,945 of 3,966 letters (49%) in messages that read.
+
 Twenty-two ADFGVX radio messages from the Eastern Front sit on Klaus Schmeh's Top 50 as unsolved.
 They are not unbroken ciphers. George Lasry, Ingo Niebel, Nils Kopal and Arno Wacker broke the James
 Rives Childs corpus and **published the keys** — fourteen three-day periods, 618 cryptograms
@@ -165,3 +167,17 @@ and the README one row per part:
 The last row is "not solved": the entry is not complete while those ten are open. Credits stay as they were:
 the published period keys (Lasry, Niebel, Kopal, Wacker), Lasry's CHI key and its two messages (his comments
 50-53), Norbert's and Baertl's 2017 readings.
+
+## Remaining gaps
+
+- ten open messages (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198, 217; 1,490 letters) - blocker: no-key-material; no published period key fits, Lasry's CHI key included; heavier mutilation or an unlisted key needs the Childs originals
+- three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) - blocker: needs-physical-access; marked transmission gaps (44, 44, 11 letters) in the printed transcription
+
+## Escalation
+
+- [x] siblings: all 22 residue messages tested against the fourteen period keys and Lasry's CHI key (block-edit search)
+- [x] clear-pages: none; radio messages
+- [x] known-keys: the published period keys (Lasry, Niebel, Kopal, Wacker) and the CHI 13 Nov key
+- [x] print: the 2017 Cipherbrain thread consolidated (texts/residue22_decryption.md); no later edition
+- [x] key-rebuild: three damaged key squares repaired; no key-free recovery possible at 84-240 letters
+- [x] retry: deeper search on p. 132 (deep.py); the ten open messages retried with every key

@@ -152,19 +152,20 @@
    "result": "worked"
   },
   {"date": "2026-10-21", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3127 tokens, 58 types, es-golden-age order 4: reading -2.351 per letter; random keys -4.578 (z 8.0); key annealed onto shuffled ciphertext best -3.12 (mean -3.154, z 27.5); annealer on the real text -2.374. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Brackx's sign transcription ct94_brackx.txt; his normalised decryption is only in issue #62 (linked; a copy in the folder is still needed)", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Brackx's sign transcription ct94_brackx.txt; his normalised decryption is only in issue #62 (linked; a copy in the folder is still needed)", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the repository holds only the sign transcription; Brackx's provisional decryption (issue #62) has holes in most sentences around about 90 open code groups. Per-document grade D confirmed; no. 94 relabelled decoded, not read; class read in part -> not read; method -> not solved; fraction_read 0.929 -> 0. The ciphertext-only alphabet recovery is unaffected.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-21", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3127, "types": 58, "tokens_per_type": 53.91, "score": -2.351, "nulls": {"random keys": {"n": 200, "mean": -4.578, "sd": 0.279, "max": -3.962, "z": 8.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.154, "sd": 0.029, "max": -3.12, "z": 27.5, "p": 0.1429}}, "power": -2.374, "verdict": "pass", "notes": "claimed per-occurrence score -2.351; polyphony 0.0; 269 unread tokens left out; annealer on the real text from random keys reached -2.374"}, 
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "Brackx recovered the 39-class homophonic alphabet by annealing the letter signs against a Spanish 5-gram with no crib or key, then read code groups from context; the alphabet reproduces from random starts here and the same annealer fails on shuffled text.",
+  "method": "not solved",
+  "method_basis": "Michael Brackx recovered the 39-class homophonic alphabet ciphertext-only (annealing the letter signs against a Spanish 5-gram, no crib), and it reproduces here from random starts; but about 90 code groups are open and his provisional decryption (issue #62, not copied into the folder) has holes in most sentences, so no reading is claimed (reading audit, 22 Oct 2026). With the code read the method would be key recovered from ciphertext-only.",
   "contribution": [
    "catalogue correction"
   ],
   "first_break": true,
-  "class": "read in part",
-  "fraction_read": 0.929,
+  "class": "not read",
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "ct94_brackx.txt, 3,365 cipher tokens (2,751 letter signs, 2 doubtful, 612 code groups; clear islands and marks excluded): 2,751 letter signs carry a key value and 376 code tokens a firm reading = 3,127. With the 93 tentative code tokens, 0.957. fraction_coherent: word coverage of the decoded letter runs is 0.63 against 0.77 for the letter's clear islands (check94.py --coverage), i.e. about 0.82 of the letter-sign text reads as words.",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: no. 94, the only document, is decoded, not read, so no tokens are in a document that reads. The earlier 0.929 (ct94_brackx.txt: 3,127 of 3,365 cipher tokens given a value or a firm code reading) is withdrawn as a reading figure.",
   "fraction_coherent": 0.78,
   "key": "partial",
   "codes_open": {
@@ -187,6 +188,11 @@
     "item": "spelled-out stretches that do not parse (about a fifth of the letter-sign text)",
     "blocker": "open-codes",
     "detail": "single misread glyphs in a transcription by eye; about a third of the ß/thorn/B glyphs not cropped and checked; sign K unstable (l or s)"
+   },
+   {
+    "item": "no. 94 decryption: decoded, not read, and not in the folder",
+    "blocker": "not-attempted",
+    "detail": "Brackx's provisional decryption is only in issue #62; copy it into texts/, check it line by line against the scans (targets/esp318/full/f120r-f121v), and build sentences around the open codes"
    }
   ],
   "grades": "unknown",
@@ -213,14 +219,17 @@
     "note": "his Gran cifra reconstruction (muy = de; BNE MSS 20.211/52, via Quirantes 2018) agrees with mny = de"
    }
   ],
-  "notes": "Status: in progress. The content (Seminara and its aftermath, Portocarrero's death, Hugo de Cardona's faction, 800 peones, a proposed election among the captains) is readable in outline; single words stay provisional.",
+  "notes": "Status: in progress. The content (Seminara and its aftermath, Portocarrero's death, Hugo de Cardona's faction, 800 peones, a proposed election among the captains) is readable in outline; single words stay provisional. 22 Oct 2026, reading audit: no. 94 decoded, not read (about 90 code groups open, holes in most sentences); class read in part -> not read, method -> not solved; the ciphertext-only alphabet stands.",
   "texts": [
    {
     "doc": "no94",
     "label": "no. 94, ff. 120r-121r, the viceroy of Sicily to Ferdinand, Messina, 27 Apr 1503",
     "transcription": "ct94_brackx.txt",
     "decryption": "https://github.com/dbourdeau/cyphersolver/issues/62",
-    "summary": "The viceroy of Sicily reports from Messina, the day before Cerignola and six days after Andrada's victory at Seminara: the galley could not cross the Faro, a night entry with the infantry looting, a pesquisa under oath into the spoil, three principal prisoners kept in the castle until the king orders, and the dispute over the post Portocarrero had given after his death. Michael Brackx's normalised reading (provisional word by word) is in GitHub issue #62, not yet in the repository."
+    "summary": "The viceroy of Sicily reports from Messina, the day before Cerignola and six days after Andrada's victory at Seminara: the galley could not cross the Faro, a night entry with the infantry looting, a pesquisa under oath into the spoil, three principal prisoners kept in the castle until the king orders, and the dispute over the post Portocarrero had given after his death. Michael Brackx's normalised reading (provisional word by word) is in GitHub issue #62, not yet in the repository.",
+    "language": "es",
+    "state": "decoded, not read",
+    "note": "The repository holds only Brackx's sign transcription (ct94_brackx.txt); his provisional decryption is in issue #62, and about 90 code groups are open, so most sentences carry \"...\" or [xxx] holes; the gist (Seminara, the sack, prisoners, Portocarrero's death) is recoverable but few sentences are complete (reading audit, 22 Oct 2026); fix: copy the decryption into the folder, check it line by line on the scans, and read the codes from context."
    }
   ]
  }

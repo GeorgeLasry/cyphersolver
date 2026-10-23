@@ -236,6 +236,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): tr/ image transcriptions; R912/R922 decrypts with the corrected R639 key; R852 its clear copy; key corrections copied from NOTES.md to texts/key.md",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit, per-document pass (George Lasry's sentence test): R912_image_read.txt and R922_image_read.txt read: syllable-split output with misreadings in most lines; no coherent sentences after the openings. Per-document D confirmed for both; relabelled decoded, not read; R852 reads from its clear copy; class read -> read in part; fraction_read 0.974 -> 0.182.",
+      "result": "failed",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
@@ -247,8 +254,8 @@
       "sender or date identified",
       "catalogue correction"
     ],
-    "class": "read",
-    "fraction_read": 0.974,
+    "class": "read in part",
+    "fraction_read": 0.182,
     "grades": {
       "H": 2290,
       "C": 0,
@@ -261,7 +268,7 @@
       "contemporary decipherment",
       "historical consistency"
     ],
-    "notes": "R912/R922 97.4% of groups keyed from image transcriptions (R639 corrected); about 820 of them were already deciphered between the lines at the time. R852 read from its clear copy. Grades count R912+R922 groups. The Latin letter R483 (another key) was split off to rakoczi1711 on 14 Oct 2026.",
+    "notes": "R912/R922 97.4% of groups keyed from image transcriptions (R639 corrected); about 820 of them were already deciphered between the lines at the time. R852 read from its clear copy. Grades count R912+R922 groups. The Latin letter R483 (another key) was split off to rakoczi1711 on 14 Oct 2026. 22 Oct 2026, reading audit: R912 and R922 decoded, not read; R852 reads (clear copy); class read -> read in part; fraction_read 0.974 -> 0.182.",
     "credits": [
       {
         "who": "contemporary",
@@ -271,7 +278,7 @@
     ],
     "key": "recovered",
     "fraction_read_method": "measured",
-    "fraction_read_source": "targets/rakoczi1704/R912_image_read.txt and R922_image_read.txt (decode_tr.py on tr/): 2,290 of 2,352 code groups keyed; R852 read from its clear copy (R852_clear.txt), not counted.",
+    "fraction_read_source": "Reading audit, 22 Oct 2026: groups counted in tr/ (comment lines excluded): R852 523, R912 1,630, R922 722. R912 and R922 are decoded, not read, so only R852, read from its clear copy, counts: 523/2,875 = 0.182. The earlier 0.974 (2,290 of 2,352 R912/R922 groups keyed) is withdrawn as a reading figure.",
     "texts": [
       {
         "doc": "R922",
@@ -281,7 +288,10 @@
           "tr/R922_p2.txt"
         ],
         "decryption": "R922_image_read.txt",
-        "summary": "A report to Rákóczi from Dantzig: a sale carried out for the Palatine of Belz (Elżbieta Sieniawska), with an authentic copy sent to the sieur Kray; orders for carbines; the writer is leaving to join the King of Poland and asks that Kray be given orders so he can continue his services at the Polish court. Deciphered with the corrected R639 key (unkeyed groups in [ ])."
+        "summary": "A report to Rákóczi from Dantzig: a sale carried out for the Palatine of Belz (Elżbieta Sieniawska), with an authentic copy sent to the sieur Kray; orders for carbines; the writer is leaving to join the King of Poland and asks that Kray be given orders so he can continue his services at the Polish court. Deciphered with the corrected R639 key (unkeyed groups in [ ]).",
+        "language": "fr",
+        "state": "decoded, not read",
+        "note": "The image read is syllable-split with stray capitals and code numbers; after the first lines the sentences break (\"que La ve N te On donne A tion en au Oit est E fait\"), with misreadings in nearly every line (reading audit, 22 Oct 2026); fix: re-read the groups on the images (img/, DECODE cookie) against R639 and write a normalised French text with word division and a translation."
       },
       {
         "doc": "R912",
@@ -292,7 +302,10 @@
           "tr/R912_p3.txt"
         ],
         "decryption": "R912_image_read.txt",
-        "summary": "A survey of Polish and Swedish politics for Rákóczi: King Stanisław, the Palatine of Belz and the Grand Hetman, the Muscovites, the King of Sweden's pacification and a new election, the Tsar, Rákóczi's letter to Rehnskiöld, Tököly; Charles XII will not enter Muscovy before the coming campaign. About half was deciphered between the lines at the time; the rest deciphered here with the corrected R639 key."
+        "summary": "A survey of Polish and Swedish politics for Rákóczi: King Stanisław, the Palatine of Belz and the Grand Hetman, the Muscovites, the King of Sweden's pacification and a new election, the Tsar, Rákóczi's letter to Rehnskiöld, Tököly; Charles XII will not enter Muscovy before the coming campaign. About half was deciphered between the lines at the time; the rest deciphered here with the corrected R639 key.",
+        "language": "fr",
+        "state": "decoded, not read",
+        "note": "Same syllable-split read: isolated clauses (the King of Sweden, the Cossacks, Muscovy) can be guessed, but most lines are corrupted (\"arme donne E au le Palitin de ki O vi D Ja Y A P P ri S\") (reading audit, 22 Oct 2026); fix: re-read the groups on the images (img/, DECODE cookie) against R639 and write a normalised French text with word division and a translation."
       },
       {
         "doc": "R852",
@@ -306,12 +319,20 @@
           "R852_clear.txt",
           "R852_key08_read.txt"
         ],
-        "summary": "The writer acknowledges Rákóczi's letter of 26 December, vouches for Groffey, and asks for a weekly Latin paper like the Mercurius hungaricus, since the German and Dutch gazetteers 'destroy the Kingdom of Hungary'. Its text is the letter's own contemporary clear copy (R852_clear.txt); R852 uses a variant issue of the table, so R852_key08_read.txt (R639 applied to DECODE's transcription) is a comparison only."
+        "summary": "The writer acknowledges Rákóczi's letter of 26 December, vouches for Groffey, and asks for a weekly Latin paper like the Mercurius hungaricus, since the German and Dutch gazetteers 'destroy the Kingdom of Hungary'. Its text is the letter's own contemporary clear copy (R852_clear.txt); R852 uses a variant issue of the table, so R852_key08_read.txt (R639 applied to DECODE's transcription) is a comparison only.",
+        "language": "fr"
       }
     ],
     "key_file": [
       "texts/key.md",
       "DOC_R639_D2752_2752.txt"
+    ],
+    "gaps": [
+      {
+        "item": "R912 and R922: decoded, not read",
+        "blocker": "not-attempted",
+        "detail": "the image reads are syllable-split with misreadings in most lines; re-read the groups on the images (img/, DECODE cookie) with the R639 key and write normalised French with a translation"
+      }
     ]
   }
 }

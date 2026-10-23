@@ -1,6 +1,8 @@
 # Alfonso de Exea, archbishop of Seville to Francesc Climent, 23 Aug 1408 (Puig y Puig 1920, app. LXIV)
 
 Status: found already read (Puig y Puig 1920); the cipher itself is not imaged and its key is not known.
+**22 Oct 2026, reading audit:** nothing of the letter is in the repository (the Google Books link is blocked to scripts), so the entry is *decoded, not read* in profile.json; class already solved is kept because the text is in print (Puig 1920).
+
 
 Split on 14 Oct 2026 from `benedict1399` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter was
 filed with Benedict XIII's own cipher letters to Climent because Puig printed them together. Benedict's key was rebuilt

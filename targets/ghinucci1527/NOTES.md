@@ -1,6 +1,8 @@
 # Ghinucci (Bishop of Worcester) to Wolsey, 22 July 1527 (BL Cotton MS Vespasian C IV f. 363, DECODE R8613) — tracker item #13
 
 Status: read (9 Oct 2026). R8613, the "undeciphered" Worcester duplicate of 22 July 1527 (Ghinucci to Wolsey), deciphered to 97.9% (797 of 814 tokens) with a key recovered from the three sibling letters' contemporary decipherments (R8476, R8589, R8590, all in print). Written up as docs/ghinucci1527.html. Gilino R8572 (15 Sept 1527), formerly in this folder, is a different cipher: targets/gilino1527/. Garbino belongs to the Ranzo code (targets/ranzo1528/), not this target.
+**22 Oct 2026, reading audit** (George Lasry's test): R8613 reads; the R8589 and R8476 files are key-building worksheets (token=value alignments) and are marked *not prose* in profile.json. Claim unchanged.
+
 
 ## 9 Oct 2026: access restored, identifications
 

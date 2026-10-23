@@ -108,6 +108,13 @@
       "kind": "verification",
       "what": "Full texts (George Lasry's request of 22 Oct 2026): Lasry's tokens for ff. 9r, 15r, 17r, 18r, his report excerpts and Krajčovič's corrections listed; the full transcription and decryption of all 15 pages are still to come from Lasry.",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit, per-document pass (George Lasry's sentence test): the token table of ff. 9r, 15r, 17r, 18r read in order builds French sentences (C overturned to B); the report excerpts read (A); Krajcovic's corrections file is not prose. fraction_read 0.841 (Lasry's identified elements, his full text not in the repository) -> about 0.31, estimated from what the repository holds.",
+      "result": "partial",
+      "technique": ["language-model scoring", "statistical test"]
     }
   ],
   "outcome": {
@@ -126,9 +133,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.841,
+    "fraction_read": 0.31,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read_source": "Estimated, reading audit 22 Oct 2026: what the repository shows of Lasry's reading is the token table of ff. 9r, 15r, 17r, 18r (135 of its 145 tokens with a value = 0.307 of the 440 elements) plus three short excerpts (ff. 19r, 35r, 27r) not tokenised. Lasry's own figure, 370 of 440 elements identified (0.841), is withdrawn as a reading figure here: his full decipherment is not in the repository.",
     "verification": [
       "independent verification"
     ],
@@ -149,28 +156,56 @@
         "source": "https://github.com/dbourdeau/cyphersolver/issues/39"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r.",
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r. 22 Oct 2026, reading audit: the token table (four pages) and the report excerpts read; Krajcovic's corrections are not prose; fraction_read 0.841 (Lasry's figure) -> about 0.31, what the repository shows.",
     "texts": [
       {
         "doc": "eugenie1859",
         "label": "George Lasry's tokens and values, ff. 9r, 15r, 17r, 18r",
         "transcription": "lasry_tokens_f9_f15_f17_f18.tsv",
         "decryption": "lasry_tokens_f9_f15_f17_f18.tsv",
-        "summary": "Lasry's token transcription and values for the four pages Jozef Krajčovič checked (issue #39), sent by Lasry in answer to it."
+        "summary": "Lasry's token transcription and values for the four pages Jozef Krajčovič checked (issue #39), sent by Lasry in answer to it.",
+        "language": "fr",
+        "state": "read",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Overturns the per-document C. The token values, taken in order per folio, build French sentences: f9r \"en sortant avec le roi tous les pretres m'ont baise les mains, les femmes s'agenouillaient, les hommes etaient exaltes au dela de toute expression ... mais nous avons de la peine a trouver du pain\"; f17r \"nous esperons une bataille sur Chiese, mais l'ennemi parait decidement se retirer derriere le Mincio\". One run of ? on f15r. Raw (one value per row, syllables split), so B."
+        },
+        "note": "Excerpt only: four of the eleven cipher pages; the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026)."
       },
       {
         "doc": "eugenie1859",
         "label": "Lasry's report: decipherment excerpts and translations",
         "transcription": "lasry_tokens_f9_f15_f17_f18.tsv",
         "decryption": "texts/eugenie1859_decryption_lasry_excerpts.md",
-        "summary": "Napoleon III to the Empress and back, June 1859: his policy toward the Pope, criticism of diplomatic speculation, reports from the Italian campaign, and family news. Excerpts from Lasry's report of 10 Oct 2026; the full 15-page transcription and decryption are his and not yet in the repository."
+        "summary": "Napoleon III to the Empress and back, June 1859: his policy toward the Pope, criticism of diplomatic speculation, reports from the Italian campaign, and family news. Excerpts from Lasry's report of 10 Oct 2026; the full 15-page transcription and decryption are his and not yet in the repository.",
+        "language": "fr",
+        "state": "read",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "The three excerpts of Lasry's report (ff. 19r, 35r, 27r) are coherent French with an English translation; one \"?\" in f27r."
+        },
+        "note": "Excerpt only: the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026)."
       },
       {
         "doc": "eugenie1859",
         "label": "Jozef Krajčovič's proposed token corrections (issue #39)",
         "transcription": "lasry_tokens_f9_f15_f17_f18.tsv",
         "decryption": "texts/eugenie1859_corrections_krajcovic.md",
-        "summary": "The corrections Krajčovič proposed, to be read against Lasry's tokens and his answer in NOTES."
+        "summary": "The corrections Krajčovič proposed, to be read against Lasry's tokens and his answer in NOTES.",
+        "language": "fr",
+        "state": "not prose",
+        "note": "Jozef Krajcovic's list of proposed token corrections and verification notes (issue #39), not a decipherment text (reading audit, 22 Oct 2026)."
+      }
+    ],
+    "gaps": [
+      {
+        "item": "Lasry's full decipherment of the eleven cipher pages, not in the repository",
+        "blocker": "not-attempted",
+        "detail": "ask George Lasry for his transcription and decryption files; only four pages of tokens and three excerpts are here"
       }
     ]
   }

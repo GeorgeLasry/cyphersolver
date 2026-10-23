@@ -1,5 +1,9 @@
 # Mary Queen of Scots to Norfolk, "the 20th" [1570] — BL Cotton MS Caligula C II f. 74r
 
+Status: in progress. f. 74r decoded with Tomokiyo's key, not yet read as sentences (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the line-by-line reading below has [..] holes, a stain or unkeyed signs in lines 1, 4-6, 8-10 and 12-17, so about half the sentences do not build: f. 74r is *decoded, not read*. Class read -> not read, method -> not solved, fraction_read unknown -> 0. The key, the dating and the gist stand.
+
 Marked undeciphered (cryptiana `mary.htm`, "Mary to Norfolk, 20th, 1570?"). Tomokiyo reconstructed the
 key from ff. 66/69/75 and left a partial reading as an overlay image (`img/mary_CottonCaligulaCII_f74.png`)
 and in an HTML comment. This directory completes the reading from the new BL IIIF images.
@@ -52,3 +56,17 @@ the wyte of Murray death"); Morton rumoured on the move; Lord Talbot at hand (in
 - Unkeyed signs: ⊕ (l.2), ⊘ with inner b (l.8, a person), ø (l.13), ⊗ (l.17), {a—}/{o—} dash signs (ll.5, 11).
 - l.1 "[..] your friendl[y] [b][ʃ']" and the "∠ s 3 ɹ" group after "lord" unread; l.4 end under a stain.
 - ǂ standing alone = "and" (also k inside words: kan, spok, lyk, York); εʃ = "me"; б-with-bar = friend.
+
+## Remaining gaps
+
+- f. 74r as a running text: decoded, not read - blocker: not-attempted; re-read lines 1, 4-6, 8-10, 12-17 on the BL IIIF strips (fetch.py, strips.py) against Tomokiyo's key and write a running text with a modern English version
+- unkeyed nomenclator signs ⊕, ⊘, ø, ⊗, {a—}, {o—} - blocker: open-codes; not in Tomokiyo's key, each once or twice; look for them in the sibling letters ff. 66, 69, 75
+
+## Escalation
+
+- [ ] siblings: ff. 66, 69, 75 of Cotton Caligula C II not searched for the six unkeyed signs
+- [x] clear-pages: f. 66r's decipherment used to check Tomokiyo's key
+- [x] known-keys: Tomokiyo's Mary-Norfolk key applied
+- [ ] print: no search for a printed text is recorded in these notes
+- [n/a] key-rebuild: the key reads; the holes are in the reading
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

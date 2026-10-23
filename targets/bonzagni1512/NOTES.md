@@ -1,6 +1,10 @@
 # Giovanni Battista Bonzagni (Eger) to Ippolito I d'Este, 1512–1514 (ASMo, Ambasciatori b. 4/12; DECODE R1123–R1125) — NOTES
 
-Status: no write-up
+Status: in progress. Read at the time, but none of the three contemporary decipherments is transcribed here (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): no text of R1123, R1124 or R1125 is in the repository; the decipherments are on the DECODE images only (main checkout `img/`). All three are *decoded, not read* in profile.json; class already solved -> not read and method -> not solved until the decipherments are transcribed. The verdict below (read at the time) stands as history, not as a reading held here.
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up
 
 **Verdict: read at the time. Nothing is left to decipher.** Catalogue entry 155 is resolved and removed. Checked
 in one session on 2026-09-21.
@@ -42,3 +46,16 @@ is in clear.
 
 The letters were read at the time. Nothing here adds a reading, and the only new result is that the R1125 slip
 belongs to its cipher block. A key table was not built. Per CLAUDE.md this is recorded as `Status: no write-up`.
+
+## Remaining gaps
+
+- R1123, R1124, R1125: the contemporary decipherments, not transcribed - blocker: not-attempted; images in the main checkout targets/bonzagni1512/img/ (interlinear glosses R1123 pp. 1-2, R1124 p. 1; the R1125 slip, image 5)
+
+## Escalation
+
+- [x] siblings: Bonzagni's file in ASMo Ambasciatori Ungheria b. 4 listed from Vestigia (46 items)
+- [x] clear-pages: interlinear decipherments on R1123/R1124 and the R1125 slip found; not transcribed
+- [n/a] known-keys: not needed, the decipherments exist
+- [ ] print: not searched
+- [n/a] key-rebuild: not needed
+- [ ] retry: transcription of the decipherments still to do

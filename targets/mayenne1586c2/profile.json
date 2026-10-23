@@ -213,6 +213,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contributors' own files linked: Harumi-Matsuba's sign transcriptions, mechanical decodes and READING.en.md for ff. 218-219 and f. 120; Brett Burford's signs.txt, plaintext-by-line, French and English text for f. 385; their keys as key_file.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): ff. 218-219 read (A); f. 120 has holes in most sentences of several paragraphs, and f. 385 is a self-declared partial unspaced decode (both C confirmed). Both relabelled decoded, not read; class read in part kept; fraction_read 0.861 -> 0.404.",
+   "result": "failed",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -224,9 +231,9 @@
   "provenance": "contributed",
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.861,
+  "fraction_read": 0.404,
   "fraction_read_method": "measured",
-  "fraction_read_source": "../matignon1586c3/f276/scripts/measure.py over read_<page>.txt (to_read.py from Burford's signs + recorded key choices and Harumi-Matsuba's mechanical decodes): 4,560 of 5,293 tokens inside runs of >= 3 lexicon words and >= 10 letters (fr-1600-letters, count >= 20), 21 Oct 2026. Unit: cipher signs (Burford) or decoded letters and code words (Harumi-Matsuba), [?] counted unread.",
+  "fraction_read_source": "Reading audit, 22 Oct 2026, tokens per document: ff. 218-219 (2,138) read, 2,138 of 5,293 (0.404); f. 120 (1,103) and f. 385 (2,052) are decoded, not read. The earlier 0.861 (4,560 of 5,293 tokens in sense runs, measured 21 Oct 2026) is withdrawn as a reading figure.",
   "codes_open": {
    "open": 22,
    "tokens_open": "unknown"
@@ -256,6 +263,16 @@
     "item": "f. 120: some short stretches and three inferred values (ooo = escus, struck gg = nous, curled stroke = o)",
     "blocker": "open-codes",
     "detail": "No person has checked the transcription; the inferred values rest on context in this letter only."
+   },
+   {
+    "item": "fr. 15573 f. 120: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "holes in most sentences of c01-c05, c15-c19, c28-c31, 120v c03-c05; re-read on Gallica btv1b90618780 views 246-247"
+   },
+   {
+    "item": "fr. 15573 f. 385: decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "v0.2 partial, unspaced; resolve the open stretches on views 752-753 and normalise"
    }
   ],
   "parts": [
@@ -281,7 +298,7 @@
     "basis": "Brett Burford (issue #46): Tomokiyo's table with code values aligned on six deciphered letters, five voted passes; 1,702 of 2,052 signs (82.9%), measured here"
    }
   ],
-  "notes": "Created 21 Oct 2026 from three contributions (issues #46, #49, #51), reviewed and re-measured here; nothing in the readings is the project's. Ask George Lasry whether he read more of f. 385 than the fragment Tomokiyo prints.",
+  "notes": "Created 21 Oct 2026 from three contributions (issues #46, #49, #51), reviewed and re-measured here; nothing in the readings is the project's. Ask George Lasry whether he read more of f. 385 than the fragment Tomokiyo prints. 22 Oct 2026, reading audit: f. 120 and f. 385 decoded, not read; fraction_read 0.861 -> 0.404 (tokens in ff. 218-219).",
   "credits": [
    {
     "who": "burford",
@@ -341,7 +358,8 @@
      "f218_219_harumi/decoded_f218v.txt",
      "f218_219_harumi/decoded_f219r.txt"
     ],
-    "summary": "Matignon reports the battery before Monségur: about twelve hundred shots with less effect than hoped, three breaches, Sacramore de Birague badly wounded trying for the lodgement. The army is in need, the forces shrink daily and the pay is what matters most; Mayenne has a fever, but the physicians see no danger."
+    "summary": "Matignon reports the battery before Monségur: about twelve hundred shots with less effect than hoped, three breaches, Sacramore de Birague badly wounded trying for the lodgement. The army is in need, the forces shrink daily and the pay is what matters most; Mayenne has a fever, but the physicians see no danger.",
+    "language": "fr"
    },
    {
     "doc": "fr15573-f120",
@@ -355,7 +373,10 @@
      "f120_harumi/decoded_f120r.txt",
      "f120_harumi/decoded_f120v.txt"
     ],
-    "summary": "\"This prince\" is more vexed than ever; the treasurer Bilart wrote that thirty thousand écus in gold have been ready for ten days, the Cardinal of Guise writes that five thousand are coming, but not even a hundred and five thousand would set the army right. Biron cannot be kept; deputies of the army have come; papers of the secretary La Marsilière have fallen into \"our\" hands."
+    "summary": "\"This prince\" is more vexed than ever; the treasurer Bilart wrote that thirty thousand écus in gold have been ready for ten days, the Cardinal of Guise writes that five thousand are coming, but not even a hundred and five thousand would set the army right. Biron cannot be kept; deputies of the army have come; papers of the secretary La Marsilière have fallen into \"our\" hands.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Punctuated French with [?] holes: c05-c08 and c12-c15 read cleanly, but c01-c05, c15-c19, c28-c31 and f. 120v c03-c05 have holes in most sentences (reading audit, 22 Oct 2026); fix: re-read those lines on the image (view 246-247) sign by sign; no person has checked the transcription."
    },
    {
     "doc": "fr15573-f385",
@@ -370,7 +391,10 @@
      "f385_burford/f385v/plaintext-by-line.txt"
     ],
     "translation": "f385_burford/f385-english.md",
-    "summary": "The army in Guyenne is breaking up at the start of winter 1586: not a thousand foot left, men asking for leave, no powder. The letter asks what to do with the regiments and the foreigners over the winter, and names the landsknechts from Champagne, a company of light horse, Monsieur d'Halincourt, Monsieur de Matignon and La Roche."
+    "summary": "The army in Guyenne is breaking up at the start of winter 1586: not a thousand foot left, men asking for leave, no powder. The letter asks what to do with the regiments and the foreigners over the winter, and names the landsknechts from Champagne, a company of light horse, Monsieur d'Halincourt, Monsieur de Matignon and La Roche.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "note": "Self-declared partial (v0.2): the French is unspaced with decoder word breaks and many unresolved stretches; only isolated clauses translate, and the English file is a gist with ellipses (reading audit, 22 Oct 2026); fix: the open stretches on the image (views 752-753), then a normalised reading."
    }
   ],
   "key_file": [

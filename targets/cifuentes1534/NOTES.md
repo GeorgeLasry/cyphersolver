@@ -1,6 +1,10 @@
 # Count of Cifuentes (Rome) to Charles V, 3 Sept 1534 (AGS Estado leg. 862 ff. 53–54; DECODE R9963) — NOTES
 
-Status: no write-up
+Status: in progress. Read at the time, but the f. 54 decipherment is not transcribed here (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): no text of R9963 is in the repository beyond the fragments quoted below; it is *decoded, not read* in profile.json, class already solved -> not read and method -> not solved until f. 54 is transcribed. The verdict below stands as history.
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up
 
 **Verdict: read at the time. The decipherment is bound with the letter as f. 54.** Catalogue entry 205 is resolved and
 removed. Checked in one session on 2026-09-21.
@@ -43,3 +47,16 @@ going to Flanders.
 
 The letter was read at the time, and its decipherment is on the next leaf. The only new result is identifying image 5
 as that decipherment. Per CLAUDE.md this is `Status: no write-up`. For the DECODE status, see decode_updates/queue.json.
+
+## Remaining gaps
+
+- R9963: the contemporary decipherment on f. 54, not transcribed - blocker: not-attempted; image 5 in the main checkout targets/cifuentes1534/decode/
+
+## Escalation
+
+- [n/a] siblings: one letter
+- [x] clear-pages: decipherment bound as f. 54 found; not transcribed
+- [n/a] known-keys: not needed
+- [x] print: not in Tomokiyo's AGS Estado page
+- [n/a] key-rebuild: not needed
+- [ ] retry: transcription of f. 54 still to do

@@ -1,6 +1,8 @@
 # Prince Rupert / Royalist ciphers 1645-46 — cryptiana unsolved items #5 and #6
 
 Status: read in part, written up 9 Oct 2026 (docs/rupert.html). Cryptiana #5 (Maurice) and #6 (f. 9/f. 10) not solved: no key in Add MS 72438 fits; f. 104 and R8433 not solved; f. 107 (R8728) deciphered 95.3% of words with the f. 106 alphabet. Profile: primary method 'read with known key' (f. 107), parts 'not solved' for the rest; fraction_read 122/1,412 = 8.6%.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the five numeric documents (Maurice 1645, ff. 9, 10, 104, R8433) carried no state in profile.json and so counted as read by default; each is an undeciphered ciphertext and is now marked *decoded, not read*. Claim unchanged (fraction_read already counts them at 0).
+
 
 ## #5 Maurice -> Rupert, Worcester, 7 July 1645 (Warburton, *Memoirs of Prince Rupert*, iii. 133)
 Ciphertext (full, from the 1849 print; `maurice1645.py`): 93 groups, 63 distinct, max 398; 18 distinct groups < 100
