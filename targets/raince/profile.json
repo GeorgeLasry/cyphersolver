@@ -183,6 +183,18 @@
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). trans/reading_edited.txt and reading_v3.txt read: nearly every line of pp. 29, 30, 31 and 105 is broken by '…' or (?) ('… de la ca[pi]tulation faicte …', '… court … depuis …'); isolated clauses survive, the sentences cannot be assembled (docs/_check_reading.py: 28-41% of sentences clean). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.87 -> 0.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Re-read (REREAD_BRIEF, batch b32): DECODE list searched for fr. 2984 / Raince (no record); Gallica IIIF manifest of fr. 2984 fetched: still the B/W microfilm, and its 39-item list names no decipherment or clear double of the 13 May or 20 Nov 1526 letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "trans/residue1526_reading.md built from trans/reading_v3.txt (b32_raince_build.py: unresolved glyphs as [...], line-end breaks joined where the join is a word, 9 kept by hand); score 0.513 (59/115) plain, 0.713 on explicit holes; below the 0.60 bar on the plain figure and the look-alike share unmeasured, so kept decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -231,12 +243,13 @@
      "gold/labels.txt"
     ],
     "decryption": [
+     "trans/residue1526_reading.md",
      "trans/reading_v3.txt",
      "trans/reading_edited.txt",
      "trans/p31_clear_close.txt"
     ],
     "summary": "The ciphered residue of two letters from Nicolas Raince in Rome to Anne de Montmorency, 13 May and 20 November 1526, about 106 lines unread anywhere found: news of the court, the Castilians and Burgundians after the capitulation, the Pope and the Emperor. Deciphered with Tomokiyo's 1526 key as re-measured here (CALIBRATION.md); reading_v3.txt is the latest line-by-line reading (unresolved glyphs marked ?), reading_edited.txt the earlier running French.",
-    "note": "The edited reading (trans/reading_edited.txt) has '…' or (?) in nearly every line of pp. 29, 30, 31 and 105; only isolated clauses survive (Pietro Anthonio, la peste qui est au logis), so the letters' sentences cannot be assembled, though 86 of 106 lines were read glyph by glyph (reading audit, 22 Oct 2026).",
+    "note": "Decoded, not read. Re-read 23 Oct 2026 (batch b32, trans/residue1526_reread_log.md): the 5 Oct glyph-by-glyph reading (trans/reading_v3.txt, not seen by the audit) set out as trans/residue1526_reading.md scores 0.513 (59/115) plain and 0.713 on explicit holes; p. 29 ll. 11-25, p. 31 and p. 105 ll. 1-8 hold, p. 30 and p. 105 ll. 9-21 have a hole in most sentences; the look-alike share of the microfilm's confusable glyphs is not recorded. No DECODE record, no print, no contemporary decipherment (Gallica item list checked); the only images are the B/W microfilm. Blocker: illegible.",
     "state": "decoded, not read",
     "language": "fr"
    }

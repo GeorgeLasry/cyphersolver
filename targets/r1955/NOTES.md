@@ -10,6 +10,15 @@ R1955 is **decoded, not read**: about three quarters of the groups have no value
 fragments. Class read in part -> not read, method -> not solved (WAINUT's envoy-table match kept as a part); 26.4%
 withdrawn as a reading figure. The outcome line below is superseded.
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b32; `R1955_reread_log.md`):** still **decoded, not read**. The DECODE
+record has only the two cipher pages (no decipherment, attachment or comment). No other DECODE record is in the envoy
+code besides R1050/R1051 (the table covers 8-12% of the von der Hellen letters, chance level). The Hague decipherment
+registers were checked heading by heading on the Nationaal Archief IIIF: Fagel 5177 (1751-52) has von der Hellen, the
+six cabinet-code letters to Michell ("Nonsense ou autre Clef") and Michell's reports of Sept-Oct 1752; Fagel 5208
+("Sieur M", 1751-53) has "Lettres Ecrites au Sieur M. en Novemb. et Decemb. 1751", nos. 1-8 (2 Nov - 7 Dec 1751),
+the Dutch clear decipherments of the ministerial rescripts in this code, and Michell's reports 1751-53 in clear. The
+28 Dec 1751 rescript is in neither, and the copies have no figures, so they add no values.
+
 **Outcome: read after matching with a key from external sources, read in part.** WAINUT (PR #29, 11 Oct 2026) found
 that R1955 is in Michell's envoy code and decoded 95 of its 360 groups (26.4%, re-counted 14 Oct 2026 from
 `R1955_reading_line.txt`) with a table taken from the contemporary Dutch decipherments of two of Michell's reports
@@ -93,12 +102,12 @@ listed above, the contemporary Dutch decipherments (the Lyonet lead) are the one
 
 ## Remaining gaps
 - R1955 as a whole, decoded, not read - blocker: no-key-material; see the next line
-- R1955, 265 of 360 groups without a value in the envoy table - blocker: no-key-material; the table comes from two decipherments of Michell's reports (R1050, R1051); further decipherments (probably KHA A31-1181) are not online, a contemporary decipherment of R1955 may be in Nationaal Archief 1.01.50 inv. 159 (not digitised), and ministerial rescripts are not in the Politische Correspondenz
+- R1955, 265 of 360 groups without a value in the envoy table - blocker: no-key-material; the table comes from two decipherments of Michell's reports (R1050, R1051); further decipherments (probably KHA A31-1181) are not online, a contemporary decipherment of R1955 may be in Nationaal Archief 1.01.50 inv. 159 (not digitised), and ministerial rescripts are not in the Politische Correspondenz; Fagel 5177/5208 checked 23 Oct 2026: the rescript series read by the Dutch stops at 7 Dec 1751
 
 ## Escalation
 - [x] siblings: R1953 (von der Hellen, 4 Jan 1752) checked 19 Sept, a different code; R1957 and the six Fagel 5177 letters are the cabinet code (2.8-5.6% coverage); R1050/R1051 (Michell's reports) are the envoy code and gave the table
 - [x] clear-pages: the record has only the two cipher pages (P2 first); clear heading, opening and date only
 - [x] known-keys: cabinet keys v1/v2 (WAINUT) tried and ruled out; the envoy table fits (26.4% against 5.5% on R1957)
-- [x] print: Politische Correspondenz 8-9 searched; the ministerial rescripts are not printed; WAINUT's circular-letter test found no printed parallel text (best candidate z = 2.69, control maximum 4.85)
+- [x] print: Politische Correspondenz 8-9 searched; Fagel 5177 and 5208 (Hague decipherment registers, NA IIIF) checked heading by heading 23 Oct 2026, no decipherment of 28 Dec 1751 (5208 rescripts stop at 7 Dec 1751); the ministerial rescripts are not printed; WAINUT's circular-letter test found no printed parallel text (best candidate z = 2.69, control maximum 4.85)
 - [n/a] key-rebuild: a large two-part code with homophones even for de and que (296 distinct of 362 groups); the unread groups have no context to extend the table from
 - [n/a] retry: no extended key exists to re-run; the trial decode is WAINUT's single pass with the full envoy table

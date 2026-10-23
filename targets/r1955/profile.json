@@ -192,6 +192,18 @@
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). R1955_reading_line.txt read: a single line of 1,660 characters, about three quarters '·', with single words and short fragments between unread groups; no sentence can be built (docs/_check_reading.py finds no scoreable sentence). Relabelled decoded, not read; class read in part -> not read, method read after matching with key from external sources -> not solved (the match kept as a part); fraction_read 0.264 -> 0.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, batch b32): DECODE R1955 fetched logged in (b28_fetch.py); both full-resolution pages opened: cipher, clear heading/opening/date only, no decipherment, no attachment or comment. Cached DECODE list searched for other records in the envoy code: only R1050/R1051. Envoy table covers 8-12% of the von der Hellen letters (chance level): not his code.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Nationaal Archief 1.10.29 (Fagel) inv. 5177 (187 scans) and inv. 5208 (157 scans) checked heading by heading through the archive's IIIF (b32_na_iiif.py, b32_sheet.py). 5208 holds 'Lettres Ecrites au Sieur M. en Novemb. et Decemb. 1751' nos. 1-8 (2 Nov - 7 Dec 1751), the Dutch clear decipherments of the ministerial rescripts in this code, and Michell's reports 1751-53 in clear; the 28 Dec 1751 rescript (R1955) is in neither volume, and the copies carry no figures, so no new code values.",
+   "result": "failed"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-15", "verdict": "not applicable", "notes": "Whole-word code decoded in isolated fragments (95 of 360 groups, mostly single words between unread groups); the letter n-gram test has no continuous text to score. WAINUT's word-pair coherence test (19 of 30 adjacent pairs attested against 11.1 for permutations, p = 0.001) is the statistical check."}, 
@@ -248,7 +260,7 @@
     ],
     "decryption": "R1955_reading_line.txt",
     "summary": "The ministerial rescript in the King's name to his envoy in London, opening in clear 'Toutes vos dépêches m'ont été bien rendues et la dernière est du 14e de ce mois', then 362 code groups. WAINUT decoded 95 of 360 groups (26.4%) with the envoy table rebuilt from the Dutch decipherments of Michell's reports R1050/R1051: fragments only, the subject cannot be stated with confidence.",
-    "note": "One line of group-by-group decode, about three quarters '·' (no value): single words and fragments between unread groups; no sentence can be built (reading audit, 22 Oct 2026).",
+    "note": "Decoded, not read: WAINUT's envoy-table decode gives values to 95 of 360 groups (single words and fragments, no sentence). Re-read 23 Oct 2026 (batch b32, R1955_reread_log.md): the DECODE record has only the two cipher pages (no decipherment, attachment or comment); no other DECODE record is in this code besides R1050/R1051; the Fagel decipherment registers 5177 (1751-52) and 5208 ('Sieur M', 1751-53) hold the Dutch clear copies of the rescripts to Michell nos. 1-8 (2 Nov - 7 Dec 1751) and of his reports, but not the rescript of 28 Dec 1751, and no figures. Blocker: no-key-material.",
     "state": "decoded, not read",
     "language": "fr"
    }

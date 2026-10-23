@@ -4,6 +4,14 @@ Status: in progress — f.263 is a working decipherment beyond recto lines 11-16
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the f. 262 gloss reads on page B but not on page A ("..." and [?] in most lines), so f. 262 is *decoded, not read*. The f. 263 entry counts only recto lines 11-16 (excerpt note); fraction_read 0.06 unchanged.
 
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b32; `r9416/f262_reread_log.md`):** f. 262 is **read** (grade B). The
+key was rebuilt letter for letter from the contemporary decipherment of page B (`r9416/f262_key.md`: simple
+substitution with homophones and three code signs) and page A was read from its signs on the full-resolution
+image, all 25 lines, including the unglossed A09-A11 ("Minkwicz und ander geferden halb durch Slesi ... auch nit
+komen"); page B follows the decipherment. The signs correct the gloss transcription at A03, A13, A16, A18, A19,
+A22 ("Bartlen von Eschelkamb", "die turcken bis in vier tausent stark", "feind schonen"). Score 0.852 on explicit
+holes, 0.444 plain. Reading `r9416/f262_reading.md`, English `r9416/f262_en.md`. fraction_read 0.06 -> 0.352.
+
 Split on 15 Oct 2026 from `targets/kaa4591/` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue entry 161
 grouped fourteen ciphertexts of the Munich key volume KAA 4591 in at least six systems; R9416 is a record of two leaves
 in two sign sets of their own. The other letters are different ciphers, each with its own page: System A′
@@ -67,15 +75,15 @@ lines 11-16 sign by sign (225 signs, 199 read; 6.0% of f.263 read clean, a lower
 
 ## Remaining gaps
 
-- f.263 clean reading beyond recto lines 11-16 - blocker: open-codes; paused 21 Sept 2026 (workable): v2 re-keyed (Pressburg talks read throughout); one sign serves ch but the annealer gives it s ("auss"=auch) — needs a digraph value set by hand. 30 Sept 2026: recto lines 11-16 read clean by hand (`r9416/reading_p3_11-16.txt`; z split into e and a two-bar s, b into d and l); the rest still to do the same way.
-- f.263 person codes "der d", "der g", "der h" - blocker: open-codes; probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once
-- f.262 gloss lines A09-A11 and the faint words - blocker: illegible; the contemporary gloss is faint and the signs are not transcribed
-- f. 262 page A from its signs - blocker: not-attempted; the f. 262 signs are not transcribed; key them from page B's full gloss (DECODE images, cookie) and read page A where the gloss is faint
+- f.263 clean reading beyond recto lines 11-16 - blocker: not-attempted; paused 21 Sept 2026 (workable): v2 re-keyed (Pressburg talks read throughout); one sign serves ch but the annealer gives it s ("auss"=auch) — needs a digraph value set by hand. 30 Sept 2026: recto lines 11-16 read clean by hand (`r9416/reading_p3_11-16.txt`; z split into e and a two-bar s, b into d and l); the rest still to do the same way.
+- f.263 person codes "der d", "der g", "der h" - blocker: no-key-material; probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once
+- f.262 code signs X (2x), ⊼ (2x) and a G-sign - blocker: no-key-material; f. 262 read from its signs 23 Oct 2026 (A09-A11 included), these codes have no gloss
+- f. 262 page B lines B08-B15 sign by sign - blocker: not-attempted; the decipherment reads, B01-B07 checked against the signs (23 Oct 2026)
 
 ## Escalation
 
 - [x] siblings: the volume's other ciphertexts and keys (R9423 register, System A′, System B, R9324) checked; none is the f.263 or f.262 sign set
-- [x] clear-pages: the gloss on f.262 transcribed; the faint gloss over f.263's first lines agrees with the solver's text
+- [x] clear-pages: the gloss on f.262 transcribed, and (23 Oct 2026) used to key the signs: f. 262 page A read from its signs; the faint gloss over f.263's first lines agrees with the solver's text
 - [x] known-keys: the volume's keys do not fit either leaf
 - [x] print: web search for KAA 4591 / the Pressburg talks report found no edition
 - [x] key-rebuild: constrained annealing with de-1500s (first run); v2 look-alike split; lines 11-16 re-keyed by hand

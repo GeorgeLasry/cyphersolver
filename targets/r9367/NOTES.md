@@ -13,6 +13,15 @@ register transcriptions stay in `targets/kaa4591/keys9423/` (volume material: `2
 
 Images: DECODE, login; not public domain, kept untracked; the page shows none.
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b32; `r9367/R9367_reread_log.md`):** **read** (grade B), with
+**read with known key**, class read in part. The image was read at full resolution (rotated): every cipher run
+re-transcribed (`r9367/transcription_v2.txt`, `r9367/R9367_corrections.tsv`), the clear German re-read, and the
+reading built line by line (`r9367/R9367_reading.md`, English `r9367/R9367_en.md`). Values that hold at every
+occurrence: v = b/w, ‡‡ = u, boxed H = k; sense-only, for review: cc = z, Φ = b, S = sch, U = ll. Score 0.641 on
+explicit holes (code signs counted as holes), 0.256 plain. "Nothaft" was "botschaft"; the postscript names
+"Friderich Schmalcz". The back (P2) has no address, only two pen crosses. Open: # (13x), Π (4x, a word or name
+sign), the place name in L01-02. The 22 Oct and earlier outcome lines are superseded.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 the cipher of R9367 is **decoded, not read**: the runs have unread signs mid-word in most lines and only a few phrases
 assemble. Class read in part -> not read, method -> not solved (register key 2_4 kept as a part); 54.5% withdrawn as a
@@ -44,9 +53,9 @@ upper bound. The transcription has 534 cipher signs (`signstream.py` → `r9367/
 
 ## Remaining gaps
 
-- R9367 cipher runs as a whole, decoded, not read - blocker: not-attempted; zoom re-transcription of the runs against block 2_4, then build sentences and translate
-- L01-02, L07, L09-10, L13 cipher runs mostly unread - blocker: open-codes; paused 21 Sept 2026 (workable): the # sign and O open, doubtful shapes; next: a zoom re-transcription of these lines against block 2_4
-- # (triple-barred cross, 13×) and O signs - blocker: open-codes; not in block 2_4, context does not fix them
+- [#] (triple-barred cross, 13x), [Π] (arch sign, 4x), R and d (once each) - blocker: no-key-material; not in register block 2_4, contexts do not fix them (re-read 23 Oct 2026)
+- L01-02 place name and parts of the cipher runs L09-10, L14, L16, L31, L34 - blocker: no-key-material; letter strings with the values that hold elsewhere, need the open signs or another letter in this key
+- right-margin sign pairs beside L30-L33 - blocker: not-attempted; probably a reader's equations, not needed for the reading
 ## Escalation
 
 - [x] siblings: R9423 register (19 keys) read block by block; R9422 (1583 key) checked
@@ -55,3 +64,4 @@ upper bound. The transcription has 534 cipher signs (`signstream.py` → `r9367/
 - [x] print: web search for KAA 4591 ciphers found no edition
 - [x] key-rebuild: five values added from context (q a, Λ r, C s, H k, K z)
 - [x] retry: re-annealed with de-1500s, homophone caps and nulls (failed); block 2_4 reading by hand
+- [x] re-read 23 Oct 2026 (batch b32): full-resolution re-transcription, values that hold at every occurrence adopted, reading built (0.641 on explicit holes)

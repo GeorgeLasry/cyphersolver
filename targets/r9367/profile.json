@@ -142,39 +142,68 @@
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). r9367/reading.txt read line by line: the cipher runs carry unread signs mid-word in most lines ('{s w a r d e [#] i n l?}', '{sa ber vir bar niwt [#] ...}'); only a few phrases assemble (docs/_check_reading.py: 14 of 35 sentences clean, mostly the clear German). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.545 -> 0.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, batch b32): DECODE R9367 fetched logged in (2 images, no attachment); P2 opened for the first time: the blank back with two pen crosses, no address. Neighbours R9366 (key) and R9368 (Augurelio letter, other cipher) checked: no decipherment of f. 169.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "P1 rotated and read at full resolution in tiles: every cipher run re-transcribed (r9367/transcription_v2.txt, R9367_corrections.tsv: ‡‡ vs cc, boxed H vs boxed dot, new S and d labels, π at L32) and the clear German re-read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "key from source",
+   "what": "Values that hold at every occurrence adopted: v = b/w, ‡‡ = u (guet, verkhuntschaft, und, hindurch, vergunt, euch), boxed H = k; sense-only, flagged: cc = z (zeit, ziechen, Schmalcz, selczam, herczen), Φ = b (bin, bringen, botschaft, bring), S = sch (verkhuntschaft, botschaft, Schmalcz), U = ll (alles). # and Π stay unidentified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "r9367/R9367_reading.md and _en.md built line by line; every cipher word aligned with the decode (research/reading_audit/b32_r9367_dec.py); score 0.641 (25/39) on explicit holes with code signs counted as holes, 0.256 plain; look-alike letters ~2/470. Relabelled read (grade B).",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Block 2_4 of the key register R9423 in the same volume, matched by shape and extended by five values (read with known key, recorded under parts), decodes the cipher runs only into phrases with unread signs mid-word; no cipher sentence can be built.",
+  "method": "read with known key",
+  "method_basis": "Block 2_4 of the key register R9423 in the same volume, matched by shape (21 Sept 2026) and extended from the letter's own words (23 Oct 2026: v = b/w, ‡‡ = u, boxed H = k, and sense-only cc = z, Φ = b, S = sch, U = ll); the cipher runs read as German sentences except where the unidentified signs # and Π stand.",
   "contribution": [
    "transcription",
    "key extended or corrected",
    "decipherment with ambiguous key"
   ],
-  "class": "not read",
+  "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.0,
+  "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: the one document's cipher does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.545, measure.py over the {..} runs of r9367/reading.txt (78 of 143 words), an upper bound that counted words, not sentences.",
+  "fraction_read_source": "Re-read 23 Oct 2026 (batch b32): the one document reads (r9367/R9367_reading.md, grade B), so by documents 1 of 1; inside it about 10% of the reading body's words are explicit holes (unidentified code signs [#], [Π] and short unread runs), hence read in part.",
   "codes_open": {
-   "open": 2,
+   "open": 4,
    "total": "unknown"
   },
   "verification": [
    "historical consistency"
   ],
-  "notes": "Son to father, Monday after Palm Sunday 1535: questioned about strange matters and denied everything; taken for a poor writer; fears for his person; the Turks are coming up; a name like Nothaft; postscript on a Friedrich and Schmalkalden(?).",
+  "notes": "Son to father, Monday after Palm Sunday 1535: questioned about strange arts and denied everything, claiming to be a poor writer sent to learn; will report once at the place; many Turks moving up; postscript: Friedrich Schmalcz begrudges the father nothing good. Re-read 23 Oct 2026 (r9367/R9367_reread_log.md); the earlier 'Nothaft' was the word 'botschaft'.",
   "gaps": [
    {
-    "item": "L01-02, L07, L09-10, L13 cipher runs mostly unread",
-    "blocker": "open-codes",
-    "detail": "the # sign (13x) and O open; doubtful shapes"
+    "item": "[#] (triple-barred cross, 13x), [Π] (arch sign, 4x), R and d (once each)",
+    "blocker": "no-key-material",
+    "detail": "not in register block 2_4; # mostly stands where nothing is needed, Π is a word or name sign; contexts do not fix them"
    },
    {
-    "item": "# (triple-barred cross, 13x) and O signs",
-    "blocker": "open-codes",
-    "detail": "not in block 2_4; context does not fix them"
+    "item": "L01-02 place name and parts of the cipher runs L09-10, L14, L16, L31, L34",
+    "blocker": "no-key-material",
+    "detail": "decode to letter strings with the values that hold elsewhere; need the open signs or a second letter in this key"
+   },
+   {
+    "item": "right-margin sign pairs beside L30-L33",
+    "blocker": "not-attempted",
+    "detail": "probably a reader's equations; not needed for the reading"
    }
   ],
   "credits": [
@@ -188,15 +217,19 @@
    {
     "doc": "R9367",
     "label": "KAA 4591 f. 169, 22 March 1535",
-    "transcription": [
-     "r9367/transcription.txt",
-     "r9367/signs.txt"
-    ],
-    "decryption": "r9367/reading.txt",
-    "summary": "A son to his father, Monday after Palm Sunday 1535, in German with cipher passages: he was questioned about strange matters and denied everything, is taken for a poor writer and sent to learn, fears for his person, and reports the Turks coming up; a postscript names a Friedrich and 'Schmalcz' (Schmalkalden?). The cipher runs are read in part with key block 2_4 of the register R9423 (# and O open).",
-    "note": "Per-line working reading: clear German in bars, decoded cipher in braces with '_', '[#]' and '?' marks; most cipher runs have unread signs mid-word ('{s w a r d e [#] i n l?}'), so the cipher sentences cannot be assembled beyond a few phrases (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "de"
+    "transcription": ["r9367/transcription.txt", "r9367/signs.txt", "r9367/transcription_v2.txt"],
+    "decryption": ["r9367/R9367_reading.md", "r9367/reading.txt"],
+    "summary": "A son to his father, Monday after Palm Sunday 1535, in German with cipher passages: he was questioned about strange arts and denied everything, claiming to be a poor writer sent to learn because he is young; he has not yet learnt anything thorough and will report when he reaches the place; he will bring his body through; someone asked how 'he' brings [a person, code sign] the message; many Turks are moving up. Postscript: Friedrich Schmalcz begrudges the father nothing good. Cipher runs in key R9423 block 2_4, extended.",
+    "state": "read",
+    "language": "de",
+    "reading": "r9367/R9367_reading.md",
+    "translation": "r9367/R9367_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r9367/R9367_reading.md: the clear German re-read on the full-resolution DECODE image (rotated) and the cipher runs re-transcribed (transcription_v2.txt, R9367_corrections.tsv) and decoded with R9423 block 2_4 plus values that hold at every occurrence (v = b/w, ‡‡ = u, boxed H = k; sense-only and flagged for review: cc = z, Φ = b, S = sch, U = ll); every cipher word aligned with research/reading_audit/b32_r9367_dec.py. Reading body 0.641 (25/39) on explicit holes with the code signs counted as holes, 0.256 plain (1535 Bavarian spelling). Look-alike letters about 2 of 470 cipher letters. Open: [#] (13x), [Π] (4x, a word or name sign), [R], the place name in L01-02, and parts of five cipher passages (L09-10, L14, L16, L31, L34)."
+    }
    }
   ],
   "key_file": [
@@ -205,11 +238,11 @@
   ],
   "parts": [
    {
-    "label": "R9367 cipher runs (register key 2_4 applied; decoded, not read)",
+    "label": "R9367 (clear German and cipher runs)",
     "records": "DECODE R9367",
     "method": "read with known key",
     "extent": "partial",
-    "basis": "R9423 block 2_4, re-matched by shape, plus five values from the letter; phrases only (seltsam khinst gefragt, aber alles verlaugnet, Tirckhen herauf ziechen). Decoded, not read (reading audit, 22 Oct 2026)."
+    "basis": "R9423 block 2_4 extended from the letter; reading r9367/R9367_reading.md, grade B, 0.641 on explicit holes; # and Π open."
    }
   ]
  }

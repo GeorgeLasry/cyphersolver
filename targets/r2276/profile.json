@@ -232,6 +232,12 @@
    "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.txt read line by line. The torn-edge and worst-imaged bands (p. 1 ll. 16-26, 38-40; p. 2 ll. 1-3, 13-21, 36-40) have a ? or [...] in nearly every clause and only fragments can be built; the rest builds French sentences (55% of sentences clean in docs/_check_reading.py). texts entry split; the bands relabelled decoded, not read; fraction_read 0.918 -> 0.693 (signs in the lines that read).",
    "result": "partial",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Re-read (REREAD_BRIEF, batch b32) of the decoded-not-read lines: DECODE R2276 fetched logged in (3 images, no attachment or comment; R2275/R2277 not this letter); Tomokiyo guise.htm/nevers.htm re-fetched (Biermann 2021 identification only, no text); BnF catalogue record of fr. 3612 (cc50062c) fetched: Piles's ciphered letters with decipherments, no Gallica item; Gallica cipher-volume descriptions grepped for Piles/Orbais/Reims: no copy of the June 1589 letter. Unread lines scored 0.069 (explicit holes 0.172); p. 1 ll. 21-26 re-cropped: right half lost at the tear.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -317,7 +323,7 @@
     "decryption": "reading.txt",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "Torn-edge and worst-imaged lines: a ? or [...] in nearly every clause, only fragments can be built (reading audit, 22 Oct 2026); 1,158 of 3,772 transcribed signs."
+    "note": "Torn-edge and worst-imaged lines: a ? or [...] in nearly every clause, only fragments can be built (reading audit, 22 Oct 2026); 1,158 of 3,772 transcribed signs. Re-read 23 Oct 2026 (batch b32, R2276_reread_log.md): clean-sentence share 0.069 (explicit holes 0.172); the DECODE record has no attachment or decipherment, Tomokiyo still gives no text of Biermann's 2021 reading, the key source BnF fr. 3612 (Piles's 1586 letters with decipherments) is still not digitised, and the right edge of p. 1 / left margin of p. 2 are lost. Blockers: illegible (torn lines), no-key-material (unattested signs)."
    }
   ],
   "key_file": [

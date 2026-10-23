@@ -8,6 +8,13 @@ the 13 May and 20 Nov 1526 passages are **decoded, not read**: `trans/reading_ed
 every line, and only isolated clauses survive. Class read in part -> not read, method -> not solved (Tomokiyo's key
 kept as a part); 0.87 withdrawn as a reading figure.
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b32; `trans/residue1526_reread_log.md`):** still **decoded, not read**.
+The audit had judged the old `reading_edited.txt`; the 5 Oct glyph-by-glyph reading (`trans/reading_v3.txt`) is now
+set out as `trans/residue1526_reading.md` and scores 0.513 plain (0.713 counting explicit holes only), in the band
+kept unread for other French letters; the look-alike share of the microfilm's confusable glyphs was never recorded.
+No DECODE record, no print, no contemporary decipherment (the Gallica item list of fr. 2984 checked); the only
+images are the B/W microfilm.
+
 ## Outcome in one paragraph
 
 The item was never a blind-solving problem. Tomokiyo published the 1526 key in 2020 and the 1529
@@ -335,7 +342,7 @@ not tracked; re-fetch with
 - pp. 29-31 (13 May 1526), decoded, not read - blocker: illegible; the unresolved glyphs fall in most lines on the B/W microfilm; colour photographs needed
 - p. 105 (20 Nov 1526), decoded, not read - blocker: illegible; same
 - residual unresolved glyphs, ~13 % of letters, worst on p. 105 ll. 15-17, 20-21, p. 30 ll. 30, 32-34, p. 31 ll. 1-2, 17, 23-24 - blocker: illegible; every line was re-read from the image in session 3 (trans/reading_v3.txt); the remaining glyphs do not resolve on the B/W Gallica microfilm; colour photographs of pp. 29-31 and 105 needed
-- two word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (name or title), ~4 occurrences each - blocker: open-codes; too few occurrences, no clear copy; the circled cross is now identified as i
+- two word signs absent from Tomokiyo's key: bold two-crossbar stem [X] (a person, follows 'son maistre') and ℓ° [Y] (name or title), ~4 occurrences each - blocker: no-key-material; too few occurrences, no clear copy; the circled cross is now identified as i
 ## Escalation
 - [x] siblings: clear duplicate of the 9 June letter (p. 17 ff.) and glossed leaves pp. 25, 41, 121-123 checked; no clear copy of 13 May or 20 Nov found
 - [x] clear-pages: clear close of the 13 May letter on p. 31 transcribed (trans/p31_clear_close.txt); glosses on p. 29 ll. 1-13 and p. 105 top used
@@ -343,3 +350,4 @@ not tracked; re-fetch with
 - [x] print: Mignet 1886, Bourrilly 1901, Tomokiyo, DECODE, Pastor IX (app. 38 = 26 Nov 1526 f.109, parallel wording, not this text) checked; Grethen 1887 not digitised anywhere found
 - [x] key-rebuild: shape-constrained hill climb (solve140.py), per-token classifier htr2.py, 6-gram LM beam decode2.py
 - [x] retry: session 3 re-read all 106 lines off the images (trans/reading_v3.txt); sense measure 0.476 -> 0.850
+- [x] re-read 23 Oct 2026 (batch b32): reading_v3 set out as trans/residue1526_reading.md, 0.513 plain / 0.713 explicit holes; Gallica manifest (still microfilm) and DECODE checked; kept decoded, not read
