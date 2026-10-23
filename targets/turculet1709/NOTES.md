@@ -34,6 +34,8 @@ Token by token against gloss and key (`R7481_pass2.txt`, `R7482_pass2.txt`, read
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is Polish of 1709 (not French): explicit-hole bar. R7481_reading.txt body: explicit 1.0, plain 0.222 (small Polish word list, Latin phrases, names). The reading is in modernised Polish (9 Oct 2026); not redone here. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: R7482_reading.txt said 'normalised spelling'. Put back into the writer's Latin from R7482.txt (figures and gloss): hæc and quæcunque (the clear &/æ sign in the groups), occurunt, expectat, Tarlo, Soczaviæ. Explicit holes 0.929 -> 0.864 (the new header paragraph is scored with the body; the letter itself has no hole). R7481_reading.txt says 'modernised Polish' and is the profile's reading for the pair; it was not in the v6 list and is still to be done.
+
 ## Remaining gaps
 - none: the two open tokens are nulls by design
 

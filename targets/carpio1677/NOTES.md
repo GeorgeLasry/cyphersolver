@@ -141,8 +141,20 @@ Plain-bar check (Spanish 1677): `read/R1006_reading.md` had no `## Reading` head
 notes too (plain 0.529). Heading added; the body scores plain 0.778, explicit 0.889 (the two uncertain place names at
 the end). Keeps read. (The reading's header says its spelling was modernised; not changed here.)
 
+## 23 Oct 2026: R1006 spelling restored (sr)
+
+`read/R1006_reading.md` was the one reading still in modernised spelling. The writer's spelling restored word by word
+from the margin decipherment (`read/R1006_margin.txt`: agrauios, recivido, nacion, aora, satisfacion, governador,
+Milan, ultima resolucion, despues, haverse, algun, bolvio, buelta), accents taken off; words the margin lacks (de
+nuestro partido, y galeras) spelt as the key decode gives them. No word changed, holes kept; the second place name is
+given as the margin and the decode spell it, [?Vieres] (Hyères in the English). Rescored with
+`research/reading_audit/v2_score.py`: plain 0.778 -> 0.556 (the modern word list does not know 1677 spelling), explicit
+holes 0.889 unchanged, hole rate 0.03. The sentences hold; keeps read on the explicit-hole share (REREAD_BRIEF rule 4).
+
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: read/R1002, R1003, R1007-R1011_reading.md said 'Spelling modernised'. Each was put back into the writer's spelling word by word from its margin transcription (read/R*_margin.txt; research/reading_audit/v6_align.py): haviendo, deve, aora, executar, quando, assi, provada, Napoles, editorial accents off; words the margin abbreviates or does not carry are written out or spelt as the key decode gives them, without accents. Holes and brackets kept, no word changed; headers say what the spelling follows. R1006 was left to the agent working on it. Explicit-hole shares unchanged (0.909-1.0); all keep read. Modern spelling stays in the _en.md files.
+
 ## Remaining gaps
-- R1006 last sentence: two place names, code "rin" and spelled "vi ve re s", read [?Tolón] and [?Hyères] - blocker: illegible (the margin is unreadable there on the DECODE scan; a better image of AGR SEG inv. 2559 would settle it)
+- R1006 last sentence: two place names, code "rin" and spelled "vi ve re s", read [?Tolon] and [?Vieres] (= Hyères) - blocker: illegible (the margin is unreadable there on the DECODE scan; a better image of AGR SEG inv. 2559 would settle it)
 - R1002 one misread group after "que Dios guarde" ({7}); R1003 one verb not written in cipher or margin - blocker: illegible (DECODE slip; margin runs on without it)
 - key: struck 55 and a few struck numbers ([25], [80]) not fixed in the table - blocker: open-codes (each read from context in its letter)
 

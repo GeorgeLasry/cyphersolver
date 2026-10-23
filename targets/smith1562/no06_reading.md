@@ -1,7 +1,7 @@
-<!-- Reading of no. 06, built 22 Oct 2026 by Claude Opus 5.5 (batch b03). Forbes copied only the cipher stretches of this letter (Add MS 4136 f. 159, DECODE R9250 p. 1); the clear text is not in print (CSP Foreign vi no. 1078, Smith to the Queen, Valmont 28 July 1563, summarises it: the Earl of Warwick's letter "does not answer whether he be able to keep it, or for what time, nor what men he has in it"). Both passages re-read on the image with Smith's key R9261 (no01-no23_reread_log.md); ‖ = i on this leaf. Spelling modernised. -->
+<!-- Reading of no. 06, built 22 Oct 2026 by Claude Opus 5.5 (batch b03). Forbes copied only the cipher stretches of this letter (Add MS 4136 f. 159, DECODE R9250 p. 1); the clear text is not in print (CSP Foreign vi no. 1078, Smith to the Queen, Valmont 28 July 1563, summarises it: the Earl of Warwick's letter "does not answer whether he be able to keep it, or for what time, nor what men he has in it"). Both passages re-read on the image with Smith's key R9261 (no01-no23_reread_log.md); ‖ = i on this leaf. Spelling (v6, 23 Oct 2026): the figures', as Smith's key spells them (no01-no23_reread_log.md, decipher_*.md, no01-no23_corrections.tsv); the modernised spelling of 22 Oct restored by hand where the figures spell a word (code signs for names, places and titles carry no spelling and keep the key's gloss). No word was changed. Modern spelling is only in the English file. -->
 
 # No. 06, Sir Thomas Smith to the Queen, [Valmont], 27/28 July 1563
 
 My Lord of Warwick.
 
-Whether he be able to keep it or no, [?nor] for what term, nor what men he hath in it.
+Whether he be able to kepe it or no, [?nor] for what terme, nor what men he hath in it.

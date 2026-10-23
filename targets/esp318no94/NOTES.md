@@ -104,6 +104,8 @@ What the issue raised, and what was checked here (`check94.py`):
    in 612 groups: if it is the same group, it is the one overlap, not a shared code. Brackx also found that no. 94's
    alphabet makes no. 93 worse. Split.
 
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: texts/no94_partial_reading.md kept Michael Brackx's normalised spelling. It now follows the letter's: the clerk's clear text as written and the cipher letters as his key gives them (no94_decryption.md P: lines; v6_charalign.py): editorial accents off, Puertocarero, canpo, elecion, Ugo, ANYMA, QUISSO. Code words keep his labels; no word changed. Explicit holes unchanged (0.263); stays decoded, not read.
+
 ## Remaining gaps
 
 - about 90 code groups, 154 of 623 code-group tokens, mostly once or twice - blocker: no-key-material; two-part code, no alphabetical bracket; Bergenroth's Gran cifra list (BNE MSS 20.211/52, read 23 Oct 2026 from Quirantes's photocopy) is a different code (1 of 12 firm readings agrees); the 'Cifra del visorrey' (BRAH 9/15 ff. 1-6) is not online

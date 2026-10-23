@@ -118,6 +118,8 @@ No. 09 was marked read but is two names (*Nanion Cocborne*, *Villeros*; `no09_re
 score as sentences. Relabelled **not prose** in `profile.json`, with a note: both names are deciphered (key R9261, on
 the image) and CSP Foreign vii 650 gives their setting. fraction_read 0.78 unchanged (its two passages stay counted).
 
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: fourteen readings said 'Spelling modernised'. Nos. 01, 03, 04, 05, 19, 20 now follow Forbes's print (A Full View ii, 1741, which keeps the originals' spelling), restored word by word from the OCR in forbes2.txt (main checkout) with v6_align.py --ocr (long s, recurrence check, OCR slips refused by hand; a word whose OCR is garbled keeps its earlier form). Nos. 06, 08, 11, 15, 16, 17, 22 follow the figures' spellings recorded in no01-no23_reread_log.md, decipher_*.md and the corrections tsv (kepe, terme, sonnes, hote, bel awaye, hir, ernest, congratulacion and condoleaunce, intervewe, forain realmes, dispach, unserched, lokes, Scotish, speake, Secretarie, feate, somwhat, tyme, necessarie); code signs keep their gloss. No. 18 had nothing to restore. Explicit-hole shares unchanged; states unchanged (no. 15 stays decoded, not read).
+
 ## Remaining gaps
 
 Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b03, read). What stays open:

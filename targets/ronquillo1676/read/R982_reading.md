@@ -1,28 +1,28 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): read on the images, no contemporary decipherment (none in the margins of 5093-5095); the key decode (read/R982.dec.txt, keyx.py, on the image re-transcription txi/R982.txt, second pass) checked sentence by sentence against the cipher figures. Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain; [al] = unidentified code group. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): read on the images, no contemporary decipherment (none in the margins of 5093-5095); the key decode (read/R982.dec.txt, keyx.py, on the image re-transcription txi/R982.txt, second pass) checked sentence by sentence against the cipher figures. Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R982.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain; [al] = unidentified code group. -->
 
 # R982, Ronquillo to Fuenmayor, Nijmegen, 19 Mar 1678
 
 ## Reading
 
-⟨... con que me continúan los favores que V.S. me hace.⟩ [...] He visto con particular gusto los discursos de V.S. y
-lo que [...] caminando hacia los pasos, que son muy propios de la prudencia, celo y [?actividad] de V.S. Y pluguiera a
-Dios que nuestras desgracias no fueran tan superiores [...] nos hallásemos en estado de poder [...]; pero siendo de la
-mala calidad que V.S. [?habrá] entendido, es menester conformarnos con la voluntad de Dios y atribuir a sus justos
-juicios el que Flandes corra [...] a la última desesperación, lo que, [?aseguro] a V.S., nos tiene a todos [?tan]
-atónitos y sorprendidos que hasta el gusto de discurrir con los [...] nos falta, [...] el dolor y consideraciones de
+⟨... con que me continuan los favores que V.S. me hace.⟩ [...] He visto con particular gusto los discursos de V.S. y
+lo que [...] caminando acia los pasos, que son muy propios de la prudencia, celo y [?actividad] de V.S. Y pluguiera a
+Dios que nuestras desgracias no fueran tan superiores [...] nos hallasemos en estado de poder [...]; pero siendo de la
+mala calidad que V.S. [?habra] entendido, es menester conformarnos con la voluntad de Dios y atribuir a sus justos
+juicios el que Flandes corra [...] a la ultima desesperacion, lo que, [?aseguro] a V.S., nos tiene a todos [?tan]
+atonitos y sorprendidos que hasta el gusto de discurir con los [...] nos falta, [...] el dolor y consideraciones de
 nuestra infelicidad.
 
-La Inglaterra se mantiene todavía en la misma [?ambigüedad] e irresolución que experimentamos dos meses ha, como V.S.
-estará informado por el [...]; con que, reconociendo el punto crítico [...] el estado presente de las cosas y el
-peligro y evidente riesgo en que se hallan los Países Bajos, y por consiguiente los demás del Norte, después [?de] la
-pérdida de Gante, podemos esperar, si Dios por su misericordia no permite que experimentemos el último castigo, que
+La Inglaterra se mantiene todavia en la misma [?ambigüedad] e irresolucion que experimentamos dos meses ha, como V.S.
+estara informado por el [...]; con que, reconociendo el punto critico [...] el estado presente de las cosas y el
+peligro y evidente riesgo en que se hallan los Paises Bajos, y por consiguiente los demas del Norte, despues [?de] la
+perdida de Gante, podemos esperar, si Dios por su misericordia no permite que experimentemos el ultimo castigo, que
 nuestros aliados, excusando sus particulares controversias, se apliquen enteramente a defendernos y a defenderse todos
 contra los progresos de Francia. Para lo cual, y para que los Brunswick no persistan en [...] de sus pretensiones,
-obligará también mucho las noticias que tienen [bc]s de la entrada que ha hecho el conde de Königsmarck en el
-[?Mecklenburg]; juntándose a esta mala [...] de cosas los discursos que, por otras correspondencias habrá entendido
-V.S., hacen ya los [al]eses, que no pueden dejar de concebir pésimas consecuencias. Con que de todas maneras estamos
-muy mal, pues [...]. Yo refiero a V.S. estas melancólicas reflexiones no solo por ser propias de [...] sino [...],
-porque, habiéndose [?arrogado] a las cortes de [...], La Haya y [109] la [...] de estas manos, no sé [fin] qué decir a
+obligara tambien mucho las noticias que tienen [bc]s de la entrada que ha hecho el conde de Konigsmarck en el
+[?Mecklenburg]; juntandose a esta mala [...] de cosas los discursos que, por otras correspondencias habra entendido
+V.S., hacen ya los [al]eses, que no pueden dejar de concevir pesimas consecuencias. Con que de todas maneras estamos
+muy mal, pues [...]. Yo refiero a V.S. estas melancolicas reflexiones no solo por ser propias de [...] sino [...],
+porque, haviendose [?arrogado] a las cortes de [...], La Haya y [109] la [...] de estas manos, no se [fin] que decir a
 V.S. del congreso.
 
 ## Notes

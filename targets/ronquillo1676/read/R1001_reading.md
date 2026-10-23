@@ -1,32 +1,32 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R1001.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R1001.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R1001.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R1001, Ronquillo to Fuenmayor, Nijmegen, 6 Feb 1677
 
-⟨... y creyendo que no se ofrecerán otros reparos, saldremos muy presto de este preliminar,⟩ a cuyo ajustamiento ha
-sido preciso contribuir por nuestra parte por la prisa de holandeses y las voces que han dado a este fin, pasando a
-descubrir su ánimo públicamente, y particularmente Beverningk. Pero es también cierto que, cuando le hablo yo a solas,
-le hallo más sosegado; y todos ellos me dan grandes seguridades y promesas de que no nos abandonarán, sacando para esta
-consecuencia la galantería con que el Príncipe de Orange ha enviado a Flandes la gente que se le ha pedido. Pero no por
-esto se sosiega mi cuidado de que de una manera o de otra nos jueguen alguna pieza, y así no los dejo de la mano, sin
-embargo de alguna noticia que he tenido (de las que puedo adquirir en ausencia de don Manuel de Lira, cuya falta en La
-Haya no puedo ponderar a V.S. de cuánto daño e inconveniente nos es) de que los Estados atienden a nuestros intereses y
-que conocen les importa a ellos. Pero como don Manuel de Lira se está en Bruselas, que es quien podía indagar y
-reconocer más abiertamente el dictamen de holandeses, no se puede dar crédito a nada; y así vuelvo a decir a V.S. que
+⟨... y creyendo que no se ofreceran otros reparos, saldremos muy presto de este preliminar,⟩ a cuyo ajustamiento ha
+sido preciso contribuir por nuestra parte por la prisa de holandeses y las voces que an dado a este fin, pasando a
+descubrir su animo publicamente, y particularmente Beverningk. Pero es tanvien cierto que, cuando le hablo yo a solas,
+le hallo mas sosegado; y todos ellos me dan grandes seguridades y promesas de que no nos avandonaran, sacando para esta
+consecuencia la galanteria con que el Principe de Orange ha enviado a Flandes la gente que se le ha pedido. Pero no por
+esto se sosiega mi cuidado de que de una manera o de otra nos jueguen alguna pieza, y asi no los dejo de la mano, sin
+envargo de alguna noticia que he tenido (de las que puedo adquirir en ausencia de don Manuel de Lira, cuya falta en La
+Haya no puedo ponderar a V.S. de cuanto daño e inconveniente nos es) de que los Estados atienden a nuestros intereses y
+que conocen les inporta a ellos. Pero como don Manuel de Lira se esta en Bruselas, que es quien podia indagar y
+reconocer mas abiertamente el dictamen de holandeses, no se puede dar credito a nada; y asi buelvo a decir a V.S. que
 mi mayor cuidado es atender a las acciones de estos embajadores holandeses y caminar junto con ellos.
 
-Hasta ahora se habla con fuerza en la paz separada con Suecia, como en mi última referí a V.S. distintamente, y le dije
-los motivos que tienen holandeses para salir de la guerra, encaminando sus máximas en esto en beneficio nuestro. Pero
-yo procuro dar a entender a Beverningk, que es quien más lo garlea, que de ninguna manera lo puede ser menos que en caso
-de que este ajuste intervenga en una paz general; y las razones que alego V.S. las habrá visto. En qué parará [no se
-sabe], ni hasta ahora se ha hablado en ello formalmente en el congreso.
+Hasta aora se habla con fuerza en la paz separada con Suecia, como en mi ultima referi a V.S. distintamente, y le dije
+los motivos que tienen holandeses para salir de la guerra, encaminando sus maximas en esto en veneficio nuestro. Pero
+yo procuro dar a entender a Beverningk, que es quien mas lo garlea, que de ninguna manera lo puede ser menos que en caso
+de que este ajuste intervenga en una paz general; y las razones que alego V.S. las habra visto. En que parara [no se
+sabe], ni hasta aora se ha hablado en ello formalmente en el congreso.
 
 Repito a V.S. las gracias por las noticias que me participa de los pasos que se van dando en esa asamblea y las
 dificultades que V.S. reconoce en el ajuste de esas materias. Y en lo que V.S. me dice de que se ha hecho abertura de
-que se salga de embarazos por vía de un interim, a que parece se inclinan daneses, debo decir a V.S. que, según mis
-noticias, me parece que holandeses no vendrán en nada que sea ajuste; y que a este fin ha venido a La Haya el ministro de
-Holanda, y yo creo que será la ida del humo, porque los Estados quieren mantener las dificultades que ocurren para que
-después quede a su arbitrio la conclusión. V.S., que se halla al pie de la obra, conocerá mejor que ninguno lo que hay en
-esto, y a mí solo me toca el ponderar el acierto y prudencia con que V.S. discurre, y suplicarle se sirva de continuarme
+que se salga de embarazos por via de un interim, a que parece se inclinan daneses, debo decir a V.S. que, segun mis
+noticias, me parece que holandeses no vendran en nada que sea ajuste; y que a este fin a venido a La Haya el ministro de
+Holanda, y yo creo que sera la ida del humo, porque los Estados quieren mantener las dificultades que ocurren para que
+despues quede a su arbitrio la conclusion. V.S., que se halla al pie de la obra, conocera mejor que ninguno lo que ay en
+esto, y a mi solo me toca el ponderar el acierto y prudencia con que V.S. discurre, y suplicarle se sirva de continuarme
 sus noticias.
 
 ## Notes

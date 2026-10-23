@@ -113,7 +113,8 @@
    "what": "Read every cipher passage of ff. 79r, 79v, 80r and the signature from half-line crops of the full-resolution scans, decoding by hand with Tomokiyo's key; checked against the surviving gloss. Name signs Z, M, La and a handful of words left uncertain.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked reading.md; no transcription of the ciphertext", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked reading.md; no transcription of the ciphertext", "result": "partial"},
+  {"date": "2026-10-23", "kind": "control", "technique": ["other"], "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): reading.md header checked for modernised spelling (v6): it keeps the cipher's and the clear text's own spelling and modernises only a cipher word whose spelling cannot be read; nothing to restore (false hit). Rescored with research/reading_audit/v2_score.py: reading.md plain 0.385 -> 0.385, explicit holes 0.938 -> 0.938. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",

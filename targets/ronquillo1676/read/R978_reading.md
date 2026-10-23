@@ -1,50 +1,50 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R978.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R978.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R978.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R978, Ronquillo to Fuenmayor, Nijmegen, 10 Feb 1677 (signed for him by Bernardo Navarro)
 
 ## Reading
 
-⟨... en que desempeñar mi obligación.⟩ La conclusión deste diablo de proyecto de plenipotencias nos tiene cada día
-más embarazados por las disputas y reparos que a instantes se mueven; y si bien por nuestra parte, y la de
-holandeses también, creo que por la del señor Emperador podía estar acabado de ajustar este punto, pues están
-conformes las minutas que hemos presentado a los mediadores, y no se halla sobre qué asir, no obstante una gasconada
-del plenipotenciario danés mantiene esta disputa, la cual consiste en defender y estar reacio en que, si los
-franceses le entregaren sus plenipotencias en latín, entregará él la suya en la misma idioma; pero que si fuere en
-francés, formará la de su amo en danés; en cuya disputa no se deja de conocer que es mucha parte de tema.
+⟨... en que desempeñar mi obligacion.⟩ La conclusion deste diablo de proyecto de plenipotencias nos tiene cada dia
+mas envarazados por las disputas y reparos que a instantes se mueven; y si vien por nuestra parte, y la de
+holandeses tanvien, creo que por la del señor Emperador podia estar acavado de ajustar este punto, pues estan
+conformes las minutas que hemos presentado a los mediadores, y no se halla sobre que asir, no obstante una gasconada
+del plenipotenciario danes mantiene esta disputa, la cual consiste en defender y estar reacio en que, si los
+franceses le entregaren sus plenipotencias en latin, entregara el la suya en la misma idioma; pero que si fuere en
+frances, formara la de su amo en danes; en cuya disputa no se deja de conocer que es mucha parte de tema.
 
 Los holandeses han entregado ya su poder firmado, y tratan de hacer lo mismo de sus pretensiones; y a esto se junta
-el alboroto que se ha levantado entre los plenipotenciarios de Holanda por haberse dejado decir el conde de Kinsky a
-los mediadores que todas las minutas entregadas se habían de volver a traer a la conferencia de los aliados para que
+el alvoroto que se ha levantado entre los plenipotenciarios de Holanda por haberse dejado decir el conde de Kinsky a
+los mediadores que todas las minutas entregadas se habian de volver a traer a la conferencia de los aliados para que
 se firmen y reconozcan los reparos que se hallan; lo cual, en la prisa de holandeses, les parece muchas largas, y
-esta mañana estuvieron conmigo echando rayos y centellas, y en fin prorrumpieron en decir que no había de haber más
-conferencia; que aunque es verdad que en todos los negocios era bien se caminase de común acuerdo de los
-confederados, que ellos no querían estar sujetos a que se les impidiese el hacer sus particulares diligencias. Y
-estoy en ánimo de hacer las nuestras al mismo tiempo, aunque no concurran los demás, no solo por caminar unido con
-esta gente, sino también porque, conteniendo una cláusula sobre la satisfacción de los aliados, no respondan
+esta mañana estuvieron conmigo echando rayos y centellas, y en fin prorrumpieron en decir que no habia de haber mas
+conferencia; que aunque es verdad que en todos los negocios era vien se caminase de comun acuerdo de los
+confederados, que ellos no querian estar sujetos a que se les impidiese el hacer sus particulares diligencias. Y
+estoy en animo de hacer las nuestras al mismo tiempo, aunque no concurran los demas, no solo por caminar unido con
+esta gente, sino tambien porque, conteniendo una clausula sobre la satisfaccion de los aliados, no respondan
 franceses que no hemos pedido nada.
 
-Yo veo a estos hombres muy ansiosos por la paz; y aunque no me atreveré a afirmar que la hagan separada, por las
-seguridades que cada día me dan de que no nos abandonarán y que nos asistirán en la guerra, no obstante temo mucho
-que prorrumpan en obligarnos a firmar un tratado intempestivamente, dándonos la ley que quisieren. Yo los procuro
-sosegar, y me han ofrecido que, aunque retarden cuatro o cinco días más el presentar sus pretensiones, aguardarán a
+Yo veo a estos hombres muy ansiosos por la paz; y aunque no me atrevere a afirmar que la hagan separada, por las
+seguridades que cada dia me dan de que no nos avandonaran y que nos asistiran en la guerra, no obstante temo mucho
+que prorrumpan en obligarnos a firmar un tratado intempestivamente, dandonos la ley que quisieren. Yo los procuro
+sosegar, y me an ofrecido que, aunque retarden cuatro o cinco dias mas el presentar sus pretensiones, aguardaran a
 que concurran a un mismo tiempo las nuestras; y procuro no dejarlos un punto de la mano, porque no se arrojen a mayor
-desesperación.
+desesperacion.
 
-Repito a V.S. mi agradecimiento por las noticias que me participa de lo que ahí ocurre y por los papeles que me
-remite. La declaración que ha hecho el conde de Windischgrätz de parte del señor Emperador es muy buena en lo general,
+Repito a V.S. mi agradecimiento por las noticias que me participa de lo que ahi ocurre y por los papeles que me
+remite. La declaracion que ha hecho el conde de Windischgratz de parte del señor Emperador es muy buena en lo general,
 porque es dar a entender que quiere parte en las conquistas, o que los aliados acudan a garantir sus dominios de la
 Alsacia; pero esta materia es menester tratarla con mucho tiento y maña, porque no nos sea de perjuicio. Los
-holandeses aprobarán lo primero, porque están en dictamen de que la parte de las conquistas contra Suecia sirvan de
-permuta a nuestras pérdidas en Flandes; pero lo segundo no lo arrostrarán, y el señor Emperador volverá a adquirir el
-crédito que ha tenido de que no quería la paz y que solo mira a sus intereses particulares; y tanto más se entrará en
-este conocimiento cuanto marche por lo alto de la Mosela y se emplee en obrar por la causa común.
+holandeses aprobaran lo primero, porque estan en dictamen de que la parte de las conquistas contra Suecia sirvan de
+permuta a nuestras perdidas en Flandes; pero lo segundo no lo arrostraran, y el señor Emperador volvera a adquirir el
+credito que ha tenido de que no queria la paz y que solo mira a sus intereses particulares; y tanto mas se entrara en
+este conocimiento cuanto marche por lo alto de la Mosela y se emplee en obrar por la causa comun.
 
-Y ya V.S. habrá entendido que el Príncipe de Orange se ha declarado en que no se moverá mientras el ejército del
-señor Emperador no obrase lo proyectado en La Haya. V.S. puede considerar cuál me hallaré con todas estas cosas,
+Y ya V.S. habra entendido que el Principe de Orange se ha declarado en que no se movera mientras el ejercito del
+señor Emperador no obrase lo proyectado en La Haya. V.S. puede considerar cual me hallare con todas estas cosas,
 estando solo, y tan solo que aseguro a V.S. que ni de Madrid, de Flandes, ni de otra ninguna parte no me ayudan, ni
-aun con noticias; y en medio desto se está en Bruselas don Manuel de Lira, que era el único que me podía ayudar desde
-La Haya; pero también reconozco que la misma razón que justifica su ida de Holanda justifica igualmente el que no
-vuelva, sin remedio; y en verdad que sería de gran conveniencia su asistencia en aquella corte. ⟨Dios nos asista, y
+aun con noticias; y en medio desto se esta en Bruselas don Manuel de Lira, que era el unico que me podia ayudar desde
+La Haya; pero tambien reconozco que la misma razon que justifica su ida de Holanda justifica igualmente el que no
+vuelva, sin remedio; y en verdad que seria de gran conveniencia su asistencia en aquella corte. ⟨Dios nos asista, y
 guarde a V.S. muchos años como deseo. Nimega 10 de febrero de 1677.⟩
 
 ## Notes

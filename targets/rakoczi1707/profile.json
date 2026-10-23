@@ -163,6 +163,13 @@
       "technique": ["statistical test", "manual reconstruction"],
       "what": "Verification 5 (plain bar, 23 Oct 2026): '## Reading' and '## Corrections' headings added to R902_reading.md (body plain 0.771, explicit 0.896). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "technique": ["plaintext matching"],
+      "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): R902_reading.md ('spelling is normalised') aligned letter by letter with the decode (measure_tr.py --text; v6_charalign.py --keep-accents --keep-uv-ij): aussÿ, arrete(z), relaché, naitre, interets, incroiable, afermie, Luben, Stetin restored; accents and u/v, i/j as before; no word changed. Rescored with research/reading_audit/v2_score.py: R902_reading.md plain 0.771 -> 0.729, explicit holes 0.896 -> 0.896. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
+      "result": "worked"
     }
   ],
   "outcome": {

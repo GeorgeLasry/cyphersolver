@@ -1,57 +1,57 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R975.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R975.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R975.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R975, Ronquillo to Fuenmayor, Nijmegen, 28 Dec 1676
 
 ## Reading
 
 ⟨... y ya he visitado yo a los segundos y buscado el primero.⟩ Fieramente aprietan los holandeses para la paz, y nada
-encubren que conduzca a este fin, y no se dan menos a entender contra nuestra desidia y desprevención. Es menester
+encubren que conduzca a este fin, y no se dan menos a entender contra nuestra desidia y desprevencion. Es menester
 confesar que son buenos [?suecos], en que no menos concurren los ingleses. Las disculpas que da el conde Kinsky de una
-ciática que le ha sobrevenido en Colonia las desprecian. No obstante, se han conformado en que no hagamos extradición
-de nuestras plenipotencias hasta que llegue un ministro del señor Emperador, que no ha sido poco que hayan conocido
-que era embarazar más presentar las de los aliados uno a uno que todos juntos; pero es cierto que, proponiendo juntos
-todos los reparos, el expediente que se tomare será más efectivo.
+ciatica que le ha sobrevenido en Colonia las desprecian. No obstante, se han conformado en que no hagamos extradicion
+de nuestras plenipotencias hasta que llegue un ministro del señor Emperador, que no ha sido poco que ayan conocido
+que era envarazar mas presentar las de los aliados uno a uno que todos juntos; pero es cierto que, proponiendo juntos
+todos los reparos, el expediente que se tomare sera mas efectivo.
 
 Han entregado a los mediadores franceses y holandeses sus plenipotencias. En la de Holanda hubo un pequeño reparo,
 que ya los Estados han mandado deshacer. En las de Suecia no se puede tolerar la [?altivez] y el declarar que han
-sido provocados a la guerra por haberse infringido la paz de Westfalia; semejantes cláusulas de arrogancia han
+sido provocados a la guerra por haberse infringido la paz de Westfalia; semejantes clausulas de arrogancia han
 arrojado franceses. Pero las dos que en su plenipotencia parecen intolerables son: la una, el decir el Rey de Francia
 que ha condescendido en enviar sus embajadores al congreso por los expedientes que el Rey de Inglaterra le ha
-subministrado, y espera que conseguirá para poner en libertad al príncipe Guillermo de Fürstenberg, lo cual de
-ninguna manera consentirá el señor Emperador; la otra la ponen los holandeses y todos los príncipes protestantes, que
-es la que contiene la mediación del Papa, diciendo que el instrumento de las plenipotencias es el fundamento de la
-firmeza del contrato que se ha de hacer de la paz, y que este no ha de tener cláusula que contradiga a la religión,
-que es la basa del derecho público del Estado. Y con efecto, cuando los diputados en La Haya vinieron en quitar
-aquella palabra "separada" en sus plenipotencias, resolvieron al mismo tiempo que no se consintiese la expresión de
-la mediación del Papa. Los franceses respondieron que no han de alterar el contexto referido, que tiene aprobación de
-su amo; pero dicen también que esperan dentro de tres o cuatro días respuesta a otra carta que han escrito; y si,
-como dicen, quieren entrar derechos y obviar los inconvenientes al tratado de la paz, no dejarán de hallarse medios
-términos para esto.
+subministrado, y espera que conseguira para poner en libertad al principe Guillermo de Furstenverg, lo cual de
+ninguna manera consentira el señor Emperador; la otra la ponen los holandeses y todos los principes protestantes, que
+es la que contiene la mediacion del Papa, diciendo que el instrumento de las plenipotencias es el fundamento de la
+firmeza del contrato que se ha de hacer de la paz, y que este no ha de tener clausula que contradiga a la religion,
+que es la vasa del derecho publico del Estado. Y con efecto, cuando los diputados en La Haya vinieron en quitar
+aquella palabra "separada" en sus plenipotencias, resolvieron al mismo tiempo que no se consintiesse la expresion de
+la mediacion del Papa. Los franceses respondieron que no han de alterar el contexto referido, que tiene aprovacion de
+su amo; pero dicen tambien que esperan dentro de tres o cuatro dias respuesta a otra carta que han escrito; y si,
+como dicen, quieren entrar derechos y obviar los inconvenientes al tratado de la paz, no dejaran de hallarse medios
+terminos para esto.
 
 Antes de anoche me dijeron los holandeses que los mediadores instaban mucho en que se permitiesen los correos
-ordinarios para Suecia; y aunque a mí me hicieron la salva de que justamente Su Majestad danesa lo contradecía por no
-haber querido conceder esto mismo en su pasaporte, no obstante alzaban el grito por su comercio, que estaba
-embarazado por no poder tener correspondencias los mercaderes para las letras de cambio y los avisos. Para vencer
-este punto nos ofrecen los mediadores que Francia nos permitirá el libre despacho de los correos, aunque con algún
-rodeo; ofrecimiento que yo no he querido responder positivamente, pero siempre nos estará bien tener libre el paso,
-aunque también creen que, si le ponen con condiciones, ha de ser con las mismas que nosotros les concediéremos.
+ordinarios para Suecia; y aunque a mi me icieron la salva de que justamente Su Magestad danesa lo contradecia por no
+haber querido conceder esto mismo en su pasaporte, no obstante alzavan el grito por su comercio, que estava
+envarazado por no poder tener correspondencias los mercaderes para las letras de cambio y los avisos. Para vencer
+este punto nos ofrecen los mediadores que Francia nos permitira el libre despacho de los correos, aunque con algun
+rodeo; ofrecimiento que yo no he querido responder positivamente, pero siempre nos estara vien tener libre el paso,
+aunque tambien creen que, si le ponen con condiciones, ha de ser con las mismas que nosotros les concedieremos.
 
-De la retirada del ministro de Münster, y de la disculpa de no querer tratar por esto el de Wolfenbüttel, se infiere
-lo que V.S. discurre de que van de acuerdo; y yo creo que tirarán a que se traiga al congreso general esta materia,
-porque deben de comprehender que han de ser más asistidos que otros de holandeses, y que estos no tienen gran gana de
-que queden con ventajas Dinamarca y Brandeburgo en el ducado de Bremen, pues más aprisa querrán componer a Suecia de
-los despojos destos príncipes que de los de Zell y Münster.
+De la retirada del ministro de Munster, y de la disculpa de no querer tratar por esto el de Wolfenbuttel, se infiere
+lo que V.S. discurre de que van de acuerdo; y yo creo que tiraran a que se trayga al congreso general esta materia,
+porque deven de conprehender que han de ser mas asistidos que otros de holandeses, y que estos no tienen gran gana de
+que queden con ventajas Dinamarca y Brandeburgo en el ducado de Bremen, pues mas aprisa querran conponer a Suecia de
+los despojos destos principes que de los de Cel y Munster.
 
-Aquí no parece ministro alguno de estos príncipes ni de Lorena, porque el Rey de Francia bien da a entender que no
-está en ánimo de concederles el jus legationis. Y aunque a Lorena le trata con más decencia, y se conforma en que,
-habiendo ejemplar de haberse cubierto algún embajador del Duque, concederá los pasaportes en la misma forma, y
-habiéndole presentado dos, dice ahora que los justifiquen, cuando el Rey de Francia ha arrancado hasta el último los
-archivos de Nancy; a los príncipes del Imperio dice que desea saber lo que harán el Emperador y España, pero no se
+Aqui no parece ministro alguno de estos principes ni de Lorena, porque el Rey de Francia vien da a entender que no
+esta en animo de concederles el jus legationis. Y aunque a Lorena le trata con mas decencia, y se conforma en que,
+haviendo ejemplar de haberse cuvierto algun embajador del Duque, concedera los pasaportes en la misma forma, y
+haviendole presentado dos, dice aora que los justifiquen, quando el Rey de Francia ha arrancado hasta el ultimo los
+archivos de Nancy; a los principes del Imperio dice que desea saver lo que haran el Emperador y España, pero no se
 remite a lo que estos hicieren. Yo quisiera que en esto se tomara expediente, porque estoy previniendo que el mismo
-día que se ajuste el contexto de las plenipotencias hemos de entrar en los puntos principales de hacer proposiciones,
-y fuera de gran daño el que para entonces no se hallasen aquí ministros de Lorena, Zell y Münster; y en esta materia
-no oso hablar, porque en Madrid no han respondido a este particular, y ya sabe V.S. que en nuestra corte ninguno se
-cubre sino es que sea de cabeza coronada, o de las repúblicas de Venecia o Holanda. ⟨V.S. perdone la prolijidad de
+dia que se ajuste el contexto de las plenipotencias hemos de entrar en los puntos principales de hacer proposiciones,
+y fuera de gran daño el que para entonces no se hallasen aqui ministros de Lorena, Zell y Munster; y en esta materia
+no oso hablar, porque en Madrid no han respondido a este particular, y ya save V.S. que en nuestra corte ninguno se
+cubre sino es que sea de caveza coronada, o de las republicas de Venecia o Holanda. ⟨V.S. perdone la prolijidad de
 esta carta ...⟩
 
 ## Notes

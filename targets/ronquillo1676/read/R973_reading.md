@@ -1,15 +1,15 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R973.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images. DECODE's transcriber put this margin in a #COMMENT, not in the margin lines, so it had been listed as a letter without a decipherment. Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R973.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images. DECODE's transcriber put this margin in a #COMMENT, not in the margin lines, so it had been listed as a letter without a decipherment. Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R973.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R973, Salinas to Fuenmayor, London, 2 Mar 1677
 
-⟨... de cuyas novedades remito a V.S. relación, que continuaré de lo que pasare todos los días,⟩ no siendo tan malos
-principios cuando los dan en negocio que tanto nos importa como retirar las tropas de Francia, en que me prometo
-persistirán; negociación que no es despreciable cuando se consigue a tan poca costa como la que yo les hago, pero con
-alguna se pudieran lograr cosas mayores, en que no ha bastado la prevención de muchos meses, con que todo va de cabeza
-y de limosna. Los discursos de nuestras negociaciones han calmado por ahora.
+⟨... de cuyas novedades remito a V.S. relacion, que continuare de lo que pasare todos los dias,⟩ no siendo tan malos
+principios quando los dan en negocio que tanto nos importa como retirar las tropas de Francia, en que me prometo
+persistiran; negociacion que no es despreciable quando se consigue a tan poca costa como la que yo les hago, pero con
+alguna se pudieran lograr cosas mayores, en que no ha vastado la prevencion de muchos meses, con que todo va de caveza
+y de limosna. Los discursos de nuestras negociaciones han calmado por aora.
 
-⟨... pero me deja cuidadoso la marcha del Rey de Francia, que aseguran salió domingo,⟩ que, siendo cierto, la de
-París lleva hecha.
+⟨... pero me deja cuidadoso la marcha del Rey de Francia, que aseguran salio domingo,⟩ que, siendo cierto, la de
+Paris lleva hecha.
 
 ## Notes
 

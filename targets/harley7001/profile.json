@@ -189,6 +189,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct.txt / ciphertext.txt and reading.txt; key and conjectures in key.py",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "technique": ["plaintext matching"],
+      "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): reading.txt ('spelling modernised lightly') checked against the key decode of ct.txt: the cipher's spelling (goe, refusall, preuent) is kept; 'prevent' restored to 'preuent', the only word the light modernisation had changed; code groups keep the key's word. Rescored with research/reading_audit/v2_score.py: reading.txt plain 0.478 -> 0.469, explicit holes 0.717 -> 0.714. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
+      "result": "worked"
     }
   ],
   "outcome": {

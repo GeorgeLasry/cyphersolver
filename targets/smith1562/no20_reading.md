@@ -1,7 +1,7 @@
-<!-- Reading of no. 20, built 22 Oct 2026 by Claude Opus 5.5 (batch b03). Rests on Forbes, A Full View ii 123 (1741), printed from the original, with the deciphered words in italic (Newhaven; garden of chamillion upon the hill on this side; France); the 4 cipher passages of Add MS 4136 f. 140 (DECODE R9236) were re-read on the image with Smith's key R9261 and agree with them. One short group (m-a-b-c, before "upon") does not decode and one sign under a blot is not legible; neither carries a word of the print (no01-no23_reread_log.md). Cipher passages plain; ⟨ ⟩ = clear text as Forbes prints it. Spelling modernised. -->
+<!-- Reading of no. 20, built 22 Oct 2026 by Claude Opus 5.5 (batch b03). Rests on Forbes, A Full View ii 123 (1741), printed from the original, with the deciphered words in italic (Newhaven; garden of chamillion upon the hill on this side; France); the 4 cipher passages of Add MS 4136 f. 140 (DECODE R9236) were re-read on the image with Smith's key R9261 and agree with them. One short group (m-a-b-c, before "upon") does not decode and one sign under a blot is not legible; neither carries a word of the print (no01-no23_reread_log.md). Cipher passages plain; ⟨ ⟩ = clear text as Forbes prints it. Spelling (v6, 23 Oct 2026): Forbes's, as printed (he prints the originals' spelling); the modernised spelling of 22 Oct was restored word by word from the OCR of Forbes vol. ii (forbes2.txt, main checkout; research/reading_audit/v6_align.py --ocr: OCR long-s read as s, an OCR form not the same word kept only when it recurs in the print, OCR slips refused by hand). Where the OCR is garbled the word keeps its earlier form; no word was changed. Modern spelling is only in the English file. -->
 
 # No. 20, Sir Thomas Smith to Cecil, Poissy, 20 October 1562
 
-Newhaven ⟨is not so strong as men do take it; and, if it were summer, they would attempt to affray our men thence with
-a⟩ garden of chamillion upon the hill on this side. ⟨They that understand the place well can understand what I mean.
-And things begun there by⟩ France ⟨be not perfect.⟩
+Newhaven ⟨is not so strong as men do take it; and, if it were sommer, they wolde attempt to afray our men thence wythe
+a⟩ garden of chamillion upon the hill on this side. ⟨They that understand the place well can understand what I meane.
+And thyngs begon there by⟩ France ⟨be not perfect.⟩

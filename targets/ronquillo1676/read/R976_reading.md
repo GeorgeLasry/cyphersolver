@@ -1,26 +1,26 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R976.dec.txt, keyx.py, on the image re-transcription txi/R976.txt) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R976.dec.txt, keyx.py, on the image re-transcription txi/R976.txt) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R976.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R976, Ronquillo to Fuenmayor, Nijmegen, 10 Apr 1677
 
 ## Reading
 
-⟨... aunque no el gusto, porque cada día⟩ van empeorando estas negociaciones, aun más arrebatadamente de lo que se alcanzan
+⟨... aunque no el gusto, porque cada dia⟩ van enpeorando estas negociaciones, aun mas arrebatadamente de lo que se alcanzan
 nuestras desgracias en Flandes, de que no quiero repetir a V.S. congojas. Y yo reconozco que estos holandeses quieren
 ya llegar a las [?treguas], pues ayer enviaron a los mediadores la nueva plenipotencia, no obstante que [...] todos
-los aliados. Se podía esperar hasta el miércoles, que cumplen los sesenta días del término, y que las presentasen
-juntamente con las del señor Emperador, Dinamarca y Brandeburgo, que han llegado; y la excusa que hoy me han dado,
-sobre no ser de gran sustancia, no es muy cortés.
+los aliados. Se podia esperar hasta el miercoles, que cumplen los sesenta dias del termino, y que las presentasen
+juntamente con las del señor Emperador, Dinamarca y Brandeburgo, que an llegado; y la excusa que oy me an dado,
+sobre no ser de gran sustancia, no es muy cortes.
 
-Y estas voces que andan de que tratamos derechamente en Inglaterra y en Holanda preocupan los ánimos de los aliados,
-y las de nuevos casamientos del Rey nuestro señor ponen en poca satisfacción a los ministros cesáreos. Yo prevengo
-que la rendición de Saint-Omer, después de la de Cambray, será el esencial artículo y el primero del ajustamiento de
-la [?satisfacción] o del establecimiento de un armisticio.
+Y estas voces que andan de que tratamos derechamente en Inglaterra y en Holanda preocupan los animos de los aliados,
+y las de nuevos casamientos del Rey nuestro señor ponen en poca satisfaccion a los ministros cesareos. Yo prevengo
+que la rendicion de Saint-Omer, despues de la de Canbray, sera el esencial articulo y el primero del ajustamiento de
+la [?satisfaccion] o del establecimiento de un armisticio.
 
-Ya corre la recíproca garantía de la casa de Brunswick para sus conquistas, cuarteles de invierno y defensa de las
-villas de Hamburgo y Lubeck. Y no faltan noticias de que Hannover se va derechamente a las cortes de Suecia y
-Dinamarca a mediar un tratado separado, y puede ser que Brandeburgo siga, sin que hasta ahora hayan querido
-manifestar los ministros de estos príncipes el nuevo [...] que han hecho sus amos, el cual, si V.S. le tiene, le
-suplico me envíe copia.
+Ya corre la reciproca garantia de la casa de Brunswick para sus conquistas, cuarteles de invierno y defensa de las
+villas de Hamburgo y Lubeck. Y no faltan noticias de que Hanover se va derechamente a las cortes de Suecia y
+Dinamarca a mediar un tratado separado, y puede ser que Brandeburgo siga, sin que hasta aora ayan querido
+manifestar los ministros de estos principes el nuevo [...] que an hecho sus amos, el cual, si V.S. le tiene, le
+suplico me envie copia.
 
 ## Notes
 

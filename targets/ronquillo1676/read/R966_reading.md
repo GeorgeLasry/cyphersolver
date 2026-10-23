@@ -1,26 +1,26 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R966.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R966.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R966.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R966, Salinas to Fuenmayor, London, 21 Aug 1676
 
 ## Reading
 
 ⟨... de lo mucho que se puede hacer.⟩ Aunque en una larga conferencia que tuve con el Rey me dijo que [la] entrada
-en Francia antes dañaría a la paz que adelantarla, con que, debiéndolo [...] creer al revés, lo debamos suponer por
-lo mejor; y diciéndole yo que esotro sitio no se podía excusar, dijo que con estas dos plazas que se tomaban acabara
-la campaña, cuyos dictámenes malignos temo no influya al Sobrino.
+en Francia antes dañaria a la paz que adelantarla, con que, deviendolo [...] creer al reves, lo devamos suponer por
+lo mejor; y diciendole yo que esotro sitio no se podia excusar, dijo que con estas dos plazas que se tomavan acabara
+la canpaña, cuyos dictamenes malignos temo no influya al Sobrino.
 
-El Rey está estos días de mal humor, y se cree tener parte la fortuna de alemanes; pues siendo así que no hay otro
-discurso que el de estos sitios, contando hasta el último mosquetero que se pierde en ella, ha callado las noticias
-favorables, lo que Courtin no ha hecho con más galantería.
+El Rey esta estos dias de mal humor, y se cree tener parte la fortuna de alemanes; pues siendo assi que no ay otro
+discurso que el de estos sitios, contando hasta el ultimo mosquetero que se pierde en ella, ha callado las noticias
+favorables, lo que Courtin no ha hecho con mas galanteria.
 
-En el negocio de la protesta no se ha vuelto a hablar más; y en el de los pasaportes hablé yo al Rey, que me
-participó los que se habían ya permutado, y que había escrito a Francia sobre la pretensión de esotros príncipes, y en
-particular del de Lorena, haciendo los oficios de buen medianero; pero discurrió conmigo el que se debía seguir el pie
-del congreso de Münster, y que si querían introducir novedades, que eran en perjuicio de los reyes, con que ni el
-Emperador ni el [Rey] nuestro lo debían apoyar. A que yo repliqué lo que me pareció favorable al de Lorena, que es por
-quien abogamos, en que veremos lo que se resuelve; con que se nos irá la resta del verano, que no causará novedad a
-este Rey, pues él mismo me dijo que no se podía entrar en ningún discurso de tratado hasta ver los últimos tercios de
-la campaña. ⟨No ofreciéndose que añadir de aquí ...⟩
+En el negocio de la protesta no se ha buelto a hablar mas; y en el de los pasaportes hable yo al Rey, que me
+participo los que se havian ya permutado, y que habia escrito a Francia sobre la pretension de essotros principes, y en
+particular del de Lorena, haciendo los oficios de buen medianero; pero discurio conmigo el que se devia seguir el pie
+del congreso de Munster, y que si querian introducir novedades, que eran en perjuicio de los reyes, con que ni el
+Emperador ni el [Rey] nuestro lo devian apoyar. A que yo replique lo que me parecio favorable al de Lorena, que es por
+quien avogamos, en que veremos lo que se resuelve; con que se nos ira la resta del verano, que no causara novedad a
+este Rey, pues el mismo me dijo que no se podia entrar en ningun discurso de tratado asta ver los ultimos tercios de
+la canpaña. ⟨No ofreciendose que añadir de aqui ...⟩
 
 ## Notes
 

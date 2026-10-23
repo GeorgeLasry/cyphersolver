@@ -57,3 +57,5 @@ nothing so earnestly as your Lordship's pr[ocuring?] in that matter ..." The ful
   set differs from this one.
 - [targets/throckmorton/](../throckmorton/): Throckmorton's 1560–63 letters to Cecil and the Queen (Add MS 4136), a
   different cipher.
+
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: reading.md was listed because its header mentions modernised spelling. It is a false hit: the reading keeps the cipher's and the clear text's own spelling and modernises only a cipher word whose spelling cannot be read from the figures. Nothing changed.

@@ -111,6 +111,8 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 5. Sign words: looked for a key (DECODE, Tomokiyo) and for cribs (Wotton's drafts carry no sign text). Too little
    text to break without either. Closed unread.
 
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: reading_R4840.txt and reading_R4844_r2.txt said 'spelling modernised (in part)'. There is no diplomatic transcription, so the DECODE images were fetched again with the project cookie (research/reading_audit/v6_fetch.py; scratchpad only, BL images) and re-read in strips; the words whose letters are clear in the secretary hand are now as written (dothe, complayne, wrytten, frende, knowe, countenaunce, towardes, yf, woold, ioyne, wyll, realme, iudge, therof, alwayes, then for than, Coorte; hathe bread, lykinge, doe bothe allowe of yt, untill, ben unmindfull, commyssion, Jesuites ...). Words not certain on the scan keep the earlier form, which the headers say; no hole was filled and no word changed. The R4840 marginal postscript (f. 163v) was not re-read. Explicit holes R4840 0.614 -> 0.667, R4844_r2 0.705 -> 0.736 (new header lines; no '## Reading' heading). States unchanged: R4840 read, R4844 decoded, not read.
+
 ## Remaining gaps
 - R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
 - R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out

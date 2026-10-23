@@ -1,24 +1,24 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R977.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R977.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R977.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R977, Ronquillo to Fuenmayor, Nijmegen, 17 Apr 1677
 
 ## Reading
 
-⟨... y tanto apetece.⟩ Muy indiscreto ha sido el proceder del conde de Windischgrätz, habiendo revelado al ministro
-de Brandeburgo el secreto que V.S. le había conferido, que ha sido el origen de nuestro [?mensaje]. Pero para que V.S.
-conozca que esto no ha disminuido la confianza con que le trato, por prueba ve los celos que motivan a la corte de
-Viena los progresos de los aliados en el Norte: le diré que lo moderado de las [?paces] que el Inglés envió para hacer
-a Suecos, que he alcanzado a ver, manifiestan claramente su ánimo de que más quiere la vecindad de Suecia que la
-altura de los príncipes. Pero habiendo hecho reflexión en lo perjudicioso que pudieran sernos si se llegasen a
-proponer en esta conformidad, no solo por lo que irritaría a aquellos príncipes, sino por quedar con ellos desvanecida
-la esperanza que todavía podemos tener de alguna compensación de las pérdidas de los Países Bajos, he conseguido que
-antes de presentarla se haga una réplica al señor Emperador, de que quedamos aguardando la respuesta.
+⟨... y tanto apetece.⟩ Muy indiscreto ha sido el proceder del conde de Windischgratz, haviendo revelado al ministro
+de Brandeburgo el secreto que V.S. le habia conferido, que ha sido el origen de nuestro [?mensaje]. Pero para que V.S.
+conozca que esto no ha disminuydo la confianza con que le trato, por prueva ve los celos que motivan a la corte de
+Viena los progresos de los aliados en el Norte: le dire que lo moderado de las [?paces] que el Ingles envio para hacer
+a Suecos, que he alcanzado a ver, manifiestan claramente su animo de que mas quiere la vecindad de Suecia que la
+altura de los principes. Pero haviendo hecho reflexion en lo perjudicioso que pudieran sernos si se llegasen a
+proponer en esta conformidad, no solo por lo que irritaria a aquellos principes, sino por quedar con ellos desvanecida
+la esperanza que todavia podemos tener de alguna conpensacion de las perdidas de los Paises Bajos, he conseguido que
+antes de presentarla se haga una replica al señor Emperador, de que quedamos aguardando la respuesta.
 
-Por donde podrá V.S. considerar los cuidados que se nos amontonan cada día, cuando a las fatalidades y desgracias
-públicas se [?fomentan] los recelos particulares de la inconstancia de nuestros aliados, cuyo ánimo se deja bien
-conocer del papel que V.S. me remite de la declaración que han hecho en Zell: que si fuera de sencillo ánimo, bien
+Por donde podra V.S. considerar los cuidados que se nos amontonan cada dia, quando a las fatalidades y desgracias
+publicas se [?fomentan] los recelos particulares de la inconstancia de nuestros aliados, cuyo animo se deja vien
+conocer del papel que V.S. me remite de la declaracion que an hecho en Zell: que si fuera de sencillo animo, vien
 se pudieran dar los [...] mil escudos. V.S. se sirva de no olvidar los papeles que ofrece, y continuarme las noticias
-de la asamblea, y tener juntamente reservadas las que le participo. ⟨Todo lo positivo que puedo decir a V.S. en este
+de la asanblea, y tener juntamente reservadas las que le participo. ⟨Todo lo positivo que puedo decir a V.S. en este
 correo ...⟩
 
 ## Notes

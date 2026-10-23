@@ -76,6 +76,8 @@ glosses the numbers in Wotton's despatches: Arran ["19"], Master of Gray ["39"],
 draft with "Morton" for 20 (Maxwell, styled Earl of Morton). Walsingham's side of the correspondence (R4838–R4840,
 R4844) is in [walsingham1585](../walsingham1585/NOTES.md).
 
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: texts/R4841-R4843_reading.md said 'Spelling modernised'. Restored word by word to Wotton's spelling from his drafts as transcribed (texts/R484x_transcription.txt; v6_align.py): yland, forbeare, doinges, tyme, heere, wil, shal, frendes, contrey, therfore, Copie; abbreviations written out. No word changed. Explicit-hole shares unchanged (0.947-0.981); all keep read.
+
 ## Remaining gaps
 
 - R4841, R4842, R4843: the drafts, not transcribed - closed 22 Oct 2026 (b16): transcribed in full and read (0.98, 0.89, 0.91)

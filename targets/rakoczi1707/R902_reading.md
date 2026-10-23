@@ -2,30 +2,30 @@
 
 Sources: `tr/R902_p277.txt` (p. 277, 31 lines), `tr/R902_p278_l01-09.txt`, `tr/R902_p278_l10-18.txt`.
 Decoded and counted by `measure_tr.py --text` (R639 table + 212 Fa, 93 st, 89 Et, underline rule).
-Square brackets mark groups not read; a question mark marks a word supplied by context; spelling is normalised.
+Square brackets mark groups not read; a question mark marks a word supplied by context. Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the normalised spelling of 5 Oct was restored letter by letter from the decode (measure_tr.py --text) with research/reading_audit/v6_charalign.py (aussÿ, arrete, relaché, naitre, interets, incroiable, Luben, Stetin); accents and apostrophes, which the cipher does not carry, are kept as supplied, and u/v, i/j as before. No word was changed.
 
 ## Reading
 
 **p. 277**
 
 > A Slupce, le 15 Octobre. Monseigneur, Vostre Altesse aura veu par mes deux dernieres, de Gorlitz en Saxe et
-> de Lubben en Silesie, de quelle maniere s'est denoüée l'affaire des Svedois avec l'Empereur. Il [85] tout à
-> present ici, à 8 lieues de Posnanie, où ils attendent les recrues et les munitions qui ont debarqué à Stettin.
-> Leur confiance dans les Anglois et les Hollandois nous doit asseurer qu'ils ne s'arreste[8] point ici pour
-> observer la conduite que ce Prince tiendra par rapport à l'execution des articles arrestez, ils susdits. Je
-> persuade [120] que la Cour de Vienne ne manquera pas à une parole confirmée et affermie par une caution aussi
+> de Luben en Silesie, de quelle maniere s'est denoüée l'affaire des Svedois avec l'Empereur. Il [85] tout à
+> present ici, à 8 lieues de Posnanie, où ils attendent les recrues et les munitions qui ont debarqué à Stetin.
+> Leur confiance dans les Anglois et les Hollandois nous doit asseurer qu'ils ne s'arrete[8] point ici pour
+> observer la conduite que ce Prince tiendra par rapport à l'execution des articles arretez, ils susdits. Je
+> persuade [120] que la Cour de Vienne ne manquera pas à une parole confirmée et afermie par une caution aussÿ
 > accreditée dans la ligue, et chez eux, que celle de ces deux puissances entre les mains desquelles il semble
 > qu'ils ayent remis le sort des affaires [224 264 174 226 37 / 324 125 104 589 4].
 >
-> J'ay aussi eu l'honneur de vous rendre compte, Monseigneur, de l'impression que [297] lettres de Monsieur
-> Ráday au general Rehnskiöld avoit faite ici sur les esprits. Je [363]s que peut-estre en [129 436] dit aussi
+> J'ay aussÿ eu l'honneur de vous rendre compte, Monseigneur, de l'impression que [297] lettres de Monsieur
+> Ráday au general Rehnskiöld avoit faite ici sur les esprits. Je [363]s que peut-estre en [129 436] dit aussÿ
 > franchement en avril, je le dois, qu'elle vous a privé de vos meilleurs amis à la Cour de Svede, et qu'il
-> faud[860] et bien du temps [95] beaucoup d'adresse pour reparer le tort incroyable qu'elle a fait à Vostre
-> Altesse. C'est pourquoy je vous conseillerois, Monseigneur, si vous croiez [120] qu'il fust aussi de vos
-> interests de remedier à cela, d'envoyer secretement ou de chercher une personne ici qui eust les qualitez
+> faud[860] et bien du temps [95] beaucoup d'adresse pour reparer le tort incroiable qu'elle a fait à Vostre
+> Altesse. C'est pourquoy je vous conseillerois, Monseigneur, si vous croiez [120] qu'il fust aussÿ de vos
+> interets de remedier à cela, d'envoyer secretement ou de chercher une personne ici qui eust les qualitez
 > necessaires pour y pouvoir reussir. J'avoue de bonne foy qu'elles me manquent, [9] outre que le malheur que
 > j'ay eu d'estre soupçonné de Vostre Altesse ou de ceux pouvoir luy appartiennent me fait comprendre que la
-> continuation de mes services ne luy seroit pas agreable. Je ne me suis neantmoins pas encore relasché jusques
+> continuation de mes services ne luy seroit pas agreable. Je ne me suis neantmoins pas encore relaché jusques
 > à present sur mon zele à vostre egard, et je me suis donné tous les mouvemens dont j'ay esté [194]pable, tant
 > à la chancellerie svedoise qu'à la Cour de Pologne,
 
@@ -40,7 +40,7 @@ Square brackets mark groups not read; a question mark marks a word supplied by c
 
 **p. 278, lines 10-18** (30 Sept 2026, `R902_p278_reading.md`)
 
-> l'ont fait naistre. On se borne presentement à se plaindre de la conduite de Vostre Altesse à l'egard des
+> l'ont fait naitre. On se borne presentement à se plaindre de la conduite de Vostre Altesse à l'egard des
 > affaires de la Pologne ... je suis avec un tres profond respect ...
 
 ## Corrections

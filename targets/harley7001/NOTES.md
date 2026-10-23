@@ -52,6 +52,8 @@ Passage A: in case a proclamation goes out against Windebank ("my [455]"), as ag
 Passage B: Reade is told that Sir William St Ravy "has done Mr Forster no good offices here" and that "they have an
 eye over him". This matches the clear text that follows it.
 
+**23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: reading.txt said 'Spelling modernised lightly'. Checked against the key decode of ct.txt: the cipher's spellings (goe, refusall) were already kept; 'prevent' is restored to the cipher's 'preuent', the only word the light modernisation had changed. Code groups keep the key's word. Explicit holes 0.717 -> 0.714 (header).
+
 ## Remaining gaps
 - code groups 90, 160, 319, 359, 444, 452, 455, 487, 539, 650, 660, 673, 718 (x2) - blocker: no-key-material; blank in the only surviving key reconstruction (R9115); the only further source is Reade's other ciphered letters to Thomas Windebank, Paris, Jan-May 1641, calendared in CSP Domestic 1640-41 (TNA SP 16/476 ff., 'some sentences in cipher', printed unread) - needs-physical-access (TNA originals, not on DECODE or free online); each occurs once or twice, conjectured from context and alphabetical slot (6.5% of tokens; 203 done and 729 Court were later found as side notes on the key sheet)
 

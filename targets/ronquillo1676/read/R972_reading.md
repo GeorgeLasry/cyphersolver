@@ -1,51 +1,51 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R972.dec.txt, keyx.py; same letter as R971, see Notes) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R972.dec.txt, keyx.py; same letter as R971, see Notes) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R972.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R972, Salinas to Fuenmayor, London, 26 Jan 1677
 
-⟨... y que toda mi obediencia a su servicio desea merecerlo.⟩ No extraño lo embarazoso que le será a V.S. esa
-residencia, cuando ha de tratar con tan diferentes humores e intereses, y particularmente con el Obispo de Münster, a
-quien tengo por caviloso y, como dicen, algo fourbe; pero consuélese V.S. con que en todas partes hay trabajo, y vaya
-dando la vuelta al norte, y reconocerá cómo anda [?nuestra] lira, lo que pasa en Nimega y lo que sucede aquí,
-procediendo la desorden del piloto que gobierna el timón, en que dicen las voces del pueblo hay otro que solo lo puede
-remediar; en que las cartas de Madrid desengañarán a V.S.
+⟨... y que toda mi obediencia a su servicio desea merecerlo.⟩ No extraño lo embarazoso que le sera a V.S. essa
+residencia, quando ha de tratar con tan diferentes humores e intereses, y particularmente con el Ovispo de Munster, a
+quien tengo por caviloso y, como dicen, algo fourve; pero consuelese V.S. con que en todas partes hay trabajo, y vaya
+dando la vuelta al norte, y reconocera como anda [?nuestra] lira, lo que pasa en Nimega y lo que sucede aqui,
+procediendo la desorden del piloto que gobierna el timon, en que dicen las voces del pueblo ay otro que solo lo puede
+remediar; en que las cartas de Madrid desengañaran a V.S.
 
-Don Pedro Ronquillo ha estado estos días con cuidado, sobrándole motivos; y aunque mis avisos no le habrán sacado de
-él, no obstante caminará con más luz, pues procediendo sus temores de la ida a La Haya del embajador Temple, que dio
-de recelar a él y a todos, he procurado descubrir todo el terreno que he podido, y he hallado que todo se encaminó a
-reducir al Príncipe de Orange para que diese la mano a la paz, y que lo ha conseguido; pues desde este último correo
-de Holanda está este Rey más gustoso y satisfecho de dicho Príncipe, y el embajador Van Beuningen no menos, con su
-inclinación tan descarada a este fin.
+Don Pedro Ronquillo ha estado estos dias con cuidado, sobrandole motivos; y aunque mis avisos no le habran sacado de
+el, no obstante caminara con mas luz, pues procediendo sus temores de la ida a La Haya del embajador Tenple, que dio
+de recelar a el y a todos, he procurado descubrir todo el tereno que he podido, y he hallado que todo se encamino a
+reducir al Principe de Orange para que diese la mano a la paz, y que lo ha conseguido; pues desde este ultimo correo
+de Holanda esta este Rey mas gustoso y satisfecho de dicho Principe, y el embajador Van Beuningen no menos, con su
+inclinacion tan descarada a este fin.
 
-Pero aun no es éste todo el mal, pues si se encaminaran esos oficios por la senda derecha de la honra, pudiéramos
+Pero aun no es este todo el mal, pues si se encaminaran esos oficios por la senda derecha de la honra, pudieramos
 esperar un buen ajuste para todos; pero temo, y no sin grandes fundamentos, que entre este Rey y holandeses nos han
 [?proyectado] la paz que nos quieren dar, y que ha sido menester vencer al de Orange y ajustar sus intereses; con cuya
-negociación, y la prisa que se dan éstos en Nimega para llegar a la sustancia, pasando sobre tantos inconvenientes y
-formalidades de disgusto para las partes, van de carrera a la conclusión, y se prometen aquí conseguirla antes de la
-campaña, por lo que le importa a este Rey y por lo que lo desean holandeses. En cuyo proyecto temo siempre que nos
-quitan la Borgoña, porque, habiéndose pasado grandes discursos conmigo sobre esta materia, en que me vieron firme y
-asentar por primer fundamento de la paz la restitución de esta provincia, se han recatado de mí; y por último andan
-grandes demandas y respuestas de aquí a París.
+negociacion, y la prisa que se dan estos en Nimega para llegar a la sustancia, pasando sobre tantos inconvenientes y
+formalidades de disgusto para las partes, van de carrera a la conclusion, y se prometen aqui conseguirla antes de la
+canpaña, por lo que le importa a este Rey y por lo que lo desean holandeses. En cuyo proyecto temo siempre que nos
+quitan la Vorgoña, porque, haviendose pasado grandes discursos conmigo sobre esta materia, en que me vieron firme y
+asentar por primer fundamento de la paz la restitucion de esta provincia, se han recatado de mi; y por ultimo andan
+grandes demandas y respuestas de aqui a Paris.
 
-Sobre que hablé dos días ha al Rey, y me dijo que la paz se había de hacer, que él ni estaba en estado de entrar en
-guerra ni la quería, que Flandes había de quedar con fronteras, que no nos lisonjeásemos con el Parlamento, porque
-éste no le obligaría a este empeño. En que diré a V.S. que las disposiciones que tenemos para este tribunal no pueden
-ser mejores, pero por la misma razón temo que ha de haber tanta confusión que ha de obligar a este Rey a disolverle o
+Sobre que hable dos dias ha al Rey, y me dijo que la paz se habia de hacer, que el ni estava en estado de entrar en
+guerra ni la queria, que Flandes habia de quedar con fronteras, que no nos lisonjeasemos con el Parlamento, porque
+este no le obligaria a este empeño. En que dire a V.S. que las disposiciones que tenemos para este tribunal no pueden
+ser mejores, pero por la misma razon temo que ha de haber tanta confusion que ha de obligar a este Rey a disolverle o
 prorrogarle, con que nos quedaremos como nos estamos. No obstante, no pierdo de vista todos los oficios que puedan
 fomentar las esperanzas; y para el punto principal, y que nos mira tan de cerca, el de las levas y reclutas para
 Francia, he proseguido mis quejas sin rendirme al temor que me quisieron poner con la respuesta disparatada que se me
-dio, en que no obstante se logró a lo menos el que en el reino de Inglaterra cesasen las reclutas; pero prosiguiendo en
-Escocia, escribí el papel de que va copia adjunta al secretario de Estado, cuya respuesta verá V.S., también con la
-carta que Su Majestad Británica mandó escribir a los estados de Escocia.
+dio, en que no obstante se logro a lo menos el que en el reino de Inglaterra cesasen las reclutas; pero prosiguiendo en
+Escocia, escribi el papel de que va copia adjunta al secretario de Estado, cuya respuesta vera V.S., tambien con la
+carta que Su Magestad Britanica mando escribir a los estados de Escocia.
 
-Vi lo que V.S. me participa del discurso que le tuvo Monsieur de Amerongen, y es lástima que una respuesta tan discreta
-y prudente como la de V.S. se emplease en aquel sujeto, porque no es de los más clásicos de Holanda, aunque es de los de
-la mala intención. Su dictamen no confronta con el de Van Beuningen, que está aquí, pues éste no es de la opinión de la
-tregua, porque es más [?menagero], y le parece que el mantener los aliados les pudiera causar algún gasto, con que éste
-se encamina con toda precipitación a la paz; y, como V.S. dice, cualquiera será mejor que una tregua. Pero lo que yo
-creo es que, si faltase aquí a la abertura de la campaña tiempo para concluir la paz, pudiera este Rey, instado de este
-ministro, proponer alguna suspensión de armas de dos o tres meses, pero más no. Lo que puedo asegurar a V.S. es que
-antes de un mes ha de reventar la postema, y que de todo lo que fuere ocurriendo le daré cuenta más puntualmente,
-solicitando siempre [de] [V.S.] las órdenes de su servicio.
+Vi lo que V.S. me participa del discurso que le tuvo Monsieur de Amerongen, y es lastima que una respuesta tan discreta
+y prudente como la de V.S. se enplease en aquel sujeto, porque no es de los mas clasicos de Holanda, aunque es de los de
+la mala intencion. Su dictamen no confronta con el de Van Beuningen, que esta aqui, pues este no es de la opinion de la
+tregua, porque es mas [?menagero], y le parece que el mantener los aliados les pudiera causar algun gasto, con que este
+se encamina con toda precipitacion a la paz; y, como V.S. dice, cualquiera sera mejor que una tregua. Pero lo que yo
+creo es que, si faltase aqui a la abertura de la canpaña tiempo para concluir la paz, pudiera este Rey, instado de este
+ministro, proponer alguna suspension de armas de dos o tres meses, pero mas no. Lo que puedo asegurar a V.S. es que
+antes de un mes ha de reventar la postema, y que de todo lo que fuere ocurriendo le dare cuenta mas puntualmente,
+solicitando siempre [de] [V.S.] las ordenes de su servicio.
 
 ## Notes
 

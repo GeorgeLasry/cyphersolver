@@ -1,23 +1,23 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R968.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R968.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R968.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R968, Salinas to Fuenmayor, London, 6 Oct 1676
 
 ## Reading
 
-⟨... en medio de tantas desazones como nos atrae la constitución de los tiempos, y sobre todo la de nuestras cosas.⟩
-Ya V.S. sabrá la resolución que se tomó en La Haya para señalar día fijo para el congreso, y no dudará cuánto se habrá
-[...] desde aquí, por lo que desean adelantar la paz antes que llegue la hora de juntarse el Parlamento, donde nuestro
-partido podía tener más fuerza; pero lo mucho que hay que vencer en la asamblea, y la necesidad de llamarla, ésta me
-promete que aún hemos de reconocer sus afectos.
+⟨... en medio de tantas desazones como nos atrae la constitucion de los tiempos, y sobre todo la de nuestras cosas.⟩
+Ya V.S. sabra la resolucion que se tomo en La Haya para señalar dia fijo para el congreso, y no dudara quanto se habra
+[...] desde aqui, por lo que desean adelantar la paz antes que llegue la hora de juntarse el Parlamento, donde nuestro
+partido podia tener mas fuerza; pero lo mucho que ay que vencer en la asamblea, y la necesidad de llamarla, esta me
+promete que aun hemos de reconocer sus afectos.
 
-También habrá V.S. entendido los juicios que se hacen en si vendrá el Príncipe de Orange a esta corte; y lo que le
+Tambien habra V.S. entendido los juicios que se hacen en si vendra el Principe de Orange a esta corte; y lo que le
 puedo asegurar es que este Rey ha dicho que le espera este invierno. Pero si a esta evidencia se juntase lo que añaden,
-en que trae poderes para tratar, estará tan mal a holandeses como a nosotros, y nada bien lo que se discurre en el
-casamiento de este príncipe con la hija del de York; y aunque todo está en amago, hay grandes apariencias de verdad, y
-en mi opinión es la mayor el modo con que este caballero se ha portado esta campaña, con que coronará sus obras y
-dejará menos dudosos a los incrédulos. Gran parte tienen en las opiniones de éstos los celos que les da la desgracia
-de suecos, y el pensar que a más largo término quedarán fuera de Alemania, y el Imperio más sobre sí; con que cegarán
-también a holandeses para arrastrarlos al precipicio. ⟨Que es cuanto se ofrece que participar hoy a V.S. ...⟩
+en que trae poderes para tratar, estara tan mal a holandeses como a nosotros, y nada vien lo que se discurre en el
+casamiento de este principe con la hija del de York; y aunque todo esta en amago, ay grandes apariencias de verdad, y
+en mi opinion es la mayor el modo con que este caballero se ha portado esta canpaña, con que coronara sus obras y
+dejara menos dudosos a los incredulos. Gran parte tienen en las opiniones de estos los celos que les da la desgracia
+de suecos, y el pensar que a mas largo termino quedaran fuera de Alemania, y el Imperio mas sobre si; con que cegaran
+tambien a holandeses para arrastrarlos al precipicio. ⟨Que es cuanto se ofrece que participar hoy a V.S. ...⟩
 
 ## Notes
 

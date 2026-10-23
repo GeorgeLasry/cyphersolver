@@ -1,31 +1,31 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R967.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R967.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R967.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
 
 # R967, Salinas to Fuenmayor, London, 8 Dec 1676
 
 ## Reading
 
-⟨... que aunque sea difícil en lo fatigada que queda aquella corona,⟩ nada es hoy imposible en la fortuna que tiene la
+⟨... que aunque sea dificil en lo fatigada que queda aquella corona,⟩ nada es hoy imposible en la fortuna que tiene la
 Francia, y ninguna mayor que en tener tan hechizada esta corte, que por extorsiones que hacen no se da por sentida;
-⟨pues sobre las quejas de estos pueblos a las piraterías de los corsarios franceses ... publicar placartes de otro,⟩
-a todo esto el Rey y la corte de nada se dolía.
+⟨pues sobre las quejas de estos pueblos a las piraterias de los corsarios franceses ... publicar placartes de otro,⟩
+a todo esto el Rey y la corte de nada se dolia.
 
-Pues están ya en los principios de la turbación, con que esperan al Parlamento, adonde se verán cosas grandes; aunque
-yo preveo que, si entra furioso y el Rey no ve luz de conseguir algo, le prorrogará antes que tengan lugar de
-adelantarse. Con que es problemático si nos conviene fiar en este tribunal o negociar con el Rey; y en la duda
-[...] en uno y otro, para ver si por algún lado tenemos fortuna.
+Pues estan ya en los principios de la turvacion, con que esperan al Parlamento, adonde se veran cosas grandes; aunque
+yo preveo que, si entra furioso y el Rey no ve luz de conseguir algo, le prorrogara antes que tengan lugar de
+adelantarse. Con que es problematico si nos conviene fiar en este tribunal o negociar con el Rey; y en la duda
+[...] en uno y otro, para ver si por algun lado tenemos fortuna.
 
-⟨... y las honras que siempre le he debido,⟩ pero viéndose mi papel en el Consejo, voltearon el ánimo del Rey y le
-persuadieron a que atajase con una respuesta áspera el curso de que se diesen papeles en esta coyuntura, pues eran
-motivos para inquietar los ánimos de los parlamentarios; y con [?esto] resolvieron darme la respuesta disparatada, de
-cuyo caso tuve luz, y me fui al Rey y sus ministros y los puse de buena manera, con que capitularon, dándome
-satisfacciones de palabra, y de que se suprimiesen ambas memorias. A que he replicado diciendo que de la mía había ya
-dado parte a Su Majestad, con que se anda buscando otra forma, en cuyo ínterin suspendo el remitir [la] respuesta,
-aunque lo haré de una suerte o de otra para que V.S. la vea, hacia sí o hacia todos. Y porque conocí ya esta forma de
-obrar, y que intentaron la misma con el señor conde de Molina, me ha parecido sostenerlo con un poco de brío; pues si
-nos dejamos caer en todas partes, nos despreciarán éstos más que ningunos, porque son más soberbios que todos. De lo
-que resultare daré parte a V.S., como se la doy de que en medio de estos dimes y diretes veo algunas sendas favorables
-para nuestros negocios, que procuro seguir por si hallamos alguna del alivio que hoy conviene, de que iré dando [aviso]
-a V.S. ⟨Y no ofreciéndose cosa más particular ...⟩
+⟨... y las honras que siempre le he debido,⟩ pero viendose mi papel en el Consejo, voltearon el animo del Rey y le
+persuadieron a que atajase con una respuesta aspera el curso de que se diesen papeles en esta coyuntura, pues eran
+motivos para inquietar los animos de los parlamentarios; y con [?esto] resolvieron darme la respuesta disparatada, de
+cuyo caso tuve luz, y me fuy al Rey y sus ministros y los puse de buena manera, con que capitularon, dandome
+satisfacciones de palabra, y de que se suprimiesen anvas memorias. A que he replicado diciendo que de la mia habia ya
+dado parte a Su Magestad, con que se anda buscando otra forma, en cuyo interin suspendo el remitir [la] respuesta,
+aunque lo hare de una suerte o de otra para que V.S. la vea, hacia si o hacia todos. Y porque conoci ya esta forma de
+obrar, y que intentaron la misma con el señor conde de Molina, me ha parecido sostenerlo con un poco de brio; pues si
+nos dejamos caer en todas partes, nos despreciaran estos mas que ningunos, porque son mas sovervios que todos. De lo
+que resultare dare parte a V.S., como se la doy de que en medio de estos dimes y diretes veo algunas sendas favorables
+para nuestros negocios, que procuro seguir por si hallamos alguna del alivio que oy conviene, de que yre dando [aviso]
+a V.S. ⟨Y no ofreciendose cosa mas particular ...⟩
 
 ## Notes
 

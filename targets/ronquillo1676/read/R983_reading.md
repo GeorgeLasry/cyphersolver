@@ -1,50 +1,50 @@
-<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R983.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. On f. 1 the margin is too faded to read and that passage rests on the figures alone. -->
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R983.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling (v6, 23 Oct 2026): the writer's, as the cipher gives it; the modernised spelling of 22 Oct was restored letter by letter from the key decode (read2/R983.txt) with research/reading_audit/v6_charalign.py: where the key's letters spell the same word another way they are taken (tomavan, assi, devia, aora, quando, haver), editorial accents are taken off, and ñ is kept where the key writes n (it does not distinguish them). Code words, supplied and bracketed words keep their form without accents. No word was changed. Punctuation added. Modern spelling is only in the English file. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. On f. 1 the margin is too faded to read and that passage rests on the figures alone. -->
 
 # R983, Ronquillo to Fuenmayor, Nijmegen, 22 May 1677
 
 ## Reading
 
-⟨... paso a suplicarle no atribuya a omisión ni falta de amistad el no haber correspondido con la puntualidad que
-merecen los continuados favores de V.S.,⟩ pues aquí andamos tan embarazados [...] de no hacer nada, como V.S. puede
-[...] contemporizar con los [...], que aquí siguen las mismas máximas que en Bremen [...] de la Pomerania, a celos [...]
-poder de Brandeburgo y príncipes de la [...] suecos y [...]; y lo peor es que al cabo no se adelantan los tratados, y
-que prematuras declaraciones [...] que son causa de las [?pérdidas] [...] toman sobre su [...]. [...] Estimo a V.S., como
-debo, los papeles que se sirve de remitirme, y yo siempre me holgaré que se siga el proyecto que se ha formado sobre la
-separación de esa conferencia. Y para decir a V.S. la verdad, a nosotros poco nos [?pesa] que Bremen y Verden queden de
-suecos [...], como se prosiga con calor la presente [...]; lo cual únicamente depende de que nosotros [...] con
-diligencia la escuadra del Báltico, cuya importancia [...] no dejamos el señor don Manuel de Lira y yo de representar
-con las instancias más vivas a España cada día. A lo que veo, los suecos se tienen firmes en no querer ceder nada de
-las conquistas, y que si hacen alguna reparación dicen que será a Brandeburgo, pero que ella no ha de ser en tierras ni
+⟨... paso a suplicarle no atribuya a omision ni falta de amistad el no haber correspondido con la puntualidad que
+merecen los continuados favores de V.S.,⟩ pues aqui andamos tan envarazados [...] de no hacer nada, como V.S. puede
+[...] contemporizar con los [...], que aqui siguen las mismas maximas que en Bremen [...] de la Pomerania, a celos [...]
+poder de Brandeburgo y principes de la [...] suecos y [...]; y lo peor es que al cavo no se adelantan los tratados, y
+que prematuras declaraciones [...] que son causa de las [?perdidas] [...] toman sobre su [...]. [...] Estimo a V.S., como
+devo, los papeles que se sirve de remitirme, y yo siempre me holgare que se siga el proyecto que se ha formado sobre la
+separacion de essa conferencia. Y para decir a V.S. la verdad, a nosotros poco nos [?pesa] que Bremen y Verden queden de
+suecos [...], como se prosiga con calor la presente [...]; lo cual unicamente depende de que nosotros [...] con
+diligencia la escuadra del Baltico, cuya importancia [...] no dejamos el señor don Manuel de Lira y yo de representar
+con las instancias mas vivas a España cada dia. A lo que veo, los suecos se tienen firmes en no querer ceder nada de
+las conquistas, y que si hacen alguna reparacion dicen que sera a Brandeburgo, pero que ella no ha de ser en tierras ni
 plazas. Yo creo que V.S. no ignora el dictamen que siempre he tenido sobre las alianzas del norte, desde el tiempo que se
-estaba [?negociando] los tratados, y quisiera tener nosotros un ejército propio en Flandes, que éste no hay duda daría
-el movimiento a las tropas de [...] y del Príncipe de Orange; que si bien no tenemos que [?esperar] de uno ni otro
-particularmente, después de la batalla de San Omer, es mi opinión que se obraría diferentemente si pudiese el señor
-Duque de Villahermosa salir a campaña con mulas que no fuesen de alquiler; pero en la constitución presente plegue a
-Dios que aun éstas tengamos, y sobre todo medios para darles de comer. Y ya que Dios quiso que nos hallásemos
-embarcados en la guerra de Suecia, hemos menester hacer el último esfuerzo para llevarla adelante a todas velas y
-conservar esos aliados, no tanto por el fruto que de ellos debemos prometernos como por el daño que se nos seguiría de
+estava [?negociando] los tratados, y quisiera tener nosotros un ejercito propio en Flandes, que este no ay duda daria
+el movimiento a las tropas de [...] y del Principe de Orange; que si vien no tenemos que [?esperar] de uno ni otro
+particularmente, despues de la batalla de San Omer, es mi opinion que se obraria diferentemente si pudiese el señor
+Duque de Villahermosa salir a canpaña con mulas que no fuessen de alquiler; pero en la constitucion presente plegue a
+Dios que aun estas tengamos, y sobre todo medios para darles de comer. Y ya que Dios quiso que nos hallasemos
+embarcados en la guerra de Suecia, hemos menester hacer el ultimo esfuerzo para llevarla adelante a todas velas y
+conservar essos aliados, no tanto por el fruto que de ellos devemos prometernos como por el daño que se nos seguiria de
 que se los ganase Francia, mayormente ahora que se hallan con fuerzas y gente, y que han menester dinero para
 mantenerlas o deshacerse de ellas con conveniencia.
 
-⟨En fin, no obstante la renitencia de los adversarios, hemos presentado en 18 de éste nuestras respuestas a las
-primeras proposiciones ... publicándonos infractores de la Paz de Aquisgrán,⟩ valiéndose para atraer los ingleses a
-entrar en su dictamen del [?pretexto] de que si habían de responder por escrito su justificación al punto de la
-infracción, con la declaración que hizo contra nosotros [?el embajador de Gran Bretaña] después del sitio que el
-Príncipe de Orange puso a Charleroi; en la cual bien conocían procurarían evitar ingleses el empeño, de que este recurso
-no haría buen partido al Rey de Inglaterra con su parlamento, que se halla con los recelos que deben darle los
-monstruosos progresos del Cristianísimo y nuestra debilidad. Y aun después de entregadas nuestras proposiciones
-insinuaron los ingleses en que se empezase a tratar en la forma que yo mismo les he sugerido, y es que, para evitar las
-asperezas que pueden llevar las proposiciones de las partes que se les entregan selladas, que más servirían de enconar
-los ánimos que de suavizarlos, tomasen los mediadores las respuestas verbales de unos y otros y que ellos las
-pusiesen por escrito; habiéndome para esto enviado a Monsieur Jenkins, tercer plenipotenciario de Inglaterra, que, como
-es un devoto hereje, venía a predicarme lo que yo no quise recibir por evangelio, diciéndome que todavía tenían
-nuestras respuestas selladas y que se podía excusar el entregarlas. Pero viendo que se las tenía [...], y hallando que
-hacía titubear a nuestros aliados y aun a los imperiales, convencido me preguntó con muy ponderadas palabras que si
-pensaba yo que se haría la paz por entregarse estas respuestas; a que le volví a replicar que [...] el Rey de Francia
-[...] para que las retirase. En fin, vencimos el punto Ratman y yo, que es el único que me secundó, de suerte que
-quedan en obligación de poner nuestras respuestas en manos de franceses; y a mí poco cuidado me da el que ellos hablen
-por escrito o que dejen de hacerlo, ni tampoco la agudeza de querer empeñar al Rey de Inglaterra en la culpa que nos
-echan de haber contravenido a las paces, pues espero que Dios no nos faltará en responderles decentemente sin ofender
+⟨En fin, no obstante la renitencia de los adversarios, hemos presentado en 18 de este nuestras respuestas a las
+primeras proposiciones ... publicandonos infractores de la Paz de Aquisgran,⟩ valiendose para atraher los ingleses a
+entrar en su dictamen del [?pretexto] de que si habian de responder por escrito su justificacion al punto de la
+infraccion, con la declaracion que hizo contra nosotros [?el embajador de Gran Bretaña] despues del sitio que el
+Principe de Orange puso a Charleroi; en la cual bien conocian procurarian evitar ingleses el empeño, de que este recurso
+no haria buen partido al Rey de Inglaterra con su parlamento, que se halla con los recelos que deben darle los
+monstruosos progresos del Cristianisimo y nuestra debilidad. Y aun despues de entregadas nuestras proposiciones
+insinuaron los ingleses en que se enpezase a tratar en la forma que yo mismo les he sugerido, y es que, para evitar las
+asperezas que pueden llevar las proposiciones de las partes que se les entregan selladas, que mas servirian de enconar
+los animos que de suavizarlos, tomasen los mediadores las respuestas vervales de unos y otros y que ellos las
+pusiessen por escrito; habiendome para esto enviado a Monsieur Jenkins, tercer plenipotenciario de Inglaterra, que, como
+es un devoto hereje, venia a predicarme lo que yo no quise recibir por evangelio, diciendome que todavia tenian
+nuestras respuestas selladas y que se podia excusar el entregarlas. Pero viendo que se las tenia [...], y hallando que
+hacia tituvear a nuestros aliados y aun a los imperiales, convencido me pregunto con muy ponderadas palabras que si
+pensava yo que se haria la paz por entregarse estas respuestas; a que le volvi a replicar que [...] el Rey de Francia
+[...] para que las retirase. En fin, vencimos el punto Ratman y yo, que es el unico que me secundo, de suerte que
+quedan en obligacion de poner nuestras respuestas en manos de franceses; y a mi poco cuidado me da el que ellos hablen
+por escrito o que dejen de hacerlo, ni tanpoco la agudeza de querer empeñar al Rey de Inglaterra en la culpa que nos
+echan de haber contravenido a las paces, pues espero que Dios no nos faltara en responderles decentemente sin ofender
 al medianero. Ahora quedamos tratando sobre la forma en que hemos de correr en adelante, de suerte que quedemos
 resguardados con nuestros amos.
 

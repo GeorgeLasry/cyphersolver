@@ -851,6 +851,13 @@
    "kind": "verification",
    "what": "Verification 4: no. 09 (two cipher names, no sentence, unscorable) relabelled from read to not prose; its names stay deciphered and its two passages stay counted in fraction_read (0.78 unchanged).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching"],
+   "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): the modernised spelling of 22 Oct restored: nos. 01, 03, 04, 05, 19, 20 word by word from the OCR of Forbes, A Full View ii (1741), which prints the originals' spelling (v6_align.py --ocr: long s, recurrence check, OCR slips refused by hand); nos. 06, 08, 11, 15, 16, 17, 22 by hand from the figures' spellings recorded in no01-no23_reread_log.md, decipher_*.md and the corrections tsv (kepe, terme, sonnes, hote, bel awaye, hir, ernest, congratulacion, condoleaunce, intervewe, forain realmes, dispach, unserched, lokes, Scotish, speake, Secretarie, feate, somwhat, tyme, necessarie); no. 18 has nothing to restore (names and code signs); holes and brackets kept, no word changed. Rescored with research/reading_audit/v2_score.py: no01_reading.md plain 0.935 -> 0.516, explicit holes 1.0 -> 1.0; no03_reading.md plain 1.0 -> 0.654, explicit holes 1.0 -> 1.0; no04_reading.md plain 0.918 -> 0.689, explicit holes 1.0 -> 1.0; no05_reading.md plain 0.895 -> 0.474, explicit holes 1.0 -> 1.0; no06_reading.md plain 1.0 -> 1.0, explicit holes 1.0 -> 1.0; no08_reading.md plain 0.87 -> 0.87, explicit holes 0.913 -> 0.913; no11_reading.md plain 0.889 -> 0.778, explicit holes 0.889 -> 0.889; no15_reading.md plain 0.5 -> 0.5, explicit holes 0.833 -> 0.833; no16_reading.md plain 0.8 -> 0.8, explicit holes 0.8 -> 0.8; no17_reading.md plain 0.882 -> 0.824, explicit holes 0.941 -> 0.941; no18_reading.md plain 0.333 -> 0.333, explicit holes 1.0 -> 1.0; no19_reading.md plain 0.833 -> 0.667, explicit holes 1.0 -> 1.0; no20_reading.md plain 1.0 -> 0.5, explicit holes 1.0 -> 1.0; no22_reading.md plain 0.714 -> 0.429, explicit holes 0.857 -> 0.857. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
+   "result": "worked"
   }
  ],
  "outcome": {

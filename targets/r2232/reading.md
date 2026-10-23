@@ -1,6 +1,6 @@
 # R2232 — Wolff to Princess Wilhelmina of Prussia, The Hague, 25 July 1801. Reading.
 
-Written out 23 Oct 2026 (verification 5) from reading.txt, unchanged in wording: the deciphered parts, which reading.txt puts in [brackets], are here in *italics*, so that the reading scorers do not take them for holes. [?word] = doubtful; ... = unread. reading.txt says its spelling was modernised lightly (4 Oct 2026); that is kept here, not redone. Page labels [P1]-[P3] left out.
+Written out 23 Oct 2026 (verification 5) from reading.txt, unchanged in wording: the deciphered parts, which reading.txt puts in [brackets], are here in *italics*, so that the reading scorers do not take them for holes. [?word] = doubtful; ... = unread. Spelling (v6, 23 Oct 2026): the deciphered parts follow the cipher's letters (serai, aurai, expédie, voye, as the writer enciphered them; the light modernisation of 4 Oct had made them serais, aurais, expédiée, voie), with accents and apostrophes, which the cipher cannot carry, supplied; the clear text as transcribed from the images. Modern French is not imposed; the English summary is in NOTES.md (## Reading). Page labels [P1]-[P3] left out.
 
 ## Reading
 
@@ -19,8 +19,8 @@ chose avait eu lieu dans son entier, et que j'eusse eu la liberté de m'y rendre
 Outre cela j'ai *offert à feu le prince*
 **
 *Frédéric de lui amener quelques milles hommes de la brigade suisse avec l'élite des officiers, par une lettre que*
-*j'ai expédiée le matin du 14 septembre 1795, jour que je fus arrêté; sans cet accident je serais entré alors à la*
-*solde de l'Angleterre, je n'aurais point soupiré 39 mois et 5 jours dans la prison, et je ne serais pas dans le*
+*j'ai expédie le matin du 14 septembre 1795, jour que je fus arrêté; sans cet accident je serai entré alors à la*
+*solde de l'Angleterre, je n'aurai point soupiré 39 mois et 5 jours dans la prison, et je ne serai pas dans le*
 *besoin où je me trouve à présent. Je ne veux pas offusquer le mérite des autres*; mais s'il m'est permis de le dire,
 je crois pouvoir me flatter d'avoir aussi mérité en quelque façon *pour la bonne cause*, que je ne suis pas indigne
 pour implorer la *générosité bienfai*-(au point)-*sante du gouvernement britannique* pour en obtenir la *demi-paye*
@@ -34,7 +34,7 @@ Altesse Royale de s'intercéder pour moi, lorsque j'ai eu l'honneur de m'adresse
 *moi dans les …*, et agréez *de disposer de moi dans les …; lui fournir des occasions où je puisse donner* des
 preuves de ma reconnaissance], ainsi que de *mon adhérence à la bonne cause*, et de *mon attachement* aussi
 *sincère* que très *profondément respectueux à la personne et à la maison* de Votre Altesse Royale, dont *les ordres*
-*pourront me parvenir* par cette *même voie sans adresse*, avec *3 marques ▽ en …*.
+*pourront me parvenir* par cette *même voye sans adresse*, avec *3 marques ▽ en …*.
 J'ai l'honneur d'être avec le plus profond respect, Madame, de Votre Altesse Royale le plus humble et le plus soumis
 serviteur et valet *Wolff*.
 La Haye ce 25 juillet 1801.

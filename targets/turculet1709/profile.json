@@ -117,7 +117,8 @@
       "result": "worked"
     },
     {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R7481 and R7482 linked to their token transcriptions, pass-2 checks and readings", "result": "worked"},
-    {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): the letter is Polish of 1709 (explicit-hole bar): R7481_reading.txt body explicit 1.0. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
+    {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): the letter is Polish of 1709 (explicit-hole bar): R7481_reading.txt body explicit 1.0. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"},
+    {"date": "2026-10-23", "kind": "reading", "technique": ["plaintext matching"], "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): R7482_reading.txt ('normalised spelling') put back into the writer's Latin from R7482.txt (figures and interlinear gloss): hæc, quæcunque (the clear &/æ sign), occurunt, expectat, Tarlo, Soczaviæ; no word changed. R7481_reading.txt ('modernised Polish') is not in the v6 list and was not touched. Rescored with research/reading_audit/v2_score.py: R7482_reading.txt plain 0.429 -> 0.318, explicit holes 0.929 -> 0.864. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.", "result": "worked"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
