@@ -124,6 +124,27 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): Lasry's plaintext of R924 is on DECODE only (git-ignored copy in no checkout); nothing could be read. Relabelled decoded, not read; class already solved kept (Lasry's decipherment); fraction_read 0.9195 -> 0.",
    "result": "partial",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read b35: DECODE R924 fetched with the project cookie (2 images, Pettersson's transcription, Lasry's key, plaintext and interlinear, now in decode/, git-ignored); neighbours R922, R923, R925, R926 and R788 opened: cipher only, no decipherment or clear copy.",
+   "result": "worked",
+   "technique": ["other"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Found that Eric Sams deciphered this letter and the Queen's of the same key in 1976 for Ian Roy (Archivaria 21, 1985-86, pp. 89-90: a number cipher in Cowley's hand, two letters to Charles I, Jermyn in English and Henrietta Maria in French, January 1646, PRO); his solution is not printed. Jermyn to Nicholas, 26 Jan 1646 (SP 106/10 no. 15) refers to 'the kinge his letters' on the Portugal embassy and marriage: this letter. Writer: Henry Jermyn.",
+   "result": "partial",
+   "technique": ["contextual inference"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Decoded afresh with Lasry's key; low unvalued figures read as nulls; date 'Ian. 26' and '5 or 6 thousand' read as numerals in clear; codes 168 hope, 116 can, 334 what, 227 new adopted by sense at every occurrence (flagged); R924_reading.md and R924_en.md written, aligned word by word with the decode (three modernised spellings restored). Score 0.545 plain, 0.649 explicit holes; marked read, grade B.",
+   "result": "worked",
+   "technique": ["key matching", "contextual inference", "language-model scoring", "manual reconstruction"]
   }
  ],
  "outcome": {
@@ -133,9 +154,9 @@
    "catalogue correction"
   ],
   "class": "already solved",
-  "fraction_read": 0.0,
+  "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026: the letter's text is not in the repository (Lasry's files were git-ignored and are in no checkout), so no tokens are in a document that reads here. The earlier 0.9195 (apply_key.py: 1850 of 2012 groups with a value in Lasry's key) is withdrawn as a reading figure.",
+  "fraction_read_source": "23 Oct 2026, re-read b35: the one document, R924 (2012 groups), reads (R924_reading.md); 2012/2012 = 1.0 by document. 85 code tokens inside it stay open.",
   "key": "partial",
   "codes_open": {
    "open": 69,
@@ -143,26 +164,21 @@
   },
   "gaps": [
    {
-    "item": "three-digit word-list numbers not in Lasry's key (58 distinct, 85 tokens: 324, 428, 321, 532, 208, 797 ...)",
-    "blocker": "open-codes",
-    "detail": "Lasry leaves them in brackets; names and words of the numbered list. Not reconstructed here."
+    "item": "three-digit word-list numbers with no value (58 distinct, 85 tokens: 324, 428, 321, 532, 208, 797 ...)",
+    "blocker": "no-key-material",
+    "detail": "Lasry's key lacks them; Eric Sams's 1976 solution is unprinted (Bodleian / Ian Roy papers). Four valued here by sense (R924_reread_log.md)."
    },
    {
-    "item": "low figures with no value in the key (11 distinct, 77 tokens: 21, 30, 42, 50, 16 ...)",
-    "blocker": "open-codes",
-    "detail": "Lasry renders them '_'; dividers, nulls or values missing from his alphabet. Not settled here."
-   },
-   {
-    "item": "R924: Lasry's plaintext not in the repository",
-    "blocker": "not-attempted",
-    "detail": "his interlinear and plaintext files are on the DECODE record (reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)); fetch them into decode/ (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept"
+    "item": "Eric Sams's decipherment of this letter (1976)",
+    "blocker": "needs-physical-access",
+    "detail": "filed in the Bodleian per his letter to R. A. Sayce, 9 Oct 1976; not online"
    }
   ],
   "grades": "unknown",
   "verification": [
    "key confirms"
   ],
-  "notes": "Nothing about the text is new: Lasry's decipherment on DECODE is the reading. DECODE's start date (26 June 1646) does not fit the letter's own 'Paris Jan'; queued as a correction. 22 Oct 2026, reading audit: no text of the letter is in the repository; decoded, not read. Class kept: Lasry's decipherment exists on DECODE (2020).",
+  "notes": "Lasry's key and decipherment on DECODE (2020) are the basis of the reading. DECODE's start date (26 June 1646) does not fit the letter's own 'Paris Jan'; queued as a correction. 22 Oct 2026, reading audit: no text of the letter was in the repository; decoded, not read. 23 Oct 2026, re-read b35: Lasry's files fetched, the letter decoded afresh and read (R924_reading.md, grade B, four code values by sense). Eric Sams deciphered this letter in 1976 (Archivaria 21, 1985-86, pp. 89-90: Jermyn to Charles I, January 1646), unprinted; writer Henry Jermyn. Class kept: Lasry's decipherment exists on DECODE (2020).",
   "credits": [
    {
     "who": "lasry",
@@ -182,12 +198,19 @@
    {
     "doc": "R924",
     "label": "R924, Paris, January 1646",
-    "transcription": "https://de-crypt.org/decrypt-web/RecordsView/924",
-    "decryption": "https://de-crypt.org/decrypt-web/RecordsView/924",
+    "transcription": ["R924_signs.txt", "https://de-crypt.org/decrypt-web/RecordsView/924"],
+    "decryption": ["https://de-crypt.org/decrypt-web/RecordsView/924", "R924_reading.md"],
     "summary": "A writer at Paris to Charles I against Sir H. Compton's journey and the treaty for Prince Charles's marriage with Portugal, on Montreuil's mission, the frost that stopped the river traffic, and levies of five or six thousand men to send over.",
-    "note": "Lasry's interlinear plaintext of R924 is on the DECODE record, behind its login, and was kept out of the repository as his work; no copy is in any checkout, so nothing of the letter can be read here (reading audit, 22 Oct 2026); fix: re-fetch it with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) and check it with apply_key.py.",
     "language": "en",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading": "R924_reading.md",
+    "translation": "R924_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "R924_reading.md: Lasry's SP106-8 key applied afresh to Pettersson's transcription (b35_r924dec.py), unvalued low figures as nulls, four code values adopted by sense at every occurrence (168 hope, 116 can, 334 what, 227 new; flagged in R924_reread_log.md), Lasry's '?' guesses bracketed. Reading body 0.545 plain, 0.649 explicit holes (English 1646); the argument holds sentence by sentence with code holes (85 tokens). Writer Henry Jermyn (Eric Sams, Archivaria 21, 1985-86, who deciphered it in 1976; his solution unprinted)."
+    }
    }
   ]
  }

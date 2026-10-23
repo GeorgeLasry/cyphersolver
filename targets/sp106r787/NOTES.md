@@ -1,6 +1,6 @@
 # French news letter forwarded to Henrietta Maria's household, 19/29 July 1645 — Lasry's "SP106-2" key — TNA SP 106/10 ff. 216–217 (DECODE R787) — NOTES
 
-Status: in progress. Lasry's decipherment exists on DECODE; none of it is in the repository (reading audit, 22 Oct 2026).
+Status: in progress. Decoded, not read (23 Oct 2026, b35): nomenclator numbers in most sentences.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's plaintext of R787 is on the DECODE record only; the git-ignored copy is in no checkout, so nothing of the letter could be read. R787 is *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.9802 -> 0 (the old figure was key coverage).
 
@@ -12,6 +12,15 @@ joined six letters of SP 106/10 in four of Lasry's reconstructed keys. This lett
 
 **Outcome: read from existing decipherment.** Lasry's key and interlinear plaintext are on the DECODE record
 (23 Oct 2020). Nothing about the text is added here. Sessions 2026-09-19 and 2026-10-14.
+
+
+**23 Oct 2026, re-read b35** (`R787_reread_log.md`): Lasry's files fetched (now in `decode/`, git-ignored) and checked
+group by group (`research/reading_audit/b35_sp106.py`; signs `R787_signs.txt`, corrections `R787_corrections.tsv`,
+decode `R787_decode.txt`). **Found on f. 217: a covering note in cipher in the margins** (four dot-separated lines, in
+no transcription): *Celle ici est un duplicata, auquel je joins le pacquet ci-enclos que j'ai receu de la cour. A [75]
+ce vint e[t] trois aoust, sty. vet.* (`R787_margin_signs.txt`). Partial reading `R787_reading.md` / `R787_en.md`:
+0.457 plain (0.657 explicit holes); the nomenclator numbers carry the names and fall in most sentences, so the letter
+stays **decoded, not read**. 116 = *lettre* by sense (five occurrences).
 
 ## The record
 
@@ -50,8 +59,8 @@ The reveal on the page is the first 120 groups of this run.
 
 ## Remaining gaps
 
-- nomenclator numbers above 60 and two stray figures (19 distinct, 31 tokens; 64, 103, 61, 62, 104, 116 ...) - blocker: open-codes; not in Lasry's key, his plaintext leaves them open; names and titles, one of them the writer's signature
-- R787: Lasry's plaintext not in the repository - blocker: not-attempted; fetch his interlinear and plaintext files with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept
+- nomenclator numbers 61-121 with no value (18 distinct, about 30 tokens; 64, 103, 61, 62, 104, 75 ...) - blocker: no-key-material; Lasry's key lists none and f. 219 gives no values; they fall in most sentences of R787_reading.md
+- '[?quartage]' (P2 l. 6): figures clear, no word fits - blocker: no-key-material
 
 ## Escalation
 
@@ -60,7 +69,7 @@ The reveal on the page is the first 120 groups of this run.
 - [x] known-keys: Lasry's SP106-2 key is the key; applied here (agrees with his plaintext)
 - [x] print: Lasry's DECODE files are the only decipherment found; Tomokiyo's unsolved list still carries the letters
 - [n/a] key-rebuild: the entry is read from Lasry's existing decipherment; valuing his nomenclator (with f. 219) is new work for a later session
-- [n/a] retry: nothing re-read; his decipherment taken as it is and checked with his key
+- [x] retry: 23 Oct 2026 (b35), his plaintext checked on the images; the margin note found and deciphered; partial reading 0.457
 
 ## Assumptions for George's review
 

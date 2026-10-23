@@ -1,6 +1,6 @@
 # Lope de Soria (Mirandola) to Charles V, 13 Dec 1527 (not 1517) — RAH Salazar 9/17 ff. 31–34, DECODE R9487
 
-Status: in progress. The Claro reads for section A and the closing paragraph; B and C are torn (reading audit, 22 Oct 2026).
+Status: in progress. Decoded, not read (23 Oct 2026, b35): B and C decoded from the cipher, code groups open.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): claro.md builds sentences for section A and the closing paragraph only; B and the start of C are half-lines on a torn leaf. R9487 is *decoded, not read* in profile.json; class already solved is kept (read at the time); fraction_read estimated 0.5. The f. 31v cipher block is intact and could fill the tear with key B.
 
@@ -9,6 +9,14 @@ Earlier status (before the 22 Oct 2026 reading audit): no write-up
 **Verdict: read at the time. The court's decipherment ("Claro", sections A, B, C) is bound with the letter as
 f. 34r.** The date is 1527, not 1517. Catalogue entry 142 is resolved and removed. Checked in one session on
 2026-09-21.
+
+
+**23 Oct 2026, re-read b35** (`R9487_reread_log.md`): the intact cipher of B (f. 31v, 8 lines) and of C (f. 33r, 5
+lines) transcribed sign by sign from the DECODE images (`R9487_cipher_signs.txt`) and decoded with key B. It confirms
+the Claro's half-lines and fills part of the tear (*que si es cierto seria [xad] de inconviniente*; *algunas
+diuisiones*; *alla era arrivado el [?principe] [?de Orange]*; *no [?devan] de usar de [?sacatamiento] ... contra [par] y
+hazer matrimonio*). `R9487_reading.md` / `R9487_en.md`: 0.50 plain, 0.682 explicit holes; B and the first line of C
+keep unvalued code groups and polyphonic choices, so the letter stays **decoded, not read**.
 
 ## Sources
 
@@ -61,14 +69,15 @@ status correction are queued in `decode_updates/queue.json`.
 
 ## Remaining gaps
 
-- Claro B and the start of C (torn): decoded, not read - blocker: not-attempted; transcribe the intact f. 31v cipher block from the DECODE images (decode/, reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) and decode it with key B (targets/soria1523/keyB.md)
-- last cipher lines of f. 31r and f. 33r - blocker: illegible; torn and faded
+- code groups of B and C with no value (xad, soc, pur, pib, yod, ync, par, yal, tal, sab, saf, pil, pef) - blocker: no-key-material; key B lacks them
+- the first line of C (f. 33r): signs read, sense not reached - blocker: no-key-material
+- last cipher lines of f. 31r - blocker: illegible; torn and faded
 
 ## Escalation
 
 - [x] siblings: soria1523 (key B) used to check the Claro against the cipher
 - [x] clear-pages: the Claro, f. 34r, transcribed in claro.md
 - [x] known-keys: Soria's 1523 key B fits (spot checks on A and C)
-- [ ] print: not searched
+- [x] print: nothing found for this letter (23 Oct 2026)
 - [n/a] key-rebuild: key B exists
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: 23 Oct 2026 (b35), f. 31v and f. 33r cipher transcribed and decoded with key B

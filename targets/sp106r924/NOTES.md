@@ -1,6 +1,6 @@
 # A member of Henrietta Maria's household (Paris) to Charles I, January 1646 — Lasry's "SP106-8" key — TNA SP 106/10 ff. 235–236 (DECODE R924) — NOTES
 
-Status: in progress. Lasry's decipherment exists on DECODE; none of it is in the repository (reading audit, 22 Oct 2026).
+Status: in progress. Read 23 Oct 2026 (b35) from Lasry's key; writer Henry Jermyn (Sams); 85 code tokens open.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's plaintext of R924 is on the DECODE record only; the git-ignored copy is in no checkout, so nothing of the letter could be read. R924 is *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.9195 -> 0 (the old figure was key coverage).
 
@@ -12,6 +12,16 @@ joined six letters of SP 106/10 in four of Lasry's reconstructed keys. This lett
 
 **Outcome: read from existing decipherment.** Lasry's key and interlinear plaintext are on the DECODE record
 (23 Oct 2020). Nothing about the text is added here. Sessions 2026-09-19 and 2026-10-14.
+
+
+**23 Oct 2026, re-read b35** (`R924_reread_log.md`): Lasry's files fetched with the shared cookie (now in `decode/`,
+git-ignored) and the letter decoded afresh from Pettersson's rows (`research/reading_audit/b35_r924dec.py`; signs
+`R924_signs.txt`, decode `R924_decode.txt`). Unvalued low figures are nulls between words; "Ian. 26" and "5 or 6
+thousand" are numerals in clear; four codes valued by sense at every occurrence (168 *hope*, not *hold*; 116 *can*;
+334 *what*; 227 *new*). **Read, grade B**: `R924_reading.md` (0.545 plain, 0.649 explicit holes, English of 1646),
+`R924_en.md`. Found: **Eric Sams deciphered this letter and the Queen's (R925) in 1976** for Ian Roy (*Archivaria* 21,
+1985-86, pp. 89-90; his solution unprinted); the writer is **Henry Jermyn**, dated Paris 26 January 1646, the day of
+his letter to Nicholas referring him to "the kinge his letters" on the Portugal embassy.
 
 ## The record
 
@@ -53,18 +63,17 @@ The reveal on the page is the first 120 groups of this run.
 
 ## Remaining gaps
 
-- three-digit word-list numbers not in Lasry's key (58 distinct, 85 tokens) - blocker: open-codes; he leaves them in brackets; names and words of the numbered list, not reconstructed here
-- low figures with no key value (11 distinct, 77 tokens; 21, 30, 42, 50, 16 ...) - blocker: open-codes; rendered "_" by Lasry; dividers, nulls or values missing from his alphabet, not settled
-- R924: Lasry's plaintext not in the repository - blocker: not-attempted; fetch his interlinear and plaintext files with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept
+- three-digit word-list numbers with no value (58 distinct, 85 tokens: 324, 428, 321, 532, 208, 797 ...) - blocker: no-key-material; four valued by sense here (R924_reread_log.md); Sams's 1976 solution is unprinted
+- Eric Sams's decipherment (1976) - blocker: needs-physical-access; filed in the Bodleian per his letter to R. A. Sayce (9 Oct 1976)
 
 ## Escalation
 
 - [x] siblings: R925 (ff. 238-240) is in the same key per Lasry's file; the other SP 106/10 letters are in other keys
 - [x] clear-pages: none; the record holds no clear copy
 - [x] known-keys: Lasry's SP106-8 key is the key; applied here (agrees with his plaintext)
-- [x] print: Lasry's DECODE files are the only decipherment found; Tomokiyo's unsolved list still carries the letters
+- [x] print: Lasry's DECODE files; Eric Sams's 1976 solution exists (Archivaria 21) but is unprinted
 - [n/a] key-rebuild: the entry is read from Lasry's existing decipherment; filling his word list (with R925) is new work for a later session
-- [n/a] retry: nothing re-read; his decipherment taken as it is and checked with his key
+- [x] retry: 23 Oct 2026, decoded afresh with his key, nulls and four sense values; read (b35)
 
 ## Assumptions for George's review
 

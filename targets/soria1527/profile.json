@@ -107,7 +107,9 @@
    "result": "worked"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed contemporary Claro; no transcription of the ciphertext", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): claro.md read: A and the closing paragraph build sentences, B and the start of C are torn half-lines. R9487 relabelled decoded, not read; class already solved kept (contemporary decipherment); fraction_read estimated 0.5; the f. 31v cipher with key B noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): claro.md read: A and the closing paragraph build sentences, B and the start of C are torn half-lines. R9487 relabelled decoded, not read; class already solved kept (contemporary decipherment); fraction_read estimated 0.5; the f. 31v cipher with key B noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Re-read b35: DECODE R9487 re-fetched (4 images, no attachment); the f. 31v cipher block (B, 8 lines) and the f. 33r block (C, 5 lines) transcribed sign by sign from the images (R9487_cipher_signs.txt).", "result": "worked", "technique": ["manual reconstruction"]},
+  {"date": "2026-10-23", "kind": "reading", "what": "Decoded both blocks with key B and set them against the Claro: B confirmed where the Claro survives (Narni, maravillar, qualquiera desconcierto, sin obediencia, algunas diuisiones, como conviene a su servicio, del Vasto) and filled in part where it is torn; signs read d = s, q-cross = v/i, +o = y, g = d noted. R9487_reading.md with English; 0.50 plain, 0.682 explicit holes; B and C1 keep unvalued code groups. Kept decoded, not read.", "result": "partial", "technique": ["key matching", "plaintext matching", "contextual inference", "manual reconstruction"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -122,19 +124,23 @@
     {"who": "contemporary", "role": "key or decipherment used", "note": "court decipherment \"Claro\" bound as f. 34r"}
   ],
   "texts": [
-   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the Claro, f. 34r", "decryption": "claro.md", "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "The Claro is torn: section A and the closing paragraph build sentences, but B and the start of C are half-lines ending in [...] and cannot be assembled, so about half the page reads (reading audit, 22 Oct 2026); fix: transcribe the intact f. 31v cipher block and decode it with Soria's 1523 key B (targets/soria1523/keyB.md) to fill the torn sections.", "language": "es", "state": "decoded, not read"}
+   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the Claro, f. 34r", "decryption": ["claro.md", "R9487_reading.md"], "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "Re-read 23 Oct 2026 (b35, R9487_reread_log.md): the intact cipher of B (f. 31v, 8 lines) and C (f. 33r, 5 lines) transcribed sign by sign and decoded with key B; it confirms the Claro's half-lines and fills part of the tear (que si es cierto seria [xad] de inconviniente; algunas diuisiones; alla era arrivado el [?principe] [?de Orange]; no [?devan] de usar de [?sacatamiento] ... contra [par] y hazer matrimonio). R9487_reading.md 0.50 plain, 0.682 explicit holes; B and the start of C still carry several unvalued code groups and polyphonic choices, so kept decoded, not read; blocker no-key-material.", "language": "es", "state": "decoded, not read", "transcription": "R9487_cipher_signs.txt", "translation": "R9487_en.md"}
   ],
   "fraction_read": 0.5,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Reading audit, 22 Oct 2026, estimated from claro.md: section A and the closing paragraph read (about half the lines of the Claro); B and the start of C are torn. No token count: the cipher is not transcribed.",
+  "fraction_read_source": "Reading audit, 22 Oct 2026, estimated from claro.md: section A and the closing paragraph read (about half the lines of the Claro). Re-read b35 (23 Oct 2026): B and C's cipher decoded, the document still decoded, not read; the 0.5 stays an estimate by lines.",
   "gaps": [
    {
-    "item": "Claro B and the start of C (torn): decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "the f. 31v cipher block (9 intact lines) is on the DECODE images (decode/, git-ignored; reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)); transcribe it and decode with key B from targets/soria1523/keyB.md"
+    "item": "code groups of B and C with no value (xad, soc, pur, pib, yod, ync, par, yal, tal, sab, saf, pil, pef)",
+    "blocker": "no-key-material",
+    "detail": "key B (soria1523) lacks them; the decode of f. 31v and f. 33r is in R9487_cipher_signs.txt"
    },
    {
-    "item": "last cipher lines of f. 31r and f. 33r",
+    "item": "the first line of C (f. 33r): signs read, sense not reached",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "last cipher lines of f. 31r",
     "blocker": "illegible",
     "detail": "torn and faded"
    }
