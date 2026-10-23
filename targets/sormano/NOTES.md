@@ -2,6 +2,16 @@
 
 Status: read in part
 
+23 Oct 2026, re-read (batch b23, Claude Opus 5.5, REREAD_BRIEF): **no. 66 now reads** (`no66_reading.md`,
+`no66_en.md`, log `no66_reread_log.md`, `no66_corrections.tsv`). Every cipher stretch of ff. 121r-122r was re-read sign
+by sign on the IIIF master (the same 8.6k-px master as `raw/`; no better image exists, but the signs are legible at
+1-1.8x). The old f. 121r strings were misreadings; f. 121v L21-43 and f. 122r had never been transcribed. Values that
+hold across no. 66: the crossbarred long-s is a **null** (~20 places, as on f. 123r; KEY.md's "= e" to recheck), a
+looped b-shaped sign = **rr** (*ridure*, *Ferara*, *l'errore*), a looped Ʒ = **z**; code sign ⊬7 read *Papa* (four
+contexts) and a curled saltire *?Imperatore* (one), both flagged. Score 0.316 -> 0.753 (HOLES=1 0.989). No. 63
+ff. 115-116: f. 115r lines 1-27 re-read (`no63_reading.md`, partial; `no63_reread_log.md`); the rest not reached,
+so it stays decoded, not read. fraction_read 0.5 -> 0.64 (estimated from xml/ glyph counts).
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. No. 65
 reads as Italian sentences (`n65_reading.md`, continuous reading) and the three runs of no. 63 f. 123r read glyph by
 glyph. **Decoded, not read**: no. 66's own cipher stretches (letter strings that mostly make no words; their content is
@@ -151,10 +161,9 @@ Point to recheck: on f. 123r the crossbarred long-s behaves as a null three time
 not changed until the sign is compared on the two leaves.
 
 ## Remaining gaps
-- no. 63 ff. 115-116 decoded, not read (patches between 《…》 in nearly every sentence; reading audit 22 Oct 2026) - blocker: illegible; see the no. 63 line below (microfilm resolution)
-- no. 66's own cipher stretches decoded, not read (n66_transcription.md decodes them to letter strings that mostly make no words; reading audit 22 Oct 2026) - blocker: illegible; the same microfilm sign confusions as no. 63; their content is no. 65's clear text of the same passages
-- no. 63 ff. 115v-116r, long cipher runs read only in patches (252 unread stretches) - blocker: illegible; 44-60 px signs on the microfilm (MF 31394) whose i/o and other homophone forms differ by less than the film records (arya/NOTES.md 5b); segmentation merges and splits signs in runs with no clear word to anchor them; a new capture of the original would settle them
-- no. 65, about a dozen words marked (?) or in braces (foot of f. 119r, foot of f. 119v, f. 120r) - blocker: illegible; same cause, the glyph strings are kept in n65_transcription.md
+- no. 63 f. 115r from line 28 to f. 116v, cipher runs not yet re-read sign by sign (f. 115r lines 1-27 re-read 23 Oct 2026, no63_reading.md) - blocker: not-attempted; the IIIF master is legible and the key with no. 66's values reads it (no63_reread_log.md)
+- no. 66's own cipher stretches - closed 23 Oct 2026: read (no66_reading.md); two code signs ([Papa], [?Imperatore]) identified from context only
+- no. 65, about a dozen words marked (?) or in braces (foot of f. 119r, foot of f. 119v, f. 120r) - blocker: not-attempted; no. 66's re-read shows these signs are legible (e.g. no. 65's {B} = rr), so "illegible" no longer holds
 - no. 63 f. 123r, three signs before "ricaduto" (V 7 4 = a e i, no word) - blocker: illegible; read as written they give no word, and context alone is not used to fill them
 
 ## Escalation
@@ -163,4 +172,4 @@ not changed until the sign is compared on the two leaves.
 - [x] known-keys: Lasry's 2023 key (Tomokiyo, francis.htm) applied; the Langeac-Passano Venice cipher of fr. 3000 f. 74 compared and is a different cipher
 - [x] print: Molini, Documenti di storia italiana II, does not print nos. 63, 65, 66 (Patel); Tomokiyo lists them without decipherment; fr. 2974 f. 94 (Molini's printed decipherment of Sormano's 13 April letter) not digitised, and no longer needed for the key
 - [x] key-rebuild: the null, the duca sign and four letter forms added to Lasry's table (KEY.md); Patel's independent 22 values agree on 20
-- [n/a] retry: the open stretches are limited by the image, not by the key; running them again with the same key gives nothing new until a better capture of the leaves exists
+- [x] retry: 23 Oct 2026, IIIF full-resolution master tested (same as raw/); no. 66 re-read sign by sign and read, new values null/rr/z; no. 63 f. 115r lines 1-27 re-read, the rest not yet

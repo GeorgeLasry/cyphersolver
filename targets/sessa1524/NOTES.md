@@ -12,6 +12,17 @@ non-word in most sentences, and `read_r9873.md` / `read_r9898.md` give English g
 (116 of 5,648 tokens across the three documents); the 90% (f. 128 alone) and the siblings' 92.8% / 79.8% are withdrawn
 as reading figures.
 
+23 Oct 2026, re-read (batch b23, REREAD_BRIEF): **R9873 now reads** (grade B): [r9873_reading.md](r9873_reading.md),
+continuous Spanish in the 1524 spelling, every word aligned with the decode or the clear text
+(`research/reading_audit/b23_sessa_align.py`), English in [r9873_en.md](r9873_en.md); 0.715 clean sentences counting
+explicit holes (0.399 plain; the working file scored 0.13). f. 83r ll. 19-25 still does not hold. **R9898 stays
+decoded, not read** ([r9898_reading.md](r9898_reading.md), partial, 0.47 on explicit holes): bleed-through pages and
+some 140 single-context groups. New sibling R9899 (A-34 ff. 194-195, March 1525): one marginal decipherment, `hog` =
+*querria*. Key values adopted: `gal` embia-, `hog` querria, `kaz` -mente (attested), `reb` dezi-, `dis` servido,
+`cer` teni, `lar` miento, `sur`/`luc` parte, `tt` plural s, `gul` si, `nuf` gente, `qu` o, `gom` quatro (sense-only,
+flagged). Reading figure 2.1% -> 45.8% (f. 128 + R9873 = 2,589 of 5,648 tokens). Log:
+[texts/r9873-r9898_reread_log.md](texts/r9873-r9898_reread_log.md).
+
 ## 1. Not 1424: it is 1524, and not a blind break
 
 - **DECODE's date is a typo.** The same series runs on as R9888–R9895 "1524"; the senders are Luis Fernández de
@@ -161,19 +172,18 @@ the es corpora. Result, before -> after (strict = pass-17 tentative values count
 deciphered occurrence anywhere), and R9898's bleed-through pages, which do not resolve at higher zoom.
 
 ## Remaining gaps
-- R9873 and R9898 decoded, not read (open groups or non-words in most sentences; reading audit 22 Oct 2026) - blocker: open-codes; the groups occur in single contexts (see the R9873/R9898 lines below), and R9898's bleed-through pages are illegible
-- group `vo` (noun after *las dichas*, f. 128r) - blocker: open-codes; absent from R9873 and R9898 as well (pass 16) and from every other downloaded page (pass 14)
-- group `per` - blocker: open-codes; absent from R9873 and R9898 (pass 16) and every other downloaded page (pass 14)
-- `hay` = aunque is tentative (four contexts in R9873, none deciphered) - blocker: open-codes; no deciphered occurrence
-- clause *los m-re que r-ido los que no m-r-e-van* - blocker: open-codes; one sign value (probably `v`) still wrong after 16 passes
-- R9873: about 100 code groups (145 tokens) and 34 spelled letters without sense - blocker: open-codes; single contexts after pooling with R9898 and R9660 (pass 17); the non-words were re-checked at full zoom and stand as written
-- R9898: about 140 code groups (237 tokens) - blocker: open-codes; single contexts after pooling (pass 17), not in the six marginal decipherments
-- R9898: 381 letter tokens on the bleed-through pages ff. 150v-151r, 155v - blocker: illegible; re-cut at 1.5x without gain; no other image route (RAH Biblioteca Digital has no digitised A-34 that could be found)
+- R9873 read (23 Oct 2026, b23); about 70 open code groups, single contexts, and the stretch f. 83r ll. 19-25 - blocker: no-key-material; pooled with R9898, R9899, f. 128 and R9660, no deciphered occurrence; the triplicate with its contemporary deciphering (CSP 636, Gayangos MS) and Goicoechea's reading are not imaged or online
+- R9898 decoded, not read (0.47 on explicit holes, b23): about 140 code groups seen once - blocker: no-key-material; not in the six marginal decipherments nor in any sibling
+- R9898: letter tokens on the bleed-through pages ff. 150v-151r, 155v - blocker: illegible; re-cut at 1.5x and 2x without gain; DECODE's scans the only image (RAH Biblioteca Digital has no digitised A-34 that could be found)
+- group `vo` (noun after *las dichas*, f. 128r) - blocker: no-key-material; absent from R9873, R9898, R9899 and every other downloaded page
+- group `per` - blocker: no-key-material; absent from R9873, R9898, R9899 and every other downloaded page
+- `hay` = aunque is tentative - blocker: no-key-material; no deciphered occurrence, and it does not read *aunque* in R9873 f. 81r
+- clause *los m-re que r-ido los que no m-r-e-van* (f. 128) - blocker: no-key-material; one sign value still wrong, no sibling decipherment covers it
 
 ## Escalation
-- [x] siblings: R9878 duplicate collated; R9881, R9883/4, R9890, R9893, R9834, R9897, R9898 read against their clears (passes 1-14); R9873 and R9898 transcribed in full (pass 16)
+- [x] siblings: R9899 (A-34 ff. 194-195) checked 23 Oct 2026, one marginal decipherment (`hog` querria); R9878 duplicate collated; R9881, R9883/4, R9890, R9893, R9834, R9897, R9898 read against their clears (passes 1-14); R9873 and R9898 transcribed in full (pass 16)
 - [x] clear-pages: clears f. 140, f. 172, f. 324, f. 485, f. 38, ff. 14v-15 aligned; R9898's six marginal decipherments found and aligned (pass 16; pass 12 had missed them)
 - [x] known-keys: one cipher throughout 1523-25; the key was built from its own siblings, no other key of the series is known
-- [x] print: Bergenroth CSP Spain vol. 2 checked (f. 128 not calendared; R9873 = nos. 636-638, used as a topic crib); CSP iii.1 checked for R9898 (not calendared)
+- [x] print: Gayangos triplicate (CSP 636) and Goicoechea's reading (CSP 637) searched online 23 Oct 2026, not found (Kolosova 2016/17 thesis a lead); Bergenroth CSP Spain vol. 2 checked (f. 128 not calendared; R9873 = nos. 636-638, used as a topic crib); CSP iii.1 checked for R9898 (not calendared)
 - [x] key-rebuild: key_working.md extended over 16 passes by crib alignment, template matching (tmatch.py) and the R9898 margins
-- [x] retry: rerun 3 Oct 2026 with the pass-17 pooled values (R9873 92.8%, R9898 79.8%); rerun 21 Sept 2026 with the pass-15 key over R9660 (no change); rerun 2 Oct 2026 with the pass-16 key over f. 128: `rus` = dicho and `hay` = aunque fill the residue *de lo susodicho, aunque no*; `vo`, `per` and the m-re clause still open
+- [x] retry: b23 re-read 23 Oct 2026: R9873 and R9898 written out as readings, open groups pooled with R9899 (new sibling) and R9660, f. 83r re-checked on the image; R9873 read, R9898 not; rerun 3 Oct 2026 with the pass-17 pooled values (R9873 92.8%, R9898 79.8%); rerun 21 Sept 2026 with the pass-15 key over R9660 (no change); rerun 2 Oct 2026 with the pass-16 key over f. 128: `rus` = dicho and `hay` = aunque fill the residue *de lo susodicho, aunque no*; `vo`, `per` and the m-re clause still open

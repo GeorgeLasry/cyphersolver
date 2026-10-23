@@ -321,16 +321,44 @@
       "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). read_r9635.md, edition/r9635_f20r.md, r9635_f21.md and read_r9653.md read: f. 20r is a table of phrase fragments between untranscribed letter runs, R9653's cipher gives one phrase in its foot paragraph; what reads as sentences is the clear text (the Rhodes news, the Pace paragraph on f. 21), not decipherment. Both letters relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read 0.6 (estimated) -> 0.",
       "result": "failed",
       "technique": ["language-model scoring", "statistical test"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "Re-read brief b23, step 1: DECODE R9635, R9653 (and neighbours R9634, R9636, R9652, R9654, R9655) re-fetched logged in and every image opened. R9635's P3 right page (f. 22r) is a full clear contemporary decipherment of the letter, never examined before; transcribed (R9635_decifrado_f22r.txt). R9653's 'illegible head paragraph' is the bleed-through of an eleven-line cipher passage on f. 299v, fully legible; no decipherment of R9653 is bound or imaged (f. 300v duplicate and R9654 not imaged).",
+      "result": "worked",
+      "technique": ["plaintext matching"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "R9635: the f. 22r decipherment aligned with the cipher of ff. 20r-20v as read sign by sign with Tomokiyo's key (visto que tanto, no se puede perder nada, capitulacion, el primero deste mes, obligados, allende de los otros xviii mil, mas de xv mil ducados, estos xx mil de agora, poderlo hazer porque, todos los suyos ... en Francia): all agree; the earlier edition's 'darian' is pagarian, and hec = Inglaterra is withdrawn. New values from the decipherment: deg = visto, feb = tanto, gim = suyos; tac = tenian? flagged. Reading R9635_reading.md, 0.833 explicit-hole share (20/24); state read, grade A.",
+      "result": "worked",
+      "technique": ["plaintext matching", "crib testing"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "R9653: the 13 cipher lines (f. 299r foot, f. 299v) transcribed sign by sign on 1.6-2.6x crops and read with Tomokiyo's key (R9653_cipher.txt): sign values ∝ = m, ꞔ/∂ = e, g# = u/v, ẗ4 = n, q = t, 3 = d, bold ∞ = g, ƀ = b, each holding at every occurrence; Ꝁo/Lo read s or t by sense (look-alikes). Reads: este embaxador y ahun la señoria tienen cartas de Francia de xxvi y xxvii del passado de Sangerman; dize que passando los ingleses a su tierra se perdieron dos naos dellos ... y los otros dieron a traves en Bretanya; nuevas sin fundamento; don Ioan Manuel. Sense-only values flagged: fef = toda, ref = Italia, zub = Adorno; feb = tanto from R9635. Open: xug, zi, tac, lud, qef, sob, ca, nu.",
+      "result": "partial",
+      "technique": ["key matching", "manual reconstruction", "contextual inference"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "R9653 scored: reading body 0.842 explicit-hole share (32/38), 0.368 plain, but the cipher passages alone 0.455 (5/11) explicit holes, 0.091 plain: the second cipher paragraph (Adorno, the protonotary, Juan Manuel) has seven open code groups in four sentences. Kept decoded, not read; R9653_reading.md kept as a partial reading. 15 letters rest on a look-alike sign.",
+      "result": "failed",
+      "technique": ["language-model scoring"]
     }
   ],
   "outcome": {
-    "method": "not solved",
-    "method_basis": "Tomokiyo's 2025 reconstruction of Sánchez's 1522 cipher, checked against the clerk's decipherment of R9605 and applied to R9635 and R9653 (read with known key, recorded under parts), resolves code-group phrases only; the cipher of neither letter builds sentences.",
+    "method": "read from existing decipherment",
+    "method_basis": "23 Oct 2026 (b23): R9635 is read from its contemporary decipherment, a clear copy on f. 22r of the DECODE record, checked against the figures of ff. 20r-20v with Tomokiyo's 2025 key. R9653 has no decipherment: its cipher (f. 299r foot and f. 299v) was read sign by sign with Tomokiyo's key and builds sentences only in its first paragraph, so it stays decoded, not read.",
     "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
-    "class": "not read",
-    "fraction_read": 0.0,
+    "class": "read in part",
+    "fraction_read": 0.67,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "22 Oct 2026, reading audit: neither letter's cipher builds sentences, so nothing counts as read (0; estimated, no token base exists). Withdrawn as a reading figure: 0.6 from NOTES (share of code groups resolved on the two leaves), never measured.",
+    "fraction_read_source": "22 Oct 2026, reading audit: neither letter's cipher builds sentences, so nothing counts as read (0; estimated, no token base exists). Withdrawn as a reading figure: 0.6 from NOTES (share of code groups resolved on the two leaves), never measured. 23 Oct 2026 (b23): R9635 reads (contemporary decipherment, f. 22r), R9653 does not. No sign count exists for R9635, so the share is taken on the plaintext words of the cipher passages: R9635 297 words (R9635_reading.md, all cipher text) against R9653's 147 cipher words (R9653_reading.md, second and third paragraphs): 297/444 = 0.67, estimated.",
     "key": "partial",
     "verification": [
       "key confirms",
@@ -340,14 +368,24 @@
     "notes": "The cipher itself was already solved and published by Tomokiyo in September 2025, so this is not a break. Added here: the catalogue entry's shelfmark, date range and authorship corrected; the ordering rule of the nomenclator, and from it a c-block numeral series of which cab = xv, cef = xxvi and cif = xxvii are confirmed in text and were not in the published key; and first readings of parts of R9635 and R9653, both outside Tomokiyo's coverage. fraction_read is the share of code groups resolved on the two leaves worked; the spelled-out letter runs and the other 27 records are open. Also established that the nine Lope Hurtado de Mendoza records in the group are in a different cipher, which deserves its own target. The R9605 calibration fixes the sign values against ground truth but does not by itself unlock the unread pages: the binding constraint is the transcription of the cursive shapes, which differ between scribes, and that has to be done glyph by glyph on the image. An edition pass against the published key then began (edition/), reading about a third of R9635 f. 20r continuously and adding lel = 'puede' to the key.",
     "gaps": [
       {
-        "item": "R9635 f. 20r (about two thirds) and ff. 20v-22",
-        "blocker": "not-attempted",
-        "detail": "edition work against the published key; only ll. 1-3, 6, 7, 14, 22 done"
+        "item": "R9653 cipher, second paragraph (f. 299v ll. 7-12: Adorno, the protonotary, Juan Manuel) and single groups of the first",
+        "blocker": "no-key-material",
+        "detail": "code groups xug, zi, tac, lud, qef, sob, ca, nu absent from Tomokiyo's table and met once (sob twice) here; no decipherment of R9653 bound or imaged"
       },
       {
-        "item": "R9653 f. 299r head cipher paragraph",
+        "item": "R9653 second copy (f. 300v) and R9654 (ff. 301-302, same date)",
+        "blocker": "needs-physical-access",
+        "detail": "f. 300v is seen only as faint bleed-through on f. 300r; R9654 has no images on DECODE; either could carry a decipherment or a differently enciphered duplicate"
+      },
+      {
+        "item": "R9635 f. 22r, a tear across ll. 9-10 (about ten words)",
+        "blocker": "not-attempted",
+        "detail": "the same passage stands in cipher on f. 21r, not read sign by sign in b23"
+      },
+      {
+        "item": "R9635 four uncertain words of the decipherment ([?bastar], [?tenido], [?Menorami], [?Lucerna])",
         "blocker": "illegible",
-        "detail": "ink bleed from the facing leaf at DECODE's resolution"
+        "detail": "cramped court hand at DECODE's resolution"
       },
       {
         "item": "the other Sánchez records of 9/23-9/26 (about 27)",
@@ -369,29 +407,36 @@
       {
         "doc": "R9635",
         "label": "R9635, Venice, 16 Sept 1522 (RAH Salazar 9/26 ff. 20-22)",
-        "transcription": [
-          "edition/r9635_f20r.md",
-          "edition/r9635_f21.md"
-        ],
-        "decryption": [
-          "edition/r9635_f20r.md",
-          "edition/r9635_f21.md",
-          "read_r9635.md"
-        ],
+        "transcription": ["edition/r9635_f20r.md", "edition/r9635_f21.md"],
+        "decryption": ["R9635_decifrado_f22r.txt", "R9635_reading.md", "edition/r9635_f20r.md", "edition/r9635_f21.md"],
         "summary": "Alonso Sánchez, imperial ambassador at Venice, to Charles V: the money owed by Venice under the treaty ('mas de xv mil ducados', 'allende de los otros xviii mil'), restitution of goods, 'los de esta republica' (calendared by Bergenroth, CSP Spain 2 no. 476). Edited against Tomokiyo's published key; only ll. 1-3, 6, 7, 14, 22 of f. 20r and the opening of f. 21 are given, cipher groups and reading side by side.",
-        "note": "f. 20r: a table of resolved code-group phrases ('continuous sense, not yet a continuous text'); the spelled letter runs between them are not transcribed, so no sentence of the cipher can be built; ff. 20v-22 not done (reading audit, 22 Oct 2026).",
-        "state": "decoded, not read",
-        "language": "es"
+        "state": "read",
+        "language": "es",
+        "reading": "R9635_reading.md",
+        "translation": "R9635_en.md",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "R9635_reading.md follows the contemporary decipherment of the letter, a clear court-hand copy on f. 22r (DECODE image P3, right page), not noticed before; checked against the cipher of ff. 20r-20v with Tomokiyo's key wherever read sign by sign, and every check agrees except the old edition's 'darian' (= pagarian) and hec = Inglaterra (withdrawn). Reading body 0.833 (20/24) counting explicit holes only, 0.417 plain (period spelling: tardavan, havian, deven, assentada). Open: a tear of about ten words on f. 22r ll. 9-10 and four uncertain words ([?bastar], [?tenido], [?Menorami], [?Lucerna])."
+        }
       },
       {
         "doc": "R9653",
+        "note": "Re-read 23 Oct 2026 (b23): the 'illegible head paragraph' is the bleed-through of an eleven-line cipher passage on f. 299v; with the two foot lines of f. 299r (13 lines, 274 signs) it was read sign by sign with Tomokiyo's key (R9653_cipher.txt, partial reading R9653_reading.md). The first paragraph builds sentences (the French ambassador's letters of 26-27 Oct from Saint-Germain; English ships lost on the way home, the rest driven ashore in Brittany; 'nuevas sin fundamento'), the second (Adorno, the protonotary, Juan Manuel) does not: seven open code groups in four sentences. Cipher passages 0.455 clean on explicit holes (0.091 plain); the whole body's 0.842 rests on the clear text. Blocker: no-key-material (groups absent from the published key, single contexts, no decipherment bound or imaged; the f. 300v duplicate and R9654 are not imaged).",
         "label": "R9653, Venice, 20 Nov 1522 (RAH Salazar 9/26 ff. 299-301)",
-        "transcription": "read_r9653.md",
-        "decryption": "read_r9653.md",
+        "transcription": [
+          "R9653_cipher.txt",
+          "read_r9653.md"
+        ],
+        "decryption": [
+          "R9653_cipher.txt",
+          "R9653_reading.md"
+        ],
         "summary": "Sánchez to Charles V: the clear middle gives the news of the siege of Rhodes from the Signoria's letters (fifty thousand Turks dead, the defenders hoping for relief); the two cipher lines at the foot are read with the published key; the six-line head paragraph is illegible at DECODE's resolution.",
-        "note": "The clear middle (Rhodes) reads but is not decipherment; of the cipher, the foot paragraph gives one phrase ('cartas de Francia de xxvi y xxvii del passado') and the head paragraph is illegible (reading audit, 22 Oct 2026).",
-        "state": "decoded, not read",
-        "language": "es"
+        "language": "es",
+        "reading": "R9653_reading.md",
+        "state": "decoded, not read"
       }
     ],
     "key_file": [
@@ -400,11 +445,18 @@
     ],
     "parts": [
       {
-        "label": "R9635 and R9653 (Tomokiyo's key applied; decoded, not read)",
-        "records": "DECODE R9635, R9653",
+        "label": "R9635 (contemporary decipherment f. 22r)",
+        "records": "DECODE R9635",
+        "method": "read from existing decipherment",
+        "extent": "complete",
+        "basis": "The clear court-hand decipherment on f. 22r (DECODE image P3), checked against the cipher of ff. 20r-20v with Tomokiyo's key; read 23 Oct 2026 (b23)."
+      },
+      {
+        "label": "R9653 (Tomokiyo's key applied; decoded, not read)",
+        "records": "DECODE R9653",
         "method": "read with known key",
         "extent": "partial",
-        "basis": "Tomokiyo's key (cryptiana AlonsoSanchez.htm, 2025) with three numerals added here (cab, cef, cif); phrases resolved, letter runs untranscribed. Decoded, not read (reading audit, 22 Oct 2026)."
+        "basis": "Tomokiyo's key (cryptiana AlonsoSanchez.htm, 2025) with cab, cef, cif added here and feb = tanto from R9635; the 13 cipher lines of ff. 299r-299v read sign by sign 23 Oct 2026 (b23); the second paragraph does not build sentences. Decoded, not read."
       }
     ]
   }

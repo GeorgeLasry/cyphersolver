@@ -288,7 +288,12 @@
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3617 tokens, 206 types, es-golden-age order 4: reading -2.169 per letter; random keys -3.449 (z 6.3); key annealed onto shuffled ciphertext best -2.421 (mean -2.434, z 34.3); annealer on the real text -2.167. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription_f128.txt with the reading copied from NOTES.md section 3 to texts/f128_decryption.md; r9873_cipher.txt and r9898_cipher.txt (cipher line with reading) with read_r9873.md / read_r9898.md; key key_working.md", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): texts/f128_decryption.md, r9873_cipher.txt/read_r9873.md and r9898_cipher.txt/read_r9898.md read. f. 128's nine lines build Spanish sentences with single-word holes (reviewed B); R9873 and R9898 are line-by-line working files with an open group or non-word in most sentences and English gists, relabelled decoded, not read. fraction_read 0.9 (f. 128 only) -> 0.021 (tokens of all three documents in text that reads).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): texts/f128_decryption.md, r9873_cipher.txt/read_r9873.md and r9898_cipher.txt/read_r9898.md read. f. 128's nine lines build Spanish sentences with single-word holes (reviewed B); R9873 and R9898 are line-by-line working files with an open group or non-word in most sentences and English gists, relabelled decoded, not read. fraction_read 0.9 (f. 128 only) -> 0.021 (tokens of all three documents in text that reads).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "access", "what": "b23 re-read: DECODE records R9872-R9874, R9897-R9899 re-fetched logged in (research/reading_audit/b23_fetch.py). R9873's 8 images and R9898's 7 opened one by one: no attachment, comment, interlinear or slip decipherment beyond R9898's six known margins; R9874 = R9873 P6 + address leaf. R9899 (A-34 ff. 194-195, March 1525, same cipher) is a new sibling: its 13 cipher lines have no decipherment except one f. 194v run with a marginal one ('Su Sd. no querria estar de mejor animo y todos sus ministros van por el mesmo stilo'), giving hog = querria.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "literature search", "what": "Quick web search for the Gayangos triplicate with contemporary deciphering (CSP Spain ii 636) and Goicoechea's decipherment of R9873 (CSP 637) in BNE Biblioteca Digital Hispanica and RAH Biblioteca Digital: neither found online. Lead noted, not followed: Kolosova's thesis El lenguaje secreto de la diplomacia de Carlos V (1521-1527) (Valencia; TESEO PDF; Salamanca 2024) describes 17 chancery ciphers of 1520-30 and names Sessa.", "result": "failed"},
+  {"date": "2026-10-23", "kind": "sibling key", "technique": ["contextual inference", "key matching"], "what": "Open groups of R9873/R9898 pooled with R9899, f. 128 and R9660 (1523). Adopted where every occurrence reads: gal embia- (R9898 f.150r margin), hog querria (R9899 margin), kaz -mente (margin), reb dezi- (four contexts incl. R9660 contra-dezir-la), dis servido (servidores, servidor, sera servido), cer teni, lar miento, sur/luc parte, tt plural s, gul si, nuf gente, qu o, gom quatro with lo mill / ror ducado (the clear 'quatro mill ducados' then 'los dichos gom lo ror-s que se perdieron'); the sense-only ones flagged for review. Not adopted: all pass-17 values, hay (fails in f.81r), kam (two contexts disagree), yid favor (3 of 4 contexts), mjn (ha x8, Italia x3: two groups transcribed alike).", "result": "partial"},
+  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "language-model scoring"], "what": "r9873_reading.md and r9898_reading.md built as continuous Spanish in the period spelling from the working decodes, open groups written [...grp], tentative values [?value], with word-level mends from the figures logged (ternia, atajar, demostracion, teniendose, no halla grand aliento, no se haze, ynposibilidad, veniesse, jamas huvo, ynresolucion, ynreparable, esas fronteras); every unbracketed word aligned with the decode or clear text (b23_sessa_align.py: R9873 0 uncarried of 1,534; R9898 0 apart from the date line carried by the section header). Look-alike letters: R9873 63 on 84 of 126 line pairs (3 as i 38), R9898 21 on 106 of 159. f. 83r ll. 19-24 re-checked on the image at 2x: transcription stands, no label changed.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring"], "what": "Reading bodies scored: R9873 0.715 clean sentences counting explicit holes (b17_score HOLES=1), 0.399 plain, _check_reading 0.409 (working file before: 0.13); the sentences hold except f. 83r ll. 19-25: set read, grade B, English in r9873_en.md. R9898 0.47 HOLES=1, 0.273 plain (before 0.16): stays decoded, not read (bleed-through pages and some 140 single-context groups). fraction_read 0.021 -> 0.458 (f. 128 116 + R9873 2,473 of 5,648 cipher tokens).", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3617, "types": 206, "tokens_per_type": 17.56, "score": -2.169, "nulls": {"random keys": {"n": 200, "mean": -3.449, "sd": 0.203, "max": -2.946, "z": 6.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.434, "sd": 0.008, "max": -2.421, "z": 34.3, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.119; polyphony 0.053; 1936 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -299,9 +304,9 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.021,
+  "fraction_read": 0.458,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. f. 128's 116 cipher tokens (transcription_f128.txt, 104 read) read; R9873 (2,473 tokens in the (b) reading) and R9898 (3,059) are decoded, not read. 116 of 5,648 = 0.021. Withdrawn as a reading figure: 0.9 (f. 128 alone, 104/116) and the siblings' 92.8% / 79.8% (tokens read as sense, measure_read.py, pass 17).",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. f. 128's 116 cipher tokens (transcription_f128.txt, 104 read) read; R9873 (2,473 tokens in the (b) reading) and R9898 (3,059) are decoded, not read. 116 of 5,648 = 0.021. Withdrawn as a reading figure: 0.9 (f. 128 alone, 104/116) and the siblings' 92.8% / 79.8% (tokens read as sense, measure_read.py, pass 17). 23 Oct 2026 (b23 re-read): R9873 now reads (r9873_reading.md, 0.715 clean sentences on explicit holes); documents that read = f. 128 (116 cipher tokens) + R9873 (2,473) = 2,589 of 5,648 = 0.458. R9898 (3,059) stays decoded, not read.",
   "key": "partial",
   "codes_open": {
    "open": 2,
@@ -313,38 +318,38 @@
   "gaps": [
    {
     "item": "group `vo` (noun after *las dichas*, f. 128r)",
-    "blocker": "open-codes",
-    "detail": "absent from R9873, R9898 and every other downloaded page"
+    "blocker": "no-key-material",
+    "detail": "absent from R9873, R9898, R9899 and every other downloaded page; no deciphered occurrence"
    },
    {
     "item": "group `per`",
-    "blocker": "open-codes",
-    "detail": "absent from R9873, R9898 and every other downloaded page"
+    "blocker": "no-key-material",
+    "detail": "absent from R9873, R9898, R9899 and every other downloaded page"
    },
    {
     "item": "`hay` = aunque (tentative)",
-    "blocker": "open-codes",
-    "detail": "four contexts in R9873, none deciphered"
+    "blocker": "no-key-material",
+    "detail": "no deciphered occurrence; does not read aunque in R9873 f. 81r (b23)"
    },
    {
-    "item": "clause *los m-re que r-ido los que no m-r-e-van*",
-    "blocker": "open-codes",
-    "detail": "one sign value (probably `v`) still wrong after 16 passes"
+    "item": "clause *los m-re que r-ido los que no m-r-e-van* (f. 128)",
+    "blocker": "no-key-material",
+    "detail": "one sign value still wrong; no sibling decipherment covers the signs"
    },
    {
-    "item": "R9873: about 100 code groups and 34 letters without sense",
-    "blocker": "open-codes",
-    "detail": "single contexts after pooling (pass 17)"
+    "item": "R9873: about 70 open code groups (single contexts) and f. 83r ll. 19-25",
+    "blocker": "no-key-material",
+    "detail": "pooled with R9898, R9899, f. 128 and R9660 in b23; reb and dis closed, the rest have no deciphered occurrence; the triplicate with its contemporary deciphering (CSP 636) and Goicoechea's reading are not imaged"
    },
    {
-    "item": "R9898: about 140 code groups",
-    "blocker": "open-codes",
-    "detail": "single contexts after pooling (pass 17), not in the six marginal decipherments"
+    "item": "R9898 decoded, not read: about 140 code groups seen once",
+    "blocker": "no-key-material",
+    "detail": "not in the six marginal decipherments nor in any sibling (b23 pooling)"
    },
    {
-    "item": "R9898: 381 letter tokens on ff. 150v-151r, 155v",
+    "item": "R9898: letter tokens on the bleed-through pages ff. 150v-151r, 155v",
     "blocker": "illegible",
-    "detail": "bleed-through; no gain at 1.5x; no other image route found"
+    "detail": "no gain at 1.5x or 2x; DECODE's scans the only image (RAH Biblioteca Digital has no digitised A-34 found)"
    }
   ],
   "credits": [
@@ -371,17 +376,22 @@
     "doc": "r9873",
     "label": "R9873, Rome, 14 Apr 1524 (RAH Salazar A-31 ff. 79-86)",
     "transcription": "r9873_cipher.txt",
-    "decryption": [
-     "r9873_cipher.txt",
-     "read_r9873.md"
-    ],
+    "decryption": ["r9873_cipher.txt", "read_r9873.md"],
     "summary": "Sessa to Charles V, a holograph with cipher runs and a postscript wholly in cipher; no decipherment is bound with it (Bergenroth's CSP Spain ii 637 calendars Goicoechea's 19th-century reading, and nos. 636/638 the triplicate and the court abstract, used only as a topic crib). Transcribed in full; each line (a) cipher, (b) reading.",
-    "note": "r9873_cipher.txt is a line-by-line working file: (b) lines of spelled letters and code values with an open group or a non-word in most sentences (256 tokens in open groups, 52 spelled letters without sense); read_r9873.md gives an English gist, not a text (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "es"
+    "state": "read",
+    "language": "es",
+    "reading": "r9873_reading.md",
+    "translation": "r9873_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r9873_reading.md: the letter written out as continuous Spanish in its 1524 spelling from the working decode r9873_cipher.txt (key passes 1-17 plus the b23 values gal, hog, reb, dis, cer, lar, sur/luc, tt, gul, nuf, qu, gom/lo/ror, kaz; sense-only ones flagged in texts/r9873-r9898_reread_log.md), every word aligned with the decode or the clear text (research/reading_audit/b23_sessa_align.py: 0 uncarried). Clean sentences 0.715 counting explicit holes (b17_score HOLES=1), 0.399 plain (the es word list lacks the period spelling); holes are open code groups and tentative values. The sentences hold through ff. 80v-82v, 83v-84r and the postscript and agree topic by topic with CSP Spain ii 636; f. 83r ll. 19-25 does not hold. No contemporary decipherment of this copy is in reach (the triplicate and Goicoechea's reading are not imaged)."
+    }
    },
    {
     "doc": "r9898",
+    "note": "b23 re-read (23 Oct 2026): r9898_reading.md writes the letter out as continuous Spanish from the working decode, the six marginal decipherments followed where they stand, every unbracketed word aligned with the decode (b23_sessa_align.py). It scores 0.47 clean sentences counting explicit holes (0.273 plain), below the bar: the margin runs, the clear passages and ff. 151v-152r read, but the bleed-through pages (ff. 150v-151r, 155v) and most of ff. 152v-154r give spelled runs that make no word in nearly every sentence and some 140 code groups seen once. Pooling with R9873, R9899 (new sibling, one margin), f. 128 and R9660 closed none of them. Blockers: illegible (bleed-through; no gain at 1.5x/2x, DECODE's scans the only image) and no-key-material (single-context groups with no deciphered occurrence).",
     "label": "R9898, Rome, 24 Feb 1525 (RAH Salazar A-34 ff. 150-156)",
     "transcription": "r9898_cipher.txt",
     "decryption": [
@@ -389,9 +399,9 @@
      "read_r9898.md"
     ],
     "summary": "Sessa to Charles V, written on the day of Pavia, before the news: Italy, the Pope and the datary's attempt to bring the Duke over to the French; six runs carry a marginal decipherment of the time, the rest is read here with the key. Not calendared in CSP iii.1.",
-    "note": "r9898_cipher.txt is a line-by-line working file with open groups in most sentences (300 tokens) and 398 spelled letters without sense, the bleed-through pages a sign-level transcription; only the six runs with a marginal decipherment read as sentences (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "es"
+    "language": "es",
+    "reading": "r9898_reading.md",
+    "state": "decoded, not read"
    }
   ],
   "key_file": "key_working.md"

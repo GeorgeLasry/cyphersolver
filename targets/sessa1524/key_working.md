@@ -385,3 +385,13 @@ are transcribed as the image shows; they are clerk spellings or one wrong sign v
 Alphabetical bracketing tested: the attested values do not follow the code order (`cad` sobre, `cas` tiene, `cap` tem-,
 `cot` todo; `gap` que, `gat` esto, `gal` embia), so the code is not ordered and no bracketing applies.
 Strict figure (pass-17 values treated as open): R9873 87.8%, R9898 77.9%.
+
+## Pass b23 (23 Oct 2026: readings of R9873 and R9898; texts/r9873-r9898_reread_log.md)
+Attested: `gal` embia- (R9898 f.150r margin "se ha enbiado"), `hog` querria (R9899 f.194v margin "Su Sd. no querria
+estar de mejor animo y todos sus ministros van por el mesmo stilo"), `kaz` -mente. Adopted on sense, holding in every
+occurrence, flagged for review: `reb` dezi- (R9873 *tornado a reb-r*; R9660 *contra-reb-r-la*, *reb-en-do les*), `dis`
+servido (*sus dis-r-es* servidores; R9660 *muy dis-r de V.Md.*), `cer` teni (*cer-en-do-se*, *so-s-cer-lar*), `lar`
+miento (= `lac`), `sur`/`luc` parte, `tt` plural -s (*esa-tt*, *amigo-tt*; c/d inside words, *po-tt3-do*,
+*demostra-tt3-on*), `gul` si, `nuf` gente, `qu` o, `gom` quatro (with `lo` mill, `ror` ducado). Noted, not adopted:
+`ꝍ` read as i/j in *jamas*, *juzgan*, *dificultad*, *sobrino*, *aconsejado* (a second six-shape?); `mjn` = ha (x8) and
+Italia (x3); `yid` favo(r) (3 of 4 contexts); `hay` fails as *aunque* in R9873 f.81r.
