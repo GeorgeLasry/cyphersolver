@@ -120,10 +120,12 @@ Málaga and Governor of the Council of Castile), 1236 (9x, a conjunction), and t
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: '## Reading' headings added to texts/423-2, 4, 6, 7, 8 and 10_reading.md, whose English headers the sweep had scored with the body: bodies plain 0.619-1.0, explicit 0.857-1.0. 423/3 had only Lasry's running text (reading_423-3.txt); texts/423-3_reading.md written from the b04 decode, word-divided: plain 0.667 (3 sentences), explicit 1.0, one run of three valueless groups. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
-## Remaining gaps
-
+Closed items (moved out of Remaining gaps):
 - 423/1 (R26) - closed 23 Oct 2026: read from its contemporary clear copy (ff. 284r-286r) and the figures, six transcription figures corrected on the images
 - 423/9 "[..] danno", 423/11 "le la mede [..]" and "ben [..]giata" - closed 23 Oct 2026: cipherer's slips seen on the images; the copies read "Si danno", "l'esame de'", "bene maneggiata"
+
+## Remaining gaps
+
 - 11 nomenclator groups seen once in letters that read (1200, 1335, 1960, 1985 in 423/2; 1232, 1469, 1698, 1942 in 423/7; 1636 in 423/8) - blocker: needs-physical-access; no copy of 423/2, 7, 8 is among the DECODE attachments, the copies or minutes would have to be found in Spagna 423 itself
 - 423/1 groups 1268, 1765, 1847 - blocker: too-short; one occurrence each, the words carried by the copy
 - the minutes of these letters (Archivio della Nunziatura di Madrid) - blocker: needs-physical-access

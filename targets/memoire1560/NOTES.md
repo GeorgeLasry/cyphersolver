@@ -1,6 +1,6 @@
 # Mémoire en chiffre du XIIe décembre 1560: BnF fr. 3157 no. 67
 
-Status: read (98.9% of cipher words; key broken here, ciphertext only)
+Status: read in part (24 Oct 2026: the second reading measures under 95% of words read as sense on the per-document bar; 98.9% of cipher words were measured earlier on cipher words only; key broken here, ciphertext only)
 
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2023 (improved Feb 2026) but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
@@ -133,10 +133,7 @@ the reading that is scored.
 
 ## Remaining gaps
 
-- 16 scattered words (of 1,715), each tried against the image and the key, context not decisive: 152r.16 (x),
-  152r.26 (mx on), 152v.06 (Q+), 152v.26 (3xzo fxz), 153r.31 (Wzoxedn), 154v.03 (WxmJn), 154v.24 (C+ DzoSx3),
-  155r.29 (x+ S), 155v.16 (mixppxrQxppxm), 155v.17 (3xrnnQxS), 155v.22 (S) - blocker: no-key-material; each is once,
-  and the signs are read but the word does not resolve
+- 16 scattered words (of 1,715), each tried against the image and the key, context not decisive: 152r.16 (x), 152r.26 (mx on), 152v.06 (Q+), 152v.26 (3xzo fxz), 153r.31 (Wzoxedn), 154v.03 (WxmJn), 154v.24 (C+ DzoSx3), 155r.29 (x+ S), 155v.16 (mixppxrQxppxm), 155v.17 (3xrnnQxS), 155v.22 (S) - blocker: no-key-material; each is once, and the signs are read but the word does not resolve
 - the writer's name - blocker: no-key-material; not in the text, no signature or address
 
 ## Escalation
