@@ -259,17 +259,24 @@
    "what": "Scored (b17_score.py, fr): 0.558 clean (24/43), explicit holes 0.698 (before 0.302). Opening, ll. 29-33 and the closing request do not build. Kept decoded, not read.",
    "result": "partial",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: f. 142 reading joined into running text (f142_running_reading.md): 0.167 explicit-hole, hole rate 0.167; not workable without new key material (26 pin passes already made, f. 119's b27 re-read reached 0.558). Demoted to decoded, not read; no document of the target reads, class set to not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "George Lasry's 2022 key table on cryptiana GL.htm names fr. 15564 ff. 119 and 142 among the letters it solves; it was applied sign by sign here (beam search over the homophone candidates with a 5-gram model, then line-by-line relabelling against the Gallica images), giving 95.1% of letter signs; no plaintext had been published.",
   "contribution": ["transcription", "decipherment with ambiguous key", "key extended or corrected"],
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit 22 Oct 2026: tokens in the documents that read as sentences, f. 142 = 623 of 2,484 (profile documents); f. 119 (1,861) is decoded, not read. Withdrawn as a reading figure: 0.951 = letter signs read or not doubtful, from f119_reading.txt and f142_pinned.txt ('|| total unread' per line; code groups counted separately). 23 Oct 2026 (b27): unchanged: f. 119 re-read (0.558 clean) still below the bar, so only f. 142 counts.",
-  "fraction_read": 0.251,
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens in the documents that read as sentences, f. 142 = 623 of 2,484 (profile documents); f. 119 (1,861) is decoded, not read. Withdrawn as a reading figure: 0.951 = letter signs read or not doubtful, from f119_reading.txt and f142_pinned.txt ('|| total unread' per line; code groups counted separately). 23 Oct 2026 (b27): unchanged: f. 119 re-read (0.558 clean) still below the bar, so only f. 142 counts. 23 Oct 2026, v3 verification: f. 142 demoted to decoded, not read (0.167 explicit-hole on its running text); no document reads, 0 of 2,484 tokens.",
+  "fraction_read": 0.0,
   "codes_open": {
    "open": 12,
    "total": 12,
@@ -280,6 +287,11 @@
    "historical consistency"
   ],
   "gaps": [
+   {
+    "item": "f. 142 (DECODE R4165), demoted 23 Oct 2026 (v3): ll. 00-02, 09-10 and 13 unread runs, supplied letters in most lines",
+    "blocker": "no-key-material",
+    "detail": "running text f142_running_reading.md scores 0.167 explicit-hole (2/12 sentences, hole rate 0.167); the sign-level transcription was pinned in 26 passes against the images; the open signs are homophones the context does not fix and name codes [73] Lasry's table leaves unidentified; no decipherment or clear copy exists"
+   },
    {
     "item": "f. 119 unread runs of ll. 00-03, 05, 12, 25, 29-30, 33-34, 37-38 (the letter stays decoded, not read)",
     "blocker": "no-key-material",
@@ -302,7 +314,7 @@
   ],
   "texts": [
    {"doc": "f119", "note": "Re-read 23 Oct 2026 (b27): DECODE R4162 holds only images (Gallica views 132-133 and four strips; no attachment); no decipherment in print or by Lasry beyond his key. Reading rebuilt word by word across lines from the sign labels and candidate values (texts/f119_reading.md, English texts/f119_en.md): 'je croy certainement', 'lesquels les leve pour nous', 'ce qu'ils pourront, je vous diray que je craigs trop plus les traistres que les ennemis', 'il ne se peult ni ne se doibt', 'nos amys', 'tels subiects'. 0.558 clean (24/43), explicit holes 0.698; the opening (ll. 00-03), ll. 29-33 and the closing request do not build. The group fbn reads JE by sense in 9 of 10 places (not l. 22): not adopted, shown [?je], flagged for review. Blocker: no-key-material (homophone and nomenclator choices the context does not fix; name codes in Lasry's Unknown row).", "label": "f. 119 (DECODE R4162), 27 May 1587", "transcription": "f119_glyphs.txt", "decryption": "f119_reading.txt", "summary": "The writer (Guise?) tells Mercœur the levy of reiters is assured: by August two thousand Italian or Albanian lances and four thousand reiters; his secretary has gone to colonel Pfyffer with twelve thousand écus to treat for nine thousand Swiss; the heretics' army (eight thousand reiters, twelve thousand Swiss, lansquenets, four thousand arquebusiers for Châtillon) must be defeated, sparing nothing for the glory of God and the cause.", "language": "fr", "state": "decoded, not read", "reading": "texts/f119_reading.md", "translation": "texts/f119_en.md"},
-   {"doc": "f142", "label": "f. 142 (DECODE R4165), 20 June 1587", "transcription": "f142_pinned.txt", "decryption": "f142_reading.txt", "summary": "After clear news of Lunebourg with nine thousand horse on the Rhine by 20 July, the cipher says the levy that was to be so far advanced is not, the thousand lances and four thousand reiters are \"ung instable secours\", hasty resolutions force the party to order its affairs less securely than its first designs, and within five or six days the writer hopes to settle the matter with [73], the forces going to find it at Meaux.", "language": "fr", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "f142_reading.txt read line by line: ll. 01-15 build French sentences (the levy of a thousand lances and four thousand reiters an unstable help, resolutions taken in haste, going to find [73] at Meaux, closing) with scattered [?] signs and one name code; only l. 00 is a fragment. Audit grade C refined: the C came from f. 119."}}
+   {"doc": "f142", "label": "f. 142 (DECODE R4165), 20 June 1587", "transcription": "f142_pinned.txt", "decryption": "f142_reading.txt", "summary": "After clear news of Lunebourg with nine thousand horse on the Rhine by 20 July, the cipher says the levy that was to be so far advanced is not, the thousand lances and four thousand reiters are \"ung instable secours\", hasty resolutions force the party to order its affairs less securely than its first designs, and within five or six days the writer hopes to settle the matter with [73], the forces going to find it at Meaux.", "language": "fr", "note": "v3 verification 23 Oct 2026: f142_reading.txt joined into running text (f142_running_reading.md, line numbers and sign counts left out) scores 0.167 explicit-hole (2/12 sentences, hole rate 0.167): unread signs [?], supplied letters (est[é], tousiou[r]s, seurete[z], [n]os) and name code [73] fall in nearly every sentence; ll. 00-02, 09-10 and 13 do not build. The middle (the levy an unstable help, resolutions in haste, Meaux) reads. No contemporary decipherment; Lasry's table is the only key.", "state": "decoded, not read"}
   ],
   "key_file": "key.md"
  }

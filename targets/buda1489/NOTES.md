@@ -136,14 +136,30 @@ Somogyi's numbers and of 267 with the clear extract 268 gives glyph → value.
 The Vestigia record of 2831 (`vestigia/doc2831.json`, `archive_ref`) gives **Sforzesco, Potenze estere, Ungheria,
 cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. profile.json corrected.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+- **R1098 keeps read, re-read.** `r1098_reading.md` scored 0.545 explicit-hole on its body (holes in ll. 5, 6, 9,
+  10). Lines 5-10 re-read sign by sign from native crops of IMG_R1098_I5648_P1 with the original key R5411 (n with a
+  long crossbar = tt, reversed d = l, crossed b = fa, 7 = f, 3 with tail = r, looped d = s, n# = ss, z-stroke = e) and
+  aligned with the contemporary decipherment printed in MDE IV no. 91 (print search of 9 Oct, main-checkout
+  `mde4_no91.txt`): "Tu[ln?]a" is "tutti li lochi ove ha facto edificare", "co[si]" "siamo", the gap in l. 9 "Sua
+  Maiesta mi fece", l. 10 "perche lei voleva andare spassando". New file `r1098_v3_reading.md` (with English),
+  corrections `trans/r1098p1_v3_corrections.tsv`: 0.917 explicit-hole, 0.75 plain. The key's o+ (Imperatore) after
+  "facto" has no word in the print and stays [...].
+- **V2831 read part demoted.** p. 1, p. 2 ll. 1-16 and the p. 4 cipher lines score 0.519 explicit-hole on their
+  numbered lines (p. 1 ll. 1-15 0.562, ll. 16-29 0.375, p. 2 ll. 1-16 0.619); no print or contemporary copy exists. Now
+  decoded, not read; the partial reading stays in `v2831_reading.md`. Next step: the R5411 re-read of these pages.
+- fraction_read 0.56 -> 0.099 (R1098's 10 of 101 cipher lines), estimated.
+
 ## Remaining gaps
+- 2831 p. 1, p. 2 ll. 1-16 and the p. 4 cipher lines (demoted 23 Oct 2026, v3: 0.519 explicit-hole) - blocker: not-attempted; the original key R5411 has not been applied to these pages; a sign-by-sign re-read from the plates with key_R5411.md, as b25 did for p. 2 ll. 17-30 and p. 3, is the next step
 - 2831 p. 2 ll. 19, 21, 23-30 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31: legible groups not yet segmented into words (re-read 23 Oct 2026 with the original key R5411, two passes) - blocker: not-attempted; a third pass with key_R5411.md is worthwhile
 Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
 and R1158 are other ciphers and are not part of this reading.
 - 2831 p. 3 l. 15, signs under an ink blot - blocker: illegible
 - 2831 p. 1 ll. 21–26, last words of each line - blocker: illegible; stain at the right edge, no other image (DECODE and Vestigia serve the same negative)
 - signs in the torn columns of R5411 (x, y, z, &, part of t), r-ring on p. 3 l. 15, and the o-form (b by the key, t in most words) - blocker: no-key-material; R5411 is torn at the upper right
-- R1098 ll. 5, 6 and 9 - blocker: not-attempted; the MDE IV no. 91 extract gives the text (main checkout NOTES, 9 Oct 2026), not re-aligned here
+- closed 23 Oct 2026 (v3): R1098 ll. 5, 6 and 9, re-read with R5411 and aligned with MDE IV no. 91 (`r1098_v3_reading.md`)
 - share of cipher signs read - blocker: not-attempted; never measured; p. 2-3 sign strings now in trans/v2831p2_b25.md and v2831p3_b25.md
 
 ## Escalation
@@ -152,4 +168,4 @@ and R1158 are other ciphers and are not part of this reading.
 - [x] known-keys: Somogyi's 2016 key used first; 23 Oct 2026 the original key found, ASMi Sforzesco cart. 1597 no. 111 (DECODE R5411, key_R5411.md), and used for p. 2 ll. 17-30 and p. 3; the abbot of Forlì's cipher (R1146/R1147) is a different system
 - [x] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, MDE IV (1878): R1098 is printed as no. 91 (contemporary extract), 2831 is not in it (search of 9 Oct 2026 recorded in the main checkout's uncommitted NOTES); Vestigia 2831 lists no publication
 - [x] key-rebuild: about twenty sign values beyond Somogyi's table recovered from the unread letters by single-word cribs (7 = f, n+crossed 4 = ss, x' = do, a: = gli, q^o = re, b^a = na)
-- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); R1098 ll. 5, 6, 9 not re-run here
+- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; V2831 p. 1-2 not yet re-run with R5411

@@ -52,6 +52,12 @@ group with every gloss it carries.
   62 as a null (`62.308... = la discorde`, `62.204... = de l'un des`, `128.445.62 = aisée`).
 - No gloss contradicts another occurrence of its group (`tables.py`: 74 groups, 57 distinct, 0 unglossed).
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored letter A on `letter_A_1697.txt` at 0.5: the [groups = gloss] notation is read as supplied words. The
+running text with each code run replaced by the contemporary interlinear gloss is `letter_A_reading.md`
+(`research/reading_audit/v3a_ilten.py`): 1.0 explicit-hole, plain 0.75. Keeps read.
+
 ## Remaining gaps
 
 None: all 74 groups carry a gloss.

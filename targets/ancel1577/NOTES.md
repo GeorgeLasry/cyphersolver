@@ -117,6 +117,17 @@ sent by Don John, has waited three weeks for leave to levy troops; Borgia says t
 earnest, as the Catholic King will defend his right; the Estates will hardly grant extraordinary aid. 21 Dec:
 Varambon back from Archduke Charles's court with nothing; the Emperor waits for the King of Spain's [Juno] answer.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored the four letters on `contributed/READING.en.md` (the table with the key output and the reading side
+by side, 0.178) or on the raw key output (p539, 0.2): a false alarm. The reading column is now in running text per
+letter in `texts/<doc>_reading.md` (`research/reading_audit/v3a_ancel_write.py`: hyphenated line ends joined, the
+probable nulls of OPEN.en.md section 3 dropped, saturnus/Juno/my/my3/my3θ written as resolved codes since margin
+decipherments confirm them, other code words left as holes, the contributor's parenthesised letters bracketed as
+holes). Explicit-hole scores: p525-526 0.857, p539 0.75, p561-563 0.75, p565 0.75 (plain 0.79, 0.75, 0.68, 0.58).
+All four keep read; the profile entries now point `reading` at these files. Still unchecked by a human against the
+images (OPEN.en.md section 5), as before.
+
 ## Remaining gaps
 - Transcription of all seven pages not checked by a person (AI transcription and AI adjudication only; 3 of 125 lines spot-checked here) - blocker: open-codes; workable: an eye check of the transcription against the 2400 px images, starting with the 29 lines marked △
 - Code words manua/manue, mare, grinter, totum, nez/mez, bel, mim, vost, mesme, and probable nulls (fec, sec, sanc, sane, pome, estre, toe, vib, roc, ar, puis, x) - blocker: open-codes; meanings need further instances in the margin-deciphered letters of the volume (pp. 33-501)

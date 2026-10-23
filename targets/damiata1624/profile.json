@@ -184,7 +184,8 @@
    "result": "worked",
    "date": "2026-09-21"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions r59/r60/r61_digits.txt; the interlinear decipherments copied verbatim from NOTES.md into texts/R59-R61_decryption.md; R60's gloss is transcribed only in part (rest on the image) and R61's letter-sign line is untranscribed.", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions r59/r60/r61_digits.txt; the interlinear decipherments copied verbatim from NOTES.md into texts/R59-R61_decryption.md; R60's gloss is transcribed only in part (rest on the image) and R61's letter-sign line is untranscribed.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: R59 scored as Latin on its decryption file with figure strings (0.5). The three glossed passages written out in texts/R59_reading.md (Italian): 1.0 explicit-hole and plain. Language set to it; keeps read.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -208,7 +209,16 @@
     "label": "R59, Naro, Paris 14 Apr 1625",
     "transcription": "r59_digits.txt",
     "decryption": "texts/R59_decryption.md",
-    "summary": "Bernardino Naro, Paris 14 April 1625, to the Secretariat of State: Richelieu, the Aldobrandini precedent and lodging for the coming legate; the three cipher passages (the General of the galleys, procuring the ordinary embassy at Rome, the Cardinal of Lyon will oppose it) carry the contemporary decipherment above them."
+    "summary": "Bernardino Naro, Paris 14 April 1625, to the Secretariat of State: Richelieu, the Aldobrandini precedent and lodging for the coming legate; the three cipher passages (the General of the galleys, procuring the ordinary embassy at Rome, the Cardinal of Lyon will oppose it) carry the contemporary decipherment above them.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the sweep scored texts/R59_decryption.md as Latin (no language on the entry; 0.5 explicit-hole on 74 words of header and figure strings), a false alarm. The three passages are Italian and carry their contemporary decipherment, checked against the Biermann-Bosbach key; written out in texts/R59_reading.md: 1.0 explicit-hole and plain (3/3). Short runs inside a clear letter whose clear text is not transcribed."
+    },
+    "reading": "texts/R59_reading.md",
+    "language": "it",
+    "state": "read"
    },
    {
     "doc": "R60",

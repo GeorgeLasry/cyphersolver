@@ -246,6 +246,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Dudout's reading (reading.txt) on the project's transcriptions ct_sept_v2/ct_nov_v2; George Lasry's CTTS transcriptions, decryptions and edited texts (lasry2022/ctts/) for 10 Nov and the additional document b1/b2 as separate entries; the Codex edition reading_fr.txt with translation_en.txt as a separate entry; key_file Lasry's CTTS key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: 15sept1610 and 10nov1610 were scored on the two-passage reading.txt (0.0) and Lasry's 3_edits.txt (0.5, line labels and ellipses). Each passage written out as its whole sentence (15sept1610_reading.md, 10nov1610_reading.md, 10nov1610_lasry_reading.md): explicit-hole 0.75, 1.0, 1.0. All three keep read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -338,14 +345,30 @@
     "label": "15 Sept 1610, f. 17r (R2075), Brice Dudout's reading",
     "transcription": "ct_sept_v2.txt",
     "decryption": "reading.txt",
-    "summary": "Marie de Médicis to Brèves, two ciphered passages on Savoy's son's journey to Spain: their persistence in raising difficulties \"will show too plainly their malice and ambition\", which she judges would be \"accompanied by imprudence and weakness\" given the present state of their affairs. Deciphered by Brice Dudout with the Henri IV-Brèves key (BnF fr. 3462 view 112) and checked sign by sign here (alignment.tsv)."
+    "summary": "Marie de Médicis to Brèves, two ciphered passages on Savoy's son's journey to Spain: their persistence in raising difficulties \"will show too plainly their malice and ambition\", which she judges would be \"accompanied by imprudence and weakness\" given the present state of their affairs. Deciphered by Brice Dudout with the Henri IV-Brèves key (BnF fr. 3462 view 112) and checked sign by sign here (alignment.tsv).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the sweep scored reading.txt as a whole (both passages, clear text in braces, comment lines; 0.0 on 32 words), a false alarm. The 15 Sept sentence written out whole in 15sept1610_reading.md (clear words of the letter around the cipher, Brice Dudout's brackets kept as holes): 0.75 explicit-hole and plain (3/4 sentences, hole rate 0.045). Rests on Dudout's decipherment checked sign by sign (alignment.tsv)."
+    },
+    "reading": "15sept1610_reading.md",
+    "state": "read"
    },
    {
     "doc": "10nov1610",
     "label": "10 Nov 1610, f. 19r (R2076), Brice Dudout's reading",
     "transcription": "ct_nov_v2.txt",
     "decryption": "reading.txt",
-    "summary": "In mid-sentence, on Savoy's disarmament after Henri IV's death and Spain's refusal: \"the pope, recognising their arrogance and sensing his own timidity\", would not press Spain to the point of disarmament only to receive the shame of a flat refusal. Brice Dudout's reading, checked sign by sign here (alignment.tsv)."
+    "summary": "In mid-sentence, on Savoy's disarmament after Henri IV's death and Spain's refusal: \"the pope, recognising their arrogance and sensing his own timidity\", would not press Spain to the point of disarmament only to receive the shame of a flat refusal. Brice Dudout's reading, checked sign by sign here (alignment.tsv).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: scored on the two-passage reading.txt (0.0), a false alarm. The 10 Nov sentence written out whole in 10nov1610_reading.md: 1.0 explicit-hole (3/3, hole rate 0.062), plain 0.333 (1610 unaccented spellings arogance, timidite). Rests on Dudout's decipherment checked sign by sign; Lasry's CTTS decipherment agrees."
+    },
+    "reading": "10nov1610_reading.md",
+    "state": "read"
    },
    {
     "doc": "10nov1610",
@@ -355,7 +378,15 @@
      "lasry2022/ctts/decryption/3.txt",
      "lasry2022/ctts/edited/3_edits.txt"
     ],
-    "summary": "George Lasry's CTTS decipherment of the same passage (2022, improved with Opus 5.5 in Oct 2026, PR #61): mechanical CTTS decryption and his edited text. It agrees with Dudout's reading word for word and shows the second s of recognoissant as the key's repeat sign."
+    "summary": "George Lasry's CTTS decipherment of the same passage (2022, improved with Opus 5.5 in Oct 2026, PR #61): mechanical CTTS decryption and his edited text. It agrees with Dudout's reading word for word and shows the second s of recognoissant as the key's repeat sign.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: 3_edits.txt scored 0.5 because of Lasry's line labels and the two '…' marking that the excerpt starts and ends inside the letter. Joined into running text in 10nov1610_lasry_reading.md: 1.0 explicit-hole and plain (23 words). Agrees with Dudout's reading (Sa Sainteté = nomenclator 4, le pape)."
+    },
+    "reading": "10nov1610_lasry_reading.md",
+    "state": "read"
    },
    {
     "doc": "lasry-additional",

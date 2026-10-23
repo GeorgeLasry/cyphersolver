@@ -144,6 +144,13 @@ model writes Don Quijote over the uncertain tiles (*don quiiote que el que*). Th
 cluster-hybrid, tiling) agree on the same two thirds and disagree on the same third. The limit is the sign shapes at
 this resolution, not the method.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored Brackx's reading (entry 1) on `texts/no95_decryption_brackx.md`, header and line-numbered,
+hyphen-split lines included (0.44). His lines joined into running text, nothing else changed, in
+`texts/no95_brackx_reading.md`: 0.765 explicit-hole (13/17 sentences) with every unread code group and burn hole as a
+hole; plain 0.235 (1501 spelling). Keeps read.
+
 ## Remaining gaps
 
 - five name code groups (dcl, dah, dal, dnl, boo; Name1-Name5 in Lasry's key), one occurrence each - blocker: open-codes; no other letter in this key is known, context suggests persons but does not name them

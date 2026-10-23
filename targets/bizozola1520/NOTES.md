@@ -84,6 +84,17 @@ what the text forces):
 
 The doubtful lines were re-cut at double scale and re-read sign by sign. Resolved: f. 156r l. 2 (e de qui averete intese), l. 4 (li suoi negoci con lo imperatore), l. 10 (sopra il ducato di Milano), l. 11 (il duca Francesco negociava); f. 156v ll. 1-2 (l'arciepiscopo di Baro: meglio io seria darlo al duca Maximiliano, che di ragione li viene); f. 157r l. 7 (ho trovato misere Alesandro Attavante), l. 8 (il spenditore); f. 157v ll. 3-4 (qualche preposto con misere Iacobo Salviati). "al i sandro" on f. 156r and "alatauante" on f. 157r are the same Alessandro Attavante. The doubtful stretches that remain are listed in `doubtful.txt`; fraction_read counts them as unread: 54 of 1907 signs, 97.2% read.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored `reading_raw.txt`, the raw line-by-line decode (0.476 explicit-hole, 0.071 plain). The
+word-divided reading the 22 Oct note asked for is now written: `texts/f156_reading.md`. The key's homophones are
+resolved by sense (ʒ = a and u/v, long s = f and s); words that need the other member of the tall/small cross pair
+(p where e is wanted, about seven letters) are [?word]; the `doubtful.txt` stretches are [...]; the writer's spelling
+is kept (soui, nigoci, regonamento, Cessero = Cesare). Score: 0.811 explicit-hole (30/37 sentences), plain 0.459;
+the unknown words are the writer's Lombard spellings and the names, not noise. The weakest passage is f. 157r on
+misere Iulio ("sifione", "mali ere", "dongari"). Keeps read; the profile entry points `reading` at the new file. An
+English translation is still to be written.
+
 ## Remaining gaps
 
 - f. 157v ll. 9-10, the date numerals after "Bologna quatro del" (two words and three Lasry-unknown signs before "novembre") - blocker: too-short; the signs occur nowhere else in the letter.

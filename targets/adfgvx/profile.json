@@ -176,6 +176,13 @@
    "technique": ["simulated annealing", "language-model scoring"],
    "what": "VGADA residual search with the three length-22 keys and two free edits (gaps.py anneal, 6 restarts) before Norbert's edits were applied: noise (-7.4 per letter); his group insertions at the marked gap and after group 43 are what make it decrypt.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: residue22 entry scored on its table file (0.188); the nine full readings extracted to texts/residue22_reading.md and rescored with v2_score.py: 0.87 explicit-hole (plain 0.565). Keeps read; reading field added.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -300,12 +307,13 @@
     "summary": "German ADFGVX radio messages of November 1918 from James Rives Childs's transcription, listed as unsolved by George Lasry on Schmeh's blog in 2017. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; ten messages remain unread.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "The nine full readings are German telegrams in capitals with X as stop (the 2017 Cipherbrain readers'); each builds sentences and translates, e.g. p. 171 \"In Ukraine und Polen Rubelkurse stark steigend infolge Bruches zwischen Deutschland und Sowjetregierung\". The per-document audit graded the whole table C because the other thirteen messages are in the same file; they are now a separate entry."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the sweep scored texts/residue22_decryption.md, the table of all 22 messages with the thirteen open/partial rows (explicit-hole 0.188), a false alarm. The nine messages read in full, extracted verbatim to texts/residue22_reading.md (X rendered as a stop), score 0.87 on the explicit-hole measure (20/23 sentences; plain 0.565, telegraphic abbreviations and numbers). Rests on the 2017 Cipherbrain readers' decryptions (Armin, Norbert, Lasry)."
     },
     "language": "de",
-    "state": "read"
+    "state": "read",
+    "reading": "texts/residue22_reading.md"
    },
    {
     "doc": "residue22",

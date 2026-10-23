@@ -513,7 +513,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_segmented.txt read letter by letter and the alphabetic block's edition. ff. 12-13, 18, 23-24, 25 and the alphabetic block build German sentences with codes as name holes (kept read, reviewed B); ff. 3, 14, 15-17, 28-29 (and its duplicate 30-31) and 32-33 have open codes, bracketed letters or noise in most sentences, relabelled decoded, not read. fraction_read 0.959 (tokens in dictionary words) -> 0.436.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-22", "kind": "access", "what": "Re-read (REREAD_BRIEF, batch b08): HCPortal records 496, 502, 503, 507, 508, 509 and their 12 original scans fetched from api.hcportal.eu (browser User-Agent and Origin header; scratchpad only). No contemporary decipherment on any leaf or address side, no clear copy, no edition (NOTES Escalation).", "result": "worked", "technique": ["other"]},
   {"date": "2026-10-22", "kind": "reading", "what": "Readings built sentence by sentence from the decodes with the group under each letter (b08_dec.py), the breaks checked on scan crops (b08_crop.py): HCP496/502/503/507/509_reading.md with English _en.md. ff. 28-29 read against the writer's duplicate ff. 30-31 (HCP507_corrections.tsv: uberlant, Schieffe, wider Bestellung (the \"128\" of f. 28 is a w-group), Forstenau aber, Hohendorf, den Rest, Rantzo); f. 32 extraordin<Q>re (not mm), f032_corrected.txt; the French letter of \"232\" transcribed from the scan. Signs whose value is not one letter pair (the crossed H gives ll and tt; the lone 7 gives st, ö and b) left open. Spelling normalised in part (b08_norm.py) and every reading aligned word by word with its decode (b08_align.py), which caught \"Verlusts\", \"Tractes\", \"itzigen\" and unmarked slips, all corrected or bracketed.", "result": "partial", "technique": ["manual reconstruction", "contextual inference"]},
-  {"date": "2026-10-22", "kind": "verification", "what": "Clean-sentence share of the reading bodies (b05_score.py; before = the reading_segmented.txt blocks of the document): HCPortal 496 0.333 -> 0.667 (read, B); 502 0.143 -> 0.167; 503 0.389 -> 0.375; 507 0.271 -> 0.437 (508 its duplicate); 509 0.182 -> 0.545 with the French paragraph scored as French (decoded, not read: the German extracts are not re-transcribed). fraction_read 0.436 -> 0.480.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Clean-sentence share of the reading bodies (b05_score.py; before = the reading_segmented.txt blocks of the document): HCPortal 496 0.333 -> 0.667 (read, B); 502 0.143 -> 0.167; 503 0.389 -> 0.375; 507 0.271 -> 0.437 (508 its duplicate); 509 0.182 -> 0.545 with the French paragraph scored as French (decoded, not read: the German extracts are not re-transcribed). fraction_read 0.436 -> 0.480.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: HCPortal 497, 504, 505, 506 had been kept read on the machine segmentation reading_segmented.txt; their blocks score 0.0, 0.5, 0.5, 0.286 explicit-hole (hole rate 0.21-0.32) and are not readings. Demoted to decoded, not read; a b08-style re-read on the scans is the next step.", "result": "failed"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 9506, "types": 119, "tokens_per_type": 79.88, "score": -2.066, "nulls": {"random keys": {"n": 200, "mean": -5.639, "sd": 0.238, "max": -5.024, "z": 15.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.692, "sd": 0.031, "max": -3.662, "z": 52.7, "p": 0.1429}}, "power": -2.423, "verdict": "pass", "notes": "claimed per-occurrence score -2.073; polyphony 0.0; 230 unread tokens left out; annealer on the real text from random keys reached -2.423"}, 
   "class": "read in part",
@@ -542,9 +543,9 @@
    }
   ],
   "first_break": true,
-  "fraction_read": 0.48,
+  "fraction_read": 0.094,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences (profile documents, duplicate HCPortal 508 excluded): 497 (712) + the alphabetic block (510) + 504 (639) + 505 (2,015) + 506 (592) = 4,468 of 10,246; 496, 502, 503, 507 and 509 are decoded, not read. Withdrawn as a reading figure: 0.959 = measure.py over reading_segmented.txt, 9,736 cipher tokens of the numerical letters, a token read when all its letters fall in dictionary words; 193 open code/sign tokens unread; alphabetic block excluded. Re-read 22 Oct 2026 (batch b08): HCPortal 496 (455 tokens) now reads; 4,923 of 10,246 = 0.480. 502, 503, 507 (508 its duplicate) and 509 stay decoded, not read.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences (profile documents, duplicate HCPortal 508 excluded): 497 (712) + the alphabetic block (510) + 504 (639) + 505 (2,015) + 506 (592) = 4,468 of 10,246; 496, 502, 503, 507 and 509 are decoded, not read. Withdrawn as a reading figure: 0.959 = measure.py over reading_segmented.txt, 9,736 cipher tokens of the numerical letters, a token read when all its letters fall in dictionary words; 193 open code/sign tokens unread; alphabetic block excluded. Re-read 22 Oct 2026 (batch b08): HCPortal 496 (455 tokens) now reads; 4,923 of 10,246 = 0.480. 502, 503, 507 (508 its duplicate) and 509 stay decoded, not read. 23 Oct 2026, v3 verification: 497 (712), 504 (639), 505 (2,015), 506 (592) demoted to decoded, not read (machine segmentation only); 496 (455) + the alphabetic block (510) = 965 of 10,246 = 0.094.",
   "codes_open": {
    "open": 40,
    "total": 45,
@@ -591,6 +592,11 @@
     "item": "HCPortal 509: the German news extracts (lower f. 32, f. 33) in the second hand",
     "blocker": "not-attempted",
     "detail": "the clear text between the cipher runs was not re-transcribed on the scan (22 Oct 2026); the French letter of \"232\" on the same leaf is read (HCP509_reading.md)"
+   },
+   {
+    "item": "HCPortal 497 (ff. 12-13), 504 (f. 18), 505 (ff. 23-24), 506 (f. 25): demoted 23 Oct 2026 (v3); their only text is the machine segmentation in reading_segmented.txt",
+    "blocker": "not-attempted",
+    "detail": "explicit-hole 0.0, 0.5, 0.5, 0.286 on their blocks (hole rate 0.21-0.32: broken word division, bracketed letters, open codes); no sentence-by-sentence reading on the scans has been made for them, as batch b08 did for 496/502/503/507/509; next step: the same re-read"
    }
   ],
   "notes": "Numerical work and its original measured result remain credited to Daniel Bourdeau. Alphabetic contribution by Larry Beck with ChatGPT; separate AI passes are not human paleographic validation. Overall fraction and code totals are unknown because the distinct systems are not combined. Original numerical first-break status was reported true; priority of the contributed alphabetic result was not independently established. Melander is a documentary lead, not an identified code. Full alphabetic key behavior is recovered, while code values and source readings keep the overall key and text partial. fraction_read, codes_open and first_break are the numerical cipher's original measured values, restored on merge; the alphabetic block is carried in parts.",
@@ -620,18 +626,12 @@
    {
     "doc": "HCPortal 497",
     "label": "ff. 12-13, Wesel, 7/17 Jan 1637",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f012-f013: once the broken word division is closed up the German builds sentences (ich weis nun nicht, wie ich den Weg anstellen [soll] ... ob ich alleine zu ... soll erst erwarten, dan durch Friesslant mitt Wagen und Pferden zugehen ist unmoglich) with open codes as name holes, about one per sentence."},
     "language": "de",
-    "transcription": [
-     "ct/hcp497.txt",
-     "f012.txt",
-     "f013.txt"
-    ],
-    "decryption": [
-     "reading_segmented.txt",
-     "work/reading_auto.txt"
-    ],
-    "summary": "From Wesel: he does not know whether to go to <148> or to the army; the recruits and Dalwig's Verehrungsgelder, Eberstein's regiment, and the impossibility of travelling through Friesland with wagons and horses; word that it was decided at Regensburg to give the envoys to <128 Cöln> no safe-conduct, and of talks apart at <130 Hamburg> or Lübeck. Block 'work/f012.txt' of reading_segmented.txt."
+    "transcription": ["ct/hcp497.txt", "f012.txt", "f013.txt"],
+    "decryption": ["reading_segmented.txt", "work/reading_auto.txt"],
+    "summary": "From Wesel: he does not know whether to go to <148> or to the army; the recruits and Dalwig's Verehrungsgelder, Eberstein's regiment, and the impossibility of travelling through Friesland with wagons and horses; word that it was decided at Regensburg to give the envoys to <128 Cöln> no safe-conduct, and of talks apart at <130 Hamburg> or Lübeck. Block 'work/f012.txt' of reading_segmented.txt.",
+    "note": "v3 verification 23 Oct 2026: the entry's only text is the machine-segmented block work/f012-f013 of reading_segmented.txt (dictionary word division with breaks, bracketed letters, <nnn> codes), not a reading; scored alone it gives 0.0 explicit-hole (hole rate 0.318). No sentence-by-sentence reading was built for it (batch b08 did that for the sibling letters, of which only 496 passed). Decoded, not read.",
+    "state": "decoded, not read"
    },
    {
     "doc": "HCPortal 497, letter block",
@@ -688,45 +688,32 @@
    {
     "doc": "HCPortal 504",
     "label": "f. 18, 14/24 Feb 1637",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f018: the frozen and crippled cavalry, the dead, the new recruits, the obligation for the Hermanstein journey; builds sentences with broken word division and a few codes."},
     "language": "de",
-    "transcription": [
-     "ct/hcp504.txt",
-     "f018.txt"
-    ],
-    "decryption": [
-     "reading_segmented.txt"
-    ],
-    "summary": "Some of the <212> are so frozen that several have become cripples; the obligation over the loss before Hermannstein; the new recruiters. Block 'work/f018.txt' of reading_segmented.txt."
+    "transcription": ["ct/hcp504.txt", "f018.txt"],
+    "decryption": ["reading_segmented.txt"],
+    "summary": "Some of the <212> are so frozen that several have become cripples; the obligation over the loss before Hermannstein; the new recruiters. Block 'work/f018.txt' of reading_segmented.txt.",
+    "note": "v3 verification 23 Oct 2026: the entry's only text is the machine-segmented block work/f018 of reading_segmented.txt (dictionary word division with breaks, bracketed letters, <nnn> codes), not a reading; scored alone it gives 0.5 explicit-hole (hole rate 0.319). No sentence-by-sentence reading was built for it (batch b08 did that for the sibling letters, of which only 496 passed). Decoded, not read.",
+    "state": "decoded, not read"
    },
    {
     "doc": "HCPortal 505",
     "label": "ff. 23-24, 7/17 Feb 1637",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f023-f024: f023 reads as continuous argument (the dispute whether Hermanstein was effectivement provisioned, the Felshaber's bond, paying the carters and freeing the prisoners); f024 has more codes but its sentences build (a separate peace with the imperial commissaries; how to leave French service without harm)."},
     "language": "de",
-    "transcription": [
-     "ct/hcp505.txt",
-     "f023.txt",
-     "f024.txt"
-    ],
-    "decryption": [
-     "reading_segmented.txt"
-    ],
-    "summary": "The dispute over whether Hermannstein was effectively provisioned; ransom and gifts for the commanders; the finding that 'we have dealt with a Frenchman'; peace talks in Picardy with nobody sent to <128>; a separate peace with the imperial commissioners; the garrisons ruined. Blocks 'work/f023.txt' and 'work/f024.txt' of reading_segmented.txt."
+    "transcription": ["ct/hcp505.txt", "f023.txt", "f024.txt"],
+    "decryption": ["reading_segmented.txt"],
+    "summary": "The dispute over whether Hermannstein was effectively provisioned; ransom and gifts for the commanders; the finding that 'we have dealt with a Frenchman'; peace talks in Picardy with nobody sent to <128>; a separate peace with the imperial commissioners; the garrisons ruined. Blocks 'work/f023.txt' and 'work/f024.txt' of reading_segmented.txt.",
+    "note": "v3 verification 23 Oct 2026: the entry's only text is the machine-segmented block work/f023-f024 of reading_segmented.txt (dictionary word division with breaks, bracketed letters, <nnn> codes), not a reading; scored alone it gives 0.5 explicit-hole (hole rate 0.206). No sentence-by-sentence reading was built for it (batch b08 did that for the sibling letters, of which only 496 passed). Decoded, not read.",
+    "state": "decoded, not read"
    },
    {
     "doc": "HCPortal 506",
     "label": "f. 25, 5 Mar / 23 Feb 1637",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_segmented.txt f025: [120] resolved to content the carters, but not the costs for the prisoners; his brother; his private affairs. Codes and broken division, but the sentences build."},
     "language": "de",
-    "transcription": [
-     "ct/hcp506.txt",
-     "f025.txt"
-    ],
-    "decryption": [
-     "reading_segmented.txt"
-    ],
-    "summary": "<120> has resolved to content the Reuter; ransom for prisoners; letters of exchange. Block 'work/f025.txt' of reading_segmented.txt."
+    "transcription": ["ct/hcp506.txt", "f025.txt"],
+    "decryption": ["reading_segmented.txt"],
+    "summary": "<120> has resolved to content the Reuter; ransom for prisoners; letters of exchange. Block 'work/f025.txt' of reading_segmented.txt.",
+    "note": "v3 verification 23 Oct 2026: the entry's only text is the machine-segmented block work/f025 of reading_segmented.txt (dictionary word division with breaks, bracketed letters, <nnn> codes), not a reading; scored alone it gives 0.286 explicit-hole (hole rate 0.247). No sentence-by-sentence reading was built for it (batch b08 did that for the sibling letters, of which only 496 passed). Decoded, not read.",
+    "state": "decoded, not read"
    },
    {
     "doc": "HCPortal 507",

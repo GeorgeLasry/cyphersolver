@@ -145,6 +145,13 @@ Paris legation series or the Segreteria's cipher office papers). Failing that, a
 166 (15 more records, 51 pp., same box, same sender, probably the same code) would roughly quadruple the text,
 still short of what a ciphertext-only attack on this code size needs.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored R9571 on `transcripts/R9571.txt`, where the code-group lines are interleaved with the gloss
+(0.577): a false alarm. The contemporary interlinear decipherment (the "P:" lines) is now joined into running text in
+`transcripts/R9571_reading.md`: 1.0 explicit-hole and plain (5/5 sentences). Keeps read; the entry's `reading` points
+at it, and its stale "decoded, not read" note (left from the first audit pass) is removed.
+
 ## Remaining gaps
 
 Decoded, not read (reading audit, 22 Oct 2026; re-read 22 Oct 2026, reread_log.md): unread groups between nearly every pair of words in each; the

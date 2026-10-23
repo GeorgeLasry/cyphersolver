@@ -112,6 +112,13 @@ rerun for this addition.
 review supersedes its unconditional 265/278 and H claims. Both reviews are
 preserved verbatim, including the first review's earlier counts and judgments.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored `reading.txt` as German (the text entry had no language; 0.528 explicit-hole), a false alarm. As
+Dutch, with the line labels and the closing editorial-note lines cut, the body scores 0.872 explicit-hole (41/47
+sentences, hole rate 0.048); plain 0.0 because the Dutch word list is modern and does not know 1676 spelling. The
+entry now carries `language: nl` and `reading: june1676_reading.md` (the same text without line labels and notes) and keeps read.
+
 ## Remaining gaps
 - Twelve residual I tokens (c324, d210, e274, o211, p113, p122, s254, t218, v111, v274, w141, w204), plus g121 when gemelte is retained, and unread s439 - blocker: open-codes; context and alphabetical position do not establish these readings, and s439 lies in the sup- range
 - Unglossed siblings: inv. 249 (1676) scans 118, 218–219; inv. 250 (1677) scan 86; inv. 248 (1675) scans 190, 238–239 - blocker: open-codes; inventoried and still workable with the reconstructed key, without a complete reading claimed here

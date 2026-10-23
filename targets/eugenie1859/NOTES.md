@@ -144,6 +144,14 @@ doing wonderfully. I am writing today by post.
 - Verdict: **partly confirmed** (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.
 - Notes: 84.1% identified, 50 ?; 2 cipher pages only in part. Telegrams of 1859 were partly printed in the press (he cites L Echo saumurois 28 June 1859) - external plaintext available for f35r.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored the Lasry-tokens entry on `lasry_tokens_f9_f15_f17_f18.tsv` itself (one value per row; 0.0): the
+entry had no reading file. Lasry's values are now divided into words per folio in
+`texts/eugenie1859_f9_f18_reading.md` (letters no value carries bracketed, his "?" tokens as [?]): 0.625 explicit-hole
+(5/8 sentence windows), plain 0.5, the unknown words being the place names. ff. 9r, 17r, 18r and the first sentence
+of 15r hold; the end of 15r is a run of tokens without values. Keeps read, barely.
+
 ## Remaining gaps
 
 - Lasry's full decipherment of the eleven cipher pages, not in the repository - blocker: not-attempted; ask George Lasry for his transcription and decryption files

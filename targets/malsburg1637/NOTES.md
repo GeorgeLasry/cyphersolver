@@ -247,7 +247,17 @@ editorial labels; the normalized inherited input has 523 positions and the selec
 The alphabetic contribution does not change Bourdeau's numerical-cipher numerator or denominator. No combined
 fraction or measured coherent fraction is claimed.
 
+## 23 Oct 2026: verification 3 (explicit-hole score): 497, 504, 505, 506 demoted
+
+The four letters kept read by the 22 Oct audit (ff. 12-13, 18, 23-24, 25) have no reading file: their text is the
+machine segmentation in `reading_segmented.txt` (dictionary word division with breaks such as "nich twi eichen weg an
+stellens och", bracketed letters, <nnn> codes). Scored block by block: f012-f013 0.0, f018 0.5, f023-f024 0.5, f025
+0.286 explicit-hole (hole rate 0.21-0.32). They are now decoded, not read; the next step is the b08 method on the
+scans (sentence by sentence, breaks checked on the image), which for the five sibling letters lifted only f. 3 over
+the bar. fraction_read 0.480 -> 0.094 (f. 3 and the alphabetic block, 965 of 10,246 tokens).
+
 ## Remaining gaps
+- HCPortal 497 (ff. 12-13), 504 (f. 18), 505 (ff. 23-24), 506 (f. 25): decoded, not read since 23 Oct 2026 (v3); their only text is the machine segmentation in reading_segmented.txt (explicit-hole 0.0, 0.5, 0.5, 0.286) - blocker: not-attempted; a sentence-by-sentence re-read on the HCPortal scans, as batch b08 did for 496/502/503/507/509, is the next step
 - ff. 14, 15-16, 28-29 (with duplicate 30-31) decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375, 0.437; readings HCP502/503/507_reading.md) - blocker: no-key-material; the sentences build, but two to six open codes or signs stand in most of them; f. 14 also torn at the right edge
 - ff. 32-33 (HCPortal 509): French letter read; the German news extracts in the second hand not re-transcribed (clean share 0.545 overall) - blocker: not-attempted; transcribe the clear words of the extracts on the scan (the cipher runs are decoded in HCP509_reading.md)
 - about 40 three-digit codes and name signs (193 tokens: 120, 122, 129, 140, 148, 176, 193, 212 ... V, K, f, 4#, +, AA, GG ...) - blocker: no-key-material; mostly single occurrences, five valued from context (128, 130, 188, 253, 273, grade I)

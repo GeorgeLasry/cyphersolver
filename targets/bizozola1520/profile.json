@@ -155,6 +155,13 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): reading_raw.txt read line by line against NOTES' summary and second-pass resolutions. The letter-level slips are the key's homophones and normalise mechanically; the sentences build except in the doubtful stretches already listed. Audit grade C overturned to B; class and fraction unchanged.",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["manual reconstruction"],
+   "what": "v3 verification: reading_raw.txt (raw decode) scored 0.476 explicit-hole. Word-divided reading written from codes.txt/reading_raw.txt with homophones resolved and look-alike words marked (texts/f156_reading.md): 0.811 explicit-hole, plain 0.459 (period/Lombard spelling and names). Keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -167,12 +174,13 @@
     "summary": "Ambrogio Bizozola reports to Maximilian Sforza, then in France, that the Emperor's council has several times discussed dividing the state of Milan among the Duke of Savoy, the Marquises of Monferrato and Mantua and the Duke of Ferrara, and whether Duke Francesco would have to be satisfied. The Emperor is at the Certosa outside Bologna, with his entry the next day (Charles V entered Bologna on 5 November 1529); the letter also deals with misere Iulio, Trivulzio and Alessandro Attavante.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Overturns the per-document C. reading_raw.txt is spaced, line-by-line decoder output with the key's systematic homophone slips (a/u, e/p: \"dacato\" ducato, \"qaesta\" questa, \"rpg ione\" ragione); read through, nearly every line builds Italian sense: the council's talk of dividing Milan among Savoy, Monferrato, Mantua and Ferrara, the Archbishop of Bari's view, the Emperor at the Certosa and the cardinals riding out to him, misser Iulio's affair, Attavante and Trivulzio's spenditore. Open: the date line (157v ll. 9-10) and about 35 doubtful signs (doubtful.txt). A normalised Italian text and a translation are still to be written."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the raw line-by-line decode reading_raw.txt scored 0.476 explicit-hole (0.071 plain). Worked: the word-divided reading texts/f156_reading.md (the key's homophones a/u and f/s resolved by sense; words resting on the tall/small cross look-alike marked [?word], about 7 letters of ~1900; doubtful.txt stretches as [...]; the writer's spelling kept) scores 0.811 explicit-hole (30/37 sentences, hole rate 0.07); plain 0.459, the Italian word list missing the writer's Lombard spellings (acione, averete, fasesse, insime, nigoci, regonamento) and the names. Sentences hold except in the f. 157r passage on misere Iulio (sifione, mali ere, dongari)."
     },
     "state": "read",
-    "language": "it"
+    "language": "it",
+    "reading": "texts/f156_reading.md"
    }
   ],
   "key_file": ["tomokiyo_key.png", "texts/key.md"],

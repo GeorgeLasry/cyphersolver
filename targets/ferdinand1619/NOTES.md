@@ -136,6 +136,14 @@ Transcription, decrypt, summary and code table: `r9425/` (`transcription.txt`, `
   unser und in kurzer Zeit unser catolischer Religion und Seelen Seligkeit darab bei der Posteritet bis dahin hier
   nötig erachtet werden" (*unser* is the genitive "of us"). No key value changed.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored R9426 on `reading.txt` (0.0): the bracketed clear text counts as supplied words there. The
+joining asked for on 22 Oct is now done: `R9426_reading.md` (`research/reading_audit/v3a_ferd.py`; clear text in «»,
+flagged words in lower case, eight unresolved ones as [?word], open nomenclator groups <nnn> as holes) scores 0.644
+explicit-hole (58/90 sentences, hole rate 0.124), plain 0.311. Keeps read, marginally: the open nomenclator groups
+(<414>, <122>, <416> ...) fall in many sentences; identifying them would lift it. English translation still to do.
+
 ## Remaining gaps
 
 Each gap carries its blocker. R9426:

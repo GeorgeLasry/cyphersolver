@@ -272,6 +272,18 @@ Re-measured (measure_sense.py, threshold -3.0):
 
 Register agreement (`wainut/align_register.py`): 4,651 of 5,719 keyed groups, 0.813 (partly circular, as before).
 
+## 23 Oct 2026: verification 3 (explicit-hole score): R1072, R1074, R2067 follow the Fagel register
+
+The v3 sweep scored the keyed decodes `read/R1072.md`, `R1074.md` and `R2067.md` at 0.366, 0.538 and 0.588 on the
+explicit-hole measure (plain 0.27/0.33/0.53): below the bar. All three have their contemporary clear copy in the Fagel
+register (WAINUT's section above; the pages 5186 13R-14L and 5187 14R-15R are among those checked line by line against
+the scans), and the keyed groups stand at the register's word at 0.826/0.794/0.770 against 0.14-0.15 for shuffled
+key values, from first group to last. The readings now follow the register in the clerk's spelling:
+`read/R1072_reading.md`, `read/R1074_reading.md`, `read/R2067_reading.md` (the old keyed decodes are kept beside them).
+Scores: 1.0 explicit-hole for all three; plain 0.871, 0.967, 0.933. Notable: group 147 (key "italien") stands where the
+register names the informer "l'Angelo"; 675 (key "deux") at "Vingt". The profile entries point `reading` at the new
+files and keep read (grade A). No English files written yet for these three (summaries in the profile).
+
 ## Remaining gaps
 
 - 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker:

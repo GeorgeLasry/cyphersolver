@@ -130,6 +130,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ciphertext_A.txt (code runs) and letter_A_1697.txt (clear text with each run and its contemporary gloss).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: letter A scored 0.5 on the [groups = gloss] notation. Running text with the glosses in place (letter_A_reading.md, research/reading_audit/v3a_ilten.py): 1.0 explicit-hole, plain 0.75. Keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -170,7 +177,15 @@
     "label": "Hattorf to Ilten, Hannover, 7 Nov 1697, Ms XXIII 1245:4 ff. 212r-213r",
     "transcription": "ciphertext_A.txt",
     "decryption": "letter_A_1697.txt",
-    "summary": "Hattorf writes that the Elector thinks it would help his affairs to sow discord between Kolbe (Wartenberg) and Barfus at Berlin and win one of them, perhaps through Kolbe's wife, with whom Ilten is said to stand very well; Hattorf doubts it will be so easy. The decryption is the contemporary interlinear gloss, transcribed with the clear text."
+    "summary": "Hattorf writes that the Elector thinks it would help his affairs to sow discord between Kolbe (Wartenberg) and Barfus at Berlin and win one of them, perhaps through Kolbe's wife, with whom Ilten is said to stand very well; Hattorf doubts it will be so easy. The decryption is the contemporary interlinear gloss, transcribed with the clear text.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: letter_A_1697.txt scored 0.5 because its [groups = gloss] notation is read as supplied words. Written out with each code run replaced by the contemporary interlinear gloss (letter_A_reading.md): 1.0 explicit-hole (8/8), plain 0.75."
+    },
+    "reading": "letter_A_reading.md",
+    "state": "read"
    }
   ]
  }

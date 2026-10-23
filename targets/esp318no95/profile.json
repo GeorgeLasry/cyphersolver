@@ -199,6 +199,13 @@
    "kind": "verification",
    "what": "Full texts (George Lasry's request of 22 Oct 2026): Brackx's reading and his proposed corrections to Lasry's 2022 ll. 1-13 listed beside Lasry's 2026 reading, for comparison.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: Brackx's ll. 14-33 + verso scored on the line-numbered file (0.44). Joined into texts/no95_brackx_reading.md: 0.765 explicit-hole, code groups as holes; plain 0.235 (period spelling). Keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -343,7 +350,15 @@
     "label": "Michael Brackx's reading (issue #63): ll. 14-33 and the verso",
     "transcription": "lasry2021/ctts/transcription/all.txt",
     "decryption": "texts/no95_decryption_brackx.md",
-    "summary": "Brackx's independent reading of ll. 14-33 and the verso, for comparison with Lasry's; it agrees except at 'rogaria a los que le ruegan' (NOTES)."
+    "summary": "Brackx's independent reading of ll. 14-33 and the verso, for comparison with Lasry's; it agrees except at 'rogaria a los que le ruegan' (NOTES).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the sweep scored no95_decryption_brackx.md with its header and line-numbered, hyphen-split lines (0.44). Brackx's lines joined into running text in texts/no95_brackx_reading.md: 0.765 explicit-hole (13/17 sentences, hole rate 0.077) with every unread code group ([bnh], [def], [dal] ...) and burn hole counted as a hole; plain 0.235 (early-16th-c. Spanish spelling: gouiernan, escreuira, danno). Sentences hold."
+    },
+    "reading": "texts/no95_brackx_reading.md",
+    "state": "read"
    },
    {
     "doc": "no95",

@@ -463,6 +463,13 @@
    "technique": ["language-model scoring", "contextual inference"],
    "what": "Partial readings in the brief's notation (r9409/R9409_reading.md, r9427/R9427_reading.md; b20_kaa_md.py, words unchanged). b17_score.py de: R9409 0.323 full list / 0.658 explicit holes (0.634 with 'der/die da' counted as holes); R9427 0.196 / 0.451. Reader's judgement: R9409 P1 and P3 do not build sentences, R9427 P1 does not; both stay decoded, not read. Hypothesis, not adopted (sense only, flagged for review): the lone c+ sign read 'da' after ir/irer/der/die (53 places in R9409) is a title sign, probably 'Mt.'.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification of System A': the readings put the writer's clear text in [brackets] (scored as supplied words) and unread words as {?} (taken by the scorer for resolved codes, i.e. not counted). Both notations fixed in running texts (research/reading_audit/v3a_kaa.py): R9408 0.676 and R9413 0.663 explicit-hole keep read (marginal); R9410 f. 244r 0.323 and R9410 ff. 246-247 0.368 demoted to decoded, not read.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -487,7 +494,7 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.572,
+  "fraction_read": 0.465,
   "notes": "System A′ only (split 15 Oct 2026). 5 Oct 2026: R9413 94.3%, R9408 92.0%, R9410 ff.246-247 (Latin, King John, Buda 30 June 1534) 88.9%, R9409 87.2%, R9410 f.244r 86.1%, R9427 84.3% of words (6,132 of 6,827 = 89.8% overall; the 89.3% given before 15 Oct 2026 was a slip of arithmetic); K = Ferdinand by context. No letter reaches the 95% bar.",
   "verification": [
    "contemporary decipherment",
@@ -496,6 +503,11 @@
   ],
   "key": "partial",
   "gaps": [
+   {
+    "item": "R9410 f. 244r and ff. 246-247 (Latin), demoted 23 Oct 2026 (v3): 0.323 and 0.368 explicit-hole, 18% of words unread in each",
+    "blocker": "no-key-material",
+    "detail": "System A' has no key sheet; the open signs are legible but take no value the letter settles (P1.03-05, P1.29-32, the a# group; P3.01-02, P4.09-12, P4.20-24, the name groups e9vn8/e9v9q4); three reading rounds and an image re-transcription made; no decipherment or edition"
+   },
    {
     "item": "R9409 and R9427 decoded, not read (P1/P3 of R9409; P1.01-P1.21 of R9427; the lone c+ 'da' sign, 53 places in R9409)",
     "blocker": "no-key-material",
@@ -540,19 +552,20 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit 22 Oct 2026: words of the documents that read as sentences, count.py totals of 5 Oct 2026: R9413 1,647 + R9408 1,531 + R9410 ff. 246-247 422 + R9410 f. 244r 303 = 3,903 of 6,827; R9409 (2,381) and R9427 (543) are decoded, not read. Withdrawn as a reading figure: 0.898 = words read by count.py over the six hand readings (R9413 1553/1647, R9408 1408/1531, R9410 ff.246-247 375/422, R9409 2077/2381, R9410 f.244r 261/303, R9427 458/543; 6132/6827).",
+  "fraction_read_source": "Reading audit 22 Oct 2026: words of the documents that read as sentences, count.py totals of 5 Oct 2026: R9413 1,647 + R9408 1,531 + R9410 ff. 246-247 422 + R9410 f. 244r 303 = 3,903 of 6,827; R9409 (2,381) and R9427 (543) are decoded, not read. Withdrawn as a reading figure: 0.898 = words read by count.py over the six hand readings (R9413 1553/1647, R9408 1408/1531, R9410 ff.246-247 375/422, R9409 2077/2381, R9410 f.244r 261/303, R9427 458/543; 6132/6827). 23 Oct 2026, v3 verification: R9410 f. 244r (303) and ff. 246-247 (422) demoted to decoded, not read; R9408 1,531 + R9413 1,647 = 3,178 of 6,827 words in letters that read, 0.465.",
   "texts": [
    {
     "doc": "R9408",
     "label": "R9408, ff. 236-239, Ofen 8 Feb 1534",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9408/reading.txt read through: P1.07 onward builds Early New High German sentences (the Emperor Sigismund comparison, the Turk's eighty years of conquest, the 250,000 florins sent to Turkey) with scattered {?}; P1.01-06 and a few clauses (P2.06/25-30, P4.16-28) are {?} runs. 170 of 1,528 words unread (11%). Audit C refined: the holes cluster, most sentences build."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v3 verification 23 Oct 2026: r9408/reading.txt scored 0.55 with the writer's clear Latin in [brackets] read as supplied words. In r9408/R9408_reading.md (clear text as «», and {?} written [?]: the scorer takes {?} for a resolved code and would not count it) the body scores 0.676 explicit-hole (92/136 sentence windows, hole rate 0.107), plain 0.287 (Early New High German). Marginal; holes cluster in P1.01-06, P2.06/25-30, P4.16-28."},
     "language": "de",
     "transcription": [
      "r9408/transcription_v5.txt",
      "sysA2/r9408_signs.txt"
     ],
     "decryption": "r9408/reading.txt",
-    "summary": "Jörg Weinmeister (signed in cipher) to the Dukes of Bavaria from Ofen, 8 Feb 1534, with Latin clear passages: his mission, the Turk's power and money, mining (Schmaltz, Reinhart), Katzianer before Kaschau, the priest-bishop Emericus and bad coin with the dukes' stamp; a separate news page on Emperor Sigmund, Constantinople and Syria."
+    "summary": "Jörg Weinmeister (signed in cipher) to the Dukes of Bavaria from Ofen, 8 Feb 1534, with Latin clear passages: his mission, the Turk's power and money, mining (Schmaltz, Reinhart), Katzianer before Kaschau, the priest-bishop Emericus and bad coin with the dukes' stamp; a separate news page on Emperor Sigmund, Constantinople and Syria.",
+    "reading": "r9408/R9408_reading.md"
    },
    {
     "doc": "R9409",
@@ -571,38 +584,35 @@
    {
     "doc": "R9410",
     "label": "R9410, f. 244r, 1 April 1535",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9410/reading.txt: from P1.06 the letter builds sentences (King John will make no treaty without the dukes, sworn on his word; closing and date 1 April 1535) with scattered {?} and bracketed doubtful words; P1.03-05 and P1.29-32 are holed. 49 of 304 words unread."},
     "language": "de",
-    "transcription": [
-     "r9410/transcription_v3.txt",
-     "sysA2/r9410_signs.txt"
-    ],
+    "transcription": ["r9410/transcription_v3.txt", "sysA2/r9410_signs.txt"],
     "decryption": "r9410/reading.txt",
-    "summary": "German letter to the dukes dated the first of April 1535: a treaty, the King of France, and holding together as brothers against the Turks."
+    "summary": "German letter to the dukes dated the first of April 1535: a treaty, the King of France, and holding together as brothers against the Turks.",
+    "note": "v3 verification 23 Oct 2026: with the clear German written «» and {?} counted as a hole (the scorer otherwise takes {?} for a resolved code), r9410/reading.txt scores 0.323 explicit-hole (10/31 sentence windows, hole rate 0.184): holes in most sentences, not only in P1.03-05 and P1.29-32. Partial reading kept in r9410/reading.txt.",
+    "state": "decoded, not read"
    },
    {
     "doc": "R9410",
     "label": "R9410, ff. 246-247, Buda 30 June 1534 (Latin)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9410/reading_p3p6.txt, King John's Latin letter: P3.03-P4.08 and P4.14-P6.05 read as Latin sentences (the Landgrave, the Duke of Wurttemberg, thanks for the victory, the truce broken by the adversary) with scattered {?}; P4.09-13 and P4.20-24 are holed. 72 of 422 words unread."},
     "language": "la",
-    "transcription": [
-     "r9410/transcription_p3p6.txt",
-     "sysA2/r9410b_signs.txt"
-    ],
+    "transcription": ["r9410/transcription_p3p6.txt", "sysA2/r9410b_signs.txt"],
     "decryption": "r9410/reading_p3p6.txt",
-    "summary": "A second letter in Latin, evidently King John (Zápolya) to the Dukes of Bavaria, Buda 30 June 1534: thanks for their letters and for the Landgrave's and the Duke of Württemberg's news; he has a truce, not peace, with his adversary, which the other side breaks; an envoy is back at Constantinople; he offers friendship and brotherhood."
+    "summary": "A second letter in Latin, evidently King John (Zápolya) to the Dukes of Bavaria, Buda 30 June 1534: thanks for their letters and for the Landgrave's and the Duke of Württemberg's news; he has a truce, not peace, with his adversary, which the other side breaks; an envoy is back at Constantinople; he offers friendship and brotherhood.",
+    "note": "v3 verification 23 Oct 2026: with the clear Latin written «» and {?} counted as a hole, r9410/reading_p3p6.txt scores 0.368 explicit-hole (14/38 sentence windows, hole rate 0.181): holes in most sentences. Partial reading kept in r9410/reading_p3p6.txt.",
+    "state": "decoded, not read"
    },
    {
     "doc": "R9413",
     "label": "R9413, ff. 252-256, June-July 1534",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9413/reading.txt: P1.01-14 and P2.23-33 read as continuous sentences (the two letters received through Marx Eckel, the war in Wurttemberg) with scattered {?}; the unread words (232 of 1,663, 14%) cluster in the P1 opening, P3.04-12 and the short lines of P6-P8. Audit B for this letter confirmed."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v3 verification 23 Oct 2026: r9413/reading.txt scored 0.571 (clear text in brackets). In r9413/R9413_reading.md (clear text «», {?} as [?]): 0.663 explicit-hole (57/86 windows, hole rate 0.109), plain 0.267. Marginal; holes cluster in the P1 opening, P3.04-12 and P6-P8."},
     "language": "de",
     "transcription": [
      "r9413/transcription_v4.txt",
      "sysA2/r9413_signs.txt"
     ],
     "decryption": "r9413/reading.txt",
-    "summary": "Letters of a Bavarian agent to the dukes, 7 June and July 1534, addressed to secretary Waisenfelder: Cornelius, the French orator Antonius Rincon at Constantinople, Katzianer, the bishop of Wardein before Hunyad, the Württemberg war, an ore sample from near Ofen, the Turk's fleet and the Pressburg diet."
+    "summary": "Letters of a Bavarian agent to the dukes, 7 June and July 1534, addressed to secretary Waisenfelder: Cornelius, the French orator Antonius Rincon at Constantinople, Katzianer, the bishop of Wardein before Hunyad, the Württemberg war, an ore sample from near Ofen, the Turk's fleet and the Pressburg diet.",
+    "reading": "r9413/R9413_reading.md"
    },
    {
     "doc": "R9427",

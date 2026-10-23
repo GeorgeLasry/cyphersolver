@@ -112,6 +112,14 @@ BnF esp. 336 nos. 79-80, ark btv1b100325613 canvases 268-273).
 - Overall ≈ 97% of enciphered tokens valued. What remains is physical (no. 62 verso bleed/blot) and graded
   single-context inferences.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored no. 62 on `reading62_final.md` (0.518): its [code value, grade] notation gives a bare number and a
+grade letter per code, both holes to the scorer, and the counts and notes sections were scored too. Written out in
+`no62_reading.md` (`research/reading_audit/v3a_lebel.py`): codes graded H or C as {value}, M, forced, open or
+alternative values as [?value]: 0.621 explicit-hole (18/29 sentences, hole rate 0.13), plain 0.414. Keeps read,
+marginally; f. 130r holds, the legible lines of f. 130v are fragments.
+
 ## Remaining gaps
 
 - no. 62 f. 130v: ~6 signs under the recto's ink before code 46, and one blot (= 1 sign, probably i) - blocker: illegible; bleed-through and blot, dense on both sides.

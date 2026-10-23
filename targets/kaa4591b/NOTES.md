@@ -108,6 +108,14 @@ so a recognisable word with a letter slip counts as read (generous). R9322 429/4
 with R9403 (414/416) 1,184/1,243 = 95.3%. Statistical validation (`mk_validation.py`, pairs from the contemporary
 glosses only, `la` model): pass (862 read tokens, reading −2.091 against random keys −6.002 and shuffled refits −3.757).
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored R9322 on `sysB/decoded.txt`, the raw word-divided decode of all System B letters with line numbers
+(0.449), whose slips are not marked. A reading of R9322 with every emended word marked [?word], every doubtful sign [?]
+and the runs that make no word [...] is now `sysB/R9322_reading.md`: 0.605 explicit-hole (23/38 sentence windows, hole
+rate 0.121), plain 0.105. Keeps read, marginally: f. 121 (Łaski) holds; f. 122 (King John for Lazarus the Jew) rests
+on many one-letter emendations and its date and signature lines do not resolve.
+
 ## Remaining gaps
 - R9417 decoded, not read - closed 23 Oct 2026: read at the image (8 untranscribed lines added, circle/cross codes corrected from the glosses)
 - R9323 decoded, not read - closed 23 Oct 2026: re-read word by word at the image, read

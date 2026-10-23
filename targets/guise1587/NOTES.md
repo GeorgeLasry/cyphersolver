@@ -94,7 +94,18 @@ estre avec telles seuretez que si nos premiers desseings eussent esté effectuez
 six jours j'espere avoir resolu la chose … avec [73], les forces qui seront necessaires allant la trouver a Meaux, ou
 il m'a donné … aller veoir"; "je ne faudray a vous en mander toutes nouvelles".
 
+## 23 Oct 2026: verification 3 (explicit-hole score): f. 142 demoted
+
+`f142_reading.txt` joined into running text (`f142_running_reading.md`; line numbers and sign counts left out, nothing
+else changed) scores 0.167 explicit-hole (2/12 sentences, hole rate 0.167): unread signs, supplied letters (est[é],
+tousiou[r]s, seurete[z], [n]os) and the name code [73] fall in nearly every sentence, and ll. 00-02, 09-10, 13 do not
+build. The middle reads (the levy of a thousand lances and four thousand reiters "ung [i]nstable secours", resolutions
+taken in haste, going to find [73] at Meaux), but not enough for the bar. Not workable in this pass: the signs were
+pinned in 26 passes, no decipherment or clear copy exists, and f. 119's full re-read (b27) reached only 0.558. f. 142 is
+now decoded, not read; no document of this target reads: class not read, fraction_read 0.
+
 ## Remaining gaps
+- f. 142 ll. 00-02, 09-10, 13 and the supplied letters in most lines (decoded, not read since 23 Oct 2026, v3: f142_running_reading.md 0.167 explicit-hole) - blocker: no-key-material; 26 pin passes made against the images; the open signs are homophones the context does not fix and the name code [73]; Lasry's table is the only key
 - f. 119 unread runs of ll. 00-03, 05, 12, 25, 29-30, 33-34, 37-38 (decoded, not read; texts/f119_reading.md 0.558 clean) - blocker: no-key-material; re-read 23 Oct 2026; the open choices are between homophones the context does not fix and nomenclator groups (ffm, ffmm, fbn) that do not fit as tabulated; Lasry's table is the only key
 - scattered unread letter signs, 121 of 2,477 (4.9%), no run longer than 8 - blocker: no-key-material; each tried in three or more zoomed passes plus a candidate-class phrase search over the French corpora; several look like code pairs (98, 89, z3) rather than letters
 - name codes [21] [43] [71] [73] [N] [&] [9b] [ffv] [ffσ] [ffx] [ffou] - blocker: no-key-material; Lasry's key leaves them unidentified and they occur once or twice

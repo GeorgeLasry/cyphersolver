@@ -158,6 +158,14 @@ for pixel from the six key fragments. `verify.py` passes.
 - **Open in his material:** 74̄, 75̄ unknown; FAIRE?, MOYEN? (48̄), ROY? (78̄), TOUSIOURS? provisional; the shelfmark
   and date of the additional document.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored the 15 Sept and 10 Nov entries on `reading.txt` as a whole (both passages, braces, comment lines:
+0.0) and Lasry's 10 Nov entry on `lasry2022/ctts/edited/3_edits.txt` (0.5: line labels and his "…" at both ends):
+false alarms. Each passage is now written out as its whole sentence, clear words included, holes as before:
+`15sept1610_reading.md` 0.75 explicit-hole (plain 0.75), `10nov1610_reading.md` 1.0 (plain 0.333, unaccented 1610
+spellings), `10nov1610_lasry_reading.md` 1.0 (plain 1.0). All three keep read; the entries point `reading` at them.
+
 ## Remaining gaps
 - 10 Nov, re[c?]ognoissant, one sign (B1 on view 112, c needed) - blocker: no-key-material; Lasry's CTTS key (PR #61) gives this sign C from this word only; his longer document does not use it, so the table conflict stands
 - 15 Sept, acompagne[z?]/acompagnee, one sign (E3 or Z2) - blocker: illegible; the two cells differ by a stroke and the crop does not settle it

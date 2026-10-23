@@ -58,6 +58,13 @@ Same key, another letter: Bilia's own letter to the Duke, Burgos 22 Nov 1527 (Bn
 - Prior solution: none found (no decipherment on the MS, not in L&P); the key was in the Milan archive, filed under
   another correspondent, not previously tied to this letter.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored `reading_r8572.txt` at 0.401 explicit-hole: its normalised forms in [square brackets] count as
+supplied words, and the MEASURE header and line labels were scored too. The running text in the deciphered spelling,
+glosses left out, is `r8572_reading.md` (`research/reading_audit/v3a_gilino.py`): 0.87 explicit-hole (80/92 sentences,
+hole rate 0.046), plain 0.478 (the writer's a/o, i/e confusions kept). Keeps read.
+
 ## Remaining gaps
 
 - Gilino R8572: 9 unread tokens (Bp, "q o", a small o, "b o" in a struck group, o.29 xp b+) and ~108 tokens in 45 doubtful words, listed in reading_r8572.txt - blocker: illegible; the writer's own a/o and i/e confusions and glyphs that the image does not separate (struck groups, cramped superscripts); no second copy of the letter exists.

@@ -175,6 +175,13 @@ The last row is "not solved": the entry is not complete while those ten are open
 the published period keys (Lasry, Niebel, Kopal, Wacker), Lasry's CHI key and its two messages (his comments
 50-53), Norbert's and Baertl's 2017 readings.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored the residue22 entry on `texts/residue22_decryption.md`, the table of all 22 messages with the open
+and partial rows (0.188 explicit-hole): a false alarm. The nine messages read in full are now extracted verbatim to
+`texts/residue22_reading.md` (X rendered as a stop) and the entry's `reading` points at it: 0.87 explicit-hole (20/23
+sentences), plain 0.565 (telegraphic abbreviations and numbers). Keeps read.
+
 ## Remaining gaps
 
 - nine open messages (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198; 1,320 letters) - blocker: no-key-material; no known key fits, Lasry's CHI key and the p. 217 TRUPPENVERSCHIEBUNG key included

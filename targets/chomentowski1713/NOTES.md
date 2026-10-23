@@ -50,6 +50,14 @@ alphabetical bands (a 6-8, b 14-21 ... z 320-333), names such as Cesarz 42, Mosk
   **1,538 of 1,621 = 94.9%**, 2 tokens short of the bar; nothing forced.
 - Together: 2,129 of 2,230 tokens (95.5%); per document R7476 read in part, R7484 and R7485 read.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored `R7476_reading.txt` whole, English header and pass/measure notes included (0.578 explicit-hole).
+`## Reading` and `## Notes` headings now frame the body; the body scores 0.651 explicit-hole (41/63 sentences, hole
+rate 0.104; 0.694 without page labels and the postscript line), plain 0.143 (small Polish word list). Keeps read.
+Note for a later pass: this reading is in modernised spelling (pass 3); the letter-for-letter text is
+`sien/R7476_pass5.txt`.
+
 ## Remaining gaps
 - R7476: 67 of 1,621 tokens - blocker: open-codes; letters known from gloss or key but no word, after seven passes (digit re-transcription at 3x, band alternatives, Ottoman/Latin/old-spelling candidates, LM scoring)
 - R7476: 8 tokens in names (p. 32 L9-10, code 216) - blocker: no-key-material; glossed syllables, no matching name in the embassy literature

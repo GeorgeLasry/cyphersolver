@@ -260,6 +260,20 @@
    "technique": ["language-model scoring"],
    "what": "Partial reading v2831_p2p3_reading.md (English v2831_p2p3_en.md, log v2831_p2p3_reread_log.md). b17_score.py LANG_=it on the body: 0.322 (19/59), explicit holes 0.542; before 0.158 / 0.342. p. 2 ll. 17-27 and half of p. 3 build sentences; the rest fragments. Stays decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction", "key matching"],
+   "what": "v3 verification: R1098 ll. 5-10 re-read sign by sign from native crops with the original key R5411 (n-crossbar tt, reversed d l, crossed b fa, 7 f, 3-with-tail r, looped d s, n# ss, z-stroke e) and aligned with MDE IV no. 91's printed decipherment: 'Tu[ln?]a' was 'tutti li lochi ove ha facto edificare', 'co[si]' 'siamo', '[...]' 'Sua Maiesta mi fece', 'secondo' 'perche lei voleva andare spassando'. r1098_v3_reading.md: 0.917 explicit-hole (was 0.545). trans/r1098p1_v3_corrections.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: V2831 read part (p. 1, p. 2 ll. 1-16, p. 4) rescored on its numbered lines: 0.519 explicit-hole (p. 1 ll. 1-15 0.562, ll. 16-29 0.375, p. 2 ll. 1-16 0.619). No print or contemporary decipherment; the R5411 re-read of these pages not done in this pass. Demoted to decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -270,7 +284,7 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.56,
+  "fraction_read": 0.099,
   "verification": [
    "matched control",
    "independent clear copy",
@@ -279,6 +293,11 @@
   "notes": "Read in part since 22 Sept 2026: share of signs read not measured, p. 3 of the 1489 letter after l. 19 in patches. Readings are in gist in places; a few signs unidentified and stained line ends. 'matched control' refers to Somogyi's printed lines 1-2. 22 Oct 2026, reading audit: V2831 split into a read part (p. 1, p. 2 ll. 1-16, p. 4) and a decoded-not-read part (p. 2 ll. 17-32, p. 3); R1098 reviewed B.",
   "key": "partial",
   "gaps": [
+   {
+    "item": "V2831 p. 1, p. 2 ll. 1-16 and the two p. 4 cipher lines (47 lines; demoted 23 Oct 2026, v3 verification: 0.519 explicit-hole)",
+    "blocker": "not-attempted",
+    "detail": "read 18-22 Sept with the reconstructed key; the original key R5411 (found 23 Oct, b25) has not been applied to these pages: a sign-by-sign re-read from the Vestigia plates with R5411, as done for p. 2 ll. 17-30 and p. 3, is the next step"
+   },
    {
     "item": "V2831 p. 2 ll. 19, 21, 23-30 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31: legible letter groups not yet segmented into words",
     "blocker": "not-attempted",
@@ -298,11 +317,6 @@
     "item": "2831 p. 1 ll. 21-26, last words of each line",
     "blocker": "illegible",
     "detail": "stain at the right edge, no other image (DECODE and Vestigia serve the same negative)"
-   },
-   {
-    "item": "R1098 ll. 5, 6 and 9",
-    "blocker": "not-attempted",
-    "detail": "the contemporary extract MDE IV no. 91 gives the text (main-checkout NOTES, 9 Oct 2026); not re-aligned in this worktree"
    },
    {
     "item": "share of cipher signs read",
@@ -333,27 +347,12 @@
    {
     "doc": "V2831",
     "label": "Vestigia 2831, Buda 22 Nov 1489: p. 1, p. 2 ll. 1-16 and the two cipher lines of p. 4",
-    "transcription": [
-     "trans/v2831p1_a_v.txt",
-     "trans/v2831p1_read2.md",
-     "trans/v2831p1_read3.md",
-     "trans/v2831p2_read.md",
-     "trans/v2831p2_read2.md",
-     "trans/v2831p2_read3.md",
-     "trans/v2831p3_read.md",
-     "trans/v2831p3b_read.md",
-     "trans/v2831p3b_read2.md",
-     "trans/v2831p4_read.md"
-    ],
+    "transcription": ["trans/v2831p1_a_v.txt", "trans/v2831p1_read2.md", "trans/v2831p1_read3.md", "trans/v2831p2_read.md", "trans/v2831p2_read2.md", "trans/v2831p2_read3.md", "trans/v2831p3_read.md", "trans/v2831p3b_read.md", "trans/v2831p3b_read2.md", "trans/v2831p4_read.md"],
     "decryption": "v2831_reading.md",
     "summary": "Maffeo da Treviglio to Ludovico Sforza: King Matthias Corvinus wants peace but not on terms to his dishonour, and will not go to the Diet unless he can come away justified; the new Neapolitan ambassador is to negotiate a reconciliation with the Emperor, and talk of a marriage for the King's son John Corvinus is raised again. Page 3 is read only in patches after line 19.",
     "language": "it",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Page 1 and page 2 lines 1-16 build Italian sentences with scattered [...] holes (Matthias wants peace but not at the cost of his honour; the Neapolitan ambassador; the Milan match), with an English sense per section; page 4's two cipher lines read. Only this part counts as read."
-    }
+    "note": "v3 verification 23 Oct 2026: the read part (p. 1, p. 2 ll. 1-16, p. 4 cipher lines) scores 0.519 explicit-hole (28/54 sentences, hole rate 0.13; plain 0.389) on its numbered lines in v2831_reading.md; p. 1 ll. 16-29 only 0.375. No contemporary decipherment or print exists (MDE IV starts 12 Jan 1490); the original key R5411 has not yet been applied to these pages. Partial reading kept in v2831_reading.md.",
+    "state": "decoded, not read"
    },
    {
     "doc": "V2831",
@@ -388,11 +387,14 @@
     "summary": "Maffeo to Ludovico Sforza: the King left on the 8th for Vienna, less drawn by hope of the Diet than by his own wish to go; the legate, the other ambassadors and Maffeo have decided to leave on the 15th. Ten cipher lines after a clear passage; short groups in ll. 5, 6 and 9 unread.",
     "language": "it",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Ten cipher lines: ll. 1-4 and 7-8 read whole ('Questo Ser.mo Re partite de qua ali 8 del presente per andare ad Vienna ...'), ll. 5-6 and 9-10 with holes; confirmed by the clear p. 2 of the same letter; English sense given."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: r1098_reading.md scored 0.545 explicit-hole on its body (0.595 in the sweep). Lines 5-10 re-read from native crops of IMG_R1098_I5648_P1 with the original key R5411 (tutti li lochi, facto, edificare, presto, siamo, fece, andassimo, spassando) and checked against the contemporary decipherment printed in MDE IV no. 91 (Nagy & Nyáry 1878), which fills 'Sua Maiesta mi' and 'perche ... voleva': r1098_v3_reading.md scores 0.917 explicit-hole, 0.75 plain (11/12 sentences)."
+    },
+    "reading": "r1098_v3_reading.md",
+    "translation": "r1098_v3_reading.md",
+    "state": "read"
    },
    {
     "doc": "V267",
@@ -417,6 +419,6 @@
    "key.json"
   ],
   "fraction_read_method": "estimated",
-  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Counted in cipher lines (signs per line not measured for V2831): V2831 has 91 cipher lines (p. 1 29, p. 2 32, p. 3 28, p. 4 2), of which p. 1, p. 2 ll. 1-16 and p. 4 (47 lines) read; R1098's 10 lines read. 57 of 101 lines, about 0.56, estimated. V267 (calibration letter with its clear copy) not counted."
+  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Counted in cipher lines (signs per line not measured for V2831): V2831 has 91 cipher lines (p. 1 29, p. 2 32, p. 3 28, p. 4 2), of which p. 1, p. 2 ll. 1-16 and p. 4 (47 lines) read; R1098's 10 lines read. 57 of 101 lines, about 0.56, estimated. V267 (calibration letter with its clear copy) not counted. 23 Oct 2026, v3 verification: the V2831 read part (p. 1, p. 2 ll. 1-16, p. 4; 47 lines) demoted to decoded, not read (0.519 explicit-hole); R1098 re-read (0.917). Read: R1098's 10 of 101 cipher lines, about 0.099, estimated."
  }
 }

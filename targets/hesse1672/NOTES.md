@@ -94,6 +94,14 @@ Code 602: the glosser wrote "Haus Braunschweig", struck it and wrote "Kayser" ov
 Measure: 64 cipher tokens (38 letter signs + 26 codes). All 64 have a value; 59 read as sense = **92.2%**. Below
 the 95% read bar, so read in part.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored `reading.txt` at 0.59 explicit-hole: its notation puts the decipherment in [brackets] and the codes
+in <angle brackets>, and the scorer reads both as holes. The same items written out without that notation, in
+`HCP494_reading.md` (deciphered words plain, resolved codes as {name}, 625 and the inferred 602 as [?word], the five
+signs e r t a z as [?]): 1.0 explicit-hole (17/17), plain 0.706. Keeps read; still an excerpt (clear letter not
+transcribed).
+
 ## Remaining gaps
 - passage 1, five signs 28 83 117 20 BB (e r t a z) before "in Holstein" - blocker: no-key-material; the 1672 letter table is not the 1666 one cell for cell (55 is g in this letter, as the glosser read, but h in key 255), and the glosser, who evidently had the 1672 key, got the same letters ("erta?in"); either the 1672 table differs in these cells or the encipherer slipped, and neither can be settled without the 1672 key or another copy of the letter; neither is online (the rest of Nr. 125 is not digitised)
 

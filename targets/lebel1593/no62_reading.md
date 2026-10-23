@@ -1,0 +1,13 @@
+# Lebel to the Duke of Savoy, Paris, 10 March 1593 (BnF fr. 3983 f. 130r-v, no. 62): reading in running text
+
+Rests on: `reading62_final.md` (pass 3; letter signs read with the key, code values from codes_harvest.tsv graded
+H glossed at the time, C confirmed by sibling contexts, M inferred from sense). Written out for the v3 verification
+(23 Oct 2026) without its [code value, grade] notation, which the scorer misreads: H and C codes as {value}; M,
+forced, alternative or open codes as [?value] or [?]; clear and deciphered text alike in roman. f. 130v (after the
+paragraph break) is read only in its first lines; the rest of that page is under recto ink.
+
+## Reading
+
+J'ay appris dès la mienne derniere que le mescontantemant qu'avoit {le duc de Mayenne} de {Monsieur} a esté remedié, {luy} ayant {faict} {donner} contantemant de ce que {luy} estoit deu, et estoit la somme plus grande que je n'ay escrit cy devant; {il} {luy} ont {faict} [?offre] quarante mille escus et {donner} assignation tant en [?Flandres] que Espagne, jusques au comptant de deux cents soixante mille escus. L'on estimoit que sur tant et tant de remonstrances qu'ont esté faittes aux [?serviteurs] {du} {Roy d'Espaigne} de l'impossibilité de ses pretantions sur ces[te couronne?] … le [?royaume] soit {pour} [?luy] {l'Infante} et le {prince} qu'{il} se seroit resolu d'y {faire} {parvenir} a quelque aultre de ses proches; mays ses ministres continuent plus que jamais en leur opinion, conduysant le duc {de} Feria ung docteur [?qui] veult disputter la [?couronne] {par} poincts de droict, dont l'on se mocque {tout} ouvertemant pardessa, ou l'on remarque aussy que {le Roy d'Espaigne} est tres [?mal] conseillé de {faire} en ce tenps et en la face des estatz voir une armée moindre qu'aulcune [?qui] soit encores venue, et l'{argent} plus court que jamays. [?J'ay] sceu que les {capitaines} de {Mayenne} voiant peu de jour de pouvoir {faire} {donner} la [?couronne] au dict {duc de Mayenne} ny la {faire} tumber en la [?maison] de Borbon, tascheront de faire proposer une {tresve} [?] partira {bien} {tost} [?pour] {aller} [?trouver] a {V.re Alt.e} {de} la part de {Mayenne}. Je croy que ce sera le service de V.re Alt.e de {luy} {donner} {tout} contantemant et le caresser. Et a la verité sans son assistance je me fusse treuvé empesché [?en ceste] {negotiation} plus que jamais. {Le duc de Mayenne} et {luy} {faict} {faire} {de} grandes offres. 
+
+ … Gondy envoié par le Duc de Florence … present auprès du Roy de Navarre [?] a e[n/s]t… oma {dict} {le juriste} … pes {mariage} b… de la niece du duc {de} Florance … au … [?Lorraine] et … [?] … [?le duc de Lorraine] avec [?le Roy de Navarre] [?] l se {faict} [?]. Je suis attendant …

@@ -100,6 +100,14 @@ por entonces no queriamos afrontar al Rey de Inglaterra nuestro hermano a que se
 los franceses entraban en nuestros reynos"*, and whose request for "dos mil peones ingleses escogidos" it repeats.
 The marriage of Catherine and Henry is not the subject of this letter.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored the entry on the whole of `reading_X.md` (all lines, most of them unread, code=value tags; 0.358).
+The entry claims only recto ll. 1-11 and 14-15; that part is now written out in `PTR53-69_reading.md` (tags reduced to
+values, letter runs in lower case, supplied letters as holes, ll. 12-13 marked unread;
+`research/reading_audit/v3a_estrada.py`): 0.812 explicit-hole (13/16 sentences, hole rate 0.112), plain 0.5. Keeps
+read. The weak stretch is ll. 5-7.
+
 ## Remaining gaps
 
 - copy X recto ll. 12-13, 16-46 and the verso decoded, not read (mostly [..]; reading audit 22 Oct 2026; texts/PTR53-69_partial_reading.md 0.128 clean, 23 Oct) - blocker: illegible; the letter-sign runs cannot be told apart at PARES's 988 px (PARES returned HTTP 429 on 23 Oct, so not re-fetched); needs a higher-resolution copy from Simancas

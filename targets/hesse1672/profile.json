@@ -208,6 +208,13 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): reading.txt gives the cipher items in their clauses; each builds except the five-sign word of passage 1. Per-document C (no connected letter) overturned to B: the missing context is clear text, not cipher. fraction_read 1.0 -> 0.922 (read as sense, as fraction_coherent already said); excerpt note added.",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: reading.txt scored 0.59 (bracket notation for decipherment and codes). Written out in HCP494_reading.md: 1.0 explicit-hole, plain 0.706. Keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -260,11 +267,12 @@
     "state": "read",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Overturns the per-document C. The letter is clear German with 26 code numbers and two short letter-cipher passages; reading.txt gives every cipher item in its clause, and each clause builds (passage 1 \"Totaliter disgustirt und ?? in Holstein, nun sowohl als in Dennemarck Adell, Burger und Bauern ... in plainten combiniret\"; passage 2 \"Gott geb das all wol ablauff\"). What is missing is the clear text between the cipher items, which is not cipher; one five-sign word is open."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: reading.txt scored 0.59 because its notation puts the decipherment in [brackets] and the codes in <angle brackets>, both read as holes. Written out in HCP494_reading.md (deciphered words plain, resolved codes as {name}, doubtful 625/602 as [?word], the five signs that make no word as [?]): 1.0 explicit-hole (17/17), plain 0.706. An excerpt: the cipher items in their clauses; the clear letter around them is not transcribed."
     },
-    "note": "Excerpt only: the cipher items with their clauses; the full letter (clear German) is on the HCPortal images (media 1385-1387, images/f2-f4.jpg, git-ignored), not transcribed (reading audit, 22 Oct 2026)."
+    "note": "Excerpt only: the cipher items with their clauses; the full letter (clear German) is on the HCPortal images (media 1385-1387, images/f2-f4.jpg, git-ignored), not transcribed (reading audit, 22 Oct 2026).",
+    "reading": "HCP494_reading.md"
    }
   ],
   "key_file": [

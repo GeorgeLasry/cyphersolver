@@ -43,6 +43,13 @@ pass ("Saz … Sdcize") beside the corrected "siwz" (siue). The reading was made
 transcription of line 4 was not cleaned. `decode.py` also writes `r9325/signs.txt` (270 signs) and the site's
 reveal file.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored R9325 on `r9325/reading.txt` (sign lines plus decode) as Italian, the entry having no language
+(0.565): a false alarm. The Latin running text in the figures' spelling (u for v; [est], [se], [quod], uia[m]
+supplied and bracketed) is `r9325/R9325_reading.md`: 0.833 explicit-hole (5/6), plain 0.333. The entry now carries
+`language: la` and `reading`; keeps read.
+
 ## Remaining gaps
 
 None in the text. The sender and the recipient are not named in the note (it is filed with the Bavarian keys; the

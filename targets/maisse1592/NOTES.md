@@ -276,9 +276,23 @@ attempt and as the matched control the repository's conventions require.
 - `montage.py` — folio-number corner sheets used for the calibration above
 - `src/lm3.txt` — Xivrey, *Lettres missives* t. III (IA `recueildeslettre03henr`), gitignored
 
+## 23 Oct 2026: verification 3 (explicit-hole score): f. 370 read from the Brienne 13 copy
+
+f. 370 had only its 81-letter opening read (`texts/f370_decryption.md`, 0.545 explicit-hole as scored with its header
+and comparison strings). Its contemporary clear copy, Brienne 13 fol. 102v-103v (pièce 224), is now transcribed for the
+whole cipher passage from openapi.bnf.fr views 108-109: `texts/f370_reading.md`, 0.979 explicit-hole, 0.936 plain. The
+passage runs from "Le Cardinal de Gondy aura passé pres de vous" to "... a la conservation de cette Couronne": on f.
+370v (view 420) the original returns to clear with "depuis le partement", which follows those words in the copy. So
+the cipher is longer than the "about 550 groups" counted on the recto: 35 more lines of figures on the verso (about
+2,200 groups in all). Content: Gondi has passed near Venice, Pisany follows to the Pope for the Catholic royalists;
+Maisse is to stay at his post; Lambert goes back to the Levant with Brèves's despatch, which Maisse may amend; the
+advice to the English ambassador and Brèves on the Spanish intrigue at the Porte; Lesdiguières's war in Piedmont; the
+Pope's resolutions awaited. Beyond the opening the reading rests on the copy alone (figures not aligned). fraction_read
+0.87 -> 0.98, estimated.
+
 ## Remaining gaps
 
-- f. 370 after the opening (about 550 groups), not transcribed - blocker: not-attempted; transcribe Brienne 13 fol. 102v-104r (views 108-109, fetched for f. 373) and check it against the cipher as was done for f. 373, decode with key1.tsv, translate
+- f. 370: read 23 Oct 2026 (v3) from the Brienne 13 fol. 102v-103v copy (`texts/f370_reading.md`). Still open: the copy not aligned with the figures beyond the 81-letter opening (about 2,100 groups, recto and 35 verso lines) - blocker: not-attempted; spot-check the verso figures against the copy as for f. 373; English translation not written
 - f. 373: closed 23 Oct 2026 (read from the Brienne copy). Two words of the copy ([?Vivac], [?chauvez]) not checked on the figures - blocker: not-attempted; postscript ll. 2 and 5 - blocker: illegible
 
 ## Escalation

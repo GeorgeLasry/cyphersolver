@@ -64,3 +64,11 @@ Images: DECODE, fetched with the shared cookie into the git-ignored `targets/dam
 - **Francia 18, R15–R17 (catalogue 242):** R15 read on DECODE; R16 and R17 read here (Meister p. 324 and p. 393 keys). See [targets/bergamo1585/](../bergamo1585/NOTES.md).
 - **Francia 7, R12 (catalogue 258):** read at the time: decipherments written above the cipher runs on f. 249 (1574). Removed.
 - **Francia 17, R13–R14 (catalogue 241):** R13 read at the time (interlinear: *che è portato da Mons. di Bellièvre, già stato ugonotto et hor forse atheo, in casa…*); R14 is the volume's clear subject index, not a cipher. Removed.
+
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored R59 as Latin on `texts/R59_decryption.md`, header and figure strings included (0.5 explicit-hole
+on 74 words): a false alarm. The three passages are Italian and carry the contemporary decipherment above them,
+checked against the Biermann-Bosbach key; they are written out in `texts/R59_reading.md`: 1.0 explicit-hole and plain.
+The entry now has `language: it` and `reading` set; keeps read.
+

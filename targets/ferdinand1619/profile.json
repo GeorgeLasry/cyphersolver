@@ -319,6 +319,13 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: reading.txt scored 0.0 (bracketed clear text read as supplied words). Joined into R9426_reading.md (research/reading_audit/v3a_ferd.py): 0.644 explicit-hole, hole rate 0.124, plain 0.311. Keeps read, marginal.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -385,10 +392,12 @@
     "language": "de",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "reading.txt is laid out one manuscript line per row with the clear text in brackets, which is why it scores 0; joined, the cipher reads as German sentences ('Weil aber ich denen ortern daselbst besagter compagnien einzuquartiern ...', the quartering of Lintelo's company), with scattered <nnn> groups (2.8% of tokens, five of them nulls per R9425) and '...' gaps in the clear hand. Needs joining into prose and an English translation."
-    }
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: reading.txt (one manuscript line per row, clear text in brackets, flagged words in capitals) scored 0.0, because the bracketed clear text counts as supplied words. Joined into running text in R9426_reading.md (clear text in «», flagged words lower case, eight unresolved flagged words as [?word], <nnn> open nomenclator groups as holes): 0.644 explicit-hole (58/90 sentences, hole rate 0.124); plain 0.311 (1619 German spelling). Marginal: the open nomenclator groups (<414>, <122> ...) fall in many sentences; the nomenclator is still open apart from 248 = und."
+    },
+    "reading": "R9426_reading.md",
+    "state": "read"
    },
    {
     "doc": "R9425",

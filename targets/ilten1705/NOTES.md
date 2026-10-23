@@ -52,6 +52,13 @@ Transcriptions: `letters_BC_1705_1706.txt` (B, C) and `letter_D_1706.txt` (D), c
   de-man-[91]-de-r, and twice in D). The same group carries the same gloss wherever it recurs (`tables.py`).
 - No gloss contradicts another occurrence of its group. The glosses read as sense throughout.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The v3 sweep scored letters B and C on `letters_BC_1705_1706.txt` (both letters, [groups = gloss] notation read as
+supplied words; 0.531). Running texts with the contemporary glosses in place (`research/reading_audit/v3a_ilten.py`):
+`letter_B_reading.md` 0.926 explicit-hole (plain 0.852), `letter_C_reading.md` 1.0 (plain 0.739); runs the interliner
+left unglossed are [?]. Both keep read.
+
 ## Remaining gaps
 
 - B f. 201v: group 419 after "à" (463 written above it) - blocker: open-codes; no gloss and no key; the sense

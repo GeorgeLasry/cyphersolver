@@ -124,6 +124,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): r9325/reading.txt (codes per sign, plain column and normalised text) and the sign list written by decode.py",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "v3 verification: R9325 scored as Italian on reading.txt with the sign lines (0.565). Latin running text written to r9325/R9325_reading.md: 0.833 explicit-hole. Language set to la; keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -163,7 +170,16 @@
      "r9325/signs.txt"
     ],
     "decryption": "r9325/reading.txt",
-    "summary": "A short Latin note on the 1576 deposition of Abbot Balthasar von Dernbach of Fulda by his chapter and knights with Julius Echter of Würzburg: the abbot protested in secret that he was forced to accept the Pope's inhibition; the Pope is asked to declare it against the canons, the Duke of Bavaria to help, and the nuncio to persuade the Pope to protect him. Read with the key R9324 filed in the same volume."
+    "summary": "A short Latin note on the 1576 deposition of Abbot Balthasar von Dernbach of Fulda by his chapter and knights with Julius Echter of Würzburg: the abbot protested in secret that he was forced to accept the Pope's inhibition; the Pope is asked to declare it against the canons, the Duke of Bavaria to help, and the nuncio to persuade the Pope to protect him. Read with the key R9324 filed in the same volume.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the sweep scored r9325/reading.txt (sign transcription lines plus decode, no language on the entry, taken as Italian; 0.565). The Latin running text, in the figures' spelling with four supplied words bracketed, is r9325/R9325_reading.md: 0.833 explicit-hole (5/6 sentences, hole rate 0.065), plain 0.333 (small Latin word list). Read with the key R9324 from the same volume."
+    },
+    "reading": "r9325/R9325_reading.md",
+    "language": "la",
+    "state": "read"
    }
   ]
  }
