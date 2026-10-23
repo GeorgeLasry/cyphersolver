@@ -240,9 +240,11 @@ frequency count and the two solver scripts. This entry is the 1511-12 key only: 
   - Doussinague, *La política internacional de Fernando el Católico* (1944): not online, not seen.
   - Web searches (5 Oct 2026) found no transcription online.
 
+Closed items (moved out of Remaining gaps):
+- N.60 sign-by-sign proofread of pp. 4-14 - closed 23 Oct 2026 (r2i): done on 4x bands, 140 rules, `n60_transcription_v5.txt`
+
 ## Remaining gaps
 - N.60 decoded, not read (explicit-hole share 0.589 on v2_score after the r2i proofread; `n60_reading.md` partial) - blocker: no-key-material; about 600 unread groups (phi 34x, reg 18x, pub 14x, fez, dup, fob, for, pog, pir, gox, geb ...) absent from the deciphered siblings and without one value at all occurrences (pub suizos 11/13, fez gasto, dup contrario, fob fortalezas 5/7 each: not adopted); Terrateig 1963 (unseen) may print the decipherment
-- N.60 sign-by-sign proofread of pp. 4-14 - closed 23 Oct 2026 (r2i): done on 4x bands, 140 rules, `n60_transcription_v5.txt`
 - N.60 ink blots and paper holes (L0827, L1219, L1402 one sign each; L1525-L1527) and doubtful single signs (L1315, L1316, L0534) - blocker: illegible; PARES zoom-10 resolution
 - N.45 (~424 [..]) and N.57 (24 [..]) holes - blocker: no-key-material; unkeyed groups (hno, hug, mun, myn, sig, phi, sab, rih, mug ...) and number signs, none in a deciphered sibling
 - Look-alike signs: tilde-d a / plain d b (N.57), fug senor / entre, fer dio / Fe-, fac dichas / dar, b a / i (N.60) - blocker: illegible; same shape at the PARES zoom-10 resolution, flagged for review in key.md
