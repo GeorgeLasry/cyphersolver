@@ -274,6 +274,27 @@
    "technique": ["statistical test"],
    "what": "v3 verification: V2831 read part (p. 1, p. 2 ll. 1-16, p. 4) rescored on its numbered lines: 0.519 explicit-hole (p. 1 ll. 1-15 0.562, ll. 16-29 0.375, p. 2 ll. 1-16 0.619). No print or contemporary decipherment; the R5411 re-read of these pages not done in this pass. Demoted to decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction", "key matching"],
+   "what": "r2e: V2831 p. 1 (29 lines), p. 2 ll. 1-17 and the p. 4 cipher lines re-transcribed sign by sign from per-row crops of the Vestigia plates with the original key R5411 (trans/v2831p1_r2e.md, v2831p2_r2e.md, v2831p4_r2e.md). p. 2 has 31 lines: its line 1 had never been transcribed. Values adopted at every occurrence: M+ Regina, a# Vostra Dominatio, o+ Imperatore, M-bar Zuan Corvino, x-bar/xo ma, b-crossed fa, b^x ni, n^o pp, n-tail ff; q^o = re (not in the key) holds throughout.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["contextual inference"],
+   "what": "r2e: reading v2831_r2e_reading.md and English aligned word by word with the decodes; 1989 words not carried by the figures withdrawn (etiam twice, havuto, con lo Imperatore). Third pass on b25's lines: 'per [?messere] Francesco fara replicare' (p. 2 ll. 28-29); p. 2 l. 20 and l. 25 no gain; p. 3 not re-cropped.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "r2e: v2_score.py (it): p. 1, p. 2 ll. 1-17, p. 4 body 0.642 explicit-hole (34/53; before 0.519), p. 1 ll. 22-29 0.22 under the stain; p. 2 ll. 18-31 + p. 3 0.466. Look-alike letters 0.7%. Share of cipher signs read measured for the first time: 0.847 (358 of 2,338 signs in unread groups). The first part set read (grade B); the second stays decoded, not read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -284,7 +305,7 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.099,
+  "fraction_read": 0.563,
   "verification": [
    "matched control",
    "independent clear copy",
@@ -294,14 +315,9 @@
   "key": "partial",
   "gaps": [
    {
-    "item": "V2831 p. 1, p. 2 ll. 1-16 and the two p. 4 cipher lines (47 lines; demoted 23 Oct 2026, v3 verification: 0.519 explicit-hole)",
+    "item": "V2831 legible letter groups that do not segment into words with the full key: p. 1 L04 (two -ione words), L11, L12, L22, L24; p. 2 L09, L15, L16; p. 4 L02; p. 2 ll. 20, 22, 24-31 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31 (b25 list)",
     "blocker": "not-attempted",
-    "detail": "read 18-22 Sept with the reconstructed key; the original key R5411 (found 23 Oct, b25) has not been applied to these pages: a sign-by-sign re-read from the Vestigia plates with R5411, as done for p. 2 ll. 17-30 and p. 3, is the next step"
-   },
-   {
-    "item": "V2831 p. 2 ll. 19, 21, 23-30 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31: legible letter groups not yet segmented into words",
-    "blocker": "not-attempted",
-    "detail": "two sign-by-sign passes on 23 Oct 2026 (b25), the second with the original key R5411; a third pass is worthwhile"
+    "detail": "three sign-by-sign passes (b25 twice, r2e 23 Oct 2026 with R5411); a fourth pass using the lang/ Italian model as a segmenter over the decoded strings has not been tried"
    },
    {
     "item": "V2831 p. 3 l. 15, one or two signs under an ink blot",
@@ -314,14 +330,9 @@
     "detail": "R5411 is torn at the upper right; the o-form value needs review against R1098 and V267"
    },
    {
-    "item": "2831 p. 1 ll. 21-26, last words of each line",
+    "item": "2831 p. 1 ll. 21-29, last words of each line",
     "blocker": "illegible",
-    "detail": "stain at the right edge, no other image (DECODE and Vestigia serve the same negative)"
-   },
-   {
-    "item": "share of cipher signs read",
-    "blocker": "not-attempted",
-    "detail": "never measured; p. 2-3 sign strings now in trans/v2831p2_b25.md, v2831p3_b25.md"
+    "detail": "stain at the right edge, no other image (DECODE and Vestigia serve the same negative); re-checked at 3x on 23 Oct 2026 (r2e)"
    }
   ],
   "credits": [
@@ -346,17 +357,24 @@
   "texts": [
    {
     "doc": "V2831",
-    "label": "Vestigia 2831, Buda 22 Nov 1489: p. 1, p. 2 ll. 1-16 and the two cipher lines of p. 4",
-    "transcription": ["trans/v2831p1_a_v.txt", "trans/v2831p1_read2.md", "trans/v2831p1_read3.md", "trans/v2831p2_read.md", "trans/v2831p2_read2.md", "trans/v2831p2_read3.md", "trans/v2831p3_read.md", "trans/v2831p3b_read.md", "trans/v2831p3b_read2.md", "trans/v2831p4_read.md"],
+    "label": "Vestigia 2831, Buda 22 Nov 1489: p. 1, p. 2 ll. 1-17 and the two cipher lines of p. 4 (p. 2 has 31 lines)",
+    "transcription": ["trans/v2831p1_r2e.md", "trans/v2831p2_r2e.md", "trans/v2831p4_r2e.md", "trans/v2831_r2e_corrections.tsv", "trans/v2831p1_read2.md", "trans/v2831p1_read3.md", "trans/v2831p2_read.md", "trans/v2831p4_read.md"],
     "decryption": "v2831_reading.md",
-    "summary": "Maffeo da Treviglio to Ludovico Sforza: King Matthias Corvinus wants peace but not on terms to his dishonour, and will not go to the Diet unless he can come away justified; the new Neapolitan ambassador is to negotiate a reconciliation with the Emperor, and talk of a marriage for the King's son John Corvinus is raised again. Page 3 is read only in patches after line 19.",
+    "summary": "Maffeo da Treviglio to Ludovico Sforza: King Matthias will not go to the Diet without letters from the Emperor that let him come away justified; the new Neapolitan ambassador is to reconcile the Queen with the King and has raised again the match of John Corvinus with don Federico's daughter, which the King takes as made in spite of the Milanese marriage; courtiers tell messer Francesco he goes to Naples 'to undo what you have cooked'; Maffeo advises that the Queen will spare no effort to turn the King and will not yield 'to the insatiable wrath of Juno'.",
     "language": "it",
-    "note": "v3 verification 23 Oct 2026: the read part (p. 1, p. 2 ll. 1-16, p. 4 cipher lines) scores 0.519 explicit-hole (28/54 sentences, hole rate 0.13; plain 0.389) on its numbered lines in v2831_reading.md; p. 1 ll. 16-29 only 0.375. No contemporary decipherment or print exists (MDE IV starts 12 Jan 1490); the original key R5411 has not yet been applied to these pages. Partial reading kept in v2831_reading.md.",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading": "v2831_r2e_reading.md",
+    "translation": "v2831_r2e_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r2e 23 Oct 2026: re-read sign by sign from the Vestigia plates with the original key R5411 (trans/v2831p1_r2e.md, v2831p2_r2e.md, v2831p4_r2e.md; log v2831_r2e_reread_log.md). New: p. 2 line 1 (never transcribed), M+ = Regina, a# = Vostra Dominatio, o+ = Imperatore, x-bar = ma, fa-signs; withdrawn 1989 words not carried by the figures. Reading body 0.642 explicit-hole (34/53; plain 0.321; before 0.519); p. 2 ll. 1-17 0.80, p. 1 ll. 1-21 0.70, p. 1 ll. 22-29 0.22 under the stain (illegible). Look-alike letters 13 of about 2,000 (0.7%). Share of cipher signs read 0.847 (358 of 2,338 signs in unread groups). No contemporary text or print exists; the reading rests on the figures alone."
+    }
    },
    {
     "doc": "V2831",
-    "label": "Vestigia 2831, Buda 22 Nov 1489: p. 2 ll. 17-30 and p. 3 (p. 2 has 30 lines, p. 3 31)",
+    "label": "Vestigia 2831, Buda 22 Nov 1489: p. 2 ll. 18-31 and p. 3 (p. 2 has 31 lines, p. 3 31)",
     "transcription": [
      "trans/v2831p1_a_v.txt",
      "trans/v2831p1_read2.md",
@@ -372,7 +390,7 @@
     "decryption": "v2831_reading.md",
     "language": "it",
     "state": "decoded, not read",
-    "note": "Re-read 23 Oct 2026 (b25; v2831_p2p3_reread_log.md): the original key 'Cum Mapheo Triviliensi' (ASMi Sforzesco cart. 1597 no. 111, DECODE R5411) found and both pages re-read sign by sign from the plates with per-row crops (trans/v2831p2_b25.md, v2831p3_b25.md): Roma (q^s x-bar), la Regina, Vostra Dominatio, the Duke of Milan, the Pope, madonna Bianca, the bishop of Varad now read. p. 2 ll. 17-27 and about half of p. 3 build sentences, but p. 2 ll. 28-30 and eleven lines of p. 3 stay fragments: body 0.322 clean sentences (it; before 0.158), explicit holes 0.542. Still decoded, not read; the remaining groups are legible but not yet segmented (not-attempted after two passes), one blot (illegible), torn key columns (no-key-material).",
+    "note": "Re-read 23 Oct 2026 (b25; v2831_p2p3_reread_log.md) with the original key R5411: Roma, la Regina, Vostra Dominatio, the Duke of Milan, the Pope, madonna Bianca, the bishop of Varad read. Third pass 23 Oct 2026 (r2e, v2831_r2e_reread_log.md): p. 2 has 31 lines, so these are p. 2 ll. 18-31; 'per [?messere] Francesco fara replicare' added. Body 0.466 explicit-hole (27/58; plain 0.293): p. 2 ll. 28-31 and eleven lines of p. 3 stay fragments. Still decoded, not read; legible groups not yet segmented (not-attempted after three passes), one blot (illegible), torn key columns (no-key-material).",
     "reading": "v2831_p2p3_reading.md",
     "translation": "v2831_p2p3_en.md"
    },
@@ -419,6 +437,6 @@
    "key.json"
   ],
   "fraction_read_method": "estimated",
-  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Counted in cipher lines (signs per line not measured for V2831): V2831 has 91 cipher lines (p. 1 29, p. 2 32, p. 3 28, p. 4 2), of which p. 1, p. 2 ll. 1-16 and p. 4 (47 lines) read; R1098's 10 lines read. 57 of 101 lines, about 0.56, estimated. V267 (calibration letter with its clear copy) not counted. 23 Oct 2026, v3 verification: the V2831 read part (p. 1, p. 2 ll. 1-16, p. 4; 47 lines) demoted to decoded, not read (0.519 explicit-hole); R1098 re-read (0.917). Read: R1098's 10 of 101 cipher lines, about 0.099, estimated."
+  "fraction_read_source": "Counted in cipher lines: V2831 has 93 cipher lines (p. 1 29, p. 2 31, p. 3 31, p. 4 2) and R1098 10, 103 in all. Read (23 Oct 2026, r2e): V2831 p. 1, p. 2 ll. 1-17 and p. 4 (48 lines) and R1098 (10): 58 of 103, about 0.563, estimated by lines. Share of cipher signs read inside the read part measured 0.847 (2,338 signs, nulls excluded). V267 (calibration letter with its clear copy) not counted. History: 22 Oct 0.56 (estimated), 23 Oct v3 0.099."
  }
 }

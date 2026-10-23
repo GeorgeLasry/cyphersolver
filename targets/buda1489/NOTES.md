@@ -1,6 +1,6 @@
 # Milanese embassy at Buda, 1489–92: Maffeo da Treviglio's cipher (ASMi Sforzesco 642/645/650)
 
-Status: in progress. read in part (reclassified from "read" 22 Sept 2026). Both undeciphered despatches are read, the 22 Nov 1489
+Status: in progress. read in part (reclassified from "read" 22 Sept 2026; 23 Oct 2026 r2e: p. 1, p. 2 ll. 1-17 and p. 4 of the 1489 letter read with the original key R5411, p. 2 ll. 18-31 and p. 3 still decoded, not read). Both undeciphered despatches are read, the 22 Nov 1489
 letter only in patches on page 3 after line 19; four signs have no value; the share of signs read has never been
 measured, so the read bar (README Conventions) is not shown to be met.
 
@@ -152,15 +152,31 @@ cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. pr
 - fraction_read 0.56 -> 0.099 (R1098's 10 of 101 cipher lines), estimated.
 - Closed: R1098 ll. 5, 6 and 9, re-read with R5411 and aligned with MDE IV no. 91 (`r1098_v3_reading.md`).
 
+## 23 Oct 2026: r2e, p. 1, p. 2 ll. 1-17 and p. 4 re-read with the original key R5411
+
+- **Read again** (`v2831_r2e_reread_log.md`): every cipher line of p. 1, p. 2 ll. 1-17 and the p. 4 cipher lines re-read
+  sign by sign from per-row crops of the Vestigia plates with R5411 (`trans/v2831p1_r2e.md`, `v2831p2_r2e.md`,
+  `v2831p4_r2e.md`, corrections `trans/v2831_r2e_corrections.tsv`); reading `v2831_r2e_reading.md`, English
+  `v2831_r2e_en.md`. **p. 2 has 31 lines**: its first line ("referto, che questo Zuan Corvino ... se faria lo
+  parentato") was never transcribed; old p. 2 L1-16 = L2-17, b25's L17-30 = L18-31.
+- Key values now carried: M+ = Regina (5 places; were "la sua Maesta"), a# = Vostra Dominatio (were Ex.tia Vostra),
+  o+ = Imperatore (the 1989 "♀"), M̄ = Zuan Corvino, x̄/xo = ma, ƀ = fa (fare, facto, faria). 1989 words not carried by
+  the figures withdrawn (etiam twice, havuto, "con lo Imperatore" = "col Ser.mo Re").
+- Score (v2_score.py, it): **0.642 explicit-hole** (34/53; before 0.519); p. 2 ll. 1-17 0.80, p. 1 ll. 1-21 0.70, p. 1
+  ll. 22-29 0.22 (the stained right edge). Look-alike letters 0.7%. **Share of cipher signs read: 0.847** (358 of 2,338
+  signs in unread groups), the first measurement. **Set read (grade B).**
+- Third pass on b25's lines: "per [?messere] Francesco fara replicare el ma[…]" (p. 2 ll. 28-29). p. 2 ll. 18-31 and
+  p. 3 still 0.466 explicit-hole: **decoded, not read**.
+- fraction_read 0.099 -> 0.563 (58 of 103 cipher lines: V2831 p. 1, p. 2 ll. 1-17, p. 4 and R1098).
+
 ## Remaining gaps
-- 2831 p. 1, p. 2 ll. 1-16 and the p. 4 cipher lines (demoted 23 Oct 2026, v3: 0.519 explicit-hole) - blocker: not-attempted; the original key R5411 has not been applied to these pages; a sign-by-sign re-read from the plates with key_R5411.md, as b25 did for p. 2 ll. 17-30 and p. 3, is the next step
-- 2831 p. 2 ll. 19, 21, 23-30 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31: legible groups not yet segmented into words (re-read 23 Oct 2026 with the original key R5411, two passes) - blocker: not-attempted; a third pass with key_R5411.md is worthwhile
+- 2831 legible letter groups that do not segment into words with the full key: p. 1 L04 (two -ione words), L11, L12, L22, L24; p. 2 L09, L15, L16; p. 4 L02; p. 2 ll. 20, 22, 24-31 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31 - blocker: not-attempted; three sign-by-sign passes done (b25 twice, r2e with R5411), a fourth with the lang/ Italian model as segmenter over the decoded strings not yet tried
+- 2831 p. 2 ll. 18-31 and p. 3 stay decoded, not read (0.466 explicit-hole) - blocker: not-attempted; the same segmentation pass is the next step
 Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
 and R1158 are other ciphers and are not part of this reading.
 - 2831 p. 3 l. 15, signs under an ink blot - blocker: illegible
-- 2831 p. 1 ll. 21–26, last words of each line - blocker: illegible; stain at the right edge, no other image (DECODE and Vestigia serve the same negative)
+- 2831 p. 1 ll. 21–29, last words of each line - blocker: illegible; stain at the right edge, no other image (DECODE and Vestigia serve the same negative); re-checked at 3x 23 Oct 2026 (r2e)
 - signs in the torn columns of R5411 (x, y, z, &, part of t), r-ring on p. 3 l. 15, and the o-form (b by the key, t in most words) - blocker: no-key-material; R5411 is torn at the upper right
-- share of cipher signs read - blocker: not-attempted; never measured; p. 2-3 sign strings now in trans/v2831p2_b25.md and v2831p3_b25.md
 
 ## Escalation
 - [x] siblings: Maffeo's and the embassy's letters in cart. 642/645/650 opened on Vestigia and DECODE: R1155 (clear copy Vestigia 2240), R1147 (Vestigia 603, Labancz no. 45), R1152 (clear draft), R1146 and R1158 (other ciphers); no clear copy of 2831 or R1098 exists among them
@@ -168,4 +184,4 @@ and R1158 are other ciphers and are not part of this reading.
 - [x] known-keys: Somogyi's 2016 key used first; 23 Oct 2026 the original key found, ASMi Sforzesco cart. 1597 no. 111 (DECODE R5411, key_R5411.md), and used for p. 2 ll. 17-30 and p. 3; the abbot of Forlì's cipher (R1146/R1147) is a different system
 - [x] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, MDE IV (1878): R1098 is printed as no. 91 (contemporary extract), 2831 is not in it (search of 9 Oct 2026 recorded in the main checkout's uncommitted NOTES); Vestigia 2831 lists no publication
 - [x] key-rebuild: about twenty sign values beyond Somogyi's table recovered from the unread letters by single-word cribs (7 = f, n+crossed 4 = ss, x' = do, a: = gli, q^o = re, b^a = na)
-- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; V2831 p. 1-2 not yet re-run with R5411
+- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; 23 Oct 2026 (r2e) p. 1, p. 2 ll. 1-17 and p. 4 re-read sign by sign with R5411 (read, 0.642) and a third pass on b25's p. 2 lines
