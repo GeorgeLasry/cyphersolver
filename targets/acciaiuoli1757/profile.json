@@ -150,6 +150,43 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "what": "DECODE record pages of R25, R195, R200, R201 re-fetched with the project cookie; their DOC_*.png attachments (described in NOTES as 'key and work images', never opened) downloaded: they are the Secretariat of State's clear decipherments and working drafts of R25 (ff. 90-93), R195 (ff. 94-95), R196, R198, R200 (ff. 107-113, two fair copies and a draft), R201 (ff. 161-162).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "The clear decipherments of R25, R195, R200, R201 transcribed line by line from the images (texts/R*_decipherment.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "crib testing"
+   ],
+   "what": "Each decipherment aligned word by word with the key decode (b12_dec.py, b12_align.py; texts/R*_align.tsv): ~65% of clear words carried letter by letter, ~25% by code groups whose implied values agree across the four letters (2300 tutt-, 2171 molt-, 2189 quest-, 2530 Marchese, 2774 Re, 2803 Segretario, 2823 Sua Maestà ...); the rest fall where DECODE's digit transcription is garbled. Key correction: 03 = per, not nel. READING.md's 2530 = chirurgo withdrawn.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "R195 line 11 re-read on the cipher image where the decipherer left a hole ('non s'intende'): 2180 14 55 75 05 59 98 55 98 53 = 'poiché non ha da durari' (DECODE: '2 1 8 0 ? 4 5 5 ...'); the draft agrees. R195 line 3 ('pare solamente assicurato') checked on the image and not explained by the key.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "_check_reading.py on the reading bodies: R25 0.87, R195 0.91, R200 1.0, R201 0.95 clean sentences. All eight letters now read; fraction_read 1.0.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -157,28 +194,46 @@
    {
     "doc": "p117",
     "label": "117/1 = R25, ff. 95r-95v, 12 Sept 1758",
-    "transcription": "decode/DOC_R25_D1656_1656.txt",
+    "transcription": [
+     "decode/DOC_R25_D1656_1656.txt",
+     "texts/R25_decipherment.txt"
+    ],
     "decryption": [
      "texts/R25_decryption.md",
      "decode/DOC_R25_D3231_3231.txt"
     ],
     "summary": "The nuncio's secret account of the attempt of 3 Sept 1758 on José I: coming back from a lady \"delle prime famiglie\" (the young Marchioness of Távora), the king was fired on in his calesse, his valet and favourite Pedro Teixeira badly wounded and the king hit in the right arm. The blow was thought to come from her relatives or from Teixeira's enemies.",
     "language": "it",
-    "state": "decoded, not read",
-    "note": "R25: the story of the attempt on the king follows, but an open <nnnn> code or a [?] gap breaks almost every sentence; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
+    "reading": "texts/R25_reading.md",
+    "translation": "texts/R25_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R25_decipherment.txt), aligned word by word with the key decode (texts/R25_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.87 (20 of 23 sentences); 'Vilasso' after Texeira kept from the decipherment, unconfirmed by the figures."
+    }
    },
    {
     "doc": "p117",
     "label": "117/2 = R195, f. 98r, Sept 1758",
-    "transcription": "decode/DOC_R195_D1657_1657.txt",
+    "transcription": [
+     "decode/DOC_R195_D1657_1657.txt",
+     "texts/R195_decipherment.txt"
+    ],
     "decryption": [
      "texts/R195_decryption.md",
      "decode/DOC_R25_D3231_3231.txt"
     ],
     "summary": "The public version of the king's injury is illness; the arm is said to be broken. Fleets and ships are held back, to the merchants' loss.",
     "language": "it",
-    "state": "decoded, not read",
-    "note": "R195: open codes and '…' gaps in nearly every sentence; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
+    "reading": "texts/R195_reading.md",
+    "translation": "texts/R195_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R195_decipherment.txt), aligned word by word with the key decode (texts/R195_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.91 (10 of 11 sentences); the decipherer's one hole ('poiché non . . .', margin 'non s'intende') read on the cipher image: 'poiché non ha da durare', as in the draft; two stretches not confirmed by the transcribed figures are marked [?]."
+    }
    },
    {
     "doc": "p117",
@@ -251,28 +306,46 @@
    {
     "doc": "p117",
     "label": "117/7 = R200, ff. 115r-115v, 28 [Nov?] 1758",
-    "transcription": "decode/DOC_R200_D1662_1662.txt",
+    "transcription": [
+     "decode/DOC_R200_D1662_1662.txt",
+     "texts/R200_decipherment.txt"
+    ],
     "decryption": [
      "texts/R200_decryption.md",
      "decode/DOC_R25_D3231_3231.txt"
     ],
     "summary": "Carvalho (Pombal) is despotic and the king fears him; the court, the Infantes and the confessors; the expulsion of Jesuits and a lay brother of the Society; the nuncio is distrusted.",
     "language": "it",
-    "state": "decoded, not read",
-    "note": "R200: open codes and '…' gaps in nearly every sentence (3 of 23 sentences clean, docs/_check_reading.py), transcription slips; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
+    "reading": "texts/R200_reading.md",
+    "translation": "texts/R200_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R200_decipherment.txt), aligned word by word with the key decode (texts/R200_align.tsv; code values consistent across the four letters); _check_reading.py on the body 1.0 (31 of 31 sentences); checked against the second fair copy and the draft; 2803 = Segretario (draft); the ambassador code 2339 left blank by the decipherer read 'Ambasciatore di [?Spagna]' from the draft."
+    }
    },
    {
     "doc": "p117",
     "label": "117/8 = R201, f. 280r, Lisbon 12 [?] 1760",
-    "transcription": "decode/DOC_R201_D1663_1663.txt",
+    "transcription": [
+     "decode/DOC_R201_D1663_1663.txt",
+     "texts/R201_decipherment.txt"
+    ],
     "decryption": [
      "texts/R201_decryption.md",
      "decode/DOC_R25_D3231_3231.txt"
     ],
     "summary": "Conferences of the Conde d'Oeiras (Carvalho); the Princess of Brazil's marriage to Infante Don Luis of Spain or to Don Pedro; London is alarmed at a Bourbon on the Portuguese throne. The marriage to Don Pedro took place in June 1760.",
     "language": "it",
-    "state": "decoded, not read",
-    "note": "R201: open codes and gaps in nearly every sentence (4 of 23 clean), transcription slips; the gist is recoverable, the sentences are not (reading audit, 22 Oct 2026)."
+    "reading": "texts/R201_reading.md",
+    "translation": "texts/R201_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R201_decipherment.txt), aligned word by word with the key decode (texts/R201_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.95 (18 of 19 sentences); a second clear text of the letter is f. 162 (D1416)."
+    }
    }
   ],
   "key_file": [
@@ -280,18 +353,18 @@
    "texts/key.md"
   ],
   "method": "read with known key",
-  "method_basis": "Lasry's reconstructed key (DECODE DOC_R25_D3232, Oct 2020) and his letter-level decryption were attached to every record (R25, R195-R201); the stream was split into Italian words here and 25 nomenclator codes fixed from the three contemporary decipherments on R197-R199.",
+  "method_basis": "Lasry's reconstructed key (DECODE DOC_R25_D3232, Oct 2020) and his letter-level decryption were attached to every record (R25, R195-R201); the stream was split into Italian words here and 25 nomenclator codes fixed from the three contemporary decipherments on R197-R199. 22 Oct 2026: the four letters that did not build sentences (R25, R195, R200, R201) read from the Secretariat of State's clear decipherments, attached to the DECODE records as png files, aligned word by word with the key decode.",
   "contribution": [
    "key extended or corrected"
   ],
-  "class": "read in part",
-  "fraction_read": 0.246,
+  "class": "read",
+  "fraction_read": 1.0,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "All eight read at the letter level; about 80 of 107 codes codes open; parts of R200/R201 garbled by transcription slips. 22 Oct 2026, reading audit: R25, R195, R200, R201 relabelled decoded, not read (open codes in almost every sentence); class read -> read in part.",
+  "notes": "All eight read at the letter level; about 80 of 107 codes codes open; parts of R200/R201 garbled by transcription slips. 22 Oct 2026, reading audit: R25, R195, R200, R201 relabelled decoded, not read (open codes in almost every sentence); class read -> read in part. 22 Oct 2026, re-read (REREAD_BRIEF b12): R25, R195, R200, R201 read from the Secretariat's clear decipherments on DECODE (attachments), aligned with the figures; all eight read; class read in part -> read. Open: 2339 (an ambassador, 'di Spagna' only in the draft) and the code groups of R196 not in a decipherment.",
   "credits": [
    {
     "who": "lasry",
@@ -304,9 +377,14 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "three leaves deciphered at the time (R197-R199); 25 nomenclator codes fixed from them"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Secretariat of State's clear decipherments of R25, R195, R200, R201 (Portogallo 117 ff. 90-91, 94, 108-111, 161-162), attached to the DECODE records as png files"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Read: R196 (492 tokens), R197 (190), R198 (577), R199 (791) = 2,050 of 8,326 cipher tokens (DECODE digit transcriptions decode/DOC_R*_D1656-1663 measured with docs/_check_profile.py --measure) = 0.246. R25, R195, R200, R201 are decoded, not read. The earlier class 'read' (all eight 'read at the letter level') is withdrawn."
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Read: R196 (492 tokens), R197 (190), R198 (577), R199 (791) = 2,050 of 8,326 cipher tokens (DECODE digit transcriptions decode/DOC_R*_D1656-1663 measured with docs/_check_profile.py --measure) = 0.246. R25, R195, R200, R201 are decoded, not read. The earlier class 'read' (all eight 'read at the letter level') is withdrawn. 22 Oct 2026, re-read (b12): R25, R195, R200, R201 now read from the Secretariat's clear decipherments, so all eight letters read: 8,326 of 8,326 cipher tokens = 1.0."
  }
 }

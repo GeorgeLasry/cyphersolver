@@ -9,6 +9,20 @@ ta que lo no ministro s ce sa re os pu b li ro n"); the gist below was summarise
 reading. 5,489 of 7,784 cipher tokens (70.5%) are in letters that read. The "Status: read" and the 97% below are
 withdrawn as reading claims (97% is the key's coverage of the groups).
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch b12, Claude Opus 5.5): **R992, R996, R997, R998 stay decoded, not read.**
+No contemporary text exists for them: the DECODE records hold only the images and DECODE's digit transcription, the
+cipher pages carry no margin, and no clear copy or edition is known. The key decodes were segmented into Spanish word
+by word (`research/reading_audit/b12_bal.py` prints each tx/ line as token=value) with second values that hold across
+the letters: 63 = s as well as no (los, demás, sus), 77 = t (nosotros, atraer), the r-sign = stra/tra (nuestra,
+tratar), 69 = ru (prudencia), 116 = carta. Images were checked at the breaks (R992 l. 10: 42, not 48, "resolución
+violenta"; `read/R992_corrections.tsv`). Partial readings `read/R*_reading.md` (English `read/R*_en.md`, logs
+`read/R*_reread_log.md`) score 0.29 (R992), 0.40 (R996), 0.41 (R997), 0.13 (R998) clean sentences, below the 0.60 bar.
+What does read: R992 "pues de nuestra parte no nos [85] que hacer ... resolución violenta de esos confederados,
+principalmente si, después de lo de Charleroy, instaren en la junta ..."; R996 "ni nosotros ni los demás aliados
+tenemos tampoco parte ... Ha sido muy prudente la diligencia de evitar V.S. este oficio"; R997 "en que excuso discurrir
+por no crecerme la melancolía"; R998 "cuando [189] la pérdida de Gante estamos temiendo la de Ipre[s] [...] otras
+importantes plazas". The gist paragraphs below are superseded by these readings where they differ.
+
 Fourteen ciphered despatches of Pablo Spínola Doria, 3rd marqués de los Balbases, Spanish plenipotentiary at the
 Nijmegen peace congress, to Baltasar de Fuenmayor, Spanish envoy in Denmark. They are dated 29 June 1677 to 22 March 1678.
 Archives générales du Royaume, Brussels, Secrétairerie d'État et de Guerre, inv. nr. 2559. The images and DECODE's
@@ -104,16 +118,17 @@ R989 21 Dec; R990 19 Oct; R991 5 Oct(?); R992 19 Sept; R993 28 Dec 1677; R994 15
 R997 8 Mar; R998 22 Mar 1678.
 
 ## Remaining gaps
-- R992, R996, R997, R998 decoded, not read (2,295 cipher tokens; syllable streams from the key; reading audit 22 Oct 2026) - blocker: not-attempted; segment the streams into Spanish words, resolve the groups not in the key from context, write out and translate
+- R992, R996, R997, R998 decoded, not read (2,295 cipher tokens; partial readings 0.13-0.41 clean sentences, re-read 22 Oct 2026): rare groups with no value in the key (fol, 85, 150, 182, 187, 17, 189, bon, i8 ...) - blocker: no-key-material
+- the same four: stretches where the homophones do not segment and the 1616-px greyscale scans do not settle the doubtful figures (struck, overwritten) - blocker: needs-physical-access (originals at the AGR Brussels, SEG 2559)
 
 ## Escalation
 
 Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
-not read. None of these steps has been redone since; each is open for those documents.
+not read. Re-read 22 Oct 2026 (b12):
 
-- [ ] siblings: other letters of the same series or key, read or deciphered at the time
-- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
-- [ ] known-keys: other keys of the same correspondents tried
-- [ ] print: printed editions and calendars searched for these letters
-- [ ] key-rebuild: the key corrected against the documents that read
-- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images
+- [x] siblings: the ten margined letters and Ronquillo 1676 (same key) used for the second values; none is a copy of these four
+- [x] clear-pages: the clear opening and closing paragraphs of each letter checked; they are not the decipherment
+- [x] known-keys: the eight Brussels keys R958-R965 did not fit (19 Sept); key.json used
+- [x] print: none known (19 Sept); not searched again
+- [x] key-rebuild: second values 63 = s, 77 = t, r = stra/tra, 69 = ru, 116 = carta found across the letters
+- [x] retry: all four segmented sentence by sentence; images checked at the breaks; below the bar

@@ -197,6 +197,30 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "what": "DECODE records R992, R996, R997, R998 re-fetched with the project cookie (b12_fetch.py): only the page images and DECODE's digit transcriptions; no decipherment attached, no margin on the cipher pages.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "The key decodes of R992, R996-R998 printed token by token (b12_bal.py) and segmented into Spanish words by hand; second values found to hold across the letters: 63 = s (los, demás, sus), 77 = t (nosotros, atraer), the r-sign = stra/tra (nuestra, tratar), 69 = ru (prudencia); images checked at the breaks (R992 l. 10: 42, not 48 = 'resolución violenta').",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "_check_reading.py on the partial readings (bodies): R992 0.29, R996 0.40, R997 0.41, R998 0.13 clean sentences; all four stay decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -365,7 +389,9 @@
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, not deciphered before (gist from NOTES): On the protest the Imperial ministers published about the dissolution of the Bremen assembly. He has nothing to add: \"de nuestra parte no nos queda que hacer sino es … temer\" what the confederates will do.",
     "language": "es",
     "state": "decoded, not read",
-    "note": "Key decryption only: a syllable-by-syllable stream with groups not in the key ('ve o la p ro te s ta que lo no ministro s ce sa re os pu b li ro n'); the gist in NOTES is a summary, the sentences cannot be built (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22 Oct 2026 (b12): no contemporary decipherment, clear copy or edition exists (no margin; the DECODE record has only the images). The key decode was segmented into Spanish word by word, with second values that hold across the letters (63 = s, 77 = t, the r-sign = stra/tra, 69 = ru) and the images checked at the breaks; the partial reading read/R992_reading.md scores 0.29 clean sentences (5 of 17), below the 0.60 bar. Open: rare groups with no value in the key (no key material) and stretches where the homophones do not segment; the 1616-px greyscale scans do not settle the doubtful figures.",
+    "reading": "read/R992_reading.md",
+    "translation": "read/R992_en.md"
    },
    {
     "doc": "margined",
@@ -420,7 +446,9 @@
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, not deciphered before (gist from NOTES): Sweden could not undo the distrust they feel towards the allies. What causes it is the miserable state of their own affairs and the allies' impatience.",
     "language": "es",
     "state": "decoded, not read",
-    "note": "Key decryption only: a syllable-by-syllable stream with groups not in the key ('ve o la p ro te s ta que lo no ministro s ce sa re os pu b li ro n'); the gist in NOTES is a summary, the sentences cannot be built (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22 Oct 2026 (b12): no contemporary decipherment, clear copy or edition exists (no margin; the DECODE record has only the images). The key decode was segmented into Spanish word by word, with second values that hold across the letters (63 = s, 77 = t, the r-sign = stra/tra, 69 = ru) and the images checked at the breaks; the partial reading read/R996_reading.md scores 0.40 clean sentences (12 of 30), below the 0.60 bar. Open: rare groups with no value in the key (no key material) and stretches where the homophones do not segment; the 1616-px greyscale scans do not settle the doubtful figures.",
+    "reading": "read/R996_reading.md",
+    "translation": "read/R996_en.md"
    },
    {
     "doc": "unread",
@@ -430,7 +458,9 @@
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, not deciphered before (gist from NOTES): In the business of the Brunswicks' claim with the Danes to the treatment of ambassadors, nothing has been conceded. Nor was any formal act in writing made at the first step the other days.",
     "language": "es",
     "state": "decoded, not read",
-    "note": "Key decryption only: a syllable-by-syllable stream with groups not in the key ('ve o la p ro te s ta que lo no ministro s ce sa re os pu b li ro n'); the gist in NOTES is a summary, the sentences cannot be built (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22 Oct 2026 (b12): no contemporary decipherment, clear copy or edition exists (no margin; the DECODE record has only the images). The key decode was segmented into Spanish word by word, with second values that hold across the letters (63 = s, 77 = t, the r-sign = stra/tra, 69 = ru) and the images checked at the breaks; the partial reading read/R997_reading.md scores 0.41 clean sentences (7 of 17), below the 0.60 bar. Open: rare groups with no value in the key (no key material) and stretches where the homophones do not segment; the 1616-px greyscale scans do not settle the doubtful figures.",
+    "reading": "read/R997_reading.md",
+    "translation": "read/R997_en.md"
    },
    {
     "doc": "unread",
@@ -440,11 +470,26 @@
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, not deciphered before (gist from NOTES): On the dependencies between the northern princes, who are of enough calibre to keep us embarrassed. He writes of the evils \"que nosotros estamos padeciendo\", worse than anything.",
     "language": "es",
     "state": "decoded, not read",
-    "note": "Key decryption only: a syllable-by-syllable stream with groups not in the key ('ve o la p ro te s ta que lo no ministro s ce sa re os pu b li ro n'); the gist in NOTES is a summary, the sentences cannot be built (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22 Oct 2026 (b12): no contemporary decipherment, clear copy or edition exists (no margin; the DECODE record has only the images). The key decode was segmented into Spanish word by word, with second values that hold across the letters (63 = s, 77 = t, the r-sign = stra/tra, 69 = ru) and the images checked at the breaks; the partial reading read/R998_reading.md scores 0.13 clean sentences (2 of 15), below the 0.60 bar. Open: rare groups with no value in the key (no key material) and stretches where the homophones do not segment; the 1616-px greyscale scans do not settle the doubtful figures.",
+    "reading": "read/R998_reading.md",
+    "translation": "read/R998_en.md"
    }
   ],
   "key_file": "key.json",
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Cipher tokens in the key-decryption section of read/R*.txt: the ten margined letters 5,489, the four without a margin (R992 427, R996 904, R997 480, R998 484) 2,295; 5,489 of 7,784 = 0.705. The earlier 0.97 (share of the 8,150 groups covered by the key) is withdrawn as a reading figure."
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Cipher tokens in the key-decryption section of read/R*.txt: the ten margined letters 5,489, the four without a margin (R992 427, R996 904, R997 480, R998 484) 2,295; 5,489 of 7,784 = 0.705. The earlier 0.97 (share of the 8,150 groups covered by the key) is withdrawn as a reading figure. 22 Oct 2026, re-read (b12): R992, R996, R997, R998 given partial readings (0.13-0.41 clean sentences) and kept decoded, not read; fraction unchanged.",
+  "key": "partial",
+  "gaps": [
+   {
+    "item": "R992, R996, R997, R998: rare groups with no value in the key (fol, 85, 150, 182, 187, 17, 189, bon, i8 ...)",
+    "blocker": "no-key-material",
+    "detail": "once or twice in all fourteen letters, none in a margined letter; partial readings 0.13-0.41 clean sentences (22 Oct 2026)"
+   },
+   {
+    "item": "R992, R996, R997, R998: stretches where the homophones do not segment into Spanish",
+    "blocker": "needs-physical-access",
+    "detail": "the 1616-px greyscale DECODE scans do not settle the doubtful (struck, overwritten) figures; originals at the AGR Brussels, SEG 2559"
+   }
+  ]
  }
 }

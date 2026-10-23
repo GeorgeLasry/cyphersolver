@@ -1,6 +1,6 @@
-# Acciaiuoli (nuncio in Lisbon) to the Secretariat of State, 1758–60 — read in part (reading audit, 22 Oct 2026)
+# Acciaiuoli (nuncio in Lisbon) to the Secretariat of State, 1758–60 — read (re-read 22 Oct 2026)
 
-Status: in progress (reading audit, 22 Oct 2026: some documents are decoded, not read; see Remaining gaps).
+Status: in progress (re-read 22 Oct 2026: all eight letters now read; the write-up pages still describe the audit state).
 
 Catalogue: "Portuguese nuncio Acciaiuoli and the abbot Testa to The Secretariat", DECODE R25, R195–R201 (8 records).
 ASV (AAV), Segreteria di Stato, Portogallo 117 ("Lettere di mons. Acciaiuoli, nunzio in Portugallo, e dell'abbate
@@ -17,6 +17,19 @@ a few passages in the long R200/R201 are broken by transcription slips.
 R196, R197, R198 and R199 read (the three deciphered on the leaf, and R196 with a few open codes). **R25, R195, R200 and
 R201 are decoded, not read**: the story follows, but an open code or a gap breaks almost every sentence. Read: 2,050 of
 8,326 cipher tokens (24.6%). The earlier "READ" claim below is withdrawn.
+
+22 Oct 2026, re-read (REREAD_BRIEF, batch b12, Claude Opus 5.5): **all eight read.** The DECODE records carry png
+attachments (DOC_R25_D944-947, D1107-1109; DOC_R195_D1400-1407; DOC_R200_D1411-1413, D1453-1460; DOC_R201_D1414-1416)
+that this file had called "key and work images". They are the Secretariat of State's own clear decipherments ("Decif.
+li 11 Ottobre" etc.) and working drafts, Portogallo 117 ff. 90-113 and 161-162. The clear texts of R25 (ff. 90r-91r),
+R195 (f. 94r), R200 (ff. 108r-109r, second copy ff. 110r-111r) and R201 (f. 161) are transcribed in
+`texts/R*_decipherment.txt` and aligned word by word with the key decode (`research/reading_audit/b12_dec.py`,
+`b12_align.py`; `texts/R*_align.tsv`); the readings are `texts/R*_reading.md`, English `texts/R*_en.md`, logs
+`texts/R*_reread_log.md`. Clean sentences (reading bodies): R25 0.87, R195 0.91, R200 1.0, R201 0.95. Findings:
+03 is "per", not "nel"; 2530 = Marchese (not chirurgo); 2823 = Sua Maestà; 2803 = Segretario (the draft interlines it
+over "Sig.re de Carvalho"); R195's hole "poiché non . . ." (margin "non s'intende") is "poiché non ha da durare" on the
+cipher image. The same attachments hold clear decipherments of R196 (f. 97) and R198 and an unrecorded cipher letter of
+28 Nov 1758 ("Si continua a mantenere il segreto sulla causa del male del Re", f. 107). Fraction read 1.0.
 
 ## Key
 
@@ -57,16 +70,18 @@ Contamination: Lasry's letter-level decryption was public on DECODE (logged-in a
 The word division, the code identifications and the historical reading are new here.
 
 ## Remaining gaps
-- R25, R195, R200, R201 decoded, not read (6,276 tokens; open codes in almost every sentence; reading audit 22 Oct 2026) - blocker: not-attempted; value the recurring codes from the clear letters in Portogallo 117 and the three deciphered leaves, fix the transcription slips on the images, write out and translate
+- closed 22 Oct 2026: R25, R195, R200, R201 read from the Secretariat's clear decipherments on DECODE (texts/R*_reading.md)
+- R200 code 2339 (an ambassador; the fair copies leave it blank, the draft gives 'di Spagna') - blocker: no-key-material
+- R25 'Vilasso' (the figures, checked on the image, give 'suo iasso'; word not identified) and R195 'pare solamente assicurato' (figures legible, the key does not give these words) - blocker: no-key-material
 
 ## Escalation
 
 Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
-not read. None of these steps has been redone since; each is open for those documents.
+not read. Re-read 22 Oct 2026 (b12):
 
-- [ ] siblings: other letters of the same series or key, read or deciphered at the time
-- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
-- [ ] known-keys: other keys of the same correspondents tried
-- [ ] print: printed editions and calendars searched for these letters
-- [ ] key-rebuild: the key corrected against the documents that read
-- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images
+- [x] siblings: R196-R199 and their decipherments used for the code table
+- [x] clear-pages: the png attachments on DECODE are the Secretariat's clear decipherments of R25, R195, R200, R201 (used)
+- [x] known-keys: Lasry's key (DOC_R25_D3232) used; 03 corrected to per
+- [x] print: none found (19 Sept web search); not needed now
+- [x] key-rebuild: code values from the four decipherments (texts/R*_align.tsv)
+- [x] retry: all four re-read and aligned; R195 l. 11 re-read on the image
