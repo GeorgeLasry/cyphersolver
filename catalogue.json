@@ -1755,19 +1755,19 @@
   {
    "id": 225,
    "counted": true,
-   "year": 1789,
-   "date": "15 Jan 1789 – 26 Aug 1799",
-   "title": "Frederik Gijsbert van Dedem tot de Gelder (Constantinople) to Van de Spiegel and Van der Goes, 3 unread ciphertexts (1789, 1793, 1799)",
-   "correspondents": "Frederik Gijsbert van Dedem tot de Gelder (1743-1820) → Maarten van der Goes (1751-1826 / Laurens Pieter van de Spiegel (1737-1800)",
+   "year": 1799,
+   "date": "26 Aug 1799",
+   "title": "Frederik Gijsbert van Dedem tot de Gelder (Constantinople) to Maarten van der Goes, No. XVIII \"Duplicaat\", 26 Aug 1799 (R1895)",
+   "correspondents": "Frederik Gijsbert van Dedem tot de Gelder (1743-1820) → Maarten van der Goes (1751-1826)",
    "place": "Constantinople, Ottoman Empire",
    "language": "Dutch",
    "region": "Low Countries",
    "period": "1701-1800",
-   "shelfmark": "NA The Hague, 02.01.08. Ministerie van Buitenlandse Zaken, 1796-1810, inv (4 items)",
+   "shelfmark": "NA The Hague, 2.01.08 (Ministerie van Buitenlandse Zaken, 1796-1810) inv. 346",
    "folio_note": "",
    "cls": "C",
-   "status": "DECODE lists R2122, R2131, R1895 with no decipherment. R2120 (22 Dec 1788) was read at the time: its decipherment is filed as R2121. R2122/R2131: homophonic word code, no key on DECODE; cribs R2121, R1947, R2053 transcribed; word aligners found no consistent values (21 Sept), but the second pass (Feyseel Nur, 4 Oct 2026, PR #21) showed the code alphabetical within 500-group blocks, and a 354-value table decodes R2122 and R2131 in part, 41% of groups firm (targets/dedem1788/). R1895: different marked system, its own entry since 14 Oct 2026 (targets/dedem1799/), not transcribed.",
-   "why": "Ciphered despatches of Frederik Gijsbert van Dedem tot de Gelder (1743-1820) to Maarten van der Goes (1751-1826 / Laurens Pieter van de Spiegel (1737-1800), 11 Oct 1788 – 26 Aug 1799; what the cipher hides is not known.",
+   "status": "Narrowed 23 Oct 2026 to R1895. R2120 (22 Dec 1788) was read at the time (its decipherment is R2121); R2122 (15 Jan 1789) and R2131 (9 Feb 1793) were read on 23 Oct 2026 with the legation codebook filed under Kroll, NA 1.02.20 inv. 785 (targets/dedem1788/, dedem1788.html), and leave the catalogue. R1895 (1799) is a different marked numerical code, its own target since 14 Oct 2026 (targets/dedem1799/): not transcribed, no key on DECODE.",
+   "why": "A ciphered despatch of Frederik Gijsbert van Dedem tot de Gelder to Maarten van der Goes, Constantinople, 26 Aug 1799; what the cipher hides is not known.",
    "importance": 2,
    "solvability": 3,
    "difficulty": 5,
@@ -1778,29 +1778,18 @@
     {
      "label": "DECODE R1895",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/1895"
-    },
-    {
-     "label": "DECODE R2122",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/2122"
-    },
-    {
-     "label": "DECODE R2131",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/2131"
     }
    ],
    "seen": "catalogue",
    "source": "DECODE",
    "decode_ids": [
-    1895,
-    2120,
-    2122,
-    2131
+    1895
    ],
    "scored": "rule",
    "outcome": "attempted, open",
-   "writeup": "dedem1788.html",
-   "known": "R2120 (22 Dec 1788) deciphered at the time; the clear decipherment is DECODE R2121. Code layout recovered from the sibling decipherments (Feyseel Nur, 4 Oct 2026, PR #21): alphabetical within 500-group blocks; R2122 and R2131 decoded in part, 123 of 301 groups with firm values (dedem1788.html).",
-   "open": "R2122 and R2131: the groups with no attested value (open codes; more deciphered letters in the code, R1948-R1952, R2134, R2141, would test it). R1895 (1799, a different marked system, dedem1799): not transcribed, no key.",
+   "writeup": null,
+   "known": "Siblings: R2120 deciphered at the time (R2121); R2122 and R2131 read 23 Oct 2026 with the Kroll codebook (NA 1.02.20 inv. 785; dedem1788.html). Nothing known for R1895.",
+   "open": "R1895 (1799): a marked numerical code (two- and three-digit groups with marks above and lines below), not transcribed, no key.",
    "as_of": "2026-10-21"
   },
   {
@@ -2095,7 +2084,7 @@
    "cls": "C",
    "seen": "catalogue",
    "source": "DECODE",
-   "status": "Checked 22 Sept 2026: DECODE R4933-R4942 are N/A with no decryption attached, and no published reading was found. The collection is at the Romanian National Archives in Cluj, not Sibiu. Attempted 23 Sept 2026 (targets/transylvania1645/): 28 images fetched with the DECODE login; a shared Hungarian alphabet family (c=p, p=c, g=u, q=t) recovered by quadgram annealing on R4936; R4940 read; R4936, R4937, R4942 in fragments; R4941 a different substitution. Split by system 14 Oct 2026 (one key per entry): the Bethlen alphabet family with R4938-R4939 uninspected in targets/transylvania1645/, R4941 in targets/r4941/, the Kemény_XIX_1628 records R4933-R4935 in targets/kemeny1628/; all in progress.",
+   "status": "Checked 22 Sept 2026: DECODE R4933-R4942 are N/A with no decryption attached, and no published reading was found; the collection is at the Romanian National Archives in Cluj, not Sibiu. Split by system 14 Oct 2026 (one key per entry). Narrowed 23 Oct 2026: R4937, R4940 and R4942 read with the Bethlen family key recovered ciphertext-only, and R4939 broken ciphertext-only in its own key and read (targets/transylvania1645/, transylvania1645.html); they leave the catalogue. Still open: R4936 (decoded with the family key, not read: g/q look-alikes the 1,704-px scan cannot separate), R4938 (three short spans decoded, one word unread), R4941 (a different substitution, targets/r4941/) and the Kemény XIX records R4933-R4935 (targets/kemeny1628/).",
    "why": "Transylvania under George I Rákóczi, around the peace of Linz (1645).",
    "importance": 2,
    "solvability": 4,
@@ -2108,28 +2097,12 @@
      "href": "https://de-crypt.org/decrypt-web/RecordsView/4936"
     },
     {
-     "label": "DECODE R4937",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/4937"
-    },
-    {
      "label": "DECODE R4938",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/4938"
     },
     {
-     "label": "DECODE R4939",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/4939"
-    },
-    {
-     "label": "DECODE R4940",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/4940"
-    },
-    {
      "label": "DECODE R4941",
      "href": "https://de-crypt.org/decrypt-web/RecordsView/4941"
-    },
-    {
-     "label": "DECODE R4942",
-     "href": "https://de-crypt.org/decrypt-web/RecordsView/4942"
     },
     {
      "label": "DECODE R4933",
@@ -2146,22 +2119,19 @@
    ],
    "decode_ids": [
     4936,
-    4937,
     4938,
-    4939,
-    4940,
     4941,
-    4942,
     4933,
     4934,
     4935
    ],
    "scored": "sweep",
    "prior_art": "open (checked 22 Sept 2026)",
-   "outcome": "attempted, open: in progress; Hungarian letter substitution recovered ciphertext-only, R4940 cipher spans read, nine records unread or unverified (23 Sept 2026, targets/transylvania1645/)",
-   "known": "A Hungarian letter substitution (c=p, p=c, g=u, q=t) recovered ciphertext-only here by quadgram annealing on R4936, 23 Sept 2026; R4940's cipher spans deciphered with it, R4936, R4937 and R4942 in fragments (transylvania1645).",
-   "open": "R4936, R4937, R4942 mostly not deciphered (no outside blocker; work in progress); R4938-R4939 not inspected; R4941 a different substitution, not deciphered (r4941); R4933-R4935 (Kemény XIX) not transcribed (kemeny1628).",
-   "as_of": "2026-10-21"
+   "outcome": "attempted, open: R4936 decoded, not read (illegible look-alikes); R4938 one word too short; R4941 and R4933-R4935 in their own targets",
+   "known": "Bethlen family key (c=p, p=c, g=u, q=t) recovered ciphertext-only 23 Sept 2026; R4937, R4940, R4942 read with it and R4939 broken in its own paired alphabet, 23 Oct 2026 (transylvania1645.html).",
+   "open": "R4936 decoded, not read (g/q look-alikes; a sharper image of Keresdi Bethlen 14 needed); R4938 one word too short; R4941 a different substitution, not deciphered (r4941); R4933-R4935 not transcribed (kemeny1628).",
+   "as_of": "2026-10-21",
+   "writeup": "transylvania1645.html"
   },
   {
    "id": 280,

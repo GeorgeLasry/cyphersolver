@@ -441,24 +441,27 @@
    "records": {
     "R53": {
      "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Read in part with Lasry's partial F22b key (the key filed on this record), segmented by a beam search with an Italian language model: long stretches readable (the vice-legate of Avignon at Tours; heretics and Catholics mixing at court; Mayenne near Le Mans). Not Meister no. 40, the key of the other Francia 22 enclosures.",
+     "proposed": "Decrypted",
+     "note": "Read in part with Lasry's partial F22b key (the key filed on this record), segmented by a beam search with an Italian language model: long stretches readable (the vice-legate of Avignon at Tours; heretics and Catholics mixing at court; Mayenne near Le Mans). Not Meister no. 40, the key of the other Francia 22 enclosures. 23 Oct 2026 (reading audit): read from the contemporary 1589 decipherment on ff. 500r-500v, imaged as png attachments of R54 (D1099, D1095), aligned with the figures under Lasry's partial F22b key; key value 4 = c adopted (17 places). Date and place: Moulins, May 1589 (not Tours, spring).",
      "reading": [
       {
-       "file": "targets/morosini1589/decrypt_raw.txt",
-       "block": "== R53 "
+       "file": "targets/morosini1589/texts/R53_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "fields": {
+      "place": "Moulins",
+      "start_year": 1589,
+      "start_month": 5
+     }
     },
     "R54": {
      "decode_status": "Partially decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Read in part (fragments) with Lasry's partial F22b key, segmented by a beam search with an Italian language model; dated in clear Moulins, 11 May 1589. Not Meister no. 40.",
+     "proposed": "Decrypted",
+     "note": "Read in part (fragments) with Lasry's partial F22b key, segmented by a beam search with an Italian language model; dated in clear Moulins, 11 May 1589. Not Meister no. 40. 23 Oct 2026 (reading audit): the png attachments D1099 and D1095 of this record are the contemporary decipherment (ff. 500r-500v) of R53 and R54; read from it, aligned with the figures; 4 = c.",
      "reading": [
       {
-       "file": "targets/morosini1589/decrypt_raw.txt",
-       "block": "== R54 "
+       "file": "targets/morosini1589/texts/R54_reading.md"
       }
      ],
      "sent": false
@@ -512,7 +515,7 @@
     "R787": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Deciphered by George Lasry (key 'TNA SP106-2' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext on all 1538 keyed groups (checked 14 Oct 2026). Open: the numbers above 60 (names, the signature 103 62 A 104). A duplicate of 19/29 July 1645 in French; writer unknown (Lasry: perhaps Goffe from Holland, forwarded). The record note ('Undeciphered', Hanoverian dating) is out of date. Same key: f. 219 inside R788.",
+     "note": "Deciphered by George Lasry (key 'TNA SP106-2' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext on all 1538 keyed groups (checked 14 Oct 2026). Open: the numbers above 60 (names, the signature 103 62 A 104). A duplicate of 19/29 July 1645 in French; writer unknown (Lasry: perhaps Goffe from Holland, forwarded). The record note ('Undeciphered', Hanoverian dating) is out of date. Same key: f. 219 inside R788. 23 Oct 2026 (reading audit): a covering note in cipher in the margin of f. 217 (the duplicate and an enclosed packet, 23 Aug old style) is in no transcription; the dates 19/29 are in clear; group 06 is 6 with a struck 0.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -531,14 +534,16 @@
     "R924": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "Deciphered by George Lasry (key 'TNA SP106-8' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext group for group (checked 14 Oct 2026). Date: the letter is headed 'Paris Jan' (Lasry: January 1646); DECODE's start date 26 June 1646 should be January 1646, day unknown. Open: three-digit word-list numbers and low figures. Same key: R925.",
+     "note": "Deciphered by George Lasry (key 'TNA SP106-8' and interlinear plaintext on this record, 23 Oct 2020); his key reproduces his plaintext group for group (checked 14 Oct 2026). Date: the letter is headed 'Paris Jan' (Lasry: January 1646); DECODE's start date 26 June 1646 should be January 1646, day unknown. Open: three-digit word-list numbers and low figures. Same key: R925. 23 Oct 2026 (reading audit): the writer is Henry Jermyn, Paris, 26 Jan 1646: Eric Sams deciphered this letter in 1976 (Archivaria 21, 1985-86, pp. 89-90; Bodleian), unprinted. Same key as R925.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "fields": {
       "start_year": 1646,
       "start_month": 1,
-      "start_day": null
+      "start_day": 26,
+      "sender": "Henry Jermyn",
+      "place": "Paris"
      }
     }
    }
@@ -620,25 +625,31 @@
    "records": {
     "R75": {
      "decode_status": "Partially",
-     "proposed": "Partially decrypted",
-     "note": "R75, R84 read, with no previously published reading (~92% tokens valued); most nomenclator names still open.",
+     "proposed": "Decrypted",
+     "note": "R75, R84 read, with no previously published reading (~92% tokens valued); most nomenclator names still open. 23 Oct 2026 (reading audit): the png 'cleartext' attachment of this record (f. 82r) is a complete contemporary decipherment; transcribed and aligned with the decode; eight key values adopted (88 = del, 33 = gli, 541 armi, 171 Regno, 473 mentre, 497 tutt-, 491 quell-, 104 = Olandesi, not Svedesi). Subject: the letter opens with Schomberg's victory at Castelnaudary, not the Swedish one, and its danger is the Dutch.",
      "reading": [
       {
-       "file": "targets/ceva1632/r75.read.txt"
+       "file": "targets/ceva1632/R75_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/ceva1632/R75_decifrato_f82r.txt"
+     ]
     },
     "R84": {
      "decode_status": "Partially",
-     "proposed": "Partially decrypted",
-     "note": "R75, R84 read, with no previously published reading (~92% tokens valued); most nomenclator names still open.",
+     "proposed": "Decrypted",
+     "note": "R75, R84 read, with no previously published reading (~92% tokens valued); most nomenclator names still open. 23 Oct 2026 (reading audit): the png 'cleartext' attachment (f. 136r) is a complete contemporary decipherment; transcribed and aligned with the decode. December 1632: Gustavus Adolphus's death, the Valtellina peace, Monsieur's flight.",
      "reading": [
       {
-       "file": "targets/ceva1632/r84.read.txt"
+       "file": "targets/ceva1632/R84_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/ceva1632/R84_decifrato_f136r.txt"
+     ]
     }
    }
   },
@@ -654,11 +665,10 @@
     "R93": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image slip f. 8 (D1216) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R93 "
+       "file": "targets/alessandrino1568/texts/R93_reading.md"
       }
      ],
      "sent": false
@@ -666,11 +676,10 @@
     "R94": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): read word by word from the figures with the key. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R94 "
+       "file": "targets/alessandrino1568/texts/R94_reading.md"
       }
      ],
      "sent": false
@@ -678,11 +687,10 @@
     "R95": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): read word by word from the figures with the key. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R95 "
+       "file": "targets/alessandrino1568/texts/R95_reading.md"
       }
      ],
      "sent": false
@@ -690,11 +698,10 @@
     "R96": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image f. 80 (D1255) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R96 "
+       "file": "targets/alessandrino1568/texts/R96_reading.md"
       }
      ],
      "sent": false
@@ -702,11 +709,10 @@
     "R97": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image f. 90r-v (D1264-D1265) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R97 "
+       "file": "targets/alessandrino1568/texts/R97_reading.md"
       }
      ],
      "sent": false
@@ -714,11 +720,10 @@
     "R98": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image f. 139 (D1275) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R98 "
+       "file": "targets/alessandrino1568/texts/R98_reading.md"
       }
      ],
      "sent": false
@@ -726,11 +731,10 @@
     "R99": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image the leaf after f. 169 (D1284) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R99 "
+       "file": "targets/alessandrino1568/texts/R99_reading.md"
       }
      ],
      "sent": false
@@ -738,11 +742,10 @@
     "R100": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): read word by word from the figures with the key. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R100 "
+       "file": "targets/alessandrino1568/texts/R100_reading.md"
       }
      ],
      "sent": false
@@ -750,11 +753,10 @@
     "R101": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): read word by word from the figures with the key. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R101 "
+       "file": "targets/alessandrino1568/texts/R101_reading.md"
       }
      ],
      "sent": false
@@ -762,11 +764,10 @@
     "R102": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image f. 307 (D1308) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R102 "
+       "file": "targets/alessandrino1568/texts/R102_reading.md"
       }
      ],
      "sent": false
@@ -774,11 +775,10 @@
     "R115": {
      "decode_status": "Partially",
      "proposed": "Decrypted",
-     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain.",
+     "note": "All 11 read with Lasry's polyphonic key + language model; isolated letters uncertain. 23 Oct 2026 (reading audit): the record's 'cleartext' image the half-sheet with f. 641 (D1340) is the contemporary decipherment of this letter; read from it, checked against the figures. New code values (texts/key.md): 4010 = Re di Francia (Lasry's key has Sua Santità, which does not fit), 2010 = Imperatore.",
      "reading": [
       {
-       "file": "targets/alessandrino1568/decrypt_raw.txt",
-       "block": "== R115 "
+       "file": "targets/alessandrino1568/texts/R115_reading.md"
       }
      ],
      "sent": false
@@ -1193,10 +1193,10 @@
     "R1036": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Read with the 1765 Croiset code R1038; 56 groups open.",
+     "note": "Read with the 1765 Croiset code R1038; 56 groups open. 23 Oct 2026 (reading audit): normalised reading built (R1036_reading.md); 1,681 of 1,719 groups valued.",
      "reading": [
       {
-       "file": "targets/deswart1782/R1036_machine_decipherment.txt"
+       "file": "targets/deswart1782/R1036_reading.md"
       }
      ],
      "sent": false
@@ -1204,10 +1204,10 @@
     "R1040": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Two codebooks in one letter (de Leeuw 2000). From group 180 of image 5459 to image 5474 (5,956 groups) the 1765 Croiset key R1038 gives 88.2%; the first 1,928 groups (images 5453-5458, 5459 groups 1-179) are in a missing Rechteren-family code (probably NA inv. 158), not decrypted.",
+     "note": "Two codebooks in one letter (de Leeuw 2000). From group 180 of image 5459 to image 5474 (5,956 groups) the 1765 Croiset key R1038 gives 88.2%; the first 1,928 groups (images 5453-5458, 5459 groups 1-179) are in a missing Rechteren-family code (probably NA inv. 158), not decrypted. 23 Oct 2026 (reading audit): segment boundaries: the 1765 Croiset key (R1038) runs from image 5459 group 180 to image 5473 (5,625 groups, read: R1040_part2_reading.md); the opening (images 5453-5459, groups 1-179) and image 5474 are in the first, missing Rechteren-family code, 2,259 groups in all.",
      "reading": [
       {
-       "file": "deswart1782\\R1040_second_key_machine_decipherment.txt"
+       "file": "targets/deswart1782/R1040_part2_reading.md"
       }
      ],
      "sent": false
@@ -1351,10 +1351,10 @@
     "R1054": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Undeciphered on DECODE; read from the key rebuilt on Lyonet's clear copies of the sibling letters (R1052, R1053, R1062, R1063, R1066, R1069, R1075). A clerk's clear copy of this letter (19 Jul 1757, to B.) is in the Fagel register, Nationaal Archief 1.10.29 (Archief Fagel) inv. 5186 scans 248R-249L (found by WAINUT, 21 Oct 2026). Plaintext language: French.",
+     "note": "Undeciphered on DECODE; read from the key rebuilt on Lyonet's clear copies of the sibling letters (R1052, R1053, R1062, R1063, R1066, R1069, R1075). A clerk's clear copy of this letter (19 Jul 1757, to B.) is in the Fagel register, Nationaal Archief 1.10.29 (Archief Fagel) inv. 5186 scans 248R-249L (found by WAINUT, 21 Oct 2026). Plaintext language: French. 23 Oct 2026 (reading audit): read again (grade A) from its clear copy in the Fagel register (NA 1.10.29 inv. 5186 scans 248R-249L), the figures followed where they differ. Two DECODE transcription parse errors on image I5511: row 4 '8^6 31' is one group, 831; row 20 '878^6' is one group, 878.",
      "reading": [
       {
-       "file": "targets/affry1757/read/R1054.md"
+       "file": "targets/affry1757/read/R1054_reading.md"
       }
      ],
      "sent": false
@@ -1362,10 +1362,10 @@
     "R1064": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Undeciphered on DECODE; read from the key rebuilt on Lyonet's clear copies of the sibling letters (R1052, R1053, R1062, R1063, R1066, R1069, R1075). A clerk's clear copy of this letter (No 136, 1 Feb 1757) is in the Fagel register, Nationaal Archief 1.10.29 (Archief Fagel) inv. 5186 scans 62R-63R (found by WAINUT, 21 Oct 2026). Plaintext language: French.",
+     "note": "Undeciphered on DECODE; read from the key rebuilt on Lyonet's clear copies of the sibling letters (R1052, R1053, R1062, R1063, R1066, R1069, R1075). A clerk's clear copy of this letter (No 136, 1 Feb 1757) is in the Fagel register, Nationaal Archief 1.10.29 (Archief Fagel) inv. 5186 scans 62R-63R (found by WAINUT, 21 Oct 2026). Plaintext language: French. 23 Oct 2026 (reading audit): read again (grade A) from its clear copy in the Fagel register (NA 1.10.29 inv. 5186 scans 62R-63R), the figures followed where they differ.",
      "reading": [
       {
-       "file": "targets/affry1757/read/R1064.md"
+       "file": "targets/affry1757/read/R1064_reading.md"
       }
      ],
      "sent": false
@@ -1508,13 +1508,48 @@
     "R1098": {
      "decode_status": "Partially",
      "proposed": "Partially decrypted",
-     "note": "Read in gist with Somogyi's key re-anchored to the signs; short groups in ll. 5, 6 and 9 do not yet resolve.",
+     "note": "Read in gist with Somogyi's key re-anchored to the signs; short groups in ll. 5, 6 and 9 do not yet resolve. 23 Oct 2026 (reading audit): key DECODE R5411 (Maffeo da Treviglio); reviewed as a reading, grade B.",
      "reading": [
       {
        "file": "targets/buda1489/r1098_reading.md"
       }
      ],
      "sent": false
+    },
+    "R5411": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): Sforzesco 1597 no. 111 is the key 'Cum Mapheo Triviliensi', the cipher of Maffeo da Treviglio, Ludovico Sforza's agent at Buda 1489-90; the record dates 1450-1555 are wrong. It is the key of R1098 and of Vestigia 2831. Transcription: targets/buda1489/key_R5411.md.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/buda1489/key_R5411.md"
+     ]
+    },
+    "R5407": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): Sforzesco 1597 no. 107, 'Cum Mafeo Triviliensi': a second key for Maffeo da Treviglio (Buda, 1489-90).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R1099": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): R1099 and R1169 are two copies of the same 1488 Arcimboldo-Oliva key; mark them as duplicates.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R1169": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): Duplicate of R1099 (the same 1488 Arcimboldo-Oliva key).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
     }
    }
   },
@@ -1615,101 +1650,126 @@
     "R3811": {
      "decode_status": "Partially",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R3811.txt"
+       "file": "targets/kurtz1639/read/R3811_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R3811_corrections.tsv"
+     ]
     },
     "R3812": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R3812.txt"
+       "file": "targets/kurtz1639/read/R3812_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R3812_corrections.tsv"
+     ]
     },
     "R3813": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked). R3813 and R3814 read 23 Oct 2026.",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R3813.txt"
+       "file": "targets/kurtz1639/read/R3813_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R3813_corrections.tsv"
+     ]
     },
     "R3814": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked). R3813 and R3814 read 23 Oct 2026.",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R3814.txt"
+       "file": "targets/kurtz1639/read/R3814_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R3814_corrections.tsv"
+     ]
     },
     "R3815": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R3815.txt"
+       "file": "targets/kurtz1639/read/R3815_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R3815_corrections.tsv"
+     ]
     },
     "R4625": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R4625.txt"
+       "file": "targets/kurtz1639/read/R4625_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R4625_corrections.tsv"
+     ]
     },
     "R4645": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R4645.txt"
+       "file": "targets/kurtz1639/read/R4645_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R4645_corrections.tsv"
+     ]
     },
     "R4734": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R4734.txt"
+       "file": "targets/kurtz1639/read/R4734_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": []
     },
     "R4736": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent.",
+     "note": "Key complete (rebuilt from R3811 glosses); 55-80% of each letter coherent. 23 Oct 2026 (reading audit): Mírka's key attachments on R3811-R3815 (xlsx and table, Nov 2022) confirmed; k = to (not ti), m = va (not a), 9 = vo at all 48 occurrences; the crossed sign is two shapes (f-form ta, p-form vi); crossed 4 = x. Label corrections per record in read/<record>_corrections.tsv; the letter reads as sentences (holes marked).",
      "reading": [
       {
-       "file": "targets/kurtz1639/read/R4736.txt"
+       "file": "targets/kurtz1639/read/R4736_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/kurtz1639/read/R4736_corrections.tsv"
+     ]
     }
    }
   },
@@ -1910,19 +1970,23 @@
    "cite": "Tomokiyo, cryptiana, Sept 2025",
    "fields": {
     "cipher_types": "homophonic, nomenclator",
-    "plaintext_lang": "Spanish"
+    "plaintext_lang": "Spanish",
+    "note": "23 Oct 2026 (reading audit): across R9593-R9657 (Sánchez), DECODE's 'Inline Cleartext: Yes' marks clear opening and closing paragraphs and postscripts, not decipherments; only R9605, R9613, R9635 and R9642 carry decipherments on their images; R9654 has no images."
    },
    "records": {
     "R9635": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Parts read beyond Tomokiyo 2025 (credit his key).",
+     "proposed": "Decrypted",
+     "note": "Parts read beyond Tomokiyo 2025 (credit his key). 23 Oct 2026 (reading audit): read from the clear court-hand decipherment on f. 22r (DECODE image P3), checked against the cipher of ff. 20r-20v; key values from the cipher under the torn lines of f. 22r ll. 9-11: hec = quiera, vac = dicha.",
      "reading": [
       {
-       "file": "targets/sanchez1522/read_r9635.md"
+       "file": "targets/sanchez1522/R9635_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/sanchez1522/R9635_decifrado_f22r.txt"
+     ]
     },
     "R9653": {
      "decode_status": "Non-decrypted",
@@ -1934,6 +1998,83 @@
       }
      ],
      "sent": false
+    },
+    "R9613": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "23 Oct 2026 (reading audit): The clear decipherment of the letter is on the record's own images (ff. 206r-207v: IMG_R9613_I45203_P3 right, I45209_P2, I45209_P1 left); dated 18 June 1522 by the docket; read from it; hug = recebi confirmed.",
+     "reading": [
+      {
+       "file": "targets/sanchez1522/R9613_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/sanchez1522/R9613_decifrado_f206.txt"
+     ],
+     "fields": {
+      "start_year": 1522,
+      "start_month": 6,
+      "start_day": 18
+     }
+    },
+    "R9641": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "23 Oct 2026 (reading audit): Sánchez (not 'Sánchez?') to Charles V, 27 Oct 1522. R9642 is the same letter: its ff. 184-186 are the duplicate cipher ('es treslado de otra enbiada por via de Genova; esta va por Roma') and its ff. 187r-188r (IMG_R9642_I45397) the clear decipherment; read from it; vad = duque.",
+     "reading": [
+      {
+       "file": "targets/sanchez1522/R9641_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/sanchez1522/R9641_decifrado_f187.txt"
+     ],
+     "fields": {
+      "sender": "Alonso Sánchez",
+      "start_year": 1522,
+      "start_month": 10,
+      "start_day": 27
+     }
+    },
+    "R9642": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "23 Oct 2026 (reading audit): Duplicate cipher of R9641 (27 Oct 1522, Sánchez to Charles V), ff. 184-186, with the clear decipherment on ff. 187r-188r (IMG_R9642_I45397); status N/A -> decipherment present.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/sanchez1522/R9641_decifrado_f187.txt"
+     ]
+    },
+    "R9593": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "23 Oct 2026 (reading audit): Date 5 March 1522 confirmed by the clear subscription f. 27v ('en venecia a v de março de dxxij'). Content: the lansquenets' passage of Val Camonica, the French take Caravaggio, the Swiss at Monza. Read sign by sign with Tomokiyo's key; key additions gim = suyos, fef = toda (ril = lansquenetes? unconfirmed); the second half of f. 27r does not yet build sentences (partial reading).",
+     "reading": [
+      {
+       "file": "targets/sanchez1522/R9593_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/sanchez1522/R9593_signs.txt"
+     ],
+     "fields": {
+      "start_year": 1522,
+      "start_month": 3,
+      "start_day": 5
+     }
+    },
+    "R9594": {
+     "decode_status": "Non-decrypted",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): = CSP Spain 2 no. 396 (15 March 1522, to the Emperor). Bergenroth's contemporary decipherment is in the Gayangos papers ('M. D. Pasc. d. G.'); he called the cipher not extant: it is this record (RAH 9/23 ff. 73-75v).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
     }
    }
   },
@@ -2103,10 +2244,10 @@
     "R9873": {
      "decode_status": "Non-decrypted",
      "proposed": "Partially decrypted",
-     "note": "Duke of Sessa to Charles V, Rome, 14 Apr 1524 (CSP Spain ii 637, from Goicoechea's 19th-c. reading; no. 636 is the triplicate, no. 638 the court abstract). Transcribed in full and read in part with the Sessa key rebuilt here (pass 16): 2,165 of 2,473 cipher tokens read as sense (87.5%); pass 17 (3 Oct 2026), open groups pooled with R9898 and R9660, tentative values: 2,295 of 2,474 (92.8%; 87.8% counting them as open); about 100 code groups open.",
+     "note": "Duke of Sessa to Charles V, Rome, 14 Apr 1524 (CSP Spain ii 637, from Goicoechea's 19th-c. reading; no. 636 is the triplicate, no. 638 the court abstract). Transcribed in full and read in part with the Sessa key rebuilt here (pass 16): 2,165 of 2,473 cipher tokens read as sense (87.5%); pass 17 (3 Oct 2026), open groups pooled with R9898 and R9660, tentative values: 2,295 of 2,474 (92.8%; 87.8% counting them as open); about 100 code groups open. 23 Oct 2026 (reading audit): read as sentences (r9873_reading.md, 0.715 clean on explicit holes); about 70 code groups open.",
      "reading": [
       {
-       "file": "decode_updates/decryptions/R9873.txt"
+       "file": "targets/sessa1524/r9873_reading.md"
       }
      ],
      "sent": false,
@@ -2133,6 +2274,14 @@
       "receiver": "Charles V",
       "place": "Rome"
      }
+    },
+    "R9899": {
+     "decode_status": "unknown",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): New sibling of the Sessa letters: RAH Salazar A-34 ff. 194-195, March 1525, Sessa's cipher; one contemporary marginal decipherment, hog = querria.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
     }
    }
   },
@@ -2280,13 +2429,18 @@
     "R793": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Read with the archive key (Pápai's, R580/R581), unchanged. Letter of Rákóczi's envoy János Pápai at Constantinople, 1706; plaintext Hungarian.",
+     "note": "Read with the archive key (Pápai's, R580/R581), unchanged. Letter of Rákóczi's envoy János Pápai at Constantinople, 1706; plaintext Hungarian. 23 Oct 2026 (reading audit): DECODE transcription slips: a line of p. 4 omitted, 98 'Constancz' dropped in the date line, about 20 groups; re-transcribed and read. Dated 16 Mar 1706.",
      "reading": [
       {
-       "file": "targets/papai1706/DOC_R793_read.txt"
+       "file": "targets/papai1706/texts/R793_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": 1706,
+      "start_month": 3,
+      "start_day": 16
+     }
     },
     "R794": {
      "decode_status": "Partially decrypted",
@@ -2313,10 +2467,10 @@
     "R796": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Read with the archive key (Pápai's, R580/R581), unchanged. Letter of Rákóczi's envoy János Pápai at Constantinople, 1706; plaintext Hungarian.",
+     "note": "Read with the archive key (Pápai's, R580/R581), unchanged. Letter of Rákóczi's envoy János Pápai at Constantinople, 1706; plaintext Hungarian. 23 Oct 2026 (reading audit): DECODE transcription slips: p. 1 l. 17 dropped and l. 18 half duplicated; re-transcribed on the images and read.",
      "reading": [
       {
-       "file": "targets/papai1706/DOC_R796_read.txt"
+       "file": "targets/papai1706/texts/R796_reading.md"
       }
      ],
      "sent": false
@@ -3046,28 +3200,53 @@
     },
     "R9767": {
      "decode_status": "Non-decrypted",
-     "proposed": "Partially decrypted",
-     "note": "Sánchez to Charles V, Venice 16 Aug 1523; not in CSP. Clear text in full; cipher read at code-group level, spelled runs partly (1522 key, Tomokiyo 2025).",
+     "proposed": "Decrypted",
+     "note": "Sánchez to Charles V, Venice 16 Aug 1523; not in CSP. Clear text in full; cipher read at code-group level, spelled runs partly (1522 key, Tomokiyo 2025). 23 Oct 2026 (reading audit): read in full from the contemporary decipherment on f. 567r (imaged on R9768), checked group by group against the cipher; new code value pem = -mos.",
      "reading": [
       {
-       "file": "targets/sanchez1523/read_r9767.md"
+       "file": "targets/sanchez1523/R9767_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/sanchez1523/R9767_decifrado_f567r.txt"
+     ]
     },
     "R9769": {
      "decode_status": "Non-decrypted",
-     "proposed": "(no change)",
-     "note": "Caracciolo and Sánchez to Charles V, Venice 16 Aug 1523; almost entirely in clear; not in CSP.",
+     "proposed": "Decrypted",
+     "note": "Caracciolo and Sánchez to Charles V, Venice 16 Aug 1523; almost entirely in clear; not in CSP. 23 Oct 2026 (reading audit): f. 574r (imaged on R9770) is the contemporary decipherment of this joint letter's cipher paragraph (f. 570v); read and checked against the figures.",
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": true,
+     "reading": [
+      {
+       "file": "targets/sanchez1523/R9769_reading.md"
+      }
+     ],
+     "transcription": [
+      "targets/sanchez1523/R9770_decifrado_f574r.txt"
+     ]
     },
     "R9770": {
      "decode_status": "Non-decrypted",
-     "proposed": "(no change)",
-     "note": "Duplicate of R9769 ('es treslado de otro'); short cipher head not read.",
+     "proposed": "Decrypted",
+     "note": "Duplicate of R9769 ('es treslado de otro'); short cipher head not read. 23 Oct 2026 (reading audit): this record carries the decipherment f. 574r of the joint letter R9769/R9770.",
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/sanchez1523/R9770_decifrado_f574r.txt"
+     ]
+    },
+    "R9768": {
+     "decode_status": "unknown",
+     "proposed": "Decrypted",
+     "note": "23 Oct 2026 (reading audit): RAH Salazar 9/28 ff. 565-568 is the second copy of R9767 (16 Aug 1523) with its contemporary decipherment on f. 567r; transcription targets/sanchez1523/R9767_decifrado_f567r.txt.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/sanchez1523/R9767_decifrado_f567r.txt"
+     ]
     }
    }
   },
@@ -4019,7 +4198,9 @@
   "dedem1788": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/dedem1788.html",
    "key": {
-    "none": "no key on DECODE; the Fagel series R2842-R2852 is a different code; not rebuilt from cribs R2121/R1947/R2053"
+    "file": "targets/dedem1788/key/kroll785_values.tsv",
+    "lang": "NL",
+    "how": "the legation codebook 'Kroll. Un Chiffre', Nationaal Archief 1.02.20 (legatie Turkije) inv. 785, read from its scans (R2122, R2131); R2120 read from R2121"
    },
    "fields": {},
    "records": {
@@ -4040,9 +4221,13 @@
     },
     "R2122": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. Same homophonic word code as R2120/R2121, R1947, R2053; no key found. Transcription of both cipher blocks (258 groups) attached.",
-     "reading": null,
+     "proposed": "Decrypted",
+     "note": "Not read. Same homophonic word code as R2120/R2121, R1947, R2053; no key found. Transcription of both cipher blocks (258 groups) attached. 23 Oct 2026 (reading audit): read with the legation's codebook, filed under Kroll (chargé 1784-85) as Nationaal Archief 1.02.20 inv. 785 'Sleutel geheimschrift' (headed 'Kroll. Un Chiffre', 500-group pages); its layout matches the block-alphabetical table rebuilt from the sibling decipherments (PR #21). Supersedes 'Not read' above.",
+     "reading": [
+      {
+       "file": "targets/dedem1788/tx/R2122_reading.md"
+      }
+     ],
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
@@ -4051,9 +4236,13 @@
     },
     "R2131": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not read. Same code as R2122; the 50-group paragraph is framed by 701 ... 301, as in R1947. Transcription attached.",
-     "reading": null,
+     "proposed": "Decrypted",
+     "note": "Not read. Same code as R2122; the 50-group paragraph is framed by 701 ... 301, as in R1947. Transcription attached. 23 Oct 2026 (reading audit): read with the legation's codebook, filed under Kroll (chargé 1784-85) as Nationaal Archief 1.02.20 inv. 785 'Sleutel geheimschrift' (headed 'Kroll. Un Chiffre', 500-group pages); its layout matches the block-alphabetical table rebuilt from the sibling decipherments (PR #21). Supersedes 'Not read' above.",
+     "reading": [
+      {
+       "file": "targets/dedem1788/tx/R2131_reading.md"
+      }
+     ],
      "sent": false,
      "reading_not_needed": true,
      "transcription": [
@@ -5156,90 +5345,134 @@
     "R179": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios. Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-2_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-2_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R180": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios. Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-3_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-3_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R181": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/4 f. 301r). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-4_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-4_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R182": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/5 f. 375r). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-5_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-5_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R183": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/6 f. 386r). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-6_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-6_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R184": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios. Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-7_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-7_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R185": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios. Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-8_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-8_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R186": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/9 ff. 416r-v). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-9_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-9_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R187": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/10 ff. 493r-494r). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-10_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-10_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R188": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/11 ff. 509r-v). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-11_reading.md.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-11_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     },
     "R26": {
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
-     "note": "Item 423/1 of Spagna 423 (R179-R188 are items 2-11). Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736.",
-     "reading": null,
+     "note": "Item 423/1 of Spagna 423 (R179-R188 are items 2-11). Lasry's 2020 decryption of Spagna 423 is already on the record; his key values no 4-digit nomenclator group, 46 recovered from context (key_extra.txt, 95.3% read). Date 7 Jan-29 Dec 1736 is the volume span; ciphered items run 14 Jul-22 Dec 1736. 23 Oct 2026 (reading audit): the record's 'cleartext' png attachments are neighbouring folios; one is the clear Copia of this ciphered letter (423/1 ff. 284r-286r). Corrections to Lasry's key S423, checked at every occurrence against seven contemporary clear copies: 26 = del (not a), 80 = dal (not nel); 16 nomenclator values replaced and about 55 added (targets/nunzio1736/key_extra.txt and the readings). Letter read: texts/423-1_reading.md. Six figures of the DECODE transcription corrected.",
+     "reading": [
+      {
+       "file": "targets/nunzio1736/texts/423-1_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": false
     }
    }
   },
@@ -5654,7 +5887,7 @@
    }
   },
   "vargas1552": {
-   "writeup": null,
+   "writeup": "https://dbourdeau.github.io/cyphersolver/vargas1552.html",
    "key": {
     "decode": "not on DECODE: Imperial Cipher of 1544-1554 (Tomokiyo, cryptiana)",
     "lang": "ES"
@@ -5665,13 +5898,16 @@
     "R9967": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Deciphered at the time in the margin (Tomokiyo, cryptiana); the cipher is the Imperial Cipher of 1544-1554.",
+     "note": "Deciphered at the time in the margin (Tomokiyo, cryptiana); the cipher is the Imperial Cipher of 1544-1554. 23 Oct 2026 (reading audit): the contemporary decipherment, one continuous text in the margins, page feet and between the lines, transcribed in full and the letter read. DECODE's image numbers are not in page order; the archive numbers 0001-0016 in the image headers are.",
      "reading": [
       {
-       "file": "targets/vargas1552/NOTES.md"
+       "file": "targets/vargas1552/texts/R9967_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/vargas1552/texts/R9967_decipherment.txt"
+     ]
     }
    }
   },
@@ -5684,14 +5920,16 @@
     "R9963": {
      "decode_status": "Non-decrypted",
      "proposed": "Decrypted",
-     "note": "Read at the time: image 5 (AGS Estado 862 f. 54r) is the contemporary decipherment of the cipher on ff. 53r-54r; marginal gloss on f. 53r. Letter dated Rome, 3 Sept 1534.",
+     "note": "Read at the time: image 5 (AGS Estado 862 f. 54r) is the contemporary decipherment of the cipher on ff. 53r-54r; marginal gloss on f. 53r. Letter dated Rome, 3 Sept 1534. 23 Oct 2026 (reading audit): image 6 (file _005) is the contemporary decipherment of the cipher (f. 54r), transcribed in texts/f54_decipherment.txt and the letter read from it; status Non-decrypted -> Decrypted (read at the time).",
      "reading": [
       {
-       "file": "targets/cifuentes1534/NOTES.md",
-       "section": "## The document"
+       "file": "targets/cifuentes1534/texts/R9963_reading.md"
       }
      ],
-     "sent": false
+     "sent": false,
+     "transcription": [
+      "targets/cifuentes1534/texts/f54_decipherment.txt"
+     ]
     }
    }
   },
@@ -8800,13 +9038,21 @@
     "R4793": {
      "decode_status": "N/A",
      "proposed": "Partially decrypted",
-     "note": "No. 4: Galgano Borghesi, J.U.D. and orator, to Leonardo Benvoglienti, Naples 12 May 1456 (not 1500-1599). Clear Italian with 15 cipher runs and Latin code words; recipient's interlinear glosses; key rebuilt from an alphabet fragment below the text: 114/144 cipher signs read. Split 14 Oct 2026 from siena1421 (one key per entry).",
+     "note": "No. 4: Galgano Borghesi, J.U.D. and orator, to Leonardo Benvoglienti, Naples 12 May 1456 (not 1500-1599). Clear Italian with 15 cipher runs and Latin code words; recipient's interlinear glosses; key rebuilt from an alphabet fragment below the text: 114/144 cipher signs read. Split 14 Oct 2026 from siena1421 (one key per entry). 23 Oct 2026 (reading audit): the recipient's glosses give the code words cras = pace and pedesi = Iacopino; the record dates 1500-1599 should be 12 May 1456. The letter decodes but does not yet build sentences (project audit), so the reading file is a partial reading.",
      "reading": [
       {
        "file": "targets/borghesi1456/transcripts/no04_reading.txt"
       }
      ],
-     "sent": false
+     "sent": false,
+     "fields": {
+      "start_year": 1456,
+      "start_month": 5,
+      "start_day": 12,
+      "end_year": 1456,
+      "end_month": 5,
+      "end_day": 12
+     }
     }
    }
   },
@@ -11779,6 +12025,465 @@
      "sent": false
     }
    }
+  },
+  "pallotto1629": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/pallotto1629.html",
+   "key": {
+    "decode": "R215 (Biermann-Bosbach key of BAV Barb.lat. 6956, filed there as documents; matched to 6960 by George Lasry)",
+    "lang": "IT"
+   },
+   "cite": "H. Kiewning, Nuntiaturberichte aus Deutschland IV/2: Nuntiatur des Pallotto 1628-1630, Bd. 2: 1629 (Berlin 1897)",
+   "fields": {},
+   "records": {
+    "R286": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R287 one despatch, Kiewning Nr. 153. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R286_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/crib153.txt"
+      }
+     ],
+     "sent": false
+    },
+    "R287": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R286 one despatch, Nr. 153; docket \"Decif.ta li 22\" matches the Roman decipherment date. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R287_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R287_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R288": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R288_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R288_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R289": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R290 one despatch, Nr. 166. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R289_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R289_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R290": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R289 one despatch, Nr. 166. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R290_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R290_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R292": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R293-R294 one despatch, Nr. 160. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R292_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R292_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R293": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R292, R294 one despatch, Nr. 160. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R293_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R293_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R294": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R292-R293 one despatch, Nr. 160. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R294_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R294_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R295": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R295_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R295_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R296": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R296_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R296_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R297": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R299 one despatch, Nr. 164. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R297_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R297_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R298": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). 11 Aug 1629, Nr. 158. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R298_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R298_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R299": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R297 one despatch, Nr. 164. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R299_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R299_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R303": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R302 one despatch, Nr. 167. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R303_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R303_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R305": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R305_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R305_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R306": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R307 one despatch, Nr. 176. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R306_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R306_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R307": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R306 one despatch, Nr. 176 (figures give \"aiduchi\", Kiewning prints \"arciduchi\"). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R307_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R307_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R308": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R308_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R308_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R309": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). = Nr. 178 (16 Sept 1629 in Kiewning). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R309_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R309_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R310": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R310_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R310_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R311": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R312 one despatch, Nr. 184. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R311_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R311_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R312": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R311 one despatch, Nr. 184. Read: the 6956-key decode aligned with Kiewning 1897, the figures followed where they differ. DECODE digit and clear-text corrections in texts/R312_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R312_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R291": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). figures give \"duca Alberto\" (Kiewning's regest has \"Alfons\"). Read in part: the decode with the 6956 key leaves holes in several sentences (partial reading in texts/). DECODE digit and clear-text corrections in texts/R291_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R291_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R300": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). p. 2 (image 2532) never transcribed on DECODE; transcribed in texts/R300_p2_digits.txt. Read in part: the decode with the 6956 key leaves holes in several sentences (partial reading in texts/). DECODE digit and clear-text corrections in texts/R300_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R300_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/pallotto1629/texts/R300_p2_digits.txt"
+     ]
+    },
+    "R301": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). its continuation (register p. 78) is not among the DECODE images. Read in part: the decode with the 6956 key leaves holes in several sentences (partial reading in texts/). DECODE digit and clear-text corrections in texts/R301_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R301_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R302": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). with R303 one despatch, Nr. 167. Read in part: the decode with the 6956 key leaves holes in several sentences (partial reading in texts/). DECODE digit and clear-text corrections in texts/R302_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R302_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R304": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). 28 Aug 1629, Nr. 168. Read in part: the decode with the 6956 key leaves holes in several sentences (partial reading in texts/). DECODE digit and clear-text corrections in texts/R304_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R304_reading.md"
+      }
+     ],
+     "sent": false
+    },
+    "R313": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Partially decrypted",
+     "note": "Pallotto (Vienna) to Cardinal Francesco Barberini, 1629 (the volume runs 4 Aug - 29 Sept 1629: \"7mbre\" is September; DECODE's November dates and '1627'/'1679' are misreadings). figures give \"sotto li quindici\" (Kiewning's regest \"25. September\"). Read in part: the decode with the 6956 key leaves holes in several sentences (partial reading in texts/). DECODE digit and clear-text corrections in texts/R313_corrections.tsv where present.",
+     "reading": [
+      {
+       "file": "targets/pallotto1629/texts/R313_reading.md"
+      }
+     ],
+     "sent": false
+    }
+   }
+  },
+  "vetesi1705": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/vetesi1705.html",
+   "key": {
+    "decode": "R446 (Rákóczi's Hungarian syllabic key, Ráday Archives C64-4d2-25 no. 6)",
+    "lang": "HU"
+   },
+   "cite": "Ráday Pál iratai I. 1703-1706 (Budapest: Akadémiai, 1955), item 102, p. 494 n. 1",
+   "fields": {
+    "start_year": "1706",
+    "start_month": "1",
+    "start_day": "9",
+    "end_year": "1706",
+    "end_month": "1",
+    "end_day": "9",
+    "sender": "László Vetési Kökényesdi (signing as Cassimirus Miloftzki)",
+    "receiver": "Ferenc Rákóczi II"
+   },
+   "records": {
+    "R473": {
+     "decode_status": "Partially",
+     "proposed": "Decrypted",
+     "note": "Read at the time: a contemporary hand deciphered the cipher groups interlinearly. Dated 9 Jan 1706 (endorsement '1706 I. 9'; closing 'Kilencedik Januarii'). Addressed to Rákóczi ('Fejedelem ... Nagyságod'), kept in Ráday's papers; Ráday is named in the third person. Archive note cites Ráday Pál iratai I p. 494 n. 1. 23 Oct 2026 (reading audit): read: the interlinear gloss transcribed afresh and Rákóczi's key DECODE R446 found to fit (16 of 18 glossed test groups; key and gloss agree at 253 of 304 groups; groups outside the key are nulls). The key settles what the gloss garbled (Nice castle given to the French king, 4 Jan 1706; Herbeville's victory).",
+     "reading": [
+      {
+       "file": "targets/vetesi1705/R473_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/vetesi1705/R473_transcription.txt"
+     ]
+    },
+    "R446": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): DECODE's transcription of this key corrected on its image: 69 = al, 71-74 = an/ar/as/at, ö/ü distinguished, 35 = ly, 296 = Belgium (targets/vetesi1705/key/DOC_R446_D2629_2629.txt). It reads R473 (Vetési Kökényesdi to Rákóczi, 9 Jan 1706).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    }
+   }
+  },
+  "transylvania1645": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/transylvania1645.html",
+   "key": {
+    "file": "targets/transylvania1645/shared-key-hypothesis.json",
+    "lang": "HU",
+    "how": "the Bethlen family alphabet (c=p, p=c, g=u, q=t) recovered ciphertext-only by quadgram annealing on R4936; R4939 has its own paired alphabet, targets/transylvania1645/R4939_key.md"
+   },
+   "cite": null,
+   "fields": {
+    "place_note": "Romanian National Archives, Cluj (not Sibiu): Keresdi Bethlen 14-15"
+   },
+   "records": {
+    "R4936": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "23 Oct 2026 (reading audit): Hungarian letter cipher of the Bethlen family key; decoded and written out as a partial reading (1645 Warsaw mission: musketeers and dragoons to be hired, money at Danzig), but 130 letters sit on g/q look-alikes the scan cannot separate, so it does not count as read.",
+     "reading": [
+      {
+       "file": "targets/transylvania1645/R4936_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/transylvania1645/R4936-transcription-b15.txt"
+     ]
+    },
+    "R4937": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "23 Oct 2026 (reading audit): Read with the Bethlen family key (1646: the Emperor's diploma and the Evangelicals, hiring 4,000 foot); a run on l. 3 and the end of l. 13 illegible.",
+     "reading": [
+      {
+       "file": "targets/transylvania1645/R4937_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/transylvania1645/R4937-transcription.txt"
+     ]
+    },
+    "R4940": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "23 Oct 2026 (reading audit): Both cipher spans (23 letters) read with the Bethlen family key.",
+     "reading": [
+      {
+       "file": "targets/transylvania1645/R4940_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/transylvania1645/R4940-cipher.txt"
+     ]
+    },
+    "R4942": {
+     "decode_status": "N/A",
+     "proposed": "Decrypted",
+     "note": "23 Oct 2026 (reading audit): Read with the Bethlen family key (Zsigmond Rákóczi, 1648: the intermediaries and his brother's plenipotentiary power); image 3 is a clear slip of the same cipher block in Zsigmond Rákóczi's name.",
+     "reading": [
+      {
+       "file": "targets/transylvania1645/R4942_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/transylvania1645/R4942-transcription.txt"
+     ]
+    },
+    "R4939": {
+     "decode_status": "N/A",
+     "proposed": "Partially decrypted",
+     "note": "23 Oct 2026 (reading audit): A different cipher from its siblings: a paired simple substitution (ten reciprocal pairs) in another hand, broken ciphertext-only (key targets/transylvania1645/R4939_key.md) and read: the Rákóczi brothers to Ferenc Bethlen and Andrew Klobusiczky, envoys to the Polish diet, 1648, on their dying father and Zsigmond's Polish candidacy. About 12 words of lines 3-9 illegible.",
+     "reading": [
+      {
+       "file": "targets/transylvania1645/R4939_reading.md"
+      }
+     ],
+     "sent": false,
+     "transcription": [
+      "targets/transylvania1645/R4939-transcription.txt"
+     ]
+    },
+    "R4938": {
+     "decode_status": "N/A",
+     "proposed": "(no change)",
+     "note": "23 Oct 2026 (reading audit): A clear letter of 24 Apr 1647 with three short cipher spans (54 letters) in the family hand, decoded with the family key; one word unread.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/transylvania1645/R4938-transcription.txt"
+     ]
+    }
+   }
   }
  },
  "rechteren1785": {
@@ -12251,33 +12956,6 @@
     "note": "Read at the time: an archivist's note on the address leaf says the decipherment is in no. 21 of the legajo, and its Spanish version is calendared in CSP Spain XII (1949): Renard reports the discovery of the Courtenay/Elizabeth/Wyatt/Carew plot. Cipher is the Granvelle-Saint Mauris cipher (Pich-Ponce PP1).",
     "sent": false,
     "reading_not_needed": true
-   }
-  }
- },
- "vetesi1705": {
-  "writeup": null,
-  "key": {
-   "decode": "no key; the contemporary interlinear decipherment on images 3612-3614",
-   "lang": "HU"
-  },
-  "cite": "Ráday Pál iratai I. 1703-1706 (Budapest: Akadémiai, 1955), item 102, p. 494 n. 1",
-  "fields": {
-   "start_year": "1706",
-   "start_month": "1",
-   "start_day": "9",
-   "end_year": "1706",
-   "end_month": "1",
-   "end_day": "9",
-   "sender": "László Vetési Kökényesdi (signing as Cassimirus Miloftzki)",
-   "receiver": "Ferenc Rákóczi II"
-  },
-  "records": {
-   "R473": {
-    "decode_status": "Partially",
-    "proposed": "Decrypted",
-    "note": "Read at the time: a contemporary hand deciphered the cipher groups interlinearly. Dated 9 Jan 1706 (endorsement '1706 I. 9'; closing 'Kilencedik Januarii'). Addressed to Rákóczi ('Fejedelem ... Nagyságod'), kept in Ráday's papers; Ráday is named in the third person. Archive note cites Ráday Pál iratai I p. 494 n. 1.",
-    "reading": null,
-    "sent": false
    }
   }
  },
