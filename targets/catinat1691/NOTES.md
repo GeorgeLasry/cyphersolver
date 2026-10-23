@@ -198,3 +198,14 @@ to see that neither food nor troops enter Coni.
 `segment.py` (lexicon and DP segmenter), `validate.py` (against Bazeries' clear texts), `verify_crops.py` (suspect
 clusters and contact sheets), `corrections.tsv` (OCR fixes keyed by scan and box), `fetch_pages.py`, `hocr/`, `img/`,
 `crops/`. Earlier drafts `extract.py`, `extract2.py` kept for the record. Table and corpora in `../feuquieres/`.
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (French 1691; the word list knows the period spelling). L2, L5 and L6 had been scored on the
+segmenter's unpunctuated runs in `letters/L*.txt` (plain 0.50, 0.579, 0.562). The word division was re-done by hand on
+the decodes, with punctuation, clear passages in ⟨ ⟩ and group values unchanged; groups whose value does not fit the
+sense are marked [?] (L2: homme, parti, batails/Montcas, reisson, sepaoit, povaz, fois, de meur; L5: "resolus
+[?intention] [?marquée] [?r] le passage"; L6: "tres bon [?honneur]", "je [?m'en leve]"). New files
+`letters/L2_reading.md`, `L5_reading.md`, `L6_reading.md`: plain 0.833, 0.906, 0.724; explicit 0.939, 0.938, 0.862.
+All three keep read. The doubtful groups are a pointer for an image check of the 1819 print (OCR or printer's slips).
+

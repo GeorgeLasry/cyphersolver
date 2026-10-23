@@ -418,7 +418,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher/R*.txt with the hand readings read/R*.txt and the machine readings read/machine_R*.txt; key key.json.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the ten hand readings read; nine build French sentences (A); read/R1954.txt (about 65% read on a weak transcription) has holes in most sentences (D confirmed). R1954 relabelled decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81 (groups in letters that read).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "transcription", "technique": ["language-model scoring", "beam/DP decoding", "manual reconstruction"], "what": "Re-read (REREAD_BRIEF, b29): R1954 has four images and no attachment on DECODE. The 314 digits marked uncertain in trans/R1954.txt resolved by a French 5-gram beam over look-alike pairs (5/7, 8/9, 4/11, 1/7, 0/6), pair phase and stray digits (research/reading_audit/b29_kd_beam.py), the alternative taken at 137 places; seven places re-read on the rotated images and corrected (trans/R1954_b29_corrections.tsv: l'inpossible, Yorcke, egards, deux objets, six mille hommes, de la proteger). Working file trans/R1954_b29.txt.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Partial reading read/R1954_partial_reading.md and English read/R1954_en.md: 0.549 clean sentences (28/51), explicit holes 0.725; 195 letters rest on a look-alike alternative; key unchanged (21 = inte, 07 = au, 41 = on flagged as sense-only). The d'Affry clause on f. 2 and most of f. 4 do not build: stays decoded, not read.", "result": "failed"}
+  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Partial reading read/R1954_partial_reading.md and English read/R1954_en.md: 0.549 clean sentences (28/51), explicit holes 0.725; 195 letters rest on a look-alike alternative; key unchanged (21 = inte, 07 = au, 41 = on flagged as sense-only). The d'Affry clause on f. 2 and most of f. 4 do not build: stays decoded, not read.", "result": "failed"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R2078, R1958, R2079, R1043 had been scored on read/R*.txt with headings, English summaries of the clear passages and key notes. French cipher texts written out alone (read/R*_reading.md): plain 0.618/0.647/0.75/0.6, explicit 0.794/0.882/0.938/0.68. All keep read; R1043 is at the bar (unread name codes).", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 8509, "types": 60, "tokens_per_type": 141.82, "score": -2.364, "nulls": {"random keys": {"n": 200, "mean": -5.279, "sd": 0.292, "max": -4.589, "z": 10.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.531, "sd": 0.011, "max": -3.522, "z": 107.9, "p": 0.1429}}, "power": -2.403, "verdict": "pass", "notes": "claimed per-occurrence score -2.286; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.403"}, 
   "method": "key recovered from ciphertext-only",
@@ -442,7 +443,15 @@
      "read/machine_R2078.txt"
     ],
     "summary": "Kauderbach, Saxon-Polish resident at The Hague, to Dresden: the States of Holland face their most difficult deliberations in years, the Comte d'Affry's overture on one side and Colonel Yorke's memorial asking what the Republic's engagements amount to on the other.",
-    "language": "fr"
+    "language": "fr",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1754-56 French: plain share is a bar too): the sweep scored read/R2078.txt whole, its heading line, the English summaries of the clear passages and the key notes included (plain 0.463, explicit 0.778). The French cipher text written out alone, read/R2078_reading.md: plain 0.618 (21/34), explicit 0.794 (27/34); the failing sentences carry the unread name codes ([...]) of the States, towns and courts. Keeps read."
+    },
+    "reading": "read/R2078_reading.md",
+    "state": "read"
    },
    {
     "doc": "R1958",
@@ -453,7 +462,15 @@
      "read/machine_R1958.txt"
     ],
     "summary": "Colonel Yorke assures Kauderbach that his court is well disposed to renewing the subsidy treaty, and that he will second Saxon interests at The Hague with all his strength; if the transport of [Q.] arrives safely there will be no war in Europe. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
-    "language": "fr"
+    "language": "fr",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1754-56 French: plain share is a bar too): the sweep scored read/R1958.txt whole, its heading line, the English summaries of the clear passages and the key notes included (plain 0.542, explicit 0.875). The French cipher text written out alone, read/R1958_reading.md: plain 0.647 (11/17), explicit 0.882 (15/17); the misses are names (Yorke, Fleming), period forms (sisteme, anticontinentistes) and one run of seven unread groups. Keeps read."
+    },
+    "reading": "read/R1958_reading.md",
+    "state": "read"
    },
    {
     "doc": "R2079",
@@ -464,7 +481,15 @@
      "read/machine_R2079.txt"
     ],
     "summary": "Haslang tells the Bavarian resident he has Newcastle's word that his subsidy treaty will be renewed; the prospects for the augmentation fade, which Kauderbach thinks will help the renewal of subsidies. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
-    "language": "fr"
+    "language": "fr",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1754-56 French: plain share is a bar too): the sweep scored read/R2079.txt whole, its heading line, the English summaries of the clear passages and the key notes included (plain 0.56, explicit 0.8). The French cipher text written out alone, read/R2079_reading.md: plain 0.75 (12/16), explicit 0.938 (15/16); the misses are names (Haslang, Yorke) and period forms. Keeps read."
+    },
+    "reading": "read/R2079_reading.md",
+    "state": "read"
    },
    {
     "doc": "R2080",
@@ -544,7 +569,15 @@
      "read/machine_R1043.txt"
     ],
     "summary": "Certain news that the long-rumoured treaty was signed at Versailles on the 2nd of the month: neutrality of the Low Countries, no help to the other party's enemy, and reportedly an undertaking about the election of a King of the Romans; it caused consternation at The Hague for fear of secret articles.",
-    "language": "fr"
+    "language": "fr",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1754-56 French: plain share is a bar too): the sweep scored read/R1043.txt whole, its heading line, the English summaries of the clear passages and the key notes included (plain 0.513, explicit 0.641). The French cipher text written out alone, read/R1043_reading.md: plain 0.6 (15/25), explicit 0.68 (17/25); at the bar: the first sentence and the middle passage on the Spanish ambassador carry several unread name codes; the rest holds. Keeps read."
+    },
+    "reading": "read/R1043_reading.md",
+    "state": "read"
    }
   ],
   "key_file": "key.json",

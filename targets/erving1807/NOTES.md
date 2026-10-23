@@ -48,3 +48,12 @@ holes are his slips, not missing key entries.
   for a rebuilt Pinckney key; check first whether Founders prints a decode (99-01-02 series).
   Done 4 Oct 2026 (outside contribution, PR #21): Founders prints it decoded (99-01-02-1993); the code was aligned
   with that text and the key rebuilt, see [`../erving1807aug/`](../erving1807aug/).
+
+## Verification 5, 23 Oct 2026
+
+The plain-bar sweep scored `texts/no21-24mar1807_corrections.md` (plain 0.3), a table of corrections at Madison's
+holes, not a reading; the cipher runs in `erving_groups.txt` are phrase fragments of an otherwise clear letter and do not
+build sentences alone. The reading of the letter is Madison's contemporary decode as printed in PJM-SS 13:529-31
+(Founders Online, a modern edition, linked, not copied), with this project's corrections. The entry stays an external
+pointer to that printed decipherment; not scored here.
+

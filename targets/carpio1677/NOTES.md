@@ -135,6 +135,12 @@ These summaries were first made from the machine readings and corrected on 22 Oc
 "temer el logro", R1011 stonings and Civitavecchia, R1006 Toulon/Hyères, R1003 audiences recalled). The full readings, aligned with the margins, are in
 `read/R*_reading.md`, with English in `read/R*_en.md`.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (Spanish 1677): `read/R1006_reading.md` had no `## Reading` heading, so the sweep scored its header and
+notes too (plain 0.529). Heading added; the body scores plain 0.778, explicit 0.889 (the two uncertain place names at
+the end). Keeps read. (The reading's header says its spelling was modernised; not changed here.)
+
 ## Remaining gaps
 - R1006 last sentence: two place names, code "rin" and spelled "vi ve re s", read [?Tolón] and [?Hyères] - blocker: illegible (the margin is unreadable there on the DECODE scan; a better image of AGR SEG inv. 2559 would settle it)
 - R1002 one misread group after "que Dios guarde" ({7}); R1003 one verb not written in cipher or margin - blocker: illegible (DECODE slip; margin runs on without it)

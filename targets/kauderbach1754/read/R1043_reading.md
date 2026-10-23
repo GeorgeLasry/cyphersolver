@@ -1,0 +1,12 @@
+<!-- Reading of R1043: the French cipher text of read/R1043.txt written out alone (verification 5, 23 Oct 2026), without the file's heading line, the English summaries of the clear passages ([Clear: ...] lines, which stay in read/R1043.txt) and the key notes. [...] = unread code group (mostly name positions); [?] = doubtful. The file's heading: R1043 (DECODE D1956), [C.] 25 mai 1756 -- reading (cipher part ~85% read) -->
+
+# R1043, Kauderbach (The Hague)
+
+## Reading
+
+La nouvelle de la negociation entre les [S?] et de [?] n'est plus un [mystere?] [...] [trois?] mois. [On] a aujourd'hui des avis certains et positifs que le [traité, ÿ %] dont on parle depuis si longtems a eté signé à Versailles le deux de ce mois, et selon ce qu'on m'a [fait?] conter confidemment, il a pour objet primo la neutralité des Pais Bas, secundo il doit y etre stipulé qu'aucune puissance ne donnera aucun secours à l'ennemi de l'autre, ce qui semble impliquer autre chose qu'une neutralité generale, et tertio [que la France?] s'engage, dit-on, envers [l'Imperatrice?] de ne pas lui etre contraire relativement à l'election d'un Roi des Romains. Cette nouvelle a causé une consternation extraordinaire ici parce qu'on craint qu'il n'y ait des articles secrets qui aillent encore plus loin. On s'est douté de ceci depuis plusieurs mois, qu'il y avoit quelque chose entre les deux cours, et ce soupçon a acquis le plus fort degré de probabilité depuis qu'on a [su] que des demarches que l'[P"] avoit fait faire à [ ] pour la ramener avoient eté infructueuses. Les [Anglois?] se plaignent fortement et ils font valoir des [subsides] payés à [ ] pendant la derniere guerre et qui vont à neuf millions de livres sterlings. La [nation?] [paroit?] impatiente de voir comment [on] prendra cette nouvelle et si elle suivra le systeme [...]
+
+[...] ou l'on prevoyoit un revirement general. [...] son fort lié avec les [ ] qui se trouvant [...] à l'assemblée pria l'ambassadeur de dire sa [...]; l'ambassadeur d'Espagne plaisanta beaucoup avec cette dame, lui disant que c'etoit un [...] comme elle [...] l'ambassadeur.
+
+l'ambassadeur, où ils n'avoient pas encore eté depuis qu'il a quitté la ville, et l'on a fait aussi beaucoup de reflexions sur cette demarche. Les [ ] disent au reste n'avoir aucune nouvelle de la signature du [traité] avec [ ], ce qui n'empeche pas qu'on ne sache positivement que la chose est reelle.
+

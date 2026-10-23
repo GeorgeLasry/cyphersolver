@@ -166,6 +166,15 @@ false alarms. Each passage is now written out as its whole sentence, clear words
 `15sept1610_reading.md` 0.75 explicit-hole (plain 0.75), `10nov1610_reading.md` 1.0 (plain 0.333, unaccented 1610
 spellings), `10nov1610_lasry_reading.md` 1.0 (plain 1.0). All three keep read; the entries point `reading` at them.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check. The 10 Nov 1610 reading is French in the old spelling (recognoissant, arogance, timidite), so the
+explicit-hole share is its bar: 1.0, plain 0.333 on period spellings; keeps read. The three lasry-additional entries had
+been scored on Lasry's line-labelled CTTS edits and on `lasry2022/reading_fr.txt` with its headings and notes (plain
+0.31-0.46). The edition's running text is now `lasry2022/b1_reading.md`, `b2_reading.md` and
+`additional_reading.md` (both images): plain 0.70, 0.727, 0.71; explicit 0.8, 0.909, 0.839. They keep read as George
+Lasry's reading.
+
 ## Remaining gaps
 - 10 Nov, re[c?]ognoissant, one sign (B1 on view 112, c needed) - blocker: no-key-material; Lasry's CTTS key (PR #61) gives this sign C from this word only; his longer document does not use it, so the table conflict stands
 - 15 Sept, acompagne[z?]/acompagnee, one sign (E3 or Z2) - blocker: illegible; the two cells differ by a stroke and the crop does not settle it

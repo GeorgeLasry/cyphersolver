@@ -88,7 +88,8 @@
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b10027296v/f276/full/1400,/0/default.jpg): f144v lines 1-3: interlinear reads \"dissimuler, Nous sommes obligez de ne pas abandonner ce poste sans des ordres expres\"; his excerpt has \"ce poste ni ces lieux sans les ordres expres\" - extra words vs the interlinear (his own code reading may differ from the clerk; not resolved) Verdict: partly confirmed.",
       "result": "partial"
     },
-    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"},
+    {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): the scored file lasry_entry.md is George Lasry's report entry with one excerpt, not a reading; his full decryption is not in the repository. Kept as an external pointer (note added); not scored.", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -129,7 +130,7 @@
         "label": "George Lasry's report entry (excerpts and translation)",
         "decryption": "lasry_entry.md",
         "summary": "Duquesne discusses negotiations with the Tripolins, the return of enslaved French subjects and captured ships, vessels suitable for use as fire-ships, treaty provisions and naval affairs. The later letter states the obligation to retain the position until express orders arrive and the hope of ending the campaign advantageously. (Abraham Duquesne to Seignelay, 25 September 1681; later letter in the same September correspondence, as given in George Lasry's report.)",
-        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry. The contemporary interlinear decipherment on the leaves is on the Gallica images only, not transcribed here."
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry. The contemporary interlinear decipherment on the leaves is on the Gallica images only, not transcribed here. v5 check 23 Oct 2026 (plain-bar list): the sweep scored lasry_entry.md, George Lasry's report entry (metadata, one excerpt, translation), not a reading of the document. His full decryption (BnF cipher research, 10 Oct 2026) is not in the repository and is his to publish; the contemporary interlinear decipherment is on the Gallica images only. Kept as an external pointer to his decipherment: not scored, not reviewed here; the read state is his claim."
       }
     ]
   }

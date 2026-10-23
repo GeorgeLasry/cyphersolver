@@ -309,6 +309,12 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per-letter transcriptions ct/*.txt, raw decodes letters/*_decode.txt and the hand readings letters/READINGS.md; key.py (Rommel 1846 key with the corrections).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): p. 391 had been scored on its unspaced decode file (plain 0.0). The one ciphered phrase written into its clear sentence as letters/p391_reading.md: plain 1.0. Keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -402,7 +408,16 @@
      "letters/READINGS.md",
      "letters/p391_decode.txt"
     ],
-    "summary": "One line: the ministers of the Pope and the King of Spain will do all they can to reconcile Archduke Matthias with the Emperor."
+    "summary": "One line: the ministers of the Pope and the King of Spain will do all they can to reconcile Archduke Matthias with the Emperor.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1609 French): the sweep scored letters/p391_decode.txt, the unspaced decode in <> brackets with the clear text (plain 0.0, explicit 1.0). The 19 cipher groups are the subject of one clear sentence: 'les ministres du Pape et du Roi d'Espagne feront toutes sortes de debvoirs ... avec l'Empereur'. Written out as letters/p391_reading.md: plain 1.0, explicit 1.0 (one sentence). Too short for more than a check that the sentence holds; it does. Keeps read."
+    },
+    "language": "fr",
+    "reading": "letters/p391_reading.md",
+    "state": "read"
    }
   ],
   "key_file": "key.py"

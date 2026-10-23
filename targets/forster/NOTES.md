@@ -124,3 +124,10 @@ independently of his work.
 | [src/pitt/](src/pitt/) | Pitt's README, key, decoder and output (MIT) |
 
 Model binaries (`ng5_*.npy`) are rebuilt by the scripts and not committed.
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: the decryption file mixes the unspaced literal decode, its header and a modernised paraphrase (plain
+0.526). The reading is now `texts/13may1644_reading.md`, from the literal decode with Pitt's key in its own spelling
+(the four slip tokens read with their symbol's value elsewhere): plain 1.0, explicit 1.0. Keeps read.
+

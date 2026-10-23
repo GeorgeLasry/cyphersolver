@@ -135,7 +135,8 @@
    "result": "worked"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1263 tokens, 32 types, la order 4: reading -2.287 per letter; random keys -5.456 (z 5.1); key annealed onto shuffled ciphertext best -2.851 (mean -2.881, z 36.0); annealer on the real text -2.244. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher.txt and transcription.tsv (glyphs and Latin per line) with the working reading reading.md; key key.md", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher.txt and transcription.tsv (glyphs and Latin per line) with the working reading reading.md; key key.md", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): listed as French, the text is Latin; the scored reading.md was the session-1 working file. Full reading written out from transcription.tsv as reading_latin.md: explicit 0.844, plain 0.594. Keeps read (explicit share is the bar for Latin).", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "la", "file": "validation.tsv", "tokens": 1263, "types": 32, "tokens_per_type": 39.47, "score": -2.287, "nulls": {"random keys": {"n": 200, "mean": -5.456, "sd": 0.619, "max": -3.919, "z": 5.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.881, "sd": 0.016, "max": -2.851, "z": 36.0, "p": 0.1429}}, "power": -2.244, "verdict": "pass", "notes": "claimed per-occurrence score -2.222; polyphony 0.063; 113 unread tokens left out; annealer on the real text from random keys reached -2.244"}, 
   "method": "key recovered from ciphertext-only",
@@ -182,7 +183,16 @@
      "transcription.tsv",
      "reading.md"
     ],
-    "summary": "Not a letter but a private record: Sir Simonds D'Ewes, in the private alphabet he invented at school, notes in Latin each convulsion fit of his infant son Clopton D'Ewes (b. July 1634, d. 9 May 1636), from 3 Apr 1635 to Jan 1636, with day, hour, moon phase and severity. His Autobiography counts 'forty and four convulsion fits' from 3 April 1635 to 4 March following. transcription.tsv gives the cipher and the Latin line by line."
+    "summary": "Not a letter but a private record: Sir Simonds D'Ewes, in the private alphabet he invented at school, notes in Latin each convulsion fit of his infant son Clopton D'Ewes (b. July 1634, d. 9 May 1636), from 3 Apr 1635 to Jan 1636, with day, hour, moon phase and severity. His Autobiography counts 'forty and four convulsion fits' from 3 April 1635 to 4 March following. transcription.tsv gives the cipher and the Latin line by line.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026: listed as French; the log is Latin (1635), so the explicit-hole share is the bar (the la word list does not know 'conuulsio' and the log's vocabulary). The sweep scored reading.md, the session-1 working file (five lines in a table plus notes: plain 0.25, explicit 0.639). The full reading (latin column of transcription.tsv) written out as reading_latin.md: explicit 0.844 (27/32), plain 0.594 (19/32), hole rate 0.096. The five sentences under the explicit bar are the doubtful glyphs of ll. 2-3, the faded entry for 21 Sept and the last line. Keeps read."
+    },
+    "language": "la",
+    "reading": "reading_latin.md",
+    "state": "read"
    }
   ],
   "key_file": "key.md"

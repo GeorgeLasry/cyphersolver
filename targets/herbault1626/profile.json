@@ -60,7 +60,8 @@
   {"date": "2026-09-18", "kind": "hypothesis", "technique": ["plaintext matching"], "what": "Catalogue task: check whether no. 26 is the decipherment of no. 25.", "result": "worked"},
   {"date": "2026-09-18", "kind": "verification", "what": "Clear text of nos. 25 and 26 compared: identical word for word; cipher runs fall after the same clear words; groups match at the two points checked (run 1 opening, run 3 ending). No group-for-group identity claimed.", "result": "worked"},
   {"date": "2026-09-18", "kind": "reading", "what": "Transcribed the letter with the interlinear decipherment of no. 26 for each cipher run (ct/letter_13feb1626.md); two proper names and 'Soubise' uncertain, a few glossed stretches left as '…'.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption ct/letter_13feb1626.md (the twin no. 26's interlinear decipherment with the clear text); the cipher groups were never transcribed (project work).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption ct/letter_13feb1626.md (the twin no. 26's interlinear decipherment with the clear text); the cipher groups were never transcribed (project work).", "result": "partial"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): ct/letter_13feb1626.md had no ## Reading heading (header and cipher notes scored, plain 0.588); heading added, body plain 0.754, explicit 0.825. Keeps read.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -83,6 +84,15 @@
     "label": "fr. 3669 no. 25 (deciphered from its twin no. 26), 13 Feb 1626",
     "decryption": "ct/letter_13feb1626.md",
     "summary": "Raymond Phélypeaux d'Herbault, secretary of state, to Philippe de Béthune, ambassador at Rome, Paris 13 February 1626, on the eve of the Treaty of Monzón: the ciphered passages concern the Pope and the troops for the Valtelline, why the peace with the Huguenots was needed (the burden of a double war) and the withdrawal of the Dutch ships and the Huguenot fleet, and the prince of Piedmont's propositions pushing the King into war with Spain with Venice contributing.",
+    "state": "read",
+    "reading": "ct/letter_13feb1626.md",
+    "language": "fr",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1626 French: plain share is a bar too): the sweep scored the whole file, header and the cipher description included (plain 0.588, explicit 0.825). A '## Reading' heading now opens the letter text; body alone: plain 0.754 (43/57), explicit 0.825 (47/57). The failing sentences hold the decipherer's unread stretches and the expanded abbreviations mons[ieu]r etc. (each counted a part-word by the scorer), with names (Bevilacqua, Giraldi, Contarini). Rests on the contemporary interlinear decipherment of the twin copy no. 26. Keeps read."
+    },
     "note": "Decryption = the contemporary interlinear decipherment of the twin copy no. 26, transcribed with the clear text (ct/letter_13feb1626.md). No transcription of the cipher groups of no. 25 or no. 26 (project work)."
    }
   ]

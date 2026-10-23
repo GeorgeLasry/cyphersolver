@@ -122,6 +122,12 @@
       "technique": ["manual reconstruction"],
       "what": "v3 verification: entry scored on Lasry's token tsv (no reading). Values divided into words in texts/eugenie1859_f9_f18_reading.md: 0.625 explicit-hole, plain 0.5 (place names). Keeps read, now with a reading file.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "Verification 5 (plain-bar rows): ff. 9r-18r reading plain 0.5, explicit 0.625; the holes are place names and the unvalued run at the end of 15r: keeps read. The report-excerpt file was scored with its English and page furniture (plain 0.488); the French excerpts written to texts/eugenie1859_lasry_excerpts_reading.md, plain 1.0. Keeps read.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -177,7 +183,7 @@
           "grade": "B",
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
-          "note": "v3 verification 23 Oct 2026: the entry pointed at the token tsv (one value per row; 0.0), so it had no reading. Worked: Lasry's values divided into words per folio in texts/eugenie1859_f9_f18_reading.md (letters the values do not carry bracketed: s'agenouillai[ent], etai[en]t; his ? tokens as [?]): 0.625 explicit-hole (5/8 sentence windows, hole rate 0.078), plain 0.5, the unknown words being place names (Oglio, Chiese, Mincio, Lonato, Castiglion) and defendront/exaltes. ff. 9r, 17r, 18r and the first sentence of 15r read; the end of 15r is a run of unvalued tokens."
+          "note": "v5 check 23 Oct 2026 (1859 French: the plain share is a bar too): texts/eugenie1859_f9_f18_reading.md body plain 0.5 (4/8 windows), explicit 0.625 (5/8). Of the four windows under the plain bar, two fail only on place names (Chiese, Mincio; Lonato, Castiglion) with defendront and the excerpt's end [...]; one on s'agenouillai[ent]/exaltes and one [?]; the real hole is the end of f. 15r, a run of tokens Lasry left without values ('Je re[?] [?] des [?] le [?] ... par ennemi'). Read as a reader 6 of 8 hold, and the folios are excerpts of Lasry's decipherment (four of eleven pages). Keeps read, the 15r run having no key material here (Lasry's values are all the repository holds). Earlier: v3 verification 23 Oct 2026: the entry pointed at the token tsv (one value per row; 0.0), so it had no reading. Worked: Lasry's values divided into words per folio in texts/eugenie1859_f9_f18_reading.md (letters the values do not carry bracketed: s'agenouillai[ent], etai[en]t; his ? tokens as [?]): 0.625 explicit-hole (5/8 sentence windows, hole rate 0.078), plain 0.5, the unknown words being place names (Oglio, Chiese, Mincio, Lonato, Castiglion) and defendront/exaltes. ff. 9r, 17r, 18r and the first sentence of 15r read; the end of 15r is a run of unvalued tokens."
         },
         "note": "Excerpt only: four of the eleven cipher pages; the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026).",
         "reading": "texts/eugenie1859_f9_f18_reading.md"
@@ -192,10 +198,11 @@
         "state": "read",
         "reading_review": {
           "grade": "A",
-          "by": "Claude (reading audit)",
-          "date": "2026-10-22",
-          "note": "The three excerpts of Lasry's report (ff. 19r, 35r, 27r) are coherent French with an English translation; one \"?\" in f27r."
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v5 check 23 Oct 2026 (1859 French: plain share is a bar too): the sweep scored the excerpt file whole, report page furniture and English translations included (plain 0.488, explicit 0.878). The French excerpts alone in texts/eugenie1859_lasry_excerpts_reading.md: plain 1.0 (14/14), explicit 1.0. George Lasry's decipherment; keeps read. Earlier: The three excerpts of Lasry's report (ff. 19r, 35r, 27r) are coherent French with an English translation; one \"?\" in f27r."
         },
+        "reading": "texts/eugenie1859_lasry_excerpts_reading.md",
         "note": "Excerpt only: the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026)."
       },
       {

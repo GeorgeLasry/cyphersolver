@@ -52,3 +52,11 @@ Reading and key were on the DECODE record (Lasry Nov 2020; Bonavoglia undated) b
 any attempt. No print edition searched beyond that (the slip has no sender to search by).
 
 Images: `decode/IMG_R24_I142_P1.jpg` (git-ignored, AAV copyright).
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: the sweep listed the slip as Spanish and scored Bonavoglia's DECODE file (plain 0.308). It is Italian
+of 1721. `READING.md` now has a `## Reading` heading (the clear date line moved above it) and is the profile entry's reading (language it): plain 0.667,
+explicit 0.667; the first sentence carries the three open nomenclator codes (9441, 9336, 9485), the other two hold.
+Keeps read.
+

@@ -122,7 +122,8 @@
    "what": "45 9441 43 (before -te divinis), 9336 9485 (before di Tournai), 9356, 76: no second occurrence to confirm any value; left open.",
    "result": "failed"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription cipher.txt and DECODE D3444; decryption READING.md with Lasry's (D3445) and Bonavoglia's (D3443) DECODE readings for comparison; key_file decrypt.py (Lasry's ASV-C15 plus the three added values).", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription cipher.txt and DECODE D3444; decryption READING.md with Lasry's (D3445) and Bonavoglia's (D3443) DECODE readings for comparison; key_file decrypt.py (Lasry's ASV-C15 plus the three added values).", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): the entry was listed as Spanish and scored on Bonavoglia's DECODE file (plain 0.308). It is Italian; READING.md given a ## Reading heading and set as the entry's reading: plain 0.667, explicit 0.667 (first sentence holds three open nomenclator codes). Keeps read.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -152,7 +153,15 @@
      "decode/DOC_R24_D3445_3445.txt",
      "decode/DOC_R24_D3443_3443.txt"
     ],
-    "summary": "An unsigned slip headed Brussels 9 Oct 1721, probably from the internuncio at Brussels (Austrian Netherlands) to the nuncio at Cologne: news wanted of a suspended parish priest and of a person at Tournai, the Cologne affair, and an offer to write to a correspondent of the recipient, awaiting orders. READING.md is the project's reading with three key values added; the two DECODE files are Lasry's segmented decryption (2020) and Bonavoglia's reading with translation, kept for comparison."
+    "summary": "An unsigned slip headed Brussels 9 Oct 1721, probably from the internuncio at Brussels (Austrian Netherlands) to the nuncio at Cologne: news wanted of a suspended parish priest and of a person at Tournai, the Cologne affair, and an offer to write to a correspondent of the recipient, awaiting orders. READING.md is the project's reading with three key values added; the two DECODE files are Lasry's segmented decryption (2020) and Bonavoglia's reading with translation, kept for comparison.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026: listed as Spanish, the slip is Italian (1721), so the plain share is a bar too. The sweep scored Bonavoglia's DECODE file DOC_R24_D3443 (reading, '?' marks and English together: plain 0.308, explicit 1.0). The project's reading READING.md (Lasry's key plus three values) now has a '## Reading' heading and is the entry's reading: plain 0.667 (2/3), explicit 0.667 (2/3), hole rate 0.138. The two later sentences hold; the first ('Sopra il curato [45] [9441] [43]te divinis, g(rat)s(?) di sapere qualche cosa di [9336] [9485] di Tournai') carries the three open nomenclator codes. A nine-line slip; keeps read, the open codes having no key material (Lasry's key leaves them blank)."
+    },
+    "reading": "READING.md",
+    "language": "it"
    }
   ],
   "key_file": "decrypt.py"

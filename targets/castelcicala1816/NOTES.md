@@ -152,6 +152,12 @@ The v3 sweep scored R9571 on `transcripts/R9571.txt`, where the code-group lines
 `transcripts/R9571_reading.md`: 1.0 explicit-hole and plain (5/5 sentences). Keeps read; the entry's `reading` points
 at it, and its stale "decoded, not read" note (left from the first audit pass) is removed.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (Italian 1823): R9589 had been scored on `transcripts/R9589.txt`, gloss lines interleaved with code
+groups and notes (plain 0.385). Its contemporary interlinear decipherment is now running text in
+`transcripts/R9589_reading.md` (English `_en.md`): plain 0.8, explicit 0.8; keeps read.
+
 ## Remaining gaps
 
 Decoded, not read (reading audit, 22 Oct 2026; re-read 22 Oct 2026, reread_log.md): unread groups between nearly every pair of words in each; the

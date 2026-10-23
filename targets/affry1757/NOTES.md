@@ -284,6 +284,21 @@ Scores: 1.0 explicit-hole for all three; plain 0.871, 0.967, 0.933. Notable: gro
 register names the informer "l'Angelo"; 675 (key "deux") at "Vingt". The profile entries point `reading` at the new
 files and keep read (grade A). No English files written yet for these three (summaries in the profile).
 
+## 23 Oct 2026: verification 5 (plain-bar check): R1067, R1068, R1070, R1073, R1076 follow the Fagel register
+
+French of 1757, so the plain word-list share is a bar as well as the explicit-hole share. The keyed decodes
+`read/R1067.md`, `R1068.md`, `R1070.md`, `R1073.md`, `R1076.md` scored plain 0.56/0.2/0.54/0.5/0.41 on their reading
+bodies (explicit 0.60-0.67): open codes and brace-inferred syllables in most sentences. As for R1072/R1074/R2067 (v3),
+the readings now follow the clerks' clear copies in the Fagel register: `read/<R>_reading.md`, clerk's spelling, each
+with a header giving the register pages and the key/register agreement (0.578-0.854 of keyed groups at the register's
+word against 0.09-0.14 for shuffled values). The register pages not checked before (5186 16R, 17L, 149R, 150L, 255R,
+256L) were fetched through the NA IIIF server and checked line by line. R1076: "et la Tempette" (register slip) read
+"sans la Tempette" from the figures, and the struck "ai" of "je lui ai parlai" left out; three register stretches of
+R1076 have no matching cipher run (clear periods of the letter or cipher not imaged). New scores: plain 0.821, 0.75,
+0.923, 1.0, 0.974; explicit 1.0 for all; the sentences under the plain bar fail only on Mr, titles and names. R1069
+(Lyonet's decipherment, `plain/R1069.txt`, plain 0.5) fails only on "Mr" and names (Saltikof, Golofkin, Laurenzi ...):
+keeps read. No English files yet for the register readings (summaries in the profile).
+
 ## Remaining gaps
 
 - 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker:
@@ -291,7 +306,7 @@ files and keep read (grade A). No English files written yet for these three (sum
 - groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895
   devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: open-codes; one value per group
   is all key_X can hold, so the measure under-reads these
-- register pages other than the scans listed above (5186 249L, 256L) were not read here; WAINUT's
+- register pages other than the scans listed above (5186 249L; 256L checked 23 Oct 2026, v5) were not read here; WAINUT's
   Gemini transcription of them is unchecked - blocker: not-attempted
 
 Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,

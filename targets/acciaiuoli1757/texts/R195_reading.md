@@ -2,6 +2,8 @@
 
 # R195, Acciaiuoli to the Secretariat of State, Lisbon, 19 Sept 1758 (f. 98r)
 
+## Reading
+
 Quanto alla causa della malattia del Re di Portogallo continua la stessa voce: pare [?solamente] [?assicurato] che non
 venisse dall'avvisata Marchesa, ma da altra donna non nobile. Si vuole il braccio rotto, ma alla Corte si dà la
 risposta che umilio nella mia in piano su tal proposito. Il compagno Texeira è fuori di pericolo, ma non si vede.

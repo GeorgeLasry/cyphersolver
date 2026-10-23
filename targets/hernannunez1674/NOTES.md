@@ -46,6 +46,16 @@ left unread (`unread_groups.tsv`) was found on the image and read against its ma
 
 Measured (`dec2.py`): 1,716 tokens, 1 unread, 11 values graded M; 0.999 read, 0.993 without the M values.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (Spanish 1674): the four entries pointed at `read2/R101x.txt`, unspaced key decodes with the margin
+transcriptions below them (plain 0.06-0.33); no reading had been written out. Readings now in
+`read2/R1012_reading.md` ... `R1015_reading.md`: the contemporary margin decipherments in their spelling, checked
+word by word against the decodes (the decode gives the word where the margin transcription is garbled; in R1012 the
+decode skips two stretches the margin has, probably lines dropped in the digit transcription). Plain 0.577, 0.643,
+0.81, 0.889; explicit 0.923, 1.0, 1.0, 1.0. R1012's plain shortfall is names, period spellings (ay, aora, essa,
+creydo) and ordinary words the es list lacks. All four keep read.
+
 ## Remaining gaps
 - one R1014 group - blocker: illegible; the sign cannot be read on the DECODE image and the margin does not fix it
 - 11 values graded M (R1012 6, R1013 3, R1014 1, R1015 1) - blocker: illegible; the signs are unclear on the image

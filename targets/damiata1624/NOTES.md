@@ -72,3 +72,15 @@ on 74 words): a false alarm. The three passages are Italian and carry the contem
 checked against the Biermann-Bosbach key; they are written out in `texts/R59_reading.md`: 1.0 explicit-hole and plain.
 The entry now has `language: it` and `reading` set; keeps read.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: R60 and R61 were listed as Spanish and French and scored on the copied NOTES paragraphs. Both letters
+are Italian. The DECODE images were fetched (project cookie, session scratchpad only) and read. R60, f. 138r: the "…"
+of the 21 Sept transcription were only the clear words of the letter; the two cipher runs are glossed "Il fratello
+dell'Arcivescovo" (with "di Livorni", doubtful, written above the second figure line) and "Monsignore"
+(`texts/R60_reading.md`: plain 0.6, explicit 0.8). R61, f. 186r: the decipherment at the foot carries the same + as
+the letter-sign line after "prudentemente", and that line's word division agrees with it (seven-sign first word, l'
+with a superscript, two-sign "di"), so the decipherment is the reading of the + line, set in its clear sentence
+(`texts/R61_reading.md`: plain 0.667, explicit 1.0). The figures under the decipherment decode only in part from
+the 21 Sept digit transcription (8/0, 9/4 confusions); their end gives "di loro natura". Both keep read.
+

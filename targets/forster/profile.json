@@ -121,7 +121,8 @@
    "what": "Blind recovery from ciphertext using word boundaries: 31 of 34 symbols, with six matched controls.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ciphertext.txt (Tomokiyo); decryption: NOTES section 2 reading copied into texts/13may1644_decryption.md, with Pitt's decoder output and README (edited reading beside the earlier Lasry/Biermann reading supplied by Britland).", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ciphertext.txt (Tomokiyo); decryption: NOTES section 2 reading copied into texts/13may1644_decryption.md, with Pitt's decoder output and README (edited reading beside the earlier Lasry/Biermann reading supplied by Britland).", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): the decryption file mixes the unspaced literal decode, header and a modernised paraphrase (plain 0.526). Reading written from the literal decode in the decoded spelling, texts/13may1644_reading.md: plain 1.0, explicit 1.0. Keeps read.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -146,12 +147,17 @@
     "doc": "13may1644",
     "label": "Forster papers, 13 May 1644",
     "transcription": "ciphertext.txt",
-    "decryption": [
-     "texts/13may1644_decryption.md",
-     "src/pitt/decoder_output.txt",
-     "src/pitt/README.md"
-    ],
+    "decryption": ["texts/13may1644_decryption.md", "src/pitt/decoder_output.txt", "src/pitt/README.md"],
     "summary": "A ciphered French passage dated 13 May 1644 in the papers of Sir Richard Forster (Val-d'Oise 68.H.8): spiritual counsel that there is no cause for scruple, and that the correspondent should take the ways of prudence to preserve his life, the better to serve God and his brethren, weighing whether it is better to act or to endure. Recipient not established.",
+    "state": "read",
+    "reading": "texts/13may1644_reading.md",
+    "language": "fr",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1644 French): the sweep scored the decryption file, the unspaced literal decode with header and a modernised paraphrase (plain 0.526, explicit 1.0). Reading written out from the literal decode with Pitt's key, word division and punctuation added, spelling as decoded, the four slip tokens read with their symbol's value elsewhere, clear passages in ⟨ ⟩: texts/13may1644_reading.md, plain 1.0 (6/6), explicit 1.0. Keeps read."
+    },
     "note": "Decryption = the project's literal decode with Pitt's key (copied from NOTES), Pitt's decoder output, and Pitt's README with his edited reading beside the earlier reading Britland supplied (Lasry's and Biermann's work, which is not in the repository; only the variant phrases quoted there are known). Transcription = Tomokiyo's, from Britland's typeset text; no manuscript image."
    }
   ]

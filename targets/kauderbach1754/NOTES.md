@@ -86,6 +86,13 @@ abbreviations inside the runs (`E.M.`, `C./.`, `Q./.`, `M./.`, `S./.`, `J./.`, `
    in both reading files and in the write-up (summary, R2080 and R1043 extracts). Still to correct in the shared
    files: `decode_updates/decryptions/R1043.txt` and `R2080.txt` repeat the old wording.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (French 1754-56): R2078, R1958, R2079 and R1043 had been scored on `read/R*.txt` whole (heading line,
+English summaries of the clear passages, key notes). The French cipher texts are now written out alone in
+`read/R*_reading.md`: plain 0.618, 0.647, 0.75, 0.6; explicit 0.794, 0.882, 0.938, 0.68. All keep read; R1043 sits at
+the bar, its failing sentences carrying unread name codes.
+
 ## Remaining gaps
 
 - R1954 (March 1756, 1,621 groups): decoded, not read - blocker: needs-physical-access; re-read 23 Oct 2026 (b29): uncertain digits resolved, seven places corrected on the images, partial reading 0.549; the remaining runs (f. 2 ll. 6, 8, 13; f. 4 ll. 6-10, 17-25) read legibly but do not decode, copyist slips; the original in HStA Dresden is not online

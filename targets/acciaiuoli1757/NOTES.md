@@ -69,6 +69,15 @@ No 2-digit element begins with 2 or contains 6, so the parse is deterministic. U
 Contamination: Lasry's letter-level decryption was public on DECODE (logged-in attachments) and was used directly.
 The word division, the code identifications and the historical reading are new here.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (Italian 1758, so the plain word-list share is a bar as well as the explicit-hole share). R25 and R195:
+false alarms; their reading files had no `## Reading` heading, so header and notes were scored. Heading added; bodies
+R25 plain 0.87 / explicit 1.0, R195 0.818 / 0.818; keep read. R196 had no reading file (the sweep scored Lasry's raw
+decode, plain 0.355). Its clear decipherment (f. 97r, `DOC_R196_D1449`, recorded here on 22 Oct but never transcribed)
+is now `texts/R196_decipherment.txt`; it agrees with the decode clause by clause (2754 pubblic-, 2131 ancora, 2141 come,
+2349 avvis-, 2907 due, 2189 quest-). Reading `texts/R196_reading.md`, English `_en.md`, plain 1.0; keeps read, grade A.
+
 ## Remaining gaps
 - closed 22 Oct 2026: R25, R195, R200, R201 read from the Secretariat's clear decipherments on DECODE (texts/R*_reading.md)
 - R200 code 2339 (an ambassador; the fair copies leave it blank, the draft gives 'di Spagna') - blocker: no-key-material

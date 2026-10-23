@@ -64,6 +64,13 @@ Sender of letter 1: unsigned. It is written from London (dateline) in the code S
 and it speaks for the King ("ainsi que j'ay ordre de le marquer"); the German Chancery in London under Steinberg
 is the likely source. Not proven.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: both entries pointed at `reading.md` (two letters, German clear text, translations, notes; plain
+0.347). Readings written out per letter: `feb26_reading.md`, the French cipher run (plain 0.727, explicit 1.0), and
+`mar29_reading.md`, the German sentence with its three French runs (explicit 1.0; a mixed-language sentence the word
+lists cannot score, judged as a reader). Both keep read.
+
 ## Remaining gaps
 
 - Letter 1 p. 74 l. 3: group 75? (last digit lost in the binding; 751, a null, fits the stroke) and the 283 (r)

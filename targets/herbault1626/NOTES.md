@@ -94,3 +94,9 @@ matching of groups at the two points named above; the reading of every glossed p
 checked: a group-by-group identity of the two ciphertexts; the key table; any printed edition. User must
 verify: this is a reading of a contemporary decipherment, not an independent decryption, and the two
 uncertain proper names are flagged in the transcription.
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (French 1626): `ct/letter_13feb1626.md` had been scored whole, header and cipher notes included (plain
+0.588). A `## Reading` heading now opens the letter; body plain 0.754, explicit 0.825. Keeps read.
+

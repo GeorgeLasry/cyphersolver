@@ -317,6 +317,12 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): gap88.txt and rem88.txt; the readings copied from NOTES.md sections 3-4 with render.py output into texts/no88_*_decryption.md; key code_table.tsv.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): both No. 88 entries had been scored on decryption files with hyphenated syllables and group tables (the gap entry listed as French). Readings written out with words joined (texts/no88_gap_reading.md, no88_remainder_reading.md): plain 0.9 and 0.688, explicit 1.0 and 0.812. Both keep read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -415,14 +421,32 @@
     "label": "No. 88, 25 June 1812: the nine lines Ford did not decipher",
     "transcription": "gap88.txt",
     "decryption": "texts/no88_gap_decryption.md",
-    "summary": "John Quincy Adams at St Petersburg to the Secretary of State, the day after Napoleon crossed the Niemen: Chancellor Rumyantsev opposed Alexander's journey to Wilna, suffered an apoplectic stroke soon after arriving and a second, worse one since; a German report of his death was false, and JQA judges he cannot long remain at the foreign ministry."
+    "summary": "John Quincy Adams at St Petersburg to the Secretary of State, the day after Napoleon crossed the Niemen: Chancellor Rumyantsev opposed Alexander's journey to Wilna, suffered an apoplectic stroke soon after arriving and a second, worse one since; a German report of his death was false, and JQA judges he cannot long remain at the foreign ministry.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026: listed as French; the despatch is English (1812), so the plain share is a bar too. The sweep scored the decryption file with its hyphenated syllables and group table (plain 0.192, explicit 0.808). Reading written out with words joined, grade-I words marked, texts/no88_gap_reading.md: plain 0.9 (9/10), explicit 1.0. Keeps read."
+    },
+    "language": "en",
+    "reading": "texts/no88_gap_reading.md",
+    "state": "read"
    },
    {
     "doc": "no88-remainder",
     "label": "No. 88, 25 June 1812: the remainder Ford printed as undecyphered (frame 0207)",
     "transcription": "rem88.txt",
     "decryption": "texts/no88_remainder_decryption.md",
-    "summary": "The rest of No. 88: a proposal to evacuate Prussia as a preliminary to negotiation would have been neither unreasonable nor offensive; the French ambassador Lauriston took Prince Kurakin's note as proof that Alexander would not negotiate; and JQA expects that early French success would let Napoleon strike directly at the centre of the empire rather than along the Baltic."
+    "summary": "The rest of No. 88: a proposal to evacuate Prussia as a preliminary to negotiation would have been neither unreasonable nor offensive; the French ambassador Lauriston took Prince Kurakin's note as proof that Alexander would not negotiate; and JQA expects that early French success would let Napoleon strike directly at the centre of the empire rather than along the Baltic.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (English 1812: plain share is a bar too): the sweep scored the decryption file with hyphenated syllables and group table (plain 0.38, explicit 0.82). Reading written out with words joined, grade-I words marked [?], texts/no88_remainder_reading.md: plain 0.688 (11/16), explicit 0.812 (13/16); the failing sentences carry the inferred words and the valued-but-not-sense groups {1185}, {tol}. Keeps read."
+    },
+    "language": "en",
+    "reading": "texts/no88_remainder_reading.md",
+    "state": "read"
    }
   ],
   "key_file": "code_table.tsv"

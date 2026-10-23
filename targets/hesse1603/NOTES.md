@@ -167,3 +167,9 @@ Checked: every King's passage transcribed from the page images and decoded; key 
 alignments against the texts. Not checked: the Marburg originals; the BnF Clairambault 360 key sheet; the Landgrave's
 ciphered phrases beyond two pages. User must verify: the historical identifications proposed for 98_ and the unresolved
 name on p. 213 are guesses and are marked so.
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: the 24 Jan 1609 entry (Rommel p. 391) was scored on its unspaced decode file (plain 0.0). Its 19 groups
+are the subject of one clear sentence; written out as `letters/p391_reading.md`, plain 1.0. Keeps read.
+

@@ -70,3 +70,11 @@ Translation
 ## Notes and corrections
 
 Lasry's excerpt is fuller than the contemporary interlinear: he gives "ce poste ni ces lieux sans les ordres expres", the interlinear reads "ce poste sans des ordres expres". His reading of the codes may differ from the clerk's.
+
+## Verification 5, 23 Oct 2026
+
+The plain-bar sweep scored `lasry_entry.md`, George Lasry's report entry (metadata, one excerpt and its
+translation), which is not a reading of the document. His full decryption (BnF cipher research, 10 Oct 2026) is not in
+the repository and is his to publish; the contemporary interlinear decipherment is on the Gallica images only. The
+entry stays an **external pointer** to his decipherment, with a note saying so; not scored or reviewed here.
+

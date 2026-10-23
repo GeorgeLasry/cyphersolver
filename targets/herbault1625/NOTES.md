@@ -63,3 +63,11 @@ impose a fairly absolute rule on us in this respect.
 - What we checked: f99r 3 cipher rows: contemporary interlinear "croions que les forces presentes des Ennemis et les considerations de M. de Savoye pour la conservation de ses estatz nous imposeront une loy assez absolue pour ce regard" = his excerpt verbatim
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Clear text + cipher; 97.6% identified, 2/2 cipher pages. Signed letter, 1625 Valtelline/Savoy context consistent.
+
+## Verification 5, 23 Oct 2026
+
+The plain-bar sweep scored `lasry_entry.md`, George Lasry's report entry (metadata, one excerpt and its
+translation), which is not a reading of the document. His full decryption (BnF cipher research, 10 Oct 2026) is not in
+the repository and is his to publish; the contemporary interlinear decipherment is on the Gallica images only. The
+entry stays an **external pointer** to his decipherment, with a note saying so; not scored or reviewed here.
+

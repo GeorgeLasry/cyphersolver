@@ -185,7 +185,8 @@
    "date": "2026-09-21"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions r59/r60/r61_digits.txt; the interlinear decipherments copied verbatim from NOTES.md into texts/R59-R61_decryption.md; R60's gloss is transcribed only in part (rest on the image) and R61's letter-sign line is untranscribed.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: R59 scored as Latin on its decryption file with figure strings (0.5). The three glossed passages written out in texts/R59_reading.md (Italian): 1.0 explicit-hole and plain. Language set to it; keeps read.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: R59 scored as Latin on its decryption file with figure strings (0.5). The three glossed passages written out in texts/R59_reading.md (Italian): 1.0 explicit-hole and plain. Language set to it; keeps read.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R60 and R61 were listed as Spanish/French and scored on copied NOTES paragraphs. Both are Italian. DECODE images IMG_R60_I463_P3 and IMG_R61_I464_P1 fetched with the project cookie: R60's two glossed cipher runs read in full (the '…' were clear text); R61's foot decipherment is tied by its + to the letter-sign line, whose word division agrees. Readings texts/R60_reading.md (plain 0.6, explicit 0.8) and texts/R61_reading.md (plain 0.667, explicit 1.0). Keep read.", "result": "worked", "technique": ["plaintext matching"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -226,7 +227,15 @@
     "transcription": "r60_digits.txt",
     "decryption": "texts/R60_decryption.md",
     "summary": "The nuncio Bernardino Spada, archbishop of Damiata, Paris 15 August 1625: clear Italian news (Fontainebleau, Richelieu, Mansfeld's officer, the English fleet, Vaudémont, Verdun) with three short cipher runs on f. 138r about a copy of a letter shown by the brother of an archbishop.",
-    "note": "Decryption incomplete: only the opening of the interlinear decipherment was transcribed (NOTES.md); the rest is on the DECODE image only (project work)."
+    "state": "read",
+    "reading": "texts/R60_reading.md",
+    "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026: listed as Spanish; the letter is Italian (1625), so the plain share is a bar too. The sweep scored texts/R60_decryption.md (copied NOTES paragraph with '…' gaps and key strings: plain 0.0, explicit 0.714). The DECODE image IMG_R60_I463_P3 (f. 138r) was fetched and read: the '…' were only the clear words of the letter; the two cipher runs are glossed 'Il fratello dell'Arcivescovo' + 'di Livorni' and 'Monsignore'. Reading texts/R60_reading.md (glosses with the clear sentence around them): plain 0.6 (3/5), explicit 0.8 (4/5); the see 'di Livorni' marked doubtful. Keeps read."
+    }
    },
    {
     "doc": "R61",
@@ -234,7 +243,15 @@
     "transcription": "r61_digits.txt",
     "decryption": "texts/R61_decryption.md",
     "summary": "Bernardino Naro, Paris, last day of February 1625, with a copy of a Brussels letter of 21 Feb 1625 (Mirabello, the Savoy ambassador); two lines of figures, deciphered above, on the French being very suspicious and jealous by nature.",
-    "note": "The letter-sign line on f. 186r is neither transcribed nor read."
+    "state": "read",
+    "reading": "texts/R61_reading.md",
+    "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026: listed as French; the letter is Italian (1625). The sweep scored texts/R61_decryption.md (copied NOTES paragraph: plain 0.167, explicit 1.0). On the DECODE image IMG_R61_I464_P1 (f. 186r) the decipherment at the foot carries the same + as the letter-sign line after 'prudentemente', and the word division of that line agrees with it, so the decipherment reads the + line (the figures under it decode in part, their end '... di loro natura'). Reading texts/R61_reading.md, the decipherment set in its clear sentence: plain 0.667 (2/3), explicit 1.0 (3/3). Keeps read; the old note (letter-sign line unread) is withdrawn."
+    }
    }
   ]
  }

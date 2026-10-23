@@ -50,6 +50,13 @@ Swede has moved to Vilna, between Lithuania and Muscovy.
 0→clear *é*, 1257→127 (*tolmácsával*), *l, i, 86, i*→6, 1, 86, 5, 74 inserted (*fülének*), 63 restored (*lelkemre*),
 the two crossed-out signs after 300, 16 marked struck, "neptune" = Ψ (null). `R478_read.txt` is the decrypt.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: the sweep had R478 as English. It is Hungarian of 1706, so the explicit-hole share is the bar (the hu
+word list does not know the period text, plain 0.059). The reading body is now `texts/R478_reading.md` (## Reading
+heading, so the gist is not scored with it) and the gist `texts/R478_en.md`; language set to hu. Explicit 0.706
+(12/17), hole rate 0.097: keeps read. The unread stretch on the interpreter stays as it was.
+
 ## Remaining gaps
 
 - One ten-group stretch on p. 2 (*…tolmácsot ha az ha az tizéntee s. asséraltadé ö…*): every group has its key

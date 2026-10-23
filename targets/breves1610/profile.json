@@ -253,6 +253,12 @@
    "technique": ["statistical test"],
    "what": "v3 verification: 15sept1610 and 10nov1610 were scored on the two-passage reading.txt (0.0) and Lasry's 3_edits.txt (0.5, line labels and ellipses). Each passage written out as its whole sentence (15sept1610_reading.md, 10nov1610_reading.md, 10nov1610_lasry_reading.md): explicit-hole 0.75, 1.0, 1.0. All three keep read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): 10 Nov reading is old-spelling French (explicit 1.0, plain 0.333 on period spellings): keeps read. The lasry-additional entries were scored on line-labelled files with notes (plain 0.31-0.46); running text written out as lasry2022/b1_reading.md, b2_reading.md and additional_reading.md: plain 0.70/0.727/0.71, explicit 0.8/0.909/0.839. Keep read (Lasry's reading).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -365,7 +371,7 @@
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "v3 verification 23 Oct 2026: scored on the two-passage reading.txt (0.0), a false alarm. The 10 Nov sentence written out whole in 10nov1610_reading.md: 1.0 explicit-hole (3/3, hole rate 0.062), plain 0.333 (1610 unaccented spellings arogance, timidite). Rests on Dudout's decipherment checked sign by sign; Lasry's CTTS decipherment agrees."
+     "note": "v5 check 23 Oct 2026: 1610 French in the old spelling (recognoissant, arogance, timidite unaccented, se[roit]), so the explicit-hole share is the bar, not the plain word-list share. 10nov1610_reading.md: explicit 1.0 (3/3), plain 0.333 (1/3); the two sentences under the plain bar fail on the marked re[?c]ognoissant and on arogance/desarmement, period spellings. One sentence, it holds. Keeps read. Earlier: v3 verification 23 Oct 2026: scored on the two-passage reading.txt (0.0), a false alarm. The 10 Nov sentence written out whole in 10nov1610_reading.md: 1.0 explicit-hole (3/3, hole rate 0.062), plain 0.333 (1610 unaccented spellings arogance, timidite). Rests on Dudout's decipherment checked sign by sign; Lasry's CTTS decipherment agrees."
     },
     "reading": "10nov1610_reading.md",
     "state": "read"
@@ -396,7 +402,15 @@
      "lasry2022/ctts/decryption/b1.txt",
      "lasry2022/ctts/edited/b1_edits.txt"
     ],
-    "summary": "A letter in the same key, read by George Lasry (CTTS, 2022; improved with Opus 5.5, Oct 2026): marriage negotiations under aliases (La Hale, Le Cormier, La Cheville, Pindare, Saint Paul). Shelfmark and date not established; it may be Henri IV to Brèves (R2077), but Lasry asks that it not be identified with R2077 without a matching archival image."
+    "summary": "A letter in the same key, read by George Lasry (CTTS, 2022; improved with Opus 5.5, Oct 2026): marriage negotiations under aliases (La Hale, Le Cormier, La Cheville, Pindare, Saint Paul). Shelfmark and date not established; it may be Henri IV to Brèves (R2077), but Lasry asks that it not be identified with R2077 without a matching archival image.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1610 French, old spelling: explicit share is the bar, plain recorded): the sweep scored Lasry's line-labelled CTTS edit b1_edits.txt (plain 0.455, explicit 0.773). Running text of the edited reading (lasry2022/reading_fr.txt, Codex's image checks, PR #61) written out as lasry2022/b1_reading.md: plain 0.7 (14/20), explicit 0.8 (16/20), hole rate 0.047; the failing sentences carry the edition's marked doubts ([tousjours?], [moyen?; 48̄], [l'Olivier?], [suite hors image]) and the alias names (Cormier). George Lasry's reading, kept as his."
+    },
+    "reading": "lasry2022/b1_reading.md",
+    "state": "read"
    },
    {
     "doc": "lasry-additional",
@@ -406,7 +420,15 @@
      "lasry2022/ctts/decryption/b2.txt",
      "lasry2022/ctts/edited/b2_edits.txt"
     ],
-    "summary": "Second image of the same document (Lasry's CTTS files): the reaction to an alliance, calm at home and friendship with neighbours, \"au grand desplaisir de Sa Sainteté\"; barred 74 and 75 unresolved."
+    "summary": "Second image of the same document (Lasry's CTTS files): the reaction to an alliance, calm at home and friendship with neighbours, \"au grand desplaisir de Sa Sainteté\"; barred 74 and 75 unresolved.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1610 French, old spelling: explicit share is the bar, plain recorded): the sweep scored Lasry's line-labelled CTTS edit b2_edits.txt (plain 0.462, explicit 0.846). Running text of the edited reading (lasry2022/reading_fr.txt) written out as lasry2022/b2_reading.md: plain 0.727 (8/11), explicit 0.909 (10/11); under the plain bar only alias names (Halle, Cormier), period spellings (puisnée, patiroyent) and the marked [aussytost?]/[74̄]. George Lasry's reading, kept as his."
+    },
+    "reading": "lasry2022/b2_reading.md",
+    "state": "read"
    },
    {
     "doc": "lasry-additional",
@@ -418,7 +440,15 @@
     ],
     "decryption": "lasry2022/reading_fr.txt",
     "translation": "lasry2022/translation_en.txt",
-    "summary": "The edition prepared by Codex in the contribution, taking Lasry's CTTS key and reading as its base and departing from his edited export where the images support it (Pindare not Vendosme?, prester l'oreille not rejetter?, desquels not de Lesdiguières?, rompu omitted). Lasry's own edited text is in ctts/edited/, unchanged, for comparison."
+    "summary": "The edition prepared by Codex in the contribution, taking Lasry's CTTS key and reading as its base and departing from his edited export where the images support it (Pindare not Vendosme?, prester l'oreille not rejetter?, desquels not de Lesdiguières?, rompu omitted). Lasry's own edited text is in ctts/edited/, unchanged, for comparison.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1610 French, old spelling: explicit share is the bar, plain recorded): the sweep scored reading_fr.txt whole, headings, line numbers and notes included (plain 0.309, explicit 0.851). The two images of the additional document written out as running text, lasry2022/additional_reading.md (the 10 Nov excerpt of the same edition is ../10nov1610_lasry_reading.md): plain 0.71 (22/31), explicit 0.839 (26/31), hole rate 0.038. George Lasry's reading with Codex's image checks, kept as his."
+    },
+    "reading": "lasry2022/additional_reading.md",
+    "state": "read"
    }
   ],
   "key_file": [

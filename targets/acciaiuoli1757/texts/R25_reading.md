@@ -2,6 +2,8 @@
 
 # R25, Acciaiuoli to the Secretariat of State, Lisbon, 12 Sept 1758 (ff. 95r-95v)
 
+## Reading
+
 Spiego nel Dispaccio il male del Re di Portogallo, e la causa che se ne adduce; ma si vuole che non sia la vera per
 tutta la Città, e si racconta che, venendo il Re da una visita di una Dama (della quale già molto per questo da anni vi
 si parlava) in calesse con Pietro Texeira, [?Vilasso], domestico favorito (perciò Cavaliere dell'Ordine di Cristo e

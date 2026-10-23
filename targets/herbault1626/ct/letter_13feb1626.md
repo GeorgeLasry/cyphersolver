@@ -9,7 +9,7 @@ contemporary decipherment written above or below the cipher line in no. 26. `⟨
 unsure of. Spelling is the clerk's, lightly normalised (accents, apostrophes); abbreviations expanded in
 square brackets.
 
----
+## Reading
 
 **Monsieur,**
 

@@ -2,6 +2,8 @@
 
 # R1006, Carpio to Fuenmayor, Rome, 2 Oct 1677
 
+## Reading
+
 ⟨Tengo avisado a V.S.⟩ los agravios que en esta corte ha recibido nuestra nación, a que ahora sólo puedo añadir
 que, persistiendo el Papa y sus ministros en no dar satisfacción, aguardo el parecer que sobre esta materia he
 pedido al señor gobernador de Milán, para con él y el de estos señores cardenales de nuestro partido tomar la última

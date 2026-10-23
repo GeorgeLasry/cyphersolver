@@ -117,6 +117,15 @@ Dates (from the clear parts): R985 3 Aug 1677; R986 28 Aug; R987 18 (or 28) June
 R989 21 Dec; R990 19 Oct; R991 5 Oct(?); R992 19 Sept; R993 28 Dec 1677; R994 15 Feb 1678; R995 26 Jan; R996 1 Mar;
 R997 8 Mar; R998 22 Mar 1678.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (Spanish 1677): R985 and R991 had been scored as whole files (key syllable stream plus the margin
+decipherment line by line). The margin decipherments are now running text in `read/R985_reading.md` and
+`read/R991_reading.md` (spelling kept; R991's unread margin word before "discurso" filled from the figures: de estos
+discursos; the figures give "politica" where the margin was transcribed "guerra", margin kept). Explicit 1.0 for both;
+plain 0.333 and 0.417, because the es word list lacks the names, the period spellings (hazia, perjuyzio, zelos, oy) and
+ordinary words (garantia, dominios, potencias, progresos). Read as a reader every sentence holds: both keep read.
+
 ## Remaining gaps
 - R992, R996, R997, R998 decoded, not read (2,295 cipher tokens; partial readings 0.13-0.41 clean sentences, re-read 22 Oct 2026): rare groups with no value in the key (fol, 85, 150, 182, 187, 17, 189, bon, i8 ...) - blocker: no-key-material
 - the same four: stretches where the homophones do not segment and the 1616-px greyscale scans do not settle the doubtful figures (struck, overwritten) - blocker: needs-physical-access (originals at the AGR Brussels, SEG 2559)

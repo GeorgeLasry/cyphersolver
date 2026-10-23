@@ -24,3 +24,11 @@ the ciphertexts alone (dictionary from the Gutenberg novels in `targets/beale/lm
 - #3: "THE BEHAVIOR OF LIQUID HELIUM ESPECIALLY BELOW THE LAMBDA TRANSITION IS VERY CURIOUS THE MOST SUCCESSFUL
   THEORETICAL INTERPRET[ATION]S SO FAR HAVE BEEN LARGELY PHENOMENOLOGICAL IN THIS PAPER AND ONE OR TWO TO FOLLOW THE
   PROBLEM WILL BE STU[DIED] ENTIRELY FROM FIRST PRINCIPLES" (garbles at the two ciphertext slips).
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (English): nos. 2 and 3 had been scored on the unpunctuated upper-case decodes with their notes.
+Readings written out with punctuation: `texts/no2_reading.md` (Housman's punctuation; plain 0.8, the garbled "on
+Trent" marked) and `texts/no3_reading.md` (plain 0.333 because the word list lacks helium, lambda and
+phenomenological; explicit 1.0). Both keep read.
+

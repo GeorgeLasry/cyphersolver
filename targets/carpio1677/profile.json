@@ -432,6 +432,12 @@
    "technique": [
     "other"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): read/R1006_reading.md had no ## Reading heading (header and notes scored, plain 0.529); heading added, body plain 0.778, explicit 0.889. Keeps read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -557,8 +563,8 @@
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Coherent; margin very faint, the key decode carries it. Two place names at the end uncertain ([?Tolón], [?Hyères]). Verified word by word 22 Oct 2026: 1 words bracketed (0 supplied, 1 partly carried), 0 replaced. Margin transcribed from the images to read/R1006_margin.txt 22 Oct 2026 (DECODE has none); re-verified against it: 0 bracketed, 0 replaced; the two place names stay illegible in the margin; 0.778 clean (unchanged)."
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1677, Spanish: plain share is a bar too): the reading file had no '## Reading' heading, so the sweep scored its header comment and notes with it (plain 0.529, explicit 0.941). Heading added; body alone: plain 0.778 (7/9), explicit 0.889 (8/9), hole rate 0.03. The sentences hold; the holes are the two uncertain place names at the end ([?Tolón], [?Hyères]). Keeps read. Earlier: Coherent; margin very faint, the key decode carries it. Two place names at the end uncertain ([?Tolón], [?Hyères]). Verified word by word 22 Oct 2026: 1 words bracketed (0 supplied, 1 partly carried), 0 replaced. Margin transcribed from the images to read/R1006_margin.txt 22 Oct 2026 (DECODE has none); re-verified against it: 0 bracketed, 0 replaced; the two place names stay illegible in the margin; 0.778 clean (unchanged)."
     },
     "translation": "read/R1006_en.md",
     "reading": "read/R1006_reading.md",

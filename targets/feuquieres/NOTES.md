@@ -1,5 +1,7 @@
 # Feuquières → Catinat, Pignerol, 25 January 1691 — **read 2026-09-16** (586 of 601 tokens over the two letters in the code)
 
+Status: read in part (23 Oct 2026, verification 5): the d'Herleville letter reads; the Feuquières letter is decoded, not read (0.545). See "Verification 5" at the end.
+
 Not to be confused with [targets/feuquieres1678](../feuquieres1678/NOTES.md): Louis XIV to the marquis de Feuquières,
 9 December 1678 (BnF NAF 22738), a different item, read by George Lasry (BnF cipher research, 10 Oct 2026).
 
@@ -242,3 +244,27 @@ exchange (12 and 19 Jan) but no Feuquières letter of January 1691; Bazeries' pa
 | `catinat1702_1.txt` | Tomokiyo's frequency table of the 1702 Catinat letter (43 % of 591 tokens below 100, 50 low groups: the same design) |
 
 **Update 16 Sept 2026:** the Grand Chiffre letters of t. II pp. 295-342 (12,362 groups) are now decoded in full in `../catinat1691/`; see its NOTES.md and docs/catinat1691.html.
+
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (French 1690-91; the word list knows the period spelling). The reading bodies are now cut out of the
+decryption files: `texts/feuquieres1691_reading.md` and `texts/herleville1690_reading.md`. The d'Herleville letter
+scores plain 0.667, explicit 0.833 (the misses are Mondevis, razer and the bracketed letters the cipher lacks) and has
+its printed contemporary translation: keeps read. The Feuquières letter scores 0.545 on both measures (6 of 11
+sentences): the five failing sentences carry three to six unread singleton groups each. The sense of the letter is
+clear, but it is under the bar: **decoded, not read**. fraction_read 0.975 -> 0.304 (183 of 601 groups), class read ->
+read in part.
+
+## Remaining gaps
+
+- Feuquières to Catinat, 25 Jan 1691: decoded, not read (0.545); groups 9, 19, 54, 122, 132, 194, 257, 271, 292, 333, 353 unread - blocker: no-key-material; each occurs once or twice, in no other text of the petit chiffre; the original (SHD A1 1079) is not digitised
+
+## Escalation
+
+- [x] siblings: the d'Herleville letter of 1690 in the same code found and used (Sept 2026); no third letter known
+- [x] clear-pages: the 1819 Mémoires print no translation of the Feuquières letter; Feuquières' own Mémoires give the plan, not the text
+- [x] known-keys: Bazeries' Grand Chiffre table gives the design only; the petit chiffre table is not printed
+- [x] print: 1819 Mémoires de Catinat t. I-III searched (hOCR) for further petit-chiffre text
+- [x] key-rebuild: 167 of 179 groups from the two letters (key_petit_chiffre_1690.tsv)
+- [x] retry: re-read 23 Oct 2026 (v5); the original at the SHD (A1 1079) could settle printing slips but is not online
+

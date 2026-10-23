@@ -221,6 +221,12 @@
    ],
    "what": "_check_reading.py on the partial readings (bodies): R992 0.29, R996 0.40, R997 0.41, R998 0.13 clean sentences; all four stay decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): R985 and R991 were scored as whole files (key stream plus margin lines). Margin decipherments written out as read/R985_reading.md and read/R991_reading.md (R991's second unread margin word filled from the figures, 'de estos discursos'). Plain 0.333 and 0.417, explicit 1.0: the plain shortfall is names, period spellings and ordinary words missing from the es word list; both keep read on reader judgement.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -283,13 +289,15 @@
     "decryption": "read/R985.txt",
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, read at the time: the contemporary margin decipherment is transcribed in tx/ and set beside the key output in read/.",
     "language": "es",
-    "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
-    }
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1677, Spanish: plain share is a bar too): the sweep scored read/R985.txt whole, key syllable stream and line-broken margin text together (plain 0.571, explicit 1.0). The margin decipherment written out as running text, read/R985_reading.md (lines and split words joined, spelling kept): plain 0.333 (2/6), explicit 1.0 (6/6). The four sentences under the plain bar fail only on names (Amerong, Bremen), the period spellings the es word list lacks (alegrome, esperança, ay, ajuste, asemblea) and garantia/pretendida, which it also lacks; read as a reader both sentences hold with no hole, and the key decryption carries them group by group. Keeps read on reader judgement, the plain score being a word-list artefact here. Earlier: Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
+    },
+    "state": "read",
+    "reading": "read/R985_reading.md",
+    "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream."
    },
    {
     "doc": "margined",
@@ -373,13 +381,15 @@
     "decryption": "read/R991.txt",
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, read at the time: the contemporary margin decipherment is transcribed in tx/ and set beside the key output in read/.",
     "language": "es",
-    "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
-    }
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1677, Spanish: plain share is a bar too): the sweep scored read/R991.txt whole, key stream and line-broken margin together (plain 0.588, explicit 0.941). The margin decipherment written out as running text, read/R991_reading.md, the margin's second unread word filled from the figures (de estos discursos), one [?] and one [?acertadamente] left: plain 0.417 (5/12), explicit 1.0 (12/12). The seven sentences under the plain bar fail on names (Dinamarca, Brandebourg), period spellings (hazia, deverse, perjuyzio, zelos, oy, devemos) and ordinary words the es list lacks (dominios, practicar, potencias, progresos); one real hole in 138 words. Read as a reader every sentence holds. Keeps read on reader judgement. Earlier: Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
+    },
+    "state": "read",
+    "reading": "read/R991_reading.md",
+    "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream."
    },
    {
     "doc": "unread",

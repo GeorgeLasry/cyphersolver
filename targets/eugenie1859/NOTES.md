@@ -152,6 +152,13 @@ entry had no reading file. Lasry's values are now divided into words per folio i
 (5/8 sentence windows), plain 0.5, the unknown words being the place names. ff. 9r, 17r, 18r and the first sentence
 of 15r hold; the end of 15r is a run of tokens without values. Keeps read, barely.
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (French 1859). `texts/eugenie1859_f9_f18_reading.md`: plain 0.5, explicit 0.625; two of the failing
+windows fail only on place names (Chiese, Mincio, Lonato, Castiglion), the real hole is the unvalued run at the end of
+f. 15r. Keeps read. The report-excerpt file had been scored with its English and page furniture (plain 0.488); the
+French excerpts alone are now `texts/eugenie1859_lasry_excerpts_reading.md`, plain 1.0; keeps read.
+
 ## Remaining gaps
 
 - Lasry's full decipherment of the eleven cipher pages, not in the repository - blocker: not-attempted; ask George Lasry for his transcription and decryption files

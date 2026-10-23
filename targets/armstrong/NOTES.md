@@ -232,6 +232,13 @@ each), 1162 = hyphen ("to-day", "to-morrow"), 896 = parenthesis, 958 and 588 = n
 960/1109 = digits. Founders misreads about twenty groups in the 1807-08 lists checked here (fix972.json and the transcript
 headers).
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check (English 1808): the sweep scored `texts/ps30aug1808_decryption.md`, whose connected reading keeps the
+syllable groups hyphenated (plain 0.333). The reading is now written out with words joined in
+`texts/ps30aug1808_reading.md`, the supplied ending qualifi[ed] and the emended last group Irish[?man] marked: plain
+0.75, explicit 1.0; the one sentence under the plain bar fails on the name Russel. Keeps read.
+
 ## Remaining gaps
 
 - 22 Feb 1808, still open after the frame collation of 4 Oct 2026 (section below), each group seen once and confirmed on frame 0034: 1354 968 1494 1244 1387 (the man "of Hamburg" in the antechamber; *cou-rier* for 1244 1387 is a candidate only), 406 1216 1440 418 ("for ever the [?]-an-[?]-ose-s of Europe"; 418 *ose* is really written), 337 in "driven her [out] of her old and wise course" (the MS writes 337; a slip for 537 *out* is not supported) - blocker: too-short.

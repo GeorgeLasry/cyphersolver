@@ -361,6 +361,13 @@
    "technique": ["plaintext matching"],
    "what": "v3 verification: R1072, R1074, R2067 keyed decodes scored 0.37/0.54/0.59 explicit-hole. Readings rebuilt from the Fagel register clear copies (NA 1.10.29 inv. 5186 13R-14L, 5187 14R-15R; WAINUT transcription checked against the scans), whose words the keyed groups match at 0.83/0.79/0.77 against 0.14-0.15 for shuffled keys: read/R1072_reading.md, R1074_reading.md, R2067_reading.md score 1.0 explicit-hole (plain 0.87/0.97/0.93). All three keep read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "result": "worked",
+   "what": "Verification 5 (plain-bar rows): R1067, R1068, R1070, R1073, R1076 keyed decodes scored plain 0.41-0.56 (R1068 0.2) on their bodies. Their Fagel register clear copies (WAINUT's transcription; 5186 16R, 17L, 149R, 150L, 255R, 256L checked against the NA IIIF scans here, the others already checked) written out as read/<R>_reading.md in the clerk's spelling, two register slips in R1076 corrected from the figures; plain 0.821/0.75/0.923/1.0/0.974, explicit 1.0. R1069 (Lyonet's clear decipherment, plain 0.5) fails only on 'Mr' and names: keeps read."
   }
  ],
  "outcome": {
@@ -577,11 +584,13 @@
     "summary": "D'Affry reports his interview with Pensionary Steyn on the King's orders (the demand for an answer on the passage of French troops by Maastricht/Namur): Steyn, embarrassed and under attack by enemies trying to bring him down, could not answer before the week-end. D'Affry then saw the Gouvernante (Anne of Hanover), gave her the King's declaration; she answered \"must it be I who favour the means of doing harm to my father?\" (George II); he asked her to use her credit to obtain the answer the King had a right to expect.",
     "language": "fr",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1067.md scored plain 0.562, explicit 0.667 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 148R-150L, WAINUT transcription checked against the scans); 1,227/1,465 keyed groups at the register word (0.838; shuffled 0.141). Reading now follows the register in the clerk's spelling, read/R1067_reading.md: plain 0.821 (69/84), explicit 1.0 (84/84); the 15 sentences under the plain bar fail only on names and titles (Mr, Consr Pensionaire, Borssele, Lesseps, Yorke, Moras, Emmerick, Oostfrise) and the clerk's spellings (conuenoit, Batimens). Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
+    },
+    "reading": "read/R1067_reading.md",
+    "state": "read"
    },
    {
     "doc": "codeAB",
@@ -591,11 +600,13 @@
     "summary": "An Austrian courier passed through (The Hague) the evening before, on his way from Vienna to London. D'Affry says the minister will know better than he does what the courier carries.",
     "language": "fr",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Short note (60 groups): the reading builds three sentences (a courier from Vienna to London, Colloredo to pass the answer to Starhemberg) and agrees with the clerk's clear copy in the Fagel register (inv. 5186 scan 181L); the low score is the note's brevity and braces."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1068.md scored plain 0.2, explicit 0.6 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 181L, WAINUT transcription checked against the scans); 46/56 keyed groups at the register word (0.821; shuffled 0.089). Reading now follows the register in the clerk's spelling, read/R1068_reading.md: plain 0.75 (3/4), explicit 1.0 (4/4); the one sentence under the plain bar fails only on \"Mr. de Colloredo\". Keeps read, grade A. Earlier: Short note (60 groups): the reading builds three sentences (a courier from Vienna to London, Colloredo to pass the answer to Starhemberg) and agrees with the clerk's clear copy in the Fagel register (inv. 5186 scan 181L); the low score is the note's brevity and braces."
+    },
+    "reading": "read/R1068_reading.md",
+    "state": "read"
    },
    {
     "doc": "codeAB",
@@ -606,9 +617,9 @@
     "language": "fr",
     "reading_review": {
      "grade": "A",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Lyonet's contemporary clear decipherment: clean French prose."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, French): plain/R1069.txt is Lyonet's contemporary clear decipherment, one paragraph, no header. Plain 0.5 (11/22), explicit 1.0 (22/22): every one of the 11 sentences under the plain bar fails only on 'Mr' and the names Saltikof, Golofkin, Laurenzi, Yorke, Moras, St Sauveur, or period spellings (addresser, validée, desobligeroit, interressent); no real hole. Read as a reader every sentence holds. Keeps read. Earlier: Lyonet's contemporary clear decipherment: clean French prose."
     }
    },
    {
@@ -619,11 +630,13 @@
     "summary": "It is said that the Gouvernante (Princess Anne, \"son Altesse Royale\") will go to the States of Holland to speak in favour of her father George II and urge the need to help [England/Hanover], invoking the danger to the Protestant religion. D'Affry doubts she will; if she does and proposes a land-forces augmentation, the other side will propose a naval augmentation instead.",
     "language": "fr",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1070.md scored plain 0.538, explicit 0.654 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 255R-256L, WAINUT transcription checked against the scans); 249/395 keyed groups at the register word (0.630; shuffled 0.113); the unplaced groups 0-125 are the end of the letter on image I5590 and follow the register's last lines by eye. Reading now follows the register in the clerk's spelling, read/R1070_reading.md: plain 0.923 (24/26), explicit 1.0 (26/26). Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
+    },
+    "reading": "read/R1070_reading.md",
+    "state": "read"
    },
    {
     "doc": "codeAB",
@@ -649,11 +662,13 @@
     "summary": "A rumour had spread that d'Affry had given the States General a memorial saying the King would regard an increase of the Republic's land forces as a breach of neutrality. The rumour was killed at once, but d'Affry saw the Grand Pensionary: the King did not and never meant to meddle in their internal affairs, but out of friendship would regret to see them commit to heavy expenses whose consequences the Republic should fear.",
     "language": "fr",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1073.md scored plain 0.5, explicit 0.667 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 42R, WAINUT transcription checked against the scans); 264/309 keyed groups at the register word (0.854; shuffled 0.103). Reading now follows the register in the clerk's spelling, read/R1073_reading.md: plain 1.0 (19/19), explicit 1.0. Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
+    },
+    "reading": "read/R1073_reading.md",
+    "state": "read"
    },
    {
     "doc": "codeAB",
@@ -693,11 +708,13 @@
     "summary": "The Dutch, after the alarm over the convoy (four warships were to escort it, two were disabled by the storm), are relieved that it has arrived. D'Affry expects the naval armament of [n] ships to go through without any increase of the land forces, and says the argument will be pressed harder now that people see that the English will respect Dutch navigation only in proportion to the protection it has, so convoys through the Channel must be strongly escorted.",
     "language": "fr",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1076.md scored plain 0.407, explicit 0.667 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 16R-17L, WAINUT transcription checked against the scans); 229/396 keyed groups at the register word (0.578; shuffled 0.106); page 1 (groups 0-156) unplaced by the aligner but its keyed decode follows the register's 17L text in order; three register stretches have no matching cipher run (clear periods or cipher not imaged); two register slips corrected from the figures (sans la Tempette; je lui parlai). Reading now follows the register in the clerk's spelling, read/R1076_reading.md: plain 0.974 (37/38), explicit 1.0. Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
+    },
+    "reading": "read/R1076_reading.md",
+    "state": "read"
    },
    {
     "doc": "R2067",

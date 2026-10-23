@@ -187,6 +187,13 @@
    ],
    "what": "_check_reading.py on the reading bodies: R25 0.87, R195 0.91, R200 1.0, R201 0.95 clean sentences. All eight letters now read; fraction_read 1.0.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): R25 and R195 readings had no '## Reading' heading, so the sweep scored header and notes; heading added, bodies re-scored: R25 plain 0.526 -> 0.87, R195 0.448 -> 0.818 (explicit 1.0, 0.818); both keep read. R196 had no reading file (the sweep scored Lasry's raw decode, plain 0.355): its clear decipherment DOC_R196_D1449 (f. 97r) transcribed and compared with the decode, reading texts/R196_reading.md and _en.md written, plain 1.0 (7/7); keeps read, grade A.",
+   "result": "worked",
+   "technique": ["plaintext matching"]
   }
  ],
  "outcome": {
@@ -209,8 +216,8 @@
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R25_decipherment.txt), aligned word by word with the key decode (texts/R25_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.87 (20 of 23 sentences); 'Vilasso' after Texeira kept from the decipherment, unconfirmed by the figures."
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, Italian, modern spelling: the plain share is the bar): the sweep scored the whole file, header and notes included (plain 0.526, explicit 0.737). '## Reading' heading added before the body; body alone: plain 0.87 (20/23), explicit 1.0 (23/23). The three failing sentences hold; their unknown words are the name Texeira, the marked [?Vilasso], and caualcante/bilancino/lasciandoui (period words the list lacks). Keeps read. Earlier: Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R25_decipherment.txt), aligned word by word with the key decode (texts/R25_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.87 (20 of 23 sentences); 'Vilasso' after Texeira kept from the decipherment, unconfirmed by the figures."
     }
    },
    {
@@ -231,8 +238,8 @@
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R195_decipherment.txt), aligned word by word with the key decode (texts/R195_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.91 (10 of 11 sentences); the decipherer's one hole ('poiché non . . .', margin 'non s'intende') read on the cipher image: 'poiché non ha da durare', as in the draft; two stretches not confirmed by the transcribed figures are marked [?]."
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1757, Italian, plain share is the bar): the sweep scored the whole file with notes (plain 0.448, explicit 0.655). '## Reading' heading added; body alone: plain 0.818 (9/11), explicit 0.818 (9/11). The two failing sentences are the two [?] stretches the figures do not confirm ('pare [?solamente] [?assicurato]' and one in the last paragraph); the rest holds. Keeps read. Earlier: Read from the Secretariat of State's own clear decipherment, attached to the DECODE record as a png and transcribed here (texts/R195_decipherment.txt), aligned word by word with the key decode (texts/R195_align.tsv; code values consistent across the four letters); _check_reading.py on the body 0.91 (10 of 11 sentences); the decipherer's one hole ('poiché non . . .', margin 'non s'intende') read on the cipher image: 'poiché non ha da durare', as in the draft; two stretches not confirmed by the transcribed figures are marked [?]."
     }
    },
    {
@@ -246,11 +253,14 @@
     "summary": "The public version is illness: the arm is said to stay impeded and the king is in bed all day.",
     "language": "it",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Short letter; sentences build with a few open codes (6 of 9 clean): the rumours about the king's wound, the arm that will stay impaired."
-    }
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (1758, Italian, plain share is the bar): the entry named no reading and the sweep scored Lasry's raw decryption (decode/DOC_R25_D3231_3231.txt, plain 0.355, explicit 0.774). The Secretariat's clear decipherment of R196 (f. 97r, 'Decif.ta li 28. Ott.', DECODE attachment DOC_R196_D1449; draft D1450 f. 98r) was transcribed (texts/R196_decipherment.txt) and compared clause by clause with the decode: all of it is in the figures (2754 pubblic-, 2131 ancora, 2823 Sua Maestà, 2141 come, 2349 avvis-, 2907 due, 2189 quest-, 2530 Marchesa, 03 per). Reading texts/R196_reading.md: plain 1.0 (7/7), explicit 1.0 (7/7). Earlier: Short letter; sentences build with a few open codes (6 of 9 clean): the rumours about the king's wound, the arm that will stay impaired."
+    },
+    "translation": "texts/R196_en.md",
+    "reading": "texts/R196_reading.md",
+    "state": "read"
    },
    {
     "doc": "p117",

@@ -35,6 +35,12 @@ reading.md (first working reading), profile.json.
 287 word slots (transcription.tsv), 10 unread (6 on the trimmed line 30), 12 doubtful: 277/287 = 96.5% read.
 cipher.txt measures 281 words (without the struck words and the estimated trimmed-line slots).
 
+## Verification 5, 23 Oct 2026
+
+Plain-bar check: the sweep listed f. 61 as French and scored `reading.md`, the session-1 working file (five lines).
+The log is Latin, so the explicit-hole share is the bar. The full reading (latin column of `transcription.tsv`) is now
+`reading_latin.md`: explicit 0.844, plain 0.594. Keeps read.
+
 ## Remaining gaps
 - line 30 (last line, about 6 words, only "...am nonam" visible) - blocker: needs-physical-access; trimmed under the mount, needs the leaf lifted
 - line 13 last word 9oθS∂- - blocker: illegible; cramped at the edge, tentative "postea" does not fit the signs
