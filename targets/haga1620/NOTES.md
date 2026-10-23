@@ -1,8 +1,19 @@
 # Cornelis Haga (Constantinople) to the States General, 1620 — DECODE R2113, R2115 (+ R2114), key R2118
 
-Status: in progress. R2113 read; R2115 decoded, not read (reading audit, 22 Oct 2026).
+Status: R2113 and R2115 read (R2115 re-read 23 Oct 2026, batch b28).
 
 **22 Oct 2026, reading audit** (George Lasry's test): R2113_reading.md builds Dutch sentences. R2115_reading.md calls itself partial: P2 and P4 are strings of [...], {?...} and bare codes, so R2115 is *decoded, not read*. Class read -> read in part; fraction_read about 0.48 (by words of the two reading files, estimated).
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b28)**: R2115 transcribed in full from the four DECODE photographs and
+every cipher span decoded sign by sign with the R2118 key (`R2115_reading.md`, `R2115_en.md`,
+`R2115_cipher_spans.tsv`, `R2115_reread_log.md`). The record holds two letters, and the page order is **P3, P4, P2,
+P1** (P4 top ends the letter of 24 April; P4 bottom opens the May letter, which runs on to P2 "Choggia, ende
+Janitsaraga" and P1); the order given below (P3, P2, P4, P1) was wrong. Corrections: "winninge van tijt", "om [62]
+alomme odieus te maecken", "scheen te willen favoriseren", "tot faveur regis Bohemiae", "Ungarie soude aennemen",
+"vanden siaus" (not paus), "gediffereert", "verhoepe", "wel geinformeert", "om het spel ... met sodanigen bulleman te
+verderven". m = 4 holds at every occurrence; no key value changed; 13 letters rest on look-alike signs. Score 0.023
+(modern Dutch list) / 0.942 explicit holes; sentences hold: **R2115 read, grade B**; class back to read. No DOC_
+attachment or comment on R2113-R2118; no printed edition found.
 
 Catalogue entry 229. Nationaal Archief, The Hague, 1.01.02 (Staten-Generaal), inv. nr. 6894.
 
@@ -78,14 +89,14 @@ R2114 (11 May 1620, 6 pp.) is marked Decrypted on DECODE and was not re-read her
 
 ## Remaining gaps
 
-- R2115: decoded, not read - blocker: not-attempted; transcribe P2 and P4 in full from the DECODE images and re-read the cipher spans with the R2118 key (m = 4); codes from R2113 and the decrypted R2114
-- nomenclator codes [3], [7], [15], [19], [43], [46], [58], [62] - blocker: open-codes; the key's code column 37-45 is cut by the photograph's edge; most occur once or twice
+- R2115: closed 23 Oct 2026 (read, b28); still open in it: codes [15] (key value Bassa van Babilonia does not fit) and [46] - blocker: no-key-material; a few clear words marked [?] - blocker: illegible
+- nomenclator codes [15], [46] (R2115) and [50] (R2113) - blocker: no-key-material; [3], [7], [19], [43], [58], [62] are read from the key (43's number inferred: the key's column 37-45 is cut by the photograph's edge)
 
 ## Escalation
 
 - [x] siblings: R2113, R2115 and R2114 (decrypted) are the same series and key
-- [ ] clear-pages: R2114's decryption not yet used for the codes
+- [x] clear-pages: R2114 has no decryption file on DECODE (checked 23 Oct 2026); no clear copy of R2115
 - [x] known-keys: R2118 is the key
-- [ ] print: Haga's despatches in print (Heeringa) not searched
+- [x] print: searched 23 Oct 2026, no edition of the 1620 despatches found
 - [x] key-rebuild: m = 4 added from context
-- [ ] retry: R2115 P2 and P4 not re-read
+- [x] retry: R2115 re-read in full 23 Oct 2026 (b28)

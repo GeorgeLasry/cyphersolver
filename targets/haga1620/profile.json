@@ -176,20 +176,39 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): R2113_reading.md builds Dutch sentences (B); R2115_reading.md calls itself partial, and P2/P4 are strings of [...], {?...} and bare codes. R2115 relabelled decoded, not read; class read -> read in part; fraction_read unknown -> about 0.48 (words).",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Re-read brief b28, step 1: DECODE R2113-R2115 and R2118 re-fetched with the cookie (b28_fetch.py): no DOC_ attachment, comment or plaintext on any record; R2114's 'Decrypted' status has no file. Web search for a printed edition of Haga's 1620 despatches: none found. The key is R2118, already in use.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "R2115 all four pages read line by line from native-resolution crops (b28_strips.py, b28_crop.py); clear Dutch transcribed in full; 43 cipher spans decoded sign by sign with the R2118 alphabet (R2115_cipher_spans.tsv). Corrections to the old partial reading: winninge van tijt, alomme odieus, favoriseren, tot faveur regis Bohemiae, gedisponeert, Ungarie soude aennemen, vanden siaus (not paus), gediffereert, verhoepe, geinformeert, spel, bulleman. Page order corrected to P3, P4, P2, P1 (P4 'den Vizir, Mufti,' runs on to P2 'Choggia, ende Janitsaraga').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Word-by-word alignment (b28_haga_align.py): 43/43 cipher spans found in order in the reading body; 13 letters on look-alike alternates (l/s, n/t, p, o, u); m = 4 holds at every occurrence; no key value changed. Score of the reading body: 0.023 (modern Dutch list), 0.942 explicit holes. Reader's judgement: sentences hold. R2115 set read, grade B.",
+   "result": "worked",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "The key is DECODE R2118, filed in the same Nationaal Archief series (inv. nr. 6894) as the letters R2113-R2115; its alphabet and 116-code nomenclator were read off the two key pages and fitted at once (arbeiden, tusschen, suspensie).",
   "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
-  "class": "read in part",
-  "fraction_read": 0.48,
+  "class": "read",
+  "fraction_read": 1.0,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Both catalogued ciphertexts read in sense; a handful of short cipher words and the code [50] stay open, and the clear Dutch was read for sense rather than transcribed verbatim. 22 Oct 2026, reading audit: R2115 decoded, not read; class read -> read in part.",
+  "notes": "Both catalogued ciphertexts read in sense; a handful of short cipher words and the code [50] stay open, and the clear Dutch was read for sense rather than transcribed verbatim. 22 Oct 2026, reading audit: R2115 decoded, not read; class read -> read in part. 23 Oct 2026 (b28): R2115 re-read in full from the images (two letters, page order P3, P4, P2, P1), all cipher spans decoded and aligned; read, grade B; class back to read. Open: codes [15], [46] (R2115) and [50] (R2113), no key material.",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "key R2118 (alphabet and 116-code nomenclator), filed in the same NA inventory number", "source": "DECODE R2118"}
   ],
@@ -211,18 +230,24 @@
    },
    {
     "doc": "R2115",
-    "label": "R2115, Haga to the States General, Constantinople, 24 Apr and 4 May 1620",
+    "label": "R2115, Haga to the States General, Constantinople, 24 Apr and [4-7] May 1620 (two letters; images in the order P3, P4, P2, P1)",
     "transcription": "https://de-crypt.org/decrypt-web/RecordsView/2115",
     "decryption": "R2115_reading.md",
-    "summary": "The envoys of the confederated Bohemian and Hungarian lands from the Pressburg Easter diet were received by the Grand Vizier and the Sultan, and the Porte is resolved to treat with them; in cipher Haga urges that the Hungarian Estates proceed to the election and crowning of a new king, reports the order to the Bassa of Buda to assist them, and warns that nothing done in the name of the Emperor's ambassador is to be believed. No sign-level transcription of the cipher spans exists; the images are on the DECODE record.",
+    "summary": "Two letters. 24 April: Bohemian and Hungarian commissioners from the Pressburg Easter diet received by the Grand Vizier and the Sultan; in cipher, nothing is more necessary than gaining time and that the Hungarian Estates elect and crown a new king; the letter of Bethlen Gábor printed at Cologne to make him odious is a forgery; Naples too exhausted to help the Emperor. May: Haga has turned the Grand Vizier and the chief lords in favour of the King of Bohemia and of Transylvania; the Porte's letters promise perpetual peace; order given to the Bassa of Buda to assist; the Vizier and Mufti urge Bethlen to accept the crown of Hungary; the honour belongs to the States General alone; the chiaus to the Emperor's ambassador is delayed, 'om het spel in Duijtslant ende Ungaria met sodanigen bulleman te verderven'; Polish ambassador, Cossacks, Tatar invasion of Poland expected.",
     "language": "nl",
-    "state": "decoded, not read",
-    "note": "P3's clear opening reads, but the file is a partial reading: clear passages are given as [...] where not transcribed, and on P2 and P4 the cipher spans are strings of {?...} and bare codes ([43], [62]) with a sentence rarely complete (reading audit, 22 Oct 2026); fix: transcribe P2 and P4 in full, re-read the cipher spans with the R2118 key (m = 4), and fix the codes from R2113 and the decrypted R2114."
+    "state": "read",
+    "translation": "R2115_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Re-read 23 Oct 2026 (b28): all four pages transcribed from the DECODE photographs, the 43 cipher spans (599 letters) decoded sign by sign with the R2118 key and aligned in order with the reading (R2115_cipher_spans.tsv, b28_haga_align.py); 13 letters rest on a look-alike alternate. Clean-sentence share 0.023 on the modern Dutch list, 0.942 on explicit holes (b17_score.py HOLES=1); every sentence builds, scattered [?] words and codes [15], [46] open."
+    }
    }
   ],
   "key_file": ["KEY_ALPHABET.md", "KEY_NOMENCLATOR.md"],
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Estimated, reading audit 22 Oct 2026, by words of the two reading files: R2113_reading.md (1,249 words) reads, R2115_reading.md (1,337) is decoded, not read: 0.48. No token count of the cipher spans exists. The field was \"unknown\" before.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Estimated, reading audit 22 Oct 2026, by words of the two reading files: R2113_reading.md (1,249 words) reads, R2115_reading.md (1,337) is decoded, not read: 0.48. No token count of the cipher spans exists. The field was \"unknown\" before. 23 Oct 2026 (b28): R2115 now reads as well as R2113, so both catalogued documents read (1.0 by documents' words).",
   "gaps": [
    {
     "item": "R2115: decoded, not read",

@@ -196,6 +196,32 @@
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/no68_decryption.md and reading68.md read: the decode is a stream of syllables with the three-letter word codes unread in most clauses; a few phrases are intelligible, no sentence can be built (docs/_check_reading.py: 0 of 3 and 14 of 30 sentences clean, the clean ones mostly the clear opening). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key work kept as a part); fraction_read 0.375 -> 0.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Re-read brief b28, step 1: neighbouring folios of fr. 3984 opened through openapi.bnf.fr IIIF (canvases 232-303 thumbnails; full images of 242-245, 262, 265, 268, 272). Found: f. 130 = Mansfeld to Feria, Formentieres 7 July 1593, wholly in the Feria-Mansfeld cipher; f. 131r-v = contemporary French decipherments of that letter and of Feria's 10 July 1593 letter (cipher f. 143). No decipherment of no. 68. DECODE has no record of this correspondence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "f. 130 cipher transcribed (texts/f130_mansfeld_ct.txt) and the f. 131 decipherments transcribed as written (texts/f131_decipherment.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "crib",
+   "what": "f. 130 decoded with keyM + 57 = li (b28_ibarra_dec.py) and aligned with its contemporary decipherment: alphabet and syllabary confirmed; values fixed: 64 ha, 63 he, 62 hi, 31 jo, 19 fa, 81 vi (h-, j-, f-rows of Tomokiyo's table), codes xen Infanteria, pun hombre, fon Flandes, dir Magestad, Vas senor, con fuerca; mon = gente and tel = exercito fit every occurrence where the clerk varied (flagged for review). The clerk left the other three-letter groups blank too.",
+   "result": "worked",
+   "technique": ["crib testing"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "no. 68 decoded with the new values, marks re-read on the Gallica full image where needed; partial reading texts/no68_reading_b28.md (0.258 clean sentences, 0.355 explicit holes; before 0.000). Stays decoded, not read: ~30 three-letter code groups without value (no-key-material).",
+   "result": "partial",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {
@@ -241,6 +267,7 @@
   "texts": [
    {
     "doc": "no68",
+    "note": "Decoded, not read: re-read 23 Oct 2026 (b28). The sibling letter in the same key, Mansfeld to Feria 7 July 1593 (fr. 3984 f. 130), and its contemporary French decipherment (f. 131r-v) fix 64 = ha, 63 = he, 62 = hi, 31 = jo, 19 = fa, 81 = vi and the codes xen = Infanteria, mon = gente, pun = hombre, tel = exercito, fon = Flandes (texts/codes_b28.json); with them a third of no. 68's sentences build (partial reading texts/no68_reading_b28.md, 0.258 clean, 0.355 explicit holes). The rest break on ~30 three-letter code groups (pra x6, xur x3, gar, dur, var, tor, vis ...) that no table gives and that the 1593 decipherer also left blank. Blocker: no-key-material.",
     "label": "Diego de Ibarra, Paris, 10 July 1593, BnF fr. 3984 no. 68, f. 145",
     "transcription": "ct68.txt",
     "decryption": [
@@ -248,9 +275,8 @@
      "reading68.md"
     ],
     "summary": "Ibarra writes from Paris during the Estates of 1593 in the Feria-Mansfeld cipher: the messenger he is despatching, cavalry awaited, 'no estamos desesperados', peril, and help that might come with the cavalry. The three-letter word codes, which carry much of the sense, have no published table and stay unread.",
-    "note": "The decode is a stream of syllables with the three-letter word codes, which carry much of the sense, unread ('to do s a lo so de o di a quo u y no co ti nu a [pra] e s la de'); only a few phrases are intelligible and lines 7-10 do not give continuous Spanish (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "es"
+    "language": "es",
+    "state": "decoded, not read"
    }
   ],
   "key_file": [

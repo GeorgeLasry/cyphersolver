@@ -8,6 +8,12 @@ or broken grammar in most sentences (10% clean, `docs/_check_reading.py`); only 
 is **decoded, not read**: class read in part -> not read, method -> not solved, fraction_read 0.689 -> 0 (0.689 was
 non-null signs judged sense, withdrawn as a reading figure).
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b28)**: stays *decoded, not read* (0.102 clean sentences, unchanged).
+Every DECODE record of Harley 1582 opened with the cookie: R8009 is empty, R8010 (four images) is ff. 263r-264v, the
+Navarre memoir (= R8505), R8498 and R8500-R8504 are other letters, so ff. 5r-7v are on no DECODE record. The BL
+catalogue now marks the volume as digitised, images unavailable (ark:/81055/vdc_100162940894.0x000001; IIIF routes
+403/404). When the BL restores them, the decipherment can be fetched without an order. `R8499_reread_log.md`.
+
 DECODE refill catalogue entry 120 "N. Wottoy ? to unknown recipient", Jun 1554 (rule-scored class C). Worked 22 Sept 2026.
 
 ## What the record is
@@ -310,7 +316,7 @@ Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him
   slips that only the contemporary decipherment (ff. 5r-7v) can settle.
 
 ## Remaining gaps
-- the whole letter decoded, not read (3,152 tokens) - blocker: needs-physical-access; holes in most sentences after eight key/transcription passes (reading audit 22 Oct 2026); the contemporary clear copy, Harley 1582 art. 2 (ff. 5r-7v), is not digitised and would settle it
+- the whole letter decoded, not read (3,152 tokens) - blocker: needs-physical-access; holes in most sentences after eight key/transcription passes (reading audit 22 Oct 2026); the contemporary clear copy, Harley 1582 art. 2 (ff. 5r-7v), is digitised by the BL but its images are unavailable (ark:/81055/vdc_100162940894.0x000001, checked 23 Oct 2026); it would settle it
 
 - Unread, tentative and nonsense stretches, about 31% of non-null signs measured for sense (5 Oct 2026; p1.13 run, p1.24 "(fy)ve hundrid", p2.25 tail, p6.13-14, p3.14) (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24) - blocker: needs-physical-access; the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE and needs a BL imaging order
 - Rare code signs, about 40 (.I, .p, .d, .M, N., R., C_CEDILLA, Q_TAIL, TALL_F_LOOP, CIRC_BIG) - blocker: no-key-material; no entry on R354, the only surviving copy of the key, and no other copy on DECODE
@@ -324,3 +330,4 @@ Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him
 - [x] key-rebuild: unified key v6 from all pages; full nomenclator transcribed; constrained re-annealing tried
 - [x] sense measure + image re-transcription (5 Oct 2026): p2.25 name read, p1.24 tentative, p1.13 tokens confirmed unread; Stafford 1586 key not related
 - [x] retry: every line re-read at full resolution; every unread/tentative stretch retried with key v6 and the full nomenclator (v7)
+- [x] re-read brief b28 (23 Oct 2026): all Harley 1582 DECODE records opened (R8009 empty, R8010 = ff. 263-264); BL images of ff. 5r-7v unavailable

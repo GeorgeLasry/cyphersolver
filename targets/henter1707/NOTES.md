@@ -1,6 +1,6 @@
 # Mihály Hentér → Ferenc Rákóczi II, Constantinople, 8 July 1707
 
-Status: in progress (22 Oct 2026: paragraphs 3-4 not read, workable; see Remaining gaps)
+Status: read (paragraphs 3-4 re-read 23 Oct 2026, batch b28)
 
 **Result, 20 September 2026:** DECODE R496 is not an undeciphered letter. A
 contemporary or near-contemporary plaintext has been written between the cipher
@@ -13,6 +13,16 @@ an artificial year range.
 normalized interlinear **read** (the Belgrade pasha's offer; the audience sought for the deputation). **Paragraphs 3-4
 are not read**: words between [...] holes where the interlinear hand overlaps the cipher (split into a second
 `outcome.texts` entry, "decoded, not read"). fraction_read 0.8 -> about 0.5 (estimated).
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b28)**: paragraphs 3-4 **read** (grade A). The interlinear is legible at
+2-3x on the DECODE image, and the cipher under it was decoded sign by sign with the alphabet fixed by paragraphs 1-2
+(`texts/mnl-g15-d80-f38_p3-4_reading.md`, `_en.md`, `_cipher.tsv`, `_reread_log.md`). The figures correct the
+interlinear (and the normalized text above) at four places: "de a magyar" is **de a jancsarsag közöt turbatio eset**
+(a disturbance among the Janissaries), "naltatnak" is **componalodnak**, "zenenkedem" is **remenkedem**; the
+audience was solicited twice more and the answer was "habeant patientiam, vocabuntur ad praesentandas literas".
+Score 0.000 on the modern Hungarian list (unaccented 1700s spelling), 0.833 explicit holes; 6 letters on look-alike
+signs. fraction_read 1.0. No DOC_ attachment or comment on R496/R533/R534. The normalized text above modernises the
+spelling; the b28 reading keeps the figures' spelling.
 
 ## Identification
 
@@ -98,4 +108,13 @@ and the related [Aetas article](https://acta.bibl.u-szeged.hu/38710/1/aetas_2014
 
 ## Remaining gaps
 
-- paragraphs 3-4 of the interlinear (the delayed audience, the captive, the closing), not read - blocker: not-attempted; the decipherer's cursive overlaps the cipher signs, but the cipher itself is a simple substitution whose values are fixed from R533/R534: transcribe the cipher of those lines and decipher it, or have a Hungarian palaeographer read the interlinear on the scan
+- paragraphs 3-4: closed 23 Oct 2026 (read, b28); four words stay [?] on look-alike signs (tiszteket, valtoztatni, uram, pedig) - blocker: illegible
+
+## Escalation
+
+- [x] siblings: R533 and R534 (Hentér's other 1707 letters, same system) used for the alphabet
+- [x] clear-pages: the interlinear decipherment is on the leaf itself
+- [x] known-keys: not needed; the alphabet is fixed by the interlinear
+- [x] print: Láng (dissertation, Aetas 2014) identifies the letter, prints no text
+- [x] key-rebuild: alphabet rebuilt from the interlinear of paragraphs 1-2 (b28 cipher tsv)
+- [x] retry: paragraphs 3-4 re-read on the image, interlinear and figures, 23 Oct 2026

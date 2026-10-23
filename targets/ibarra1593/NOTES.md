@@ -5,6 +5,16 @@ no. 68 is **decoded, not read**: a stream of syllables with the three-letter wor
 phrases are intelligible, no sentence can be built. Class read in part -> not read, method -> not solved (the known
 key kept as a part); 37.5% withdrawn as a reading figure. The status line below is superseded.
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b28)**: still *decoded, not read*, but the key moved. The "Next" item
+is done: **f. 130 is Mansfeld to Feria, Formentieres 7 July 1593, wholly in this cipher, and f. 131r-v holds its
+contemporary French decipherment** (and that of Feria's own 10 July letter, cipher f. 143). The crib fixes 64 = ha,
+63 = he, 62 = hi, 31 = jo, 19 = fa, 81 = vi and the codes xen = Infanteria, pun = hombre, mon = gente, tel = exercito,
+fon = Flandes, dir = Magestad, Vas = señor (`texts/codes_b28.json`; mon and tel flagged for review). With them a third
+of no. 68's sentences build ("A mi no me parece que puede con esta gente", "No estamos desesperados", "espero en Dios
+que ha de acudir", "Supuesto el numero de ese exercito en Flandes ..."): partial reading
+`texts/no68_reading_b28.md`, 0.258 clean / 0.355 explicit holes (before 0.000). The other three-letter groups (pra,
+xur, gar, dur, var, tor, vis ...) were blank for the 1593 French decipherer too. `texts/no68_reread_log.md`.
+
 Status: not read (decoded, not read; reading audit 22 Oct 2026). Earlier: read in part — 224 of 598 groups read as sense (37.5%) with Tomokiyo's Feria-Mansfeld table (keyM.tsv) and one
 value added (57 = li); the three-letter word codes, which carry much of the sense, have no published table.
 
@@ -87,19 +97,19 @@ Key files here: `keyM.tsv` (Tomokiyo's Feria-Mansfeld table), `fill68.json` (57 
 transcription `ct68.txt`; sense count `sense68.tsv` (the no. 68 rows of sessa1593's `sense.tsv`); reading `reading68.md`.
 
 ## Remaining gaps
-- no. 68 as a whole, decoded, not read - blocker: no-key-material; the three-letter word codes have no table (see next line)
-- no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and no crib fixes it; the numbers 64, 31, 77, 81, 95 are not separated by the LM control; the diacritic finals dropped in ct68.txt are still to be added from the image
+- no. 68 as a whole, decoded, not read (a third of the sentences build after b28) - blocker: no-key-material; the three-letter word codes have no table (see next line)
+- no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and the f. 130/131 crib fixes only xen, mon, pun, tel, fon and 64, 31, 81 (b28); the contemporary decipherer left the rest blank; 77, 95 and the groups pra, xur, gar, dur, var, tor, vis ... stay open
 
 ## Escalation
-- [x] siblings: the three office-cipher letters of sessa1593 are another key; fr. 3995 ff. 94-101 opened next to the office key (f. 101 another correspondence); fr. 3984 f. 130, the other letter Tomokiyo cites for this key, attempted 14 Oct 2026 but Gallica answered with a Cloudflare challenge (HTTP 403), so not yet opened (Next)
-- [x] clear-pages: no. 68's clear opening read; no decipherment on the leaf
+- [x] siblings: the three office-cipher letters of sessa1593 are another key; fr. 3995 ff. 94-101 opened next to the office key (f. 101 another correspondence); fr. 3984 f. 130 (Mansfeld 7 July 1593) opened 23 Oct 2026 through openapi.bnf.fr and transcribed; its decipherment is f. 131r-v
+- [x] clear-pages: no. 68's clear opening read; no decipherment on the leaf; canvases 232-303 searched for one (b28): only the f. 131 decipherments of f. 130 and f. 143
 - [x] known-keys: Tomokiyo's Feria-Mansfeld table (keyM.tsv) applied; the 1592-93 office key (key92.tsv, fr. 3995 f. 97) does not fit (higher figures, three-letter word codes; 19 Sept 2026); Tomokiyo's Ibarra-Doria (1592) and Ibarra-Zúñiga (1593) key images listed with it are for other correspondences and were not applied; fr. 3995 f. 101 is an Italian nomenclature of another correspondence
 - [x] print: Tomokiyo spanish3.htm (the key, no reading); BnF notice for fr. 3984
 - [x] key-rebuild: keyM tested against 200 value-shuffled keys (-2.500 vs at most -3.378); unconstrained hill-climb rejected (collapses onto que); constrained fill accepts 57 = li, 64 (ha by context) not separated (5 Oct 2026)
-- [x] retry: all 20 cipher lines transcribed (ct68.txt) and decoded with keyM + 57 = li; each line scored for sense (sense68.tsv)
+- [x] retry: all 20 cipher lines transcribed (ct68.txt) and decoded with keyM + 57 = li; each line scored for sense (sense68.tsv); b28 re-decode with the crib values, marks re-read on the image
 
 ## Next
 
-Open fr. 3984 f. 130 (the other letter Tomokiyo cites for the Feria-Mansfeld key, about canvas 240 of
-`btv1b9060633d`) when Gallica serves images again: a second letter in this cipher could fix some of the three-letter
-word codes by repetition. Add the diacritic finals to `ct68.txt` from the image.
+Done 23 Oct 2026 (b28): f. 130 opened and used as a crib. Still possible: Feria's f. 143 cipher against its f. 131v
+decipherment would confirm the syllabary again but its codes ({pra}, {ner}, {cur} ...) are blank in the decipherment
+too; a nomenclature for this key has not been found.
