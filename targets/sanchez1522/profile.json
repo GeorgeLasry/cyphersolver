@@ -121,6 +121,34 @@
         "image_quality": "good",
         "notes": "The cipher (ff. 173r-174r and its duplicate ff. 185r-186r) was not transcribed beyond the checked opening and closing lines; the count is the plaintext words of the decipherment's reading body, an estimate."
       }
+    },
+    {
+      "id": "R9593",
+      "read": "not read",
+      "shelfmark": "RAH, Signatura 9/23, f. 27-28v (DECODE R9593)",
+      "date": "5 Mar 1522",
+      "year": 1522,
+      "country": "Spain",
+      "route": "Venice -> imperial court",
+      "language": "Spanish",
+      "pages": 2,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": ["none"],
+        "partial": false
+      },
+      "length": {
+        "tokens": 1248,
+        "unit": "mixed",
+        "measured": true,
+        "file": "R9593_signs.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE images fetched 2026-10-23 (r2i)",
+        "image_quality": "good",
+        "notes": "r2o: transcribed sign by sign, 53 lines (f. 27r 33, f. 27v 20); 1,248 tokens of which 520 code groups, counted on the sign lines of R9593_signs.txt (nulls and clear words excluded)."
+      }
     }
   ],
   "system": {
@@ -442,6 +470,34 @@
       "what": "r2i: the remaining ~40 Sánchez letters of 9/23-9/26 not read: no decipherment imaged, sign-by-sign reading with the key not attempted in this pass (gap not-attempted).",
       "result": "failed",
       "technique": ["other"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "literature search",
+      "what": "r2o: CSP Spain 2 (Bergenroth 1866) checked entry by entry on british-history.ac.uk (nos. 380-515, date and Salazar folio of each): R9593 (5 March) not calendared; R9594 (15 March, opening 'recebi las cartas de vuestra magestad de xxiv') = no. 396, whose contemporary decipherment Bergenroth saw in the Gayangos papers ('the despatch in cipher is not extant'); the others matched as in NOTES (calendar abstracts give the gist, not the Spanish text).",
+      "result": "partial",
+      "technique": ["plaintext matching"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "r2o: R9593 (RAH Salazar 9/23 ff. 27r-27v) transcribed sign by sign from DECODE's two images on line crops at 2.0-3.5x and six-line blocks at 1.75x: 53 lines, 1,248 tokens of which 520 code groups (counted on R9593_signs.txt); date confirmed by the clear subscription 'en venecia a v de março de dxxij'.",
+      "result": "worked",
+      "technique": ["manual reconstruction"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "r2o: R9593 decoded with Tomokiyo's key and read line by line (R9593_reading.md, English R9593_en.md): the Signoria audience on the lansquenets' passage of Val Camonica, Andrea Gritti's officer, the French taking Caravaggio, the Swiss strength at Monza. Key values adopted: gim = suyos (R9635 decipherment + four contexts here), fef = toda (todavia twice, todas); ril = lansquenetes? entered flagged (sense and slot, five contexts). About twenty groups open; f. 27r ll. 26-33 and f. 27v ll. 11-13 do not build sentences. v2_score 0.614 explicit holes (27/44), 0.136 plain, hole rate 0.13; look-alikes ~2.5%. Kept decoded, not read.",
+      "result": "partial",
+      "technique": ["key matching", "contextual inference"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "r2o: the other 48 Sánchez records (R9594 onward in date order) not read in this pass; gap stays not-attempted with the list.",
+      "result": "failed",
+      "technique": ["other"]
     }
   ],
   "outcome": {
@@ -449,9 +505,9 @@
     "method_basis": "23 Oct 2026 (b23): R9635 is read from its contemporary decipherment, a clear copy on f. 22r of the DECODE record, checked against the figures of ff. 20r-20v with Tomokiyo's 2025 key. R9653 has no decipherment: its cipher (f. 299r foot and f. 299v) was read sign by sign with Tomokiyo's key and builds sentences only in its first paragraph, so it stays decoded, not read. r2i (23 Oct 2026): R9613 and R9641 read from contemporary decipherments imaged on DECODE (R9613 ff. 206-207; R9641's on ff. 187-188 under R9642), each checked against its cipher with Tomokiyo's key; R9635's torn passage filled from its own cipher.",
     "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
     "class": "read in part",
-    "fraction_read": 0.93,
+    "fraction_read": 0.75,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "22 Oct 2026, reading audit: 0 (neither letter's cipher built sentences). 23 Oct 2026 (b23): R9635 reads, R9653 does not: 297/444 = 0.67 on plaintext words. 23 Oct 2026 (r2i): R9613 (18 June) and R9641 (27 Oct) added, both read from contemporary decipherments found on the DECODE images; on the plaintext words of the four letters worked (reading bodies: R9635 299, R9613 1,262, R9641 418 read; R9653's 147 cipher words not): 1,979/2,126 = 0.93, estimated. Over the whole group this is not a share: some forty other Sánchez records of 9/23-9/26 are cipher-only on DECODE and were not read (outcome.gaps).",
+    "fraction_read_source": "22 Oct 2026, reading audit: 0 (neither letter's cipher built sentences). 23 Oct 2026 (b23): R9635 reads, R9653 does not: 297/444 = 0.67 on plaintext words. 23 Oct 2026 (r2i): R9613 (18 June) and R9641 (27 Oct) added, both read from contemporary decipherments found on the DECODE images; on the plaintext words of the four letters worked (reading bodies: R9635 299, R9613 1,262, R9641 418 read; R9653's 147 cipher words not): 1,979/2,126 = 0.93, estimated. Over the whole group this is not a share: some forty other Sánchez records of 9/23-9/26 are cipher-only on DECODE and were not read (outcome.gaps). r2o (23 Oct 2026): R9593 (5 March) added, read sign by sign but not read under the bar; on reading-body words, R9635 299 + R9613 1,262 + R9641 418 read against those plus R9653 147 + R9593 506 unread = 1,979/2,632 = 0.75, estimated. Still not a share of the group: 48 Sánchez records unread (outcome.gaps).",
     "key": "partial",
     "verification": [
       "key confirms",
@@ -476,9 +532,14 @@
         "detail": "cramped court hand at DECODE's resolution; the torn passage of f. 22r is now filled from the cipher of f. 20r (r2i)"
       },
       {
-        "item": "the other Sánchez records of 9/23-9/26 (R9593-R9604, R9606-R9612, R9614-R9633, R9636-R9640, R9643, R9647, R9651, R9655, R9657; about 40 letters)",
+        "item": "R9593 (5 March 1522) second half of f. 27r (ll. 26-33) and f. 27v ll. 11-13, and about twenty open code groups",
+        "blocker": "no-key-material",
+        "detail": "r2o (23 Oct 2026): read sign by sign with Tomokiyo's key (R9593_signs.txt, partial reading R9593_reading.md, 0.614 explicit holes, hole rate 0.13): xe, vub, lud, fug, la, lif, ni, fu, sag, nif, ram, tag, zom, fag, pil, dug, nad, mug, tem, nog, ca, ce absent from or not fitting the published key, mostly met once; no decipherment bound or imaged, not in CSP Spain 2"
+      },
+      {
+        "item": "the other Sánchez records of 9/23-9/26 (R9594, R9595, R9596, R9597, R9598, R9599, R9600, R9601, R9602, R9603, R9604, R9606, R9607, R9608, R9609, R9610, R9611, R9612, R9614, R9615, R9616, R9617, R9618, R9619, R9620, R9621, R9622, R9623, R9624, R9625, R9626, R9627, R9628, R9629, R9630, R9631, R9632, R9633, R9636, R9637, R9638, R9639, R9640, R9643, R9647, R9651, R9655, R9657; 48 records, some duplicates: R9626/R9627, R9628/R9629; R9625 and R9638 mostly clear)",
         "blocker": "not-attempted",
-        "detail": "r2i (23 Oct 2026): every DECODE record of the run fetched and every image opened (163 images, scratchpad reread/r2i): apart from R9605 (decipherment ff. 42-43, Tomokiyo's source), R9613, R9635 and R9641/R9642 none carries a decipherment; DECODE's 'Inline Cleartext: Yes' marks clear opening or closing paragraphs and postscripts ('Somos a ... es treslado de otra enbiada por via de Genova'), not decipherments (R9625 f. 137r is a clear letter to the Chancellor, R9628 f. 157r and R9630 f. 180r clear postscripts). The court decipherments Bergenroth abstracted (CSP Spain 2, 14 letters) are not imaged. Each letter is readable sign by sign with Tomokiyo's key (the method of R9635 f. 20r and R9653), 2-15 pages of cipher apiece: workable, not done"
+        "detail": "r2i (23 Oct 2026): every DECODE record of the run fetched and every image opened (163 images, scratchpad reread/r2i): apart from R9605 (decipherment ff. 42-43, Tomokiyo's source), R9613, R9635 and R9641/R9642 none carries a decipherment; DECODE's 'Inline Cleartext: Yes' marks clear opening or closing paragraphs and postscripts ('Somos a ... es treslado de otra enbiada por via de Genova'), not decipherments (R9625 f. 137r is a clear letter to the Chancellor, R9628 f. 157r and R9630 f. 180r clear postscripts). The court decipherments Bergenroth abstracted (CSP Spain 2, 14 letters) are not imaged. r2o (23 Oct 2026): the CSP Spain 2 check was redone entry by entry (nos. 380-515): calendared are R9594 = no. 396 (15 March; Bergenroth abstracted a contemporary decipherment in the Gayangos papers and called the cipher 'not extant'), R9613 = 429, R9615? = 436 (20 June, A.24 ff. 213-216), R9616 = 439?, R9617/R9618 = 440, R9619 = 444, R9621 = 447, R9622 = 450, R9625 = 464, R9626/R9627 = 462, R9631 = 470, R9632 = 473, R9636 = 482, R9639 = 488/489, R9643 = 491, R9651 = 500; the rest are not calendared. In date order R9593 was read sign by sign in r2o and R9594 (5 pp. of dense cipher) is next. Each letter is readable sign by sign with Tomokiyo's key (the method of R9635 f. 20r and R9653), 2-15 pages of cipher apiece: workable, not done"
       },
       {
         "item": "Lope Hurtado records R9634, R9644-R9646, R9648-R9650, R9652, R9656",
@@ -559,6 +620,18 @@
           "date": "2026-10-23",
           "note": "r2i: the reading follows the contemporary decipherment on ff. 187r-188r, filed on DECODE under R9642 (DECODE: 'Sánchez?', status N/A), transcribed line by line (R9641_decifrado_f187.txt); checked against the cipher at the opening of f. 173r and at f. 174r ('de todo esto tengo dado aviso al duque de Sessa'; new value vad = duque). v2_score: 1.0 (34/34) explicit holes, 0.735 plain. Two uncertain words ([?conversacion], [?vera]); look-alike letters 0."
         }
+      },
+      {
+        "doc": "R9593",
+        "label": "R9593, Venice, 5 March 1522 (RAH Salazar 9/23 ff. 27r-27v)",
+        "transcription": ["R9593_signs.txt"],
+        "decryption": ["R9593_signs.txt", "R9593_reading.md"],
+        "summary": "Sánchez to Charles V: letters of Don Juan Manuel and Geronimo Adorno sent on; his audience with the Signoria on the passage of the lansquenets through Val Camonica (he had not believed the reports until those conducting them wrote and signed them; Andrea Gritti's officer and the damage claimed); the French have taken Caravaggio, the Swiss at Monza said to be 16,000 and 4,000.",
+        "language": "es",
+        "reading": "R9593_reading.md",
+        "translation": "R9593_en.md",
+        "state": "decoded, not read",
+        "note": "r2o (23 Oct 2026): no decipherment bound or imaged and not in CSP Spain 2; read sign by sign with Tomokiyo's key (R9593_signs.txt, log R9593_reread_log.md). The opening paragraph, the Val Camonica audience and the Caravaggio news build sentences; f. 27r ll. 26-33 and f. 27v ll. 11-13 do not (about twenty open groups). v2_score 0.614 explicit holes (27/44), plain 0.136, hole rate 0.13 above one in ten; look-alike letters ~2.5%. Blocker: no-key-material (groups absent from the published key, mostly single contexts)."
       }
     ],
     "key_file": [
@@ -579,6 +652,13 @@
         "method": "read with known key",
         "extent": "partial",
         "basis": "Tomokiyo's key (cryptiana AlonsoSanchez.htm, 2025) with cab, cef, cif added here and feb = tanto from R9635; the 13 cipher lines of ff. 299r-299v read sign by sign 23 Oct 2026 (b23); the second paragraph does not build sentences. Decoded, not read."
+      },
+      {
+        "label": "R9593 (Tomokiyo's key applied; decoded, not read)",
+        "records": "DECODE R9593",
+        "method": "read with known key",
+        "extent": "partial",
+        "basis": "Tomokiyo's key with gim = suyos and fef = toda adopted here (r2o, 23 Oct 2026); the 53 cipher lines of ff. 27r-27v read sign by sign; the second half of f. 27r does not build sentences. Decoded, not read."
       }
     ]
   }
