@@ -16,7 +16,7 @@ begrifen beruehen auf folgendem: daß erste erleutert Salis an mich abgangenes s
 auf den euent des Craistigs. Salis belanget, so weiß ich nit, ob ihm die [?befehl] eventualiter zukommen, quuartir
 im Halberstatischen zu nemmen, und daß es bei kunftiger bewilligung abgeraitet solle werden können, die auch mangel
 creften und güetter inclination deß Landt vor dem Craisschlus nicht genommen werden; so wird es nach dem Craisschlu[s]
-[...] [?schwärer] her gehn, dann sie werden e concluso, daß Crais als dann resistiren, da so auch so nichts als ein particular
+[...] [?schwärer] her gehn, dann sie werden ex concluso, daß Crais als dann resistiren, da so auch so nichts als ein particular
 renitentz. Banner ist der gegen in Crais hat [...] statim rucken, und wurdt mit seiner Armada endtlichen mit Herzog
 Georgen umb Stuckbrott wol capituliren. Halberstat wirdt des Banners raub sein und daß ganze Stifts zu grund gehen.
 Herzog Georg darinnen dem feindt noch weniger sich bemühen zu resistiren als im Landt zu Luneburg. Wann Salis per forza
@@ -51,11 +51,11 @@ Für das ander, und soviel den Graißtag betrifft, so mues ich in gottes nahmen 
 wol, wann es mir miglich were, solchen geren [...]rumpirter nach Staden transferirn, damit ich mit allen tag brief und
 bravada z[u]m Banner fur eine von selzamen kopfen vorhandene versamblung zu erwarten hette. Ich trage sorg, wir werden umb
 [...] thaleer imer zu kriegen und umb ein milion respect verliehren; an mir soll nichts erwinden. Hab es gleichwol
-dahin gebracht, daß sie wider uberschinen mit geringen meinem contenti, daß ich sie Braumschweigis gesandt[e]n [...]
+dahin gebracht, daß sie wider uberschinen mit geringen meinem contento, daß ich sie Braumschweigis gesandt[e]n [...]
 mit zwainzig pferdten nach Lüneburg [...]. Ich wird auch also hin kommen. Einbach und so [...] [?compagnin] reitter an
 der Auhe sein, man [...] einer Armada.
 
-Negotium pacis belangendt, referiere ich mich auf das an Ihre Kay. Mt. von mir abgangene schreiben; ultimam et e[x]tremam negat[iv]am trag ich
+Negotium pacis belangendt, referiere ich mich auf das an Ihre Kay. Mt. von mir abgangene schreiben; ultimam et extremam negativam trag ich
 sorg, werde ich mit negsten nachschicken. Als ich vermeinte, man hette einzige intention zum frieden, so hab ich mich
 viel bemühet, zu komponiren Ihrer Kay. Mt. Hoheit und Interesse gegen der Reichsstande und der Cron Schweden
 praetensone dergestalt, daß keiner ante congres[su]m zu nahent gegangen, sondern vorderist die Kays. [...]
@@ -65,7 +65,7 @@ versichere E. G., daß wann wir noch heut ihnen
 [...] halb [?Pommern] geben, die general a[m]nistia bewilligten, und der feindt ienseits der Elben wenn, daß wir
 darnach keinen frieden bei Schweden mit erheben wurden. Ich sage, wie der feindt aniezo stehet, und ehe er widerumb in
 Pommern gebracht wirdt, so ist Ihnen nit an dem wort hochgeboren gelegen oder illustrissimi, und wann man Ihnen sehen
-die wort nondum reconciliatis auch den sal[v]s conduct Ihnen, so werden sie doch, so lang sie des kriegs in Schweden
+die wort nondum reconciliatos auch den salvis conduct Ihnen, so werden sie doch, so lang sie des kriegs in Schweden
 nit empfinden, nimmermehr ad congres[su]m zu bringen sein. Laborand[...] per Brandeburg, daß man einthun dörffe, und
 nach Nürnberg durch was weg die tracttus ad particulares zu [...]. Ich darumb was zu erhalten wohl und guet; wo nit, so
 müssen wir uns wehren, so lang uns got die creften gibt.
@@ -86,10 +86,10 @@ schreiben so resol[vi]ren wirdt. Demnach seindt die Reichrrathe beisamen, alles 
 Meine negotiation hatt beruhet per [...] tractatus, die Ihrer Kay. Mt. gegebne obligaton zu purificiren. Daß hab ich
 erhebt ex propria regis confessione: sein wort bekenter hab er engagiert, er bekent, daß Ihr Kay. Mt. was [...]n ihme
 dem König begert worden bewilligt; [?sein] wort ist da, das Warnemin de [?demolirt] soll werden. Ich weiß, daß der feindt nit über die
-Elbe gehn solle; allein disen hatt hat Cron Schweden per Sal[vi]um und den Banner Suevi, der gehandlet, das den König
+Elbe gehn solle; allein disen hatt hat Cron Schweden per Salvium und den Banner Suevi, der gehandlet, das den König
 gegebene wort ratione salconduct [...] wegen Warneminde, ob ichs zwar einzig E. H. geschriben, [?daß] das werck
 accommodirt seie, ist
-kein [?demolition], kein restitution mit erfolgt. Ja bey den Banner pure abgeschlagen, und bey der Cron bis dati kein
+kein [?demolition], kein restitution mit erfolgt. Ja bey den Banner pure abgeschlagen, und bey der Cron bis dato kein
 resoluton erhebt worden. Der feindt ist al zu uber die Elbe; wann dises den König nichts [?commovirt], so kommen
 wir mit guettem fueg andere mittel ad tracttus ergreifen; biß dahin aber hat miessen daß werck gebracht werden.
 
@@ -98,7 +98,7 @@ Lista der Schreiben, so ich an die hab abgehen lassen; von Craist[a]g hab ich me
 beiliegen für den Salis, wie ich vermeint, das sie sollen stilisirt werden, in simili, was ich durch den Herrn von
 Puchheimb und Mandelsloh den Salis erinnern lassen, von Damer mehr als mir lieb ist. Mit weniger [...] Graf Gallas
 [...] Gallassiana [...] concurrunt, daß die Armada [?ex] mala directone zu grundt gangen; sed et ille audiendus est.
-Soll wegen schwais ist umb sonst [...], wann ein sommer mala propositi daß zu grundt gehet, was ein winter durch unser bluet
+Soll wegen schwais ist umb sonst [...], wann ein sommer mala proposito daß zu grundt gehet, was ein winter durch unser bluet
 zusammengescharret wirdt, daß ding [...] uber herein, und drei iahr nit mehr wehren. Es muß sich finden, wo der mangel
 ist, wie spihlen [...] am rest, und zu unseren sachen geheren starcke resolution [?aliquae] etiam [...] fridlandicis;
 sonst werden wir bald fert[i]g werden.
@@ -110,11 +110,11 @@ jetzt daß er woll bey der Elb bleiben; er ist aber noch für jetzt zu Lauenburg
 
 Wegen abdanckung schreibt [den] dennischers uolcker hab ich bei Graf Penzen nichts penetriren konnen, wol daß die
 holstainische landtstandt zu den selbigen underhaltung ein summa gelt verwilligt hetten. Graf [...] hab ich communiciert
-litera Sal[...] wegen daß Horns, wie auch mein antwort[...] seine gedancken, was er darvor haalte; iudica[...] es seie
+litera Salvii wegen daß Horns, wie auch mein antwort[...] seine gedancken, was er darvor haalte; iudica[...] es seie
 nichts als ein inventon in particulares tracttus mit mir zu kommen, und Dennemarck [?jalousien] zu machen, gar so weit,
 als wann Schweden apart mit [?uns] handlen und alsdan den krieg auf Dennemarck debel[li]ren wolle, da nos [...] natura
 esse [?suspicacissimos], sonderlich gegen Schweden. Die Reichsrath weren bey Ihr Mt. das werck handtgreiflich zu
-deliberiren, und es würden vielleicht wegen benennung des tags und des Sal[...] [?bisher] gefuhrten termino ihme mit
+deliberiren, und es würden vielleicht wegen benennung des tags und des Salvii [?bisher] gefuhrten termino ihme mit
 allerdings angenemme resolutones und Schweden erfolgen; folget hierwartten an rathsamkeit trachtet. Hatt mir vorgestrigs brieff von den Dänemark [...] lauf, in quuibus fit
 mentio, daß [den] dennischen residenten ein Schweden diener heraus komme und von beiden starcken betrohungen gegen
 Dennemarck nachrichtung bringe; darauf wegen der dann begert den König [...] Arnheimb zu entschuldigen, das er sich
@@ -125,8 +125,8 @@ Kay. Mt., wie auch die Reichsrathe propendiren als andere, wer wann der König [
 ansicht, und was darüber diese Zeitt uber verhandlet worden, so sihe ich nit, wie er mit reput[at]ion ohn den
 congress oder rottura daraus kembt. Wie lang aber ein schwerdt das andere in der schaidt wurdt halten, daß ist mir
 unbewust. Ich bin also des Graf Penzen gewerttg und noch in suspenso, ob mit Sal[v]o zu reden oder nit; findt sehr
-uil consideratones dabei [...], weil salus per sindicos Hamburgenses regi non acceptis ne[...] et nullam spem [...] cuius emolumentum. Den Herren von Schwarzenberg aber schreib ich, wie der beyschluß vermag. Wann wir in
-[...] tracttus ein principium haben in puncti recompensae, so wirdt alsdann de modo, wie es zu incaminiren, zu [...]
+uil consideratones dabei [...], weil Salvius per sindicos Hamburgenses regi non acceptos ne[...] et nullam spem [...] cuius emolumentum. Den Herren von Schwarzenberg aber schreib ich, wie der beyschluß vermag. Wann wir in
+[...] tracttus ein principium haben in puncto recompensae, so wirdt alsdann de modo, wie es zu incaminiren, zu [...]
 [?interim] daß werck [...] gott zu befehlen sein. Ad Sal[vi]um nunquam deerit accessus, wann ia kein anderer weg zu
 erfinden. Bleib E. G. [...]
 
@@ -136,7 +136,7 @@ P.S. Arnheimb ist gestern abent aber ein macht bei mir gewesen, communicat ad lo
 potschafter [...] vergangen, und gestern als der englische potschafter, wie der bei ihme gewesen, discurrirt worden,
 praeoccupavit, den er es seiner schuldigkeit zu sein erachtet; auch hette mein relation und des churfursten uon
 Sachssen bericht an kai. hof werde [...] sein, den er sich der Kay. gnadt versichert möge halten, und were ihm lieber
-seyn, wo der pfefer wachst, als in Teutschlandt einen ungnedigen kaiser zu haben, [...] deinde, und vermelte, daß er
+seyn, wo der pfefer wachst, als in Teutschlandt einen ungnedigen kaiser zu haben, perrexit deinde, und vermelte, daß er
 dem engligischen potschafter das oppositum gehalten, und wie wenig sie sich auf Schweden zu verlassen, wie [...] nun auch auf Franckreich zu bawen; Schweden hab kein[e] res, und werde sein interesse mit frieden
 können suchen; Franckreich [...] werde wegen Pfalz den frieden mit anzuschlagen. Der Pabst als [?interpositor] sein
 gleichwol; Franckreich, Spannien und [...] ist ihrer Kai. Mai. zugethan; keine daß werck [...] schondt
@@ -160,7 +160,7 @@ zu gewinnen, und mit überall könne er widerumb über die Elb. Haec ille. Ego l
 confidentia omnia mecum conferre voluerit, confirma[vi] ipsi gratiam caesaris. Interim so ist dieses
 richtig, daß er den Banner nichts stimirt, daß er passioniert ist gegen den Schweden sich zu revangiren, und dann
 drittens daß sein gefancknus kein collusion, sondern wohl ein ernst gewesen ist. Super reliquiis werden E. H. ex ante
-actis etiam dz beste dijudiciren wissen. Ich halte, man solle ihm daß protectirium [...] gerathener maß sey mit
+actis etiam dz beste dijudiciren wissen. Ich halte, man solle ihm daß protectorium [...] gerathener maß sey mit
 abschlagen, es schadt ihm mehr als es ihm nicht, wann er wird dasselbe mit Pfalz wolte, quod negat ex multis
 rationibus. Denn wer vermeint gar viel, dem Damer soll dieser Marcia der garaus machen; es were aber sicherer gewesen,
 wann er disseits der Elbe gehalten were worden. Herzog Georg, wann es nit gar den Erblanden geschicht, und gleichwol

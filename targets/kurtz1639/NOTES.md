@@ -1,6 +1,18 @@
 # Kurz von Senftenau (Hamburg) to Trauttmansdorff, 1638-39
 
-Status: in progress (was: read in part; key rebuilt in full; all nine letters deciphered; checked second transcription pass 21 Sept 2026)
+Status: in progress (all nine letters read as of 23 Oct 2026; key checked against Mírka's table; site page and ledgers still to be brought up to date)
+
+23 Oct 2026, re-read r2c (REREAD_BRIEF, Claude Opus 5.5): **R3813 and R3814 read**; every letter now reads.
+DECODE R3813 and R3814 carry Jakub Mírka's key reconstruction (an Excel sheet and a handwritten table, Nov 2022), listed
+under the images and never opened before. It is a key, not a decipherment. Our key agrees with it in structure; the two
+values that disagreed were checked at every occurrence and changed: k = to (was ti) and m = va (was a; 29 = qu does not
+double the v, so 29 m = qua). 9v = vo holds at all 48 uses (Mírka's q). On the images the "crossed sign" of R3813 is two
+shapes (tall crossed f = ta; low curled p-form = vi), the looped k-form (to) had been read d, α or x, and the x-places of
+the null 4 are a crossed 4 (x, glossed so on R3811 p. 1): 32 labels in R3813, 3 in R3814, and 16 in the other letters
+relabelled (read/<rec>_corrections.tsv; KEY.md "Corrections, 23 Oct 2026"). Reading bodies with conjectures counted as
+holes (v2_score.py): R3813 plain 0.563, explicit holes 0.932; R3814 0.508 / 0.968 (half Latin); the sentences hold.
+Sibling readings brought in line (contento, a proposito, protectorium, Salvius, extremam, perrexit). fraction_read 0.575 ->
+1.0 (23,669 of 23,669 cipher tokens in letters that read). Logs: read/R3813_reread_log.md section 8, R3814_reread_log.md.
 
 22 Oct 2026, re-read (REREAD_BRIEF, batch b06): **read** now R3811 (0.62), R3812 (0.616), R3815 (0.681), R4625 (0.603,
 dated Hamburg 10 Feb 1639 on its p. 6), R4645 (0.625), R4736 (0.636), with R4734 seven of nine; **decoded, not read**
@@ -35,7 +47,7 @@ letter to Schwarzenberg). SOA Plzeň, pracoviště Klášter u Nepomuka, RA Trau
 | R4734 | 1639-04-08 | copy of letter to Schwarzenberg | 5 |
 | R4736 | 1639-04-14 (Glückstadt) | Trauttmansdorff | 3 |
 
-73 image files (many are two-page spreads). No DECODE key record, no DECODE transcription files.
+73 image files (many are two-page spreads). No DECODE key record and no transcription files; R3813 and R3814 carry Mírka's key reconstruction (xlsx + handwritten table, 2022) as attachments, opened only on 23 Oct 2026.
 
 ## Prior work
 
@@ -45,7 +57,7 @@ letter to Schwarzenberg). SOA Plzeň, pracoviště Klášter u Nepomuka, RA Trau
   (homophonic letters, one sign for each consonant+vowel bigram ba be bi bo bu ca ... , nulls, no codes) and deciphered
   only the 17 Jan 1639 letter, summarised in Czech (Swedish/French/Dutch pressure on the Polish king, supply problems,
   Saxe-Lauenburg and Denmark, long passage on Hans Georg von Arnim denying a part in Wallenstein's treason and seeking
-  pardon). The key table and plaintext are not printed. The other letters were "dosud nedešifrované" (not yet deciphered).
+  pardon). The key table and plaintext are not printed. The other letters were "dosud nedešifrované" (not yet deciphered). His key table is on DECODE (R3813/R3814 attachments, Nov 2022): see the 23 Oct 2026 block.
 
 ## Method
 
@@ -108,11 +120,10 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 - 2026-09-21: checked second transcription pass on all 73 images; comment-line bug fixed (56 lines restored); #f-cross = ta split from x in R3813; read/ regenerated; α = sa and #a-loop = m split; R4645 Banér copies and R4734 endorsement transcribed (addressee Schwarzenberg).
 
 ## Remaining gaps
-- R3813 (7,997 tokens) and R3814 (2,054 tokens) decoded, not read (re-read 22 Oct, clean share 0.531 / 0.524) - blocker: not-attempted; readings built, the remaining [?] words need the x (vi/to/su/ta) and d (so/to) splits settled on the images, and about 25 runs with legible figures do not make words yet
-
-- All nine letters, residual garbled lines (listed per file in tr/PASS2_LOG.md; R3814 and R4645 Latin worst) - blocker: illegible; the checked second pass (21 Sept) fixed about 360 tokens; what remains is mostly ambiguous digit groupings, blots and overwritten digits where the image does not decide, and Latin/Italian passages
-- Latin passages - blocker: illegible; checked on the images in the second pass; the residual garble sits in run-together digit groups and blots. The alpha question is settled (21 Sept): the small upright α = sa (Salvius, salvus, caesaris, universal-, sachsen), a larger looped ℒ-form = m (#a-loop, 28 tokens split out on the images); in R3813's hand the two shapes are hard to separate
-- R4645 P6 closing and postscript in Kurz's fast hand (about half the words unread; the Banér copies P7+P5 and P3+P8 and the R4734 endorsement are now transcribed, read/R4645_clear.md, read/R4734_endorsement.md) - blocker: illegible; cursive personal hand at DECODE image resolution
+- Residual [?] words and unread runs in the nine letters (R3813 about 20 [?] and the clerk's slips in its Notes; R3814 about 12 runs; the others in each read/<rec>_reading.md Notes) - blocker: no-key-material; checked 23 Oct 2026 against Mírka's full key table and on the images (look-alike signs split); the remaining figures are legible but spell no word under any value of either key, and no second copy of the letters exists
+- All nine letters, residual garbled lines (listed per file in tr/PASS2_LOG.md; R3814 and R4645 Latin worst) - blocker: illegible; the checked second pass (21 Sept) fixed about 360 tokens; what remains is mostly ambiguous digit groupings, blots and overwritten digits where the image does not decide
+- Postscripts and margin notes in Kurz's own cursive (R3811, R3814 p. 4, R4645 P6, R4736) - blocker: illegible; fast personal hand at DECODE image resolution, partly read in the Notes (the Banér copies P7+P5 and P3+P8 and the R4734 endorsement are transcribed, read/R4645_clear.md, read/R4734_endorsement.md)
+- R4645: a leaf between P2 ("quae ergo") and P6 - blocker: needs-physical-access; not among the nine DECODE records
 
 ## Escalation
 
@@ -123,3 +134,6 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 - [x] key-rebuild: structured homophonic solver with a German LM; table 41-100 written out (KEY.md, key.json)
 - [x] retry: checked second transcription pass on all 73 images (21 Sept 2026), decode.py rerun on all nine letters; LM score better on 8 of 9
 - [x] retry (22 Oct 2026, b06): key corrected (38 = d, Δ = nu, #dot = su, #s-long = ti, m = a, 9v = vo, pv = vi), every letter re-read on crops, six more letters read; R3813/R3814 short of the bar
+- [x] known-keys (23 Oct 2026, r2c): Mírka's key table (xlsx + handwritten) found attached to DECODE R3813/R3814; compared sign by sign: k = to and m = va adopted, 9v = vo confirmed
+- [x] retry (23 Oct 2026, r2c): look-alike signs split on full-resolution crops (curled p = vi, looped k = to, crossed 4 = x) in R3811-R3815; R3813 and R3814 read
+- [x] print (23 Oct 2026): web search for an edition of Kurz's Hamburg letters found none; Documenta Bohemica Bellum Tricennale Illustrantia VI (1979) may calendar them (regests only) and is not online

@@ -67,3 +67,7 @@ Stockholmb need x = to). Meets the bar: **read** (grade B, rests on the interlin
 Still open: "Doppelter [...] ist der[...]", "[...] ob darunter", the word after "bey vergangenem", "Darumb solle
 [...]", "bey [...] Kays. Mtt." (Kurrent this pass could not read with confidence), "zum fall [9 α] tradiment" and
 "[...] werde" before "machts", "[?Stecknitz] [?stelle]", "verfassung [?ettlis]", the postscript in Kurz's cursive.
+
+## r2c (23 Oct 2026, Claude Opus 5.5)
+
+Key k = to and m = va after the check against Mírka's key on DECODE R3813/R3814 (KEY.md). Three x labels are the looped k-form (to) on the images: I23101 r. l.8 and l.22 (protectorium, twice) and I23104 l. l.6 (Stockholmb); relabelled k (R3811_corrections.tsv); the three words unbracketed in the reading. Readings of R3812, R3815 and R4736 brought in line with k = to (contento, a proposito, acceptos, puncto, bis dato, protectorium, fundamento, sadisfatto, armatos).

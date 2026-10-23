@@ -182,3 +182,34 @@ Remaining holes and their blocker:
   - (c) Clear text unread at DECODE resolution: P1 Wol..., P3 "dem ...", P4 "verwundten ...", P6 "niemand ...",
     P7 "das ... ohne", P19 "Graff Brenner verlangt ...".
 - The 47 sentences that fail only on word-list misses are period spelling, names and Latin; they stand.
+
+## 8. Fourth pass (23 Oct 2026, r2c, Claude Opus 5.5): Mírka's key on DECODE; vi/to signs split on the images
+
+- **Is there a text already?** DECODE R3813 re-fetched 23 Oct: 20 images and two attachments listed under the images,
+  "key reconstruction - Excel (Jakub Mírka)" (`key_Kurtz-Trauttmansdorff _1638-1639_reconstruction(1).xlsx`) and
+  "key reconstruction - handwritten (Jakub Mírka)" (DOC_3813_…pdf, one page); R3814 carries the same two files. They are a
+  key, not a decipherment: no plaintext of R3813 on DECODE, in Mírka 2012 (R3811 only) or elsewhere. Neighbouring records
+  R3809/R3810 (Florence, 15th c.) and R3816/R3817 (Heusner 1637, SP 106) are unrelated. Print: web search 23 Oct (Kurz
+  von Senftenau, Hamburg 1639, Trauttmansdorff) found no edition; Documenta Bohemica Bellum Tricennale Illustrantia VI
+  (1979) may calendar the letters (regests, not decipherments) and is not online.
+- **Key checked against Mírka's table** (KEY.md, "Corrections, 23 Oct 2026"): k = to (was ti) and m = va (was a) hold at
+  every occurrence in the nine letters; key.json changed; decode.py: after 29 (= qu) a v-syllable sign gives its vowel only
+  (quartir, quod). 4 = x not adopted for the plain 4 (fails in three places); the x places are a crossed 4 on the images, now `#4-cross` = x (see below). 9v = vo holds at all 48 uses (Mírka's q).
+- **Labels on the images** (research/reading_audit/r2c_line.py crops, montages in the session scratchpad): the
+  "crossed sign" of R3813 is two shapes. The tall crossed ƒ (ta: stand, tractatus, universalitatem, craistag) and a low
+  p-form with a curl through the stem (Mírka's VI = p): the second relabelled pv at 20 places (proviant, Salvii, Salvio
+  ×2, Salvium ×2, vier ×2, vil ×8, dissolviren, resolvirt, invito, and the slip alhi-vier), and three plain `p` of the
+  same form (vil mehrer, vil nuzer, Victoria). The looped k-form (Mírka's TO = k), which the agents had read as d or α,
+  relabelled k at 9 places (directorium, directorio, Victoria, invito, senatores, electore, Stockholm ×2, protectorium).
+  32 rows added to R3813_corrections.tsv (110 in all).
+- **Reading**: about 30 words unbracketed because the figures now carry them; "in risera" → "in riserva", "keiner
+  [?total] information" → "keiner so vil information" (d pv 33), "reliqui senasores" → "senatores". Still bracketed:
+  [?weniger] (9 = te gives teeniger), [?dissolutae],
+  [?Gallico], [?zuwachst] and the class (b) clerk's slips. b06_align.py: 3,578 words, 0 not carried.
+- **Crossed 4**: P3 r. l.14 (et rex; already `4+` in tr/), P12 r. l.19 (Oxensternio) and P17 r. l.7 (extremitates) are the crossed
+  4 (Mírka's X; glossed x on R3811 p. 1); label `#4-cross` = x; the three words carried (Oxensternio as the figures spell it).
+- **Score** (body only, header and Notes cut; v2_score.py, conjectures as holes): plain 0.537 → 0.563 (175/311),
+  explicit holes 0.910 → 0.932 (290/311), hole rate 0.037. German of 1639 with Latin: the word list does not know the
+  period spelling, so the bar is the explicit-hole share (0.932) plus reading: the sentences hold through the letter
+  (Banér's crossing, Duke Georg's passivity, the defensive plan, quarters against money, the universal treaties as a
+  labyrinth, Salvius and the Cologne congress, the protectorium), with single holes. **Read.**

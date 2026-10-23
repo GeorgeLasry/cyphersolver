@@ -54,3 +54,7 @@ reading from crops. This pass relabelled five figures 9 -> 9v where te makes no 
 vom konig, herr von Stralendorf, den pas von Ihr Kay. Mtt.; read/R4736_corrections.tsv), re-ran decode.py R4736, and
 wrote those words plain (reading and English). Aligner: 0 flags. Score 0.636 (44 sentences, 28 clean, hole rate
 0.166): meets the bar, **read** (grade B). Open: the runs listed in the reading's Notes and the cursive postscript.
+
+## r2c (23 Oct 2026, Claude Opus 5.5)
+
+Key k = to after the check against Mírka's key (KEY.md): "mal sadisfatto et sadisfatto", "in armatos [...] imperii", "super puncto coniunctionis". b06_align.py 0 flags.

@@ -81,3 +81,8 @@ cipher tokens.
 hochgeboren gelegen oder illustrissimi" — "I say: as the enemy now stands, and before he is driven back into
 Pomerania, they care nothing for the word 'highborn' or 'illustrissimi'."
 - Parent session, 22 Oct: 9v = vo (polyphonic 9) added to key.json; I23121 ll. 15 and 31 relabelled (frisches volck, voluerit).
+
+## r2c (23 Oct 2026, Claude Opus 5.5)
+
+Key k = to and m = va after the check against Mírka's key on DECODE R3813/R3814 (KEY.md): reading brought in line (contento, mala proposito, regi non acceptos, in puncto, bis dato, protectorium, nondum reconciliatos). Five `p` after Sal- are the curled p-form on the images (I23113 l. l.12, I23114 r. l.15, I23117 l. l.20 and r. l.15, I23118 r. l.18), relabelled pv (vi): salvis conduct, per Salvium, litera Salvii, des Salvii, weil Salvius. b06_align.py 0 flags.
+- 23 Oct (r2c, later): crossed 4 (`#4-cross` = x; the transcription's 4+, which parse.py had merged with the null 4) in "ex concluso", "extremam", "perrexit"; m = va gives "negativam". Reading updated.

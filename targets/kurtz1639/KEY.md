@@ -129,3 +129,22 @@ Made after kwic checks over all nine letters (read/<rec>_reread_log.md, research
 Open: the crossed long-s `p` (null) reads vi in Salvius, resolviren, proviant (and ta after 27, relabelled #f-cross); `x`
 also reads to / su / vi in a few words; `#sect` reads z in R4645 and R4736 (w in R3811's glosses); `#hash` = x
 (ex, rex). Printed with brackets in the readings.
+
+## Corrections, 23 Oct 2026 (r2c), checked against Jakub Mírka's key
+
+DECODE R3813 and R3814 carry two attachments not seen before: Mírka's key reconstruction as an Excel sheet (2022-11-30)
+and a handwritten table (one page). His table agrees with this key in its structure (41-100 consonant+vowel signs, 97-99
+is/es/as, 100 ru) and gives the letter signs as a series sa a, se b, si c, so d, su e, ta f, te g, ti h, to k, tu l,
+va m, ve n, vi p, vo q, vu r; y = x; nulls φ λ ∂ β ν. Our labels map onto it: α = his a (sa), 6 = b (se), #dot = e (su),
+#f-cross = f (ta), 9 = g (te), #s-long = h (ti), #l-loop = l (tu), pv = p (vi), 9v = q (vo), Δ = his NU sign.
+Two values here disagreed with his and were checked at every occurrence:
+
+| sign | was | now | evidence |
+|---|---|---|---|
+| `k` | ti | to | all 17 uses: protectorium, electores, multorum, a proposito, bis dato, in puncto, super puncto, tradimento, contento, (mal) sadisfatto, nondum reconciliatos, regi non acceptos; none needs ti |
+| `m` | a | va | non-29 uses: negativam, vanitet, riserva, avantagiosen, enervatis, valedi(c)it; after 29 (= qu) the v is not written twice: decode.py now gives 29 + m = qua, 29 + 9v = quo (quod) |
+
+`4`: the x-reading places (ex concluso, extremam, perrexit, ex defectu, rex, Oxensternio, extremitates) are a crossed 4 on the images (Mírka's X sign; glossed x on R3811 p. 1, where the transcription already had `4+=x`); parse.py strips `+`, so the crossed form had been merged with the plain 4. New label `#4-cross` = **x** (7 tokens); the plain 4 (R3814 P1 "denomina-d-4-e", R3813 P15 "um 4 so", the numeral "4." on R3814 P2) stays unvalued; `x` = i (Mírka y),
+same reading in this German. `9v` = vo (22 Oct) holds at all 48 uses in the nine letters (volck, von, vor-, voluerit,
+voluimus, bevor, vom) and is Mírka's q. Labels corrected on the images in R3813 (crossed sign → pv 20, p → pv 3, d → k 8,
+α → k 1) and R3814 (9 → 9v 2, 9 → #sect 1), with crossed sign/p → pv in R3812 (5) and R3815 (1), x → k in R3811 (3), 4 → #4-cross in R3811-R3813 (7): read/<rec>_corrections.tsv.

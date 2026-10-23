@@ -71,3 +71,20 @@ Result: stays **decoded, not read** (0.49 < 0.60).
 Result: stays **decoded, not read** (0.52 < 0.60). The failing sentences now fail mostly on Latin and names the word
 list does not know (Mithofi, Pommeren, Balbey, Ragozi, ezaminetur, generalissimis, NB); about 15 [...] remain in runs
 whose figures are legible but do not make words (listed in the reading's Notes).
+
+## Fourth pass (23 Oct 2026, r2c, Claude Opus 5.5)
+
+- DECODE R3814 re-fetched: five images plus Mírka's key reconstruction (xlsx, DOC_3814_…xlsx, and the same handwritten
+  table as R3813, DOC_3814_…pdf). A key, not a decipherment; no text of R3814 exists elsewhere (see R3813 log, section 8,
+  for neighbours and print).
+- Key: k = to, m = va adopted for all letters (KEY.md); neither occurs in R3814's open runs except "quod" below.
+- Image checks (r2c_line.py crops): P2 r. l.4 "aber [te]ir" — the 9 is the bold 9 (#sect, w) → "aber wir"; P2 r. l.7 "29 9 38"
+  — the 9 is the q-form → 9v, quod (29 + vo + d); P3 r. l.18 "9 28 14 83 28" → 9v: "vor oder hinter Pomeren" (Vor- and
+  Hinterpommern). Three rows added to R3814_corrections.tsv.
+- Tried without result: P3 r. l.21 "auf terte freltung ben stettin" with 9 = vo/te/w gives no word; P5 l. l.22 "zeit
+  wetlohren"; P1 "denomina-d-4-e" (4 is a plain 4 on the image; x gives nothing); P2 "rirettransac", "quano snisn lipsis".
+  These stay [...]: the figures are legible and give no word under any value of the key or of Mírka's table.
+- Score (body only, v2_score.py): plain 0.508 (32/63), explicit holes 0.952 → 0.968 (61/63), hole rate 0.041; b06_align.py
+  0 flags. Half the letter is Latin, so the plain share understates it; on explicit holes and on reading (the satisfactio
+  coronae points, Salvius fooling Mithoff, the secret correspondence via Nuremberg and Wolfenbüttel) the sentences hold.
+  **Read.** The p. 4 postscript in Kurz's cursive stays outside the body (illegible at DECODE resolution).

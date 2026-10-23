@@ -10,11 +10,11 @@ supplied. -->
 
 Hochgeborner Herr Graf,
 
-Von hinnen wolt man mich nit gern dimittiren; mal sadisfatti et sadisfatti ist wider alle ihre principia. Quid
+Von hinnen wolt man mich nit gern dimittiren; mal sadisfatto et sadisfatto ist wider alle ihre principia. Quid
 consilii [...] armorum zu [...] die massima wollen E. Chf. Dhl. [...] pro semper haben: das krieg in Osterreich fur
 fridt in Nidersachsen gehalten wurdte, an schon die Schweden in Meckelburg und Pommeren bleiben. Optimo iure konden
 wir unser allergnedigste herrschaft bitten, sie wolle uns [...] Pommeren nit verderben lassen. Quid erit, wan wir
-alles gethan haben? Reditus nostri militis in Austriam vel no[vu]m bellum in armatis [...] imperii, et qui se tum cum
+alles gethan haben? Reditus nostri militis in Austriam vel no[vu]m bellum in armatos [...] imperii, et qui se tum cum
 [?Suecis] coniungent? Fur solche vormauren geben wir unser schweis und bluet, hersezen alles in con
 promess[e], [...] wir haben. Postqum nobis a [S]vecis penitus ener[v]atis omnia [...] nec contenti erunt, nec [Su]ecos etiam
 tum tenent vel poterunt e[x] imperio eicere.
@@ -22,7 +22,7 @@ tum tenent vel poterunt e[x] imperio eicere.
 Hildesheimb und Glucks[ta]t ist eines: iener schiest den bolz, diser fangt ihne. Pen[?z] ist der gescheidest in
 dissimuliren; alli altri [?scoppa] mi pensieri. Eines macht alhier gedancken, id est die lateinische scharteken:
 [vi]det re[x] ingratitudinem, iam nos cogere ut rationes pacis ineamus, indem etiam cum praeiudicio [...]. Ich hab mich
-nie nichts weiter daruber heraus gelassen; sie sich nichts super puncti coniunctionis. Also beruehet alles alhie,
+nie nichts weiter daruber heraus gelassen; sie sich nichts super puncto coniunctionis. Also beruehet alles alhie,
 ob sich selbst interposito regis [...], wan alle andere weeg verhaust, und wir i[m] sinn haben, das werck zu
 accommodiren simul et interessati. Dan ist darvon wurden interim [...] solte man dem Kaiser kein satisfaction ganz und gar
 nit geben, kein ocasion haben mit eim anderen officios, scheinbarlich das romische reich ein hofnung einziges vom

@@ -38,7 +38,7 @@ Addunt: herzog Augustus von Sachsen Lauenburg wolle sich in dennische protection
 stehet zu erwartten.
 
 Arnheim ist gestert bey mir gewesen, Consiliatis vermeldt, dolere se, das er bei Kai. Maist in verdacht solte sein, als
-wan er vom fridlandischen tradimenti gewest, und darfür Cooperiert hette. Wüßte officier so ihn nachgestelt, aber mit
+wan er vom fridlandischen tradimento gewest, und darfür Cooperiert hette. Wüßte officier so ihn nachgestelt, aber mit
 obi befehlen. Wann bey schwelen in hochster gefahr, und also auch der Kai. gnad nit versichert. Mit allem ware
 seines herren des churfursten bey vergangenem [...] verstandt intention nit gewesen, einziges Haus, bevorab de[s] Erzhaus
 [Ös]ter[r]eich zu ruiniren, sondern er Arnheimb selbst auc[h] [?ir] das in sein instruction gesezt worden, als er zu Fridlant gewest,
@@ -50,14 +50,14 @@ er Arnheim sich stil hielte, und wider pace et bello ursach churfurst habe ad tr
 handen lassen, den pragerischen friden nichts machiniere, er alhie Kays. schuz versichert solte sein.
 
 Ich habe ihm gegen leistung seiner schuldigkeit ain ebenmesig bey [...] Kays. Mtt. versichert, et demisi illum
-contentum. Mit meinem Rath gibt man ihm ein [?protectorium] in optima forma und obligirt ihn; er ist doch in der
+contentum. Mit meinem Rath gibt man ihm ein protectorium in optima forma und obligirt ihn; er ist doch in der
 amnistia, nisi probentur fridlandica. Und wie wurdt man dises, et quo commodo, erheben? Wafen bekombt er doch nochmals,
 vel pro nobis vel contra nos. Engeland und Franckreich machen ihm alhie caresses, die Schweden auch wider; sagt alle
 suspiciones zu vermeiden wolle er von hinnen weck. Petiit a me ein pass nach Preussen. Wie ist besser ein
-[?protectorium] von Kai. [...] Maii.? Helt er sich demselben gemes, zu sehen.
+protectorium von Kai. [...] Maii.? Helt er sich demselben gemes, zu sehen.
 
 Wohl angelegt. Im übrigen thue ich bey Dennemarck gern das meinige. [?Arnheim] [...]: Denemarckh konde
-nit aus dem spill sein. Wir habe ihm mehr das glück und unglück zum fenster hinein gesehen. [?Stockholmb] sei in seinen
+nit aus dem spill sein. Wir habe ihm mehr das glück und unglück zum fenster hinein gesehen. Stockholmb sei in seinen
 handen, wan er nur wolle kriegen; Schweden Pommeren [...] dagegen verlohren. Putat per modum der Crais
 verfassung [?ettlis], das der feind verfolgt und [...] reichsboden getriben werde, konte für am besten in de[s] spil gebracht
 werden. Svecos non inter Holsatiae [?ducem] et regem Daniae non distinguere, idque regia suecis responsum cum nuper

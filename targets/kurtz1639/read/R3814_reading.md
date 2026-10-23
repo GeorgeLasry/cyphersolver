@@ -4,7 +4,7 @@ after the corrections in read/R3814_corrections.tsv; all five pages checked on c
 German and Latin is the transcription agents' reading of the clear hand, corrected where re-read on the image. No
 contemporary decipherment, gloss or edition is known. Spelling as the figures and the clear hand give it; words
 separated and punctuation added. Clear and deciphered text are not marked apart (read/R3814.txt shows which is which).
-Marks: [...] unread; [?word] partly carried; [word] supplied. Third pass the same day with pv = vi. -->
+Marks: [...] unread; [?word] partly carried; [word] supplied. Third pass the same day with pv = vi. 23 Oct 2026 (r2c, Claude Opus 5.5): Mírka's key reconstruction on DECODE R3813/R3814 used as a check (k = to, m = va; 29 + v-syllable = qu + vowel); three labels corrected on the images (P2 "aber wir" bold 9 = #sect w; P2 "quod" and P3 "vor oder hinter Pomeren" 9 = 9v vo). -->
 
 # R3814, Kurz von Senftenau to Trauttmansdorff, undated, 1639
 
@@ -22,7 +22,7 @@ Brandenburg, zu erhalten; und dies sol satisfactionem coronae betrift. Der passu
 soldatesca mues ausbleiben, ist umbsonst [...]; [...] wer heruber gehet, bekombt gelt; amnistia stehet bei Ihr Kay. Mt.
 suo tempore. Das groste ist, ob uns Schweden was restituieren konde, [...] Elsas et illorum quae occupat post [...]
 faedus in praedictis litteris Salui schickt. NB Brisacum erit Suecorum; es ist immediate darwider. Ihrem vorthel haben
-aber [...] des Ungarischen Khönigreichs [...] ipsis restituimus, [...] prius [...] habeant, ausser dem in khönden also
+aber wir des Ungarischen Khönigreichs [...] ipsis restituimus, quod prius [...] habeant, ausser dem in khönden also
 nit gefert worden loca restituenda, wenn also zu specificiren, et omnia ad manus Caesaris. NB zu consultiren, was
 Dennemarck fur interesse bei Riga hat; und in somma in hohster hehster gehaimb ein proiect auf [...], wie mann
 vermainte das mit disen leuthen zu schliessen. Nichts falschers hab ich mein lebtag nit gesehen; alle wort [...] zu
@@ -38,7 +38,7 @@ tam absurdi petat Mithovius de aula Caesarea sibi non promittat. Darnach ist zwa
 nit vil geschadet, aber auch nichts genuzt; aber a proposito dieser, was F. H. Ungern Grafen von Schwrzenberg
 erinnert haben. Hiermit haben die ein wer dessen dem churfursten von mir communicirten aufsaz: ezaminetur parum
 punctus satisfactionis. Primo, ob es auf ein stuck landts iure pignoris zu bringen cum denominatione summae. Secundo,
-wan es halb Pomeren sein solte, obs [...] oder hinter Pomeren zu lassen, [...] an hinter Pomeren fort solle; obs
+wan es halb Pomeren sein solte, obs [...] vor oder hinter Pomeren zu lassen, [...] an hinter Pomeren fort solle; obs
 nit auf [...] zu bringen. Mehr consilia erfahrt man also in eim tag als sonst in iahren. Quaeritur, obs geschehen
 solle. Ragozi solle mit consens des Turckhens gelt von Franckreich empfangen haben, und also zur nachricht.
 

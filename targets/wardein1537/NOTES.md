@@ -27,6 +27,13 @@ read every gap sign by sign (`r9414/pass4.txt`); its entries for P1.12-16 were r
 Log: `r9414/R9414_bands_reread_log.md`.
 
 
+23 Oct 2026, verification r2c (VERIFY3_BRIEF, Claude Opus 5.5): **the lines that read keep read.** The v3 sweep's 0.419
+(explicit holes, conjectures as holes) scored the whole of `r9414/reading_v5.txt`, the decoded-not-read bands included.
+The read lines are now written out as `r9414/R9414_reading.md` (v5 wording unchanged; v5's `<doubtful runs>` and `word?`
+printed `[?...]` so that they count as holes) with an English translation `r9414/R9414_en.md`: 0.464 plain, **0.71** on
+explicit holes (`v2_score.py`), hole rate 0.115; the bands alone score 0.172 / 0.241. Early New High German, so the
+explicit-hole share is the bar, and the sentences hold. No key or reading change.
+
 ## The letter
 
 | Record | Folio | Date | Who | Language | System | Read |
@@ -52,7 +59,7 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
 
 ## Remaining gaps
 
-- P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35, P5.05-07 decoded, not read (0.310 / 0.379 explicit holes, re-read 23 Oct 2026) - blocker: no-key-material; they hold most of the unresolved words, code signs and blots listed below
+- P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35, P5.05-07 decoded, not read (0.310 / 0.379 explicit holes, re-read 23 Oct 2026; 0.172 / 0.241 with conjectures as holes, v2_score.py) - blocker: no-key-material; they hold most of the unresolved words, code signs and blots listed below
 - code signs without a key (about 10 words: Ψ at P2.02, 08, 09, 27; swash X at P2.15, P2.25, P4.02, P4.21; K at P4.33, probably "the king") - blocker: no-key-material; single name/word signs, no key in the volume or on DECODE
 - blotted or struck signs (about 15 words) - blocker: illegible; ink blots and deletions on the DECODE images
 - legible but unresolved words (about 55; candidates in gapfill.py output) - blocker: no-key-material; four full image passes, sibling keys and a one-edit lexicon search done, homophone ambiguity remains
@@ -88,6 +95,7 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
   92.2%. Still under the bar; the remaining ~55 words fail on the signs themselves.
 - [x] retry (5th, 23 Oct 2026, b37): DECODE record and neighbours re-checked for a text of the letter (none); pass 4
   re-checked for P1.12-16; bands scored 0.310 / 0.379 on explicit holes; no change.
+- [x] verification (23 Oct 2026, r2c): read lines written out as r9414/R9414_reading.md + R9414_en.md and scored with conjectures as holes (0.71 explicit holes); kept read
 - [x] joint solve of the two unkeyed signs (5 Oct 2026). Barred ∂ (∂ with a bar through the stem), five places:
   P2.17 line start before "befelche sich" (followed by a struck run), P2.19 after clear "otto" before "so wern eur
   F.G. sehen", P3.39 after clear "iij" before "n monat", P4.21 before "uon" + swash X + "kainen", P4.23 after clear

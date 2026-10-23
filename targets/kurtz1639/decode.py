@@ -40,6 +40,10 @@ def decode_record(rec, h, s):
                     if tok.startswith('~') or tok in ('/', '#ins'):
                         continue
                     v = value(tok, h, s) if '?' not in tok else '?'
+                    # 23 Oct 2026 (r2c): 29 = qu carries its u, so a following v+vowel sign (m = va, 9v = vo,
+                    # pv = vi, n = ve) gives only its vowel: 29 m = qua, 29 9v d = quod (Mirka's key: Q = 29, VA = m).
+                    if cur and cur[-1] == s.get('29') and tok in ('m', '9v', 'pv', 'n') and v.startswith('v'):
+                        v = v[1:]
                     cur.append(v if v != '?' else '?')
             if cur:
                 parts.append('[' + ''.join(cur) + ']')

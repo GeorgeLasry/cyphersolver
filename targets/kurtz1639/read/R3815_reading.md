@@ -25,7 +25,7 @@ tausent mann und darzu noch ermatten und erhungerten feindt zu thuen. [...] ist 
 Allerunterthänigst stelle E. Kays. Mt. ich anheimb, ob sie den General Feldzeugmeister Sales oder commendo andern mit
 [...] kaiserlichen schreiben nacher Hildesheimb absonderlich vorgesehen lassen wollen, nicht als albereit geschechene,
 sonderen das kunftige zu verhinderen. Ich wolte mich lebsten dahin befurderen, so muss ich aber der endlichen Antwort
-dess Salvij alhier, [...] quam fundamenti der dennischen kunftigen [...] haben, thun oder lang erfolgenden resolution
+dess Salvij alhier, [...] quam fundamento der dennischen kunftigen [...] haben, thun oder lang erfolgenden resolution
 erwarten, die dan nicht weniger auch dem Craisstag bey wohnen, sein auch mit versehent, weil sich der status rerum
 verenderen mochte, das ich zu Herzog Georgen komben konte; sonsten aber, die mit der pas und die zeit erleidet, nach
 geschlossenem Craistag dahin wegfertig[en]. Der Salis wurdt hieran ihrer furst. gnaden ohne das aufwarten, und erinnere
@@ -33,7 +33,7 @@ obiges bloss, ihn mehrers zu accreditieren. So hat auch E. Kays. Mtt. General Fe
 anzeitlicher erinnerung und ob
 
 [...] nicht [...] manglen lassen. Der Konig in Dennemarck, so viel ich mercke, ist ganz perplex, [...] obligation darnach zu trachten, [...]gen in
-sal[v]um, und herauss [?pressung], das sie kein intention zum friden haben, damit sich wohl gebührt, lest, ob mit
+salvium, und herauss [?pressung], das sie kein intention zum friden haben, damit sich wohl gebührt, lest, ob mit
 Dennemarckh zur desto geschwinderen entfliechung der coniunction tergiversiren möchte. [...]ficirt der Reichsrath und
 standt bey E. Kays. Mtt. wafen [...], und des accidents [...] irresolvirt und pusillanimes, und schwerlich [?etwas]
 haubtsachlichs zu hofen, biss man sich allergnedigst widerumb zu veldt [...]lest.
@@ -50,7 +50,7 @@ Kays. gnaden allerunterthänigst empfehlen. Datum Hamburg den 6. Febru. Ao. 1639
   (was the 4-hook): "die mit der pas und die zeit erleidet"; `27 p` before n d t = #f-cross: "standt".
 - `9` reads vo three times here (von nothen, Graven von Hazfelds, einem von acht): a polyphonic 9 of the same shape
   as 9 = te, entered in key.json as 9v = vo (22 Oct 2026) and relabelled 9v in tr/ (see R3815_corrections.tsv).
-- `p` reads vi in "resolviren", "irresolvirt", "sal[v]um" (the key has p as a null; elsewhere it is a flourish).
+- `p` reads vi in "resolviren", "irresolvirt", "sal[v]um" (the key has p as a null; elsewhere it is a flourish); 23 Oct 2026 (r2c): the Salvium p is the curled p-form, relabelled pv (vi), now "salvium".
 - Clear text re-read on the images: "dess Salvij alhier" (Salvius, not Salis), "auch dem Craisstag bey wohnen", "weil sich
   der status rerum", "So hat auch", "Hazfeldt", and the close on P2 right ("Graf Franz ... bescheide noch nit angelangt.
   Wass sich Ihre Königl. Würd. ... resolvirt, dessgibt der beyschluss").

@@ -60,3 +60,7 @@ Result: meets the step-4 bar narrowly (0.62); the sentences cohere apart from th
 Result: read (grade B): the sentences cohere and translate; clean share 0.667.
 - 9v = vo (polyphonic 9, same shape) added to key.json by the parent session; three R3815 tokens relabelled (von nothen, Graven von Hazfelds, einem von acht); score 0.667 after (hole rate 0.128).
 - pv = vi (crossed long-s) added to key.json; two R3815 tokens relabelled (resolviren, irresolvirt).
+
+## r2c (23 Oct 2026, Claude Opus 5.5)
+
+Key k = to (quam fundamento) and m = va (29 + m = qua) after the check against Mírka's key on DECODE R3813/R3814 (KEY.md). The Salvium `p` (I27184 P2 l. l.5) is the curled p-form, relabelled pv: "salvium". b06_align.py --para 0 flags.
