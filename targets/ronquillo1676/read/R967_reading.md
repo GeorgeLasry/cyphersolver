@@ -2,6 +2,8 @@
 
 # R967, Salinas to Fuenmayor, London, 8 Dec 1676
 
+## Reading
+
 ⟨... que aunque sea difícil en lo fatigada que queda aquella corona,⟩ nada es hoy imposible en la fortuna que tiene la
 Francia, y ninguna mayor que en tener tan hechizada esta corte, que por extorsiones que hacen no se da por sentida;
 ⟨pues sobre las quejas de estos pueblos a las piraterías de los corsarios franceses ... publicar placartes de otro,⟩

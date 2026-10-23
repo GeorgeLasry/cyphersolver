@@ -101,3 +101,6 @@ Nothing could be read; the windows are narrower.
   reading); 8136 has no candidate with sense, and the clause is complete without it.
 - Quotation for Lasry's list: the Cologne clause joined to the counter-order, which leaves one open pair
   (8093 8102) and drops 8136. Changed: `docs/soglia1848.html` (§07 paragraph), this file, `profile.json`.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: texts/plaintext.md's heading renamed '## Reading' and '## English' added before the translation (the sweep had scored plaintext_guess.txt): body plain 0.727, explicit 1.0. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

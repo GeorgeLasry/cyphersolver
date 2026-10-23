@@ -7,6 +7,8 @@ image (texts/423_b04_corrections.tsv: struck figures before "notizia"). No conte
 edition. Word division, u/v, accents and apostrophes normalised; single consonants of the cipher sometimes doubled (eretta, rispettivi); other spellings as written.
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1555] = nomenclator group without a value.
 
+## Reading
+
 Procuri V.S. d'informarsi destramente e con tutta la sicurezza se codesta Corte sia disposta di mandare un suo
 Ambasciatore in Portogallo, e in tal caso di qual istruzione sarà caricato circa la visita a quel Segretario di Stato per
 gli affari [?stra]nieri, massime nel nuovo regolamento ivi stabilito d'aver diviso in tre Segretari le incombenze

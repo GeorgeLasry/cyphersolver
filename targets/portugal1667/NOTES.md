@@ -62,3 +62,6 @@ complete secrecy so that the Dutch do not take offence.
 - What we checked: decoded from his f59r crop with his table: 70.f.x.40.50.26.82.35.ss.82.29.20.700.x.40.29.20.50 = p-r-u-d-e-n-c-i-a c-o-m t-u-d-o m-e; next row 70.ss.500.50.g.50.29.202.50.20.24.500.ss.f.x.29.62.28 = pareceo lembrarvos q = his excerpt
 - Verdict: **confirmed** (method read from existing decipherment, extent complete). The check is a sample, not a re-solution.
 - Notes: Sample decodes exactly, but folio not checked on Gallica. A historical decipherment exists on f60r and a copy on f119r, so the reading rests on it. Simple numeric/letter substitution.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the text is Portuguese of 1667 (not French), so the explicit-hole share is the bar. Lasry's excerpt written out as lasry_excerpt_reading.md: explicit 1.0; the Portuguese word list does not know 1667 spelling (plain 0.0 on two sentences). Entry language set to pt. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

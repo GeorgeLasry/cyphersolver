@@ -125,7 +125,8 @@
    "result": "partial",
    "date": "2026-10-01"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 292 linked to Satoru's transcription (cipher_words.tsv); his reading with its clear context copied from NOTES.md and the dec.py decode of the 54 cipher words saved to texts/f292_decryption.md; his page linked. The full clear text of the letter and the f. 294 cipher line are only on his page", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 292 linked to Satoru's transcription (cipher_words.tsv); his reading with its clear context copied from NOTES.md and the dec.py decode of the 54 cipher words saved to texts/f292_decryption.md; his page linked. The full clear text of the letter and the f. 294 cipher line are only on his page", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): the letter is Italian of 1637; Satoru's reading plain 0.333, explicit 0.667, the holes five name codes without key material, one sign and 'dattone?'. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -152,7 +153,7 @@
     {"who": "satoru", "role": "identification", "note": "Monsignor Beria identified with Kontaris"}
   ],
   "texts": [
-   {"doc": "f.292", "label": "BnF fr. 16158 f. 292, Vizani to the Comte de Césy, Prinkipo, 8 Oct 1637", "transcription": "cipher_words.tsv", "decryption": ["texts/f292_decryption.md", "https://satoru.net/crypt/vizani/"], "summary": "Fra Guglielmo Vizani writes from Prinkipo to the French ambassador at Constantinople: a person in code asks whether 4,000 scudi were promised by the ambassador's order, and 'Monsignor Beria' (by Satoru's identification Cyril Kontaris of Veroia) is close to obtaining the Patriarchate and hopes for a change within two months; Kontaris replaced Lucaris in June 1638."}
+   {"doc": "f.292", "label": "BnF fr. 16158 f. 292, Vizani to the Comte de Césy, Prinkipo, 8 Oct 1637", "transcription": "cipher_words.tsv", "decryption": ["texts/f292_decryption.md", "https://satoru.net/crypt/vizani/"], "summary": "Fra Guglielmo Vizani writes from Prinkipo to the French ambassador at Constantinople: a person in code asks whether 4,000 scudi were promised by the ambassador's order, and 'Monsignor Beria' (by Satoru's identification Cyril Kontaris of Veroia) is close to obtaining the Patriarchate and hopes for a change within two months; Kontaris replaced Lucaris in June 1638.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the letter is Italian of 1637 (not Spanish): plain bar. Satoru's reading as quoted in texts/f292_decryption.md: plain 0.333 (2/6), explicit holes 0.667 (4/6), hole rate 0.096, 73 words. The holes are the five name codes (231, 31, 36, 198, 227; no key material), one unread sign and 'dattone?'; the plain failures add Beria and 'patiarchato'. Each sentence builds around the codes: only scattered codes open. Keeps read."}, "reading": "texts/f292_decryption.md", "language": "it", "state": "read"}
   ]
  }
 }

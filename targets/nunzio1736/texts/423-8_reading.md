@@ -7,6 +7,8 @@ passage that is not on this page. No contemporary decipherment, clear copy or ed
 Word division, u/v, accents and apostrophes normalised; single consonants of the cipher sometimes doubled (eretta, rispettivi); other spellings as written.
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1636] = nomenclator group without a value.
 
+## Reading
+
 … ai stampati a dirittura per la posta.
 Di tutte queste cose V.S. non se ne dia ella per intesa, se non in [1636] di [?rispondere]; sarà ben sì d'uopo che ragguagli di
 tutt[o] Mons. Vescovo d'Avila, e gli comunichi le copie de' mentovati Brevi; e che V.S. procuri ancora destramente

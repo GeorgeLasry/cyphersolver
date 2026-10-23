@@ -2,6 +2,8 @@
 
 # R969, Salinas to Fuenmayor, London, 8 Sep 1676
 
+## Reading
+
 ⟨... con la inconsolable fatalidad del suceso de Maastricht, que V.S. tendrá más por menor que yo, en que no
 discurriré, pues aun para esto falta el ánimo.⟩ Con este motivo se refuerzan los discursos de la paz, que son los que
 continuamente me tiene este Rey en conferencias públicas y secretas, a que no ayuda poco la inclinación de Van

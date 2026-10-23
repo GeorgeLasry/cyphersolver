@@ -32,6 +32,8 @@ Token by token against gloss and key (`R7481_pass2.txt`, `R7482_pass2.txt`, read
 520 of 522 (99.6%; the two open are the nulls 407 and 700), R7482 355 of 355. Encipherment slips settled (68 for 65 in
 "tam", 62 for 65 in "ivit", the dropped z of "Rakoczego"). 875 of 877 = 99.8%.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is Polish of 1709 (not French): explicit-hole bar. R7481_reading.txt body: explicit 1.0, plain 0.222 (small Polish word list, Latin phrases, names). The reading is in modernised Polish (9 Oct 2026); not redone here. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 - none: the two open tokens are nulls by design
 

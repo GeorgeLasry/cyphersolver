@@ -16,6 +16,8 @@ Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
 ---
 
+## Reading
+
 Quando s'inclini, e si trovino le cose in termine di poter gratificar S. M.tà e 'l signor di Stralendorf della
 prepositura di Alberstat, per far che la gratia sia riconosciuta veramente dalla buona volontà di N. S.re e
 dall'intercessione di V. S. Ill.ma, pare che importeria assai se al signor ambasciatore, quando ne parlerà, si motivasse

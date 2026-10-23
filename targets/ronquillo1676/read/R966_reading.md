@@ -2,6 +2,8 @@
 
 # R966, Salinas to Fuenmayor, London, 21 Aug 1676
 
+## Reading
+
 ⟨... de lo mucho que se puede hacer.⟩ Aunque en una larga conferencia que tuve con el Rey me dijo que [la] entrada
 en Francia antes dañaría a la paz que adelantarla, con que, debiéndolo [...] creer al revés, lo debamos suponer por
 lo mejor; y diciéndole yo que esotro sitio no se podía excusar, dijo que con estas dos plazas que se tomaban acabara

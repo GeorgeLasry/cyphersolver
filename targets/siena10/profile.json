@@ -118,6 +118,13 @@
    "what": "Verification 3 (v3_below_b): flagged at 0.567 on no10.txt (transcription table). The cipher run read in its clear sentence (no10_reading.md): 1.0 explicit holes. Kept read.",
    "result": "worked",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["statistical test", "manual reconstruction"],
+   "what": "Verification 5 (plain bar, 23 Oct 2026): the slip is of 1495-1511: older Italian, explicit-hole bar (1.0). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -168,7 +175,7 @@
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "v3 check 23 Oct 2026: the sweep scored transcripts/no10.txt, the sign-by-sign transcription with its gloss table and tentative clear lines (0.567). The cipher run is three words, 'presura di Montepulciano', every letter given by the contemporary gloss over its sign and consistent where a sign repeats; written out in its clear sentence (no10_reading.md) it scores 1.0 on explicit holes (plain 0.0 on one sentence: 'presura' with one s and 'Montepulciano' are unknown to the word list). Rests on the decipherment written at the time."
+     "note": "v3 check 23 Oct 2026: the sweep scored transcripts/no10.txt, the sign-by-sign transcription with its gloss table and tentative clear lines (0.567). The cipher run is three words, 'presura di Montepulciano', every letter given by the contemporary gloss over its sign and consistent where a sign repeats; written out in its clear sentence (no10_reading.md) it scores 1.0 on explicit holes (plain 0.0 on one sentence: 'presura' with one s and 'Montepulciano' are unknown to the word list). Rests on the decipherment written at the time. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the slip is undated but of the Montepulciano campaigns of 1495-1511 (NOTES): older Italian, so the explicit-hole share is the bar (1.0); 'presura' and 'Montepulciano' are the only plain failures. Keeps read."
     },
     "state": "read",
     "reading": "transcripts/no10_reading.md",

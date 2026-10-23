@@ -17,6 +17,8 @@ Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
 ---
 
+## Reading
+
 ‹… rispondesse che desidera consolar› S. M.tà, ma che desidera anche di sapere come pensa di trattar li cardinali. Il
 certo è che 'l signor cardinale, come gli altri che sono sudditi, non si allontaneranno da' sensi dell'imperatore; e
 bisogna pregar Dio che non venga voglia all'imperatore di trattarli anche peggio, perché io temo che anco lo

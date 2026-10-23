@@ -115,7 +115,8 @@
    "date": "2026-09-21"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1045 tokens, 105 types, fr-modern order 4: reading -2.135 per letter; random keys -6.805 (z 15.2); key annealed onto shuffled ciphertext best -3.642 (mean -3.698, z 41.8); annealer on the real text -3.571. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ct.txt, reading reading.txt and the raw decrypt decrypt_raw.txt", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription ct.txt, reading reading.txt and the raw decrypt decrypt_raw.txt", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): reading.txt's brackets mark the deciphered parts, not holes; written out as reading.md with italics (plain 0.833, explicit 0.896). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 1045, "types": 105, "tokens_per_type": 9.95, "score": -2.135, "nulls": {"random keys": {"n": 200, "mean": -6.805, "sd": 0.308, "max": -5.891, "z": 15.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.698, "sd": 0.037, "max": -3.642, "z": 41.8, "p": 0.1429}}, "power": -3.571, "verdict": "pass", "notes": "claimed per-occurrence score -2.135; polyphony 0.0; 20 unread tokens left out; annealer on the real text from random keys reached -3.571"}, 
   "method": "read with known key",
@@ -137,7 +138,16 @@
      "reading.txt",
      "decrypt_raw.txt"
     ],
-    "summary": "A royalist named Wolff writes to the exiled Princess of Orange in London that he is the author of a plan sent to her and to the King of Prussia in 1798 (landings at Le Havre and in Holland, a bombardment of Paris, an attack on the IJssel) and offers his services to carry it out now that circumstances are alike again; he recalls being arrested on 14 September 1795 and 39 months in prison, and asks for British half-pay or other relief."
+    "summary": "A royalist named Wolff writes to the exiled Princess of Orange in London that he is the author of a plan sent to her and to the King of Prussia in 1798 (landings at Le Havre and in Holland, a bombardment of Paris, an attack on the IJssel) and offers his services to carry it out now that circumstances are alike again; he recalls being arrested on 14 September 1795 and 39 months in prison, and asks for British half-pay or other relief.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored decrypt_raw.txt. reading.txt brackets the deciphered parts, which the scorers count as holes; written out as reading.md with them in italics, wording unchanged: plain 0.833 (40/48), explicit holes 0.896, hole rate 0.033. reading.txt's spelling is lightly modernised (4 Oct 2026, its header says so); not redone in this pass. Keeps read."
+    },
+    "reading": "reading.md",
+    "language": "fr",
+    "state": "read"
    }
   ]
  }

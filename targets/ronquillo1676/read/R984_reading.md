@@ -2,6 +2,8 @@
 
 # R984, Ronquillo to Fuenmayor, Nijmegen, 26 Feb 1678
 
+## Reading
+
 ⟨... con las cuales suplico a V.S. me favorezca.⟩ He visto con particular atención cuanto V.S. me participa en sus
 referidas cartas en lo tocante a las materias que se han tratado en esa asamblea de los aliados del Norte y pasos
 que en ella se han dado; y pendiendo todo de las resoluciones de Inglaterra, de que V.S. se hallará informado con

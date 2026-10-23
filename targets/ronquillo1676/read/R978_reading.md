@@ -2,6 +2,8 @@
 
 # R978, Ronquillo to Fuenmayor, Nijmegen, 10 Feb 1677 (signed for him by Bernardo Navarro)
 
+## Reading
+
 ⟨... en que desempeñar mi obligación.⟩ La conclusión deste diablo de proyecto de plenipotencias nos tiene cada día
 más embarazados por las disputas y reparos que a instantes se mueven; y si bien por nuestra parte, y la de
 holandeses también, creo que por la del señor Emperador podía estar acabado de ajustar este punto, pues están

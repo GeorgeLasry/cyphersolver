@@ -80,6 +80,8 @@ came to nothing (report). Three weeks before no. 20 (Perugia, 30 March 1413) and
 Where Sforza was: the report cites Minuti and Pellini for Sforza at Perugia in February-March 1413; the atlas puts
 the letter Naples -> Perugia on that basis.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is Italian (Neapolitan) of 1413, not French: explicit-hole bar. reading_no12.txt (Lasry's decipherment verbatim): explicit 0.708, plain 0.25 on dialect forms. Entry language set to it and reading pointed at reading_no12.txt. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 
 - the two name signs ("name?", 2 and 1 occurrences) and the "Signoria Vostra?" sign - blocker: open-codes; each occurs once or twice, the report leaves them open

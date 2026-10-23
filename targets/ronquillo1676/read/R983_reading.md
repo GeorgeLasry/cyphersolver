@@ -2,6 +2,8 @@
 
 # R983, Ronquillo to Fuenmayor, Nijmegen, 22 May 1677
 
+## Reading
+
 ⟨... paso a suplicarle no atribuya a omisión ni falta de amistad el no haber correspondido con la puntualidad que
 merecen los continuados favores de V.S.,⟩ pues aquí andamos tan embarazados [...] de no hacer nada, como V.S. puede
 [...] contemporizar con los [...], que aquí siguen las mismas máximas que en Bremen [...] de la Pomerania, a celos [...]

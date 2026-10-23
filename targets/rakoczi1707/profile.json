@@ -156,6 +156,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): tr/ image transcriptions of pp. 277-278 and the readings R902_reading.md / R902_p278_reading.md",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "technique": ["statistical test", "manual reconstruction"],
+      "what": "Verification 5 (plain bar, 23 Oct 2026): '## Reading' and '## Corrections' headings added to R902_reading.md (body plain 0.771, explicit 0.896). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -210,7 +217,16 @@
           "R902_reading.md",
           "R902_p278_reading.md"
         ],
-        "summary": "An intelligence and lobbying report to Rákóczi (addressed in clear to 'Pompeio Cesoni'), very probably from his agent Philippe Groffey: how the affair of the Swedes with the Emperor was settled, the Swedes waiting near Poznań for recruits from Stettin, and the damage done at the Swedish court by Pál Ráday's letters to Rehnskiöld. Deciphered with the preserved Bonac-Groffey key R639; unread groups in [ ]."
+        "summary": "An intelligence and lobbying report to Rákóczi (addressed in clear to 'Pompeio Cesoni'), very probably from his agent Philippe Groffey: how the affair of the Swedes with the Emperor was settled, the Swedes waiting near Poznań for recruits from Stettin, and the damage done at the Swedish court by Pál Ráday's letters to Rehnskiöld. Deciphered with the preserved Bonac-Groffey key R639; unread groups in [ ].",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): French of 1707: plain bar. The sweep scored R902_reading.md whole (header and correction list with it). '## Reading' and '## Corrections' headings added: body plain 0.771 (37/48), explicit holes 0.896, hole rate 0.051; failures are unread groups and names (Slupce, Gorlitz, Lubben, Posnanie, Stettin, Rehnskiöld). The file's header says spelling is normalised; not redone here. Keeps read."
+        },
+        "reading": "R902_reading.md",
+        "language": "fr",
+        "state": "read"
       }
     ]
   }

@@ -93,6 +93,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): only George Lasry's report excerpt (lasry_entry.md) is in the repository; his full transcription and decryption are not, so they are recorded as missing (needs contributor: George Lasry). A historical decipherment is on f. 60r, with a copy on f. 119r (image only).",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "technique": ["statistical test", "manual reconstruction"],
+      "what": "Verification 5 (plain bar, 23 Oct 2026): the text is Portuguese of 1667 (explicit-hole bar); Lasry's excerpt written out as lasry_excerpt_reading.md (explicit 1.0). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -131,7 +138,15 @@
         "doc": "portugal1667",
         "label": "George Lasry's reading (report status: Transcribed; Deciphered); only the excerpt from his report is in the repository",
         "decryption": "lasry_entry.md",
-        "summary": "Secret negotiations with the Samorim over pepper, with instructions to avoid giving offence to the Dutch."
+        "summary": "Secret negotiations with the Samorim over pepper, with instructions to avoid giving offence to the Dutch.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored lasry_entry.md, the report page with English contents, key and translation. George Lasry's excerpt written out alone as lasry_excerpt_reading.md (his text verbatim, folio labels in the header): explicit holes 1.0 (2/2), plain 0.0 (2 sentences; the Portuguese word list does not know 1667 spelling: pareceo, aquelle, nam); Portuguese of 1667, not French: the explicit-hole share is the bar. The reading is Lasry's (his full decryption is not in the repository); the excerpt reads as sentences. Keeps read."
+        },
+        "reading": "lasry_excerpt_reading.md",
+        "language": "pt"
       }
     ]
   }

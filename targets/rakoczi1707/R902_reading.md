@@ -4,6 +4,8 @@ Sources: `tr/R902_p277.txt` (p. 277, 31 lines), `tr/R902_p278_l01-09.txt`, `tr/R
 Decoded and counted by `measure_tr.py --text` (R639 table + 212 Fa, 93 st, 89 Et, underline rule).
 Square brackets mark groups not read; a question mark marks a word supplied by context; spelling is normalised.
 
+## Reading
+
 **p. 277**
 
 > A Slupce, le 15 Octobre. Monseigneur, Vostre Altesse aura veu par mes deux dernieres, de Gorlitz en Saxe et
@@ -40,6 +42,8 @@ Square brackets mark groups not read; a question mark marks a word supplied by c
 
 > l'ont fait naistre. On se borne presentement à se plaindre de la conduite de Vostre Altesse à l'egard des
 > affaires de la Pologne ... je suis avec un tres profond respect ...
+
+## Corrections
 
 Context-forced corrections (grade C, listed in `measure_tr.py` CORR): dernier**es** and recru**es** 118 for
 128; mani**e**re and opi**ni**on 298 for 248; deno**ü**ée 104 for 19; **des** articles 181 for 151; vous

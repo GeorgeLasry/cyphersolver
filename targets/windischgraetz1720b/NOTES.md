@@ -55,3 +55,6 @@ Not on DECODE: Nos. 4 and 5 (book pp. 409–414) and No. 7 (p. 417 on). R5023's 
 - `dec_R5018_letters.md`: the three letters' cipher passages, sign by sign, with their readings.
 
 Open: the clear text of Nos. 2, 3 and 6 is only summarised around the cipher passages.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letters are German (not English): explicit-hole bar. The passages of Nos. 2, 3 and 6 in their quoted clear context: explicit 1.0 each. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

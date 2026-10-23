@@ -2,6 +2,8 @@
 
 # R974, Ronquillo to Fuenmayor, The Hague, 21 Sept 1676
 
+## Reading
+
 ⟨No se confirma la toma de Wabur ... dificulto que ésta tome.⟩ Igual fuera que Stralsund cayera, porque acabaríamos
 con suecos en Alemania, y pleitearíamos sobre cosa hecha, como el señor Emperador lo hará desde Philisbourg. Y viendo
 lo adelantado del tiempo y poca disposición para que las tropas de Münster y Zell obren en la Mosela, fuera harto mejor

@@ -70,3 +70,6 @@ covered here.
 
 Open: the clear text of Nos. 2, 3 and 6 is only summarised around the cipher passages. The 41 low-confidence
 nomenclator cells do not touch any passage except 446 (N) and 638 (X), which stay uncertain.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is German (not French): explicit-hole bar. The 26 cipher passages, each with the clear words before it: plain 0.923, explicit 0.962. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

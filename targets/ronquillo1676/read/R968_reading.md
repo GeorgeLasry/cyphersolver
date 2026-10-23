@@ -2,6 +2,8 @@
 
 # R968, Salinas to Fuenmayor, London, 6 Oct 1676
 
+## Reading
+
 ⟨... en medio de tantas desazones como nos atrae la constitución de los tiempos, y sobre todo la de nuestras cosas.⟩
 Ya V.S. sabrá la resolución que se tomó en La Haya para señalar día fijo para el congreso, y no dudará cuánto se habrá
 [...] desde aquí, por lo que desean adelantar la paz antes que llegue la hora de juntarse el Parlamento, donde nuestro

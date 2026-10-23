@@ -21,6 +21,8 @@ Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
 ---
 
+## Reading
+
 … e m[…] non l'habbia, [?venerdì] spedirò di nuovo, [?quella] volta con ogni diligenza.
 
 Quel che con altre mie ho scritto della fretta che si dava al Wolestain di passare in Italia, l'ho sentito dalla bocca

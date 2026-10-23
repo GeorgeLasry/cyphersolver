@@ -439,6 +439,13 @@
    "what": "Verification 3 (v3_below_b): flagged at 0.0 on CTTS's raw decryption/all.txt. Scored the reading in lasry2022/READING.md instead: French sections 0.721 explicit / 0.536 plain (v-for-u spelling); cipher runs alone 0.84 / 0.712. Kept read; reading field set.",
    "result": "worked",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["statistical test", "manual reconstruction"],
+   "what": "Verification 5 (plain bar, 23 Oct 2026): 18 French sections rescored: plain 0.519, explicit 0.715; plain failures are the writer's phonetic spelling, names and name-code holes. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -571,7 +578,7 @@
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "v3 check 23 Oct 2026: the sweep scored lasry2022/ctts/decryption/all.txt, CTTS's raw output (spaced letters, [plaintext] placeholders; 0.0). The reading is lasry2022/READING.md: its 18 '### French' sections (clear and cipher together, image markers cut) score 0.721 on explicit holes, 0.536 plain (the manuscript's v-for-u spelling: tovchant, avtre), hole rate 0.086; the cipher runs alone (401 bold segments) 0.84 explicit, 0.712 plain, hole rate 0.129. Sentences hold. Rests on Lasry's CTTS key (ciphertext-only, 2022) completed from context in 2026; the 212 tentative name-code readings ([France?] ...) count as holes; no contemporary decipherment."
+     "note": "v3 check 23 Oct 2026: the sweep scored lasry2022/ctts/decryption/all.txt, CTTS's raw output (spaced letters, [plaintext] placeholders; 0.0). The reading is lasry2022/READING.md: its 18 '### French' sections (clear and cipher together, image markers cut) score 0.721 on explicit holes, 0.536 plain (the manuscript's v-for-u spelling: tovchant, avtre), hole rate 0.086; the cipher runs alone (401 bold segments) 0.84 explicit, 0.712 plain, hole rate 0.129. Sentences hold. Rests on Lasry's CTTS key (ciphertext-only, 2022) completed from context in 2026; the 212 tentative name-code readings ([France?] ...) count as holes; no contemporary decipherment. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): French of 1631-35, where the plain share is a bar too; but this writer spells by ear (secretere, trete, afaire, eloignemant, munitionere, gouuernet) and the name codes read tentatively count as holes. Rescored: the 18 '### French' sections plain 0.519 (277/534), explicit holes 0.715, hole rate 0.088 (as at v3). The plain failures are those spellings, names (Garbarin, Sauli, Fiasque, Monaco, Valence) and the name-code holes (no key material). Sentences hold. Keeps read."
     },
     "state": "read",
     "reading": "lasry2022/READING.md"

@@ -90,3 +90,6 @@ welcomed.
 - What we checked: f143r = "a Constantinople ce 29 juin 1737", to M. Otter, clear opening; cipher sample from his f145v crop "287.227.288.320.419.138" -> 287 jay, 227 fait, ..., 138 de per his key table, consistent with "J ay fait icy le plu[s] de"; middle groups (288,320,419) on key pages not checked
 - Verdict: **confirmed** (method key recovered from ciphertext-only, extent complete). The check is a sample, not a re-solution.
 - Notes: Large 2-part-ish nomenclator (323 codes); 27 codes structurally inferred. Otter = Jean Otter, orientalist sent to Persia.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Lasry's excerpts written out alone as lasry_excerpt_reading.md (the report page had been scored): plain 0.6, explicit 1.0; failures are 1737 spellings (raport, refflection, allors), Kerim Bey and 'pu'. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

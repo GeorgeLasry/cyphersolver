@@ -2,7 +2,7 @@
 
 Transcription, key and reading by Satoru (https://satoru.net/crypt/vizani/, 1 Oct 2026); checked here.
 
-## Satoru's reading, with the clear text around the cipher (copied verbatim from NOTES.md, 22 Oct 2026)
+## Reading: Satoru's, with the clear text around the cipher (copied verbatim from NOTES.md, 22 Oct 2026)
 
 "Il signor [231] m'ha mandato a domandare se li quattro mila scuti [?] a [31] di monsignor Beria d'ordine di V.E. furono promessi a d(ett)o Sig.r, il quale ... e
 vicino all'ottenere il patiarchato per se. ... [64?] Monsignor Beria spera che tra due mesi sia per esser mutato; il [36] e dattone? un suo partiale, e per su(a) [198]

@@ -36,3 +36,6 @@ would give the full nomenclator, but the target (the sheet) is read.
 
 **Open lead.** Stosch's own letters in SP 98 (Tuscany) / SP 85 are in this cipher; the keys A and B may survive in
 SP 106. Not part of this target.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: transcription.txt is a clear instruction sheet; its prose without the digit tables: plain 0.706, explicit 0.882 (failures: the French example sentence, the digit run). Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

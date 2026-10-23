@@ -131,6 +131,8 @@ would be allowed to raise in that country three thousand foot in two or three re
 **521 of 529 (98.5%) read as sense**; 27 of them are graded M (a glyph read by sense or a re-segmented token). 18 lost letters restored by sense, not counted.
 Contributor's own count: 496 of 522 at S, 26 at M.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Spanish of 1648 in period spelling (saver, saueis, uenga, tardanca, cuydado, zelo), so the explicit-hole share is the bar. reading.txt joined into running text: plain 0.429, explicit 0.821; cl/reading.txt (NoAutopilot's reading before the corrections): 0.471 / 0.941. The plain failures are period spellings, names and the trimmed-edge holes of f. 22v. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 
 - v04 pos. 9-13 and 17-19, "no la dire?t non y si i u?": code 15 occurs twice and has no value, "t non" does not read, and an extra i stands before "una" - blocker: open-codes; the word-frequency search over one digit re-segmentation, one substituted or deleted token and 15 = any letter finds "no la direct- ... y si una sera mas conveniente" at best (15 = c, one 32 read as 31, the extra i dropped), which moves two glyphs and is not accepted

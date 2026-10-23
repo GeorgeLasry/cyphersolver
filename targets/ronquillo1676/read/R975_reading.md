@@ -2,6 +2,8 @@
 
 # R975, Ronquillo to Fuenmayor, Nijmegen, 28 Dec 1676
 
+## Reading
+
 ⟨... y ya he visitado yo a los segundos y buscado el primero.⟩ Fieramente aprietan los holandeses para la paz, y nada
 encubren que conduzca a este fin, y no se dan menos a entender contra nuestra desidia y desprevención. Es menester
 confesar que son buenos [?suecos], en que no menos concurren los ingleses. Las disculpas que da el conde Kinsky de una

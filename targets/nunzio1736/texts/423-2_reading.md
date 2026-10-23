@@ -9,6 +9,8 @@ Marks: [x] = word supplied, carried by no figure; [?x] = partly carried (a proba
 figure); [1960] = nomenclator group without a value; [..] = figures without a value.
 The cipher ends mid-sentence (the letter goes on in clear or on a page not ciphered).
 
+## Reading
+
 Si sono ricevute in [?questa] settimana due lettere scritte da V.S. in data dei [1960] e [1985] del passato.
 Le notizie in quelle comprese hanno sommamente aumentata l'amarezza dell'animo mio, massime nello scorgere che
 abbia tanta parte nell'inganno in cui sono le Maestà [1335] e chi pel carattere e la professione più degli altri

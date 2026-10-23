@@ -7,6 +7,8 @@ Word division, u/v, accents and apostrophes normalised; single consonants of the
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1668] = nomenclator group without a value;
 [..] = figures without a value.
 
+## Reading
+
 Non può esser più dubbiosa e funesta la situazione delle nostre pendenze con le Corti di Spagna e di Napoli, e non pare
 che vi sia luogo da sperare verun bene, sintanto che averanno influsso negli affari Ministri del carattere di codesto
 Mons. Governatore del Consiglio, e che staranno assenti i nostri Ministri, i quali possono metere le cose nel suo vero

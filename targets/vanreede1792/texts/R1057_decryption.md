@@ -8,10 +8,14 @@ corrected in one place: 4204 is 4202 (*tro*, which the gloss confirms).
 4493 315 908 2019 2222 1945 131 3194 4694 4102 1067 231 604 186 4115 3439 2659 2847 4131
 2364 148 2900 64
 
+## Reading
+
 > Monsieur de Larrey est averti qu'il y a du ci-tro-n sur les quatre demi-pages blanches
 > de l'in-clu-se. Il voudra bien en prévenir Monseigneur le Prince d'Orange et avoir la bonté
 > de lui remettre ma lettre, que je n'adresse point pour ne pas se[r?]… Les chiffres suivants
 > sont des non-valeurs.
+
+## English
 
 "M. de Larrey is warned that there is lemon juice [invisible ink] on the four blank
 half-pages of the enclosure. He will kindly tell His Highness the Prince of Orange and be so

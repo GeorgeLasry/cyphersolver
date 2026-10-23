@@ -42,3 +42,6 @@ is an attribution, not tested here.
 
 DECODE status "Non-decrypted"; the record's note already pointed to R2235 as the likely key but gave no reading.
 No printed decipherment found. Key from the archive; ciphertext read with it on the first attempt.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: reading.txt puts the deciphered parts in [brackets] and labels each line with its alphabet. Written out as reading.md with the deciphered parts in italics, wording unchanged: plain 0.818, explicit 0.879. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

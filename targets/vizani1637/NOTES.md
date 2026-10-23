@@ -32,6 +32,8 @@ The cipher: homophonic symbol cipher with word dividers (|), signs for tt and ss
   seeds gave the identical reading. The same key reads the cipher line of f. 294 (claimed; not checked here).
 - Small points for him: the page says 53 words and lists 54; the viewer's last line range stops before "incertissimo".
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is Italian of 1637 (not Spanish). Satoru's reading: plain 0.333, explicit 0.667 on six sentences; the holes are the five name codes (no key material), one unread sign and 'dattone?'. Each sentence builds around the codes: only scattered codes open. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 
 - name codes 31, 36, 64?, 198, 227, 231 - blocker: no-key-material; Césy's minutes for 1637-38 (BnF fr. 16154-16155) are microfilm only, no code list known

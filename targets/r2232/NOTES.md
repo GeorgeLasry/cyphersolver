@@ -46,3 +46,6 @@ not identified further; the 1795 arrest and 39-month imprisonment would date his
 DECODE status "Non-decrypted"; the key record R2233 is filed next to it with a correct description of the system,
 but no reading was given on either record. No printed decipherment found. Key from the archive; read on the first
 attempt.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: reading.txt puts the deciphered parts in [brackets], which the scorers count as holes. Written out as reading.md with them in italics, wording unchanged: plain 0.833, explicit 0.896. reading.txt's spelling is lightly modernised (its header says so); not redone here. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

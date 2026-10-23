@@ -160,3 +160,6 @@ Lasry asked for fewer gaps in the quoted text (翼□, the tail). Findings:
 Files: `decode.py` (emended string ends `ropezano`, note 42), `decode_out.txt` regenerated (42 characters; the old
 file's notes were one row off and are now on the right rows), `morse_tail.py` and `morse_tail_out.txt` added,
 `docs/sunyatsen.html` and `docs/reveal/sunyatsen.json` updated.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the text is Chinese; the sweep had scored the English gloss. The word lists cannot score Chinese; read by the reader: five sentences, one unread character, the last word garbled. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

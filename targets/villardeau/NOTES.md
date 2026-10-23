@@ -65,3 +65,6 @@ prince who aspires to a crown is capable of having successors.
 - What we checked: p124 (canvas 73): clear "Veue degayer ma lettre mais parceque je scais" then interlinear over 3 code rows "quil est important quun ministre sache si un prince qui aspire a une couronne est en estat davoir des successeurs" = his excerpt; signed De Villardeau on p125
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Mentions Campredon ill at St Petersburg, so 1725-26 (Holstein wedding 1725). Interlinear present on the cipher pages; 99.1% identified.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Lasry's excerpt written out alone as lasry_excerpt_reading.md (the report page had been scored): plain 1.0. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

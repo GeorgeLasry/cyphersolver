@@ -375,6 +375,8 @@ sheets of the same nunciature for 1628), was broken by Biermann and Bosbach in 2
 update at the top. Open here: the ~1,750 three-digit groups of 6960 missing from that key. Kiewning's **Band 1, Nuntiatur des Pallotto 1628**
 (Berlin 1895) covers exactly those months and is the first place to look. Not checked here.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: '## Reading' headings added after the header rule of texts/R294, R295, R299, R303 and R308_reading.md (the sweep had scored the English headers with the bodies): bodies plain 0.806-1.0, explicit 0.833-1.0. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 
 - R291 (11 Aug, Nr. 157), read in part - blocker: open-codes; groups 750, 405, 796, 573, 557, 690, 697, 762, 279, 440, 966, 239, 469 and some garbled letter stretches; Kiewning has a regest only; the sheet breaks off at p. 4

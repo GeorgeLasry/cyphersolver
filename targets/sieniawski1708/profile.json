@@ -121,6 +121,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Kaczka 2012 by URL and the R7473 ten-line check; the other letters not transcribed",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "technique": ["statistical test", "manual reconstruction"],
+      "what": "Verification 5 (plain bar, 23 Oct 2026): the letters are Polish (explicit-hole bar); the reading is Kaczka's edition, checked over ten lines (explicit 0.8). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -168,7 +175,15 @@
           "sien/R7473_check.txt"
         ],
         "summary": "Letters of Constantin Brâncoveanu, prince of Wallachia, and Constantin Cantacuzino to Hetman Adam Mikołaj Sieniawski, 1709-1714, in Polish in the Wallachian chancellery key, with contemporary interlinear decipherments.",
-        "note": "Decryption: M. W. Kaczka, Danubius XXX (2012), pp. 101-140, a modern edition, linked, not copied. The project transcribed and decoded only the first ten lines of R7473 (sien/R7473_check.txt); the other letters are not transcribed."
+        "note": "Decryption: M. W. Kaczka, Danubius XXX (2012), pp. 101-140, a modern edition, linked, not copied. The project transcribed and decoded only the first ten lines of R7473 (sien/R7473_check.txt); the other letters are not transcribed.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Polish of 1709-14, not French: the explicit-hole share is the bar. The reading is Kaczka's printed edition (Danubius 2012, linked, not copied); the project's check of R7473 p. 17 (sien/R7473_check.txt) matches it word for word over ten lines, the key-A decode lines explicit 0.8 (4/5; the hole a part-word at the line break). Keeps read (read from existing decipherment)."
+        },
+        "language": "pl",
+        "state": "read"
       }
     ]
   }

@@ -78,3 +78,6 @@ the horses needed for the army could consequently be found, or in one of the wes
 ## Notes and corrections
 
 Folder renamed from the report's slug vergier1690: every letter is dated 1696. The report's "6 April 1696?" is probably 16 April (f252r, "a Dunkerque ce 16e avril 1696").
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Lasry's excerpt written out alone as lasry_excerpt_reading.md (the report page had been scored): plain 1.0. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

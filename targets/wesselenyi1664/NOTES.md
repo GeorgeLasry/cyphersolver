@@ -43,6 +43,8 @@ Transcription: DECODE DOC_R674_D1892 (EK, 2020), checked against the image; one 
 244 cipher tokens (measured, `_check_profile.py --measure`): 241 letters read as sense, 3 code tokens unread
 (60 ×1, 64 ×2). 241/244 = 0.988. Grades H 239, M 2 (26=e once in "Haster"; the slip 9 in "Spork").
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the draft is Latin (not French): explicit-hole bar. reading.md blockquote: explicit 0.778, plain 0.222 (small Latin word list); holes are codes 60 and 64 and doubtful clear words. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 - code 60 ("Dominus Generalis [60]", once) - blocker: no-key-material; not in R672 (60 = Ka there) or in any of the Fasc. 327 Konv. D keys (R676–R690) or Teleki keys R665–R673; a person, probably the imperial commander in the sector (de Souches? not provable)
 - code 64 (twice: "nos ad [64] in castris", "videns [64]") - blocker: no-key-material; a place or its townsmen that might take an imperial garrison; no key with these numbers found

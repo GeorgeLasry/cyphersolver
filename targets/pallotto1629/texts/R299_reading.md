@@ -18,6 +18,8 @@ Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
 ---
 
+## Reading
+
 […An]zi, pochi giorni prima, caminando avanti all'imperatore, in conspetto di tutta la corte e di [?molto] popolo
 concorso alla solennità del mettersi da me la prima pietra alla chiesa de' Camaldoli, andai sempre a man dritta di detto
 duca; e se bene creda che il duca medesimo non farebbe difficoltà in darmi la precedenza, nondimeno, con haver veduto

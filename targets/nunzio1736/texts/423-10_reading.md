@@ -9,6 +9,8 @@ kept. 37, 47, 27 and 97 between sentences are stop signs, printed as full stops.
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1957] = nomenclator group without a value;
 [..] = figures without a value.
 
+## Reading
+
 L'amarezza ben grave provata da N.S. nell'udire ne contenuto del decreto uscito, si è di più accresciuta nel sentire dai
 numeri di V.S. dei 12 del passato che uno dei due [?motivi] che hanno dato impulso alla pubblicazione del medesim[o] sia
 nato dalle rappresentanze che in Dataria si provedessero [?benefici]i di Spagna dopo la pur troppo nota interruzione di

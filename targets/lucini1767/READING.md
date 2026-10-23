@@ -4,6 +4,8 @@ The clear text follows MEG's transcription on DECODE (DOC_R120_D2343), with her 
 images where the sense needed it. The cipher passage (in italics) is deciphered here with Lasry's key and the
 corrections in NOTES.md. Square brackets mark editorial additions.
 
+## Reading
+
 **p. 1** Madrid 13. Ottobre 1767. Appena partito l'Emo Pallavicini mi giunse un biglietto del Sig.re Marchese
 Grimaldi Seg.rio di Stato di Sua Maestà, che ho l'onore di compiegare all'Em.za V.ra, nel quale biglietto mi chiede a
 nome della medesima la rinnovazione della Facoltà, o sia licenza accordatale l'anno scorso dal sudd.to Sig.re

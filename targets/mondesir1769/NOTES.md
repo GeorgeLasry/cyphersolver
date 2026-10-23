@@ -82,3 +82,6 @@ will see the difference between [one?] man and another.
 - What we checked: f50r "Duplicata. De mondesir a l isle de france le 20 9bre 1769", "ma chere amie", clear French with pigpen-style cipher runs (e.g. after "pour ne pas"); sign shapes match his table (angle/box signs, dotted variants); a symbol-level decode of a run was not completed at this resolution
 - Verdict: **partly confirmed** (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.
 - Notes: 3950 of 4923 elements deciphered, 949 counted as separators, 24 unidentified - complete by sense likely but his own figures are ambiguous. Clear text names Herman and M. de Bougainville; writer probably identifiable from the forge enterprise.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Lasry's excerpts written out alone as lasry_excerpt_reading.md (the report page had been scored): plain 0.667, explicit 0.75; the failures are his [?] marks and run-together forms. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

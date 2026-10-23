@@ -57,6 +57,8 @@ R7473 p. 17, ten lines, decoded with key A = the interlinear gloss = Kaczka's te
 encipherer slips, 69 for 67 in "krakowski", "prszez"). The other letters were not transcribed: their text is
 Kaczka's, and this entry adds only the identification of the DECODE records with his edition.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letters are Polish (not French): explicit-hole bar. The reading is Kaczka's edition (2012, linked, not copied), checked word for word over ten lines of R7473 (sien/R7473_check.txt, key-A decode explicit 0.8). Entry language set to pl. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 - none of substance: the letters are in print; this project did not transcribe them beyond the R7473 check
 

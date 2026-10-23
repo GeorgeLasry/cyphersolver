@@ -115,6 +115,8 @@ for u being unknown to the word list), hole rate 0.086; the cipher runs alone (t
 explicit holes and 0.712 plain. The 212 tentative name-code readings count as holes. Kept read, grade B; the entry's
 `reading` now names `lasry2022/READING.md`.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: rescored the 18 French sections of lasry2022/READING.md: plain 0.519, explicit 0.715, hole rate 0.088. The writer spells by ear (secretere, trete, afaire, eloignemant) and the tentatively read name codes count as holes; the rest builds sentences. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 - code 46 (fr. 4135 f. 219, once) - blocker: open-codes; "d'une [46] de l'armée navale", context does not fix it
 - 212 tentative name-sign readings - blocker: open-codes; read from context only; o- and o-- may be confused in the ff. 215v–216 hand

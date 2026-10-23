@@ -55,3 +55,5 @@ The v3 sweep flagged no. 10 at 0.567, scoring `transcripts/no10.txt`, the sign t
 The cipher run is three words, *presura di Montepulciano*, every letter given by the contemporary gloss; written out in
 its clear sentence as `transcripts/no10_reading.md`, it scores **1.0 on explicit holes**. Kept read.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the slip belongs to the Montepulciano campaigns of 1495-1511: older Italian, explicit-hole bar 1.0 ('presura', 'Montepulciano' the only plain failures). Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

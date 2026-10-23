@@ -2,6 +2,8 @@
 
 # R977, Ronquillo to Fuenmayor, Nijmegen, 17 Apr 1677
 
+## Reading
+
 ⟨... y tanto apetece.⟩ Muy indiscreto ha sido el proceder del conde de Windischgrätz, habiendo revelado al ministro
 de Brandeburgo el secreto que V.S. le había conferido, que ha sido el origen de nuestro [?mensaje]. Pero para que V.S.
 conozca que esto no ha disminuido la confianza con que le trato, por prueba ve los celos que motivan a la corte de

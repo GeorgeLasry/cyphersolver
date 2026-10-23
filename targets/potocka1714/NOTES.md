@@ -77,6 +77,8 @@ The target catalogue reported no prior reading on 22 September 2026 and N/A stat
 
 The archive catalogue unit 29/637/0/1.3/9477 (former teka 321/8) lists further letters of 1713–1718 but no scans: https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/41995540/obiekty/1601530 . It is related correspondence, not a duplicate of a target established here. The Gdańsk manuscript catalogue and Šapoka's article gave further correspondence references, no key or plaintext. No verified portrait of either principal correspondent was found on Commons; namesakes were excluded.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the cipher is single words and short phrases inside clear French; each insertion put into its clear anchor (research/reading_audit/v5b_potocka.py) scores plain 0.5-1.0 and explicit 0.9-1.0 per letter section (R7529 0.5 on four phrases: the writer's spellings cete, na, loubrire). The insertions fit their anchors. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 - Potocka codes 87, 94, 100, 270, 23 occurrences — blocker: open-codes; context suggests roles but does not identify exact entries; no matching nomenclator.
 - R7534 exceptional figure 73 in zaia[73]d — blocker: too-short; one occurrence, no independent key, proposed zajazd does not justify assigning a value.

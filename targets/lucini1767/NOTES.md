@@ -74,3 +74,6 @@ redone with 63 = se.
 
 Contamination: Lasry's key was public on DECODE (logged-in attachment) and was used directly. The decryption of the
 R120 passage, the code identifications and the corrections are new here.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the sweep had scored decrypt_output.txt, the raw group decode. READING.md is the reading; a '## Reading' heading now marks its body (clear text from MEG's transcription with the deciphered closing passage): plain 0.771, explicit 0.914. 8107 stays open; the sentence runs on to a leaf not imaged. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

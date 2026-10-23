@@ -143,7 +143,8 @@
    "what": "Entry split under the one-key rule (Lasry, 14 Oct 2026): Nos. 2, 3, 6 in the private key R5018 moved to windischgraetz1720b with key5018.md and dec_R5018_letters.md; this entry keeps No. 1 in the Chancellery key R5017. Fraction recomputed on No. 1: 221/223.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): No. 1 linked to its number runs (ct_1720-02-03.txt), the clear-text transcription and the decryption dec_R5017_letter.md; key_file the R5017 syllabary and nomenclator transcriptions", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): No. 1 linked to its number runs (ct_1720-02-03.txt), the clear-text transcription and the decryption dec_R5017_letter.md; key_file the R5017 syllabary and nomenclator transcriptions", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): German (explicit-hole bar): the 26 passages in their clear context plain 0.923, explicit 0.962. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -182,7 +183,7 @@
    }
   ],
   "texts": [
-   {"doc": "No. 1", "label": "No. 1, Vienna, 3 Feb 1720 (R5019 autograph, R5020 copy)", "transcription": ["ct_1720-02-03.txt", "clear_1720-02-03.txt"], "decryption": "dec_R5017_letter.md", "summary": "Charles VI to his envoy at The Hague, Count Windischgrätz: report everything to Pentenriedter, confide in Cadogan; with Alberoni expelled from Spain, France may seek a separate peace with 'the Duc d'Anjou' (Philip V) through Morville; bring the King of Portugal into the Alliance; giving Sardinia to the Duke of Lorraine is 'sehr ideal'; the Emperor insists on the equivalent for Montferrat."}
+   {"doc": "No. 1", "label": "No. 1, Vienna, 3 Feb 1720 (R5019 autograph, R5020 copy)", "transcription": ["ct_1720-02-03.txt", "clear_1720-02-03.txt"], "decryption": "dec_R5017_letter.md", "summary": "Charles VI to his envoy at The Hague, Count Windischgrätz: report everything to Pentenriedter, confide in Cadogan; with Alberoni expelled from Spain, France may seek a separate peace with 'the Duc d'Anjou' (Philip V) through Morville; bring the King of Portugal into the Alliance; giving Sardinia to the Duke of Lorraine is 'sehr ideal'; the Emperor insists on the equivalent for Montferrat.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): German, not French: explicit-hole bar. The 26 cipher passages of dec_R5017_letter.md, each with the clear words before it (research/reading_audit/v5b_wtable.py): plain 0.923 (24/26), explicit 0.962. Keeps read."}, "reading": "dec_R5017_letter.md", "language": "de", "state": "read"}
   ],
   "key_file": ["key5017_syllabary.tsv", "key5017_nomenclator.tsv"]
  }

@@ -44,3 +44,6 @@ enclosure is not on the DECODE record.
 
 Open: "pour ne pas 186 4115" (pais-ser) — probably *passer*/*paraître*, wording of
 one group uncertain.
+
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: '## Reading' and '## English' headings added to texts/R1057_decryption.md around the deciphered note: body plain 1.0. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+

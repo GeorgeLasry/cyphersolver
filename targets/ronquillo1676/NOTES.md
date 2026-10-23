@@ -113,6 +113,8 @@ DECODE's margin transcription where there is one). 22 Oct 2026: `keyx.py` (key +
 `read2/`), `spaced.py` (decode cut into words, page by page -> `read/R*.dec.txt`), `read/R*_reading.md`, `_en.md`,
 `_reread_log.md`, `_corrections.tsv`. Profile edits: `research/reading_audit/reread_ronq.py`.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: '## Reading' headings added after the titles of read/R966-R984_reading.md (14 files; the sweep had scored the notes with the readings): bodies plain 0.69-0.91 and explicit 0.90-1.0, except R982 (unmargined, read on the image) plain 0.552, explicit 0.828: its plain failures are gaps of the Spanish word list and the known soft-scan / no-key holes, about one per failing sentence; it keeps read on the reader's judgement. The readings' headers say spelling was modernised; not redone in this pass. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 
 - R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key

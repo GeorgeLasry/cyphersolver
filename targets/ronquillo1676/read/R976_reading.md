@@ -2,6 +2,8 @@
 
 # R976, Ronquillo to Fuenmayor, Nijmegen, 10 Apr 1677
 
+## Reading
+
 ⟨... aunque no el gusto, porque cada día⟩ van empeorando estas negociaciones, aun más arrebatadamente de lo que se alcanzan
 nuestras desgracias en Flandes, de que no quiero repetir a V.S. congojas. Y yo reconozco que estos holandeses quieren
 ya llegar a las [?treguas], pues ayer enviaron a los mediadores la nueva plenipotencia, no obstante que [...] todos

@@ -9,6 +9,8 @@ copy or edition. Word division, u/v, accents and apostrophes normalised; single 
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1449] = nomenclator group without a value;
 [..] = figures without a value.
 
+## Reading
+
 … li continui pregiudizi che s'inferiscono da codesta giunta del padronato ai diritti della S. Sede e a quella
 libertà, che la medesima ha avuto da tempi immemorabile di conferire li [?benefici] ecclesiastici, e li Vescovi
 ancora essi ne' loro rispettivi [1942]i, e le tante altre novità che si vanno meditando di far contro la Dateria e

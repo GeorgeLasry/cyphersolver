@@ -457,6 +457,13 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["statistical test", "manual reconstruction"],
+   "what": "Verification 5 (plain bar, 23 Oct 2026): each cipher insertion put into its clear anchor (v5b_potocka.py): sections plain 0.5-1.0, explicit 0.9-1.0. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -538,7 +545,7 @@
    {
     "doc": "R7525",
     "label": "R7525, Barbara Potocka to Jakub Dunin (cipher passages; section R7525 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7525: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7525: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7525 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 0.857 (6/7), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7525-cipher.txt",
     "decryption": "reading.md",
@@ -559,7 +566,7 @@
    {
     "doc": "R7527",
     "label": "R7527, Barbara Potocka to Jakub Dunin (cipher passages; section R7527 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7527: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. Three insertions are doubtful in spelling (exeusant, tegn, tombap). The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7527: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. Three insertions are doubtful in spelling (exeusant, tegn, tombap). The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7527 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 0.885 (23/26), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7527-cipher.txt",
     "decryption": "reading.md",
@@ -568,7 +575,7 @@
    {
     "doc": "R7528",
     "label": "R7528, Barbara Potocka to Jakub Dunin (cipher passages; section R7528 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7528: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7528: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7528 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 1.0 (5/5), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7528-cipher.txt",
     "decryption": "reading.md",
@@ -577,7 +584,7 @@
    {
     "doc": "R7529",
     "label": "R7529, Barbara Potocka to Jakub Dunin (cipher passages; section R7529 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7529: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7529: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7529 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 0.5 (2/4; the failures are the writer's spellings cete, na, loubrire and a standalone code), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7529-cipher.txt",
     "decryption": "reading.md",
@@ -586,7 +593,7 @@
    {
     "doc": "R7530",
     "label": "R7530, Barbara Potocka to Jakub Dunin (cipher passages; section R7530 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7530: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7530: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7530 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 1.0 (5/5), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7530-cipher.txt",
     "decryption": "reading.md",
@@ -595,7 +602,7 @@
    {
     "doc": "R7534",
     "label": "R7534, Barbara Potocka to Jakub Dunin (cipher passages; section R7534 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7534: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. One group (zaia[73]d, probably zajazd) has an unvalued code. The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7534: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. One group (zaia[73]d, probably zajazd) has an unvalued code. The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7534 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 1.0 (2/2), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7534-cipher.txt",
     "decryption": "reading.md",
@@ -604,7 +611,7 @@
    {
     "doc": "R7535",
     "label": "R7535, Barbara Potocka to Jakub Dunin (cipher passages; section R7535 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7535: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7535: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7535 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 0.917 (11/12), explicit 1.0. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7535-cipher.txt",
     "decryption": "reading.md",
@@ -613,7 +620,7 @@
    {
     "doc": "R7536",
     "label": "R7536, Barbara Potocka to Jakub Dunin (cipher passages; section R7536 of reading.md)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.md R7536: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. Two insertions carry surplus letters (adressie vos leritre; Kinisberk a Kinnik, the second name unidentified). The clear text around the insertions is given only as anchors."},
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "reading.md R7536: the cipher here is single words and short phrases set inside clear French; each insertion decodes to a French or Polish word or phrase that fits its clear anchor (e.g. \"mais le [94] veut estre seul\"), so the sentence is the clear text plus the insertion. The audit's C reflects that the cipher alone forms no sentence, not holes in it. Two insertions carry surplus letters (adressie vos leritre; Kinisberk a Kinnik, the second name unidentified). The clear text around the insertions is given only as anchors. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored all of reading.md (every letter's insertions with cipher numbers and labels). Each cipher insertion of section R7536 put into its clear anchor phrase (research/reading_audit/v5b_potocka.py): plain 0.8 (8/10), explicit 0.9. The insertions fit the clear text they sit in; no sentence of cipher alone is expected. Keeps read."},
     "language": "fr",
     "transcription": "R7536-cipher.txt",
     "decryption": "reading.md",

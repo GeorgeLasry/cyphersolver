@@ -2,7 +2,7 @@
 
 Copied 22 Oct 2026 verbatim from NOTES.md. The literal decoder outputs are `plaintext_raw.txt` (code words not read in [8xxx]) and `plaintext_guess.txt` (with the code-word readings).
 
-## Plaintext (normalised; `(…)` = code word, `[8xxx]` = code group not read)
+## Reading (normalised plaintext; `(…)` = code word, `[8xxx]` = code group not read)
 
 > Con mio (foglio) del [8734][8760][8904][8739][8413] si le commetteva che in seguito degli ordini dati a Sua
 > Eccellenza il (Signor), [8227] di Lützow di abbandonare Roma, Ella si facesse del pari a richiedere i passaporti
@@ -14,6 +14,8 @@ Copied 22 Oct 2026 verbatim from NOTES.md. The literal decoder outputs are `plai
 >
 > *(clear:)* A risparmio di tempo dovrà con ogni sollecitudine rendere ostensibile il presente dispaccio
 > *(cipher:)* a Monsignor Morichini per di lui norma alle pratiche affidategli.
+
+## English
 
 **English.** "By my letter of […] you were instructed that, after the orders given to His Excellency the Signor
 […] Lützow to leave Rome, you should likewise ask for your passports in order to return to the capital, or to go

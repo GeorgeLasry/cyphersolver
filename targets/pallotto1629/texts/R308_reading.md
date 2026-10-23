@@ -19,6 +19,8 @@ Reading, 22 Oct 2026 (reread batch b01, Claude Opus 5.5). What it rests on:
 
 ---
 
+## Reading
+
 Non sono restati contenti qua con la risolutione circa il particolare del visitatore nella diocese d'[?Aquileia]; han
 però riservato di darmene risposta dopo che se ne sarà trattato in consiglio. Si è detto in questi giorni che fusse
 morto il [?patriarca]; è vero ch'è stato gravemente amalato, come V. S. Ill.ma havrà saputo senza dubbio. Non so se

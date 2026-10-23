@@ -2,6 +2,8 @@
 
 # R979, Ronquillo to Fuenmayor, Nijmegen, 9 Jan 1677
 
+## Reading
+
 ⟨... en que ejercitar mi obediencia.⟩ Veo por lo que V.S. se sirve participarme en su citada las dificultades que
 también se ofrecen en esa conferencia; que si en la constitución presente de nuestros negocios son dañosas las que en
 este congreso impiden el llegar a tratar de los puntos esenciales de la paz antes de entrar la primavera, no lo son

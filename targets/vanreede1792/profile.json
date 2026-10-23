@@ -61,7 +61,8 @@
   {"date": "2026-09-21", "kind": "sibling key", "what": "Decoded all groups with key R1024 (Grand Chiffre).", "result": "worked"},
   {"date": "2026-09-21", "kind": "verification", "what": "Checked groups against the image and interlinear gloss; corrected 4204 to 4202.", "result": "worked"},
   {"date": "2026-09-21", "kind": "reading", "what": "Read: lemon-juice invisible ink on the enclosure's blank half-pages, for Larrey to pass to the Prince; last 21 groups declared nulls.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1057 linked to ciphertext_R1057.txt; the decipherment copied verbatim from NOTES.md to texts/R1057_decryption.md", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R1057 linked to ciphertext_R1057.txt; the decipherment copied verbatim from NOTES.md to texts/R1057_decryption.md", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): '## Reading' and '## English' headings added to texts/R1057_decryption.md (body plain 1.0). Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -76,7 +77,7 @@
     {"who": "contemporary", "role": "key or decipherment used", "note": "William V's 1782 Grand Chiffre (DECODE R1024); interlinear gloss over the first eight lines as check"}
   ],
   "texts": [
-   {"doc": "DECODE R1057", "label": "R1057, Berlin, 4 Feb 1792, Van Reede to William V", "transcription": "ciphertext_R1057.txt", "decryption": "texts/R1057_decryption.md", "summary": "A cover note, not a despatch: Van Reede warns the Prince's secretary Thomas Isaac de Larrey that the real letter is written in lemon juice on the four blank half-pages of the enclosure, to be handed to the Prince of Orange; the last 21 groups are declared nulls."}
+   {"doc": "DECODE R1057", "label": "R1057, Berlin, 4 Feb 1792, Van Reede to William V", "transcription": "ciphertext_R1057.txt", "decryption": "texts/R1057_decryption.md", "summary": "A cover note, not a despatch: Van Reede warns the Prince's secretary Thomas Isaac de Larrey that the real letter is written in lemon juice on the four blank half-pages of the enclosure, to be handed to the Prince of Orange; the last 21 groups are declared nulls.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): French of 1792: plain bar. The sweep scored texts/R1057_decryption.md whole (figures and English included); '## Reading' now marks the deciphered note and '## English' the translation: body plain 1.0 (4/4), explicit 1.0, hole rate 0.017. Keeps read."}, "reading": "texts/R1057_decryption.md", "language": "fr", "state": "read"}
   ]
  }
 }

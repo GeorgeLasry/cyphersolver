@@ -330,6 +330,8 @@ Page 1's entry pointed at the unspaced `decrypt_p1.txt`, which the v4 sweep coul
 signs and the struck runs as holes. v2_score: explicit holes 0.70 (14/20), hole rate 0.104; plain 0.55 (1795
 spellings). Every sentence holds. Keeps read, grade B.
 
+**23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is of 1795 (the folder is named for DECODE R1892). texts/p1_reading.md: plain 0.55, explicit 0.70; the plain failures are 1795 spellings (pouroit, pourez, cesseroit), names (Nagel, Vundas = Dundas), letters supplied at word ends and four unread signs. Each sentence builds. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
 ## Remaining gaps
 - page 2 (Dutch postscript) decoded, not read: word-divided reading texts/p2_reading.md (23 Oct 2026), first half does not build - blocker: no-key-material; the open word signs below
 - recurring word signs on p2 still open (long-dash H 4, S 3, Y 3, 7 2, bar, slash l. 6), and crossed Y / gamma / cf whose proposed values fail at one occurrence each (23 Oct 2026) - blocker: no-key-material; no key sheet, R2242 lacks them

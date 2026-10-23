@@ -2,6 +2,8 @@
 
 # R982, Ronquillo to Fuenmayor, Nijmegen, 19 Mar 1678
 
+## Reading
+
 ⟨... con que me continúan los favores que V.S. me hace.⟩ [...] He visto con particular gusto los discursos de V.S. y
 lo que [...] caminando hacia los pasos, que son muy propios de la prudencia, celo y [?actividad] de V.S. Y pluguiera a
 Dios que nuestras desgracias no fueran tan superiores [...] nos hallásemos en estado de poder [...]; pero siendo de la
