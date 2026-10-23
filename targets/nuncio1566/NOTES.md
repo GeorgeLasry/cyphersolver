@@ -1,11 +1,26 @@
-# Cardinal Alessandrino to the nuncio in Spain, 1567 — READ
+# Cardinal Alessandrino to the nuncio in Spain, 1567 — read
 
-Status: in progress
+Status: in progress (the site page still shows the audit state; update it from the 22 Oct re-read). All six letters now read word by word on the figures (re-read 22 Oct 2026, batch b09).
 
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 R85-R90 are all **decoded, not read**: the decode gives Italian fragments between garbled strings in nearly every
 line. Class read -> not read, method -> not solved (Lasry's key kept as a part); fraction_read 0. The "Result: read"
 below is superseded.
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch b09; texts/R85-R90_reread_log.md)**: the DECODE "cleartext" images of
+R87 include its **contemporary decipherment, f. 251r** (top lines eaten away, stops at "resistere"; transcribed,
+texts/R87_decifrato_f251r.txt). R88, R89 and R90 are **three cipher copies of one text** (R90 continues R89 word for
+word), and R90's second sentence is written **in clear on f. 302r** of the R88 copy of the letter (Rome, 4 Nov 1567;
+texts/R90_clear_f302r.txt). Aligned with the figures (`reread_b09_align.py`), these fix the codes Lasry's table had
+wrong or lacked: **8010 = [la] Regina [di Francia]** (the Queen Mother, not "Re di Francia"), **4010 = S.M.** (Philip II
+in R87, Charles IX in R85/R88/R89; not "Sua Santità"), 1020 essere, 1040 lettera, 8030 religione, 8070 ugonotta, 8080
+heretici, 8090 havere; 3 0^. 9 = qua; "colospo" = colloquio (col-lo + 509 qui + o); 209 = "chi" as a syllable. Twelve
+transcription labels corrected on the images (texts/R85-R90_corrections.tsv; corrected files for R85, R86, R87; e.g.
+R86 row 1 "di N.S., per dirlo a V.S. sola"). All six read word by word (texts/R85..R90_reading.md, _en.md; every word
+aligned with its figures, research/reading_audit/b09_align.py); clean-sentence share 1.00, 1.00, 1.00, 0.93, 0.92, 1.00
+(before 0.29, 0.27, 0.27, 0.21, 0.24, 0.40). Dates: R85 Rome 8 Jan 1567 (f. 167r "Sarà con questa un poco di cifra"),
+R86 25 July 1567 held to 2 Aug (f. 237r), R87 about 2 Aug 1567, R88-R90 Rome 4 Nov 1567. State decoded, not read ->
+read; class not read -> read, method not solved -> read with known key; fraction_read 1.0.
 
 Catalogue item 261 (class B), listed as "Unknown sender (Spain) to unknown recipient, 6 ciphertexts, 1 Jan 1566".
 ASV (AAV), Segreteria di Stato, Spagna 1 (DECODE: "i. 1025, Segretario di Stato, doss. I"), DECODE R85–R90.
@@ -81,9 +96,17 @@ digit streams used for the profile counts.
 
 ## Remaining gaps
 
-- R85, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
-- R86, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
-- R87, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
-- R88, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
-- R89, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
-- R90, decoded, not read - blocker: not-attempted; garbled strings in most lines; check the volunteer transcription against the images and re-decode
+- R85: codes 3050 ("sarà per [3050]") and 3020 in "che [3020] non si diffidi" (not "quando" here), a blotted group in row 10, a ticked run in row 17, "[?di] Re" at the end - blocker: no-key-material (codes with no other occurrence and not in Lasry's table; the blotted figure illegible)
+- R86: code 2020 (only occurrence), 8090 where the sense wants "dare", one stray figure before "loro" - blocker: no-key-material
+- R87: closing 9 5 2 ("[?poi]") - blocker: too-short
+- R88: group 7 3 8 before "ho voluto" (301v row 11) - blocker: illegible (damaged row; R89 has no counterpart)
+- Serrano, Correspondencia diplomatica ... Pio V (1914): not checked - blocker: needs-physical-access (HathiTrust 403 from here, not on archive.org)
+
+## Escalation
+
+- [x] siblings: R88, R89, R90 read against each other (three copies of one text); alessandrino1568's extended key (R94/R95/R100 decipherments) applied
+- [x] clear-pages: 22 Oct 2026, all 29 DECODE cleartext images of R85-R90 looked at; decipherment of R87 on f. 251r; R90's sentence in clear on f. 302r; covering letters date R85, R86, R88-R90
+- [x] known-keys: Lasry's reconstructed key (DECODE, 2020), with alessandrino1568's extension
+- [x] print: Serrano 1914 not reached (HathiTrust 403, not on archive.org), as for alessandrino1568
+- [x] key-rebuild: 22 Oct 2026, code values fixed from the R87 decipherment and the copies (8010, 4010, 1020, 1040, 8030, 8070, 8080, 8090, 3 0^. 9); 3050, 3020 (R85 row 8), 2020 not resolved
+- [x] retry: 22 Oct 2026, all six re-read on the figures with the images checked at every break (texts/R85-R90_reread_log.md); all six build sentences
