@@ -41,7 +41,7 @@ laisse [...] en son endroict.
 
 Quand au faict des Grisons, si ces Seigneurs eussent defere au conseil de leurs vrays amys et ne se fussent laisse
 abuser aux persuasions des ministres qu'ilz ont employe, ilz n'en seroyent venus a ces termes, et d'avoir veu retirer
-hors du pays leur secretaire [?Padavin] par l'indignation de ces peuples. Le sieur Gueffier est arrive depuis deux
+hors du pays leur secretaire Padavin par l'indignation de ces peuples. Le sieur Gueffier est arrive depuis deux
 jours, qui m'a deduict l'estat desd. Ligues, lesquelles commancent a recognoistre et s'apercevoir combien leur est
 dommageable la multiplicite des alliances, sans que je me sois oppose aux poursuittes de la Republique. On faict office
 envers lesd. Grisons, de quoy la Republique eust juste subiect de plaincte. Priant Dieu, Mons. de Leon, qu'il vous ayt
@@ -57,4 +57,4 @@ Louis. Brulart.
 - f. 109v, rows 6, 9-11: no decipherment; row 6 decoded with the key (35 en, 74 me, s, 74 me, 29 te, m-p-s: "en mesme
   temps"); rows 9-11 decode only in the words given (l'intention, aulcunement, me, bien differend; the decipherer's
   glosses), the rest gives no French and carries θ (a null, as in row 5 "et" = e t θ) and φ (delete).
-- [?Padavin]: Giovanni Battista Padavino, the Venetian secretary in the Grisons, read from a cramped clear word.
+- Padavin: Giovanni Battista Padavino, the Venetian secretary in the Grisons; the cramped clear word (read "[?Padavin]" on 22 Oct) is confirmed by Puysieux's clear letter of the same day bound next (fr. 18044 f. 111r: "la retraitte du Padavin").
