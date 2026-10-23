@@ -203,3 +203,7 @@ material); class stays read in part.
 - [x] print: Benda 1963 searched for online (antikvarium.hu only); DECODE and web searched, nothing printed online
 - [x] key-rebuild: numeric key extended (220 = a, splits, joins, nulls above 322, decode2.py)
 - [x] retry: every off-key group rescored in context (retry_groups.py) and regraded; 57 remain; 23 Oct 2026 readings word-divided for nine letters (Verification 4); same day (r2g) R793/R796 re-transcribed on the DECODE images and read
+
+## 23 Oct 2026: R805 and R795 back to decoded, not read (translation wave)
+- The translation wave could not build sentences from R805 (0.50 explicit holes) or R795 (gaps in most sentences; some "·" marks taken as nulls hide letters, e.g. ke·elmes = kegyelmes). Both are set to **decoded, not read**.
+- Remaining gap: R805, R795 - re-transcribe the digits on the DECODE images aligned with the interlinear, as for R793/R796 - blocker: not-attempted.

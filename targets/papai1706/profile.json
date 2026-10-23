@@ -591,6 +591,7 @@
   "texts": [
    {
     "doc": "R805",
+    "note": "23 Oct 2026 (translation wave v7): a word-divided reading drafted from R805_read2.txt scores 0.50 on explicit holes with uncertain words in most sentences; does not read at decode level. Needs the image re-read the r2g batch gave R793/R796.",
     "label": "R805, 1 May 1706, Constantinople",
     "transcription": "DOC_R805_D3596_3596.txt",
     "decryption": [
@@ -598,10 +599,12 @@
      "DOC_R805_read.txt"
     ],
     "summary": "The envoys urge that the Porte refuse the Imperial troops free passage across Ottoman ground, and that the border pashas, the Pasha of Arad among them, not allow the Germans passage towards Szeged without orders; they have spoken to the Vezír about their affairs and about Muscovy.",
-    "language": "hu"
+    "language": "hu",
+    "state": "decoded, not read"
    },
    {
     "doc": "R795",
+    "note": "23 Oct 2026 (translation wave v7): does not read at decode level; most sentences have gaps, and some of the '·' marks taken as nulls hide letters (ke·elmes = kegyelmes). Needs the digits re-transcribed on the DECODE images as r2g did for R793/R796.",
     "label": "R795, 1 Jan 1706, Constantinople",
     "transcription": "DOC_R795_D2405_2405.txt",
     "decryption": [
@@ -610,13 +613,7 @@
     ],
     "summary": "Pápai with Ferenc Horváth reports the Prince's discretion money handed to the Vezír's Kiaya, the Tatar Khan, the French ambassador, the Pasha of Temesvár, a Croatian incursion, and letters to go via Moldavia so that the Prince's news arrives faster.",
     "language": "hu",
-    "state": "read",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Overturns the per-document C. The middle dots in R795_read2.txt are not holes: decode_nulls.py prints the groups above 322 as \"·\", and R795 has 251 such nulls (NOTES table), against a handful in the other letters. With the nulls dropped the text is the same unspaced Hungarian as the ten letters that pass (\"pénz a [Fejedelem] adot kezembe ... vélem Horváth Ferenc urammal\")."
-    }
+    "state": "decoded, not read"
    },
    {
     "doc": "R796",

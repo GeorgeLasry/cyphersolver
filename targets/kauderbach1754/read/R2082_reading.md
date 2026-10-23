@@ -1,0 +1,7 @@
+<!-- Reading of R2082: the French cipher text of read/R2082.txt written out alone (translation wave v7, 23 Oct 2026), as for R2078, without the file's heading line, the English summaries of the clear passages ([Clear: ...] lines, which stay in read/R2082.txt) and the key notes. [...] = unread code group (mostly name positions); [?] = doubtful; capital sigla in brackets ([S./.], [Q./.], [P.] ...) are the nomenclator's names, not identified. The file's heading: R2082 - Kauderbach, 15 Aug 1755 (trans/R2082). Reading with 01=oi, 12=ai, 66=pour, 23=fai applied. -->
+
+# R2082, Kauderbach (The Hague)
+
+## Reading
+
+L'ambassadeur de [Q./.] assure que [E.M./.] a ecrit au roi son maitre une lettre de sa propre main pour [...] [?] qu'il avoit une armée de cent cinquante mille hommes a son service; et immediatement apres il a ajouté que sa [J./.] etoit plus embarassée de ceux qui pour leurs interets particuliers travailloient a allumer la guerre en Europe que de ses ennemis declarés. Le pr[...] [P./.] dit hautement que si l'on ne veut pas prendre ici des mesures pour se mettre en etat de defense, [P./.] abandonnera le continent, et qu'elle ne sacrifiera pas ses avantages certains [?] et la seule occasion decisive d'humilier [Q./.] a la pitoyable conduite de [S./.], qui apres avoir eté assez avertie se tirera d'affaire comme elle pourra. [U./.] poussera l'augmentation avec la derniere vigueur a la prochaine assemblée de [S./.].

@@ -1,0 +1,51 @@
+# DECODE R366: Ferdinand I to Johann Malvezzi, Augsburg, 23 January 1548, the ciphered passages: reading
+
+Running text of `reading_full.txt` (re-transcribed 5 Oct 2026 against key R367/R386, nulls removed), written out
+23 Oct 2026 (translation wave v7): only capitals and punctuation are added, and the file's marks are carried over:
+nomenclator code words (<word> there) are given plain, with capitals; `{word}` a word read after correcting a writer's
+slip the context forces; `[?Semaslia]` and `[?]` signs not read (the file's [x]). **The cipher passages only**: the
+clear text between them (the routine complaint about border raids) is not transcribed, so each page's passages start
+and end where the cipher does. Latin, the writer's spelling (u for v).
+
+## Reading
+
+*p. 1.* … sermones Rustani Passae tecum habitos, quod uidelicet ingens odium propter tractatum nobiscum initae {pacis},
+tanquam illius pacis constituendae autor, nunc uero conseruandae promotor et defensor, sibi conciliarit; et praeterea
+quid tu ad quaeuis eiusdem Rustani Passae obiecta, quaesita et interrogata responderis …
+
+*p. 4.* … ut obseruaturos Galli, tam multipliciter et dolose hanc pacem subuertere conantibus; qui sane id non ob aliam
+causam faciunt quam ut, ex quo Rex Galliae et sui similes sacram Caesaream et catholicam regiam maiestatem, fratrem et
+dominum nostrum charissimum, uiribus suis lacessere non audent, imperatoris {Turcorum} sumptibus sese contra
+maiestatem suam Caesaream, quae sibi ab illis praeter aequum et honestum adimi nihil patitur, {ulciscantur}; sed
+magnitudo eius atque etiam ipse Rustanus Passa dubitare …
+
+… Quo uero ad intertentionem, tibi per proximas literas nostras significauimus nos decreuisse ut tibi pro tua
+{ordinaria} intertentione et pro reliquis extraordinariis sumptibus, quos pauci momenti esse posse nobis ostensum est,
+tibi mille quingenti ducati annuatim numerentur, exceptis sumptibus qui in
+
+*p. 5.* mittendis tabellariis propriis faciendi erunt, de quibus tibi solutionem seorsim curaturi sumus; mandabimusque
+Justo de Argento, secretario nostro, qui cum pecuniis propediem se in uiam dabit, ut a te {computum} de receptis et
+expositis accipiat. Per eundem quoque Justum tibi summam illam duorum millium et octingentorum ducatorum, quos te
+isthic non solum pro tuo intertenendo et sustento sed in aliis etiam negotiis nostris expositos debere nobis scripsisti,
+necnon mille et quingentos ducatos pro tua intertentione ad futurum unum annum, a prima die mensis Martii nunc
+uenturi computandum, transmittemus, ita quod ab ipso Justo summam quattuor millium et trecentorum ducatorum simul
+accipies. Praeterea scribimus Gulielmo [?Semaslia], sicuti et Argento litterarum huiusmodi exemplo uidebis, ut in casu
+aliquo ingruentis necessitatis, de qua nos tam tempestiue admonere non ualeres, tibi ad requisitionem tuam in una uel
+pluribus uicibus usque ad tria milia ducatorum nomine nostro, mediante aliquo honesto et conuenienti interesse, de
+quanto tu et Justus cum eo conuenire debebitis, mutuo
+
+*p. 6.* dare non recuset, et securus esse debeat se ad exhibitionem chirographi tui [?] nominatione nostra solutione
+Venetiis indubitanter habiturum et accepturum esse. Volumus autem et requirimus pro tua erga nos fide, et eam
+pecuniam, sicuti te hactenus omnino fecisse et posthac {facturum} esse non ambigimus, non nisi in necessariis usus, uel
+utilis quid accideret in quo tibi, antequam nos propter loci distantiam admonere posses, pro aliqua utili et oportuna
+re pecunia opus esset, {exponas} atque impendas. Magistrum horologiorum inueniendum curabimus, ita ut secretarius
+noster cum pecuniis isthuc uenturus eum secum adducat. Si fortasse Rustanus te interrogaret de gentibus nostris in
+confiniis, ad id respondere poteris nos in eisdem confiniis non alias gentes [habere] quam quae sunt necessariae pro
+eorundem tuitione, tum ad coercendos [?] compescendos latrones et uiolatores pacis, tum etiam ad conseruandam et
+{manutenendam} obedientiam a
+
+*p. 7.* subditis nostris nobis debitam, [?] non aliam ob causam. Praeterea de captiuis quos iussu Imperatoris Turcorum
+liberatos esse scribis, si necesse fuerit, respondebis nobis id auditu gratissimum fuisse, nos uelle etiam uicissim
+libenter curare ut, sicubi magnitudinis suae subditos captos fuisse intellexerimus et de quo apud nos conquestum
+fuerit, eos liberari et dimitti {faciamus}, atque adeo nihil omittamus quod ad mutuam seruandae pacis sinceritatem
+pertinet.
