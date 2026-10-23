@@ -64,3 +64,17 @@ published key; grade A.
   groups at these two places can be decoded from view 422 at full size if needed).
 - Postscript ll. 2 and 5 (clear, secretary's hand): blocker: illegible.
 - The rest of f. 370 (about 550 groups) is a separate entry and untouched here.
+
+## 23 Oct 2026, r2f: the two open words checked on the figures
+
+On view 422 at full size (images in the session scratchpad, `reread/r2f/`):
+- *[?Vivac]*: the line after *aiez re-* reads `16 11 4 11 9 | 18 11 | 17 19 16 | 19 11 16 7 9 | 17 7 | 14 7 16 18 4 7 5 4
+  18 11` = *reiec-te sur uerac sa partialite*. The name is **Verac**: 19 and 16 are written with the 1 as a dot, as
+  elsewhere in this hand. No *et* before *sa* in the figures; the reading keeps the copy's *et*.
+- *[?chauvez]*: the line after *peuples de la ligue pour leur tenir tousiours les esp-* reads `(14 16 4 18 22) 9 3 7 16 6
+  11 22 | 11 18 | 15 19 11 | 5 11 | 10 19 9` = *(espritz) charmez et que le duc*. The word is **charmez**.
+Both brackets removed from `f373_reading.md`; English: *Verac*, *to keep their minds ever under the spell*. Score after:
+v2_score.py 0.946 plain (87/92), 0.967 explicit-hole (89/92); the remaining holes are [?vij.e], the supplied [et]
+and the two partly illegible postscript lines.
+- *[?sainement]* (not in the task, checked while there): `... 8 4 11 12 | 17 7 4 12 11 6 11 12 18 | 9 13 12 17 4 10 11 16 11
+  16` = *bien sainement considerer*; bracket removed.

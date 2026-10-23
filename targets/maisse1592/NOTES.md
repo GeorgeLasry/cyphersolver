@@ -5,6 +5,24 @@ Catalogue no. 17 (priority 5.0, class B). Opened 19 Sept 2026.
 Status: in progress (was: solved. Both ciphers identified and keyed; f. 370 decoded and verified letter-for-letter
 against the independent clear copy.)
 
+23 Oct 2026, r2f (REREAD_BRIEF): **f. 370's figures aligned with the copy.** The whole cipher passage of f. 370r-v
+transcribed group by group from openapi.bnf.fr views 419-420 (`texts/f370_figures.txt`, 2,293 figure groups measured,
+63 lines), decoded with `key1.tsv` and aligned letter by letter with the Brienne 13 copy (now kept separately as
+`texts/f370_brienne_copy.txt`) by `research/reading_audit/r2f_align370.py` -> `texts/f370_figures_vs_copy.md`. The
+alignment spans the whole copy, so the copy is this letter, and the key holds: **2,255 of the 2,310 covered copy letters
+agree (97.6%)**; 147 copy letters lie where the verso line ends run into the binding gutter. The reading
+(`texts/f370_reading.md`) now follows the figures where they differ in wording (*vouldriez* for *vouldrez*, *ou
+restraigniez* for *et retranchiez*, *concernans* for *qui concernent*, *traictees*, *lesquelz* for *desquelz*, *si
+c'estoit* for *s'il estoit*, *vengez* for the copy's doubtful *vangez*) or spelling (*besoing, habandonnées, suyvy,
+affin, connoissance, ceste ...*), and keeps the copy over evident enciphering slips (*sois parsz sisost* for *soit
+passé sitost*, *seulerent*, a doubled *apres*). v2_score 0.979 plain, 1.0 explicit holes; English `texts/f370_en.md`.
+Key extended (`key1.tsv`): 71 = rr, **73 = tt** (was entered as uu; *a 73 endant*), codes 23 = pape, 24 = Roy d'Espagne,
+48 = ambassadeur, 49 = guerre; 90 (once) unidentified. f. 373: the copy's doubtful words checked on the figures:
+*Vivac* = **Verac**, *chauvez* = **charmez**, *sainement* confirmed. Neighbouring leaves ff. 367-369, 371-372 are clear
+despatches (no second-route duplicate of f. 370). profile: key recovered (key_file key1.tsv), fraction_read about 0.99
+(f. 370 measured, f. 373 estimated). Class stays read in part only because f. 373's group count is estimated (its cipher
+is not transcribed group by group); every remaining gap has an outside blocker.
+
 23 Oct 2026, re-read (REREAD_BRIEF, batch b29): **f. 373 read** from the contemporary clear copy. Brienne 13 fol.
 104v-106v (Gallica btv1b100904592 views 109-112) transcribed in full (`texts/f373_brienne_copy.txt`); f. 373r-v fetched at
 full size (views 422-423) and the copy checked against the figures with `key1.tsv` at five places, no disagreement; the
@@ -292,17 +310,17 @@ Pope's resolutions awaited. Beyond the opening the reading rests on the copy alo
 
 ## Remaining gaps
 
-- f. 370: read 23 Oct 2026 (v3) from the Brienne 13 fol. 102v-103v copy (`texts/f370_reading.md`). Still open: the copy not aligned with the figures beyond the 81-letter opening (about 2,100 groups, recto and 35 verso lines) - blocker: not-attempted; spot-check the verso figures against the copy as for f. 373; English translation not written
-- f. 373: closed 23 Oct 2026 (read from the Brienne copy). Two words of the copy ([?Vivac], [?chauvez]) not checked on the figures - blocker: not-attempted; postscript ll. 2 and 5 - blocker: illegible
+- f. 370: read 23 Oct 2026; figures aligned with the copy (r2f). Line ends of f. 370v hidden in the binding gutter (about 147 copy letters, the copy is the only witness there) - blocker: needs-physical-access; group 90 at the end of f. 370r l. 1, probably a null - blocker: too-short
+- f. 373: closed 23 Oct 2026 (read from the Brienne copy; Verac, charmez, sainement checked on the figures 23 Oct, r2f). Postscript ll. 2 and 5 - blocker: illegible
 
 ## Escalation
 
 Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
 not read. None of these steps has been redone since; each is open for those documents.
 
-- [ ] siblings: other letters of the same series or key, read or deciphered at the time
+- [x] siblings: other letters of the same series or key, read or deciphered at the time (23 Oct, r2f: neighbouring leaves ff. 367-369, 371-372 are clear despatches, no duplicate of f. 370; the key's own sibling, f. 317, is Tomokiyo's source)
 - [x] clear-pages: clear, cleartext or postscript pages checked for being the decipherment (23 Oct: f. 373v clear postscript read; Brienne 13 copy of f. 373 transcribed)
-- [ ] known-keys: other keys of the same correspondents tried
+- [x] known-keys: other keys of the same correspondents tried (23 Oct, r2f: Tomokiyo's 1592 key fits, 97.6% on f. 370; his 1592-1593 key has letter-shaped signs that ff. 370/373 lack; Savasse's codes agree on 24, not on 23; Savasse 1997 not available)
 - [x] print: printed editions and calendars searched for these letters (Xivrey t. III lists f. 373 = pièce 226 as not printed; the Brienne copy is the text)
-- [ ] key-rebuild: the key corrected against the documents that read
+- [x] key-rebuild: the key corrected against the documents that read (23 Oct, r2f: 71 = rr, 73 = tt, codes 23, 24, 48, 49 added to key1.tsv)
 - [x] retry: every decoded-not-read document re-read sentence by sentence against the images (23 Oct: f. 373, b29)
