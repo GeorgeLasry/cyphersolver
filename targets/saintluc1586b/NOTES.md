@@ -73,7 +73,7 @@ et de biens*.
 
 ## Remaining gaps
 
-- multi-valued labels on f. 260r-v (40.5% / 34.5% of letters) - blocker: not-attempted; split each label by shape on the full-size image (contact sheets cut at the recorded positions), then re-decode; Brackx's sheet of the 160 ʒ tokens showed no second shape at his resolution, the other labels not yet examined
+- multi-valued labels on f. 260r-v (40.5% / 34.5% of letters) - blocker: not-attempted for S, f, y, d, t/tb, pi; the four largest (ϙ `9`, ʒ `z`, б `6`, ρ `p`) were split-tested by shape on the full-size images and do not split (issue #95, below), so for those the blocker is no-key-material: a contemporary decipherment of f. 260 or another letter in this key
 - open runs: f. 260r r. 1-2 (the places after *en son*), r. 5-11, r. 13-14, r. 17, r. 19-24; f. 260v v. 3 (the day in April), v. 4, v. 8-9, v. 12-18, v. 23, v. 27 - blocker: not-attempted; retry after the label split
 - Π (`P`) taken as a null where *affaire(s)* needs *ff* (v. 25, v. 27); two signs after *n'oze* in crib 2 - blocker: not-attempted; image check
 
@@ -86,9 +86,25 @@ et de biens*.
 - [ ] key-rebuild: label split by shape not yet done (see gaps)
 - [ ] retry: after the split
 
+## Shape test of the four largest multi-valued labels (Brackx, issue #95, 23 Oct 2026)
+
+Every token re-located on the full-size images (canvases 268, 269) by template matching and cut into contact sheets
+grouped by decoded value:
+
+| label | tokens (decoded value) | shape | split? |
+|---|---|---|---|
+| ϙ `9` | 126 n, 12 m, 12 g | a ring on a straight stem in all three groups; one g token (r. 10) has a short stroke at the foot | no |
+| ʒ `z` | 117 u, 15 m, 5 h | a flat-topped 3 over a descender ending in a q-like loop; m and h look like u | no |
+| б `6` | 161 s, 32 y | a b-shape with a flag at the top, the same for s and y | no |
+| ρ `p` | 125 i, 17 r | a small bowl on a straight stem; a short bar across the stem occurs with both values | no |
+
+Only part of each minority value could be located cleanly (4 m and 1 h of ʒ, 4 g and 3 m of ϙ, 6 y of б, 7 r of ρ),
+so a rare variant could still be missed. The look-alike share stays 40.5% / 34.5%; both pages stay decoded, not read.
+
 ## Log
 
 - 22-23 Oct 2026: Brackx, issue #90 (solution post and reply of 23 Oct with the reading, English, line-by-line decode and
   label legend).
 - 24 Oct 2026: taken in as a new target; measured; graded decoded, not read on the look-alike limit; profile, page,
   ledgers and DECODE note (no DECODE record known).
+- 23 Oct 2026: Brackx's shape test of ϙ, ʒ, б, ρ (issue #95): none splits; recorded above.

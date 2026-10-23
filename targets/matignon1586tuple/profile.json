@@ -413,6 +413,12 @@
    "kind": "verification",
    "what": "Taken in here: read_share per page with v10_relabel.measure (in-word bracket expansions count as holes): 234r 0.987, 234v 0.622, 235r 0.962, 235v 0.954, 236r 0.723, 236v 0.431, 237r 0.92, 237v 0.929, 238r 0.803, 238v 0.756. All pages kept read in part, f. 236v decoded, not read, because 8-14% of groups per page are multi-valued labels chosen by the decoder, over the 3% look-alike limit.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Brackx (issue #95) recorded the contemporary gloss over each of the 107 multi-valued groups on 234r, 235r, 235v, 237r and 237v: 234r 20 agree, 1 contradicts, 3 unclear (unconfirmed 1.2%), so it meets the read bar; 235r 5/23 glossed, 235v 3/21, 237r 7/17, 237v 8/22. Four contradictions taken into the readings: 234r l. 7 qui (not que), 237r l. 1 de (not d), 237v ll. 3-4 monsieur (not sieur, twice). Re-measured: 234r 0.974 read, 237r 0.94, 237v 0.929.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -438,9 +444,9 @@
   },
   "gaps": [
    {
-    "item": "multi-valued labels on every page (E2 c/e, M30 m/n/mm/nn, QUI qui/que, N18 le/de, DA de/d and others), 8-14% of groups, value chosen by the decoder",
+    "item": "multi-valued labels (E2 c/e, M30 m/n/mm/nn, QUI qui/que, N18 le/de, DA de/d and others), 8-14% of groups on the nine pages other than 234r, value chosen by the decoder",
     "blocker": "no-key-material",
-    "detail": "The glosses that would settle each choice are on the leaves but were not recorded group by group in the contributed transcription, so the choices cannot be shown token by token. Recording them (the contributor's optional follow-up) would turn this gap into work in hand."
+    "detail": "Brackx recorded the gloss over every multi-valued group on 234r, 235r, 235v, 237r and 237v (issue #95, glosses_multivalued.tsv): 234r is glossed group by group and now passes; 235r-v and 237r-v are glossed only on some lines or phrases (55 of 83 groups carry no gloss), so their choices stay unconfirmed. Not done: 234v, 236r, 236v, 238r, 238v."
    },
    {
     "item": "f. 236v, most of the page (read share 0.431)",
@@ -497,15 +503,15 @@
     "decryption": "decryption/f234r.txt",
     "reading": "texts/f234r_reading.md",
     "translation": "texts/f234r_en.md",
-    "state": "read in part",
+    "state": "read",
     "language": "fr",
-    "read_share": 0.987,
+    "read_share": 0.974,
     "summary": "Opens mid-sentence: had the army stayed at Gabarret the writer would have gone that way, but with the Garonne trade cut off by 'the tyranny of those of Caumont' he advises going there to satisfy the captains, nobility and towns, who talk of a league among themselves.",
     "reading_review": {
-     "grade": "B",
+     "grade": "A",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-24",
-     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.987 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit."
+     "date": "2026-10-23",
+     "note": "read_share 0.974 (v10_relabel.measure; the supplied [nt] in presente[nt] counts as a hole). The page is glossed group by group: Brackx recorded the contemporary gloss over all 24 multi-valued groups (glosses_multivalued.tsv, issue #95): 20 agree with the decoder, 1 contradicts it (l. 7, gloss qui over the group decoded que; the reading now follows the gloss) and 3 are unclear (l. 3 CN, l. 12 DAN and BQ). Unconfirmed choices 3 of 251 groups (1.2%), under the 3% look-alike limit."
     }
    },
    {
@@ -602,13 +608,13 @@
     "translation": "texts/f237r_en.md",
     "state": "read in part",
     "language": "fr",
-    "read_share": 0.92,
+    "read_share": 0.94,
     "summary": "Praise of a gentleman chosen by the King: extremely jealous that anyone else should step before him; no better choice could have been made.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-24",
-     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.92 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit."
+     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.94 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit. Glosses recorded over the multi-valued groups (issue #95): l. 1 gloss de over DA, decoded d; the reading follows the gloss."
     }
    },
    {
@@ -626,7 +632,7 @@
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-24",
-     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.929 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit."
+     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.929 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit. Glosses recorded over the multi-valued groups (issue #95): ll. 3-4 gloss mons[ieu]r over both SR groups decoded sieur; the reading follows the gloss."
     }
    },
    {
