@@ -16,7 +16,7 @@ the same I am assured that, on leaving Chartres, the King communicated this plan
 [had] its origin in his mind from the time he left Paris because of the revolt of this [f. 94v] city, as he then
 thought he had found in these men little secrecy, not to say loyalty. All the rest of the court also shows displeasure,
 and many have begun to fear that the same may happen to them as has happened to these, because the change happened the
-same day. And […] audience of His Majesty I took the occasion to ask him whether what I had heard of this change was
+same day. And I went to the audience of His Majesty I took the occasion to ask him whether what I had heard of this change was
 true. He answered that it was most true. And I told him that, although all that His Majesty did ought to be counselled
 with great prudence and settled with mature deliberation, I, with the affection I bore to his service and to the
 universal good of the whole kingdom, wished to say that this resolution was of the greatest importance, since His
@@ -43,7 +43,7 @@ blow of all the ministers who know his secrets, and that this was a dangerous ac
 to talk about; that if he would have it so, he should at least try, since he did not show that he had any fault
 against them worthy of punishment, to keep them in his [f. 96r] devotion, so that they do not take another side, as
 Monsieur du Ferrier did, who, not being esteemed by him, became chancellor of the present King of Navarre. His Majesty
-told me that he was quite disposed to do this, and that in effect he would [hold] them under his protection against
+told me that he was quite disposed to do this, and that in effect he would hold them under his protection against
 anyone who wanted to offend [them], but that he no longer wanted to use [them], being resolved to have people who serve
 him in his way, and not like these, who served him in theirs. After this conversation His Majesty went on to thank me
 for the good offices I had done with Monsieur d'Épernon and with the abbé del Bene to keep him in his devotion, and

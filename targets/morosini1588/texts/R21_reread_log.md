@@ -42,3 +42,26 @@ throughout; Tempesti's paraphrase agrees with the reading point by point).
 - "Et […] audientia" (94v), "dei […] paterni consigli", "in [?stato] […] migliore" (95v): short stretches.
 - "[?tenir]" (96r): the group 1 6 3 5 0 1 1 7 0 0 recurs in R20 ("[?tenire]"); possibly a variant spelling of t.
 - No outside blocker but Francia 27 (physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located on its line (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad
+`reread/r2p/crops`), cancellation strokes looked for (none on these pages), figures parsed under Meister no. 40
+(`r2p_parseall.py`).
+Filled (every figure carries the word):
+- 94r ll. 17-18 "minorità" (20 17 0 191 0|0 17 15 212: the t is the 15).
+- 94v l. 7 "Et io andai a l'audientia" (171 9, 2 01 26 21 171, 2, 50).
+- 95v ll. 14-15 "in stato migliore": the last figure of l. 14 is 4 on the image (DECODE 9): 17 10 4 | 15 21 51 9; the
+  second "[…]" withdrawn.
+- 96r l. 5 "tenir" (6 35 01 17 00, then 2 50 212 = a la); 96r l. 6 "ofenderli" (... 00 50 171 8).
+- 96r l. 16 "per che si": "8 6 4 | 5 6 4 1 7 1" = per, che, si (was "per[ché] che si").
+Left, with blockers:
+- 94r l. 1 opening "1 7 1 5 9 2 7 2 2 3 4 5 2 9 9" before N. S.: as transcribed, no parse. Blocker: no-key-material.
+- 94r l. 1 "dal[a]" (26 21 50, no a), 94r l. 22 "[?hebe]" (che + 4 2 5), 94v l. 13 "i[o]" (a lone 7), 96r l. 7 "[?esi]"
+  (esa), 96v l. 7 "s[ia]" (4 17 171): as transcribed. Blocker: no-key-material.
+- 95r l. 23 "indefesa[m]": "1 7 1 0 1 6 2" at the foot of the page. Blocker: no-key-material.
+- 95v l. 3 "[che]": nothing written. 95v ll. 9-10 "[?partiti]": "1 | 2 1 0 0 1 5 1 7 1 5 1 7 1", no p. 95v ll. 11-12
+  "[I]o lodai [?a]": "8 | 1 9 1 5 0 ..." (no 7 here). Blocker: no-key-material.
+- 95v ll. 12-13 "dei […] paterni": "4 2 1 3 7 9 1 0 1 | 6 9" on the image, no parse. Blocker: no-key-material.
+- 96v l. 13 closing after N. S. "8 4 7 2 2 4 4 7 7 9 2 1 1 1 2 0 2", ended by a rule: no parse. Blocker: no-key-material.
+Result: 7 holes filled or withdrawn; 13 left, each with its blocker.

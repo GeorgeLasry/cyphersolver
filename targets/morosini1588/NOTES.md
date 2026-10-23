@@ -2,6 +2,21 @@
 
 Status: in progress
 
+**23 Oct 2026, r2p (Claude Opus 5.5): the hole check finished for every record.** The 31 records r2m had not done
+(R17-R22, R27 rest, R28-R34, R36-R38, R39 rest, R40 rest, R41-R48, R52, R56, R57 rest, R58) were worked letter by
+letter: each hole located on its transcription line (`research/reading_audit/r2p_holes.py`), the line looked at on the
+DECODE image (line sheets by `r2p_sheet.py`, images in the session scratchpad; R30's images are out of order and partly
+turned, mapped by hand), cancellation strokes looked for, the figures enumerated (`r2p_parseall.py`). About 100 holes
+filled where every figure carries the word, the commonest being the supplied "[I]o": the figures are "8 7 191", a single
+null 8 then io, not the null pair 87 + o (R19, R20, R39, R41, R43). Others: DECODE figure slips seen on the image (R18
+Aragone, R19 come/se/medesmo, R21 "in stato", R29 qui, R36 diseminando, R43 come), a spurious dot (R45 incapace), dates
+in plain figures (R37 17, R57 16), and two encipherer's cancellations (R18 33r: a repeated "contrauenire" struck through,
+now left out; R46 383r: a struck figure where a hole stood). Show-through from the verso on R22 and R28-R34 looks like
+crossing-out but cannot be told from it at this resolution, so nothing there was treated as cancelled. Every remaining
+hole now carries a blocker in its `texts/<R>_reread_log.md` (r2p block). Scores (v2_score, plain / explicit holes) rise
+or hold on every record, none falls: R18 0.789/0.992 -> 0.805/1.0, R19 0.718/0.94 -> 0.735/0.974, R20 0.649/0.956 ->
+0.69/0.982, R32 0.522/0.80 -> 0.544/0.822, R57 0.509/0.849 -> 0.509/0.868 (all in the r2p logs).
+
 **23 Oct 2026, r2m (Claude Opus 5.5): holes worked through letter by letter on the DECODE images** (the images cached
 in the session scratchpad; crops in `scratchpad/reread/r2m/mo`), each hole's figures read on the image and enumerated
 with `research/reading_audit/r2d_mparse.py`. Done, every hole checked: **R49** (its one hole has no parse), **R51**
@@ -122,7 +137,9 @@ Images: DECODE, login; kept git-ignored (`img/`, `decode/*.png|pdf|htm`).
 
 ## Remaining gaps
 - R35: the stretch after "si" (202v l. 8) and the last line (203r l. 19) - blocker: illegible; a hole in the paper (seen on the image 23 Oct 2026) and damaged paper
-- short unread stretches inside the 35 readings (about 540 holes in 33,000 words: openings, closings, one-to-eight-figure groups no word parse fits) - blocker: not-attempted; done on the images 23 Oct 2026 (r2m), every hole checked: R49, R51, R55 (and the r2d sample lines of R27, R35, R51, R57); partly: R39 (289r l. 5), R40 (293r ll. 15, 21); not yet cropped: R17, R18, R19, R20, R21, R22, R27 (rest), R28, R29, R30, R31, R32, R33, R34, R36, R37, R38, R39 (rest), R40 (rest), R41, R42, R43, R44, R45, R46, R47, R48, R52, R56, R57 (rest), R58; listed per record in texts/<R>_reread_log.md. Look for cancellation strokes first: on R40 two holes are stretches crossed through by the encipherer that DECODE transcribes as figures
+- short unread stretches inside the 35 readings, figures clear but no word parse fits or nothing written (openings, closings, the encipherer's slips, off-list or undotted codes such as R18 [162], R19 [16], R31 [191], R42 [266]) - blocker: no-key-material; every hole of all 35 records checked on the DECODE images by 23 Oct 2026 (r2m, r2p), about 100 filled, each remaining hole listed with its blocker in texts/<R>_reread_log.md
+- holes under blots, paper holes, spread ink and show-through (R22 132r-133r, R28 142r/143v, R30 162r-162v, R31 173r-174v, R32 throughout, R33 190v/191r, R55 516r l. 16, R17 235r l. 5 and others in the logs) - blocker: illegible
+- holes of one to three figures (single letters, a lone 7 or 0) - blocker: too-short
 - Rome's decipherments of these ciphers (ASV Segr. Stato Francia 27, cited by Hübner 1870) - blocker: needs-physical-access; not imaged online
 - missing leaves (R46 between 382v and 383r, R47 after 385v; R17 233v and R22's last leaf not imaged) - blocker: needs-physical-access
 - item 22/29 - blocker: needs-physical-access; no DECODE record for it; not imaged, so its key is not known
@@ -133,7 +150,7 @@ Images: DECODE, login; kept git-ignored (`img/`, `decode/*.png|pdf|htm`).
 - [x] known-keys: Meister no. 40 (1587) and Lasry's DOC_3175 reconstruction applied; the same key read R17
 - [x] print: Tempesti, Vita di Sisto V (1754) II books VI-XIII paraphrases many letters (used for names and sense only); Hübner, Sixte-Quint (1870) locates Rome's decipherments in Francia 27 (not imaged); no edition of the legation
 - [n/a] key-rebuild: Meister's key is complete for these records; every off-list dotted code turned out to be a spurious or misplaced dot (22 Oct 2026)
-- [x] retry: 22 Oct 2026, every record re-parsed word by word on the figures, doubtful figures checked on image crops (55 corrections from the images), readings aligned word by word with the figures; 23 Oct 2026 R27, R35, R51, R57 holes re-checked on the images and regraded (all read); 23 Oct 2026 (r2m) every hole of R49, R51, R55 checked on the images, R39 and R40 in part
+- [x] retry: 22 Oct 2026, every record re-parsed word by word on the figures, doubtful figures checked on image crops (55 corrections from the images), readings aligned word by word with the figures; 23 Oct 2026 R27, R35, R51, R57 holes re-checked on the images and regraded (all read); 23 Oct 2026 (r2m, r2p) every hole of all 35 records checked on the images: about 100 filled, the rest each with a blocker
 
 ## Assumptions for George's review
 

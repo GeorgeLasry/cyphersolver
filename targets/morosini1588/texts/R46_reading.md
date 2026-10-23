@@ -59,7 +59,7 @@ anco per singolare gratia da N. S. che gli piacia di concedermi che io quanto pr
 piedi per giustificare tute le ationi mie, perché, con il fauore del sig. Dio, spero che conoscerà asai chiaram[ente]
 che io l'ho seruito con tanta fedeltà, sincerità et deuotione quanto si posi desiderare in qualsiuoglia altro
 ministro, il quale, se bene hauese potuto seruire con magior […] [f. 383r] […]ere magiore autorità et dominio che
-sopra di me. Se poi […] riesce dela legatione mia quello fruto che aspetaua N. S., la suplico a considerare se il
+sopra di me. Se poi riesce dela legatione mia quello fruto che aspetaua N. S., la suplico a considerare se il
 mancamento uiene da me o da […], né uoglia per l'amore di Dio atribuire a me le colpe che non sono mie et darmi la pena
 de' pecati altrui. A me non duole meno questo che a N. S.; ma consideri lei se mai mi ha comandata cosa che io
 prontam[ente] non l'habia esequita, et se mai per rispeto di chi si sia io habia lasciato di seruire fedelm[ente] a

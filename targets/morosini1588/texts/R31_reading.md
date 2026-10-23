@@ -29,7 +29,7 @@ dimostratione.
 
 Quanto a mons. d'Epernone et la Ualeta suo fratelo, non [?io] ho mancato di fare ogni buono oficio; ma non hauendo loro
 uoluto acetare i partiti che li erano fati da S. M.tà [de], come [?lei] con altre mie ne diedi conto a V. S. Ill.ma,
-temo che le cose siino hora ridote a pegior termine, et che dificilmente potria il Re dar[e] [?alhora] quello che prima
+temo che le cose siino hora ridote a pegior termine, et che dificilmente potria il Re dar[?li] hora quello che prima
 li haueua oferto. Con tuto ciò si tratiene ancora qui mons. di Mases, mandato dal sodeto Epernone, et sta con qualche
 speranza di acomodamento; ma io ne spero poco, perché le cose di Prouenza uano tutauia pegiorando. Et per questo
 rispeto S. M.tà rimanda in quella prouincia mons. di Santa Maria con ordine così ala Ualeta come a mons. di Uins che

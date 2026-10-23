@@ -15,10 +15,10 @@ Marks: [?word] partly carried, […] unread, [162] a dotted code not in the key.
 
 ## Reading
 
-[f. 32r] […] circa la publicatione del concilio di Trento [?io] non ho mancato né manco di fare tuti quei più eficaci
+[f. 32r] […] circa la publicatione del concilio di Trento io non ho mancato né manco di fare tuti quei più eficaci
 ofici et [?oporsi] a fine che sia fata senza alcuna limitatione o conditione, ma in efeto trouo grandisima resistenza
 in tuti, che non uogliono sentire a modo alcuno parlare contro a questa loro pretensa libertà dela chiesa galicana. Et
-dicono che anche in Spagna, nel regno d'[?Aragone], per non pregiudicare a i loro priuilegi hano uoluto acetarlo; che in
+dicono che anche in Spagna, nel regno d'Aragone, per non pregiudicare a i loro priuilegi hano uoluto acetarlo; che in
 quello che concerne dogmi di fede loro la acetarano senza alcuna ecetione o conditione, ma quanto ala riforma, et è cosa
 manifesta che non si può dare regola uniuersale et uniforme che serua a tuti i regni, hauendo ognuno li suoi
 particolari costumi, da' quali con tropo dificoltà si potriano leuare; et che essendo questo molto bene conosciuto da la
@@ -47,7 +47,7 @@ Trento saria atribuito a quelli dela lega, perché loro l'haueuano nei articoli 
 era leuare a loro questo auantagio et aquistarlo per sé, con uolere che quello che hano esi dimandato con conditione et
 restritione sia liberam[ente] et senza conditione publicato et acetato. Et dicendomi lei come uoleuo che ela
 contrauenise a quello che si era già acordato, per tornare un'altra uolta al'armi, le risposi che questo non saria
-contrauenire, ma più tosto [contrauenire] coadiuare; et che almeno, quando gli altri si dolesero et uolesero
+contrauenire, ma più tosto coadiuare; et che almeno, quando gli altri si dolesero et uolesero
 l'esecutione secondo la forma del acordo, che la S. M.tà guadagnaria nel'opinione di N. S. et di tuta la christianità,
 quello che con la dilatione in publicarlo ueniua ad hauere per […] sopra gli altri, la colpa del impedimento. Mi rispose
 che con questo ueniuano anco loro a guadagnare più il fauore nel regno, poiché uniuersalm[ente] ognuno uole la
@@ -99,16 +99,16 @@ sia certo, non mancarò di dolermene con S. M.tà et far quello uficio che in si
 
 - Opening (32r l. 2): "1 9^. 1 5 2 2 9 4 7 2 2 1 0 9 1 8" before "circa" does not parse (checked on the image: the
   figures are as transcribed; the dot DECODE put on 9 is not a code, 191 is not in the nomenclator).
-- "[?io]" (32r l. 3): the figures give 191 (o); io would be 171 9.
+- "io" (32r l. 3): the image has "8 7 1 9 1" = (null 8) i o (r2p, 23 Oct 2026).
 - "[?oporsi]" (32r l. 4): 1 9 1 0 7 9 1 4 5 9 = o p o s o/i; no r. A verb in the sense "opporsi" is meant, or "oposito".
-- "d'[?Aragone]" (32r l. 9): 26 8 1 00 21 40 91 01 35 = d (null) r a g o n e; the initial a is not carried.
+- "d'Aragone" (32r l. 9): the image has "26 8 21 00 21 40 91 01 35" = d (null) a r a g o n e; DECODE drops the 2 (r2p, 23 Oct 2026).
 - "di bo[na] me[moria]" (32r l. 18): 26 7 42 91 8 20 35 20 8 — "bo" + 8 and "mem" + 8, the 8 marking abbreviation as in
   m + 8 = -mente. The bishop of Rimini is G. B. Castelli, nuncio in France 1581–83, died 1583.
 - "[di] dimostrare" (32v l. 12): the figures run "Sciartres 8 dimostrare"; the "di" is supplied by grammar.
 - "[162]" (32v l. 14): "1 6^. 2" after "Dio 8": not in the key; context wants "che i principi / che tuti"; left open.
 - "se pure di Francia tiene il titolo": the subject (il Re) is not in the figures.
-- "[contrauenire] coadiuare" (33r l. 16): the figures repeat "contrauenire" (7 6 1 5 0 0 2 1 3 7 3 5 0 1 1 7 0 0 5) before
-  "coadiuare"; an encipherer's dittography, kept in brackets.
+- "più tosto coadiuare" (33r l. 16): the repeated "contrauenire" (7 6 1 5 0 0 2 1 3 7 3 5 0 1 1 7 0 0 5) before
+  "coadiuare" is struck through with a line by the encipherer on the image (r2p, 23 Oct 2026): cancelled, left out.
 - "per […] sopra" (33r ll. 20–21): 5 4 9 6 9 5 0 2 1 4 5 2 1 3 7 2 1 2 (checked on the image, as transcribed) does not
   parse into words that fit ("soto la saua"?).
 - "nela […] N. S." (33v l. 6): 0 3 5 0 5 2 1 1 2 before 111: "nela" + "1 2" (z?); left open.

@@ -20,8 +20,8 @@ brought me a letter of His Highness, of which I send a copy herewith to Your Mos
 conformity with what he reported to the Queen he also gave me an account of the same. So Your Lordship can well imagine
 into what thoughts this […] of His Highness has put me, since he tells me that all he has done is by order of Our Lord;
 and you have very well what you wrote to me on this subject, having sent me a copy of the letter His Highness wrote to
-you on the taking of Carmagnola, from which the contrary is clearly […]; and so I have always vigorously maintained that
-Our Lord had no part in it, [seeing] plainly that nothing could be more prejudicial in this kingdom to that Holy See than
+you on the taking of Carmagnola, from which the contrary is clearly inferred; and so I have always vigorously maintained that
+Our Lord had no part in it, seeing plainly that nothing could be more prejudicial in this kingdom to that Holy See than
 to let it be impressed on the people […] that the Duke of Savoy had made that enterprise by Our Lord's order, as these
 men were spreading abroad, since that made Our Lord most odious not only to His Majesty but to the whole […], all three
 Estates (as I wrote to Your Lordship in other letters) having stirred up the King and offered him very great aid to [f.

@@ -60,3 +60,36 @@ corrections and nineteen short holes.
   most; a second image pass at higher resolution could close some.
 - The end of the letter: the last cipher leaf is not imaged (outside blocker).
 - Rome's decipherment in Francia 27 would settle all of them (physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located on its line (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad
+`reread/r2p/crops`), cancellation strokes looked for, figures parsed under Meister no. 40 (`r2p_parseall.py`).
+The ink of R22 (132r-135v) has spread and bled through: many figures are blurred, the paper has small holes (132r
+l. 11, 132v l. 10, 133v l. 17), and the verso's figures show through as dark diagonal strokes, which look like
+crossings over some groups (132r ll. 2-3, 132v l. 1, 133r l. 6, 133r l. 9, 133v l. 13, 134r l. 6, 135v l. 5); no
+stroke there could be told for certain from show-through, so no group was treated as cancelled.
+Filled or withdrawn:
+- 132v l. 1 "anima" (212 01 17 20 21); the "[…]" after it (DECODE 216. auisi, blurred) stays.
+- 133r l. 6 "precisem[ente]" (33 35 25 17 45 35 20 8: the -mente abbreviation, as elsewhere).
+- 133r l. 9 "che hauendole io": "5 6 8 | 14 21 37 35 01 26 91 50 5 | 171 9" (the le was a hole). The "1? 5 3" heading
+  the line (after "querela") is a blot of spread ink; the "[…]" before "che" stays. Blocker: illegible.
+- 133v l. 13 "ama": "111 2 0 2 2 1 2" on the image = N. S. a m a.
+Left, with blockers:
+- 132r l. 2 "Questo […]" ("2 4 9 1 0 0 8"), l. 3 "pasato […]" ("2 0 0"), l. 11 "capito[li]", l. 16 "presentate […]"
+  ("2 1 1 3"), l. 19 "hau[en]do" (a blot over the middle), l. 21 "che […] mi" ("2 0 2 1 2"), l. 22 "le […] facoltà"
+  (nothing legible between): ink spread, blots and paper holes on 132r. Blocker: illegible.
+- 132v l. 10 "[?aspetare]" (paper holes in the group), l. 11 "asolut[i]one" (a blot over the i). Blocker: illegible.
+- 133r l. 9 "intendere […]" ("2 6 [blot] 1 1 4"), l. 12 "questo […]" ("2 1 6 1 9", blurred), l. 15 "del[a]". Blocker:
+  illegible (the last: no-key-material, the a is not written).
+- 133v ll. 4-5 "breue […] andase" ("4 5 8 5 | 3 1 7 2 0 2 1 6", show-through around it), l. 9 "g[l]i", l. 10 "[l']", l. 12
+  "dire […]" (nothing written), ll. 12-13 "[?uiene]", l. 13 "[che]" (nothing written), l. 17 "efeto […]" (a paper hole
+  beside "5 6 7 6 5 3 7 1 7 1"), l. 21 "del[a]". Blocker: no-key-material (l. 17: illegible).
+- 134r l. 6 "spedisca […]" ("7 3 0 2 1 7"), l. 11 "[?procede]" (the figures give procedi), l. 14 "[?me]" ("2 0 1 5 9"),
+  134v l. 13 "questo […]" ("2 1 7"), l. 14 "[?con]" ("3 6 1"). Blocker: no-key-material.
+- 135r l. 1 "[h]onore", l. 7 "[r]agione" (the first letters not written), l. 10 "mons. […]" ("1 7 4 0 8"). Blocker:
+  no-key-material.
+- 135v l. 4 "de[l]", ll. 5-6 "da […] p[e]l" ("219. [obscured 7 0 7 3] ... 0 2 | 1 9 1 7 0 5 0"), ll. 10-11 "o[r]dini",
+  l. 12 "grand[i]", l. 15 "uita […]" ("8 6 4 9 5 0 2"), l. 22 "goue[r]no", "[et]" (a null 8), "dela […]" (the last
+  figures of the letter, "2 6 3 5 0 8 2 1"). Blocker: no-key-material (ll. 5-6: illegible, figures obscured by show-through).
+Result: 4 holes filled; 40 left, each with its blocker.

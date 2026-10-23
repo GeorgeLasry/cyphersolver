@@ -47,3 +47,32 @@ Grade A-/B: the sentences hold throughout with few holes; a handful of figure+co
   34; 473v l. 2; 474v ll. 2 ("70 5 00 25" before Monlione), 9, 14, 33 (closing).
   Not re-checked on the image beyond 474v l. 2. No outside blocker otherwise.
 - Rome's decipherment in Francia 27 would settle them (physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean), cancellation strokes looked for (none), the figures parsed
+(`r2p_parseall.py`). Nothing could be filled: every remaining hole is as DECODE transcribes it.
+Left, with blockers:
+- 473r l. 3 "[…] quali esendosi": "5 4 2 7 9" (best parse "slto"). Blocker: no-key-material.
+- 473r l. 8 "scrise al mar[e]sciale d Umone": "2 0 2 1 1 3 3 6 1 7 2 1 5 0 5" (best parse "amxuutiale"). Blocker: no-key-material.
+- 473r l. 12 "fata di […] tanta milia": "9". Blocker: too-short.
+- 473r l. 13 "quella carica […] che [t]": "6". Blocker: too-short.
+- 473r l. 13 "[…] che [t] enese a": "(none)". Blocker: nothing written there; no-key-material.
+- 473r l. 15 "Onde il mar[e]sciale che si": "2 0 2 1 0 0 3 4 1 7 2 1 5 0 5" (best parse "marsciarel"). Blocker: no-key-material.
+- 473r l. 15 "si trouaua […] di [?Mans]": "0 3 5 1 7 1 1 9 1 5 9 1 0 0 1 0 7" (best parse "neicontorni"). Blocker: no-key-material.
+- 473r l. 15 "[…] di [?Mans] al auiso": "8 3 7 2 0 2 1 0 1 4 5 8" (best parse "imans"). Blocker: no-key-material.
+- 473r l. 18 "che i borgh[es]i cominciauano a": "8 4 2 9 1 0 0 4 0 1 4 1 7 8" (best parse "borghi"). Blocker: no-key-material.
+- 473r l. 21-22 "entrata del mar[e]sciale i borghesi": "8 2 0 2 1 0 0 3 4 1 7 2 1 | 5 0 5" (best parse "mnfsiale"). Blocker: no-key-material.
+- 473r l. 28 "colpi di […] tanta milia": "9 0 3 5 7 9" (best parse "ofsfo"). Blocker: no-key-material.
+- 473r l. 34 "l armi […] non posino": "7 2 8". Blocker: too-short.
+- 473v l. 2 "in Bretagna [?] unito col": "8 7". Blocker: no-key-material.
+- 473v l. 4 "di nobili [che] posa combatere": "8". Blocker: too-short.
+- 473v l. 11 "uicino a Sci[a]rtres da una": "8 4 5 2 5 1 7 0 0 1 5 0 0 3 5 4 5 8" (best parse "ctpntres"). Blocker: no-key-material.
+- 474r l. 16 "aiuti forestieri s[i]a uicini per": "4 2 1 2" (best parse "sa"). Blocker: no-key-material.
+- 474v l. 2 "è uoltato […] Monlione che": "8 7 6 2 5 0 0 2 5 8 9" (best parse "tcrc"). Blocker: no-key-material.
+- 474v l. 9 "stato permeso […] tuti questi": "(none)". Blocker: nothing written there; no-key-material.
+- 474v l. 14 "et già [?otuagenario] ma prelato": "9 1 5 9 1 4 0 3 5 0 1 2 1 0 0 1 7 9 1 8" (best parse "otogenario"). Blocker: no-key-material.
+- 474v l. 28 "di Paula [et] a San": "8". Blocker: too-short.
+- 474v l. 33 "di questa […]": "8 5 5 4 7 2 7 9 6 173^. 0 0 9 2 1 2 0 0 5 111^. 4 7 5 2 1 7 1" (best parse "siaiot[inghilterra]roare[il"). Blocker: no-key-material.
+Result: 0 holes filled; 21 left, each with its blocker.

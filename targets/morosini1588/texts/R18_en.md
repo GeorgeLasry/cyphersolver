@@ -7,7 +7,7 @@ Translation of `R18_reading.md`; holes as there.
 [f. 32r] […] concerning the publication of the Council of Trent, [I] have not failed and do not fail to do all the most
 effective offices, and [to oppose (?)], so that it be done without any limitation or condition; but in fact I find very
 great resistance in everyone, for they will not in any way hear anything said against this pretended liberty of the
-Gallican church. And they say that in Spain too, in the kingdom of [Aragon], they chose to accept it so as not to
+Gallican church. And they say that in Spain too, in the kingdom of Aragon, they chose to accept it so as not to
 prejudice their privileges; that in what concerns dogmas of faith they will accept it without any exception or
 condition, but as to the reform — and it is a plain thing that no universal and uniform rule can be given that suits all
 kingdoms, each having its own particular customs, from which they could be drawn away only with too great difficulty —

@@ -39,7 +39,7 @@ core, non dare orechie a quelli che le raportano male di lui, et, sapendo che è
 qualche modo di tratenirsi, tenendolo […] sempre [f. 304r] impiegato in qualche negotio conforme ala inclinatione et
 profesione sua. Dise il Re che lo trouaua buono, et che io ne parlasi con la Regina Madre, la quale […] sapeua che,
 se bene non [?era] in tuto libera dal male, nondimeno mi uedria uolontieri. Feci anco uficio con S. M.tà per
-l'arciuescouo [?d'Arli], conforme a quanto mi comanda V. S. Ill.ma, et per la publicatione dela bola di N. S. contra
+l'arciuescouo d'Arli, conforme a quanto mi comanda V. S. Ill.ma, et per la publicatione dela bola di N. S. contra
 […] dal sig. arciuescouo […] primo. Mi rispose S. M.tà che io ne parlasi con il sig. arciuescouo Gondi, […] altro, che
 la bola era santisima et che la farà publicare. Dapoi, partito da S. M.tà, sono andato da la Regina Madre, la quale,
 se bene hauea il fredo dela febre, mi uolse in ogni modo uedere et ragionare anco meco sopra i particolari che io
@@ -62,7 +62,7 @@ seruitio dela christianità. […]
 - "non uolere più […] questa" (303r l. 9): no figures for the verb (differire?) between più and 166.
 - "soto […] pretesti" (303r l. 10): "3 2 1 5 0 4 5".
 - "[266]" (303v l. 1): "2 6^. 6" after "risposta di": not a code of the key (216 auisi? 166 questo?).
-- "[?d'Arli]" (304r l. 6): "2 6 8 2 1 0 0 5 0 1 7 8" after l'arciuescouo (Arles?).
+- "d'Arli" (304r l. 6): "26 8 21 00 50 17 8" = d (null) a r l i (null) on the image, every letter carried (r2p).
 - "contra […] dal sig. arciuescouo […] primo" (304r ll. 8–9): "3 3 9 1 2 5 3 7 0 0 2 1 0 1 5 1 3 5 4 2 1 2 4 2 9 1 0 0 1 5
   3 7 0 2 8 2 0 2 1 0 1 6 2 2 1 5 1 2 1 2 0 7" and "7 0 1 7 0 1 3 5 0 5 7 1 8 2 5 0": "procuran…", "Pineli"? no sentence.
 - "la quale […] sapeua" (304r l. 3): "1 5 7"; "che le […] parlaria" (304r l. 19): "7 9 2 0 1 5 3"; "non resto […]

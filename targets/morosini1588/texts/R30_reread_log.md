@@ -53,3 +53,26 @@ throughout, with a dozen short holes and several figure+context corrections.
   for a second image pass).
 - 160r l. 9 and the continuation of the letter: the next page is not imaged (outside blocker).
 - Rome's decipherment in Francia 27 would settle the rest (physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad `reread/r2p/crops`),
+cancellation strokes looked for, parsed (`r2p_parseall.py`). The DECODE images are not in the transcription's page
+order and some are turned (the transcriber's note): 162v = P5, 162r = P4, 161v = P3, 161r = P2, 160r = P1
+(`PMAP` in `r2p_sheet.py`). Many lines carry long diagonal strokes over runs of figures (162v ll. 15-16, 162r ll. 10 and
+19-20, 161r ll. 18-21); enlarged, they are the verso's figures showing through the spread ink, not cancellations,
+but they make those runs hard to read.
+Filled:
+- 162v l. 13 "non lascia di fare": "50 21 34 17 212 | 62 171 | 30 21 00 5" (was "[?lasciaua]"; the -ua is not written).
+Left, with blockers:
+- 162v l. 2 "l'altre […] i ragionamenti" (no figures left between; a group obscured by show-through before "212"), l. 16 "autorità di […]
+  N. S." and l. 24 "giorni […] pasati" (nothing written; a group obscured by show-through before "li giorni"). Blocker: no-key-material.
+- 162v l. 15 "dela […] et dopo": "1 4 [blot] 2 3 2 1 2 2 2 6" in a stretch obscured by show-through. Blocker: illegible (figures obscured by show-through).
+- 162r l. 10 "buono […] disi": "7 1 0 5 6" in a line obscured by show-through; l. 19 "e[s]endo" ("5 5 3 5 0 1 2 6 1 9 1"); l. 20 "uolese
+  […] darmi" ("0 3 5 7 9 2"), both lines obscured by show-through. Blocker: illegible.
+- 161v l. 2 "[?fidase]" ("3 0 1 7 6 2 4 5 2 1 5 4 5"), l. 19 "concilio […]" ("2 1 2 5 0 3 5 6 8"), l. 21 "duca […] di"
+  (DECODE "129. ?26."). Blocker: no-key-material.
+- 161r ll. 18-19 "ragua[g]liarò" and "[?inteso]" (171 33 35 45 9 = i preso), l. 21 "si […] che" (7 1 = non, which the
+  sentence does not take): lines obscured in part by show-through. Blocker: no-key-material.
+- 160r l. 9 the close ("8 4 2 5 9 111. 2 7 0" and "2 0 1 3 7 7 6 9 7 0"). Blocker: no-key-material.
+Result: 1 hole filled; 16 left, each with its blocker.

@@ -41,3 +41,25 @@ partly carried words in about 990 words; every sentence of the news carries. Gra
   inanzi" (533v l. 31): short stretches with no word parse; no outside blocker, a closer image pass may close some.
 - "[?Adeso] certo" (534r l. 23): figures "m a d s o".
 - The last figures after "ala singolar sua" (534r l. 30) were not transcribed by DECODE.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean; the row grid of 534r runs short, so its lines were found by eye), cancellation
+strokes looked for (none), the figures parsed (`r2p_parseall.py`).
+Filled (every figure carries the word):
+- 533v l. 12 "lettere del Re" (26 35 05); 534r l. 1 "con uno del duca" (3 01 191); 534r l. 31 "sua prudenza"
+  (33 37 26 35 01 12 212; it was supplied).
+Left, with blockers:
+- 533r l. 4 "[…] questo […]": "0 4 9 5 7 2 2" (best parse "gosfcr"). Blocker: no-key-material.
+- 533r l. 4 "[…] questo […] dele cose": "4 8". Blocker: too-short.
+- 533r l. 16 "ocasione Entrata [?…] S M": "3". Blocker: no-key-material.
+- 533r l. 27 "M tà […] il perdonò": "9 1 5 3 5 0 1 5" (best parse "oelt"). Blocker: no-key-material.
+- 533v l. 14 "presto gli inuiar[i]a gente per": "1 7 1 0 1 3 7 1 7 2 1 0 0 2" (best parse "inuiara"). Blocker: no-key-material.
+- 533v l. 16 "anco castelo […] et che": "5 3 5 0 0 1 7 8" (best parse "eeri"). Blocker: no-key-material.
+- 533v l. 23-24 "che subito [?hauuti] s incaminarano": "1 4 | 2 1 3 7 3 5 1 7 1" (best parse "hauei"). Blocker: no-key-material.
+- 533v l. 31 "dicono che […] molto inanzi": "5 3 5 0 0 5" (best parse "eull"). Blocker: no-key-material.
+- 534r l. 5 "da Pluuiers [?doue] dice che": "8 2 6 1 7 1 2 6 9 1 3 7 5" (best parse "didoue"). Blocker: no-key-material.
+- 534r l. 26 "del Re [?Adeso] certo che": "8 2 0 2 1 2 6 5 4 1 9 1" (best parse "mrdso"). Blocker: no-key-material.
+- 534r l. 27 "corte hauendomi [p] ortate lettere": "2 0". Blocker: too-short.
+Result: 3 holes filled; 12 left, each with its blocker.

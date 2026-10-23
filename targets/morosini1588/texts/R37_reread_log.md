@@ -41,3 +41,21 @@ decoder splits, about 12 single-figure slips from context).
   encipherer's slip (no outside material to settle it).
 - "a li [?17] del presente": a plain number or a null + i.
 - The closing formula (257v ll. 7–8) not read.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`), cancellation strokes looked for (none; some show-through on 256r), the figures parsed
+(`r2p_parseall.py`). "S[ua] Al[tezza]" / "Alt[ezza]" are the encipherer's abbreviation (a l t + null 8), not holes.
+Filled:
+- 257r l. 21 "a li 17 del presente": "2 50 171 | 8 1 7 | 26 35 05": the date in plain figures after a null 8.
+Left, with blockers (257r l. 5 "qui si [è] deto": a hole in the paper stands where the verb would be, illegible):
+- 256r l. 2 "[…] hieri matina": "111^. 0 9 7 8" (best parse "[il"). Blocker: no-key-material.
+- 256r l. 3 "loro maestà […] feci quello": "2 1 2 5 0 7 2 2 5" (best parse "aliac"). Blocker: no-key-material.
+- 256r l. 20 "fastidio si […] negotio senza": "4 5 1 7 2 0 9" (best parse "simo"). Blocker: no-key-material.
+- 256v l. 14 "obligarlo a [?…] in Piemonte": "0". Blocker: no-key-material.
+- 256v l. 22 "dicendo che [?ui]": "1 7 3 7 7 0 3 5 0 1" (best parse "uipen"). Blocker: no-key-material.
+- 257r l. 5 "qui si [è] deto che": "5 3". Blocker: illegible (hole in the paper).
+- 257r l. 7-8 "m ha rifer[i]to che ragionando": "1 1 7 3 0 | 3 5 0 0 1 5 9" (best parse "riferto"). Blocker: no-key-material.
+- 257v l. 7-8 "haurano bisogno […]": "8 1 7 1 4 9 7 2 2 4 7 5 2 111^. 9 1 6 7 4 2 2 0 | 0 1 2 9 6" (best parse "istriabic[il"). Blocker: no-key-material.
+Result: 1 hole filled; 9 left, each with its blocker.

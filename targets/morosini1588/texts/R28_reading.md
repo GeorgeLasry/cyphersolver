@@ -25,9 +25,9 @@ anco per nome di N. S., l'haueuo esortato a uedere di ritirare a sé il marscial
 conosceua la buona uolontà di N. S. uerso di lui, et però era risoluto di mandarle un gentilomo, che dise che saria il
 sig. Hieronimo Gondi, per apresentare a N. S. tuto quello ch'ella pensa di uoler fare a beneficio però [?et] di
 [?sodi]sfatione di eso Momoransi, a fine di [ri]tirarlo da l'amicitia del già re di Nauarra et altri heretici et
-ridurlo al suo seruitio; et perché conoscendo N. S. [f. 142v] [non] solo ragioneuoli ma anco importanti tute le sicurtà
+ridurlo al suo seruitio; et perché conoscendo N. S. [f. 142v] non solo ragioneuoli ma anco importanti tute le sicurtà
 che pensa di dare al sodeto Momoransi, [?…] posi ela con l'autorità sua interponersi per condure a buon fine questo
-negotio, che desideraua[no] d'intendere il mio parere; ma che sopra tu[t]o […] uenise secretisimo, perché quando si
+negotio, che desiderauano d'intendere il mio parere; ma che sopra tuto […] uenise secretisimo, perché quando si
 risapese non [?mancariano] molti che procurariano disturbare questa riconciliatione. Io le disi che, quanto ala
 secreteza, io non ne parlarei con alcuno; ma che 'l dire l'opinione mia sopra questo particolare mi pare superfluo,
 poiché molte uolte et con uiue ragioni haueuo esortata S. M.tà a fare ogni opera per ritirare dal'amicitia de li
@@ -44,7 +44,7 @@ et leuargli ogni ocasione di sospetione che ela non habi[a] qualche mal animo ue
 pre[ue]deuo ritornare le cose in pesimi termini; et le considerai che se mons. di Guisa, senza fare altro male, una
 matina si partise di corte con quelli dela sua fatione, che moto saria di nuouo in tuto questo regno, et che lei non
 si [?stimaria] sicura in Bles, et che partendo non si poteua asicurare di ritirarsi in alcun luogo doue fose riceuta
-uolontieri, [?non] temino più mons. di Guisa che S. M.tà, ma temano più loro stesi che gli altri; et sano molto [f. 143v]
+uolontieri, non temino più mons. di Guisa che S. M.tà, ma temano più loro stesi che gli altri; et sano molto [f. 143v]
 bene et in tempo di guerra quando si conuiene hauere apreso soldati et guardie, che [?tanto] male riceuono da gli uni
 come da gli altri. Mi dise S. M.tà che quello che le diceuo era uerisimo, et che quanto a lei cercaua di dare ogni
 sodisfatione a mons. di Guisa, et di asicurarlo per ogni uia dela sua buona uolontà, et che non sapria fare
@@ -87,8 +87,8 @@ a V. S. Ill.ma. […]
 - "del già re di Nauarra" (142r l. 23): 26 35 05 + 232 (undotted) + 69 et + 2 27 00 171 altri.
 - 142v l. 3: "4 5 0 1? 8^.? 7 0 9 1 4 5 1 7 1" after Momoran: the transcriber's "8^.?" is not a code; read
   "[?…] posi" (could be "acciò possa"); left open.
-- "desideraua[no]" (142v l. 5): figures give desiderauano (21 01 9); the subject is the King.
-- "tu[t]o […]" (142v l. 6–7): "6 3 7 ? 1 5 1 9 1" then "1 6 6 4 1 7 1 6" (et per i et?) does not parse.
+- "desiderauano" (142v l. 5): the figures give desiderauano (21 01 9), kept as written though the subject is the King (r2p).
+- "tuto […]" (142v l. 6–7): "6 3 7 = | 1 5 1 9 1" (= is the encipherer's hyphen: tuto) then "1 6 6 4 1 7 1 6" (et per i et?) does not parse.
 - "[?mancariano]" (142v l. 8): 20 21 01 25 2 6? 00 21 91 9: one figure uncertain.
 - "che [?tanto]" (143v l. 2): 56 21 01 51 9, the t missing.
 - "lo faria […]" (143v l. 9): 2 6 1 5 0 9 1 0 1 5 1 1 7 3 5 0 0 3 8? 5 0 1 5 3 does not parse.

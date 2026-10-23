@@ -7,10 +7,10 @@ Translation of `R20_reading.md`; holes as there. Page order 88r–90r, then 87r�
 [f. 88r] […] here last Sunday, in the company of a gentleman of Monsieur de Guise, sent by His Excellency, […] to find
 me, an échevin of the city of Paris; and after some offices of compliment made to me in the name of the city, he told
 me that the prévôt des marchands and the others who are in the government had thought it necessary that I be informed
-of what had happened in Paris in the days before, so that I might [take up] their protection with His Majesty. He said
+of what had happened in Paris in the days before, so that I might take up their protection with His Majesty. He said
 that, having learned that His Majesty had granted the Count of Soissons letters patent by which he [cleared] him of all
 the guilt he had incurred by having been with the King of Navarre and with the Huguenots, and that these letters had
-been presented to the Parlement for [it] to approve or […] register them, as they say here, many pious and Catholic men
+been presented to the Parlement for [it] to approve or register them, as they say here, many pious and Catholic men
 of that city had gone to the said Parlement to oppose this registration, and had presented a request of the tenor that
 Your Most Illustrious Lordship will see from the translated copy I am sending you. He said that here the Cardinal of
 Vendôme and the Princess of Condé had made such an uproar with Their Majesties that they wanted all the citizens of
@@ -25,7 +25,7 @@ subscribed and sworn like the others to make war on the heretics, and having alw
 sent a gentleman to [the] Queen Mother [to] obtain from Our Lord absolution for his error, it seemed to me a great gain
 to have drawn him over to us and separated him from the heretics, and that he should now want to be one of those who go
 to make war on them. The gentleman [f. 89r] of Monsieur de Guise confirmed what I said, but all the same said he did not
-know what security there could be that the said Count does not still inwardly favour Navarre, [that he does not]. I said
+know what security there could be that the said Count does not still inwardly favour Navarre. To which I said
 that it would be a great security if he himself went to make war on him. While I was talking with him, the Cardinal of
 Vendôme came in, who asked me whether I had had any answer about the absolution of his brothers, showing that the delay
 weighed on him […], since the Estates were about to open. I said that time did not allow that answer to have come yet,
@@ -62,7 +62,7 @@ Count had obtained absolution from Our Lord, this trouble would not have happene
 be found was to do nothing more until an answer came from Rome on the matter of that Count. And His Majesty showing
 that he would do it willingly, were he not [afraid] of displeasing the Cardinal of Vendôme, I told him that I begged him
 to have more care for his own service than for pleasing others. His Majesty told me that this was right, but begged me
-to speak of it myself with the said Cardinal. I said I had done so, but that […] also, as in matters of the honour of
+to speak of it myself with the said Cardinal. I said I had done so, but that His Majesty should also, as in matters of the honour of
 the Church and in his service, he would not depend on the will of others but govern himself by reason alone. His
 Majesty answered that this was as it should be, and that he would speak of it with the Queen his mother; and because
 it was publicly said […]

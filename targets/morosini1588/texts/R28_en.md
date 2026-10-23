@@ -13,7 +13,7 @@ Holiness, urged him to try to draw Marshal Montmorency to himself, and that in t
 Holiness towards him; and therefore he had resolved to send him a gentleman — he said it would be Signor Girolamo
 Gondi — to set before His Holiness everything he intends to do for the benefit [and] [?satis]faction of the said
 Montmorency, in order to [with]draw him from the friendship of the former King of Navarre and the other heretics and
-bring him into his service; and because, His Holiness recognising [f. 142v] [not] only as reasonable but also as
+bring him into his service; and because, His Holiness recognising [f. 142v] not only as reasonable but also as
 important all the securities he intends to give the said Montmorency, [?…] she might with her authority interpose
 herself to bring this business to a good end, he wished to hear my opinion; but that above all […] it should remain
 most secret, because if it became known [?there would not be lacking] many who would try to disturb this

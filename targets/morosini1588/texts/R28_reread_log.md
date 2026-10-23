@@ -56,3 +56,34 @@ figure-context corrections).
   the image (no outside blocker; a further image pass might close some).
 - 144v ll. 7–9: paper damaged (DECODE's comment, confirmed on the image): blocker = damage.
 - 145r ll. 3–4: the transcription line breaks off in corrupt characters; the closing formula is unread.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad `reread/r2p/crops`),
+cancellation strokes looked for, parsed (`r2p_parseall.py`). R28's ink has spread and the verso's figures show
+through as long diagonal strokes over the lines (142r l. 2, 142r l. 8, 143v l. 9); they look like crossings but could
+not be told for certain from show-through, so nothing was treated as cancelled.
+Filled:
+- 142v l. 1 "non solo": "7 1 | 4 9 1 5 0 9" = non solo (71 is the word sign non; it was supplied).
+- 142v l. 5 "desiderauano": "... 26 35 00 21 37 21 01 9", kept as written.
+- 142v ll. 6-7 "tuto": "6 3 7 = | 1 5 1 9 1" (= the encipherer's hyphen).
+- 143r l. 22 "non temino": "7 1 6 5 ..." (71 non).
+Left, with blockers:
+- 142r l. 2 the opening "1 1 1 2 2 7 9 6 5 5 4 4 9 0 8" and "mi facese […] piede" ("1 7 1 3 0 2 1 5 0 5 2 5 0"): both in
+  a stretch with figures obscured by show-through. Blocker: illegible.
+- 142r ll. 7, 9, 23 (144v) "sig[ri]" (the abbreviation, nothing written), 142r l. 8 "[?di] Gondi" (8 26, in the
+  stretch obscured by show-through of l. 8), 142r l. 21 "[?et] di [?sodi]sfatione" (no figures), l. 22 "di [ri]tirarlo" (5 1 7).
+  Blocker: no-key-material (l. 8: illegible).
+- 142v l. 3 "[?…]" (dotted 187, not in the key), ll. 6-7 "tuto […] uenise" ("1 6 6 4 1 7 1 6", undotted), l. 8
+  "[?mancariano]" ("8 2 0 2 1 0 1 2 5 2 [blot] 6 0 0 2 1 9 1 9"). Blocker: no-key-material (l. 8: illegible, a blot).
+- 143r l. 5 "[?con]" (79 = come), l. 12 "habi[a]", ll. 18-19 "[?stimaria]" ("4 5 1 | 1 1 2 0 2 1 0 0 1 7 2"), 143v
+  l. 2 "[?tanto]" (21 01 51 9, no t), l. 23 "[?…]riano" (nothing written). Blocker: no-key-material.
+- 143v ll. 9-10 "faria […] Disi": "2 6 1 5 0 9 1 0 1 5 1 1 7 3 5 0 0 3 | 8 5 0 1 5 3" with figures obscured by show-through before it.
+  Blocker: illegible.
+- 144r l. 4 "su[e]", l. 11 "egli […] daria" ("0 1 3 9"), l. 16 "donatiu[o]", l. 17 "scudi […]" ("6 9 5 6 1 2 9"), l. 22
+  "habia […]" ("5 8"). Blocker: no-key-material (l. 22: too-short).
+- 144v ll. 5-6 "[?seminare]" ("4 3 2 7 0 1 2 1 | 0 0 5"), l. 6 "[?le]" (no figures), ll. 7-8 "fare […] la buona"
+  ("8 1 7 1 5 | 1 9 4 9 1 0 0 1 7 9 6 2 6 2 1"), "[la quale]" ("1 7 1 3 1 3 1 1 2 2 1 2"), l. 17 "ilustris[simo]" (the
+  abbreviation). Blocker: no-key-material.
+- 145r l. 3 "auis[o]" and ll. 3-4 the close ("8 4 2 2 7 111. 2 | 2 7 9 1 5 4 9 6 0 166. 0 1 2"). Blocker: no-key-material.
+Result: 4 holes filled; 31 left, each with its blocker.

@@ -41,3 +41,29 @@ partly carried words in about 1,150 words; all sentences carried except the firs
   (174r l. 16); "[141]" (172v l. 4); one stretch before "esendo nato" (172v l. 2). The transcribed figures do not
   parse; most were not re-checked on the image (no outside blocker; left for a second image pass). Rome's
   decipherment (Francia 27) would settle them (physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad `reread/r2p/crops`),
+cancellation strokes looked for, parsed (`r2p_parseall.py`). As on R30, long diagonal strokes lie over runs of figures
+(173r l. 17, 174r ll. 14-16, 172r l. 8, 174v l. 20); enlarged (174r l. 15) they are the verso showing through the
+spread ink, not cancellations, but they make the runs hard to read.
+Filled:
+- 173v l. 12 "dar[?li] hora": "26 21 00 | 50 7? | 14 91 00 2": the figures give hora, not alhora; the li stands next to
+  a figure obscured by show-through.
+Left, with blockers:
+- 173r l. 2 opening "9 9 1 2 1 2 5 2 7 7 9 165. 0 0 9 1 0 5 8": as transcribed, no parse. Blocker: no-key-material.
+- 173r l. 9 "Hiero[n]imo": a blot where the n would stand. Blocker: illegible.
+- 173r l. 17 "[?sia]" (4 17 171, in a stretch obscured by show-through), 174r ll. 14-15 "gli […] che" and l. 16 "questa […] il quale"
+  (lines obscured by show-through). Blocker: illegible.
+- 173v l. 6 "[?io]" (171), l. 9 "[de] come [?lei]" (26 35 | 79 | 50 5 171: lei is carried but the sense wants le).
+  Blocker: no-key-material.
+- 174v l. 1 "apost[olica]" (the abbreviation), l. 20 "[?deta]" ("2 6 3 5 3 5 2", in a line obscured by show-through). Blocker:
+  no-key-material (l. 20: illegible).
+- 172r l. 1 "[?uenuto]" ("3 7 1 1 9"), l. 4 "scriuer[e]", l. 8 "[?posa]" (70 91 54 5 = pose, figures obscured by show-through after it),
+  l. 11 "[191 = Auignone?]" (dotted 191, not in the key), l. 20 "[con]" (a null 8), l. 21 "[che]" (a lone 1), l. 22
+  "Ruc[e]lai" (00 37 25 25 at the line end). Blocker: no-key-material.
+- 172v l. 1 "[il]" (nothing written), l. 2 "Loreno […]" ("8 0 3 5 1 7 9 7 5 0 7"), l. 4 "[141]" (clero, which does not
+  fit), l. 7 "Alt[ezza]" (abbreviation), l. 8 "[?ui]" (173), ll. 9-10 the close (ended by a rule). Blocker:
+  no-key-material.
+Result: 1 hole partly filled; 25 left, each with its blocker.

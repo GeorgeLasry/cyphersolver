@@ -58,3 +58,27 @@ fits the transcribed figures; the image cannot be compared figure by figure; Fra
 - Not checked in this pass: 293r ll. 2, 5, 8, 10, 19; 293v ll. 5, 10-11, 19, 21; 294r l. 8. R40 is not counted as done.
 - Finding for the remaining records: some holes are cancelled stretches (crossed through by the encipherer) that
   DECODE's transcription gives as ordinary figures; each hole should be looked at for cancellation strokes.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+The rest of R40 (after r2m's 293r ll. 15 and 21): each hole located (`research/reading_audit/r2p_holes.py`), its line
+looked at on the image (scratchpad `reread/r2p/crops`), cancellation strokes looked for (besides r2m's two looped
+cancellations on 293r, the dark strokes over 293r ll. 8-10 and 293v ll. 10-21 are show-through), the figures parsed
+(`r2p_parseall.py`).
+Filled:
+- 293v l. 21 "monsig. di Cenagli": "25 35 01 21 40 50 17", every letter carried (was "[?Cenagli]").
+Left, with blockers:
+- 293r l. 2 "[…] N S": "7". Blocker: too-short.
+- 293r l. 5 "confini dela [?Sauoia] et dela": "1 9 6". Blocker: no-key-material.
+- 293r l. 5 "dela Bresa [?ui] erano intorno": "8 1 7". Blocker: no-key-material.
+- 293r l. 8 "prouisioni dopo [?longhi] discorsi fu": "5 0 9 1 0 1 4 0 5 4 1 7 1" (best parse "longesi"). Blocker: no-key-material.
+- 293r l. 10 "milia Suizeri [et] di oto": "(none)". Blocker: nothing written there; no-key-material.
+- 293r l. 10 "Lanzi con [?Frech] et di": "3 0 1 3 5 2 5 1 4 8" (best parse "unech"). Blocker: no-key-material.
+- 293r l. 19 "de Lanzi [?Frech] et con": "3 0 1 3 5 2 5 1 4 8" (best parse "unech"). Blocker: no-key-material.
+- 293v l. 6 "che ne […] uenire che": "3 0 3 7 1 9 1" (best parse "fuo"). Blocker: no-key-material.
+- 293v l. 10 "è uenuta […] ho ben": "8 1 7 3 7" (best parse "iu"). Blocker: no-key-material.
+- 293v l. 11 "ben ritrouata […] deto le": "1 161^. 6". Blocker: too-short.
+- 293v l. 19 "risolutione dela […] S M": "1 4 3 1 7 1 5 0" (best parse "huil"). Blocker: no-key-material.
+- 294r l. 7 "Di quello [che] sucederà non": "(none)". Blocker: nothing written there; no-key-material.
+- 294r l. 8 "tenerla auisata […]": "167^. 4 7 9 2 2 7 9 0 0 5 5 5 4 7 9 7 166^. 9 4 7 2" (best parse "[u.s."). Blocker: no-key-material.
+Result: 1 hole filled; R40 is now checked on the image throughout; 14 left (with r2m's two), each with its blocker.

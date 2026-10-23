@@ -29,17 +29,17 @@ dela lega, [che] corre grande fortuna. Io gli ho dato un pasaporto et gli ho ins
 facia. I diti suizeri uengono a Langres, et di là io credo che e' si pasarano a [?le] porte di Digion, et di là a
 Authun, di Dezize. Questo dì [?x] di giugno 1589. Uostro più che humilisimo et obedientisimo seruitore, Regnault.
 
-[…] tradutione del giuramento fato da quelli dela cità di Molins al dì d'hogi [?16] giugno 1589, ala presenza di mons.
+[…] tradutione del giuramento fato da quelli dela cità di Molins al dì d'hogi 16 giugno 1589, ala presenza di mons.
 dela Guicha, consigliere del Re nel suo consiglio priuato di stato, gran mastro dela artigliaria di Francia et
 luogotenente [?generale] per S. M.tà nela sua armata di stranieri di suizeri. I consoli et escheuini, manenti et
-habitanti dela uila et [fa]uborghi di Molins nel Borbones[e], congregati nel castelo di Molins, hano unanimem[ente]
+habitanti dela uila et [fa]uborghi di Molins nel Borbonese, congregati nel castelo di Molins, hano unanimem[ente]
 fato et prestato il giuramento di fedeltà al Re nostro sire Henrico terzo, per la gratia di Dio Re di Francia et di
 Polonia, et nele mani di mons. di Cheseron, logotenente generale per S. M.tà nel [?gouernamento] del deto paese, et
 promeso sopra la loro fede, uita et honore, et nela loro lealtà et conscienza, di uiuere et morire nela religione
 catolica apost[olica] et romana, soto l'obidienza di S. M.tà, et di non partirsene in alcuna maniera, né intraprendere
 o fauorire, in che modo si sia, gli inimici del suo stato et persona, et di restare suoi fedeli [f. 525r] sogeti et
 humilisimi seruitori, [et] di esa et difenderla uerso et contra tuti, come esendo loro re legitimo et sourano, et
-[?obedire] ali comandamenti che li sarano fati tanto da mons. di Cheseron che altri luogotenenti generali di S. M.tà per
+ubidire ali comandamenti che li sarano fati tanto da mons. di Cheseron che altri luogotenenti generali di S. M.tà per
 seruitio di quello; et per questo efeto hano rinuntiato et si sono partiti da tute le promese et asociationi che
 potesero hauere fate in contrario, se alcune ce ne ha. In testimonio di che quelli sodeti habitanti che sanno segnare
 hano segnato, et per lo risguardo di coloro che non sanno segnare hano dati li loro nomi, che sono stati trascriti dal
@@ -63,5 +63,5 @@ notaio dela signoria di Borbones[e], nel fine dele presenti. […]
 - "Questo dì [?x]" (524v l. 4): "2 6 1 7 1 1 1 8": di + 11 (the letter x, French "dix"?) or the day 11; "[?16] giugno"
   (524v l. 6): "8 1 6" before giugno: 16 in plain figures, or 16 = et.
 - "[?gouernamento]" (524v l. 19): "4 0 9 1 3 7? 3 5 0 0 1 0 2 1 2 0 3 5 0 3 5 1 9".
-- "[?obedire]" (525r l. 3): "1 6 8 2 6 3 4 2 1 7 2 6 1 7 0 0 5" (et, 8, d? 34? i d i r e).
+- "ubidire" (525r l. 3): "16 8 26 | 3 42 17 26 17 00 5" = et (null 8) d(i) u b i d i r e, as the figures spell it (r2p).
 - The last line (525r l. 13: "8 4 9 2 7 5 9 1 1 2 2 166 …") breaks off in corrupt characters.

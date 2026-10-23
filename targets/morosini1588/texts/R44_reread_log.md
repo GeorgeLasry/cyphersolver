@@ -40,3 +40,20 @@ partly carried words in about 640 words; every sentence of 313r–314r carried e
 - 313r l. 3 ("che […] si diceua"), 313v l. 9 ("come […] bene"), 314r l. 1 (eight figures before "monsignore") and the
   close on 314r ll. 9–11: the image shows the figures as transcribed and they do not parse. The start of 315r is on a
   sheet not in the record; its last line breaks off. No outside text (Francia 27: physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean, the encipherer added "21" above two places on 313v), cancellation strokes
+looked for (none), the figures parsed (`r2p_parseall.py`). Nothing could be filled.
+Left, with blockers:
+- 313r l. 2 "Quando [?io] scrisi hieri": "7". Blocker: no-key-material.
+- 313r l. 3 "Guisa che […] si diceua": "4 1 7 2 1 7 1 0 4 0 5 0 8" (best parse "siaingen"). Blocker: no-key-material.
+- 313v l. 7 "et un [f] luso di": "(none)". Blocker: nothing written there; no-key-material.
+- 313v l. 9 "uita come […] bene dicono": "4 1 5 1 7 1 7 1" (best parse "stii"). Blocker: no-key-material.
+- 313v l. 12 "l arciuescouo [di] Lione in": "(none)". Blocker: nothing written there; no-key-material.
+- 314r l. 1 "[…] Monsignore legato": "0 0 9 1 2 7 0 8" (best parse "rozp"). Blocker: no-key-material.
+- 314r l. 7 "il fine [?io] uederò dimani": "(none)". Blocker: nothing written there; no-key-material.
+- 314r l. 10 "mostrarne risentimento […] heretici […]": "(none)". Blocker: nothing written there; no-key-material.
+- 314r l. 10 "[…] heretici […]": "7 9". Blocker: too-short.
+Result: 0 holes filled; 9 left, each with its blocker.

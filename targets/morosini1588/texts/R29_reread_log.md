@@ -50,3 +50,24 @@ No outside blocker was found for these; they do not parse under any slip tried (
 - 153r l. 15 ("1 1 3" after "dele");
 - 153v l. 1 (4 5 1 7 2 0 5 between "poche" and "parole") and the last line (4 2 2 7 9 1 2 1 3^. 0 1 2 7 4 2 9 6 0 1 0 2).
 Rome's decipherment (Segr. Stato Francia 27, per Hübner) would settle them (physical access).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad `reread/r2p/crops`),
+cancellation strokes looked for, parsed (`r2p_parseall.py`). Dark diagonal strokes over figures on 152r l. 21, 152v l. 4,
+153r l. 2 and 153r l. 4 are mostly show-through from the verso; none is clearly a cancellation.
+Filled:
+- 152r l. 7 "qui": the image has "9 7" (DECODE "9 1"): 97 = qui.
+Left, with blockers:
+- 152r l. 2 opening "5 5 4 7 2 2 1 2 1 6 9 5 2 1 2 1 8": as transcribed, no parse. Blocker: no-key-material.
+- 152r l. 9 "[?Nouembre]": "9 1 9 [blot] 1 3 7 3 5 0 2 4 2 0 0 3 5" (no 01 for the n). Blocker: illegible.
+- 152r l. 16 "l[e]" (50). Blocker: no-key-material.
+- 152r l. 21 "catolica […] a fine": "17 10 [obscured] 165 2 30 [obscured] ..." = in ... quello ...: figures obscured by show-through inside.
+  152v l. 4 "religione […] et che": figures obscured by show-through at the line start, then "5 6 5 0 2 2 2 6". Blocker: illegible.
+- 153r l. 2 "si[?a]" (4 17 171), l. 22 "[?inteso]" ("1 7 1 9 1 3 5 4 5 1 9 1" = io + reso). Blocker: no-key-material.
+- 153r l. 4 "[?romori]": "7 1 1 [obscured] 2 0 9 1 0 0 7 8" (mori after an obscured figure). Blocker: illegible.
+- 153r l. 15 "dele […] sodete": nothing written. Blocker: no-key-material.
+- 153v l. 1 "poche […] parole" ("4 5 1 7 2 0 5", sime), l. 2 "[?con]" (25 9 = co), l. 4 "[?comandato]" ("1 4 2 5 9 1 2 0 ...":
+  one letter short either way). Blocker: no-key-material.
+- 153v ll. 4-5 the close "8 4 2 2 7 9 1 2 130. 1 | 2 7 4 2 9 6 0 1 0 2", ended by a rule. Blocker: no-key-material.
+Result: 1 hole filled; 13 left, each with its blocker.

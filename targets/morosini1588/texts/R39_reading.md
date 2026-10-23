@@ -26,7 +26,7 @@ douese fare caso che il Re di Spagna si uolese muouere in fauore del duca di Sau
 mantenuto che quella Maestà non l[o] faria, [f. 289v] non lo comportando il proprio suo interese; et che quando pure
 egli si uolese dichiarare, egli mostraria al[a] S. M.tà il modo facilisimo per fargli perdere afato in pochi mesi tuti
 li Paesi Basi, esendo in mano sua d'impedirgli le uitouaglie et i socorsi di genti et di danari per mantenersi in quelle
-parti. [I]o non poso sapere se in efeto siano uere tute queste cose [?che] pure si uadino dicendo per metere paura al
+parti. Io non poso sapere se in efeto siano uere tute queste cose [?che] pure si uadino dicendo per metere paura al
 sig. duca di Sauoia, ma non debo lasare di darne conto a V. S. Ill.ma, esendo cose di così grande importanza et
 consequenza; lei poi le meterà in quella consideratione che parerà ala singolar sua prudenza. Quanto a me, uedo segni
 asai manifesti di guerra, et le prouisioni pare a me che caminino gagliardam.; tutauia potria esere che il desiderio

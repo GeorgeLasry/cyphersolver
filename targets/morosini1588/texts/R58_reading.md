@@ -35,7 +35,7 @@ incaminata S. M.tà, che hora si ritroua padrona di tuti i ponti che sono sopra 
 et dicono che sia risoluta d'andare diritam[ente] uerso Parigi. Per doue dicesi che sono anco incaminati li suoi
 suizeri, che di nuouo uengono incontro, ai quali haueua S. M.tà inuiato il duca di Longauila in iscambio di mons. dela
 Guiscia, che era prima stato destinato a questa carica et partito ancora con buona compagnia; ma due giorni dopo hebe
-lettere [?del] Re con le quali gli comandaua di ritornarsene in queste parti del Borbonese, dicendo che presto gli
+lettere del Re con le quali gli comandaua di ritornarsene in queste parti del Borbonese, dicendo che presto gli
 inuiar[i]a gente per fare la guerra in Ouernia contra quelli dela lega. Si dice da altra parte che il duca di Umena
 haueua ripreso Montereo et anco castelo […], et che s'incaminaua per andare a combatere li suizeri del Re prima che si
 posino unire con S. M.tà, et che mons. di Nemours usaua ogni diligenza a Lione per hauere danari per dare ai suizeri
@@ -45,7 +45,7 @@ Borgogna ala coda de gl'altri suizeri heretici per combaterli. Gli afetionati de
 suizeri et raitri, 30 milia persone in esere, et che il sig. duca di Umena ha pochisima gente; et gli afetionati dela
 lega dicono che egli ha più di 25 milia persone, et che il Re non ne ha sei milia, et che i suizeri heretici, che gli
 altri dicono che […] molto inanzi, non hano ancora trouata uia per entrare in Francia. Onde io non saprei che
-afermare a V. S. Ill.ma, se bene io [f. 534r] ho parlato con un[o] del duca di Niuers, che mi dice hauere lui medesmo
+afermare a V. S. Ill.ma, se bene io [f. 534r] ho parlato con uno del duca di Niuers, che mi dice hauere lui medesmo
 lasato i sodeti suizeri a Langres già molti giorni; ma egli ancora potria dire il falso. In questo punto è uenuto a
 uedermi mons. di Forges, che partì mercordì pasato da Pluuiers, [?doue] dice che il medesmo giorno era anco partito il
 Re per Etampes, hauendo hauto auisi dal Nauarro che i borghi di quella tera erano tuti per S. M.tà, et che già
@@ -59,7 +59,7 @@ in una cesta, nela quale soleuano portargli il mangiare in castelo: cosa asai di
 di dire a V. S. Ill.ma quello che questo mons. mi ha referto, se bene io gli presto poca fede, esendo molto partiale
 seruitore del Re. [?Adeso] certo che uiene dala corte, hauendomi [p]ortate lettere del sig. Galeazo Fregoso, et dele
 nuoue si rimete a quello che intenderò da eso mons., non mi è parso douer lasare di darne conto a V. S. Ill.ma, che le
-meterà in quella consideratione che parerà ala singolar sua [prudenza]. […]
+meterà in quella consideratione che parerà ala singolar sua prudenza. […]
 
 ## Notes on the figures
 

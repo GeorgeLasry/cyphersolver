@@ -52,3 +52,30 @@ Grade B: sentences hold; more holes than R46, several figure-context corrections
 - 400r l. 5 ("1 5 3"), 400v ll. 4 and 7, 401v ll. 20–21 (what the Pope would advise the King to do), 402v ll. 10 and 12:
   short stretches with no parse under the slips tried. Not checked on the images (no outside blocker known; left for an
   image pass).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean, the ink faint on 401v), cancellation strokes looked for (none), the figures
+parsed (`r2p_parseall.py`). Nothing could be filled.
+Left, with blockers:
+- 399r l. 2 "[…] hauendo io": "171^. 9 4 2 7 5 2 0 1 2 0 8" (best parse "iobicnran"). Blocker: no-key-material.
+- 399r l. 4-5 "uoglio riuerire [?obedire] et seruire": "9 4 2 3 5 2 0 1 7 1 | 0 1 5 3" (best parse "obemine"). Blocker: no-key-material.
+- 400r l. 1 "[…] rauo di": "(none)". Blocker: nothing written there; no-key-material.
+- 400r l. 5 "la quale […] non ho": "(none)". Blocker: nothing written there; no-key-material.
+- 400v l. 4 "che lui […] le haueua": "7 1". Blocker: too-short.
+- 400v l. 7 "lo facese […] non ricusaria": "(none)". Blocker: nothing written there; no-key-material.
+- 400v l. 8-9 "duca hauesero ca[u]sa di lamentarsi": "2 2 1 3 7 | 4 5 2 1 2" (best parse "aauisa"). Blocker: no-key-material.
+- 400v l. 9 "di lui […]": "8 2 2 1 5 2 4 7 0 0 171^. 5 4 9 7 111^. 0 0 7 0" (best parse "acsirisoi[il"). Blocker: no-key-material.
+- 401r l. 2 "[…] hauendo questa": "1 0 7 7 5 2 4 7 5 0 1 0 0 5 8" (best parse "niicsienre"). Blocker: no-key-material.
+- 401r l. 14 "andare là [a] parlare senza": "2". Blocker: too-short.
+- 401v l. 2-3 "uenise qualche [?ordine] da N": "1 9 3 | 0 0 2 6 1 7 0 1 5" (best parse "rofmtine"). Blocker: no-key-material.
+- 401v l. 8 "il sig [?cardinale] di Borbone": "113^.". Blocker: no-key-material.
+- 401v l. 20 "di fare […] per impedire": "0 1 7 3 6 3 7 0 9 1 5 1 3 5 4 5 1 5 3" (best parse "nutupotese"). Blocker: no-key-material.
+- 401v l. 21 "non ci [?sia] [?in] Francia": "4 1 7 1 7 1 1 7 1" (best parse "siii"). Blocker: no-key-material.
+- 401v l. 22 "altro Re […] come era": "8 5 6 5 0 3 7 1 1 7 1" (best parse "tluri"). Blocker: no-key-material.
+- 402r l. 21 "di Trento [?et] che loro": "1 6". Blocker: no-key-material.
+- 402v l. 10 "ela si […] in buona": "7 1 8". Blocker: too-short.
+- 402v l. 12 "di fare [?lo] anco aprouare": "0 2". Blocker: no-key-material.
+- 402v l. 14-15 "l autorità […]": "8 2 | 4 7 5 4 0 0 1 112^. 2 6 9 6 7 4 4 0 1 1 7 1 0 5 5 6 9 0 1 0" (best parse "stegn[l'imperatore]atotispnileetnn"). Blocker: no-key-material.
+Result: 0 holes filled; 18 left, each with its blocker.

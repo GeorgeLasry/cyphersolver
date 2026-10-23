@@ -56,3 +56,30 @@ throughout; the holes are short; one transcription line corrected from the image
   image).
 - The junction 382v/383r: a leaf probably missing (catchword mismatch) — outside blocker.
 - 384r ends in mid-sentence (the rest of the letter is not in the record).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean), cancellation strokes looked for, the figures parsed (`r2p_parseall.py`).
+Withdrawn:
+- 383r l. 2 "Se poi […] riesce": the lone figure there is struck through with two strokes by the encipherer (a
+  cancellation, as on R40): no word stands between "poi" and "riesce".
+Left, with blockers:
+- 381r l. 3 "[…] con l": "9 2 0 5 2 7 3 1715^. 8" (best parse "omciuit"). Blocker: no-key-material.
+- 381r l. 15 "et nobis [?et] replicandole in": "8 2 6". Blocker: no-key-material.
+- 381r l. 18 "lasciò di publi[c]are nei Stati": "7 0 3 7 2 4 5 0 1 7 2 1 0 0 5" (best parse "publiare"). Blocker: no-key-material.
+- 381v l. 20 "suo regno [?et] che pregaua": "2 6". Blocker: no-key-material.
+- 381v l. 20 "che pregaua [?dar] […]": "6 2 1 7 1 1 9 5 4" (best parse "dixos"). Blocker: no-key-material.
+- 382r l. 15 "cifre di 1[8?] di Nouembre": "1 8". Blocker: too-short.
+- 382v l. 5-6 "particolari fastidiosi […] tanto lontani": "4 5 1 7 2 0 | 1 7 1" (best parse "simi"). Blocker: no-key-material.
+- 382v l. 9 "posi hauere [?le] prestata alcuna": "0 5". Blocker: no-key-material.
+- 382v l. 20 "con magior […]": "8 3". Blocker: too-short.
+- 383r l. 1 "[…] ere magiore": "3 7". Blocker: too-short.
+- 383r l. 4 "o da […] né uoglia": "2 0 5 4 9 1 7" (best parse "msoi"). Blocker: no-key-material.
+- 383v l. 3 "ationi mie […] prego con": "8 1 7 1 0 5 6" (best parse "ilt"). Blocker: no-key-material.
+- 383v l. 7 "il Re [?et] il regno": "8 2 6". Blocker: no-key-material.
+- 383v l. 10 "del contrario conuenir[à] a esere": "1 9 3 7 3 5 0 1 1 7 0 0" (best parse "conuenir"). Blocker: no-key-material.
+- 383v l. 13 "N S […] Et per": "9 2 2 0 0 3 5" (best parse "oamfe"). Blocker: no-key-material.
+- 384r l. 8 "ma l un[o] et l": "1 7 3 0 1" (best parse "un"). Blocker: no-key-material.
+- 384r l. 16-17 "altram[ente] auisata […]": "8 4 2 0 1 0 9 2 7 | 196^. 1 7 3 4 2 0 0 7 0 7 2 2 1 0 0" (best parse "mnoai[sauoia]riscarpiaar"). Blocker: no-key-material.
+Result: 1 hole withdrawn (a cancelled figure); 18 left, each with its blocker.

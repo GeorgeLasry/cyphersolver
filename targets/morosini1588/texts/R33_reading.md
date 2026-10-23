@@ -78,7 +78,7 @@ del sig. Dio et il beneficio di questo regno; con che mi partii, et dopo non ho 
 quelli che ho stimato poter giouare a questo negotio. [?Ma] da qualch'uno mi è stato deto che io mi riscaldauo tropo, et
 che N. S. non la pigliaua di questo modo, perché haueua comandato al ambasciatore di Francia residente costà, quando da
 principio fu dimandato neli capitoli proposti da quei dela lega la [f. 192r] publicatione del concilio, che scriuese al
-suo Re che di ciò non si metese in pena, perché ela non intende[u]a di uolere che per forza si [p]ublicase il concilio,
+suo Re che di ciò non si metese in pena, perché ela non intendea di uolere che per forza si [p]ublicase il concilio,
 ma di buona uolontà dela S. M.tà; che però io non doueuo fare più di quello che uoleua N. S. Io risposi che io sapeuo
 molto bene quali fosero li miei ordini, et che però se il Re credese che questo fose motiuo mio, che ne poteua
 [scr]iuere a N. S., perché quando io hauesi trapasato le mie comisioni haurei riceuto quella riprensione che meritauo.

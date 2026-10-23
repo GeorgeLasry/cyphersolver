@@ -23,7 +23,7 @@ presenti bisogni […].
 
 […] il marsciale di Res, che teme asai questi acidenti, in un longo ragionamento che ha fato meco hogi conclude che,
 se N. S., come padre dela christianità, non interpone uiuamente l'autorità sua così con il Re come anco con gli altri,
-non uede rimedio che questo regno non si perda. [?Onde] io, per intendere quello che egli uolese dire che potese in
+non uede rimedio che questo regno non si perda. Onde io, per intendere quello che egli uolese dire che potese in
 questo caso fare la Santità di N. S., dopo longo circuito di parole dise che questo era ricercare d'intendere le
 pretensioni del'una et l'altra parte, dar la ragione et il torto a che l'hauese, procurando poi con la soprema sua
 autorità di fare che ognuno si contenti del honesto; et che non c'era altro rimedio a questo male.
@@ -66,7 +66,7 @@ che sarà in me per impedirlo, come non pretermeto anco al presente di fare tuti
 - 233r l. 1: "4 5 1 9 1 8" before "per procurare" (s o + null) is the end of a word from a page not in the record.
 - 233r l. 4: "8 0 0 4 4 5 7 0" closes the paragraph before a drawn line; it does not parse (checked on the image).
 - 233r l. 5: "7 0 5 1 4 9 2 1 1 5 0 0 8" before "il maresciale" does not parse into words (checked on the image).
-- "[?Onde] io" (233r l. 11): figures 0 1 2 6 5 1 7 1 9 = n d e, io; the o of onde is not written.
+- "Onde io" (233r l. 11): figures 8 9 0 1 2 6 5 1 7 1 9 = (null 8) o n d e, io; the 9 is on the image (r2p, 23 Oct 2026), so onde is carried.
 - "dar la ragione" (233r l. 16): 2 6 2 6 2 1 1 8 = d (d) a r + null; one 26 doubled.
 - 234r l. 1: "0 2 7 9 5 0 1 6^. 6 4 1 0 8" before "quanto era stata": m, come (79), then a dotted 166 and figures that
   do not parse; the sentence needs no more than "come … quanto … tanto".

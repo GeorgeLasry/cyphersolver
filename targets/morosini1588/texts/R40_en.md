@@ -22,7 +22,7 @@ he already holds me suspect in this business) my efforts to turn him from though
 has not been willing to open himself to me as he used to. I shall try to speak again with the King and do all in my
 power to bring him to the end Our Lord shows he desires; but I fear my counsels will be of little profit. Now it seems
 that with this resolution of the […] His Majesty has drawn very close to the Duke of Guise, and on this account it is
-believed that he has dismissed Monsieur de [Cenagli?], head of his finances, and the physician Miron, his [f. 294r]
+believed that he has dismissed Monsieur de Cenagli, head of his finances, and the physician Miron, his [f. 294r]
 brother, for being little liked by the said Guise, although before they were among His Majesty's most intimate and
 trusted men. It is said too that he will do the same with Monsieur d'O and some others who have always shown themselves
 opposed to the said Monsieur de Guise. Of what follows I shall not fail to keep you informed. […]

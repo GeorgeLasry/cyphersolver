@@ -52,3 +52,27 @@ figures at 357r l. 7, the closing (357r l. 24). No parse fits the transcribed fi
 ## Word-by-word alignment (`reread_b00_align.py`, REREAD_BRIEF step 3)
 
 - First run TOTAL R45: 2076 words, 2 supplied, 10 partly. Changed quell'altra → quella altra (165), le esplicai → l'esplicai, acciò → aciò; bracketed concili[i]. Left as artefacts: incapace and propria (letters inside spurious dotted 215 and 317).
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean), cancellation strokes looked for (none), the figures parsed (`r2p_parseall.py`).
+Filled:
+- 360r l. 10 "incapace": "171 01 25 21 70 21 5 25" (DECODE's dot on 215 is not on the image): every letter carried.
+Left, with blockers:
+- 359r l. 1 "[…] se bene": "4 4 5 2 2 7 0 0 1 8" (best parse "sscapn"). Blocker: no-key-material.
+- 359r l. 1 "prima che ritornar[e] al audientia": "1 1 7 1 5 9 1 1 3 0 1 2 1 4 5" (best parse "ritornas"). Blocker: no-key-material.
+- 359v l. 13 "conueniua a [?un] Re christianisimo": "9 8 2 1 2" (best parse "oa"). Blocker: no-key-material.
+- 360r l. 22 "che quello [?mi]": "0 2". Blocker: no-key-material.
+- 358r l. 11 "posi mai [pe] ruenire a": "(none)". Blocker: nothing written there; no-key-material.
+- 358r l. 15 "più animosam[ente] [?conspirarà] [?sperando] di": "2 1 2 0 1 1 7 2 0 9 1 4 5 2 1 2 0 8 1 9 4 4 1 7 0 0 2 1 0 0 2 9 9 4 6 4 1 7 1" (best parse "animosanospiraraquandosperi"). Blocker: no-key-material.
+- 358v l. 7 "meno aprouare […] che restino": "0 5 1 7 1 9 1 6" (best parse "liot"). Blocker: no-key-material.
+- 361r l. 6 "ma di [?5] del pasato": "8 5". Blocker: no-key-material.
+- 361r l. 12 "che i concili[i] generali confirmati": "1 9 2 5 1 7 5 0 7" (best parse "concili"). Blocker: no-key-material.
+- 361v l. 12 "uescouo di [?Eureus] et sotoscrita": "8 1 7 3 7 0 0 3 7 4 5 8" (best parse "uirus"). Blocker: no-key-material.
+- 357r l. 1 "nome dela [Santità di] N S": "(none)". Blocker: nothing written there; no-key-material.
+- 357r l. 6-7 "che non […] mi laso": "9 1 | 9 8" (best parse "ocon"). Blocker: no-key-material.
+- 357r l. 8 "ala burla [?non] mi tengo": "7 1". Blocker: no-key-material.
+- 357r l. 21 "l arciuescouo [di] Lione ma": "(none)". Blocker: nothing written there; no-key-material.
+- 357r l. 23-24 "ha fato […]": "8 0 | 2 7 111^. 4 2 0 0 1 7 1 0 2 2" (best parse "mi[il"). Blocker: no-key-material.
+Result: 1 hole filled; 15 left, each with its blocker.

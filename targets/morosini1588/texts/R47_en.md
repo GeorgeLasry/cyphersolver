@@ -15,7 +15,7 @@ council without any other condition or reservation — I told him that, to do we
 now, without further delay, publish the council in the same manner in which it has been published in all the [rest] of
 Christendom, and then send the personage to Rome to ask [f. 386v] Our Lord for the graces and privileges he desired,
 promising him in Our Lord's name, in accordance with the orders sent me by Your Most Illustrious Lordship, that in all
-honest and reasonable things he would be satisfied. They told me they feared this was perhaps [impossible] to do in that
+honest and reasonable things he would be satisfied. They told me they feared this was perhaps impossible to do in that
 way, because neither the people nor the parlements would accept it. I answered them that neither the people nor the
 parlements are called to the celebration of councils, but only the prelates, to whom [it belonged] to teach the others
 doctrine no less than morals; and that when this was confirmed by the Holy Apostolic See the people had no other

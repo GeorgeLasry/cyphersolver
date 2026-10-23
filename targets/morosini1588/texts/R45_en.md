@@ -28,7 +28,7 @@ the declaration he has promised against the said [f. 360r] Navarre, for it would
 aim was that Navarre should succeed him in this kingdom — a thing abhorred by all good men, and which His Majesty more
 than anyone ought to abhor in his own interest; since, Navarre being not only a heretic and enemy of God but also
 claiming the succession to this crown, His Majesty could never be safe from his plotting against his person to reach
-such greatness sooner; and that unless he were declared unfit and [?incapable] of the succession he would have a much
+such greatness sooner; and that unless he were declared unfit and incapable of the succession he would have a much
 larger following than if everyone knew he could never be King of France; and that he should take great care not to
 negotiate an accord with him without Our Lord's consent, because if he came to that I would leave France at once, and
 he must forgive me if I did it without coming to take leave of him. I begged him to consider his affairs carefully,

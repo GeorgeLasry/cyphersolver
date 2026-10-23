@@ -20,7 +20,7 @@ inuiolabilm.), as in R43. Marks: [?word] partly carried, […] unread, [962] a d
 
 ## Reading
 
-[f. 181r] Nel'asemblea, per uedere come l'autorità sua [?dia a] dare horamai [?a] questo negotio quel buon fine che si
+[f. 181r] Nel'asemblea, per uedere come l'autorità sua dia [a] dare horamai [?a] questo negotio quel buon fine che si
 desidera, et così […] mi ha promeso S. M.tà. È auertita (non pensi [?il sig.] duca di Sauoia […] di quanto che ha fato
 nel marchesato di Saluzo) [?che] tenga anco altri […] secrete nela Prouenza, et specialm[ente] [?nela] cità di
 Marsiglia et di Arles; per […] a quella uolta, et ha tiene per certo che subito finiti li Stati S. M.tà [s]e ne andarà a
@@ -40,8 +40,8 @@ uengono fati perché non posa usare del'indulto concesogli da N. S.; il che leua
 medesmo a V. S. Ill.ma, ma le dirò solame[nte] che io non ho mancato di farne con S. M.tà quello magiore risentimento
 che ho saputo et che conueniua per la dignità di N. S. et di cotesta santa sede; et nondimeno […] ho [?hauuto] che a
 S. M.tà dispiaceua asai d'intendere che il Parlamento di Renes hauese pasato tanto oltre, non solo […] nela bola […]
-prohibire al sodeto sig. cardinale l'esecutione di esa contra l'espreso ordine suo, che […] facese dare [?il]
-memoriale. [?Non] uederia di prouedere […] quello migliore modo che sarà posibile, et io dimani farò il sodeto
+prohibire al sodeto sig. cardinale l'esecutione di esa contra l'espreso ordine suo, che io le facese dare [?il]
+memoriale. [?Non] uederia di prouedere in quello migliore modo che sarà posibile, et io dimani farò il sodeto
 memoriale con il parere del sig. cardinale sodeto, et lo farò presentare a l'arciuescouo, né lasarò di fare ogni mio
 potere che sii riuocato et anulato l'aresto del Parlamento; et con i uescoui di quella prouincia farò anco quello
 oficio che conuiene per rimouerli dala contraditione che fanno agli ordini di N. S., se bene ad alcuni ho cauato che il
@@ -65,7 +65,7 @@ rimedio che Balagni ubidise. Con tuto ciò non potei hauere altra risolutione; n
 [?l'espeditione], et di quello che seguirà ne darò auiso a [161].
 
 Hogi ho ritornato a [?parlare] con S. M.tà sopra mons. d'Epernone et la Ualeta, et mi ha deto S. M.tà che è [?uero
-…]sima, et che si leuino di Prouenza, perché altrimenti quella prouincia era ruinata, né si [?poteua] a modo alcuno
+…]sima, et che si leuino di Prouenza, perché altrimenti quella prouincia era ruinata, né si potea a modo alcuno
 sperare che quei popoli fosero mai per contentarsi di ubidire a la Ualeta, hauendosi dechiarati tropo contra di lui;
 et che in quel cambio uoleua lasargli il [f. 183v] gouerno di Metz, et che in Bologna fose posto mons. di […] per
 lasare libero a mons. d'Epernone il gouerno d[i] Angolem, di [?Santonge] et di Cognac. Io disi a S. M.tà che temeuo che
@@ -74,7 +74,7 @@ mi replicò che per adeso non si poteua far altro, et che speraua che se ne cont
 
 Presentai a S. M.tà la bola dele confidentie, facendole sapere che N. S. per gratia speciale et per […] anime di questo
 regno l'haueua riformata et ridota a termine che nisuno con ragio[n]e ne poteua più contradire; che però la pregauo a
-farla publicare et inuiolabilm[ente] oseruare. Mostrò S. M.tà di hauere […] et dise che […] a tempo, che la faria
+farla publicare et inuiolabilm[ente] oseruare. Mostrò S. M.tà di hauere […] et dise che era uenuta molto a tempo, che la faria
 uedere et poi mi parlaria. Ho anco di nuouo ricordato a S. M.tà la publicatione del concilio di Trento, la quale mi ha
 promeso, et dimani in ogni modo ne tratarà, et perché neli Stati pure domani se ne ha da parlare. Ho fato instanza al
 sig. cardinale di Borbone che uoglia lui ancora ritrouarsi […]

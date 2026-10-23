@@ -20,7 +20,7 @@ hoped for every fatherly demonstration from Our Lord.
 
 As to Monsieur d'Épernon and La Valette his brother, [I] have not failed to do every good office; but since they would
 not accept the terms offered them by His Majesty [de], as I reported to Your Most Illustrious Lordship in other
-letters, I fear that matters are now reduced to a worse state, and that the King could hardly give [then] what he had
+letters, I fear that matters are now reduced to a worse state, and that the King could hardly give [him] now what he had
 offered them before. Nevertheless Monsieur de Mases, sent by the said Épernon, is still staying here, and is in some
 hope of a settlement; but I hope little from it, because affairs in Provence keep getting worse. On this account His
 Majesty is sending Monsieur de Sainte-Marie back into that province with orders both to La Valette and to Monsieur de

@@ -47,7 +47,7 @@ meno d'alcuno dei suoi ministri in Italia. Il che mi fa tanto più credere che n
 questa esere seguito di ordine di N. S., perché in efeto renderia a tuta la Francia odiosa la persona di N. S.; né si
 può sperare per qualsiuoglia sorte di ofici di rimouere S. M.tà et tuto il regno insieme dala ferma risolutione di
 fare la guerra al sodeto sig. duca se non restituise il marchesato, come V. S. Ill.ma haurà più chiaram[ente] inteso
-dal sig. Hieronimo Gondi, che partì di qui a li [?17] del presente, non si hauendo potuto spedire prima. Il che
+dal sig. Hieronimo Gondi, che partì di qui a li 17 del presente, non si hauendo potuto spedire prima. Il che
 seruirà [f. 257v] per hora di risposta anco a quel capo dela sua cifra uenuta con le lettere del ultimo del pasato,
 doue trata dele cose di Saluzo, ala quale, per breuità di tempo, incalciandomi la partita del ordinario, non poso più
 particolarm[ente] rispondere; ma con la prima ocasione non lasciarò di farlo in quelle parti che ne haurano bisogno.
@@ -63,7 +63,7 @@ particolarm[ente] rispondere; ma con la prima ocasione non lasciarò di farlo in
 - "a [?…] in Piemonte" (256v l. 14): "3 0 1 7 3 5 3 5 0 0 5" (f i u e e r e?) gives no word; "uiuere"/"risiedere"
   do not fit.
 - "che [?ui] pensariano" (256v l. 22 – 257r l. 1): "1 7 3 7" = i u.
-- "a li [?17] del presente" (257r l. 21): "8 1 7": a null 8 then 1 7 (i), or the day 17 in plain figures (cf. R28's
+- "a li 17 del presente" (257r l. 21): "8 1 7" then 26 35 05 (del) on the image: the day 17 in plain figures (r2p) (cf. R28's
   "8 2 0 0 8" = 200); Girolamo Gondi's departure date is not otherwise known here.
 - "da cardinale" (256v l. 10): 62 2 + 131 (cardinale di) + a stray 9.
 - Closing (257v ll. 7–8): "8 1 7 1 4 9 7 2 2 4 7 5 2 111 9 167 4 2 2 0 0 1 2 9 6" (the courtesy formula with V. S. Ill.ma)

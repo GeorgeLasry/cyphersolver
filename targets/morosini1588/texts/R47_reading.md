@@ -24,7 +24,7 @@ senza altra conditione o riserua, io le disi che a uoler fare bene et aquistare 
 senza altra dilatione, publicare il concilio nel modo isteso che è stato publicato in tuto il [?resto] dela
 christianità, et mandar poi il personagio a Roma per dimandare [f. 386v] a N. S. quelle gratie et quei priuilegi che
 desideraua, prometendole io in nome di N. S., conforme agli ordini mandatimi da V. S. Ill.ma, che in tute le cose
-honeste et ragioneuoli saria compiaciuta. Mi disero che temeuano che questo forse [?imposibile] di poter fare in quel
+honeste et ragioneuoli saria compiaciuta. Mi disero che temeuano che questo forse imposibile di poter fare in quel
 modo, perché né i popoli né i parlamenti l'acetariano. Io li risposi che né i popoli né i parlam[enti] sono chiamati
 ala celebratione de' concili, ma solamente i prelati, a' quali [?aperteneua] d'insegnare agl' altri non meno la dotrina
 che i costumi, et che quando ciò era confirmato dala santa sede apostolica non conueniua a popoli altra consideratione,
@@ -49,7 +49,7 @@ habia comeso nel suo seruitio, la suplico a non hauere di me alcuna pietà o mis
 [?aspri] et seueri castighi che si posino dare al più scelerato huomo del mondo; [?però] io, se non mi inganno,
 crederei che né apreso V. S. Ill.ma né apreso N. S. douese alcuno hauere hauta più fede di me, poiché non c'è alcuno
 che gli sia più obligato, oltre che credo di eser stato per gratia del Signor Dio da tuti quelli c'hano hauto
-pratica di me conosciuto per alienisimo dal uitio del'[in]gratitudine; et quando V. S. Ill.ma uorrà far proua dela
+pratica di me conosciuto per alienisimo dal uitio del'ingratitudine; et quando V. S. Ill.ma uorrà far proua dela
 mia fede et gratitudine, conoscerà di non hauere alcuno a questo mondo sopra di che posi ha[uere ma-] […]
 
 ## Notes on the figures

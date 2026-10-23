@@ -17,7 +17,7 @@ Marks: [?word] partly carried, […] unread, [word] supplied.
 
 [f. 152r] […] hieri sera giunse qui un corriere di ritorno da Firenze, mandato dala Regina Madre per la conclusione del
 matrimonio del Gran Duca con questa principesa di Lorena, et riporta che il sig. Horatio Rucelai fra quatro giorni
-sarà qu[i] per dare compimento a questo negotio, desiderando il Gran Duca che la sposa per tuto il mese di
+sarà qui per dare compimento a questo negotio, desiderando il Gran Duca che la sposa per tuto il mese di
 [?Nouembre] si ritroui a Marsiglia, doue la Regina Madre medesma pensa di acompagnarla. Questo corriere dice di eser
 stato ritenuto quatro giorni in Sauoia, non hauendo quel sig. duca uoluto lasarlo pasare, perché portase nuoua del
 impresa fata da S. Alt., la quale, dice eso corriere, che s'è impadronita di tute l[e] piaze del marchesato di Saluzo. Per
@@ -56,7 +56,7 @@ quale S. M.tà ha [?comandato] che si facia […].
 - "dala Regina Madre per" (152r l. 3): "1 1 6^. 6 4" = 116 + 64 (decoder: 166).
 - "del Gran Duca con questa principesa" (152r l. 4): "1 2 6 1 9 1 6^. 6" = 126 without its dot, 19 con, 166 with the
   dot on the 6.
-- "qu[i]" (152r l. 7): 9 1 (o) where 97 (qui) is wanted (1/7).
+- "qui" (152r l. 7): the image has 9 7 (qui); DECODE reads 9 1 (r2p).
 - "[?Nouembre]" (152r l. 9): 9 1 9 1 3 7 3 5 0 2 4 2 0 0 3 5 = o o u e m b r e; the first 91 for 01 (n)?
 - "medesma pensa" (152r l. 10): "?20." is not a code: 20 35 26 35 45 20 2 (medesma) 70 35 01 45 2 (pensa).
 - "quel sig. duca" (152r l. 13): 4 17 40 + 1 2 9 (129 without its dot); likewise "il sig. duca di Guisa" (l. 18).

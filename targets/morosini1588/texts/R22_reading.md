@@ -27,7 +27,7 @@ cifra. Quanto a presentare le facoltà dela legatione al parlamento, scrisi già
 di hauerle presentate […], così consigliato da persone molto principali et deuotisimi di N. S. et di cotesta Santa
 Sede. S. M.tà tutauia le tiene apreso di sé, non hau[en]do hauto tempo di uederle et considerarle; io non mancarò di
 fare quanto oficio che […] mi comete. Ma è da sapere che se le […] facoltà non sono uerificate dal parlamento, che tuti
-gli ati che io facesi sariano [f. 132v] senza [?anima] […], esendo il parlam[ento] quello che ha da farli esequire et
+gli ati che io facesi sariano [f. 132v] senza anima […], esendo il parlam[ento] quello che ha da farli esequire et
 ubidire, come anco sucede di tuti li editi et ordini che fa il Re medesmo; che se non sono uerificati dal parlamento
 non uengono ubiditi, portando così la forma del gouerno di questo regno.
 
@@ -39,8 +39,8 @@ con tuto che pensasi di potere dar hora in uigore di questo ordine la asolutione
 modo che la mi manda; del quale non si uolendo a modo alcuno contentare il conte di Suisone, dicendo che non si deue
 acusare [f. 133r] di pecato che non ha pure pensato, non che comeso, ho risoluto di diferire, se bene con grandisimo
 risentimento così del conte sodeto come di tuti i suoi et del Re medesmo; ma, amando io più tosto di ubidire
-[?precisamente] ali ordini di N. S. che di sodisfare ad altri, ho creduto non potere pasare più oltre la loro querela.
-[…] che, hauendo […] io fato intendere […], come V. S. Ill.ma mi scrise con le sue di 22 d'agosto, et io con mie di 2
+precisem[ente] ali ordini di N. S. che di sodisfare ad altri, ho creduto non potere pasare più oltre la loro querela.
+[…] che, hauendole io fato intendere […], come V. S. Ill.ma mi scrise con le sue di 22 d'agosto, et io con mie di 2
 del pasato auisai V. S. Ill.ma di hauere comonicato questo […] le loro Maiestà et con li ilustrisimi di Borbone et di
 Uandomo, sopra di che haueuano tratato meco dela forma del[a] asolutione, et fato condesendere il sodeto conte a
 contentarsi di abiurare nela forma che uedrà V. S. Ill.ma per la copia che le mando, nela quale è narrato la uerità del
@@ -49,7 +49,7 @@ questi signori. Et il giorno medesmo che mi capitorono le lettere di V. S. Ill.m
 esendosi ordinato che, giungendo il conte in breue […] andase altroue, uenise a smontare ala casa dela mia
 habitatione, doue con le debite circonstanze si saria fato l'uficio. Però, esendosi partito di casa sua et condoto a
 due leghe uicino a qui, g[l]i pareua di riceuere grande afronto se io non [l']asolueuo. Io mi sono scusato con dire […]
-di non potere fare dauantagio di quello che mi [?uiene] comandato, et [che] N. S. [?ama] il sig. conte di Suisone et
+di non potere fare dauantagio di quello che mi [?uiene] comandato, et [che] N. S. ama il sig. conte di Suisone et
 gli darà in ogni modo la sodeta asolutione, ma che, hauendo sua Ecel. mandato un gentilomo a N. S. per questo efeto,
 […] mandarà quello ordine che le parerà a proposito. Il che inteso, dai sig. cardinali di Borbone et di Uandomo uenero
 subito a ritrouarmi, facendomi grande instanza a uolerli compiacere del[a] asolutione; et io, dapoi hauere ueduto che
@@ -113,7 +113,7 @@ Epernone, che è di lasare il goue[r]no dela Prouenza [et] quello dela […]
 - "in breue […] andase" (133v l. 4): 4 5 8 5 3 1 7 2 0 2 1 6 2 1 open (s, null, e, nt, i, m, a, t, a …).
 - "con dire […] di non potere" (133v l. 11–12): 1 5 9 (DECODE dotted 926 with the 2 6 of "di") open.
 - "[?uiene] comandato" (133v l. 12): 1 1 7? 1 7 3 5 0 1 5; the dot of "101" in comandato is spurious.
-- "[?ama]" (133v l. 13): figures 2 0? 2 2 1 2 (m a a), a transposed a.
+- "ama" (133v l. 13): "1 1 1 2 0 2 2 1 2" on the image = N. S., 2 02 212 (a m a) (r2p).
 - "che […] mandarà" (133v l. 17): 7 6? 5 3 7 1 7 1 open.
 - "spedisca […] in diligenza" (134r l. 6): 7 3 0 2 1 7 1 open (un + a i?).
 - "[?procede]" (134r l. 11): 33 91 25 35 26 7 = procedi.

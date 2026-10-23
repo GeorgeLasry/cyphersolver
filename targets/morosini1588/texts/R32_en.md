@@ -24,8 +24,8 @@ put in his way so that he cannot use the indult granted him by Our Lord; which s
 same to Your Most Illustrious Lordship. I will only tell you that I have not failed to show His Majesty the greatest
 resentment I could, as was fitting for the dignity of Our Lord and of that Holy See; and nevertheless […] I [have
 gathered] that His Majesty was much displeased to hear that the Parlement of Rennes had gone so far, not only […] in
-the bull […] to forbid the said cardinal its execution against His Majesty's express order, that […] had [the]
-memorial given. [He will see] to provide […] in the best way possible, and tomorrow I shall draw up the said memorial
+the bull […] to forbid the said cardinal its execution against His Majesty's express order, that I should have [the]
+memorial given to her. [He will see] to provide in the best way possible, and tomorrow I shall draw up the said memorial
 with the advice of the said cardinal and have it presented to the archbishop; nor shall I fail to do all in my power to
 have the Parlement's arrêt revoked and annulled; and with the bishops of that province I shall also do what is fitting
 to move them from the opposition they make to Our Lord's orders, although I have gathered from some that regard for
@@ -59,7 +59,7 @@ decision; but he replied that for now nothing else could be done, and that he ho
 I presented to His Majesty the bull of the *confidenze*, letting him know that Our Lord, by special grace and for […]
 souls of this kingdom, had reformed it and brought it to such terms that no one could any longer reasonably oppose it;
 and therefore I begged him to have it published and inviolably observed. His Majesty showed that he [valued it] and
-said that […] in time, that he would have it examined and then speak to me. I have also again reminded His Majesty of
+said that it had come very much in time, that he would have it examined and then speak to me. I have also again reminded His Majesty of
 the publication of the Council of Trent, which he has promised me, and tomorrow he will deal with it in any case,
 especially since it is to be discussed in the Estates tomorrow as well. I have pressed the Cardinal of Bourbon that he
 too be present […]

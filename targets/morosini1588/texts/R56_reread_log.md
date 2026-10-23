@@ -40,3 +40,18 @@ Before: 0.616. After: 0.803 on the "## Reading" body (830 words). By hand: 5 unr
 - The opening (522r l. 3), "afligere […] più che" (522r l. 4), "[…] dicono" (522v l. 13), the castle's name ending
   (522v l. 32), and the closing line (523r l. 12). Not checked on the image (no outside blocker); Francia 27 would settle
   them.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`; the pages are clean), cancellation strokes looked for (none), the figures parsed
+(`r2p_parseall.py`). Nothing could be filled: every remaining hole is as DECODE transcribes it.
+Left, with blockers:
+- 522r l. 3 "[…] in questa": "1 7 1 0 6 7 0 111^. 8" (best parse "ikp[il"). Blocker: no-key-material.
+- 522r l. 4 "poteua afligere […] più che": "6 9 2 1 5 3 5 0 0 2 1 1 3 5" (best parse "toaeerare"). Blocker: no-key-material.
+- 522r l. 11 "fraude però [?colto] fine di": "2 5 9 1 2 7 9" (best parse "cozio"). Blocker: no-key-material.
+- 522v l. 8 "di Dio [?si] è partito": "8 7 1 7 1" (best parse "i"). Blocker: no-key-material.
+- 522v l. 13 "molto prosperam[ente] […] dicono che": "3 3 9 1 4 5 6 4 2 1 2 0 8 6 8" (best parse "prosperan"). Blocker: no-key-material.
+- 522v l. 32 "Granche le [?Roe] stimato asai": "0 0 9 1 3 5 8" (best parse "roe"). Blocker: no-key-material.
+- 523r l. 12 "che uerità […]": "8 4 4 9 5 2 0 0 166^. 2 2 1 1 7 0 0 1" (best parse "trcr[questo]aainn"). Blocker: no-key-material.
+Result: 0 holes filled; 7 left, each with its blocker.

@@ -6,7 +6,7 @@ Translation of `R43_reading.md`; holes as there.
 
 [f. 308r] […] this morning […] the Duke of Guise was killed in the King's chamber, by order of His Majesty, with dagger
 blows, and his death came about in this way. His Majesty had been warned from several quarters of the evil intention
-that the said Guise had against his person; and Signor Alfonso Corso having arrived here, [as] Your Most Illustrious
+that the said Guise had against his person; and Signor Alfonso Corso having arrived here, as Your Most Illustrious
 Lordship will have heard by my last letters, sent by the Duke of Mayenne for the reasons written, with warnings that His
 Majesty should keep good guard against Monsieur de Guise his brother, who was plotting against his person, and that he
 himself would have come to Blois had he thought he could arrive in time to turn him from his designs; and the said Duke
@@ -32,7 +32,7 @@ taking up arms, I tried to learn [f. 309r] the reason, and was told that the Kin
 put his hand to a dagger in His Majesty's chamber; nor could the truth be learned until the Cardinal de Gondi, in His
 Majesty's name, came to give me the news of what had happened and the reasons that had forced him to that execution,
 both what has been said above, learned through the Duke of Mayenne, and other things written by that d'Aumale, his
-first cousin. [I] did not know what to answer, being left half dead by this news; and yet I told him that I wept for the
+first cousin. I did not know what to answer, being left half dead by this news; and yet I told him that I wept for the
 misfortune of that prince and prayed God that it might not be to the greater harm and ruin of this kingdom. I tried to
 have an audience, but it has not been possible, His Majesty excusing himself with the many business he had. I will not
 cease to go on asking for it, to perform at least the office I owe for those who remain alive; and from what the

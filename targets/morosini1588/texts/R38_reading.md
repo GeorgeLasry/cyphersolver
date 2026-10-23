@@ -38,7 +38,7 @@ sforzarà a pigliar l'armi, et che la giustitia [è] dal canto suo, perché N. S
 di fauorire la sua causa. In che si distese asai, mostrando qualche dispiacere, se bene con modestisime parole, che N. S.
 non solo non facese quello risentimento che parea a la S. M.tà che conueniria contra il sodeto duca, ma che più presto
 se gli mostri fauoreuole, dicendo che, se il duca di Sauoia ha così buono zelo contra gl'Ugonotti come [?] uol dare ad
-intendere, che deuria caciar[li] prima de' suoi stati, et che nondimeno li comporta […], perché in Italia molte
+intendere, che deuria caciarli prima de' suoi stati, et che nondimeno li comporta […], perché in Italia molte
 liberam[ente] et publicam[ente] predicano et [e]sercitano il Caluinisimo.
 
 [f. 283r] Io non lasciai di rispondere ala S. M.tà in conformità di quello mi comete V. S. Ill.ma nela sua cifra di […]

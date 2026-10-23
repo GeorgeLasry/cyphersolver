@@ -34,7 +34,7 @@ a proposito per la quiete uniuersale; ma ho benisimo conosciuto che sua Maestà 
 soleua fare. Procurarò di riparlare con il Re et farò tuto quello che sarà in me per ridurlo a quello fine che mostra di
 desiderare N. S.; ma temo che sarano poco profiteuoli i miei consigli. Hora pare che con questa risolutione dela […]
 S. M.tà s'habia molto ristreto con il duca di Guisa, et per questo rispeto si crede che habia licentiato monsig. di
-[?Cenagli] a capo dele sue finan- [f. 294r] -ze, et il medico Mirone suo fratelo, per esere poco grati al sodeto di Guisa,
+Cenagli a capo dele sue finan- [f. 294r] -ze, et il medico Mirone suo fratelo, per esere poco grati al sodeto di Guisa,
 con tuto che prima fosero de' più intrinsechi et confidenti che hauese S. M.tà. Si dice anco che farà il medesmo di
 monsig. d'O et di alcuni altri che si sono sempre scoperti contrari al sodeto monsig. di Guisa. Di quello [che]
 sucederà non mancarò di tenerla auisata. […]

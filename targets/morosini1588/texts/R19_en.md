@@ -33,10 +33,10 @@ they draw their profit. His Majesty told me that in fact he did not know what th
 have them given to him, wanting by all means to be well informed of them. I did not fail to reply, doing the liveliest
 and most effective office I knew to make him resolve quickly and not wish to continue any longer in the bad opinion he
 had brought upon himself throughout Christendom by the delay in publishing the Council. He told me this had always
-been his wish, but that he must not fail to preserve his [f. 72v] privileges. I told him that, [if] they were
-privileges, they must have been granted to him by the pontiffs, and that, Our Lord being no less pontiff than those
-[…] who were his predecessors, he could, [as] they had judged it fitting for the service of God to grant him some
-privilege at that time, so now for [the] same consideration revoke them; […] being as much [King] of France as his
+been his wish, but that he must not fail to preserve his [f. 72v] privileges. I told him that, if they were
+privileges, they must have been granted to him by the pontiffs, and that, Our Lord being no less pontiff than those,
+whoever they were, who were his predecessors, he could, as they had judged it fitting for the service of God to grant him some
+privilege at that time, so now for [the] same consideration revoke them; […] being as much King of France as his
 forebears were, for the service of his kingdom he could change or revoke a law that those others had made. To which
 His Majesty answered me nothing. I shall not fail to continue the same offices both with His Majesty and with all the
 others; but from [what] I see, and from what I am scenting out, this point will be referred to the [assembly] of the
@@ -47,14 +47,14 @@ Your Most Illustrious Lordship gives me any instruction, I shall not fail to obe
 for it.
 
 After writing, being with the Cardinal of Vendôme, His Most Illustrious Lordship asked [me whether] I had received the
-faculties of the legation; and when I told him yes, he told [me] they had to be registered by the Parlement. I
+faculties of the legation; and when I told him yes, he told me they had to be registered by the Parlement. I
 answered that this did not seem to me necessary or fitting, because the Parlement had no business laying hands on the
 graces of Our Lord. He replied that this was an inveterate custom in this kingdom, that all the other legates who have
 come to France had done so, that it would be impossible to want to do otherwise now, and that this was no diminution of
 Our Lord's authority but rather a confirmation, because without the approval of the Parlement I would be obeyed by
 no one and would have to contend continually; whereas, when the Parlement has registered the faculties, if anyone
 [should want] to kick against them, the Parlement itself makes him obey. [This] same thing has been told me by others
-as well. All the same [I] shall do nothing else [f. 73v] until I have an answer to what I have written to Your Most
+as well. All the same I shall do nothing else [f. 73v] until I have an answer to what I have written to Your Most
 Illustrious Lordship on this matter. The same Cardinal spoke to me at great length about the absolution of his
 brothers, for which he is sending the bearer of these presents expressly to Our Lord, although he hopes that even
 before his arrival in Rome His Holiness, at the instance made to him by His Majesty's ambassador, will have sent an
@@ -63,14 +63,14 @@ not; and I think it would be well that I had it. I leave it to the most prudent 
 together with his brothers, united with the Duke of Montpensier, […] it seems are gathering from every part their
 supporters and dependants to bring them to the Estates; and it is said they will have more than 500 gentlemen with
 them, because, since the succession to the crown is to be treated, they want to make sure that no prejudice is done
-them. And it is already said that the Maréchal d'Aumont, who professes to [depend on] [f. 74r] this side, has said
+them. And it is already said that the Maréchal d'Aumont, who professes to depend on [f. 74r] this side, has said
 that these lords will be so strong at the Estates that, if they wanted to declare anything against them, they would
 do themselves justice by arms. On the other side the Duke of Guise, seeing the provisions these are making, has
 written to all his people as well, so as not to be less strong than they; so that it is feared some scandal may arise,
 and that instead of providing for the needs of the kingdom it may come to a bloody battle among Catholics. For this I
-have not failed to do every good office on all sides, and with Their Majesties [I have] worked for an order that all
+do not fail to do every good office on all sides, and with Their Majesties I have worked for an order that all
 the princes who wish to come to the Estates may not bring with them […] larger company than they are used to have
-when they come to court; and I think it will be so ordered, Their Majesties having found it good. […] they are
+when they come to court; and I think it will be so ordered, Their Majesties having found it good. They are
 [also] trying to put […] this […] design, also of allying them by marriage, which would be by giving the Count of
 Soissons as wife [f. 74v] the daughter of the Duke of Guise. […] what is done, Your Most Illustrious Lordship will be
 informed of it. […]

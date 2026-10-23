@@ -15,7 +15,7 @@ di Nauarra). Marks: [?word] partly carried, […] unread.
 
 [f. 137r] [m]archesato di Saluzo, et quello di Angolem[me], di Xantonge et di Cognach, con uno oficio per [?]uno dela
 corona, con che posono [?uiuere] con gran dignità, non ci esendo principe in Francia che habia tanti gouerni come loro;
-et restituire a S. M.tà Metz et Bologna, perché [?li ha] nela conclusione dela pace con questi signori di Guisa
+et restituire a S. M.tà Metz et Bologna, perché li a nela conclusione dela pace con questi signori di Guisa
 così promeso loro di douer fare. Et nondimeno si mostrano risolutisimi di non uolere restituire alcuna cosa; anzi, per
 quello che mi ha deto S. M.tà, tengono pratiche molto [?serate] con la Regina d'Inghilterra, con il già Re di Nauarra,
 con Casimiro et con Momoransi; di che mi raferma la sodeta M.tà hauerne certisime proue, onde […] senza gran sospeto di
@@ -29,7 +29,7 @@ uoluto il Re sostenerli et fauorir[?li] è stato causa dela sua rouina et d[i] t
 
 - "per [?]uno" (137r l. 2): 64 + 17 3 01 191 = "per iuno"; "per ciascuno" would need 25 21 34 ...; left marked.
 - "[?uiuere]" (137r l. 3): 3 1 7 3 7 [blot] 0 5 — the ink blot covers two figures; "uiuere" fits what is visible.
-- "[?li ha]" (137r l. 6): 5 0 1/7 2 1 2 (DECODE "1/7?"): li a, without h.
+- "li a" (137r l. 6): 5 0 1 7 2 1 2: li a, without h (r2p: filled, every figure carries it).
 - "[?serate]" (137r l. 10): 4 3 5 0 0 3 5 2 1 5 1 5 3 = s e r e a t e; one e too many for "serrate".
 - "onde […]" (137r l. 13): 3 7 1 7 0 3 7 2 9 1 8 4 2 5 2 1 0 0 5 (as on the image) does not parse; "-care/-scare" ending.
 - "poi [?che]" (137r l. 20): 7 0 9 1 1 7 1 6 5 0 ...: poi + 1 6 (et?); "che" not carried.

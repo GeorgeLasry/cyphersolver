@@ -49,5 +49,5 @@ carry his food into the castle: a thing very hard to believe. I did not want to 
 Lordship what this monsieur has reported to me, although I give him little credit, being a very partial servant of the
 King. [?Now] certain [news] coming from the court, having brought me letters from Signor Galeazzo Fregoso, and he
 referring for the news to what I shall hear from the said monsieur, it did not seem to me I should fail to give an
-account of it to Your Most Illustrious Lordship, who will give it the consideration your singular [prudence] thinks fit.
+account of it to Your Most Illustrious Lordship, who will give it the consideration your singular prudence thinks fit.
 […]

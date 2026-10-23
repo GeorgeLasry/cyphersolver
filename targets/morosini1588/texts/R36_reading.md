@@ -32,10 +32,10 @@ partito da[l]a Regina Madre, è uenuto da me et m'ha portata una lettera di sua 
 copia a V. S. Ill.ma, et in conformità di quello che ha riferto a la Regina ha anco dato conto a me del medesmo. Onde
 può ben pensare V. S. Ill.ma in che pensieri m'habia posto questo […] di sua Alt[ezza], poiché mi dice che tuto quello
 che ha fato è di ordine di N. S.; et lei ha benisimo quanto m'ha scrito in questo proposito, hauendomi mandata copia
-dela lettera scritale da sua Alt[ezza] sopra la presa di Carmagnola, da[l]a quale chiaram[ente] si […] il contrario; et
-però io ho sempre gagliardam[ente] sostenuto che in ciò N. S. non haueua parte alcuna, [?tocando] con mano che nisuna
+dela lettera scritale da sua Alt[ezza] sopra la presa di Carmagnola, dala quale chiaram[ente] si arguisce il contrario; et
+però io ho sempre gagliardam[ente] sostenuto che in ciò N. S. non haueua parte alcuna, tocando con mano che nisuna
 cosa può esere di magiore pregiuditio in questo regno a cotesta santa sede che 'l lasare imprimere nei popoli […] che
-di ordine di N. S., come questi andauano dissemin[a]ndo, il duca di Sauoia […] haueua fata quella impresa, perché era un
+di ordine di N. S., come questi andauano diseminando, il duca di Sauoia […] haueua fata quella impresa, perché era un
 rendere odiosisimo N. S. non solo a S. M.tà ma anco a tuta la […], hauendo tuti tre i Stati, come con altre mie ho
 scrito a V. S. Ill.ma, ecitato il Re et oferto gli grandisimi aiuti per [f. 250r] uendicarsi contra eso duca,
 nominandolo ingrato, pergiuro et fautore di heretici. Onde pare a me più che necesario l'andare sganando ognuno et

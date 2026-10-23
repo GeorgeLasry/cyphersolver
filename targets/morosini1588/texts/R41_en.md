@@ -21,7 +21,7 @@ there; and that the ambassador of that Highness had several times asked him for 
 if he wished to treat of the restitution of the marquisate he would listen to him, but otherwise he had nothing to do
 with him; and for all that the said ambassador had told Madame de Nemours, his mother, that the Duke his master would
 be content to restore everything if His Excellency would promise him that, should the King die without children, he
-would put him back in possession of the marquisate; and that he would not give him a hearing. [I did not] fail to put
+would put him back in possession of the marquisate; and that he would not give him a hearing. I did not fail to put
 before him the great harm the Catholics of France would suffer from this war, and the advantage to the Huguenots, with
 whatever else seemed to me to the point; but he answered that all this was the fault of the Duke of Savoy, who under
 pretext of pursuing heretics was coming to favour [them], and that it was a maxim in the profession of war and of the

@@ -56,3 +56,38 @@ the joins open).
   the closing of 90r and the end of 87v; the link between 90r and 87r. No outside blocker except the decipherment in
   Francia 27 (physical access); a further image pass could test the figures of these stretches.
 - The lone "o" (191/91) where the sentence wants "Io" (six places), as in R19.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located on its line (`research/reading_audit/r2p_holes.py`), the line looked at on the image (scratchpad
+`reread/r2p/crops`), cancellation strokes looked for (none inside a hole; one overwritten figure on 88v l. 9), figures
+parsed under Meister no. 40 (`r2p_parseall.py`).
+Filled (every figure carries the word):
+- "Io" five times (88v l. 8, 89r l. 11, 89v l. 21, 87v l. 4, 87v l. 12): "8 7 1 9 1" on the image, a single null 8 + io.
+- 89r l. 4 "il Nauarro. A che io disi": "8 2 5 6 7 1 9 1" = (null 8) a, che, io (was "[?che non]. [I]o disi").
+- 88r l. 10 "tenire" (6 35 01 17 00 5); 88r l. 15 the "[…]" between "o" and "uerificarle" withdrawn (173 = u, nothing
+  left over); 88v l. 14 "nouam." (0 91 37 21 20 8: the -mente abbreviation of nouamente, no u missing); 88v l. 16 the
+  "[…]" after "Suisone" held only a null 8: withdrawn; 89r l. 16 "si" (111. 4 171).
+- 87r l. 13 "daria" (26 2 1 171 2); 87r l. 23 "editi" (35 26 17 15 171 after suoi 4 37 91 171).
+- 87v ll. 1-2 "aperteneua" (2 64 51 | 35 01 35 37 2; the first figure of l. 2 is 3 or 7 on the image).
+- 87v l. 4 "se": the image has "5 6 4 1 5 3" (DECODE "4 1 3 3"); 87v l. 11 "temese" (8 6 35 20 35 45 153).
+- 87v ll. 17-18 "ma che S. M.tà doueua anco": "5 6 1 1 3 | 2 6 9 1 3 7 3 5 3 7 2": 113 (no dot seen) + doueua.
+Left, with blockers:
+- 88r l. 2 opening "5 0 9 1 5 7 2 1 2 0 7 1 111. 2" and 88r ll. 2-3 "8 3 3 5 0 1 5" before "a ritrouarmi": as transcribed,
+  no parse. Blocker: no-key-material.
+- 88r l. 12 "[?lo]" (50, l), 88r l. 15 "[l']" (nothing written), 88r l. 20 "Di[se]" (8 26 7 = di): as transcribed.
+  Blocker: no-key-material.
+- 88v l. 9 "[?come]": "7 6 9" with the 6 overwritten in darker ink. Blocker: illegible.
+- 88v l. 13 "esortandoli […]": "716. 4 1 9" (no dot seen) no parse. 88v l. 19 "[?la]" (21) and "[?per]" (4). Blocker:
+  no-key-material.
+- 89r l. 10 "premese […] la": a lone 6 (darker). Blocker: too-short.
+- 89r l. 22 "[112] [?da]": "1 1 1 2 6 2 1" on the image; neither 112 (l'imperatore) nor 111 + letters fits. Blocker:
+  no-key-material.
+- 89v l. 1 "proc[u]rate": a hole in the paper after "3 3 9? 7? 2 1". Blocker: illegible.
+- 89v l. 13 "lo tratener […] nostra": "1 7 2 9 2 161. 7 0 1 7 1 7 3 7" (... quanto più ...), no sentence. Blocker:
+  no-key-material.
+- 90r l. 6 the close "8 4 7 2 7 2 9 1 7 1 2 7 9", ended by a rule: no parse. Blocker: no-key-material.
+- 87r l. 1 "[…] che io": nothing written before; the second sheet starts mid-text (the join 90r -> 87r is missing).
+  87v l. 23 "si diceua […]": the page ends there. Blocker: needs-physical-access.
+- 87r l. 23 "er[a]": the a is not written at the page turn. Blocker: no-key-material.
+Result: 20 holes filled or withdrawn; 18 left, each with its blocker.

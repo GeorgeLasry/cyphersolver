@@ -40,3 +40,25 @@ giorni", the closing formula. No parse fits the transcribed figures; Francia 27 
 ## Word-by-word alignment (`reread_b00_align.py`, REREAD_BRIEF step 3)
 
 - First run TOTAL R41: 923 words, 3 supplied, 10 partly. Bracketed d[i] Siuiglia, da[gli] Ugonotti; le era → l'era; Altezza → Alteza, caualli → cauali; moved the [f. 299r] marker inside rime-/-diare.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located (`research/reading_audit/r2p_holes.py`), its line looked at on the image (scratchpad
+`reread/r2p/crops`), cancellation strokes looked for (none; show-through on 298r and 299v), the figures parsed
+(`r2p_parseall.py`).
+Filled:
+- 298v l. 15 "Io non lasai": "8 7 1 9 1 7 1" = (null 8) io, non.
+- 299v l. 17 "non so quello": "4 1 9 1" = s o (the 1 a homophone figure of o's 191).
+Left, with blockers:
+- 298r l. 1 "[…] per lettere": "4 7 7 179^. 8" (best parse "sti[ungaria]"). Blocker: no-key-material.
+- 298r l. 1 "M tà d[i] Siuiglia […]": "6 2". Blocker: too-short.
+- 298r l. 2 "d[i] Siuiglia […] si è": "0 1 9 1 8" (best parse "no"). Blocker: no-key-material.
+- 298r l. 5 "persistendo di [?uolere] tenire quelle": "1 7 3 9 1 5 0" (best parse "uol"). Blocker: no-key-material.
+- 298r l. 6 "fose libero da[gli] Ugonotti oferiua": "2 6 2". Blocker: too-short.
+- 298v l. 20 "ueniua a fauorir[li] et che": "3 0 2 1 3 7 9 1 8 0 1 7 1 3 5 0" (best parse "fauorirl"). Blocker: no-key-material.
+- 299v l. 5 "4000 fanti [?Però] dicono che": "8 6 4 9" (best parse "str"). Blocker: no-key-material.
+- 299v l. 11 "Guisa auanti [?uenti] giorni potriano": "0 1 5 1 7" (best parse "nti"). Blocker: no-key-material.
+- 299v l. 18 "[?so] quello [che] potrà fare": "(none)". Blocker: nothing written there; no-key-material.
+- 299v l. 21 "però non [qui] manco di": "9 7 1". Blocker: too-short.
+- 299v l. 23 "la pace […]": "8 7 7 9 2 2 7 3 7 9 0" (best parse "iocriuon"). Blocker: no-key-material.
+Result: 2 holes filled; 11 left, each with its blocker.

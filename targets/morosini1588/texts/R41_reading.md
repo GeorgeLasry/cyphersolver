@@ -32,7 +32,7 @@ che ui mandarà le sue forze; et che l'ambasciatore di quella Alteza l'haueua fa
 che gli hauea risposto che se uoleua tratare dela restitutione del marchesato lo ascoltaria, ma che d'altra maniera non
 haueua che fare seco; et con tuto ciò il sodeto ambasciatore haueua deto a madama di Nemurs sua madre che il duca suo
 sig. si contentarà di restituire tuto se sua Ecelenza gli uol prometere che, uenendo a morte il Re senza figlioli, lo
-farà ritornare in poseso di quello marchesato; et che lui non gli ha uoluto dare orechie. [?Io non] lasai di
+farà ritornare in poseso di quello marchesato; et che lui non gli ha uoluto dare orechie. Io non lasai di
 considerargli il dano grande che riceueriano i catolici di Francia con questa guerra, et l'auantagio degli Ugonotti, con
 quello di più che mi parue a proposito; ma egli mi rispose che tuta questa era colpa del sig. duca di Sauoia, che soto
 pretesto di perseguitare gli heretici ueniua a fauorir[li], et che era una propositione masima nela profesione dela
@@ -57,7 +57,7 @@ mandarano altri 500 cauali et quel magior numero de fanti che si potrà, solecit
 speditioni. Li Stati caminano ala conclusione, et per quello che mi ha deto mons. di Guisa, auanti [?uenti] giorni
 potriano hauere finito; però prima che si uenga ala conclusione sua Ecelenza, che conosce il suo uantagio per il gran
 potere che ha con esi Stati, uorria con l'autorità loro uedere di necesitare il Re a fare un consiglio secreto per
-tratare tute le cose del regno, nel quale non ci fose alcuno contrario al suo partito; circa che non [?so] quello [che]
+tratare tute le cose del regno, nel quale non ci fose alcuno contrario al suo partito; circa che non so quello [che]
 potrà fare, non esendo posibile che S. M.tà di buona uoglia sia per consentirui, et l'usare uiolenza, come hano fato in
 diuerse altre cose che ho già scrite a V. S. Ill.ma, potria esere pericoloso di fare rompere. Et però non [qui] manco di
 fare ogni sorte d'oficio a fine che si conserui l'unione et la pace […]

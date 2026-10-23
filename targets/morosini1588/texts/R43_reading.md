@@ -20,7 +20,7 @@ Marks: [?word] partly carried, […] unread.
 
 [f. 308r] […] questa matina di […] il duca di Guisa nela camera del Re è stato per ordine di S. M.tà amazato a colpi
 di pugnale, et la sua morte è seguita a questo modo. Essendo da più parti auuertito S. M.tà de la mala intentione che il
-sodeto di Guisa haueua contra la sua persona, et essendo arriuato qui, [?come] V. S. Ill.ma haurà inteso con l'ultime
+sodeto di Guisa haueua contra la sua persona, et essendo arriuato qui, come V. S. Ill.ma haurà inteso con l'ultime
 mie, il sig. Alfonso Corso, mandato dal duca di Umena per le cause scrite, et con auisi che S. M.tà si douesse hauere
 buona custodia de mons. di Guisa suo fratelo, che machinaua contra la sua persona, et che lui medemo saria uenuto a Bles
 quando hauesse creduto di poterui arriuare a tempo per diuertirlo da suoi pensieri; et hauendo hieri [?medesimamente]
@@ -46,7 +46,7 @@ guardie, procurai di intendere [f. 309r] la causa, et fu deto che il Re uolea fa
 S. M.tà haueua posto mano ad un pugnale; né si puote mai intendere il uero sino a tanto che il sig. cardinale di Gondi
 per nome di S. M.tà uene a darmi la nuoua del suceso et dele cause che l'haueuano necesitata a fare quella esecutione,
 così per quello che si è deto di sopra, inteso per uia del duca di Umena, o per altro scrito da quello d'Umala, suo
-cugino germano. [?Io] non ho saputo che rispondere, essendo restato mezo morto di questo auiso; et pure le disi che io
+cugino germano. Io non ho saputo che rispondere, essendo restato mezo morto di questo auiso; et pure le disi che io
 piangeuo la disgratia di quello principe et pregauo Dio che ciò non fose a magiore dano et ruina di questo regno.
 Procurai di hauere audientia, ma non [è] stato posibile, scusandosi S. M.tà con li molti impedimenti che haueua. Non
 lasarò di continouare a dimandarla per fare almeno quello oficio che deuo per quelli che restano uiui, et per quello
@@ -80,7 +80,7 @@ risposta […] con questo ordine che piacerà [f. 307v] a N. S. di darmi; et a V
 - Opening (308r l. 2): "0 0 1 7 1 2 0 7 5 2 1" before "questa matina" and "2 3 8" before 129 do not parse; the line
   is clear on the image (checked), so they are the writer's or encipherer's slips, left open.
 - "[?fu]" (308v l. 17): figures 3 0 1 7 (f i). "[a]ciò" (309v l. 21): figures 2 5 1 7 9.
-- "[?come]" (308r l. 6): the figures give "qui 9" (o); come is 79.
+- "come" (308r l. 6): the image has "9 7 | 8 7 9" = qui, (null 8) come (r2p; DECODE drops the 7).
 - "[?medesimamente]" (308r l. 13, 309v l. 2): "medesima" + 20 8: the encipherer abbreviates -mente as m + 8
   (also "principalm." 307r l. 4, "liberam." 309v l. 15, "instantem." 309v l. 18).
 - "et […] principali" (308v l. 19): 4 4 9 2 1 2 (s + str + a?): "strade" would need d e; left open.

@@ -22,7 +22,7 @@ in the form needed, 167 V. S. Ill.ma); "sua Ecel." / "S. E." (4 8 153 8) = Sua E
 sodisfatione che sua Ecel. tiene con mons. di Guisa, dela quale se bene anco prima io ne haueuo qualche notitia, non
 credeuo però che ela fose giunta a termine di potere aportare quel male ala quiete di questo regno che dipoi ho
 conosciuto. Però mi parue di fare con S. E. ogni eficace oficio per meterla d'acordo con il sodeto duca di Guisa,
-conoscendo che il continouare loro in mala inteligenza insieme era causa che così l'uno come l'altro non [?lasciaua]
+conoscendo che il continouare loro in mala inteligenza insieme era causa che così l'uno come l'altro non lascia
 di fare di mali ofici con il Re, a graue pregiudicio dela quiete et conseruatione dela […]; et dopo molte ragioni et
 persuasioni, seruendomi anco dela autorità di […] N. S., con dire che questa unione saria gratisima a N. S., lo ridusi a
 termini che, dopo una longa narratiua di ofese che diceua di hauere riceute dal sodeto di Guisa, finalmente si contentò
@@ -71,7 +71,7 @@ questo […]
 - "con S. E." (162v l. 9, Nevers) and "S. E. uenuta" (162r l. 19, Guise): 4 8 153 8, s and e each closed by the
   abbreviation 8; the feminine agreement is Italian usage with "Eccellenza".
 - "eficace oficio" (162v l. 9): figures 153 03 17 25 21 5 25 9 30 17 25 17 9 (c and e transposed).
-- "[?lasciaua] di fare" (162v l. 13): 50 21 34 17 21 26 21 71 … ; "lascia" is carried, the rest not cleanly.
+- "lascia di fare" (162v l. 13): 50 21 34 17 212 | 62 171 = lascia di (r2p; the -ua of lasciaua is not written).
 - "dela […]; et dopo" (162v l. 15): 2 1 2 1 4? 2 3 2 1 2 2 2 6 open.
 - "di […] N. S." (162v l. 16): 2 6 5 7 1 before 111 open.
 - "andai li giorni […] pasati" (162v l. 24): 0 1 7 between giorni and pasati.

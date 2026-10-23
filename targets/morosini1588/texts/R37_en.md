@@ -38,7 +38,7 @@ consent of his King, nor of any of his ministers in Italy. This makes me all the
 allow it to be said that this was done by order of His Holiness, because in effect it would make the person of His
 Holiness hateful to all France; nor can one hope, by any sort of offices, to move His Majesty and the whole kingdom
 together from the firm resolution to make war on the said lord duke if he does not restore the marquisate, as Your Most
-Illustrious Lordship will have heard more clearly from Signor Girolamo Gondi, who left here on the [?17th] of this
+Illustrious Lordship will have heard more clearly from Signor Girolamo Gondi, who left here on the 17th of this
 month, it not having been possible to send him off earlier. This will [f. 257v] serve for now as an answer also to that
 section of your cipher, which came with the letters of the last of last month, where you deal with the affairs of
 Saluzzo; to which, for shortness of time, the departure of the ordinary post pressing me, I cannot answer more in

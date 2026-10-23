@@ -28,7 +28,7 @@ those who bring him evil reports of him, and, knowing that he is poor and laden 
 maintain himself, keeping him […] always [f. 304r] employed in some business suited to his inclination and profession.
 The King said he found this good, and that I should speak of it with the Queen Mother, who […] knew that, although she
 was not [yet] wholly free of her illness, she would nonetheless see me willingly. I also did an office with His Majesty
-for the Archbishop [of Arles?], as Your Most Illustrious Lordship instructs me, and for the publication of Our Lord's
+for the Archbishop of Arles, as Your Most Illustrious Lordship instructs me, and for the publication of Our Lord's
 bull against […] by the Archbishop […] first. His Majesty answered that I should speak of it with the Archbishop Gondi,
 […] other, that the bull was most holy and that he will have it published. Then, having left His Majesty, I went to the
 Queen Mother, who, although she had the chill of the fever, wanted by all means to see me and to discuss with me the

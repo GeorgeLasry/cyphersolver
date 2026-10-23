@@ -14,7 +14,7 @@ faculties of the legation to the Parlement, I already wrote to Your Most Illustr
 last month that I had presented them […], so advised by persons of the first rank and most devoted to Our Lord and to
 that Holy See. His Majesty nevertheless keeps them by him, not having had time to see and consider them; I shall not
 fail to do whatever office […] commits to me. But it must be known that if the […] faculties are not verified
-(registered) by the Parlement, all the acts I made would be [f. 132v] without [force?] […], since the Parlement is what
+(registered) by the Parlement, all the acts I made would be [f. 132v] without life […], since the Parlement is what
 has to have them executed and obeyed, as also happens with all the edicts and ordinances the King himself makes: if
 they are not verified by the Parlement they are not obeyed, such being the form of government of this kingdom.
 
@@ -26,8 +26,8 @@ as I judge good for the kingdom, and although I thought I could now give the abs
 not think I could alter the form that you send me. Since the Count of Soissons would in no way accept it, saying that
 he should not be accused [f. 133r] of a sin he had not even thought of, let alone committed, I resolved to defer it,
 though with the greatest resentment both of the said Count and of all his people and of the King himself; but, loving
-rather to obey [precisely] the orders of Our Lord than to satisfy others, I believed I could not go further with their
-complaint. […] that, having […] I made known […], as Your Most Illustrious Lordship wrote me with yours of 22 August,
+rather to obey precisely the orders of Our Lord than to satisfy others, I believed I could not go further with their
+complaint. […] that, having made known to them […], as Your Most Illustrious Lordship wrote me with yours of 22 August,
 and I with mine of the 2nd of last month informed Your Most Illustrious Lordship that I had communicated this […] to
 Their Majesties and to the Most Illustrious (Cardinals) of Bourbon and of Vendôme, on which they had treated with me of
 the form of the absolution, and made the said Count condescend to be content to abjure in the form Your Most

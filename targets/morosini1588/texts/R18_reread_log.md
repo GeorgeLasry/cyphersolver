@@ -47,3 +47,26 @@ By hand: 7 holes ([…], [162], [quanto]/[contrauenire]/[di] supplied or bracket
 - The opening group (32r l. 2), "per […]" (33r l. 20), "nela […] N. S." (33v l. 6), the dotted [162] (32v l. 14) and
   the closing figures (35r l. 19): no parse fits the transcribed figures, and the image shows them as transcribed. No
   outside text: Francia 27 (Rome's decipherment) needs physical access.
+
+## r2p, 23 Oct 2026 (Claude Opus 5.5): every hole checked on the DECODE images
+
+Each hole located on its line (`research/reading_audit/r2p_holes.py`), looked at on the image (scratchpad
+`reread/r2p/crops`), cancellation strokes looked for, figures parsed under Meister no. 40 (`r2p_parseall.py`).
+The -m[ente] and bo[na] me[moria] expansions are the encipherer's abbreviation (m or word + null 8), not holes.
+- 32r l. 2 opening "191. 5 2 2 9 4 7 2 1 0 9 1 8" (seen before, as transcribed): no parse. Blocker: no-key-material.
+- 32r l. 3: the image has "8 7 1 9 1" = io: filled.
+- 32r l. 4 "[?oporsi]": "8 7 1 9 1 0 7 9 1 4 5 9" as transcribed (i o p o r s o); kept partly. Blocker: no-key-material.
+- 32r l. 9: the image has "2 6 8 2 1 0 0 2 1 4 0 9 1 0 1 3 5" (DECODE drops a 2): "d'Aragone" filled.
+- 32v l. 12 "[di]": only a null 8 between "Sciartres" and "dimostrare"; supplied, kept.
+- 32v l. 14 "[162]": "8 1 6 2" after "Dio"; no dot is clear on the image; neither 162 (not in the key) nor the letters
+  (rta / et a / d) fit. Blocker: no-key-material.
+- 32v l. 22 "[?dato]": the image reads "8 6 2 1 1? 1 9 1" (DECODE "8 6 2 1 5 1 1 9 1"); no reading gives dato. Kept
+  partly. Blocker: illegible (one figure in doubt).
+- 33r l. 16: the repeated "contrauenire" is struck through with a line on the image: a cancelled dittography, now left
+  out of the reading (was "[contrauenire]").
+- 33r ll. 20-21 "per […] sopra": as transcribed (seen before); no parse. Blocker: no-key-material.
+- 33v l. 3 "d[i] Dio": "6 2" at the line end (d), as transcribed; kept. Blocker: no-key-material.
+- 33v l. 6 "nela […] N. S.": "1 2" before 111 on the image (z or r a). Blocker: too-short.
+- 35r l. 5 "[quanto]": the figure is 166 (questo) on the image, as transcribed; kept. Blocker: no-key-material.
+- 35r l. 19 closing "8 4 2 2 2 7 5 2 111. 0 9" (the image has a third 2): no parse. Blocker: no-key-material.
+Result: 3 holes filled (io, Aragone, the cancelled repetition removed); 10 left, each with its blocker.

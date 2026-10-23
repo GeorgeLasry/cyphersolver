@@ -44,7 +44,7 @@ catolici del suo regno et di tuta la christianità quando lasciase di fare la de
 questo regno, cosa aborita da tuti i buoni, et che la S. M.tà più d'ogn'altro douria aborire per il proprio interese;
 poiché, esendo eso Nauarro non solo heretico et inimico di Dio, ma che pretende anco di peruenire ala sucesione di
 questa corona, non potrà mai la S. M.tà asicurarsi che egli, per potere più presto peruenire a tanta grandeza, non habia
-ad insidiare la sua persona; et che quando non sia dechiarato inhabile et [?incapace] ala sucesione haurà molto più seguito
+ad insidiare la sua persona; et che quando non sia dechiarato inhabile et incapace ala sucesione haurà molto più seguito
 che non hauria quando tuti sapesero che egli non potrà mai esere Re di Francia; et che di tratare acordo seco senza il
 consenso di N. S. se ne guardase molto bene, perché quando lei uenise a questo io mi sarei subito partito di Francia, et
 che mi perdonase se lo facesi senza andarmi a licentiare da lei; che la pregauo a considerare molto bene le cose sue,

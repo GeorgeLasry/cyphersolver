@@ -20,7 +20,7 @@ passport and showed him what [f. 524v] he must do. The said Swiss are coming to 
 they will pass by [?the] gates of Dijon, and from there to Autun, [and] Decize. This [?10th] day of June 1589. Your
 more than most humble and most obedient servant, Regnault.
 
-[…] translation of the oath taken by those of the town of Moulins on this day, [?16] June 1589, in the presence of
+[…] translation of the oath taken by those of the town of Moulins on this day, 16 June 1589, in the presence of
 Monsieur de la Guiche, councillor of the King in his privy council of state, grand master of the artillery of France
 and lieutenant [?general] for His Majesty in his army of foreigners, of Swiss. The consuls and échevins, residents and
 inhabitants of the town and [fau]bourgs of Moulins in the Bourbonnais, assembled in the castle of Moulins, have
@@ -30,7 +30,7 @@ of the said country, and have promised on their faith, life and honour, and on t
 and die in the Catholic, apostolic and Roman religion, under the obedience of His Majesty, and not to depart from it in
 any way, nor to undertake or favour, in any way whatever, the enemies of his state and person, and to remain his
 faithful [f. 525r] subjects and most humble servants, [and] to [?…] it and defend it towards and against all, he being
-their legitimate and sovereign king, and to [obey] the commands that shall be given them, whether by Monsieur de
+their legitimate and sovereign king, and to obey the commands that shall be given them, whether by Monsieur de
 Chazeron or other lieutenants general of His Majesty, for his service; and to this effect they have renounced and
 withdrawn from all promises and associations they may have made to the contrary, if there are any. In witness whereof
 those of the said inhabitants who can sign have signed, and as regards those who cannot sign, they have given their

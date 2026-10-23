@@ -53,7 +53,7 @@ V. S. Ill.ma. Con tuto ciò, in quello che io potrò, senza però mescolarmi pi�
 ricercato, non mancarò di coadiuare la buona conclusione del negotio, credendo che habia ad esere di seruitio dela
 religione catolica et grande instromento per l'istirpatione del heresie.
 
-Il sodeto ambasciatore di Spagna ha r[a]gionato meco dele cose del marchesato di Saluzo, biasimando asai il sig. duca
+Il sodeto ambasciatore di Spagna ha ragionato meco dele cose del marchesato di Saluzo, biasimando asai il sig. duca
 di Sauoia di hauere fato questo moto, asicurandomi che né il suo Re né alcuno de' suoi ministri non ne sono stati né
 consentienti né partecipi. Il medesmo parmi che habia deto ale loro Maie[f. 200v]stà, che tutauia sentono uiuam[ente]
 questo fato et solecitano la partita del sig. Hieronimo Gondi, che potria esere per lunedì prosimo, il quale uenirà
