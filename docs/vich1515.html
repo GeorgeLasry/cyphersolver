@@ -44,44 +44,56 @@
   <p class="kicker">Pedrezuela &rarr; Rome · code groups and signs, unidentified system · 26 October 1515</p>
   <h1>Ferdinand the Catholic to Jer&oacute;nimo de Vich, Pedrezuela, 1515</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_ferdinand-the-catholic.jpg" alt="Ferdinand the Catholic" title="Ferdinand the Catholic: Portrait by Michel Sittow, c. 1500. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ferdinand the Catholic</figcaption></figure></div><!-- /parties -->
-  <p class="sub">The last ciphered letter of Ferdinand to his Rome ambassador in the Vich papers uses a new code that no deciphered letter shares; it was transcribed in full but not broken.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time></p>
+  <p class="sub">The last ciphered letter of Ferdinand to his Rome ambassador in the Vich papers uses a code that no deciphered letter shares. Michael Brackx recovered its symbol alphabet from the ciphertext alone; only part of the code groups could be identified, so the letter is decoded, not read.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-10-23">23 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained</p><!-- /outcome -->
 <div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#cipher">The cipher</a><a href="#tried">What was tried</a><a href="#open">What remains uncertain</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#cipher">The cipher</a><a href="#key">How the key was recovered</a><a href="#checks">Checks</a><a href="#says">What it says</a><a href="#open">What remains open</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Not solved &middot; 0 of 3,177 tokens</span></p>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from the ciphertext &middot; decoded, not read: 0.636 of words read as sense</span></p>
 <dl>
   <dt>The letter</dt><dd>Ferdinand the Catholic to Jer&oacute;nimo de Vich, his ambassador at Rome, Pedrezuela, 26 October 1515. Three months before the King&rsquo;s death; almost all in cipher.</dd>
   <dt>Where</dt><dd>Archivo Hist&oacute;rico Nacional, Estado 8715 N.73 (PARES 12751418), in the Vich family papers. No decipherment on the leaves or in PARES.</dd>
-  <dt>The cipher</dt><dd>Mostly three-letter code groups (<em>sin</em>, <em>sud</em>, <em>no</em>, <em>zre</em>, <em>xed</em>) mixed with a smaller set of signs. Not the 1511&ndash;12 key.</dd>
-  <dt>How it was tried</dt><dd>Compared with every other cipher in the Vich papers, then annealed against a Spanish five-gram model in three ways. Nothing converged.</dd>
-  <dt>Why it resists</dt><dd>No sibling in the same key has a decipherment, and the runs of signs between code groups are too short for a letter model.</dd>
-  <dt>Still open</dt><dd>The whole cipher. Terrateig&rsquo;s 1963 edition of the Vich correspondence may print it; it is not online.</dd>
+  <dt>The cipher</dt><dd>Homophonic letter signs mixed with three-letter code groups that stand for whole words and also for syllables and single letters inside spelled words.</dd>
+  <dt>How it was broken</dt><dd>By Michael Brackx, from the ciphertext alone: a joint annealer for sign and group values under a Spanish five-gram, then the groups read by context in three passes.</dd>
+  <dt>Checks</dt><dd>A matched control on <em>Lazarillo de Tormes</em> recovers every sign; the statistical validation here passes.</dd>
+  <dt>Still open</dt><dd>144 unread group tokens, 192 tentative ones, and two sign splits the PARES images are too small to check.</dd>
 </dl>
 </div>
 
 <p>Ferdinand&rsquo;s letters to Vich of 1511&ndash;12 are in another cipher and have their own page, <a href="vich1511.html">Ferdinand the Catholic to Jer&oacute;nimo de Vich, 1511&ndash;12</a>: a different cipher, with its own page. This letter was listed with them until 14 October 2026.</p>
 
 <h2 id="letter"><span class="num">01</span> The letter</h2>
-<p>The Vich papers in the Archivo Hist&oacute;rico Nacional hold Ferdinand&rsquo;s letters to Jer&oacute;nimo de Vich, his ambassador at Rome from 1507. Most of the ciphered ones were filed with a clerk&rsquo;s decipherment. N.73 was not. Its only clear text is the docket <em>a 26 de octubre 1515</em>, the opening words <em>videlicet iterum</em>, and the dateline <em>en Pedrezuela a xxvj de otubre de dxv</em>. Pedrezuela lies north of Madrid.</p>
-<figure data-credit="Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418)"><img src="vich1515_lead.jpg" alt="The head of the letter: the docket a 26 de octubre 1515, the opening videlicet iterum, then lines of code groups and signs" loading="lazy"><figcaption>The docket and the opening <em>videlicet iterum</em>, then the cipher: lower-case code groups such as <em>tok</em>, <em>sud</em>, <em>xed</em>, <em>rak</em> among the signs. <span class="credit">Image: Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418).</span></figcaption></figure>
+<p>The Vich papers in the Archivo Hist&oacute;rico Nacional hold Ferdinand&rsquo;s letters to Jer&oacute;nimo de Vich, his ambassador at Rome from 1507. Most of the ciphered ones were filed with a clerk&rsquo;s decipherment. N.73 was not. Its only clear text is the docket <em>a 26 de octubre 1515</em>, the opening words <em>videlicet iterum</em>, and the dateline <em>en Pedrezuela a xxvj de otubre de dxv</em>. Pedrezuela lies north of Madrid. Ferdinand&rsquo;s next letter to Vich, of November 1515 (calendared in <em>CSP Spain</em> II, no. 240), refers back to this one of &ldquo;the 26th of the previous month&rdquo;.</p>
+<figure data-credit="Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418)"><img src="vich1515_lead.jpg" alt="The head of the letter: the docket a 26 de octubre 1515, the opening videlicet iterum, then lines of code groups and signs" loading="lazy"><figcaption>The docket and the opening <em>videlicet iterum</em>, then the cipher: lower-case code groups such as <em>tok</em> (<em>ha</em>), <em>sud</em> (<em>de</em>), <em>xed</em> (<em>la</em>), <em>rak</em> (<em>con</em>) among the signs. <span class="credit">Image: Archivo Hist&oacute;rico Nacional, Estado 8715 N.73, first image, via PARES (12751418).</span></figcaption></figure>
 
 <h2 id="cipher"><span class="num">02</span> The cipher</h2>
-<p>The transcription (<code>n73_transcription.txt</code>) has 124 lines and 3,177 tokens of 197 kinds. 1,326 are lower-case code groups as written, the commonest <em>sin</em> (151 times), <em>sud</em> (97), <em>no</em> (93), <em>zre</em> (89) and <em>xed</em> (68). 1,851 are signs, the commonest labelled X (171), TH (170), PHI (163) and RH (151). None of the 1511&ndash;12 values carries over.</p>
-<p>No deciphered letter in this key is known. N.74 of 1519, the nearest in date, is Charles I&rsquo;s and is a third system (there <em>sex</em> is <em>papa</em> and <em>sin</em> is <em>de</em>). N.79, filed as a <em>clave de cifra</em>, is a simple letter table that fits none of the letters.</p>
+<p>The transcription (<code>n73_transcription.txt</code>) has 124 lines and 3,177 tokens of 197 kinds. 1,326 are lower-case code groups as written, the commonest <em>sin</em> (151 times), <em>sud</em> (97), <em>no</em> (93), <em>zre</em> (89) and <em>xed</em> (68). 1,851 are signs, the commonest labelled X (171), TH (170), PHI (163) and RH (151). None of the 1511&ndash;12 values carries over, and N.74 of 1519, the nearest in date, is a third system.</p>
+<p>Brackx&rsquo;s solution shows how it works. The signs are a homophonic alphabet of 37 kinds, a few of them letter pairs: PHI is <em>s</em>, RH <em>e</em>, TH <em>o</em>, both O and Z <em>a</em>. The code groups stand for common words (<em>zre</em> <em>que</em>, <em>sud</em> <em>de</em>, <em>yob</em> <em>por</em>, <em>yem</em> <em>papa</em>, <em>teb</em> <em>Italia</em>, <em>xif</em> <em>liga</em>), but also for syllables and letters in the middle of words spelled with signs: <em>tok</em> is <em>ha</em> in <em>haueros</em>, <em>gso</em> is <em>l</em>, <em>no</em> is <em>t</em>. The September 2026 attempt here annealed the groups either as letters or as whole words, never as both, which is why it failed.</p>
 
-<h2 id="tried"><span class="num">03</span> What was tried</h2>
-<p>Annealing against a Spanish five-gram model, with the code groups treated as runs of letters, as whole units, and as breaks between runs of signs (<code>solve73.py</code>, <code>solve73g.py</code>), gave scores of about &minus;2.7 to &minus;3.5 per character, well below Spanish, and seeds that disagreed. The runs of signs are short (median three), so a letter model has little to hold on to. This letter needs a crib or a deciphered sibling.</p>
+<h2 id="key"><span class="num">03</span> How the key was recovered</h2>
+<p>Michael Brackx (with Claude Code, Claude Opus 5.5) used the joint annealer he built for Espagnol 318 no. 93: every sign gets a letter or a common letter pair, every code group a word, syllable or letter from a fixed list, or &ldquo;unknown&rdquo;. The score is a Spanish character five-gram (<em>Celestina</em>, <em>Quijote</em>) plus, for each sign and group, the cost of the encipherment given the key, which stops the search collapsing onto a few letters. Values were fixed only when the best runs agreed and the decoded contexts confirmed them; with every sign fixed the score rose from &minus;3.73 to &minus;3.37 per token.</p>
+<p>The code groups were then read by context in three passes: 40 kinds firm (1,005 tokens, 76%), 29 tentative (177), 90 unread (144). Two labels hide more than one sign. <em>sin</em> is <em>&#383;in</em> (two minims) for <em>es</em> and <em>&#383;im</em> (three) for <em>en</em>, side by side on page 3; the 151 tokens were split by the language model in context and six close calls checked on enlarged crops. X stands for <em>r</em>, <em>s</em> or <em>z</em>, again chosen by the model.</p>
 
-<h2 id="open"><span class="num">04</span> What remains uncertain</h2>
+<h2 id="checks"><span class="num">04</span> Checks</h2>
 <ul>
-<li>The whole text. Nothing is known of its content beyond the date and place.</li>
-<li>The Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516. Correspondencia in&eacute;dita con el embajador Vich</em> (CSIC, Madrid 1963), prints Ferdinand&rsquo;s letters to Vich from this archive and has plates of ciphered letters with their decipherments. It is not online and was not seen, so it may print this letter.</li>
-<li>The transcription is a first pass from line strips; a few tokens are marked illegible.</li>
+<li><strong>Matched control.</strong> <em>Lazarillo de Tormes</em>, held out of the model, enciphered the same way at the same size (3,282 tokens, 38 sign kinds, 158 group kinds). The same first step gets every sign token right and 35&ndash;44% of the group tokens: the alphabet comes out reliably, the groups only in part, as here.</li>
+<li><strong>Statistical validation</strong> (<code>docs/_validate.py</code>, firm values only, tokens as transcribed): the reading scores &minus;2.07 per letter, random keys of the same shape &minus;4.04, and a key annealed onto the shuffled ciphertext &minus;2.76 (z 42.5). Verdict: pass.</li>
+<li><strong>How much reads.</strong> Measured on Brackx&rsquo;s reading of all 124 lines, with every tentative value counted as a hole: 0.636 of words read as sense. Look-alike readings are 3.9% of the letters. That is under the project&rsquo;s 95% bar, so the letter is decoded, not read; Brackx grades it the same way.</li>
+</ul>
+
+<h2 id="says"><span class="num">05</span> What it says, as far as it reads</h2>
+<p>Ferdinand writes that he cannot help being <em>muy malcontento</em> that, through pride and delay, <em>las cosas de Italia</em> are in danger, and still less content at <em>la flaquesa del papa</em>, who seems set on terms that break what the league capitulated. <em>Yo no creo ni creere</em> it, he says; Vich is to strengthen the Pope <em>de mi parte</em> and not let him lose heart. The reading and Brackx&rsquo;s English, with every hole marked, are in <code>brackx2026/n73_reading.md</code> and <code>n73_en.md</code>.</p>
+
+<h2 id="open"><span class="num">06</span> What remains open</h2>
+<ul>
+<li>144 unread code-group tokens (90 kinds, most once or twice, many probably names) and 13 signs with no value.</li>
+<li>192 tentative group tokens, among them <em>bay</em> <em>visorrey</em>, <em>suh</em> <em>Emperador</em>, <em>rie</em> <em>confederado</em>: each needs a second context or a crib.</li>
+<li>The <em>sin</em>/<em>sim</em> and X choices: PARES serves the leaves at about 1,147 pixels, too small to tell the minims and sibilants apart. A high-resolution copy from the AHN would settle them.</li>
+<li>The Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516. Correspondencia in&eacute;dita con el embajador Vich</em> (CSIC, Madrid 1963), prints Ferdinand&rsquo;s letters to Vich from this archive. Volume I is on the Internet Archive for lending only; volume II was not found online. If it prints this letter, it is the crib.</li>
 </ul>
 
 <!-- replay:start -->
@@ -90,10 +102,12 @@
 <h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul>
 <li>Archivo Hist&oacute;rico Nacional, Estado, leg. 8715 N.73, <a href="https://pares.mcu.es/ParesBusquedas20/catalogo/description/12751418" rel="noopener">PARES 12751418</a>; for comparison N.74 (12751419) and N.79 (12751424).</li>
-<li>Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516</em>, 2 vols., CSIC, Madrid 1963. Not consulted.</li>
+<li>Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516</em>, 2 vols., CSIC, Madrid 1963. Not consulted; vol. I on the Internet Archive (<code>politicaenitalia0001terr</code>, lending only).</li>
+<li><em>Calendar of State Papers, Spain</em>, vol. II (ed. Bergenroth, 1866), nos. 219&ndash;240, for context only.</li>
+<li>Michael Brackx, <a href="https://github.com/dbourdeau/cyphersolver/issues/94" rel="noopener">issue #94</a> and its files (23 October 2026).</li>
 </ul>
 
-<p class="muted">The transcription, the frequency count, the two solver scripts and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1515"><code>targets/vich1515/</code></a>. The PARES images are not committed; <code>targets/vich1511/pares.py</code> re-fetches them.</p>
+<p class="muted">The transcription, Brackx&rsquo;s reading, English, token table, key and scripts (<code>brackx2026/</code>), the validation pairs and the notes are in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vich1515"><code>targets/vich1515/</code></a>. The PARES images are not committed; <code>targets/vich1511/pares.py</code> re-fetches them.</p>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Manuscript images: Archivo Hist&oacute;rico Nacional (PARES)</span>
