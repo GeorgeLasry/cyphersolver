@@ -1,6 +1,6 @@
 # Pieter Battier to Gaspar Fagel, Madrid, 1686–1688
 
-Status: in progress (21 Oct 2026): the unread letters are workable with the same key; WAINUT's eight 1687 passages (PR #65, #67) wait on an eye check of 158 machine-read key rows.
+Status: in progress (21 Oct 2026; 23 Oct r2n: the located passages read on the scans, six decoded, not read): WAINUT's eight 1687 passages (PR #65, #67) wait on an eye check of 158 machine-read key rows.
 **22 Oct 2026, reading audit** (George Lasry's test): the 4 December 1687 (92L) and 12 February 1688 (100R) cipher blocks have holes in most sentences and are now *decoded, not read* in profile.json, as the strict screen already said. fraction_read 55% -> about 49% (estimated; the two letters' 482 tokens no longer count).
 
 
@@ -27,6 +27,16 @@ Pilot on 69L (`tokens/s069L_r2j_draft.txt`): groups transcribed and ten codes lo
 aanhouden ..."); the third line gives no sense with the marks as read, so the marks need a second look: not read.
 Draft tokens for 102L in `tokens/s102L_r2j_draft.txt`. Each passage needs its marks read group by group and most codes
 looked up (the dict holds only codes used so far): workable with the key, not done in this pass.
+
+**23 Oct 2026, the thirteen located passages read on the scans (batch r2n).** Every group of 35R/36L, 54R, 55R, 67L,
+69L, 73R, 78R, 80R, 93R, 94L, 94R after l. 5, 95R, 99L (scan 99 from the b17 download), 102L and 103R read on the
+full-resolution NA scans (1,046 groups, `tokens/s*_r2n.txt`); about 150 codes looked up on the key scans
+(`research/reading_audit/r2n_keylook.py`, `r2n_allblocks.py`), new rows in `key/dict/r2n.tsv`. 2 Jan 1687 aligned with its
+interlinear decipherment of the time (30 codes agree; 10:703 rabat against the clerk's 'een'). Readings in
+`readings/r2n/` (`_reading.md`, `_en.md`, log `r2n_log.md`). Read (v2_score explicit holes): 2 Jan 1687 0.78, 13 Mar 1687
+54R 1.0 and 55R 1.0, July 1687 1.0, 11 Sept 1687 0.75, 18 Dec 1687 93R/94L 0.85, 1 Jan 1688 1.0, 11 Mar 1688 1.0 (Oropesa to
+speak for Cogolludo, Melgar and Balbases; the Grand Master's Vienna plans and the war-council presidency; Holstein
+desists). Decoded, not read: 67L, 73R, 80R, 94R after l. 5, 99L, 102L. fraction_read about 0.78 (estimated).
 
 Status: read in part; **read with known key**. Two letters pass the strict sense screen without a known contemporary decipherment:
 **24 April 1687, 230/235 = 97.9% conservatively**, and 8 April 1688,
@@ -245,12 +255,17 @@ has **81=i**. None of the three validation letters contains 81, so they do **not
 inference remains open. The Codex review is independent **software re-decoding, not paleography**.
 Shifted annotations, dictionary variants and mark choices still require image checks.
 
+Closed items (moved out of Remaining gaps):
+- Volume letters without cipher (10 Apr, 11/22 May, 31 Jul, 28 Aug enclosures, 9 Oct / 23 Oct / 6 Nov 1687, 25 Mar 1688): closed 23 Oct 2026 (r2j), contact-sheeted, clear text only
+
 ## Remaining gaps
 - 24 April 1687: surplus 8=e; partly covered 5:623 gra[tie]; gehelyk, sedert dat and soo als hy; Gastanaga's exact departure condition - blocker: no-key-material; the 230/235 sense screen excludes these five positions; see codex_review/review_1687-04-24.md
 - Separate decipherment sheets near 4 December 1687 and 12 February 1688 - blocker: no-key-material; checked 22 Oct 2026 (b17): scans 90-94 and 98-102 hold none
 - Focus-letter unresolved groups and sense: 12:6?0; getwist versus inferred Turck(en) (settled 22 Oct 2026: 12:908 Turcken); Novelli/Hofmeester, gesoubconneert gouverneren and Sex.; name repairs, 81 and other emendations in semantic_adjustments.tsv - blocker: no-key-material; key lookup alone does not settle the meaning or mark choices
-- Unread volume letters, cipher located 23 Oct 2026 (r2j): 2 Jan 1687 35R/36L (interlinear of the time to transcribe), 13 Mar 1687 54R and 55R, June 1687 67L, July 1687 69L (pilot, draft tokens), Aug 1687 73R, Sept 1687 78R and 80R, 18 Dec 1687 93R, 94L and 94R after l. 5, 1 Jan 1688 95R, 99L, 26 Feb 1688 102L (draft tokens, faint interlinear), 11 Mar 1688 103R - blocker: not-attempted; workable with the same key: each needs its marks read group by group on the NA scans and most codes looked up on the key scans (b17_keylook.py); about 900 groups in all
-- Volume letters without cipher (10 Apr, 11/22 May, 31 Jul, 28 Aug enclosures, 9 Oct / 23 Oct / 6 Nov 1687, 25 Mar 1688): closed 23 Oct 2026 (r2j), contact-sheeted, clear text only
+- Located passages, r2n (23 Oct 2026): read 2 Jan 1687 35R/36L, 13 Mar 1687 54R and 55R, July 1687 69L, 11 Sept 1687 78R, 18 Dec 1687 93R/94L, 1 Jan 1688 95R, 11 Mar 1688 103R; groups still open in them (35R 361 448 and the end of the 35R run, 703 against the clerk's 'een'; 54R 886; 55R 2:888 blank key row; 78R the first run 260 117 779 60; 93R/94L 888 178 883 212 256; 95R 11:861) - blocker: no-key-material; each looked up on the key scans with the mark as read (and in other blocks where the mark was unclear), no row gives sense in place (readings/r2n/r2n_log.md)
+- June 1687 67L (the letter run t-e-s-m-o-g-n-e-r-e-n) and Aug 1687 73R (backslash mark on 90, stray g): decoded, not read, one sentence each - blocker: no-key-material; every group decoded and looked up, the remaining run and mark have no key value that fits
+- 25 Sept 1687 80R (894, 432, 422, 379, 756), 18 Dec 1687 94R after l. 5 (406, 706, 238, 116, 653, 724, 312, 830) and Jan 1688 99L third run (886, 688, 878, 214, 154, 980): decoded, not read - blocker: no-key-material; looked up on the key scans with the marks as read, no row gives sense; 80R 9x9 is smudged (illegible)
+- 26 Feb 1688 102L (420, 335, 499, 114, 603, 800, 505): decoded, not read - blocker: illegible; the key rows give no sense and the interlinear decipherment of the time that would settle them is too faint on the NA scan to read
 - States General parallel set NA 1.01.02 inv. 12588.120–125 - blocker: needs-physical-access; not digitised
 - 4 Dec 1687 (92L) and 12 Feb 1688 (100R) cipher blocks: closed 22-23 Oct 2026 (b17), both letters read; groups still without sense (92L 889 and a-u-t-o-r-i-s-g; 91R 11:466, 14:6ø, ø94; 99R 431 374 137 512, 604; 100L 867 826 296 765; 100R the struck groups after Madrid and after gesoubconneert, 59ø ø39) - blocker: no-key-material; each looked up on the key scans, no sense in place (readings/*_corrections.tsv)
 
@@ -261,6 +276,7 @@ Shifted annotations, dictionary variants and mark choices still require image ch
 - [x] known-keys: Battier's named inv. 1209 key applied; DECODE R2794 shelfmark discrepancy recorded
 - [x] print: De Leeuw (2000), DECODE, Tomokiyo, editions and NA digitised series searched; no Battier edition found; see evidence/prior_art.md
 - [x] key-rebuild: dictionary transcription and correction overrides preserved; Codex identifies remaining variants and alphabetical reversals
+- [x] retry (23 Oct 2026, r2n): the thirteen located passages read group by group on the NA scans, every code looked up on the key scans, 35R/36L aligned with its interlinear; eight read, six decoded, not read with the blocker named (readings/r2n/r2n_log.md)
 - [x] retry: 22-23 Oct 2026 (b17) 92L, 91R, 99R, 100R re-read on the NA scans group by group and every doubtful group checked on the key scans; two untranscribed cipher runs added; 4 Dec 1687 and 12 Feb 1688 read (readings/1687-12-04_1688-02-12_reread_log.md). Earlier: five focus letters re-decoded and screened for sense; unresolved readings recorded in semantic_adjustments.tsv and review_1687-04-24.md; unread letters not yet transcribed; workable with the same key
 
 ## Files and reproduction
