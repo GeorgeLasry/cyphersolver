@@ -1063,7 +1063,8 @@
    "result": "worked",
    "technique": ["statistical test", "manual reconstruction"]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 5 of 14 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 5 of 14 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-10-24", "kind": "crib", "technique": ["crib testing"], "what": "Michael Brackx posted the clear copy of f. 20r at the end of f. 19v as written (#87, reply of 23 Oct 2026); taken in as texts/f19v_copy.md with his English. It confirms code 14 = que at l. 5 (q[ue] [?ce] fust honte; the claimed wording difference does not exist), names four regiments, not two, and gives the day as vj. f. 20r added to outcome.texts as read in part from the contemporary copy (read_share 0.856 under v10, grade B).", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -1532,6 +1533,25 @@
     },
     "read_share": 0.946,
     "note": "24 Oct 2026: 94.6% of the words of texts/reading_f177.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+   },
+   {
+    "doc": "f20r",
+    "label": "f. 20r",
+    "transcription": "brackx2026/f20r_cipher.txt",
+    "decryption": "texts/f19v_copy.md",
+    "summary": "Mayenne to the King, January 1586 (endorsed 'Mr du Mayne du vjme Januier 1586'), the end of the f. 18 despatch: the remains of four regiments and Colonel Heid's Swiss to meet again on the 6th of next month; he will not be drawn into the Limousin and Quercy, since intercepted letters of Turenne to the King of Navarre show Tulle about to compound for four or five thousand ecus and Lamorez to withdraw to Navarre.",
+    "language": "fr",
+    "state": "read in part",
+    "reading": "texts/f19v_copy.md",
+    "translation": "texts/reading_f20r_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-24",
+     "note": "Read from the contemporary clear copy at the end of f. 19v, transcribed as written by Michael Brackx (#87, 23 Oct 2026); not re-transcribed here. The copy confirms code 14 = que at l. 5 (q[ue] [?ce] fust honte), so no wording difference with the cipher remains. Four regiment names (two unread) and the day [?vj] are doubtful; in-word bracket expansions count as holes under v10, hence under the bar."
+    },
+    "read_share": 0.856,
+    "note": "24 Oct 2026: 85.6% of the words of texts/f19v_copy.md read as sense (v2_score explicit holes; the abbreviation expansions in brackets count as holes); read in part from the contemporary copy."
    }
   ]
  }

@@ -14,7 +14,7 @@ f43c in George's CTTS project (`lasry2022/ctts/`).
 
 Not part of `matignon1586` (Mayenne–Forget's Cipher-1) or `matignon1586c3` (Matignon's Cipher-3): their notes record
 that f. 43 is in neither cipher. Saint-Luc's other ciphered letters in the volume (ff. 245, 260) use another table
-(Tomokiyo, "StLuc's Cipher"); not worked here.
+(Tomokiyo, "StLuc's Cipher"); not worked here. f. 260r-v with the f. 245r-v cribs is now its own target, `saintluc1586b` (Michael Brackx, issue #90).
 
 ## The key (George Lasry)
 
