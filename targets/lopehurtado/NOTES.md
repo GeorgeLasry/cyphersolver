@@ -8,6 +8,13 @@ on f. 268). **Decoded, not read**: R9634, R9645, R9646, R9656: 61-80% of tokens 
 paraphrase in most cipher sentences. The 76% / 72.3% figures (tokens read as sense) are withdrawn as reading figures;
 of the five token-transcribed letters only R9649 reads (89 of 2,104 tokens).
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch b13; `texts/R9634-R9656_reread_log.md`): R9634, R9645, R9646 and R9656
+re-read on crops of the DECODE images and written out as continuous readings with English (`texts/<doc>_reading.md`,
+`_en.md`). Gains: R9645 f. 243r ll. 1-12 (*que abia tomado assiento con el duque de Ferrara*, the capitulation terms),
+R9656 f. 334v (*lo de [?Ostia]*, `&δϑα7`), label corrections (`texts/<doc>_corrections.tsv`: the crossed t-form is m;
+the 8-form stands for ϑ). None reaches the bar: clean shares R9646 0.727 (clear-carried; cipher runs 4-5 keep their
+holes), R9656 0.564, R9645 0.528, R9634 0.506. All four stay **decoded, not read**.
+
 Catalogue entry 144 ("Lope Hurtado de Mendoza (Rome) to unknown recipient, 8 ciphertexts",
 RAH Signatura 9/26). Opened 2026-09-20, after the sanchez1522 session established that these letters
 are **not** in Alonso Sánchez's cipher.
@@ -736,15 +743,13 @@ against the faded copy: *que esta muy sospechoso el papa que de alla* (`zub`) *s
 New values: `zub` = alla, `3` = h confirmed, `ʒ` = y and `⊤` = x probable. Details in `read_r9656.md`.
 
 ## Remaining gaps
-- R9634, R9645, R9646, R9656 decoded, not read (2,015 tokens; holes in most sentences, reading audit 22 Oct 2026) - blocker: no-key-material; the open groups occur once with no gloss or clear copy (R9656's copy is faded to line ends); the sentences the valued runs allow are still to be written out and translated
-
-- R9645 (75% read): tec, ʃen, the spelled words of f.243r ll. 5, 8, 14, 17 and f.243v ll. 1, 7, 10 - blocker: no-key-material; f. 243r and upper f. 243v have no gloss, codes seen once
-- R9656 (79% read, re-transcribed 2026-10-03): ɲ4∠&ɣ̊ϑ (l. 6), ∂ɡ∂∂8 (l. 9), teɡ ∂ ϑ∠8ɣ̊oo (l. 13), ϙ8, 8x& (l. 14), ϯ7∂∂, ßϑ7, 30, f. 334v l. 1 tail, ∂∂8∂7 - blocker: illegible; no lexicon match under any reading of the signs; the f. 335r clear copy is legible only in its right half at DECODE resolution, and the spelled signs are at the scan's limit; RAH Biblioteca Digital blocked to automated requests
-- R9634 (73% read, retried 2026-10-02 and 2026-10-03; codes pooled over 21 letters, Sanuto XXXIII and CSP ii searched): about 40 code groups seen once (ʃe, xer, zud, zac, ʃum, ʇudd, yat, zub, ʃof, zif yin, xen, zer, car ʒa, xas zɣ, yul ...) and yel (4x), ɣ̊e (4x), ʃun, ʃud - blocker: no-key-material; no clear version in the record and none in CSP Spain ii; one context each
-- R9634 spelled words with every letter valued that give no word (14r12, 14v03 place names, 14v16, 15r11, 15v05, 15v12) and the force numerals of 15r05/15r09/15r10 - blocker: illegible; 8/ϑ (e/t), ∂ (s/p/t) and ε (l/g) not separable at DECODE resolution; no expansion of the sign sets is a Spanish word (wordmatch.py); DECODE has no larger file and the RAH Biblioteca Digital is behind a bot check (needs Daniel in a browser)
-- R9646 (80% read): ʙ∠89&Ho, zip (run 4); zob, δ8ǝtoo, ʃof, ʙ∠47 ɣ?8δHo (run 5) - blocker: no-key-material; no crib, codes seen once; one misvalued sign in each spelled word
+- R9646 (decoded, not read; runs 4-5): zip, zob, ʃof and the spelled ð∠89&Ho, 8ʒtoo, ð∠47 ɣ?8δHo - blocker: no-key-material; codes seen once in 21 letters, the looped sign keyed nowhere (re-read 22 Oct 2026, b13)
+- R9656 (decoded, not read): ɲ4∠&ɣ̊t (l. 6), ɣαδ8 (l. 9), teɡ∂ ϯ∠8ɣ̊oo (l. 13), ϙ8, 8x& (l. 14), zarɣ̊, ßϑ7, code 30 - blocker: no-key-material; f. 335r copy illegible in the left half of each line after background subtraction (b13)
+- R9645 (decoded, not read): f. 243r r13-r17 and f. 243v ll. 1-10 (#ʇʇHoε97, xωt74, tec, zuf, ʃen, tep, ɣ7∠8ϑ9Ho, 8&ɣ̊98, ϑωε7ϙ) - blocker: no-key-material; no gloss above these lines, codes seen once
+- R9634 (decoded, not read): about 45 code groups seen once and the spelled place names (14r12, 14v03, 14v16, 15r11, 15v05, 15v12) - blocker: no-key-material; no clear version, duplicate or print
+- Doubtful signs in the spelled words of R9634, R9645, R9646, R9656 (8/ϑ, ∂ s/p/t, ε l/g, the looped sign) - blocker: needs-physical-access; DECODE has no larger file, the RAH Biblioteca Digital is behind a bot check (Daniel in a browser)
 - Spelled runs in the ciphered leaves of R9644, R9648, R9650 (word-perfect edition) - blocker: illegible; same per-glyph limit; ten alphabet signs downgraded to probable
-- Nomenclator codes not yet met in the uncribbed letters - blocker: no-key-material; no clear version for them; roughly half the tokens resolve
+- Nomenclator codes not yet met in the uncribbed letters - blocker: no-key-material; no clear version for them
 
 ## Escalation
 
@@ -754,3 +759,4 @@ New values: `zub` = alla, `3` = h confirmed, `ʒ` = y and `⊤` = x probable. De
 - [x] print: Bergenroth CSP Spain ii (archive.org bub_gb_ZoY9AAAAcAAJ, full text) searched 2026-09-21: Hurtado letters calendared for 1522 are nos. 416, 422 (6 June), 454, 455 (26-27 July) only; nothing from Sept-Nov 1522 (Salazar A. 26 appears once, for Sánchez no. 488). The nine records here are not in print, so there is no CSP crib for R9634 (13 Sept, Genoa) or R9646. Sessa's 20 Nov despatch (no. 502) is the nearest contemporary context. 2026-10-03: Sanuto, Diarii t. XXXIII (archive.org idiariidimarinos33sanu) grepped for Provenza/Lion/Adorno/Urtado: no report of the Sept 1522 Provence plan, no crib
 - [x] key-rebuild: crib alignment gave 49 confirmed code values and probable alphabet signs (key_codes.tsv), audited for conflicts; R9634 line-by-line reading added ɋ = r, plural z, yob/xep/xu and the null groups after Ꮒ (key_1522_r9634.tsv)
 - [x] retry: R9656 f. 334 re-read in 1524 notation (2026-09-21) and regraded with the nulls and R9634 values (61%, 2026-10-02); R9634 transcribed and read, its unread groups retried against the R9645 values (71%); R9646 retried (nulls, oviese; 80%); R9649 measured (100%); R9645 re-transcribed in the R9634 notation and regraded (73%), all 2026-10-02
+- [x] retry (22 Oct 2026, b13): R9634, R9645, R9646, R9656 re-read on 1-4x crops, f. 335r re-enhanced, the lopehurtado1523 look-alike lessons tried; label corrections and readings in texts/; none reads

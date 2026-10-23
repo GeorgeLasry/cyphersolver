@@ -7,6 +7,14 @@ grades between ellipses; the clear English around them reads, the cipher passage
 text can be built. Class read in part -> not read, method -> not solved; the 'about a third of the cipher words'
 figure (0.35, never measured) is withdrawn as a reading figure. The partial key (signs.tsv) stands.
 
+**22 Oct 2026, re-read** (REREAD_BRIEF, batch b13; `texts/R8490-R8496_reread_log.md`): the clear of ff. 80r-80v, 92r
+and 96v transcribed as running text and every run re-checked on the 7,200 px images; partial readings with modern English
+in `texts/<doc>_reading.md`, `_en.md`. f. 80r's "armada(s)" is **"treaties" / "treaty of [?Breda]"** (the third sign is
+the 7-form e, not ∽ m; `texts/R8490_corrections.tsv`), so the hostages passage reads (*Touching hostages, yt ys honorable
+for [7] to […] their surety to these termes, as usuall yn all treaties …*), as does the f. 80v run (*22 hath a desire to
+retourne from theym*). The rest of the cipher still gives scattered words; the 21 Sept I-grade guesses are withdrawn. All
+four letters stay **decoded, not read**. f. 97r is blank (no runs there).
+
 Outcome: **read in part** (see READING.md; was "attempted, open" until the solver loops of 21 Sept). The cipher system has been identified and most of its alphabet has been rebuilt from
 the decrypted sibling letters in the same volume. Only fragments of the four letters read with confidence.
 
@@ -200,14 +208,11 @@ CSP Foreign vol. 21 pt 4 calendars Cobham letters of 1, 4, 9, 13, 24, 29 May and
 
 ## Remaining gaps
 
-- R8490 (ff. 80-81), decoded, not read - blocker: open-codes; unglossed signs and codes 22, 27
-- R8492 (f. 88), decoded, not read - blocker: open-codes; signs K, upsilon, rho, W glossed nowhere, polyphonic signs
-- R8495 (ff. 92-93), decoded, not read - blocker: open-codes; same unglossed and polyphonic signs
-- R8496 (ff. 96-97), decoded, not read - blocker: open-codes; same signs; f. 97r runs not transcribed
-- f. 80r-81r (R8490) long run f.80g, codes 22, 27 and the square sign - blocker: open-codes; 22, 27 and the square are unglossed in the siblings R8481/R8488/R8489/R8493; run 80g gives no word even with two edits
-- f. 88r (R8492): name after 'captain', word after 'haven of', lines 3-6 and the seven cipher words of ll. 12-20 (recurring 'Tnn') - blocker: open-codes; signs K, upsilon, rho, W not glossed on any sibling; polyphonic signs (wedge s/t/a, gamma r/y, c o/a, phi l/t/p) leave several readings
-- f. 92r (R8495) runs 92a-d - blocker: open-codes; solver finds no word with two edits; same unglossed and polyphonic signs
-- ff. 96r-97r (R8496), all but a few words (e.g. f. 96v line 4) - blocker: open-codes; only 'passed', 'within France', 'servants', 'priests' read; the rest turns on the same signs; f. 97r runs not in runs.txt
+- R8490 (ff. 80r-80v), decoded, not read: runs c∪ǂǂ8ϕ, WLϕΛ, Xd+c:·87, ∞7γǂǂcL and the 22/27 passage of ll. 31-34; codes 22, 27 and the square - blocker: no-key-material; W, the square, 22 and 27 are glossed in no sibling (R8481, R8488, R8489, R8493); the hostages passage and the f. 80v run now read (b13)
+- R8492 (f. 88r), decoded, not read: name after 'captain', words after 'haven of', ll. 3-11 and the cipher words of ll. 12-20 - blocker: no-key-material; signs K, ɔ/Q, upsilon, rho glossed nowhere; polyphonic signs leave several readings with nothing to choose between them
+- R8495 (f. 92r), decoded, not read: runs 92a-c and the ten cipher lines below "Dunkergh: 4 sent by" - blocker: no-key-material; same signs; solver finds no word with two edits
+- R8496 (f. 96v), decoded, not read: all runs but a few probable words - blocker: no-key-material; same signs; f. 97r is blank
+- Clear text of f. 96r (R8496) and the bracketed secretary-hand words of ff. 80, 88, 92, 96v - blocker: not-attempted; outside the cipher, not transcribed on 22 Oct 2026
 
 ## Escalation
 
@@ -216,4 +221,4 @@ CSP Foreign vol. 21 pt 4 calendars Cobham letters of 1, 4, 9, 13, 24, 29 May and
 - [x] known-keys: harley287 key and Bodley's R8497 key tried
 - [x] print: CSP Foreign vol. 21 pt 4 (Jan-June 1588): Harley 287 letters not calendared, no printed decipherment
 - [x] key-rebuild: candidate-set solver (solve.py, CSP 1588 word list) with solver loop 1: L = e, c = a, phi = p added
-- [ ] retry: not done — re-read f. 80g, f. 92a-d and the f. 96r-97r runs at 2x full resolution, add f. 97r to runs.txt and rerun solve.py with the loop-1 values (only f. 88 had the full loop)
+- [x] retry (22 Oct 2026, b13): every run of ff. 80, 88, 92, 96v re-read on the 7,200 px images at 0.5-1.0x with the clear text transcribed round it; f. 80 relabelled (treaties, hostages, surety); f. 97r is blank, so nothing to add to runs.txt; partial readings in texts/
