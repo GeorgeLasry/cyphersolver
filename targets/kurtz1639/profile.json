@@ -398,35 +398,48 @@
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 22728 tokens, 133 types, de-1640s order 4: reading -2.378 per letter; random keys -4.857 (z 8.3); key annealed onto shuffled ciphertext best -3.206 (mean -3.213, z 131.9); annealer on the real text -2.781. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): page transcriptions tr/IMG_<record>_*.txt and the machine decipherments read/<record>.txt (with the clear copy, endorsement and summary files where they exist); key key.json and KEY.md.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the nine read/*.txt files read through. The deciphered runs are unspaced and garbled every few lines in eight letters (by-eye coherence 55-80%), so sentences that run through the cipher cannot be built: R3811-R3815, R4625, R4645, R4736 relabelled decoded, not read; R4734's short runs read (kept read, reviewed B). fraction_read 0.999 (tokens with a value) -> 0.021.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the nine read/*.txt files read through. The deciphered runs are unspaced and garbled every few lines in eight letters (by-eye coherence 55-80%), so sentences that run through the cipher cannot be built: R3811-R3815, R4625, R4645, R4736 relabelled decoded, not read; R4734's short runs read (kept read, reviewed B). fraction_read 0.999 (tokens with a value) -> 0.021.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-22", "kind": "key from source", "what": "Re-read (REREAD_BRIEF, batch b06): key corrected for all nine letters after kwic checks over the whole corpus: 38 = d (was g: feindt, und, landt, wurdt), Δ = nu (was e: warnung, hoffnung, nun, Nuncio), #dot = su (was null: sufficient, subsidia, verfassung, suspiciones), #s-long = ti (was t: militaria, resolution, obligation; glossed ti on R3811 p. 1), m = a (was null; after 29: quartier, quam, quando). Two polyphonic readings entered as relabelled signs: 9v = vo (the same 9 shape; Volck, von, vor, voluimus, darvon) and pv = vi (the crossed long-s; Salvius, resolviren, proviant, privilegia), relabelled in tr/ only where the other value gives no word. KEY.md updated.", "result": "worked", "technique": ["key-structure hypothesis", "contextual inference", "language-model scoring"]},
+  {"date": "2026-10-22", "kind": "transcription", "what": "Re-read b06: every letter checked on full-resolution crops of the DECODE images (main checkout img/; crops in the session scratchpad only, research/reading_audit/b06_crop.py); about 330 label and clear-text fixes logged in read/<rec>_corrections.tsv (φ for 6, #f-cross for p after 27, 9v, pv, regrouped figures, struck tokens turned into notes, clear Kurrent re-read, R4625 dated Hamburg 10 Feb 1639 from its p. 6). The R3811 interlinear decipherment transcribed in read/R3811_interlinear.md (it also settles 4 2 = 42, 9 = #sect, 0 = φ).", "result": "worked", "technique": ["manual reconstruction"]},
+  {"date": "2026-10-22", "kind": "reading", "what": "Re-read b06: readings and English translations built for all eight letters (read/<rec>_reading.md, _en.md, _reread_log.md), aligned word by word with the decode (research/reading_audit/b06_align.py; R3811 also with the interlinear gloss), supplied letters bracketed. Clean-sentence share of the reading bodies (b06_body_score.py, the _check_reading.py logic): R3811 0.62, R3812 0.616, R3815 0.681, R4625 0.603, R4645 0.625, R4736 0.636 (read, grade B); R3813 0.531, R3814 0.524 (decoded, not read: Latin, names and period spellings the word list does not know, homophone splits of x and d, runs without a word).", "result": "partial", "technique": ["manual reconstruction", "contextual inference", "language-model scoring"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 22728, "types": 133, "tokens_per_type": 170.89, "score": -2.378, "nulls": {"random keys": {"n": 200, "mean": -4.857, "sd": 0.299, "max": -4.207, "z": 8.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.213, "sd": 0.006, "max": -3.206, "z": 131.9, "p": 0.1429}}, "power": -2.781, "verdict": "pass", "notes": "claimed per-occurrence score -2.403; polyphony 0.0; 22 unread tokens left out; annealer on the real text from random keys reached -2.781"}, 
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The key was rebuilt from the contemporary interlinear decipherment on p. 1 of the 17 Jan 1639 letter (R3811) and extended by homophonic solving with a German LM across all nine letters.",
   "contribution": ["transcription", "key recovered", "sender or date identified"],
   "class": "read in part",
-  "fraction_read": 0.021,
+  "fraction_read": 0.575,
   "verification": ["contemporary decipherment", "key confirms", "historical consistency", "statistical test"],
-  "notes": "Key complete; all nine letters deciphered after a checked second transcription pass (21 Sept 2026, ~360 tokens corrected, 56 skipped lines restored); residual garble in lines where the image does not decide the digits, and in Latin passages. Checks: the R3811 interlinear glosses agree with the key; R3811 matches Mírka's 2012 summary; clear text continues the deciphered sense.",
+  "notes": "Key complete; all nine letters deciphered (second transcription pass 21 Sept 2026). Re-read 22 Oct 2026 (batch b06): five key values corrected for all letters after kwic checks (38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) and two polyphonic readings entered as relabelled signs (9v = vo, pv = vi); about 330 label and clear-text fixes on full-resolution crops; readings and translations built for all eight letters, six of which now read (R3811, R3812, R3815, R4625, R4645, R4736; with R4734 seven of nine); R3813 and R3814 stay decoded, not read. Checks: the R3811 interlinear glosses agree with the key; R3811 matches Mírka's 2012 summary; clear text continues the deciphered sense.",
   "gaps": [
    {
-    "item": "Residual garbled lines in all nine letters (per file in tr/PASS2_LOG.md)",
-    "blocker": "illegible",
-    "detail": "after the checked second pass: ambiguous digit groupings, blots, overwritten digits, Latin passages"
+    "item": "R3813 (7,997 tokens) and R3814 (2,054 tokens), decoded, not read (clean share 0.531 and 0.524)",
+    "blocker": "not-attempted",
+    "detail": "readings built (read/R3813_reading.md, R3814_reading.md); remaining [?] words need the x (vi/to/su/ta) and d (so/to) splits settled on the images; about 25 runs with legible figures do not make words yet"
    },
    {
-    "item": "Latin passages",
-    "blocker": "illegible",
-    "detail": "image-checked; residual run-together digits and blots; alpha question settled (alpha = sa, #a-loop = m)"
+    "item": "Unread runs and [?] words inside the six letters that now read (listed in each read/<rec>_reading.md Notes)",
+    "blocker": "not-attempted",
+    "detail": "single-occurrence runs no key value fits; x and d homophones; #sect = z in R4645/R4736"
    },
    {
-    "item": "R4645 P6 closing and postscript in Kurz's hand",
+    "item": "Postscripts and margin notes in Kurz's own cursive (R3811, R3814 p. 4, R4645 P6, R4736)",
     "blocker": "illegible",
-    "detail": "fast cursive, about half the words unread at DECODE resolution"
+    "detail": "fast personal hand at DECODE image resolution; partly read in the Notes"
+   },
+   {
+    "item": "R4645: a leaf between P2 (\"quae ergo\") and P6",
+    "blocker": "needs-physical-access",
+    "detail": "not among the nine DECODE records"
+   },
+   {
+    "item": "Clear Kurrent words not settled at DECODE resolution (about 20 across the letters)",
+    "blocker": "illegible",
+    "detail": "marked [...] in the readings"
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit 22 Oct 2026: cipher tokens in the letters that read as sentences, R4734 = 480 of 22,913 (profile documents); the other eight are decoded, not read. Withdrawn as a reading figure: 0.999 = coverage.json (from decode.py over tr/*.txt): cipher tokens given a value by the key, 22,534 of 22,913 (nulls counted as valued); fraction_coherent (0.65) stays a by-eye estimate: read/*.txt has no per-token sense marking.",
+  "fraction_read_source": "22 Oct 2026, re-read batch b06: cipher tokens (parse.load over the corrected tr/ files) of the letters that read as sentences / all: 13618 / 23669 (R3811, R3812, R3815, R4625, R4645, R4734, R4736). Before: 0.021 (R4734 only, reading audit). Withdrawn earlier: 0.999 (tokens with a value).",
   "key": "recovered",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment on R3811 p. 1 used to seed the key"},
@@ -436,53 +449,41 @@
    {
     "doc": "R3812",
     "label": "R3812, Hamburg, 3 Feb 1639",
-    "note": "read/R3812.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"nitobihmedietelfehl evensialiter\", \"quuartr\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "tr/IMG_R3812_I23106_P.txt",
-     "tr/IMG_R3812_I23107_P.txt",
-     "tr/IMG_R3812_I23108_P.txt",
-     "tr/IMG_R3812_I23109_P.txt",
-     "tr/IMG_R3812_I23113_P.txt",
-     "tr/IMG_R3812_I23114_P.txt",
-     "tr/IMG_R3812_I23115_P.txt",
-     "tr/IMG_R3812_I23117_P.txt",
-     "tr/IMG_R3812_I23118_P.txt",
-     "tr/IMG_R3812_I23119_P.txt",
-     "tr/IMG_R3812_I23120_P.txt",
-     "tr/IMG_R3812_I23121_P.txt",
-     "tr/IMG_R3812_I23122_P.txt",
-     "tr/IMG_R3812_I23123_P.txt"
-    ],
-    "decryption": [
-     "read/R3812.txt"
-    ],
-    "summary": "Kurz von Senftenau on the quartering of six imperial regiments and the Lower Saxon Kreistag: Banér's plundering will ruin the Stift Halberstadt, Duke Georg of Lüneburg will not resist; he sees no real Swedish or French wish for peace and great ill-feeling between Denmark and Sweden. Postscript on Arnim's visit after escaping Swedish captivity."
+    "transcription": ["tr/IMG_R3812_I23106_P.txt", "tr/IMG_R3812_I23107_P.txt", "tr/IMG_R3812_I23108_P.txt", "tr/IMG_R3812_I23109_P.txt", "tr/IMG_R3812_I23113_P.txt", "tr/IMG_R3812_I23114_P.txt", "tr/IMG_R3812_I23115_P.txt", "tr/IMG_R3812_I23117_P.txt", "tr/IMG_R3812_I23118_P.txt", "tr/IMG_R3812_I23119_P.txt", "tr/IMG_R3812_I23120_P.txt", "tr/IMG_R3812_I23121_P.txt", "tr/IMG_R3812_I23122_P.txt", "tr/IMG_R3812_I23123_P.txt"],
+    "decryption": ["read/R3812.txt"],
+    "summary": "Kurz von Senftenau on the quartering of six imperial regiments and the Lower Saxon Kreistag: Banér's plundering will ruin the Stift Halberstadt, Duke Georg of Lüneburg will not resist; he sees no real Swedish or French wish for peace and great ill-feeling between Denmark and Sweden. Postscript on Arnim's visit after escaping Swedish captivity.",
+    "reading": "read/R3812_reading.md",
+    "translation": "read/R3812_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Hamburg, 3 Feb 1639. Read and translated; clean share 0.616 (141 of 229). Holes: about 78 [...] and 37 [?], mostly runs that do not make words after the image check and blots on I23113, I23121, I23122; the clear postscript (I23119 left) and the clear leaf I23123 are not transcribed. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
+    }
    },
    {
     "doc": "R3811",
     "label": "R3811, Hamburg, 17 Jan 1639",
-    "note": "read/R3811.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"elbungteesertiudefendirenisr\", \"dassalistessere\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "tr/IMG_R3811_I23099_P.txt",
-     "tr/IMG_R3811_I23100_P.txt",
-     "tr/IMG_R3811_I23101_P.txt",
-     "tr/IMG_R3811_I23102_P.txt",
-     "tr/IMG_R3811_I23103_P.txt",
-     "tr/IMG_R3811_I23104_P.txt"
-    ],
-    "decryption": [
-     "read/R3811.txt"
-    ],
-    "summary": "Nothing can be done with Duke Georg; France, Sweden and Holland plan an embassy to the King of Denmark to prevent a congress in Sweden; Duke August of Saxe-Lauenburg is said to seek Danish protection; Arnim denies plotting against the Peace of Prague and Kurz advises a protectorium. The letter carries an interlinear decipherment (summarised by Mírka in 2012)."
+    "transcription": ["tr/IMG_R3811_I23099_P.txt", "tr/IMG_R3811_I23100_P.txt", "tr/IMG_R3811_I23101_P.txt", "tr/IMG_R3811_I23102_P.txt", "tr/IMG_R3811_I23103_P.txt", "tr/IMG_R3811_I23104_P.txt"],
+    "decryption": ["read/R3811.txt", "read/R3811_interlinear.md"],
+    "summary": "Nothing can be done with Duke Georg; France, Sweden and Holland plan an embassy to the King of Denmark to prevent a congress in Sweden; Duke August of Saxe-Lauenburg is said to seek Danish protection; Arnim denies plotting against the Peace of Prague and Kurz advises a protectorium. The letter carries an interlinear decipherment (summarised by Mírka in 2012).",
+    "reading": "read/R3811_reading.md",
+    "translation": "read/R3811_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Hamburg, 17 Jan 1639. Read and translated (read/R3811_reading.md, _en.md); clean-sentence share of the reading body 0.62 (49 of 79 sentences). The contemporary interlinear decipherment on p. 1 and the first eleven lines of I23100 left is transcribed in read/R3811_interlinear.md and carries ex, virium, ist and subsidia where the key does not. Holes: about five clear Kurrent words, [?protectorium] and [?Stockholmb] (x = to), [?Stecknitz], [?ettlis], and the postscript in Kurz's cursive. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
+    }
    },
    {
     "doc": "R3813",
     "label": "R3813, Hamburg, 27 Jan 1639",
-    "note": "read/R3813.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"dastelckunteremsalis\", \"oblatonessowirihmthu\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "note": "Re-read 22 Oct 2026 (batch b06; read/R3813_reading.md, _en.md, _reread_log.md, 78 label and clear-text fixes in R3813_corrections.tsv): all twenty pages built into sentences that mostly translate, but the reading body scores 0.531 clean (165 of 311), under the bar. 47 failing sentences fail only on period spellings, names and Latin the word list does not know; the rest keep [?] words that need homophone values not in the key (x = vi in vil, Salvio; d = to in directorium, Victoria; 6 = z), about 10 clerk's slips the figures leave without a word, and 11 clear words unreadable at DECODE resolution. Workable, not an outside blocker: settle the x and d splits on the images and re-read.",
     "state": "decoded, not read",
     "language": "de",
     "transcription": [
@@ -507,15 +508,15 @@
      "tr/IMG_R3813_I23124_P19.txt",
      "tr/IMG_R3813_I23124_P20.txt"
     ],
-    "decryption": [
-     "read/R3813.txt"
-    ],
-    "summary": "Twenty-page memorandum: the enemy advances unopposed towards Salzwedel; a Kreistag broken up by the enemy is better than one concluded with express neutrality; Kurz advises a defensive strategy, distrusts Salvius, weighs a secret particular treaty with Sweden through Brandenburg or Denmark, and says France wants Lorraine, Alsace and even the imperial crown."
+    "decryption": ["read/R3813.txt"],
+    "summary": "Twenty-page memorandum: the enemy advances unopposed towards Salzwedel; a Kreistag broken up by the enemy is better than one concluded with express neutrality; Kurz advises a defensive strategy, distrusts Salvius, weighs a secret particular treaty with Sweden through Brandenburg or Denmark, and says France wants Lorraine, Alsace and even the imperial crown.",
+    "translation": "read/R3813_en.md",
+    "reading": "read/R3813_reading.md"
    },
    {
     "doc": "R3814",
     "label": "R3814, undated, 1639",
-    "note": "read/R3814.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"komenagditur\", \"decaeteroellasitspesnecdieidenominage\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
+    "note": "Re-read 22 Oct 2026 (batch b06; read/R3814_reading.md, _en.md, _reread_log.md, 40 fixes in R3814_corrections.tsv): all five pages checked on the images and the reading built, but it scores 0.524 clean (33 of 63): half the letter is Latin and names the word list does not know, and about 15 runs with legible figures do not make words (listed in the Notes). The p. 4 postscript in Kurz's cursive is only partly legible at DECODE resolution (in the Notes, not the body). Workable: another pass on the unread runs.",
     "state": "decoded, not read",
     "language": "de",
     "transcription": [
@@ -525,72 +526,61 @@
      "tr/IMG_R3814_I23145_P4.txt",
      "tr/IMG_R3814_I23145_P5.txt"
     ],
-    "decryption": [
-     "read/R3814.txt"
-    ],
-    "summary": "The Swedish agent Mithoff and the Danish mediation; safe-conducts; Lorraine, Mantua and Pomerania in pledge; Rákóczi said to take French money with the Turk's consent; Kurz defends his secret particular dealing with Mithoff and describes a secret post route via Ehrenberg and Wolfenbüttel."
+    "decryption": ["read/R3814.txt"],
+    "summary": "The Swedish agent Mithoff and the Danish mediation; safe-conducts; Lorraine, Mantua and Pomerania in pledge; Rákóczi said to take French money with the Turk's consent; Kurz defends his secret particular dealing with Mithoff and describes a secret post route via Ehrenberg and Wolfenbüttel.",
+    "translation": "read/R3814_en.md",
+    "reading": "read/R3814_reading.md"
    },
    {
     "doc": "R3815",
     "label": "R3815, Hamburg, 6 Feb 1639, to Ferdinand III",
-    "note": "read/R3815.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"puschwritficirtt\", \"wafenallon?nrung\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "tr/IMG_R3815_I27184_P1.txt",
-     "tr/IMG_R3815_I27184_P2.txt",
-     "tr/IMG_R3815_I27184_P3.txt",
-     "tr/IMG_R3815_I27184_P4.txt"
-    ],
-    "decryption": [
-     "read/R3815.txt",
-     "read/SUMMARY_R3815.md"
-    ],
-    "summary": "The King of Denmark is perplexed and perhaps stalling to avoid a conjunction with the Emperor; the Danish Reichsrat is irresolute; with 8-9,000 men the princes could deal with a starved, exhausted enemy; Salis sent to Hildesheim, Duke Georg, the Kreis resolution, Hatzfeldt."
+    "transcription": ["tr/IMG_R3815_I27184_P1.txt", "tr/IMG_R3815_I27184_P2.txt", "tr/IMG_R3815_I27184_P3.txt", "tr/IMG_R3815_I27184_P4.txt"],
+    "decryption": ["read/R3815.txt", "read/SUMMARY_R3815.md"],
+    "summary": "The King of Denmark is perplexed and perhaps stalling to avoid a conjunction with the Emperor; the Danish Reichsrat is irresolute; with 8-9,000 men the princes could deal with a starved, exhausted enemy; Salis sent to Hildesheim, Duke Georg, the Kreis resolution, Hatzfeldt.",
+    "reading": "read/R3815_reading.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Hamburg, 6 Feb 1639, to Ferdinand III (pages run P1 right, P3, P2). Read and translated; clean share 0.681 (32 of 47); much of the share is the clear German framing the cipher. About fifteen single-occurrence runs stay unread (listed in the reading's Notes). Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
+    },
+    "translation": "read/R3815_en.md"
    },
    {
     "doc": "R4625",
-    "label": "R4625, undated (late Jan / 10 Feb 1639), to Trauttmansdorff",
-    "note": "read/R4625.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"ofseferiertsiichesnoch\", \"silibusconseliisteluimus\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
-    "state": "decoded, not read",
+    "label": "R4625, Hamburg, 10 Feb 1639, to Trauttmansdorff",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "tr/IMG_R4625_I27189_P1.txt",
-     "tr/IMG_R4625_I27189_P2.txt",
-     "tr/IMG_R4625_I27189_P3.txt",
-     "tr/IMG_R4625_I27189_P4.txt",
-     "tr/IMG_R4625_I27189_P5.txt",
-     "tr/IMG_R4625_I27189_P6.txt",
-     "tr/IMG_R4625_I27189_P7.txt"
-    ],
-    "decryption": [
-     "read/R4625.txt",
-     "read/SUMMARY_R4625.md"
-    ],
-    "summary": "Memorandum on keeping the Lower Saxon Circle divided and holding Halberstadt, Magdeburg, Hildesheim and Wolfenbüttel; 8,000 Danish men in Holstein; three grades of Circle war; the imperial army is ruined."
+    "transcription": ["tr/IMG_R4625_I27189_P1.txt", "tr/IMG_R4625_I27189_P2.txt", "tr/IMG_R4625_I27189_P3.txt", "tr/IMG_R4625_I27189_P4.txt", "tr/IMG_R4625_I27189_P5.txt", "tr/IMG_R4625_I27189_P6.txt", "tr/IMG_R4625_I27189_P7.txt"],
+    "decryption": ["read/R4625.txt", "read/SUMMARY_R4625.md"],
+    "summary": "Memorandum on keeping the Lower Saxon Circle divided and holding Halberstadt, Magdeburg, Hildesheim and Wolfenbüttel; 8,000 Danish men in Holstein; three grades of Circle war; the imperial army is ruined.",
+    "reading": "read/R4625_reading.md",
+    "translation": "read/R4625_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Memorandum dated on p. 6 \"Hamburg den 10. Febr. Ao 1639\" (read 22 Oct 2026; the label said undated), with a clear covering letter on p. 7. Read and translated; clean share 0.603 (70 of 116). About 20 [...] and 15 [?] remain; the p. 5 Latin is the weakest part. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
+    }
    },
    {
     "doc": "R4645",
     "label": "R4645, Hamburg, 13 Feb 1639",
-    "note": "read/R4645.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"weigdemenciodiezahn\", \"w?lnschonnichts\"; Latin runs and the P6 postscript worst); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "tr/IMG_R4645_I27398_P1.txt",
-     "tr/IMG_R4645_I27398_P2.txt",
-     "tr/IMG_R4645_I27398_P3.txt",
-     "tr/IMG_R4645_I27398_P4.txt",
-     "tr/IMG_R4645_I27398_P5.txt",
-     "tr/IMG_R4645_I27398_P6.txt",
-     "tr/IMG_R4645_I27398_P7.txt",
-     "tr/IMG_R4645_I27398_P8.txt",
-     "tr/IMG_R4645_I27398_P9.txt"
-    ],
-    "decryption": [
-     "read/R4645.txt",
-     "read/R4645_clear.md"
-    ],
-    "summary": "The Danish interposition and a possible conjunction with the Emperor: the King's distinctions proved mere lies; Count Pentz says the King must drop the mediation and denounce Sweden. With clear copies of two letters of Banér of 29 Jan 1639."
+    "transcription": ["tr/IMG_R4645_I27398_P1.txt", "tr/IMG_R4645_I27398_P2.txt", "tr/IMG_R4645_I27398_P3.txt", "tr/IMG_R4645_I27398_P4.txt", "tr/IMG_R4645_I27398_P5.txt", "tr/IMG_R4645_I27398_P6.txt", "tr/IMG_R4645_I27398_P7.txt", "tr/IMG_R4645_I27398_P8.txt", "tr/IMG_R4645_I27398_P9.txt"],
+    "decryption": ["read/R4645.txt", "read/R4645_clear.md"],
+    "summary": "The Danish interposition and a possible conjunction with the Emperor: the King's distinctions proved mere lies; Count Pentz says the King must drop the mediation and denounce Sweden. With clear copies of two letters of Banér of 29 Jan 1639.",
+    "reading": "read/R4645_reading.md",
+    "translation": "read/R4645_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Hamburg, 13 Feb 1639 (letter order P9, P1, P2, P6; the Banér copies are clear, read/R4645_clear.md). Read and translated; clean share 0.625 (20 of 32). A leaf between P2 and P6 is not among the DECODE images; the P6 close and postscript in Kurz's cursive and one Latin run on P9 are unread. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
+    }
    },
    {
     "doc": "R4734",
@@ -613,18 +603,19 @@
    {
     "doc": "R4736",
     "label": "R4736, Glückstadt, 14 Apr 1639",
-    "note": "read/R4736.txt: the clear German between the runs reads, but the deciphered runs are unspaced and garbled every few lines (\"kude?prosemperhaben\", \"qumnobisaveecispenitusenerts\"); sentences that run through cipher cannot be built without guessing (by-eye coherence 55-80% per letter, NOTES)",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "tr/IMG_R4736_I27769_P1.txt",
-     "tr/IMG_R4736_I27769_P2.txt",
-     "tr/IMG_R4736_I27769_P3.txt"
-    ],
-    "decryption": [
-     "read/R4736.txt"
-    ],
-    "summary": "At the Danish court: the Danes complain that war in Austria is bought with peace in Lower Saxony while the Swedes stay in Mecklenburg and Pomerania; papers to be sent to Schwarzenberg; outward respect for the Emperor nowhere greater than at Glückstadt."
+    "transcription": ["tr/IMG_R4736_I27769_P1.txt", "tr/IMG_R4736_I27769_P2.txt", "tr/IMG_R4736_I27769_P3.txt"],
+    "decryption": ["read/R4736.txt"],
+    "summary": "At the Danish court: the Danes complain that war in Austria is bought with peace in Lower Saxony while the Swedes stay in Mecklenburg and Pomerania; papers to be sent to Schwarzenberg; outward respect for the Emperor nowhere greater than at Glückstadt.",
+    "reading": "read/R4736_reading.md",
+    "translation": "read/R4736_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Glückstadt, 14 Apr 1639. Read and translated; clean share 0.636 (28 of 44). Open: a few Latin and Italian runs (\"quid consilii [...] armorum\", \"alli altri [?scoppa]\", \"lentra i gnadi\"), the postscript and margin note in Kurz's cursive. Rests on the key decode (key.json as corrected 22 Oct 2026: 38 = d, Δ = nu, #dot = su, #s-long = ti, m = a) of the tr/ transcription after the label fixes in read/<rec>_corrections.tsv, made on full-resolution crops of the DECODE images; words separated and the reading aligned word by word with the decode (b06_align.py), supplied letters and words bracketed."
+    }
    }
   ],
   "key_file": [

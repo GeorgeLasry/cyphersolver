@@ -111,3 +111,21 @@ c si, n ve, d so, k ti, #l-loop tu) were fixed from context and the glosses.
 
 - α (small upright a) = **sa**, not m; the larger looped ℒ-form is a separate sign, `#a-loop` = **m**.
 - `#f-cross` (crossed ƒ-like sign, R3813) = **ta**; pass 1 had merged it with `x` (i).
+
+## Corrections, 22 Oct 2026 (re-read batch b06)
+
+Made after kwic checks over all nine letters (read/<rec>_reread_log.md, research/reading_audit/b06_*.py):
+
+| sign | was | now | evidence |
+|---|---|---|---|
+| `38` | g | d | feindt, und, landt, wurdt, standt, Teutschlandt, bald (all ~250 uses; 36 stays g) |
+| `Δ` | e | nu | warnung, hoffnung, nun, nuzen, Nuncio, gefangnus, continuieren, eigennutz |
+| `#dot` | null | su | sufficient, subsidia, disunirter, verfassung, suspiciones, succurs, summum periculum |
+| `#s-long` | t | ti | militaria, resolution, obligation, negotiirt, particular, fertig (glossed ti on R3811 p. 1); in R3815's hand it also stands as a flourish, and a few words need a plain t (tausendt in R3812) |
+| `m` | null | a | after 29: quartier, quam, quando, aliquam, quae |
+| `pv` | (new) | vi | the crossed long-s `p` (otherwise a null or, after 27, #f-cross = ta) read vi: Salvius, resolviren, proviant, privilegia; tokens relabelled pv only where vi makes the word |
+| `9v` | (new) | vo | a polyphonic 9, the same shape as 9 = te: Volck, von, vor, voluimus, darvon, vormaur; tokens relabelled 9v in tr/ only where te gives no word |
+
+Open: the crossed long-s `p` (null) reads vi in Salvius, resolviren, proviant (and ta after 27, relabelled #f-cross); `x`
+also reads to / su / vi in a few words; `#sect` reads z in R4645 and R4736 (w in R3811's glosses); `#hash` = x
+(ex, rex). Printed with brackets in the readings.

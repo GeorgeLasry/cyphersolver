@@ -1,0 +1,49 @@
+"""b06: write reread_b06_results.json (per-document outcome, gaps, notes, solution steps) for reread_b06.py."""
+import json, pathlib
+D = '2026-10-22'
+R = {
+    'R3811': {'state': 'read', 'grade': 'B', 'note': 'Hamburg, 17 Jan 1639. Read and translated (read/R3811_reading.md, _en.md); clean-sentence share of the reading body 0.62 (49 of 79 sentences). The contemporary interlinear decipherment on p. 1 and the first eleven lines of I23100 left is transcribed in read/R3811_interlinear.md and carries ex, virium, ist and subsidia where the key does not. Holes: about five clear Kurrent words, [?protectorium] and [?Stockholmb] (x = to), [?Stecknitz], [?ettlis], and the postscript in Kurz\'s cursive.'},
+    'R3812': {'state': 'read', 'grade': 'B', 'note': 'Hamburg, 3 Feb 1639. Read and translated; clean share 0.616 (141 of 229). Holes: about 78 [...] and 37 [?], mostly runs that do not make words after the image check and blots on I23113, I23121, I23122; the clear postscript (I23119 left) and the clear leaf I23123 are not transcribed.'},
+    'R3815': {'state': 'read', 'grade': 'B', 'note': 'Hamburg, 6 Feb 1639, to Ferdinand III (pages run P1 right, P3, P2). Read and translated; clean share 0.681 (32 of 47); much of the share is the clear German framing the cipher. About fifteen single-occurrence runs stay unread (listed in the reading\'s Notes).'},
+    'R4625': {'state': 'read', 'grade': 'B', 'label': 'R4625, Hamburg, 10 Feb 1639, to Trauttmansdorff', 'note': 'Memorandum dated on p. 6 "Hamburg den 10. Febr. Ao 1639" (read 22 Oct 2026; the label said undated), with a clear covering letter on p. 7. Read and translated; clean share 0.603 (70 of 116). About 20 [...] and 15 [?] remain; the p. 5 Latin is the weakest part.'},
+    'R4645': {'state': 'read', 'grade': 'B', 'note': 'Hamburg, 13 Feb 1639 (letter order P9, P1, P2, P6; the Banér copies are clear, read/R4645_clear.md). Read and translated; clean share 0.625 (20 of 32). A leaf between P2 and P6 is not among the DECODE images; the P6 close and postscript in Kurz\'s cursive and one Latin run on P9 are unread.'},
+    'R4736': {'state': 'read', 'grade': 'B', 'note': 'Glückstadt, 14 Apr 1639. Read and translated; clean share 0.636 (28 of 44). Open: a few Latin and Italian runs ("quid consilii [...] armorum", "alli altri [?scoppa]", "lentra i gnadi"), the postscript and margin note in Kurz\'s cursive.'},
+    'R3813': {'state': 'decoded, not read', 'note': 'Re-read 22 Oct 2026 (batch b06; read/R3813_reading.md, _en.md, _reread_log.md, 78 label and clear-text fixes in R3813_corrections.tsv): all twenty pages built into sentences that mostly translate, but the reading body scores 0.531 clean (165 of 311), under the bar. 47 failing sentences fail only on period spellings, names and Latin the word list does not know; the rest keep [?] words that need homophone values not in the key (x = vi in vil, Salvio; d = to in directorium, Victoria; 6 = z), about 10 clerk\'s slips the figures leave without a word, and 11 clear words unreadable at DECODE resolution. Workable, not an outside blocker: settle the x and d splits on the images and re-read.'},
+    'R3814': {'state': 'decoded, not read', 'note': 'Re-read 22 Oct 2026 (batch b06; read/R3814_reading.md, _en.md, _reread_log.md, 40 fixes in R3814_corrections.tsv): all five pages checked on the images and the reading built, but it scores 0.524 clean (33 of 63): half the letter is Latin and names the word list does not know, and about 15 runs with legible figures do not make words (listed in the Notes). The p. 4 postscript in Kurz\'s cursive is only partly legible at DECODE resolution (in the Notes, not the body). Workable: another pass on the unread runs.'},
+}
+R['_notes'] = ('Key complete; all nine letters deciphered (second transcription pass 21 Sept 2026). Re-read 22 Oct 2026 '
+               '(batch b06): five key values corrected for all letters after kwic checks (38 = d, Δ = nu, #dot = su, '
+               '#s-long = ti, m = a) and two polyphonic readings entered as relabelled signs (9v = vo, pv = vi); about '
+               '330 label and clear-text fixes on full-resolution crops; readings and translations built for all eight '
+               'letters, six of which now read (R3811, R3812, R3815, R4625, R4645, R4736; with R4734 seven of nine); '
+               'R3813 and R3814 stay decoded, not read. Checks: the R3811 interlinear glosses agree with the key; R3811 '
+               'matches Mírka\'s 2012 summary; clear text continues the deciphered sense.')
+R['_gaps'] = [
+    {'item': 'R3813 (7,997 tokens) and R3814 (2,054 tokens), decoded, not read (clean share 0.531 and 0.524)',
+     'blocker': 'not-attempted',
+     'detail': 'readings built (read/R3813_reading.md, R3814_reading.md); remaining [?] words need the x (vi/to/su/ta) and d (so/to) splits settled on the images; about 25 runs with legible figures do not make words yet'},
+    {'item': 'Unread runs and [?] words inside the six letters that now read (listed in each read/<rec>_reading.md Notes)',
+     'blocker': 'not-attempted',
+     'detail': 'single-occurrence runs no key value fits; x and d homophones; #sect = z in R4645/R4736'},
+    {'item': 'Postscripts and margin notes in Kurz\'s own cursive (R3811, R3814 p. 4, R4645 P6, R4736)',
+     'blocker': 'illegible', 'detail': 'fast personal hand at DECODE image resolution; partly read in the Notes'},
+    {'item': 'R4645: a leaf between P2 ("quae ergo") and P6', 'blocker': 'needs-physical-access',
+     'detail': 'not among the nine DECODE records'},
+    {'item': 'Clear Kurrent words not settled at DECODE resolution (about 20 across the letters)', 'blocker': 'illegible',
+     'detail': 'marked [...] in the readings'},
+]
+TECH = ['manual reconstruction', 'contextual inference', 'language-model scoring']
+R['_steps'] = [
+    {'date': D, 'kind': 'key from source',
+     'what': 'Re-read (REREAD_BRIEF, batch b06): key corrected for all nine letters after kwic checks over the whole corpus: 38 = d (was g: feindt, und, landt, wurdt), Δ = nu (was e: warnung, hoffnung, nun, Nuncio), #dot = su (was null: sufficient, subsidia, verfassung, suspiciones), #s-long = ti (was t: militaria, resolution, obligation; glossed ti on R3811 p. 1), m = a (was null; after 29: quartier, quam, quando). Two polyphonic readings entered as relabelled signs: 9v = vo (the same 9 shape; Volck, von, vor, voluimus, darvon) and pv = vi (the crossed long-s; Salvius, resolviren, proviant, privilegia), relabelled in tr/ only where the other value gives no word. KEY.md updated.',
+     'result': 'worked', 'technique': ['key-structure hypothesis', 'contextual inference', 'language-model scoring']},
+    {'date': D, 'kind': 'transcription',
+     'what': 'Re-read b06: every letter checked on full-resolution crops of the DECODE images (main checkout img/; crops in the session scratchpad only, research/reading_audit/b06_crop.py); about 330 label and clear-text fixes logged in read/<rec>_corrections.tsv (φ for 6, #f-cross for p after 27, 9v, pv, regrouped figures, struck tokens turned into notes, clear Kurrent re-read, R4625 dated Hamburg 10 Feb 1639 from its p. 6). The R3811 interlinear decipherment transcribed in read/R3811_interlinear.md (it also settles 4 2 = 42, 9 = #sect, 0 = φ).',
+     'result': 'worked', 'technique': ['manual reconstruction']},
+    {'date': D, 'kind': 'reading',
+     'what': 'Re-read b06: readings and English translations built for all eight letters (read/<rec>_reading.md, _en.md, _reread_log.md), aligned word by word with the decode (research/reading_audit/b06_align.py; R3811 also with the interlinear gloss), supplied letters bracketed. Clean-sentence share of the reading bodies (b06_body_score.py, the _check_reading.py logic): R3811 0.62, R3812 0.616, R3815 0.681, R4625 0.603, R4645 0.625, R4736 0.636 (read, grade B); R3813 0.531, R3814 0.524 (decoded, not read: Latin, names and period spellings the word list does not know, homophone splits of x and d, runs without a word).',
+     'result': 'partial', 'technique': TECH},
+]
+out = pathlib.Path(__file__).parent / 'reread_b06_results.json'
+out.write_text(json.dumps(R, ensure_ascii=False, indent=1), encoding='utf-8')
+print(out)

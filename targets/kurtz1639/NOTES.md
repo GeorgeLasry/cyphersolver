@@ -2,6 +2,15 @@
 
 Status: in progress (was: read in part; key rebuilt in full; all nine letters deciphered; checked second transcription pass 21 Sept 2026)
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch b06): **read** now R3811 (0.62), R3812 (0.616), R3815 (0.681), R4625 (0.603,
+dated Hamburg 10 Feb 1639 on its p. 6), R4645 (0.625), R4736 (0.636), with R4734 seven of nine; **decoded, not read**
+R3813 (0.531) and R3814 (0.524). Figures = clean-sentence share of the reading body (research/reading_audit/b06_body_score.py).
+Key corrected for all letters after kwic checks: 38 = d (was g), Δ = nu (was e), #dot = su (was null), #s-long = ti (was t),
+m = a (was null); polyphonic 9v = vo and pv = vi entered as relabelled signs (KEY.md, "Corrections, 22 Oct 2026"). About
+330 label and clear-text fixes on full-resolution crops (read/<rec>_corrections.tsv); the R3811 interlinear decipherment
+transcribed (read/R3811_interlinear.md). Readings, translations and logs: read/<rec>_reading.md, _en.md, _reread_log.md.
+fraction_read 0.021 -> 0.575 (13,618 of 23,669 cipher tokens).
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R4734 only (short
 runs inside clear German). **Decoded, not read**: R3811, R3812, R3813, R3814, R3815, R4625, R4645, R4736: the clear
 German reads, but the deciphered runs are unspaced and garbled every few lines (by-eye 55-80%), so sentences through the
@@ -99,7 +108,8 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 - 2026-09-21: checked second transcription pass on all 73 images; comment-line bug fixed (56 lines restored); #f-cross = ta split from x in R3813; read/ regenerated; α = sa and #a-loop = m split; R4645 Banér copies and R4734 endorsement transcribed (addressee Schwarzenberg).
 
 ## Remaining gaps
-- eight letters decoded, not read (R3811-R3815, R4625, R4645, R4736; 22,433 tokens) - blocker: not-attempted; word-divide each run, check the garbled groups on the images (run-together digits, 1/7, 6/0/c), re-decode, build sentences and translate; R4625 and R3815 first
+- R3813 (7,997 tokens) and R3814 (2,054 tokens) decoded, not read (re-read 22 Oct, clean share 0.531 / 0.524) - blocker: not-attempted; readings built, the remaining [?] words need the x (vi/to/su/ta) and d (so/to) splits settled on the images, and about 25 runs with legible figures do not make words yet
+- (closed 22 Oct 2026) R3811, R3812, R3815, R4625, R4645, R4736 read (b06 re-read); unread runs inside them are listed in each reading's Notes - blocker: not-attempted (single occurrences, homophones of x and d)
 
 - All nine letters, residual garbled lines (listed per file in tr/PASS2_LOG.md; R3814 and R4645 Latin worst) - blocker: illegible; the checked second pass (21 Sept) fixed about 360 tokens; what remains is mostly ambiguous digit groupings, blots and overwritten digits where the image does not decide, and Latin/Italian passages
 - Latin passages - blocker: illegible; checked on the images in the second pass; the residual garble sits in run-together digit groups and blots. The alpha question is settled (21 Sept): the small upright α = sa (Salvius, salvus, caesaris, universal-, sachsen), a larger looped ℒ-form = m (#a-loop, 28 tokens split out on the images); in R3813's hand the two shapes are hard to separate
@@ -108,8 +118,9 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 ## Escalation
 
 - [x] siblings: all nine DECODE records (73 images) transcribed; no key record or transcription files on DECODE
-- [x] clear-pages: R3811 p. 1 interlinear decipherment used to seed the key
+- [x] clear-pages: R3811 p. 1 interlinear decipherment used to seed the key; transcribed in full 22 Oct 2026 (read/R3811_interlinear.md)
 - [n/a] known-keys: the key is rebuilt in full from the glosses and the regular CV table; Mirka's 2012 key is not printed
 - [x] print: Mirka, Zapadoceske archivy 2012 and Crypto-World 11-12/2012: only the 17 Jan letter, summarised
 - [x] key-rebuild: structured homophonic solver with a German LM; table 41-100 written out (KEY.md, key.json)
 - [x] retry: checked second transcription pass on all 73 images (21 Sept 2026), decode.py rerun on all nine letters; LM score better on 8 of 9
+- [x] retry (22 Oct 2026, b06): key corrected (38 = d, Δ = nu, #dot = su, #s-long = ti, m = a, 9v = vo, pv = vi), every letter re-read on crops, six more letters read; R3813/R3814 short of the bar
