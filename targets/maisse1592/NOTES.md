@@ -2,8 +2,25 @@
 
 Catalogue no. 17 (priority 5.0, class B). Opened 19 Sept 2026.
 
-Status: in progress (was: solved. Both ciphers identified and keyed; f. 370 decoded and verified letter-for-letter
-against the independent clear copy.)
+Status: read (23 Oct 2026, r2l: f. 373's cipher transcribed group by group and aligned with its copy, so both letters
+are measured; before: in progress).
+
+23 Oct 2026, r2l (REREAD_BRIEF): **f. 373's figures transcribed and aligned with the copy.** f. 373r-v fetched again at
+full size (openapi.bnf.fr views 422-423), deskewed, every line cut in four quarters (`research/reading_audit/r2l_lines373.py`,
+`r2l_q373.py`) and read figure by figure against the Brienne copy enciphered with `key1.tsv` (`r2l_pred373.py`),
+recording the figures where they differ: `texts/f373_figures.txt` (built by `r2l_fig373.py` from the line spec
+`texts/f373_figures_spec.txt`), **3,958 groups in 66 lines** (recto ll. 3-53, verso ll. 1-15; b29 had counted about 42 + 11
+lines), 36 doubtful, 3 struck. Aligned with the copy by `research/reading_audit/r2l_align373.py` ->
+`texts/f373_figures_vs_copy.md`: **3,972 of the 4,062 copy letters of the cipher passage agree (97.8%)**, 29 substituted,
+48 missing from the figures, 13 in code 24 (Roy d'Espagne, f. 373r l. 14). The figures differ from the copy in wording at
+*vous pouvez tascher de* (copy *pourrez tascher a*), *fort bon* (*tres bon*), *asseurer ce faisant* (*en ce faisant*),
+*Verac sa partialité* (no *et*), *combien qui* (*qu'il*), *par faulte d'estre* (*d'y estre*), *le moien que j'ay*
+(*que j'y ay*), and in spelling throughout (*atendre, moiens, devoir, amys, ruine, reduit, acabler, cheute, flaterie,
+ceste, cogneues, oultre, laquele, cele, ceulx, aider, contraint, commancement, infaliblement ...*); the reading
+`texts/f373_reading.md` now follows the figures there (v2_score 0.913 plain, 0.957 explicit holes). Caveat: the figures
+were read against the enciphered copy, so agreement is partly by construction; the 77 differing words are what the image
+shows. fraction_read 0.99 (estimated) -> **0.999 measured** (6,250 of 6,251 visible cipher groups: f. 370 2,293, f. 373
+3,958; group 90 unread). Class read in part -> **read**.
 
 23 Oct 2026, r2f (REREAD_BRIEF): **f. 370's figures aligned with the copy.** The whole cipher passage of f. 370r-v
 transcribed group by group from openapi.bnf.fr views 419-420 (`texts/f370_figures.txt`, 2,293 figure groups measured,
@@ -311,7 +328,7 @@ Pope's resolutions awaited. Beyond the opening the reading rests on the copy alo
 ## Remaining gaps
 
 - f. 370: read 23 Oct 2026; figures aligned with the copy (r2f). Line ends of f. 370v hidden in the binding gutter (about 147 copy letters, the copy is the only witness there) - blocker: needs-physical-access; group 90 at the end of f. 370r l. 1, probably a null - blocker: too-short
-- f. 373: closed 23 Oct 2026 (read from the Brienne copy; Verac, charmez, sainement checked on the figures 23 Oct, r2f). Postscript ll. 2 and 5 - blocker: illegible
+- f. 373: closed 23 Oct 2026 (r2l: all 3,958 cipher groups transcribed and aligned with the Brienne copy, 97.8%). Clear postscript ll. 2 and 5 (not cipher) - blocker: illegible
 
 ## Escalation
 
@@ -323,4 +340,4 @@ not read. None of these steps has been redone since; each is open for those docu
 - [x] known-keys: other keys of the same correspondents tried (23 Oct, r2f: Tomokiyo's 1592 key fits, 97.6% on f. 370; his 1592-1593 key has letter-shaped signs that ff. 370/373 lack; Savasse's codes agree on 24, not on 23; Savasse 1997 not available)
 - [x] print: printed editions and calendars searched for these letters (Xivrey t. III lists f. 373 = pièce 226 as not printed; the Brienne copy is the text)
 - [x] key-rebuild: the key corrected against the documents that read (23 Oct, r2f: 71 = rr, 73 = tt, codes 23, 24, 48, 49 added to key1.tsv)
-- [x] retry: every decoded-not-read document re-read sentence by sentence against the images (23 Oct: f. 373, b29)
+- [x] retry: every decoded-not-read document re-read sentence by sentence against the images (23 Oct: f. 373, b29; 23 Oct r2l: f. 373's cipher transcribed group by group and aligned, 97.8%)

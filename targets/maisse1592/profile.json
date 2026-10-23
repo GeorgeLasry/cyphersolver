@@ -290,22 +290,36 @@
    "technique": ["key matching"],
    "what": "r2f escalation: siblings - neighbouring leaves ff. 367-369 and 371-372 (views 416-418, 420-421) looked at: clear despatches and the clear close of f. 370, no duplicate of f. 370 by a second route that could fill the gutter; known keys - Tomokiyo's 1592 key fits (97.6%), his 1592-1593 key (maisse1593) does not apply (no letter-shaped signs on ff. 370/373), Savasse's codes from Maisse's 1590 letters agree on 24 and not on 23; not available here: Savasse 1997.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "r2l: f. 373r-v fetched at full size from openapi.bnf.fr IIIF (views 422-423, 6959 x 6145 and 6823 x 6171), deskewed (2.95 and 1.3 degrees), rows found by ink profile (r2l_lines373.py), every line cut in four quarters at 1.35x (r2l_q373.py) and read figure by figure against the Brienne copy enciphered with key1.tsv (r2l_pred373.py), recording the figures where they differ; texts/f373_figures.txt, 3,958 groups in 66 lines (r03-r53, v01-v15), 36 doubtful, 3 struck. The recto has 51 cipher lines (b29 counted about 42), the verso 15 (b29: 11).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "r2l: figures aligned letter by letter with the Brienne 13 copy (research/reading_audit/r2l_align373.py, copy of r2f_align370.py) -> texts/f373_figures_vs_copy.md: 3,972 of 4,062 copy letters agree (97.8%), 29 substituted, 48 missing, 13 in code 24. Differences in wording followed in the reading (pouvez tascher de, fort bon, asseurer ce faisant, Verac sa, combien qui, par faulte d'estre, le moien que j'ay); v2_score 0.913 plain, 0.957 explicit holes. fraction_read measured 0.999; class read in part -> read.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "The content of both letters comes from contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey; Tomokiyo's published key for Maisse's Cipher (1592) was applied to the 81 transcribed characters of f. 370, which match the Brienne copy.",
   "contribution": ["transcription", "key extended or corrected", "catalogue correction"],
-  "class": "read in part",
-  "fraction_read": 0.99,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "r2f 23 Oct 2026: f. 370 measured, 2,293 figure groups (texts/f370_figures.txt), all read (decoded and aligned with the Brienne copy; the gutter-hidden ends read from the copy); f. 373 about 3,500 groups estimated (53 lines, the copy's 4,062 letters), read from the copy checked on the figures at eight places. Open: two partly illegible lines of f. 373's clear postscript (not cipher) and one unidentified group (90, f. 370r l. 1). About 0.99 of cipher groups. Earlier: 0.98 (v3), 0.87 (b29), 0.06 (reading audit 22 Oct), 1.0 withdrawn.",
+  "class": "read",
+  "fraction_read": 0.999,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "r2l 23 Oct 2026: both cipher passages transcribed group by group and aligned with their Brienne 13 copies: f. 370 2,293 groups (r2f, texts/f370_figures.txt), f. 373 3,958 groups (texts/f373_figures.txt, 36 of them doubtful on the image and carried by the copy), 6,251 in all; unread: group 90 (f. 370r l. 1, once). 6,250 / 6,251 = 0.999 of the visible cipher groups. The f. 370v line ends hidden in the gutter (about 147 copy letters) are read from the copy. Earlier: 0.99 (r2f, f. 373 estimated), 0.98 (v3), 0.87 (b29), 0.06 (reading audit 22 Oct), 1.0 withdrawn.",
   "verification": [
    "contemporary decipherment",
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Both letters read: f. 370's cipher transcribed group by group and aligned with the contemporary Brienne 13 copy (97.6% letter agreement; the reading follows the figures where they differ), f. 373 read from its Brienne copy checked on the figures. Key extended 23 Oct 2026 from the alignment: 71 = rr, 73 = tt (key1.tsv had uu), codes 23 = pape, 24 = Roy d'Espagne, 48 = ambassadeur, 49 = guerre. Split 14 Oct 2026: ff. 406 and 410, in a different cipher, are maisse1593.",
+  "notes": "Both letters read: the cipher of f. 370 and of f. 373 transcribed group by group and aligned with the contemporary Brienne 13 copies (97.6% and 97.8% letter agreement; the readings follow the figures where they differ). Key extended 23 Oct 2026 from the alignment: 71 = rr, 73 = tt (key1.tsv had uu), codes 23 = pape, 24 = Roy d'Espagne, 48 = ambassadeur, 49 = guerre. Split 14 Oct 2026: ff. 406 and 410, in a different cipher, are maisse1593.",
   "provenance": "contributed",
   "credits": [
    {
@@ -347,11 +361,11 @@
    },
    {
     "doc": "f373",
-    "label": "f. 373, 7 Nov 1592 (clear copy Brienne 13 fol. 104v-106v transcribed; cipher checked at five places)",
+    "label": "f. 373, 7 Nov 1592 (figures of the whole cipher transcribed and aligned with the Brienne 13 fol. 104v-106v clear copy)",
     "state": "read",
     "language": "fr",
-    "transcription": ["texts/f373_brienne_copy.txt", "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f422.item"],
-    "decryption": "texts/f373_reading.md",
+    "transcription": ["texts/f373_figures.txt", "texts/f373_figures_spec.txt", "texts/f373_brienne_copy.txt"],
+    "decryption": "texts/f373_figures_vs_copy.md",
     "summary": "Henri IV acknowledges Maisse's letter of 4 October and will wait for the outcome of the Gondi and Pisany mission; urges the Venetian friends to help him with money and to work on the Pope, since only his person can preserve the Crown; approves Maisse's handling of the third-party (tiers parti) rumour; the duc de Retz has left without funding the Swiss, the League expects reinforcements while Parma is ill; Lesdiguières must be supported in Piedmont; Brèves has the Levant charge and Maisse is asked to stay at Venice a little longer. A clear postscript announces Joyeuse's defeat and death before Villemur.",
     "reading": "texts/f373_reading.md",
     "translation": "texts/f373_en.md",
@@ -359,7 +373,7 @@
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "Read 23 Oct 2026 (b29) from the original's clear parts and the Brienne 13 fol. 104v-106v copy, checked on the figures at five places. r2f 23 Oct 2026: the copy's doubtful words checked on the figures (view 422): [?Vivac] = Verac (19 11 16 7 9; the figures have no et before sa), [?chauvez] = charmez (9 3 7 16 6 11 22), [?sainement] = sainement (17 7 4 12 11 6 11 12 18). v2_score 0.946 plain (87/92), 0.967 explicit holes; open: the date numeral [?vij.e], one supplied [et], two partly illegible lines of the clear postscript."
+     "note": "r2l 23 Oct 2026: the whole cipher of f. 373r-v transcribed group by group from the full-size Gallica views 422-423 (texts/f373_figures.txt, 3,958 groups in 66 lines, 36 doubtful, 3 struck; line spec f373_figures_spec.txt) and aligned letter by letter with the Brienne 13 fol. 104v-106v copy by research/reading_audit/r2l_align373.py (texts/f373_figures_vs_copy.md): 3,972 of the 4,062 copy letters of the cipher passage agree (97.8%), 29 substituted, 48 missing from the figures, 13 in code 24 (Roy d'Espagne). The reading now follows the figures where they differ in wording (vous pouvez tascher de, fort bon, asseurer ce faisant, Verac sa partialite, combien qui, par faulte d'estre, le moien que j'ay) and spelling. The figures were read line by line against the enciphered copy, so agreement is partly by construction; the 77 differences are what the image shows. v2_score 0.913 plain, 0.957 explicit holes. Earlier: b29 read from the copy, checked at five places; r2f Verac, charmez, sainement."
     }
    }
   ],

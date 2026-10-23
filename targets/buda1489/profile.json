@@ -295,6 +295,27 @@
    "technique": ["statistical test"],
    "what": "r2e: v2_score.py (it): p. 1, p. 2 ll. 1-17, p. 4 body 0.642 explicit-hole (34/53; before 0.519), p. 1 ll. 22-29 0.22 under the stain; p. 2 ll. 18-31 + p. 3 0.466. Look-alike letters 0.7%. Share of cipher signs read measured for the first time: 0.847 (358 of 2,338 signs in unread groups). The first part set read (grade B); the second stays decoded, not read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "solver",
+   "technique": ["beam/DP decoding", "language-model scoring"],
+   "what": "r2l: 79 unread letter groups of V2831 (research/reading_audit/r2l_buda_raw.txt) turned into lattices of their signs' alternative values (r2l_signs.py) and segmented into words by r2l_seg.py: k-best word segmentation on it-cinquecento corpus word frequencies, ranked by the shared lang/ model it-cinquecento (5-gram) in context. Adopted where the top candidate reads as sense and every letter is carried: ben, in el, epsa, poco amano (p. 1), subiunse, con, li di passati, ha assignati (p. 2), le [?ha] ben, sentire, se ne, le rasone, calumnie, inante, basti (p. 3). About 55 groups give no word under any combination.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "r2l: V2831 p. 3 re-cropped from the full-resolution Vestigia plate (3240x4320; r2l_crop3.py, r2l_zoom.py) for L02, L03, L05, L08, L09, L19, L20, L23-L31; 23 label corrections (trans/v2831_r2l_corrections.tsv): dotted q in 'per quanto', su-sign in 'persuadere', Fa in 'facto' and four 'fare', Papa sign twice, 'non [?venga] a alienare l'animo', 'tertio in iustificare' (b25 had counted one sign twice), 'offerendoli de mandarlo li', 'innocentia', 'cosa', 'sento d'avere'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "r2l: v2_score.py (it): p. 2 ll. 18-31 + p. 3 0.636 explicit-hole (35/55; before 0.466), plain 0.491; p. 1, p. 2 ll. 1-17, p. 4 0.698 (before 0.642). Look-alike letters recounted by the brief's definition 1.8% (b25's broad count 4.3%). Second part set read (grade B); class stays read in part (hole rate 0.12, read bar of 95% not met).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -305,7 +326,7 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.563,
+  "fraction_read": 1.0,
   "verification": [
    "matched control",
    "independent clear copy",
@@ -315,9 +336,9 @@
   "key": "partial",
   "gaps": [
    {
-    "item": "V2831 legible letter groups that do not segment into words with the full key: p. 1 L04 (two -ione words), L11, L12, L22, L24; p. 2 L09, L15, L16; p. 4 L02; p. 2 ll. 20, 22, 24-31 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31 (b25 list)",
-    "blocker": "not-attempted",
-    "detail": "three sign-by-sign passes (b25 twice, r2e 23 Oct 2026 with R5411); a fourth pass using the lang/ Italian model as a segmenter over the decoded strings has not been tried"
+    "item": "V2831 letter groups that decode letter for letter but give no word: p. 1 L03, L04, L08, L11, L12, L17, L19-L22, L25-L29; p. 2 L15, L16, L19-L21, L25, L28-L31 between secure words; p. 3 L02, L03 head, L05-L08 middles, L15, L18, L21, L22, L27, L29, L31; p. 4 L02",
+    "blocker": "no-key-material",
+    "detail": "four passes: three sign by sign (b25 twice, r2e with R5411) and r2l (23 Oct 2026) with the lang/ model it-cinquecento as segmenter over every alternative sign value plus a full-resolution re-crop of p. 3; the remaining groups need the values the torn columns of R5411 held (T, U/V, X, Y, Z, &, part of the syllable rows) or signs not in the key (r-ring, the n-stroke in 'ochi aperti', the lone x on p. 3 l. 29)"
    },
    {
     "item": "V2831 p. 3 l. 15, one or two signs under an ink blot",
@@ -369,30 +390,24 @@
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "r2e 23 Oct 2026: re-read sign by sign from the Vestigia plates with the original key R5411 (trans/v2831p1_r2e.md, v2831p2_r2e.md, v2831p4_r2e.md; log v2831_r2e_reread_log.md). New: p. 2 line 1 (never transcribed), M+ = Regina, a# = Vostra Dominatio, o+ = Imperatore, x-bar = ma, fa-signs; withdrawn 1989 words not carried by the figures. Reading body 0.642 explicit-hole (34/53; plain 0.321; before 0.519); p. 2 ll. 1-17 0.80, p. 1 ll. 1-21 0.70, p. 1 ll. 22-29 0.22 under the stain (illegible). Look-alike letters 13 of about 2,000 (0.7%). Share of cipher signs read 0.847 (358 of 2,338 signs in unread groups). No contemporary text or print exists; the reading rests on the figures alone."
+     "note": "r2e 23 Oct 2026: re-read sign by sign from the Vestigia plates with the original key R5411 (trans/v2831p1_r2e.md, v2831p2_r2e.md, v2831p4_r2e.md); 0.642 explicit-hole, look-alike letters 0.7%, share of cipher signs read 0.847. r2l 23 Oct 2026 (v2831_r2l_reread_log.md): the unread groups segmented with the lang/ model it-cinquecento over the alternative sign values; ben, in el, epsa, poco amano, subiunse adopted (every letter carried); 0.698 explicit-hole (37/53)."
     }
    },
    {
     "doc": "V2831",
     "label": "Vestigia 2831, Buda 22 Nov 1489: p. 2 ll. 18-31 and p. 3 (p. 2 has 31 lines, p. 3 31)",
-    "transcription": [
-     "trans/v2831p1_a_v.txt",
-     "trans/v2831p1_read2.md",
-     "trans/v2831p1_read3.md",
-     "trans/v2831p2_read.md",
-     "trans/v2831p2_read2.md",
-     "trans/v2831p2_read3.md",
-     "trans/v2831p3_read.md",
-     "trans/v2831p3b_read.md",
-     "trans/v2831p3b_read2.md",
-     "trans/v2831p4_read.md"
-    ],
+    "transcription": ["trans/v2831p2_b25.md", "trans/v2831p3_b25.md", "trans/v2831p2_r2e.md", "trans/v2831_r2l_corrections.tsv", "trans/v2831p3_read.md", "trans/v2831p3b_read.md", "trans/v2831p3b_read2.md"],
     "decryption": "v2831_reading.md",
     "language": "it",
-    "state": "decoded, not read",
-    "note": "Re-read 23 Oct 2026 (b25; v2831_p2p3_reread_log.md) with the original key R5411: Roma, la Regina, Vostra Dominatio, the Duke of Milan, the Pope, madonna Bianca, the bishop of Varad read. Third pass 23 Oct 2026 (r2e, v2831_r2e_reread_log.md): p. 2 has 31 lines, so these are p. 2 ll. 18-31; 'per [?messere] Francesco fara replicare' added. Body 0.466 explicit-hole (27/58; plain 0.293): p. 2 ll. 28-31 and eleven lines of p. 3 stay fragments. Still decoded, not read; legible groups not yet segmented (not-attempted after three passes), one blot (illegible), torn key columns (no-key-material).",
-    "reading": "v2831_p2p3_reading.md",
-    "translation": "v2831_p2p3_en.md"
+    "state": "read",
+    "reading": "v2831_p2p3_r2l_reading.md",
+    "translation": "v2831_p2p3_r2l_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r2l 23 Oct 2026 (v2831_r2l_reread_log.md): fourth pass on the b25/r2e sign strings: every unread group run through the lang/ model it-cinquecento as a segmenter with the alternative values of multi-valued signs enumerated (research/reading_audit/r2l_seg.py), and p. 3 re-cropped from the full-resolution Vestigia plate where a group was in doubt (trans/v2831_r2l_corrections.tsv: per quanto, persuadere, l'invito facto, fare x4, al Papa, non [?venga] a alienare l'animo, tertio in iustificare, calumnie, apresso el Papa offerendoli de mandarlo li, innocentia, cosa, sento d'avere). Body 0.636 explicit-hole (35/55; p. 2 ll. 18-31 0.611, p. 3 0.649), plain 0.491 (before 0.466 / 0.293). Look-alike letters 33 of about 1,800 (1.8%) by the brief's definition (b25's broad count of every shape choice 4.3%); the o-form read t against the key's b about 40 times, listed separately. Still fragmentary: p. 2 ll. 28-31 between secure words, p. 3 ll. 1-3, 5-8 middles, 27, 29, 31 tail (no-key-material: torn R5411 columns; one blot, illegible)."
+    }
    },
    {
     "doc": "R1098",
@@ -437,6 +452,6 @@
    "key.json"
   ],
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Counted in cipher lines: V2831 has 93 cipher lines (p. 1 29, p. 2 31, p. 3 31, p. 4 2) and R1098 10, 103 in all. Read (23 Oct 2026, r2e): V2831 p. 1, p. 2 ll. 1-17 and p. 4 (48 lines) and R1098 (10): 58 of 103, about 0.563, estimated by lines. Share of cipher signs read inside the read part measured 0.847 (2,338 signs, nulls excluded). V267 (calibration letter with its clear copy) not counted. History: 22 Oct 0.56 (estimated), 23 Oct v3 0.099."
+  "fraction_read_source": "Documents that read / all, counted in cipher lines: V2831 has 93 cipher lines (p. 1 29, p. 2 31, p. 3 31, p. 4 2) and R1098 10, 103 in all; since r2l (23 Oct 2026) every part reads to the 0.60 sentence bar: V2831 p. 1, p. 2 ll. 1-17, p. 4 (0.698 explicit-hole), p. 2 ll. 18-31 and p. 3 (0.636), R1098 (0.917): 103 of 103. Inside the readings the hole rate is 0.106 and 0.121 of words (v2_score.py), and the share of cipher signs read was measured 0.847 for p. 1, p. 2 ll. 1-17 and p. 4 (r2e); the 95% read bar of README Conventions is not met, hence class read in part. V267 (calibration letter with its clear copy) not counted. History: 22 Oct 0.56 (estimated), 23 Oct v3 0.099, r2e 0.563."
  }
 }

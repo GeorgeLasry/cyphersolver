@@ -1,6 +1,6 @@
 # Milanese embassy at Buda, 1489–92: Maffeo da Treviglio's cipher (ASMi Sforzesco 642/645/650)
 
-Status: in progress. read in part (reclassified from "read" 22 Sept 2026; 23 Oct 2026 r2e: p. 1, p. 2 ll. 1-17 and p. 4 of the 1489 letter read with the original key R5411, p. 2 ll. 18-31 and p. 3 still decoded, not read). Both undeciphered despatches are read, the 22 Nov 1489
+Status: in progress. read in part (reclassified from "read" 22 Sept 2026; 23 Oct 2026 r2e: p. 1, p. 2 ll. 1-17 and p. 4 of the 1489 letter read with the original key R5411, p. 2 ll. 18-31 and p. 3 still decoded, not read; 23 Oct 2026 r2l: those read too, grade B, by a lang/ model segmentation and a p. 3 re-crop; class stays read in part, hole rate 0.12). Both undeciphered despatches are read, the 22 Nov 1489
 letter only in patches on page 3 after line 19; four signs have no value; the share of signs read has never been
 measured, so the read bar (README Conventions) is not shown to be met.
 
@@ -169,9 +169,31 @@ cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. pr
   p. 3 still 0.466 explicit-hole: **decoded, not read**.
 - fraction_read 0.099 -> 0.563 (58 of 103 cipher lines: V2831 p. 1, p. 2 ll. 1-17, p. 4 and R1098).
 
+## 23 Oct 2026: r2l, fourth pass: lang/ segmentation of the unread groups, p. 3 re-cropped
+
+- **Segmenter** (`v2831_r2l_reread_log.md` §1): 79 unread letter groups put through `research/reading_audit/r2l_seg.py`
+  (sign lattices from `r2l_signs.py`, every alternative value of a multi-valued sign enumerated; k-best word segmentation
+  on the it-cinquecento corpora; ranked by the shared lang/ model **it-cinquecento** in context; no target-local model).
+  Adopted where sense and every letter is carried: p. 1 "ben disposto", "in el tractare", "dicendo epsa liberamente",
+  "prelati che poco amano da Regina"; p. 2 "gli subiunse che vole", "con inconveniente", "ad ma[…] li di passati", "gli ne
+  ha assignati altri mile"; p. 3 "sentire fructo", "excusar se ne, ne gli e", "affirmatione de le rasone", "calumnie",
+  "mandar lo inante", "basti l'animo". About 55 groups give no word under any combination (listed in the log).
+- **p. 3 re-cropped** from the full-resolution Vestigia plate (`r2l_crop3.py`, `r2l_zoom.py`; corrections
+  `trans/v2831_r2l_corrections.tsv`): "ad fine per quanto" (dotted q), "volerli persuadere" (the su-sign), "con li ochi
+  [?aperti]. L'invito facto ad [mes]sere Francesco", four "fare" (b crossed at the top, not b̶ "care"), "al Papa",
+  "non [?venga] a alienare l'animo del pontifice da se. Tertio, in iustificare lo Vescovo Varadino de le calumnie che li
+  sono date apresso el Papa, offerendoli de mandarlo li", "far li piu chiara de la innocentia sua; la quale cosa quando",
+  "non […] sento d'avere tante ingenio".
+- Reading `v2831_p2p3_r2l_reading.md`, English `v2831_p2p3_r2l_en.md`; the read part `v2831_r2e_reading.md` / `_en.md`
+  takes the five p. 1 / p. 2 words.
+- Score (v2_score.py, it): p. 2 ll. 18-31 + p. 3 **0.636 explicit-hole** (35/55; before 0.466), plain 0.491; read part
+  0.698 (before 0.642). Look-alike letters recounted by the brief's definition: 33 of about 1,800, **1.8%** (b25's broad
+  count of every shape choice was 4.3%). **Set read, grade B.**
+- fraction_read 0.563 -> 1.0 (documents that read / all, by lines; hole rate inside the readings 0.11-0.12). Class stays
+  **read in part**: the README read bar (95% of tokens as sense) is not met.
+
 ## Remaining gaps
-- 2831 legible letter groups that do not segment into words with the full key: p. 1 L04 (two -ione words), L11, L12, L22, L24; p. 2 L09, L15, L16; p. 4 L02; p. 2 ll. 20, 22, 24-31 and p. 3 ll. 2, 3, 5, 7, 9, 11, 24, 25, 27, 29, 31 - blocker: not-attempted; three sign-by-sign passes done (b25 twice, r2e with R5411), a fourth with the lang/ Italian model as segmenter over the decoded strings not yet tried
-- 2831 p. 2 ll. 18-31 and p. 3 stay decoded, not read (0.466 explicit-hole) - blocker: not-attempted; the same segmentation pass is the next step
+- 2831 letter groups that decode letter for letter but give no word: p. 1 L03, L04, L08, L11, L12, L17, L19-L22, L25-L29; p. 2 L15, L16, L19-L21, L25, L28-L31 between secure words; p. 3 L02, L03 head, L05-L08 middles, L15, L18, L21, L22, L27, L29, L31; p. 4 L02 - blocker: no-key-material; four passes (b25 twice, r2e with R5411, r2l 23 Oct 2026 with the lang/ it-cinquecento segmenter over every alternative sign value and a full-resolution p. 3 re-crop); they need the values of the torn R5411 columns (T, U/V, X, Y, Z, &) or of signs not in the key (r-ring, the n-stroke in 'ochi aperti', the lone x on p. 3 l. 29)
 Scope: the two despatches with no decipherment, Vestigia 2831 (22 Nov 1489) and DECODE R1098 (12 Jan 1490). R1146
 and R1158 are other ciphers and are not part of this reading.
 - 2831 p. 3 l. 15, signs under an ink blot - blocker: illegible
@@ -184,4 +206,4 @@ and R1158 are other ciphers and are not part of this reading.
 - [x] known-keys: Somogyi's 2016 key used first; 23 Oct 2026 the original key found, ASMi Sforzesco cart. 1597 no. 111 (DECODE R5411, key_R5411.md), and used for p. 2 ll. 17-30 and p. 3; the abbot of Forlì's cipher (R1146/R1147) is a different system
 - [x] print: Somogyi 2016 (prints only 2831 ll. 1–2) and Labancz's 1491 edition checked; Nagy and Nyáry, MDE IV (1878): R1098 is printed as no. 91 (contemporary extract), 2831 is not in it (search of 9 Oct 2026 recorded in the main checkout's uncommitted NOTES); Vestigia 2831 lists no publication
 - [x] key-rebuild: about twenty sign values beyond Somogyi's table recovered from the unread letters by single-word cribs (7 = f, n+crossed 4 = ss, x' = do, a: = gli, q^o = re, b^a = na)
-- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; 23 Oct 2026 (r2e) p. 1, p. 2 ll. 1-17 and p. 4 re-read sign by sign with R5411 (read, 0.642) and a third pass on b25's p. 2 lines
+- [x] retry: 23 Oct 2026 (b25) p. 2 ll. 17-30 and p. 3 re-read sign by sign from the plates, twice (Somogyi's values, then R5411); 23 Oct 2026 (v3) R1098 ll. 5-10 re-read with R5411 and aligned with MDE IV no. 91; 23 Oct 2026 (r2e) p. 1, p. 2 ll. 1-17 and p. 4 re-read sign by sign with R5411 (read, 0.642) and a third pass on b25's p. 2 lines; 23 Oct 2026 (r2l) fourth pass: the unread groups segmented with the lang/ it-cinquecento model over every alternative sign value, p. 3 re-cropped at full resolution (p. 2 ll. 18-31 and p. 3 read, 0.636)
