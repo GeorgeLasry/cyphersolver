@@ -175,6 +175,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): glyph token transcription (tokens.txt, with the superseded cipher.txt), the final reading and the per-section glyph readings; key = KEY.md (Lasry's table extended here) beside Lasry's table key_fr3045_f28.png.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): final.md read: the recto builds sentences with scattered holes, the verso translates with one illegible stretch (v03) and single signs open. Per-document C overturned to B; class read in part (below the 95% bar) unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -223,7 +230,7 @@
     {"who": "tomokiyo", "role": "identification", "note": "listed the leaf with Visconti's signed siblings (sender) and described the address (recipient)", "source": "https://cryptiana.web.fc2.com/code/GL.htm"}
   ],
   "texts": [
-   {"doc": "f154", "label": "BnF fr. 3034 f. 154r-v (R4223), Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528", "transcription": ["tokens.txt", "cipher.txt"], "decryption": ["final.md", "reading_r01-15.md", "reading_r16-30.md", "reading_verso.md"], "summary": "Galeazzo Visconti to the grand master Montmorency from the League camp at Landriano: a council of war on whether the League army should march on Milan or Pavia; Visconti argued for Milan, but a scheme of Francesco's (Francesco Maria Sforza?), whispered to the Venetian officers, swung the vote, and the Duke of Urbino and the Venetian provveditore chose Pavia. 'A stew of bad digestion' if this goes on. tokens.txt is the measured glyph transcription (cipher.txt the superseded first pass); final.md the full reading."}
+   {"doc": "f154", "label": "BnF fr. 3034 f. 154r-v (R4223), Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528", "transcription": ["tokens.txt", "cipher.txt"], "decryption": ["final.md", "reading_r01-15.md", "reading_r16-30.md", "reading_verso.md"], "summary": "Galeazzo Visconti to the grand master Montmorency from the League camp at Landriano: a council of war on whether the League army should march on Milan or Pavia; Visconti argued for Milan, but a scheme of Francesco's (Francesco Maria Sforza?), whispered to the Venetian officers, swung the vote, and the Duke of Urbino and the Venetian provveditore chose Pavia. 'A stew of bad digestion' if this goes on. tokens.txt is the measured glyph transcription (cipher.txt the superseded first pass); final.md the full reading.", "language": "it", "state": "read", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C. Read on final.md's Full text: the recto (1038 of the 1337 glyphs) builds the council narrative sentence by sentence (\"Il consiglio de heri fuo per tirare queli capitanei ... a la opinione che no fuse andase a Milano ... E questa fuo inventione de Francesco, dita in secreto ha queli de la Signoria ... aciò che se vincese la opinione de andare a Milano\"), with holes at r07, r09 and the r10-12 pairs; the verso translates in gist (\"the Duke of Urbino and the proveditor have said we will go to cut the road between Milan and Pavia\") with v03 illegible and single signs open. The holes are code groups (no key), blotted signs and one-off signs; 93.3% is below the read bar, which the class read in part already says."}}
   ],
   "key_file": ["KEY.md", "key_fr3045_f28.png"]
  }

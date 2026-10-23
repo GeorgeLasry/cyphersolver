@@ -247,7 +247,8 @@
       ],
       "date": "2026-10-20"
     },
-    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the octastich and distich numbers written out from ct.py into texts/; the octastich reading copied verbatim from NOTES.md with decode_1983_full.tsv and reading_octastich.txt; the distich has a note that it is not deciphered; key_file decode_1983_full.tsv (page/word for every number)", "result": "worked"}
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the octastich and distich numbers written out from ct.py into texts/; the octastich reading copied verbatim from NOTES.md with decode_1983_full.tsv and reading_octastich.txt; the distich has a note that it is not deciphered; key_file decode_1983_full.tsv (page/word for every number)", "result": "worked"},
+    {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the distich entry carried no state although outcome.parts has it not solved; relabelled decoded, not read with the note \"not deciphered\". Claim (read in part, octastich read) unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]}
   ],
   "outcome": {
     "method": "read with known key",
@@ -327,8 +328,8 @@
       }
     ],
     "texts": [
-      {"doc": "octastich", "label": "The Cyphral Octastich, The Jewel (London, 1652), last leaf", "transcription": "texts/octastich_transcription.txt", "decryption": ["texts/octastich_decryption.md", "decode_1983_full.tsv", "reading_octastich.txt"], "summary": "A royalist prayer for Charles II in ottava rima ('Great Lord, mantaine that regal familie / Whereof King Charls the second is the head'), written in London in March 1652 by Urquhart, a prisoner of Worcester, and hidden as a book cipher on The Jewel itself."},
-      {"doc": "distich", "label": "The Cyphral Distich, Logopandecteision (1653), last leaf", "transcription": "texts/distich_transcription.txt", "decryption": "texts/distich_decryption.md", "summary": "64 numbers in two lines; not deciphered. The published Proquiritation reading does not reproduce here."}
+      {"doc": "octastich", "label": "The Cyphral Octastich, The Jewel (London, 1652), last leaf", "transcription": "texts/octastich_transcription.txt", "decryption": ["texts/octastich_decryption.md", "decode_1983_full.tsv", "reading_octastich.txt"], "summary": "A royalist prayer for Charles II in ottava rima ('Great Lord, mantaine that regal familie / Whereof King Charls the second is the head'), written in London in March 1652 by Urquhart, a prisoner of Worcester, and hidden as a book cipher on The Jewel itself.", "language": "en"},
+      {"doc": "distich", "label": "The Cyphral Distich, Logopandecteision (1653), last leaf", "transcription": "texts/distich_transcription.txt", "decryption": "texts/distich_decryption.md", "summary": "64 numbers in two lines; not deciphered. The published Proquiritation reading does not reproduce here.", "language": "en", "state": "decoded, not read", "note": "Not deciphered: texts/distich_decryption.md records no decipherment, only a failed test of the Proquiritation rule (34 of 64, chance); the construction and key text are unknown (reading audit, 22 Oct 2026)."}
     ],
     "key_file": "decode_1983_full.tsv"
   }

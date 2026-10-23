@@ -50,7 +50,8 @@
  },
  "solution": [
   {"kind": "literature search", "what": "Grepped the cached Tomokiyo page spanish2C_now.htm for R9967: 'Deciphered in the margin', cipher = Imperial Cipher of 1544-1554.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): nothing to link: the marginal decipherment exists only on the DECODE images; recorded as missing", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): nothing to link: the marginal decipherment exists only on the DECODE images; recorded as missing", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): no transcription or decipherment of R9967 is in the repository; the marginal decipherment is on the DECODE images (reachable with the shared cookie). Relabelled decoded, not read; class already solved kept; a not-attempted gap recorded for the re-reading wave.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -58,13 +59,20 @@
   "contribution": ["catalogue correction"],
   "class": "already solved",
   "verification": ["contemporary decipherment"],
-  "notes": "Nothing new read. Catalogue entry 197 removed; DECODE status correction queued; no write-up.",
+  "notes": "Nothing new read. Catalogue entry 197 removed; DECODE status correction queued; no write-up. 22 Oct 2026, reading audit: no text of the letter is in the repository; decoded, not read. Class already solved kept (deciphered in the margin at the time, per Tomokiyo).",
   "credits": [
     {"who": "contemporary", "role": "prior solution", "note": "marginal decipherment on the leaves (not viewed here)"},
     {"who": "tomokiyo", "role": "identification", "note": "recorded the marginal decipherment and identified the key as the Imperial Cipher of 1544-1554", "source": "https://cryptiana.web.fc2.com/"}
   ],
   "texts": [
-   {"doc": "R9967", "label": "R9967, Venice, 25 Aug 1552", "summary": "Francisco de Vargas at Venice to Charles V, 25 August 1552, in the Imperial Cipher of 1544-1554, deciphered in the margin on arrival (Tomokiyo).", "note": "Nothing transcribed: the marginal decipherment and the cipher exist only on the DECODE images (https://de-crypt.org/decrypt-web/RecordsView/9967), which were not viewed. Transcription and decryption both project work."}
+   {"doc": "R9967", "label": "R9967, Venice, 25 Aug 1552", "summary": "Francisco de Vargas at Venice to Charles V, 25 August 1552, in the Imperial Cipher of 1544-1554, deciphered in the margin on arrival (Tomokiyo).", "note": "Not deciphered here and nothing transcribed: the marginal decipherment of the time and the cipher are on the DECODE images only (reading audit, 22 Oct 2026); fix: fetch the 16 images with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) and transcribe the marginal decipherment, checking it with the Imperial Cipher of 1544-1554.", "language": "es", "state": "decoded, not read"}
+  ],
+  "gaps": [
+   {
+    "item": "R9967: the marginal decipherment, not transcribed",
+    "blocker": "not-attempted",
+    "detail": "DECODE R9967 images (16 pp.) reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt); not fetched yet"
+   }
   ]
  }
 }

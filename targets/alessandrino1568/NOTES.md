@@ -1,4 +1,21 @@
-# Cardinal Alessandrino to the nuncio in Spain, 1568–69 — READ
+# Cardinal Alessandrino to the nuncio in Spain, 1568–69 — read in part
+
+Status: in progress (the site page still shows the audit state; update it from the 22 Oct re-read). All eleven letters now read: R94, R95, R100 from their contemporary decipherments, R101 on the figures (re-read 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test): R93, R96, R97, R98, R99, R102 and R115 build Italian sentences with scattered slips; **R94, R95, R100 and R101 are decoded, not read**: the beam search's digit choices corrupt words in most of their sentences (R94 "liberagemptume", R95 "desersaleaniosina", R100 ends in ??????, R101 "unmannifestsobismain"). Claim read -> read in part; 7,036 of 10,555 items (66.7%) in letters that read.
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch aless; texts/R94-R101_reread_log.md)**: the DECODE "cleartext" images
+of these records hold the **contemporary decipherments** of three of the four: R94 on f. 45r (covering letter Rome 7
+Nov 1567, f. 44r, "Con questa un poco di cifra" — so R94 is of 1567), R95 on f. 58r, R100 under the cipher on f.
+280r. Transcribed (texts/R94_decifrato_f45r.txt, R95_decifrato_f58r.txt, R100_decifrato_f280r.txt) and aligned with
+the figures (`reread_aless_align.py`); the disagreements showed what Lasry's key lacked: **9 also = "con"**, **dotted 0
+= z**, **0^.0 = et**, doubled letters enciphered once, X0Y0 codes written X0Y, 3 0 9 = qua, and code values 1040
+lettere (not "Regina di Francia"), 3020 quando, 3060 -mente, 4020 come, 4040 Milano, 4080 et, 5070/6050
+Imbasciatore, 6060 Inquisitione, 8090 havere (not "sauere"), 2 0 9 = "chi" (chinea, Chiesa). R101 (no decipherment)
+re-decoded with the extended key (`reread_aless_decode.py`) and read word by word: the chinea accepted with the
+fisc's protest, devolution under the investitures of Julius II and III, the schism in Naples, notaries and executors
+imprisoned. Readings + English: texts/R94|R95|R100|R101_reading.md, _en.md; clean-sentence share 1.00, 0.94, 1.00,
+0.84 (before 0.75, 0.89, 0.78, 0.81 on the garbled decodes). State decoded, not read -> read; class back to read.
 
 Catalogue items 253 (class B) and 254. ASV (AAV), Segreteria di Stato, Spagna 6/I, items 1–10 ("Lettere orig. e
 cifre del cardinale Alessandrino dal 16 gennaio 1568 …"), DECODE R93–R102; and Spagna 6/II item 13 (1569), DECODE R115.
@@ -55,3 +72,19 @@ Lasry's list. Each page ends in a run of padding (strings like `fcpfbrpf`), whic
   la Santa Sede durante el pontificado de S. Pío V* (1914), which prints Alessandrino–Castagna letters of 1566–68 and
   may give some of these in clear. HathiTrust full-text search returned 403 from here.
 - Transcriptions are DECODE's (TimB 2016, RebAn, Midas) and were not re-checked against the images.
+
+## Remaining gaps
+
+- R94 (2 short gaps): "9 0 4 0 2 0" before S.M. and the verb 6 2 4 7 6 after "comincia" - blocker: open-codes; the contemporary decipherer left the first unread and guessed the second; no other text of the letter (Serrano 1914 not reachable)
+- R95 (4 holes): dotted groups [08.] (the Crusade?) and [3.] (a person), "co[…]", "[?fece]" - blocker: open-codes; the decipherment is illegible at these words
+- R101 (5 holes): two places in row 1 under a burn and a hole in the paper, one illegible group in row 14, "[?Sora]", codes 9090, 6020, 8020 - blocker: illegible
+- Serrano, Correspondencia diplomatica ... Pio V (1914): not checked - blocker: needs-physical-access (HathiTrust 403 from here, not on archive.org)
+
+## Escalation
+
+- [x] siblings: all eleven Spagna 6/I and 6/II ciphers decoded with the same key; the R94/R95/R100 decipherments extended it and the extension read R101
+- [x] clear-pages: 22 Oct 2026, all 45 DECODE cleartext images of R94, R95, R100, R101 looked at; decipherments found for R94 (f. 45r), R95 (f. 58r), R100 (f. 280r), none for R101; R94's covering letter dates it 7 Nov 1567
+- [x] known-keys: Lasry's reconstructed key (DECODE, 2020)
+- [x] print: 22 Oct 2026, Serrano 1914 searched again: not on archive.org, HathiTrust full text 403, Google Books API quota exhausted; Serrano's Liga de Lepanto (1918-19) begins in 1570 - not reached
+- [x] key-rebuild: 22 Oct 2026, key extended from the decipherments (9 = con, dotted 0 = z, 0^.0 = et, codes 1040, 3020, 3060, 4020, 4040, 4080, 5070, 6050, 6060, 8090); [01.], [03.], [08.], [3.], [4.]8 (= perché), 9090, 6020, 8020 partly or not resolved
+- [x] retry: 22 Oct 2026, R94, R95, R100, R101 re-read (texts/R94-R101_reread_log.md); all four build sentences

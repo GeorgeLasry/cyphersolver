@@ -1,5 +1,9 @@
 # A member of Henrietta Maria's household (Paris) to Charles I, January 1646 — Lasry's "SP106-8" key — TNA SP 106/10 ff. 235–236 (DECODE R924) — NOTES
 
+Status: in progress. Lasry's decipherment exists on DECODE; none of it is in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's plaintext of R924 is on the DECODE record only; the git-ignored copy is in no checkout, so nothing of the letter could be read. R924 is *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.9195 -> 0 (the old figure was key coverage).
+
 Split on 14 Oct 2026 from `hm1645` under the one-key rule (George Lasry, 14 Oct 2026). The old entry (catalogue 59)
 joined six letters of SP 106/10 in four of Lasry's reconstructed keys. This letter is the only one of the six in his
 **"SP106-8"** key. The others are different ciphers, each with its own entry and page: [`targets/hm1645/`](../hm1645/NOTES.md)
@@ -51,6 +55,7 @@ The reveal on the page is the first 120 groups of this run.
 
 - three-digit word-list numbers not in Lasry's key (58 distinct, 85 tokens) - blocker: open-codes; he leaves them in brackets; names and words of the numbered list, not reconstructed here
 - low figures with no key value (11 distinct, 77 tokens; 21, 30, 42, 50, 16 ...) - blocker: open-codes; rendered "_" by Lasry; dividers, nulls or values missing from his alphabet, not settled
+- R924: Lasry's plaintext not in the repository - blocker: not-attempted; fetch his interlinear and plaintext files with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept
 
 ## Escalation
 

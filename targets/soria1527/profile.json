@@ -106,7 +106,8 @@
    "what": "Redated the letter to 1527 from its content (Genoa lost, Pope at Orvieto, Leyva at Milan, Bourbon's jewels) and the docket.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed contemporary Claro; no transcription of the ciphertext", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the transcribed contemporary Claro; no transcription of the ciphertext", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): claro.md read: A and the closing paragraph build sentences, B and the start of C are torn half-lines. R9487 relabelled decoded, not read; class already solved kept (contemporary decipherment); fraction_read estimated 0.5; the f. 31v cipher with key B noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -116,12 +117,27 @@
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Read at the time; decipherment f. 34r (torn in B/C). DECODE date 1517 corrected to 1527. Catalogue entry 142 removed; no write-up.",
+  "notes": "Read at the time; decipherment f. 34r (torn in B/C). DECODE date 1517 corrected to 1527. Catalogue entry 142 removed; no write-up. 22 Oct 2026, reading audit: the Claro reads for section A and the closing paragraph only; decoded, not read. Class already solved kept (read at the time).",
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "court decipherment \"Claro\" bound as f. 34r"}
   ],
   "texts": [
-   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the Claro, f. 34r", "decryption": "claro.md", "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "Decryption: the court's contemporary decipherment ('Claro', sections A-C), transcribed in claro.md; B and C are torn. No sign-by-sign transcription of the ciphertext (project work)."}
+   {"doc": "R9487", "label": "R9487, 13 Dec 1527: the Claro, f. 34r", "decryption": "claro.md", "summary": "Lope de Soria at Mirandola to Charles V, 13 December 1527: the three thousand ducats paid to the lord of Monaco, Bourbon's jewels pawned at Genoa, the hostages at Rome freed and fled to Narni, and the dukes' talk of a marriage with France.", "note": "The Claro is torn: section A and the closing paragraph build sentences, but B and the start of C are half-lines ending in [...] and cannot be assembled, so about half the page reads (reading audit, 22 Oct 2026); fix: transcribe the intact f. 31v cipher block and decode it with Soria's 1523 key B (targets/soria1523/keyB.md) to fill the torn sections.", "language": "es", "state": "decoded, not read"}
+  ],
+  "fraction_read": 0.5,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Reading audit, 22 Oct 2026, estimated from claro.md: section A and the closing paragraph read (about half the lines of the Claro); B and the start of C are torn. No token count: the cipher is not transcribed.",
+  "gaps": [
+   {
+    "item": "Claro B and the start of C (torn): decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "the f. 31v cipher block (9 intact lines) is on the DECODE images (decode/, git-ignored; reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)); transcribe it and decode with key B from targets/soria1523/keyB.md"
+   },
+   {
+    "item": "last cipher lines of f. 31r and f. 33r",
+    "blocker": "illegible",
+    "detail": "torn and faded"
+   }
   ]
  }
 }

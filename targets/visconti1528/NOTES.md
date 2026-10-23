@@ -1,5 +1,7 @@
 # Galeazzo Visconti to Anne de Montmorency, Campo a Landriano, 30 Aug 1528 (catalogue 177)
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): final.md's Full text read: the recto builds the council narrative sentence by sentence with holes at r07, r09 and the r10-12 pairs; the verso translates with v03 illegible and single signs open. The per-document C is overturned to B; the class read in part (93.3%, below the bar) is unchanged.
+
 Read in part (1248 of 1337 cipher glyphs read as sense, 93.3%, measured by count_tokens.py over tokens.txt, re-read 5 Oct 2026; third
 pass 22 Sept 2026). Key: partial
 (the letters are recovered; the numbered nomenclator is not). Written up 22 Sept 2026 as

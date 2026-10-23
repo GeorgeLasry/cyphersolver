@@ -71,7 +71,8 @@
    "what": "Compared key to manuscript and attempted numeric-label alignment and language-model solving. French 5-gram homophonic annealing (48 restarts x 10M) and English passes gave nonsense; no label-to-glyph concordance could be fixed from the short published opening.",
    "result": "failed"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Tomokiyo's numeric transcription and his solution page by URL", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Tomokiyo's numeric transcription and his solution page by URL", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the folder holds the numeric ciphertext and the one-clause opening Tomokiyo published; the full plaintext is unpublished. no50I relabelled decoded, not read (excerpt only); class already solved kept; fraction_read 0.09 marked estimated; the key application noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "class": "already solved",
@@ -85,7 +86,7 @@
   "verification": [
    "key confirms"
   ],
-  "notes": "Not a new solve. Published glyph key lacks a numeric-label concordance and leaves some signs unknown. Tracker should be corrected to remove Portugal/French attribution from the distinct L'Abbadia worksheet. Verified opening: \"The beirar is domestik servand to the erle of shrevisbvry\". fraction_read ~0.09 = share represented by the published ten-word opening (approximate). Identified the enclosure (R3839 f. 138) and separated it from the L'Abbadia material; checked the published opening; no extension.",
+  "notes": "Not a new solve. Published glyph key lacks a numeric-label concordance and leaves some signs unknown. Tracker should be corrected to remove Portugal/French attribution from the distinct L'Abbadia worksheet. Verified opening: \"The beirar is domestik servand to the erle of shrevisbvry\". fraction_read ~0.09 = share represented by the published ten-word opening (approximate). Identified the enclosure (R3839 f. 138) and separated it from the L'Abbadia material; checked the published opening; no extension. 22 Oct 2026, reading audit: only the opening clause is in the repository; decoded, not read (excerpt). Class already solved kept (Biermann and Lasry 2023).",
   "first_break": false,
   "credits": [
     {"who": "biermann", "role": "key or decipherment used", "note": "2023 solution with Lasry; published opening and key checked on the manuscript", "date": "2023", "source": "https://cryptiana.web.fc2.com/code/mary3.htm"},
@@ -93,7 +94,16 @@
     {"who": "tomokiyo", "role": "transcription", "note": "published the Biermann-Lasry solution, glyph key and numeric transcription (mary3.htm)", "date": "2026-09-16", "source": "https://cryptiana.web.fc2.com/code/mary3.htm"}
   ],
   "texts": [
-   {"doc": "no50I", "label": "SP 53/11 no. 50I, f. 138 (21 July 1581 enclosure)", "transcription": "SP53_11_50b.txt", "decryption": "https://cryptiana.web.fc2.com/code/mary3.htm", "summary": "The cipher enclosure Walsingham sent to John Somer on 21 July 1581, found in an intercepted letter of Mary, Queen of Scots; its opening reads \"The beirar is domestik servand to the erle of shrevisbvry\".", "note": "Transcription: Tomokiyo's numeric transcription. Decryption: Biermann and Lasry's 2023 solution, published in part by Tomokiyo (cryptiana, 16 Sept 2026), a modern publication linked, not copied; the full plaintext is not published."}
+   {"doc": "no50I", "label": "SP 53/11 no. 50I, f. 138 (21 July 1581 enclosure)", "transcription": "SP53_11_50b.txt", "decryption": "https://cryptiana.web.fc2.com/code/mary3.htm", "summary": "The cipher enclosure Walsingham sent to John Somer on 21 July 1581, found in an intercepted letter of Mary, Queen of Scots; its opening reads \"The beirar is domestik servand to the erle of shrevisbvry\".", "note": "Excerpt only: the full decipherment is Biermann and Lasry's (2023), unpublished; Tomokiyo prints only the opening clause, \"The beirar is domestik servand to the erle of shrevisbvry\", and the glyph key (cryptiana mary3.htm). Not deciphered here beyond that clause (reading audit, 22 Oct 2026); fix: apply Tomokiyo's glyph key to f. 138 (DECODE R3839 image P3) through a glyph-to-label concordance, or ask Lasry for the plaintext.", "language": "en", "state": "decoded, not read"}
+  ],
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Share of the 562 tokens represented by the ten-word opening published by Tomokiyo, the only plaintext in the repository (approximate). Reading audit, 22 Oct 2026: the document is decoded, not read; the opening is an excerpt.",
+  "gaps": [
+   {
+    "item": "no. 50I beyond the published opening",
+    "blocker": "not-attempted",
+    "detail": "Tomokiyo's glyph key (mary_sp53_11_50b.png) and the f. 138 image (DECODE R3839, reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) are available; build the glyph-to-label concordance and apply the key, or ask Lasry for the Biermann-Lasry plaintext"
+   }
   ]
  },
  "system": {

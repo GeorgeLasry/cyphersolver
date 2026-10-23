@@ -148,25 +148,31 @@
    "what": "New measure.py: letter runs checked word by word and LM-scored (de-1740s); codes counted only with listed or glossed values. 155/181 = 0.856.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R5029 linked to ct.txt (numbers with clear context) and dec.txt (dec.py output with Mírka's table, key.tsv)", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R5029 linked to ct.txt (numbers with clear context) and dec.txt (dec.py output with Mírka's table, key.tsv)", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): dec.txt read: p2 and p3L build, but p3R-p4R have open codes, guesses and elided clear text in most clauses. R5029 relabelled decoded, not read; class read in part -> not read; method read with known key -> not solved; fraction_read 0.856 -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "Jakub Mirka's reconstructed key (2023) was attached as an xlsx to DECODE R5029 itself and was applied unchanged; every letter-spelled passage reads German at once.",
+  "method": "not solved",
+  "method_basis": "Jakub Mírka's reconstructed key (2023), attached to DECODE R5029, was applied unchanged and decrypts every letter-spelled passage; with 19 nomenclator codes open and the clear text of the later pages only excerpted, about half the sentences do not build, so no reading is claimed (reading audit, 22 Oct 2026). The key and the decryption stand.",
   "contribution": [
    "transcription"
   ],
-  "class": "read in part",
+  "class": "not read",
   "gaps": [
    {
     "item": "19 nomenclator codes (26 groups): 101, 102, 111, 130, 131, 139, 146, 149, 151, 164, 168, 172, 181, 182, 204, 205, 206, 209, 225",
     "blocker": "open-codes",
     "detail": "no gloss in siblings R5025-R5028; alphabetical bracketing gives proposals only; other brothers' letters in karton 202 not on DECODE"
+   },
+   {
+    "item": "R5029 as a running text (p3R, p4L, p4R, p5L): decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "transcribe the clear text around the cipher passages in full from the DECODE images (fetched 5 Oct 2026; reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) and write a running German text with a translation"
    }
   ],
-  "fraction_read": 0.856,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure.py: 181 groups; 122 letter groups all read as German words; 33 of 59 code groups have a value (Mirka's list + sibling glosses 78/99/103/167); 26 code groups (19 codes) open. Tier-B bracket proposals would give 0.961 but are not counted.",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: the one document is decoded, not read, so no tokens are in a document that reads. The earlier 0.856 (measure.py: 155 of 181 groups read as sense) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
    "open": 19,
@@ -181,12 +187,12 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "148 of 181 groups read; 23 nomenclator codes (33 groups) open.",
+  "notes": "148 of 181 groups read; 23 nomenclator codes (33 groups) open. 22 Oct 2026, reading audit: decoded, not read; class read in part -> not read, method -> not solved, fraction_read 0.856 -> 0.",
   "credits": [
     {"who": "mirka", "role": "key or decipherment used", "note": "reconstructed key (xlsx on DECODE R5029), applied unchanged", "date": "2023-06-19"}
   ],
   "texts": [
-   {"doc": "R5029", "label": "R5029, Brussels, 18 Nov 1721", "transcription": "ct.txt", "decryption": "dec.txt", "summary": "A Windischgrätz brother writes in German with thirteen enciphered passages, read with Jakub Mírka's key from the DECODE record: the Emperor advised making an excuse; [205] holds under hand; everyone, even the Emperor, daily loses love for [103] after the courier brought the Prince's plan; the Congress of Cambrai should open soon and the Madrid courier brought Pozobueno orders on the renunciations. 23 code numbers stay open."}
+   {"doc": "R5029", "label": "R5029, Brussels, 18 Nov 1721", "transcription": "ct.txt", "decryption": "dec.txt", "summary": "A Windischgrätz brother writes in German with thirteen enciphered passages, read with Jakub Mírka's key from the DECODE record: the Emperor advised making an excuse; [205] holds under hand; everyone, even the Emperor, daily loses love for [103] after the courier brought the Prince's plan; the Congress of Cambrai should open soon and the Madrid courier brought Pozobueno orders on the renunciations. 23 code numbers stay open.", "language": "de", "state": "decoded, not read", "note": "Every letter-spelled passage decrypts, and p2 and p3L build sentences, but p3R, p4L and p4R have open code numbers, «?» guesses and elided clear text (\"Casse(?) ...\", \"durchschnid ... «102» ...\") in most clauses, so about half the sentences do not build (reading audit, 22 Oct 2026); fix: transcribe the clear text of p3R-p5L in full from the DECODE images and write a running German text with the open codes marked."}
   ]
  }
 }

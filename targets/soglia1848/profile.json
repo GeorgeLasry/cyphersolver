@@ -153,7 +153,8 @@
    "result": "failed"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 376 tokens, 75 types, it-modern order 4: reading -2.36 per letter; random keys -5.261 (z 5.9); key annealed onto shuffled ciphertext best -2.653 (mean -2.721, z 5.2); annealer on the real text -2.251. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct2.txt (corrected transcription), decoder outputs plaintext_raw.txt / plaintext_guess.txt, and the normalised plaintext with English copied from NOTES.md to texts/plaintext.md; key key.json / codes.json", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct2.txt (corrected transcription), decoder outputs plaintext_raw.txt / plaintext_guess.txt, and the normalised plaintext with English copied from NOTES.md to texts/plaintext.md; key key.json / codes.json", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/plaintext.md read: every sentence builds and the English translates; the open items are single code groups and one date. Per-document C overturned to B. Claim unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-modern", "file": "validation.tsv", "tokens": 376, "types": 75, "tokens_per_type": 5.01, "score": -2.36, "nulls": {"random keys": {"n": 200, "mean": -5.261, "sd": 0.494, "max": -3.611, "z": 5.9, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.721, "sd": 0.069, "max": -2.653, "z": 5.2, "p": 0.1429}}, "power": -2.251, "verdict": "pass", "notes": "claimed per-occurrence score -2.36; polyphony 0.0; 11 unread tokens left out; annealer on the real text from random keys reached -2.251"}, 
   "method": "key recovered from ciphertext-only",
@@ -179,7 +180,15 @@
      "plaintext_raw.txt",
      "plaintext_guess.txt"
     ],
-    "summary": "The papal Secretary of State's counter-order to the nuncio at Innsbruck, where the Emperor had fled: instead of asking for his passports after Lützow's departure from Rome, he is to remain with the Emperor wherever he goes, and show the dispatch at once to Mgr Morichini. Printed in cipher by Mazzini's L'Italia del Popolo (30 June 1848) and posted by Klaus Schmeh as unsolved; the key was recovered here, some code words remain unread ([8xxx])."
+    "summary": "The papal Secretary of State's counter-order to the nuncio at Innsbruck, where the Emperor had fled: instead of asking for his passports after Lützow's departure from Rome, he is to remain with the Emperor wherever he goes, and show the dispatch at once to Mgr Morichini. Printed in cipher by Mazzini's L'Italia del Popolo (30 June 1848) and posted by Klaus Schmeh as unsolved; the key was recovered here, some code words remain unread ([8xxx]).",
+    "language": "it",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "Overturns the per-document C. texts/plaintext.md builds Italian sentences throughout and its English translates every sentence: the holes are the date of the earlier letter (five code groups), Lützow's title [8227] and four single code words ([8704], [8093][8102], [8136], [8131]) in a one-part code with no key, and the parenthesised words are code values bracketed by the code's alphabetical order. Scattered codes, no clause unbuilt."
+    }
    }
   ],
   "key_file": [

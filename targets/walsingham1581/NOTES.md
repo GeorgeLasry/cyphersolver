@@ -1,6 +1,10 @@
 # Walsingham's enclosure to John Somer, 21 July 1581 — TNA SP 53/11 no. 50
 
-Status: no write-up (found already solved: Biermann and Lasry 2023, published by Tomokiyo on 16 Sept 2026; checked here 23 Sept 2026, nothing added beyond the check; catalogue item 296 removed 10 Oct 2026)
+Status: in progress. Only the published opening clause is in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the folder holds the numeric ciphertext and the one-clause opening Tomokiyo published; the Biermann-Lasry plaintext is unpublished. no. 50I is *decoded, not read* (excerpt only) in profile.json; class already solved is kept; fraction_read 0.09 marked estimated.
+
+Earlier status (before the 22 Oct 2026 reading audit): no write-up (found already solved: Biermann and Lasry 2023, published by Tomokiyo on 16 Sept 2026; checked here 23 Sept 2026, nothing added beyond the check; catalogue item 296 removed 10 Oct 2026)
 
 ## Outcome (checked 23 September 2026)
 
@@ -34,3 +38,16 @@ I tried to align the published opening and key against a segmented high-resoluti
 3. Resolve residual signs from repeated contexts and the original scan. Compare any resulting full text against contemporary copies before assigning an author, recipient, or exact date.
 
 The case should leave the “still unread” queue. Its accurate status is **solved in part in 2023, published 2026; full plaintext not published or independently verified here**. The original tracker fields “Portugal → France” and “French” came from the unrelated L'Abbadia item and should be removed.
+
+## Remaining gaps
+
+- no. 50I beyond the published opening: decoded, not read - blocker: not-attempted; Tomokiyo's glyph key (mary_sp53_11_50b.png) and the f. 138 image (DECODE R3839, reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) are available; build the glyph-to-label concordance and apply the key, or ask Lasry for the plaintext
+
+## Escalation
+
+- [x] siblings: SP 53/11 no. 35 (Somer's worksheet) and the SP 53/23 keys checked; other alphabets
+- [n/a] clear-pages: none with the enclosure
+- [x] known-keys: the Castelnau and Mary-Beaton tables do not fit; Tomokiyo's 2026 glyph key does
+- [x] print: Tomokiyo, cryptiana mary3.htm (16 Sept 2026)
+- [ ] key-rebuild: glyph-to-label concordance not built
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

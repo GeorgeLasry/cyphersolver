@@ -1,5 +1,7 @@
 # Cardinal Soglia → nuncio Viale Prelà, Rome 15 June 1848 — **read**
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): texts/plaintext.md builds Italian sentences throughout and its English translates every sentence; the holes are the date of the earlier letter (five code groups), Lützow's title [8227] and four single code words. The per-document C is overturned to B. Claim unchanged.
+
 Source: broadsheet reprint (Rome, Tip. Puccinelli, 1848) of *L'Italia del Popolo* (Mazzini, Milan) no. 40, 30 June
 1848, "Dispaccio del Card. Soglia". Posted by Klaus Schmeh (Cipherbrain, 13 Dec 2014) as unsolved; image
 `soglia-cryptogram.png` (1325×2061). Transcription: Joe's (blog comment #4) checked line by line against the scan

@@ -1,9 +1,13 @@
 # Edward Wotton (Scotland) to Walsingham, 25 Aug – 1 Sep 1585 — DECODE R4841–R4843
 
+Status: in progress. The three drafts are not transcribed in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the repository holds only summaries of R4841-R4843 and the code table (texts/key.md); no draft is transcribed. Each image was checked (main checkout decode/s484x_1.jpg): all three are clear English drafts with numeric name codes. All three are *decoded, not read* in profile.json; class read -> not read, method -> not solved, fraction_read unknown -> 0. The code identifications stand.
+
 BL Add MS 32657, ff. 167-168 (R4841, 25 Aug), f. 173-174 (R4842, 30 Aug), f. 175-176 (R4843, 1 Sep).
 DECODE lists them as "Non-decrypted, numerical, cipher type unknown".
 
-Status: read (2026-09-21). Nothing needed breaking.
+Earlier status (before the 22 Oct 2026 reading audit): read (2026-09-21). Nothing needed breaking.
 
 ## What the records are
 The images (fetched with the DECODE cookie, kept in `decode/`, git-ignored, BL copyright) are **Wotton's own
@@ -47,3 +51,16 @@ glosses the numbers in Wotton's despatches: Arran ["19"], Master of Gray ["39"],
 **Farnyhurst ["24"]**, so 24 is Sir Thomas Kerr of Ferniehirst, not Huntly. No. 106 (1 Sep) calendars the R4843
 draft with "Morton" for 20 (Maxwell, styled Earl of Morton). Walsingham's side of the correspondence (R4838–R4840,
 R4844) is in [walsingham1585](../walsingham1585/NOTES.md).
+
+## Remaining gaps
+
+- R4841, R4842, R4843: the drafts, not transcribed - blocker: not-attempted; the DECODE images (4 pp. each) are in the main checkout targets/wotton1585/decode/ and reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt); transcribe them with the code numbers marked
+
+## Escalation
+
+- [x] siblings: Walsingham's side (walsingham1585, R4838-R4840, R4844) checked
+- [x] clear-pages: the drafts are clear text; not transcribed
+- [x] known-keys: CSP Scotland viii glosses 19, 39, 40, 24
+- [x] print: CSP Scotland viii calendars the despatches (no. 106 for 1 Sep)
+- [n/a] key-rebuild: no cipher
+- [ ] retry: the re-reading named in Remaining gaps is not done yet

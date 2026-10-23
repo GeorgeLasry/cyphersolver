@@ -1,5 +1,9 @@
 # French news letter forwarded to Henrietta Maria's household, 19/29 July 1645 — Lasry's "SP106-2" key — TNA SP 106/10 ff. 216–217 (DECODE R787) — NOTES
 
+Status: in progress. Lasry's decipherment exists on DECODE; none of it is in the repository (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's plaintext of R787 is on the DECODE record only; the git-ignored copy is in no checkout, so nothing of the letter could be read. R787 is *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.9802 -> 0 (the old figure was key coverage).
+
 Split on 14 Oct 2026 from `hm1645` under the one-key rule (George Lasry, 14 Oct 2026). The old entry (catalogue 59)
 joined six letters of SP 106/10 in four of Lasry's reconstructed keys. This letter is the only one of the six in his
 **"SP106-2"** key. The others are different ciphers, each with its own entry and page: [`targets/hm1645/`](../hm1645/NOTES.md)
@@ -47,6 +51,7 @@ The reveal on the page is the first 120 groups of this run.
 ## Remaining gaps
 
 - nomenclator numbers above 60 and two stray figures (19 distinct, 31 tokens; 64, 103, 61, 62, 104, 116 ...) - blocker: open-codes; not in Lasry's key, his plaintext leaves them open; names and titles, one of them the writer's signature
+- R787: Lasry's plaintext not in the repository - blocker: not-attempted; fetch his interlinear and plaintext files with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept
 
 ## Escalation
 

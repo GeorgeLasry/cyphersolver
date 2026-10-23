@@ -1,5 +1,7 @@
 # Galeazzo Visconti, two cipher letters 1528-1529 (catalogue 179, DECODE R4230, R4256)
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): fr. 3045 f. 28 was graded C on the "Italian text" section of fr3045_f28_final.md, which predates the push pass. With the push-pass readings (l.5 "come batale perduta", l.20 "obstante", l.2 "lui") the letter builds sentences; one clause (l.12-15) and the l.18 place name stay open besides the keyless codes. Per-document C overturned to B. Claim unchanged. The running Italian text in that file should be rewritten with the push-pass readings.
+
 Read: 1408 of 1477 cipher glyphs read as sense (95.3%, measured by script over the two token files). Both letters
 are at or above the read bar: fr. 3096 f.91 667/699 = 95.4%; fr. 3045 f.28 741/778 = 95.2% after the push pass of
 22 Sept 2026. The margin is thin: without two judgement calls on fr. 3045 ("lorro" = loro, +2; "lui" with the

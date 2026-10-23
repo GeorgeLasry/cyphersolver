@@ -1,6 +1,10 @@
 # Windischgrätz brothers, Brussels 18 Nov 1721 (DECODE R5029)
 
-Status: read in part, 21 Sept 2026; second pass 5 Oct 2026 (85.6% measured). Written up as `docs/windischgraetz1721.html`.
+Status: in progress. R5029 decrypted with Mírka's key, not yet read as sentences (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): dec.txt: p2 and p3L build sentences, but p3R, p4L and p4R have open codes, «?» guesses and elided clear text ("Casse(?) ...", "durchschnid ... «102» ...") in most clauses, so about half the sentences do not build: R5029 is *decoded, not read*. Class read in part -> not read, method -> not solved, fraction_read 0.856 -> 0. Mírka's key and the decryption of every letter-spelled passage stand.
+
+Earlier status (before the 22 Oct 2026 reading audit): read in part, 21 Sept 2026; second pass 5 Oct 2026 (85.6% measured). Written up as `docs/windischgraetz1721.html`.
 
 Ciphered letter, Brussels, 18 November 1721, catalogued on DECODE as Leopold Viktorin von Windischgrätz to his
 brother Ernst Friedrich (DECODE R5029, "Non-decrypted", 8 pp., homophonic + nomenclator, numerical). Holder: SOA
@@ -97,6 +101,7 @@ those are context fits, not readings. Not at 95%.
 
 ## Remaining gaps
 - 19 nomenclator codes (26 groups): 101, 102, 111, 130, 131, 139, 146, 149, 151, 164, 168, 172, 181, 182, 204, 205, 206, 209, 225 - blocker: open-codes; no gloss in the four sibling letters R5025-R5028; alphabetical bracketing gives proposals for 13 of them (tier B in dec.py) but not proofs. A further sibling with these codes glossed (the brothers' other 1721-23 letters in SOA Plzen karton 202, not on DECODE) would settle them.
+- R5029 as a running text (p3R, p4L, p4R, p5L): decoded, not read - blocker: not-attempted; transcribe the clear text around the cipher passages in full from the DECODE images and write a running German text with a translation
 
 ## Escalation
 - [x] siblings: R5025-R5028 fetched and scanned 5 Oct 2026; 78, 99, 103, 167 confirmed by glosses; other brothers' letters in karton 202 are not on DECODE (needs archive access)

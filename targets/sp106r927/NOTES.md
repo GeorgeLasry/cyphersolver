@@ -1,5 +1,7 @@
 # TNA SP 106/10 ff. 241-243 — undeciphered letter in the "masonic alphabet" (DECODE R927)
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the f. 242 entry is the same leaf as f. 243 photographed with the flap down; about half its lines are holes or restored from f. 243. It is now *not prose* in profile.json (a transcription check, not a text); it was already reported apart from fraction_read. Claim unchanged.
+
 Lasry review (25 Sept 2026): the letter was decoded by Sheila Richards in *Secret Writings* (1973). The book was not seen here and a web search found no record of it; it was not used. This reading is an independent re-solution (outcome.first_break = false), left out of the ciphertext-only list for Klaus Schmeh.
 
 Outcome: read (key recovered from ciphertext-only; 2026-09-19; all pages transcribed 2026-10-02; pass 2 2026-10-03; reclassed

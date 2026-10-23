@@ -458,7 +458,13 @@
    "what": "Lasry (21 Sept 2026) rates this above the cases without key recovery: transcription plus decoding under an ambiguous polyphonic key. Ranking difficulty raised from 2 to 3."
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 10258 tokens, 32 types, it-cinquecento order 4: reading -2.81 per letter; polyphonic: 26% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per letter, DECODE's digit transcriptions (decode/DOC_*_D1664-1685, D2342) and the beam-search decryption with Lasry's key, split per record from decrypt_raw.txt into texts/ (Lasry posted the key, DOC_*_D32xx, but no plaintext)", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): per letter, DECODE's digit transcriptions (decode/DOC_*_D1664-1685, D2342) and the beam-search decryption with Lasry's key, split per record from decrypt_raw.txt into texts/ (Lasry posted the key, DOC_*_D32xx, but no plaintext)", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the eleven decryptions read through. R93, R96-R99, R102, R115 build Italian sentences with scattered slips; R94, R95, R100 and R101 have corrupted runs in most sentences (docs/_check_reading.py 0.75-0.89 clean, inflated by nomenclator words). Four letters relabelled decoded, not read; class read -> read in part; fraction_read unknown -> 0.667 (items).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-22", "kind": "access", "what": "Re-read under REREAD_BRIEF (batch aless): the DECODE cipher images of R94, R95, R100, R101 and their 45 cleartext images (folios around each cipher) fetched with the DECODE session cookie, kept out of the repository.", "result": "worked"},
+  {"date": "2026-10-22", "kind": "literature search", "what": "Contemporary decipherments found among the \"cleartext\" images: R94 on f. 45r (with the covering letter of Rome 7 Nov 1567, f. 44r, \"Con questa un poco di cifra\"), R95 on f. 58r, R100 written under the cipher on f. 280r; none for R101 (286v-293v are clear letters). Serrano, Correspondencia diplomatica ... Pio V (1914): not on archive.org, HathiTrust full text 403 from here.", "result": "partial"},
+  {"date": "2026-10-22", "kind": "transcription", "what": "The three decipherments transcribed from the images (texts/R94_decifrato_f45r.txt, R95_decifrato_f58r.txt, R100_decifrato_f280r.txt); R95's is a fast draft, read partly with the figures. R101 transcription: a stray DECODE comment line that the parser read as five illegible items removed (texts/R101_transcription_corrected.txt).", "result": "worked", "technique": ["manual reconstruction"]},
+  {"date": "2026-10-22", "kind": "verification", "what": "Decipherments aligned with the figures letter by letter (reread_aless_align.py, edit-distance DP over the two-letter figure sets). Agreement 89-94% of words; the disagreements located the key's gaps: 9 also = con, dotted 0 = z, 0^.0 = et, X0Y0 codes often written X0Y, doubled letters enciphered once, code values 1040 lettere (Lasry \"Regina di Francia?\"), 3020 quando, 3060 -mente, 4020 come, 4040 Milano, 4080 et, 5070/6050 Imbasciatore, 6060 Inquisitione; 6090 a demonstrative (questa/e).", "result": "worked", "technique": ["crib testing", "key-structure hypothesis"]},
+  {"date": "2026-10-22", "kind": "reading", "what": "R94, R95, R100 read from the decipherments with the figures deciding where they differ; R101 re-decoded with the extended key (reread_aless_decode.py) and read word by word on the figures and the image (chinea, protesta del fisco, devolutione, Iulio secondo et Iulio terzo, notarii, carcerati; 8090 = havere, 209 = chi). English translations written. _check_reading.py on the bodies: 1.00, 0.94, 1.00, 0.84 clean. State decoded, not read -> read for all four; class read in part -> read.", "result": "worked", "technique": ["beam/DP decoding", "language-model scoring", "contextual inference", "manual reconstruction"]}
  ],
  "outcome": {
   "texts": [
@@ -466,78 +472,131 @@
     "doc": "R93",
     "transcription": "decode/DOC_R93_D1664_1664.txt",
     "decryption": "texts/R93_decryption.txt",
-    "summary": "Friends of the crown of France have asked that the Pope promote a marriage of one of the French King's daughters to His Catholic Majesty; the Pope would not move without knowing the King's mind, and the nuncio is to sound it."
+    "summary": "Friends of the crown of France have asked that the Pope promote a marriage of one of the French King's daughters to His Catholic Majesty; the Pope would not move without knowing the King's mind, and the nuncio is to sound it.",
+    "language": "it"
    },
    {
     "doc": "R94",
     "transcription": "decode/DOC_R94_D1665_1665.txt",
     "decryption": "texts/R94_decryption.txt",
-    "summary": "Jurisdiction: the Pope does not mean to revoke the King's privileges but to remove abuses grown through his ministers, who try to strip the Holy See of its authority; the King should hear this freely."
+    "summary": "Covering letter Rome 7 Nov 1567 (\"Con questa un poco di cifra\"): the Pope does not mean to revoke the King's ancient privileges but to remove abuses grown through his ministers; the nuncio is to say so at a suitable moment, once the King is out of the trouble of the funerals; if the King strips the Holy See of its authority, the Pope will resist with spiritual arms \"usque ad effusionem sanguinis\".",
+    "state": "read",
+    "language": "it",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Contemporary decipherment on f. 45r of the same file (texts/R94_decifrato_f45r.txt) transcribed and aligned with the figures (reread_aless_align.py): 157 of 167 words carried; figures followed where they differ (liberamente, N.S., de fatto, non con forze, et viva). Two short gaps the decipherer also left open."
+    },
+    "translation": "texts/R94_en.md",
+    "reading": "texts/R94_reading.md"
    },
    {
     "doc": "R95",
     "transcription": "decode/DOC_R95_D1666_1666.txt",
     "decryption": "texts/R95_decryption.txt",
-    "summary": "Reply on the ministers' claims, the crusade alms, and the Pope's offer of a pension; the King must not be thought alienated from the Holy See."
+    "summary": "The French ambassador's claim about raising troops in the State of Milan would give the King cause to withdraw his protection; the crusade alms: the Pope acted so that Christian discipline should not slacken in Spain, not to deny the indulgence, and will grant a new concession; he grieves more for the King's soul than for any human respect; the nuncio is to speak in this sense.",
+    "state": "read",
+    "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Contemporary decipherment on f. 58r (texts/R95_decifrato_f58r.txt), a fast draft, read together with the figures; where it is illegible or differs the figures decide. Holes: [08.] (the Crusade?), one word after \"detto\", the person \"[3.]\" who pressed the request, and one verb."
+    },
+    "translation": "texts/R95_en.md",
+    "reading": "texts/R95_reading.md"
    },
    {
     "doc": "R96",
     "transcription": "decode/DOC_R96_D1667_1667.txt",
     "decryption": "texts/R96_decryption.txt",
-    "summary": "Awaiting the nuncio's answer on the marriage; union of the three principal princes of Christendom; a heretic prosecuted by the Holy Office; the Hermits of St Jerome (Jeronimites)."
+    "summary": "Awaiting the nuncio's answer on the marriage; union of the three principal princes of Christendom; a heretic prosecuted by the Holy Office; the Hermits of St Jerome (Jeronimites).",
+    "language": "it"
    },
    {
     "doc": "R97",
     "transcription": "decode/DOC_R97_D1668_1668.txt",
     "decryption": "texts/R97_decryption.txt",
-    "summary": "Bolognese exiles sheltered in the King's lands (the Cavaliere Gualengo), whom the King as the Holy See's feudatory for Naples must hand back; the Turk in Adrianople, a French ambassador there, and the German Protestants promising the Sultan help."
+    "summary": "Bolognese exiles sheltered in the King's lands (the Cavaliere Gualengo), whom the King as the Holy See's feudatory for Naples must hand back; the Turk in Adrianople, a French ambassador there, and the German Protestants promising the Sultan help.",
+    "language": "it"
    },
    {
     "doc": "R98",
     "transcription": "decode/DOC_R98_D1669_1669.txt",
     "decryption": "texts/R98_decryption.txt",
-    "summary": "The King's orders to his ministers about the clergy are delayed by waiting for commissions."
+    "summary": "The King's orders to his ministers about the clergy are delayed by waiting for commissions.",
+    "language": "it"
    },
    {
     "doc": "R99",
     "transcription": "decode/DOC_R99_D1670_1670.txt",
     "decryption": "texts/R99_decryption.txt",
-    "summary": "The Order of St John and its Grand Master; Don John of Austria; the Milan senate against the archbishop (Borromeo) over the Corpus Domini procession; the Pope will use spiritual arms."
+    "summary": "The Order of St John and its Grand Master; Don John of Austria; the Milan senate against the archbishop (Borromeo) over the Corpus Domini procession; the Pope will use spiritual arms.",
+    "language": "it"
    },
    {
     "doc": "R100",
     "transcription": "decode/DOC_R100_D2342_2342.txt",
     "decryption": "texts/R100_decryption.txt",
-    "summary": "The King's ministers' proceedings; a brief to be executed."
+    "summary": "The King's ministers mean to deceive the nuncio over the Inquisition of Catalonia and keep people from coming to him for absolution; the ambassador presses for the case to be referred to the King; without waiting for another resolution the nuncio is to execute the brief when the parties ask.",
+    "state": "read",
+    "language": "it",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Contemporary decipherment written under the cipher on f. 280r (texts/R100_decifrato_f280r.txt), aligned with the figures: 73 of 79 words carried; figures followed for \"quella\", \"sia rimessa\", \"sì che\"."
+    },
+    "translation": "texts/R100_en.md",
+    "reading": "texts/R100_reading.md"
    },
    {
     "doc": "R101",
     "transcription": "decode/DOC_R101_D1671_1671.txt",
     "decryption": "texts/R101_decryption.txt",
-    "summary": "The Naples census (the hackney and the feudal dues of St Peter's day), the investiture, and the schism threatened by the ministers; the King's realms will be troubled if he does not remedy it."
+    "summary": "The Pope accepted the hackney and the St Peter's day dues with the fisc's protest, not as census but as fruits of a fief of the Holy See, and claims devolution under the investitures of Julius II and Julius III; the King's ministers have raised a schism in Naples, imprisoning the bishops' notaries and executors (an aged doctor died in prison); God will punish who troubles His Church, and the Pope will have to take measures if the King does not remedy it.",
+    "state": "read",
+    "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "No decipherment or print found; read word by word on the figures with the key as extended by the R94/R95/R100 decipherments (9 = con, dotted 0 = z, 0^.0 = et, 209 = chi, 8090 havere), checked with reread_aless_align.py (158 of 168 and 73 of 74 words carried on the two pages). Holes: three places under burns or a hole in the paper, codes 9090, 6020, 8020."
+    },
+    "translation": "texts/R101_en.md",
+    "reading": "texts/R101_reading.md"
    },
    {
     "doc": "R102",
     "transcription": "decode/DOC_R102_D1672_1672.txt",
     "decryption": "texts/R102_decryption.txt",
-    "summary": "A prelate \"deputato in regno\" failing in his office; the Pope might have made him cardinal."
+    "summary": "A prelate \"deputato in regno\" failing in his office; the Pope might have made him cardinal.",
+    "language": "it"
    },
    {
     "doc": "R115",
     "transcription": "decode/DOC_R115_D1685_1685.txt",
     "decryption": "texts/R115_decryption.txt",
-    "summary": "Spagna 6/II (1569): pensions on a see, the King's nomination, a commission; the Council."
+    "summary": "Spagna 6/II (1569): pensions on a see, the King's nomination, a commission; the Council.",
+    "language": "it"
    }
   ],"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 10258, "types": 32, "tokens_per_type": 320.56, "score": -2.81, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 26% of read tokens differ from their type's commonest value"}, 
   "method": "read with known key",
-  "method_basis": "George Lasry's 2020 reconstructed key was attached to every DECODE record R93-R102 and R115 before the attempt; it is polyphonic (each digit two letters, zero a null), so the text was chosen by a beam search scored with an Italian language model.",
-  "contribution": ["decipherment with ambiguous key"],
+  "method_basis": "George Lasry's 2020 reconstructed key was attached to every DECODE record R93-R102 and R115 before the attempt; it is polyphonic (each digit two letters, zero a null), so the text was chosen by a beam search scored with an Italian language model. On 22 Oct 2026 the contemporary decipherments of R94 (f. 45r), R95 (f. 58r) and R100 (under the cipher, f. 280r), on DECODE as cleartext images, were transcribed and aligned with the figures; they extended the key (9 = con, dotted 0 = z, 0^.0 = et, codes 1040 lettere, 3020 quando, 3060 -mente, 4020 come, 4040 Milano, 4080 et, 5070/6050 Imbasciatore, 6060 Inquisitione, 8090 havere), with which R101 was read on the figures.",
+  "contribution": ["decipherment with ambiguous key", "transcription", "key extended or corrected", "sender or date identified"],
   "class": "read",
-  "fraction_read": "unknown",
+  "key": "recovered",
+  "fraction_read": 1.0,
   "verification": ["historical consistency"],
-  "notes": "Readings are machine output under a polyphonic key: each digit's letter is chosen by the language model, so isolated letters and unlisted nomenclator groups (shown as [NN.]) are uncertain; the sense is continuous throughout. Not checked against contemporary decifrati or Serrano.",
+  "notes": "R93, R96-R99, R102, R115: beam-search readings under Lasry's key, sense continuous, single letters model choices. R94, R95, R100: read from the contemporary decipherments checked against the figures. R101: read on the figures with the extended key. 22 Oct 2026, reading audit: R94, R95, R100, R101 decoded, not read; same day re-read (batch aless) and class back to read. Serrano 1914 not reached (HathiTrust 403, not on archive.org).",
   "credits": [
-    {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed polyphonic key (DOC_R9x_D32xx) attached to R93-R102, R115; his tentative glosses kept", "date": "2020-10-24", "source": "DECODE R93-R102, R115"}
-  ]
+    {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed polyphonic key (DOC_R9x_D32xx) attached to R93-R102, R115; his tentative glosses kept", "date": "2020-10-24", "source": "DECODE R93-R102, R115"},
+    {"who": "contemporary", "role": "key or decipherment used", "note": "decifrati of R94 (f. 45r), R95 (f. 58r) and R100 (f. 280r), bound in the nunciature file", "date": "1567-1569", "source": "DECODE R94, R95, R100 cleartext images"}
+  ],
+  "gaps": [],
+  "fraction_read_source": "22 Oct 2026, re-read (batch aless): the four letters labelled decoded, not read (R94, R95, R100, R101; 3,519 of the 10,555 items) now build sentences and are translated (texts/R94-R101_reading.md, _en.md; _check_reading.py on the reading bodies 1.00, 0.94, 1.00, 0.84 clean). Items of letters that read / all = 10,555 / 10,555 = 1.0. Open inside the readings: about 15 words (two gaps in R94, four in R95, five in R101) and the codes 9090, 6020, 8020, [08.], [3.].",
+  "fraction_read_method": "measured",
+  "key_file": "texts/key.md"
  }
 }

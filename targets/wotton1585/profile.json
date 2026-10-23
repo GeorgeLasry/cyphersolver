@@ -82,25 +82,35 @@
   {"date": "2026-09-21", "kind": "reading", "what": "Recognised the pages as Wotton's own clear-English drafts headed 'To Mr Secretary', with code numbers only for names; no letter cipher.", "result": "worked"},
   {"date": "2026-09-21", "kind": "hypothesis", "technique": ["contextual inference"], "what": "Identified the code numbers from context: 19 Arran, 39 Master of Gray, 10 King James (certain); 9 Elizabeth/England, 20 Maxwell, 24 Huntly, 3 France (probable).", "result": "partial"},
   {"date": "2026-09-21", "kind": "literature search", "what": "Tried to check CSP Scotland vol. 8 for the calendared despatches and their resolved names; BHO paywalled, archive.org copy lending-only.", "result": "failed"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the name-code table copied verbatim from NOTES.md to texts/key.md and a summary given for each draft. Missing: the three drafts (clear English with name numbers) were never transcribed into the folder, so no transcription or glossed text exists", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the name-code table copied verbatim from NOTES.md to texts/key.md and a summary given for each draft. Missing: the three drafts (clear English with name numbers) were never transcribed into the folder, so no transcription or glossed text exists", "result": "partial"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): each of R4841-R4843 checked: the repository holds only summaries and texts/key.md; the images (main checkout decode/) show clear drafts not transcribed. All three relabelled decoded, not read; class read -> not read; method key from adjacent plaintext -> not solved; fraction_read unknown -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "clear drafts with a few name-code numbers; no ciphertext transcription in the folder"}, 
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The three drafts are in clear English with a small numeric name code; the code numbers (19 Arran, 39 Master of Gray, 10 King James and others) were identified from the clear text around them, and later checked against CSP Scotland viii, which glosses several of them.",
+  "method": "not solved",
+  "method_basis": "The three drafts are in clear English with a small numeric name code; the code numbers (19 Arran, 39 Master of Gray, 10 King James and others) were identified from the clear text and checked against CSP Scotland viii. No draft is transcribed in the repository, so no reading is claimed (reading audit, 22 Oct 2026); the code table stands.",
   "contribution": ["key recovered", "catalogue correction"],
-  "class": "read",
-  "fraction_read": "unknown",
+  "class": "not read",
+  "fraction_read": 0.0,
   "grades": {"H": 3, "C": 4, "M": 0, "I": 4},
   "verification": ["historical consistency"],
-  "notes": "Drafts read in full; 7 of 11 code numbers identified (3 certain, 4 probable), 27, 32, 36, 40 open.",
+  "notes": "Drafts read in full; 7 of 11 code numbers identified (3 certain, 4 probable), 27, 32, 36, 40 open. 22 Oct 2026, reading audit: no draft is transcribed here; all three decoded, not read; class read -> not read, method -> not solved. The code identifications stand.",
   "credits": [
     {"who": "boyd", "role": "key or decipherment used", "note": "CSP Scotland viii glosses fixed 24 Farnyhurst and 40 Justice Clerk (checked after the reading)", "date": "1914"}
   ],
   "texts": [
-   {"doc": "R4841", "label": "R4841, Add MS 32657 ff. 167-168, Wotton to Walsingham, 25 Aug 1585 (draft)", "summary": "Gray [39] urges that while Arran [19] is in favour with the King [10] the banished lords can never be restored nor a league with England made safe, and proposes that Elizabeth fund the lords to take Arran and seize the King's person; rumours that Arran and Ferniehirst [24] are agreed and that 24 may carry the King to France."},
-   {"doc": "R4842", "label": "R4842, Add MS 32657 ff. 173-174, 30 Aug 1585 (draft)", "summary": "Answers Walsingham's letter of the 21st about Gray's complaint; 27 and 40; Arran still at Kinneil under guard; Bothwell come to court 'to the great grief of the Arranistes'; the Jesuits Hay and Dury in the country."},
-   {"doc": "R4843", "label": "R4843, Add MS 32657 ff. 175-176, 1 Sep 1585 (draft)", "summary": "The device of Gray and the Prior of Blantyre: the lords to join with Maxwell [20] under colour of his feud and send 500 men to seize the King and Arran, the plan that became the lords' return and Arran's fall at Stirling in November 1585."}
+   {"doc": "R4841", "label": "R4841, Add MS 32657 ff. 167-168, Wotton to Walsingham, 25 Aug 1585 (draft)", "summary": "Gray [39] urges that while Arran [19] is in favour with the King [10] the banished lords can never be restored nor a league with England made safe, and proposes that Elizabeth fund the lords to take Arran and seize the King's person; rumours that Arran and Ferniehirst [24] are agreed and that 24 may carry the King to France.", "language": "en", "state": "decoded, not read", "note": "Clear English draft with numeric name codes (f. 167 \"To Mr Secretary the 25th August\", \"Sir, 39. came to me yesterday\"); no transcription is in the repository, only a summary and the code table (texts/key.md), so no running text can be read here (reading audit, 22 Oct 2026). Checked on the image: the draft is clear prose. Fix: transcribe it from the DECODE images (local copies in the main checkout targets/wotton1585/decode/, git-ignored) and mark the code numbers."},
+   {"doc": "R4842", "label": "R4842, Add MS 32657 ff. 173-174, 30 Aug 1585 (draft)", "summary": "Answers Walsingham's letter of the 21st about Gray's complaint; 27 and 40; Arran still at Kinneil under guard; Bothwell come to court 'to the great grief of the Arranistes'; the Jesuits Hay and Dury in the country.", "language": "en", "state": "decoded, not read", "note": "Clear English draft with numeric name codes (f. 173 \"To Mr Secretary the 30th of August 1585\", \"your H. of the 21th came to my handes\"); no transcription is in the repository, only a summary and the code table (texts/key.md), so no running text can be read here (reading audit, 22 Oct 2026). Checked on the image: the draft is clear prose. Fix: transcribe it from the DECODE images (local copies in the main checkout targets/wotton1585/decode/, git-ignored) and mark the code numbers."},
+   {"doc": "R4843", "label": "R4843, Add MS 32657 ff. 175-176, 1 Sep 1585 (draft)", "summary": "The device of Gray and the Prior of Blantyre: the lords to join with Maxwell [20] under colour of his feud and send 500 men to seize the King and Arran, the plan that became the lords' return and Arran's fall at Stirling in November 1585.", "language": "en", "state": "decoded, not read", "note": "Clear English draft with numeric name codes (f. 175 \"To Mr Secretary the first of September\", \"for the better effectuating of the overture made by 39\"); no transcription is in the repository, only a summary and the code table (texts/key.md), so no running text can be read here (reading audit, 22 Oct 2026). Checked on the image: the draft is clear prose. Fix: transcribe it from the DECODE images (local copies in the main checkout targets/wotton1585/decode/, git-ignored) and mark the code numbers."}
   ],
-  "key_file": "texts/key.md"
+  "key_file": "texts/key.md",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: none of the three drafts is transcribed in the repository, so no tokens are in a document that reads.",
+  "gaps": [
+   {
+    "item": "R4841, R4842, R4843: the drafts, not transcribed",
+    "blocker": "not-attempted",
+    "detail": "DECODE images (4 pp. each) are in the main checkout targets/wotton1585/decode/ and reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt); transcribe the three drafts with the code numbers marked"
+   }
+  ]
  }
 }

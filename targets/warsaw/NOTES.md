@@ -1,5 +1,7 @@
 # DECODE R1408, "Di Varsouia 24 Xbre 1627" (ÖStA HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176) — NOTES
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the word-divided text in plaintext.txt is two long sentences and both build and translate; the holes are title and function-word codes with no key material and the object of the request ([223] [159]). The per-document C is overturned to B; the filled-in conjectural version is not used. Claim unchanged.
+
 **Verdict: read.** A homophonic substitution with an alphabet in plain order (odd figures 13–33 = *a b c d e f g h i l m*,
 even figures 14–32 = *n o p q r s t u [x] z*), six letter-pair symbols standing for consonants, a dozen two-figure
 syllables and particles in the ranges 01–09 and 40–50, the letters *a* and *m* as nulls, and thirteen three-figure

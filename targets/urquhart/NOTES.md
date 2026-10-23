@@ -1,5 +1,7 @@
 # Thomas Urquhart's Cyphral Octastich read in full; the distich claim not reproduced
 
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the distich entry in profile.json carried no state; it is now *decoded, not read* with the note "not deciphered" (outcome.parts already had it not solved). Claim unchanged: the octastich reads.
+
 Two numeric cryptograms of Sir Thomas Urquhart (1611–1660), no. 28 on Schmeh's Top 50. The **octastich**: eight
 stanza-lines and a ten-number "Decagram", 285 numbers to 201, printed on the last leaf of *Ekskybalauron* / *The Jewel*
 (London, 1652), dated "London, March 7, 1651 / 17, 1652", a leaf missing from every digitised copy; reprinted in the

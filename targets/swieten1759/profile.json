@@ -211,7 +211,8 @@
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R955 (1757 table, 202-586, read from the decipherment on its own page) stays in swieten1757; R956/R957 (the 1759 table, 100-442, rebuilt ciphertext-only) moved to swieten1759 with msolve.py, dec.py, key.json, overrides.json, runs.txt, validation.tsv.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R957 and R956 linked to cipher/R95x.txt (group transcriptions) and READING.md (both readings); key_file key.json", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R957 and R956 linked to cipher/R95x.txt (group transcriptions) and READING.md (both readings); key_file key.json", "result": "worked"},
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): READING.md read per letter: R956 builds French sentences with scattered name groups open; R957 has holes or garbled clauses in two of its four sentences. R957 relabelled decoded, not read; class read -> read in part; fraction_read 0.962 -> 0.597 (estimated); excerpt notes added to both.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
  ],
  "outcome": {
   "validation": {
@@ -250,8 +251,8 @@
    "transcription",
    "key recovered"
   ],
-  "class": "read",
-  "fraction_read": 0.962,
+  "class": "read in part",
+  "fraction_read": 0.597,
   "key": "recovered",
   "codes_open": {
    "open": 12,
@@ -271,14 +272,21 @@
    {
     "blocker": "illegible",
     "item": "290 313 316 313 373 (R956 run 16), digit division uncertain"
+   },
+   {
+    "item": "R957 runs 2 and 4 (\"On promet ... François\"; \"le prince de Con[...] ... qui vous formez des prétensions\"): decoded, not read",
+    "blocker": "not-attempted",
+    "detail": "re-read on the scans against the alphabetical table and the clear text around them"
    }
   ],
-  "notes": "fraction_read = 1 - 21 unread of 553 groups in R956+R957.",
+  "notes": "fraction_read = 1 - 21 unread of 553 groups in R956+R957. 22 Oct 2026, reading audit: R956 reads; R957 is decoded, not read. Class read -> read in part; fraction_read 0.962 -> 0.597 (estimated, tokens in R956).",
   "credits": [],
   "texts": [
-   {"doc": "R957", "label": "R957, ff. 327-328, Bonn, 14 Jan 1759", "transcription": "cipher/R957.txt", "decryption": "READING.md", "summary": "Gottfried van Swieten at Bonn to Count Cobenzl at Brussels: the new convention leaves the revenues to [232] while reserving sovereignty to the Empress, and the principality of Meurs is being handed to a prince without the Empress, its sovereign, being consulted."},
-   {"doc": "R956", "label": "R956, ff. 344-345, Bonn, 4 Feb 1759", "transcription": "cipher/R956.txt", "decryption": "READING.md", "summary": "On Soubise's army: no magazines are being made except at the expense of the exhausted Estates of the Empire, the principle being to keep the King's army without its costing a sou; the contributions of Guelders paid for his army and money was sent to Contades' army for winter quarters."}
+   {"doc": "R957", "label": "R957, ff. 327-328, Bonn, 14 Jan 1759", "transcription": "cipher/R957.txt", "decryption": "READING.md", "summary": "Gottfried van Swieten at Bonn to Count Cobenzl at Brussels: the new convention leaves the revenues to [232] while reserving sovereignty to the Empress, and the principality of Meurs is being handed to a prince without the Empress, its sovereign, being consulted.", "language": "fr", "state": "decoded, not read", "note": "The first and third sentences build, but \"On promet (?) de toujours de la part des François\" does not, and \"le prince de Con[...] [323 441] qui vous formez des prétensions\" has a garbled clause, so half the sentences have holes (reading audit, 22 Oct 2026); fix: re-read runs 2 and 4 of R957 on the scans against the alphabetical table. Excerpt only: the cipher runs are given in full, the clear text of the letter around them in extract; the full letter is on the DECODE images (R957)."},
+   {"doc": "R956", "label": "R956, ff. 344-345, Bonn, 4 Feb 1759", "transcription": "cipher/R956.txt", "decryption": "READING.md", "summary": "On Soubise's army: no magazines are being made except at the expense of the exhausted Estates of the Empire, the principle being to keep the King's army without its costing a sou; the contributions of Guelders paid for his army and money was sent to Contades' army for winter quarters.", "language": "fr", "note": "Excerpt only: the cipher runs are given in full, the clear text around them in extract; the full letter is on the DECODE images (R956)."}
   ],
-  "key_file": "key.json"
+  "key_file": "key.json",
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: tokens in documents that read. R956 (343 groups) reads; R957 (210 groups) is decoded, not read. R956 has about 13 groups open (147 100 126 148, 170 271 289 337, 290 313 316 313 373), so about 330 of 553 groups = 0.597, counted by hand from READING.md. The earlier 0.962 (532 of 553 groups decrypted) is withdrawn as a reading figure."
  }
 }

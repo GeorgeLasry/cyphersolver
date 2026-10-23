@@ -1,6 +1,10 @@
 # Van Swieten to Cobenzl, Bonn, 14 Jan and 4 Feb 1759 (DECODE R956, R957): the 1759 table
 
-Status: read (96% of groups, key rebuilt ciphertext-only)
+Status: in progress. R956 reads; R957 decoded, not read (reading audit, 22 Oct 2026).
+
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R956 builds French sentences with scattered name groups open. R957 does not: "On promet (?) de toujours de la part des François" fails and "le prince de Con[...] [323 441] qui vous formez des prétensions" is garbled, so half its sentences have holes; R957 is *decoded, not read*. Class read -> read in part; fraction_read 0.962 -> 0.597 (estimated: tokens in R956). Both readings are excerpts: the cipher runs in full, the clear text around them in extract.
+
+Earlier status (before the 22 Oct 2026 reading audit): read (96% of groups, key rebuilt ciphertext-only)
 
 Split on 14 Oct 2026 from `../swieten1757/` under the one-key rule (George Lasry, 14 Oct 2026). The undated 1757–58
 letter R955 uses an earlier table (202–586), read from its own decipherment: a different cipher with its own page
@@ -60,6 +64,7 @@ so by the same order it is filed under F, not G; "la France" fits both R957 cont
 - codes 170 323 441 (R957) and 170 271 289 337 (R956) - blocker: open-codes; syllables read, words unresolved
 - codes 290 313 316 313 373 (R956), the one marshal "qu'on estime" - blocker: illegible; digit division uncertain in the scan
 - code 357 in R957 "supposition [pr] sans que" - blocker: open-codes; single awkward syllable
+- R957 runs 2 and 4 ("On promet ... François"; "le prince de Con[...] ... qui vous formez des prétensions"): decoded, not read - blocker: not-attempted; re-read on the scans against the alphabetical table and the clear text
 
 ## Escalation
 - [x] siblings: R955 opened (now swieten1757); its 1757 table differs; no other record in inv. 1236 on DECODE

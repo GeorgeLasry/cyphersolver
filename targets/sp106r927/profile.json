@@ -315,6 +315,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the three page transcriptions and the reading of all three (reading.txt, with p3_plain.txt), and as separate files WAINUT's independent transcription, plaintext and key of ff. 243 and 241 (wainut/); key.json is this project's key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): the f. 242 entry checked: it is the same leaf as f. 243 with the flap down, about half its lines holes or restored from f. 243. Relabelled not prose (a transcription check, not a text); it was already reported apart from fraction_read. Claim unchanged.",
+   "result": "worked",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -399,9 +406,9 @@
     {"who": "lasry", "role": "pointer", "note": "reported the Richards decipherment (email review)", "date": "2026-09-25"}
   ],
   "texts": [
-   {"doc": "R927 f. 243", "label": "f. 243, the first page of the letter: this project's reading, and WAINUT's independent one", "transcription": ["hand_p3.txt", "wainut/transcription_R927.txt"], "decryption": ["reading.txt", "p3_plain.txt", "wainut/plaintext_R927.txt"], "summary": "A letter in French in a pigpen cipher, from Nancy in December, year unknown: the writer says he could receive no more sensible displeasure, on learning of the voyage (or marriage) of 'ce gentilhomme', saluted lately 'de la part de mon maistre', to the prejudice of the affection he has vowed to the recipient's service, and begs him to continue his goodwill. reading.txt is this project's reading of all three pages; wainut/plaintext_R927.txt is WAINUT's independent transcription and reading of ff. 243 and 241, kept as a separate file."},
-   {"doc": "R927 f. 241", "label": "f. 241, the closing page, 'De Nancy le .. decembre': this project's reading, and WAINUT's", "transcription": ["hand_p1.txt", "wainut/transcription_R927.txt"], "decryption": ["reading.txt", "wainut/plaintext_R927.txt"], "summary": "The closing page: a king (code 67, 'Sa Majesté') might send a man (code @) to the writer's master (code 6), who is recovering from a long illness; the writer closes as 'fidel serviteur' and signs in cipher ('nicle' here, 'Ville' in WAINUT's reading of the dots)."},
-   {"doc": "R927 f. 242", "label": "f. 242 (the same leaf as f. 243 photographed with the flap down, per WAINUT)", "transcription": "hand_p2.txt", "decryption": "reading.txt", "summary": "Image P2 shows the same leaf as f. 243 with the paper flap folded down (WAINUT, PR #30); its sign-for-sign agreement with hand_p3.txt checks the transcription, not the text."}
+   {"doc": "R927 f. 243", "label": "f. 243, the first page of the letter: this project's reading, and WAINUT's independent one", "transcription": ["hand_p3.txt", "wainut/transcription_R927.txt"], "decryption": ["reading.txt", "p3_plain.txt", "wainut/plaintext_R927.txt"], "summary": "A letter in French in a pigpen cipher, from Nancy in December, year unknown: the writer says he could receive no more sensible displeasure, on learning of the voyage (or marriage) of 'ce gentilhomme', saluted lately 'de la part de mon maistre', to the prejudice of the affection he has vowed to the recipient's service, and begs him to continue his goodwill. reading.txt is this project's reading of all three pages; wainut/plaintext_R927.txt is WAINUT's independent transcription and reading of ff. 243 and 241, kept as a separate file.", "language": "fr"},
+   {"doc": "R927 f. 241", "label": "f. 241, the closing page, 'De Nancy le .. decembre': this project's reading, and WAINUT's", "transcription": ["hand_p1.txt", "wainut/transcription_R927.txt"], "decryption": ["reading.txt", "wainut/plaintext_R927.txt"], "summary": "The closing page: a king (code 67, 'Sa Majesté') might send a man (code @) to the writer's master (code 6), who is recovering from a long illness; the writer closes as 'fidel serviteur' and signs in cipher ('nicle' here, 'Ville' in WAINUT's reading of the dots).", "language": "fr"},
+   {"doc": "R927 f. 242", "label": "f. 242 (the same leaf as f. 243 photographed with the flap down, per WAINUT)", "transcription": "hand_p2.txt", "decryption": "reading.txt", "summary": "Image P2 shows the same leaf as f. 243 with the paper flap folded down (WAINUT, PR #30); its sign-for-sign agreement with hand_p3.txt checks the transcription, not the text.", "language": "fr", "state": "not prose", "note": "Not a separate text: image P2 is f. 243 photographed with the paper flap folded down (WAINUT, PR #30). Its re-transcription checks hand_p3.txt sign for sign; the words under the flap are [..] or restored from f. 243, and the letter is read under the f. 243 entry (reading audit, 22 Oct 2026)."}
   ],
   "key_file": ["key.json", "wainut/key_R927.tsv"]
  }

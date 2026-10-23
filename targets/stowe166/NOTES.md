@@ -6,6 +6,8 @@ Reading: every cipher line read; only the person signs open. Measured 3 Oct 2026
 `reading.txt`): 1023 of 1035 cipher signs read = 98.8%; the 11 person code signs and one unexplained sign are the rest.
 Prior decipherment in print (found 30 Sept 2026, after the key was recovered here): G. G. Butler, *The Edmondes
 Papers* (1913), prints five of the six letters with the cipher passages deciphered. See "Print check" below.
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R7773 ("that his faith is not vendible") and R7775 (one line on the enterprise upon Reims) were graded C as fragments. Each is a single cipher clause inside a clear despatch and reads in full (R7775 with the person sign {£2} open), so the grades are overturned (A, B). Claim unchanged.
+
 
 Catalogue entry: "Lord Threr? to unknown recipient, 5 ciphertexts". DECODE's author field is the
 **addressee**: the letters are to the Lord Treasurer (Burghley). Stowe MS 166 is volume 1 of the papers of

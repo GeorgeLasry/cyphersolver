@@ -122,6 +122,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the DECODE record holding Pettersson's transcription and Lasry's plaintext; no local copy",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): Lasry's plaintext of R929 is on DECODE only (git-ignored copy in no checkout); nothing could be read. Relabelled decoded, not read; class already solved kept (Lasry's decipherment); fraction_read 0.842 -> 0.",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -131,9 +138,9 @@
    "catalogue correction"
   ],
   "class": "already solved",
-  "fraction_read": 0.842,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "apply_key.py over decode/ (Pettersson's groups as aligned in Lasry's interlinear file): 293 of 348 cipher groups have a value in Lasry's SP106-5 key",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: the letter's text is not in the repository (Lasry's files were git-ignored and are in no checkout), so no tokens are in a document that reads here. The earlier 0.842 (apply_key.py: 293 of 348 groups with a value in Lasry's key) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
    "open": 27,
@@ -149,13 +156,18 @@
     "item": "the figures 81-90 (9 distinct, 30 tokens)",
     "blocker": "open-codes",
     "detail": "Not in the key; they fall between words ('HOW _ BAD _ SO EUER'), so dividers or nulls, against the 'no nulls' of Lasry's key file. Not settled."
+   },
+   {
+    "item": "R929: Lasry's plaintext not in the repository",
+    "blocker": "not-attempted",
+    "detail": "his interlinear and plaintext files are on the DECODE record (reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)); fetch them into decode/ (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept"
    }
   ],
   "grades": "unknown",
   "verification": [
    "key confirms"
   ],
-  "notes": "Lasry's plaintext existed before the key was applied here; the application reproduces it group for group. The letter is signed 316 440 (Lasry's '<316> <440> <236>'). Sibling in the same key: R928 (ff. 245-246, Goffe from The Hague).",
+  "notes": "Lasry's plaintext existed before the key was applied here; the application reproduces it group for group. The letter is signed 316 440 (Lasry's '<316> <440> <236>'). Sibling in the same key: R928 (ff. 245-246, Goffe from The Hague). 22 Oct 2026, reading audit: no text of the letter is in the repository; decoded, not read. Class kept: Lasry's decipherment exists on DECODE (2020).",
   "credits": [
    {
     "who": "lasry",
@@ -178,7 +190,9 @@
     "transcription": "https://de-crypt.org/decrypt-web/RecordsView/929",
     "decryption": "https://de-crypt.org/decrypt-web/RecordsView/929",
     "summary": "Henrietta Maria's household at Paris to 'Sir': thanks for the weekly news of the affairs of <241> (probably the King), hopes they can hold until relief takes effect, and the embassage and Prince Charles's marriage.",
-    "note": "Transcription: Sofia Pettersson's (DECODE, 2019); decryption: George Lasry's key and interlinear plaintext (DECODE, 23 Oct 2020), both files on the DECODE record. The local copies in decode/ are git-ignored and not in this checkout; a committed copy is wanted."
+    "note": "Lasry's interlinear plaintext of R929 is on the DECODE record, behind its login, and was kept out of the repository as his work; no copy is in any checkout, so nothing of the letter can be read here (reading audit, 22 Oct 2026); fix: re-fetch it with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) and check it with apply_key.py.",
+    "language": "en",
+    "state": "decoded, not read"
    }
   ]
  }

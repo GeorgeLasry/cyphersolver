@@ -117,6 +117,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked the DECODE record holding Pettersson's transcription and Lasry's plaintext; no local copy",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): Lasry's plaintext of R787 is on DECODE only (git-ignored copy in no checkout); nothing could be read. Relabelled decoded, not read; class already solved kept (Lasry's decipherment); fraction_read 0.9802 -> 0.",
+   "result": "partial",
+   "technique": ["language-model scoring", "statistical test"]
   }
  ],
  "outcome": {
@@ -126,9 +133,9 @@
    "catalogue correction"
   ],
   "class": "already solved",
-  "fraction_read": 0.9802,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "apply_key.py over decode/ (Pettersson's groups as aligned in Lasry's interlinear file): 1538 of 1569 cipher groups have a value in Lasry's SP106-2 key",
+  "fraction_read_source": "Reading audit, 22 Oct 2026: the letter's text is not in the repository (Lasry's files were git-ignored and are in no checkout), so no tokens are in a document that reads here. The earlier 0.9802 (apply_key.py: 1538 of 1569 groups with a value in Lasry's key) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
    "open": 19,
@@ -139,13 +146,18 @@
     "item": "nomenclator numbers above 60 (61-75, 83, 97, 102-121) and two stray figures (9, 06): 19 distinct, 31 tokens",
     "blocker": "open-codes",
     "detail": "Not in Lasry's key; his plaintext brackets them or marks them '?'. Mostly names and titles (64 recurs five times as a party or person). The signature 103 62 A 104 is among them."
+   },
+   {
+    "item": "R787: Lasry's plaintext not in the repository",
+    "blocker": "not-attempted",
+    "detail": "his interlinear and plaintext files are on the DECODE record (reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)); fetch them into decode/ (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept"
    }
   ],
   "grades": "unknown",
   "verification": [
    "key confirms"
   ],
-  "notes": "Nothing about the text is new: Lasry's decipherment on DECODE is the reading. Lasry dates it from its war news (Linck, Piccolomini, Enghien, Montrose, the Parlement and the duc d'Epernon) to summer 1645 and suggests it may be Goffe's letter from Holland forwarded unchanged.",
+  "notes": "Nothing about the text is new: Lasry's decipherment on DECODE is the reading. Lasry dates it from its war news (Linck, Piccolomini, Enghien, Montrose, the Parlement and the duc d'Epernon) to summer 1645 and suggests it may be Goffe's letter from Holland forwarded unchanged. 22 Oct 2026, reading audit: no text of the letter is in the repository; decoded, not read. Class kept: Lasry's decipherment exists on DECODE (2020).",
   "credits": [
    {
     "who": "lasry",
@@ -168,7 +180,9 @@
     "transcription": "https://de-crypt.org/decrypt-web/RecordsView/787",
     "decryption": "https://de-crypt.org/decrypt-web/RecordsView/787",
     "summary": "A French news letter (a duplicate) forwarded to Henrietta Maria's household: the Parlement de Paris and the duc d'\u00c9pernon, an envoy refusing to be heard except as ambassador, Enghien taking Heidelberg, the fort of Linck taken, Piccolomini entrenched round Dunkirk, a check to Montrose.",
-    "note": "Transcription: Sofia Pettersson's (DECODE, 2019); decryption: George Lasry's key and interlinear plaintext (DECODE, 23 Oct 2020), both files on the DECODE record. The local copies in decode/ are git-ignored and not in this checkout; a committed copy is wanted."
+    "note": "Lasry's interlinear plaintext of R787 is on the DECODE record, behind its login, and was kept out of the repository as his work; no copy is in any checkout, so nothing of the letter can be read here (reading audit, 22 Oct 2026); fix: re-fetch it with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) and check it with apply_key.py.",
+    "language": "fr",
+    "state": "decoded, not read"
    }
   ]
  }

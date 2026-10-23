@@ -1,6 +1,8 @@
 # Lope de Soria (Genoa) to Charles V, 1523 — RAH Salazar A-28 (9/28), DECODE R9488-R9498
 
 Status: read (5 Oct 2026: 96.6% of cipher units read as sense, measured; measure/measure.py) (written up as docs/soria1523.html; the page still shows the earlier 'read in part')
+**22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R9491 and R9494-96 were graded C on the superseded files read_r9491_b.md and read_r9494.md. The 5 Oct 2026 measured readings (measure/kb_r9491.txt, measure/kb_r9494.txt) build sentences in both letters with single key-B code groups open, so both per-document grades are overturned to B. Claim unchanged.
+
 
 Split entry (Lasry, 25 Sept 2026, 'split the entry into two cases if the achievements are of mixed types'): key-A letters = key recovered from ciphertext-only (primary, outcome.method), key-B letters = key from external plaintext; outcome.parts, one README row each.
 
