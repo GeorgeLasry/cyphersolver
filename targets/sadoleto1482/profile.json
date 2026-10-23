@@ -631,6 +631,27 @@
       "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the four reading files read through. R1101 (seven lines, checked against clear copy 7a) and R1102 sections A-C (with D in part) build Italian sentences; R1103 has one isolated word and R1106 is a collation of a few clauses with [...] between them. R1103 and R1106 relabelled decoded, not read; R1101 and R1102 reviewed B. fraction_read 0.65 -> ~0.5 (estimated).",
       "result": "partial",
       "technique": ["language-model scoring", "statistical test"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "access",
+      "technique": ["other"],
+      "what": "Re-read brief b22: DECODE R1103 and R1106 fetched with the project cookie: two page images each, no attachment, no comment. R1103 (Vestigia 1294, to King Ferrante) has no clear witness among the neighbouring Vestigia items; R1106 has the two contemporary slips 26a (Vestigia 1319) and 26b (Vestigia 4004), cached in img/v/.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "technique": ["manual reconstruction"],
+      "what": "Slips 26a and 26b transcribed in full as far as the photographs allow (R1106_slips_26a_26b.txt; native resolution and blue-channel local contrast): 26a legible but for two words; 26b legible on its left half, faded on its right half.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "technique": ["plaintext matching", "manual reconstruction"],
+      "what": "R1106 partial reading R1106_reading.md (translation R1106_en.md) on the slips, following the cipher where its read spans differ (apreso, suoi, ha firmo, guera a X, potessi, no sia, a me parla). b17_score 0.731 (19/26), explicit holes 0.846, but the 26b part has holes in most sentences: kept decoded, not read (illegible). R1103 re-cropped line by line: che and non groups visible, strokes lost elsewhere; nothing beyond vostro accepted (illegible).",
+      "result": "failed"
     }
   ],
   "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; only plaintext editions and anchor words"}, 
@@ -665,9 +686,9 @@
         "detail": "local passages agree; full collation unfinished"
       },
       {
-        "item": "R1106, internal completeness against 26a/26b",
-        "blocker": "not-attempted",
-        "detail": "principal regions covered, completeness unverified"
+        "item": "R1106, the p. 3 cipher passage (slip 26b)",
+        "blocker": "illegible",
+        "detail": "23 Oct 2026: 26a and 26b transcribed as far as the photographs allow and a partial reading built (R1106_reading.md); the right halves of 26b and of p. 3 are faded on the only photographs (Vestigia 4004, 1318 (154))"
       }
     ],
     "credits": [
@@ -712,24 +733,24 @@
       },
       {
         "doc": "R1103",
+        "note": "Re-read 23 Oct 2026 (b22): DECODE R1103 has only the two page images; Vestigia 1294 (to King Ferrante) has no clear witness among its neighbours (13a is R1104's copy) and no print is known. The block re-cropped line by line at native resolution shows the che and non groups, but strokes are lost across the lines and segmentation is unstable; no word beyond 'vostro' accepted. Blocker: illegible (faded signs on a single exposure). R1103-R1106_reread_log.md.",
         "label": "R1103, 17 Aug 1482 (Vestigia 1294)",
         "decryption": "r1103_image_audit.md",
         "summary": "A faded four-line cipher block; no continuous reading is established, only the isolated word 'vostro'. The file is the image audit, not a decipherment.",
-        "note": "r1103_image_audit.md establishes one isolated word (vostro) from the faded four-line block; no sentence (reading audit, 22 Oct 2026).",
-        "state": "decoded, not read",
-        "language": "it"
+        "language": "it",
+        "state": "decoded, not read"
       },
       {
         "doc": "R1106",
+        "note": "Re-read 23 Oct 2026 (b22): the contemporary slips 26a and 26b transcribed in full as far as the photographs allow (R1106_slips_26a_26b.txt) and a partial reading built on them, following the cipher where its read spans differ (R1106_reading.md, R1106_en.md; b17_score 0.731, explicit holes 0.846). The 26a part (p. 2) builds sentences; the 26b part (p. 3) keeps holes in most sentences because the right halves of 26b and of p. 3 are faded on the only photographs. Blocker: illegible. R1103-R1106_reread_log.md.",
         "label": "R1106, 27 Nov 1482 (Vestigia 1318; clear copies 26a/26b)",
         "decryption": [
           "r1106_parallel_reading.md",
           "alignment_r1106.md"
         ],
         "summary": "The King 'ha firmo proposito de non se scoprire' and to avoid 'involverse in guera' with the Signoria of Venice. Read at the time on the contemporary slips 26a/26b; the files collate the cipher against them unit by unit.",
-        "note": "r1106_parallel_reading.md collates a few clauses with the clear witness 26b ('ha firmo proposito de non se scoprire ... involverse in guera a X') with [...] between them; the cipher passage is not built into sentences (reading audit, 22 Oct 2026).",
-        "state": "decoded, not read",
-        "language": "it"
+        "language": "it",
+        "state": "decoded, not read"
       }
     ],
     "key_file": "key_working.md"

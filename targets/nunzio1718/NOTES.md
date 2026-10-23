@@ -1,6 +1,8 @@
 # Segreteria di Stato to the Nuncio in Spain, 1718-19 (ASV Segr. Stato Spagna 364D)
 
-Status: in progress. Lasry's reading of Spagna 364D; R154 and R173 decoded, not read (reading audit, 22 Oct 2026).
+Status: read. Lasry's reading of Spagna 364D; R154 and R173, decoded, not read at the 22 Oct 2026 audit, read 23 Oct 2026 from their contemporary interlinear decipherments (lasry/R154-R173_reread_log.md).
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b22)**: the DECODE images of R154 (7 pages) and R173 (2) carry a *complete* contemporary interlinear decipherment over every cipher line; the 'thin and unreliable' gloss below was judged from DECODE's PLAINTEXT rows, which copied it with most words as '?'. Both transcribed (lasry/R154_decifrato.txt, R173_decifrato.txt), aligned group by group with Lasry's rows (research/reading_audit/b22_nunzio_align.py; R154 3,428 of 4,030 letters and R173 1,005 of 1,172 carried by the figures; 93 and 19 letters on a look-alike figure), and written up as readings with translations (lasry/R154_reading.md, R154_en.md, R173_reading.md, R173_en.md). b17_score on the reading bodies 0.986 and 0.917 (before 0.381 and 0.358). Key changes adopted at every corpus place (key_b22.tsv): 78 = dal (not del), 4029 = però (not quale), 4009 = essendo, 4160 = esercit (not Capitol), 4545 = cotest, 4434 = Em.za; 4201 = Stà Sua for review. DECODE transcription corrections in lasry/R154-R173_corrections.tsv (a whole cipher line of f. 13r missing; 4594 -> 4597 Prima). 364D/23 (R176) is a second copy of R173. fraction_read 0.889 -> 1.0.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's decode rows, joined into running text, build Italian sentences in 22 of the 24 despatches (R166, R168 and R170 were re-read and pass). R154 (364D/1) and R173 (364D/20) have runs of unread two-digit groups and open codes in most or half their sentences: *decoded, not read*. Class already solved kept; fraction_read 0.9789 -> 0.889 (groups in documents that read).
 
@@ -151,13 +153,13 @@ for the Levante, the Emperor, the Turk and the Trattato di Pace.
 
 ## Remaining gaps
 
-- R154 and R173: decoded, not read - blocker: not-attempted; re-read the two-digit groups on the DECODE images (cookie at targets/bordeaux/decode/cookie.txt) and fill the codes from key_extra.txt, then write a running text
+- 4201 = Stà Sua: sense-only value, for review - blocker: too-short; 3 places in the corpus, one fitting loosely
 
 ## Escalation
 
 - [x] siblings: all 24 despatches of 364D and the 364C corpus used for the codes
 - [x] clear-pages: the DECODE transcribers copied the interlinear decipherment into the PLAINTEXT lines
 - [x] known-keys: Lasry's reconstructed key (DECODE) is the key
-- [ ] print: no search for a printed text is recorded in these notes
+- [x] print: not needed for R154/R173 (the contemporary decipherment is on the leaves); no printed edition of 364D searched
 - [x] key-rebuild: nomenclator extended here (key_extra.txt)
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: R154 and R173 re-read on the images, 23 Oct 2026

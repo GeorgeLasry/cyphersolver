@@ -1,6 +1,8 @@
 # "Ferenc Rákóczi II to unknown recipient": three French letters to Rákóczi — DECODE R852, R912, R922
 
-Status: in progress. R852 read from its clear copy; R912 and R922 decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. R852 read from its clear copy; R912 and R922, decoded, not read at the 22 Oct 2026 audit, read 23 Oct 2026 with holes (texts/R912-R922_reread_log.md); R912 p. 2 keeps runs of holes.
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b22)**: R922 and R912 written out as normalised French with word division (texts/R922_reading.md, R912_reading.md) and translated (R922_en.md, R912_en.md). R912 p. 1 follows the 1707 interlinear read on the image (texts/R912_interlinear_p1.txt), with seven figure corrections seen there (texts/R912-R922_corrections.tsv: 473 -> 493 'les Polonois', 501 -> 301, 534 -> 504 ...); the rest from the R639 decode, table words read for their sound (161 con, 395 son, 188 dont, 343 pre, 170 che, 127 ar). Look-alike letters: R922 18, R912 13. b17_score on the reading bodies R922 0.839, R912 0.783 (image reads 0.143, 0.25). Both read, grade B; fraction_read 0.182 -> 1.0, class kept at read in part. A clear letter shows under the R922 sheet (fascicle p. 350), not imaged.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R912_image_read.txt and R922_image_read.txt are syllable-split decodes with misreadings in most lines; after the openings no coherent sentence can be built, so both are *decoded, not read*. R852 reads from its contemporary clear copy. Class read -> read in part; fraction_read 0.974 -> 0.182 (R852's 523 of 2,875 groups).
 
@@ -164,7 +166,8 @@ rebuilt key and its reading are now in `../rakoczi1711/`.
 
 ## Remaining gaps
 
-- R912 and R922: decoded, not read - blocker: not-attempted; re-read the groups on the images (img/, DECODE cookie) with the R639 key and write normalised French with word division and a translation
+- R912 p. 2 ll. 3-7, 14-22, 26-31 and p. 3 ll. 2-3: runs of holes - blocker: not-attempted; re-read those lines on IMG_R912_I4878/I4879 and test look-alike readings
+- clear letter under the R922 sheet (fascicle p. 350) - blocker: needs-physical-access; not imaged on DECODE
 
 ## Escalation
 
@@ -173,4 +176,4 @@ rebuilt key and its reading are now in `../rakoczi1711/`.
 - [x] known-keys: DECODE R639 (Bonac-Groffey) is the key
 - [ ] print: no search for a printed text is recorded in these notes
 - [x] key-rebuild: R639's table corrected from the image
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: R912 and R922 re-read 23 Oct 2026; a second pass on R912 p. 2 is still open

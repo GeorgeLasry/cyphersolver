@@ -826,6 +826,41 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): the five flagged despatches read on Lasry's decode rows, joined into running text. R154 (D) and R173 (C) have holes in most or half their sentences: relabelled decoded, not read. R166, R168 and R170 build Italian sentences with scattered open groups: overturned to B. Class already solved kept; fraction_read 0.9789 -> 0.889 (groups in documents that read).",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "technique": ["other"],
+   "what": "Re-read brief b22: every file on DECODE R154 and R173 fetched with the project cookie (research/reading_audit/b17_fetch.py): transcriptions, Lasry's key and corpus file (already held) and the 7 + 2 page images (only R154 p. 1 had been saved). The images carry a complete contemporary interlinear decipherment over every cipher line of both despatches; DECODE's PLAINTEXT rows had copied it with most words as '?', which is why NOTES called it thin.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "Interlinear decipherments transcribed line by line from 1800-px strips (b22_crop.py): lasry/R154_decifrato.txt (135 lines, ff. 12r-15r), lasry/R173_decifrato.txt (34 lines, ff. 344r-v). Figure corrections against DECODE's transcription in lasry/R154-R173_corrections.tsv (4594 -> 4597 Prima; 4570 -> 4576 twice; 4470 -> 4479; one f. 13r cipher line missing from DECODE, figures read from the image; a false code 4839).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "technique": ["plaintext matching", "contextual inference"],
+   "what": "Key changes from the decipherments, each checked at every place in the S364 corpus (ctx.py over seq.json), key_b22.tsv: adopted 78 = dal (Lasry del; 5/5 in R154, corpus contexts 'fin dall'anno', 'rilasciato dal Re', 'di levare dal concordato'), 4029 = però (Lasry quale; 37 places), 4009 = essendo (Lasry ere|esse; 16), 4160 = esercit (Lasry Capitol; 3), 4545 = cotest (2), 4434 = Em.za (13); 4545 and 4434 added to key_extra.txt. For review: 4201 = Stà Sua (sense, 3 places). Not adopted: 00 (46 places, contexts too garbled), 4168 (2 places, no common value); 4516 kept as 16 (the decipherer's d.o read as a slip for 4576).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["beam/DP decoding", "plaintext matching"],
+   "what": "Group-by-group alignment of Lasry's decode rows with the decipherments (research/reading_audit/b22_nunzio_align.py; lasry/R154_align.tsv, R173_align.tsv, R154_words.tsv, R173_words.tsv): R154 3,428 of 4,030 letters carried by the figures' own values or codes, 93 on a look-alike figure, 255 on groups DECODE marks unread, 163 where the group gives other letters (mostly code 4261 rendered 'il Papa'/'Sua Santità'); R173 1,005 of 1,172, 19 look-alike, 79 unread, 46 other.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching", "language-model scoring"],
+   "what": "Readings lasry/R154_reading.md and R173_reading.md built on the decipherments, decipherer's spelling kept, abbreviations expanded; translations R154_en.md, R173_en.md. b17_score.py on the reading bodies: R154 0.986 (68/69), R173 0.917 (22/24); explicit holes only 1.0 and 1.0 (before: Lasry's rows joined 0.381 and 0.358). Both read; with them all 24 despatches of 364D read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -833,18 +868,18 @@
   "method_basis": "Lasry's reconstructed S364 key (24 Oct 2020) and his segmented decipherment of the whole corpus were attached to every DECODE record R154-R177 before the attempt; the project measured that reading and recovered 61 more nomenclator groups from alphabetical brackets and context.",
   "contribution": ["key extended or corrected", "catalogue correction"],
   "class": "already solved",
-  "fraction_read": 0.889,
+  "fraction_read": 1.0,
   "verification": [
    "key confirms",
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "Solved by George Lasry in October 2020 and already read on the DECODE records when this session began; nothing about the system was open. What is new here is the measurement of that reading and 61 additional nomenclator values that extend his key. Verification detail: coverage measured token by token off Lasry's aligned decipherment; each recovered group rests on two or more independent contexts and usually the alphabetical bracket; 4538=Luglio matches the known date of Alberoni's promotion, 12 July 1717. 22 Oct 2026, reading audit: R154 and R173 decoded, not read; R166, R168, R170 overturned to B; fraction_read 0.9789 -> 0.889. Class already solved kept (Lasry's decryption, 2020).",
+  "notes": "Solved by George Lasry in October 2020 and already read on the DECODE records when this session began; nothing about the system was open. What is new here is the measurement of that reading and 61 additional nomenclator values that extend his key. Verification detail: coverage measured token by token off Lasry's aligned decipherment; each recovered group rests on two or more independent contexts and usually the alphabetical bracket; 4538=Luglio matches the known date of Alberoni's promotion, 12 July 1717. 22 Oct 2026, reading audit: R154 and R173 decoded, not read; R166, R168, R170 overturned to B; fraction_read 0.9789 -> 0.889. Class already solved kept (Lasry's decryption, 2020). 23 Oct 2026, re-read (b22): R154 and R173 read from the complete contemporary interlinear decipherments on the DECODE images, aligned with the figures; six key values corrected or added (key_b22.tsv); all 24 despatches read.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "solved and read the S364 corpus in 2020: reconstructed key and segmented decipherment on DECODE R154-R177; measured and extended by 61 nomenclator groups here", "date": "2020-10-24", "source": "DECODE R154-R177"}
   ],
   "texts": [
-   {"doc": "R154", "label": "R154, Spagna 364D/1, Roma 11 Genn. 1718", "transcription": "decode/keep/DOC_R154_D1723_1723.txt", "decryption": "lasry/364D-1.txt", "summary": "Clement XI's Secretariat of State to the nuncio in Madrid at the opening of the War of the Quadruple Alliance. The recurring business is the promotion of Cardinal Alberoni and the settlement of the pending disputes between Rome and Spain: the nuncio's jurisdiction, the abolition of the Nunziatura in Naples, the expulsion of the nuncio, the Spanish ships bound for the Levant, the Emperor, the Turk and the peace treaty.", "language": "it", "state": "decoded, not read", "note": "Lasry's decode rows, joined, start well (\"l'orrenda calunnia che il vicario ... sia stato complice\") but most later sentences carry runs of unread two-digit groups (70?, 00?, 11?, 80?) and unresolved codes, so holes fall in most sentences (reading audit, 22 Oct 2026); fix: re-read the two-digit groups on the DECODE images (cookie) and fill the codes from key_extra.txt."},
+   {"doc": "R154", "label": "R154, Spagna 364D/1, Roma 11 Genn. 1718", "transcription": "decode/keep/DOC_R154_D1723_1723.txt", "decryption": ["lasry/364D-1.txt", "lasry/R154_decifrato.txt"], "summary": "Clement XI's Secretariat of State to the nuncio in Madrid at the opening of the War of the Quadruple Alliance. The recurring business is the promotion of Cardinal Alberoni and the settlement of the pending disputes between Rome and Spain: the nuncio's jurisdiction, the abolition of the Nunziatura in Naples, the expulsion of the nuncio, the Spanish ships bound for the Levant, the Emperor, the Turk and the peace treaty.", "language": "it", "state": "read", "reading": "lasry/R154_reading.md", "translation": "lasry/R154_en.md", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "Read 23 Oct 2026 (b22): the complete contemporary interlinear decipherment over ff. 12r-15r, visible on the seven DECODE images (only page 1 had been saved; NOTES had judged the gloss 'thin and unreliable' from DECODE's PLAINTEXT rows, most words '?'), transcribed (lasry/R154_decifrato.txt) and aligned group by group with Lasry's decode rows plus six key changes adopted at every corpus place (key_b22.tsv: 78 dal, 4029 però, 4009 essendo, 4160 esercit, 4545 cotest, 4434 Em.za). 3,428 of 4,030 letters carried by the figures' own values or codes; 93 letters (2.3%) rest on a look-alike figure (4570 -> 4576 dett-, 4470 -> 4479 ...); one cipher line of f. 13r missing from DECODE's transcription read from the image. No word supplied. b17_score on the reading body 0.986 (68/69), explicit holes 1.0; Lasry's rows joined 0.381."}},
    {"doc": "R155", "label": "R155, Spagna 364D/2, Roma 18. Genn.o? 1718", "transcription": "decode/keep/DOC_R155_D1724_1724.txt", "decryption": "lasry/364D-2.txt", "summary": "Despatch 2 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Roma 18. Genn.o? 1718; on the series, see the first entry.", "language": "it"},
    {"doc": "R156", "label": "R156, Spagna 364D/3, Roma. 8. feb.o. 1718", "transcription": "decode/keep/DOC_R156_D1725_1725.txt", "decryption": "lasry/364D-3.txt", "summary": "Despatch 3 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Roma. 8. feb.o. 1718; on the series, see the first entry.", "language": "it"},
    {"doc": "R157", "label": "R157, Spagna 364D/4", "transcription": "decode/keep/DOC_R157_D1726_1726.txt", "decryption": "lasry/364D-4.txt", "summary": "Despatch 4 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid; on the series, see the first entry.", "language": "it"},
@@ -863,7 +898,7 @@
    {"doc": "R170", "label": "R170, Spagna 364D/17, Roma a Giugno 1718", "transcription": "decode/keep/DOC_R170_D1739_1739.txt", "decryption": "lasry/364D-17.txt", "summary": "Despatch 17 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Roma a Giugno 1718; on the series, see the first entry.", "language": "it", "state": "read", "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document D. Most sentences build (\"non potendosi cio piu sperare mentre vedonsi proseguire costi gli stessi disegni non meno nocivi alla Christianita per l'impedimento che recano alla continuazione della Guerra contro il Turco ...\"); one stretch near the middle (ripet.5?8.?) and a few codes are open."}},
    {"doc": "R171", "label": "R171, Spagna 364D/18, Roma. 21. Giug.o 1718", "transcription": "decode/keep/DOC_R171_D1741_1741.txt", "decryption": "lasry/364D-18.txt", "summary": "Despatch 18 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Roma. 21. Giug.o 1718; on the series, see the first entry.", "language": "it"},
    {"doc": "R172", "label": "R172, Spagna 364D/19, Roma. 12. Luglio. 1718", "transcription": "decode/keep/DOC_R172_D1742_1742.txt", "decryption": "lasry/364D-19.txt", "summary": "Despatch 19 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Roma. 12. Luglio. 1718; on the series, see the first entry.", "language": "it"},
-   {"doc": "R173", "label": "R173, Spagna 364D/20", "transcription": "decode/keep/DOC_R173_D1743_1743.txt", "decryption": "lasry/364D-20.txt", "summary": "Despatch 20 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid; on the series, see the first entry.", "language": "it", "state": "decoded, not read", "note": "The despatch on the closing of the nunciature can be followed, but about half its sentences carry unread groups or unresolved codes (<4238>, <4437>, 66?, 80?) (reading audit, 22 Oct 2026; per-document D softened to C, still failing); fix: re-read the groups on the DECODE images and fill the codes."},
+   {"doc": "R173", "label": "R173, Spagna 364D/20", "transcription": "decode/keep/DOC_R173_D1743_1743.txt", "decryption": ["lasry/364D-20.txt", "lasry/R173_decifrato.txt"], "summary": "Despatch 20 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid; on the series, see the first entry.", "language": "it", "state": "read", "reading": "lasry/R173_reading.md", "translation": "lasry/R173_en.md", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "Read 23 Oct 2026 (b22): the complete contemporary interlinear decipherment over ff. 344r-344v (DECODE images I1133-I1134) transcribed (lasry/R173_decifrato.txt) and aligned with Lasry's decode rows plus the b22 key changes (key_b22.tsv). 1,005 of 1,172 letters carried by the figures' values or codes; 19 letters (1.6%) rest on a look-alike figure; DECODE's 4594 at the head is 4597 (Prima) on the image. One stray decipherer's word ('un', no figure) left out; 'cotesta' marked [?] for the hand. b17_score on the body 0.917 (22/24), explicit holes 1.0; Lasry's rows joined 0.358. 364D/23 (R176) is a second copy of this despatch."}},
    {"doc": "R174", "label": "R174, Spagna 364D/21, Augosto Roma 19. Lug ; 1718", "transcription": "decode/keep/DOC_R174_D1747_1747.txt", "decryption": "lasry/364D-21.txt", "summary": "Despatch 21 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Augosto Roma 19. Lug ; 1718; on the series, see the first entry.", "language": "it"},
    {"doc": "R175", "label": "R175, Spagna 364D/22, Aug. ^10 Roma 19. Luglio 1718", "transcription": "decode/keep/DOC_R175_D1746_1746.txt", "decryption": "lasry/364D-22.txt", "summary": "Despatch 22 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Aug. ^10 Roma 19. Luglio 1718; on the series, see the first entry.", "language": "it"},
    {"doc": "R176", "label": "R176, Spagna 364D/23, Roma. 19. Luglio. 1718", "transcription": "decode/keep/DOC_R176_D1748_1748.txt", "decryption": "lasry/364D-23.txt", "summary": "Despatch 23 of the 24 in Spagna 364D from the Secretariat of State to the nuncio in Madrid, Roma. 19. Luglio. 1718; on the series, see the first entry.", "language": "it"},
@@ -871,13 +906,7 @@
   ],
   "key_file": ["decode/keep/lasry_key_S364.txt", "key_extra.txt", "key_table.md"],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026: digit groups counted in lasry/364D-*.txt (the DECODE files with Lasry's decode rows): 34,678 groups, of which R154 (364D-1, 3,067) and R173 (364D-20, 770) are in documents decoded, not read: (34,678 - 3,837)/34,678 = 0.889. The earlier 0.9789 (groups given a value over the whole of 364D) is withdrawn as a reading figure.",
-  "gaps": [
-   {
-    "item": "R154 and R173: decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "runs of unread two-digit groups and open codes in most sentences; re-read the groups on the DECODE images (cookie at targets/bordeaux/decode/cookie.txt) and fill the codes from key_extra.txt, then write a running text with a translation"
-   }
-  ]
+  "fraction_read_source": "Reading audit, 22 Oct 2026: digit groups counted in lasry/364D-*.txt (the DECODE files with Lasry's decode rows): 34,678 groups, of which R154 (364D-1, 3,067) and R173 (364D-20, 770) are in documents decoded, not read: (34,678 - 3,837)/34,678 = 0.889. The earlier 0.9789 (groups given a value over the whole of 364D) is withdrawn as a reading figure. 23 Oct 2026, re-read (b22): R154 and R173 read from their contemporary interlinear decipherments aligned with the figures, so every document of outcome.texts reads: 34,678/34,678 groups = 1.0.",
+  "gaps": []
  }
 }

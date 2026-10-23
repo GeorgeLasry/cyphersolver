@@ -2,6 +2,8 @@
 
 Status: in progress
 
+**23 Oct 2026, re-read (REREAD_BRIEF batch b22)**: DECODE R1103 and R1106 carry only page images. R1106's contemporary slips 26a (Vestigia 1319) and 26b (Vestigia 4004) transcribed in full as far as the photographs allow (R1106_slips_26a_26b.txt) and a partial reading built on them, following the cipher where its read spans differ (R1106_reading.md, R1106_en.md; b17_score 0.731, explicit holes 0.846). The 26a part (the two p. 2 paragraphs: the Queen, the King of Hungary's moves, the League's spending, Venice) builds sentences; the 26b part (p. 3) keeps holes in most sentences because the right halves of 26b and of p. 3 are faded: still decoded, not read (illegible). R1103 (to King Ferrante, Vestigia 1294) re-cropped line by line: no word beyond 'vostro' accepted (illegible). Log: R1103-R1106_reread_log.md.
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**. R1101's
 seven-line block (checked against the clear copy 7a) and R1102's passages A-C (D in part) build Italian sentences.
 **R1103 and R1106 are decoded, not read**: R1103 gives one isolated word from the faded block, R1106 only a collation
@@ -143,12 +145,12 @@ non lassasse pretermittere questa opportunità laquale mai più fo, né forse se
 - The 1479–80 Sadoleto–Naples key (ASMo Cifrario b. 4 fasc. 1, Cremonini n. 39) should be compared with this key.
 
 ## Remaining gaps
-- R1106 decoded, not read (a few collated clauses, [...] between them; reading audit 22 Oct 2026) - blocker: not-attempted; collate the whole page-3 cipher word by word with 26a/26b and build it into sentences
-- R1103 decoded, not read (one word from the faded block; reading audit 22 Oct 2026) - blocker: illegible; see the R1103 line below
+- R1106 decoded, not read (23 Oct 2026: slips 26a/26b transcribed, partial reading R1106_reading.md; the 26a part holds, the 26b part keeps holes in most sentences) - blocker: illegible; the right halves of 26b and of p. 3 are faded on the only photographs
+- R1103 decoded, not read (one word from the faded block; re-cropped 23 Oct 2026, nothing more accepted) - blocker: illegible; see the R1103 line below
 - R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: open-codes; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
 - R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed
 - R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished
-- R1106, internal completeness against 26a/26b - blocker: not-attempted; principal regions covered, completeness unverified
+- R1106, internal completeness against 26a/26b - blocker: illegible; 26a collated in full (R1106_reading.md), 26b's right half faded
 
 ## Escalation
 - [x] siblings: DECODE R1100-R1118 metadata and images; Vestigia 85 Sadoleto items; clear copies 7a, 13a/13b, 26a/26b found

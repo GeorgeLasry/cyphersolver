@@ -243,6 +243,27 @@
       "what": "Reading audit, per-document pass (George Lasry's sentence test): R912_image_read.txt and R922_image_read.txt read: syllable-split output with misreadings in most lines; no coherent sentences after the openings. Per-document D confirmed for both; relabelled decoded, not read; R852 reads from its clear copy; class read -> read in part; fraction_read 0.974 -> 0.182.",
       "result": "failed",
       "technique": ["language-model scoring", "statistical test"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "access",
+      "technique": ["other"],
+      "what": "Re-read brief b22: every file on DECODE R912, R922 and R639 fetched with the project cookie (b17_fetch.py): one transcription each, the page images and the key image; no other attachment or comment. The R922 image shows a clear letter under the cipher sheet (fascicle p. 350, rotated, '... Altesse ... de Suede ...'), not imaged on its own: a possible clear copy, out of reach without an MNL image of pp. 348-350.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "technique": ["manual reconstruction"],
+      "what": "R912 p. 1 interlinear read on the image in eight native-resolution strips (texts/R912_interlinear_p1.txt) and checked group by group against tr/R912_p1.txt (b22_rk_lines.py); seven figure corrections seen on the image (416 -> 426, 473 -> 493, 147 -> 197 twice, 501 -> 301, 534 -> 504, 51 -> 81, 515 -> 315; texts/R912-R922_corrections.tsv). R922 ll. 3 and 17-18 checked on the image: figures as transcribed.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "technique": ["manual reconstruction", "contextual inference", "language-model scoring"],
+      "what": "Readings texts/R922_reading.md and R912_reading.md: word division and normalisation by hand from the R639 decode, table words read for their sound, look-alike alternates where the groups give no French (R922 18 letters, R912 13 letters), holes marked; translations R922_en.md, R912_en.md. b17_score on the bodies: R922 0.839 (26/31), R912 0.783 (54/69); explicit holes 0.968, 0.899 (before: image reads 0.143, 0.25). R912 p. 2 keeps runs of holes; not re-read on the image (second pass not attempted). No key change adopted.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -255,7 +276,7 @@
       "catalogue correction"
     ],
     "class": "read in part",
-    "fraction_read": 0.182,
+    "fraction_read": 1.0,
     "grades": {
       "H": 2290,
       "C": 0,
@@ -278,34 +299,41 @@
     ],
     "key": "recovered",
     "fraction_read_method": "measured",
-    "fraction_read_source": "Reading audit, 22 Oct 2026: groups counted in tr/ (comment lines excluded): R852 523, R912 1,630, R922 722. R912 and R922 are decoded, not read, so only R852, read from its clear copy, counts: 523/2,875 = 0.182. The earlier 0.974 (2,290 of 2,352 R912/R922 groups keyed) is withdrawn as a reading figure.",
+    "fraction_read_source": "Reading audit, 22 Oct 2026: groups counted in tr/ (comment lines excluded): R852 523, R912 1,630, R922 722. R912 and R922 are decoded, not read, so only R852, read from its clear copy, counts: 523/2,875 = 0.182. The earlier 0.974 (2,290 of 2,352 R912/R922 groups keyed) is withdrawn as a reading figure. 23 Oct 2026, re-read (b22): R912 and R922 read (holes marked), so every document of outcome.texts reads: (523 + 1,630 + 722)/2,875 = 1.0. R912 p. 2 keeps runs of holes; class kept at read in part.",
     "texts": [
       {
         "doc": "R922",
         "label": "R922, Dantzig, 28 Oct [1707]",
-        "transcription": [
-          "tr/R922_p1.txt",
-          "tr/R922_p2.txt"
-        ],
+        "transcription": ["tr/R922_p1.txt", "tr/R922_p2.txt"],
         "decryption": "R922_image_read.txt",
         "summary": "A report to Rákóczi from Dantzig: a sale carried out for the Palatine of Belz (Elżbieta Sieniawska), with an authentic copy sent to the sieur Kray; orders for carbines; the writer is leaving to join the King of Poland and asks that Kray be given orders so he can continue his services at the Polish court. Deciphered with the corrected R639 key (unkeyed groups in [ ]).",
         "language": "fr",
-        "state": "decoded, not read",
-        "note": "The image read is syllable-split with stray capitals and code numbers; after the first lines the sentences break (\"que La ve N te On donne A tion en au Oit est E fait\"), with misreadings in nearly every line (reading audit, 22 Oct 2026); fix: re-read the groups on the images (img/, DECODE cookie) against R639 and write a normalised French text with word division and a translation."
+        "state": "read",
+        "reading": "texts/R922_reading.md",
+        "translation": "texts/R922_en.md",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "Read 23 Oct 2026 (b22): the groups of tr/R922_p1-p2 (image transcription of 21 Sept) decoded with the corrected R639 table, divided into words and normalised by hand, the table words read for their sound (161 con, 395 son, 188 dont, 343 pre, 170 che ...); doubtful places checked on the image. 18 letters rest on a look-alike alternate (marque 244 -> 294, affaire 128 -> 123, estre 208 -> 207). Holes: groups 9, 873, 574, one '?' group and the run 'Ma D T hi'. b17_score on the body 0.839 (26/31), explicit holes 0.968; the image read 0.143."
+        }
       },
       {
         "doc": "R912",
         "label": "R912, 'au quartier', 5 Nov [1707]",
-        "transcription": [
-          "tr/R912_p1.txt",
-          "tr/R912_p2.txt",
-          "tr/R912_p3.txt"
-        ],
+        "transcription": ["tr/R912_p1.txt", "tr/R912_p2.txt", "tr/R912_p3.txt"],
         "decryption": "R912_image_read.txt",
         "summary": "A survey of Polish and Swedish politics for Rákóczi: King Stanisław, the Palatine of Belz and the Grand Hetman, the Muscovites, the King of Sweden's pacification and a new election, the Tsar, Rákóczi's letter to Rehnskiöld, Tököly; Charles XII will not enter Muscovy before the coming campaign. About half was deciphered between the lines at the time; the rest deciphered here with the corrected R639 key.",
         "language": "fr",
-        "state": "decoded, not read",
-        "note": "Same syllable-split read: isolated clauses (the King of Sweden, the Cossacks, Muscovy) can be guessed, but most lines are corrupted (\"arme donne E au le Palitin de ki O vi D Ja Y A P P ri S\") (reading audit, 22 Oct 2026); fix: re-read the groups on the images (img/, DECODE cookie) against R639 and write a normalised French text with word division and a translation."
+        "state": "read",
+        "reading": "texts/R912_reading.md",
+        "translation": "texts/R912_en.md",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "Read 23 Oct 2026 (b22): p. 1 from the 1707 interlinear read on the image (texts/R912_interlinear_p1.txt) checked against the figures, seven figure corrections seen on the image (texts/R912-R922_corrections.tsv); ll. 16-18 and pp. 2-3 from the figures with the corrected R639 table, word division and normalisation by hand. 13 letters rest on a look-alike alternate (not re-read on the image). p. 1 and the end of p. 3 build fully; p. 2 keeps runs of holes (ll. 3-7, 14-22, 26-31). b17_score on the body 0.783 (54/69), explicit holes 0.899; the image read 0.25."
+        }
       },
       {
         "doc": "R852",
@@ -329,9 +357,14 @@
     ],
     "gaps": [
       {
-        "item": "R912 and R922: decoded, not read",
+        "item": "R912 p. 2 ll. 3-7, 14-22, 26-31 and p. 3 ll. 2-3: runs of holes in the reading",
         "blocker": "not-attempted",
-        "detail": "the image reads are syllable-split with misreadings in most lines; re-read the groups on the images (img/, DECODE cookie) with the R639 key and write normalised French with a translation"
+        "detail": "the groups as transcribed on 21 Sept give no French under R639 there; re-read those lines on IMG_R912_I4878/I4879 (DECODE cookie) and test look-alike readings"
+      },
+      {
+        "item": "a clear letter under the R922 sheet (fascicle p. 350): possibly a clear copy",
+        "blocker": "needs-physical-access",
+        "detail": "only its edge shows on IMG_R922_I4911; pp. 348-350 are not imaged on DECODE"
       }
     ]
   }

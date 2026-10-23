@@ -1,0 +1,12 @@
+# Key changes to Lasry's S364 sheet adopted 23 Oct 2026 (REREAD_BRIEF batch b22, Claude Opus 5.5), each from the
+# contemporary interlinear decipherments of 364D/1 (R154) and 364D/20 (R173) and checked at every occurrence in the
+# S364 corpus (364C + 364D, seq.json; ctx.py). status: adopted = holds at every occurrence checked; review = sense only.
+code	Lasry	new	status	evidence
+78	del	dal	adopted	R154 decipherer writes dal/dall'/dalle/dalla at all 5 places (ll. 11, 54, 67, 103, 132); in the corpus (212 places, 55 read in context) 'speditoci da N.S. fin [dal]l'anno', 'rilasciato [dal] Re', 'deputata [dal] Re', 'da lei et [dal] P. Daubenton', 'di levare [dal] concordato', 'divertire l'Imp.re [dal]la continuazione', 'assoluta [dal]le censure'; 88 stays del. A few places read either way.
+4029	quale	però	adopted	R173 l. 10 decipherer 'che però essendo'; all 37 corpus places read 'però': 'non dubito [però] che', 'il che [però] non è stato', 'partirà [però] in breve', 'conviene [però] che ella', 'non ce ne siamo [però] mai apertamente espressi', 'senza [però] le sudette sicurezze'.
+4009	ere|esse	essendo	adopted	R173 ll. 10, 15 decipherer 'essendo'; R154 l. 96 'mentre essendo questi'; all 16 corpus places: 'tanto più che [essendo] pur troppo', 'perché [essendo]si il Card. Acquaviva', 'li stessi Re Cattolici [essendo]ne ben consapevoli'.
+4160	Capitol	esercit	adopted	R173 l. 32 decipherer 'esercita ne' Regni Cattolici'; the other 2 places 'la total disfatta dell'[esercit]o Turco sotto Belgrado' (364C/9, 364C/12). 4640 keeps Lasry's Capitol.
+4545	(open)	cotest	adopted	R173 l. 3 decipherer 'di cotesta Corte' (4545 50 = cotest-a); 364D/2 'l'arbitrio di [cotest]o governo'. Both places.
+4434	(open)	Em.za	adopted	R173 l. 17 decipherer 'asseriva S. Em.za' (and its duplicate 364D/23); the other 11 places read 'S. Em.za'/'l'Em.za': 'per la promozione dell'[Em.za]', 'viglietto scritto da [S. Em.za] a Mons.', 'sa l'[Em.za] con quanta amarezza'.
+4201	(open)	Stà Sua	review	R173 l. 14 decipherer 'la Stà Sua'; 364D/5 'che prenderà la [Stà Sua]' fits; 364C/3 'occasione a [4201] di fare' fits only loosely. Not added to key_extra.txt.
+4516	16	(16)	kept	R173 l. 15 decipherer 'il d.o Sig. Card.le' where DECODE has 4516; elsewhere 4516 = 16 ('Breve de 16 Febbraio 1716'). Read as 4576 (detto), the 1/7 look-alike; the figure is not re-read here.
