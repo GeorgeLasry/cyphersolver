@@ -13,7 +13,7 @@ What changed:
 - Every document now carries one of four states: read, read in part, decoded but not read, or not prose (key sheets, worksheets,
   lone names). Of 1,003 documents, 657 are now read, 155 read in part, 179 decoded but not read and 12 not prose. Before the audit all 971 then on
   file counted as read.
-- The bar: a document is read when a reader finds the sentences coherent and its reading scores about 0.60 clean
+- The coherence test: a document builds sentences when a reader finds them coherent and its reading scores about 0.60 clean
   sentences (at most about one hole in ten words), with every guessed or supplied word counted as a hole. For
   period spelling the word lists cannot know, the hole share is the measure, plus a reader's judgement. Readings stay
   in the writer's spelling; modern spelling goes only in the English. Look-alike sign choices above about 3% of the
