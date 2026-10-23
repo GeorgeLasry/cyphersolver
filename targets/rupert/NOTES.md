@@ -1,7 +1,20 @@
 # Prince Rupert / Royalist ciphers 1645-46 — cryptiana unsolved items #5 and #6
 
-Status: read in part, written up 9 Oct 2026 (docs/rupert.html). Cryptiana #5 (Maurice) and #6 (f. 9/f. 10) not solved: no key in Add MS 72438 fits; f. 104 and R8433 not solved; f. 107 (R8728) deciphered 95.3% of words with the f. 106 alphabet. Profile: primary method 'read with known key' (f. 107), parts 'not solved' for the rest; fraction_read 122/1,412 = 8.6%.
+Status: read in part, written up 9 Oct 2026 (docs/rupert.html). Cryptiana #5 (Maurice) and #6 (f. 9/f. 10) not solved: no key in Add MS 72438 fits; f. 104 deciphered in part with Lasry's SP106-8 (22 Oct), R8433 not solved; f. 107 (R8728) deciphered 95.3% of words with the f. 106 alphabet. Profile: primary method 'read with known key' (f. 107), parts 'not solved' for the rest; fraction_read 122/1,412 = 8.6%.
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the five numeric documents (Maurice 1645, ff. 9, 10, 104, R8433) carried no state in profile.json and so counted as read by default; each is an undeciphered ciphertext and is now marked *decoded, not read*. Claim unchanged (fraction_read already counts them at 0).
+
+**22 Oct 2026, re-read (reading audit b10, Claude Opus 5.5; `f104_reread_log.md`)**: George Lasry's five reconstructed
+keys of the sibling King/Queen 1645-46 targets (TNA SP 106, SP106-2, -3, -5, -8; DECODE R785, R787, R932, R929, R924)
+applied to the five numeric documents. **f. 104 (R8725) is in Lasry's SP106-8** (the Queen's household key of January
+1646, R924): 201 of 256 groups get a value unchanged, and the endorsement "347 313 364" reads "The King to the Prince
+of Wales". It is a clerk's fair copy of a letter of Charles I to the Prince: content that the Prince is referred to
+the Queen, he lays a command on him that no persuasion or threatening whatsoever make him [come into England?] before
+his father sends for him, and "let the Queen be iudge whether I really send for you or not". Values added from Lasry's
+own R924 interlinear (3, 7, 12, 30, 50 word spaces; 116 = can, not his BROUGHT; 127 do, 207 may, 208 made, 320 upon,
+334 what, 450 command, 513 express) and from the letter (`f104_key_additions.tsv`, `f104_decode.py`). Reading
+`f104_reading.md`, English `f104_en.md`: body 0.267 (4/15 sentences), so **decoded, not read**; 21 nomenclator groups
+have no key material. No printed text found. Maurice 1645, f. 9, f. 10 and Trevor 1645: gibberish under all five
+keys, unchanged. fraction_read unchanged (0.086).
 
 
 ## #5 Maurice -> Rupert, Worcester, 7 July 1645 (Warburton, *Memoirs of Prince Rupert*, iii. 133)
@@ -157,22 +170,22 @@ f. 9/f. 10 texts against every key in ff. 25-109.
   correspondents, before Oct 1645 (not provable from the text).
 
 ## Remaining gaps
-- f. 9 (R8623), whole cipher text: - blocker: no-key-material; none of the 73 Add MS 72438 keys fits, and 108 letter
+- f. 9 (R8623), whole cipher text: - blocker: no-key-material; none of the 73 Add MS 72438 keys nor Lasry's five SP 106 keys fits, and 108 letter
   groups are too few for a ciphertext-only rebuild.
-- f. 10 (R8624), whole cipher text: - blocker: no-key-material; no Add MS 72438 key fits; 300 letter groups over
+- f. 10 (R8624), whole cipher text: - blocker: no-key-material; no Add MS 72438 key and none of Lasry's five SP 106 keys fits; 300 letter groups over
   ~99 homophones, short runs.
-- Maurice 7 July 1645: - blocker: no-key-material; key not in Add MS 72438 or on DECODE; 93 groups.
-- f. 104r (R8725), whole letter: - blocker: no-key-material; no Add MS 72438 key tested fits; 253 groups + 3 in the endorsement (256 measured).
+- Maurice 7 July 1645: - blocker: no-key-material; key not in Add MS 72438 or on DECODE (Lasry's five SP 106 keys tried 22 Oct); 93 groups.
+- f. 104r (R8725), opening line and 21 nomenclator groups (466, 543, 534, 668, 643, 502, 769 ...): - blocker: no-key-material; the letter is in Lasry's SP106-8 (22 Oct 2026), but these groups are absent from R924, his only letter in that key, or unidentified there; deciphered in part, 4 of 15 sentences hold.
 - R8433 Trevor 1645, 54 letter groups: - blocker: too-short; no stable key from cribs/annealing, no print found.
 - f. 107 (R8728), 6 words (header "=≡↑ŧ̥", "≡≡=" after kild, ":≡0" before my heart, the blotted word, "=7L" before for you, the end of "rese.."): - blocker: illegible; blot and writer slips, the gloss skips them, no second copy.
 
 ## Escalation
 - [x] siblings: all 115 DECODE records of Add MS 72438 / 18982 / 18983 listed; all 73 keys of Add MS 72438 screened by range; 6 letter tables applied; f. 106 (R8727) next to f. 107 proved to be its key; R8433 (Trevor, 18982 ff. 51-52) transcribed.
 - [x] clear-pages: none with the intercepts f. 9/f. 10 or f. 104; f. 25r index read (keys 80-139 with correspondents); f. 107's interlinear gloss used as crib.
-- [x] known-keys: keys 118, 123, 125, the Digby-Walsingham key, R8744/R8745, the Parliament key R8741, Tomokiyo's 1644-45 royalist keys (Ormond-Rupert, Nicholas-Rupert May/July 1645): no fit on f. 9, f. 10, f. 104, R8433 or Maurice; f. 106 lower alphabet reads f. 107.
-- [x] print: Warburton iii (Maurice; no Trevor letter of the week), cryptiana, web search; no decipherment in print for f. 9/f. 10/f. 104/R8433.
+- [x] known-keys: 22 Oct 2026: Lasry's SP 106, SP106-2, -3, -5, -8 keys (sibling targets hm1645, sp106r787, goring1645, rupert1645/sp106r929, sp106r924) on all five numeric texts: SP106-8 deciphers f. 104 in part (Charles I to the Prince of Wales), the rest gibberish. Earlier: keys 118, 123, 125, the Digby-Walsingham key, R8744/R8745, the Parliament key R8741, Tomokiyo's 1644-45 royalist keys (Ormond-Rupert, Nicholas-Rupert May/July 1645): no fit on f. 9, f. 10, f. 104, R8433 or Maurice; f. 106 lower alphabet reads f. 107.
+- [x] print: Warburton iii (Maurice; no Trevor letter of the week), cryptiana, web search; 22 Oct: Clarendon State Papers ii and Bruce, Charles I in 1646 grepped for the f. 104 letter (Petrie 1935 lending-only); no decipherment in print for f. 9/f. 10/f. 104/R8433.
 - [x] key-rebuild: homophonic annealing on R8433 with and without cribs (chester/bristol) does not converge (54 letter groups over 36 values); f. 9 (108 letter groups) and f. 10 (300) too short for ciphertext-only over ~80-99 homophones; f. 107 homophones added to the f. 106 alphabet.
-- [x] retry: f. 107 re-read with the extended alphabet (95.3%); remaining six words are blots or conjectures. The others need a 1646 royalist key that is not in the volume.
+- [x] retry: f. 104 transcription checked on the full image (no change), key gaps filled from Lasry's R924 interlinear and contexts (f104_key_additions.tsv), reading aligned word by word (0.267, kept as partial). f. 107 re-read with the extended alphabet (95.3%); remaining six words are blots or conjectures. The others need a 1646 royalist key that is not in the volume.
 
 ## DECODE queue
 - R8627 (f. 25r): it is the index "Cyphers taken in the L. Digbys [coach]", keys numbered 80-139 with
@@ -185,6 +198,7 @@ f. 9/f. 10 texts against every key in ff. 25-109.
 - R8728 (f. 107): add the reading (f107_reading.txt) and key = R8727 (f. 106) lower alphabet; writer a woman, recipient a royalist officer.
 - R8727 (f. 106): note that the lower alphabet is the key of R8728.
 - R8725 (f. 104): status should be Non-decrypted (no decipherment on the sheet); add f104_transcription.txt.
+- R8725 (f. 104), 22 Oct 2026: Charles I to the Prince of Wales (endorsement 347 313 364); cipher = Lasry's SP106-8 (R924); link to R924; add f104_reading.md as a partial decipherment; note 116 = can (not BROUGHT) in the SP106-8 key file.
 - R8623 / R8624: add transcriptions (f9_transcription.txt, f10_transcription.txt); R8624 endorsed "Quadrupl.";
   R8623 f. 9v blank.
 

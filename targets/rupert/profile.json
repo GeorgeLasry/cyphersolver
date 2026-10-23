@@ -134,7 +134,7 @@
     "location": [
      "none"
     ],
-    "source": "No decipherment on the sheet."
+    "source": "No decipherment on the sheet. Deciphered in part (22 Oct 2026) with George Lasry's key TNA SP106-8 (DECODE R924, 2020); no reading of this letter found on DECODE or in print."
    },
    "length": {
     "tokens": 256,
@@ -235,14 +235,14 @@
    "batchsheet.py, crop.py, sheet.py (image previews)",
    "test_letters.py (apply a letter table)",
    "keys.py",
-   "trevor_anneal.py (homophonic annealing with cribs, lang en-1640s)"
+   "trevor_anneal.py (homophonic annealing with cribs, lang en-1640s)", "f104_decode.py (Lasry's SP106-8 key + f104_key_additions.tsv)"
   ],
   "models": [
    "Claude Opus 5.5"
   ],
   "sessions": 2,
   "first_date": "2026-09-15",
-  "last_date": "2026-10-09"
+  "last_date": "2026-10-22"
  },
  "solution": [
   {
@@ -365,11 +365,37 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): the five numeric documents carry no state and so counted as read by default; each is an undeciphered ciphertext and is now marked decoded, not read. Claim unchanged (fraction_read already counts them at 0).",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "sibling key",
+   "what": "Reading audit b10: George Lasry's reconstructed keys of the sibling King/Queen 1645-46 targets (TNA SP 106, SP106-2, SP106-3, SP106-5 that read rupert1645, SP106-8), fetched from DECODE R785, R787, R929, R924 and goring1645, applied to all five numeric documents. f. 104 reads as English with SP106-8 (201 of 256 groups get a value; endorsement 347 313 364 = The King to the Prince of Wales); Maurice 1645, f. 9, f. 10 and Trevor 1645 give gibberish under all five.",
+   "result": "partial",
+   "technique": [
+    "key matching"
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "literature search",
+   "what": "Printed text of the f. 104 letter looked for: Clarendon State Papers ii (1773) and Bruce, Charles I in 1646 (1856) grepped on archive.org, two web searches; Petrie 1935 lending-only. Nothing found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "f. 104 transcription checked on the full-resolution image (no label changed); key gaps filled from Lasry's own interlinear of R924 (3, 7, 12, 30, 50 word spaces; 116 = can, not BROUGHT; 127 do, 207 may, 208 made, 320 upon, 334 what, 450 command, 513 express) and from the letter's contexts (f104_key_additions.tsv, f104_decode.py); reading built and aligned word by word (f104_reading.md, f104_en.md, f104_reread_log.md). Body scores 0.267 (4/15 sentences); 21 nomenclator groups have no key material, so it stays decoded, not read.",
+   "result": "partial",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis",
+    "language-model scoring"
+   ]
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "The only text obtained is f. 107 (R8728), deciphered 95.3% of words with the lower alphabet of the key sheet filed beside it (f. 106, R8727); the cryptiana items themselves (Maurice 1645, f. 9, f. 10) and f. 104 and R8433 are not solved, so the primary method describes a by-product of the search, not the targets as posed.",
+  "method_basis": "The only text obtained is f. 107 (R8728), deciphered 95.3% of words with the lower alphabet of the key sheet filed beside it (f. 106, R8727); the cryptiana items themselves (Maurice 1645, f. 9, f. 10) and R8433 are not solved, so the primary method describes a by-product of the search, not the targets as posed. f. 104 (R8725), Charles I to the Prince of Wales, was matched on 22 Oct 2026 to George Lasry's key TNA SP106-8 and deciphered in part (decoded, not read: 4 of 15 sentences hold).",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
@@ -403,11 +429,18 @@
     "records": "R8623, R8624"
    },
    {
-    "label": "Add MS 72438 f. 104 numeric letter and Add MS 18982 ff. 51-52 (Trevor to Rupert, [28] April 1645)",
+    "label": "Add MS 72438 f. 104, Charles I to the Prince of Wales [1646?]",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "matched 22 Oct 2026 to George Lasry's reconstructed key TNA SP106-8 (DECODE R924); 201 of 256 groups get a value from it unchanged; with 35 values added from R924's interlinear and the letter's contexts, 4 of 15 sentences hold (0.27); 21 nomenclator groups have no key material",
+    "records": "R8725 (key: Lasry's SP106-8 on R924)"
+   },
+   {
+    "label": "Add MS 18982 ff. 51-52 (Trevor to Rupert, [28] April 1645)",
     "method": "not solved",
     "extent": "none",
-    "basis": "256 + 62 groups transcribed; no key fits; Trevor's 54 letter groups too few to rebuild",
-    "records": "R8725, R8433"
+    "basis": "62 groups transcribed; no key fits (Lasry's five SP 106 keys added to the screen 22 Oct 2026); 54 letter groups too few to rebuild",
+    "records": "R8433"
    }
   ],
   "fraction_read_method": "measured",
@@ -415,22 +448,22 @@
    {
     "item": "Add MS 72438 f. 9 (R8623)",
     "blocker": "no-key-material",
-    "detail": "none of the 73 keys in the volume fits; 108 letter groups too few to rebuild"
+    "detail": "none of the 73 keys in the volume nor Lasry's five SP 106 keys (SP 106, -2, -3, -5, -8; 22 Oct 2026) fits; 108 letter groups too few to rebuild"
    },
    {
     "item": "Add MS 72438 f. 10 (R8624)",
     "blocker": "no-key-material",
-    "detail": "no key in the volume fits; 300 letter groups over ~99 homophones"
+    "detail": "no key in the volume nor Lasry's five SP 106 keys fits (22 Oct 2026); 300 letter groups over ~99 homophones"
    },
    {
     "item": "Maurice to Rupert, 7 July 1645",
     "blocker": "no-key-material",
-    "detail": "key not in Add MS 72438 or on DECODE; 93 groups"
+    "detail": "key not in Add MS 72438 or on DECODE (Lasry's five SP 106 keys tried 22 Oct 2026); 93 groups"
    },
    {
-    "item": "Add MS 72438 f. 104 (R8725)",
+    "item": "Add MS 72438 f. 104 (R8725), 21 nomenclator groups and the opening line",
     "blocker": "no-key-material",
-    "detail": "no key tested fits; 256 groups"
+    "detail": "letter in Lasry's SP106-8 (R924); the groups 227, 312, 131, 124, 466, 543, 534, 668, 38, 330, 308, 307, 188, 643, 502, 161, 769, 96, 132, 56 and the first 192 are absent from R924 or unidentified there, and no other SP106-8 letter is known; 4 of 15 sentences hold"
    },
    {
     "item": "Add MS 18982 ff. 51-52 Trevor (R8433), cipher runs",
@@ -445,14 +478,15 @@
   ],
   "key": "partial",
   "fraction_read": 0.0864,
-  "fraction_read_source": "All six documents, cipher tokens, clear words excluded: maurice1645_groups.txt 93 groups, f9_groups.txt 152, f10_groups.txt 721, f104_groups.txt 256 (with the endorsement), trevor1645_transcription.txt 62 (--digits), f107_reading.txt 128 cipher words (129 with --drop-first, less the editorial '[one]'); total 1,412. Read: 122 words of f. 107 ([..?] conjectures counted unread); the numeric documents 0. 122/1412 = 0.086. f. 107 is counted in words, not signs, because no full sign-level transcription exists; counted in letters it would weigh about four times more, so the figure is a lower bound of the share of cipher material read, and the cryptiana items themselves stand at 0.",
+  "fraction_read_source": "All six documents, cipher tokens, clear words excluded: maurice1645_groups.txt 93 groups, f9_groups.txt 152, f10_groups.txt 721, f104_groups.txt 256 (with the endorsement), trevor1645_transcription.txt 62 (--digits), f107_reading.txt 128 cipher words (129 with --drop-first, less the editorial '[one]'); total 1,412. Read: 122 words of f. 107 ([..?] conjectures counted unread); the numeric documents 0. 122/1412 = 0.086. f. 107 is counted in words, not signs, because no full sign-level transcription exists; counted in letters it would weigh about four times more, so the figure is a lower bound of the share of cipher material read, and the cryptiana items themselves stand at 0. 22 Oct 2026 (reading audit b10): f. 104 is deciphered in part with Lasry's SP106-8 but does not read (0.267 of sentences clean), so it stays at 0; no document changed state, fraction_read unchanged at 122/1412.",
   "codes_open": {
    "open": 0,
    "total": 0,
    "tokens_open": 0
   },
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "lower alphabet of the royalist key sheet f. 106 (DECODE R8727), and the partial interlinear gloss on f. 107 used as crib"}
+    {"who": "contemporary", "role": "key or decipherment used", "note": "lower alphabet of the royalist key sheet f. 106 (DECODE R8727), and the partial interlinear gloss on f. 107 used as crib"},
+    {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed key TNA SP106-8 and his interlinear decipherment of R924 (DECODE, 2020), which decipher f. 104 in part"}
   ],
   "texts": [
    {
@@ -465,48 +499,50 @@
    },
    {
     "doc": "maurice1645",
+    "note": "Not deciphered: the file is the ciphertext (numeric groups from Warburton iii. 133). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five reconstructed SP 106 keys of the King/Queen 1645-46 siblings (SP 106, SP106-2, -3, -5, -8) give gibberish. Blocker: no-key-material (Rupert's cipher to his brother is not known).",
     "label": "Maurice to Rupert, Worcester, 7 July 1645 (Warburton iii. 133)",
     "transcription": "maurice1645_groups.txt",
     "summary": "Prince Maurice explains why he cannot bring his regiments to Rupert at Bristol, with the Scots army four miles from Worcester ('By your cipher, you may observe ...'). Not deciphered: no key in Add MS 72438 or in print fits the 93 groups.",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Not deciphered: the file is the ciphertext (numeric groups from Warburton iii. 133); no key of Add MS 72438 fits, so the entry is listed as a ciphertext, not a reading (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    },
    {
     "doc": "addms72438-f9",
+    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish; 108 letter groups are too few for a rebuild. Blocker: no-key-material.",
     "label": "BL Add MS 72438 f. 9r (DECODE R8623), 21 May 1646",
     "transcription": "f9_transcription.txt",
     "summary": "Intercepted royalist letter to 'My Lord', largely in a numerical cipher; not deciphered (no key of the volume fits).",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words); no key of Add MS 72438 fits, so the entry is listed as a ciphertext, not a reading (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    },
    {
     "doc": "addms72438-f10",
+    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words). No key fits: the 73 keys of Add MS 72438 (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish. Blocker: no-key-material (a May 1646 key not captured with the Digby coach keys).",
     "label": "BL Add MS 72438 f. 10r-v (DECODE R8624), 13 May 1646",
     "transcription": "f10_transcription.txt",
     "summary": "Intercepted letter to King Charles I, endorsed 'Quadrupl.' (fourth copy), in a numerical cipher; not deciphered.",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Not deciphered: the file is the ciphertext (number groups with a few clear words); no key of Add MS 72438 fits, so the entry is listed as a ciphertext, not a reading (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    },
    {
     "doc": "r8433-trevor1645",
+    "note": "Not deciphered: the file is the ciphertext (clear English with undeciphered number groups). No key fits: the box keys and Tomokiyo's royalist keys (9 Oct) and, on 22 Oct 2026 (reading audit b10), George Lasry's five SP 106 keys (SP 106, SP106-2, -3, -5, -8) give gibberish; annealing with cribs on 54 letter groups does not converge. Blocker: too-short.",
     "label": "BL Add MS 18982 ff. 51-52 (DECODE R8433), [28] Apr 1645",
     "transcription": "trevor1645_transcription.txt",
     "summary": "Arthur Trevor to Prince Rupert from Bristol, mostly clear (Sir Vivian Molineux, Sir Bryan O'Neile, the Prince of Wales's journey westward) with short numerical cipher passages; not deciphered.",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Not deciphered: the file is the ciphertext (clear English with undeciphered number groups); no key of Add MS 72438 fits, so the entry is listed as a ciphertext, not a reading (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    },
    {
     "doc": "addms72438-f104",
+    "note": "Deciphered in part, not read (reading audit b10, 22 Oct 2026): the letter is in George Lasry's key TNA SP106-8 (DECODE R924); with his key unchanged plus 35 values from his R924 interlinear and the letter's own contexts (f104_key_additions.tsv) the body scores 0.267 (4 of 15 sentences clean). The command to the Prince and the 'let the Queen be judge whether I really send for you' clause hold; the opening line and 21 nomenclator groups (466, 543, 534, 668, 643, 502, 769 ...) are absent from R924 or unidentified there: no key material. Partial reading kept in f104_reading.md.",
     "label": "BL Add MS 72438 f. 104r (DECODE R8725)",
     "transcription": "f104_transcription.txt",
-    "summary": "An all-numeric cipher sheet, marked 'Decrypted' on DECODE though no decipherment is on it; not deciphered.",
+    "decryption": "f104_reading.md",
+    "translation": "f104_en.md",
+    "summary": "Charles I to the Prince of Wales (the endorsement '347 313 364' decodes as 'The King to the Prince of Wales'), a clerk's all-numeric fair copy, undated [1646?]: the King is content that the Prince has been referred to the Queen, and lays a command on him that no persuasion or threatening whatsoever make him [come into England?] before his father sends for him; a summons he has not really sent is to be judged by the Queen. Deciphered in part with George Lasry's key 'TNA SP106-8' (DECODE R924) and 35 values from R924's interlinear and this letter's contexts.",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Not deciphered: the file is the ciphertext (an all-numeric sheet); no key of Add MS 72438 fits, so the entry is listed as a ciphertext, not a reading (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    }
   ]
  }
