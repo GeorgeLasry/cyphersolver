@@ -2,6 +2,16 @@
 
 Status: in progress
 
+23 Oct 2026, re-reading (REREAD_BRIEF b33): **key recovered from the interlinear glosses; both letters and the
+postscript built into sentences and translated: read (grade B).** DECODE R4330/R4331 re-fetched (photographs only, no
+transcription or comment; no printed edition found). Clear German re-read on 2x crops of the photographs, 23 figure
+labels corrected (`bremen1631_corrections.tsv`, key unchanged), every cipher word aligned with its decode
+(`bremen1631_aligned.txt`, `research/reading_audit/b33_br_build.py`: 118 of 132 exact, 10 clerk's slips read from the
+gloss, 4 holes), name numbers 4, 5, 7, 17, 27, 32, 59, 83 substituted from the glosses. Reading `bremen1631_reading.md`,
+English `bremen1631_en.md`, log `bremen1631_reread_log.md`. b17 (de): 0.600 plain, 0.843 explicit holes only (before:
+no reading body, 0.477 on the decode); look-alike letters 0.9%. Class back to read, method key recovered based on
+adjacent plaintext, fraction_read 1.0.
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **key recovered, letters
 decoded, not read.** Every figure group of R4330 and R4331 has a value, but `bremen_decoded.txt` leaves the groups as
 unsegmented strings with slips (`<ouolfk>`, `<itslatdgefodert>`, `<euserstege>`) inside a clear German transcribed with
@@ -48,7 +58,7 @@ R4306 deciphered in part by Lasry, sweden4306):
 `solve_num.py` and `qg.py` (the numeric annealer used on R4284 and R4306) stay here as shared tooling for those two
 entries (riksarkivet4284, and the project attempt recorded in sweden4306); `mk_validation.py` writes the Bremen `validation.tsv`.
 
-## Bremen 1631 (R4330, R4331): key recovered, decoded, not read
+## Bremen 1631 (R4330, R4331): key recovered, read 23 Oct 2026
 Transcribed with the interlinear glosses (`bremen_transcription.txt`). Aligning glossed words to their numbers gave a
 band key: each letter has four consecutive numbers, the bands in a scrambled order:
 
@@ -70,18 +80,21 @@ ravage the Lüneburg country and asks that the Stift be included in the accord i
 
 ## Remaining gaps
 
-- R4330 and R4331 decoded, not read (reading audit 22 Oct 2026): the decryption is not built into sentences - blocker: not-attempted; segment the decoded groups, correct the slips against the glosses and the images, substitute the name numbers, translate
+- R4330 and R4331 not built into sentences (reading audit 22 Oct 2026): closed 23 Oct 2026, read (bremen1631_reading.md)
+- R4330 one cipher word after *westpfelische* (23 34 81 22 73 80 21, decodes *tortert*) and the clear words of its sentence - blocker: illegible
+- name numbers 18, 19, 31, 82, 86 (and 42 in R4330) - blocker: no-key-material
+- about 30 clear words marked [?word] - blocker: illegible
 
-Key: every group has a value; the residue is transcription slips from the phone photographs (`occupireh`,
-`feldlsihen`), and the statistical validation (11 Oct 2026, `validation.tsv`) passes.
+Key: every group has a value; the 23 Oct re-reading corrected 23 figure labels on the photographs and changed no key
+value. The statistical validation (11 Oct 2026, `validation.tsv`) passes.
 
 ## Escalation
 - [x] siblings: all 14 records of catalogue 207 opened and sorted; the others are separate entries (above)
 - [x] clear-pages: the interlinear glosses are the decipherment of the time, used to rebuild the key
 - [n/a] known-keys: key rebuilt from the glosses; no outside key needed
-- [n/a] print: the letters read in full from the key; no edition needed for the reading
+- [x] print: web search 23 Oct 2026 (Johann Friedrich, Salvius, 1631, Reinach, Gronsfeld, Neuenburg): no edition found
 - [x] key-rebuild: band key from glosses, completed from unglossed words and the six-column grid
-- [x] retry: every group of both letters decoded (bremen_decoded.txt)
+- [x] retry: every group of both letters decoded (bremen_decoded.txt); 23 Oct 2026 re-read on the photographs, figures corrected, letters built into sentences and translated
 
 ## Assumptions for George's review
 - R4282 belongs to George Lasry's entry `decode4282`; its outcome (key recovered from ciphertext-only, read) is left as

@@ -1,6 +1,21 @@
 # Ferenc Rákóczi II to an envoy bound for Holland, Lwów, 27 June 1711 (DECODE R483)
 
-Status: in progress. R483 decoded from the clerk's decipherment, not yet read as a running text (reading audit, 22 Oct 2026).
+Status: read (23 Oct 2026, re-reading): R483 written out in reading order from the clerk's interlinear decipherment and the clear passages, checked with the rebuilt key (`R483_reading.md`, grade B).
+
+**23 Oct 2026, re-reading** (REREAD_BRIEF batch b33; log `R483_reread_log.md`): the letter is written out as one
+running Latin text (`R483_reading.md`, English `R483_en.md`): the clerk's interlinear stretches and the clear passages
+interleaved as they stand in each line (`research/reading_audit/b33_rk_merge.py`), every clear word and every doubtful
+interlinear word re-read on the six DECODE images (strips and zooms, `b33_rk_crop.py`), and the clerk's doubts settled
+group by group with the rebuilt key (`b33_rk_dec.py`); 72 changes in `R483_corrections.tsv` (*ab inimicitiis* for *ab
+Armistitiis*, *inimicitias suas* for *amicitiis fidis*, *tranquillos reddat animos* for his letter-by-letter
+*Transi- l w s re d da*, *Tabellarius denegato responso*, *copialiter annexus*, *domino Jablonski* for *Fablanski*,
+*cellario regio*; *juramento suo*, which the clerk skipped, restored from the figures). Clean-sentence share: before
+0.311 plain (`R483_clerk.txt`), after **0.889 (88/99) counting explicit holes**, 0.141 plain (the Latin word list
+rejects *ob*, *sincere*, *acceptare* and chancery words). No supplied word; look-alike letters 0. It reads: decoded,
+not read -> read (grade B); class not read -> read; method read from existing decipherment; fraction_read 0 -> 1.0.
+Print: not in Thaly's *Archivum Rákóczianum* I/3 (letter-books 1710-1712, MEK 18829, searched in full text); its no. 44
+to Klement on the fiscal wines Hegyi was to deliver to the King of Prussia's man is the affair of p. 6, so the
+addressee is probably Mihály Klement.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R483_clerk.txt merges the clerk's interlinear decipherment with the clear passages line by line, out of reading order, with "?" doubts or alternatives on most lines; the themes can be followed but many sentences are only half secure: R483 is *decoded, not read*. Class read -> not read, method read from existing decipherment -> not solved until the text is written out; fraction_read 0.997 -> 0.
 
@@ -65,12 +80,16 @@ took treasury money for his own use.
 ## Outcome
 
 Read from the existing (contemporary interlinear) decipherment, which covers 99.7% of the cipher groups; the key was
-rebuilt from it and checks it. Open: an edited Latin text line by line (the material is here: clerk plus key
-reading), and the clerk's doubtful words where the key does not settle them. The key's single-occurrence codes
-(68 of 224) are grade C. The recipient is unnamed.
+rebuilt from it and checks it. Since 23 Oct 2026 the letter is written out as a running Latin text with an English
+translation (`R483_reading.md`, `R483_en.md`, grade B). Open: five words of the p. 1 clear opening and about a dozen
+doubtful words on single-occurrence key groups. The key's single-occurrence codes (68 of 224) are grade C. The
+recipient is unnamed in the letter; probably Mihály Klement (see the 23 Oct block).
 
 ## Files
 
+- `R483_reading.md`, `R483_en.md` (23 Oct 2026): the reading in reading order and its translation;
+  `R483_reread_log.md`, `R483_corrections.tsv` (changes to the clerk's and the clear-text transcription). Helpers in
+  `research/reading_audit/b33_rk_merge.py`, `b33_rk_dec.py`, `b33_rk_crop.py`.
 - `tr/R483_p1.txt`–`p6.txt`: transcription from the images, interlinear on `P:` lines.
 - `align483.py`: hard-EM aligner, writes `R483_key_rebuilt.json`. `check483.py`: decodes with the key and compares
   with the clerk, writes `R483_key_read.txt`.
@@ -81,13 +100,15 @@ reading), and the clerk's doubtful words where the key does not settle them. The
 
 ## Remaining gaps
 
-- R483 as a running text: decoded, not read - blocker: not-attempted; write the clerk's decipherment and the clear passages out in reading order from the images (DECODE cookie), settle the doubtful words with the rebuilt key, translate
+- R483 as a running text: closed 23 Oct 2026 (`R483_reading.md`, read, grade B)
+- R483 p. 1 clear opening, five words (*Supponimus redditas jam [...] ... abunde [...] [...]nistris*) - blocker: illegible; fast cursive not settled on the DECODE images at 2x, a higher-resolution MNL OL scan is the way on
+- R483, about a dozen doubtful words where the clerk's hand and the key decode disagree (*[?concludendam]*, *[?remediationis]*, *[?possidere]*, *[?commisso]*, *domino Jablonski [...]*) - blocker: no-key-material; the groups are seen once or not at all in the rebuilt key
 
 ## Escalation
 
 - [n/a] siblings: no other letter in this key
-- [x] clear-pages: the clerk's interlinear decipherment over every ciphered stretch
+- [x] clear-pages: the clerk's interlinear decipherment over every ciphered stretch; written out in reading order 23 Oct 2026
 - [n/a] known-keys: the key is not preserved
-- [ ] print: no search for a printed text is recorded in these notes
-- [x] key-rebuild: 224 codes rebuilt from the interlinear
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] print: searched 23 Oct 2026: web search for the letter's phrases; Thaly, Archivum Rákóczianum I/3 (letter-books 1710-1712, MEK 18829) full text searched for Mangold, Spiegel, Jablonski, Dukla, Pax Caroliana and every June-July 1711 dateline: not printed there (related order to Klement, no. 44)
+- [x] key-rebuild: 224 codes rebuilt from the interlinear; used 23 Oct 2026 to settle the clerk's doubtful words
+- [x] retry: re-read on the images 23 Oct 2026 (`R483_reread_log.md`)

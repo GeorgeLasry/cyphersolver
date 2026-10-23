@@ -20,7 +20,7 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 - 29 30 31 32 33 = a e i o u and 34 35 36 37 38 = a e i o u — two extra homophone sets for the vowels
   (33 = u confirmed by Avenel's "ne piquer" = 22 37 13 21 28 33 30 16).
 - **Tilde/diacritic = doubled letter**: ~14 = ll, ~22 = nn, ~25 = ss, ~30 = ee (d'e**ll**e, bo**nn**e, do**nn**er, Bra**ss**ac, amba**ss**ade, maitre**ss**e, men**ee**).
-- 39 = a ("amenée"); 40 = "de", 42 = "la" (word codes).
+- 39 = "et" (23 Oct 2026, from Avenel's footnotes: *frontière et menée*, *Chevreuse et autres*, its only two occurrences; the 22 Oct key had 39 = a, from Tomokiyo's partial transcription read as *amenée*); 40 = "de", 42 = "la" (word codes).
 - ≥41 = nomenclature. Identified (this work + Avenel's footnotes across vol. III):
 
 | Code | Meaning | Code | Meaning |

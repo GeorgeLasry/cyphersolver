@@ -10,7 +10,7 @@ KEY = {
     '19': 'a', '20': 'd', '21': 'i', '22': 'n', '23': 'h', '24': 'm', '25': 's', '26': 'u', '27': 'e', '28': 'q',
     '29': 'a', '30': 'e', '31': 'i', '32': 'o', '33': 'u',
     '34': 'a', '35': 'e', '36': 'i', '37': 'o', '38': 'u',
-    '39': 'a',
+    '39': 'et',  # Avenel: frontière et menée, Chevreuse et autres (b33, 23 Oct 2026; was 'a')
     '40': 'de', '42': 'la',   # frequent-word codes
 }
 # Nomenclature (confirmed against Avenel, Lettres de Richelieu III, 1858)

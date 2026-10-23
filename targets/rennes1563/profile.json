@@ -406,6 +406,25 @@
    "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the aligned readings read through. f. 55, pp. 357-358 and Colbert 392 p. 231 build French sentences with scattered holes (reviewed B; f. 55 against the audit, which had read the annotated working file); Colbert 390 p. 139 reads in its first seven lines only and is relabelled decoded, not read. fraction_read 0.79 -> 0.658 (sense tokens in the letters that read).",
    "result": "partial",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Re-reading (batch b33), p. 139: all 184 views of 500 Colbert 390 contact-sheeted through openapi.bnf.fr IIIF (research/reading_audit/b33_rn_sheet.py) for a clear copy or decipherment of the 'Deschiffrez vous mesmes' note: none.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Found an unused key source in the same volume: Catherine's 15 Dec 1562 letter (pp. 115-127), cipher on p. 118 lower, pp. 119-121, 125, 127, printed in full by La Ferriere I 449-451 from the decipherment joined to it (p. 118 top already written out in clear). Not aligned in this session.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["language-model scoring"],
+   "what": "p. 139 partial reading written out from aligned/p139.txt (c390_p139_reading.md): 0.25 clean sentences (b17 fr, plain and explicit holes only); stays decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -435,8 +454,8 @@
    },
    {
     "item": "500 Colbert 390 p. 139, 30% of tokens (14% unread, 16% probable): l.2 ā, l.4 run after 'qui est', l.5 'io ƀ η', l.8 head and end, l.12 ẟao + 'aʓ' run, l.13-14 ẟao and the 'rinci' run; code words ẟ, ẟao",
-    "blocker": "illegible",
-    "detail": "ẟ+superscript are code words (p.117 gloss); ẟao, aʓ, ℛ, ā unglossed anywhere found; faint ink"
+    "blocker": "not-attempted",
+    "detail": "Re-reading 23 Oct 2026: the whole volume contact-sheeted, no clear copy or decipherment of the note. Unused key source: Catherine's 15 Dec 1562 letter in the same hand (Colbert 390 pp. 118-127; cipher on p. 118 lower, pp. 119-121, 125, 127) has its ciphered paragraphs printed by La Ferriere I 449-451 from the decipherment joined to it; align it to look for ẟao, aʓ, ā, ℛ, ℞ and the ẟ code words. What it does not supply stays no-key-material; faint ink on ll. 8-14 (c390_p139_reread_log.md)."
    }
   ],
   "fraction_read": 0.658,
@@ -500,10 +519,11 @@
     "transcription": "c390_p139_v4.txt",
     "decryption": [
      "aligned/p139.txt",
-     "c390_p139_v3_reading.md"
+     "c390_p139_v3_reading.md",
+     "c390_p139_reading.md"
     ],
     "summary": "A secret note from Catherine: decipher it yourself, trust no clerk, burn it; she holds Rennes a loyal servant of the King her son and asks him to keep his eyes open to observe 'mon cousin' and his actions. The least-read of the four (about 70% strict sense).",
-    "note": "aligned/p139.txt: ll. 1-7 build French sentences, but ll. 8-14 are mostly unread runs ({8} ce de mon cousin {1} que les {6} ...) and code words; the letter as a whole does not read (reading audit, 22 Oct 2026).",
+    "note": "Decoded, not read: the partial reading (c390_p139_reading.md, from aligned/p139.txt) scores 0.25 clean sentences (b17 fr, both plain and explicit holes only); ll. 8-14 are mostly unread runs. Re-reading 23 Oct 2026: the whole of Colbert 390 contact-sheeted (184 views), no clear copy or decipherment of the note; the 15 Dec 1562 letter's cipher (pp. 118-127), whose paragraphs La Ferriere I 449-451 prints from the decipherment joined to it, is an unused key source - blocker: not-attempted (c390_p139_reread_log.md).",
     "state": "decoded, not read",
     "language": "fr"
    },

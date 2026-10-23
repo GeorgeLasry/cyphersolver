@@ -1,6 +1,6 @@
 # Richelieu to M. de Rancé, July 1629 (BnF fr. 3829 ff. 87, 89): decryption of the cryptiana transcription
 
-Output of `python final.py` in this folder (the recovered key applied to `richelieu1629.txt`), saved 22 Oct 2026. Cipher letters run together as in the source; clear words are spaced; {..} = nomenclator codes; [n] = unvalued group. The partial clear text is Tomokiyo's transcription as given.
+Output of `python final.py` in this folder (the recovered key applied to `richelieu1629.txt`), saved 22 Oct 2026; regenerated 23 Oct 2026 with figure 39 = et (Avenel; was a). Cipher letters run together as in the source; clear words are spaced; {..} = nomenclator codes; [n] = unvalued group. The partial clear text is Tomokiyo's transcription as given.
 
 ```
 --- Richelieu1629(BnFfr3829f87).png
@@ -8,11 +8,11 @@ Output of `python final.py` in this folder (the recovered key applied to `richel
 delechaser comme  il  lestimera a propos  Si laffaire 
  est certaine  il  retiroit? pis
  voudroit  bien que la{Mme de Chevreuse} peust  estre atrapepres
-dela{47(=17 f)}rontiereameneeuboisdeuin
+dela{47(=17 f)}rontiereetmeneeuboisdeuin
 cienes auquel  il faudroit que personne dehors
 nelauist
 lescabalesde{la Lorraine} avec {l'Espagne} pour le moyen  de la{Mme de Chevreuse}
-a
+et
  aura surpris cesespritdmalins
  Mr uastier
  de long temps {card. de La Valette}

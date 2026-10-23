@@ -29,7 +29,7 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 - 29 30 31 32 33 = a e i o u and 34 35 36 37 38 = a e i o u — two extra homophone sets for the vowels
   (33 = u confirmed by Avenel's "ne piquer" = 22 37 13 21 28 33 30 16).
 - **Tilde/diacritic = doubled letter**: ~14 = ll, ~22 = nn, ~25 = ss, ~30 = ee (d'e**ll**e, bo**nn**e, do**nn**er, Bra**ss**ac, amba**ss**ade, maitre**ss**e, men**ee**).
-- 39 = a ("amenée"); 40 = "de", 42 = "la" (word codes).
+- 39 = "et" (corrected 23 Oct 2026 from Avenel: *frontière et menée*, *Chevreuse et autres*; earlier read as a in "amenée"); 40 = "de", 42 = "la" (word codes).
 - ≥41 = nomenclature. Identified (this work + Avenel's footnotes across vol. III):
 
 | Code | Meaning | Code | Meaning |
@@ -84,6 +84,19 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 
 "Elle" / "sa maistresse" = Henrietta Maria, Queen of England (Louis XIII's sister), whose French bishop
 and priests had been expelled by Charles I — the peace of Susa (24 Apr 1629) was being finalised.
+
+## 23 Oct 2026: re-reading (REREAD_BRIEF, batch b33)
+
+The reading audit of 22 Oct had left the key decode of Tomokiyo's partial transcription *decoded, not read* and
+Avenel's text only as an excerpt. Avenel nos. CXCIX and CCV were transcribed in full from the Google Books page images,
+with his printed figures (`texts/ff87-89_avenel_figures.txt`); every figure run decoded with the key gives his footnote
+decipherment (`research/reading_audit/b33_rl_decode.py`). Figure 39 is *et* (both occurrences), not *a*. Three places
+were checked on the DECODE scans (R9461, R9462): the clerk left out the *a* of *au bois* (Avenel's `16` there is a
+misprint), and f. 89v reads *la proposition que j'ay faite a 51 30 18 52* (*au roy et à la reyne mère*), where Avenel
+printed only `51`. Running reading `texts/ff87-89_reading.md` (English `texts/ff87-89_en.md`, log
+`texts/ff87-89_reread_log.md`): 0.83 clean sentences (b17, fr), 0.97 counting explicit holes only, one hole ([?au]).
+Both outcome entries read; nothing open in the cipher. Avenel's clear text was not collated word by word with the
+manuscript (his accents and punctuation kept).
 
 ## Transcription slips in the cryptiana text (all confirmed by Avenel's independent transcription)
 

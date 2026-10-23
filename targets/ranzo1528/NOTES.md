@@ -3,6 +3,16 @@
 Status: in progress (read in part 18 Oct 2026; left: check the 74 open groups of fr. 3022 no. 20 and the open codes of fr. 4050 and fr. 6638 against the images): key recovered from ciphertext-only by George Lasry with Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026, `lasry/`) and, independently, by Paolo Rosson with Claude (6 Oct 2026, on this project's transcription). Fr. 2988 (letters 1 and 2) and its copy fr. 20506 meet the read bar; fr. 3022 no. 20, fr. 4050 and fr. 6638 are read in part (measured 18 Oct 2026, below). This project's own annealer recovered only function words. Split from `targets/vasto1527/` on 14 Oct 2026.
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): letter 4 (fr. 4050) reads at its opening and close, but 54 of its 128 lines carry an open code and in the middle runs of codes break most sentences: *decoded, not read*. Letters 1, 2, 3 and 5 read. Class read in part kept; fraction_read 0.929 -> 0.717 (bar-measure tokens of the four letters that read).
 
+**23 Oct 2026, re-reading (REREAD_BRIEF, batch b33):** letter 4 (fr. 4050 ff. 79-81, Madrid 10 March 1528) joined into
+words by hand from Biermann's transcription and Lasry's key (`texts/letter4_reading.md`, English `texts/letter4_en.md`,
+log `texts/letter4_reread_log.md`). No image: fr. 4050 is not digitised (BnF notice cc504711/cd0e497, item 30). Paolo
+Rosson's public key, built on letters 1-3, confirms nine of Lasry's tentative values here and values three codes
+(e173 *express*, s72 *sara*, d46 *debia*). The code list is numbered in rough alphabetical order within each initial,
+neighbouring numbers often homophones; with the sentence that proposes 39 single-occurrence code values, flagged
+sense-only for review; 47 code types stay open. Body 0.77 clean sentences counting explicit holes (0.40 plain against a
+modern Italian word list); one passage of eleven codes (79r:27-79v:2) does not build. Letter 4 *decoded, not read* ->
+read (B); fraction_read 0.717 -> 0.929.
+
 
 Gallica: fr. 3022 ark `btv1b90601558` (view = canvas; ink folio ≈ (view+1)/2), fr. 2988 `btv1b9059908w`, fr. 3019 `btv1b9059994n`, Clair. 327 `btv1b9000764n`.
 
@@ -185,9 +195,10 @@ contributors', the transcription and measurement this project's).
 ## Remaining gaps
 
 - fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%): 27 without a value in either key, 47 tentative values of Lasry's that Rosson's does not match - blocker: open-codes. Still to do: compare both keys' readings with the images of ff. 44r-46v.
-- fr. 4050 and fr. 6638 (letters 4, 5): 191 and 105 tokens not read (87.7%, 89.0%), mostly Lasry's unconfirmed tentative values - blocker: open-codes; Rosson's key was built on letters 1-3 only, and these letters are not seen here (no Gallica link in Biermann's transcription).
+- fr. 6638 (letter 5): 105 tokens not read (89.0%), mostly Lasry's unconfirmed tentative values - blocker: open-codes; Rosson's key was built on letters 1-3 only, and this letter is not seen here (no Gallica link in Biermann's transcription).
 - fr. 2988 ff. 2 and 9-10 with the copies fr. 3019 and fr. 20506: 31 and 53 scattered open groups, over the read bar - blocker: open-codes.
-- letter 4 (fr. 4050): decoded, not read - blocker: not-attempted; read the codes from context across the five letters and check them on the Gallica images of fr. 4050 ff. 79-81
+- letter 4 (fr. 4050): read 23 Oct 2026 (B, `texts/letter4_reading.md`); 47 code types left as codes and 39 values resting on sense and list position only (`texts/letter4_reread_log.md`) - blocker: no-key-material (each occurs once in the five letters)
+- letter 4 (fr. 4050): Biermann's figures not checked on an image - blocker: needs-physical-access (fr. 4050 is not digitised: BnF notice ark:/12148/cc504711/cd0e497 has no Gallica link)
 
 ## Escalation
 
@@ -197,6 +208,7 @@ contributors', the transcription and measurement this project's).
 - [x] print: Cipherbrain 2016; Tomokiyo, cryptiana ranzo.htm (6 Oct 2026); Rosson's page.
 - [x] key-rebuild: word-substitution annealer with an Italian word-bigram model, validated on an encoded Castiglione control (~46% tokens): function words only.
 - [x] retry: 18 Oct 2026, the two independent keys compared token by token on all five letters (`measure_lasry.py`); fr. 2988 and fr. 20506 over the bar. Page-by-page comparison with the images for no. 20 not yet done.
+- [x] retry (23 Oct 2026): letter 4 re-read word by word with Lasry's key, Rosson's key and the code list's alphabetical order (`texts/letter4_reread_log.md`); fr. 4050 has no digitisation, so no image check.
 
 ## Files
 
