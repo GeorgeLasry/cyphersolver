@@ -256,8 +256,25 @@ stellens och", bracketed letters, <nnn> codes). Scored block by block: f012-f013
 scans (sentence by sentence, breaks checked on the image), which for the five sibling letters lifted only f. 3 over
 the bar. fraction_read 0.480 -> 0.094 (f. 3 and the alphabetic block, 965 of 10,246 tokens).
 
+## 23 Oct 2026 (r2b): 497 and 506 re-read and read; 504, 505 decoded, not read; sibling spelling restored
+
+Batch r2b (`HCP497-506_reread_log.md`). **Spelling:** the b08 normalisation of the sibling readings (alhir -> alhier,
+hette -> hätte, Feint -> Feind ...) is undone: `research/reading_audit/r2b_mals_denorm.py` walks each reading against its
+decode stream and puts back the writer's form the figures give (496 10 words, 502 10, 503 11, 507 87, 509 none). The
+explicit-hole scores do not move; 496 stays read (0.667). **Re-read:** the HCPortal scans 0012, 0018, 0023-0025 fetched
+to the scratchpad; HCPortal 497, 504, 505, 506 read sentence by sentence from the b08_dec decode (key.txt unchanged), the
+breaks checked on full-resolution crops (f. 25 l. 15: a struck 40 and 42 for "12?", `HCP506_corrections.tsv`; f. 18
+"Reiterei noch"; f. 24 "mit de[m] Reiderlant"), aligned word by word with `b08_align.py`, slips bracketed; readings and
+English `HCP497/504/505/506_reading.md`, `_en.md`. `v2_score.py` explicit holes: **497 0.632 and 506 0.625: read (B)**;
+504 0.562 and 505 0.545 stay decoded, not read (open codes and signs in most sentences). fraction_read 0.094 -> 0.221
+(496 + alphabetic block + 497 + 506 = 2,269 of 10,246 tokens).
+
+Note for a later pass: on the German explicit-hole measure HCP507 (ff. 28-29) scores 0.662 and HCP509 0.659; the b08
+decisions used the plain share (0.437, 0.545). 507 may now clear the bar on a reader's review; 509's German extracts
+are still not re-transcribed.
+
 ## Remaining gaps
-- HCPortal 497 (ff. 12-13), 504 (f. 18), 505 (ff. 23-24), 506 (f. 25): decoded, not read since 23 Oct 2026 (v3); their only text is the machine segmentation in reading_segmented.txt (explicit-hole 0.0, 0.5, 0.5, 0.286) - blocker: not-attempted; a sentence-by-sentence re-read on the HCPortal scans, as batch b08 did for 496/502/503/507/509, is the next step
+- HCPortal 504 (f. 18) and 505 (ff. 23-24): decoded, not read after the 23 Oct 2026 re-read on the scans (explicit holes 0.562, 0.545; HCP504/505_reading.md) - blocker: no-key-material; the sentences build, but open codes (504: 212, 122, 120, 123, 148, 260; 505: thirteen) and signs stand in most of them. HCPortal 497 and 506 closed 23 Oct 2026: read (0.632, 0.625)
 - ff. 14, 15-16, 28-29 (with duplicate 30-31) decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375, 0.437; readings HCP502/503/507_reading.md) - blocker: no-key-material; the sentences build, but two to six open codes or signs stand in most of them; f. 14 also torn at the right edge
 - ff. 32-33 (HCPortal 509): French letter read; the German news extracts in the second hand not re-transcribed (clean share 0.545 overall) - blocker: not-attempted; transcribe the clear words of the extracts on the scan (the cipher runs are decoded in HCP509_reading.md)
 - about 40 three-digit codes and name signs (193 tokens: 120, 122, 129, 140, 148, 176, 193, 212 ... V, K, f, 4#, +, AA, GG ...) - blocker: no-key-material; mostly single occurrences, five valued from context (128, 130, 188, 253, 273, grade I)
@@ -274,6 +291,7 @@ the bar. fraction_read 0.480 -> 0.094 (f. 3 and the alphabetic block, 965 of 10,
 - [x] print: web and LAGIS search for an edition of the letters; none found
 - [x] key-rebuild: digit table annealed from the ciphertext and polished over all pages; signs and five codes valued from context
 - [x] retry: 236 unread groups re-checked against the scans (24 misreads, 2 doubled groups corrected, 210 confirmed)
+- [x] retry (23 Oct 2026, r2b): 497, 504, 505, 506 re-read sentence by sentence on the HCPortal scans; 497 and 506 now read; the b08 spelling normalisation undone in the sibling readings
 - [x] retry (22 Oct 2026, b08): the five unread records re-read sentence by sentence on the HCPortal scans; ff. 28-29 against the duplicate ff. 30-31 (9 readings taken from it); f. 32 one label corrected and the French letter transcribed; f. 3 now reads
 
 Alphabetic contribution, integrated 2 October 2026:

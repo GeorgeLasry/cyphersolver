@@ -105,6 +105,18 @@ Work in `pass2/`: `transcription.txt` (4,363 signs, one character per sign, all 
 - Measured with a word count over `pass2/reading.txt`: 1,002 plaintext words, 34 unread (31 words, 3 uses of ∇):
   **96.7%** (1,003 words, 33 unread, after P3 l.09 "More Lesli genant" was taken from the first pass). The letter meets the read bar.
 
+## 23 Oct 2026: verification 3 (explicit-hole score)
+
+The reading audit's v3 sweep scored `pass2/reading.txt` at 0.564 clean sentences with every `{?}`/`[?word]` a hole.
+That was the file, not the reading: its `P3.01`-style line labels cut every manuscript line into a sentence and the
+words broken at line ends counted as two. `pass2/R9407_reading.md` is the same reading as running text (one paragraph
+per page, splits joined, header cut off): **0.892 explicit holes (74/83 sentences), plain 0.614**, hole rate 0.06
+(`research/reading_audit/v2_score.py`). Aligned word by word with `decrypt_v7.txt` (`research/reading_audit/r2b_aug_align.py`):
+of 14 words with little letter overlap, `so` (P3.03) and `man` (P5.20) were supplied and are now bracketed, the
+emendation `[h]ab ich dem` (P6.06) is reverted to the decode's `bei dem` (which gives the better sentence: the
+secretary saw copies "zu Cricau und nachmals bei dem Minckwitz"), two `der` are marked `[?der]`; the rest are
+polyphonic values or line-split fragments. Keeps read (profile `reading` now points at R9407_reading.md).
+
 ## Remaining gaps
 
 - about 31 scattered words across the four cipher pages (listed as {?} in pass2/reading.txt) - blocker: open-codes; the signs are legible, each was retried with the extended key and at the image, and none gives a word under a value the letter uses; the sense of each sentence is not in doubt.
@@ -121,6 +133,7 @@ Work in `pass2/`: `transcription.txt` (4,363 signs, one character per sign, all 
 - [x] print: Hungarian accounts of the 1533 siege of Palota (hu.wikipedia, rubicon.hu) found 22 Sept 2026 and used to date the letter; web searches (Augurelio + Bayern 1535 + Chiffre; Weinmeister + Palota/Móré) found no edition; the
   humanist G. A. Augurello (d. 1524) is a different man.
 - [x] key-rebuild: EM, hard-EM, a supervised key from the aligned readings, a word-aware beam.
+- [x] retry (23 Oct 2026): word-by-word alignment of the reading with decrypt_v7.txt; supplied words bracketed; rescored 0.892 explicit holes.
 - [x] retry: second pass re-read every line of all four cipher pages at the image with a polyphonic beam decoder; two look-alike split passes; a full hand check of both main pages against the image; six reading
   rounds; a final targeted pass over every word that failed the measure.
 

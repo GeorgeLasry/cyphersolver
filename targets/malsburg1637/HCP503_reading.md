@@ -10,19 +10,17 @@ side (no cipher). No contemporary decipherment, no clear copy, no edition. Code 
 State (22 Oct 2026, batch b08): decoded, not read; clean-sentence share of the reading body 0.375 (raw decode 0.389); holes: open codes and signs in most sentences. Log: `HCP496-509_reread_log.md`.
 
 Conventions: `{...}` a code with a context value; `[120]` an unvalued code; `<H#>` an unvalued sign; `[?word]` partly
-carried; `[word]` supplied; `[…]` unread. Spelling normalised in part by `research/reading_audit/b08_norm.py` (a whole-word map of the writer's forms, e.g.
-alhir → alhier, Feit/Feint → Feind, schleinig → schleunig, hette → hätte); the diplomatic decode stays in
-`reading_segmented.txt`. punctuation added. ⟨...⟩ = clear words
+carried; `[word]` supplied; `[…]` unread. Spelling as the cipher gives it: the b08 normalisation (`research/reading_audit/b08_norm.py`) was undone on 23 Oct 2026 (batch r2b, `research/reading_audit/r2b_mals_denorm.py`: each word restored to the form its figures or the transcribed clear words give, e.g. alhir, Feint, schleinig, hette, dan, one); modern spelling only in the English file. punctuation added. ⟨...⟩ = clear words
 written in the letter around the cipher. Paragraphs: the f. 15 block (Triplicat); f. 16 block 1 (two paragraphs);
 f. 16 block 2.
 
 ## Reading
 
-⟨… ich habe ihm⟩ beim [122] u<4#> [?Resolution] auf [129] Schreiben angehalten. Es ist aber derselbe itz mit [120] wegen des Verlust vor Hermanstein in der […] ⟨und⟩ hat die Gedancken ni<A#> alle bei einander.
+⟨… ich habe ihm⟩ beim [122] u<4#> [?Resolution] auf [129] Schreiben angehalten. Es ist aber derselbe itz mit [120] wegen des Verlust vor Hermanstein in der […] ⟨und⟩ hatt die Gedancken ni<A#> alle bei einander.
 
-⟨… weil er in Staadische protection genommen ist,⟩ [120] will noch von keinem [202] wissen; sagt, er erwarte Bauregart alle Tage wider. ⟨Und⟩ Hoff schreibet noch [?kürtzlich], das Borigart noch nie Audiens gehabt. Ich habe [120] andeuten [?lassen], das [129] nach Anfang des Traicte zu Minden ⟨und⟩ <+> Aufkündigung des Stillstands an die 9 {Compagnien} [193] ⟨und⟩ <f> ⟨und⟩ 9 {Compagnien} [212], wie auch sch[…] {Compagnien} Dragoner [?schon] [?…]teil [?geworben], ⟨und⟩ 2 Teils zu werben Patente albereits ausgeteilt [?hetten]. Solten sie nun in ihrer voller Werbung [?gehindert] werden, so würden sie in aller ihrer Intention ⟨und⟩ Actio[n] gehemmet, welches dann dem König ⟨und⟩ gemeinen Wesen mehr als {die Staaten} […] particulir Schaden bringen [würde].
+⟨… weil er in Staadische protection genommen ist,⟩ [120] will noch von keinem [202] wissen; sagt, er erwarte Bauregart alle Tage wider. ⟨Und⟩ Hoff schreibet noch [?kürtzlich], das Borigart noch nie Audiens gehabt. Ich habe [120] andeiten [?lassen], das [129] nach Anfang des Traicte zu Minden ⟨und⟩ <+> Aufkündigung des Stilstants an die 9 {Compagnien} [193] ⟨und⟩ <f> ⟨und⟩ 9 {Compagnien} [212], wie auch sch[…] {Compagnien} Tragons [?schon] [?…]teil [?geworben], ⟨und⟩ 2 Teils zu werben Patente albereits ausgeteilt [?hetten]. Solten sie nun in irer voller Werbung [?gehindert] werden, so würden sie in aller irer Intention ⟨und⟩ Actio[n] gehemmet, welches dan dem König ⟨und⟩ gemeinen Wesen mehr als {die Staaten} […] particulir Schaden bringen [würde].
 
-Zu dem [?hette] Hoff [?berichtet], das ihm were [?angedeutet] worden, wie das der Ambassadeur schon Ordre [XX], die auf den letzten [?December] schiene <4H#> <o>ch Reichs[…]dalen solte, dann er noch [201] in Deutschland ligen hätte. Er hat sich aber nirgend zu verstehen wollen ⟨und⟩ wirt bald von hir [?ziehen]. Sorge derwegen, man werde sich auf die Golder, vil weniger auf die [?abgeredete] Termine verlassen ⟨und⟩ […] machen kommen.
+Zu deme [?hette] Hoff [?berichtet], das ihm were [?angedeutet] worden, wie das der Ambassadeur schon Ordre [XX], die auf den leizten [?December] schiene <4H#> <o>ch Reichs[…]dalen solte, dan er noch [201] in Deitschlant ligen hätte. Er hat sich aber nirgend zu verstehen wollen ⟨und⟩ wirt bald von hir [?ziehen]. Sorge derwegen, man werde sich auf die Golder, vil weniger auf die [?abgeredete] Termine verlassen ⟨und⟩ […] machen kommen.
 
 ⟨Ich habe dieses … bis EfGl. ich einweinig⟩ vons <triangle> ⟨mein Meinung überschreiben können, und dünket mich, es werde EfGl. nicht abhanden gehen.⟩ Er redet aber nirgend von Friedmachen. Sagt, er wolte einen Finger [?auf] der F[au]st drumb geben, dass <H#> den [?bewussten] Brieff von hir vor [120] Ankunft weggeschicket hätte; dann ihn deuchte, {die Staaten} er alsdan mit viel ruhigerem Gemüth dienen könnte. Zu dem wirt er über <e> Pferde notwendig mitbringen müssen. Er sihet aber itzo keine Gelegenheit, zu [129] zu kommen.
 

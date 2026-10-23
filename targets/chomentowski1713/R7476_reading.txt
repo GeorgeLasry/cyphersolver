@@ -1,65 +1,76 @@
-R7476 - modernised Polish reading, fifth pass (9 Oct 2026; pass 3 = language pass, pass 4 = 95%-bar attempt, pass 5 =
-digit re-transcription, sien/R7476_pass5.txt) Sources: the interlinear glosses re-read on enlarged crops
-(sien/R7476_pass2.txt), sien/syllabary.tsv where a gloss stays unreadable, the clear words of the letter, and in pass 3
-a language pass over every unread piece: alternative values inside each code's alphabetical band, glosser and encipherer
-slips, word division across the gaps, and names of the embassy and the Porte (R7484/R7485 readings for recurring words).
-No new crops were needed in pass 3. [...] = no value from gloss or key, or the result makes no sense; (?) = doubtful
-word; [x] = letters supplied. Latin kept as written. A word counts as read only if it is a real word that fits the
-sentence.
+R7476 - reading in the writer's spelling (restored 23 Oct 2026 from the pass 3-7 reading of 9 Oct 2026, which had been
+put into modern Polish spelling; the modern rendering now lives only in the English file R7476_en.md).
+
+Rests on: the interlinear glosses of the contemporary decipherer (R7476.txt G lines, re-read on enlarged crops in
+sien/R7476_pass2.txt and sien/R7476_pass5.txt), the syllabary (syllabary.tsv, K lines) where a gloss is unreadable, and
+the writer's clear words exactly as transcribed. Each word is spelt as its figures carry it: the gloss syllable (else
+the key value) of every code, the clear words letter for letter ("y" for i, "poniewasz", "niey", "lepiey", "bydz",
+"Ozowa"). Word division is ours. Aligned word by word with the token stream on 23 Oct 2026
+(research/reading_audit/r2b_chom_restore.py; draft and hand check in the reread log R7476_reread_log.md).
+
+Marks: [x] = a letter or word that no figure carries (supplied, or the emendation of an encipherer's slip); [?word] =
+a word only partly carried or resting on a doubtful value; [...] = unread figures; [?] = one unread figure. Latin and
+clear words kept as written. Surplus figures (a sign written twice, a glosser-struck sign) are left out and listed in the
+log.
 
 ## Reading
 
 p. 31
-Nie mogą(?) zrozumieć, do czego nas bawią i nie ekspediują, i wolności zadanej, i do widzenia się z posłami, i
-należytych wizyt nie dają. Lubo posłałem onegdy prezenta do wezyra i jego kiehai, przyjął wezyr wdzięcznie, deklarował,
-że ekspedycja będzie, [że] nie zabawim; ale wiem. Ale wizytować się(?) z Ich Mościami posłami, na Galacie rezydującemi,
-pozwolić nie mogą(?); pozwalali oni wprawdzie, ale żeby o każdą wizytę memoriał podawać, czego dla dwóch rzeczy nie
-mogliśmy pozwolić. Pierwsza, żeby mogli do jednego pozwolić, drugiego nie, i tak by bez tego mogli dyferencję uczynić;
-druga, żeśmy tego żadną miarą praeiudicium pozwolić nie mogli. Lepiej, że to i in urbanitate ich zostanie, niż in nostra
-condescensione. Zatrzymanie(?) zaś nas, że boją się(?), żeby nie z tego pochodziło, że chcą [in]tentare(?) Waszeci Mości
-Pana przejście króla szwedzkiego, a nas tu jako zastawę mieć. Lecz zda mi się tak, gdybyć(?) WMM Pana o traktat Turcy
-przysłali, że się(?) nie może poznać(?), czym(?) komisarzów nie widzieć traktatu od Porty, który ma bydź w ręku
-poselskich; druga, nie będąc secura de amicitia Portae, ponieważ cum hoc documenta nie widzę posła(m)(?) a taki(?) mnie
-WMość dodacie [...] prędszego(?) do usług ich pośpiechu, i nie mając(?) nikogo [...] i śmieli. Ue penitius informati
-[...] Stambuł(?) [...]; może(?) cię(?) mam informacyą, że Porta posyła(?) do króla szwedzkiego, dając mi znać, że ze mną
-skończyła(?); i kiedy, że chce z stąd się ruszyć, ale ten zły pan i na
+Nie mo[?gą] zrozumiec, do czego nas bawio y nie expediuia, y wolnosci zadane[y], y do widzenia sie z posłami, y
+nalezytych wizyt nie daią. Lubo posłałem ongi prezenta do wezyra y iego kihai, przyi[ą]ł wezyr wdziecznie,
+deklarował, ze expedicia bedz[i]e, [?ze] nie zabawim; ale wi[e]m. Wizytowac [?sie] z Ich Mciami posłami, na Gałacie
+rezyduiącemi, pozwolic nie mo[?gą]; pozwolali oni wprawdzie, ale żeby o kazdo wizyte memoriał podawac, czego dila
+dwoch rzec[z]y nie moglismy pozwolic. Pierwsza, zeby mogli do iednego pozwolic, drugiego nie, y tak by bez t[eg]o
+mogli differencye uczynic; druga, zesmy tego zadno miar[ą] preiudicium pozwolic nie mogli. Lepiey, ze to y in
+urbanitate ich zostanie, nisz in nostra condescensione. [?Zatrzymanie] zas nas, ze boią [?sie], [?zeby] nie z tego
+pochodziło, ze chco [?intentare] Waszeci Mości Pana prze[y]scie krola szwedzkiego, a nas tu iako zastawe miec. Lecz
+zda mi sie tak, gdyby[?ć] WMM Pana o trakta[t] Turcy przysłali, ze [?sie] nie moze [?poznac], [?czym]
+[?komisarzuw] nie widzec traktatu od Porty, ktory ma bydz w reku posełskich; druga, nie będąc secura de amicitia
+Portae, poniewasz cum hoc documenta nie widze posła, a taky mnie W Mości dodacie [...] [?predszego] do usług ich
+pospiechu, y nie [?maiac] [...] nikogo [...] y smieli. Ue penitius informati [...] [?Stambuł] [...]; moze [?cie] mam
+[?ynformacią], ze Porta [?posiłata] do krola szwedzkiego, daiąc m[?i] znac, ze ze mno skonczyła; y kiedy, ze chce z
+stad sie ruszyc, ale ten zły pan y na
 
 p. 32
-siebie, i na swe państwo miało odpowiedzieć, że [...] on z tąd nie ruszy, póki mu Porta nie da takiego
-konwoju, żeby z nim mógł bezpiecznie przez Polskę powrócić do państw swoich. Rozumiem, że niemało pomogło do naszych
-sollicitacyj rugowanie, że stąd rebellium, ponieważ przed kilku dni dano ordynans [...]owi, że stąd pojechał; za pracę
-jego dawszy mu(?) trzysta lwowych na drogę, dano ferman, żeby [...] także wyjeżdżali [...] Han [...]. Jeżeli im co
-dadzą, dociec niemożliwie(?); ale jak się dowiem, dam znać. Mamy wiadomość z listu przejętego, że Stanisław do
-sw[oich](?) się przebierać będzie, a [...] do WMM Pana przed kilko niedziel plenipotent jego [...] solicitował mię o
-amnistią, i nie odrzucałem jej(?) dać się(?) z certa assecuratione, którą on renuebat. Teraz zaś po skończonych interesach,
-gdy się upierał i obiecował dać(?) asekuracyą, lecz nie mają do [...] do tego, gdy Tatarowie przy Wa[...] odezwano(?) i
-obiecano, jest(?) zwłoka(?) [...], i nie dano mi wozów żadnych do Chocimia, nie poszło i nie pójdzie(?), nadto co mi
-pisał [...] od [...] jednak przed trzema niedzielami tam poszło tysiąc(?) Tatarów ku Moskwie; jeszcze [...] Dewlet Girej
-Hana syna przeszli; sołtan gałga uciekł do Czerkies, tam z Nahajami [i] Czerkiesami koło Donu zplondrowała(?), i niewolników
+siebie, y na swoie panstwo miało odpowiedziec, ze [...] on z tod nie ruszy, puki m[u] Porta nie da takiego konwoiu,
+zeby z nim mogł bespiecznie przez Polskię powracic do panstw swoich. Rozumiem, zes niemało pomogło do naszych
+[?solicitacyią] rugowanie, ze stad rebellium, poniewasz przed kilku dni dano ordinans [...], ze [?po] z stad
+poiechał; za prace iego dawszy m[?u] trzysta [?lwowych] na droge, dano [?ferman], zeby [...] także wiiezdzali [...]
+Han [...]. Iezeli ym co dadzą, dociec niemozli[?wie]; ale iak sie dowiem, dam znac. Mamy wiadom[o]sc z listu
+przeietego, ze Stanisław do [?swoich] sie przebierac bedzie, a [...] do WMM Pan przed kilko niedziel plenipotent iego
+[...] solicitował mie o amnistią, y nie odrzucałem iey dac [?sie] z certa assecuratione, ktoro on renuebat. Teraz zas
+po skonczonych interesach, gdy sie upierał y obieco[?wa]ł [?dac] [?asekuracyą], lecz nie maią do [...] do tego, gdy
+Tatarowie przy Wa[...] [?odezwano] y obiecano, [?iest] [?zwłoka] [...], y nie dan[o] m[i] wozy zadnich do Chocimia,
+nie poszło y nie poydzie, nadto co m[i] pisał [...] od [...] iednak przed trzema niedzielami tam poszło [?tysiąc]
+Tatarow ku Moskwie; ieszcze [...] Dewłet Gireia Hana s[y]na przeszli; sołtan gałga uciekł do Czerkies, tam z
+Nahaiami [?y] Czerkiesimi koło Donu z[p]łondrowała, y niewolniko[w] dwa [?okręty]
 
 p. 33
-dwa okręty przywieziono, ale Moskwa(?) o tym wielki sekret przed nami trzyma. Flota w tych dniach się ruszyła, trochę
-większa niż zwyczajna, jednak niedość [...] composita, z jedenastu wielkich okrętów, czterech [f]regat(?) i trzydzieści
-circiter galer. Z galer ma pójść(?) coś(?) na Czarne Morze do Azowa, [...] poszła. Jutro tydzień, jako wjazd miał; dziś
-audiencyą u wezyra [...] mieć ma. Obaczymy, [co z] niej będzie, bo na nich Turcy zęby ostrzą, upominając(?) się za
-jakieś towary sto kilkadziesiąt talarów w Stambule(?), i króla szwedzkiego ustawicznie dłużnicy o pieniądze turbują, bo
-incredibile co prywatnym(?) winien, a wekslowe kupcy nie chcą płacić, chyba że stąd wyjedzie, powiadając, że taki mają od
-swoich correspondent[ów] ordynans; ale nadto on nie uważa, firmiter tu siedzi. Proszę tego wszystkiego raz WMM donieść
-Jmci Panu Kanclerzowi Koronnemu; chcieli [...], żebyśmy byli umyślnie co(?) posłali, ale odpowiedziałem, nie miałbym sam
-z czym przyjechać, kiedy bym oznaymował; ale wszystko staczywszy, rozumiem, że i samego(?) [...] bawić(?) nie będzie. Pan Szpigieł dziś
-odjechał; co tu robił, trudno wypisać, dosyć, że mało wszytkich rzeczy(?) królewskich nieszczęści(?) [...]; lecz
-żeśmy przez J. pana sekretarza windykowali. Wezyr hański(?) dziś odjechał, powiadają, że do króla szwedzkiego. Obaczymy,
-co z tego będzie.
+przywieziono, ale Moskwa o tym wielki sekret przed nami trzyma. Flota w tych dniach się ruszyła trochy większa niż
+zwyczayna, iednak niedość [...] composita, z iednastu wiełkich okrętow, czterech [?fregat] y trzydziesci circiter
+galer. Z galer ma posc cos na czarne morze do Ozowa, [...] poszła. Iutro tydzień, iako wiazd miał; dziś
+[?audiencyą] u wezyra [...] miec ma. Ob[a]czymy, [co z] niey będzie, bo na nich Turcy zemby ostrzo, u[po]minaiąc
+się za iakies towary sto kilkadziesiąt taler[ow] w Stambule, y krola szwedzkiego ustawicznie dłuznicy o pieniądze
+turbują, bo incredibile co priwatnim winien, a wexlowe kupcy niechcą płacić, chyba że zta[d] wyiedzie, powiadaiąc,
+że taki mają od swoich Correspondentow ordynans; ale nadto on nie uważa, firmiter t[u] siedzi. Prosze tego
+wszystkiego raz WMM doniesc Jmci P[an]u Kanclerzowi Ko[?ro]nnemu; chcieli [...], żebysmy byli umyślnie co posłali,
+ale odpowiedzielem, nie miałbym sam z czym przyiechac, kiedy bym oznaymował; ale wszystko staczywszy, rozumiem, ze y
+s[a]mego [...] bawic. nie bedzie. P[a]n Szpigieł dziś odiechał; co tu robił, trudno wypisać, dosyć, ze mało
+wszytkich [?rzeczy] krol[e]wskich [?nieszczęści] [...]; lecz żeśmy przez J. pan[a] sekretarza windykowali. Wezy[r]
+hanski dzis odiechał, powiadają, ze do krola szwedzkiego. Obaczymy co z tego będzie.
 
 p. 34
-Hospodar multański przyprowadzony tu i wsadzony do Jedykuły za suspicje dawne o Moskwie i inne rzeczy, jak to
-nieoddawanie prowiantu do Chocima; ale ten, co jest, nie ma być przeciwny naszym interesom. A jego(?) z ciężkiego
-więzienia wydobyli i jest nadzieja, że powróci nazad; matka cesarza za nim instantissime. A apostata(?) ten, proszę,
-żeby był w słusznej(?) i [...] przywio[...], że ja na niego słuszne dokumenta [mam], a memoriału jego ja się tu nie
-boję.
+Hospodar multański przyprowadzony tu y wsadzony do Iedykuł[y] za suspicye dawne o Moskwie y inne rzeczy, jak to
+nieoddawanie prowiant[u] do Chocima; ale ten co iest, nie ma bydz przeciwny naszym interessom. A [?iego] z ciężkiego
+wiezienia wydobyli a iest nadzieia, ze powroci nazad; matka Cesarza za nim instantissime. [?Apostata] ten, proszę
+żeby był w słuszney y [...] przywio[...], że ia na niego słuszne dokumenta [mam], a memoriału iego ia sie tu nie
+boie.
 
-[Clear postscript at the foot of p. 34, unchanged: see sien/R7476.txt.] 
+[Clear postscript at the foot of p. 34, not cipher: see R7476.txt.]
+
 ## Notes
+
+The notes below are from the 9 Oct passes; they quote words in the modern spelling of pass 3.
 
 == Pass 3: what the language pass settled ==
 p.31 L16  6 230 "a r": "za d no mi a r" = żadną miarą (word division; "no" for ną, "r" for rą).

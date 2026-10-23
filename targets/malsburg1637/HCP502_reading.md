@@ -9,22 +9,20 @@ clear copy, no edition. Code values: `{Cöln}` = 128, `{Regiment}` = 253 (grade 
 State (22 Oct 2026, batch b08): decoded, not read; clean-sentence share of the reading body 0.167 (before 0.143); holes: open codes and signs in nearly every sentence, torn edge. Log: `HCP496-509_reread_log.md`.
 
 Conventions: `{...}` a code with a context value; `[145]` an unvalued code; `<+>` an unvalued sign; `[?word]` partly
-carried; `[word]` supplied (here only letters lost at the torn edge); `[…]` unread. Spelling normalised in part by `research/reading_audit/b08_norm.py` (a whole-word map of the writer's forms, e.g.
-alhir → alhier, Feit/Feint → Feind, schleinig → schleunig, hette → hätte); the diplomatic decode stays in
-`reading_segmented.txt`.
+carried; `[word]` supplied (here only letters lost at the torn edge); `[…]` unread. Spelling as the cipher gives it: the b08 normalisation (`research/reading_audit/b08_norm.py`) was undone on 23 Oct 2026 (batch r2b, `research/reading_audit/r2b_mals_denorm.py`: each word restored to the form its figures or the transcribed clear words give, e.g. alhir, Feint, schleinig, hette, dan, one); modern spelling only in the English file.
 Punctuation added. ⟨...⟩ = clear words written in the letter around the cipher.
 
 ## Reading
 
-⟨… erwarten,⟩ [?hoffe] aber doch noch am Ende dises Monats, wofern mir das Wette[r], der Weg ⟨und⟩ [145] neue Werbungen in [235] daran nit verhind[e]rlich sein, mich an bestimmte Ort neben [XX] Hofstatt [?einzustellen].
+⟨… erwarten,⟩ [?hoffe] aber doch noch am Ende dises Monats, wofern mir das Wette[r], der Weg ⟨und⟩ [145] newe Werbungen in [235] daran nit verhind[e]rlich sein, mich an bestimte Ort neben [XX] Hoffstat [?einzustellen].
 
-⟨Den 15/25 huius⟩ ist die Proviandirung Hermansteins [?vorgenommen], ⟨und⟩ führet Obristl Hoffman das Volck, dem […]molbram, Captain Helwigsch mit vom Roten ⟨und⟩ Adria von Carpens [191] mit <f> au man [193] neben <o> {Regiment}stucken mi[t]gegeben. Der [200] seint etwa <K> <4#> ⟨und⟩ <m> [?gewesen]; kommen i[n] [262] Tagen schwerlich dahin. Haben ihren Weg […] Molheim über die [266] auf Siburg ⟨und⟩ <4#> die rechte Stra[ss]e von {Cöln} auf [189] genommen, ⟨und⟩ nit mer als <+> au casselisch[e] Virtel [210] bei sich.
+⟨Den 15/25 huius⟩ ist die Proviandirung Hermansteins [?vorgenommen], ⟨und⟩ füret Obristl Hoffman das Volck, deme […]molbram, Captain Helwigsch mit vom Roten ⟨und⟩ Adria von Carpens [191] mitt <f> au man [193] neben <o> {Regiment}stucken mi[t]gegeben. Der [200] seint etwa <K> <4#> ⟨und⟩ <m> [?gewesen]; kommen i[n] [262] Tagen schwerlich dahin. Haben iren Weg […] Molheim über die [266] auf Siburg ⟨und⟩ <4#> die rechte Stra[ss]e von {Cöln} auf [189] genommen, ⟨und⟩ nit mer als <+> au casselisch[e] Virtel [210] bei sich.
 
-⟨Jan de Wert ist in persona zu Cölln und hat sein Volck in den Stifft Münster gelegt;⟩ wirt ihnen ohne Zweiffel nachgehen. Wenn das [?geschicht], so wirt Obristl Hoffman [?die Lohngerat] hin auf Marpurg ⟨und⟩ [215] oder Corbach, Brilen [138] ⟨und⟩ so wide[r] seine Garnison gehen. ⟨Gott gebe ihnen Glück,⟩ das es sowol als […] Hanau [?abgehe].
+⟨Jan de Wert ist in persona zu Cölln und hat sein Volck in den Stifft Münster gelegt;⟩ wirt ihnen one Zweiffel nachgehen. Wen das [?geschicht], so wirt Obristl Hoffman [?die Lohngerat] hin auf Marpurg ⟨und⟩ [215] oder Corbach, Brilen [138] ⟨und⟩ so wide[r] seine Garnison gehen. ⟨Gott gebe ihnen Glück,⟩ das es sowol als […] Hanau [?abgehe].
 
 [SS] hat mit eigen Handen an seiner geheimbten Rahte [?geschrieben], ⟨dass sich nun recht alle Gemüter … zum Fürsten …⟩.
 
-⟨… dazu dann⟩ er und sei[n] Her[r] [?Bruder] ⟨gute Beförderung thun wollen;⟩ ⟨welches alles⟩ auf die Unkosten nach [?Hermanstein] gehen. ⟨… sobald ich herfahre,⟩ wie es denen auf der […]e nach Hermanstein gehet, ⟨will ich … überschreiben.⟩
+⟨… dazu dan⟩ er und sei[n] Her[r] [?Bruder] ⟨gute Beförderung thun wollen;⟩ ⟨welches alles⟩ auf die Unkosten nach [?Hermanstein] gehen. ⟨… sobald ich herfahre,⟩ wie es denen auf der […]e nach Hermanstein gehet, ⟨will ich … überschreiben.⟩
 
 ## Notes
 

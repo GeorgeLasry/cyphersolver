@@ -9,14 +9,13 @@ decipherment on the leaf or the address side (f. 4), no clear copy, no edition (
 State (22 Oct 2026, batch b08): **read** (B); clean-sentence share of the reading body 0.667 (`research/reading_audit/b05_score.py`); holes: open codes and signs. Log: `HCP496-509_reread_log.md`.
 
 Conventions: `{...}` a code with a context value; `[201]` an unvalued code; `<+>` an unvalued sign; `[?word]` partly
-carried; `[word]` supplied; `[…]` unread. Spelling as the cipher gives it, normalised only where the writer's form is idiosyncratic (hirnechst, alhir,
-nunmer, duppelt, Fridens-, Konig, Virtel written hiernechst, alhier, nunmehr, doppelt, Friedens-, König, Viertel). Punctuation added. ⟨...⟩ = clear words written in the letter around the cipher.
+carried; `[word]` supplied; `[…]` unread. Spelling as the cipher gives it: the b08 normalisation (`research/reading_audit/b08_norm.py`) was undone on 23 Oct 2026 (batch r2b, `research/reading_audit/r2b_mals_denorm.py`: each word restored to the form its figures or the transcribed clear words give, e.g. alhir, Feint, schleinig, hette, dan, one); modern spelling only in the English file. Punctuation added. ⟨...⟩ = clear words written in the letter around the cipher.
 
 ## Reading
 
-⟨… gemachet,⟩ das ich auch noch nit weis, wo hervor unsre Garnisonen hiernechst der Unterhalt her, so in Frucht ⟨und⟩ [201] bestehet, genommen werden soll; ⟨das⟩ die Contributiones vom platten Lande sowol alhier als in [239] ein Ende haben. ⟨Und⟩ wirt man nunmehr alle Monat auf <+> [?…]tman [193] ⟨und⟩ <f> [273] an [210] zwölf <4#> Viertel casselische Viertel; weil die Unterofficirer doppelt Commis bekommen ⟨und⟩ [144] […] haben.
+⟨… gemachet,⟩ das ich auch noch nit weis, wo hervor unsre Garnisonen hirnechst der Unterhalt her, so in Frucht ⟨und⟩ [201] bestehet, genommen werden soll; ⟨das⟩ die Contributiones vom platten Lande sowol alhir als in [239] ein Ende haben. ⟨Und⟩ wirt man nunmer alle Monat auf <+> [?…]tman [193] ⟨und⟩ <f> [273] an [210] zwölf <4#> Virtel casselische Virtel; weill die Unterofficirer duppelt Commis bekommen ⟨und⟩ [144] […] haben.
 
-Es ist noch Zeit, das man sich beim König von Ungern angebe wegen der Friedenstractaten ⟨und⟩ salvum conductum vor <H#> Gesanten nach {Cöln} sollicitire. [176] wirt ohne [140] nit anfangen zu tractiren. Auf disem itzigem Zug [?steet] gar viel; derowegen Bettage hoch [?nötig] sein.
+Es ist noch Zeit, das man sich beim König von Ungern angebe wegen der Fridenstractaten ⟨und⟩ salvum conductum vor <H#> Gesanten nach {Cöln} sollicitire. [176] wirt one [140] nit anfangen zu tractiren. Auf disem itzigem Zug [?steet] gar biel; derowegen Bettage hoch [?nötig] sein.
 
 ## Notes
 

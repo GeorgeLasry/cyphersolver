@@ -58,7 +58,25 @@ rate 0.104; 0.694 without page labels and the postscript line), plain 0.143 (sma
 Note for a later pass: this reading is in modernised spelling (pass 3); the letter-for-letter text is
 `sien/R7476_pass5.txt`.
 
+## 23 Oct 2026 (r2b): R7476 restored to the writer's spelling; demoted to decoded, not read
+
+The R7476 reading of 9 Oct (pass 3) was in modernised Polish, which the reading rules forbid. `R7476_reading.txt` now
+gives each word as its figures carry it: clear words exactly as transcribed ("y", "poniewasz", "lepiey", "nisz",
+"niey", "zwyczayna"), code words as glossed, else as keyed ("ongi", "kihai", "bawio", "chco", "z tod", "puki",
+"bespiecznie", "zemby ostrzo", "Ozowa", "odpowiedzielem"). Method: `research/reading_audit/r2b_chom_stream.py` parses
+`R7476.txt` into code/gloss/key streams, `r2b_chom_restore.py` aligns the pass-3 reading with them letter by letter and
+re-spells each word; then a line-by-line hand check (`R7476_reread_log.md`). Five readings improved from the figures
+(p.31 "ongi" for "onegdy"; p.32 "na swoie panstwo", "ktoro on", word code "wozy"; p.33 "odpowiedzielem"). The "(?)"
+words became `[?word]` and letters no figure carries are bracketed (przyi[ą]ł, m[u] for the slip 156 mo, ...).
+Modern spelling is only in the new English translation `R7476_en.md`.
+
+Score (`research/reading_audit/v2_score.py`): explicit holes **0.651 -> 0.524** (33/63 windows), plain 0.079, hole rate
+0.143. Below the 0.60 bar once the doubtful words count as holes, so R7476 is **decoded, not read**, its reading kept as
+a partial reading. `fraction_read` 0.955 -> 0.273 (tokens of the documents that read: R7484 + R7485, 609 of 2,230).
+R7484_reading.txt and R7485_reading.txt are also in modernised spelling and still need the same restoration.
+
 ## Remaining gaps
+- R7476: the reading as a whole is decoded, not read (0.524 explicit-hole share, 23 Oct 2026; about 40 [?word]s on p.31 L19-34 and p.32 L9-36) - blocker: illegible; the doubtful words sit under glosses unreadable at 3-3.5x on the DECODE JPEGs or whose letters form no certain word
 - R7476: 67 of 1,621 tokens - blocker: open-codes; letters known from gloss or key but no word, after seven passes (digit re-transcription at 3x, band alternatives, Ottoman/Latin/old-spelling candidates, LM scoring)
 - R7476: 8 tokens in names (p. 32 L9-10, code 216) - blocker: no-key-material; glossed syllables, no matching name in the embassy literature
 - R7476: 5 one-off codes 2, 224, 266, 299 x2 - blocker: no-key-material; no gloss, no band value
@@ -72,4 +90,5 @@ Note for a later pass: this reading is in modernised spelling (pass 3); the lett
 - [x] known-keys: keys A, B and the R7475 table compared: different systems
 - [x] print: Kaczka 2012 does not print them; Perłakowski 2020 on the Chomentowski embassy used for names
 - [x] key-rebuild: syllabary rebuilt from the glosses and its alphabetical bands used to bound values
+- [x] retry (23 Oct 2026): R7476 re-spelt from its figures and aligned word by word with the token stream (r2b); doubtful words marked; rescored 0.524, demoted
 - [x] retry: R7476 glosses re-read at high contrast, unread stretches re-transcribed digit by digit at 3x (passes 4-6); R7484 pass 3 at 3.5x; Polish candidates scored with lang/ pl-modern
