@@ -42,8 +42,23 @@ Things we found that you should see:
   'tanto' group = Armata, 4113 = conte-, and others); listed in its NOTES for your review, not adopted.
 - hm1645: two key corrections (292 = by, 435 = next) we would like you to confirm before anything goes to DECODE.
 
-A question: sp106r787, sp106r924 and sp106r929 now have reading files built on your DECODE plaintext (credited, with
-our corrections from the images). May we publish them, or would you prefer we keep only metadata and point to DECODE?
+Following your comments of 24 Oct, three changes are now live:
+
+- A key mostly recovered with the text not read is now recorded as such. The method says how the key was obtained,
+  and the documents say "decoded, not read". 26 targets that had been forced to "not solved" got their key method
+  back. Five stay "not solved" because no key was actually obtained.
+- Your iterative process (let the model complete nomenclator entries and split the decryption into readable text, then
+  fix the transcription or key where it breaks, and repeat) is now the recommended route in CONTRIBUTING and the PR
+  checklist.
+- sp106r787, sp106r924 and sp106r929 now carry your DECODE decryption verbatim, credited to you with your permission,
+  next to our reading and English. All three read in part, at about 89% of words; the holes are code numbers your
+  key does not cover.
+
+A request: about 55 of your BnF items are on the site only as the excerpt quoted in your report of 10 Oct 2026
+(berny1607, the clair targets, bossuet, dubellay1555, herbault1625, paleologue1562 and others). None has a DECODE
+record, so we could not import your full decryptions from there. Could you send the report files themselves (the
+decryptions and any CTTS projects for those items)? We would bring them in with attribution, measure them, and
+translate them where you have not.
 
 DECODE corrections from the audit (about 100 records) are queued; the ones that touch your keys are held until you
 have seen them.
