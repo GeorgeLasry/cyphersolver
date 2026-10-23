@@ -7,6 +7,15 @@ Status: in progress (was: read in part (Daniel Bourdeau's numerical cipher: 95.9
 28-29 (and the duplicate 30-31), 32-33: open codes, bracketed letters or noise in most sentences. 95.9% (tokens in
 dictionary words) is withdrawn as a reading figure; 43.6% of the tokens are in documents that read (4,468 of 10,246).
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch b08, `HCP496-509_reread_log.md`): the five unread records re-read on the
+HCPortal scans, readings and English in `HCP496/502/503/507/509_reading.md`, `_en.md`. **f. 3 (HCPortal 496) now reads**
+(clean share 0.667, B): the garrisons' upkeep, the end of the contributions, the safe-conduct for envoys to Cologne.
+ff. 14, 15-16 and 28-29 (with the duplicate 30-31 as control copy, `HCP507_corrections.tsv`) build German sentences around
+the codes but stay decoded, not read (0.167, 0.375, 0.437): two to six open codes or signs in most sentences. ff. 32-33:
+the French letter of "232" transcribed from the scan and read (0.77 as French); the German extracts in the second hand
+not re-transcribed, so the record stays decoded, not read (0.545 overall). Key unchanged; the crossed H (ll and tt) and
+the lone 7 (st, ö, b) have no single value and are left open. fraction_read 0.436 -> 0.480 (4,923 of 10,246).
+
 The numerical-cipher result below is Bourdeau's work. The contribution integrated on 2 October 2026 concerns
 the separate ten-line alphabetic block of 7/17 January 1637. Its repeating shifts are **4, 5, 3, 6, 2** over
 **abcdefghiklmnopqrstuwxyz**. The literal output, proposed German reading and translation are kept separate in
@@ -239,9 +248,10 @@ The alphabetic contribution does not change Bourdeau's numerical-cipher numerato
 fraction or measured coherent fraction is claimed.
 
 ## Remaining gaps
-- ff. 3, 14, 15-17, 28-29 (with duplicate 30-31) and 32-33 decoded, not read (5,778 tokens) - blocker: not-attempted; close up word division, re-check bracketed letters on the images, build sentences around the codes, translate; ff. 32-33 need a new look at the transcription
-- about 40 three-digit codes and name signs (193 tokens: 120, 122, 129, 140, 148, 176, 193, 212 ... V, K, f, 4#, +, AA, GG ...) - blocker: open-codes; mostly single occurrences, five valued from context (128, 130, 188, 253, 273, grade I)
-- alphabetic 43, 45 and LL (three labels, five tokens) - blocker: open-codes; no primary key equation or named parallel, and no demonstrated shared nomenclature with the numerical system; LHA Koblenz 47/4400 remains uninspected
+- ff. 14, 15-16, 28-29 (with duplicate 30-31) decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375, 0.437; readings HCP502/503/507_reading.md) - blocker: no-key-material; the sentences build, but two to six open codes or signs stand in most of them; f. 14 also torn at the right edge
+- ff. 32-33 (HCPortal 509): French letter read; the German news extracts in the second hand not re-transcribed (clean share 0.545 overall) - blocker: not-attempted; transcribe the clear words of the extracts on the scan (the cipher runs are decoded in HCP509_reading.md)
+- about 40 three-digit codes and name signs (193 tokens: 120, 122, 129, 140, 148, 176, 193, 212 ... V, K, f, 4#, +, AA, GG ...) - blocker: no-key-material; mostly single occurrences, five valued from context (128, 130, 188, 253, 273, grade I)
+- alphabetic 43, 45 and LL (three labels, five tokens) - blocker: no-key-material; no primary key equation or named parallel, and no demonstrated shared nomenclature with the numerical system; LHA Koblenz 47/4400 remains uninspected
 - alphabetic source alternatives in lines 3, 6, 7, 8, 9 and 10, plus the blot - blocker: illegible; selected 510-position branch and bounded alternatives retained; a human comparison with the original or better authentic imaging is needed to decide ambiguous strokes and the blot's extent
 - alphabetic residual forms tqouppen, itzigdn and er ... wurden - blocker: no-key-material; the alphabetic mechanism is recovered, but no independent primary parallel or fair copy has been located to establish the intended forms; literal output and conjectures remain separate, and physical access has not been shown necessary
 - exact reading of the annotation - blocker: illegible; [E?]: Sixt: / cla: remains tentative; a clearer authentic image or comparison with the same hand is needed before expanding it
@@ -254,6 +264,7 @@ fraction or measured coherent fraction is claimed.
 - [x] print: web and LAGIS search for an edition of the letters; none found
 - [x] key-rebuild: digit table annealed from the ciphertext and polished over all pages; signs and five codes valued from context
 - [x] retry: 236 unread groups re-checked against the scans (24 misreads, 2 doubled groups corrected, 210 confirmed)
+- [x] retry (22 Oct 2026, b08): the five unread records re-read sentence by sentence on the HCPortal scans; ff. 28-29 against the duplicate ff. 30-31 (9 readings taken from it); f. 32 one label corrected and the French letter transcribed; f. 3 now reads
 
 Alphabetic contribution, integrated 2 October 2026:
 
