@@ -1,13 +1,33 @@
 # R93 — Cardinal Alessandrino to the nuncio Castagna, cipher (Spagna 6/I/1, f. 6r): reading
 
-Written 23 Oct 2026 (Claude Opus 5.5, verification 4) from the decode of `reread_aless_decode.py` (George Lasry's
-reconstructed key, extended by the contemporary decipherments of R94, R95 and R100: 9 = con, 00. = et, X0Y codes, the
-new code values; beam search with the it-cinquecento model), run on `../decode/DOC_R93_*.txt`, word-divided. The
-earlier decode in `R93_decryption.txt` was used where it agreed. No contemporary decipherment of this letter is
-known. Spelling as the figures give it (single consonants where the cipher writes one); codes written as words in
-roman (*Nostro Signore*, *Sua Santità*, *Re*); nothing modernised. Marks: `[?word]` partly carried or a beam choice not
-checked on the figures, `[…]` letters that give no word, `[4040]` an unidentified code, `[x]` letters supplied.
+Rests on: the contemporary decipherment on the slip bound as f. 8 of the same file (`R93_decifrato_f8r.txt`, DECODE
+cleartext image DOC_R93_D1216), found 23 Oct 2026 (r2g), checked figure by figure against the key
+(`python reread_aless_align.py decode/DOC_R93_D1664_1664.txt 006r.jpg texts/R93_reading.md`). Where the decipherer
+and the figures differ the figures are followed: "officio" (8 = c) for his "offitio"; 1010 N.S. for his "S.S.";
+"voluta" (… 1 4) for "voluto"; "asecurandola" (4 5 6 8 …) for "assicurandola"; 3010 Re alone for his "Re Catholico";
+he added "S.M." after "perché" (4^. 8) with no figures for it. "Al Re di Francia" is 4 0 4010 (see the notes).
+New code values from this decipherment: 2010 Imperatore (his "Imper.re"; the code carries no article), 8020 avviso,
+4010 Re di Francia; 5090 qui and 1050 Francia confirmed. The decode of 23 Oct
+(`R93_decryption.txt`, beam search) is superseded.
+Marks: [?word] partly carried, […] unread, [word] supplied.
 
 ## Reading
 
-[?È] [1060] ricercato qui da alcuni amorevoli della corona di Francia a fare officio più [04.] [?…] una delle sue figliole per moglie [4040] lettere, a qual pratica Nostro Signore non ha voluta movere, non sapendo l'animo di Re in questa parte. Per[ò] [5010] con [?…] potrà scoprire qui quello, maniera che le parerà più opportuna et conveniente, asecurandola che [?…] non è per farne parola mai, se prima non sa[pere] Sua Maestà [?…] l'intentione sta espresamente et saputa, che [?…] [?…] et che la prima commodità […]
+N.S. è ricercato qui da alcuni amorevoli della corona di Francia a fare officio con Imperatore perché si contenti
+dare una delle sue figliole per moglie al Re di Francia; la qual pratica N.S. non ha voluta movere, non sapendo
+l'animo di Re in questa parte. Però V.S. potrà scoprirlo con quella maniera che le parerà più opportuna et
+conveniente, asecurandola che N.S. non è per farne parola mai se prima non saperà qual sia l'intentione sua
+espressamente; et saputa che […] l'habbia, mi ne darà avviso con la prima commodità.
+
+## Notes on the figures
+
+- "è ricercato": 1010 6 0 7 2 8 6 7 8 4 1 5; "qui" 5 0 9 0; "Francia" 1 0 5 0, then 4 = "a".
+- "con Imperatore": 0 9 (con) 0 2 0 1 0 — 2010 is the Emperor (the decipherer "l'Imper.re"; R96's "l'Imp.re").
+- "perché": dotted 4 + 8, as in R95. The decipherer's "S.M." after it has no figures.
+- "al Re di Francia": figures 4 0 4 0 1 0 between "moglie" (2 5 3 4 2 6) and "la qual" (4 4 0 3 0 9 4): 4 = a,
+  then 4010 = Re di Francia, as in R96 ("tra Imperatore et Re di Francia"), not Lasry's "Sua Santità".
+- "l'animo di Re in questa": 4 6 2 2 5 0 7 2 0 3 0 1 2 6 0 6090 — 301 is 3010 Re written X0Y.
+- "espressamente": 6 5 9 7 6 5 4 3 0 6 0 (3060 = -mente); the decipherer split it "espres|sam.te".
+- "che […] l'habbia": 2 0 9 | 6 5 4 0 4 4 8 2 4; the decipherer wrote "che l'habbia"; 6 5 4 not read.
+- "avviso": 8 0 2 0 (8020, new; also in R101 and R99).
+- End: 0 9 3 7 9 3 is the clerk's filler.

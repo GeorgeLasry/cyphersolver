@@ -1,6 +1,6 @@
 # János Pápai (Constantinople) to Ferenc Rákóczi II, 1706–1710, in the envoy key R580 — DECODE R740, R741, R757, R765, R784, R793–R796, R805, R823
 
-Status: in progress (23 Oct 2026: R793, R796, R740 decoded, not read; see Verification 4) — earlier: read — the eleven numeric letters read with the envoy's own key (second pass: 16,641 of 16,698 numeric
+Status: in progress (23 Oct 2026, r2g: R793 and R796 re-transcribed on the images and read; R740 decoded, not read, no key material) — earlier: read — the eleven numeric letters read with the envoy's own key (second pass: 16,641 of 16,698 numeric
 groups, 99.7%; 16,641 of ~16,739 with DECODE's '?' tokens, 99.4%); the open groups are DECODE transcription slips.
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R795 was graded C for its "·" marks; they are the 251 declared nulls (groups above 322), not gaps, and without them R795 reads like the other ten letters. Per-document C overturned to B; claim unchanged.
 
@@ -167,16 +167,39 @@ written inside the cipher passage. v2_score, explicit holes (the hu word list do
 Class read -> read in part; fraction_read 0.994 -> 0.857 (groups in letters that read, documents table). R805 and
 R795 were not in the v4 list and are unchanged.
 
+## Re-read r2g, 23 Oct 2026: R793 and R796 re-transcribed on the images
+
+The DECODE images of both letters (IMG_R793_I4441-4444, IMG_R796_I4453-4456) were fetched with the project cookie
+(scratchpad only) and every line of figures checked against FK's transcription at native resolution. Corrected copies:
+`texts/R793_transcription_corrected.txt`, `texts/R796_transcription_corrected.txt`; changes in `texts/R79x_corrections.tsv`.
+New decoder `research/reading_audit/r2g_papai_dec.py` (decode2.py's rules; keeps figure lines that also carry a
+`<PLAINTEXT>` tag, which decode2.py dropped whole; `--map` for a look-alike override).
+
+- **R796**: the v4 "decode lines 16-19 repeat letters" was FK dropping p. 1 l. 17 and copying half of l. 18 twice; on
+  the image: *de mivel az armistitium[k] articulusa praeiudicál, úgy látom difficilisek ebben fermánt adgyanak az
+  vaidának*. Nine more slips. 87 (key: Moskva Ország) is read as 81 *ar* in *armistitium* / *articulus* (four times)
+  and 187 (Bavaria) as 181 *bü* once, with the interlinear decipherer: 0.75% of letters, under the 3% limit.
+  v2_score explicit holes 0.577 -> 0.692 (hole rate 0.106, 310 words). Read.
+- **R793**: decode2.py had skipped eight figure lines (those with a `<PLAINTEXT>` tag: *részben praesentáltunk*, *az
+  ombn az arrul való proiectumunkat*, …); FK left out one line of p. 4 and dropped 98 (Constancz) in the date; about
+  twenty split, joined or slipped groups (909 -> 309, 21 0 2 -> 102, 11 5 -> 115 *az Tana*). The Muscovite frontier now
+  reads (*az muszkák és az Fényes Porta között fenforgó határi kigazításárul … az Tana mellett való határ*); the Black
+  Sea passage holds in outline. Date read: 16 March 1706. v2_score explicit holes 0.529 -> 0.692 (hole rate 0.085, 471
+  words). Read.
+
+fraction_read 0.857 -> 0.990 (16,693 of 16,861 groups in letters that read). R740 stays decoded, not read (no key
+material); class stays read in part.
+
 ## Remaining gaps
 - 57 numeric groups across R757, R765, R793–R796, R823 - blocker: illegible; split or slipped digits in DECODE's transcriptions that no key value fits by context (retry_groups.tsv); about 41 further tokens marked '?' by DECODE
 - Benda (ed.), Pápai János törökországi naplói (1963) - blocker: needs-physical-access; not online
-- R796, R793: garbled stretches of the decode (decoded, not read, 23 Oct 2026) - blocker: not-attempted; re-transcribe the digits on the DECODE images and align with the full interlinear decipherment
+- R796, R793 (read 23 Oct 2026, r2g): short stretches inside the readings - R793 a name on p. 1 (*Ingsinepigolop nevü*) and parts of the Black Sea passage, R796 the closing lines before the signature - blocker: no-key-material; the figures were checked on the images and agree with the corrected transcription, and no key value or interlinear gloss carries them
 - R740: middle of the 168-group passage - blocker: no-key-material; transcription agrees with the image, the slips are the writer's, no other text known
 
 ## Escalation
 - [x] siblings: twelve Papai records (R793–R796 added from catalogue 47) plus key copies R580, R581, R452 opened
-- [x] clear-pages: interlinear decipherments of R793–R796 and R805 used; R581's corner sign line checked (cipher, not an alphabet)
+- [x] clear-pages: interlinear decipherments of R793–R796 and R805 used (23 Oct 2026: R793/R796 images opened at full resolution; the interlinear glosses stop after the first lines, FK's copy is complete for what is there); R581's corner sign line checked (cipher, not an alphabet)
 - [x] known-keys: R580/R581/R452 applied to all eleven numeric letters; no graphic alphabet among them
 - [x] print: Benda 1963 searched for online (antikvarium.hu only); DECODE and web searched, nothing printed online
 - [x] key-rebuild: numeric key extended (220 = a, splits, joins, nulls above 322, decode2.py)
-- [x] retry: every off-key group rescored in context (retry_groups.py) and regraded; 57 remain; 23 Oct 2026 readings word-divided for nine letters (Verification 4); R793/R796 image re-transcription still open
+- [x] retry: every off-key group rescored in context (retry_groups.py) and regraded; 57 remain; 23 Oct 2026 readings word-divided for nine letters (Verification 4); same day (r2g) R793/R796 re-transcribed on the DECODE images and read

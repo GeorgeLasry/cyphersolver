@@ -516,6 +516,20 @@
    "kind": "reading",
    "what": "Verification 4: the nine Hungarian entries the sweep could not score (unspaced decodes) written out as word-divided readings (texts/<rec>_reading.md) from decode2 output, using the transcriber's copy of the contemporary interlinear decipherment where the DECODE file has it (R793, R794, R796), and the clear words inside R740's passage. Explicit-hole scores: R784 0.90, R741 0.718, R794 0.70, R765 0.698, R823 0.649, R757 0.628 (kept read, English written); R796 0.577, R793 0.529, R740 0.50 (demoted to decoded, not read).",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "r2g: R793 and R796 DECODE images (IMG_R793_I4441-4444, IMG_R796_I4453-4456) fetched with the project cookie (scratchpad only) and the digits checked line by line at native resolution against FK's transcriptions. R796: p. 1 l. 17 had been dropped and half of l. 18 repeated (the v4 'repeating letters'), nine further slips. R793: decode2.py had skipped eight figure lines that carry a <PLAINTEXT> tag; one p. 4 line missing in the transcription; about twenty split/joined/slipped groups; 98 (Constancz) in the date. Corrected copies texts/R79x_transcription_corrected.txt, changes in R79x_corrections.tsv; decoder research/reading_audit/r2g_papai_dec.py (decode2 rules, PLAINTEXT lines kept, --map for look-alike overrides).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["manual reconstruction", "contextual inference"],
+   "what": "r2g: R793 and R796 re-read word by word on the corrected decodes beside the interlinear decipherment copy; 87 (Moskva Ország) read as 81 'ar' in armistitium/articulus (4x in R796), 187 as 181 'bü' once (0.75% of letters). v2_score explicit holes: R796 0.577 -> 0.692, R793 0.529 -> 0.692. English written. Both decoded, not read -> read; R740 stays decoded, not read.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -528,9 +542,9 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.857,
+  "fraction_read": 0.99,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode2.py over the DECODE transcriptions of the eleven numeric letters: 16,641 of 16,698 numeric groups (nulls counted read); the ~41 tokens DECODE marks '?' added as unread: 16,641/~16,739. Before the split R731's ~330 signs were also counted unread (0.97). Verification 4, 23 Oct 2026: R796 (1,025), R793 (1,226) and R740 (168 groups) demoted to decoded, not read; groups in letters that read, by the documents table: 14,442 of 16,861 = 0.857.",
+  "fraction_read_source": "decode2.py over the DECODE transcriptions of the eleven numeric letters: 16,641 of 16,698 numeric groups (nulls counted read); the ~41 tokens DECODE marks '?' added as unread: 16,641/~16,739. Before the split R731's ~330 signs were also counted unread (0.97). Verification 4, 23 Oct 2026: R796 (1,025), R793 (1,226) and R740 (168 groups) demoted to decoded, not read (0.857). r2g, 23 Oct 2026: R793 and R796 re-transcribed on the images and read; groups in letters that read, by the documents table: 16,693 of 16,861 = 0.990 (R740's 168 groups open).",
   "key": "partial",
   "codes_open": {
    "tokens_open": 57
@@ -549,7 +563,7 @@
    {
     "item": "57 numeric groups across R757, R765, R793-R796, R823 (+~41 '?' tokens)",
     "blocker": "illegible",
-    "detail": "split or slipped digits in DECODE transcriptions; no key value fits by context"
+    "detail": "split or slipped digits in DECODE transcriptions; no key value fits by context (R793 and R796 re-checked on the images 23 Oct 2026: their remaining holes are the writer's)"
    },
    {
     "item": "Benda (ed.), Papai Janos torokorszagi naploi (1963)",
@@ -557,9 +571,9 @@
     "detail": "not online"
    },
    {
-    "item": "R796 and R793: garbled stretches of the decode (decoded, not read)",
-    "blocker": "not-attempted",
-    "detail": "re-transcription of the digits on the DECODE images, aligned with the contemporary interlinear decipherment (copied only in part in the DECODE files), not yet done"
+    "item": "R793 and R796: short stretches inside the readings (R793 a name on p. 1 and the Black Sea passage, R796 the closing lines)",
+    "blocker": "no-key-material",
+    "detail": "figures checked on the images agree with the transcription; no key value or interlinear gloss carries them"
    },
    {
     "item": "R740: middle of the 168-group passage",
@@ -607,30 +621,36 @@
    {
     "doc": "R796",
     "label": "R796, 20 Feb 1706, Constantinople",
-    "transcription": "DOC_R796_D2406_2406.txt",
-    "decryption": [
-     "R796_read2.txt",
-     "DOC_R796_read.txt"
-    ],
-    "summary": "The Prince's undated letter from the Tisza received; the Germans spread false news; the confederates are scorned; the Moldavian kapi-kiaya as channel; the Muscovite envoy, the Vezír and the Sultan; nothing resolved on the propositions.",
+    "transcription": "texts/R796_transcription_corrected.txt",
+    "decryption": ["R796_read2.txt", "DOC_R796_read.txt"],
+    "summary": "The Prince's undated letter from the Tisza received; German false news believed neither by the Turks nor the confederates; the plea for those trapped in Moldavia blocked by the armistice articles, so the Moldavian kapukehaya and the serdar of Babadag (former pasha of Belgrade) are to be used; the Porte, frightened by the last war, will not prejudice the armistice nor help the Prince; nothing resolved on the propositions. Constantinople, 20 Feb 1706.",
     "language": "hu",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): a word-divided reading was written from the decode (texts/R796_reading.md, kept as a partial reading) and scored with v2_score: explicit holes 0.577 (15/26), hole rate 0.173, 306 words: the first half (the Prince's letter, the false German news) reads; from the Moldavian petition on, decode lines 16-19 repeat letters and much of the rest (the Muscovite ministry, the Vizier and the Sultan) holds only in outline. The interlinear decipherment copied in the DECODE file covers only decode lines 0-15.",
-    "state": "decoded, not read",
-    "reading": "texts/R796_reading.md"
+    "state": "read",
+    "reading": "texts/R796_reading.md",
+    "translation": "texts/R796_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r2g 23 Oct 2026: digits re-transcribed on the DECODE images IMG_R796_I4453-4456 (texts/R796_transcription_corrected.txt, R796_corrections.tsv: FK had dropped p. 1 l. 17 and repeated half of l. 18 - the 'repeating letters' of the v4 check - plus nine slips) and decoded with r2g_papai_dec.py (decode2 rules), read beside the transcriber's copy of the interlinear decipherment. v2_score explicit holes 0.692 (18/26), hole rate 0.106, 310 words (plain 0.077: the hu word list does not know 1706 spelling). Look-alike alternates: 87 read as 81 'ar' four times (armistitium, articulus), 187 as 181 'bü' once (with the interlinear decipherer): 10 of ~1,330 letters, 0.75%. Judged as a reader: the sentences hold except the closing lines before the signature. Grade B."
+    }
    },
    {
     "doc": "R793",
-    "label": "R793, March 1706, Constantinople",
-    "transcription": "DOC_R793_D2408_2408.txt",
-    "decryption": [
-     "R793_read2.txt",
-     "DOC_R793_read.txt"
-    ],
-    "summary": "Secret talks with the Porte's chancellor about the Muscovite-Porte quarrel, the King of Sweden, a Hungarian confederation with the Porte on certain conditions, the Circassians and the Black Sea; the Prince's manifesto translated and given to the Vezír.",
+    "label": "R793, 16 Mar 1706, Constantinople",
+    "transcription": "texts/R793_transcription_corrected.txt",
+    "decryption": ["R793_read2.txt", "DOC_R793_read.txt"],
+    "summary": "Secret approaches to the Porte through the chancellor and the mufti about the unratified Muscovite peace and the Tana (Azov) frontier; with Sweden on the other side Poland could not hold out, and the Emperor is tied down by the French and Hungarian war; the Muscovite advances among the Astrakhanians, Circassians and Mingrelians and on the Black Sea; the Vizier asks whether the Hungarians would ally with Sweden; the Prince's manifesto translated and given to the Vizier; the envoy will pay nothing. Constantinople, 16 Mar 1706.",
     "language": "hu",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): a word-divided reading was written from the decode (texts/R793_reading.md, kept as a partial reading) and scored with v2_score: explicit holes 0.529 (18/34), hole rate 0.157, 381 words: the opening, the confederation 'certis conditionibus' and the manifesto read; the Muscovite frontier, Circassian and Black Sea passages are too garbled to divide into sentences. The interlinear decipherment copied in the DECODE file covers only decode lines 0-5.",
-    "state": "decoded, not read",
-    "reading": "texts/R793_reading.md"
+    "state": "read",
+    "reading": "texts/R793_reading.md",
+    "translation": "texts/R793_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r2g 23 Oct 2026: digits re-transcribed on the DECODE images IMG_R793_I4441-4444 (texts/R793_transcription_corrected.txt, R793_corrections.tsv): decode2.py had skipped every figure line that also carried a <PLAINTEXT> tag (eight lines), FK had left out one line of p. 4 and dropped 98 (Constancz) in the date, and about twenty groups were split, joined or slipped; decoded with r2g_papai_dec.py and read beside the transcriber's copy of the interlinear decipherment. v2_score explicit holes 0.692 (27/39), hole rate 0.085, 471 words (plain 0.0: 1706 spelling). Look-alike alternates: none. Judged as a reader: most sentences hold; the Black Sea passage (p. 2 ll. 14-24) and one name on p. 1 remain in outline. Grade B. Date: 'tizenhatodik Martius' = 16 March 1706."
+    }
    },
    {
     "doc": "R794",

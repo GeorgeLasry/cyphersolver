@@ -27,9 +27,10 @@ chiarire). A doubled letter is enciphered once.
 | code | Lasry 2020 | 22 Oct 2026 |
 |---|---|---|
 | 1010 | Nostro Signore | (dec. also writes S.S.) |
-| 1020, 4010, 9010 | Sua Santità | |
+| 1020, 4010, 9010 | Sua Santità | **1020 = esser** (dec. R96 context); **4010 = Re di Francia** (dec. R93, R96, R97); 9010 not met |
 | 1040 | Regina di Francia? | **lettere** (dec. R95) |
-| 1050 | Francia | |
+| 1050 | Francia | (dec. R93, R98) |
+| 2010 | — | **Imperatore** (dec. R93, R96); R115 has it where the decipherer writes N.S. |
 | 1090 | Vostra Signoria | |
 | 2020 | con? | |
 | 2040 | Concilio | |
@@ -51,7 +52,15 @@ chiarire). A doubled letter is enciphered once.
 | 5090 | qui | |
 | 6050 | — | **Imbasciatore [di Francia]** (dec. R95, twice; with 7070 before it once) |
 | 6060 | — | **Inquisitione** (written 6 0 6; dec. R100) |
+| 6020 | — | **causa / negocio** (dec. R99, R115) |
+| 6030, 3050 | — | **Italia** (dec. R98; 3050 also R97, written 3 0 5) |
+| 7030 | — | **Cardinale** (dec. R102, Espinosa) |
+| 7040 | — | **galere** (dec. R99) |
+| 8020 | — | **avviso** (dec. R93, R96, R99) |
+| 8070 | — | **Ugonotti** (dec. R97, R98) |
+| 9090 | — | **havendo** (dec. R99; fits R101) |
 | 6090 | quel | a demonstrative: **questa / queste / questo** in the decipherments |
+| 7070 | — | **Imbasciatore** (dec. R97; + 2 = plural) |
 | 7090 | quello | quello / quella / quelle / quelli |
 | 8010 | Re di Francia | |
 | 8090 | sauere? | **havere** (R101 "possano havere notarii") |
@@ -59,7 +68,11 @@ chiarire). A doubled letter is enciphered once.
 | 9060 | questa | |
 | 30^.9 / 3 0 9 | qua | also undotted (quale, quali, di qua) |
 | 0^.0 (00.) | — | **et** (dec. R94, four times) |
-| 4^. + 8 | — | **perché** (dec. R95, twice) |
+| 4^. + 8 | — | **perché** (dec. R95, twice; R93, R98) |
+| 1^. + 8 | — | **ancora** (dec. R94, R98, R115) |
+| 9^. + 8 | — | **acciò** (dec. R115) |
 
-Unresolved: 9090, 6020, 8020, 7070 (with 6050), dotted [01.] (R94 "anchora"?), [03.], [08.] (R95, the Crusade?),
+Extended again 23 Oct 2026 (r2g) from the decipherments of R93, R96-R99, R102, R115.
+
+Unresolved: 4050, 9070 (R115 "risposta"?), 2020 (R99), dotted 3 + 8 (R115), dotted 3 + 4 (R97, "Principe di Condé" in the decipherment), 4060 5050 (R97, "il Duca di Ferrara" in the decipherment), dotted [01.] (R94 "anchora"?), [03.], [08.] (R95, the Crusade?),
 [3.] (R95, a person), and the other dotted groups listed in NOTES.md.

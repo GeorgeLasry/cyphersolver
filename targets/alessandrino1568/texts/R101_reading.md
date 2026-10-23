@@ -14,7 +14,7 @@ Marks: [?word] partly carried, […] unread, [NNNN] unidentified code.
 Per instruttione di V.S., [?saperà] che N.S. accettò [?ultimamente] la chinea et li denari soliti che si pagano il
 giorno di San Pietro, ma con protesta del fisco, alla quale N.S. aderendo, cioè che non [?l'ha] accettata per censo
 ma li frutti di quello regno, feudo diretto di questa santa Sede, pretende la devolutione per molti capi
-dell'investitura de Iulio secondo et de Iulio terzo, sante memorie. [9090] Re overo suoi ministri di ordine suo
+dell'investitura de Iulio secondo et de Iulio terzo, sante memorie. Havendo Re overo suoi ministri di ordine suo
 suscitato un manifesto scisma in quello regno, sì come si potrà chiarire ogni persona aliena da passioni, levando la
 obedientia alla Sede Apostolica, onde né li vescovi né loro vicarii possano havere notarii che li servano né
 esecutori, che per la più parte facendo il loro offitio non siano dalli ministri regii carcerati; et […] da questa un
@@ -23,7 +23,7 @@ dicono, N.S. haverà patienza et pregarà il Signor Dio che liberi sua santa Chi
 Re dal giuditio de Dio, il quale suole ben permettere che la sua Chiesa sia travagliata, ma alla fine chi la
 travaglia non ne sarà senza castigo, et chi è disobediente a Dio et al suo vicario non sarà meraviglia se perderà la
 obedientia de' suoi sudditi. Per[ò] quando Re non si risolva di rimediarvi presto, N.S. sarà necessitato a pigliarvi
-qualche provisione [6020] [8020] di V.S.
+qualche provisione [6020]. Avviso di V.S.
 
 ## Notes on the figures
 
@@ -32,8 +32,8 @@ qualche provisione [6020] [8020] di V.S.
   4 3 0 6 0.
 - "[?l'ha]": figures 4 2 (l/a i/m).
 - "Iulio secondo": 2 5 4 2 5 (the second Iulio is 2 1 4 2 5); "terzo" is 1 6 7 0^. 5 with the dotted zero for z.
-- "[9090]": an unlisted code before 3010 (Re); the verb of the sentence ("hanno"?) is not enciphered separately.
+- "Havendo": 9090, attested as "havendo" by the decipherment of R99 (23 Oct 2026, r2g; earlier an unlisted code).
 - "et […]": one illegible group (DECODE "?") after the dotted et.
 - "[?Sora]": 5 5 7 4 (o/s o/s d/r a/l).
 - "chi" is written with the code for "che" (2 0 9): chinea, Chiesa (twice), chiarire; "chi" (whoever) is 2090.
-- "[6020] [8020] di V.S.": two unlisted codes at the end, before the padding.
+- "[6020]. Avviso di V.S.": 8020 = avviso and 6020 = causa / negocio in the decipherments of R93, R96, R99, R115 (r2g); 6020 does not fit here and stays open.

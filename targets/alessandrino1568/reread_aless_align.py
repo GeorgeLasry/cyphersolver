@@ -29,8 +29,10 @@ POLY, NOM, parse = ns['POLY'], ns['NOM'], ns['parse']
 ALIAS = {'1010': ['ns'], '3010': ['sm', 'suamaesta'], '4030': ['sm'], '1020': ['ss'], '4010': ['ss'], '9010': ['ss'],
          '1090': ['us'], '3060': ['mente'],
          # values first attested by the contemporary decipherments (reread batch aless, 22 Oct 2026)
-         '1040': ['lettere'], '3020': ['quando'], '4040': ['milano', 'come'], '6050': ['imbasciatore', 'imbasciatoredifrancia'],
-         '7070': ['l', 'il'], '2050': ['spagna'], '2090': ['chi'], '8090': ['hauere']}
+         '1040': ['lettere', 'lettera'], '3020': ['quando'], '4040': ['milano', 'come'], '6050': ['imbasciatore', 'imbasciatoredifrancia'],
+         '7070': ['l', 'il'], '2050': ['spagna'], '2090': ['chi'], '8090': ['hauere'],
+         # r2g (23 Oct 2026): values first attested by the decipherments of R93, R96-R99, R102, R115
+         '2010': ['imperatore', 'imperatrice'], '8020': ['auuiso'], '4010': ['redifrancia'], '1020': ['esser', 'essere'], '8070': ['ugonotti'], '3050': ['italia'], '6030': ['italia'], '7040': ['galere'], '9090': ['hauendo'], '6020': ['causa'], '4080': ['et'], '7070': ['l', 'il', 'imbasciatore', 'imbasciatori'], '6050': ['imbasciatore', 'imbasciatoredifrancia'], '4060': ['questo', 'ilducadi'], '5050': ['ferrara'], '1050': ['francia'], '7030': ['cardinale'], '6020': ['causa', 'negocio']}
 # demonstratives: Lasry's glosses for these codes are approximate (6090 'quel' is 'questa' in a decipherment)
 QW = {'quel', 'quello', 'quella', 'quelli', 'quelle', 'questo', 'questa', 'questi', 'queste'}
 
@@ -102,6 +104,12 @@ def align(items, words):
                     if g == '39' and tgt.startswith('qua', j):
                         relax(i + 1, j + 3, 0.0, 'dot:qua')
                     relax(i + 1, j, 0.2, 'dot:' + g)
+                    # r2g: dotted group + 8 (with or without a null between) = a word sign: 1.8 ancora, 4.8 perche, 9.8 accio
+                    for skip in (1, 2):
+                        if i + skip < n and items[i + skip] == '8' and all(x == '0' for x in items[i + 1:i + skip]):
+                            for w in {'1': ['ancora', 'anchora'], '4': ['perche'], '9': ['accio']}.get(g[-1], []):
+                                if tgt.startswith(w, j):
+                                    relax(i + skip + 1, j + len(w), -0.3, 'dot8:' + w)
                 elif it == '0':
                     relax(i + 1, j, 0.0, 'null')
                 elif it == '?':
@@ -189,9 +197,14 @@ def show(items, words, path, tgt, codes=False):
 
 def main():
     tr, img, rd = sys.argv[1:4]
-    pages = dict(parse(tr))
-    items = pages[img]
+    pages = parse(tr)
+    # r2g: 'all' (or a+b) = the pages' figures run together, for a decipherment covering several pages
+    if img == 'all':
+        items = [x for _, its in pages for x in its]
+    else:
+        items = [x for k in img.split('+') for x in dict(pages)[k]]
     text = open(rd, encoding='utf-8').read()
+    text = chr(10).join(l for l in text.splitlines() if not (l.startswith('#') and not l.startswith('##')))  # r2g: header comments
     if rd.endswith('.md'):
         # only the reading itself: the lines under '## Reading' up to the next heading
         text = text.split('## Reading', 1)[1].split(chr(10) + '## ', 1)[0]

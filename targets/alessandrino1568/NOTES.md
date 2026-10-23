@@ -1,6 +1,6 @@
-# Cardinal Alessandrino to the nuncio in Spain, 1568–69 — read in part
+# Cardinal Alessandrino to the nuncio in Spain, 1568–69 — read
 
-Status: in progress (23 Oct 2026, verification 4: seven letters demoted to decoded, not read; four read: R94, R95, R100 from their contemporary decipherments, R101 on the figures).
+Status: read (23 Oct 2026, r2g: all eleven letters read; R93, R96-R99, R102, R115 from the contemporary decipherments found on their DECODE cleartext images). Not yet written up again for the site.
 
 **22 Oct 2026, reading audit** (George Lasry's test): R93, R96, R97, R98, R99, R102 and R115 build Italian sentences with scattered slips; **R94, R95, R100 and R101 are decoded, not read**: the beam search's digit choices corrupt words in most of their sentences (R94 "liberagemptume", R95 "desersaleaniosina", R100 ends in ??????, R101 "unmannifestsobismain"). Claim read -> read in part; 7,036 of 10,555 items (66.7%) in letters that read.
 
@@ -96,19 +96,38 @@ kept). Class read -> read in part; fraction_read 1.0 -> 0.333 (3,519 of 10,555 i
 way forward is the one that worked for R94-R101: open these records' DECODE cleartext images for contemporary
 decipherments, then re-read on the figures with `reread_aless_align.py`.
 
+## Re-read r2g, 23 Oct 2026: the seven demoted letters read from their decipherments
+
+Every DECODE image and attachment of R93, R96, R97, R98, R99, R102 and R115 (and the record pages of R92, R103, R114,
+R116) was opened at full resolution (`research/reading_audit/r2g_fetch.py`, project cookie, scratchpad only). **Each
+of the seven has its contemporary decipherment among the "cleartext" images**: R93 slip f. 8 (D1216), R96 slip f. 80
+(D1255; covering letter Rome 19 May 1568, f. 79), R97 f. 90r-v (D1264-65), R98 slip f. 139 (D1275), R99 leaf after f.
+169 (D1284), R102 slip f. 307 (D1308; covering letter docketed June-Aug 1569), R115 half-sheet with f. 641 (D1340).
+Transcribed as `texts/<rec>_decifrato_*.txt`, aligned with the figures (`reread_aless_align.py`, now with multi-page
+runs and dotted-group word signs) and read with the figures deciding where the decipherer differs
+(`texts/R93-R115_corrections.tsv`). Readings and English: `texts/<rec>_reading.md`, `_en.md`; log
+`texts/R93-R115_reread_log.md`. New code values (key.md): 2010 Imperatore, 4010 Re di Francia (not Lasry's Sua
+Santità), 1020 esser, 8020 avviso, 8070 Ugonotti, 3050/6030 Italia, 7040 galere, 9090 havendo, 6020 causa, 7030
+Cardinale, 7070 Imbasciatore, dotted 1+8 ancora, 9+8 acciò. Persons: Count Ercole Tassone, Piali Pasha (R97), Cardinal
+Espinosa (R102), Francisco de Reinoso for Monreale (R115).
+
+v2_score, explicit holes (before -> after): R93 0.375 -> 1.0, R96 0.429 -> 1.0, R97 0.486 -> 1.0, R98 0.333 -> 1.0,
+R99 0.45 -> 0.87, R102 0.556 -> 1.0, R115 0.167 -> 0.667. All seven decoded, not read -> read; class read in part ->
+read; fraction_read 0.333 -> 1.0 (10,555 / 10,555 items).
+
 ## Remaining gaps
 
-- R94 (2 short gaps): "9 0 4 0 2 0" before S.M. and the verb 6 2 4 7 6 after "comincia" - blocker: open-codes; the contemporary decipherer left the first unread and guessed the second; no other text of the letter (Serrano 1914 not reachable)
-- R95 (4 holes): dotted groups [08.] (the Crusade?) and [3.] (a person), "co[…]", "[?fece]" - blocker: open-codes; the decipherment is illegible at these words
-- R101 (5 holes): two places in row 1 under a burn and a hole in the paper, one illegible group in row 14, "[?Sora]", codes 9090, 6020, 8020 - blocker: illegible
-- R93, R96, R97, R98, R99, R102, R115: decoded, not read (23 Oct 2026) - blocker: not-attempted; their DECODE cleartext images not yet opened for decipherments, no figure-by-figure re-reading yet
+- R94 (2 short gaps): "9 0 4 0 2 0" before S.M. and the verb 6 2 4 7 6 after "comincia" - blocker: no-key-material; the contemporary decipherer left the first unread and guessed the second; no other text of the letter (Serrano 1914 not reachable)
+- R95 (4 holes): dotted groups [08.] (the Crusade?) and [3.] (a person), "co[…]", "[?fece]" - blocker: illegible; the decipherment is illegible at these words
+- R101 (5 holes): two places in row 1 under a burn and a hole in the paper, one illegible group in row 14, "[?Sora]", code 6020 (9090 havendo and 8020 avviso read 23 Oct from the R99/R93 decipherments) - blocker: illegible
+- R93, R96-R99, R102, R115 (read 23 Oct 2026): short unread runs and codes inside the readings - R93 one group; R96 the heretic's surname, [?quanto]; R97 four runs, "Duca di Ferrara" (4060 5050) and "Principe di Condé" (dotted 3+4) on the decipherer's word only; R98 [?possa], [?et]; R99 the stretch after d'Oria and the head of the Milan paragraph (2020, [02.] 1040); R102 three words; R115 codes 4050, 2010, 9070, dotted 3+8 and four runs - blocker: no-key-material; the decipherers left them blank or wrote words the figures do not carry, and the codes occur nowhere else
 - Serrano, Correspondencia diplomatica ... Pio V (1914): not checked - blocker: needs-physical-access (HathiTrust 403 from here, not on archive.org)
 
 ## Escalation
 
 - [x] siblings: all eleven Spagna 6/I and 6/II ciphers decoded with the same key; the R94/R95/R100 decipherments extended it and the extension read R101
-- [ ] clear-pages: cleartext images of R93, R96-R99, R102, R115 not yet opened. Done: 22 Oct 2026, all 45 DECODE cleartext images of R94, R95, R100, R101 looked at; decipherments found for R94 (f. 45r), R95 (f. 58r), R100 (f. 280r), none for R101; R94's covering letter dates it 7 Nov 1567
+- [x] clear-pages: 22 Oct 2026, all 45 DECODE cleartext images of R94, R95, R100, R101 looked at; decipherments found for R94 (f. 45r), R95 (f. 58r), R100 (f. 280r), none for R101; R94's covering letter dates it 7 Nov 1567. 23 Oct 2026 (r2g): every image of R93, R96-R99, R102, R115 opened; decipherments found for all seven (R93 f. 8, R96 f. 80, R97 f. 90r-v, R98 f. 139, R99 after f. 169, R102 f. 307, R115 with f. 641); neighbours R103 and R114 looked at
 - [x] known-keys: Lasry's reconstructed key (DECODE, 2020)
 - [x] print: 22 Oct 2026, Serrano 1914 searched again: not on archive.org, HathiTrust full text 403, Google Books API quota exhausted; Serrano's Liga de Lepanto (1918-19) begins in 1570 - not reached
-- [x] key-rebuild: 22 Oct 2026, key extended from the decipherments (9 = con, dotted 0 = z, 0^.0 = et, codes 1040, 3020, 3060, 4020, 4040, 4080, 5070, 6050, 6060, 8090); [01.], [03.], [08.], [3.], [4.]8 (= perché), 9090, 6020, 8020 partly or not resolved
-- [x] retry: 22 Oct 2026, R94, R95, R100, R101 re-read (texts/R94-R101_reread_log.md); all four build sentences; 23 Oct 2026 the other seven re-decoded with the extended key and word-divided: below the bar
+- [x] key-rebuild: 23 Oct 2026 (r2g) extended again (2010, 4010, 1020, 8020, 8070, 3050, 6030, 7040, 9090, 6020, 7030, 7070, dotted 1+8, 9+8); 22 Oct 2026, key extended from the decipherments (9 = con, dotted 0 = z, 0^.0 = et, codes 1040, 3020, 3060, 4020, 4040, 4080, 5070, 6050, 6060, 8090); [01.], [03.], [08.], [3.], [4.]8 (= perché), 9090, 6020, 8020 partly or not resolved
+- [x] retry: 22 Oct 2026, R94, R95, R100, R101 re-read (texts/R94-R101_reread_log.md); all four build sentences; 23 Oct 2026 the other seven re-decoded with the extended key and word-divided: below the bar; same day (r2g) read from their decipherments (texts/R93-R115_reread_log.md)

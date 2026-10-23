@@ -465,7 +465,9 @@
   {"date": "2026-10-22", "kind": "transcription", "what": "The three decipherments transcribed from the images (texts/R94_decifrato_f45r.txt, R95_decifrato_f58r.txt, R100_decifrato_f280r.txt); R95's is a fast draft, read partly with the figures. R101 transcription: a stray DECODE comment line that the parser read as five illegible items removed (texts/R101_transcription_corrected.txt).", "result": "worked", "technique": ["manual reconstruction"]},
   {"date": "2026-10-22", "kind": "verification", "what": "Decipherments aligned with the figures letter by letter (reread_aless_align.py, edit-distance DP over the two-letter figure sets). Agreement 89-94% of words; the disagreements located the key's gaps: 9 also = con, dotted 0 = z, 0^.0 = et, X0Y0 codes often written X0Y, doubled letters enciphered once, code values 1040 lettere (Lasry \"Regina di Francia?\"), 3020 quando, 3060 -mente, 4020 come, 4040 Milano, 4080 et, 5070/6050 Imbasciatore, 6060 Inquisitione; 6090 a demonstrative (questa/e).", "result": "worked", "technique": ["crib testing", "key-structure hypothesis"]},
   {"date": "2026-10-22", "kind": "reading", "what": "R94, R95, R100 read from the decipherments with the figures deciding where they differ; R101 re-decoded with the extended key (reread_aless_decode.py) and read word by word on the figures and the image (chinea, protesta del fisco, devolutione, Iulio secondo et Iulio terzo, notarii, carcerati; 8090 = havere, 209 = chi). English translations written. _check_reading.py on the bodies: 1.00, 0.94, 1.00, 0.84 clean. State decoded, not read -> read for all four; class read in part -> read.", "result": "worked", "technique": ["beam/DP decoding", "language-model scoring", "contextual inference", "manual reconstruction"]},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["beam/DP decoding", "language-model scoring"], "what": "Verification 4: R93, R96, R97, R98, R99, R102, R115 (unscored, unspaced decodes) re-decoded with the extended key (reread_aless_decode.py) and word-divided as texts/<rec>_reading.md. v2_score explicit holes 0.17-0.56 (R102 0.556, R97 0.486, R99 0.45, R96 0.429, R93 0.375, R98 0.333, R115 0.167): all seven demoted to decoded, not read. Their DECODE cleartext images have not been opened for contemporary decipherments.", "result": "failed"}
+  {"date": "2026-10-23", "kind": "reading", "technique": ["beam/DP decoding", "language-model scoring"], "what": "Verification 4: R93, R96, R97, R98, R99, R102, R115 (unscored, unspaced decodes) re-decoded with the extended key (reread_aless_decode.py) and word-divided as texts/<rec>_reading.md. v2_score explicit holes 0.17-0.56 (R102 0.556, R97 0.486, R99 0.45, R96 0.429, R93 0.375, R98 0.333, R115 0.167): all seven demoted to decoded, not read. Their DECODE cleartext images have not been opened for contemporary decipherments.", "result": "failed"},
+  {"date": "2026-10-23", "kind": "access", "technique": ["manual reconstruction"], "what": "r2g: opened every image and attachment of R93, R96, R97, R98, R99, R102, R115 and of the neighbours R103 and R114 on DECODE (project cookie; images in the session scratchpad only). Each of the seven has a contemporary decipherment among its 'cleartext' images: R93 f. 8 (D1216), R96 f. 80 (D1255; covering letter Rome 19 May 1568), R97 f. 90r-v (D1264-65), R98 f. 139 (D1275), R99 leaf after f. 169 (D1284), R102 f. 307 (D1308; covering letter 1569), R115 half-sheet with f. 641 (D1340). All seven transcribed at native resolution (texts/<rec>_decifrato_*.txt).", "result": "worked"},
+  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "r2g: each decipherment aligned with the figures (reread_aless_align.py, extended: 'all' joins pages, header comments skipped, dotted group + 8 word signs) and the reading written from the figures, the decipherment choosing between the two letters of each figure; figures followed where they differ. New code values: 2010 Imperatore, 4010 Re di Francia (Lasry: Sua Santita), 1020 esser, 8020 avviso, 8070 Ugonotti, 3050/6030 Italia, 7040 galere, 9090 havendo, 6020 causa, 7030 Cardinale, 7070 Imbasciatore; dotted 1+8 ancora, 9+8 accio. v2_score explicit holes: R93 1.0, R96 1.0, R97 1.0, R98 1.0, R99 0.87, R102 1.0, R115 0.667. English written. All seven decoded, not read -> read; class read.", "result": "worked"}
  ],
  "outcome": {
   "texts": [
@@ -473,11 +475,17 @@
     "doc": "R93",
     "transcription": "decode/DOC_R93_D1664_1664.txt",
     "decryption": "texts/R93_decryption.txt",
-    "summary": "Friends of the crown of France have asked that the Pope promote a marriage of one of the French King's daughters to His Catholic Majesty; the Pope would not move without knowing the King's mind, and the nuncio is to sound it.",
+    "summary": "Friends of the French crown ask the Pope to use his offices with the Emperor for a marriage of one of the Emperor's daughters to the King of France; the Pope will not move without knowing Philip II's mind, and the nuncio is to sound it discreetly and report.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R93_reading.md, kept as a partial reading); v2_score explicit holes 0.375 (3/8), hole rate 0.156, 90 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R93_reading.md"
+    "state": "read",
+    "reading": "texts/R93_reading.md",
+    "translation": "texts/R93_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, f. 8 (DOC_R93_D1216); transcribed (texts/R93_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 98 words, 4 disagree; v2_score explicit holes 1.0 (8/8), plain 1.0, hole rate 0.011. Figures followed where the decipherer differs. Holes: one unread group (6 5 4) before l'habbia; 'al Re di Francia' = 4 0 4010. Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    },
    {
     "doc": "R94",
@@ -515,41 +523,65 @@
     "doc": "R96",
     "transcription": "decode/DOC_R96_D1667_1667.txt",
     "decryption": "texts/R96_decryption.txt",
-    "summary": "Awaiting the nuncio's answer on the marriage; union of the three principal princes of Christendom; a heretic prosecuted by the Holy Office; the Hermits of St Jerome (Jeronimites).",
+    "summary": "Rome, 19 May 1568: the Pope awaits the answer on the Emperor-King of France marriage (hoping for a league of the three chief princes); Scipione [?Cuttinardo], charged as a heretic by the Holy Office, aspires to be Regent of the Collateral in Naples - the King to be told at once; difficulties over the order against the Jeronimites to be reported.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R96_reading.md, kept as a partial reading); v2_score explicit holes 0.429 (6/14), hole rate 0.176, 153 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R96_reading.md"
+    "state": "read",
+    "reading": "texts/R96_reading.md",
+    "translation": "texts/R96_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, f. 80 (DOC_R96_D1255; covering letter Rome 19 May 1568, f. 79); transcribed (texts/R96_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 157 words, 7 disagree; v2_score explicit holes 1.0 (12/12), plain 0.917, hole rate 0.025. Figures followed where the decipherer differs. Holes: surname [?Cuttinardo] and [?quanto] by sense. Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    },
    {
     "doc": "R97",
     "transcription": "decode/DOC_R97_D1668_1668.txt",
     "decryption": "texts/R97_decryption.txt",
-    "summary": "Bolognese exiles sheltered in the King's lands (the Cavaliere Gualengo), whom the King as the Holy See's feudatory for Naples must hand back; the Turk in Adrianople, a French ambassador there, and the German Protestants promising the Sultan help.",
+    "summary": "The Duke of Ferrara, displeased over the Bolognese exiles (Cavaliere Gualengo), may complain to the King through Count Ercole Tassone; the Pope's case under the investiture. The French ambassador in Constantinople offers to join Huguenots and Protestants with the Turks; in Adrianople he urged Piali Pasha to bring the fleet against Rome; his removal is to be sought.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R97_reading.md, kept as a partial reading); v2_score explicit holes 0.486 (18/37), hole rate 0.137, 422 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R97_reading.md"
+    "state": "read",
+    "reading": "texts/R97_reading.md",
+    "translation": "texts/R97_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, f. 90r-v (DOC_R97_D1264-D1265); transcribed (texts/R97_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 465 words, 26 disagree (mostly at the bracketed holes); v2_score explicit holes 1.0 (38/38), plain 0.868, hole rate 0.017. Figures followed where the decipherer differs. Holes: four short unread runs; 'il Duca di Ferrara' (4060 5050) and 'Principe di Conde' (dotted 3 + 4) rest on the decipherer's words. Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    },
    {
     "doc": "R98",
     "transcription": "decode/DOC_R98_D1669_1669.txt",
     "decryption": "texts/R98_decryption.txt",
-    "summary": "The King's orders to his ministers about the clergy are delayed by waiting for commissions.",
+    "summary": "The King's orders to his ministers in Italy against a Huguenot move into Italy are good, but ministers delay waiting for new commissions; the nuncio is to press for express orders now, so that the Pope can call on them in time for the security of Italy.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R98_reading.md, kept as a partial reading); v2_score explicit holes 0.333 (4/12), hole rate 0.258, 128 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R98_reading.md"
+    "state": "read",
+    "reading": "texts/R98_reading.md",
+    "translation": "texts/R98_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, f. 139 (DOC_R98_D1275); transcribed (texts/R98_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 134 words, 5 disagree; v2_score explicit holes 1.0 (11/11), plain 1.0, hole rate 0.015. Figures followed where the decipherer differs. Holes: [?possa] (figures 1 5 5 4) and [?et] (0^. 5); the closing group 9 5 6 5 6 4 0 9 6 1 6 3 0 6 0 not read. Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    },
    {
     "doc": "R99",
     "transcription": "decode/DOC_R99_D1670_1670.txt",
     "decryption": "texts/R99_decryption.txt",
-    "summary": "The Order of St John and its Grand Master; Don John of Austria; the Milan senate against the archbishop (Borromeo) over the Corpus Domini procession; the Pope will use spiritual arms.",
+    "summary": "The Pope's plan for two galleys of the Order of St Lazarus (sought from Gian Andrea Doria) opposed by Don John of Austria, whom the Pope answered sharply; in Milan the Senate threatened the archbishop's vicar over the armed household at the Corpus Domini procession, and the Pope will use spiritual arms.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R99_reading.md, kept as a partial reading); v2_score explicit holes 0.45 (9/20), hole rate 0.161, 242 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R99_reading.md"
+    "state": "read",
+    "reading": "texts/R99_reading.md",
+    "translation": "texts/R99_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, leaf bound after f. 169 (DOC_R99_D1284); transcribed (texts/R99_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 249 words, 15 disagree; v2_score explicit holes 0.87 (20/23), plain 0.783, hole rate 0.056. Figures followed where the decipherer differs. Holes: one stretch after d'Oria ([2020] ... inteso questo) and the opening of the Milan paragraph ([02.] [1040] ...) not read; code 2020 open. Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    },
    {
     "doc": "R100",
@@ -587,37 +619,49 @@
     "doc": "R102",
     "transcription": "decode/DOC_R102_D1672_1672.txt",
     "decryption": "texts/R102_decryption.txt",
-    "summary": "A prelate \"deputato in regno\" failing in his office; the Pope might have made him cardinal.",
+    "summary": "Summer 1569: the Pope thinks Cardinal Espinosa fails in his duty towards the Holy See at Philip II's court and has said he regrets making him cardinal; the nuncio may let him know if amendment can be hoped for.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R102_reading.md, kept as a partial reading); v2_score explicit holes 0.556 (5/9), hole rate 0.115, 122 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R102_reading.md"
+    "state": "read",
+    "reading": "texts/R102_reading.md",
+    "translation": "texts/R102_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, f. 307 (DOC_R102_D1308; covering letter docketed 27 June / 6 Aug 1569); transcribed (texts/R102_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 125 words, 4 disagree; v2_score explicit holes 1.0 (9/9), plain 0.556 (period spellings), hole rate 0.031. Figures followed where the decipherer differs. Holes: [?ha], [?essersi] (figures e-r-s-i), [?sua] (1 1 4). Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    },
    {
     "doc": "R115",
     "transcription": "decode/DOC_R115_D1685_1685.txt",
     "decryption": "texts/R115_decryption.txt",
-    "summary": "Spagna 6/II (1569): pensions on a see, the King's nomination, a commission; the Council.",
+    "summary": "Two months after asking (30 November) for the royal nomination of Francisco de Reinoso, the Pope's scalco, to the see of Monreale, with the transfer of the pensions on the archdeaconry of Toledo, the nuncio is to press Philip II for a speedy dispatch.",
     "language": "it",
-    "note": "Decoded, not read (v4 check 23 Oct 2026): the unspaced beam decode was re-run with the key as extended from the R94/R95/R100 decipherments (reread_aless_decode.py) and word-divided (texts/R115_reading.md, kept as a partial reading); v2_score explicit holes 0.167 (2/12), hole rate 0.301, 136 words. Polyphonic digits (each figure two letters) leave many words as beam choices not checked on the figures; no contemporary decipherment has been looked for on this record's DECODE cleartext images. Next: open those images, then re-read figure by figure with reread_aless_align.py, as R101 was.",
-    "state": "decoded, not read",
-    "reading": "texts/R115_reading.md"
+    "state": "read",
+    "reading": "texts/R115_reading.md",
+    "translation": "texts/R115_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Contemporary decipherment found 23 Oct 2026 (r2g) on the record's DECODE cleartext images, half-sheet bound with f. 641 (DOC_R115_D1340); transcribed (texts/R115_decifrato_*.txt) and aligned with the figures (reread_aless_align.py): 132 words, 19 disagree (most at bracketed holes); v2_score explicit holes 0.667 (8/12), plain 0.583, hole rate 0.115. Figures followed where the decipherer differs. Holes: codes 4050, 2010 (here where the decipherer has N.S.), 9070 and four short runs not read; the last sentence only partly carried. Look-alike alternates: none (polyphonic key: both letters of a figure are its own values; the decipherment chooses)."
+    }
    }
   ],"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 10258, "types": 32, "tokens_per_type": 320.56, "score": -2.81, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 26% of read tokens differ from their type's commonest value"}, 
   "method": "read with known key",
-  "method_basis": "George Lasry's 2020 reconstructed key was attached to every DECODE record R93-R102 and R115 before the attempt; it is polyphonic (each digit two letters, zero a null), so the text was chosen by a beam search scored with an Italian language model. On 22 Oct 2026 the contemporary decipherments of R94 (f. 45r), R95 (f. 58r) and R100 (under the cipher, f. 280r), on DECODE as cleartext images, were transcribed and aligned with the figures; they extended the key (9 = con, dotted 0 = z, 0^.0 = et, codes 1040 lettere, 3020 quando, 3060 -mente, 4020 come, 4040 Milano, 4080 et, 5070/6050 Imbasciatore, 6060 Inquisitione, 8090 havere), with which R101 was read on the figures.",
+  "method_basis": "George Lasry's 2020 reconstructed key was attached to every DECODE record R93-R102 and R115 before the attempt; it is polyphonic (each digit two letters, zero a null), so the text was chosen by a beam search scored with an Italian language model. On 22 Oct 2026 the contemporary decipherments of R94 (f. 45r), R95 (f. 58r) and R100 (under the cipher, f. 280r), on DECODE as cleartext images, were transcribed and aligned with the figures; they extended the key (9 = con, dotted 0 = z, 0^.0 = et, codes 1040 lettere, 3020 quando, 3060 -mente, 4020 come, 4040 Milano, 4080 et, 5070/6050 Imbasciatore, 6060 Inquisitione, 8090 havere), with which R101 was read on the figures. On 23 Oct 2026 the cleartext images of the other seven records were opened: each holds its contemporary decipherment, and R93, R96-R99, R102 and R115 were read from them with the figures deciding where they differ.",
   "contribution": ["decipherment with ambiguous key", "transcription", "key extended or corrected", "sender or date identified"],
-  "class": "read in part",
+  "class": "read",
   "key": "recovered",
-  "fraction_read": 0.333,
+  "fraction_read": 1.0,
   "verification": ["historical consistency"],
-  "notes": "R93, R96-R99, R102, R115: beam-search readings under Lasry's key, sense continuous, single letters model choices. R94, R95, R100: read from the contemporary decipherments checked against the figures. R101: read on the figures with the extended key. 22 Oct 2026, reading audit: R94, R95, R100, R101 decoded, not read; same day re-read (batch aless) and class back to read. Serrano 1914 not reached (HathiTrust 403, not on archive.org).",
+  "notes": "R93, R96-R99, R102, R115: beam-search readings under Lasry's key, sense continuous, single letters model choices. R94, R95, R100: read from the contemporary decipherments checked against the figures. R101: read on the figures with the extended key. 22 Oct 2026, reading audit: R94, R95, R100, R101 decoded, not read; same day re-read (batch aless) and class back to read. Serrano 1914 not reached (HathiTrust 403, not on archive.org). 23 Oct 2026 (verification 4) the seven beam readings demoted; same day (r2g) all seven read from their contemporary decipherments, class back to read.",
   "credits": [
     {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed polyphonic key (DOC_R9x_D32xx) attached to R93-R102, R115; his tentative glosses kept", "date": "2020-10-24", "source": "DECODE R93-R102, R115"},
-    {"who": "contemporary", "role": "key or decipherment used", "note": "decifrati of R94 (f. 45r), R95 (f. 58r) and R100 (f. 280r), bound in the nunciature file", "date": "1567-1569", "source": "DECODE R94, R95, R100 cleartext images"}
+    {"who": "contemporary", "role": "key or decipherment used", "note": "decifrati of all eleven letters except R101, bound in the nunciature files: R94 f. 45r, R95 f. 58r, R100 f. 280r (found 22 Oct 2026); R93 f. 8, R96 f. 80, R97 f. 90r-v, R98 f. 139, R99 after f. 169, R102 f. 307, R115 with f. 641 (found 23 Oct 2026)", "date": "1567-1569", "source": "DECODE R93-R100, R102, R115 cleartext images"}
   ],
-  "gaps": [{"item": "R93, R96, R97, R98, R99, R102, R115: decoded, not read", "blocker": "not-attempted", "detail": "the DECODE cleartext images of these records not yet opened for contemporary decipherments; figure-by-figure re-reading with reread_aless_align.py (as R101) not yet done"}],
-  "fraction_read_source": "22 Oct 2026, re-read (batch aless): the four letters labelled decoded, not read (R94, R95, R100, R101; 3,519 of the 10,555 items) now build sentences and are translated (texts/R94-R101_reading.md, _en.md; _check_reading.py on the reading bodies 1.00, 0.94, 1.00, 0.84 clean). Items of letters that read / all = 10,555 / 10,555 = 1.0. Open inside the readings: about 15 words (two gaps in R94, four in R95, five in R101) and the codes 9090, 6020, 8020, [08.], [3.]. Verification 4, 23 Oct 2026: R93, R96, R97, R98, R99, R102, R115 (7,036 items) demoted to decoded, not read; items of letters that read (R94, R95, R100, R101) / all = 3,519 / 10,555 = 0.333.",
+  "gaps": [{"item": "R93, R96-R99, R102, R115: short unread runs and codes inside the readings (R97 four runs, R99 [2020] and the opening of the Milan paragraph, R115 codes 4050, 2010, 9070 and four runs)", "blocker": "no-key-material", "detail": "the contemporary decipherers left these places blank or wrote words the figures do not carry; the codes occur nowhere else in the corpus"}, {"item": "R94, R95, R101: gaps listed in NOTES (Remaining gaps)", "blocker": "illegible", "detail": "burns and holes in the paper (R101); decipherment illegible at those words (R95); left blank by the decipherer (R94)"}, {"item": "Serrano, Correspondencia diplomatica ... Pio V (1914)", "blocker": "needs-physical-access", "detail": "HathiTrust full text 403 from here, not on archive.org"}],
+  "fraction_read_source": "23 Oct 2026 (r2g): all eleven letters read. R94, R95, R100, R101 on 22 Oct (3,519 items); R93, R96, R97, R98, R99, R102, R115 (7,036 items) on 23 Oct from their contemporary decipherments found on the DECODE cleartext images, checked against the figures. Items of letters that read / all = 10,555 / 10,555 = 1.0. Open inside the readings: short unread runs and codes (R94 2, R95 4, R101 5, R93 1, R97 4, R98 2, R99 2 runs, R115 codes 4050, 2010, 9070 and four runs).",
   "fraction_read_method": "measured",
   "key_file": "texts/key.md"
  }
