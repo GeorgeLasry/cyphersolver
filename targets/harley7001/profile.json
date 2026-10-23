@@ -238,7 +238,15 @@
           "ciphertext.txt"
         ],
         "decryption": "reading.txt",
-        "summary": "Robert Reade, nephew and secretary of Secretary Sir Francis Windebank, who followed him into exile in Paris, writes to a cousin at court, probably Thomas Windebank. The first cipher passage weighs what to do if a proclamation goes out against Windebank: they have not enough against him to confiscate his fortune, his person would not be safe if he returned, and only His Majesty can prevent it; the second says Sir William St Ravy has done Mr Forster no good offices. Read with the Windebank cipher reconstruction DECODE R9115; 14 tokens are conjectures."
+        "summary": "Robert Reade, nephew and secretary of Secretary Sir Francis Windebank, who followed him into exile in Paris, writes to a cousin at court, probably Thomas Windebank. The first cipher passage weighs what to do if a proclamation goes out against Windebank: they have not enough against him to confiscate his fortune, his person would not be safe if he returned, and only His Majesty can prevent it; the second says Sir William St Ravy has done Mr Forster no good offices. Read with the Windebank cipher reconstruction DECODE R9115; 14 tokens are conjectures.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "Translation wave v9, 23 Oct 2026: English letter, no translation needed. R7766_reading.md writes reading.txt's two cipher passages out as running text with the clear lead-in sentences, wording unchanged, conjectures as [?word]: v2_score.py plain 0.611 (11/18), explicit holes 0.722 (13/18), hole rate 0.108. The sentences hold (proclamation against Windebank, confiscation, his safety if he returns, St Ravy's ill offices to Forster); 14 conjectured code groups."
+        },
+        "reading": "R7766_reading.md",
+        "language": "en"
       }
     ],
     "key_file": "key.py"
