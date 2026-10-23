@@ -1,8 +1,8 @@
 # Matignon's Cipher-3, 1586: BnF fr. 15572 f. 276, fr. 15571 f. 179 and fr. 15573 ff. 379-381 — NOTES
 
-Status: in progress. f. 276 and f. 179 read; fr. 15573 ff. 379-381 read at the edge of the bar (r2j, 23 Oct 2026; was decoded, not read since the 22 Oct audit). No write-up yet.
+Status: in progress. f. 276 and f. 179 read; fr. 15573 ff. 379-381 decoded, not read (0.59 after the r2j re-read, under the 0.60 bar; see the coordinator's decision of 23 Oct at the end).
 
-**23 Oct 2026, second re-read (batch r2j)**: fr. 15573 ff. 379-381 **read (B), at the edge of the bar**. No clear copy
+**23 Oct 2026, second re-read (batch r2j)**: fr. 15573 ff. 379-381 brought to 0.59 (the batch proposed read (B) at the edge of the bar; **kept decoded, not read** by the coordinator, see the end of these NOTES). No clear copy
 or decipherment in the neighbouring folios (views 724-757 contact-sheeted; ff. 377-378 are town petitions, ff. 385-386
 another cipher). Every break re-read on the full-size views 740-745: f. 379v l. 3's "p" is bleed-through (*la dite
 riuiere*); five second values that recur across the despatch (C = h, p+ = b, b = y, g = o, Lr = n) and look-alike

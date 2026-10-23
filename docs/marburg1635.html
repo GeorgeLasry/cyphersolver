@@ -67,16 +67,23 @@
 
 <h2 id="the-reading"><span class="num">02</span> The decipherment</h2>
 <figure class="creveal" data-src="reveal/marburg1635.json"></figure>
-<p>Normalised. Square brackets mark conjecture; &hellip; marks the lines not deciphered.</p>
-<blockquote>&hellip; noch nicht zu vernehmen, die landts[&hellip;] &hellip;, wir dennoch nur seit ihr endes halber &hellip; ursach; das kann dieses orths halber observiren, dagegen den selben etwas tentiret werden solte, zumahl nicht unbewandt [&hellip;] gebührend zur manutenirung dero Kays. Maj. und des Reichs wie auch [bey diesen &hellip;] ungelegen; dahero ich nicht unterlassen sollen, die notturft dieser Vestung so wol allerh&ouml;chst ihrer Kays. Maiestet als auch ihrer Churf. Durchl. in Bayern ohnl&auml;ngst nochmals allerunderthenigst und underthenigst anzudeuten, damit ich aus allen fall entschuldigt sein und dessen, meinem geb&uuml;hrenden bericht an geh&ouml;rigen ort, nicht ermangeln m&ouml;chte.</blockquote>
-<p>In English: this can be watched from here, and something should be attempted against them, especially since &hellip; the maintenance of His Imperial Majesty and the Empire &hellip;; I therefore could not fail, lately and once more, to set out the needs of this fortress most humbly to His Imperial Majesty and humbly to His Electoral Highness of Bavaria, so that I may be excused in any event, and not fall short of my duty to report to the proper place.</p>
+<p>Lines 1&ndash;7 are decoded, not read: the decode of lines 2&ndash;4 is garbled, and the contemporary gloss over lines 1&ndash;4, the only control, is faded and cramped and does not align with the signs at two places (re-read on native crops on 23 October 2026, no value changed). Their partial reading (<code>texts/R4500_l01-07_reading.md</code>; [&hellip;] unread, [?word] partly carried):</p>
+<blockquote>&hellip; noch nicht zu vernehmen, die Landts[…] […]. […] [?w]ir dennoch nur [?b]eit ihr endes halber […] ursach[…]
+[?be]schwerungen ich ag[…] [di]eses orts halber […] dagegen denselben etwas tentiert we[r]en solte, zumahl nicht
+unbewandt, w[?a]s und ob en gebührender manutenirung der [?Keiserm.] Mait. und [?des] Reich[s], wie auch [K. Chur…]
+bei di[…]n boni […] ungelegen.</blockquote>
+<p>Lines 8&ndash;14, the closing sentence, give German throughout (<code>texts/R4500_l08-14_reading.md</code>):</p>
+<blockquote>&hellip; dahero ich nicht unterlassen sollen, die notturft dieser Vestung so wol allerhöchst ihrer Kays. Maiestet als auch
+ihrer Churf. Durchl. in Bayern ohnlängst nochmals allerunderthenigst und underthenigst anzudeuten, damit ich aus allen
+fall entschuldigt sein und dessen, meinem gebührenden bericht an gehörigen ort, nicht ermangeln möchte.</blockquote>
+<p>In English (lines 1&ndash;7 only in part): something should be attempted against them, especially since &hellip; the maintenance of His Imperial Majesty and the Empire &hellip;; I therefore could not fail, lately and once more, to set out the needs of this fortress most humbly to His Imperial Majesty and humbly to His Electoral Highness of Bavaria, so that I may be excused in any event, and not fall short of my duty to report to the proper place.</p>
 
 <h2 id="method"><span class="num">03</span> Method</h2>
 <p>Simulated annealing without word spaces gave only frequency noise. After a second transcription that kept the word gaps and treated the joined &ldquo;12&rdquo; as one symbol, a homophonic solver scored with the <code>de-1500s</code> model produced recognisable words, and those words fixed the key. The gloss over lines 1&ndash;4 then settled the superscript symbol (w) and 8 (o). The gloss does not follow the cipher line by line; its phrases occur in cipher lines 3&ndash;5, in order. All 126 records of the volume (R4452&ndash;R4577) were downloaded to look for the key or a clear copy; none was found.</p>
 
 <h2 id="uncertain"><span class="num">04</span> What remains uncertain</h2>
 <ul>
-<li>The last nine symbols of cipher line 1, cramped under the faded gloss: not deciphered. Line 2 is deciphered after restoring an initial symbol dropped in transcription on two words (graded C).</li>
+<li>The last nine symbols of cipher line 1, cramped under the faded gloss: not deciphered. Lines 1&ndash;7 as a whole are decoded, not read: lines 2&ndash;3 do not build, and the faded gloss cannot settle them; only a better image could.</li>
 <li>Single symbols in line 7 (&ldquo;[bey diesen]&rdquo;): conjectural, graded M.</li>
 <li>No longer uncertain (corrected 30 September 2026). Line 9: the symbols at its start had been taken as blotted and the phrase supplied as &ldquo;dieser [sachen]&rdquo;. They are clear on the scan and give &ldquo;ser ue st ung&rdquo; with the key unchanged, so the phrase is &ldquo;die notturft dieser Vestung&rdquo;, the needs of this fortress (9 is u, which also stands for v). Line 11: the symbols before &ldquo;underthenigst&rdquo; give &ldquo;s a l er&rdquo;, and the triangle carries a doubling bar (ll), so the text is &ldquo;nochmals allerunderthenigst und underthenigst&rdquo;, the usual pair for the Emperor and an Elector; no word is supplied.</li>
 <li>Writer, recipient and date are unknown. The deferential tone toward the Emperor and Bavaria makes him an officer or agent reporting to Kassel from the imperial side; &ldquo;dieser Vestung&rdquo; places him in a fortress.</li>
