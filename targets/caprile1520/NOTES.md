@@ -1,12 +1,26 @@
 # Giuliano Caprile to Ferrara, 1520–1521: the 1520–21 sign cipher (catalogue 157) — NOTES
 
-Status: in progress (written up in docs/caprile1520.html; V1921 read 97.0 %; R1139 89.7 %, R1136 66.9 % after pass 5, 3 Oct 2026; the R1136/R1139 stretches are still workable)
+Status: in progress (written up in docs/caprile1520.html; V1921 read 97.0 %; R1139 and R1136 decoded, not read: re-read 22-23 Oct 2026 (b18), partial readings 0.18 and 0.0 clean, blockers no-key-material and illegible)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
 V1921 reads (six runs inside clear sentences, translated), and so do Somogyi's R1138 and V1920. **R1139 and R1136 are
 decoded, not read**: [..] holes in most lines of R1139 and nearly every line of R1136; only phrases come through. Of
 the three letters deciphered here, 166 of 1,421 tokens (11.7%) are in a letter that reads; the 89.7% and 66.9% below
 are shares of decoded letters inside phrases, withdrawn as reading figures.
+
+**22-23 Oct 2026, re-read (REREAD_BRIEF, batch b18): R1139 and R1136 still decoded, not read.** No existing text:
+DECODE R1135-R1140 re-opened with the cookie (page images only, no attachment or comment), Somogyi 2025 deciphers
+only R1138/V1920, the MTA copies omit the cipher, Vestigia V1876/V1922 are the same leaves. Both cipher blocks re-read
+on line strips at 2-2.2x of the native images; R1139 five labels corrected (`R1139_corrections.tsv`,
+`R1139_transcription_b18.txt`), R1136 pass-4 labels confirmed. Per-token key21 decode
+(`research/reading_audit/b18_caprile_beam.py`); no new key value holds across every occurrence (4 = e, 1 = v, 1 7 = ve,
+CE = p tested and rejected, `R1139_reread_log.md`). Partial readings with translations, aligned word by word with the
+signs: `R1139_reading.md`/`R1139_en.md` (0.18 clean, 2/11 sentences; 0.45 on explicit holes; new: "il che vedendo io,
+bel belo li go fato moto deli danari del suo debito, come mi dise meser [?a] Alfonso", "et se i bisionran danari in
+[?presto], per andar ve ne darò") and `R1136_reading.md`/`R1136_en.md` (0.0, 0/9; new: "a in gran presia […]amato a
+Buda, et dicono eser conclusi", "par questa via de Ungaria"). Logs `R1139_reread_log.md`, `R1136_reread_log.md`.
+What stops them: the figures 4 8 1 7 and 1 7, the sign 4 and the single signs p+ and q+, and in R1136 the look-alike
+signs, with every text in this key already used (no key material), plus the stain on R1136 L01-L03 (illegible).
 
 Split on 14 Oct 2026 from `caprile1519` under the one-key rule (George Lasry, 14 Oct 2026): one
 entry per key. The old entry joined three ciphers of the same ASMo file. This folder keeps the **1520–21 homophonic sign
@@ -146,21 +160,17 @@ episcopa[to]", "l'altro in titolo, et a questo modo excluderà …"). Details in
 
 ## Remaining gaps
 
-- R1139 and R1136 decoded, not read (1,255 tokens; holes in most lines; reading audit 22 Oct 2026) - blocker: not-attempted; separate the look-alike signs on the image, re-decode, build sentences and translate
-Blocker "left-open" is not one of the checker's outside blockers on purpose: these pieces are still workable here, and
-no outside blocker (no key material, too short, illegible, physical access) honestly applies to them.
-
-- R1136 L01-L02 stain and blot (about 6 signs, "# #" in the transcription) and R1139 L10 end - blocker: illegible; the stain covers the signs on the only image
-- R1139 (6 Apr 1521), "4 8 1 7" (L01) and "1 7" (L02) - blocker: open-codes; tested as letters and as numerals (3 Oct 2026), nothing fits; likely nomenclator codes with no list
-- R1139 (6 Apr 1521), other unread stretches (10 % of decoded letters) - blocker: left-open; pass 5 89.7 % (L08 "mi per Milan" added); pass 4 (`r1139_pass4.txt`, `pass3_r1136_r1139.md`): 88.7 % inside claimed phrases; L01 and L03 now read; open: numeral-like "4 8 1 7" and "1 7" (no key value) and short stretches of L02, L04-L05, L08
-- R1136 (8 Mar 1520), unread stretches (33 % of decoded letters) - blocker: left-open; pass 4: second transcription at native resolution (`r1136_pass4.txt`, 11 of 12 lines changed), 66.9 % inside claimed phrases (was 59.4 %); what still stops L06, L10-L11 and the line starts is the doubtful sign separations (c/CE/e, QB/8, AMP/EL, x/xp), which a sign table over all five letters could settle; not an outside blocker
+- R1136 L01-L03 left third under the stain (about 6 signs, "# #" in the transcription) and R1139 L10 end - blocker: illegible; the stain covers the signs on the only image (re-checked on contrast-stretched strips 22-23 Oct 2026)
+- R1139 (6 Apr 1521), the figures "4 8 1 7" (L01) and "1 7" (L02; also R1136 L06) - blocker: no-key-material; tested as letters and numerals (3 Oct) and as 4 = e, 1 = v, 1 7 = ve (22-23 Oct, `R1139_reread_log.md`): no value holds across every occurrence; no code list exists
+- R1139 (6 Apr 1521), unread stretches of the partial reading `R1139_reading.md` (L02 middle, L03 "a le ma […] custode", L07 end to L08 start; signs 4, p+, q+) - blocker: no-key-material; signs legible and labelled at 2.2x (b18), their values not in key21, and the five texts in this key (R1136, R1138, R1139, V1920, V1921) are all used; body 0.18 clean, stays decoded, not read
+- R1136 (8 Mar 1520), unread stretches in every sentence of the partial reading `R1136_reading.md` - blocker: no-key-material; pass-4 labels confirmed at 2x (b18); the breaks turn on signs key21 cannot separate or value (QB/8, c/CE/e, AMP/EL, 4, 1 7; pass 5 look-alike table and pass 6 pen shapes failed), no further text in this key; body 0.0 clean, stays decoded, not read
 - V1921 (25 Feb 1521), 5 of 166 signs - blocker: illegible; notes: "K PHI" at the torn page edge after "in reg" (illegible); two minims "1 1" after "persuaso" have no key value (no-key-material); one QB before "Agria" probably a slip; "dicixe" and "revelta" grade M
 
 ## Escalation
 
 - [x] siblings: R1126-R1140 and Vestigia files opened; Vestigia cipher-flagged records of the 1519-21 files are exactly V1853, V1874, V1876, V1919-V1922; the 1520-21 cipher is in R1136, R1138, R1139, V1920, V1921 only (2 Oct 2026)
-- [x] clear-pages: no clear copy or gloss of R1136, R1139 or V1921 in the file; the 1882 b/c copies belong to the 1519 letters (2 Oct 2026)
+- [x] clear-pages: no clear copy or gloss of R1136, R1139 or V1921 in the file; the 1882 b/c copies belong to the 1519 letters (2 Oct 2026); DECODE R1135-R1140 re-opened 22 Oct 2026 (b18): images only, no attachment
 - [x] known-keys: done 2 Oct 2026: key21 + V1921 values on R1139/R1136/V1921 (reads); the 1519 tables (`../caprile1519/`) are another system
 - [x] print: ASMo inventory and Somogyi 2025 found; R1138 already read
 - [x] key-rebuild: EM key from Somogyi cribs (89.6%); V1921 values (lone o = h/u, oo = b, z+/x+/xp = q, EL = f, K = et); pass 4 values (o+ = s, Z+/Zp = q, D = b/x, plain c = o)
-- [x] retry: done 2 Oct 2026 - V1921 re-transcribed and read 97.0 %; R1139 and R1136 re-decoded with the new values (`beam21.py`), phrases checked on the crops and regraded (`pass3_r1136_r1139.md`, `regrade21.py`: R1139 83.8 %, R1136 59.4 %); pass 4 (2 Oct, later): R1136 re-transcribed and regraded 66.9 %, R1139 second pass 88.7 %; pass 5 (3 Oct) R1139 89.7 %. Still open as work, not as escalation: a full second transcription of R1136
+- [x] retry: 22-23 Oct 2026 (b18) - R1139 and R1136 re-read on 2-2.2x strips of the native images, R1139 five labels corrected, partial readings and translations written (0.18 and 0.0 clean), blockers named; done 2 Oct 2026 - V1921 re-transcribed and read 97.0 %; R1139 and R1136 re-decoded with the new values (`beam21.py`), phrases checked on the crops and regraded (`pass3_r1136_r1139.md`, `regrade21.py`: R1139 83.8 %, R1136 59.4 %); pass 4 (2 Oct, later): R1136 re-transcribed and regraded 66.9 %, R1139 second pass 88.7 %; pass 5 (3 Oct) R1139 89.7 %. Still open as work, not as escalation: a full second transcription of R1136

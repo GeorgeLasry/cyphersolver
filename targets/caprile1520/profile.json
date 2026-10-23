@@ -439,6 +439,32 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b18): DECODE R1135-R1140 record pages and every linked file re-fetched with the shared cookie into the session scratchpad (b18_caprile_fetch.py): page images only, no attachment, transcription or comment; Somogyi 2025 searched again (she deciphers only R1138/V1920); MTA copies omit the cipher. No existing text of R1136 or R1139.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "R1139 cipher slip re-read on quarter-line strips at 2.2x of IMG_R1139_I5752_P2 (b18_caprile_lines.py): five labels corrected (p+ L03, q+ L04, EL for CE and D for B in L05, 'q+ PHI o 1 1' at the end of L07; R1139_corrections.tsv, R1139_transcription_b18.txt). R1136 re-read on contrast-stretched strips at 2x of IMG_R1136_I5740_P1: pass-4 labels confirmed, none changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "hypothesis",
+   "technique": ["key matching", "contextual inference"],
+   "what": "Per-token key21 decode (b18_caprile_beam.py) and proposals tested across every occurrence: 4 = e (works in 'come' and before 'credo', fails in 'de 4 8 1 7' and R1136 L05/L10/L12), 1 = v ('in vero'; fails in '1 7'), 1 7 = ve (R1136 'cosi ve ne tenir'; fails in R1139 L01), CE = p ('in presto'; CE = o 72 times). None adopted.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "technique": ["key matching", "language-model scoring"],
+   "what": "Partial readings written word by word against the signs, with translations (R1139_reading.md/_en.md, R1136_reading.md/_en.md): new at key values 'bel belo li go fato moto' (o o = b, D = b), 'et se i bisionran danari in [?presto], per andar ve ne darò', 'a in gran presia [...] a Buda, et dicono eser conclusi', 'par questa via de Ungaria'. Clean-sentence share of the bodies: R1139 0.18 (2/11; 0.45 on explicit holes), R1136 0.0 (0/9). Both stay decoded, not read; blockers no-key-material and illegible.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -482,27 +508,27 @@
   "verification": [
    "historical consistency"
   ],
-  "notes": "Key verified by reproducing Somogyi's plaintext (90% of aligned signs). R1138 and V1920 marked read (Somogyi 2025). V1921 (no. 12, not on DECODE) 161/166 signs (97.0 %), read_v1921.md. R1139 89.7 % and R1136 66.9 % of decoded letters inside claimed phrases after pass 5 (3 Oct 2026; pass3_r1136_r1139.md). key partial: values for c/QB/8/AMP/EL do not separate. Split 14 Oct 2026 from caprile1519: R1128 (1519 two-tier) and R1137 (Cistarelli) are other ciphers with their own entries. 22 Oct 2026, reading audit: R1139 and R1136 relabelled decoded, not read; V1921 and Somogyi's R1138/V1920 read.",
+  "notes": "Key verified by reproducing Somogyi's plaintext (90% of aligned signs). R1138 and V1920 marked read (Somogyi 2025). V1921 (no. 12, not on DECODE) 161/166 signs (97.0 %), read_v1921.md. R1139 89.7 % and R1136 66.9 % of decoded letters inside claimed phrases after pass 5 (3 Oct 2026; pass3_r1136_r1139.md). key partial: values for c/QB/8/AMP/EL do not separate. Split 14 Oct 2026 from caprile1519: R1128 (1519 two-tier) and R1137 (Cistarelli) are other ciphers with their own entries. 22 Oct 2026, reading audit: R1139 and R1136 relabelled decoded, not read; V1921 and Somogyi's R1138/V1920 read. 22-23 Oct 2026, re-read (b18): R1139 and R1136 re-read on the images with no existing text to follow; partial readings and translations written (R1139_reading.md, R1136_reading.md), below the sentence bar (0.18 and 0.0); both stay decoded, not read, blockers no-key-material and illegible.",
   "gaps": [
    {
-    "item": "R1136 L01-L02 stain/blot (about 6 signs) and R1139 L10 end",
+    "item": "R1136 L01-L03 left third under the stain (about 6 signs) and R1139 L10 end",
     "blocker": "illegible",
-    "detail": "stain over the signs on the only image"
+    "detail": "stain over the signs on the only image; re-checked on contrast-stretched strips 22-23 Oct 2026"
    },
    {
-    "item": "R1139 '4 8 1 7' (L01) and '1 7' (L02)",
-    "blocker": "open-codes",
-    "detail": "tested as letters and as numerals 3 Oct 2026; nothing fits; likely nomenclator codes, no code list"
+    "item": "R1139 figures '4 8 1 7' (L01) and '1 7' (L02; also R1136 L06)",
+    "blocker": "no-key-material",
+    "detail": "tested as letters and as numerals (3 Oct 2026) and as 4 = e, 1 = v, 1 7 = ve (22-23 Oct 2026, R1139_reread_log.md): no value holds across every occurrence; no code list exists"
    },
    {
-    "item": "R1139 unread stretches (10 % of decoded letters)",
-    "blocker": "not-attempted",
-    "detail": "schema has no 'workable, left open' value: attempted 2 Oct 2026 but still workable here, no outside blocker applies; pass 4 88.7 %; open: numeral-like '4 8 1 7', '1 7' and short stretches; pass 5 89.7 %; '4 8 1 7' and '1 7' are code-like (no letter or numeral reading fits)"
+    "item": "R1139 unread stretches (L02 middle, L03 'a le ma [...] custode', L07 end to L08 start) and the single signs p+, q+ and the sign 4",
+    "blocker": "no-key-material",
+    "detail": "signs legible and labelled on 2.2x strips (b18); their values are not in key21, and the five texts in this key (R1136, R1138, R1139, V1920, V1921) are all used; partial reading R1139_reading.md scores 0.18 clean"
    },
    {
-    "item": "R1136 unread stretches (33 % of decoded letters)",
-    "blocker": "not-attempted",
-    "detail": "schema has no 'workable, left open' value: attempted 2 Oct 2026 but still workable here, no outside blocker applies; pass 4 (second transcription) 66.9 %; limited by doubtful sign separations (c/CE/e, QB/8, AMP/EL, x/xp); pass 5: look-alike tabulation accepts only CE = o and xp = q, c/QB/8/AMP/EL do not separate; name and Somogyi-phrase cribs add nothing"
+    "item": "R1136 unread stretches (every sentence)",
+    "blocker": "no-key-material",
+    "detail": "pass-4 labels confirmed on 2x contrast-stretched strips (b18); the breaks turn on signs key21 cannot separate or value (QB/8, c/CE/e, AMP/EL, 4, 1 7; pass 5 look-alike table and pass 6 pen shapes failed) and no further text in this key exists; partial reading R1136_reading.md scores 0.0 clean"
    },
    {
     "item": "V1921, 5 of 166 signs",
@@ -512,7 +538,7 @@
   ],
   "fraction_read": 0.117,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Over the three letters deciphered here (as before), V1921 (166 signs) reads; R1139 (589) and R1136 (666) are decoded, not read: 166 of 1,421 tokens (document lengths in profile documents[]) = 0.117. With Somogyi's R1138 and V1920 counted (read from her decipherment), 992 of 2,247 = 0.44. The earlier 0.803 (decoded letters inside phrases, regrade21.py) is withdrawn as a reading figure.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. Over the three letters deciphered here (as before), V1921 (166 signs) reads; R1139 (589) and R1136 (666) are decoded, not read: 166 of 1,421 tokens (document lengths in profile documents[]) = 0.117. With Somogyi's R1138 and V1920 counted (read from her decipherment), 992 of 2,247 = 0.44. The earlier 0.803 (decoded letters inside phrases, regrade21.py) is withdrawn as a reading figure. 22-23 Oct 2026, re-read (b18): unchanged; R1139 and R1136 re-read on the images and still decoded, not read (partial readings 0.18 and 0.0 clean), so 166 of 1,421 tokens as before.",
   "key": "partial",
   "credits": [
    {
@@ -529,16 +555,18 @@
     "label": "R1139, slip of 6 Apr 1521",
     "transcription": [
      "caprile1521_transcription.txt",
-     "r1139_pass4.txt"
+     "r1139_pass4.txt",
+     "R1139_transcription_b18.txt"
     ],
     "decryption": [
      "pass3_r1136_r1139.md",
-     "beam21_r1139_pass4.txt"
+     "beam21_r1139_pass4.txt",
+     "R1139_reading.md"
     ],
     "summary": "Postscript slip from Giuliano Caprile to Ferrara about the custode (castellan) of Eger, the governor's return, money of the late bishop's estate, and someone's wish to go to Italy: the Ippolito d'Este estate business of Somogyi's article. About 90 % of decoded letters fall inside read phrases; two numeral-like groups are open.",
     "language": "it",
     "state": "decoded, not read",
-    "note": "Half-lines with [..] in most of its ten lines; a few sentences read (the custode's debt, 'come mi dise messer Alfonso'), the rest must be guessed (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22-23 Oct 2026 (b18): no decipherment, clear copy or print exists (DECODE record and neighbours R1135-R1140 opened, Somogyi 2025, Vestigia V1922). Read on the image at 2.2x, five labels corrected (R1139_corrections.tsv), key21 values only; partial reading R1139_reading.md with translation R1139_en.md: 'bel belo li go fato moto deli danari del suo debito, come mi dise meser [?a] Alfonso' and 'parlaremo a longo sopra ciò ...' read, but the body scores 0.18 clean (2/11; 0.45 on explicit holes). Open: the figures 4 8 1 7 and 1 7, the sign 4 and single signs p+ and q+ (no key material: every text in this key already used), L02 and L07-L08 stretches."
    },
    {
     "doc": "R1136",
@@ -549,12 +577,13 @@
     ],
     "decryption": [
      "pass3_r1136_r1139.md",
-     "beam21_r1136_pass5.txt"
+     "beam21_r1136_pass5.txt",
+     "R1136_reading.md"
     ],
     "summary": "Twelve cipher lines on the see of Eger, its custode and governor, Lactantio, money and debts, written as Ippolito d'Este was leaving Hungary (he crossed the border on 7 Mar 1520). Read in part (66.9 %).",
     "language": "it",
     "state": "decoded, not read",
-    "note": "[..] in nearly every line (59% of decoded letters inside read phrases); only phrases (transferse a Buda il custode, questo episcopato) come through (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22-23 Oct 2026 (b18): no decipherment, clear copy or print exists (DECODE record and neighbours, Somogyi 2025, Vestigia V1876). Read on contrast-stretched strips at 2x, pass-4 labels confirmed; partial reading R1136_reading.md with translation R1136_en.md ('a in gran presia [...] a Buda, et dicono eser conclusi', 'potrà far al custode par questa via de Ungaria'), but 0 of 9 sentences clean. Open: the stained left third of L01-L03 (illegible) and stretches turning on signs key21 cannot settle (QB/8, c/CE/e, AMP/EL, 4, 1 7), no further text in this key (no key material)."
    },
    {
     "doc": [

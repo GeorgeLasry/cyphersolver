@@ -4,9 +4,22 @@ ASV, i. 1025, Segretario di Stato, Francia, doss. 346.
 DECODE R74–R84 (eleven ciphertexts); the catalogue entry named five of them:
 R75, R77, R78, R82, R84.
 
-Status: not read (reading audit, 22 Oct 2026: decoded, not read). Was: read (second pass 5 Oct 2026: 95.8% of cipher tokens measured, R75 96.2%, R84 95.3%; was 91.4%).
+Status: read (re-read 22-23 Oct 2026, b18: R75 and R84 read from their contemporary decipherments, ff. 82r and 136r, aligned with the decode under Lasry's key). Was: not read (reading audit, 22 Oct 2026); before that read (second pass 5 Oct 2026, 95.8% of tokens with a value).
 
-22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R75 and R84 are decoded,
+**22-23 Oct 2026, re-read (REREAD_BRIEF, b18).** Both letters have **complete contemporary decipherments** among the
+png attachments of their DECODE records, which no earlier session had opened: R75 f. 82r (DOC_R75_D1145, "082r.jpg
+[cleartext]") and R84 f. 136r (DOC_R84_D1177). Transcribed (`R75_decifrato_f82r.txt`, `R84_decifrato_f136r.txt`),
+aligned unit by unit with the decode (`research/reading_audit/b18_ceva_align.py`), eight values adopted where they hold
+at every occurrence (88 = del, not quel; 33 = gli; 541 armi; 171 Regno; 473 mentre; 497 tutt-; 491 quell-; 104
+Olandesi, not Svedesi), both letters decoded again (`r75/r84.read3.txt`), and read on the figures with the
+decipherments carrying the code words: `R75_reading.md`, `R84_reading.md` (English `_en.md`), log
+`R75-R84_reread_log.md`, two labels corrected (`R75_corrections.tsv`). Clean-sentence share of the reading bodies:
+R75 0.00 -> 0.774, R84 0.00 -> 0.826. Both read, grade A. The decipherments correct the content: R75's victories are
+**Schomberg's** (Castelnaudary, 1 Sept 1632), and the rising power is **the Dutch**; R84 turns on the victory over
+**Gustavus**, the Valtellina peace and **Monsieur's flight**. The second-pass summaries below (Swedish victories,
+"Svedesi") are superseded.
+
+Earlier, 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R75 and R84 are decoded,
 not read**. Lasry's key decodes both, but the decodes are unspaced with an open nomenclator element in nearly every
 line (117 of 123 elements unread), and the 1632 interlinear covers only lines 12-30 of R75. The gist follows, the
 sentences do not. Class now not read, method not solved; 95.8% is the share of tokens with a value, withdrawn as a
@@ -294,16 +307,16 @@ Failures and limits of this pass:
 
 ## Remaining gaps
 
-- R75 and R84 decoded, not read (2,400 tokens; an open element in nearly every line; reading audit 22 Oct 2026) - blocker: open-codes; the names and places are inside the 117 unread nomenclator elements and no dossier nomenclator survives on DECODE; still workable: segment and normalise the decodes, transcribe the R75 interlinear in full
-- 56 nomenclator tokens of R75/R84 (491 x5, 497/998/328 x3, 494/128/450/110 x2, ~40 singletons) - blocker: open-codes; pooled across all six letters, no single value fits; interlinear only on R75 and illegible at most of them
-- 31 noise digits at ink blots (R75 l.30, 31) and unsure parses - blocker: illegible; checked against the full-resolution images 5 Oct 2026
-- dossier key with nomenclator - blocker: needs-physical-access; none on DECODE; would need the ASV
+- R75: three short runs, 'se ne serva 494 li stimi v4' (one word), 'diolavse 1' at the head of l.21, 'la e8 loro' - blocker: no-key-material; no key value gives a word and the f. 82r decipherment paraphrases ('servirà secondo che giudicherà necessario') or is unclear ('la [?mira]')
+- R84: 'da [?N.S.re]' (figures 'c 5') - blocker: illegible; cramped abbreviation in the decipherer's hand, no word in the figures
+- element values carried by one decipherment only (357 Schomberg, 581 Card. Richelieu, 197, 844 Gostavo, 930/957 Mons.r Nuntio ...) - blocker: needs-physical-access; no dossier nomenclator on DECODE, would need the ASV
+- closed 22-23 Oct 2026: R75 and R84 decoded, not read (read from the decipherments ff. 82r, 136r); the 56 open nomenclator tokens (every one in R75/R84 now carried by a decipherment or a value); the noise digits (the readings follow the decipherments there)
 
 ## Escalation
 
 - [x] siblings: all eleven records R74-R84 opened; Lasry key and four readings on them; every code pooled across the four letters + R75/R84 (ctx.py)
-- [x] clear-pages: R75 interlinear 1632 decipherment re-read at full resolution (r75.interlinear.txt); margin gloss 'Monsieur S.A.'; 17 elements fixed from it and from pooled contexts
+- [x] clear-pages: R75 interlinear 1632 decipherment re-read at full resolution (r75.interlinear.txt); margin gloss 'Monsieur S.A.'; 17 elements fixed from it and from pooled contexts; 22 Oct 2026: complete decipherments R75 f. 82r and R84 f. 136r found among the records' png attachments and used for the readings
 - [ ] known-keys: not done - other Barberini-period ASV nunciature keys on DECODE (e.g. Pallotto 1629 R215) not tried for the nomenclator
-- [ ] print: not done - Nuntiaturberichte / Acta Nuntiaturae Gallicae for Ceva 1632-34 not searched
+- [x] print: not needed for the reading - complete contemporary decipherments of both letters found on DECODE (22 Oct 2026); Nuntiaturberichte / Acta Nuntiaturae Gallicae for Ceva 1632-34 still not searched
 - [x] key-rebuild: LM beam decoder, interpolated in-domain model; whole-letter streams (run2.py); unvalued-code penalty
-- [x] retry: both letters re-transcribed from the images (r75/r84.retrans.txt) and decoded again with the 23 values: 0.914 -> 0.958
+- [x] retry: both letters re-transcribed from the images (r75/r84.retrans.txt) and decoded again with the 23 values: 0.914 -> 0.958; 22-23 Oct 2026: aligned with the decipherments, eight values adopted, decoded again (r75/r84.read3.txt), read (R75 0.774, R84 0.826 clean sentences)
