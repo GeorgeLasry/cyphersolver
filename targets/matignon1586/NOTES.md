@@ -52,6 +52,9 @@ fr. 15572 f. 43, solved by George
 Lasry in 2022, is not a document of this entry and carries no credit here. Matignon's despatch to the King in his
 **tuple cipher**, fr. 15572 ff. 234r–238v (May 1586; Michael Brackx, issue #86, taken in 24 Oct 2026), is another
 different cipher with its own entry: [`targets/matignon1586tuple/`](../matignon1586tuple/NOTES.md).
+Two more ciphers of fr. 15572, taken in 24 Oct 2026 from Michael Brackx (issues #91, #92), each have their own entry:
+Camus de Pontcarré's blocks to Villeroy, ff. 111v–272v ([`targets/camus1586/`](../camus1586/NOTES.md)), and
+Malicorne's letter from Niort, ff. 162–164 ([`targets/malicorne1586/`](../malicorne1586/NOTES.md)).
 
 Catalogue item 12 (`CATALOGUE.md`), class B, solvability 5. Ten leaves that S. Tomokiyo
 (`cryptiana`, *Henry III's Cipher with Ambassadors*) marks **undeciphered** although he publishes

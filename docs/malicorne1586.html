@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malicorne to Henri III (1586) &mdash; Read in part</title>
+<meta name="description" content="Malicorne's ciphered letter to Henri III from Niort, 21 April 1586 (BnF fr. 15572 ff. 162&ndash;164), deciphered with Tomokiyo's key as corrected by Michael Brackx and checked against the contemporary margin decipherment of f. 163r: one stretch read in part, two decoded, not read, four pages still to come.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- site:nav -->
+<section class="hero">
+  <div class="cipherstrip">consiste en la creance du porteur &middot; 0 = e &middot; 7 = a &middot; no = que &middot; th = de</div>
+  <p class="kicker">Niort &rarr; Henri III &middot; homophonic letter cipher with word signs &middot; 21 April 1586 &middot; read with known key, partial</p>
+  <h1>Malicorne to Henri III, Niort, 21 April 1586</h1>
+  <p class="sub">The governor of Poitou reports failed plots on Lusignan and a raid on two Protestant companies; one margin-confirmed sentence reads, and the rest of the decode is still being built.</p>
+  <p class="meta">Daniel Bourdeau</p>
+</section>
+<main>
+<div class="callout glance">
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Read with known key &middot; partial &middot; f. 163r A, 73% of words</span></p>
+<dl>
+  <dt>The letter</dt><dd>Jean de Chourses, sieur de Malicorne, governor of Poitou, to Henri III, &ldquo;A Nyort ce xxie avril 1586&rdquo;, signed Malycorne: six pages mostly in cipher.</dd>
+  <dt>Where</dt><dd>Biblioth&egrave;que nationale de France, fr. 15572 ff. 162&ndash;164 (Gallica views 169&ndash;173). Not in DECODE or the catalogue.</dd>
+  <dt>The cipher</dt><dd>Invented signs and digits, several for each letter, with signs for <i>de, la, le, que, sur, nous, et</i> and for doubled letters, and nulls. Thirteen look-alike signs still carry two values.</dd>
+  <dt>How it was deciphered</dt><dd>Michael Brackx applied Tomokiyo's key table, corrected it, and checked the decode against the decipherment written in the margin of f. 163r at the time.</dd>
+  <dt>What it says</dt><dd>The rest &ldquo;consiste en la creance du porteur et lesdicts articles&rdquo;; two plots on Lusignan were discovered; Villeluisant's men cut two companies to pieces near Sanxay.</dd>
+  <dt>Still open</dt><dd>f. 162r and the second stretch of f. 163r give phrases between gaps; four pages await the contributor's aligned decode.</dd>
+  <dt>Credit</dt><dd>Transcription, corrected key and decode: Michael Brackx (<a href="https://github.com/brackxm">@brackxm</a>) with Claude Code, 22&ndash;23 October 2026 (<a href="https://github.com/dbourdeau/cyphersolver/issues/92">issue #92</a>). Key table: Satoshi Tomokiyo, Cryptiana.</dd>
+</dl>
+</div>
+<p>The same volume holds Camus de Pontcarr&eacute;'s letters to Villeroy in another cipher (<a href="camus1586.html">Camus 1586</a>) and Matignon's and Mayenne's despatches (<a href="matignon1586.html">Mayenne&ndash;Forget</a>), each with its own page.</p>
+
+<h2 id="letter"><span class="num">01</span> The letter</h2>
+<p>f. 162r has four clear lines and 27 cipher lines; f. 162v 31 cipher lines; f. 163r is clear text with two cipher stretches (A, two lines; B, nine), both deciphered in the margin by a hand of the time; canvas 171 carries two clear letters with cipher blocks of 4 and 16 lines; canvas 172 has 31 and 24 cipher lines, then the clear close and the signature. The address leaf, &ldquo;Au Roy&rdquo;, is view 173.</p>
+
+<h2 id="f163"><span class="num">02</span> f. 163r and its margin</h2>
+<figure class="creveal" data-src="reveal/malicorne1586.json"></figure>
+<p>Stretch A reads as one sentence, confirmed word for word by the margin (<i>consiste en la creance du port[eu]r, &amp; les articles</i>); 73% of its words read as sense, the opening group and one word before <i>porteur</i> unread:</p>
+<blockquote lang="fr"><p>[?] consiste en la creance du [?] porteur et [l]esdicts articles.</p></blockquote>
+<p>[?] consists in the credence of the [?] bearer and the said articles.</p>
+<p>Stretch B gives phrases between gaps (69%): <i>les deulx entreprises que i'auois sur Lusignan, l'une &hellip; tramee aux charbonnieres, &hellip; donnant quelque argent &hellip; descouuertes, et fault que ie &hellip; ce peult aisement establir la charge en ce pais</i>. The margin beside it is mostly illegible between <i>argent</i> and <i>descouvertes</i>.</p>
+
+<h2 id="f162"><span class="num">03</span> f. 162r, decoded</h2>
+<p>The decode builds phrases, not sentences (62% of words read as sense, 65 holes): the failed enterprises against Lusignan, &ldquo;le sieur de Uilleluisant et ceulx que ie &hellip; enuoies&rdquo;, an attack in the bourg of Sanxay a league from Lusignan on two companies, &ldquo;les taill[e]rent en piesses, prinrent les &hellip; capitaines &hellip; et l[e]urs enseignes &hellip; les amenerent ici&rdquo;, with no loss but &ldquo;l'enseigne du capit[a]ine Cossart et trois [?soldats]&rdquo;. Most holes are letter strings that are not French, which points to look-alike signs still merged under one label rather than to a wrong key.</p>
+
+<h2 id="method"><span class="num">04</span> How it was done</h2>
+<ul>
+<li><b>Key.</b> Tomokiyo's table, corrected: the hooked y is s (14 of 14 tokens; his table's t is probably a slip), the curly y p, the looped &#42874; n, 10 i, &rho; p and h, and new word signs for <i>nous</i> and <i>et</i>. Three per-page keys were merged and pruned one value at a time, from 43 to 13 two-valued signs.</li>
+<li><b>Against the margin.</b> Stretch A 97.6% of the margin's letters matched in order, against 22&ndash;27% for shuffled keys; B lines 1&ndash;3 83.3%. For B lines 4&ndash;14 the first posted figure (72.8%) could not be reproduced; restated on the legible margin words against cipher rows 4&ndash;8 it is 79.3%, against 15&ndash;24%.</li>
+<li><b>Departures from the raw decode.</b> Six readings were chosen by hand on two-valued signs (<i>Lusignan, ceulx, ici, Cossart, tramee, ce</i>: 7 letters, under 1% of each page's letters) and three words of f. 163r B are taken from the margin where the decode is a letter or more off (<i>i'auois, charbonnieres, descouuertes</i>).</li>
+<li><b>Language model.</b> Corrected to Montaigne's <i>Essais</i> I&ndash;III after an Italian and a Middle English text were found in the first one: coverage 72.3% (76.5% as first posted), shuffled keys 32.5&ndash;47.7%.</li>
+</ul>
+
+<h2 id="open"><span class="num">05</span> What remains</h2>
+<ul>
+<li>f. 162v and the pages of views 171&ndash;172: the aligned decode (about 450 lines) and a legend tying each sign label to its shape have been asked of the contributor.</li>
+<li>f. 162r and f. 163r B: thirteen labels still carry two values; their shapes could not be split at the resolution used.</li>
+<li>f. 163r A: the opening group and the word before <i>porteur</i>.</li>
+</ul>
+
+<!-- texts:start -->
+<!-- texts:end -->
+<h2 id="sources"><span class="num">06</span> Sources</h2>
+<ul>
+<li>Biblioth&egrave;que nationale de France, fr. 15572, via <a href="https://gallica.bnf.fr/ark:/12148/btv1b9061879d">Gallica</a> (views 169&ndash;173).</li>
+<li>Satoshi Tomokiyo, Cryptiana, ciphers of Henri III's reign: &ldquo;Malycorne's Cipher&rdquo; (key table).</li>
+<li>Michael Brackx, <a href="https://github.com/dbourdeau/cyphersolver/issues/92">&ldquo;Solution: Malicorne cipher&rdquo;</a>, issue #92, 22&ndash;23 October 2026.</li>
+</ul>
+<p class="muted">The aligned decode, key, margin transcription, readings and translations are in the repository folder <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/malicorne1586"><code>targets/malicorne1586/</code></a>.</p>
+</main>
+<!-- site:footer -->
+</body>
+</html>

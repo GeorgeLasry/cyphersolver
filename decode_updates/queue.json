@@ -13604,6 +13604,42 @@
      "sent": false
     }
    ]
+  },
+  "saintluc1586b": {
+   "skip": "BnF fr. 15572 f. 260r-v and f. 245r-v have no DECODE record (Gallica only; not found on DECODE); nothing to update on DECODE"
+  },
+  "matignon1586tuple": {
+   "skip": "BnF fr. 15572 ff. 234r-238v (Matignon's tuple cipher, May 1586) has no DECODE record found (Gallica only; no fr. 15572 record in the repository's DECODE harvests); nothing to update on DECODE. If a record is created, the transcription (transcription/), legend.md and per-page readings are ready to attach."
+  },
+  "camus1586": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/camus1586.html",
+   "cite": "Michael Brackx, transcription, corrected key and readings (GitHub issue #91, 22-23 Oct 2026); key table: S. Tomokiyo, Cryptiana.",
+   "new_records": [
+    {
+     "shelfmark": "BnF fr. 15572 ff. 111v, 112r, 132v, 134v, 151r, 272r-v",
+     "what": "Claude Camus de Pontcarré to Villeroy, Castets, Bordeaux and La Rochelle, March-June 1586; clear letters with cipher blocks in Camus's cipher (homophonic, word signs, nulls); ff. 111v-112r, 134v and 151r deciphered at the time in the margins. Read in part: ff. 111v, 112r and the f. 151r middle block read from the contemporary decipherments, f. 134v B and C in part, the rest decoded, not read. No DECODE record found (Gallica btv1b9061879d, canvases 118, 140, 142, 158, 281-282). Suggested as a new DECODE record (Gallica only).",
+     "transcription": [
+      "targets/camus1586/brackx2026/transcription_r2.txt"
+     ],
+     "sent": false
+    }
+   ]
+  },
+  "malicorne1586": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/malicorne1586.html",
+   "cite": "Michael Brackx, transcription and aligned decode (GitHub issue #92, 22-23 Oct 2026); key table: S. Tomokiyo, Cryptiana.",
+   "new_records": [
+    {
+     "shelfmark": "BnF fr. 15572 ff. 162-164",
+     "what": "Jean de Chourses, sieur de Malicorne, to Henri III, Niort, 21 Apr 1586; six pages mostly in Malicorne's cipher (homophonic, word and digraph signs, nulls), margin decipherment on f. 163r. Read in part: f. 163r A read in part (margin-confirmed), f. 162r and f. 163r B decoded, not read, four pages not yet decoded. No DECODE record found (Gallica btv1b9061879d, canvases 169-173). Suggested as a new DECODE record (Gallica only).",
+     "transcription": [
+      "targets/malicorne1586/texts/f162r_transcription.txt",
+      "targets/malicorne1586/texts/f163rA_transcription.txt",
+      "targets/malicorne1586/texts/f163rB_transcription.txt"
+     ],
+     "sent": false
+    }
+   ]
   }
  }
 }

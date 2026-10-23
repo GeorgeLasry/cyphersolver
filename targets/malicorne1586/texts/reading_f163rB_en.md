@@ -1,0 +1,3 @@
+# f. 163r, stretch B: English
+
+[?] of [?] the two enterprises I had against Lusignan, the one [?] [?was] plotted at the charcoal-burners', [?] giving some money [?] [?] force of [?our] [?state] [?] [?] discovered, and I must [?] [?] [?] [?] this can easily establish the charge in this country, for …
