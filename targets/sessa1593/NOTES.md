@@ -323,9 +323,19 @@ hole. **0.613 on explicit holes**, 0.355 plain, hole rate 0.13: just over the ba
 and the passage on Desportes's letter build sentences; the stretch after *duque de Feria* (ll. 3-4), l. 9 and
 ll. 19-21 do not. Kept read, grade B, marginal; those stretches stay with the open groups in Remaining gaps.
 
+## Verification v8, 23 Oct 2026
+
+The translation wave could not translate no. 45. Its running text (`no45_reading.md`, from `sense.tsv`'s reading column)
+scores **0.50** on explicit holes (7/14), 0.357 plain, hole rate 0.158: the opening (*con este achaque ... a costa de la
+bolsa*), the residence passage and the close carry unresolved groups and nomenclature groups not on the f. 97 sheet
+(ʃo, 9̈4, ʒe, Val, ral, ʃep, pir). No decipherment of no. 45 exists. **Back to decoded, not read**; nos. 79 and 47 stay
+read; `fraction_read` 0.925 -> 0.750 (982 of 1,310 groups). The gap blocker `open-codes` (the doubtful syllables) is
+renamed no-key-material.
+
 ## Remaining gaps
 - nos. 45, 79, 47: 22 code groups not on the f. 97 sheet (Val, ral, ʃep, ner, ʒe, pir, mil, is, xom, mal, rili, mos, ʃer, hir, hum, us, ho, yos, ∂ir, lir, xox, ru) - blocker: no-key-material; sheet re-read 5 Oct for them, each occurs once or twice
-- nos. 45, 79, 47: about 75 syllable groups of doubtful reading (slips, ambiguous hooks), listed per line in sense.tsv - blocker: open-codes
+- nos. 45, 79, 47: about 75 syllable groups of doubtful reading (slips, ambiguous hooks), listed per line in sense.tsv - blocker: no-key-material; no gloss or second copy settles them
+- no. 45 decoded, not read (v8 23 Oct 2026: 0.50 clean sentences on explicit holes) - blocker: no-key-material; open groups not on the f. 97 sheet, no decipherment of no. 45
 
 ## Escalation
 - [x] siblings: fr. 3995 ff. 94, 96, 98, 101 opened next to the key; no. 47 used as the crib for the others; open codes pooled across the three letters (xor, pal, ʃo, 4̈9 solved jointly)
@@ -334,3 +344,4 @@ ll. 19-21 do not. Kept read, grade B, marginal; those stretches stay with the op
 - [x] print: Tomokiyo spanish3.htm; BnF notices for fr. 3983/3984
 - [x] key-rebuild: f. 97 re-read 2 Oct and again 5 Oct (de, Su Santidad, V.M., nulls, assi); open codes pooled across the three letters
 - [x] retry: every line of nos. 45, 79, 47 re-transcribed from the images and re-read with the extended key (5 Oct, sense.tsv); rerun 14 Oct 2026 without no. 68: 1212/1310
+- [x] retry (23 Oct 2026, v8): no. 45 running text scored on explicit holes (0.50); decoded, not read

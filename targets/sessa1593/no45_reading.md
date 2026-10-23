@@ -1,0 +1,7 @@
+<!-- Reading of fr. 3983 no. 45 (Claude Opus 5.5, 23 Oct 2026), written as no79_reading.md was: the reading column of sense.tsv (the 5 Oct 2026 line-by-line re-transcription from the Gallica images, read with the office key BnF fr. 3995 f. 97), lines joined; reading45.md is the older first pass. Each "·" (a group not resolved) is […]; a group with no value is kept as written in brackets ([Val], [ral], [ʃep:], [pir], [ʒe] ...); sense.tsv's notes on nulls and spellings are left out; [?negocios] = the doubtful [nor?]. Spelling as the decode gives it; punctuation added. Cipher throughout; the clear closing is not repeated. -->
+
+# fr. 3983 no. 45, f. 98: the Conde de Miranda to the Duque de Feria, Naples, 25 February 1593: the reading
+
+## Reading
+
+El, alla, con este achaque, que siendo confidente de S.M. […] se podria procurar, assi [ʃo] fuesse a costa de la bolsa de [9̈4] S.M. […] Yo […] supongo que havra de ser, podria […] ser de mucho provecho su residencia en [ʒe] […]. Yo escrivi sobre esto a [Val] y lo han […] […] […] omitido, y assi creo que havra dado alguna opinion a […] sobre ello, y si no se vera lo que en esto convernà hazer, que yo me remito a su prudencia. Solo le suplico que si tuviere [ral] me mande [ʃep:] con tiempo la persona que se elegira, y adonde le podria […] yo embiar a dar algun recado si fuesse [ner] al passar a [ʒe], se pueda ser de manera que no se entienda, porque la hora que le tengan por [pir] perdera mucho […] […] […] […] […] [?negocios] respeto […] servicio que puede hazer a S.M. mas de una manera que de […] […].

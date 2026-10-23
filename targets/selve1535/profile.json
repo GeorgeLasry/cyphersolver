@@ -245,6 +245,13 @@
    "what": "Re-read of the R3697 struck runs under REREAD_BRIEF (batch mix1): the decipherer’s glosses taken as the contemporary decipherment they are; C1 gloss re-read on native_f27.jpg (one blurred group left); the glossed runs A, B, C1 + C2 head, T2 (169 signs) set out as text and checked against the pass-3 sign alignments, split off as read (READING_R3697_struck.md, R3697_struck_en.md); C2 tail, C3, T1, T3 (135 signs) stay decoded, not read (no legible gloss, strike over every sign).",
    "result": "partial",
    "technique": ["crib testing", "plaintext matching"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["language-model scoring", "contextual inference"],
+   "what": "Verify v8: R3697 unstruck cipher written out as running text (R3697_reading.md) and scored: 0.733 explicit holes, 0.667 plain (the sweep's 0.57 counted clear-text and gloss brackets as holes). Keeps read; reading pointed at the new file.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -317,12 +324,13 @@
     "summary": "Georges de Selve, ambassador at Venice, to Francis I: a merchant must go to France by the Swiss road because the Imperial ambassador at Venice suspects him and has had the other road watched; that ambassador had urged him to go to the French court under colour of trade; on the verso a Hungarian matter (Hieronymus, Veszprém) and informants reporting to the Turk. The runs struck through by the King's decipherer are read only in part.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "The unstruck cipher of R3697 (747 signs) reads as French sentences: the merchant must take the Swiss road; the Emperor's ambassador had him watched and had urged him to go to the French court under colour of trade; certain persons kept advising the Turk. Holes: a blot and a cancelled name (Anthon[e] de Le...), a few isolated signs. Audit grade C refined: the fragments are the struck runs, split off as decoded, not read."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Verify v8, 23 Oct 2026: the sweep's 0.57 scored READING_R3697.md as a whole, where the clear text, the decipherer's glosses and the struck runs sit in lower-case brackets and count as holes. The unstruck cipher written out as running text (R3697_reading.md, holes and doubtful words marked) scores 0.733 on explicit holes (11/15), 0.667 plain, hole rate 0.089: the Swiss road, the Imperial ambassador's watch and his urging the merchant to go to the French court, the informants reporting to the Turk build sentences; holes at the blot and the cancelled name (Anthon[e] de Le...) and a few single signs. Rests on Tomokiyo's Selve key as extended in KEY.md."
     },
     "state": "read",
-    "language": "fr"
+    "language": "fr",
+    "reading": "R3697_reading.md"
    },
    {
     "doc": "R3697",
@@ -346,7 +354,8 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "READING_R4232.md reads as continuous French (the Emperor's design on Marseille, the galleys, the delay, the breach with the Emperor) with a few single-sign holes; the margin decipherment of f. 44v agrees word for word."
-    }
+    },
+    "translation": "READING_R4232_en.md"
    },
    {
     "doc": "R3697",

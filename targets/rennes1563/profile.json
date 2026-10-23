@@ -446,30 +446,37 @@
    "technique": ["beam/DP decoding", "language-model scoring"],
    "what": "p. 139 retried with the widened values (r2j_p139_lattice.py): 'fils' carried (plus = s); l. 8 '[?voyaige]' proposed; no other run closes, and none of p. 139's open signs (ẟao, aʓ, ℛ, ℞, ẟ + superscript) occurs in the 15 Dec letter. v2_score 0.25 (hole rate 0.276 -> 0.265); stays decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["language-model scoring", "contextual inference"],
+   "what": "Verify v8: the translator's partial readings scored with v2_score.py (explicit holes): f. 55 0.50 (f55_reading.md), Colbert 390 pp. 357-358 0.27 (c390_p357_p358_reading.md), Colbert 392 p. 231 0.17 (c392_p231_bourdin_reading.md); holes in most sentences, every key source already tried. All three back to decoded, not read; with p. 139 no letter reads: class not read, method not solved (key applied as a part), fraction_read 0.",
+   "result": "failed"
   }
  ],
  "outcome": {
-  "method": "read with known key",
+  "method": "not solved",
   "method_basis": "Tomokiyo's published reconstruction of the Bishop of Rennes' cipher (cryptiana henryiii.htm) was applied, with per-hand letter forms taken from the glossed sibling letters (fr. 3181 ff. 57-58, Colbert 390) and an LM lattice to resolve homophones and word-like nulls.",
   "contribution": [
    "transcription",
    "key extended or corrected",
    "decipherment with ambiguous key"
   ],
-  "class": "read in part",
+  "class": "not read",
   "gaps": [
    {
-    "item": "fr. 3181 f. 55, 20% (7% unread, 13% probable): l.2 ꝥ, ɼ ᑲ; l.4 '10 ᑲ ɗ xy ee z r'; l.8 'ß La ᑲ ᑲ z 10 9 z'; l.9 '‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ'; l.12 'h Ə'; slips in ayt tenu, deliberay, monstrrer, sessions",
+    "item": "fr. 3181 f. 55 decoded, not read (0.50 clean sentences on explicit holes, verify v8 23 Oct 2026): l.2 ꝥ, ɼ ᑲ; l.4 '10 ᑲ ɗ xy ee z r'; l.8 'ß La ᑲ ᑲ z 10 9 z'; l.9 '‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ'; l.12 'h Ə'; slips in ayt tenu, deliberay, monstrrer, sessions",
     "blocker": "no-key-material",
     "detail": "signs occur in no glossed passage in this hand (f.57-58 aligned in full; Colbert 390 glosses are in the other hand)"
    },
    {
-    "item": "500 Colbert 390 pp. 357-358, 20% (2% unread, 18% probable): p.357 l.3-4 'lennuieux ce me pleste', l.5, l.8 avoir/l'effect, p.358 s'offrira, esperer, gouvernement, lumiere, remects, de disposer",
+    "item": "500 Colbert 390 pp. 357-358 decoded, not read (0.27 clean sentences on explicit holes, verify v8 23 Oct 2026): p.357 l.3-4 'lennuieux ce me pleste', l.5, l.8 avoir/l'effect, p.358 s'offrira, esperer, gouvernement, lumiere, remects, de disposer",
     "blocker": "no-key-material",
     "detail": "each needs one sign value no gloss gives (∿ = n, sh = r, ‡ value) or rests on a doubled/missing letter"
    },
    {
-    "item": "500 Colbert 392 p. 231, 17% (5% unread, 12% probable): maue, ſ λ ², ‡‡ ~, πꝫ (twice), ꞁꞁ ℌ z 9 ‡‡, La ƀ ſſ z, fc 7, conseil, comme en, leurs",
+    "item": "500 Colbert 392 p. 231 decoded, not read (0.17 clean sentences on explicit holes, verify v8 23 Oct 2026): maue, ſ λ ², ‡‡ ~, πꝫ (twice), ꞁꞁ ℌ z 9 ‡‡, La ƀ ſſ z, fc 7, conseil, comme en, leurs",
     "blocker": "no-key-material",
     "detail": "W, ss, tt, πꝫ, t7, ꝛ-variant, 'maue' occur once or twice and in no glossed passage of Colbert 390 pp.189-231"
    },
@@ -479,9 +486,9 @@
     "detail": "r2j 23 Oct 2026: the 15 Dec 1562 letter (cipher on Colbert 390 pp. 117-118, 125-126) aligned on pp. 117-118 (949 signs, research/reading_audit/r2j_rennes_em.py, against La Ferriere I 449-450): it confirms the common-sign values (th = m, ds = r, at = g, sh = y/et/est, plus = f/s/x) but has none of p. 139's open signs (no ẟao, aʓ, ℛ, ℞, ẟ + superscript; pp. 125-126 inspected, same inventory); the retried runs do not close (c390_p139_reread_log.md, r2j). Whole volume already searched for a copy; faint ink on ll. 8-14."
    }
   ],
-  "fraction_read": 0.658,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: only letters that build sentences count. Sense tokens from measure.py per letter times measured tokens: f. 55 0.80 x 402, p. 357 0.82 x 475, p. 358 0.76 x 277, Colbert 392 p. 231 0.83 x 719 = 1,520 of 2,311 tokens (p. 139, 438 tokens, decoded, not read) = 0.658. Withdrawn as a reading figure: 0.79 (sense share over all five ciphertexts, measure.py, 5 Oct 2026).",
+  "fraction_read_source": "22 Oct 2026, reading audit: only letters that build sentences count. Sense tokens from measure.py per letter times measured tokens: f. 55 0.80 x 402, p. 357 0.82 x 475, p. 358 0.76 x 277, Colbert 392 p. 231 0.83 x 719 = 1,520 of 2,311 tokens (p. 139, 438 tokens, decoded, not read) = 0.658. Withdrawn as a reading figure: 0.79 (sense share over all five ciphertexts, measure.py, 5 Oct 2026). 23 Oct 2026, verify v8: f. 55, pp. 357-358 and Colbert 392 p. 231 back to decoded, not read (0.50, 0.27, 0.17 clean sentences on explicit holes, v2_score.py), with p. 139 already so: no letter reads, 0 of 2,311 tokens. Withdrawn as a reading figure: 0.658.",
   "key": "recovered",
   "fraction_coherent": 0.79,
   "verification": [
@@ -496,6 +503,7 @@
   "texts": [
    {
     "doc": "fr3181-f55",
+    "note": "Verify pass v8, 23 Oct 2026 (the translation wave could not translate it): back to decoded, not read. The translator's partial reading f55_reading.md (aligned/f55.txt put into sentences, its '~' probable words counted as holes) scores 0.50 on explicit holes (4/8 sentences), 0.375 plain, hole rate 0.168: the holes in ll. 2, 4, 8-9 and 12 ([?vous] [?par], [?ayt] [?tenu], [?deliberay], [?monstrer] [?bonne], [?sessions]) break half the sentences. Every glossed sibling in this cipher aligned and La Ferriere does not print the passage (Remaining gaps); blocker no-key-material. The partial reading is kept.",
     "label": "BnF fr. 3181 f. 55, Catherine de Médicis, 31 July 1563",
     "transcription": "f55_v2.txt",
     "decryption": [
@@ -503,17 +511,12 @@
      "f55_v2_reading.md"
     ],
     "summary": "The thirteen ciphered lines of Catherine de Médicis's letter to the bishop of Rennes that La Ferrière printed as 'Partie chiffrée': the Council of Trent and the Habsburg marriage ('avancer le concile', 'pour le bien de la Chrestienté', the December sessions).",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "aligned/f55.txt read through: it builds French sentences (what you discovered about the marriage and your advice on its conduct, my intention entirely conforms; the council and its sessions) with a hole in some clauses (ll. 2, 5, 9, 13); 0.80 of tokens in sense. Audit grade C overturned for f. 55: the audit read the candidate-annotated f55_v2_reading.md working file, not the aligned reading."
-    },
-    "state": "read",
-    "language": "fr"
+    "language": "fr",
+    "state": "decoded, not read"
    },
    {
     "doc": "c390-p357",
+    "note": "Verify pass v8, 23 Oct 2026 (the translation wave could not translate it): back to decoded, not read. The translator's partial reading c390_p357_p358_reading.md (aligned/p357.txt and p358.txt into sentences) scores 0.267 on explicit holes (4/15), 0.133 plain, hole rate 0.213: probable words and {n} runs in most clauses. Every glossed sibling in this cipher aligned and La Ferriere does not print the passage (Remaining gaps); blocker no-key-material. The partial reading is kept.",
     "label": "500 Colbert 390 pp. 357-358, late summer 1564",
     "transcription": [
      "c390_p357.txt",
@@ -525,14 +528,8 @@
      "c390_p357_reading.md"
     ],
     "summary": "The precedence dispute at the imperial court after Ferdinand I's death (1564): another pretext must be found than the one in the sieur Charon's despatch, and a secretary or one of Rennes's people be left there under colour of private business.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "aligned/p357.txt and p358.txt read as running French (take another pretext than the one in Charron's despatch; leave a secretary behind under colour of private affairs; news of the Diet) with scattered {n} holes."
-    },
-    "state": "read",
-    "language": "fr"
+    "language": "fr",
+    "state": "decoded, not read"
    },
    {
     "doc": "c390-p139",
@@ -550,6 +547,7 @@
    },
    {
     "doc": "c392-p231",
+    "note": "Verify pass v8, 23 Oct 2026 (the translation wave could not translate it): back to decoded, not read. The translator's partial reading c392_p231_bourdin_reading.md (aligned/c392.txt into sentences) scores 0.167 on explicit holes (3/18), 0.167 plain, hole rate 0.232: probable words and unread runs in nearly every sentence. Every glossed sibling in this cipher aligned and La Ferriere does not print the passage (Remaining gaps); blocker no-key-material. The partial reading is kept.",
     "label": "500 Colbert 392 p. 231, Bourdin, Dec 1562",
     "transcription": "c392_p231n.txt",
     "decryption": [
@@ -557,16 +555,19 @@
      "c392_p231_reading.md"
     ],
     "summary": "Bourdin encloses Catherine's letter of 15 Dec 1562 on the secret marriage overture; its leak to Spain ('sçavoit incontinant en Espaigne'), the triumph over 'la premiere ouverture ... de ce mariage', closing on friendship and alliance for the repose of Christendom.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "aligned/c392.txt reads as running French (the Queen's letter; the marriage overture; God grant that all succeed to their Majesties' desire) with one-to-three-sign holes in some clauses; 15/19 sentences clean."
-    },
-    "state": "read",
-    "language": "fr"
+    "language": "fr",
+    "state": "decoded, not read"
    }
   ],
-  "key_file": "key.md"
+  "key_file": "key.md",
+  "parts": [
+   {
+    "label": "four letters (Tomokiyo's Rennes key applied; decoded, not read)",
+    "records": "BnF fr. 3181 f. 55; 500 Colbert 390 pp. 139, 357-358; 500 Colbert 392 p. 231",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Tomokiyo's reconstruction of the Bishop of Rennes' cipher, calibrated per hand on the glossed siblings, decoded with an LM lattice: 0.79 of tokens in sense words (measure.py, 5 Oct 2026), but holes in most sentences of every letter (0.50, 0.27, 0.17, 0.25 clean sentences on explicit holes; verify v8, 23 Oct 2026). Decoded, not read."
+   }
+  ]
  }
 }

@@ -177,6 +177,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no08.txt / no08.tok; decode.py output saved to texts/no08_decryption.txt (each run beside the memorandum's words); key key.json",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching", "language-model scoring"],
+   "what": "Verify v8: no08_reading.md rescored after capitalising the resolved name signs and dropping the run-edge marks: 1.0 explicit holes (4/4), hole rate 0; every word carried by the contemporary memorandum. Keeps read, as a reading of four fragments.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -226,7 +233,16 @@
      "transcripts/no08.tok"
     ],
     "decryption": "texts/no08_decryption.txt",
-    "summary": "A ciphered slip on the Milan-Ferrara league: the league between the Duke of Milan and the Marquis of Ferrara against the Venetians and their league, the Duke of Milan having given 'madonna Biancha' to messer Leonello, the Marquis's son, and 'grandissimi facti' to be expected. The clear memorandum on the same sheet (paragraphs 5-7) is its contemporary decipherment; the key rebuilt from the alignment reads all 166 signs."
+    "summary": "A ciphered slip on the Milan-Ferrara league: the league between the Duke of Milan and the Marquis of Ferrara against the Venetians and their league, the Duke of Milan having given 'madonna Biancha' to messer Leonello, the Marquis's son, and 'grandissimi facti' to be expected. The clear memorandum on the same sheet (paragraphs 5-7) is its contemporary decipherment; the key rebuilt from the alignment reads all 166 signs.",
+    "reading": "texts/no08_reading.md",
+    "translation": "texts/no08_en.md",
+    "language": "it",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Verify v8, 23 Oct 2026: a reading of fragments. The slip mixes clear words and four cipher runs; texts/no08_reading.md gives the runs only (the clear text between them is not transcribed). Scored 0.50 because the two resolved name signs were written lower-case ([duca di Milano]) and the run-edge '…' marks (clear text, not unread cipher) counted as holes; with the name signs capitalised and the marks dropped: 1.0 on explicit holes (4/4), 0.25 plain (1440 Sienese spelling), hole rate 0. Each run is a clause that holds (the league between the Duke of Milan and the Marquis of Ferrara; the Venetians and their league; Bianca given to Leonello; 'grandisimi fatti'), and every word is confirmed letter for letter by the contemporary memorandum on the same sheet (paragraphs 5-7). Not 'not prose' (it is running sentences), not decoded-only (no hole)."
+    }
    }
   ],
   "key_file": "key.json"

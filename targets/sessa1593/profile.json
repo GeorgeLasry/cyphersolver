@@ -301,6 +301,13 @@
    "what": "Verification 3 (v3_below_b): no. 79 flagged at 0.548 on reading79.md (first pass). The sense.tsv reading joined into no79_reading.md: 0.613 explicit holes, 0.355 plain, hole rate 0.13. Kept read, marginal; three stretches stay fragmentary.",
    "result": "partial",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["language-model scoring", "contextual inference"],
+   "what": "Verify v8: no. 45 running text (no45_reading.md, from sense.tsv's reading column) scored with v2_score.py: 0.50 explicit holes, 0.357 plain, hole rate 0.158; open nomenclature groups in most sentences, no decipherment of the letter. Back to decoded, not read; fraction_read 0.925 -> 0.750. Gap blocker open-codes renamed no-key-material.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -311,9 +318,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.925,
+  "fraction_read": 0.75,
   "fraction_read_method": "measured",
-  "fraction_read_source": "sense.tsv / measure_sense.py (5 Oct 2026, rerun 14 Oct 2026 without no. 68): tokens read only where they form Spanish sense; doubtful readings and code groups without a value unread. no. 45 230/254 (0.906), no. 79 504/546 (0.923), no. 47 478/510 (0.937). Overall 1212/1310 = 0.925.",
+  "fraction_read_source": "sense.tsv / measure_sense.py (5 Oct 2026, rerun 14 Oct 2026 without no. 68): tokens read only where they form Spanish sense; doubtful readings and code groups without a value unread. no. 45 230/254 (0.906), no. 79 504/546 (0.923), no. 47 478/510 (0.937). Overall 1212/1310 = 0.925. 23 Oct 2026, verify v8: no. 45 back to decoded, not read (0.50 clean sentences on explicit holes); letters that read: no. 79 504 + no. 47 478 = 982 of 1,310 groups = 0.750. Withdrawn: 0.925.",
   "key": "partial",
   "codes_open": {
    "open": 22
@@ -323,7 +330,7 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Three letters read to about 92% of their groups on the office key (fr. 3995 f. 97), checked against the contemporary decipherment on no. 47. codes_open counts the 22 open groups of the three letters. No. 68, in the Feria-Mansfeld cipher, was split off to ibarra1593 on 14 Oct 2026 (the pooled 0.753 included it). 22 Oct 2026, reading audit: graded D on the older reading45/79/47.md; re-checked on sense.tsv's reading column, which builds sentences with scattered holes in all three letters, so the grade is overturned (reviewed B each). English translations still to add.",
+  "notes": "Three letters read to about 92% of their groups on the office key (fr. 3995 f. 97), checked against the contemporary decipherment on no. 47. codes_open counts the 22 open groups of the three letters. No. 68, in the Feria-Mansfeld cipher, was split off to ibarra1593 on 14 Oct 2026 (the pooled 0.753 included it). 22 Oct 2026, reading audit: graded D on the older reading45/79/47.md; re-checked on sense.tsv's reading column, which builds sentences with scattered holes in all three letters, so the grade is overturned (reviewed B each). English translations still to add. 23 Oct 2026, verify v8: no. 45 back to decoded, not read (no45_reading.md 0.50 on explicit holes); nos. 79 and 47 stay read; fraction_read 0.750.",
   "gaps": [
    {
     "item": "nos. 45, 79, 47: 22 code groups not on the f. 97 sheet (Val, ral, ʃep, ner, ʒe, pir, mil, is, xom, mal, rili, mos, ʃer, hir, hum, us, ho, yos, ∂ir, lir, xox, ru)",
@@ -332,8 +339,13 @@
    },
    {
     "item": "nos. 45, 79, 47: about 75 syllable groups whose reading is doubtful (writer's slips, ambiguous hooks)",
-    "blocker": "open-codes",
-    "detail": "see sense.tsv unread column"
+    "blocker": "no-key-material",
+    "detail": "see sense.tsv unread column; doubtful syllables with no gloss or second copy to settle them (renamed from open-codes, 23 Oct 2026)"
+   },
+   {
+    "item": "no. 45 decoded, not read (0.50 clean sentences on explicit holes, verify v8 23 Oct 2026): open groups in the opening, the residence passage and the close",
+    "blocker": "no-key-material",
+    "detail": "nomenclature groups not on the f. 97 sheet (ʃo, 9̈4, ʒe, Val, ral, ʃep, pir) and unresolved syllables; no contemporary decipherment of no. 45"
    }
   ],
   "provenance": "mixed",
@@ -367,6 +379,7 @@
   "texts": [
    {
     "doc": "no45",
+    "note": "Verify pass v8, 23 Oct 2026 (the translation wave could not translate it): back to decoded, not read. The running text of sense.tsv's reading column (no45_reading.md, the 5 Oct 2026 re-transcription read with the office key BnF fr. 3995 f. 97) scores 0.50 on explicit holes (7/14 sentences), 0.357 plain, hole rate 0.158: the opening (con este achaque ... a costa de la bolsa), the residence passage and the close carry unresolved groups and nomenclature groups with no value ([ʃo], [9̈4], [ʒe], [Val], [ral], [ʃep:], [pir]). No contemporary decipherment of no. 45 exists; the groups are not on the f. 97 sheet: blocker no-key-material. no45_reading.md kept as a partial reading.",
     "label": "fr. 3983 no. 45, f. 98: Miranda to Feria, Naples, 25 Feb 1593",
     "transcription": [
      "reading45.md",
@@ -378,12 +391,7 @@
     ],
     "summary": "The Conde de Miranda, at Naples, to the Duque de Feria, in the Spanish syllabic cipher of 1592-93: advice on a confidant to be used 'con este achaque', a business 'a costa de la bolsa', and a request that a person be chosen through whom he can be written to without it being understood. Read line by line with the office key (BnF fr. 3995 f. 97); reading45.md gives cipher and reading per line, sense.tsv the 5 Oct re-transcription with its scoring.",
     "language": "es",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "sense.tsv's reading column (the 5 Oct re-transcription) builds Spanish sentences line by line ('no se vera lo que en esto convernà hazer, que yo me remito a su prudencia'); holes are scattered single groups. reading45.md is the older first pass with more '·' and is what the audit scored."
-    }
+    "state": "decoded, not read"
    },
    {
     "doc": "no79",
@@ -405,7 +413,8 @@
      "note": "v3 check 23 Oct 2026: the sweep scored reading79.md, the older first-pass table (cipher and reading per line; 0.548). The 5 Oct re-transcription's reading column (sense.tsv), joined into running text as no79_reading.md with every unresolved group and every group without a value counted as a hole, scores 0.613 on explicit holes, 0.355 plain (1593 Spanish), hole rate 0.13: just over the bar. The opening, the passage on the election and the passage on Desportes's letter hold; ll. 3-4 (after 'duque de Feria'), l. 9 and ll. 19-21 do not. Rests on the office key (BnF fr. 3995 f. 97) applied to a transcription made here; no contemporary decipherment of no. 79."
     },
     "state": "read",
-    "reading": "no79_reading.md"
+    "reading": "no79_reading.md",
+    "translation": "no79_en.md"
    },
    {
     "doc": "no47",
@@ -425,7 +434,9 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "sense.tsv gives continuous Spanish prose (the contemporary gloss above lines 1-4, the office key below) with scattered open groups; the audit scored the older reading47.md."
-    }
+    },
+    "reading": "no47_reading.md",
+    "translation": "no47_en.md"
    }
   ],
   "key_file": "key92.tsv"

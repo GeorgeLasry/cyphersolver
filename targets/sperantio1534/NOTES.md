@@ -111,6 +111,15 @@ number as a hole. Joined into running text (`research/reading_audit/v3b_lines.py
 hole rate 0.106) with the `<...>` conjectures counted as holes, resting on the key alone. Both stay read; R9412 is
 close to the bar.
 
+## Verification v8, 23 Oct 2026
+
+The translation wave could not translate R9411 and R9412 from `reading_r9411.txt` / `reading_r9412.txt` (line numbers
+and line-end breaks scored as holes: 0.455, 0.40). Rescored as running text (`research/reading_audit/v3b_lines.py`),
+now written as **`r9411/R9411_reading.md`** and **`r9411/R9412_reading.md`** with `reading` pointed at them: R9411
+**0.71** on explicit holes, hole rate 0.078, sentences hold (grade A); R9412 **0.648** (0.642 with the clear Latin cut),
+hole rate 0.106-0.114, **marginal**: the opening, QUARTO, the Schmalz passage and the close build sentences, TERTIO
+(ll. 12-17) and ll. 31-41 do not (grade B). Both keep read.
+
 ## Remaining gaps
 
 - R9412, 27 cipher words not read (after the 5 Oct check) - blocker: illegible; originally 31 words unread and 37 supplied: the second Danube fortress (l.10),
@@ -139,6 +148,7 @@ close to the bar.
   an interpretive pass (84% → 89% → 95.0%), and an independent second transcription with a Viterbi word fit.
 - [x] measure (5 Oct): every bracketed supply in R9412 checked against `r9411/run_r9412_final.txt`; nine the cipher
   spells itself were un-bracketed (see Steps). The [..] places were not re-transcribed in this pass.
+- [x] retry (23 Oct 2026, v8): R9411/R9412 rescored as running text (0.71, 0.648); both keep read, R9412 marginal
 
 ## Steps
 

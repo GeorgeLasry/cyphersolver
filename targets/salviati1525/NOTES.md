@@ -73,3 +73,10 @@ should suffice [?] especially with matters [?] of Modena [?] still as they now s
 ## Notes and corrections
 
 The recipient is in the heading: the letter opens "Rdo Dno Lang. Ptri". The report says the recipient is not established.
+
+## Verification v8, 23 Oct 2026
+
+The excerpt of f54r held here (`lasry_entry.md`) does not read on its own: `v2_score.py` 0.0 on explicit holes and plain
+(0/2 sentences, a `[?]` in each, hole rate 0.152). The reading is George Lasry's (3/8 pages deciphered in part, not in
+the repository); the entry's state is left as his pointer, with a note saying so.
+

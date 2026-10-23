@@ -118,6 +118,14 @@ defeat at Landriano (21 June 1529).
 | fr. 3096 f.91 (R4256) | 699 | 667 (95.4%) | 24 | 4 | 4 |
 | both | 1477 | 1408 (95.3%) | 43 | 9 | 17 |
 
+## Verification v8, 23 Oct 2026
+
+The sweep's 0.59 scored `fr3045_f28_reading.md`, the line-by-line first pass. The running text rewritten with the
+push-pass readings of `fr3045_f28_final.md` (**`fr3045_f28_v2_reading.md`**) scores **0.778** on explicit holes (14/18),
+0.278 plain (1528 Lombard spelling), hole rate 0.111. **Keeps read, marginal**: ll. 8-9 (*et pur al tuto ... cum
+Urbino*), the *quanto ci è* clause and ll. 14-15 (*Designati ... as[?]sedio*) do not build; the rest does. `reading`
+points at the new file.
+
 ## Remaining gaps
 - fr. 3045 l.18 place name "[ιn]npiano" (7 glyphs) - blocker: too-short; one-off place name; enhanced crop reads "ι n f o ψ L y n"; Serravalle, Novi, Gavi, Ovada, Acqui, Castelpiano and the Scrivia plain checked, none fits
 - fr. 3045 l.15 "as[.]sedio ... havese" stretch (about 9 glyphs) - blocker: too-short; values known, the start does not parse, occurs only here; accented á seen on enhancement, "assedio" would need a transposition
@@ -136,3 +144,4 @@ defeat at Landriano (21 June 1529).
 - [x] enhancement: autocontrast and unsharp mask at 1.6x on l.2, 4, 15, 16, 17, 18: á in l.15, l.18 letters "ι n f o ψ L y n"; no reading changed
 - [x] print (second search, 22 Sept 2026): web search for the Bolano letters, the infantry pay and Savona 1528 context (Doria's defection, Saint-Pol at Alessandria); no edition, nothing pins a reading
 - [x] Lombard forms: fora = "in fuora", obsante = obstante with T dropped (as in sep[a]r[at]ione), lorro, nansi = dinanzi; "ognisanti" and several place names tested and rejected
+- [x] retry (23 Oct 2026, v8): f. 28 running text rewritten with the push-pass readings and rescored (0.778); keeps read

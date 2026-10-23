@@ -100,6 +100,15 @@ Bernardino") and R4749 name the same persons and were not compared sign by sign.
 - L6 *questo*: the q and u signs occur only here.
 - L1 has "2 4 ffm(?)" in the clear text, read as an abbreviation, not counted.
 
+## Verification v8, 23 Oct 2026
+
+The translation wave flagged `texts/no08_reading.md` at 0.50: the two resolved name signs were written lower-case
+(`[duca di Milano]`, counted as holes) and the run-edge `…` marks (clear text, not unread cipher) were counted too. With
+the name signs capitalised and the marks dropped: **1.0** on explicit holes (4/4), 0.25 plain (1440 Sienese spelling),
+hole rate 0. **A reading of fragments; keeps read** (grade A): each cipher run is a clause that holds, and every word is
+confirmed letter for letter by the contemporary memorandum. Not 'not prose' (the runs are running sentences) and not
+decoded-only (no hole).
+
 ## Remaining gaps
 
 - the cipher behind paragraphs 1-4 of the memorandum - blocker: needs-physical-access; that cipher is in a covering letter not on this sheet and not among the DECODE photographs; its decipherment is on the memorandum.
@@ -112,6 +121,7 @@ Bernardino") and R4749 name the same persons and were not compared sign by sign.
 - [n/a] print: not needed for the reading; no printed edition of the slip known.
 - [x] key-rebuild: 21 letter signs and 2 name signs rebuilt from the alignment.
 - [x] retry: the rebuilt key applied to the whole slip (`decode.py`): all four runs read.
+- [x] retry (23 Oct 2026, v8): reading rescored with the name signs capitalised (1.0 explicit holes); keeps read
 
 ## Questions for George Lasry
 

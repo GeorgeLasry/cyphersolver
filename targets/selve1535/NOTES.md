@@ -69,6 +69,15 @@ Result: R4232 1408/1430 = **98.5%**, R3697 822/1051 = **78.2%**, both 2230/2481 
 95% overall needs about 127 more signs; the unstruck R3697 gaps hold about 50, so it cannot be reached without the
 struck runs.
 
+## Verification v8, 23 Oct 2026
+
+The sweep's 0.57 for R3697 scored `READING_R3697.md` whole, where the clear text, the decipherer's glosses and the
+struck runs sit in lower-case brackets and count as holes. The unstruck cipher written out as running text
+(**`R3697_reading.md`**, holes and doubtful words marked) scores **0.733** on explicit holes (11/15), 0.667 plain, hole rate
+0.089; with the clear-text leads kept, 0.688 / 0.562. The sentences hold (the Swiss road; the Imperial ambassador's watch
+and his urging the merchant to go to the French court; the informants reporting to the Turk). **Keeps read**; `reading`
+points at the new file.
+
 ## Remaining gaps
 
 - R3697 struck runs C2 tail, C3, T1, T3 (135 signs) decoded, not read - blocker: illegible; no legible gloss and the strike over every sign (re-read 22 Oct 2026; the glossed runs A, B, C1, T2 are read from the glosses, READING_R3697_struck.md); needs a colour image or the original
@@ -112,3 +121,4 @@ struck runs.
   against gloss-led candidates ("de ses maistres", "grand credit", "du Turc") and r8 "a pr[...]" against a paie /
   a prevenu / a prié with ∂ = a and ∂ɜ = r: no fit. Nothing moved; the 95% bar is not reachable on these images.
 - [x] retry (22 Oct 2026): the struck-run glosses taken as the contemporary decipherment; C1 gloss re-read at 2.2x; glossed runs split off and read (169 signs), the rest left with the image blocker (R3697_struck_reread_log.md).
+- [x] retry (23 Oct 2026, v8): R3697 unstruck cipher written out as running text and rescored (0.733 explicit holes); keeps read

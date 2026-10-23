@@ -1,6 +1,6 @@
 # Siena, Concistoro 2308 fasc. 2 no. 14 (DECODE R4802): Sienese envoys to the Priori, before 1429
 
-Status: read in part — key recovered from the ciphertext alone; 876 of 1,495 cipher tokens (58.6%) in words read as sense, 29.2% more in doubtful words.
+Status: in progress (not read: L01-L26 decoded, not read, verify v8 23 Oct 2026). Earlier: key recovered from the ciphertext alone; 876 of 1,495 cipher tokens (58.6%) in words read as sense, 29.2% more in doubtful words.
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part, lines
 L01-L06 only** (424 of about 1,500 tokens, 28%): the envoys arrived safe and are ready to follow the Signoria's
@@ -63,8 +63,18 @@ potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full lines + 
 `mk_validation.py` (split from siena1421's combined script on 14 Oct 2026) writes `validation.tsv` for no. 14 alone;
 `docs/_validate.py siena14 --write`: pass (see profile.json outcome.validation).
 
+## Verification v8, 23 Oct 2026
+
+The translation wave could not translate L01-L06. Their running text (`transcripts/no14_L01-L06_reading.md`, the second
+pass with its tags as holes) scores **0.0** on explicit holes (0/7), hole rate 0.289: the gist holds, but every sentence
+carries doubtful words resting on look-alike sign classes the DECODE image does not separate. **Back to decoded, not
+read**; no line of the letter reads: class **not read**, method not solved (the ciphertext-only key kept as an
+`outcome.parts` item), `fraction_read` 0.28 -> 0. L08-L26 still not re-compared sign by sign (not-attempted), so the
+target is in progress.
+
 ## Remaining gaps
 - L07-L26 decoded, not read (unread runs and queried words in nearly every line; reading audit 22 Oct 2026; b34 partial reading 0.048 / 0.143) - blocker: illegible; small signs at the DECODE resolution, look-alike classes Q/Q4, 8/TH, P/PHI not separable
+- L01-L06 decoded, not read (v8 23 Oct 2026: 0.0 clean sentences, hole rate 0.289) - blocker: illegible; doubtful words rest on look-alike sign classes Q/Q4, 8/TH, P/PHI
 - L08-L26 not re-compared sign by sign with the image in b34 (the Sept second pass did) - blocker: not-attempted
 - code signs <7H>, <Z7>, (420), <13> - blocker: no-key-material; no key sheet in this system in the busta
 - doubtful and unread words (about 40% of 1,495 tokens) and the codes <7H>, <Z7>, (420) - blocker: illegible; small signs at the DECODE resolution, mostly the first lines, lines 13-15 and the subscription; the key itself is recovered
@@ -77,3 +87,4 @@ potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full lines + 
 - [x] key-rebuild: key recovered by homsolve2 from the ciphertext alone, hand crib confirmed it; glyph classes settled on the images
 - [x] retry: 23 Oct 2026 (b34) R4802 re-fetched, L07-L26 written out and scored, L07 compared on the image
 - [x] retry: re-read sign by sign on the images with the extended key (two passes); doubtful words regraded in the reading files
+- [x] retry (23 Oct 2026, v8): L01-L06 running text scored on explicit holes (0.0); decoded, not read

@@ -1,6 +1,6 @@
 # Lope de Soria (Genoa) to Charles V, 1523 — RAH Salazar A-28 (9/28), DECODE R9488-R9498
 
-Status: read (5 Oct 2026: 96.6% of cipher units read as sense, measured; measure/measure.py) (written up as docs/soria1523.html; the page still shows the earlier 'read in part')
+Status: in progress (read in part since verify v8, 23 Oct 2026: R9494-96 decoded, not read). Earlier: read (5 Oct 2026: 96.6% of cipher units read as sense, measured; measure/measure.py) (written up as docs/soria1523.html; the page still shows the earlier 'read in part')
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R9491 and R9494-96 were graded C on the superseded files read_r9491_b.md and read_r9494.md. The 5 Oct 2026 measured readings (measure/kb_r9491.txt, measure/kb_r9494.txt) build sentences in both letters with single key-B code groups open, so both per-document grades are overturned to B. Claim unchanged.
 
 
@@ -128,11 +128,19 @@ What moved it:
 - Key-A codes rip (Venetians?), pur, qed (Swiss?), mul; key-B groups listed in docs/soria1523.html section 09.
 - R9496 collated 5 Oct 2026 (opening paragraph new); R9498 collated for block 1 (30 Sept 2026). Measured readings: measure/.
 
+## Verification v8, 23 Oct 2026
+
+The translation wave could not translate R9494-96. `R9494_reading.md` (from `measure/kb_r9494.txt`) scores **0.583** on
+explicit holes (7/12), 0.333 plain, hole rate 0.118: the courier sentence and the money sentence carry three code-group
+holes each, and the R9496 paragraph breaks off. The groups are spelled the same in all three copies and are not in the
+R9844 crib. **Back to decoded, not read**; class read -> **read in part**, `fraction_read` 0.966 -> 0.873. R9498 beyond
+block 1 is still not collated (not-attempted), so the target is in progress.
+
 ## Remaining gaps
 - key-A code words rip (4x), pur (3x), qed (2x), dus (2x), cop - blocker: open-codes; context only (Venetians? V. Magestad? Swiss?), every copy writes the same groups, no key-A crib exists
 - July L10-L12 'an fec que la' and 'Q?o Lo79' (~12 signs) - blocker: illegible; R9492 and R9493 disagree sign by sign
 - R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: open-codes; no duplicate of this letter, not in R9844 or any sibling
-- R9494-96 te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: open-codes; three copies collated, they spell the same groups
+- R9494-96 decoded, not read (v8 23 Oct 2026: 0.583 clean sentences): te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: no-key-material; three copies collated, they spell the same groups
 - R9497 paf [tiempo], sud [respuesta], xuf yic [hablado], z7∞ [hara] - blocker: open-codes; bounded only by the alphabetical blocks, other words fit
 - R9498 beyond block 1 not collated - blocker: not-attempted; block 2 and f.579r of R9497 read without it
 
@@ -143,3 +151,4 @@ What moved it:
 - [x] print: Bergenroth CSP Spain vol. 2 no. 586 (clear parts only)
 - [x] key-rebuild: key A by annealing with a Castilian 4-gram model plus hand fixes; key B from R9844
 - [x] retry (5 Oct 2026): R9493 (key-A copy of the post data, interlinear decipherment of the closing), R9495, R9496 (new paragraph) and the clear foot of R9491 used as second witnesses; every letter re-measured with measure/measure.py. Not done: other decrypted Soria letters of 1523-24 in Salazar 9/29-9/31 to attest the key-B residue
+- [x] retry (23 Oct 2026, v8): R9494 reading scored on explicit holes (0.583); decoded, not read
