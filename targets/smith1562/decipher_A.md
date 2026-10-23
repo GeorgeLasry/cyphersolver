@@ -1,5 +1,7 @@
 # Smith ciphers in BL Add MS 4136 — decipherment A
 
+> 22 Oct 2026 (re-read, batch b03): labels and values corrected passage by passage in no01-no23_corrections.tsv; the readings are in no<NN>_reading.md. Where this file and the tsv differ, the tsv holds.
+
 Key: KEY.md / decode/IMG_R9261_I43290_P1.jpg. Glyph transcription is normalized: digits with `.`/`:` as written,
 `⊢̈` = m, `{`/`}` = l, `ξ` = d, `L` = e, `⊔ ⊓` = a, `γ ∝ α` = c, `π` = i, `X` = g, `ω` = h, `□` = f, `‡` = b,
 `◇—◇` = w; code words given as `sign(word)`. Clear-English nulls omitted. [?] = uncertain letter/word,

@@ -1,5 +1,7 @@
 # Smith cipher passages, BL Add MS 4136 (Forbes copy): decipherment B
 
+> 22 Oct 2026 (re-read, batch b03): labels and values corrected passage by passage in no01-no23_corrections.tsv; the readings are in no<NN>_reading.md. Where this file and the tsv differ, the tsv holds.
+
 Partial first pass. Readings come from the glyphs through KEY.md and the key image R9261 p.1. Cribs were used only to
 check them. `[?]` means an uncertain letter or word, and `⟨code⟩` means an unread code group. Letters marked
 NOT ATTEMPTED have no reading yet.

@@ -1,5 +1,7 @@
 # Smith ciphers in BL Add MS 4136: decipherment D (letters of Sept 1564 to Feb 1565)
 
+> 22 Oct 2026 (re-read, batch b03): labels and values corrected passage by passage in no01-no23_corrections.tsv; the readings are in no<NN>_reading.md. Where this file and the tsv differ, the tsv holds.
+
 Readings come from the glyphs through KEY.md and the code words confirmed in decipher_A.md. CSP Foreign vol. 7 was
 used afterwards to confirm them (csp/v7_pp195-215.html, v7_pp234-252.html, v7_pp277-290.html, v7_pp290-306.html).
 Glyphs are normalised as in decipher_A. `[?]` marks an uncertain letter or word and `⟨..⟩` an unread code sign.

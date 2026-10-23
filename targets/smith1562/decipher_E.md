@@ -1,5 +1,7 @@
 # R9236 (Add MS 4136 f.140): five letters, Oct 1562 - Nov 1563, read with key R9261
 
+> 22 Oct 2026 (re-read, batch b03): labels and values corrected passage by passage in no01-no23_corrections.tsv; the readings are in no<NN>_reading.md. Where this file and the tsv differ, the tsv holds.
+
 # Smith to Cecil, Add MS 4136 f.140 (DECODE R9236), early blocks
 
 Image decode/IMG_R9236_I43221_P.jpg. Key: ./KEY.md. Glyph conventions as in ./decipher_A.md.

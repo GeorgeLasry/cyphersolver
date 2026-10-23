@@ -9,6 +9,14 @@ D4, D6) and no. 21 (15/17 Dec 1562, E3). **The other seventeen are decoded, not 
 or fragments (decipher_A Letters 2, 3, 5, 6; B Blois; D1-D3, D5, D7, D8; E1, E2, E Blocks 1-2), and nos. 01 and 04 are
 not transcribed (printed in Forbes). About 45% of the passages read (estimated).
 
+22 Oct 2026, re-read (batch b03, REREAD_BRIEF; no01-no23_reread_log.md, no01-no23_corrections.tsv): **22 of 23 letters
+now read** (no<NN>_reading.md + _en.md). Key find: Forbes prints every deciphered word in *italic*, so for the letters
+in his vol. ii the italic stretches give the cipher passages and the clear text gives their sentences. Nos. 01 and 04
+(never transcribed) aligned passage by passage with the italics and checked on the glyphs; nos. 03, 05, 19, 20 read in
+their printed sentences (grade A). Nos. 06, 08, 09, 11, 13, 15-18, 22 (no clear text in print; CSP Foreign summaries
+only) re-read on the images and read as the passages themselves (grade B), with M̈ = my (no. 03), m̄ = marriage, ·∂ = sea, the key's dotted secret sign ("secretary"), ‖ = i, C̄ = whom, Γϑ = crown. No. 23 (advertisements,
+31 Jan 1562/3) stays decoded, not read. fraction_read ~0.45 -> ~0.99 (by passages).
+
 Earlier status: read (key found; 23 letters read in full, large part or in part in full or in large part). Session 21 Sept 2026.
 
 ## What the records are
@@ -85,17 +93,22 @@ R9236 (catalogue 94, added 21 Sept 2026): readings in decipher_E.md. New variant
 
 ## Remaining gaps
 
-- nos. 03, 05, 06, 08, 09, 11, 13, 15-20, 22, 23 decoded, not read (names, code items and fragments; reading audit 22 Oct 2026) - blocker: not-attempted; re-read the runs against the key image and the hooked-T code family, and build each letter's passages into sentences with CSP Foreign / Forbes
-- nos. 01 and 04 not transcribed (printed in Forbes, Full View ii) - blocker: not-attempted; transcribe and decrypt, or read from Forbes's print
+Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b03, read). What stays open:
+
+- single unread signs in nos. 08, 11, 15, 16, 17, 18 - blocker: no-key-material; the signs (08: (2), (11), ẓ, ï;
+  11: m̄10., the underlined sign in (5); 15: ʒ:, P̄, Γ̈⊓, Ꮚbo, ξ̣; 16: first five signs of (1); 17: ξ, ꝏ̇, the sign
+  before Lennox, ωLξ⊓4:, ċ; 18: T̈ ċ) are not on the key sheet R9261 and occur once each, and the clear text of these
+  letters (SP 70 originals) is not in print (CSP Foreign gives summaries only)
+- no. 23 (advertisements from France, 31 Jan 1562/3, R9236 f. 140) decoded, not read - blocker: too-short; no clear or
+  printed text (not in Forbes, not found in CSP Foreign vi), and its unknown signs (ſ., ξ̤, L8T̈, ξ‡⊓2ξ) occur once
 
 ## Escalation
 
-Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
-not read. None of these steps has been redone since; each is open for those documents.
+Added by the reading audit (22 Oct 2026); worked through by the re-read of the same day (batch b03).
 
-- [ ] siblings: other letters of the same series or key, read or deciphered at the time
-- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
-- [ ] known-keys: other keys of the same correspondents tried
-- [ ] print: printed editions and calendars searched for these letters
-- [ ] key-rebuild: the key corrected against the documents that read
-- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images
+- [x] siblings: the other letters of the same key in Add MS 4136 used for the sign values that hold across them (M̈, m̄, ·∂, ‖)
+- [x] clear-pages: Add MS 4136 holds only Forbes's cipher extracts; no clear copies on ff. 140, 157-168
+- [x] known-keys: Smith's key R9261 is the key; no other key applies
+- [x] print: Forbes, A Full View ii (italics = deciphered words) used for nos. 01, 03, 04, 05, 19, 20; CSP Foreign vi-viii for the rest; no verbatim print of the 1563-66 letters found
+- [x] key-rebuild: key values confirmed or added (M̈ = my in no. 03, m̄ = marriage, ·∂ = sea, ‖ = i; key-sheet words checked); see no01-no23_reread_log.md
+- [x] retry: every decoded-not-read document re-read passage by passage against the images (22 Oct 2026)
