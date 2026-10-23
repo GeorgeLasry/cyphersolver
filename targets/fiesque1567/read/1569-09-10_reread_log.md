@@ -26,3 +26,21 @@ None known (no margin or interlinear decipherment on views 149-150 at reduced si
 ## Result
 Reads: long continuous sentences; holes concentrated in v150l c17-c23 (about 6 holes in 60 words there) and a few
 single words elsewhere. Workable further by image checks of v150l c17-c23.
+
+## Round 2, 23 Oct 2026 (Claude Opus 5.5): image check of v150l c14-c23 and single words
+- Line crops of view 150 left at native resolution (x 580-3230, y 500-4300; 30 lines matched to c01-c30).
+- c17: "accomplis, lesquelz il tient pour faictz" ("z o" is the code 20, pour). c19: "escript resoluement de la
+  [con]clusion" (Dz = con, the value found on view 6 right). c20: "proposé quelques [con]ditions, lesquelles il falloit
+  resouldre" ("QUE u QUE s" = quelques, fu = l). c22-c23: "ung courrier pour [?cest] effect, jusques au retour duquel il
+  ne veult prandre resolution" (the contributor's "C o" is "zo" on the image; Δ ɥ T 22 ʒ = jusques).
+- c15: "pour [con]tanter [H#], lequel vous asseuroict que telle estoict sa volunté": the contributor's "1 3y" is the code
+  18 (vous) on the image; H# standing alone is left as a code.
+- c18: "mais que [ffx-3y] n'a jamais escript": the two-sign group before "n'a" is left as a code (by sense the King of
+  Spain).
+- v149r c04 "du [?dict] lieu"; v150l c01 "[?conclurre]"; v150r c14 "Estant tout ce que je vous puis escripre"; v150r c06
+  "touchant quelque traicté"; four "[?pour]" carried by the code 20 written zo now unbracketed.
+- Score, body only: 0.61 plain (0.54 before), 0.94 holes only, 0.71 with target spellings. Look-alike upper bound
+  (r2_fiesque_alt.py, one-for-one letter substitutions between reading and decode): 4.1%; 38 of the 151 are the y-shape
+  s/p class, which the contributor labelled by context, not by shape; without them 3.0%.
+- State: read (grade B). Left: [H#], [ffx-3y], [?conclurre], [?cest], [?Gennes], [?saultier] and the single words
+  listed in round 1.

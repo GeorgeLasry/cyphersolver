@@ -14,3 +14,9 @@
 - Holes: v038l c03-c04 "sarcuel QUE lon snuintementl" (par quel[que] ... que l'on ...); c05 "deuhcie" read [?l'homme];
   c11 "scnde" read [?sceu]; c17-c18 "QUE luos nescu?ont" (subject not read); c19 "descurchaoe" read [?pourchasse]. No
   image check of these; no labels changed.
+
+## Round 2, 23 Oct 2026 (Claude Opus 5.5): image check of v038l c03-c04 and c17-c18 (view 38 left, native crops)
+- c03-c04: "sorty de ces peines et affaires avec honneur, par quelque bon [?appoinctement]" ("c + h" is c (key b) + n =
+  bon, not "l'on"; the next group is a damaged "appoinctement").
+- c17-c18: "et semble a beaucoup que [?elles] ne pourront prandre bonne fin" ("ʒ t ‡ ꝑ W ‡ h ʊ" = pourront, W = rr);
+  the four-sign subject ("ꝛ ꝑ ɥ T") is not settled; "elles" (the procedures) by sense.

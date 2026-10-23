@@ -36,3 +36,11 @@ v007r c22 "deme"; v008l c19 "des filles de m[...]" (dem: possibly a code for the
 ## Result
 _check_reading.py on the reading: clean share 0.72 (42/58; hole rate 0.089) against 0.00 for the decode. Sentences
 hold on views 7-8; the letter's first cipher page (view 6 right) is unread because it is untranscribed.
+
+## Round 2, 23 Oct 2026 (Claude Opus 5.5)
+- View 6 right transcribed and read: read/r2/transcription_v006r.txt (816 signs), log read/r2/v006r_reread_log.md. The
+  reading now starts at the first cipher word ("Je luy dicts que, quant je prins congé de vous ...").
+- v007l c01 hole closed on the image: "et aveugles a leur interest, ont [?faict] cognoistre".
+- Dz = con (four words on view 6 right). Look-alike alternates on view 6 right 3.3% (31/940 letters).
+- Score, body only: 0.61 plain (0.67 before on the shorter text), 0.92 holes only, 0.70 with target spellings.
+- Left: v006r c05-c06 two words; [?] words listed in the v006r log; v007r-v008l holes listed above (not re-checked).

@@ -11,3 +11,11 @@ Before: decoded, not read (decoded_v022r.txt, unspaced; _check_reading 0.0); vie
    in the matching lines (crop f23 x 1000-3600, y 1050-3100). A decode of view 23 left would close these; its cipher (16
    lines, about 600 signs) was not transcribed in this pass (time), so it stays a workable gap.
 4. Result: the reading follows the decipherment; v022r sentences checked against the decode (calib.txt); grade A.
+
+## Round 2, 23 Oct 2026 (Claude Opus 5.5)
+- View 23 left transcribed (13 lines, 446 signs, read/r2/transcription_v023l.txt) and decoded; log read/r2/v023l_reread_log.md.
+- Corrected against the cipher and a re-reading of the decipherment: "il s'en va a Prague" (not "de soy va"); "ceste
+  lettre" (decipherment "lre", not "[?cour]"); "je n'ay eu responce de celles que vous ay envoyées par Suisse" (not
+  "[?Chanton]nay [?en] responce de celuy ..."). Closing formula read in cipher too.
+- Left open: the bearer's name (9 signs) and about 17 signs between "Flandres" and "court"; the decipherment line is
+  cramped there. Score body 0.91 (0.88 before).

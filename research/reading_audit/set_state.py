@@ -4,9 +4,9 @@
 
 The entry whose "doc" is <doc> is located in the text, parsed, changed (state, note; the note goes right after "doc"),
 and written back in the same style: on one line if it was on one line, else indented like its first key. The rest of
-the file is untouched, and the result must parse to the old data with only those two fields changed.
+the file is untouched (DROP_REVIEW=1 also removes its reading_review), and the result must parse to the old data with only those two fields changed.
 """
-import json, pathlib, re, sys
+import json, os, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 
@@ -34,7 +34,7 @@ def main(folder, doc, note):
     start, end, obj = entry_span(raw, m.start())
     new = {}
     for k, v in obj.items():
-        if k in ('state', 'note'): continue
+        if k in ('state', 'note') or (k == 'reading_review' and os.environ.get('DROP_REVIEW')): continue
         new[k] = v
         if k == 'doc': new['note'] = note
     new['state'] = 'decoded, not read'
@@ -52,7 +52,7 @@ def main(folder, doc, note):
     after = json.loads(out)
     tb = [t for t in before['outcome']['texts'] if t.get('doc') == doc][0]
     ta = [t for t in after['outcome']['texts'] if t.get('doc') == doc][0]
-    assert {k: v for k, v in ta.items() if k not in ('state', 'note')} == {k: v for k, v in tb.items() if k not in ('state', 'note')}
+    assert {k: v for k, v in ta.items() if k not in ('state', 'note', 'reading_review')} == {k: v for k, v in tb.items() if k not in ('state', 'note', 'reading_review')}
     assert ta['state'] == 'decoded, not read' and ta['note'] == note
     p.write_bytes(out.encode('utf-8'))
     print(f'{folder} {doc}: decoded, not read')

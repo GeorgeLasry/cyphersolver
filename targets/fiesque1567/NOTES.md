@@ -1,8 +1,28 @@
 # Scipion de Fiesque, Vienna, to Catherine de' Medici and Charles IX, Oct 1567 – Nov 1569 (BnF fr. 15919)
 
-Status: in progress (22 Oct 2026). Contributed reading (issue #52, Harumi-Matsuba), checked here; all 23 letters re-read into sentences 22 Oct, read in part.
-View 23 left, the second cipher page of the 15 Nov 1567 letter, is not transcribed, and the doubtful stretches and
-code words are workable, not blocked (see Remaining gaps).
+Status: in progress (23 Oct 2026). Contributed reading (issue #52, Harumi-Matsuba), checked here; all 23 letters read into sentences
+(round 2, 23 Oct), read in part: open codes and phrase holes remain inside the readings (see Remaining gaps).
+
+23 Oct 2026, round 2 (REREAD_BRIEF, Claude Opus 5.5): **view 6 right and view 23 left transcribed and read; the 10 Sep
+1569 letter now reads, so all 23 letters read.**
+- View 6 right (f. 2r), the first cipher page of the 11 Oct 1567 letter, transcribed from native IIIF crops (23 lines,
+  816 signs, `read/r2/transcription_v006r.txt`, log `read/r2/v006r_reread_log.md`) and read: Fiesque recalls his
+  orders to sound the Emperor on a union of the Christian princes; the Emperor blames the disorders in Christendom on
+  their disunion, "plus enclins a leur particullier qu'au bien publict". Single AI transcription, look-alike
+  alternates 3.3% of its letters; letter body score 0.61 plain, 0.92 explicit holes only. v007l c01 closed.
+- **Dz (ꝺʒ) = con**: the contributor's unvalued sign reads "con" in eleven words in five letters (congé, condition,
+  conclusion, conditions, contanter, conservation, comme, consoler ...). Also found: this hand writes the code 20 as
+  "zo" and 10 as "ic"; lone ∞ appears as a code in f. 39r; the null ".bro" reads "de" in f. 100r c24.
+- View 23 left (f. 18v) transcribed (13 lines, 446 signs, `read/r2/transcription_v023l.txt`) and decoded; with a
+  re-reading of the contemporary decipherment it corrects three readings of 22 Oct: "il s'en va a Prague", "ceste
+  lettre" (the decipherment's "lre"), and "je n'ay eu responce de celles que vous ay envoyées par Suisse" (the
+  "[?Chanton]nay" of 22 Oct was "Je n'ay"). The page ends with the closing formula in cipher.
+- 10 Sep 1569: view 150 left c14-c23 checked on native crops; label corrections (code 18 and code 20 misread as letters)
+  and Dz = con close the passage; body score 0.54 -> 0.61, look-alike 3.0% (without the y-shape class), state read (B).
+- Phrase holes checked on the images: 4 Sep 1568 f. 100r c16-c27 (mostly read; [pp], the King of Spain, wished to be
+  mediator), 17 Jul 1568 f. 79v c06-c08 (read), 15 Feb 1568 v038l c03-c04 (read), 6 Mar 1568 f. 39r c21-c29 (mostly
+  read). Label corrections in `read/r2/corrections.tsv` (contributed/data unchanged).
+- fraction_read 1.0 measured (30,969 of 30,969 signs belong to letters that read); class kept read in part.
 
 22 Oct 2026, re-read (REREAD_BRIEF, batch b02, Claude Opus 5.5): **all 23 letters now read as French sentences and
 are translated** (`read/<doc>_reading.md`, `_en.md`, `_reread_log.md`; 4 grade A, 19 B). Four follow contemporary
@@ -108,15 +128,21 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
 - `profile.json`. Images are not kept; crops for the site are `docs/fiesque1567_*.jpg`.
 
 ## Remaining gaps
-- View 6 right, the first cipher page of the 11 Oct 1567 letter (about 22 lines, about 800 signs) - blocker: not-attempted; not in the contributed transcription, image good
-- View 23 left cipher (15 Nov 1567) - blocker: not-attempted; read through the contemporary decipherment on view 23 right; one cramped decipherment line ("gens de Flandres ... Chantonnay") would be closed by transcribing and decoding the cipher
-- Phrase-level holes in f. 79v and f. 80 (17 Jul 1568), f. 100r c17-c27 (4 Sep 1568), v150l c17-c23 (10 Sep 1569), v038l c03-c04 and c17-c18, f. 39r c22-c29, single words elsewhere (read/<doc>_reread_log.md) - blocker: not-attempted; AI-only transcription, workable by sign-level crops and re-decoding
-- Lone signs standing as codes, values not settled: ϖ (l'Empereur or le Roy), =ii, Dz, mm, pp, the arrow, "lele"; 16 = ce or vostre - blocker: open-codes; not in Tomokiyo's table, read from context; key.tsv unchanged
+- View 6 right (11 Oct 1567) c05-c06, two words, and about ten [?] words on that page - blocker: no-key-material; transcribed and checked sign by sign on native crops 23 Oct; the groups give no word under the key and no decipherment or print of this letter exists
+- View 23 left (15 Nov 1567): the bearer's name (9 signs) and about 17 signs before "court" - blocker: no-key-material; decoded 23 Oct; a name not in the key, and the contemporary decipherment abridges and is cramped there
+- Phrase holes left after the round-2 image checks: f. 79v c01-c03, f. 80 c01, c08 (17 Jul 1568); f. 100r c18 end, three words in c24-c26 (4 Sep 1568); v038l c17 subject (15 Feb 1568); f. 39r c08, c22-c23 end, c29 verb (6 Mar 1568); v150l [?conclurre], [?cest] (10 Sep 1569) - blocker: no-key-material; each checked on native crops (round-2 sections of read/<doc>_reread_log.md); no contemporary decipherment, clear copy or print exists for these letters
+- Single-word holes in the 17 letters not re-checked in round 2 (about 60 words; listed in read/<doc>_reread_log.md) - blocker: not-attempted; left for a later pass: every one of these letters already reads (clean share 0.58-1.0) and round 2 went to the untranscribed pages and the phrase holes
+- Lone signs standing as codes, values not settled: ϖ (l'Empereur or le Roy), ∞ alone, =ii, pp/ꝥ (the King of Spain by sense), H# alone, the group ffx-3y, the arrow, "lele"; 16 = ce or vostre - blocker: no-key-material; not in Tomokiyo's table, read from context; key.tsv unchanged (Dz = con now settled)
 
 ## Escalation
-- [x] siblings: all 183 views were looked through by the contributor; here views 22, 23 and 99 opened, and view 23 left found untranscribed
+- [x] siblings: all 183 views were looked through by the contributor; here views 22, 23 and 99 opened, and view 23 left found untranscribed; 23 Oct views 5, 9, 21, 24 checked for a decipherment of views 6 and 23 left (none)
 - [x] clear-pages: view 23 right is the contemporary decipherment of views 22 right and 23 left (read in full 22 Oct); the margins of views 65, 103 and 125 right decipher those letters, view 37 right's its two lines (read 22 Oct); no other cipher view has a margin decipherment (contact sheet of all 34)
 - [x] known-keys: Tomokiyo's reconstructed table for this volume is the key; no other key of Fiesque's embassy is known
 - [x] print: La Ferrière, Lettres de Catherine de Médicis iii (Catherine's replies only), Cryptiana, DECODE and the contributor's prior-work list; nothing printed of Fiesque's cipher
-- [x] key-rebuild: contributor inferred 23 values from context; the calibration shows one code (Φ) mis-valued in one place
-- [x] retry: the whole volume decoded again here with the contributed key and scored (measure.py); 22 Oct every letter built into sentences from the decode, with image checks on views 6, 37, 109, 159; sign-level re-transcription of the remaining holes still to do
+- [x] key-rebuild: contributor inferred 23 values from context; the calibration shows one code (Φ) mis-valued in one place; 23 Oct Dz valued con from eleven words in five letters
+- [x] retry: the whole volume decoded again here with the contributed key and scored (measure.py); 22 Oct every letter built into sentences from the decode, with image checks on views 6, 37, 109, 159; 23 Oct (round 2) views 6 right and 23 left transcribed, and the phrase holes of ff. 39r, 79v-80, 100r and views 38 left, 150 left re-read on native-resolution crops
+
+## 23 Oct 2026: round 2 review (coordinator)
+- 10 Sep 1569 kept **decoded, not read**: the reading body clears the bar (0.61 plain, 0.76 explicit holes with conjectures counted), but 4.1% of its letters rest on look-alike choices (3.0% leaving out the y-shape s/p signs), over the ~3% limit, and nothing outside confirms them. The partial reading and its English stay in `read/1569-09-10_reading.md` / `_en.md`. Next step: settle the y-shape s/p signs on native crops, sign by sign, which would bring the share under the limit.
+- Gap blockers "open-codes" renamed no-key-material (the lone code signs have no key entry).
+- fraction_read 1.0 -> 0.91 (estimated from word counts).

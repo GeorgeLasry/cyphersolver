@@ -17,3 +17,11 @@
   gardocesorterdoouigem"; c25-c26 "seuoentuuy", "meurpsentiecesr"; c27 "?quimeitintieudlycnie"; c29 "mcelaeant";
   f039v c06 "urasarynoue"; c10 "puiuantice LL euy"; c14 "aulcirm". ⊸ (c20, "comte ⊸") is still without a value;
   the context (Johann Wilhelm's father-in-law, the Elector Palatine) suggests Palatin but that is not read from figures.
+
+## Round 2, 23 Oct 2026 (Claude Opus 5.5): image check of f. 39r c21-c29 (view 43 right, native crops)
+- c21 "[con]me il vous semble" (Dz = con). c22-c23 "que luy et le Casimyre [?n'ont] garde [?de] se porter […]".
+- c25-c26 "que ces gens eussent vuydé le royaume, et vos forces françoises demeurassent entieres".
+- c27 "Et mesmes [∞], qui me tint jeudy dernier [ung] long propos sur ce faict": the unidentified sign is the ∞ code
+  (le Roy, or with its tail l'Empereur; the Emperor by sense here). c29 "que [∞] […] ung seul a rigueur": the group
+  after ∞ ("t o ꝛ // ꝺ // h ʊ") not settled.
+- Left: c08 speaker, c29 verb, c22-c23 end.

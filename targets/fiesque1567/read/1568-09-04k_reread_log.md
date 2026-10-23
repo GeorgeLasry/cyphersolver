@@ -20,3 +20,13 @@
   c24-c27 (most of the lines); f. 100v c09-c10 ("nardedeuant ... QUE lcuecruit"), c13 ("ducoyhe", "cuimecocozandies");
   f. 101 c16 ("versleso"), c21 ("oimsre CE samte"), c25 ("sai LL entauoilien"); f. 101v c05, c14, c19. f. 100r c24-c27 is
   the weakest stretch of the document (fragments only).
+
+## Round 2, 23 Oct 2026 (Claude Opus 5.5): image check of f. 100r c16-c27 (view 105 right, native crops)
+- c17: "mais que [pp] desiroict d'estre mediateur [de] ce mariaige" (first sign is ꝑꝑ; [pp] = the King of Spain, as in
+  f. 101v). c18: "en quoy il ne pouvoict nier de luy qu'il ne […]" (three signs of "pouvoict" missing from the
+  contributed line). c19: "[et] esperoict que vous en seriez [con]tante. Je luy [?dis] que je croyois".
+- c24-c27: "de ce mariaige, affin de ne luy […] celle de vostre intention, […] l'alliance qu'avez ensemble, tenant son
+  filz, et […] amy. Sur cela il me [?dict] que bien tost il envoyeroict en Espaigne quelque personne". The contributor's
+  null ".bro" reads "de" (b o) in c24; 16 = vostre.
+- Left: c18 end (about 10 signs after "qu'il ne"), c24 one word after "luy", c25 the word before "l'alliance", c26
+  the word before "amy". No contemporary text exists to settle them.
