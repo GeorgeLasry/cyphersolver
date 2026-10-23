@@ -108,7 +108,7 @@ h where the decipherment has *tous*); and the χ° sign, *q* in the table, stand
 - ff. 218-219: stretches that do not read (f. 218r ll. 10-12, 22, 25-26; f. 218v ll. 9-10, 21-22; f. 219r ll. 1-5, 12-17) - blocker: no-key-material; one AI reading pass calibrated at 74.8%; a voted second pass with Burford's sign sheet and image checks is the next step
 - f. 385: 36 short stretches not read, 41 doubtful words - blocker: no-key-material; misread signs, names and abbreviations; Burford's planned second image round not yet made
 - f. 120: short stretches and three values inferred in this letter only (ooo = *escus*, struck gg = *nous*, curled stroke = *o*) - blocker: no-key-material; no person has checked the transcription
-- fr. 15573 f. 120: decoded, not read - blocker: not-attempted; partial reading f120_harumi/f120_reading.md (b21, 23 Oct 2026: 0.50 / explicit holes 0.647); r c15-c19, c24-c31, v c03-c05 to re-read sign by sign on views 246-247; 12 code signs with no value are no-key-material
+- fr. 15573 f. 120: decoded, not read - blocker: not-attempted; partial reading f120_harumi/f120_reading.md (b21, 23 Oct 2026: 0.50 / explicit holes 0.647); r c15-c19, c24-c31, v c03-c05 to re-read sign by sign on views 246-247 (its 12 code signs with no value are in the code-signs line above)
 - fr. 15573 f. 385: decoded, not read - blocker: not-attempted; normalised partial reading f385_burford/f385_reading.md (b21, 23 Oct 2026: 0.222); the v0.2 unread stretches need the signs re-read on views 752-753
 
 ## Escalation

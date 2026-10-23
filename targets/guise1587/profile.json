@@ -266,11 +266,18 @@
    "technique": ["statistical test"],
    "what": "v3 verification: f. 142 reading joined into running text (f142_running_reading.md): 0.167 explicit-hole, hole rate 0.167; not workable without new key material (26 pin passes already made, f. 119's b27 re-read reached 0.558). Demoted to decoded, not read; no document of the target reads, class set to not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): class not read with method 'read with known key' -> method 'not solved'; key stays partial (Lasry's table, extended).",
+   "result": "partial",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
-  "method": "read with known key",
-  "method_basis": "George Lasry's 2022 key table on cryptiana GL.htm names fr. 15564 ff. 119 and 142 among the letters it solves; it was applied sign by sign here (beam search over the homophone candidates with a 5-gram model, then line-by-line relabelling against the Gallica images), giving 95.1% of letter signs; no plaintext had been published.",
+  "method": "not solved",
+  "method_basis": "George Lasry's 2022 key table on cryptiana GL.htm names fr. 15564 ff. 119 and 142 among the letters it solves; applied sign by sign here (beam search over the homophone candidates with a 5-gram model, then line-by-line relabelling against the Gallica images), it decodes most letter signs (95.1%), but neither letter builds into sentences (f. 119 0.558 clean, f. 142 0.167 explicit-hole, 23 Oct 2026): the key is partial, the text is not read.",
   "contribution": ["transcription", "decipherment with ambiguous key", "key extended or corrected"],
   "class": "not read",
   "key": "partial",

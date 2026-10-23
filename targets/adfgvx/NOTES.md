@@ -186,7 +186,8 @@ sentences), plain 0.565 (telegraphic abbreviations and numbers). Keeps read.
 
 - nine open messages (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198; 1,320 letters) - blocker: no-key-material; no known key fits, Lasry's CHI key and the p. 217 TRUPPENVERSCHIEBUNG key included
 - three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) - blocker: needs-physical-access; marked transmission gaps (44, 44, 11 letters, a line missing from the p. 164 transcript); VGADA's 2017 text is part emendation (20 letters against the cells)
-- closed 23 Oct 2026 (b24): p. 217 (read from the Sept 2026 decipherment, verified as known plaintext)
+
+Closed (taken out of the open list, 23 Oct 2026): b24, 23 Oct 2026: p. 217 (read from the Sept 2026 decipherment, verified as known plaintext)
 
 ## Escalation
 

@@ -32,7 +32,7 @@
     "image_quality": "good",
     "notes": "Not transcribed group by group and not deciphered with the key; the text is read from the Brienne clear copy."
    },
-   "read": "read"
+   "read": "not read"
   },
   {
    "id": "f410",
@@ -62,7 +62,7 @@
     "image_quality": "good",
     "notes": "Not transcribed group by group and not deciphered with the key; the text is read from the Brienne clear copy."
    },
-   "read": "read"
+   "read": "not read"
   }
  ],
  "system": {
@@ -184,6 +184,13 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of f. 406 or f. 410 is in the repository (images and links only). Both relabelled decoded, not read; class read -> not read; method read from existing decipherment -> not solved, until the Brienne 13 copies are transcribed.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): documents[].read for f406, f410 read -> not read, matching outcome.texts (decoded, not read) and fraction_read_source.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {

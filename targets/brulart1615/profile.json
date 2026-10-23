@@ -186,6 +186,13 @@
    "technique": ["language-model scoring"],
    "what": "Readings and translations written (texts/R2785_reading.md, R2786_reading.md, _en.md); clean-sentence share on the bodies 0.854 and 0.863. Both set read (grade B).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): class read failed the read bar (documents R2785 and R2786 read in part: R2785's ~60 spaced signs and R2786 f. 109v rows 9-11 unread, three glosses illegible) -> class read in part. The siblings escalation step (other Brûlart letters in fr. 18043/18044) was identified but not opened: unticked, target stays in progress.",
+   "result": "partial",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -196,7 +203,7 @@
    "key extended or corrected",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "fraction_read": 1.0,
   "grades": "unknown",
@@ -268,6 +275,6 @@
     "detail": "the decipherer's hand is small and blotted at the resolution of the DECODE photographs; the letter signs under them are partly ambiguous in the key (the circled sign is l or y)"
    }
   ],
-  "fraction_read_source": "22 Oct 2026, re-read (b17): both documents of outcome.texts read (2 of 2). The unread pieces inside them (R2785's three spaced-sign lines, about 60 signs, probably nulls; parts of R2786 f. 109v rows 9-11) are named in gaps."
+  "fraction_read_source": "22 Oct 2026, re-read (b17): both documents of outcome.texts read (2 of 2). The unread pieces inside them (R2785's three spaced-sign lines, about 60 signs, probably nulls; parts of R2786 f. 109v rows 9-11) are named in gaps. 23 Oct 2026 (cl): the 1.0 counts documents whose sentences read; it is not a share of signs: both documents stay read in part (documents[].read) because of those passages, so the class is read in part."
  }
 }

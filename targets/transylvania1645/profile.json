@@ -24,7 +24,7 @@
     "source": "https://de-crypt.org/decrypt-web/RecordsView/4936",
     "notes": "Re-transcribed in full 23 Oct 2026 (R4936-transcription-b15.txt)."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "R4937",
@@ -369,6 +369,13 @@
    "technique": ["plaintext matching"],
    "what": "R4940: the clear Hungarian letter around the two cipher spans transcribed for the first time from IMG_R4940_I28653_P1.jpg on 1.5x line crops (raised-dot e, kegyelmed abbreviations written out); R4940_reading.md and English R4940_en.md. The cipher spans are unchanged (votumiok; niert dolog volna) and fit the clear sentence: if their votes were as Your Grace writes, it would be a won matter. Opening sentence partly doubtful (Foldvari [?Mihaly] ... [?erkezven]); one word near the end unread.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): documents[].read for R4936 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {

@@ -229,6 +229,13 @@
    "what": "no. 62 reading scored: 0.882 (45/51) plain, 1.0 explicit holes only; six of the seven cipher-bearing sentences hold; look-alike letters 0. decoded, not read -> read (B); class not read -> read in part (C, V2 and three code signs open, no key material); method back to read with known key; fraction_read 0 -> 1.",
    "result": "worked",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): the closed item (no. 62 as a running text) was still a bullet in NOTES Remaining gaps, which the checker reads as an open gap without a blocker; restated below the list as Closed. outcome.gaps unchanged (it already lists only the open pieces).",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {

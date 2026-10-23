@@ -22,7 +22,7 @@ So the letter was deciphered on arrival, with the decipherment written in the ma
 and found it was the Imperial Cipher of 1544-1554 (also used by Juan de Vega, R9964). DECODE's "Non-decrypted" means
 only that no decryption is attached to the record.
 
-Nothing new to read, so no write-up. The DECODE images were not viewed in this session: the ruling rests on Tomokiyo's
+Nothing new to read, so no write-up. The DECODE images were not viewed in this session (21 Sept 2026; all 16 were viewed and the decipherment transcribed on 23 Oct 2026, b36, above): the ruling rests on Tomokiyo's
 check. If anyone wants the text, the marginal decipherment on the leaves is the place to start.
 
 Catalogue entry 197 removed on 21 Sept 2026. DECODE status correction queued (`decode_updates/queue.json`).

@@ -35,7 +35,7 @@
   },
   {
    "id": "R1892 p2",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Koninklijk Huisarchief, The Hague, Prins Willem V, inv. 339; DECODE R1892",
    "date": "1795-11/1795-12",
    "year": 1795,
@@ -302,6 +302,13 @@
    "technique": ["statistical test", "manual reconstruction"],
    "what": "Verification 5 (plain bar, 23 Oct 2026): the letter is of 1795; texts/p1_reading.md plain 0.55, explicit 0.70; failures are period spellings, names and supplied word endings. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): documents[].read for R1892 p2 read -> read in part, matching its texts state (decoded, not read since the reading audit; b31 re-read did not reach the bar) and fraction_read_source (p1 only, 0.539).",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 1049, "types": 26, "tokens_per_type": 40.35, "score": -1.951, "nulls": {"random keys": {"n": 200, "mean": -7.687, "sd": 0.636, "max": -6.156, "z": 9.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.643, "sd": 0.029, "max": -4.603, "z": 92.4, "p": 0.1429}}, "power": -1.951, "verdict": "pass", "notes": "claimed per-occurrence score -1.951; polyphony 0.0; 5 unread tokens left out; annealer on the real text from random keys reached -1.951"}, 

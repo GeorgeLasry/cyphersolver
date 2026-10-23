@@ -21,7 +21,7 @@ The work below was done in the benedict1399 sessions of 23 Sept 2026 and is carr
   today the paper part of the series Cisma d'Occident. Not digitised. Some of these papers were not returned after
   Puig studied them at home in 1920-30 (archivist Josep Mas, quoted by Baucells 1978).
 - Pedro Comuel to Francesc Climent, 27 Jun 1416; printed by Sebastián Puig y Puig, *Pedro de Luna, último papa de Aviñón*
-  (Barcelona 1920), appendix CXXXV, pp. 578-579, with the deciphered passages in italics (p. 466 n. 2).
+  (Barcelona 1920), appendix CXXXV, p. 578 (the letter ends there; p. 579 is the next item), with the deciphered passages in italics (p. 466 n. 2).
 - Deciphered words printed: ~ 85 (estimate from printed lines). His coming to Aragon; note 2 cites another Comuel letter, doc. 661, not printed.
 
 Puig's note 2 to this letter cites another letter of Comuel, doc. 661, which he does not print (a lead in the ACB).

@@ -170,6 +170,13 @@
    "what": "Wrote R473_reading.md and R473_en.md from the key and the gloss: 35 sentences, 0.829 clean on explicit holes (0.086 on the hu word list, which does not know 1706 spelling); word-by-word check R473_align.txt. R473 relabelled read (grade B).",
    "result": "worked",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): outcome.key_file added: key/DOC_R446_D2629_2629.txt, the DECODE transcription of Rákóczi's syllabic key R446 applied in the b37 re-read.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -222,6 +229,7 @@
     "blocker": "needs-physical-access",
     "detail": "not online (REAL-EOD holds only the 1709-1711 volume; Szaktárs paywalled); a copyrighted modern edition, to be cited, not copied"
    }
-  ]
+  ],
+  "key_file": "key/DOC_R446_D2629_2629.txt"
  }
 }

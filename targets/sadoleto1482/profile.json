@@ -90,7 +90,7 @@
     },
     {
       "id": "R1106",
-      "read": "read",
+      "read": "read in part",
       "shelfmark": "ASMo Ambasciatori Ungheria b. 1/9 no. 26 (DECODE R1106; Vestigia 1318)",
       "date": "27 Nov 1482",
       "year": 1482,
@@ -652,6 +652,13 @@
       "technique": ["plaintext matching", "manual reconstruction"],
       "what": "R1106 partial reading R1106_reading.md (translation R1106_en.md) on the slips, following the cipher where its read spans differ (apreso, suoi, ha firmo, guera a X, potessi, no sia, a me parla). b17_score 0.731 (19/26), explicit holes 0.846, but the 26b part has holes in most sentences: kept decoded, not read (illegible). R1103 re-cropped line by line: che and non groups visible, strokes lost elsewhere; nothing beyond vostro accepted (illegible).",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "Consistency pass (cl): outcome.gaps now mirrors the six NOTES Remaining gaps lines (R1106 and R1103 decoded-not-read lines added, both illegible); documents[].read R1106 read -> read in part (texts state decoded, not read). 'Read in part' stays unjustified: R1101's full collation is genuinely undone (not-attempted) and the known-keys and retry steps are not done; NOTES already Status: in progress.",
+      "result": "partial",
+      "technique": ["statistical test"]
     }
   ],
   "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; only plaintext editions and anchor words"}, 
@@ -689,6 +696,16 @@
         "item": "R1106, the p. 3 cipher passage (slip 26b)",
         "blocker": "illegible",
         "detail": "23 Oct 2026: 26a and 26b transcribed as far as the photographs allow and a partial reading built (R1106_reading.md); the right halves of 26b and of p. 3 are faded on the only photographs (Vestigia 4004, 1318 (154))"
+      },
+      {
+        "item": "R1106 decoded, not read: slips 26a/26b transcribed, the 26a part holds, the 26b part keeps holes in most sentences (R1106_reading.md)",
+        "blocker": "illegible",
+        "detail": "the right halves of 26b and of p. 3 are faded on the only photographs"
+      },
+      {
+        "item": "R1103 decoded, not read: one word from the faded block (re-cropped 23 Oct 2026, nothing more accepted)",
+        "blocker": "illegible",
+        "detail": "see the R1103 faded-block gap"
       }
     ],
     "credits": [

@@ -104,6 +104,8 @@ taken in haste, going to find [73] at Meaux), but not enough for the bar. Not wo
 pinned in 26 passes, no decipherment or clear copy exists, and f. 119's full re-read (b27) reached only 0.558. f. 142 is
 now decoded, not read; no document of this target reads: class not read, fraction_read 0.
 
+23 Oct 2026, consistency pass: with no document read, `outcome.method` is *not solved* (was *read with known key*); the key stays *partial* (Lasry's 2022 table, extended here).
+
 ## Remaining gaps
 - f. 142 ll. 00-02, 09-10, 13 and the supplied letters in most lines (decoded, not read since 23 Oct 2026, v3: f142_running_reading.md 0.167 explicit-hole) - blocker: no-key-material; 26 pin passes made against the images; the open signs are homophones the context does not fix and the name code [73]; Lasry's table is the only key
 - f. 119 unread runs of ll. 00-03, 05, 12, 25, 29-30, 33-34, 37-38 (decoded, not read; texts/f119_reading.md 0.558 clean) - blocker: no-key-material; re-read 23 Oct 2026; the open choices are between homophones the context does not fix and nomenclator groups (ffm, ffmm, fbn) that do not fit as tabulated; Lasry's table is the only key

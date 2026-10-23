@@ -465,6 +465,13 @@
    "technique": ["key matching", "language-model scoring"],
    "what": "Partial readings written word by word against the signs, with translations (R1139_reading.md/_en.md, R1136_reading.md/_en.md): new at key values 'bel belo li go fato moto' (o o = b, D = b), 'et se i bisionran danari in [?presto], per andar ve ne darò', 'a in gran presia [...] a Buda, et dicono eser conclusi', 'par questa via de Ungaria'. Clean-sentence share of the bodies: R1139 0.18 (2/11; 0.45 on explicit holes), R1136 0.0 (0/9). Both stay decoded, not read; blockers no-key-material and illegible.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -580,7 +587,7 @@
      "beam21_r1136_pass5.txt",
      "R1136_reading.md"
     ],
-    "summary": "Twelve cipher lines on the see of Eger, its custode and governor, Lactantio, money and debts, written as Ippolito d'Este was leaving Hungary (he crossed the border on 7 Mar 1520). Read in part (66.9 %).",
+    "summary": "Twelve cipher lines on the see of Eger, its custode and governor, Lactantio, money and debts, written as Ippolito d'Este was leaving Hungary (he crossed the border on 7 Mar 1520). 66.9 % of it deciphered as sense.",
     "language": "it",
     "state": "decoded, not read",
     "note": "Re-read 22-23 Oct 2026 (b18): no decipherment, clear copy or print exists (DECODE record and neighbours, Somogyi 2025, Vestigia V1876). Read on contrast-stretched strips at 2x, pass-4 labels confirmed; partial reading R1136_reading.md with translation R1136_en.md ('a in gran presia [...] a Buda, et dicono eser conclusi', 'potrà far al custode par questa via de Ungaria'), but 0 of 9 sentences clean. Open: the stained left third of L01-L03 (illegible) and stretches turning on signs key21 cannot settle (QB/8, c/CE/e, AMP/EL, 4, 1 7), no further text in this key (no key material)."
@@ -609,7 +616,7 @@
     "label": "Vestigia 1921, Esztergom 25 Feb 1521",
     "transcription": "v1921_signs.txt",
     "decryption": "read_v1921.md",
-    "summary": "Six cipher runs inside clear sentences: someone at Esztergom blames the custode of Eger for the claim that the see had been given away before the successor arrived, and Caprile advises the Duke to reclaim Ippolito's due from that man's goods. Read 97.0 %.",
+    "summary": "Six cipher runs inside clear sentences: someone at Esztergom blames the custode of Eger for the claim that the see had been given away before the successor arrived, and Caprile advises the Duke to reclaim Ippolito's due from that man's goods. 97.0 % deciphered as sense.",
     "language": "it",
     "reading_review": {
      "grade": "B",

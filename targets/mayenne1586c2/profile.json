@@ -247,6 +247,13 @@
    "technique": ["plaintext matching"],
    "what": "f. 385: Burford's literal v0.2 decode divided into words and punctuated, letters unchanged (f385_burford/f385_reading.md; b21_may_check.py 450 of 453 plain words carried). Checker 0.222 (10/45), explicit holes 0.244 (before: f385-french.md 0.233). Only f. 385v ll. 1-8, 18-21 hold: kept decoded, not read; the v0.2 unread stretches need a sign-by-sign image round.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): 'read in part' not justified because ff. 120 and 385 still need the sign-by-sign re-read named in their gap lines (not-attempted kept; NOTES already Status: in progress). The f. 120 gap line carried a second blocker in its text; moved to the code-signs line. outcome.gaps mirrors the list.",
+   "result": "partial",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {

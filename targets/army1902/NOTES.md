@@ -80,7 +80,8 @@ sentence with no hole. Both keep read, grade B. C03020059400 (its reading alread
 ## Remaining gaps
 - C09122909900 pair 2 (17 for イ) - blocker: needs-physical-access; the image shows 七, writer's or transmission error; binarised JBIG2 scan cannot settle the head of column 2 either
 - C03020059400 pairs 5 and 7 (0 + 九-or-四 for ハ, 八八 for ジ) and three cramped characters of the translation - blocker: illegible; re-read on the JACAR scan 23 Oct 2026, the translation carries the reading
-- closed 23 Oct 2026 (b24): C03020059400 decoded, not read (read with its filed translation, frame 0118)
+
+Closed (taken out of the open list, 23 Oct 2026): b24, 23 Oct 2026: C03020059400 decoded, not read (read with its filed translation, frame 0118)
 
 ## Escalation
 - [x] siblings: the contributor viewed about 420 items (1,088 frames) of the 1901-02 telegram files and 235 items of the 1904 Daijiki; C09123116600 found by a catalogue search for digit runs

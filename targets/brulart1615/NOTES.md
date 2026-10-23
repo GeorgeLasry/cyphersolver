@@ -1,6 +1,10 @@
 # Louis XIII to Brûlart de Léon, ambassador in Venice, 1615 and 1617 — BnF fr. 18043 f. 83–84, fr. 18044 f. 109–110 (DECODE R2785, R2786) — NOTES
 
-Status: in progress (write-up not refreshed). Both letters read 22 Oct 2026 (re-read b17) from their contemporary interlinear decipherments, checked against Tomokiyo's key: `texts/R2785_reading.md`, `texts/R2786_reading.md`.
+Status: in progress (write-up not refreshed).
+
+23 Oct 2026, consistency pass: class **read -> read in part**. The read bar needs every document read in full; both letters keep unread passages (R2785's ~60 spaced signs at the foot of f. 83v / head of f. 84r, R2786 f. 109v rows 9-11 outside the glosses) and three illegible glosses, so `documents[].read` is *read in part* for both and the profile's 1.0 counts letters whose sentences read, not signs. The siblings step is not done (unticked below).
+
+Both letters read 22 Oct 2026 (re-read b17) from their contemporary interlinear decipherments, checked against Tomokiyo's key: `texts/R2785_reading.md`, `texts/R2786_reading.md`.
 
 **22 Oct 2026, reading audit** (George Lasry's test): Tomokiyo's key is on both DECODE records, but his page gives the key and remarks on undeciphered symbols, not the letters, and nothing of either letter is transcribed here. Both are *decoded, not read*; class already solved -> not read, method -> not solved. The R2785 page image shows contemporary decipherments over most cipher runs, so the letters are workable with his key.
 
@@ -74,7 +78,7 @@ two pages of each record were not fetched.
 
 ## Escalation (record)
 
-- [x] siblings: the other Brûlart de Léon letters in fr. 18043 / fr. 18044 identified from Tomokiyo; not opened
+- [ ] siblings: the other Brûlart de Léon letters in fr. 18043 / fr. 18044 identified from Tomokiyo; not opened (23 Oct 2026: unticked, the step is not done)
 - [x] clear-pages: contemporary interlinear decipherment on the R2785 text page
 - [x] known-keys: Tomokiyo's 1615–18 key is the key of these letters
 - [x] print: louisxiii.htm checked
@@ -85,4 +89,5 @@ two pages of each record were not fetched.
 
 - R2785 f. 83v rows 17-18 and f. 84r row 2 (spaced signs, about 60) and R2786 f. 109v rows 9-11 / f. 110r row 1 outside the glossed words - blocker: no-key-material; no contemporary decipherment, no French under Tomokiyo's key with θ/φ as nulls (Tomokiyo: probably nulls)
 - R2785 f. 83v: three cramped glosses ("m'est possible", "[?lors] de [?propos]", "l'Equidray", the gloss after "ont este") and the clear name "[?Manjeaux]" - blocker: illegible; blotted at the DECODE photographs' resolution, signs beneath ambiguous in the key
-- R2785 and R2786: no plaintext in the repository - closed 22 Oct 2026 (b17): both read, texts/
+
+Closed: R2785 and R2786 had no plaintext in the repository; closed 22 Oct 2026 (b17), both read, texts/.

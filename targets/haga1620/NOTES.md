@@ -89,7 +89,9 @@ R2114 (11 May 1620, 6 pp.) is marked Decrypted on DECODE and was not re-read her
 
 ## Remaining gaps
 
-- R2115: closed 23 Oct 2026 (read, b28); still open in it: codes [15] (key value Bassa van Babilonia does not fit) and [46] - blocker: no-key-material; a few clear words marked [?] - blocker: illegible
+23 Oct 2026, consistency pass: the read bar failed only on a stale `outcome.gaps` entry in profile.json ("R2115: decoded, not read", not-attempted), closed by the b28 re-read; the profile's gaps now mirror this list, and the class stays read (open: three code groups and a few illegible clear words).
+
+- R2115: a few clear words marked [?] - blocker: illegible; faded or cramped clear Dutch on the DECODE photographs, no other image (R2115 itself closed 23 Oct 2026, read, b28; its codes [15], [46] are in the next line)
 - nomenclator codes [15], [46] (R2115) and [50] (R2113) - blocker: no-key-material; [3], [7], [19], [43], [58], [62] are read from the key (43's number inferred: the key's column 37-45 is cut by the photograph's edge)
 
 ## Escalation

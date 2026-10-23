@@ -65,7 +65,7 @@
   },
   {
    "id": "HCPortal 497, letter block",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, digital image 0012, foot (repository f012; manuscript foliation not equated)",
    "date": "7/17 January 1637 (date of the enclosing Malsburg letter)",
    "year": 1637,
@@ -125,7 +125,7 @@
   },
   {
    "id": "HCPortal 503",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, ff. 15-17 (HCPortal cryptogram 503)",
    "date": "Jan 1637",
    "year": 1637,
@@ -155,7 +155,7 @@
   },
   {
    "id": "HCPortal 504",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, f. 18 (HCPortal cryptogram 504)",
    "date": "14/24 Feb 1637",
    "year": 1637,
@@ -185,7 +185,7 @@
   },
   {
    "id": "HCPortal 505",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, ff. 23-24 (HCPortal cryptogram 505)",
    "date": "7/17 Feb 1637",
    "year": 1637,
@@ -275,7 +275,7 @@
   },
   {
    "id": "HCPortal 508",
-   "read": "read",
+   "read": "not read",
    "shelfmark": "Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411, ff. 30-31 (HCPortal cryptogram 508)",
    "date": "28 Mar 1637 (old style); duplicate of ff. 28-29",
    "year": 1637,
@@ -518,7 +518,8 @@
   {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction"], "what": "r2b: the b08 spelling normalisation of the sibling readings undone with r2b_mals_denorm.py (each normalised word restored to the form the figures or transcribed clear words give at that point, walked in order against the decode stream): 496 10 words, 502 10, 503 11, 507 87, 509 0. Explicit-hole scores unchanged (496 0.667, 502 0.118, 503 0.458, 507 0.662, 509 0.659); plain scores fall (496 0.667 -> 0.333). 496 stays read on the German explicit-hole bar.", "result": "worked"},
   {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "language-model scoring"], "what": "r2b: HCPortal 497, 504, 505, 506 re-read on the HCPortal scans 0012, 0018, 0023-0025 (fetched to the scratchpad): sentence-by-sentence readings from the b08_dec decode with key.txt unchanged, breaks checked on full-resolution crops (f. 25 l. 15 two transcription corrections, HCP506_corrections.tsv; f. 18 'Reiterei noch'), word-by-word alignment (b08_align.py: three spelling slips of the draft corrected), slips bracketed, English files. v2_score explicit holes: 497 0.0 -> 0.632 and 506 0.286 -> 0.625 (read, B); 504 0.5 -> 0.562 and 505 0.5 -> 0.545 (decoded, not read: open codes and signs, no key material).", "result": "partial"},
   {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "statistical test"], "what": "r2k: HCPortal 507 reviewed as a reader on the b08 decode, the duplicate ff. 30-31 and scan 0028 (l. 33 spot check confirms 'i AU wartenberg'); one word re-spelt (nitt, r2b_mals_denorm.py). v2_score de explicit holes 0.662 (47/71): read (B). fraction_read 0.221 -> 0.530.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "transcription", "technique": ["manual reconstruction"], "what": "r2k: HCPortal 509 German news extracts (second hand, lower f. 32 and f. 33) transcribed line by line on 2-3x crops of the HCPortal scans and set around the decoded runs; English written. v2_score: whole 0.667, German extracts alone 0.50 explicit holes: 509 kept decoded, not read; gap not-attempted replaced by no-key-material (codes, signs) and illegible (about 30 second-hand words).", "result": "partial"}
+  {"date": "2026-10-23", "kind": "transcription", "technique": ["manual reconstruction"], "what": "r2k: HCPortal 509 German news extracts (second hand, lower f. 32 and f. 33) transcribed line by line on 2-3x crops of the HCPortal scans and set around the decoded runs; English written. v2_score: whole 0.667, German extracts alone 0.50 explicit holes: 509 kept decoded, not read; gap not-attempted replaced by no-key-material (codes, signs) and illegible (about 30 second-hand words).", "result": "partial"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): documents[].read brought in line with outcome.texts states and fraction_read_source (0.530 = 496, 497, the letter block, 506, 507 read): 503, 504, 505 read -> read in part (decoded, not read); 508 read -> not read (duplicate, not deciphered separately); the letter block read in part -> read and its texts state set to read (it carries a grade-B reading_review and is counted in the 0.530).", "result": "worked", "technique": ["statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 9506, "types": 119, "tokens_per_type": 79.88, "score": -2.066, "nulls": {"random keys": {"n": 200, "mean": -5.639, "sd": 0.238, "max": -5.024, "z": 15.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.692, "sd": 0.031, "max": -3.662, "z": 52.7, "p": 0.1429}}, "power": -2.423, "verdict": "pass", "notes": "claimed per-occurrence score -2.073; polyphony 0.0; 230 unread tokens left out; annealer on the real text from random keys reached -2.423"}, 
   "class": "read in part",
@@ -664,7 +665,8 @@
     ],
     "summary": "A separate ten-line block in a letter cipher with repeating shifts 4, 5, 3, 6, 2, deciphered by Larry Beck with ChatGPT; the selected reading discusses command, the Swedish generals, the reciprocal joining of forces and the authority requested. A working edition: the code labels 43, 45 and LL are unidentified.",
     "reading": "alphabetic/alphabetic_block_reading.md",
-    "translation": "alphabetic/alphabetic_block_en.md"
+    "translation": "alphabetic/alphabetic_block_en.md",
+    "state": "read"
    },
    {
     "doc": "HCPortal 502",
@@ -764,7 +766,7 @@
    {
     "doc": "HCPortal 508",
     "label": "ff. 30-31, 'Duplicat' of ff. 28-29",
-    "note": "duplicate of ff. 28-29 (excluded from the measure). Re-read 22 Oct 2026 (batch b08) together with HCPortal 507 as its control copy: where the two copies differ the reading of 507 follows the copy whose figures give a word (HCP507_corrections.tsv); its text and state are those of 507 (decoded, not read, clean share 0.437).",
+    "note": "duplicate of ff. 28-29 (excluded from the measure). Re-read 22 Oct 2026 (batch b08) together with HCPortal 507 as its control copy: where the two copies differ the reading of 507 follows the copy whose figures give a word (HCP507_corrections.tsv). 507 was read on 23 Oct 2026 (r2k, reader's review using this duplicate); the duplicate itself is not deciphered or counted separately, so it stays decoded, not read (documents[].read: not read).",
     "state": "decoded, not read",
     "language": "de",
     "transcription": [

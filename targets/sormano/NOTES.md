@@ -1,6 +1,6 @@
 # Sormano and de Vaulx to François I, Ferrara, February 1529
 
-Status: read in part
+Status: in progress (23 Oct 2026, consistency pass: no. 63 from f. 115r l. 28 and no. 65's doubtful words are still to re-read sign by sign, not-attempted). Read in part.
 
 23 Oct 2026, re-read (batch b23, Claude Opus 5.5, REREAD_BRIEF): **no. 66 now reads** (`no66_reading.md`,
 `no66_en.md`, log `no66_reread_log.md`, `no66_corrections.tsv`). Every cipher stretch of ff. 121r-122r was re-read sign
@@ -162,9 +162,10 @@ not changed until the sign is compared on the two leaves.
 
 ## Remaining gaps
 - no. 63 f. 115r from line 28 to f. 116v, cipher runs not yet re-read sign by sign (f. 115r lines 1-27 re-read 23 Oct 2026, no63_reading.md) - blocker: not-attempted; the IIIF master is legible and the key with no. 66's values reads it (no63_reread_log.md)
-- no. 66's own cipher stretches - closed 23 Oct 2026: read (no66_reading.md); two code signs ([Papa], [?Imperatore]) identified from context only
 - no. 65, about a dozen words marked (?) or in braces (foot of f. 119r, foot of f. 119v, f. 120r) - blocker: not-attempted; no. 66's re-read shows these signs are legible (e.g. no. 65's {B} = rr), so "illegible" no longer holds
 - no. 63 f. 123r, three signs before "ricaduto" (V 7 4 = a e i, no word) - blocker: illegible; read as written they give no word, and context alone is not used to fill them
+
+Closed (taken out of the open list, 23 Oct 2026): no. 66's own cipher stretches - closed 23 Oct 2026: read (no66_reading.md); two code signs ([Papa], [?Imperatore]) identified from context only
 
 ## Escalation
 - [x] siblings: nos. 62 and 67 (glossed) used as key controls; nos. 65/66 crib each other; no. 64 has no cipher; f. 123 found to be no. 63's third sheet (Patel) and deciphered

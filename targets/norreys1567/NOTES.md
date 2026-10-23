@@ -1,6 +1,6 @@
 # Sir Henry Norreys to Cecil, 1567-68 — BL Add MS 4136 ff. 160-161 (DECODE R9251, part of R9250)
 
-Status: read in part (21 Sept 2026): siblings read with Tomokiyo's table (shuffle control), target 9 Mar 1568: (1) the French King (H), (2) "a t ? l" not read, (3) the Queen of Scots? (I). Catalogue 90.
+Status: in progress (23 Oct 2026, consistency pass: escalation steps key-rebuild and retry are not done, see Escalation). Read in part (21 Sept 2026): siblings read with Tomokiyo's table (shuffle control), target 9 Mar 1568: (1) the French King (H), (2) "a t ? l" not read, (3) the Queen of Scots? (I). Catalogue 90.
 
 ## What the record is
 

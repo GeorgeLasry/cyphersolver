@@ -1,6 +1,6 @@
 # Duke of Sessa → Charles V, February–April 1523 — RAH Salazar A-27 (9/27), DECODE R9660–R9666
 
-Status: read in part (follow-up 2026-09-21: R9665 read in full; R9660 transcribed in full and ~57% read)
+Status: in progress (23 Oct 2026, consistency pass: R9660 ff. 141v-146v still need the sign-by-sign re-transcription named in Remaining gaps, not-attempted). Read in part (follow-up 2026-09-21: R9665 read in full; R9660 transcribed in full and ~57% read)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R9665's three cipher
 runs read** (two confirmed by the contemporary glosses). **R9660 is decoded, not read**: open groups and spelled

@@ -183,6 +183,20 @@
    "technique": ["statistical test"],
    "what": "v3 verification: residue22 entry scored on its table file (0.188); the nine full readings extracted to texts/residue22_reading.md and rescored with v2_score.py: 0.87 explicit-hole (plain 0.565). Keeps read; reading field added.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.",
+   "result": "worked",
+   "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): the closed item (p. 217) was still a bullet in NOTES Remaining gaps, which the checker reads as an open gap without a blocker; restated below the list as Closed. outcome.gaps unchanged (it already lists only the open pieces).",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -304,7 +318,7 @@
     "label": "22 ADFGVX messages, Childs pages 73-217 (Nov 1918): the nine read in full (pp. 100, 105, 109, 132, 146, 171, 176, 187 part 1 and its part 2 AFAFF)",
     "transcription": "msgs.txt",
     "decryption": "texts/residue22_decryption.md",
-    "summary": "German ADFGVX radio messages of November 1918 from James Rives Childs's transcription, listed as unsolved by George Lasry on Schmeh's blog in 2017. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; ten messages remain unread.",
+    "summary": "German ADFGVX radio messages of November 1918 from James Rives Childs's transcription, listed by George Lasry on Schmeh's blog in 2017 among the messages with no known decipherment. The readings, consolidated from the 2017 comment thread (Norbert, Armin, Baertl, Lasry), are routine traffic: march reports towards Belgrade, a repeat-telegram order, the Kertsch radio station, rouble rates after the break with the Soviet government; no decipherment of the other ten messages is known.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",

@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "R805",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "MNL OL G15 Caps. C Fasc. 33, pp. 34-37 (DECODE R805)",
    "date": "1 May 1706",
    "year": 1706,
@@ -121,7 +121,7 @@
   },
   {
    "id": "R740",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "MNL OL G15 Caps. H Fasc. 226, pp. 85-88 (DECODE R740)",
    "date": "2 January 1710",
    "year": 1710,
@@ -208,7 +208,7 @@
   },
   {
    "id": "R795",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "MNL OL G15 Caps. C Fasc. 36, pp. 18-21 (DECODE R795)",
    "date": "1 Jan 1706",
    "year": 1706,
@@ -530,6 +530,13 @@
    "technique": ["manual reconstruction", "contextual inference"],
    "what": "r2g: R793 and R796 re-read word by word on the corrected decodes beside the interlinear decipherment copy; 87 (Moskva Ország) read as 81 'ar' in armistitium/articulus (4x in R796), 187 as 181 'bü' once (0.75% of letters). v2_score explicit holes: R796 0.577 -> 0.692, R793 0.529 -> 0.692. English written. Both decoded, not read -> read; R740 stays decoded, not read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): documents[].read for R805, R795, R740 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {

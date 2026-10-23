@@ -1,5 +1,7 @@
 # Henri IV to Philippe de Béthune (Rome), 9, 10 and 22 November 1601 — BnF fr. 3484 nos. 7, 8, 12 (catalogue item 22)
 
+Status: in progress (23 Oct 2026, consistency pass: the Halphen 1889 edition is not yet opened, a gap marked not-attempted; the print, key-rebuild and retry escalation steps are not done)
+
 **Status, 17 Sept 2026 (third pass): partly read; the 22 Nov letter (ff. 46r-47v) now transcribed in full.** The 10 November letter (f. 34) is read in full, because its minute survives in
 clear four leaves on (f. 36, the notice's "copie du n° précédent"); that pair, six glossed passages of the 8 November
 letter and a glossed passage of 10 December give the cipher's design and most of its letter values; the 9 November
@@ -433,7 +435,8 @@ Not in Tomokiyo (his Béthune ciphers are fr. 15975 for 1602–05 and fr. 15972 
 
 ## Remaining gaps
 
-- 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs decoded, not read (2,849 tokens; reading audit 22 Oct 2026) - blocker: illegible; the glyph transcription (~70% accurate) caps the decode; re-transcribe on full-resolution crops, using the glossed leaves ff. 49v-50r, 53r, 56r to fix the confusable glyphs
+The 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs are decoded, not read (2,849 tokens; reading audit 22 Oct 2026); the two letter lines below carry their blockers. The glyph transcription (~70% accurate) caps the decode; re-transcribe on full-resolution crops, using the glossed leaves ff. 49v-50r, 53r, 56r to fix the confusable glyphs.
+
 - 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
 - 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
 - code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: no-key-material; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned

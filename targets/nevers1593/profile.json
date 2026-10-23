@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "f209",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "BnF fr. 3985 no. 116, f. 209 (Gallica btv1b90606498 canvas 419)",
    "date": "8 Sep 1593",
    "year": 1593,
@@ -210,6 +210,13 @@
    "what": "Verification 3 (v3_below_b): f. 209 scored 0.50 on the whole reading file (figures and commentary included); the three cipher readings alone score 0.33 explicit holes, 0.0 plain. Passage 1 re-checked on the Gallica IIIF image (btv1b90606498 f419, ll. 4-5): figures as transcribed, so don[n]es[t] and l'absolutio[n] are copyist slips. A web search for a printed text (Memoires de Nevers 1665) found nothing in the hour. f. 209 demoted to decoded, not read; no document reads; class read in part -> not read, method -> not solved, fraction_read 0.311 -> 0.",
    "result": "failed",
    "technique": ["statistical test", "manual reconstruction", "other"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): documents[].read for f209 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {

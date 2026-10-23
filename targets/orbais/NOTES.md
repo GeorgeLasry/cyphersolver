@@ -169,7 +169,8 @@ depeschera … dedans deux jours **le doien**; **la protection**; Mons. **Cassin
 - G `τ` (after "Mr le") - blocker: no-key-material; one code sign, sense probably "Cardinal", no key entry
 - C `φ tt o V æ ʃ° ÷` ("ce qui touche …") - blocker: no-key-material; known values give v-o-p-a-e-y-s (5 Oct: ʃ° = y), not sense; the missing values would come from fr. 3612 (not digitised)
 - V2 `n a æ η ⊡ θ` ("à vostre …") - blocker: no-key-material; re-transcribed 5 Oct (⊡ not ◻), known values give et-f-e-g-r-e, not sense; same source missing
-- no. 62 as a running text: closed 23 Oct 2026 (texts/no62_reading.md)
+
+Closed (taken out of the open list, 23 Oct 2026): no. 62 as a running text: closed 23 Oct 2026 (texts/no62_reading.md)
 
 ## Escalation
 

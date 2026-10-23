@@ -1,5 +1,7 @@
 # La Guiche (Rome) to Montmorency, 22 Nov 1551: catalogue no. 10 (part)
 
+Status: in progress (23 Oct 2026, consistency pass: the escalation step `print` is not done, Ribier 1666 not grepped for this letter; the read-in-part close waits on it)
+
 Catalogue entry 10 ("La Guiche (Rome), Noailles (Venice), Seure (Lisbon)", class C) grouped three ambassadors'
 letters in two BnF recueils. Worked 2026-09-21 (one session, Claude Opus 5). Split on 14 Oct 2026 from the joint
 entry under the one-key rule: Noailles 1558 (`../noailles1558/`) and Seure 1558 (`../seure1558/`) are different

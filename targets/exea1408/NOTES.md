@@ -22,7 +22,7 @@ The work below was done in the benedict1399 sessions of 23 Sept 2026 and is carr
   Puig studied them at home in 1920-30 (archivist Josep Mas, quoted by Baucells 1978).
 - Alfonso de Exea, archbishop of Seville to Francesc Climent, 23 Aug 1408; printed by Sebastián Puig y Puig, *Pedro de Luna, último papa de Aviñón*
   (Barcelona 1920), appendix LXIV, pp. 500-503, with the deciphered passages in italics (p. 466 n. 2).
-- Deciphered words printed: ~ 2,090 (estimate from printed lines). The defection of Pedro de Frias, the 'Cardinal of Spain'; entirely in cipher, the longest text.
+- Deciphered words printed: 2,339, counted on the transcription of Puig's text (`texts/exea1408_reading.md`, 23 Oct 2026; the earlier ~2,090 was an estimate from printed lines). The defection of Pedro de Frias, the 'Cardinal of Spain'; entirely in cipher, the longest text.
 
 ## What was done here (23 Sept 2026)
 

@@ -127,7 +127,8 @@
    "result": "worked"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): codes.txt + key.txt as transcription; decryption sample copied from NOTES.md to texts/n23_decryption.md; the full clear text of ff. 35r-v is not yet transcribed", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/n23_decryption.md is a sample of fragments joined by \"...\"; it reads, but most of the letter is not transcribed. Kept read for the sample with an excerpt note; class read -> read in part; fraction_read 1.0 -> about 0.15 (estimated).", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/n23_decryption.md is a sample of fragments joined by \"...\"; it reads, but most of the letter is not transcribed. Kept read for the sample with an excerpt note; class read -> read in part; fraction_read 1.0 -> about 0.15 (estimated).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): 'read in part' not justified because ff. 35r-v beyond the sample are genuinely untranscribed (not-attempted kept) and the retry step is not done; NOTES already Status: in progress; outcome.gaps already mirrors the list.", "result": "partial", "technique": ["statistical test"]}
  ],
  "outcome": {
   "method": "read with known key",

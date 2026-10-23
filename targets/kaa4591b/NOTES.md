@@ -117,13 +117,14 @@ rate 0.121), plain 0.105. Keeps read, marginally: f. 121 (Łaski) holds; f. 122 
 on many one-letter emendations and its date and signature lines do not resolve.
 
 ## Remaining gaps
-- R9417 decoded, not read - closed 23 Oct 2026: read at the image (8 untranscribed lines added, circle/cross codes corrected from the glosses)
-- R9323 decoded, not read - closed 23 Oct 2026: re-read word by word at the image, read
 - R9323 l. 10, two words before "ducere noluit" - blocker: illegible; faint signs
 - R9417 the owl word sign (P2 l. 27), "queiter" (l. 16), [?anestris], [?sies], the 6-shaped sign read k - blocker: no-key-material; one occurrence each, the gloss stops at l. 14
 - FLW word sign (R9322, R9323) - blocker: no-key-material; probably King John's title, three occurrences, no gloss or key sheet
 - R9403 P3 l.11 "[?]orator", P3 l.12 "[?]meus", small insertion on P1 l.4 - blocker: illegible; cramped signs on the image
 - R9322 16 words with doubtful signs - blocker: illegible; '?' signs in the transcription
+
+Closed (taken out of the open list, 23 Oct 2026): R9417 decoded, not read - closed 23 Oct 2026: read at the image (8 untranscribed lines added, circle/cross codes corrected from the glosses)
+Closed (taken out of the open list, 23 Oct 2026): R9323 decoded, not read - closed 23 Oct 2026: re-read word by word at the image, read
 
 ## Escalation
 

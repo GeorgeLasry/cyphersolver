@@ -63,7 +63,7 @@
     },
     {
       "id": "1916-B03050089000",
-      "read": "read",
+      "read": "read in part",
       "shelfmark": "Diplomatic Archives of the MOFA of Japan, 1.6.1.4-2-1-2 vol. 3, JACAR B03050089000 (29 Apr - 22 May 1916)",
       "date": "1 - 13 May 1916",
       "year": 1916,
@@ -226,6 +226,13 @@
       "kind": "verification",
       "what": "Verification 3 (v3_below_b): the 1916 telegrams (B03050089000), scored on the 1916 rows of readings_dudout.md: 0.31 explicit holes, 0.25 plain; 17% of letters are emended look-alikes with no outside text. Demoted to decoded, not read.",
       "result": "failed",
+      "technique": ["statistical test"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "Consistency pass (cl): documents[].read for 1916-B03050089000 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
+      "result": "worked",
       "technique": ["statistical test"]
     }
   ],

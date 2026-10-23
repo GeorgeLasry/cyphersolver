@@ -149,6 +149,13 @@
    "technique": ["language-model scoring"],
    "what": "Partial reading of the whole letter written (transcripts/no04_reading.md, no04_en.md, log no04_reread_log.md). b17_score.py LANG_=it on the body: 0.594 (19/32), explicit holes 0.719; before: no reading body. Reader's test fails for the second paragraph (only its first sentence holds); stays decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -207,7 +214,7 @@
     "label": "Naples, 12 May 1456, ASSi Concistoro 2308 fasc. 2 no. 4 (DECODE R4793)",
     "transcription": "transcripts/no04.txt",
     "decryption": "transcripts/no04_reading.txt",
-    "summary": "Galgano Borghesi, orator at Naples, writes to Leonardo Benvoglienti that at his urging King Alfonso wanted the settlement to include the promises made when Lucca was besieged by the Florentines, and that the Pope, the Florentine clergy and the cardinals are to contribute against the Turk. The sense is tentative: 114 of the 144 cipher signs are read.",
+    "summary": "Galgano Borghesi, orator at Naples, writes to Leonardo Benvoglienti that at his urging King Alfonso wanted the settlement to include the promises made when Lucca was besieged by the Florentines, and that the Pope, the Florentine clergy and the cardinals are to contribute against the Turk. The sense is tentative: 114 of the 144 cipher signs are given a value.",
     "language": "it",
     "state": "decoded, not read",
     "reading": "transcripts/no04_reading.md",

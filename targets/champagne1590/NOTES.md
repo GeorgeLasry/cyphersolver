@@ -1,6 +1,6 @@
 # Champagne news-letters to the duc de Nevers, June 1590 (BnF fr. 3623 nos. 24, 25, 60; catalogue no. 30)
 
-Status: read in part. The two-digit alphabet of nos. 24, 25 and 60 (June 1590, one hand), rebuilt from a few letters
+Status: not read (23 Oct 2026: neither document builds a running reading; see the dated block at the end). The two-digit alphabet of nos. 24, 25 and 60 (June 1590, one hand), rebuilt from a few letters
 glossed over the figures and from the alphabetical order of its values: 63 of 104 figures read, ten of the twelve
 cipher passages in whole or in part. No. 78 (1591), one group of about six mixed signs in another code, is listed
 here unread, with no claim that it shares the key.

@@ -195,6 +195,13 @@
    "what": "Word-by-word alignment (b28_haga_align.py): 43/43 cipher spans found in order in the reading body; 13 letters on look-alike alternates (l/s, n/t, p, o, u); m = 4 holds at every occurrence; no key value changed. Score of the reading body: 0.023 (modern Dutch list), 0.942 explicit holes. Reader's judgement: sentences hold. R2115 set read, grade B.",
    "result": "worked",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): the read bar failed on a stale gap 'R2115: decoded, not read' (not-attempted), closed by the b28 re-read of 23 Oct 2026 (R2115 read, grade B; NOTES already said so). outcome.gaps now mirrors the NOTES Remaining gaps: codes [15], [46], [50] (no-key-material) and a few clear words (illegible).",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -251,9 +258,14 @@
   "fraction_read_source": "Estimated, reading audit 22 Oct 2026, by words of the two reading files: R2113_reading.md (1,249 words) reads, R2115_reading.md (1,337) is decoded, not read: 0.48. No token count of the cipher spans exists. The field was \"unknown\" before. 23 Oct 2026 (b28): R2115 now reads as well as R2113, so both catalogued documents read (1.0 by documents' words).",
   "gaps": [
    {
-    "item": "R2115: decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "clear passages on P2 and P4 not transcribed and cipher spans with uncertain letters; transcribe the four pages in full from the DECODE images (decode/, git-ignored) and re-read with the R2118 key"
+    "item": "nomenclator codes [15], [46] (R2115) and [50] (R2113)",
+    "blocker": "no-key-material",
+    "detail": "[15]'s key value (Bassa van Babilonia) does not fit where it stands; [46] is a heading fragment on the key; [50] reads in the key as the French king's ordinary ambassador, which does not fit; each once"
+   },
+   {
+    "item": "R2115: a few clear words marked [?]",
+    "blocker": "illegible",
+    "detail": "faded or cramped clear Dutch on the DECODE photographs; no other image"
    }
   ]
  }

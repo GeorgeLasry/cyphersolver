@@ -436,7 +436,7 @@
     "image_quality": "fair",
     "notes": "Groups with a fifth digit (trailing 0) are kept as written and treated as nulls."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "R9571",
@@ -904,7 +904,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). reading_partial.txt read letter by letter: about half the groups have no value, with unread groups between nearly every pair of known words (docs/_check_reading.py: 2 of 24 sentences clean); no sentence of the 23 despatches without a full gloss can be built. They are relabelled decoded, not read (R9566 and R9569 have only fragmentary glosses). R9571 and R9589 read as Italian from their contemporary interlinear decipherments (reading_review A). Method key recovered based on adjacent plaintext -> read from existing decipherment (parts); fraction_read 0.467 -> 0.026.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-22", "kind": "reading", "what": "Re-read of the 23 decoded-not-read despatches under REREAD_BRIEF (batch mix1): every transcript checked for a gloss (none beyond R9566 p. 3, R9569, R9571, R9589), no edition, code book not online; coverage and longest known run measured per document (0.19-0.68; runs of 3-14 groups outside the glosses); hand retry on R9566 p. 3 ll. 10-14 against the Floridas crib fixed no new value (17 of 37 groups open). All 23 stay decoded, not read; blocker no-key-material (reread_log.md).", "result": "failed", "technique": ["crib testing", "contextual inference"]},
   {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: R9571 scored on transcripts/R9571.txt (gloss interleaved with code groups, 0.577). The gloss lines joined into transcripts/R9571_reading.md: 1.0 explicit-hole and plain. Keeps read; the stale decoded-not-read note on the entry removed.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R9589 was scored on its gloss-and-groups transcription file (plain 0.385). The contemporary interlinear decipherment written out as transcripts/R9589_reading.md with English R9589_en.md: plain 0.8, explicit 0.8. Keeps read.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R9589 was scored on its gloss-and-groups transcription file (plain 0.385). The contemporary interlinear decipherment written out as transcripts/R9589_reading.md with English R9589_en.md: plain 0.8, explicit 0.8. Keeps read.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): the Remaining gaps line 'R9571, R9589: English translation not yet written' (not-attempted) was stale: transcripts/R9571_en.md and R9589_en.md exist and are the texts' translation fields; moved to Closed. documents[].read for R9569 read -> read in part, matching its texts state (decoded, not read).", "result": "worked", "technique": ["statistical test"]}
  ],
  "outcome": {
   "validation": {

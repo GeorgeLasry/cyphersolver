@@ -55,7 +55,8 @@
   {"date": "2026-10-23", "kind": "access", "what": "Re-read (REREAD_BRIEF, b36): DECODE R9967 fetched logged in (b36_fetch.py): 16 images, no attachment or comment block; every image opened at full size. The archive page numbers (0001-0016) give the reading order, not DECODE's P1-P16. Neighbours R9966 (Caracciolo, leg. 1184) and R9968 (Mantua, leg. 1454) are other letters.", "result": "worked"},
   {"date": "2026-10-23", "kind": "transcription", "technique": ["manual reconstruction"], "what": "The contemporary decipherment (left margins, page feet, interlinear; one continuous text across the pages) and the clear text transcribed in full from full-size crops (b36_crop.py): texts/R9967_decipherment.txt.", "result": "worked"},
   {"date": "2026-10-23", "kind": "verification", "technique": ["plaintext matching"], "what": "Decipherment checked against the cipher without a key: the clear words left in the cipher lines agree with it word for word at ten places, and the code groups ager = cardenal (3), pollo = papa (5), s-o el, x-o del, n-o al recur consistently (texts/R9967_code_check.tsv). Sign-by-sign check not possible: the Imperial Cipher of 1544-1554 key is not in the repository.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["language-model scoring"], "what": "Reading and English written (texts/R9967_reading.md, R9967_en.md), aligned word by word with the transcription; one supplied word, eight words of the margin hand uncertain, look-alike share 0. b17 on the body 0.701 plain, 0.996 explicit holes (Spanish 1552). Set read, grade A.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "reading", "technique": ["language-model scoring"], "what": "Reading and English written (texts/R9967_reading.md, R9967_en.md), aligned word by word with the transcription; one supplied word, eight words of the margin hand uncertain, look-alike share 0. b17 on the body 0.701 plain, 0.996 explicit holes (Spanish 1552). Set read, grade A.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): the contemporary-decipherment credit still said 'not viewed here' (from the 21 Sept closure); corrected to what b36 viewed: all 16 DECODE images, decipherment transcribed in full.", "result": "worked", "technique": ["statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -65,7 +66,7 @@
   "verification": ["contemporary decipherment"],
   "notes": "Catalogue entry 197 removed; DECODE status correction queued. 23 Oct 2026 (re-read b36): the 16 DECODE images opened; the contemporary decipherment, one continuous text in the margins, page feet and between the lines, transcribed in full and the letter read (texts/R9967_reading.md, _en.md); the DECODE image numbers are not in page order (archive numbers 0001-0016 are).",
   "credits": [
-    {"who": "contemporary", "role": "prior solution", "note": "marginal decipherment on the leaves (not viewed here)"},
+    {"who": "contemporary", "role": "prior solution", "note": "marginal and interlinear decipherment on the leaves, in a second hand; all 16 DECODE images viewed and the decipherment transcribed in full on 23 Oct 2026 (b36, texts/R9967_decipherment.txt)"},
     {"who": "tomokiyo", "role": "identification", "note": "recorded the marginal decipherment and identified the key as the Imperial Cipher of 1544-1554", "source": "https://cryptiana.web.fc2.com/"}
   ],
   "texts": [

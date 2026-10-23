@@ -296,7 +296,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): for 22 Oct 1529 the repository has only Le Grand's clear part; the ciphered opening is Scheurer's (snippets). Relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "access", "what": "fr. 3005 identified as Gallica ark btv1b90599952 (Tomokiyo's francis.htm link); folio numbers read on the canvas corners (259 = f. 165r, 260 = f. 165v, 261 = f. 166r); full-resolution leaves fetched through openapi.bnf.fr IIIF. Neighbouring leaves (canvases 255-266) checked: no decipherment.", "result": "worked"},
   {"date": "2026-10-23", "kind": "transcription", "what": "Ciphered opening (34 + 35 + 5 lines) read sign by sign on native-resolution strips (research/reading_audit/b26_strips.py) with key_p21.tsv and Tomokiyo's table; value transcription texts/22oct1529_transcription.txt; sign values beyond the key in texts/22oct1529_corrections.tsv (adopted: cup = a, barred cup = s, ƕ = f, tall ϙ = m, barred triangle = l, x on a stem = e; confirmed R = faict, V = bien, 4 = madame; sense only, flagged: ꝑ and ℋ = the two Kings).", "result": "partial", "technique": ["key matching", "contextual inference"]},
-  {"date": "2026-10-23", "kind": "verification", "what": "First lines agree with Scheurer's snippets word for word (la ou je vouldroye ... seul feal; maint tour de corde); 'si le roy et madame ne l'aydent' matches Le Grand's 17 Oct letter. Reading body scored (b17_score.py, fr): 0.513 (20/39), explicit holes 0.692 (27/39); the last two paragraphs do not build sentences. Kept decoded, not read; 10 letters rest on look-alike alternates.", "result": "partial", "technique": ["language-model scoring"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "First lines agree with Scheurer's snippets word for word (la ou je vouldroye ... seul feal; maint tour de corde); 'si le roy et madame ne l'aydent' matches Le Grand's 17 Oct letter. Reading body scored (b17_score.py, fr): 0.513 (20/39), explicit holes 0.692 (27/39); the last two paragraphs do not build sentences. Kept decoded, not read; 10 letters rest on look-alike alternates.", "result": "partial", "technique": ["language-model scoring"]},
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.", "result": "worked", "technique": ["statistical test"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -370,7 +371,7 @@
     "label": "17 Oct 1529, fr. 3078 pp. 113-117 (Le Grand III pp. 369-375)",
     "transcription": "texts/17oct1529_transcription.txt",
     "decryption": "ref/legrand3_p330_400.txt",
-    "summary": "Du Bellay to Montmorency from London, 17 Oct 1529, on Wolsey's fall (\"j'ay esté voir le Cardinal en ses ennuis\"); printed by Le Grand III pp. 369-375 from a deciphered copy (Clair. 330 f. 71); the first cipher lines were read here on the leaf as a check of the key.",
+    "summary": "Du Bellay to Montmorency from London, 17 Oct 1529, on Wolsey's fall (\"j'ay esté voir le Cardinal en ses ennuis\"); printed by Le Grand III pp. 369-375 from a deciphered copy (Clair. 330 f. 71); the first cipher lines were deciphered here on the leaf as a check of the key.",
     "note": "Transcription covers only the first cipher lines of p. 113 (NOTES section 5); the rest of the four pages is not transcribed (project work). Decryption = OCR of Le Grand 1688, pp. 369-375 of the file.",
     "language": "fr",
     "reading": "texts/17oct1529_reading.md",
@@ -395,7 +396,7 @@
      "https://books.google.com/books?id=eNw8AAAAIAAJ",
      "ref/legrand3_p330_400.txt"
     ],
-    "summary": "Du Bellay to Montmorency from London, 22 Oct 1529: the ciphered opening, on granting the cardinal of York's request made through his Italian servant (Agostino, Wolsey's physician), was called undeciphered by Le Grand 1688, Brewer and Tomokiyo but is printed by Scheurer (1969); the clear part, on the Legate being turned out of his house, is in Le Grand III pp. 377-379.",
+    "summary": "Du Bellay to Montmorency from London, 22 Oct 1529: the ciphered opening, on granting the cardinal of York's request made through his Italian servant (Agostino, Wolsey's physician), had no known decipherment for Le Grand 1688, Brewer and Tomokiyo, but its decipherment is printed by Scheurer (1969); the clear part, on the Legate being turned out of his house, is in Le Grand III pp. 377-379.",
     "language": "fr",
     "state": "decoded, not read",
     "transcription": "texts/22oct1529_transcription.txt",

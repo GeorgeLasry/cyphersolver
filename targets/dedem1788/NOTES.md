@@ -99,7 +99,8 @@ value (grades A, B, T in `alpha/decoded_targets_v2.txt`). The running reading is
 ## Remaining gaps
 
 - R2122 and R2131: about 14 groups whose codebook value gives no sense where they stand (R2122: 1230, 1330 twice, 80, 760 twice, 3928, 1605, 1463, 2622; R2131: 319, 591) and 4414 (no such code) - blocker: too-short; each occurs once or twice, too few to establish another value (probably clerk slips: 319 for 314 "alle"; 760 the Nota's example number copied for a "g" character)
-- R2120: English translation of the contemporary decipherment not yet written - blocker: not-attempted
+
+Closed 23 Oct 2026 (consistency pass): R2120's English translation is written (`tx/R2121_en.md`, translation wave of 23 Oct 2026); the not-attempted gap was stale.
 
 ## Escalation
 

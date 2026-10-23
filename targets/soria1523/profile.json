@@ -575,7 +575,8 @@
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1804 tokens, 39 types, es-golden-age order 4: reading -2.005 per letter; random keys -5.453 (z 9.0); key annealed onto shuffled ciphertext best -3.459 (mean -3.472, z 137.0); annealer on the real text -1.999. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): five letter entries (eleven records with their duplicates) linked to the existing glyph transcriptions (keyA_june.txt, keyA_r9492_v2.txt/_rest.txt, the read_r94*.md tables) and readings (read_r94*.md running texts, measure/r_*.txt and kb_*.txt); key_file keyA.md and keyB.md", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): R9491 and R9494-96 re-read on the 5 Oct 2026 measured readings (kb_r9491.txt, kb_r9494.txt); the per-document grades had been given on the superseded read_r9491_b.md and read_r9494.md. Both build sentences with single code groups open; per-document C overturned to B twice. Claim unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring", "contextual inference"], "what": "Verify v8: R9494 reading (R9494_reading.md) scored with v2_score.py: 0.583 explicit holes (7/12), 0.333 plain, hole rate 0.118; two of four sentences carry three code-group holes. Back to decoded, not read; class read -> read in part; fraction_read 0.966 -> 0.873.", "result": "failed"}
+  {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring", "contextual inference"], "what": "Verify v8: R9494 reading (R9494_reading.md) scored with v2_score.py: 0.583 explicit holes (7/12), 0.333 plain, hole rate 0.118; two of four sentences carry three code-group holes. Back to decoded, not read; class read -> read in part; fraction_read 0.966 -> 0.873.", "result": "failed"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.gaps now mirrors the NOTES list (R9498 beyond block 1, not-attempted, added). 'Read in part' stays unjustified while R9498 is uncollated; NOTES already Status: in progress.", "result": "partial", "technique": ["statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 1804, "types": 39, "tokens_per_type": 46.26, "score": -2.005, "nulls": {"random keys": {"n": 200, "mean": -5.453, "sd": 0.384, "max": -4.552, "z": 9.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.472, "sd": 0.011, "max": -3.459, "z": 137.0, "p": 0.1429}}, "power": -1.999, "verdict": "pass", "notes": "claimed per-occurrence score -1.896; polyphony 0.023; 159 unread tokens left out; annealer on the real text from random keys reached -1.999"}, 
   "method": "key recovered from ciphertext-only",
@@ -615,6 +616,11 @@
     "item": "R9497 paf, sud, xuf, z7a (context-only values)",
     "blocker": "no-key-material",
     "detail": "R9498 collated; values bounded only by the code's alphabetical blocks"
+   },
+   {
+    "item": "R9498 beyond block 1 not collated",
+    "blocker": "not-attempted",
+    "detail": "block 2 and f. 579r of R9497 read without it"
    }
   ],
   "fraction_read_method": "measured",
