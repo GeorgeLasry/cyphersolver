@@ -217,3 +217,14 @@ f. 9/f. 10 texts against every key in ff. 25-109.
 - README rows under Read with known key (f. 107) and Not solved (the rest); the old Not applicable row removed.
   SOLVED_CATALOGUE 138, SOLVED_RANKING provisional 2.80. DECODE queue: R8623, R8624, R8433, R8725 (status ->
   Non-decrypted), R8728 (reading R8728.txt, key R8727), R8727, R8627 (index), R8724, R8723.
+
+## 23 Oct 2026 — verify sweep (reading audit v2): f. 107 kept read
+- Listed in `research/reading_audit/recheck.txt` as "read, scores 0.27". Re-checked line by line on the DECODE image
+  (IMG_R8728_I40333_P1, main checkout `img/`) against the f. 106 lower alphabet and the contemporary interlinear gloss
+  (which covers lines 5-6 in full and the rest in part). Two words were only partly carried and are now bracketed in
+  `f107_reading.txt`: "one another" is written o-n-a-t-h-e-r (gloss silent), and "should" ends in the c sign (–), not d (=).
+- Score of the reading body, every conjecture, supplied or partly carried word counted as a hole
+  (`research/reading_audit/v2_score.py`): 0.273 on the modern English word list (the low figure is the 1640s spelling:
+  lynes, ioyfull, neuer, sattisfied, louing), **0.818 on explicit holes** (9 of 11 sentences); `b17_score.py` HOLES=1
+  0.909. No look-alike alternates are involved (m/n and u/v share one sign in the key itself). The sentences hold for a
+  reader, so f. 107 stays read; the six-word gap line in Remaining gaps is unchanged.

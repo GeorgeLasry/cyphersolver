@@ -53,6 +53,7 @@ upper bound. The transcription has 534 cipher signs (`signstream.py` → `r9367/
 
 ## Remaining gaps
 
+- R9367 as a whole: decoded, not read (verify sweep 23 Oct 2026); the sense-only values cc = z, Φ = b, S = sch, U = ll (11 words) - blocker: no-key-material; not in register block 2_4, no second letter in this key to confirm them; counted as holes the reading falls to 0.59
 - [#] (triple-barred cross, 13x), [Π] (arch sign, 4x), R and d (once each) - blocker: no-key-material; not in register block 2_4, contexts do not fix them (re-read 23 Oct 2026)
 - L01-02 place name and parts of the cipher runs L09-10, L14, L16, L31, L34 - blocker: no-key-material; letter strings with the values that hold elsewhere, need the open signs or another letter in this key
 - right-margin sign pairs beside L30-L33 - blocker: not-attempted; probably a reader's equations, not needed for the reading
@@ -65,3 +66,16 @@ upper bound. The transcription has 534 cipher signs (`signstream.py` → `r9367/
 - [x] key-rebuild: five values added from context (q a, Λ r, C s, H k, K z)
 - [x] retry: re-annealed with de-1500s, homophone caps and nulls (failed); block 2_4 reading by hand
 - [x] re-read 23 Oct 2026 (batch b32): full-resolution re-transcription, values that hold at every occurrence adopted, reading built (0.641 on explicit holes)
+
+## 23 Oct 2026 — verify sweep (reading audit v2): back to decoded, not read
+- The b32 reading (`r9367/R9367_reading.md`) scored 0.641 (25/39) on explicit holes. Four of its key values rest on sense
+  alone (cc = z: zeit, ziechen, Schmalcz, selczam, herczen; Φ = b: bin, bringen, botschaft, bring; S = sch:
+  verkhuntschaft, botschaft, Schmalcz; U = ll: alles). With those 11 words counted as holes, and [#], [Π], [R], [g] as
+  holes, the body scores **0.590 (23/39)** (`research/reading_audit/v2_score.py`; b17 HOLES=1 0.667; plain 0.231).
+- Reader's check: the cipher passages L09-10 ("die [#] fleih danck geben worden"), L14 ("kaub sains gehalten"), L16,
+  L31 ("ich trag ssorg [R] hab sich merers vermessen s weder er") and L34 do not build sentences; the clear German and
+  the passages about the questioning, the Turks and Schmalcz do.
+- The DECODE image (IMG_R9367_I44333_P1) was re-fetched with the project cookie and viewed rotated; the failures are key
+  values, not transcription, so the image cannot settle them.
+- Result: `decoded, not read`, the reading kept as a partial reading; class `not read`, method `not solved` (the
+  register match stays under parts), fraction_read 0. Status stays in progress.

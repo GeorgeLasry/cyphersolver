@@ -77,8 +77,7 @@ lines 11-16 sign by sign (225 signs, 199 read; 6.0% of f.263 read clean, a lower
 
 - f.263 clean reading beyond recto lines 11-16 - blocker: not-attempted; paused 21 Sept 2026 (workable): v2 re-keyed (Pressburg talks read throughout); one sign serves ch but the annealer gives it s ("auss"=auch) — needs a digraph value set by hand. 30 Sept 2026: recto lines 11-16 read clean by hand (`r9416/reading_p3_11-16.txt`; z split into e and a two-bar s, b into d and l); the rest still to do the same way.
 - f.263 person codes "der d", "der g", "der h" - blocker: no-key-material; probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once
-- f.262 code signs X (2x), ⊼ (2x) and a G-sign - blocker: no-key-material; f. 262 read from its signs 23 Oct 2026 (A09-A11 included), these codes have no gloss
-- f. 262 page B lines B08-B15 sign by sign - blocker: not-attempted; the decipherment reads, B01-B07 checked against the signs (23 Oct 2026)
+- f.262 code signs X (3x), ⊼ (2x) and a G-sign (2x), the first group of A04, the end of A03 and one sign in B01 - blocker: no-key-material; no gloss over them (the gloss skips the B09 G and the B12 X); the rest of f. 262 is read from its signs, sign-label transcription `r9416/f262_signs.txt` (23 Oct 2026). Page B B08-B15 checked sign by sign 23 Oct 2026 (closed).
 
 ## Escalation
 
@@ -93,3 +92,19 @@ lines 11-16 sign by sign (225 signs, 199 read; 6.0% of f.263 read clean, a lower
 
 - f.262 and f.263 are kept as two parts of one entry (one DECODE record, the report as the letter's enclosure), not
   as two entries; they are different sign sets.
+
+## 23 Oct 2026 — verify sweep (reading audit v2): f. 262 sign labels saved, kept read
+- The b32 reading of f. 262 had no sign-label transcription, so its decode could not be re-run. Both pages (40 cipher
+  lines) are now transcribed sign by sign from IMG_R9416_I44531_P1/P2 (re-fetched with the project cookie, turned 180
+  deg, read in full-resolution strips): `r9416/f262_signs.txt`, 1,498 signs, labels listed in its header. Re-decoded with
+  `f262_key.md` by `research/reading_audit/v2_r9416_f262_dec.py`.
+- Word-by-word alignment with `f262_reading.md` changed 17 words to what the signs give: A02 zuziehen (was [?zuzrehen]),
+  vertraue; A03 unter (was "under"); A04 gewornet; A07 bot (messenger; was [?boit]); A08 "das ich es sein solt" (was
+  "es lern solt": the rumour was that it was he); A10 polen (was [?belen]); A12 italische; A16 eschelkamb; A18 wolt (was
+  welt); A21 gestolen (was [?gestalten]); A23 verner (the unread word before "gnediger her") and [?gefallen] (an 8 where a
+  should stand); A24 mag (was [?wag]); B05 guldin; B11 [?dinst]; B14 unterteniglich. Added from the signs where the gloss
+  is silent: B09 "an [G] von eurn" (a code sign: the recommendation is addressed to someone) and B12 "noch [X] die zeit her"
+  ("weder wirtenberg noch [X] die zeit her": Württemberg). English updated to match.
+- Score of the reading body: 0.852 -> **0.963 (26/27)** on explicit holes, 0.444 -> 0.481 plain (`v2_score.py`,
+  `b17_score.py` HOLES=1 0.963). Look-alike letters: the P family (w/b/p) and the R/6 pair (r/m) chosen by the word,
+  about 2-3% of letters. Kept read, grade B.

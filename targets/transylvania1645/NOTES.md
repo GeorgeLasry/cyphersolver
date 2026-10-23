@@ -66,7 +66,7 @@ fraction_read 0.59 (estimated; R4938 and R4939 untranscribed).
 
 ## Remaining gaps
 
-- R4936, R4937, R4942 read 23 Oct 2026 (b15); scattered [?words] and two unread runs in R4936 (l. 9, l. 16) - blocker: illegible; figures checked at 3x, the letter shapes do not settle a word
+- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026): 130 letters (6.7%) on look-alike alternates, mostly t on g-shaped figures, plus five [?words] and two unread runs (l. 9, l. 16) - blocker: illegible; the DECODE scan (1,704 px, no larger file) does not separate the hand's g and q at 3x, and no contemporary or printed text confirms the choices
 - R4937 l. 3 run after 'megsegni' and the end of l. 13 - blocker: illegible; decode to letter strings that are not words, checked at 2.2x
 - R4938 (1647, short cipher insertions) and R4939 (1648, two pages of cipher in a script unlike the family hand) - blocker: not-attempted; images in hand, not transcribed
 Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or uninspected (R4938, R4939), with many spans not attempted. These are NOT established outside blockers; continue work. R4940 still requires prior-art comparison and inclusion in the eventual group writeup. No percentage claimed for the group.
@@ -87,3 +87,16 @@ Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or
 4. Follow the printed diplomatic-collection leads and compare dates/openings. Keep discovery chronology for contamination assessment. Consider period Hungarian corpus only if modern scoring remains insufficient after fixing the transcription.
 5. Record every step in profile.json. It currently passes `docs/_check_profile.py` with unknowns explicitly retained.
 6. Do not invoke writeup yet. User requires partial readings pushed toward completion first. Once the research is exhausted, use `.claude/skills/writeup/SKILL.md`, update DECODE queue and all required publication surfaces, and run its checker. Shared checkout has extensive unrelated modifications; stage explicit paths only if committing, and isolate any broad site rebuild as necessary.
+
+## 23 Oct 2026 — verify sweep (reading audit v2): R4936 back to decoded, not read
+- `R4936_align.tsv` (b15) puts 130 of the reading's 1,932 letters on the other member of a look-alike pair of the hand:
+  g=t 114, q=u 6, c=y 4, g=g 3, h, a, n 1 each; 99 of 338 words carry one. That is 6.7%, above the brief's ~3% limit,
+  and no contemporary or printed text confirms them (the pencil gloss under line 1 is a later reader's start).
+- Checked on IMG_R4936_I28640_P1 (main checkout `transylvania1645/`) at 3x, lines 1-2 and 4-5: the g- and q-shaped
+  figures ("rdkgng" holtig, "byucayhg" fegyvert, "lyzyinxyuyq" kemeniseget) do not separate at the scan's 1,704-px
+  width, so the t/u choice is made by sense. DECODE has no larger file.
+- Scores of the reading body: explicit holes 0.941 (32/34) as published; **0.147 (5/34)** with the look-alike words
+  counted as holes (`research/reading_audit/v2_lookalike_holes.py`, `v2_score.py`); 0.029 plain (modern hu list).
+- Result: R4936 `decoded, not read`, reading kept as a partial reading; fraction_read 0.59 -> 0.22 (estimated:
+  R4937 869 + R4942 252 + R4940 23 of about 5,250 letters). A sharper image of Keresdi_Bethlen_14 (archive access)
+  would settle g/q and could restore it.

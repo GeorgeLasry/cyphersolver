@@ -299,19 +299,26 @@
       "what": "Re-read brief, first piece ff. 35r-36v: DECODE R2252 re-fetched logged in (9 images, the same files and sizes as in img/decode, no attachment, no transcription, no comments); page 3 viewed whole again, digits 2/7, 3/5/8, 0/8 still not separable under the bleed-through. No register copy or print reachable. Reading body of the first piece scored 0.161 (5/31); kept decoded, not read (needs-physical-access).",
       "result": "failed",
       "technique": ["language-model scoring"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "control",
+      "what": "Verify sweep (reading audit v2): ff. 37r-38r re-scored. The reading body (reading.txt ff. 37r-38r) scored 0.541 explicit holes / 0.351 plain in the audit; with the 155 of 822 tokens that the crib fit valued by sense ('?' in rd_f37r/f37v/f38r.txt) and the low lines counted as holes it scores 0.255 (12/47; v2_ottobon_holes.py). Local images 920 x 1590 px do not settle the digits; the BNE full-resolution viewer needs a browser. Demoted to decoded, not read; class not read, fraction_read 0.",
+      "result": "failed",
+      "technique": ["language-model scoring"]
     }
   ],
   "outcome": {
-    "method": "read after matching with key from external sources",
-    "method_basis": "The Council of Ten's Zifra Prima key sheet (DECODE R1789) fits the letter; the noisy first-pass transcription was re-read against the key by hand and by a calibrated noisy-channel decoder and crib fit (dec.py, fit.py); Italian read in part.",
+    "method": "not solved",
+    "method_basis": "The Council of Ten's Zifra Prima key sheet (DECODE R1789) fits the letter (read after matching with key from external sources); the noisy first-pass transcription was re-read against the key by hand and by a calibrated noisy-channel decoder and crib fit (dec.py, fit.py), but neither piece builds sentences without values set by sense (verify sweep 23 Oct 2026): Italian read in fragments only.",
     "contribution": [
       "transcription",
       "decipherment with ambiguous key",
       "key extended or corrected",
       "catalogue correction"
     ],
-    "class": "read in part",
-    "fraction_read": 0.525,
+    "class": "not read",
+    "fraction_read": 0.0,
     "verification": [
       "key confirms",
       "historical consistency"
@@ -319,7 +326,7 @@
     "notes": "Key: R1789 plus d83 = a, c86 = o. Content: Senate's reply to a French request for aid to Henry III: intercession with Sixtus V. Valle de la Cerda's contemporary solution is lost.",
     "key": "partial",
     "fraction_read_method": "measured",
-    "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the piece that reads as sentences, ff. 37r-38r = 820 of 1,563 (ct_f*.txt word counts: 341 + 363 + 116); the first piece, ff. 35r-36v (743), is decoded, not read. Withdrawn as a reading figure: 0.627 = rd_f35r..rd_f38r.txt via measure_rd.py: tokens in high/medium lines without '?' (981/1,565), after the dec.py/fit.py crib-fit re-reading of 9 Oct 2026.",
+    "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the piece that reads as sentences, ff. 37r-38r = 820 of 1,563 (ct_f*.txt word counts: 341 + 363 + 116); the first piece, ff. 35r-36v (743), is decoded, not read. Withdrawn as a reading figure: 0.627 = rd_f35r..rd_f38r.txt via measure_rd.py: tokens in high/medium lines without '?' (981/1,565), after the dec.py/fit.py crib-fit re-reading of 9 Oct 2026. 23 Oct 2026, verify sweep v2: ff. 37r-38r back to decoded, not read (0.255 on explicit holes once the crib fit's sense-set tokens count as holes), so neither piece reads; fraction_read 0.",
     "gaps": [
       {
         "item": "ff.35v-36v, 316 tokens in lines without anchoring sense",
@@ -332,9 +339,9 @@
         "detail": "stain at the head of f.35r; no better image than the BNE scan"
       },
       {
-        "item": "ff.37r-38r, 199 tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines)",
+        "item": "ff.37r-38r (decoded, not read): 199 unread tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines) and 155 of 822 tokens whose value the crib fit set by sense (? in rd_f37r-f38r.txt)",
         "blocker": "needs-physical-access",
-        "detail": "unresolved digits and gutter losses; the second piece's text (the Senate's answer to de Maisse) should be in BL Add MS 30635 (de Maisse's letters 'avec les responses', not digitised) and the ASVe register"
+        "detail": "unresolved digits and gutter losses; the second piece's text (the Senate's answer to de Maisse) should be in BL Add MS 30635 (de Maisse's letters 'avec les responses', not digitised) and the ASVe register; the BNE viewer images at full resolution (GET_IMAGES.md) sit behind an interactive check and need Daniel in a browser; the local images are about 920 x 1590 px (verify sweep 23 Oct 2026)"
       },
       {
         "item": "f.37r top-right header (4 small groups)",
@@ -371,20 +378,12 @@
       {
         "doc": "ff35-38",
         "label": "Second piece, ff. 37r-38r: copy of the Senate's answer to the French request",
-        "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading.txt ff. 37r-38r: the Senate's answer reads as continuous Italian sentences (the affection the Republic bears the crown of France; it will interpose with the Pope so that His Holiness favours His Most Christian Majesty in quieting the risings of that kingdom) with scattered [...] and line-end gaps; only f. 37r ll. 1-2 and f. 37v ll. 1, 3 are low."},
         "language": "it",
-        "transcription": [
-          "ct_f37r.txt",
-          "ct_f37v.txt",
-          "ct_f38r.txt"
-        ],
-        "decryption": [
-          "rd_f37r.txt",
-          "rd_f37v.txt",
-          "rd_f38r.txt",
-          "reading.txt"
-        ],
-        "summary": "The Senate assures Henry III of the Republic's affection for the French crown and resolves to interpose its intercession with Sixtus V, so that the Pope will favour the King's just cause in quieting the risings in his kingdom and quenching the fire of war, weeks before the monitorium against Henry III of 24 May 1589."
+        "transcription": ["ct_f37r.txt", "ct_f37v.txt", "ct_f38r.txt"],
+        "decryption": ["rd_f37r.txt", "rd_f37v.txt", "rd_f38r.txt", "reading.txt"],
+        "summary": "The Senate assures Henry III of the Republic's affection for the French crown and resolves to interpose its intercession with Sixtus V, so that the Pope will favour the King's just cause in quieting the risings in his kingdom and quenching the fire of war, weeks before the monitorium against Henry III of 24 May 1589.",
+        "state": "decoded, not read",
+        "note": "Verify sweep 23 Oct 2026 (reading audit v2): back to decoded, not read. The crib-fit reading of ff. 37r-38r (reading.txt, rd_f37r/f37v/f38r.txt; kept as a partial reading) scored 0.541 on explicit holes and 0.351 plain in the audit, below the bar; 155 of its 822 tokens are values the dec.py/fit.py crib fit set by sense (marked ? in the rd files), and counted as holes with the low lines the body falls to 0.255 (12/47; research/reading_audit/v2_ottobon_holes.py, v2_score.py). The passages that hold are f.37r ll.5-9 (the affection the Republic bears the crown of France) and f.37v ll.12-20 (the intercession with the Pope). No re-read was possible: the local images (img/f37r_clean.png, 920 x 1590 px) do not separate 2/7, 3/5/8, 0/8, and the full-resolution BNE viewer images need a browser session. Blocker: needs-physical-access."
       }
     ],
     "key_file": [

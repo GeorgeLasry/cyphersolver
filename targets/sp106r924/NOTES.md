@@ -62,6 +62,7 @@ plaintext. 162 groups have no value: 58 distinct three-digit numbers (85 tokens:
 The reveal on the page is the first 120 groups of this run.
 
 ## Remaining gaps
+- R924 as a whole: decoded, not read (verify sweep 23 Oct 2026); the four code values set by sense (168 hope, 116 can, 334 what, 227 new) and 85 open code tokens - blocker: no-key-material; Lasry's key lacks the open codes and gives hold/brought where the sense needs hope/can; Sams's 1976 solution is not printed (needs the Bodleian).
 
 - three-digit word-list numbers with no value (58 distinct, 85 tokens: 324, 428, 321, 532, 208, 797 ...) - blocker: no-key-material; four valued by sense here (R924_reread_log.md); Sams's 1976 solution is unprinted
 - Eric Sams's decipherment (1976) - blocker: needs-physical-access; filed in the Bodleian per his letter to R. A. Sayce (9 Oct 1976)
@@ -84,3 +85,13 @@ The reveal on the page is the first 120 groups of this run.
   the other three entries are "read from existing decipherment", the key applied only as a check.
 - Figures his key leaves without a value are treated as open, not as nulls, although his key files say "There are
   no nulls".
+
+## 23 Oct 2026 — verify sweep (reading audit v2): back to decoded, not read
+- The b35 reading (`R924_reading.md`) scored 0.649 (50/77) on explicit holes with four code values adopted by sense:
+  168 *hope* (7x; Lasry *hold*), 116 *can* (5x; Lasry *brought*), 334 *what* (2x), 227 *new* (2x; Lasry's plaintext
+  has NEW). With those 16 words counted as holes the body scores **0.597 (46/77)**, 0.494 plain
+  (`research/reading_audit/v2_score.py`); leaving 227 out (Lasry carries it) changes nothing. Under the bar, with code
+  holes in most sentences; Lasry's own plaintext does not read at those places either.
+- Result: `decoded, not read`, reading kept as a partial reading; fraction_read 1.0 -> 0; class `already solved`
+  unchanged (Lasry's decipherment is on DECODE). Sams's 1976 decipherment (Bodleian / Ian Roy papers) would settle the
+  four values and many of the 58 open codes.

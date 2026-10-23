@@ -9,47 +9,56 @@ code signs, unidentified; `[?word]` partly carried; `[...]` unread. One line per
 ## Reading
 
 Genediger her nach dem ich auf dem ich auf dem
-weg zu [X] [?zuzrehen] bin ich durch ain [?vertraue]
-freund under dem grafen von schaunburg [...]
-[...] erst den wien her auf komt [?gewornet] das mir
+weg zu [X] zuziehen bin ich durch ain vertraue
+freund unter dem grafen von schaunburg [...]
+[...] erst den wien her auf komt gewornet das mir
 durch zukemen unmuglich dermassen sei es nit allain
 in osterreich sonder auch steirmarck bestelt
-und vergangner tag ain [?boit] nidergelegen das
-geschrai gewest das ich es lern solt nun kon ich des
+und vergangner tag ain bot nidergelegen das
+geschrai gewest das ich es sein solt nun kon ich des
 minkwicz und ander geferden halb durch slesi
-und [?belen] auch nit komen die weil aber [X] treflich
+und polen auch nit komen die weil aber [X] treflich
 ansachen gelegen und [⊼] entlich vor hat zu
-ubereilen mit den italysche und spanischen kne-
+ubereilen mit den italische und spanischen kne-
 chen die durch steirmarck mit ainem und der
 tunau dem andern hauffen in ungern zihen sollen
 derhalb mein ainfeltigs bedenkhen eur furstlich
-gnad den bartlen von [?eschelkamb] het dohin gefertigt
+gnad den bartlen von eschelkamb het dohin gefertigt
 und aller sach guten bericht zu tun daineben
-ich die notdurft auch schreiben welt dan [⊼]
+ich die notdurft auch schreiben wolt dan [⊼]
 gibt fuer die turcken bis in vier tausent stark
 haben sich in schein sein botschaft heraus zu
-belaitten durch [?gestalten] dienun weder freund noch
+belaitten durch gestolen dienun weder freund noch
 feind schonen. doch stet es zu euren furstlichen
-gnaden gefallen. [...] gnediger her so ich diß
-orts nit durch [?wag] und sonst nit sicher zu
+gnaden [?gefallen]. verner gnediger her so ich diß
+orts nit durch mag und sonst nit sicher zu
 bleiben hab bin ich furnemens zu [...] ain rais zu
 thun etzlich practick durch hern [...] angefangen
 weiter in gang zu bringen auch mein aus-
 stendig pension von siben iaren zu erfodern bit
 demnach eur furstlich gnad mir in abschlag
-meiner besoldung funfzig gulden gen strabing
+meiner besoldung funfzig guldin gen strabing
 zum oberrichter in ain schein [...] eur furstlich
 gnad solichs fur gut ansicht verordnen dan ich
 sunst mangel an zerung hab darneben ain fur-
-schrift an von eurn furstlichen gnaden oder
+schrift an [G] von eurn furstlichen gnaden oder
 wo es denselben nit gelegen von seiner botsaft
-mein langwerig dienst und das mir weder wirten
-berg noch die zeit nichts geben mogen
+mein langwerig [?dinst] und das mir weder wirten
+berg noch [X] die zeit her nichts geben mogen
 zubedenken thu eurn furstlichen gnaden
-mich in dem allen untertenigclich befelhen
+mich in dem allen unterteniglich befelhen
 datum eritags nach iacobi
 
 ## Notes
+
+- Verify sweep 23 Oct 2026 (reading audit v2): f. 262 transcribed sign by sign (`f262_signs.txt`, 1,498 signs) and
+  re-decoded with this key (`research/reading_audit/v2_r9416_f262_dec.py`). Changes from the signs: A02 zuziehen (was
+  [?zuzrehen]), vertraue; A03 unter (was under); A04 gewornet; A07 bot (was [?boit]); A08 "es sein solt" (was "es lern
+  solt": s-e-i-n, two Ǝ after ♀); A10 polen (was [?belen]; δ as p); A12 italische (x = i); A16 eschelkamb; A18 wolt (ϙ,
+  not 9: was welt); A21 gestolen (was [?gestalten]); A23 verner (the unread word: u/v-e-r-n-e-r) and [?gefallen] (an 8 where
+  a stands); A24 mag (6-⊙-8; was [?wag]); B05 guldin; B09 [G] (a code sign the gloss skips, before 'von'); B11 [?dinst]
+  (one unclear sign); B12 '[X] die zeit her' (the code sign and 'her' that the gloss struck are in the cipher); B14
+  unterteniglich. Page B B08-B15 now checked sign by sign. The notes below are from the b32 reading.
 
 - Page A, cipher words not glossed before (A09-A11, and the faint parts): "minkwicz und ander geferden halb durch
   slesi und [?belen] auch nit komen", "die weil aber [X] treflich ansachen gelegen und [⊼] entlich vor hat zu

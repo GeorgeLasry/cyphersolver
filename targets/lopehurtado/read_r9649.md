@@ -56,7 +56,8 @@ spelled *licenado*/*licençiado* short.
 > nadie, porque no querria darsela ni tener le quexoso.**
 > En este punto he sabido **que el licenciado Bernardino** es venido aqui; embarcose en Barcelona a v. del
 > passado. Dizenme que esta escondido en casa de un su hermano. Luego aviso al duque para ver lo que le
-> parece. V. Mt. escriva lo que manda... De Roma .ix. de noviembre [1522].
+> parece. V. Mt. escriva lo que manda. Guarde nuestro señor y acreciente la muy real persona y estado de V. Mt.
+> De Roma .ix. de noviembre [1522].
 
 Adrian VI asks Charles V to write urging him to garrison Ostia and give the fortress to no one: Cardinal
 Santa Cruz (Bernardino Carvajal, cardinal-bishop of Ostia as dean of the College) is pressing for it by

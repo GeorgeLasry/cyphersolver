@@ -391,6 +391,13 @@
     "key-structure hypothesis",
     "language-model scoring"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "what": "Verify sweep (reading audit v2): f. 107 reading re-checked line by line on the DECODE image IMG_R8728_I40333_P1 against the f. 106 lower alphabet and the contemporary interlinear gloss. Two words partly carried and now bracketed in f107_reading.txt: 'one another' is written o-n-a-t-h-e-r, 'should' ends in the c sign. Reading body scored with every conjecture, supplied or partly carried word as an explicit hole (research/reading_audit/v2_score.py): 0.273 on the modern word list (1640s spelling: lynes, ioyfull, neuer, sattisfied), 0.818 on explicit holes (9 of 11 sentences); the sentences hold for a reader. Kept read.",
+   "result": "worked",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {

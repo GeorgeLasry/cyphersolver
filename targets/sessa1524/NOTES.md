@@ -187,3 +187,15 @@ deciphered occurrence anywhere), and R9898's bleed-through pages, which do not r
 - [x] print: Gayangos triplicate (CSP 636) and Goicoechea's reading (CSP 637) searched online 23 Oct 2026, not found (Kolosova 2016/17 thesis a lead); Bergenroth CSP Spain vol. 2 checked (f. 128 not calendared; R9873 = nos. 636-638, used as a topic crib); CSP iii.1 checked for R9898 (not calendared)
 - [x] key-rebuild: key_working.md extended over 16 passes by crib alignment, template matching (tmatch.py) and the R9898 margins
 - [x] retry: b23 re-read 23 Oct 2026: R9873 and R9898 written out as readings, open groups pooled with R9899 (new sibling) and R9660, f. 83r re-checked on the image; R9873 read, R9898 not; rerun 3 Oct 2026 with the pass-17 pooled values (R9873 92.8%, R9898 79.8%); rerun 21 Sept 2026 with the pass-15 key over R9660 (no change); rerun 2 Oct 2026 with the pass-16 key over f. 128: `rus` = dicho and `hay` = aunque fill the residue *de lo susodicho, aunque no*; `vo`, `per` and the m-re clause still open
+
+## 23 Oct 2026 — verify sweep (reading audit v2): R9873 kept read
+- Re-scored `r9873_reading.md` counting as holes every word that rests on a sense-only key value of the b23 log
+  (sur/luc parte, tt plural s, reb dezi-, cer teni, lar miento, gom quatro, qu o, dis servido, gul si, nuf gente; 21
+  words, located by their (a)-line contexts: `research/reading_audit/v2_sessa1524_sense.py`) and every word carrying
+  a look-alike letter outside the attested 3 = i and the declared second values (ꝍ as i/j/d, Є/ε as i/y, 3 as j/l;
+  11 words: dificultad x2, sobrino(s), Foyeta, aficionado, ynclinavan, aparejo, jamas, juzgan, aconsejado;
+  `v2_sessa1524_look.py`).
+- Scores: explicit holes 0.687 -> **0.632** (103/163, `v2_score.py`); b17 HOLES=1 0.715 -> 0.652; plain 0.38.
+  Look-alike letters are about 95 of roughly 7,900 reading letters (1.2%), under the brief's 3%. The sentences hold
+  outside f. 83r ll. 19-25 (already noted). Kept read, grade B, at the bar; the sense-only values stay flagged for a
+  check against the triplicate's contemporary deciphering (Gayangos MS, CSP 636) or Kolosova's key if either is reached.

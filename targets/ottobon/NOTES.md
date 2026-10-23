@@ -603,7 +603,7 @@ calibrated decoder (dec.py) or a crib fit (fit.py) to fix them and no anchoring 
 the DECODE scans (previous pass) did not resolve them.
 - ff.35v-36v, 316 tokens (f.35v ll.3-6, 10-11, 15, 20; f.36r ll.4, 6, 8-11, 14-16; f.36v ll.2-3, 5-6, and gaps in the read lines) - blocker: needs-physical-access; the only images (BNE scan, ~130 dpi in the PDF, ~1.4x on DECODE) do not separate 2/7, 3/5/8, 0/8 and the bleed-through is heavy; a 400-dpi BNE reproduction of ff.35-38 or the register copy (ASVe, Senato Secreta, Deliberazioni Francia 1589, 27 April) is needed.
 - f.35r, 69 tokens (ll.1-3 and 12, about 50, plus gaps in read lines) - blocker: illegible; ll.1-3 under the stain at the head of f.35r, l.12 too faint; no better image than the BNE scan exists online.
-- ff.37r-38r, 199 tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines) - blocker: needs-physical-access; unresolved digits and gutter losses; the text of this second piece (the Senate's answer to the French ambassador) should be in de Maisse's letter-book "avec les responses", BL Add MS 30635 (not digitised), and in the ASVe register.
+- ff.37r-38r (decoded, not read since 23 Oct 2026), 199 unread tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines) and 155 tokens valued by the crib fit on sense alone - blocker: needs-physical-access; unresolved digits and gutter losses; the text of this second piece (the Senate's answer to the French ambassador) should be in de Maisse's letter-book "avec les responses", BL Add MS 30635 (not digitised), and in the ASVe register.
 - f.37r top-right header (four small groups) - blocker: illegible; too small to transcribe at this resolution.
 
 ## Escalation
@@ -647,3 +647,15 @@ Section 0a of the writeup skill:
   (`keys/zifra_prima_R1789.tsv`, 527 codes).
 - R1790: date 1577-1587 (same register); the sheet's note: serves for the Captain in the Gulf, the Guardia against the
   Uskoks and the Rettori of Zara.
+
+## 23 Oct 2026 — verify sweep (reading audit v2): ff. 37r-38r back to decoded, not read
+- The 22 Oct audit had kept the second piece (ff. 37r-38r) as read, but its reading body scores 0.541 on explicit holes
+  and 0.351 plain, below the bar. The reading is a crib fit (fit.py) of Italian onto the first-pass tokens: 155 of the
+  822 tokens of ff. 37r-38r are values the fit set by sense ("?" in `rd_f37r.txt`, `rd_f37v.txt`, `rd_f38r.txt`). Counted
+  as holes, with the low lines, the body scores **0.255 (12/47)** (`research/reading_audit/v2_ottobon_holes.py`,
+  `v2_score.py`). What holds: f. 37r ll. 5-9 (the affection the Republic bears the crown of France) and f. 37v ll. 12-20
+  (the intercession with the Pope so that he favours the King in quieting the risings).
+- No re-read possible here: the local images (`img/f37r_clean.png` 920 x 1590 px) do not separate 2/7, 3/5/8, 0/8, and
+  the full-resolution BNE viewer images (GET_IMAGES.md) need a browser session.
+- Result: both pieces decoded, not read; class `not read`, method `not solved` (the R1789 match stays in method_basis),
+  fraction_read 0. The page and README still describe it as read in part (not edited in this sweep).

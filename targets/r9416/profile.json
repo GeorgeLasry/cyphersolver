@@ -144,7 +144,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): gloss.txt (f. 262) read: page B builds, page A does not; relabelled decoded, not read. The f. 263 entry is read only on recto ll. 11-16, which is what fraction_read 0.06 counts; excerpt note added. Claim unchanged.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "access", "what": "Re-read (REREAD_BRIEF, batch b32): DECODE R9416 fetched logged in (4 images, no attachment); f. 262 pages turned, deskewed and cut into one full-resolution crop per cipher line, with the faint gloss in the same crop.", "result": "worked"},
   {"date": "2026-10-23", "kind": "key from source", "what": "f. 262 key rebuilt letter for letter from the contemporary interlinear decipherment of page B (B01-B07 aligned sign by sign): simple substitution with homophones (a, e, u, b) and code signs; # = ss (dermassen, diß), ƛ = n (dan), x = i found on page A; X, ⊼ and a G-sign unidentified (r9416/f262_key.md).", "result": "worked"},
-  {"date": "2026-10-23", "kind": "reading", "what": "f. 262 page A read from its signs, all 25 lines including the unglossed A09-A11 (Minckwitz, Silesia, the Italian and Spanish foot); six gloss misreadings corrected from the figures; page B from the decipherment. r9416/f262_reading.md and _en.md; score 0.852 (23/27) on explicit holes, 0.444 plain; look-alike letters ~2%. Relabelled read (grade B).", "result": "worked"}
+  {"date": "2026-10-23", "kind": "reading", "what": "f. 262 page A read from its signs, all 25 lines including the unglossed A09-A11 (Minckwitz, Silesia, the Italian and Spanish foot); six gloss misreadings corrected from the figures; page B from the decipherment. r9416/f262_reading.md and _en.md; score 0.852 (23/27) on explicit holes, 0.444 plain; look-alike letters ~2%. Relabelled read (grade B).", "result": "worked"},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Verify sweep (reading audit v2): f. 262 (both pages, 40 cipher lines) transcribed sign by sign from IMG_R9416_I44531_P1/P2 in full-resolution strips (r9416/f262_signs.txt, 1,498 signs) and re-decoded with the f262 key (research/reading_audit/v2_r9416_f262_dec.py). Word-by-word alignment with f262_reading.md changed 17 words to the signs' reading (A02 zuziehen, A03 unter, A07 bot, A08 'es sein solt', A10 polen, A12 italische, A18 wolt, A21 gestolen, A23 verner, A24 mag, B05 guldin, B14 unterteniglich ...) and added the code signs the gloss skips (B09 [G], B12 [X]) and 'her' (B12). Reading body 0.852 -> 0.963 on explicit holes (0.481 plain). Kept read, grade B.", "result": "worked", "technique": ["language-model scoring"]}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "de-1500s", "file": "validation.tsv", "tokens": 199, "types": 25, "tokens_per_type": 7.96, "score": -2.667, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 13% of read tokens differ from their type's commonest value"}, 
   "method": "key recovered from ciphertext-only",
@@ -158,7 +159,7 @@
   "key": "partial",
   "fraction_read": 0.352,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Re-read 23 Oct 2026 (batch b32): f. 262 reads in full (r9416/f262_reading.md; about 1,495 signs, counted as the letters and code signs of its reading, since the cipher is letter for letter and its signs were read but not saved as labels) plus the 199 clean codes of f. 263 recto ll. 11-16, over 1,495 + 3,313: 1,694 / 4,808 = 0.352. The rest of f. 263 is still a working decrypt.",
+  "fraction_read_source": "Re-read 23 Oct 2026 (batch b32): f. 262 reads in full (r9416/f262_reading.md; about 1,495 signs, counted as the letters and code signs of its reading, since the cipher is letter for letter and its signs were read but not saved as labels) plus the 199 clean codes of f. 263 recto ll. 11-16, over 1,495 + 3,313: 1,694 / 4,808 = 0.352. The rest of f. 263 is still a working decrypt. 23 Oct 2026 (verify sweep v2): f. 262 now has a sign-label transcription (r9416/f262_signs.txt), 1,498 signs measured against the 1,495 estimated; fraction_read unchanged at 0.352.",
   "verification": ["contemporary decipherment", "historical consistency"],
   "notes": "f.263: running German with local errors (working decrypt), recto lines 11-16 deciphered clean by hand (30 Sept 2026); codes der d / der g / der h are persons. f.262: the gloss is faint and only partly transcribed. 22 Oct 2026, reading audit: f. 262 decoded, not read (page A gloss faint); the f. 263 entry counts only recto ll. 11-16 (excerpt note). Claim unchanged. 23 Oct 2026 (batch b32): f. 262 read from its signs (page A) and its decipherment (page B), grade B.",
   "gaps": [
@@ -173,14 +174,9 @@
     "detail": "probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once"
    },
    {
-    "item": "f.262 code signs X (2x), ⊼ (2x) and a G-sign (1x)",
+    "item": "f.262 code signs X (3x), ⊼ (2x) and a G-sign (2x), and the unread first group of A04, the end of A03 and one sign in B01",
     "blocker": "no-key-material",
-    "detail": "no gloss over them; f. 262 otherwise read from its signs (23 Oct 2026)"
-   },
-   {
-    "item": "f.262 page B lines B08-B15 sign by sign",
-    "blocker": "not-attempted",
-    "detail": "the contemporary decipherment reads; B01-B07 checked against the signs"
+    "detail": "no gloss over them (the gloss skips the B09 G-sign and the B12 X); f. 262 otherwise read from its signs, sign-label transcription f262_signs.txt (23 Oct 2026)"
    }
   ],
   "parts": [
@@ -235,8 +231,9 @@
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
-     "note": "r9416/f262_reading.md: page A (25 lines, including the three unglossed A09-A11) read sign by sign on the full-resolution DECODE image with the key rebuilt letter for letter from the contemporary interlinear decipherment of page B (r9416/f262_key.md; B01-B07 checked against the signs); page B follows that decipherment. The signs correct the earlier gloss transcription in six places (A03, A13, A16, A18, A19, A22). Reading body 0.852 (23/27) on explicit holes with code signs counted as holes, 0.444 plain (early New High German spelling). Look-alike letters about 2% (the w/b/p and u/o shape families, read by sense). Open: codes X, ⊼ and a G-sign, and eight bracketed words."
-    }
+     "note": "r9416/f262_reading.md: page A (25 lines, including the three unglossed A09-A11) read sign by sign on the full-resolution DECODE image with the key rebuilt letter for letter from the contemporary interlinear decipherment of page B (r9416/f262_key.md; B01-B07 checked against the signs); page B follows that decipherment. The signs correct the earlier gloss transcription in six places (A03, A13, A16, A18, A19, A22). Reading body 0.852 (23/27) on explicit holes with code signs counted as holes, 0.444 plain (early New High German spelling). Look-alike letters about 2% (the w/b/p and u/o shape families, read by sense). Open: codes X, ⊼ and a G-sign, and eight bracketed words. Verified 23 Oct 2026 (reading audit v2): f. 262 transcribed sign by sign (r9416/f262_signs.txt, 1,498 signs, both pages) and re-decoded with f262_key.md (research/reading_audit/v2_r9416_f262_dec.py); the decode was aligned word by word with the reading and 17 words changed to what the signs give (zuziehen, unter, bot, 'es sein solt' for 'es lern solt', polen, italische, wolt, gestolen, verner for an unread word, mag for [?wag], guldin, unterteniglich ...; two code signs and 'her' the gloss skipped added in B09/B12; [?gefallen], [?dinst] bracketed). Reading body now 0.963 (26/27) on explicit holes, 0.481 plain; before 0.852 / 0.444."
+    },
+    "transcription": "r9416/f262_signs.txt"
    }
   ],
   "key_file": [

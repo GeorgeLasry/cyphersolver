@@ -197,7 +197,7 @@ contributors', the transcription and measurement this project's).
 - fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%): 27 without a value in either key, 47 tentative values of Lasry's that Rosson's does not match - blocker: open-codes. Still to do: compare both keys' readings with the images of ff. 44r-46v.
 - fr. 6638 (letter 5): 105 tokens not read (89.0%), mostly Lasry's unconfirmed tentative values - blocker: open-codes; Rosson's key was built on letters 1-3 only, and this letter is not seen here (no Gallica link in Biermann's transcription).
 - fr. 2988 ff. 2 and 9-10 with the copies fr. 3019 and fr. 20506: 31 and 53 scattered open groups, over the read bar - blocker: open-codes.
-- letter 4 (fr. 4050): read 23 Oct 2026 (B, `texts/letter4_reading.md`); 47 code types left as codes and 39 values resting on sense and list position only (`texts/letter4_reread_log.md`) - blocker: no-key-material (each occurs once in the five letters)
+- letter 4 (fr. 4050): decoded, not read (verify sweep 23 Oct 2026; the b33 reading `texts/letter4_reading.md` kept as a partial reading, 0.591 with every [?word] counted as a hole); 47 code types left as codes, 39 values resting on sense and list position only and about 70 single-context tentative values of Lasry (`texts/letter4_reread_log.md`) - blocker: no-key-material (each occurs once or twice in the five letters)
 - letter 4 (fr. 4050): Biermann's figures not checked on an image - blocker: needs-physical-access (fr. 4050 is not digitised: BnF notice ark:/12148/cc504711/cd0e497 has no Gallica link)
 
 ## Escalation
@@ -227,3 +227,14 @@ ciphers with code groups; this is an initial-letter code with numbered word list
 Lasry pointed out that entries combining different ciphers are confusing. Moved here: `n20/`, `lasry/` (George
 Lasry's contribution, untouched), `additione.json`, `measure_rosson.py`, `clairfetch.py`, `ita/`; the reveal file
 became `docs/reveal/ranzo1528.json`. Page: `docs/ranzo1528.html`.
+
+## 23 Oct 2026 — verify sweep (reading audit v2): letter 4 back to decoded, not read
+- The b33 figure 0.768 (b17 HOLES=1) let every `[?word]` through as a known word: the checker's gap pattern takes the "?"
+  but not the word. Scored with every `[?word]` and every open code as a hole (`research/reading_audit/v2_score.py`):
+  **0.591 (55/93)**, 0.376 plain. The `[?word]`s are the 39 code values resting on sense and list position only and
+  Lasry's tentative values seen once or twice that Rosson's key does not confirm; with only the 39 counted the body
+  scores 0.776.
+- Under the bar with the brief's rule ([?word] = partly carried = hole), and the eleven-code run 79r:27-79v:2 does not
+  build (80r:1-3 and 80r:13-15 in part). No image to settle anything: fr. 4050 is not digitised.
+- Result: letter 4 `decoded, not read`, reading kept as a partial reading; fraction_read 0.929 -> 0.717 (the 22 Oct
+  figure: the four letters that read). Class read in part unchanged.

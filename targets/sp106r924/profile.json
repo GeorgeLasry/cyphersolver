@@ -145,6 +145,13 @@
    "what": "Decoded afresh with Lasry's key; low unvalued figures read as nulls; date 'Ian. 26' and '5 or 6 thousand' read as numerals in clear; codes 168 hope, 116 can, 334 what, 227 new adopted by sense at every occurrence (flagged); R924_reading.md and R924_en.md written, aligned word by word with the decode (three modernised spellings restored). Score 0.545 plain, 0.649 explicit holes; marked read, grade B.",
    "result": "worked",
    "technique": ["key matching", "contextual inference", "language-model scoring", "manual reconstruction"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "what": "Verify sweep (reading audit v2): R924 reading re-scored with the 16 words that rest on the four sense-valued codes (168 hope, 116 can, 334 what, 227 new) as holes (research/reading_audit/v2_score.py): 0.649 -> 0.597 (46/77) explicit holes, 0.545 -> 0.494 plain; the same 0.597 without 227, which Lasry's plaintext carries. Under the bar; demoted to decoded, not read, fraction_read 0. Class already solved kept (Lasry's decipherment on DECODE).",
+   "result": "failed",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {
@@ -154,9 +161,9 @@
    "catalogue correction"
   ],
   "class": "already solved",
-  "fraction_read": 1.0,
+  "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "23 Oct 2026, re-read b35: the one document, R924 (2012 groups), reads (R924_reading.md); 2012/2012 = 1.0 by document. 85 code tokens inside it stay open.",
+  "fraction_read_source": "23 Oct 2026, re-read b35: the one document, R924 (2012 groups), reads (R924_reading.md); 2012/2012 = 1.0 by document. 85 code tokens inside it stay open. 23 Oct 2026, verify sweep v2: R924 back to decoded, not read (0.597 with its four sense-valued codes counted as holes); 0 of 1 documents read.",
   "key": "partial",
   "codes_open": {
    "open": 69,
@@ -166,7 +173,7 @@
    {
     "item": "three-digit word-list numbers with no value (58 distinct, 85 tokens: 324, 428, 321, 532, 208, 797 ...)",
     "blocker": "no-key-material",
-    "detail": "Lasry's key lacks them; Eric Sams's 1976 solution is unprinted (Bodleian / Ian Roy papers). Four valued here by sense (R924_reread_log.md)."
+    "detail": "Lasry's key lacks them; Eric Sams's 1976 solution is unprinted (Bodleian / Ian Roy papers). Four valued here by sense (R924_reread_log.md). Verify sweep 23 Oct 2026: the four sense-valued codes (168 hope 7x, 116 can 5x, 334 what 2x, 227 new 2x; Lasry has hold, brought, -, new) counted as holes put the reading at 0.597, so the letter is decoded, not read."
    },
    {
     "item": "Eric Sams's decipherment of this letter (1976)",
@@ -202,15 +209,10 @@
     "decryption": ["https://de-crypt.org/decrypt-web/RecordsView/924", "R924_reading.md"],
     "summary": "A writer at Paris to Charles I against Sir H. Compton's journey and the treaty for Prince Charles's marriage with Portugal, on Montreuil's mission, the frost that stopped the river traffic, and levies of five or six thousand men to send over.",
     "language": "en",
-    "state": "read",
+    "state": "decoded, not read",
     "reading": "R924_reading.md",
     "translation": "R924_en.md",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "R924_reading.md: Lasry's SP106-8 key applied afresh to Pettersson's transcription (b35_r924dec.py), unvalued low figures as nulls, four code values adopted by sense at every occurrence (168 hope, 116 can, 334 what, 227 new; flagged in R924_reread_log.md), Lasry's '?' guesses bracketed. Reading body 0.545 plain, 0.649 explicit holes (English 1646); the argument holds sentence by sentence with code holes (85 tokens). Writer Henry Jermyn (Eric Sams, Archivaria 21, 1985-86, who deciphered it in 1976; his solution unprinted)."
-    }
+    "note": "Verify sweep 23 Oct 2026 (reading audit v2): back to decoded, not read. The b35 reading (R924_reading.md, kept as a partial reading) scored 0.649 (50/77) on explicit holes with four code values set by sense: 168 hope (7x; Lasry hold), 116 can (5x; Lasry brought), 334 what (2x), 227 new (2x; Lasry's plaintext has NEW). Counting the 16 words as holes gives 0.597 (46/77; 0.494 plain); without 227, which Lasry's plaintext carries, also 0.597. Under the bar, with code holes (85 tokens, 58 distinct) in most sentences. Lasry's own plaintext (HOLD, BROUGHT) does not read at those places either. Blockers: no-key-material (the open three-digit codes; Lasry's key lacks them) and needs-physical-access (Eric Sams's 1976 decipherment, Bodleian / Ian Roy papers)."
    }
   ]
  }

@@ -760,3 +760,13 @@ New values: `zub` = alla, `3` = h confirmed, `ʒ` = y and `⊤` = x probable. De
 - [x] key-rebuild: crib alignment gave 49 confirmed code values and probable alphabet signs (key_codes.tsv), audited for conflicts; R9634 line-by-line reading added ɋ = r, plural z, yob/xep/xu and the null groups after Ꮒ (key_1522_r9634.tsv)
 - [x] retry: R9656 f. 334 re-read in 1524 notation (2026-09-21) and regraded with the nulls and R9634 values (61%, 2026-10-02); R9634 transcribed and read, its unread groups retried against the R9645 values (71%); R9646 retried (nulls, oviese; 80%); R9649 measured (100%); R9645 re-transcribed in the R9634 notation and regraded (73%), all 2026-10-02
 - [x] retry (22 Oct 2026, b13): R9634, R9645, R9646, R9656 re-read on 1-4x crops, f. 335r re-enhanced, the lopehurtado1523 look-alike lessons tried; label corrections and readings in texts/; none reads
+
+## 23 Oct 2026 — verify sweep (reading audit v2): R9649 kept read
+- Listed in `research/reading_audit/recheck.txt` as "read, scores 0.51". That figure was `read_r9649.md` as a whole,
+  sign tables and evidence table included. The running reading alone (the letter as enciphered, clear and cipher runs
+  together) scores **0.933 plain, 1.0 on explicit holes** (15 sentences; `research/reading_audit/v2_score.py`). The
+  "..." at the end was the clear closing formula; it is now written out from f. 266r ("Guarde nuestro señor y
+  acreciente la muy real persona y estado de V. Mt.").
+- The three cipher runs were aligned again word for word with the clerk's clear version on f. 268 (DECODE images
+  IMG_R9649_I45434_P1 and P3, main checkout `img/`): every word of the reading is carried by both; no word supplied. The
+  probable sign values (ti, ϭ, ♀, ⅋, ƀ, looped y) rest on that clear version, not on sense alone. Kept read, grade B.
