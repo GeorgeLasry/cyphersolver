@@ -109,7 +109,6 @@ R4625 -3.191, R4645 -3.306, R4734 -2.902, R4736 -3.089 (every letter better than
 
 ## Remaining gaps
 - R3813 (7,997 tokens) and R3814 (2,054 tokens) decoded, not read (re-read 22 Oct, clean share 0.531 / 0.524) - blocker: not-attempted; readings built, the remaining [?] words need the x (vi/to/su/ta) and d (so/to) splits settled on the images, and about 25 runs with legible figures do not make words yet
-- (closed 22 Oct 2026) R3811, R3812, R3815, R4625, R4645, R4736 read (b06 re-read); unread runs inside them are listed in each reading's Notes - blocker: not-attempted (single occurrences, homophones of x and d)
 
 - All nine letters, residual garbled lines (listed per file in tr/PASS2_LOG.md; R3814 and R4645 Latin worst) - blocker: illegible; the checked second pass (21 Sept) fixed about 360 tokens; what remains is mostly ambiguous digit groupings, blots and overwritten digits where the image does not decide, and Latin/Italian passages
 - Latin passages - blocker: illegible; checked on the images in the second pass; the residual garble sits in run-together digit groups and blots. The alpha question is settled (21 Sept): the small upright α = sa (Salvius, salvus, caesaris, universal-, sachsen), a larger looped ℒ-form = m (#a-loop, 28 tokens split out on the images); in R3813's hand the two shapes are hard to separate
