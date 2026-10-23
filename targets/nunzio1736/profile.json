@@ -477,9 +477,9 @@
   "method_basis": "George Lasry's 2020 reconstructed key and segmented decipherment of Spagna 423 are attached to every DECODE record R179-R188 and R26; the project added 46 nomenclator values from context, which Lasry's key leaves blank.",
   "contribution": ["key extended or corrected", "catalogue correction", "transcription"],
   "class": "read in part",
-  "fraction_read": 0.777,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, re-read batch b04: tokens of the documents that read / all, non-null tokens of the DECODE transcriptions re-segmented by research/reading_audit/b04_seg.py: 5725 / 7366 (423/2-11 read; 423/1, 1641 tokens, decoded, not read). Before: 0.016 (423/3 only, reading audit). Withdrawn earlier: 0.953 (tokens valued).",
+  "fraction_read": 0.52,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "22 Oct 2026, re-read batch b04: tokens of the documents that read / all, non-null tokens of the DECODE transcriptions re-segmented by research/reading_audit/b04_seg.py: 5725 / 7366 (423/2-11 read; 423/1, 1641 tokens, decoded, not read). Before: 0.016 (423/3 only, reading audit). Withdrawn earlier: 0.953 (tokens valued). Revised the same day: 423/5 (0.20 clean sentences), 423/9 and 423/11 (0.47) were moved back to decoded, not read under the 0.60 rule; with 423/1 they hold about 48% of the re-segmented decode files, so about 0.52 of the tokens are in letters that read (estimated from the decode file sizes, not re-counted).",
   "verification": [
    "key confirms",
    "historical consistency"
