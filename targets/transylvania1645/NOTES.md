@@ -68,8 +68,9 @@ fraction_read 0.59 (estimated; R4938 and R4939 untranscribed).
 
 - R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026): 130 letters (6.7%) on look-alike alternates, mostly t on g-shaped figures, plus five [?words] and two unread runs (l. 9, l. 16) - blocker: illegible; the DECODE scan (1,704 px, no larger file) does not separate the hand's g and q at 3x, and no contemporary or printed text confirms the choices
 - R4937 l. 3 run after 'megsegni' and the end of l. 13 - blocker: illegible; decode to letter strings that are not words, checked at 2.2x
-- R4938 (1647, short cipher insertions) and R4939 (1648, two pages of cipher in a script unlike the family hand) - blocker: not-attempted; images in hand, not transcribed
-Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or uninspected (R4938, R4939), with many spans not attempted. These are NOT established outside blockers; continue work. R4940 still requires prior-art comparison and inclusion in the eventual group writeup. No percentage claimed for the group.
+- R4938 (1647): three cipher spans (54 letters) decoded with the family key 23 Oct 2026; one word ('ailunkker') unread - blocker: too-short (occurs once). The clear letter around the spans is not transcribed (clear text, not a cipher gap).
+- R4939 (1648): read 23 Oct 2026 (r2h); lines 03-09 keep about 12 unread words - blocker: illegible (figures decode to non-words with every look-alike pair tried, 3x crops of the 1,704-px scan; no printed text).
+Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not read (illegible look-alikes); R4938's spans decoded, one word too short. No gap is left not-attempted (23 Oct 2026). R4939 is a different cipher (own key and hand): under the one-key rule it should become its own target before any write-up.
 
 ## Escalation
 - [x] siblings: R4936, R4937, R4940, R4942 read with one family key (23 Oct 2026)
@@ -77,7 +78,7 @@ Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or
 - [x] known-keys: the family key (shared-key-hypothesis.json) applied unchanged
 - [x] print: Lukinich 1908 (both instalments), Szilágyi 1885 (Linz), Erdély és az északkeleti háború I grepped; no edition
 - [x] key-rebuild: not needed; the transcription was redone instead
-- [x] retry: R4936 re-transcribed and read; R4937, R4942 transcribed in full and read (23 Oct 2026); R4938, R4939 still to do
+- [x] retry: R4936 re-transcribed and read; R4937, R4942 transcribed in full and read (23 Oct 2026); R4938 spans decoded and R4939 broken and read (23 Oct 2026, r2h)
 
 ## Next work (earlier list)
 
@@ -100,3 +101,22 @@ Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or
 - Result: R4936 `decoded, not read`, reading kept as a partial reading; fraction_read 0.59 -> 0.22 (estimated:
   R4937 869 + R4942 252 + R4940 23 of about 5,250 letters). A sharper image of Keresdi_Bethlen_14 (archive access)
   would settle g/q and could restore it.
+
+## 23 Oct 2026 — r2h: R4938 and R4939 worked (`R4939_reread_log.md`)
+- **R4939 read** (grade B). Every image opened (P1-P2 cipher, P3 clear address "Magnificis Francisco Betthlen de Keresd
+  ... ac Andreae Klobusiczki ... ad moderna comitia Reipub. Poloniae legatis"); no DECODE documents or comments; the
+  Erdély és az északkeleti háború I edition prints the envoys' October 1648 reports, not this letter. The family key
+  gives nothing: R4939 is **a different simple substitution in a different hand**. Transcribed (`R4939-transcription.txt`,
+  1,631 letters) and broken ciphertext-only by annealing (`research/reading_audit/r2h_r4939_anneal.py`, hu-modern;
+  key `R4939_key.md`); 50 look-alike labels corrected on 3x crops (`R4939_corrections.tsv`). Reading `R4939_reading.md`,
+  English `R4939_en.md`: the brothers write that their father György I Rákóczi is dying ("az doctor itileti szerent is
+  eletehez ... semmi ... ninc"), that he did not want the Polish crown for himself, that seeking the principality for
+  Zsigmond now would endanger the country "foe nekul", and bind Bethlen and Klobusiczky to promote "oeczem uram
+  promotioiat" (Zsigmond's Polish candidacy), money to be spent on it. Explicit holes 0.75 (18/24); look-alike letters
+  16/1,449 = 1.1%. Lines 03-09 keep unread groups (illegible).
+- **R4938**: a clear letter of 24 Apr 1647 with three cipher spans on P2 (54 letters) in the family hand, decoded with the
+  family key unchanged: "az Rakoczi Sigmon", "az nekunk [...] volna", "mi [?nevunkre] forogion"; a later pencil gloss
+  agrees. Fragments, not counted as a reading; one word too short to settle.
+- **R4936's g/q**: not settled. R4938's spans contain no t, so they cannot test the g/q choice; R4939's hand separates g
+  and q on scans of the same width, so the limit is R4936's hand. Blocker unchanged (illegible).
+- fraction_read 0.22 -> 0.58 (measured letters: R4937 + R4942 + R4940 + R4939 of all six transcriptions).

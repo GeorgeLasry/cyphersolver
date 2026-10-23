@@ -1,6 +1,6 @@
 # A Bavarian servant to his duke, and a report on the Pressburg talks, c. 1533–34 (BayHStA KAA 4591 ff.262–263, DECODE R9416)
 
-Status: in progress — f.263 is a working decipherment beyond recto lines 11-16; the hand re-keying of the rest (the retry step) is still to do.
+Status: in progress — f.263 now has a partial reading of the whole leaf (23 Oct 2026, r2h), kept decoded, not read beyond recto lines 11-16 (look-alike letters 3.9% unconfirmed); no write-up update yet.
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the f. 262 gloss reads on page B but not on page A ("..." and [?] in most lines), so f. 262 is *decoded, not read*. The f. 263 entry counts only recto lines 11-16 (excerpt note); fraction_read 0.06 unchanged.
 
 
@@ -73,10 +73,31 @@ Measured: `signstream.py` → `r9416/signs_f263.txt`, 3,313 transcription codes 
 doubtful signs included; the 3,150 above is the count before the v2 split). `mk_validation.py` aligns the hand-keyed
 lines 11-16 sign by sign (225 signs, 199 read; 6.0% of f.263 read clean, a lower bound) and writes `validation.tsv`.
 
+**23 Oct 2026, r2h (REREAD_BRIEF; `r9416/f263_reread_log.md`): f. 263 re-keyed in full, kept decoded, not read.**
+- The f. 262 key was tried on f. 263 and does not apply: on the full-resolution images the two leaves use different
+  sign sets (f. 262 figure-eight g, ♀/9 e, triangle d; f. 263 open square n, daggers, `io`, triangle f).
+- f. 263 has its own contemporary interlinear decipherment, faint, over recto lines 1-12 and the last verso lines (not
+  only the first two lines): `r9416/f263_gloss.txt`. It writes "fg" over the hourglass X (= E. F. G.), "Khö" over the
+  barred T (the King, by the context Zápolya), "Ferd" over g.
+- Every line (recto 39, verso 43) read on its crop from the v2 labels decoded with the extended hand key
+  (`r9416/f263_key.md`, `research/reading_audit/r2h_dec263.py`): `r9416/f263_reading.md`, English `r9416/f263_en.md`.
+  New: K serves k and b, so the old "Kreekurg/Krakau" is **Bresburg** (r22, r24, v36); the embassy came "mit vij scheffe";
+  "Emrich Besche" offers tribute "und darzu das ganz widisch lannt, welches doch nit sein ist" and is to have [?hundert]
+  tausent tucaten; on the verso the King dispatches Gritti, the writer (always called to the King's negotiations) has
+  both dukes included through an article in [Ω]'s instruction, the commissioners are recalled from Pressburg; the last
+  line is **"datm ofen den 12 marcij"** (Buda, 12 March, the month in clear).
+- Score (body): explicit holes **0.775 (55/71)**, plain 0.465. Look-alike letters: 117 of 2,738 (4.2%) rest on the
+  second value of a multi-valued sign chosen by the word (z e/s, b d/l, p b/w, K k/b), 108 (3.9%) outside the glossed
+  lines (`research/reading_audit/r2h_lookalike263.py`); spot checks do not separate the e and s daggers consistently and b
+  is one shape for d and l. Above the 3% limit with nothing to confirm them, so the leaf beyond recto 11-16 stays
+  *decoded, not read*; fraction_read 0.352 -> 0.353 (measured counts).
+
+Closed 23 Oct 2026: f.263 person codes "der d", "der g", "der h" from the gloss (X = E. F. G., T = Khö. the King, g = Ferd.); +L and Ω stay open (below).
+
 ## Remaining gaps
 
-- f.263 clean reading beyond recto lines 11-16 - blocker: not-attempted; paused 21 Sept 2026 (workable): v2 re-keyed (Pressburg talks read throughout); one sign serves ch but the annealer gives it s ("auss"=auch) — needs a digraph value set by hand. 30 Sept 2026: recto lines 11-16 read clean by hand (`r9416/reading_p3_11-16.txt`; z split into e and a two-bar s, b into d and l); the rest still to do the same way.
-- f.263 person codes "der d", "der g", "der h" - blocker: no-key-material; probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once
+- f.263 beyond recto lines 11-16: letters on the multi-valued signs (b d/l, z e/s, p b/w, K k/b) chosen by sense, 3.9% of the reading's letters - blocker: no-key-material; 23 Oct 2026 (r2h) the whole leaf was re-keyed line by line on the full-resolution image (`r9416/f263_reading.md`, 0.775 explicit-hole share), but the contemporary gloss covers only recto 1-12 and the last verso lines and there is no print to confirm the rest.
+- f.263 codes +L (6x, beside Ferd.) and Ω (7x), the dotted-circle cluster (r12, r21, r34), and the groups r08-r09, v27-v28, v38-v40 - blocker: no-key-material; no gloss over them, values tried with the extended key 23 Oct 2026.
 - f.262 code signs X (3x), ⊼ (2x) and a G-sign (2x), the first group of A04, the end of A03 and one sign in B01 - blocker: no-key-material; no gloss over them (the gloss skips the B09 G and the B12 X); the rest of f. 262 is read from its signs, sign-label transcription `r9416/f262_signs.txt` (23 Oct 2026). Page B B08-B15 checked sign by sign 23 Oct 2026 (closed).
 
 ## Escalation
@@ -86,7 +107,7 @@ lines 11-16 sign by sign (225 signs, 199 read; 6.0% of f.263 read clean, a lower
 - [x] known-keys: the volume's keys do not fit either leaf
 - [x] print: web search for KAA 4591 / the Pressburg talks report found no edition
 - [x] key-rebuild: constrained annealing with de-1500s (first run); v2 look-alike split; lines 11-16 re-keyed by hand
-- [ ] retry: the rest of f.263 still to re-key by hand as lines 11-16 were (workable)
+- [x] retry: 23 Oct 2026 (r2h) the rest of f.263 re-keyed line by line on the full-resolution image with the extended key and the newly transcribed gloss (`r9416/f263_reading.md`); the f. 262 key tried and ruled out (different sign set)
 
 ## Assumptions for George's review
 

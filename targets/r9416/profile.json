@@ -145,7 +145,11 @@
   {"date": "2026-10-23", "kind": "access", "what": "Re-read (REREAD_BRIEF, batch b32): DECODE R9416 fetched logged in (4 images, no attachment); f. 262 pages turned, deskewed and cut into one full-resolution crop per cipher line, with the faint gloss in the same crop.", "result": "worked"},
   {"date": "2026-10-23", "kind": "key from source", "what": "f. 262 key rebuilt letter for letter from the contemporary interlinear decipherment of page B (B01-B07 aligned sign by sign): simple substitution with homophones (a, e, u, b) and code signs; # = ss (dermassen, diß), ƛ = n (dan), x = i found on page A; X, ⊼ and a G-sign unidentified (r9416/f262_key.md).", "result": "worked"},
   {"date": "2026-10-23", "kind": "reading", "what": "f. 262 page A read from its signs, all 25 lines including the unglossed A09-A11 (Minckwitz, Silesia, the Italian and Spanish foot); six gloss misreadings corrected from the figures; page B from the decipherment. r9416/f262_reading.md and _en.md; score 0.852 (23/27) on explicit holes, 0.444 plain; look-alike letters ~2%. Relabelled read (grade B).", "result": "worked"},
-  {"date": "2026-10-23", "kind": "transcription", "what": "Verify sweep (reading audit v2): f. 262 (both pages, 40 cipher lines) transcribed sign by sign from IMG_R9416_I44531_P1/P2 in full-resolution strips (r9416/f262_signs.txt, 1,498 signs) and re-decoded with the f262 key (research/reading_audit/v2_r9416_f262_dec.py). Word-by-word alignment with f262_reading.md changed 17 words to the signs' reading (A02 zuziehen, A03 unter, A07 bot, A08 'es sein solt', A10 polen, A12 italische, A18 wolt, A21 gestolen, A23 verner, A24 mag, B05 guldin, B14 unterteniglich ...) and added the code signs the gloss skips (B09 [G], B12 [X]) and 'her' (B12). Reading body 0.852 -> 0.963 on explicit holes (0.481 plain). Kept read, grade B.", "result": "worked", "technique": ["language-model scoring"]}
+  {"date": "2026-10-23", "kind": "transcription", "what": "Verify sweep (reading audit v2): f. 262 (both pages, 40 cipher lines) transcribed sign by sign from IMG_R9416_I44531_P1/P2 in full-resolution strips (r9416/f262_signs.txt, 1,498 signs) and re-decoded with the f262 key (research/reading_audit/v2_r9416_f262_dec.py). Word-by-word alignment with f262_reading.md changed 17 words to the signs' reading (A02 zuziehen, A03 unter, A07 bot, A08 'es sein solt', A10 polen, A12 italische, A18 wolt, A21 gestolen, A23 verner, A24 mag, B05 guldin, B14 unterteniglich ...) and added the code signs the gloss skips (B09 [G], B12 [X]) and 'her' (B12). Reading body 0.852 -> 0.963 on explicit holes (0.481 plain). Kept read, grade B.", "result": "worked", "technique": ["language-model scoring"]},
+  {"date": "2026-10-23", "kind": "hypothesis", "what": "r2h: the f. 262 key (rebuilt from that leaf's contemporary decipherment) tried on f. 263. The two leaves were compared on the full-resolution DECODE images: different sign sets (f. 262 figure-eight g, ♀/9 e, triangle d; f. 263 open-square n, daggers, io, triangle f). The f. 262 key gives nothing on f. 263.", "result": "ruled out", "technique": ["key matching"]},
+  {"date": "2026-10-23", "kind": "access", "what": "r2h: DECODE images P3/P4 (3468 x 4624, the record's full resolution; no attachment or comment on R9416) cut into per-line crops, turned 180 deg. A faint contemporary interlinear decipherment stands over recto lines 1-12 and the last verso lines, not only the first two lines; transcribed as far as legible (r9416/f263_gloss.txt). It writes fg over the hourglass X, Khö over the barred T, Ferd over g.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "reading", "what": "r2h: f. 263 read line by line (recto 39 + verso 43 lines) from the v2 labels decoded with the extended hand key (r9416/f263_key.md; research/reading_audit/r2h_dec263.py), each line checked on its crop: K serves k and b (the old 'Kreekurg/Krakau' is Bresburg, r22/r24/v36), θ = d/t, Y = ll; 'mit vij scheffe', 'Emrich Besche', 'widisch lannt, welches doch nit sein ist', Gritti dispatched, an article for the King's allies in [Ω]'s instruction, commissioners recalled from Pressburg; last line 'datm ofen den 12 marcij' (Buda, 12 March). r9416/f263_reading.md, f263_en.md, f263_reread_log.md.", "result": "partial", "technique": ["manual reconstruction", "contextual inference"]},
+  {"date": "2026-10-23", "kind": "verification", "what": "r2h: v2_score.py on the reading body: plain 0.465 (33/71), explicit holes 0.775 (55/71). Look-alike count (research/reading_audit/r2h_lookalike263.py, reading aligned word by word with the decode): 117 of 2,738 letters (4.2%) on the second value of a multi-valued sign (z e/s 43, b d/l 35, p b/w 21, dagger o/s 8, o/e 6, K k/b 3), 108 (3.9%) outside the glossed lines; image spot checks do not separate the e and s daggers consistently. Above the 3% limit: f. 263 beyond ll. 11-16 kept decoded, not read; fraction_read 0.352 -> 0.353 (measured counts).", "result": "partial", "technique": ["language-model scoring"]}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "de-1500s", "file": "validation.tsv", "tokens": 199, "types": 25, "tokens_per_type": 7.96, "score": -2.667, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 13% of read tokens differ from their type's commonest value"}, 
   "method": "key recovered from ciphertext-only",
@@ -157,21 +161,21 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.352,
+  "fraction_read": 0.353,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Re-read 23 Oct 2026 (batch b32): f. 262 reads in full (r9416/f262_reading.md; about 1,495 signs, counted as the letters and code signs of its reading, since the cipher is letter for letter and its signs were read but not saved as labels) plus the 199 clean codes of f. 263 recto ll. 11-16, over 1,495 + 3,313: 1,694 / 4,808 = 0.352. The rest of f. 263 is still a working decrypt. 23 Oct 2026 (verify sweep v2): f. 262 now has a sign-label transcription (r9416/f262_signs.txt), 1,498 signs measured against the 1,495 estimated; fraction_read unchanged at 0.352.",
+  "fraction_read_source": "Re-read 23 Oct 2026 (batch b32): f. 262 reads in full plus the 199 clean codes of f. 263 recto ll. 11-16. 23 Oct 2026 (verify sweep v2): f. 262 has a sign-label transcription, 1,498 signs measured. 23 Oct 2026 (r2h): (1,498 + 199) / (1,498 + 3,313) = 1,697 / 4,811 = 0.353; the new whole-leaf reading of f. 263 is not counted (look-alike letters 3.9% unconfirmed, above the 3% limit).",
   "verification": ["contemporary decipherment", "historical consistency"],
   "notes": "f.263: running German with local errors (working decrypt), recto lines 11-16 deciphered clean by hand (30 Sept 2026); codes der d / der g / der h are persons. f.262: the gloss is faint and only partly transcribed. 22 Oct 2026, reading audit: f. 262 decoded, not read (page A gloss faint); the f. 263 entry counts only recto ll. 11-16 (excerpt note). Claim unchanged. 23 Oct 2026 (batch b32): f. 262 read from its signs (page A) and its decipherment (page B), grade B.",
   "gaps": [
    {
-    "item": "f.263 clean reading beyond recto lines 11-16",
-    "blocker": "not-attempted",
-    "detail": "re-key the v2 transcription by hand as done for lines 11-16; one sign serves ch but the annealer gives it s"
+    "item": "f.263 beyond recto lines 11-16: letters on the multi-valued signs (b d/l, z e/s, p b/w, K k/b) chosen by sense, 3.9% of the reading's letters",
+    "blocker": "no-key-material",
+    "detail": "23 Oct 2026 (r2h): whole leaf read in part line by line on the full-resolution image (r9416/f263_reading.md, 0.775 explicit-hole share); the contemporary gloss covers only recto 1-12 and the last verso lines, so nothing confirms the sense-chosen letters of recto 13-39 and verso 1-40; no print"
    },
    {
-    "item": "f.263 person codes der d, der g, der h",
+    "item": "f.263 codes +L (6x, always beside Ferd.) and Ω (7x, a lord with an instruction), the dotted-circle cluster (r12, r21, r34), and the groups r08-r09, v27-v28, v38-v40",
     "blocker": "no-key-material",
-    "detail": "probably Ferdinand, Gritti's party, the Hungarian king; [Ferd.] read from the gloss once"
+    "detail": "no gloss over them; values tried with the extended key 23 Oct 2026. X = E. F. G., T = Khö. (the King), g = Ferd. are now identified from the gloss"
    },
    {
     "item": "f.262 code signs X (3x), ⊼ (2x) and a G-sign (2x), and the unread first group of A04, the end of A03 and one sign in B01",
@@ -212,11 +216,13 @@
     ],
     "decryption": [
      "r9416/decrypt_f263.txt",
-     "r9416/reading_p3_11-16.txt"
+     "r9416/reading_p3_11-16.txt",
+     "r9416/f263_reading.md",
+     "r9416/f263_gloss.txt"
     ],
     "summary": "A Bavarian agent's report on the Pressburg negotiations between 'beden kunigen' (Ferdinand and John Zápolya), a Turkish embassy, Imre Czibak's offer of tribute to the Sultan and Alvise Gritti's dispatch, so c. 1533-34. Broken ciphertext-only by constrained annealing: decrypt_f263.txt is the solver's working decrypt of the whole leaf (local errors, before the look-alike split); recto lines 11-16 are re-keyed by hand and checked on the image (reading_p3_11-16.txt).",
     "language": "de",
-    "note": "Excerpt only: recto lines 11-16 are read (reading_p3_11-16.txt, 199 of 3,313 codes); the rest of f. 263 is a working decrypt, not counted (reading audit, 22 Oct 2026)."
+    "note": "Excerpt only: recto lines 11-16 are counted as read (reading_p3_11-16.txt, 199 of 3,313 codes). 23 Oct 2026 (r2h): the whole leaf now has a partial reading, r9416/f263_reading.md (English f263_en.md; key f263_key.md; log f263_reread_log.md), every line checked on the full-resolution image, with the faint contemporary gloss over recto 1-12 and the last verso lines transcribed (f263_gloss.txt; it names three codes: fg = E. F. G., Khö = the King, Ferd). Explicit-hole share 0.775 (55/71), plain 0.465, but 117 of 2,738 letters (4.2%; 3.9% outside the glossed lines) rest on the second value of a multi-valued sign chosen by the word (b d/l, z e/s, p b/w, K k/b), above the 3% look-alike limit with no contemporary text to confirm them: the leaf beyond lines 11-16 stays decoded, not read. The report is dated in its last line: Datum Ofen (Buda), 12 March."
    },
    {
     "doc": "R9416",

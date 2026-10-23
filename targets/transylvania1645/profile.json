@@ -104,42 +104,49 @@
    "shelfmark": "Romanian National Archives, Cluj: Keresdi_Bethlen_15-02",
    "year": 1647,
    "country": "unknown",
-   "language": "unknown",
+   "language": "Hungarian",
    "cleartext_in_document": "unknown",
    "plaintext": {
     "location": "unknown"
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "unknown"
+    "tokens": 54,
+    "unit": "letters",
+    "file": "R4938-transcription.txt",
+    "measured": true
    },
    "transcription": {
-    "by": "unknown",
+    "by": "llm from images",
     "source": "https://de-crypt.org/decrypt-web/RecordsView/4938",
-    "notes": "Images downloaded; not yet fully transcribed."
+    "notes": "The three cipher spans on image P2 transcribed 23 Oct 2026 (r2h); the clear letter around them (P1-P4) not transcribed. Family hand; a later pencil gloss over the spans.",
+    "image_quality": "fair"
    },
-   "read": "not read"
+   "read": "read in part"
   },
   {
    "id": "R4939",
    "shelfmark": "Romanian National Archives, Cluj: Keresdi_Bethlen_15-03",
    "year": 1648,
    "country": "unknown",
-   "language": "unknown",
+   "language": "Hungarian",
    "cleartext_in_document": "unknown",
    "plaintext": {
     "location": "unknown"
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "unknown"
+    "tokens": 1631,
+    "unit": "letters",
+    "file": "R4939-transcription.txt",
+    "measured": true
    },
    "transcription": {
-    "by": "unknown",
+    "by": "llm from images",
     "source": "https://de-crypt.org/decrypt-web/RecordsView/4939",
-    "notes": "Images downloaded; not yet fully transcribed."
+    "notes": "Transcribed letter by letter 23 Oct 2026 (r2h) from the DECODE images P1-P2 at 2-3x; 50 look-alike labels corrected on the crops (R4939_corrections.tsv). A different cipher and hand from the family of R4936/R4940.",
+    "image_quality": "fair",
+    "corrections": 50
    },
-   "read": "not read"
+   "read": "read"
   }
  ],
  "system": {
@@ -314,6 +321,40 @@
    "what": "Verify sweep (reading audit v2): R4936's look-alike letters checked. R4936_align.tsv: 130 letters on the other member of a pair (g=t 114, q=u 6, c=y 4, g=g 3, h/a/n 1 each), 6.7% of the reading. g- and q-shaped figures compared on IMG_R4936_I28640_P1 at 3x (lines 1-2, 4-5): not separable at the scan's resolution, no larger DECODE file, no contemporary or printed decipherment. Words carrying them counted as holes (research/reading_audit/v2_lookalike_holes.py, v2_score.py): 0.147 explicit-hole share against 0.941 as published. Demoted to decoded, not read; fraction_read re-measured.",
    "result": "failed",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "r2h: R4938 (4 images) and R4939 (3 images) opened at full DECODE resolution (1,704 px); no documents, comments or associated records on either record. R4939 P3 is the clear address to Ferenc Bethlen and András Klobusiczky, envoys to the Polish election diet; its last page has a clear date (Alba, [?9] 1648) and two signatures. Print checked: Erdély és az északkeleti háború I prints the envoys' October 1648 reports, not this letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "sibling key",
+   "what": "r2h: the family key (shared-key-hypothesis.json) tried on R4939's first page: no Hungarian; R4939 is a different alphabet and hand.",
+   "result": "ruled out",
+   "technique": ["key matching"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "solver",
+   "what": "r2h: R4939 transcribed letter by letter (R4939-transcription.txt, 1,631 letters) and broken ciphertext-only by injective annealing with word divisions (research/reading_audit/r2h_r4939_anneal.py, hu-modern 5-gram, 10 restarts): 'kivantuk volna ... oervendeteseb hirt irhattunc volna kegyelmeteknek az mi kegyelmes urunknac ...' at restart 1. Key R4939_key.md.",
+   "result": "worked",
+   "technique": ["simulated annealing", "language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "r2h: 50 look-alike labels corrected on 3x crops (q/g, r/t/s/x; R4939_corrections.tsv); reading R4939_reading.md and English R4939_en.md aligned word by word with the decode; 16 of 1,449 letters (1.1%) on look-alike alternates; v2_score explicit holes 0.75 (18/24). The father György I Rákóczi dying, Zsigmond's Polish candidacy to be promoted. Read, grade B.",
+   "result": "worked",
+   "technique": ["manual reconstruction", "contextual inference"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "r2h: R4938's three cipher spans (54 letters, image P2) transcribed and decoded with the family key unchanged: 'az Rakoczi Sigmon', 'az nekunk [...] volna', 'mi [?nevunkre] forogion'; a later pencil gloss agrees. Phrase fragments, one word unread (too-short): decoded, not read. Neither record settles R4936's g/q look-alikes.",
+   "result": "partial",
+   "technique": ["key matching"]
   }
  ],
  "outcome": {
@@ -334,9 +375,9 @@
   "verification": [
    "none"
   ],
-  "notes": "In progress: R4940 cipher expressions read, others unverified or untranscribed. No group completion or novelty claim. R4941 and R4933-R4935 split off 14 Oct 2026. 22 Oct 2026, reading audit: R4936, R4937, R4942 relabelled decoded, not read; only R4940's two spans read. 23 Oct 2026, re-read (b15): R4936, R4937 and R4942 transcribed in full from the images and read with the family key unchanged (readings, English and letter alignments in the folder); R4942's image 3 is a clear slip of the same text. R4938 (clear with short cipher insertions) and R4939 (two pages of cipher in a different-looking script) still not transcribed. 23 Oct 2026, verify sweep v2: R4936 back to decoded, not read (6.7% of its letters on look-alike alternates the scan cannot settle); R4937, R4942 and R4940 stay read.",
+  "notes": "In progress: R4940 cipher expressions read, others unverified or untranscribed. No group completion or novelty claim. R4941 and R4933-R4935 split off 14 Oct 2026. 22 Oct 2026, reading audit: R4936, R4937, R4942 relabelled decoded, not read; only R4940's two spans read. 23 Oct 2026, re-read (b15): R4936, R4937 and R4942 transcribed in full from the images and read with the family key unchanged (readings, English and letter alignments in the folder); R4942's image 3 is a clear slip of the same text. R4938 (clear with short cipher insertions) and R4939 (two pages of cipher in a different-looking script) still not transcribed. 23 Oct 2026, verify sweep v2: R4936 back to decoded, not read (6.7% of its letters on look-alike alternates the scan cannot settle); R4937, R4942 and R4940 stay read. 23 Oct 2026 (r2h): R4939 broken ciphertext-only (its own key) and read; R4938 spans decoded with the family key; neither settles R4936's g/q.",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "Hungarian letter substitution recovered by quadgram annealing on R4936 (hu-modern model); R4940 cipher spans (23 letters) read with the shared alphabet family; R4936, R4937 and R4942 transcribed in full and read with the same key on 23 Oct 2026 (R4942 also has a clear slip of its cipher block); R4938 and R4939 not yet transcribed.",
+  "method_basis": "Hungarian letter substitution recovered by quadgram annealing on R4936 (hu-modern model); R4940 cipher spans (23 letters) read with the shared alphabet family; R4936, R4937 and R4942 transcribed in full and read with the same key on 23 Oct 2026 (R4942 also has a clear slip of its cipher block); R4939 (a different simple substitution, another hand) broken ciphertext-only by annealing and read on 23 Oct 2026; R4938's three spans decoded with the family key unchanged.",
   "texts": [
    {
     "doc": "R4936",
@@ -397,26 +438,53 @@
      "date": "2026-10-23",
      "note": "Read 23 Oct 2026 (b15): every cipher passage transcribed (R4942-transcription.txt: the 7-line block at the head of p. 2 and two words lower down), decoded with the family key and aligned (R4942_align.tsv: 249 letters, 236 on their own value); the DECODE record's image 3 is a clear slip with the same words, signed 'Sigis Rakoczi' and noted by Bethlen (R4942_slip.txt), so the reading also rests on a contemporary clear text. docs/_check_reading.py cannot score this Hungarian: its 'hu' word list (modern Gutenberg) gives genuine printed 1645 letters from Szilagyi's Linz edition 0.07 and 0.0, and this reading 0.0; explicit holes only (b17_score.py HOLES=1) give 1.00 (4 of 4 sentences). Open: [?teliessegel] (one figure)."
     }
-   }
-  ],
-  "fraction_read": 0.22,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. R4940's two spans (23 cipher letters) read; R4936 (about 1,969 cipher letters in R4936-transcription.txt, clear text in braces left out), R4937 (549 in the extract) and R4942 (235) are decoded, not read; R4938-R4939 untranscribed. 23 of about 2,776 transcribed cipher letters, estimated (letters counted, not tokens; provisional transcriptions). 23 Oct 2026, re-read (b15): R4936 (1,956 cipher letters), R4937 (869), R4942 (252) and R4940 (23) read, 3,100 letters counted on our transcriptions; R4938 and R4939 untranscribed, estimated at about 2,150 letters from the images (R4939 two dense pages), so about 3,100 of 5,250 = 0.59, estimated. 23 Oct 2026, verify sweep v2: R4936 back to decoded, not read (6.7% of its letters on look-alike alternates), so its 1,956 letters drop out: R4937 869 + R4942 252 + R4940 23 = 1,144 of about 5,250 = 0.22, estimated.",
-  "gaps": [
-   {
-    "item": "R4938 (1647), short cipher insertions in a clear letter",
-    "blocker": "not-attempted",
-    "detail": "images in hand (4); not transcribed"
    },
    {
-    "item": "R4939 (1648), two pages of cipher in a script unlike the family hand",
-    "blocker": "not-attempted",
-    "detail": "images in hand (3); not transcribed; may be a different cipher"
+    "doc": "R4939",
+    "label": "R4939, the Rákóczi brothers to Ferenc Bethlen and András Klobusiczky at the Polish election diet, Alba, [?9 Oct] 1648",
+    "transcription": "R4939-transcription.txt",
+    "decryption": "R4939_reading.md",
+    "summary": "György I Rákóczi is dying; he had not sought the Polish crown for himself; the sons will not risk Transylvania by seeking the principality for Zsigmond now and bind the envoys to promote Zsigmond's candidacy for the Polish crown, spending money on it; letters will follow at the father's death. A different simple substitution from the family key, recovered ciphertext-only.",
+    "language": "hu",
+    "state": "read",
+    "reading": "R4939_reading.md",
+    "translation": "R4939_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "R4939_reading.md: key recovered ciphertext-only (R4939_key.md, annealing with hu-modern on the first-pass transcription), 50 look-alike labels corrected on 3x crops (q/g, r/t/s/x), reading aligned word by word with the decode of the corrected labels; 16 of 1,449 letters (1.1%) still rest on a look-alike alternate by sense; words not carried bracketed. v2_score explicit holes 0.75 (18/24), plain 0.0 (modern word list; period spelling). Lines 03-09 keep unread groups; from line 10 the sentences hold."
+    }
+   },
+   {
+    "doc": "R4938",
+    "label": "R4938, G. Rákóczi to Ferenc Bethlen, 24 Apr 1647 (three cipher spans in a clear letter)",
+    "transcription": "R4938-transcription.txt",
+    "decryption": "R4938_reading.md",
+    "summary": "Three short cipher spans (54 letters) in a clear letter, decoded with the family key unchanged: 'az Rakoczi Sigmon', 'az nekunk [...] volna', 'mi [?nevunkre] forogion'; a later pencil gloss agrees.",
+    "language": "hu",
+    "state": "decoded, not read",
+    "note": "23 Oct 2026 (r2h): the spans decode with the family key unchanged (h/k look-alike chosen by the word, 2 letters) and agree with a later pencil gloss, but they are phrase fragments of a clear letter not transcribed here; one word ('ailunkker') unread, occurring once (too-short). Not counted as a reading."
+   }
+  ],
+  "fraction_read": 0.58,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "22-23 Oct 2026: see earlier steps. 23 Oct 2026 (r2h): R4939 transcribed (1,631 cipher letters, measured) and read; R4938's cipher spans transcribed (54 letters, measured), decoded, not counted. Read: R4937 869 + R4942 252 + R4940 23 + R4939 1,631 = 2,775 of 1,956 + 869 + 252 + 23 + 1,631 + 54 = 4,785 cipher letters = 0.58, measured on our transcriptions.",
+  "gaps": [
+   {
+    "item": "R4939 lines 03-09: unread groups (about 12 words) before the letter's main sentences",
+    "blocker": "illegible",
+    "detail": "the figures decode to strings that are not words even with the hand's look-alike pairs tried (23 Oct 2026, 3x crops of the 1,704-px scan); no contemporary or printed text"
+   },
+   {
+    "item": "R4938 one cipher word ('ailunkker', S2)",
+    "blocker": "too-short",
+    "detail": "54 cipher letters in three spans; the word occurs once; the family key otherwise decodes the spans unchanged (23 Oct 2026)"
    },
    {
     "item": "R4936 (decoded, not read): 130 letters (114 of them t on a g-shaped figure) rest on the other member of a look-alike pair (g/q/u, c/e, h/r, i/n, a/v), plus five [?words] and two [...] runs",
     "blocker": "illegible",
-    "detail": "the DECODE scan (1,704 px wide, no larger file) does not separate the hand's g and q at 3x; no contemporary or printed decipherment confirms the choices (verify sweep 23 Oct 2026)"
+    "detail": "the DECODE scan (1,704 px wide, no larger file) does not separate the hand's g and q at 3x; no contemporary or printed decipherment confirms the choices (verify sweep 23 Oct 2026). 23 Oct 2026 (r2h): R4938 and R4939 do not settle it (R4938's spans have no t; R4939 is another hand, whose g and q do separate at the same scan width)"
    },
    {
     "item": "R4937: the run after 'megsegni' (l. 3) and the end of l. 13",
