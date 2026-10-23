@@ -1,6 +1,39 @@
 # Salinas (London) and Ronquillo (Nijmegen) to Fuenmayor, 1676–78 — DECODE R966–R984, R1001
 
-Status: in progress
+Status: read in part (22 Oct 2026: all twenty letters read and translated, eighteen from their contemporary margins; holes left in R983 f. 1, R982, R984 and single words, each with an outside blocker)
+
+22 Oct 2026, later (re-read, batch ronq; REREAD_BRIEF.md): **all twenty letters read and translated.** For each
+letter the contemporary decipherment in the left margin was transcribed from the DECODE images (full-resolution
+crops; DECODE's margin transcription checked against them) and aligned word by word with the key decode, cut into
+words page by page (`spaced.py` -> `read/R*.dec.txt`). Readings in `read/R*_reading.md` (normalised Spanish, holes
+marked), English in `read/R*_en.md`, logs in `read/R*_reread_log.md`, label corrections in `read/R*_corrections.tsv`
+and corrected transcriptions in `txi/` (R966-R970, R973, R976, R977, R982, R984). Grades: A for R966, R968-R975,
+R978-R981, R1001; B for R967, R976, R977, R982, R983, R984. 23,463 of 23,463 groups are in letters that read.
+The tooling (`tx/`, `txi/R976`, `txi/R982`, `keyx.py`, `dec2.py`, `sense.py`, `em.py`, `mktx.py`) is the 5 Oct 2026
+push-to-95% work that sat uncommitted in the main checkout; it was copied here (`sense_vocab.pkl` is git-ignored and
+rebuilt by sense.py).
+
+Found on the way:
+- **R970 and R973 have a margin decipherment.** DECODE's transcriber put it in a #COMMENT block, so it was missed and
+  the two were called new readings. Only R982 and R984 are unmargined; they were read on the images with the key.
+- **R971 and R972 are one letter** (the seven images are pixel-identical), London 26 Jan 1677; R971's "1677Jan1" is
+  wrong. R980 and R981 differ.
+- Dates from the clear text: R968 is 6 Oct 1676 (not 8 Dec), R974 is The Hague 21 Sep 1676 (not 21 Dec), R978 is
+  10 Feb 1677 (not 20 Feb; signed by Bernardo Navarro for Ronquillo), R981 is 4 Mar 1677 (not 27 Jan).
+- DECODE's R977 transcription merges two f. 2 rows and drops one; R978's margin transcription misses a sentence;
+  R983 f. 1 has a margin DECODE never transcribed, faded beyond reading on the scan.
+- Code values read from the margins (entered in keyx.py where the group had no value; key coverage 93.6% -> 95.4%,
+  sense 83.3% -> 85.4% by dec2.py): ers jo, bes espera, 97 aunque, fos/for ningun-, 121 congreso,
+  120 congreso/cuidado (two values or two signs), do Lorena, dos Münster, fis negocio, fan oficio, bel favor, fa novedad,
+  143 porque, 100 algún, 122 conviene, 123 convenien-, bil forma, cil holande-, cep junta, 59 lu, 82 ir, K j, I i,
+  ▽ a, 67 ri (this volume), 51 ge, 12 c, 34 ex, es ja/je, X ju, 135 (me) parece, 139 plenipotencia, 140 particular,
+  154 Rey de Francia, 155 Rey de Inglaterra, 116 carta, in España, or Dinamarca, be estado, er Dios, 112 conde,
+  168 Su Majestad, 141 para que, dal mucho, dol medio, bo empeño, bu enemigo, bon fuerza, bin franceses, cu general,
+  90 ajuste, 99 armas, 104 batalla, 107 beneficio, 109 Bruselas, 173 suceso, 182 siempre, fes noticia, fol ocasión,
+  fel opinión, dun nuev-, cun (h)ech-, con haber, 126 correo, 175 secreto/a, 400/470/760 nulls; single places in the
+  logs. Conflicts: bi = ne and afectos/efect-; 163 keyed suecia but glossed razón; 170 S.M. Cesárea and Inglés;
+  11 consejo and inside "reflexiones".
+
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **all twenty letters are
 decoded, not read.** The Balbases key gives 88% of the groups a value, but `read/R*.txt` is unspaced decoder output
@@ -57,7 +90,7 @@ DECODE's transcribers used three conventions:
 Unread groups are almost all transcription noise ("?", "*", split groups). R982's transcription is the worst (full
 of "?"), and its reading is gist only.
 
-## What the four new readings say (gist)
+## What the four new readings say (gist, 21 Sept 2026; superseded by read/R*_reading.md)
 
 - **R970, Salinas, 15 Sept 1676.** "ya se habrá [sabido] el fatal suceso…". Salinas fears the blow will close
   "esta puerta". The discourses at the English court turn to a peace; the "progresos" on Fuenmayor's side move
@@ -75,19 +108,22 @@ of "?"), and its reading is gist only.
 ## Files
 
 `try.py` (the key plus additions), `seg.py` (segmenter), `read.py` (all twenty letters → `read/R*.txt`, each with
-DECODE's margin transcription where there is one).
+DECODE's margin transcription where there is one). 22 Oct 2026: `keyx.py` (key + sibling additions + em.py values),
+`mktx.py` (DOC -> `tx/`), `txi/` (image-corrected transcriptions), `dec2.py` + `sense.py` (decode and sense measure ->
+`read2/`), `spaced.py` (decode cut into words, page by page -> `read/R*.dec.txt`), `read/R*_reading.md`, `_en.md`,
+`_reread_log.md`, `_corrections.tsv`. Profile edits: `research/reading_audit/reread_ronq.py`.
 
 ## Remaining gaps
 
-- all twenty letters decoded, not read (unspaced decode, holes every few words; reading audit 22 Oct 2026) - blocker: not-attempted; space and build each letter into sentences with the margin decipherments re-read from the images, then translate
-- R970, R973, R982, R984 (unmargined letters) unread groups: R970 23%, R973 14%, R982 29%, R984 14% - blocker: not-attempted; residue is DECODE transcription noise ('?', '*', split groups); the images were not re-transcribed, so these four are read only for gist
-- ~12% of groups across the sixteen margined letters - blocker: not-attempted; transcription noise; margins give the sense, images not re-read
+- R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key
+- R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups (138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc) - blocker: open-codes; no margin on either letter and no gloss for these codes in the eighteen margins; R982 is a soft scan (4/7/9 not distinguishable)
+- single uncertain words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001 - blocker: illegible; margin faded or blotted at that word and the figures do not settle it
 
 ## Escalation
 
 - [x] siblings: all twenty letters of SEG 2559 taken; R1000 already decrypted on DECODE
-- [x] clear-pages: sixteen marginal decipherments checked against the key output
+- [x] clear-pages: eighteen margin decipherments transcribed from the images and aligned with the key decode (22 Oct 2026; R970 and R973 margins found in DECODE comments)
 - [x] known-keys: Balbases 1677 key (with hernannunez1674 additions) fits unchanged
 - [n/a] print: no printed edition of Fuenmayor's incoming letters is known from the sibling targets
-- [n/a] key-rebuild: the key reads every margined letter unchanged; the loss is in the transcriptions, not the key
-- [ ] retry: not done - re-transcribe the four unmargined letters from the images and rerun read.py
+- [x] key-rebuild: 22 Oct 2026, about 60 code values from the margins added to keyx.py (conflicting groups left as they were, listed above)
+- [x] retry: 22 Oct 2026, every letter built into sentences and translated; R982 and R984 re-transcribed from the images and read with the key (read/R*_reading.md, _en.md)

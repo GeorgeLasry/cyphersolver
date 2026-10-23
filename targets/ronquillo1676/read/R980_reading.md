@@ -1,0 +1,72 @@
+<!-- Reading of the ciphered passages, built 22 Oct 2026 by Claude Opus 5.5 (ronq batch): the key decode (read/R980.dec.txt, keyx.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's margin transcription checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+
+# R980, Ronquillo to Fuenmayor, Nijmegen, 27 Jan 1677
+
+⟨Doy a V.S. las gracias con todo el reconocimiento que debo a las noticias que se sirve de darme de lo que ahí se
+ofrece,⟩ y por ellas reconozco que los Príncipes de Brunswick y Obispo de Münster piensan ya de retirar la negociación
+de esa asamblea, según las largas que interponen sus ministros en juntarse. Yo llego a creer que no solo será por lo
+que toca a la proposición de imperiales, cuyo escozor me dice V.S. tienen muy presente, sino es más particularmente
+porque habrán entendido algo de que en Holanda se trata de hacer con Suecia una paz separada, lo cual es preciso les
+toque en lo más vivo, pues reconocerán de cuánto perjuicio les será esta novedad. Y así me afirmo más en este dictamen,
+cuanto veo la publicidad con que se habla ya en la materia, que no dudo habrá llegado a la noticia de V.S., pues hasta
+de Inglaterra me lo escriben a mí.
+
+Estas voces han disminuido mucho las que corrieron de suspensión de armas, y el discurso que V.S. hizo sobre este punto
+a Monsieur Amerongen es tan prudente que con mucha vanidad puedo asegurar me he valido de las mismas razones que V.S.
+apunta en las ocasiones que se han ofrecido hablar de la materia. Queda ya, como dije a V.S., con menos fuerza; pero yo
+creería que en el estado en que estamos en Flandes, tan miserable que excuso yo el repetirle la melancolía que le
+motivarán las cartas de Bruselas (que si a V.S. le sucede lo que a mí, podemos dar por muy bien empleado lo sucinto de
+ellas, a trueque de que con la mayor extensión no nos aumenten el desconsuelo), nos sería de gran beneficio el ajustar
+una suspensión de armas hasta fin de junio, y al contrario de sumo daño si hubiera de ser por cuatro años, como
+discurría Amerongen, por las razones que V.S. pondera y yo comprehendo. Pero por lo mismo que nosotros
+contradeciremos lo que nuestros enemigos desean, se valdrían ellos para no admitirla; y así me parece que este punto no
+podrá tener ajuste, y que será menester pensar solo en la guerra.
+
+Y volviendo a la paz separada que holandeses desean hacer con Suecia, que aunque en el congreso no se ha llegado a
+hablar abiertamente, es fijo que en La Haya se hará con grande ahínco, diré a V.S. que esta proposición ha sido hecha
+por los mismos suecos, añadiendo que en caso que el Rey de Francia no quisiese venir en ella, la ajustarían ellos por sí
+solos y se declararían contra el Cristianísimo. Es cierto que los holandeses anhelan como siempre por la paz con
+Suecia, diciendo que no hay otro remedio para la paz general sino compensando con las pérdidas de Suecia las nuestras
+en el País Bajo; pero al mismo paso que este ajuste nos podía ser de gran conveniencia haciéndose en una paz general,
+nos exponemos al precipicio si la de Suecia se hace separada, pues es fijo que perderemos los aliados del norte, que el
+Rey de Suecia no nos podrá ayudar, y que, teniéndolos tan cercanos a nuestros dominios, nos pueden hacer una mala burla
+tomando el partido de Francia, particularmente en coyuntura que son tan grandes las sumas que les debemos. Con que, si
+este negocio no sigue a la paz universal, encuentro muchos inconvenientes en entablarle ahora; con que debo suplicar a
+V.S. se sirva de participarme lo que ahí entendiere, para que esté prevenido cuando se llegare a hablar de este
+particular en el congreso.
+
+Todo ha sido boberías y batallar en borracheras cuanto hasta ahora se ha tratado en él, habiéndonos embarazado el
+tiempo el Conde de Kinsky con sus alemanadas, muy preciado de que venía con máximas y reflexiones italianas, con que la
+mayor parte del tiempo se ha gastado en componer sus pendencias. El punto del proyecto de la plenipotencia común está
+resuelto, y en la conferencia que tendremos mañana los aliados creo que vendrá aprobado por los enemigos; y no doy parte
+a V.S. de los reparos que se han ofrecido porque le enviaré copia de él cuando esté acabado de ajustar. Solo diré a V.S.
+que al paso que por nuestra parte se procura facilitar el acomodamiento de los preliminares, en que no puedo negar
+empleo mi mayor solicitud, dan a conocer franceses la poca gana que tienen de paz, cuyo dictamen le tienen ya
+descubierto; y aseguro a V.S. que todo ha sido menester para desvanecer las voces que nuestros enemigos habían
+esparcido, y habían hecho comprehender en todo el mundo, que nosotros no queríamos la paz, dilatando los medios que
+podían conducir a ella. Veremos lo que resulta de la conferencia de mañana, y de todo daré parte a V.S.
+
+## Notes
+
+- The margin decipherment runs beside every cipher line on ff. 1-6 and is written on beyond the last cipher line of
+  each page across the foot of the leaf (so each page's margin ends with the first words of the next page's cipher). It
+  was read from the images in full; DECODE's transcription garbles it ("Bransuse", "Jurarse", "ono remedio", "bovesias",
+  "Quinsgui").
+- Below the date on f. 6 a secretary adds in clear that, don Pedro being out of the house and the post leaving, he
+  signs for him; f. 7 is the address leaf (Nimega 27 de enero 1677, don Pedro Ronquillo).
+- f. 1, "no solo será por lo que toca a la proposición de imperiales": the margin's line is overwritten ("no solo será
+  por / ha ocasionado / lo que después a la / proposición"); the figures give "por lo que t-o-[al] a la [propos]ición
+  de [imperia]les", and the "no solo ... sino es más particularmente" frame of the next page decides it. "cuyo escozor
+  me dice V.S. tienen": margin "cuyo escozor me dice", key "...me d i el V.S. t in en".
+- "contra el Cristianísimo": margin "Xpmo" (abbreviation), key "contra l ... simo".
+- "boberías y batallar en borracheras": margin "bouerias / y batallar en bora/cheras", key "bovei a sy [104] r en
+  vorra[et]ras".
+- Code words confirmed by the margin (not in keyx.py): `99` = armas (2), `90` = ajuste/ajustar (4), `121` = congreso (2),
+  `140` = particular(mente) (3), `143` = porque (2), `cil` = holande(ses)/Holanda (3), `fa` = novedad, `dal` = mucho(s)
+  (2), `fis` = negocio(ación) (2), `dol` = medio (2: remedio, medios), `116` = carta, `109` = Bruselas, `107` = beneficio,
+  `154` = Rey de Francia, `182` = siempre, `139` = plenipotencia, `bu` = enemigo (3, "nuestros enemigos"), `bon` =
+  fuerza, `fol` = ocasión, `123` = convenien- (2: conveniencia, inconvenientes), `104` = batalla, `cu` = general (2),
+  `34` = ex (2: extensión, exponemos), `12` = c (dictamen, declararían, trueque). `135` stands where the margin has "me
+  parece" ("y así [eo 135] que este punto"), not "rey". `11` stands in "re-[11]-le-xiones" (reflexiones), against R974's
+  consejo: one of the two is a different figure.
+- Kinsky is the Imperial plenipotentiary at Nijmegen; Amerongen the Dutch envoy in Copenhagen.
