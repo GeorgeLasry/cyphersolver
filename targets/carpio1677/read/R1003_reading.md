@@ -2,7 +2,7 @@
 
 # R1003, Carpio to Fuenmayor, Rome, 11 Dec 1677
 
-Siendo ahora noticia muy sensible la del sitio de Friburgo, por las perniciosas consecuencias, pues si es preciso que
+Siendo ahora noticia muy sensible la del sitio de Friburgo, por las perniciosas consecuencias, pues siendo preciso que
 con este accidente se altere la planta de los cuarteles, habiendo de repasar el Rin el señor Duque de Lorena, pero a
 la consideración de V.S. [dejo] el miserable estado en que queda Flandes.
 

@@ -33,7 +33,12 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
    needs), `[…]` for unread, `[47]` for an unidentified code. **Before you finish, align each reading word by word with
    its decode (and the contemporary text) and bracket every word neither carries**: an unbracketed supplied word is an
    invented word (a spot check found "Il dict depuis" where the figures give "il depuis").
-4. **Stop** when the sentences hold (most sentences with at most one hole in ten words; `python docs/_check_reading.py
+4. **The bar, applied the same way to every document:** a document is `read` when a reader finds its sentences
+   coherent **and** its reading body (header and notes cut off) scores about 0.60 clean sentences or more on
+   `_check_reading.py`; below that it stays `decoded, not read`, with your reading kept as a partial reading and a note.
+   (Kept unread at 0.47-0.56 so far: matignon1586 f. 124r, fiesque1567 10 Sep 1569, smith1562 no. 15, nunzio1736
+   423/9, 423/11.)
+5. **Stop** when the sentences hold (most sentences with at most one hole in ten words; `python docs/_check_reading.py
    --file <reading>` as a pointer; your own reading is the test), or when the remaining breaks have an outside blocker
    (illegible, image not reachable, no key material) — name it.
 

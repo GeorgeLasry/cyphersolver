@@ -3,7 +3,7 @@
 # R1008, Carpio to Fuenmayor, Rome, 16 Oct 1677
 
 ⟨En los embarazos pendientes⟩ desta corte no hay novedad, pues el gobierno está firme en su dictamen, y yo he
-resuelto no moverme hasta que me lleguen las órdenes de Su Majestad para ejecutar lo que fuere servido resolver.
+resuelto no moverme hasta que me [?lleguen] las órdenes de Su Majestad para ejecutar lo que fuere servido resolver.
 
 ## Notes
 

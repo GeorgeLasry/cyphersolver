@@ -26,7 +26,7 @@ could sustain it [l. 15] […] the King of Navarre [45] [?his] enemies who want 
 
 For [l. 16] their argument may fail.
 
-For the rest, I can say that […] this army [l. 17] has not had better results, that it is not its fault; that on
+For the rest, I can say that […] this army [l. 17] has not had better [?results], that it is not its fault; that on
 the contrary [l. 18] nothing better could be done than to preserve it, as I have done, [l. 19] at little expense, in
 order to use it at the right season and on the occasions which [l. 20] [?present themselves] now.
 
@@ -34,7 +34,7 @@ As for the war, it can be made, and usefully, [l. 21] if [?only] the promise is 
 earmarked [l. 22] for it, to which the obstruction of the clergy is not contrary.
 
 But if [l. 23] His Majesty judges it better not to make it, and to have peace, so as to have it more
-[?honourable] [l. 24] and [?advantageous], it is when one must [47] […] [l. 25] make it recognised that one […],
+[?honourable] [l. 24] and [?advantageous], it is when one must [47] […] [l. 25] make it known that one […],
 and that it would be necessary to [l. 26] make greater efforts.
 
 I turn to you, as to all [?in] [l. 27] particular friend (*comme à tous [?en] particulier ami*), to give me your advice on this, as I know [l. 28] you can,

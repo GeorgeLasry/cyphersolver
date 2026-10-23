@@ -18,7 +18,7 @@ S.S.tà si governava con somma prudentia et che amava S.M.tà cordialmente, et c
 risoluta a dire et fare da dovero, potria sperare da S.S.tà ogni ragionevole aiuto. Procurai ancora di havere da
 S.M.tà qualche risolutione nel negotio {della tregua}; mi disse che non c'era cosa alcuna sin hora, et che
 attendeva a liberare qualche suo huomo di là, ma che la necessità lo stringeva, che non sapeva quello che faria, et
-che si trovava adosso tutto il peso {della christianità}, et che {per mantenimento della religione cattolica in
+che si trovava adosso tutto il peso {della christianità}, et che {per mantenimento la religione cattolica in
 Fiandra} haveva speso infinità di denari, che per mia {di Stato} poteva havere una gran parte di essa, se havesse
 voluto condescendere {a li} [...] così {de la religione}. Io li risposi quello che mi parve conveniente in questo
 caso al servitio di Dio, di S.M.tà et debito mio, nè per ciò potei haver altra risposta.

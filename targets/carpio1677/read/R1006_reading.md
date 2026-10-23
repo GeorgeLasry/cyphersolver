@@ -6,7 +6,7 @@
 que, persistiendo el Papa y sus ministros en no dar satisfacción, aguardo el parecer que sobre esta materia he
 pedido al señor gobernador de Milán, para con él y el de estos señores cardenales de nuestro partido tomar la última
 resolución que fuere del mayor servicio de Su Majestad. La armada y galeras de Francia, después de haberse mantenido
-algún tiempo sobre Catania y su costa, dicen que volvió la vuelta de [?Tolón] y [?Hyères], y las galeras muy
+algún tiempo sobre Catania y su costa, dicen que volvió [?la] vuelta de [?Tolón] y [?Hyères], y las galeras muy
 maltratadas.
 
 ## Notes

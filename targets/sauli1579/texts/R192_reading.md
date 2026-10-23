@@ -35,7 +35,7 @@ li piedi a S.S.tà di questo amorevole {avvertimento}, mostrando {che tal pratti
 Io strinsi {la prattica d'Inghilterra}, come ho scritto a V.S. Ill.ma, et mi riportai a la risolutione che le mandai
 già, qual fu risposta in scritto a Idiaquez, di che mi mandò hora il duplicato. Cercai, vedendo quasi la esclusione
 {dell'impresa generale}, {l'aiuto di 4 o ver 5 mila persone} con le altre provisioni necessarie, sendo che era stata
-data intentione a Mons. Nuntio; et altri dicono che {per il liberamento di Don Antonio li fu revocata tale
+data intentione a Mons. Nuntio; et altri dicono che {per il liberamento di Don Antonio li fu revocata tali
 intentione}, talchè, essendo diminuito assai {l'essercito di S.M.tà}, che non credo arrivi {a 5 in 6 mila persone et
 più}, et per questo {regno} ne ha bisogno d'una gran parte, si indussi il negotio ultimamente che S.M.tà mandaria
 {tutti li Italiani con artiglierie, armi et munitioni, vettovagliati et pagati per 4 mesi}, li quali alla {rassegna
@@ -70,13 +70,13 @@ impiegarsi in tutte quelle cose saranno in augumento {de la christianità}, come
 luogo per esso et non lo necessitaranno a tenere occupate {le sue forze per rimedio} del suo proprio; ma già vede
 V.S. Ill.ma che per {tali imprese}, et particolarmente {per quella d'Inghilterra}, il vero et diritto camino sarà
 stato et saria spianare {li stati di Fiandra}, aiutando S.S.tà S.M.tà per questo tanto largamente et liberalmente
-com'è questo che faccia {in una guerra} che ha tanti anni che si fa con {ostinatissimi spiriti per difendere la
+com'è questo che faccia {in una [?guerra]} che ha tanti anni che si fa con {ostinatissimi spiriti per difendere la
 religion cattolica Romana}, dopo che da {quelli stati} sarà tanto facile {il passaggio in Inghilterra}; et se V.S.
 Ill.ma considera il capitale {del denaro et forze} che ricercano {una impresa} tanto grande com'è quella che si
 propone, vedrà il [?bisogno] et straordinario {aiuto} che doveria offerirsi, [...] tanto la sollicita, et quanto
 lontano da questo va differendo a S.M.tà quello che sempre se gli era dato. Tuttavia, se a V.S. Ill.ma in nome di
 S.S.tà parerà che per hora non va fuor di proposito il mandar innanzi {l'aiuto che S.S.tà} ha cominciato {a dare a
-li cattolici d'Irlanda}, et giudicarà che questo potria ancora con il tempo servire {quasi per porti per
+li cattolici d'Irlanda}, et giudicarà che questo potria ancora con il tempo servire {quasi [?per] porti per
 Inghilterra}, torno a dire che S.M.tà {li offerisce li Italiani che li restano in Portogallo pagati} et al dì d'hoggi
 {imbarcati nel fiume di Lisbona} con {vettovaglie per 3 mesi et alcuni denari} di rispetto {per soccorrerli}, il
 quale s'intende {incaricandosi V.S. Ill.ma} per parte di S.S.tà {da Lisbona} {avanti di questa gente}; et non la

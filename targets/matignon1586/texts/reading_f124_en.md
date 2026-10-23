@@ -44,7 +44,7 @@ And [?although] [l. 3] Monsieur Forget is very [l. 4] [?necessary] to me here, n
 to [l. 5] deal with them about it, I have [l. 6] been forced to […] him with it, both for this business and
 [l. 7] so that, with the said sieur de Gourgues, [l. 8] he may borrow both money and cloth, as much as they can.
 
-For I [l. 9] see that there is no order [60] holding a muster of the foot, [l. 10] so as to be able to make them
+For I [l. 9] see [?that] there is no order [60] holding a muster of the foot, [l. 10] so as to be able to make them
 camp as they must [l. 11] at the first siege.
 
 Sire, [?I] wrote to you on the [l. 12] twenty-[?first], leaving Villeneuve [l. 13] d'Agenais. Since then I have
@@ -52,7 +52,7 @@ come to [?Tonneins], which the [l. 14] enemy have abandoned, [?and] I have left 
 crossing, and I have come into [l. 16] this town.
 
 And having had word from my said [l. 17] lord the Marshal that he [?is], with what he has [l. 18] taken,
-[?Castets], and at the latest […] [l. 19] Easter, I have resolved on my own judgment [l. 20] to go and attack
+[?Castets], and at the latest […] [l. 19] Easter, [?I] have resolved on my own judgment [l. 20] to [?go] and attack
 Sainte-Bazeille as soon as he [l. 21] has sent me five cannon and the powder [l. 22] and the shot I need, as he
 [l. 23] has [?told] me he would.
 

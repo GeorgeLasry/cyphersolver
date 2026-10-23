@@ -43,7 +43,7 @@ moien.
 
 Car [l. 16] leur argument peult faillir.
 
-Au reste ie puis dire que […] ceste armée [l. 17] n'a faict de meilleurs effects, qu'il n'i a poinct de sa faulte,
+Au reste ie puis dire que […] ceste armée [l. 17] n'a faict de meilleurs [?effects], qu'il n'i a poinct de sa faulte,
 qu'au contraire [l. 18] qu'il ne se pouvoit mieux faire que de la conserver, comme i'ai faict, [l. 19] avecque peu
 de despence, pour s'en servir à la saison et aux occasions qui [l. 20] [?s'offrent] maintenant.
 
@@ -51,7 +51,7 @@ Quand à la guerre, elle se peult faire, et utillemant, [l. 21] si [?tost] se ve
 deniers qui ont esté destin[l. 22]ez, à quoi l'empeschemant de ceux du clergé n'est poinct contraire.
 
 Mais si [l. 23] sa Maiesté iuge meilleur de ne le faire poinct, et d'avoir la paix, pour l'avoir plus [?honnorable]
-[l. 24] et [?advantageuse], c'est quand il fault [47] […] [l. 25] faire recongnoistre que l'on […], et qu'il
+[l. 24] et [?advantageuse], c'est quand il fault [47] […] [l. 25] faire congnoistre que l'on […], et qu'il
 seroit nécessaire de [l. 26] faire de plus grands effects.
 
 Ie recours à vous comme à tous [?en] [l. 27] particulier ami, pour me donner en cela vostre advis, ainsi que ie

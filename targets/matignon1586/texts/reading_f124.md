@@ -68,7 +68,7 @@ point de plus propre pour [l. 5] traicter de cela avec eulx, je me suis [l. 6] c
 pour ce faict que [l. 7] pour, avec ledict sieur de Gourgues, [l. 8] emprunter et argent et draps le plus qu'il
 pourront.
 
-Car je [l. 9] veoi qu'il n'y a ordre [60] faire monstre aux gens de pied, [l. 10] de les pouoir faire camper
+Car je [l. 9] veoi [?qu'il] n'y a ordre [60] faire monstre aux gens de pied, [l. 10] de les pouoir faire camper
 comme il fault qu'il [l. 11] facent au premier siège.
 
 Sire, [?je] vous escrivis du [l. 12] vingt [?uniesme], partant de Villeneufve [l. 13] d'Agenois. Depuis je suis
@@ -76,12 +76,12 @@ venu à [?Thonains], que les [l. 14] ennemis ont habandonné, [?et] j'ay laissé
 passaige, et suis venu en [l. 16] ceste ville.
 
 Et aiant eu advis de mondict [l. 17] sieur le mareschal qu'il [?est], avec ce qu'il a [l. 18] emporté,
-[?Castels], et au plus tard […] [l. 19] Pasques, je me suis par mon advis résolu [l. 20] d'aller attacquer
+[?Castels], et au plus tard […] [l. 19] Pasques, [?je] me suis par mon advis résolu [l. 20] [?d'aller] attacquer
 Saincte Basille sitost qu'il [l. 21] m'aura envoié cinq canons et la pouldre [l. 22] et les balles qui me sont
 nécessaires, comme il [l. 23] m'a [?mandé] qu'il feroit.
 
 Je [?seré] avec cela, [l. 24] et si je puis trouve[r] moien de faire [l. 25] monstre aux gens de guerre, que comme
-tost nous les [l. 26] porterons, ainsi qu'ils l'aient faict remparer et [l. 27] qu'il y ait bon nombre de gens de
+tost nous les [l. 26] porterons, ainsi qu'ils l'aient faict remparer et [l. 27] qu'il y ait bon nombre de gens [de]
 guerre [l. 28] dedans, comme il fault confesser que toutes leurs [l. 29] places en sont bien munies.
 
 Nous n'avons point [l. 30] encores nouvelles qu'on ait repassé la [?Dordogne], [l. 31] et estime qu'il soit
