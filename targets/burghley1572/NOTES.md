@@ -71,3 +71,7 @@ tests them.
 
 What would settle it: the Walsingham-Burghley cipher of 1570-73 (possibly among the cipher keys in TNA SP 106 or
 in BL Cotton/Harley), or the original letter if it carries a gloss.
+
+## 2026-10-23: lead from the profile mining
+
+Lead from research/patterns/DEEPER.md: Stafford's 1586 key tried on the two cipher groups (ʒ368, 45 □477ה ⌐□⌐418). One of 17 signs has a Stafford label; the groups are a figure code, not that letter alphabet. Ruled out.

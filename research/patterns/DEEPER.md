@@ -99,13 +99,13 @@ Attack steps only (solver, hypothesis, crib, sibling key, key from source, stati
 | simulated annealing | 187 | 20% | 10% | 68% | 34/50 |
 | contextual inference | 168 | 43% | 32% | 24% | 29/50 |
 | crib testing | 164 | 54% | 20% | 25% | 20/50 |
-| language-model scoring | 156 | 25% | 16% | 58% | 26/50 |
+| language-model scoring | 157 | 24% | 16% | 58% | 26/50 |
 | repeat/pattern analysis | 143 | 41% | 15% | 42% | 19/50 |
 | key-structure hypothesis | 135 | 43% | 20% | 34% | 18/50 |
 | plaintext matching | 113 | 56% | 21% | 22% | 4/50 |
 | frequency analysis | 108 | 57% | 12% | 30% | 18/50 |
 | statistical test | 74 | 28% | 13% | 58% | 4/50 |
-| key matching | 67 | 37% | 25% | 37% | 9/50 |
+| key matching | 72 | 34% | 23% | 41% | 9/50 |
 | beam/DP decoding | 63 | 42% | 19% | 38% | 6/50 |
 | EM alignment | 38 | 34% | 23% | 42% | 2/50 |
 | automated search (unspecified) | 30 | 33% | 16% | 50% | 17/50 |
@@ -126,7 +126,7 @@ Attack steps only (solver, hypothesis, crib, sibling key, key from source, stati
 | solver | 327 | 62% |
 | hypothesis | 250 | 36% |
 | control | 245 | 17% |
-| sibling key | 222 | 62% |
+| sibling key | 227 | 63% |
 | key from source | 200 | 12% |
 | crib | 147 | 21% |
 | statistics | 124 | 17% |
@@ -140,10 +140,10 @@ Targets with the most failed steps (where effort went):
 |---|---|---|---|---|
 | 16 | 27 | vatican5 | already solved | not solved |
 | 13 | 73 | lopehurtado | read in part | key recovered based on adjacent plaintext |
+| 13 | 23 | vieuville1587 | not read | read after matching with key from external sources |
 | 13 | 17 | nevers1595 | not read | not solved |
 | 12 | 48 | sperantio1534 | read in part | key recovered based on adjacent plaintext |
 | 12 | 32 | ottobon | not read | read after matching with key from external sources |
-| 12 | 22 | vieuville1587 | not read | read after matching with key from external sources |
 | 11 | 28 | ormanetto1573 | read in part | read after matching with key from external sources |
 | 11 | 27 | foix1563 | not read | read after matching with key from external sources |
 | 11 | 20 | blume | not read | not solved |
@@ -156,21 +156,16 @@ Targets with the most failed steps (where effort went):
 
 ## 4. Leads after checking the notes
 
-Of 469 leads, 40 name a key or record that the target's NOTES.md already mentions, or come from the same source as a key that already read the target (tried or redundant; log real trials in keys.json "tried"). 429 leads on 142 targets remain untried as far as the record shows. Best remaining per target:
+Of 465 leads, 40 name a key or record that the target's NOTES.md already mentions, or come from the same source as a key that already read the target (tried or redundant; log real trials in keys.json "tried"). 425 leads on 142 targets remain untried as far as the record shows. Best remaining per target:
 
 | target | state | country | year | key | look-alikes | score |
 |---|---|---|---|---|---|---|
-| raince | not read | France | 1526 | k-lasry-gl | gramont1529; gramont1530; langeac1529; marechaux1520 | 13.8 |
-| walsingham1585 | read in part | England | 1585 | k-stafford-walsingham1586 | harley1582r8500; harley1582r8504; stafford1586 | 9.93 |
 | caracciolo1537 | read in part | Italy | 1537 | k-lasry-gl | bizozola1520; visconti1528; visconti1529 | 9.47 |
-| walsingham1572 | not read | England | 1573 | k-stafford-walsingham1586 | harley1582r8500; harley1582r8504; stafford1586 | 9.13 |
-| burghley1572 | not read | England | 1571 | k-stafford-walsingham1586 | harley1582r8500; harley1582r8504; stafford1586 | 9.0 |
 | lopehurtado | read in part | Spain | 1522 | k-tomokiyo-1522 | sanchez1522; sanchez1523 | 7.0 |
 | sanchez1522 | read in part | Spain | 1522 | k-lope1523 | lopehurtado; lopehurtado1523 | 7.0 |
 | sessa1524 | read in part | Spain | 1524 | k-lope1523 | lopehurtado; lopehurtado1523 | 7.0 |
 | lopehurtado1523 | read in part | Spain | 1524 | k-tomokiyo-1522 | sanchez1522; sanchez1523 | 6.93 |
 | soria1523 | read in part | Spain | 1523 | k-lope1523 | lopehurtado; lopehurtado1523 | 6.93 |
-| vieuville1587 | not read | France | 1587 | k-nevers-informant1588 | nevers1588; r3708 | 6.93 |
 | pelissier1592 | read in part | France (Catholic League) | 1592 | k-nevers-piles | orbais; r2276 | 6.8 |
 | wardein1537 | read in part | Germany | 1537 | k-r9407-sysA2 | augurelio1535; kaa4591 | 6.8 |
 | jqa | read in part | United States | 1812 | k-pinckney-legation | erving1807; erving1807aug | 6.67 |
@@ -185,4 +180,9 @@ Of 469 leads, 40 name a key or record that the target's NOTES.md already mention
 | bilia1527 | read in part | Milan | 1527 | k-lasry-gilino1527 | gilino1527 | 4.0 |
 | champagne1590 | not read | France | 1590 | k-champagne-f36 | bienvenut1590 | 4.0 |
 | chaulnes | not read | France | 1690 | k-petit-chiffre-1690 | feuquieres | 4.0 |
+| clair357 | read in part | France | 1586 | k-matignon1586 | matignon1586 | 4.0 |
+| dandini1580r73 | read in part | Papal States | 1580 | k-como-r72 | dandini1580 | 4.0 |
+| esp318no94 | not read | Spain | 1503 | k-cifra-general | estrada1503 | 4.0 |
+| lauriere1593 | read in part | France | 1593 | k-tomokiyo-savoy1593 | lebel1593 | 4.0 |
+| lebel1593 | read in part | France | 1593 | k-tomokiyo-nevers57 | lauriere1593 | 4.0 |
 

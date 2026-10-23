@@ -74,3 +74,7 @@ key for it and too little text to break it.
 7. Siblings R8356-R8364 fetched, R8362 and R8364 viewed: R8364 gives the one other same-system group.
 
 - 1 Oct 2026: `[9]` in "a Gentleman of [9]" probably stands for Alençon (the gentleman = La Mole), by the Folger summary of R8364; sense only, no key.
+
+## 2026-10-23: lead from the profile mining
+
+Lead from research/patterns/DEEPER.md: Stafford's 1586 key tried on the six-sign place name. The group is mostly figures (2 1 ⌘ ε 9 4); the Stafford alphabet has no figure signs but 24 and 6. Ruled out.
