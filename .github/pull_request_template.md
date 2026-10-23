@@ -20,6 +20,8 @@ A mechanical decryption is not a reading (George Lasry, 22 Oct 2026). For each d
 
 - [ ] The reading was checked against the images, and the tools used (AI included) are named in NOTES.md.
 
+- [ ] If the key is recovered but the text does not read yet, the method says how the key was obtained and the documents are marked "decoded, not read" (that is a fine state to submit). To go further: let a model complete nomenclator entries and split the decryption into text, check where it stops making sense against the images, fix the transcription or key, repeat (CONTRIBUTING, "From a key to a reading")
+
 ## Reviewer, before merging
 
 - [ ] Read each document's reading as sentences against its translation, and three sentences picked at random

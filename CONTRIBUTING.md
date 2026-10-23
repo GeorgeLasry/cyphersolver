@@ -40,6 +40,15 @@ for others to improve, and is not counted as read. Key sheets, code lists and wo
 run it before opening the pull request. Before merging, a reviewer reads the text as sentences against its translation
 and records it on each document (`reading_review` in `profile.json`); the write-up checker refuses a reading without it.
 
+**From a key to a reading: iterate (George Lasry, 24 Oct 2026).** A key can be mostly recovered while the text is not
+yet read, which is a legitimate state to submit. Recording it that way is fine: say how the key was obtained, and mark
+the documents "decoded, not read". To go further, take the decryption from a good starting key and let a language model
+complete the missing nomenclator entries from context and split the decryption into readable text in the document's
+language. Then look at where the result stops making sense: those places often reveal an error in the transcription or
+in the key. Check them against the images, correct the labels or the key, decrypt again and repeat until the
+sentences hold. Mark every value the model proposed from context alone as doubtful (`[?word]`) until it holds at every
+occurrence or a contemporary text confirms it. Record each round, failures included, as a solution step.
+
 Not on GitHub? Email dnbourdeau@gmail.com with the same details. The entry is made for you and credited the same way.
 
 ## Pull requests

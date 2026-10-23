@@ -12,6 +12,15 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
   by hand from the key's letter sets (`texts/reading_f173_log.md`, `reading_f110_log.md` for a re-transcription against an
   exemplar set); two unrecorded clear copies found on neighbouring folios (`reading_f177_vs_copy.md`).
 
+## The iterative loop (George Lasry, 24 Oct 2026)
+
+When a document has a good starting key but no reading, use the model to complete the nomenclator entries from
+context and to split the decryption into readable text; where the text stops making sense, check the figures on the
+image, correct the transcription label or the key, decrypt again, and repeat. This loop is how most of the 22-24 Oct
+re-reads lifted documents. A key mostly recovered with the text not read is a legitimate state: record the method by
+how the key was obtained, and the documents as decoded, not read. Values the model proposes from context alone stay
+`[?word]` until they hold at every occurrence or a contemporary text confirms them.
+
 ## Per document, in this order
 
 1. **Is there a text of it already?** Open every image and attachment already on the DECODE record first: acciaiuoli1757's
