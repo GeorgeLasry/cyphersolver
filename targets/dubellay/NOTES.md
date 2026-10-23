@@ -1,8 +1,10 @@
 # Jean du Bellay (London) to Montmorency, 1529 — BnF fr. 3077 and fr. 3078 (catalogue item 4)
 
-Status: in progress. The 22 Oct 1529 opening is in print but not in the repository, and its leaf is reachable (reading audit, 22 Oct 2026).
+Status: in progress. The 22 Oct 1529 opening is in print (Scheurer, snippet view only); the leaf was read here in part on 23 Oct 2026 (partial reading, below the reading bar).
 
 **22 Oct 2026, reading audit** (George Lasry's test): the 22 Oct 1529 entry is *decoded, not read*: the repository has only Le Grand's clear part; the ciphered opening is Scheurer's (Google Books snippets). The leaf fr. 3005 f. 165 is now reachable through the Gallica IIIF, so the opening can be deciphered here with the 1529 key.
+
+**23 Oct 2026, re-read (b26):** fr. 3005 is Gallica ark `btv1b90599952`; ff. 165r-166r are canvases 259-261 (the signed original, 34 + 35 + 5 cipher lines, no decipherment on or near the leaf). Read sign by sign with `key_p21.tsv`: [`texts/22oct1529_reading.md`](texts/22oct1529_reading.md) (partial reading), English [`texts/22oct1529_en.md`](texts/22oct1529_en.md), value transcription `texts/22oct1529_transcription.txt`, sign values `texts/22oct1529_corrections.tsv`, log [`texts/22oct1529_reread_log.md`](texts/22oct1529_reread_log.md). The first five lines agree with Scheurer's snippets word for word. The first half reads as sentences: Wolsey's Italian servant asks du Bellay to intercede; Tuesday the seal was taken, his goods inventoried, those who handled his affairs for twenty years called to account; he chose the King over Parliament; the charges are the pilleries, lese-majesty, the legation, bringing Ferrara into the league at Amiens without the King's knowledge, a bond given to the King of France, the war on the Emperor; "ilz pretendent luy faict perdre la teste", and unless the King and Madame help him it stays there. The rest (f. 165v ll. 21-35, f. 166r ll. 1-5) keeps unread stretches. New sign values: cup = a, barred cup = s, ƕ = f, tall ϙ = m, barred triangle = l, x on a stem = e; R = faict, V = bien, 4 = madame confirmed; ꝑ (five places) and ℋ (two) are the two Kings by sense only (flagged). Score 0.51 (explicit holes 0.69): kept *decoded, not read*.
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This entry is Bayonne's cipher of 1529. The
 catalogue item's fifth letter, fr. 3077 no. 23 of 28 Oct 1528 (DECODE R4254; copy Clair. 328 f. 291, R2287), is in du
@@ -234,8 +236,8 @@ line 7 came from the print.
   4 Oct 1529 (f. 125), 28 Oct 1528 (f. 145); printed sources per the table in section 1. R4254: status Decrypted
   (Bourrilly 1905 no. 156; Lasry 2022). R3693 (p. 165): date not checked.
 - R9467 (NAF 4206 no. 5): no image is attached to the record (not merely restricted).
-- New record suggested: fr. 3005 f. 165 (22 Oct 1529, London, Bayonne's cipher 1529), printed in Scheurer t. I
-  pp. 111-112.
+- New record suggested: fr. 3005 ff. 165r-166r (Gallica btv1b90599952, canvases 259-261; 22 Oct 1529, London, Bayonne's
+  cipher 1529), printed in Scheurer t. I pp. 111-112; attach texts/22oct1529_transcription.txt and the partial reading.
 - R2287 (Clair. 328 f. 291, 28 Oct 1528): solved by Lasry 2022; text in Bourrilly 1905 no. 156; it is the 1528
   cipher, which is why the record's note says Tomokiyo's 1529 table does not fit.
 
@@ -244,7 +246,7 @@ line 7 came from the print.
 - p. 21 line 7: two signs (ρ with a triangle foot, a small x) between *lieu* and *ou* and one smudged sign before
   *roy* have no value. blocker: too short; three isolated signs with no counterpart in the print, probably nulls or a slip.
 - Scheurer t. I seen only through Google Books snippets. blocker: externally blocked; snippet view only.
-- 22 Oct 1529 opening (fr. 3005 f. 165), not in the repository - blocker: not-attempted; fetch the leaf through the Gallica IIIF (openapi.bnf.fr), decipher with key_p21.tsv, compare with Scheurer's snippets
+- 22 Oct 1529 opening (fr. 3005 ff. 165r-166r): read in part 23 Oct 2026 (texts/22oct1529_reading.md); f. 165v ll. 21-35, f. 166r ll. 1-5 and the word signs ꝑ, ℋ, ꝏ, # left open - blocker: needs-physical-access; Scheurer t. I (1969) prints the whole opening (snippet view only) and Friedmann's key NAF 4206 no. 5 is not imaged
 
 ## Escalation
 
@@ -255,7 +257,7 @@ line 7 came from the print.
 - Print: Le Grand III, L&P IV, Bourrilly 1905 checked earlier; Scheurer t. I found by Google Books snippet search
   (phrases "faire dater", "semblant que Madame", "maint tour") and covers both by-products.
 - Key rebuild: the p. 21 signs fixed in this pass are listed above.
-- Retry: Gallica retried (403, Cloudflare); DECODE retried (works).
+- Retry: Gallica retried (403, Cloudflare); DECODE retried (works). 23 Oct 2026: Gallica reached through openapi.bnf.fr; the 22 Oct leaf read sign by sign (partial reading, b26).
 
 ## Assumptions for George's review
 

@@ -2,6 +2,7 @@
 
 Status: found already read (Puig y Puig 1920); the cipher itself is not imaged and its key is not known.
 **22 Oct 2026, reading audit:** nothing of the letter is in the repository (the Google Books link returns 403 to scripts), so the entry is *decoded, not read* in profile.json; class already solved is kept because the text is in print (Puig 1920).
+**23 Oct 2026, re-read (b26):** the Google Books `jscmd=click3` endpoint still serves signed page images of Puig 1920, so his text (pp. 562-563; ACB "Documentos inéditos del obispo Çapera" no. 669) is now transcribed as printed, italics marking his decipherment (308 of 822 words): [`texts/comuel1415_reading.md`](texts/comuel1415_reading.md), English [`texts/comuel1415_en.md`](texts/comuel1415_en.md), log [`texts/comuel1415_reread_log.md`](texts/comuel1415_reread_log.md). Scored 0.275 plain, 0.988 explicit holes (the classical Latin word list does not know the abbreviations and medieval spellings); the sentences hold. profile.json: read (grade A).
 
 
 Split on 14 Oct 2026 from `benedict1399` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter was
@@ -32,13 +33,13 @@ The work below was done in the benedict1399 sessions of 23 Sept 2026 and is carr
 
 ## Remaining gaps
 - The ciphertext itself (no image, not transcribed) - blocker: needs-physical-access; the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original
-- Puig's printed text (pp. 562-563), not in the repository - blocker: needs-physical-access; Google Books blocks automated access, HathiTrust 100676638 is behind Cloudflare
+- ~~Puig's printed text, not in the repository~~ closed 23 Oct 2026: transcribed from the Google Books page images (texts/comuel1415_reading.md)
 
 ## Escalation
 - [x] siblings: Puig's appendix index (pp. 623-627) and a full-text search for cifra/cifrada/cifrado/clave read; every cipher item listed in benedict1399 NOTES section 3
 - [n/a] clear-pages: no image of the letter; Puig's p. 466 n. 2 says the key came from Climent's lines on docs. 1063, 461, 463 (Benedict's letters), not from this one
 - [n/a] known-keys: Benedict XIII's key (benedict1399/key.md) could be tried only on ciphertext, and this letter's ciphertext is not imaged or printed
-- [x] print: Puig 1920 (this reading); Meister 1906; Baucells 1978 (parchments only)
+- [x] print: Puig 1920 (this reading, transcribed 23 Oct 2026 in texts/); Meister 1906; Baucells 1978 (parchments only)
 - [n/a] key-rebuild: no ciphertext in hand
 - [n/a] retry: nothing to retry without the ciphertext
 

@@ -293,7 +293,10 @@
    "result": "worked"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): 16 June: p21_signs.txt + texts/16jun1529_decryption.md (copied from p21_transcription.md/NOTES); 22 June, 30 June, 17 Oct: Le Grand 1688 OCR in ref/; 17 Oct partial sign transcription copied from NOTES section 5; 22 Oct: Scheurer 1969 linked; key_file key_p21.tsv. No ciphertext transcription for 22 June, 30 June, 22 Oct.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): for 22 Oct 1529 the repository has only Le Grand's clear part; the ciphered opening is Scheurer's (snippets). Relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): for 22 Oct 1529 the repository has only Le Grand's clear part; the ciphered opening is Scheurer's (snippets). Relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "access", "what": "fr. 3005 identified as Gallica ark btv1b90599952 (Tomokiyo's francis.htm link); folio numbers read on the canvas corners (259 = f. 165r, 260 = f. 165v, 261 = f. 166r); full-resolution leaves fetched through openapi.bnf.fr IIIF. Neighbouring leaves (canvases 255-266) checked: no decipherment.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Ciphered opening (34 + 35 + 5 lines) read sign by sign on native-resolution strips (research/reading_audit/b26_strips.py) with key_p21.tsv and Tomokiyo's table; value transcription texts/22oct1529_transcription.txt; sign values beyond the key in texts/22oct1529_corrections.tsv (adopted: cup = a, barred cup = s, ƕ = f, tall ϙ = m, barred triangle = l, x on a stem = e; confirmed R = faict, V = bien, 4 = madame; sense only, flagged: ꝑ and ℋ = the two Kings).", "result": "partial", "technique": ["key matching", "contextual inference"]},
+  {"date": "2026-10-23", "kind": "verification", "what": "First lines agree with Scheurer's snippets word for word (la ou je vouldroye ... seul feal; maint tour de corde); 'si le roy et madame ne l'aydent' matches Le Grand's 17 Oct letter. Reading body scored (b17_score.py, fr): 0.513 (20/39), explicit holes 0.692 (27/39); the last two paragraphs do not build sentences. Kept decoded, not read; 10 letters rest on look-alike alternates.", "result": "partial", "technique": ["language-model scoring"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -378,23 +381,26 @@
    },
    {
     "doc": "22oct1529",
+    "note": "Re-read 23 Oct 2026 (b26): the leaf found on Gallica (fr. 3005 = btv1b90599952, canvases 259-261 = ff. 165r-166r; 74 cipher lines, the signed original) and read sign by sign with the 1529 key: texts/22oct1529_reading.md (partial reading), transcription, corrections, log. The first half builds sentences and agrees with Scheurer's snippets (the seal taken, the inventory, the charges: Ferrara league, bond, war on the Emperor; 'ilz pretendent luy faict perdre la teste'); f. 165v ll. 21-35 and f. 166r ll. 1-5 keep unread stretches and five unidentified word-sign places. Score 0.51 (explicit holes 0.69): below the bar. Blocker: needs-physical-access (Scheurer t. I 1969 prints the whole opening, snippet view only; Friedmann's key NAF 4206 no. 5 not imaged).",
     "label": "22 Oct 1529, fr. 3005 f. 165 (Scheurer t. I pp. 111-112; Le Grand III pp. 377-379)",
     "decryption": [
+     "texts/22oct1529_reading.md",
      "https://books.google.com/books?id=eNw8AAAAIAAJ",
      "ref/legrand3_p330_400.txt"
     ],
     "summary": "Du Bellay to Montmorency from London, 22 Oct 1529: the ciphered opening, on granting the cardinal of York's request made through his Italian servant (Agostino, Wolsey's physician), was called undeciphered by Le Grand 1688, Brewer and Tomokiyo but is printed by Scheurer (1969); the clear part, on the Legate being turned out of his house, is in Le Grand III pp. 377-379.",
-    "note": "Excerpt only: the ciphered opening (the point of the entry) is printed by Scheurer, Correspondance du cardinal Jean du Bellay t. I (1969) pp. 111-112, seen in Google Books snippets (first lines quoted in NOTES); the repository holds Le Grand's clear part only, where the opening is \"non dechiffre\". The leaf fr. 3005 f. 165 was not seen (reading audit, 22 Oct 2026); fix: fetch it through the Gallica IIIF (openapi.bnf.fr) and decipher the opening with key_p21.tsv.",
     "language": "fr",
-    "state": "decoded, not read"
+    "state": "decoded, not read",
+    "transcription": "texts/22oct1529_transcription.txt",
+    "translation": "texts/22oct1529_en.md"
    }
   ],
   "key_file": "key_p21.tsv",
   "gaps": [
    {
-    "item": "22 Oct 1529 opening (fr. 3005 f. 165): not in the repository",
-    "blocker": "not-attempted",
-    "detail": "the leaf is on Gallica, reachable through the IIIF at openapi.bnf.fr; decipher it with the 1529 key (key_p21.tsv) and compare with Scheurer's snippets"
+    "item": "22 Oct 1529 opening (fr. 3005 ff. 165r-166r): f. 165v ll. 21-35 and f. 166r ll. 1-5 unread in stretches; word signs ꝑ, ℋ (sense only), ꝏ, # open",
+    "blocker": "needs-physical-access",
+    "detail": "Scheurer t. I (1969) pp. 111-112 prints the whole opening (Google Books snippet view only, in copyright); Friedmann's key NAF 4206 no. 5 (DECODE R9467) has no image. Partial reading texts/22oct1529_reading.md."
    }
   ]
  }

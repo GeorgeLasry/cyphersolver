@@ -1,8 +1,10 @@
 # Anonymous figure cipher, 28 October 1586 (BnF Clairambault 357, ff. 167-168)
 
-Status: in progress. f. 168r (the clear copy) reads; the f. 167 interlinear part is decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress (site page not yet updated). f. 168r (the clear copy) reads, and since the 23 Oct 2026 re-read the f. 167 interlinear part reads too (grade B).
 
 **22 Oct 2026, reading audit** (George Lasry's test): the f. 168r clear copy of f. 167r ll. 1-30 builds sentences; the interlinear decipherment after the cross mark (f. 167r) and on f. 167v is transcribed only as fragments, with holes in most sentences: *decoded, not read*. The entry is split in two in profile.json; claim read -> read in part (about half, estimated).
+
+**23 Oct 2026, re-read (b26):** f. 167r from the ✝ and f. 167v transcribed line by line on the full-resolution canvases (clear text, glosses, figure groups: [`texts/f167_interlinear_transcription.txt`](texts/f167_interlinear_transcription.txt)); unglossed and cut groups decoded with `key.md` (`research/reading_audit/b26_clair_dec.py`). Reading [`texts/f167_interlinear_reading.md`](texts/f167_interlinear_reading.md), English [`texts/f167_interlinear_en.md`](texts/f167_interlinear_en.md), log [`texts/f167_interlinear_reread_log.md`](texts/f167_interlinear_reread_log.md); 0.758 clean sentences (explicit holes 0.909). Corrections to the fragments below: "Cambaronne" = *l'embarquement*, "Coride" = *a la Floride* (after *le feu admiral*: Coligny's Florida venture), "Saisonne" = *vaisseaulx*, "Il se trouvera" = *Il se promectoit*; the recto's last words *et que luy* run on into the verso's *Fumée, si luy voulliez commettre cette charge soubz couleur d'autre voyage*: Fumée offers ships for an embarkation, i.e. the war in England. 73 = d confirmed. profile.json: both entries read; class read.
 
 Catalogue item 14. Session 2026-09-18.
 
@@ -157,7 +159,9 @@ The sender's signs at the foot of f. 167v are not identified.
 
 ## Remaining gaps
 
-- f. 167r after the cross mark and f. 167v: interlinear decipherment read only in fragments - blocker: not-attempted; read the glosses word by word at full resolution (canvases 331-332) and decode unglossed figures with the table
+- ~~f. 167r after the cross mark and f. 167v read only in fragments~~ closed 23 Oct 2026 (texts/f167_interlinear_reading.md)
+- a few unglossed figure strings on f. 167r-v (under "ne pourroit procurer", "si porte bien …", the last line before the date) - blocker: illegible; strokes run together and the glosses are cut or faint
+- the sender's signs at the foot of f. 167v (8 X X 8) - blocker: no-key-material
 
 ## Escalation
 
@@ -165,5 +169,5 @@ The sender's signs at the foot of f. 167v are not identified.
 - [x] clear-pages: f. 168r clear copy and the f. 167 interlinear found
 - [x] known-keys: Tomokiyo's partial table, checked and extended
 - [x] print: none found
-- [ ] key-rebuild: word-by-word decoding of the cipher done on sample runs only
-- [ ] retry: the verso glosses not yet read word by word
+- [x] key-rebuild: unglossed groups of the interlinear part decoded with the table (23 Oct 2026); 73 = d confirmed
+- [x] retry: the verso glosses read word by word at full resolution (23 Oct 2026)

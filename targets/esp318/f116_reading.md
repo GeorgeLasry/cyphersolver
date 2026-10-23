@@ -160,7 +160,7 @@ vituallas). The re-read did settle other things:
 
 ## Open points
 
-1. Codes still not resolved after the second and third passes (which settled `zap` = `zag`, `bac` = `vac`, `xie`,
+1. (23 Oct 2026: `zems` = *Ostia* fits after all, "el cerco de Ostia"; see texts/f116_corrections.tsv.) Codes still not resolved after the second and third passes (which settled `zap` = `zag`, `bac` = `vac`, `xie`,
    `zie` = *parescer*, `vog`, and `zer` as `zec`): `zeb`, `zems`, `xob`, `boe`/`boc` in l. 8, `bog` (×3; probably
    `boz` = todo), `bue`, `bi?`, `yeb`+R A in l. 10.
 2. Stretches of letter signs not resolved: ll. 11, 18, 20, 21, 27, 28, 31–32, 34, 36 of f. 116r; f. 116v l. 10.

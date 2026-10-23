@@ -4,6 +4,8 @@ Status: in progress. No. 92 decoded with the Cifra general, not yet read as sent
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): f116_reading.md is a line table of sign strings with a gloss column. The clear opening and some cipher lines build Spanish clauses (f. 116r ll. 6-7, 15, 17, 22-25, 33; f. 116v ll. 3-9), but ll. 8-11, 16, 18-21, 26-31 and 34 are open codes and unplaced letter runs, so most cipher sentences have holes: no. 92 is *decoded, not read*. Class read in part -> not read, method -> not solved, fraction_read 0.75 -> 0 (the three-quarters estimate is withdrawn as a reading figure). The key identification and the summary below stand as a gist.
 
+**23 Oct 2026, re-read (b26):** running text written from the line table: [`texts/f116_running_reading.md`](texts/f116_running_reading.md), English [`texts/f116_en.md`](texts/f116_en.md), log [`texts/f116_reread_log.md`](texts/f116_reread_log.md), value changes `texts/f116_corrections.tsv`. `zems` is Galende's *Ostia* after all ("quando el me llamo para el cerco de Ostia", the 1497 siege for Alexander VI); l. 21 opens with `vog` (*acatamiento*); ll. 31-32 give "ciudad … [Ta]rachina" (Terracina). Score 0.604 (explicit holes 0.792), but ll. 8-14 and 18-21 still do not build sentences (codes `xob`, `zeb`, `zer`, `zog`, `bog`, `bue`; unread letter runs): kept *decoded, not read*. The local scans are already Gallica's maximum (4155 px); RAH 9/15 is still not online.
+
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder used to be the whole volume:
 five ciphered letters in at least four ciphers. It now keeps **no. 92** (ff. 116r–v), in the *Cifra general de los
 Reyes Católicos*. The other letters are different ciphers, each with its own entry and page:
@@ -135,9 +137,9 @@ plates carry misprints there or the hand uses a variant; about ten letter-sign s
 
 ## Remaining gaps
 
-- five code groups (bog ×3, zeb, zems, xob, bue) - blocker: needs-physical-access; they contradict Galende's printed values in context; his plates misprint others, and the manuscript BRAH 9/15 ff. 7-9, not digitised, would settle them
+- six code groups (bog ×3, zeb, xob, zer, zog, bue ×2; zems = Ostia settled 23 Oct 2026) - blocker: needs-physical-access; they do not fit Galende's printed values in context; his plates misprint others, and the manuscript BRAH 9/15 ff. 7-9, not digitised, would settle them
 - about ten stretches of letter signs (grade I) - blocker: illegible; the q-shaped N and the reversed-9 S cannot be told apart at Gallica's 4155-px resolution
-- no. 92 as a running text: decoded, not read - blocker: not-attempted; re-read f. 116r ll. 8-11, 16, 18-21, 26-31, 34 and f. 116v ll. 1-2, 10-11 on the full scans against the Cifra general, then write a normalised reading and a translation
+- ~~no. 92 as a running text~~ written 23 Oct 2026 (texts/f116_running_reading.md, partial); what keeps it below the reading bar is the two blockers above
 
 ## Escalation
 
@@ -146,7 +148,7 @@ plates carry misprints there or the hand uses a variant; about ten letter-sign s
 - [x] known-keys: the Cifra general is the key (eight glosses, no misses); Escrivà no. 1 and the Gran cifra do not fit its code initials
 - [x] print: Galende Díaz 1994, Tomokiyo (including his commented-out partial reading), Sanuto's Diarii III, CODOIN, Zurita, BRAH Noticias, archive.org: no clear copy
 - [x] key-rebuild: zap=zag, bac=vac, xie=cargo, zie=parescer, vog=acatamiento, zer=zec fixed from context and Tomokiyo; the five codes left contradict the plates in every place
-- [x] retry: second and third passes (21 Sept 2026) re-read every doubtful stretch with the corrected values; recto ll. 8-11 now read in sense
+- [x] retry: second and third passes (21 Sept 2026) re-read every doubtful stretch with the corrected values; recto ll. 8-11 now read in sense; fourth pass 23 Oct 2026 (b26): zems = Ostia, running text and translation
 
 ## Assumptions for George's review
 
