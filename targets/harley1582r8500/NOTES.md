@@ -50,6 +50,8 @@ Navarre and Guise); this Harley letter is not calendared and none of the cipher 
 
 ## Remaining gaps
 
+- "mayntayne" in the f. 65v postscript is probable, not certain: the last signs of the run are faint - blocker: illegible
+
 None in sense. Four sign values rest on context (see above), not on a second occurrence in the siblings.
 
 ## Escalation
