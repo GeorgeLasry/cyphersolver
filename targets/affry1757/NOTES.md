@@ -301,13 +301,13 @@ keeps read. No English files yet for the register readings (summaries in the pro
 
 ## Remaining gaps
 
-- 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker:
-  open-codes; the register piece is noise or the occurrences disagree
+- 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material;
+  the register piece is noise or the occurrences disagree
 - groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895
-  devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: open-codes; one value per group
+  devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: no-key-material; one value per group
   is all key_X can hold, so the measure under-reads these
 - register pages other than the scans listed above (5186 249L; 256L checked 23 Oct 2026, v5) were not read here; WAINUT's
-  Gemini transcription of them is unchecked - blocker: not-attempted
+  Gemini transcription of them is unchecked; they bear on R1054 and R1064 (decoded, not read since 23 Oct) - blocker: not-attempted
 
 Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
 R1073 and R1076 are measured on the DECODE parse (view.fix splits), not re-transcribed from the images; they already
