@@ -261,6 +261,18 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "literature search",
+   "what": "Re-read (REREAD_BRIEF, b17), step 1: Halphen, Lettres inedites du roi Henri IV a monsieur de Bethune ... du 18 octobre au 24 decembre 1601 (1889) found in full view on HathiTrust (record 100644113, item iau.31858014633857, public domain); babel.hathitrust.org answers with a Cloudflare human-verification page (curl 403; the browser pane shows the checkbox), which this session does not pass. Not on the Internet Archive, Gallica or Google Books (searched). Not on DECODE.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Re-read, step 2: no new image route or transcription; the measured transcription ceiling (oracle 71%, two readers agree on 69% of glyphs, third pass) stands, so the 9 Nov and 22 Nov decodes stay fragments. Both kept decoded, not read; the edition is the route.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -310,13 +322,18 @@
    },
    {
     "item": "code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80",
-    "blocker": "open-codes",
+    "blocker": "no-key-material",
     "detail": "glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned"
    },
    {
     "item": "clear copies in BnF Cinq cents de Colbert 346",
     "blocker": "needs-physical-access",
     "detail": "copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)"
+   },
+   {
+    "item": "Halphen (ed.), Lettres inedites du roi Henri IV a M. de Bethune, 18 Oct - 24 Dec 1601 (1889): may print the 9 and 22 Nov letters in clear",
+    "blocker": "not-attempted",
+    "detail": "full view on HathiTrust, item iau.31858014633857 (record 100644113), behind a human-verification page; a person opening babel.hathitrust.org/cgi/pt?id=iau.31858014633857 can read it"
    }
   ],
   "credits": [
@@ -350,6 +367,7 @@
    },
    {
     "doc": "9nov",
+    "note": "Re-read 22-23 Oct 2026 (b17), still decoded, not read: no DECODE record; no decipherment on or near f. 33 (leaf map, NOTES); the decode stays at the measured transcription ceiling (oracle 71% of letters on known blocks; two careful readings of the hand agree on 69% of glyphs), so its lines do not build sentences ('mil escus et la cetresioatl depentionrln sur le reuenu de naples'). Blockers: illegible (the glyph families g/looped g, m/hooked m, r/2-shaped r differ by a hook at the 450 dpi of the only images) and a clear text not yet consulted: Halphen, Lettres inedites du roi Henri IV a M. de Bethune (1889), is in full view on HathiTrust (iau.31858014633857) but behind a human-verification page this session must not pass; BnF Cinq cents de Colbert 346 (copy register Aug 1601-Nov 1602) is not digitised.",
     "label": "9 Nov 1601, f. 33r",
     "transcription": "ct_f33_v2.txt",
     "decryption": [
@@ -358,11 +376,11 @@
     ],
     "summary": "A page entirely in cipher about the Spanish news from La Rochepot's secretary and the cardinalate of Don Alexandre, with the cardinals of Joyeuse and d'Ossat. The decryption is decoder output only (about six words in ten); bracketed numbers are open code groups.",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Decoder output over a ~70%-accurate glyph transcription: about half the words come through, the lines do not build sentences ('mil escus et la cetresioatl depentionrln sur le reuenu de naples') (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    },
    {
     "doc": "22nov",
+    "note": "Re-read 22-23 Oct 2026 (b17), still decoded, not read: the clear French reads (reading_22nov.md) but its 80 cipher runs, most of the letter, decode only to fragments at the transcription ceiling measured for this hand; no decipherment on the leaves (ff. 45, 48 are address leaves). Blockers as for 9 Nov: illegible glyph families at the images' resolution, and the clear texts in Halphen 1889 (HathiTrust iau.31858014633857, full view behind human verification, not opened here) and BnF Cinq cents de Colbert 346 (not digitised).",
     "label": "22 Nov 1601, ff. 46r-47v",
     "transcription": [
      "reading_22nov.md",
@@ -371,8 +389,7 @@
     "decryption": "reading_22nov.md",
     "summary": "Saint-Germain-en-Laye, answering Béthune's despatch of 29 October: a rebuke of two persons named by code groups for not breaking 'ce coup', the pension of Camaiano to raise the French party in Rome, the Pope's welcome, Barberini's coming, and the baptism of the Dauphin. The clear text is transcribed in full; the 80 cipher runs decode only to fragments.",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "The clear French of the letter reads; its 80 cipher runs are decoded only in fragments and the file itself calls them 'a substance, not a reading' (reading audit, 22 Oct 2026)."
+    "state": "decoded, not read"
    }
   ],
   "key_file": "key.tsv"

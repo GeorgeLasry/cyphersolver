@@ -153,22 +153,57 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R2785 or R2786 is in the repository, and cryptiana louisxiii.htm gives the key and remarks on undeciphered symbols, not the letters. Both relabelled decoded, not read; class already solved -> not read; method read from existing decipherment -> not solved.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b17): every file on DECODE R2785 and R2786 fetched with the shared cookie into the session scratchpad (b17_fetch.py): 4 page images each and Tomokiyo's key png; no transcription or plaintext attached. Both letters carry a contemporary interlinear decipherment over most cipher runs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "Clear text and interlinear decipherments of R2785 (ff. 83r-84r) and R2786 (ff. 109r-110r) transcribed from native-resolution strips (b17_crop.py); each cipher run aligned with its decipherment and checked against Tomokiyo's key (texts/R2785_align.tsv, R2786_align.tsv): the numbers (20 de, 5 pre, 7 que, 8 qui, 18 con, 30 tion, 35 en, 97 pour ...) and letter signs carry the glosses throughout. R2785 is dated 16 Sept 1615.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "hypothesis",
+   "technique": ["key matching", "contextual inference"],
+   "what": "θ (not in Tomokiyo's table) is a null: R2786 'ff ʃʃ θ' = 'et', and it falls between words wherever it occurs; R2786 f. 109v row 8 the figures give 'inconvenients' where the decipherer wrote 'incommoditez'; row 11 (no gloss) decodes 'en mesme temps'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "technique": ["key matching"],
+   "what": "Unglossed spaced-sign lines (R2785 f. 83v rows 17-18, f. 84r row 2; R2786 f. 109v rows 9-11 in part) decoded with the key, with and without θ and φ as nulls: no French; consistent with Tomokiyo's note that they may be nulls.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "technique": ["language-model scoring"],
+   "what": "Readings and translations written (texts/R2785_reading.md, R2786_reading.md, _en.md); clean-sentence share on the bodies 0.854 and 0.863. Both set read (grade B).",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Satoshi Tomokiyo reconstructed the Brulart de Leon key (1615-18) and attached it to both DECODE records, but no plaintext of either letter is published or in the repository, so no reading is claimed (reading audit, 22 Oct 2026); with his key applied the method would be read with known key.",
+  "method": "read from existing decipherment",
+  "method_basis": "Both letters read on 22 Oct 2026 from the contemporary interlinear decipherments written over their cipher runs, transcribed from the DECODE images and checked run by run against Satoshi Tomokiyo's reconstructed key (DECODE DOC_2785/2786); two unglossed runs decoded with his key.",
   "contribution": [
-   "none"
+   "transcription",
+   "key extended or corrected",
+   "sender or date identified"
   ],
-  "class": "not read",
-  "key": "none",
-  "fraction_read": "unknown",
+  "class": "read",
+  "key": "partial",
+  "fraction_read": 1.0,
   "grades": "unknown",
   "verification": [
    "none"
   ],
-  "notes": "Tomokiyo leaves some symbols undeciphered (probably nulls or cancelled signs, per his DECODE notes); not re-checked here. Nothing new about the text. Catalogue entry 191 removed 21 Sept 2026. 22 Oct 2026, reading audit: no plaintext of either letter exists in the repository or on Tomokiyo's page; both decoded, not read; class already solved -> not read, method -> not solved.",
+  "notes": "Tomokiyo leaves some symbols undeciphered (probably nulls or cancelled signs, per his DECODE notes); not re-checked here. Nothing new about the text. Catalogue entry 191 removed 21 Sept 2026. 22 Oct 2026, reading audit: no plaintext of either letter exists in the repository or on Tomokiyo's page; both decoded, not read; class already solved -> not read, method -> not solved. 22 Oct 2026, re-read (b17): both letters read from their contemporary interlinear decipherments, checked against Tomokiyo's key (texts/); θ is a null; R2785 is dated 16 Sept 1615.",
   "credits": [
    {
     "who": "tomokiyo",
@@ -188,35 +223,51 @@
   "texts": [
    {
     "doc": "R2785",
-    "label": "Poitiers?, 15 Sep 1615",
-    "decryption": [
-     "https://de-crypt.org/decrypt-web/RecordsView/2785",
-     "https://cryptiana.web.fc2.com/code/louisxiii.htm"
-    ],
+    "label": "Poitiers, 16 Sep 1615",
+    "decryption": ["texts/R2785_reading.md", "https://de-crypt.org/decrypt-web/RecordsView/2785"],
     "summary": "Louis XIII, countersigned by Brûlart de Sillery, to Léon Brûlart, his ambassador in Venice: clear French with cipher runs (contemporary decipherments above them mention 'Marini', 'retirer a Gennes', 'domestiques', 'aucun ombrage'); the King is still held in the town by his eldest sister's illness, which fits the court at Poitiers in September 1615. The reading is Satoshi Tomokiyo's, with his key, on DECODE R2785 and cryptiana louisxiii.htm.",
-    "note": "Tomokiyo's key is on the record, but no plaintext is in the repository or on his page (key image and remarks only); one page image (main checkout targets/louis1615/decode/IMG_R2785_I17344_P1.jpg) shows contemporary decipherments over most cipher runs; not counted as a reading (reading audit, 22 Oct 2026); fix: fetch the record's pages with the DECODE cookie and read them with his key and the interlinear glosses.",
-    "state": "decoded, not read",
-    "language": "fr"
+    "state": "read",
+    "language": "fr",
+    "transcription": ["texts/R2785_reading.md", "texts/R2785_align.tsv"],
+    "reading": "texts/R2785_reading.md",
+    "translation": "texts/R2785_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read 22 Oct 2026 (b17): clear text and the contemporary interlinear decipherment transcribed from the DECODE images (ff. 83r-84r), every run checked against Tomokiyo's key (texts/R2785_align.tsv); _check_reading.py on the body 0.854 (35/41). Open: three spaced-sign lines with no decipherment that give no French under the key (probably nulls, as Tomokiyo noted) and three cramped glosses on f. 83v. Dated 16 (not 15) Sept 1615."
+    }
    },
    {
     "doc": "R2786",
     "label": "Paris, 25 Jul 1617",
-    "decryption": [
-     "https://de-crypt.org/decrypt-web/RecordsView/2786",
-     "https://cryptiana.web.fc2.com/code/louisxiii.htm"
-    ],
+    "decryption": ["texts/R2786_reading.md", "https://de-crypt.org/decrypt-web/RecordsView/2786"],
     "summary": "Louis XIII (countersigned Brûlart de Sillery) to Léon Brûlart, ambassador in Venice; read by Satoshi Tomokiyo with his reconstructed Brûlart de Léon key (1615-18). Its contents are not described in the repository; only the address leaf was fetched.",
-    "note": "Tomokiyo's key is on the record, but no plaintext is in the repository or on his page (key image and remarks only); only the address leaf was fetched; not counted as a reading (reading audit, 22 Oct 2026); fix: fetch the record's pages with the DECODE cookie and read them with his key.",
-    "state": "decoded, not read",
-    "language": "fr"
+    "state": "read",
+    "language": "fr",
+    "transcription": ["texts/R2786_reading.md", "texts/R2786_align.tsv"],
+    "reading": "texts/R2786_reading.md",
+    "translation": "texts/R2786_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read 22 Oct 2026 (b17): clear text and the contemporary interlinear decipherment transcribed from the DECODE images (ff. 109r-110r), checked against Tomokiyo's key; 'incommoditez' corrected to the figures' 'inconvenients', and the unglossed 'en mesme temps' decoded with the key (texts/R2786_align.tsv); _check_reading.py on the body 0.863 (44/51). Open: most of f. 109v rows 9-11 and 110r row 1 (no decipherment, no French under the key) and the figures 16, 21 of row 8."
+    }
    }
   ],
   "gaps": [
    {
-    "item": "R2785 and R2786: no plaintext in the repository",
-    "blocker": "not-attempted",
-    "detail": "DECODE pages (3 each) reachable with the shared cookie; R2785 has contemporary interlinear decipherments; Tomokiyo's key table is on both records (DOC_2785/2786 png)"
+    "item": "R2785: the three spaced-sign lines at the foot of f. 83v and the head of f. 84r (about 60 signs) and R2786 f. 109v rows 9-11 / f. 110r row 1 outside the glossed words",
+    "blocker": "no-key-material",
+    "detail": "no contemporary decipherment, and no French under Tomokiyo's key with or without θ and φ as nulls; Tomokiyo's DECODE notes take such passages for nulls or cancelled signs"
+   },
+   {
+    "item": "R2785 f. 83v: three cramped interlinear glosses ('m'est possible', '[?lors] de [?propos]', 'l'Equidray') and the gloss after 'ont este', and the clear name '[?Manjeaux]'",
+    "blocker": "illegible",
+    "detail": "the decipherer's hand is small and blotted at the resolution of the DECODE photographs; the letter signs under them are partly ambiguous in the key (the circled sign is l or y)"
    }
-  ]
+  ],
+  "fraction_read_source": "22 Oct 2026, re-read (b17): both documents of outcome.texts read (2 of 2). The unread pieces inside them (R2785's three spaced-sign lines, about 60 signs, probably nulls; parts of R2786 f. 109v rows 9-11) are named in gaps."
  }
 }

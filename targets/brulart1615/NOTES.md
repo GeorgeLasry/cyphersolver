@@ -1,8 +1,22 @@
 # Louis XIII to Brûlart de Léon, ambassador in Venice, 1615 and 1617 — BnF fr. 18043 f. 83–84, fr. 18044 f. 109–110 (DECODE R2785, R2786) — NOTES
 
-Status: in progress. No plaintext of either letter is in the repository or on Tomokiyo's page (reading audit, 22 Oct 2026).
+Status: in progress (write-up not refreshed). Both letters read 22 Oct 2026 (re-read b17) from their contemporary interlinear decipherments, checked against Tomokiyo's key: `texts/R2785_reading.md`, `texts/R2786_reading.md`.
 
 **22 Oct 2026, reading audit** (George Lasry's test): Tomokiyo's key is on both DECODE records, but his page gives the key and remarks on undeciphered symbols, not the letters, and nothing of either letter is transcribed here. Both are *decoded, not read*; class already solved -> not read, method -> not solved. The R2785 page image shows contemporary decipherments over most cipher runs, so the letters are workable with his key.
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch b17).** All four page images of each record fetched with the DECODE cookie
+(`research/reading_audit/b17_fetch.py`; scratchpad only). Both letters carry a contemporary interlinear decipherment over
+most cipher runs. Clear text and decipherments transcribed, every run aligned with its gloss and checked against
+Tomokiyo's key (`texts/R2785_align.tsv`, `texts/R2786_align.tsv`); log: `texts/R2785-R2786_reread_log.md`.
+- R2785 (Poitiers, **16** Sept 1615, not 15): Louis XIII disapproves of Mantua's harshness to his rebel subjects, fears
+  Savoy will use it to renew the quarrel, suspends his good offices, orders Marini to withdraw to Genoa, is held at
+  Poitiers by his eldest sister's illness. _check_reading.py on the body 0.854. Read.
+- R2786 (Paris, 25 July 1617): Venice should take the openings offered to end the war; Savoy must use
+  the French forces to conclude a good accord; the Grisons, Padavino's expulsion, Gueffier's report on the Leagues.
+  0.863. Read. The decipherer's "incommoditez" is "inconvenients" in the figures; "en mesme temps" (no gloss) decoded
+  with the key.
+- θ (not in Tomokiyo's table) is a null. Unread: R2785's three spaced-sign lines (no gloss, no French under the key;
+  Tomokiyo: probably nulls), parts of R2786 f. 109v rows 9-11, three cramped glosses on R2785 f. 83v.
 
 Split on 14 Oct 2026 from `louis1615` under the one-key rule (George Lasry, 14 Oct 2026). The old entry (catalogue
 191) grouped these two letters with Louis XIII's letter of 1631 to Melchior de Sabran because DECODE lists all three
@@ -64,9 +78,11 @@ two pages of each record were not fetched.
 - [x] clear-pages: contemporary interlinear decipherment on the R2785 text page
 - [x] known-keys: Tomokiyo's 1615–18 key is the key of these letters
 - [x] print: louisxiii.htm checked
-- [n/a] key-rebuild: the key exists (Tomokiyo); nothing rebuilt here
-- [n/a] retry: no reading of our own to retry
+- [x] key-rebuild: the key exists (Tomokiyo); 22 Oct 2026 θ identified as a null, no other change
+- [x] retry: 22 Oct 2026 (b17) the pages fetched, decipherments transcribed and checked with the key; both letters read
 
 ## Remaining gaps
 
-- R2785 and R2786: no plaintext in the repository - blocker: not-attempted; fetch the three pages of each record with the DECODE cookie, transcribe R2785's interlinear decipherments, apply Tomokiyo's key (DOC_2785/2786 png)
+- R2785 f. 83v rows 17-18 and f. 84r row 2 (spaced signs, about 60) and R2786 f. 109v rows 9-11 / f. 110r row 1 outside the glossed words - blocker: no-key-material; no contemporary decipherment, no French under Tomokiyo's key with θ/φ as nulls (Tomokiyo: probably nulls)
+- R2785 f. 83v: three cramped glosses ("m'est possible", "[?lors] de [?propos]", "l'Equidray", the gloss after "ont este") and the clear name "[?Manjeaux]" - blocker: illegible; blotted at the DECODE photographs' resolution, signs beneath ambiguous in the key
+- R2785 and R2786: no plaintext in the repository - closed 22 Oct 2026 (b17): both read, texts/

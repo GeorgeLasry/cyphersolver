@@ -15,6 +15,15 @@ decode gives about half the words, in lines that do not build sentences; the 22 
 clear French. About a fifth of the cipher tokens read (estimated); "about six words in ten" below is withdrawn as a
 reading figure.
 
+**22-23 Oct 2026, re-read (REREAD_BRIEF, batch b17): 9 and 22 Nov stay decoded, not read.** Step 1 found the print
+route the third pass could not reach: **Halphen's *Lettres inédites du roi Henri IV à monsieur de Béthune … du 18 octobre
+au 24 décembre 1601* (1889) is in full view on HathiTrust**, item `iau.31858014633857` (record 100644113, public
+domain). babel.hathitrust.org serves it only after a Cloudflare human-verification check (curl 403; the browser pane
+shows the checkbox), which this session did not pass. Opening
+https://babel.hathitrust.org/cgi/pt?id=iau.31858014633857 by hand and checking whether Halphen prints the ciphered
+passages of 9 and 22 Nov in clear is the next step; it would read both letters and give the key by alignment. No new
+image route (the transcription ceiling of the third pass stands). Not on the Internet Archive, Gallica or Google Books.
+
 Working files: `corpus.txt` (known-plaintext pairs), `ct_f33.txt` (the 9 Nov cipher, 1.5× transcription),
 `em_align.py` / `em_model.json` (EM alignment and the learned P(unit | symbol)), `decode.py` (character 5-gram
 Viterbi) and `worddecode.py` (lexicon decoder, trie over the Xivrey volumes), `decode_f33.txt` (their output),
@@ -427,7 +436,8 @@ Not in Tomokiyo (his Béthune ciphers are fr. 15975 for 1602–05 and fr. 15972 
 - 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs decoded, not read (2,849 tokens; reading audit 22 Oct 2026) - blocker: illegible; the glyph transcription (~70% accurate) caps the decode; re-transcribe on full-resolution crops, using the glossed leaves ff. 49v-50r, 53r, 56r to fix the confusable glyphs
 - 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
 - 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
-- code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: open-codes; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned
+- code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: no-key-material; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned
+- Halphen 1889 (HathiTrust iau.31858014633857, full view): may print the 9 and 22 Nov letters in clear - blocker: not-attempted; behind a human-verification page, to be opened by a person
 - clear copies in BnF Cinq cents de Colbert 346 - blocker: needs-physical-access; copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)
 
 ## Escalation
@@ -435,6 +445,6 @@ Not in Tomokiyo (his Béthune ciphers are fr. 15975 for 1602–05 and fr. 15972 
 - [x] siblings: f. 36 minute read the 10 Nov letter; glossed leaves ff. 49v-50r, 53r, 56r-57r examined
 - [x] clear-pages: f. 36 is the clear minute of f. 34; marginal glosses on ff. 53r, 56r found verbatim
 - [x] known-keys: Bazeries 1901 key for Bethune 1599 compared: same design, different values
-- [ ] print: not done - Halphen, Lettres inedites ... 18 oct - 24 dec 1601 (HathiTrust 100644113) not obtained; Xivrey, Colbert 17, fr. 3677/3678, Tomokiyo, DECODE checked
+- [ ] print: Halphen, Lettres inedites ... 18 oct - 24 dec 1601 located 22 Oct 2026 in full view on HathiTrust (iau.31858014633857) but behind human verification, not opened; Xivrey, Colbert 17, fr. 3677/3678, Tomokiyo, DECODE checked
 - [ ] key-rebuild: not done - align the eight f. 53r cipher lines (cut.py 113 ...) and the f. 56r block against their verbatim glosses to fix 66, 72 and the name figures
 - [ ] retry: not done - rerun em_align.py / decode2.py on f. 33 and ff. 46-47 after the gloss alignments

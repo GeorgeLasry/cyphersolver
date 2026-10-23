@@ -4,6 +4,15 @@ Status: in progress (21 Oct 2026): the unread letters are workable with the same
 **22 Oct 2026, reading audit** (George Lasry's test): the 4 December 1687 (92L) and 12 February 1688 (100R) cipher blocks have holes in most sentences and are now *decoded, not read* in profile.json, as the strict screen already said. fraction_read 55% -> about 49% (estimated; the two letters' 482 tokens no longer count).
 
 
+**22-23 Oct 2026, re-read (REREAD_BRIEF, batch b17).** 4 Dec 1687 and 12 Feb 1688 read as whole letters:
+`readings/1687-12-04_reading.md`, `readings/1688-02-12_reading.md` (with `_en.md`, `_corrections.tsv`; log
+`readings/1687-12-04_1688-02-12_reread_log.md`). The cipher blocks were re-read on the NA scans and every doubtful group
+looked up on the key scans: 12:908 Turcken (not getwist), 3:352 by, 11:403 Secreet, 8:48 minste, 14:455 voordragen,
+11:678 soo; 99R's last cipher line ("Gravinne van Soissons") and 100L's cipher line (11:784 de Coninginne) were missing
+from the token files. No decipherment sheets on scans 90-94 or 98-102. _check_reading.py cannot score Battier's Dutch
+(modern word list: 0.09 and 0.06); explicit holes only: 0.96 and 0.94. fraction_read about 0.61 (estimated).
+
+
 Status: read in part; **read with known key**. Two letters pass the strict sense screen without a known contemporary decipherment:
 **24 April 1687, 230/235 = 97.9% conservatively**, and 8 April 1688,
 313/323 = 96.9%, or 312/323 = 96.6% conservatively. The 19 December 1686 letter is a third
@@ -222,12 +231,12 @@ inference remains open. The Codex review is independent **software re-decoding, 
 Shifted annotations, dictionary variants and mark choices still require image checks.
 
 ## Remaining gaps
-- 24 April 1687: surplus 8=e; partly covered 5:623 gra[tie]; gehelyk, sedert dat and soo als hy; Gastanaga's exact departure condition - blocker: open-codes; the 230/235 sense screen excludes these five positions; see codex_review/review_1687-04-24.md
-- Separate decipherment sheets near 4 December 1687 and 12 February 1688 have not been checked - blocker: open-codes; comparison with nearby plaintext remains unexamined
-- Focus-letter unresolved groups and sense: 12:6?0; getwist versus inferred Turck(en); Novelli/Hofmeester, gesoubconneert gouverneren and Sex.; name repairs, 81 and other emendations in semantic_adjustments.tsv - blocker: open-codes; key lookup alone does not settle the meaning or mark choices
+- 24 April 1687: surplus 8=e; partly covered 5:623 gra[tie]; gehelyk, sedert dat and soo als hy; Gastanaga's exact departure condition - blocker: no-key-material; the 230/235 sense screen excludes these five positions; see codex_review/review_1687-04-24.md
+- Separate decipherment sheets near 4 December 1687 and 12 February 1688 - blocker: no-key-material; checked 22 Oct 2026 (b17): scans 90-94 and 98-102 hold none
+- Focus-letter unresolved groups and sense: 12:6?0; getwist versus inferred Turck(en) (settled 22 Oct 2026: 12:908 Turcken); Novelli/Hofmeester, gesoubconneert gouverneren and Sex.; name repairs, 81 and other emendations in semantic_adjustments.tsv - blocker: no-key-material; key lookup alone does not settle the meaning or mark choices
 - Unread volume letters listed individually in inv/orch_letters.tsv, including 102L and the untranscribed cipher on 95R - blocker: not-attempted; not yet transcribed; workable with the same key. Eight 1687 passages read by WAINUT (wainut/, PR #65/#67) need the 158 machine-read key rows in wainut/r24_1687/key_rows_machine.tsv eye-checked before they count
 - States General parallel set NA 1.01.02 inv. 12588.120–125 - blocker: needs-physical-access; not digitised
-- 4 Dec 1687 (92L) and 12 Feb 1688 (100R) cipher blocks: decoded, not read - blocker: not-attempted; re-read on the images against the inv. 1209 key, and check the nearby decipherment sheets
+- 4 Dec 1687 (92L) and 12 Feb 1688 (100R) cipher blocks: closed 22-23 Oct 2026 (b17), both letters read; groups still without sense (92L 889 and a-u-t-o-r-i-s-g; 91R 11:466, 14:6ø, ø94; 99R 431 374 137 512, 604; 100L 867 826 296 765; 100R the struck groups after Madrid and after gesoubconneert, 59ø ø39) - blocker: no-key-material; each looked up on the key scans, no sense in place (readings/*_corrections.tsv)
 
 ## Escalation
 - [x] siblings: all 109 scans inventoried; unread letters listed in inv/orch_letters.tsv are not yet transcribed; workable with the same key
@@ -235,7 +244,7 @@ Shifted annotations, dictionary variants and mark choices still require image ch
 - [x] known-keys: Battier's named inv. 1209 key applied; DECODE R2794 shelfmark discrepancy recorded
 - [x] print: De Leeuw (2000), DECODE, Tomokiyo, editions and NA digitised series searched; no Battier edition found; see evidence/prior_art.md
 - [x] key-rebuild: dictionary transcription and correction overrides preserved; Codex identifies remaining variants and alphabetical reversals
-- [x] retry: five focus letters re-decoded and screened for sense; unresolved readings recorded in semantic_adjustments.tsv and review_1687-04-24.md; unread letters not yet transcribed; workable with the same key
+- [x] retry: 22-23 Oct 2026 (b17) 92L, 91R, 99R, 100R re-read on the NA scans group by group and every doubtful group checked on the key scans; two untranscribed cipher runs added; 4 Dec 1687 and 12 Feb 1688 read (readings/1687-12-04_1688-02-12_reread_log.md). Earlier: five focus letters re-decoded and screened for sense; unresolved readings recorded in semantic_adjustments.tsv and review_1687-04-24.md; unread letters not yet transcribed; workable with the same key
 
 ## Files and reproduction
 
