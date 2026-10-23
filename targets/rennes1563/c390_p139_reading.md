@@ -6,6 +6,8 @@ Written out in reading form on 23 Oct 2026 (batch b33) for the bar measure; noth
 (one sign forced or missing), `[…]` = an unread run of signs (its length in signs in the aligned file). Not read: lines
 8-14 are mostly unread runs. Log: `c390_p139_reread_log.md`.
 
+r2j (23 Oct 2026): *fils* carried (plus = s, measured on the 15 Dec 1562 letter); l. 8 *[?voyaige]* proposed (ſ λ ſſ ♯ z k ß … x1 = [a]uoyaig[.]e with ß = g, Tomokiyo's beta; cf. "durant leur voyaige" of the Cardinal of Lorraine in the 15 Dec letter); see `c390_p139_reread_log.md` "r2j".
+
 ## Reading
 
-Que ie vous tienne pour trop aduise et affectione [?et] loyal [?seruiteur] du roy mon [?fils] pour vous en dormir bien en chose qui est […] et en son seruice, [?ie] ne laisseray […] vous dire qu'il [?fault] bien que vous [ayez] les yeux [?ouuerts] pour obseruer come totes [?choses] passeront en ce […]ce de mon cousin […] [?que les] […] ses actions, encores que ie n'en visse aucunement a doubter, afin [?de me] [?donner] aduis [?et] tout ce que vous congnoistre le meriter […] [?l'envoyez] […] beau frere [?se separe] de vostre […] […] bien.
+Que ie vous tienne pour trop aduise et affectione [?et] loyal [?seruiteur] du roy mon fils pour vous en dormir bien en chose qui est […] et en son seruice, [?ie] ne laisseray […] vous dire qu'il [?fault] bien que vous [ayez] les yeux [?ouuerts] pour obseruer come totes [?choses] passeront en ce [?voyaige] de mon cousin […] [?que les] […] ses actions, encores que ie n'en visse aucunement a doubter, afin [?de me] [?donner] aduis [?et] tout ce que vous congnoistre le meriter […] [?l'envoyez] […] beau frere [?se separe] de vostre […] […] bien.

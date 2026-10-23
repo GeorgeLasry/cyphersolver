@@ -425,6 +425,27 @@
    "technique": ["language-model scoring"],
    "what": "p. 139 partial reading written out from aligned/p139.txt (c390_p139_reading.md): 0.25 clean sentences (b17 fr, plain and explicit holes only); stays decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "Colbert 390 pp. 117-118 (15 Dec 1562 letter, Gallica views 59-60 at full size): cipher paragraphs transcribed sign by sign in p.139's token scheme, 27 lines, 949 signs (c390_1562-12-15_cipher.txt); pp. 125-126 inspected at band level, same sign inventory, not transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "crib",
+   "technique": ["EM alignment", "plaintext matching"],
+   "what": "Hard-EM alignment of pp. 117-118 with La Ferriere I 449-450 (printed from the decipherment joined to the letter): 852 letter emissions, 81 code/multi-letter, 16 nulls; measured th = m 26/31, ds = r 12/13, at = g 7/7, sh = y 13 / et 6 / est 6, plus = f 16 / s 3 / x 2, C = o 44 / h 3, Ls = dict 7/8, yy = (le) roy des Romains 3/3 (c390_1562-12-15_em.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["beam/DP decoding", "language-model scoring"],
+   "what": "p. 139 retried with the widened values (r2j_p139_lattice.py): 'fils' carried (plus = s); l. 8 '[?voyaige]' proposed; no other run closes, and none of p. 139's open signs (ẟao, aʓ, ℛ, ℞, ẟ + superscript) occurs in the 15 Dec letter. v2_score 0.25 (hole rate 0.276 -> 0.265); stays decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -454,8 +475,8 @@
    },
    {
     "item": "500 Colbert 390 p. 139, 30% of tokens (14% unread, 16% probable): l.2 ā, l.4 run after 'qui est', l.5 'io ƀ η', l.8 head and end, l.12 ẟao + 'aʓ' run, l.13-14 ẟao and the 'rinci' run; code words ẟ, ẟao",
-    "blocker": "not-attempted",
-    "detail": "Re-reading 23 Oct 2026: the whole volume contact-sheeted, no clear copy or decipherment of the note. Unused key source: Catherine's 15 Dec 1562 letter in the same hand (Colbert 390 pp. 118-127; cipher on p. 118 lower, pp. 119-121, 125, 127) has its ciphered paragraphs printed by La Ferriere I 449-451 from the decipherment joined to it; align it to look for ẟao, aʓ, ā, ℛ, ℞ and the ẟ code words. What it does not supply stays no-key-material; faint ink on ll. 8-14 (c390_p139_reread_log.md)."
+    "blocker": "no-key-material",
+    "detail": "r2j 23 Oct 2026: the 15 Dec 1562 letter (cipher on Colbert 390 pp. 117-118, 125-126) aligned on pp. 117-118 (949 signs, research/reading_audit/r2j_rennes_em.py, against La Ferriere I 449-450): it confirms the common-sign values (th = m, ds = r, at = g, sh = y/et/est, plus = f/s/x) but has none of p. 139's open signs (no ẟao, aʓ, ℛ, ℞, ẟ + superscript; pp. 125-126 inspected, same inventory); the retried runs do not close (c390_p139_reread_log.md, r2j). Whole volume already searched for a copy; faint ink on ll. 8-14."
    }
   ],
   "fraction_read": 0.658,
@@ -523,7 +544,7 @@
      "c390_p139_reading.md"
     ],
     "summary": "A secret note from Catherine: decipher it yourself, trust no clerk, burn it; she holds Rennes a loyal servant of the King her son and asks him to keep his eyes open to observe 'mon cousin' and his actions. The least-read of the four (about 70% strict sense).",
-    "note": "Decoded, not read: the partial reading (c390_p139_reading.md, from aligned/p139.txt) scores 0.25 clean sentences (b17 fr, both plain and explicit holes only); ll. 8-14 are mostly unread runs. Re-reading 23 Oct 2026: the whole of Colbert 390 contact-sheeted (184 views), no clear copy or decipherment of the note; the 15 Dec 1562 letter's cipher (pp. 118-127), whose paragraphs La Ferriere I 449-451 prints from the decipherment joined to it, is an unused key source - blocker: not-attempted (c390_p139_reread_log.md).",
+    "note": "Decoded, not read: the partial reading (c390_p139_reading.md) scores 0.25 clean sentences (v2_score fr, plain and explicit holes; hole rate 0.265); ll. 8-14 are mostly unread runs. r2j 23 Oct 2026: the 15 Dec 1562 letter in the same cipher (Colbert 390 pp. 117-118, 125-126; La Ferriere I 449-450 prints it from the decipherment joined to it) transcribed on pp. 117-118 (949 signs, c390_1562-12-15_cipher.txt) and aligned with the print (r2j_rennes_em.py, c390_1562-12-15_em.txt): values confirmed and widened (ds = r, plus = s, C = h, sh = est), 'fils' now carried and l. 8 '[?voyaige]' proposed; the open signs (ẟao, aʓ, ℛ, ℞, ẟ + superscript) do not occur in that letter - blocker: no-key-material.",
     "state": "decoded, not read",
     "language": "fr"
    },

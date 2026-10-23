@@ -420,7 +420,9 @@
     {"date": "2026-10-22", "kind": "access", "what": "Re-read (REREAD_BRIEF, b17): NA 3.01.18 inv. 401 scans 90-94 and 98-102 fetched full size (b17_na_fetch.py) and searched for decipherment sheets or glosses for 4 Dec 1687 and 12 Feb 1688: none (endorsements, show-through and the next letters only).", "result": "failed"},
     {"date": "2026-10-22", "kind": "transcription", "what": "92L, 91R, 99R and 100R cipher lines re-read group by group at native resolution against tokens/; two cipher runs missing from the token files transcribed (99R last line, 100L line 3); the clear text of 92R, 99R and 100L transcribed in full.", "result": "worked"},
     {"date": "2026-10-22", "kind": "verification", "technique": ["key matching", "contextual inference"], "what": "Every doubtful group looked up on the key scans (NA 1.10.29 inv. 1209, b17_keylook.py with key/colindex.txt): 12:908 Turcken, 3:352 by, 11:403 Secreet, 8:48 minste, 14:455 voordragen (c/ mark), 11:678 soo, 11:784 de Coninginne adopted; 1:889, 11:466, 1:431, 3:374, 1:512, 11:719, 1:590, 1:839, 1:867 give no sense and stay open (readings/*_corrections.tsv).", "result": "partial"},
-    {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Readings and translations of the two whole letters written (readings/1687-12-04_reading.md, 1688-02-12_reading.md, _en.md). _check_reading.py 0.093 and 0.061 (modern-Dutch word list; 0.20 with a 17th-c. Vondel/Cats lexicon); explicit holes only 0.963 and 0.939. Set read on the reading (grade B), the checker figure recorded as a word-list limitation.", "result": "worked"}
+    {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Readings and translations of the two whole letters written (readings/1687-12-04_reading.md, 1688-02-12_reading.md, _en.md). _check_reading.py 0.093 and 0.061 (modern-Dutch word list; 0.20 with a 17th-c. Vondel/Cats lexicon); explicit holes only 0.963 and 0.939. Set read on the reading (grade B), the checker figure recorded as a word-list limitation.", "result": "worked"},
+    {"date": "2026-10-23", "kind": "access", "technique": ["other"], "what": "r2j triage: NA 3.01.18 inv. 401 scans 35-36, 54-88, 93-106 fetched full size and contact-sheeted for every letter inv/orch_letters.tsv lists as not read. Seven letters/enclosures have no cipher (closed); thirteen cipher passages located (about 900 groups); scan 99 not downloadable this session.", "result": "partial"},
+    {"date": "2026-10-23", "kind": "reading", "technique": ["key matching"], "what": "Pilot on 69L (July 1687, 34 groups): transcribed and ten codes looked up on the key scans (b17_keylook.py): ll. 1-2 decode in part ('dat men namentlyk met dese declaratie ... afflictie en in Engelandt ... aanhouden'); l. 3 gives no sense with the marks as read. Not read; draft tokens kept.", "result": "failed"}
   ],
   "outcome": {
     "key": "partial",
@@ -452,9 +454,9 @@
         "detail": "12:6?0; getwist versus Turck(en); Novelli/Hofmeester; gesoubconneert gouverneren; Sex.; names, 81 and other repairs: codex_review/semantic_adjustments.tsv."
       },
       {
-        "item": "Unread volume letters in inv/orch_letters.tsv, including 102L and 95R",
-        "blocker": "no-key-material",
-        "detail": "Not yet transcribed; workable with the same key. No claim that all possible research has been exhausted."
+        "item": "Unread volume letters with cipher located 23 Oct 2026: 2 Jan 1687 35R/36L (interlinear of the time), 13 Mar 1687 54R, 55R; June 1687 67L; July 1687 69L (pilot); Aug 1687 73R; Sept 1687 78R, 80R; 18 Dec 1687 93R, 94L, 94R after l. 5; 1 Jan 1688 95R; 99L; 26 Feb 1688 102L; 11 Mar 1688 103R",
+        "blocker": "not-attempted",
+        "detail": "workable with the same key; about 900 groups; each needs its marks read group by group and most codes looked up on the key scans. Pilot on 69L (tokens/s069L_r2j_draft.txt) decodes in part; draft tokens for 102L. Letters of 10 Apr, 11/22 May, 31 Jul, 9 Oct, 23 Oct, 6 Nov 1687 and 25 Mar 1688 and the 28 Aug enclosures have no cipher (closed)."
       },
       {
         "item": "States General NA 1.01.02 inv. 12588.120–125",

@@ -61,6 +61,17 @@ contact-sheeted: no clear copy or decipherment of the note. Found an unused key 
 449-451 prints from the decipherment joined to it; p. 118 top is already written out in clear. Not aligned yet: it is
 the next step for p. 139's open signs.
 
+23 Oct 2026, second re-read (batch r2j), p. 139 against the 15 Dec 1562 letter: still **decoded, not read** (0.25,
+hole rate 0.265). The 15 Dec letter's cipher is on pp. 117 (5 lines), 118 (22), 125 (about 35) and 126 (8); pp. 119-121
+are the cursive decipherment La Ferriere printed. pp. 117-118 transcribed sign by sign (`c390_1562-12-15_cipher.txt`,
+949 signs) and aligned with La Ferriere I 449-450 (`c390_1562-12-15_plain.txt`; hard EM,
+`research/reading_audit/r2j_rennes_em.py`, table `c390_1562-12-15_em.txt`): ∂ = m 26/31, ẟ = r 12/13, ā = g 7/7,
+♯ = y/et/est, + = f/s/x, ꞓ = o/h, ℒ = *dict*, ꝩ = *(le) roy des Romains*, ∂a = *Allemaigne*. pp. 125-126 inspected:
+same inventory. **None of p. 139's open signs (ẟao, aʓ, ℛ, ℞, ẟ + superscript) occurs in the letter**, so the blocker
+is now no-key-material. p. 139 retried (`research/reading_audit/r2j_p139_lattice.py`): *fils* carried (+ = s), l. 8
+*passeront en ce [?voyaige] de mon cousin* proposed (the Cardinal of Lorraine's journey; ß = g needed); nothing else
+closes. Log: `c390_p139_reread_log.md` "r2j".
+
 Four letters in the same cipher, each read from its own image with values calibrated on
 contemporary glossed letters in the same hand (21 Sept 2026). Share of cipher signs in
 secure + probable French:
@@ -106,12 +117,12 @@ This is setup and key calibration, not a completed decipherment. No continuous r
 - f. 55 = fr3181 v36: 17 lines of cipher then clear text (Havre de Grace / Queen of England passage in clear).
 
 ## Remaining gaps
-- 500 Colbert 390 p. 139 as a whole decoded, not read (ll. 8-14 mostly unread runs and code words; reading audit 22 Oct 2026; re-read 23 Oct, 0.25) - blocker: not-attempted; align the 15 Dec 1562 cipher (Colbert 390 pp. 118-127) with La Ferrière I 449-451 and look for the open signs and the ẟ code words there (`c390_p139_reread_log.md`); what it does not supply stays no-key-material
+- 500 Colbert 390 p. 139 as a whole decoded, not read (ll. 8-14 mostly unread runs and code words; reading audit 22 Oct 2026; re-read 23 Oct, 0.25) - blocker: no-key-material; the 15 Dec 1562 cipher (pp. 117-118, 949 signs) aligned with La Ferriere I 449-450 on 23 Oct (r2j) and pp. 125-126 inspected: the open signs ẟao, aʓ, ℛ, ℞ and the ẟ + superscript code words do not occur in it, and the common-sign values it measures do not close the runs (`c390_p139_reread_log.md`)
 Measured 5 Oct 2026 with `measure.py` (strict: only words the signs give at attested values count; 2308 tokens): sense 0.79, probable 0.15, unread 0.06.
 - fr. 3181 f. 55 (0.80 sense): l.2 ꝥ, ɼ ᑲ; l.4 "10 ᑲ ɗ xy ee z r"; l.8 "ß La ᑲ ᑲ z 10 9 z"; l.9 "‡ G̃ ꜧ ᑲ ᑲ ɗ ᑲ ᑲ"; l.12 "h Ə"; slips (ayt tenu, deliberay, monstrrer, sessions) - blocker: no-key-material; the signs occur in no glossed passage in this hand (f.57-58 aligned in full); re-viewed on native crops 5 Oct, no new value
 - 500 Colbert 390 pp. 357-358 (0.82 / 0.76 sense): p.357 l.3-4 "6 d 9 ∿ io ꭓ | d λ ʒ ‡ ϑ d Z ℒ d ¢ ⊤̸ d", l.5 head, l.8 avoir / l'effect, l.13 afairres; p.358 s'offrira, esperer, [ajour/gouver]nement, lumiere, remects - blocker: no-key-material; each needs a value no gloss gives (∿ = n, sh = r)
 - 500 Colbert 392 p. 231 (0.83 sense): maue, ſ λ ², ‡‡ ~, πꝫ (twice), "ꞁꞁ ℌ z 9 ‡‡", "La ƀ ſſ z", fc 7, conseil, comme en, leurs - blocker: no-key-material; these shapes occur once or twice and in no glossed passage of Colbert 390 pp.189-231
-- 500 Colbert 390 p. 139 (0.70 sense): l.2 ā; l.4 "ſ mJ z ʓ G k ẓ ƀ"; l.5 "io ƀ η"; l.8 "ſ λ ſſ ♯ z k ß" and end; l.10-11 "de me donner" (ℊ, ‡‡ unsupported); l.12 ẟao + "ſ σ aʓ 9 ẓ La ſ ƀ"; l.13-14 ẟao + "ʓ k 9 ẓ m io ʓ η ſ ß x1"; code words ẟ, ẟao - blocker: not-attempted; ẟ+superscript are code words and ẟao, aʓ, ā occur in no gloss or key found so far; the 15 Dec 1562 letter (pp. 118-127, printed by La Ferrière) is not yet aligned
+- 500 Colbert 390 p. 139 (0.70 sense): l.2 ā; l.4 "ſ mJ z ʓ G k ẓ ƀ"; l.5 "io ƀ η"; l.8 "ſ λ ſſ ♯ z k ß" and end; l.10-11 "de me donner" (ℊ, ‡‡ unsupported); l.12 ẟao + "ſ σ aʓ 9 ẓ La ſ ƀ"; l.13-14 ẟao + "ʓ k 9 ẓ m io ʓ η ſ ß x1"; code words ẟ, ẟao - blocker: no-key-material; ẟ+superscript are code words and ẟao, aʓ occur in no gloss, key or the 15 Dec 1562 letter (aligned 23 Oct 2026, r2j: there ā = g, ẟ = r)
 
 ## Escalation
 - [x] siblings: sister volumes Colbert 391, 394, 395 surveyed (sister_volumes.md): no deciphered passage in this cipher; fr. 3181 f. 52, f. 57, f. 58 and Colbert 390 pp. 138, 189/199, 221-231, 241 opened; f. 57-58 and p. 138 give the hands' values; Colbert 392 p. 232 is the clear end of the Bourdin letter
@@ -123,6 +134,7 @@ Measured 5 Oct 2026 with `measure.py` (strict: only words the signs give at atte
 - [x] retry (5 Oct 2026): every letter re-transcribed against fresh native IIIF crops (hi2/) and re-measured strictly with measure.py; corrections in the token files' headers (c390_p139_v4.txt, c390_p357.txt, c392_p231n.txt). Strict sense 0.72 -> 0.79. 95% not reached.
 - [x] siblings (5 Oct 2026, second survey): every view of Colbert 393, 396 and fr. 3180, 3182 contact-sheeted: no cipher, gloss, decipherment or key sheet (sister_volumes.md). With 391/394/395 the whole Bochetel series is negative; re-measured, unchanged at 0.79. Remaining outside leads: Tomokiyo's source for the key table, other Bochetel/Rennes correspondence outside Colbert 390-396 (e.g. Vienna HHStA), Lasry.
 - [x] clear-pages (23 Oct 2026): all 184 views of Colbert 390 contact-sheeted (research/reading_audit/b33_rn_sheet.py): no clear copy or decipherment of p. 139; the 15 Dec 1562 letter (pp. 115-127) has printed decipherment (La Ferrière I 449-451) and is the next key source, not yet aligned
+- [x] known-keys / key-rebuild (23 Oct 2026, r2j): the 15 Dec 1562 cipher (pp. 117-118, 949 signs) aligned with La Ferriere I 449-450 by hard EM; values confirmed (∂ = m, ẟ = r, ā = g, ♯ = y/et/est) and widened (+ = s, ꞓ = h, ʒ = c); pp. 125-126 inspected, same inventory; p. 139 retried: one word carried (fils), one proposed ([?voyaige]); p. 139's code signs are not in the letter
 
 ## Push to 95% (5 Oct 2026)
 **The old 0.87 did not measure sense.** It was a hand estimate of secure + probable per letter, and "probable"

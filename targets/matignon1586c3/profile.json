@@ -244,6 +244,27 @@
    "technique": ["manual reconstruction", "contextual inference"],
    "what": "fr. 15573 ff. 379-381: Burford's literal decode divided and punctuated into a partial reading with every departure bracketed (54 [?word]s; new: 'veu la saison qui est proche de l'iuer', 'president [?Brulart]', 'baillant trois cents escus a vostre seur'), English added. b17_score.py (fr): 0.299 (20/67), explicit holes 0.433; Burford's unpunctuated normalised text scores 0.55 only because code word-breaks cut garble into short words. Kept decoded, not read.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "technique": ["other"],
+   "what": "fr. 15573 views 724-757 (ff. 368-387) contact-sheeted and ff. 377-378 read at 1400 px for a clear copy, minute or decipherment of ff. 379-381: none (ff. 377-378 are town petitions to the King; ff. 382-384 blank and address; ff. 385-386 another cipher addressed to Villeroy).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "technique": ["beam/DP decoding", "language-model scoring"],
+   "what": "research/reading_audit/r2j_lattice.py: word lattice over Burford's signs with the Henri IV letters' vocabulary, single-sign substitutions tallied per sign class. Recurring second values kept after a word-by-word check: C = h, p+ = b, b = y, g = o, Lr = n; rejected d = s, z3 = et, 9t = e (value).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["manual reconstruction", "contextual inference"],
+   "what": "ff. 379-381 re-read at every break on the full-size IIIF views (four-line bands): f. 379v l. 3 bleed-through p removed ('la dite riuiere'); reading rebuilt with the second values and look-alike alternates (28 letters, 1.2%); unbracketed words checked against the signs with r2j_matignon_carry.py and b30's unsupported words corrected. v2_score fr: explicit holes 0.344 -> 0.590 (36/61), plain 0.279 -> 0.426. Marked read (B), at the edge of the bar.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -278,8 +299,8 @@
   ],
   "class": "read in part",
   "fraction_read": 0.305,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026, signs per document: f. 276 (734) and fr. 15571 f. 179 (509) read, 1,243 of 4,079 signs (0.305); fr. 15573 ff. 379-381 (2,836) is decoded, not read. The earlier 0.9118 (3,719 of 4,079 signs in sense runs, f276/scripts/measure.py, 21 Oct 2026) is withdrawn as a reading figure.",
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "r2j, 23 Oct 2026: documents that read, by signs: f. 276 (734), fr. 15571 f. 179 (509) and fr. 15573 ff. 379-381 (2,836, read at the edge of the bar, 0.59 explicit holes) = 4,079 of 4,079 signs. Not a sense measure: the reading of ff. 379-381 keeps about 45 bracketed words and the code signs open (gaps). Revised 23 Oct 2026: ff. 379-381 kept decoded, not read at 0.59 (bar 0.60), so the fraction returns to 0.305.",
   "key": "partial",
   "codes_open": {
    "open": 8,
@@ -317,9 +338,9 @@
     "detail": "in none of the deciphered Cipher-3 letters (fr. 15572 ff. 189-190, 277-280, 282; fr. 15573 f. 373; fr. 15570 ff. 271-273)"
    },
    {
-    "item": "fr. 15573 ff. 379-381: decoded, not read (about 75 doubtful words where the signs are clear but give no word under the key)",
-    "blocker": "not-attempted",
-    "detail": "partial reading built 23 Oct 2026 (f379_381/ff379-381_reading.md, 0.30 / holes 0.43); a full sign-by-sign human re-read of views 740-745 is the next step (only f. 379r ll. 1-3 compared)"
+    "item": "fr. 15573 ff. 379-381: about 45 doubtful words where the signs are clear but give no word under the key (Bourdeaulx, nouuelle, come, faict, reuenu, semble, propos, pourroit, seroit, Brulart, fortifications, recherche, consuls, supplie, consequence, Castelnau, Bearnais ...)",
+    "blocker": "no-key-material",
+    "detail": "re-read 23 Oct 2026 (r2j) on the full-size views 740-745 at every break and checked word by word (f379_381/ff379-381_reread_log.md, r2j); the values these words need are attested in no deciphered Cipher-3 letter (ff. 189-190, 277-280, 282; fr. 15573 f. 373; fr. 15570 ff. 271-273); Monaco J 41 (Matignon's minutes) not screened"
    }
   ],
   "grades": "unknown",
@@ -388,6 +409,7 @@
    },
    {
     "doc": "fr15573-f379-381",
+    "note": "Re-read 23 Oct 2026 (r2j, Cipher-3 key, every break checked on IIIF views 740-745): reading body 0.59 on explicit holes (36/61 sentences), 0.43 plain, hole rate 0.13. Just under the 0.60 bar, applied as for r9367, ranzo1528 letter 4 and sp106r924 R924; weak spots f. 379v ll. 17-21, f. 380r ll. 1-2 and 18-22. Kept decoded, not read; the partial reading and its English stay in f379_381/ff379-381_reading.md and _en.md.",
     "label": "fr. 15573 ff. 379r-381v, autumn 1586 (Brett Burford, issue #44)",
     "transcription": [
      "f379_381/burford/f379r/signs.txt",
@@ -408,11 +430,11 @@
      "f379_381/burford/f381r/plaintext-by-line.txt",
      "f379_381/burford/f381v/plaintext-by-line.txt"
     ],
-    "translation": "f379_381/burford/ff379-381-english.md",
+    "translation": "f379_381/ff379-381_en.md",
     "summary": "A six-page despatch wholly in cipher, addressed to the King and probably from Matignon: a military report on the Guyenne campaign, the river trade on the Garonne between Toulouse and Bordeaux from which the Huguenots draw dues, Caumont and the Mas de Verdun, Castillon, the Isle and the Dordogne, the King of Navarre, 'your sister' at Agen, the artillery from Navarrenx, Marmande and fifteen to sixteen thousand crowns. Read by Brett Burford (v0.5, 19 Oct 2026); his files are copied with his licence.",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Re-read 23 Oct 2026 (b30), still decoded, not read: no contemporary decipherment or printed text exists (Tomokiyo: undeciphered; no DECODE record); views 740-745 fetched at full size. Burford's v0.5 decode divided, punctuated and translated as a partial reading (f379_381/ff379-381_reading.md, ff379-381_en.md, log ff379-381_reread_log.md, base ff379-381_alignment.tsv), every departure from the key's letters bracketed (54 [?word]s). Score 0.299 (20/67), explicit holes 0.433 (29/67): f. 379r and the end (Navarre's forces, Duras in Spain) build sentences, ff. 379v-380v mostly do not. Blockers: illegible (about 25 damaged spans), no-key-material (nine code signs), not-attempted (a full sign-by-sign re-read of the about 75 doubtful words)."
+    "reading": "f379_381/ff379-381_reading.md",
+    "state": "decoded, not read"
    }
   ],
   "key_file": [

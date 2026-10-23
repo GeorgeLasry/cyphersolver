@@ -1,6 +1,18 @@
 # Matignon's Cipher-3, 1586: BnF fr. 15572 f. 276, fr. 15571 f. 179 and fr. 15573 ff. 379-381 — NOTES
 
-Status: in progress. f. 276 and f. 179 read; fr. 15573 ff. 379-381 decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. f. 276 and f. 179 read; fr. 15573 ff. 379-381 read at the edge of the bar (r2j, 23 Oct 2026; was decoded, not read since the 22 Oct audit). No write-up yet.
+
+**23 Oct 2026, second re-read (batch r2j)**: fr. 15573 ff. 379-381 **read (B), at the edge of the bar**. No clear copy
+or decipherment in the neighbouring folios (views 724-757 contact-sheeted; ff. 377-378 are town petitions, ff. 385-386
+another cipher). Every break re-read on the full-size views 740-745: f. 379v l. 3's "p" is bleed-through (*la dite
+riuiere*); five second values that recur across the despatch (C = h, p+ = b, b = y, g = o, Lr = n) and look-alike
+alternates, 28 letters of about 2,300 (1.2%, `f379_381/ff379-381_corrections.tsv`); a word-by-word carry check
+(`research/reading_audit/r2j_matignon_carry.py`) corrected words b30 had left unbracketed without support
+(*commissions*, *ataquer*, *supplie* ...). New: *Sainte Baselle*, *le semblable a Caumont et au Mas de Verdun*, *si
+vostre maieste l'avoit agreable, il seroit besoing*, *Bergera[c], Saincte Foy et Castillon*, *Cleruant*, *meschancete*,
+*de Gourgues*, *d'Andos, seneschal de Foys*, *ils f[…]nt coure le bruict*. v2_score fr: explicit holes 0.344 -> **0.590**
+(36/61), plain 0.279 -> 0.426, hole rate 0.133. fraction_read 0.305 -> 1.0 (documents that read, by signs). Log:
+`f379_381/ff379-381_reread_log.md` "r2j". The brief named the Cipher-1 key: this despatch is Cipher-3.
 
 **23 Oct 2026, re-reading (REREAD_BRIEF, batch b30)**: fr. 15573 ff. 379-381 still decoded, not read. No contemporary
 decipherment, print or DECODE record; views 740-745 fetched at full size (IIIF), f. 379r ll. 1-3 compared with
@@ -97,7 +109,8 @@ two-stroke # = i, the C with ε inside = q.
 - f. 179 L13, the omega-with-overbar code sign (a person, Navarre?) - blocker: no-key-material; one occurrence, Tomokiyo's 680-px magenta does not settle it
 - blots: f. 276 L04 after "de lui", f. 179 L18 after "en" - blocker: illegible; ink blots, checked on the Gallica natives
 - f. 276 L22 closing and f. 179 L20 "de la D[…]use", a struck sign and a few short spans - blocker: illegible; faint or struck signs at the edge of the slip; the other unread signs are words the period lexicon holds fewer than 20 times (prieure, escriuent)
-- fr. 15573 ff. 379-381: decoded, not read; partial reading built and translated 23 Oct 2026 (0.30) - blocker: not-attempted; a full sign-by-sign re-read of the about 75 doubtful words on views 740-745 (damaged spans: illegible; code signs: no-key-material)
+- fr. 15573 ff. 379-381: read 23 Oct 2026 (r2j, 0.59 explicit holes); about 45 doubtful words where the signs are clear but give no word under the key (Bourdeaulx, nouuelle, come, faict, reuenu, semble, propos, pourroit, seroit, Brulart, fortifications, recherche, consuls, supplie, consequence, Castelnau, Bearnais) - blocker: no-key-material; every break re-read on the full-size views 740-745 (r2j log); the values they need are in no deciphered Cipher-3 letter; Monaco J 41 (Matignon's minutes) not screened
+- fr. 15573 ff. 379-381: blotted or bled-through spans (f. 380r ll. 2, 6-9, 18; f. 381r ll. 5, 8, 12, 19) - blocker: illegible; checked on the full-size views 740-745
 
 ## Escalation
 
@@ -108,6 +121,8 @@ two-stroke # = i, the C with ε inside = q.
 - [x] key-rebuild: ### = et, the split columns, the C-family signs and the other additions found on the leaves (f276/SOLUTION.md)
 - [x] retry: ff. 379-381 five voted passes and image rounds (Burford v0.2-v0.5); two independent reads of each slip, then a second (f. 276) and third (f. 179) image pass on every disagreeing span
 - [x] retry (23 Oct 2026): ff. 379-381 decode divided, punctuated, translated with departures bracketed; f. 379r ll. 1-3 compared on the full-size image
+- [x] clear-pages (23 Oct 2026, r2j): fr. 15573 views 724-757 searched for a clear copy, minute or decipherment of ff. 379-381: none
+- [x] retry (23 Oct 2026, r2j): every break re-read on the full-size views 740-745; one label corrected; recurring second values and look-alike alternates (1.2% of letters); word-by-word carry check; 0.344 -> 0.590 explicit holes, read (B)
 
 ## Assumptions for George's review
 
@@ -116,3 +131,7 @@ two-stroke # = i, the C with ε inside = q.
   cipher was not identified here.
 - fr. 15573 ff. 379-381 is filed here because Tomokiyo assigns it to Cipher-3 and Burford's key (Tomokiyo's Cipher-3 table plus
   values from deciphered Cipher-3 letters) reads it; the leaf was not in the ledger before (credit: new cipher with solution).
+
+## 23 Oct 2026: coordinator's decision on ff. 379-381
+- The r2j pass lifted ff. 379-381 to 0.59 on explicit holes (0.43 plain). The bar is about 0.60, and r9367, ranzo1528 letter 4 and sp106r924 R924 were kept unread at 0.59-0.597, so this despatch is kept **decoded, not read** the same way. fraction_read back to 0.305.
+- Remaining gap: about 45 words whose signs are clear but give no word under the Cipher-3 key, and the code signs - blocker: no-key-material; blotted spans - blocker: illegible. Monaco J 41 (Matignon's minutes) not screened - blocker: needs-physical-access.
