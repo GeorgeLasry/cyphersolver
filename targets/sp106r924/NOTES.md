@@ -2,6 +2,8 @@
 
 Status: in progress. Read 23 Oct 2026 (b35) from Lasry's key; writer Henry Jermyn (Sams); 85 code tokens open.
 
+**24 Oct 2026, Lasry permission** (Claude Opus 5.5): George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution. His plaintext (D3090) is now in the repository as `lasry/R924_decryption.txt` (verbatim, attribution header), and the reading and English carry the credit line. read_share re-measured: see profile; state *read in part* (85 code tokens (58 distinct) his key lacks are the holes; four sense-valued codes count as holes). Credit: George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026).
+
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's plaintext of R924 is on the DECODE record only; the git-ignored copy is in no checkout, so nothing of the letter could be read. R924 is *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.9195 -> 0 (the old figure was key coverage).
 
 Split on 14 Oct 2026 from `hm1645` under the one-key rule (George Lasry, 14 Oct 2026). The old entry (catalogue 59)

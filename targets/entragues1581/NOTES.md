@@ -2,6 +2,8 @@
 
 Status: no write-up of our own (result by George Lasry, presented on docs/entragues1581.html)
 
+**24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 15906 — ff759r–760v, ff780r–781v): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
+
 One key assumed, not tested (14 Oct 2026, one-key-per-entry audit): the entry joins two letters, ff. 759r-760v (the England enterprise) and ff. 780r-781v (a prisoner's statements), under the one name key of f. 761r ('Copia d una cifra trovata', 28 signs) and one count. The spot-check covered f. 759v and f. 761r only; that the ff. 780-781 signs belong to the f. 761r key is assumed from his report, not tested. Kept as one entry (verdict UNCLEAR, not split); to be settled by checking the ff. 780-781 signs against f. 761r. The sender 'd'Entragues' may also be wrong for ff. 759 (the writer names 'mons. d'Entragues' in the third person).
 
 ## Source

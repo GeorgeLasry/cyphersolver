@@ -90,7 +90,8 @@
       "what": "Spot-check against the Gallica image (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90582908/f21/pct:0,0,52,100/1400,/0/default.jpg): f9v rows 10-13 (canvas 21): contemporary Italian interlinear \"luogo di queste parti doppo la reductione di Parigi non abbiamo auto qui alcuna lettere di Mr di Revol ne daltri ne fatta alcuna dimostratione di ralegramento con noi et si va dubitando...\" = his excerpt Verdict: confirmed.",
       "result": "worked"
     },
-    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"},
+    {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 4700 — Gondi symbol cipher, ff9r–10r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"}
   ],
   "outcome": {
     "class": "already solved",

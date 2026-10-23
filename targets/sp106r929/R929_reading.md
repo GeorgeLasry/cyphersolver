@@ -2,6 +2,8 @@
 
 # R929, SP 106/10 f. 247: Paris, 26 January [1646], to "Sir"
 
+Credit: George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026)
+
 Header: one letter, eighteen lines written sideways across the lower part of the leaf and three lines in the margin; a
 seal on the outer fold.
 

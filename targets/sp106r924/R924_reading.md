@@ -1,5 +1,7 @@
 # R924 (TNA SP 106/10 ff. 235-236), Paris, 26 January [1646]: reading
 
+Credit: George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026)
+
 Rests on: George Lasry's key "TNA SP106-8" and his plaintext (DECODE R924, 23 Oct 2020), applied here afresh to
 Pettersson's transcription (`research/reading_audit/b35_r924dec.py`; signs as decoded: `R924_signs.txt`,
 corrections `R924_corrections.tsv`, decode `R924_decode.txt`). Figures below 100 with no key value are nulls (they

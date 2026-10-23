@@ -157,7 +157,8 @@
    "what": "Decoded with b36_sp106.py beside Lasry's plaintext (all letter groups agree); reading written in the figures' spelling (R929_reading.md, R929_en.md), aligned word by word with the decode, no supplied words. b17 on the body: 0.273 plain, 0.727 explicit holes (English 1646). Set read, grade B.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-10-24", "kind": "reading", "what": "George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution: his plaintext file D3083 saved verbatim with an attribution header as lasry/R929_decryption.txt; credit added to R929_reading.md and R929_en.md; read_share re-measured on the reading (v10_relabel.measure); state read in part.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -195,7 +196,7 @@
    {
     "who": "lasry",
     "role": "key or decipherment used",
-    "note": "reconstructed key 'TNA SP106-5' (Jan 1646) and interlinear plaintext of ff. 245-247; the key applied here to f. 247",
+    "note": "reconstructed key 'TNA SP106-5' (Jan 1646) and interlinear plaintext of ff. 245-247; the key applied here to f. 247; George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026)",
     "date": "2020-10-23",
     "source": "DECODE R929 record files"
    },
@@ -217,7 +218,8 @@
     ],
     "decryption": [
      "R929_reading.md",
-     "https://de-crypt.org/decrypt-web/RecordsView/929"
+     "https://de-crypt.org/decrypt-web/RecordsView/929",
+     "lasry/R929_decryption.txt"
     ],
     "summary": "Henrietta Maria's household at Paris to 'Sir', 26 Jan [1646]: the Queen has his letters of 26 Dec and 4 Jan and thanks him for his weekly reports of the King's affairs; however bad they are, the writer hopes they can hold out without further losses until the efforts at Paris for the King's relief take effect; for that, and for the embassy and the Portuguese marriage, he refers him to the King's letters.",
     "language": "en",
@@ -227,11 +229,11 @@
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "Built from the figures (Pettersson's transcription corrected in ten places on the full-size image, R929_signs.txt) decoded with Lasry's SP106-5 key plus o2 = WE; every letter group agrees with Lasry's plaintext (DECODE D3083/D3084, compared, not copied). Nine code values read here from context: 425 your, 429 you, e3 her, 241 King (two or more contexts), 334 Queen, 199 give, 208 Majesty, 319 Port(ugall), 259 letter (one context or sense). b17 on the body 0.273 plain, 0.727 explicit holes (English 1646); 566, 554, 620 and the signature codes open."
+     "date": "2026-10-24",
+     "note": "Reading built from the figures with Lasry's key and checked against his decryption on DECODE R929 (D3083, now saved verbatim as lasry/R929_decryption.txt with his permission, 24 Oct 2026); coherent sentences; 566, 554, 620 and the signature codes are the holes."
     },
     "read_share": 0.893,
-    "note": "24 Oct 2026: 89.3% of the words of R929_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "note": "24 Oct 2026: George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution; his plaintext is saved verbatim (lasry/R929_decryption.txt) and credited on the reading and English. read_share measured on R929_reading.md (v10): coherent but under the 95% bar, so read in part; 566, 554, 620 and the signature codes are the holes."
    }
   ]
  }

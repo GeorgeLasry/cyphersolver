@@ -2,6 +2,8 @@
 
 Status: no write-up of our own (result by George Lasry, presented on docs/vergier1696.html)
 
+**24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Clairambault 1108): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
+
 Report slug: `vergier1690`.
 
 ## Source

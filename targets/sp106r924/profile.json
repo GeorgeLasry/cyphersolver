@@ -152,6 +152,12 @@
    "what": "Verify sweep (reading audit v2): R924 reading re-scored with the 16 words that rest on the four sense-valued codes (168 hope, 116 can, 334 what, 227 new) as holes (research/reading_audit/v2_score.py): 0.649 -> 0.597 (46/77) explicit holes, 0.545 -> 0.494 plain; the same 0.597 without 227, which Lasry's plaintext carries. Under the bar; demoted to decoded, not read, fraction_read 0. Class already solved kept (Lasry's decipherment on DECODE).",
    "result": "failed",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "reading",
+   "what": "George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution: his plaintext file D3090 saved verbatim with an attribution header as lasry/R924_decryption.txt; credit added to R924_reading.md and R924_en.md; read_share re-measured on the reading (v10_relabel.measure); state read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -190,7 +196,7 @@
    {
     "who": "lasry",
     "role": "key or decipherment used",
-    "note": "reconstructed key 'TNA SP106-8' (Jan 1646) and interlinear plaintext of R924, with dating notes",
+    "note": "reconstructed key 'TNA SP106-8' (Jan 1646) and interlinear plaintext of R924, with dating notes; George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026)",
     "date": "2020-10-23",
     "source": "DECODE R924 record files"
    },
@@ -206,13 +212,20 @@
     "doc": "R924",
     "label": "R924, Paris, January 1646",
     "transcription": ["R924_signs.txt", "https://de-crypt.org/decrypt-web/RecordsView/924"],
-    "decryption": ["https://de-crypt.org/decrypt-web/RecordsView/924", "R924_reading.md"],
+    "decryption": ["https://de-crypt.org/decrypt-web/RecordsView/924", "R924_reading.md", "lasry/R924_decryption.txt"],
     "summary": "A writer at Paris to Charles I against Sir H. Compton's journey and the treaty for Prince Charles's marriage with Portugal, on Montreuil's mission, the frost that stopped the river traffic, and levies of five or six thousand men to send over.",
     "language": "en",
-    "state": "decoded, not read",
+    "state": "read in part",
     "reading": "R924_reading.md",
     "translation": "R924_en.md",
-    "note": "Verify sweep 23 Oct 2026 (reading audit v2): back to decoded, not read. The b35 reading (R924_reading.md, kept as a partial reading) scored 0.649 (50/77) on explicit holes with four code values set by sense: 168 hope (7x; Lasry hold), 116 can (5x; Lasry brought), 334 what (2x), 227 new (2x; Lasry's plaintext has NEW). Counting the 16 words as holes gives 0.597 (46/77; 0.494 plain); without 227, which Lasry's plaintext carries, also 0.597. Under the bar, with code holes (85 tokens, 58 distinct) in most sentences. Lasry's own plaintext (HOLD, BROUGHT) does not read at those places either. Blockers: no-key-material (the open three-digit codes; Lasry's key lacks them) and needs-physical-access (Eric Sams's 1976 decipherment, Bodleian / Ian Roy papers)."
+    "note": "24 Oct 2026: George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution; his plaintext is saved verbatim (lasry/R924_decryption.txt) and credited on the reading and English. read_share measured on R924_reading.md (v10): coherent but under the 95% bar, so read in part; 85 code tokens (58 distinct) his key lacks are the holes; four sense-valued codes count as holes.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-24",
+     "note": "Reading built from the figures with Lasry's key and checked against his decryption on DECODE R924 (D3090, now saved verbatim as lasry/R924_decryption.txt with his permission, 24 Oct 2026); coherent sentences; 85 code tokens (58 distinct) his key lacks are the holes; four sense-valued codes count as holes."
+    },
+    "read_share": 0.894
    }
   ]
  }

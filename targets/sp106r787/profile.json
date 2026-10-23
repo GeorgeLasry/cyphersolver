@@ -145,6 +145,12 @@
    "what": "R787_reading.md built from the decode with 13 encipherer's slips marked [?word] (0.8% of letters) and 116 = lettre adopted by sense (five occurrences); aligned with the decode letter by letter. Score 0.457 plain, 0.657 explicit holes: nomenclator numbers in most sentences. Kept decoded, not read.",
    "result": "partial",
    "technique": ["language-model scoring", "manual reconstruction", "contextual inference"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "reading",
+   "what": "George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution: his plaintext file D3072 saved verbatim with an attribution header as lasry/R787_decryption.txt; credit added to R787_reading.md and R787_en.md; read_share re-measured on the reading (v10_relabel.measure); state read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -182,7 +188,7 @@
    {
     "who": "lasry",
     "role": "key or decipherment used",
-    "note": "reconstructed key 'TNA SP106-2' (July-Aug 1645) and interlinear plaintext of R787, with dating notes",
+    "note": "reconstructed key 'TNA SP106-2' (July-Aug 1645) and interlinear plaintext of R787, with dating notes; George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026)",
     "date": "2020-10-23",
     "source": "DECODE R787 record files"
    },
@@ -198,12 +204,20 @@
     "doc": "R787",
     "label": "R787, 19/29 July 1645",
     "transcription": ["R787_signs.txt", "R787_margin_signs.txt", "https://de-crypt.org/decrypt-web/RecordsView/787"],
-    "decryption": ["https://de-crypt.org/decrypt-web/RecordsView/787", "R787_reading.md"],
+    "decryption": ["https://de-crypt.org/decrypt-web/RecordsView/787", "R787_reading.md", "lasry/R787_decryption.txt"],
     "summary": "A French news letter (a duplicate) forwarded to Henrietta Maria's household: the Parlement de Paris and the duc d'\u00c9pernon, an envoy refusing to be heard except as ambassador, Enghien taking Heidelberg, the fort of Linck taken, Piccolomini entrenched round Dunkirk, a check to Montrose.",
-    "note": "Re-read 23 Oct 2026 (b35, R787_reread_log.md): Lasry's plaintext fetched and checked group by group; a covering note in cipher in the margins of f. 217, in no transcription, found and deciphered (the duplicate forwarded 23 Aug O.S. with a packet 'from the court'); R787_reading.md with English. Reading body 0.457 plain (0.657 explicit holes): the nomenclator numbers (64, 103, 61, 62 ...) fall in most sentences. Kept decoded, not read; blocker no-key-material.",
+    "note": "24 Oct 2026: George Lasry gave permission on 24 Oct 2026 to use his DECODE decryptions with attribution; his plaintext is saved verbatim (lasry/R787_decryption.txt) and credited on the reading and English. read_share measured on R787_reading.md (v10): coherent but under the 95% bar, so read in part; the nomenclator numbers his key lacks (64, 103, 61, 62 ...) are the holes.",
     "language": "fr",
-    "state": "decoded, not read",
-    "translation": "R787_en.md"
+    "state": "read in part",
+    "translation": "R787_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-24",
+     "note": "Reading built from the figures with Lasry's key and checked against his decryption on DECODE R787 (D3072, now saved verbatim as lasry/R787_decryption.txt with his permission, 24 Oct 2026); coherent sentences; the nomenclator numbers his key lacks (64, 103, 61, 62 ...) are the holes."
+    },
+    "read_share": 0.891,
+    "reading": "R787_reading.md"
    }
   ]
  }

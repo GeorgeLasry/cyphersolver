@@ -1,5 +1,7 @@
 # R787 (TNA SP 106/10 ff. 216-217), 19/29 July 1645: reading
 
+Credit: George Lasry (decryption on DECODE, used with his permission, 24 Oct 2026)
+
 Rests on: George Lasry's key "TNA SP106-2" and his plaintext (DECODE R787, 23 Oct 2020), checked group by group
 against Pettersson's transcription and, at every doubtful place, against the DECODE images at full size; the covering
 note in the margins of f. 217 is transcribed and deciphered here for the first time (`R787_margin_signs.txt`). Signs

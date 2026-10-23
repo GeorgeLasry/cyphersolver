@@ -2,6 +2,8 @@
 
 Status: no write-up of our own (result by George Lasry, presented on docs/scipion1585.html)
 
+**24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 4696 / 4698 — graphical cipher, ff5r/62r–v, ff30r–): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the repository holds only
 his three-line excerpt of f62v, which reads with two `?` and has his translation (reviewed B in `profile.json`). His
 37.3% of elements identified is key coverage, not a reading figure; his report says most of the letters are only

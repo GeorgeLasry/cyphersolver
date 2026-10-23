@@ -2,6 +2,8 @@
 
 Status: in progress. Lasry's reading; only four pages of tokens and three excerpts are in the repository (reading audit, 22 Oct 2026).
 
+**24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (NAF 11355 — Emperor–Empress code): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
+
 **22 Oct 2026, reading audit** (George Lasry's test): the token table of ff. 9r, 15r, 17r, 18r, taken in order, builds French sentences, and the three report excerpts (ff. 19r, 35r, 27r) read; both are *excerpts* of Lasry's reading, whose full text is not in the repository. Krajcovic's corrections file is *not prose*. fraction_read 0.841 (Lasry's identified elements) -> about 0.31, what the repository shows.
 
 Earlier status (before the 22 Oct 2026 reading audit): no write-up of our own (result by George Lasry, presented on docs/eugenie1859.html)
