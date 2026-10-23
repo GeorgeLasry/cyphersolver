@@ -484,3 +484,7 @@ about 30 s; it prints every number above and writes the files below); `align/R*.
 register piece and the status); `pool.tsv` (every group over all ten letters); `key_conflicts.tsv`;
 `open_groups.tsv`; `settled.tsv` (written by hand from the script's output). No images: the scans are on the NA viewer
 at the links above.
+
+## 23 Oct 2026: R1054 and R1064 back to decoded, not read (translation wave)
+- R1054 (keyed decode with codes, 0.54 explicit holes) and R1064 (0.57; paragraphs 9-13 do not build) fall under the 0.60 bar and are set to **decoded, not read**. fraction_read 0.941 -> about 0.76 (estimated).
+- Remaining gap: R1054, R1064 code groups with no key value - blocker: no-key-material.

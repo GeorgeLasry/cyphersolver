@@ -411,9 +411,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.941,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after both passes of Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,761/9,306 groups: Lyonet-deciphered letters (3,486) counted read, the ten letters with no decipherment on DECODE 5,275/5,820 = 0.906. First pass only: 8,492 (0.913). 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts.",
+  "fraction_read": 0.76,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after both passes of Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,761/9,306 groups: Lyonet-deciphered letters (3,486) counted read, the ten letters with no decipherment on DECODE 5,275/5,820 = 0.906. First pass only: 8,492 (0.913). 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts. Revised 23 Oct 2026 (translation wave): R1054 and R1064 moved to decoded, not read (0.54, 0.57); 0.941 reduced by their share of the decryption words (2,198 of 11,625).",
   "key": "partial",
   "codes_open": {
    "tokens_open": 1024
@@ -477,7 +477,8 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1052_en.md"
    },
    {
     "doc": "codeAB",
@@ -491,21 +492,18 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1053_en.md"
    },
    {
     "doc": "codeAB",
+    "note": "23 Oct 2026 (translation wave v7): R1054's keyed decode with codes scores 0.54 on explicit holes; under the bar. Kept decoded, not read.",
     "label": "R1054, 19 Jul 1757",
     "transcription": "decode/DOC_R1054_D2332_2332.txt",
     "decryption": "read/R1054.md",
     "summary": "The purpose of the Gouvernante's (Princess Anne's) journey to The Hague is not known. Some think she comes to push an augmentation of the land forces; her (pro-Orange / anti-French) party and even the ministers are starting to raise alarm; others say she wants a naval augmentation.",
     "language": "fr",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
-    }
+    "state": "decoded, not read"
    },
    {
     "doc": "codeAB",
@@ -519,7 +517,8 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1062_en.md"
    },
    {
     "doc": "codeAB",
@@ -533,20 +532,17 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1063_en.md"
    },
    {
     "doc": "codeAB",
+    "note": "23 Oct 2026 (translation wave v7): R1064 scores 0.57 on explicit holes, paragraphs 9-13 do not build. Kept decoded, not read.",
     "label": "R1064, 1 Feb 1757, no. 136",
     "transcription": "transcr/R1064.txt",
     "decryption": "read/R1064.md",
     "language": "fr",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
-    }
+    "state": "decoded, not read"
    },
    {
     "doc": "codeAB",
@@ -560,7 +556,8 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1065_en.md"
    },
    {
     "doc": "codeAB",
@@ -574,7 +571,8 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1066_en.md"
    },
    {
     "doc": "codeAB",
@@ -590,7 +588,8 @@
      "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1067.md scored plain 0.562, explicit 0.667 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 148R-150L, WAINUT transcription checked against the scans); 1,227/1,465 keyed groups at the register word (0.838; shuffled 0.141). Reading now follows the register in the clerk's spelling, read/R1067_reading.md: plain 0.821 (69/84), explicit 1.0 (84/84); the 15 sentences under the plain bar fail only on names and titles (Mr, Consr Pensionaire, Borssele, Lesseps, Yorke, Moras, Emmerick, Oostfrise) and the clerk's spellings (conuenoit, Batimens). Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
     },
     "reading": "read/R1067_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1067_en.md"
    },
    {
     "doc": "codeAB",
@@ -606,7 +605,8 @@
      "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1068.md scored plain 0.2, explicit 0.6 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 181L, WAINUT transcription checked against the scans); 46/56 keyed groups at the register word (0.821; shuffled 0.089). Reading now follows the register in the clerk's spelling, read/R1068_reading.md: plain 0.75 (3/4), explicit 1.0 (4/4); the one sentence under the plain bar fails only on \"Mr. de Colloredo\". Keeps read, grade A. Earlier: Short note (60 groups): the reading builds three sentences (a courier from Vienna to London, Colloredo to pass the answer to Starhemberg) and agrees with the clerk's clear copy in the Fagel register (inv. 5186 scan 181L); the low score is the note's brevity and braces."
     },
     "reading": "read/R1068_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1068_en.md"
    },
    {
     "doc": "codeAB",
@@ -620,7 +620,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "v5 check 23 Oct 2026 (1757, French): plain/R1069.txt is Lyonet's contemporary clear decipherment, one paragraph, no header. Plain 0.5 (11/22), explicit 1.0 (22/22): every one of the 11 sentences under the plain bar fails only on 'Mr' and the names Saltikof, Golofkin, Laurenzi, Yorke, Moras, St Sauveur, or period spellings (addresser, validée, desobligeroit, interressent); no real hole. Read as a reader every sentence holds. Keeps read. Earlier: Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1069_en.md"
    },
    {
     "doc": "codeAB",
@@ -636,7 +637,8 @@
      "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1070.md scored plain 0.538, explicit 0.654 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 255R-256L, WAINUT transcription checked against the scans); 249/395 keyed groups at the register word (0.630; shuffled 0.113); the unplaced groups 0-125 are the end of the letter on image I5590 and follow the register's last lines by eye. Reading now follows the register in the clerk's spelling, read/R1070_reading.md: plain 0.923 (24/26), explicit 1.0 (26/26). Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
     },
     "reading": "read/R1070_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1070_en.md"
    },
    {
     "doc": "codeAB",
@@ -652,7 +654,8 @@
      "note": "v3 verification 23 Oct 2026: the keyed decode read/R1072.md scored 0.366 explicit-hole (0.268 plain), below the bar. Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 scans 13R-14L, WAINUT transcription checked line by line against the scans); 438/530 keyed groups stand at the register's word (0.826, shuffled key 0.140). Reading now follows the register in the clerk's spelling, read/R1072_reading.md: 1.0 explicit-hole, 0.871 plain."
     },
     "reading": "read/R1072_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1072_en.md"
    },
    {
     "doc": "codeAB",
@@ -668,7 +671,8 @@
      "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1073.md scored plain 0.5, explicit 0.667 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 42R, WAINUT transcription checked against the scans); 264/309 keyed groups at the register word (0.854; shuffled 0.103). Reading now follows the register in the clerk's spelling, read/R1073_reading.md: plain 1.0 (19/19), explicit 1.0. Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
     },
     "reading": "read/R1073_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1073_en.md"
    },
    {
     "doc": "codeAB",
@@ -684,7 +688,8 @@
      "note": "v3 verification 23 Oct 2026: the keyed decode read/R1074.md scored 0.538 explicit-hole (0.333 plain). Workable: the clear copy of the Astier extract and d'Affry's news is in the Fagel register (NA 1.10.29 inv. 5187 scans 15L-15R, checked against the scans); 392/494 keyed groups stand at the register's word (0.794, shuffled 0.148). Reading follows the register, read/R1074_reading.md: 1.0 explicit-hole, 0.967 plain."
     },
     "reading": "read/R1074_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1074_en.md"
    },
    {
     "doc": "codeAB",
@@ -698,7 +703,8 @@
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Lyonet's contemporary clear decipherment: clean French prose."
-    }
+    },
+    "translation": "plain/R1075_en.md"
    },
    {
     "doc": "codeAB",
@@ -714,7 +720,8 @@
      "note": "v5 check 23 Oct 2026 (1757, French, modern-enough spelling: the plain share is a bar too): the keyed decode read/R1076.md scored plain 0.407, explicit 0.667 on its body, below the bar (open codes, brace-inferred syllables). Workable: the contemporary clear copy is in the Fagel register (NA 1.10.29 inv. 5186 16R-17L, WAINUT transcription checked against the scans); 229/396 keyed groups at the register word (0.578; shuffled 0.106); page 1 (groups 0-156) unplaced by the aligner but its keyed decode follows the register's 17L text in order; three register stretches have no matching cipher run (clear periods or cipher not imaged); two register slips corrected from the figures (sans la Tempette; je lui parlai). Reading now follows the register in the clerk's spelling, read/R1076_reading.md: plain 0.974 (37/38), explicit 1.0. Keeps read, grade A. Earlier: Keyed reading builds French sentences with scattered bracketed codes and brace-inferred syllables (read 22 Oct 2026)."
     },
     "reading": "read/R1076_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R1076_en.md"
    },
    {
     "doc": "R2067",
@@ -730,7 +737,8 @@
      "note": "v3 verification 23 Oct 2026: the keyed decode read/R2067.md scored 0.588 explicit-hole (0.529 plain). Workable: the clear copy is in the Fagel register (NA 1.10.29 inv. 5187 scans 14R-15L, checked against the scans); 334/434 keyed groups stand at the register's word (0.770, shuffled 0.133). Reading follows the register, read/R2067_reading.md (two clerk's dotted gaps as holes): 1.0 explicit-hole, 0.933 plain."
     },
     "reading": "read/R2067_reading.md",
-    "state": "read"
+    "state": "read",
+    "translation": "read/R2067_en.md"
    }
   ],
   "key_file": [

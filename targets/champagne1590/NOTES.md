@@ -131,3 +131,7 @@ Measured on this entry's documents (14 Oct 2026): 63 of 104 figures of nos. 24/2
 - [x] print: Tomokiyo nevers.htm and GL.htm, Memoires de Nevers index: no printed decipherment
 - [x] key-rebuild: table bracketed by alphabetical order, the anchored slots filled; 3 Oct 2026 exhaustive LM search of the bracketed values (anneal_twodigit.py), none verifies on a second occurrence; the code numbers have no gloss to fit
 - [x] retry: all ten runs re-scored with the bracketed candidates (3 Oct 2026); no change in the count
+
+## 23 Oct 2026: no document reads (translation wave)
+- Nos. 24, 25, 60: the repository holds a table of 10 short cipher runs, 6 of them with codes that have no key value or unread; no. 78: its one cipher group is unread. Both entries are **decoded, not read**; class not read, method not solved, fraction 0.
+- Remaining gap: the code groups with no key value - blocker: no-key-material.
