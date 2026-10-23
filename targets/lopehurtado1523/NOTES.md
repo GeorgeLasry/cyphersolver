@@ -1,7 +1,22 @@
 # Lope Hurtado de Mendoza (Rome) to Charles V, 1523–24 — catalogue no. 148
 
-Status: in progress (read in part; retry step open)
-
+Status: in progress (read in part: R9846, R9866, R9868, R9869 read; R9867 and the 1523 letters open)
+
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch b07; `R9667-R9869_reread_log.md`):**
+* **Read now** (clean-sentence share of the reading body): **R9866** 0.667, **R9868** 0.638, **R9869** 0.622 (grade B).
+  `<doc>_reading.md`, `<doc>_en.md`, `<doc>_corrections.tsv`. Every cipher run re-read on full-resolution crops of the
+  DECODE images: most "unread" letters were look-alike labels, not missing key: the ß-like a transcribed `ʇʇ` (r),
+  `y ʇʇ` = one sign ɣ̶ (g: coligados, enemigos, colegio), m̶ = f or c, ʒ = p. R9868 f. 430v now reads (Colonna for
+  protector; Vespasiano obeys him as he did his father Prospero). R9869's f. 444v clear transcribed in full.
+* **Still decoded, not read**: R9867 (0.389, open codes); R9683 and R9667 (the clear carries the whole-letter score,
+  0.636 and 0.767, but their cipher passages do not build sentences: 1523 sign set not in the 1524 key, no crib);
+  R9695 not attempted further. Partial readings kept for R9867, R9683, R9667.
+* New probable code values (key files unchanged): zm = como, ʃeg = tengo, zub = alla (1522), zad ~ zed (arçobispo).
+* No existing text: no decipherment on the images; RAH Biblioteca Digital behind a bot check (not passed).
+* R9846 English written (`R9846_en.md`). Method now key recovered based on adjacent plaintext (three letters with the
+  rebuilt key); fraction_read 0.23 -> 0.66 (estimated, tokens of the letters that read).
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 * **Read**: R9846 ff. 130r-v, from the clerk's contemporary clear on f. 133r (`r9846_clear.txt`), which covers the
   transcribed cipher clause for clause. English translation still to be written.
@@ -71,18 +86,14 @@ The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Dig
 
 ## Remaining gaps
 
-- R9667 (5 May 1523), decoded, not read - blocker: open-codes; no crib, CSP 548 abstract only
-- R9683 (June 1523), decoded, not read - blocker: open-codes
-- R9695 (8 July 1523), decoded, not read - blocker: open-codes
-- R9866 (28 Feb 1524), decoded, not read - blocker: open-codes
-- R9867 (4 Jan 1524), decoded, not read - blocker: open-codes
-- R9868 (20 Mar 1524), decoded, not read - blocker: open-codes
-- R9869 (28 Mar 1524), decoded, not read - blocker: open-codes
-- R9846 reading: English translation not yet written - blocker: not-attempted
-- R9667 (9/28 ff. 6-9), cipher runs - blocker: open-codes; no crib (the 'Claro' is Najera's); only fragments read; CSP Spain ii 548 gives the content from a lost decipherment
-- R9846 ff. 130v-132v beyond the crib third - blocker: needs-physical-access; f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital, Salazar A-30
-- About 30 code groups (xun, xor, zad, sal, sub, rub vs yub ...) across R9683, R9695, R9866, R9867, R9868, R9869 - blocker: open-codes; each without a crib; readings a quarter to two thirds per letter
-- Look-alike signs (d vs barred d, two- vs three-bar crosses, barred m = f or c) - blocker: illegible; not separable at DECODE resolution
+- R9667 (5 May 1523), cipher runs decoded, not read - blocker: open-codes (1523 sign set, no crib); needs-physical-access for the contemporary decipherment CSP 548 used (RAH Salazar A-28)
+- R9683 (June 1523), cipher passage decoded, not read - blocker: open-codes (1523 sign set, no crib)
+- R9695 (8 July 1523), decoded, not read - blocker: open-codes; not attempted further on 22 Oct (struck autograph draft)
+- R9867 (4 Jan 1524), decoded, not read (0.389) - blocker: open-codes (rub, ʃug, tol, xer, xal, xir, ʃal, co, ℮, ʃφ)
+- R9866, R9868, R9869: read 22 Oct 2026 (b07); scattered holes on open codes - blocker: open-codes
+- R9846 ff. 130v-132v beyond the crib third - blocker: needs-physical-access; f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital (bot check), Salazar A-30
+- About 20 code groups (rub, ʃug, zid, tol, tid, zib, xer, xir, xal, ʃal, yab, tas, toc, yic, co ...) - blocker: open-codes; no crib
+- Look-alike signs - mostly resolved word by word on 22 Oct (`<doc>_corrections.tsv`); the rest blocker: illegible at DECODE resolution
 
 ## Escalation
 
@@ -91,4 +102,4 @@ The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Dig
 - [x] known-keys: the 1522 key applied; 25 codes and n/e/a/o re-confirmed, tef and L shown to have moved
 - [x] print: Bergenroth CSP Spain ii pp. 547-709 grepped by Salazar folio: nos. 548 and 617, the other six not calendared
 - [x] key-rebuild: key_1524.tsv (105 values, 65 confirmed) plus 1523/1524 additions from exact-count runs
-- [ ] retry: not done — use the CSP 548 and 617 abstracts as cribs for R9667 and R9846 ff. 130v-132v, then rerun the ~30 open codes across all six letters with LM context
+- [x] retry: 21 Sept merged key and open-code pass (`retry_2026-09-21.md`); 22 Oct sign-by-sign re-read on the images (b07): R9866, R9868, R9869 read; CSP 548 used for R9667 run C only
