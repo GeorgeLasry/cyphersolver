@@ -114,9 +114,10 @@ is kept but should be checked against the hand of the brothers' other letters.
 Result: 155 of 181 groups read as sense = **0.856** (was 0.82). With the tier-B proposals it would be 0.961, but
 those are context fits, not readings. Not at 95%.
 
+Closed 23 Oct 2026 (b37): R5029 as a running text, clear text transcribed in full, `R5029_reading.md` read (grade B).
+
 ## Remaining gaps
 - 19 nomenclator codes (26 groups): 101, 102, 111, 130, 131, 139, 146, 149, 151, 164, 168, 172, 181, 182, 204, 205, 206, 209, 225 - blocker: no-key-material; no gloss in the four sibling letters R5025-R5028; alphabetical bracketing gives proposals for 13 of them (tier B in dec.py) but not proofs. A further sibling with these codes glossed (the brothers' other 1721-23 letters in SOA Plzen karton 202, not on DECODE) would settle them.
-- R5029 as a running text: closed 23 Oct 2026 (b37), clear text transcribed in full, `R5029_reading.md` read (grade B)
 - five clear words read with doubt ([?hisp.] twice, [?Breunsche], [?abfertige], [?ausstrechen]) - blocker: illegible
 
 ## Escalation
