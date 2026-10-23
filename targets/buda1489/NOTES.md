@@ -150,6 +150,7 @@ cart. 650, 1489 no. 8**, not 642; 267/268 are cart. 642, April no. 6 / 6 bis. pr
   numbered lines (p. 1 ll. 1-15 0.562, ll. 16-29 0.375, p. 2 ll. 1-16 0.619); no print or contemporary copy exists. Now
   decoded, not read; the partial reading stays in `v2831_reading.md`. Next step: the R5411 re-read of these pages.
 - fraction_read 0.56 -> 0.099 (R1098's 10 of 101 cipher lines), estimated.
+- Closed: R1098 ll. 5, 6 and 9, re-read with R5411 and aligned with MDE IV no. 91 (`r1098_v3_reading.md`).
 
 ## Remaining gaps
 - 2831 p. 1, p. 2 ll. 1-16 and the p. 4 cipher lines (demoted 23 Oct 2026, v3: 0.519 explicit-hole) - blocker: not-attempted; the original key R5411 has not been applied to these pages; a sign-by-sign re-read from the plates with key_R5411.md, as b25 did for p. 2 ll. 17-30 and p. 3, is the next step
@@ -159,7 +160,6 @@ and R1158 are other ciphers and are not part of this reading.
 - 2831 p. 3 l. 15, signs under an ink blot - blocker: illegible
 - 2831 p. 1 ll. 21–26, last words of each line - blocker: illegible; stain at the right edge, no other image (DECODE and Vestigia serve the same negative)
 - signs in the torn columns of R5411 (x, y, z, &, part of t), r-ring on p. 3 l. 15, and the o-form (b by the key, t in most words) - blocker: no-key-material; R5411 is torn at the upper right
-- closed 23 Oct 2026 (v3): R1098 ll. 5, 6 and 9, re-read with R5411 and aligned with MDE IV no. 91 (`r1098_v3_reading.md`)
 - share of cipher signs read - blocker: not-attempted; never measured; p. 2-3 sign strings now in trans/v2831p2_b25.md and v2831p3_b25.md
 
 ## Escalation
