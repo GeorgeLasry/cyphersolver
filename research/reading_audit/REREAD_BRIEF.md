@@ -38,6 +38,9 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
 4. **The bar, applied the same way to every document:** a document is `read` when a reader finds its sentences
    coherent **and** its reading body (header and notes cut off) scores about 0.60 clean sentences or more on
    `_check_reading.py`; below that it stays `decoded, not read`, with your reading kept as a partial reading and a note.
+   **Look-alike alternates:** count the letters that rest on the other member of a look-alike pair rather than the
+   figure's own value; above about 3% of a reading's letters, keep it decoded, not read unless a contemporary or printed
+   text confirms them (sense alone can then drive the reading).
    **Never modernise spelling in the reading to pass the score** (modern spelling goes only in the English file).
    When the word list cannot know the period spelling (English before 1700, early Spanish, Dutch, German), score the
    reading body counting explicit holes only (`research/reading_audit/b17_score.py` with `HOLES=1`) and record both
