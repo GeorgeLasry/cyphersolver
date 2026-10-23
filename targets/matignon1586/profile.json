@@ -1094,13 +1094,8 @@
    },
    {
     "item": "code groups 16, 19, 23, 45, 47, 60, 65, 66, 67, 99, 101, 102, 103, 9 and the name code 98",
-    "blocker": "open-codes",
+    "blocker": "no-key-material",
     "detail": "one to three contexts each, none in a clear copy; settled 22 Oct 2026: 64 = quelque, 62 = peu, 73 = le Roy (fr. 15571 f. 177 and its copy f. 176), 63 = après (f. 201 clear tail), me a null on f. 177"
-   },
-   {
-    "item": "copy of f. 20r (rest of f. 19v)",
-    "blocker": "open-codes",
-    "detail": "read by Brackx, not given in #78; his 86.7% for f. 20r unchecked here"
    }
   ],
   "notes": "Measured 22 Sept 2026 with measure.py (rule in its docstring); recalculated 14 Oct 2026 on the Cipher-1 leaves only after the split (Matignon's Cipher-3 leaves are matignon1586c3). The prose per-leaf figures were high on ff. 143r, 173, 201 and 177 and silent on ff. 123-124. f110_status.md's 'Nine of the ten leaves are read' is corrected. Most gaps are workable (not-attempted), so NOTES carries 'Status: in progress'. 21 Oct 2026: Michael Brackx's issues #64, #68-#71 folded in as contributed work (provenance mixed); the clear copies ff. 155-157 make ff. 143, 149v-150 and 154r-v read from an existing decipherment (outcome.parts). Still in progress. 22 Oct 2026: Brackx's issues #73, #77, #78, #79, #83 folded in (complete re-transcription, per-leaf keys, codes 15, 34, 46, 51, 61, 73, 78, 82, 84), validated with this project's decoder against the clear copies and a control (brackx_validate.json). Still in progress: read bar not met, codes open, keys not merged. 22 Oct 2026 (later): the per-leaf keys merged into one Cipher-1 key (key_cipher1.json; merge_keys.py), which reads every leaf as well or better; 59 = argent from the f. 157r copy; re-measured 0.637; site page written.",
