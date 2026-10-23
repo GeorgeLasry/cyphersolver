@@ -2,6 +2,17 @@
 
 Status: in progress (read in part; written up 9 Oct 2026; own entry since 14 Oct 2026)
 
+**22 Oct 2026, re-read (REREAD_BRIEF, batch b05; log `reading/R7486-R7496_reread_log.md`):** the nine "decoded, not
+read" letters re-read on the 32 DECODE images (fetched with the project cookie, scratchpad only). The `[?]` words were
+mostly a hard hand, not lost ink: about 170 corrections (`reading/R74xx_corrections.tsv`); readings
+`reading/R74xx_reading.md` with English `_en.md`, checked word by word (`research/reading_audit/b05_align.py`, which
+caught and removed normalised or invented words such as R7491 "also sinister"). Clean share of the reading bodies
+(`b05_score.py`): **R7491 0.609 and R7494 0.611, now read** (reading_review B); R7488 0.556, R7490 0.551, R7489 0.545
+(0.636 with its clear-text numerals counted as words), R7496 0.421, R7492 0.371, R7486 0.29 stay decoded, not read: the
+clear German reads, the sentences break on the open person codes and dotted signs; R7493 0.23, its lower halves faded
+and tide-marked. Key unchanged; code 131 (not 181) in R7489. fraction_read 0.34 -> 0.458 (estimated, 640 of 1,397
+standalone numbers in the read letters).
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 * **Read** (reading_review B, overturning the audit's D for these): R7487, R7495, R7497, R7498, R7499, R7500. They build
   German sentences; the holes are mostly person codes kept as numbers. English translations still to be written.
@@ -118,16 +129,9 @@ tokens + 37 small codes; 77 distinct codes, 5 with a value (126 tokens). All cip
   **all cipher tokens 1,361, read 865 = 63.6%**. Validation (`docs/_validate.py`, 11 Oct 2026, `validation.tsv`): pass.
 
 ## Remaining gaps
-- R7486, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7488, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7489, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7490, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7491, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7492, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7494, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7496, decoded, not read - blocker: not-attempted; re-read the runs and [?] words at full resolution, then build sentences
-- R7493, decoded, not read - blocker: illegible; water damage on all leaves
-- the six read letters: English translations not yet written - blocker: not-attempted
+- R7486, R7488, R7489, R7490, R7492, R7496, decoded, not read - blocker: no-key-material; clear text re-read on the images 22 Oct 2026 (batch b05), sentences break on the open person codes and dotted signs (clean share 0.29-0.556; R7489 0.636 with its numerals counted as words)
+- R7493, decoded, not read - blocker: illegible; lower halves of ff. 303v-304 and feet of ff. 305v-306v faded and tide-marked on the DECODE images (upper halves read 22 Oct 2026); the original in Kraków might read better
+- R7487, R7495, R7497-R7500 (read in the audit): English translations not yet written - blocker: not-attempted (R7491 and R7494 translated 22 Oct 2026)
 - 65 of 77 three-digit codes (394 tokens), mostly persons (187, 181, 166, 190, 254, 258, 132, 193, 186 ...) - blocker: no-key-material; roles fixed from context, names not; no key with the letters, on DECODE or in print; the 100s-200s are not alphabetical, so position gives no bound; the Saxon keys would be in the Hauptstaatsarchiv Dresden and the Wiener Diarium 1706 (dated cribs) is behind a bot check the session may not pass
 - dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens) - blocker: no-key-material; articles or pronouns, no value fits every occurrence and none is glossed
 - 8 letter-cipher runs, 44 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: too-short; digits confirmed twice on the images, single short runs with no second occurrence
@@ -138,4 +142,4 @@ tokens + 37 small codes; 77 distinct codes, 5 with a value (126 tokens). All cip
 - [x] known-keys: Kaczka's keys A and B, the R7475 table and the Chomentowski syllabary scored on the runs: none fits
 - [x] print: web searches for Schenck, "Sidon", "Seligman", Saxon envoys at Vienna 1706 (Wackerbarth, Vesnich) and printed Saxon-Vienna correspondence: no key, no edition; the Wiener Diarium on ANNO is behind a Cloudflare Turnstile check
 - [x] key-rebuild: letter table complete; second context pass over every code (transcr/CTX_*); alphabetical order tested: holds in the 500s, fails for the persons
-- [x] retry: every run and every code sentence re-read at full resolution
+- [x] retry: every run and every code sentence re-read at full resolution; 22 Oct 2026 (batch b05) every [?] word of the nine unread letters re-read on the images, readings built and checked word by word

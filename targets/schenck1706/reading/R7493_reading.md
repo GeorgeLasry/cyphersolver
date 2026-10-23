@@ -1,0 +1,40 @@
+# R7493 (N. 32), Vienna, 29 May 1706: the agent "Sidon" to Baron Schenck — partial reading
+
+Rests on: `transcr/R7493.txt` re-read on the full-resolution DECODE images (IMG_R7493_I33878_P1-P6, 22 Oct 2026, batch
+b05), the letter table of `key.py` for the runs and the code values of `codes_key.json`; the recipient's gloss on p. 1
+("der" over o., "von Kayser" over "5 83"). Page order: P1, P6a, P6b, P4, P3, P5a, P5b, P2 (ff. 303-306v). No
+contemporary decipherment beyond that gloss, no clear copy, no edition. **Stays "decoded, not read"**: the upper halves
+of the pages now read, but the water-stained and faded lower halves of ff. 303v-304 and the foot of most pages keep
+holes in about half the sentences.
+
+Conventions: `{...}` a code or sign with a value (`{der}` = o., `{von}` = 5, `{dem Kayser}` = 83, `{bey}` = f.,
+`{König Augustus}` = 150, `{Baron Schenck}` = 189, `{der kaiserliche Hof}` = 100, `{Schweden}` = 204, `{Reise}` = 519,
+`{Abreise}` = 502); `[187]` an unvalued code; `<g>` an unvalued sign; `[?word]` partly carried; `[word]` supplied;
+`[…]` unread. Signs are printed without their dot and abbreviations without the point.
+
+## Reading
+
+Des {Baron Schenck} Meinung, dass des [258] Vorgeben und desavantage des [452] aus passionibus herrühre, mag nicht ungegründet seÿn, weillen man in Erfahrung bracht, dass {der} [208] den [258] Ihm vor 2 Monaten {von} {dem Kayser} sein {Reise} zu [?nehmen] [?behülfflich], sich aller wegen Commendirung gelder entschuldiget. Und obschon [451] in nichts [?erst] einig modicum vorgeschlagen, wie der [205] [?welle] zu effectuiren, doch noch nicht völlig vor zulänglich gehalten, [?sondern] vielmehr darüber gestellet, dass [452] davon Ursache seÿ. Es hat [181] unterschiedene Umbstände an [166] zu melden, welche aber {Baron Schenck} noch nicht auf des [187] inständiges [?bitten] Ihm das [166] tittul zugeschicket. Solches den {Baron Schenck} der [187] [?…] gehorsamst nebst seiner Recommendation an [166] darbeÿ part zu geben. Es will doch scheinen, dass man immer näher auf die Spur kommen, aus was vor einer Hand die bisherige mutante [526] aus so [?…] per q […] [343] […] der [?Conat] seÿn soll, ein [?gewesener] diener […] [258], so sich ijzo [?…] aufhalt.
+
+Mit letzterer Post hat an {Baron Schenck} {der} [132] eine französische Relation <3> {dem Kayser} abgestattet, so Er bereits darauff [187] gewiesen. Selbiger hat sich sehr über die libertatem styli aufs empfindlichste passioniret <g> [103] condamniret. Es ist [?wahr], dass dieser kein flattirender Mazarin, sondern ein [?ernster] Richelieu seÿ; [?hingegen] hat er mit dem letzteren den Ruhm, dass […] als das […] […] seÿ, und dass Er keine fanfaronaden als […] liebe, [?hingegen] durch […] fermeté seine Resolutiones durchsetze. Es empfindet auch [181] selbst, dass […] [187] recht habe, und das [103] ein […] von {König Augustus} seÿ; […] dem durch [187] […] alles mistrauen, so einige widrige […] [181] und [103] […], ausgerottet worden. Gewiss ist es, das […] […], und […] realitet verlangen und von Ihm […] satisfaction […] die indiscreten tractements […], die […] machinationes {der} [181] seÿn auf […] {der} {Abreise} [181] [?fast] gäntzlich […] worden.
+
+Er möchte auch allerhand dessein von seiner […] durch {der} [525] <3> {Schweden} <q> {König Augustus} {bey} {dem Kayser} sich eine avantage zu machen [?…], welches [187] auch […] […] contraminiret, […] […] practiciren können, wann Er […] seiner subsistence ein […] erhallten und […] haben. Er hat auch […], dass […] 5 Monate nicht mehr als 400 th erhallten, und […] noch nicht […], wann nicht [181] so […] und Ihm mit 2 […] präterit […] […] Jahr […] geholffen. Die besten […] muss Er […] die […] arcana zu penetriren […], welches […] und Ihm studiret, und so […] secretario erhallten, so perfectissime französisch, italienisch […], zu {König Augustus} […] avantage, allein […] […] wollen […] […] zu {König Augustus} […] ein expediens durch hülffe des [166] auszufinden seÿ, damit [187] in dem [?…] Stande möge {König Augustus} desto bessere dienste zu leisten, gestallten Er der [181] nicht gern disfalls so gar offt incommodiren will.
+
+Wegen [188] wegen des Freÿherrlichen diplomatis und [?…], verspricht auf [?…] beÿgehendes schreiben und den von Ihm verbesserten Aufsatz. Er bittet [187] [?…], nachdem das diploma des {Baron Schenck} […] wird passiret seÿn, [?…] zu remittiren, weillen man aus mangel der Zeit und Leute keine Copiam davon behallten können. Auf [187] heütigen bericht wird […], dass beÿ […] die […] […] als […] und Schweden […]: die […] solle seÿn, wegen der […] […] tumulte allzugrossen und […] submissionen. […] mit […] specialiora: und […] […], dass […] affirmativa & negativa […] werden, […] der [166] […] gestellet […] solle: welches das avantageuse […] éclat in dergl […] profitabler halten […] diejenige, so die Erfahrung […] […] Rathschläge braucht.
+
+Die glückliche Entsetzung von Barcellona continuiret, auch variiren einiger Umbstände, nemblich ob der Conte Toulouse zur See geschlagen, und 2) ob der Duc d'Anjou sich retiriret habe nach Roussillon. Das erste und letztere wird dubiös gemacht und [?…], dass der Toulouse auf ordre von dem französ Hoffe sich ohne Hinderung der Engelländer in den Hafen nach Toulon in Sicherheit begeben; hingegen aber der Duc d'Anjou keinen Weg zu seiner retraite offen gefunden, sondern dergestallt eingeschlossen seÿ, dass Ihm keine retraite zu [?…] ohnmüglich fallen würde. Am französischen Hoffe solle deshalben […] grosse Bestürtzung seÿn, bevorab da des Mons Berwicks Armée meistens an den Mylord Galloway sich ergeben und […] […]; […] der König aus […] […] troupplen von […] nach Spanien […] und allda den gäntzlichen Verlust abzuwenden. Zu Madrit soll der Mylord Galloway mit grosser solennitäten eingezogen, und alles vor König Carl den 24 Maÿ acclamiret, auch der Duc d'Anjou gäntzlich von dannen weggeflohen seÿn.
+
+In Hungarn will sich die friedens hoffnung [?vermehren], welchem nach künfftigen Montag sich der Ihro Hochf G der Bischoff von Olmütz samt dem Graffen von Wratislaw Excell nach Pressburg begeben werden, allwo in Zukunfft der […] Congress seÿn soll, zu dem [?…] [?…]. […] Wien […] so nicht weit von Ihro Kaÿsl Mt der Herren Statthalter […], […] sich von dubia […] […] aufgestanden […] […], wird auch [187] aller […] Relation bekannt werden. […] […] der H Baron von […] […] Ihro Kaÿsl Mt […] nicht wenig allarmirt worden, [?…] versichert, dass solcher tumult durch […] Anstallt bereits beÿgeleget seÿ; […] die sich […] auf das […] wegen der wenigen Mannschafft so dem Marech de Villars am Rhein […] übrig bleiben, nachdem der grösste Theil von seiner Armée auf nach des Marsins Abmarche nach Spanien […] beordert, […] Ihren Landstätten […] befinden.
+
+Wegen der […] liberation haben Ihro Kaÿsl Mt sich […] beÿ Ihro […] […] aufs […] des Herrn Obrist Hoffmarschalls Baron W […] […], die […] occupationes […] nicht […]. Ihre Kaÿsl Mayt […] interesse an dem in [187] […] vorgestellten […] liberation, [?…] nicht […] […] König auf Ihro K Mayt […] declaration, nach der […] Hoffe resolviret […] und darinnen […], dass man Ihro K Mayt […] gestellet seÿ, und […], wann ein […] […] trouble […] werden möchte: welches Er aber […] nicht weiter nachsehen will, sondern in […] zu […] gesonnen, […] liberation und so […] zu condescendiren. […] Gen v Gross […] retiriret nach Liegnitz ist grosser apparenz. […] der […] passiren will dem [181] aus […] motiven gegen der [187] […], weillen es zu {König Augustus} und [181] grösserer avantage gereichet. [166] […] noch nicht […] den Vortrag […]. […] die Zeit […] […].
+
+## Close (dateline and subscription, not scored)
+
+Monsieur, Votr. tres humb. et tres obeiss. Sidon. W[ien] d. 29. Maÿ 1706 (foot of p. 8, faded).
+
+## Notes
+
+* Runs: 16 19 43 = den; 58 19 31 45 = sein; 25 19 37 17 20 55 = gelder; 61 31 61 62 64 37 = tittul; 7 64 58 = aus
+  (bracketed in the letter); 17 32 20 44 21 55 = diener; 40 31 59 62 56 8 64 19 45 = mistrauen.
+* The lower halves of ff. 303v-304 and the faded feet of ff. 305v-306v were read only in part; the brown tide marks
+  cover the inner columns.
