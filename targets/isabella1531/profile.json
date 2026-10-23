@@ -11,13 +11,13 @@
    "country": "Germany",
    "route": "Charles V (Regensburg) to the Empress Isabella",
    "language": "Spanish",
-   "pages": "unknown",
-   "cleartext_in_document": "unknown",
+   "pages": 6,
+   "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
      "separate folio"
     ],
-    "source": "contemporary decipherment on a separate sheet (Tomokiyo)",
+    "source": "Contemporary decipherment of the three cipher passages on a separate sheet, AGS Estado leg. 496 doc. 196 (DECODE image P3), transcribed 23 Oct 2026; also printed in Luo (2021) pp. 285-287.",
     "partial": false
    },
    "length": {
@@ -26,11 +26,12 @@
     "measured": false
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed; images not viewed",
-    "image_quality": "unknown",
-    "notes": "Closed from the literature before viewing."
-   }
+    "by": "llm from images",
+    "source": "Claude Opus 5.5, 23 Oct 2026: clear text and decipherment sheet transcribed from the DECODE images (texts/R9955_reading.md); the cipher signs not transcribed",
+    "image_quality": "good",
+    "notes": "Images P1, P4 = doc. 195 ff. 1r-1v; P3 = doc. 196 (decipherment); P6 = address leaf; P2, P5 blank."
+   },
+   "read": "read"
   },
   {
    "id": "R9956",
@@ -38,15 +39,15 @@
    "date": "11 Jan 1531",
    "year": 1531,
    "country": "Belgium",
-   "route": "Francisco de los Cobos? (Brussels) to Juan Vazquez de Molina?",
+   "route": "Francisco de los Cobos (Brussels) to his nephew Juan Vázquez [de Molina], secretary",
    "language": "Spanish",
-   "pages": "unknown",
-   "cleartext_in_document": "unknown",
+   "pages": 8,
+   "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
      "separate folio"
     ],
-    "source": "contemporary decipherment on a separate sheet (Tomokiyo)",
+    "source": "Contemporary decipherment of the cipher passage on a separate sheet, AGS Estado leg. 496 doc. 206 (DECODE images P4, P8), transcribed 23 Oct 2026; not known in print.",
     "partial": false
    },
    "length": {
@@ -55,11 +56,12 @@
     "measured": false
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed; images not viewed",
-    "image_quality": "unknown",
-    "notes": "Closed from the literature before viewing."
-   }
+    "by": "llm from images",
+    "source": "Claude Opus 5.5, 23 Oct 2026: clear text and decipherment sheet transcribed from the DECODE images (texts/R9956_reading.md); the cipher signs not transcribed",
+    "image_quality": "good",
+    "notes": "Archive order: P3 = f. 205r, P2 = f. 205v, P1 = address, P4/P8 = doc. 206 (decipherment); P5-P7 blank."
+   },
+   "read": "read"
   }
  ],
  "system": {
@@ -115,17 +117,21 @@
    "result": "worked"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): entries added with summaries only: neither letter's cipher nor its contemporary decipherment (separate sheets, images not viewed) is transcribed, and Luo 2021 (R9955) has no link.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R9955 or R9956 is in the repository (decipherment sheets on the DECODE images; R9955 printed by Luo 2021). Both relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of R9955 or R9956 is in the repository (decipherment sheets on the DECODE images; R9955 printed by Luo 2021). Both relabelled decoded, not read; class already solved kept (in print).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "access", "what": "Re-read (REREAD_BRIEF, b20): every file on DECODE R9955 (6 images) and R9956 (8 images) fetched with the shared cookie into the session scratchpad (b20_fetch.py); no DOC_* or other attachments. R9955 P3 is doc. 196, the contemporary decipherment of the letter's three cipher passages; R9956 P4/P8 are doc. 206, the contemporary decipherment of its cipher passage. Never opened before (closed 21 Sept from Tomokiyo).", "result": "worked"},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Clear text of both letters and both decipherment sheets transcribed from native-resolution strips (b20_crop.py); doubtful places zoomed. R9956's address reads 'Al muy noble señor mi sobrino Juan Vazquez, secretario de Su Mag.t', confirming Tomokiyo's guess at the recipient; signature Cobos.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "control", "technique": ["plaintext matching"], "what": "Figures spot-checked against the general cipher AGS Estado leg. 1.1.1 doc. 112 printed (as images) by Luo (2021) p. 601: R9955 'las necesidades' (la-s-ne-ce-si-da-de-s), R9956 'despachandose este correo de mercaderes ... sazon'. Agree; not decoded sign by sign. R9956's sheet ends 'a x[?] de hebrero' where the letter's clear date is 'a xj de enero de 1531'; the reading follows the letter.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "reading", "technique": ["plaintext matching"], "what": "Readings written from the clear text and the decipherments (texts/R9955_reading.md, R9956_reading.md; English R9955_en.md, R9956_en.md; log R9955-R9956_reread_log.md); no word supplied. b17_score.py on the bodies (es): R9955 0.744 (29/39), explicit holes 1.00; R9956 0.714 (10/14), explicit holes 1.00; before: no text. Both set read, grade A.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "Both letters were deciphered at the time on separate sheets and identified by Tomokiyo on cryptiana; R9955 is printed in Luo (2021) p. 285; nothing was read or re-deciphered here and the images were not viewed.",
+  "method_basis": "Both letters were deciphered at the time on separate sheets (AGS Estado leg. 496 docs. 196 and 206), which are on the DECODE images and were transcribed here on 23 Oct 2026 with the clear text; the figures were spot-checked against the general cipher doc. 112 (Luo 2021 p. 601). Tomokiyo identified both; R9955 is also printed in Luo (2021) pp. 285-287.",
   "contribution": ["sender or date identified", "catalogue correction"],
   "class": "already solved",
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Nothing new read. DECODE metadata corrected (R9955 direction and date; R9956 sender, recipient). Catalogue entry 200 removed; no write-up. 22 Oct 2026, reading audit: neither letter's text is in the repository; both decoded, not read. Class already solved kept: R9955 is in print (Luo 2021) and both were deciphered at the time.",
+  "notes": "DECODE metadata corrected (R9955 direction and date; R9956 sender Cobos, recipient his nephew Juan Vázquez, from the address). Catalogue entry 200 removed; no write-up. 22 Oct 2026, reading audit: neither letter's text was in the repository. 23 Oct 2026 (b20): both read from their contemporary decipherment sheets on the DECODE images, with the clear text (texts/).",
   "credits": [
     {"who": "contemporary", "role": "prior solution", "note": "both letters deciphered at the time on separate sheets"},
     {"who": "tomokiyo", "role": "identification", "note": "identified R9955 (Charles V to Isabella, 30 Apr 1532) and R9956 (Cobos, 11 Jan 1531) as read at the time", "source": "cryptiana, Spanish ciphers of Charles V"},
@@ -135,31 +141,52 @@
    {
     "doc": "R9955",
     "label": "R9955, Charles V to Isabella, Regensburg 30 Apr 1532 (AGS Estado 496 ff. 195-196)",
-    "summary": "Charles V at Regensburg to the Empress Isabella, 30 April 1532 (DECODE has it as Isabella to Charles, 1531), in the general cipher AGS Estado leg. 1.1.1 doc. 112; deciphered at the time on a separate sheet, and printed by Wanruo Luo (2021) p. 285.",
-    "note": "No transcription or decipherment in the repository; the full decipherment is printed in Wanruo Luo, El lenguaje cifrado de Isabel de Portugal (thesis, Universitat de Valencia 2021, RODERIC), p. 285, and the contemporary decipherment is on a separate sheet on the DECODE images (reading audit, 22 Oct 2026); fix: copy Luo's text, or transcribe the sheet.",
+    "summary": "Charles V at Regensburg to the Empress Isabella, 30 April 1532 (DECODE: Isabella to Charles, 1531): he has taken a loan of 100,000 escudos from Ansaldo de Grimaldo, Genoese, to be repaid in 1533 by bills of exchange on Alonso de Baeza, secured by a juro on Castilian revenues, with a life grant in Naples; the cipher passages explain that the 100,000 ducats for his departure are not enough and press her to have the bills accepted at once. Read from the contemporary decipherment (doc. 196, on the DECODE images); also printed by Luo (2021) pp. 285-287.",
     "language": "es",
-    "state": "decoded, not read"
+    "state": "read",
+    "transcription": ["texts/R9955_reading.md"],
+    "decryption": "texts/R9955_reading.md",
+    "reading": "texts/R9955_reading.md",
+    "translation": "texts/R9955_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read 23 Oct 2026 (b20): clear text of doc. 195 and the contemporary decipherment of its three cipher passages (doc. 196, DECODE image P3, never transcribed before) transcribed from the images; figures spot-checked against the doc. 112 key printed by Luo (2021) p. 601 ('las necesidades'). No word supplied. Body 0.744 clean sentences (29/39), explicit holes 1.00; the unclean sentences are period spellings and names."
+    }
    },
    {
     "doc": "R9956",
-    "label": "R9956, Cobos? to Juan Vázquez de Molina?, Brussels 11 Jan 1531 (AGS Estado 496 ff. 205-206)",
-    "summary": "A letter from Brussels, 11 January 1531, catalogued by DECODE as Isabella to Charles V; Tomokiyo reads the signature as Francisco de los Cobos ('Covos Comendador Mayor') and the addressee 'muy noble señor sobrino' as probably Juan Vázquez de Molina. Same general cipher, deciphered at the time on a separate sheet.",
-    "note": "No transcription or decipherment in the repository; the contemporary decipherment is on a separate sheet on the DECODE images, not fetched or transcribed, and not known in print (reading audit, 22 Oct 2026); fix: fetch the images with the shared DECODE cookie and transcribe the sheet.",
+    "label": "R9956, Francisco de los Cobos to his nephew Juan Vázquez, Brussels 11 Jan 1531 (AGS Estado 496 ff. 205-206)",
+    "summary": "Francisco de los Cobos (signed 'Covos comendador mayor') to his nephew Juan Vázquez [de Molina], secretary, Brussels, 11 January 1531 (DECODE: Isabella to Charles V). Clear: Benavides's departure, the courier of the archdeacon of Segovia about the Toledo regimiento. Cipher: news for the Empress: the Emperor is well and busy with the Low Countries; Monsieur de Praet gone to France; no answer yet to the Protonotary Gambara on the council, pending the King of the Romans' opinion; Italy quiet, the Siena exiles restored and the Spanish infantry kept nearby; the Pope as before; contradictory reports of the Turk coming by Hungary and Italy. Read from the contemporary decipherment (doc. 206, on the DECODE images).",
     "language": "es",
-    "state": "decoded, not read"
+    "state": "read",
+    "transcription": ["texts/R9956_reading.md"],
+    "decryption": "texts/R9956_reading.md",
+    "reading": "texts/R9956_reading.md",
+    "translation": "texts/R9956_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read 23 Oct 2026 (b20): clear text of f. 205 and the contemporary decipherment of the cipher passage (doc. 206 recto and verso, DECODE images P4/P8, never transcribed before) transcribed from the images; figures spot-checked against the doc. 112 key (Luo 2021 p. 601): 'despachandose este correo de mercaderes ... sazon'. No word supplied; four doubtful words [?] and the line 'De hebrero [...]'. Body 0.714 clean sentences (10/14), explicit holes 1.00."
+    }
    }
   ],
   "gaps": [
    {
-    "item": "R9955: Luo's printed decipherment (2021, p. 285) not in the repository",
-    "blocker": "not-attempted",
-    "detail": "the thesis is on RODERIC (Universitat de Valencia); the contemporary decipherment sheet is on the DECODE images"
+    "item": "R9956: four doubtful words of the decipherment ('me a[b?] / sazon' read [?avise], 'se ha ropto' read [?scripto], [?gracias], [?Yo]) and the clear line after the date, 'De hebrero [...]'",
+    "blocker": "illegible",
+    "detail": "cramped abbreviations in the decipherer's hand and the writer's postscript line; the cipher signs under [?avise] (20 n ρ) are not settled by a glance at the printed key"
    },
    {
-    "item": "R9956: the contemporary decipherment sheet, not transcribed",
+    "item": "R9955, R9956: the cipher not decoded sign by sign against doc. 112 (spot checks only)",
     "blocker": "not-attempted",
-    "detail": "DECODE images reachable with the shared cookie; not fetched yet"
+    "detail": "not needed for the reading (contemporary decipherments); the key is printed as images in Luo (2021) p. 601"
    }
-  ]
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "23 Oct 2026, re-read (b20): both documents of outcome.texts read (2 of 2) from their contemporary decipherments; the unread words inside them (R9956: four [?] words and the line 'De hebrero [...]') are named in gaps."
  }
 }

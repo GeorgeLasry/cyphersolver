@@ -2,6 +2,15 @@
 
 Status: in progress — System A′ read in part (89.8% of words); the remaining unread words are workable (open-codes), see Remaining gaps.
 
+**23 Oct 2026, re-read of R9409 and R9427 (REREAD_BRIEF, batch b20; Claude Opus 5.5): still decoded, not read.**
+Every file on the DECODE records opened (no attachments, no decipherment; no edition). R9427's faint gloss re-checked
+on contrast-enhanced crops: only the salutation more ("genedig[isten] [herren]"). Partial readings in the brief's
+notation: `r9409/R9409_reading.md`, `r9427/R9427_reading.md` (words unchanged). b17_score.py (de): R9409 0.323 on the
+full list, 0.658 on explicit holes; R9427 0.196 / 0.451. R9409 passes 0.60 on explicit holes but P1 and P3 do not
+build sentences, and "da" stands 53 times where no word forms ("ir da hab ein sunderlich freuntlich wolgefallen",
+"mit der da vertragen"): the lone c+ sign, probably a title sign ("Mt."), not adopted (gender varies, no key sheet;
+flagged for review). Log `r9409/R9409-R9427_reread_log.md`. Fraction unchanged (0.572).
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R9408, R9410 f. 244r,
 R9410 ff. 246-247 (Latin) and R9413, sentences with holes clustered in a few passages (11-17% of words unread).
 **Decoded, not read**: R9409 (19% of words unread, holes in most sentences) and R9427 (23%). 89.8% (words given a
@@ -198,7 +207,7 @@ R9410 f.244r 83.9%, R9410 ff.246-247 82.9%, R9409 80.9%, R9427 77.3%; 5,724 of 6
 values the letters do not settle (merged look-alikes, rare signs, names), not missing key material.
 
 ## Remaining gaps
-- R9409 and R9427 decoded, not read (2,924 words; holes in most sentences, reading audit 22 Oct 2026) - blocker: not-attempted; image re-check of the {?} runs (R9427 has had no image re-transcription), then build sentences and translate
+- R9409 and R9427 decoded, not read (2,924 words; holes in most sentences) - blocker: no-key-material; re-read 23 Oct 2026 (b20): all DECODE files opened, no decipherment or edition, R9427's gloss illegible beyond the salutation; System A' has no key sheet and the per-letter keys do not settle the open signs (incl. the lone c+ 'da', 53 places in R9409, probably a title sign, flagged for review)
 
 - R9408 (5 Oct: 125 of 1,530 unread; second image pass 20/72 lines done): 170 of 1,528 words unread ({?} in `r9408/reading.txt`: P1.01-06 and P1.20-26, the P2.01 greeting, the ratschlag clauses P2.06/25-30, P3.10-16, P4.16-28, P5.01-08, P6.04-07/28-30, the signature forename) - blocker: open-codes (workable); the signs are legible but take no value the letter settles; the y (ÿ/γ) and 4 (4/ч) look-alikes were split at the image 2 Oct 2026 without opening further words; next: a second reading round.
 - R9413 (5 Oct: 94 of 1,647 unread): 232 of 1,663 words unread (P1 opening and P1.19-26, P2.05-12, P3.04-12 the ore description, the 4o group on P5, P6-P7 short lines, P8 address) - blocker: open-codes (workable); next: image check of the noisy P1 opening lines and of the 4o group, second reading round.
@@ -217,6 +226,7 @@ values the letters do not settle (merged look-alikes, rare signs, names), not mi
 - [x] retry: System A′ letters re-decoded with the extended key and each E resolved as d or ch by de-1500s context (`sysA_decode.py`); decrypts in `r9408/decrypt.txt`, `r9409/decrypt.txt`, `sysA/r9410_decrypt.txt`, `r9413/decrypt.txt`. Remaining noise is transcription-level (merged look-alikes, doubtful signs), not key-level.
 - [x] key-rebuild/retry (2 Oct 2026, System A′): the improved R9407 key (augurelio1535 pass 2) carried to R9408, R9409, R9410, R9413, R9427 by sign shape, re-learned per letter by EM and word-beam re-estimation (`sysA2/`), R9408 look-alike split finished at the image (`r9408/split_p6p7.md`), hand reading rounds over every line of all five letters (`r94xx/reading.txt`), a supervised re-key from the readings (no gain). Readings 77-89% of words, 84.0% overall.
 - [x] retry (2 Oct 2026, second pass): R9410 ff.246-247 transcribed from the images and read (82.9%); the look-alikes R9408 y/4 and R9409 c+ checked at the images, split, re-decoded and regraded (no gain).
+- [x] retry (23 Oct 2026, b20): R9409/R9427 DECODE files and R9427 gloss re-checked; partial readings in brief notation; still decoded, not read
 - [x] retry (3-5 Oct 2026): every unread line re-transcribed at the image (R9408, R9413 twice, R9409), sign-constrained pooled-key candidates (fill.py) with second-occurrence checks, reading rounds; 83.9% -> 89.0% of words; R9427/R9410a image passes and an R9408 second pass still to do.
 
 ## Assumptions for George's review

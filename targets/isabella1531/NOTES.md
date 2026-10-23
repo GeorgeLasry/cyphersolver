@@ -1,6 +1,17 @@
 # Isabella of Portugal → Charles V, 1531 (catalogue 200; DECODE R9955, R9956)
 
-Status: in progress. Both letters deciphered at the time; neither decipherment is transcribed here (reading audit, 22 Oct 2026).
+Status: no write-up. Both letters deciphered at the time; both decipherment sheets transcribed and the letters read here on 23 Oct 2026 (b20), texts in `texts/`.
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b20; Claude Opus 5.5).** Every file on DECODE R9955/R9956 fetched with the
+shared cookie (scratchpad only). The contemporary decipherments are on the records themselves: R9955 image P3 = doc. 196
+(the three cipher passages), R9956 images P4/P8 = doc. 206. Clear text and decipherments transcribed from native-resolution
+strips; figures spot-checked against the doc. 112 key printed by Luo (2021) p. 601 ("las necesidades", "despachandose
+este correo de mercaderes ... sazon"): they agree. **Both read** (texts/R9955_reading.md, R9956_reading.md, English
+`_en.md`, log `texts/R9955-R9956_reread_log.md`). Clean-sentence share of the bodies (b17_score.py, es): R9955 0.744,
+R9956 0.714; explicit holes 1.00 for both; before: no text. R9956's address settles the recipient: "Al muy noble señor
+mi sobrino Juan Vazquez, secretario de Su Mag.t". R9956 cipher: the Emperor well; Praet gone to France; no answer yet to
+the Protonotary Gambara on the council; Siena exiles restored, Spanish infantry kept near; reports of the Turk. Its
+decipherment sheet dates the copy "a x[?] de hebrero" against the letter's "a xj de enero de 1531".
 
 **22 Oct 2026, reading audit** (George Lasry's test): no text of R9955 or R9956 is in the repository. Both are *decoded, not read* in profile.json; class already solved is kept (R9955 printed by Luo 2021; both deciphered at the time).
 
@@ -25,14 +36,16 @@ catalogue entry is removed and the DECODE corrections are queued. Sibling: `targ
 
 ## Remaining gaps
 
-- R9955: Luo's printed decipherment (2021, p. 285) not in the repository - blocker: not-attempted; the thesis is on RODERIC (Universitat de Valencia); the contemporary sheet is on the DECODE images
-- R9956: the contemporary decipherment sheet, not transcribed - blocker: not-attempted; DECODE images reachable with the shared cookie
+- R9955: Luo's printed decipherment not copied - closed 23 Oct 2026: the contemporary sheet (doc. 196) transcribed instead; Luo cited
+- R9956: the contemporary decipherment sheet - closed 23 Oct 2026: transcribed (doc. 206), letter read
+- R9956: four doubtful words of the decipherment ([?avise], [?scripto], [?gracias], [?Yo]) and the clear line "De hebrero [...]" after the date - blocker: illegible (cramped abbreviations in the decipherer's hand; the writer's postscript line)
+- R9955, R9956: cipher not decoded sign by sign against doc. 112, spot checks only - blocker: not-attempted (not needed for the reading; the key is printed as images in Luo 2021 p. 601)
 
 ## Escalation
 
 - [x] siblings: charles1536 (R9957, R9952) is the same general cipher
-- [ ] clear-pages: the decipherment sheets on the DECODE images not fetched
+- [x] clear-pages: the decipherment sheets on the DECODE images (R9955 P3, R9956 P4/P8) transcribed 23 Oct 2026
 - [x] known-keys: AGS Estado leg. 1.1.1 doc. 112 (Tomokiyo)
-- [ ] print: Luo 2021 p. 285 not copied
+- [x] print: Luo 2021 pp. 285-287 (R9955) checked and cited, not copied; R9956 not in Luo
 - [n/a] key-rebuild: deciphered at the time
-- [ ] retry: none yet
+- [x] retry: 23 Oct 2026, both read from the sheets

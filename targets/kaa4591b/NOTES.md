@@ -1,6 +1,6 @@
 # Hieronymus Łaski's cipher (System B), BayHStA Kurbayern Äußeres Archiv 4591: four letters to the Bavarian court, 1529–1531
 
-Status: in progress (22 Oct 2026: R9417 decoded, not read, workable; see Remaining gaps)
+Status: in progress (23 Oct 2026: all four letters read as sentences; FLW and one owl word sign open; class kept read in part, see Remaining gaps)
 
 Split on 15 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). This folder used to hold catalogue entry 162
 ("… to unknown recipient, 3 ciphertexts": DECODE R9403, R9414, R9415), three letters in three different ciphers. It
@@ -23,6 +23,22 @@ only possible with the permission of the Archive"; no permission has been asked 
 Outcome: **key recovered based on adjacent plaintext, read in part.** R9322 (96.4%), R9417 (99.1%) and R9403 (99.5%)
 pass the read bar; R9323 (76.1%) does not, because of faint signs; together 1,184 of 1,243 words (95.3%,
 `measure_sysb.py` + `r9403/decoded.txt`). Key state: recovered (21 letter signs; FLW word sign open).
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b20; Claude Opus 5.5).** R9417 and R9323 are now read (log
+`sysB/R9417-R9323_reread_log.md`). Every file on the DECODE records fetched with the shared cookie: no attachments; the
+only contemporary text is the faint gloss. **R9417**: the P2 image has 29 cipher lines, the transcription held 21; the
+"m for a, e for r" slips were coding slips (on ll. 15-21 the two circles and the two crosses had been coded the other
+way round from the glossed lines, where dotted circle = a, plain circle = m, plain x = r, starred x = e, the R9403
+exchange). Lines 15-29 and P1 read at the image (`sysB/R9417_signs_b20.tsv`, `R9417_corrections.tsv`): Minkuics to
+meet the dukes' envoys at Coburg in Saxony on 4 July, the roads were beset; the King of Poland's daughter: the match
+"ita frigide incipit" while someone (an owl word sign) presses through Sigismund Herberstein for Frederick the Count
+Palatine; the dukes should send with others to Charles V to hold back his brother from attacking King John; "Cracouie
+sedecima die iunii. Lask. Scripsit manu propria". **R9323**: re-read word by word (`R9323_corrections.tsv`): l. 3
+begins with the Ferdinand word sign ("concordiam inter [D] et [BIGX]"), Ƶ = q, the I-sign = b, the dagger = n; "si non
+erit concordia quia peribit Boemia, quam Turce sicuti et Austriam consument"; two faint words of l. 10 unread.
+Readings `sysB/R9417_reading.md`, `sysB/R9323_reading.md`, English `_en.md`. b17_score.py (la): R9417 0.250 on the
+full word list, 0.893 on explicit holes; R9323 0.111 / 0.889 (the checker's Latin list lacks carissime, peribit,
+arripere, the -cia spellings and the names). Words in letters that read: 1,307 of 1,307 (fraction 1.0).
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: R9322 and R9403
 (continuous Latin, rare slips). **Decoded, not read**: R9417 (p2 ll. 12-21 and p1 carry systematic letter slips, m for
@@ -93,11 +109,11 @@ with R9403 (414/416) 1,184/1,243 = 95.3%. Statistical validation (`mk_validation
 glosses only, `la` model): pass (862 read tokens, reading −2.091 against random keys −6.002 and shuffled refits −3.757).
 
 ## Remaining gaps
-- R9417 decoded, not read (219 words) - blocker: not-attempted; the slips are systematic (m/a, e/r, t/b) in the second hand or the second half: re-check those signs on the image, fix the values for that stretch, re-decode, translate
-- R9323 decoded, not read (163 words) - blocker: illegible; faint signs, a doubtful sign in nearly every line
-
-- R9323 lines 4, 8-10 (39 of 163 words) - blocker: illegible; faint signs, several '?' in the transcription
-- FLW word sign (R9322, R9323) - blocker: open-codes; probably King John's title, three occurrences, context does not fix it
+- R9417 decoded, not read - closed 23 Oct 2026: read at the image (8 untranscribed lines added, circle/cross codes corrected from the glosses)
+- R9323 decoded, not read - closed 23 Oct 2026: re-read word by word at the image, read
+- R9323 l. 10, two words before "ducere noluit" - blocker: illegible; faint signs
+- R9417 the owl word sign (P2 l. 27), "queiter" (l. 16), [?anestris], [?sies], the 6-shaped sign read k - blocker: no-key-material; one occurrence each, the gloss stops at l. 14
+- FLW word sign (R9322, R9323) - blocker: no-key-material; probably King John's title, three occurrences, no gloss or key sheet
 - R9403 P3 l.11 "[?]orator", P3 l.12 "[?]meus", small insertion on P1 l.4 - blocker: illegible; cramped signs on the image
 - R9322 16 words with doubtful signs - blocker: illegible; '?' signs in the transcription
 
@@ -109,6 +125,7 @@ glosses only, `la` model): pass (862 read tokens, reading −2.091 against rando
 - [x] print: web searches 21 and 22 Sept 2026 (Łaski 1529-31, Zápolya letters to the Bavarian dukes, KAA 4591) found no edition; Acta Tomiciana t. 8 (1530-32) is the Polish chancery's record and was not searched page by page
 - [x] key-rebuild: key rebuilt from 153 glossed word pairs; DAG and BIGX fixed by context
 - [n/a] retry: the open words are faint or cramped signs, not key gaps; a retry needs better images
+- [x] retry (23 Oct 2026, b20): R9417 lines 15-29 and P1 and all of R9323 re-read at the image; both letters read
 
 ## Assumptions for George's review
 

@@ -443,6 +443,26 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b20): every file on DECODE R9409 (8 images) and R9427 (2 images) fetched with the shared cookie (b20_fetch.py; scratchpad only). No attachments or DOC_* texts; the only outside text is R9427's faint interlinear gloss (P1 ll. 1-5, 7-10).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "R9427 gloss re-checked on contrast-enhanced native crops: l. 1 gives '... sten her...' after 'genedig' (read genedig[?isten] [?herren]); ll. 2-4, 7-10 show nothing beyond gloss.txt.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["language-model scoring", "contextual inference"],
+   "what": "Partial readings in the brief's notation (r9409/R9409_reading.md, r9427/R9427_reading.md; b20_kaa_md.py, words unchanged). b17_score.py de: R9409 0.323 full list / 0.658 explicit holes (0.634 with 'der/die da' counted as holes); R9427 0.196 / 0.451. Reader's judgement: R9409 P1 and P3 do not build sentences, R9427 P1 does not; both stay decoded, not read. Hypothesis, not adopted (sense only, flagged for review): the lone c+ sign read 'da' after ir/irer/der/die (53 places in R9409) is a title sign, probably 'Mt.'.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -477,14 +497,19 @@
   "key": "partial",
   "gaps": [
    {
+    "item": "R9409 and R9427 decoded, not read (P1/P3 of R9409; P1.01-P1.21 of R9427; the lone c+ 'da' sign, 53 places in R9409)",
+    "blocker": "no-key-material",
+    "detail": "re-read 23 Oct 2026 (b20): all DECODE files opened, no decipherment or edition; System A' has no key sheet and the per-letter keys do not settle the signs; R9427's gloss over P1 ll. 1-10 is illegible beyond the salutation"
+   },
+   {
     "item": "R9408 unread words (170 of 1,528)",
     "blocker": "open-codes",
     "detail": "legible signs, values unsettled; y and 4 look-alikes to split on the images"
    },
    {
     "item": "R9409 unread words (450 of 2,361)",
-    "blocker": "open-codes",
-    "detail": "salutation, P7, names; ç+ covers several signs"
+    "blocker": "no-key-material",
+    "detail": "salutation, P7, names; ç+ covers several signs Re-read 23 Oct 2026 (b20): still decoded, not read; no key sheet or gloss settles these signs."
    },
    {
     "item": "R9410 f.244r unread words (49 of 304)",
@@ -503,8 +528,8 @@
    },
    {
     "item": "R9427 unread words (123 of 542)",
-    "blocker": "open-codes",
-    "detail": "line ends P1.01-03, names on P2"
+    "blocker": "no-key-material",
+    "detail": "line ends P1.01-03, names on P2 Re-read 23 Oct 2026 (b20): still decoded, not read; no key sheet or gloss settles these signs."
    }
   ],
   "credits": [
@@ -532,7 +557,7 @@
    {
     "doc": "R9409",
     "label": "R9409, ff. 240-243, early 1534",
-    "note": "r9409/reading.txt: {?} runs and broken syntax in most sentences (450 of 2,361 words unread, 19%; P1 salutation, P3-P7 names and runs); only passages such as P2.25-35 build",
+    "note": "Re-read 23 Oct 2026 (b20), still decoded, not read: no gloss, decipherment or edition (DECODE files all opened); partial reading r9409/R9409_reading.md (the 5 Oct hand reading in the brief's notation, words unchanged). b17_score.py de: 0.323 full list, 0.658 explicit holes; but P1 and P3 are broken syntax with [...] runs, and 'da' stands 53 times where no word forms (the lone c+ sign, probably a title sign 'Mt.', not adopted: gender varies, no key sheet; flagged for review). Blocker: no-key-material. Log r9409/R9409-R9427_reread_log.md.",
     "state": "decoded, not read",
     "language": "de",
     "transcription": [
@@ -540,7 +565,8 @@
      "sysA2/r9409_signs.txt"
     ],
     "decryption": "r9409/reading.txt",
-    "summary": "German intelligence report of early 1534: Ferdinand and the confederation, the Turkish embassy, Pressburg, Katzianer and Majláth in Transylvania, Késmárk, Poland and Muscovy, with numbered articles on mining (Antoni Slesinger, Schmaltz, Freiberger, gold-exchangers) and a postscript on the Reichstag."
+    "summary": "German intelligence report of early 1534: Ferdinand and the confederation, the Turkish embassy, Pressburg, Katzianer and Majláth in Transylvania, Késmárk, Poland and Muscovy, with numbered articles on mining (Antoni Slesinger, Schmaltz, Freiberger, gold-exchangers) and a postscript on the Reichstag.",
+    "reading": "r9409/R9409_reading.md"
    },
    {
     "doc": "R9410",
@@ -581,7 +607,7 @@
    {
     "doc": "R9427",
     "label": "R9427, f. 287, April 1534",
-    "note": "r9427/reading.txt: {?} runs in most sentences of P1 (P1.03, P1.07-14) and the names of P2 (123 of 542 words unread, 23%); only the news formulae build",
+    "note": "Re-read 23 Oct 2026 (b20), still decoded, not read: the faint gloss re-checked on contrast-enhanced crops gives only the salutation ('genedig[isten] [herren]'); partial reading r9427/R9427_reading.md. b17_score.py de: 0.196 full list, 0.451 explicit holes; P1.01-P1.21 (the Württemberg affair) is [...] in nearly every line. Blockers: illegible (gloss) and no-key-material (unsettled signs). Log r9409/R9409-R9427_reread_log.md.",
     "state": "decoded, not read",
     "language": "de",
     "transcription": [
@@ -589,7 +615,8 @@
      "sysA2/r9427_signs.txt"
     ],
     "decryption": "r9427/reading.txt",
-    "summary": "German newsletter to a duke, 15/21/24 April 1534 with a postscript of 25 April: the Württemberg affair (the Bund, the dukes of Württemberg, the Landgrave), Ferdinand, and a provost-priest who married and was imprisoned; lines 1-10 carry a contemporary gloss."
+    "summary": "German newsletter to a duke, 15/21/24 April 1534 with a postscript of 25 April: the Württemberg affair (the Bund, the dukes of Württemberg, the Landgrave), Ferdinand, and a provost-priest who married and was imprisoned; lines 1-10 carry a contemporary gloss.",
+    "reading": "r9427/R9427_reading.md"
    }
   ],
   "key_file": [
