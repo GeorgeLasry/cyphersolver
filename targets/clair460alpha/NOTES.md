@@ -67,3 +67,11 @@ they still intend to undertake a siege.
 - What we checked: p107 crop: "h l e e h b g p h b 9 g n K i t l g t t" with his reciprocal alphabet (h=o, l=n, e=t, b=u, g=s, p=i, 9=r, n=l, K=a) = "ont tousiours la pensee", matching interlinear and his excerpt
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Folio identity not checked on Gallica. Simple reciprocal monoalphabet; interlinear decipherments on the page. Same volume as bouillon1650 (pp53-55) - overlap of volume, different cipher.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

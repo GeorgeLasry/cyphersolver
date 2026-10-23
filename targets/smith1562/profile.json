@@ -845,6 +845,12 @@
    "what": "Verification 3 (v3_below_b): nos. 02, 07, 10, 12, 14 were scored on the shared passage tables decipher_A/C/D.md (0.42-0.51). Per-letter readings written: no02_reading.md from Forbes ii 315-318 with the 32 cipher stretches marked (1.0 explicit holes); no12_reading.md (0.625) and no14_reading.md (0.833) from decipher_D, kept read; no07_reading.md (0.4) and no10_reading.md (0.745 by passage, 0.345 by run, hole rate 0.175) demoted to decoded, not read; their originals in SP 70 carry decipherments (CSP: 'portions in cipher deciphered'), not reached.",
    "result": "partial",
    "technique": ["manual reconstruction", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 4: no. 09 (two cipher names, no sentence, unscorable) relabelled from read to not prose; its names stay deciphered and its two passages stay counted in fraction_read (0.78 unchanged).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -1000,16 +1006,11 @@
     "summary": "Smith to Cecil, Valence, 3 Sep 1564: Ninian Cockburn may come into England with Villeroy (CSP vii 650).",
     "transcription": "decipher_D.md",
     "decryption": "decipher_D.md",
-    "state": "read",
+    "state": "not prose",
     "language": "en",
     "reading": "no09_reading.md",
     "translation": "no09_en.md",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 650. Both passages are names. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced (two names; no sentence to score)."
-    }
+    "note": "Two personal names, not prose (v4 check 23 Oct 2026): the only cipher in no. 09 is 'Nanion Cocborne' and 'Villeros', re-read on the DECODE image with key R9261 (no09_reading.md); the clear letter is not in print, and CSP Foreign vii 650 gives their sentence ('It is possible that Nenion Cocborne may come shortly into England, either with Villeros or of some other errand'). Both names are deciphered; there is no sentence to score, so the entry is labelled not prose rather than read."
    },
    {
     "doc": "10",
@@ -1235,7 +1236,7 @@
    }
   ],
   "key_file": "KEY.md",
-  "fraction_read_source": "22 Oct 2026, re-read (batch b03): estimated by numbered cipher passages, since Forbes copied only the cipher stretches and no token counts exist. 23 letters, about 335 passages (01: 13, 02: 32, 03: 16, 04: 58, 05: 12, 06: 2, 07: 1 block, 08: 31, 09: 2, 10: ~62, 11: 12, 12: 3, 13: 2, 14: 12 lines, 15: 7, 16: 10, 17: 27, 18: 5, 19: 6, 20: 4, 21: 6, 22: 7 lines, 23: 4); the 22 letters that read hold about 331 of them, no. 23 (4) does not: about 0.99. Earlier: ~0.45 (reading audit, same day). Verification 3, 23 Oct 2026: nos. 07 (1 block) and 10 (~62 passages) demoted, and no. 15 (7, demoted 22 Oct) taken out as well: about 260 of 334 passages in letters that read = 0.78.",
+  "fraction_read_source": "22 Oct 2026, re-read (batch b03): estimated by numbered cipher passages, since Forbes copied only the cipher stretches and no token counts exist. 23 letters, about 335 passages (01: 13, 02: 32, 03: 16, 04: 58, 05: 12, 06: 2, 07: 1 block, 08: 31, 09: 2, 10: ~62, 11: 12, 12: 3, 13: 2, 14: 12 lines, 15: 7, 16: 10, 17: 27, 18: 5, 19: 6, 20: 4, 21: 6, 22: 7 lines, 23: 4); the 22 letters that read hold about 331 of them, no. 23 (4) does not: about 0.99. Earlier: ~0.45 (reading audit, same day). Verification 3, 23 Oct 2026: nos. 07 (1 block) and 10 (~62 passages) demoted, and no. 15 (7, demoted 22 Oct) taken out as well: about 260 of 334 passages in letters that read = 0.78. Verification 4, 23 Oct 2026: no. 09 (2 passages, two names) relabelled not prose; its names are deciphered and stay counted: 0.78 unchanged.",
   "fraction_read_method": "estimated",
   "gaps": [
    {

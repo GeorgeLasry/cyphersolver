@@ -70,3 +70,11 @@ be strengthened by possession maintained since his departure from the kingdom.
 - What we checked: f226r: "Madame", clear text then cipher row with interlinear "que je communicasse sa despesche a la Reyne"; f226v show-through shows interlinear "...le souverain conseil est de gaigner temps..." as in his excerpt; codes not decoded independently
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Fully interlined by a contemporary hand; 99.7% identified. Recipient Queen of Poland (Marie-Louise Gonzague) fits the Nevers/Mantua content.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

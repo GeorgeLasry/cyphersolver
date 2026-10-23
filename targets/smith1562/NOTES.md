@@ -112,6 +112,12 @@ in" is not in the signs) and its close do not. For both, CSP Foreign calls the o
 deciphered": the contemporary decipherment exists in the State Papers, which were not reached. fraction_read 0.99 ->
 0.78 (about 260 of 334 passages; no. 15, demoted on 22 Oct, is also taken out).
 
+## Verification 4, 23 Oct 2026
+
+No. 09 was marked read but is two names (*Nanion Cocborne*, *Villeros*; `no09_reading.md`), which the v4 sweep cannot
+score as sentences. Relabelled **not prose** in `profile.json`, with a note: both names are deciphered (key R9261, on
+the image) and CSP Foreign vii 650 gives their setting. fraction_read 0.78 unchanged (its two passages stay counted).
+
 ## Remaining gaps
 
 Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b03, read). What stays open:

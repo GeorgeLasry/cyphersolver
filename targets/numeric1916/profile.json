@@ -236,6 +236,12 @@
       "technique": ["plaintext matching"],
       "what": "Readings written (texts/gongmi_reading.md, rongmi_reading.md) with Dudout's punctuation, [x] for supplied, [?x] for unresolved, […] for illegible; English from his page with two adjustments (N24 'on the 10th', V4E '[?(Xiao)yuan]') in texts/gongmi_en.md, rongmi_en.md. Explicit-hole score, one character = one word (b21_wenmi_md.py; Chinese not scored by _check_reading.py): gongmi 41/45 (0.91), rongmi 82/90 (0.91). Both set read, grade B; fraction_read 0.11 -> 1.0.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "Verification 4: chenmi (4 telegrams) written out as texts/chenmi_reading.md and chenmi_en.md from the decoder output, punctuated, doubtful characters as [?x]; 19/19 sentences clean on the b21 explicit-hole rule, 5 holes in 239 characters. gongmi and rongmi (unscored, Chinese) re-judged as a reader on their b21 readings: both keep read.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -297,7 +303,7 @@
           "grade": "B",
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
-          "note": "Read 23 Oct 2026 (b21): Brice Dudout's proposed readings and translations (Wenmi page, fetched 23 Oct) checked group by group against our decoder on the digits of his page tables, 20 groups of which he re-read on the scans since the repository copy (一/二/三 look-alikes; texts/gongmi_corrections.tsv). 555 characters: 510 the figure's own value, 21 on a one-digit alternate (N35 表 x3 and 袁 written with 8 for 3, 國 x2, N17 速 訴 重 x2 北, ...), 3 supplied from context ([都], [開], [已]), 21 [?x] (figure value not understood: signatures and date codes at N32/N33 ends, 〔凌〕, 〔伋〕 ...). Explicit-hole score, one character = one word (Chinese not scored by _check_reading.py): 41/45 sentences clean (0.91). N35 sheet 1 checked on the JACAR scan (B03050089500 p. 2): group 8 is written 八〇〇七, so 表 rests on the alternate, not on a misreading."
+          "note": "v4 check 23 Oct 2026: unscored by the sweep (Chinese). Judged as a reader on texts/gongmi_reading.md: the nine telegrams hold as sentences; b21 explicit-hole score 41/45 sentences clean (0.91), 21 [?x] in 555 characters, the holes in signatures/date codes and names. Keeps read. Earlier (b21): Brice Dudout's readings checked group by group against our decoder; 510 of 555 the figure's own value, 21 one-digit alternates, 3 supplied, 21 [?x]."
         }
       },
       {
@@ -314,7 +320,7 @@
           "grade": "B",
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
-          "note": "Read 23 Oct 2026 (b21): Brice Dudout's proposed readings and translations (Wenmi page, fetched 23 Oct) checked group by group against our decoder (digits unchanged from groups.tsv). 1,307 reading units for 1,306 groups: 1,197 the figure's own value (one table variant, N24 偽/僞), 41 on a one-digit alternate (V4B 18; N24 灰 adopted here: 2530 -> 2520, tens 三 for 二, the day code of the 10th after the 佳日 of the same sentence; sense-checked only, for review), 15 supplied from context ([盼] x5 for the recurring 盻, [生] x2 for 繒, [浙], [北], [呂], [機] ...), 47 [?x] and 6 […]. Explicit-hole score, one character = one word: 82/90 sentences clean (0.91). N36 (11 holes in 58) and V4B (16 in 265) carry most holes."
+          "note": "v4 check 23 Oct 2026: unscored by the sweep (Chinese). Judged as a reader on texts/rongmi_reading.md: the fourteen telegrams hold as sentences except N36 (11 holes in 58) and V4B (16 in 265), which still read in outline; b21 explicit-hole score 82/90 sentences clean (0.91), 47 [?x] and 6 [...] in 1,307 units. Keeps read. Earlier (b21): Dudout's readings checked group by group; 1,197 the figure's own value, 41 one-digit alternates, 15 supplied."
         }
       },
       {
@@ -322,9 +328,17 @@
         "label": "辰密, 4 telegrams, June 1916",
         "transcription": "ct_chenmi.txt",
         "decryption": "texts/chenmi_decryption.md",
-        "translation": "https://bdudout.github.io/wenmi/en/chenmi.html",
+        "translation": ["texts/chenmi_en.md", "https://bdudout.github.io/wenmi/en/chenmi.html"],
         "summary": "Telegrams to the Hunanese group's address at 277 Avenue Joffre, Shanghai, including a Hunan division under Zhao Hengti for Li Yuanhong (N16).",
-        "language": "zh"
+        "language": "zh",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v4 check 23 Oct 2026: the entry pointed at the unpunctuated decoder output (texts/chenmi_decryption.md) and Dudout's web translation; no reading or review. Written out as texts/chenmi_reading.md (punctuated, figure values kept; 盻 -> [盼] supplied as in rongmi; 偕, 一不, 畎, 羶 kept as [?x]) and texts/chenmi_en.md. Chinese is not scored by _check_reading.py; explicit holes, one character = one word (b21 rule, supplied characters also counted as holes): 19/19 sentences clean, 5 holes in 239 characters. Judged as a reader: all four telegrams hold as sentences (Shandong offer to Li Liejun; the drafting of the circular telegram; a reliable division under Zhao Hengti for Li Yuanhong; 300 yuan to Baili). Keeps read, grade B."
+        },
+        "reading": "texts/chenmi_reading.md",
+        "state": "read"
       }
     ],
     "key_file": "texts/key.md"

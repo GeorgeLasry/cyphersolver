@@ -60,3 +60,11 @@ I do not see what to do about what is a private quarrel here.
 - What we checked: his PDF199 crop "80.50.5, 29.80.5.36.5.97.5, 41.9.38.71.99.7.80.97.99.5.36.5" with the original key sheet he images (u=80 n=50 e=5 q=29 r=36 l=97 p=41 a=9 t=71 i=99 c=7) = "une querele particuliere", agreeing with interlinear and his excerpt
 - Verdict: **partly confirmed** (method read with known key, extent partial). The check is a sample, not a re-solution.
 - Notes: Could not check folio identity against Gallica (no link). Original key is in the same volume and interlinear plaintext survives, so this is reading with the contemporary key. Only 12/28 cipher pages deciphered.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

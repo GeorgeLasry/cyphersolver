@@ -67,3 +67,11 @@ people, so that her son and she may reign and command there in greater peace.
 - What we checked: f162r (canvas 186) and f163v-164r (canvas 188, "Aultres advis") are all-cipher pages with signs matching his table (+, #, w-forms, 77=de, 76=le, 84, 52, /// null); no run decoded symbol by symbol; the f163r margin plaintext he cites was not on the canvases I fetched
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: Cipher is bound next to an unrelated 1707 certificate copy (f161v), so date and context depend on content only; 1554/55 (Mary Tudor, Hampton Court) is his hypothesis. Only 2/6 pages fully deciphered; 39 provisional labels.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

@@ -71,3 +71,11 @@ corruption. I shall not fail, if anything worthy arises…
 ## Notes and corrections
 
 Fr. 3516, image 227. The letter is printed in Jeannin, Négociations (1875), p. 104.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here. His entry names a printed text: Jeannin (1875), p. 104. Published text for comparison in the readable file..
+

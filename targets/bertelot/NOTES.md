@@ -61,3 +61,11 @@ excusing yourself…
 - What we checked: his f133r crop: interlinear "Il ny a point de doute que S.A. ne se sente griefvement offense du refus faict de la levee des deux mil hommes sans conge ce qui nest maintenant a propos" = his excerpt; mixed code/letter cipher not decoded independently
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: 1/5 pages deciphered, 686/1646 identified. Sender not given; recipient Bertelot. Date not given (Nemours-Savoy dispute, c.1580s?).
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

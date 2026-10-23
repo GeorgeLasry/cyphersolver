@@ -323,6 +323,13 @@ in review: the heading digit run (34 43 25 45 11 22 32 51 ...) and the line 24 p
 adopted. Two signs for dat (Λ and the flat-legged λ) is our inference; R2242's slashed and crossed Λ are a similar case.
 "UE" could equally be "u": either way the sign is the addressee. The values of the second table are context only.
 
+## Verification 4, 23 Oct 2026
+
+Page 1's entry pointed at the unspaced `decrypt_p1.txt`, which the v4 sweep could not score. `texts/p1_reading.md`
+(+ `p1_en.md`) now gives it word-divided, the remaining writer's slips kept or marked `[?word]`, the dash, bar and H
+signs and the struck runs as holes. v2_score: explicit holes 0.70 (14/20), hole rate 0.104; plain 0.55 (1795
+spellings). Every sentence holds. Keeps read, grade B.
+
 ## Remaining gaps
 - page 2 (Dutch postscript) decoded, not read: word-divided reading texts/p2_reading.md (23 Oct 2026), first half does not build - blocker: no-key-material; the open word signs below
 - recurring word signs on p2 still open (long-dash H 4, S 3, Y 3, 7 2, bar, slash l. 6), and crossed Y / gamma / cf whose proposed values fail at one occurrence each (23 Oct 2026) - blocker: no-key-material; no key sheet, R2242 lacks them

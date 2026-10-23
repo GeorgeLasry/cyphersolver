@@ -80,3 +80,11 @@ could obtain some details, but Your Excellency…
 ## Notes and corrections
 
 Gallica btv1b9060232m image 37 is the letter (f36r), not the Fr. 4702 key the report labels it as. Sibling of [targets/birago](../birago/NOTES.md) (Fr. 3251).
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

@@ -64,3 +64,11 @@ and a fine figure, though of medium size; much intelligence and a very modest ma
 - What we checked: f53r "Monseigneur", "Excellence ... le 19 du mois dernier"; codes with interlinear: "145.31.67.148.186.147.176" = Labbe Lomelini, "244.176.221" = Venise, "147.46.146.87 / 232.66.45.204" = l Isle de Tabarque, consistent with his Tabarka contents; f58v excerpt (princess of Parma) not compared; his key table not applied
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Interlinear decipherments on ff53r-54r, 57v, 58r-59r give most of the plaintext. Princess of Parma = Elisabeth Farnese (born Oct 1692, married Philip V 1714) - excerpt facts are historically right.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

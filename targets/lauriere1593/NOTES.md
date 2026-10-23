@@ -277,6 +277,13 @@ f. 58 alone stays under the per-document read bar.
   `reading.md`.
 * `mk_validation.py`, `validation.tsv` — f. 58 token pairs for `docs/_validate.py` (pass, 11 Oct 2026).
 
+## Verification 4, 23 Oct 2026
+
+No. 55's entry pointed at `reading_3625_55.txt`, a commented sign-by-sign file the scorer could not parse. The five
+deciphered runs are now written out as sentences in `texts/n55_reading.md` (+ `n55_en.md`), each after the clear words
+that lead into it, spelling as key no. 57 gives it. v2_score: explicit holes 0.714 (5/7), hole rate 0.067; plain 0.429
+(1593 spelling: *ung*, *atandre*, *prandre*). The only holes are untranscribed clear text. Keeps read, grade B.
+
 ## Remaining gaps
 
 - Fr. 3985 f. 58, 6 illegible tokens: two signs in s..t (sait; a blot and a 2-shaped sign), the three middle signs of c...e (ceste, written '1 5 4'), the sign after 29-bar in B1 - blocker: illegible; Gallica's maximum (4719 px, lossless PNG regions, enhanced) does not decide them; no colour scan online, needs the manuscript

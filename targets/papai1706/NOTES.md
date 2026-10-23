@@ -1,6 +1,6 @@
 # János Pápai (Constantinople) to Ferenc Rákóczi II, 1706–1710, in the envoy key R580 — DECODE R740, R741, R757, R765, R784, R793–R796, R805, R823
 
-Status: read — the eleven numeric letters read with the envoy's own key (second pass: 16,641 of 16,698 numeric
+Status: in progress (23 Oct 2026: R793, R796, R740 decoded, not read; see Verification 4) — earlier: read — the eleven numeric letters read with the envoy's own key (second pass: 16,641 of 16,698 numeric
 groups, 99.7%; 16,641 of ~16,739 with DECODE's '?' tokens, 99.4%); the open groups are DECODE transcription slips.
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R795 was graded C for its "·" marks; they are the 251 declared nulls (groups above 322), not gaps, and without them R795 reads like the other ten letters. Per-document C overturned to B; claim unchanged.
 
@@ -144,9 +144,34 @@ marked with `?` by DECODE's transcribers (illegible to them). The reading files 
 **Print.** Benda (ed.), *Pápai János törökországi naplói* (Budapest: Szépirodalmi, 1963, Magyar Századok) is not
 online (antiquarian copies only). It needs a library copy.
 
+## Verification 4, 23 Oct 2026
+
+The v4 sweep could not score the Hungarian entries: they pointed at the unspaced `*_read2.txt` decodes. Each was written
+out as a word-divided reading, `texts/<rec>_reading.md` (figure spelling kept, garbled stretches `[?word]` / `[…]`),
+using the transcriber's copy of the contemporary interlinear decipherment (`<PLAINTEXT>` lines of the DECODE file,
+printed beside the decode by `research/reading_audit/v4_papai_lines.py`) where it exists, and, in R740, the clear words
+written inside the cipher passage. v2_score, explicit holes (the hu word list does not know 1706 spelling):
+
+| record | explicit holes | hole rate | words | decision |
+|---|---|---|---|---|
+| R784 | 0.90 | 0.044 | 204 | read (English written) |
+| R741 | 0.718 | 0.108 | 454 | read |
+| R794 | 0.70 | 0.110 | 353 | read (interlinear copy followed where the decode is garbled) |
+| R765 | 0.698 | 0.105 | 1,482 | read |
+| R823 | 0.649 | 0.113 | 462 | read |
+| R757 | 0.628 | 0.111 | 853 | read (several passages only in outline) |
+| R796 | 0.577 | 0.173 | 306 | **decoded, not read**: decode lines 16-19 repeat letters; interlinear copy covers lines 0-15 only |
+| R793 | 0.529 | 0.157 | 381 | **decoded, not read**: Muscovite frontier / Black Sea passages garbled; interlinear copy covers lines 0-5 |
+| R740 | 0.50 | 0.15 | 60 | **decoded, not read**: transcription checked on `img/R740_p2_b.jpg`, the slips are the writer's |
+
+Class read -> read in part; fraction_read 0.994 -> 0.857 (groups in letters that read, documents table). R805 and
+R795 were not in the v4 list and are unchanged.
+
 ## Remaining gaps
 - 57 numeric groups across R757, R765, R793–R796, R823 - blocker: illegible; split or slipped digits in DECODE's transcriptions that no key value fits by context (retry_groups.tsv); about 41 further tokens marked '?' by DECODE
 - Benda (ed.), Pápai János törökországi naplói (1963) - blocker: needs-physical-access; not online
+- R796, R793: garbled stretches of the decode (decoded, not read, 23 Oct 2026) - blocker: not-attempted; re-transcribe the digits on the DECODE images and align with the full interlinear decipherment
+- R740: middle of the 168-group passage - blocker: no-key-material; transcription agrees with the image, the slips are the writer's, no other text known
 
 ## Escalation
 - [x] siblings: twelve Papai records (R793–R796 added from catalogue 47) plus key copies R580, R581, R452 opened
@@ -154,4 +179,4 @@ online (antiquarian copies only). It needs a library copy.
 - [x] known-keys: R580/R581/R452 applied to all eleven numeric letters; no graphic alphabet among them
 - [x] print: Benda 1963 searched for online (antikvarium.hu only); DECODE and web searched, nothing printed online
 - [x] key-rebuild: numeric key extended (220 = a, splits, joins, nulls above 322, decode2.py)
-- [x] retry: every off-key group rescored in context (retry_groups.py) and regraded; 57 remain
+- [x] retry: every off-key group rescored in context (retry_groups.py) and regraded; 57 remain; 23 Oct 2026 readings word-divided for nine letters (Verification 4); R793/R796 image re-transcription still open

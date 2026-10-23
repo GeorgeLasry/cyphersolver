@@ -510,6 +510,12 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): R795 re-read: its \"·\" marks are the 251 declared nulls (groups above 322), not gaps; without them the letter reads like the other ten. Per-document C overturned to B. Claim unchanged.",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Verification 4: the nine Hungarian entries the sweep could not score (unspaced decodes) written out as word-divided readings (texts/<rec>_reading.md) from decode2 output, using the transcriber's copy of the contemporary interlinear decipherment where the DECODE file has it (R793, R794, R796), and the clear words inside R740's passage. Explicit-hole scores: R784 0.90, R741 0.718, R794 0.70, R765 0.698, R823 0.649, R757 0.628 (kept read, English written); R796 0.577, R793 0.529, R740 0.50 (demoted to decoded, not read).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -521,10 +527,10 @@
    "sender or date identified",
    "catalogue correction"
   ],
-  "class": "read",
-  "fraction_read": 0.994,
+  "class": "read in part",
+  "fraction_read": 0.857,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode2.py over the DECODE transcriptions of the eleven numeric letters: 16,641 of 16,698 numeric groups (nulls counted read); the ~41 tokens DECODE marks '?' added as unread: 16,641/~16,739. Before the split R731's ~330 signs were also counted unread (0.97).",
+  "fraction_read_source": "decode2.py over the DECODE transcriptions of the eleven numeric letters: 16,641 of 16,698 numeric groups (nulls counted read); the ~41 tokens DECODE marks '?' added as unread: 16,641/~16,739. Before the split R731's ~330 signs were also counted unread (0.97). Verification 4, 23 Oct 2026: R796 (1,025), R793 (1,226) and R740 (168 groups) demoted to decoded, not read; groups in letters that read, by the documents table: 14,442 of 16,861 = 0.857.",
   "key": "partial",
   "codes_open": {
    "tokens_open": 57
@@ -549,6 +555,16 @@
     "item": "Benda (ed.), Papai Janos torokorszagi naploi (1963)",
     "blocker": "needs-physical-access",
     "detail": "not online"
+   },
+   {
+    "item": "R796 and R793: garbled stretches of the decode (decoded, not read)",
+    "blocker": "not-attempted",
+    "detail": "re-transcription of the digits on the DECODE images, aligned with the contemporary interlinear decipherment (copied only in part in the DECODE files), not yet done"
+   },
+   {
+    "item": "R740: middle of the 168-group passage",
+    "blocker": "no-key-material",
+    "detail": "the transcription agrees with the image; the slips are the writer's and no other text of the passage is known"
    }
   ],
   "credits": [
@@ -597,7 +613,10 @@
      "DOC_R796_read.txt"
     ],
     "summary": "The Prince's undated letter from the Tisza received; the Germans spread false news; the confederates are scorned; the Moldavian kapi-kiaya as channel; the Muscovite envoy, the Vezír and the Sultan; nothing resolved on the propositions.",
-    "language": "hu"
+    "language": "hu",
+    "note": "Decoded, not read (v4 check 23 Oct 2026): a word-divided reading was written from the decode (texts/R796_reading.md, kept as a partial reading) and scored with v2_score: explicit holes 0.577 (15/26), hole rate 0.173, 306 words: the first half (the Prince's letter, the false German news) reads; from the Moldavian petition on, decode lines 16-19 repeat letters and much of the rest (the Muscovite ministry, the Vizier and the Sultan) holds only in outline. The interlinear decipherment copied in the DECODE file covers only decode lines 0-15.",
+    "state": "decoded, not read",
+    "reading": "texts/R796_reading.md"
    },
    {
     "doc": "R793",
@@ -608,7 +627,10 @@
      "DOC_R793_read.txt"
     ],
     "summary": "Secret talks with the Porte's chancellor about the Muscovite-Porte quarrel, the King of Sweden, a Hungarian confederation with the Porte on certain conditions, the Circassians and the Black Sea; the Prince's manifesto translated and given to the Vezír.",
-    "language": "hu"
+    "language": "hu",
+    "note": "Decoded, not read (v4 check 23 Oct 2026): a word-divided reading was written from the decode (texts/R793_reading.md, kept as a partial reading) and scored with v2_score: explicit holes 0.529 (18/34), hole rate 0.157, 381 words: the opening, the confederation 'certis conditionibus' and the manifesto read; the Muscovite frontier, Circassian and Black Sea passages are too garbled to divide into sentences. The interlinear decipherment copied in the DECODE file covers only decode lines 0-5.",
+    "state": "decoded, not read",
+    "reading": "texts/R793_reading.md"
    },
    {
     "doc": "R794",
@@ -619,7 +641,16 @@
      "DOC_R794_read.txt"
     ],
     "summary": "Propositions on recruiting four thousand horse in Wallachia, the memorial on Muscovy, and the (French) King's money that the ambassador will not pay without the King's order.",
-    "language": "hu"
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at the unspaced decode2 output, which the sweep could not score. Written out as texts/R794_reading.md (word-divided, figure spelling kept, garbled stretches as [?word] or [...]) and texts/R794_en.md. v2_score (hu word list does not know 1706 spelling, so the explicit-hole share is the measure; plain near 0): explicit holes 0.70 (21/30), hole rate 0.110, 353 words; the contemporary interlinear decipherment (transcriber's copy in the DECODE file) followed where the decode is garbled. Judged as a reader: most sentences hold. Keeps read, grade B."
+    },
+    "reading": "texts/R794_reading.md",
+    "translation": "texts/R794_en.md",
+    "state": "read"
    },
    {
     "doc": "R823",
@@ -630,7 +661,16 @@
      "DOC_R823_read.txt"
     ],
     "summary": "Report of an audience at the Porte in the presence of the Imperial internuncio, partly in Latin, with the argument over hereditary kingship and the envoys' reply that Hungary cannot give up its old laws.",
-    "language": "hu"
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at the unspaced decode2 output, which the sweep could not score. Written out as texts/R823_reading.md (word-divided, figure spelling kept, garbled stretches as [?word] or [...]) and texts/R823_en.md. v2_score (hu word list does not know 1706 spelling, so the explicit-hole share is the measure; plain near 0): explicit holes 0.649 (24/37), hole rate 0.113, 462 words; the Latin dialogue and the hereditary-kingship argument read cleanly, the opening sum and a few words at the end do not. Judged as a reader: most sentences hold. Keeps read, grade B."
+    },
+    "reading": "texts/R823_reading.md",
+    "translation": "texts/R823_en.md",
+    "state": "read"
    },
    {
     "doc": "R765",
@@ -641,7 +681,16 @@
      "DOC_R765_read.txt"
     ],
     "summary": "Submission to the Prince's will, the Polish situation, and approaches to the French ambassador on the Prince's orders.",
-    "language": "hu"
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at the unspaced decode2 output, which the sweep could not score. Written out as texts/R765_reading.md (word-divided, figure spelling kept, garbled stretches as [?word] or [...]) and texts/R765_en.md. v2_score (hu word list does not know 1706 spelling, so the explicit-hole share is the measure; plain near 0): explicit holes 0.698 (90/129), hole rate 0.105, 1,482 words. Judged as a reader: most sentences hold. Keeps read, grade B."
+    },
+    "reading": "texts/R765_reading.md",
+    "translation": "texts/R765_en.md",
+    "state": "read"
    },
    {
     "doc": "R784",
@@ -652,7 +701,16 @@
      "DOC_R784_read.txt"
     ],
     "summary": "The French ambassador reported that no arguments could bring the Porte to war, though the grandees and the whole Turkish nation incline to it; France means to turn Turkey wholly against the Germans, which would harm Hungary; if Muscovy and Poland do not second it, the Germans will overrun Hungary. A note in another hand asks the Prince to keep it secret and decipher it himself.",
-    "language": "hu"
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at the unspaced decode2 output, which the sweep could not score. Written out as texts/R784_reading.md (word-divided, figure spelling kept, garbled stretches as [?word] or [...]) and texts/R784_en.md. v2_score (hu word list does not know 1706 spelling, so the explicit-hole share is the measure; plain near 0): explicit holes 0.90 (18/20), hole rate 0.044, 204 words. Judged as a reader: most sentences hold. Keeps read, grade B."
+    },
+    "reading": "texts/R784_reading.md",
+    "translation": "texts/R784_en.md",
+    "state": "read"
    },
    {
     "doc": "R757",
@@ -663,7 +721,16 @@
      "DOC_R757_read.txt"
     ],
     "summary": "The Muscovite ambassador's message; the envoy cannot send money from Constantinople; Hentér.",
-    "language": "hu"
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at the unspaced decode2 output, which the sweep could not score. Written out as texts/R757_reading.md (word-divided, figure spelling kept, garbled stretches as [?word] or [...]) and texts/R757_en.md. v2_score (hu word list does not know 1706 spelling, so the explicit-hole share is the measure; plain near 0): explicit holes 0.628 (49/78), hole rate 0.111, 853 words; the Latin exchange with the steward and the kiaya's answer on admitting envoys hold, several passages only in outline. Judged as a reader: most sentences hold. Keeps read, grade B."
+    },
+    "reading": "texts/R757_reading.md",
+    "translation": "texts/R757_en.md",
+    "state": "read"
    },
    {
     "doc": "R740",
@@ -671,7 +738,10 @@
     "transcription": "R740_transcription.txt",
     "decryption": "R740_read.txt",
     "summary": "The Kiaya's answer, in cipher: be patient, do not hurry, wait; if the Porte does not take the matter to heart, Rákóczi should not spend money and effort at the Porte in vain.",
-    "language": "hu"
+    "language": "hu",
+    "note": "Decoded, not read (v4 check 23 Oct 2026): a word-divided reading was written from the decode (texts/R740_reading.md, kept as a partial reading) and scored with v2_score: explicit holes 0.50 (3/6), hole rate 0.15, 60 words (the clear words inside the passage put back): 'be patient … send a memorial to the Vizier … let the Porte state its will' reads; the middle (Bécs … egynehány …pot; the requests to the Prince; the last gift) does not. The transcription agrees with the image (checked on img/R740_p2_b.jpg), so the slips are the writer's.",
+    "state": "decoded, not read",
+    "reading": "texts/R740_reading.md"
    },
    {
     "doc": "R741",
@@ -682,7 +752,16 @@
      "DOC_R741_read.txt"
     ],
     "summary": "At the Defterdar's; the Pasha of Belgrade's letter concerned only the merchants' affairs.",
-    "language": "hu"
+    "language": "hu",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at the unspaced decode2 output, which the sweep could not score. Written out as texts/R741_reading.md (word-divided, figure spelling kept, garbled stretches as [?word] or [...]) and texts/R741_en.md. v2_score (hu word list does not know 1706 spelling, so the explicit-hole share is the measure; plain near 0): explicit holes 0.718 (28/39), hole rate 0.108, 454 words. Judged as a reader: most sentences hold. Keeps read, grade B."
+    },
+    "reading": "texts/R741_reading.md",
+    "translation": "texts/R741_en.md",
+    "state": "read"
    }
   ],
   "key_file": [

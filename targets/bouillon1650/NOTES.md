@@ -60,3 +60,11 @@ and march straight to Paris.
 - What we checked: p55 crop last cipher line "x h e [i] 13 | 3 | [box] 3 h m 8" with his system-A table (x=d, h=r, e=o, 13=t, 3=a, box=p, m=i, 8=s) = "droit a paris", matching interlinear "marcher droit a paris" and his excerpt
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Folio identity not checked on Gallica. Interlinear plaintext throughout pp53-55; reading largely restates it. Same volume as clair460alpha.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

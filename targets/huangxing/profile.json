@@ -129,7 +129,8 @@
     {"date": "2026-10-21", "kind": "verification", "technique": ["key matching"], "what": "Project: decoder written here from the formula alone (threekana.py) with the repository's own code table (sunyatsen/tw.csv); this project's 15 Sept transcription of the reply, with only the O HI -> CHI correction, decodes all 46 groups to 隱印崧詔鬯行諸兄鑒正寄函間適接哿電敬悉一切護國軍能速入湘贑甚好行嚴何日東渡望速啓行先電示興徑, the contributor's text exactly; the project's earlier 誥/蕘 邕 正發書 and 章 were misreadings of the cursive.", "result": "worked"},
     {"date": "2026-10-21", "kind": "verification", "technique": ["key matching", "plaintext matching"], "what": "Project: all 219 coded groups of the contributor's final table decode under threekana.py and tw.csv to the contributor's character (219/219); telegram 1 against the print as transcribed by saberwatchmanga: 101 identical of 107 plus 刪/删 a variant form, so 102/107. The 86 spelling corrections themselves were not re-derived.", "result": "worked"},
     {"date": "2026-10-21", "kind": "verification", "what": "Project: B03050731100 fetched; images 24-26 are consul Ota's telegram no. 42 (Zhaoqing, 21 May 1916) forwarding the romaji stream at Cen Chunxuan's request, beginning sokahokaet arakotsuka atauichire as in B03050089100.", "result": "worked"},
-    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reply_groups.txt / reply_out.txt for the 25 May reply; stream_t1/t2_groups.txt, the contributed sankana/ romaji and groups.csv, and stream_out.txt (threekana.py stream) for the two 20 May telegrams.", "result": "worked"}
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): reply_groups.txt / reply_out.txt for the 25 May reply; stream_t1/t2_groups.txt, the contributed sankana/ romaji and groups.csv, and stream_out.txt (threekana.py stream) for the two 20 May telegrams.", "result": "worked"},
+    {"date": "2026-10-23", "kind": "reading", "what": "Verification 4: wrote punctuated readings and English for the reply and the two 20 May telegrams (texts/<doc>_reading.md, _en.md) from reply_out.txt, stream_out.txt and sankana/groups.csv; inferred groups of telegram 2 as [?x], telegram 1's five print-filled groups named. b21 explicit-hole rule: 6/6, 7/7, 11/12 sentences clean; judged as a reader, all three hold.", "result": "worked"}
   ],
   "outcome": {
     "class": "read",
@@ -164,7 +165,17 @@
         "label": "Huang Xing to Lin Hu, Li Genyuan and others, 25 May 1916 (B03050731500 fr. 0246)",
         "transcription": "reply_groups.txt",
         "decryption": "reply_out.txt",
-        "summary": "Huang Xing's reply, addressed by courtesy names to Lin Hu, Li Genyuan, Cheng Zikai, Wen Qun, Yang Yongtai and Zhang Shizhao: he has their telegram, is glad the National Protection Army can enter Hunan and Jiangxi quickly, and asks when Zhang Shizhao will cross east to Japan."
+        "summary": "Huang Xing's reply, addressed by courtesy names to Lin Hu, Li Genyuan, Cheng Zikai, Wen Qun, Yang Yongtai and Zhang Shizhao: he has their telegram, is glad the National Protection Army can enter Hunan and Jiangxi quickly, and asks when Zhang Shizhao will cross east to Japan.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v4 check 23 Oct 2026: the entry pointed at reply_out.txt (decoder output with a group table), unscored (Chinese). Written out as texts/reply_reading.md (punctuated; all 46 groups decoded after Tomokiyo's correction) and reply_en.md. Explicit holes, one character = one word (b21 rule): 6/6 sentences clean, no holes in 46 characters; printed in 近代史資料 no. 50 and agreeing with the clerk's cursive decode. Judged as a reader: coherent throughout. Keeps read, grade B."
+        },
+        "reading": "texts/reply_reading.md",
+        "translation": "texts/reply_en.md",
+        "language": "zh",
+        "state": "read"
       },
       {
         "doc": "t1-0520",
@@ -178,7 +189,17 @@
           "stream_out.txt",
           "sankana/groups.csv"
         ],
-        "summary": "The Military Affairs Council welcomes Huang Xing's arrival in Japan and asks for his guidance on domestic and foreign affairs, signed by Tang Jiyao, Cen Chunxuan, Liang Qichao and others; already printed in 1916 (護國軍紀事 no. 5). Transcription and corrections contributed by Harumi-Matsuba (issue #48)."
+        "summary": "The Military Affairs Council welcomes Huang Xing's arrival in Japan and asks for his guidance on domestic and foreign affairs, signed by Tang Jiyao, Cen Chunxuan, Liang Qichao and others; already printed in 1916 (護國軍紀事 no. 5). Transcription and corrections contributed by Harumi-Matsuba (issue #48).",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v4 check 23 Oct 2026: the entry pointed at stream_out.txt and groups.csv, unscored (Chinese, unspaced stream). Written out as texts/t1-0520_reading.md, punctuated after the 1916 print (護國軍紀事 no. 5), which the decode matches at 102/107; the five groups garbled in transmission are carried by that print and named. 7/7 sentences clean on the b21 explicit-hole rule. Judged as a reader: coherent throughout. Keeps read, grade B."
+        },
+        "reading": "texts/t1-0520_reading.md",
+        "translation": "texts/t1-0520_en.md",
+        "language": "zh",
+        "state": "read"
       },
       {
         "doc": "t2-0520",
@@ -192,7 +213,17 @@
           "stream_out.txt",
           "sankana/groups.csv"
         ],
-        "summary": "The six at Zhaoqing report that the Military Affairs Council holds only a name, its committees not yet organised; the Xiehe army will soon enter Jiangxi from Shaozhou; Lin Hu takes the Fourth Division; and Zhang Shizhao plans to come east to report in person. Transcription and corrections contributed by Harumi-Matsuba (issue #48)."
+        "summary": "The six at Zhaoqing report that the Military Affairs Council holds only a name, its committees not yet organised; the Xiehe army will soon enter Jiangxi from Shaozhou; Lin Hu takes the Fourth Division; and Zhang Shizhao plans to come east to report in person. Transcription and corrections contributed by Harumi-Matsuba (issue #48).",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v4 check 23 Oct 2026: the entry pointed at stream_out.txt and groups.csv, unscored (Chinese, unspaced stream). Written out as texts/t2-0520_reading.md (punctuated; the four inferred groups 164, 211, 223, 225 as [?x]; 43 groups read after a spelling correction, grade M in NOTES) and t2-0520_en.md. b21 explicit-hole rule: 11/12 sentences clean, 4 holes in 120 characters (two in the signature line). Judged as a reader: every sentence holds. Keeps read, grade B."
+        },
+        "reading": "texts/t2-0520_reading.md",
+        "translation": "texts/t2-0520_en.md",
+        "language": "zh",
+        "state": "read"
       }
     ]
   }

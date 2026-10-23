@@ -66,3 +66,11 @@ are…
 - What we checked: f53r: clear "vous les fassiez valloir et peser a sa Ste y adioustant de plus la recommandation des grands" + interlinear over cipher "services de mon cousin le cardinal de Richelieu son frere de qui la [struck] conduite et les actions" = his excerpt; next 4 cipher rows uninterlined (his own decipherment, not checked)
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: Addressed "Monsr de Bethune"; Archbishop of Lyon (Alphonse de Richelieu) cardinalate 1629 fits. 93.8%, partly deciphered.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

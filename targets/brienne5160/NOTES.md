@@ -72,3 +72,11 @@ justly reproach his conduct. But to impute to him…
 - What we checked: f9r (canvas 24) after "ordres que vous avez receu": 36 60 33 n 39 x 21 , 6 28 ... -> de la co-n-du-i-te , que vo... = "de la conduite que vo(us)" with his table (36=de,60=la,33=co,39=du,21=te,6bar=que,28bar=vo); fits the f10r plaintext context. Excerpt f18r not imaged by me.
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Clear copies of letters B and C in same volume (f10r, ff17r-v). 96.5% incl. 40 probable nulls; several nomenclator values marked ?. 1653 consistent (Bordeaux fell Jul/Aug 1653).
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

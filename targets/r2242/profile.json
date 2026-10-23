@@ -295,6 +295,12 @@
    "what": "Verification 3 (v3_below_b): pp. 3 and 4 were scored on wainut_proposals.md (WAINUT's proposals table, 0.59). Wrote texts/p3_p4_reading.md from the decrypts and the NOTES reading, I-grade signs as [?word]: 0.708 explicit holes (p3 0.69, p4 0.75), plain 0.125 (Dutch word list). Kept read, grade B; p3 ll. 7-12 and the P.S. stay fragmentary.",
    "result": "worked",
    "technique": ["manual reconstruction", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Verification 4: wrote texts/p1_reading.md and p1_en.md from decrypt_p1.txt and the clear Dutch under the cipher; v2_score 1.00 on explicit holes (plain 0.25, 1795 spelling).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -357,7 +363,15 @@
     "transcription": "transcription_p1.txt",
     "decryption": "decrypt_p1.txt",
     "summary": "Prince Frederick of Orange to his brother the Hereditary Prince, London, 7 May 1795: when the letter has been read the matter is settled; if it does not change, they need not go to sea; if the Hereditary Prince wants anything he need only say so, the writer is at his service, in death or life.",
-    "language": "nl"
+    "language": "nl",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: decrypt_p1.txt is the unspaced decode with word signs in brackets, which the scorer could not score. Written out as texts/p1_reading.md from the decode and the contemporary clear Dutch under the cipher lines (every digit word agrees; the word signs take their values from it). v2_score: explicit holes 1.00 (4/4), hole rate 0, 40 words; plain 0.25 because the nl word list does not know 1795 spelling (geleesen, gebraaden, leeven, wy). Three coherent sentences, confirmed by the clear text. Keeps read, grade B (raw decode normalised in the reading)."
+    },
+    "reading": "texts/p1_reading.md",
+    "translation": "texts/p1_en.md"
    },
    {
     "doc": "R2242 p3",

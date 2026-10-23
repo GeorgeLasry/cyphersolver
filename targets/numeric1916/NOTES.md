@@ -114,6 +114,14 @@ Correspondents: Tokyo side Huang Xing (興, 克強) and Zhang Xiaozhun (準, 潤
 the group of Yin Ruli, Huang Fu and Ge Jing'en (signing 李/驪, 郛, 恩), relaying to and from Lü Gongwang; the
 辰密 telegrams go to the Hunanese group's address ヒツキン, 277 Avenue Joffre.
 
+## Verification 4, 23 Oct 2026
+
+The v4 sweep cannot score Chinese. chenmi had no reading (only the unpunctuated decoder output and Dudout's web
+translation): `texts/chenmi_reading.md` and `chenmi_en.md` now give the four telegrams punctuated, figure values kept,
+盻 → [盼] supplied as in rongmi, and 偕, 一不, 畎, 羶 as `[?x]`. On the b21 rule (explicit holes, one character = one
+word, supplied characters counted as holes): 19/19 sentences clean, 5 holes in 239 characters. gongmi (0.91) and rongmi
+(0.91) were re-judged as a reader on their b21 readings. All three keep read, grade B.
+
 ## Remaining gaps
 - 共密: 45 doubtful characters in 9 telegrams - blocker: illegible; uncertain digit readings or rare codes, marked on his pages
 - 容密: 102 doubtful and 6 illegible characters in 14 telegrams - blocker: illegible; uncertain digits on the police copies, and recurring anomalous codes (繒 for 生, 盻 for 盼) kept as marked

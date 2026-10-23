@@ -71,3 +71,11 @@ opportunity to serve Your Excellency will be left unused.
 - What we checked: Gallica f71r = Spanish letter, clear "Señor" heading, Blasco hand; cipher check on his f72r crop: "13.7.20.8.14 2.29.20 9.3 10.14.8.20.2.7.18.3" = venir con la princesa, matching his excerpt
 - Verdict: **confirmed** (method key recovered from ciphertext-only, extent complete). The check is a sample, not a re-solution.
 - Notes: Only 107 cipher elements (numbers in clear Spanish text); 16-value key from a short sample, so mostly context-driven. f71r itself is clear text; f72 holds most cipher.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

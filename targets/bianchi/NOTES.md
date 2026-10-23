@@ -70,3 +70,11 @@ communicates with the Reformed in France; this is why he does not write in his o
 - What we checked: f73r: after clear "per questa volta et dirli con queste sole parole": u35 u32 / m13 u2 u32 t41 u31 t38 u18 -> Che Dal / [Villeroy] et Dal [Amb.] Del [Re] Qui; u-codes checked against the original codebook page in his crop (u2 et, u18 Qui, u31 Del, u32 Dal, u35 Che) = his excerpt
 - Verdict: **confirmed** (method read with known key, extent complete). The check is a sample, not a re-solution.
 - Notes: Original codebook in the same volume (views 126-128) and a clear copy of letter XXIII at f131r; signed Antonio Bianchi, Venice 3 Feb 1610, to Castrino. 99.2%.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

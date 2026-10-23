@@ -58,6 +58,15 @@ Check against f. 91 (by eye, 14 Oct 2026, not a full collation): the clear copy 
 substance line for line. Differences seen: f. 91 "N.S.re" where Lasry has 144^ M.S.; "darle" where his values give
 "parlio" (groups 36 … 26); "regina m[ad]re" where his file has <744^>.
 
+## Verification 4, 23 Oct 2026
+
+The v4 sweep could not score R73: its entry pointed at Lasry's group-by-group decryption (`decode/DOC_R72_D3191_3191.txt`),
+not a running text. `texts/R73_reading.md` (+ `R73_en.md`) now gives the reading, word-divided from his letters, and
+for f. 90r follows the contemporary clear copy on f. 91 (DECODE D1137), transcribed from the image this time: the copy
+has N.S.re where his 144^ gives M.S., V.S. three times where his 824^ gives N.S., "darle" for his "parlio", "questa
+monaca" for "per la monaca". f. 89r has no copy and stays holed (32 illegible groups, five open codes). v2_score:
+plain 0.692, explicit holes 0.769, hole rate 0.088. Keeps read, grade B.
+
 ## Remaining gaps
 
 - 32 illegible groups - blocker: illegible; damaged paper and bleed-through, transcription marks them "?"
@@ -68,11 +77,11 @@ substance line for line. Differences seen: f. 91 "N.S.re" where Lasry has 144^ M
 
 - [x] siblings: R72 (same frame, different letter key; own entry); the DOC attachments of R73 opened 14 Oct 2026:
   covering letter ff. 88/92 (date) and the clear copy f. 91
-- [x] clear-pages: f. 91 is the decipherment of the f. 90r section; nothing for f. 89r
+- [x] clear-pages: f. 91 is the decipherment of the f. 90r section, transcribed and followed 23 Oct 2026 (texts/R73_reading.md); nothing for f. 89r
 - [x] known-keys: Lasry's D3190 is the key; R72's letter key does not apply
 - [n/a] print: not searched in print here (Nunziature di Francia for 1580 not checked); the reading is Lasry's
 - [n/a] key-rebuild: Lasry's key is complete for the letters; the open nomenclator groups occur once each
-- [n/a] retry: the reading is Lasry's; not re-decrypted here
+- [x] retry: 23 Oct 2026 the reading written out from Lasry's letters and the f. 91 copy; f. 89r gaps are illegible groups and single-occurrence codes
 
 ## Assumptions for George's review
 

@@ -253,6 +253,12 @@ hole rate 0.122; plain 0.125, because the nl word list does not know 1795 spelli
 the officers, the ratification and England hold; p. 3 ll. 7-12 (*natuurlyk … behandelt word*) and the P.S. do not.
 Both pages stay read, grade B; both entries now point their `reading` at the new file.
 
+## Verification 4, 23 Oct 2026
+
+Page 1's entry pointed at the unspaced `decrypt_p1.txt`, which the v4 sweep could not score. `texts/p1_reading.md`
+(+ `p1_en.md`) gives it word-divided, the word signs written as the words the clear Dutch under the cipher gives them.
+v2_score: explicit holes 1.00 (4/4), no holes; plain 0.25 (1795 spelling). Keeps read, grade B.
+
 ## Remaining gaps
 - signs that occur twice (plain Δ: p3 l11 and p4 l1; %: p3 l10 and p4 l4; crossed diamond, value voor at I only) - blocker: open-codes; no value fits both occurrences, retried 2 and 3 Oct 2026
 - nineteen signs that occur once (T-bar, S-stroke, square bracket, H with P, dagger, V-with-cross, C-hook, crossed o, vertical bracket, x mark, Δ with tail, H with loop, ψ, P.S. S / crossed ø / ⊖, and X, &, + whose context-only values weinig / Engeland / mogelyk are counted unread) - blocker: no-key-material; a single context cannot fix a word sign, none occurs in R1892, no key sheet, not in print

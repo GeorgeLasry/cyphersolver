@@ -60,3 +60,11 @@ He begs you to inform him clearly of your intentions, whether for war or for pea
 - What we checked: his p296 crop: interlinear "Il vous suplie de le vouloir informer clairement de vos intentions soit pour la guerre ou pour la paix" over 3-digit groups = his excerpt; numeric values not decoded by me
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: 1,558/2,080 visible (74.9%), 9/9 pages only in part; sender, recipient, dates not established.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+

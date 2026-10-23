@@ -81,6 +81,14 @@ saberwatchmanga/sun-circle-cipher-1916 (published 10 Oct 2026; "an unfinished so
 found the 1916 print of telegram 1 and compared it with the stream (107 characters), and left telegram 2 unresolved. It
 is credited for the identification of the print; it did not publish a reading of telegram 2.
 
+## Verification 4, 23 Oct 2026
+
+The three texts entries pointed at decoder output (`reply_out.txt`, `stream_out.txt`, `sankana/groups.csv`), which the
+v4 sweep cannot score (Chinese, unspaced streams). Each now has a punctuated reading and an English file in `texts/`
+(`reply_`, `t1-0520_`, `t2-0520_reading.md` / `_en.md`). Telegram 1 follows the 1916 print's punctuation and names the
+five print-filled groups; telegram 2 marks the four inferred groups `[?x]`. On the b21 rule (explicit holes, one
+character = one word): 6/6, 7/7 and 11/12 sentences clean. Judged as a reader, all three hold: keep read, grade B.
+
 ## Remaining gaps
 - telegram 1, groups 48, 49, 50, 52, 58 - blocker: illegible; garbled in transmission (out-of-rule or transposed kana), filled from the 1916 print
 - telegram 2, groups 164, 211, 223, 225 - blocker: illegible; garbled groups (6381 has no character, others one kana off), inferred from context and the reply, grade I

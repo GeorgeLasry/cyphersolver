@@ -69,6 +69,14 @@ Codex and Claude Sonnet blind second transcriptions, lowest agreements 97.2%, 10
   JACAR catalogue's own transcription drops the 18, per READING.md). `ct_C09122911500.txt` here has 35 pairs.
 - C09122909900 was not re-read here; C03020059400 re-read 23 Oct 2026 (b24).
 
+## Verification 4, 23 Oct 2026
+
+C09122911500 and C09123116600 pointed at `texts/readings.md`, the shared table of unspaced kana decodes, which the v4
+sweep cannot score (Japanese, no word list). Each now has its own `texts/<id>_reading.md` and `_en.md`: the kana divided
+into words with the kanji text under them (C09122911500 from its filed translation, frame 0108, 35/35 pairs;
+C09123116600 with the sender's spellings ヨヨウ, ダイヨ kept). Judged as a reader: each is one complete, coherent
+sentence with no hole. Both keep read, grade B. C03020059400 (its reading already written, 22-23 Oct) judged the same way: two sentences from the filed translation, one hole of three characters; keeps read.
+
 ## Remaining gaps
 - C09122909900 pair 2 (17 for イ) - blocker: needs-physical-access; the image shows 七, writer's or transmission error; binarised JBIG2 scan cannot settle the head of column 2 either
 - C03020059400 pairs 5 and 7 (0 + 九-or-四 for ハ, 八八 for ジ) and three cramped characters of the translation - blocker: illegible; re-read on the JACAR scan 23 Oct 2026, the translation carries the reading

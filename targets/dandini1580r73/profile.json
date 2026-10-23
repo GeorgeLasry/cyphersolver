@@ -134,6 +134,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): KaJo's DECODE transcription D1789 and George Lasry's decryption D3191. The contemporary clear copy of the f. 90r section (f. 91, DECODE attachment D1137) is only an image, not transcribed in full.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching", "contextual inference"],
+   "what": "Verification 4: wrote texts/R73_reading.md and R73_en.md from Lasry's decryption D3191, word-divided; transcribed the f. 91 clear copy from the DECODE image D1137 and followed it for f. 90r where Lasry's values slip (M.S./N.S. for the copy's N.S./V.S., parlio for darle, 266^ as the syllable chi in chiesa). v2_score 0.769 on explicit holes (plain 0.692), hole rate 0.088; f. 89r stays holed (32 illegible groups, five open codes).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -190,7 +197,17 @@
     "label": "R73, ff. 89r-90r, 8 Aug 1580",
     "transcription": "decode/DOC_R73_D1789_1789.txt",
     "decryption": "decode/DOC_R72_D3191_3191.txt",
-    "summary": "Como to Dandini, cipher enclosure of his letter of 8 August 1580. f. 89r concerns a princely marriage negotiation; f. 90r the nun affair: the Pope does not want Dandini to speak with the Queen Mother about it, lest it give cover for some disturbance contrary to his mind, and the reproof should be moved by the Pope with the King, proceeding so circumspectly that no rumour or disorder arises. Decryption is George Lasry's (DECODE D3191, 2020, on KaJo's 2017 transcription D1789)."
+    "summary": "Como to Dandini, cipher enclosure of his letter of 8 August 1580. f. 89r concerns a princely marriage negotiation; f. 90r the nun affair: the Pope does not want Dandini to speak with the Queen Mother about it, lest it give cover for some disturbance contrary to his mind, and the reproof should be moved by the Pope with the King, proceeding so circumspectly that no rumour or disorder arises. Decryption is George Lasry's (DECODE D3191, 2020, on KaJo's 2017 transcription D1789).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry pointed at Lasry's group-by-group decryption file, which the scorer could not parse. A reading was written from it (texts/R73_reading.md; letter stream by research/reading_audit/v4_dandini_stream.py), f. 90r following the contemporary clear copy on f. 91 (DECODE D1137, transcribed from the image) where Lasry's values slip (144^/824^ against the copy's N.S./V.S., 'parlio' for darle). v2_score: plain 0.692, explicit holes 0.769, hole rate 0.088, 274 words. f. 90r reads as clean sentences; f. 89r (no copy, 32 illegible groups, five open codes) holds in outline (the marriage, 'fanno talvolta li servitori amorevoli de lor patroni', 'si moverebe ad abraciar la pratica') with about one hole in four words. Keeps read, grade B."
+    },
+    "reading": "texts/R73_reading.md",
+    "translation": "texts/R73_en.md",
+    "language": "it",
+    "state": "read"
    }
   ]
  }

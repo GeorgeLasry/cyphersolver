@@ -365,6 +365,12 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): no. 55 (ct_3625_55.txt, reading_3625_55.txt), no. 10 (ct_3625_10_*.txt; decryption saved from check_3625_10.py output to texts/n10_decryption.md), f. 58 (fr3985_f58/ct.txt, clear.txt, reading.md); key key57.txt + words57.tsv.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Verification 4: wrote texts/n55_reading.md and n55_en.md from reading_3625_55.txt (key no. 57), the eight runs as five sentences with their clear lead-in words. v2_score 0.714 on explicit holes (plain 0.429, period spelling), hole rate 0.067.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -464,7 +470,16 @@
     "label": "fr. 3625 no. 55, f. 66r, Châlons, 9 July 1593",
     "transcription": "ct_3625_55.txt",
     "decryption": "reading_3625_55.txt",
-    "summary": "In the weeks before Henri IV's abjuration (25 July 1593), Laurière urges Nevers to go to the King so that he does not put off his assembly by a day, since his enemies will do all they can to turn him from it; he reports that Lorraine will treat only once the King is Catholic, that the Leaguers joke about an election, and asks whether the Pope's consent is to be awaited."
+    "summary": "In the weeks before Henri IV's abjuration (25 July 1593), Laurière urges Nevers to go to the King so that he does not put off his assembly by a day, since his enemies will do all they can to turn him from it; he reports that Lorraine will treat only once the King is Catholic, that the Leaguers joke about an election, and asks whether the Pope's consent is to be awaited.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v4 check 23 Oct 2026: the entry's decryption file (reading_3625_55.txt) is a commented sign-by-sign file the scorer could not parse. The five deciphered runs were written out as texts/n55_reading.md, each after the clear words that lead into it, spelling as the key gives it, name signs written out. v2_score: explicit holes 0.714 (5/7 sentences), hole rate 0.067, 104 words; plain 0.429 because the fr word list does not know 1593 spelling (ung, atandre, prandre); the only holes are clear text not transcribed. Runs 1, 2, 3b read as full sentences; 2b and 3 are clauses whose clear context is untranscribed. One group of 86 (9P) is a clear abbreviation. Keeps read, grade B."
+    },
+    "reading": "texts/n55_reading.md",
+    "translation": "texts/n55_en.md",
+    "language": "fr"
    },
    {
     "doc": "n10",

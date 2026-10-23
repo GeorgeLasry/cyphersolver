@@ -30,6 +30,12 @@ Measured: 7 tokens, 7 distinct.
 CSP Foreign XXI pt 1, Nov 1586 1-15 (BHO pp. 123-146) calendars a different Stafford letter of 9 Nov (to Burghley,
 SP 78/16 no. 74); this Harley letter is not calendared. No decipherment on the page.
 
+## Verification 4, 23 Oct 2026
+
+The texts entry was marked read but points at a one-word file (`plaintext.txt`: *princes*), which cannot be scored as
+sentences. Relabelled **not prose** in `profile.json`, with a note: the letter is clear and its one cipher word is
+deciphered. Class and fraction unchanged.
+
 ## Remaining gaps
 
 None in the cipher. The clear text is only roughly transcribed (not cipher).

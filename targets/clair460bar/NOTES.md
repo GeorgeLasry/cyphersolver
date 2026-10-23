@@ -62,3 +62,11 @@ set out six weeks ago to come to you…
 - What we checked: his p285 crop: contemporary interlinear "que la moitie de largent que Vre Al a ordonne que lon me donna ce qui est la seulle cause de ce que je nay pas este il y a six semaine en chemin pour vous aller" = his excerpt; barred-letter cipher not decoded by me
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: 1,139/1,218 visible (93.5%), more ciphertext hidden or damaged. Fronde letters to the Prince (Conde), Chamilly/Barriere; year not shown (likely 1651-52). Shares volume with clair460num.
+
+## Verification 4, 23 Oct 2026
+
+The profile marks this document read, but its texts entry names no file. The reading is George Lasry's ("BnF cipher
+research", 10 Oct 2026); the repository holds only his entry with one excerpt and its translation (`lasry_entry.md`), and
+NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
+pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
+
