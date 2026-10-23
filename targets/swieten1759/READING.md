@@ -4,11 +4,14 @@ Cipher in brackets «…»; clear text of the letter around it in roman. Doubtfu
 
 ## R957, Bonn 14 January 1759 (ff. 327–328)
 
-… de l'administration; «la nouvelle convention laisse les revenus à la [232 G…] en réservant la souveraineté
-à l'Impératrice. On promet (?) de toujours de la part des François. Dans cette supposition [357] sans que nous
-avons aucun ordre de la cour à ce sujet, et cela cause beaucoup de mésintelligences. On vient de la part de la
-[232 G…] de mettre en possession de la principauté de Meurs le prince de Con[…] [323 441] qui vous formez des
-prétensions sans prévenir seulement l'Impératrice, qui en est souveraine.»
+Re-read 23 Oct 2026 (b36) from the contemporary decipherment on the record (DECODE image 4), aligned with the figures:
+`R957_reading.md` (log `R957_reread_log.md`, decipherment `R957_decipherment.txt`).
+
+… de l'administration; «la nouvelle Convention laisse les Revenus à la France en reservant la Souveraineté à
+l'Imperatrice. On procede toujours de la part des français dans cette Supposition, sans que nous ayons aucun ordre de
+la Cour a ce sujet; cela cause beaucoups de mesintelligences. On vient de la part de la france de mettre en possession
+de la principauté de Moeurs le Prince de Croÿ, qui y forme des pretensions, sans prevenir seulement l'Imperatrice, qui
+en est souveraine.»
 
 ## R956, Bonn 4 February 1759 (ff. 344–345)
 
@@ -22,8 +25,8 @@ toutes les opérations de l'année passée n'avoient «eu d'autre but. Le prince
 «malintentionné»; outre cela «il n'y a pas un officier général entendu à cette armée, excepté le duc de Broglio;
 le m[aréchal] (I) général des logis (I) de Vaut est intéressé et ignorant, et non l'intendant nécessaire pour mettre en
 oeuvre le système» que j'ai détaillé ci-dessus, sans s'oublier quant à ses intérêts propres, auxquels il est fort
-attaché. D'ailleurs, «homme non violent», je n'ai pas besoin de «parler de Dumesnil»; il est universellement
-connu pour être «prussien, [170 271 289 337] le prince Camille (?)» plusieurs bien, mais c'est à quoi se borne
+attaché. D'ailleurs, «homme non violent», je n'ai pas besoin de «parler de Dumenil»; il est universellement
+connu pour être «prussien, Crillon (170 271 289 337, read 23 Oct 2026 with 170 = cr from R957), le prince Camille (?)» plusieurs bien, mais c'est à quoi se borne
 tout ce qu'ils peuvent faire de bon pour la cause commune. Parmi «les maréchaux de ce[…]» il n'y a que «[290 313
 316 313 373] qu'on estime». Comme de notre côté nous ne pouvons pas résister aux «plaintes fondées des États»,
 et que «les ordres de la cour» nous obligent de faire des représentations … on a pris occasion de former des

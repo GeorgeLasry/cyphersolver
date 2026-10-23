@@ -1,6 +1,8 @@
 # Francisco de Vargas (Venice) to Charles V, 25 August 1552
 
-Status: in progress. Deciphered at the time per Tomokiyo; nothing transcribed here (reading audit, 22 Oct 2026).
+Status: in progress (re-read 23 Oct 2026, b36: the letter now reads from its contemporary decipherment; no site page or README row yet, left to the write-up pass)
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b36, Claude Opus 5.5): R9967 read from the contemporary decipherment on the letter.** All 16 DECODE images opened at full size (their P numbers are out of page order; the archive numbers 0001-0016 in the headers give the order). The decipherment, in a second hand in the left margins, at the page feet and between the lines, is one continuous text across 14 pages; transcribed in full with the clear paragraphs (`texts/R9967_decipherment.txt`) and checked against the cipher without a key: the clear words left in the cipher lines agree at ten places, and the codes `ager` cardenal, `pollo` papa, `s-o` el, `x-o` del, `n-o` al recur consistently (`texts/R9967_code_check.tsv`). Reading `texts/R9967_reading.md`, English `texts/R9967_en.md`, log `texts/R9967_reread_log.md`. b17 on the body 0.701 plain, 0.996 explicit holes. Content: the Pope suspected over Siena (Sant'Angelo, the legate [?Mignanelli]), the Duke of Florence, the Duke of Urbino and Venice, the conde de Pitigliano's son, the French secretary Serri to be seized, the Salerno fleet at Porto Ercole.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): no transcription or decipherment of R9967 is in the repository; the marginal decipherment is on the DECODE images only. R9967 is *decoded, not read* in profile.json; class already solved is kept (deciphered in the margin, Tomokiyo).
 
@@ -27,13 +29,15 @@ Catalogue entry 197 removed on 21 Sept 2026. DECODE status correction queued (`d
 
 ## Remaining gaps
 
-- R9967: the marginal decipherment, not transcribed - blocker: not-attempted; DECODE R9967 images (16 pp.) reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt); fetch, transcribe the margins and check them with the Imperial Cipher of 1544-1554
+- eight words of the marginal decipherment and the legate's name ([?Mignanelo]) - blocker: illegible; small margin hand at DECODE's 1850 x 2600 px (PARES lower); only the AGS originals would settle them
+- sign-by-sign check of the spelled cipher runs - blocker: no-key-material; the Imperial Cipher of 1544-1554 key is not in the repository; clear words and code groups were checked instead
+- closed 23 Oct 2026 (b36): the marginal decipherment fetched, transcribed and read
 
 ## Escalation
 
 - [x] siblings: Juan de Vega R9964 uses the same Imperial Cipher of 1544-1554 (Tomokiyo)
-- [ ] clear-pages: the marginal decipherment on the DECODE images not fetched
+- [x] clear-pages: 23 Oct 2026 (b36) the decipherment on the leaves transcribed in full; neighbours R9966, R9968 are other letters
 - [x] known-keys: the Imperial Cipher of 1544-1554 identified by Tomokiyo
-- [ ] print: not searched
+- [x] print: Tomokiyo gives no edition; not needed, the decipherment on the leaves is complete
 - [n/a] key-rebuild: the key is known
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: 23 Oct 2026 (b36) the letter read from the decipherment

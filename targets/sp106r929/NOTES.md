@@ -1,6 +1,8 @@
 # Henrietta Maria's household (Paris) to "Sir", 26 January 1646 — Lasry's "SP106-5" key — TNA SP 106/10 f. 247 (DECODE R929) — NOTES
 
-Status: in progress. Lasry's decipherment exists on DECODE; none of it is in the repository (reading audit, 22 Oct 2026).
+Status: in progress (re-read 23 Oct 2026, b36: the letter now reads; the site page and README row still describe the 22 Oct audit state and are left to the write-up pass)
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b36, Claude Opus 5.5): R929 read** (`R929_reading.md`, `R929_en.md`, log `R929_reread_log.md`). The record's five files were fetched to the scratchpad; the image, read line by line at full size, corrects ten groups of the transcription (`R929_corrections.tsv`, corrected `R929_signs.txt`): `810` is **o2** = WE (weke, wekly), `993` is g3 MAY, `e5 106` is c5 p6 FOR WHICH, one more e5 is c5. Decoded with Lasry's key (`research/reading_audit/b36_sp106.py`), every letter group agrees with his plaintext. The figures 81-90 fall only between words: dividers. Code values read from context: 425 your, 429 you, e3 her, 241 King (two or more contexts); 334 Queen, 199 give (or send), 208 Majesty, 319 Port (*Portugall*: the Portuguese match), 259 letter (one context). b17 on the reading body: 0.273 plain, 0.727 explicit holes (English 1646); reader's judgement: every sentence holds. Grade B. Open: 566, 554, 620 and the signature 316 440 236.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Lasry's plaintext of R929 is on the DECODE record only; the git-ignored copy is in no checkout, so nothing of the letter could be read. R929 is *decoded, not read* in profile.json; class already solved is kept (his decipherment exists), fraction_read 0.842 -> 0 (the old figure was key coverage).
 
@@ -55,9 +57,9 @@ January 1646), per Lasry's interlinear file.
 
 ## Remaining gaps
 
-- three-digit nomenclator numbers (17 distinct, 23 tokens: 425, 199, 429, 810, 241 ...) and the group e3 (2 tokens) - blocker: open-codes; not in Lasry's key, mostly names (241 probably the King); not reconstructed here
-- the figures 81-90 (9 distinct, 30 tokens) - blocker: open-codes; not in the key, they fall between words ("HOW _ BAD _ SO EUER"), dividers or nulls against the "no nulls" of Lasry's key file; not settled
-- R929: Lasry's plaintext not in the repository - blocker: not-attempted; fetch his interlinear and plaintext files with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt) (git-ignored, his work), grade them as sentences, and ask him whether a reading copy may be kept
+- codes 566, 554, 620 and the signature 316 440 236 (6 tokens) - blocker: no-key-material; one context each, not in Lasry's key, no clear copy on the record or its neighbours
+- code 199 (2 tokens), give or send - blocker: no-key-material; both fit both contexts
+- closed 23 Oct 2026 (b36): the three-digit codes 425, 429, 241, e3, 334, 208, 319, 259 read from context; 810 and 993 were transcription slips (o2, g3); the figures 81-90 are word dividers; Lasry's plaintext fetched and compared, the reading built from the figures
 
 ## Escalation
 
@@ -66,7 +68,7 @@ January 1646), per Lasry's interlinear file.
 - [x] known-keys: Lasry's SP106-5 key applied; it also read rupert1645
 - [x] print: Lasry's DECODE files are the only decipherment found; Tomokiyo's unsolved list still carries the letters
 - [n/a] key-rebuild: rebuilding Lasry's nomenclator from the whole SP106-5 corpus (R928, Add MS 72438) is new work for a later session
-- [n/a] retry: nothing beyond the key's values was read here, so there is nothing to regrade
+- [x] retry: 23 Oct 2026 (b36) the image re-read at full size, ten transcription corrections, code values from context; the letter reads
 
 ## Open (not pursued)
 

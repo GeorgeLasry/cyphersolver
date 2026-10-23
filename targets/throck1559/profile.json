@@ -150,6 +150,40 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b36): DECODE R2988 refetched (image 3269 x 4205 and Tomokiyo's key image); neighbours R2986 (f. 30, to Cecil 9 July), R2987 (f. 31, to the Council 9 July), R2990 (ff. 34-35, to Cecil 13 July) fetched and opened: sibling letters in the same Cipher 1, no decipherment or copy of f. 32. Forbes I re-checked: no text of the 10 July letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "Line centres measured by projection (15 lines); lines 5-15 re-transcribed sign by sign at 2-3x (texts/R2988_signs.tsv), look-alike choices marked.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "key from source",
+   "technique": ["key matching"],
+   "what": "Tomokiyo's key image read in full, including its code list: as G/б, have б̄, had r̄, whom ṭ, upon ḟ, so g̲, this б̲, all K, at O, be Q, in ἰ, your Majesty ξ (also ζ, formerly a null). Decoder research/reading_audit/b36_throck.py.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "technique": ["contextual inference"],
+   "what": "Code values from sense: q̄ hath (3 contexts; Tomokiyo 'both' fits none), ō good (4), ġ letters (2), π̄ God, ῡ his, ϱ̲ time, V I (one each). Open: 1̲ k̲, ť, r̲ (key 'then' does not fit), v̲, ℓ̄.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["language-model scoring"],
+   "what": "Partial reading written (texts/R2988_reading.md, _en.md), aligned word by word with the decoder output. b17 0.35 plain, 0.60 explicit holes (English 1559); look-alike share 30/496 = 0.060 > 0.03 with no confirming text: kept decoded, not read.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -165,24 +199,24 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count; the one letter (729 tokens) is decoded, not read (only its first sentence, lines 1-5, reads whole), so 0. The earlier 0.85 (lines 1-4 secure, ~470 of 550 signs in lines 5-15 given a value, estimated) is withdrawn as a reading figure.",
   "codes_open": {
-   "open": 12,
+   "open": 7,
    "total": "unknown"
   },
   "verification": [
    "key confirms",
    "historical consistency"
   ],
-  "notes": "Unpublished letter: Throckmorton sends a gentleman to report the French King's state, asks credit and reward for him, signs off at Paris the tenth of July. Twelve code signs open. The starred note keyed to line 13 is in the margin word code (throck1559margin). Split 14 Oct 2026 from wod1568. 22 Oct 2026, reading audit: relabelled decoded, not read; class not read, method not solved (Tomokiyo's key with the corrections stays as key work).",
+  "notes": "Unpublished letter: Throckmorton sends a gentleman to report the French King's state, asks credit and reward for him, signs off at Paris the tenth of July. The starred note keyed to line 13 is in the margin word code (throck1559margin). Split 14 Oct 2026 from wod1568. 22 Oct 2026, reading audit: relabelled decoded, not read. 23 Oct 2026 (re-read b36): lines 5-15 re-transcribed and decoded with the key's code list; partial reading texts/R2988_reading.md (b17 0.35 plain / 0.60 explicit holes); kept decoded, not read on the look-alike share (6%).",
   "gaps": [
    {
-    "item": "twelve code signs (1k, rho, g, delta, delta, o, pi-bar etc.)",
-    "blocker": "open-codes",
-    "detail": "not on Tomokiyo's Cipher 1 key image; values guessed from context only"
+    "item": "30 of 496 letters of lines 5-15 rest on look-alike choices (6%)",
+    "blocker": "not-attempted",
+    "detail": "No text of the letter exists; the sibling letters in the same cipher (DECODE R2986, R2987 of 9 July, R2990 of 13 July 1559) against Forbes I pp. 157-160 could show whether rho serves for both d and t (a key homophone, not a look-alike) and confirm q-bar hath, o-bar good, g-dot letters."
    },
    {
-    "item": "spans marked [..] in lines 5-8, 11-14 (about 80 of 550 signs)",
-    "blocker": "illegible",
-    "detail": "small signs at DECODE resolution, crop overlap"
+    "item": "code signs 1k (l. 6), t-dot (l. 5), r-underline (l. 8), v-underline (l. 14), l-bar (l. 15) and the groups 'i a i' (l. 4) and 'L T 8' (l. 2)",
+    "blocker": "no-key-material",
+    "detail": "Not in Tomokiyo's key list (r-underline is 'then' there, which does not fit); one context each."
    },
    {
     "item": "the starred note keyed to line 13",
@@ -202,12 +236,12 @@
    {
     "doc": "R2988",
     "label": "R2988, Add MS 4136 f. 32, Throckmorton to Elizabeth I, Paris, 10 July 1559",
-    "transcription": "main_decrypt.txt",
-    "decryption": "main_decrypt.txt",
+    "transcription": ["main_decrypt.txt", "texts/R2988_signs.tsv"],
+    "decryption": ["texts/R2988_reading.md", "main_decrypt.txt"],
     "summary": "Throckmorton sends a gentleman, the bearer, to report the French King's state by word of mouth after his two despatches of 8 July (by Gray and, at midnight, by Carew); he asks the Queen to give the bearer credit, praises his diverse and sundry service and asks that it be rewarded. An unpublished letter, not in Forbes or CSP Foreign.",
     "language": "en",
     "state": "decoded, not read",
-    "note": "Lines 1-5 read as sentences; from line 6 the running reading (decode_updates/decryptions/R2988.txt) has [...] holes every few words, so the letter cannot be built into sentences (reading audit, 22 Oct 2026)."
+    "note": "Re-read b36 (23 Oct 2026): lines 5-15 re-transcribed sign by sign at full size (texts/R2988_signs.tsv) and decoded with Tomokiyo's Cipher 1 including its code list, which the September passes had not used (have, had, as, so, whom, upon, this, your Majesty ...); the letter now builds into sentences (texts/R2988_reading.md, partial reading; b17 0.35 plain, 0.60 explicit holes). Kept decoded, not read: 30 of 496 letters (6%) rest on look-alike choices (rho t/d, 7 r/g, mu h/b, x i/y, o/a), above 3%, and no contemporary or printed text of the letter exists to confirm them; codes 1k (l. 6), t-dot, r-underline, v-underline, l-bar and two sign groups open. Next: the sibling letters in the same cipher (R2986, R2987 of 9 July, R2990 of 13 July) against Forbes I pp. 157-160, to test whether rho serves for both d and t and to confirm q-bar hath, o-bar good."
    }
   ],
   "key_file": "texts/key.md"

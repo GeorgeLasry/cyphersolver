@@ -1,6 +1,8 @@
 # Van Swieten to Cobenzl, Bonn, 14 Jan and 4 Feb 1759 (DECODE R956, R957): the 1759 table
 
-Status: in progress. R956 reads; R957 decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress (re-read 23 Oct 2026, b36: R957 now reads, class back to read; the site page and README row still describe the 22 Oct audit state and are left to the write-up pass)
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b36, Claude Opus 5.5): R957 read from a contemporary decipherment that was on the DECODE record all along.** R957's fourth image (`IMG_R957_I4985_P4`) is a decipherment of its cipher passage on a separate leaf, in another hand; the decipherer wrote *232* above *France*. Transcribed (`R957_decipherment.txt`) and aligned group by group with the figures: they agree word for word once seven values of the rebuilt table are corrected, each at every occurrence (232 *France*, 327 *oc*, 131 *ay*, 170 *cr*, 323 *o*, 440 *y*, 316 *ni*; `key.json`, `overrides.json`); 327 and 440 close two of the table's seven order breaks. One encipherer's slip (357 *pr* for *-on* in *supposition*). "On procede toujours de la part des français dans cette Supposition, sans que nous ayons aucun ordre de la Cour"; "le Prince de Croÿ, qui y forme des pretensions". Reading `R957_reading.md`, English `R957_en.md`, log `R957_reread_log.md`; b17 0.571 -> 0.857. R956 gains *Crillon* (run 14, 170 271 289 337) and *Dumenil* (run 13). The key stays "recovered from ciphertext-only": it was rebuilt before the decipherment was seen; the decipherment now confirms it.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R956 builds French sentences with scattered name groups open. R957 does not: "On promet (?) de toujours de la part des François" fails and "le prince de Con[...] [323 441] qui vous formez des prétensions" is garbled, so half its sentences have holes; R957 is *decoded, not read*. Class read -> read in part; fraction_read 0.962 -> 0.597 (estimated: tokens in R956). Both readings are excerpts: the cipher runs in full, the clear text around them in extract.
 
@@ -59,17 +61,14 @@ so by the same order it is filed under F, not G; "la France" fits both R957 cont
 [232] en réservant la souveraineté à l'Impératrice"; "de la part de la [232]").
 
 ## Remaining gaps
-- code 232 (twice, R957), a name filed under G - blocker: open-codes; one name, sense of both sentences clear
-- codes 147 100 126 148 (R956), the prince's name - blocker: open-codes; a name group, single occurrence
-- codes 170 323 441 (R957) and 170 271 289 337 (R956) - blocker: open-codes; syllables read, words unresolved
+- codes 147 100 126 148 (R956), the prince's name - blocker: no-key-material; a name group, single occurrence, no decipherment of R956
 - codes 290 313 316 313 373 (R956), the one marshal "qu'on estime" - blocker: illegible; digit division uncertain in the scan
-- code 357 in R957 "supposition [pr] sans que" - blocker: open-codes; single awkward syllable
-- R957 runs 2 and 4 ("On promet ... François"; "le prince de Con[...] ... qui vous formez des prétensions"): decoded, not read - blocker: not-attempted; re-read on the scans against the alphabetical table and the clear text
+- closed 23 Oct 2026 (b36): 232 = France, 170 323 441 = Croÿ, 170 271 289 337 = Crillon, 357 in "supposition" an encipherer's slip, and R957 runs 2 and 4, all from R957's contemporary decipherment (DECODE image 4)
 
 ## Escalation
 - [x] siblings: R955 opened (now swieten1757); its 1757 table differs; no other record in inv. 1236 on DECODE
-- [x] clear-pages: no decipherment on R956/R957; the clear text round every 1759 run used as crib
+- [x] clear-pages: the clear text round every 1759 run used as crib; 23 Oct 2026 (b36) R957's fourth DECODE image found to be its contemporary decipherment (none for R956)
 - [x] known-keys: no key record for this series on DECODE; R955's table tried on 1759, does not fit
 - [x] print: web search, local Tomokiyo/cryptiana copies: nothing printed
 - [x] key-rebuild: monotone annealing (msolve.py) + hand correction rebuilt the 1759 table
-- [x] retry: every unread group rerun against the final key and the alphabetical brackets
+- [x] retry: every unread group rerun against the final key and the alphabetical brackets; 23 Oct 2026 (b36) R957 aligned with its decipherment, seven values corrected

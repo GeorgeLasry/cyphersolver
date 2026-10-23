@@ -1,5 +1,7 @@
 # Thomas Urquhart's Cyphral Octastich read in full; the distich claim not reproduced
 
+**23 Oct 2026, re-read (REREAD_BRIEF batch b36, Claude Opus 5.5): distich still decoded, not read.** No text of it exists: no decipherment on the 1653 leaf or in the 1834 Works, and the August claim does not reproduce. One more construction tried: the k-th number as the n-th *letter* of the k-th Proquiritation (with and without signatures, offsets 0/1, line 2 forwards or reversed): best −6.99/char against shuffled controls up to −6.22, no English (`research/reading_audit/b36_distich.py`). Blocker unchanged: no-key-material.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the distich entry in profile.json carried no state; it is now *decoded, not read* with the note "not deciphered" (outcome.parts already had it not solved). Claim unchanged: the octastich reads.
 
 Two numeric cryptograms of Sir Thomas Urquhart (1611–1660), no. 28 on Schmeh's Top 50. The **octastich**: eight
@@ -201,7 +203,7 @@ text was the book it is printed in, and the poem said so.
 ## Remaining gaps
 - octastich position 149 (one letter of line 5) - blocker: illegible; p. 149 word 2 is "Colonel" on the EEBO images too (Scheers), so 149 is a slip in the book. Position 158 resolved 20 Oct 2026 from Scheers's photographs (printed [158] used twice)
 - octastich 9 other positions (55, 66, 106, 151, 207, 232, 239, 250, 283) - blocker: illegible (writer's/compositor's slips; numbers re-checked on the 1983 photographs, letter fixed by context only)
-- distich, 64 numbers - blocker: no-key-material; claimed Proquiritation rule gives 34/64, chance; page-index variants on The Jewel and Logopandecteision at chance; key text not identified
+- distich, 64 numbers - blocker: no-key-material; claimed Proquiritation rule gives 34/64, chance; page-index variants on The Jewel and Logopandecteision at chance; letter-index on the Proquiritations at chance (23 Oct 2026, b36); key text not identified
 
 ## Escalation
 - [n/a] siblings: printed cryptograms in a book, no archival sibling records exist
@@ -209,4 +211,4 @@ text was the book it is printed in, and the poem said so.
 - [x] known-keys: Proquiritation rule and page-index variants on both books tested for the distich
 - [x] print: 1652 TCP, 1653 edition, 1834 Works, Wilcock 1899 and the 1983 edition checked
 - [x] key-rebuild: 5 Oct 2026, 1834 Works fetched (archive.org worksofsirthomas00mait -> src/maitland1834.txt; p. 417 distich, six-line verse, Parva peto couplet and its English). `distich_verse_keys.py` (output `distich_verse_keys.txt`): the six-line verse, the Latin couplet, its English, the octastich reading and its Decagram verse, alone and concatenated in both orders, as word-index and letter-index keys, with and without wrap-around: 76 decodes, best -6.76/char (Parva peto, letter index) against -5.09 for English; none reads. Distich stays unread
-- [x] retry: 5 Oct 2026, line 5 re-transcribed from the 1983 photograph at full resolution (numbers confirmed) and re-segmented: overthrow his usurp'd; the 1652 page images are still not reachable
+- [x] retry: 5 Oct 2026, line 5 re-transcribed from the 1983 photograph at full resolution (numbers confirmed) and re-segmented: overthrow his usurp'd; the 1652 page images are still not reachable; 23 Oct 2026 (b36) distich letter-index variants on the Proquiritations, at chance

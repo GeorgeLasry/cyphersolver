@@ -2,6 +2,8 @@
 
 Status: in progress. not read (reading audit, 22 Oct 2026: decoded, not read). Was: read in part (21 Sept 2026): the 10 July 1559 letter ~85-90% with Tomokiyo's Cipher 1 key and seven corrections. Write-up docs/throck1559.html.
 
+**23 Oct 2026, re-read (REREAD_BRIEF batch b36, Claude Opus 5.5): still decoded, not read, but the letter now builds into sentences.** Tomokiyo's key image lists code signs the September passes never used (*as* G/б, *have* б̄, *had* r̄, *whom* ṭ, *upon* ḟ, *so* g̲, *this* б̲, *your Majesty* ξ, which is also the old "null" ζ). Lines 5-15 re-transcribed sign by sign at measured line centres (`texts/R2988_signs.tsv`, decoder `research/reading_audit/b36_throck.py`): "...as I wish your Majesty to have knowledge of, considering the present [?time], have I iudged it best to dispatche this gentelman ... to whom it may [?please] your Majesty to giue credit. He [?hath] since [?his] coming on [?this] side done your Majesty diuerse and sundry wais so [?good] and [?painfull] seruice, as he [?hath] deserud to be well considered and rewarded ..." Partial reading `texts/R2988_reading.md` (English `_en.md`, log `_reread_log.md`): b17 0.35 plain, 0.60 explicit holes. Kept decoded, not read because 30 of 496 letters (6%) rest on look-alike choices (ρ t/d, 7 r/g, μ h/b, x i/y, ⊥/┘ o/a) and no text of the letter exists to confirm them. Neighbours R2986, R2987 (9 July) and R2990 (13 July) are sibling letters in the same cipher, not copies; Forbes I prints the 13 July letters (pp. 157-160): the next step.
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
 The opening sentence (lines 1-5, the despatches by Gray and Carew) reads; from line 6 the running reading has `[...]`
 holes every few words, so the letter cannot be built into sentences. Class now not read, method not solved; the
@@ -60,10 +62,10 @@ throck1559margin) · `../../decode_updates/decryptions/R2988.txt` (public readin
 
 ## Remaining gaps
 
-- 10 July letter, lines 6-15 decoded, not read (holes every few words; reading audit 22 Oct 2026) - blocker: not-attempted; re-read the small signs on a better crop and work the twelve code signs from context, then write the letter out as sentences
-- 10 July letter, twelve code signs (1k̲ ρ̲ g̲ δ̄ δ̲ ō ⊓̄ q̄ r̄ π̄ ƒ̇ ʋ̲) - blocker: open-codes; not on Tomokiyo's Cipher 1 key image; values guessed from context only
-- 10 July letter, spans marked [..] in lines 5-8, 11-14 (~80 of 550 signs) - blocker: illegible; small signs at DECODE resolution, crop overlap
+- 10 July letter, 30 of 496 letters of lines 5-15 rest on look-alike choices (6%, above 3%) - blocker: not-attempted; test on the sibling letters R2986/R2987 (9 July) and R2990 (13 July) against Forbes I pp. 157-160 whether ρ serves for both d and t (a key homophone, not a look-alike) and confirm q̄ hath, ō good, ġ letters
+- 10 July letter, code signs 1̲ k̲ (l. 6), ť (l. 5), r̲ (l. 8), v̲ (l. 14), ℓ̄ (l. 15) and the groups `i б υ` (l. 4), `L T 8` (l. 2) - blocker: no-key-material; not in Tomokiyo's key list (r̲ is *then* there and does not fit), one context each
 - 10 July letter, the starred note keyed to line 13 - blocker: no-key-material; it is in the margin word code (throck1559margin, a different system, no key)
+- closed 23 Oct 2026 (b36): lines 6-15 decoded, not read (holes every few words) - re-transcribed and decoded with the key's code list, now a partial reading in sentences; the "illegible" spans were crop overlaps, re-cut at measured line centres; five of the twelve old open codes are in the key (б̄ have, r̄ had, g̲ so, ξ your Majesty, ḟ upon), q̄ and ō read from sense
 
 ## Escalation
 
@@ -72,4 +74,4 @@ throck1559margin) · `../../decode_updates/decryptions/R2988.txt` (public readin
 - [x] known-keys: Tomokiyo's Cipher 1 (fits, seven corrections); Ciphers 2-3, Smith 1563 and Cecil-Norris give nothing for the code signs
 - [x] print: Forbes I, CSP Foreign I (BHO) checked: only the 8 July despatches
 - [x] key-rebuild: Cipher 1 corrected (seven values) and extended in pass 3 (6 = w, ζ = null, q̇ = your Majesty, K = all?)
-- [x] retry: three passes over the 10 July letter (subagent, re-cut crops, full re-transcription)
+- [x] retry: three passes over the 10 July letter (subagent, re-cut crops, full re-transcription); fourth pass 23 Oct 2026 (b36) with the key's code list, partial reading in sentences
