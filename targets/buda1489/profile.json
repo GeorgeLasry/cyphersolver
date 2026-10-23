@@ -333,7 +333,7 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 1.0,
+  "fraction_read": 0.56,
   "verification": [
    "matched control",
    "independent clear copy",
@@ -402,19 +402,22 @@
    },
    {
     "doc": "V2831",
+    "note": "23 Oct 2026: p. 2 ll. 18-31 and p. 3 scored 0.636 on explicit holes after the r2l LM-assisted segmentation, but a blind second reader (8 random lines, seed 20261023, trans/v2831_sr_blind.tsv) found 9 of 92 unbracketed words (9.8%) not supported by the signs after re-checking each on the crops; spread over the unsampled lines that takes the reading under the 0.60 bar. Kept decoded, not read; the partial reading and English stay in v2831_p2p3_r2l_reading.md / _en.md.",
     "label": "Vestigia 2831, Buda 22 Nov 1489: p. 2 ll. 18-31 and p. 3 (p. 2 has 31 lines, p. 3 31)",
-    "transcription": ["trans/v2831p2_b25.md", "trans/v2831p3_b25.md", "trans/v2831p2_r2e.md", "trans/v2831_r2l_corrections.tsv", "trans/v2831p3_read.md", "trans/v2831p3b_read.md", "trans/v2831p3b_read2.md"],
+    "transcription": [
+     "trans/v2831p2_b25.md",
+     "trans/v2831p3_b25.md",
+     "trans/v2831p2_r2e.md",
+     "trans/v2831_r2l_corrections.tsv",
+     "trans/v2831p3_read.md",
+     "trans/v2831p3b_read.md",
+     "trans/v2831p3b_read2.md"
+    ],
     "decryption": "v2831_reading.md",
     "language": "it",
-    "state": "read",
     "reading": "v2831_p2p3_r2l_reading.md",
     "translation": "v2831_p2p3_r2l_en.md",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "r2l 23 Oct 2026 (v2831_r2l_reread_log.md): fourth pass on the b25/r2e sign strings: every unread group run through the lang/ model it-cinquecento as a segmenter with the alternative values of multi-valued signs enumerated (research/reading_audit/r2l_seg.py), and p. 3 re-cropped from the full-resolution Vestigia plate where a group was in doubt (trans/v2831_r2l_corrections.tsv: per quanto, persuadere, l'invito facto, fare x4, al Papa, non [?venga] a alienare l'animo, tertio in iustificare, calumnie, apresso el Papa offerendoli de mandarlo li, innocentia, cosa, sento d'avere). Body 0.636 explicit-hole (35/55; p. 2 ll. 18-31 0.611, p. 3 0.649), plain 0.491 (before 0.466 / 0.293). Look-alike letters 33 of about 1,800 (1.8%) by the brief's definition (b25's broad count of every shape choice 4.3%); the o-form read t against the key's b about 40 times, listed separately. Still fragmentary: p. 2 ll. 28-31 between secure words, p. 3 ll. 1-3, 5-8 middles, 27, 29, 31 tail (no-key-material: torn R5411 columns; one blot, illegible). Second reader (sr, 23 Oct 2026, trans/v2831_sr_blind.tsv): 8 random lines (seed 20261023: p. 2 L30, p. 3 L02, L03, L09, L10, L21, L23, L31) transcribed blind from the plates with R5411 before the first reader's files were opened: signs agree 388/416 (93.3%); of 92 unbracketed reading words 26 (28%) were not carried by the blind decode, mostly the blind reader's own misses (crossbar of ƀ, dotted ɔ, straight-ascender d = s), and 9 (9.8%) still not carried after re-cropping each disputed sign (sua twice from d s r with s = u, not a key value; mando; andisse where the sign is a single stroke 1 = a; arte with the blotted ß = ʒ; et for x̄ on p. 2 where the key note gives Ma; et and che on p. 3 L21/L09; Turco's 6). At the ~1-in-10 limit, not over it: kept read, grade B."
-    }
+    "state": "decoded, not read"
    },
    {
     "doc": "R1098",
@@ -459,6 +462,6 @@
    "key.json"
   ],
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Documents that read / all, counted in cipher lines: V2831 has 93 cipher lines (p. 1 29, p. 2 31, p. 3 31, p. 4 2) and R1098 10, 103 in all; since r2l (23 Oct 2026) every part reads to the 0.60 sentence bar: V2831 p. 1, p. 2 ll. 1-17, p. 4 (0.698 explicit-hole), p. 2 ll. 18-31 and p. 3 (0.636), R1098 (0.917): 103 of 103. Inside the readings the hole rate is 0.106 and 0.121 of words (v2_score.py), and the share of cipher signs read was measured 0.847 for p. 1, p. 2 ll. 1-17 and p. 4 (r2e); the 95% read bar of README Conventions is not met, hence class read in part. V267 (calibration letter with its clear copy) not counted. History: 22 Oct 0.56 (estimated), 23 Oct v3 0.099, r2e 0.563."
+  "fraction_read_source": "Documents that read / all, counted in cipher lines: V2831 has 93 cipher lines (p. 1 29, p. 2 31, p. 3 31, p. 4 2) and R1098 10, 103 in all; since r2l (23 Oct 2026) every part reads to the 0.60 sentence bar: V2831 p. 1, p. 2 ll. 1-17, p. 4 (0.698 explicit-hole), p. 2 ll. 18-31 and p. 3 (0.636), R1098 (0.917): 103 of 103. Inside the readings the hole rate is 0.106 and 0.121 of words (v2_score.py), and the share of cipher signs read was measured 0.847 for p. 1, p. 2 ll. 1-17 and p. 4 (r2e); the 95% read bar of README Conventions is not met, hence class read in part. V267 (calibration letter with its clear copy) not counted. History: 22 Oct 0.56 (estimated), 23 Oct v3 0.099, r2e 0.563. Revised 23 Oct 2026 after the blind second reading: p. 2 ll. 18-31 and p. 3 back to decoded, not read, so the read lines are again V2831 p. 1, p. 2 ll. 1-17, p. 4 and R1098 (58 of 103 cipher lines)."
  }
 }
