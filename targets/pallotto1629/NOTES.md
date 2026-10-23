@@ -1,6 +1,6 @@
 # Pallotto to Barberini, 1629 — ciphered despatches of the nuncio at Vienna
 
-Status: in progress (22 Oct 2026: R286 read from Kiewning's print, R287-R313 decoded, not read). Earlier: read — contents in print (Kiewning 1897); key = the Biermann–Bosbach key of Barb.lat. 6956 (DECODE R215, 2018), identified for 6960 by George Lasry
+Status: in progress (22 Oct 2026, reread batch b01: 22 of 28 sheets read as sentences with English translations, fraction_read 0.80; R291, R300, R301, R302, R304, R313 read in part). Earlier: read — contents in print (Kiewning 1897); key = the Biermann–Bosbach key of Barb.lat. 6956 (DECODE R215, 2018), identified for 6960 by George Lasry
 
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 * **Read**: R286, from Kiewning 1897 Nr. 153 (the Roman decipherment in print; `crib153.txt`). English translation
@@ -10,6 +10,34 @@ Status: in progress (22 Oct 2026: R286 read from Kiewning's print, R287-R313 dec
   have not been matched.
 * Class already solved kept; method read with known key -> read from existing decipherment (parts); 0.95 withdrawn
   as a reading figure (0.030 = R286's share). "every record decodes to running Italian" below is withdrawn.
+
+**22 Oct 2026, reread batch b01** (REREAD_BRIEF; Claude Opus 5.5 as coordinator, R290 read by it, the other sheets by six
+reader agents of the same model; `research/reading_audit/reread_b01.py` applied the profile changes):
+* **A better decode** (`reread_b01_decode.py`): the nulls 1 and 8 never sit inside a group (no key group contains them;
+  `key6956/apply.py` let unknown groups such as [983] swallow them); 2/3-digit segmentation chosen by an Italian 5-gram
+  model; DECODE's uncertain digits kept as alternatives; DECODE's frequent misreading of this hand's null 8 as 0 modelled
+  (seen on the R286, R290 scans). Output `reread_b01/R*_dec.txt`.
+* **Every sheet matched to Kiewning** (`reread_b01_match2.py`, 9-letter hits) and aligned with the print chunk by chunk
+  (`reread_b01_align.py`, `reread_b01/R*_align.txt`). Kiewning prints R286, R287, R289, R306, R307, R311, R312 verbatim and
+  parts of most others; the rest is German regest.
+* **Key extended**: 125 nomenclator groups missing from the 6956 key, each with its evidence, in
+  `reread_b01/extra_groups.json` (e.g. 577 = N. S./the Pope, 592 principe, 595 principe d'Echembergh, 743 far, 744 fatto,
+  544 negotio, 639 re di Francia, 290 Cardinal di Richelieu, 207 consiglieri secreti, 440 Gesuiti). Key entries corrected:
+  776 = tutto (not "quanto"); 567 = occasione (sometimes ordinatione); 677 = "S. S." of either the Pope or a cardinal.
+  The three-digit groups are roughly alphabetical (2xx A-C ... 9xx S-V, 7xx common words). "Magno" is spelled out 62 99 96.
+  Unknown groups in the decodes: about 5,000 -> about 800.
+* **Readings** `texts/R*_reading.md`, translations `_en.md`, logs `_reread_log.md`, DECODE digit and clear-text corrections
+  `_corrections.tsv` (DECODE's clear-text transcriptions are mostly unusable; re-read on the scans). R286 translated
+  (`texts/R286_en.md`). Clean-sentence shares 0.53-0.94 (target 0.81).
+* **Records and dates corrected**: the volume runs 4 Aug - 29 Sept 1629 ("7mbre" = September; DECODE's November dates and
+  "1627"/"1679" are misreadings). One despatch spread over several records: R286+R287 (Nr. 153), R289+R290 (Nr. 166),
+  R292-R294 (Nr. 160), R297+R299 (Nr. 164), R302+R303 (Nr. 167), R306+R307 (Nr. 176), R311+R312 (Nr. 184). R298 is 11 Aug
+  (Nr. 158), R304 28 Aug (Nr. 168), R309 = Nr. 178 (16 Sept in Kiewning). R300 p. 2 (image 2532) was never transcribed by
+  DECODE: transcribed in `texts/R300_p2_digits.txt`. R301's continuation (register p. 78) and register pp. 81-82 are not
+  among the DECODE images. R287's docket "Decif.ta li 22" matches Kiewning's Roman decipherment date: these sheets may be
+  the originals received in Rome rather than register copies (open).
+* Kiewning slips the figures correct: R291 "duca Alberto" (regest "Alfons"); R307 "aiduchi" (print "arciduchi"); R313 "sotto
+  li quindici" (regest "25. September").
 
 ## Update, 21 Sept 2026: the key exists, and it is the 6956 key
 
@@ -349,31 +377,20 @@ update at the top. Open here: the ~1,750 three-digit groups of 6960 missing from
 
 ## Remaining gaps
 
-- R287, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R288, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R289, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R290, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R291, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R292, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R293, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R294, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R295, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R296, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R297, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R298, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R299, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R300, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R301, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R302, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R303, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R304, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R305, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R306, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R307, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R308, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R309, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R310, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R311, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R312, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R313, decoded, not read - blocker: not-attempted; match the sheet to its despatch in Kiewning 1897 Bd. 2 and transcribe that text as the reading, or correct the transcription and fill the open groups from it
-- R286 reading: English translation not yet written - blocker: not-attempted
+- R291 (11 Aug, Nr. 157), read in part - blocker: open-codes; groups 750, 405, 796, 573, 557, 690, 697, 762, 279, 440, 966, 239, 469 and some garbled letter stretches; Kiewning has a regest only; the sheet breaks off at p. 4
+- R300 (25 Aug, Nr. 165), read in part - blocker: illegible; p. 2 (never transcribed by DECODE) has 3/5/9, 2/7, 6/8 not separable on the scan; p. 1 has single-group holes
+- R301 (25 Aug, Nr. 166), read in part - blocker: open-codes; single groups and unresolved stretches; right edge of p. 2 cut on the scan; continuation (register p. 78) not among the DECODE images (needs-physical-access)
+- R302 (28 Aug, Nr. 167), read in part - blocker: open-codes; the Conti/Duca di Poli paragraph has many unidentified groups and one line of regest
+- R304 (28 Aug, Nr. 168), read in part - blocker: open-codes; first paragraph's middle and the "requisito consensu" formula; not every break checked on the scan yet (workable)
+- R313 (29 Sept, Nr. 185), read in part - blocker: open-codes; groups 964, 209, 644, 665, 932, 552, 936; the struck clear paragraph on p. 2 read only at its frame
+- Read sheets keep scattered open groups (listed in each texts/R*_reread_log.md) - blocker: open-codes
+- R286-R290, R292-R299, R303, R305-R312: closed 22 Oct 2026 (read, texts/R*_reading.md); R286 English translation written
+
+## Escalation
+
+- [x] siblings: the whole 6960 series read together; groups learnt across all 28 sheets; Barb.lat. 6956 key used
+- [x] clear pages: clear words re-read on the DECODE scans for every sheet
+- [x] known keys: 6956 key (Biermann/Bosbach, DECODE R215), extended by 125 groups
+- [x] print: Kiewning 1897 (Nuntiaturberichte IV/2) aligned with every sheet
+- [x] key rebuild: nomenclator groups learnt from the print alignments and contexts
+- [ ] retry: R304 scan check of every break; groups open across the series could be fixed from Kiewning Bd. 1 (1628) and the 6956 sheets
