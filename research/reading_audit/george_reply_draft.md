@@ -10,8 +10,8 @@ are improved until it does — and applied it to every document on the site.
 
 What changed:
 
-- Every document now carries one of three states: read, decoded but not read, or not prose (key sheets, worksheets,
-  lone names). Of 1,003 documents, 812 are now marked read and about 190 are not. Before the audit all 971 then on
+- Every document now carries one of four states: read, read in part, decoded but not read, or not prose (key sheets, worksheets,
+  lone names). Of 1,003 documents, 657 are now read, 155 read in part, 179 decoded but not read and 12 not prose. Before the audit all 971 then on
   file counted as read.
 - The bar: a document is read when a reader finds the sentences coherent and its reading scores about 0.60 clean
   sentences (at most about one hole in ten words), with every guessed or supplied word counted as a hole. For
@@ -19,6 +19,10 @@ What changed:
   in the writer's spelling; modern spelling goes only in the English. Look-alike sign choices above about 3% of the
   letters keep a document unread unless a contemporary or printed text confirms them. The bar is applied the same
   way everywhere; several documents at 0.59 were kept unread.
+- On top of coherence, a document now counts as read only at the project's read bar: 95% of its words read as sense,
+  measured on the reading (marked holes, guessed and supplied words all count against it) and recorded per document.
+  Documents that build coherent sentences under 95% are labelled "read in part" (155 of them), and 35 targets that
+  were classed read are now read in part.
 - Every read document now has an English translation, except about ten that point to a text held elsewhere (your
   excerpts, printed editions, published articles).
 - matignon1586: 14 of 16 documents read and translated; ff. 123r and 124r stay decoded, not read. The three readings
