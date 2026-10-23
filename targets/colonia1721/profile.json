@@ -123,7 +123,8 @@
    "result": "failed"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription cipher.txt and DECODE D3444; decryption READING.md with Lasry's (D3445) and Bonavoglia's (D3443) DECODE readings for comparison; key_file decrypt.py (Lasry's ASV-C15 plus the three added values).", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): the entry was listed as Spanish and scored on Bonavoglia's DECODE file (plain 0.308). It is Italian; READING.md given a ## Reading heading and set as the entry's reading: plain 0.667, explicit 0.667 (first sentence holds three open nomenclator codes). Keeps read.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): the entry was listed as Spanish and scored on Bonavoglia's DECODE file (plain 0.308). It is Italian; READING.md given a ## Reading heading and set as the entry's reading: plain 0.667, explicit 0.667 (first sentence holds three open nomenclator codes). Keeps read.", "result": "worked"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -162,7 +163,10 @@
     },
     "reading": "READING.md",
     "language": "it",
-    "translation": "R24_en.md"
+    "translation": "R24_en.md",
+    "read_share": 0.86,
+    "state": "read in part",
+    "note": "24 Oct 2026: 86.0% of the words of READING.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "decrypt.py"

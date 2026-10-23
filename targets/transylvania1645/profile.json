@@ -376,7 +376,8 @@
    "what": "Consistency pass (cl): documents[].read for R4936 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
    "result": "worked",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -419,7 +420,7 @@
     "decryption": "R4937_reading_lines.txt",
     "summary": "1646, to 'edes Hokmester' (Bethlen): the Emperor will effect nothing of the diploma for the Evangelicals; the clergy rules him; keep secret from the King why Transylvania would not join a war on the Turk; hire 4,000 foot with officers, or 2,000 armed men, or at least 1,000 foot and 500 dragoons.",
     "language": "hu",
-    "state": "read",
+    "state": "read in part",
     "reading": "R4937_reading.md",
     "translation": "R4937_en.md",
     "reading_review": {
@@ -427,7 +428,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Read 23 Oct 2026 (b15) from a full transcription of the one page (R4937-transcription.txt, 34 lines; the old extract had 25 and solver output only) with the family key unchanged; aligned (R4937_align.tsv): 847 letters, 839 on the figure's own value, 3 class-resolved, 4 inside [?words], 1 supplied. On the Emperor's diploma and the Evangelicals, keeping out of the King's war with the Turk, hiring 4,000 foot or 2,000 armed men. docs/_check_reading.py cannot score this Hungarian: its 'hu' word list (modern Gutenberg) gives genuine printed 1645 letters from Szilagyi's Linz edition 0.07 and 0.0, and this reading 0.05; explicit holes only (b17_score.py HOLES=1) give 0.90 (18 of 20 sentences). Open: the run after 'megsegni' (l. 3) and the end of l. 13."
-    }
+    },
+    "read_share": 0.933,
+    "note": "24 Oct 2026: 93.3% of the words of R4937_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R4940",
@@ -443,12 +446,18 @@
      "note": "Translation wave v9, 23 Oct 2026: the clear letter around the two cipher spans was transcribed from IMG_R4940_I28653_P1.jpg (R4940_reading.md); v2_score.py hu: explicit holes 0.667 (6/9), plain 0.222 (the Hungarian word list does not know 1648 spelling), hole rate 0.115. Both cipher spans (votumiok, niert dolog volna) sit in a sentence that holds ('Ha a dolognak votumiok ugy volna, az mint irja kegyelmed, niert dolog volna'); the weak sentence is the clear opening (Foldvari ... erkezven), doubtful in the hand, not in the cipher."
     },
     "reading": "R4940_reading.md",
-    "translation": "R4940_en.md"
+    "translation": "R4940_en.md",
+    "read_share": 0.887,
+    "state": "read in part",
+    "note": "24 Oct 2026: 88.7% of the words of R4940_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R4942",
     "label": "R4942, Zsigmond Rakoczi to Ferenc Bethlen, 1648 (cipher block of p. 2 and two words)",
-    "transcription": ["R4942-transcription.txt", "R4942_slip.txt"],
+    "transcription": [
+     "R4942-transcription.txt",
+     "R4942_slip.txt"
+    ],
     "decryption": "R4942_reading_lines.txt",
     "summary": "Zsigmond Rakoczi, 1648: Bethlen's goodwill has reassured him though there is almost no hope for the present affair; the intermediaries must be used; his brother is so disposed with the plenipotentiary power that he can promise more. The p. 3 slip gives the same text in clear.",
     "language": "hu",
@@ -460,7 +469,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Read 23 Oct 2026 (b15): every cipher passage transcribed (R4942-transcription.txt: the 7-line block at the head of p. 2 and two words lower down), decoded with the family key and aligned (R4942_align.tsv: 249 letters, 236 on their own value); the DECODE record's image 3 is a clear slip with the same words, signed 'Sigis Rakoczi' and noted by Bethlen (R4942_slip.txt), so the reading also rests on a contemporary clear text. docs/_check_reading.py cannot score this Hungarian: its 'hu' word list (modern Gutenberg) gives genuine printed 1645 letters from Szilagyi's Linz edition 0.07 and 0.0, and this reading 0.0; explicit holes only (b17_score.py HOLES=1) give 1.00 (4 of 4 sentences). Open: [?teliessegel] (one figure)."
-    }
+    },
+    "read_share": 0.982
    },
    {
     "doc": "R4939",
@@ -469,7 +479,7 @@
     "decryption": "R4939_reading.md",
     "summary": "György I Rákóczi is dying; he had not sought the Polish crown for himself; the sons will not risk Transylvania by seeking the principality for Zsigmond now and bind the envoys to promote Zsigmond's candidacy for the Polish crown, spending money on it; letters will follow at the father's death. A different simple substitution from the family key, recovered ciphertext-only.",
     "language": "hu",
-    "state": "read",
+    "state": "read in part",
     "reading": "R4939_reading.md",
     "translation": "R4939_en.md",
     "reading_review": {
@@ -477,7 +487,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "R4939_reading.md: key recovered ciphertext-only (R4939_key.md, annealing with hu-modern on the first-pass transcription), 50 look-alike labels corrected on 3x crops (q/g, r/t/s/x), reading aligned word by word with the decode of the corrected labels; 16 of 1,449 letters (1.1%) still rest on a look-alike alternate by sense; words not carried bracketed. v2_score explicit holes 0.75 (18/24), plain 0.0 (modern word list; period spelling). Lines 03-09 keep unread groups; from line 10 the sentences hold. Second reader (sr, 23 Oct 2026, R4939_sr_blind.tsv): 6 random lines (seed 4939: 16, 17, 24, 29, 32, 45) transcribed blind from the DECODE scans: letters agree 200/213 (93.9%; 5 of the 13 differences the q/g pair); of 36 reading words 8 (22%) not carried by the blind decode, 3 (8.3%) after re-cropping the disputed letters (bizoeta-, azekatru- where sr sees ÿ, kegylme where the scan has kegyelme). The key is a consistent simple substitution (23 cipher letters, 23 distinct values) and mostly reciprocal (a-m, b-i, c-p, d-u, e-g, f-v, h-l, o-y, r-z, s-t), which confirms it independently of the annealer; the decoded lines are Hungarian of the period by sense (ra vetni nem akariuc az porta alapattia miben legyen tudhattia kegyelmetek). Kept read, grade B."
-    }
+    },
+    "read_share": 0.896,
+    "note": "24 Oct 2026: 89.6% of the words of R4939_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R4938",

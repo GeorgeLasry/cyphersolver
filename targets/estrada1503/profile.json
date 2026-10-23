@@ -176,7 +176,8 @@
    "technique": ["statistical test"],
    "what": "v3 verification: the entry was scored on the whole of reading_X.md (0.358). Its read part, recto ll. 1-11 and 14-15, written out in PTR53-69_reading.md (research/reading_audit/v3a_estrada.py): 0.812 explicit-hole, plain 0.5. Keeps read.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -245,8 +246,10 @@
      "note": "v3 verification 23 Oct 2026: the sweep scored reading_X.md whole (all 46+11 lines, most unread, with code=value tags; 0.358). The read part the entry claims (recto ll. 1-11 and 14-15) written out in PTR53-69_reading.md (tags reduced to values, letter runs in lower case, supplied letters as holes, ll. 12-13 marked unread): 0.812 explicit-hole (13/16 sentences, hole rate 0.112); plain 0.5 (1503 spelling). Sentences hold except ll. 5-7 (several [..])."
     },
     "reading": "PTR53-69_reading.md",
-    "state": "read",
-    "translation": "PTR53-69_en.md"
+    "state": "read in part",
+    "translation": "PTR53-69_en.md",
+    "read_share": 0.888,
+    "note": "24 Oct 2026: 88.8% of the words of PTR53-69_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "PTR53-69",

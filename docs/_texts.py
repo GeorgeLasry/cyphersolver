@@ -8,7 +8,7 @@ corrected it. Paths are relative to the target folder (or http(s) URLs, discoura
              "transcription": "transcr/R1072.txt", "decryption": "read/R1072.md",
              "reading": "read/R1072_reading.md (optional: the decryption as sentences)",
              "translation": "read/R1072_en.md", "language": "fr",
-             "state": "read | decoded, not read | not prose",
+             "state": "read | read in part | decoded, not read | not prose",
              "summary": "One or two sentences on what the document says."}],
   "key_file": "key_X.tsv"          (or a list)
   "texts_withheld": "reason"         when the texts must not be republished (the owner asked); exempts the target
@@ -24,10 +24,13 @@ reading_problems() is that check, per entry:
   state "read" (default)    a reader has read the decryption as sentences and recorded reading_review {grade A|B,
                             by, date, note} (A coherent with scattered holes; B coherent but raw, normalised in the
                             reading or translation); and it carries an English translation unless language is "en".
-                            docs/_check_reading.py's sentence score is printed as a pointer for the reader
+                            docs/_check_reading.py's sentence score is printed as a pointer for the reader;
+                            and it meets the README read bar: 95% of its words read as sense (read_share)
+  state "read in part"      (24 Oct 2026) builds coherent sentences, reviewed and translated as above, but under
+                            95% of its words read as sense; read_share records the measure
   state "decoded, not read" a mechanical decode shown for checking, not counted as a reading; no translation needed
   state "not prose"         a key sheet, code list, worksheet, numbers or names; say what in note
-A target classed "read" may not hold a "decoded, not read" entry.
+A target classed "read" may hold only "read" (and "not prose") entries.
 """
 import json, pathlib
 
@@ -115,6 +118,8 @@ def reading_problems(folder_path, profile, score=True):
     states = [entry_state(t) for t in o.get('texts') or []]
     if o.get('class') == 'read' and 'decoded, not read' in states:
         hard.append('classed "read" but an entry is "decoded, not read": a reading must read throughout')
+    if o.get('class') == 'read' and 'read in part' in states:
+        hard.append('classed "read" but an entry is "read in part" (under 95% of its words read as sense)')
     if states and all(s == 'decoded, not read' for s in states):
         hard.append('every entry is "decoded, not read": this is not a reading (class it as not solved / attempted, open)')
     cr = None
@@ -125,6 +130,9 @@ def reading_problems(folder_path, profile, score=True):
             if not t.get('note'): soft.append(f'{label}: "not prose" without a note saying what it is')
             continue
         if st == 'decoded, not read': continue
+        rs = t.get('read_share')
+        if st == 'read' and isinstance(rs, (int, float)) and rs < 0.95:
+            hard.append(f'{label}: state "read" but read_share {rs:.3f} < 0.95 (mark it "read in part")')
         if not listify(t.get('translation')) and (t.get('language') or '').lower() != 'en':
             hard.append(f'{label}: no English translation (outcome.texts[].translation; or language "en")')
         # the test is a reader's: someone read the decryption as sentences and recorded it (Lasry: "the acceptance

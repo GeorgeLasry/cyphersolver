@@ -259,7 +259,8 @@
    "kind": "verification",
    "what": "Verification 5 (plain-bar rows): 10 Nov reading is old-spelling French (explicit 1.0, plain 0.333 on period spellings): keeps read. The lasry-additional entries were scored on line-labelled files with notes (plain 0.31-0.46); running text written out as lasry2022/b1_reading.md, b2_reading.md and additional_reading.md: plain 0.70/0.727/0.71, explicit 0.8/0.909/0.839. Keep read (Lasry's reading).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 6 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -361,7 +362,8 @@
     "reading": "15sept1610_reading.md",
     "state": "read",
     "translation": "15sept1610_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.955
    },
    {
     "doc": "10nov1610",
@@ -376,9 +378,11 @@
      "note": "v5 check 23 Oct 2026: 1610 French in the old spelling (recognoissant, arogance, timidite unaccented, se[roit]), so the explicit-hole share is the bar, not the plain word-list share. 10nov1610_reading.md: explicit 1.0 (3/3), plain 0.333 (1/3); the two sentences under the plain bar fail on the marked re[?c]ognoissant and on arogance/desarmement, period spellings. One sentence, it holds. Keeps read. Earlier: v3 verification 23 Oct 2026: scored on the two-passage reading.txt (0.0), a false alarm. The 10 Nov sentence written out whole in 10nov1610_reading.md: 1.0 explicit-hole (3/3, hole rate 0.062), plain 0.333 (1610 unaccented spellings arogance, timidite). Rests on Dudout's decipherment checked sign by sign; Lasry's CTTS decipherment agrees."
     },
     "reading": "10nov1610_reading.md",
-    "state": "read",
+    "state": "read in part",
     "translation": "10nov1610_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.938,
+    "note": "24 Oct 2026: 93.8% of the words of 10nov1610_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "10nov1610",
@@ -398,7 +402,8 @@
     "reading": "10nov1610_lasry_reading.md",
     "state": "read",
     "translation": "10nov1610_lasry_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 1.0
    },
    {
     "doc": "lasry-additional",
@@ -418,7 +423,8 @@
     "reading": "lasry2022/b1_reading.md",
     "state": "read",
     "translation": "lasry2022/b1_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.953
    },
    {
     "doc": "lasry-additional",
@@ -438,7 +444,8 @@
     "reading": "lasry2022/b2_reading.md",
     "state": "read",
     "translation": "lasry2022/b2_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.98
    },
    {
     "doc": "lasry-additional",
@@ -458,7 +465,8 @@
      "note": "v5 check 23 Oct 2026 (1610 French, old spelling: explicit share is the bar, plain recorded): the sweep scored reading_fr.txt whole, headings, line numbers and notes included (plain 0.309, explicit 0.851). The two images of the additional document written out as running text, lasry2022/additional_reading.md (the 10 Nov excerpt of the same edition is ../10nov1610_lasry_reading.md): plain 0.71 (22/31), explicit 0.839 (26/31), hole rate 0.038. George Lasry's reading with Codex's image checks, kept as his."
     },
     "reading": "lasry2022/additional_reading.md",
-    "state": "read"
+    "state": "read",
+    "read_share": 0.96
    }
   ],
   "key_file": [

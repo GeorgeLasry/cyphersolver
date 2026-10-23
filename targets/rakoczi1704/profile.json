@@ -271,7 +271,8 @@
       "what": "Consistency pass (cl): 'read in part' not justified because the second pass on R912 p. 2 is genuinely undone (not-attempted kept) and no print search is recorded (print step left unticked); NOTES already Status: in progress; outcome.gaps mirrors the list.",
       "result": "partial",
       "technique": ["statistical test"]
-    }
+    },
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "method": "read after matching with key from external sources",
@@ -311,7 +312,10 @@
       {
         "doc": "R922",
         "label": "R922, Dantzig, 28 Oct [1707]",
-        "transcription": ["tr/R922_p1.txt", "tr/R922_p2.txt"],
+        "transcription": [
+          "tr/R922_p1.txt",
+          "tr/R922_p2.txt"
+        ],
         "decryption": "R922_image_read.txt",
         "summary": "A report to Rákóczi from Dantzig: a sale carried out for the Palatine of Belz (Elżbieta Sieniawska), with an authentic copy sent to the sieur Kray; orders for carbines; the writer is leaving to join the King of Poland and asks that Kray be given orders so he can continue his services at the Polish court. Deciphered with the corrected R639 key (unkeyed groups in [ ]).",
         "language": "fr",
@@ -323,16 +327,21 @@
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
           "note": "Read 23 Oct 2026 (b22): the groups of tr/R922_p1-p2 (image transcription of 21 Sept) decoded with the corrected R639 table, divided into words and normalised by hand, the table words read for their sound (161 con, 395 son, 188 dont, 343 pre, 170 che ...); doubtful places checked on the image. 18 letters rest on a look-alike alternate (marque 244 -> 294, affaire 128 -> 123, estre 208 -> 207). Holes: groups 9, 873, 574, one '?' group and the run 'Ma D T hi'. b17_score on the body 0.839 (26/31), explicit holes 0.968; the image read 0.143."
-        }
+        },
+        "read_share": 0.972
       },
       {
         "doc": "R912",
         "label": "R912, 'au quartier', 5 Nov [1707]",
-        "transcription": ["tr/R912_p1.txt", "tr/R912_p2.txt", "tr/R912_p3.txt"],
+        "transcription": [
+          "tr/R912_p1.txt",
+          "tr/R912_p2.txt",
+          "tr/R912_p3.txt"
+        ],
         "decryption": "R912_image_read.txt",
         "summary": "A survey of Polish and Swedish politics for Rákóczi: King Stanisław, the Palatine of Belz and the Grand Hetman, the Muscovites, the King of Sweden's pacification and a new election, the Tsar, Rákóczi's letter to Rehnskiöld, Tököly; Charles XII will not enter Muscovy before the coming campaign. About half was deciphered between the lines at the time; the rest deciphered here with the corrected R639 key.",
         "language": "fr",
-        "state": "read",
+        "state": "read in part",
         "reading": "texts/R912_reading.md",
         "translation": "texts/R912_en.md",
         "reading_review": {
@@ -340,7 +349,9 @@
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
           "note": "Read 23 Oct 2026 (b22): p. 1 from the 1707 interlinear read on the image (texts/R912_interlinear_p1.txt) checked against the figures, seven figure corrections seen on the image (texts/R912-R922_corrections.tsv); ll. 16-18 and pp. 2-3 from the figures with the corrected R639 table, word division and normalisation by hand. 13 letters rest on a look-alike alternate (not re-read on the image). p. 1 and the end of p. 3 build fully; p. 2 keeps runs of holes (ll. 3-7, 14-22, 26-31). b17_score on the body 0.783 (54/69), explicit holes 0.899; the image read 0.25."
-        }
+        },
+        "read_share": 0.946,
+        "note": "24 Oct 2026: 94.6% of the words of texts/R912_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "R852",
@@ -356,7 +367,8 @@
         ],
         "summary": "The writer acknowledges Rákóczi's letter of 26 December, vouches for Groffey, and asks for a weekly Latin paper like the Mercurius hungaricus, since the German and Dutch gazetteers 'destroy the Kingdom of Hungary'. Its text is the letter's own contemporary clear copy (R852_clear.txt); R852 uses a variant issue of the table, so R852_key08_read.txt (R639 applied to DECODE's transcription) is a comparison only.",
         "language": "fr",
-        "translation": "R852_en.md"
+        "translation": "R852_en.md",
+        "read_share": 0.993
       }
     ],
     "key_file": [

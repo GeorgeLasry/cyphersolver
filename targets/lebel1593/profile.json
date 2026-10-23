@@ -234,13 +234,14 @@
    "technique": ["statistical test"],
    "what": "v3 verification: no. 62 scored 0.518 on reading62_final.md (code notation). Running text with only glossed/confirmed codes resolved (no62_reading.md, research/reading_audit/v3a_lebel.py): 0.621 explicit-hole, plain 0.414. Keeps read, marginal.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "Tomokiyo's key table for the Lebel-Savoy correspondence (cryptiana savoy.htm, reconstructed from fr. 3983 no. 80 and fr. 3984/3985 decipherments) was applied to nos. 11, 62, 100, which he had not read; letter signs were corrected and about 40 code values harvested from the glossed sibling letters of the same series.",
   "contribution": ["transcription", "key extended or corrected"],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.98,
   "fraction_read_method": "measured",
   "key": "partial",
@@ -280,7 +281,8 @@
     "summary": "Lebel reports to Charles Emmanuel I that Mayenne is again thinking of claiming the crown, encouraged by letters from Rome; the Pope and the King of Spain want a Catholic king elected, Mayenne will favour whichever candidate brings him most advantage, and his secret council is the archbishop of Lyon (Épinac), Villeroy and président Jeannin.",
     "reading": "no11_reading.md",
     "translation": "no11_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.978
    },
    {
     "doc": "no62",
@@ -295,9 +297,11 @@
      "note": "v3 verification 23 Oct 2026: reading62_final.md scored 0.518 with its [code value, grade] notation (each code giving a bare number and a grade letter as holes) and its counts/notes sections. Written out in no62_reading.md (H/C codes as {value}, M/forced/open codes and alternatives as [?value]): 0.621 explicit-hole (18/29 sentences, hole rate 0.13), plain 0.414 (1593 spelling). f. 130r holds; the few lines of f. 130v legible past the recto ink are fragments. Marginal."
     },
     "reading": "no62_reading.md",
-    "state": "read",
+    "state": "read in part",
     "translation": "no62_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.902,
+    "note": "24 Oct 2026: 90.2% of the words of no62_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "no100",
@@ -307,7 +311,8 @@
     "summary": "If Philip II's designs for the Infanta fail, Savoy could with more reason than any other prince hope for the crown from the Estates; money for his 'compagnon' and président Jeannin, paid through Zamet, Feria's and Commandeur Tassis's letters, good offices with the Pope, the Provence governorship, Vaudemont and the château of Miolans. With nos. 11 and 62 it follows Savoy's candidacy at the Estates of the League, January to March 1593.",
     "reading": "no100_reading.md",
     "translation": "no100_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.969
    }
   ],
   "key_file": [

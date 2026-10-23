@@ -420,7 +420,8 @@
   {"date": "2026-10-23", "kind": "transcription", "technique": ["language-model scoring", "beam/DP decoding", "manual reconstruction"], "what": "Re-read (REREAD_BRIEF, b29): R1954 has four images and no attachment on DECODE. The 314 digits marked uncertain in trans/R1954.txt resolved by a French 5-gram beam over look-alike pairs (5/7, 8/9, 4/11, 1/7, 0/6), pair phase and stray digits (research/reading_audit/b29_kd_beam.py), the alternative taken at 137 places; seven places re-read on the rotated images and corrected (trans/R1954_b29_corrections.tsv: l'inpossible, Yorcke, egards, deux objets, six mille hommes, de la proteger). Working file trans/R1954_b29.txt.", "result": "partial"},
   {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Partial reading read/R1954_partial_reading.md and English read/R1954_en.md: 0.549 clean sentences (28/51), explicit holes 0.725; 195 letters rest on a look-alike alternative; key unchanged (21 = inte, 07 = au, 41 = on flagged as sense-only). The d'Affry clause on f. 2 and most of f. 4 do not build: stays decoded, not read.", "result": "failed"},
   {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R2078, R1958, R2079, R1043 had been scored on read/R*.txt with headings, English summaries of the clear passages and key notes. French cipher texts written out alone (read/R*_reading.md): plain 0.618/0.647/0.75/0.6, explicit 0.794/0.882/0.938/0.68. All keep read; R1043 is at the bar (unread name codes).", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.key was missing; set to recovered (the 1754-58 table was recovered by annealing, key.json; only 10, 20, 40, 90 guessed, 12 occurrences). The clear sigla are names, not key gaps.", "result": "worked", "technique": ["statistical test"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.key was missing; set to recovered (the 1754-58 table was recovered by annealing, key.json; only 10, 20, 40, 90 guessed, 12 occurrences). The clear sigla are names, not key gaps.", "result": "worked", "technique": ["statistical test"]},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 9 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 8509, "types": 60, "tokens_per_type": 141.82, "score": -2.364, "nulls": {"random keys": {"n": 200, "mean": -5.279, "sd": 0.292, "max": -4.589, "z": 10.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.531, "sd": 0.011, "max": -3.522, "z": 107.9, "p": 0.1429}}, "power": -2.403, "verdict": "pass", "notes": "claimed per-occurrence score -2.286; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.403"}, 
   "method": "key recovered from ciphertext-only",
@@ -452,8 +453,10 @@
      "note": "v5 check 23 Oct 2026 (1754-56 French: plain share is a bar too): the sweep scored read/R2078.txt whole, its heading line, the English summaries of the clear passages and the key notes included (plain 0.463, explicit 0.778). The French cipher text written out alone, read/R2078_reading.md: plain 0.618 (21/34), explicit 0.794 (27/34); the failing sentences carry the unread name codes ([...]) of the States, towns and courts. Keeps read."
     },
     "reading": "read/R2078_reading.md",
-    "state": "read",
-    "translation": "read/R2078_en.md"
+    "state": "read in part",
+    "translation": "read/R2078_en.md",
+    "read_share": 0.936,
+    "note": "24 Oct 2026: 93.6% of the words of read/R2078_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R1958",
@@ -473,7 +476,8 @@
     },
     "reading": "read/R1958_reading.md",
     "state": "read",
-    "translation": "read/R1958_en.md"
+    "translation": "read/R1958_en.md",
+    "read_share": 0.969
    },
    {
     "doc": "R2079",
@@ -493,7 +497,8 @@
     },
     "reading": "read/R2079_reading.md",
     "state": "read",
-    "translation": "read/R2079_en.md"
+    "translation": "read/R2079_en.md",
+    "read_share": 0.98
    },
    {
     "doc": "R2080",
@@ -506,7 +511,8 @@
     "summary": "The arguments raised in the States of Holland against the proposed augmentation of thirteen thousand men urged by Lord Holderness: it would not suffice against the danger, the danger must first be established, and the other provinces must contribute equally.",
     "language": "fr",
     "reading": "read/R2080_reading.md",
-    "translation": "read/R2080_en.md"
+    "translation": "read/R2080_en.md",
+    "read_share": 0.983
    },
    {
     "doc": "R1959",
@@ -519,7 +525,8 @@
     "summary": "The rumour that [E.M.] is negotiating with [P.] seems not wholly unfounded and is spread by the [M.] party in Amsterdam; the ambassador of [Q.] sounds Kauderbach about a subsidy treaty, and he refers him to the Saxon minister in Paris. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
     "language": "fr",
     "reading": "read/R1959_reading.md",
-    "translation": "read/R1959_en.md"
+    "translation": "read/R1959_en.md",
+    "read_share": 0.986
    },
    {
     "doc": "R2081",
@@ -532,7 +539,8 @@
     "summary": "The [P.] are as dissatisfied with [J. C.] as with [S.] and suspect [U.] of not truly embracing their measures, though [U.] is constrained by her situation at home and abroad; a sudden move had been expected from [Q.]. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
     "language": "fr",
     "reading": "read/R2081_reading.md",
-    "translation": "read/R2081_en.md"
+    "translation": "read/R2081_en.md",
+    "read_share": 0.971
    },
    {
     "doc": "R2082",
@@ -545,7 +553,8 @@
     "summary": "The ambassador of [Q.] says [E.M.] wrote to his king in his own hand of an army of 150,000 men; [P.] declares it will abandon the continent if no defensive measures are taken here; [U.] will push the augmentation at the next assembly. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
     "language": "fr",
     "reading": "read/R2082_reading.md",
-    "translation": "read/R2082_en.md"
+    "translation": "read/R2082_en.md",
+    "read_share": 0.972
    },
    {
     "doc": "R1044",
@@ -558,7 +567,8 @@
     "summary": "Members of the States complain that [P.] takes so many prizes in Europe without giving a reason, fearing [G.] will use it as a pretext to fall on the Low Countries; the [M.] party credits its prince with [G.]'s moderation there. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
     "language": "fr",
     "reading": "read/R1044_reading.md",
-    "translation": "read/R1044_en.md"
+    "translation": "read/R1044_en.md",
+    "read_share": 0.966
    },
    {
     "doc": "R1954",
@@ -591,8 +601,10 @@
      "note": "v5 check 23 Oct 2026 (1754-56 French: plain share is a bar too): the sweep scored read/R1043.txt whole, its heading line, the English summaries of the clear passages and the key notes included (plain 0.513, explicit 0.641). The French cipher text written out alone, read/R1043_reading.md: plain 0.6 (15/25), explicit 0.68 (17/25); at the bar: the first sentence and the middle passage on the Spanish ambassador carry several unread name codes; the rest holds. Keeps read."
     },
     "reading": "read/R1043_reading.md",
-    "state": "read",
-    "translation": "read/R1043_en.md"
+    "state": "read in part",
+    "translation": "read/R1043_en.md",
+    "read_share": 0.904,
+    "note": "24 Oct 2026: 90.4% of the words of read/R1043_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "key.json",

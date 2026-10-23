@@ -858,7 +858,8 @@
    "technique": ["plaintext matching"],
    "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): the modernised spelling of 22 Oct restored: nos. 01, 03, 04, 05, 19, 20 word by word from the OCR of Forbes, A Full View ii (1741), which prints the originals' spelling (v6_align.py --ocr: long s, recurrence check, OCR slips refused by hand); nos. 06, 08, 11, 15, 16, 17, 22 by hand from the figures' spellings recorded in no01-no23_reread_log.md, decipher_*.md and the corrections tsv (kepe, terme, sonnes, hote, bel awaye, hir, ernest, congratulacion, condoleaunce, intervewe, forain realmes, dispach, unserched, lokes, Scotish, speake, Secretarie, feate, somwhat, tyme, necessarie); no. 18 has nothing to restore (names and code signs); holes and brackets kept, no word changed. Rescored with research/reading_audit/v2_score.py: no01_reading.md plain 0.935 -> 0.516, explicit holes 1.0 -> 1.0; no03_reading.md plain 1.0 -> 0.654, explicit holes 1.0 -> 1.0; no04_reading.md plain 0.918 -> 0.689, explicit holes 1.0 -> 1.0; no05_reading.md plain 0.895 -> 0.474, explicit holes 1.0 -> 1.0; no06_reading.md plain 1.0 -> 1.0, explicit holes 1.0 -> 1.0; no08_reading.md plain 0.87 -> 0.87, explicit holes 0.913 -> 0.913; no11_reading.md plain 0.889 -> 0.778, explicit holes 0.889 -> 0.889; no15_reading.md plain 0.5 -> 0.5, explicit holes 0.833 -> 0.833; no16_reading.md plain 0.8 -> 0.8, explicit holes 0.8 -> 0.8; no17_reading.md plain 0.882 -> 0.824, explicit holes 0.941 -> 0.941; no18_reading.md plain 0.333 -> 0.333, explicit holes 1.0 -> 1.0; no19_reading.md plain 0.833 -> 0.667, explicit holes 1.0 -> 1.0; no20_reading.md plain 1.0 -> 0.5, explicit holes 1.0 -> 1.0; no22_reading.md plain 0.714 -> 0.429, explicit holes 0.857 -> 0.857. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 18 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -893,7 +894,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 287-289; all 13 passages checked. Not transcribed before. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.968 clean on the body (unchanged)."
-    }
+    },
+    "read_share": 1.0
    },
    {
     "doc": "02",
@@ -909,7 +911,8 @@
     },
     "state": "read",
     "language": "en",
-    "reading": "no02_reading.md"
+    "reading": "no02_reading.md",
+    "read_share": 1.0
    },
    {
     "doc": "03",
@@ -926,7 +929,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 350-351; 16 passages; \"musters\" carried by the print only. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed (the existing [?musters] kept), 0 replaced; 1.0 clean (unchanged)."
-    }
+    },
+    "read_share": 0.998
    },
    {
     "doc": "04",
@@ -943,7 +947,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 357-359; 58 passages, 1-24 checked glyph by glyph, f. 168 by sign class and spot checks. Not transcribed before. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.984 clean (unchanged)."
-    }
+    },
+    "read_share": 1.0
    },
    {
     "doc": "05",
@@ -960,7 +965,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 385-386; the 12 passages of decipher_A Letter 2. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.895 clean (unchanged)."
-    }
+    },
+    "read_share": 1.0
    },
    {
     "doc": "06",
@@ -977,7 +983,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vi no. 1078. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced; 1.0 clean (unchanged)."
-    }
+    },
+    "read_share": 0.994
    },
    {
     "doc": "07",
@@ -1005,7 +1012,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 642. Open: four single signs ((2), (11), ẓ, ï). Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 4 words bracketed (1 supplied: [The] Lord of Murray, passage 7 has no article; 3 partly: [?The Earl of] Huntly, passage 14, the first sign is not on the key sheet), 1 replaced (passage 10 \"that way\" -> \"that wise\", .T ξπ9:L); clean 0.913 -> 0.870, stays read."
-    }
+    },
+    "read_share": 0.965
    },
    {
     "doc": "09",
@@ -1045,7 +1053,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 793. ·∂ read [?sea] from the calendar here and in no. 15; ⊙ read [?Dieppe]; two signs open. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 1 replaced (passage 4 \"Into\" -> \"In\", the sign is ! = in); 0.889 clean (unchanged)."
-    }
+    },
+    "read_share": 0.971
    },
    {
     "doc": "12",
@@ -1059,9 +1068,11 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored decipher_D.md, the passage tables of eight letters (0.422). no12_reading.md, from decipher_D D4 with supplied and partial words marked: 0.625 on explicit holes, 0.5 plain, hole rate 0.113: just over the bar. Passages (1)-(2) to 'rid of him' hold and agree almost word for word with CSP Foreign vii no. 806; the tail of (2) and (3) are fragments. Rests on Smith's key R9261 applied to Forbes's copy; no clear text in print."
     },
-    "state": "read",
+    "state": "read in part",
     "language": "en",
-    "reading": "no12_reading.md"
+    "reading": "no12_reading.md",
+    "read_share": 0.828,
+    "note": "24 Oct 2026: 82.8% of the words of no12_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "13",
@@ -1078,7 +1089,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 808. Two passages; T: in the second unexplained. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced; 1.0 clean (unchanged)."
-    }
+    },
+    "read_share": 0.981
    },
    {
     "doc": "14",
@@ -1092,9 +1104,11 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored decipher_D.md (0.422). no14_reading.md, the 12-line block from decipher_D D6 with unread code signs as holes: 0.833 on explicit holes, 0.5 plain, hole rate 0.072; sentences hold and agree with CSP Foreign vii no. 815 throughout. Rests on Smith's key R9261 applied to Forbes's copy."
     },
-    "state": "read",
+    "state": "read in part",
     "language": "en",
-    "reading": "no14_reading.md"
+    "reading": "no14_reading.md",
+    "read_share": 0.93,
+    "note": "24 Oct 2026: 93.0% of the words of no14_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "15",
@@ -1129,7 +1143,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 979. The first five signs of (1) open. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 1 word bracketed (supplied: [the] French, passage 7 is :F alone), 0 replaced; 0.80 clean (unchanged)."
-    }
+    },
+    "read_share": 0.984
    },
    {
     "doc": "17",
@@ -1146,7 +1161,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign viii no. 208. 23 of 27 passages read; five single signs open. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced (\"be in that\" is the second line of passage 5, ! ·T); 0.941 clean (unchanged)."
-    }
+    },
+    "read_share": 0.966
    },
    {
     "doc": "18",
@@ -1163,7 +1179,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign viii no. 327. One sign open in (3). Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced; 0.667 clean (unchanged)."
-    }
+    },
+    "read_share": 0.982
    },
    {
     "doc": "19",
@@ -1180,7 +1197,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 119; \"secretary\" = the key's secret sign + a-r-y, so every italic word is carried by the figures. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.833 clean (unchanged)."
-    }
+    },
+    "read_share": 1.0
    },
    {
     "doc": "20",
@@ -1197,7 +1215,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 123 (OCR line garbled; read on the page image). One short group (maбγ) has no value and carries no printed word. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 1.0 clean (unchanged)."
-    }
+    },
+    "read_share": 1.0
    },
    {
     "doc": "21",
@@ -1212,7 +1231,8 @@
      "note": "decipher_E.md 3: reads as English sentences (you must hold firm and fast: Frenchmen will come to reason; trust no Frenchman of what religion so ever he be ...; as soon as ever they be able they will thither with all their force), two code words read from Forbes."
     },
     "state": "read",
-    "language": "en"
+    "language": "en",
+    "read_share": 0.972
    },
    {
     "doc": "22",
@@ -1229,7 +1249,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vi no. 1366. Every word now carried; \"sent\" for the copy's :b marked [?]. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 1 replaced (l. 4 \"of that same matter\" -> \"of the same matter\", T. = the); 0.714 clean (unchanged)."
-    }
+    },
+    "read_share": 0.988
    },
    {
     "doc": "23",

@@ -32,7 +32,9 @@ reading is accepted, it must show for each document (George Lasry, 22 Oct 2026):
 2. **An English translation** of those sentences, with the same holes. Not needed if the plaintext is English.
 3. The decryption itself, line by line against the transcription, so the reading can be checked.
 
-A document that decodes but does not yet build sentences can still be sent, marked "decoded, not read": it is shown
+A document counts as read only when 95% of its words read as sense (the README read bar); one that builds coherent
+sentences under that is marked "read in part". A document that decodes but does not yet build sentences can still be
+sent, marked "decoded, not read": it is shown
 for others to improve, and is not counted as read. Key sheets, code lists and worksheets are marked "not prose".
 `python docs/_check_reading.py <folder>` measures the share of sentences without holes and shows the weak ones; please
 run it before opening the pull request. Before merging, a reviewer reads the text as sentences against its translation

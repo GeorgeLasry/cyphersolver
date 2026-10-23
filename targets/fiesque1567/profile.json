@@ -879,7 +879,8 @@
    "what": "r2m: the single-word holes of the 17 letters not re-checked in round 2 worked through on native-resolution openapi.bnf.fr IIIF crops (views 7, 8, 34, 35, 49, 65, 70, 71, 99, 100, 103, 109, 110, 125, 129, 130, 140, 141, 146, 155, 159, 161, 163, 168; scratchpad only) with the key and Dz = con. Bracketed holes in the 17 readings 161 -> 90 (view 6 right's, already checked in round 2, included). What closed them: number codes the contributed transcription read as letter signs (this hand writes 10 'ic', 13 'iz', 14 'i4', 18 'i8'/'ig', 20 'zo', 21 'zi', 23 'z3': e.g. 'jusques a tant', 'estre', 'est venue', 'vous'), the lone codes (the volume's ϖ for the Emperor or the King, pp for the King of Spain), Dz = con ('[con]me' x7, '[con]seiller'), groups the transcription left out (view 7 left c20 'sont [?soubz] les mains', view 110 right a whole line, cipher at the ends of clear lines on views 34 and 49), and words the 22 Oct readings had supplied that the figures contradict, now corrected: 'l'Emperatrice est venue' (not l'Empereur), 'l'evesque de Retes' (Bochetel, twice, not 'le sieur'), 'pourchassoict la seconde pour le roy de Portugal', 'poussoict ... le Turc', 'me faire ce bien de ne croire', 'car il ne sçavoict encores en quels termes', 'Et depuis' (the 'Il' of 20 Oct 1569 is the null 'Il ti ol'), 'Vanega' (Philip II's ambassador). Unsupported words withdrawn: 'arriver' (12 Jun 1568), '[?princes]' (20 Oct 1569), '[?Cosme]' (4 Sep 1568). Clean share (v2_score, plain / explicit holes) rises on 11 letters, e.g. 11 Oct 1567 0.461/0.724 -> 0.564/0.833, 20 Oct 1569 0.333/0.667 -> 0.400/0.867, 27 Mar 1568 0.385/0.846 -> 0.462/0.923; none falls below its state. The holes left give no word under the key or rest on a look-alike the figures do not settle (listed per letter in read/<doc>_reread_log.md, r2m sections; label corrections in read/r2/corrections.tsv).",
    "result": "partial",
    "technique": ["manual reconstruction", "contextual inference"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 6 of 22 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -932,7 +933,13 @@
     "note": "Re-read 22 Oct 2026 (batch b02): read/1567-10_reading.md, read/1567-10_en.md, log read/1567-10_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: view 6 right (the first cipher page, 23 lines, 816 signs) transcribed from the Gallica image and read (read/r2/transcription_v006r.txt, read/r2/v006r_reread_log.md); v007l c01 closed (\"et aveugles a leur interest\"). Body score 0.61 plain, 0.92 explicit holes only; look-alike alternates on view 6 right 3.3% (31/940 letters), at the limit, not confirmed by any other text.",
     "language": "fr",
     "state": "read",
-    "transcription": ["read/r2/transcription_v006r.txt", "contributed/data/transcription_v007l.txt", "contributed/data/transcription_v007r.txt", "contributed/data/transcription_v008l.txt", "contributed/data/transcription_v008r.txt"],
+    "transcription": [
+     "read/r2/transcription_v006r.txt",
+     "contributed/data/transcription_v007l.txt",
+     "contributed/data/transcription_v007r.txt",
+     "contributed/data/transcription_v008l.txt",
+     "contributed/data/transcription_v008r.txt"
+    ],
     "decryption": [
      "contributed/data/decoded_v007l.txt",
      "contributed/data/decoded_v007r.txt",
@@ -940,9 +947,15 @@
      "contributed/data/decoded_v008r.txt"
     ],
     "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, Oct 1567 (date partly conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor says he will do his utmost for peace in Christendom; The King's ambassador to Constantinople; The ambassador sent to Constantinople; marriages of the Emperor's daughters; Portugal; He will inquire, discreetly.",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "built word by word from the key decode of the contributed transcription (views 7-8, image check of v007l c01) and from a single AI transcription of view 6 right made here on native-resolution crops (816 signs; Dz valued \"con\" from four words on the page). Look-alike alternates on view 6 right 3.3% of its letters; no contemporary decipherment. Holes: v006r c05-c06 (two words), v008l c19-c24 fragments, about ten [?] words."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "built word by word from the key decode of the contributed transcription (views 7-8, image check of v007l c01) and from a single AI transcription of view 6 right made here on native-resolution crops (816 signs; Dz valued \"con\" from four words on the page). Look-alike alternates on view 6 right 3.3% of its letters; no contemporary decipherment. Holes: v006r c05-c06 (two words), v008l c19-c24 fragments, about ten [?] words."
+    },
     "translation": "read/1567-10_en.md",
-    "reading": "read/1567-10_reading.md"
+    "reading": "read/1567-10_reading.md",
+    "read_share": 0.954
    },
    {
     "doc": "1567-11-15",
@@ -950,15 +963,24 @@
     "note": "Re-read 22 Oct 2026 (batch b02): read/1567-11-15_reading.md, read/1567-11-15_en.md, log read/1567-11-15_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.78 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: view 23 left (13 lines, 446 signs) transcribed and decoded (read/r2/transcription_v023l.txt, read/r2/v023l_reread_log.md); with a re-reading of the decipherment it corrects three readings of 22 Oct (\"il s'en va a Prague\", \"ceste lettre\", \"je n'ay eu responce de celles que vous ay envoyées par Suisse\": no Chantonnay here). Body score 0.91 (0.88 before).",
     "language": "fr",
     "state": "read",
-    "transcription": ["contributed/data/transcription_v022r.txt", "read/r2/transcription_v023l.txt"],
+    "transcription": [
+     "contributed/data/transcription_v022r.txt",
+     "read/r2/transcription_v023l.txt"
+    ],
     "decryption": [
      "contributed/data/decoded_v022r.txt",
      "calib_v023r.txt"
     ],
     "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 15 Nov 1567, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): News after Lignerolles left; rumour of troops levied in Germany for the Protestants. The cipher continues on view 23 left, not transcribed; calib_v023r.txt is the contemporary decipherment on view 23 right, read here by eye.",
-    "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "follows the contemporary decipherment on view 23 right (f. 19r) for view 22 right (83.8% letter agreement with the decode, calib.txt); view 23 left now rests on its own cipher, transcribed and decoded here (1.7% look-alike alternates), checked against the decipherment, which abridges it. Open: the bearer's name (9 signs) and about 17 signs before \"court\"."},
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "follows the contemporary decipherment on view 23 right (f. 19r) for view 22 right (83.8% letter agreement with the decode, calib.txt); view 23 left now rests on its own cipher, transcribed and decoded here (1.7% look-alike alternates), checked against the decipherment, which abridges it. Open: the bearer's name (9 signs) and about 17 signs before \"court\"."
+    },
     "translation": "read/1567-11-15_en.md",
-    "reading": "read/1567-11-15_reading.md"
+    "reading": "read/1567-11-15_reading.md",
+    "read_share": 0.98
    },
    {
     "doc": "1568-01-21",
@@ -982,7 +1004,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. One verb before \"maintenir\" open."
     },
     "translation": "read/1568-01-21_en.md",
-    "reading": "read/1568-01-21_reading.md"
+    "reading": "read/1568-01-21_reading.md",
+    "read_share": 0.958
    },
    {
     "doc": "1568-02-15",
@@ -1008,14 +1031,15 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; the two cipher lines of view 37 right have a contemporary margin decipherment, which agrees word for word. Open: v038l c03-c04, c17-c18."
     },
     "translation": "read/1568-02-15_en.md",
-    "reading": "read/1568-02-15_reading.md"
+    "reading": "read/1568-02-15_reading.md",
+    "read_share": 0.96
    },
    {
     "doc": "1568-03-06",
     "label": "6 Mar 1568, to the Queen Mother (f039r, f039v)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-03-06_reading.md, read/1568-03-06_en.md, log read/1568-03-06_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.82 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: f. 39r c21-c29 checked on native crops (\"[con]me il vous semble\"; \"que ces gens eussent vuydé le royaume, et vos forces françoises demeurassent entieres\"; \"Et mesmes [∞], qui me tint jeudy dernier [ung] long propos\"); body score 0.72 kept.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-03-06_reading.md, read/1568-03-06_en.md, log read/1568-03-06_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.82 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: f. 39r c21-c29 checked on native crops (\"[con]me il vous semble\"; \"que ces gens eussent vuydé le royaume, et vos forces françoises demeurassent entieres\"; \"Et mesmes [∞], qui me tint jeudy dernier [ung] long propos\"); body score 0.72 kept. 24 Oct 2026: 93.3% of the words of read/1568-03-06_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_f039r.txt",
      "contributed/data/transcription_f039v.txt"
@@ -1033,7 +1057,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; the contributor's line reading (READING.en.md) used as a check. Open: f039r c08, c22-c23, c25-c27, c29; f039v c06, c10, c14; sign arrow in \"comte [arrow]\"."
     },
     "translation": "read/1568-03-06_en.md",
-    "reading": "read/1568-03-06_reading.md"
+    "reading": "read/1568-03-06_reading.md",
+    "read_share": 0.933
    },
    {
     "doc": "1568-03-27",
@@ -1055,7 +1080,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: c04 and c13-c14."
     },
     "translation": "read/1568-03-27_en.md",
-    "reading": "read/1568-03-27_reading.md"
+    "reading": "read/1568-03-27_reading.md",
+    "read_share": 0.968
    },
    {
     "doc": "1568-06-04",
@@ -1077,14 +1103,15 @@
      "note": "Follows the contemporary decipherment in the left margin, read from native IIIF crops, aligned clause by clause with the key decode (margin found in this pass). One cramped word."
     },
     "translation": "read/1568-06-04_en.md",
-    "reading": "read/1568-06-04_reading.md"
+    "reading": "read/1568-06-04_reading.md",
+    "read_share": 0.974
    },
    {
     "doc": "1568-06-12",
     "label": "12 Jun 1568, to the Queen Mother (v070r, v071l)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-06-12_reading.md, read/1568-06-12_en.md, log read/1568-06-12_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.95 (header comment counted; old spellings outside the word list count as holes).",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-06-12_reading.md, read/1568-06-12_en.md, log read/1568-06-12_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.95 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.8% of the words of read/1568-06-12_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_v070r.txt",
      "contributed/data/transcription_v071l.txt"
@@ -1101,16 +1128,22 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: sign Dz in c01; lone ϖ twice as a code."
     },
     "translation": "read/1568-06-12_en.md",
-    "reading": "read/1568-06-12_reading.md"
+    "reading": "read/1568-06-12_reading.md",
+    "read_share": 0.948
    },
    {
     "doc": "1568-07-17",
     "label": "17 Jul 1568, to the Queen Mother (f079, f079v, f080)",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-22", "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; all three pages (f. 79r rebuilt and checked against READING.en.md). Open: the name of the \"sieur … grand escuyer\", f. 79r c07-c08, c17; f. 79v c01-c03, c06-c08 (several holes); f. 80 c01, c07-c08."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; all three pages (f. 79r rebuilt and checked against READING.en.md). Open: the name of the \"sieur … grand escuyer\", f. 79r c07-c08, c17; f. 79v c01-c03, c06-c08 (several holes); f. 80 c01, c07-c08."
+    },
     "reading": "read/1568-07-17_reading.md",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-07-17_reading.md, read/1568-07-17_en.md, log read/1568-07-17_reread_log.md. docs/_check_reading.py clean share before f. 79r READING.en.md; f. 79v/80 0.0, after 0.61 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: f. 79v and f. 80 checked on native crops (view 84): f. 79v c06-c08 read (\"pour [con]soler et adoulcir ce peuple, qui est si malcontant\"); f. 79v c01-c03 and f. 80 c01, c08 not settled; body score 0.71 kept.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-07-17_reading.md, read/1568-07-17_en.md, log read/1568-07-17_reread_log.md. docs/_check_reading.py clean share before f. 79r READING.en.md; f. 79v/80 0.0, after 0.61 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: f. 79v and f. 80 checked on native crops (view 84): f. 79v c06-c08 read (\"pour [con]soler et adoulcir ce peuple, qui est si malcontant\"); f. 79v c01-c03 and f. 80 c01, c08 not settled; body score 0.71 kept. 24 Oct 2026: 94.4% of the words of read/1568-07-17_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_f079.txt",
      "contributed/data/transcription_f079v.txt",
@@ -1123,12 +1156,18 @@
      "contributed/docs/READING.en.md"
     ],
     "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 17 Jul 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Archduke Charles to be sent to Spain for the \"délivrance\" of Don Carlos; The affair may take long; Archduke Charles may reside in Flanders; A courier leaves for Spain tonight.",
-    "translation": "read/1568-07-17_en.md"
+    "translation": "read/1568-07-17_en.md",
+    "read_share": 0.944
    },
    {
     "doc": "1568-08-14",
     "label": "14 Aug 1568, to the Queen Mother (f094, f094v, f095)",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-22", "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; all three pages (f. 94r checked against READING.en.md). Open: \"lele\" (f. 94 c12/c14/c21), the person after \"devers\", the port \"gixes\", a code before \"et vous\", f. 95 c12."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; all three pages (f. 94r checked against READING.en.md). Open: \"lele\" (f. 94 c12/c14/c21), the person after \"devers\", the port \"gixes\", a code before \"et vous\", f. 95 c12."
+    },
     "reading": "read/1568-08-14_reading.md",
     "note": "Re-read 22 Oct 2026 (batch b02): read/1568-08-14_reading.md, read/1568-08-14_en.md, log read/1568-08-14_reread_log.md. docs/_check_reading.py clean share before f. 94r READING.en.md; f. 94v/95 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
@@ -1145,7 +1184,8 @@
      "contributed/docs/READING.en.md"
     ],
     "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 14 Aug 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor explains why he sends Archduke Charles to Spain; The marriage will be settled on the Archduke's return; The Duke of Bavaria's second son will go to Spain with the Archduke.",
-    "translation": "read/1568-08-14_en.md"
+    "translation": "read/1568-08-14_en.md",
+    "read_share": 0.969
    },
    {
     "doc": "1568-08-21",
@@ -1167,14 +1207,15 @@
      "note": "Follows the contemporary decipherment in the left margin, read from native IIIF crops, aligned clause by clause with the key decode (about 40 short lines; not read before). Open: one word after \"a sa volunté\" and the clause before \"qu'il partira le quatriesme de septembre\"."
     },
     "translation": "read/1568-08-21_en.md",
-    "reading": "read/1568-08-21_reading.md"
+    "reading": "read/1568-08-21_reading.md",
+    "read_share": 0.959
    },
    {
     "doc": "1568-09-04k",
     "label": "4 Sep 1568 (docket \"au Roy\"; the cipher addresses \"Madame\"), f100, f100v, f101, f101v",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04k_reading.md, read/1568-09-04k_en.md, log read/1568-09-04k_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.73 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: f. 100r c16-c27 checked on native crops (view 105 right): \"mais que [pp] desiroict d'estre mediateur\", \"en quoy il ne pouvoict nier de luy\", \"affin de ne luy [...] celle de vostre intention, [...] l'alliance qu'avez ensemble, tenant son filz\", \"Sur cela il me [?dict] que bien tost il envoyeroict en Espaigne\"; body score 0.71 -> 0.75.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04k_reading.md, read/1568-09-04k_en.md, log read/1568-09-04k_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.73 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: f. 100r c16-c27 checked on native crops (view 105 right): \"mais que [pp] desiroict d'estre mediateur\", \"en quoy il ne pouvoict nier de luy\", \"affin de ne luy [...] celle de vostre intention, [...] l'alliance qu'avez ensemble, tenant son filz\", \"Sur cela il me [?dict] que bien tost il envoyeroict en Espaigne\"; body score 0.71 -> 0.75. 24 Oct 2026: 94.0% of the words of read/1568-09-04k_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_f100.txt",
      "contributed/data/transcription_f100v.txt",
@@ -1196,14 +1237,15 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: f. 100r c17-c27 (mostly fragments), scattered holes in f. 100v c09-c13, f. 101 c16/c21/c25, f. 101v c05/c14/c19. The cipher addresses \"Madame\" (feminine \"preste\"), so it is to the Queen Mother though the docket says \"au Roy\"."
     },
     "translation": "read/1568-09-04k_en.md",
-    "reading": "read/1568-09-04k_reading.md"
+    "reading": "read/1568-09-04k_reading.md",
+    "read_share": 0.94
    },
    {
     "doc": "1568-09-04q",
     "label": "4 Sep 1568, to the Queen Mother (v109r, v110l, v110r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04q_reading.md, read/1568-09-04q_en.md, log read/1568-09-04q_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.68 (header comment counted; old spellings outside the word list count as holes).",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04q_reading.md, read/1568-09-04q_en.md, log read/1568-09-04q_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.68 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.3% of the words of read/1568-09-04q_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_v109r.txt",
      "contributed/data/transcription_v110l.txt",
@@ -1222,7 +1264,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; image check of view 109 right c01-c05. Open: v109r c10-c11, v110l c24-c25, v110r c03, c05, c08."
     },
     "translation": "read/1568-09-04q_en.md",
-    "reading": "read/1568-09-04q_reading.md"
+    "reading": "read/1568-09-04q_reading.md",
+    "read_share": 0.943
    },
    {
     "doc": "1568-11-06",
@@ -1244,7 +1287,8 @@
      "note": "Rests on the key decode, which reads almost straight, and the contemporary decipherment in the left margin, read from native IIIF crops, aligned clause by clause with the key decode; the margin supplies the opening. One verb before \"six mil reistres\" open."
     },
     "translation": "read/1568-11-06_en.md",
-    "reading": "read/1568-11-06_reading.md"
+    "reading": "read/1568-11-06_reading.md",
+    "read_share": 0.961
    },
    {
     "doc": "1568-12-02",
@@ -1268,7 +1312,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: \"au duc [P fu q9 a]\" (v130l c02), v130l c06, codes =ii and Dz."
     },
     "translation": "read/1568-12-02_en.md",
-    "reading": "read/1568-12-02_reading.md"
+    "reading": "read/1568-12-02_reading.md",
+    "read_share": 0.953
    },
    {
     "doc": "1569-01-14",
@@ -1292,7 +1337,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: v140r c08, v141l c03-c04, \"comte ?\" (v141l c15), the senses of =ii."
     },
     "translation": "read/1569-01-14_en.md",
-    "reading": "read/1569-01-14_reading.md"
+    "reading": "read/1569-01-14_reading.md",
+    "read_share": 0.953
    },
    {
     "doc": "1569-03-02",
@@ -1314,7 +1360,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: c07 (the authors of the false news)."
     },
     "translation": "read/1569-03-02_en.md",
-    "reading": "read/1569-03-02_reading.md"
+    "reading": "read/1569-03-02_reading.md",
+    "read_share": 0.958
    },
    {
     "doc": "1569-09-10",
@@ -1356,7 +1403,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: a second name after \"Chantonnay\" (c06-c07)."
     },
     "translation": "read/1569-10-01_en.md",
-    "reading": "read/1569-10-01_reading.md"
+    "reading": "read/1569-10-01_reading.md",
+    "read_share": 0.975
    },
    {
     "doc": "1569-10-15",
@@ -1378,14 +1426,15 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: one word (\"au prejudice du [?]\")."
     },
     "translation": "read/1569-10-15_en.md",
-    "reading": "read/1569-10-15_reading.md"
+    "reading": "read/1569-10-15_reading.md",
+    "read_share": 0.968
    },
    {
     "doc": "1569-10-20",
     "label": "20 Oct 1569, to the King (v159r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-20_reading.md, read/1569-10-20_en.md, log read/1569-10-20_reread_log.md. docs/_check_reading.py clean share before 0.17, after 0.60 (header comment counted; old spellings outside the word list count as holes).",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-20_reading.md, read/1569-10-20_en.md, log read/1569-10-20_reread_log.md. docs/_check_reading.py clean share before 0.17, after 0.60 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.4% of the words of read/1569-10-20_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_v159r.txt"
     ],
@@ -1400,7 +1449,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; image check of view 159 right c01-c02. Open: c04, the name of the feared attacker."
     },
     "translation": "read/1569-10-20_en.md",
-    "reading": "read/1569-10-20_reading.md"
+    "reading": "read/1569-10-20_reading.md",
+    "read_share": 0.944
    },
    {
     "doc": "1569-10-29",
@@ -1423,7 +1473,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; READING.en.md used as a check (its \"encline a clemence\" is not carried by the figures). Open: c05, c22-c23."
     },
     "translation": "read/1569-10-29_en.md",
-    "reading": "read/1569-10-29_reading.md"
+    "reading": "read/1569-10-29_reading.md",
+    "read_share": 0.96
    },
    {
     "doc": "1569-11-04",
@@ -1445,7 +1496,8 @@
      "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. No holes; four words partly carried."
     },
     "translation": "read/1569-11-04_en.md",
-    "reading": "read/1569-11-04_reading.md"
+    "reading": "read/1569-11-04_reading.md",
+    "read_share": 0.961
    }
   ]
  }

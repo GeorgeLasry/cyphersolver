@@ -156,7 +156,8 @@
    "technique": ["key matching", "language-model scoring"],
    "what": "Decoded with b36_sp106.py beside Lasry's plaintext (all letter groups agree); reading written in the figures' spelling (R929_reading.md, R929_en.md), aligned word by word with the decode, no supplied words. b17 on the body: 0.273 plain, 0.727 explicit holes (English 1646). Set read, grade B.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -209,11 +210,18 @@
    {
     "doc": "R929",
     "label": "R929, Paris, 26 Jan 1646",
-    "transcription": ["R929_signs.txt", "R929_corrections.tsv", "https://de-crypt.org/decrypt-web/RecordsView/929"],
-    "decryption": ["R929_reading.md", "https://de-crypt.org/decrypt-web/RecordsView/929"],
+    "transcription": [
+     "R929_signs.txt",
+     "R929_corrections.tsv",
+     "https://de-crypt.org/decrypt-web/RecordsView/929"
+    ],
+    "decryption": [
+     "R929_reading.md",
+     "https://de-crypt.org/decrypt-web/RecordsView/929"
+    ],
     "summary": "Henrietta Maria's household at Paris to 'Sir', 26 Jan [1646]: the Queen has his letters of 26 Dec and 4 Jan and thanks him for his weekly reports of the King's affairs; however bad they are, the writer hopes they can hold out without further losses until the efforts at Paris for the King's relief take effect; for that, and for the embassy and the Portuguese marriage, he refers him to the King's letters.",
     "language": "en",
-    "state": "read",
+    "state": "read in part",
     "reading": "R929_reading.md",
     "translation": "R929_en.md",
     "reading_review": {
@@ -221,7 +229,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Built from the figures (Pettersson's transcription corrected in ten places on the full-size image, R929_signs.txt) decoded with Lasry's SP106-5 key plus o2 = WE; every letter group agrees with Lasry's plaintext (DECODE D3083/D3084, compared, not copied). Nine code values read here from context: 425 your, 429 you, e3 her, 241 King (two or more contexts), 334 Queen, 199 give, 208 Majesty, 319 Port(ugall), 259 letter (one context or sense). b17 on the body 0.273 plain, 0.727 explicit holes (English 1646); 566, 554, 620 and the signature codes open."
-    }
+    },
+    "read_share": 0.893,
+    "note": "24 Oct 2026: 89.3% of the words of R929_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ]
  }

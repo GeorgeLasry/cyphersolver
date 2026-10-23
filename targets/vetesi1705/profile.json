@@ -177,7 +177,8 @@
    "what": "Consistency pass (cl): outcome.key_file added: key/DOC_R446_D2629_2629.txt, the DECODE transcription of Rákóczi's syllabic key R446 applied in the b37 re-read.",
    "result": "worked",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -203,11 +204,14 @@
    {
     "doc": "R473",
     "label": "R473, 9 Jan 1706",
-    "transcription": ["R473_transcription.txt", "DOC_R473_D3610_3610.txt"],
+    "transcription": [
+     "R473_transcription.txt",
+     "DOC_R473_D3610_3610.txt"
+    ],
     "decryption": "R473_decode_R446.txt",
     "summary": "László Vetési Kökényesdi, as 'Cassimirus Miloftzki', to Ferenc Rákóczi II, 9 January 1706, in Hungarian with numerical cipher runs: the French post brings news that Nice castle has passed into the King of France's hands, celebrated in the old church; in Spain the court is malcontent, Valencia has rebelled and Aragon wavers, the Queen will not take up the administration and there is no money; next year the war will be in Italy and Spain, Holland and England prepare against Antwerp, and Holland may tire of the expense and leave the House of Austria; he has had no order from Rákóczi since the order of 30 November, Ráday's December letter is silent, and he commits himself to Rákóczi's disposal.",
     "language": "hu",
-    "state": "read",
+    "state": "read in part",
     "reading": "R473_reading.md",
     "translation": "R473_en.md",
     "reading_review": {
@@ -215,7 +219,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "R473_reading.md: the contemporary interlinear decipherment transcribed afresh from the three DECODE images and checked group by group against Rákóczi's Hungarian key DECODE R446 (found 23 Oct 2026 by scanning the neighbouring key records; DECODE's key transcription corrected on its image); key and gloss agree at 253 of 304 groups, the rest are spelling variants, DECODE key misreadings or writer's slips (R473_key_vs_gloss.tsv). 35 sentences: 0.829 clean counting explicit holes only (b17_score.py HOLES=1; the hu word list does not know 1706 spelling: 0.086 on the list); the holes are doubtful clear words in the faded middle of ff. 93-94. Word-by-word check R473_align.txt: no invented word. No look-alike substitutions (numerical cipher). A reader can follow all but about five sentences."
-    }
+    },
+    "read_share": 0.906,
+    "note": "24 Oct 2026: 90.6% of the words of R473_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "gaps": [

@@ -2594,9 +2594,14 @@ def texts_html(page):
             # a mechanical decode that does not yet build sentences is shown for checking, labelled as such (Lasry, 22 Oct 2026)
             state = TX.entry_state(t)
             tag = {'decoded, not read': ' <span class="st stuck">decoded, not read</span>',
+                   'read in part': ' <span class="st partial">read in part</span>',
                    'not prose': ' <span class="st found">not prose</span>'}.get(state, '')
             out.append(f'<h3>{head}{tag}</h3>')
             if t.get('summary'): out.append(f'<p>{html.escape(t["summary"])}</p>')
+            if state == 'read in part':
+                rs = t.get('read_share')
+                out.append('<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense'
+                           + (f' ({rs * 100:.0f}% here)' if isinstance(rs, (int, float)) else '') + '; the holes are marked in the reading.</p>')
             if state == 'decoded, not read':
                 out.append('<p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription '
                            'and the key can be checked and improved, not as a reading.</p>')

@@ -102,7 +102,8 @@
       "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): lasry_entry.md read. The three-line excerpt reads as Italian sentences with ? holes and has his translation (reviewed B); the rest of his partial decryption is not held here. fraction_read 0.373 (elements identified) -> ~0.02 (held text that reads, estimated); class already solved unchanged.",
       "result": "partial",
       "technique": ["language-model scoring", "statistical test"]
-    }
+    },
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -143,17 +144,18 @@
         "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
         "decryption": "lasry_entry.md",
         "summary": "Scipion de Gonzague to the Duke of Nevers, 1585-1589 (BnF fr. 4696), and a letter of 1590 by an unestablished writer (fr. 4698). Confidential warnings and cavalry arrangements: horses, payments, dispatches and service in war. The fr. 4698 fragment contains a request for an appeal or intercession, and the Paris letter of 16 February 1590 discusses friendship, the King of Spain and a request; most of both remains unread.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here.",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here. 24 Oct 2026: 94.6% of the words of lasry_excerpt_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
         "reading_review": {
           "grade": "B",
           "by": "Claude (reading audit)",
           "date": "2026-10-22",
           "note": "lasry_entry.md: the only reading held is Lasry's three body lines of f62v, which build Italian sentences with two ? holes and carry his English translation (he offers himself very ready to serve you, especially in defending or advancing your position). His decryption of the rest (7/7 pages in part) is not in the repository and is not graded here."
         },
-        "state": "read",
+        "state": "read in part",
         "language": "it",
         "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md"
+        "translation": "lasry_excerpt_en.md",
+        "read_share": 0.946
       }
     ]
   }

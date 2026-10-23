@@ -197,7 +197,8 @@
    "result": "worked"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 514 tokens, 37 types, fr-1600-letters order 4: reading -1.992 per letter; random keys -5.039 (z 7.6); key annealed onto shuffled ciphertext best -2.979 (mean -3.035, z 25.2); annealer on the real text -2.414. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 130 sign transcription, clear text and reading; f. 128 decryption copied from SOLUTION.md with the decode.py output saved to texts/", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 130 sign transcription, clear text and reading; f. 128 decryption copied from SOLUTION.md with the decode.py output saved to texts/", "result": "worked"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 514, "types": 37, "tokens_per_type": 13.89, "score": -1.992, "nulls": {"random keys": {"n": 200, "mean": -5.039, "sd": 0.401, "max": -4.199, "z": 7.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.035, "sd": 0.041, "max": -2.979, "z": 25.2, "p": 0.1429}}, "power": -2.414, "verdict": "pass", "notes": "claimed per-occurrence score -1.871; polyphony 0.078; 8 unread tokens left out; annealer on the real text from random keys reached -2.414"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -207,7 +208,7 @@
    "catalogue correction",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "fraction_read": 0.985,
   "fraction_read_method": "measured",
@@ -254,7 +255,8 @@
     "summary": "Dinteville, at Langres, writes to the Duke of Nevers that the enemy means to return and take Châteauvillain, that he is left alone in Langres with the townspeople while the Lorraine army fortifies itself, and that without troops no taille can be raised; he asks to withdraw if the King does not provide for it. The cipher passages give the reasons he did not write in clear; 8 signs are open.",
     "reading": "texts/f130_reading.md",
     "translation": "texts/f130_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.955
    },
    {
     "doc": "f128",
@@ -264,7 +266,10 @@
     "summary": "A gentleman of M. de Gondy coming from Florence reports two million in Spanish gold landed at Genoa, with forty-five laden mules left at Besançon to take the road to Vesoul under an escort of a hundred horse. The interlinear decipherment on this leaf is the key source; the plaintext is printed in Revue de Champagne et de Brie t. XII, p. 340.",
     "reading": "texts/f128_reading.md",
     "translation": "texts/f128_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.932,
+    "state": "read in part",
+    "note": "24 Oct 2026: 93.2% of the words of texts/f128_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ]
  }

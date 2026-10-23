@@ -112,7 +112,8 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the contemporary decipherment (doc. 91 bis) and marginal glosses, as transcribed in NOTES.md, copied to texts/R9961_decryption.md; the cipher (Luo's Cifrario 22) was never transcribed (project work)",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -127,7 +128,7 @@
     {"who": "contemporary", "role": "key or decipherment used", "note": "decipherment bound as doc. 91 bis, with marginal decipherments"}
   ],
   "texts": [
-   {"doc": "R9961", "label": "R9961 (R9962 = its first leaf), AGS Estado leg. 853 doc. 91, Rome, 24 Oct 1531", "decryption": "texts/R9961_decryption.md", "summary": "Giovanni Antonio Muscetula, Charles V's agent in Rome, reports the Pope's talk: the French King used his mother's death as a pretext to avoid the meeting with the Emperor; England urges France to make war on the Emperor; the Pope advises Charles to move the diet of Speyer nearer Italy and Austria in case of Lutheran unrest. Deciphered at the time; the decipherment is bound with the letter as doc. 91 bis.", "translation": "texts/R9961_en.md", "language": "es"}
+   {"doc": "R9961", "label": "R9961 (R9962 = its first leaf), AGS Estado leg. 853 doc. 91, Rome, 24 Oct 1531", "decryption": "texts/R9961_decryption.md", "summary": "Giovanni Antonio Muscetula, Charles V's agent in Rome, reports the Pope's talk: the French King used his mother's death as a pretext to avoid the meeting with the Emperor; England urges France to make war on the Emperor; the Pope advises Charles to move the diet of Speyer nearer Italy and Austria in case of Lutheran unrest. Deciphered at the time; the decipherment is bound with the letter as doc. 91 bis.", "translation": "texts/R9961_en.md", "language": "es", "read_share": 0.922, "state": "read in part", "note": "24 Oct 2026: 92.2% of the words of texts/R9961_decryption.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."}
   ]
  }
 }

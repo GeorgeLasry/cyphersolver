@@ -135,7 +135,8 @@
       "what": "Consistency pass (cl): 'read in part' not justified: Lasry's full decipherment is not in the repository and has not been asked for (not-attempted kept), retry step not done; NOTES already Status: in progress.",
       "result": "partial",
       "technique": ["statistical test"]
-    }
+    },
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "class": "read in part",
@@ -185,16 +186,17 @@
         "decryption": "lasry_tokens_f9_f15_f17_f18.tsv",
         "summary": "Lasry's token transcription and values for the four pages Jozef Krajčovič checked (issue #39), sent by Lasry in answer to it.",
         "language": "fr",
-        "state": "read",
+        "state": "read in part",
         "reading_review": {
           "grade": "B",
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
           "note": "v5 check 23 Oct 2026 (1859 French: the plain share is a bar too): texts/eugenie1859_f9_f18_reading.md body plain 0.5 (4/8 windows), explicit 0.625 (5/8). Of the four windows under the plain bar, two fail only on place names (Chiese, Mincio; Lonato, Castiglion) with defendront and the excerpt's end [...]; one on s'agenouillai[ent]/exaltes and one [?]; the real hole is the end of f. 15r, a run of tokens Lasry left without values ('Je re[?] [?] des [?] le [?] ... par ennemi'). Read as a reader 6 of 8 hold, and the folios are excerpts of Lasry's decipherment (four of eleven pages). Keeps read, the 15r run having no key material here (Lasry's values are all the repository holds). Earlier: v3 verification 23 Oct 2026: the entry pointed at the token tsv (one value per row; 0.0), so it had no reading. Worked: Lasry's values divided into words per folio in texts/eugenie1859_f9_f18_reading.md (letters the values do not carry bracketed: s'agenouillai[ent], etai[en]t; his ? tokens as [?]): 0.625 explicit-hole (5/8 sentence windows, hole rate 0.078), plain 0.5, the unknown words being place names (Oglio, Chiese, Mincio, Lonato, Castiglion) and defendront/exaltes. ff. 9r, 17r, 18r and the first sentence of 15r read; the end of 15r is a run of unvalued tokens."
         },
-        "note": "Excerpt only: four of the eleven cipher pages; the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026).",
+        "note": "Excerpt only: four of the eleven cipher pages; the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026). 24 Oct 2026: 84.6% of the words of texts/eugenie1859_f9_f18_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
         "reading": "texts/eugenie1859_f9_f18_reading.md",
-        "translation": "texts/eugenie1859_f9_f18_en.md"
+        "translation": "texts/eugenie1859_f9_f18_en.md",
+        "read_share": 0.846
       },
       {
         "doc": "eugenie1859",
@@ -212,7 +214,8 @@
         },
         "reading": "texts/eugenie1859_lasry_excerpts_reading.md",
         "note": "Excerpt only: the full decipherment is George Lasry's (BnF cipher research, 10 Oct 2026), not in the repository (reading audit, 22 Oct 2026).",
-        "translation": "texts/eugenie1859_lasry_excerpts_en.md"
+        "translation": "texts/eugenie1859_lasry_excerpts_en.md",
+        "read_share": 0.986
       },
       {
         "doc": "eugenie1859",

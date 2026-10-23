@@ -258,7 +258,8 @@
    "what": "Verification 3 (v3_below_b): R116 flagged at 0.44 on reading_aj.txt (AJ's text, R118 included, code words bracketed in lower case). Wrote texts/R116_reading.md in the cipher's spelling from the corrected decode, all conjectural code values and slip corrections marked as holes, and texts/R116_en.md: 0.625 explicit holes, 0.50 plain (no-double-letter spelling). Kept read, grade B.",
    "result": "worked",
    "technique": ["manual reconstruction", "statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -266,7 +267,7 @@
   "contribution": [
    "catalogue correction"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "codes_open": {
    "open": 6,
@@ -319,10 +320,12 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored reading_aj.txt, AJ's graded text with R118 appended and his code words in lower-case brackets (0.44). A reading of R116 alone was written (texts/R116_reading.md) in the cipher's own spelling from the image-corrected decode (R116_decryption_v2.md), with every single-context code value, AJ guess and slip-corrected word marked [?word] and the open codes 32, 2.88, 3.22 (where Italia does not fit) and 53 as holes: 0.625 on explicit holes, hole rate 0.091; plain 0.50, the misses being the cipher's no-double-letter spelling (fratelo, espresa, pasato, ocasione), which the word list cannot know. Sentences hold. It rests on Ajaydas Devadas's reconstructed key (1 Oct 2026), applied here to this project's transcription; no contemporary decipherment of R116; the key's reading of R118 agrees with that leaf's decifrato."
     },
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/R116_reading.md",
     "translation": "texts/R116_en.md",
-    "language": "it"
+    "language": "it",
+    "read_share": 0.907,
+    "note": "24 Oct 2026: 90.7% of the words of texts/R116_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "key_cifra_ordinaria.txt"

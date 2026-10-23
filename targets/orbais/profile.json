@@ -302,7 +302,10 @@
     "doc": "no62",
     "label": "Letter to the abbé d'Orbais, Rome, 23 Aug [1589], BnF fr. 3413 no. 62",
     "transcription": "no62_cipher.txt",
-    "decryption": ["texts/no62_decryption.md", "texts/no62_reading.md"],
+    "decryption": [
+     "texts/no62_decryption.md",
+     "texts/no62_reading.md"
+    ],
     "summary": "A secretary of Cardinal Pellevé, signing Baron, writes from Rome to Jean de Piles, abbé d'Orbais, the League's envoy, with the news of Henri III's death: couriers from Spain, Genoa and Tuscany, and the Duke of Lorraine's letter from his agent Bardin in Paris, 8 August ('le Roy a esté tué, et c'est le Roy de Navarre qui l'a faict faire'; the Cardinal de Bourbon proclaimed King in Paris). In cipher: '[Ƃ] depeschera [ʃ] dedans deux jours le doien', 'la protection que vous sçavez', Mons. Cassin (his senior, ill with fever), 'Mr le [τ] mon maistre', 'j'ay veu ung advis qui confirme', the signature Baron.",
     "language": "fr",
     "state": "read",
@@ -313,7 +316,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "texts/no62_reading.md: the clear text of ff. 126r-127r transcribed from the Gallica images (first time) with the fourteen cipher runs set in their clauses, read with the extended Nevers-Piles key of decode62.py. Reading body 0.882 (45/51) plain, 1.0 explicit holes only; of the seven sentences that carry cipher, six hold (the S1 sentence has two code holes). Look-alike letters 0. Open: run C ('ce qui touche [...]'), run V2 ('vous serez a vostre [...]') and the code signs Ƃ, ʃ, τ (no key material)."
-    }
+    },
+    "read_share": 0.987
    }
   ],
   "key_file": "texts/key.md"

@@ -131,7 +131,8 @@
    "technique": ["statistical test"],
    "what": "v3 verification: R9325 scored as Italian on reading.txt with the sign lines (0.565). Latin running text written to r9325/R9325_reading.md: 0.833 explicit-hole. Language set to la; keeps read.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -140,7 +141,7 @@
    "transcription",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
@@ -179,8 +180,10 @@
     },
     "reading": "r9325/R9325_reading.md",
     "language": "la",
-    "state": "read",
-    "translation": "r9325/R9325_en.md"
+    "state": "read in part",
+    "translation": "r9325/R9325_en.md",
+    "read_share": 0.935,
+    "note": "24 Oct 2026: 93.5% of the words of r9325/R9325_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ]
  }

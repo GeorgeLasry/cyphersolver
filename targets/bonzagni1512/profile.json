@@ -87,7 +87,8 @@
   {"date": "2026-10-22", "kind": "transcription", "what": "R1125: the decipherment slip (image 5) transcribed and aligned group by group with the 12-line cipher block of p. 3: one slip word per group, letters repeating consistently; Latin-looking code words in the cipher found ('valent' = denaro, 'indigeo', 'parte' left blank by the slip) and a number .31. the slip omits.", "result": "worked"},
   {"date": "2026-10-22", "kind": "transcription", "what": "R1124: the interlinear decipherment over the eight cipher lines transcribed and aligned with the cipher groups (texts/R1124_align.tsv); two more glossed cipher words in the clear text (tazze grande); the clear text of pp. 1-2 transcribed, with holes at the torn right edge.", "result": "worked"},
   {"date": "2026-10-22", "kind": "transcription", "what": "R1123: the clear opening of p. 1, the first cipher block (ll. 5-9) and the start of the lower block transcribed from the glosses (texts/R1123_reading.md, partial); the gloss words checked against sign values from R1124/R1125 where legible (ducati, dona, del, fiorini, trecento, che). The rest of the lower block (an inventory of silver and sums, about eleven lines) and the cipher of p. 2 not finished: the brown gloss ink is faint at the scan's resolution, and the key was not rebuilt to decode the signs.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Clean-sentence share on the reading bodies: R1125 0.857, R1124 0.625 (inventory words outside the Italian lexicon), R1123 partial 0.632 on the part read. R1124 and R1125 set read; R1123 kept decoded, not read (most of its cipher unread).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Clean-sentence share on the reading bodies: R1125 0.857, R1124 0.625 (inventory words outside the Italian lexicon), R1123 partial 0.632 on the part read. R1124 and R1125 set read; R1123 kept decoded, not read (most of its cipher unread).", "result": "partial"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -114,7 +115,7 @@
     "doc": "R1124",
     "label": "Eger, 4 Aug 1512",
     "summary": "Bonzagni to Ippolito I d'Este: eight cipher lines on Beatrice's jewels (cups, bowls, salts).",
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "reading": "texts/R1124_reading.md",
     "translation": "texts/R1124_en.md",
@@ -123,7 +124,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b14): the eight cipher lines from the contemporary interlinear decipherment, transcribed from the DECODE image and aligned group by group with the cipher (texts/R1124_align.tsv), with the clear text of pp. 1-2 transcribed around them; _check_reading.py on the body 0.625 (20/32; misses mostly inventory words the Italian lexicon lacks: coppa, tazette, anelle, coramo). Holes: the torn right edge of p. 1 (ll. 12-19) and the end of cipher l. 5."
-    }
+    },
+    "read_share": 0.946,
+    "note": "24 Oct 2026: 94.6% of the words of texts/R1124_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R1125",
@@ -138,7 +141,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b14): the 12-line cipher block of p. 3 from the decipherment slip filed with the letter (image 5), transcribed and aligned group by group with the cipher (texts/R1125_align.tsv); _check_reading.py on the body 0.857 (6/7). Open: the code word 'parte' (left blank by the slip) and the number .31.; the clear pp. 1-4 not transcribed here."
-    }
+    },
+    "read_share": 0.979
    }
   ],
   "gaps": [

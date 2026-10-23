@@ -148,13 +148,14 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f78_labels.txt and f78_reading.txt; key = Lasry's 2022 sheet GL_BnFfr15564.png plus the values added here, copied from NOTES to texts/key.md.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
   "method_basis": "George Lasry's 2022 key for the Guise-Mercoeur cipher in BnF fr. 15564 (cryptiana GL.htm, which names f. 78 among the letters he solved) was applied to a new sign-by-sign transcription of f. 78 with a beam search, and extended by about 15 sign and code values.",
   "contribution": ["transcription", "key extended or corrected", "sender or date identified"],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "fraction_read": 0.985,
   "fraction_read_method": "measured",
@@ -173,7 +174,7 @@
     {"who": "lasry", "role": "key or decipherment used", "note": "2022 fr. 15564 Guise-Mercoeur key (cryptiana GL.htm), extended here", "date": "2022", "source": "cryptiana GL.htm"}
   ],
   "texts": [
-   {"doc": "f78", "label": "f. 78 (R4158), 16 April 1587", "transcription": "f78_labels.txt", "decryption": "f78_reading.txt", "summary": "Henri, duc de Guise (probably) to his Lorraine cousin the duc de Mercœur, 16 April 1587: he asks Mercœur to put off his decision on going to his government of Brittany until his brother can take the place once Bellièvre arrives, reports that the Duke of Parma's troops cannot stay, and urges settling 'our affairs' and stopping the passage.", "reading": "f78_reading.md", "translation": "f78_en.md", "language": "fr"}
+   {"doc": "f78", "label": "f. 78 (R4158), 16 April 1587", "transcription": "f78_labels.txt", "decryption": "f78_reading.txt", "summary": "Henri, duc de Guise (probably) to his Lorraine cousin the duc de Mercœur, 16 April 1587: he asks Mercœur to put off his decision on going to his government of Brittany until his brother can take the place once Bellièvre arrives, reports that the Duke of Parma's troops cannot stay, and urges settling 'our affairs' and stopping the passage.", "reading": "f78_reading.md", "translation": "f78_en.md", "language": "fr", "read_share": 0.921, "state": "read in part", "note": "24 Oct 2026: 92.1% of the words of f78_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."}
   ],
   "key_file": ["GL_BnFfr15564.png", "texts/key.md"]
  }

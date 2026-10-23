@@ -270,7 +270,8 @@
   },
   {"date": "2026-10-18", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 9367 tokens, 121 types, fr-1530-despatches order 4: reading -2.269 per letter; random keys -5.406 (z 13.0); key annealed onto shuffled ciphertext best -3.653 (mean -3.697, z 56.0); annealer on the real text -2.634. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Angus Robinson's KEY_AND_DECRYPTION.txt split mechanically per letter into texts/noXX_transcription.txt (sign rows) and texts/noXX_decryption.txt (his output per row); key KEY_AND_DECRYPTION.txt / KEY.svg; his continuous French readings and translations are only on his site", "result": "worked"},
-  {"date": "2026-10-23", "kind": "reading", "what": "Verification 3 (v3_below_b): nos. 40, 41, 43, 44 flagged (0.0-0.125) because their decryption files are unspaced letter rows. Robinson's word-divided French and English editions of nos. 39-44 fetched from his site (readings.html, parsed by v3b_seure_extract.py) and saved as texts/noNN_reading.md / _en.md: explicit holes 0.97-1.0 (no. 39 0.776), plain 0.58-0.77; cipher passages alone 0.955-1.0. All kept read; no. 39 (unscored by the sweep) given the same files.", "result": "worked", "technique": ["statistical test"]}
+  {"date": "2026-10-23", "kind": "reading", "what": "Verification 3 (v3_below_b): nos. 40, 41, 43, 44 flagged (0.0-0.125) because their decryption files are unspaced letter rows. Robinson's word-divided French and English editions of nos. 39-44 fetched from his site (readings.html, parsed by v3b_seure_extract.py) and saved as texts/noNN_reading.md / _en.md: explicit holes 0.97-1.0 (no. 39 0.776), plain 0.58-0.77; cipher passages alone 0.955-1.0. All kept read; no. 39 (unscored by the sweep) given the same files.", "result": "worked", "technique": ["statistical test"]},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 5 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-18", "model": "fr-1530-despatches", "file": "validation.tsv", "tokens": 9367, "types": 121, "tokens_per_type": 77.41, "score": -2.269, "nulls": {"random keys": {"n": 200, "mean": -5.406, "sd": 0.241, "max": -4.851, "z": 13.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.697, "sd": 0.025, "max": -3.653, "z": 56.0, "p": 0.1429}}, "power": -2.634, "verdict": "pass", "notes": "claimed per-occurrence score -2.231; polyphony 0.007; 38 unread tokens left out; annealer on the real text from random keys reached -2.634"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -280,7 +281,7 @@
    "key recovered",
    "catalogue correction"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "fraction_read": 0.996,
   "fraction_read_method": "measured",
@@ -327,10 +328,12 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored texts/no39_decryption.txt, Robinson's unspaced letter-level rows (unscored); the reading is Angus Robinson's word-divided French edition of the letter, copied into texts/no39_reading.md (cipher passages marked) with his English (no39_en.md): whole letter 0.776 on explicit holes, 0.633 plain (1558 spelling); cipher passages alone 1.0 explicit, 0.778 plain. His edition adds word spaces and the doubled letters the cipher does not write, writes consonantal u as v and adds a few accents; his [contextual] readings count as holes. Rests on his key recovered from the deciphered paragraphs bound beside no. 44, checked here (18 Oct 2026)."
     },
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/no39_reading.md",
     "translation": "texts/no39_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.909,
+    "note": "24 Oct 2026: 90.9% of the words of texts/no39_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "no40",
@@ -347,7 +350,8 @@
     "state": "read",
     "reading": "texts/no40_reading.md",
     "translation": "texts/no40_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.999
    },
    {
     "doc": "no41",
@@ -364,7 +368,8 @@
     "state": "read",
     "reading": "texts/no41_reading.md",
     "translation": "texts/no41_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.991
    },
    {
     "doc": "no43",
@@ -381,7 +386,8 @@
     "state": "read",
     "reading": "texts/no43_reading.md",
     "translation": "texts/no43_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 0.987
    },
    {
     "doc": "no44",
@@ -398,7 +404,8 @@
     "state": "read",
     "reading": "texts/no44_reading.md",
     "translation": "texts/no44_en.md",
-    "language": "fr"
+    "language": "fr",
+    "read_share": 1.0
    }
   ],
   "key_file": [

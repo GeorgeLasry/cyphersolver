@@ -206,7 +206,8 @@
    "technique": ["statistical test"],
    "what": "v3 verification: Brackx's ll. 14-33 + verso scored on the line-numbered file (0.44). Joined into texts/no95_brackx_reading.md: 0.765 explicit-hole, code groups as holes; plain 0.235 (period spelling). Keeps read.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -247,7 +248,7 @@
    "key recovered"
   ],
   "first_break": false,
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.996,
   "fraction_read_method": "measured",
   "fraction_read_source": "decode.py --counts: all 1,245 recto symbols carry a value; the five name codes Name1-Name5 are unidentified (1240/1245). Code readings ciudad, gente, rey, papa, cardenal rest on context; rey de romanos?, aunque?, y? tentative. The four verso lines (Brackx) are outside this count.",
@@ -345,7 +346,10 @@
     "decryption": "reading.txt",
     "summary": "Bread cannot be had even for money; the French court the city's silk workers with trade licences; the King provides 'muy tarde y muy poco'; the Pope wants the cardinal of Santa Cruz to seek peace in France.",
     "translation": "no95_lasry_en.md",
-    "language": "es"
+    "language": "es",
+    "read_share": 0.924,
+    "state": "read in part",
+    "note": "24 Oct 2026: 92.4% of the words of reading.txt read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "no95",
@@ -360,9 +364,11 @@
      "note": "v3 verification 23 Oct 2026: the sweep scored no95_decryption_brackx.md with its header and line-numbered, hyphen-split lines (0.44). Brackx's lines joined into running text in texts/no95_brackx_reading.md: 0.765 explicit-hole (13/17 sentences, hole rate 0.077) with every unread code group ([bnh], [def], [dal] ...) and burn hole counted as a hole; plain 0.235 (early-16th-c. Spanish spelling: gouiernan, escreuira, danno). Sentences hold."
     },
     "reading": "texts/no95_brackx_reading.md",
-    "state": "read",
+    "state": "read in part",
     "translation": "texts/no95_brackx_en.md",
-    "language": "es"
+    "language": "es",
+    "read_share": 0.923,
+    "note": "24 Oct 2026: 92.3% of the words of texts/no95_brackx_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "no95",
@@ -375,7 +381,10 @@
     "summary": "Lasry's earlier decipherment of ll. 1-13 (the image on Tomokiyo's GL page) and the nine corrections Brackx proposed to it in issue #63.",
     "reading": "texts/no95_ll1-13_reading.md",
     "translation": "texts/no95_ll1-13_en.md",
-    "language": "es"
+    "language": "es",
+    "read_share": 0.88,
+    "state": "read in part",
+    "note": "24 Oct 2026: 88.0% of the words of texts/no95_ll1-13_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "lasry2021/ctts/key.txt"

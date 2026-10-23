@@ -238,7 +238,8 @@
    "kind": "literature search",
    "what": "Re-read (REREAD_BRIEF, batch b32) of the decoded-not-read lines: DECODE R2276 fetched logged in (3 images, no attachment or comment; R2275/R2277 not this letter); Tomokiyo guise.htm/nevers.htm re-fetched (Biermann 2021 identification only, no text); BnF catalogue record of fr. 3612 (cc50062c) fetched: Piles's ciphered letters with decipherments, no Gallica item; Gallica cipher-volume descriptions grepped for Piles/Orbais/Reims: no copy of the June 1589 letter. Unread lines scored 0.069 (explicit holes 0.172); p. 1 ll. 21-26 re-cropped: right half lost at the tear.",
    "result": "failed"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -316,7 +317,10 @@
     },
     "language": "fr",
     "reading": "R2276_reading.md",
-    "translation": "R2276_en.md"
+    "translation": "R2276_en.md",
+    "read_share": 0.917,
+    "state": "read in part",
+    "note": "24 Oct 2026: 91.7% of the words of R2276_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R2276",

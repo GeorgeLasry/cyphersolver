@@ -220,7 +220,8 @@
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 260 tokens, 51 types, it-cinquecento order 4: reading -2.162 per letter; random keys -3.88 (z 6.8); key annealed onto shuffled ciphertext best -2.433 (mean -2.464, z 17.2); annealer on the real text -2.404. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher.txt (both letters, lines A1-A6 and B1-B5), reading.md (both, with translation), key key.json", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.md read through. Both cipher insertions build Italian sentences with one-sign holes (A1-A5a; B1-B5); only A6 (12 signs) reads as a fragment. Audit grade C refined to B for both letters; class and fraction_read (0.928, signs in corpus words, both letters reading) unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.md read through. Both cipher insertions build Italian sentences with one-sign holes (A1-A5a; B1-B5); only A6 (12 signs) reads as a fragment. Audit grade C refined to B for both letters; class and fraction_read (0.928, signs in corpus words, both letters reading) unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 260, "types": 51, "tokens_per_type": 5.1, "score": -2.162, "nulls": {"random keys": {"n": 200, "mean": -3.88, "sd": 0.254, "max": -3.215, "z": 6.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.464, "sd": 0.018, "max": -2.433, "z": 17.2, "p": 0.1429}}, "power": -2.404, "verdict": "pass", "notes": "claimed per-occurrence score -2.079; polyphony 0.012; 4 unread tokens left out; annealer on the real text from random keys reached -2.404"}, 
   "method": "key recovered from ciphertext-only",
@@ -281,10 +282,12 @@
      "date": "2026-10-22",
      "note": "reading.md read through: A1-A5a build Italian sentences (he presses [me] to come into their service; he has sent to tell it to Signor Cesare and to make him great offers) with one-sign holes; only the last clause A6 ('la [?]icon puorano a tenderui', 12 of 149 signs) does not read. The low automatic score counts the clear passages and the editorial notes. Audit grade C refined: the cipher insertions are short but read."
     },
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "reading": "fr3070_f81_reading.md",
-    "translation": "fr3070_f81_en.md"
+    "translation": "fr3070_f81_en.md",
+    "read_share": 0.915,
+    "note": "24 Oct 2026: 91.5% of the words of fr3070_f81_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "fr3082_f42",
@@ -301,7 +304,8 @@
     "state": "read",
     "language": "it",
     "reading": "fr3082_f42_reading.md",
-    "translation": "fr3082_f42_en.md"
+    "translation": "fr3082_f42_en.md",
+    "read_share": 0.952
    }
   ],
   "key_file": "key.json"

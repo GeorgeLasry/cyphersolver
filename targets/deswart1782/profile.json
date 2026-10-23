@@ -248,7 +248,8 @@
    "technique": ["key matching", "contextual inference"],
    "what": "R1036 and R1040 part 2 normalised group by group into readings with the figures' spelling and DECODE's constant key-transcription letter confusions corrected (R1038_key_misreadings.tsv: hot hof, chi che, cerd eerd, ock ook, hetten hebben ...); every unbracketed word checked as carried (b19_wordcheck.py). Clean-sentence share on the bodies: checker's modern Dutch list 0.09 and 0.038; explicit holes only 0.769 and 0.666. Both set read (grade B); the French quotations of R1040 and the first 2,259 groups stay open.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -317,10 +318,13 @@
     "doc": "R1036",
     "label": "R1036, de Swart to van Bleiswijk, 8 Mar 1782",
     "transcription": "R1036_transcription.txt",
-    "decryption": ["R1036_decode.txt", "R1036_machine_decipherment.txt"],
+    "decryption": [
+     "R1036_decode.txt",
+     "R1036_machine_decipherment.txt"
+    ],
     "summary": "Johan Isaac de Swart, Dutch resident at St Petersburg, reports to the Grand Pensionary Pieter van Bleiswijk on the French and Spanish answers to the Austro-Russian mediation proposal, Catherine II's Greek project (Grand Duke Constantine taught Greek and given Greek attendants), and Prussia's accession to the Armed Neutrality. Token-level decipherment with the 1765 Croiset key (R1038); 56 groups unread, listed in R1036_unknowns.txt.",
     "language": "nl",
-    "state": "read",
+    "state": "read in part",
     "reading": "R1036_reading.md",
     "translation": "R1036_en.md",
     "reading_review": {
@@ -328,16 +332,21 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b19): the 30 Sept 2026 key and transcription corrections applied in decode_1765.py (the leading dash, 47^_ k, 54^\" alhoewel, 191 ens ...), two high scan readings (52^o sedert eenigen, 71^\" appuyeeren) and the b19 context values (617^\" courier, 341^_ mari, 343^_ me, 316^\" belang ...) adopted; DECODE's key-transcription letter confusions normalised where constant (R1038_key_misreadings.tsv); the whole despatch normalised group by group with clear opening and close (R1036_reading.md, every unbracketed word carried, b19_wordcheck.py). Clean-sentence share of the body 0.09 on the checker's modern Dutch list, 0.769 counting explicit holes only (period spelling). Open: 38 groups without a value and the line cut off at the top of image 5417."
-    }
+    },
+    "read_share": 0.911,
+    "note": "24 Oct 2026: 91.1% of the words of R1036_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R1040",
     "label": "R1040, de Swart, 29 Nov 1787 (second part, 1765 key)",
     "transcription": "R1040_transcription.txt",
-    "decryption": ["R1040_part2_decode.txt", "R1040_second_key_machine_decipherment.txt"],
+    "decryption": [
+     "R1040_part2_decode.txt",
+     "R1040_second_key_machine_decipherment.txt"
+    ],
     "summary": "De Swart's despatch of 29 November 1787, coded with two codebooks. The 1765-key segment (image 5459 from group 180 to image 5473, 5,625 groups) reports evidence of an Austrian-French alliance, the attention of the Prussian and British representatives at St Petersburg, Kaunitz, the Bavarian exchange and the Duke of Zweibruecken, the German League, the fleet and the Turkish war. The first 1,928 groups and image 5474 (331 groups, 2,259 in all) use a missing Rechteren-family code and are not deciphered.",
     "language": "nl",
-    "state": "read",
+    "state": "read in part",
     "reading": "R1040_part2_reading.md",
     "translation": "R1040_part2_en.md",
     "reading_review": {
@@ -345,7 +354,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Second part read 23 Oct 2026 (b19): context pass on its unread groups (28 values in R1040_B19, each fitting every occurrence here and in R1036), segment corrected to image 5459 group 180 - image 5473 (5,625 groups; 5474 is back in the missing code), normalised reading R1040_part2_reading.md (every unbracketed word carried). Clean-sentence share 0.038 on the checker's modern Dutch list, 0.666 counting explicit holes only; the French quotations read only in part. The first part (2,259 groups) is in a missing code and is not read."
-    }
+    },
+    "read_share": 0.888,
+    "note": "24 Oct 2026: 88.8% of the words of R1040_part2_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": [

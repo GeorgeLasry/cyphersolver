@@ -101,7 +101,8 @@
     {"date": "2026-09-22", "kind": "reading", "what": "Read the opening on f. 15 and the clear ending on f. 16r; continuous transcription of the cipher leaves remained blocked by the overwritten minute hand.", "result": "partial"},
     {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryptions f15_reading.md (opening, address and clear ending only) and f21_transcription.md (the clear fair copy); no sign-level transcription of either cipher exists in the folder", "result": "partial"},
     {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): f21_transcription.md reads as continuous Italian (reviewed A); f15_reading.md gives only the opening of the gloss, the address and the clear closing, so f. 15 is relabelled decoded, not read. fraction_read 0.4 -> about 0.3 (estimated).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
-    {"date": "2026-10-22", "kind": "reading", "what": "Re-read of f. 15 under REREAD_BRIEF (batch mix1): the interlinear gloss transcribed line by line on the Gallica native images (f15_gloss.md), the cipher signs transcribed (f15_signs.tsv, 70 lines; f. 16r lines 1-19 found to continue the cipher) and decoded with an alphabet rebuilt from gloss-sign alignment (f15_key.md). Gloss and decode agree word for word on f. 15r and f. 16r; f. 15v ll. 2-5 illegible. f. 15 relabelled read (f15_reading.md, f15_en.md, f15_reread_log.md).", "result": "worked", "technique": ["crib testing", "manual reconstruction", "plaintext matching"]}
+    {"date": "2026-10-22", "kind": "reading", "what": "Re-read of f. 15 under REREAD_BRIEF (batch mix1): the interlinear gloss transcribed line by line on the Gallica native images (f15_gloss.md), the cipher signs transcribed (f15_signs.tsv, 70 lines; f. 16r lines 1-19 found to continue the cipher) and decoded with an alphabet rebuilt from gloss-sign alignment (f15_key.md). Gloss and decode agree word for word on f. 15r and f. 16r; f. 15v ll. 2-5 illegible. f. 15 relabelled read (f15_reading.md, f15_en.md, f15_reread_log.md).", "result": "worked", "technique": ["crib testing", "manual reconstruction", "plaintext matching"]},
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -128,11 +129,14 @@
       {
         "doc": "f15",
         "label": "Henriette de Clèves to the duke of Nevers, Lyon, 16 Sept [1574], ff. 15-16",
-        "state": "read",
+        "state": "read in part",
         "language": "fr",
         "decryption": "f15_reading.md",
         "summary": "The duchess tells her husband that Pignerol and Savillan have been handed to the Duke of Savoy, to the contentment of the King and the Queen Mother, so that Nevers is left without his government; her exchange with the Queen Mother (who first approves warning him, then says he does not lose his government) and her tears; a report to the King that Nevers had written of a league of four or five near the King; promises of the next vacant government (Picardy, Languedoc); his friends say he would harm himself by keeping the reduced government. Cipher continues on f. 16r (19 lines), then a clear closing: it is midnight, she would rather be in paradise.",
-        "transcription": ["f15_signs.tsv", "f15_gloss.md"],
+        "transcription": [
+          "f15_signs.tsv",
+          "f15_gloss.md"
+        ],
         "reading": "f15_reading.md",
         "translation": "f15_en.md",
         "reading_review": {
@@ -140,16 +144,24 @@
           "by": "Claude Opus 5.5",
           "date": "2026-10-22",
           "note": "f15_reading.md: the contemporary interlinear gloss (f15_gloss.md) and a mechanical decode of the cipher signs (f15_signs.tsv, alphabet f15_key.md rebuilt from gloss-sign alignment) agree word for word on f. 15r and f. 16r; 70 cipher lines. f. 15r and the f. 16r cipher read as continuous French (4 holes in 402 tokens); f. 15v ll. 2-5 are overwritten and their gloss faded (illegible), with a dozen single groups open further down, 50 holes in 224 tokens. _check_reading on the reading body: 46 of 57 sentences clean (0.81). Verified word by word 22 Oct 2026 (verify2_nevers_align.py: signs decoded with f15_key.md, gloss words aligned): 0 words bracketed beyond those already marked, 3 replaced (f. 15v l. 16 \"desquoy elle m'a dict [...] tesmoigner\" -> \"desquoy mesme [?pouvoit] tesmoigner\": signs +F9+F (9886..74, gloss \"mesme ... [?pouvoit]\"); 0.807 clean on the body (unchanged)."
-        }
+        },
+        "read_share": 0.941,
+        "note": "24 Oct 2026: 94.1% of the words of f15_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "f21",
         "label": "Renato Birago to the duke of Nevers, Lyon, 28 Sept 1574, f. 21",
-        "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "f21_transcription.md: the contemporary clear fair copy under the cipher flap, transcribed as continuous Italian; every sentence reads, one doubtful word (saluato suo)."},
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "f21_transcription.md: the contemporary clear fair copy under the cipher flap, transcribed as continuous Italian; every sentence reads, one doubtful word (saluato suo)."
+        },
         "language": "it",
         "decryption": "f21_transcription.md",
         "summary": "Birago had expected Nevers in Lyon for St Michael's day; the bearer's business comes at the worst moment, as the affairs of the kingdom make anything else more urgent; Birago will speak of Piedmont by mouth; Their Majesties are well disposed to give Nevers a government and whatever else he deserves. The decryption is the clear fair copy on the same recto; the cipher flap itself was not transcribed sign by sign.",
-        "translation": "f21_en.md"
+        "translation": "f21_en.md",
+        "read_share": 1.0
       }
     ],
     "key_file": "f15_key.md"

@@ -227,7 +227,8 @@
    "kind": "verification",
    "what": "Verification 5 (plain-bar rows): R985 and R991 were scored as whole files (key stream plus margin lines). Margin decipherments written out as read/R985_reading.md and read/R991_reading.md (R991's second unread margin word filled from the figures, 'de estos discursos'). Plain 0.333 and 0.417, explicit 1.0: the plain shortfall is names, period spellings and ordinary words missing from the es word list; both keep read on reader judgement.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 10 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -298,7 +299,8 @@
     "state": "read",
     "reading": "read/R985_reading.md",
     "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream.",
-    "translation": "read/R985_en.md"
+    "translation": "read/R985_en.md",
+    "read_share": 1.0
    },
    {
     "doc": "margined",
@@ -307,7 +309,7 @@
     "decryption": "read/R986.txt",
     "summary": "Balbases at Nijmegen to Fuenmayor in Copenhagen, read at the time: the contemporary margin decipherment is transcribed in tx/ and set beside the key output in read/.",
     "language": "es",
-    "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream.",
+    "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream. 24 Oct 2026: 94.6% of the words of read/R986_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (reading audit)",
@@ -315,7 +317,9 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R986_reading.md",
-    "translation": "read/R986_en.md"
+    "translation": "read/R986_en.md",
+    "read_share": 0.946,
+    "state": "read in part"
    },
    {
     "doc": "margined",
@@ -332,7 +336,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R987_reading.md",
-    "translation": "read/R987_en.md"
+    "translation": "read/R987_en.md",
+    "read_share": 0.983
    },
    {
     "doc": "margined",
@@ -349,7 +354,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R988_reading.md",
-    "translation": "read/R988_en.md"
+    "translation": "read/R988_en.md",
+    "read_share": 0.974
    },
    {
     "doc": "margined",
@@ -366,7 +372,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R989_reading.md",
-    "translation": "read/R989_en.md"
+    "translation": "read/R989_en.md",
+    "read_share": 0.987
    },
    {
     "doc": "margined",
@@ -383,7 +390,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R990_reading.md",
-    "translation": "read/R990_en.md"
+    "translation": "read/R990_en.md",
+    "read_share": 0.991
    },
    {
     "doc": "margined",
@@ -401,7 +409,8 @@
     "state": "read",
     "reading": "read/R991_reading.md",
     "note": "Read from the contemporary margin decipherment in the same file (clean Spanish); the key decryption above it is a syllable stream.",
-    "translation": "read/R991_en.md"
+    "translation": "read/R991_en.md",
+    "read_share": 0.986
    },
    {
     "doc": "unread",
@@ -430,7 +439,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R993_reading.md",
-    "translation": "read/R993_en.md"
+    "translation": "read/R993_en.md",
+    "read_share": 0.996
    },
    {
     "doc": "margined",
@@ -447,7 +457,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R994_reading.md",
-    "translation": "read/R994_en.md"
+    "translation": "read/R994_en.md",
+    "read_share": 0.996
    },
    {
     "doc": "margined",
@@ -464,7 +475,8 @@
      "note": "Read from the contemporary margin decipherment in the same file: continuous Spanish with a few doubtful words marked '?'; the key decryption above it is the syllable stream it checks."
     },
     "reading": "read/R995_reading.md",
-    "translation": "read/R995_en.md"
+    "translation": "read/R995_en.md",
+    "read_share": 0.991
    },
    {
     "doc": "unread",

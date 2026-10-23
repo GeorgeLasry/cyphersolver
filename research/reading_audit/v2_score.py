@@ -17,11 +17,19 @@ def body_of(t):
     return m.group(1) if m else t
 
 
+EDITORIAL = {'autograph', 'sic', 'clear', 'cipher', 'margin', 'in margin', 'signature', 'signed', 'seal', 'address',
+             'dorse', 'endorsement', 'blank', 'struck', 'cancelled', 'struck out', 'postscript', 'verso', 'recto', 'clear text',
+             'in cipher', 'in clear', 'date', 'docket'}
+
+
 def holes(t):
     def rep(m):
         inner = m.group(1)
         if re.fullmatch(r'[\s\d.?…*+-]*', inner) or len(inner.strip()) <= 2:   # [Π] [R] [#]: one unread sign
             return '[?]'
+        words = re.findall(r'[^\W\d_]+', inner)
+        if not inner.lstrip().startswith('?') and (len(words) >= 5 or inner.strip().lower() in EDITORIAL):
+            return ' '   # a quoted clear passage ("[… selon que …]") or an editorial note ("[autograph]"): not text read here
         if '?' in inner or inner == inner.lower():
             n = max(1, len(re.findall(r'[^\W\d_]+', inner)))
             return ' '.join(['[?]'] * n)

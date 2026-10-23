@@ -301,7 +301,8 @@
    "kind": "reading",
    "what": "Verification 4: wrote texts/p1_reading.md and p1_en.md from decrypt_p1.txt and the clear Dutch under the cipher; v2_score 1.00 on explicit holes (plain 0.25, 1795 spelling).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -310,7 +311,7 @@
    "transcription",
    "key extended or corrected"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.974,
   "fraction_read_method": "measured",
   "fraction_read_source": "transcription_p1/p3/p4.txt with STRICT=1 apply.py --measure (3 Oct 2026): 1,010 of 1,037 cipher tokens given an H or M value (I-grade sign values counted unread; 1,015 with them). p1 111/111.",
@@ -371,7 +372,8 @@
      "note": "v4 check 23 Oct 2026: decrypt_p1.txt is the unspaced decode with word signs in brackets, which the scorer could not score. Written out as texts/p1_reading.md from the decode and the contemporary clear Dutch under the cipher lines (every digit word agrees; the word signs take their values from it). v2_score: explicit holes 1.00 (4/4), hole rate 0, 40 words; plain 0.25 because the nl word list does not know 1795 spelling (geleesen, gebraaden, leeven, wy). Three coherent sentences, confirmed by the clear text. Keeps read, grade B (raw decode normalised in the reading)."
     },
     "reading": "texts/p1_reading.md",
-    "translation": "texts/p1_en.md"
+    "translation": "texts/p1_en.md",
+    "read_share": 1.0
    },
    {
     "doc": "R2242 p3",
@@ -383,7 +385,7 @@
     ],
     "summary": "On the Batavian alliance with France: the émigré troops and dismissed officers are scattered, without cohesion or leader; the ratification of the Treaty of The Hague has been published before it arrived, and De Sitter and Van Grasveld are sent to Paris as ambassadors to carry it. WAINUT's proposed values for open signs (not adopted) are listed separately for comparison.",
     "language": "nl",
-    "state": "read",
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
@@ -391,7 +393,9 @@
      "note": "v3 check 23 Oct 2026: the sweep scored texts/wainut_proposals.md, WAINUT's table of proposed sign values, not a reading (0.59). A reading of pp. 3-4 was written from the decrypts and the NOTES reading (texts/p3_p4_reading.md; word signs with H/M values as words, the four I-grade values as [?word], unvalued and blotted signs as [...]): pp. 3-4 together 0.708 on explicit holes, hole rate 0.122; p. 3 0.69, p. 4 0.75; plain 0.125 (1795 Dutch with y for ij, which the nl word list does not know). The sentences on the officers, the ratification and England hold; the stretch p. 3 ll. 7-12 (natuurlyk ... behandelt word) and the P.S. do not. Rests on the R1892 square key recovered here ciphertext-only and confirmed by the clear Dutch under p. 1; no decipherment of pp. 3-4."
     },
     "reading": "texts/p3_p4_reading.md",
-    "translation": "texts/p3_p4_en.md"
+    "translation": "texts/p3_p4_en.md",
+    "read_share": 0.88,
+    "note": "24 Oct 2026: 88.0% of the words of texts/p3_p4_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R2242 p4",
@@ -403,7 +407,7 @@
     ],
     "summary": "If England persists in not recognising the present government, they will not dare introduce Robespierrism, for which there is much disposition; respects to the whole company; a detailed answer is awaited; greetings to his brother. P.S.: Dankaert is also abroad.",
     "language": "nl",
-    "state": "read",
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
@@ -411,7 +415,9 @@
      "note": "v3 check 23 Oct 2026: the sweep scored texts/wainut_proposals.md, WAINUT's table of proposed sign values, not a reading (0.59). A reading of pp. 3-4 was written from the decrypts and the NOTES reading (texts/p3_p4_reading.md; word signs with H/M values as words, the four I-grade values as [?word], unvalued and blotted signs as [...]): pp. 3-4 together 0.708 on explicit holes, hole rate 0.122; p. 3 0.69, p. 4 0.75; plain 0.125 (1795 Dutch with y for ij, which the nl word list does not know). The sentences on the officers, the ratification and England hold; the stretch p. 3 ll. 7-12 (natuurlyk ... behandelt word) and the P.S. do not. Rests on the R1892 square key recovered here ciphertext-only and confirmed by the clear Dutch under p. 1; no decipherment of pp. 3-4."
     },
     "reading": "texts/p3_p4_reading.md",
-    "translation": "texts/p3_p4_en.md"
+    "translation": "texts/p3_p4_en.md",
+    "read_share": 0.88,
+    "note": "24 Oct 2026: 88.0% of the words of texts/p3_p4_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": [

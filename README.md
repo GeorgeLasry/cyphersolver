@@ -767,8 +767,12 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   translation. A token-run measure passes a decode made of short real words strung together, so the sentences are
   read as sentences by a reader, who records it on each document (`reading_review`: A coherent with scattered holes,
   B coherent but raw); `docs/_check_reading.py` scores the sentences (language-neutral, a sentence is clean with at most
-  one hole in ten words) to point the reader at the weak ones, but the 22 Oct 2026 audit showed it cannot be the verdict. A document that decodes but does not
-  yet build sentences is published as *decoded, not read* and is not counted in the extent or the headline figure.
+  one hole in ten words) to point the reader at the weak ones, but the 22 Oct 2026 audit showed it cannot be the verdict.
+  Each document also carries the read bar, measured: a document is *read* only when 95% of its words read as sense
+  (`read_share` in its profile entry: 1 minus the share of marked holes, guessed `[?word]`s and supplied `[word]`s;
+  `research/reading_audit/v10_relabel.py`). One that builds coherent sentences under 95% is *read in part* (24 Oct
+  2026). A document that decodes but does not yet build sentences is published as *decoded, not read* and is not counted
+  in the extent or the headline figure.
   The audit of every published reading against this rule is in `research/reading_audit/`.
 - **Outcome method.** Every target is classed by how its text was obtained, in George Lasry's categories (email of
   21 Sept 2026) plus one for complete existing decipherments: *key recovered from ciphertext-only*; *key recovered

@@ -294,7 +294,8 @@
   {"date": "2026-10-23", "kind": "sibling key", "technique": ["contextual inference", "key matching"], "what": "Open groups of R9873/R9898 pooled with R9899, f. 128 and R9660 (1523). Adopted where every occurrence reads: gal embia- (R9898 f.150r margin), hog querria (R9899 margin), kaz -mente (margin), reb dezi- (four contexts incl. R9660 contra-dezir-la), dis servido (servidores, servidor, sera servido), cer teni, lar miento, sur/luc parte, tt plural s, gul si, nuf gente, qu o, gom quatro with lo mill / ror ducado (the clear 'quatro mill ducados' then 'los dichos gom lo ror-s que se perdieron'); the sense-only ones flagged for review. Not adopted: all pass-17 values, hay (fails in f.81r), kam (two contexts disagree), yid favor (3 of 4 contexts), mjn (ha x8, Italia x3: two groups transcribed alike).", "result": "partial"},
   {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "language-model scoring"], "what": "r9873_reading.md and r9898_reading.md built as continuous Spanish in the period spelling from the working decodes, open groups written [...grp], tentative values [?value], with word-level mends from the figures logged (ternia, atajar, demostracion, teniendose, no halla grand aliento, no se haze, ynposibilidad, veniesse, jamas huvo, ynresolucion, ynreparable, esas fronteras); every unbracketed word aligned with the decode or clear text (b23_sessa_align.py: R9873 0 uncarried of 1,534; R9898 0 apart from the date line carried by the section header). Look-alike letters: R9873 63 on 84 of 126 line pairs (3 as i 38), R9898 21 on 106 of 159. f. 83r ll. 19-24 re-checked on the image at 2x: transcription stands, no label changed.", "result": "partial"},
   {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring"], "what": "Reading bodies scored: R9873 0.715 clean sentences counting explicit holes (b17_score HOLES=1), 0.399 plain, _check_reading 0.409 (working file before: 0.13); the sentences hold except f. 83r ll. 19-25: set read, grade B, English in r9873_en.md. R9898 0.47 HOLES=1, 0.273 plain (before 0.16): stays decoded, not read (bleed-through pages and some 140 single-context groups). fraction_read 0.021 -> 0.458 (f. 128 116 + R9873 2,473 of 5,648 cipher tokens).", "result": "partial"},
-  {"date": "2026-10-23", "kind": "control", "what": "Verify sweep (reading audit v2): R9873 reading re-scored with the sense-only values of the b23 log (sur/luc parte, tt plural s, reb dezi-, cer teni, lar miento, gom quatro, qu o, dis servido, gul si, nuf gente; 21 words located by their (a)-line contexts, research/reading_audit/v2_sessa1524_sense.py) and the unattested look-alike letters (v2_sessa1524_look.py: 29 letter cases outside 3 = i; the ꝍ-as-i/j/d, Є/ε-as-i/y and 3-as-j/l words, 11, counted; Ɉ u/v, ꝍ u/v, x r, ⅄, ∠, tto taken as declared second values) as holes. Explicit-hole share 0.632 (103/163), b17 HOLES=1 0.652; plain 0.38. Look-alike letters about 95 of roughly 7,900 reading letters (1.2%), most the attested 3 = i. Kept read.", "result": "worked", "technique": ["language-model scoring"]}
+  {"date": "2026-10-23", "kind": "control", "what": "Verify sweep (reading audit v2): R9873 reading re-scored with the sense-only values of the b23 log (sur/luc parte, tt plural s, reb dezi-, cer teni, lar miento, gom quatro, qu o, dis servido, gul si, nuf gente; 21 words located by their (a)-line contexts, research/reading_audit/v2_sessa1524_sense.py) and the unattested look-alike letters (v2_sessa1524_look.py: 29 letter cases outside 3 = i; the ꝍ-as-i/j/d, Є/ε-as-i/y and 3-as-j/l words, 11, counted; Ɉ u/v, ꝍ u/v, x r, ⅄, ∠, tto taken as declared second values) as holes. Explicit-hole share 0.632 (103/163), b17 HOLES=1 0.652; plain 0.38. Look-alike letters about 95 of roughly 7,900 reading letters (1.2%), most the attested 3 = i. Kept read.", "result": "worked", "technique": ["language-model scoring"]},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 3617, "types": 206, "tokens_per_type": 17.56, "score": -2.169, "nulls": {"random keys": {"n": 200, "mean": -3.449, "sd": 0.203, "max": -2.946, "z": 6.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.434, "sd": 0.008, "max": -2.421, "z": 34.3, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.119; polyphony 0.053; 1936 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -373,15 +374,19 @@
     "state": "read",
     "language": "es",
     "reading": "texts/f128_reading.md",
-    "translation": "texts/f128_en.md"
+    "translation": "texts/f128_en.md",
+    "read_share": 0.982
    },
    {
     "doc": "r9873",
     "label": "R9873, Rome, 14 Apr 1524 (RAH Salazar A-31 ff. 79-86)",
     "transcription": "r9873_cipher.txt",
-    "decryption": ["r9873_cipher.txt", "read_r9873.md"],
+    "decryption": [
+     "r9873_cipher.txt",
+     "read_r9873.md"
+    ],
     "summary": "Sessa to Charles V, a holograph with cipher runs and a postscript wholly in cipher; no decipherment is bound with it (Bergenroth's CSP Spain ii 637 calendars Goicoechea's 19th-century reading, and nos. 636/638 the triplicate and the court abstract, used only as a topic crib). Transcribed in full; each line (a) cipher, (b) reading.",
-    "state": "read",
+    "state": "read in part",
     "language": "es",
     "reading": "r9873_reading.md",
     "translation": "r9873_en.md",
@@ -390,7 +395,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "r9873_reading.md: the letter written out as continuous Spanish in its 1524 spelling from the working decode r9873_cipher.txt (key passes 1-17 plus the b23 values gal, hog, reb, dis, cer, lar, sur/luc, tt, gul, nuf, qu, gom/lo/ror, kaz; sense-only ones flagged in texts/r9873-r9898_reread_log.md), every word aligned with the decode or the clear text (research/reading_audit/b23_sessa_align.py: 0 uncarried). Clean sentences 0.715 counting explicit holes (b17_score HOLES=1), 0.399 plain (the es word list lacks the period spelling); holes are open code groups and tentative values. The sentences hold through ff. 80v-82v, 83v-84r and the postscript and agree topic by topic with CSP Spain ii 636; f. 83r ll. 19-25 does not hold. No contemporary decipherment of this copy is in reach (the triplicate and Goicoechea's reading are not imaged). Verified 23 Oct 2026 (reading audit v2): rescored with every word resting on a sense-only key value (sur/luc, tt, reb, cer, lar, gom, qu, dis, gul, nuf: 21 words) and every word carrying an unattested look-alike (ꝍ as i/j/d, Є/ε as i/y, 3 as j/l: 11 words) counted as a hole: 0.632 explicit holes (103/163, v2_score.py), 0.652 b17 HOLES=1, against 0.687/0.715 as published; 0.38 plain. Still at the bar; f. 83r ll. 19-25 remain the one passage that does not hold. Kept read, grade B."
-    }
+    },
+    "read_share": 0.883,
+    "note": "24 Oct 2026: 88.3% of the words of r9873_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "r9898",

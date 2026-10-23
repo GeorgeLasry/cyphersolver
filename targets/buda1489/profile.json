@@ -323,7 +323,8 @@
    "technique": ["other"],
    "what": "Independent second reader (sr) on V2831 p. 2 ll. 18-31 + p. 3: 8 lines drawn with random.seed(20261023) (p. 2 L30; p. 3 L02, L03, L09, L10, L21, L23, L31), signs transcribed blind on per-line crops of the Vestigia plates (3240x4320) and decoded with key_R5411.md, then compared with trans/v2831p2_b25.md, v2831p3_b25.md, trans/v2831_r2l_corrections.tsv and v2831_p2p3_r2l_reading.md (trans/v2831_sr_blind.tsv). Signs 388/416 agree (93.3%); reading words not carried by the blind decode 26/92 (28%), after the second reader's own re-crops of each disputed sign 9/92 (9.8%: sua x2, mando, andisse, arte, et x2, che, Turco).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -386,11 +387,20 @@
    {
     "doc": "V2831",
     "label": "Vestigia 2831, Buda 22 Nov 1489: p. 1, p. 2 ll. 1-17 and the two cipher lines of p. 4 (p. 2 has 31 lines)",
-    "transcription": ["trans/v2831p1_r2e.md", "trans/v2831p2_r2e.md", "trans/v2831p4_r2e.md", "trans/v2831_r2e_corrections.tsv", "trans/v2831p1_read2.md", "trans/v2831p1_read3.md", "trans/v2831p2_read.md", "trans/v2831p4_read.md"],
+    "transcription": [
+     "trans/v2831p1_r2e.md",
+     "trans/v2831p2_r2e.md",
+     "trans/v2831p4_r2e.md",
+     "trans/v2831_r2e_corrections.tsv",
+     "trans/v2831p1_read2.md",
+     "trans/v2831p1_read3.md",
+     "trans/v2831p2_read.md",
+     "trans/v2831p4_read.md"
+    ],
     "decryption": "v2831_reading.md",
     "summary": "Maffeo da Treviglio to Ludovico Sforza: King Matthias will not go to the Diet without letters from the Emperor that let him come away justified; the new Neapolitan ambassador is to reconcile the Queen with the King and has raised again the match of John Corvinus with don Federico's daughter, which the King takes as made in spite of the Milanese marriage; courtiers tell messer Francesco he goes to Naples 'to undo what you have cooked'; Maffeo advises that the Queen will spare no effort to turn the King and will not yield 'to the insatiable wrath of Juno'.",
     "language": "it",
-    "state": "read",
+    "state": "read in part",
     "reading": "v2831_r2e_reading.md",
     "translation": "v2831_r2e_en.md",
     "reading_review": {
@@ -398,7 +408,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "r2e 23 Oct 2026: re-read sign by sign from the Vestigia plates with the original key R5411 (trans/v2831p1_r2e.md, v2831p2_r2e.md, v2831p4_r2e.md); 0.642 explicit-hole, look-alike letters 0.7%, share of cipher signs read 0.847. r2l 23 Oct 2026 (v2831_r2l_reread_log.md): the unread groups segmented with the lang/ model it-cinquecento over the alternative sign values; ben, in el, epsa, poco amano, subiunse adopted (every letter carried); 0.698 explicit-hole (37/53)."
-    }
+    },
+    "read_share": 0.902,
+    "note": "24 Oct 2026: 90.2% of the words of v2831_r2e_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "V2831",
@@ -437,7 +449,8 @@
     },
     "reading": "r1098_v3_reading.md",
     "translation": "r1098_v3_reading.md",
-    "state": "read"
+    "state": "read",
+    "read_share": 0.965
    },
    {
     "doc": "V267",
@@ -456,7 +469,8 @@
      "note": "Translation wave v9, 23 Oct 2026: V267_reading.md written (clear opening 'Lo', the cipher as given by its contemporary clear extract Vestigia 268, the clear close), checked against the key decode of trans/v267.csv; v2_score.py: plain 0.889 (8/9), explicit holes 1.0 (9/9), hole rate 0.013. English in V267_en.md."
     },
     "reading": "V267_reading.md",
-    "translation": "V267_en.md"
+    "translation": "V267_en.md",
+    "read_share": 1.0
    }
   ],
   "key_file": [

@@ -188,7 +188,8 @@
    "what": "Verification 3 (v3_below_b): flagged at 0.455 on reading.txt (decode table). The colophon sentence alone (colophon_reading.md) scores 1.0 on explicit holes. Kept read.",
    "result": "worked",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -260,7 +261,8 @@
     "state": "read",
     "reading": "colophon_reading.md",
     "language": "la",
-    "translation": "colophon_en.md"
+    "translation": "colophon_en.md",
+    "read_share": 1.0
    },
    {
     "doc": "R4349-slip",
@@ -269,7 +271,10 @@
     "decryption": "slip.txt",
     "summary": "A short private letter in Old Swedish to Anders Larsson, sending a little cinnamon bark for his chest, closing 'til liff oth sel' and then six cipher signs, probably a concealed signature. The six signs are not read (too short, no key, no sibling); the decryption file is the transcription of the clear letter with the signs as written.",
     "translation": "slip_en.md",
-    "language": "sv"
+    "language": "sv",
+    "read_share": 0.948,
+    "state": "read in part",
+    "note": "24 Oct 2026: 94.8% of the words of slip.txt read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ]
  }

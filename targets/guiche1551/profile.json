@@ -202,7 +202,8 @@
    "what": "Consistency pass (cl): 'read in part' not justified because the print escalation step is not done (Ribier 1666 not grepped); left unticked, NOTES Status: in progress.",
    "result": "partial",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -269,7 +270,12 @@
    {
     "doc": "laguiche1551",
     "label": "La Guiche to Montmorency, Rome, 22 Nov 1551 (BnF fr. 3138 no. 22, f. 60v)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "reading_raw.txt read line by line: L2-L12 (350 of 431 tokens) build French sentences with one open code sign [::] (the ambassador of Siena gone back with Dom Diego; Count Santa Fiora ill satisfied and easily won to the King's service; Barnabe Adorno and his conditions). The \"...\" in the normalised file are clear words not copied, not cipher holes. Only the two lines the writer struck through (L0-L1) read in fragments. Audit grade C refined: the cipher text outside the struck lines reads."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "reading_raw.txt read line by line: L2-L12 (350 of 431 tokens) build French sentences with one open code sign [::] (the ambassador of Siena gone back with Dom Diego; Count Santa Fiora ill satisfied and easily won to the King's service; Barnabe Adorno and his conditions). The \"...\" in the normalised file are clear words not copied, not cipher holes. Only the two lines the writer struck through (L0-L1) read in fragments. Audit grade C refined: the cipher text outside the struck lines reads."
+    },
     "language": "fr",
     "transcription": "guiche_ct.txt",
     "decryption": [
@@ -278,7 +284,10 @@
     ],
     "summary": "Claude de la Guiche, in Rome, reports to Montmorency that the Sienese envoy has left Rome with Dom Diego (Diego Hurtado de Mendoza, imperial ambassador and master of Siena) and that the Count of Santa Fiora is discontented and would readily come over to the king's service on conditions; the winter of the Parma war, months before the Sienese rising of July 1552. The first two struck-through lines read only in part.",
     "reading": "texts/laguiche1551_reading.md",
-    "translation": "texts/laguiche1551_en.md"
+    "translation": "texts/laguiche1551_en.md",
+    "read_share": 0.887,
+    "state": "read in part",
+    "note": "24 Oct 2026: 88.7% of the words of texts/laguiche1551_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "texts/key.md"

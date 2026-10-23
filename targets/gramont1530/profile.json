@@ -138,7 +138,8 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): gramont1530: reading fr3071_no7_gramont.md linked; key = Lasry's table image img/BnF_fr3071_f17.png and texts/key.md (copied verbatim from the reading file). No ciphertext transcription exists in the folder.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -196,7 +197,7 @@
    }
   ],
   "texts": [
-   {"doc": "gramont1530", "label": "BnF fr. 3071 no. 7, f. 17, Rome, 21 July [1530]", "decryption": "fr3071_no7_gramont.md", "summary": "Gramont, cardinal, writes from Rome to Montmorency: the Pope keeps \"Francisque\" on the mission rather than Gramont, for fear of Imperial suspicion; Rodolfo Pio, bishop of Faenza and nephew of Carpi, is to leave in 3-4 days to congratulate the King on the return of the Queen and the princes (handed over at the Bidassoa, 1 July 1530).", "note": "No transcription of the 14 cipher lines was kept (read by eye against Lasry's table); the reading gives the deciphered text in capitals with gaps marked. Lasry's own 2023 decipherment is unpublished and not in the repository.", "reading": "fr3071_no7_gramont_reading.md", "translation": "fr3071_no7_gramont_en.md", "language": "fr"}
+   {"doc": "gramont1530", "label": "BnF fr. 3071 no. 7, f. 17, Rome, 21 July [1530]", "decryption": "fr3071_no7_gramont.md", "summary": "Gramont, cardinal, writes from Rome to Montmorency: the Pope keeps \"Francisque\" on the mission rather than Gramont, for fear of Imperial suspicion; Rodolfo Pio, bishop of Faenza and nephew of Carpi, is to leave in 3-4 days to congratulate the King on the return of the Queen and the princes (handed over at the Bidassoa, 1 July 1530).", "note": "No transcription of the 14 cipher lines was kept (read by eye against Lasry's table); the reading gives the deciphered text in capitals with gaps marked. Lasry's own 2023 decipherment is unpublished and not in the repository. 24 Oct 2026: 93.3% of the words of fr3071_no7_gramont_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.", "reading": "fr3071_no7_gramont_reading.md", "translation": "fr3071_no7_gramont_en.md", "language": "fr", "read_share": 0.933, "state": "read in part"}
   ],
   "key_file": ["img/BnF_fr3071_f17.png", "texts/key.md"]
  }

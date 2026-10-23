@@ -89,7 +89,8 @@
       "what": "Spot-check against the Gallica image (none (no Gallica link; fr. 3142 ark not resolvable offline)): his f60v crop, row 1: ψ π a ψ — + = t o u t e s (\"toutes\") with his table, then signs consistent with \"leurs espiez\"; only ~6-10 signs readable at crop resolution Verdict: partly confirmed.",
       "result": "partial"
     },
-    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"}
+    {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"},
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -130,10 +131,12 @@
         "label": "George Lasry's report entry (excerpts and translation)",
         "decryption": "lasry_entry.md",
         "summary": "Memorandum to the Constable, including discussion of a promotion; a historical decipherment survives at ff62r–v. (Jean, cardinal Du Bellay to The Constable, 1555, as given in George Lasry's report.)",
-        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry.",
+        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry. 24 Oct 2026: 90.9% of the words of lasry_excerpt_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
         "reading": "lasry_excerpt_reading.md",
         "translation": "lasry_excerpt_en.md",
-        "language": "fr"
+        "language": "fr",
+        "read_share": 0.909,
+        "state": "read in part"
       }
     ]
   }

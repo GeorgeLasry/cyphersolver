@@ -323,7 +323,8 @@
    "kind": "verification",
    "what": "Verification 5 (plain-bar rows): both No. 88 entries had been scored on decryption files with hyphenated syllables and group tables (the gap entry listed as French). Readings written out with words joined (texts/no88_gap_reading.md, no88_remainder_reading.md): plain 0.9 and 0.688, explicit 1.0 and 0.812. Both keep read.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -362,7 +363,7 @@
    "transcription",
    "key recovered"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "fraction_read_method": "measured",
   "fraction_read_source": "python measure.py (22 Sept 2026, third pass): 380 of 390 code groups of No. 88 read as sense = 0.974 (gap88 133/133 = 1.000, rem88 247/257 = 0.961; the 7 gutter-cut groups counted unread); 382/390 valued; 362/390 = 0.928 without the grade-I values. JQA's copying slips 1112 1433 read as intended (im-pa-ir-ed) per his catchword 1102 and No. 83's un-im-pa-ir-ed (sense88.tsv header). Second pass: 355/390 = 0.910.",
@@ -430,7 +431,8 @@
     },
     "language": "en",
     "reading": "texts/no88_gap_reading.md",
-    "state": "read"
+    "state": "read",
+    "read_share": 0.98
    },
    {
     "doc": "no88-remainder",
@@ -446,7 +448,9 @@
     },
     "language": "en",
     "reading": "texts/no88_remainder_reading.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.938,
+    "note": "24 Oct 2026: 93.8% of the words of texts/no88_remainder_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "code_table.tsv"

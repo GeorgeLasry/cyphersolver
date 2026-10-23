@@ -276,7 +276,8 @@
       "what": "r2m (TRANSLATE_BRIEF): readings and English translations written for the six letters counted read in the audit (R7487, R7495, R7497, R7498, R7499, R7500; reading/<R>_reading.md, _en.md) from their decryption files: word division, capitals and punctuation normalised, codes and dotted signs resolved where codes_key.json gives them, runs of the letter cipher printed as the words they spell (runs off by one figure marked [?word], senseless runs as holes), no letter changed, no word added; not re-read on the images. Scores of the reading bodies (research/reading_audit/v2_score.py, plain / explicit holes): R7487 0.467/0.733, R7495 0.54/0.75, R7497 0.44/0.56, R7498 0.412/0.549, R7499 0.56/0.76, R7500 0.46/0.56; the open person codes count as holes. State left as the audit set it (read, grade B).",
       "result": "partial",
       "technique": ["manual reconstruction"]
-    }
+    },
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 5 of 5 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "validation": {
@@ -400,10 +401,12 @@
           "date": "2026-10-22",
           "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
         },
-        "state": "read",
+        "state": "read in part",
         "language": "de",
         "reading": "reading/R7487_reading.md",
-        "translation": "reading/R7487_en.md"
+        "translation": "reading/R7487_en.md",
+        "read_share": 0.901,
+        "note": "24 Oct 2026: 90.1% of the words of reading/R7487_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "R7486-R7500",
@@ -447,7 +450,7 @@
         "transcription": "transcr/R7491.txt",
         "decryption": "reading/R7491.txt",
         "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 22 May 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
-        "state": "read",
+        "state": "read in part",
         "language": "de",
         "reading": "reading/R7491_reading.md",
         "translation": "reading/R7491_en.md",
@@ -456,7 +459,9 @@
           "by": "Claude Opus 5.5",
           "date": "2026-10-22",
           "note": "Vienna, 22 May 1706. Schenck's letters of 12 and 15 May arrived; Radomsky's Liegnitz proposal; the imperial court's caution towards Sweden; how future letters to [181] are to be named; Herr von Heinisch's thanks; the Viennese newspapers (Mercurius, Diarium); Hagenau lost, Barcelona relieved, Alcantara taken, Galloway before Madrid; the Bishop of Raab's palace; the Emperor back from Laxenburg. Clean share 0.609 (0.674 with dates counted as words). Holes: person codes (181, 187, 190, 122, 134, 231, 233, 262, 349, 81 ...), the signs 3., d., e., c., oo, and a faded P.S. Rests on the transcription transcr/R74xx.txt re-read line by line on the full-resolution DECODE images (22 Oct 2026, corrections in reading/R74xx_corrections.tsv), the letter table of key.py for the runs and the code values of codes_key.json; aligned word by word with the transcription, the corrections and the run decodes (research/reading_audit/b05_align.py), supplied words bracketed. No contemporary decipherment, clear copy or edition exists. Log: reading/R7486-R7496_reread_log.md."
-        }
+        },
+        "read_share": 0.925,
+        "note": "24 Oct 2026: 92.5% of the words of reading/R7491_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "R7486-R7500",
@@ -488,7 +493,7 @@
         "transcription": "transcr/R7494.txt",
         "decryption": "reading/R7494.txt",
         "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 5 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
-        "state": "read",
+        "state": "read in part",
         "language": "de",
         "reading": "reading/R7494_reading.md",
         "translation": "reading/R7494_en.md",
@@ -497,7 +502,9 @@
           "by": "Claude Opus 5.5",
           "date": "2026-10-22",
           "note": "Vienna, 5 June 1706. Progress in Brabant, profitable for King Augustus, a blow to Swedish designs; [187]'s excuses for writing little; [258]'s talk of a rumour about the King; P.S. an enclosure for Court Referendary Pfingsten. Clean share 0.611. Holes: person codes (187, 181, 258, 157, 166, 208, 268 ...), the signs d., e., oo, and three probable words. Rests on the transcription transcr/R74xx.txt re-read line by line on the full-resolution DECODE images (22 Oct 2026, corrections in reading/R74xx_corrections.tsv), the letter table of key.py for the runs and the code values of codes_key.json; aligned word by word with the transcription, the corrections and the run decodes (research/reading_audit/b05_align.py), supplied words bracketed. No contemporary decipherment, clear copy or edition exists. Log: reading/R7486-R7496_reread_log.md."
-        }
+        },
+        "read_share": 0.867,
+        "note": "24 Oct 2026: 86.7% of the words of reading/R7494_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "R7486-R7500",
@@ -511,10 +518,12 @@
           "date": "2026-10-22",
           "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
         },
-        "state": "read",
+        "state": "read in part",
         "language": "de",
         "reading": "reading/R7495_reading.md",
-        "translation": "reading/R7495_en.md"
+        "translation": "reading/R7495_en.md",
+        "read_share": 0.924,
+        "note": "24 Oct 2026: 92.4% of the words of reading/R7495_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "R7486-R7500",
@@ -564,10 +573,12 @@
           "date": "2026-10-22",
           "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
         },
-        "state": "read",
+        "state": "read in part",
         "language": "de",
         "reading": "reading/R7499_reading.md",
-        "translation": "reading/R7499_en.md"
+        "translation": "reading/R7499_en.md",
+        "read_share": 0.917,
+        "note": "24 Oct 2026: 91.7% of the words of reading/R7499_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       },
       {
         "doc": "R7486-R7500",

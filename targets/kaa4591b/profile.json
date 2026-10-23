@@ -241,7 +241,8 @@
   {"date": "2026-10-23", "kind": "transcription", "technique": ["plaintext matching"], "what": "R9417 P2 image has 29 cipher lines; the transcription held 21. Lines 15-29 and P1 read sign by sign on native crops (sysB/R9417_signs_b20.tsv). The decode's 'm for a, e for r' slips were coding slips: on ll. 15-21 the dotted/plain circles and plain/starred crosses had been coded the other way round from the glossed lines 12-14, where the gloss fixes dotted circle a, plain circle m, plain x r, starred x e (the R9403 exchange). R9323 re-read word by word (11 corrections, sysB/R9323_corrections.tsv): l. 3 begins with the Ferdinand word sign; Ƶ = q, I-sign = b, dagger = n.", "result": "worked"},
   {"date": "2026-10-23", "kind": "reading", "technique": ["plaintext matching", "contextual inference"], "what": "Readings and translations written (sysB/R9417_reading.md, R9323_reading.md, _en.md; log sysB/R9417-R9323_reread_log.md); every word carried by its signs or the gloss, doubtful words [?]. b17_score.py la: R9417 0.250 full list / 0.893 explicit holes, R9323 0.111 / 0.889 (the checker's Latin list lacks common words, -cia spellings and names). Both set read, grade B. New content: Minkuics to meet the dukes' envoys at Coburg on 4 July; the Polish king's daughter sought through Sigismund Herberstein for Frederick the Count Palatine; the dukes to ask Charles V to hold back Ferdinand.", "result": "worked"},
   {"date": "2026-10-23", "kind": "control", "technique": ["manual reconstruction"], "what": "v3 verification: R9322 scored on the raw decode sysB/decoded.txt (0.449, slips unmarked). Reading written with every emendation marked (sysB/R9322_reading.md): 0.605 explicit-hole, plain 0.105. Keeps read, marginal.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): the closed item (R9417 and R9323 decoded, not read) was still a bullet in NOTES Remaining gaps, which the checker reads as an open gap without a blocker; restated below the list as Closed. outcome.gaps unchanged (it already lists only the open pieces).", "result": "worked", "technique": ["statistical test"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): the closed item (R9417 and R9323 decoded, not read) was still a bullet in NOTES Remaining gaps, which the checker reads as an open gap without a blocker; restated below the list as Closed. outcome.gaps unchanged (it already lists only the open pieces).", "result": "worked", "technique": ["statistical test"]},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 862, "types": 21, "tokens_per_type": 41.05, "score": -2.091, "nulls": {"random keys": {"n": 200, "mean": -6.002, "sd": 0.527, "max": -4.269, "z": 7.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.757, "sd": 0.045, "max": -3.682, "z": 37.1, "p": 0.1429}}, "power": -2.091, "verdict": "pass", "notes": "claimed per-occurrence score -2.002; polyphony 0.049; 3476 unread tokens left out; annealer on the real text from random keys reached -2.091"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -300,7 +301,12 @@
    {
     "doc": "R9322",
     "label": "R9322, ff. 121-122, Buda 24 Nov 1529",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v3 verification 23 Oct 2026: the sweep scored sysB/decoded.txt (raw word-divided decode with line numbers, all System B letters; 0.449), whose slips are unmarked (fredericua, pdos sent, iomfnes deigrescia eeh, nude posteidie catuaeine). Written as a reading in sysB/R9322_reading.md with every emended word [?word], every doubtful sign [?], garbled runs [...]: 0.605 explicit-hole (23/38 sentence windows, hole rate 0.121), plain 0.105 (small Latin word list). Marginal: f. 121 (Łaski) holds; f. 122 (King John) rests on many one-letter emendations and its date and signature lines do not resolve."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: the sweep scored sysB/decoded.txt (raw word-divided decode with line numbers, all System B letters; 0.449), whose slips are unmarked (fredericua, pdos sent, iomfnes deigrescia eeh, nude posteidie catuaeine). Written as a reading in sysB/R9322_reading.md with every emended word [?word], every doubtful sign [?], garbled runs [...]: 0.605 explicit-hole (23/38 sentence windows, hole rate 0.121), plain 0.105 (small Latin word list). Marginal: f. 121 (Łaski) holds; f. 122 (King John) rests on many one-letter emendations and its date and signature lines do not resolve."
+    },
     "language": "la",
     "transcription": [
      "sysB/R9322_signs.txt",
@@ -310,15 +316,27 @@
     "decryption": "sysB/decoded.txt",
     "summary": "f. 121: Hieronymus Łaski to a Bavarian duke, Buda 24 Nov 1529: the Sultan, forced home by plague in his army, left King John the kingdom of Hungary without tribute, with fifty guns and powder, and will return next summer against Ferdinand's lands unless there is a concord. f. 122: King John of Hungary to Duke Ludwig of Bavaria, sending Lazarus the Jew as envoy.",
     "reading": "sysB/R9322_reading.md",
-    "translation": "sysB/R9322_en.md"
+    "translation": "sysB/R9322_en.md",
+    "read_share": 0.877,
+    "state": "read in part",
+    "note": "24 Oct 2026: 87.7% of the words of sysB/R9322_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R9417",
     "label": "R9417, f. 264, Kraków 16 June [1530]",
-    "state": "read",
+    "state": "read in part",
     "language": "la",
-    "transcription": ["sysB/R9417_signs.txt", "sysB/R9417_p1.tsv", "sysB/R9417_p2.tsv", "sysB/R9417_signs_b20.tsv", "sysB/R9417_corrections.tsv"],
-    "decryption": ["sysB/decoded.txt", "sysB/R9417_reading.md"],
+    "transcription": [
+     "sysB/R9417_signs.txt",
+     "sysB/R9417_p1.tsv",
+     "sysB/R9417_p2.tsv",
+     "sysB/R9417_signs_b20.tsv",
+     "sysB/R9417_corrections.tsv"
+    ],
+    "decryption": [
+     "sysB/decoded.txt",
+     "sysB/R9417_reading.md"
+    ],
     "summary": "Łaski to the dukes' secretary Waisenfelder, Kraków 16 June [1530]: concord best made through the imperial princes; Nicolaus Minkuics sent to the King of France and to meet the dukes' envoys at Coburg on 4 July (the roads were beset); the Sultan, persuaded to a year's truce, will receive whom King John names and will come next summer by land and sea unless there is concord; the King of Poland's daughter: the match starts coldly while someone presses through Sigismund Herberstein for Frederick the Count Palatine; the dukes should send to Charles V to hold back his brother from attacking King John. Signed 'Lask', in his own hand.",
     "reading": "sysB/R9417_reading.md",
     "translation": "sysB/R9417_en.md",
@@ -327,15 +345,24 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b20): P2 ll. 15-29 and P1 read sign by sign at the image; the transcription had stopped at l. 21 and coded the two circle and two cross shapes the other way round from the glossed lines (gloss: dotted circle a, plain circle m, plain x r, starred x e, the R9403 exchange); ll. 1-14 follow the decode and the gloss. Every word carried by its signs or the gloss; 16 doubtful words [?], one owl word sign and one word unread. b17_score.py la: 0.250 (7/28) on the full list (it lacks carissime, arripere, nominabit, -cia spellings, names), explicit holes 0.893 (25/28)."
-    }
+    },
+    "read_share": 0.928,
+    "note": "24 Oct 2026: 92.8% of the words of sysB/R9417_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R9323",
     "label": "R9323, f. 123, [1529-30]",
-    "state": "read",
+    "state": "read in part",
     "language": "la",
-    "transcription": ["sysB/R9323_signs.txt", "sysB/R9323_p1.tsv", "sysB/R9323_corrections.tsv"],
-    "decryption": ["sysB/R9323_decoded.txt", "sysB/R9323_reading.md"],
+    "transcription": [
+     "sysB/R9323_signs.txt",
+     "sysB/R9323_p1.tsv",
+     "sysB/R9323_corrections.tsv"
+    ],
+    "decryption": [
+     "sysB/R9323_decoded.txt",
+     "sysB/R9323_reading.md"
+    ],
     "summary": "Latin note from Łaski's circle to the Bavarian secretary: [FLW] loves the Duke of Bavaria; Łaski wants concord between King John and Ferdinand, for without it Bohemia will perish and the Turks will consume it and Austria; the other princes' lands have nothing to fear by his pact with the Turk unless the Imperial estates aid Ferdinand against [FLW]; the Turks are not to be despised; he would have sent horses to the Sultan; commends himself to the dukes.",
     "reading": "sysB/R9323_reading.md",
     "translation": "sysB/R9323_en.md",
@@ -344,12 +371,19 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b20): re-read word by word at the image; l. 3 begins with the Ferdinand word sign (not an unknown XC), Ƶ = q, the I-sign = b, the dagger = n; 11 transcription corrections (R9323_corrections.tsv). Two faint words of l. 10 unread; three doubtful. b17_score.py la: 0.111 (1/9) on the full list, explicit holes 0.889 (8/9)."
-    }
+    },
+    "read_share": 0.939,
+    "note": "24 Oct 2026: 93.9% of the words of sysB/R9323_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R9403",
     "label": "R9403, ff. 226-228, Łask 17 Sept 1531",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "r9403/decoded.txt read through: continuous Latin (Łaski thanks for the letters brought by Ruffus; the Turk's answer to King Ferdinand's envoys: no peace unless he cedes Hungary to King John) with rare slips; the audit row did not read this letter."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (reading audit)",
+     "date": "2026-10-22",
+     "note": "r9403/decoded.txt read through: continuous Latin (Łaski thanks for the letters brought by Ruffus; the Turk's answer to King Ferdinand's envoys: no peace unless he cedes Hungary to King John) with rare slips; the audit row did not read this letter."
+    },
     "language": "la",
     "transcription": [
      "r9403/signs.txt",
@@ -358,7 +392,8 @@
     "decryption": "r9403/decoded.txt",
     "summary": "Łaski to a councillor of the Bavarian dukes, 17 Sept 1531: the Sultan told Ferdinand's envoys there would be no peace or truce unless Hungary is given up to King John, and is preparing ships, guns and grain on the Danube; Łaski will ride to the Speyer diet and asks the dukes to stop any decision against the king; the royal marriage will be settled with the King of Poland.",
     "reading": "r9403/R9403_reading.md",
-    "translation": "r9403/R9403_en.md"
+    "translation": "r9403/R9403_en.md",
+    "read_share": 0.991
    }
   ],
   "key_file": "sysB/key_from_glosses.tsv"

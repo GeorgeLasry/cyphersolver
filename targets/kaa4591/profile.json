@@ -470,7 +470,8 @@
    "technique": ["statistical test"],
    "what": "v3 verification of System A': the readings put the writer's clear text in [brackets] (scored as supplied words) and unread words as {?} (taken by the scorer for resolved codes, i.e. not counted). Both notations fixed in running texts (research/reading_audit/v3a_kaa.py): R9408 0.676 and R9413 0.663 explicit-hole keep read (marginal); R9410 f. 244r 0.323 and R9410 ff. 246-247 0.368 demoted to decoded, not read.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -557,7 +558,12 @@
    {
     "doc": "R9408",
     "label": "R9408, ff. 236-239, Ofen 8 Feb 1534",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v3 verification 23 Oct 2026: r9408/reading.txt scored 0.55 with the writer's clear Latin in [brackets] read as supplied words. In r9408/R9408_reading.md (clear text as «», and {?} written [?]: the scorer takes {?} for a resolved code and would not count it) the body scores 0.676 explicit-hole (92/136 sentence windows, hole rate 0.107), plain 0.287 (Early New High German). Marginal; holes cluster in P1.01-06, P2.06/25-30, P4.16-28."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: r9408/reading.txt scored 0.55 with the writer's clear Latin in [brackets] read as supplied words. In r9408/R9408_reading.md (clear text as «», and {?} written [?]: the scorer takes {?} for a resolved code and would not count it) the body scores 0.676 explicit-hole (92/136 sentence windows, hole rate 0.107), plain 0.287 (Early New High German). Marginal; holes cluster in P1.01-06, P2.06/25-30, P4.16-28."
+    },
     "language": "de",
     "transcription": [
      "r9408/transcription_v5.txt",
@@ -566,7 +572,10 @@
     "decryption": "r9408/reading.txt",
     "summary": "Jörg Weinmeister (signed in cipher) to the Dukes of Bavaria from Ofen, 8 Feb 1534, with Latin clear passages: his mission, the Turk's power and money, mining (Schmaltz, Reinhart), Katzianer before Kaschau, the priest-bishop Emericus and bad coin with the dukes' stamp; a separate news page on Emperor Sigmund, Constantinople and Syria.",
     "reading": "r9408/R9408_reading.md",
-    "translation": "r9408/R9408_en.md"
+    "translation": "r9408/R9408_en.md",
+    "read_share": 0.897,
+    "state": "read in part",
+    "note": "24 Oct 2026: 89.7% of the words of r9408/R9408_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R9409",
@@ -605,7 +614,12 @@
    {
     "doc": "R9413",
     "label": "R9413, ff. 252-256, June-July 1534",
-    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v3 verification 23 Oct 2026: r9413/reading.txt scored 0.571 (clear text in brackets). In r9413/R9413_reading.md (clear text «», {?} as [?]): 0.663 explicit-hole (57/86 windows, hole rate 0.109), plain 0.267. Marginal; holes cluster in the P1 opening, P3.04-12 and P6-P8."},
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 verification 23 Oct 2026: r9413/reading.txt scored 0.571 (clear text in brackets). In r9413/R9413_reading.md (clear text «», {?} as [?]): 0.663 explicit-hole (57/86 windows, hole rate 0.109), plain 0.267. Marginal; holes cluster in the P1 opening, P3.04-12 and P6-P8."
+    },
     "language": "de",
     "transcription": [
      "r9413/transcription_v4.txt",
@@ -614,7 +628,10 @@
     "decryption": "r9413/reading.txt",
     "summary": "Letters of a Bavarian agent to the dukes, 7 June and July 1534, addressed to secretary Waisenfelder: Cornelius, the French orator Antonius Rincon at Constantinople, Katzianer, the bishop of Wardein before Hunyad, the Württemberg war, an ore sample from near Ofen, the Turk's fleet and the Pressburg diet.",
     "reading": "r9413/R9413_reading.md",
-    "translation": "r9413/R9413_en.md"
+    "translation": "r9413/R9413_en.md",
+    "read_share": 0.912,
+    "state": "read in part",
+    "note": "24 Oct 2026: 91.2% of the words of r9413/R9413_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R9427",

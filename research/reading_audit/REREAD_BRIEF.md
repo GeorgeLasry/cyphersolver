@@ -35,7 +35,7 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
    needs), `[…]` for unread, `[47]` for an unidentified code. **Before you finish, align each reading word by word with
    its decode (and the contemporary text) and bracket every word neither carries**: an unbracketed supplied word is an
    invented word (a spot check found "Il dict depuis" where the figures give "il depuis").
-4. **The bar, applied the same way to every document:** a document is `read` when a reader finds its sentences
+4. **The bar, applied the same way to every document** (24 Oct 2026: a document marked `read` must also meet the README read bar, 95% of its words read as sense; coherent but under 95% is `read in part`, see v10_relabel.py): a document is `read` when a reader finds its sentences
    coherent **and** its reading body (header and notes cut off) scores about 0.60 clean sentences or more on
    `_check_reading.py`; below that it stays `decoded, not read`, with your reading kept as a partial reading and a note.
    **Look-alike alternates:** count the letters that rest on the other member of a look-alike pair rather than the

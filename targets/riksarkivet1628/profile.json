@@ -172,7 +172,8 @@
    "what": "Both letters and the postscript segmented into words, name numbers substituted from the glosses, aligned word by word with the decode (bremen1631_aligned.txt, research/reading_audit/b33_br_build.py: 118 of 132 cipher words exact, 10 clerk's slips read from the gloss, 4 holes, 0 uncarried words), and translated. b17_score de 0.600 plain, 0.843 explicit holes only (before: no reading body, _check_reading 0.477 on the decode). R4330's opening paragraph and one clause stay unbuilt.",
    "result": "worked",
    "technique": ["language-model scoring"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -213,7 +214,7 @@
    "sender or date identified",
    "catalogue correction"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
   "fraction_read_source": "23 Oct 2026, re-reading: the one document (R4330 + R4331) reads, so all 955 figures (_check_profile --measure on bremen_transcription.txt, GLOSS lines removed) are in text that reads; inside it 4 of 132 cipher words and 6 name numbers stay holes (bremen1631_alignment.tsv).",
@@ -240,7 +241,7 @@
     "transcription": "bremen_transcription.txt",
     "decryption": "bremen_decoded.txt",
     "summary": "Two German letters of Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius, Swedish resident at Hamburg, pressing for Swedish succour (foot, dragoons, 'etliche tausend') against Gronsfeld's and Bönninghausen's imperial/League troops in Westphalia; he fears the Lüneburg country will be ravaged and asks that the Stift be included in the accord if the Neuenburg garrison marches out. Both letters are in one file each (R4330 and R4331 image sections).",
-    "state": "read",
+    "state": "read in part",
     "language": "de",
     "reading": "bremen1631_reading.md",
     "translation": "bremen1631_en.md",
@@ -249,7 +250,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Clear German re-read on the DECODE photographs; cipher words decoded with the band key on figures re-read on crops (23 label corrections, bremen1631_corrections.tsv; key unchanged) and aligned word by word (bremen1631_aligned.txt: 132 cipher words, 118 equal to their decode, 10 clerk's slips read from the gloss of the time, 4 holes); name numbers 4, 5, 7, 17, 27, 32, 59, 83 from the glosses. b17 de: 0.600 plain, 0.843 explicit holes only; look-alike letters 8 of ~900 (0.9%). Open: R4330 opening paragraph (one cipher word, a few clear words), codes 18, 19, 31, 82, 86, 42."
-    }
+    },
+    "read_share": 0.931,
+    "note": "24 Oct 2026: 93.1% of the words of bremen1631_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "texts/key.md"

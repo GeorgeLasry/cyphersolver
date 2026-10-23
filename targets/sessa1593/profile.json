@@ -308,7 +308,8 @@
    "technique": ["language-model scoring", "contextual inference"],
    "what": "Verify v8: no. 45 running text (no45_reading.md, from sense.tsv's reading column) scored with v2_score.py: 0.50 explicit holes, 0.357 plain, hole rate 0.158; open nomenclature groups in most sentences, no decipherment of the letter. Back to decoded, not read; fraction_read 0.925 -> 0.750. Gap blocker open-codes renamed no-key-material.",
    "result": "failed"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -412,9 +413,11 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored reading79.md, the older first-pass table (cipher and reading per line; 0.548). The 5 Oct re-transcription's reading column (sense.tsv), joined into running text as no79_reading.md with every unresolved group and every group without a value counted as a hole, scores 0.613 on explicit holes, 0.355 plain (1593 Spanish), hole rate 0.13: just over the bar. The opening, the passage on the election and the passage on Desportes's letter hold; ll. 3-4 (after 'duque de Feria'), l. 9 and ll. 19-21 do not. Rests on the office key (BnF fr. 3995 f. 97) applied to a transcription made here; no contemporary decipherment of no. 79."
     },
-    "state": "read",
+    "state": "read in part",
     "reading": "no79_reading.md",
-    "translation": "no79_en.md"
+    "translation": "no79_en.md",
+    "read_share": 0.875,
+    "note": "24 Oct 2026: 87.5% of the words of no79_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "no47",
@@ -436,7 +439,10 @@
      "note": "sense.tsv gives continuous Spanish prose (the contemporary gloss above lines 1-4, the office key below) with scattered open groups; the audit scored the older reading47.md."
     },
     "reading": "no47_reading.md",
-    "translation": "no47_en.md"
+    "translation": "no47_en.md",
+    "read_share": 0.917,
+    "state": "read in part",
+    "note": "24 Oct 2026: 91.7% of the words of no47_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "key92.tsv"

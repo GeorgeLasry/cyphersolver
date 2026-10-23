@@ -1062,7 +1062,8 @@
    "what": "Verification 3 (v3_below_b): ff. 173, 196v, 124v flagged below 0.60 on the explicit-hole measure. The flag counted the [l. n] line markers and the English headers as holes (and f. 124v was scored together with the unread f. 124r). Reading bodies alone (v3b_body.py): f. 173 0.72 explicit / 0.68 plain; f. 196v 0.885 / 0.73; f. 124v 0.667 / 0.63. Letter-set control (v3b_matignon_sets.py): the hand readings are carried by the figures for 96-97% of their letters, against 45-49% for shuffled words or another leaf's text on the same figures; 13-17% of carried letters rest on a non-first value of a figure's set, against 12% on f. 143v where the clear copy fixes the reading. All three keep read; grade A -> B because none has an outside text.",
    "result": "worked",
    "technique": ["statistical test", "manual reconstruction"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 5 of 14 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -1221,7 +1222,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "the reading follows the contemporary clear copy (Brackx's transcription), read as sentences against the English translation; doubtful words marked (?)."
-    }
+    },
+    "read_share": 0.987
    },
    {
     "doc": "f143v",
@@ -1247,7 +1249,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "the reading follows the contemporary clear copy (Brackx's transcription), read as sentences against the English translation; doubtful words marked (?). Verified word by word 22 Oct 2026 (reading_f143v_tail.md, ll. 26-35): 0 words bracketed, 0 replaced; 1.0 clean on the tail."
-    }
+    },
+    "read_share": 0.987
    },
    {
     "doc": "f150r",
@@ -1264,7 +1267,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "the reading follows the contemporary clear copy (Brackx's transcription), read as sentences against the English translation; doubtful words marked (?)."
-    }
+    },
+    "read_share": 0.968
    },
    {
     "doc": "f150",
@@ -1281,7 +1285,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "the reading follows the contemporary clear copy (Brackx's transcription), read as sentences against the English translation; doubtful words marked (?)."
-    }
+    },
+    "read_share": 0.968
    },
    {
     "doc": "f154",
@@ -1298,7 +1303,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "the reading follows the contemporary clear copy (Brackx's transcription), read as sentences against the English translation; doubtful words marked (?)."
-    }
+    },
+    "read_share": 0.994
    },
    {
     "doc": "f154v",
@@ -1318,7 +1324,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "the reading follows the contemporary clear copy (Brackx's transcription), read as sentences against the English translation; doubtful words marked (?)."
-    }
+    },
+    "read_share": 0.994
    },
    {
     "doc": "f173",
@@ -1330,7 +1337,7 @@
     "decryption": "texts/f173.txt",
     "summary": "To the King, 1586: the credit crisis; no means to pay two musters, the town refuses to contribute on the strength of the King's letters, no one will stand surety, and only merchants of Paris lend on the writer's word.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/reading_f173.md",
     "translation": "texts/reading_f173_en.md",
     "reading_review": {
@@ -1338,7 +1345,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep's 0.535 counted the 33 line markers [l. n] and the English header as holes; the reading body alone (clear opening + cipher, markers and stop code 44 cut, v3b_body.py) scores 0.72 on explicit holes, 0.68 plain, hole rate 0.085. What it rests on: Brackx's figure transcription with 14 labels corrected here on full-resolution crops; the merged Cipher-1 key plus three leaf-only values (oob = ff, fe = r/rr, zu = u/uu); read by hand from the figures' letter sets. No clear copy, no contemporary decipherment, no second reader of the labels. Letter-set freedom (v3b_matignon_sets.py): 96.2% of the reading's letters carried by the figures against 47% for the same words shuffled and 48% for another leaf's text; 13.1% of carried letters rest on a value other than the figure's first, against 12.2% on f. 143v where a clear copy fixes the reading. Grade lowered A -> B: no outside text checks it."
-    }
+    },
+    "read_share": 0.949,
+    "note": "24 Oct 2026: 94.9% of the words of texts/reading_f173.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "f196",
@@ -1358,7 +1367,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, transcribed and read the same day (reading_f196v.md). Verified word by word 22 Oct 2026 against both encipherments (ff. 196 and 201): 0 words bracketed, 0 replaced; 0.794 clean on the body."
-    }
+    },
+    "read_share": 0.954
    },
    {
     "doc": "f201",
@@ -1378,7 +1388,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, transcribed and read the same day (reading_f196v.md). Verified word by word 22 Oct 2026 against both encipherments (ff. 196 and 201): 0 words bracketed, 0 replaced; 0.794 clean on the body."
-    }
+    },
+    "read_share": 0.954
    },
    {
     "doc": "f196v",
@@ -1395,7 +1406,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep's 0.547 counted the line markers [l. n] and the header as holes; the cipher body (ll. 1-36, markers cut) scores 0.885 on explicit holes, 0.73 plain, hole rate 0.049 (with the clear close 0.867). What it rests on: 1,236 figures transcribed here for the first time (one transcriber, no second reader), four new labels and a leaf key key_cipher1_f196v.json; code 63 = apres from f. 201's clear tail; codes 65, 99 open. No clear copy or contemporary decipherment of f. 196v. Letter-set freedom (v3b_matignon_sets.py): 97.4% of letters carried against 47% / 45% for the controls; 16.5% of carried letters on a non-first value (12.2% on the clear-copy leaf f. 143v). Grade lowered A -> B: no outside text checks it."
-    }
+    },
+    "read_share": 0.963
    },
    {
     "doc": "f123r",
@@ -1423,7 +1435,7 @@
     "decryption": "texts/f123v.txt",
     "summary": "The Marmande despatch continued: Turenne back over the Garonne, the relief of places, the army's wants.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/reading_f123.md",
     "translation": "texts/reading_f123_en.md",
     "reading_review": {
@@ -1431,7 +1443,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "f. 123v section of reading_f123.md: 0.66 clean sentences by the scorer, about a third of the failures being period spellings the word list lacks (laquele, demourés, douse); read against the English; about 18 [?] words; 58 label corrections on the image. Verified word by word 22 Oct 2026 (f. 123v section): 0 words bracketed, 0 replaced; 0.656 clean on the section."
-    }
+    },
+    "read_share": 0.942,
+    "note": "24 Oct 2026: 94.2% of the words of texts/reading_f123.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "f124r",
@@ -1459,7 +1473,7 @@
     "decryption": "texts/f124v.txt",
     "summary": "The end of the Marmande despatch.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/reading_f124.md",
     "translation": "texts/reading_f124_en.md",
     "reading_review": {
@@ -1467,7 +1481,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored the whole reading_f124.md (f. 124r, which is decoded, not read, and the header included) with the line markers as holes; the f. 124v section alone (markers cut) scores 0.667 on explicit holes, 0.63 plain, hole rate 0.086 (0.633 with the clear end). Above the bar but close to it. What it rests on: Brackx's transcription with 65 label corrections across ff. 124r-v checked on the image and seven leaf-only letter values (key_cipher1_f124.json); read by hand from the letter sets; codes 60 and 67 open; no clear copy, no contemporary decipherment, no second reader. Letter-set freedom (v3b_matignon_sets.py): 96.8% of letters carried against 49% / 49% for the controls; 15.3% of carried letters on a non-first value (12.2% on the clear-copy leaf f. 143v). Grade lowered A -> B."
-    }
+    },
+    "read_share": 0.941,
+    "note": "24 Oct 2026: 94.1% of the words of texts/reading_f124.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "f110",
@@ -1479,7 +1495,7 @@
     "decryption": "texts/f110.txt",
     "summary": "Mayenne to Villeroy from Villeneuve-d'Agenais, March 1586: on making war without money and what it does to his reputation; the leaf is wholly in cipher.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/reading_f110.md",
     "translation": "texts/reading_f110_en.md",
     "reading_review": {
@@ -1487,7 +1503,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "after three passes on the image (f110_v2/v3 tsv: 131 label changes; leaf key Cl = l/r, sw = s) 0.70 of sentences clean, about 0.77 within the cipher; open: ll. 1-2 (damaged corner), 3-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47. Read against the English. Verified word by word 22 Oct 2026: 1 word bracketed (partly: [?effects] l. 17, the ff not carried), 1 replaced (l. 25 recongnoistre -> congnoistre, the figures have no re-); 0.72 clean on the body (unchanged)."
-    }
+    },
+    "read_share": 0.944,
+    "note": "24 Oct 2026: 94.4% of the words of texts/reading_f110.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "fr15571-f177",
@@ -1500,7 +1518,7 @@
     "decryption": "texts/fr15571-f177.txt",
     "summary": "Forget, 31 December 1585, on Mayenne's design for Gascony: a plan on Pons and Taillebourg, with Taillebourg's toll on the Charente and thirty thousand ecus to be raised from the country, given up when the vicomte de Turenne took the field with guns. The verso (11 lines) continues it.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "reading": [
      "texts/reading_f177.md",
      "brackx2026/copies/f176_f177.txt"
@@ -1511,7 +1529,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "read as sentences against the English; 12 label corrections on the image; checked word by word against the contemporary clear copy on fr. 15571 f. 176r-v (transcribed 22 Oct 2026, brackx2026/copies/f176_f177.txt; texts/reading_f177_vs_copy.md). Verified word by word 22 Oct 2026: 0 words bracketed, 0 replaced; 0.759 clean on the body."
-    }
+    },
+    "read_share": 0.946,
+    "note": "24 Oct 2026: 94.6% of the words of texts/reading_f177.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ]
  }

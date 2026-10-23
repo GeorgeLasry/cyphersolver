@@ -117,18 +117,19 @@
    "date": "2026-09-21"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 156 tokens, 23 types, en-modern order 4: reading -2.561 per letter; random keys -5.845 (z 5.7); key annealed onto shuffled ciphertext best -3.455 (mean -3.608, z 10.4); annealer on the real text -3.13. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R8416 linked to transcription.txt and plaintext.txt; the key table copied verbatim from NOTES.md to texts/key.md", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R8416 linked to transcription.txt and plaintext.txt; the key table copied verbatim from NOTES.md to texts/key.md", "result": "worked"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 156, "types": 23, "tokens_per_type": 6.78, "score": -2.561, "nulls": {"random keys": {"n": 200, "mean": -5.845, "sd": 0.573, "max": -4.347, "z": 5.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.608, "sd": 0.101, "max": -3.455, "z": 10.4, "p": 0.1429}}, "power": -3.13, "verdict": "pass", "notes": "claimed per-occurrence score -2.534; polyphony 0.013; 1 unread tokens left out; annealer on the real text from random keys reached -3.13"}, 
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "The crib was the word 'audensier', spelled out in the clear English of the same page and repeated twice in the cipher as a 9-sign word with matching 4th and 8th signs; 'and', 'the' and 'to' followed and gave the whole alphabet.",
   "contribution": ["transcription", "key recovered", "sender or date identified"],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.98,
   "verification": ["historical consistency", "statistical test"],
   "notes": "Alphabet certain; the word sign read as the King and sigma as l are probable. Agrees with the L&P summary.",
   "texts": [
-   {"doc": "R8416", "label": "R8416, Cotton Galba B V f. 40v, Spinelly to Henry VIII, Brussels, 1 Feb 1517", "transcription": "transcription.txt", "decryption": "plaintext.txt", "summary": "The one cipher passage in Thomas Spinelly's clear despatch from the Low Countries: the Audiencier and Luigi Marliano (misser Loys de Merlien) report that the King (Charles) will make his entry into Brussels at the end of the week and that the Emperor Maximilian will go to Cambrai about the 15th of the month. Letters and Papers II 2862 had summarised only the Cambrai sentence.", "language": "en"}
+   {"doc": "R8416", "label": "R8416, Cotton Galba B V f. 40v, Spinelly to Henry VIII, Brussels, 1 Feb 1517", "transcription": "transcription.txt", "decryption": "plaintext.txt", "summary": "The one cipher passage in Thomas Spinelly's clear despatch from the Low Countries: the Audiencier and Luigi Marliano (misser Loys de Merlien) report that the King (Charles) will make his entry into Brussels at the end of the week and that the Emperor Maximilian will go to Cambrai about the 15th of the month. Letters and Papers II 2862 had summarised only the Cambrai sentence.", "language": "en", "read_share": 0.927, "state": "read in part", "note": "24 Oct 2026: 92.7% of the words of plaintext.txt read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."}
   ],
   "key_file": "texts/key.md"
  }

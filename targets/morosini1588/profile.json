@@ -291,7 +291,8 @@
    "what": "r2p: the hole check finished for the 31 records r2m had not done (R17-R22, R27 rest, R28-R34, R36-R38, R39 rest, R40 rest, R41-R48, R52, R56, R57 rest, R58). Every hole of every reading located on its transcription line (research/reading_audit/r2p_holes.py, an extension of reread_b00_align.py), the lines looked at on the DECODE images (cached in the session scratchpad; line sheets by r2p_sheet.py, page-to-image map for R30), cancellation strokes looked for, the figures enumerated under Meister no. 40 (r2p_parseall.py, the r2d_mparse.py enumeration). About 100 holes filled where every figure carries the word: chiefly the lone 'o' that was supplied as '[I]o' (the figures are 8 7 191, a single null 8 then io, in R19, R20, R39, R41, R43), image corrections of DECODE's figures (R18 Aragone, R19 come/se/medesmo, R20 se, R21 in stato, R29 qui, R36 diseminando, R43 come), spurious dots (R45 incapace), plain-figure dates (R37 17, R57 16), words read wrongly before (R19 'Per questo io non manco', R20 'A che io disi', R32 'era uenuta molto a tempo'), and cancellations: R18's repeated 'contrauenire' is struck through and left out, R46 383r has a struck figure where a hole stood. Show-through from the verso on R22 and R28-R34 looks like crossing-out but was not treated as cancellation. The remaining holes (about 490 log lines) each carry a blocker: no-key-material (figures clear, no parse fits, or nothing written: about 350), illegible (blots, paper holes, spread ink: about 90), too-short (about 60), needs-physical-access (2: R17's missing leaves). Scores (v2_score, plain / explicit holes) rise or hold on every record: e.g. R19 0.718/0.94 -> 0.735/0.974, R20 0.649/0.956 -> 0.69/0.982, R32 0.522/0.80 -> 0.544/0.822, R57 0.509/0.849 -> 0.509/0.868; none falls. Logs: texts/<R>_reread_log.md, r2p blocks.",
    "result": "partial",
    "technique": ["manual reconstruction", "contextual inference", "language-model scoring"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 35 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -389,7 +390,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 72 transcription corrections or re-parses in texts/R18_corrections.tsv (2 checked on the image, 17 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 4 unread stretches, 4 partly carried words, 1 unidentified codes. _check_reading.py on the reading body 0.808 (was 0.715 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.982
    },
    {
     "doc": "meister40-set",
@@ -406,7 +408,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 52 transcription corrections or re-parses in texts/R19_corrections.tsv (3 checked on the image, 11 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 11 unread stretches, 16 partly carried words, 2 unidentified codes. _check_reading.py on the reading body 0.739 (was 0.672 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.983
    },
    {
     "doc": "meister40-set",
@@ -423,7 +426,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 48 transcription corrections or re-parses in texts/R20_corrections.tsv (2 checked on the image, 6 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 11 unread stretches, 12 partly carried words, 1 unidentified codes. _check_reading.py on the reading body 0.684 (was 0.626 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Pages run together in the DECODE transcription; split by sense and image (88r-90r, then 87r-v). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 5 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.984
    },
    {
     "doc": "meister40-set",
@@ -440,7 +444,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 33 transcription corrections or re-parses in texts/R21_corrections.tsv (2 checked on the image, 7 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 5 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.702 (was 0.684 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.988
    },
    {
     "doc": "meister40-set",
@@ -457,7 +462,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 96 transcription corrections or re-parses in texts/R22_corrections.tsv (1 checked on the image, 39 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 19 unread stretches, 8 partly carried words. _check_reading.py on the reading body 0.714 (was 0.582 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 3 words bracketed, 1 replaced."
-    }
+    },
+    "read_share": 0.971
    },
    {
     "doc": "meister40-set",
@@ -474,7 +480,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.579, explicit holes 0.842 (16th-century Italian: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: the fragment builds its sentences (Epernon's governments, the Guises' dealings with England, Navarre, Casimir and Montmorency, Morosini's hopeless mediation); 2 unread stretches and 4 partly carried words; image checks of 137r l. 13 and 137v l. 3 (23 Oct) show the figures as transcribed (encipherer's slips). Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R27_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R27_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
-    }
+    },
+    "read_share": 0.956
    },
    {
     "doc": "meister40-set",
@@ -491,7 +498,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 57 transcription corrections or re-parses in texts/R28_corrections.tsv (3 checked on the image, 19 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 9 unread stretches, 13 partly carried words. _check_reading.py on the reading body 0.674 (was 0.567 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.971
    },
    {
     "doc": "meister40-set",
@@ -508,7 +516,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 45 transcription corrections or re-parses in texts/R29_corrections.tsv (2 checked on the image, 17 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 6 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.587 (was 0.5 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.973
    },
    {
     "doc": "meister40-set",
@@ -525,7 +534,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 58 transcription corrections or re-parses in texts/R30_corrections.tsv (0 checked on the image, 25 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 12 unread stretches, 3 partly carried words. _check_reading.py on the reading body 0.675 (was 0.646 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Reading order 162v, 162r, 161v, 161r, 160r (leaves bound reversed). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.979
    },
    {
     "doc": "meister40-set",
@@ -542,7 +552,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 51 transcription corrections or re-parses in texts/R31_corrections.tsv (2 checked on the image, 16 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 5 unread stretches, 9 partly carried words, 1 unidentified codes. _check_reading.py on the reading body 0.742 (was 0.617 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Reading order 173r-174v, then 172r-v. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 3 words bracketed, 1 replaced."
-    }
+    },
+    "read_share": 0.969
    },
    {
     "doc": "meister40-set",
@@ -550,7 +561,7 @@
     "transcription": "decode/DOC_R32_D1696_1696.txt",
     "decryption": "texts/R32_decryption.txt",
     "summary": "Savoy is keeping Saluzzo and is suspected of designs on Marseille. M. de Poigny is sent to the Duke to demand restitution. Morosini protests over Cardinal Lenoncourt's indult and over church revenues in the Cambrai truce, and the Queen Mother answers him.",
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "reading": "texts/R32_reading.md",
     "translation": "texts/R32_en.md",
@@ -559,7 +570,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 49 transcription corrections or re-parses in texts/R32_corrections.tsv (0 checked on the image, 29 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 28 unread stretches, 20 partly carried words, 4 unidentified codes. _check_reading.py on the reading body 0.581 (was 0.524 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. 181r-v corroded by the ink: most holes are there (crops could not settle single figures). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.938,
+    "note": "24 Oct 2026: 93.8% of the words of texts/R32_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "meister40-set",
@@ -567,7 +580,7 @@
     "transcription": "decode/DOC_R33_D1697_1697.txt",
     "decryption": "texts/R33_decryption.txt",
     "summary": "The King referred the council to the clergy's congregation. There the chapters, bishops and others quarrelled over exemptions, and they finally asked for publication with four reservations (royal authority, Gallican liberty, chapter exemptions, particular privileges). Morosini argued that it must be published without conditions.",
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "reading": "texts/R33_reading.md",
     "translation": "texts/R33_en.md",
@@ -576,7 +589,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 89 transcription corrections or re-parses in texts/R33_corrections.tsv (2 checked on the image, 30 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 13 unread stretches, 17 partly carried words. _check_reading.py on the reading body 0.716 (was 0.511 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 12 words bracketed, 1 replaced."
-    }
+    },
+    "read_share": 0.948,
+    "note": "24 Oct 2026: 94.8% of the words of texts/R33_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "meister40-set",
@@ -593,7 +608,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 61 transcription corrections or re-parses in texts/R34_corrections.tsv (0 checked on the image, 23 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 14 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.753 (was 0.624 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. 199v ll. 18-19 under show-through and a hole in the paper. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.97
    },
    {
     "doc": "meister40-set",
@@ -601,7 +617,7 @@
     "transcription": "decode/DOC_R35_D1699_1699.txt",
     "decryption": "texts/R35_decryption.txt",
     "summary": "Copy, in Spanish, of a memorandum (\"scritura\") the Spanish ambassador gave the Queen Mother: Philip II answers her wish to see the two crowns in close friendship and good understanding, praises it as worthy of the mother of two kings, and urges union against the heretics. Not a letter of Philip II (the Italian heading in cipher says so).",
-    "state": "read",
+    "state": "read in part",
     "language": "es",
     "translation": "texts/R35_en.md",
     "reading": "texts/R35_reading.md",
@@ -610,7 +626,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.477, explicit holes 0.841 (16th-century Spanish: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: the Spanish ambassador's memorandum builds sentences in large part; 17 unread stretches in 507 words, one at a hole in the paper (202v l. 8, seen on the image 23 Oct) and the last line on damaged paper; early Spanish, so the explicit-hole share is the bar. Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R35_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R35_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
-    }
+    },
+    "read_share": 0.925,
+    "note": "24 Oct 2026: 92.5% of the words of texts/R35_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "meister40-set",
@@ -627,7 +645,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 39 transcription corrections or re-parses in texts/R36_corrections.tsv (0 checked on the image, 19 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 14 unread stretches, 5 partly carried words. _check_reading.py on the reading body 0.721 (was 0.687 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.966
    },
    {
     "doc": "meister40-set",
@@ -644,7 +663,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 44 transcription corrections or re-parses in texts/R37_corrections.tsv (1 checked on the image, 13 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 4 unread stretches, 3 partly carried words. _check_reading.py on the reading body 0.731 (was 0.567 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 2 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.977
    },
    {
     "doc": "meister40-set",
@@ -661,7 +681,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 94 transcription corrections or re-parses in texts/R38_corrections.tsv (2 checked on the image, 45 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 16 unread stretches, 11 partly carried words. _check_reading.py on the reading body 0.649 (was 0.311 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. The weakest DECODE transcription of the series (a third of the groups carry a spurious dot); only 282r ll. 1-7 compared with the image. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 11 words bracketed, 5 replaced."
-    }
+    },
+    "read_share": 0.957
    },
    {
     "doc": "meister40-set",
@@ -678,7 +699,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 13 transcription corrections or re-parses in texts/R39_corrections.tsv (0 checked on the image, 5 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 6 unread stretches, 2 partly carried words. _check_reading.py on the reading body 0.688 (was 0.694 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.969
    },
    {
     "doc": "meister40-set",
@@ -695,7 +717,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 32 transcription corrections or re-parses in texts/R40_corrections.tsv (0 checked on the image, 11 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 8 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.585 (was 0.619 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.962
    },
    {
     "doc": "meister40-set",
@@ -712,7 +735,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 37 transcription corrections or re-parses in texts/R41_corrections.tsv (0 checked on the image, 14 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 3 unread stretches, 5 partly carried words. _check_reading.py on the reading body 0.807 (was 0.683 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.987
    },
    {
     "doc": "meister40-set",
@@ -729,7 +753,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 40 transcription corrections or re-parses in texts/R42_corrections.tsv (0 checked on the image, 9 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 16 unread stretches, 8 partly carried words, 1 unidentified codes. _check_reading.py on the reading body 0.727 (was 0.435 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Noisiest transcription (systematic 1/2 and 8/5 errors); no image crops; context corrections unchecked. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.961
    },
    {
     "doc": "meister40-set",
@@ -746,7 +771,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 40 transcription corrections or re-parses in texts/R43_corrections.tsv (1 checked on the image, 7 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 14 unread stretches, 7 partly carried words. _check_reading.py on the reading body 0.725 (was 0.581 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Reading order 308r-309v, then 307r-v. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 2 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.974
    },
    {
     "doc": "meister40-set",
@@ -763,7 +789,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 35 transcription corrections or re-parses in texts/R44_corrections.tsv (3 checked on the image, 8 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 8 unread stretches, 2 partly carried words. _check_reading.py on the reading body 0.771 (was 0.709 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 1 replaced."
-    }
+    },
+    "read_share": 0.974
    },
    {
     "doc": "meister40-set",
@@ -780,7 +807,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 62 transcription corrections or re-parses in texts/R45_corrections.tsv (0 checked on the image, 16 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 4 unread stretches, 8 partly carried words. _check_reading.py on the reading body 0.822 (was 0.724 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Reading order from the catchwords: 359r, 359v, 360r, 360v, 358r, 358v, 361r, 361v, 357r (one letter). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 2 words bracketed, 2 replaced."
-    }
+    },
+    "read_share": 0.988
    },
    {
     "doc": "meister40-set",
@@ -797,7 +825,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 64 transcription corrections or re-parses in texts/R46_corrections.tsv (2 checked on the image, 22 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 10 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.81 (was 0.69 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. A leaf is missing between 382v and 383r (catchword \"[u]alor\" does not match); DECODE line 12 of 382r re-read from the image (texts/R46_transcription_corrected.txt). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.979
    },
    {
     "doc": "meister40-set",
@@ -814,7 +843,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 49 transcription corrections or re-parses in texts/R47_corrections.tsv (0 checked on the image, 12 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 3 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.862 (was 0.683 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Reading order 386r-v, then 385r-v; the leaf after 385v is missing. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 2 replaced."
-    }
+    },
+    "read_share": 0.982
    },
    {
     "doc": "meister40-set",
@@ -831,7 +861,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 73 transcription corrections or re-parses in texts/R48_corrections.tsv (0 checked on the image, 19 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 11 unread stretches, 7 partly carried words. _check_reading.py on the reading body 0.729 (was 0.642 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. No image checks. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 1 replaced."
-    }
+    },
+    "read_share": 0.983
    },
    {
     "doc": "meister40-set",
@@ -848,7 +879,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 17 transcription corrections or re-parses in texts/R49_corrections.tsv (1 checked on the image, 6 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 3 unread stretches, 1 partly carried words. _check_reading.py on the reading body 0.588 (was 0.684 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.977
    },
    {
     "doc": "meister40-set",
@@ -865,7 +897,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.541, explicit holes 0.973 (16th-century Italian: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: Tours, 27 March 1589: Soissons' skirmish, Henri III's words at supper, Orleans and Amiens, Mayenne's artillery, Navarre's conquests in Poitou; 466v l. 8 re-read on the image ('la quale, che so, non era ancora montata'), 466r l. 3 opening confirmed as transcribed and unparsed. Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R51_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R51_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
-    }
+    },
+    "read_share": 0.981
    },
    {
     "doc": "meister40-set",
@@ -882,7 +915,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 74 transcription corrections or re-parses in texts/R52_corrections.tsv (1 checked on the image, 9 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 9 unread stretches, 3 partly carried words. _check_reading.py on the reading body 0.645 (was 0.517 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.98
    },
    {
     "doc": "meister40-set",
@@ -899,7 +933,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 29 transcription corrections or re-parses in texts/R55_corrections.tsv (0 checked on the image, 5 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 4 unread stretches, 3 partly carried words. _check_reading.py on the reading body 0.727 (was 0.588 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.982
    },
    {
     "doc": "meister40-set",
@@ -916,7 +951,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 40 transcription corrections or re-parses in texts/R56_corrections.tsv (0 checked on the image, 7 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 4 unread stretches, 3 partly carried words. _check_reading.py on the reading body 0.803 (was 0.616 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.984
    },
    {
     "doc": "meister40-set",
@@ -933,7 +969,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.481, explicit holes 0.846 (16th-century Italian: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: Moulins enclosures of June 1589 (the reiters' march, Montbeliard, Langres, the sums lent, Semur): 9 unread stretches and partly carried numbers; 524r ll. 14-15 checked on the image, transcribed as written. Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R57_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R57_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
-    }
+    },
+    "read_share": 0.95
    },
    {
     "doc": "meister40-set",
@@ -950,7 +987,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 58 transcription corrections or re-parses in texts/R58_corrections.tsv (0 checked on the image, 12 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 6 unread stretches, 5 partly carried words. _check_reading.py on the reading body 0.765 (was 0.598 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 3 replaced."
-    }
+    },
+    "read_share": 0.981
    },
    {
     "doc": "R17",
@@ -970,7 +1008,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 52 transcription corrections or re-parses in texts/R17_corrections.tsv (3 checked on the image, 13 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 7 unread stretches, 5 partly carried words. _check_reading.py on the reading body 0.75 (was 0.937 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Pages 233r, 234r-235v (233v not imaged, so 234r starts mid-sentence). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    }
+    },
+    "read_share": 0.982
    }
   ],
   "parts": [

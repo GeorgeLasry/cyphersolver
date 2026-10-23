@@ -107,7 +107,8 @@
     {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): the normalized interlinear (texts/mnl-g15-d80-f38_decryption.md) read through: paragraphs 1-2 build Hungarian sentences (kept read, reviewed B); paragraphs 3-4 are mostly [...] holes, split into a second entry marked decoded, not read (the interlinear hand overlaps the cipher). fraction_read 0.8 -> 0.5 (estimated).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
     {"date": "2026-10-23", "kind": "verification", "what": "Re-read brief b28, step 1: DECODE R496, R533, R534 re-fetched with the cookie (b28_fetch.py): no DOC_ attachment or comment; the text of paragraphs 3-4 is the contemporary interlinear on the leaf, legible at 2-3x on IMG_R496_I3689_P1.", "result": "worked"},
     {"date": "2026-10-23", "kind": "transcription", "what": "Paragraphs 3-4 (and the end of paragraph 2): interlinear transcribed as written and the cipher under it decoded sign by sign with the alphabet fixed by the interlinear of paragraphs 1-2 (texts/mnl-g15-d80-f38_p3-4_cipher.tsv, 9 rows, 51 words). Figures correct the interlinear: 'Magyar' -> jancsarsag, 'twrbabo' -> turbatio, 'naltatnak' -> componalodnak, 'zenenkedem' -> remenkedem; 'Felsegednek' -> Felsegedet.", "result": "worked"},
-    {"date": "2026-10-23", "kind": "verification", "what": "Reading of paragraphs 3-4 aligned word by word with the decode (every word carried; 4 [?]; 6 look-alike letters); score 0.000 on the modern Hungarian list (unaccented 1700s spelling), 0.833 explicit holes; sentences hold. Entry set read, grade A.", "result": "worked", "technique": ["language-model scoring"]}
+    {"date": "2026-10-23", "kind": "verification", "what": "Reading of paragraphs 3-4 aligned word by word with the decode (every word carried; 4 [?]; 6 look-alike letters); score 0.000 on the modern Hungarian list (unaccented 1700s spelling), 0.833 explicit holes; sentences hold. Entry set read, grade A.", "result": "worked", "technique": ["language-model scoring"]},
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -130,15 +131,21 @@
         "summary": "Mihály Hentér, Rákóczi's envoy at Constantinople, to Ferenc Rákóczi II, 8 July 1707: the pasha of Belgrade received Rákóczi's gift favourably and offered troops, gunpowder and grain if Rákóczi sent six or seven thousand men against the Serbs; Hentér pressed for the deputation to be heard by the grand vizier, whose audience was delayed amid confusion in the capital; he closes with a request about the liberation of a captive.",
         "note": "Decryption = the interlinear Hungarian, normalized, copied from NOTES.md; some middle clauses are uncertain or unread (need a Hungarian palaeographer). No transcription of the cipher signs (project work); the archive does not allow the scans to be republished. This entry: paragraphs 1-2 (the Belgrade pasha's offer, the audience sought for the deputation), which read.",
         "language": "hu",
-        "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Paragraphs 1-2 of the normalized interlinear read as Hungarian sentences (the pasha received the gift and offers help with troops, powder and grain; Hentér sought an audience for the deputation before the grand vizier) with two bracketed uncertain phrases. Paragraphs 3-4 are mostly [...] and are split off as decoded, not read."},
-        "translation": "texts/mnl-g15-d80-f38_p1-2_en.md"
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude (reading audit)",
+          "date": "2026-10-22",
+          "note": "Paragraphs 1-2 of the normalized interlinear read as Hungarian sentences (the pasha received the gift and offers help with troops, powder and grain; Hentér sought an audience for the deputation before the grand vizier) with two bracketed uncertain phrases. Paragraphs 3-4 are mostly [...] and are split off as decoded, not read."
+        },
+        "translation": "texts/mnl-g15-d80-f38_p1-2_en.md",
+        "read_share": 0.98
       },
       {
         "doc": "mnl-g15-d80-f38",
         "label": "R496, paragraphs 3-4 (the delayed audience, the captive, the closing)",
         "decryption": "texts/mnl-g15-d80-f38_p3-4_reading.md",
         "language": "hu",
-        "state": "read",
+        "state": "read in part",
         "translation": "texts/mnl-g15-d80-f38_p3-4_en.md",
         "transcription": "texts/mnl-g15-d80-f38_p3-4_cipher.tsv",
         "summary": "The audience would have been granted, but a disturbance (turbatio) broke out among the Janissaries; as the chief officials are being changed, Hentér must wait until matters settle; the audience was solicited twice more and the answer was 'habeant patientiam, vocabuntur ad praesentandas literas'; he is hopeful about the liberation of Rákóczi's captive and closes as his humble servant.",
@@ -147,7 +154,9 @@
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
           "note": "Contemporary interlinear decipherment read on the DECODE image at 2-3x and checked word by word against the cipher decoded with the alphabet fixed by paragraphs 1-2 (cipher tsv); the figures correct the interlinear at four places (jancsarsag, turbatio, componalodnak, remenkedem). 6 letters on look-alike signs, 4 words [?]. Clean share 0.000 on the modern Hungarian list, 0.833 explicit holes (b17_score.py HOLES=1); the sentences hold."
-        }
+        },
+        "read_share": 0.939,
+        "note": "24 Oct 2026: 93.9% of the words of texts/mnl-g15-d80-f38_p3-4_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
       }
     ]
   }

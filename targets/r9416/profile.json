@@ -224,12 +224,16 @@
     "language": "de",
     "note": "Excerpt only: recto lines 11-16 are counted as read (reading_p3_11-16.txt, 199 of 3,313 codes). 23 Oct 2026 (r2h): the whole leaf now has a partial reading, r9416/f263_reading.md (English f263_en.md; key f263_key.md; log f263_reread_log.md), every line checked on the full-resolution image, with the faint contemporary gloss over recto 1-12 and the last verso lines transcribed (f263_gloss.txt; it names three codes: fg = E. F. G., Khö = the King, Ferd). Explicit-hole share 0.775 (55/71), plain 0.465, but 117 of 2,738 letters (4.2%; 3.9% outside the glossed lines) rest on the second value of a multi-valued sign chosen by the word (b d/l, z e/s, p b/w, K k/b), above the 3% look-alike limit with no contemporary text to confirm them: the leaf beyond lines 11-16 stays decoded, not read. The report is dated in its last line: Datum Ofen (Buda), 12 March.",
     "reading": "r9416/f263_r11-16_reading.md",
-    "translation": "r9416/f263_r11-16_en.md"
+    "translation": "r9416/f263_r11-16_en.md",
+    "read_share": 1.0
    },
    {
     "doc": "R9416",
     "label": "f.262 (pp. 1-2), servant's letter to his duke, 'eritags nach Jacobi'",
-    "decryption": ["r9416/f262_reading.md", "r9416/gloss.txt"],
+    "decryption": [
+     "r9416/f262_reading.md",
+     "r9416/gloss.txt"
+    ],
     "summary": "A Bavarian servant to his duke, Tuesday after St James (c. 1533-34): he could not get through Austria and Styria, where troops are quartered everywhere and a messenger was struck down, nor through Silesia and Poland because of Minckwitz and other dangers; Italian and Spanish foot are to move through Styria and down the Danube into Hungary; the duke should have sent Bartlen von Eschlkam; four thousand Turks are said to be out under cover of an embassy, sparing neither friend nor foe; he means to travel on, pursue dealings begun through a lord, claim seven years' pension, and asks for fifty gulden as Oberrichter at Straubing. Page A read from its signs with the key rebuilt from the contemporary gloss of page B; page B follows the gloss.",
     "language": "de",
     "state": "read",
@@ -241,7 +245,8 @@
      "date": "2026-10-23",
      "note": "r9416/f262_reading.md: page A (25 lines, including the three unglossed A09-A11) read sign by sign on the full-resolution DECODE image with the key rebuilt letter for letter from the contemporary interlinear decipherment of page B (r9416/f262_key.md; B01-B07 checked against the signs); page B follows that decipherment. The signs correct the earlier gloss transcription in six places (A03, A13, A16, A18, A19, A22). Reading body 0.852 (23/27) on explicit holes with code signs counted as holes, 0.444 plain (early New High German spelling). Look-alike letters about 2% (the w/b/p and u/o shape families, read by sense). Open: codes X, ⊼ and a G-sign, and eight bracketed words. Verified 23 Oct 2026 (reading audit v2): f. 262 transcribed sign by sign (r9416/f262_signs.txt, 1,498 signs, both pages) and re-decoded with f262_key.md (research/reading_audit/v2_r9416_f262_dec.py); the decode was aligned word by word with the reading and 17 words changed to what the signs give (zuziehen, unter, bot, 'es sein solt' for 'es lern solt', polen, italische, wolt, gestolen, verner for an unread word, mag for [?wag], guldin, unterteniglich ...; two code signs and 'her' the gloss skipped added in B09/B12; [?gefallen], [?dinst] bracketed). Reading body now 0.963 (26/27) on explicit holes, 0.481 plain; before 0.852 / 0.444."
     },
-    "transcription": "r9416/f262_signs.txt"
+    "transcription": "r9416/f262_signs.txt",
+    "read_share": 0.958
    }
   ],
   "key_file": [

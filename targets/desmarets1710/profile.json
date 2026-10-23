@@ -144,10 +144,11 @@
    "result": "worked",
    "date": "2026-10-09"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked transcription.txt (471 groups with the interlinear French) and reading.txt (the continuous-stream reading with Tomokiyo's table, open groups marked).", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked transcription.txt (471 groups with the interlinear French) and reading.txt (the continuous-stream reading with Tomokiyo's table, open groups marked).", "result": "worked"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "method": "read with known key",
   "method_basis": "Tomokiyo's published reconstruction of the 1710 code, derived from this letter, applied to the 471 groups read as one stream.",
@@ -184,7 +185,7 @@
     {"who": "yuanyi", "role": "pointer", "note": "issue #28: Tomokiyo's 1710 table and the continuous-stream reading", "date": "2026-10-09", "source": "https://github.com/dbourdeau/cyphersolver/issues/28"}
   ],
   "texts": [
-   {"doc": "R10198", "label": "R10198, Marly 4 June 1710", "transcription": "transcription.txt", "decryption": "reading.txt", "summary": "Nicolas Desmarets, Controller General of Finances, writes from Marly on 4 June 1710 to an unnamed \"Monsieur\": the King wants peace, a safe peace, but means to protect \"l'honneur du gouvernement\"; further demands must not reach \"demembrements entiers\"; the powers sent are wide enough, and the relaxation \"peut produire la paix\".", "reading": "texts/R10198_reading.md", "translation": "texts/R10198_en.md", "language": "fr"}
+   {"doc": "R10198", "label": "R10198, Marly 4 June 1710", "transcription": "transcription.txt", "decryption": "reading.txt", "summary": "Nicolas Desmarets, Controller General of Finances, writes from Marly on 4 June 1710 to an unnamed \"Monsieur\": the King wants peace, a safe peace, but means to protect \"l'honneur du gouvernement\"; further demands must not reach \"demembrements entiers\"; the powers sent are wide enough, and the relaxation \"peut produire la paix\".", "reading": "texts/R10198_reading.md", "translation": "texts/R10198_en.md", "language": "fr", "read_share": 0.938, "state": "read in part", "note": "24 Oct 2026: 93.8% of the words of texts/R10198_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."}
   ]
  }
 }

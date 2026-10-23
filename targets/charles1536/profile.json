@@ -96,7 +96,13 @@
    {
     "doc": "R9957",
     "label": "Charles V to the Empress Isabella, Borgo San Donnino, 17 May 1536",
-    "transcription": ["texts/R9957_runs_A.md", "texts/R9957_runs_B.md", "texts/R9957_runs_C.md", "texts/R9957_decifrado_f274.txt", "texts/R9957_key169.md"],
+    "transcription": [
+     "texts/R9957_runs_A.md",
+     "texts/R9957_runs_B.md",
+     "texts/R9957_runs_C.md",
+     "texts/R9957_decifrado_f274.txt",
+     "texts/R9957_key169.md"
+    ],
     "decryption": "texts/R9957_reading.md",
     "summary": "Charles V, on his way north from Rome, writes to the Empress Isabella with long cipher passages on Spain's frontier defences and the coming war with France: 25-30,000 German troops for Italy, more raised in Germany and Flanders, the Count of Nassau entering France from the Luxembourg side, and the diversion of the French King's forces. The full decipherment is Wanruo Luo's, printed in her thesis El lenguaje cifrado de Isabel de Portugal (1530-1539) (Universitat de València 2021) p. 287 with the key AGS Estado leg. 1.1.1 doc. 169; cryptiana spanish2C cites it.",
     "state": "read",
@@ -108,7 +114,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b18): the cipher runs of ff. 270r-273v read sign by sign from the DECODE images under the key AGS Estado leg. 1.1.1 doc. 169 (as reproduced by Luo 2021, pp. 603-606; texts/R9957_key169.md), sign transcriptions and decodes in texts/R9957_runs_A/B/C.md; the last passage (ff. 273v-274r) from its contemporary decipherment on f. 274r (texts/R9957_decifrado_f274.txt). Luo's edition (pp. 287-290, in copyright) used only as a check, cited not copied; 14 places where the figures differ from her text are followed. Reading body 0.629 clean sentences on _check_reading.py, 0.953 on explicit holes (the word list lacks the period spelling). Open: a tear and one unreadable group in run 1, run B16 (about 14 signs on stamp 0009, no sentence), parts of the dense blocks on stamp 0011, a faded fold on 0013."
-    }
+    },
+    "read_share": 0.975
    },
    {
     "doc": "R9952",
@@ -125,7 +132,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b18): the contemporary decipherment on ff. 13-14 bis ('del Emperador a Su Al.') transcribed line by line (texts/R9952_decifrado_ff13-14.txt) and checked against the figures of ff. 10-12: every clear word left inside the cipher runs and Tomokiyo's code words (go para, pi enemigo, xu dinero) stand in the same order and place; one disagreement (figures 'dexandolo', decipherer 'dexando'), the figures followed. No key of this cipher in the repository, so the runs between the clear words are not checked sign by sign. Reading body 0.683 clean sentences, 1.00 on explicit holes."
-    }
+    },
+    "read_share": 0.996
    }
   ],
   "gaps": [

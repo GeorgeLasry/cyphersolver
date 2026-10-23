@@ -71,7 +71,8 @@
   {"date": "2026-09-16", "kind": "verification", "what": "d'Herleville reading matches its printed translation; Feuquières text matches Catinat's Veillane memoir of 19 Jan.", "result": "worked"},
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 586 tokens, 167 types, fr-grand-siecle order 4: reading -2.078 per letter; random keys -3.514 (z 11.0); key annealed onto shuffled ciphertext best -2.271 (mean -2.295, z 12.8); annealer on the real text -2.27. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions ciphertext.txt and herleville.txt; decryptions and the English translation copied from NOTES.md to texts/, beside the group alignment reading.txt; key key_petit_chiffre_1690.tsv", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): reading bodies cut out of the decryption files into texts/feuquieres1691_reading.md and texts/herleville1690_reading.md. Feuquières letter 0.545 plain and explicit (6/11 sentences; twelve unread singleton groups): demoted to decoded, not read, gap no-key-material; fraction_read 0.975 -> 0.304 (d'Herleville 183 of 601 tokens), class read -> read in part. d'Herleville letter (control) 0.667 plain, 0.833 explicit, with its printed contemporary translation: keeps read.", "result": "failed"}
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): reading bodies cut out of the decryption files into texts/feuquieres1691_reading.md and texts/herleville1690_reading.md. Feuquières letter 0.545 plain and explicit (6/11 sentences; twelve unread singleton groups): demoted to decoded, not read, gap no-key-material; fraction_read 0.975 -> 0.304 (d'Herleville 183 of 601 tokens), class read -> read in part. d'Herleville letter (control) 0.667 plain, 0.833 explicit, with its printed contemporary translation: keeps read.", "result": "failed"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-grand-siecle", "file": "validation.tsv", "tokens": 586, "types": 167, "tokens_per_type": 3.51, "score": -2.078, "nulls": {"random keys": {"n": 200, "mean": -3.514, "sd": 0.131, "max": -3.211, "z": 11.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.295, "sd": 0.017, "max": -2.271, "z": 12.8, "p": 0.1429}}, "power": -2.27, "verdict": "pass", "notes": "claimed per-occurrence score -2.078; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.27"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -120,7 +121,9 @@
     },
     "language": "fr",
     "reading": "texts/herleville1690_reading.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.918,
+    "note": "24 Oct 2026: 91.8% of the words of texts/herleville1690_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "key_petit_chiffre_1690.tsv",

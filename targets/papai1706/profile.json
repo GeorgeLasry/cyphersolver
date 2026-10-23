@@ -537,7 +537,8 @@
    "what": "Consistency pass (cl): documents[].read for R805, R795, R740 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
    "result": "worked",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 7 of 8 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -626,10 +627,13 @@
     "doc": "R796",
     "label": "R796, 20 Feb 1706, Constantinople",
     "transcription": "texts/R796_transcription_corrected.txt",
-    "decryption": ["R796_read2.txt", "DOC_R796_read.txt"],
+    "decryption": [
+     "R796_read2.txt",
+     "DOC_R796_read.txt"
+    ],
     "summary": "The Prince's undated letter from the Tisza received; German false news believed neither by the Turks nor the confederates; the plea for those trapped in Moldavia blocked by the armistice articles, so the Moldavian kapukehaya and the serdar of Babadag (former pasha of Belgrade) are to be used; the Porte, frightened by the last war, will not prejudice the armistice nor help the Prince; nothing resolved on the propositions. Constantinople, 20 Feb 1706.",
     "language": "hu",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/R796_reading.md",
     "translation": "texts/R796_en.md",
     "reading_review": {
@@ -637,16 +641,21 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "r2g 23 Oct 2026: digits re-transcribed on the DECODE images IMG_R796_I4453-4456 (texts/R796_transcription_corrected.txt, R796_corrections.tsv: FK had dropped p. 1 l. 17 and repeated half of l. 18 - the 'repeating letters' of the v4 check - plus nine slips) and decoded with r2g_papai_dec.py (decode2 rules), read beside the transcriber's copy of the interlinear decipherment. v2_score explicit holes 0.692 (18/26), hole rate 0.106, 310 words (plain 0.077: the hu word list does not know 1706 spelling). Look-alike alternates: 87 read as 81 'ar' four times (armistitium, articulus), 187 as 181 'bü' once (with the interlinear decipherer): 10 of ~1,330 letters, 0.75%. Judged as a reader: the sentences hold except the closing lines before the signature. Grade B."
-    }
+    },
+    "read_share": 0.892,
+    "note": "24 Oct 2026: 89.2% of the words of texts/R796_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R793",
     "label": "R793, 16 Mar 1706, Constantinople",
     "transcription": "texts/R793_transcription_corrected.txt",
-    "decryption": ["R793_read2.txt", "DOC_R793_read.txt"],
+    "decryption": [
+     "R793_read2.txt",
+     "DOC_R793_read.txt"
+    ],
     "summary": "Secret approaches to the Porte through the chancellor and the mufti about the unratified Muscovite peace and the Tana (Azov) frontier; with Sweden on the other side Poland could not hold out, and the Emperor is tied down by the French and Hungarian war; the Muscovite advances among the Astrakhanians, Circassians and Mingrelians and on the Black Sea; the Vizier asks whether the Hungarians would ally with Sweden; the Prince's manifesto translated and given to the Vizier; the envoy will pay nothing. Constantinople, 16 Mar 1706.",
     "language": "hu",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/R793_reading.md",
     "translation": "texts/R793_en.md",
     "reading_review": {
@@ -654,7 +663,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-23",
      "note": "r2g 23 Oct 2026: digits re-transcribed on the DECODE images IMG_R793_I4441-4444 (texts/R793_transcription_corrected.txt, R793_corrections.tsv): decode2.py had skipped every figure line that also carried a <PLAINTEXT> tag (eight lines), FK had left out one line of p. 4 and dropped 98 (Constancz) in the date, and about twenty groups were split, joined or slipped; decoded with r2g_papai_dec.py and read beside the transcriber's copy of the interlinear decipherment. v2_score explicit holes 0.692 (27/39), hole rate 0.085, 471 words (plain 0.0: 1706 spelling). Look-alike alternates: none. Judged as a reader: most sentences hold; the Black Sea passage (p. 2 ll. 14-24) and one name on p. 1 remain in outline. Grade B. Date: 'tizenhatodik Martius' = 16 March 1706."
-    }
+    },
+    "read_share": 0.914,
+    "note": "24 Oct 2026: 91.4% of the words of texts/R793_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R794",
@@ -674,7 +685,9 @@
     },
     "reading": "texts/R794_reading.md",
     "translation": "texts/R794_en.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.89,
+    "note": "24 Oct 2026: 89.0% of the words of texts/R794_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R823",
@@ -694,7 +707,9 @@
     },
     "reading": "texts/R823_reading.md",
     "translation": "texts/R823_en.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.891,
+    "note": "24 Oct 2026: 89.1% of the words of texts/R823_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R765",
@@ -714,7 +729,9 @@
     },
     "reading": "texts/R765_reading.md",
     "translation": "texts/R765_en.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.895,
+    "note": "24 Oct 2026: 89.5% of the words of texts/R765_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R784",
@@ -734,7 +751,8 @@
     },
     "reading": "texts/R784_reading.md",
     "translation": "texts/R784_en.md",
-    "state": "read"
+    "state": "read",
+    "read_share": 0.952
    },
    {
     "doc": "R757",
@@ -754,7 +772,9 @@
     },
     "reading": "texts/R757_reading.md",
     "translation": "texts/R757_en.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.89,
+    "note": "24 Oct 2026: 89.0% of the words of texts/R757_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R740",
@@ -785,7 +805,9 @@
     },
     "reading": "texts/R741_reading.md",
     "translation": "texts/R741_en.md",
-    "state": "read"
+    "state": "read in part",
+    "read_share": 0.889,
+    "note": "24 Oct 2026: 88.9% of the words of texts/R741_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": [

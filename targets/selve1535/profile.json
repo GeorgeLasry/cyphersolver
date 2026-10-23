@@ -252,7 +252,8 @@
    "technique": ["language-model scoring", "contextual inference"],
    "what": "Verify v8: R3697 unstruck cipher written out as running text (R3697_reading.md) and scored: 0.733 explicit holes, 0.667 plain (the sweep's 0.57 counted clear-text and gloss brackets as holes). Keeps read; reading pointed at the new file.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -328,10 +329,12 @@
      "date": "2026-10-23",
      "note": "Verify v8, 23 Oct 2026: the sweep's 0.57 scored READING_R3697.md as a whole, where the clear text, the decipherer's glosses and the struck runs sit in lower-case brackets and count as holes. The unstruck cipher written out as running text (R3697_reading.md, holes and doubtful words marked) scores 0.733 on explicit holes (11/15), 0.667 plain, hole rate 0.089: the Swiss road, the Imperial ambassador's watch and his urging the merchant to go to the French court, the informants reporting to the Turk build sentences; holes at the blot and the cancelled name (Anthon[e] de Le...) and a few single signs. Rests on Tomokiyo's Selve key as extended in KEY.md."
     },
-    "state": "read",
+    "state": "read in part",
     "language": "fr",
     "reading": "R3697_reading.md",
-    "translation": "R3697_en.md"
+    "translation": "R3697_en.md",
+    "read_share": 0.911,
+    "note": "24 Oct 2026: 91.1% of the words of R3697_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R3697",
@@ -356,7 +359,8 @@
      "date": "2026-10-22",
      "note": "READING_R4232.md reads as continuous French (the Emperor's design on Marseille, the galleys, the delay, the breach with the Emperor) with a few single-sign holes; the margin decipherment of f. 44v agrees word for word."
     },
-    "translation": "READING_R4232_en.md"
+    "translation": "READING_R4232_en.md",
+    "read_share": 0.967
    },
    {
     "doc": "R3697",

@@ -195,7 +195,8 @@
    "what": "Consistency pass (cl): 'read in part' not justified because the ~28 doubtful signs of f. 102r await a human reading of view 164 (not-attempted kept); NOTES already Status: in progress; outcome.gaps mirrors the list.",
    "result": "partial",
    "technique": ["statistical test"]
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "texts": [
@@ -203,11 +204,18 @@
     "doc": "f102",
     "label": "f. 102r (30 cipher lines)",
     "transcription": "contributed/data/transcription_f102r.txt",
-    "decryption": ["contributed/docs/READING.en.md", "contributed/data/decoded_f102r.txt", "decoded_ours_f102r.txt"],
+    "decryption": [
+     "contributed/docs/READING.en.md",
+     "contributed/data/decoded_f102r.txt",
+     "decoded_ours_f102r.txt"
+    ],
     "summary": "Bilia dined with an old lord (name code B.58) who complained that, by letters from his son-in-law, the Duke was troubling conte Theophimo(?) over earlier prohibitions; Bilia calmed him and advises the Duke to write a letter showing in deed the good will promised in words. Harumi-Matsuba's reading (contributed/) and this project's independent decode with its own R5258 key (decoded_ours_f102r.txt) are given separately.",
     "language": "it",
     "reading": "texts/f102r_reading.md",
-    "translation": "texts/f102r_en.md"
+    "translation": "texts/f102r_en.md",
+    "read_share": 0.922,
+    "state": "read in part",
+    "note": "24 Oct 2026: 92.2% of the words of texts/f102r_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "f102",

@@ -183,7 +183,8 @@
   {"date": "2026-10-22", "kind": "hypothesis", "technique": ["key-structure hypothesis", "contextual inference"], "what": "The groups from 279 up form an alphabetical codebook (279 and ... 555 you); band plus contexts in the six letters of the key (including Lasry's French sections) fix 31 open groups: 295 business, 330 dispatch, 340 foot, 405 master, 446 particular, 502 she, 518 those, 548 who, 392+498 lord+ship, 475 religion, 476 rebel ... (texts/hm1645_codes.tsv); single-context values marked [?]. 541 (four contexts) does not resolve to one word.", "result": "partial"},
   {"date": "2026-10-22", "kind": "transcription", "what": "Figures checked on the images where decode and sense disagreed: R785 'pertectly' is the writer's 10; R923 126 is 127 (7 over 6: the Queen); R923 554 your (4 over 5); R923 341 r a 382 497 = 'forrain [succour]', not Lasry's 'Lorrain support'. Other one-figure slips listed, not checked (texts/hm1645_corrections.tsv).", "result": "worked"},
   {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Readings written (texts/R785/R790/R923_reading.md, _en.md), aligned letter by letter with the decode (0.978, 0.980, 0.959 carried; b14_align.py); clean-sentence share on the bodies 0.841, 0.792, 0.84 (0.73, 0.54, 0.56 with the figures' own spellings, which the lexicon does not know). All three set read.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Coordinator's correction: the three readings rewritten in the figures' own spelling (one-figure slips as written), the modern-spelling text kept only as the _en.md files. Re-aligned with the decode: 0.992, 0.995, 0.984 of each reading carried; clean-sentence share on the bodies 0.645, 0.542, 0.52 (modern spelling 0.841, 0.792, 0.84): the drop is the modern word list's artefact on period spellings; all three kept read.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Coordinator's correction: the three readings rewritten in the figures' own spelling (one-figure slips as written), the modern-spelling text kept only as the _en.md files. Re-aligned with the decode: 0.992, 0.995, 0.984 of each reading carried; clean-sentence share on the bodies 0.645, 0.542, 0.52 (modern spelling 0.841, 0.792, 0.84): the drop is the modern word list's artefact on period spellings; all three kept read.", "result": "worked"},
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -249,7 +250,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b14) from the key decode of the DECODE transcription with Lasry's TNA SP 106 key (his plaintext D3061 compared line by line), two key corrections (292 = by, 435 = next) and nomenclator values proposed from the codebook's alphabetical bands (texts/hm1645_codes.tsv). The reading keeps the figures' own spelling (lettre, answear, termes, takeing; one-figure slips as written, listed in texts/hm1645_corrections.tsv); the _en.md file is the same text in modern spelling, holes kept. Aligned letter by letter with the decode (b14_align.py): 0.992 of the reading carried (0.978 for the earlier modern-spelling draft). _check_reading.py on the body 0.645 (40/62); the misses are mostly the period spellings, which the modern word list does not hold (the same text in modern spelling scored 0.841): an artefact of the word list, not holes in the sense, so kept read. Signed A. Cowley; image 3 (f. 215) is a second letter in the same key. Open: 15 code groups (22 tokens), mostly names."
-    }
+    },
+    "read_share": 0.955
    },
    {
     "doc": "R790",
@@ -258,7 +260,7 @@
     "decryption": "https://de-crypt.org/decrypt-web/RecordsView/790",
     "summary": "A letter from Henrietta Maria's household at St Germain to Charles I, 22 September 1645, on the penal laws and Sir Kenelm Digby at Rome; in English, in Lasry's 'TNA SP 106' key.",
     "language": "en",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/R790_reading.md",
     "translation": "texts/R790_en.md",
     "reading_review": {
@@ -266,7 +268,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b14) as for R785 (Lasry's plaintext D3066 compared). The reading keeps the figures' own spelling (lettre, answear, termes, takeing; one-figure slips as written, listed in texts/hm1645_corrections.tsv); the _en.md file is the same text in modern spelling, holes kept. Aligned 0.995 carried (0.980 for the modern-spelling draft); _check_reading.py on the body 0.542 (13/24), against 0.792 for the same text in modern spelling: the drop is the modern word list's artefact on lettre, answear, termes, takeing, summs, not holes in the sense, so kept read. Open: 469, 353, 525, 350, 545, 541, 486, 234; [?Pope] (221) and [?Ireland] (164) from context."
-    }
+    },
+    "read_share": 0.93,
+    "note": "24 Oct 2026: 93.0% of the words of texts/R790_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": "R923",
@@ -275,7 +279,7 @@
     "decryption": "https://de-crypt.org/decrypt-web/RecordsView/923",
     "summary": "A letter from Henrietta Maria's household at St Germains to Charles I, 29 September 1645, signed '120', on the Duke of Lorraine's 'little remote hopes'; in English, in Lasry's 'TNA SP 106' key.",
     "language": "en",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/R923_reading.md",
     "translation": "texts/R923_en.md",
     "reading_review": {
@@ -283,7 +287,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b14) as for R785 (Lasry's plaintext D3070 compared); 126 corrected to 127 (the Queen) and 'forrain [?succour]' (not Lasry's 'Lorrain support') checked on the image. The reading keeps the figures' own spelling (lettre, answear, termes, takeing; one-figure slips as written, listed in texts/hm1645_corrections.tsv); the _en.md file is the same text in modern spelling, holes kept. Aligned 0.984 carried (0.959 for the modern-spelling draft; the rest is the 126/127 correction, the dates and Lasry's key list appended to the file); _check_reading.py on the body 0.52 (13/25), against 0.84 in modern spelling: the modern word list's artefact on releef, battail, avoyded, comeing, not holes in the sense, so kept read. Open: 529, 120, 424, 257, 300, 148, 489, the place 85 and 60; the postscript breaks off."
-    }
+    },
+    "read_share": 0.938,
+    "note": "24 Oct 2026: 93.8% of the words of texts/R923_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ]
  }

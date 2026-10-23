@@ -210,7 +210,8 @@
    "technique": ["plaintext matching"],
    "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): the modernised spelling of 22 Oct restored to the cipher's, letter by letter from the key decode streams (read2/R*.txt; research/reading_audit/v6_charalign.py: the stream's letters taken where they spell the same word another way, e.g. tomavan, assi, devia, aora, quando, haver; editorial accents off; ñ kept where the key writes n); no margin transcription file was kept by the 22 Oct batch, so the key's letters, which are the writer's, are the source; holes and brackets kept, no word changed. Rescored with research/reading_audit/v2_score.py: read/R1001_reading.md plain 0.627 -> 0.597, explicit holes 0.91 -> 0.91; read/R966_reading.md plain 0.885 -> 0.808, explicit holes 1.0 -> 1.0; read/R967_reading.md plain 0.844 -> 0.781, explicit holes 1.0 -> 1.0; read/R968_reading.md plain 0.913 -> 0.826, explicit holes 1.0 -> 1.0; read/R969_reading.md plain 0.88 -> 0.8, explicit holes 1.0 -> 1.0; read/R970_reading.md plain 0.796 -> 0.755, explicit holes 0.98 -> 0.98; read/R971_reading.md plain 0.679 -> 0.651, explicit holes 0.936 -> 0.936; read/R972_reading.md plain 0.732 -> 0.691, explicit holes 0.928 -> 0.928; read/R973_reading.md plain 0.621 -> 0.586, explicit holes 0.966 -> 0.966; read/R974_reading.md plain 0.744 -> 0.718, explicit holes 1.0 -> 1.0; read/R975_reading.md plain 0.746 -> 0.634, explicit holes 1.0 -> 1.0; read/R976_reading.md plain 0.708 -> 0.542, explicit holes 1.0 -> 1.0; read/R977_reading.md plain 0.76 -> 0.72, explicit holes 1.0 -> 1.0; read/R978_reading.md plain 0.73 -> 0.698, explicit holes 0.984 -> 0.984; read/R979_reading.md plain 0.778 -> 0.698, explicit holes 0.984 -> 0.984; read/R980_reading.md plain 0.638 -> 0.59, explicit holes 0.886 -> 0.886; read/R981_reading.md plain 0.725 -> 0.662, explicit holes 1.0 -> 1.0; read/R982_reading.md plain 0.552 -> 0.483, explicit holes 0.828 -> 0.828; read/R983_reading.md plain 0.694 -> 0.597, explicit holes 0.903 -> 0.903; read/R984_reading.md plain 0.708 -> 0.604, explicit holes 0.958 -> 0.958. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 20 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -263,7 +264,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. f. 1 margin badly faded; one hole (\"debiéndolo [...] creer\", group qe). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.885 -> 0.885. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R966_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.885 (23/26), explicit 1.0. Keeps read."
     },
     "translation": "read/R966_en.md",
-    "reading": "read/R966_reading.md"
+    "reading": "read/R966_reading.md",
+    "read_share": 0.993
    },
    {
     "doc": "margined",
@@ -281,7 +283,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. Two single-word holes (\"[...] en uno y otro\", \"con [?esto]\"). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.844 -> 0.844. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R967_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.844 (27/32), explicit 1.0. Keeps read."
     },
     "translation": "read/R967_en.md",
-    "reading": "read/R967_reading.md"
+    "reading": "read/R967_reading.md",
+    "read_share": 0.99
    },
    {
     "doc": "margined",
@@ -299,7 +302,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. One hole where the f. 1 margin is faded. Dated 6 Oct 1676 in its clear text (DECODE: 8 Dec). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.913 -> 0.913. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R968_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.913 (21/23), explicit 1.0. Keeps read."
     },
     "translation": "read/R968_en.md",
-    "reading": "read/R968_reading.md"
+    "reading": "read/R968_reading.md",
+    "read_share": 0.996
    },
    {
     "doc": "margined",
@@ -317,7 +321,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode; margin clear and complete. Nothing unread. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.88 -> 0.88. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R969_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.88 (22/25), explicit 1.0. Keeps read."
     },
     "translation": "read/R969_en.md",
-    "reading": "read/R969_reading.md"
+    "reading": "read/R969_reading.md",
+    "read_share": 0.996
    },
    {
     "doc": "margined",
@@ -335,7 +340,8 @@
      "note": "Rests on the contemporary decipherment in the left margin of ff. 2-4 (DECODE recorded it only in a comment), transcribed from the images, and the key decode with image-checked labels. Nothing unread. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.935 -> 0.935."
     },
     "translation": "read/R970_en.md",
-    "reading": "read/R970_reading.md"
+    "reading": "read/R970_reading.md",
+    "read_share": 0.997
    },
    {
     "doc": "margined",
@@ -353,7 +359,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode; every cipher line has its margin. Same letter as R972 (the seven images are pixel-identical). Open: [?nuestra] lira, [?proyectado], [?menagero]. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 2 words bracketed (2 supplied, 0 partly) ([de] [V.S.] in \"solicitando siempre [de] [V.S.] las órdenes\": neither the margin nor the figures have them), 0 replaced; clean sentences on the reading body 0.892 -> 0.89."
     },
     "translation": "read/R971_en.md",
-    "reading": "read/R971_reading.md"
+    "reading": "read/R971_reading.md",
+    "read_share": 0.991
    },
    {
     "doc": "margined",
@@ -371,7 +378,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. Same letter as R971 (images pixel-identical); this transcription is the cleaner one. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 2 words bracketed (2 supplied, 0 partly) ([de] [V.S.] in \"solicitando siempre [de] [V.S.] las órdenes\": neither the margin nor the figures have them), 0 replaced; clean sentences on the reading body 0.892 -> 0.89."
     },
     "translation": "read/R972_en.md",
-    "reading": "read/R972_reading.md"
+    "reading": "read/R972_reading.md",
+    "read_share": 0.99
    },
    {
     "doc": "margined",
@@ -389,7 +397,8 @@
      "note": "Rests on the contemporary decipherment in the left margin (DECODE recorded it only in a comment, so the letter was listed as unmargined), transcribed from the images, and the key decode; B = s fixed on the images (key coverage 85.9% -> 95.4%). Nothing unread. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 1.0 -> 1.0."
     },
     "translation": "read/R973_en.md",
-    "reading": "read/R973_reading.md"
+    "reading": "read/R973_reading.md",
+    "read_share": 0.996
    },
    {
     "doc": "margined",
@@ -407,7 +416,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. One uncertain word ([?himeneo]). Dated 21 Sept 1676 at The Hague in clear (DECODE: 1676Dec21). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.718 -> 0.718. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R974_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.744 (29/39), explicit 1.0. Keeps read."
     },
     "translation": "read/R974_en.md",
-    "reading": "read/R974_reading.md"
+    "reading": "read/R974_reading.md",
+    "read_share": 0.998
    },
    {
     "doc": "margined",
@@ -425,7 +435,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode on six pages; no label fixes needed. Only single uncertain words ([?suecos], [?altivez]). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.746 -> 0.746. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R975_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.746 (53/71), explicit 1.0. Keeps read."
     },
     "translation": "read/R975_en.md",
-    "reading": "read/R975_reading.md"
+    "reading": "read/R975_reading.md",
+    "read_share": 0.998
    },
    {
     "doc": "margined",
@@ -443,7 +454,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. Open: [?treguas], a verb under ink blots, and the noun after \"el nuevo\" (gap in margin and cipher). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.708 -> 0.708. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R976_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.708 (17/24), explicit 1.0. Keeps read."
     },
     "translation": "read/R976_en.md",
-    "reading": "read/R976_reading.md"
+    "reading": "read/R976_reading.md",
+    "read_share": 0.985
    },
    {
     "doc": "margined",
@@ -461,7 +473,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode; DECODE had merged two cipher rows and dropped one, restored from the image (txi/R977.txt). Open: [?mensaje], [?paces], groups 703, 225, 138. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.76 -> 0.76. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R977_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.76 (19/25), explicit 1.0. Keeps read."
     },
     "translation": "read/R977_en.md",
-    "reading": "read/R977_reading.md"
+    "reading": "read/R977_reading.md",
+    "read_share": 0.986
    },
    {
     "doc": "margined",
@@ -479,7 +492,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode; DECODE's margin transcription had missed a sentence. Nothing unread. Dated 10 Feb 1677 in clear (DECODE: 20 Feb), signed by Bernardo Navarro for Ronquillo. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.746 -> 0.746. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R978_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.73 (46/63), explicit 0.984. Keeps read."
     },
     "translation": "read/R978_en.md",
-    "reading": "read/R978_reading.md"
+    "reading": "read/R978_reading.md",
+    "read_share": 1.0
    },
    {
     "doc": "margined",
@@ -497,7 +511,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. Two holes (group 934 where the margin stops; \"[?quedan]\"). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 2 words bracketed (0 supplied, 2 partly) ([?que] in \"animosidades [?que] della\", figures de; [?a] in \"comunicaron [?a] daneses\", figure 20=n), 0 replaced; clean sentences on the reading body 0.762 -> 0.762. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R979_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.778 (49/63), explicit 0.984. Keeps read."
     },
     "translation": "read/R979_en.md",
-    "reading": "read/R979_reading.md"
+    "reading": "read/R979_reading.md",
+    "read_share": 0.991
    },
    {
     "doc": "margined",
@@ -515,7 +530,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode, which also runs across the page feet. One overwritten margin line decided by the figures. Not the same letter as R981 (images differ). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.786 -> 0.786."
     },
     "translation": "read/R980_en.md",
-    "reading": "read/R980_reading.md"
+    "reading": "read/R980_reading.md",
+    "read_share": 0.993
    },
    {
     "doc": "margined",
@@ -533,7 +549,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. Open: [?Wesel], [?Mulle], [?menajero]. Dated 4 Mar 1677 in clear (not 27 Jan). Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.713 -> 0.713. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R981_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.725 (58/80), explicit 1.0. Keeps read."
     },
     "translation": "read/R981_en.md",
-    "reading": "read/R981_reading.md"
+    "reading": "read/R981_reading.md",
+    "read_share": 0.997
    },
    {
     "doc": "unmargined",
@@ -541,8 +558,8 @@
     "transcription": "decode/DOC_R982_D2510_2510.txt",
     "decryption": "read/R982.dec.txt",
     "summary": "Ronquillo to Fuenmayor, Nijmegen 19 Mar 1678: after the loss of Ghent Flanders is near despair; England stays irresolute; he hopes the allies drop their quarrels to defend the Low Countries and the North; Königsmarck's incursion should press the Brunswick princes; nothing worth reporting from the congress.",
-    "note": "Re-read 22 Oct 2026 (batch ronq): read/R982_reading.md and read/R982_en.md, log read/R982_reread_log.md; decryption read/R982.dec.txt (key decode cut into words, page by page, spaced.py).",
-    "state": "read",
+    "note": "Re-read 22 Oct 2026 (batch ronq): read/R982_reading.md and read/R982_en.md, log read/R982_reread_log.md; decryption read/R982.dec.txt (key decode cut into words, page by page, spaced.py). 24 Oct 2026: 91.9% of the words of read/R982_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
+    "state": "read in part",
     "language": "es",
     "reading_review": {
      "grade": "B",
@@ -551,7 +568,8 @@
      "note": "Read on the images (no margin), second-pass re-transcription in txi/R982.txt (about 35 labels changed). Opening groups and about 12 phrase-level holes: soft scan (4/7/9 and tall signs not distinguishable) and no key material for dul, al, lop, fin, 109, bc. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 1 words bracketed (0 supplied, 1 partly) ([?de] in \"después [?de] la pérdida\", figure 4=t), 0 replaced; clean sentences on the reading body 0.621 -> 0.621. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1678: plain bar. '## Reading' heading added after the title of read/R982_reading.md: body plain 0.552 (16/29), explicit holes 0.828 (24/29), hole rate 0.082. The plain failures are gaps of the Spanish word list (progresos, infelicidad, irresolución, experimentamos, sorprendidos) and the explicit holes the known ones (soft scan; no key material for dul, al, lop, fin, 109, bc), about one per failing sentence; the sentences build. Keeps read."
     },
     "translation": "read/R982_en.md",
-    "reading": "read/R982_reading.md"
+    "reading": "read/R982_reading.md",
+    "read_share": 0.919
    },
    {
     "doc": "margined",
@@ -569,7 +587,8 @@
      "note": "ff. 2-7 rest on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode; the f. 1 margin is faded almost to nothing, so f. 1 rests on the key decode alone and keeps many holes (illegible margin; groups l, c, 1q, L2, pA, 11, 300 not in the key). The reply to Jenkins on f. 6 is under a blot. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.694 -> 0.694. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R983_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.694 (50/72), explicit 0.903. Keeps read."
     },
     "translation": "read/R983_en.md",
-    "reading": "read/R983_reading.md"
+    "reading": "read/R983_reading.md",
+    "read_share": 0.965
    },
    {
     "doc": "unmargined",
@@ -587,7 +606,8 @@
      "note": "Read on the images (no margin on any page), labels corrected (read/R984_corrections.tsv, txi/R984.txt), key values from the margined siblings. About 12 code groups unidentified (138, 91, 113, 460, cus, 600 ...): no key material. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 1 words bracketed (0 supplied, 1 partly) ([?aquí] in \"se halla [?aquí], que\": the figures give ha-ll-a-que), 0 replaced; clean sentences on the reading body 0.708 -> 0.708. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1676: plain bar. The sweep scored read/R984_reading.md with its notes; a '## Reading' heading now follows the title: body plain 0.708 (34/48), explicit 0.958. Keeps read."
     },
     "translation": "read/R984_en.md",
-    "reading": "read/R984_reading.md"
+    "reading": "read/R984_reading.md",
+    "read_share": 0.967
    },
    {
     "doc": "margined",
@@ -605,7 +625,8 @@
      "note": "Rests on the contemporary decipherment in the left margin, transcribed from the DECODE images, aligned word by word with the key decode. One supplied verb; the opening figures not rendered by the margin. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 0 words bracketed (0 supplied, 0 partly), 0 replaced; clean sentences on the reading body 0.814 -> 0.814."
     },
     "translation": "read/R1001_en.md",
-    "reading": "read/R1001_reading.md"
+    "reading": "read/R1001_reading.md",
+    "read_share": 0.994
    }
   ],
   "key_file": "keyx.py"

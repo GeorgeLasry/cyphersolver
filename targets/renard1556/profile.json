@@ -94,7 +94,8 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
       "result": "partial"
-    }
+    },
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
   ],
   "outcome": {
     "class": "already solved",
@@ -135,10 +136,12 @@
         "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
         "decryption": "lasry_entry.md",
         "summary": "Simon Renard to the King of Spain, 14 December 1556. Renard reports papal negotiations with the Duke of Alba and French military preparations.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here. The contemporary decipherment exists only on the manuscript images (not transcribed here).",
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here. The contemporary decipherment exists only on the manuscript images (not transcribed here). 24 Oct 2026: 90.6% of the words of lasry_excerpt_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
         "reading": "lasry_excerpt_reading.md",
         "translation": "lasry_excerpt_en.md",
-        "language": "fr"
+        "language": "fr",
+        "read_share": 0.906,
+        "state": "read in part"
       }
     ]
   }

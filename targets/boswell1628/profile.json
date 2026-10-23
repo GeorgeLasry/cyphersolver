@@ -115,7 +115,8 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt (Woodard's transcription); the reading copied verbatim from NOTES.md to texts/R413_decryption.md, with Woodard's own decipherment linked on DECODE R413; the key copied from NOTES.md to texts/key.md.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -146,7 +147,10 @@
      "https://de-crypt.org/decrypt-web/RecordsView/413"
     ],
     "summary": "Sir Ralph Boswell tells his kinsman William Boswell that Buckingham ('our greate Duke') has returned from Plymouth to Whitehall after the failed Île de Ré expedition, sure of the King's favour against his enemies in the Commons and backed in the Lords by the bishops and the new peers of his own making. texts/R413_decryption.md is the project's text (Woodard's key plus the gap readings of 2026); Mark Woodard's 2021 transcription and plaintext are on the DECODE record (PDF DOC_413_2021-Nov-09).",
-    "language": "en"
+    "language": "en",
+    "read_share": 0.946,
+    "state": "read in part",
+    "note": "24 Oct 2026: 94.6% of the words of texts/R413_decryption.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
   "key_file": "texts/key.md"
