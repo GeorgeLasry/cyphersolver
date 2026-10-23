@@ -25,28 +25,51 @@ Tomokiyo also lists Baluze 156 f. 157, a 1636 copy of a Sabran letter with ciphe
 
 ## Summary of contents
 
-| # | Source | Date | Content |
-|---|---|---|---|
-| 1 | Baluze 155 f. 79 | 28 Mar 1631 | Louis XIII declines, for now, the terms offered by the Prince of Monaco through the sieur Rossy, but wants the prince kept attached to the crown and the talks kept open. |
-| 2 | fr. 4134 f. 46v | 16 Jun 1633 | The citizens of Genoa want war; the Senate distrusts them and blames Sabran; the council debates admitting a French resident. News of the Cardinal-Infante at Vigevano. |
-| 3 | fr. 4134 f. 50v | [23 Jun 1633] | **Garbarin**, sergeant-major of the castles of Savona, offers to hand them over to **France** or **Savoy**. Sabran sends the matter **in cipher** to the French **agent** in Savoy and suspects a trap. |
-| 4 | fr. 4134 f. 52 | [1 Jul 1633] | The Savona affair now depends on what the comte de Praslin finds out; Sabran wants to stay out of sight. Discontent in the Riviera. |
-| 5 | fr. 4134 f. 54 | [Jul–Sep 1633] | The money Garbarin asks for should come from **Savoy**, not from Sabran, so that **France** does not appear. |
-| 6 | fr. 4134 f. 57 | [Jul–Sep 1633] | Garbarin returns disguised as a peasant, with a letter from the **munitioner of Savona**. He lays out **Savoy**'s plan: **ladders**, **a thousand men by sea** landing at **Le Fornace**, one mile from the **castle**, and a **son** left with **Savoy** as a pledge. Sabran sends him away without an answer. |
-| 7 | fr. 4134 f. 66 | [Sep 1633] | The plot is discovered: the munitioner and two others are arrested and brought to Genoa. Genoa keeps the matter quiet and does not accuse Savoy openly. |
-| 8 | fr. 4134 f. 69v | [Oct 1633] | Sabran's conduct followed his orders; the proposal had little substance and was meant to deceive him. **The munitioner and Garbarin** are in Genoa. |
-| 9 | fr. 4134 f. 73v | [21 Oct 1633] | The Signoria "could do no less than run the risk with Spain" (short fragment). |
-| 10 | fr. 4135 f. 132 | 30 May 1635 | Reopen the Monaco negotiation (Rossi is dead), or surprise **Monaco** with troops from **Pinerolo**: there are fewer than **thirty Spaniards** there. |
-| 11 | fr. 4135 ff. 215v–216 | [8 Oct 1635] | Plan: take Tortona and Serravalle, blockade Alessandria, and prefer **Novi** to **Gavi** so as not to alarm Genoa. |
-| 12 | fr. 4135 ff. 218–220 | 18 Oct 1635 | Genoa let the Spanish fleet use its ports for the capture of the Lérins islands; Sabran protests to the Signoria and advises waiting for the fall of **Valenza**. He recommends Camillo Doria for a galley. |
-| 13 | fr. 4135 f. 224v | 21 Oct 1635 | Waiting for the **capture of Valenza**; the **[Republic?]** will not soon be brought to **[the league]**. |
-| 14 | fr. 4135 ff. 227–229v | [25 Oct / 2 Nov 1635] | Closing the passages to **[Spain?]**; the enemy fortifies near **Valenza**; the abbés de Fiesque; Centurione's son boasts of a spy in Sabran's house. |
-| 15 | fr. 4135 ff. 232–233 | [16 Nov 1635] | The Genoese claim **[Savoy?]** let the Spanish relief into Valenza on purpose; the story of the abbé **Tovrre**, **[agent?]** of **[Savoy?]** at Milan; Lusancon on his way to the duc de Rohan. |
-| 16 | fr. 4135 ff. 241–242v | [30 Nov / 4 Dec 1635] | Sabran's servants bribed by Genoa's state inquisitors, 25 écus a month; proposed enterprises against **Monaco** and **Finale**. |
-| 17 | fr. 4135 f. 245v | [Dec 1635] | A rumour that **Sauli** is to be lieutenant general of the French galleys; Prince Doria's offer refused. |
-| 18 | fr. 4135 ff. 251v–252 | 18 Dec 1635 | "True neutrality", grain for Provence, keeping Antoine **Sauli** to his promise, Sabran's coming departure; **4,000 Spaniards** landed at **Vado**. |
+Bold marks matter written in cipher. Dates in square brackets are inferred from the order of the leaves and the BnF catalogue. Most images show only part of a letter.
 
-Dates in square brackets are inferred from the order of the leaves and the BnF catalogue. Most images show only part of a letter. In the table, bold marks matter written in cipher.
+### BnF Baluze 155 (1631): the King's letter
+
+The original letter as received by Sabran: two pages, a1 and a2. It is all in cipher after the opening, which was written in clear.
+
+| # | Folio | Date | Content |
+|---|---|---|---|
+| 1 | f. 79r–v | 28 Mar 1631 | Louis XIII thanks Sabran for his despatches and answers two points. On the first (in cipher): he declines, for now, the terms offered by the **Prince of Monaco** through the **sieur Rossy**, and will not have Rossy come to court. Sabran is to keep the prince attached to the crown, without a new treaty but without breaking off the talks. |
+
+### BnF fr. 4134 (1633): Sabran to Bouthillier, the Savona plot
+
+These are copies in Sabran's letter-book for 1633 (14 images, 8 letters). Except for the first, the letters follow one affair, from offer to discovery. Giambattista **Garbarino** ("Garbarin"), of Sassello, offers to hand over the **castles of Savona**. Sabran passes the offer **in cipher** to the French agent in Savoy and keeps himself out of it. Genoa discovers the plot, and **the munitioner and Garbarin** are taken to Genoa.
+
+| # | Folio | Date | Content |
+|---|---|---|---|
+| 2 | f. 46v–47 | 16 Jun 1633 | The citizens of Genoa want war; the Senate distrusts them and blames Sabran; the council debates admitting a French resident. The Cardinal-Infante at Vigevano. |
+| 3 | f. 50v | [23 Jun 1633] | **Garbarin**, sergeant-major of the castles of Savona, offers to hand them over to **France** or **Savoy**. Sabran sends the matter **in cipher** to the French **agent** in Savoy and suspects a trap. |
+| 4 | f. 52 | [1 Jul 1633] | The affair depends on what the comte de Praslin finds out; Sabran wants to stay out of sight. Discontent in the Riviera. |
+| 5 | f. 54 | [Jul–Sep 1633] | The money Garbarin asks for should come from **Savoy**, not from Sabran, so that **France** does not appear. |
+| 6 | f. 57r–v | [Jul–Sep 1633] | Garbarin comes back disguised as a peasant, with a letter from the **munitioner of Savona**. He lays out **Savoy**'s plan: **ladders**, **a thousand men by sea** landing at **Le Fornace**, one mile from the **castle**, and a **son** left with **Savoy** as a pledge. Sabran sends him away without an answer. |
+| 7 | f. 66r–v | [Sep 1633] | The plot is discovered: the munitioner and two others are brought to Genoa, and the matter is kept quiet. |
+| 8 | f. 69v | [Oct 1633] | Sabran followed his orders; the proposal was meant to deceive him. **The munitioner and Garbarin** are in Genoa. |
+| 9 | f. 73v | [21 Oct 1633] | The Signoria "could do no less than run the risk with Spain" (short fragment). |
+
+### BnF fr. 4135 (1635): Sabran to Bouthillier, Monaco and the Valenza campaign
+
+These are copies in Sabran's letter-book for 1634–1635 (27 images, 9 letters). Letter 10 returns to **Monaco**. The others, from October to December 1635, show:
+- the siege of **Valenza** by the French, Savoyard and Parmesan army;
+- Genoa's help to the Spanish fleet, which had taken the Lérins islands;
+- Sabran's plans for Tortona, Serravalle and **Novi**;
+- his watch on the Genoese families;
+- his own servants in the pay of the State Inquisitors.
+
+| # | Folio | Date | Content |
+|---|---|---|---|
+| 10 | f. 132r–v | 30 May 1635 | Reopen the Monaco talks (Rossi is dead), or surprise **Monaco** with troops from **Pinerolo**; there are fewer than **thirty Spaniards** there. |
+| 11 | ff. 215v–216r | [8 Oct 1635] | Plan: take Tortona and Serravalle, blockade Alessandria, and prefer **Novi** to **Gavi** so as not to alarm Genoa. |
+| 12 | ff. 218r–220r | 18 Oct 1635 | Genoa let the Spanish fleet use its ports for the capture of the Lérins islands; Sabran protests to the Signoria and advises waiting for the fall of **Valenza**; he recommends Camillo Doria for a galley. |
+| 13 | f. 224v | 21 Oct 1635 | Waiting for the **capture of Valenza**; the **[Republic?]** will not soon be brought to **[the league]**. |
+| 14 | ff. 227–229v | [25 Oct / 2 Nov 1635] | Closing the passages to **[Spain?]**; the enemy fortifies near **Valenza**; the abbés de Fiesque; Centurione's son boasts of a spy in Sabran's house. |
+| 15 | ff. 232r–233r | [16 Nov 1635] | The Genoese claim **[Savoy?]** let the Spanish relief into Valenza on purpose; the abbé **Tovrre**, **[agent?]** of **[Savoy?]** at Milan; Lusancon on his way to the duc de Rohan. |
+| 16 | ff. 241r–242v | [30 Nov / 4 Dec 1635] | Sabran's servants bribed by Genoa's State Inquisitors, 25 écus a month; enterprises proposed against **Monaco** and **Finale**. |
+| 17 | f. 245v | [Dec 1635] | A rumour that **Sauli** is to be lieutenant general of the French galleys; Prince Doria's offer refused. |
+| 18 | ff. 251v–252r | 18 Dec 1635 | "True neutrality", grain for Provence, keeping Antoine **Sauli** to his promise, Sabran's coming departure; **4,000 Spaniards** landed at **Vado**. |
 
 ## The key
 
@@ -69,7 +92,11 @@ The clerks' hands differ from leaf to leaf, so one sign can look different from 
 
 ## The letters
 
-The full French text and English translation of all 18 letters are in [`READING.md`](https://github.com/GeorgeLasry/cyphersolver/blob/writeup-sabran-lasry/targets/sabran1633/lasry2022/READING.md), with notes on each. The richest cipher passage is shown here.
+The full readings are in the PR as Markdown files. The bold (cipher) is part of the reading, so they should be shown rendered as Markdown, not as plain-text snippets. The same content is also supplied as ready HTML in `cryptiana/` (see Files).
+- [`READING.md`](https://github.com/GeorgeLasry/cyphersolver/blob/writeup-sabran-lasry/targets/sabran1633/lasry2022/READING.md): the 18 letters, grouped by manuscript, each in French and English with notes.
+- [`READINGS_BY_IMAGE.md`](https://github.com/GeorgeLasry/cyphersolver/blob/writeup-sabran-lasry/targets/sabran1633/lasry2022/READINGS_BY_IMAGE.md): one reading per image (43), in page order and grouped by manuscript. The same readings are in [`readings/`](https://github.com/GeorgeLasry/cyphersolver/tree/writeup-sabran-lasry/targets/sabran1633/lasry2022/readings), one file per image (e.g. `57v.md`).
+
+The richest cipher passage is shown here.
 
 ![fr. 4134 f. 50v with decryption in red](https://raw.githubusercontent.com/GeorgeLasry/cyphersolver/writeup-sabran-lasry/targets/sabran1633/lasry2022/cryptiana/images/sabran_50v_decryption.jpg)
 
@@ -157,8 +184,14 @@ In October 2026, with Claude Opus 5.5 and OpenAI Codex:
 
 `targets/sabran1633/lasry2022/`:
 - `ctts/`: the CTTS project (colors, key, positions, transcription, decryption, edited readings, icons) for all 43 images.
-- `READING.md`: the 18 letters in French and English, with notes.
-- `cryptiana/images/`: the CTTS key snapshot (`sabran_key.png`) and the f. 50v decryption image (`sabran_50v_decryption.jpg`).
+- `READING.md`: the 18 letters in French and English, with notes, grouped by manuscript.
+- `READINGS_BY_IMAGE.md` and `readings/<image>.md`: one reading per image, with the cipher in bold.
+- `cryptiana/`: the write-up as HTML, for the site.
+  - `entry.html`: the write-up with all 18 letters in French and English.
+  - `readings.html`: the 43 readings by image.
+  - `entry.css`: styles scoped to `.sabran-entry`.
+  - `index.html`: a self-contained copy with the images embedded.
+  - `images/`: the CTTS key snapshot (`sabran_key.png`) and the f. 50v decryption image (`sabran_50v_decryption.jpg`).
 
 ## Sources
 

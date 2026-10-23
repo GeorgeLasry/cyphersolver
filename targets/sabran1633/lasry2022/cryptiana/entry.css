@@ -1,0 +1,21 @@
+.sabran-entry {font:12pt/1.45 Georgia,"Times New Roman",serif;color:#111;background:#fff;}
+.sabran-entry h2 {margin:1.5em 0 1em;padding:.25em 1em;border:solid #d00;border-width:2px 0;background:#f99;color:#d00;font-size:12pt;line-height:1.5;}
+.sabran-entry h3 {font-size:12pt;margin:1.4em 1em .4em;color:#111;}
+.sabran-entry h4 {font-size:11pt;margin:1.2em 1em .4em;}
+.sabran-entry h5 {font-size:10.5pt;margin:.8em 1em .3em;color:#444;}
+.sabran-entry p {margin:.55em 1em;max-width:52em;}
+.sabran-entry a {color:#173e88;}
+.sabran-entry table {margin:.8em 1em;border-collapse:collapse;max-width:60em;font-size:11pt;}
+.sabran-entry th,.sabran-entry td {padding:.35em .65em;border:1px solid #ccc;text-align:left;vertical-align:top;}
+.sabran-entry th {background:#f3f3f3;}
+.sabran-entry img {max-width:100%;height:auto;display:block;border:1px solid #ddd;margin:1em;}
+.sabran-entry .reading {margin:.6em 1em;max-width:54em;border-left:3px solid #e8b4b4;padding:.1em 0 .1em .2em;}
+.sabran-entry .reading p {margin:.5em .8em;}
+.sabran-entry .reading strong {color:#9a0000;}
+.sabran-entry .translation p {font-style:italic;}
+.sabran-entry .note {font-size:10pt;color:#663300;}
+.sabran-entry ul {max-width:52em;margin:.5em 1em;padding-left:1.4em;}
+.sabran-entry li {margin:.35em 0;}
+.sabran-entry code {font-size:10pt;}
+@media(max-width:600px){.sabran-entry {font-size:11pt;}.sabran-entry p,.sabran-entry table,.sabran-entry .reading,.sabran-entry ul {margin-left:.6em;margin-right:.6em;}}
+@media print{.sabran-entry h3,.sabran-entry h4 {break-after:avoid;}}

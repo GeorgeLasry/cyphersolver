@@ -4,6 +4,10 @@ Louis XIII to Melchior de Sabran (BnF Baluze 155, 1631) and Sabran to Bouthillie
 
 **Reading conventions.** **Bold** = written in cipher in the manuscript; regular = written in clear. Code signs are given by their reading in brackets: **[France?]**; a ? marks a tentative identification, [NameN?] an unidentified person. [?] = unreadable; word[?] = doubtful reading; letters in [ ] are supplied (clerk's slips and abbreviations). Struck-out text is left out. The manuscript spelling is kept (v for u, y for i). Most images show only part of a letter; dates come from a heading on the page or from the BnF catalogue (see each letter).
 
+# BnF Baluze 155 (1631): Louis XIII to Sabran
+
+The original letter of 28 March 1631, as received by Sabran (Gallica btv1b9001401d).
+
 ## Letter 1 — Baluze 155, f. 79r–v
 
 | | |
@@ -34,6 +38,10 @@ On the first, **which concerns the said Prince of Monaco: having considered the 
 - "n'y de faire venir" = "ny de faire venir" (nor to bring); "renover" = renew; "en levr entier" = intact. "Ros[s]y": the cipher has "Rosy" once, "Rossy" once.
 - Prince of Monaco in 1631: Honoré II Grimaldi (then under Spanish protection; he went over to France only in 1641). The Sieur Rossy, the go-between, is not identified.
 - "Sr Bouthillier" in March 1631 is Claude Bouthillier, then secretary of state.
+
+# BnF fr. 4134 (1633): Sabran to Bouthillier
+
+Copies in Sabran's letter-book, *Troisième livre des negotiations du Sr de Sabran à Gennes* (Gallica btv1b9060193z).
 
 ## Letter 2 — fr. 4134, f. 46v–47
 
@@ -316,6 +324,10 @@ Monsieur, I must tell you here an amusing affair, of which I [...]
 - "**consiliet**": probably the Consiglietto, the Minor Council of the Republic of Genoa (guess). "**le general des postes**" (the head of the posts) is not identified.
 - "cette seig[neu]rie" = the Signoria, i.e. the government of Genoa. "Espaigne" is in clear here, not in code.
 - "courir la risque d'Espaigne": probably "to take the risk with Spain" (i.e. of Spain's displeasure); the context is lost.
+
+# BnF fr. 4135 (1635): Sabran to Bouthillier
+
+Copies in Sabran's letter-book, *Le quatrième livre des negotiations de Mr de Sabran …*, 1634–1635 (Gallica btv1b9060194c).
 
 ## Letter 10 — fr. 4135, f. 132r–v
 
