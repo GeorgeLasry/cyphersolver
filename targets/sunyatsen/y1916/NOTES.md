@@ -205,3 +205,16 @@ Tables he added in the condenser family are "Laisaosang", "New York", "Hsuweilin
 letter-to-digit substitution (1914). He confirms our tentative Manila table (Tokyo → "Konglipo", 6 Jan 1915) and
 Honolulu table (if w = v). The constructions are listed in `docs/sunintercepts.html#wider`. Not checked here. The
 Rosamonde telegrams are in `targets/rosamonde1915/`, the 共密/容密/辰密 numeric codes in `targets/numeric1916/`.
+
+**Email of 23 Oct 2026.**
+- **Honolulu grid:** it reads the "Aloha" telegrams when written with an alphabet without q and with w (the New
+  York 1915 alphabet). Brice reads 30 April with no emendation (黃鄧到日，換船赴滬。鐵城) and most of 16 May. This is
+  his fix to our tentative grid; credit him for it. Not checked here.
+- **X密 codes:** Tomokiyo (Cryptiana, 23 Oct) showed that 共密/容密/辰密 are hand-renumbered copies of the 明密 code
+  book, one per correspondent. Brice checked this on all 10,000 groups. New: N09 乾密 (袁死…興), and N01, whose key
+  is in two Gaimushō decipherment tables in B03050089200 (PDF 16). See `targets/numeric1916/`.
+- **1916 condensers:** Brice re-read our published transcriptions on the JACAR scans and reports 28 image-supported
+  corrections (e.g. A24 莫利遜 g/q, 展堂, 演説, 軍票), plus a dropped word in B48 ("jobusasuji") that completes it.
+  The list is at https://bdudout.github.io/wenmi/en/relecture.html; he offers it as a file. Apply once received.
+- **"zehomose…" sender to Ylchang:** he has 29 May and 8 June. We hold only 29 May (frame 55 upper) and 30 May
+  (frames 55 lower + 56, opening "honefawepa", same 関正義方 address, w as consonant), which he may not have.
