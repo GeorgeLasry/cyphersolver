@@ -1,6 +1,13 @@
 # The cardinal de Mâcon in Rome to Montmorency, 1536-37, in Mascon's cipher (BnF fr. 3053, DECODE R4233-R4247; BnF fr. 3071 no. 4)
 
-Status: in progress. Mascon's cipher letters read in part; fr. 3071 no. 4 decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. Mascon's cipher letters read in part; fr. 3071 no. 4 decoded, not read (reading audit, 22 Oct 2026); read 23 Oct 2026 (b34, below).
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b34, Claude Opus 5.5):** the 11 April 1537 letter (fr. 3071 no. 4) is assembled
+as one reading for the first time, `fr3071_no4/macon1537_reading.md` (English `macon1537_en.md`, log
+`macon1537_reread_log.md`): f. 9r cipher from the Sept glyph decodes, f. 9v checked against the contemporary slip
+f. 9bis (now transcribed in full, `macon1537_slip_f9bis.txt`; agrees but for *car/ce que*, *peine/peur*), the clear
+text re-read on the Gallica full-size images (the count of f. 9v l. 4 is **Cifuentes**; the Mantua passage and f. 10r
+close transcribed). Score 0.676 plain, 0.868 explicit holes; read, grade B. fraction_read 0.91 -> 0.95.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R4234 and R4239 (graded C) were re-read on their pass-5 running readings and build French sentences with scattered holes (overturned to B). The 11 April 1537 letter (fr. 3071 no. 4) is read only 35-40% by its own count and is *decoded, not read*. fraction_read 0.95 -> about 0.91 (its ~840 signs added to the denominator).
 
@@ -260,12 +267,11 @@ ambassadors working on Alessandro Vitelli. **The slip f. 9bis is a contemporary 
 and the reading, made first, matches it almost word for word.
 
 ## Remaining gaps
-- fr. 3071 no. 4: seven signs on f. 9r ll. 27-28, the word before *puissance*, the name group on f. 9r l. 8; the clear text read loosely - blocker: illegible; blot and odd signs on the Gallica scan, and the slip f. 9bis covers f. 9v only
+- fr. 3071 no. 4 (read 23 Oct 2026, b34): five short cipher spots on f. 9r (l. 10 middle, ll. 16-17 after *messire Latin*, ll. 27-28 seven signs, the word before *puissance*, the l. 8 name group) and single doubtful words of the clear text - blocker: illegible; blot and odd signs on the Gallica scan, the slip f. 9bis covers f. 9v only
 - residue inside read lines, about 5 % of letters (R4233 passages 3, 4, 5, 7, 8, 9 ~100 letters; R4234 f16r L1/L3/L16/L24, f16v L2-3/L7/L9/L21/L27, f17r L4-5/L21/L23/L27/L30-31, f17v L14/L20, f18r L15-17; R4235 P7 L5 and two signs in passage B; R4238 ~45 letters; R4239 f35r L06/L24/L32, f35v L08; R4240 13 letters; R4247 ~40 letters) - blocker: illegible; ink legible on the Gallica native scans, but the sign runs are ambiguous (7 = N/B, 4 = C/R, Of/Up) and no clear copy or gloss covers them
 - R4239 short cipher runs in f36r L01-L06 and f35v L27-L31, and f38v L4 end, L8 end and the margin block (whose interlinear does not fit the signs) - blocker: illegible; not transcribed or not resolved in pass 5, no clear copy for them
 - proper names (the Sienese gentleman "For[?]", the count "Mer[?]le", Christofle's surname and two German captains in R4238, "Cesane", "Palmier") - blocker: open-codes; spelled in cipher but the letters do not settle to a known name
 - R4239 f38r L06-L07 - blocker: illegible; doubtful in the contemporary clear copy itself
-- fr. 3071 no. 4: decoded, not read (35-40% of the cipher) - blocker: not-attempted; re-transcribe f. 9r ll. 3-25 by sign shape from the Gallica native scan, decode with macon_decode.py, read f. 9v against the slip f. 9bis
 - R4239 letter 1, f. 35r-v first paragraph, as a running text - blocker: not-attempted; summarised with elisions in pass5/R4239_pass5.md; write it out from the per-line record
 
 ## Escalation
@@ -274,6 +280,7 @@ and the reading, made first, matches it almost word for word.
 - [x] known-keys: Mascon's cipher (Tomokiyo; Lasry 2023, macon_key.md); Tomokiyo's Cipher-3 table (keyimg/francisMacon3.png) not this key
 - [x] print: Tomokiyo francis.htm, Lasry GL.htm, Dodieu edition (rom.uga.edu): no plaintext
 - [x] key-rebuild: key corrections from glossed lines (ꭓ = Q/U, × = N/L, Ξ = RR, 7 = N/R/B, etc.)
+- [x] retry: 23 Oct 2026 (b34) fr. 3071 no. 4 clear text re-read on full-size IIIF images, slip f. 9bis transcribed in full, letter assembled and scored (read)
 - [x] retry: pass 5 (22 Sept) re-transcribed every record by sign shape from the Gallica native scans and re-decoded with the key map + fr-1600-letters beam; every doubtful group retried and regraded against all contemporary clear texts
 
 ## Assumptions for George's review

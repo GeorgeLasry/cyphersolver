@@ -418,6 +418,20 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): Baluze 156 f. 157r (two crib values, \"not a reading\" by its own heading) relabelled decoded, not read; the f. 218r margin (two words) relabelled not prose. Claim unchanged: f. 157r was already counted unread and its gap is blocked (too-short).",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read b34: opened the neighbouring leaves of BnF Baluze 156 f. 157 through openapi.bnf.fr IIIF (views 158-164 at 1200 px; 140-190 as a contact sheet; 165, 166, 176, 178 at 1100 px): no decipherment, copy or sibling in the same key; ff. 158r-v carry the clear end of the letter.",
+   "result": "failed",
+   "technique": ["other"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "crib",
+   "what": "Hand crib on the repeated run g 7 4 t o (runs 2 and 11, the man sent to the marechal de Vitry): with g = e and 4 = n the pattern e?n?o? fits none of envoye, genois, espion; no value adopted. Baluze 156 f. 157r kept decoded, not read (too-short).",
+   "result": "failed",
+   "technique": ["crib testing"]
   }
  ],
  "outcome": {
@@ -557,7 +571,7 @@
     "decryption": "baluze156/f157r_partial.txt",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "A partial decryption with two crib values only; the file says \"Not a reading\": most lines are \"?\" strings inside brackets and only the opening clause translates (reading audit, 22 Oct 2026); blocked: another key, 136 signs, too short to break alone."
+    "note": "A partial decryption with two crib values only; most runs are '?' strings and only the clear text reads (reading audit, 22 Oct 2026). Re-read 23 Oct 2026 (b34, baluze156/f157r_reread_log.md): the neighbouring leaves of Baluze 156 (ff. 155-161 opened, ff. 140-190 surveyed) hold no decipherment, second copy or sibling in the same lower-case/digit key; no new crib holds (runs 2 and 11 share 'g 7 4 t o', pattern e?n?o?, fits no word with the crib values). Blocker: too-short (136 signs, 33 types, 4.9 per type)."
    },
    {
     "doc": [

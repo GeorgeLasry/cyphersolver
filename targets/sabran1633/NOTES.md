@@ -3,6 +3,8 @@
 Status: read in part (22 Oct 2026). George Lasry's key reads all 43 imaged pages (PR 84). The eight leaves Tomokiyo
 lists beside them were checked on the image the same day: seven carry no cipher outside Lasry's images, f. 218r has
 a 17-sign marginal run he missed, and Baluze 156 f. 157 (1636) is in another key, too short to break alone.
+**23 Oct 2026, re-read (REREAD_BRIEF batch b34):** Baluze 156 f. 157r kept *decoded, not read*: its neighbouring leaves (ff. 155-161 opened, ff. 140-190 surveyed on Gallica) carry no decipherment, copy or sibling in the same key, and a hand crib on the repeated run `g 7 4 t o` does not hold (`baluze156/f157r_reread_log.md`).
+
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): Baluze 156 f. 157r (two crib values only) is marked *decoded, not read* and the two-word f. 218r margin *not prose* in profile.json. Claim unchanged.
 
 
@@ -108,7 +110,7 @@ strokes; 136 signs, 33 types with codes 12, 36, 94.
 - code 46 (fr. 4135 f. 219, once) - blocker: open-codes; "d'une [46] de l'armée navale", context does not fix it
 - 212 tentative name-sign readings - blocker: open-codes; read from context only; o- and o-- may be confused in the ff. 215v–216 hand
 - cipher runs that do not read (f. 50v "veraivre", "fevitga", "tmineli…"; f. 215b "parico"; f. 228v "duc de s / vop"; "Vbr[?]" on 54b, 57b) - blocker: illegible; reviewed against the images by the contributor, probably clerks' slips in the copies
-- Baluze 156 f. 157r (9 Feb 1636 copy, 136 signs) - blocker: too-short; not Lasry's letter table nor the Servien key; two cribs give ten values, the anneal is degenerate at 4.9 signs per type; needs a sibling in the same key
+- Baluze 156 f. 157r (9 Feb 1636 copy, 136 signs) - blocker: too-short; not Lasry's letter table nor the Servien key; two cribs give ten values, the anneal is degenerate at 4.9 signs per type; needs a sibling in the same key (none on the Baluze 156 leaves opened 23 Oct 2026, b34: `baluze156/f157r_reread_log.md`)
 - f. 218r margin, first sign of each line - blocker: illegible; against the gutter, matches no sign of the key sheet
 - the originals as received (Archives diplomatiques, Correspondance politique, Gênes) - blocker: needs-physical-access; not digitised
 
@@ -118,6 +120,7 @@ strokes; 136 signs, 33 types with codes 12, 36, 94.
 - [x] known-keys: the key is Lasry's own, recovered ciphertext-only; on Baluze 156 f. 157 Lasry's table and Tomokiyo's Servien–Sabran key (1632) both tried, neither fits
 - [x] print: no edition of these passages; Sourdis correspondence covers 1636–37 only
 - [x] key-rebuild: nomenclator completed from context and first-letter order; code 46 stays open
+- [x] retry: 23 Oct 2026 (b34) Baluze 156 neighbouring leaves searched for a decipherment or sibling (none), crib on the repeated run tried (fails)
 - [x] retry: the eight listed leaves opened and read with the key (22 Oct 2026): f. 218r margin read, Baluze 156 f. 157 cribbed and annealed (`baluze156/solve.py`); code 46 and the slips on Lasry's images were not re-read this session (contributor reviewed them on the images)
 
 ## Files

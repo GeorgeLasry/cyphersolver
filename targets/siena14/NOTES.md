@@ -7,6 +7,11 @@ L01-L06 only** (424 of about 1,500 tokens, 28%): the envoys arrived safe and are
 commands; Domenico met a servant of <7H> this morning. **L07-L26 are decoded, not read**: unread runs, queried words
 and code signs in nearly every line give a gist, not sentences. The 58.6% is withdrawn as a reading figure.
 
+23 Oct 2026, re-read (REREAD_BRIEF batch b34; `transcripts/no14_L07-L26_reread_log.md`): **L07-L26 kept decoded, not
+read.** DECODE R4802 re-fetched (two images, nothing attached); the second pass's text written out as
+`transcripts/no14_L07-L26_reading.md` (partial, 0.048 plain / 0.143 explicit holes) with English; the doubtful words rest
+on look-alike sign classes (a/i, u/n, o/i) above the 3% limit, and the DECODE image does not separate them.
+
 Split on 14 Oct 2026 from `siena1421` under the one-key rule (George Lasry, 14 Oct 2026). The old entry grouped the
 whole bundle of Sienese cipher letters (Concistoro 2308 fasc. 2), each in its own key. This letter has a key of its
 own; the other letters with recovered keys are their own entries, each a different cipher with its own page: no. 25
@@ -59,7 +64,9 @@ potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full lines + 
 `docs/_validate.py siena14 --write`: pass (see profile.json outcome.validation).
 
 ## Remaining gaps
-- L07-L26 decoded, not read (unread runs and queried words in nearly every line; reading audit 22 Oct 2026) - blocker: illegible; see the line below (small signs at the DECODE resolution)
+- L07-L26 decoded, not read (unread runs and queried words in nearly every line; reading audit 22 Oct 2026; b34 partial reading 0.048 / 0.143) - blocker: illegible; small signs at the DECODE resolution, look-alike classes Q/Q4, 8/TH, P/PHI not separable
+- L08-L26 not re-compared sign by sign with the image in b34 (the Sept second pass did) - blocker: not-attempted
+- code signs <7H>, <Z7>, (420), <13> - blocker: no-key-material; no key sheet in this system in the busta
 - doubtful and unread words (about 40% of 1,495 tokens) and the codes <7H>, <Z7>, (420) - blocker: illegible; small signs at the DECODE resolution, mostly the first lines, lines 13-15 and the subscription; the key itself is recovered
 
 ## Escalation
@@ -68,4 +75,5 @@ potentibus dominis Prioribus [et] Capitaneo Civitatis Senarum", 23 full lines + 
 - [x] known-keys: all 43 key sheets of fasc. 1 compared by eye; none fits
 - [x] print: Meister 1902, Cecchini 1952; no printed decipherment found
 - [x] key-rebuild: key recovered by homsolve2 from the ciphertext alone, hand crib confirmed it; glyph classes settled on the images
+- [x] retry: 23 Oct 2026 (b34) R4802 re-fetched, L07-L26 written out and scored, L07 compared on the image
 - [x] retry: re-read sign by sign on the images with the extended key (two passes); doubtful words regraded in the reading files

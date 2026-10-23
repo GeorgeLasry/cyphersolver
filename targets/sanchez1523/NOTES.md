@@ -1,6 +1,18 @@
 # Alonso Sánchez (Venice) to Charles V, May–August 1523 — RAH Salazar 9/28 (A-28)
 
-Status: in progress
+Status: in progress (re-read 23 Oct 2026, b34: every record now reads; the site page and README row still describe
+the 22 Oct audit state and are left to the write-up pass)
+
+23 Oct 2026, re-read (REREAD_BRIEF batch b34, Claude Opus 5.5): **both uncalendared August letters read in full from
+contemporary decipherments found on neighbouring leaves.** DECODE **R9768** (ff. 565-568, "Decrypted", never fetched)
+is the second copy of R9767 and its **f. 567r is the court decipherment of R9767's two cipher passages**
+(`R9767_decifrado_f567r.txt`); **R9770 f. 574r is the decipherment of the joint letter's cipher paragraph**
+(`R9770_decifrado_f574r.txt`), which stands on R9769 f. 570v after the date (nine lines, missed in Sept: the letter is
+not "all clear"). Both aligned group by group with the figures (`R9767_cipher_align.md`, `R9769_reread_log.md`): the
+1522 key holds; new code **`pem` = *-mos*** (three occurrences under the decipherments); the old `yol` is `yoh` *causa*,
+`xug` was spelled *mal*. Readings `R9767_reading.md` (0.684 plain, 1.000 explicit holes) and `R9769_reading.md` (the
+whole joint letter transcribed; 0.575 plain on 1523 spellings, 1.000 explicit holes), with English. R9767 and R9769 read
+(A), R9770 read through R9769 (B). Logs: `R9767_reread_log.md`, `R9769_reread_log.md`.
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the seven calendared
 letters (R9670-R9690) read only through Bergenroth's English abstracts of the contemporary decipherings (reviewed B).
@@ -76,5 +88,15 @@ in part**.
 
 ## Remaining gaps
 
-- R9767, the two cipher passages of f. 563r decoded, not read (spelled runs unread, code groups pem and yol not in the key; reading audit 22 Oct 2026) - blocker: not-attempted; transcribe the spelled runs sign by sign against the 1522 key (sanchez1522/key_codes.tsv) and build the passages into sentences
-- R9769/R9770 short cipher (four lines at the head of R9770's last page) not transcribed or deciphered - blocker: not-attempted; same key
+- R9767 *[?diversas]* (one sign unmatched, the decipherment torn there) - blocker: illegible
+- R9769 one numeral before *ducados de oro* (f. 569v l. 1) and *[?possessiones]* - blocker: illegible
+- R9770 clear text not collated word by word with R9769 (a duplicate; nothing rests on it) - blocker: not-attempted
+- `pem` = *-mos* not yet written to `../sanchez1522/key_codes.tsv` (proposed in b34)
+
+## Escalation
+- [x] siblings: R9670-R9770 tabulated; neighbours R9764-R9772 fetched 23 Oct (R9768 = R9767's copy + decipherment)
+- [x] clear-pages: f. 567r (R9768) and f. 574r (R9770) contemporary decipherments transcribed and aligned
+- [x] known-keys: the 1522 key (Tomokiyo 2025 + sanchez1522), unchanged
+- [x] print: Bergenroth CSP Spain 2 for May-June; the August letters not calendared
+- [x] key-rebuild: pem = -mos from three aligned occurrences
+- [x] retry: 23 Oct 2026 (b34) every image of R9767, R9768, R9769, R9770 opened at full resolution

@@ -488,6 +488,27 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): R4234 and R4239 pass-5 running readings read: both build French sentences with scattered holes (C overturned to B); fr. 3071 no. 4 is read only 35-40% by its own count and relabelled decoded, not read. Class read in part kept; fraction_read 0.95 -> about 0.91.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read b34: fetched BnF fr. 3071 ff. 9r, 9v, the slip f. 9bis and f. 10r at full size through openapi.bnf.fr IIIF (ark btv1b9060315f views 16-19).",
+   "result": "worked",
+   "technique": ["other"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "Transcribed the slip f. 9bis (the contemporary decipherment of the f. 9v cipher) in full and re-read the clear text of ff. 9r-10r band by band; the count on f. 9v l. 4 is Cifuentes; the Mantua passage and the f. 10r close transcribed for the first time.",
+   "result": "worked",
+   "technique": ["manual reconstruction"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Assembled fr3071_no4/macon1537_reading.md from the Sept glyph decodes (f. 9r) and the slip-checked f. 9v decode (agrees word for word but for car/ce que, peine/peur) plus the clear text; aligned word by word, unbracketed words carried by figures, slip or clear hand. Score 0.676 (46/68) plain, 0.868 explicit holes; look-alike letters ~0.3%. Marked read, grade B.",
+   "result": "worked",
+   "technique": ["plaintext matching", "language-model scoring", "manual reconstruction"]
   }
  ],
  "outcome": {
@@ -521,14 +542,9 @@
     "detail": "doubtful in the contemporary clear copy itself"
    },
    {
-    "item": "fr. 3071 no. 4: seven signs on f. 9r ll. 27-28, the word before 'puissance', the name group on f. 9r l. 8; clear text read loosely",
+    "item": "fr. 3071 no. 4: cipher spots on f. 9r (l. 10 middle, ll. 16-17 after 'messire Latin', ll. 27-28 seven signs, the word before 'puissance', the l. 8 name group) and single doubtful words of the clear text",
     "blocker": "illegible",
-    "detail": "blot and odd signs on the Gallica scan; no gloss for f. 9r (the slip covers f. 9v only)"
-   },
-   {
-    "item": "fr. 3071 no. 4 (11 Apr 1537): decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "about 35-40% of its cipher read; re-transcribe f. 9r ll. 3-25 by sign shape from the Gallica native scan and decode with macon_decode.py, then read f. 9v with the slip f. 9bis"
+    "detail": "blot and odd sign forms on the Gallica bitonal scan; the slip f. 9bis covers f. 9v only; fast secretary hand"
    },
    {
     "item": "R4239 letter 1, f. 35r-v first paragraph, as a running text",
@@ -536,9 +552,9 @@
     "detail": "the running reading is summarised with elisions there; write it out from the per-line record in pass5/R4239_pass5.md"
    }
   ],
-  "fraction_read": 0.91,
+  "fraction_read": 0.95,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Estimated, reading audit 22 Oct 2026: the letter-weighted figure for the seven fr. 3053 records (about 18,240 of 19,202 signs, 0.95, see below) over a denominator that now includes fr. 3071 no. 4 (about 840 signs), which is decoded, not read: 18,240/20,042 = 0.91. Before: letter-weighted after pass 5 on the fr. 3053 records: R4233 1,904/2,006; R4234 ~0.94 of 5,369; R4235 2,035/2,108; R4238 767/812; R4239 ~0.94 of 4,925; R4240 829/842; R4247 3,098/3,140; CER against contemporary clear copies 3-8%. The 0.95 is withdrawn as the target figure.",
+  "fraction_read_source": "Estimated, re-read b34 (23 Oct 2026): fr. 3071 no. 4 now reads (about 800 of its about 840 cipher signs carried): (18,240 + 800)/20,042 = 0.95. Before (reading audit 22 Oct 2026): 18,240/20,042 = 0.91 with fr. 3071 no. 4 decoded, not read. fr. 3053 records letter-weighted after pass 5: R4233 1,904/2,006; R4234 ~0.94 of 5,369; R4235 2,035/2,108; R4238 767/812; R4239 ~0.94 of 4,925; R4240 829/842; R4247 3,098/3,140; CER against contemporary clear copies 3-8%.",
   "key": "recovered",
   "codes_open": {
    "open": 1
@@ -584,7 +600,7 @@
    {"doc": "R4240", "label": "R4240, fr. 3053 f. 40r-v, Orvieto, 2 Sept 1536", "transcription": ["pass5/R4240_trans.txt", "pass5/R4240_pass5.md"], "decryption": ["pass5/R4240_pass5.md", "R4240.md"], "summary": "The general council: Vergerio carried word to the Germans that they might come and speak as the Holy Spirit inspired them; the pope, judging this 'la totale ruine de l'Eglise', has sent an auditor to summon them on the old custom instead, and the Germans say pope, cardinals and bishops must first be reformed.", "language": "fr"},
    {"doc": "R4247", "label": "R4247 letter 1, fr. 3053 f. 77r-v, Orvieto, [early Sept] 1536", "transcription": ["pass5/R4247_L1_trans.txt", "pass5/R4247_pass5.md"], "decryption": ["pass5/R4247_pass5.md", "R4247.md"], "summary": "Andrea Doria and Milan: Mâcon infers from Doria's letter to the conte dell'Anguillara a secret treaty between the pope and the Emperor and puts it to Paul III; then cardinal Filonardi's man sounds him on Milan passing to Pier Luigi Farnese's son or the young Sforza, and Mâcon answers that the King will never consent, Milan 'estant leur vray heritage'.", "language": "fr"},
    {"doc": "R4247", "label": "R4247 letter 2, fr. 3053 f. 78v, Orvieto, 1 Sept 1536", "transcription": ["pass5/R4247_L2_trans.txt", "pass5/R4247_pass5.md"], "decryption": ["pass5/R4247_pass5.md", "R4247_letter2.md"], "summary": "The second letter of the record, signed by Mâcon at Orvieto on 1 September 1536; it ends 'il seroit icy fort difficille de recouvrer gens de cheval ne artillerie; bien trouverroit on tant de gens de pied, et bons, qu'on vouldroit, et beaucoup de gentilz homes forussiz'.", "language": "fr"},
-   {"doc": "macon1537", "label": "BnF fr. 3071 no. 4, ff. 9-10 and slip f. 9bis, Rome, 11 Apr 1537", "transcription": ["fr3071_no4/aliases/macon_9r_3-25.txt", "fr3071_no4/aliases/macon_9r_26-34.txt", "fr3071_no4/aliases/macon_9v.txt"], "decryption": ["fr3071_no4/fr3071_no4_macon.md", "fr3071_no4/macon_9r_26-34.md", "fr3071_no4/macon_9v.md"], "summary": "Mâcon to Montmorency, 11 April 1537: the Farnese marriage offer (Vittoria Farnese to Cosimo de' Medici) and Paul III's threat, relayed through Latino Giovenale, to declare for the Emperor if it is refused; Pier Luigi Farnese and Novara; the King's Turkish alliance 'se verifie clerement'. The slip f. 9bis is a contemporary decipherment of the f. 9v passage, matched almost word for word. Lasry decoded this letter in 2023 but never published it.", "language": "fr", "state": "decoded, not read", "note": "The file itself says only 35-40% of the cipher is read confidently: the continuous reading has good sentences (Novara, the Cosimo marriage, the council of Mantua) between runs of \"...\" and [---], and the f. 9v part is fragments (reading audit, 22 Oct 2026); fix: re-transcribe f. 9r ll. 3-25 by sign shape from the Gallica scan, as pass 5 did for fr. 3053, and read f. 9v against the slip f. 9bis."}
+   {"doc": "macon1537", "label": "BnF fr. 3071 no. 4, ff. 9-10 and slip f. 9bis, Rome, 11 Apr 1537", "transcription": ["fr3071_no4/aliases/macon_9r_3-25.txt", "fr3071_no4/aliases/macon_9r_26-34.txt", "fr3071_no4/aliases/macon_9v.txt"], "decryption": ["fr3071_no4/fr3071_no4_macon.md", "fr3071_no4/macon_9r_26-34.md", "fr3071_no4/macon_9v.md"], "summary": "Mâcon to Montmorency, 11 April 1537: the Farnese marriage offer (Vittoria Farnese to Cosimo de' Medici) and Paul III's threat, relayed through Latino Giovenale, to declare for the Emperor if it is refused; Pier Luigi Farnese and Novara; the King's Turkish alliance 'se verifie clerement'. The slip f. 9bis is a contemporary decipherment of the f. 9v passage, matched almost word for word. Lasry decoded this letter in 2023 but never published it.", "language": "fr", "state": "read", "reading": "fr3071_no4/macon1537_reading.md", "translation": "fr3071_no4/macon1537_en.md", "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "fr3071_no4/macon1537_reading.md assembles the letter for the first time: cipher from the glyph decodes of the two Sept passes (Lasry's 2023 table), f. 9v ll. 4-16 checked against the contemporary decipherment on the slip f. 9bis (transcribed in full, macon1537_slip_f9bis.txt; agrees except car/ce que and peine/peur, where the figures are followed); clear text re-read on the Gallica images (f. 9v Mantua passage and f. 10r close for the first time; the count is Cifuentes). Reading body 0.676 (46/68) plain, 0.868 explicit holes; look-alike letters about 0.3%. Open: five short cipher spots on f. 9r and single doubtful clear words (illegible)."}}
   ],
   "key_file": ["macon_key.md", "pass5/catalogue.md", "pass5/catalogue_additions.md", "keyimg/BnF_fr3071_f9.png", "keyimg/francisMacon.png"]
  }

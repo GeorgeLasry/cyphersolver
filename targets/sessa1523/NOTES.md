@@ -8,6 +8,14 @@ letters in nearly every line, only phrases can be built (10% of sentences clean,
 ~57% below is the share of tokens given a value, withdrawn as a reading figure; about 2% of the transcribed cipher
 tokens read (estimated).
 
+23 Oct 2026, re-read (REREAD_BRIEF batch b34, Claude Opus 5.5; `R9660_reread_log.md`): **R9660 kept decoded, not
+read.** No text of it is reachable: the seven DECODE records of RAH 9/27 (R9660-R9666) and the neighbours R9656-R9659,
+R9667-R9669 hold no decipherment; f. 141r is marked *Dup.da* (the duplicate); CSP Spain 2 has no Sessa letter of 20 Feb.
+The sessa1524 key values of passes 16, 17 and b23 were applied for the first time (`reading_r9660_b34.txt`,
+`research/reading_audit/b34_sessa_apply.py`): hole rate 0.28 -> 0.21; values that fail in an R9660 context (`cas`,
+`rac`, `sir`, `le`, `nuf`, `foh`) left open here. Only the first cipher paragraph of f. 141r builds sentences:
+`R9660_reading.md` (partial, 0.273 plain / 0.727 explicit holes), `R9660_en.md`.
+
 Catalogue entry 146 ("Luis Fernández? (Sesa) to unknown recipient, 7 ciphertexts"). Worked 2026-09-21.
 
 ## 1. Identification: seven despatches of the Duke of Sessa to Charles V
@@ -75,18 +83,20 @@ Cardinals Volterra, Monte and Iacobacci; Soderini (Volterra) making war on the M
 favour; Siena after Petrucci's death (Francesco and Fabio Petrucci); the Datario, the bishopric of Tortosa; Rimini settled.
 
 ## Remaining gaps
-- R9660 decoded, not read (1,977 cipher tokens; holes in nearly every sentence, reading audit 22 Oct 2026) - blocker: needs-physical-access; the open groups need the court's decipherment leaves ff. 190, 342-343, 424-430 (RAH, not imaged); the sentences that can be built from the resolved groups are still to be written out and translated
-- R9660 code groups (~150 distinct, ~40% of its tokens; commonest cas, cag, min, rep, put, var, ges) - blocker: needs-physical-access; the letter carries no decipherment, the groups do not recur in any deciphered page on DECODE, and the court's decipherment leaves of the sister letters (9/27 ff. 190, 342-343, 424-430) are not on DECODE, only in the RAH volume
+- R9660 decoded, not read (about 2,050 cipher tokens; after b34 a hole about every fifth word; only f. 141r's first cipher paragraph builds sentences) - blocker: no-key-material; about 100 code groups (472 occurrences) unattested in any deciphered Sessa page, the code not alphabetical
+- R9660 decipherment (of this duplicate or of the first copy), if it survives - blocker: needs-physical-access; RAH volume 9/27, not imaged (seven DECODE records only; RAH Biblioteca Digital refuses automated access)
+- R9660 spelled runs that do not form words as transcribed, ff. 141v-146v - blocker: not-attempted; a sign-by-sign re-transcription at full size, as done for f. 141r in b34
 - R9661-R9664 cipher text re-read (CSP 534, 540, 541, 544) - blocker: needs-physical-access; read at the time and calendared by Bergenroth; the full decipherments are those same unimaged leaves
 - groups open in the sessa1524 key (vo, per, hay) - blocker: needs-physical-access; inherited, no attestation in any decipherment on DECODE
 
 ## Escalation
 - [x] siblings: all seven records R9660-R9666 fetched and dated; the sessa1524 sibling key identified from shared groups
-- [x] clear-pages: every page of R9660-R9666 opened; the only glosses are R9665's (read) and R9660's copyist insertions (not decipherments); the decipherment leaves ff. 190, 342-343, 424-430 are not in these seven records (neighbouring DECODE records not searched)
+- [x] clear-pages: every page of R9660-R9666 opened; the only glosses are R9665's (read) and R9660's copyist insertions (not decipherments); the decipherment leaves ff. 190, 342-343, 424-430 are not in these seven records (neighbouring DECODE records R9656-R9659, R9667-R9669 searched 23 Oct 2026: none)
 - [x] known-keys: sessa1524 key_working.md applied; it fits unchanged
 - [x] print: Bergenroth CSP Spain vol. 2 matched by folio (nos. 534, 540, 541, 544, 545); R9660 and R9665 not calendared
 - [x] key-rebuild: 15 values added from R9660/R9665 context and the R9665 gloss (key_working.md pass 15)
 - [x] retry: both halves of R9660 re-read with the pass-15 key; remaining groups have single or context-poor occurrences
+- [x] retry: 23 Oct 2026 (b34) pass 16/17/b23 values applied to R9660, f. 141r paragraph re-checked at full size and built into sentences; rest kept decoded, not read
 
 Outcome class: an audit on 21 Sept 2026 set this target to "already solved" because the court deciphered these
 letters at the time. That applies to R9661-R9664 and to R9665's short runs, but not to R9660: it has no decipherment
