@@ -1,12 +1,28 @@
 # Van Dedem (Constantinople) to Van de Spiegel, 1788–1793 — DECODE R2120, R2122, R2131
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b19): the codebook found; R2122 and R2131 read.** The legation
+inventory lists under Kroll (chargé 1784-85) **NA 1.02.20 (legatie Turkije) inv. 785**, "Sleutel geheimschrift": its six
+scans on the Nationaal Archief site are the codebook itself, headed "Kroll. Un Chiffre" (500-group pages of five
+columns of 100, words alphabetical across the rows, letters and syllables at the foot of each column, titles in
+3001-3500, a Nota on noun and preterite forms). It is this code: the slot model below had found its layout, and its
+A-grade values recur. inv. 686 (De Weiler's cipher, 1775) holds the "Berigt" on begin/einde des briefs markers and
+nulls. Every group of R2122 and R2131 looked up on the scans (`key/kroll785_values.tsv`); cipher re-read on the DECODE
+images (R2131: 2261 -> 2262, 311 -> 317?). Both letters now read: `tx/R2122_reading.md`, `tx/R2131_reading.md` (with
+`_en.md`), log `tx/R2122_R2131_reread_log.md`. R2131: the Porte bound itself to the Prussian envoy to stay neutral in
+the war with France and to make no further alliance with her. R2122: Van Dedem's demarches after the resolution of
+2 October, the Porte's wish for a loan negotiation in the Republic passed to the Prussian envoy, a sharp portrait of
+the English ambassador, a Swedish subsidy. About 14 groups give no sense where they stand (named in the readings).
+Clean-sentence share: 0.22 / 0.20 on the checker's modern Dutch list, 0.93 / 0.80 counting explicit holes only
+(period spelling). Method by part: R2120 from its contemporary decipherment; R2122/R2131 with the codebook found in the
+archive. fraction_read 1.0.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 R2120 **reads** from its contemporary clear decipherment (`tx/R2121_clear.txt`, continuous Dutch; English translation
 still to be written). R2122 and R2131 are **decoded, not read**: the graded decode has holes in nearly every clause
 (4 of 113 sentences clean, `docs/_check_reading.py`). Method now read from existing decipherment (R2120), parts for
 the rest; the 41% firm-value figure is withdrawn as a reading figure (0.673 = R2120's share of the groups).
 
-Status: in progress (R2120 read at the time; R2122, R2131 decoded in part after the 4 Oct 2026 second pass, 41% of groups firm; left: transcribe the deciphered letters in the same code, R1948-R1952, R2134, R2141, as cribs to fill the open groups)
+Status: in progress (all three letters read: R2120 from its contemporary decipherment, R2122 and R2131 with Kroll's codebook NA 1.02.20 inv. 785, 23 Oct 2026; write-up pending)
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026): R1895 (26 Aug 1799, to the Burger Agent
 van der Goes) is in a different marked system, not this 1788–93 code, and is now its own entry, a different cipher
@@ -82,17 +98,16 @@ value (grades A, B, T in `alpha/decoded_targets_v2.txt`). The running reading is
 
 ## Remaining gaps
 
-- R2122 (15 Jan 1789), decoded, not read - blocker: not-attempted; transcribe the deciphered letters in the same code (R1948-R1952, R2134, R2141) as cribs, then build sentences
-- R2131 (9 Feb 1793), decoded, not read - blocker: not-attempted; same cribs
+- R2122 and R2131: about 14 groups whose codebook value gives no sense where they stand (R2122: 1230, 1330 twice, 80, 760 twice, 3928, 1605, 1463, 2622; R2131: 319, 591) and 4414 (no such code) - blocker: too-short; each occurs once or twice, too few to establish another value (probably clerk slips: 319 for 314 "alle"; 760 the Nota's example number copied for a "g" character)
 - R2120: English translation of the contemporary decipherment not yet written - blocker: not-attempted
-- R2122 and R2131: groups with no attested value (graded "-" or "?" in `alpha/decoded_targets_v2.txt`); the alphabetical bracket narrows each but does not fix it - blocker: open-codes; more deciphered letters in this code (DECODE R1948-R1952, R2134, R2141) would test the layout on unseen text.
 
 ## Escalation
 
 - [x] siblings: R2121, R1947, R2053 transcribed and aligned (first pass); layout derived from them (second pass)
 - [x] clear-pages: R2121's clear decipherment used as the crib
 - [x] known-keys: Fagel key series R2842-R2852 compared (first pass): not this code
-- [n/a] print: Boon (2012) not checked
+- [n/a] print: Boon (2012) not checked (not online)
 - [x] key-rebuild: alphabetical-slot model, 354 values
 - [x] retry: R2122/R2131 rerun with the slot model; Codex adversarial review
+- [x] key from archive (23 Oct 2026): Kroll's codebook NA 1.02.20 inv. 785 found and read; R2122, R2131 decoded and read with it
 

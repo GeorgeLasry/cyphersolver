@@ -1,6 +1,20 @@
 # De Swart 1782: Dutch legation cipher from St Petersburg (DECODE R1036)
 
-Status: in progress. not read (reading audit, 22 Oct 2026: R1036 and R1040 decoded, not read).
+Status: in progress. Read in part (23 Oct 2026, b19: R1036 and the 1765-key segment of R1040 read; the first 2,259 groups of R1040, in a missing code, not read).
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b19): R1036 and R1040's 1765-key segment read.** Nothing new on DECODE
+(each record's only attachment is its ciphertext transcription; no decipherment on any image) and nothing online at
+the Nationaal Archief (1.01.02 inv. 7408, 3.01.25 inv. 610, 1.02.13 inv. 114 and 158 not scanned). The 30 Sept
+corrections are now in `decode_1765.py` (`R1036_SEPT30`, the leading-dash fix, 191 ens on image 5416), with two high
+scan readings (52^o sedert eenigen, 71^" appuyeeren) and a context pass on R1040 (`R1040_B19`, 28 values, each fitting
+every occurrence in R1040 and R1036: 34^_ in, 21^^ of, w+78 Weenen, 15^_ het hof van, 922 Hertog, 617^" courier ...).
+**Image 5474 belongs to the first, missing code** (its marks ^' and ^__, 69% 1765-key coverage, nonsense after the last
+words of 5473): the 1765 segment is 5,625 groups (5459 group 180 to 5473), the missing code 2,259. DECODE's constant
+key-transcription letter confusions (hot = hof, chi = che, cerd = eerd ...) are listed in `R1038_key_misreadings.tsv`.
+Readings with English: `R1036_reading.md` (whole despatch) and `R1040_part2_reading.md`; logs `R1036_reread_log.md`,
+`R1040_part2_reread_log.md`. Clean-sentence share: 0.09 / 0.038 on the checker's modern Dutch list, 0.769 / 0.666
+counting explicit holes only (period spelling). Both set read (grade B); method read after matching with key from
+external sources (R1038); class read in part; fraction_read 0.765 (groups of the read parts).
 
 **22 Oct 2026, reading audit** (George Lasry's test): R1036_machine_decipherment.txt and R1040_second_key_machine_decipherment.txt split words into letters and carry bracketed codes and query marks in nearly every line; the topic follows, the sentences do not. Both are *decoded, not read*; class read in part -> not read, method -> not solved, fraction_read 96.7% -> 0 (the share of groups given a value is withdrawn as a reading figure). The R1038 key match stands, and the normalised Greek-project passage below reads.
 
@@ -166,11 +180,9 @@ No published decipherment of R1036 or R1040 was found. The search covered record
 and subject. The Oterleek-codes paper (HistoCrypt 2026) documents the codebook family but not these letters.
 
 ## Remaining gaps
-- R1040 first part, 1,928 groups (images 5453-5458, 5459 groups 1-179) - blocker: no-key-material; a different, missing Rechteren-family code (probably NA inv. 158, not online); crib transfers from R2032/R2051/R2052 cover 2-3% and give no prose
-- R1040 second part, about 700 of 5,956 groups without a value - blocker: open-codes; the 1765 key with the R1036 context values and R1038 scan readings (5,256 given a value, R1040_second_key_tokens.tsv); no context pass yet on this part's own unread groups
-- R1036, 56 groups (51 distinct rare codes) - blocker: illegible; entries lost in the binding shadow of the R1038 scans, blank or too faint
-- R1036: machine decipherment not yet built into sentences - blocker: not-attempted; apply the 30 Sept corrections (leading dash, 47^_ = k, key misreadings) to decode_1765.py, regenerate, normalise line by line
-- R1040 second part: machine decipherment not yet built into sentences - blocker: not-attempted; context pass on its own unread groups, then a normalised reading
+- R1040 first part, 2,259 groups (images 5453-5458, 5459 groups 1-179, and 5474) - blocker: needs-physical-access; a different, missing Rechteren-family code, probably NA 1.02.13 inv. 158, not scanned online; crib transfers from R2032/R2051/R2052 cover 2-3% and give no prose
+- R1040 second part, about 240 groups without a value and the French quotations (about 8% of the segment) read only in part - blocker: illegible; R1038 cells lost in the binding shadow or too faint, rare codes not fixable from context
+- R1036, 38 groups without a value and the line cut off at the top of image 5417 - blocker: illegible; R1038 cells lost in the binding shadow or too faint; the photograph cuts the line
 
 ## Escalation
 - [x] siblings: R1038 (the key), R1039/R2032/R2051/R2052 plain-cipher pairs of the legation opened and aligned
@@ -178,4 +190,4 @@ and subject. The Oterleek-codes paper (HistoCrypt 2026) documents the codebook f
 - [x] known-keys: 1765 Croiset key fits R1036 and R1040 part 2; the 1803 Croiset relative tried on R1040 part 1, nonsense
 - [x] print: no decipherment of R1036 or R1040 in print (Leeuw 2000, Oterleek codes HistoCrypt 2026)
 - [x] key-rebuild: 34 context values and 41 scan readings for R1036; crib transfers for R1040 part 1 (2-3%)
-- [x] retry: R1040 part 2 decoded again with the extended key (decode_1765.py includes the 34 context values and 41 scan readings); a context pass on its own ~700 unread groups is still to do
+- [x] retry: R1040 part 2 decoded again with the extended key; 23 Oct 2026 (b19): 30 Sept corrections applied, context pass (R1040_B19, 28 values), R1036 and R1040 part 2 normalised into readings and read

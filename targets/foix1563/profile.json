@@ -86,7 +86,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-10-23"
  },
  "solution": [
   {
@@ -245,6 +245,33 @@
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). Both proposed decodes read: Beck's French layer (FRENCH_AND_ENGLISH.txt) builds clauses in passages B and D ('son but seroit de nous faire entrer en quelque debourssement de deniers') but has gaps or unresolved letter strings in most sentences of A and C; his literal layer is unspaced letters with sporadic words; Nur's v5 rendering is fragments between ellipses (docs/_check_reading.py: 0-57% of sentences clean). Both entries relabelled decoded, not read; class read in part -> not read, method read after matching with key from external sources -> not solved (the key match kept as a part); fraction_read 0.506 -> 0.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b19): DECODE R9241 re-fetched: two images, no attachment, transcription or comment; both opened, no decipherment (Forbes copied only the cipher passages); neighbouring copies on ff. 148-149 are other letters (Coligny, Throckmorton). Print searched before (Forbes, CSP Foreign vi, La Ferriere).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "sibling key",
+   "technique": ["key matching"],
+   "what": "Beck's key v13 combined with the 1565 cipher's word signs for the numbers he left open (10 dict, 26 bien, 34 tant, 40 faict, 70 toute, 82 ceulx, 37 me/car; each fits every occurrence) and the 1565 polyvalence f = u at two places (aussi, roiaulmes); b19_foix_decode.py, texts/R9241_decode.txt.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["manual reconstruction"],
+   "what": "Every trouble spot checked on the DECODE photographs with Beck's line coordinates (A2, A4, A8, A12, A14-A16, B1, B3, C1-C2, D0, D6-D8): the signs are as Beck transcribed (his 20 in A8 is written 'zo'); no label changed. New: 'et ioue durant noz trouble le personnaige que vous scauez assez', 'aiant faict les [beaulx] [auancemens] de la [guere]', 'langaige accompaignee'. A2, A14-A16, B3, D7 and the closing name build no words under Beck's, the 1565 or Nur's fitted values.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["contextual inference", "language-model scoring"],
+   "what": "Reading texts/R9241_reading.md with English (every unbracketed word carried, b19_wordcheck.py). Clean-sentence share: _check_reading.py 0.361; explicit holes only 0.609. Below the bar (French documents at 0.47-0.56 kept unread): R9241 stays decoded, not read, with this partial reading.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -260,15 +287,15 @@
   "key": "partial",
   "fraction_read": 0.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences in either proposed decode, so nothing counts as read (0). Withdrawn as a reading figure: 0.506, the share of letters of Beck's literal layer (beck-preliminary/results/literal.txt) falling in corpus words of 5+ letters (shuffled-key ceiling 34.2%), which measures word fragments, not sentences.",
+  "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences in either proposed decode, so nothing counts as read (0). Withdrawn as a reading figure: 0.506, the share of letters of Beck's literal layer (beck-preliminary/results/literal.txt) falling in corpus words of 5+ letters (shuffled-key ceiling 34.2%), which measures word fragments, not sentences. 23 Oct 2026 (b19): the combined re-reading (Beck's key with the 1565 word signs, texts/R9241_reading.md) scores 0.361 on _check_reading.py (0.609 counting explicit holes only) and stays decoded, not read; fraction 0.",
   "verification": [
    "matched control"
   ],
   "gaps": [
    {
-    "item": "R9241 passages (1)-(4)",
-    "blocker": "open-codes",
-    "detail": "conflicts between the 1565 chart and values fitted on R9241 (r m/d, z p/i, Yb l/u, 3/Z3), unvalued 80 and 93, a dozen open signs; needs a glyph audit and a de Foix letter of 1563-64"
+    "item": "R9241 passages (1)-(4): the combined re-reading builds sentences in (2)-(4) but breaks twice in (1) (A2 \"prolizgnaulx\", A14-A16) and leaves B3, D7 and the closing name unread; clean-sentence share 0.361 (explicit holes 0.609)",
+    "blocker": "no-key-material",
+    "detail": "the open signs have no value in the 1565 chart (Tomokiyo, BnF fr. 15971) and no decipherment of a de Foix letter of 1563 is known; de Foix changed his key in early 1564; signs checked on the photographs, no label in doubt"
    }
   ],
   "notes": "Catalogue 92 (part). R9241 read in part with de Foix's key; Status: in progress. R9238 moved to coligny1563 on 14 Oct 2026.",
@@ -306,7 +333,7 @@
     ],
     "translation": "beck-preliminary/FRENCH_AND_ENGLISH.txt",
     "summary": "The Queen Mother writes to Paul de Foix, French ambassador in London, in de Foix's own cipher; the letter, copied by Patrick Forbes into his deciphering file (BL Add MS 4136), was evidently intercepted by the English. Beck's proposed partial decipherment speaks of the reconciliation needed between the two kingdoms, of how the negotiation goes, and of an aim to draw France into some outlay of money, 'dont nous n'avons nulle intention'. Partial, not at the read bar.",
-    "note": "Beck's proposed reading: passages B and D give connected clauses, but A and C have gaps or unresolved letter strings in most sentences, and the literal layer is unspaced letters with sporadic words; a hypothesis-grade decode, not a reading (reading audit, 22 Oct 2026).",
+    "note": "Beck's proposed reading: passages B and D give connected clauses, but A and C have gaps or unresolved letter strings in most sentences (reading audit, 22 Oct 2026). Used 23 Oct 2026 (b19) as the base of the combined re-reading (third entry), which also stays below the bar.",
     "state": "decoded, not read",
     "language": "fr"
    },
@@ -324,7 +351,18 @@
      "r9241_foix1565key/v5_rendering.txt"
     ],
     "summary": "An independent reading of the same letter with the frozen key from de Foix's 1565 cipher (Tomokiyo's chart, checked on BnF fr. 15971 ff. 21-26) plus a layer of values fitted on R9241, every reading graded. It converges with Beck's on phrases such as 'la negotiation prend quelque traict' and 'quelque deboursement de deniers'. The project's own transcriptions (first pass qm, second pass qm2) are listed; the exact 1,026-token token file the reading was decoded from is not separately in the folder.",
-    "note": "Nur's graded rendering with the 1565 key: dictionary fragments between ellipses, with conflicting values (r m/d, z p/i, Yb l/u) unresolved; no passage builds sentences (reading audit, 22 Oct 2026).",
+    "note": "Nur's graded rendering with the 1565 key: dictionary fragments between ellipses, with conflicting values (r m/d, z p/i, Yb l/u) unresolved; no passage builds sentences (reading audit, 22 Oct 2026). Its frozen 1565 word signs (10, 26, 34, 40, 70, 82) are used in the b19 combined re-reading (third entry).",
+    "state": "decoded, not read",
+    "language": "fr"
+   },
+   {
+    "doc": "R9241",
+    "label": "R9241: combined re-reading, Beck's key with the 1565 word signs (b19, 23 Oct 2026)",
+    "note": "Re-read 23 Oct 2026 (b19): Beck's transcription and key v13 with the word signs of de Foix's 1565 cipher for the numbers he left open (10 dict, 26 bien, 34 tant, 40 faict, 70 toute, 82 ceulx, 37 me/car) and f = u twice; every trouble spot checked on the DECODE photographs (no label changed). Passages (2)-(4) build sentences with scattered holes; passage (1) breaks twice mid-sentence (A2, A14-A16), and B3, D7 and the closing name stay unread. Clean-sentence share of the body 0.361 on _check_reading.py (fr), 0.609 counting explicit holes only: below the bar, so decoded, not read, with the partial reading kept (texts/R9241_reading.md). Blocker: no-key-material (no 1563 decipherment of a de Foix letter; the open signs have no value in the 1565 chart).",
+    "transcription": "texts/beck_transcription.txt",
+    "decryption": ["texts/R9241_decode.txt", "texts/R9241_reading.md"],
+    "reading": "texts/R9241_reading.md",
+    "translation": "texts/R9241_en.md",
     "state": "decoded, not read",
     "language": "fr"
    }

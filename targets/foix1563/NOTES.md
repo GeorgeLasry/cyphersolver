@@ -1,7 +1,17 @@
 # Catalogue 92 (part): Catherine de' Medici to Paul de Foix, 15 Jan 1563, BL Add MS 4136 ff. 148v-149 (DECODE R9241) — NOTES
 
 Status: in progress
-
+
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b19): still decoded, not read.** DECODE R9241 has only its two images (no
+attachment, no decipherment). Combined re-reading `texts/R9241_reading.md` (with `_en.md`, log
+`texts/R9241_reread_log.md`): Beck's transcription and key v13 plus the word signs of de Foix's 1565 cipher for the
+numbers he left open (10 dict, 26 bien, 34 tant, 40 faict, 70 toute, 82 ceulx, 37 me/car), f = u twice; every trouble
+spot checked on the photographs (signs as Beck has them). New: "aiant faict les [beaulx] [auancemens] de la [guere] et
+ioue durant noz trouble le personnaige que vous scauez assez", "de langaige accompaignee de la dexterite de son esperit".
+Passages (2)-(4) build sentences; (1) breaks twice mid-sentence. Clean-sentence share 0.361 on `_check_reading.py`,
+0.609 counting explicit holes only: below the bar, kept as the partial reading (third `outcome.texts` entry).
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 R9241 is **decoded, not read** in both proposed decodes. Beck's French layer gives connected clauses in passages B and D
 ("son but seroit de nous faire entrer en quelque debourssement de deniers, dont nous n'avons nule intention") but
@@ -111,8 +121,7 @@ Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
 
 ## Remaining gaps
 
-- R9241 (passages 1-4), decoded, not read - blocker: not-attempted; glyph audit of the conflicting values on the images, then build passages A and C into sentences
-- R9241 Catherine de' Medici to Paul de Foix, 15 Jan 1563, passages (1)-(4): key identified (de Foix 1565, see above) but the reading is partial; conflicts between the 1565 chart and values fitted on R9241 (r m/d, z p/i, Yb l/u, 3/Z3) and the unvalued 80 and 93 need a glyph audit on the images and a de Foix letter of 1563-64 - blocker: open-codes
+- R9241 (passages 1-4), decoded, not read: the combined re-reading (texts/R9241_reading.md) breaks twice in passage (1) (A2 "prolizgnaulx", A14-A16 "uoulrigniuir ... desineramoii") and leaves B3 "cresin", D7 "r[N]ert" and the closing name unread - blocker: no-key-material; the signs are legible and as transcribed, but their values in this letter are given neither by the 1565 chart (Tomokiyo, BnF fr. 15971) nor by any decipherment of a de Foix letter of 1563 (he changed his key in early 1564)
 
 ## Escalation
 
@@ -121,6 +130,7 @@ Review, 7 Oct 2026 (`beck_control.py`, `lang` model fr-1600-letters, no spaces):
 - [x] known-keys (4 Oct 2026): Tomokiyo's de Foix key (BnF fr. 15971, 1565) fits R9241, see above. Earlier: Throckmorton first/second/third ciphers and Croft's (R9260-R9262) compared; then every DECODE key record dated 1550-1580 with French plaintext: R335 (Condé 1562, fits R9238 not R9241), R355, R331, R3818, R3820 (Fontenay 1583); none fits R9241
 - [x] print: Forbes ii, CSP Foreign vi (whole volume), La Ferrière i-ii searched; not found
 - [x] key-rebuild: no crib or sibling key exists; ciphertext-only swap annealing (one letter per sign, with nulls, pairs, syllables; 5 languages) on both transcriptions, all negative
+- [x] retry (23 Oct 2026, b19): Beck's key + 1565 word signs, trouble spots checked on the photographs, partial reading texts/R9241_reading.md (0.361 / 0.609)
 - [x] retry: sign-by-sign re-transcription of both pages (qm2_f148.txt, qm2_f149.txt, merged qm2_tokens.txt: 1007 tokens, 92 types, IoC 0.031); anneal3.py French, English and French-with-nulls on it: no language (r6_*.txt)
 
 ## Next steps
