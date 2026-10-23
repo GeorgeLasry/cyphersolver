@@ -1,6 +1,18 @@
 # Alonso Sánchez (Venice) to Charles V, 1522 — RAH Salazar 9/23–9/26, DECODE R9593–R9657
 
 Status: in progress
+**23 Oct 2026, r2i (Claude Opus 5.5)**: **R9635's tear filled from its own cipher**: the ten torn words of f. 22r ll. 9-11
+stand in cipher on f. 20r ll. 11-14 and read sign by sign with Tomokiyo's key (*en la dicha capitulacion. Repliqueles que
+las tierras estavan en poder del señor infante, y respondieron que quien quiera que los tuviese ...*; `hec` = quiera,
+`vac` = dicha, `gta` = l + `ta` = les); no second copy exists on the record or its neighbours. R9635 0.833 -> 0.913
+(v2_score, explicit holes). **Every DECODE record of the Sánchez run R9593-R9657 fetched and every image opened** (52
+records, 163 images; `research/reading_audit/r2i_fetch.py`, scratchpad `reread/r2i/`): two more contemporary
+decipherments found and read: **R9613** (18 June 1522; clear copy ff. 206r-207v of the same record; `R9613_reading.md`,
+0.99) and **R9641** (27 Oct 1522; clear copy ff. 187r-188r filed under R9642, which is the letter's duplicate cipher;
+`R9641_reading.md`, 1.0; new value `vad` = duque). Both checked against their cipher with Tomokiyo's key. The other
+~40 Sánchez letters carry no decipherment on DECODE (the "Inline Cleartext" flag marks clear opening/closing paragraphs
+and postscripts) and were not read: gap not-attempted (sign-by-sign reading with the key, 2-15 pages each). R9654 has
+no images. fraction_read 0.67 -> 0.93 on the four letters worked (estimated, plaintext words).
 **23 Oct 2026, re-read (REREAD_BRIEF b23)**: **R9635 read** from its own contemporary decipherment, a clear court-hand
 copy on f. 22r (DECODE image P3, right page) that no earlier pass had opened; checked against the cipher of ff. 20r-20v
 with Tomokiyo's key, all checks agree (the old edition's "darian" is *pagarian*; `hec` = Inglaterra withdrawn). Reading
@@ -387,10 +399,11 @@ The new-reading claim for R9635 is therefore reduced to the Spanish text and the
 
 ## Remaining gaps
 - R9653 cipher, second paragraph (f. 299v ll. 7-12) and single groups of the first, decoded, not read - blocker: no-key-material; xug, zi, tac, lud, qef, sob, ca, nu absent from Tomokiyo's table, single contexts, no decipherment bound or imaged
-- R9653 second copy (f. 300v) and R9654 (ff. 301-302, same date) - blocker: needs-physical-access; f. 300v only as faint bleed-through, R9654 not imaged on DECODE
-- R9635 f. 22r tear across ll. 9-10 (about ten words) - blocker: not-attempted; the same passage stands in cipher on f. 21r
+- R9653 second copy (f. 300v) and R9654 (ff. 301-302, same date) - blocker: needs-physical-access; f. 300v only as faint bleed-through, R9654 not imaged on DECODE (rechecked 23 Oct 2026)
+- R9635 f. 22r tear across ll. 9-11 - closed 23 Oct 2026 (r2i): filled from the cipher of f. 20r ll. 11-14, read sign by sign
 - R9635 four uncertain words of the decipherment ([?bastar], [?tenido], [?Menorami], [?Lucerna]) - blocker: illegible; cramped court hand at DECODE's resolution
-- the other Sánchez records of 9/23-9/26 (about 27) - blocker: not-attempted; most have a bound contemporary decipherment; transcription/edition not done
+- R9613 and R9641: three and two uncertain words of their decipherments ([?nescia], [?nemora], [?sus pagos]; [?conversacion], [?vera]) - blocker: illegible; fast cursive at DECODE's resolution
+- the other Sánchez records of 9/23-9/26 (R9593-R9604, R9606-R9612, R9614-R9633, R9636-R9640, R9643, R9647, R9651, R9655, R9657; about 40 letters) - blocker: not-attempted; all images opened 23 Oct 2026: no decipherment imaged (court decipherments abstracted in CSP Spain 2 for 14 of them are filed elsewhere); each is readable sign by sign with Tomokiyo's key, not done
 - Lope Hurtado records R9634, R9644-R9646, R9648-R9650, R9652, R9656 - blocker: no-key-material; a third cipher, finals p/z absent from Sánchez's key; groups not in Tomokiyo's Juan Manuel table (see the lopehurtado1522 target)
 
 ## Escalation
@@ -400,3 +413,4 @@ The new-reading claim for R9635 is therefore reduced to the Spanish text and the
 - [x] print: done 2026-09-21 — Bergenroth CSP Spain vol. 2 (1866) grepped by Salazar folio; 14 of the DECODE records here are calendared as "Autograph in cipher. Contemporary deciphering" (English abstracts made from the bound decipherments). R9635 = no. 476 confirms the reading; the May 9/24 run and R9653 are not calendared. See "Calendared in CSP Spain 2" below
 - [x] key-rebuild: c-block numerals by alphabetical bracket (cab, cef, cif confirmed), lel = puede, va = despacho; sign table from R9605
 - [x] retry: 23 Oct 2026 (b23) — every DECODE image reopened (R9635's f. 22r decipherment found, R9653's f. 299v cipher found); R9653 re-read sign by sign and regraded (still decoded, not read); R9635 read
+- [x] retry: 23 Oct 2026 (r2i) - R9635 tear read in the cipher of f. 20r; all 52 Sánchez records of R9593-R9657 fetched and every image opened; decipherments of R9613 (ff. 206-207) and R9641 (ff. 187-188, under R9642) found and read

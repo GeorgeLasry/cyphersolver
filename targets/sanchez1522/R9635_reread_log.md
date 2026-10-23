@@ -74,3 +74,27 @@ uncertain words are marked `[?…]` rather than resolved.
 - *[?…] [?bastar]* (l. 12), *[?tenido]*, *[?Menorami]*, *[?Lucerna]*: hand uncertain at DECODE's resolution
   (blocker illegible; the cipher of f. 20v could settle *tenido* and the name).
 - The cipher of f. 21r beyond the glossed lines was not aligned word by word with the decipherment.
+
+## r2i (23 Oct 2026, Claude Opus 5.5): the tear on f. 22r
+
+- **Second copy / decipherment looked for first.** The record's three images (P1-P3) were the whole of what DECODE
+  has: P3 left is f. 21v (address leaf and docket, no text of the letter), P3 right the decipherment itself. The
+  neighbouring records are other letters (R9634 Lope Hurtado 13 Sept, Genoa; R9636 Sánchez 3 Oct, opened in this pass:
+  cipher + clear, no copy of 16 Sept). CSP Spain 2 no. 476 is an abstract only. So no second text of the torn lines.
+- **The cipher carries them.** The torn words stand on f. 20r ll. 11-14 (P1 right), read sign by sign on 2.5x crops
+  (scratchpad `reread/r2i/L11a..L14c.png`):
+  `gad` ∞-m-ẗ4 `vum zap vuc vog rug vac yig` ∂-a#-#-& | g-4-ao-g-a# `ho` g-`ta` |
+  `ho` g-`ta` `ho rug`+s qa#-4-fng `vum` g#-n-ẗ4 `vog` ao-#-`xig`-g |
+  `xel gub rac` g g-`ta` ao-#-& `vu` 4-g-#-& `ho hob hec ho pac`+s |
+  ✗ₒ-m-g#-a#-4-Lo-∂ `dom pud famy lic vuc` …
+  = *se-gun esta assenta-do en la dicha capitula-cion. Repli-que-l-es que l-es* [sic: the cipher has `ho gta` twice
+  across the line break; the decipherer wrote *…es que*] *que las tierras estavan en poder del señor infante y
+  respondieron que quien quiera que los tuviese vuestra magestad havia prometi-do …*
+- Values: `hec` = quiera (bracket h-block `hob` quien < `hec` < `hed` rey; the decipherment's *quiera* stands over it);
+  `vac` = dicha; `zap` (assenta-) fixed by the decipherment's *assentado*, outside Tomokiyo's C3 set (p), kept as read;
+  `gta` = l-sign + `ta` (es) = *les* (l. 10 `ho gta sa` = *que les fue-*, the decipherment's *que les fuessen*); `g`
+  before `gta` on l. 13 is the conjunction *y*; ✗ₒ/Lo are the t/s pair (t-u-v-i-e-s-e). The 20 Sept `hec` =
+  Inglaterra was this line misread.
+- Reading and English updated: the tear is filled, unbracketed, from the figures. `v2_score.py`: explicit holes
+  **0.833 → 0.913** (21/23), plain 0.417 → 0.435. Open in R9635 now: the four uncertain words of the decipherment
+  (*[?ya] … [?bastar]*, *[?tenido]*, *[?Menorami]*, *[?Lucerna]*), blocker illegible.

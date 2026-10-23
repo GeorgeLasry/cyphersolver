@@ -35,7 +35,7 @@
     },
     {
       "id": "R9635",
-      "read": "read in part",
+      "read": "read",
       "shelfmark": "RAH, Signatura 9/26, f. 20-22 (DECODE R9635)",
       "date": "16 Sept 1522",
       "year": 1522,
@@ -62,6 +62,64 @@
         "source": "DECODE images fetched 2026-09-20",
         "image_quality": "good",
         "notes": "f. 20r is a full page of about 25 lines of cipher. Every line now carries a reading; the page is read throughout in substance while a scatter of spelled runs inside partially-read lines stays open. It is not a word-perfect diplomatic edition. The token count is of resolved code groups, counted by hand from edition/r9635_f20r.md, not measured by _check_profile.py."
+      }
+    },
+    {
+      "id": "R9613",
+      "read": "read",
+      "shelfmark": "RAH, Signatura 9/24, f. 203-207 (DECODE R9613)",
+      "date": "18 Jun 1522",
+      "year": 1522,
+      "country": "Spain",
+      "route": "Venice -> imperial court",
+      "language": "Spanish",
+      "pages": 11,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": ["separate folio"],
+        "source": "contemporary decipherment, a clear copy in a secretary's cursive on ff. 206r-207v of the same DECODE record; CSP Spain 2 no. 429 (Bergenroth 1866) abstracts it",
+        "partial": false
+      },
+      "length": {
+        "tokens": 1262,
+        "unit": "mixed",
+        "measured": false,
+        "file": "R9613_reading.md"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE images fetched 2026-10-23 (r2i)",
+        "image_quality": "fair",
+        "notes": "The cipher (ff. 203r-205v) was not transcribed; the count is the plaintext words of the decipherment's reading body, an estimate of the cipher's extent, not a token count."
+      }
+    },
+    {
+      "id": "R9641",
+      "read": "read",
+      "shelfmark": "RAH, Signatura 9/26, f. 173-174, duplicate f. 184-186 (DECODE R9641, R9642)",
+      "date": "27 Oct 1522",
+      "year": 1522,
+      "country": "Spain",
+      "route": "Venice -> imperial court",
+      "language": "Spanish",
+      "pages": 4,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": ["separate folio"],
+        "source": "contemporary decipherment, a clear court-hand copy on ff. 187r-188r, filed on DECODE under R9642",
+        "partial": false
+      },
+      "length": {
+        "tokens": 418,
+        "unit": "mixed",
+        "measured": false,
+        "file": "R9641_reading.md"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE images fetched 2026-10-23 (r2i)",
+        "image_quality": "good",
+        "notes": "The cipher (ff. 173r-174r and its duplicate ff. 185r-186r) was not transcribed beyond the checked opening and closing lines; the count is the plaintext words of the decipherment's reading body, an estimate."
       }
     }
   ],
@@ -349,16 +407,51 @@
       "what": "R9653 scored: reading body 0.842 explicit-hole share (32/38), 0.368 plain, but the cipher passages alone 0.455 (5/11) explicit holes, 0.091 plain: the second cipher paragraph (Adorno, the protonotary, Juan Manuel) has seven open code groups in four sentences. Kept decoded, not read; R9653_reading.md kept as a partial reading. 15 letters rest on a look-alike sign.",
       "result": "failed",
       "technique": ["language-model scoring"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "r2i: R9635 f. 22r tear (about ten words, ll. 9-11). No second copy or decipherment on the record (P1-P3 only) or the neighbouring records; the passage read sign by sign in the cipher of f. 20r ll. 11-14 with Tomokiyo's key: 'en la dicha capitulacion. Repliqueles que las tierras estavan en poder del señor infante, y respondieron que quien quiera que los tuviese vuestra magestad havia prometido restituyrlas'. New values hec = quiera (the 20 Sept 'Inglaterra' withdrawn), vac = dicha; gta = l-sign + ta = les. Reading 0.833 -> 0.913 explicit holes.",
+      "result": "worked",
+      "technique": ["key matching", "plaintext matching"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "access",
+      "what": "r2i: all DECODE records R9593-R9657 of Sánchez (52, Lope Hurtado excluded) fetched with images and record text; all 163 images opened on contact sheets. Decipherments found only for R9605 (known), R9613 (ff. 206r-207v, new), R9635 (known) and R9641 (ff. 187r-188r, filed under R9642, new); R9654 has no images; the rest are cipher with clear passages, no decipherment.",
+      "result": "partial",
+      "technique": ["other"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "r2i: R9613 (18 June 1522) read from its contemporary decipherment (R9613_decifrado_f206.txt, 103 lines), first sentence checked against the cipher of f. 203r with Tomokiyo's key (hug = recebi confirmed). R9613_reading.md 0.99 explicit holes, 0.657 plain; English R9613_en.md.",
+      "result": "worked",
+      "technique": ["key matching", "plaintext matching"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "r2i: R9641 (27 Oct 1522) read from the contemporary decipherment on ff. 187r-188r (DECODE R9642), checked against the cipher opening and closing (vad = duque, new). R9641_reading.md 1.0 explicit holes, 0.735 plain; English R9641_en.md. R9642 is the duplicate cipher ('es treslado de otra enbiada por via de Genova; esta va por Roma').",
+      "result": "worked",
+      "technique": ["key matching", "plaintext matching"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "r2i: the remaining ~40 Sánchez letters of 9/23-9/26 not read: no decipherment imaged, sign-by-sign reading with the key not attempted in this pass (gap not-attempted).",
+      "result": "failed",
+      "technique": ["other"]
     }
   ],
   "outcome": {
     "method": "read from existing decipherment",
-    "method_basis": "23 Oct 2026 (b23): R9635 is read from its contemporary decipherment, a clear copy on f. 22r of the DECODE record, checked against the figures of ff. 20r-20v with Tomokiyo's 2025 key. R9653 has no decipherment: its cipher (f. 299r foot and f. 299v) was read sign by sign with Tomokiyo's key and builds sentences only in its first paragraph, so it stays decoded, not read.",
+    "method_basis": "23 Oct 2026 (b23): R9635 is read from its contemporary decipherment, a clear copy on f. 22r of the DECODE record, checked against the figures of ff. 20r-20v with Tomokiyo's 2025 key. R9653 has no decipherment: its cipher (f. 299r foot and f. 299v) was read sign by sign with Tomokiyo's key and builds sentences only in its first paragraph, so it stays decoded, not read. r2i (23 Oct 2026): R9613 and R9641 read from contemporary decipherments imaged on DECODE (R9613 ff. 206-207; R9641's on ff. 187-188 under R9642), each checked against its cipher with Tomokiyo's key; R9635's torn passage filled from its own cipher.",
     "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
     "class": "read in part",
-    "fraction_read": 0.67,
+    "fraction_read": 0.93,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "22 Oct 2026, reading audit: neither letter's cipher builds sentences, so nothing counts as read (0; estimated, no token base exists). Withdrawn as a reading figure: 0.6 from NOTES (share of code groups resolved on the two leaves), never measured. 23 Oct 2026 (b23): R9635 reads (contemporary decipherment, f. 22r), R9653 does not. No sign count exists for R9635, so the share is taken on the plaintext words of the cipher passages: R9635 297 words (R9635_reading.md, all cipher text) against R9653's 147 cipher words (R9653_reading.md, second and third paragraphs): 297/444 = 0.67, estimated.",
+    "fraction_read_source": "22 Oct 2026, reading audit: 0 (neither letter's cipher built sentences). 23 Oct 2026 (b23): R9635 reads, R9653 does not: 297/444 = 0.67 on plaintext words. 23 Oct 2026 (r2i): R9613 (18 June) and R9641 (27 Oct) added, both read from contemporary decipherments found on the DECODE images; on the plaintext words of the four letters worked (reading bodies: R9635 299, R9613 1,262, R9641 418 read; R9653's 147 cipher words not): 1,979/2,126 = 0.93, estimated. Over the whole group this is not a share: some forty other Sánchez records of 9/23-9/26 are cipher-only on DECODE and were not read (outcome.gaps).",
     "key": "partial",
     "verification": [
       "key confirms",
@@ -375,22 +468,17 @@
       {
         "item": "R9653 second copy (f. 300v) and R9654 (ff. 301-302, same date)",
         "blocker": "needs-physical-access",
-        "detail": "f. 300v is seen only as faint bleed-through on f. 300r; R9654 has no images on DECODE; either could carry a decipherment or a differently enciphered duplicate"
-      },
-      {
-        "item": "R9635 f. 22r, a tear across ll. 9-10 (about ten words)",
-        "blocker": "not-attempted",
-        "detail": "the same passage stands in cipher on f. 21r, not read sign by sign in b23"
+        "detail": "f. 300v is seen only as faint bleed-through on f. 300r; R9654 has no images on DECODE (checked again 23 Oct 2026, r2i: the record lists no files)"
       },
       {
         "item": "R9635 four uncertain words of the decipherment ([?bastar], [?tenido], [?Menorami], [?Lucerna])",
         "blocker": "illegible",
-        "detail": "cramped court hand at DECODE's resolution"
+        "detail": "cramped court hand at DECODE's resolution; the torn passage of f. 22r is now filled from the cipher of f. 20r (r2i)"
       },
       {
-        "item": "the other Sánchez records of 9/23-9/26 (about 27)",
+        "item": "the other Sánchez records of 9/23-9/26 (R9593-R9604, R9606-R9612, R9614-R9633, R9636-R9640, R9643, R9647, R9651, R9655, R9657; about 40 letters)",
         "blocker": "not-attempted",
-        "detail": "most have a bound contemporary decipherment; transcription/edition not done"
+        "detail": "r2i (23 Oct 2026): every DECODE record of the run fetched and every image opened (163 images, scratchpad reread/r2i): apart from R9605 (decipherment ff. 42-43, Tomokiyo's source), R9613, R9635 and R9641/R9642 none carries a decipherment; DECODE's 'Inline Cleartext: Yes' marks clear opening or closing paragraphs and postscripts ('Somos a ... es treslado de otra enbiada por via de Genova'), not decipherments (R9625 f. 137r is a clear letter to the Chancellor, R9628 f. 157r and R9630 f. 180r clear postscripts). The court decipherments Bergenroth abstracted (CSP Spain 2, 14 letters) are not imaged. Each letter is readable sign by sign with Tomokiyo's key (the method of R9635 f. 20r and R9653), 2-15 pages of cipher apiece: workable, not done"
       },
       {
         "item": "Lope Hurtado records R9634, R9644-R9646, R9648-R9650, R9652, R9656",
@@ -418,7 +506,7 @@
           "grade": "A",
           "by": "Claude Opus 5.5",
           "date": "2026-10-23",
-          "note": "R9635_reading.md follows the contemporary decipherment of the letter, a clear court-hand copy on f. 22r (DECODE image P3, right page), not noticed before; checked against the cipher of ff. 20r-20v with Tomokiyo's key wherever read sign by sign, and every check agrees except the old edition's 'darian' (= pagarian) and hec = Inglaterra (withdrawn). Reading body 0.833 (20/24) counting explicit holes only, 0.417 plain (period spelling: tardavan, havian, deven, assentada). Open: a tear of about ten words on f. 22r ll. 9-10 and four uncertain words ([?bastar], [?tenido], [?Menorami], [?Lucerna])."
+          "note": "R9635_reading.md follows the contemporary decipherment of the letter, a clear court-hand copy on f. 22r (DECODE image P3, right page); checked against the cipher of ff. 20r-20v with Tomokiyo's key. r2i (23 Oct 2026): the tear across f. 22r ll. 9-11 is filled from the cipher of f. 20r ll. 11-14, read sign by sign ('en la dicha capitulacion. Repliqueles que las tierras estavan en poder del señor infante, y respondieron que quien quiera que los tuviese ...'; hec = quiera, vac = dicha, gta = l + es = les). No second copy or decipherment on the record or its neighbours. v2_score 0.833 -> 0.913 (21/23) explicit holes, 0.435 plain (period spelling). Open: four uncertain words of the decipherment ([?ya]/[?bastar], [?tenido], [?Menorami], [?Lucerna]), illegible at DECODE's resolution."
         }
       },
       {
@@ -437,6 +525,40 @@
         "language": "es",
         "reading": "R9653_reading.md",
         "state": "decoded, not read"
+      },
+      {
+        "doc": "R9613",
+        "label": "R9613, Venice, 18 June 1522 (RAH Salazar 9/24 ff. 203-207)",
+        "transcription": ["R9613_decifrado_f206.txt"],
+        "decryption": ["R9613_decifrado_f206.txt", "R9613_reading.md"],
+        "summary": "Sánchez to Charles V: his audience with the Signoria on the imperial reply to their peace paper (paper against paper; the Venetians complain the Emperor leaves the peace-and-league negotiation for a new truce, and that the Infante Ferdinand may enter the truce but not the peace); the Pregadi's debate on Cremona; French boasts and Lescun's news of 600 lances and 12,000 Gascons at Turin; the Turk not arming at sea, Rhodes holding out, Venice selling offices; the Viceroy of Naples at Mantua.",
+        "state": "read",
+        "language": "es",
+        "reading": "R9613_reading.md",
+        "translation": "R9613_en.md",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "r2i: the reading follows the contemporary decipherment, a clear copy on ff. 206r-207v of the same DECODE record (never opened before), transcribed line by line (R9613_decifrado_f206.txt); its first sentence checked against the cipher of f. 203r with Tomokiyo's key, word for word (hug = recebi confirmed). v2_score: 0.99 (104/105) explicit holes, 0.657 plain. Three uncertain words in the fast cursive ([?nescia], [?nemora], [?sus pagos]); look-alike letters 0 (the reading rests on the clear hand). CSP Spain 2 no. 429 abstracts the same letter."
+        }
+      },
+      {
+        "doc": "R9641",
+        "label": "R9641 (+ duplicate R9642), Venice, 27 Oct 1522 (RAH Salazar 9/26 ff. 173-188)",
+        "transcription": ["R9641_decifrado_f187.txt"],
+        "decryption": ["R9641_decifrado_f187.txt", "R9641_reading.md"],
+        "summary": "Sánchez to Charles V: the Signoria content with the Pope's answer on quartering imperial troops in the Gera d'Adda; the papal nuncio at Venice says the Pope could bring Venice round, but the hope of an Anglo-imperial settlement with France keeps them irresolute; postscript: Girolamo Adorno's letter and the Emperor's of 26 Sept announcing Adorno's coming with powers.",
+        "state": "read",
+        "language": "es",
+        "reading": "R9641_reading.md",
+        "translation": "R9641_en.md",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "r2i: the reading follows the contemporary decipherment on ff. 187r-188r, filed on DECODE under R9642 (DECODE: 'Sánchez?', status N/A), transcribed line by line (R9641_decifrado_f187.txt); checked against the cipher at the opening of f. 173r and at f. 174r ('de todo esto tengo dado aviso al duque de Sessa'; new value vad = duque). v2_score: 1.0 (34/34) explicit holes, 0.735 plain. Two uncertain words ([?conversacion], [?vera]); look-alike letters 0."
+        }
       }
     ],
     "key_file": [

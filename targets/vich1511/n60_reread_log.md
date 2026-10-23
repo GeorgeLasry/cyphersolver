@@ -153,3 +153,41 @@ peace between the Emperor and the Venetians be hastened."
   decoded, not read, with this text kept as a partial reading.
 
 - Revised 23 Oct 2026 (coordinator): the reading now keeps the figures' 1511 spelling (the modernised pass is withdrawn). Scores of the body: _check_reading 0.386 (188/487), explicit holes only (b17_score.py HOLES=1) 0.591 (288/487), under 0.60: stays decoded, not read.
+
+## r2i (23 Oct 2026, Claude Opus 5.5): sign-by-sign proofread of pp. 4-14
+
+Owed since b16 (Remaining gaps: "N.60 sign-by-sign proofread of pp. 4-14 - not-attempted"). Done here.
+
+- **Images.** PARES `img/n60_4..14.jpg` (main checkout), cut into 4x LANCZOS bands, two half-page strips per band,
+  115-px step (pp. 4-6 new, scratchpad `reread/r2i/n60/`; pp. 7-14 the pass-3 bands `n60work2/s/`). Every band was read
+  against the v4 labels and the b16 build line by line (`research/reading_audit/r2i_n60show.py`, `r2i_n60lab.py`).
+- **Corrections.** `n60_corrections_r2i.tsv` (140 rules; line, old, new, nth, evidence), applied by
+  `research/reading_audit/r2i_n60fix.py` to v4 -> **`n60_transcription_v5.txt`** (139 lines changed), decoded in
+  `n60_transcription_v5_decoded.txt`. The systematic findings:
+  - **The inverted-T (o) labelled `X` (t).** About 100 places: every `oo X` (49: Ludouico, Fernando, casando,
+    entrado, contenido, assentado, condado ...; none in N.41/N.45/N.57), and single cases in podria, sospecha,
+    visorrey, obispo, pension, comigo, prisioneros ... Checked on the bands one by one where listed; `oo X` as a rule
+    after 12 checks (d+t never meets inside a Spanish word).
+  - **The h-sign split.** The h-sign is an o with a small cross; v4 had it as `o X` in 10 places ("he hecho",
+    "hermanos", "huuiesse", "yo he ganado", "lo he escrito").
+  - **`pob` (si) for `poh`** (h-tail) at five places; `poh` is **quanto**, carried by N.41's decipherment ("de quanto
+    le cumpliere") and fitting all 14 occurrences in four letters.
+  - **`rof` (para que) for `ror`** at the five "me [parece] que" (the b16 build had read "parece" there unbracketed on
+    a group that decoded "paraque": now carried).
+  - **`qto` (l) for barred q + `to`** in Ma-x-imiliano (4), `rug`/`rig` persona (L0810), `sub`/`fub` (L0710), the struck
+    group at L0507, two ink blots (L0827, L1219, L1402: now `??`).
+  - Checked and unchanged: the line read on the image between L1418 and L1419 is in v4 as L1435.
+- **Key.** Added to `decode.py` (key.md "r2i additions"): `poh` quanto (sibling decipherment), `fub` dan (17
+  occurrences: pue-dan, que-dan-do, dando, ayudando, pierdan, ni me dan, les dan; replaces "daño"), `ror` parece (5/5),
+  `soi` tanto (8/8 once L0601 reads "tanto quanto durare").
+- **Build and reading.** 31 build lines revised (`n60_build.txt`; b16 copy kept in the scratchpad), reading
+  regenerated (`b16_vich_make.py n60`), English updated in the same places. Alignment (`b16_vich_align60.py` on v5):
+  5,094 unbracketed words, **41 under 0.6 carried (64 on v4 with the same build)**; the 41 are the short words and the
+  b/i, t/o slips listed under b16.
+- **Score** (`v2_score.py`, every `[?]`/supplied word a hole): before r2i 0.572 explicit holes (278/486), plain 0.381;
+  **after 0.589 (287/487), plain 0.392**, hole rate 0.127. Still under the bar: N.60 **stays decoded, not read**.
+- **What holds it under.** About 600 holes are code groups that no sibling decipherment carries and no single value
+  fits at every occurrence: `phi` (34, a clause-final group, perhaps a mark), `reg` (18), `pub` (14: "suizos" fits 11 of
+  13 - "los [pub] ternan ... cinquenta mil ducados de pension cada año", "si algunos [pub] huuiere de quedar" - but not
+  L0421/L1226, so kept open), `fez` (gasto 5/7), `dup` (contrario 5/7), `fob` (fortalezas 5/7), `for`, `pog`, `pir`.
+  Blocker **no-key-material**; Terrateig 1963 (needs-physical-access) may print the clerk's decipherment.

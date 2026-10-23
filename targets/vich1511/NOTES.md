@@ -2,6 +2,17 @@
 
 Status: in progress
 
+**23 Oct 2026, r2i (Claude Opus 5.5): N.60 proofread sign by sign, pp. 4-14; still decoded, not read.** Every band of
+pp. 4-14 (4x, PARES images) read against the v4 labels (`research/reading_audit/r2i_n60show.py`, `r2i_n60lab.py`): 140
+correction rules (`n60_corrections_r2i.tsv`, applied by `research/reading_audit/r2i_n60fix.py` ->
+`n60_transcription_v5.txt`, decode `n60_transcription_v5_decoded.txt`). The systematic error was the inverted-T (o)
+labelled `X` (t) about 100 times (every `oo X`: "Ludtuico", "casandt"); also the h-sign (o with a small cross) split as
+`o X` (10), `pob` for `poh` (5), `rof` for `ror` (5), `qto` for barred q + `to` (Maximiliano, 4). New key values, each
+fitting every occurrence: `poh` quanto (carried by N.41's decipherment), `fub` dan, `ror` parece, `soi` tanto
+(`decode.py`, key.md "r2i additions"). Build revised in 31 lines, reading regenerated, English updated; v2_score
+0.572 -> **0.589** explicit holes (plain 0.381 -> 0.392): under the bar, N.60 stays decoded, not read. N.45/N.57 take
+`fub` (pue-dan), scores unchanged (0.668, 0.771). Log: `n60_reread_log.md` "r2i".
+
 **22-23 Oct 2026, re-read (REREAD_BRIEF, batch b16): N.45 and N.57 read, N.60 still decoded, not read.** All 36
 PARES images of the three records opened (wrappers, blanks, addresses included): no decipherment anywhere. Each
 letter was built line by line into words on the figures (`n45_build.txt`, `n57_build.txt`, `n60_build.txt`, figures'
@@ -230,9 +241,10 @@ frequency count and the two solver scripts. This entry is the 1511-12 key only: 
   - Web searches (5 Oct 2026) found no transcription online.
 
 ## Remaining gaps
-- N.60 decoded, not read (explicit-hole share 0.591; `n60_reading.md` partial) - blocker: no-key-material; about 600 unread groups (phi 34x, reg 18x, pub, for, pog, pir, gox, geb ...) absent from the deciphered siblings and without one value at all occurrences (soi, dup, fez, fob, dop proposed, not adopted); Terrateig 1963 (unseen) may print the decipherment
-- N.60 sign-by-sign proofread of pp. 4-14 - blocker: not-attempted; b16 checked the breaks of sense and L1522-L1530 only (L1525-L1527 holes in the paper: illegible)
-- N.45 (~424 [..]) and N.57 (24 [..]) holes - blocker: no-key-material; unkeyed groups (hno, hug, mun, myn, sig, phi, sab, rih, poh, mug ...) and number signs, none in a deciphered sibling
+- N.60 decoded, not read (explicit-hole share 0.589 on v2_score after the r2i proofread; `n60_reading.md` partial) - blocker: no-key-material; about 600 unread groups (phi 34x, reg 18x, pub 14x, fez, dup, fob, for, pog, pir, gox, geb ...) absent from the deciphered siblings and without one value at all occurrences (pub suizos 11/13, fez gasto, dup contrario, fob fortalezas 5/7 each: not adopted); Terrateig 1963 (unseen) may print the decipherment
+- N.60 sign-by-sign proofread of pp. 4-14 - closed 23 Oct 2026 (r2i): done on 4x bands, 140 rules, `n60_transcription_v5.txt`
+- N.60 ink blots and paper holes (L0827, L1219, L1402 one sign each; L1525-L1527) and doubtful single signs (L1315, L1316, L0534) - blocker: illegible; PARES zoom-10 resolution
+- N.45 (~424 [..]) and N.57 (24 [..]) holes - blocker: no-key-material; unkeyed groups (hno, hug, mun, myn, sig, phi, sab, rih, mug ...) and number signs, none in a deciphered sibling
 - Look-alike signs: tilde-d a / plain d b (N.57), fug senor / entre, fer dio / Fe-, fac dichas / dar, b a / i (N.60) - blocker: illegible; same shape at the PARES zoom-10 resolution, flagged for review in key.md
 - 8 no-bar q tokens in N.45, 2 q1 missing from the transcription - blocker: illegible; q/q1 split otherwise done (qwork/q_decisions.tsv)
 
@@ -243,3 +255,4 @@ frequency count and the two solver scripts. This entry is the 1511-12 key only: 
 - [x] print: Zurita lib. X searched (narrates N.60's content, no letter text); Terrateig 1963 and Doussinague 1944 not online, unseen (5 Oct 2026)
 - [x] key-rebuild: 153 groups recovered from the sibling crib and context readings
 - [x] retry: N.45/N.57/N.60 re-decoded with the extended key (5 Oct 2026); token coverage 0.983/0.974/0.940. Re-read b16 (22-23 Oct 2026): all three built into sentences on the images and the key, twelve values added; N.45 and N.57 read, N.60 partial (explicit-hole share 0.591)
+- [x] retry: 23 Oct 2026 (r2i) - N.60 pp. 4-14 proofread sign by sign (140 label rules, v5), poh/fub/ror/soi adopted, reading rebuilt: 0.572 -> 0.589, still under the bar

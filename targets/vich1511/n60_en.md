@@ -30,7 +30,7 @@ remedied it and pays my troops what he is bound to by the [?league], in that cas
 letter of credence that [..] for His [..], and that as I am determined always to be a most obedient and most [..] son of
 His Beatitude, and to put for my
 
-[..] every time it is needed [..], and I wish that His Beatitude [..] answer me with the same [..], and [..] not [..]
+[..] every time it is needed [..], and I wish that His Beatitude [..] answer me with the same love, and [..] not [..]
 hide from him anything of what they write to me from Italy that His Beatitude is doing to me; because if he does it out
 of some suspicion, since he has no reason [..] of me [..], and what I have [..] written is [..] that since I [..] put
 my whole state and my army, and have spent such endless [?sums] here and there to defend [..] and rescue His Beatitude,
@@ -75,12 +75,12 @@ Italy [..] [..] [..] King of France. If the Pope says that since he has recovere
 [..] thousand ducats, you will answer that the league was [..] expressly for the destruction of the schism, and that it
 is not [..] destroyed, and that
 
-the articles of the league say that [..] the war lasts and until the enterprise is finished, the said [..] [..] must
+the articles of the league say that as long as the war lasts and until the enterprise is finished, the said [..] [..] must
 be paid; that after the business of the Church, the principal desire of [..] [..] was to remedy Italy by driving the
 [..] out of it. And if he tells you, as you say he has told you, that he will not give [..] [..] to my Great Captain,
 answer him that the Great Captain is not a person whom [..] of [..], as in the [..], because His Beatitude and the
 Venetians do not send me the answer, nor the security for the pay [..] thousand ducats of salary that must be paid to
-him each year, nor does he give me security for the troops' pay [..] what is agreed in the league; and that, seeing
+him each year, nor do they give me security for the troops' pay [..] what is agreed in the league; and that, seeing
 this and the changes of mind that His Beatitude has so many times shown towards my army, and that the [..] of the [..]
 to his [..] and with his word, and that afterwards he did not make the payment, and that every hour he says he has no
 need of a Spanish army; and seeing also that the dispatch of the Great Captain cannot be done without another [..]
@@ -90,7 +90,7 @@ this winter the [going] of the Great [Captain] there, especially since, thanks b
 there [..] [..]. In conclusion I say that, by whatever way and in whatever manner [..] seems best to you, the principal
 article you must work on is that the Pope and the Venetians pay what they are bound to by the league, because, [?with]
 our army, with which [..] it may be possible [..] to take and reduce, with God's help, the French whom he holds [..] [..]
-to settle the affairs of Italy [..] wants [..] [..]. If to whom [..] that [..] [..] the Pope and the Venetians [..] are
+to settle the affairs of Italy [..] wants [..] [..]. As to whom [..] that [..] [..] the Pope and the Venetians [..] are
 agreed that the Emperor should now hold that state, so that afterwards he should put into it as duke Maximilian, son of
 Duke Ludovico, or the Infante Don [?Fernando], our grandson, marrying him to the daughter of the Duchess of Milan. This I
 would have wished, because [..] to what [..] of the league I offered him [..] [..] tell Mossen de Gurk that, considering
@@ -103,7 +103,7 @@ that neither the peace between the Emperor and the Venetians should be made, nor
 suited the Emperor. So, to [..] this and bring the business out of danger, it [?seems] to me that Mossen de Gurk in the
 Emperor's name, and you in mine, [..] tell the Pope and the Venetians at once that the Emperor and I agree with them that
 Maximilian, son of Duke Ludovico, be [..]; and we are content that in the name of [..] and [..] by the hand of the
-Emperor, whose [?fief] that is, he be put at once into that state, so that the Pope and the Venetians [..] the aforesaid
+Emperor, whose [?fief] that is, he be put at once into that state, so that the Pope and the Venetians [?lose] the aforesaid
 [?suspicion]. And [..] it seems to me that the Emperor should [..] the said Maximilian at once, so that Mossen de Gurk in
 his name may put him into that state; because the principal article that Mossen de [..] must now [..] and work on is
 that possession of the said [..] and of its [..]s be taken without delay, because, [?with] possession, even if it is in
@@ -138,7 +138,7 @@ the son of Duke Ludovico, who killed her father and [..] himself; because the sa
 [..] must [..] that whoever holds that state should have such [..] that they help him defend it from now on; not [..]
 him by [..] of kinsmen and of [..] [..]. If [..]
 
-[..] that the Venetians recover from that state what they held before, it seems to me that, if the Venetians pay my army
+As to the Venetians recovering from that state what they held before, it seems to me that, if the Venetians pay my army
 each month the [..] thousand ducats they are bound to, and [..] what is contained in the league, they are not to be told
 not to take [..] the lands they held before, because, if they fulfil what they are bound to by the articles of the
 league, and the recovery of the [..] were opposed, they would become more suspicious and would not make the payment;
@@ -147,10 +147,10 @@ that, when the confederates recover lands which are [..]s, they [..] [..] [..] t
 they give the Emperor in the settlement they acknowledge [..] those of the [..] for the [..] that he will give them for
 all the lands that remain to them; and my viceroy, you will say, must work to stand [..] in the middle of everything, so
 that no harm is done to one side or the other; and above all he and you must work so that there is no division [?among]
-the members of the league, nor one side do anything to the prejudice of another [..] [..]. If, as it seems, the Pope
+the members of the league, nor one side do anything to the prejudice of another [..] [..]. As to what appears, the Pope
 wants Parma and Piacenza and [Mo]dena and Reggio, if he takes them [..] it goes against the articles of the league,
 which say [..] [..] [..] nor confederation [..] without the ordinance of all the confederates may [..] nor [..]
-appropriate anything in Italy that before the said war began was not [..] [..] more than the [..] and the [..] of
+appropriate anything in Italy that before the said war began was not [..] all the more since the [..] and the [..] of
 everything was that a duke should be put into the [..], and no land taken from him, that [..] [..] those that are to
 remain with the Venetians which are of that state, [..] [Mo]dena and Reggio belong to the Emperor, and it is not
 reasonable to give him such payment for the good work he has done for the league and [..]; [..] tell the Pope both
@@ -160,7 +160,7 @@ Reggio can easily be put right [..]. [..] Further, since the Emperor has done [?
 
 the peace between the Emperor and the Venetians must be made [..] of [..], so that it is concluded without delay. And
 [..] tell Mossen de Gurk that it seems to me he should give way over Vicenza, [?provided] that the Venetians increase
-the tribute and the amount of the [..], and that [..] the sooner the said peace is settled, the more [..] in its [..].
+the tribute and the amount of the [..], and that the sooner the said peace is settled, the more [..] in its [..].
 I refer to Mossen de Gurk, who knows them. And it seems to me that, if the Venetians give a good [?tribute] and enough
 [..] and help for the business of [..], this could be put in place of Vicenza. And so that the said peace may be
 concluded, let everything [..] possible be done on my part [?in] the Emperor's favour, without going against the league;
@@ -209,7 +209,7 @@ be done without any prejudice to the league and without excepting the King of Fr
 the Italians it must be arranged that the said Signoria [?enters] the league as well; for I have referred their said
 ambassador, who has [..] me here about the said agreement, to negotiate it there with my said viceroy, since he has
 power for it. And besides this [..] the Pope and the Venetians if in it [..] which he already held [..] for some years,
-and that we have prolonged it [..] [..] [..]. Thus the [..] the members of the league [?must] work to keep them in our
+and that we have prolonged it [..] [..] [..]. As to the [..], the members of the league [?must] work to keep them in our
 friendship, so that the King of France cannot win them; and for this, besides [..] twenty thousand ducats of pension
 that the Pope and the Venetians give them, it will be well for the [..] to give them another twenty thousand ducats of
 pension each year, and I will give them another [..] thousand ducats of pension each year, [..] they entering into
@@ -232,7 +232,7 @@ that state; and [..] to do what I would wish, which is that the said duke remain
 him full certainty and security that he will be constant to the Church and to the league. [..] Now nothing is to be
 said nor [..] [..] [..] to the Pope except [..] [..]; and if the Pope [..] that the favour should go on Ferrara, he
 should be answered that [..] [..] and [..] of His Beatitude [..]. [..] That what suits His Beatitude and the good of
-Italy is [..] [..] [..] the French who are about to fall upon the state of Milan, and [..] that of Milan, [..] besides
+Italy is [..] [..] to take the French who are about to fall upon the state of Milan, and [..] that of Milan, [..] besides
 what suits the league [..] that [..], it is reasonable to [..] [..] [..] that [..] has could [..] for the Church and for
 the league. And you can give the Pope hope that, once the [..] French are finished with in the state of Milan, the
 business of Ferrara will be done, and that then [..] will be done, and [..] [..] [..] whether there can be a remedy to
@@ -250,13 +250,13 @@ which it has held it; and that the [..] [..] and security of Italy, after God, c
 on the king within France, setting, with the help of [..], the [..] in Guyenne and the Emperor, in the name of the
 prince our grandson, in [..]; and if [..] to [..] that this be done, with this the King of France will be nailed down
 for ever, so that he cannot come out of France with support to any side, and so Italy will remain very safe. And that,
-to help this [..] which is a general good of [..], it is fitting that, once the Milan business is over, orders be
+to help this work, which is a general good of [..], it is fitting that, once the Milan business is over, orders be
 given to put necessity on France from there in the [..] [..] in the most [..], and this at the [..] cost of the league,
 if he [?wished] for a [..] [..], if this is not helping [..] the Emperor on the side of [..], so that on one side and the
-other the [..] of France may be diverted, who is now all [..] in this part of Guyenne in [?opposition] to our favour,
+other the [..] of France may be diverted, who is now all [..] in this part of Guyenne in opposition to our favour,
 and there are [..]s here [..] of the [..] and all the other captains and troops that were in Italy, and all the
 captains and troops that the King of France has been able [..] in all France, and the Germans he has been able [..] from
-the side of the [..] [..] of [..] of the [..] who are [?enemies] of the Emperor; because by [?diverting] the [..] of this
+the side of the [?bishop] of [..], and of Monsieur de la [..], who are [?enemies] of the Emperor; because by [?diverting] the [..] of this
 his favour with the help of [..] it would be possible [..] to do the [..] said, and when that is done the people of Italy
 will afterwards be able to live in great peace and tranquillity without any suspicion [..]. And because [..] not [..]
 [..] [..] for [..] not to say that you should work for the French whom he holds in the state of Milan and in [..] [..]

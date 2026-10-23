@@ -230,3 +230,18 @@ Not adopted (values proposed by sense but contradicted or too thin; N.60 re-read
 L1321 do not), `plix` o (fits N.45 L0906-0907 "o por compromiso o por otra via", not "caba[plix]llas"), `sil` todos /
 Dios, `sig`, `phi` (34x, often after t- and before alguno/alguna: "se efectue t[phi] alguna"; no single word fits all),
 `reg` (18x, clause-initial), `7o` = rr in N.57 L12/L26 ("fue e[rr]ado", "tal ye[rr]o") against ll at 90 other places.
+
+## r2i additions (N.60 sign-by-sign proofread of pp. 4-14, 23 Oct 2026)
+
+| group | value | n | evidence |
+|---|---|---|---|
+| `poh` | quanto | 14 | **carried by a sibling decipherment**: N.41 L0306 `poh` under the clerk's "de quanto le cumpliere"; N.60 "dize que [tanto] [quanto] durare la guerra" (L0601), "[Quanto] a quien ..." (L0626), "[Quanto] a que venecianos cobren" (L0901), "[Quanto] a lo que parece, el papa quiere a Parma" (L0918), "[quanto] mas que" (L0924), "y que [quanto] mas presto se assentare" (L1004), "[Quanto] a lo de los florentines" (L1132), "[Quanto] a los ..." (L1216); N.45 "[quanto] a las cosas de Ferrara" (L0610); N.57 "todo [quanto]" (L11). Five N.60 places had been transcribed `pob` (si); the h-tail is plain on the 4x bands |
+| `fub` | dan (word and syllable) | 17 | "pue[dan]" (N.60 L0910, L1024, L1501; N.45 L0435; N.57 L31), "quedando" que-[dan]-do (L1401), "dando" (L0818, L1006, L1115), "ayudando" (L1415), "pier[dan] la sospecha" (L0710), "mu[dan]ça" (L0509), "ni me [dan] seguridad" (L0609), "que les [dan] el papa y venecianos" (L1219). Replaces `daño` (an N.41 alignment that stands where the clerk has "fuerças"; that place is doubtful and not counted) |
+| `soi` | tanto | 8 | proposed by b16 at 7/8 (not adopted then: L0601 "dize que [tanto] si durare" was weak); with `poh` quanto L0601 reads "dize que tanto quanto durare la guerra", so every occurrence fits: "en que tanto va", "sufrir tantos gastos", "en tanto que" x2, "ha hecho tanto por la liga", "con tanto que los venecianos crezcan", "de quien yo tanto ..." |
+| `ror` | parece | 5 | "me [parece] que" at all five (N.60 L0702, L0705, L0711, L0719, L0728); transcribed `rof` (para que) in v4, the final r is plain on the 4x bands (crops zror0/zror1) |
+
+Label findings of the r2i proofread (`n60_corrections_r2i.tsv`, applied by `research/reading_audit/r2i_n60fix.py` to make
+`n60_transcription_v5.txt`): the inverted-T (o) had been labelled `X` (t) in about 100 places in N.60 alone (`oo X` 49x,
+"Ludtuico", "casandt"; none in N.41/N.45/N.57); the h-sign is an o with a small cross and had been split into `o X`
+(10 places: "he hecho", "hermanos", "huuiesse"); `qto` l was the barred q + `to` in Ma-x-imiliano (4); `pob`/`poh` above;
+`rug` parte / `rig` persona (L0810).

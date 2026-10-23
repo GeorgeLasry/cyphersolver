@@ -61,6 +61,11 @@ CODE = {  # code groups -> words / syllables
     'goe': 'aca', 'gix': 'capitan', 'goi': 'aquel', 'sid': 'son', 'hoe': 'governar', 'fet': 'fue', 'Vs': 'ss',
     # b16, proposed by the N.45/N.60 re-reads and checked at every occurrence (key.md); gid is carried by 8714 N.39
     'gid': 'amor', 'sas': 'ver', 'ree': 'poder', 'sue': 'saber', 'men': 'menester',
+    # r2i (23 Oct 2026, N.60 proofread pp. 4-14): poh is carried by N.41's decipherment ('de quanto le cumpliere'); fub and
+    # ror rest on sense at every N.60 occurrence (key.md 'r2i additions'); fub was 'daño' (N.41 L0308 alignment, doubtful)
+    'poh': 'quanto', 'fub': 'dan', 'ror': 'parece',
+    # r2i: soi was 7/8 in b16 (L0601 the misfit); with poh = quanto L0601 reads 'tanto quanto durare', so 8/8
+    'soi': 'tanto',
 }
 MARK = {'gz', 'ang'}  # b16: clause marks, no letter value (gz 40x, ang 29x, at clause boundaries); printed as nothing
 
