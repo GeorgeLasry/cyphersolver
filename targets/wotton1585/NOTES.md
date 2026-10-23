@@ -1,8 +1,32 @@
 # Edward Wotton (Scotland) to Walsingham, 25 Aug – 1 Sep 1585 — DECODE R4841–R4843
 
-Status: in progress. The three drafts are not transcribed in the repository (reading audit, 22 Oct 2026).
+Status: in progress (re-read 22 Oct 2026, batch b16: all three drafts transcribed and read; the write-up pages still describe the audit state).
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the repository holds only summaries of R4841-R4843 and the code table (texts/key.md); no draft is transcribed. Each image was checked (main checkout decode/s484x_1.jpg): all three are clear English drafts with numeric name codes. All three are *decoded, not read* in profile.json; class read -> not read, method -> not solved, fraction_read unknown -> 0. The code identifications stand.
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch b16; texts/R4841-R4843_reread_log.md)**: the DECODE records were fetched
+again (only the four page images each; nothing added since 21 Sept). CSP Scotland viii could not be reached for a text to
+align with (HathiTrust Cloudflare check; archive.org lending-only, 401). The three drafts were **transcribed in full**
+from the full-resolution images (texts/R484x_transcription.txt: struck words, interlineations, doubtful words marked,
+plus Wotton's working notes at the head of f. 167r) and **read** in their last state with the name code glossed in place
+(texts/R484x_reading.md) and rendered in modern English (R484x_en.md). Every reading word is carried by the
+transcription or is a modernised spelling of a word in it (research/reading_audit/b16_wotton_align.py); supplied words
+are bracketed. Clean-sentence share on the reading bodies (_check_reading.py): **R4841 0.98, R4842 0.89, R4843 0.91**
+(before: no text). All three relabelled read; class not read -> read; method -> key recovered based on adjacent
+plaintext; fraction_read 0 -> 1.0.
+- **Code 3 = the Queen of England, not France** (flagged for review: sense only, but every occurrence fits): "divert 10
+  from 3 ... or if that finding the K. constantly ^{affection} towarde 3 ... he wil not fail to convey him into Fr."
+  (R4841 f. 167r) and "it can no way stand with 3 honor that I should be at that time in this contrey" (R4843 f. 175v,
+  Wotton asking for his recall). 9 = England ("the 9 frendshippe", R4842) stays probable, sense only.
+- New details read: the King was hunting on an island of the Duke of Lennox (25 Aug); Gray asks Elizabeth to "take
+  the matter very highly" after Lord Russell's death and hold the King from the league; the 500 men are to be led by
+  "L. of Arb:" (Lord John Hamilton, commendator of Arbroath), "the Erle Mo:" and "Master G." (Glamis); Gray asks money
+  "out of 36" for 100 men to hold the King's house; Cuthbert Armorer and Sir William Stewart's report that the Lords
+  are to be sent home "to shuffle the cards" (R4842 ticket to Leicester); Wotton's "My sworde can cutte as wel as an
+  other mans".
+- 27 is a Hamilton favourer kept from Gray's plot (R4843 ticket: "40 would reveale it to 27, whome wee esteeme no very
+  great favorer of the LL"); still unidentified. 32 (a place the King might flee to, R4843), 36 (source of money, R4843)
+  and 11 ("the 11 course", R4842) unidentified.
 
 BL Add MS 32657, ff. 167-168 (R4841, 25 Aug), f. 173-174 (R4842, 30 Aug), f. 175-176 (R4843, 1 Sep).
 DECODE lists them as "Non-decrypted, numerical, cipher type unknown".
@@ -27,7 +51,7 @@ There is no letter cipher. The drafts can be read as they stand; the only task i
 | 24 | a Catholic lord, suspected of a secret agreement with Arran and of a plan to take the King to France, paying his men with French crowns (the Jesuits' 6000 crowns) → ~~Earl of Huntly~~ **Sir Thomas Kerr of Ferniehirst** (CSP Scotland viii glosses "Farnyhurst"; see below) |
 | 3 | France or the Guise party (probable) | "divert him from 3", "convey him towards 3 ... into France" |
 | 27, 40 | two of Gray's associates at court ("39. 40. 27. [cannot] live safely in the court"); 27 "was greatly hers [Mary's] and is a great favourer of the Hamiltons" | unidentified (candidates: Secretary Maitland, Justice Clerk Bellenden) |
-| 32 | a place into which Arran might "convey himself" (a castle) | unidentified |
+| 32 | a place into which the King (10) might "convey himself" rather than be taken (R4843 f. 175r: "if 10 would ... passe over the water into the Fife or seeke to convey himself into 32, he wil by force stay him"; corrected 22 Oct 2026 from "Arran") | unidentified |
 | 36 | source of money for 39's hundred men ("money out of 36") | unidentified (the Queen's treasure?) |
 
 ## Content (summary)
@@ -54,7 +78,9 @@ R4844) is in [walsingham1585](../walsingham1585/NOTES.md).
 
 ## Remaining gaps
 
-- R4841, R4842, R4843: the drafts, not transcribed - blocker: not-attempted; the DECODE images (4 pp. each) are in the main checkout targets/wotton1585/decode/ and reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt); transcribe them with the code numbers marked
+- R4841, R4842, R4843: the drafts, not transcribed - closed 22 Oct 2026 (b16): transcribed in full and read (0.98, 0.89, 0.91)
+- Codes 27, 32, 36, 11 unidentified - blocker: no-key-material; no key on DECODE or in Tomokiyo; CSP Scotland viii (which glosses 19, 24, 39, 40) unreachable on 22 Oct 2026 (HathiTrust Cloudflare check, archive.org lending-only)
+- A few interlineations and struck-over phrases (R4842 p2.05-p2.09, R4843 p2.10-p2.17) - blocker: illegible; read in zooms at native resolution, left [..]
 
 ## Escalation
 
@@ -63,4 +89,4 @@ R4844) is in [walsingham1585](../walsingham1585/NOTES.md).
 - [x] known-keys: CSP Scotland viii glosses 19, 39, 40, 24
 - [x] print: CSP Scotland viii calendars the despatches (no. 106 for 1 Sep)
 - [n/a] key-rebuild: no cipher
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: 22 Oct 2026 (b16) the three drafts transcribed in full and read; DECODE records re-fetched (nothing new); CSP viii retried (unreachable)
