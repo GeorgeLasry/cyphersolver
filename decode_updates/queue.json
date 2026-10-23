@@ -6443,22 +6443,24 @@
   "r9424": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/r9424.html",
    "key": {
-    "none": "no key found; R9420, R9421, R9422 tried"
+    "file": "targets/r9424/r9424/key.md",
+    "lang": "de",
+    "how": "Simple substitution on Latin letters, '/' doubles the previous letter, nulls at word edges; recovered ciphertext-only by Ryan Xu (github.com/ry-xu, issue #89 of dbourdeau/cyphersolver, 23 Oct 2026) and checked on the DECODE images."
    },
-   "cite": null,
+   "cite": "Ryan Xu, wilhelm-1583-cipher (github.com/ry-xu/slightlysupervised), 23 Oct 2026",
    "fields": {},
    "records": {
     "R9424": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "To Duke Wilhelm V, 12 June 1583 (Cologne war), German with a Latin-letter substitution; contemporary glosses over a few names only (Hildesheim, Würzburg, Eichstätt, Freising). Attempted, not solved: R9422 (1582-83 alphabet), R9420, R9421 do not fit; annealing in German, Latin and Italian fails (probably code groups). Transcription attached.",
-     "reading": null,
+     "note": "To Duke Wilhelm V, 12 June 1583 (new style), from someone at the court of Ernst of Bavaria in the Cologne war; German. Simple substitution on Latin letters with nulls and a doubling slash; key recovered ciphertext-only by Ryan Xu (23 Oct 2026), re-read on these images: read in part (92.8% of words). Open: one name sign (barred o-o, 3x), a name in l. 21, 'eo' in l. 22, zodDcw3 (glossed Aichstet). Contemporary glosses on f. 275r agree with the key.",
+     "reading": "decode_updates/decryptions/R9424.txt",
      "sent": false,
-     "reading_not_needed": true,
      "fields": {
       "plaintext_lang": "German",
       "date": "1583-06-12",
-      "receiver": "Wilhelm V, Duke of Bavaria"
+      "receiver": "Wilhelm V, Duke of Bavaria",
+      "cipher_type": "Monoalphabetic substitution with nulls"
      },
      "transcription": [
       "targets/r9424/r9424/transcription.txt"
@@ -6469,15 +6471,24 @@
   "r9319": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/r9319.html",
    "key": {
-    "none": "dot grille; the cover letters it was laid over (ff. 115-118) are not imaged"
+    "decode": "R9304",
+    "how": "key strips of KAA 4591 f.49 (three mixed 24-letter alphabets plus a code list), identified and applied by Leighton 1974; not applied here"
    },
-   "cite": null,
-   "fields": {},
+   "cite": "A. C. Leighton, 'Eine neuentdeckte Chiffre und die erzbischöfliche Wahl zu Köln - 1583', Zeitschrift für bayerische Landesgeschichte 37 (1974) 828-844 (BSB bsb00009436); chancery decipherments BayHStA Kasten schwarz 3634 ff.285-287a and 3636 f.42",
+   "fields": {
+    "date": "22 April - 19 May 1583 (dated Cologne 22 April 1583; presented Munich 12 and 19 May 1583)",
+    "sender": "Ernst of Bavaria, bishop of Freising, Hildesheim and Liège (archbishop-elect of Cologne, 23 May 1583)",
+    "receiver": "Wilhelm V, Duke of Bavaria",
+    "place": "Cologne",
+    "plaintext_lang": "German",
+    "cipher type": "dot (geometric) cipher on squared paper with strip key: three mixed alphabets plus nomenclator; not a grille",
+    "folios": "ff.96-115 (f.115 not imaged)"
+   },
    "records": {
     "R9319": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "'Post Scripta', dockets '...83': squared grille sheets with dots, laid over a clear cover letter (ff. 115-118; one visible under f.102: 'Die 4 od 5000 Cronen...'), which DECODE did not image; cannot be read from these images.",
+     "proposed": "Decrypted",
+     "note": "Deciphered in full by A. C. Leighton, ZBLG 37 (1974) 828-844 (old shelfmark Kasten schwarz 13478 ff.96-115), with the key strips of f.49 (R9304); the dots are the cipher itself, not a grille over a cover letter (our earlier note was wrong). Text printed there (in copyright); not transcribed here. Pointer: ry-xu, cyphersolver issue #88.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -13579,6 +13590,20 @@
      "sent": false
     }
    }
+  },
+  "esp318no93": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/esp318no93.html",
+   "cite": "Michael Brackx, transcription v3 of f. 118r-v (GitHub issue #93, Oct 2026).",
+   "new_records": [
+    {
+     "shelfmark": "BnF Espagnol 318 no. 93, f. 118r-v",
+     "what": "Lorenzo Suárez de Figueroa, ambassador at Venice, to the Catholic Monarchs, Venice, 24 Feb 1504; wholly in cipher (sign alphabet with homophones plus CVC code groups), no decipherment known; key not identified (Escrivà no. 1 and the Cifra general excluded; no. 94's key does not fit; Gran cifra untested). Full transcription by Michael Brackx (v3, Oct 2026): 1,322 tokens, 968 signs (53 types) and 354 code groups (73 types), targets/esp318no93/transcription_v3.txt. Gallica btv1b52503046q, canvases 446-447. Suggested as a new DECODE record (Gallica only).",
+     "transcription": [
+      "targets/esp318no93/transcription_v3.txt"
+     ],
+     "sent": false
+    }
+   ]
   }
  }
 }

@@ -4,6 +4,7 @@
 {"id": "k-bethlen-family", "label": "Keresdi Bethlen family letter cipher, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1645, "note": "Hungarian letter substitution with reciprocal pairs (c=p, p=c, g=u, q=t ...), recovered from the ciphertext alone by quadgram annealing on R4936 (23 Sept 2026); reads R4937, R4940, R4942 and R4938's spans. targets/transylvania1645/shared-key-hypothesis.json."},
 {"id": "k-r4939", "label": "R4939 paired alphabet (1648), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1648, "note": "A different simple substitution in another hand: 23 values, ten reciprocal pairs (a-m, b-i, c-p, d-u, e-g, f-v, h-l, o-y, r-z, s-t); broken ciphertext-only by annealing (23 Oct 2026). targets/transylvania1645/R4939_key.md."},
 {"id": "k-breves1610-henri4", "label": "Henri IV-Brèves key of 1610 (BnF fr. 3462 view 112; DECODE R2077)", "kind": "archive key", "by": "French royal chancery", "year": 1610, "note": "Broken on R2077 by George Lasry with Biermann and Tomokiyo (2021); table found by Camille Desenclos in fr. 3462 (R2077 says 3642); Lasry's CTTS key adds a repeat sign (PR #61)."},
+{"id": "k-r9424-ryxu", "label": "R9424 letter substitution, recovered by Ryan Xu", "kind": "scholar's key", "by": "Ryan Xu (ry-xu) with Claude Opus 5.5", "year": 1583, "found": 2026, "note": "Simple substitution on Latin letters, / doubles the previous letter, nulls at word edges; recovered ciphertext-only from the repository transcription (issue #89, 23 Oct 2026); checked on the images here."},
 {"id": "k-vanreede1793-wainut", "label": "Van Reede's 1792-93 marked code, rebuilt from inv. 6695 (WAINUT)", "kind": "scholar's key", "by": "WAINUT", "year": 1793, "found": 2026, "note": "Rebuilt from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 (PR #66): 2,385 marked group forms; leave-one-out 0.599 of groups exact. A proposal."},
 {
  "id": "k-brackx-esp318no94",
@@ -2260,6 +2261,7 @@
 {"id": "k-army1902-table", "label": "Japanese Army two-digit kana table, 1902-04 (Harumi-Matsuba)", "kind": "scholar's key", "by": "Harumi-Matsuba", "year": 1902, "found": 2026, "note": "First digit the vowel row (+5 voiced), second the consonant column in reverse gojuon order, n = 10; rebuilt from C09122909900 against its draft's furigana."}
  ],
  "links": [
+{"key": "k-r9424-ryxu", "target": "r9424", "how": "rebuilt from", "note": "read in part, 92.8% of words; the barred o-o nomenclator sign and a name open"},
 {"key": "k-r446-rakoczi", "target": "vetesi1705", "how": "read unchanged", "note": "agrees with the contemporary interlinear gloss at 253 of 304 groups and fills the groups the gloss garbled; groups outside the key are nulls"},
 {"key": "k-bethlen-family", "target": "transylvania1645", "how": "rebuilt from", "note": "R4937, R4940 and R4942 read with it; R4936 decoded, not read (g/q look-alikes)"},
 {"key": "k-r4939", "target": "transylvania1645", "how": "rebuilt from", "note": "R4939 only; a separate cipher on the same page until it becomes its own target"},
@@ -4086,8 +4088,7 @@
   "orpo1942": "not solved: no key of 27 February 1942 known or recovered",
   "orpo1942jun": "read from Bletchley's decrypt; the key of 16 June 1942 was not recovered and is not known",
   "cistarelli1520": "not solved: no numeric key of the series, archive or decade exists; Caprile's keys are sign alphabets and cannot be applied",
-  "r9424":"not solved: no key found; the volume's 1582-83 alphabets R9420-R9422 tried and do not fit",
-  "r9319": "not solved: a dot grille whose cover letters (ff. 115-118) are not imaged; no key involved",
+  "r9319": "read from Leighton's 1974 printed decipherment; his key (the strips of KAA 4591 f. 49, DECODE R9304) was not applied here",
   "vich1515":"not solved: the key of N.73 is not identified and no key fits it",
   "siena10": "read from the contemporary decipherment written over the cipher run; no key beyond the 16 values the gloss shows, none rebuilt or applied",
   "malatesta1428": "not solved: the system of Pandolfo Malatesta's runs is not identified and no register or sibling key fits",
