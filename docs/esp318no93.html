@@ -47,7 +47,7 @@
   <p class="sub">A letter from the ambassador at Venice, wholly in the secretariat&rsquo;s cipher; its key is not identified, and a homophonic solver shows its code groups are whole words that need the key.</p>
   <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-10-21">21 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#notsolved">not solved</a> &middot; Extent: text not obtained</p><!-- /outcome -->
-<p class="credits">Credits &middot; <a href="contributors.html#brackx">Michael Brackx</a> (identification)</p><!-- /credits -->
+<p class="credits">Credits &middot; <a href="contributors.html#brackx">Michael Brackx</a> (identification, transcription)</p><!-- /credits -->
 <div class="seal stuck" aria-hidden="true"><span>not solved</span></div>
 </section>
 
@@ -59,7 +59,7 @@
   <dt>The letter</dt><dd>Lorenzo Su&aacute;rez de Figueroa, ambassador at Venice, to the Catholic Monarchs, Venice, 24 February 1504. It is wholly in cipher.</dd>
   <dt>Where</dt><dd>Biblioth&egrave;que nationale de France, Espagnol 318 no. 93, f. 118r&ndash;v (Gallica, canvases 446&ndash;447). Part of catalogue item 9.</dd>
   <dt>The cipher</dt><dd>Invented signs for letters, mixed with groups of two to four Latin letters for words, in the style of Ferdinand&rsquo;s secretariat.</dd>
-  <dt>How it was tried</dt><dd>The code initials rule out both keys of the office that are in print. A homophonic solver run on 1,016 signs failed: the groups behave as whole words. The key Michael Brackx recovered for no. 94 does not fit.</dd>
+  <dt>How it was tried</dt><dd>The code initials rule out both keys of the office that are in print. A homophonic solver run on 1,016 signs failed: the groups behave as whole words. The key Michael Brackx recovered for no. 94 does not fit. His full transcription of the leaf (1,322 tokens) and a solver that treats signs as letters and groups as words, validated on controls that solve, do not converge either.</dd>
   <dt>Why it resists</dt><dd>The suspected key family, the <em>Gran cifra</em> of 1501&ndash;04, survives only as Bergenroth&rsquo;s partial list in a Madrid manuscript that is not served online.</dd>
   <dt>Other letters</dt><dd>Until 21 October 2026 this page also held <a href="esp318no94.html">no. 94</a>, the viceroy of Sicily&rsquo;s letter of 1503: a different cipher, with its own page. The volume&rsquo;s other ciphers: <a href="esp318.html">no. 92</a> (the <em>Cifra general</em>), <a href="federico1497.html">no. 5</a> (Escriv&agrave;&rsquo;s cipher), <a href="esp318no95.html">no. 95</a> (Lasry&rsquo;s alphabet).</dd>
 </dl>
@@ -85,11 +85,12 @@
 
 <h2 id="tried"><span class="num">03</span> What was tried</h2>
 <p>If the groups were runs of letter-shaped symbols rather than code units (the <em>Cifra general</em>’s own alphabet looks like that, its <em>i</em> drawn as a 3, its <em>o</em> as a b, its <em>n</em> as a q), an ordinary homophonic solver would recover the key from the leaf alone. Lines 1–21 of f. 118r were transcribed sign by sign, 1,016 tokens over 40 distinct signs, and annealed against a Spanish 5-gram model from eight starts. The best key scores −3.5 nats per token where real Spanish scores −1.8, and the output is not Spanish. The token statistics say why: 66 % of all <code>p</code> signs occur inside <code>pie</code>, 28 % of <code>g</code> inside <code>gto</code>, and the commonest trigrams (<code>gto</code> ×21, <code>pie</code> ×19, <code>gnꝺ</code> ×15, <code>heg</code> ×13) are far too concentrated for letter runs. The groups are atomic, and no. 93 needs its key.</p>
-<p>Brackx re-transcribed f. 118r–v with the groups as units (998 signs, 239 groups) and annealed the signs alone: no two starts agreed (best −3.08 nats per character), and fixing the glyphs it shares with no. 94 to no. 94&rsquo;s values made it worse. A segmentation of f. 118r (910 glyphs on 33 lines) gives the same picture as the transcription: single signs with letter-like frequencies, and letter groups that recur as units.</p>
+<p>Brackx first re-transcribed f. 118r–v with the groups as units (998 signs, 239 groups) and annealed the signs alone: no two starts agreed (best −3.08 nats per character), and fixing the glyphs it shares with no. 94 to no. 94&rsquo;s values made it worse.</p>
+<p>In October 2026 he re-read both pages at full resolution (<a href="https://github.com/dbourdeau/cyphersolver/issues/93" rel="noopener">issue #93</a>): 1,322 tokens, 968 signs of 53 kinds and 354 code groups of 73 kinds, which replace the partial sign-by-sign transcription. He then annealed a value for every sign (a letter or one of 40 common letter pairs) and a word for every group (from a Spanish list of 574 words and 70 syllables) together, scoring both the Spanish of the result and how plausibly the key would produce the cipher. Controls from <em>Lazarillo de Tormes</em>, enciphered the same way and matched to no. 93 in size and structure, came out with every letter right. No. 93 did not: the best keys score −3.50 per token against −4.18 for the leaf shuffled, so there is structure, but they disagree on most signs and none reads as Spanish. A key of single letters, common pairs and whole words in Castilian literary spelling is ruled out. A segmentation of f. 118r (910 glyphs on 33 lines) gives the same picture as the transcription: single signs with letter-like frequencies, and letter groups that recur as units.</p>
 
 <h2 id="why"><span class="num">04</span> Why it stops here</h2>
 <p>The <em>Gran cifra</em> survives only as Bergenroth’s nineteenth-century reconstruction in BNE MSS 20.211/52, and the Biblioteca Nacional returns a bot-check page on its viewer, its search and its image endpoints alike; the manuscript is absent from Europeana and Hispana; Bergenroth’s Simancas transcripts on the Internet Archive are handwritten, and their OCR yields almost nothing. Arturo Quirantes has published two photographs of key sheets, one the first-campaign alphabet of 1494–98 and the other a partial list of the second. BRAH 9/15 is not digitised.</p>
-<p>The next step is a solver that anneals the symbol alphabet while treating each code group as an unknown word, run on Brackx&rsquo;s unit transcription of the whole leaf.</p>
+<p>The next steps are Bergenroth&rsquo;s list, to test the code groups directly, and a rerun of the solver with chancery or Aragonese spelling and with syllable signs beyond the commonest pairs, neither tried yet.</p>
 
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/esp318no93.json"></figure>
@@ -101,9 +102,9 @@
 <li><strong>Ivan Parisi</strong>, “La correspondencia cifrada entre el rey Fernando el Católico y el embajador Joan Escrivà de Romaní i Ram”, <em>Pedralbes</em> 24 (2004), 55–116.</li>
 <li><strong>Arturo Quirantes</strong>, “El CNI y el (no tan secreto) código del Gran Capitán” and “Descubierta un segundo código del Gran Capitán” (2018), with photographs of BNE MSS 20.211.</li>
 <li><strong>S. Tomokiyo</strong>, “Spanish Ciphers during the Reign of Ferdinand and Isabella”, cryptiana.</li>
-<li><strong>Michael Brackx</strong>, <a href="https://github.com/dbourdeau/cyphersolver/issues/62" rel="noopener">GitHub issue #62</a> (21 October 2026), on no. 94 and on why no. 93 is in another key.</li>
+<li><strong>Michael Brackx</strong>, <a href="https://github.com/dbourdeau/cyphersolver/issues/62" rel="noopener">GitHub issue #62</a> (21 October 2026), on no. 94 and on why no. 93 is in another key; <a href="https://github.com/dbourdeau/cyphersolver/issues/93" rel="noopener">issue #93</a> (October 2026), the full transcription of no. 93 (v3) and the solver run with controls.</li>
 </ul>
-<p class="muted">Notes, profile, the sign-by-sign transcription and the solver in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/esp318no93">targets/esp318no93/</a>; the scans in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/esp318">targets/esp318/</a>.</p>
+<p class="muted">Notes, profile, Brackx&rsquo;s transcription (<code>transcription_v3.txt</code>), the earlier sign-by-sign transcription and the first solver in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/esp318no93">targets/esp318no93/</a>; the scans in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/esp318">targets/esp318/</a>.</p>
 </main>
 
 <footer><div class="in">

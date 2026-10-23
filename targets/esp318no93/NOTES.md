@@ -17,6 +17,25 @@ ciphered letters of Espagnol 318 are different ciphers, each with its own entry 
 (`f118r_glyphs.pkl`, `ov/m93a.png`) and the literature (`lit/`, with Quirantes's photographs of the Gran Capitán key
 sheets in `lit/crypt/img/`) stay in `targets/esp318/`. Session of 17 Sept 2026.
 
+## 23 Oct 2026: Brackx's full transcription (v3) and the joint solver
+
+Michael Brackx ([issue #93](https://github.com/dbourdeau/cyphersolver/issues/93)) re-read both pages (33 + 17 lines)
+at full resolution from the BnF IIIF images and posted **transcription v3**, now `transcription_v3.txt` (credit:
+Michael Brackx, @brackxm): **1,322 tokens** (`python docs/_check_profile.py --measure`), 968 signs (53 types) and 354
+code groups (73 types). It **supersedes `ct93_eye.txt`** (f. 118r ll. 1-21 only, groups split into letters), which is
+kept for the record of the 17 Sept run. Label splits from his v2: the ρ-like sign is four shapes (`p` 96, `E` 25, `R`
+15, `P`/`Px` 5); underbarred `Z2`/`Y2`/`U2`; `luq` ×6 and `muy` ×3 stand.
+
+His solver anneals a value for each sign (a letter or one of 40 letter pairs) and a word for each group (574 Spanish
+words + 70 syllables, or unknown) together, scored by a character 5-gram (Celestina, Quijote) plus an encipherment
+term (n log(n/N) per sign and per group). Controls from *Lazarillo de Tormes*, held out and enciphered like no. 93,
+all solve with every letter right, including one matched to no. 93 (1,322 tokens, 54 sign types with 8 pairs, 338
+group tokens): −3.21 per token. **No. 93 does not converge:** best −3.64 per token (300k iterations × 3 restarts × 16)
+and −3.50 (1.5M), against −4.18 for shuffled no. 93; the best keys disagree on most signs and none reads as Spanish.
+**The simple nomenclator model (signs = letters/pairs, groups = words, Castilian literary spelling) is ruled out.**
+Still untested: syllable signs beyond the 40 pairs, underbars as modifiers, chancery or Aragonese/Catalan spelling,
+and Bergenroth's list. Not solved.
+
 ## The letter, and its former companion
 
 | no. | ff. | canvases | letter | code initials |
@@ -94,15 +113,15 @@ The dates, for whoever continues: no. 94 is Messina, 27 April 1503 — the day b
 - [x] clear-pages: none for no. 93; it is wholly in cipher
 - [x] known-keys: Escrivà no. 1 and the Cifra general excluded by code-initial range; no. 94's key (esp318no94) tried by Brackx and not fitting; Bergenroth's Gran-cifra list not obtained
 - [x] print: Parisi 2004 and 2020, Galende Díaz 1994, Tomokiyo's Spanish-cipher and Lasry pages, Quirantes 2018
-- [ ] key-rebuild: not done — a solver that treats the CVC groups as unknown words while annealing the sign alphabet against Spanish was not built (Brackx re-transcribed f. 118r-v with groups as units, 998 signs and 239 groups, and offers it; his anneal did not converge, best -3.08 nats/char)
+- [x] key-rebuild: done 23 Oct 2026 by Brackx (issue #93): joint sign-and-group annealer with an encipherment term on his v3 transcription (1,322 tokens); matched Lazarillo controls solve, no. 93 does not converge (-3.50/token vs -4.18 shuffled)
 - [ ] retry: not done
 
 ## Next step, in order
 
-1. Ask Brackx for his f. 118r-v transcription with the code groups as units (998 signs, 239 groups) and run the
-   word-unit solver on it: anneal the sign alphabet while treating each group as an unknown word.
-2. Bergenroth's Gran-cifra list (BNE MSS 20.211/52) if the BNE viewer becomes reachable; no. 93's g-/h-/z- initials
-   fall partly outside its band, so it may be a different key of the same office.
+1. Bergenroth's Gran-cifra list (BNE MSS 20.211/52), to test the code groups directly, if the BNE viewer becomes
+   reachable; no. 93's g-/h-/z- initials fall partly outside its band, so it may be a different key of the same office.
+2. Rerun the joint solver with an Aragonese/Catalan or chancery-spelling model (untested; the model so far is
+   Castilian literary prose), and with syllable signs beyond the 40 commonest pairs.
 
 ## Assumptions for George's review
 
