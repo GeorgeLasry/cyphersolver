@@ -26,7 +26,8 @@ def holes(t):
             n = max(1, len(re.findall(r'[^\W\d_]+', inner)))
             return ' '.join(['[?]'] * n)
         return m.group(0)
-    t = re.sub(r'\{([^}\n]*\?[^}\n]*|[\s.…]*)\}', lambda m: rep(re.match(r'(.*)', m.group(1))), t)   # {?} {?word} {…}: unread
+    t = re.sub(r'\[(?:l|ll|f|ff|fol|p|pp|c|line|page)\.?\s*[\divxlcrv,\s–-]+\]', ' ', t, flags=re.I)   # [l. 12] [f. 79v]: markers
+    t = re.sub(r'\{([^}\n]*\?[^}\n]*|[\s.…]*)\}',lambda m: rep(re.match(r'(.*)', m.group(1))), t)   # {?} {?word} {…}: unread
     t = re.sub(r'\[([^\]\n]*)\]', rep, t)
     t = re.sub(r'(\w*)\[\?\](\w*)', lambda m: '[?]' if (m.group(1) or m.group(2)) else m.group(0), t)
     return t
