@@ -4,6 +4,17 @@ Status: in progress. Only the published opening clause is in the repository (rea
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the folder holds the numeric ciphertext and the one-clause opening Tomokiyo published; the Biermann-Lasry plaintext is unpublished. no. 50I is *decoded, not read* (excerpt only) in profile.json; class already solved is kept; fraction_read 0.09 marked estimated.
 
+**23 Oct 2026, re-read** (REREAD_BRIEF batch b37, Claude Opus 5.5): **concordance built, still decoded, not read.**
+Tomokiyo's numeric labels cannot take his published opening one value per label (crib search, none found): his
+transcription merges look-alike glyphs. A label-to-glyph concordance was therefore built on the f. 138 image line by
+line with his glyph key (`texts/no50I_concordance.tsv`; lines 1-10 checked, 11-14 in part); the opening comes out
+exactly. Decode `texts/no50I_decode.txt` (`research/reading_audit/b37_wals_dec.py`); partial reading
+`texts/no50I_reading.md` / `_en.md`: the bearer, Shrewsbury's servant, is to pass in a captain's caravel to buy hawks
+and has offered to carry the packet; "I durst vryte nothing of importance be him"; "You may sovnd and try him, and be
+him send me ansver"; "that there be nothing aganist [58] and [95] stait [49] the realme ... vhitner [72] the present
+pacqvet ... cvm to [87] handis vel closit or not". 0.154 clean sentences on explicit holes: 20 labels have no value
+(seven are the key's own unknowns). Log: `texts/no50I_reread_log.md`.
+
 Earlier status (before the 22 Oct 2026 reading audit): no write-up (found already solved: Biermann and Lasry 2023, published by Tomokiyo on 16 Sept 2026; checked here 23 Sept 2026, nothing added beyond the check; catalogue item 296 removed 10 Oct 2026)
 
 ## Outcome (checked 23 September 2026)
@@ -41,7 +52,8 @@ The case should leave the “still unread” queue. Its accurate status is **sol
 
 ## Remaining gaps
 
-- no. 50I beyond the published opening: decoded, not read - blocker: not-attempted; Tomokiyo's glyph key (mary_sp53_11_50b.png) and the f. 138 image (DECODE R3839, reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) are available; build the glyph-to-label concordance and apply the key, or ask Lasry for the plaintext
+- no. 50I: 20 signs without a value (labels 07, 09, 39, 44, 46, 49, 58, 59, 72, 77, 79, 82, 86, 87, 89, 91, 92, 95, 97, 98) - blocker: no-key-material; seven are unknown in the published key too; the Biermann-Lasry plaintext is unpublished (ask Lasry)
+- no. 50I lines 11-14: concordance not yet checked glyph by glyph - blocker: not-attempted; crop the sloping last lines one by one on DECODE R3839 P3 (or a TNA full-resolution image) and finish `texts/no50I_concordance.tsv`
 
 ## Escalation
 
@@ -49,5 +61,5 @@ The case should leave the “still unread” queue. Its accurate status is **sol
 - [n/a] clear-pages: none with the enclosure
 - [x] known-keys: the Castelnau and Mary-Beaton tables do not fit; Tomokiyo's 2026 glyph key does
 - [x] print: Tomokiyo, cryptiana mary3.htm (16 Sept 2026)
-- [ ] key-rebuild: glyph-to-label concordance not built
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] key-rebuild: glyph-to-label concordance built 23 Oct 2026 (b37), lines 1-10 checked; 20 signs open
+- [x] retry: 23 Oct 2026 (b37) all 562 tokens decoded through the concordance; partial reading 0.154

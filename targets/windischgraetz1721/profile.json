@@ -10,7 +10,7 @@
    "date": "18 November 1721",
    "year": 1721,
    "country": "Belgium",
-   "route": "Brussels -> Ernst Friedrich (or Leopold Viktorin) von Windischgraetz",
+   "route": "Brussels -> Leopold Viktorin von Windischgraetz (writer Ernst Friedrich, from the clear text: the plenipotentiary who must open the Congress and who made the Spanish accession with Beretti Landi at The Hague; DECODE gives the reverse direction)",
    "language": "German",
    "cleartext_in_document": "separate passages",
    "plaintext": {
@@ -149,30 +149,34 @@
    "result": "worked"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R5029 linked to ct.txt (numbers with clear context) and dec.txt (dec.py output with Mírka's table, key.tsv)", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): dec.txt read: p2 and p3L build, but p3R-p4R have open codes, guesses and elided clear text in most clauses. R5029 relabelled decoded, not read; class read in part -> not read; method read with known key -> not solved; fraction_read 0.856 -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): dec.txt read: p2 and p3L build, but p3R-p4R have open codes, guesses and elided clear text in most clauses. R5029 relabelled decoded, not read; class read in part -> not read; method read with known key -> not solved; fraction_read 0.856 -> 0.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "access", "what": "Re-read b37 step 1: DECODE R5029 record page re-checked (five images, the key xlsx, no transcription, comment or decipherment attachment); all five images opened at full resolution; P5 right and P1 are blank versos; the brown line-beginnings in the left margins of P3L-P5L belong to a larger sheet folded under the letter (not legible). Siblings R5025-R5028 already scanned 5 Oct. No print of a private brothers' letter found.", "result": "failed"},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Transcribed the clear text of all five pages in full from full-resolution crops (R5029_transcription.txt); ct.txt context corrected: 'Casse(?)' = lasse, 'durchschnid' = durchgehends, 'Grentze' = [?Breunsche], 'Wartheimber' = Wertheimber (R5029_corrections.tsv); cipher labels unchanged.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "reading", "what": "Wrote the running German reading R5029_reading.md and translation R5029_en.md; two new sense-only code values from the alphabetical order: 101 [?eröffnen], 225 [?Wien]; the clear text identifies the writer as Ernst Friedrich (plenipotentiary at Cambrai, the Hague accession with Beretti Landi).", "result": "worked", "technique": ["contextual inference", "key-structure hypothesis"]},
+  {"date": "2026-10-23", "kind": "control", "what": "Scored the reading body: 0.615 clean sentences (32/52, de word list), 0.846 explicit holes only (b17_score.py HOLES=1); word-by-word alignment with the transcription (b37_align.py, R5029_align.txt): 18 unmatched words, all expansions of abbreviations or line-break joins. R5029 relabelled read (grade B).", "result": "worked", "technique": ["language-model scoring"]}
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Jakub Mírka's reconstructed key (2023), attached to DECODE R5029, was applied unchanged and decrypts every letter-spelled passage; with 19 nomenclator codes open and the clear text of the later pages only excerpted, about half the sentences do not build, so no reading is claimed (reading audit, 22 Oct 2026). The key and the decryption stand.",
+  "method": "read with known key",
+  "method_basis": "Jakub Mírka's reconstructed key (2023), attached to DECODE R5029, applied unchanged; four codes from interlinear glosses in the sibling letters R5025-R5028. The clear text was transcribed in full (23 Oct 2026) and the letter reads as a running German text; 19 nomenclator codes (26 groups) stay open or rest on sense only.",
   "contribution": [
    "transcription"
   ],
-  "class": "not read",
+  "class": "read in part",
   "gaps": [
    {
     "item": "19 nomenclator codes (26 groups): 101, 102, 111, 130, 131, 139, 146, 149, 151, 164, 168, 172, 181, 182, 204, 205, 206, 209, 225",
-    "blocker": "open-codes",
-    "detail": "no gloss in siblings R5025-R5028; alphabetical bracketing gives proposals only; other brothers' letters in karton 202 not on DECODE"
+    "blocker": "no-key-material",
+    "detail": "no gloss in siblings R5025-R5028; alphabetical bracketing gives sense-only values ([?word] in the reading) for 15 of them; the brothers' other 1721-23 letters in karton 202 are not on DECODE"
    },
    {
-    "item": "R5029 as a running text (p3R, p4L, p4R, p5L): decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "transcribe the clear text around the cipher passages in full from the DECODE images (fetched 5 Oct 2026; reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) and write a running German text with a translation"
+    "item": "five clear words read with doubt: a barred abbreviation twice ([?hisp.]), [?Breunsche], [?abfertige], [?ausstrechen]",
+    "blocker": "illegible",
+    "detail": "checked on full-resolution crops of the DECODE images, 23 Oct 2026"
    }
   ],
-  "fraction_read": 0.0,
+  "fraction_read": 0.856,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026: the one document is decoded, not read, so no tokens are in a document that reads. The earlier 0.856 (measure.py: 155 of 181 groups read as sense) is withdrawn as a reading figure.",
+  "fraction_read_source": "23 Oct 2026, re-read b37: the one document now reads (sentence test, R5029_reading.md), so by documents 181 of 181 groups are in a document that reads; the figure given is the sense share inside it, measure.py: 155 of 181 cipher groups read as sense (letter runs and codes with a listed or glossed value), 26 code groups open. The 22 Oct 0 is superseded.",
   "key": "partial",
   "codes_open": {
    "open": 19,
@@ -187,12 +191,12 @@
    "key confirms",
    "historical consistency"
   ],
-  "notes": "148 of 181 groups read; 23 nomenclator codes (33 groups) open. 22 Oct 2026, reading audit: decoded, not read; class read in part -> not read, method -> not solved, fraction_read 0.856 -> 0.",
+  "notes": "148 of 181 groups have a value; 19 nomenclator codes (26 groups) open after the sibling glosses. 22 Oct 2026, reading audit: decoded, not read. 23 Oct 2026, re-read b37: clear text transcribed in full, R5029 read (grade B), class read in part.",
   "credits": [
     {"who": "mirka", "role": "key or decipherment used", "note": "reconstructed key (xlsx on DECODE R5029), applied unchanged", "date": "2023-06-19"}
   ],
   "texts": [
-   {"doc": "R5029", "label": "R5029, Brussels, 18 Nov 1721", "transcription": "ct.txt", "decryption": "dec.txt", "summary": "A Windischgrätz brother writes in German with thirteen enciphered passages, read with Jakub Mírka's key from the DECODE record: the Emperor advised making an excuse; [205] holds under hand; everyone, even the Emperor, daily loses love for [103] after the courier brought the Prince's plan; the Congress of Cambrai should open soon and the Madrid courier brought Pozobueno orders on the renunciations. 23 code numbers stay open.", "language": "de", "state": "decoded, not read", "note": "Every letter-spelled passage decrypts, and p2 and p3L build sentences, but p3R, p4L and p4R have open code numbers, «?» guesses and elided clear text (\"Casse(?) ...\", \"durchschnid ... «102» ...\") in most clauses, so about half the sentences do not build (reading audit, 22 Oct 2026); fix: transcribe the clear text of p3R-p5L in full from the DECODE images and write a running German text with the open codes marked."}
+   {"doc": "R5029", "label": "R5029, Brussels, 18 Nov 1721", "transcription": ["R5029_transcription.txt", "ct.txt"], "decryption": "dec.txt", "summary": "Ernst Friedrich von Windischgrätz, imperial plenipotentiary for the Congress of Cambrai, writes from Brussels to his brother at court in German with thirteen enciphered passages, deciphered with Jakub Mírka's key from the DECODE record: Prince Eugene is not well disposed to him and the Emperor advised against an excuse; everyone, even the Emperor, loses love for Eugene over the Ostend Company, the Prince's plan having lain unopened for two months; the English want to go home; the Spanish courier brought Pozobueno orders on the renunciations, so the Congress should open; he refuses a succession on a point of honour and asks to learn the Emperor's disposition towards him and his expenses.", "language": "de", "state": "read", "reading": "R5029_reading.md", "translation": "R5029_en.md", "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "R5029_reading.md: the clear text transcribed in full from the five DECODE images (R5029_transcription.txt, 23 Oct 2026; before only excerpts), the cipher with Mírka's key and four sibling-glossed codes; 52 sentences, 0.615 clean on _check_reading (de word list), 0.846 counting explicit holes only (b17_score.py HOLES=1); the remaining breaks are open nomenclator codes ([205], [206], [168], [181], [204], [102], [151]) and sense-only code values marked [?word]. Word-by-word alignment: R5029_align.txt (no unbracketed word without a source). No look-alike pairs (numerical cipher). A reader can follow every sentence but two (the [168] ... [181] [206] clause and the [206] ... [?haben] clause)."}}
   ]
  }
 }

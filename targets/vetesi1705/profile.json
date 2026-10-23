@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "R473",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Ráday Archives, C64-4d2-10, 92-95 (DECODE R473)",
    "date": "9 January 1706",
    "year": 1706,
@@ -56,12 +56,12 @@
    "present": true
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
-  "key_order": "unknown",
+  "key_order": "alphabetical",
   "word_division": "none",
-  "sibling_key": "unknown",
-  "notes": "Key not on DECODE."
+  "sibling_key": "DECODE R446 (Ráday Archives C64-4d2-25 no. 6), Rákóczi Hungarian syllabic key; matched 23 Oct 2026",
+  "notes": "Key on DECODE as R446 (found 23 Oct 2026; DECODE transcription of it corrected on the image, see R473_reading.md Notes). Groups outside the key are nulls (9 and 8 head its null column)."
  },
  "conditions": {
   "prior_solution": {
@@ -138,24 +138,53 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read b37 step 1: DECODE R473 record re-fetched (three images, DOC transcription, no attachment or comment); all three images read at full resolution; printed edition Ráday Pál iratai I (1955) searched online: not available (REAL-EOD 18464 is the 1709-1711 volume).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "Transcribed the clear text and the contemporary interlinear gloss over every cipher run afresh from full-resolution crops (R473_transcription.txt); DECODE's PLAINTEXT lines were too garbled to use.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "sibling key",
+   "what": "Scanned the DOC files of neighbouring DECODE records R380-R520 against 18 glossed groups of R473 (b37_keyscan.py): DECODE R446, Rákóczi's Hungarian syllabic key (Ráday Archives C64-4d2-25 no. 6), agrees at 16 of 18; no other key above 1. Its image read to correct DECODE's transcription (69 al, 71-74 an/ar/as/at, 80/70 ö/ü, 35 ly, 296 Belgium).",
+   "result": "worked",
+   "technique": ["key matching"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "what": "Decoded every R473 group with R446 and set it against the gloss (b37_vetesi_dec.py, R473_key_vs_gloss.tsv): 253 of 304 agree; the rest spelling variants, key misreadings or writer's slips; groups outside the key (9, 8, 6, 7, 1000, 512, 750 ...) are nulls, unglossed by the contemporary decipherer.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Wrote R473_reading.md and R473_en.md from the key and the gloss: 35 sentences, 0.829 clean on explicit holes (0.086 on the hu word list, which does not know 1706 spelling); word-by-word check R473_align.txt. R473 relabelled read (grade B).",
+   "result": "worked",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Not read here. The letter was deciphered at the time (contemporary interlinear over almost every cipher group) and is cited to Ráday Pál iratai I (1955) p. 494 n. 1, but neither the gloss nor the print has been transcribed by the project; the only text file is DECODE's noisy transcription, and an attempt to rebuild the key from it failed.",
-  "contribution": [
-   "sender or date identified",
-   "catalogue correction"
-  ],
-  "class": "not read",
-  "key": "none",
-  "fraction_read": 0.0,
+  "method": "read after matching with key from external sources",
+  "method_basis": "The letter carries a contemporary interlinear decipherment (read at the time). 23 Oct 2026 (re-read b37): the gloss was transcribed afresh and Rákóczi's Hungarian syllabic key DECODE R446 (Ráday Archives C64-4d2-25 no. 6), not previously tied to this letter, was found by scanning the neighbouring DECODE key records and applied: it reproduces the gloss at 253 of 304 groups and fills the groups the gloss left garbled (Niszevárat, az király táborba, Belgiummal, hogy Herbaville). The reading rests on both.",
+  "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
+  "class": "already solved",
+  "key": "recovered",
+  "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: no document builds sentences (the one file is DECODE's transcription with a garbled rendering of the interlinear), so 0. Earlier: 'not counted; the contemporary interlinear covers nearly every cipher group' (class already solved), withdrawn: the reading exists on the leaf and probably in print, not in this project.",
+  "fraction_read_source": "23 Oct 2026, re-read b37: the one document reads (sentence test, R473_reading.md: 0.829 clean sentences on explicit holes), so by documents 1.0; every cipher group has a value from the key and the gloss or is a null outside the key; the open places are doubtful clear words, not cipher. The 22 Oct 0 is superseded.",
   "verification": [
    "historical consistency"
   ],
-  "notes": "Read at the time (interlinear decipherment); date corrected to 9 Jan 1706 and addressee to Rákóczi; nothing new read. 22 Oct 2026, reading audit: class already solved / read from existing decipherment -> not read / not solved, because the project holds no reading; transcribing the interlinear (or the Ráday 1955 print) would make it read from existing decipherment.",
+  "notes": "Read at the time (interlinear decipherment); date corrected to 9 Jan 1706 and addressee to Rákóczi. 22 Oct 2026, reading audit: not read. 23 Oct 2026, re-read b37: gloss transcribed afresh, key R446 found and applied, R473 read (grade B).",
   "credits": [
    {
     "who": "contemporary",
@@ -167,12 +196,31 @@
    {
     "doc": "R473",
     "label": "R473, 9 Jan 1706",
-    "transcription": "DOC_R473_D3610_3610.txt",
-    "decryption": "DOC_R473_D3610_3610.txt",
-    "summary": "László Vetési Kökényesdi, as 'Cassimirus Miloftzki', to Ferenc Rákóczi II, 9 January 1706, in Hungarian with numerical cipher runs; the interlinear glosses name France, Italy, Spain, Holland and England, November and December, and Ráday in the third person.",
-    "note": "DECODE's transcription (MA, 2020) holds both the cipher and, in its PLAINTEXT lines, a poor transcription of the contemporary interlinear decipherment. A clean transcription of the gloss is project work; Ráday Pál iratai I (1955) item 102 n. 1 was not checked. Reading audit, 22 Oct 2026: the PLAINTEXT lines are garbled Hungarian between cipher numbers ('n a gy i o hglpnd', 'Foad orh. Bn l er g po s ta ad ok ot Nagod'); no sentence can be built from the file.",
+    "transcription": ["R473_transcription.txt", "DOC_R473_D3610_3610.txt"],
+    "decryption": "R473_decode_R446.txt",
+    "summary": "László Vetési Kökényesdi, as 'Cassimirus Miloftzki', to Ferenc Rákóczi II, 9 January 1706, in Hungarian with numerical cipher runs: the French post brings news that Nice castle has passed into the King of France's hands, celebrated in the old church; in Spain the court is malcontent, Valencia has rebelled and Aragon wavers, the Queen will not take up the administration and there is no money; next year the war will be in Italy and Spain, Holland and England prepare against Antwerp, and Holland may tire of the expense and leave the House of Austria; he has had no order from Rákóczi since the order of 30 November, Ráday's December letter is silent, and he commits himself to Rákóczi's disposal.",
     "language": "hu",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading": "R473_reading.md",
+    "translation": "R473_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "R473_reading.md: the contemporary interlinear decipherment transcribed afresh from the three DECODE images and checked group by group against Rákóczi's Hungarian key DECODE R446 (found 23 Oct 2026 by scanning the neighbouring key records; DECODE's key transcription corrected on its image); key and gloss agree at 253 of 304 groups, the rest are spelling variants, DECODE key misreadings or writer's slips (R473_key_vs_gloss.tsv). 35 sentences: 0.829 clean counting explicit holes only (b17_score.py HOLES=1; the hu word list does not know 1706 spelling: 0.086 on the list); the holes are doubtful clear words in the faded middle of ff. 93-94. Word-by-word check R473_align.txt: no invented word. No look-alike substitutions (numerical cipher). A reader can follow all but about five sentences."
+    }
+   }
+  ],
+  "gaps": [
+   {
+    "item": "about a dozen clear words of ff. 92v-94r read with doubt ([?esmiten], [?viretelu] [?dalnad], [?mandilat], [?hivel], [?hónap] ...)",
+    "blocker": "illegible",
+    "detail": "faded and blotted ink on the DECODE photographs, checked on full-resolution crops 23 Oct 2026"
+   },
+   {
+    "item": "Ráday Pál iratai I (1955) item 102 n. 1, p. 494: not compared",
+    "blocker": "needs-physical-access",
+    "detail": "not online (REAL-EOD holds only the 1709-1711 volume; Szaktárs paywalled); a copyrighted modern edition, to be cited, not copied"
    }
   ]
  }

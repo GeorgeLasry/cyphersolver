@@ -19,6 +19,14 @@ single `[..1]` holes. **Decoded, not read**: P1.12-32, P2.15-19, P3.01-09, P3.39
 P5.05-07, where a hole or a `<...>` run falls in nearly every clause. The 92.2% is withdrawn as a reading figure.
 Key state: partial (homophones with alternatives; the Ψ, swash X and K word signs have no key).
 
+23 Oct 2026, re-read of the unread bands (REREAD_BRIEF batch b37, Claude Opus 5.5): **still decoded, not read.** No
+text of the letter exists: DECODE R9414 has six images and no attachment, the neighbouring records R9408-R9417 are other
+letters in other systems (checked by record page), and no edition is known. The 5 Oct full-resolution pass already
+read every gap sign by sign (`r9414/pass4.txt`); its entries for P1.12-16 were re-checked and hold. The bands score
+0.310 clean sentences (0.379 on explicit holes) against 0.561 / 0.848 for the lines that read. No key or reading change.
+Log: `r9414/R9414_bands_reread_log.md`.
+
+
 ## The letter
 
 | Record | Folio | Date | Who | Language | System | Read |
@@ -44,10 +52,10 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
 
 ## Remaining gaps
 
-- P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35, P5.05-07 decoded, not read (fragments; reading audit 22 Oct 2026) - blocker: open-codes; they hold most of the unresolved words, code signs and blots listed below
+- P1.12-32, P2.15-19, P3.01-09, P3.39-P4.01, P4.21-35, P5.05-07 decoded, not read (0.310 / 0.379 explicit holes, re-read 23 Oct 2026) - blocker: no-key-material; they hold most of the unresolved words, code signs and blots listed below
 - code signs without a key (about 10 words: Ψ at P2.02, 08, 09, 27; swash X at P2.15, P2.25, P4.02, P4.21; K at P4.33, probably "the king") - blocker: no-key-material; single name/word signs, no key in the volume or on DECODE
 - blotted or struck signs (about 15 words) - blocker: illegible; ink blots and deletions on the DECODE images
-- legible but unresolved words (about 55; candidates in gapfill.py output) - blocker: open-codes; four full image passes, sibling keys and a one-edit lexicon search done, homophone ambiguity remains
+- legible but unresolved words (about 55; candidates in gapfill.py output) - blocker: no-key-material; four full image passes, sibling keys and a one-edit lexicon search done, homophone ambiguity remains
 
 ## Escalation
 
@@ -78,6 +86,8 @@ Statistical validation (`mk_validation.py` → `validation.tsv`, R9414 only, `de
   large Ψ code sign; a barred ∂ not in the key stands at P2.17, P2.19, P3.39, P4.21, P4.23 (a new code or letter,
   unresolved); scribal deletions at P1.20, P2.11, P2.17, P3.24, P4.15. Result `r9414/reading_v5.txt`: 958/1039,
   92.2%. Still under the bar; the remaining ~55 words fail on the signs themselves.
+- [x] retry (5th, 23 Oct 2026, b37): DECODE record and neighbours re-checked for a text of the letter (none); pass 4
+  re-checked for P1.12-16; bands scored 0.310 / 0.379 on explicit holes; no change.
 - [x] joint solve of the two unkeyed signs (5 Oct 2026). Barred ∂ (∂ with a bar through the stem), five places:
   P2.17 line start before "befelche sich" (followed by a struck run), P2.19 after clear "otto" before "so wern eur
   F.G. sehen", P3.39 after clear "iij" before "n monat", P4.21 before "uon" + swash X + "kainen", P4.23 after clear

@@ -1,8 +1,22 @@
 # László Vetési Kökényesdi to Ferenc Rákóczi II, 9 January 1706 (Ráday Archives C64-4d2-10, 92-95; DECODE R473)
 
-Status: no write-up. Read at the time: the letter carries a contemporary interlinear decipherment over its cipher
+Status: in progress (re-read 23 Oct 2026, b37: R473 now read with the gloss and Rákóczi's key R446; the site page,
+README row and ledgers are left to the write-up pass). Read at the time: the letter carries a contemporary interlinear decipherment over its cipher
 runs, and the archive's own note cites it to the printed edition *Ráday Pál iratai* I (1955). Nothing new was read
 here beyond correcting the date.
+
+23 Oct 2026, re-read (REREAD_BRIEF batch b37, Claude Opus 5.5): **R473 read.** The clear text and the contemporary
+interlinear gloss were transcribed afresh from the three DECODE images (`R473_transcription.txt`), and **Rákóczi's
+Hungarian syllabic key, DECODE R446** (Ráday Archives C64-4d2-25 no. 6), was found by scanning the DOC files of the
+neighbouring key records (R380-R520) against 18 glossed groups: 16 agree, no other key above 1
+(`research/reading_audit/b37_keyscan.py`). DECODE's transcription of R446 was corrected on its image (69 al, 71-74
+an/ar/as/at, ö/ü, 35 ly, 296 Belgium; `key/DOC_R446_D2629_2629.txt` + overrides in `b37_vetesi_dec.py`). Key and gloss
+agree at 253 of 304 groups (`R473_key_vs_gloss.tsv`); groups outside the key are nulls. The key settles what the gloss
+garbled: *Niszevárat ... az Franciaországi király kezében adta* (Nice castle, 4 Jan 1706), *az király táborba*,
+*Belgiummal*, *hogy Herbaville ujjobban gyözidelmeskedet*. `R473_reading.md` / `R473_en.md`: 35 sentences, 0.829 clean
+on explicit holes (`b17_score.py HOLES=1`; 0.086 on the modern hu word list). Profile: R473 read (B), class already
+solved, method read after matching with key from external sources, key recovered, fraction_read 1.0.
+Log: `R473_reread_log.md`. The earlier `align.py` / `key_rebuilt.json` (EM from the garbled DECODE gloss) are superseded.
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **decoded, not read**.
 The project holds no reading: the only text is DECODE's transcription, whose rendering of the interlinear is garbled
@@ -55,4 +69,14 @@ Status Partially → Decrypted (interlinear, read at the time), date 9 Jan 1706,
 "Cassimirus Miloftzki"), receiver Ferenc Rákóczi II (kept in Ráday's papers), reference *Ráday Pál iratai* I (1955) p. 494 n. 1 (item 102).
 
 ## Remaining gaps
-- R473 decoded, not read: no clean transcription of the contemporary interlinear (reading audit 22 Oct 2026) - blocker: not-attempted; transcribe the gloss from the images (img/, git-ignored) or get Ráday Pál iratai I (1955) p. 494, then translate
+- R473 as a reading: closed 23 Oct 2026 (b37), gloss transcribed and key R446 applied, `R473_reading.md` read (grade B)
+- about a dozen clear words in the faded part of ff. 93-94 read with doubt ([?esmiten], [?viretelu], [?mandilat] ...) - blocker: illegible
+- Ráday Pál iratai I (1955) item 102 n. 1 not compared - blocker: needs-physical-access (not online; Szaktárs paywalled)
+
+## Escalation
+- [x] siblings: neighbouring DECODE records R471-R475 opened; key records R380-R520 scanned 23 Oct 2026, R446 fits
+- [x] clear-pages: all three images read at full resolution; the interlinear gloss transcribed
+- [x] known-keys: R446 (Rákóczi's Hungarian key) applied; DECODE transcription of it corrected on the image
+- [x] print: Ráday Pál iratai I (1955) searched online, not available
+- [x] key-rebuild: not needed (key found); the Sept EM rebuild superseded
+- [x] retry: 23 Oct 2026 (b37) every group decoded and set against the gloss

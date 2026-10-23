@@ -72,7 +72,11 @@
    "result": "failed"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked Tomokiyo's numeric transcription and his solution page by URL", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the folder holds the numeric ciphertext and the one-clause opening Tomokiyo published; the full plaintext is unpublished. no50I relabelled decoded, not read (excerpt only); class already solved kept; fraction_read 0.09 marked estimated; the key application noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the folder holds the numeric ciphertext and the one-clause opening Tomokiyo published; the full plaintext is unpublished. no50I relabelled decoded, not read (excerpt only); class already solved kept; fraction_read 0.09 marked estimated; the key application noted as a workable gap.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "access", "what": "Re-read b37 step 1: DECODE R3839 re-fetched (three images, no attachment or decipherment); Tomokiyo's mary3.htm, glyph key image and numeric transcription re-fetched: still only the opening clause published.", "result": "failed"},
+  {"date": "2026-10-23", "kind": "crib", "what": "Searched for a placement of Tomokiyo's published opening on his numeric labels (one value per label, word signs, up to 22 nulls; b37_wals_crib.py, b37_wals_crib2.py): none, because his labels merge look-alike glyphs.", "result": "failed", "technique": ["crib testing"]},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Built a label-to-glyph concordance on the f. 138 image line by line with Tomokiyo's glyph key (texts/no50I_concordance.tsv, 58 labels with a value); the published opening comes out exactly; labels 10 (b/k), 35 (null/d), 13 (l/w) merge look-alike glyphs; lines 11-14 only partly checked.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "reading", "what": "Decoded all 562 tokens (b37_wals_dec.py, texts/no50I_decode.txt) and wrote a partial reading and translation (texts/no50I_reading.md, no50I_en.md): 0.077 clean sentences (en word list), 0.154 on explicit holes; kept decoded, not read.", "result": "partial", "technique": ["language-model scoring"]}
  ],
  "outcome": {
   "class": "already solved",
@@ -94,15 +98,20 @@
     {"who": "tomokiyo", "role": "transcription", "note": "published the Biermann-Lasry solution, glyph key and numeric transcription (mary3.htm)", "date": "2026-09-16", "source": "https://cryptiana.web.fc2.com/code/mary3.htm"}
   ],
   "texts": [
-   {"doc": "no50I", "label": "SP 53/11 no. 50I, f. 138 (21 July 1581 enclosure)", "transcription": "SP53_11_50b.txt", "decryption": "https://cryptiana.web.fc2.com/code/mary3.htm", "summary": "The cipher enclosure Walsingham sent to John Somer on 21 July 1581, found in an intercepted letter of Mary, Queen of Scots; its opening reads \"The beirar is domestik servand to the erle of shrevisbvry\".", "note": "Excerpt only: the full decipherment is Biermann and Lasry's (2023), unpublished; Tomokiyo prints only the opening clause, \"The beirar is domestik servand to the erle of shrevisbvry\", and the glyph key (cryptiana mary3.htm). Not deciphered here beyond that clause (reading audit, 22 Oct 2026); fix: apply Tomokiyo's glyph key to f. 138 (DECODE R3839 image P3) through a glyph-to-label concordance, or ask Lasry for the plaintext.", "language": "en", "state": "decoded, not read"}
+   {"doc": "no50I", "label": "SP 53/11 no. 50I, f. 138 (21 July 1581 enclosure)", "transcription": "SP53_11_50b.txt", "decryption": ["texts/no50I_decode.txt", "https://cryptiana.web.fc2.com/code/mary3.htm"], "summary": "The cipher enclosure Walsingham sent to John Somer on 21 July 1581, found in an intercepted letter of Mary, Queen of Scots; its opening reads \"The beirar is domestik servand to the erle of shrevisbvry\".", "note": "Re-read 23 Oct 2026 (b37): Tomokiyo's glyph key applied to his numeric transcription through a label-to-glyph concordance checked on the f. 138 image (texts/no50I_concordance.tsv, texts/no50I_decode.txt); the published opening comes out exactly. Partial reading texts/no50I_reading.md: 0.077 clean sentences on the en word list, 0.154 on explicit holes (b17_score.py HOLES=1); 20 labels have no value (seven are the key's own unknown signs) and lines 11-14 are not yet checked glyph by glyph, so most sentences break. Kept decoded, not read; the bearer passage, 'I durst vryte nothing of importance be him' and 'You may sovnd and try him, and be him send me ansver' read.", "language": "en", "state": "decoded, not read"}
   ],
   "fraction_read_method": "estimated",
   "fraction_read_source": "Share of the 562 tokens represented by the ten-word opening published by Tomokiyo, the only plaintext in the repository (approximate). Reading audit, 22 Oct 2026: the document is decoded, not read; the opening is an excerpt.",
   "gaps": [
    {
-    "item": "no. 50I beyond the published opening",
+    "item": "no. 50I: 20 cipher signs without a value (labels 07, 09, 39, 44, 46, 49, 58, 59, 72, 77, 79, 82, 86, 87, 89, 91, 92, 95, 97, 98)",
+    "blocker": "no-key-material",
+    "detail": "seven are unknown in Tomokiyo's published key too; context proposals (58 THE QUEEN, 87 YOUR, 95 THE, 49 OF) not adopted; the Biermann-Lasry plaintext is unpublished (ask Lasry)"
+   },
+   {
+    "item": "no. 50I lines 11-14: concordance not checked glyph by glyph",
     "blocker": "not-attempted",
-    "detail": "Tomokiyo's glyph key (mary_sp53_11_50b.png) and the f. 138 image (DECODE R3839, reachable with the shared DECODE cookie (targets/bordeaux/decode/cookie.txt)) are available; build the glyph-to-label concordance and apply the key, or ask Lasry for the Biermann-Lasry plaintext"
+    "detail": "lines 1-10 checked 23 Oct 2026 on the DECODE R3839 P3 image; crop the sloping last lines individually (or use a TNA full-resolution image) and finish texts/no50I_concordance.tsv"
    }
   ]
  },

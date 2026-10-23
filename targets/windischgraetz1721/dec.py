@@ -13,7 +13,7 @@ A={52:"affaire",54:"Althann",85:"der/dem",86:"die",121:"geheim",128:"Graf",135:"
    103:"Eugen",         # R5028 p.1 'P.E.', R5026 p.5 '103 contrair' glossed 'Eug.'
    167:"Miosch",        # R5025 p.3 '128.167' glossed 'Graf Miosch'
    191:"Ostendisch",213:"Starhemberg"}
-B={111:"Franzosen",130:"gut",131:"haben",146:"ihm",149:"ihro",151:"Kaiserin",164:"mehr",168:"mir",172:"mit",182:"nicht",209:"seyn",205:"Rialp",139:"Hof"}
+B={111:"Franzosen",130:"gut",131:"haben",146:"ihm",149:"ihro",151:"Kaiserin",164:"mehr",168:"mir",172:"mit",182:"nicht",209:"seyn",205:"Rialp",139:"Hof",101:"eröffnen",225:"Wien"}  # 101, 225 added b37 (23 Oct 2026)
 def decode(show_b=True):
   out_lines=[]
   for line in open('ct.txt',encoding='utf8'):
