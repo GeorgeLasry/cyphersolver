@@ -36,3 +36,9 @@ checker's number stays below the 0.60 bar for the reasons given.
 - l. 8: "1 7 0 9 1 1 5 4 5" before "interogato" (the verb that says the archbishop should be questioned) does not parse
   on the image either; the encipherer's slip.
 - The page begins and ends in mid-sentence; the rest of the letter is not in the record (outside blocker).
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5)
+- The one cipher hole (l. 8, "1 7 0 9 1 1 5 4 5" before "interogato") was checked on the image on 22 Oct (as
+  transcribed); its parses enumerated here (research/reading_audit/r2d_mparse.py: rporse, inores, iquxes ...): none is a
+  word. Kept. The opening and the end are the edges of the sheet (the rest of the letter is not in the record). R49 is
+  done: no hole left unchecked.

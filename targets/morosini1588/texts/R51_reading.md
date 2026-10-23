@@ -20,7 +20,7 @@ cinque compagnie, et che speraua di mandare presto qualche altro auiso a S. M.t�
 mentre cenaua, dise a quelli che stauano atorno la tauola: "Et pure bisogna che contra mia uoglia mi alegri dela
 rouina de miei suditi, anzi dela mia medesma". Dicono che quelli d'Orliens habino prohibito a loro predicatori di dire
 male in pulpito del Re, et mandato bando a tuti gli altri che non lo debino nominare se non per Re, et ordinato
-medesimam. che le ricete siano pagate a tesorieri di S. M.tà, et esi […] nuoui ordini del magistrato dela cità.
+medesimam. che le ricete siano pagate a tesorieri di S. M.tà, et esi [?conseruare] [?la] nuoui ordini del magistrato dela cità.
 Scriuono ancora che quei d'Amiens haueuano caciato dela [f. 466v] cità il duca d'Umala per l'insolenze et estorsioni
 che faceua; et che 'l duca di Longauila, uscendo di San Quintino, haueua disfate due insegne di ualoni che ueniuano a li
 stipendi de signori dela lega. Il sig. duca di Umena si truoua tutauia in Parigi, di doue, come si tiene, non partirà se
@@ -30,8 +30,7 @@ guastatori, et che in soma sua Ecel. non haueua sì gran numero di gente come pr
 a 10 milia fanti et 1400 cauali; onde qui pare che 'l Re cominci a respirare, et masime intendendo che la nobiltà si
 prepara gagliardam. per uenirla a trouare. Con tuto ciò S. M.tà desidera grandem. la pace, preuedendo da un canto la
 gran rouina che è per tirare seco questa guerra, et dal altro gli acquisti che in questa congiuntura ua facendo il re
-di Nauarra, esendosi impadronito in pochisimi di, come ho scrito a V. S. Ill.ma, di Niort, di Lodun, [f. 467r] di
-[?l'Isle Buchar], del Blanc [?in] Berri, d'Argenton et di Montmorilon, con infinito numero di uilagi. Al'abate dal Bene
+di Nauarra, esendosi impadronito in pochisimi di, come ho scrito a V. S. Ill.ma, di Niort, di Lodun, [f. 467r] di Lilibasar, del Blanc [?in] Berri, d'Argenton et di Montmorilon, con infinito numero di uilagi. Al'abate dal Bene
 sono state poste le guardie in casa per ordine di S. M.tà, esendo sospeto d'auisare non solo quei dela lega, da' quali
 si è mostrato alienisimo sempre, ma ancora il Nauarro; et se sarà conuinto la potria far male, se bene molti credono
 che si deba giustificare presto. […]

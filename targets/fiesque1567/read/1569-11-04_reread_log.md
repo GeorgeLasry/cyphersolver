@@ -14,3 +14,10 @@ None known (no margin decipherment on view 168 at reduced size; nothing printed)
 
 ## Result
 Reads: no hole, four partly carried words.
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): single-word holes (decode re-parsed)
+- Left: c01 [?pour] ("que e"), c02 [?l'Empereur] (one unread sign before "sur ce", Dz or ϖ), c04 [?prenies]
+  ("yreniey", y-shape p), c08 [?vous] (the mm sign). None settled by the figures.
+- Then checked on native crops of view 168 right (cipher on page lines 9-16): c01 "zo" = pour (closed); c02 "zz ϖ |
+  ϖa xo⊣‖" = que [ϖ] me fera (the lone ϖ code; "[?l'Empereur]" now [ϖ]); c08 "ı8" = 18 vous before "envoyer"
+  (closed). Left: c04 [?prenies] (y-shape p).

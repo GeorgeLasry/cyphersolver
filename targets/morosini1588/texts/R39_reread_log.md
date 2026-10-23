@@ -33,3 +33,9 @@ breaks off at the foot of 289v; the original despatch is not in this record).
 - The opening figures and "che […] che egli" (289r ll. 7–8) do not parse; the end of the sheet (289v l. 15) is cut
   off. Blocker for the rest of the letter: the original of 8 December is not imaged with this record; Francia 27
   (physical access).
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): partial image check (IMG_R39_I210_P1, scratchpad)
+- 289r l. 5 "de [?la] S. M.tà": the row reads "... 6 1 7 5 1 1 1̇ 3 ..." with ink blots over the figures after it; the
+  figures for "la" are not clearer on the image than in the transcription. Kept.
+- The other holes of R39 (289r l. 2 opening, ll. 7-8, ll. 12-13, 289v l. 15) were cropped (bleed-through and blots
+  make the digit rows hard to segment at this resolution) but not settled in this pass: R39 is not counted as done.

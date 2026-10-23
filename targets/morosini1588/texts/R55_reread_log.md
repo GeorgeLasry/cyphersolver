@@ -39,3 +39,18 @@ on 516r l. 19–20, a name, and the closing line.
 - 516r l. 3 opening; the clause "[…] che la disfata a Charteres … d'Umena […]" (516r ll. 19–20: the verb is not
   carried); the count's name "Santignan?" (516r l. 16, first figure uncertain); the closing line 516v l. 17. Not checked
   on the image (no outside blocker); Francia 27 would settle them.
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): holes checked on the DECODE image (IMG_R55_I272_P1, scratchpad)
+- 516r l. 3 opening: "0 0 5 7 7 1 1 9 2 [a struck 4] 8 | 19 15 77 15 9 ..." (con tuto, the clerk's 3 of "37" written
+  like 7): the opening does not parse (research/reading_audit/r2d_mparse.py), as before.
+- l. 11: "212 | 25 14 21 15 35 91 40 17 00 91 01 | 8" = a Chateogiron: every letter carried; "Chate[?au]giron" now
+  "Chateogiron" as the figures spell it (Châteaugiron).
+- l. 16: "26 7 0 4[ink blot] 21 01 51 17 40 10 21 01": the second figure of the name is under a blot; parses di
+  [p]santignan / [p]bantignan / gantignan: "[?Santignan]" kept (not identified).
+- l. 19: "... 9 1 | 8 1 8 | 5 6 | 50 212 | 62 ..." = arso, nulls, che la disfata: as transcribed; the verb before "che"
+  is not written ("[…] che la disfata" kept).
+- l. 20: after "129 77 20 75 01 21" (duca d'Umena, the clerk's 3 again like 7) only a lone "0" stands before the
+  separator "8 9 8": the "[…]" after "d'Umena" is withdrawn (no word is written there).
+- Done for R55: every hole checked on the image except 516v l. 17 (the last line, "[?sua]" and the close).
+- 516v l. 17 (added): "... 70 21 00 15 153 | 8 | 4 9 5 2 | 111 (N. S.) | 2 7 0 0 1 6 9" as transcribed (a stroke under the
+  4); "[?sua]" and the close stay. R55 is now checked on the image throughout.

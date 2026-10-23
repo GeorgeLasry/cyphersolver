@@ -14,3 +14,10 @@ None known (no margin decipherment on view 161 at reduced size; nothing printed)
 
 ## Result
 Reads: one hole.
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): single-word holes (decode re-parsed)
+- c04 "au prejudice du […]" ("duile"): no word; c08 "[?et] de les secourir" (the figures give "il"): left
+  (no-key-material).
+- Then checked on native crops of view 161 right (the cipher begins on page line 5 after the null "Il ti ol"): c04 "au
+  prejudice du ϖ" (the lone ϖ, le Roy, then the nulls "par moy"): "du [ϖ]"; c08 "ic" = et before "de les secourir".
+  No hole left in the cipher of this letter.

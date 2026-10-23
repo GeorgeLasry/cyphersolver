@@ -2,6 +2,18 @@
 
 Status: in progress (read in part; written up 9 Oct 2026; own entry since 14 Oct 2026)
 
+**23 Oct 2026, r2m (TRANSLATE_BRIEF, Claude Opus 5.5):** readings and English translations written for the six
+letters the audit counted read: R7487, R7495, R7497, R7498, R7499, R7500 (`reading/<R>_reading.md`, `_en.md`; profile
+entries point at them). Built from the decryption files only (word division, punctuation, codes and dotted signs
+resolved from `codes_key.json`, runs printed as the words they spell, runs off by one figure as `[?word]`), no letter
+changed, no word added, not re-read on the images. Runs newly read as words in the readings: "secretary" (78 = y),
+"wegen introduc[t]ion", "admission", "post vor", "[?Nellenbug]" (perhaps Nellenburg) in R7498; "ein rescri[…]pt so ...
+zugleich unterschrieben" in R7495; "[?accordirten] [?puncten] wieder [?resiliren]", "[?allarmiren]", "[?dimission]" in
+R7500. v2_score (plain / explicit holes): R7487 0.467/0.733, R7495 0.54/0.75, R7497 0.44/0.56, R7498 0.412/0.549,
+R7499 0.56/0.76, R7500 0.46/0.56. R7497, R7498 and R7500 sit near the scores at which R7488-R7490 were kept decoded,
+not read (the open person codes count as holes); their state was left as the audit set it, for the coordinator to
+weigh. Every read letter now has a reading and an English translation.
+
 **22 Oct 2026, re-read (REREAD_BRIEF, batch b05; log `reading/R7486-R7496_reread_log.md`):** the nine "decoded, not
 read" letters re-read on the 32 DECODE images (fetched with the project cookie, scratchpad only). The `[?]` words were
 mostly a hard hand, not lost ink: about 170 corrections (`reading/R74xx_corrections.tsv`); readings
@@ -131,7 +143,6 @@ tokens + 37 small codes; 77 distinct codes, 5 with a value (126 tokens). All cip
 ## Remaining gaps
 - R7486, R7488, R7489, R7490, R7492, R7496, decoded, not read - blocker: no-key-material; clear text re-read on the images 22 Oct 2026 (batch b05), sentences break on the open person codes and dotted signs (clean share 0.29-0.556; R7489 0.636 with its numerals counted as words)
 - R7493, decoded, not read - blocker: illegible; lower halves of ff. 303v-304 and feet of ff. 305v-306v faded and tide-marked on the DECODE images (upper halves read 22 Oct 2026); the original in Kraków might read better
-- R7487, R7495, R7497-R7500 (read in the audit): English translations not yet written - blocker: not-attempted (R7491 and R7494 translated 22 Oct 2026)
 - 65 of 77 three-digit codes (394 tokens), mostly persons (187, 181, 166, 190, 254, 258, 132, 193, 186 ...) - blocker: no-key-material; roles fixed from context, names not; no key with the letters, on DECODE or in print; the 100s-200s are not alphabetical, so position gives no bound; the Saxon keys would be in the Hauptstaatsarchiv Dresden and the Wiener Diarium 1706 (dated cribs) is behind a bot check the session may not pass
 - dotted signs d., e., g., c., m., p., oo, ooo, oj and small codes 3., 2. (about 90 tokens) - blocker: no-key-material; articles or pronouns, no value fits every occurrence and none is glossed
 - 8 letter-cipher runs, 44 numbers, without sense (lceth, ditlan, gutswor ...) - blocker: too-short; digits confirmed twice on the images, single short runs with no second occurrence
@@ -142,4 +153,9 @@ tokens + 37 small codes; 77 distinct codes, 5 with a value (126 tokens). All cip
 - [x] known-keys: Kaczka's keys A and B, the R7475 table and the Chomentowski syllabary scored on the runs: none fits
 - [x] print: web searches for Schenck, "Sidon", "Seligman", Saxon envoys at Vienna 1706 (Wackerbarth, Vesnich) and printed Saxon-Vienna correspondence: no key, no edition; the Wiener Diarium on ANNO is behind a Cloudflare Turnstile check
 - [x] key-rebuild: letter table complete; second context pass over every code (transcr/CTX_*); alphabetical order tested: holds in the 500s, fails for the persons
-- [x] retry: every run and every code sentence re-read at full resolution; 22 Oct 2026 (batch b05) every [?] word of the nine unread letters re-read on the images, readings built and checked word by word
+- [x] retry: every run and every code sentence re-read at full resolution; 22 Oct 2026 (batch b05) every [?] word of the nine unread letters re-read on the images, readings built and checked word by word; 23 Oct 2026 (r2m) readings and translations of the six letters read in the audit
+
+## 23 Oct 2026: coordinator's decision after r2m
+- With running readings now written for R7487, R7495 and R7497-R7500, R7497 (0.56 explicit holes / 0.44 plain), R7498 (0.549 / 0.412) and R7500 (0.56 / 0.46) fall under the 0.60 bar, the level at which R7488-R7490 were kept unread. All three are set to **decoded, not read**; their partial readings and English stay in `reading/`. R7487 (0.733), R7495 (0.75) and R7499 (0.76) keep read.
+- fraction_read 0.458 -> about 0.27 (estimated).
+- Remaining gap: R7497, R7498, R7500 open person codes and unread groups - blocker: no-key-material (codes_key.json has no value; no sibling or print gives them).

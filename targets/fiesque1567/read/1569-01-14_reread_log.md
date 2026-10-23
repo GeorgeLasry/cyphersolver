@@ -22,3 +22,14 @@ bleed-through; nothing printed).
 
 ## Result
 Reads: continuous French with about seven holes or open codes.
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): single-word holes
+- v141l c07 "le duc Wolfang a en environ trois mille": the decode "aenenuiron" carries "en"; "[?]" closed.
+- Left (decode only): v140r c08 "l'on […] au commancement" ("seudentrp"), c23 [?que] (a lone m), c26 [?vostre]
+  (16), v141l c01 and c03 [?vous] (the figure read 13 = faire by the contributor, probably 18), c03 [?pouvez]
+  ("souuies"), c04 [?bientost] ("tuctost"), c15 the comte's name (a lone Dz), c19 [?donnast] ("dexa").
+- Then checked on native crops of views 140 right (cipher from page line 6) and 141 left (from line 2): v140r c23
+  "m'a dict [struck sign] ce mariaige": no "que" is written, now "[que]" supplied. v141l c01 and c03: the sign the
+  contributor read 13 (faire) and "II" is "ı8", the code 18 (vous): "vous sçaurez", "que vous en [?pouviez]
+  attandre" (v‡ꝑꝑ̃△aʒ, y-shape p); c04 "ꝭ‡ꝑʊTʊ" = [?tout tost] (not "bientost"). v140r c08 "et que l'on […] au
+  commancement" re-read ("zz C zz ʒaꝑ boʒʊß"): no word; left.

@@ -269,6 +269,13 @@
       "what": "Readings built sentence by sentence for the nine letters (reading/R74xx_reading.md, English R74xx_en.md) and checked word by word against the transcription, the corrections and the run decodes (b05_align.py), which caught normalised or invented words, all corrected (e.g. R7491 \"also sinister\": the figures give the end of \"proposition\"; R7490 \"cauta\" for the written \"Cives\"). Clean share of the reading bodies (b05_score.py): R7491 0.609, R7494 0.611 (read); R7486 0.29, R7488 0.556, R7489 0.545 (0.636 with clear-text numerals counted as words), R7490 0.551, R7492 0.371, R7493 0.23, R7496 0.421 (decoded, not read: open person codes and dotted signs in most sentences; R7493 also faded).",
       "result": "partial",
       "technique": ["manual reconstruction", "contextual inference", "language-model scoring"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "r2m (TRANSLATE_BRIEF): readings and English translations written for the six letters counted read in the audit (R7487, R7495, R7497, R7498, R7499, R7500; reading/<R>_reading.md, _en.md) from their decryption files: word division, capitals and punctuation normalised, codes and dotted signs resolved where codes_key.json gives them, runs of the letter cipher printed as the words they spell (runs off by one figure marked [?word], senseless runs as holes), no letter changed, no word added; not re-read on the images. Scores of the reading bodies (research/reading_audit/v2_score.py, plain / explicit holes): R7487 0.467/0.733, R7495 0.54/0.75, R7497 0.44/0.56, R7498 0.412/0.549, R7499 0.56/0.76, R7500 0.46/0.56; the open person codes count as holes. State left as the audit set it (read, grade B).",
+      "result": "partial",
+      "technique": ["manual reconstruction"]
     }
   ],
   "outcome": {
@@ -313,9 +320,9 @@
       "catalogue correction"
     ],
     "first_break": true,
-    "fraction_read": 0.458,
+    "fraction_read": 0.27,
     "fraction_read_method": "estimated",
-    "fraction_read_source": "22 Oct 2026, re-read batch b05: cipher numbers of the letters that read / all, counted as every standalone number on the transcription lines of transcr/R7486-R7500.txt (comments and bracketed notes left out; a rough count, dates included): 640 / 1,397 (R7487, R7491, R7494, R7495, R7497-R7500 read). Before: 0.34 (estimated, reading audit, 663 of 1,956 on a looser count). Withdrawn as a reading figure: 0.636 (measure.py, numbers in runs giving sense plus valued codes and signs over 1,361 cipher tokens) and fraction_coherent 0.935.",
+    "fraction_read_source": "22 Oct 2026, re-read batch b05: cipher numbers of the letters that read / all, counted as every standalone number on the transcription lines of transcr/R7486-R7500.txt (comments and bracketed notes left out; a rough count, dates included): 640 / 1,397 (R7487, R7491, R7494, R7495, R7497-R7500 read). Before: 0.34 (estimated, reading audit, 663 of 1,956 on a looser count). Withdrawn as a reading figure: 0.636 (measure.py, numbers in runs giving sense plus valued codes and signs over 1,361 cipher tokens) and fraction_coherent 0.935. Revised 23 Oct 2026 (coordinator): R7497, R7498, R7500 moved to decoded, not read (0.56/0.549/0.56 explicit holes on readings built by r2m); the b05 count of 640 numbers in the eight letters was apportioned by reading length to the five that still read, about 383 of 1,397 (estimated).",
     "fraction_coherent": 0.458,
     "codes_open": {
       "open": 65,
@@ -394,7 +401,9 @@
           "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
         },
         "state": "read",
-        "language": "de"
+        "language": "de",
+        "reading": "reading/R7487_reading.md",
+        "translation": "reading/R7487_en.md"
       },
       {
         "doc": "R7486-R7500",
@@ -503,7 +512,9 @@
           "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
         },
         "state": "read",
-        "language": "de"
+        "language": "de",
+        "reading": "reading/R7495_reading.md",
+        "translation": "reading/R7495_en.md"
       },
       {
         "doc": "R7486-R7500",
@@ -519,33 +530,27 @@
       },
       {
         "doc": "R7486-R7500",
+        "note": "23 Oct 2026: reading built from the raw transcription (r2m) scores 0.56 on explicit holes, 0.44 plain (v2_score, open person codes and unread groups as holes); under the 0.60 bar, applied as for R7488-R7490. Kept decoded, not read; the partial reading and English stay in reading/R7497_reading.md and _en.md.",
         "label": "R7497, N. 40, Vienna, 19 June 1706",
         "transcription": "transcr/R7497.txt",
         "decryption": "reading/R7497.txt",
         "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 19 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
-        "reading_review": {
-          "grade": "B",
-          "by": "Claude (reading audit)",
-          "date": "2026-10-22",
-          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
-        },
-        "state": "read",
-        "language": "de"
+        "language": "de",
+        "reading": "reading/R7497_reading.md",
+        "translation": "reading/R7497_en.md",
+        "state": "decoded, not read"
       },
       {
         "doc": "R7486-R7500",
+        "note": "23 Oct 2026: reading built from the raw transcription (r2m) scores 0.549 on explicit holes, 0.412 plain (v2_score, open person codes and unread groups as holes); under the 0.60 bar, applied as for R7488-R7490. Kept decoded, not read; the partial reading and English stay in reading/R7498_reading.md and _en.md.",
         "label": "R7498, N. 41, Vienna, 23 June 1706",
         "transcription": "transcr/R7498.txt",
         "decryption": "reading/R7498.txt",
         "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 23 June 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
-        "reading_review": {
-          "grade": "B",
-          "by": "Claude (reading audit)",
-          "date": "2026-10-22",
-          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
-        },
-        "state": "read",
-        "language": "de"
+        "language": "de",
+        "reading": "reading/R7498_reading.md",
+        "translation": "reading/R7498_en.md",
+        "state": "decoded, not read"
       },
       {
         "doc": "R7486-R7500",
@@ -560,22 +565,21 @@
           "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
         },
         "state": "read",
-        "language": "de"
+        "language": "de",
+        "reading": "reading/R7499_reading.md",
+        "translation": "reading/R7499_en.md"
       },
       {
         "doc": "R7486-R7500",
+        "note": "23 Oct 2026: reading built from the raw transcription (r2m) scores 0.56 on explicit holes, 0.46 plain (v2_score, open person codes and unread groups as holes); under the 0.60 bar, applied as for R7488-R7490. Kept decoded, not read; the partial reading and English stay in reading/R7500_reading.md and _en.md.",
         "label": "R7500, N. 47, Vienna, 14 July 1706",
         "transcription": "transcr/R7500.txt",
         "decryption": "reading/R7500.txt",
         "summary": "A letter of the numbered series from the Vienna agent signing 'Sidon' to Baron Schenck, chamberlain of Augustus II, at Cracow, 14 July 1706: court news and intrigue in clear German, with the two-digit letter cipher deciphered (in braces) and most three-digit person codes left open.",
-        "reading_review": {
-          "grade": "B",
-          "by": "Claude (reading audit)",
-          "date": "2026-10-22",
-          "note": "Reader's check: the letter builds German sentences; the holes are mostly three-digit person codes whose roles are known from context (181, 187, 189 ...), with a few unread runs, so it can be translated with the codes kept as numbers. The audit grade D (taken over the whole file set) is overturned for this letter."
-        },
-        "state": "read",
-        "language": "de"
+        "language": "de",
+        "reading": "reading/R7500_reading.md",
+        "translation": "reading/R7500_en.md",
+        "state": "decoded, not read"
       }
     ],
     "key_file": [

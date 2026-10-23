@@ -18,11 +18,11 @@ in the form needed, 167 V. S. Ill.ma, 216 auiso/auisi). The groups "8 9 8" and "
 duplicati, non uoglio però restare anco al presente, con ocasione di un gentilhuomo dela gran duchesa di Toscana che se
 ne ritorna a Firenze, di auisare V. S. Ill.ma che per relatione del sodeto gentilhuomo ho inteso che 'l conte di
 Suisone, che era andato i[n] Bretagna, mentre che per dare tempo ale sue genti che inuiaua a uerso Renes di auanzare
-camino si era fermato a Chate[?au]giron, esendo nel leto et dormendo fu fato prigione dal duca di Mercurio insieme con
+camino si era fermato a Chateogiron, esendo nel leto et dormendo fu fato prigione dal duca di Mercurio insieme con
 alcuni altri gentilhuomini di consideratione; la quale presa, per esere questo principe del sangue, è stimata di molta
 importanza. D'altra parte raconta la morte del conte di [?Santignan], che era dela lega, il quale, riuedendo alcuni
 barili di poluere di note con un lume in mano, per una fauila che cadè et acese la poluere, restò arso. […] che la
-disfata a Charteres di alcune compagnie di cauali del sig. duca d'Umena […]. Dice che il Re doueua esere domani a
+disfata a Charteres di alcune compagnie di cauali del sig. duca d'Umena. Dice che il Re doueua esere domani a
 Bogianci, et che la risolutione sua era d'andare ala uolta di Parigi, doue già si trouaua il duca d'Umena, per esere
 quella cità in gran confusione, hauendosi già baricate [f. 516v] tute le strade strete, et esendo i popoli in gran
 spauento et fra loro mal d'acordo. Mi ha deto che 'l Re mostraua grandisimo cuore, hauendo molto speso auisi dei felici

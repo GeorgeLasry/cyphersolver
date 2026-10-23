@@ -277,6 +277,13 @@
    "what": "R27, R35, R51, R57 regraded with the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): explicit-hole share 0.84, 0.84, 0.97, 0.85 (plain 0.58, 0.48, 0.54, 0.48, the period spelling unknown to the word list); the DECODE attachments of the four records re-opened (R27 D1018-D1020 and R51 D1103 are an address leaf, a Latin letter and a clear covering letter, no decipherment; R35 and R57 have none); holes checked on the images: R27 137r l. 13, 137v l. 3, R51 466r l. 3, 466v l. 8 (one stretch read, 'che so'), R57 524r ll. 14-15, R35 202v ll. 8-9 (a hole in the paper). All four now read; every enclosure reads.",
    "result": "worked",
    "technique": ["manual reconstruction", "language-model scoring"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "r2m: holes worked through letter by letter on the DECODE images (cached in the session scratchpad; crops in scratchpad/reread/r2m/mo), each hole's figures read on the image and enumerated under Meister no. 40 (research/reading_audit/r2d_mparse.py). Done (every hole checked): R49 (one hole, no parse), R51 (466r l. 22-23 'et esi [?conseruare] [?la] nuoui ordini' from 69 5 45 171 19 45 35 00 37 21 1 35 05 212; 467r 'Lilibasar' every letter carried, the bracket removed), R55 ('Chateogiron' as the figures spell it; the hole after 'd'Umena' is a lone 0 before the separator 8 9 8 and is withdrawn; [?Santignan] has a blot over its second figure). Partly: R40 (293r l. 15 and l. 21 are crossed through by the encipherer with looped strokes; read through them, 'senza [?o con poche] danari'), R39 (289r l. 5 only). Finding: some holes are cancelled stretches that DECODE's transcription gives as ordinary figures. Scores (v2_score, plain / explicit holes): R40 0.55/0.95 -> 0.525/0.925, R51 0.541/0.973 unchanged, R55 0.667/1.0 -> 0.688/1.0. Not attempted in this pass: R17-R22, R27-R38, R41-R48, R52, R56-R58 (and the rest of R39, R40).",
+   "result": "partial",
+   "technique": ["manual reconstruction", "contextual inference", "language-model scoring"]
   }
  ],
  "outcome": {

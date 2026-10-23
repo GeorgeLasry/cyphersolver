@@ -44,3 +44,27 @@ hold on views 7-8; the letter's first cipher page (view 6 right) is unread becau
 - Dz = con (four words on view 6 right). Look-alike alternates on view 6 right 3.3% (31/940 letters).
 - Score, body only: 0.61 plain (0.67 before on the shorter text), 0.92 holes only, 0.70 with target spellings.
 - Left: v006r c05-c06 two words; [?] words listed in the v006r log; v007r-v008l holes listed above (not re-checked).
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): single-word holes of views 7 left - 8 right on native crops
+Views 7 and 8 fetched whole at native resolution (openapi.bnf.fr IIIF, 7593 px wide; scratchpad only), each hole's line
+cut into strips (two halves) and read sign by sign with the key (Dz = con). Labels found different from the contributed
+transcription are listed in `r2/corrections.tsv` (r2m rows).
+- Filled from the figures: v007l c10 "entendre" (u = e, a struck "La" before it); c13 "[con]seiller" (Dz); c17 "ordre et
+  unyon" (the contributor's "1 a" is "ic" = et; "[?en l'unyon]" withdrawn); c20 "sont [?soubz] les mains de luy": the
+  contributed line lacks the first four groups ("T‡ʒʊ v+ꝑ+ʒ Cov ϖ‖ıʒT" = sont, s-o-u-o-z, les, mains); "[?soubz]" rests on
+  v+ꝑ+ʒ (s o u ? z) by sense. c23 "Sa Majesté [...] qu'il": the hole is a struck sign; no word is written, the cipher
+  omits the verb. v007r c01: no "estoient" in the figures ("T o n + ꝑ ⊣ ꝑ̃" = secouru), now `[estoient]` supplied, and
+  the clause ends "a son besoint." (no sign lost; the conditional has no main clause in the cipher). c02 "[con]me"
+  (Dz ϖ o). c07-c08 "riens dire jusques a tant qu'on": no sign for "a" before "dire"; "zi" is the code 21 (tant), as
+  this hand writes 20 "zo" and 10 "ic"; ⊢ꝑ+ʒ = qu'on. c15 "plaint [?poinct], car": ʒ+1ꝭs+ʊ = p o i [ꝭs] [+] t (two
+  look-alikes), n‖⊣ = car. c19 "poussoict" (3p ‡ ꝑ ‡(ss) + 1 fx ʊ; "[?sollicitoict]" withdrawn) and "de" (b o at the line
+  end). c20 "laquelle chose" (ꝑ‖ zz 7o: "[?toutesfois] que la" withdrawn). c22 "de me faire ce bien de ne croire"
+  (ϖa, 13 = faire, n o, 4 1 a ʒ = bien). c23 "par le monde" (ʒ‖⊣, ꝑo; "[?plus] au" withdrawn). c24 end "luy" (ꝑ ꝑ̃ ʒ),
+  "luy remonstrant". v008l c01 "et qu'il pouvoict bien cognoistre que [ϖ] et vous" (aʊ = et; the lone ϖ code). c03
+  and c20 "estre", "estre esleu": "ı4" is the code 14 (est). c05 "sans [?vostre] sceu": the figure is the code 16, read
+  vostre as in f. 100r c24 and the 1569 letters. c14 "croire" (fx ⊣ + ı ⊣ o). c15 "amitye qu'il est possible" (ʊʒo =
+  tye; no sign missing). c19 "des filles de [ϖ]" (b a ϖ). c22 "pourchassoict la seconde pour le roy de Portugal" (zo
+  = 20 pour, n L ‖ ‡ = chass). c24 "[ϖ] ne se [con]t[e]nte" (n read e). v008r c01 "Je tache [?fort]" (8 a ʊ ‖ n L a).
+- Left: v007l c04 [?fort] (3y read f), c14-c15 [?bon escient] (a H# 1 o 3n, no c), c22 [?accordé] (a ffx H# ⊣, no
+  "dé"); v007r c22 nothing; v008l c18 [?Plus] (f C ꝑ v, f for p); c21 "et que […] bagues": the groups ꝑ‖ʒam‖ʒ‖
+  ‖ʒf++ıʊo give no word under the key (perhaps "n'a ... apporté"); v008r c01 [?fort].

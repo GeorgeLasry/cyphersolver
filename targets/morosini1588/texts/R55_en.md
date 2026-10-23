@@ -12,7 +12,7 @@ troops he was sending towards Rennes time to advance, was taken prisoner by the 
 together with some other gentlemen of standing; this capture, since this prince is of the blood, is thought of great
 importance. On the other side he tells of the death of the Count of [?Santignan], who was of the League: inspecting
 some barrels of powder at night with a light in his hand, a spark fell and set the powder alight, and he was burnt.
-[…] that the rout at Chartres of some companies of horse of the Duke of Mayenne […]. He says that the King was to be at
+[…] that the rout at Chartres of some companies of horse of the Duke of Mayenne. He says that the King was to be at
 Beaugency tomorrow, and that his resolution was to go towards Paris, where the Duke of Mayenne already was, since that
 city is in great confusion, having already barricaded [f. 516v] all the narrow streets, and the people being in great
 fear and at odds among themselves. He told me that the King showed very great courage, having had very often news of the

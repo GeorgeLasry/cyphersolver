@@ -23,3 +23,14 @@ None known (no margin or interlinear decipherment on views 129-130 at reduced si
 ## Result
 Reads: continuous French with four holes and two open codes. Not checked on the image (no break needed it except the
 codes, which an image check would not settle).
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): single-word holes
+- v129r c07 "Je luy ay [dict]": the decode has "ieluyay QUE": no figure for "dict"; now bracketed as supplied.
+- Left (decode only, no further reading): c10 "ce [?secours]" ("cesue"), v130l c02 "au duc […]" ("duue"), c06 "ayde
+  a autre […]" ("bellestant du m que du ii"), c18 "[?et]" ("ili"), c19 "[?je]" ("id"), c21 the lone [Dz].
+- Then checked on native crops of views 129 right (cipher from page line 16) and 130 left (from line 2): v130l c02 "au
+  duc b‖ꝑꝑa" = [?d'Albe] (d a l ? e); c21 the sign after "si" is the ꝑꝑ/ꝥ sign, which round 2 read as the King of
+  Spain by context: "si [pp] espouse sa fille aisnée, que [∞ le Roy] espouse aussi la seconde" (the "[Dz]" of 22 Oct
+  withdrawn). c18 the "[?et]" stands where the null "Il ti ol" is written after [=ii]; the following groups ("△a ı8 v C
+  ‖ ⊣ ϖ") are not resolved, left. v129r c10 "ce [?secours]": the figures are "T ꝑ a" (s u e), left. c06 v130l "ayde a
+  autre […]": "4o7aTʊ‖ʒʊ" (b e ll e s t a n t), no word, left.

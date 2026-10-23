@@ -19,3 +19,14 @@ None known (no margin decipherment on view 163 at reduced size; nothing printed)
 
 ## Result
 Reads: two holes, both in a single clause each.
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): single-word holes (decode re-parsed)
+- c05 "que Dieu [?vous] a donnée, [?ou] seront tous les principaulx seigneurs": "dohposeront" = donné(e) + o + seront;
+  the hole before "tous" closed as "[?ou] seront".
+- Left: c01 [?copie] ("cosne"), c02 [?j'ay], c03 and c05 [?vous] ("ue", "u"), c07 l'[?offre] (an unread sign), c22-c23
+  "estant [?de] nature vo[stre] […] tousjours […]" ("ronnatureuo", "stcienanme").
+- Then checked on native crops of view 163 right (cipher from page line 5, after the null "Il ti ol"): c02 "△‖ʒ" =
+  j'ay ("[?j'ay]" closed); c03 and c05 "ı8" = 18 vous before "estiez" and "a donnée" (closed); c05 "a donnée" is
+  followed by a lone ‡ (o) and "seront": "[?ou] seront" kept; c23 "ꝭ‡ꝑT△‡ꝑ⊣v | T△a⁴ıaʒ | ‖ʒϖa | b a ... subjects" =
+  tousjours [?si bien] aymé de ces subjects (the hole before "de ces subjectz" closed; "si bien" rests on s i e b i e
+  n). Left: c01 [?copie] (⁴‡ʒfaa), c07 l'[?offre], c22 [?de], "vo[…]" (the word after "nature" is written only "vo").

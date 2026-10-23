@@ -10,7 +10,7 @@ eight thousand foot; whereupon His Majesty assembled his council, and, consideri
 preparations with some new design, after [long] discussion it was resolved to send at once to raise 15,000 Swiss [and]
 8,000 Landsknechts with [Frech], and 1,500 reiter horse, and that all of them, with the greatest speed possible, join the
 other troops that are with the Duke of Mayenne; and orders have already been given to find the money for this need,
-which will not be much, since there is someone who offers without […] money to raise the cavalry; as the Duke of Guise
+which will not be much, since there is someone who offers to raise the cavalry without [?or with little] money; as the Duke of Guise
 has also offered His Majesty that Colonel Pfyffer will raise the Swiss for ten thousand scudi, and Monsieur de
 Bassompierre the Landsknechts [Frech]; and besides, the Estates say that tomorrow they will find 500,000 scudi, and the
 […] and the treasurers offer to give one million three hundred thousand scudi, [f. 293v] if the Estates will assure

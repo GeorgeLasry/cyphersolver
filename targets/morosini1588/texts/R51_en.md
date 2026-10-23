@@ -12,7 +12,7 @@ likewise captured the baggage of five companies, and hoped soon to send His Maje
 hearing of this event while at supper, said to those who stood around the table: "And yet I must, against my will,
 rejoice at the ruin of my own subjects, nay at my own". They say that those of Orléans have forbidden their preachers
 to speak ill of the King from the pulpit, and sent out a proclamation to all the others not to name him except as King,
-and likewise ordered that the revenues be paid to His Majesty's treasurers, and they […] new orders of the city's
+and likewise ordered that the revenues be paid to His Majesty's treasurers, and they [?keep] the new orders of the city's
 magistrates. They also write that those of Amiens had driven out of the [f. 466v] city the Duke of Aumale for the
 insolences and extortions he committed; and that the Duke of Longueville, coming out of Saint-Quentin, had routed two
 ensigns of Walloons who were coming into the pay of the lords of the League. The Duke of Mayenne is still in Paris, from
@@ -23,7 +23,7 @@ number of men as had first been published, since they do not reach 10,000 foot a
 seems to begin to breathe again, especially hearing that the nobility is preparing in force to come and join him. All
 the same His Majesty greatly desires peace, foreseeing on the one hand the great ruin this war is bound to bring with
 it, and on the other the gains that the King of Navarre is making at this juncture, having in very few days, as I wrote
-to Your Most Illustrious Lordship, made himself master of Niort, of Loudun, [f. 467r] of [L'Île-Bouchard], of Le Blanc
+to Your Most Illustrious Lordship, made himself master of Niort, of Loudun, [f. 467r] of Lilibasar (L'Île-Bouchard), of Le Blanc
 [in] Berry, of Argenton and of Montmorillon, with an infinite number of villages. Guards have been posted in the house
 of the abbé del Bene by His Majesty's order, as he is suspected of passing information not only to those of the League,
 from whom he has always shown himself most estranged, but also to Navarre; and if he is convicted it could go badly

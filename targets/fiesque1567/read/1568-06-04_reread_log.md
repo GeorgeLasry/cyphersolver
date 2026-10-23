@@ -8,3 +8,8 @@ Before: decoded, not read (decoded_v065r.txt; _check_reading 0.0).
 2. Aligned with the decode (c01-c08): agrees clause by clause; first ∞ = l'empereur, second = le Roy; "amcaoade" =
    ambassade(ur).
 3. Open: one cramped word ("[?presenté]"). Grade A.
+
+## r2m, 23 Oct 2026 (Claude Opus 5.5): the one open word re-checked (view 65 right, margin, native crop)
+- Margin ll. 1-2: "Il ne s'est jamais e[...] / [...]nté occasion de / toucher aulcuns propos": the verb runs under the
+  main text's clear line at the page edge and is cramped; the cipher (c01 "ic ‖ ...", "et a occasion") does not carry
+  it. "[?presenté]" kept (illegible).

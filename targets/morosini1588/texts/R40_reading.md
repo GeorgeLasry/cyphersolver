@@ -21,7 +21,7 @@ oto milia fanti; per il che, ridoto da S. M.tà il suo consiglio, et considerato
 quella Alteza fare queste prouisioni, dopo [?longhi] discorsi fu risoluto di spedire subito per fare una leuata di 15
 milia Suizeri [et] di oto milia Lanzi con [?Frech], et di mile cinquecento cauali raitri, et che habiano tuti con la
 magiore presteza che sarà posibile ad unirsi con l'altre genti che sono con il duca di Umena; et di già si è dato
-ordine di ritrouare il danaro per questo bisogno, che non sarà molto, esendoui che si oferisce senza […] danari di
+ordine di ritrouare il danaro per questo bisogno, che non sarà molto, esendoui che si oferisce senza [?o con poche] danari di
 leuare la caualeria, come anco il duca di Guisa ha oferto a S. M.tà che il colonelo Fifer con dieci milia scudi farà la
 leuata dei Suizeri, et mons. di Basompier quello de' Lanzi [?Frech]; et con tuto ciò li Stati dicono che domani
 ritrouarano 500 milia scudi, et il […] et i tesorieri oferiscono di dare un milione et 300 milia scudi, [f. 293v] se li

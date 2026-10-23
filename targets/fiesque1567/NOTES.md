@@ -3,6 +3,30 @@
 Status: in progress (23 Oct 2026). Contributed reading (issue #52, Harumi-Matsuba), checked here; all 23 letters read into sentences
 (round 2, 23 Oct), read in part: open codes and phrase holes remain inside the readings (see Remaining gaps).
 
+23 Oct 2026, r2m (Claude Opus 5.5): **the single-word holes of the 17 letters not re-checked in round 2 worked through
+on native-resolution crops** (openapi.bnf.fr IIIF, views 7-8, 34-35, 49, 65, 70-71, 99-100, 103, 109-110, 125, 129-130,
+140-141, 146, 155, 159, 161, 163, 168; images in the scratchpad only). Bracketed holes in the 17 readings 161 -> 90.
+- **Number codes misread as letter signs.** This hand writes the codes with z for 2 and i for 1: 10 "ic", 13 "iz", 14
+  "i4", 18 "i8"/"ig", 20 "zo", 21 "zi", 23 "z3". Read as codes they close many holes: "jusques a tant qu'on" (21),
+  "estre", "estre esleu", "l'Emperatrice est venue", "a esté", "il est apres" (14), "vous" for the contributor's 13/II/MM
+  (18), "pour" (20), "qu'il" (23), "et" (10). Label corrections in `read/r2/corrections.tsv` (r2m rows).
+- **The lone codes**: ϖ for the Emperor or the King in 11 places ("des filles de [ϖ]", "de quoy [ϖ] ne m'a riens dict",
+  "au prejudice du [ϖ]"), pp/ꝥ for the King of Spain ("si [pp] espouse sa fille aisnée"); Dz = con in seven more words.
+- **Readings of 22 Oct corrected where the figures contradict them**: "l'Emperatrice est venue souper" (27 Mar 1568, not
+  l'Empereur), "l'evesque de Retes" (4 Sep 1568, twice: le + ves + the code que; the Bishop of Rennes, Bochetel, the
+  previous ambassador), "pourchassoict la seconde pour le roy de Portugal", "l'ambassadeur du Roy poussoict a
+  Constantinoble le Turc", "je le prioys de me faire ce bien de ne croire les mauvais" (Oct 1567), "car il ne sçavoict
+  encores en quels termes" (27 Mar 1568), "Et depuis" (20 Oct 1569: the "Il" was the null "Il ti ol"), "Chantonnay et
+  Vanega" (1 Oct 1569: Luis Venegas, Philip II's ambassador). Withdrawn as not carried: "arriver" (12 Jun 1568),
+  "[?princes]" (20 Oct 1569), "[?Cosme]" (4 Sep 1568), "[?estoient]" (now supplied).
+- **Untranscribed cipher found**: view 7 left c20 begins with four groups the contributed line lacks ("sont [?soubz] les
+  mains de luy, du Roy et du Roy d'Espaigne"); view 110 right has a whole line between the contributor's c04 and c05
+  ("le seigneur Ernest ..."); cipher groups at the ends of clear lines on views 34 and 49 (no word). "Jay receu" written
+  inside cipher blocks (views 110, 130, 159) behaves like the nulls "Il ti ol", "par moy".
+- Scores (v2_score, plain / explicit holes) rise on 11 letters, e.g. 11 Oct 1567 0.461/0.724 -> 0.564/0.833, 20 Oct 1569
+  0.333/0.667 -> 0.400/0.867, 4 Nov 1569 0.462/0.846 -> 0.615/0.923; states unchanged (all 17 were read).
+- Left: 90 places, each with its figures in the r2m section of `read/<doc>_reread_log.md` (Remaining gaps).
+
 23 Oct 2026, round 2 (REREAD_BRIEF, Claude Opus 5.5): **view 6 right and view 23 left transcribed and read; the 10 Sep
 1569 letter now reads, so all 23 letters read.**
 - View 6 right (f. 2r), the first cipher page of the 11 Oct 1567 letter, transcribed from native IIIF crops (23 lines,
@@ -131,7 +155,8 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
 - View 6 right (11 Oct 1567) c05-c06, two words, and about ten [?] words on that page - blocker: no-key-material; transcribed and checked sign by sign on native crops 23 Oct; the groups give no word under the key and no decipherment or print of this letter exists
 - View 23 left (15 Nov 1567): the bearer's name (9 signs) and about 17 signs before "court" - blocker: no-key-material; decoded 23 Oct; a name not in the key, and the contemporary decipherment abridges and is cramped there
 - Phrase holes left after the round-2 image checks: f. 79v c01-c03, f. 80 c01, c08 (17 Jul 1568); f. 100r c18 end, three words in c24-c26 (4 Sep 1568); v038l c17 subject (15 Feb 1568); f. 39r c08, c22-c23 end, c29 verb (6 Mar 1568); v150l [?conclurre], [?cest] (10 Sep 1569) - blocker: no-key-material; each checked on native crops (round-2 sections of read/<doc>_reread_log.md); no contemporary decipherment, clear copy or print exists for these letters
-- Single-word holes in the 17 letters not re-checked in round 2 (about 60 words; listed in read/<doc>_reread_log.md) - blocker: not-attempted; left for a later pass: every one of these letters already reads (clean share 0.58-1.0) and round 2 went to the untranscribed pages and the phrase holes
+- Single-word holes left in the 17 letters after the r2m pass (90 bracketed places, from 161; each listed with its figures in the r2m section of read/<doc>_reread_log.md): groups that give no word under the key (e.g. 11 Oct 1567 view 8 left c21 "et que […] bagues", 27 Mar 1568 the seven signs at the end of the clear line, 4 Sep 1568 view 110 right line 5 after "le seigneur Ernest"), struck or unwritten words (14 Aug 1568 "devers […]"), and words that rest on a look-alike the figures do not settle ([?fort], [?bon escient], [?soubz], [?poinct], [?pouviez]) - blocker: no-key-material; checked on native crops 23 Oct 2026 (r2m); no contemporary decipherment, clear copy or print of these letters, and the look-alike and code-sign values cannot be settled without one
+- Margin decipherments, cramped words: 4 Jun 1568 [?presenté], 21 Aug 1568 "[…]nt" and [?l'on tient pour seur], 6 Nov 1568 [?a assemblé] - blocker: illegible; re-read on native crops 23 Oct 2026, the margin hand is cramped or overwritten at these places and the decode is broken there too
 - Lone signs standing as codes, values not settled: ϖ (l'Empereur or le Roy), ∞ alone, =ii, pp/ꝥ (the King of Spain by sense), H# alone, the group ffx-3y, the arrow, "lele"; 16 = ce or vostre - blocker: no-key-material; not in Tomokiyo's table, read from context; key.tsv unchanged (Dz = con now settled)
 
 ## Escalation
@@ -140,7 +165,7 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
 - [x] known-keys: Tomokiyo's reconstructed table for this volume is the key; no other key of Fiesque's embassy is known
 - [x] print: La Ferrière, Lettres de Catherine de Médicis iii (Catherine's replies only), Cryptiana, DECODE and the contributor's prior-work list; nothing printed of Fiesque's cipher
 - [x] key-rebuild: contributor inferred 23 values from context; the calibration shows one code (Φ) mis-valued in one place; 23 Oct Dz valued con from eleven words in five letters
-- [x] retry: the whole volume decoded again here with the contributed key and scored (measure.py); 22 Oct every letter built into sentences from the decode, with image checks on views 6, 37, 109, 159; 23 Oct (round 2) views 6 right and 23 left transcribed, and the phrase holes of ff. 39r, 79v-80, 100r and views 38 left, 150 left re-read on native-resolution crops
+- [x] retry: the whole volume decoded again here with the contributed key and scored (measure.py); 22 Oct every letter built into sentences from the decode, with image checks on views 6, 37, 109, 159; 23 Oct (round 2) views 6 right and 23 left transcribed, and the phrase holes of ff. 39r, 79v-80, 100r and views 38 left, 150 left re-read on native-resolution crops; 23 Oct (r2m) the single-word holes of the other 17 letters re-read on native crops of 24 views (161 -> 90)
 
 ## 23 Oct 2026: round 2 review (coordinator)
 - 10 Sep 1569 kept **decoded, not read**: the reading body clears the bar (0.61 plain, 0.76 explicit holes with conjectures counted), but 4.1% of its letters rest on look-alike choices (3.0% leaving out the y-shape s/p signs), over the ~3% limit, and nothing outside confirms them. The partial reading and its English stay in `read/1569-09-10_reading.md` / `_en.md`. Next step: settle the y-shape s/p signs on native crops, sign by sign, which would bring the share under the limit.
