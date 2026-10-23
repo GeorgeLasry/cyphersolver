@@ -2,6 +2,21 @@
 
 Status: in progress
 
+**22 Oct 2026, re-read (batch b00, REREAD_BRIEF; Claude Opus 5.5 with six helpers):** 34 of the 35 enclosures now
+read as sentences and are translated (`texts/<R>_reading.md`, `_en.md`, `_corrections.tsv`, `_reread_log.md`); R35
+(the Spanish memorandum) still has too many holes. Method: a word-level decoder with a transcription-slip model
+(`research/reading_audit/reread_b00_decode.py`, output `texts/<R>_worddecode.txt`), then every break re-parsed by hand
+on the transcribed figures and, where a figure was in doubt, on image crops (`reread_b00_crop.py`; DECODE images via the
+cookie, kept in the scratchpad), and each reading aligned word by word with its figures (`reread_b00_align.py`), with
+every word the figures do not carry bracketed. What garbled the old decode: spurious nomenclator dots in DECODE's
+transcriptions (250 = "Bles" in letters, 150, 214, 712 ...), real codes with the dot on the wrong figure or none, the
+clerk's -mente abbreviation (m + null 8), numbers in plain figures between null 8s, single 8 as a null, and page order
+(R30, R31, R43, R45, R47). No new code value. No contemporary decipherment on the DECODE images (the "cleartext" images
+are covering letters); Rome's decipherments are in Francia 27 (Hübner 1870), not imaged; Tempesti 1754 paraphrases
+many letters and was used for sense and names only. R35 is the Spanish ambassador's memorandum to the Queen Mother,
+not a letter of Philip II. Class not read -> read in part; method -> read with known key; fraction_read measured
+on items of the enclosures that read.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 all 35 enclosures (R17-R58) are **decoded, not read**. The decode (Meister's key on DECODE's volunteer transcription)
 is lowercase word-split output with garbled words in nearly every line; the gist follows, sentences cannot be built
@@ -84,52 +99,19 @@ clear duplicates of the covering letters are transcribed on DECODE (R18/R19 DOC_
 Images: DECODE, login; kept git-ignored (`img/`, `decode/*.png|pdf|htm`).
 
 ## Remaining gaps
-- R17, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R18, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R19, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R20, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R21, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R22, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R27, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R28, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R29, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R30, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R31, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R32, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R33, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R34, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R35, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R36, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R37, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R38, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R39, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R40, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R41, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R42, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R43, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R44, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R45, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R46, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R47, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R48, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R49, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R51, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R52, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R55, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R56, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R57, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R58, decoded, not read - blocker: not-attempted; garbled words in most lines from transcription slips; re-transcribe from the images and re-decode
-- R17 five unknown codes (519, 911, 556, 722, 561) - blocker: open-codes; Meister no. 40 reads all five pages except these; most look like transcription slips, images not re-read
-- dotted nomenclator codes outside Meister's list (162, 191, 250, 516, 617, 716, 770; ~1 per page) - blocker: open-codes; most look like transcription slips of a dotted digit; not checked against the images
+- R35, decoded, not read - blocker: not-attempted; the Spanish memorandum builds sentences in large part but keeps 17 unread stretches and 10 partly carried words in 531 words; a full image pass of the doubtful lines is the next step (only 202r ll. 6-8 cropped); last line on damaged paper
+- short unread stretches inside the 34 readings (about 540 holes in 33,000 words: openings, closings, one-to-eight-figure groups no word parse fits) - blocker: not-attempted; many checked on the images and found transcribed as written (encipherer's slips), the rest not cropped (none for R42, R48); listed per record in texts/<R>_reread_log.md
+- Rome's decipherments of these ciphers (ASV Segr. Stato Francia 27, cited by Hübner 1870) - blocker: needs-physical-access; not imaged online
+- missing leaves (R46 between 382v and 383r, R47 after 385v; R17 233v and R22's last leaf not imaged) - blocker: needs-physical-access
 - item 22/29 - blocker: needs-physical-access; no DECODE record for it; not imaged, so its key is not known
 
 ## Escalation
 - [x] siblings: all 36 enclosures R18-R58 opened; R23-R26, R50 identified as other material; R53/R54 in a second key (now morosini1589); R17 in Francia 18 found to be in this key
-- [x] clear-pages: clear duplicates of the covering letters transcribed on DECODE (R18/R19 DOC_1806/1807) checked
+- [x] clear-pages: every record's DECODE "cleartext" images viewed (22 Oct 2026): covering letters in clear and address leaves, no decipherment; no interlinear glosses on the cipher pages
 - [x] known-keys: Meister no. 40 (1587) and Lasry's DOC_3175 reconstruction applied; the same key read R17
-- [ ] print: not done — only "no Acta Nuntiaturae Gallicae volume" recorded
-- [n/a] key-rebuild: Meister's key is complete for these records; the open dotted codes look like transcription slips (the F22b key-rebuild belongs to morosini1589)
-- [ ] retry: not done — check each off-list dotted code and the five R17 codes against the images before calling them open
+- [x] print: Tempesti, Vita di Sisto V (1754) II books VI-XIII paraphrases many letters (used for names and sense only); Hübner, Sixte-Quint (1870) locates Rome's decipherments in Francia 27 (not imaged); no edition of the legation
+- [n/a] key-rebuild: Meister's key is complete for these records; every off-list dotted code turned out to be a spurious or misplaced dot (22 Oct 2026)
+- [x] retry: 22 Oct 2026, every record re-parsed word by word on the figures, doubtful figures checked on image crops (55 corrections from the images), readings aligned word by word with the figures
 
 ## Assumptions for George's review
 
