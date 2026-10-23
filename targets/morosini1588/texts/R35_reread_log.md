@@ -53,3 +53,7 @@ of friendship if both kings act as Catholic kings), but several clauses have hol
   18–19. Only one crop (202r ll. 6–8) was checked; it gave three corrections, so a full image pass of the three pages
   is the next step and could lift the reading over the bar (no outside blocker except the damaged last line of 203r).
 - A printed or archival Spanish text of Mendoza's memorandum (Simancas) would settle it.
+
+## 23 Oct 2026, r2d (Claude Opus 5.5)
+
+Regraded on the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): see the profile reading_review for the scores; now read. DECODE attachments re-opened (no decipherment). Image checks this pass (crops in the session scratchpad, r2d/morosini/crops): 202v ll. 8-9: a hole in the paper at the start of l. 8 ("si [...] enemigos"), so that stretch is illegible.

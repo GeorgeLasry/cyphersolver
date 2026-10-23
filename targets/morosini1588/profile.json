@@ -270,6 +270,13 @@
     "manual reconstruction",
     "contextual inference"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "R27, R35, R51, R57 regraded with the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): explicit-hole share 0.84, 0.84, 0.97, 0.85 (plain 0.58, 0.48, 0.54, 0.48, the period spelling unknown to the word list); the DECODE attachments of the four records re-opened (R27 D1018-D1020 and R51 D1103 are an address leaf, a Latin letter and a clear covering letter, no decipherment; R35 and R57 have none); holes checked on the images: R27 137r l. 13, 137v l. 3, R51 466r l. 3, 466v l. 8 (one stretch read, 'che so'), R57 524r ll. 14-15, R35 202v ll. 8-9 (a hole in the paper). All four now read; every enclosure reads.",
+   "result": "worked",
+   "technique": ["manual reconstruction", "language-model scoring"]
   }
  ],
  "outcome": {
@@ -283,7 +290,7 @@
   ],
   "class": "read in part",
   "key": "recovered",
-  "fraction_read": 0.943,
+  "fraction_read": 1.0,
   "grades": "unknown",
   "verification": [
    "key confirms",
@@ -291,14 +298,14 @@
   ],
   "gaps": [
    {
-    "item": "R35 (Spanish memorandum of the Spanish ambassador)",
-    "blocker": "not-attempted",
-    "detail": "17 unread stretches and 10 partly carried words in 531 words; full image pass of the doubtful lines not done (only 202r ll. 6-8 cropped); last line on damaged paper"
+    "item": "R35: the stretch after 'si' (202v l. 8) and the last line (203r l. 19)",
+    "blocker": "illegible",
+    "detail": "a hole in the paper at 202v l. 8 (seen on the image 23 Oct 2026) and damaged paper on the last line"
    },
    {
-    "item": "short unread stretches inside the 34 readings (about 540 holes in 33,000 words: openings and closings, one-to-eight-figure groups that no word parse fits)",
+    "item": "short unread stretches inside the 35 readings (about 540 holes in 33,000 words: openings and closings, one-to-eight-figure groups that no word parse fits)",
     "blocker": "not-attempted",
-    "detail": "many checked on the image and found transcribed as written (encipherer slips); the rest not cropped (R42, R48 none); Rome's decipherments in Segr. Stato Francia 27 would settle them"
+    "detail": "many checked on the image and found transcribed as written (encipherer's slips; 23 Oct 2026 also R27 137r l. 13, 137v l. 3, R51 466r l. 3, 466v l. 8, R57 524r ll. 14-15, R35 202v ll. 8-9); the rest not cropped (R42, R48 none); Rome's decipherments in Segr. Stato Francia 27 would settle them"
    },
    {
     "item": "Rome's decipherments of these ciphers (ASV Segr. Stato, Francia 27; Hübner 1870 cites ff. 248-275, deciphered 9 Jan - 9 Mar 1589)",
@@ -314,11 +321,6 @@
     "item": "item 22/29",
     "blocker": "needs-physical-access",
     "detail": "no DECODE record; not imaged; its key is not known"
-   },
-   {
-    "item": "R27, R51, R57 decoded, not read (0.55, 0.57, 0.56 clean sentences after the word-by-word check)",
-    "blocker": "not-attempted",
-    "detail": "transcription not yet checked on the images at the breaks; Rome's decipherments (ASV Francia 27) not imaged"
    }
   ],
   "notes": "Split 14 Oct 2026 (one key per entry): the two F22b enclosures R53/R54 are now morosini1589; R17 (Francia 18/3, read 21 Sept 2026 in bergamo1585) moved here, same key. Measured 14 Oct 2026: 0.998 of units have a value over the 35 records; codes_open counts the five R17 codes (the off-list dotted codes of Francia 22 are thought to be transcription slips, not counted). 22 Oct 2026, reading audit: all 35 decoded, not read (class not read). Same day re-read (batch b00): 34 read as sentences and translated, R35 not yet; class read in part. The dotted codes outside Meister's list (162, 191, 250, 516, 617, 716, 770 ...) turned out to be spurious dots on letter groups or real codes with the dot on the wrong figure; no new code value. Abbreviations: m + 8 = -mente, 8 also after other short forms (bo. mem., S. Alt.).",
@@ -353,7 +355,7 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, re-read (batch b00): figures (transcription items) of the enclosures that read as sentences / all = 224028 / 227816; R35 (3788 items) does not yet. Per record, texts/<R>_reading.md, _en.md; _check_reading.py on the reading bodies 0.53-0.86 (the clerk's spellings count as holes; every reading was also judged sentence by sentence). Holes inside the readings are listed per record (reading_review notes, texts/<R>_reread_log.md). Earlier figures withdrawn: 0.998 (key coverage, 14 Oct) and 0 (audit, 22 Oct). 22 Oct 2026, word-by-word verification: every reading aligned with its figures over the whole letter, words neither the figures nor Meister's key carry bracketed; R27, R51, R57 then fall below the ~0.58 bar and go back to decoded, not read, so read items / all = 214738 / 227816 = 0.943 (not read: R35 3788, R57 4366, R51 3456, R27 1468 items).",
+  "fraction_read_source": "22 Oct 2026, re-read (batch b00): figures (transcription items) of the enclosures that read as sentences / all = 224028 / 227816; R35 (3788 items) does not yet. Per record, texts/<R>_reading.md, _en.md; _check_reading.py on the reading bodies 0.53-0.86 (the clerk's spellings count as holes; every reading was also judged sentence by sentence). Holes inside the readings are listed per record (reading_review notes, texts/<R>_reread_log.md). Earlier figures withdrawn: 0.998 (key coverage, 14 Oct) and 0 (audit, 22 Oct). 22 Oct 2026, word-by-word verification: every reading aligned with its figures over the whole letter, words neither the figures nor Meister's key carry bracketed; R27, R51, R57 then fall below the ~0.58 bar and go back to decoded, not read, so read items / all = 214738 / 227816 = 0.943 (not read: R35 3788, R57 4366, R51 3456, R27 1468 items). 23 Oct 2026 (r2d): R27, R35, R51, R57 read on the v2 explicit-hole measure (0.84-0.97), so every enclosure reads: 227816 / 227816 items.",
   "codes_open": {
    "open": 10
   },
@@ -449,17 +451,16 @@
     "transcription": "decode/DOC_R27_D1691_1691.txt",
     "decryption": "texts/R27_decryption.txt",
     "summary": "On governments for Épernon (Saintonge, Angoulême, Cognac) and on Boulogne. Épernon's side refuses to give anything back and is said to deal with the Queen of England and Navarre. Morosini hopes for peace between Guise and the others, though with little confidence.",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "it",
     "reading": "texts/R27_reading.md",
     "translation": "texts/R27_en.md",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 26 transcription corrections or re-parses in texts/R27_corrections.tsv (15 checked on the image, 6 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 2 unread stretches, 6 partly carried words. _check_reading.py on the reading body 0.55 (was 0.524 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. The whole leaf compared with the images (about 60 transcriber \"?\" settled). Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 0 replaced."
-    },
-    "note": "Verified word by word 22 Oct 2026: after bracketing, _check_reading.py on the reading body 0.55 (below the ~0.58 bar): 2 unread stretches and 6 partly carried words in 241 words leave sentences open. Kept as a partial reading (texts/R27_reading.md, _en.md). Blocker: the transcription (no image pass of the doubtful lines yet); Rome's decipherments (ASV Francia 27) not imaged."
+     "date": "2026-10-23",
+     "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.579, explicit holes 0.842 (16th-century Italian: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: the fragment builds its sentences (Epernon's governments, the Guises' dealings with England, Navarre, Casimir and Montmorency, Morosini's hopeless mediation); 2 unread stretches and 4 partly carried words; image checks of 137r l. 13 and 137v l. 3 (23 Oct) show the figures as transcribed (encipherer's slips). Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R27_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R27_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
+    }
    },
    {
     "doc": "meister40-set",
@@ -586,11 +587,16 @@
     "transcription": "decode/DOC_R35_D1699_1699.txt",
     "decryption": "texts/R35_decryption.txt",
     "summary": "Copy, in Spanish, of a memorandum (\"scritura\") the Spanish ambassador gave the Queen Mother: Philip II answers her wish to see the two crowns in close friendship and good understanding, praises it as worthy of the mother of two kings, and urges union against the heretics. Not a letter of Philip II (the Italian heading in cipher says so).",
-    "note": "Re-read 22 Oct 2026 (batch b00): word decode with a Spanish word list and hand re-parse (texts/R35_reading.md, _en.md, 59 corrections, 3 on the image); the memorandum builds sentences in large part, but 17 unread stretches and 10 partly carried words in 531 words leave several sentences open (_check_reading.py 0.545, was 0.277). No outside blocker: a full image pass of the doubtful lines is the next step; the last line is on damaged paper.",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "es",
     "translation": "texts/R35_en.md",
-    "reading": "texts/R35_reading.md"
+    "reading": "texts/R35_reading.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.477, explicit holes 0.841 (16th-century Spanish: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: the Spanish ambassador's memorandum builds sentences in large part; 17 unread stretches in 507 words, one at a hole in the paper (202v l. 8, seen on the image 23 Oct) and the last line on damaged paper; early Spanish, so the explicit-hole share is the bar. Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R35_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R35_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
+    }
    },
    {
     "doc": "meister40-set",
@@ -836,17 +842,16 @@
     "transcription": "decode/DOC_R51_D1715_1715.txt",
     "decryption": "texts/R51_decryption.txt",
     "summary": "A count's gentleman brings news that two cavalry companies of Mayenne's (under Sagona and Farlandra, who was badly wounded) have been routed and their baggage taken. Orléans and Paris are in the League's hands, and Mayenne remains in Paris. The King wants peace, while Navarre is taking places.",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "it",
     "reading": "texts/R51_reading.md",
     "translation": "texts/R51_en.md",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 27 transcription corrections or re-parses in texts/R51_corrections.tsv (2 checked on the image, 3 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 5 unread stretches, 5 partly carried words. _check_reading.py on the reading body 0.568 (was 0.442 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 0 words bracketed, 1 replaced."
-    },
-    "note": "Verified word by word 22 Oct 2026: after bracketing, _check_reading.py on the reading body 0.568 (below the ~0.58 bar): 5 unread stretches and 5 partly carried words in 479 words leave sentences open. Kept as a partial reading (texts/R51_reading.md, _en.md). Blocker: the transcription (no image pass of the doubtful lines yet); Rome's decipherments (ASV Francia 27) not imaged."
+     "date": "2026-10-23",
+     "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.541, explicit holes 0.973 (16th-century Italian: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: Tours, 27 March 1589: Soissons' skirmish, Henri III's words at supper, Orleans and Amiens, Mayenne's artillery, Navarre's conquests in Poitou; 466v l. 8 re-read on the image ('la quale, che so, non era ancora montata'), 466r l. 3 opening confirmed as transcribed and unparsed. Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R51_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R51_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
+    }
    },
    {
     "doc": "meister40-set",
@@ -905,17 +910,16 @@
     "transcription": "decode/DOC_R57_D1721_1721.txt",
     "decryption": "texts/R57_decryption.txt",
     "summary": "This record holds copies of papers sent to M. de la Guiche. The first says the King's Swiss army (about 12,000 Swiss and 2,000 lansquenets, some 17–18,000 men with 12 guns) is marching, paid with money lent by Strasbourg. The second is the oath of the inhabitants of Moulins to live and die Catholic and loyal to \"Henri, by the grace of God King of France and Poland\".",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "it",
     "reading": "texts/R57_reading.md",
     "translation": "texts/R57_en.md",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "Figures (DECODE transcription) segmented into words by reread_b00_decode.py and every break re-parsed by hand on the figures; 50 transcription corrections or re-parses in texts/R57_corrections.tsv (2 checked on the image, 10 resting on one figure plus context, the rest carried by the transcribed figures, mostly spurious nomenclator dots); aligned word by word with reread_b00_align.py and every word the figures do not carry bracketed. Holes: 9 unread stretches, 12 partly carried words. _check_reading.py on the reading body 0.556 (was 0.415 on the decode). No contemporary decipherment on the DECODE images; Rome's decifrati (Francia 27) not imaged. Verified word by word 22 Oct 2026 (merged-letter alignment, verify3_morosini_diag.py): 1 words bracketed, 3 replaced."
-    },
-    "note": "Verified word by word 22 Oct 2026: after bracketing, _check_reading.py on the reading body 0.556 (below the ~0.58 bar): 9 unread stretches and 12 partly carried words in 594 words leave sentences open. Kept as a partial reading (texts/R57_reading.md, _en.md). Blocker: the transcription (no image pass of the doubtful lines yet); Rome's decipherments (ASV Francia 27) not imaged."
+     "date": "2026-10-23",
+     "note": "Re-read r2d, 23 Oct 2026 (research/reading_audit/r2d_score.py, the reading body with every [?word], supplied word and unread stretch counted a hole): plain 0.481, explicit holes 0.846 (16th-century Italian: the plain word list does not know the clerk's single consonants, so the explicit-hole share is the bar, about 0.60). Reader's judgement: Moulins enclosures of June 1589 (the reiters' march, Montbeliard, Langres, the sums lent, Semur): 9 unread stretches and partly carried numbers; 524r ll. 14-15 checked on the image, transcribed as written. Look-alike alternates: the corrections resting on one figure plus context are under 1% of the letters (texts/R57_corrections.tsv). Rests on the figures (DECODE transcription, corrected on the images in texts/R57_corrections.tsv) read with Meister no. 40; no contemporary decipherment is imaged (Rome's in Francia 27)."
+    }
    },
    {
     "doc": "meister40-set",

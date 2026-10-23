@@ -8,13 +8,13 @@ edition. Word division, u/v, accents and apostrophes normalised; single consonan
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1555] = nomenclator group without a value.
 
 Procuri V.S. d'informarsi destramente e con tutta la sicurezza se codesta Corte sia disposta di mandare un suo
-[?inviato] in Portogallo, e in tal caso di qual [1555] sarà caricato circa la visita a quel [?Segretario] di Stato per
-gli affari [?stra]nieri, [?massime] nel nuovo regolamento ivi stabilito d'aver diviso in tre [?Segretari] le incombenze
-altre volte unite nel solo Don Diego di Mendoza, il quale, come a lei è noto, fu preventivamente visitato nel [1582]
-de los Balbases: esempio di cui si è prevaluto [?essa] Corte per insistere altre volte che il Nunzio dovesse
+Ambasciatore in Portogallo, e in tal caso di qual istruzione sarà caricato circa la visita a quel Segretario di Stato per
+gli affari [?stra]nieri, massime nel nuovo regolamento ivi stabilito d'aver diviso in tre Segretari le incombenze
+altre volte unite nel solo Don Diego di Mendoza, il quale, come a lei è noto, fu preventivamente visitato dal Marchese
+de los Balbases: esempio di cui si è prevaluto quella Corte per insistere altre volte che il Nunzio dovesse
 preventivamente anch'egli visitare il mentovato Don Diego.
-Una tal notizia può servire di molto lume alle mie deliberazioni, [?se], venendo il caso, si promovesse questa
-pretensione, [1204] sembrerebbe ancora molto più strana dopo un tal nuovo regolamento.
+Una tal notizia può servire di molto lume alle mie deliberazioni, quando, venendo il caso, si promovesse questa
+pretensione, benchè sembrerebbe ora molto più strana dopo un tal nuovo regolamento.
 
 ## Notes on the figures
 

@@ -1,6 +1,22 @@
 # Segreteria di Stato to the Nunciature in Spain, 1736 (ASV Segr. Stato Spagna 423)
 
-Status: in progress (was: read — found already solved (George Lasry, 2020); nomenclator recovered here)
+Status: in progress (all eleven letters read 23 Oct 2026; pages and ledgers not yet updated with the clear copies)
+
+23 Oct 2026, re-read r2d (texts/423_r2d_reread_log.md): **the contemporary clear copies were on the DECODE records all
+along.** The png documents attached to R26, R179-R183, R186-R188 and labelled "cleartext" are not the cipher pages
+(those are the IMG_ images) but neighbouring folios of the volume, and among them are the clear "Copia" of seven of the
+ciphered letters: 423/1 (ff. 284r-286r), 423/4 (f. 301r), 423/5 (f. 375r), 423/6 (f. 386r), 423/9 (ff. 416r-v),
+423/10 (ff. 493r-494r), 423/11 (ff. 509r-v). The copies of 423/1, 5, 9, 11 were transcribed (texts/423-<n>_copy.txt)
+and aligned token by token with the decode (research/reading_audit/r2d_align.py); six figures of NiLan's R26
+transcription corrected on the images; the three open spots of 423/9 and 423/11 are cipherer's slips seen on the
+images. Key: 26 = del (not Lasry's a) and 80 = dal (not nel); twelve earlier nomenclator values were wrong and are
+replaced (1219 ora, 1239 quell, 1608 necessari, 1229 perché, 1231 però, 1818 ragguagli, 1699 pregiudizi, 1865
+sodisfazion, 1218 avut, 1223 mentre, 1260 Ambasciator, 1368 congiuntur); about 55 groups valued (1513 Governator, so
+Molina's title is "Mons. Governatore del Consiglio"; 1544 Inquisitor; 1449 ecclesiastic; 1389 costì; day groups 1952 =
+7, 1953 = 8, 1957 = 12, 1964 = 19), each checked at every occurrence (texts/b04_key_additions.txt, r2d block). **423/1,
+5, 9, 11 read** (v2 plain/explicit: 0.92/1.0, 1.0/1.0, 0.94/1.0, 0.94/1.0); the corrections carried into the readings
+of 423/2, 4, 6, 7, 8, 10 (r2d_fix_read.py), which all stay read. fraction_read 0.52 -> 1.0; class read. 12 group
+tokens stay open, each seen once.
 
 22 Oct 2026, re-read (REREAD_BRIEF, batch b04; texts/423_b04_reread_log.md): **423/2 and 423/4-11 read** (grade B,
 texts/423-<n>_reading.md with English _en.md); 423/1 attempted, still decoded, not read. No contemporary text exists
@@ -104,9 +120,10 @@ Málaga and Governor of the Council of Castile), 1236 (9x, a conjunction), and t
 
 ## Remaining gaps
 
-- 423/1 (R26, 1,641 tokens) decoded, not read - blocker: not-attempted (workable); about a dozen runs of NiLan's 2017 transcription do not decode; re-transcribe the five R26 pages from the DECODE images (IMG_R26_I145-I149) and re-read texts/423-1_reading.md
-- about 60 nomenclator groups open, mostly seen once (date numerals, Molina's title 1513 a 1382, 1449, 1664, 1844 ...) - blocker: no-key-material; Lasry's key has no nomenclator and no other text in this code is known
-- 423/9 "[..] danno", 423/11 "le la mede [..] consaputi libri" and "ben [..]giata" - blocker: not-attempted on the images (checked in the decode only)
+- 423/1 (R26) - closed 23 Oct 2026: read from its contemporary clear copy (ff. 284r-286r) and the figures, six transcription figures corrected on the images
+- 423/9 "[..] danno", 423/11 "le la mede [..]" and "ben [..]giata" - closed 23 Oct 2026: cipherer's slips seen on the images; the copies read "Si danno", "l'esame de'", "bene maneggiata"
+- 11 nomenclator groups seen once in letters that read (1200, 1335, 1960, 1985 in 423/2; 1232, 1469, 1698, 1942 in 423/7; 1636 in 423/8) - blocker: needs-physical-access; no copy of 423/2, 7, 8 is among the DECODE attachments, the copies or minutes would have to be found in Spagna 423 itself
+- 423/1 groups 1268, 1765, 1847 - blocker: too-short; one occurrence each, the words carried by the copy
 - the minutes of these letters (Archivio della Nunziatura di Madrid) - blocker: needs-physical-access
 
 ## Content
@@ -130,8 +147,8 @@ Queen, and the nomination to cardinals' hats ("col maggior numero di cappelli").
 Added by the reading audit (22 Oct 2026); worked through in the re-read of 22 Oct 2026 (batch b04).
 
 - [x] siblings: R179-R188 and R26 are the whole series; read together, the key corrected across all of them
-- [x] clear-pages: the 26 images checked; no decipherment, the margin writing is the facing leaf of clear letters
+- [x] clear-pages: the 26 IMG pages carry no decipherment; 23 Oct: the 'cleartext' png attachments hold the contemporary clear copies of 423/1, 4, 5, 6, 9, 10, 11
 - [x] known-keys: Lasry's "ASV - S423" is the only key; corrected (25, 30, 69, 93) and its nomenclator extended
 - [x] print: web search, no edition of the 1736 ciphers to Guiccioli; minutes in the Madrid nunciature archive, not online
 - [x] key-rebuild: four earlier nomenclator values replaced, about 65 groups valued from context (texts/b04_key_additions.txt)
-- [ ] retry: 423/2 and 423/4-11 re-read sentence by sentence and read; 423/1 still to re-transcribe from the images
+- [x] retry: 423/2 and 423/4-11 re-read 22 Oct; 23 Oct every attachment opened at full resolution, the clear copies found and aligned, 423/1, 5, 9, 11 read, every open group retried with the extended key (12 tokens left, each seen once)

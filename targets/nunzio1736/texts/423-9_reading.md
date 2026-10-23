@@ -1,34 +1,42 @@
 # Spagna 423/9 (DECODE R186), Rome, 6 October 1736: Secretariat of State to Abbé Guiccioli, Madrid. Reading
 
-Rests on: the DECODE transcription (decode/keep/DOC_R186_D1623_1623.txt) re-segmented and decoded with Lasry's key
-as corrected on 22 Oct 2026 (25 = che, 30 = ta, 69 = z, 93 = nel) and the nomenclator values of key_extra.txt and
-texts/b04_key_additions.txt (decode: texts/423-9_decode_b04.txt). No contemporary decipherment, clear copy or edition.
-Word division, u/v, accents and apostrophes normalised; single consonants of the cipher sometimes doubled (eretta, rispettivi); other spellings as written.
-Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1544] = nomenclator group without a value;
-[..] = figures without a value.
+Rests on: (1) the contemporary clear copy of this letter, headed "Copia. Roma 6. Ottobre 1736", bound as ff. 416r-v
+and attached to DECODE R186 as the "cleartext" png documents DOC_R186_D1394-D1395 (transcribed in texts/423-9_copy.txt,
+23 Oct 2026); (2) the DECODE transcription (decode/keep/DOC_R186_D1623_1623.txt) re-segmented and decoded with Lasry's
+key as corrected (26 = del, 80 = dal, 25 = che, 30 = ta, 69 = z, 93 = nel) and the nomenclator of key_extra.txt and
+texts/b04_key_additions.txt, which now values every group of this letter (decode: texts/423-9_decode_b04.txt).
+Copy and decode aligned token by token (research/reading_audit/r2d_align.py; texts/423-9_r2d_align.tsv): 547 non-null
+tokens, 523 agree. Where the figures carry other words than the copy (costì alla, qua, come capo, mandandosele) the
+reading follows the figures; where a figure is a cipherer's slip against the copy's word it follows the copy (below).
+Word division, u/v, accents and apostrophes normalised; other spellings as written (padronato, cedola).
 
-Oltre le Brevi inviati [?già] a la settimana passata, de' quali mandai a V.S. le copie, se ne trasmetono in questo
-ordinario tre altri: uno a Mons. [?Patriarca] a le Indie, obiurgatorio per aver dato cotanto facilmente esecuzione alla
-cedola Reale riguardante la nomina pretesa nel Re de' canonicati a le due [?Badie] che gode il detto prelato; l'altr[o]
-a Mons. [1544] [1499]ortatorio, affinché in virtù a la sua carica invigili che ne' scritti che si divulgano in favore a
-padronato Reale non s'inseriscano dottrine e [?massime] [?contrarie] a' sagri canoni e disciplina a la [?Chiesa]; e il
-terzo a Mons. [1513]a[?Consiglio], ammonendolo di non iscordarsi al obbligo che ha come Vescovo di difendere li diritti
-a la S. Sede.
-Gli si dice anche qualche cosa di più a le voci arrivate qua che egli, come capo a la giunta, faccia le parti di
-Regalista e non di [1449]o.
-[..] danno a V.S. queste notizie affinché, udendo parlare di detti Brevi, sia informato a [?continuar] de' medesimi e
-poss[a] [1845], non mandandosele questa sera le copie per essersi giudicato a [?proposito] di lasciar arrivar prima gli
+## Reading
+
+Oltre li Brevi inviati costì alla settimana passata, de' quali mandai a V.S. le copie, se ne trasmettono in questo
+ordinario tre altri: uno a Mons. Patriarca delle Indie obiurgatorio, per aver dato tanto facilmente esecuzione alla
+cedola Reale riguardante la nomina pretesa dal Re de' canonicati delle due Abbadie che gode il detto prelato; l'altro a
+Mons. Inquisitore Generale ortatorio, perchè in virtù della sua carica invigili che ne' scritti che si divulgano in
+favore del padronato Reale non s'inseriscano dottrine e massime contrarie a' sagri canoni e disciplina della Chiesa; e
+il terzo a Mons. Governatore del Consiglio, ammonendolo di non iscordarsi dell'obbligo che ha come Vescovo di difendere
+li diritti della S. Sede.
+
+Gli si dice però qualche cosa di più delle voci arrivate qua che egli come capo della giunta faccia le parti di
+Regalista e non di Ecclesiastico.
+
+Si danno a V.S. queste notizie perchè, udendo parlare di detti Brevi, sia informato del contenuto de' medesimi e possa
+rispondere, non mandandosele questa sera le copie per essersi giudicato a proposito di lasciar arrivar prima gli
 originali a chi sono diretti.
-Non manchi V.S. di informare di tutto [1601] d'Avila, al quale si scrive che rice[..] da lei tutti i lumi maggiori per
-sua regola.
+
+Non manchi V.S. di ragguagliare di tutto Mons. Vescovo di Avila, al quale si scrive che riceverà da lei tutti li lumi
+necessari per sua regola.
 
 ## Notes on the figures
 
-- "cotanto facilmente": co + 1241 + facil + 1222 (mente); 1241 = tant (22 Oct 2026).
-- "[?massime] [?contrarie]": 1221 1386 e; both values probable only.
-- "[..] danno": 27 28 42 98 95 29 (?? io te da n no); 27 has no value, "io te" makes no sense here; the verb is
-  probably "si danno", not carried.
-- "[?continuar]": 1384 95 09 68 (cont n u r).
-- "poss[a] [1845]": 1693 1845 (poss + group; the a is not written).
-- "rice[..]": 86 44 34 03 06 92 07 (r i c e i in ?); probably a form of ricevere, the end not read.
-- "di non iscordarsi al obbligo": as written; the sentence ends on 67 (no value), probably a stop.
+- "Si danno": the figures, after the stop 27, give 28 42 (io te) danno; checked on the DECODE image (IMG_R186_I1188,
+  f. 415v l. 3: 1 4 4 9 9 6 2 7 2 8 4 2 9 8 9 5 ...), the transcription is right; a slip of the cipherer, the copy has
+  "Si danno". This was the open "[..] danno" of 22 Oct.
+- Other single-figure slips printed with the copy's word: "li Brevi" (03 e for i), "dato tanto" (the figures add 43 96,
+  c o), "contenuto" (68 r for t), "diretti" (one t in the figures), "riceverà" (figures r i c e i in 07).
+- "inviati costì alla settimana passata": the copy has "colla settimana"; 1389 = costì is fixed by the copy of 423/10
+  ("a quest'ora fossero costì convinti") and fits 423/1.
+- "come capo": the copy "è capo"; "qua": the copy "da che".

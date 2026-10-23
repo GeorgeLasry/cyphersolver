@@ -5,7 +5,7 @@ Translation of `R51_reading.md`; holes as there.
 ## Translation
 
 [f. 466r] […] yesterday evening a gentleman arrived here, sent by the Count of Soissons to the King with news that the
-day before, near [Le Mans?], he had routed two companies of horse of Monsieur de Sagonne and Monsieur de Falandre,
+day before, near Umans [Le Mans?], he had routed two companies of horse of Monsieur de Sagonne and Monsieur de Falandre,
 captains of the Duke of Mayenne, who had escaped alone into […], Monsieur de Falandre having been wounded in the
 [loins?] and in the [head] by such great sword-thrusts that it was feared he would die; and that the said Count had
 likewise captured the baggage of five companies, and hoped soon to send His Majesty some further news. His Majesty,
@@ -17,7 +17,7 @@ magistrates. They also write that those of Amiens had driven out of the [f. 466v
 insolences and extortions he committed; and that the Duke of Longueville, coming out of Saint-Quentin, had routed two
 ensigns of Walloons who were coming into the pay of the lords of the League. The Duke of Mayenne is still in Paris, from
 which, it is thought, he will not leave until the feast days are over; and having had nine pieces of artillery brought
-to Étampes, which […] were not yet mounted on the wheels being made at Orléans, where he would have taken three more
+to Étampes, which, as I know, were not yet mounted on the wheels being made at Orléans, where he would have taken three more
 pieces; but that he had great difficulty in gathering pioneers, and that in sum His Excellency did not have so great a
 number of men as had first been published, since they do not reach 10,000 foot and 1,400 horse; so that here the King
 seems to begin to breathe again, especially hearing that the nobility is preparing in force to come and join him. All

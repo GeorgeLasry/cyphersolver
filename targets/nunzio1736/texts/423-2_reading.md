@@ -9,21 +9,21 @@ Marks: [x] = word supplied, carried by no figure; [?x] = partly carried (a proba
 figure); [1960] = nomenclator group without a value; [..] = figures without a value.
 The cipher ends mid-sentence (the letter goes on in clear or on a page not ciphered).
 
-Si sono ricevute in [?questa] settimana due lettere scritte da V.S. in data dei [1960] e [1985]a passato.
-Le notizie in [?esse] comprese hanno sommamente aumentata l'amarezza a l'animo mio, [?massime] nello scorgere che
+Si sono ricevute in [?questa] settimana due lettere scritte da V.S. in data dei [1960] e [1985] del passato.
+Le notizie in quelle comprese hanno sommamente aumentata l'amarezza dell'animo mio, massime nello scorgere che
 abbia tanta parte nell'inganno in cui sono le Maestà [1335] e chi pel carattere e la professione più degli altri
 sarebbe anzi obbligato ad illuminarle medesime.
 Rivolti gli occhi all'Altissimo e collocata in lui solo la sua primaria fiducia, va seriamente pensando N.S. alla
 condotta che deve tenere in contingenze tanto scabrose e che interessano sì immediatamente non solo il suo decoro ma
 il pastorale suo zelo.
 Fratanto studii pure V.S. ogni strada per illuminare codesta Corte, approvandosi per altro il destro contgno che ella
-osserva nel mostrare qualche fiducia nello stesso Mons. Molina, [1200] questi faccia, se fia [1695] meno danno al
+osserva nel mostrare qualche fiducia nello stesso Mons. Molina, [1200] questi faccia, se fia possibile, meno danno al
 [?negozio].
-Si guarderà molto bene la N.S. di appoggiar al medesimo gli affari a la S. Sede, alla quale si mostra in tante guise
-cos[ì] [?contrario], riuscendo assai nuovo [?anche] che lo stesso abbia concepita l'idea che N.S. possa mai prevalersi di
-un attual Ministro di una Corte per trattare con la medesima Corte gli interessi a la S. Sede.
-[?Se] ella sappia che Mons. ratto, come parimente dovrebbe esiggere il suo carattere, si adopri veramente in qualche
-maniera nella difesa a le ragioni che assistono la nostra …
+Si guarderà molto bene la N.S. di appoggiar al medesimo gli affari della S. Sede, alla quale si mostra in tante guise
+cos[ì] contrario, riuscendo assai nuovo ancora che lo stesso abbia concepita l'idea che N.S. possa mai prevalersi di
+un attual Ministro di una Corte per trattare con la medesima Corte gli interessi della S. Sede.
+Quando ella sappia che Mons. ratto, come parimente dovrebbe esiggere il suo carattere, si adopri veramente in qualche
+maniera nella difesa delle ragioni che assistono la nostra …
 
 ## Notes on the figures
 

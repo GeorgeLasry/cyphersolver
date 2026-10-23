@@ -9,19 +9,19 @@ copy or edition. Word division, u/v, accents and apostrophes normalised; single 
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1449] = nomenclator group without a value;
 [..] = figures without a value.
 
-… li continui aggravi che s'inferiscono da codesta giunta a padronato ai diritti a la S. Sede e a [l']ecclesiastica
-libertà, che la medesima ha [?sempre] da tempi immemorabile di conferire li [?benefici] [1449], e li Vescovi
-[?anche] essi ne' loro rispettivi [1942]i, e le tante altre novità che si vanno meditando di far contro la Dateria e
+… li continui pregiudizi che s'inferiscono da codesta giunta del padronato ai diritti della S. Sede e a quella
+libertà, che la medesima ha avuto da tempi immemorabile di conferire li [?benefici] ecclesiastici, e li Vescovi
+ancora essi ne' loro rispettivi [1942]i, e le tante altre novità che si vanno meditando di far contro la Dateria e
 facoltà di codesta Nunziatura nell'altra giunta nuovamente eretta, hanno obbligato la mia sollecitudine di N.S. a
-pensar seriamente di far argine ad un torrente che minaccia la rovina a l'autorità di questa S. Sede e a la potestà
-[1449]a in codesti Regni.
-Prima di prendere anch[e] li rimedii più rigorosi, ha voluto usare a la sua paterna piacevolezza, pregando e
-esortando codesto Re con un Brev[e], a qual[e] si manda a V.S. copia, affinché faccia sospendere il corso alle
-sudette intraprese; e nel tempo stesso ne ha scritto altra [a] tutti li Vescovi di codesti Regni, a tenore parimente
-a l'annessa copia.
-Se ne dà la notizia a V.S. affinché sia informata de' passi che di qua si sono fatti e, udendone parlare, poss[a] far
-conoscere non esser si la N.S. [1698]a dispensare di darli senza grave intacco a la sua coscienza.
-Ad [?effetto] [1232] il Brev[e] arrivi sicuramente alle mani di [?S.M.], si è inviato al padre [?confessore] a la
+pensar seriamente di far argine ad un torrente che minaccia la rovina dell'autorità di questa S. Sede e della potestà
+ecclesiastica in codesti Regni.
+Prima di prendere però li rimedii più rigorosi, ha voluto usare della sua paterna piacevolezza, pregando e
+esortando codesto Re con un Brev[e], del qual[e] si manda a V.S. copia, perchè faccia sospendere il corso alle
+sudette intraprese; e nel tempo stesso ne ha scritto altra [a] tutti li Vescovi di codesti Regni, del tenore parimente
+dell'annessa copia.
+Se ne dà la notizia a V.S. perchè sia informata de' passi che di qua si sono fatti e, udendone parlare, poss[a] far
+conoscere non esser si la N.S. [1698]a dispensare di darli senza grave intacco della sua coscienza.
+Ad [?effetto] [1232] il Brev[e] arrivi sicuramente alle mani di [?S.M.], si è inviato al padre [?confessore] della
 medesima, incaricandogli di riferirlene il cont[e]nuto; e si sono mandati allo stesso religioso altri due Brevi, uno per
 la [?Regina] e l'altr[o] per il Sig. [..]no in [1469], e pregandoli di coadiuvare co' loro [?uffici]i le giuste istanze
 di N.S.

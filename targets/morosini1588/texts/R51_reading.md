@@ -13,7 +13,7 @@ Spelling as the figures give it; punctuation, capitals and word division added; 
 ## Reading
 
 [f. 466r] […] hieri sera arriuò qui un gentilhuomo mandato dal conte di Suisone al Re con auisi che 'l giorno auanti
-lui haueua, uicino a [?Umans], disfate due compagnie di cauali di mons. di Sagona et di mons. di Falandra, capitani del
+lui haueua, uicino a Umans, disfate due compagnie di cauali di mons. di Sagona et di mons. di Falandra, capitani del
 sig. duca di Umena, i quali s'erano saluati soli in […], esendo mons. di Falandra restato ferito nele [?rene] et nela [?testa] di
 sì gran colpi di stoco che si temeua che douese morire; et che haueua medesimam. eso conte guadagnate le bagaglie di
 cinque compagnie, et che speraua di mandare presto qualche altro auiso a S. M.tà. La quale, intendendo questo suceso
@@ -24,7 +24,7 @@ medesimam. che le ricete siano pagate a tesorieri di S. M.tà, et esi […] nuou
 Scriuono ancora che quei d'Amiens haueuano caciato dela [f. 466v] cità il duca d'Umala per l'insolenze et estorsioni
 che faceua; et che 'l duca di Longauila, uscendo di San Quintino, haueua disfate due insegne di ualoni che ueniuano a li
 stipendi de signori dela lega. Il sig. duca di Umena si truoua tutauia in Parigi, di doue, come si tiene, non partirà se
-non fate le feste; et hauendo fato condure noue pezi d'artigliaria a Etampes, la quale […] non era ancora montata sopra
+non fate le feste; et hauendo fato condure noue pezi d'artigliaria a Etampes, la quale, che so, non era ancora montata sopra
 le ruote che si faceuano in Orliens, doue[a] hauria presi altri tre pezi; ma che haueua gran dificoltà di metere insieme
 guastatori, et che in soma sua Ecel. non haueua sì gran numero di gente come prima si era publicato, perché non arriuano
 a 10 milia fanti et 1400 cauali; onde qui pare che 'l Re cominci a respirare, et masime intendendo che la nobiltà si
@@ -38,15 +38,15 @@ che si deba giustificare presto. […]
 
 ## Notes on the figures
 
-- Opening (466r l. 3): "4 2 1 9^. 4 2 7 1 2 8" before "hieri sera" does not parse (no code 194).
-- "[?Umans]" (466r l. 5): "2 1 2 8 3 7 2 0 2 1 0 1 4" = a [8] u m a n s (Le Mans? the clerk writes Umala, Umena, Umon for
+- Opening (466r l. 3): "4 2 1 9^. 4 2 7 1 2 8" before "hieri sera" does not parse (no code 194); the image (23 Oct 2026) shows the figures as transcribed.
+- "Umans" (466r l. 5; was [?Umans]: every letter is carried, only the identification is open): "2 1 2 8 3 7 2 0 2 1 0 1 4" = a [8] u m a n s (Le Mans? the clerk writes Umala, Umena, Umon for
   Au-/Ma- names).
 - "i quali s'erano saluati soli in […]" (466r ll. 7–8, image checked): "4 1 5 3 0 0 2 1 0 1 9" = s'erano; after "in"
   (17 10) the place "4 5 2 1 1 7 2 1 1 5 1 3 3 5 4 5" is left open.
 - "nele [?rene] et nela [?testa]" (466r l. 9, image checked, transcription right): "1 5 3 1 3 5 0 1 5" (e + rene?);
   "1 3 5 4 7 2 1 2" gives resta on the image too, testa wanted: the encipherer's slip.
 - "et esi […] nuoui ordini" (466r l. 22–23): "1 9 4 5 3 5 0 0 3 7 2 1 1 3 5 0 5 2 1 2" (conseruar…).
-- "la quale […] non era ancora montata" (466v l. 8): "5 6 4 1 9 1 7 1 5 0".
+- "la quale, che so, non era ancora montata" (466v l. 8): checked on the image 23 Oct 2026 (2 1 9 5 0 5 | 5 6 | 4 1 9 1 | 7 1 | 5 0 0 2 | 9 2 ...): 21 95 05 56 4 191 71 5 00 2 92 = la qual(e) che so non era ancora; every letter carried.
 - 467r: the places taken by Navarre are read from the figures ("5 0 1 7 5 0 1 7 4 2 2 1 5 4 2 1 0 0" l'Isle-Bouchard?,
   "4 2 5 0 2 1 0 1 2 5 2 1 0 2 4 2 3 5 0 0 1 7" Blanc … Berri, "2 6 2 1 0 0 4 0 3 5 0 1 5 1 9 1 0" Argenton,
   "2 0 9 1 0 1 1 5 2 0 9 1 0 0 4 0 5 0 1 7 9 1 0" Montmorillon).

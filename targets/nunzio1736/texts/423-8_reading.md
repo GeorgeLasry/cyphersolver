@@ -8,10 +8,10 @@ Word division, u/v, accents and apostrophes normalised; single consonants of the
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1636] = nomenclator group without a value.
 
 … ai stampati a dirittura per la posta.
-Di tutte queste cose V.S. non se ne dia ella per intesa, se non in [1636] di [1845]; sarà ben sì d'uopo che informi di
-tutt[o] [1601] d'Avila, e gli comunichi le copie de' mentovati Brevi; e che V.S. procuri [?anche] destramente
-d'informarsi se sieno arrivati ai Vescovi li Brevi loro inviati, e quali [?effetti] abbiano prodotto nell'animo de'
-medesimi, di codesta Corte e de' popoli, informandomi minutamente di tutto ciò che riguarda questo importantissimo
+Di tutte queste cose V.S. non se ne dia ella per intesa, se non in [1636] di [?rispondere]; sarà ben sì d'uopo che ragguagli di
+tutt[o] Mons. Vescovo d'Avila, e gli comunichi le copie de' mentovati Brevi; e che V.S. procuri ancora destramente
+d'informarsi se sieno arrivati ai Vescovi li Brevi loro inviati, e quali effetti abbiano prodotto nell'animo de'
+medesimi, di codesta Corte e de' popoli, ragguagliandomi minutamente di tutto ciò che riguarda questo importantissimo
 [?negozio].
 
 ## Notes on the figures

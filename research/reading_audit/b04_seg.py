@@ -52,6 +52,8 @@ if os.path.exists(p):
     for l in open(p, encoding='utf8'):
         l = l.split('#')[0].strip()
         if ' = ' in l: a, b = l.split(' = '); B04[a.strip()] = b.strip()
+for _c in [c for c in B04 if len(c) == 2]:  # two-digit corrections (r2d, 23 Oct 2026: 26 = del)
+    KEY[_c] = B04.pop(_c)
 def lab(c):
     if c == '7': return ''
     if len(c) == 4 and c[0] == '1':

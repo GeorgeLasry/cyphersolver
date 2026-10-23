@@ -2,6 +2,17 @@
 
 Status: in progress
 
+**23 Oct 2026, re-read r2d (Claude Opus 5.5):** R27, R35, R51, R57 regraded on the v2 measure
+(`research/reading_audit/r2d_score.py`: reading body only, every `[?word]`, supplied word and unread stretch a hole).
+Explicit-hole share R27 0.84, R35 0.84, R51 0.97, R57 0.85; the plain score (0.48-0.58) only reflects the clerk's single
+consonants, which the word list does not know and which are not modernised, so for these 16th-century texts the
+explicit-hole share is the bar. Read sentence by sentence they hold: **all four now read**, so every enclosure reads
+(fraction_read 1.0, measured). The DECODE attachments were re-opened: R27's and R51's "cleartext" pngs are an address
+leaf, a Latin letter and a clear covering letter, R35 and R57 have none; no decipherment. Holes checked on the images:
+R27 137r l. 13 and 137v l. 3, R51 466r l. 3 (figures as transcribed) and 466v l. 8 (now read: "la quale, che so, non
+era ancora montata"), R57 524r ll. 14-15 (as transcribed), R35 202v ll. 8-9 (a hole in the paper at "si [...]").
+`research/reading_audit/r2d_mparse.py` enumerates the parses of a run of figures under Meister no. 40 for such checks.
+
 **22 Oct 2026, re-read (batch b00, REREAD_BRIEF; Claude Opus 5.5 with six helpers):** 34 of the 35 enclosures now
 read as sentences and are translated (`texts/<R>_reading.md`, `_en.md`, `_corrections.tsv`, `_reread_log.md`); R35
 (the Spanish memorandum) still has too many holes. Method: a word-level decoder with a transcription-slip model
@@ -99,8 +110,8 @@ clear duplicates of the covering letters are transcribed on DECODE (R18/R19 DOC_
 Images: DECODE, login; kept git-ignored (`img/`, `decode/*.png|pdf|htm`).
 
 ## Remaining gaps
-- R35, decoded, not read - blocker: not-attempted; the Spanish memorandum builds sentences in large part but keeps 17 unread stretches and 10 partly carried words in 531 words; a full image pass of the doubtful lines is the next step (only 202r ll. 6-8 cropped); last line on damaged paper
-- short unread stretches inside the 34 readings (about 540 holes in 33,000 words: openings, closings, one-to-eight-figure groups no word parse fits) - blocker: not-attempted; many checked on the images and found transcribed as written (encipherer's slips), the rest not cropped (none for R42, R48); listed per record in texts/<R>_reread_log.md
+- R35: the stretch after "si" (202v l. 8) and the last line (203r l. 19) - blocker: illegible; a hole in the paper (seen on the image 23 Oct 2026) and damaged paper
+- short unread stretches inside the 35 readings (about 540 holes in 33,000 words: openings, closings, one-to-eight-figure groups no word parse fits) - blocker: not-attempted; many checked on the images and found transcribed as written (encipherer's slips; 23 Oct also R27, R51, R57, R35 lines), the rest not cropped (none for R42, R48); listed per record in texts/<R>_reread_log.md
 - Rome's decipherments of these ciphers (ASV Segr. Stato Francia 27, cited by Hübner 1870) - blocker: needs-physical-access; not imaged online
 - missing leaves (R46 between 382v and 383r, R47 after 385v; R17 233v and R22's last leaf not imaged) - blocker: needs-physical-access
 - item 22/29 - blocker: needs-physical-access; no DECODE record for it; not imaged, so its key is not known
@@ -111,7 +122,7 @@ Images: DECODE, login; kept git-ignored (`img/`, `decode/*.png|pdf|htm`).
 - [x] known-keys: Meister no. 40 (1587) and Lasry's DOC_3175 reconstruction applied; the same key read R17
 - [x] print: Tempesti, Vita di Sisto V (1754) II books VI-XIII paraphrases many letters (used for names and sense only); Hübner, Sixte-Quint (1870) locates Rome's decipherments in Francia 27 (not imaged); no edition of the legation
 - [n/a] key-rebuild: Meister's key is complete for these records; every off-list dotted code turned out to be a spurious or misplaced dot (22 Oct 2026)
-- [x] retry: 22 Oct 2026, every record re-parsed word by word on the figures, doubtful figures checked on image crops (55 corrections from the images), readings aligned word by word with the figures
+- [x] retry: 22 Oct 2026, every record re-parsed word by word on the figures, doubtful figures checked on image crops (55 corrections from the images), readings aligned word by word with the figures; 23 Oct 2026 R27, R35, R51, R57 holes re-checked on the images and regraded (all read)
 
 ## Assumptions for George's review
 

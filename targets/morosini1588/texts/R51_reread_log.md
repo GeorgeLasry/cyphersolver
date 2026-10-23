@@ -38,3 +38,7 @@ bar: it stays "decoded, not read" on the measure, though it reads as sentences; 
   (466r l. 22); "la quale […] non era" (466v l. 8); the close after "giustificare presto" (467r l. 9).
 - [?Umans] and [?l'Isle Buchar] are name readings that the figures carry only in part. No outside blocker; Francia 27
   would settle them.
+
+## 23 Oct 2026, r2d (Claude Opus 5.5)
+
+Regraded on the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): see the profile reading_review for the scores; now read. DECODE attachments re-opened (no decipherment). Image checks this pass (crops in the session scratchpad, r2d/morosini/crops): 466r l. 3 (opening "4 2 1 9 4 2 7 1 2 8" as transcribed, no parse); 466v l. 8 read "la quale, che so, non era ancora montata" (21 95 05 56 4 191 71 5 00 2 92, enumerated with research/reading_audit/r2d_mparse.py); "Umans" unbracketed (every letter carried). Other parses tried and not adopted: "et esi conseruarela nuoui ordini" (19 45 35 00 37 21 1 35 05 212), the place "45 21 17 21 15 13 35 45".

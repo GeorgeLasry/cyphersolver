@@ -1,63 +1,75 @@
 # Spagna 423/1 (DECODE R26), Rome, 14 July 1736: Secretariat of State to Abbé Guiccioli, Madrid. Reading
 
-Rests on: the DECODE transcription by NiLan (decode/keep/DOC_R26_D1635_1635.txt, fetched 22 Oct 2026; its "?" marks
-the figure 2, as the transcriber says, and is read so) re-segmented and decoded with Lasry's key as corrected on
-22 Oct 2026 (25 = che, 30 = ta, 69 = z, 93 = nel) and the nomenclator values of key_extra.txt and
-texts/b04_key_additions.txt (decode: texts/423-1_decode_b04.txt). The five DECODE images (IMG_R26_I145-I149) were
-fetched; this transcription is weaker than Matt F's for R179-R188 and several short runs do not decode (marked [..]).
-No contemporary decipherment, clear copy or edition. Word division, u/v, accents and apostrophes normalised; the
-cipher's spellings kept. 27, 37 between sentences are stop signs.
-Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1953] = nomenclator group without a value;
-[..] = figures without a value.
+Rests on: (1) the contemporary clear copy of this letter, headed "Copia. Roma 14 Lugl.o 1736", bound as ff. 284r-286r
+and attached to DECODE R26 as the five "cleartext" png documents DOC_R26_D963-D967 (transcribed in
+texts/423-1_copy.txt, 23 Oct 2026); (2) the DECODE transcription (decode/keep/DOC_R26_D1635_1635.txt, NiLan 2017)
+re-segmented, with six figures corrected on the DECODE images IMG_R26_I145-I149 (texts/423_b04_corrections.tsv, item 1),
+and decoded with Lasry's key as corrected (26 = del, 25 = che, 30 = ta, 69 = z, 93 = nel) and the nomenclator of
+key_extra.txt and texts/b04_key_additions.txt, which now values every group of this letter but 1268, 1765 and 1847
+(decode: texts/423-1_decode_b04.txt). The copy and the decode were aligned token by token
+(research/reading_audit/r2d_align.py; texts/423-1_r2d_align.tsv): 1,637 non-null tokens, 1,578 agree with the copy (the rest are the slips and variants below).
+Where the figures carry other words than the copy (si unisca, costì, correlazione, quelli, nelle, straniere) the
+reading follows the figures; where a single figure is a cipherer's slip against the copy's word it follows the copy
+(listed below). Word division, u/v, accents and apostrophes normalised; other spellings as written.
+Marks: [x] = word supplied, carried by no figure and not in the copy; [?x] = doubtful.
 
-A quanto diffusamente scrivo in piano, stimo maggior di aggiungere in [?risposta] de' suoi numeri degli [1953]a
+## Reading
+
+A quanto diffusamente scrivo in piano, stimo necessario di aggiungere in risposta de' suoi numeri degli otto del
 passato che N.S. è rimasto sommamente amareggiato nell'udire come codesto Mons. Molina, scordatosi degli obblighi di
-Vescov[o] [..], si unisca in questa [?occasione] [?anche] dei tumulti contro la S. Sede e, per iscusa di una condotta al
-giudicio di ognuno tant[o] irregolare, che si ponga [?già] in vista la f[..]a a Donghi e a le grazii accordate
-all'[?Infante].
-Voglio prelcindere che le altrui violenze non dovrebbero mai servire di esempio, e che riesce di [?grande] scandalo che
-i principi, contro ogni principio di pietà e di [?religione] e ben [..] lungi nelle vestigia de' loro predecessori,
-sembrino [..] [1847] un punto di onore a chi più insulta [1765] opprime la S. Sede.
-Ma nel fatto medesimo a Donghi [1204] a forza N.S. condescendesse alla richieste grazii, [1213] si ristrinsero le
-[?istanze] e al [?Infante] contro Mons. [1513] e suoi esecutori, che [1894] esagerava chi aver mancato; non promosse
-anch'essa mai di esiggere [..] che o [..] sue [1664]i pretensini che aveva con la S. Sede, e pure si aveva che far con
-un princip[e] il quale da lung[?o] tempo ci tacciava di troppo p[1268]ziali a la corona di Spagna.
-All'incontro codesta Corte, che N.S. doveva [1858] sperare a lui più benevola, non cont[e]nta a l'eccessiva connivenza
-che ha [?sempre] N.S. nell'accordare quanto si era intavolato in Napoli per grazia, la f[..]a tumulto dopo tutte [1239]e
-che si era prese con tanta violenza: da se medesima si avanza ancora inaspetatamente a pretendere cose che non hanno
-veruna correlazion[e] con i tumulti, e che vengono a ferire immedi[?at]amente la N.S., quasi che questa avesse eccitata
-la plebe e non piutosto avesse messo in opera ogni mezo per difendere la nazione spagnuola con la vita [?anche] di
-altri suoi sudditi, [?se] non vi è stato né pure uno spagnuolo o ferito o morto.
-Per giustificar poscia la maniera a le seguite ingaggiature, [?se] gli arrolamenti medesimi erano proibiti dagli
-antichi e nuovi bandi, se non vuole prestar fede a noi e ai processi religiosamente compilati con pubblica autorità e
-[?Roma] piena di straniere indifferenti nazioni e Ministri, a' quali è notoria una tale innegabile verità, e è una
-gran disgrazia e in [?religione] che si abbia voluto tenere unicamente l'orec[..] aperto alle relazioni di chi è
-interessato per iscusa a la [1811]a, si fe' [..] a negar [..]i cos[ì] palesi.
-E parimente noto ad ognuno il numero [?grande] di [?uffici]ali a le [1916] di Napoli che erano in questa [?città] con
-case prese in affitto per custodi[..]vi gli ingaggiati, e che [1953] giorni avanti il primo tumulto [..] da[l] stess[o]
-Sig. Card. Acquaviva, al quale si erano da noi fatte e reclicate [?rimostra]nze, in sua pubblica anti[1322] sgridò
-[1252]i di [1239]i [?uffici]ali reputati i più colpevoli.
-Non era questo il [1426] bastante rimedio, ma c[..]n[..] prova [1580]mente la sussistenza di quel disordine che si
-pretende ancora di negare.
-Sembra per ultimo che, per autenticare [..] più questa evidente verità circa il praticato in [?Roma] dagli arrolatori,
-abbia il Sig. Iddio permesso che la stessa maniera s'incominciasse ad usare [1244] in [1482]; ma il Sig. [?Duca] di
-Montemar [1855]i [1843]i [?sempre]i da [1239]a [?città] ha sul bel principio troncata la radice al male e postovi [?il]
-[1646] rimedio, il che non fe' [1130] chi al[..] in [?Roma] [1239]i, che ne averebbero [?sempre] un obbligo eguale se
-non più più preciso.
+Vescovo e Regolare, si unisca in questa congiuntura ancora dei tumulti contro la S. Sede, e per iscusa di una condotta
+al giudicio di ognuno tanto irregolare, che si ponga costì in vista l'affare del Donghi e delle sodisfazioni accordate
+all'Imperatore.
+
+Voglio prescindere che le altrui violenze non dovrebbero mai servire di esempio, e che riesce di grande scandalo che i
+Principi, contro ogni principio di pietà e di giustizia e ben lungi nelle vestigia de' loro predecessori, sembrino ora
+farsi un punto di onore a chi più insulta e opprime la S. Sede.
+
+Ma nel fatto medesimo del Donghi, benchè a forza N.S. condescendesse alla richieste sodisfazioni, finalmente si
+ristrinsero le istanze dell'Imperatore contro Mons. Governatore e suoi esecutori, che S.M. Cesarea esagerava di aver
+mancato; né promosse però essa mai di esiggere il conseguimento di altre sue particolari pretensioni che aveva con la
+S. Sede, e pure si aveva che far con un Principe il quale da lungo tempo ci tacciava di troppo parziali della Corona di
+Spagna.
+
+All'incontro codesta Corte, che N.S. doveva sempre sperare a lui più benevola, non contenta dell'eccessiva connivenza
+che ha avuto N.S. nell'accordare quanto si era intavolato in Napoli per sodisfazione dell'affare del tumulto, dopo
+tutte quelle che si era prese con tanta violenza, da se medesima s'avanza ora inaspetatamente a pretendere cose che non
+hanno veruna correlazione con i tumulti, e che vengono a ferire immediatamente la Santità Sua, quasi che questa avesse
+eccitata la plebe e non più tosto avesse messo in opera ogni mezo per difendere la nazione spagnuola con la vita
+ancora di altri suoi sudditi, quando non vi è stato né pure uno spagnuolo o ferito o morto.
+
+Per giustificar poscia la maniera delle seguite ingaggiature, quando gli arrolamenti medesimi erano proibiti dagli
+antichi e nuovi bandi, se non vuole prestar fede a noi e ai processi religiosamente compilati con pubblica autorità, è
+piena Roma di straniere indifferenti nazioni e Ministri, a' quali è notoria una tale innegabile verità, e è una gran
+disgrazia e ingiustizia che si abbia voluto tenere unicamente l'orecchio aperto alle relazioni di chi è interessato per
+iscusa della propria condotta, a negar fatti così palesi.
+
+È parimente noto ad ognuno il numero grande di Officiali delle Truppe di Napoli che erano in questa città con case
+prese in affitto per custodirvi gli ingaggiati, e che otto giorni avanti il primo tumulto e dallo stesso Sig. Card.
+Acquaviva, al quale si erano da noi fatte replicate rappresentanze, in sua pubblica anticamera sgridò alcuni di quelli
+Officiali reputati i più colpevoli.
+
+Non era questo il dovuto bastante rimedio, ma comprova maggiormente la sussistenza di quel disordine che si pretende
+ora di negare.
+
+Sembra per ultimo che, per autenticare sempre più questa evidente verità circa il praticato in Roma dagli arrolatori,
+abbia il Sig. Iddio permesso che la stessa maniera s'incominciasse ad usare ultimamente in Fiorenza; ma il Sig. Duca di
+Montemar, secondo i riscontri avuti da quella città, ha sul bel principio troncata la radice al male e postovi
+l'opportuno rimedio, il che non fecero in Roma quelli che ne averebbero avuto un obbligo eguale, se non più preciso.
 
 ## Notes on the figures
 
-- "Vescov[o] [..]": 1925 03 68 62 29 63 96 80 (e r mi no se o nel) does not read.
-- "la f[..]a a Donghi", "la f[..]a tumulto": 66 05 85 1211 26 (l a f far a); "far" (1211, affari) does not fit; the
-  Donghi named twice is not identified here.
-- "Voglio prelcindere" (prescindere) as written; "reclicate" (replicate) as written.
-- "sembrino [..] [1847]": 21 91 21 have no value.
-- "di esiggere [..]": 62 48 63 22 35 94 1222 96 83 81 (mi con se g u st mente o ne ?) does not read.
-- "ci tacciava di troppo p[1268]ziali": parziali, with 1268 inside the word.
-- "l'orec[..] aperto": 66 96 68 65 43 69 67 (l o r e c z ?): orecchio, the end miswritten or mistranscribed.
-- "si fe' [..] a negar [..]i": 84 85 49 62 43 07 20 83 22 20 68 1211 44.
-- "custodi[..]vi": 43 35 94 96 38 56 35 44 (custodi qu vi).
-- "c[..]n[..] prova": 43 95 99 45 68 08 09 (c n m p r o u).
-- "per autenticare [..] più": 28 58 (io + 5 8).
-- "chi al[..] in [?Roma]": 36 89 67.
-- Molina's title, Montemar's (1855, 1843) and the date groups (1953) stay open: no key material outside these letters.
+- Words carried by the copy where the figures have no value: "ora farsi" (21 91 21 1847: 21 and 91 have no value in
+  Lasry's key, 1847 occurs only here) and "e" (1765, only here). "parziali" is p + 1268 + ziali (1268 only here).
+- Single-figure slips of the cipherer, printed with the copy's word: "istanze" (64 to for ze), "di aver" (36 chi for
+  di), "lungo" (59 n for o), "contenta" (cont 95 ta), "comprova" (c 95 m prova), "prescindere" (66 l for s),
+  "immediatamente" (28 io for a), "giudicio" spelt with c as the figures give it (the copy: giudizio),
+  "pretensioni" (figures pretensini), "orecchio" (figures orec-qu-o), "custodirvi" (figures custodi-qu-vi),
+  "replicate" (43 c for p), "il conseguimento" (62 mi, underlined in the cipher, in place of il), "fatti"
+  (1211 far + i), "del Donghi" written once as "del donghi" and once "a forza", "ad usare" as the figures.
+- "né promosse": the figures have 40 non; the copy "nè". "e dallo stesso": the figures "tumulto l da stesso".
+- "più più preciso": the figures repeat più at the head of the last line; the copy has it once.
+- "degli otto del passato": the group 1953 is "otto" in "otto giorni avanti" (copy f. 285v) and fits the day groups
+  1957 = 12 and 1964 = 19 (copies of 423/10 and 423/11); the copy's numeral at this place looks like "13" (doubtful).
+- The copy has words the cipher leaves out ("le scrivo", "S. Sede Apostolica", "Sua Santità", "Sua Beatitudine",
+  "Nro Sig.re" for the group N.S.) and three struck words; the reading keeps to the figures there.

@@ -31,3 +31,7 @@ partly carried words in about 230 words; the sentences hold.
 - 137r l. 13 "onde […]" (19 figures) and the last line of 137v: the image confirms the figures; no word parse found.
   "[?uiuere]" (l. 3) is under an ink blot. The beginning of the letter is missing (fragment): blocker = the leaf is
   not in the record; Rome's decipherment (Francia 27) needs physical access.
+
+## 23 Oct 2026, r2d (Claude Opus 5.5)
+
+Regraded on the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): see the profile reading_review for the scores; now read. DECODE attachments re-opened (no decipherment). Image checks this pass (crops in the session scratchpad, r2d/morosini/crops): 137r l. 13 ("onde [...]": 3 7 1 7 1 7 0 3 7 7 2 9 1 8 4 2 5 2 1 0 0 5, no parse fits) and 137v l. 3 (as transcribed); both left open, encipherer's slips.

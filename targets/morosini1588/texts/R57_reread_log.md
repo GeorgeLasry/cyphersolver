@@ -43,3 +43,7 @@ Strasbourg sum. Grade B.
   them (outside material, not located).
 - The two dates (dì [?x], [?16] giugno): plain figures vs letters ambiguous.
 - Heading (524r l. 1) and the closing line (525r l. 13, corrupt in the transcription).
+
+## 23 Oct 2026, r2d (Claude Opus 5.5)
+
+Regraded on the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): see the profile reading_review for the scores; now read. DECODE attachments re-opened (no decipherment). Image checks this pass (crops in the session scratchpad, r2d/morosini/crops): 524r ll. 14-15 ("con [...] dodici pezi"): as transcribed; left open.

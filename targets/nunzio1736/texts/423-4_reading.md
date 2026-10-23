@@ -7,15 +7,15 @@ Word division, u/v, accents and apostrophes normalised; single consonants of the
 Marks: [x] = word supplied, carried by no figure; [?x] = partly carried; [1668] = nomenclator group without a value;
 [..] = figures without a value.
 
-Non può esser più dubbiosa e funesta la situazione a le nostre [1668]e con le Corti di Spagna e di Napoli, e non pare
-che vi sia luogo da sperare verun bene, sintanto che averanno influsso negli affari Ministri a carattere di codesto
-Mons. [1513]a[?Consiglio], e che staranno assenti i nostri Ministri, i quali possono metere le cose nel suo vero
+Non può esser più dubbiosa e funesta la situazione delle nostre pendenze con le Corti di Spagna e di Napoli, e non pare
+che vi sia luogo da sperare verun bene, sintanto che averanno influsso negli affari Ministri del carattere di codesto
+Mons. Governatore del Consiglio, e che staranno assenti i nostri Ministri, i quali possono metere le cose nel suo vero
 lume.
 In tale stato [..] l'unico rimedio si può e si deve sperare da Dio, che illuminerà la N.S. nel prendere le più
-adeguate deliberazioni e moverà il cuore de' principi a dar orecchio a più sani [?consigli].
-Ha sentito N.S. con aumento di somma amarezza quel tanto che è compreso nella sua lettera dei [1952] a lo scorso,
+adeguate deliberazioni e moverà il cuore de' principi a dar orecchio a più sani consigli.
+Ha sentito N.S. con aumento di somma amarezza quel tanto che è compreso nella sua lettera dei 7 dello scorso,
 giunta solo ieri.
-Continui ella pure ad impiegare ogni [1695] sua [1405] in queste spinosissime [?occasioni].
+Continui ella pure ad impiegare ogni possibile sua diligenza in queste spinosissime congiunture.
 
 ## Notes on the figures
 
