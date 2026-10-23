@@ -6,8 +6,8 @@
   {
    "id": "1567-10",
    "read": "read in part",
-   "shelfmark": "BnF fr. 15919, views 7-8 (Gallica btv1b90573568)",
-   "date": "Oct 1567 (date partly conjectural)",
+   "shelfmark": "BnF fr. 15919, views 6 right (cipher not transcribed) and 7-8 (Gallica btv1b90573568)",
+   "date": "11 Oct 1567",
    "year": 1567,
    "country": "Holy Roman Empire",
    "route": "Vienna -> French court",
@@ -45,8 +45,8 @@
     "location": [
      "separate folio"
     ],
-    "source": "contemporary decipherment on view 23 right (f. 19r), \"deschiffre de la precedente\"; read here by eye for calibration",
-    "partial": true
+    "source": "contemporary decipherment on view 23 right (f. 19r), \"deschiffre de la precedente\", read in full 21-22 Oct 2026 (covers view 22 right and view 23 left)",
+    "partial": false
    },
    "length": {
     "tokens": 1059,
@@ -185,8 +185,10 @@
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "none"
-    ]
+     "margin"
+    ],
+    "partial": false,
+    "source": "contemporary decipherment in the left margin of view 65 right, read 22 Oct 2026 (batch b02)"
    },
    "length": {
     "tokens": 260,
@@ -297,8 +299,10 @@
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "none"
-    ]
+     "margin"
+    ],
+    "partial": false,
+    "source": "contemporary decipherment in the left margin of view 103 right, read 22 Oct 2026 (batch b02)"
    },
    "length": {
     "tokens": 618,
@@ -381,8 +385,10 @@
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "none"
-    ]
+     "margin"
+    ],
+    "partial": false,
+    "source": "contemporary decipherment in the left margin of view 125 right, read 22 Oct 2026 (batch b02)"
    },
    "length": {
     "tokens": 458,
@@ -781,19 +787,55 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "what": "Contact sheet of all 34 cipher views at reduced size (openapi.bnf.fr IIIF), then native crops of the margins: views 65, 103 and 125 right carry contemporary decipherments of their cipher in the left margin (65 not recorded before); view 37 right has a two-line margin decipherment; view 6 right holds an untranscribed first cipher page of the 11 Oct 1567 letter.",
+   "result": "worked",
+   "technique": ["manual reconstruction"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "The rest of the contemporary decipherment on view 23 right (matching view 23 left) and the three margin decipherments (views 65, 103, 125 right) transcribed from native IIIF crops and aligned with the key decode; they agree clause by clause.",
+   "result": "worked",
+   "technique": ["plaintext matching", "manual reconstruction"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "The other 19 letters built word by word into French from the key decode (decoded_*.txt), reading through the known sign confusions, with a few image checks (views 6, 37, 109, 159); translated. All 23 letters read (4 grade A, 19 B); docs/_check_reading.py clean share before 0.0-0.17 per page, after 0.50-1.0 per reading.",
+   "result": "worked",
+   "technique": ["contextual inference", "manual reconstruction"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "hypothesis",
+   "what": "Sign values from the readings: a lone ϖ (and \"pi\") stands for l'Empereur (confirmed by the margins of views 65 and 103) or le Roy; 16 fits \"vostre\" in the 1569 letters to the King; H# = ss in ambassadeur/commissaires/asseurer, o elsewhere; =ii stands for a person (King of Spain, once the Landgrave). Not entered in key.tsv.",
+   "result": "partial",
+   "technique": ["contextual inference"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "Phrase-level holes left open without image checks: 17 Jul 1568 f. 79v and f. 80, 4 Sep 1568 f. 100r c17-c27, 10 Sep 1569 v150l c17-c23, 15 Feb 1568 v038l c03-c04/c17-c18, 6 Mar 1568 f. 39r c22-c29.",
+   "result": "partial",
+   "technique": ["contextual inference"]
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "Tomokiyo's reconstructed key, published for the letters of this volume, applied by the contributor to their own transcription; the project re-applied it and calibrated one letter against the volume's contemporary decipherment (83.8% of letters).",
+  "method_basis": "Tomokiyo's reconstructed key, published for the letters of this volume, applied by the contributor to their own transcription; the project re-applied it, calibrated one letter against the volume's contemporary decipherment (83.8% of letters), and on 22 Oct 2026 built every letter into French sentences from the decode; four letters (15 Nov 1567, 4 Jun, 21 Aug and 6 Nov 1568) follow contemporary decipherments found in the volume (view 23 right and the margins of views 65, 103 and 125 right).",
   "contribution": [
-   "transcription"
+   "transcription",
+   "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.056,
+  "fraction_read": 0.97,
   "fraction_coherent": 0.81,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Reading audit 22 Oct 2026: share of signs on the pages that read as sentences, f. 79r (802) and f. 94r (867) of 29,707 signs, page counts from READING.en.md (first version), so estimated. Withdrawn as a reading figure: 0.997 = 29,627 of 29,707 signs have a value (measure.py over contributed/data/transcription_*.txt); fraction_coherent = share of decoded letters covered by French lexicon words in a DP segmentation (81.0%; shuffled-key baseline 27.6%, clean French 90.3%). A lexical screen, not a line-by-line reading.",
+  "fraction_read_source": "22 Oct 2026, re-read (batch b02): all 23 letters build French sentences and are translated (read/<doc>_reading.md, _en.md; grades 4 A, 19 B). Signs of letters that read: the 29,707 transcribed signs, plus view 23 left (about 600 signs, untranscribed, read through its contemporary decipherment); not read: the first cipher page of the 11 Oct 1567 letter on view 6 right (about 800 signs, untranscribed). 30,300 / 31,100, so estimated. Holes remain inside the readings (Remaining gaps); docs/_check_reading.py clean share per reading 0.50-1.0 with header and notes counted. Earlier figures: 0.056 (audit, 22 Oct), 0.997 signs with a value (withdrawn as a reading figure).",
   "key": "recovered",
   "codes_open": "unknown",
   "grades": "unknown",
@@ -801,22 +843,27 @@
    "contemporary decipherment",
    "matched control"
   ],
-  "notes": "Contributed AI-only reading (Claude + Codex), no human check. Calibrated here on one letter (83.8% letters). Status: in progress (view 23 left untranscribed; doubtful stretches and code words open).",
+  "notes": "Contributed AI-only transcription (Claude + Codex), no human check. 22 Oct 2026: all 23 letters re-read into French sentences and translated (19 from the key decode, 4 after contemporary decipherments, three of them in margins not recorded before); class stays read in part: holes in several letters are workable by sign-level image checks, and the first cipher page of the 11 Oct 1567 letter (view 6 right) is untranscribed.",
   "gaps": [
    {
-    "item": "View 23 left (f. 18v), the second page of the 15 Nov 1567 letter, about 17 cipher lines",
-    "blocker": "open-codes",
-    "detail": "not in the contributed transcription; the contemporary decipherment on view 23 right gives its text, so it is workable"
+    "item": "View 6 right, first cipher page of the 11 Oct 1567 letter (about 22 lines, about 800 signs)",
+    "blocker": "not-attempted",
+    "detail": "not in the contributed transcription; image good; transcribe and decode with the volume key"
    },
    {
-    "item": "Doubtful stretches on all 44 pages (most lines of the contributed reading are marked inferred; about 19% of decoded letters fall outside French words)",
-    "blocker": "open-codes",
-    "detail": "AI-only transcription with no human check; workable by a sign-level re-check on the images"
+    "item": "View 23 left (f. 18v) cipher, second page of the 15 Nov 1567 letter",
+    "blocker": "not-attempted",
+    "detail": "read through the contemporary decipherment on view 23 right; the cipher itself is untranscribed, and one cramped decipherment line (\"gens de Flandres ... Chantonnay\") would be closed by decoding it"
    },
    {
-    "item": "Code words and signs without a settled value (ρ, K, ⊸, ꝺʒ; H# = o or ss; the s/p y-shape; SAXE where the decipherment of view 23 right has Wirtemberg)",
+    "item": "Phrase-level holes: f. 79v c01-c08 and f. 80 c07-c08 (17 Jul 1568); f. 100r c17-c27 (4 Sep 1568 k); v150l c17-c23 (10 Sep 1569); v038l c03-c04, c17-c18; f039r c22-c29; single words in the other letters (read/<doc>_reread_log.md)",
+    "blocker": "not-attempted",
+    "detail": "AI-only transcription; workable by sign-level crops of those lines and re-decoding"
+   },
+   {
+    "item": "Lone signs standing as codes, values not settled: ϖ (l'Empereur or le Roy), =ii (King of Spain / Landgrave / mm), Dz, mm, pp (King of Spain?), arrow, \"lele\"; code 16 = ce or vostre",
     "blocker": "open-codes",
-    "detail": "values inferred from context; the margins of views 103 right and 125 right may hold contemporary decipherments, not read"
+    "detail": "not in Tomokiyo's table; read from context in read/*_reread_log.md; key.tsv unchanged"
    }
   ],
   "provenance": "contributed",
@@ -845,10 +892,10 @@
   "texts": [
    {
     "doc": "1567-10",
-    "label": "Oct 1567 (date partly conjectural), to the Queen Mother (v007l, v007r, v008l, v008r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "label": "11 Oct 1567 (docket \"11 octob. 1567\"), to the Queen Mother (v007l, v007r, v008l, v008r; first cipher page on view 6 right not transcribed)",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1567-10_reading.md, read/1567-10_en.md, log read/1567-10_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v007l.txt",
      "contributed/data/transcription_v007r.txt",
@@ -861,14 +908,22 @@
      "contributed/data/decoded_v008l.txt",
      "contributed/data/decoded_v008r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, Oct 1567 (date partly conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor says he will do his utmost for peace in Christendom; The King's ambassador to Constantinople; The ambassador sent to Constantinople; marriages of the Emperor's daughters; Portugal; He will inquire, discreetly."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, Oct 1567 (date partly conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor says he will do his utmost for peace in Christendom; The King's ambassador to Constantinople; The ambassador sent to Constantinople; marriages of the Emperor's daughters; Portugal; He will inquire, discreetly.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; image check of view 6. Holes: v007l c01, v008l c19-c24 fragments. The letter's first cipher page (view 6 right, about 22 lines) is not transcribed, so the reading starts mid-sentence."
+    },
+    "translation": "read/1567-10_en.md",
+    "reading": "read/1567-10_reading.md"
    },
    {
     "doc": "1567-11-15",
     "label": "15 Nov 1567, to the Queen Mother (v022r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1567-11-15_reading.md, read/1567-11-15_en.md, log read/1567-11-15_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.78 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v022r.txt"
     ],
@@ -876,14 +931,22 @@
      "contributed/data/decoded_v022r.txt",
      "calib_v023r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 15 Nov 1567, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): News after Lignerolles left; rumour of troops levied in Germany for the Protestants. The cipher continues on view 23 left, not transcribed; calib_v023r.txt is the contemporary decipherment on view 23 right, read here by eye."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 15 Nov 1567, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): News after Lignerolles left; rumour of troops levied in Germany for the Protestants. The cipher continues on view 23 left, not transcribed; calib_v023r.txt is the contemporary decipherment on view 23 right, read here by eye.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Follows the contemporary decipherment on view 23 right (f. 19r, \"deschiffre de la precedente\"), aligned with the key decode of view 22 right (83.8% letters agree); the part on view 23 left rests on the decipherment alone (cipher untranscribed). One cramped line not made out."
+    },
+    "translation": "read/1567-11-15_en.md",
+    "reading": "read/1567-11-15_reading.md"
    },
    {
     "doc": "1568-01-21",
     "label": "21 Jan 1568, to the Queen Mother (v034r, v035l)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-01-21_reading.md, read/1568-01-21_en.md, log read/1568-01-21_reread_log.md. docs/_check_reading.py clean share before 0.0, after 1.0 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v034r.txt",
      "contributed/data/transcription_v035l.txt"
@@ -892,14 +955,22 @@
      "contributed/data/decoded_v034r.txt",
      "contributed/data/decoded_v035l.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 21 Jan 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor asks repeatedly for news of Lignerolles's return; He will keep the old alliances between the Empire and France."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 21 Jan 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor asks repeatedly for news of Lignerolles's return; He will keep the old alliances between the Empire and France.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. One verb before \"maintenir\" open."
+    },
+    "translation": "read/1568-01-21_en.md",
+    "reading": "read/1568-01-21_reading.md"
    },
    {
     "doc": "1568-02-15",
     "label": "15 Feb 1568, to the King (v037r, v038l, v038r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-02-15_reading.md, read/1568-02-15_en.md, log read/1568-02-15_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.80 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v037r.txt",
      "contributed/data/transcription_v038l.txt",
@@ -910,14 +981,22 @@
      "contributed/data/decoded_v038l.txt",
      "contributed/data/decoded_v038r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 15 Feb 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor is displeased at having no news since Lignerolles left; Resolution of the diet of Fulda: the Emperor to mediate with the Prince of Condé; The troubles in France and Flanders will ruin Germany; Alba levies troops in Germany."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 15 Feb 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor is displeased at having no news since Lignerolles left; Resolution of the diet of Fulda: the Emperor to mediate with the Prince of Condé; The troubles in France and Flanders will ruin Germany; Alba levies troops in Germany.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; the two cipher lines of view 37 right have a contemporary margin decipherment, which agrees word for word. Open: v038l c03-c04, c17-c18."
+    },
+    "translation": "read/1568-02-15_en.md",
+    "reading": "read/1568-02-15_reading.md"
    },
    {
     "doc": "1568-03-06",
     "label": "6 Mar 1568, to the Queen Mother (f039r, f039v)",
-    "note": "READING.en.md gives f. 39r-v line by line, but \"...\" or \"(?)\" holes stand in most lines (c05-c09, c12-c16, c19-c29); sentences cannot be built; decoded_*.txt is mechanical output",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-03-06_reading.md, read/1568-03-06_en.md, log read/1568-03-06_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.82 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_f039r.txt",
      "contributed/data/transcription_f039v.txt"
@@ -927,42 +1006,66 @@
      "contributed/data/decoded_f039v.txt",
      "contributed/docs/READING.en.md"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 6 Mar 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Duke Johann Wilhelm of Saxony and Flacian preachers; The Emperor means to work for an end of the French civil war."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 6 Mar 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Duke Johann Wilhelm of Saxony and Flacian preachers; The Emperor means to work for an end of the French civil war.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; the contributor's line reading (READING.en.md) used as a check. Open: f039r c08, c22-c23, c25-c27, c29; f039v c06, c10, c14; sign arrow in \"comte [arrow]\"."
+    },
+    "translation": "read/1568-03-06_en.md",
+    "reading": "read/1568-03-06_reading.md"
    },
    {
     "doc": "1568-03-27",
     "label": "27 Mar 1568, to the Queen Mother (v049r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-03-27_reading.md, read/1568-03-27_en.md, log read/1568-03-27_reread_log.md. docs/_check_reading.py clean share before 0.11, after 0.64 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v049r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v049r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 27 Mar 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The marriage; the King of Spain; Grignan."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 27 Mar 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The marriage; the King of Spain; Grignan.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: c04 and c13-c14."
+    },
+    "translation": "read/1568-03-27_en.md",
+    "reading": "read/1568-03-27_reading.md"
    },
    {
     "doc": "1568-06-04",
     "label": "4 Jun 1568, to the Queen Mother (v065r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-06-04_reading.md, read/1568-06-04_en.md, log read/1568-06-04_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.50 (Notes section included) (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v065r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v065r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 4 Jun 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): No decision from Spain yet on the marriage."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 4 Jun 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): No decision from Spain yet on the marriage.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Follows the contemporary decipherment in the left margin, read from native IIIF crops, aligned clause by clause with the key decode (margin found in this pass). One cramped word."
+    },
+    "translation": "read/1568-06-04_en.md",
+    "reading": "read/1568-06-04_reading.md"
    },
    {
     "doc": "1568-06-12",
     "label": "12 Jun 1568, to the Queen Mother (v070r, v071l)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-06-12_reading.md, read/1568-06-12_en.md, log read/1568-06-12_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.95 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v070r.txt",
      "contributed/data/transcription_v071l.txt"
@@ -971,14 +1074,22 @@
      "contributed/data/decoded_v070r.txt",
      "contributed/data/decoded_v071l.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 12 Jun 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Spanish prince's detention; the daughters' marriages; Nothing will be decided before the answer from Spain."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 12 Jun 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Spanish prince's detention; the daughters' marriages; Nothing will be decided before the answer from Spain.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: sign Dz in c01; lone ϖ twice as a code."
+    },
+    "translation": "read/1568-06-12_en.md",
+    "reading": "read/1568-06-12_reading.md"
    },
    {
     "doc": "1568-07-17",
     "label": "17 Jul 1568, to the Queen Mother (f079, f079v, f080)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "f. 79r only: READING.en.md builds it into continuous French sentences (Archduke Charles to Spain for the delivery of the prince) with scattered \"...\" holes; all lines inferred (word division, supplied letters) by the contributor's AI, no human check. f. 79v and f. 80 are mechanical decode only, decoded, not read."},
-    "reading": "contributed/docs/READING.en.md",
-    "note": "f. 79r read (READING.en.md); f. 79v and f. 80 mechanical decode only",
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-22", "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; all three pages (f. 79r rebuilt and checked against READING.en.md). Open: the name of the \"sieur … grand escuyer\", f. 79r c07-c08, c17; f. 79v c01-c03, c06-c08 (several holes); f. 80 c01, c07-c08."},
+    "reading": "read/1568-07-17_reading.md",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-07-17_reading.md, read/1568-07-17_en.md, log read/1568-07-17_reread_log.md. docs/_check_reading.py clean share before f. 79r READING.en.md; f. 79v/80 0.0, after 0.61 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
     "state": "read",
     "transcription": [
@@ -992,14 +1103,15 @@
      "contributed/data/decoded_f080.txt",
      "contributed/docs/READING.en.md"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 17 Jul 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Archduke Charles to be sent to Spain for the \"délivrance\" of Don Carlos; The affair may take long; Archduke Charles may reside in Flanders; A courier leaves for Spain tonight."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 17 Jul 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Archduke Charles to be sent to Spain for the \"délivrance\" of Don Carlos; The affair may take long; Archduke Charles may reside in Flanders; A courier leaves for Spain tonight.",
+    "translation": "read/1568-07-17_en.md"
    },
    {
     "doc": "1568-08-14",
     "label": "14 Aug 1568, to the Queen Mother (f094, f094v, f095)",
-    "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "f. 94r only: READING.en.md builds it into continuous French sentences (the Emperor sends Archduke Charles to Spain for two reasons) with one or two holes; all lines inferred by the contributor's AI, no human check. f. 94v and f. 95 are mechanical decode only, decoded, not read."},
-    "reading": "contributed/docs/READING.en.md",
-    "note": "f. 94r read (READING.en.md); f. 94v and f. 95 mechanical decode only",
+    "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-22", "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; all three pages (f. 94r checked against READING.en.md). Open: \"lele\" (f. 94 c12/c14/c21), the person after \"devers\", the port \"gixes\", a code before \"et vous\", f. 95 c12."},
+    "reading": "read/1568-08-14_reading.md",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-08-14_reading.md, read/1568-08-14_en.md, log read/1568-08-14_reread_log.md. docs/_check_reading.py clean share before f. 94r READING.en.md; f. 94v/95 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
     "state": "read",
     "transcription": [
@@ -1013,28 +1125,37 @@
      "contributed/data/decoded_f095.txt",
      "contributed/docs/READING.en.md"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 14 Aug 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor explains why he sends Archduke Charles to Spain; The marriage will be settled on the Archduke's return; The Duke of Bavaria's second son will go to Spain with the Archduke."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 14 Aug 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Emperor explains why he sends Archduke Charles to Spain; The marriage will be settled on the Archduke's return; The Duke of Bavaria's second son will go to Spain with the Archduke.",
+    "translation": "read/1568-08-14_en.md"
    },
    {
     "doc": "1568-08-21",
     "label": "21 Aug 1568, to the Queen Mother (v103r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-08-21_reading.md, read/1568-08-21_en.md, log read/1568-08-21_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.70 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v103r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v103r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 21 Aug 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Passage of Archduke Charles returning from Spain; Provence; the Count of Tende."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 21 Aug 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Passage of Archduke Charles returning from Spain; Provence; the Count of Tende.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Follows the contemporary decipherment in the left margin, read from native IIIF crops, aligned clause by clause with the key decode (about 40 short lines; not read before). Open: one word after \"a sa volunté\" and the clause before \"qu'il partira le quatriesme de septembre\"."
+    },
+    "translation": "read/1568-08-21_en.md",
+    "reading": "read/1568-08-21_reading.md"
    },
    {
     "doc": "1568-09-04k",
-    "label": "4 Sep 1568, to the King (f100, f100v, f101, f101v)",
-    "note": "READING.en.md gives f. 100r line by line, but most lines are fragments with \"...\" holes (c01-c03, c07-c13, c17-c27); f. 100v-101v decode only",
+    "label": "4 Sep 1568 (docket \"au Roy\"; the cipher addresses \"Madame\"), f100, f100v, f101, f101v",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04k_reading.md, read/1568-09-04k_en.md, log read/1568-09-04k_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.73 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_f100.txt",
      "contributed/data/transcription_f100v.txt",
@@ -1048,14 +1169,22 @@
      "contributed/data/decoded_f101v.txt",
      "contributed/docs/READING.en.md"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 4 Sep 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The marriage negotiation; the death of the Spanish prince; News of the prince's death; the Emperor's mourning; the King's subjects lobby German princes; The Emperor says he knows of no solicitation from France so far; The affairs of Flanders may be settled gently."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 4 Sep 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The marriage negotiation; the death of the Spanish prince; News of the prince's death; the Emperor's mourning; the King's subjects lobby German princes; The Emperor says he knows of no solicitation from France so far; The affairs of Flanders may be settled gently.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: f. 100r c17-c27 (mostly fragments), scattered holes in f. 100v c09-c13, f. 101 c16/c21/c25, f. 101v c05/c14/c19. The cipher addresses \"Madame\" (feminine \"preste\"), so it is to the Queen Mother though the docket says \"au Roy\"."
+    },
+    "translation": "read/1568-09-04k_en.md",
+    "reading": "read/1568-09-04k_reading.md"
    },
    {
     "doc": "1568-09-04q",
     "label": "4 Sep 1568, to the Queen Mother (v109r, v110l, v110r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04q_reading.md, read/1568-09-04q_en.md, log read/1568-09-04q_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.68 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v109r.txt",
      "contributed/data/transcription_v110l.txt",
@@ -1066,28 +1195,44 @@
      "contributed/data/decoded_v110l.txt",
      "contributed/data/decoded_v110r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 4 Sep 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The marriage; Archduke Ernst; Bohemia; The Emperor loves his eldest daughter; a good alliance would confirm the friendship; Keeping the edicts; he will find out whether the Archduke passes through France."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 4 Sep 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The marriage; Archduke Ernst; Bohemia; The Emperor loves his eldest daughter; a good alliance would confirm the friendship; Keeping the edicts; he will find out whether the Archduke passes through France.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; image check of view 109 right c01-c05. Open: v109r c10-c11, v110l c24-c25, v110r c03, c05, c08."
+    },
+    "translation": "read/1568-09-04q_en.md",
+    "reading": "read/1568-09-04q_reading.md"
    },
    {
     "doc": "1568-11-06",
     "label": "6 Nov 1568, to the Queen Mother (v125r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-11-06_reading.md, read/1568-11-06_en.md, log read/1568-11-06_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.58 (Notes section included) (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v125r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v125r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 6 Nov 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Troops for the Prince of Condé; the King of Denmark; Orange; Alba."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 6 Nov 1568, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Troops for the Prince of Condé; the King of Denmark; Orange; Alba.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Rests on the key decode, which reads almost straight, and the contemporary decipherment in the left margin, read from native IIIF crops, aligned clause by clause with the key decode; the margin supplies the opening. One verb before \"six mil reistres\" open."
+    },
+    "translation": "read/1568-11-06_en.md",
+    "reading": "read/1568-11-06_reading.md"
    },
    {
     "doc": "1568-12-02",
     "label": "2 Dec 1568 (Speyer), to the Queen Mother (v129r, v130l)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-12-02_reading.md, read/1568-12-02_en.md, log read/1568-12-02_reread_log.md. docs/_check_reading.py clean share before 0.0-0.10, after 0.63 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v129r.txt",
      "contributed/data/transcription_v130l.txt"
@@ -1096,14 +1241,22 @@
      "contributed/data/decoded_v129r.txt",
      "contributed/data/decoded_v130l.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Speyer, 2 Dec 1568 (Speyer), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Duke of Aumale; levies of reiters; Pretext of defending the Empire's lands; all to be settled on Archduke Charles's return."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Speyer, 2 Dec 1568 (Speyer), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Duke of Aumale; levies of reiters; Pretext of defending the Empire's lands; all to be settled on Archduke Charles's return.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: \"au duc [P fu q9 a]\" (v130l c02), v130l c06, codes =ii and Dz."
+    },
+    "translation": "read/1568-12-02_en.md",
+    "reading": "read/1568-12-02_reading.md"
    },
    {
     "doc": "1569-01-14",
     "label": "14 Jan 1569, to the Queen Mother (v140r, v141l)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-01-14_reading.md, read/1569-01-14_en.md, log read/1569-01-14_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.73 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v140r.txt",
      "contributed/data/transcription_v141l.txt"
@@ -1112,26 +1265,42 @@
      "contributed/data/decoded_v140r.txt",
      "contributed/data/decoded_v141l.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 14 Jan 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Courier from Madrid; the Cardinal of Guise; Barcelona and Zaragoza; the King of Portugal; The Queen of England; marriage of the Elector of Saxony's daughter."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 14 Jan 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Courier from Madrid; the Cardinal of Guise; Barcelona and Zaragoza; the King of Portugal; The Queen of England; marriage of the Elector of Saxony's daughter.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: v140r c08, v141l c03-c04, \"comte ?\" (v141l c15), the senses of =ii."
+    },
+    "translation": "read/1569-01-14_en.md",
+    "reading": "read/1569-01-14_reading.md"
    },
    {
     "doc": "1569-03-02",
     "label": "2 Mar 1569, to the Queen Mother (v146r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-03-02_reading.md, read/1569-03-02_en.md, log read/1569-03-02_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v146r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v146r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 2 Mar 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): News of Aumale; the King's army on the frontiers; the Archduke's return."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 2 Mar 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): News of Aumale; the King's army on the frontiers; the Archduke's return.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: c07 (the authors of the false news)."
+    },
+    "translation": "read/1569-03-02_en.md",
+    "reading": "read/1569-03-02_reading.md"
    },
    {
     "doc": "1569-09-10",
     "label": "10 Sep 1569, to the King (v149r, v150l, v150r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Decoded, not read: re-read 22 Oct 2026 (batch b02; read/1569-09-10_reading.md and _en.md kept as a partial reading); after supplied words were bracketed the clean share is 0.55, holes in nearly half the sentences (v150l c17-c23 and the 'faire entendre' passage), the same level at which matignon1586 f. 124r is kept unread. Workable: sign-level crops of v150l.",
     "language": "fr",
     "state": "decoded, not read",
     "transcription": [
@@ -1144,56 +1313,88 @@
      "contributed/data/decoded_v150l.txt",
      "contributed/data/decoded_v150r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 10 Sep 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Cardinal of Guise in Spain; the late Queen's death; resolution on the marriage; The ambassador to send within the month; Princess Marguerite and the King of Portugal; Help from Germany; the Empress's letter; wish for an early marriage."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 10 Sep 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The Cardinal of Guise in Spain; the late Queen's death; resolution on the marriage; The ambassador to send within the month; Princess Marguerite and the King of Portugal; Help from Germany; the Empress's letter; wish for an early marriage.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: v150l c17-c23 (about 6 holes in 60 words) and single words elsewhere."
+    },
+    "translation": "read/1569-09-10_en.md",
+    "reading": "read/1569-09-10_reading.md"
    },
    {
     "doc": "1569-10-01",
     "label": "1 Oct 1569 (date conjectural), to the Queen Mother (v155r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-01_reading.md, read/1569-10-01_en.md, log read/1569-10-01_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.81 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v155r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v155r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 1 Oct 1569 (date conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The siege of Poitiers; Saint Martin's day."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 1 Oct 1569 (date conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The siege of Poitiers; Saint Martin's day.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: a second name after \"Chantonnay\" (c06-c07)."
+    },
+    "translation": "read/1569-10-01_en.md",
+    "reading": "read/1569-10-01_reading.md"
    },
    {
     "doc": "1569-10-15",
     "label": "15 Oct 1569 (date conjectural), to the Queen Mother (v161r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-15_reading.md, read/1569-10-15_en.md, log read/1569-10-15_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.83 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v161r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v161r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 15 Oct 1569 (date conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The English ambassador; movements of troops in Germany."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 15 Oct 1569 (date conjectural), during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The English ambassador; movements of troops in Germany.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. Open: one word (\"au prejudice du [?]\")."
+    },
+    "translation": "read/1569-10-15_en.md",
+    "reading": "read/1569-10-15_reading.md"
    },
    {
     "doc": "1569-10-20",
     "label": "20 Oct 1569, to the King (v159r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-20_reading.md, read/1569-10-20_en.md, log read/1569-10-20_reread_log.md. docs/_check_reading.py clean share before 0.17, after 0.60 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v159r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v159r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 20 Oct 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Assembly of Protestant princes and a defensive league; England's ambassador."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 20 Oct 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): Assembly of Protestant princes and a defensive league; England's ambassador.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; image check of view 159 right c01-c02. Open: c04, the name of the feared attacker."
+    },
+    "translation": "read/1569-10-20_en.md",
+    "reading": "read/1569-10-20_reading.md"
    },
    {
     "doc": "1569-10-29",
     "label": "29 Oct 1569, to the King (f158)",
-    "note": "READING.en.md gives f. 158r, but holes (\"...\") in most lines (c06, c08-c19); sentences cannot be built",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-29_reading.md, read/1569-10-29_en.md, log read/1569-10-29_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.77 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_f158.txt"
     ],
@@ -1201,21 +1402,37 @@
      "contributed/data/decoded_f158.txt",
      "contributed/docs/READING.en.md"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 29 Oct 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): After the victory (taken to be Moncontour), the Emperor offers to mediate."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the King, Vienna, 29 Oct 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): After the victory (taken to be Moncontour), the Emperor offers to mediate.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions; READING.en.md used as a check (its \"encline a clemence\" is not carried by the figures). Open: c05, c22-c23."
+    },
+    "translation": "read/1569-10-29_en.md",
+    "reading": "read/1569-10-29_reading.md"
    },
    {
     "doc": "1569-11-04",
     "label": "4 Nov 1569, to the Queen Mother (v168r)",
-    "note": "mechanical decode only (decoded_*.txt, unspaced, wrong letters; 0-17% of sentences clean, docs/_check_reading.py); no sentence reading",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-11-04_reading.md, read/1569-11-04_en.md, log read/1569-11-04_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.85 (header comment counted; old spellings outside the word list count as holes).",
     "language": "fr",
-    "state": "decoded, not read",
+    "state": "read",
     "transcription": [
      "contributed/data/transcription_v168r.txt"
     ],
     "decryption": [
      "contributed/data/decoded_v168r.txt"
     ],
-    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 4 Nov 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The courier; the answer; ceremonies of the marriage."
+    "summary": "Scipion de Fiesque, French envoy at the court of Emperor Maximilian II, to the Queen Mother, Vienna, 4 Nov 1569, during the negotiation of Charles IX's marriage with Elisabeth of Austria. Contents (conjectural, from the contributor's page list): The courier; the answer; ceremonies of the marriage.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "built word by word from the key decode of the contributed transcription (Tomokiyo's key), reading through the known sign confusions. No holes; four words partly carried."
+    },
+    "translation": "read/1569-11-04_en.md",
+    "reading": "read/1569-11-04_reading.md"
    }
   ]
  }

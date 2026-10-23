@@ -29,7 +29,10 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
    figures, correct the transcription label (keep a tsv), adjust the key only with values that hold across the
    document, re-decode, continue.
 3. **Do not invent.** Every word of a reading is carried by its figures or by a contemporary/printed text you name.
-   `[?word]` for partly carried, `[…]` for unread, `[47]` for an unidentified code.
+   `[?word]` for partly carried, `[word]` for a word you supply that nothing carries (a verb or article the sense
+   needs), `[…]` for unread, `[47]` for an unidentified code. **Before you finish, align each reading word by word with
+   its decode (and the contemporary text) and bracket every word neither carries**: an unbracketed supplied word is an
+   invented word (a spot check found "Il dict depuis" where the figures give "il depuis").
 4. **Stop** when the sentences hold (most sentences with at most one hole in ten words; `python docs/_check_reading.py
    --file <reading>` as a pointer; your own reading is the test), or when the remaining breaks have an outside blocker
    (illegible, image not reachable, no key material) — name it.

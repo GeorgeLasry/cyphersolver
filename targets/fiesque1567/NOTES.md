@@ -1,8 +1,20 @@
 # Scipion de Fiesque, Vienna, to Catherine de' Medici and Charles IX, Oct 1567 – Nov 1569 (BnF fr. 15919)
 
-Status: in progress (21 Oct 2026). Contributed reading (issue #52, Harumi-Matsuba), checked here; read in part.
+Status: in progress (22 Oct 2026). Contributed reading (issue #52, Harumi-Matsuba), checked here; all 23 letters re-read into sentences 22 Oct, read in part.
 View 23 left, the second cipher page of the 15 Nov 1567 letter, is not transcribed, and the doubtful stretches and
 code words are workable, not blocked (see Remaining gaps).
+
+22 Oct 2026, re-read (REREAD_BRIEF, batch b02, Claude Opus 5.5): **all 23 letters now read as French sentences and
+are translated** (`read/<doc>_reading.md`, `_en.md`, `_reread_log.md`; 4 grade A, 19 B). Four follow contemporary
+decipherments found in the volume: view 23 right (15 Nov 1567, now read to the end, covering the untranscribed cipher of
+view 23 left) and the left margins of views 65 right (4 Jun 1568, not recorded before), 103 right (21 Aug 1568) and
+125 right (6 Nov 1568); view 37 right's margin deciphers its two cipher lines. The other 19 are built word by word from
+the key decode, reading through the known sign confusions, with image checks on views 6, 37, 109 and 159. Found: the
+"Oct 1567?" letter is dated 11 Oct 1567 on its docket and begins with an untranscribed cipher page on view 6 right; the
+4 Sep 1568 letter docketed "au Roy" addresses "Madame" in its cipher. Sign values suggested by the readings (not
+entered in key.tsv): a lone ϖ is the code for l'Empereur (margins of views 65 and 103) or le Roy; 16 fits "vostre" in
+the 1569 letters to the King; H# = ss in ambassadeur/commissaires/asseurer; =ii stands for a person (King of Spain;
+once the Landgrave). fraction_read about 0.97 (estimated: view 6 right unread). Holes remain (Remaining gaps).
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 79r and f. 94r
 only, in the contributed `READING.en.md` (continuous French with scattered holes; the first pages of the 17 Jul and
@@ -96,15 +108,15 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
 - `profile.json`. Images are not kept; crops for the site are `docs/fiesque1567_*.jpg`.
 
 ## Remaining gaps
-- 21 letters decoded, not read, and ff. 79v-80, 94v-95 (all but ff. 79r and 94r; about 28,000 signs) - blocker: not-attempted; holes in most sentences (reading audit 22 Oct 2026). Workable: build sentences page by page from the decode, check breaks on the Gallica images, translate
-- View 23 left (f. 18v), the second cipher page of the 15 Nov 1567 letter, about 17 lines - blocker: open-codes; not in the contributed transcription, and the decipherment on view 23 right gives its text, so it is workable here
-- Doubtful stretches on all 44 pages, about 19% of the decoded letters outside French words; most lines of the contributed readings are marked inferred - blocker: open-codes; AI-only transcription with no human check, workable by a sign-level re-check against the images
-- Code words and signs without a settled value: ρ, K, ⊸, ꝺʒ; ŧŧ = o or ss; the s/p y-shape; Φ = Saxe where view 23 right has the duke of Wirtemberg - blocker: open-codes; values inferred from context; the margins of views 103 right and 125 right may carry contemporary decipherments, not read
+- View 6 right, the first cipher page of the 11 Oct 1567 letter (about 22 lines, about 800 signs) - blocker: not-attempted; not in the contributed transcription, image good
+- View 23 left cipher (15 Nov 1567) - blocker: not-attempted; read through the contemporary decipherment on view 23 right; one cramped decipherment line ("gens de Flandres ... Chantonnay") would be closed by transcribing and decoding the cipher
+- Phrase-level holes in f. 79v and f. 80 (17 Jul 1568), f. 100r c17-c27 (4 Sep 1568), v150l c17-c23 (10 Sep 1569), v038l c03-c04 and c17-c18, f. 39r c22-c29, single words elsewhere (read/<doc>_reread_log.md) - blocker: not-attempted; AI-only transcription, workable by sign-level crops and re-decoding
+- Lone signs standing as codes, values not settled: ϖ (l'Empereur or le Roy), =ii, Dz, mm, pp, the arrow, "lele"; 16 = ce or vostre - blocker: open-codes; not in Tomokiyo's table, read from context; key.tsv unchanged
 
 ## Escalation
 - [x] siblings: all 183 views were looked through by the contributor; here views 22, 23 and 99 opened, and view 23 left found untranscribed
-- [x] clear-pages: view 23 right is the contemporary decipherment of view 22 right, used here for calibration (83.8% of letters); margins of views 103 right and 125 right still to read
+- [x] clear-pages: view 23 right is the contemporary decipherment of views 22 right and 23 left (read in full 22 Oct); the margins of views 65, 103 and 125 right decipher those letters, view 37 right's its two lines (read 22 Oct); no other cipher view has a margin decipherment (contact sheet of all 34)
 - [x] known-keys: Tomokiyo's reconstructed table for this volume is the key; no other key of Fiesque's embassy is known
 - [x] print: La Ferrière, Lettres de Catherine de Médicis iii (Catherine's replies only), Cryptiana, DECODE and the contributor's prior-work list; nothing printed of Fiesque's cipher
 - [x] key-rebuild: contributor inferred 23 values from context; the calibration shows one code (Φ) mis-valued in one place
-- [x] retry: the whole volume decoded again here with the contributed key and scored (measure.py); the re-transcription of doubtful stretches against the images is still to do
+- [x] retry: the whole volume decoded again here with the contributed key and scored (measure.py); 22 Oct every letter built into sentences from the decode, with image checks on views 6, 37, 109, 159; sign-level re-transcription of the remaining holes still to do
