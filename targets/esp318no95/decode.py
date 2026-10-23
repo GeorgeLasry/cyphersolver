@@ -9,7 +9,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 CTTS = HERE / 'lasry2021' / 'ctts'
-SKIP_HEAD = {'f122b': 2} if 'esp318no95' == 'esp318no95' else {}   # f122b repeats the last two lines of f122a
+SKIP_HEAD = {}   # f122b used to repeat the last two lines of f122a; Lasry's PR 85 transcribes them once (from f122b)
 
 
 def load_key():

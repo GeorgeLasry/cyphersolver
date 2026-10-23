@@ -1,6 +1,6 @@
-<!-- English translation of reading.txt (Claude Opus 5.5, 23 Oct 2026): George Lasry's edited Spanish of f. 122r (PR 75), with the same marks: [word] a code group read from context, [word?] tentative, [NameN?] an unidentified name code, [null?] a presumed null; the text ends in mid-sentence ("…"). -->
+<!-- English translation of reading.txt (Claude Opus 5.5, 23 Oct 2026): George Lasry's edited Spanish of f. 122r (PR 75) and f. 122v (PR 85), with the same marks: [word] a code group read from context, [word?] tentative, [NameN?] an unidentified name code, [null?] a presumed null; the recto ends in mid-sentence ("…") and the verso continues it. -->
 
-# BnF Espagnol 318 no. 95, f. 122r, 8 January 1497: English translation of George Lasry's edited reading
+# BnF Espagnol 318 no. 95, f. 122r-v, 8 January 1497: English translation of George Lasry's edited reading
 
 [null?] Of matters here there is nothing to say, referring myself to what has been said, except that the dearth grows
 every day, and it is expected that bread will not be had for money or without it. And the French are bringing many
@@ -21,3 +21,7 @@ And the [pope] says he wants the [cardinal] of Santa Cruz to go to France to pro
 it should be, the best would be for the League to do what it ought, so that [Name3?] over there might do what he can, and
 so the [King of the Romans?] would be begging those who beg him; otherwise I think this will do more harm than good.
 [Name4?] ought to order [Name5?] that, if necessary, he should come here to defend this, for if it were lost, …
+
+[f. 122v] … which God forbid, nothing in Italy would be safe. And of the [King of the Romans?] I do not know what to say,
+except that he is in Germany; and nobody knew of his going, nor is there any hope of his coming. *On 8 January* [year
+not legible]. [rubric]

@@ -8,9 +8,12 @@ Espagnol 318 are different ciphers, each with its own entry and page: [`targets/
 (no. 94, alphabet recovered by Michael Brackx).
 
 **Outcome (22 Oct 2026): key recovered from ciphertext-only by George Lasry; recto deciphered in full** (PR 75).
-George's CTTS key (2021-22, revised 2026 with Claude Opus 5.5) gives every one of the 1,245 recto symbols a value;
-five name code groups are unidentified and three readings tentative. The verso's four cipher lines are Michael
-Brackx's reading ([issue #63](https://github.com/dbourdeau/cyphersolver/issues/63)) with the same alphabet. Before
+George's CTTS key (2021-22, revised 2026 with Claude Opus 5.5) gives every one of the 1,246 recto symbols a value;
+five name code groups are unidentified and three readings tentative. **Verso added by George in PR 85 (23 Oct 2026)**:
+118 more symbols, 1,364 in all, every one assigned; his reading of the verso supersedes Michael Brackx's
+([issue #63](https://github.com/dbourdeau/cyphersolver/issues/63)), which it confirms but for one word. Measured
+against the read bar, Lasry's recto and verso read 91.5% of words as sense (code groups read from context count as
+supplied words), so the entry stays read in part. Before
 PR 75: Lasry's approximate ll. 1-13 (2022), Brackx's ll. 14-33 and verso, and the project's machine reading of about
 two thirds of the recto (Sept 2026), all kept below as history; `f122_reading.md` is the pre-PR-75 combined text.
 Sessions of 17 and 21 Sept and 21 Oct 2026.
@@ -53,7 +56,7 @@ Checked here (22 Oct 2026):
 - `decode.py` re-applies the key: 1,323 transcribed symbols, of which 78 are the last two lines of f122a photographed
   again at the top of f122b (the two transcriptions of those lines differ in a few signs: *toca/tocad*, *no uen/no
   buen*, *amicer/amier*); 1,245 counted once = 1,224 letters + 2 nulls + 19 code and special signs, none unassigned.
-  George's count is 1,245.
+  George's count was 1,245. Superseded by PR 85: see below (1,246 recto, 1,364 with the verso).
 - `docs/_validate.py` (model `es-golden-age`, codes left unread): reading -1.960 per letter; random keys -6.156 (z
   8.5); key fitted to shuffled text -3.514 (z 36.7); annealer on the real text -2.095. Verdict: pass.
 - The f122c overlay compared by eye with the decode: the code groups `dal` and `bnh` and the letters around them fall
@@ -144,6 +147,26 @@ model writes Don Quijote over the uncertain tiles (*don quiiote que el que*). Th
 cluster-hybrid, tiling) agree on the same two thirds and disagree on the same third. The limit is the sign shapes at
 this resolution, not the method.
 
+## Lasry's verso and the deduplicated recto (PR 85, merged 23 Oct 2026)
+
+PR 85 adds f122v to the CTTS project (transcription, positions, decryption, edits; one new sign, a plain π without
+dots = O, *no avía*), transcribes the two lines f122a and f122b both show once (from f122b; a box added for the C of
+*micer*), and extends `lasry2021/CONTRIBUTION.md` with the verso, its translation and notes.
+
+- `decode.py` no longer skips the head of f122b (the overlap is gone from the source): 1,364 symbols = recto 1,246
+  (1,225 letters, 2 nulls, 19 code and special signs) + verso 118 (117 letters, the code group `dif`/`def`); none
+  unassigned. `validation.tsv` regenerated; `docs/_validate.py --write`: reading -1.973 per letter, random keys
+  -5.993 (z 7.8), shuffled refit -3.436 (z 43.9), annealer -2.025: pass.
+- `reading.txt` and `no95_lasry_en.md` now carry his verso and its translation (from CONTRIBUTION.md). read_share,
+  measured as `research/reading_audit/v10_relabel.py` does: 0.915 (recto alone was 0.924), under 0.95: read in part.
+- His verso agrees with Brackx's except *no sé que diga* (Brackx *que siga*). Brackx's separate text entry is dropped
+  from `profile.json` `outcome.texts` (all his lines, recto 14-33 and verso, are covered by Lasry's); his files stay in
+  `texts/` and his credit stays, marked superseded.
+- **Spelling doubt, Alemaña vs Alemanna.** The leaf has *alemanna*: Lasry's own mechanical decryption
+  (`lasry2021/ctts/decryption/f122v.txt`, edits file l. 2) and Brackx both give double n. His edition prints
+  *Alemaña*, an editorial nn → ñ normalisation (the edition elsewhere keeps *daño* for the leaf's *danno* the same
+  way). Not changed; flagged for George whether the edition should keep the leaf's *Alemanna*.
+
 ## 23 Oct 2026: verification 3 (explicit-hole score)
 
 The v3 sweep scored Brackx's reading (entry 1) on `texts/no95_decryption_brackx.md`, header and line-numbered,
@@ -156,7 +179,7 @@ hole; plain 0.235 (1501 spelling). Keeps read.
 - five name code groups (dcl, dah, dal, dnl, boo; Name1-Name5 in Lasry's key), one occurrence each - blocker: no-key-material; no other letter in this key is known, context suggests persons but does not name them
 - tentative readings rey de romanos? (dif, x2), aunque? (oN), y? (9) - blocker: too-short; one or two occurrences each
 - *en al* in l. 20 - blocker: illegible; a burn hole according to Brackx, one image only
-- the clear date line and signature of f. 122v, read only as "… de enero …" - blocker: illegible; faded clear hand, not cipher
+- the year of the clear date line and the signature of f. 122v (Lasry reads *a viij de enero*, year not legible) - blocker: illegible; faded clear hand, not cipher
 
 ## Escalation
 
@@ -170,12 +193,14 @@ hole; plain 0.235 (1501 spelling). Keeps read.
 ## Next step
 
 Answered by PR 75 (22 Oct 2026): George's complete recto replaces his 2022 overlay as the reference and agrees with
-Brackx's corrections. Open for George: whether the verso (four cipher lines, Brackx's reading) should be added to his
-CTTS project; whether *en al* (l. 20) is a burn hole.
+Brackx's corrections. The verso question is answered by PR 85: George added f122v to his CTTS project and his
+reading supersedes Brackx's. Still open for George: whether *en al* (l. 20) is a burn hole; whether the edition keeps
+the leaf's *Alemanna* rather than *Alemaña*.
 
 ## Assumptions for George's review
 
 - Your 2026 recto (PR 75) is now the reference reading of the whole recto; the 2022 overlay and Brackx's proposals
   are kept as history. The outcome is recorded as your ciphertext-only key recovery (CTTS), not as a known key.
-- The verso stays Brackx's reading with your alphabet (issue #63).
+- ~~The verso stays Brackx's reading with your alphabet (issue #63).~~ Answered by PR 85: your verso is the
+  reference; Brackx's reading (issue #63) is kept as history with his credit.
 - None of the other letters of Espagnol 318 carries your credit.

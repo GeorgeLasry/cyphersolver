@@ -17,20 +17,20 @@
     "location": [
      "unrelated source"
     ],
-    "source": "George Lasry's own approximate decipherment of ll. 1-13 (2022, image on cryptiana GL.htm); Brackx's reading of the rest (issue #63); Lasry's complete recto (PR 75, 2026)"
+    "source": "George Lasry's own approximate decipherment of ll. 1-13 (2022, image on cryptiana GL.htm); Brackx's reading of the rest (issue #63); Lasry's complete reading (recto PR 75, verso PR 85, 2026)"
    },
    "length": {
-    "tokens": 1245,
-    "distinct": 57,
+    "tokens": 1364,
+    "distinct": 58,
     "unit": "symbols",
     "measured": true,
     "file": "decode.py"
    },
    "transcription": {
     "by": "human (project)",
-    "source": "George Lasry, CTTS transcription of the recto on three overlapping photographs f122a-c (lasry2021/ctts/transcription); the project's Sept segmentation (963 glyphs) and Brackx's eye reading are kept as history",
+    "source": "George Lasry, CTTS transcription of the recto on three overlapping photographs f122a-c and of the verso f122v (lasry2021/ctts/transcription); the project's Sept segmentation (963 glyphs) and Brackx's eye reading are kept as history",
     "image_quality": "fair",
-    "notes": "1,323 transcribed symbols, of which 78 are the last two lines of f122a photographed again at the top of f122b; 1,245 once counted. The two transcriptions of those lines differ in a few signs. Verso (four cipher lines) not in the CTTS project; read by Brackx."
+    "notes": "Lasry's CTTS transcription (PR 85): recto 1,246 symbols on three overlapping photographs, the two lines shared by f122a and f122b transcribed once from f122b (before PR 85: 1,323 with 78 repeated, 1,245 once counted); verso f122v 118 symbols; 1,364 in all."
    },
    "read": "read"
   }
@@ -175,7 +175,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "Merged PR 75. decode.py re-applies lasry2021/ctts/key.txt: 1,323 transcribed symbols, 78 of them the two lines repeated across f122a/f122b; 1,245 once counted (1,224 letters, 2 nulls, 19 code and special signs), none unassigned, as George counts. Statistical validation (es-golden-age): -1.960 against -6.156 random (z 8.5) and -3.514 shuffled refit (z 36.7): pass. f122c overlay compared with the decode.",
+   "what": "Merged PR 75. decode.py re-applies lasry2021/ctts/key.txt: 1,323 transcribed symbols, 78 of them the two lines repeated across f122a/f122b; 1,245 once counted (1,224 letters, 2 nulls, 19 code and special signs), none unassigned, as George counted then. After PR 85 (23 Oct 2026: overlap lines transcribed once from f122b, a box added for the C of micer, verso added) the recto is 1,246 (1,225 letters, 2 nulls, 19 code and special signs) and recto with verso 1,364. Statistical validation (es-golden-age): -1.960 against -6.156 random (z 8.5) and -3.514 shuffled refit (z 36.7): pass. f122c overlay compared with the decode.",
    "result": "worked"
   },
   {
@@ -203,45 +203,71 @@
   {
    "date": "2026-10-23",
    "kind": "control",
-   "technique": ["statistical test"],
+   "technique": [
+    "statistical test"
+   ],
    "what": "v3 verification: Brackx's ll. 14-33 + verso scored on the line-numbered file (0.44). Joined into texts/no95_brackx_reading.md: 0.765 explicit-hole, code groups as holes; plain 0.235 (period spelling). Keeps read.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 3 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "transcription",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Merged George Lasry's PR 85: the verso f122v (4 lines, 118 symbols) added to his CTTS project with transcription, decryption and edition; key revised (one new sign, plain pi without dots = O); the two lines shared by f122a and f122b now transcribed once, from f122b. decode.py no longer drops the head of f122b: 1,364 symbols (recto 1,246, verso 118), 1,342 letters, 2 nulls, 20 code and special signs, none unassigned. reading.txt and no95_lasry_en.md extended with his verso; it agrees with Brackx's verso except 'no se que diga' (Brackx 'que siga'). The leaf has 'alemanna' (Lasry's decryption f122v.txt, Brackx); his edition prints 'Alemaña', an editorial nn -> n-tilde, left as he has it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation re-run on recto and verso (docs/_validate.py): 1344 tokens, 45 types, es-golden-age order 4: reading -1.973 per letter; random keys -5.993 (z 7.8); key annealed onto shuffled ciphertext best -3.396 (mean -3.436, z 43.9); annealer on the real text -2.025. Verdict: pass.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "model": "es-golden-age",
    "file": "validation.tsv",
-   "tokens": 1226,
-   "types": 44,
-   "tokens_per_type": 27.86,
-   "score": -1.96,
+   "tokens": 1344,
+   "types": 45,
+   "tokens_per_type": 29.87,
+   "score": -1.973,
    "nulls": {
     "random keys": {
      "n": 200,
-     "mean": -6.156,
-     "sd": 0.492,
-     "max": -5.061,
-     "z": 8.5,
+     "mean": -5.993,
+     "sd": 0.519,
+     "max": -4.755,
+     "z": 7.8,
      "p": 0.005
     },
     "shuffled refit": {
      "n": 6,
-     "mean": -3.514,
-     "sd": 0.042,
-     "max": -3.462,
-     "z": 36.7,
+     "mean": -3.436,
+     "sd": 0.033,
+     "max": -3.396,
+     "z": 43.9,
      "p": 0.1429
     }
    },
-   "power": -2.095,
+   "power": -2.025,
    "verdict": "pass",
-   "notes": "claimed per-occurrence score -1.96; polyphony 0.0; 19 unread tokens left out; annealer on the real text from random keys reached -2.095"
+   "notes": "claimed per-occurrence score -1.973; polyphony 0.0; 20 unread tokens left out; annealer on the real text from random keys reached -2.025"
   },
   "method": "key recovered from ciphertext-only",
-  "method_basis": "George Lasry recovered the alphabet with CTTS's built-in cryptanalysis from the ciphertext alone (2021-22) and completed the recto with it in 2026 (PR 75); Brackx's verso reading uses the same alphabet. No clear copy or outside key.",
+  "method_basis": "George Lasry recovered the alphabet with CTTS's built-in cryptanalysis from the ciphertext alone (2021-22) and deciphered the whole leaf with it in 2026 (recto PR 75, verso PR 85); Brackx's earlier eye reading of ll. 14-33 and the verso used the same alphabet. No clear copy or outside key.",
   "contribution": [
    "transcription",
    "key extended or corrected",
@@ -251,7 +277,7 @@
   "class": "read in part",
   "fraction_read": 0.996,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode.py --counts: all 1,245 recto symbols carry a value; the five name codes Name1-Name5 are unidentified (1240/1245). Code readings ciudad, gente, rey, papa, cardenal rest on context; rey de romanos?, aunque?, y? tentative. The four verso lines (Brackx) are outside this count.",
+  "fraction_read_source": "decode.py --counts: all 1,364 symbols (recto 1,246, verso 118) carry a value; the five name codes Name1-Name5 are unidentified (1359/1364). Code readings ciudad, gente, rey, papa, cardenal rest on context; rey de romanos?, aunque?, y? tentative.",
   "key": "recovered",
   "gaps": [
    {
@@ -260,7 +286,7 @@
     "detail": "no other letter in this key is known; context suggests persons (the recipient's master, a commander) but does not name them"
    },
    {
-    "item": "tentative readings: rey de romanos? (dif, x2; supported by the verso's Alemanna), aunque? (oN), y? (9)",
+    "item": "tentative readings: rey de romanos? (dif, x2; supported by the verso's alemanna), aunque? (oN), y? (9)",
     "blocker": "too-short",
     "detail": "one or two occurrences each"
    },
@@ -270,9 +296,9 @@
     "detail": "a burn hole according to Brackx; one image only"
    },
    {
-    "item": "the clear date line and signature of f. 122v",
+    "item": "the year of the clear date line and the signature of f. 122v",
     "blocker": "illegible",
-    "detail": "faded clear hand, read only as '... de enero ...'; not cipher"
+    "detail": "faded clear hand; Lasry reads 'a viij de enero', year not legible; not cipher"
    }
   ],
   "grades": "unknown",
@@ -281,14 +307,14 @@
    "historical consistency",
    "statistical test"
   ],
-  "notes": "Spanish, from an Italian city with a Signoria (Genoa fits best, per Lasry; unproved), 8 Jan 1497: famine, the French bid for the city's people, the king's slowness, the cardinal of Santa Cruz to seek peace in France, an appeal for a force to defend the city. Lasry's 2026 recto supersedes the partial 2022 overlay and settles Brackx's proposed corrections; the verso is Brackx's.",
+  "notes": "Spanish, from an Italian city with a Signoria (Genoa fits best, per Lasry; unproved), 8 Jan 1497: famine, the French bid for the city's people, the king's slowness, the cardinal of Santa Cruz to seek peace in France, an appeal for a force to defend the city. Lasry's 2026 reading of recto and verso supersedes the partial 2022 overlay and Brackx's reading of ll. 14-33 and the verso, and settles Brackx's proposed corrections.",
   "credits": [
    {
     "who": "lasry",
     "role": "solution",
-    "note": "complete recto: CTTS transcription and key (2021-22), revised with Claude Opus 5.5 (2026), code groups read from context, edition and translation",
+    "note": "complete reading: CTTS transcription and key (2021-22), revised with Claude Opus 5.5 (2026), code groups read from context, edition and translation; recto PR 75, verso PR 85",
     "date": "2026-10-22",
-    "source": "https://github.com/dbourdeau/cyphersolver/pull/75",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/75; https://github.com/dbourdeau/cyphersolver/pull/85",
     "published": true
    },
    {
@@ -308,7 +334,7 @@
    {
     "who": "brackx",
     "role": "solution",
-    "note": "first reading of ll. 14-33 and the verso with Lasry's alphabet; values for Lasry's Unknown signs (with Claude Opus 5.5)",
+    "note": "first reading of ll. 14-33 and the verso with Lasry's alphabet; values for Lasry's Unknown signs (with Claude Opus 5.5). Superseded by Lasry's complete reading (PR 75 recto, PR 85 verso), which agrees with it except at four words; kept in texts/ as history",
     "date": "2026-10-21",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/63"
    },
@@ -341,34 +367,15 @@
   "texts": [
    {
     "doc": "no95",
-    "label": "George Lasry's reading (PR 75, 2026): BnF Espagnol 318 f. 122, 8 Jan 1497",
+    "label": "George Lasry's reading (PR 75 recto, PR 85 verso, 2026): BnF Espagnol 318 f. 122r-v, 8 Jan 1497",
     "transcription": "lasry2021/ctts/transcription/all.txt",
     "decryption": "reading.txt",
-    "summary": "Bread cannot be had even for money; the French court the city's silk workers with trade licences; the King provides 'muy tarde y muy poco'; the Pope wants the cardinal of Santa Cruz to seek peace in France.",
+    "summary": "Bread cannot be had even for money; the French court the city's silk workers with trade licences; the King provides 'muy tarde y muy poco'; the Pope wants the cardinal of Santa Cruz to seek peace in France; the King of the Romans has gone to Germany (verso).",
     "translation": "no95_lasry_en.md",
     "language": "es",
-    "read_share": 0.924,
+    "read_share": 0.915,
     "state": "read in part",
-    "note": "24 Oct 2026: 92.4% of the words of reading.txt read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
-   },
-   {
-    "doc": "no95",
-    "label": "Michael Brackx's reading (issue #63): ll. 14-33 and the verso",
-    "transcription": "lasry2021/ctts/transcription/all.txt",
-    "decryption": "texts/no95_decryption_brackx.md",
-    "summary": "Brackx's independent reading of ll. 14-33 and the verso, for comparison with Lasry's; it agrees except at 'rogaria a los que le ruegan' (NOTES).",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "v3 verification 23 Oct 2026: the sweep scored no95_decryption_brackx.md with its header and line-numbered, hyphen-split lines (0.44). Brackx's lines joined into running text in texts/no95_brackx_reading.md: 0.765 explicit-hole (13/17 sentences, hole rate 0.077) with every unread code group ([bnh], [def], [dal] ...) and burn hole counted as a hole; plain 0.235 (early-16th-c. Spanish spelling: gouiernan, escreuira, danno). Sentences hold."
-    },
-    "reading": "texts/no95_brackx_reading.md",
-    "state": "read in part",
-    "translation": "texts/no95_brackx_en.md",
-    "language": "es",
-    "read_share": 0.923,
-    "note": "24 Oct 2026: 92.3% of the words of texts/no95_brackx_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "note": "24 Oct 2026: 91.5% of the words of reading.txt (recto and verso) read as sense (v2_score explicit holes, v10_relabel.py measure); code groups read from context count as supplied words; under the 95% read bar, so read in part. Recto alone measured 92.4% before the verso was added."
    },
    {
     "doc": "no95",
