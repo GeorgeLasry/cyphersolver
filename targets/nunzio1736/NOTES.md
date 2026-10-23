@@ -2,6 +2,15 @@
 
 Status: in progress (was: read — found already solved (George Lasry, 2020); nomenclator recovered here)
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch b04; texts/423_b04_reread_log.md): **423/2 and 423/4-11 read** (grade B,
+texts/423-<n>_reading.md with English _en.md); 423/1 attempted, still decoded, not read. No contemporary text exists
+(26 DECODE images checked, no gloss; no edition), so the readings rest on the figures: the DECODE transcriptions
+re-segmented (research/reading_audit/b04_seg.py; Lasry's segmented file leaves out about a fifth of the tokens), 15
+unclear figures resolved on the images (texts/423_b04_corrections.tsv), and the key corrected: 25 = che, 30 = ta,
+69 = z, 93 = nel; 1234 = qual, 1205 = com, 1241 = tant, 1210 = esser (key_extra.txt had Ministr/Nunzi, che, molt,
+restar); about 65 more groups valued (texts/b04_key_additions.txt). fraction_read 0.016 -> 0.777 (5,725 of 7,366
+non-null tokens). Every reading aligned word by word with its decode (b04_align.py); supplied words bracketed.
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: 423/3 only (one
 sentence, one open group). **Decoded, not read**: the other ten letters: open nomenclator groups (about one per eight to
 ten words) and ??? runs stand in almost every sentence. 95.3% (text with a value) is withdrawn as a reading figure;
@@ -95,8 +104,10 @@ Málaga and Governor of the Council of Castile), 1236 (9x, a conjunction), and t
 
 ## Remaining gaps
 
-- ten letters decoded, not read (423/1-2, 423/4-11; 7,621 tokens) - blocker: not-attempted; value more nomenclator groups from context as in "What this session adds" (120 of 166 still open), normalise u/v and word division, build sentences and translate
-- 136 two-digit tokens marked "?" in Lasry's transcription - blocker: needs-physical-access; images behind the DECODE login, to be re-read on the scans
+- 423/1 (R26, 1,641 tokens) decoded, not read - blocker: not-attempted (workable); about a dozen runs of NiLan's 2017 transcription do not decode; re-transcribe the five R26 pages from the DECODE images (IMG_R26_I145-I149) and re-read texts/423-1_reading.md
+- about 60 nomenclator groups open, mostly seen once (date numerals, Molina's title 1513 a 1382, 1449, 1664, 1844 ...) - blocker: no-key-material; Lasry's key has no nomenclator and no other text in this code is known
+- 423/9 "[..] danno", 423/11 "le la mede [..] consaputi libri" and "ben [..]giata" - blocker: not-attempted on the images (checked in the decode only)
+- the minutes of these letters (Archivio della Nunziatura di Madrid) - blocker: needs-physical-access
 
 ## Content
 
@@ -116,12 +127,11 @@ Queen, and the nomination to cardinals' hats ("col maggior numero di cappelli").
 
 ## Escalation
 
-Added by the reading audit (22 Oct 2026), which relabelled the documents that do not build sentences as decoded,
-not read. None of these steps has been redone since; each is open for those documents.
+Added by the reading audit (22 Oct 2026); worked through in the re-read of 22 Oct 2026 (batch b04).
 
-- [ ] siblings: other letters of the same series or key, read or deciphered at the time
-- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
-- [ ] known-keys: other keys of the same correspondents tried
-- [ ] print: printed editions and calendars searched for these letters
-- [ ] key-rebuild: the key corrected against the documents that read
-- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images
+- [x] siblings: R179-R188 and R26 are the whole series; read together, the key corrected across all of them
+- [x] clear-pages: the 26 images checked; no decipherment, the margin writing is the facing leaf of clear letters
+- [x] known-keys: Lasry's "ASV - S423" is the only key; corrected (25, 30, 69, 93) and its nomenclator extended
+- [x] print: web search, no edition of the 1736 ciphers to Guiccioli; minutes in the Madrid nunciature archive, not online
+- [x] key-rebuild: four earlier nomenclator values replaced, about 65 groups valued from context (texts/b04_key_additions.txt)
+- [ ] retry: 423/2 and 423/4-11 re-read sentence by sentence and read; 423/1 still to re-transcribe from the images
