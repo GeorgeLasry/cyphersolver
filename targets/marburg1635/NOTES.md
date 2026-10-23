@@ -2,6 +2,12 @@
 
 Status: in progress (was: read, ≈97% of tokens; nine signs at the end of line 1 open)
 
+23 Oct 2026, re-reading (REREAD_BRIEF, batch b30): lines 1-7 re-examined. Record and image re-opened (no attachment);
+gloss of ll. 1-4 re-read on native crops and aligned with the decode; no label or key value changed. Partial reading
+`texts/R4500_l01-07_reading.md` ("... dagegen denselben etwas tentiert weren solte, zumahl nicht unbewandt, was und ob
+en gebührender manutenirung der [?Keiserm.] Mait. und [?des] Reich[s] ..."); ll. 1-3 do not build. Score 0.00 (0/5),
+explicit holes 0.20: stays decoded, not read; blocker illegible. Log `texts/R4500_l01-07_reread_log.md`.
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: cipher lines 8-14,
 the closing sentence (280 of 538 signs). **Decoded, not read**: lines 1-7 (258 signs): the decode of ll. 2-4 is
 garbled and the normalised reading fills it with bracketed conjecture; ll. 5-7 give a clause with slips. Split into
@@ -64,7 +70,7 @@ read; key recovered. After the line 9 correction of 30 Sept (below): 97.4% (538 
 line 2, three in line 7, one in line 10).
 
 ## Remaining gaps
-- cipher lines 1-7 decoded, not read (258 signs) - blocker: not-attempted; re-check ll. 2-7 sign by sign on the image and against the contemporary gloss of ll. 1-4, re-decode, build the sentence and translate (the end of line 1 stays illegible)
+- cipher lines 2-3 decoded, not read - blocker: illegible; re-read 23 Oct 2026 (b30, `texts/R4500_l01-07_reread_log.md`): the gloss is faded and cramped and departs from the signs at "insonderheit" and "observiren"; ll. 4-7 now build a clause (`texts/R4500_l01-07_reading.md`), score 0.00 / holes 0.20, so lines 1-7 stay decoded, not read
 
 - End of line 1 (~9 signs, `W 5 ? 1 7 0 4 5 6`) - blocker: illegible; cramped under the faded gloss on the only scan.
 - Line 7 "ueidiesen boni" - blocker: illegible; single signs blotted on the same scan. (Line 9 "serue st" was listed
@@ -77,6 +83,7 @@ line 2, three in line 7, one in line 10).
 - [x] print: no edition of HStAM 4 d Nr. 1218 found; DECODE has no transcription
 - [x] key-rebuild: homophonic anneal on de-1500s plus hand fixes; key recovered
 - [x] retry: lines 1-2 and the doubtful signs re-viewed at 3-4x zoom; still open
+- [x] retry (23 Oct 2026): gloss of ll. 1-4 re-read and aligned word by word; ll. 4-7 rebuilt as a clause; ll. 1-3 still open
 
 ## Corrections
 

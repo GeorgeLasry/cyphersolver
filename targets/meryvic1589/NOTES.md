@@ -1,6 +1,16 @@
 # Méry de Vic → Henri IV, 28 August 1589, BnF Dupuy 61 — Méry de Vic, f43r
 
-Status: in progress. Lasry's reading; only excerpts with holes in every sentence are in the repository (reading audit, 22 Oct 2026).
+Status: in progress. Lasry's reading; the f. 43r cipher block decoded here 23 Oct 2026 with his key table, still below the reading bar.
+
+**23 Oct 2026, re-reading (REREAD_BRIEF, batch b30)**: Gallica views 85-100 opened (IIIF, openapi.bnf.fr): the letter is
+ff. 40r-43r, all clear except one 16-line cipher block on f. 43r (view 95); no decipherment, gloss or clear copy nearby;
+no DECODE record. The block decoded sign by sign with Lasry's table (`texts/f43r_cipher_decode.tsv`): both of his
+excerpts reproduced; new: "qui a tousiours parle en … servit[e]ur de roy se change", "plusieurs qui soient ennemis de
+la [?ligue] changent, qui prenent [?le] pretexte de la religion", "Ie [?les] contiens ce que ie puis", "… servira
+beaucoup", "Et que les susdictz s'assemblent". The 13 Oct spot-check disagreement is two different passages, not an
+error by Lasry. Partial reading `texts/f43r_reading.md` (English `f43r_en.md`, log `f43r_reread_log.md`): with the clear
+text 0.667, the cipher passage alone 0.308 (holes-only 0.462): stays decoded, not read. 7 letters on look-alike
+alternates; ꝗ = g and Ӿ = le(s) are sense-only, flagged for review.
 
 **22 Oct 2026, reading audit** (George Lasry's test): both excerpts in lasry_entry.md have holes in every sentence and the report says "Partly deciphered": *decoded, not read* (excerpt only). Class already solved -> not read, method -> not solved; Lasry's ciphertext-only key recovery is recorded in method_basis; fraction_read 0.96 -> 0.
 
@@ -84,13 +94,13 @@ One excerpt line disagrees with the manuscript. Lasry gives "s'est déclaré com
 
 ## Remaining gaps
 
-- Lasry's full decipherment, not in the repository - blocker: not-attempted; ask George Lasry for his transcription and decryption files (report: 6/6 pages transcribed, partly deciphered)
+- f. 43r cipher: ~12 unread groups and 4 unidentified signs ([P], [A], [ʃ], [7]) - blocker: no-key-material; no value in Lasry's table (20 unidentified types); his own decryption file may close some (ask him). Decoded here 23 Oct 2026 (texts/f43r_cipher_decode.tsv).
 
 ## Escalation
 
 - [x] siblings: not this project's reading; George Lasry's report covers the volume
-- [n/a] clear-pages: not looked for here; the result is Lasry's
+- [x] clear-pages: ff. 40r-43v and neighbours opened 23 Oct 2026; the letter is clear apart from the f. 43r block; no decipherment
 - [x] known-keys: Lasry's key is the key; his key table is not in the repository
 - [x] print: Lasry's report (BnF cipher research, 10 Oct 2026) is the source
 - [n/a] key-rebuild: not this project's work
-- [ ] retry: ask Lasry for his full transcription and decryption
+- [x] retry: f. 43r block decoded sign by sign with Lasry's table (23 Oct 2026); next: ask Lasry for his decryption file

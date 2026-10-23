@@ -13,11 +13,8 @@
    "language": "French",
    "cleartext_in_document": "unknown",
    "plaintext": {
-    "location": [
-     "interlinear",
-     "separate collection"
-    ],
-    "source": "contemporary interlinear decipherment; clear summary in the register BnF fr. 3983 f. 140r (Brice Dudout, unverified here)"
+    "location": ["separate folio"],
+    "source": "contemporary decipherment, BnF fr. 3985 no. 4 (f. 7), in the same volume; clear summary reported in the register BnF fr. 3983 f. 140r (Brice Dudout, not checked here)"
    },
    "length": {
     "tokens": "unknown",
@@ -25,8 +22,10 @@
     "measured": false
    },
    "transcription": {
-    "by": "published",
-    "notes": "not transcribed here"
+    "by": "llm from images",
+    "notes": "f. 20 is written in a disguised cursive with code numbers; not decoded sign by sign.",
+    "image_quality": "good",
+    "source": "the decipherment f. 7 transcribed line by line from the Gallica IIIF image (texts/f7_decipherment.txt); the cipher f. 20 not transcribed"
    }
   }
  ],
@@ -91,19 +90,41 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): no text or link for fr. 3985 f. 20 is in the repository. Relabelled decoded, not read; class already solved -> not read; method read from existing decipherment -> not solved, until the interlinear decipherment is transcribed.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "Gallica btv1b90606498 fetched through openapi.bnf.fr IIIF (views 5-52; 15, 41, 42 at full size; no 403). The volume's inventory (manifest Description) places the cipher letter at no. 7 = f. 20 (view 41) and its contemporary decipherment at no. 4 = f. 7 (view 15); views 6-13 are other items and f. 20 has no interlinear decipherment. f. 7 transcribed line by line (texts/f7_decipherment.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "Decipherment checked against the cipher letter f. 20 at its clear-written anchor words (l. 1 'bien amples ... sçauez', l. 2 'par lesquelles vous iugerez', l. 4 'darrest pretende ... Mais', subscription); no sign-by-sign decode (no key in the repository). Date differs (f. 7 iii, f. 20 4 August).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching"],
+   "what": "Reading written from the decipherment (texts/fr3985f20_reading.md, fr3985f20_en.md, log f7_reread_log.md); no word supplied; 8 doubtful words, ~14 short holes. b17_score.py (fr) on the body: 0.673 (37/55), explicit holes 0.909 (50/55); before: no text. Set read, grade B; class not read -> already solved; method -> read from existing decipherment; fraction_read 1.0.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Read at the time (interlinear decipherments and a clear summary in the 1593 register fr. 3983 f. 140r, reported by Brice Dudout), but none of it is transcribed in the repository, so no reading is claimed (reading audit, 22 Oct 2026). Once transcribed the method is read from existing decipherment.",
+  "method": "read from existing decipherment",
+  "method_basis": "The contemporary decipherment, a separate leaf bound in the same volume (BnF fr. 3985 no. 4, f. 7), transcribed here 23 Oct 2026 and checked against the cipher letter (no. 7, f. 20) at its anchor words.",
   "contribution": [
-   "catalogue correction"
+   "catalogue correction",
+   "transcription"
   ],
-  "class": "not read",
+  "class": "already solved",
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Status: no write-up. Not checked on the images here. 22 Oct 2026, reading audit: nothing of the letter is transcribed here; decoded, not read; class already solved -> not read, method -> not solved until it is.",
+  "notes": "Status: no write-up. 23 Oct 2026 (b30): read from the contemporary decipherment f. 7 (no. 4 of the volume), transcribed from the Gallica IIIF image; the 22 Oct pointer to an interlinear decipherment on views 6-13 was wrong (the cipher letter is view 41, the decipherment view 15). Class not read -> already solved, method -> read from existing decipherment.",
   "credits": [
    {
     "who": "dudout",
@@ -120,19 +141,41 @@
   "texts": [
    {
     "doc": "fr3985f20",
-    "label": "BnF fr. 3985 no. 7 (f. 20), Dr Mauclerc to Creil, 1593",
-    "summary": "A papal-side letter of Dr Mauclerc to Creil, 1593, one of three Mauclerc letters (fr. 3983 f. 268, fr. 3984 f. 33, fr. 3985 f. 20) that carry contemporary interlinear decipherments; the royal office's register fr. 3983 f. 140r summarises them in clear (Brice Dudout, 19 Oct 2026).",
+    "label": "BnF fr. 3985 no. 7 (f. 20), Dr Mauclerc to Creil, Paris 3-4 Aug 1593; decipherment no. 4 (f. 7)",
+    "summary": "Mauclerc reports from League Paris: the Spaniards' offer to marry the Infanta to the Duke of Guise and name them king and queen jointly; Mayenne's show of welcome and then his impossible conditions ('il ne vouloit alium esse Regem Galliae'); the election turned into a truce, to the dishonour of the Estates General; Mayenne, Guise and the princes sworn before the Legate never to make peace with Navarre; the Spaniards' hope that the Pope will keep his promise to the Duke of Sessa and shut the door on Navarre's envoy as on Cardinal Gondi; 'dans trois mois creabitur Rex vel etiam invito du Mayne'. Deciphered at the time: the decipherment is a separate leaf in the same volume (no. 4, f. 7, Gallica view 15).",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "No text and no link in the repository: the interlinear decipherment is on the Gallica images (btv1b90606498, views 6-13), never transcribed (reading audit, 22 Oct 2026); fix: fetch them through the Gallica IIIF (openapi.bnf.fr) and transcribe the interlinear text."
+    "state": "read",
+    "transcription": ["texts/f7_decipherment.txt"],
+    "decryption": "texts/fr3985f20_reading.md",
+    "reading": "texts/fr3985f20_reading.md",
+    "translation": "texts/fr3985f20_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Read 23 Oct 2026 (b30): the volume's own inventory (Gallica manifest) shows the cipher letter is no. 7, f. 20 (view 41), and its decipherment a separate leaf, no. 4, f. 7 (view 15; 'Deschiffrement de la lectre du docteur Mauclerc'); there is no interlinear decipherment and views 6-13 are other items. f. 7 transcribed for the first time from the full-size IIIF image; checked against the cipher's clear-written anchor words only (no key in the repository). No word supplied; 8 doubtful words [?] and about 14 short holes [...] in a difficult secretary hand. Body 0.673 clean sentences (37/55), explicit holes 0.909 (50/55); unclean sentences are mostly the Latin passages."
+    }
    }
   ],
   "gaps": [
    {
-    "item": "fr. 3985 f. 20: the interlinear decipherment, not transcribed",
+    "item": "fr. 3985 f. 7: about 14 short holes and l. 24-25 in the decipherer's hand",
+    "blocker": "illegible",
+    "detail": "difficult secretary cursive; the cipher f. 20 could supply them once its alphabet is set out"
+   },
+   {
+    "item": "fr. 3985 f. 20 not decoded sign by sign",
     "blocker": "not-attempted",
-    "detail": "Gallica btv1b90606498 views 6-13, reachable through the IIIF at openapi.bnf.fr (scripted downloads from gallica.bnf.fr were refused on 20 Oct 2026); also fr. 3983 f. 140r, the register summary"
+    "detail": "not needed for the reading; no key in the repository"
+   },
+   {
+    "item": "siblings fr. 3983 f. 268, fr. 3984 f. 33 and the register fr. 3983 f. 140r",
+    "blocker": "not-attempted",
+    "detail": "not in this target's texts; not opened"
    }
-  ]
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "23 Oct 2026 (b30): the one document, fr. 3985 no. 7, reads (texts/fr3985f20_reading.md, from the contemporary decipherment f. 7); tokens of documents that read / all = 1.0."
  }
 }

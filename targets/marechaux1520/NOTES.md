@@ -1,6 +1,15 @@
 # "French marshals to the King", BnF fr. 3081 f. 41 (DECODE R2322): Cardinal Campeggio's conclave articles, c. 1534 — NOTES
 
-Status: in progress. f. 41v read here; f. 41r is Lasry's reading on overlay images, not transcribed (reading audit, 22 Oct 2026).
+Status: in progress. f. 41v read here; f. 41r read from Lasry's overlay decipherment, transcribed 23 Oct 2026 (b30); write-up pages not yet updated.
+
+**23 Oct 2026, re-reading (REREAD_BRIEF, batch b30)**: f. 41r now reads. Lasry's three overlay crops transcribed letter
+by letter (`texts/f41r_lasry_overlay.txt`, 1,165 letters, 4 heading + 31 body lines, no gap between the crops); the
+figures checked on the native P1 image at seven places (`texts/f41r_corrections.tsv`): l. 7 "DAR" is the Rg sign (P),
+"par armes"; l. 22 "pacificque" (the overlay's S is the C sign); l. 28 "si esplore" (two signs ʃ κ = S I); l. 1 the
+figures give the Rc look-alike (D) where the sense needs "par", kept [?par] (1 letter on a look-alike alternate).
+Reading `texts/f41r_reading.md`, English `f41r_en.md`, log `f41r_reread_log.md`. Score 0.429 (9/21), explicit holes
+1.00: the unclean sentences are 1534 spellings only. The f. 41r text ends "du roi tres cre-", so the "[chre]stien" at
+the head of f. 41v is carried. Class read in part -> read; fraction_read 0.5 (estimated) -> 0.999 (measured).
 
 **22 Oct 2026, reading audit** (George Lasry's test): texts/f41v_decryption.md reads. f. 41r's entry points only to Lasry's overlay images on cryptiana, with no text in the repository: *decoded, not read* (excerpt only). Class read -> read in part; fraction_read 0.998 (f. 41v alone) -> about 0.5 of the leaf (estimated).
 
@@ -81,7 +90,8 @@ given a value; with the M-graded 'flame' and code counted as unread, 99.8%.
 - l. 19 sign 4 of "fla?e" - blocker: no-key-material; sign absent from Lasry's table, "flame" from context only (M).
 - l. 30 the code cluster (Lasry's Unknown 2) before "et ses successeurs" - blocker: open-codes; the Emperor from context (M).
 - The rest of the articles after f. 41v - blocker: needs-physical-access; fr. 3081 unseen beyond ff. 41-42, the text breaks off, f. 42 blank.
-- f. 41r: Lasry's reading, on overlay images only - blocker: not-attempted; transcribe his three overlay crops (main checkout prior/, git-ignored; cryptiana GL.htm) and join them to the f. 41v running text
+- ~~f. 41r: Lasry's reading, on overlay images only~~ closed 23 Oct 2026: transcribed and checked (texts/f41r_reading.md).
+- f. 41r l. 1 [?par]: the figures give the Rc look-alike (D) - blocker: illegible (one letter; the copy's own slip).
 
 ## Escalation
 
@@ -91,4 +101,5 @@ given a value; with the M-graded 'flame' and code counted as unread, 99.8%.
 - [x] print: Tomokiyo francis.htm and Lasry GL.htm read; no printed reading of f. 41v found. Du Bellay correspondence and Pastor not searched.
 - [x] key-rebuild: four signs re-valued from repeated words (Y, P, R, S).
 - [x] retry: second pass on every doubtful place, regraded H/C/M/I (above).
+- [x] retry (23 Oct 2026): f. 41r overlay letters checked on the native image at seven places; two overlay letters corrected, one look-alike left as [?par].
 - Next: find fr. 3081 on Gallica for ff. 40 and 43; check the 1534 conclave in Pastor for Campeggio's articles.

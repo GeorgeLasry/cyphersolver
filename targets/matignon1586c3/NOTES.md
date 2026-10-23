@@ -2,6 +2,15 @@
 
 Status: in progress. f. 276 and f. 179 read; fr. 15573 ff. 379-381 decoded, not read (reading audit, 22 Oct 2026).
 
+**23 Oct 2026, re-reading (REREAD_BRIEF, batch b30)**: fr. 15573 ff. 379-381 still decoded, not read. No contemporary
+decipherment, print or DECODE record; views 740-745 fetched at full size (IIIF), f. 379r ll. 1-3 compared with
+Burford's sign names (no change). His decode divided, punctuated and translated as a partial reading
+(`f379_381/ff379-381_reading.md`, `ff379-381_en.md`, log `ff379-381_reread_log.md`), every departure from the key's
+letters bracketed (54 [?word]s): "... il n'y a rien qui incomode tant c[e] pays que [?les] places qui sont sur la
+[?riuiere] de Garone entre Tolouse [?et] [?Bourdeaulx]"; new: "veu la saison qui est proche de l'iuer", "president
+[?Brulart]", "baillant trois cents escus a vostre seur". Score 0.299 (20/67), holes-only 0.433: f. 379r and the end
+build sentences, ff. 379v-380v mostly do not.
+
 **22 Oct 2026, reading audit** (George Lasry's test): f. 276 and f. 179 read from SOLUTION.md. fr. 15573 ff. 379-381 (Burford v0.5) is an unpunctuated machine decode with a garbled word in nearly every sentence and no translation: *decoded, not read*. fraction_read 0.9118 -> 0.305 (signs in the two slips that read).
 
 Split on 14 Oct 2026 from `matignon1586` under the one-key rule (George Lasry, 14 Oct 2026). That entry (catalogue
@@ -81,14 +90,14 @@ two-stroke # = i, the C with ε inside = q.
 
 ## Remaining gaps
 
-- fr. 15573 ff. 379-381: five rare code signs (circle on a cross, looped epsilon with a stroke, zigzag-tailed 3, m with a z-like tail, the barred double o where it is not *le roy de Navarre*) - blocker: open-codes; one to three occurrences each, in none of the deciphered Cipher-3 letters Burford checked (ff. 189-190, 277-280, 282, fr. 15573 f. 373, fr. 15570 ff. 271-273)
-- fr. 15573 ff. 379-381: about 300 signs outside sense runs, of which 5 short runs of clear signs not read - blocker: open-codes; mostly names, period spellings and reader errors (0.93-0.96 per sign on known text); his list explains 110 of 115 items; no sign-by-sign human check yet
+- fr. 15573 ff. 379-381: five rare code signs (circle on a cross, looped epsilon with a stroke, zigzag-tailed 3, m with a z-like tail, the barred double o where it is not *le roy de Navarre*) - blocker: no-key-material; one to three occurrences each, in none of the deciphered Cipher-3 letters Burford checked (ff. 189-190, 277-280, 282, fr. 15573 f. 373, fr. 15570 ff. 271-273)
+- fr. 15573 ff. 379-381: about 300 signs outside sense runs, of which 5 short runs of clear signs not read - blocker: no-key-material; mostly names, period spellings and reader errors (0.93-0.96 per sign on known text); his list explains 110 of 115 items; no sign-by-sign human check yet
 
-- f. 276 L18 'K' and L14 'C with o inside', one-sign code words not in Tomokiyo's table - blocker: open-codes; each occurs once and neither recurs on these two leaves; the deciphered Cipher-3 siblings f. 189/190, f. 282 and fr. 15570 ff. 271-273 have not been searched for them
-- f. 179 L13, the omega-with-overbar code sign (a person, Navarre?) - blocker: open-codes; one occurrence, Tomokiyo's 680-px magenta does not settle it
+- f. 276 L18 'K' and L14 'C with o inside', one-sign code words not in Tomokiyo's table - blocker: no-key-material; each occurs once and neither recurs on these two leaves; the deciphered Cipher-3 siblings f. 189/190, f. 282 and fr. 15570 ff. 271-273 have not been searched for them
+- f. 179 L13, the omega-with-overbar code sign (a person, Navarre?) - blocker: no-key-material; one occurrence, Tomokiyo's 680-px magenta does not settle it
 - blots: f. 276 L04 after "de lui", f. 179 L18 after "en" - blocker: illegible; ink blots, checked on the Gallica natives
 - f. 276 L22 closing and f. 179 L20 "de la D[…]use", a struck sign and a few short spans - blocker: illegible; faint or struck signs at the edge of the slip; the other unread signs are words the period lexicon holds fewer than 20 times (prieure, escriuent)
-- fr. 15573 ff. 379-381: decoded, not read - blocker: not-attempted; repair the sentences on the Gallica images (btv1b90618780 views 740-745), punctuate and translate
+- fr. 15573 ff. 379-381: decoded, not read; partial reading built and translated 23 Oct 2026 (0.30) - blocker: not-attempted; a full sign-by-sign re-read of the about 75 doubtful words on views 740-745 (damaged spans: illegible; code signs: no-key-material)
 
 ## Escalation
 
@@ -98,6 +107,7 @@ two-stroke # = i, the C with ε inside = q.
 - [x] print: no printed decipherment of any leaf; Tomokiyo's openings of f. 276 and fr. 15573 f. 379r match; Burford searched GitHub, Tomokiyo's pages, Cryptoole and the web (PRIOR-ART.md); Monaco Palace archives J 41 (Matignon's minutes) not screened
 - [x] key-rebuild: ### = et, the split columns, the C-family signs and the other additions found on the leaves (f276/SOLUTION.md)
 - [x] retry: ff. 379-381 five voted passes and image rounds (Burford v0.2-v0.5); two independent reads of each slip, then a second (f. 276) and third (f. 179) image pass on every disagreeing span
+- [x] retry (23 Oct 2026): ff. 379-381 decode divided, punctuated, translated with departures bracketed; f. 379r ll. 1-3 compared on the full-size image
 
 ## Assumptions for George's review
 

@@ -230,6 +230,20 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): f. 276 and f. 179 read from SOLUTION.md (A); fr. 15573 ff. 379-381 (Burford v0.5) has a garbled word in nearly every sentence and no translation (C confirmed). Relabelled decoded, not read; class read in part kept; fraction_read 0.9118 -> 0.305.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "fr. 15573 ff. 379-381: Gallica btv1b90618780 views 740-745 fetched at full size (openapi.bnf.fr IIIF); f. 379r ll. 1-3 compared with Burford's sign names (no label changed). No contemporary decipherment, print or DECODE record; no other copy of the Cipher-3 key found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["manual reconstruction", "contextual inference"],
+   "what": "fr. 15573 ff. 379-381: Burford's literal decode divided and punctuated into a partial reading with every departure bracketed (54 [?word]s; new: 'veu la saison qui est proche de l'iuer', 'president [?Brulart]', 'baillant trois cents escus a vostre seur'), English added. b17_score.py (fr): 0.299 (20/67), explicit holes 0.433; Burford's unpunctuated normalised text scores 0.55 only because code word-breaks cut garble into short words. Kept decoded, not read.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -274,12 +288,12 @@
   "gaps": [
    {
     "item": "f. 276 L18 'K' and L14 'C with o inside', one-sign code words not in Tomokiyo's table",
-    "blocker": "open-codes",
+    "blocker": "no-key-material",
     "detail": "Each occurs once (paix? Ligue? Royne? for K); neither recurs on these two leaves; the deciphered Cipher-3 siblings f. 189/190, f. 282 and fr. 15570 ff. 271-273 have not been searched for them."
    },
    {
     "item": "f. 179 L13, the omega-with-overbar code sign (a person, Navarre?)",
-    "blocker": "open-codes",
+    "blocker": "no-key-material",
     "detail": "One occurrence; Tomokiyo's magenta at 680 px does not settle it."
    },
    {
@@ -293,19 +307,19 @@
     "detail": "Faint or struck signs at the edge of the slip; the rest of the 28 + 36 unread signs are words the period lexicon holds fewer than 20 times (prieure, escriuent)."
    },
    {
-    "item": "fr. 15573 ff. 379-381: five rare code signs (barred double o where not le roy de Navarre, the circle on a cross, the looped epsilon with a stroke, the zigzag-tailed 3, the m with a z-like tail)",
-    "blocker": "open-codes",
-    "detail": "Each occurs once to three times and in none of the deciphered Cipher-3 letters Burford checked (fr. 15572 ff. 189-190, 277-280, 282; fr. 15573 f. 373; fr. 15570 ff. 271-273)."
+    "item": "fr. 15573 ff. 379-381: about 25 damaged spans (blots, gutter, bleed-through)",
+    "blocker": "illegible",
+    "detail": "Burford's 'damaged' items (burford/unresolved-v0.5.md); checked on the Gallica natives"
    },
    {
-    "item": "fr. 15573 ff. 379-381: about 300 signs outside sense runs (5 short runs of clear signs Burford could not read, doubtful words, smudged signs)",
-    "blocker": "open-codes",
-    "detail": "Mostly names, period spellings and reader errors (0.93-0.96 per sign on known text); Burford's v0.5 list (f379_381/burford/unresolved-v0.5.md) explains 110 of 115 items; the 5 unexplained runs are clear on the image and may be names or code. A sign-by-sign human check has not been made."
+    "item": "fr. 15573 ff. 379-381: nine code signs (circle on a cross, looped epsilon with a stroke, zigzag-tailed 3, m with a z-tail, small 8, barred double o where not le roy de Navarre)",
+    "blocker": "no-key-material",
+    "detail": "in none of the deciphered Cipher-3 letters (fr. 15572 ff. 189-190, 277-280, 282; fr. 15573 f. 373; fr. 15570 ff. 271-273)"
    },
    {
-    "item": "fr. 15573 ff. 379-381: decoded, not read",
+    "item": "fr. 15573 ff. 379-381: decoded, not read (about 75 doubtful words where the signs are clear but give no word under the key)",
     "blocker": "not-attempted",
-    "detail": "machine decode with a garbled word in most sentences; repair on the Gallica images (btv1b90618780 views 740-745), punctuate and translate"
+    "detail": "partial reading built 23 Oct 2026 (f379_381/ff379-381_reading.md, 0.30 / holes 0.43); a full sign-by-sign human re-read of views 740-745 is the next step (only f. 379r ll. 1-3 compared)"
    }
   ],
   "grades": "unknown",
@@ -384,6 +398,7 @@
      "f379_381/burford/f381v/signs.txt"
     ],
     "decryption": [
+     "f379_381/ff379-381_reading.md",
      "f379_381/burford/ff379-381-french.md",
      "f379_381/read_all.txt",
      "f379_381/burford/f379r/plaintext-by-line.txt",
@@ -397,7 +412,7 @@
     "summary": "A six-page despatch wholly in cipher, addressed to the King and probably from Matignon: a military report on the Guyenne campaign, the river trade on the Garonne between Toulouse and Bordeaux from which the Huguenots draw dues, Caumont and the Mas de Verdun, Castillon, the Isle and the Dordogne, the King of Navarre, 'your sister' at Agen, the artillery from Navarrenx, Marmande and fifteen to sixteen thousand crowns. Read by Brett Burford (v0.5, 19 Oct 2026); his files are copied with his licence.",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "A word-divided but unpunctuated machine decode (~1,139 words, 87 bracketed non-words; the file estimates one sign in twenty wrong): stretches build (the Garonne places, the artillery of Navarre), but nearly every sentence has a garbled word, and there is no translation (reading audit, 22 Oct 2026); fix: repair the sentences on the images (views 740-745), punctuate, and translate."
+    "note": "Re-read 23 Oct 2026 (b30), still decoded, not read: no contemporary decipherment or printed text exists (Tomokiyo: undeciphered; no DECODE record); views 740-745 fetched at full size. Burford's v0.5 decode divided, punctuated and translated as a partial reading (f379_381/ff379-381_reading.md, ff379-381_en.md, log ff379-381_reread_log.md, base ff379-381_alignment.tsv), every departure from the key's letters bracketed (54 [?word]s). Score 0.299 (20/67), explicit holes 0.433 (29/67): f. 379r and the end (Navarre's forces, Duras in Spain) build sentences, ff. 379v-380v mostly do not. Blockers: illegible (about 25 damaged spans), no-key-material (nine code signs), not-attempted (a full sign-by-sign re-read of the about 75 doubtful words)."
    }
   ],
   "key_file": [

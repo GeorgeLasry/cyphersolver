@@ -159,7 +159,9 @@
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 524 tokens, 21 types, de-1640s order 4: reading -2.212 per letter; random keys -5.481 (z 5.6); key annealed onto shuffled ciphertext best -3.479 (mean -3.55, z 31.6); annealer on the real text -2.179. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher_tokens.txt and the sign-by-sign reading_tokens.txt; the normalised reading and the key table copied from NOTES.md to texts/R4500_decryption.md and texts/key.md.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_tokens.txt and the normalised reading read through. Lines 8-14 build one clean German sentence (kept read, reviewed B); lines 1-7 are garbled or conjecture in brackets and were split into a second entry, decoded, not read. Class read -> read in part; fraction_read 0.974 (signs with a value) -> 0.52.", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading_tokens.txt and the normalised reading read through. Lines 8-14 build one clean German sentence (kept read, reviewed B); lines 1-7 are garbled or conjecture in brackets and were split into a second entry, decoded, not read. Class read -> read in part; fraction_read 0.974 (signs with a value) -> 0.52.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["plaintext matching"], "what": "Lines 1-7: DECODE R4500 record and image re-opened (no attachment, no DOC text); the contemporary gloss of ll. 1-4 re-read at 2x on native crops and aligned with reading_tokens.txt: matches at 'dieses orts halber', 'dagegen denselben', 'etwas tentiert werden solte', 'zumahl nicht unbewandt'; not at 'insonderheit' (l. 2) or 'observiren' (l. 3). No label or key value changed.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction"], "what": "Partial reading of cipher lines 1-7 written (texts/R4500_l01-07_reading.md, log R4500_l01-07_reread_log.md), aligned word by word with the decode; ll. 4-7 build a clause ('gebührender manutenirung der Keiserm. Mait. und des Reichs'), ll. 1-3 do not. b17_score.py (de): 0.00 (0/5), explicit holes 0.20 (1/5). Kept decoded, not read; blocker illegible.", "result": "failed"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 524, "types": 21, "tokens_per_type": 24.95, "score": -2.212, "nulls": {"random keys": {"n": 200, "mean": -5.481, "sd": 0.58, "max": -4.351, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.55, "sd": 0.042, "max": -3.479, "z": 31.6, "p": 0.1429}}, "power": -2.179, "verdict": "pass", "notes": "claimed per-occurrence score -2.204; polyphony 0.002; 14 unread tokens left out; annealer on the real text from random keys reached -2.179"}, 
   "method": "key recovered from ciphertext-only",
@@ -181,6 +183,11 @@
     "item": "single signs in line 7",
     "blocker": "illegible",
     "detail": "blotted"
+   },
+   {
+    "item": "cipher lines 2-3 (decoded, not read)",
+    "blocker": "illegible",
+    "detail": "the contemporary gloss, the only control, is faded and cramped and does not align with the signs at insonderheit/observiren; re-read 23 Oct 2026"
    }
   ],
   "notes": "Report to Hesse-Kassel from a fortress: its needs ('die notturft dieser Vestung') set out to the Emperor and the Elector of Bavaria; writer asks to be held excused.",
@@ -206,11 +213,11 @@
     "transcription": "cipher_tokens.txt",
     "decryption": [
      "reading_tokens.txt",
-     "texts/R4500_decryption.md"
+     "texts/R4500_l01-07_reading.md"
     ],
     "language": "de",
     "state": "decoded, not read",
-    "note": "258 of 538 signs: the end of line 1 is unread (cramped under the gloss) and the decode of ll. 2-4 is garbled ('ennoc hnu rb eit ihr endss halUerd'); the normalised reading of these lines is conjecture in brackets ([die Landtschaft ...], [unleserlich], [ungelegen]); ll. 5-7 build only a clause with slips"
+    "note": "Re-read 23 Oct 2026 (b30), still decoded, not read: the one DECODE image and the record re-opened (no attachment or decipherment), the volume's 126 records already searched for a key or clear copy (none); the interlinear gloss of ll. 1-4 re-read on native crops: it matches the signs at 'dieses orts halber', 'dagegen denselben', 'etwas tentiert werden solte', 'zumahl nicht unbewandt' but not at 'insonderheit' or 'observiren', and is faded and cramped. Partial reading texts/R4500_l01-07_reading.md (ll. 4-7 build a clause; ll. 1-3 do not): 0.00 clean sentences (0/5), explicit holes 0.20. Blocker: illegible (end of l. 1, l. 7 blots, the l. 2-3 gloss on the only scan)."
    }
   ],
   "key_file": "texts/key.md"
