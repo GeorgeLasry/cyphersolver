@@ -156,6 +156,19 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "PARES (AGS PTR 53/69, record 2207988) re-fetch attempted (research/reading_audit/b27_pares_fetch.py, curl): HTTP 429 Too Many Requests on every request, the site root included. No other reproduction online; DECODE has no record.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Copy X recto ll. 12-13, 16-46 and verso ll. 1-10 converted from reading_X.md to running text with code values (texts/PTR53-69_partial_reading.md; log texts/PTR53-69_reread_log.md); nothing added. Scored (b17_score.py, es): 0.128 clean (6/47). Kept decoded, not read.",
+   "result": "partial",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {
@@ -169,7 +182,7 @@
   "class": "read in part",
   "fraction_read": 0.23,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Counted in lines of copy X (tokens per line not measured): 13 of its 57 lines (recto 1-11, 14-15) read; the rest is decoded, not read. About 0.23, estimated. The earlier 0.5 (share of cipher tokens with a value, estimated) is withdrawn as a reading figure.",
+  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Counted in lines of copy X (tokens per line not measured): 13 of its 57 lines (recto 1-11, 14-15) read; the rest is decoded, not read. About 0.23, estimated. The earlier 0.5 (share of cipher tokens with a value, estimated) is withdrawn as a reading figure. 23 Oct 2026 (b27): unchanged; the unread part (texts/PTR53-69_partial_reading.md) scores 0.128 clean and PARES could not be re-read (HTTP 429).",
   "grades": "unknown",
   "verification": [
    "key confirms",
@@ -235,7 +248,8 @@
     "decryption": "reading_X.md",
     "language": "es",
     "state": "decoded, not read",
-    "note": "Most lines are mostly [..] (letter-sign runs unread at PARES resolution), leaving code words and half-phrases; only the request for two thousand English foot can be made out (reading audit, 22 Oct 2026)."
+    "note": "Re-read 23 Oct 2026 (b27): no decipherment, copy or edition (the 3 Oct clear letter on PTR 53/72 only summarises it); the key (Galende's Cifra general) is complete, so the holes are unread signs. PARES answered HTTP 429 to every request on 23 Oct, so the images could not be re-read; on 22 Sept its maximum was 997 x 1396 px, where a sign is 8-10 px high. The unread lines converted to running text (texts/PTR53-69_partial_reading.md): 0.128 clean (6/47). Blocker: illegible at the only available resolution; better photographs of the three copies X, Y, Z need a request to AGS Simancas (needs-physical-access).",
+    "reading": "texts/PTR53-69_partial_reading.md"
    }
   ]
  }

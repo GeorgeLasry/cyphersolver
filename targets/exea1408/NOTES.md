@@ -2,6 +2,7 @@
 
 Status: found already read (Puig y Puig 1920); the cipher itself is not imaged and its key is not known.
 **22 Oct 2026, reading audit:** nothing of the letter is in the repository (the Google Books link is blocked to scripts), so the entry is *decoded, not read* in profile.json; class already solved is kept because the text is in print (Puig 1920).
+**23 Oct 2026, re-read (b27):** the Google Books `jscmd=click3` endpoint still serves signed page images of Puig 1920, so his text (pp. 500-503; ACB "Documentos inéditos del obispo Çapera" no. 133) is now transcribed as printed, italics marking his decipherment (the whole letter after the opening formula, 2,339 words): [`texts/exea1408_reading.md`](texts/exea1408_reading.md), English [`texts/exea1408_en.md`](texts/exea1408_en.md), log [`texts/exea1408_reread_log.md`](texts/exea1408_reread_log.md). Scored 0.376 plain, 1.0 explicit holes (the classical Latin word list does not know the medieval spellings); the sentences hold. profile.json: read (grade A). The next item in Puig, LXV (p. 503), is Benedict XIII's clear letter of 2 Aug 1408 that this letter refers to.
 
 
 Split on 14 Oct 2026 from `benedict1399` under the one-key rule (George Lasry, 14 Oct 2026). Until then this letter was
@@ -32,12 +33,13 @@ The work below was done in the benedict1399 sessions of 23 Sept 2026 and is carr
 
 ## Remaining gaps
 - The ciphertext itself (no image, not transcribed) - blocker: needs-physical-access; the reading is Puig's, complete as printed (he marks nothing as unread); the cipher and its key could be checked only on the ACB original
+- ~~Puig's printed text, not in the repository~~ closed 23 Oct 2026: transcribed from the Google Books page images (texts/exea1408_reading.md)
 
 ## Escalation
 - [x] siblings: Puig's appendix index (pp. 623-627) and a full-text search for cifra/cifrada/cifrado/clave read; every cipher item listed in benedict1399 NOTES section 3
 - [n/a] clear-pages: no image of the letter; Puig's p. 466 n. 2 says the key came from Climent's lines on docs. 1063, 461, 463 (Benedict's letters), not from this one
 - [n/a] known-keys: Benedict XIII's key (benedict1399/key.md) could be tried only on ciphertext, and this letter's ciphertext is not imaged or printed
-- [x] print: Puig 1920 (this reading); Meister 1906; Baucells 1978 (parchments only)
+- [x] print: Puig 1920 (this reading, transcribed 23 Oct 2026 into texts/); Meister 1906; Baucells 1978 (parchments only)
 - [n/a] key-rebuild: no ciphertext in hand
 - [n/a] retry: nothing to retry without the ciphertext
 

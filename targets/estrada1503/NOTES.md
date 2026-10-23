@@ -9,6 +9,8 @@ X recto lines 1-11 and 14-15 read as Spanish sentences (the French war, Roussill
 Galicia). **The rest of the letter is decoded, not read**: most lines are mostly `[..]`, leaving code words and
 half-phrases. About 23% of the lines read (estimated); "about half" below is the share of tokens with a value.
 
+**23 Oct 2026, re-read (b27):** no decipherment, copy or edition exists (the 3 Oct clear letter only summarises it) and the key is complete, so the holes are unread signs. PARES answered HTTP 429 to every request today, so the images could not be re-read; the 22 Sept maximum (997 x 1396 px) stands as the limit. The unread lines are now a running text, [`texts/PTR53-69_partial_reading.md`](texts/PTR53-69_partial_reading.md) (log [`texts/PTR53-69_reread_log.md`](texts/PTR53-69_reread_log.md)): 0.128 clean (6/47), still *decoded, not read*. Next step: request photographs of PTR 53/69 from Simancas.
+
 ## The target
 
 Catalogue 287: "Isabella of Castile to the Duke of Estrada", AGS Estado, Tratados con Inglaterra leg. 4 ff. 65-67
@@ -100,7 +102,7 @@ The marriage of Catherine and Henry is not the subject of this letter.
 
 ## Remaining gaps
 
-- copy X recto ll. 12-13, 16-46 and the verso decoded, not read (mostly [..]; reading audit 22 Oct 2026) - blocker: illegible; the letter-sign runs cannot be told apart at PARES's 988 px; needs a higher-resolution copy from Simancas
+- copy X recto ll. 12-13, 16-46 and the verso decoded, not read (mostly [..]; reading audit 22 Oct 2026; texts/PTR53-69_partial_reading.md 0.128 clean, 23 Oct) - blocker: illegible; the letter-sign runs cannot be told apart at PARES's 988 px (PARES returned HTTP 429 on 23 Oct, so not re-fetched); needs a higher-resolution copy from Simancas
 - Letter-sign runs, about half of the cipher tokens of each copy (154 [..] stretches in reading_X.md) - blocker: illegible; PARES serves only 988x1310 px, a sign is 8-10 px high and the alphabet has several homophones per letter; three copies collated; needs the AGS originals or a high-resolution reproduction from Simancas
 - X's day of the month and place ("en madri[d]?") and a few words of its endorsement - blocker: illegible; small cursive at 988 px
 

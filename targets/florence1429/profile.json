@@ -250,6 +250,25 @@
       "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/no171_decryption.md read: the cipher runs are deciphered word by word (PAVOLO, MADONNA, CINTADINI, SOSPETOSA ...), but the continuous text has gaps in nearly every sentence, mostly in the first-pass reading of the clear Italian ('io sono stato qui mostrato per lettera … di questa … fatto questa mia'), so the letter cannot be built into sentences or translated (docs/_check_reading.py: 21 of 51 sentences clean). Relabelled decoded, not read; class read -> not read, method read with known key -> not solved (the key work kept as a part); fraction_read 0.98 -> 0.",
       "result": "failed",
       "technique": ["language-model scoring", "statistical test"]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "access",
+      "what": "DECODE R3754 fetched with the project cookie (research/reading_audit/b25_fetch.py): the record holds only IMG_R3754_I23011_P.jpg; no attachment, no comment block, no decryption. Nothing new to open.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "Clear Italian of no. 171 re-read line by line on slope-following crops of the DECODE image (the lines fall about 3% to the right, which had cut the 18 Sept strips): 'pel tempo cattivo della piena grande', 'venne a vedermi', 'che stemo insieme piu che un'ora, scoprendo l'intentione', 'a motivare de' ragionamenti', 'essi farebbono', 'conchiudendo', and a date line under the text, 'a di viij di settembre' (not transcribed before). Corrections texts/no171_corrections.tsv.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "Partial reading texts/no171_reading.md (cipher words from the 24 Sept decipherment, unchanged; no key value changed) with English; scored (b17_score.py, it): 0.478 clean (11/23), explicit holes 0.609 (14/23). Reader's judgement: the middle holds, the opening, l. 9 and the close do not. Kept decoded, not read.",
+      "result": "partial",
+      "technique": ["language-model scoring"]
     }
   ],
   "outcome": {
@@ -276,7 +295,7 @@
     "notes": "The glosses are Gabbrielli's of 1863, not contemporary. Key state partial: B, H, Q and the signs of eleven unaligned sibling runs lack values; polyphones ᴗ (D/C), # (L/I), π (F/S) rest on one letter each. Clear text partly a first-pass reading.",
     "key": "partial",
     "fraction_read_method": "measured",
-    "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.98, from cipher171.tsv (97 of 99 cipher tokens with a value, measure171.py), which measures the key applied to the cipher words, not the letter's sentences.",
+    "fraction_read_source": "22 Oct 2026, reading audit: the one document does not build sentences, so nothing counts as read (0). Withdrawn as a reading figure: 0.98, from cipher171.tsv (97 of 99 cipher tokens with a value, measure171.py), which measures the key applied to the cipher words, not the letter's sentences. 23 Oct 2026 (b27): still 0: the clear text was re-read on the image, but the letter does not yet reach the sentence bar (0.478 clean).",
     "codes_open": {
       "open": 1,
       "total": 7,
@@ -284,18 +303,23 @@
     },
     "gaps": [
       {
+        "item": "no. 171 clear text: about a dozen words of the opening (ll. 1-4), of 'O detto ...' (l. 9) and of the close (ll. 12-13)",
+        "blocker": "illegible",
+        "detail": "fast mercantile cursive, faded, at the DECODE image resolution (5512 px across the opening); re-read on crops 23 Oct 2026 (texts/no171_corrections.tsv); the original at ASF Dieci di Balìa, Responsive 2, would settle them"
+      },
+      {
         "item": "⊀ ψ, two signs before SOSPETOSA (line 7)",
         "blocker": "too-short",
         "detail": "one occurrence, no gloss over them; ⊀ is T in the siblings, ψ P by the key; 'e t[ro]p[o] sospetosa' fits but is not proved"
       },
       {
         "item": "⊡ after the null on line 4, read 'il Papa'",
-        "blocker": "open-codes",
+        "blocker": "no-key-material",
         "detail": "not in Gabbrielli's nomenclator; rests on his mark ṗp̄ above it and on context"
       },
       {
         "item": "single E before 'dicesse' (line 12), read 'ella'",
-        "blocker": "open-codes",
+        "blocker": "no-key-material",
         "detail": "word sign from context only"
       }
     ],
@@ -307,6 +331,7 @@
     "texts": [
       {
         "doc": "no171",
+        "note": "Re-read 23 Oct 2026 (b27): DECODE R3754 holds only the page image (no attachment, no comment); no contemporary decipherment beyond Gabbrielli's 1863 glosses, no print. The clear Italian re-read on slope-following crops of the image (corrections texts/no171_corrections.tsv: 'pel tempo cattivo della piena grande', 'venne a vedermi', 'piu che un'ora, scoprendo l'intentione', 'essi farebbono', and a date line 'a di viij di settembre' not transcribed before) and aligned with the 24 Sept decipherment; partial reading texts/no171_reading.md, 0.478 clean (11/23), explicit holes 0.609 (14/23). The middle (Madonna 'pure femina e sospetosa', the secret undertaking of her kin and the citizens) holds; the opening, the passage 'O detto ...' and the close before the date do not. Look-alike readings: 6 cipher letters (8 for O, 9-tailed for N, the C/D cup twice, # as I, 3-loop as S). Blockers: illegible (about a dozen clear words in a fast mercantile cursive, faded at the DECODE resolution; the original at ASF would settle them) and no-key-material (the box sign before 'sia', the E before 'dicesse', the two signs before SOSPETOSA).",
         "label": "Responsive 2 no. 171 (DECODE R3754)",
         "transcription": [
           "cipher171.tsv",
@@ -316,10 +341,11 @@
           "texts/no171_decryption.md",
           "READING.md"
         ],
-        "summary": "Galeotto Fibindacci da Ricasoli, Florence's envoy at Urbino, reports to the Signoria (1424 Florentine style, early 1425) on talks about the Countess (\"Madonna\", Caterina Colonna): he advises that the Dieci send an ambassador, because the Count says Madonna is after all a woman, and suspicious, and proposes that her relatives and the citizens secretly bind themselves whatever she might say.",
-        "note": "The cipher words are deciphered (97 of 99 tokens valued with the known key), but the continuous text has gaps (…, (?)) in nearly every sentence, mostly in the first-pass, unchecked reading of the clear Italian around them; the opening cannot be parsed. Not yet a reading (reading audit, 22 Oct 2026).",
+        "summary": "Galeotto Fibindacci da Ricasoli, Florence's envoy at Urbino, reports to the Signoria (dated under the text 'a dì viij di settembre', year not written: 1423 or 1424, when he was sent to the Count over Faenza; the siblings of Feb 1424/25 are a later stay) on talks about the Countess (\"Madonna\", Caterina Colonna): he advises that the Dieci send an ambassador, because the Count says Madonna is after all a woman, and suspicious, and proposes that her relatives and the citizens secretly bind themselves whatever she might say.",
+        "language": "it",
         "state": "decoded, not read",
-        "language": "it"
+        "reading": "texts/no171_reading.md",
+        "translation": "texts/no171_en.md"
       }
     ],
     "key_file": "key_extended.md",

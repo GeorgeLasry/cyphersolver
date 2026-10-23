@@ -11,6 +11,8 @@ grammar in more than half its sentences (ll. 00-03, 11-13, 17-18, 25, 27, 30, 33
 04-10, 14-16) build. 95.1% is signs given a letter, withdrawn as a reading figure; 25.1% of the tokens read (f. 142,
 623 of 2,484). Class read -> read in part.
 
+**23 Oct 2026, re-read (b27):** DECODE R4162/R4165 hold images only; no decipherment of f. 119 exists. The reading was rebuilt word by word across line ends from the sign labels and candidate values ([`texts/f119_reading.md`](texts/f119_reading.md), English [`texts/f119_en.md`](texts/f119_en.md), log [`texts/f119_reread_log.md`](texts/f119_reread_log.md)): "je croy certainement", "ce qu'ils pourront, je vous diray que je craigs trop plus les traistres que les ennemis", "il ne se peult ni ne se doibt", "nos amys", "tels subiects". 0.558 clean (24/43; before 0.302), explicit holes 0.698; the opening, ll. 29-33 and the closing request still do not build, so f. 119 stays *decoded, not read*. For review: the group `fbn` (LES in Lasry's table) reads JE by sense in nine of its ten places, not at l. 22; not adopted, shown `[?je]`.
+
 ## Prior art
 
 - DECODE lists both records as "Non-decrypted" (records created 20 Feb 2023, BnF images, login).
@@ -93,9 +95,9 @@ six jours j'espere avoir resolu la chose … avec [73], les forces qui seront ne
 il m'a donné … aller veoir"; "je ne faudray a vous en mander toutes nouvelles".
 
 ## Remaining gaps
-- f. 119 decoded, not read (1,861 tokens) - blocker: not-attempted; holes or broken grammar in more than half its sentences (reading audit 22 Oct 2026). Workable: re-check the broken lines on the images and the key, build sentences, translate
-- scattered unread letter signs, 121 of 2,477 (4.9%), no run longer than 8 - blocker: open-codes; each tried in three or more zoomed passes plus a candidate-class phrase search over the French corpora; several look like code pairs (98, 89, z3) rather than letters
-- name codes [21] [43] [71] [73] [N] [&] [9b] [ffv] [ffσ] [ffx] [ffou] - blocker: open-codes; Lasry's key leaves them unidentified and they occur once or twice
+- f. 119 unread runs of ll. 00-03, 05, 12, 25, 29-30, 33-34, 37-38 (decoded, not read; texts/f119_reading.md 0.558 clean) - blocker: no-key-material; re-read 23 Oct 2026; the open choices are between homophones the context does not fix and nomenclator groups (ffm, ffmm, fbn) that do not fit as tabulated; Lasry's table is the only key
+- scattered unread letter signs, 121 of 2,477 (4.9%), no run longer than 8 - blocker: no-key-material; each tried in three or more zoomed passes plus a candidate-class phrase search over the French corpora; several look like code pairs (98, 89, z3) rather than letters
+- name codes [21] [43] [71] [73] [N] [&] [9b] [ffv] [ffσ] [ffx] [ffou] - blocker: no-key-material; Lasry's key leaves them unidentified and they occur once or twice
 
 ## Escalation
 - [x] siblings: the other fr. 15564 records (ff. 27, 30, 78, 151) worked by a peer session in `targets/mercoeur1587/`; neighbouring leaves looked at, no decipherment
@@ -103,4 +105,4 @@ il m'a donné … aller veoir"; "je ne faudray a vous en mander toutes nouvelles
 - [x] known-keys: Lasry's fr. 15564 key is the key and fits both letters
 - [x] print: cryptiana GL.htm gives the key and an f. 27 decipherment only; no printed text of ff. 119/142 found
 - [x] key-rebuild: key extended from what reads (beam over widened candidates, per-sign relabelling, 13 new sign values listed above)
-- [x] retry: every unread run retried with the extended key in three rounds, with a wordlist phrase search
+- [x] retry: every unread run retried with the extended key in three rounds, with a wordlist phrase search; f. 119 rebuilt word by word 23 Oct 2026 (b27)

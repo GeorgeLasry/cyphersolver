@@ -29,7 +29,7 @@
     "by": "unknown",
     "source": "No ciphertext in hand: not imaged, not printed.",
     "image_quality": "no images",
-    "notes": "Puig prints ~2,090 deciphered words (estimate from printed lines)."
+    "notes": "Puig prints 2,339 deciphered words (word count of the reading body transcribed in texts/exea1408_reading.md, 23 Oct 2026); the ciphertext length is not known."
    }
   }
  ],
@@ -111,34 +111,27 @@
    "what": "Split under the one-key rule from benedict1399: this letter is from another sender and its key is not shown to be Benedict XIII's (the key was rebuilt on doc. 1068 only), so it gets its own entry with no claim about its key."
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Puig y Puig 1920 app. LXIV on Google Books (URL); no transcription exists (ciphertext not imaged).", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the only text is a Google Books link that is blocked to scripts; nothing of the letter is in the repository. Relabelled decoded, not read; class already solved kept because the decipherment is in print.", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the only text is a Google Books link that is blocked to scripts; nothing of the letter is in the repository. Relabelled decoded, not read; class already solved kept because the decipherment is in print.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "access", "what": "Google Books jscmd=click3 endpoint (signed page-image URLs) answered for Puig 1920 (CuOlkxWnk-EC); PA498-PA507 fetched at 1600 px (research/reading_audit/b26_gbooks_fetch.py), scratchpad only.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "transcription", "what": "Puig's app. LXIV (pp. 500-503) transcribed as printed, italics (his decipherment) marked; footnote numbers left out and his identifications listed in the header; misprints kept (fiuxit, redisivit, parisins, toletamum, cerificari, Aragoniat). English translation made. texts/exea1408_reading.md, _en.md, _reread_log.md.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Reading body scored (b17_score.py, la): 0.376 (76/202) on the classical Latin word list; explicit-hole share 1.0 (202/202). Reader's judgement: the sentences hold throughout. Not checkable against figures: no image of the cipher. Relabelled read (grade A).", "result": "worked", "technique": ["language-model scoring"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "The text is Puig y Puig's printed decipherment (Pedro de Luna, 1920, appendix LXIV), found before the attempt; no image of the cipher exists, so nothing was checked against it.",
-  "contribution": [
-   "catalogue correction"
-  ],
+  "contribution": ["catalogue correction"],
   "class": "already solved",
-  "texts_withheld": "The decipherment is in print, Puig y Puig 1920 (Pedro de Luna); Google Books and HathiTrust refuse automated access, so its text is not in the repository and is cited, not shown. Nothing of the project's own is a reading (reading audit, 22 Oct 2026).",
   "key": "none",
-  "fraction_read": "unknown",
-  "verification": [
-   "none"
-  ],
+  "fraction_read": 1.0, "fraction_read_source": "23 Oct 2026 (b27): 1.0 = the one document, which now reads from Puig's printed decipherment transcribed in texts/ (tokens of documents that read / all documents).",
+  "verification": ["none"],
   "gaps": [
    {
     "item": "The ciphertext itself (no image, not transcribed)",
     "blocker": "needs-physical-access",
-    "detail": "The reading is Puig's, complete as printed; the cipher and its key could be checked only on the ACB original."
-   },
-   {
-    "item": "Puig's printed text of the letter (pp. 500-503), not in the repository",
-    "blocker": "needs-physical-access",
-    "detail": "Google Books blocks automated access (403/CAPTCHA); HathiTrust 100676638 is behind a Cloudflare challenge; a copy of the book is needed"
+    "detail": "The reading is Puig's, complete as printed and now transcribed in texts/; the cipher and its key could be checked only on the ACB original."
    }
   ],
-  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's. 22 Oct 2026, reading audit: no text of the letter is in the repository; decoded, not read. Class kept: the text exists in print (Puig 1920).",
+  "notes": "Read by Puig y Puig in 1920 (the reading is his). Identified and listed here among the 14 cipher items of his appendix; split on 14 Oct 2026 from benedict1399 because the key is not shown to be Benedict XIII's. 22 Oct 2026, reading audit: no text of the letter was in the repository; decoded, not read. 23 Oct 2026 (b27): Puig's text fetched through the Google Books click3 endpoint and transcribed (texts/); it reads (grade A); class already solved kept.",
   "credits": [
    {
     "who": "puig",
@@ -152,11 +145,18 @@
    {
     "doc": "exea1408",
     "label": "Exea to Climent, 23 Aug 1408",
-    "decryption": "https://books.google.com/books?id=CuOlkxWnk-EC&pg=PA500",
-    "summary": "Alfonso de Exea, archbishop of Seville, to Francesc Climent, 23 Aug 1408, in Benedict XIII's circle during the Schism: the defection of Pedro de Frías, the 'Cardinal of Spain'. Entirely in cipher, the longest of these texts (about 2,090 deciphered words); Puig y Puig printed it in 1920 (appendix LXIV, pp. 500-503) with the deciphered passages in italics.",
-    "note": "Not in the repository: the reading is Puig y Puig's print (Pedro de Luna, 1920, app. LXIV, pp. 500-503), linked on Google Books, which blocks automated access; nothing of the letter is here, so it is not counted as a reading (reading audit, 22 Oct 2026).",
+    "decryption": "texts/exea1408_reading.md",
+    "summary": "Alfonso de Exea, archbishop of Seville, to Francesc Climent, Perpignan, 23 Aug 1408, in Benedict XIII's circle during the Schism: the defection of Pedro de Frías, the 'Cardinal of Spain', the order to arrest his revenues in Castile, four candidates for the see of Osma, and the Infante Fernando's expulsion of the prelates and of Leonor López from the court. Entirely in cipher, the longest of these texts (2,339 words as printed); Puig y Puig printed it in 1920 (appendix LXIV, pp. 500-503) with the deciphered passages in italics.",
     "language": "la",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading": "texts/exea1408_reading.md",
+    "translation": "texts/exea1408_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Puig y Puig's printed decipherment (Pedro de Luna 1920, app. LXIV, pp. 500-503; ACB Çapera no. 133) transcribed from the Google Books page images; italics = his decipherment, the whole letter after the opening formula (2,339 words of the reading body). Explicit-hole share 1.0 (202/202) (classical Latin word list: 0.376 (76/202)); the sentences hold. Not checked against figures: no image of the cipher."
+    }
    }
   ]
  }

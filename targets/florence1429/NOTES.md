@@ -8,6 +8,8 @@ no. 171 is **decoded, not read**. The cipher words are deciphered (97 of 99 toke
 ("io sono stato qui mostrato per lettera … di questa …"). Class read -> not read, method -> not solved (the known-key
 work kept as a part); 0.98 withdrawn as a reading figure. Next: re-read the clear text on the image, normalise, translate.
 
+**23 Oct 2026, re-read (b27):** DECODE R3754 holds only the page image (no attachment). The clear Italian was re-read on slope-following crops (the lines fall about 3% to the right, which had split the old strips): "pel tempo cattivo della piena grande", "venne a vedermi", "che stemo insieme più che un'ora, scoprendo l'intentione", "essi farebbono", and a date line never transcribed, "a dì viij di settembre" (year not written). Partial reading [`texts/no171_reading.md`](texts/no171_reading.md), English [`texts/no171_en.md`](texts/no171_en.md), log [`texts/no171_reread_log.md`](texts/no171_reread_log.md), corrections [`texts/no171_corrections.tsv`](texts/no171_corrections.tsv). Scored 0.478 clean (11/23), explicit holes 0.609: the middle holds, the opening, l. 9 and the close do not, so it stays *decoded, not read*. No key value changed; 6 cipher letters rest on look-alike readings.
+
 Session of 18 September 2026. Target: DECODE R3754 (`Dieci_di_Balia_Responsive_2_171`, "Non-decrypted", Latin per
 DECODE; actually Italian), old number 168, one page, image fetched with Daniel's DECODE cookie
 (`IMG_R3754_I23011_P.jpg`, 5512 × 3674, git-ignored). Goal set: read it, using the interlinear glosses as seeds.
@@ -183,10 +185,10 @@ should be checked against the rest of the collection before any upload:
 - Siblings R3755-R3757: glossed runs aligned; the letters themselves not yet deciphered end to end.
 
 ## Remaining gaps
-- no. 171 as a whole, decoded, not read - blocker: not-attempted; re-transcribe the clear text of lines 1-3, 8-10, 13-14 on the image, build sentences, translate
+- no. 171 clear text, about a dozen words of ll. 1-4, 9 and 12-13 - blocker: illegible; re-read on crops 23 Oct 2026 (texts/no171_corrections.tsv), faded fast cursive at the DECODE resolution; the ASF original would settle them
 - ⊀ ψ, two signs before SOSPETOSA (no. 171 line 7) - blocker: too-short; one occurrence, no gloss; "e t[ro]p[o]" fits but is not proved
-- ⊡ word sign on line 4, read "il Papa" - blocker: open-codes; not in Gabbrielli's nomenclator, rests on his ṗp̄ mark and context
-- single E before "dicesse" (line 12), read "ella" - blocker: open-codes; word sign from context only
+- ⊡ word sign on line 4, read "il Papa" - blocker: no-key-material; not in Gabbrielli's nomenclator, rests on his ṗp̄ mark and context
+- single E before "dicesse" (line 12), read "ella" - blocker: no-key-material; word sign from context only
 
 ## Escalation
 - [x] siblings: R3753 (clear), R3755, R3756, R3757 opened; 40 glossed runs transcribed and aligned where possible; R3758 (Responsive 7, later) not this cipher
@@ -194,4 +196,4 @@ should be checked against the rest of the collection before any upload:
 - [x] known-keys: Gabbrielli keys 1-4 (frames 58-3 to 58-6) compared; only key 1 fits; DECODE key records R5687-R5698 checked
 - [x] print: Meister 1902, Somogyi 2016, Guasti's Commissioni: key only, no text
 - [x] key-rebuild: key extended by sign-gloss alignment on the siblings (key_extended.md), 6 H and 14 M values
-- [x] retry: every token of no. 171 re-transcribed and re-deciphered with the extended key and regraded (cipher171.tsv)
+- [x] retry: every token of no. 171 re-transcribed and re-deciphered with the extended key and regraded (cipher171.tsv); clear text re-read on slope-following crops 23 Oct 2026 (b27)

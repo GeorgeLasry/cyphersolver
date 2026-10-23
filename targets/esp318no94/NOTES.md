@@ -2,6 +2,7 @@
 
 Status: in progress (contributed reading, about 90 code groups open; the decrypt needs a line-by-line check against the scans)
 **22 Oct 2026, reading audit** (George Lasry's test): the repository holds only Brackx's sign transcription; his provisional decryption (issue #62) has holes in most sentences around about 90 open code groups. No. 94 is *decoded, not read*: class read in part -> not read, method -> not solved, fraction_read 0.929 -> 0. The ciphertext-only recovery of the alphabet stands.
+**23 Oct 2026, re-read (b27):** Brackx's decipherment and reading copied into the folder ([`texts/no94_decryption.md`](texts/no94_decryption.md), [`texts/no94_partial_reading.md`](texts/no94_partial_reading.md), log [`texts/no94_reread_log.md`](texts/no94_reread_log.md)): 0.157 clean (13/83), explicit holes 0.253, so it stays *decoded, not read*. **Bergenroth's Gran cifra list is not lost**: Arturo Quirantes published a photocopy of BNE MSS 20.211/52 and a transcription in Feb 2018 (the pages were in `targets/esp318/lit/quirantes*.html`); about 75 groups read off it into [`texts/bergenroth_gran_cifra_codes.tsv`](texts/bergenroth_gran_cifra_codes.tsv). Tested (`research/reading_audit/b27_esp94_berg.py`): of 12 firm no. 94 readings with a Bergenroth counterpart, only `mny`/`muy` = de agrees; que, se, en, la, no, los, lo, como, por, su, gente all differ. No. 94 is in another code of the same shape (the "Cifra del visorrey"?). For no. 93 the list is directly useful: `luq` = capitán is on it.
 
 
 Split on 21 Oct 2026 from [`targets/esp318no93/`](../esp318no93/NOTES.md), which held nos. 93 and 94 together as
@@ -105,16 +106,16 @@ What the issue raised, and what was checked here (`check94.py`):
 
 ## Remaining gaps
 
-- about 90 code groups, 143 tokens, mostly once or twice - blocker: open-codes; two-part code, no alphabetical bracket; nouns, names and verbs that context does not fix; the Gran cifra list (BNE MSS 20.211/52) and the 'Cifra del visorrey' (BRAH 9/15 ff. 1-6) are not online
-- 14 tentative code readings (93 tokens) - blocker: open-codes; one or two contexts each
-- spelled-out stretches that do not parse (about a fifth of the letter-sign text) - blocker: open-codes; single misread glyphs in a transcription by eye; a third of the ß/thorn/B glyphs not cropped and checked; sign K unstable
-- no. 94 decryption: decoded, not read, and not in the folder - blocker: not-attempted; copy Brackx's decryption from issue #62 into texts/, check it line by line on the scans, build sentences around the open codes
+- about 90 code groups, 154 of 623 code-group tokens, mostly once or twice - blocker: no-key-material; two-part code, no alphabetical bracket; Bergenroth's Gran cifra list (BNE MSS 20.211/52, read 23 Oct 2026 from Quirantes's photocopy) is a different code (1 of 12 firm readings agrees); the 'Cifra del visorrey' (BRAH 9/15 ff. 1-6) is not online
+- 14 tentative code readings (93 tokens) - blocker: no-key-material; one or two contexts each
+- spelled-out stretches that do not parse (about a fifth of the letter-sign text) - blocker: not-attempted; single misread glyphs in a transcription by eye; a third of the ß/thorn/B glyphs not cropped and checked; sign K unstable. Not re-checked in b27: the code holes alone keep about every second sentence open
+- ~~no. 94 decryption not in the folder~~ closed 23 Oct 2026: texts/no94_decryption.md, texts/no94_partial_reading.md (0.157 clean)
 
 ## Escalation
 
 - [x] siblings: all thirteen cipher folios of Espagnol 318 opened; no decipherment of no. 94; no. 93 is a different code (see Review 5)
 - [x] clear-pages: the clear islands of no. 94 itself are the context Brackx read the code from; no clear copy
-- [x] known-keys: Escrivà no. 1 and the Cifra general excluded by code initials; Bergenroth's Gran cifra agrees on mny/muy = de, his full list not obtainable (BNE bot-check)
+- [x] known-keys: Escrivà no. 1 and the Cifra general excluded by code initials; Bergenroth's Gran cifra list read from Quirantes's 2018 photocopy (23 Oct 2026): agrees only on mny/muy = de, 11 firm readings differ, so not this code
 - [x] print: Parisi 2004 and 2020, Galende Díaz 1994, Tomokiyo, Quirantes 2018: nothing on no. 94
 - [x] key-rebuild: Brackx's ciphertext-only anneal and class splitting; reproduced here from random starts (Review 3)
 - [x] retry: Brackx ran three rounds over the code groups with the improving key (round 3 moved `mys` from la to en and `mnb` to la, revised `nyb` from assí to lo, withdrew `mos` = fueron) and cropped the suspect sign classes from the scans (254 + 149 occurrences, a third of the ß/thorn/B missed) and re-solved the split classes from scratch; the open groups were retried in each round. Still to do, not blocked: re-transcribe the non-parsing stretches against the scans with the final key
