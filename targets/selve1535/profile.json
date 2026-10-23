@@ -256,7 +256,7 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.946,
+  "fraction_read": 0.877,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
@@ -302,8 +302,8 @@
     "detail": "blots and corrections under the decipherer's ruling; none affects the sense"
    }
   ],
-  "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, re-read (batch mix1): non-null signs in R3697_signs.txt and R4232_signs.txt in documents that read: R4232 1,430, R3697 unstruck 747, R3697 struck runs read from the decipherer’s glosses (A, B, C1, C2 head, T2) 169; the other struck runs (135) are decoded, not read. 2,346 of 2,481 = 0.946. Withdrawn: 0.877 (reading audit, before the glossed struck runs were counted as read from the glosses); 0.899 (sense.py, 5 Oct 2026).",
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "22 Oct 2026, re-read (batch mix1): non-null signs in R3697_signs.txt and R4232_signs.txt in documents that read: R4232 1,430, R3697 unstruck 747, R3697 struck runs read from the decipherer’s glosses (A, B, C1, C2 head, T2) 169; the other struck runs (135) are decoded, not read. 2,346 of 2,481 = 0.946. Withdrawn: 0.877 (reading audit, before the glossed struck runs were counted as read from the glosses); 0.899 (sense.py, 5 Oct 2026). Revised 22 Oct 2026 (verification sweep): the 169 glossed struck signs went back to decoded, not read (0.25 clean sentences), so the figure returns to 0.877.",
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "key table for 'Selve's Cipher' (cryptiana francis.htm, rebuilt from fr. 3045 ff. 42-49), extended", "source": "cryptiana francis.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "the decipherer's interlinear and marginal glosses, used as cribs on the struck runs"}
