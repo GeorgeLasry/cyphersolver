@@ -217,11 +217,18 @@
    "what": "Consistency pass (cl): documents[].read for f209 read -> read in part, matching outcome.texts (decoded, not read) and fraction_read_source.",
    "result": "worked",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by Tomokiyo's Nevers cipher no. 46, re-transcribed from BnF fr. 3995 f. 87 (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The Pisany letters were deciphered with Tomokiyo's Nevers cipher no. 46, transcribed here at full resolution from BnF fr. 3995 f. 87 and checked on Gondi's 22 Sept 1593 letter with its office decipherment: f. 209 in full, f. 168 in long stretches.",
+  "method": "read with known key",
+  "method_basis": "The Pisany letters were deciphered with Tomokiyo's Nevers cipher no. 46, transcribed here at full resolution from BnF fr. 3995 f. 87 and checked on Gondi's 22 Sept 1593 letter with its office decipherment: f. 209 in full, f. 168 in long stretches. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by Tomokiyo's Nevers cipher no. 46, re-transcribed from BnF fr. 3995 f. 87; class stays not read, as the text does not read.",
   "contribution": [
    "transcription",
    "catalogue correction"

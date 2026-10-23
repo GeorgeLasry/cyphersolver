@@ -156,6 +156,13 @@
    "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.",
    "result": "worked",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by the alphabet fragment below the letter and the recipient's interlinear glosses (key recovered based on adjacent plaintext); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -164,8 +171,8 @@
    "verdict": "not applicable",
    "notes": "144 cipher signs in 15 short runs, most of them a few letters long, with 9 Latin code words: too few read tokens per sign type for the shuffled-text test, and the key is attested by the alphabet fragment written on the letter"
   },
-  "method": "not solved",
-  "method_basis": "A two-row alphabet fragment written below the letter's text (i to u, over their cipher signs) and the recipient's interlinear glosses rebuilt the key.",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "A two-row alphabet fragment written below the letter's text (i to u, over their cipher signs) and the recipient's interlinear glosses rebuilt the key. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by the alphabet fragment below the letter and the recipient's interlinear glosses; class stays not read, as the text does not read.",
   "contribution": [
    "key recovered",
    "transcription",

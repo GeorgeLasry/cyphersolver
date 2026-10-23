@@ -173,11 +173,18 @@
    "what": "Verify sweep (reading audit v2): R9367 reading re-scored with the 11 words that rest on the sense-only values cc = z, Φ = b, S = sch, U = ll counted as holes (and the unread signs [#], [Π], [R], [g] as holes): explicit-hole share 0.641 -> 0.590 (23/39), b17 HOLES=1 0.667; plain 0.231. The cipher passages L09-10, L14, L16, L31, L34 do not build sentences. DECODE image re-fetched and viewed; the failures are key values, not transcription. Demoted to decoded, not read; class not read, fraction_read 0.",
    "result": "failed",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by block 2_4 of the key register R9423 in the same volume, extended from the letter's own words (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Block 2_4 of the key register R9423 in the same volume matches by shape (21 Sept 2026) and was extended from the letter's own words (23 Oct 2026: v = b/w, ‡‡ = u, boxed H = k, and sense-only cc = z, Φ = b, S = sch, U = ll; read with known key, recorded under parts); the cipher runs give German only in part, and with the sense-only values counted as holes the letter falls below the reading bar (verify sweep 23 Oct 2026).",
+  "method": "read with known key",
+  "method_basis": "Block 2_4 of the key register R9423 in the same volume matches by shape (21 Sept 2026) and was extended from the letter's own words (23 Oct 2026: v = b/w, ‡‡ = u, boxed H = k, and sense-only cc = z, Φ = b, S = sch, U = ll; read with known key, recorded under parts); the cipher runs give German only in part, and with the sense-only values counted as holes the letter falls below the reading bar (verify sweep 23 Oct 2026). Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by block 2_4 of the key register R9423 in the same volume, extended from the letter's own words; class stays not read, as the text does not read.",
   "contribution": [
    "transcription",
    "key extended or corrected",

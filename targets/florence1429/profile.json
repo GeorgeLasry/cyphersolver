@@ -269,11 +269,18 @@
       "what": "Partial reading texts/no171_reading.md (cipher words from the 24 Sept decipherment, unchanged; no key value changed) with English; scored (b17_score.py, it): 0.478 clean (11/23), explicit holes 0.609 (14/23). Reader's judgement: the middle holds, the opening, l. 9 and the close do not. Kept decoded, not read.",
       "result": "partial",
       "technique": ["language-model scoring"]
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "verification",
+      "technique": ["other"],
+      "what": "Method restored: key obtained by Gabbrielli's 1863 key, extended from his glosses on the siblings (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "method": "not solved",
-    "method_basis": "Gabbrielli's 1863 key, extended from his glosses on the siblings, gives a value to 97 of the 99 cipher tokens of no. 171 (key applied, recorded under parts), but the letter as a whole does not yet build coherent sentences: the clear text around the cipher runs is a first-pass palaeographic reading with gaps in nearly every sentence.",
+    "method": "read with known key",
+    "method_basis": "Gabbrielli's 1863 key, extended from his glosses on the siblings, gives a value to 97 of the 99 cipher tokens of no. 171 (key applied, recorded under parts), but the letter as a whole does not yet build coherent sentences: the clear text around the cipher runs is a first-pass palaeographic reading with gaps in nearly every sentence. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by Gabbrielli's 1863 key, extended from his glosses on the siblings; class stays not read, as the text does not read.",
     "contribution": [
       "transcription",
       "key extended or corrected",
@@ -354,7 +361,7 @@
         "label": "Cipher words of no. 171 (key applied; letter not read)",
         "records": "DECODE R3754",
         "method": "read with known key",
-        "extent": "partial",
+        "extent": "none",
         "basis": "Gabbrielli's 1863 table (Yale Ilardi reel 58) extended from his glosses on R3755-R3757: 97 of 99 cipher tokens valued (cipher171.tsv). The cipher words are deciphered; the letter they sit in is decoded, not read, because its clear text is not yet transcribed into sentences."
       }
     ]

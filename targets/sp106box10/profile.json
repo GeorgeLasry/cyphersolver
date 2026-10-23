@@ -281,11 +281,12 @@
       "result": "worked"
     },
     {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R702 p. 2 decode saved from cat62/check_r702.py; the R664 passages and the R701 p. 1 list copied verbatim from NOTES.md into texts/; R658 and the key linked to cat62/venetian_code.tsv. Missing: no transcription or decryption of R664 in full or of R660 exists (never transcribed group by group)", "result": "partial"},
-    {"date": "2026-10-23", "kind": "verification", "what": "Verification 3 (v3_below_b): R664, R658 and R702 were counted as read. R664_fragments.md holds two decoded phrases of an untranscribed letter (0.545 explicit holes, 98 words): decoded, not read. R658 (the code grid), R702 p. 2 (glossed worksheet strings) and R701 p. 1 (heading and word list) are not prose. No document reads: class read in part -> not read, method -> not solved, fraction_read 0.1 -> 0.", "result": "failed", "technique": ["statistical test"]}
+    {"date": "2026-10-23", "kind": "verification", "what": "Verification 3 (v3_below_b): R664, R658 and R702 were counted as read. R664_fragments.md holds two decoded phrases of an untranscribed letter (0.545 explicit holes, 98 words): decoded, not read. R658 (the code grid), R702 p. 2 (glossed worksheet strings) and R701 p. 1 (heading and word list) are not prose. No document reads: class read in part -> not read, method -> not solved, fraction_read 0.1 -> 0.", "result": "failed", "technique": ["statistical test"]},
+    {"date": "2026-10-24", "kind": "verification", "technique": ["other"], "what": "Method restored: key obtained by the codebreaker's own grid DECODE R658, filed in the same SP 106/10 file (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.", "result": "partial"}
   ],
   "outcome": {
-    "method": "not solved",
-    "method_basis": "The codebreaker's own grid of this code, DECODE R658, filed in the same SP 106/10 file and named by his heading on R701 p. 1, gives 102 values; the first ~45 values had been aligned from his interlinear glosses on R664, and the grid corrected four of them.",
+    "method": "read with known key",
+    "method_basis": "The codebreaker's own grid of this code, DECODE R658, filed in the same SP 106/10 file and named by his heading on R701 p. 1, gives 102 values; the first ~45 values had been aligned from his interlinear glosses on R664, and the grid corrected four of them. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by the codebreaker's own grid DECODE R658, filed in the same SP 106/10 file; class stays not read, as the text does not read.",
     "contribution": [
       "transcription",
       "key extended or corrected",

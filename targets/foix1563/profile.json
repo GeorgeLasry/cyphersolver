@@ -272,11 +272,18 @@
    "technique": ["contextual inference", "language-model scoring"],
    "what": "Reading texts/R9241_reading.md with English (every unbracketed word carried, b19_wordcheck.py). Clean-sentence share: _check_reading.py 0.361; explicit holes only 0.609. Below the bar (French documents at 0.47-0.56 kept unread): R9241 stays decoded, not read, with this partial reading.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by matching Paul de Foix's 1565 cipher (Tomokiyo; Beck's independent key agrees) (read after matching with key from external sources); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "R9241's signs match Paul de Foix's 1565 cipher (Tomokiyo's reconstruction; Feyseel Nur, PR #21), and Lawrence Beck's independent key (PR #18) agrees on 19 of 25 shared signs, but neither decode builds the letter into sentences: the key match is recorded in parts, the text is not read.",
+  "method": "read after matching with key from external sources",
+  "method_basis": "R9241's signs match Paul de Foix's 1565 cipher (Tomokiyo's reconstruction; Feyseel Nur, PR #21), and Lawrence Beck's independent key (PR #18) agrees on 19 of 25 shared signs, but neither decode builds the letter into sentences: the key match is recorded in parts, the text is not read. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by matching Paul de Foix's 1565 cipher (Tomokiyo; Beck's independent key agrees); class stays not read, as the text does not read.",
   "contribution": [
    "transcription",
    "decipherment with ambiguous key",
@@ -372,7 +379,7 @@
     "label": "R9241: de Foix's 1565 key matched (text decoded, not read)",
     "records": "DECODE R9241",
     "method": "read after matching with key from external sources",
-    "extent": "partial",
+    "extent": "none",
     "basis": "Tomokiyo's chart of de Foix's 1565 cipher (BnF fr. 15971) fits the sign set; with values fitted on R9241 it yields clauses in passages B and D of Beck's reading only. Decoded, not read (reading audit, 22 Oct 2026)."
    }
   ]

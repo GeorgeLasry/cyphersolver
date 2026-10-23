@@ -155,6 +155,13 @@
    "what": "Re-read b35: DECODE R4803 re-fetched (8 images, no attachment); every page opened, P8 is a clear postscript; neighbours R4802, R4804 opened; no decipherment or printed text. Not retried: too short for a ciphertext-only rebuild of the 30 unvalued classes. Kept decoded, not read.",
    "result": "failed",
    "technique": ["other"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by George Lasry's crib guessing and dragging with CTTS and Claude Opus 5.5 (his report; 75 of 240 signs given values) (key recovered from ciphertext-only); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -165,8 +172,8 @@
   },
   "class": "not read",
   "key": "partial",
-  "method": "not solved",
-  "method_basis": "The report says the passages were partially deciphered by crib guessing and dragging with Claude Opus 5.5; no decipherment or matching filed key exists.",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The report says the passages were partially deciphered by crib guessing and dragging with Claude Opus 5.5; no decipherment or matching filed key exists. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by George Lasry's crib guessing and dragging with CTTS and Claude Opus 5.5 (his report; 75 of 240 signs given values); class stays not read, as the text does not read.",
   "contribution": [
    "key recovered",
    "sender or date identified"

@@ -331,11 +331,18 @@
    "kind": "transcription",
    "what": "f. 146v: canvas 287 fetched at full resolution (4949 x 6957, openapi IIIF v3) and the three full cipher lines re-read in native-resolution strips. The anchors hold ('nostre ... de l'absolution et que ... Je', 'nous [?au]rions et a la verite', 'Mr de Mercure'), but each of the copyist's forms still maps to two or three table entries and no clause between the anchors reads. ff. 88 and 157v not re-transcribed. All three kept decoded, not read; the next step is the glyph atlas from the interlined Instruction (fr. 3985 c. 264-268).",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by key no. 60, the Court cipher given to Nevers, identified by Tomokiyo (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Key no. 60, the Court cipher given to Nevers (BnF fr. 3995 ff. 108-111), identified by Tomokiyo and applied (read with known key, recorded under parts), gives three words on f. 88r and anchors on f. 146v; no passage reads as text.",
+  "method": "read with known key",
+  "method_basis": "Key no. 60, the Court cipher given to Nevers (BnF fr. 3995 ff. 108-111), identified by Tomokiyo and applied (read with known key, recorded under parts), gives three words on f. 88r and anchors on f. 146v; no passage reads as text. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by key no. 60, the Court cipher given to Nevers, identified by Tomokiyo; class stays not read, as the text does not read.",
   "contribution": [
    "transcription",
    "catalogue correction"
@@ -449,7 +456,7 @@
     "label": "ff. 88r, 146v, 157v (key no. 60 applied; decoded, not read)",
     "records": "BnF fr. 3985 f. 88; fr. 3986 ff. 146v, 157v",
     "method": "read with known key",
-    "extent": "partial",
+    "extent": "none",
     "basis": "key no. 60 transcribed and corrected from issue #32; three words on f. 88r (shuffle-controlled), anchors on f. 146v. Decoded, not read (reading audit, 22 Oct 2026)."
    }
   ]

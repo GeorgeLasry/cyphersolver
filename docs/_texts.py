@@ -121,7 +121,7 @@ def reading_problems(folder_path, profile, score=True):
     if o.get('class') == 'read' and 'read in part' in states:
         hard.append('classed "read" but an entry is "read in part" (under 95% of its words read as sense)')
     if states and all(s == 'decoded, not read' for s in states):
-        hard.append('every entry is "decoded, not read": this is not a reading (class it as not solved / attempted, open)')
+        hard.append('every entry is "decoded, not read": this is not a reading (class it "not read"; the method stays the one that obtained the key, or "not solved" when no key was obtained)')
     cr = None
     for t in o.get('texts') or []:
         label = t.get('label') or '/'.join(map(str, listify(t.get('doc')))) or '?'

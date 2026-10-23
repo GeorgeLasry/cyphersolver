@@ -169,11 +169,18 @@
    "what": "Running reading texts/f116_running_reading.md written from the line table (holes bracketed) with English texts/f116_en.md; scored 0.604 (29/48), explicit holes 0.792 (38/48); ll. 8-14 and 18-21 do not build sentences, so it stays decoded, not read.",
    "result": "partial",
    "technique": ["language-model scoring"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by the Cifra general printed by Galende Diaz (1994), assigned to the letter by Tomokiyo (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "No. 92 was decoded with the Cifra general printed by Galende Diaz (1994), which Tomokiyo had assigned to the letter; the assignment is proved against eight interlinear glosses on f. 116r. The decode (f116_reading.md) is a line table of sign strings with a gloss column that leaves holes in most cipher sentences, so no reading is claimed (reading audit, 22 Oct 2026); once the letter is built into sentences the method is read with known key.",
+  "method": "read with known key",
+  "method_basis": "No. 92 was decoded with the Cifra general printed by Galende Diaz (1994), which Tomokiyo had assigned to the letter; the assignment is proved against eight interlinear glosses on f. 116r. The decode (f116_reading.md) is a line table of sign strings with a gloss column that leaves holes in most cipher sentences, so no reading is claimed (reading audit, 22 Oct 2026); once the letter is built into sentences the method is read with known key. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by the Cifra general printed by Galende Diaz (1994), assigned to the letter by Tomokiyo; class stays not read, as the text does not read.",
   "contribution": ["transcription", "key extended or corrected", "catalogue correction"],
   "class": "not read",
   "fraction_read": 0.0,

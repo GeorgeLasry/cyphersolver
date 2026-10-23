@@ -306,11 +306,18 @@
       "what": "Verify sweep (reading audit v2): ff. 37r-38r re-scored. The reading body (reading.txt ff. 37r-38r) scored 0.541 explicit holes / 0.351 plain in the audit; with the 155 of 822 tokens that the crib fit valued by sense ('?' in rd_f37r/f37v/f38r.txt) and the low lines counted as holes it scores 0.255 (12/47; v2_ottobon_holes.py). Local images 920 x 1590 px do not settle the digits; the BNE full-resolution viewer needs a browser. Demoted to decoded, not read; class not read, fraction_read 0.",
       "result": "failed",
       "technique": ["language-model scoring"]
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "verification",
+      "technique": ["other"],
+      "what": "Method restored: key obtained by matching the Council of Ten's Zifra Prima key sheet (DECODE R1789) (read after matching with key from external sources); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "method": "not solved",
-    "method_basis": "The Council of Ten's Zifra Prima key sheet (DECODE R1789) fits the letter (read after matching with key from external sources); the noisy first-pass transcription was re-read against the key by hand and by a calibrated noisy-channel decoder and crib fit (dec.py, fit.py), but neither piece builds sentences without values set by sense (verify sweep 23 Oct 2026): Italian read in fragments only.",
+    "method": "read after matching with key from external sources",
+    "method_basis": "The Council of Ten's Zifra Prima key sheet (DECODE R1789) fits the letter (read after matching with key from external sources); the noisy first-pass transcription was re-read against the key by hand and by a calibrated noisy-channel decoder and crib fit (dec.py, fit.py), but neither piece builds sentences without values set by sense (verify sweep 23 Oct 2026): Italian read in fragments only. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by matching the Council of Ten's Zifra Prima key sheet (DECODE R1789); class stays not read, as the text does not read.",
     "contribution": [
       "transcription",
       "decipherment with ambiguous key",

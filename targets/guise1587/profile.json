@@ -273,11 +273,18 @@
    "what": "Consistency pass (cl): class not read with method 'read with known key' -> method 'not solved'; key stays partial (Lasry's table, extended).",
    "result": "partial",
    "technique": ["statistical test"]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "technique": ["other"],
+   "what": "Method restored: key obtained by George Lasry's 2022 key table (cryptiana GL.htm), which names these folios (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "George Lasry's 2022 key table on cryptiana GL.htm names fr. 15564 ff. 119 and 142 among the letters it solves; applied sign by sign here (beam search over the homophone candidates with a 5-gram model, then line-by-line relabelling against the Gallica images), it decodes most letter signs (95.1%), but neither letter builds into sentences (f. 119 0.558 clean, f. 142 0.167 explicit-hole, 23 Oct 2026): the key is partial, the text is not read.",
+  "method": "read with known key",
+  "method_basis": "George Lasry's 2022 key table on cryptiana GL.htm names fr. 15564 ff. 119 and 142 among the letters it solves; applied sign by sign here (beam search over the homophone candidates with a 5-gram model, then line-by-line relabelling against the Gallica images), it decodes most letter signs (95.1%), but neither letter builds into sentences (f. 119 0.558 clean, f. 142 0.167 explicit-hole, 23 Oct 2026): the key is partial, the text is not read. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by George Lasry's 2022 key table (cryptiana GL.htm), which names these folios; class stays not read, as the text does not read.",
   "contribution": ["transcription", "decipherment with ambiguous key", "key extended or corrected"],
   "class": "not read",
   "key": "partial",

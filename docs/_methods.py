@@ -21,6 +21,17 @@ NOT = 'not solved'
 NA = 'not applicable'
 METHODS = [CT, EXT_PT, ADJ_PT, EXT_KEY, KNOWN, DECIPH, NOT, NA]
 KEY_RECOVERED = {CT, EXT_PT, ADJ_PT}            # the key was rebuilt here (cryptanalysis); the rest applied one
+KEY_METHODS = {CT, EXT_PT, ADJ_PT, EXT_KEY, KNOWN}   # say how a key was obtained; valid with class "not read" too
+# George Lasry (24 Oct 2026): "it is possible to have a key mostly recovered but the text not read". A target classed
+# "not read" may carry one of KEY_METHODS: the method says how the key was obtained, outcome.class and the documents'
+# states say how much reads. Its badge then reads e.g. "key recovered from ciphertext-only · text not read".
+KEY_ONLY_LABEL = {
+    CT: 'key recovered from ciphertext-only',
+    EXT_PT: 'key recovered from external plaintext',
+    ADJ_PT: 'key recovered from adjacent plaintext',
+    EXT_KEY: 'external key matched',
+    KNOWN: 'known key applied',
+}
 
 # method -> (filter/anchor key, badge label, seal word, dateline verb)
 INFO = {
@@ -52,7 +63,8 @@ DEFINE = {
            'not mechanical when the key is polyphonic or variable-length.',
     DECIPH: 'A complete decipherment already existed (between the lines, on a separate copy, or in print). The work was '
             'transcribing the cipher and checking the decipherment against it.',
-    NOT: 'Attempted; the text was not obtained. What was learned is recorded.',
+    NOT: 'Attempted; neither the key nor the text was obtained. What was learned is recorded. A target whose key was '
+         'obtained but whose text does not read keeps the method that obtained the key, with extent "none (text not read)".',
     NA: 'Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.',
 }
 
@@ -65,14 +77,19 @@ def extent(prof):
     return {'read': 'complete', 'already solved': 'complete', 'read in part': 'partial',
             'not read': 'none'}.get(cls, 'n/a')
 
+def key_only(method, ext):
+    """True for a key obtained (by a key method) whose text does not read (George Lasry, 24 Oct 2026)."""
+    return ext == 'none' and method in KEY_METHODS
+
 def status_class(method, ext):
     """The badge colour class the site already styles: solved (green), partial, stuck, found."""
-    if method == NOT: return 'stuck'
+    if method == NOT or key_only(method, ext): return 'stuck'
     if method == NA: return 'found'
     return 'solved' if ext == 'complete' else 'partial'
 
 def badge(method, ext, cls=None):
     if method == NA: return 'offline only' if cls == 'offline only' else 'not a cipher' if cls == 'not a cipher' else LABEL[NA]
+    if key_only(method, ext): return KEY_ONLY_LABEL[method] + ' &middot; text not read'
     return LABEL[method] + (' &middot; partial' if ext == 'partial' else '')
 
 def profile_paths():
@@ -129,13 +146,13 @@ SECTION = {
     NA: '### Not applicable',
 }
 SECTION_NOTE = {
-    CT: 'Key rebuilt here from the ciphertext alone. Independent re-solutions of items solved elsewhere are marked.',
-    EXT_PT: 'Key rebuilt by matching the ciphertext against a plaintext found elsewhere (an edition, a calendar, a copy in another archive).',
-    ADJ_PT: 'Key rebuilt from plaintext beside the ciphertext: a partial interlinear or marginal decipherment, clear passages, a deciphered copy in the same file.',
-    EXT_KEY: 'An existing key not previously tied to the document was found to fit and applied.',
-    KNOWN: 'The key was already identified for the document or its correspondence and was applied.',
+    CT: 'Key rebuilt here from the ciphertext alone. Independent re-solutions of items solved elsewhere are marked. Rows with extent "none" have the key but a text that does not read.',
+    EXT_PT: 'Key rebuilt by matching the ciphertext against a plaintext found elsewhere (an edition, a calendar, a copy in another archive). Rows with extent "none" have the key but a text that does not read.',
+    ADJ_PT: 'Key rebuilt from plaintext beside the ciphertext: a partial interlinear or marginal decipherment, clear passages, a deciphered copy in the same file. Rows with extent "none" have the key but a text that does not read.',
+    EXT_KEY: 'An existing key not previously tied to the document was found to fit and applied. Rows with extent "none" have the key but a text that does not read.',
+    KNOWN: 'The key was already identified for the document or its correspondence and was applied. Rows with extent "none" have the key but a text that does not read.',
     DECIPH: 'A complete decipherment already existed; the work was transcription and checking.',
-    NOT: 'Attempted, text not obtained; the notes say why the work stops.',
+    NOT: 'Attempted, neither key nor text obtained; the notes say why the work stops.',
     NA: 'Not a cipher, or the item could not be reached.',
 }
 def section_of(heading):

@@ -156,6 +156,8 @@ def build(items):
     broke = n['ct'] + n['extpt'] + n['adjpt']            # key recovered here by cryptanalysis
     applied = n['extkey'] + n['known'] + n['deciph']     # an existing key or decipherment applied
     got = [it for it in items if it['cat'] in ('ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph')]
+    keyonly = lambda cats: sum(1 for it in got if it['cat'] in cats and it['ext'].startswith('none'))  # key, text not read (Lasry, 24 Oct 2026)
+    ko_b, ko_a = keyonly(('ct', 'extpt', 'adjpt')), keyonly(('extkey', 'known', 'deciph'))
     part = sum(1 for it in got if it['ext'] == 'partial')
     attacked = total - n['na'] - n['active']
     read = [it for it in got if it['ext'] == 'complete' and it['year']]
@@ -178,8 +180,8 @@ def build(items):
     lines.append('<div class="sb-grid">')
     by_contrib = sum(1 for it in items if it['cat'] in ('ct', 'extpt', 'adjpt') and it['outside'])
     who = f' {by_contrib} of them with <a href="contributors.html">outside contributors</a>.' if by_contrib else ''
-    lines.append(f'<div class="sb-big"><b>{broke}</b><span>keys recovered in this ledger by cryptanalysis: {n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}</span></div>')
-    lines.append(f'<div class="sb-big"><b>{applied}</b><span>texts obtained with a key or decipherment that already existed: {n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.</span></div>')
+    lines.append(f'<div class="sb-big"><b>{broke}</b><span>keys recovered in this ledger by cryptanalysis: {n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></div>')
+    lines.append(f'<div class="sb-big"><b>{applied}</b><span>targets worked with a key or decipherment that already existed: {n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></div>')
     lines.append(f'<div class="sb-big"><b>{n["notsolved"]}</b><span>attempts that stop without the text, each with the reason in its notes.</span></div>')
     lines.append(f'<div class="sb-big"><b>{silence:,}</b><span>years of silence ended, summed over the {len(read)} dated texts obtained in full ({part} more are partial): each had waited from its date until {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
     lines.append('</div>')

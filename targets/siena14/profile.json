@@ -150,11 +150,12 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no14b.txt (revised transcription) and no14_signs.tok; readings no14_reading2.txt (second pass) and no14_reading.txt; key key14.txt", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): no14_reading.txt read line by line. L01-L06 build Italian sentences with bracketed words (reviewed B); from L07 nearly every line has unread runs, queried words and code signs, so the rest is split off as decoded, not read (35% of sentences clean in docs/_check_reading.py). fraction_read 0.586 -> 0.28 (tokens in the lines that read).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "reading", "what": "Re-read b34: DECODE R4802 re-fetched (no attachment); L07-L26 written out from the second pass as transcripts/no14_L07-L26_reading.md with English; scored 0.048 plain, 0.143 explicit holes; look-alike classes (Q/Q4, 8/TH, P/PHI) carry the doubtful words, above the 3% limit. L07 compared on the full-size image: no sign resolves further. Kept decoded, not read.", "result": "failed", "technique": ["manual reconstruction", "language-model scoring"]},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring", "contextual inference"], "what": "Verify v8: L01-L06 running text (transcripts/no14_L01-L06_reading.md) scored with v2_score.py: 0.0 explicit holes (0/7), hole rate 0.289; doubtful words in every sentence. Back to decoded, not read; no line reads: class not read, method not solved (key recovered ciphertext-only as a part), fraction_read 0.", "result": "failed"}
+  {"date": "2026-10-23", "kind": "verification", "technique": ["language-model scoring", "contextual inference"], "what": "Verify v8: L01-L06 running text (transcripts/no14_L01-L06_reading.md) scored with v2_score.py: 0.0 explicit holes (0/7), hole rate 0.289; doubtful words in every sentence. Back to decoded, not read; no line reads: class not read, method not solved (key recovered ciphertext-only as a part), fraction_read 0.", "result": "failed"},
+  {"date": "2026-10-24", "kind": "verification", "technique": ["other"], "what": "Method restored: key obtained by homsolve2 annealing with no crib (key recovered from ciphertext-only); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 845, "types": 35, "tokens_per_type": 24.14, "score": -2.153, "nulls": {"random keys": {"n": 200, "mean": -3.953, "sd": 0.296, "max": -3.304, "z": 6.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.828, "sd": 0.023, "max": -2.793, "z": 29.9, "p": 0.1429}}, "power": -2.659, "verdict": "pass", "notes": "claimed per-occurrence score -2.004; polyphony 0.043; 636 unread tokens left out; annealer on the real text from random keys reached -2.659"}, 
-  "method": "not solved",
-  "method_basis": "homsolve2 (staged order 3->4 annealing, frequency-seeded restarts) reached the key with no crib, the same key a hand crib had pinned first.",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "homsolve2 (staged order 3->4 annealing, frequency-seeded restarts) reached the key with no crib, the same key a hand crib had pinned first. Method restored 24 Oct 2026 (George Lasry: a key can be mostly recovered while the text is not read): the key was obtained by homsolve2 annealing with no crib; class stays not read, as the text does not read.",
   "contribution": [
    "key recovered",
    "transcription",
@@ -227,7 +228,7 @@
     "label": "no. 14 (key recovered ciphertext-only; decoded, not read)",
     "records": "DECODE R4802",
     "method": "key recovered from ciphertext-only",
-    "extent": "partial",
+    "extent": "none",
     "basis": "homsolve2 reached the key with no crib (validation pass, z 6.1 against random keys); the decode gives the gist (arrival, Domenico's talk with a servant of <7H>, Tuscany and the three powers) but doubtful words in every sentence: L01-L06 0.0, L07-L26 0.143 clean sentences on explicit holes. Decoded, not read (verify v8, 23 Oct 2026)."
    }
   ]

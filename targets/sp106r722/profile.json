@@ -457,6 +457,13 @@
       "kind": "verification",
       "what": "Entry split from sp106box10 under the one-key rule (Lasry, 14 Oct 2026): the 1625 letter R722 and the ten worksheets on it are a code of their own. Counted r722_groups.txt again: 420 groups, 117 types. No new attack.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "verification",
+      "technique": ["other"],
+      "what": "Method checked after George Lasry (24 Oct 2026) separated key and text: stays not solved, because only a handful of values are fixed from clear junctions; annealing gives no agreeing key.",
+      "result": "failed"
     }
   ],
   "outcome": {
