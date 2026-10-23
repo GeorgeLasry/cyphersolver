@@ -136,7 +136,7 @@
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "Stafford's letter key was rebuilt by aligning the f. 71 runs (R8501) with their contemporary decipherment on f. 72r and the glossed words on f. 73r (R8502), both in the same volume, Harley MS 1582.",
   "contribution": ["transcription", "key recovered", "sender or date identified"],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 1.0,
   "key": "partial",
   "codes_open": {
@@ -158,7 +158,14 @@
     "decryption": "plaintext.txt",
     "summary": "A clear holograph despatch from Stafford in Paris about Captain Blaize, Locatello, Cambrai and a book printed at Rome by Dr Sanders; the five ciphered runs of the postscript say that Junius' son came from Cambrai with letters, about papers of his credit with Balagny (governor of Cambrai), and Stafford's fear that Balagny means them some mischief. Key rebuilt from the glossed and deciphered sibling letters in the same volume.",
     "language": "en",
-    "read_share": 1.0
+    "read_share": 0.889,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-24",
+     "note": "Rests on the key rebuilt from the glossed sibling letters (plaintext.txt): five short cipher runs inside a clear postscript (Junius sonne / from Cambraye / credit with Balagny / Balagny / mayntayne?). Each run reads as sense in its clear sentence (Junius' son came from Cambrai; his credit with Balagny; Stafford fears Balagny means them mischief), but the last run 'mayntayne' is probable only, two signs uncertain. v10 counts 1.0 because the doubt mark is not in (?) form; counted by hand 8 of 9 words certain, 0.889: read in part."
+    },
+    "state": "read in part"
    }
   ],
   "key_file": ["key.tsv", "alignment.txt"]

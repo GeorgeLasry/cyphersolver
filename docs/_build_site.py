@@ -1674,7 +1674,7 @@ PAGES = [
          blurb='DECODE R8505, catalogued with no author, date or language, is identified as a French memoir on Henri de Navarre&rsquo;s party, filed among Stafford&rsquo;s papers. Its key, a homophonic alphabet of about fifty graphic symbols in which m is written as a group of dots, was recovered from the ciphertext alone. 95.1% of the deciphered characters fall in French words; ten nomenclator numbers for names are open.',
          quote='&ldquo;auec le prince de Parme pour lui rendre les places&rdquo;',
          rights='Manuscript: British Library, Harley MS 1582 (images on DECODE; details reproduced with credit)'),
-    dict(slug='harley1582r8500', label='Stafford August 1586', year='1586', y=1586.63, place='Paris &rarr; Walsingham', st='solved', stt='read',
+    dict(slug='harley1582r8500', label='Stafford August 1586', year='1586', y=1586.63, place='Paris &rarr; Walsingham', st='partial', stt='read in part',
          title='Sir Edward Stafford to Walsingham, Paris, 20 August 1586',
          blurb='A clear holograph despatch from Paris with five short cipher runs in the postscript, with no decipherment on the page and not calendared. They were deciphered with Stafford&rsquo;s letter key, recovered here from a contemporary decipherment and glosses on sibling letters in the same volume (adjacent plaintext). Junius&rsquo; son came from Cambrai with papers of his credit with Balagny.',
          quote='&ldquo;came hither Junius sonne from Cambraye&rdquo;',
