@@ -230,3 +230,63 @@ so they are not image defects (except the blot on l. 18): either this hand uses 
 not give (A for n, a tall crossed d for c or uv, g for d) or the writer slipped. A third pass would need a real
 labelled atlas of this hand (hand-mapped f. 124v lines, not the automatic alignment) to test those values across
 both pages before adopting them.
+
+## Pass 3 on f. 124r (22 Oct 2026): a per-label atlas of the hand, tested on the open words
+
+`_check_reading.py --file` on the f. 124r section alone (cut to a scratch file), before: 32 sentences, 18 clean,
+**clean share 0.562**, hole rate 0.119.
+
+**The atlas** (method in `reading_f123_log.md`, Pass 3): all 5,111 tokens of ff. 123r-124v mapped to their cut figures
+by an alignment with width and appearance models per label, checked on overlays, each token given its letter from the
+current readings by forced alignment (f. 124r: 1,331 tokens carried, 30 against the reading), and contact sheets made
+per label and per family. Crops in the session scratchpad, not in the repo.
+
+**What it shows for this page** (counts over the four pages; split accuracy from a classifier trained on the other leaf):
+- **A** is one shape and l in all 20 places, including *[?délivrance]* (l. 14): so the A there is a slip of the
+  writer for n, not a second value; A = n is not adopted.
+- **tm / th**: the crossed oval (θ) is m and the tall crossed d is s (f. 124: 39 of 45 m, 55 of 60 s; f. 123 about
+  the same), with one figure in ten the other way, so the sets stay m/s. On l. 22 the figure after *peult estre* is the
+  θ: the run reads *m i e l l + estant*, not *si elles tant*; written **[?mieulx] estant sur les lieus** (m, i, e, l
+  carried; u and x not written, the second l where x is wanted). The figure after *lieus* (l. 23) is the tall d, s:
+  a doubled s, left […].
+- **y** is two shapes: the v-shaped y is g, the g-shaped figure (plain or barred) is u. The long-barred crossed g of
+  l. 11 (*[?affin]*), l. 15 (before *vostre*) and l. 41 is the u-figure, as in *fruicts* and *puisqu'ils* on f. 124v;
+  with it *[?affin]* gives *o s/u u i n*, still no word; the four figures before *vostre* (l. 15) give *a u* + a
+  filled 6 (i/n/s) + a tall-stemmed d (s/c): *auis*, *auns*, no word that fits.
+- **B**: the Ω-shaped figure is e and the looped b i/n. The hole after *faveur* (l. 14) is the Ω (e): *faveur e à une
+  autre fois*, still not a word; left […].
+- The small curl (ls here, U and Cv elsewhere) is s or x, never l (8 of 8 ls are s).
+- **Label change** (`brackx2026/corrections/f124r_v3.tsv`, 1 row; corrected file `f124r_v3_cipher.txt`): l. 7 token
+  32, y -> th: the figure is the tall crossed d (s), not a y. The reading already had s (*con s i-*).
+
+**Checked and left as they are** (the figures are the ordinary shapes of their classes, so these are slips or words
+not recovered): *[?Quercy]* (q u e c i, no r; the last figure is E2, the i the writer also uses for y),
+*[?deffraier]* (seven figures for eight letters), *[?espres]* (the last figure is an e with a stroke below,
+not the e of the e sheet), *[?préjudiciables]* (no r, one i), *[?parlent]* (the h figure, e/u, where n
+is wanted), *[?crains]* (the first figure is the tall crossed d, s, where c is wanted), *[?effort]* (the o figure,
+i/a, where o is wanted), *[?vendre]*, *[?recouvrer]*, ll. 7-8 *[?consi…]* (the second figure of l. 8 is the r/f L;
+the three interlinear figures are not placed), l. 41.
+
+**Codes from other leaves.** 64 = *quelque*, 62 = *peu*, 73 = *le Roy*, 63 = *après* were tried in the slots of 60
+(*l'on ne sauroit [60] [?faisant]*, *ordre [60] faire monstre*) and 67 (*avec quelque [67]*, *pour nostre [67]*). None
+fits; not adopted. 60 still wants *de* or *pour*, 67 a noun such as *troupe*.
+
+**Key.** No value adopted; `key_cipher1_f124.json` is unchanged.
+
+| pass | file | sentences | clean | share | hole rate |
+|---|---|---|---|---|---|
+| 2 | f. 124r section | 32 | 18 | 0.562 | 0.119 |
+| 3 | f. 124r section | 32 | 18 | **0.562** | 0.121 |
+| 3 | f. 124r section, English | 35 | 26 | 0.743 | 0.088 |
+| 3 | `texts/reading_f124.md`, whole file | 136 | 81 | 0.596 | 0.143 |
+
+The share does not move: the one sentence changed (*Ce que je comprens, peult estre, [?mieulx] estant sur les lieus
+[…] que ceuls qui en [?parlent] de plus long*) still has more holes than its length allows, now with a sense.
+
+## What stays open on f. 124r after pass 3
+
+The atlas was the escalation step pass 2 asked for. It finds no letter value the merged key lacks: the breaks are on
+figures that are the ordinary shapes of their labels, so they are the writer's omissions and slips (A for n, h for n,
+the crossed d for c, one figure short in *Quercy*, *deffraier*, *préjudiciables*), words still not recovered from
+their sets (l. 4 after code 60, ll. 7-8, l. 15, l. 25, l. 37, l. 41), and the codes 60 and 67. The page stays below
+the 0.70 bar; a further pass would need a clear copy of the despatch or another letter in this hand with the same codes.

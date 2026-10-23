@@ -10,7 +10,9 @@ sentence against each figure's letter set. Every line of both pages was cropped 
 line of the recto (l. 37) was transcribed here from the image. A second pass re-checked f. 123r line by line,
 figure by figure, against an exemplar set cut from this hand (straightened line strips with every figure numbered;
 crops kept outside the repository). The label changes, the corrected figures, the leaf key and the passes are listed
-in the files named at the end.
+in the files named at the end. A third pass built an atlas of the hand (every figure of ff. 123r-124v cut and
+labelled from the reading) and tested its shape classes on the open words; it adds *[?à satisfaire]* on l. 7 and
+changes no key value.
 
 Marks: a word in square brackets with a question mark is carried only in part by its figures; the ellipsis in
 brackets is a run of figures that does not form a word; a number in brackets is a code group not identified; [UNK]
@@ -35,7 +37,7 @@ sense wants *à Vostre Majesté* before cipher l. 1 *[UNK] la nécessité*, but 
 [l. 1] [UNK] la [?nécessité] que je [?prévois] où nous nous [l. 2] [?retrouverions] [16] vos armées se
 [l. 3] [?reiondroient], laquele je [?trouve] [l. 4] maintenant beaucoup plus grande que je ne l'avois […],
 [l. 5] commançant à sortir les clameurs et [l. 6] demandes de tous les gens de [?guerres], que l'on a […]
-[l. 7] tousiours remis […] [l. 8] [16] nous serions tous ensemble.
+[l. 7] tousiours remis [?à satisfaire] […] [l. 8] [16] nous serions tous ensemble.
 
 À quoy [l. 9] je suis si mal préparé que de plus de cent [l. 10] mile escus qu'il faudroict comptant, [l. 11] non pas
 pour les paier d'un mois, mais pour [?optenir] [l. 12] d'eus ung peu de [?pacience], i vivre.
@@ -115,8 +117,9 @@ f. 123r (second pass, figure by figure; changes in `brackx2026/corrections/f123r
   virgule), e, t, the V with an underbar, the dotted v and B: *a p r e u n e*, no word.
 - l. 6–7: *[?guerres]*: g u e rr s, no final e; the five figures after *que l'on* (Ca box ff dd m: *a u o s t*) do
   not make a word. l. 7–8: the figure Brackx writes oo2 (two o joined by a long bar) is the barred double o, ff, of
-  *affaires* and *deffaillent* on f. 123v; with it the run after *remis* reads *a s a t ff a i r e e s a t ff r e a*
-  and still does not form.
+  *affaires* and *deffaillent* on f. 123v; with it the run after *remis* reads *a s a t ff a i r e e s a t ff r e a*.
+  Third pass: the first nine figures are read *[?à satisfaire]* (*a sat·ffaire*: every figure carried, the *is* of
+  *satisfaire* not written); the last eight (*e s a t ff r e a*) still do not form.
 - l. 11: *[?optenir]*: *pour opt[e]nir*, one e short; the r of *pour* is a small hooked c.
 - l. 12: *[?pacience]*: *p a c i e c e*, the n missing (the double cross is c, as everywhere on the page); the
   ε-figure after it is i, *i vivre* (*y vivre*).

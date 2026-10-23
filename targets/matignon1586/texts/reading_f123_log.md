@@ -191,3 +191,79 @@ that do not form:
 - l. 22-23 *maladie, [s e t s t] si mal vestue*; l. 26 *n'[i/n/s n/o]*.
 - Codes 16 (three times, fits *quand*), 66, 101, 102 open: no clear copy or sibling gives them; ff. 124r-v (the same
   despatch) are the next place to look.
+
+## Pass 3 (22 Oct 2026): a per-label atlas of the hand, tested on the open words of f. 123r
+
+`_check_reading.py --file` on the f. 123r cipher section alone (cut to a scratch file), before: 27 sentences, 11 clean,
+**clean share 0.407**, hole rate 0.152.
+
+**The atlas.** All four pages of the despatch were cut, so that the figures of the pages that read (f. 123v 0.66,
+f. 124v 0.72) label the figures of the rectos. f. 123v (canvas 130 left) was tracked in nine windows and fitted the
+same way as ff. 124r-v; f. 123r used the pass-2 deskewed strips. Each line was cut into figures by ink projection;
+5,111 tokens (f. 123r 1,138, f. 123v 1,383, f. 124r 1,410, f. 124v 1,180) were mapped to the cut figures by a
+dynamic-programming alignment with a width model per label and, in later rounds, an appearance model per label
+(mean figure image; five rounds, mean fit 0.74 -> 0.85). The automatic map of pass 2 drifted; this one was checked
+line by line on overlays (label and reading letter printed under each figure: f. 124v l. 9, f. 124r ll. 7, 8, 15,
+22, 23, f. 123r ll. 6-8, 35-36) and is right except where a figure is merged with its neighbour (Ze after a crossed
+d is the usual case: 33 of 126 Ze were placed). Each token was given the letter it takes in the current reading by a
+forced alignment of each page's reading onto its figures (f. 123r: 1,084 tokens carried, 10 against the reading).
+Contact sheets were then made per label (59 labels with three or more figures; each crop captioned with page, line,
+token and its reading letter) and per family of confusable labels. Sheets and crops are in the session scratchpad
+(`p3/sh/`), not in the repo.
+
+**One label, two shapes** (seen on the sheets, then measured with a nearest-mean classifier trained on the other
+leaf: train on ff. 124r-v, test on ff. 123r-v and the reverse):
+- **tm / th**: a small oval crossed by a horizontal bar (θ) and a tall looped d crossed at its foot. The θ is m and
+  the tall d is s: on f. 123 the classifier puts 44 of 54 m and 45 of 50 s in their own class, on f. 124 39 of 45 m
+  and 55 of 60 s. Brackx uses both labels for the tall d. It is a strong tendency,
+  not a rule: about one figure in ten goes the other way (on f. 123r *douse*, *les* l. 5 and l. 25 have a θ for s), so
+  the key keeps m/s for both labels.
+- **B**: a hooked Ω-like figure is e (*armées*, *sont*, *laquele*, *employée*, 43 readings); the looped b is i or n
+  (62). The classifier separates them at 0.81.
+- **y**: the v-shaped y with a tail is g (30 readings); the g-shaped figure, plain or crossed by a bar, is u (127),
+  including the long-barred crossed g of f. 124r ll. 11, 15, 41 and f. 124v ll. 1-2 (*fruicts*, *puisqu'ils*,
+  *doivent*). Separated at 0.92.
+- **U**: on f. 123r Brackx's U is mostly the V with an underbar (e, as pass 1 found: Uv); on ff. 123v-124v it is
+  mostly the small curl, s or x. Separated at 0.93.
+- **qs**: the plain 9 is s and u alike; a trailing stroke after it goes with u more often, but the classifier
+  reaches only 0.73: not a usable split.
+- One shape, uniform value: A (20, all l), n (110, all l), Cl (the C with an r inside, 43, all l), Ca (63, a),
+  q1 (the q with two bars, o), om (w-shape, q), E (t), T (r), R and c (p), w and oo (d), h (e), 3 (i, four e), 6
+  (i/n), E2 (i, also written for y), S (p/s).
+
+**One shape, several labels:** the small curl is Brackx's U on ff. 123v-124v, Cv on f. 123r (pass 1) and ls on f. 124r
+(pass 1); it is s or x everywhere (ls = l is not attested on any sheet: 8 of 8 s). The tall crossed d is th and tm.
+The barred double o is oob, oo2 and ao + ao. The crossed q with two bars is q1 and, twice on f. 123r ll. 35-36 (*[?incommodités]*,
+*[?m'arrivent]*), pass 1's qt: the qt sheet matches q1 (o), not any t figure, so those two t stay unconfirmed.
+
+**Tests on the open words of f. 123r.**
+- l. 7, the run after *remis*: Ca qs ao E oob ao E2 L U = *a s a t ff a i r e*. Read **[?à satisfaire]**: every
+  figure is carried and in order, the *is* of *satisfaire* is not written (as other one-letter omissions on the page);
+  context chooses s for qs (the shape classifier leans u here, 0.87 against 0.72, so the word stays marked). The next
+  eight figures (*e s a t ff r e a*; the B among them is the Ω-shaped e) still do not form: […].
+- l. 4 after *l'avois*: the B is the Ω-shaped e and the U a V with an underbar (e): *a p r e e n e*, no word.
+- l. 22-23, *maladie, [Cv B Ze dd m]*: the B is closer to the b shape (i, 0.74 against 0.72): *s i t s t*, no word.
+- l. 26 *n'[6 ff]*: 6 and the slanted ff are each one shape with two values (i/n, n/o); no reading of the two forms.
+- [?prévois] (Hl), [UNK] (l. 1), q4 (l. 22): no second instance on any of the four pages; values stay unknown.
+- The one-figure-short words (*retrouerions*, *reiondroiet*, *troue*, *optnir*, *paciece*, *protesse*, *forcs*,
+  *lesquls*, *gendames*, *velent*, *impotus*, *quiet*, *pelt*, *dffailent*): the atlas shows the figures there are
+  the ordinary ones of their class, so they are writer's omissions; no value change helps any of them.
+
+**Codes from other leaves.** 64 = *quelque*, 62 = *peu*, 73 = *le Roy* (f. 177's copy) and 63 = *après* (f. 201) were
+tried in the slots of 16 (f. 123r ll. 2, 8, 36), 66 (l. 21), 101 and 102 (l. 29), and 60, 67 on f. 124. None fits any
+slot (*Toute l'[66]* wants *armée*; 16 wants *quand*; *Les [101] et [102]* wants two kinds of troops). Not adopted.
+
+**Key.** No value adopted; `key_cipher1_f123.json` is unchanged. No label change on f. 123r in this pass (no v3
+correction file for this page).
+
+`_check_reading.py --file` on the f. 123r cipher section after pass 3: 27 sentences, 11 clean, **clean share 0.407**,
+hole rate 0.154 (unchanged: the new word sits in a sentence that keeps two other holes). English f. 123r section: 29
+sentences, 14 clean, 0.483, hole rate 0.117 (pass 2: 15, 0.517; *[?to be satisfied]* adds a hole to its sentence).
+Whole file `reading_f123.md`: 196 sentences, 105 clean, 0.536, hole rate 0.159.
+
+## What stays open on f. 123r after pass 3
+
+The atlas closes the escalation step pass 2 asked for. Every remaining break is legible and its figures are the
+ordinary shapes of their labels, so they are writer's omissions or runs whose words are not recovered, plus five
+codes (16, 66, 101, 102 and the unknown signs Hl, q4, UNK) with no value on any leaf. The recto stays below the
+0.70 bar; a further pass would need a clear copy or another letter in this hand with the same codes.

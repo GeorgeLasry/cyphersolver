@@ -21,7 +21,7 @@ Marshal de Matignon gave me about it: that without that [l. 18] the army [?he] h
 ruined.
 
 I make this proposal, Sire, [l. 20] very unwillingly, because I know [l. 21] that they are very
-[?prejudicial] to your service. This I [l. 22] understand, perhaps, if they so much on [l. 23] the spot […] as those who speak of it from [l. 24] further off.
+[?prejudicial] to your service. This I [l. 22] understand perhaps [?better], being on [l. 23] the spot […], than those who speak of it from [l. 24] further off.
 
 And because I know that your enemies will draw from it a [l. 25] great advantage for their […].
 

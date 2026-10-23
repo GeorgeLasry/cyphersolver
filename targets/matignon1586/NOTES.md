@@ -1,7 +1,7 @@
 # Forget / Mayenne, BnF fr. 15572 (+ fr. 15571 f. 177), 1585–86 — Mayenne–Forget Cipher-1
 
-Status: in progress. Written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)); page and
-ledgers brought up to date the same evening. ff. 123r and 124r are still workable, so the target stays open.
+Status: read in part. Written up 22 Oct 2026 ([`docs/matignon1586.html`](../../docs/matignon1586.html)); page and
+ledgers brought up to date the same evening. ff. 123r and 124r stay decoded, not read after three passes each; what remains needs a clear copy or another letter in the same hand (Remaining gaps).
 
 **22 Oct 2026, the day in short.** George Lasry reviewed the page: "The decryptions are not useful. They seem to have
 many errors, making it impossible to assemble coherent French sentences." The nine pages without a clear copy were
@@ -515,8 +515,8 @@ where there is one). Per document 0.51 (f. 123r) to 0.77 (f. 201).
 
 ## Remaining gaps
 
-- two pages decoded, not read: f. 123r (0.41 clean sentences after two passes) and f. 124r (0.56 after two passes) - blocker: not-attempted; figures legible, the breaks are letter values the merged key lacks or writer's slips; next a hand-mapped atlas of each hand to test them. ff. 110, 123v, 124v, 173, 196, 196v, 201 and fr. 15571 f. 177 were read as sentences on 22 Oct 2026 (texts/reading_*.md)
-- f. 110: ll. 1-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47 inside a leaf that reads at 0.70 - blocker: not-attempted
+- ff. 123r (0.41) and 124r (0.56) decoded, not read - blocker: no-key-material; three passes each on the images (labels re-cut figure by figure, a per-label atlas of the hand's 5,111 figures with cross-leaf classifiers, code values from other leaves tried): the remaining breaks fall on legible figures of their ordinary shapes, so they are the writer's omissions or slips and codes 16, 60, 66, 67, 101, 102 with no value anywhere; only a clear copy of the Marmande despatch or another letter in this hand using the same codes would settle them (none found on canvases 126-139)
+- f. 110: ll. 1-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47 inside a leaf that reads at 0.70 - blocker: no-key-material; three passes; legible figures that no key value consistent with the leaf fits, and codes with no gloss; l. 1 corner illegible
 - code groups 16, 19, 23, 45, 47 (f. 110), 60, 67 (f. 124), 65, 99 (f. 196v), 101, 102, 103, 9, and the name code 98 - blocker: open-codes; one to three contexts each, none in a clear copy (9 is two different words against the copies). Settled 22 Oct 2026: 64 = *quelque*, 62 = *peu*, 73 = *le Roy* on fr. 15571 f. 177 (its clear copy f. 176), 63 = *après* (f. 201's clear tail), `me` a null on f. 177
 - the copy of f. 20r (rest of f. 19v, about 11 lines) - blocker: open-codes; read by Brackx but not given in #78, so his 86.7% for f. 20r is unchecked here
 

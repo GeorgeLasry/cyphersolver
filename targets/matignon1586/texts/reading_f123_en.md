@@ -16,7 +16,7 @@ have always [?described] […]
 
 [l. 1] [UNK] the [?necessity] in which I [?foresee] we would [l. 2] [?find] ourselves [16] your armies were to
 [l. 3] [?join up again], which I [?find] [l. 4] now much greater than I had […], [l. 5] as the outcry and
-[l. 6] demands of all the men of [?war] begin to break out, which have […] [l. 7] always been put off […]
+[l. 6] demands of all the men of [?war] begin to break out, which have […] [l. 7] always been put off [?to be satisfied] […]
 [l. 8] [16] we should all be together.
 
 For which [l. 9] I am so ill prepared that, of more than a hundred [l. 10] thousand écus that would be needed in

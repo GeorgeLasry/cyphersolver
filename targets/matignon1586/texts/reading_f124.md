@@ -14,7 +14,9 @@ the leaf key and the passes. The beginning of the sentence on l. 1 is on f. 123v
 Second pass on f. 124r (22 Oct 2026): every line was cut again along its own slope and compared figure by
 figure with the labels; ten more label changes (`brackx2026/corrections/f124r_v2.tsv`) give *armée*, *sans
 cela*, *je sai qu'elles*, *sur les lieus*, *nous a doné* and a candidate *[?faisant]* after code 60. f. 124v
-is unchanged.
+is unchanged. Third pass (22 Oct 2026): an atlas of this hand (every figure of ff. 123r-124v cut and labelled from
+the reading) shows the crossed oval and the tall crossed d, both labelled tm or th, as two shapes, mostly m and s;
+l. 22 now reads *[?mieulx] estant* where the crossed oval had been taken as s (*si elles tant*). No key value changed.
 
 Line numbers: a word divided between two lines stands after the marker of the line on which it ends.
 Marks: a word in square brackets with a question mark is carried only in part by its figures. The ellipsis in
@@ -39,7 +41,7 @@ Où je ne suis venu [l. 15] que […] vostre [?espres] [l. 16] commandement et l
 [l. 19] toute ruinée.
 
 Je fais, Sire, ceste proposicion [l. 20] très mal volontiers, parce que je sai [l. 21] qu'elles sont très
-[?préjudiciables] à vostre service. Ce que [l. 22] je comprens, peult estre, si elles tant sur [l. 23] les
+[?préjudiciables] à vostre service. Ce que [l. 22] je comprens, peult estre, [?mieulx] estant sur [l. 23] les
 lieus […] que ceuls qui en [?parlent] de plus [l. 24] long.
 
 Et que je sai que vos ennemis en tireront ung [l. 25] grant advantaige pour leur […].
