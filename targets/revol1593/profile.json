@@ -319,6 +319,18 @@
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/f88_decode60.txt, f146v_decode60.txt and f157v_decode60.txt read: token-by-token decoder output, headed 'NOT a reading', with a few anchors and nothing between them that reads. All three entries relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key kept as a part); fraction_read unknown -> 0 (estimated).",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Re-read (REREAD_BRIEF, b15): is there a text of ff. 88, 146v, 157v? Not DECODE records (BnF fr. 3985/3986 microfilm on Gallica); no interlinear decipherment on the three pages (canvas 287 re-checked at full resolution). Memoires de Nevers part 2 (bpt6k64451005): the four pages where Gallica's search had found 'Reuol' (pp. 324, 425, 453, 513) fetched through openapi IIIF and read: none prints a Nevers-Revol letter of 1593. Gallica ContentSearch now returns a Cloudflare block; archive.org has no copy.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "f. 146v: canvas 287 fetched at full resolution (4949 x 6957, openapi IIIF v3) and the three full cipher lines re-read in native-resolution strips. The anchors hold ('nostre ... de l'absolution et que ... Je', 'nous [?au]rions et a la verite', 'Mr de Mercure'), but each of the copyist's forms still maps to two or three table entries and no clause between the anchors reads. ff. 88 and 157v not re-transcribed. All three kept decoded, not read; the next step is the glyph atlas from the interlined Instruction (fr. 3985 c. 264-268).",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -338,12 +350,12 @@
    "key confirms",
    "contemporary decipherment"
   ],
-  "notes": "Read in part only on f. 88r; the blocker so far is palaeographic (the copyist's cursive forms), and three passages are still to transcribe (Status: in progress).",
+  "notes": "Read in part only on f. 88r; the blocker so far is palaeographic (the copyist's cursive forms), and three passages are still to transcribe (Status: in progress). 23 Oct 2026, re-read (b15): no contemporary or printed text of ff. 88, 146v, 157v; f. 146v re-read at full resolution without a reading; all three stay decoded, not read (texts/f88-f146v-f157v_reread_log.md).",
   "gaps": [
    {
     "item": "fr. 3986 f. 146v, Revol 7 Oct 1593 (nine cipher lines, key no. 60)",
-    "blocker": "illegible",
-    "detail": "transcribed at 2.4-3.2x but copyist's cursive forms map to two or three table entries; atlas pass started, not finished"
+    "blocker": "not-attempted",
+    "detail": "re-read on the full-resolution canvas 287 on 23 Oct 2026 (b15): signs legible, anchors hold, but the copyist's forms map to two or three table entries; finish the glyph atlas from the interlined Instruction (fr. 3985 c. 264-268) and re-transcribe"
    },
    {
     "item": "fr. 3986 f. 157v, Revol 9 Oct 1593",
@@ -352,8 +364,8 @@
    },
    {
     "item": "fr. 3985 f. 88r (21 Aug) - read in part (de absolution, le Roy, qu'il); rest of R3-R6",
-    "blocker": "illegible",
-    "detail": "bitonal microfilm copy in the copyist's cursive, the contributor's transcription has variant readings at about one sign in six and no colour scan exists"
+    "blocker": "not-attempted",
+    "detail": "bitonal microfilm canvases 176-177 and the contributor's transcription (variants at one sign in six); no text in print (Memoires de Nevers ii checked 23 Oct 2026); re-transcribe against the finished glyph atlas"
    },
    {
     "item": "fr. 3985 f. 88v (21 Aug)",
@@ -403,33 +415,33 @@
   "texts": [
    {
     "doc": "f88",
+    "note": "Re-read 23 Oct 2026 (b15, texts/f88-f146v-f157v_reread_log.md): no contemporary or printed text (no interline on f. 88; Memoires de Nevers ii pp. 324, 425, 453, 513 checked, no Revol letter; Gallica ContentSearch blocked). The decode of the contributor's transcription with every variant gives only de absolution, le Roy, qu'il. Blocker: not-attempted - a re-transcription of canvases 176-177 against a finished glyph atlas of the copyist's forms (from the interlined Instruction, fr. 3985 c. 264-268); the microfilm is bitonal.",
     "label": "BnF fr. 3985 f. 88r-v, 21 Aug 1593",
     "transcription": "f88/ct_3985_f88.txt",
     "decryption": "texts/f88_decode60.txt",
     "summary": "Nevers to Louis de Revol, secretary of state, on the papal absolution of Henri IV; the transcription is Robert Węglarek's (tunarob, issue #32). Only 'de absolution' (shuffle-controlled), 'le Roy' and 'qu'il' read; the decoder output with key no. 60 is given as it stands, not as a reading.",
-    "note": "Token-by-token decoder output with key no. 60, headed 'NOT a reading': three words (de absolution, le Roy, qu'il) among unresolved tokens; no sentence (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "fr"
+    "language": "fr",
+    "state": "decoded, not read"
    },
    {
     "doc": "f146v",
+    "note": "Re-read 23 Oct 2026 (b15, texts/f88-f146v-f157v_reread_log.md): no contemporary or printed text. Canvas 287 re-read at full resolution (openapi IIIF): the anchors hold (nostre ... de l'absolution et que ... Je; nous [?au]rions et a la verite; Mr de Mercure), but between them each copyist form maps to two or three table entries and no clause reads. Blocker: not-attempted - finish the glyph atlas from the interlined Instruction (fr. 3985 c. 264-268) and re-transcribe.",
     "label": "BnF fr. 3986 f. 146v, 7 Oct 1593",
     "transcription": "ct_3986_f146v.txt",
     "decryption": "texts/f146v_decode60.txt",
     "summary": "Nevers to Revol, 7 Oct 1593. Tomokiyo's anchors (l'absolution, à la vérité, intérêt) come out of key no. 60, but the text between them does not yet read; decoder output only.",
-    "note": "Decoder output: Tomokiyo's anchors (l'absolution, à la vérité, intérêt) come out of the table, the text between them does not read (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "fr"
+    "language": "fr",
+    "state": "decoded, not read"
    },
    {
     "doc": "f157v",
+    "note": "Re-read 23 Oct 2026 (b15, texts/f88-f146v-f157v_reread_log.md): no contemporary or printed text; not re-transcribed. Blocker: illegible - faded, clear cursive and cipher run together and the cipher extent is not segmented (17 Sept 2026); the glyph atlas is also unfinished.",
     "label": "BnF fr. 3986 f. 157v, Coire, 9 Oct 1593",
     "transcription": "ct_3986_f157v.txt",
     "decryption": "texts/f157v_decode60.txt",
     "summary": "Nevers to Revol from Coire, 9 Oct 1593: about 90 symbols in the first lines of f. 157v; no anchor secured, and the transcription over-reads faded clear cursive as cipher (NOTES). Decoder output only.",
-    "note": "Decoder output on a faded passage where clear cursive and cipher run together; nothing reads (reading audit, 22 Oct 2026).",
-    "state": "decoded, not read",
-    "language": "fr"
+    "language": "fr",
+    "state": "decoded, not read"
    }
   ],
   "parts": [

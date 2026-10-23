@@ -16,6 +16,13 @@ ff. 88r, 146v and 157v are **decoded, not read**: token-by-token decoder output 
 them that reads. Class read in part -> not read, method -> not solved (key no. 60 kept as a part); fraction_read 0. The
 outcome line below is superseded.
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b15).** Is there a text? No: no interlinear on ff. 88, 146v, 157v
+(canvas 287 re-checked at full resolution through openapi IIIF), and Memoires de Nevers ii pp. 324, 425, 453, 513 (the
+pages where Gallica's search had found "Reuol") print no Nevers-Revol letter of 1593; Gallica ContentSearch is now behind
+a Cloudflare block. f. 146v re-read at native resolution: the anchors hold ("nostre ... de l'absolution et que ... Je",
+"nous [?au]rions et a la verite", "Mr de Mercure"), nothing between them reads. All three stay **decoded, not read**
+(`texts/f88-f146v-f157v_reread_log.md`); the next step is the glyph atlas from the interlined Instruction.
+
 **Outcome: read with known key, read in part.** Key no. 60 transcribed from the images (17 Sept) and corrected from
 issue #32 (Robert Węglarek, tunarob, 12 Oct 2026). Only fr. 3985 f. 88r gives words: *de absolution*, *le Roy*,
 *qu'il* (shuffle-controlled, P = 0.0002); on f. 146v Tomokiyo's anchors (*l'absolution*, *à la vérité*, *intérêt*)
@@ -124,9 +131,9 @@ worked).
 
 ## Remaining gaps
 - ff. 88r, 146v, 157v decoded, not read (one line per passage below) - blocker: illegible; see the lines below
-- fr. 3986 f. 146v, Revol 7 Oct 1593 (nine cipher lines, key no. 60) - blocker: illegible; transcribed at 2.4-3.2x but copyist's cursive forms map to two or three table entries; atlas pass started, not finished
+- fr. 3986 f. 146v, Revol 7 Oct 1593 (nine cipher lines, key no. 60) - blocker: not-attempted; re-read at full resolution 23 Oct 2026, anchors hold, copyist's forms map to two or three table entries; finish the glyph atlas from the interlined Instruction (fr. 3985 c. 264-268) and re-transcribe
 - fr. 3986 f. 157v, Revol 9 Oct 1593 - blocker: illegible; faded; clear cursive and cipher run together, cipher extent not yet segmented
-- fr. 3985 f. 88r (21 Aug) - read in part (de absolution, le Roy, qu'il); rest of R3-R6 - blocker: illegible; bitonal microfilm copy in the copyist's cursive, the contributor's transcription has variant readings at about one sign in six and no colour scan exists
+- fr. 3985 f. 88r (21 Aug) - read in part (de absolution, le Roy, qu'il); rest of R3-R6 - blocker: not-attempted; re-transcribe against the finished atlas; bitonal microfilm copy in the copyist's cursive, the contributor's transcription has variant readings at about one sign in six and no colour scan exists
 - fr. 3985 f. 88v (21 Aug) - blocker: not-attempted; transcribed by the contributor (116 units, issue #32), no reading under key no. 60; not re-transcribed here
 - fr. 3985 f. 115 (27 Aug, one line), f. 176 (2 Sept, no. 88/94), fr. 3986 f. 198 (23 Oct, no. 101) - blocker: not-attempted; located and cut but never transcribed; key no. 60 is fully in hand
 
@@ -134,6 +141,6 @@ worked).
 - [x] siblings: the King's interlined letters fr. 3986 f. 151/152 (7 Oct 1593) and the interlined Instruction of 31 Aug (fr. 3985 c. 264-268) used as cribs in the copyist's hand
 - [x] clear-pages: interlined Instruction and f. 151 found; f. 115's earlier pages and the 27 Aug copy are in clear
 - [x] known-keys: Tomokiyo's no. 60 (fr. 3995 ff. 108-111) transcribed and applied; the contributor also tried keys 65, 66, 76 on f. 88v
-- [x] print: Memoires de Nevers ii (Gallica bpt6k64451005) Instruction pp. 492-499; Tomokiyo henryiv2.htm lists every letter in no. 60
+- [x] print: Memoires de Nevers ii pp. 324/425/453/513 checked 23 Oct 2026 (no Revol letter); (Gallica bpt6k64451005) Instruction pp. 492-499; Tomokiyo henryiv2.htm lists every letter in no. 60
 - [x] key-rebuild: key no. 60 re-checked on the images after issue #32 (12 Oct 2026): 10 corrections adopted, tags 4/2+ split; the copyist glyph atlas from the Instruction (c. 264-268) is still to finish
 - [x] retry: f. 146v and f. 157v re-tagged and re-decoded with the corrected key (no gain); f. 88r decoded from the contributor's transcription, de absolution + le Roy + qu'il, shuffle-controlled (12 Oct 2026); ff. 176, 198 still to do

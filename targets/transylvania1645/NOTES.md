@@ -5,7 +5,7 @@ Status: in progress
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): only **R4940's two
 cipher spans read** ("votumiok", "niert dolog volna", 23 letters). **R4936, R4937 and R4942 are decoded, not read**:
 the mechanical decode and the solver outputs are letter streams with garbled words, no sentences. About 1% of the
-transcribed cipher letters read.
+transcribed cipher letters read. (Superseded 23 Oct 2026: R4936, R4937 and R4942 read, see the b15 block below.)
 
 **Split on 14 Oct 2026 (one-key rule, George Lasry).** This target first grouped the ten records R4933-R4942 by their
 DECODE number range. It now keeps the Keresdi Bethlen letters in the alphabet family of R4936/R4940 (R4936, R4940, and
@@ -53,13 +53,33 @@ Important transcription correction: a working shared alphabet family has c=p, p=
 
 `noisy_probe.py` applies penalized alternatives to likely confused glyphs in R4936 and outputs `R4936-correction-hypotheses.json`. These are explicit UNVERIFIED hypotheses, not edits to the source transcription. They reveal coherent topics including musketeers, dragoons, payment, the king, the republic, Munkács and Rakovica. Every adopted correction needs an image check. Plaintext word spaces in explanatory notes are editorial.
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b15).** R4936, R4937 and R4942 are now **read** (grade B) with the family
+key unchanged: R4936 re-transcribed from the images (215 label changes, `R4936_corrections.tsv`), R4937 and R4942
+transcribed in full for the first time. Each has `<doc>_reading.md`, `<doc>_en.md`, a letter alignment with the figures
+(`<doc>_align.tsv`, `research/reading_audit/b15_align.py`) and `<doc>_reread_log.md`. R4942's DECODE image 3 is a clear
+slip of its cipher block in Zsigmond Rákóczi's name (`R4942_slip.txt`). Content: R4936 = numbered points for the 1645
+Warsaw mission (3,000 musketeers and 1,000 dragoons to be hired, money at Danzig, Bregy and Croissy); R4937 = 1646, the
+Emperor's diploma and the Evangelicals, hiring 4,000 foot; R4942 = Zsigmond Rákóczi 1648, the intermediaries and his
+brother's plenipotentiary power. Caveat: `docs/_check_reading.py` cannot score 17th-c. Hungarian (0.07 and 0.0 on printed
+1645 letters from Szilágyi 1885); explicit-hole share (b17_score.py HOLES=1) 0.94, 0.90, 1.00.
+fraction_read 0.59 (estimated; R4938 and R4939 untranscribed).
+
 ## Remaining gaps
 
-- R4936 decoded, not read (about 1,969 cipher letters; unspaced provisional decode with q/g, c/p, i/n open; reading audit 22 Oct 2026) - blocker: not-attempted; re-transcribe on full-resolution crops, re-decode, segment into Hungarian, translate
-- R4937 and R4942 decoded, not read (partial extracts, solver letter streams) - blocker: not-attempted; transcribe the rest and decode under the family key
+- R4936, R4937, R4942 read 23 Oct 2026 (b15); scattered [?words] and two unread runs in R4936 (l. 9, l. 16) - blocker: illegible; figures checked at 3x, the letter shapes do not settle a word
+- R4937 l. 3 run after 'megsegni' and the end of l. 13 - blocker: illegible; decode to letter strings that are not words, checked at 2.2x
+- R4938 (1647, short cipher insertions) and R4939 (1648, two pages of cipher in a script unlike the family hand) - blocker: not-attempted; images in hand, not transcribed
 Of the records kept here, five remain incompletely read (R4936, R4937, R4942) or uninspected (R4938, R4939), with many spans not attempted. These are NOT established outside blockers; continue work. R4940 still requires prior-art comparison and inclusion in the eventual group writeup. No percentage claimed for the group.
 
-## Escalation / next work
+## Escalation
+- [x] siblings: R4936, R4937, R4940, R4942 read with one family key (23 Oct 2026)
+- [x] clear-pages: R4942 image 3 is a clear slip of its cipher block; no clear copies for R4936/R4937 on the records
+- [x] known-keys: the family key (shared-key-hypothesis.json) applied unchanged
+- [x] print: Lukinich 1908 (both instalments), Szilágyi 1885 (Linz), Erdély és az északkeleti háború I grepped; no edition
+- [x] key-rebuild: not needed; the transcription was redone instead
+- [x] retry: R4936 re-transcribed and read; R4937, R4942 transcribed in full and read (23 Oct 2026); R4938, R4939 still to do
+
+## Next work (earlier list)
 
 1. Resolve transcription of R4936 q/g, c/e/p, i/n and other ambiguous forms against full-resolution crops; the substitution is substantially recoverable. Do not treat noisy language-model proposals as confirmed readings.
 2. Transcribe the remaining R4937 and R4942 ciphertext; test shared family mapping, correcting the input rather than forcing bad mappings.
