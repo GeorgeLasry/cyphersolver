@@ -182,6 +182,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass sign transcription tokens.txt and the block reading reading.txt; key key.tsv (Tomokiyo's reconstruction extended by twelve values)",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Verification 3 (v3_below_b): f. 33 was scored on reading.txt (token decode, 0.0). Wrote f33_reading.md from it, codes as words and nulls dropped: 0.833 explicit holes and plain. Kept read.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -229,7 +236,16 @@
     "label": "Catherine de Médicis to Villeroy, Chenonceau, 7 Feb 1581, BnF fr. 15564 f. 33r (DECODE R4157)",
     "transcription": "tokens.txt",
     "decryption": "reading.txt",
-    "summary": "The one cipher block of the Queen Mother's letter: it is said that the prince Dauphin is to go to Flanders to receive the oath of fidelity of the Low Countries for her son Anjou and stay there, that the prince de Condé is to lead the forces assembling, and that Anjou says he will go at the time Villeroy wrote and not before; but they will still name him with Montpensier in the powers of the legation to England. The letter was already in print (1899); the cipher differs from the printed text in three small places."
+    "summary": "The one cipher block of the Queen Mother's letter: it is said that the prince Dauphin is to go to Flanders to receive the oath of fidelity of the Low Countries for her son Anjou and stay there, that the prince de Condé is to lead the forces assembling, and that Anjou says he will go at the time Villeroy wrote and not before; but they will still name him with Montpensier in the powers of the legation to England. The letter was already in print (1899); the cipher differs from the printed text in three small places.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored reading.txt, the line-by-line decode with code words in lower-case brackets and {null} groups (0.0). The reading written out from it (f33_reading.md: codes as words, nulls dropped, spelling kept, M-graded values as holes) scores 0.833 on explicit holes and 0.833 plain, hole rate 0.037. Rests on Tomokiyo's key extended here, checked against the contemporary marginal decipherment on the page and the 1899 printed text (Lettres de Catherine de Medicis VII)."
+    },
+    "state": "read",
+    "reading": "f33_reading.md",
+    "language": "fr"
    }
   ],
   "key_file": "key.tsv"

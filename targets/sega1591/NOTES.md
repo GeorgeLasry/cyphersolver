@@ -67,3 +67,10 @@ religious man is also going there for this purpose, so that if one were prevente
 ## Notes and corrections
 
 The cipher is on f148v, Gallica canvas f158. The report links f157, which is f148r (clear text).
+
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged this entry at 0.59, scoring `lasry_entry.md` (his report pages: metadata, excerpt and English).
+The enciphered passage alone, now `sega1591_reading.md`, scores **1.0 on explicit holes** (plain 0.33: the cipher
+writes single consonants, *inuiato*, *efeto*, *fose*, *pasi*). Kept read; it is Lasry's reading with Meister's key 65.
+

@@ -243,6 +243,16 @@ them is probably wrong.
 Not measured here. The R1892 control shows that `measure_sense.py` would count these values as sense whether or not
 they are right. The case for them is the shape match and the contexts.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep scored pp. 3 and 4 on `texts/wainut_proposals.md`, which is WAINUT's table of proposed sign values, not a
+reading (0.59). The reading in "What the cipher says" was written out as `texts/p3_p4_reading.md` from the decrypts,
+divided into words, with the H/M word signs as words, the four I-grade values (*weinig*, *Engeland*, *mogelyk*,
+*voor*) as `[?word]` and every unvalued or blotted sign as `[…]`. **0.708 on explicit holes** (p. 3 0.69, p. 4 0.75),
+hole rate 0.122; plain 0.125, because the nl word list does not know 1795 spelling with y for ij. The sentences on
+the officers, the ratification and England hold; p. 3 ll. 7-12 (*natuurlyk … behandelt word*) and the P.S. do not.
+Both pages stay read, grade B; both entries now point their `reading` at the new file.
+
 ## Remaining gaps
 - signs that occur twice (plain Δ: p3 l11 and p4 l1; %: p3 l10 and p4 l4; crossed diamond, value voor at I only) - blocker: open-codes; no value fits both occurrences, retried 2 and 3 Oct 2026
 - nineteen signs that occur once (T-bar, S-stroke, square bracket, H with P, dagger, V-with-cross, C-hook, crossed o, vertical bracket, x mark, Δ with tail, H with loop, ψ, P.S. S / crossed ø / ⊖, and X, &, + whose context-only values weinig / Engeland / mogelyk are counted unread) - blocker: no-key-material; a single context cannot fix a word sign, none occurs in R1892, no key sheet, not in print

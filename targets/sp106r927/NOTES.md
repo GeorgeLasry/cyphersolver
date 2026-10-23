@@ -302,6 +302,14 @@ conjecture over damaged line ends, not a reading. The persons are a hypothesis; 
 Henry de Livron, Marquis of Villa) was checked online, CSP Dom p. 553 and Haussonville were not. `hand_p*.txt` and
 `key.json` are unchanged, so the `measure.py` figures stand.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep scored both pages on `wainut/plaintext_R927.txt` (0.593), which holds WAINUT's numbered diplomatic lines,
+his modern normalised French and his notes together. This project's reading (the regularised column of `reading.txt`)
+is now written out per page: `f243_reading.md` **1.0 on explicit holes** (0.9 plain, hole rate 0.046) and
+`f241_reading.md` **0.7** (0.7 plain, hole rate 0.099; the code signs, the blotted line c12 and the signature are the
+holes). The letters the reading changes against the decrypt are about 1.3% (f. 243) and 2% (f. 241). Both kept read.
+
 ## Remaining gaps
 - f. 241 c12 and c17 ("b_ruiledu ... et du uoii", "bienr"; WAINUT reads c17 "sieur", adopted, and conjectures c12 "[se]ruice du [67] et du uos[tre]") and single signs at the ends of c13, c15 and the day in c19 - blocker: illegible; under ink blots and a stain or ambiguous at 2300 px; f. 241 has no second copy, TNA has not digitised SP 106 and DECODE has no larger image
 - the '@' (circle/9) signs, the clear "67", the date numeral and the signature "Nicle"(?) - blocker: no-key-material; 14 signs in name positions, too few to value from context, and no nomenclator survives with the letter or in the neighbouring records

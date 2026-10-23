@@ -1,6 +1,6 @@
 # Nevers to Pisany, 8 September and 14 October 1593, in cipher no. 46 (catalogue no. 21)
 
-Status: in progress (22 Oct 2026: f. 168 re-read, still decoded, not read; the remaining holes are in corrupt copy figures; see Remaining gaps)
+Status: in progress (23 Oct 2026: f. 209 demoted to decoded, not read in verification 3; neither letter reads; see Remaining gaps)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 209 (its three
 cipher passages complete the clear sentences). **Decoded, not read**: f. 168: only lines 1, 6 and 7 build sentences,
@@ -130,9 +130,21 @@ alternative segmentations), `ct_3985_f209.txt`, `ct_3986_f168.txt` (transcriptio
 The five letters to Revol (fr. 3985 ff. 88, 115, 176; fr. 3986 ff. 146v, 157v, 198) and key no. 60, with the
 sessions of 17 Sept and issue #32 (12 Oct 2026), are in `targets/revol1593/NOTES.md`.
 
+## Verification 3, 23 Oct 2026: f. 209 demoted
+
+The v3 sweep flagged f. 209 (0.50 on the explicit-hole measure, scored over `texts/f209_reading.md`, which mixes the
+figures, the decode and the commentary). The three cipher readings alone score **0.33 on explicit holes** (1 of 3
+sentences), 0.0 plain, hole rate 0.16. Passage 2 holds; passages 1 and 3 rest on supplied letters and on figures
+the copyist wrote wrong (*don[n]es[t]*, *l'absolutio[n]*, 99̈ *Pape* where *Roy* is expected; 11 for *u*, 14 inside
+*de*, 57 83 84 for *y a i*). Passage 1's figures were looked at again on the Gallica IIIF image (btv1b90606498 f419,
+ll. 4-5) and are as transcribed, so these are slips in the copy, not transcription errors. A search for a printed
+text (the 1665 *Mémoires* of Nevers) found nothing in the hour. **f. 209 is now decoded, not read**, keeping its
+partial reading; no document of the target reads (class not read, method not solved, fraction_read 0).
+
 ## Remaining gaps
 - f. 168 decoded, not read (272 tokens) - blocker: needs-physical-access; re-read on the image 22 Oct 2026 (14 corrections, lines 1-3 and 6-7 now sentences); the holes left in lines 4, 5 and the last line are corrupt figures in the register copy, legible but wrong, and only a second witness (Pisany's original, not located) could restore them
 - fr. 3986 f. 168, Pisany 14 Oct, garbled stretches of lines 2-8 - blocker: illegible; microfilm copy, 1/7, 0/8, 3/5 confusable; segscore.py did not resolve them
+- f. 209 decoded, not read (123 tokens; v3 check 23 Oct 2026, 0.33 explicit holes) - blocker: needs-physical-access; passages 1 and 3 rest on wrong figures in the register copy (re-checked on the image), and only a second witness (the letter as sent, not located) could restore them
 
 ## Escalation
 - [x] siblings: Gondi to Pisany, Florence 22 Sept 1593 (fr. 3986 ff. 64-65v), same key, interlined by the office: used as ground truth for the conventions
@@ -142,3 +154,4 @@ sessions of 17 Sept and issue #32 (12 Oct 2026), are in `targets/revol1593/NOTES
 - [n/a] key-rebuild: the key is the archive table, every figure of both letters resolves (122/122, 268/269); the gaps are figure readings, not key values
 - [x] retry: f. 168's doubtful figures re-scored with segscore.py over alternative null placements; not settled
 - [x] retry (22 Oct 2026): f. 168 re-read figure by figure on the IIIF image; bars and segmentation corrected, five more clauses read; corrupt groups tested against candidate words (texts/f168_reread_log.md)
+- [x] retry (23 Oct 2026): f. 209 passage 1 re-checked on the IIIF image; print search for the Mémoires de Nevers (1665); not settled

@@ -220,6 +220,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Brice Dudout's readings copied from NOTES.md to texts/readings_dudout.md; the three telegrams transcribed here (ciphertext_checked.txt) re-deciphered with decipher.py to texts/check_decryption.txt; his cipher transcriptions of the other 19 telegrams are not in the repository",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "Verification 3 (v3_below_b): the 1916 telegrams (B03050089000), scored on the 1916 rows of readings_dudout.md: 0.31 explicit holes, 0.25 plain; 17% of letters are emended look-alikes with no outside text. Demoted to decoded, not read.",
+      "result": "failed",
+      "technique": ["statistical test"]
     }
   ],
   "outcome": {
@@ -289,6 +296,11 @@
         "item": "7 Jul 1915, one group ('Lovesick ... in torture')",
         "blocker": "illegible",
         "detail": "Transmission garble on the copy: the key gives lovesickxa instorture; checked on B03050087700 image 50 here."
+      },
+      {
+        "item": "May 1916 telegrams (B03050089000): 17% of letters emended from look-alikes, decoded, not read",
+        "blocker": "illegible",
+        "detail": "transmission and copying confusions on the Japanese copies (n/v, i/r, y/h, g/p ...), as on the 1915 forms checked here; the copies carry no translation, so no outside text can confirm the emended letters"
       }
     ],
     "notes": "The reading, transcription and key are Brice Dudout's, made with Claude (Opus 5.5). The identification of sender and recipient rests on cross-checks; no form names them. 'Laisaosang' and Yung's Chinese name are unidentified; 'Chang Ki' (Zhang Ji?) and 'Tai' (Dai Jitao?) are probable.",
@@ -328,7 +340,9 @@
         "doc": "1916-B03050089000",
         "label": "JACAR B03050089000, seven telegrams, 1 - 13 May 1916",
         "decryption": "texts/readings_dudout.md",
-        "summary": "Between Shanghai and 'Rosamonde Tokio' after Sun's return to China, May 1916: his safe landing in the French concession, Canton, and repeated orders to leave the iron trunk in Mr Inuzuka's care. Brice Dudout's readings; no cipher transcription of these forms is in the repository."
+        "summary": "Between Shanghai and 'Rosamonde Tokio' after Sun's return to China, May 1916: his safe landing in the French concession, Canton, and repeated orders to leave the iron trunk in Mr Inuzuka's care. Brice Dudout's readings; no cipher transcription of these forms is in the repository.",
+        "note": "Decoded, not read (v3 check 23 Oct 2026): the seven 1916 readings (Brice Dudout's, texts/readings_dudout.md) score 0.31 on explicit holes, 0.25 plain, hole rate 0.48: 109 of 627 letters (17%) are bracketed, letters the forms give differently (n/v, i/r, y/h, g/p cursive and transmission confusions) and supplied from sense. That is far above the 3% look-alike limit, and nothing outside confirms them: the Japanese copies carry no translation, and no cipher transcription of these forms is in the repository (only Dudout's readings). The sense is plain English and not in doubt in most telegrams, but the letters rest on emendation.",
+        "state": "decoded, not read"
       }
     ]
   }

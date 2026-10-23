@@ -513,6 +513,42 @@ Open codes, retried (`code_lm_test.py`, `code_lm_test.json`, and the copies):
 decode cut into words, upper case inside a sense run, `|...|` outside one, `[nn]` open codes; the clear copy appended
 where there is one). Per document 0.51 (f. 123r) to 0.77 (f. 201).
 
+## Verification 3, 23 Oct 2026: ff. 173, 196v, 124v rescored
+
+The v3 sweep (`research/reading_audit/v3_below_b.txt`) flagged ff. 173 (0.535), 196v (0.547) and 124v (0.533) as below
+0.60 on the explicit-hole measure. The flag was the scoring, not the readings: `v2_score.py` counts every `[l. n]` line
+marker as a hole and scored the English headers with the text, and for f. 124v it scored the whole of
+`reading_f124.md`, f. 124r (decoded, not read) included. Cut to the running text (`v3b_body.py`, markers and the stop
+code 44 removed):
+
+| leaf | explicit holes | plain | hole rate | stays |
+|---|---|---|---|---|
+| f. 173 (clear opening + cipher) | 0.72 | 0.68 | 0.085 | read, grade B |
+| f. 196v (cipher ll. 1-36) | 0.885 | 0.73 | 0.049 | read, grade B |
+| f. 124v (section) | 0.667 | 0.63 | 0.086 | read, grade B (close to the bar) |
+
+What each rests on, plainly: **none of the three has a clear copy, a contemporary decipherment or a printed text.**
+Each is the key (`key_cipher1.json`, merged Cipher-1) applied to a figure transcription corrected on full-resolution
+images by one reader, with a few letter values added for that leaf only, and the reading chosen by hand from the
+figures' letter sets. f. 173: Brackx's figures, 14 labels corrected, leaf values oob = ff, fe = r/rr, zu = u/uu.
+f. 196v: figures transcribed here for the first time (1,236), four new labels; 63 = *après* carried by f. 201's clear
+tail. f. 124v: Brackx's figures, 65 labels corrected across ff. 124r-v, seven leaf values. No second reader.
+
+Because the key gives many figures two to four letters, the question George's review raises is how much the sets let
+a reader make any French he likes. `v3b_matignon_sets.py` aligns each reading with its figures and leaf key and
+compares it with two controls on the same figures (the reading's own words shuffled; f. 154's text):
+
+| leaf | letters carried | controls (shuffled / f. 154) | carried letters on a non-first value |
+|---|---|---|---|
+| f. 173 | 0.962 | 0.470 / 0.476 | 0.131 |
+| f. 196v | 0.974 | 0.473 / 0.448 | 0.165 |
+| f. 124v | 0.968 | 0.489 / 0.485 | 0.153 |
+| f. 143v ll. 26-35 (clear copy fixes it) | 0.843 | 0.464 / 0.440 | 0.122 |
+
+The sets are wide (wrong French still lands on half the letters), but the readings sit far above that, and they use
+the second or third value of a set about as often as f. 143v does where the clear copy decides. The readings keep
+`read`; the grade drops from A to B on all three because no outside text checks them.
+
 ## Remaining gaps
 
 - ff. 123r (0.41) and 124r (0.56) decoded, not read - blocker: no-key-material; three passes each on the images (labels re-cut figure by figure, a per-label atlas of the hand's 5,111 figures with cross-leaf classifiers, code values from other leaves tried): the remaining breaks fall on legible figures of their ordinary shapes, so they are the writer's omissions or slips and codes 16, 60, 66, 67, 101, 102 with no value anywhere; only a clear copy of the Marmande despatch or another letter in this hand using the same codes would settle them (none found on canvases 126-139)

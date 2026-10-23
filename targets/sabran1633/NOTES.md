@@ -106,6 +106,15 @@ strokes; 136 signs, 33 types with codes 12, 36, 94.
 - Anneal inside the clear context (fr-1600-letters), free and with the ten crib values fixed: degenerate both ways.
   4.9 signs per letter type is below what a homophonic solve needs; a sibling letter in the same key is the way in.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged the 43-image entry at 0.0: it scored `lasry2022/ctts/decryption/all.txt`, CTTS's raw output
+(spaced letters and `[plaintext]` placeholders), which is not a reading. The reading is `lasry2022/READING.md`. Its
+18 "French" sections, clear and cipher together, score **0.721 on explicit holes** (0.536 plain, the manuscript's v
+for u being unknown to the word list), hole rate 0.086; the cipher runs alone (the 401 bold stretches) score 0.84 on
+explicit holes and 0.712 plain. The 212 tentative name-code readings count as holes. Kept read, grade B; the entry's
+`reading` now names `lasry2022/READING.md`.
+
 ## Remaining gaps
 - code 46 (fr. 4135 f. 219, once) - blocker: open-codes; "d'une [46] de l'armée navale", context does not fix it
 - 212 tentative name-sign readings - blocker: open-codes; read from context only; o- and o-- may be confused in the ff. 215v–216 hand

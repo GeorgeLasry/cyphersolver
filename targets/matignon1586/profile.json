@@ -1055,6 +1055,13 @@
     "key-structure hypothesis",
     "manual reconstruction"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "what": "Verification 3 (v3_below_b): ff. 173, 196v, 124v flagged below 0.60 on the explicit-hole measure. The flag counted the [l. n] line markers and the English headers as holes (and f. 124v was scored together with the unread f. 124r). Reading bodies alone (v3b_body.py): f. 173 0.72 explicit / 0.68 plain; f. 196v 0.885 / 0.73; f. 124v 0.667 / 0.63. Letter-set control (v3b_matignon_sets.py): the hand readings are carried by the figures for 96-97% of their letters, against 45-49% for shuffled words or another leaf's text on the same figures; 13-17% of carried letters rest on a non-first value of a figure's set, against 12% on f. 143v where the clear copy fixes the reading. All three keep read; grade A -> B because none has an outside text.",
+   "result": "worked",
+   "technique": ["statistical test", "manual reconstruction"]
   }
  ],
  "outcome": {
@@ -1327,10 +1334,10 @@
     "reading": "texts/reading_f173.md",
     "translation": "texts/reading_f173_en.md",
     "reading_review": {
-     "grade": "A",
+     "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "read as sentences against the English and the old decode; 14 label corrections checked on full-resolution crops (corrections/f173.tsv); holes marked; no second reader of the corrections yet. Verified word by word 22 Oct 2026 (verify1_matignon_align.py: reading aligned with the corrected figures and leaf key): 0 words bracketed, 0 replaced; 0.724 clean sentences on the reading body."
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep's 0.535 counted the 33 line markers [l. n] and the English header as holes; the reading body alone (clear opening + cipher, markers and stop code 44 cut, v3b_body.py) scores 0.72 on explicit holes, 0.68 plain, hole rate 0.085. What it rests on: Brackx's figure transcription with 14 labels corrected here on full-resolution crops; the merged Cipher-1 key plus three leaf-only values (oob = ff, fe = r/rr, zu = u/uu); read by hand from the figures' letter sets. No clear copy, no contemporary decipherment, no second reader of the labels. Letter-set freedom (v3b_matignon_sets.py): 96.2% of the reading's letters carried by the figures against 47% for the same words shuffled and 48% for another leaf's text; 13.1% of carried letters rest on a value other than the figure's first, against 12.2% on f. 143v where a clear copy fixes the reading. Grade lowered A -> B: no outside text checks it."
     }
    },
    {
@@ -1384,10 +1391,10 @@
     "state": "read",
     "summary": "The continuation of the ff. 196/201 despatch, dated in clear 'Du camp devant Monségur ce [...] jour de May 1586': the siege of Monségur, a battery of fifteen cannon to open the day after tomorrow, the defenders resolved to hold out after Navarre's treatment of the commander of Sainte-Bazeille, Navarre leaving for Saintonge to meet his reiters while Turenne holds the province from Nérac, the army short of money and the third month's pay.",
     "reading_review": {
-     "grade": "A",
+     "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "0.71 clean sentences (reading part); read against the English; 1,236 figures transcribed here for the first time; four new labels (tt, fZ, xl, yz) in key_cipher1_f196v.json; codes 65 and 99 open; no second reader of the labels. Verified word by word 22 Oct 2026: 0 words bracketed, 0 replaced (code 63 = apres carried by f. 201's clear text); 0.697 clean on the body."
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep's 0.547 counted the line markers [l. n] and the header as holes; the cipher body (ll. 1-36, markers cut) scores 0.885 on explicit holes, 0.73 plain, hole rate 0.049 (with the clear close 0.867). What it rests on: 1,236 figures transcribed here for the first time (one transcriber, no second reader), four new labels and a leaf key key_cipher1_f196v.json; code 63 = apres from f. 201's clear tail; codes 65, 99 open. No clear copy or contemporary decipherment of f. 196v. Letter-set freedom (v3b_matignon_sets.py): 97.4% of letters carried against 47% / 45% for the controls; 16.5% of carried letters on a non-first value (12.2% on the clear-copy leaf f. 143v). Grade lowered A -> B: no outside text checks it."
     }
    },
    {
@@ -1456,10 +1463,10 @@
     "reading": "texts/reading_f124.md",
     "translation": "texts/reading_f124_en.md",
     "reading_review": {
-     "grade": "A",
+     "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-22",
-     "note": "f. 124v section of reading_f124.md: 0.72 clean sentences; read against the English; 65 label corrections across ff. 124r-v checked on the image, the reading force-aligned back onto the corrected figures; codes 60 and 67 open. Verified word by word 22 Oct 2026 (f. 124v section): 4 words bracketed (1 supplied: gens [de] guerre l. 27; 3 partly: [?qu'il] l. 9, [?je] l. 19, [?d'aller] l. 20), 0 replaced; clean 0.688 -> 0.656, stays read."
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored the whole reading_f124.md (f. 124r, which is decoded, not read, and the header included) with the line markers as holes; the f. 124v section alone (markers cut) scores 0.667 on explicit holes, 0.63 plain, hole rate 0.086 (0.633 with the clear end). Above the bar but close to it. What it rests on: Brackx's transcription with 65 label corrections across ff. 124r-v checked on the image and seven leaf-only letter values (key_cipher1_f124.json); read by hand from the letter sets; codes 60 and 67 open; no clear copy, no contemporary decipherment, no second reader. Letter-set freedom (v3b_matignon_sets.py): 96.8% of letters carried against 49% / 49% for the controls; 15.3% of carried letters on a non-first value (12.2% on the clear-copy leaf f. 143v). Grade lowered A -> B."
     }
    },
    {

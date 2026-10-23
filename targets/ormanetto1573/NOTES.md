@@ -82,6 +82,17 @@ single-context codes 62 *canto*, 48 *essere*, 4̇22 *perche*, 47/93 *tutta* and 
 text in this key is known. 3̇22 is *Italia* twice (after 47 and 93, *tutta*), but in *ogni occasione che sia [3̇22] alterarla* the sense
 wants *per*; left open.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged R116 at 0.44 on the explicit-hole measure: it scored `reading_aj.txt`, AJ's graded text, which
+also holds R118 and writes the code words in lower-case brackets (counted as supplied words). A reading of R116
+alone is now `texts/R116_reading.md` (English `texts/R116_en.md`), in the cipher's spelling (no h, no doubled
+letters) taken from the image-corrected decode, with the single-context code values (4̇22, 62, 48, 47/93, 3̇22), AJ's
+guesses 84 and 422, and the words resting on a corrected slip marked `[?word]`, and 32, 2̇88, 3̇22 (*per* wanted) and 53
+as `[…]`. Score **0.625 on explicit holes**, hole rate 0.091; plain 0.50, the misses being the no-double-letter
+spelling. The sentences hold. Kept read, grade B. It rests on AJ's reconstructed key applied to our transcription;
+there is no contemporary decipherment of R116.
+
 ## Remaining gaps
 
 - 32 and 2̇88 in *se ben dal canto mio l'ho [32] de la buona [2̇88] havuta* (f.303r, 9 tokens) - blocker: open-codes; one context each, not in R118, no key sheet

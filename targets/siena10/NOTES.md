@@ -48,3 +48,10 @@ key was applied or recovered beyond the 16 values the gloss shows.
 
 Not established. Montepulciano was fought over by Siena and Florence repeatedly (Florentine from 1390; it went over to
 Siena in 1495 and back to Florence in 1511); nothing on the slip fixes which campaign it means. Left undated.
+
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged no. 10 at 0.567, scoring `transcripts/no10.txt`, the sign table with its tentative clear lines.
+The cipher run is three words, *presura di Montepulciano*, every letter given by the contemporary gloss; written out in
+its clear sentence as `transcripts/no10_reading.md`, it scores **1.0 on explicit holes**. Kept read.
+

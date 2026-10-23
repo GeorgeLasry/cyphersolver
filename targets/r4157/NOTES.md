@@ -72,6 +72,14 @@ After "…legation d ō" come 20 signs: ꝛe Z7 ꝭ Ʒ+ ꝛ ꝭ ∂ ß ą̄ ꝛe
 Tomokiyo's "cannot be read except for the first d" is therefore right about the letters and wrong only in expecting
 text: the "d" is the *d'* of *d'Angleterre*.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep scored `reading.txt`, the line-by-line decode with code words in lower-case brackets and `{null}` groups
+(0.0 on the explicit-hole measure). Written out as running text in `f33_reading.md` (codes as words, nulls and padding
+dropped, the writer's spelling kept, the M-graded *Angleterre* and Condé's *e* and the unenciphered r of *pouoir* as
+holes): **0.833 on explicit holes and plain**, hole rate 0.037. Kept read; the marginal decipherment and the 1899
+edition check it.
+
 ## Remaining gaps
 - ō read as the code for "Angleterre" (it occurs once), graded M. It is required by the decipherer's "d'Ang…re" and
   by the edition. blocker: open-codes (single occurrence, no other key copy).

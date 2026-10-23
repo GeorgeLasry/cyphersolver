@@ -94,6 +94,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked George Lasry's report excerpt (lasry_entry.md); his full transcription and decryption are not in the repository",
       "result": "partial"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "what": "Verification 3 (v3_below_b): flagged at 0.59 on lasry_entry.md (report pages). The passage alone (sega1591_reading.md) scores 1.0 explicit holes, 0.33 plain (single-consonant spelling). Kept read.",
+      "result": "worked",
+      "technique": ["statistical test"]
     }
   ],
   "outcome": {
@@ -135,7 +142,16 @@
         "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
         "decryption": "lasry_entry.md",
         "summary": "Filippo Sega to Cardinal Caetano, 9 January 1591. A religious book, Navarre at Christmas Mass, and plans for an undertaking at Tours.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here."
+        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v3 check 23 Oct 2026: the sweep scored lasry_entry.md, Lasry's report pages with metadata and the English translation (0.59). The enciphered passage itself (sega1591_reading.md, one sentence, 37 words, quoted from his report) scores 1.0 on explicit holes; plain 0.33 only because of the cipher's single-consonant spelling (inuiato, solecitar, efeto, fose, pasi). Rests on George Lasry's reading with Meister's printed key 65; not re-deciphered here (one sample spot-checked on the image)."
+        },
+        "state": "read",
+        "reading": "sega1591_reading.md",
+        "language": "it"
       }
     ]
   }

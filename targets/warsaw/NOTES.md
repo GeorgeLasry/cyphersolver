@@ -1,5 +1,7 @@
 # DECODE R1408, "Di Varsouia 24 Xbre 1627" (ÖStA HHStA Staatskanzlei Interiora, Chiffrenschlüssel Kt. 14 Fasc. 20 f. 176) — NOTES
 
+Status: decoded, not read (23 Oct 2026, verification 3: the code groups leave too many holes; see Remaining gaps)
+
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the word-divided text in plaintext.txt is two long sentences and both build and translate; the holes are title and function-word codes with no key material and the object of the request ([223] [159]). The per-document C is overturned to B; the filled-in conjectural version is not used. Claim unchanged.
 
 **Verdict: read.** A homophonic substitution with an alphabet in plain order (odd figures 13–33 = *a b c d e f g h i l m*,
@@ -174,6 +176,16 @@ Warsaw in 1627 is the profile.\*
 \* Inference from the text and general history; nothing in the record names sender or addressee. The DECODE
 cleartext frame (login) or the Dietrichstein papers would confirm it.
 
+## Verification 3, 23 Oct 2026: demoted to decoded, not read
+
+The v3 sweep flagged R1408 (0.561 over the whole of `plaintext.txt`, conjectural version and notes included). Its
+word-divided text alone scores **0.5 on explicit holes** (0.125 plain, hole rate 0.163) when the twelve unread code
+groups (16 tokens, `{03}` and `{04}` included) count as holes. Every spelled word reads and the sense is clear, but
+the codes hold the titles, the adverbs and the object of the request, so half of the scored stretches carry more than
+one hole in ten words. That is below the bar: **R1408 is now decoded, not read** (class not read, method not solved,
+fraction_read 0). The key letters remain recovered from the ciphertext; what is missing is the nomenclator, whose
+only likely source is the Dietrichstein archive at Brno (offline).
+
 ## Remaining gaps
 
 - **[100] [113] [123] [151] [154]×3 [157] [159] [160]×2 [223]**: glossed from context (§3, §3a), not read.
@@ -185,6 +197,7 @@ cleartext frame (login) or the Dietrichstein papers would confirm it.
 - Single *p* and *n*: inside complete words in the image; read as nulls. Nothing to read.
 - Sender: not named in cipher or clear. R2179 from the same article (undelimited digits) is a different system and
   untouched.
+- R1408 as a whole decoded, not read (v3 check 23 Oct 2026, 0.5 on explicit holes) - blocker: no-key-material; the code groups above
 
 ## Escalation
 

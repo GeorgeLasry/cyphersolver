@@ -314,6 +314,15 @@ The full transcription of no. 68, the shuffled-key control of Tomokiyo's Feria-M
 (57 = li) and the sense count (224/598) are in `../ibarra1593/NOTES.md`. The retry of nos. 45/79/47 with that value
 gave nothing: 57 = li belongs to the Mansfeld cipher, not to the 1592-93 office key, and the ~75 doubtful groups stand.
 
+## Verification 3, 23 Oct 2026: no. 79
+
+The v3 sweep flagged no. 79 at 0.548, scoring `reading79.md`, the older first pass. The reading the 22 Oct audit
+relied on is the reading column of `sense.tsv` (the 5 Oct re-transcription); joined into running text it is now
+`no79_reading.md`, with every unresolved group (`·`) and every group with no value (`[pal]`, `[xom]` …) counted as a
+hole. **0.613 on explicit holes**, 0.355 plain, hole rate 0.13: just over the bar. The opening, the election passage
+and the passage on Desportes's letter build sentences; the stretch after *duque de Feria* (ll. 3-4), l. 9 and
+ll. 19-21 do not. Kept read, grade B, marginal; those stretches stay with the open groups in Remaining gaps.
+
 ## Remaining gaps
 - nos. 45, 79, 47: 22 code groups not on the f. 97 sheet (Val, ral, ʃep, ner, ʒe, pir, mil, is, xom, mal, rili, mos, ʃer, hir, hum, us, ho, yos, ∂ir, lir, xox, ru) - blocker: no-key-material; sheet re-read 5 Oct for them, each occurs once or twice
 - nos. 45, 79, 47: about 75 syllable groups of doubtful reading (slips, ambiguous hooks), listed per line in sense.tsv - blocker: open-codes

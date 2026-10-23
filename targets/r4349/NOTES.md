@@ -117,6 +117,13 @@ Tried, all without a reading: the colophon's vowel shift (none of b f k p x occu
 five readings of the signs (yamyud, yamymd, yanyud, yamynd, iamiud); a plain abbreviation (initials of a name, a closing
 formula). Six signs with two repeats cannot fix a substitution, and nothing else in the book is in the same hand.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged the colophon at 0.455, scoring the whole of `reading.txt`, a table of decoded words with their
+runners-up. The reading itself, written out as `colophon_reading.md` (one sentence of 17 words), scores **1.0 on
+explicit holes** (plain 0.0: the Latin word list lacks *sequencionarius*, *strengenensi*, *insulensi*, *conuentu*). It
+matches the 1992 Uppsala catalogue word for word. Kept read.
+
 ## Remaining gaps
 - the six signs closing the f. 1r slip (ÿ ɑ M ÿ u ꝺ) - blocker: too-short; six signs, no key, no sibling in the same hand, no crib beyond "a signature stands here"
 

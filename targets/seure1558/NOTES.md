@@ -74,6 +74,18 @@ before it. No word division. Several signs are secretary-hand Roman or Greek let
 - Content: Spanish treasure from Peru and the Indies fleet, the money held at the Medina fairs ("huict cens mille
   escuz"), Queen Mary's death and Philip II, the Portuguese court, and Seure's own debts and pleas for funds.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged nos. 40, 41, 43 and 44 (0.0 to 0.125 on the explicit-hole measure; no. 39 unscored): their
+`decryption` files are Robinson's letter-level rows, unspaced, so no sentence can be scored. His word-divided edition
+(<https://angusrobinson.github.io/historical-decipherment/seure/readings.html>) was fetched, parsed
+(`research/reading_audit/v3b_seure_extract.py`) and saved as `texts/noNN_reading.md` (French, cipher passages quoted
+with `>`) and `texts/noNN_en.md` (his English) for all five letters. Scores, whole letter / cipher passages alone,
+explicit holes (plain): no. 39 0.776 (0.633) / 1.0 (0.778); no. 40 1.0 (0.733) / 1.0 (0.743); no. 41 0.979 (0.701) /
+0.979 (0.574); no. 43 0.97 (0.576) / 0.955 (0.5); no. 44 1.0 (0.773) / 1.0 (0.783). All stay read. His edition supplies
+the word spaces and the doubled letters the cipher does not write, and writes consonantal u as v; this is recorded in
+each file's header.
+
 ## Remaining gaps
 - N10_4, one occurrence in no. 39 row 10 - blocker: open-codes; unassigned word sign, contributor proposes vostre from context
 - 27 damaged or unidentified signs, mostly no. 43 views 82-83 - blocker: illegible; left [...] by the contributor, 10 more read only from context

@@ -294,6 +294,13 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 3 (v3_below_b): no. 79 flagged at 0.548 on reading79.md (first pass). The sense.tsv reading joined into no79_reading.md: 0.613 explicit holes, 0.355 plain, hole rate 0.13. Kept read, marginal; three stretches stay fragmentary.",
+   "result": "partial",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -393,10 +400,12 @@
     "language": "es",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "sense.tsv reads as continuous Spanish prose over 22 lines (the election, Desportes's letter, the Duke's ambition) with scattered single open groups; the audit scored the older reading79.md."
-    }
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored reading79.md, the older first-pass table (cipher and reading per line; 0.548). The 5 Oct re-transcription's reading column (sense.tsv), joined into running text as no79_reading.md with every unresolved group and every group without a value counted as a hole, scores 0.613 on explicit holes, 0.355 plain (1593 Spanish), hole rate 0.13: just over the bar. The opening, the passage on the election and the passage on Desportes's letter hold; ll. 3-4 (after 'duque de Feria'), l. 9 and ll. 19-21 do not. Rests on the office key (BnF fr. 3995 f. 97) applied to a transcription made here; no contemporary decipherment of no. 79."
+    },
+    "state": "read",
+    "reading": "no79_reading.md"
    },
    {
     "doc": "no47",

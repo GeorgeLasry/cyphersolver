@@ -181,6 +181,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): colophon ciphertext.txt with the decode.py reading reading.txt; slip: the six signs signs.txt and the clear letter slip.txt (signs unread)",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 3 (v3_below_b): flagged at 0.455 on reading.txt (decode table). The colophon sentence alone (colophon_reading.md) scores 1.0 on explicit holes. Kept read.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -243,7 +250,16 @@
     "label": "Colophon of the Strängnäs Sequentiarium, 1517, Uppsala UB C 513 f. 19v",
     "transcription": "ciphertext.txt",
     "decryption": "reading.txt",
-    "summary": "The scribe's dated colophon in a vowel-shift cipher set under chant notation: 'In the year of the Lord 1517 the present sequentiary was written in the convent of Strängnäs for the convent of Västerås' (insulensis = the Dominican house of Västerås). The rule and reading were already printed in the Uppsala manuscript catalogue (1992); read here in full and checked."
+    "summary": "The scribe's dated colophon in a vowel-shift cipher set under chant notation: 'In the year of the Lord 1517 the present sequentiary was written in the convent of Strängnäs for the convent of Västerås' (insulensis = the Dominican house of Västerås). The rule and reading were already printed in the Uppsala manuscript catalogue (1992); read here in full and checked.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored reading.txt as a whole, i.e. the 17 lines of 'cipher -> plain (runner-up, margin)' with the sentence at the end (0.455). The reading itself (colophon_reading.md, one sentence, 17 words) scores 1.0 on explicit holes; plain 0.0 only because the Latin word list lacks the place adjectives and medieval spellings (sequencionarius, strengenensi, insulensi, conuentu). Matches the 1992 Uppsala catalogue word for word."
+    },
+    "state": "read",
+    "reading": "colophon_reading.md",
+    "language": "la"
    },
    {
     "doc": "R4349-slip",

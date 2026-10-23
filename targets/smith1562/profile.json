@@ -838,6 +838,13 @@
    "what": "No. 23 (advertisements from France, 31 Jan 1562/3) re-read on the image: only \"Monsieur de [?]uy\" and \"the queen of Navarre\" read; not in Forbes or CSP Foreign vi, signs not in the key, each once. Left decoded, not read.",
    "result": "failed",
    "technique": ["manual reconstruction"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Verification 3 (v3_below_b): nos. 02, 07, 10, 12, 14 were scored on the shared passage tables decipher_A/C/D.md (0.42-0.51). Per-letter readings written: no02_reading.md from Forbes ii 315-318 with the 32 cipher stretches marked (1.0 explicit holes); no12_reading.md (0.625) and no14_reading.md (0.833) from decipher_D, kept read; no07_reading.md (0.4) and no10_reading.md (0.745 by passage, 0.345 by run, hole rate 0.175) demoted to decoded, not read; their originals in SP 70 carry decipherments (CSP: 'portions in cipher deciphered'), not reached.",
+   "result": "partial",
+   "technique": ["manual reconstruction", "statistical test"]
   }
  ],
  "outcome": {
@@ -845,7 +852,7 @@
   "method_basis": "The key is filed in the same manuscript as the letters: DECODE R9261 p. 1 = Add MS 4136 f. 179, 'Sr Thomas Smith's Cipher', in Forbes's deciphering file; the readings were checked against Forbes's A Full View (1740-41) and CSP Foreign.",
   "contribution": ["transcription", "sender or date identified", "catalogue correction"],
   "class": "read in part",
-  "fraction_read": 0.99,
+  "fraction_read": 0.78,
   "grades": "unknown",
   "verification": [
    "key confirms",
@@ -882,13 +889,14 @@
     "transcription": "decipher_A.md",
     "decryption": "decipher_A.md",
     "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "decipher_A.md Letter 1: 32 passages that read as English phrases and whole sentences (the rendering of Tankerville; one to be named on the other side with the Admiral; Monsieur Danville to come over into England) and align word for word with Forbes's print, which supplies the clear text between them."
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored decipher_A.md, the passage table of six letters (0.444). Forbes, A Full View ii 315-318, prints this letter whole; no02_reading.md gives the letter from the first to the last cipher passage in Forbes's spelling with the 32 cipher stretches (decipher_A Letter 1, key R9261) in italics: 1.0 on explicit holes, 0.632 plain (1563 English), hole rate 0.0. Rests on the printed text, with which every passage aligns."
     },
     "state": "read",
-    "language": "en"
+    "language": "en",
+    "reading": "no02_reading.md"
    },
    {
     "doc": "03",
@@ -964,14 +972,10 @@
     "summary": "Sir Thomas Smith to Cecil, Paris, 25 Jan 1563/4: the ciphered passages as Patrick Forbes copied them into his deciphering file (Add MS 4136), deciphered with Smith's key R9261 (large part; checked against CSP F. 7 no. 103). In decipher_A.md, Letter 4: glyphs and plaintext per passage.",
     "transcription": "decipher_A.md",
     "decryption": "decipher_A.md",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "decipher_A.md Letter 4: one long block read as English sentences (the ambassador of Spain sends me word that the French make ladders at Etaples and Boulogne ... the King of Spain has entered into no league with the Pope ... to make himself rich), agreeing with CSP Foreign vii 103; the last clause tentative."
-    },
-    "state": "read",
-    "language": "en"
+    "state": "decoded, not read",
+    "language": "en",
+    "note": "Decoded, not read (v3 check 23 Oct 2026): written out as no07_reading.md from decipher_A Letter 4 with supplied and partial words marked, the block scores 0.4 on explicit holes, 0.4 plain, hole rate 0.168. The middle (Spain's ambassador, ladders at Etaples and Boulogne, no league with the Pope, nothing against the Queen of Navarre) holds and agrees with CSP Foreign vii no. 103; the opening, the 'surprise some town ... the Low Countries' clause (where 'or attempt some place in' is the calendar's, not the signs') and the close do not. The original (TNA SP 70) is calendared as 'portions in cipher deciphered', so a contemporary decipherment exists but was not reached.",
+    "reading": "no07_reading.md"
    },
    {
     "doc": "08",
@@ -1013,14 +1017,10 @@
     "summary": "Sir Thomas Smith to Cecil, Avignon, 4 Oct 1564: the ciphered passages as Patrick Forbes copied them into his deciphering file (Add MS 4136), deciphered with Smith's key R9261 (about 50 of 62 passages; checked against CSP F. 7 no. 714). Among them: \"they feare that she is enclined to this last offer of Lenox\". In decipher_C.md, the whole file: glyphs and plaintext per passage.",
     "transcription": "decipher_C.md",
     "decryption": "decipher_C.md",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "decipher_C.md: 63 passages, about 50 read firmly, which in order build the sense of CSP Foreign vii 714 section 2 (their designs here are two ...; the Bishop of Glasgow ... an abbey in Poitiers; the marriages proposed for the Queen of Scots; a privy practice betwixt Earl Lennox and her) with scattered holes."
-    },
-    "state": "read",
-    "language": "en"
+    "state": "decoded, not read",
+    "language": "en",
+    "note": "Decoded, not read (v3 check 23 Oct 2026): written out as no10_reading.md from decipher_C.md (62 passages, partial and supplied words marked), it scores 0.745 on explicit holes only when each passage counts as a sentence; scored as the runs of consecutive passages it reads as, 0.345, hole rate 0.175. About 50 passages are firm and follow CSP Foreign vii no. 714 in order, but the runs (Earl Murray; they; Lords; be of the countreband; interrupt this their ...) do not build sentences without the calendar. The original (TNA SP 70) is calendared as 'portions in cipher, deciphered', so a contemporary decipherment exists but was not reached. Keeps its partial reading.",
+    "reading": "no10_reading.md"
    },
    {
     "doc": "11",
@@ -1047,12 +1047,13 @@
     "decryption": "decipher_D.md",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "decipher_D.md D4: the Adam Hume passage reads as English sentences (well rewarded ...; one of them which with lies and forged inventions ...; the Ambassador is wholly for the Papists); the last two rows have holes."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored decipher_D.md, the passage tables of eight letters (0.422). no12_reading.md, from decipher_D D4 with supplied and partial words marked: 0.625 on explicit holes, 0.5 plain, hole rate 0.113: just over the bar. Passages (1)-(2) to 'rid of him' hold and agree almost word for word with CSP Foreign vii no. 806; the tail of (2) and (3) are fragments. Rests on Smith's key R9261 applied to Forbes's copy; no clear text in print."
     },
     "state": "read",
-    "language": "en"
+    "language": "en",
+    "reading": "no12_reading.md"
    },
    {
     "doc": "13",
@@ -1079,12 +1080,13 @@
     "decryption": "decipher_D.md",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "decipher_D.md D6: reads as continuous English (meeting together at Soissons and Nanteuil; they of Guise complain that all letters from the Cardinal be opened at Paris and Lyons; Hume altogether a Lethington, double or rather triple) with a few holes."
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored decipher_D.md (0.422). no14_reading.md, the 12-line block from decipher_D D6 with unread code signs as holes: 0.833 on explicit holes, 0.5 plain, hole rate 0.072; sentences hold and agree with CSP Foreign vii no. 815 throughout. Rests on Smith's key R9261 applied to Forbes's copy."
     },
     "state": "read",
-    "language": "en"
+    "language": "en",
+    "reading": "no14_reading.md"
    },
    {
     "doc": "15",
@@ -1233,7 +1235,7 @@
    }
   ],
   "key_file": "KEY.md",
-  "fraction_read_source": "22 Oct 2026, re-read (batch b03): estimated by numbered cipher passages, since Forbes copied only the cipher stretches and no token counts exist. 23 letters, about 335 passages (01: 13, 02: 32, 03: 16, 04: 58, 05: 12, 06: 2, 07: 1 block, 08: 31, 09: 2, 10: ~62, 11: 12, 12: 3, 13: 2, 14: 12 lines, 15: 7, 16: 10, 17: 27, 18: 5, 19: 6, 20: 4, 21: 6, 22: 7 lines, 23: 4); the 22 letters that read hold about 331 of them, no. 23 (4) does not: about 0.99. Earlier: ~0.45 (reading audit, same day).",
+  "fraction_read_source": "22 Oct 2026, re-read (batch b03): estimated by numbered cipher passages, since Forbes copied only the cipher stretches and no token counts exist. 23 letters, about 335 passages (01: 13, 02: 32, 03: 16, 04: 58, 05: 12, 06: 2, 07: 1 block, 08: 31, 09: 2, 10: ~62, 11: 12, 12: 3, 13: 2, 14: 12 lines, 15: 7, 16: 10, 17: 27, 18: 5, 19: 6, 20: 4, 21: 6, 22: 7 lines, 23: 4); the 22 letters that read hold about 331 of them, no. 23 (4) does not: about 0.99. Earlier: ~0.45 (reading audit, same day). Verification 3, 23 Oct 2026: nos. 07 (1 block) and 10 (~62 passages) demoted, and no. 15 (7, demoted 22 Oct) taken out as well: about 260 of 334 passages in letters that read = 0.78.",
   "fraction_read_method": "estimated",
   "gaps": [
    {
@@ -1245,6 +1247,11 @@
     "item": "no. 23, advertisements from France, 31 Jan 1562/3 (R9236 f. 140), four short lines",
     "blocker": "too-short",
     "detail": "no clear or printed text (not in Forbes, not found in CSP Foreign vi); the unknown signs occur once"
+   },
+   {
+    "item": "nos. 07 (25 Jan 1563/4, CSP vii 103) and 10 (Avignon 4 Oct 1564, CSP vii 714): decoded, not read",
+    "blocker": "needs-physical-access",
+    "detail": "Forbes's copy has the cipher only; the originals in TNA SP 70, calendared as 'portions in cipher deciphered', carry the contemporary decipherments and the clear text; State Papers Online not reached"
    }
   ],
   "key": "partial"

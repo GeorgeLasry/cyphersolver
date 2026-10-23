@@ -111,6 +111,13 @@
       "kind": "verification",
       "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R7475.txt (numbers with the interlinear gloss); gloss lines copied verbatim to texts/R7475_decryption.md",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "Verification 3 (v3_below_b): flagged at 0.34 on R7475_decryption.md (gloss lines with notes, mid-word line breaks). Wrote texts/R7475_reading.md, word-divided from the contemporary gloss, holes marked: 0.95 explicit holes. Kept read.",
+      "result": "worked",
+      "technique": ["manual reconstruction", "statistical test"]
     }
   ],
   "outcome": {
@@ -155,7 +162,16 @@
         "label": "R7475, pp. 29-30, c. 1707",
         "transcription": "R7475.txt",
         "decryption": "texts/R7475_decryption.md",
-        "summary": "An unsigned, undated Polish letter (with Latin phrases) to Grand Crown Hetman Adam Mikołaj Sieniawski from an adviser in his camp, most likely 1707: he warns against the Bishop of Chełmno's (Teodor Potocki's) mediation and Stanisław Leszczyński's treaty offers, and advises waiting for the outcome of the Swedish march on Moscow and concluding only together with all."
+        "summary": "An unsigned, undated Polish letter (with Latin phrases) to Grand Crown Hetman Adam Mikołaj Sieniawski from an adviser in his camp, most likely 1707: he warns against the Bishop of Chełmno's (Teodor Potocki's) mediation and Stanisław Leszczyński's treaty offers, and advises waiting for the outcome of the Swedish march on Moscow and concluding only together with all.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "v3 check 23 Oct 2026: the sweep scored texts/R7475_decryption.md, the glossator's letter-by-letter lines with the cipher's line breaks, few word divisions and the transcriber's bracketed notes (0.34). The reading was written out from it (texts/R7475_reading.md: words joined across line ends and divided, the gloss's spelling kept, the figures followed where the notes show the gloss slipping, unread and partial words as holes): 0.95 on explicit holes, hole rate 0.032 (plain not measurable: no Polish word list). Rests on the contemporary interlinear decipherment on the page."
+        },
+        "state": "read",
+        "reading": "texts/R7475_reading.md",
+        "language": "pl"
       }
     ]
   }

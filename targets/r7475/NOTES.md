@@ -27,6 +27,14 @@ z/ż=56-57, with e=11-14, y=3-4, o=7-8, u=5-6; code 600 = król szwedzki. Not ke
 (99.6%). Gloss conflicts (50 glossed z 7 times, t 76 times; 47 p 3 times, r 32 times ...) are encipherer or glossator
 slips, listed at the end of `R7475.txt`.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged the letter at 0.34: it scored `texts/R7475_decryption.md`, the glossator's letter-by-letter lines,
+which keep the cipher's line breaks inside words and carry the transcriber's bracketed notes. The reading is now written
+out as `texts/R7475_reading.md`: words joined and divided, the gloss's spelling kept, the figures followed where the
+notes show the glossator slipping, blotted or partial words as holes. **0.95 on explicit holes**, hole rate 0.032 (no
+Polish word list, so no plain score). Kept read; it rests on the contemporary interlinear decipherment.
+
 ## Remaining gaps
 - 10 of 2,444 numbers without an aligned gloss (ink blots L37, L38, L56, L70; a smudged figure L40; a superfluous 10 L5; the ringed 18 L41; 46 22 L55; the last 13 of -kiemi L73), plus the struck passage L58 and a lone unglossed "1." (L64) - blocker: illegible; blotted, smudged or cancelled on the page, no legible gloss
 

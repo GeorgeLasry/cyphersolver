@@ -111,6 +111,13 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no10.txt (each sign with its contemporary gloss letter) and no10.tok",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 3 (v3_below_b): flagged at 0.567 on no10.txt (transcription table). The cipher run read in its clear sentence (no10_reading.md): 1.0 explicit holes. Kept read.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -156,7 +163,16 @@
      "transcripts/no10.tok"
     ],
     "decryption": "transcripts/no10.txt",
-    "summary": "A narrow undated slip: 'Et riuscendo o no la presura di Montepulciano, in ogni modo ragunato che sarà ...' ('whether or not the taking of Montepulciano succeeds ...'). The single cipher run of 25 signs was deciphered at the time letter by letter above the signs; no10.txt gives each sign with the letter written over it."
+    "summary": "A narrow undated slip: 'Et riuscendo o no la presura di Montepulciano, in ogni modo ragunato che sarà ...' ('whether or not the taking of Montepulciano succeeds ...'). The single cipher run of 25 signs was deciphered at the time letter by letter above the signs; no10.txt gives each sign with the letter written over it.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored transcripts/no10.txt, the sign-by-sign transcription with its gloss table and tentative clear lines (0.567). The cipher run is three words, 'presura di Montepulciano', every letter given by the contemporary gloss over its sign and consistent where a sign repeats; written out in its clear sentence (no10_reading.md) it scores 1.0 on explicit holes (plain 0.0 on one sentence: 'presura' with one s and 'Montepulciano' are unknown to the word list). Rests on the decipherment written at the time."
+    },
+    "state": "read",
+    "reading": "transcripts/no10_reading.md",
+    "language": "it"
    }
   ]
  }

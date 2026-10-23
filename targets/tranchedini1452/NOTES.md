@@ -1,6 +1,6 @@
 # Nicodemo Tranchedini → Francesco Sforza, 28 June 1452, BnF Italien 2242 — Tranchedini, 1452
 
-Status: no write-up of our own (result by George Lasry, presented on docs/tranchedini1452.html)
+Status: in progress (no write-up of our own: the result is George Lasry's, presented on docs/tranchedini1452.html; 23 Oct 2026: no reading of it in the repository, see Remaining gaps)
 
 ## Source
 
@@ -59,3 +59,20 @@ Plaintext available
 - What we checked: f89r "Post data ... Signore" cipher postscript dated 28 Jun 1452, signed Nicodemus; facing f88v carries the contemporary decipherment (clear: "vescovo de Novara ... la V. Ill. hauria ben facto ... paragonata ... Certificandone Signore"), which matches the clear islands on f89r and his contents; no symbol-level decode of a run done
 - Verdict: **partly confirmed** (method read from existing decipherment, extent partial). The check is a sample, not a re-solution.
 - Notes: A literal 15th-c. decipherment sits on f88r-v next to the cipher, and the key is Domnina 2018s reconstruction, so little is new beyond alignment. Transcription incomplete; status Partly deciphered.
+
+## Verification 3, 23 Oct 2026
+
+The v3 sweep scored this entry's `lasry_entry.md` (0.588), but that file holds only the metadata of Lasry's report
+page: unlike his other entries it carries no excerpt, and his transcription and decryption are not in the
+repository. So there is no reading here, and `outcome.texts[0]` is now **decoded, not read**. The reading source is
+on Gallica: the contemporary literal decipherment, f. 88r (lower half, "Post dat. Signore …") and f. 88v
+(btv1b100387843, canvases 82-83, opened 23 Oct 2026), about thirty lines of abbreviated 15th-century cursive. The
+result remains Lasry's (class already solved).
+
+## Remaining gaps
+- the 28 June 1452 postscript, no reading in the repository - blocker: not-attempted; transcribe the contemporary decipherment on f. 88r-v (Gallica canvases 82-83) and align it with the cipher on f. 89r, or obtain Lasry's transcription
+
+## Escalation
+- [x] clear-pages: the contemporary decipherment on f. 88r-v located and opened (23 Oct 2026); not transcribed
+- [ ] retry: transcribe f. 88r-v
+

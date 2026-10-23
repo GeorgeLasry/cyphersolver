@@ -102,6 +102,15 @@ corpus words to the sign stream), `fit248*.txt`, `fit250*.txt`, `reading248.txt`
 using the gloss, and R9412 as running German with local errors. Its hill-climbs (`solve.py`) failed twice. It
 confirms the key independently of the gloss; its readings are superseded by `r9411/`.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged R9411 (0.455) and R9412 (0.40) on the explicit-hole measure. Both reading files give one
+manuscript line per line with its number in front and words broken across lines, and the scorer counted every line
+number as a hole. Joined into running text (`research/reading_audit/v3b_lines.py`): **R9411 0.71** on explicit holes
+(0.452 plain, hole rate 0.078), resting on the letter's own interlinear decipherment; **R9412 0.648** (0.389 plain,
+hole rate 0.106) with the `<...>` conjectures counted as holes, resting on the key alone. Both stay read; R9412 is
+close to the bar.
+
 ## Remaining gaps
 
 - R9412, 27 cipher words not read (after the 5 Oct check) - blocker: illegible; originally 31 words unread and 37 supplied: the second Danube fortress (l.10),

@@ -121,10 +121,21 @@ in "[u]pon", a second slip his brackets leave out, or a p read where this transc
 (z 7.9 vs random keys, 7.4 vs shuffled refit, 200 letters). The other 19 telegrams were not checked: their forms are not
 in his repository and his cipher transcriptions are not published.
 
+## Verification 3, 23 Oct 2026: the 1916 telegrams demoted
+
+The v3 sweep flagged `outcome.texts[2]` (JACAR B03050089000, seven telegrams of May 1916). Its reading is the 1916
+rows of Brice Dudout's table (`texts/readings_dudout.md`); scored alone they give **0.31 on explicit holes**, 0.25
+plain, hole rate 0.48. 109 of their 627 letters (17%) are in brackets: letters the forms give differently (cursive and
+transmission confusions n/v, i/r, y/h, g/p, a/u, e/c) supplied from sense. That is far over the 3% look-alike limit,
+and nothing outside confirms them (the copies carry no translation; no cipher transcription of the 1916 forms is in
+this repository). The entry is now **decoded, not read**. What would lift it: the 1916 forms transcribed from the
+JACAR images and the confusions tested letter by letter against the key, as was done for 20 and 26 Feb and 7 Jul 1915.
+
 ## Remaining gaps
 - 9 Mar 1915, eight cipher words in the middle of the 30-word telegram - blocker: illegible (transmission garble, per the contributor's check of the form; the form was not among frames 0163-0220 of B03050087600 inspected here 20 Oct 2026); not code groups but cipher words the known key does not turn into English (copying errors on the form, per the contributor); form not seen here, workable from JACAR B03050087600
 - 25 Feb 1915, the word after "throw of[f]" and the end of "de[vou]t" - blocker: illegible (transmission garble). Checked here 20 Oct 2026 on B03050087600 p. 47 (frame 0209): the form is clear; the word is ejotrubuvd = of|eliag|and, five letters corrupt between "of" and "and"; "de[vou]t" is dogocl, n and a written g and c
 - 7 Jul 1915, one group between "Lovesick" and "in torture" - blocker: illegible (transmission garble); key gives lovesickxa instorture, checked on image 50 here; the copy is corrupt at this point
+- May 1916 telegrams (B03050089000), decoded, not read (v3 check 23 Oct 2026: 17% of letters emended look-alikes, 0.31 explicit holes) - blocker: illegible (copying and transmission confusions on the Japanese copies, as on the 1915 forms checked here; no translation on the copies to confirm the emended letters)
 
 ## Escalation
 - [x] siblings: the contributor went through the 1915 volumes B03050087600/087700 and the May 1916 volume B03050089000; the 9 Mar clear telegrams and the Chinese-code telegrams of 10 Mar 1915 and 11-12 May 1916 were used as cross-checks

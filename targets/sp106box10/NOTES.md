@@ -111,10 +111,20 @@ The letters carry no date that has been read. The file they sit in is dated 1623
 codebreaker's system-A key (sp106r725: Marques Inichiosa, C. Barberino, Palatinato); R702 p. 2 adds a 24 May and
 colonels. Taken here as c. 1623-24, not proved for these two letters.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep listed R664, R658 and R702 as read documents scoring under 0.60. None is a reading: R664's file holds the
+two decoded phrases and one clear line, not the letter (0.545 on explicit holes over 98 words), so **R664 is decoded,
+not read**; R658 is the codebreaker's grid of the code, R702 p. 2 his worksheet of glossed strings (all 46 groups
+decode to his glosses) and R701 p. 1 his heading and word list, so these three are now `not prose`. No document of
+the entry reads: class not read, method not solved, fraction_read 0. The way on is the open retry below: transcribe
+R664 and R660 group by group and decode them with `cat62/venetian_code.tsv`.
+
 ## Remaining gaps
 - R664 ff. 1-3 and R660 continuous reading - blocker: not-attempted; code rebuilt to 117 values from R658, the letters never transcribed group by group and decoded through with it
 - groups seen on R664 f. 1 but not valued (233, 312, 367, 439, 477, 534, 551, 556, 566) - blocker: open-codes; to be retried once the letters are transcribed in full
 - sender, recipient - blocker: not-attempted; depends on the continuous reading
+- R664 decoded, not read (v3 check 23 Oct 2026: only two phrases decoded) - blocker: not-attempted; the same work as the first line above
 
 ## Escalation
 - [x] siblings: every record of the file R656-R725 opened and placed (the other ciphers are the entries listed above)

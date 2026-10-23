@@ -288,6 +288,13 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): decrypt_p3.txt and decrypt_p4.txt divided into words and read: the Dutch builds sentences; the open tokens are single word signs with no key material and two ink blots. Per-document C overturned to B for both pages. Claim unchanged.",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "what": "Verification 3 (v3_below_b): pp. 3 and 4 were scored on wainut_proposals.md (WAINUT's proposals table, 0.59). Wrote texts/p3_p4_reading.md from the decrypts and the NOTES reading, I-grade signs as [?word]: 0.708 explicit holes (p3 0.69, p4 0.75), plain 0.125 (Dutch word list). Kept read, grade B; p3 ll. 7-12 and the P.S. stay fragmentary.",
+   "result": "worked",
+   "technique": ["manual reconstruction", "statistical test"]
   }
  ],
  "outcome": {
@@ -365,10 +372,11 @@
     "state": "read",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Overturns the per-document C. Divided into words the unspaced Dutch builds sentences: \"men heeft de offeciers en de trouppes zoo wel uit malkander gelegen ... ook is er geen de minste saamenhang tussen dezelve; zy zijn geheel verstrooyd en zonder hooft ... men heeft de ratificatie van ons met frankrijk gepubliceert ofschoon de ratificatie zelve nog niet gekoomen was\". The holes are single word signs with no key material (<Δ>, <%>, <T with bar>), heaviest in the two sentences of lines 8-10."
-    }
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored texts/wainut_proposals.md, WAINUT's table of proposed sign values, not a reading (0.59). A reading of pp. 3-4 was written from the decrypts and the NOTES reading (texts/p3_p4_reading.md; word signs with H/M values as words, the four I-grade values as [?word], unvalued and blotted signs as [...]): pp. 3-4 together 0.708 on explicit holes, hole rate 0.122; p. 3 0.69, p. 4 0.75; plain 0.125 (1795 Dutch with y for ij, which the nl word list does not know). The sentences on the officers, the ratification and England hold; the stretch p. 3 ll. 7-12 (natuurlyk ... behandelt word) and the P.S. do not. Rests on the R1892 square key recovered here ciphertext-only and confirmed by the clear Dutch under p. 1; no decipherment of pp. 3-4."
+    },
+    "reading": "texts/p3_p4_reading.md"
    },
    {
     "doc": "R2242 p4",
@@ -383,10 +391,11 @@
     "state": "read",
     "reading_review": {
      "grade": "B",
-     "by": "Claude (reading audit)",
-     "date": "2026-10-22",
-     "note": "Overturns the per-document C. \"Als engeland maar blyft persisteern om het tegenwoordig gouvernement niet te erkennen dan zoo zy geen robespierrismus durven te introduseeren, daar <%> zeer veel dispositie is\" builds; the holes are single word signs and the ink-blotted P.S."
-    }
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored texts/wainut_proposals.md, WAINUT's table of proposed sign values, not a reading (0.59). A reading of pp. 3-4 was written from the decrypts and the NOTES reading (texts/p3_p4_reading.md; word signs with H/M values as words, the four I-grade values as [?word], unvalued and blotted signs as [...]): pp. 3-4 together 0.708 on explicit holes, hole rate 0.122; p. 3 0.69, p. 4 0.75; plain 0.125 (1795 Dutch with y for ij, which the nl word list does not know). The sentences on the officers, the ratification and England hold; the stretch p. 3 ll. 7-12 (natuurlyk ... behandelt word) and the P.S. do not. Rests on the R1892 square key recovered here ciphertext-only and confirmed by the clear Dutch under p. 1; no decipherment of pp. 3-4."
+    },
+    "reading": "texts/p3_p4_reading.md"
    }
   ],
   "key_file": [

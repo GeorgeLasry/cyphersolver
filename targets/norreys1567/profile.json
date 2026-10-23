@@ -184,7 +184,8 @@
    "result": "partial"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 85 tokens, 40 types, en-modern order 4: reading -2.538 per letter; random keys -3.11 (z 3.3); key annealed onto shuffled ciphertext best -2.006 (mean -2.045, z -15.7); annealer on the real text -1.985. Verdict: underdetermined.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt (all groups); reading.md for 9 Mar 1568 and the full group-by-group decrypt work/tomokiyo_apply.out for the siblings", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt (all groups); reading.md for 9 Mar 1568 and the full group-by-group decrypt work/tomokiyo_apply.out for the siblings", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 3 (v3_below_b): siblings1567-68 was counted as read on work/tomokiyo_apply.out, a group-by-group decode of isolated ciphered words (Forbes's extracts) with no running text; score 0.0. Demoted to decoded, not read: word-level matches with CSP Foreign viii stand, but no sentence can be built without the originals' clear text. fraction_read (measured on the 9 Mar 1568 target only) unchanged.", "result": "failed", "technique": ["statistical test"]}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 85, "types": 40, "tokens_per_type": 2.12, "score": -2.538, "nulls": {"random keys": {"n": 200, "mean": -3.11, "sd": 0.172, "max": -2.576, "z": 3.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.045, "sd": 0.031, "max": -2.006, "z": -15.7, "p": 1.0}}, "power": -1.985, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.538; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -1.985"}, 
   "method": "read with known key",
@@ -193,7 +194,7 @@
   "class": "read in part",
   "fraction_read": 0.33,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: cipher signs of the 9 Mar 1568 target, 2 of 6 read (item 1 name sign H, item 3 name sign I; the four signs of item 2 unread). Siblings (work/tomokiyo_apply.out): 38 of 51 groups read, the 13 garbled groups listed in gaps counted unread.",
+  "fraction_read_source": "reading.md: cipher signs of the 9 Mar 1568 target, 2 of 6 read (item 1 name sign H, item 3 name sign I; the four signs of item 2 unread). Siblings (work/tomokiyo_apply.out): 38 of 51 groups read, the 13 garbled groups listed in gaps counted unread. Verification 3, 23 Oct 2026: the siblings entry is decoded, not read (isolated ciphered words, no running text); the figure, measured on the 9 Mar 1568 extract alone, is unchanged.",
   "key": "partial",
   "verification": ["historical consistency"],
   "notes": "Sibling readings verified against CSP Foreign viii summaries and a shuffle control; target item 1 French King (H), item 2 not read, item 3 Queen of Scots? (I). fraction_read 0.33 is measured on the target 9 Mar 1568 extract only (2 of 6 signs).",
@@ -212,6 +213,11 @@
     "item": "sibling groups: 4 June 1567 (1, 3, 4, 7), 10 July (2 tail), 6 Feb (12, 20, 23), 9 Feb (1, 10, 11), 24 Feb (1, 7)",
     "blocker": "open-codes",
     "detail": "garbled with Tomokiyo's table; 4 June line transcription needs redoing"
+   },
+   {
+    "item": "siblings 1567-68 (Forbes's extracts of six earlier letters): decoded word by word, no sentences",
+    "blocker": "needs-physical-access",
+    "detail": "Forbes copied only the ciphered words; the originals in TNA SP 70/96-97 (with their clear text and probably interlinear decipherments) are on State Papers Online, not reached"
    }
   ],
   "credits": [
@@ -230,7 +236,9 @@
     "label": "Norreys's earlier letters, 4 June 1567 to 24 Feb 1567/8 (ff. 160-161)",
     "transcription": "transcription.txt",
     "decryption": "work/tomokiyo_apply.out",
-    "summary": "The ciphered words of Norreys's letters of 4 June, 6 July and 10 July 1567 and 6, 9 and 24 Feb 1567/8, as copied by Forbes, decrypted group by group with Tomokiyo's 1568 Cecil-Norris table and checked against the calendared letters in CSP Foreign viii."
+    "summary": "The ciphered words of Norreys's letters of 4 June, 6 July and 10 July 1567 and 6, 9 and 24 Feb 1567/8, as copied by Forbes, decrypted group by group with Tomokiyo's 1568 Cecil-Norris table and checked against the calendared letters in CSP Foreign viii.",
+    "note": "Decoded, not read (v3 check 23 Oct 2026): the entry's decryption, work/tomokiyo_apply.out, is a group-by-group decode with no word division and no running text (scored 0.0; the sweep's language tag 'de' was also wrong). Forbes copied only the ciphered words of these letters, so there are no sentences to build: about a dozen groups give whole words that match the CSP Foreign viii summaries (master Steuarde, Lesly, Rothes, papystes, demaund, reason, ruin, remayn), the rest are garbled or name signs. The words are kept in NOTES.md (Readings checked against CSP Foreign viii) as a word-level decipherment.",
+    "state": "decoded, not read"
    }
   ]
  }

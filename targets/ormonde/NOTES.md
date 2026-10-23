@@ -185,3 +185,15 @@ Nomenclator, as it now stands:
 
 `ciphertext.txt`, `analyze.py`, `analyze_out.txt`, `find_cipher_runs.py`, `cipher_runs.txt`, `knowler_excerpts.txt`,
 `ormonde1_djvu.txt` (OCR, 4.4 MB, not committed), `p28.jpg`, `p29.jpg`, `NOTES.md`.
+
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged the reading at 0.29 on the explicit-hole measure: `texts/letters_decryption.md` (copied from §4)
+leaves the code numbers and `[null]` marks in the running text, and each counts as a hole. A reading is now
+`texts/letters_reading.md`: the HMC clear text with the cipher words in place, nulls dropped, codes written as their
+values, the doubtful ones as `[?word]` (*angry* on the misprinted or mis-enciphered 26, 113 *with*/*against*, 218
+Coke) and 185, 149, 31 left unread. **0.75 on explicit holes**, 0.667 plain, hole rate 0.073. The sentences hold, the
+clear text carrying them around short cipher runs. Kept read, grade B. It rests on the alphabet recovered from the
+adjacent clear text and the nomenclator matched against Knowler 1739; there is no manuscript, key sheet or
+contemporary decipherment.
+

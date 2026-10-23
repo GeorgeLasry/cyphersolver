@@ -121,6 +121,16 @@ ville de Nérac".
   images of different symbol sets, and this script matches none of them, so the key was rebuilt from the
   ciphertext instead.
 
+## Verification 3, 23 Oct 2026
+
+The v3 sweep flagged this reading at 0.21 on the explicit-hole measure. It scored `reading_154v-156v.txt` alone, with
+its `154v.01` line prefixes and `#` header as text. Both reading files cut to the text (`reading_152r-154r.txt`,
+`reading_154v-156v.txt`) score **0.755 on explicit holes** (111 of 147 sentences; each half 0.76), 0.54 plain (1560
+spelling the word list lacks), hole rate 0.073; the 108 bracketed emendations count as holes. The sentences hold.
+Kept read (grade B); `outcome.texts[0]` now names the two files as its `reading`. It rests on the key broken here
+and the images, with no contemporary decipherment or copy. `READING.md` is a normalised editorial version, not
+the reading that is scored.
+
 ## Remaining gaps
 
 - 16 scattered words (of 1,715), each tried against the image and the key, context not decisive: 152r.16 (x),

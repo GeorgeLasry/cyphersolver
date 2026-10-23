@@ -91,6 +91,27 @@ R9236 (catalogue 94, added 21 Sept 2026): readings in decipher_E.md. New variant
 - Unread code signs: ẓ, ï, C·, F̄; the hooked-T family (here/his/they/this/thing) is read from context.
 - Marseilles (5): the key has ⊙ as Calais where CSP has Dieppe.
 
+## Verification 3, 23 Oct 2026: nos. 02, 07, 10, 12, 14
+
+The v3 sweep flagged five letters whose entries pointed at the shared passage tables (`decipher_A.md` for 02 and 07,
+`decipher_C.md` for 10, `decipher_D.md` for 12 and 14; 0.42 to 0.51). Each now has its own reading file; scores on
+explicit holes (plain), hole rate:
+
+| no. | reading | score | decision |
+|---|---|---|---|
+| 02 | `no02_reading.md`: Forbes ii 315-318 in his spelling, the 32 cipher stretches in italics | 1.0 (0.632), 0.0 | read, grade A |
+| 07 | `no07_reading.md`: the block of decipher_A Letter 4, supplied words marked | 0.4 (0.4), 0.168 | **decoded, not read** |
+| 10 | `no10_reading.md`: the 62 passages of decipher_C, partial and supplied words marked | 0.745 per passage, 0.345 per run (0.511), 0.175 | **decoded, not read** |
+| 12 | `no12_reading.md`: decipher_D D4 | 0.625 (0.5), 0.113 | read, grade B, close to the bar |
+| 14 | `no14_reading.md`: decipher_D D6 | 0.833 (0.5), 0.072 | read, grade B |
+
+No. 10 passes the measure only when every passage counts as a sentence; read as the runs it is written in ("Earl
+Murray; they; Lords; be of the countreband; interrupt this their …") it does not build sentences without the calendar.
+No. 07's middle holds, but its opening, the clause before "the Low Countries" (the calendar's "or attempt some place
+in" is not in the signs) and its close do not. For both, CSP Foreign calls the original in SP 70 "portions in cipher
+deciphered": the contemporary decipherment exists in the State Papers, which were not reached. fraction_read 0.99 ->
+0.78 (about 260 of 334 passages; no. 15, demoted on 22 Oct, is also taken out).
+
 ## Remaining gaps
 
 Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b03, read). What stays open:
@@ -101,6 +122,7 @@ Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b
   letters (SP 70 originals) is not in print (CSP Foreign gives summaries only)
 - no. 23 (advertisements from France, 31 Jan 1562/3, R9236 f. 140) decoded, not read - blocker: too-short; no clear or
   printed text (not in Forbes, not found in CSP Foreign vi), and its unknown signs (ſ., ξ̤, L8T̈, ξ‡⊓2ξ) occur once
+- nos. 07 and 10 decoded, not read (v3 check 23 Oct 2026: 0.4; 0.345 by run) - blocker: needs-physical-access; the originals in TNA SP 70 carry the contemporary decipherment ('portions in cipher deciphered', CSP Foreign vii 103, 714); Forbes copied the cipher only; State Papers Online not reached
 
 ## Escalation
 

@@ -432,6 +432,13 @@
    "what": "Hand crib on the repeated run g 7 4 t o (runs 2 and 11, the man sent to the marechal de Vitry): with g = e and 4 = n the pattern e?n?o? fits none of envoye, genois, espion; no value adopted. Baluze 156 f. 157r kept decoded, not read (too-short).",
    "result": "failed",
    "technique": ["crib testing"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 3 (v3_below_b): flagged at 0.0 on CTTS's raw decryption/all.txt. Scored the reading in lasry2022/READING.md instead: French sections 0.721 explicit / 0.536 plain (v-for-u spelling); cipher runs alone 0.84 / 0.712. Kept read; reading field set.",
+   "result": "worked",
+   "technique": ["statistical test"]
   }
  ],
  "outcome": {
@@ -559,7 +566,15 @@
     "decryption": "lasry2022/ctts/decryption/all.txt",
     "translation": "lasry2022/CONTRIBUTION.md",
     "summary": "The King keeps the Prince of Monaco in play without a treaty (1631); a sergeant-major offers Sabran the castles of Savona, a Savoyard plot that is discovered (1633); Genoa helps the Spanish fleet while France fights for Valenza (1635).",
-    "language": "fr"
+    "language": "fr",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "v3 check 23 Oct 2026: the sweep scored lasry2022/ctts/decryption/all.txt, CTTS's raw output (spaced letters, [plaintext] placeholders; 0.0). The reading is lasry2022/READING.md: its 18 '### French' sections (clear and cipher together, image markers cut) score 0.721 on explicit holes, 0.536 plain (the manuscript's v-for-u spelling: tovchant, avtre), hole rate 0.086; the cipher runs alone (401 bold segments) 0.84 explicit, 0.712 plain, hole rate 0.129. Sentences hold. Rests on Lasry's CTTS key (ciphertext-only, 2022) completed from context in 2026; the 212 tentative name-code readings ([France?] ...) count as holes; no contemporary decipherment."
+    },
+    "state": "read",
+    "reading": "lasry2022/READING.md"
    },
    {
     "doc": [

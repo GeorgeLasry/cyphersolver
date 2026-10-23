@@ -122,10 +122,20 @@ pp. 152-153 (n183-n184). Printed cipher, same system as Norreys's. For item (2) 
   The earlier "Catholic" (M) is withdrawn and downgraded to I.
 - Items (1) (French King, H) and (3) (unread name sign) stand. What would settle it: TNA SP 70/97 original.
 
+## Verification 3, 23 Oct 2026: siblings entry demoted
+
+`outcome.texts[1]` (siblings 1567-68) stood as read on `work/tomokiyo_apply.out`, which is a group-by-group decode of
+the ciphered words Forbes copied, without word division or running text (0.0 on the explicit-hole measure; the sweep
+also tagged it German). There are no sentences to build: Forbes copied only the cipher words, so the readings are
+single words matched to the CSP Foreign viii summaries (table above). The entry is now **decoded, not read**; the
+word list stands as a word-level decipherment. What would turn it into a reading: the originals in TNA SP 70/96-97,
+whose clear text would put the words back into their sentences.
+
 ## Remaining gaps
 - 9 Mar 1568 item 2 (four signs, "a t ? l") - blocker: too-short; one four-sign word with one unmatched sign; no CSP 2054 word fits; Cabala 1663 checked
 - 9 Mar 1568 item 3 (name sign, Queen of Scots? graded I) - blocker: too-short; single nomenclator sign read by position only; the name table is not printed in Cabala
 - sibling groups: 4 June 1567 (1, 3, 4, 7), 10 July (2 tail), 6 Feb (12, 20, 23), 9 Feb (1, 10, 11), 24 Feb (1, 7) - blocker: open-codes; garbled with Tomokiyo's table; 4 June line transcription needs redoing
+- siblings 1567-68 decoded word by word, no sentences (v3 check 23 Oct 2026) - blocker: needs-physical-access; Forbes copied only the ciphered words; the originals with their clear text are TNA SP 70/96-97 (State Papers Online, not reached)
 
 ## Escalation
 - [x] siblings: all Norreys extracts on f. 160-161 (R9250 p. 2, R9251) transcribed and read
