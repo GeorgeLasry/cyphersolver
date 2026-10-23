@@ -4,11 +4,11 @@
 
 Scotland; […]; Scotland. The amity; England; Scotland.
 
-The Lord of Murray; such lords and great men; be the great favourers of religion there.
+[The] Lord of Murray; such lords and great men; be the great favourers of religion there.
 
-To do [?some] great enterprise that way. The Scots […]; of the religion; for [?my] […] Lord of Murray.
+To do [?some] great enterprise that wise. The Scots […]; of the religion; for [?my] […] Lord of Murray.
 
-The Earl of Huntly died, and his sons were taken.
+[?The Earl of] Huntly died, and his sons were taken.
 
 Bishops here; the Pope's counsel; be as busy as may be.
 

@@ -1,4 +1,4 @@
-<!-- Reading of the ciphered passage, built 22 Oct 2026 by Claude Opus 5.5: the key decode (read/R1002.raw.txt, dec.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's partial margin transcription in decode/ checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passage, built 22 Oct 2026 by Claude Opus 5.5: the key decode (read/R1002.raw.txt, dec.py) aligned word by word with the contemporary decipherment in the left margin, transcribed from the DECODE images (DECODE's partial margin transcription in decode/ checked against them). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. The margin transcription is saved as read/R1002_margin.txt (22 Oct 2026). -->
 
 # R1002, Carpio to Fuenmayor, Rome, 4 Dec 1677
 
@@ -6,7 +6,7 @@ Sobre las dependencias desta corte se sirve el Rey nuestro señor, que Dios guar
 audiencia a Su Santidad y le diga lo que contiene su despacho sobre la satisfacción que debe esperar Su Majestad
 por lo acontecido aquí. Y habiendo pedido la audiencia martes 30, fue servido Su Beatitud de responder que no me
 podía recibir; y volviendo al día siguiente, 1º deste, a suplicar a Su Santidad, por medio de mi maestro de cámara,
-me concediese la audiencia, por ordenarme Su Majestad con toda precisión que [?hable] a Su Beatitud personalmente sobre
+me concediese la audiencia, por ordenarme Su Majestad con toda precisión que [?hablase] a Su Beatitud personalmente sobre
 los negocios que me encargaba, pues a no tener esta orden tan ejecutiva no embarazaría a Su Santidad, respondió Su
 Beatitud lo mismo que al día antecedente, sin dar a entender el motivo para la negativa, añadiendo que si yo tenía
 negocios del Rey que tratar, los comunicase por medio de algún Cardenal. Y habiendo vuelto a referir las órdenes de

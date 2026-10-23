@@ -26,12 +26,12 @@ spagnuolo; [?però] dubiterebbe d'incontrare la disapprovazione universale crean
 quale attualmente ri[?c]eve tante ingiurie e aggravi senza averne dato alla medesima il minimo né pur apparente
 pretesto, cosa che non troverà forse esempio nelle istorie.
 Questa [1840], con la maggiore delicatezza da V.S. ben [..]giata come un suo [1664] dubbio ma assai fondato con
-chiunque sperar possa di esser il nomin[a]to da [?S.M.], dovrebbe impegnare il medesimo ad interessarsi con tutta
+chiunque sperar possa di esser il nomin[a]to da [?S.M.], dovrebbe impegnar il medesimo ad interessarsi con tutta
 l'efficacia e il credito acciò cessin[o] i tanti e giusti [?motivi] che ha N.S. di esser amareggiato.
 Desidera pure N.S. di esser con esattezza informato come il [?Segretario] a Real padronato, [?essendo] secolare, porti
 il nome di [?Abbad]e, e chi goda l [1248]a [?Abbad]ia ereditaria di sua casa.
 Per ultimo, [?se] proseguiscano gli attentati di codesta Corte, potendo N.S. trovarsi in [?necessità] di sospendere le
-tante grazie a la Crociata, millione e escusado, vuole sentire confidentemente da V.S. qual [1535]e e [?effett]
+tante grazie a la Crociata, millione [e] escusado, vuole sentire confidentemente da V.S. qual [1535]e e [?effett]
 [1696]bbe in codesti Regni partorire una tale [1844].
 
 ## Notes on the figures

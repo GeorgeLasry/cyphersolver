@@ -4,12 +4,12 @@
 
 Scotland; […]; Scotland. The amity; England; Scotland.
 
-The Lord of Murray (James Stewart, Earl of Moray); such lords and great men; [who] are the great supporters of the
+[The] Lord of Murray (James Stewart, Earl of Moray); such lords and great men; [who] are the great supporters of the
 (Protestant) religion there.
 
 To do [?some] great enterprise that way. The Scots […]; of the religion; for [?my] […] Lord of Murray.
 
-The Earl of Huntly died, and his sons were taken.
+[?The Earl of] Huntly died, and his sons were taken.
 
 Bishops here; the Pope's council; are as busy as can be.
 

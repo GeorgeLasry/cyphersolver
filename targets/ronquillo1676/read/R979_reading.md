@@ -6,7 +6,7 @@
 también se ofrecen en esa conferencia; que si en la constitución presente de nuestros negocios son dañosas las que en
 este congreso impiden el llegar a tratar de los puntos esenciales de la paz antes de entrar la primavera, no lo son
 menos esas para la disposición de las operaciones de la venidera campaña. Y así, para evitar la irresolución, discordia
-y animosidades que della es probable se originen, juzgo de no poder hallarse expediente más a propósito que el que
+y animosidades [?que] della es probable se originen, juzgo de no poder hallarse expediente más a propósito que el que
 V.S. ha discurrido; pues, si fuere posible conseguirle, nos quitaremos de todos estos embarazos, dejaremos los
 negocios [?indecisos], y con las demoliciones que V.S. propone dejaremos desfortalecido un país que, en cualesquiera
 manos que esté, nunca estará en buenas para nosotros.
@@ -27,7 +27,7 @@ particularmente los de Brunswick. Pero lo que temo es que esta declaración inte
 nociva aun para la admisión de ese expediente, por insensiblemente que se procure inducirlos a la admisión del [934].
 ⟨De las cosas de este congreso diré a V.S. ...⟩
 
-⟨... se siga el formulario de cada una.⟩ Es verdad que los ingleses, cuando le comunicaron a daneses y holandeses, no
+⟨... se siga el formulario de cada una.⟩ Es verdad que los ingleses, cuando le comunicaron [?a] daneses y holandeses, no
 dijeron era de franceses y suecos; pero habiéndoles yo reconvenido con algunas razones fuertes, me confesaron
 francamente la verdad, diciendo que, como mediadores, no podían excusar recibir los papeles que presentase una de las
 partes y comunicarlos a las otras en el estado que [?quedan] hoy los preliminares. Dándome a mí gran cuidado el ver

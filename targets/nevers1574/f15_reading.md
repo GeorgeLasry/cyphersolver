@@ -25,7 +25,7 @@ Quant elle a esté couchée, elle m'a dict, par ce qu'elle me [?veid] plorer, qu
 
 Au reste, je luy [?ay] voulu […] dire […] chose que […] depuis 24 heures, qui estoit que l'on l'avoit dict au Roy que c'estoit vous qui luy aviez escript qu'il c'estoit faict […] une ligue aupres du Roy de quatre ou cinq, et qu'elle feroit bien d'y donner ordre.
 
-Ce que je [?pensois] […] en [?partie] qu'il […] […]. […] par ce que depuis qu'il est revenu il […] […] a parler de vous comme il avoit […]. […] […] c'estoit chose desquoy elle m'a dict […] tesmoigner ; lors elle m'a dict qu'elle pensoit bien que non, car le Roy ne luy en [?a] point parlé aucunement, mais demain qu'elle luy en parleroit et en sauroit bien la verité ; et […] ou l'autre que […] seroit bien estrange de […] telles gens contre celuy qu'il avoit tant faict de services.
+Ce que je [?pensois] […] en [?partie] qu'il […] […]. […] par ce que depuis qu'il est revenu il […] […] a parler de vous comme il avoit […]. […] […] c'estoit chose desquoy mesme [?pouvoit] tesmoigner ; lors elle m'a dict qu'elle pensoit bien que non, car le Roy ne luy en [?a] point parlé aucunement, mais demain qu'elle luy en parleroit et en sauroit bien la verité ; et […] ou l'autre que […] seroit bien estrange de […] telles gens contre celuy qu'il avoit tant faict de services.
 
 Au demeurant, […] que je premier […] gouvernement qui viendroit a vacquer, vous […] ; en [?effect] qu'il y en auroit deux qui ne pouvoient faillir, comme Picardie et Languedoc. Je luy ay
 

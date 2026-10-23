@@ -19,7 +19,7 @@ Voglio prelcindere che le altrui violenze non dovrebbero mai servire di esempio,
 i principi, contro ogni principio di pietà e di [?religione] e ben [..] lungi nelle vestigia de' loro predecessori,
 sembrino [..] [1847] un punto di onore a chi più insulta [1765] opprime la S. Sede.
 Ma nel fatto medesimo a Donghi [1204] a forza N.S. condescendesse alla richieste grazii, [1213] si ristrinsero le
-istanze e al [?Infante] contro Mons. [1513] e suoi esecutori, che [1894] esagerava chi aver mancato; non promosse
+[?istanze] e al [?Infante] contro Mons. [1513] e suoi esecutori, che [1894] esagerava chi aver mancato; non promosse
 anch'essa mai di esiggere [..] che o [..] sue [1664]i pretensini che aveva con la S. Sede, e pure si aveva che far con
 un princip[e] il quale da lung[?o] tempo ci tacciava di troppo p[1268]ziali a la corona di Spagna.
 All'incontro codesta Corte, che N.S. doveva [1858] sperare a lui più benevola, non cont[e]nta a l'eccessiva connivenza
@@ -41,7 +41,7 @@ Non era questo il [1426] bastante rimedio, ma c[..]n[..] prova [1580]mente la su
 pretende ancora di negare.
 Sembra per ultimo che, per autenticare [..] più questa evidente verità circa il praticato in [?Roma] dagli arrolatori,
 abbia il Sig. Iddio permesso che la stessa maniera s'incominciasse ad usare [1244] in [1482]; ma il Sig. [?Duca] di
-Montemar [1855]i [1843]i [?sempre]i da [1239]a [?città] ha sul bel principio troncata la radice al male e postovi il
+Montemar [1855]i [1843]i [?sempre]i da [1239]a [?città] ha sul bel principio troncata la radice al male e postovi [?il]
 [1646] rimedio, il che non fe' [1130] chi al[..] in [?Roma] [1239]i, che ne averebbero [?sempre] un obbligo eguale se
 non più più preciso.
 

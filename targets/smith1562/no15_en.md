@@ -6,4 +6,4 @@
 
 The Queen of Scots and her (affairs).
 
-All the […] (of Guise); in the marriage between the Duke of Guise and the Queen of Scots; eager.
+All that […] (house of Guise); in the marriage between the Duke of Guise and the Queen of Scots; eager.

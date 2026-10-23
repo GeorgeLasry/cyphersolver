@@ -116,7 +116,7 @@ DECODE's margin transcription where there is one). 22 Oct 2026: `keyx.py` (key +
 ## Remaining gaps
 
 - R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key
-- R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups (138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc) - blocker: open-codes; no margin on either letter and no gloss for these codes in the eighteen margins; R982 is a soft scan (4/7/9 not distinguishable)
+- R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups (138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc) - blocker: no-key-material; no margin on either letter and no gloss for these codes in the eighteen margins; R982 is a soft scan (4/7/9 not distinguishable)
 - single uncertain words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001 - blocker: illegible; margin faded or blotted at that word and the figures do not settle it
 
 ## Escalation

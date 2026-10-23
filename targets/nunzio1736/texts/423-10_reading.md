@@ -26,7 +26,7 @@ alla pubblicazione di un decreto di natura cos[ì] rilevante.
 Desidera N.S. che ella impieghi tutta la sua destrezza e efficacia per metere in tutto il suo lume questa palpabile
 verità, che la Corte [è] stata sorpresa e ingannata in tanti punti [58] fatti, de' quali essa medesima si dovrebbe esser
 chiarita, e conseguentemente che, dopo una tale e raddoppiata esperienza, si rimedii a cos[ì] gravi attentati e si
-cammini con più cautela nel prestar fede a chi, o per malizia o per troppa precipitazione, senza esaminare e verificare
+cammini con più cautela nel prestar fede a chi, o per malizia o per troppa precipitazione, senza esaminare e [?verificare]
 i fatti, si avanza ad insussistenti [?rimostra]nze e rapporti.
 Avverta anche che tutto ciò unicamente si nota per far conoscere il materiale errore e inganno de' falsi supposti;
 [?però] per altro N.S. intende di esser in piena libertà di esercitare il sue ius in tutti li [?casi] ne' quali gli

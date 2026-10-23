@@ -2,7 +2,7 @@
 
 # No. 11, Sir Thomas Smith to Cecil, Marseilles, 13 November 1564
 
-Scotland. In as great a trouble. Marriages. Into England and Scotland.
+Scotland. In as great a trouble. Marriages. In England and Scotland.
 
 Scotland. I must […] knowledge of it; [?he] goeth by [?Dieppe]; by [?sea]; by the Cardinal of Lorraine.
 

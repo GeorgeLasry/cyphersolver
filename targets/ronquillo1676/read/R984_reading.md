@@ -25,7 +25,7 @@ no pueden hacer nada con ellos respecto de haber venido en mesadas. Con que en t
 considerable el trabajo que nos causa el haberlos de oír, mantener y [90]r.
 
 Hame hecho V.S. particular favor en motivarme la intriga del Duque de Hannover y la boda del conde de [...] con [?hija]
-de la Duquesa de Zell, porque ha más de dos meses que este sujeto se halla aquí, que pretestando su detención con
+de la Duquesa de Zell, porque ha más de dos meses que este sujeto se halla [?aquí], que pretestando su detención con
 decir que no podía tener empleo en la guerra respecto de la religión; y con lo que V.S. me participa podré echar mis
 redes, pues, como dije a V.S., algunos días ha tenía entendido que el Mariscal de Estrades [?trataba] con el de
 Hannover por vía del parentesco que tiene con Madama de [?Arvor]; y [...] que de hoy en ocho días podré comunicar a

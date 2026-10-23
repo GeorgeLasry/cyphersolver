@@ -1,4 +1,4 @@
-<!-- Reading of the ciphered passage, built 22 Oct 2026 by Claude Opus 5.5: the key decode (read/R1009.raw.txt, dec.py) aligned word by word with the contemporary decipherment in the left margin (DECODE's margin transcription in decode/, checked against the images). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. -->
+<!-- Reading of the ciphered passage, built 22 Oct 2026 by Claude Opus 5.5: the key decode (read/R1009.raw.txt, dec.py) aligned word by word with the contemporary decipherment in the left margin (DECODE's margin transcription in decode/, checked against the images). Spelling modernised, punctuation added. Words in ⟨ ⟩ are written in clear in the letter and lead into the cipher; [...] = hole; [?word] = uncertain. The margin transcription is saved as read/R1009_margin.txt (22 Oct 2026). -->
 
 # R1009, Carpio to Fuenmayor, Rome, 25 Sept 1677
 

@@ -12,7 +12,7 @@ nuestra infelicidad.
 
 La Inglaterra se mantiene todavía en la misma [?ambigüedad] e irresolución que experimentamos dos meses ha, como V.S.
 estará informado por el [...]; con que, reconociendo el punto crítico [...] el estado presente de las cosas y el
-peligro y evidente riesgo en que se hallan los Países Bajos, y por consiguiente los demás del Norte, después de la
+peligro y evidente riesgo en que se hallan los Países Bajos, y por consiguiente los demás del Norte, después [?de] la
 pérdida de Gante, podemos esperar, si Dios por su misericordia no permite que experimentemos el último castigo, que
 nuestros aliados, excusando sus particulares controversias, se apliquen enteramente a defendernos y a defenderse todos
 contra los progresos de Francia. Para lo cual, y para que los Brunswick no persistan en [...] de sus pretensiones,

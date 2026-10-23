@@ -3,6 +3,6 @@
 # No. 22, Sir Thomas Smith to the Queen, 4 November 1563
 
 De Montaigne, that I [?do] speak of, whose carte of La Rochelle I have [?sent] here with; and under an other pretence I
-have given him letters to my Lord Robert and Mr Secretary, and to [?whom] from Rouen I wrote of that same matter. The
+have given him letters to my Lord Robert and Mr Secretary, and to [?whom] from Rouen I wrote of the same matter. The
 [?other] letters he carried himself; and in that feat whereof I wrote somewhat, I think he can do; but this at this time
 is most necessary.

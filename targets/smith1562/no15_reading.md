@@ -6,4 +6,4 @@
 
 The Queen of Scots and her.
 
-All the […]; in the marriage between the Duke of Guise and the Queen of Scots; earnest.
+All that […]; in the marriage between the Duke of Guise and the Queen of Scots; earnest.

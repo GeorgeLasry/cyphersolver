@@ -2,7 +2,7 @@
 
 # No. 11, Smith to Cecil, Marseilles, 13 November 1564 — English
 
-Scotland. In as great a trouble (as ever). Marriages. Into England and Scotland.
+Scotland. In as great a trouble (as ever). Marriages. In England and Scotland.
 
 Scotland. I must […] knowledge of it; [?he] goes by [?Dieppe], by [?sea], by the Cardinal of Lorraine (all the Scottish
 posts pass through the Cardinal).

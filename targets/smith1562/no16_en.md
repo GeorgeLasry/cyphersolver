@@ -4,5 +4,5 @@
 
 […] in the […] congratulation and condolence (the occasions offered and lost).
 
-Of the French; of (the proposed) interview; the Queen; the Emperor (his house: Charles of Austria); the French; the
+Of the French; of (the proposed) interview; the Queen; the Emperor (his house: Charles of Austria); [the] French; the
 Queen; the Queen; (this) French one (offer).

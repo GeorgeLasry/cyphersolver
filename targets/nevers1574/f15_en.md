@@ -16,7 +16,7 @@ this crown so faithfully for 25 years, and having so much [?affection] [...] you
 
 Besides, I [?wished] to tell her [...] a thing that [...] in the last 24 hours, which was that the King had been told that it was you who had written to him that a league [...] of four or five had been formed close to the King, and that she would do well to deal with it.
 
-What I [?thought] [...] in [?part] that he [...] [...]. [...] because since he came back he [...] [...] to speak of you as he had [...]. [...] [...] it was a thing about which she told me [...] to bear witness; then she told me that she thought not, for the King had not spoken to her of it at all, but that tomorrow she would speak to him about it and learn the truth; and [...] or the other that [...] it would be very strange to [...] such people against one who had done him so many services.
+What I [?thought] [...] in [?part] that he [...] [...]. [...] because since he came back he [...] [...] to speak of you as he had [...]. [...] [...] it was a thing about which [one] himself [?could] bear witness; then she told me that she thought not, for the King had not spoken to her of it at all, but that tomorrow she would speak to him about it and learn the truth; and [...] or the other that [...] it would be very strange to [...] such people against one who had done him so many services.
 
 For the rest, [...] that I first [...] government that should fall vacant, you [...]; in [?fact] there would be two that could not fail, such as Picardy and Languedoc. I
 

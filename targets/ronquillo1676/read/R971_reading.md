@@ -45,7 +45,7 @@ se encamina con toda precipitación a la paz; y, como V.S. dice, cualquiera ser�
 creo es que, si faltase aquí a la abertura de la campaña tiempo para concluir la paz, pudiera este Rey, instado de este
 ministro, proponer alguna suspensión de armas de dos o tres meses, pero más no. Lo que puedo asegurar a V.S. es que
 antes de un mes ha de reventar la postema, y que de todo lo que fuere ocurriendo le daré cuenta más puntualmente,
-solicitando siempre de V.S. las órdenes de su servicio.
+solicitando siempre [de] [V.S.] las órdenes de su servicio.
 
 ## Notes
 

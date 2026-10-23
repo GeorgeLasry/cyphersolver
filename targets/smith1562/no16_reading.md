@@ -4,5 +4,5 @@
 
 […] in the […] congratulation and condolence.
 
-Of the French; of interview; the Queen's Majesty; the Emperor; the French; the Queen's Majesty; the Queen's Majesty;
+Of the French; of interview; the Queen's Majesty; the Emperor; [the] French; the Queen's Majesty; the Queen's Majesty;
 French one.
