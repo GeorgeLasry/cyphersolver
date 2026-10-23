@@ -1,0 +1,224 @@
+{
+ "schema_version": 1,
+ "target": "fleury1585",
+ "title": "Henri Clausse de Fleury to Villeroy, Soleure 1584-85: undeciphered ciphers in BnF fr. 16026 f. 99 and pp. 130-130bis, with the deciphered sibling Colbert 427 f. 325 (catalogue 364)",
+ "documents": [
+  {
+   "id": "f325r",
+   "shelfmark": "BnF Cinq cents de Colbert 427 f. 325r (Gallica btv1b10033949q, view 344)",
+   "date": "23 Apr 1585",
+   "year": 1585,
+   "country": "France",
+   "route": "Henri Clausse de Fleury, Fribourg -> Henri III",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "margin"
+    ],
+    "source": "Contemporary marginal decipherment in another hand, 18 short lines; read by Brackx at 2000 px"
+   },
+   "length": {
+    "tokens": 276,
+    "distinct": 49,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f325r_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Michael Brackx, issue #82, from the BnF IIIF image at 7654 x 5802 px (corrected from a first pass at 2000 px)",
+    "image_quality": "good",
+    "notes": "276 tokens as written including dividers, hairlines, raised o and dot groups; 231 tokens and 43 kinds without them. Made by Brackx with Claude Code (Opus 5.5); not checked by a second person."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "fr16026",
+   "shelfmark": "BnF Français 16026 f. 99 (22 Apr 1584) and pp. 130, 130bis (8 Dec 1585)",
+   "date": "22 Apr 1584; 8 Dec 1585",
+   "year": 1584,
+   "country": "France",
+   "route": "Henri Clausse de Fleury, Soleure -> Nicolas de Neufville de Villeroy",
+   "language": "French",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Rott 1882: f. 99 'non déchiffrés'; pp. 130-130bis 'partie chiffrée, non déchiffrée, partie chiffrée, déchiffrée'"
+   },
+   "length": {
+    "tokens": "unknown",
+    "measured": false,
+    "unit": "unknown"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "not digitised (Biblissima: numérisation indisponible); consultation by authorisation",
+    "image_quality": "unknown"
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "unknown"
+  ],
+  "summary": "Figures and invented signs with dividers, oblique hairlines, raised o and dot groups (nulls or marks); a partial homophonic key from one glossed 17-sign name group (Brackx). Whether syllable or word codes occur is not established.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "Colbert 427 f. 325r (23 Apr 1585) and its two glossed name groups on ff. 325v, 326r; fr. 16026 f. 120, f. 126, p. 129 deciphered at the time but not digitised",
+  "notes": "Catalogue 364, from Michael Brackx's issue #82."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Contemporary decipherments of the 1585 siblings (Colbert 427 f. 325 margin; fr. 16026 f. 120, f. 126, p. 129); none known for f. 99 or the undeciphered part of pp. 130-130bis (Rott 1882). Not on DECODE or Cryptoole.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Contributed: Michael Brackx found the items in Rott, transcribed f. 325r and ran the alignment tests with Claude Code (Opus 5.5); the project owner set up Claude Code and posed the problem.",
+  "tools": [
+   "Brackx's sliding and gapped-alignment scripts (issue #82; not in the repository)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-10-22",
+  "last_date": "2026-10-23"
+ },
+ "solution": [
+  {
+   "date": "2026-10-22",
+   "kind": "literature search",
+   "what": "Brackx (issue #82): Rott, Inventaire sommaire I (1882) pp. 193-197, Fleury's whole embassy 1582-86: only fr. 16026 f. 99 and part of pp. 130-130bis marked non déchiffré; deciphered siblings fr. 16026 f. 120, f. 126, p. 129 and Colbert 427 f. 325.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "access",
+   "what": "Colbert 427 on Gallica (btv1b10033949q; views run 19-20 ahead of folios); fr. 16026 not digitised (Biblissima) and consultation by authorisation (BnF record).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "Brackx transcribed the f. 325r cipher block and the 18-line margin decipherment from the 2000-px Gallica image, and the two glossed name groups on ff. 325v and 326r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "f. 325v name group: 17 signs against 'messieurs de surich', one sign per letter with consistent repeats; partial homophonic key of 13 values (e, s, i, u, r, m, d, c, h).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "control",
+   "technique": [
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "Rigid slide of the margin text over the 244 main-block tokens with the partial key: best -2/-3 against shuffled-key medians -3 (95th percentile 0/-1): no better than chance.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Frequencies on the first transcription support the key: C+Z (e) 14% of the block, 9 (r) 6%, 6 (u) 5%, M (i) 5%; C the commonest sign.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "transcription",
+   "what": "Brackx re-read f. 325r at 7654 x 5802 px (BnF IIIF max): about ten signs corrected, both '=' in l. 5 are C (e).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "crib",
+   "technique": [
+    "EM alignment",
+    "statistical test"
+   ],
+   "what": "Gapped alignment of the corrected block with the margin, anchored on the partial key: raised o, /// and dot groups fall as nulls; proposed multi-letter codes unstable across runs. Full key: 2 of 12 random French passages align as well; firm values only: block beats 47 of 50 random passages (p ~ 0.06). Inconclusive without a second crib.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Target folder opened from the issue material (transcription, margin, name groups, legend). Gallica search for fr. 17020 blocked by the bot check.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "A partial homophonic key from one glossed 17-sign name group fits French by frequency and a gapped alignment (p ~ 0.06), but does not yet pin the alignment of the f. 325r block with its margin; the undeciphered letters in fr. 16026 are not digitised.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "key": "partial",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "Colbert 427 f. 325r block not aligned with its margin decipherment",
+    "blocker": "not-attempted",
+    "detail": "needs a second crib (the f. 326r name group, fr. 17020 ff. 134-139, Colbert 427 f. 353) and the margin re-read at 7654 px"
+   },
+   {
+    "item": "f. 326r name group, gloss 'de monsieur de [?]'",
+    "blocker": "illegible",
+    "detail": "second line of the gloss unread even at 7654 px"
+   },
+   {
+    "item": "fr. 16026 f. 99 and pp. 130-130bis, and the deciphered siblings f. 120, f. 126, p. 129",
+    "blocker": "needs-physical-access",
+    "detail": "not digitised; BnF consultation by authorisation sur demande motivée"
+   }
+  ],
+  "notes": "In progress: catalogue 364, issue #82 working thread.",
+  "credits": [
+   {
+    "who": "brackx",
+    "role": "new cipher",
+    "note": "found the items in Rott 1882, transcribed Colbert 427 f. 325r with its margin and name groups, partial key and alignment tests (with Claude Code, Claude Opus 5.5)",
+    "date": "2026-10-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/82"
+   }
+  ]
+ }
+}
