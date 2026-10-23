@@ -1,6 +1,17 @@
 # Giovanni Battista Bonzagni (Eger) to Ippolito I d'Este, 1512–1514 (ASMo, Ambasciatori b. 4/12; DECODE R1123–R1125) — NOTES
 
-Status: in progress. Read at the time, but none of the three contemporary decipherments is transcribed here (reading audit, 22 Oct 2026).
+Status: in progress. Re-read 22 Oct 2026 (b14): R1124 and R1125 read from the contemporary decipherments (texts/); R1123 read in part.
+
+**22 Oct 2026, re-read (REREAD_BRIEF, batch b14).** DECODE re-fetched: images only, no attachments. R1125: the
+slip (image 5) transcribed and aligned group by group with the p. 3 cipher block (texts/R1125_align.tsv); read
+(0.857). R1124: the gloss over the eight cipher lines transcribed and aligned (texts/R1124_align.tsv), and the clear
+text of pp. 1-2 transcribed around it; read (0.625; the misses are inventory words outside the lexicon). R1123: the
+clear opening, the first cipher block (a thousand gold ducats gathered; the King of Hungary's order that the troops ride
+out by the August feast of Our Lady; 300 florins through Alberto Pratonerio's father) and the start of the lower block
+read; the rest of the lower block (an inventory) and p. 2's cipher are not, so it stays decoded, not read. The cipher
+holds Latin-looking code words among its signs: potest = Re d'Ungaria, valent = denaro/argenti, indigeo, parte. Log:
+texts/R1123-R1125_reread_log.md. Class not read -> read in part; method read from existing decipherment; fraction
+read c. 0.46 (estimated from word-group counts).
 
 **22 Oct 2026, reading audit** (George Lasry's test): no text of R1123, R1124 or R1125 is in the repository; the decipherments are on the DECODE images only (main checkout `img/`). All three are *decoded, not read* in profile.json; class already solved -> not read and method -> not solved until the decipherments are transcribed. The verdict below (read at the time) stands as history, not as a reading held here.
 
@@ -49,13 +60,16 @@ belongs to its cipher block. A key table was not built. Per CLAUDE.md this is re
 
 ## Remaining gaps
 
-- R1123, R1124, R1125: the contemporary decipherments, not transcribed - blocker: not-attempted; images in the main checkout targets/bonzagni1512/img/ (interlinear glosses R1123 pp. 1-2, R1124 p. 1; the R1125 slip, image 5)
+- R1123: the lower cipher block of p. 1 (about eleven glossed lines, an inventory of silver and sums) and the glossed cipher of p. 2 - blocker: illegible; the brown gloss ink is faint at the resolution of the DECODE and Vestigia photographs
+- R1123: key rebuild to decode the signs under the faint glosses - blocker: not-attempted; about 170 aligned words in R1124/R1125 (texts/*_align.tsv) to rebuild it from; the next step
+- R1125: the code word "parte" (cipher l. 7) and the number .31. (l. 10) - blocker: no-key-material; the slip leaves them out
+- R1124: the torn right edge of p. 1 (clear text ll. 12-19) and the end of cipher l. 5 - blocker: illegible; paper lost
 
 ## Escalation
 
 - [x] siblings: Bonzagni's file in ASMo Ambasciatori Ungheria b. 4 listed from Vestigia (46 items)
 - [x] clear-pages: interlinear decipherments on R1123/R1124 and the R1125 slip found; not transcribed
 - [n/a] known-keys: not needed, the decipherments exist
-- [ ] print: not searched
-- [n/a] key-rebuild: not needed
-- [ ] retry: transcription of the decipherments still to do
+- [x] print: Kristóf 2018 (cited by Vestigia) not found online; web search 22 Oct 2026 found only her 2025 Eger article
+- [ ] key-rebuild: needed for R1123's faint lower block; not attempted (22 Oct 2026)
+- [x] retry: 22 Oct 2026, R1124 and R1125 transcribed and aligned; R1123 in part
