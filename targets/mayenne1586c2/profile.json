@@ -220,6 +220,33 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): ff. 218-219 read (A); f. 120 has holes in most sentences of several paragraphs, and f. 385 is a self-declared partial unspaced decode (both C confirmed). Both relabelled decoded, not read; class read in part kept; fraction_read 0.861 -> 0.404.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b21), f. 120 and f. 385. Step 1: no DECODE record; Gallica btv1b90618780 views 244-249 and 750-755 fetched (openapi.bnf.fr IIIF). f. 119r-v is a clear memorandum on Navarre, Biron and Champigny, not a decipherment; f. 121r blank, f. 121v the cover of the f. 120 letter, addressed 'Pour Monseigneur de Villeroy', docket '1586'. Around f. 385: an address leaf 'Au Roy' (view 751, letter not established) and blank leaves; no decipherment, interlinear or separate, and no clear copy for either letter. The superscripts on f. 120r are cipher signs (writer's insertions), not glosses.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "f. 120r at full resolution (view 246) cut into line strips; checked r c01 (opening thb + 7 I Sbar as transcribed, no value), c11 (superscript 'ar' = two cipher signs), c30 ('sort' as transcribed), c31: the sign read curlo before 'inances' has the shape of the delta (e) later in the line, so 'finances' rests on a look-alike alternate. Other lines not re-read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching"],
+   "what": "f. 120: Harumi-Matsuba's reading checked word by word against his decode (b21_may_check.py: 302 of 326 plain words carried letter for letter, the rest two-valued-sign choices or letters the reading had added); the figures' spelling restored where the reading had normalised (enuyé, soufre, efects, somes, pouoir, ...), added letters bracketed, partly carried words written [?word] (f120_harumi/f120_reading.md). Checker 0.50 (17/34), explicit holes 0.647 (22/34); before 0.50 / 0.625. The sentences of r c15-c19, c24-c31 and v c03-c05 do not hold: kept decoded, not read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["plaintext matching"],
+   "what": "f. 385: Burford's literal v0.2 decode divided into words and punctuated, letters unchanged (f385_burford/f385_reading.md; b21_may_check.py 450 of 453 plain words carried). Checker 0.222 (10/45), explicit holes 0.244 (before: f385-french.md 0.233). Only f. 385v ll. 1-8, 18-21 hold: kept decoded, not read; the v0.2 unread stretches need a sign-by-sign image round.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -233,7 +260,7 @@
   "key": "partial",
   "fraction_read": 0.404,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026, tokens per document: ff. 218-219 (2,138) read, 2,138 of 5,293 (0.404); f. 120 (1,103) and f. 385 (2,052) are decoded, not read. The earlier 0.861 (4,560 of 5,293 tokens in sense runs, measured 21 Oct 2026) is withdrawn as a reading figure.",
+  "fraction_read_source": "Reading audit, 22 Oct 2026, tokens per document: ff. 218-219 (2,138) read, 2,138 of 5,293 (0.404); f. 120 (1,103) and f. 385 (2,052) are decoded, not read. The earlier 0.861 (4,560 of 5,293 tokens in sense runs, measured 21 Oct 2026) is withdrawn as a reading figure. 23 Oct 2026, re-read (b21): f. 120 and f. 385 still decoded, not read (partial readings f120_harumi/f120_reading.md, f385_burford/f385_reading.md); unchanged.",
   "codes_open": {
    "open": 22,
    "tokens_open": "unknown"
@@ -267,12 +294,12 @@
    {
     "item": "fr. 15573 f. 120: decoded, not read",
     "blocker": "not-attempted",
-    "detail": "holes in most sentences of c01-c05, c15-c19, c28-c31, 120v c03-c05; re-read on Gallica btv1b90618780 views 246-247"
+    "detail": "re-read 23 Oct 2026 (b21): partial reading f120_harumi/f120_reading.md (checker 0.50, explicit holes 0.647); r c15-c19, c24-c31, v c03-c05 still to re-read sign by sign on Gallica btv1b90618780 view 246-247"
    },
    {
     "item": "fr. 15573 f. 385: decoded, not read",
     "blocker": "not-attempted",
-    "detail": "v0.2 partial, unspaced; resolve the open stretches on views 752-753 and normalise"
+    "detail": "re-read 23 Oct 2026 (b21): partial reading f385_burford/f385_reading.md (checker 0.222); the v0.2 unread stretches need the signs re-read on views 752-753"
    }
   ],
   "parts": [
@@ -363,6 +390,7 @@
    },
    {
     "doc": "fr15573-f120",
+    "note": "Re-read 23 Oct 2026 (b21): no decipherment, clear copy or print (Gallica views 244-249; f. 121v is the cover, addressed 'Pour Monseigneur de Villeroy', 1586). Contributed reading checked word by word against the decode, the figures' spelling restored, partly carried words bracketed (f120_harumi/f120_reading.md, f120_reread_log.md): checker 0.50 (17/34), explicit holes 0.647 (22/34); the sentences of r c15-c19, c24-c31 and v c03-c05 still do not hold, so kept decoded, not read. Open: 12 code signs with no value (no-key-material); those lines not yet re-read sign by sign on view 246-247 (not-attempted). 1 letter on a look-alike alternate ([?finances]).",
     "label": "fr. 15573 f. 120r-v, autumn 1586, sender and recipient unknown (Harumi-Matsuba)",
     "transcription": [
      "f120_harumi/transcription_f120r.txt",
@@ -376,10 +404,11 @@
     "summary": "\"This prince\" is more vexed than ever; the treasurer Bilart wrote that thirty thousand écus in gold have been ready for ten days, the Cardinal of Guise writes that five thousand are coming, but not even a hundred and five thousand would set the army right. Biron cannot be kept; deputies of the army have come; papers of the secretary La Marsilière have fallen into \"our\" hands.",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "Punctuated French with [?] holes: c05-c08 and c12-c15 read cleanly, but c01-c05, c15-c19, c28-c31 and f. 120v c03-c05 have holes in most sentences (reading audit, 22 Oct 2026); fix: re-read those lines on the image (view 246-247) sign by sign; no person has checked the transcription."
+    "reading": "f120_harumi/f120_reading.md"
    },
    {
     "doc": "fr15573-f385",
+    "note": "Re-read 23 Oct 2026 (b21): no decipherment or clear copy (Gallica views 750-755). Burford's literal decode divided into words and punctuated, letters unchanged, figures' spelling, partly carried words bracketed (f385_burford/f385_reading.md, f385_reread_log.md): checker 0.222 (10/45), explicit holes 0.244; only f. 385v ll. 1-8 and 18-21 hold. Kept decoded, not read. Open: the 36 unread stretches and 41 doubtful words of v0.2 need the signs re-read on views 752-753 (not-attempted); invT, x?, 30, 15, 14 have no value (no-key-material).",
     "label": "fr. 15573 f. 385r-v, from Mayenne's side, autumn 1586 (Brett Burford, v0.2)",
     "transcription": [
      "f385_burford/f385r/signs.txt",
@@ -394,7 +423,7 @@
     "summary": "The army in Guyenne is breaking up at the start of winter 1586: not a thousand foot left, men asking for leave, no powder. The letter asks what to do with the regiments and the foreigners over the winter, and names the landsknechts from Champagne, a company of light horse, Monsieur d'Halincourt, Monsieur de Matignon and La Roche.",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "Self-declared partial (v0.2): the French is unspaced with decoder word breaks and many unresolved stretches; only isolated clauses translate, and the English file is a gist with ellipses (reading audit, 22 Oct 2026); fix: the open stretches on the image (views 752-753), then a normalised reading."
+    "reading": "f385_burford/f385_reading.md"
    }
   ],
   "key_file": [

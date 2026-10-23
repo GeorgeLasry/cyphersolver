@@ -6,6 +6,15 @@ known text, and every gap below is still workable. Page: `docs/mayenne1586c2.htm
 **22 Oct 2026, reading audit** (George Lasry's test): ff. 218-219 read. f. 120 has holes in most sentences of c01-c05, c15-c19, c28-c31 and f. 120v c03-c05, and f. 385 is a self-declared partial unspaced decode: both *decoded, not read*. fraction_read 0.861 (tokens in sense runs) -> 0.404 (tokens in ff. 218-219).
 
 
+**23 Oct 2026, re-read (REREAD_BRIEF, b21)**: f. 120 and f. 385 stay *decoded, not read*. No decipherment, clear copy or
+print for either (Gallica views 244-249, 750-755); f. 121v is the cover of the f. 120 letter, addressed "Pour
+Monseigneur de Villeroy", docket 1586. f. 120: the contributed reading checked word by word against the decode, the
+cipher's spelling restored (it had been normalised), partly carried words bracketed: `f120_harumi/f120_reading.md`,
+checker 0.50, explicit holes 0.647, but r c15-c19, c24-c31 and v c03-c05 still do not hold (log
+`f120_harumi/f120_reread_log.md`; one line checked on the image shows 'finances' rests on a look-alike sign). f. 385:
+Burford's literal decode divided and punctuated, `f385_burford/f385_reading.md`, 0.222 (log
+`f385_burford/f385_reread_log.md`). Next: a sign-by-sign image round on those lines.
+
 Created 21 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026) from three contributions in the same cipher,
 **Mayenne–Forget's Cipher-2** (S. Tomokiyo, cryptiana *Henry III's Cipher with Ambassadors*). It is a different
 cipher from Cipher-1 ([`targets/matignon1586/`](../matignon1586/NOTES.md), the Mayenne–Forget despatches of
@@ -99,13 +108,13 @@ h where the decipherment has *tous*); and the χ° sign, *q* in the table, stand
 - ff. 218-219: stretches that do not read (f. 218r ll. 10-12, 22, 25-26; f. 218v ll. 9-10, 21-22; f. 219r ll. 1-5, 12-17) - blocker: open-codes; one AI reading pass calibrated at 74.8%; a voted second pass with Burford's sign sheet and image checks is the next step
 - f. 385: 36 short stretches not read, 41 doubtful words - blocker: open-codes; misread signs, names and abbreviations; Burford's planned second image round not yet made
 - f. 120: short stretches and three values inferred in this letter only (ooo = *escus*, struck gg = *nous*, curled stroke = *o*) - blocker: open-codes; no person has checked the transcription
-- fr. 15573 f. 120: decoded, not read - blocker: not-attempted; re-read the holed paragraphs on views 246-247
-- fr. 15573 f. 385: decoded, not read - blocker: not-attempted; v0.2 partial, unspaced; resolve the open stretches on views 752-753 and normalise
+- fr. 15573 f. 120: decoded, not read - blocker: not-attempted; partial reading f120_harumi/f120_reading.md (b21, 23 Oct 2026: 0.50 / explicit holes 0.647); r c15-c19, c24-c31, v c03-c05 to re-read sign by sign on views 246-247; 12 code signs with no value are no-key-material
+- fr. 15573 f. 385: decoded, not read - blocker: not-attempted; normalised partial reading f385_burford/f385_reading.md (b21, 23 Oct 2026: 0.222); the v0.2 unread stretches need the signs re-read on views 752-753
 
 ## Escalation
 
 - [x] siblings: Burford aligned six letters in Cipher-2 deciphered at the time (fr. 15573 ff. 7v-8r, 32r-33r, 97r, 103v-104r, 149r-150r) for code values; both contributors calibrated their readers on ff. 103v-104r
-- [x] clear-pages: ff. 218r and 219r carry clear opening and closing (used for date and sender); no clear copy of any of the three is known; the superscript marks on f. 120r are not yet examined
+- [x] clear-pages: ff. 218r and 219r carry clear opening and closing (used for date and sender); no clear copy of any of the three is known; the superscript marks on f. 120r examined 23 Oct 2026 (b21): cipher signs, not glosses; f. 121v = cover of f. 120, to Villeroy
 - [x] known-keys: Tomokiyo's Cipher-2 table; the Cipher-1 key (matignon1586) and Cipher-3 key (matignon1586c3) are different ciphers
 - [x] print: Tomokiyo's cryptiana list and his f. 385 fragment (credited to Lasry); contributors' web, GitHub and Cryptoole searches found nothing else; Lasry to be asked about f. 385
 - [x] key-rebuild: code values from the deciphered siblings (Burford); values inferred in context (Harumi-Matsuba); conflicts listed under "The key"

@@ -5,6 +5,16 @@ item 243) held all 36 cipher enclosures of Francia 22; 34 of them are in Meister
 R17 from Francia 18: [`targets/morosini1588/`](../morosini1588/NOTES.md), page `morosini1588.html` ("a different
 key, with its own page"). These two enclosures are in a second, syllabic key that DECODE files as "ASV – F22b".
 
+**23 Oct 2026, re-read (REREAD_BRIEF, b21): both read.** DECODE R54 carries, as png attachments filed '[cleartext]'
+and never opened, the 1589 decipherment of both cipher passages on f. 500r (R53) and f. 500v (R54); R53's last clause
+runs on into R54. Transcribed (`texts/R53_decifrato_f500r.txt`, `R54_decifrato_f500v.txt`), aligned element by element
+with the figures under Lasry's key (`research/reading_audit/b21_moro_align.py`, `texts/*_align.tsv`, `*_words.tsv`), one
+value adopted (4 = c, all 17 places; `texts/f22b_values_b21.tsv`). Readings `texts/R53_reading.md`, `R54_reading.md`
+(figures followed where they give another word), English `texts/R53_en.md`, `R54_en.md`; log
+`texts/R53-R54_reread_log.md`. `_check_reading.py` on the bodies 0.833 and 1.0. R53 is from Moulins, early May 1589
+(clear letter f. 499r, docket f. 498v '4 di maggio'), not Tours. Class not read -> read, method read from existing
+decipherment, fraction_read 0 -> 1.0. The outcome lines below are superseded.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 R53 and R54 are **decoded, not read**: R53 gives Italian fragments with garbled strings in nearly every sentence, R54
 is mostly noise. Class read in part -> not read, method -> not solved (Lasry's F22b key kept as a part); 0.752 withdrawn
@@ -53,10 +63,10 @@ real words); by eye R53 reads in most of its length, R54 in fragments. The 19 Se
 
 ## Remaining gaps
 
-- R53, decoded, not read - blocker: no-key-material; see the next lines
-- R54, decoded, not read - blocker: no-key-material
-- R53, R54: the stretches that do not read as sense (about a quarter of R53, more of R54) - blocker: no-key-material; Lasry's F22b reconstruction (about 70 elements) is the only key material; Meister 1906 prints no second Morosini key; no decipherment or clear copy on the records; a rebuild from these 1,448 figures does not fix the missing values (Escalation)
-- R53, R54 nomenclator groups outside Lasry's list - blocker: open-codes; few occurrences, no context yet
+- ~~R53, decoded, not read~~ closed 23 Oct 2026 (b21): read from the decipherment on f. 500r
+- ~~R54, decoded, not read~~ closed 23 Oct 2026 (b21): read from the decipherment on f. 500v
+- R53, R54: 29 single elements whose value only the decipherment gives (57, 117, 637, 42, 53 0, 81, 38, 27, 75, 11 ...) - blocker: too-short; one place each in 1,448 figures, not adopted (`texts/f22b_values_b21.tsv`)
+- R53, R54: figure stretches that give no word (mi disse domenica, francesi, seco, al quale si tiene; di qui, fin hora, perche, distrutti i primi) - blocker: illegible; DECODE's '?' digits and lone figures, carried by the decipherment
 
 ## Escalation
 
@@ -66,6 +76,7 @@ real words); by eye R53 reads in most of its length, R54 in fragments. The 19 Se
 - [x] print: Meister 1906 searched (OCR in the main checkout's targets/vatican5/meister.txt, 14 Oct 2026): his index lists Morosini only at p. 393 (no. 40); his no. 32, "La cifra del vescovo di Brescia Nuntio in Francia" with the canon Rinolfo Rinalducci (1585-90), is a short cover-name list (Amore = the King of France, Lucerna = the Pope), not this syllabary; no edition of the legation exists (19 Sept search). The Vatican's own cipher registers were not searched (no digitised copy known here).
 - [x] key-rebuild: `rebuild.py` (14 Oct 2026): Lasry's values fixed, each of the 24 empty two-figure codes given the missing syllable or letter that best raises the decoder's language-model score (coordinate ascent, margin 3 nats, restarts). Fitted on R53 alone it gives 10 values (`rebuild_R53.json`: 42 se, 27 va, 72 con ...), on R54 alone 11 (`rebuild_R54.json`: 42 fi, 59 se, 11 ve ...); the two fits agree on one code (84 c), and each breaks stretches that read before in the other record (R53 "si e fata una mescolanza" becomes "ecacauaracoscolanza" with the R54 fit). 1,448 figures are too few to fix the missing values; none adopted.
 - [x] retry: R53 and R54 re-decoded with both fits; no stretch became readable that was not before, so the reading stays on Lasry's key as filed.
+- [x] clear-pages (23 Oct 2026, b21): the '[cleartext]' png attachments of R54 (ff. 500r-500v) are the 1589 decipherment of both passages; read from it
 
 ## Assumptions for George's review
 

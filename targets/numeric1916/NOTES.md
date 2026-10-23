@@ -1,6 +1,8 @@
 # Numeric telegraph codes of June–July 1916: 共密, 容密, 辰密 (Huang Xing and the Shanghai group)
 
-Status: in progress. 辰密 reads; 共密 and 容密 decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. 辰密, 共密 and 容密 all read (共密 and 容密 re-read 23 Oct 2026, b21); site page and ledgers not yet updated.
+
+**23 Oct 2026, re-read (REREAD_BRIEF, b21)**: 共密 and 容密 read from Brice Dudout's proposed readings on his Wenmi pages, checked group by group against our decoder (`texts/gongmi-rongmi_reread_log.md`). His page digit tables are newer than `groups.tsv` for 共密: 20 groups re-read by him on the scans (一/二/三 look-alikes; `texts/gongmi_corrections.tsv`). Every character of the readings is the figure's own value except 21 (共密) and 41 (容密) on a one-digit alternate, 3 and 15 supplied from context ([x]), 21 and 47 kept as [?x], 6 illegible groups (`texts/*_align.tsv`). One value added here: N24 灰 (2530 read 2520, the 10th; sense-checked, for review). N35 sheet 1 checked on the JACAR scan (B03050089500 p. 2). Explicit-hole score, one character = one word: 0.91 and 0.91 (Chinese is not scored by `_check_reading.py`). Readings `texts/gongmi_reading.md`, `rongmi_reading.md`; English `texts/gongmi_en.md`, `rongmi_en.md`. fraction_read 0.11 -> 1.0.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the decode files are verbatim decoder output. 辰密 reads; 共密 (N32, N33, N35) and 容密 (N19b, N21, V4D) carry clusters of mis-decoded characters (圄會 for 國會, 代噸 for 代表) that break whole clauses, and no translation is in the folder (Dudout's Wenmi pages have them). Both are *decoded, not read*; class read in part kept; fraction_read 0.9238 -> 0.11 (辰密's 232 of 2,100 groups).
 
@@ -118,7 +120,7 @@ the group of Yin Ruli, Huang Fu and Ge Jing'en (signing 李/驪, 郛, 恩), rela
 - 辰密: 7 doubtful characters (four single-digit probable readings, 一不 for 不一, 盻 for 盼) - blocker: illegible; single-digit uncertainties on the forms
 - V4B (容密, 265 groups): only 4 of its 22 sheets re-read blind; framing repairs in V4B, V4D, V4E still to be checked on the scans - blocker: needs-physical-access; contributor's re-reading of the JACAR scans, not done here
 - N07 (prefix 共密, does not decode under the 共密 key; only the first sheet transcribed), N06 (和密), N09 (乾密), N01 and N03 (no prefix) - blocker: no-key-material; other keys or the other direction's book, no plaintext, only first sheets transcribed by the contributor
-- 共密 and 容密 telegrams: decoded, not read - blocker: not-attempted; copy Dudout's edited texts and translations from bdudout.github.io/wenmi into texts/, repair the garbled groups against groups.tsv and the JACAR scans
+- ~~共密 and 容密 telegrams: decoded, not read~~ closed 23 Oct 2026 (b21): both read from Dudout's proposed readings checked group by group; 共密 21 [?x], 容密 47 [?x] + 6 illegible groups left - blocker: illegible; digits to re-read on the police copies, or names and date codes (telegram endings)
 
 ## Escalation
 - [x] siblings: his 32-telegram set covers every form in B03050089200-89500 and the vol. 4 items; the unread five are listed above
@@ -127,6 +129,7 @@ the group of Yin Ruli, Huang Fu and Ge Jing'en (signing 李/驪, 郛, 恩), rela
 - [x] print: Hsueh Chun-tu ed., 黃興等電稿 checked by him: nothing between 8 and 20 June; 黃興集 and Li Yuanhong's correspondence not yet checked
 - [n/a] key-rebuild: contributed result; the keys decode his digits exactly here, the open pieces need digits or other keys
 - [n/a] retry: the doubtful characters are digit-level uncertainties on the police copies, a re-reading of the scans rather than a key question
+- [x] retry (23 Oct 2026, b21): one-digit variants listed for every unresolved group; N24 灰 adopted, V4E [?垣] kept as conjecture, the rest left; N35 sheet 1 re-read on the JACAR scan
 
 ## Files
 
