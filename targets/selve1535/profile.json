@@ -238,6 +238,13 @@
    "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): READING_R4232.md and READING_R3697.md read through. R4232 reads as continuous French (reviewed A); R3697's unstruck cipher reads with scattered holes (reviewed B); the decipherer's struck runs (304 signs) give only fragments and are split off as decoded, not read. fraction_read 0.899 -> 0.877 (signs in text that reads).",
    "result": "partial",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "Re-read of the R3697 struck runs under REREAD_BRIEF (batch mix1): the decipherer’s glosses taken as the contemporary decipherment they are; C1 gloss re-read on native_f27.jpg (one blurred group left); the glossed runs A, B, C1 + C2 head, T2 (169 signs) set out as text and checked against the pass-3 sign alignments, split off as read (READING_R3697_struck.md, R3697_struck_en.md); C2 tail, C3, T1, T3 (135 signs) stay decoded, not read (no legible gloss, strike over every sign).",
+   "result": "partial",
+   "technique": ["crib testing", "plaintext matching"]
   }
  ],
  "outcome": {
@@ -249,7 +256,7 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.877,
+  "fraction_read": 0.946,
   "grades": "unknown",
   "verification": [
    "contemporary decipherment",
@@ -265,9 +272,9 @@
   },
   "gaps": [
    {
-    "item": "R3697 struck runs f. 25r A, B, C1-C3 and f. 25v T1-T3 (182 signs)",
+    "item": "R3697 struck runs with no legible gloss: C2 tail, C3, T1, T3 (135 signs)",
     "blocker": "illegible",
-    "detail": "the decipherer's ruling runs through every sign on the only (film) images; glosses give most of the plaintext; a colour image or the original would separate the lighter strike ink"
+    "detail": "the decipherer’s ruling runs through every sign on the only (film) images and the f. 25v margin gloss is illegible where these runs need it; a colour image or the original would separate the lighter strike ink. The glossed runs A, B, C1, T2 are read from the glosses (READING_R3697_struck.md)."
    },
    {
     "item": "R3697 f. 25r r16 end (5 signs), r9 blot (1)",
@@ -296,7 +303,7 @@
    }
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "22 Oct 2026, reading audit: only text that builds sentences counts. Non-null signs counted in R3697_signs.txt and R4232_signs.txt: R4232 1,430 and R3697's unstruck runs 747 read; R3697's struck runs (304) are decoded, not read. 2,177 of 2,481 = 0.877. Withdrawn as a reading figure: 0.899 (sense.py, signs in words read as French over both letters, 5 Oct 2026; stats.py 90.6%).",
+  "fraction_read_source": "22 Oct 2026, re-read (batch mix1): non-null signs in R3697_signs.txt and R4232_signs.txt in documents that read: R4232 1,430, R3697 unstruck 747, R3697 struck runs read from the decipherer’s glosses (A, B, C1, C2 head, T2) 169; the other struck runs (135) are decoded, not read. 2,346 of 2,481 = 0.946. Withdrawn: 0.877 (reading audit, before the glossed struck runs were counted as read from the glosses); 0.899 (sense.py, 5 Oct 2026).",
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "key table for 'Selve's Cipher' (cryptiana francis.htm, rebuilt from fr. 3045 ff. 42-49), extended", "source": "cryptiana francis.htm"},
     {"who": "contemporary", "role": "key or decipherment used", "note": "the decipherer's interlinear and marginal glosses, used as cribs on the struck runs"}
@@ -319,12 +326,12 @@
    },
    {
     "doc": "R3697",
-    "label": "R3697, BnF fr. 3091 f. 25r-v, Venice, 14 Sept 1535: the runs struck through by the decipherer (sA, sB, sC1-3, T1-T3)",
+    "label": "R3697, BnF fr. 3091 f. 25r-v: the struck runs with no legible gloss (C2 after \"et gran[d]\", C3, T1, T3; 135 signs)",
     "transcription": "R3697_signs.txt",
-    "decryption": "READING_R3697.md",
+    "decryption": "READING_R3697_struck.md",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "304 signs under the King's decipherer's ruling: only scattered words separable on the film scan, so the runs read as fragments; their sense is known only from the contemporary glosses (reading audit, 22 Oct 2026)."
+    "note": "Re-read 22 Oct 2026 (R3697_struck_reread_log.md): the glossed struck runs were split off and read from the decipherer’s glosses; these 135 signs have no gloss, or a gloss that is illegible where they need it (f. 25v margin lines 1-2, 6-7), and the strike crosses the x-height of every sign on the only (film) image. Fragments only: \"avoit\", \"on fait ... contre ses\", \"-tretienent\". Blocker: illegible; a colour or multispectral image, or the original, would separate the lighter strike ink."
    },
    {
     "doc": "R4232",
@@ -340,6 +347,23 @@
      "date": "2026-10-22",
      "note": "READING_R4232.md reads as continuous French (the Emperor's design on Marseille, the galleys, the delay, the breach with the Emperor) with a few single-sign holes; the margin decipherment of f. 44v agrees word for word."
     }
+   },
+   {
+    "doc": "R3697",
+    "label": "R3697, BnF fr. 3091 f. 25r-v: the struck runs glossed by the King’s decipherer (f. 25r A, B, C1 with the head of C2; f. 25v T2)",
+    "transcription": "R3697_signs.txt",
+    "decryption": "READING_R3697_struck.md",
+    "reading": "READING_R3697_struck.md",
+    "translation": "R3697_struck_en.md",
+    "summary": "Read from the decipherer’s interlinear and marginal glosses, checked against the struck signs where they separate from the strike: \"au marchant\"; \"ung sansacque cy prochain\"; \"Il a consumé ses facultez et la plus part de ses amys [...] et grand du T[urc]\"; \"amiablement pour la charge qu’il a de Vesprim de la guerre en luy\".",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "READING_R3697_struck.md: the four glossed runs (169 signs) read as French clauses from the contemporary glosses; signs agree where visible (A 11/11, B prochain 8/8, C2 head by the key, T2 about 50 of 64); C1 rests on the gloss alone (the strike hides its signs); one blurred group in the C1 gloss stays a hole."
+    },
+    "language": "fr",
+    "state": "read"
    }
   ],
   "key_file": "KEY.md"

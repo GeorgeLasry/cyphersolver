@@ -7,6 +7,14 @@ reads as continuous French; R3697's unstruck cipher (f. 25r r03-r16, f. 25v L1-L
 **R3697's struck runs (304 signs) are decoded, not read**: fragments only, their sense known from the contemporary
 glosses. Reading figure 87.7% (signs in text that reads, 2,177 of 2,481); the 89.9% is withdrawn as a reading figure.
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch mix1, Claude Opus 5.5): the decipherer's glosses on the struck runs are a
+contemporary decipherment, so where they are legible the struck runs now read from them, checked against the signs
+where these separate from the strike (`READING_R3697_struck.md`, `R3697_struck_en.md`, `R3697_struck_reread_log.md`).
+Read: A "au marchant", B "ung sansacque cy prochain", C1 + C2 head "Il a consumé ses facultez et la plus part de ses
+amys [...] et grand du T[urc]", T2 "amiablement pour la charge qu'il a de Vesprim de la guerre en luy" (169 signs).
+Still decoded, not read: C2 tail, C3, T1, T3 (135 signs; no legible gloss, the strike over every sign). Reading figure
+0.877 -> 0.946 (2,346 of 2,481 non-null signs in documents that read).
+
 - DECODE R3697 = BnF fr. **3091** f. 25r–v (Gallica btv1b9060253s views 27R, 28L), Selve to the King, Venice,
   14 Sept 1535 (catalogue card wrongly puts both records in fr. 3045).
 - DECODE R4232 = BnF fr. 3045 ff. 42–49 (Gallica btv1b9060156p views 82–95), Selve to the King, Venice, 5 July 1536.
@@ -63,7 +71,7 @@ struck runs.
 
 ## Remaining gaps
 
-- R3697 struck runs decoded, not read (fragments; reading audit 22 Oct 2026) - blocker: illegible; see the struck-runs line below (needs a colour image or the original)
+- R3697 struck runs C2 tail, C3, T1, T3 (135 signs) decoded, not read - blocker: illegible; no legible gloss and the strike over every sign (re-read 22 Oct 2026; the glossed runs A, B, C1, T2 are read from the glosses, READING_R3697_struck.md); needs a colour image or the original
 - R3697 struck runs on f. 25r (A, B, C1-C3) and f. 25v (T1-T3), 182 signs - blocker: illegible; the decipherer's
   ruling runs through the x-height of every sign and the only images (Gallica film scan; DECODE's are screenshots of
   the same film) cannot separate stroke from sign; glosses give most of the plaintext; a colour image or the
@@ -103,3 +111,4 @@ struck runs.
   vertical interpolation (`img/destrike.py`) erases the sign bodies with the stroke; C2 middle sign string tested
   against gloss-led candidates ("de ses maistres", "grand credit", "du Turc") and r8 "a pr[...]" against a paie /
   a prevenu / a prié with ∂ = a and ∂ɜ = r: no fit. Nothing moved; the 95% bar is not reachable on these images.
+- [x] retry (22 Oct 2026): the struck-run glosses taken as the contemporary decipherment; C1 gloss re-read at 2.2x; glossed runs split off and read (169 signs), the rest left with the image blocker (R3697_struck_reread_log.md).

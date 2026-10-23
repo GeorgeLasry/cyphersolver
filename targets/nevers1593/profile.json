@@ -196,6 +196,13 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "reading",
+   "what": "Re-read of f. 168 under REREAD_BRIEF (batch mix1): no decipherment, original or edition of the letter; figures re-read on the openapi.bnf.fr IIIF image at 1.4-2.2x, 14 transcription corrections (bars over 38 ne, 56 je, 68 faire, 26+52 par-le-r, 36 non; 18 not 1 0 8; 57 12 not 58 71), copy slips identified (24 for a, 27 for 29). Lines 1-3 and 6-7 read as sentences; lines 4, 5 and the last line keep holes in corrupt figures. Stays decoded, not read (texts/f168_reading.md, f168_en.md, f168_reread_log.md).",
+   "result": "partial",
+   "technique": ["manual reconstruction", "crib testing"]
   }
  ],
  "outcome": {
@@ -208,7 +215,7 @@
   "class": "read in part",
   "fraction_read": 0.311,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences, f. 209 = 123 of 395 (profile documents); f. 168 (272) is decoded, not read. Withdrawn as a reading figure: 0.997 = decode_f209.txt (122 of 122 figure groups resolve) and decode_f168.txt (268 of 269): 390/391 groups given a value by key no. 46, values not sense.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences, f. 209 = 123 of 395 (profile documents); f. 168 (272) is decoded, not read. Withdrawn as a reading figure: 0.997 = decode_f209.txt (122 of 122 figure groups resolve) and decode_f168.txt (268 of 269): 390/391 groups given a value by key no. 46, values not sense. Re-read 22 Oct 2026 (batch mix1): f. 168 improved but still decoded, not read, so the figure is unchanged.",
   "key": "recovered",
   "grades": "unknown",
   "verification": [
@@ -259,13 +266,14 @@
    {
     "doc": "f168",
     "label": "Nevers to Pisany, 14 Oct 1593, BnF fr. 3986 f. 168 (copy)",
-    "note": "texts/f168_reading.md: only lines 1, 6 and 7 build sentences; lines 2-5 and the last line are fragments between \"...\" (\"faict aller ... pluseurs resons ... pour en par...\"), figure misreadings on a microfilm copy",
+    "note": "Re-read 22 Oct 2026 (texts/f168_reread_log.md): figures re-read on the IIIF image, 14 corrections (bars mis-assigned, segmentation; ct_3986_f168_r2.txt). Lines 1-3 and 6-7 now read as sentences (\"Je luy ay demandé come [...] le Pape voloit que j'y alase; elle m'a dit n'avoir autre charge, ne me declarans que j'y alle ou non\"; \"Ce qu'il faict tenir segret, et le faire savoir a [Gondi]\"); lines 4, 5 and the last line keep holes (about half the sentences hold; _check_reading 0.30 on the reading text). Blocker: the figures are legible but the register copy is corrupt there (dropped and swapped figures, 24 for 34, 27 for 29), and there is no second witness (no decipherment, original or edition) to restore them.",
     "state": "decoded, not read",
     "language": "fr",
-    "transcription": "ct_3986_f168.txt",
+    "transcription": ["ct_3986_f168.txt", "ct_3986_f168_r2.txt", "texts/f168_corrections.tsv"],
     "decryption": [
      "decode_f168.txt",
-     "texts/f168_reading.md"
+     "texts/f168_reading.md",
+     "texts/f168_en.md"
     ],
     "summary": "Written the day after Possevino's message at Poschiavo: the Duke of Nevers will not be received as ambassador for several reasons; Nevers reports what he was told and his intention to advance and do as he was written, with Cardinal Gondi and the Duke of Mantua named. Read in long stretches; several passages remain garbled by the copyist's figures."
    }

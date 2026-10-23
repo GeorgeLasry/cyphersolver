@@ -11,6 +11,12 @@ English sentences with its name codes glossed. **R4844 (10 Sep) is decoded, not 
 words and open codes fall in nearly every sentence. Reading figure 0.43 (units in letters that read); the pooled 0.49
 is withdrawn as a reading figure.
 
+22 Oct 2026, re-read (REREAD_BRIEF, batch mix1, Claude Opus 5.5): R4844 checked again for an existing text (none:
+Wotton's interlinear decipherment blotted, not in CSP Scotland viii, DECODE non-decrypted). The DECODE images are
+behind the login and not in the checkout, so nothing new could be read on the page. The 14 Oct gap readings of
+`clear_gaps_pass2.md` were merged into `reading_R4844_r2.txt` (sentence check 0.45 -> 0.50), but the sign words and
+open name codes still fall in nearly every sentence: R4844 stays decoded, not read (`texts/R4844_reread_log.md`).
+
 Companion to [wotton1585](../wotton1585/NOTES.md), Wotton's own drafts to
 Walsingham in the same volume (R4841–R4843, catalogue 81), read by another session the same day.
 
@@ -109,7 +115,7 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 - R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
 - R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out
 - name codes 13, 14, 23, 30, 32, 37 - blocker: open-codes; not glossed in CSP or Wotton drafts; context too thin
-- clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); nine transcription corrections found, not yet merged into the reading files
+- clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); merged for R4844 into `reading_R4844_r2.txt` on 22 Oct 2026 (R4840's nine corrections still to merge into reading_R4840.txt)
 
 ## Escalation
 - [x] siblings: Wotton drafts R4841-R4843 in the same volume read for numbers and cribs
@@ -118,6 +124,7 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 - [x] print: CSP Scotland viii checked page by page (nos. 40, 65, 106)
 - [n/a] key-rebuild: the name code is a list of names with no internal order to bracket, and its open numbers occur once or twice in thin context; the sign alphabet is ~120 homophonic signs with nulls and no crib, below what an anneal can fix (a crib from SP 52/38 copies would be needed first)
 - [x] retry: clear-text gaps re-read on the images 14 Oct 2026 (`clear_gaps_pass2.md`); name-code grades unchanged (the new words fix no open number)
+- [x] retry (22 Oct 2026): R4844 re-read under the reread brief; pass-2 readings merged (`reading_R4844_r2.txt`); images out of reach (DECODE login); sign words and open codes unchanged (`texts/R4844_reread_log.md`)
 
 ## 2026-09-30 (quotation list for George Lasry)
 

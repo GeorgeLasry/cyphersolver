@@ -1,11 +1,21 @@
 # Nevers to Pisany, 8 September and 14 October 1593, in cipher no. 46 (catalogue no. 21)
 
-Status: in progress (22 Oct 2026, reading audit: f. 168 decoded, not read, workable; see Remaining gaps)
+Status: in progress (22 Oct 2026: f. 168 re-read, still decoded, not read; the remaining holes are in corrupt copy figures; see Remaining gaps)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 209 (its three
 cipher passages complete the clear sentences). **Decoded, not read**: f. 168: only lines 1, 6 and 7 build sentences,
 lines 2-5 and the last are fragments. 99.7% (groups with a value) is withdrawn as a reading figure; 31.1% of the tokens
 are in the letter that reads (123 of 395).
+
+22 Oct 2026, re-read (REREAD_BRIEF, batch mix1, Claude Opus 5.5): no decipherment, original or edition of f. 168
+exists, so its figures were re-read on the IIIF image (4948 px, 1.4-2.2x). Fourteen transcription corrections
+(`texts/f168_corrections.tsv`, corrected file `ct_3986_f168_r2.txt`): bars mis-assigned in the first pass (38̄ ne,
+56̄ je, 68̄ faire, 26̄ 52̄ 32 = par·le·r, 36̄ non, 47̄ 9̄, 69̄, 15̄) and segmentation (18, not 1 0 8; 57 12, not 58 71).
+New sentences: "Je luy ay demandé come [...] le Pape voloit que j'y alase; elle m'a dit n'avoir autre charge, ne me
+declarans que j'y alle ou non. Je me suis content[é] de cela ..." and "Ce qu'il faict tenir segret, et le faire
+savoir a [Cardinal Gondi]". Lines 4, 5 and the last line keep holes where the copyist's figures are corrupt (24 for
+a, 27̄ for 29̄, dropped figures). About half the sentences hold, so f. 168 stays decoded, not read
+(`texts/f168_reading.md`, `f168_en.md`, `f168_reread_log.md`).
 
 Split on 14 Oct 2026 under the one-key rule (George Lasry): this entry is key no. 46 and the two letters to Pisany
 (fr. 3985 f. 209, fr. 3986 f. 168). The five letters to Revol are in the Court symbol cipher no. 60 and are now their
@@ -121,7 +131,7 @@ The five letters to Revol (fr. 3985 ff. 88, 115, 176; fr. 3986 ff. 146v, 157v, 1
 sessions of 17 Sept and issue #32 (12 Oct 2026), are in `targets/revol1593/NOTES.md`.
 
 ## Remaining gaps
-- f. 168 decoded, not read (272 tokens) - blocker: not-attempted; re-read the confusable figures (1/7, 0/8, 3/5) of lines 2-5 and the last line on the image with the Gondi decipherment as a guide to the copyist, re-decode, translate
+- f. 168 decoded, not read (272 tokens) - blocker: needs-physical-access; re-read on the image 22 Oct 2026 (14 corrections, lines 1-3 and 6-7 now sentences); the holes left in lines 4, 5 and the last line are corrupt figures in the register copy, legible but wrong, and only a second witness (Pisany's original, not located) could restore them
 - fr. 3986 f. 168, Pisany 14 Oct, garbled stretches of lines 2-8 - blocker: illegible; microfilm copy, 1/7, 0/8, 3/5 confusable; segscore.py did not resolve them
 
 ## Escalation
@@ -131,3 +141,4 @@ sessions of 17 Sept and issue #32 (12 Oct 2026), are in `targets/revol1593/NOTES
 - [x] print: Tomokiyo (cryptiana nevers.htm) reads passage 1 of f. 209 and line 1 of f. 168; nothing else published on these letters was found (17 Sept 2026)
 - [n/a] key-rebuild: the key is the archive table, every figure of both letters resolves (122/122, 268/269); the gaps are figure readings, not key values
 - [x] retry: f. 168's doubtful figures re-scored with segscore.py over alternative null placements; not settled
+- [x] retry (22 Oct 2026): f. 168 re-read figure by figure on the IIIF image; bars and segmentation corrected, five more clauses read; corrupt groups tested against candidate words (texts/f168_reread_log.md)
