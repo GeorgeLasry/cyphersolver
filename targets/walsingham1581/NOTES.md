@@ -15,6 +15,16 @@ him send me ansver"; "that there be nothing aganist [58] and [95] stait [49] the
 pacqvet ... cvm to [87] handis vel closit or not". 0.154 clean sentences on explicit holes: 20 labels have no value
 (seven are the key's own unknowns). Log: `texts/no50I_reread_log.md`.
 
+**23 Oct 2026, r2k (lines 11-14 checked):** the last four lines (141 tokens) compared glyph by glyph with the
+concordance on the full-size DECODE R3839 P3 image (3567 px; no larger TNA image is freely available), each sloping
+line cropped on its own centre at 3x. Settled from the key's glyphs: 49 = OF (the OF glyph), 59 = *m* (#, *realme*),
+72 = null, 87 = YOUR; 95 is a lone dot, not a sign; 58 is the key's own queried "THE QUEEN?" sign, kept [?the Queen].
+Three look-alike labels corrected by position (`texts/no50I_position_corrections.tsv`); 14:14 is *n*, not *h*, which
+gives "sealed of the *vnicorne*" (the unicorn seal). The tail reads: "that ther be nothing aganist [?the Queen] and
+stait of the realme. And fayle not to advertis me vhitner the present pacqvet and [?is] cvm to your handis vel closit
+or not, [91] [?hardvam] and sealed of the vnicorne". Decoder `research/reading_audit/r2k_wals_dec.py`. Score
+unchanged (0.154 explicit holes): the holes are in lines 2-10. Still decoded, not read.
+
 Earlier status (before the 22 Oct 2026 reading audit): no write-up (found already solved: Biermann and Lasry 2023, published by Tomokiyo on 16 Sept 2026; checked here 23 Sept 2026, nothing added beyond the check; catalogue item 296 removed 10 Oct 2026)
 
 ## Outcome (checked 23 September 2026)
@@ -52,8 +62,8 @@ The case should leave the “still unread” queue. Its accurate status is **sol
 
 ## Remaining gaps
 
-- no. 50I: 20 signs without a value (labels 07, 09, 39, 44, 46, 49, 58, 59, 72, 77, 79, 82, 86, 87, 89, 91, 92, 95, 97, 98) - blocker: no-key-material; seven are unknown in the published key too; the Biermann-Lasry plaintext is unpublished (ask Lasry)
-- no. 50I lines 11-14: concordance not yet checked glyph by glyph - blocker: not-attempted; crop the sloping last lines one by one on DECODE R3839 P3 (or a TNA full-resolution image) and finish `texts/no50I_concordance.tsv`
+- no. 50I: 14 signs without a value (labels 07, 09, 39, 44, 46, 77, 79, 82, 86, 89, 91, 92, 97, 98) and the Γ-like sign at 13:9 - blocker: no-key-material; most are the unknown signs of the published key; all 14 lines now checked on the image (49, 58, 59, 72, 87, 95 settled 23 Oct 2026, r2k); the Biermann-Lasry plaintext is unpublished (ask Lasry)
+- no. 50I lines 2-10: words resting on merged labels (10 b/k, 35 null/d, 13 l/w) and the open signs keep the reading at 0.154 - blocker: no-key-material; lines 11-14 closed 23 Oct 2026 (r2k): checked glyph by glyph, the tail reads
 
 ## Escalation
 
@@ -63,3 +73,4 @@ The case should leave the “still unread” queue. Its accurate status is **sol
 - [x] print: Tomokiyo, cryptiana mary3.htm (16 Sept 2026)
 - [x] key-rebuild: glyph-to-label concordance built 23 Oct 2026 (b37), lines 1-10 checked; 20 signs open
 - [x] retry: 23 Oct 2026 (b37) all 562 tokens decoded through the concordance; partial reading 0.154
+- [x] retry: 23 Oct 2026 (r2k) lines 11-14 checked glyph by glyph on the full DECODE image; six labels settled, three position corrections; still 0.154

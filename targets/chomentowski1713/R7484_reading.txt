@@ -1,22 +1,58 @@
-R7484 -- reading, modernised Polish (pass 3, 9 Oct 2026; code 76 = ferman settled). Stanisław Chomentowski to Hetman Sieniawski,
-Adrianople, 9 May 1713. Clear words in {...}; everything else is code read from the interlinear gloss and
-sien/syllabary.tsv. "(?)" = doubtful word, "[...]" = not recovered.
+R7484 - reading in the writer's spelling (restored 23 Oct 2026, batch r2k, from the pass-3 reading of 9 Oct 2026,
+which had been put into modern Polish spelling; the modern rendering now lives only in the English file R7484_en.md).
+Stanisław Chomentowski to Hetman Sieniawski, Adrianople, 9 May 1713.
 
-{Monseigneur.}
-{Pisałem do WMM Pana w ostatnim} na Wiedeń liście, że tu coraz nowe odmiany postawione. Dzisiaj umowią(?) [...]
-psuje(?) resolucyą. Kapitan basza, zostawszy wezyrem, mienić się począł; jedni mówią, że teraz namówiony, drudzy,
-że jeszcze w Stambule. {Mając bowiem} konfidencyą [...] fermana, a mi to [...] {być mogło.} {Jeździł(?)} niby na wizytę do
-króla szwedzkiego, ale że nie chciał być u niego, {tylko} in loco tertio, powrócił, nie widząc się z królem.
-Drugiego dnia potem, {d. 24ta} Aprilis, diwan publiczny miał, na którym wojnę sub ignoto nomine {opowiedziano};
-{skąd} non vanus na nas metus. Jakoż ku Chocimowi obrócić się miała, a nas do Jedykuły; stanąwszy u Chocimia,
-{chciał} przymusić Szweda ad agnoscendum Stanislaum {albo} eligendum tertium, króla Augusta nie chcąc metu
-potentiae Germanicae {i} kolligacyi moskiewskiej, co im ferman i wbijają (cipher order "co i m ferman i w-bi-ja-ją"). Uczyniona {była i} modlitwa na wojnę.
-{26ta} tenże wezyr, będąc u Cesarza, zrzucony i uduszony, {dlaczego} dotąd rzeczy in confuso; {i} lubo się
-spodziewamy, że nasze rzeczy dobrze pójdą, {gdyż} [...] stambulscy [zwokowani(?)], jednak z nami żadnej konkluzyi
-nie mają, że mieć się trzeba na ostrożności {WMM Panu}. {Jednak} żeby Moskwa w Polszcze nie była, a wojsko nasze
-nie blisko granicy, Król {JMć} żeby z Polski nie odjeżdżał. {Sam czas dowiedzie(?) upragniony ... personaliter ...
-zostaję WMM Pana i Dobrodzieja najniższy sługa Chomentowski. W Andrynopolu d. 9 Maj 1713.}
+Rests on: the interlinear syllable glosses of the contemporary decipherer (R7484.txt G lines), the syllabary
+(syllabary.tsv) and the slips settled token by token in R7484_pass2.txt (passes 2-3), and the writer's clear words
+exactly as transcribed in R7484.txt. Each word is spelt as its figures carry it: the code's value (the gloss where it
+only confirms the value), the clear words letter for letter. Where the glosser normalised the writer's o for a nasal
+(179 o glossed "ą", 52 do glossed "dą", 275 to glossed "tą", 332 zo glossed "zę", 30 co glossed "ą") the figure's own
+value is kept: "mowio", "widzoc", "bedoc", "dotod", "poczoł", "chcoc", as R7476 writes "bawio", "chco", "z tod".
+330 is "ze" (glossed "że"), as in R7476. Word division is ours. Aligned word by word with the token stream on 23 Oct
+2026 (R7484_reread_log.md).
 
-Open (see R7484_pass2.txt, pass 3): the words after "umowi-" on p.111 (7 tokens), "ta" and "s-fi-d-no" round
-"fermana" on p.111 (5), code 112 and "c-wo-ko-wa-ni" on p.113 (6). 18 of 513 cipher tokens; 96.5% give sense. The clear closing formula on p. 113 is in the
-writer's hand and only approximately read; it is not cipher.
+Marks: [x] = a letter or word no figure carries (supplied, or the emendation of an encipherer's slip); [?word] = a word
+only partly carried or resting on a doubtful reading; [...] = unread figures whose syllables are known but form no
+word found; [112] = an unidentified code. Latin kept as written. The closing formula on p. 113 is clear text in the
+writer's hand, read only approximately.
+
+## Reading
+
+p. 111
+Monseigneur.
+Pisałem do WMM Pana w ostatnim na Weden liscie, ze tu co raz nowe odmiany postawione.
+Dzisiay [?umowia] [...] psuie resolutya.
+Kapitan basza, zostawszy wezyrem, mienic sie poczoł; iedni mowio, ze teraz namowi[o]ny, drudzy, ze ieszcze w Stambule.
+Mając bowiem konfidentia [...] F[e]rmana, a mi to [...] być mogło.
+[?Iezdził] niby na wizyte do krola Szwedzkiego, ale ze nie chciał bydz u niego, tylko in loco tertio, powrocił, nie
+
+p. 112
+widzoc sie z Krolem.
+Drugiego dnia potym, d. 24ta Apr[i]lis, diwan publiczny miał, na ktorym woyne sub ignoto nomine opowiedziano; z kąd
+non uanus na na[s] metus.
+Iakosz ku Chocimowi obrocic sie miała, a nas do Iedikuli; stanowszy u Chocimia, chciał przymusic Szweda ad
+agnoscendum Stanisława albo eligendum tertium, Krola August[a] nie chcoc meto po[te]ntie Germanice y kołligatiy
+moskiewski, co im farman i wbiiaią.
+Uczynione była y modlit[?wa] na
+
+p. 113
+woine.
+26ta tenze wezyr, bedoc u Cesarz[a], zrzucony y uduszony, dla czego dotod rzeczy in confuso; y lubo spodziwamy sie,
+ze nasze rzeczy dobrze [po]ydo, gdyż [112] Stambułsci [...], iednak z nami zadney konkluzyi nie maią, ze miec sie
+trzeba na ostroznosci WMM Panu.
+Iednak zeby Moskwa w Polszcze nie była, a woysko nasze nie blisko granicy, Krol JMC zeby z Połski nie odieżdzał.
+Sam czas [?dowiedzie] upragniony [...] personaliter [...] zostaję WMM Pana y Dobrodzieia najniższy sługa Chomentowski.
+W Andryanopolu d. 9 Maj 1713.
+
+## Notes
+
+Surplus or slipped figures (R7484_pass2.txt): p.111 L11 326 z doubled in "Szwedz-z-kiego" (left out); p.112 L5 204 u
+written for 244 s in "na nas" (171 171 204: na na[s]); p.112 L12 178 ni written for te in "po[te]ntie"; p.113 L5 297 wo
+written for 197 po ("[po]ydo"); p.112 L2 Apr[i]lis: the figures give a-p-r-li-s; p.111 L8 101 i glossed "o"
+("namowi[o]ny"). p.112 L8 174 no glossed "n" read "stanowszy" (no, 7x), p.112 L8 141 li glossed "ły" read "Iedikuli"
+(li, 7x). p.112 L14 294 read w ("moskiewski", R7484_pass2.txt item 13). Word codes: 76 ferman (glossed "Frmana",
+"farman"), 112 unidentified, 121 Krol, 160 Moskwa, 239 Szweda, 253 Stambuł, 256 Stanisław, 300/309 wezyr, 311 woysko.
+
+Open: p.111 L3-4 100 269 230 330 102 244 329 ("iu/ia t r ze y s za" after "umowi-", 7 tokens), p.111 L10 272 ("ta") and
+244 71 46 174 ("s fi d no"), p.113 L5 112 (gloss a flourish, "[?]amarzine") and p.113 L6 34 297 119 294 173
+("c wo ko wa ni"): 18 of 513 cipher tokens.

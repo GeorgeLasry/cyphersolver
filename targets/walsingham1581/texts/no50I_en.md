@@ -15,4 +15,9 @@ And he has of himself offered to convey me the packet [?without …] [44] to be 
 
 You may sound and try him, and by him send me an answer.
 
-[18] Nothing [44] this beginning [?…] the [?…] common news, and such as, being discovered, [79] may show of [?…] [?special]ly that there be nothing against [58] and [95] state [49] the realm; and fail not to inform me whether [72] the present packet, and to see it come to [87] hands well closed or not, [91] [?…] and sealed, of the which or [89] [77] [82].
+[18] Nothing [44] this beginning [?…] the [?…] common news, and such as, being discovered, [79] may show of [?…] [?special]ly that there be nothing against [?the Queen] and the state of the realm.
+
+And fail not to inform me whether the present packet [?has] come to your hands well closed or not, [91] [?…] and sealed with the unicorn [89] [77] [82].
+
+r2k (23 Oct 2026): lines 11-14 checked on the image; "sealed of the vnicorne" = sealed with the unicorn (the Scottish royal
+supporter, i.e. a Scottish seal); [?the Queen] is the key's own queried sign.

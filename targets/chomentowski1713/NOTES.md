@@ -75,14 +75,27 @@ Score (`research/reading_audit/v2_score.py`): explicit holes **0.651 -> 0.524** 
 a partial reading. `fraction_read` 0.955 -> 0.273 (tokens of the documents that read: R7484 + R7485, 609 of 2,230).
 R7484_reading.txt and R7485_reading.txt are also in modernised spelling and still need the same restoration.
 
+## 23 Oct 2026 (r2k): R7484 and R7485 restored to the writer's spelling; both keep read
+
+`R7484_reading.txt` and `R7485_reading.txt` (9 Oct, modernised Polish) re-spelt by hand from the C/G lines of
+`R7484.txt`/`R7485.txt`, the syllabary and the slips settled in passes 2-3 (`R7484_reread_log.md`). Each code by its
+value: where the glosser normalised the writer's o to a nasal the figure is kept ("mowio", "widzoc", "bedoc", "dotod",
+"poczoł", "chcoc", like R7476's "bawio", "chco"); 330 = "ze"; clear words as transcribed; slips bracketed ("na na[s]",
+"po[te]ntie", "[po]ydo", "Han[o]wi", "wo[ła]ia", "pi[e]r[w]sza"); "(?)" -> [?word]; the 9 Oct guess "zwokowani"
+withdrawn ("Stambułsci [...]"); R7485's "[Han]" dropped from the reading (only in the gloss). English only in the new
+`R7484_en.md`, `R7485_en.md`. Score (`v2_score.py`, explicit holes): R7484 0.75 -> 0.739 (17/23, hole rate 0.094),
+R7485 0.889 -> 0.75 (6/8): both keep read; `fraction_read` unchanged 0.273. The gap blocker "open-codes" (not an allowed
+blocker) is now no-key-material for the R7476 and R7484 word residues: values certain, no outside text gives the word.
+
 ## Remaining gaps
 - R7476: the reading as a whole is decoded, not read (0.524 explicit-hole share, 23 Oct 2026; about 40 [?word]s on p.31 L19-34 and p.32 L9-36) - blocker: illegible; the doubtful words sit under glosses unreadable at 3-3.5x on the DECODE JPEGs or whose letters form no certain word
-- R7476: 67 of 1,621 tokens - blocker: open-codes; letters known from gloss or key but no word, after seven passes (digit re-transcription at 3x, band alternatives, Ottoman/Latin/old-spelling candidates, LM scoring)
+- R7476: 67 of 1,621 tokens - blocker: no-key-material; letters known from gloss or key but no word, after seven passes (digit re-transcription at 3x, band alternatives, Ottoman/Latin/old-spelling candidates, LM scoring)
 - R7476: 8 tokens in names (p. 32 L9-10, code 216) - blocker: no-key-material; glossed syllables, no matching name in the embassy literature
 - R7476: 5 one-off codes 2, 224, 266, 299 x2 - blocker: no-key-material; no gloss, no band value
 - R7476: 3 tokens - blocker: illegible; margin number p. 31 L32, stroke p. 32 L13, gloss over code 112 at 3x
-- R7484: 17 of 513 tokens - blocker: open-codes; three short passages whose syllables are certain but whose words are not recovered
+- R7484: 17 of 513 tokens - blocker: no-key-material; three short passages (p.111 L3-4, p.111 L10, p.113 L6) whose syllables are certain but whose words are not recovered; no sibling, print or other gloss gives them (r2k, 23 Oct 2026: re-spelt, still open)
 - R7484: code 112 (1 token) - blocker: illegible; its gloss is a flourish unreadable at 3.5x, and its only other occurrence (R7476) is also illegibly glossed
+- R7485: the faint pale-ink clear body, pp. 115-117 (not cipher) - blocker: illegible; very faint with show-through on the DECODE images
 
 ## Escalation
 - [x] siblings: R7484/R7485 used for R7476's vocabulary; the other Sieniawski records are in other keys
@@ -92,3 +105,4 @@ R7484_reading.txt and R7485_reading.txt are also in modernised spelling and stil
 - [x] key-rebuild: syllabary rebuilt from the glosses and its alphabetical bands used to bound values
 - [x] retry (23 Oct 2026): R7476 re-spelt from its figures and aligned word by word with the token stream (r2b); doubtful words marked; rescored 0.524, demoted
 - [x] retry: R7476 glosses re-read at high contrast, unread stretches re-transcribed digit by digit at 3x (passes 4-6); R7484 pass 3 at 3.5x; Polish candidates scored with lang/ pl-modern
+- [x] retry (23 Oct 2026, r2k): R7484 and R7485 re-spelt from their figures, slips bracketed, aligned word by word; rescored 0.739 / 0.75, keep read

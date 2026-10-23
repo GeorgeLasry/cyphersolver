@@ -53,3 +53,29 @@ a merged-label value or an unchecked glyph are bracketed [?word].
 Verdict: **decoded, not read** (partial reading kept). What would finish it: (a) re-check lines 11-14 glyph by glyph on
 a better image (TNA SP 53/11 f. 138 at full resolution; the DECODE copy is small), (b) identify the 20 open signs from
 their contexts once every line is checked, or (c) Biermann and Lasry's plaintext (ask George Lasry).
+
+## r2k (23 Oct 2026): lines 11-14 checked glyph by glyph
+
+- Image: DECODE R3839 P3 (`IMG_R3839_I23203_P3.jpg`, 3567 x 2859, the full-size DECODE file; also in the main checkout
+  `C:\Users\dbour\cypher\walsingham1581\`). No TNA image is freely available at a higher resolution; the DECODE copy
+  read well at 3x once each sloping line was cropped on its own centre (lines 11-14 at y 725, 795, 850, 895; four
+  segments per line; crops in the session scratchpad `reread/r2k/wl1*_*.jpg`, `wz11_*.jpg`).
+- All 141 tokens of lines 11-14 compared with the concordance glyph (evidence added to `no50I_concordance.tsv`,
+  marked r2k). Three places where Tomokiyo's label stands for another glyph (`no50I_position_corrections.tsv`):
+  12:1 label 02 is the tall null stroke (as 03 at 14:22), not the crossed f; 14:14 label 53 is the oval with a bar
+  (n), crossed by the f's descender, not the infinity h, which gives *vnicorne*; 13:9 label 96 is the key's unknown
+  Γ-like sign, not the delta TO of 3:25 (read [?is] by sense only).
+- Labels settled: 49 = the OF glyph (same as 19 at 14:11); 59 = the key's # under M (*realme*); 72 = the d-like hook of
+  the key's null row (*vhitner the present*); 87 = the key's YOUR sign (*cvm to your handis*); 95 = a lone dot, the
+  dot that precedes the s-hook (Tomokiyo leaves it unlabelled at 11:14-15 and elsewhere): not a sign, so *and stait*;
+  58 = the key's "THE QUEEN?" sign (three bars on a stem), kept [?the Queen] since the key itself queries it.
+- Still without value in these lines: 91 (circle with a dot, key unknown; also 3:4), 89, 77, 82 (key unknowns; 77 82
+  close the letter), the Γ-like sign at 13:9.
+- Decode `no50I_decode.txt` regenerated with `research/reading_audit/r2k_wals_dec.py` (b37 decoder + position
+  corrections). Lines 11-14 now read: "that ther be nothing aganist [?the Queen] and stait of the realme. And fayle not
+  to advertis me vhitner the present pacqvet and [?is] cvm to your handis vel closit or not, [91] [?hardvam] and sealed
+  of the vnicorne [89] [77] [82]."
+- Score (`v2_score.py` en): explicit holes 0.154 (2/13) before and after; hole rate 0.263 -> 0.256. The tail now holds,
+  but the holes of lines 2-10 (14 open labels, merged-label words) keep the document far below 0.60: **decoded, not
+  read**.
+- Look-alike share: the position corrections touch 3 of 562 tokens; the merged labels of b37 (10, 35, 13) about 10.

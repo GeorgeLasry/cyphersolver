@@ -273,10 +273,25 @@ Note for a later pass: on the German explicit-hole measure HCP507 (ff. 28-29) sc
 decisions used the plain share (0.437, 0.545). 507 may now clear the bar on a reader's review; 509's German extracts
 are still not re-transcribed.
 
+## 23 Oct 2026 (r2k): 507 read; 509's German extracts transcribed, 509 still decoded, not read
+
+Batch r2k (`HCP507-509_reread_log.md`). **HCPortal 507 (ff. 28-29):** reviewed as a reader on the decode, the
+writer's duplicate ff. 30-31 and scan 0028 (l. 33 spot check: "i AU wartenberg" is in the figures); one more word
+re-spelt from the figures ("nitt", `r2b_mals_denorm.py`). The sentences hold; `v2_score.py` explicit holes 0.662
+(47/71; plain 0.38): **read (B)**. **HCPortal 509 (ff. 32-33):** the German news extracts in the second hand (three
+pieces: from London 16/26 Mar, 5 Apr / 26 Mar and 17/27 Mar 1637, and a Paris note) transcribed line by line on 2-3x
+crops of scans 0032-0033 and set around the decoded runs (`HCP509_reading.md`, `_en.md`; the line transcription is in
+the log): Parma's neutrality and Sabbioneta, the English East India company and the Palatine manifesto, La Valette on
+the Moselle, the Anglo-French league and Saint-Chaumont, Rohan's victory, Colonel Rosen. Score: whole body 0.667
+explicit holes, but the German extracts alone 0.50 (24/48): the record stays **decoded, not read**; its blockers are
+now the unvalued codes and signs (no-key-material) and about 30 words of the fast hand (illegible), no longer
+not-attempted. fraction_read 0.221 -> 0.530 (5,434 of 10,246 tokens).
+
 ## Remaining gaps
 - HCPortal 504 (f. 18) and 505 (ff. 23-24): decoded, not read after the 23 Oct 2026 re-read on the scans (explicit holes 0.562, 0.545; HCP504/505_reading.md) - blocker: no-key-material; the sentences build, but open codes (504: 212, 122, 120, 123, 148, 260; 505: thirteen) and signs stand in most of them. HCPortal 497 and 506 closed 23 Oct 2026: read (0.632, 0.625)
-- ff. 14, 15-16, 28-29 (with duplicate 30-31) decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375, 0.437; readings HCP502/503/507_reading.md) - blocker: no-key-material; the sentences build, but two to six open codes or signs stand in most of them; f. 14 also torn at the right edge
-- ff. 32-33 (HCPortal 509): French letter read; the German news extracts in the second hand not re-transcribed (clean share 0.545 overall) - blocker: not-attempted; transcribe the clear words of the extracts on the scan (the cipher runs are decoded in HCP509_reading.md)
+- ff. 14, 15-16 decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375; readings HCP502/503_reading.md) - blocker: no-key-material; the sentences build, but two to six open codes or signs stand in most of them; f. 14 also torn at the right edge. ff. 28-29 (HCPortal 507) closed 23 Oct 2026 (r2k): read, 0.662 explicit holes
+- ff. 32-33 (HCPortal 509), German news extracts: codes and signs 248, 129, 155, 148, 133, 126, 115, 123, 156, OO, AA, XX, square, GG, CC, KK, LL, V - blocker: no-key-material; clear text transcribed 23 Oct 2026 (r2k), extracts 0.50 explicit holes (record 0.667 with the French letter, kept decoded, not read); the codes and signs stand in nearly every cipher-bearing sentence, occur once or twice and are not in key.txt
+- ff. 32-33 (HCPortal 509): about 30 words of the fast second hand in the extracts - blocker: illegible; unread or doubtful at 2-3x on the HCPortal scans 0032-0033
 - about 40 three-digit codes and name signs (193 tokens: 120, 122, 129, 140, 148, 176, 193, 212 ... V, K, f, 4#, +, AA, GG ...) - blocker: no-key-material; mostly single occurrences, five valued from context (128, 130, 188, 253, 273, grade I)
 - alphabetic 43, 45 and LL (three labels, five tokens) - blocker: no-key-material; no primary key equation or named parallel, and no demonstrated shared nomenclature with the numerical system; LHA Koblenz 47/4400 remains uninspected
 - alphabetic source alternatives in lines 3, 6, 7, 8, 9 and 10, plus the blot - blocker: illegible; selected 510-position branch and bounded alternatives retained; a human comparison with the original or better authentic imaging is needed to decide ambiguous strokes and the blot's extent
@@ -291,6 +306,7 @@ are still not re-transcribed.
 - [x] print: web and LAGIS search for an edition of the letters; none found
 - [x] key-rebuild: digit table annealed from the ciphertext and polished over all pages; signs and five codes valued from context
 - [x] retry: 236 unread groups re-checked against the scans (24 misreads, 2 doubled groups corrected, 210 confirmed)
+- [x] retry (23 Oct 2026, r2k): 507 reviewed as a reader on decode, duplicate and scan, read (0.662); 509 German extracts transcribed on the scans, still decoded, not read (extracts 0.50)
 - [x] retry (23 Oct 2026, r2b): 497, 504, 505, 506 re-read sentence by sentence on the HCPortal scans; 497 and 506 now read; the b08 spelling normalisation undone in the sibling readings
 - [x] retry (22 Oct 2026, b08): the five unread records re-read sentence by sentence on the HCPortal scans; ff. 28-29 against the duplicate ff. 30-31 (9 readings taken from it); f. 32 one label corrected and the French letter transcribed; f. 3 now reads
 

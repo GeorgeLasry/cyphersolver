@@ -516,7 +516,9 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Clean-sentence share of the reading bodies (b05_score.py; before = the reading_segmented.txt blocks of the document): HCPortal 496 0.333 -> 0.667 (read, B); 502 0.143 -> 0.167; 503 0.389 -> 0.375; 507 0.271 -> 0.437 (508 its duplicate); 509 0.182 -> 0.545 with the French paragraph scored as French (decoded, not read: the German extracts are not re-transcribed). fraction_read 0.436 -> 0.480.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: HCPortal 497, 504, 505, 506 had been kept read on the machine segmentation reading_segmented.txt; their blocks score 0.0, 0.5, 0.5, 0.286 explicit-hole (hole rate 0.21-0.32) and are not readings. Demoted to decoded, not read; a b08-style re-read on the scans is the next step.", "result": "failed"},
   {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction"], "what": "r2b: the b08 spelling normalisation of the sibling readings undone with r2b_mals_denorm.py (each normalised word restored to the form the figures or transcribed clear words give at that point, walked in order against the decode stream): 496 10 words, 502 10, 503 11, 507 87, 509 0. Explicit-hole scores unchanged (496 0.667, 502 0.118, 503 0.458, 507 0.662, 509 0.659); plain scores fall (496 0.667 -> 0.333). 496 stays read on the German explicit-hole bar.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "language-model scoring"], "what": "r2b: HCPortal 497, 504, 505, 506 re-read on the HCPortal scans 0012, 0018, 0023-0025 (fetched to the scratchpad): sentence-by-sentence readings from the b08_dec decode with key.txt unchanged, breaks checked on full-resolution crops (f. 25 l. 15 two transcription corrections, HCP506_corrections.tsv; f. 18 'Reiterei noch'), word-by-word alignment (b08_align.py: three spelling slips of the draft corrected), slips bracketed, English files. v2_score explicit holes: 497 0.0 -> 0.632 and 506 0.286 -> 0.625 (read, B); 504 0.5 -> 0.562 and 505 0.5 -> 0.545 (decoded, not read: open codes and signs, no key material).", "result": "partial"}
+  {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "language-model scoring"], "what": "r2b: HCPortal 497, 504, 505, 506 re-read on the HCPortal scans 0012, 0018, 0023-0025 (fetched to the scratchpad): sentence-by-sentence readings from the b08_dec decode with key.txt unchanged, breaks checked on full-resolution crops (f. 25 l. 15 two transcription corrections, HCP506_corrections.tsv; f. 18 'Reiterei noch'), word-by-word alignment (b08_align.py: three spelling slips of the draft corrected), slips bracketed, English files. v2_score explicit holes: 497 0.0 -> 0.632 and 506 0.286 -> 0.625 (read, B); 504 0.5 -> 0.562 and 505 0.5 -> 0.545 (decoded, not read: open codes and signs, no key material).", "result": "partial"},
+  {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "statistical test"], "what": "r2k: HCPortal 507 reviewed as a reader on the b08 decode, the duplicate ff. 30-31 and scan 0028 (l. 33 spot check confirms 'i AU wartenberg'); one word re-spelt (nitt, r2b_mals_denorm.py). v2_score de explicit holes 0.662 (47/71): read (B). fraction_read 0.221 -> 0.530.", "result": "worked"},
+  {"date": "2026-10-23", "kind": "transcription", "technique": ["manual reconstruction"], "what": "r2k: HCPortal 509 German news extracts (second hand, lower f. 32 and f. 33) transcribed line by line on 2-3x crops of the HCPortal scans and set around the decoded runs; English written. v2_score: whole 0.667, German extracts alone 0.50 explicit holes: 509 kept decoded, not read; gap not-attempted replaced by no-key-material (codes, signs) and illegible (about 30 second-hand words).", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "de-1640s", "file": "validation.tsv", "tokens": 9506, "types": 119, "tokens_per_type": 79.88, "score": -2.066, "nulls": {"random keys": {"n": 200, "mean": -5.639, "sd": 0.238, "max": -5.024, "z": 15.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.692, "sd": 0.031, "max": -3.662, "z": 52.7, "p": 0.1429}}, "power": -2.423, "verdict": "pass", "notes": "claimed per-occurrence score -2.073; polyphony 0.0; 230 unread tokens left out; annealer on the real text from random keys reached -2.423"}, 
   "class": "read in part",
@@ -545,9 +547,9 @@
    }
   ],
   "first_break": true,
-  "fraction_read": 0.221,
+  "fraction_read": 0.53,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences (profile documents, duplicate HCPortal 508 excluded): 497 (712) + the alphabetic block (510) + 504 (639) + 505 (2,015) + 506 (592) = 4,468 of 10,246; 496, 502, 503, 507 and 509 are decoded, not read. Withdrawn as a reading figure: 0.959 = measure.py over reading_segmented.txt, 9,736 cipher tokens of the numerical letters, a token read when all its letters fall in dictionary words; 193 open code/sign tokens unread; alphabetic block excluded. Re-read 22 Oct 2026 (batch b08): HCPortal 496 (455 tokens) now reads; 4,923 of 10,246 = 0.480. 502, 503, 507 (508 its duplicate) and 509 stay decoded, not read. 23 Oct 2026, v3 verification: 497 (712), 504 (639), 505 (2,015), 506 (592) demoted to decoded, not read (machine segmentation only); 496 (455) + the alphabetic block (510) = 965 of 10,246 = 0.094. 23 Oct 2026 (r2b): 497 (712) and 506 (592) re-read on the scans and read; 504 and 505 stay decoded, not read: 496 (455) + alphabetic block (510) + 497 (712) + 506 (592) = 2,269 of 10,246 = 0.221.",
+  "fraction_read_source": "Reading audit 22 Oct 2026: tokens of the documents that read as sentences (profile documents, duplicate HCPortal 508 excluded): 497 (712) + the alphabetic block (510) + 504 (639) + 505 (2,015) + 506 (592) = 4,468 of 10,246; 496, 502, 503, 507 and 509 are decoded, not read. Withdrawn as a reading figure: 0.959 = measure.py over reading_segmented.txt, 9,736 cipher tokens of the numerical letters, a token read when all its letters fall in dictionary words; 193 open code/sign tokens unread; alphabetic block excluded. Re-read 22 Oct 2026 (batch b08): HCPortal 496 (455 tokens) now reads; 4,923 of 10,246 = 0.480. 502, 503, 507 (508 its duplicate) and 509 stay decoded, not read. 23 Oct 2026, v3 verification: 497 (712), 504 (639), 505 (2,015), 506 (592) demoted to decoded, not read (machine segmentation only); 496 (455) + the alphabetic block (510) = 965 of 10,246 = 0.094. 23 Oct 2026 (r2b): 497 (712) and 506 (592) re-read on the scans and read; 504 and 505 stay decoded, not read: 496 (455) + alphabetic block (510) + 497 (712) + 506 (592) = 2,269 of 10,246 = 0.221. 23 Oct 2026 (r2k): 507 (3,165) read on the German explicit-hole measure after a reader's review; 509 stays decoded, not read (German extracts 0.50): 2,269 + 3,165 = 5,434 of 10,246 = 0.530.",
   "codes_open": {
    "open": 40,
    "total": 45,
@@ -586,14 +588,19 @@
     "detail": "No contemporary attribution or matching named parallel established. Original correspondence and a possible Hoff comparison remain uninspected; physical access has not been shown necessary."
    },
    {
-    "item": "HCPortal 502, 503, 507 (with the duplicate 508): decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375, 0.437)",
+    "item": "HCPortal 502, 503: decoded, not read after the 22 Oct 2026 re-read (clean share 0.167, 0.375)",
     "blocker": "no-key-material",
-    "detail": "German sentences build around the codes, but most sentences hold two or more open three-digit codes or signs; f. 14 also has its right edge torn. Readings and translations: HCP502/503/507_reading.md, _en.md"
+    "detail": "German sentences build around the codes, but most sentences hold two or more open three-digit codes or signs; f. 14 also has its right edge torn. Readings and translations: HCP502/503_reading.md, _en.md; HCPortal 507 closed 23 Oct 2026 (r2k): read, 0.662 explicit holes"
    },
    {
-    "item": "HCPortal 509: the German news extracts (lower f. 32, f. 33) in the second hand",
-    "blocker": "not-attempted",
-    "detail": "the clear text between the cipher runs was not re-transcribed on the scan (22 Oct 2026); the French letter of \"232\" on the same leaf is read (HCP509_reading.md)"
+    "item": "HCPortal 509: the German news extracts (lower f. 32, f. 33): codes and signs 248, 129, 155, 148, 133, 126, 115, 123, 156, OO, AA, XX, square, GG, CC, KK, LL, V",
+    "blocker": "no-key-material",
+    "detail": "clear text transcribed on the scans 23 Oct 2026 (r2k, HCP507-509_reread_log.md); the extracts score 0.50 explicit-hole (the record 0.667 with the French letter); the unvalued codes and signs stand in nearly every cipher-bearing sentence and occur once or twice, not in key.txt, no named parallel"
+   },
+   {
+    "item": "HCPortal 509: about 30 words of the fast second hand in the German extracts",
+    "blocker": "illegible",
+    "detail": "unread or doubtful at 2-3x on the HCPortal scans 0032-0033 (marked [?] / [?word] in HCP509_reading.md)"
    },
    {
     "item": "HCPortal 504 (f. 18) and 505 (ff. 23-24): decoded, not read after the 23 Oct 2026 re-read (explicit holes 0.562, 0.545; readings HCP504/505_reading.md)",
@@ -738,20 +745,19 @@
    {
     "doc": "HCPortal 507",
     "label": "ff. 28-29, 28 Mar 1637 (old style)",
-    "note": "Re-read 22 Oct 2026 (batch b08; HCP507_reading.md, _en.md, HCP496-509_reread_log.md): clean share 0.437 (31/71; before 0.271): read with the writer's duplicate (HCPortal 508) as a control, the letter builds German sentences throughout (the journey by land or by sea and its four objections; the twelve-pounders without carriages; Wartenberg discharged; Uffel and Karpf; the questions for the States; the conjunction at Cloppenburg or Vechta; the Reiderland; Hohendorf and the Land of Hadeln), but about 40 open codes and signs (193, 212, 273, 200, 122, 129, 188 ...) and many place names outside the word list keep most 12-word windows unclean. Blocker: open-codes.",
-    "state": "decoded, not read",
+    "state": "read",
     "language": "de",
-    "transcription": [
-     "ct/hcp507.txt",
-     "f028.txt",
-     "f029.txt"
-    ],
-    "decryption": [
-     "reading_segmented.txt"
-    ],
+    "transcription": ["ct/hcp507.txt", "f028.txt", "f029.txt"],
+    "decryption": ["reading_segmented.txt"],
     "summary": "The journey by the Watten; twelve-pound cannon and constables; Jan de Werth between Ruhr and <268>; the States' alliance and a muster place in Cleves; the conjunction at Cloppenburg, Quakenbrück, Minden, Vechta, Wildeshausen and Diepholz. Blocks 'work/f028.txt' and 'work/f029.txt' of reading_segmented.txt.",
     "translation": "HCP507_en.md",
-    "reading": "HCP507_reading.md"
+    "reading": "HCP507_reading.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "23 Oct 2026 (r2k; HCP507-509_reread_log.md): reader's review of the b08/r2b reading on the decode of ff. 28-29, the writer's duplicate ff. 30-31 and scan 0028 (spot check of l. 33): the sentences hold (journey by land or sea and its four objections, the guns, Wartenberg, Uffel and Karpf, the questions for the States, the conjunction at Cloppenburg/Vechta, Hohendorf). One word re-spelt from the figures (nitt). v2_score de: explicit holes 0.662 (47/71), plain 0.38, hole rate 0.111; holes are unvalued codes (193, 212, 200, 122, 129 ...), signs and about a dozen partly carried words, each marked. No look-alike alternates chosen against a figure; emendations rest on the duplicate."
+    }
    },
    {
     "doc": "HCPortal 508",
@@ -772,7 +778,7 @@
    {
     "doc": "HCPortal 509",
     "label": "ff. 32-33, 3 Apr 1637 and Mar 1637",
-    "note": "Re-read 22 Oct 2026 (batch b08; HCP509_reading.md, _en.md, HCP496-509_reread_log.md): clean share 0.545 (24/44, the French paragraph scored as French, 23/30; before 0.182): the French letter of \"232\" (3 Apr 1637) transcribed from the scan and read with its cipher runs (\"par la lettre de nre ambassadeur extraordinaire qui est a Londres\", \"a Mons Sengel a Londres\", \"ledict Sengell\"); the German news extracts in the second hand (lower f. 32, f. 33) are given only as decoded runs between the clear words of the 28 Sept transcription, which do not build sentences. Blocker: not-attempted (the clear text of the second hand was not re-transcribed) and open-codes (OO, AA, XX, GG, CC, KK, LL, 115, 123, 126, 129, 133, 148, 155, 156, 248).",
+    "note": "Re-read 22 Oct 2026 (batch b08): French letter of '232' transcribed from the scan and read. 23 Oct 2026 (batch r2k; HCP507-509_reread_log.md): the German news extracts in the second hand (lower f. 32, f. 33, three pieces) transcribed line by line on 2-3x crops of scans 0032-0033 and set around the b08 decoded runs; English in HCP509_en.md. v2_score: whole body explicit holes 0.667 (52/78; before 0.659), plain 0.244; split: French letter 0.933, German extracts 0.50 (24/48, hole rate 0.163). Kept decoded, not read: the extracts carry most of the record's cipher, and nearly every cipher-bearing sentence holds an unvalued code or sign (248, 129, 155, 148, 133, 126, OO, AA, XX, GG, CC); about 30 words of the fast hand stay unread or doubtful. Blockers: no-key-material (codes, signs), illegible (second-hand words).",
     "state": "decoded, not read",
     "language": "de",
     "transcription": [

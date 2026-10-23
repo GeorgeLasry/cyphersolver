@@ -1,10 +1,10 @@
 # SP 53/11 no. 50I (f. 138): the cipher enclosure of 21 July 1581, partial reading
 
-Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b37); log in `no50I_reread_log.md`. **A partial reading, not a
+Re-read 23 Oct 2026 (Claude Opus 5.5, REREAD_BRIEF batch b37; lines 11-14 checked glyph by glyph in batch r2k, same day); log in `no50I_reread_log.md`. **A partial reading, not a
 reading:** the cipher was decoded here through a label-to-glyph concordance (`no50I_concordance.tsv`) between
 Satoshi Tomokiyo's numeric transcription (`../SP53_11_50b.txt`, 562 tokens) and his reconstructed glyph key (cryptiana,
 `mary_sp53_11_50b.png`, after Biermann and Lasry 2023), checked glyph by glyph on the f. 138 image (DECODE R3839 P3).
-Decode: `no50I_decode.txt` (`research/reading_audit/b37_wals_dec.py`). The only published plaintext is Tomokiyo's
+Decode: `no50I_decode.txt` (`research/reading_audit/r2k_wals_dec.py`, which adds the position corrections of `no50I_position_corrections.tsv`). The only published plaintext is Tomokiyo's
 opening clause; the Biermann-Lasry decipherment is unpublished.
 
 Conventions: plain = the glyph's value in the key, glyph checked on the image; `[?word]` = a word that needs a value
@@ -26,7 +26,9 @@ may have some [?profd] and asevrance of his fidelitie [46].
 
 You may sovnd and try him, and be him send me ansver.
 
-[18] Nothing [44] this beginning [?pthr] the [?n] comvn neves and svch as [?being] discovert [79] may shew of [?hoveght] [?spelial] that there be nothing aganist [58] and [95] stait [49] the realme, and faylle not to advertis me vhitner [72] the present pacqvet and to se cvm to [87] handis vel closit or not, [91] [?hardvam] and sealed, of the vhic or ne [89] [77] [82].
+[18] Nothing [44] this beginning [?pthr] the [?n] comvn neves and svch as [?being] discovert [79] may shew of [?hoveght] [?spelial] that ther be nothing aganist [?the Queen] and stait of the realme.
+
+And fayle not to advertis me vhitner the present pacqvet and [?is] cvm to your handis vel closit or not, [91] [?hardvam] and sealed of the vnicorne [89] [77] [82].
 
 ## Notes
 
@@ -37,6 +39,11 @@ You may sovnd and try him, and be him send me ansver.
 - New word-sign values from the key's sign table, glyph checked: 17 IN, 36/56/96 TO (the key's two TO glyphs), 45
   HAVE, 51 BE (*be him* = by him; *be in g* = being), 78 YOU; letters 33/80 *m* (A glyph), 37 *c* (=), 41 *f* (□), 84
   *p* (round P: *capitane*, *importance*, *pacqvet*, *kept*), 93 *q*, 50 *e* (the key's column *e*); nulls 11, 55, 76, 85.
-- Open: 07, 09, 39, 44, 46, 49, 58, 59, 72, 77, 79, 82, 86, 87, 89, 91, 92, 95, 97, 98 (several are the key's own
+- r2k (lines 11-14 on the image): 49 = OF (the OF glyph, labelled 19 elsewhere), 59 = *m* (the key's #, *realme*), 72 =
+  null (the key's null row), 87 = YOUR (the key's sign), 95 = a lone dot (not a sign: the dot before the s-hook, unlabelled
+  elsewhere), 58 = the key's "THE QUEEN?" sign, kept [?the Queen] as the key itself queries it. Position corrections:
+  12:1 is the tall null stroke, not *f*; 14:14 is *n* (oval with bar crossed by the f's descender), not *h*: *vnicorne*,
+  the unicorn seal; 13:9 is the key's unknown Γ-like sign, read [?is] by sense only.
+- Open: 07, 09, 39, 44, 46, 77, 79, 82, 86, 89, 91, 92, 97, 98 and the Γ-like sign at 13:9 (several are the key's own
   "unknown" signs: π 07, L 82, ↄ 79, ⊚ 91, ꞵ 92, ∏ 44, ♯♯ 39). Context suggests 58 = THE QUEEN (key: "≢ THE QUEEN?"),
-  87 = YOUR, 95 THE, 49 OF; not adopted.
+  87 = YOUR, 95 THE, 49 OF; not adopted (b37). Settled on the image in r2k: see above (95 is a dot, not THE).

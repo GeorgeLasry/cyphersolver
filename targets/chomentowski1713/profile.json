@@ -183,7 +183,8 @@
     {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions R7476.txt (pass-5 digit corrections marked), R7484.txt, R7485.txt; decryptions R7476_reading.txt, R7484_reading.txt, R7485_reading.txt (pass files R7476_pass2/pass5, R7484_pass2, R7485_pass2 hold the checks); syllabary.tsv not linked as key_file since the contribution is not key recovery.", "result": "worked"},
     {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): R7484_reading.txt and R7485_reading.txt read. R7484 reads with scattered holes; in R7485 the cipher passage reads in full and the holes are in the pale clear body (pp. 116-117 clear, not cipher). Audit grade C overturned to A for both; claim unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]},
     {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: R7476_reading.txt was scored with its header and notes (0.578). Reading/Notes headings added; body 0.651 explicit-hole (plain 0.143, small Polish word list). Keeps read.", "result": "worked"},
-    {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "language-model scoring"], "what": "r2b: R7476 reading restored from modernised Polish to the writer's spelling. R7476.txt parsed into per-line code/gloss/key streams (r2b_chom_stream.py); the pass-3 reading aligned letter by letter with the stream and each word re-spelt from its figures (r2b_chom_restore.py), then checked line by line by hand; 5 readings improved from the figures (ongi, swoie, ktoro on, odpowiedzielem, word code wozy); about 40 '(?)' words became [?word] and about 30 unenciphered letters were bracketed. v2_score: explicit holes 0.651 -> 0.524, below the bar: demoted to decoded, not read; English translation R7476_en.md written.", "result": "failed"}
+    {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction", "language-model scoring"], "what": "r2b: R7476 reading restored from modernised Polish to the writer's spelling. R7476.txt parsed into per-line code/gloss/key streams (r2b_chom_stream.py); the pass-3 reading aligned letter by letter with the stream and each word re-spelt from its figures (r2b_chom_restore.py), then checked line by line by hand; 5 readings improved from the figures (ongi, swoie, ktoro on, odpowiedzielem, word code wozy); about 40 '(?)' words became [?word] and about 30 unenciphered letters were bracketed. v2_score: explicit holes 0.651 -> 0.524, below the bar: demoted to decoded, not read; English translation R7476_en.md written.", "result": "failed"},
+    {"date": "2026-10-23", "kind": "verification", "technique": ["manual reconstruction"], "what": "r2k: R7484 and R7485 readings restored from modernised Polish to the writer's spelling by hand from the C/G lines of R7484.txt/R7485.txt, the syllabary and the pass-2/3 slip settlements (code values kept where the glosser normalised o to a nasal; slips bracketed; '(?)' -> [?word]); aligned word by word; English R7484_en.md, R7485_en.md written. v2_score explicit holes R7484 0.75 -> 0.739, R7485 0.889 -> 0.75: both keep read. Gap blocker open-codes renamed no-key-material (R7476 67 tokens, R7484 17 tokens); R7485 faint clear body added as illegible.", "result": "worked"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -212,8 +213,8 @@
     "gaps": [
       {
         "item": "R7476: 67 of 1,621 tokens",
-        "blocker": "open-codes",
-        "detail": "letters known from gloss or key but no word, after digit re-transcription at 3x, band alternatives and LM scoring; pass 7 Ottoman/Latin/old-spelling candidates rejected"
+        "blocker": "no-key-material",
+        "detail": "letters known from gloss or key but no word, after digit re-transcription at 3x, band alternatives and LM scoring; pass 7 Ottoman/Latin/old-spelling candidates rejected; values certain, no gloss, sibling or print gives the word (blocker renamed from open-codes 23 Oct 2026)"
       },
       {
         "item": "R7476: 8 tokens in names (p. 32 L9-10, code 216)",
@@ -231,9 +232,9 @@
         "detail": "margin number p. 31 L32, stroke p. 32 L13, gloss over 112 at 3x"
       },
       {
-        "item": "R7484: 17 of 513 tokens",
-        "blocker": "open-codes",
-        "detail": "three short passages whose syllables are certain but whose words are not recovered"
+        "item": "R7484: 17 of 513 tokens (p.111 L3-4 umowi-iu t r ze y s za; p.111 L10 ta, s fi d no; p.113 L6 c wo ko wa ni)",
+        "blocker": "no-key-material",
+        "detail": "three short passages whose syllables are certain but whose words are not recovered; values certain, no gloss, sibling or print gives the word (blocker renamed from open-codes 23 Oct 2026)"
       },
       {
         "item": "R7484: code 112",
@@ -244,6 +245,11 @@
         "item": "R7476: the reading as a whole (decoded, not read: 0.524 explicit-hole share, about 40 [?word]s on p.31 L19-34 and p.32 L9-36)",
         "blocker": "illegible",
         "detail": "the doubtful words sit under glosses unreadable at 3-3.5x on the DECODE JPEGs (passes 4-7) or glosses whose letters form no certain word; only a better image of the faint glosses could settle them"
+      },
+      {
+        "item": "R7485: the pale-ink clear body, pp. 115-117 (not cipher)",
+        "blocker": "illegible",
+        "detail": "very faint with show-through on the DECODE images; read only in part on 9 Oct 2026; the cipher passage (96 tokens) is read in full"
       }
     ],
     "credits": [
@@ -255,8 +261,8 @@
     ],
     "texts": [
       {"doc": "R7476", "label": "R7476, Constantinople, May-August 1714 (by content)", "transcription": "R7476.txt", "decryption": "R7476_reading.txt", "summary": "Probably Chomentowski to Hetman Sieniawski from Constantinople, dated May-August 1714 because code XVIII is glossed Hospodar Multański (Brâncoveanu, held in Yedikule from April 1714). New passages include \"on z tąd nie ruszy, póki mu Porta nie da takiego konwoju\", \"z listu przejętego\", \"sołtan gałga uciekł do Czerkies\" and \"donieść Jmci Panu Kanclerzowi Koronnemu\".", "language": "pl", "reading": "R7476_reading.txt", "state": "decoded, not read", "note": "23 Oct 2026 (r2b): the pass-3 reading was in modernised spelling and marked doubtful words '(?)', which the explicit-hole score did not count. Restored to the writer's spelling (clear words as transcribed, code words as glossed; r2b_chom_restore.py + hand check, R7476_reread_log.md), doubtful words marked [?word] and letters the figures do not carry bracketed: explicit-hole share 0.524 (33/63 sentence windows; plain 0.079, hole rate 0.143), below the 0.60 bar. Kept as a partial reading (R7476_reading.txt, English R7476_en.md). The residue (p.31 L19-34, p.32 L9-36) rests on glosses unreadable at 3-3.5x in passes 4-7.", "translation": "R7476_en.md"},
-      {"doc": "R7484-R7485", "label": "R7484, Adrianople, 9 May 1713", "transcription": "R7484.txt", "decryption": "R7484_reading.txt", "summary": "Chomentowski, voivode of Mazovia and Polish envoy at the Porte, to Hetman Sieniawski: the Kapudan Pasha, made vizier, began to change course; a public divan on 24 April declared war sub ignoto nomine, with fear of a march on Chocim and the envoys sent to Yedikule; on the 26th the vizier was deposed and strangled, so things are in confusion.", "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C, which concerned the faint clear body of R7485 under the shared doc key. R7484_reading.txt builds Polish sentences throughout; 18 of 513 cipher tokens are marked [...] or (?)."}, "state": "read", "language": "pl"},
-      {"doc": "R7484-R7485", "label": "R7485, undated (1713/14)", "transcription": "R7485.txt", "decryption": "R7485_reading.txt", "summary": "Chomentowski to Sieniawski; the cipher passage is also written out in clear at the head of the page: the Turks will not believe the Seraskier and the Khan, and the Seraskier wrote to the hospodar of Wallachia to persuade the envoy to go to Bender.", "reading_review": {"grade": "A", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Overturns the per-document C. The cipher passage of R7485 (\"Seraskierowi Turcy wierzyc nie chca i Hanowi ...\") reads in full; the [...] and (?) are in the writer's faint clear body, not in the cipher, and pp. 116-117 are clear text, not cipher."}, "state": "read", "language": "pl"}
+      {"doc": "R7484-R7485", "label": "R7484, Adrianople, 9 May 1713", "transcription": "R7484.txt", "decryption": "R7484_reading.txt", "summary": "Chomentowski, voivode of Mazovia and Polish envoy at the Porte, to Hetman Sieniawski: the Kapudan Pasha, made vizier, began to change course; a public divan on 24 April declared war sub ignoto nomine, with fear of a march on Chocim and the envoys sent to Yedikule; on the 26th the vizier was deposed and strangled, so things are in confusion.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "23 Oct 2026 (r2k): reading restored from modernised Polish to the writer's spelling (code values, the glosser's o->a normalisations undone as in R7476: mowio, widzoc, bedoc, dotod; clear words as transcribed), slips emended in brackets, '(?)' words now [?word], aligned word by word with R7484.txt (R7484_reread_log.md). v2_score explicit holes 0.739 (17/23; plain 0.087, hole rate 0.094); sentences hold; 18 of 513 cipher tokens unread; emended letters under 1%."}, "state": "read", "language": "pl", "reading": "R7484_reading.txt", "translation": "R7484_en.md"},
+      {"doc": "R7484-R7485", "label": "R7485, undated (1713/14)", "transcription": "R7485.txt", "decryption": "R7485_reading.txt", "summary": "Chomentowski to Sieniawski; the cipher passage is also written out in clear at the head of the page: the Turks will not believe the Seraskier and the Khan, and the Seraskier wrote to the hospodar of Wallachia to persuade the envoy to go to Bender.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "23 Oct 2026 (r2k): reading restored to the writer's spelling (code values; clear words as transcribed; slips Han[o]wi, wo[la]ia, pi[e]r[w]sza bracketed), aligned word by word with R7485.txt and the contemporary clear decipherment at the head of the page (R7484_reread_log.md). v2_score explicit holes 0.75 (6/8; plain 0.125, hole rate 0.099). Cipher passage 96/96 carried; holes only in the faint clear body."}, "state": "read", "language": "pl", "reading": "R7485_reading.txt", "translation": "R7485_en.md"}
     ]
   }
 }
