@@ -365,6 +365,25 @@ def check_slug(slug):
         item(bool(q) and not todo, f'decode_updates/queue.json queues the DECODE edits for {folder} '
              f'(python decode_updates/queue.py add {folder}, fill the TODOs; or queue.py skip {folder} "<why>")'
              + (': TODO fields left' if todo else ''))
+    # understanding over output (Tao, Nature 22 Oct 2026): a reader can follow how the cipher works, modern prior work
+    # is credited, and a person has checked a passage without AI. Warnings for now; most pages predate the rules.
+    if page:
+        heads = ' '.join(re.sub('<[^>]+>', '', h).lower() for h in re.findall(r'<h2[^>]*>(.*?)</h2>', page, re.S))
+        item(bool(re.search(r'\b(key|cipher|code|method|system|how|tried|decipherment)\b', heads)),
+             'a section that explains how the cipher works or how it was broken (the key, the cipher, method ...)', warn=True)
+    for folder in sorted(folders):
+        try: p = json.loads(read(tdir(folder) / 'profile.json') or '{}')
+        except ValueError: continue
+        out, ps = p.get('outcome') or {}, (p.get('conditions') or {}).get('prior_solution')
+        if isinstance(ps, dict) and ps.get('exists') in ('in print', 'online', 'unpublished', 'partial'):
+            roles = {c.get('role') for c in out.get('credits') or [] if isinstance(c, dict)}
+            item(bool(roles & {'prior solution', 'key or decipherment used'}),
+                 f'{folder}: the earlier reading ({ps["exists"]}: {str(ps.get("where", ""))[:60]}) is credited in outcome.credits '
+                 f'(role "prior solution" or "key or decipherment used")', warn=True)
+        if out.get('class') in ('read', 'read in part'):
+            hc = out.get('human_check')
+            item(bool(hc), f'{folder}: outcome.human_check records a person checking a passage against the image without AI'
+                 + (f' ({hc.get("result")}, {hc.get("by")})' if hc else ''), warn=True)
     # portraits and "watch it decipher" (skill steps 2 and 2a): required on every page, or a reason recorded in
     # docs/_explore_skip.json {"portrait": {slug: why}, "reveal": {slug: why}}
     try: skip = json.loads(read(HERE / '_explore_skip.json') or '{}')
