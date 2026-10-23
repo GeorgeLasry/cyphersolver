@@ -1,5 +1,12 @@
 # The unsolved ADFGVX messages of 1918 — a working decoder, and page 100 reproduced
 
+**23 Oct 2026, re-read (REREAD_BRIEF, b24)** (`texts/residue_reread_log.md`): **Childs p. 217 read** from a
+decipherment posted by "prinz" on 17 Sept 2026 (keyword TRUPPENVERSCHIEBUNG; "Ein englischer Kreuzer einlieg X
+Sewastopol X S4sten X ein Geschwader der X Alliierten folgt 26sten"), checked here as known plaintext: the 85 ADFGVX
+pairs map one to one onto the 85 letters (`research/reading_audit/b24_adfgvx_217.py`). VGADA p. 215: Norbert's edits
+reproduce his decrypt, but 20 of Baertl's 129 letters contradict the received cells, so it stays partial
+(`texts/vgada_partial_reading.md`). The nine other open messages give noise with the p. 217 key too. fraction_read 0.533.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the nine messages read in full in 2017 (pp. 100, 105, 109, 132, 146, 171, 176, 187 and its second part) read as German telegrams; the three partial readings (p. 164 twice, VGADA p. 215) and the ten open messages are *decoded, not read*. The readings table is now two entries in profile.json, and the claim is read in part: 1,945 of 3,966 letters (49%) in messages that read.
 
 Twenty-two ADFGVX radio messages from the Eastern Front sit on Klaus Schmeh's Top 50 as unsolved.
@@ -170,14 +177,15 @@ the published period keys (Lasry, Niebel, Kopal, Wacker), Lasry's CHI key and it
 
 ## Remaining gaps
 
-- ten open messages (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198, 217; 1,490 letters) - blocker: no-key-material; no published period key fits, Lasry's CHI key included; heavier mutilation or an unlisted key needs the Childs originals
-- three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) - blocker: needs-physical-access; marked transmission gaps (44, 44, 11 letters) in the printed transcription
+- nine open messages (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198; 1,320 letters) - blocker: no-key-material; no known key fits, Lasry's CHI key and the p. 217 TRUPPENVERSCHIEBUNG key included
+- three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) - blocker: needs-physical-access; marked transmission gaps (44, 44, 11 letters, a line missing from the p. 164 transcript); VGADA's 2017 text is part emendation (20 letters against the cells)
+- closed 23 Oct 2026 (b24): p. 217 (read from the Sept 2026 decipherment, verified as known plaintext)
 
 ## Escalation
 
 - [x] siblings: all 22 residue messages tested against the fourteen period keys and Lasry's CHI key (block-edit search)
 - [x] clear-pages: none; radio messages
 - [x] known-keys: the published period keys (Lasry, Niebel, Kopal, Wacker) and the CHI 13 Nov key
-- [x] print: the 2017 Cipherbrain thread consolidated (texts/residue22_decryption.md); no later edition
+- [x] print: the 2017 Cipherbrain thread consolidated (texts/residue22_decryption.md); 23 Oct 2026: the Sept 2026 p. 217 decipherment found and verified
 - [x] key-rebuild: three damaged key squares repaired; no key-free recovery possible at 84-240 letters
 - [x] retry: deeper search on p. 132 (deep.py); the ten open messages retried with every key

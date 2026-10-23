@@ -149,6 +149,33 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): texts/residue22_decryption.md read message by message. The nine full readings build German sentences; the three partial readings have \"...\" gaps in most sentences and ten messages have no reading. The entry split into a read entry and a decoded, not read entry; class already solved -> read in part; fraction_read unknown -> 0.49 (letters).",
    "result": "partial",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Re-read (REREAD_BRIEF, b24): searched for readings of the residue messages published after 2017. Found a decipherment of a 27 Nov 1918 message of about 170 letters posted by 'prinz' on 17 Sept 2026 (reported by The Neuron, 18 Sept 2026, and news sites): keyword TRUPPENVERSCHIEBUNG, plaintext 'EIN ENGLISCHER KREUZER EINLIEG X SEWASTOPOL X S4STEN X EIN GESCHWADER DER X ALLIIERTEN FOLGT 26STEN X'. Childs p. 217 has 170 letters.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["plaintext matching", "key matching"],
+   "what": "Known-plaintext check on p. 217 (b24_adfgvx_217.py): the transposition by TRUPPENVERSCHIEBUNG turns the 170 received letters into 85 pairs that map one to one onto the 85 plaintext letters (23 distinct pairs, 23 distinct letters, no conflict), and the recovered cells form a keyword-shaped square (T R U P E 4 / N . S C 2 H). Accepted; texts/p217_reading.md and _en.md. The same transposition and cells applied to the nine other open messages give noise.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "control",
+   "technique": ["plaintext matching"],
+   "what": "VGADA (Childs p. 215): Norbert's two inserted groups with the Nov 22-24 key reproduce his raw decrypt exactly; aligned letter by letter with Baertl's 2017 corrected text (b24_adfgvx_vgada.py): 97 of 129 letters carried by both cells, 11 by one, 1 by none, 20 of Baertl's letters contradict the received cells and only 5 of those are one-cell errors ('S4N' twice where he reads '24N'; p. 217 has 'S4STEN' too). Partial reading kept (texts/vgada_partial_reading.md, 0.00 clean); stays decoded, not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "solver",
+   "technique": ["simulated annealing", "language-model scoring"],
+   "what": "VGADA residual search with the three length-22 keys and two free edits (gaps.py anneal, 6 restarts) before Norbert's edits were applied: noise (-7.4 per letter); his group insertions at the marked gap and after group 43 are what make it decrypt.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -159,13 +186,13 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.49,
+  "fraction_read": 0.533,
   "grades": "unknown",
   "verification": [
    "key confirms",
    "matched control"
   ],
-  "notes": "Nothing read here that the 2017 readers had not read; the thread consolidated and the sixteenth key rebuilt. Ten messages remain open, needing the Childs originals or an unlisted key. Split into outcome.parts per period key on 14 Oct 2026 (one key per entry, parts because the messages form one filed set): 9 solved, 3 partial, 10 open. 22 Oct 2026, reading audit: the readings table split into two entries, the nine messages that read (state read) and the thirteen partial or open ones (decoded, not read); class already solved -> read in part, fraction_read 0.49 by letters.",
+  "notes": "Nothing read here that the 2017 readers had not read; the thread consolidated and the sixteenth key rebuilt. Ten messages remain open, needing the Childs originals or an unlisted key. Split into outcome.parts per period key on 14 Oct 2026 (one key per entry, parts because the messages form one filed set): 9 solved, 3 partial, 10 open. 22 Oct 2026, reading audit: the readings table split into two entries, the nine messages that read (state read) and the thirteen partial or open ones (decoded, not read); class already solved -> read in part, fraction_read 0.49 by letters. 23 Oct 2026 (b24): p. 217 read from the decipherment reported in Sept 2026 ('prinz', keyword TRUPPENVERSCHIEBUNG), verified here as known plaintext (85 pairs, one-to-one); VGADA's 2017 reading checked letter by letter (20 of Baertl's letters against the cells): stays partial.",
   "credits": [
    {
     "who": "lasry",
@@ -251,10 +278,17 @@
    },
    {
     "label": "no known key fits",
-    "records": "Childs pp. 73, 152, 153 (VFVAX), 153 (AXVAA), 158, 170, 176 (GGDAA), 189, 198, 217",
+    "records": "Childs pp. 73, 152, 153 (VFVAX), 153 (AXVAA), 158, 170, 176 (GGDAA), 189, 198",
     "method": "not solved",
     "extent": "none",
-    "basis": "0 solved, 0 partial, 10 open. None of the fifteen keys gives text with up to two block edits (best -6.7 nats per window against -4.4 to -6.0 for the solved pages); the CHI key fails on both p. 153 messages; a key-free attack fails its planted 224-letter control. Needs the Childs originals or an unlisted key."
+    "basis": "0 solved, 0 partial, 9 open (p. 217 moved to its own part, 23 Oct 2026). None of the fifteen keys gives text with up to two block edits (best -6.7 nats per window against -4.4 to -6.0 for the solved pages); the CHI key fails on both p. 153 messages; a key-free attack fails its planted 224-letter control. Needs the Childs originals or an unlisted key."
+   },
+   {
+    "label": "TRUPPENVERSCHIEBUNG key (length 19; Childs pp. 214-215, listed for use from 9 Dec 1918)",
+    "records": "Childs p. 217 (27 Nov 1918)",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "1 solved. Decipherment posted by 'prinz' on 17 Sept 2026; checked here as known plaintext (85 pairs map one to one onto the 85 letters; 23 cells of a keyword-shaped square), b24, 23 Oct 2026."
    }
   ],
   "texts": [
@@ -270,18 +304,35 @@
      "date": "2026-10-22",
      "note": "The nine full readings are German telegrams in capitals with X as stop (the 2017 Cipherbrain readers'); each builds sentences and translates, e.g. p. 171 \"In Ukraine und Polen Rubelkurse stark steigend infolge Bruches zwischen Deutschland und Sowjetregierung\". The per-document audit graded the whole table C because the other thirteen messages are in the same file; they are now a separate entry."
     },
-    "state": "read",
-    "language": "de"
+    "language": "de",
+    "state": "read"
    },
    {
     "doc": "residue22",
     "transcription": "msgs.txt",
     "decryption": "texts/residue22_decryption.md",
-    "label": "the same file: three messages read only in part (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) and ten with no reading (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198, 217)",
-    "summary": "Thirteen of the 22 residue messages: three give fragments joined by \"...\" (Temesvar, Mirco, the Entente fleet at Kertsch with New Zealand, English and French divisions); ten have no reading, because no published period key fits them and several carry marked transmission gaps.",
+    "label": "the same file: three messages read only in part (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215) and nine with no reading (pp. 73, 152, 153 VFVAX and AXVAA, 158, 170, 176 GGDAA, 189, 198); p. 217 is now its own entry",
+    "summary": "Twelve of the 22 residue messages: three give fragments (Temesvar, Mirco; the Entente fleet at Kertsch with New Zealand, English and French divisions, VGADA, partial reading in texts/vgada_partial_reading.md); nine have no reading, because no known key fits them and several carry marked transmission gaps.",
     "language": "de",
     "state": "decoded, not read",
-    "note": "Three partial readings with gaps in most sentences and ten messages with no reading at all (shown as \"-\"); not counted as a reading (reading audit, 22 Oct 2026)."
+    "note": "Re-read 23 Oct 2026 (b24): p. 217 moved to its own entry (read, from the Sept 2026 decipherment, verified). Of the twelve left, VGADA p. 215 reproduces Norbert's 2017 decrypt with the Nov 22-24 key, but 20 of Baertl's 129 letters contradict the received cells, so its reading is part emendation (texts/vgada_partial_reading.md, 0.00 clean); the two p. 164 messages lose 44 letters each in transmission; the nine others fit no known key (incl. the p. 217 key). Blockers: needs-physical-access (the gaps; Childs's book pages) and no-key-material (the nine)."
+   },
+   {
+    "doc": "p217",
+    "label": "Childs p. 217 (DXXXG GVXAX ..., 27 Nov 1918), one of the ten open messages",
+    "transcription": "msgs.txt",
+    "decryption": "texts/p217_b24_check.txt",
+    "reading": "texts/p217_reading.md",
+    "translation": "texts/p217_en.md",
+    "summary": "An English cruiser has put in at Sevastopol on the 24th; an Allied squadron follows on the 26th. Decipherment published by 'prinz' on 17 Sept 2026 (keyword TRUPPENVERSCHIEBUNG, a key Childs lists for later use), checked here against the figures: the 85 plaintext letters map one to one onto the 85 ADFGVX pairs (23 pairs, 23 letters, no conflict).",
+    "language": "de",
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-22",
+     "note": "Read 23 Oct 2026 (b24) from the decipherment reported in Sept 2026 ('prinz', The Neuron 18 Sept 2026), verified as known plaintext (b24_adfgvx_217.py): with transposition keyword TRUPPENVERSCHIEBUNG the 170 received letters give 85 pairs that map one to one onto the 85 letters (23 distinct each, no conflict), and the 23 cells fall into a keyword-shaped square (T R U P E 4 / N . S C 2 H). Every letter carried by its pair. Two telegraphic sentences; body 0.50 clean (1/2: 'einlieg', 'sewastopol' not in the word list), explicit holes 1.00. The same transposition and cells give noise on the nine other open messages."
+    }
    }
   ],
   "key_file": [
@@ -289,17 +340,17 @@
   ],
   "gaps": [
    {
-    "item": "ten open messages (pp. 73, 152, 153 x2, 158, 170, 176 GGDAA, 189, 198, 217; 1,490 letters)",
+    "item": "nine open messages (pp. 73, 152, 153 x2, 158, 170, 176 GGDAA, 189, 198; 1,320 letters)",
     "blocker": "no-key-material",
-    "detail": "no published period key fits, including Lasry's CHI key; the block-edit search allows two insertions or one deletion; heavier mutilation or an unlisted key needs the Childs originals"
+    "detail": "no known key fits: the fourteen period keys, Lasry's CHI key, and (b24) the TRUPPENVERSCHIEBUNG transposition with the 23 cells recovered from p. 217 all give noise; key-free recovery is out of reach at 84-240 letters"
    },
    {
     "item": "three partly read messages (p. 164 F-G-X, p. 164 VFGAG, VGADA p. 215)",
     "blocker": "needs-physical-access",
-    "detail": "marked transmission gaps (44, 44 and 11 letters) in the printed transcription; the lost letters need the Childs originals"
+    "detail": "transmission gaps (44, 44 and 11 marked letters; Norbert notes the transcript also lacks a whole line of p. 164); VGADA (b24): 97 of 129 letters carried by both cells, 20 of Baertl's 2017 letters contradict the received cells, so his text is part emendation; Childs's book pages would show whether the transcript dropped more"
    }
   ],
-  "fraction_read_source": "texts/residue22_decryption.md, letters per message (marked gaps excluded): the nine messages that read hold 1,945 of the 3,966 letters (0.490); the three partial (531 letters) and ten open (1,490) count as unread. The earlier \"unknown\" left the field unmeasured.",
+  "fraction_read_source": "texts/residue22_decryption.md, letters per message (marked gaps excluded): the nine messages that read hold 1,945 of the 3,966 letters (0.490); the three partial (531 letters) and ten open (1,490) count as unread. The earlier \"unknown\" left the field unmeasured. 23 Oct 2026 (b24): p. 217 (170 letters) read from the Sept 2026 decipherment, verified as known plaintext; 2,115 of 3,966 letters (0.533) in messages that read.",
   "fraction_read_method": "measured",
   "key": "partial"
  }

@@ -1,5 +1,12 @@
 # Japanese Army numeric kana cipher, 1902–04 (JACAR, NIDS holdings)
 
+**23 Oct 2026, re-read (REREAD_BRIEF, b24): C03020059400 read.** The JACAR item (23 frames, fetched as one PDF through
+the viewer's `raw/` path) has the **filed translation** of the telegram on frame 0118: 「辛碇泊場司令部ニ要スル下士以下及器具材料ハ
+門司補給廠支廠長ニ交付済。[…]ノ結了ハ支廠長ヨリ直接報告ノ筈」 (大臣宛 井上師団長). The 12 cipher pairs are the unit name
+(Anchorage Command Shin), re-read on frame 0119: pair 5 ends in a glyph unlike the 九 above it (九 or a cursive 四), pair
+7 is written 八八 where ジ needs 六八. Reading `texts/C03020059400_reading.md`, English `_en.md`; fraction_read 0.836
+(61 of 73 pairs). Helper: `research/reading_audit/reread_b24_army.py`.
+
 **22 Oct 2026, reading audit** (George Lasry's test): C09122911500 and C09123116600 read as sentences. C09122909900 is a twelve-kana noun phrase ("observation of the naval exercise"), *not prose*; C03020059400 is a twelve-kana phrase with two signs off the table whose sense (an anchorage command) is a guess: *decoded, not read*. Claim read -> read in part, 49 of 73 pairs in telegrams that read.
 
 Contributed by Harumi-Matsuba (GitHub issue #58, 20 Oct 2026; repository
@@ -60,11 +67,12 @@ Codex and Claude Sonnet blind second transcriptions, lowest agreements 97.2%, 10
   give 35 pairs (一八一八四二…, キキヨウ = 帰京, 35/35). The image shows 一八一八 at the head of column 2, and 35 pairs + 80
   = 72 digits matches the form's count of 72 characters. READING.md is right; the two data files are stale (the
   JACAR catalogue's own transcription drops the 18, per READING.md). `ct_C09122911500.txt` here has 35 pairs.
-- C09122909900 and C03020059400 were not re-read here.
+- C09122909900 was not re-read here; C03020059400 re-read 23 Oct 2026 (b24).
 
 ## Remaining gaps
 - C09122909900 pair 2 (17 for イ) - blocker: needs-physical-access; the image shows 七, writer's or transmission error; binarised JBIG2 scan cannot settle the head of column 2 either
-- C03020059400 pairs 5 and 7 (09 for ハ, 88 for ジ) - blocker: needs-physical-access; one digit off each, the 九/四 doubt needs the original
+- C03020059400 pairs 5 and 7 (0 + 九-or-四 for ハ, 八八 for ジ) and three cramped characters of the translation - blocker: illegible; re-read on the JACAR scan 23 Oct 2026, the translation carries the reading
+- closed 23 Oct 2026 (b24): C03020059400 decoded, not read (read with its filed translation, frame 0118)
 
 ## Escalation
 - [x] siblings: the contributor viewed about 420 items (1,088 frames) of the 1901-02 telegram files and 235 items of the 1904 Daijiki; C09123116600 found by a catalogue search for digit runs

@@ -1,0 +1,16 @@
+cells 129 Baertl 130
+F = carried by both cells, h = one cell (Baertl letter among six), L = both cells lost, E = cells give another letter,
+D = a cell pair Baertl has no letter for, I = a Baertl letter with no cell pair
+figs   ABSXMI?I-5XNA6M?LD?XS4NXS4?XN?R?DAKER?SC?XBRINGTENT?N?EFLHTTEZWO.IVI?I
+Baertl ABSXMIDIV5XEILMELDGX24NX24NXARMADAKERTSCHXBRINGTENTENTEFLOTTEZWODIVISI
+       FFFFFFEFIFFEEEFhFFhFEFFFEFhFEhEEFFFFFhFFhFFFFFFFFFFhFEFFFEFFFFFFLFFFhF
+
+figs   ONENX?EUSRELAEND?RXENGLXUXF?ATZ?XMITXN??OHLXKOR1S??OSCHX3Y52
+Baertl ONENXNEUSEELAENDERXENGLXUXFRANZOXMITXNUROHLXKORPSFRISCHX3Y52
+       FFFFFhFFFEFFFFFFhFFFFFFFFFFhFEFEFFFFFFEEFFFFFFFEFEEEFFFFFFFF
+
+{'F': 97, 'E': 20, 'Baertl only': 1, 'h': 11, 'L': 1}
+
+conflicts (cells letter -> Baertl letter, one-cell error?):
+half{ALMQSY}->D* N->E* A->I* 6->L S->2* S->2* N->A* R->M* half{CFHORZ}->A* half{078BDU}->T* H->O R->E T->N half{1GJKWX}->O* half{CFHORZ}->U* half{078BDU}->R* 1->P half{3459NT}->F* half{1GJKWX}->R* O->I*
+one-cell explicable: 5 of 20

@@ -3,6 +3,13 @@
 Status: in progress. f. 102r is read in part from a contributed AI-only transcription (issue #55, Harumi-Matsuba),
 checked here; f. 102v (seven cipher lines) has no confirmed reading and needs a human re-transcription; the name code
 B.58 is open.
+**23 Oct 2026, re-read (REREAD_BRIEF, b24): f. 102v stays decoded, not read.** No decipherment or copy exists (no. 42 is
+another cipher, the clear close is not one). View 165 fetched at full size (4211 x 6046, openapi IIIF) and the seven
+lines compared with the contributor's sign transcription on zoomed strips, decoded with R5258: words are carried ("a suo
+genero", "vostra ecelentia", "potesseno", "conformita", "ancora", "si aspetta", "con le risposte di"), sentences are
+not; partial reading `f102v_partial_reading.md` (0.00 clean, explicit holes 0.33). Blockers: the last signs of every
+line run into the gutter (needs-physical-access) and R.29, 8?, the open rectangle and o.19 have no value on the key sheet
+(no-key-material). Gap blockers rewritten to the five allowed terms. Helper `research/reading_audit/reread_b24_bilia.py`.
 **22 Oct 2026, reading audit:** the f. 102v entry is *decoded, not read* in profile.json (raw decoder lines with no continuous sense), as the status above says; fraction_read already counted it as unread.
 
 
@@ -77,10 +84,10 @@ values for five signs not found on the sheet transcription (ß r, £ l, F c, tt 
    f. 102v 118 signs.
 
 ## Remaining gaps
-- f. 102v, seven cipher lines (118 signs): contributor's reading unconfirmed and not given; our key gives words but no continuous sense - blocker: open-codes; workable: needs a human sign-by-sign re-transcription; line ends in the gutter of a microfilm image
-- f. 102v line ends at the gutter (about 8 signs) - blocker: illegible; the only image online is the BnF microfilm scan, where the last signs of each line curve into the binding
-- name code B.58 (f. 102r line 2, the old man Bilia dined with) - blocker: open-codes; not on the R5258 nomenclator (checked on the sheet image); one occurrence; the context (an old lord whose son-in-law wrote to him about the Duke and conte Theophimo) does not name him
-- about 28 doubtful signs on f. 102r (8 image-check splits, "Theophimo", "pervitio", "papre", "tompi", "vechilza", £ as l or et, B.3?) - blocker: open-codes; AI-only transcription, no human check; a human reading of view 164 at full size would settle most
+- f. 102v, seven cipher lines (118 signs): words but no sentences - blocker: no-key-material; checked on view 165 at full size and decoded with R5258 (23 Oct 2026, b24); R.29, 8?, the open rectangle and o.19 have no value on the key sheet, £, φ, mp only context values
+- f. 102v line ends at the gutter (one or two signs a line) - blocker: needs-physical-access; only the BnF microfilm scan is online, the last signs curve into the binding
+- name code B.58 (f. 102r line 2, the old man Bilia dined with) - blocker: no-key-material; not on the R5258 nomenclator (checked on the sheet image); one occurrence
+- about 28 doubtful signs on f. 102r (8 image-check splits, "Theophimo", "pervitio", "papre", "tompi", "vechilza", £ as l or et, B.3?) - blocker: not-attempted; AI-only transcription, a human reading of view 164 at full size would settle most
 
 ## Escalation
 - [x] siblings: no. 42 (same date, to the ambassador Taverna) opened on view 159: a different cipher, not this key; no decipherment or clear copy of no. 43 in fr. 3013 (contributor's search, and views 159-167 looked at here)
@@ -88,7 +95,7 @@ values for five signs not found on the sheet transcription (ß r, £ l, F c, tt 
 - [x] known-keys: R5258 (Bilia's key) applied; R5237 ("Cum Egr[egi]o Bilia", numeric alphabet) does not fit (contributor); R5256 is a different syllable table
 - [x] print: CSP Spain iii/2, CSP Venice iv, L&P iv, Cryptiana searched by the contributor: nothing. Not checked by them or here: Cerioni 1970 (the Sforza key edition) and Giudici 2018
 - [x] key-rebuild: five sheet-less signs given values from context by the contributor; x and θ values confirmed here on the R5258 sheet image; B.58 not on the sheet
-- [x] retry: f. 102r and f. 102v decoded again here with our key; f. 102v stays unconfirmed
+- [x] retry: f. 102r and f. 102v decoded again here with our key; 23 Oct 2026 f. 102v checked on the full-size view 165 (b24): stays decoded, not read
 
 ## Files
 

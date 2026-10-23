@@ -1,6 +1,21 @@
 # Van Reede's despatches from Berlin in the Grand Chiffre, 1787–1788 (DECODE R1026, R1027)
 
-Status: in progress. not read (reading audit, 22 Oct 2026: decoded, not read). Was: read in part (R1026, R1027 read with the Grand Chiffre R1024; open codes and transcription misreads remain).
+Status: read (re-read 23 Oct 2026, b24: R1026 and R1027 read on the figures with the Grand Chiffre R1024; DECODE's J+ is the writer's hooked 1, the key's untranscribed blocks are nulls). Was: not read (reading audit, 22 Oct 2026: decoded, not read); before that read in part.
+
+**23 Oct 2026, re-read (REREAD_BRIEF, b24).** Both despatches **read in full** (`R1026_reading.md`, `R1027_reading.md`,
+English `*_en.md`; log `R1026-R1027_reread_log.md`). No contemporary decipherment or print exists (DECODE records and
+the Van de Spiegel prints checked). The garble of 21 Sept came from `resolve_j.py`, which picked a digit per `J+` group
+with a language model: the `J+` sign is one glyph, the writer's 1 with a hooked foot, and J=1 gives a fitting key word
+at all 101 places. The key's DECODE transcription leaves out six blocks, which on the key images are **"Nonvaleurs"
+(nulls)**: 1-50, 331-370, 1201-1250, 2751-2800, 3131-3160, 3621-3660, so the "open codes" 1250, 331, 2800, 3160, 3660,
+3153, 2751, 50, 1201 are padding; 2637 is "cependant" (mis-numbered 3637); four word slips read on the key images (54
+est, 2142 paroit, 2143 paroitre, 4910 que). Eight labels corrected on the letter images. The bars above and below
+groups are inflection signs (a bar above cuts letters, below adds the ending). Body scores 0.735 (R1026) and 0.867
+(R1027) clean sentences. What R1026 says: Hertzberg motivated his own view in the report; article seven struck out as
+disagreeable to England at Finckenstein's request; the treaty made temporary, twenty years; the conference agreed to
+promise aid against a European attack without naming the overseas possessions. R1027: Ségur and Cobenzl dismayed that
+the Empress refused the triple alliance; Keller (Prussian envoy) waits on Vienna and London.
+Helpers: `research/reading_audit/b24_vr_*.py`, `reread_b24_vanreede.py`.
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R1026 and R1027 are
 decoded, not read**. The Grand Chiffre R1024 fits (the R1028 control decodes word for word), but the decodes of these
@@ -80,14 +95,14 @@ Write-up: [docs/vanreede1787.html](../../docs/vanreede1787.html).
 - 2026-10-14: split; `fraction_read` on this key's letters only: 447/471 (94.9 %).
 
 ## Remaining gaps
-- R1026 and R1027 decoded, not read (471 groups; garbled runs in most sentences; reading audit 22 Oct 2026) - blocker: not-attempted; re-transcribe the groups from the images, re-decode with R1024, write out and translate
-- R1026/R1027 groups 2637, 2800, 3660, 1250, 331, 3160, 3153, 2751, 50 and damaged groups - blocker: open-codes; not in the 1782 R1024 key; 2637/2800/3660 recur, probably names
-- R1026/R1027 garbled passages from DECODE digit misreads - blocker: not-attempted; NOTES say a fresh transcription from the images would clear them; not done
+- R1026 [?soit], [?fournit], [?énonçoit] and R1027 [?decidement]: groups and bar marks spell a slip - blocker: no-key-material; the key has no instruction for the bar marks
+- R1026 clear passage, three faint words ('je [?vois] le plus [?estimé] d'[?ici]', 'le jour [?la]') - blocker: illegible; 1240-px DECODE image
+- closed 23 Oct 2026 (b24): R1026 and R1027 decoded, not read (read in full); the open codes 2637 (= cependant, key mis-numbered) and 1250, 331, 2800, 3160, 3660, 3153, 2751, 50 (nulls, 'Nonvaleurs'); the garbled passages (J+ = hooked 1, labels corrected on the images)
 
 ## Escalation
 - [x] siblings: R1028 and R1029 opened as controls (R1028 decodes word for word); R1057 noted
-- [ ] clear-pages: not done — check the R1026/R1027 images for interlinear glosses beyond the 275J one and for a clear copy
+- [x] clear-pages: 23 Oct 2026 — images and DECODE records checked: only the 'dites' gloss over the first (null) group; no clear copy or decipherment
 - [x] known-keys: R1024 Grand Chiffre fits R1026/R1027
-- [ ] print: not done — Colenbrander Gedenkstukken and Vreede, Van de Spiegel en zijne tijdgenooten, for these despatches
-- [ ] key-rebuild: not done — bracket 2637/2800/3660 alphabetically inside the R1024 code order and by LM context
-- [ ] retry: not done — re-transcribe the digits from the images and rerun resolve_j.py
+- [x] print: 23 Oct 2026 — Brieven en negotiatien i-iii and Vreede's Van de Spiegel grepped: not printed; Colenbrander not searched (letters read on the figures)
+- [x] key-rebuild: 23 Oct 2026 — not needed: 2637 is in the key (mis-numbered 3637), 2800/3660 etc. are nulls; four key slips read on the key images
+- [x] retry: 23 Oct 2026 — digits re-read on the images (J+ = hooked 1, eight labels corrected); resolve_j.py's per-group digit choice withdrawn

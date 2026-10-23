@@ -1,9 +1,21 @@
 # Paris nunciature, bishop of Bergamo, 1585–86 (ASV Segr. Stato Francia 18; DECODE R15, R16) — NOTES
 
-Status: in progress (reading audit, 22 Oct 2026: some documents are decoded, not read; see Remaining gaps).
+Status: read (re-read 23 Oct 2026, b24: R16 read with the whole Ragazzoni nomenclator from Meister p. 324-325, the DECODE record's own attachment D3195). Was: not read (reading audit, 22 Oct 2026).
 
 **Result (withdrawn 22 Oct 2026, reading audit: decoded, not read): read** (R16 0.974 measured, 21 Sept 2026; open: name codes 18/48 and scattered transcription slips; see
 Remaining gaps). R15 read before (Lasry); R16 read here with the same F18 key. Write-up: docs/bergamo1585.html.
+
+**23 Oct 2026, re-read (REREAD_BRIEF, b24): R16 read** (`R16_reading.md`, `R16_en.md`, log `R16_reread_log.md`).
+The DECODE record carries an attachment no session had opened, **D3195 = Meister p. 324-325**, with the whole
+Ragazzoni nomenclator (names; x4+ Cardinale ... denari; stroked x4 Sua Santita, Sua Maesta ...; hooked x6 che, per,
+come ...; x8+ quanti, questi ...; struck x0 essendo, non, lettere ... mente, pace; dotted x4 Religione Cattolica,
+Catolici, Heretici, Guerra ...): `key_ragazzoni_meister_full.txt`. `decode_with_key.py` also ate the 8 of 84+, 86ꜧ,
+80- as a null. New beam decoder `research/reading_audit/b24_bg_decode.py` + 16 labels corrected on the images
+(`R16_corrections.tsv`); 29 = et (Meister). "18 and 48" were decoder misparses: 70 + 18 = the Ambassador of the Duke
+of Ferrara; "uers·48" is "uerso". The heading reads **7 March 1586** (DECODE: 3). Body 0.757 clean sentences.
+Content: Guise tells the nuncio through the Ferrarese ambassador that the King means to make peace with the heretics
+once the money from the sale under the bull is in; Guise would take the peace for Metz and money; the clergy's
+congregation inclines to appeal to a future council.
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R16 is decoded, not
 read**, so the "Result: read" above is withdrawn. The decode with Lasry's F18 key and Meister's nomenclator is one
@@ -58,18 +70,18 @@ transcription.
 
 ## Remaining gaps
 
-- R16 decoded, not read (3,216 tokens; run-on, a hole in nearly every clause; reading audit 22 Oct 2026) - blocker: not-attempted; re-read the slips on the images, normalise into Italian sentences, translate
-- R16 nomenclator codes 18 and 48 - blocker: open-codes; Meister's Ferrara/Parma values do not fit the contexts; the 1586 table may have moved them
-- R16 remaining ~16 unknown pairs - blocker: open-codes; unknowns after the one-digit resync; mostly transcription slips in TimB transcription D1610, images not re-read
+- R16 '[?futurum]' (futu + a dotted 3 and 9) and the last eleven digits of f. 206v - blocker: no-key-material; not in Meister's table, no word
+- R16 five letters on look-alike digits (si [?e], [?ocorendo], [?l'aleenatione], [?fata], [?vedo]) - blocker: illegible; the writer's 5 closes like an 8, his 7 takes a hook
+- closed 23 Oct 2026 (b24): R16 decoded, not read (read); codes 18 and 48 (decoder misparses, not open codes); the ~16 unknown pairs (labels corrected on the images)
 
 ## Escalation
 
 - [x] siblings: R15-R17 all opened; R16 decryption file found to be a copy of R15; R17 is in another key (now morosini1588)
-- [n/a] clear-pages: no clear pages or interlinear decipherments are reported on R15-R17
+- [x] clear-pages: 23 Oct 2026 - R16's attachments D984-D987 are the clear covering letter of 7 March 1586 ('con cifra duplicata'), not a decipherment
 - [x] known-keys: Lasry F18 key (D3105) and Meister p. 324 no. 2 (Ragazzoni 1583) fit R16; Meister p. 393 no. 40 (Morosini) fits R17 only
 - [x] print: Meister 1906 key tables used; no printed decipherment of R16 sought beyond Meister
-- [ ] key-rebuild: not done - fill 18/48 by alphabetical bracketing and LM context over Ragazzoni-period letters
-- [ ] retry: not done - re-read the R16 images for the slip positions, then rerun decode_with_key.py
+- [x] key-rebuild: 23 Oct 2026 - not needed: the whole nomenclator is Meister p. 324-325 (DECODE attachment D3195)
+- [x] retry: 23 Oct 2026 - slip positions re-read on the images (16 labels), beam decoder b24_bg_decode.py
 
 ## Assumptions for George's review
 
