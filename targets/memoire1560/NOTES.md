@@ -135,7 +135,7 @@ the reading that is scored.
 
 - 16 scattered words (of 1,715), each tried against the image and the key, context not decisive: 152r.16 (x),
   152r.26 (mx on), 152v.06 (Q+), 152v.26 (3xzo fxz), 153r.31 (Wzoxedn), 154v.03 (WxmJn), 154v.24 (C+ DzoSx3),
-  155r.29 (x+ S), 155v.16 (mixppxrQxppxm), 155v.17 (3xrnnQxS), 155v.22 (S) - blocker: open-codes; each is once,
+  155r.29 (x+ S), 155v.16 (mixppxrQxppxm), 155v.17 (3xrnnQxS), 155v.22 (S) - blocker: no-key-material; each is once,
   and the signs are read but the word does not resolve
 - the writer's name - blocker: no-key-material; not in the text, no signature or address
 

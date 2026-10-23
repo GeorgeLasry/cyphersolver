@@ -118,8 +118,8 @@ explicit holes and 0.712 plain. The 212 tentative name-code readings count as ho
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: rescored the 18 French sections of lasry2022/READING.md: plain 0.519, explicit 0.715, hole rate 0.088. The writer spells by ear (secretere, trete, afaire, eloignemant) and the tentatively read name codes count as holes; the rest builds sentences. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
 ## Remaining gaps
-- code 46 (fr. 4135 f. 219, once) - blocker: open-codes; "d'une [46] de l'armée navale", context does not fix it
-- 212 tentative name-sign readings - blocker: open-codes; read from context only; o- and o-- may be confused in the ff. 215v–216 hand
+- code 46 (fr. 4135 f. 219, once) - blocker: no-key-material; "d'une [46] de l'armée navale", context does not fix it
+- 212 tentative name-sign readings - blocker: no-key-material; read from context only; o- and o-- may be confused in the ff. 215v–216 hand
 - cipher runs that do not read (f. 50v "veraivre", "fevitga", "tmineli…"; f. 215b "parico"; f. 228v "duc de s / vop"; "Vbr[?]" on 54b, 57b) - blocker: illegible; reviewed against the images by the contributor, probably clerks' slips in the copies
 - Baluze 156 f. 157r (9 Feb 1636 copy, 136 signs) - blocker: too-short; not Lasry's letter table nor the Servien key; two cribs give ten values, the anneal is degenerate at 4.9 signs per type; needs a sibling in the same key (none on the Baluze 156 leaves opened 23 Oct 2026, b34: `baluze156/f157r_reread_log.md`)
 - f. 218r margin, first sign of each line - blocker: illegible; against the gutter, matches no sign of the key sheet

@@ -99,11 +99,11 @@ send an army into Portugal, French troops to replace it; the Emperor has written
 Asturias; Godoy sees no course "BUT IMPLICITLY TO SUBMIT".
 
 ## Remaining gaps
-- code group 633 ("his [?] intrigues", over a struck group) - blocker: open-codes; occurs once, no sibling value
-- code groups 632, 455, 1482 ("destitute of ?-r-i-?-?") - blocker: open-codes; each occurs once; "pride" fits but is not decoded
-- code groups 767, 679, 378 ("the vast [?] Spain by the war"; Founders "costs brought about") - blocker: open-codes; each occurs once
+- code group 633 ("his [?] intrigues", over a struck group) - blocker: no-key-material; occurs once, no sibling value
+- code groups 632, 455, 1482 ("destitute of ?-r-i-?-?") - blocker: no-key-material; each occurs once; "pride" fits but is not decoded
+- code groups 767, 679, 378 ("the vast [?] Spain by the war"; Founders "costs brought about") - blocker: no-key-material; each occurs once
 - one group ending in 4, frame 0364 right page, left edge ("affecting candor, [?] perfectly false") - blocker: illegible; digits lost in the binding
-- 916 after "the Prince of [x47]" in the postscript - blocker: open-codes; 916 is "as" elsewhere, no sense here
+- 916 after "the Prince of [x47]" in the postscript - blocker: no-key-material; 916 is "as" elsewhere, no sense here
 - position after 1114.244 ("advised him to"), frame 0367 left, at the hole in the leaf - blocker: illegible; the sense needs no word
 - first position of the last line, frame 0367 right ("submit [?] all"), under the facing leaf - blocker: illegible; probably 244 "to"
 

@@ -120,9 +120,9 @@ and key permutations vary decoded length. Further sensitivity checks are recorde
 Both reviews assess the transcriptions and corrections; the reviews themselves are not independent image inspections.
 
 ## Remaining gaps
-- 25 May code 47' - blocker: open-codes; no attested name value in the sibling letters
-- 25 May code 45' - blocker: open-codes; Essex is grade I from context only, retained as a gap
-- 2 June sign 20^ and code 88' - blocker: open-codes; ba and Bruxelles are contextual guesses, not attested values
+- 25 May code 47' - blocker: no-key-material; no attested name value in the sibling letters
+- 25 May code 45' - blocker: no-key-material; Essex is grade I from context only, retained as a gap
+- 2 June sign 20^ and code 88' - blocker: no-key-material; ba and Bruxelles are contextual guesses, not attested values
 - French lexicon provenance and licence before redistribution - blocker: no-key-material; upstream source documentation is missing
 - Oldenbarnevelt's location for an atlas route - blocker: no-key-material; only Paris is established by the source evidence
 - Independent holdout validation - blocker: no-key-material; a frozen key/transcription pair and an unused witness are needed

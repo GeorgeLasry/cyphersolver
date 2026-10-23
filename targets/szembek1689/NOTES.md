@@ -71,7 +71,7 @@ Gegenbey was killed through a false friend's treachery and his head sent as a gi
 still more active "in the East".
 
 ## Remaining gaps
-- code group 202 - blocker: open-codes; occurs once, no gloss (the contemporary decipherer left it too, and a "+" marks the line), no key table, and the clear word before it ("Damis"?) is itself unclear
+- code group 202 - blocker: no-key-material; occurs once, no gloss (the contemporary decipherer left it too, and a "+" marks the line), no key table, and the clear word before it ("Damis"?) is itself unclear
 ## Escalation
 - [x] siblings: the whole BK 1560 structure list on WBC checked (about 100 items); no other item is called cipher, and the neighbours are 1727-1731 Szembek letters in clear
 - [x] clear-pages: the glosses are the decipherment; transcribed and checked run by run

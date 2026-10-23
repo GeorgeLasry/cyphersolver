@@ -49,7 +49,7 @@ Statistical validation on these pairs: `python docs/_validate.py laigue1649` (re
 - 67 groups without a legible gloss, chiefly four short places (f. 117v l. 18, f. 118v ll. 5–8, f. 119v l. 14,
   f. 120r l. 0) - blocker: illegible; the gloss is faint, blotted or struck through (f. 119v l. 14 apparently "duc de Lorraine",
   struck)
-- ten context values in the opening (277, 314, 321, 358, 390, 398, 400, 407, 439, 442) - blocker: open-codes; they
+- ten context values in the opening (277, 314, 321, 358, 390, 398, 400, 407, 439, 442) - blocker: no-key-material; they
   never occur in the glossed text, so they rest on sense alone; none changes a sentence
 
 ## Escalation

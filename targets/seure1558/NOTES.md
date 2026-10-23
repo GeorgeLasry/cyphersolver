@@ -87,7 +87,7 @@ the word spaces and the doubled letters the cipher does not write, and writes co
 each file's header.
 
 ## Remaining gaps
-- N10_4, one occurrence in no. 39 row 10 - blocker: open-codes; unassigned word sign, contributor proposes vostre from context
+- N10_4, one occurrence in no. 39 row 10 - blocker: no-key-material; unassigned word sign, contributor proposes vostre from context
 - 27 damaged or unidentified signs, mostly no. 43 views 82-83 - blocker: illegible; left [...] by the contributor, 10 more read only from context
 
 ## Escalation

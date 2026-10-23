@@ -68,8 +68,8 @@ contributor's joined French reading is now `f50_reading.md`: plain 0.6, explicit
 endings, the name Marca). Keeps read; the human sign check on views 111-112 ("Next") is still the way to lift it.
 
 ## Remaining gaps
-- signs and code groups without a value: p (r02), the sign ending r03 (l… logis?), 22 (r04), 23 with a hooked mark (r06), Ꝺ 22 (r16), the double-barred cross before =3 (r19), =18 (v05) - blocker: open-codes; each occurs once; =18 is not in the four sister letters and their decipherments
-- 18 of 32 lines where a sign was chosen from context or letters are missing (r02-r07, r10-r13, r15, r16, r19, v05, v08, v10-v12) - blocker: open-codes; the transcription was made and checked by AI only, workable by a person reading the signs on views 111-112
+- signs and code groups without a value: p (r02), the sign ending r03 (l… logis?), 22 (r04), 23 with a hooked mark (r06), Ꝺ 22 (r16), the double-barred cross before =3 (r19), =18 (v05) - blocker: no-key-material; each occurs once; =18 is not in the four sister letters and their decipherments
+- 18 of 32 lines where a sign was chosen from context or letters are missing (r02-r07, r10-r13, r15, r16, r19, v05, v08, v10-v12) - blocker: no-key-material; the transcription was made and checked by AI only, workable by a person reading the signs on views 111-112
 
 ## Escalation
 - [x] siblings: ff. 171, 189, 200, 230 and their period decipherments (172, 190, 205-206, 232) used by the contributor for the key and the code groups; all 743 views searched, no decipherment of f. 50

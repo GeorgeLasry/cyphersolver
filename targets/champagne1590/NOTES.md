@@ -118,10 +118,10 @@ Measured on this entry's documents (14 Oct 2026): 63 of 104 figures of nos. 24/2
 
 ## Remaining gaps
 
-- Nos. 24/25/60 code numbers 12, 16, 17, 19, 39, 89, 99 and the plain numbers of no. 24 (22, 51, 84, 44) - blocker: open-codes; no key bound with these letters; the alphabetical two-digit table covers letters only
-- No. 24 two passages, first half of the no. 25 'qu'on dict' passage, the name in no. 60 ('de la V?an') - blocker: open-codes; values fall outside the anchored slots of the alphabetical table (30-39, 48, 92-99 uncertain); no gloss over them
+- Nos. 24/25/60 code numbers 12, 16, 17, 19, 39, 89, 99 and the plain numbers of no. 24 (22, 51, 84, 44) - blocker: no-key-material; no key bound with these letters; the alphabetical two-digit table covers letters only
+- No. 24 two passages, first half of the no. 25 'qu'on dict' passage, the name in no. 60 ('de la V?an') - blocker: no-key-material; values fall outside the anchored slots of the alphabetical table (30-39, 48, 92-99 uncertain); no gloss over them
 - No. 78 (f. 111r), one group of about six mixed signs - blocker: too-short; a single group, probably a name, in a different mixed code
-- Nos. 24/25/60 runs tried with key no. 57 (words57.tsv, syllables): no sense ('qui pi bo ni lo fi ...'); a different, alphabetical two-digit system; bracketed exhaustive LM search (anneal_twodigit.py) proposes 52 i, 62 n, 92 u/v, 95 y but none verifies on a second occurrence - blocker: open-codes; no key or gloss for the code numbers, single-occurrence letter values cannot be checked
+- Nos. 24/25/60 runs tried with key no. 57 (words57.tsv, syllables): no sense ('qui pi bo ni lo fi ...'); a different, alphabetical two-digit system; bracketed exhaustive LM search (anneal_twodigit.py) proposes 52 i, 62 n, 92 u/v, 95 y but none verifies on a second occurrence - blocker: no-key-material; no key or gloss for the code numbers, single-occurrence letter values cannot be checked
 
 ## Escalation
 

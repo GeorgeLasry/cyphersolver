@@ -210,9 +210,9 @@ praeter expressum mandatum nostrum aut comitis Hatzfeldii assignationem expendan
   Wilhelm, 1640/41, Zifra Piccolominea); corrected in research/top50/NOTES.md in the write-up commit.
 
 ## Remaining gaps
-- R1887 P2.02 `n+ m/ a+ 45 hu tt` (literal crisdus, after "vero inde") - blocker: open-codes; 6 tokens, every sign has a value (45 = s, as in communis) but the word does not resolve; gap1887.py finds no Latin word that fits
-- R1887 P2.14-15 `4 ib ad p xir m/ a+ 4 4) xir 4 ten h^ga != S e~` (literal ?minantiri?ti?re?at?, before "negotium") - blocker: open-codes; 16 tokens, 4) h^ga e~ are singletons and 4 is m/n/s; LM span search (work/span1887.py) and the dictionary + LM pass (work/gap1887.py) give only fragments (minatur ... relatum)
-- R1887 conjectures "ausus quos", "eventus", "partibus", "quam ea" - blocker: open-codes; singletons ltu, #, v/, 146, X, c/ have no second occurrence
+- R1887 P2.02 `n+ m/ a+ 45 hu tt` (literal crisdus, after "vero inde") - blocker: no-key-material; 6 tokens, every sign has a value (45 = s, as in communis) but the word does not resolve; gap1887.py finds no Latin word that fits
+- R1887 P2.14-15 `4 ib ad p xir m/ a+ 4 4) xir 4 ten h^ga != S e~` (literal ?minantiri?ti?re?at?, before "negotium") - blocker: no-key-material; 16 tokens, 4) h^ga e~ are singletons and 4 is m/n/s; LM span search (work/span1887.py) and the dictionary + LM pass (work/gap1887.py) give only fragments (minatur ... relatum)
+- R1887 conjectures "ausus quos", "eventus", "partibus", "quam ea" - blocker: no-key-material; singletons ltu, #, v/, 146, X, c/ have no second occurrence
 - R1887 trailing signs (V L after "ratio", V + female sign after "ea", v/ V f/ after "dedignetur") - blocker: too-short; read as terminal fillers, no context
 - R1890 one obscured sign at the end of p.1 line 1 (orato[r]) - blocker: illegible; right edge dark in the only photograph
 

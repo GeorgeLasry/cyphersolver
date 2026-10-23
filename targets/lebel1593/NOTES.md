@@ -123,10 +123,10 @@ marginally; f. 130r holds, the legible lines of f. 130v are fragments.
 ## Remaining gaps
 
 - no. 62 f. 130v: ~6 signs under the recto's ink before code 46, and one blot (= 1 sign, probably i) - blocker: illegible; bleed-through and blot, dense on both sides.
-- no. 62 f. 130v codes 223 and 247, and the 8-sign run on line 1 (a e n l/s t s o o m a) that does not segment - blocker: open-codes; no gloss, single context under bleed.
+- no. 62 f. 130v codes 223 and 247, and the 8-sign run on line 1 (a e n l/s t s o o m a) that does not segment - blocker: no-key-material; no gloss, single context under bleed.
 - no. 62 recto, 10 letter signs (4 after the clear "que" at the head, 1-2 in l. 8, a stray "11" in l. 3) - blocker: illegible.
 - no. 11, ~6 letter signs in four short spans (l. 4 a(i)lles, l. 6 second? under a smudge, l. 20 au(?), v10 entre(m)ettant) - blocker: illegible.
-- M-grade code values: no. 11 305, 130, 292, 106, 50; no. 62 275, 69, 292, 109, 137, 278, 240, 100, 253, 30, ⅅX; no. 100 22, 27, 49, 50, 104, 150, 153, 154, 161, 230, 235, 241, 258, 260, 274, 278, 302, 305, XC - blocker: open-codes; no surviving gloss (every decipherment in this key harvested), only the office nomenclator would confirm.
+- M-grade code values: no. 11 305, 130, 292, 106, 50; no. 62 275, 69, 292, 109, 137, 278, 240, 100, 253, 30, ⅅX; no. 100 22, 27, 49, 50, 104, 150, 153, 154, 161, 230, 235, 241, 258, 260, 274, 278, 302, 305, XC - blocker: no-key-material; no surviving gloss (every decipherment in this key harvested), only the office nomenclator would confirm.
 
 ## Escalation
 

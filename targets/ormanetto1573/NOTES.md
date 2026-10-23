@@ -95,9 +95,9 @@ there is no contemporary decipherment of R116.
 
 ## Remaining gaps
 
-- 32 and 2̇88 in *se ben dal canto mio l'ho [32] de la buona [2̇88] havuta* (f.303r, 9 tokens) - blocker: open-codes; one context each, not in R118, no key sheet
-- 84 and 42 in *sara [84] che S.S.ta [42] dalla parte sua facia il medesimo* (f.303r, 8 tokens) - blocker: open-codes; *bene*/*ancora* fit, but so do other words, so counted unread
-- 3̇22 in *che sia [3̇22] alterarla* and 53 before *finora* (f.304r, 9 tokens) - blocker: open-codes; 3̇22 = *Italia* elsewhere, *per* wanted here; 53 reads *fi* as letters (a dittography before *finora*?) or a code
+- 32 and 2̇88 in *se ben dal canto mio l'ho [32] de la buona [2̇88] havuta* (f.303r, 9 tokens) - blocker: no-key-material; one context each, not in R118, no key sheet
+- 84 and 42 in *sara [84] che S.S.ta [42] dalla parte sua facia il medesimo* (f.303r, 8 tokens) - blocker: no-key-material; *bene*/*ancora* fit, but so do other words, so counted unread
+- 3̇22 in *che sia [3̇22] alterarla* and 53 before *finora* (f.304r, 9 tokens) - blocker: no-key-material; 3̇22 = *Italia* elsewhere, *per* wanted here; 53 reads *fi* as letters (a dittography before *finora*?) or a code
 
 ## Escalation
 

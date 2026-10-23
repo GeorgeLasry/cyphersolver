@@ -153,7 +153,7 @@ hole; plain 0.235 (1501 spelling). Keeps read.
 
 ## Remaining gaps
 
-- five name code groups (dcl, dah, dal, dnl, boo; Name1-Name5 in Lasry's key), one occurrence each - blocker: open-codes; no other letter in this key is known, context suggests persons but does not name them
+- five name code groups (dcl, dah, dal, dnl, boo; Name1-Name5 in Lasry's key), one occurrence each - blocker: no-key-material; no other letter in this key is known, context suggests persons but does not name them
 - tentative readings rey de romanos? (dif, x2), aunque? (oN), y? (9) - blocker: too-short; one or two occurrences each
 - *en al* in l. 20 - blocker: illegible; a burn hole according to Brackx, one image only
 - the clear date line and signature of f. 122v, read only as "… de enero …" - blocker: illegible; faded clear hand, not cipher

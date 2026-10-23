@@ -146,8 +146,8 @@ decode-access). No solver code: the key was built by hand from cribs (that beare
 colour thereof; any money; preparations; companies of footmen; subject to interception).
 
 ## Remaining gaps
-- code number 42, f. 70r ("15 will never yield to send 42 hither") - blocker: open-codes; occurs once, context allows commissioners or forces
-- code sign .7. before "ships", f. 70r - blocker: open-codes; read as the Queen from context (C), not confirmed by a second occurrence
+- code number 42, f. 70r ("15 will never yield to send 42 hither") - blocker: no-key-material; occurs once, context allows commissioners or forces
+- code sign .7. before "ships", f. 70r - blocker: no-key-material; read as the Queen from context (C), not confirmed by a second occurrence
 - the Jesuit's surname on f. 71r (+∪∧∧..#7, read Bastune?) - blocker: not-attempted; no glyph-level transcription of the word yet, and no printed source searched for a Jesuit sent post to Italy in March 1588
 - one verb on f. 70r ("will not [keep them] from") - blocker: not-attempted; conjectured from context, not re-read sign by sign
 - scattered words marked … or (?) on ff. 70v, 71r, 72r and 72v - blocker: not-attempted; the reading was done word by word from crops, with no sign-by-sign transcription to retry them against the key

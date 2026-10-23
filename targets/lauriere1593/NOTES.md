@@ -287,7 +287,7 @@ that lead into it, spelling as key no. 57 gives it. v2_score: explicit holes 0.7
 ## Remaining gaps
 
 - Fr. 3985 f. 58, 6 illegible tokens: two signs in s..t (sait; a blot and a 2-shaped sign), the three middle signs of c...e (ceste, written '1 5 4'), the sign after 29-bar in B1 - blocker: illegible; Gallica's maximum (4719 px, lossless PNG regions, enhanced) does not decide them; no colour scan online, needs the manuscript
-- Fr. 3985 f. 58, 7 tokens with certain key values and no sense: 340 'taboure' in A6 (context wants a verb; 348 'voir' one digit away fits, conjecture only; Cotgrave/Nicot give tabourer = to drum, to rap), B2 '6 lam 340' (gloss 'la plu...'), B4 '28 25 202' ('te que font', before [duc de Lorraine]) - blocker: open-codes; the sheet's values are certain and the office gloss does not resolve them
+- Fr. 3985 f. 58, 7 tokens with certain key values and no sense: 340 'taboure' in A6 (context wants a verb; 348 'voir' one digit away fits, conjecture only; Cotgrave/Nicot give tabourer = to drum, to rap), B2 '6 lam 340' (gloss 'la plu...'), B4 '28 25 202' ('te que font', before [duc de Lorraine]) - blocker: no-key-material; the sheet's values are certain and the office gloss does not resolve them
 
 ## Escalation
 

@@ -129,10 +129,10 @@ All four keep read; the profile entries now point `reading` at these files. Stil
 images (OPEN.en.md section 5), as before.
 
 ## Remaining gaps
-- Transcription of all seven pages not checked by a person (AI transcription and AI adjudication only; 3 of 125 lines spot-checked here) - blocker: open-codes; workable: an eye check of the transcription against the 2400 px images, starting with the 29 lines marked △
-- Code words manua/manue, mare, grinter, totum, nez/mez, bel, mim, vost, mesme, and probable nulls (fec, sec, sanc, sane, pome, estre, toe, vib, roc, ar, puis, x) - blocker: open-codes; meanings need further instances in the margin-deciphered letters of the volume (pp. 33-501)
-- Look-alike pairs decided by context (3/ʒ = m/r, p/φ = f/m, qa/al = q/a, cross/4 = o/a, 9/q = d/l, ∂/δ = i/n), shown as capitals in the key output - blocker: open-codes; needs the eye check above
-- p. 539 l. 2-3, p. 561 l. 1-4 and 18-19, p. 562 l. 25-26, p. 565 l. 9 and 15-16, p. 526 l. 9-10 and 13-14 (syntax unclear around code words or unreadable signs) - blocker: open-codes
+- Transcription of all seven pages not checked by a person (AI transcription and AI adjudication only; 3 of 125 lines spot-checked here) - blocker: no-key-material; workable: an eye check of the transcription against the 2400 px images, starting with the 29 lines marked △
+- Code words manua/manue, mare, grinter, totum, nez/mez, bel, mim, vost, mesme, and probable nulls (fec, sec, sanc, sane, pome, estre, toe, vib, roc, ar, puis, x) - blocker: no-key-material; meanings need further instances in the margin-deciphered letters of the volume (pp. 33-501)
+- Look-alike pairs decided by context (3/ʒ = m/r, p/φ = f/m, qa/al = q/a, cross/4 = o/a, 9/q = d/l, ∂/δ = i/n), shown as capitals in the key output - blocker: no-key-material; needs the eye check above
+- p. 539 l. 2-3, p. 561 l. 1-4 and 18-19, p. 562 l. 25-26, p. 565 l. 9 and 15-16, p. 526 l. 9-10 and 13-14 (syntax unclear around code words or unreadable signs) - blocker: no-key-material
 - Line ends lost in the binding shadow on p. 562 - blocker: needs-physical-access; the Gallica scan stops at the gutter
 
 ## Escalation

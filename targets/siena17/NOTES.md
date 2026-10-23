@@ -86,8 +86,8 @@ transcription with his key: independent verification of the reading he gives.
 
 ## Remaining gaps
 
-- opening words of the second and third points and one phrase ("lco[??]stren[?]niare"), about 15% of the 282 signs - blocker: open-codes; uncertain in George Lasry's reading, workable from his CTTS transcription and the image, not retried here.
-- "el Mustetto", the Cardinal of Naples (Carafa?), the Countess, the "Otto", the place Sarteano(?) - blocker: open-codes; historical identifications open in the report.
+- opening words of the second and third points and one phrase ("lco[??]stren[?]niare"), about 15% of the 282 signs - blocker: no-key-material; uncertain in George Lasry's reading, workable from his CTTS transcription and the image, not retried here.
+- "el Mustetto", the Cardinal of Naples (Carafa?), the Countess, the "Otto", the place Sarteano(?) - blocker: no-key-material; historical identifications open in the report.
 
 ## Escalation
 

@@ -93,9 +93,9 @@ decryption on DECODE (2020) are the prior solution.
 
 ## Remaining gaps
 
-- R190-R194 code groups 10 (Italia / V.S. Ill.ma), 20/28 (S.M.tà / Italiani), 40 (cattolici / guerra), 72 (Regina / denari): each read from its gloss in place - blocker: open-codes (two senses glossed; the 0/8 shapes cannot be separated on the images)
-- R193/R194 four-digit prefixes 6371/7771/7361/7761 before "per"/"de la": no gloss word - blocker: open-codes (no decipherment of them anywhere)
-- R194 short group for "religione cattolica" and the unwritten object of "condescendere a li" - blocker: open-codes
+- R190-R194 code groups 10 (Italia / V.S. Ill.ma), 20/28 (S.M.tà / Italiani), 40 (cattolici / guerra), 72 (Regina / denari): each read from its gloss in place - blocker: no-key-material (two senses glossed; the 0/8 shapes cannot be separated on the images)
+- R193/R194 four-digit prefixes 6371/7771/7361/7761 before "per"/"de la": no gloss word - blocker: no-key-material (no decipherment of them anywhere)
+- R194 short group for "religione cattolica" and the unwritten object of "condescendere a li" - blocker: no-key-material
 - R190 f. 93r, R192 ff. 196r and 197r: three short clear-text stretches left as [...] - blocker: illegible (cramped hand at the DECODE image resolution)
 
 ## Escalation

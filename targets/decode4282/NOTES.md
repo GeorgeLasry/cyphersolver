@@ -92,9 +92,9 @@ The names behind 37, 38 and 39 have not been guessed. The repeated sign 38 occup
 
 ## Remaining gaps
 
-- Sign 37, two occurrences on text page 1 - blocker: open-codes; the source forms and both contexts were examined, but no lexical or personal value is established.
-- Sign 38, two occurrences on text page 1 - blocker: open-codes; its marriage-related contexts were examined, but a personal name or title has not been recovered.
-- Sign 39, one occurrence on text page 2 after "pro" - blocker: open-codes; its distinct source form and context were examined, but its value remains unknown.
+- Sign 37, two occurrences on text page 1 - blocker: no-key-material; the source forms and both contexts were examined, but no lexical or personal value is established.
+- Sign 38, two occurrences on text page 1 - blocker: no-key-material; its marriage-related contexts were examined, but a personal name or title has not been recovered.
+- Sign 39, one occurrence on text page 2 after "pro" - blocker: no-key-material; its distinct source form and context were examined, but its value remains unknown.
 - The five word readings listed above remain contextual restorations. Their literal forms are preserved, their sign spans are excluded from the conservative coherence floor, and they are not promoted to verified key readings.
 - Exact date, sender, recipient and the implicit personal referents remain unidentified. The broad catalogue date is retained without a historical identification inferred from the contents.
 - The partially visible facing-page area in the raw attachment is outside the defined two-view contribution, not an unreported completed decipherment.

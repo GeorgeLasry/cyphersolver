@@ -84,7 +84,7 @@ the letter Naples -> Perugia on that basis.
 
 ## Remaining gaps
 
-- the two name signs ("name?", 2 and 1 occurrences) and the "Signoria Vostra?" sign - blocker: open-codes; each occurs once or twice, the report leaves them open
+- the two name signs ("name?", 2 and 1 occurrences) and the "Signoria Vostra?" sign - blocker: no-key-material; each occurs once or twice, the report leaves them open
 - the signer ("Vescovi(?) de Fermo") and the two girls' fathers (Ludovico di messer Gianni de' Malatesti, Niccolò Filippo Brancaleoni) - blocker: no-key-material; identification, not decipherment; the report's searches found no match
 - a few words marked (?) or [?] in the reading (saviade, pigliole, pi pare, nove, deia, three [?] after "de le doe pigliole de"; six "unknown" signs of one occurrence each) - blocker: too-short; single occurrences, left open by the solver; no transcription in the repository to retry them on
 

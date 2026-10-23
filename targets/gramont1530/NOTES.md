@@ -24,8 +24,8 @@ Other letters in this key, not read here: fr. 3019 f. 20 and fr. 3040 ff. 12, 18
 Villandry, fr. 2980 nos. 21-22 (catalogue 328, open).
 
 ## Remaining gaps
-- ends of cipher lines 1-2 and the middle of lines 5-7 (about 15 % of the cipher), read at low confidence - blocker: open-codes; the stretches carry signs Lasry's table leaves unknown (the grid sign, the crown) and the ambiguous g (B/V/E); no gloss, clear copy or decipherment of the letter exists
-- two of Lasry's five unknown signs still without a value - blocker: open-codes; too rare here to fix from context
+- ends of cipher lines 1-2 and the middle of lines 5-7 (about 15 % of the cipher), read at low confidence - blocker: no-key-material; the stretches carry signs Lasry's table leaves unknown (the grid sign, the crown) and the ambiguous g (B/V/E); no gloss, clear copy or decipherment of the letter exists
+- two of Lasry's five unknown signs still without a value - blocker: no-key-material; too rare here to fix from context
 
 ## Escalation
 - [x] siblings: fr. 3019 f. 20 and fr. 3040 ff. 12, 18 are the key's sources (Tomokiyo, Lasry); fr. 2980 nos. 21-22 (catalogue 328) is in this key and still open, a source for the unknown signs

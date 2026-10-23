@@ -118,11 +118,11 @@ Open: P1 l1-8 (the opening: Imperialists, separation of England from France, con
 
 ## Remaining gaps
 
-- R8613 P1 l1 "[..1] habere cupere, ho[..2]" (c; b t7) - blocker: open-codes; single occurrences, no sibling letter has these tokens and the original (Vit. B IX f.127) is mutilated and not imaged.
+- R8613 P1 l1 "[..1] habere cupere, ho[..2]" (c; b t7) - blocker: no-key-material; single occurrences, no sibling letter has these tokens and the original (Vit. B IX f.127) is mutilated and not imaged.
 - R8613 P1 l7 "oblatis eis [..1]" and l11 "cupere [..1]" (the "." mark; Q8) - blocker: too-short; one token each, Q8 is a null elsewhere and nothing fixes a value here.
-- R8613 P1 l8 "[..3] ad venirent" (W14 K h) - blocker: open-codes; three tokens in one place, W14 probably a null, K/h have conflicting values between letters.
-- R8613 P2 l7, l13, l16 single tokens (bn, d8, b6) - blocker: open-codes; single occurrences, no second instance in R8476, R8589, R8590 or R8613.
-- R8613 P2 l19 "disseminari [..3] is(tos?)" and l22 "[..3] sed ad perpetuam" (mm19 u r; n7 c1 d4) - blocker: open-codes; single occurrences in unusual combinations, no sibling with them.
+- R8613 P1 l8 "[..3] ad venirent" (W14 K h) - blocker: no-key-material; three tokens in one place, W14 probably a null, K/h have conflicting values between letters.
+- R8613 P2 l7, l13, l16 single tokens (bn, d8, b6) - blocker: no-key-material; single occurrences, no second instance in R8476, R8589, R8590 or R8613.
+- R8613 P2 l19 "disseminari [..3] is(tos?)" and l22 "[..3] sed ad perpetuam" (mm19 u r; n7 c1 d4) - blocker: no-key-material; single occurrences in unusual combinations, no sibling with them.
 
 ## Escalation
 

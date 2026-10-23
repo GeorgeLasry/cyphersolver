@@ -137,11 +137,11 @@ R9844 crib. **Back to decoded, not read**; class read -> **read in part**, `frac
 block 1 is still not collated (not-attempted), so the target is in progress.
 
 ## Remaining gaps
-- key-A code words rip (4x), pur (3x), qed (2x), dus (2x), cop - blocker: open-codes; context only (Venetians? V. Magestad? Swiss?), every copy writes the same groups, no key-A crib exists
+- key-A code words rip (4x), pur (3x), qed (2x), dus (2x), cop - blocker: no-key-material; context only (Venetians? V. Magestad? Swiss?), every copy writes the same groups, no key-A crib exists
 - July L10-L12 'an fec que la' and 'Q?o Lo79' (~12 signs) - blocker: illegible; R9492 and R9493 disagree sign by sign
-- R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: open-codes; no duplicate of this letter, not in R9844 or any sibling
+- R9491 single key-B groups taf, tu, pud (3x, no one value fits), zib, sib (2x), tac, tad, xif, toya, and ~20 signs in l.3 and l.6-7 - blocker: no-key-material; no duplicate of this letter, not in R9844 or any sibling
 - R9494-96 decoded, not read (v8 23 Oct 2026: 0.583 clean sentences): te, per, tep, zu, tol, the day count before 'dias', and two phrases of R9496's extra paragraph - blocker: no-key-material; three copies collated, they spell the same groups
-- R9497 paf [tiempo], sud [respuesta], xuf yic [hablado], z7∞ [hara] - blocker: open-codes; bounded only by the alphabetical blocks, other words fit
+- R9497 paf [tiempo], sud [respuesta], xuf yic [hablado], z7∞ [hara] - blocker: no-key-material; bounded only by the alphabetical blocks, other words fit
 - R9498 beyond block 1 not collated - blocker: not-attempted; block 2 and f.579r of R9497 read without it
 
 ## Escalation

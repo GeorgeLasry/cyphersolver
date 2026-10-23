@@ -135,7 +135,7 @@ Contributor's own count: 496 of 522 at S, 26 at M.
 
 ## Remaining gaps
 
-- v04 pos. 9-13 and 17-19, "no la dire?t non y si i u?": code 15 occurs twice and has no value, "t non" does not read, and an extra i stands before "una" - blocker: open-codes; the word-frequency search over one digit re-segmentation, one substituted or deleted token and 15 = any letter finds "no la direct- ... y si una sera mas conveniente" at best (15 = c, one 32 read as 31, the extra i dropped), which moves two glyphs and is not accepted
+- v04 pos. 9-13 and 17-19, "no la dire?t non y si i u?": code 15 occurs twice and has no value, "t non" does not read, and an extra i stands before "una" - blocker: no-key-material; the word-frequency search over one digit re-segmentation, one substituted or deleted token and 15 = any letter finds "no la direct- ... y si una sera mas conveniente" at best (15 = c, one 32 read as 31, the extra i dropped), which moves two glyphs and is not accepted
 - v05/v06 "conuenient[e ?]ar otra tanta gente" and v06/v07 "gente de [?] que a leuantada": two to three letters lost at the trimmed edge at each - blocker: illegible; the right edge of the leaf is cut, no other copy of this instruction is known
 - the letters lost at the edge elsewhere (v01, v02, v03, v07, v08, v11, v12), restored by sense and not counted as read - blocker: illegible; same trimmed edge
 

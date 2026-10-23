@@ -156,7 +156,7 @@ holes 0.889 unchanged, hole rate 0.03. The sentences hold; keeps read on the exp
 ## Remaining gaps
 - R1006 last sentence: two place names, code "rin" and spelled "vi ve re s", read [?Tolon] and [?Vieres] (= Hyères) - blocker: illegible (the margin is unreadable there on the DECODE scan; a better image of AGR SEG inv. 2559 would settle it)
 - R1002 one misread group after "que Dios guarde" ({7}); R1003 one verb not written in cipher or margin - blocker: illegible (DECODE slip; margin runs on without it)
-- key: struck 55 and a few struck numbers ([25], [80]) not fixed in the table - blocker: open-codes (each read from context in its letter)
+- key: struck 55 and a few struck numbers ([25], [80]) not fixed in the table - blocker: no-key-material (each read from context in its letter)
 
 ## Escalation
 

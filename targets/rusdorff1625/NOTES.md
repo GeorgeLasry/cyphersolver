@@ -61,7 +61,7 @@ No earlier decipherment found:
 - Riksarkivet's Oxenstierna letter database sits behind a CAPTCHA; not searched.
 
 ## Remaining gaps
-- codes 628 and 701 (one occurrence each) - blocker: open-codes; alphabetical ranges Palatinatus-Papista and Propositio-Regnum, no second occurrence; the Kassel copybook would settle them
+- codes 628 and 701 (one occurrence each) - blocker: no-key-material; alphabetical ranges Palatinatus-Papista and Propositio-Regnum, no second occurrence; the Kassel copybook would settle them
 - first page of the 26 February letter, subscription of the 15/25 February letter, rest of the third letter - blocker: needs-physical-access; not among the DECODE photographs of E 701
 
 ## Escalation

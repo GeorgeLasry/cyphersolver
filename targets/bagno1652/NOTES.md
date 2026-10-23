@@ -36,10 +36,10 @@ The attack recovered the grouping of a continuous digit stream into single-digit
 The rejected Francia 346 key, noisy OCR, and proposed generic null-5 rule did not supply the solution. No general null-5 rule was accepted. The double-digit ligatures require image checks; they cannot be inferred solely to force fluent language.
 
 ## Remaining gaps
-- 2698 in the Sedan date — blocker: open-codes. One occurrence after venti; the day must remain twenty-[…], not a guessed precise date.
+- 2698 in the Sedan date — blocker: no-key-material. One occurrence after venti; the day must remain twenty-[…], not a guessed precise date.
 - x3 at f. 6v line 21 — blocker: illegible. Ink blot obscures the grouping.
 - f. 6r lines 19–20 and f. 7v closing fragment — blocker: illegible. The edited reading retains explicit gaps; assigned letters alone do not recover the lost wording.
-- Tentative nomenclator and Queen passage — blocker: open-codes. 35 occurrences of 27 tentative labels; names and the conditional sentence remain marked with question marks.
+- Tentative nomenclator and Queen passage — blocker: no-key-material. 35 occurrences of 27 tentative labels; names and the conditional sentence remain marked with question marks.
 
 ## Escalation
 - [x] siblings: previous repository investigation checked the exact shelfmark and neighbouring DECODE records; no matching sibling found.

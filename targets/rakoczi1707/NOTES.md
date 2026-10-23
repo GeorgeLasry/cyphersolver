@@ -141,8 +141,8 @@ as fillers.
 **23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: R902_reading.md said 'spelling is normalised'. Aligned letter by letter with the decode (measure_tr.py --text; v6_charalign.py --keep-accents --keep-uv-ij): aussÿ, arrete(z), relaché, naitre, interets, incroiable, afermie, Luben, Stetin restored; supplied accents and u/v, i/j kept. Explicit holes unchanged (0.896); keeps read.
 
 ## Remaining gaps
-- R902 p. 277 l. 13-14, the end of the first paragraph (10 groups: 224 264 174 226 37 / 324 125 104 589 4) - blocker: open-codes; the groups are clearly written and decode to letters that make no word (gi les de gu O pe avec U); possibly a name or a null run; no sibling or print to check against
-- R902 scattered single groups (~25: 85, 8, 120 x2, 297, 363, 129, 436, 860, 95, 92, 9, 194, 589, 121, 129, 264, 89, 27, closing 4/5/567/609) - blocker: open-codes; each was re-read on the image and the reading stands, but the value gives no sense in context
+- R902 p. 277 l. 13-14, the end of the first paragraph (10 groups: 224 264 174 226 37 / 324 125 104 589 4) - blocker: no-key-material; the groups are clearly written and decode to letters that make no word (gi les de gu O pe avec U); possibly a name or a null run; no sibling or print to check against
+- R902 scattered single groups (~25: 85, 8, 120 x2, 297, 363, 129, 436, 860, 95, 92, 9, 194, 589, 121, 129, 264, 89, 27, closing 4/5/567/609) - blocker: no-key-material; each was re-read on the image and the reading stands, but the value gives no sense in context
 - Grade-C corrections (12) rest on context, not on the image - blocker: needs-physical-access; image resolution (2448 px for the page); a higher-resolution scan from MNL OL would settle them
 
 ## Escalation

@@ -145,7 +145,7 @@ Pelissier was the League's (Mayenne's) agent at Philip II's court. He writes to 
 
 ## Remaining gaps
 
-- code group 310 (f. 50r, probably Savoy), 441 (f. 49v, probably France) and the confessor's name on f. 50r - blocker: open-codes; each occurs once; context only
+- code group 310 (f. 50r, probably Savoy), 441 (f. 49v, probably France) and the confessor's name on f. 50r - blocker: no-key-material; each occurs once; context only
 - 183 [?] words across the nine pages - blocker: illegible; after pass 4 every gap was re-cropped; the rest are legible signs that do not decode under the key, blots, and empty-sign gaps; recurring name groups `z 6 z`, `z 6 1`, `z 5 8` tested at every occurrence (z 6 z and 26 I are also ordinary letters elsewhere; no single value forced), listed per page in reading_<folio>.md
 - holes in the paper, f. 50r C13 - blocker: illegible; paper lost; no other copy of no. 22
 

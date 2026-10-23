@@ -66,7 +66,7 @@ is La Guiche's letter only.
 
 ## Remaining gaps
 
-- La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: open-codes; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)
+- La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: no-key-material; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)
 - La Guiche f. 60v: the two struck-through first lines - blocker: illegible; struck through by the writer; read only in part
 
 ## Escalation

@@ -119,8 +119,8 @@ polyphonic values or line-split fragments. Keeps read (profile `reading` now poi
 
 ## Remaining gaps
 
-- about 31 scattered words across the four cipher pages (listed as {?} in pass2/reading.txt) - blocker: open-codes; the signs are legible, each was retried with the extended key and at the image, and none gives a word under a value the letter uses; the sense of each sentence is not in doubt.
-- the ∇ name sign (4 uses; probably Łaski) and one name at f.235r l.16 - blocker: open-codes; no key of the volume gives them.
+- about 31 scattered words across the four cipher pages (listed as {?} in pass2/reading.txt) - blocker: no-key-material; the signs are legible, each was retried with the extended key and at the image, and none gives a word under a value the letter uses; the sense of each sentence is not in doubt.
+- the ∇ name sign (4 uses; probably Łaski) and one name at f.235r l.16 - blocker: no-key-material; no key of the volume gives them.
 - the first pass's f.234 column (P4a) - closed 22 Sept 2026: it is f.235r, read from image P6.
 
 ## Escalation

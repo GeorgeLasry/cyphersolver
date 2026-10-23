@@ -122,7 +122,7 @@ R664 and R660 group by group and decode them with `cat62/venetian_code.tsv`.
 
 ## Remaining gaps
 - R664 ff. 1-3 and R660 continuous reading - blocker: not-attempted; code rebuilt to 117 values from R658, the letters never transcribed group by group and decoded through with it
-- groups seen on R664 f. 1 but not valued (233, 312, 367, 439, 477, 534, 551, 556, 566) - blocker: open-codes; to be retried once the letters are transcribed in full
+- groups seen on R664 f. 1 but not valued (233, 312, 367, 439, 477, 534, 551, 556, 566) - blocker: no-key-material; to be retried once the letters are transcribed in full
 - sender, recipient - blocker: not-attempted; depends on the continuous reading
 - R664 decoded, not read (v3 check 23 Oct 2026: only two phrases decoded) - blocker: not-attempted; the same work as the first line above
 

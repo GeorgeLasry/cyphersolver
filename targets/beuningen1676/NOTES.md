@@ -120,8 +120,8 @@ sentences, hole rate 0.048); plain 0.0 because the Dutch word list is modern and
 entry now carries `language: nl` and `reading: june1676_reading.md` (the same text without line labels and notes) and keeps read.
 
 ## Remaining gaps
-- Twelve residual I tokens (c324, d210, e274, o211, p113, p122, s254, t218, v111, v274, w141, w204), plus g121 when gemelte is retained, and unread s439 - blocker: open-codes; context and alphabetical position do not establish these readings, and s439 lies in the sup- range
-- Unglossed siblings: inv. 249 (1676) scans 118, 218–219; inv. 250 (1677) scan 86; inv. 248 (1675) scans 190, 238–239 - blocker: open-codes; inventoried and still workable with the reconstructed key, without a complete reading claimed here
+- Twelve residual I tokens (c324, d210, e274, o211, p113, p122, s254, t218, v111, v274, w141, w204), plus g121 when gemelte is retained, and unread s439 - blocker: no-key-material; context and alphabetical position do not establish these readings, and s439 lies in the sup- range
+- Unglossed siblings: inv. 249 (1676) scans 118, 218–219; inv. 250 (1677) scan 86; inv. 248 (1675) scans 190, 238–239 - blocker: no-key-material; inventoried and still workable with the reconstructed key, without a complete reading claimed here
 
 ## Escalation
 - [x] siblings: inv. 248–250 inventoried in evidence/inv_notes.txt; thirty glossed transcription files compared; the unglossed siblings above remain workable

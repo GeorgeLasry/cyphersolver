@@ -132,7 +132,7 @@ hole rate 0.106-0.114, **marginal**: the opening, QUARTO, the Schmalz passage an
   these lines is the remaining move.
 - R9411 13 short gaps - blocker: illegible; single words at blotted signs, and the captain's name on l.19, where
   the gloss is also faint.
-- R9415 17 unread or doubtful words (listed in `r9415/count.txt`) - blocker: open-codes; scattered, mostly one sign each; zoom pass 22 Sept and decrypt check 5 Oct 2026 done
+- R9415 17 unread or doubtful words (listed in `r9415/count.txt`) - blocker: no-key-material; scattered, mostly one sign each; zoom pass 22 Sept and decrypt check 5 Oct 2026 done
 
 ## Escalation
 

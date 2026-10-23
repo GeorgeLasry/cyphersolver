@@ -38,7 +38,7 @@ not independent of it. A few table cells are queried in his own table (e.g. 463 
 shows some glosses as hand variants.
 
 ## Remaining gaps
-- groups 23, 65, 94, 133, 147, 179, 189, 229, 534, 539, 559, 565 (15 tokens) - blocker: open-codes; not in Tomokiyo's table. 94 = ce (three places), 539 = l'esper and 565 = oit are clear from the context. 179+534 (differer), 133 (aplanir), 65 and 147 (renvoyer vostre courier), 189 and 229 are plausible only; 559 occurs twice and may be a null
+- groups 23, 65, 94, 133, 147, 179, 189, 229, 534, 539, 559, 565 (15 tokens) - blocker: no-key-material; not in Tomokiyo's table. 94 = ce (three places), 539 = l'esper and 565 = oit are clear from the context. 179+534 (differer), 133 (aplanir), 65 and 147 (renvoyer vostre courier), 189 and 229 are plausible only; 559 occurs twice and may be a null
 
 ## Escalation
 - [x] siblings: no sibling record on DECODE; the Cryptiana note is the only parallel source

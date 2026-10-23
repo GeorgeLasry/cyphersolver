@@ -82,10 +82,10 @@ edition check it.
 
 ## Remaining gaps
 - ō read as the code for "Angleterre" (it occurs once), graded M. It is required by the decipherer's "d'Ang…re" and
-  by the edition. blocker: open-codes (single occurrence, no other key copy).
-- "con[de]e": the latin e after the *de* code in *Condé* is either an e/é or a null. blocker: open-codes (single occurrence).
+  by the edition. blocker: no-key-material (single occurrence, no other key copy).
+- "con[de]e": the latin e after the *de* code in *Condé* is either an e/é or a null. blocker: no-key-material (single occurrence).
 - "pouoi" at the end of line 6 lacks its r (an encipherer's omission, or the line-7 Z doing double duty).
-  blocker: open-codes (single occurrence).
+  blocker: no-key-material (single occurrence).
 
 ## Escalation
 - [x] siblings: ff. 27, 78, 119, 142 (Guise → Mercœur) use a different key (Lasry); no other letter in this cipher found in fr. 15564.

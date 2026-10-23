@@ -70,7 +70,7 @@ plain 0.692, explicit holes 0.769, hole rate 0.088. Keeps read, grade B.
 ## Remaining gaps
 
 - 32 illegible groups - blocker: illegible; damaged paper and bleed-through, transcription marks them "?"
-- nomenclator groups 866^, 466^, 766^, 324^, 300^ - blocker: open-codes; one occurrence each, no clear copy of the
+- nomenclator groups 866^, 466^, 766^, 324^, 300^ - blocker: no-key-material; one occurrence each, no clear copy of the
   f. 89r section, not filled by Lasry
 
 ## Escalation

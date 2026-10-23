@@ -194,9 +194,9 @@ contributors', the transcription and measurement this project's).
 
 ## Remaining gaps
 
-- fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%): 27 without a value in either key, 47 tentative values of Lasry's that Rosson's does not match - blocker: open-codes. Still to do: compare both keys' readings with the images of ff. 44r-46v.
-- fr. 6638 (letter 5): 105 tokens not read (89.0%), mostly Lasry's unconfirmed tentative values - blocker: open-codes; Rosson's key was built on letters 1-3 only, and this letter is not seen here (no Gallica link in Biermann's transcription).
-- fr. 2988 ff. 2 and 9-10 with the copies fr. 3019 and fr. 20506: 31 and 53 scattered open groups, over the read bar - blocker: open-codes.
+- fr. 3022 no. 20 (letter 3): 74 of 1,314 tokens not read by the bar measure (94.4%): 27 without a value in either key, 47 tentative values of Lasry's that Rosson's does not match - blocker: no-key-material. Still to do: compare both keys' readings with the images of ff. 44r-46v.
+- fr. 6638 (letter 5): 105 tokens not read (89.0%), mostly Lasry's unconfirmed tentative values - blocker: no-key-material; Rosson's key was built on letters 1-3 only, and this letter is not seen here (no Gallica link in Biermann's transcription).
+- fr. 2988 ff. 2 and 9-10 with the copies fr. 3019 and fr. 20506: 31 and 53 scattered open groups, over the read bar - blocker: no-key-material.
 - letter 4 (fr. 4050): decoded, not read (verify sweep 23 Oct 2026; the b33 reading `texts/letter4_reading.md` kept as a partial reading, 0.591 with every [?word] counted as a hole); 47 code types left as codes, 39 values resting on sense and list position only and about 70 single-context tentative values of Lasry (`texts/letter4_reread_log.md`) - blocker: no-key-material (each occurs once or twice in the five letters)
 - letter 4 (fr. 4050): Biermann's figures not checked on an image - blocker: needs-physical-access (fr. 4050 is not digitised: BnF notice ark:/12148/cc504711/cd0e497 has no Gallica link)
 

@@ -141,9 +141,9 @@ files with hyphenated syllables and group tables. Readings written out with word
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
-- rem88 l.5 1508 before [pre]-liminary - blocker: open-codes; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
-- rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: open-codes; no occurrence in any decoded frame or Ford block read
-- rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: open-codes
+- rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
+- rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; no occurrence in any decoded frame or Ford block read
+- rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: no-key-material
 
 ## Escalation
 

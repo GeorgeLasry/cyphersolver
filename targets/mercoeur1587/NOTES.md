@@ -43,9 +43,9 @@ husband that "his brother and we" seek only his own contentment. He wants his pe
 places". Guise asks Mercœur to write to "Monsieur de [8ı]" freely, "que le bien general en servira de beaucoup".
 
 ## Remaining gaps
-- three code groups not in the key (ʃʃ in run 3, ᶜʃʃ in run 7, ≈ƀ in run 22): blocker: open-codes. Each occurs once, and the context guesses (MAIS, QUELQUE, PEU DE) are graded M.
-- twelve unresolved signs in runs 3, 17, 18 and 19 (e.g. "EN P[?]", "[??] EMPESCHER", "CE[T ORAGE?]"): blocker: open-codes. All are legible, but no key value or French fits the letter count.
-- name codes in the clear text (8ı "Monsieur de …", 23, 12 N): blocker: open-codes. Each occurs once or twice and is not on Lasry's sheet.
+- three code groups not in the key (ʃʃ in run 3, ᶜʃʃ in run 7, ≈ƀ in run 22): blocker: no-key-material. Each occurs once, and the context guesses (MAIS, QUELQUE, PEU DE) are graded M.
+- twelve unresolved signs in runs 3, 17, 18 and 19 (e.g. "EN P[?]", "[??] EMPESCHER", "CE[T ORAGE?]"): blocker: no-key-material. All are legible, but no key value or French fits the letter count.
+- name codes in the clear text (8ı "Monsieur de …", 23, 12 N): blocker: no-key-material. Each occurs once or twice and is not on Lasry's sheet.
 
 ## Escalation
 - [x] siblings: R4155 (f. 27), R4157, R4162, R4165 and R4167 opened; f. 27 overlay used to calibrate sign shapes. ff. 119 and 142 not on DECODE in this group.

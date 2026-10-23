@@ -61,10 +61,10 @@ left unglossed are [?]. Both keep read.
 
 ## Remaining gaps
 
-- B f. 201v: group 419 after "à" (463 written above it) - blocker: open-codes; no gloss and no key; the sense
+- B f. 201v: group 419 after "à" (463 written above it) - blocker: no-key-material; no gloss and no key; the sense
   ("rendu justice à Madame la Princesse") is complete without it
 - C f. 288r-v: 709.276 before "juger", 78? before "trouve", 626 after "choque", 728.36? after "on" (6 tokens) -
-  blocker: open-codes; unglossed by the interliner, code B has no key; each sits in a sentence that reads
+  blocker: no-key-material; unglossed by the interliner, code B has no key; each sits in a sentence that reads
 - B/C/D: several groups at the right margin run into the binding (70?, 5?, 50?, 9?, 112?, 36?, 124?, 6?, 74?) -
   blocker: needs-physical-access; the glosses over them are legible, so the reading does not depend on them
 

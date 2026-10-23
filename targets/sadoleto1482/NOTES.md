@@ -147,7 +147,7 @@ non lassasse pretermittere questa opportunità laquale mai più fo, né forse se
 ## Remaining gaps
 - R1106 decoded, not read (23 Oct 2026: slips 26a/26b transcribed, partial reading R1106_reading.md; the 26a part holds, the 26b part keeps holes in most sentences) - blocker: illegible; the right halves of 26b and of p. 3 are faded on the only photographs
 - R1103 decoded, not read (one word from the faded block; re-cropped 23 Oct 2026, nothing more accepted) - blocker: illegible; see the R1103 line below
-- R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: open-codes; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
+- R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: no-key-material; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
 - R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed
 - R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished
 - R1106, internal completeness against 26a/26b - blocker: illegible; 26a collated in full (R1106_reading.md), 26b's right half faded

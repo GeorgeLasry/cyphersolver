@@ -260,7 +260,7 @@ Page 1's entry pointed at the unspaced `decrypt_p1.txt`, which the v4 sweep coul
 v2_score: explicit holes 1.00 (4/4), no holes; plain 0.25 (1795 spelling). Keeps read, grade B.
 
 ## Remaining gaps
-- signs that occur twice (plain Δ: p3 l11 and p4 l1; %: p3 l10 and p4 l4; crossed diamond, value voor at I only) - blocker: open-codes; no value fits both occurrences, retried 2 and 3 Oct 2026
+- signs that occur twice (plain Δ: p3 l11 and p4 l1; %: p3 l10 and p4 l4; crossed diamond, value voor at I only) - blocker: no-key-material; no value fits both occurrences, retried 2 and 3 Oct 2026
 - nineteen signs that occur once (T-bar, S-stroke, square bracket, H with P, dagger, V-with-cross, C-hook, crossed o, vertical bracket, x mark, Δ with tail, H with loop, ψ, P.S. S / crossed ø / ⊖, and X, &, + whose context-only values weinig / Engeland / mogelyk are counted unread) - blocker: no-key-material; a single context cannot fix a word sign, none occurs in R1892, no key sheet, not in print
 - two tokens under ink blots (p3 l12 crossed circle, P.S. sign after "landig") - blocker: illegible; the photocopy is blotted at both places
 - P.S. "Dankaert" unidentified - blocker: no-key-material; the name is spelled out in the square, only its identity is unknown

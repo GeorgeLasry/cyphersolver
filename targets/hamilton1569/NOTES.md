@@ -56,7 +56,7 @@ The decipherer copied these through as signs. Readings are from context and Bain
   null. Not resolved.
 
 ## Remaining gaps
-- code signs Mn, ʗ, X, n, k, m, Ƒ, Ɡ, ¥ - blocker: open-codes; the contemporary decipherer also left them as signs, each is short, and the context only narrows some (France/Spain, Elizabeth)
+- code signs Mn, ʗ, X, n, k, m, Ƒ, Ɡ, ¥ - blocker: no-key-material; the contemporary decipherer also left them as signs, each is short, and the context only narrows some (France/Spain, Elizabeth)
 
 ## Escalation
 - [x] siblings: Add MS 33531 R8348 (Throckmorton 1569) uses a different cipher; Tomokiyo's Cotton Caligula B IX f. 315b letter uses this one (Labanoff ii p. 175), not on DECODE

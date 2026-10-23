@@ -88,7 +88,7 @@ given a value; with the M-graded 'flame' and code counted as unread, 99.8%.
 ## Remaining gaps
 
 - l. 19 sign 4 of "fla?e" - blocker: no-key-material; sign absent from Lasry's table, "flame" from context only (M).
-- l. 30 the code cluster (Lasry's Unknown 2) before "et ses successeurs" - blocker: open-codes; the Emperor from context (M).
+- l. 30 the code cluster (Lasry's Unknown 2) before "et ses successeurs" - blocker: no-key-material; the Emperor from context (M).
 - The rest of the articles after f. 41v - blocker: needs-physical-access; fr. 3081 unseen beyond ff. 41-42, the text breaks off, f. 42 blank.
 - ~~f. 41r: Lasry's reading, on overlay images only~~ closed 23 Oct 2026: transcribed and checked (texts/f41r_reading.md).
 - f. 41r l. 1 [?par]: the figures give the Rc look-alike (D) - blocker: illegible (one letter; the copy's own slip).

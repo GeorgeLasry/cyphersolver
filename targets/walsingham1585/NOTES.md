@@ -116,7 +116,7 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 ## Remaining gaps
 - R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
 - R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out
-- name codes 13, 14, 23, 30, 32, 37 - blocker: open-codes; not glossed in CSP or Wotton drafts; context too thin
+- name codes 13, 14, 23, 30, 32, 37 - blocker: no-key-material; not glossed in CSP or Wotton drafts; context too thin
 - clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); merged for R4844 into `reading_R4844_r2.txt` on 22 Oct 2026 (R4840's nine corrections still to merge into reading_R4840.txt)
 
 ## Escalation

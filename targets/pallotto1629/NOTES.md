@@ -379,13 +379,13 @@ update at the top. Open here: the ~1,750 three-digit groups of 6960 missing from
 
 ## Remaining gaps
 
-- R291 (11 Aug, Nr. 157), read in part - blocker: open-codes; groups 750, 405, 796, 573, 557, 690, 697, 762, 279, 440, 966, 239, 469 and some garbled letter stretches; Kiewning has a regest only; the sheet breaks off at p. 4
+- R291 (11 Aug, Nr. 157), read in part - blocker: no-key-material; groups 750, 405, 796, 573, 557, 690, 697, 762, 279, 440, 966, 239, 469 and some garbled letter stretches; Kiewning has a regest only; the sheet breaks off at p. 4
 - R300 (25 Aug, Nr. 165), read in part - blocker: illegible; p. 2 (never transcribed by DECODE) has 3/5/9, 2/7, 6/8 not separable on the scan; p. 1 has single-group holes
-- R301 (25 Aug, Nr. 166), read in part - blocker: open-codes; single groups and unresolved stretches; right edge of p. 2 cut on the scan; continuation (register p. 78) not among the DECODE images (needs-physical-access)
-- R302 (28 Aug, Nr. 167), read in part - blocker: open-codes; the Conti/Duca di Poli paragraph has many unidentified groups and one line of regest
-- R304 (28 Aug, Nr. 168), read in part - blocker: open-codes; first paragraph's middle and the "requisito consensu" formula; not every break checked on the scan yet (workable)
-- R313 (29 Sept, Nr. 185), read in part - blocker: open-codes; groups 964, 209, 644, 665, 932, 552, 936; the struck clear paragraph on p. 2 read only at its frame
-- Read sheets keep scattered open groups (listed in each texts/R*_reread_log.md) - blocker: open-codes
+- R301 (25 Aug, Nr. 166), read in part - blocker: no-key-material; single groups and unresolved stretches; right edge of p. 2 cut on the scan; continuation (register p. 78) not among the DECODE images (needs-physical-access)
+- R302 (28 Aug, Nr. 167), read in part - blocker: no-key-material; the Conti/Duca di Poli paragraph has many unidentified groups and one line of regest
+- R304 (28 Aug, Nr. 168), read in part - blocker: no-key-material; first paragraph's middle and the "requisito consensu" formula; not every break checked on the scan yet (workable)
+- R313 (29 Sept, Nr. 185), read in part - blocker: no-key-material; groups 964, 209, 644, 665, 932, 552, 936; the struck clear paragraph on p. 2 read only at its frame
+- Read sheets keep scattered open groups (listed in each texts/R*_reread_log.md) - blocker: no-key-material
 - R286-R290, R292-R299, R303, R305-R312: closed 22 Oct 2026 (read, texts/R*_reading.md); R286 English translation written
 
 ## Escalation

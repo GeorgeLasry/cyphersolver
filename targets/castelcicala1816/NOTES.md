@@ -187,7 +187,7 @@ blocker is the code itself (about half the groups have no value, no codebook onl
 - R9585 (28 Oct 1819 or 1817), decoded, not read - blocker: no-key-material
 - R9587 (23 Oct 1816), decoded, not read - blocker: no-key-material
 - R9571, R9589: read from the glosses; English translation not yet written - blocker: not-attempted
-- main-code groups without a value (55% of target groups) - blocker: open-codes; two-part code of ~2,450 groups; 162 values from four interlinear cribs; solve.py LM scoring did not discriminate
+- main-code groups without a value (55% of target groups) - blocker: no-key-material; two-part code of ~2,450 groups; 162 values from four interlinear cribs; solve.py LM scoring did not discriminate
 - the 1816-19 Cifra della Segreteria di Stato codebook - blocker: needs-physical-access; not on DECODE (R9532-R9541 are 1859-60 keys); ASNa Esteri
 
 ## Escalation

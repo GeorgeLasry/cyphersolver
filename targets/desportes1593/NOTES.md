@@ -186,8 +186,8 @@ prince) and their refusal. Mayenne was willing to accept Guise as king. To Frach
 jours"; an envoy's journey "a fait changer de religion au [roy de Navarre]"; the Legate held back "nos brefz".
 
 ## Remaining gaps
-- f. 189 l. 26, sign after "Le voiage de" (one occurrence, not in the sister letters) - blocker: open-codes; a name sign with no other occurrence in the family
-- f. 189 l. 32 and f. 186 r30, two single person/title signs read by context ("Sa Sainteté(?)", "pape(?)") - blocker: open-codes; single occurrences
+- f. 189 l. 26, sign after "Le voiage de" (one occurrence, not in the sister letters) - blocker: no-key-material; a name sign with no other occurrence in the family
+- f. 189 l. 32 and f. 186 r30, two single person/title signs read by context ("Sa Sainteté(?)", "pape(?)") - blocker: no-key-material; single occurrences
 - f. 186v ll. 1-3, three short groups (c. 9 signs) at the gutter - blocker: illegible; the binding hides one or two glyphs of each line on the microfilm
 - cover names of f. 189 ("nostre oncle", "l'homme de la chesne", "l'homme du colege", "docteur Gratian") - blocker: no-key-material; read as words, their referents are not given in any key or sister letter
 
