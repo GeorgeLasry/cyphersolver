@@ -56,12 +56,19 @@ CODE = {  # code groups -> words / syllables
     # from N.60 (1 Sep 1512)
     'mar': 'mil', 'das': 'ducado', 'gib': 'franceses', 'maq': 'otro', 'pio': 'rey', 'fer': 'dio',
     'sok': 'fiar', 'sum': 'tierra', 'hiz': 'mar', 'gih': 'dexar', 'fex': 'fe', 'mac': 'mil',
+    # b16 re-reading (22 Oct 2026): each value holds at every occurrence in N.45/N.57/N.60 and the siblings
+    # (KWIC in key.md, 'b16 additions'); no sibling decipherment carries them, so they rest on sense across occurrences
+    'goe': 'aca', 'gix': 'capitan', 'goi': 'aquel', 'sid': 'son', 'hoe': 'governar', 'fet': 'fue', 'Vs': 'ss',
+    # b16, proposed by the N.45/N.60 re-reads and checked at every occurrence (key.md); gid is carried by 8714 N.39
+    'gid': 'amor', 'sas': 'ver', 'ree': 'poder', 'sue': 'saber', 'men': 'menester',
 }
+MARK = {'gz', 'ang'}  # b16: clause marks, no letter value (gz 40x, ang 29x, at clause boundaries); printed as nothing
 
 def decode(tokens):
     out = []
     for t in tokens:
-        if t in CODE: out.append(' ' + CODE[t] + ' ')
+        if t in MARK: out.append(' ')
+        elif t in CODE: out.append(' ' + CODE[t] + ' ')
         elif t in LET: out.append(LET[t])
         else: out.append(' [' + t + '] ')
     return re.sub(r' +', ' ', ''.join(out)).strip()

@@ -14,7 +14,9 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
 
 ## Per document, in this order
 
-1. **Is there a text of it already?** A contemporary decipherment (interlinear, margin, slip, a clear copy or minute
+1. **Is there a text of it already?** Open every image and attachment already on the DECODE record first: acciaiuoli1757's
+   decipherments were png attachments listed as "work images" and never opened, nuncio1566's R87 decipherment was its
+   "cleartext" image, ronquillo1676's margins were in DECODE comment blocks. A contemporary decipherment (interlinear, margin, slip, a clear copy or minute
    bound nearby — look at the neighbouring folios/records, not only the one listed), a printed edition or calendar, or
    another scholar's decipherment (DECODE record, Lasry, Tomokiyo's cryptiana, an article). If yes: transcribe it (or the
    part not yet in the repository), align it with our decode, and the reading follows it, with the figures checked where
@@ -36,6 +38,10 @@ Worktree: `C:\Users\dbour\cypher\.worktrees\reading-gate`. Worked examples, read
 4. **The bar, applied the same way to every document:** a document is `read` when a reader finds its sentences
    coherent **and** its reading body (header and notes cut off) scores about 0.60 clean sentences or more on
    `_check_reading.py`; below that it stays `decoded, not read`, with your reading kept as a partial reading and a note.
+   **Never modernise spelling in the reading to pass the score** (modern spelling goes only in the English file).
+   When the word list cannot know the period spelling (English before 1700, early Spanish, Dutch, German), score the
+   reading body counting explicit holes only (`research/reading_audit/b17_score.py` with `HOLES=1`) and record both
+   figures; the bar is then about 0.60 on the explicit-hole share plus a reader's judgement that the sentences hold.
    (Kept unread at 0.47-0.56 so far: matignon1586 f. 124r, fiesque1567 10 Sep 1569, smith1562 no. 15, nunzio1736
    423/9, 423/11.)
 5. **Stop** when the sentences hold (most sentences with at most one hole in ten words; `python docs/_check_reading.py
