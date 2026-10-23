@@ -1,6 +1,13 @@
 # Edward Lee (and Ghinucci) to Wolsey from Spain, 1526-1529 (BL Cotton MS Vespasian C III-C IV; DECODE R8458-R8587, 17 records)
 
-Status: in progress. Read at the time; R8533's own reading is a worksheet, decoded, not read (reading audit, 22 Oct 2026).
+Status: in progress. Read at the time; R8533 re-read as a running text 23 Oct 2026 (read, grade B; reading audit of 22 Oct had it decoded, not read).
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b29)**: **R8533 read** (grade B). DECODE R8533 fetched (four images; the one
+attachment, DOC_8533, is Tomokiyo's key table); all three written pages re-read line by line at full resolution, the
+clear text transcribed as running text for the first time and the cipher runs re-checked sign by sign (12 worksheet
+corrections, `R8533_corrections.tsv`). Running reading `R8533_reading.md` (0.158 clean sentences with the modern word
+list, 0.895 counting explicit holes; 1527 spelling), English `R8533_en.md`, log `R8533_reread_log.md`. fraction_read
+0.445 -> 1.0 (all four documents read). Open: name codes and underlined clusters (no key material), a few clear words.
 
 **22 Oct 2026, reading audit** (George Lasry's test): R8566, R8465 and R8473 read. r8533_reading.txt is a sign-level worksheet with holes in several sentences, and f. 109r was not re-read in pass 2: R8533 is *decoded, not read*. fraction_read 1 -> 0.445 (tokens in documents that read); class already solved kept (every run was deciphered at the time, L&P IV).
 
@@ -269,7 +276,7 @@ recipient is not identified here. Closed as no cipher and removed from the catal
 
 ## Remaining gaps
 
-- R8533: decoded, not read (f. 109r, f. 109v ll. 1-4 and 17-22, name codes) - blocker: not-attempted; re-read f. 109r and f. 110r at full resolution on the DECODE images and write a running text
+- R8533: read 23 Oct 2026 (b29, R8533_reading.md); about 40 name/code signs and underlined clusters left as [..] - blocker: no-key-material (Tuke's decipherment of the 8 April original is at TNA, not online); a few clear words, blots and struck signs - blocker: illegible
 
 ## Escalation
 
@@ -278,4 +285,4 @@ recipient is not identified here. Closed as no cipher and removed from the catal
 - [x] known-keys: Tomokiyo's Lee-Worcester key (on R8566)
 - [x] print: L&P IV calendars Tuke's decipherments
 - [n/a] key-rebuild: the key is known
-- [ ] retry: R8533 f. 109r and f. 110r not re-read at full resolution
+- [x] retry: 23 Oct 2026 (b29): R8533 ff. 109r, 109v, 110r re-read at full resolution, running text written (R8533_reread_log.md)

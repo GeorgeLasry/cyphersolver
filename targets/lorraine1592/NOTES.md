@@ -2,6 +2,14 @@
 
 Lasry review (25 Sept 2026): Tomokiyo had already solved it (2025, see 4a). Independent re-solution, not a first break; left out of the ciphertext-only list for Klaus Schmeh (outcome.first_break = false).
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b29)**: still **decoded, not read**. The 5 Oct graded re-read had never been
+rendered as running text; it is now `ct/no97_partial_reading.md` (with the clear lines; English `ct/no97_en.md`), with the
+standalone crossed t adopted as a null (8 of 8 between complete words). Score 0.069 (the 22 Sept text the audit judged)
+-> 0.154 clean sentences; one sign in five still open. DECODE R9449 (one image, no attachment) and R9444 re-opened;
+Tomokiyo's page unchanged (opening only); no key in this pair system found on DECODE (record list and ciphertext
+metadata searched; BnF keys 1580-1600 listed, fr. 3623 no. 23 = R9453 viewed: Bienvenut-Nevers 1590). Log
+`ct/no97_reread_log.md`.
+
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 no. 97 is **decoded, not read**: the running text (`ct/no97_reading2.md` §2) has a `[?]` gap in almost every line,
 about one sign in four unread; fragments parse, sentences do not. Class read in part -> not read, method -> not
@@ -289,17 +297,18 @@ same system (none in fr. 3621).
 
 ## Remaining gaps
 
-- no. 97 as a whole, decoded, not read - blocker: open-codes; special signs, ten figures and three garbled runs fall in most lines (below); building sentences needs their values
-- Special signs ŧ (crossed t, 12 tokens, incl. the *ŧien* words), ⊙ (where not s), α, ꝗ, E, figure-4, π-less Z, V (about 60 tokens with the words they sit in) - blocker: open-codes; no key survives; each occurs 1-12 times and no single value fits all its occurrences (§10). λ, γ, U, π, m̄ settled as nulls 5 Oct.
-- Figures 57, 98, 122, 123, 13, 137, 88, 146, 121, 103 (14 tokens) - blocker: open-codes; one letter, no key, no sibling in the same cipher; 98 = *ville* fits but so do other nouns.
-- Garbled runs L12 (*passer … les*), L13 (*des … dira*), L20 (*[?surte]*, *z i q a s c t t*) (about 35 tokens) - blocker: open-codes; re-read at full IIIF resolution 5 Oct, glyphs legible, the sequence does not decode under the pair key, so it hides special values or a second system; L18's run was resolved (*l'effect du dict*).
-- Weak fragments *quelq*, *auld*+*is*, *promes* (15 tokens, downgraded C -> M on 5 Oct because they fail the lexicon check) - blocker: open-codes; the key decode is not a whole word, so an abbreviation or special value is hidden in each.
+- no. 97 as a whole, decoded, not read - blocker: no-key-material; special signs, ten figures and three garbled runs fall in most lines (below); building sentences needs their values
+- Special signs ŧ (crossed t, 12 tokens, incl. the *ŧien* words), ⊙ (where not s), α, ꝗ, E, figure-4, π-less Z, V (about 60 tokens with the words they sit in) - blocker: no-key-material; no key survives; each occurs 1-12 times and no single value fits all its occurrences (§10). λ, γ, U, π, m̄ settled as nulls 5 Oct.
+- Figures 57, 98, 122, 123, 13, 137, 88, 146, 121, 103 (14 tokens) - blocker: no-key-material; one letter, no key, no sibling in the same cipher; 98 = *ville* fits but so do other nouns.
+- Garbled runs L12 (*passer … les*), L13 (*des … dira*), L20 (*[?surte]*, *z i q a s c t t*) (about 35 tokens) - blocker: no-key-material; re-read at full IIIF resolution 5 Oct, glyphs legible, the sequence does not decode under the pair key, so it hides special values or a second system; L18's run was resolved (*l'effect du dict*).
+- Weak fragments *quelq*, *auld*+*is*, *promes* (15 tokens, downgraded C -> M on 5 Oct because they fail the lexicon check) - blocker: no-key-material; the key decode is not a whole word, so an abbreviation or special value is hidden in each.
+- A key or duplicate in the Lorraine ducal archive (Archives départementales de Meurthe-et-Moselle) - blocker: needs-physical-access; not consulted
 
 ## Escalation
 
 - [x] siblings: fr. 3621 notice read for other Lorraine/Vaudémont cipher pieces — none; no. 22 is plaintext only (§1).
 - [x] clear-pages: the clear text of no. 97 and the postscript transcribed (`ct/clear_texts.md`) and used as context; no decipherment on the page.
-- [x] known-keys: fr. 3995 ff. 32, 83-84, 98, 103 eliminated (§4); Tomokiyo's Lorraine keys (Bréval c. 1620, Bassompierre 1593) are other systems.
+- [x] known-keys: fr. 3995 ff. 32, 83-84, 98, 103 eliminated (§4); Tomokiyo's Lorraine keys (Bréval c. 1620, Bassompierre 1593) are other systems. 23 Oct (b29): DECODE list and ciphertext metadata searched for Lorraine/Vaudémont/Nancy, BnF keys 1580-1600 listed, fr. 3623 no. 23 (R9453) viewed: none is this system.
 - [x] print: Lepage 1864 stops in 1591; no print of this letter found (§4).
 - [x] key-rebuild: 18 Sept search key re-derived as the eleven-pair reciprocal key with doubling dots and a null (§9).
-- [x] retry: every line re-read from the page with the key in hand (§9, `ct/no97_reread.txt`); 5 Oct: unread stretches re-read at full IIIF resolution, 141 solved by pooling its three occurrences, λ γ U π m̄ shown null by distribution, joint LM solve of the special signs tried and failed (§10); the Archives de Meurthe-et-Moselle (possible duplicate or key) not consulted — needs physical access or their catalogue.
+- [x] retry: 23 Oct (b29): 5 Oct graded re-read rendered as running text, standalone crossed t = null (`ct/no97_reread_log.md`). Earlier: every line re-read from the page with the key in hand (§9, `ct/no97_reread.txt`); 5 Oct: unread stretches re-read at full IIIF resolution, 141 solved by pooling its three occurrences, λ γ U π m̄ shown null by distribution, joint LM solve of the special signs tried and failed (§10); the Archives de Meurthe-et-Moselle (possible duplicate or key) not consulted — needs physical access or their catalogue.

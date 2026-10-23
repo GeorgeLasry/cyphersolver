@@ -416,7 +416,9 @@
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 8509 tokens, 60 types, fr-modern order 4: reading -2.364 per letter; random keys -5.279 (z 10.0); key annealed onto shuffled ciphertext best -3.522 (mean -3.531, z 107.9); annealer on the real text -2.403. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher/R*.txt with the hand readings read/R*.txt and the machine readings read/machine_R*.txt; key key.json.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the ten hand readings read; nine build French sentences (A); read/R1954.txt (about 65% read on a weak transcription) has holes in most sentences (D confirmed). R1954 relabelled decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81 (groups in letters that read).", "result": "failed", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the ten hand readings read; nine build French sentences (A); read/R1954.txt (about 65% read on a weak transcription) has holes in most sentences (D confirmed). R1954 relabelled decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81 (groups in letters that read).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "transcription", "technique": ["language-model scoring", "beam/DP decoding", "manual reconstruction"], "what": "Re-read (REREAD_BRIEF, b29): R1954 has four images and no attachment on DECODE. The 314 digits marked uncertain in trans/R1954.txt resolved by a French 5-gram beam over look-alike pairs (5/7, 8/9, 4/11, 1/7, 0/6), pair phase and stray digits (research/reading_audit/b29_kd_beam.py), the alternative taken at 137 places; seven places re-read on the rotated images and corrected (trans/R1954_b29_corrections.tsv: l'inpossible, Yorcke, egards, deux objets, six mille hommes, de la proteger). Working file trans/R1954_b29.txt.", "result": "partial"},
+  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Partial reading read/R1954_partial_reading.md and English read/R1954_en.md: 0.549 clean sentences (28/51), explicit holes 0.725; 195 letters rest on a look-alike alternative; key unchanged (21 = inte, 07 = au, 41 = on flagged as sense-only). The d'Affry clause on f. 2 and most of f. 4 do not build: stays decoded, not read.", "result": "failed"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 8509, "types": 60, "tokens_per_type": 141.82, "score": -2.364, "nulls": {"random keys": {"n": 200, "mean": -5.279, "sd": 0.292, "max": -4.589, "z": 10.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.531, "sd": 0.011, "max": -3.522, "z": 107.9, "p": 0.1429}}, "power": -2.403, "verdict": "pass", "notes": "claimed per-occurrence score -2.286; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.403"}, 
   "method": "key recovered from ciphertext-only",
@@ -522,15 +524,16 @@
    {
     "doc": "R1954",
     "label": "R1954, March 1756 (with N.21 of 16 March 1756)",
-    "transcription": "cipher/R1954.txt",
+    "transcription": ["cipher/R1954.txt", "trans/R1954_b29.txt"],
     "decryption": [
      "read/R1954.txt",
-     "read/machine_R1954.txt"
+     "read/machine_R1954.txt",
+     "read/R1954_partial_reading.md"
     ],
     "summary": "Fragmentary reading (weak transcription): Holland has not yet deliberated on Colonel Yorke's requisition or on d'Affry's memorial, and the deliberation will stay suspended until [Q.] has explained itself on the representations [W.] made to the Comte d'Affry. (Bracketed sigla are clear abbreviations whose 1754 meanings are not all settled.)",
     "language": "fr",
     "state": "decoded, not read",
-    "note": "Self-declared about 65% read on a weak transcription; the long paragraph has [...] and bracketed guesses in most sentences and some clauses do not parse (reading audit, 22 Oct 2026); fix: re-transcribe R1954 from the DECODE images and decode it again with key.json."
+    "note": "Re-read 23 Oct 2026 (b29), still not read: the 314 digits the September transcription marked uncertain resolved by a French 5-gram beam over the look-alike pairs 5/7, 8/9, 4/11, 1/7, 0/6 and checked by eye (trans/R1954_b29.txt), seven places corrected on the DECODE images (trans/R1954_b29_corrections.tsv), key unchanged. Partial reading read/R1954_partial_reading.md: 0.549 clean sentences (28/51), explicit holes 0.725; the arguments paragraph holds, but the d'Affry clause on f. 2 and most of f. 4 do not. 195 letters rest on a look-alike alternative. Blocker: needs-physical-access: the remaining runs read legibly but do not decode (copyist's slips in this intercept copy); the Dresden original is not online."
    },
    {
     "doc": "R1043",
@@ -549,9 +552,14 @@
   "fraction_read_source": "Reading audit, 22 Oct 2026, code groups per letter (documents[].length): the nine letters that read hold 6,891 of 8,512 groups (0.810); R1954 (1,621) is decoded, not read. The earlier 0.998 (groups given a value by the key) is withdrawn as a reading figure.",
   "gaps": [
    {
-    "item": "R1954 (March 1756, 1,621 groups): decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "weak transcription; re-transcribe from the DECODE images and re-decode with key.json"
+    "item": "R1954 (March 1756, 1,621 groups): decoded, not read; garbled runs on f. 2 ll. 6, 8, 13 and f. 4 ll. 6-10, 17-25",
+    "blocker": "needs-physical-access",
+    "detail": "Re-read 23 Oct 2026 (b29, read/R1954_reread_log.md): the digits are legible on the images but do not decode with the key; slips of the copyist of the Dutch intercept copy; the original despatch (HStA Dresden, Geheimes Kabinett) is not online."
+   },
+   {
+    "item": "Clear sigla [C./.], [Q./.], [S./.], [T./.], [U./.], [W./.], [B./.], [P./.], [E. C./.] in all ten letters",
+    "blocker": "no-key-material",
+    "detail": "Meanings of 1754-58 read from context only; the 1761 key R936 does not carry this table's names."
    }
   ]
  }

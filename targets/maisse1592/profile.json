@@ -46,9 +46,7 @@
    "pages": 1,
    "cleartext_in_document": "separate passages",
    "plaintext": {
-    "location": [
-     "separate collection"
-    ],
+    "location": ["separate collection"],
     "source": "Brienne 13 = NAF 6984 fol. 104v, in clear",
     "partial": false
    },
@@ -229,6 +227,20 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "Re-read (REREAD_BRIEF, b29): f. 373r-v fetched at full size (Gallica btv1b90074656 views 422-423, openapi IIIF) and the contemporary clear copy Brienne 13 fol. 104r foot-106v top (btv1b100904592 views 109-112) transcribed in full for the first time (texts/f373_brienne_copy.txt). The copy omits the close and a six-line clear postscript (Joyeuse's defeat at Villemur), read from the original with two lines partly illegible.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching", "manual reconstruction"],
+   "what": "The copy checked against the f. 373 figures with key1.tsv at five places (dautant que cela me peut beaucoup ayder a me resouldre; faict pour faire continuer / que les ennemis pourroient faire contre moy; publie par dela du; plus dadvancement a mes affai[res]; de tant linsolence et audace de cet ennemy; dela a mondict service): no disagreement. The name the copy writes Vivac not settled on the figures. Reading texts/f373_reading.md: 0.924 clean sentences (85/92), explicit holes 0.978; state decoded, not read -> read (grade A).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -239,9 +251,9 @@
    "catalogue correction"
   ],
   "class": "read in part",
-  "fraction_read": 0.06,
+  "fraction_read": 0.87,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Reading audit 22 Oct 2026: the 80 transcribed groups of f. 370 read (identical with the Brienne copy) out of about 630 on f. 370 and an untranscribed f. 373 of unknown length, taken as the same size: about 80 of 1,260, estimated. Withdrawn: 1.0, which counted the content of both letters as known from the Brienne 13 clear copies, which are not transcribed here.",
+  "fraction_read_source": "Re-read 23 Oct 2026 (b29), estimated: f. 373 now reads (about 3,500 groups, estimated from 53 lines and the copy's 4,062 letters) and the 80 transcribed groups of f. 370 read; the rest of f. 370 (about 550 groups by seg2.py) does not: about 3,580 of 4,130. Earlier: about 0.06 (reading audit, 22 Oct 2026, with f. 373 unread); 1.0 withdrawn.",
   "verification": [
    "contemporary decipherment",
    "key confirms",
@@ -286,13 +298,20 @@
    },
    {
     "doc": "f373",
-    "label": "f. 373, 7 Nov 1592 (not transcribed; images only)",
-    "note": "not transcribed: neither the cipher of f. 373 nor its Brienne 13 fol. 104v clear copy is in the repository; content known only from the summary of the clear copy",
-    "state": "decoded, not read",
+    "label": "f. 373, 7 Nov 1592 (clear copy Brienne 13 fol. 104v-106v transcribed; cipher checked at five places)",
+    "state": "read",
     "language": "fr",
-    "transcription": "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f422.item",
-    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f110.item",
-    "summary": "Henri IV acknowledges Maisse's letter of 4 October and will suspend final judgement until he sees what comes of the Gondi and Pisany missions, appealing to his Catholic friends' own interest against the ruin brought by the length of the war and the King of Spain's efforts. Neither the cipher leaf nor its contemporary clear copy (Brienne 13 fol. 104v) is transcribed in this repository; the links are to the Gallica images."
+    "transcription": ["texts/f373_brienne_copy.txt", "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f422.item"],
+    "decryption": "texts/f373_reading.md",
+    "summary": "Henri IV acknowledges Maisse's letter of 4 October and will wait for the outcome of the Gondi and Pisany mission; urges the Venetian friends to help him with money and to work on the Pope, since only his person can preserve the Crown; approves Maisse's handling of the third-party (tiers parti) rumour; the duc de Retz has left without funding the Swiss, the League expects reinforcements while Parma is ill; Lesdiguières must be supported in Piedmont; Brèves has the Levant charge and Maisse is asked to stay at Venice a little longer. A clear postscript announces Joyeuse's defeat and death before Villemur.",
+    "reading": "texts/f373_reading.md",
+    "translation": "texts/f373_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Read 23 Oct 2026 (b29): the letter's clear opening, close and postscript from the original (Gallica views 422-423), and the cipher from the contemporary clear copy in Brienne 13 fol. 104v-106v (views 109-112), transcribed for the first time; the copy checked against the cipher with Tomokiyo's key at five places (f. 373r ll. 3-4, three places mid-recto, f. 373v ll. 1 and 11), no disagreement. Body 0.924 clean sentences (85/92), explicit holes 0.978; holes are two single words of the copy, the date numeral and two lines of the clear postscript."
+    }
    }
   ]
  }

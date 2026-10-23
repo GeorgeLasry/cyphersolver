@@ -2,6 +2,17 @@
 
 Status: in progress. f. 68 read; f. 70 decoded, not read (reading audit, 22 Oct 2026).
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b29)**: f. 70 still *decoded, not read*. DECODE R7899 fetched (P1 the slip;
+P2 an address leaf to Francesco Sforza, not f. 70's); every sign re-checked against Lasry's overlay, no label changed;
+**#30 adopted as a null** (8 boundary occurrences in both letters; not written into `lasry2026/ctts/key.txt`, whose
+checksums `verify.py` guards). Partial reading `texts/f70_partial_reading.md` (0.50 clean sentences; explicit holes 0.70),
+English `texts/f70_en.md`, log `texts/f70_reread_log.md`: sentences 1 and 3 hold, the news clause of lines 4-5 and the
+signature do not. Sibling sweep: R7900-R7915 (16 records, ff. 89-158) fetched and viewed; none uses this alphabet.
+**Found: R7900 (f. 89, Angelus, 30 Sept 1446, headed "Cum cifra Vincentii") and R7901 (f. 90, "Explication du
+chiffre") are one despatch in cipher and in clear** -- a contemporary decipherment of the Vincentius cipher (the
+cart. 1597 no. 14 key), a different alphabet from ff. 68/70; a lead for a separate ital. 1583 target and a DECODE
+note (R7900 Non-decrypted, its clear text is R7901).
+
 **22 Oct 2026, reading audit** (George Lasry's test): f. 68 (R7898) builds sentences from line 2 to line 11; its ? runs sit at line openings (per-document C overturned to B). f. 70 has holes in every clause of lines 1-5 and an unread signature: *decoded, not read*. Class read in part kept; fraction_read 0.9432 (assigned) -> 0.514 (tokens in f. 68).
 
 Earlier status (before the 22 Oct 2026 reading audit): read in part (George Lasry's CTTS key, PR #60, 20 Oct 2026; written up as `docs/it1583.html`). Earlier:
@@ -43,19 +54,19 @@ Statistical validation (`docs/_validate.py`, it-cinquecento order 4): reading -2
 (z 5.7); shuffled-refit best -2.544; annealer power -2.415; verdict **pass**.
 
 ## Remaining gaps
-- 47 unresolved cipher occurrences in 14 sign classes (#25 x10, #30 x8, (4) x6, (6) x5, #36 x4, #35 x3, (22) x3, (25) x2, six classes once): mostly at line and paragraph openings (#35 (6) (4) opens f. 68 lines 1 and 9) - blocker: open-codes; probably nulls, titles or abbreviations, but a language-model pass over both letters could not fix any of them, and only the sibling 1446 letters could add occurrences
-- f. 70 signature block after "mediolani die qvarto mai" (24 tokens: p ? v a r qva c e et e ? s m n ? s t a ? ? m r) - blocker: open-codes; assigned letters do not form the name; Mazzatinti's attribution to Vincenzo Amidani is not confirmed by the cipher
-- provisional values (8)=l, (24)=n, (16)=in (4 occurrences) and doubtful words (f. 68 "?intita"; f. 70 "se mono", "do", "vaia", "raconmando", extra "o o") - blocker: open-codes; each rests on one or two occurrences
+- 47 unresolved cipher occurrences in 14 sign classes (#30 x8 adopted as a null 23 Oct 2026, leaving 39 in 13; #25 x10, (4) x6, (6) x5, #36 x4, #35 x3, (22) x3, (25) x2, six classes once): mostly at line and paragraph openings (#35 (6) (4) opens f. 68 lines 1 and 9) - blocker: no-key-material; probably nulls, titles or abbreviations, but a language-model pass over both letters could not fix any of them, and only the sibling 1446 letters could add occurrences
+- f. 70 signature block after "mediolani die qvarto mai" (24 tokens: p ? v a r qva c e et e ? s m n ? s t a ? ? m r) - blocker: no-key-material; assigned letters do not form the name; Mazzatinti's attribution to Vincenzo Amidani is not confirmed by the cipher
+- provisional values (8)=l, (24)=n, (16)=in (4 occurrences) and doubtful words (f. 68 "?intita"; f. 70 "se mono", "do", "vaia", "raconmando", extra "o o") - blocker: no-key-material; each rests on one or two occurrences
 - clear-text supplies: f. 68 line 5 end "[aya? ...]"; f. 70 "[fornendo?]", "[ques?]te" (written in clear over damaged or crowded strokes) - blocker: illegible; only a binarized scan of f. 68 and a DECODE photograph of f. 70; a colour BnF scan would decide them
-- f. 70 lines 1-5: decoded, not read - blocker: not-attempted; one to three unread signs in every clause; re-read them on the image with the shared key, and look for the sibling 1446 letters
+- f. 70 lines 1-5: decoded, not read - blocker: no-key-material; re-read 23 Oct 2026 (b29): labels confirmed on the image, #30 = null adopted, the clause of lines 4-5 rests on (25), (19), (26), #25, (4) with no key value; none of the sibling 1446 records R7900-R7915 uses this alphabet; sense hypotheses (25)=Duca, (19)=ordine, (26)=gente flagged for review
 
 ## Escalation
-- [n/a] siblings: f. 70 (the next leaf, on R7899 P1) is already deciphered with the same key; the seventeen other 1446 cipher records from ital. 1583 (R7899-R7915, ff. 75-158) were not opened this session: they need the DECODE login and a CTTS sign-level transcription of several thousand signs, a separate target. They are the one route to more occurrences of the open classes.
+- [x] siblings: 23 Oct 2026 (b29): R7900-R7915 fetched and viewed, none in this alphabet (R7900/R7901 = the Vincentius cipher with its clear text). Earlier: f. 70 (the next leaf, on R7899 P1) is already deciphered with the same key; the seventeen other 1446 cipher records from ital. 1583 (R7899-R7915, ff. 75-158) were not opened that session: they need the DECODE login and a CTTS sign-level transcription of several thousand signs, a separate target. They are the one route to more occurrences of the open classes.
 - [x] clear-pages: f. 68's clear phrases are the letter's own clear text, not a decipherment; no decipherment on R7898 or R7899
 - [x] known-keys: September 2026, all 208 Sforza key records on DECODE (ASMi cart. 1591, 1597, 1598); 1597 no. 14 is the same family but a different alphabet, no. 17 (1447) different; none is this key
 - [x] print: Mazzatinti 1883 gives the headings only; no edition or decipherment found (September search)
 - [x] key-rebuild: `extend_open.py` tried every letter, the word values and null for each of the 14 open classes and the 3 provisional ones, scoring both letters with it-cinquecento: no letter value wins by a margin that would justify it (e.g. (6): o vs e, margin 0.8 nats); the scorer prefers null for most, which is consistent with nulls but biased toward them, so nothing adopted
-- [x] retry: the provisional l / n / in rechecked in the same pass ((24): t vs n, margin 0.7; (16): null vs in, 1.7): left provisional
+- [x] retry: 23 Oct 2026 (b29): f. 70 re-read sign by sign on R7899 P1, texts/f70_reread_log.md. Earlier: the provisional l / n / in rechecked in the same pass ((24): t vs n, margin 0.7; (16): null vs in, 1.7): left provisional
 
 ## History: the 21 Sept 2026 attempt (failed)
 

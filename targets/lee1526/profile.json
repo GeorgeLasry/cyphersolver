@@ -406,6 +406,20 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): R8566, R8465 and R8473 read; r8533_reading.txt is a worksheet with holes in several sentences and f. 109r not re-read (C confirmed). R8533 relabelled decoded, not read; fraction_read 1 -> 0.445; class already solved kept.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": ["manual reconstruction"],
+   "what": "Re-read (REREAD_BRIEF, b29): DECODE R8533 fetched (four images and DOC_8533, which is Tomokiyo's key table, not a decipherment). f. 109r, f. 109v and f. 110r read line by line on half-width three-line strips at full resolution; clear text transcribed as running text for the first time; cipher runs re-checked sign by sign against the pass-2 worksheet, 12 corrections (R8533_corrections.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": ["manual reconstruction", "contextual inference"],
+   "what": "Running reading R8533_reading.md and English R8533_en.md. Score: 0.158 clean sentences with the modern word list, 0.895 (85/95) explicit holes only; the sentences hold. State decoded, not read -> read (grade B); fraction_read 0.445 -> 1.0.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -413,7 +427,7 @@
   "method_basis": "Tomokiyo's Lee-Worcester key, attached to DECODE R8566, read the cipher runs of R8566, R8582, R8472-73 and R8533 (the last 90.6% with L&P IV 3028 as crib); every run had also been deciphered at the time (interlinear on R8566, Tuke's decipherments calendared in L&P IV).",
   "contribution": ["transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
   "class": "already solved",
-  "fraction_read": 0.445,
+  "fraction_read": 1.0,
   "verification": [
    "contemporary decipherment"
   ],
@@ -428,16 +442,21 @@
    {"doc": "R8566", "label": "R8566, Vesp. C IV ff. 170-173, Valladolid, 17 July 1527 (contemporary interlinear decipherment)", "decryption": "plaintext.txt", "summary": "Joint despatch of Edward Lee and Girolamo Ghinucci to Wolsey; four short cipher runs, each deciphered above the line at the time. Among them, Lee and Ghinucci propose the daughter of Portugal for the Duke of Richmond (Henry Fitzroy) and discuss giving the duchy of Milan back to Francesco Sforza.", "language": "en"},
    {"doc": "R8465", "label": "R8465, Vesp. C III f. 238v, Seville, 15 April 1526", "transcription": "texts/R8465_transcription.txt", "decryption": "r8465_reading.txt", "summary": "Lee to Wolsey, holograph: three cipher lines advising that if Wolsey speaks of the matter to the Emperor's ambassador who is coming, they will be glad to see him content. Letters and Papers Henry VIII iv no. 2097 already prints the passage.", "language": "en"},
    {"doc": "R8473", "label": "R8473, Vesp. C III f. 245, Seville, 13 May 1526", "transcription": "r8473_reading.txt", "decryption": "r8473_reading.txt", "summary": "Lee to Henry VIII: two cipher blocks, read sign by sign with Tomokiyo's key and checked against Tuke's contemporary decipherment (the record's image 4). The Imperial court waits on events in France; the Spaniards about Milan; the French King sends men-of-arms and foot into Burgundy; Hesdin not to be delivered; Moncada's commission after suppressing the Moors of Valencia (L&P IV 2173).", "language": "en"},
-   {"doc": "R8533", "label": "R8533, Vesp. C IV ff. 109-110, Valladolid, 20 April 1527 (read in part, 414 of 457 cipher words)", "transcription": ["r8533_reading.txt", "r8533_reading_pass1.txt"], "decryption": ["r8533_reading.txt", "r8533_reading_pass1.txt"], "summary": "Lee to Wolsey, a duplicate of his letter of 8 April (L&P IV 3028, used as crib, lp3028.txt): Almain's warning not to trust the French King, Perot's letter on the King of England's offer of his daughter and Boulogne, the Duke of Richmond 'whome they intend to make kynge of Irelande', the French King hated in France, and wives for Richmond (the daughter of the queen of Portugal, the daughters of Denmark).", "language": "en", "state": "decoded, not read", "note": "A sign-level worksheet: f. 109v ll. 5-16 and much of f. 110r build sentences against the clear text, but f. 109v ll. 1-4 and 17-22, many f. 109r lines (not re-viewed in pass 2) and the name codes are open or rest on the L&P crib, so several sentences have holes (reading audit, 22 Oct 2026); fix: the full-resolution pass on f. 109r and f. 110r, then a running text. Tuke's contemporary decipherment is calendared in L&P IV 3055."}
+   {"doc": "R8533", "label": "R8533, Vesp. C IV ff. 109-110, Valladolid, 20 April 1527 (running reading, re-read 23 Oct 2026)", "transcription": ["r8533_reading.txt", "r8533_reading_pass1.txt"], "decryption": ["R8533_reading.md", "r8533_reading.txt", "r8533_reading_pass1.txt"], "summary": "Lee to Wolsey, a duplicate of his letter of 8 April (L&P IV 3028, used as crib, lp3028.txt): Almain's warning not to trust the French King, Perot's letter on the King of England's offer of his daughter and Boulogne, the Duke of Richmond 'whome they intend to make kynge of Irelande', the French King hated in France, and wives for Richmond (the daughter of the queen of Portugal, the daughters of Denmark).", "language": "en", "state": "read", "reading": "R8533_reading.md", "translation": "R8533_en.md", "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "Read 23 Oct 2026 (b29): all three written pages re-read line by line on the full-size DECODE images (P1, P4, P2), the clear text transcribed as running text for the first time and the cipher runs re-checked sign by sign with Tomokiyo's key (12 worksheet corrections, R8533_corrections.tsv); Tuke's interlinear on f. 110r agrees. Body 0.158 clean sentences with the modern word list (1527 spelling), 0.895 (85/95) counting explicit holes; the sentences hold; holes are name codes, underlined clusters, blots and a few clear words. 2 letters and 1 code sign rest on a look-alike reading (Perot/Perote; the King's cross)."}}
   ],
   "key_file": "texts/key.md",
   "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026, cipher tokens per document (documents[].length): R8566 (100), R8465 (28) and R8473 (238) read, 366 of 823 (0.445); R8533 (457) is decoded, not read. The earlier 1 is withdrawn as a reading figure.",
+  "fraction_read_source": "Re-read 23 Oct 2026 (b29), cipher tokens per document (documents[].length): R8566 (100), R8465 (28), R8473 (238) and R8533 (457) all read: 823 of 823. Earlier: 0.445 (reading audit, 22 Oct 2026, with R8533 decoded, not read).",
   "gaps": [
    {
-    "item": "R8533: decoded, not read (f. 109r, f. 109v ll. 1-4 and 17-22, name codes)",
-    "blocker": "not-attempted",
-    "detail": "f. 109r and f. 110r not re-read at full resolution (pass 2 stopped at the image viewer's limit); re-read them on the DECODE images and write a running text"
+    "item": "R8533: name and code signs outside Tomokiyo's table and underlined clusters (about 40 places marked [..] in R8533_reading.md)",
+    "blocker": "no-key-material",
+    "detail": "Tuke's decipherment of the 8 April original (L&P IV 3028) would gloss them; it is at TNA and not online"
+   },
+   {
+    "item": "R8533: a few clear words, blots and struck signs",
+    "blocker": "illegible",
+    "detail": "Lee's hand at DECODE resolution; see R8533_reread_log.md"
    }
   ]
  }

@@ -2,6 +2,15 @@
 
 Status: in progress. Nine letters read; R1954 decoded, not read (reading audit, 22 Oct 2026).
 
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b29)**: R1954 still **decoded, not read**. The 314 digits the September
+transcription marked uncertain were resolved by a French 5-gram beam over the look-alike pairs and checked by eye
+(`trans/R1954_b29.txt`, helper `research/reading_audit/b29_kd_beam.py`); seven places corrected on the images
+(`trans/R1954_b29_corrections.tsv`: *l'inpossible*, *le colonel Yorcke*, *deux objets*, *six mille hommes*, *de la
+proteger* ...). Partial reading `read/R1954_partial_reading.md` (0.549 clean sentences; explicit holes 0.725), English
+`read/R1954_en.md`, log `read/R1954_reread_log.md`. The arguments paragraph (why Holland cannot refuse the 6,000 men)
+now reads; the d'Affry clause and most of f. 4 do not: copyist's slips in this intercept copy, the Dresden original
+not online. Key unchanged.
+
 **22 Oct 2026, reading audit** (George Lasry's test): nine of the ten hand readings build French sentences. read/R1954.txt (March 1756, about 65% read on a weak transcription) has holes in most sentences: *decoded, not read*. Class read -> read in part; fraction_read 0.998 (groups given a value) -> 0.81 (groups in letters that read).
 
 Earlier status (before the 22 Oct 2026 reading audit): read (19 Sept 2026); written up as docs/kauderbach1754.html
@@ -79,14 +88,14 @@ abbreviations inside the runs (`E.M.`, `C./.`, `Q./.`, `M./.`, `S./.`, `J./.`, `
 
 ## Remaining gaps
 
-- R1954 (March 1756, 1,621 groups): decoded, not read - blocker: not-attempted; re-transcribe from the DECODE images and re-decode with key.json
-- nomenclator names left as code letters ([C./.], [Q./.], [S./.] ...) - blocker: open-codes; the 1761 key R936 does not carry this table's names
+- R1954 (March 1756, 1,621 groups): decoded, not read - blocker: needs-physical-access; re-read 23 Oct 2026 (b29): uncertain digits resolved, seven places corrected on the images, partial reading 0.549; the remaining runs (f. 2 ll. 6, 8, 13; f. 4 ll. 6-10, 17-25) read legibly but do not decode, copyist slips; the original in HStA Dresden is not online
+- nomenclator names left as code letters ([C./.], [Q./.], [S./.] ...) - blocker: no-key-material; the 1761 key R936 does not carry this table's names
 
 ## Escalation
 
 - [x] siblings: all ten records of KHA Prins Willem V inv. 201 decoded with one key
-- [ ] clear-pages: not looked for
+- [x] clear-pages: 23 Oct (b29): R1954's four DECODE images and record checked; the clear passages are the copy's own (Hessian courier, N. 21), no decipherment on the record
 - [x] known-keys: Kauderbach's 1761 key R936 (vocabulary only; numbers differ)
-- [ ] print: not searched for R1954
+- [x] print: 19 Sept web search found no printed decipherment of Kauderbach's cipher (not repeated 23 Oct); the originals are in HStA Dresden (not online)
 - [x] key-rebuild: table recovered by annealing
-- [ ] retry: R1954 not re-transcribed
+- [x] retry: 23 Oct (b29): R1954 uncertain digits resolved and checked on the images, partial reading written (`read/R1954_reread_log.md`)

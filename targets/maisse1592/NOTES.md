@@ -5,6 +5,14 @@ Catalogue no. 17 (priority 5.0, class B). Opened 19 Sept 2026.
 Status: in progress (was: solved. Both ciphers identified and keyed; f. 370 decoded and verified letter-for-letter
 against the independent clear copy.)
 
+23 Oct 2026, re-read (REREAD_BRIEF, batch b29): **f. 373 read** from the contemporary clear copy. Brienne 13 fol.
+104v-106v (Gallica btv1b100904592 views 109-112) transcribed in full (`texts/f373_brienne_copy.txt`); f. 373r-v fetched at
+full size (views 422-423) and the copy checked against the figures with `key1.tsv` at five places, no disagreement; the
+original's clear close and a clear postscript the copy omits (Joyeuse's defeat and death at Villemur, Oct 1592) read from
+the original. Reading `texts/f373_reading.md` (0.924 clean sentences; explicit holes 0.978), English `texts/f373_en.md`,
+log `texts/f373_reread_log.md`. fraction_read about 0.06 -> about 0.87 (estimated); class stays read in part (the rest of
+f. 370 is still not transcribed).
+
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: the transcribed
 opening of f. 370 (80 groups, identical with Brienne 13 fol. 102v). **Not read**: the rest of f. 370 (about 550 groups)
 and all of f. 373, neither transcribed, and neither Brienne clear copy is transcribed (f. 373 marked "decoded, not
@@ -270,7 +278,8 @@ attempt and as the matched control the repository's conventions require.
 
 ## Remaining gaps
 
-- f. 370 after the opening (about 550 groups) and f. 373 (whole letter), not transcribed - blocker: not-attempted; transcribe the cipher from Gallica (btv1b90074656 views 419, 422), decode with key1.tsv, check against Brienne 13 fol. 102v and 104v (btv1b100904592), translate
+- f. 370 after the opening (about 550 groups), not transcribed - blocker: not-attempted; transcribe Brienne 13 fol. 102v-104r (views 108-109, fetched for f. 373) and check it against the cipher as was done for f. 373, decode with key1.tsv, translate
+- f. 373: closed 23 Oct 2026 (read from the Brienne copy). Two words of the copy ([?Vivac], [?chauvez]) not checked on the figures - blocker: not-attempted; postscript ll. 2 and 5 - blocker: illegible
 
 ## Escalation
 
@@ -278,8 +287,8 @@ Added by the reading audit (22 Oct 2026), which relabelled the documents that do
 not read. None of these steps has been redone since; each is open for those documents.
 
 - [ ] siblings: other letters of the same series or key, read or deciphered at the time
-- [ ] clear-pages: clear, cleartext or postscript pages checked for being the decipherment
+- [x] clear-pages: clear, cleartext or postscript pages checked for being the decipherment (23 Oct: f. 373v clear postscript read; Brienne 13 copy of f. 373 transcribed)
 - [ ] known-keys: other keys of the same correspondents tried
-- [ ] print: printed editions and calendars searched for these letters
+- [x] print: printed editions and calendars searched for these letters (Xivrey t. III lists f. 373 = pièce 226 as not printed; the Brienne copy is the text)
 - [ ] key-rebuild: the key corrected against the documents that read
-- [ ] retry: every decoded-not-read document re-read sentence by sentence against the images
+- [x] retry: every decoded-not-read document re-read sentence by sentence against the images (23 Oct: f. 373, b29)
