@@ -9,6 +9,14 @@ unspaced but clean sentences). **Decoded, not read**: page 2, the Dutch postscri
 conjecture in almost every line. Class read -> read in part; 96.7% / 95.2% are withdrawn as reading figures; 53.9% of
 the cipher tokens are on the page that reads (1,054 of 1,954).
 
+23 Oct 2026, re-read (REREAD_BRIEF batch b31, Claude Opus 5.5; `texts/p2_reread_log.md`): DECODE R1892/R2242
+re-fetched (images only). WAINUT's shape splits checked on the image: the H label is two shapes (long-dash H at ll. 4, 5,
+7, 8; the I-beam at ll. 4, 15, 20, 21 = l. 9's *zoo*); l. 13 reads *myn vader*. Adopted where they hold at every
+occurrence: I-beam = zo, G = UE, flat hook = dat, c-symbol = zal, looped stem = uit (UE, dat, zal sense-only, flagged);
+not adopted: crossed Y = ik (fails l. 15), gamma = zulks (fails l. 10), cf = zyn. Word-divided reading
+`texts/p2_reading.md` (+ `p2_en.md`): 0.10 plain, 0.60 explicit holes; the second half reads, ll. 2-12 do not build:
+**page 2 kept decoded, not read.** `apply.py` and the key table are not changed (the adopted values live in the reading).
+
 Lasry review (25 Sept 2026): In private communications, Lasry wrote that he independently solved it in 2021 but his solution has not been published. Kept in the ciphertext-only list (outcome.first_break = 'unpublished prior').
 
 DECODE R1892 ("unkmown (Germany) to Prince William V", dated 1 Jan 1795, Non-decrypted, 2 pp.). KHA The Hague,
@@ -316,12 +324,13 @@ adopted. Two signs for dat (Λ and the flat-legged λ) is our inference; R2242's
 "UE" could equally be "u": either way the sign is the addressee. The values of the second table are context only.
 
 ## Remaining gaps
-- page 2 (Dutch postscript) decoded, not read (900 tokens) - blocker: open-codes; the recurring word signs below stand in almost every line; once they are fixed (or bounded) the postscript is to be word-divided, built into sentences and translated
-- recurring word signs on p2 (⊣H 9, hook 7, slash 5, cf 4, Y-cross 4, 8 4, S 3, Y 3, psi 2, phi 2, 7 2, cross 2, bar 2) - blocker: open-codes; jointly scored across all occurrences 3 Oct 2026 (solve_signs.py), no candidate fits every occurrence; 8 = zijn kept at I
+- page 2 (Dutch postscript) decoded, not read: word-divided reading texts/p2_reading.md (23 Oct 2026), first half does not build - blocker: no-key-material; the open word signs below
+- recurring word signs on p2 still open (long-dash H 4, S 3, Y 3, 7 2, bar, slash l. 6), and crossed Y / gamma / cf whose proposed values fail at one occurrence each (23 Oct 2026) - blocker: no-key-material; no key sheet, R2242 lacks them
 - eleven signs that occur once (3, 8-cross, 9, A, I, Z, check, circle-cross, delta, x on p2; dash on p1) - blocker: no-key-material; a single context cannot fix a word sign, and there is no key sheet, sibling occurrence or printed text
-- page 2 line 24 middle; page 1 line 1 - blocker: illegible; photocopy; the two digit rows drift and several pairs are ambiguous (re-examined 21 Sept and 3 Oct at full resolution: "…gesteld is geweest" fixes only the end of l24)
+- page 1 line 1 (page 2 line 24 re-read from the pairs, 12/23 Oct) - blocker: illegible; photocopy; the two digit rows drift and several pairs are ambiguous (re-examined 21 Sept and 3 Oct at full resolution: "…gesteld is geweest" fixes only the end of l24)
 
 ## Escalation
+- [x] retry (23 Oct 2026): WAINUT splits checked on the image, five values adopted, page 2 word-divided and scored; still decoded, not read
 - [x] siblings: R2242 (same key) read; its sign values applied here 2 Oct 2026; R2240, R2233 checked, do not apply; R2236/R2237/R2239 use a different word list
 - [x] clear-pages: no clear decipherment on the record; page 2 clear words used
 - [x] known-keys: R2240 and R2233 tried, no fit

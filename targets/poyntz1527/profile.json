@@ -26,10 +26,10 @@
     "measured": false
    },
    "transcription": {
-    "by": "published",
-    "source": "DECODE public thumbnails TH_IMG_R8565_I39496_P1-P8 (200 px); full images behind login, not viewed",
-    "image_quality": "poor",
-    "notes": "No ciphertext transcribed here; the reading is Tuke's decipherment as calendared in L&P IV 3271. The thumbnails show about five short interlinear bands and three signatures."
+    "by": "llm from images",
+    "source": "DECODE images IMG_R8565_I39496_P1-P8 (full resolution, fetched logged in 23 Oct 2026)",
+    "image_quality": "good",
+    "notes": "The contemporary decipherment of the five cipher passages transcribed (texts/R8565_reading.md); the cipher signs were read with Tomokiyo's key as a check of each passage, not transcribed in full."
    },
    "read": "read"
   },
@@ -101,14 +101,17 @@
   {"kind": "access", "what": "R8565: full DECODE images refused without login (no cookie on this machine); the eight public thumbnails downloaded.", "result": "partial", "date": "2026-09-21"},
   {"kind": "verification", "what": "R8565: placed by foliation. R8566 (new ff. 178-181, old 170-173) is L&P 3270 at f. 170, so new ff. 174-177 = old 166-169 = the separated part of L&P 3271; the thumbnails show a clear English despatch with interlinear bands, three signatures and an address leaf.", "result": "worked", "date": "2026-09-21"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R8567's interlinear decipherment (plaintext.txt); for R8565 nothing is in the folder: L&P IV 3271's deciphered passages (print, 1872) and the interlinear bands on the images are not copied, and neither record's cipher was transcribed (project work)", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): R8567's plaintext.txt reads; R8565 has no text in the repository (calendar paraphrases only). R8565 relabelled decoded, not read, with an excerpt note pointing to the DECODE images and L&P IV 3271, both reachable; class already solved kept; fraction_read 1 -> about 0.38 (estimated by runs).", "result": "partial", "technique": ["language-model scoring", "statistical test"]}
+  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): R8567's plaintext.txt reads; R8565 has no text in the repository (calendar paraphrases only). R8565 relabelled decoded, not read, with an excerpt note pointing to the DECODE images and L&P IV 3271, both reachable; class already solved kept; fraction_read 1 -> about 0.38 (estimated by runs).", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
+  {"date": "2026-10-23", "kind": "transcription", "what": "R8565 DECODE record fetched logged in (b31_fetch.py): 8 full-resolution images and Tomokiyo's key png; every image opened. P1 confirms the record is the separated second part of L&P IV 3271 ('the xv of Julie ... Mons. de Pratt and Mons. de Burlans'). Cipher in five places (ff. 174r one word, 174v-175r, 175r, 176v, 177r), each with a contemporary decipherment over or between the lines or in the margin; ff. 175v-176r clear. The decipherment transcribed from 2-3x crops (b31_crop.py).", "result": "worked"},
+  {"date": "2026-10-23", "kind": "verification", "what": "R8565: each decipherment passage checked against the cipher signs with Tomokiyo's Lee-Worcester key (and, frenchemen, had not been, browght hym, madrill, his, ever you have ben, raison, amite, shal we have that he shal not rendre, handes, frendes that knowes non so great, this like you, than to this man that is nothing mete for it, de tarbes now shewed, fourth instruction, kept it, oon devise, than of any other prince): every checked word agrees; sign 5 = 'not' at two places (not in the table, flagged for review). L&P IV 3271 (archive.org OCR) agrees with the content.", "result": "worked", "technique": ["key matching"]},
+  {"date": "2026-10-23", "kind": "verification", "what": "R8565 reading scored: 0.909 (20/22) explicit-hole share, 0.227 plain (1527 spelling); sentences hold; look-alike letters 0. R8565 decoded, not read -> read (grade B); fraction_read 0.38 -> 1 (by runs).", "result": "worked", "technique": ["language-model scoring"]}
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "R8567's three cipher runs carry an interlinear decipherment on f. 184v and R8565 was deciphered by Tuke, calendared in L&P IV 3271; Tomokiyo's key on DECODE R8566 was only spot-checked against them.",
   "contribution": ["sender or date identified", "catalogue correction"],
   "class": "already solved",
-  "fraction_read": 0.38,
+  "fraction_read": 1.0,
   "verification": ["contemporary decipherment"],
   "notes": "Both records read at the time: R8567 from its interlinear decipherment, R8565 from Tuke's decipherment in print (L&P IV 3271) and on the page. Nothing new to read. R8565 identified from the thumbnails and the calendar; the full images were not viewed. 22 Oct 2026, reading audit: R8565 decoded, not read (no text of it in the repository); class already solved kept (Tuke's decipherment, in print); fraction_read 1 -> about 0.38.",
   "provenance": "mixed",
@@ -118,15 +121,15 @@
   ],
   "texts": [
    {"doc": "R8567", "label": "R8567, Vesp. C IV ff. 182-185, Valladolid, July 1527 (contemporary interlinear decipherment of the three runs on f. 184v)", "decryption": "plaintext.txt", "summary": "A long clear English despatch of Edward Lee and Sir Francis Poyntz to Wolsey on their audiences with Charles V and Gattinara (Francesco Sforza, the two millions of the ransom, the treaty of Madrid); three short runs in the Lee-Worcester cipher are deciphered above the line: 'we know well you will kepe hit full well secrets from the frenchemen'.", "language": "en"},
-   {"doc": "R8565", "label": "R8565, Vesp. C IV ff. 174-177, Valladolid, 17 July 1527 (L&P IV 3271, Tuke's decipherment in italics)", "summary": "Part of the joint despatch of Ghinucci, Lee and Poyntz to Wolsey, 17 July 1527, calendared in full in Letters and Papers Henry VIII IV no. 3271: the French envoy's dealings, the suggestion that the Emperor might give the duchy of Milan with the daughter of Portugal to the Duke of Richmond, and the bishop of Tarbes's fourth instruction. The interlinear decipherment is only on the DECODE images.", "language": "en", "state": "decoded, not read", "note": "Nothing of the decipherment is in the repository: only three calendar paraphrases in NOTES.md (reading audit, 22 Oct 2026). Excerpt only: the full decipherment is Tuke's, interlinear on the DECODE images of R8565 and printed in italics in Letters and Papers IV ii no. 3271 (British History Online, pp. 1483-1486); fix: transcribe the five bands from the DECODE images (cookie) and check them against L&P."}
+   {"doc": "R8565", "label": "R8565, Vesp. C IV ff. 174-177, Valladolid, 17 July 1527 (L&P IV 3271, Tuke's decipherment in italics)", "summary": "Part of the joint despatch of Ghinucci, Lee and Poyntz to Wolsey, 17 July 1527, calendared in full in Letters and Papers Henry VIII IV no. 3271: the French envoy's dealings, the suggestion that the Emperor might give the duchy of Milan with the daughter of Portugal to the Duke of Richmond, and the bishop of Tarbes's fourth instruction. The interlinear decipherment is only on the DECODE images.", "language": "en", "state": "read", "decryption": ["texts/R8565_reading.md"], "reading": "texts/R8565_reading.md", "translation": "texts/R8565_en.md", "reading_review": {"grade": "B", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "texts/R8565_reading.md follows the contemporary decipherment (Tuke's, per L&P IV 3271) written over and between the cipher lines of ff. 174v, 175r, 176v, 177r, read on the full-resolution DECODE images (first viewed 23 Oct 2026); each passage checked against the signs with Tomokiyo's Lee-Worcester key, every checked word agrees. Reading body 0.909 (20/22) counting explicit holes only, 0.227 plain (1527 spelling). Look-alike letters 0. Open: [?bere] (f. 174v) and four words written over each other on f. 176v before 'the doughter of Portugalo' (illegible at this resolution)."}}
   ],
   "fraction_read_method": "estimated",
-  "fraction_read_source": "Estimated, reading audit 22 Oct 2026, by cipher runs: R8567's three runs (plaintext.txt, 44 words) are in the repository and read; R8565's five bands of Tuke's decipherment are not transcribed here: 3 of about 8 runs = 0.38. No token count of the cipher exists. The earlier 1 is withdrawn as a reading figure.",
+  "fraction_read_source": "Re-read 23 Oct 2026 (batch b31): both documents read. R8567's three runs (plaintext.txt) and R8565's five cipher passages (texts/R8565_reading.md, from the contemporary decipherment checked against the signs) = all cipher runs of the two records; no token count of the cipher exists, so by runs: 8 of 8.",
   "gaps": [
    {
-    "item": "R8565: Tuke's decipherment not transcribed",
-    "blocker": "not-attempted",
-    "detail": "the five bands of interlinear decipherment are on the DECODE images (cookie at targets/bordeaux/decode/cookie.txt) and in L&P IV 3271 on British History Online; transcribe them and check against the signs with Tomokiyo's Lee-Worcester key"
+    "item": "R8565: [?bere] (f. 174v) and four words before 'the doughter of Portugalo' (f. 176v) not settled",
+    "blocker": "illegible",
+    "detail": "the decipherment's words are written over each other and the signs beneath are faint at DECODE's resolution; the sense is given by L&P IV 3271"
    }
   ]
  }

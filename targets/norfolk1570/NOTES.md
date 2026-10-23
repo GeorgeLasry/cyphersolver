@@ -4,6 +4,14 @@ Status: in progress. f. 74r decoded with Tomokiyo's key, not yet read as sentenc
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the line-by-line reading below has [..] holes, a stain or unkeyed signs in lines 1, 4-6, 8-10 and 12-17, so about half the sentences do not build: f. 74r is *decoded, not read*. Class read -> not read, method -> not solved, fraction_read unknown -> 0. The key, the dating and the gist stand.
 
+**23 Oct 2026, re-read (REREAD_BRIEF batch b31, Claude Opus 5.5).** All 23 lines transcribed sign by sign
+(`texts/f74r_signs.tsv`, corrections in `texts/f74r_corrections.tsv`), running text `texts/f74r_reading.md` + `_en.md`,
+log `texts/f74r_reread_log.md`. Supplied words of the reading below that the signs do not carry are withdrawn
+([g]entle -> [?lentle], be not [lost] -> demen, B[ishop of Ross], [to], [It], [lie?]). No key value adopted (13 unkeyed
+signs, each once). CSP Scotland iii does not calendar f. 74. Scores 0.229 plain / 0.829 explicit holes / 0.714 with unkeyed
+signs as holes; look-alike letters 3/1493. **Kept decoded, not read**: the opening, the *experiance* sentence, ll. 10-11
+and l. 15 do not build, and legible runs in ll. 11, 15, 17, 20 are unresolved.
+
 Marked undeciphered (cryptiana `mary.htm`, "Mary to Norfolk, 20th, 1570?"). Tomokiyo reconstructed the
 key from ff. 66/69/75 and left a partial reading as an overlay image (`img/mary_CottonCaligulaCII_f74.png`)
 and in an HTML comment. This directory completes the reading from the new BL IIIF images.
@@ -59,14 +67,15 @@ the wyte of Murray death"); Morton rumoured on the move; Lord Talbot at hand (in
 
 ## Remaining gaps
 
-- f. 74r as a running text: decoded, not read - blocker: not-attempted; re-read lines 1, 4-6, 8-10, 12-17 on the BL IIIF strips (fetch.py, strips.py) against Tomokiyo's key and write a running text with a modern English version
-- unkeyed nomenclator signs ⊕, ⊘, ø, ⊗, {a—}, {o—} - blocker: open-codes; not in Tomokiyo's key, each once or twice; look for them in the sibling letters ff. 66, 69, 75
+- f. 74r ll. 11, 15, 17, 20: legible runs transcribed (texts/f74r_signs.tsv) but not resolved - blocker: not-attempted
+- stain and blots in ll. 4, 6, 8, 10-14 - blocker: illegible
+- unkeyed signs ⊕, ⊔, ∨, ⊘, o°, rʒ, ø, ⊗, three in l. 1, tail-dash family {a—} {o—} {Ш—} - blocker: no-key-material; each once on f. 74r; ff. 66, 69, 75 not yet searched for them
 
 ## Escalation
 
 - [ ] siblings: ff. 66, 69, 75 of Cotton Caligula C II not searched for the six unkeyed signs
 - [x] clear-pages: f. 66r's decipherment used to check Tomokiyo's key
 - [x] known-keys: Tomokiyo's Mary-Norfolk key applied
-- [ ] print: no search for a printed text is recorded in these notes
+- [x] print: CSP Scotland iii (Boyd 1903) searched 23 Oct 2026: siblings calendared, f. 74 not
 - [n/a] key-rebuild: the key reads; the holes are in the reading
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: 23 Oct 2026 sign-by-sign re-read of all 23 lines; still decoded, not read

@@ -11,6 +11,12 @@ ff. 37r-38r (the Senate's answer, sentences with scattered gaps). **Decoded, not
 the tokens are in the piece that reads (820 of 1,563). The blockers in Remaining gaps (scan resolution, register copy)
 apply to the first piece as a whole.
 
+23 Oct 2026, re-read (REREAD_BRIEF batch b31, Claude Opus 5.5; `ff35-36_reread_log.md`): DECODE R2252 re-fetched
+logged in: the same nine images (about 1550 px per page), no attachment, transcription or comment; no better image or
+copy of the first piece reachable. First piece scored 0.161 (5/31): **kept decoded, not read** (needs-physical-access).
+The second piece, read since 22 Oct, scores 0.541 counting explicit holes only (0.351 plain), under the 0.60 bar:
+flagged for review.
+
 **Verdict (2026-10-09, fourth session): the letter is enciphered in the Zifra Prima of 1577-78 (ASVe CX, Cifre, b.4
 reg.16 ff.64-65 = DECODE R1789), with two extra homophones (d83 = a, c86 = o). The first-pass transcription's digit
 errors are systematic (7 read as 2, 8 as 0, 3/5/8 confused); corrected against the key and the DECODE images, 721 of
@@ -618,6 +624,7 @@ Section 0a of the writeup skill:
   letter or of the answer to de Maisse. Manuscript copies: ASVe Senato Secreta register; BL Add MS 30635-30637.
 - [n/a] key-rebuild: the key is the archival sheet R1789 and covers every code read; the two homophones the sheet
   lacks were found from context; no code among the 981 tokens read needs a value the sheet does not give.
+- [x] retry (23 Oct 2026): DECODE images re-fetched, no new material; first piece kept decoded, not read
 - [x] retry: 9 Oct 2026, every unread line retried computationally: calibrated noisy-channel decoder (dec.py, 89 %
   agreement with the hand reading on held-out pages) and crib fits of proposed texts (fit.py, chance level 10 % per
   token vs 80 % on the true lines, fitcontrol.py); 260 tokens gained (46.0 -> 62.7 %). The rest needs a better image

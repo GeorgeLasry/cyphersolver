@@ -1,8 +1,15 @@
 # BnF fr. 3413 no. 62 — letter to the abbé d'Orbais (Rome, 23 August [1589])
 
-Status: in progress. no. 62 decoded, not read: the clear text is not transcribed (reading audit, 22 Oct 2026).
+Status: in progress. no. 62 read 23 Oct 2026 (clear text transcribed, cipher runs in place: texts/no62_reading.md); site page and ledgers not yet updated.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): texts/no62_decryption.md is one line per cipher group and the letter's clear text is not transcribed, so the runs stand as isolated words and no sentence can be built: no. 62 is *decoded, not read*. Class read in part -> not read, method -> not solved, fraction_read 0.824 -> 0 (75/91 signs read as sense, withdrawn as a reading figure).
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b31, Claude Opus 5.5).** Gallica views 259-262 fetched at full resolution;
+the clear text of ff. 126r-127r transcribed for the first time and the fourteen cipher runs set in their clauses:
+`texts/no62_reading.md` (+ `_en.md`, `_reread_log.md`). The letter is signed *Baron* on f. 126v (the postscript on f. 127r
+is in his name, apologising for Cassin's fever). C and V2 retried in full context, still unread. Reading body 0.882 plain
+(45/51), 1.0 explicit holes; look-alike letters 0. **no. 62 decoded, not read -> read (B)**; class -> read in part,
+method -> read with known key, fraction_read 0 -> 1.
 
 Catalogue item: "Letter to the abbé d'Orbais, with three loose keys in the volume" (Gallica `btv1b52510705j`).
 
@@ -157,14 +164,16 @@ depeschera … dedans deux jours **le doien**; **la protection**; Mons. **Cassin
 
 ## Remaining gaps
 
-- S1 first sign `Ƃ` (subject of "depeschera": Sa Sainteté? il?) - blocker: open-codes; a single code sign, no entry in Tomokiyo's table and not on the aligned part of fr. 4715 f. 2
-- S1 last sign `ʃ` after "depeschera" - blocker: open-codes; the jay value does not fit here, one sign
-- G `τ` (after "Mr le") - blocker: open-codes; one code sign, sense probably "Cardinal", no key entry
+- S1 first sign `Ƃ` (subject of "depeschera": Sa Sainteté? il?) - blocker: no-key-material; a single code sign, no entry in Tomokiyo's table and not on the aligned part of fr. 4715 f. 2
+- S1 last sign `ʃ` after "depeschera" - blocker: no-key-material; the jay value does not fit here, one sign
+- G `τ` (after "Mr le") - blocker: no-key-material; one code sign, sense probably "Cardinal", no key entry
 - C `φ tt o V æ ʃ° ÷` ("ce qui touche …") - blocker: no-key-material; known values give v-o-p-a-e-y-s (5 Oct: ʃ° = y), not sense; the missing values would come from fr. 3612 (not digitised)
 - V2 `n a æ η ⊡ θ` ("à vostre …") - blocker: no-key-material; re-transcribed 5 Oct (⊡ not ◻), known values give et-f-e-g-r-e, not sense; same source missing
-- no. 62 as a running text: clear text not transcribed - blocker: not-attempted; transcribe ff. 126r-127r from Gallica (btv1b52510705j, canvases 259-261) and set the 14 cipher runs in their clauses, with a translation
+- no. 62 as a running text: closed 23 Oct 2026 (texts/no62_reading.md)
 
 ## Escalation
+
+- [x] retry (23 Oct 2026): clear text transcribed, runs set in context, C and V2 retried in full context; unread
 
 - [x] siblings: fr. 4715 f. 2 (same cipher, interlinear) fetched at full resolution, 29 lines viewed, ~50 words aligned (`fr4715_f2_aligned.txt`); lines 7, 9-11, 13, 16, 18, 21-29 not aligned sign by sign
 - [x] clear-pages: the letter itself is clear except the 14 runs; its context gave the cribs

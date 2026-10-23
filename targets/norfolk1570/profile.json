@@ -137,6 +137,26 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): the f. 74r reading (texts/f74r_decryption.md, copied from NOTES) read line by line: about half the lines carry [..] holes or unkeyed signs and the argument builds only in part. Per-document C confirmed; f. 74r relabelled decoded, not read; class read -> not read; method read with known key -> not solved; fraction_read unknown -> 0.",
    "result": "failed",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "what": "f. 74r: all 23 lines transcribed sign by sign on the BL IIIF line strips (texts/f74r_signs.tsv) and re-decoded with Tomokiyo's 2023 key; 20 corrections logged (texts/f74r_corrections.tsv): [g]entle, be not [lost], B[ishop of Ross], [to], [It], [lie?] withdrawn as not carried; 'that veyt', 'begen', 'demen' from the signs. CSP Scotland iii searched (archive.org OCR): the letter is not calendared; no decipherment found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "hypothesis",
+   "what": "Unkeyed signs on f. 74r (⊕, ⊔, ∨, ⊘, o°, rʒ, ø, ⊗, three in l. 1, the tail-dash family {a—} {o—} {Ш—}) tried for values: each occurs once or in one small family; 'our {o—} Murray' = enemy is sense-only, flagged; none adopted.",
+   "result": "failed",
+   "technique": ["contextual inference"]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "f. 74r running text (texts/f74r_reading.md) scored: 0.229 plain, 0.829 explicit holes, 0.714 with unkeyed signs as holes; look-alike letters 3/1493. Reader's judgement: the opening, the 'experiance' sentence, ll. 10-11 and l. 15 do not build; kept decoded, not read.",
+   "result": "failed",
+   "technique": ["language-model scoring"]
   }
  ],
  "outcome": {
@@ -159,25 +179,31 @@
    {
     "doc": "f74r",
     "label": "Mary Queen of Scots to Norfolk, 'the 20th' [Feb or Mar 1570], BL Cotton MS Caligula C II f. 74r",
-    "decryption": "texts/f74r_decryption.md",
-    "summary": "Written after Moray's murder at Linlithgow (23 Jan 1570): Mary tells Norfolk she will undertake nothing unless it is safe for them both, urges him to write to the Bishop of Ross and to act through his sister Scrope or others, says Elizabeth blames her for Moray's death, reports rumours of Morton and Lord Talbot, and begs him not to risk writing in his own hand. No sign-level transcription of the cipher exists; the reading was made on the image strips.",
+    "decryption": ["texts/f74r_decryption.md", "texts/f74r_signs.tsv", "texts/f74r_reading.md"],
+    "summary": "Written after Moray's murder at Linlithgow (23 Jan 1570): Mary tells Norfolk she will undertake nothing unless it is safe for them both, urges him to write and to act through his sister Scrope or others, says Elizabeth gives her the blame ('veyt') for Moray's death, reports rumours of Morton and Lord Talbot, and begs him not to risk writing in his own hand. Signs transcribed line by line on 23 Oct 2026 (texts/f74r_signs.tsv); partial running text in texts/f74r_reading.md.",
     "language": "en",
     "state": "decoded, not read",
-    "note": "Mary's Scots-English reads in places, but lines 1, 4-6, 8-10 and 12-17 carry [..] holes, a stain or unkeyed nomenclator signs, so about half the sentences do not build (reading audit, 22 Oct 2026); fix: re-read those lines on the line strips (view/Lnn*.jpg, from the BL IIIF images) and settle the six unkeyed signs from the sibling letters ff. 66, 69, 75, then write a running text with a modern English version."
+    "note": "Re-read sign by sign 23 Oct 2026 (batch b31; texts/f74r_signs.tsv, f74r_corrections.tsv, partial reading f74r_reading.md, f74r_en.md): four supplied words of the old reading withdrawn as not carried; 13 unkeyed signs, each single or in one small family, none adoptable. Scores 0.229 plain, 0.829 explicit holes only, 0.714 with the unkeyed signs counted as holes; look-alike letters 3/1493. Kept decoded, not read: the opening sentence, the 'For I have experiance' sentence, the cardinal clause, ll. 10-11 and l. 15 do not build, and legible runs in ll. 11, 15, 17, 20 are not yet resolved; ff. 66, 69, 75 not yet searched for the unkeyed signs.",
+    "transcription": "texts/f74r_signs.tsv"
    }
   ],
   "fraction_read_method": "measured",
   "fraction_read_source": "Reading audit, 22 Oct 2026: f. 74r, the only document, is decoded, not read, so no tokens are in a document that reads. The field was \"unknown\" before.",
   "gaps": [
    {
-    "item": "f. 74r as a running text: decoded, not read",
+    "item": "f. 74r ll. 11, 15, 17, 20: legible runs not resolved (a 8 ρ a; the run after 've'; a φ ρ; 'the last […]')",
     "blocker": "not-attempted",
-    "detail": "re-read lines 1, 4-6, 8-10, 12-17 on the BL IIIF strips (fetch.py/strips.py) against Tomokiyo's key; place the signs ⊕, ⊘, ø, ⊗ and the dash signs from ff. 66/69/75"
+    "detail": "transcribed in texts/f74r_signs.tsv; no decode in sense yet"
    },
    {
-    "item": "unkeyed nomenclator signs ⊕, ⊘, ø, ⊗, {a—}, {o—}",
-    "blocker": "open-codes",
-    "detail": "not in Tomokiyo's key; each occurs once or twice"
+    "item": "unkeyed signs ⊕, ⊔, ∨, ⊘, o°, rʒ, ø, ⊗, three in l. 1, and the tail-dash family {a—} {o—} {Ш—}",
+    "blocker": "no-key-material",
+    "detail": "each once on the page; ff. 66, 69, 75 (same cipher) not yet searched for them"
+   },
+   {
+    "item": "stain and blots in ll. 4, 6, 8, 10-14",
+    "blocker": "illegible",
+    "detail": "red-channel flattening tried on the BL IIIF image"
    }
   ]
  }

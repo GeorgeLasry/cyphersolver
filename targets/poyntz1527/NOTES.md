@@ -1,9 +1,17 @@
 # Lee, Ghinucci and Poyntz to Wolsey, Valladolid, July 1527 (BL Cotton MS Vespasian C IV ff. 174-177 and 182-185; DECODE R8565, R8567)
 
 
-Status: in progress. R8567 read at the time; R8565's decipherment not yet transcribed (reading audit, 22 Oct 2026).
+Status: in progress. R8567 read at the time; R8565 read 23 Oct 2026 from its contemporary decipherment (texts/R8565_reading.md); site page and ledgers not yet updated.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R8567's three runs (plaintext.txt) read. Nothing of R8565's decipherment is in the repository, only the calendar paraphrases below, so R8565 is *decoded, not read*, with an excerpt note: the full decipherment is Tuke's, on the DECODE images and in L&P IV 3271 (British History Online). Class already solved kept; fraction_read 1 -> about 0.38 (by runs, estimated).
+
+**23 Oct 2026, re-read (REREAD_BRIEF batch b31, Claude Opus 5.5).** R8565 fetched logged in at full resolution (8 images +
+Tomokiyo's key png), every image opened. P1 opens with the 15 July audience: the record is the separated part of L&P IV
+3271 (the open check below is closed). Cipher in five places (f. 174r one word *intimacion*; ff. 174v-175r; 175r; 176v;
+177r), each with the contemporary decipherment over or between the lines or in the margin (f. 175r). Transcribed in
+`texts/R8565_reading.md` (+ `_en.md`, `_reread_log.md`); every passage checked against the signs with Tomokiyo's key, all
+checked words agree; sign `5` = *not* (two places, not in the table). Reading body 0.909 explicit-hole share (20/22),
+0.227 plain (1527 spelling); look-alike letters 0. **R8565 decoded, not read -> read (B)**; fraction_read 0.38 -> 1.
 
 Catalogue no. 110 (DECODE refill, rule-scored class B). Worked 21 Sept 2026.
 
@@ -77,7 +85,8 @@ under poyntz1527 in decode_updates/queue.json (R8565 and R8567). Removed from th
 
 ## Remaining gaps
 
-- R8565: Tuke's decipherment not transcribed - blocker: not-attempted; transcribe the five interlinear bands from the DECODE images (cookie at targets/bordeaux/decode/cookie.txt) and check them against L&P IV 3271 and Tomokiyo's key
+- R8565: closed 23 Oct 2026 (decipherment transcribed and checked, texts/R8565_reading.md)
+- R8565: [?bere] (f. 174v) and four words before 'the doughter of Portugalo' (f. 176v) - blocker: illegible; written over each other, signs faint at DECODE's resolution
 
 ## Escalation
 
@@ -86,4 +95,4 @@ under poyntz1527 in decode_updates/queue.json (R8565 and R8567). Removed from th
 - [x] known-keys: Tomokiyo's Lee-Worcester key, spot-checked
 - [x] print: L&P IV 3271 and 3272
 - [n/a] key-rebuild: read at the time
-- [ ] retry: the re-reading named in Remaining gaps is not done yet
+- [x] retry: 23 Oct 2026, R8565 decipherment transcribed from the full-resolution images and checked sign by sign
