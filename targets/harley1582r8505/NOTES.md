@@ -7,9 +7,33 @@ Worked 22 September 2026.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can a reader build coherent sentences and translate them?):
 R8505 is **decoded, not read**. `reading.txt` gives the cipher clauses as strings of French word fragments with `[#]`
-holes in most lines (f. 263v 3.38-3.41 almost noise); only the clear French around them reads. Class read -> not
+holes in most lines (f. 264v 3.38-3.41 almost noise); only the clear French around them reads. Class read -> not
 read, method -> not solved (the ciphertext-only key kept as a part); 95.1% (characters in vocabulary words) withdrawn
 as a reading figure. The outcome line below is superseded.
+
+**23 Oct 2026, re-read (REREAD_BRIEF, batch b28)**: stays *decoded, not read*. `R8505_reading.md` (whole memoir,
+holes marked) scores 0.518 clean sentences (0.613 on explicit holes; before, `reading.txt`, 0.454). f. 263r was re-read
+sign by sign on the higher-resolution images of **DECODE R8010, a duplicate record of ff. 263r-264v** ("Harley_ms_1582_8")
+and now reads (0.661 alone): 8 labels corrected (`R8505_corrections.tsv`); the first transcription's `d` (crossed
+delta, a) also covered the crossed epsilon `Eb` (t) on the rectos ("sentent du gouvernement", "devant Espernon"); key
+unchanged. `reading.py` had dropped every `#` (d) as a code marker; `b28_r8505_decode.py` fixes it. f. 264r is still the
+first transcription (beam over look-alikes helps only in places). Files: `R8505_reading.md`, `R8505_en.md`,
+`R8505_reread_log.md`, `R8505_transcription_f1_b28.txt`.
+
+**23 Oct 2026, second pass (b28)**: f. 264r's 25 cipher lines compared with R8010 P3 (9 label corrections,
+`R8505_transcription_f2_b28.txt`); f. 264v ll. 3.38-3.46 re-transcribed on R8010 P4 (`R8505_transcription_f3_b28.txt`):
+it reads in part ("ni selon sa qualite ni selon la leur, les a abandonnees en besoin ... en risee et en proie a leurs
+ennemis"), so it is not illegible. **The versos were labelled the wrong way round: `final/f3.txt` is f. 264v,
+`final/f4.txt` is f. 263v** (R8010 P2 = 263v holds Languedoc; P4 = 264v; P3 carries the folio number 264); every folio reference in this file now follows the corrected labels (3.xx lines = f. 264v, 4.xx lines = f. 263v). Clear French of f. 263r's lower half and of f. 264r transcribed. Score
+0.530 (0.650 explicit holes; f. 263r 0.691, f. 264r 0.351, f. 264v 0.407): stays *decoded, not read*.
+
+**23 Oct 2026, third pass (b28)**: f. 263v's clear French transcribed in full from R8010 P2 and set around its
+cipher runs (4.1-4.11). Whole reading body 0.529 clean sentences (0.691 explicit holes); by side f. 263r 0.691,
+f. 263v 0.519, f. 264r 0.351, f. 264v 0.407. Still *decoded, not read*: the cipher clauses of ff. 264r and 264v do not
+build. Folio references in this file and in profile.json checked against the corrected leaf order.
+
+**DECODE note (for decode_updates)**: R8010 duplicates R8505 (same leaves, better images); R8009 is an empty record of
+the same name; R8505's language should be French, title "L'Estat du Roy de Navarre & de son party en France".
 
 **Outcome: broken and read (95.1% measured).** The two records of the catalogue item are different things:
 
@@ -85,7 +109,7 @@ against b (n). Controls: "de beau|caire" (Beaucaire on the Rhone), "d'une bonne 
 - f. 264r: "cependant ne laissent ... qu'il n'y ait quelque gentilhomme ... les causes ... ceux de la Religion ...
   munitions qu'on a ... la guerre ... nos provinces ... quand nos ennemis ... fortes et asseurees ... pour la
   conservation ..."
-- f. 264v (Languedoc): "et maintenant jouissant de l'amitie estroite de Monsieur de Mont[morenci], auquel la leur
+- f. 263v (Languedoc): "et maintenant jouissant de l'amitie estroite de Monsieur de Mont[morenci], auquel la leur
   est necessaire ... places de toute la province de Languedoc ... estant icelui asseure de **Beaucaire sur le
   Rosne** et de la seneschaussee de **Besiers** ... **Carcassonne** ... et autres places d'importance ... a la
   devotion du Roy de Navarre."
@@ -122,7 +146,7 @@ them. They are recorded as open codes.
 
 ## Corrections
 
-- **30 Sept 2026 (filling the gaps in the quotation for Lasry's list).** f. 263v lines 3.18-3.24 re-read on the image
+- **30 Sept 2026 (filling the gaps in the quotation for Lasry's list).** f. 264v lines 3.18-3.24 re-read on the image
   (`img/p3.jpg`) and re-decoded sign by sign with `key.json`, so that one run reads continuously with its clear
   context (normalised text at the end of `reading.txt`): "... Et je scay que des l'an passé le Roy d'Espagne faisoit
   traicter a la soubz main avec luy par un certain italien qui sert d'ingenieur a Lisbone, dont les letres me sont
@@ -134,18 +158,14 @@ them. They are recorded as open codes.
   second transcription's reading, so `final/f3.txt` changes b -> T there; the next sign is the o-sign where s is
   wanted: "ceu[s] de Guise en Escosse" replaces "C en o deguisee nes C o". Clear words re-read: "des l'an passé"
   (was "des lan- / part"), "faisoit traicter" (was "faisons traictes"), "sa fille [de]" (was "&"). The key is
-  unchanged. `evalct.py` in this checkout gives 0.911 over all four sides both before and after the change (f. 263v
+  unchanged. `evalct.py` in this checkout gives 0.911 over all four sides both before and after the change (f. 264v
   0.905 -> 0.906); the 95.1% above was measured in the main checkout with its vocabulary build.
 
 ## Remaining gaps
 
-- R8505 ff. 263r-264v, decoded, not read - blocker: not-attempted; re-read ff. 263r and 264r sign by sign as the versos were, check every break against the image and the key, build sentences, translate
-- open-codes: the ten nomenclator numbers (6, 21, 26, 36, 51, 57, 72, 81, 99, 721), 14 tokens in all, have no
-  values; they are names, and nothing in the text fixes them.
-- illegible: about 5% of the text does not resolve into French words. It is scattered, not concentrated: faint
-  ink, and shapes ambiguous between two members of the same family. ff. 263r and 264r would gain most from the
-  same sign-by-sign re-reading the two versos got; the lines f. 263v 3.38-3.46 are the weakest on the page and
-  are marked provisional in `ct2_p3.txt`.
+- the cipher clauses of f. 264r (2.5-2.7, 2.16-2.25) and f. 264v (3.1-3.5, 3.39-3.47) that do not build - blocker: no-key-material; tokens confirmed on the R8010 images, the key (rebuilt from this text alone) gives no French there, and no second text in the same key is known
+- doubtful names and words in the clear text of all four sides, marked [?…] - blocker: illegible; fine secretary hand at the photograph's resolution
+- the ten nomenclator numbers (6, 21, 26, 36, 51, 57, 72, 81, 99, 721), 14 tokens - blocker: no-key-material; names, nothing in the text fixes them
 
 ## Escalation
 
@@ -156,9 +176,8 @@ them. They are recorded as open codes.
       is on DECODE or in Tomokiyo's tables. The key was rebuilt here from the ciphertext.
 - [x] print: the memoir is not in the Calendars of State Papers Foreign 1583-86 and no printed copy was found.
 - [x] key-rebuild: done - see "How it was broken".
-- [~] retry: ff. 263v and 264v were re-read sign by sign against the recovered key; ff. 263r and 264r were only
-      emended between the proven confusable pairs, because the session's agent capacity ran out. That second
-      reading of the two remaining sides is the open task.
+- [x] retry: the versos re-read sign by sign (Sept); f. 263r re-read sign by sign and f. 264r compared line by
+      line with the image, f. 264v 3.38-3.46 re-transcribed, 23 Oct 2026 (b28, R8010 images).
 
 ## Files
 
