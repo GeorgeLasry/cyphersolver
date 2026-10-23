@@ -368,6 +368,13 @@
    "technique": ["plaintext matching"],
    "result": "worked",
    "what": "Verification 5 (plain-bar rows): R1067, R1068, R1070, R1073, R1076 keyed decodes scored plain 0.41-0.56 (R1068 0.2) on their bodies. Their Fagel register clear copies (WAINUT's transcription; 5186 16R, 17L, 149R, 150L, 255R, 256L checked against the NA IIIF scans here, the others already checked) written out as read/<R>_reading.md in the clerk's spelling, two register slips in R1076 corrected from the figures; plain 0.821/0.75/0.923/1.0/0.974, explicit 1.0. R1069 (Lyonet's clear decipherment, plain 0.5) fails only on 'Mr' and names: keeps read."
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "result": "worked",
+   "what": "r2q: R1054 and R1064 (decoded, not read since the translation wave, 0.54/0.57 explicit) read from their Fagel register clear copies, NA 1.10.29 inv. 5186 248R-249L and 62R-63R. The five scans fetched through the NA IIIF server and WAINUT's Gemini transcription checked line by line (two misreadings on 63R/63L corrected). Every key/register disagreement in wainut/align/R1054.tsv and R1064.tsv looked at, R1054's on the cipher image I5511: two DECODE parse errors fixed (8^6 31 = 831; 878^6 = one group), and the figures followed where they give another word (R1054: M. le Maréchal, sa communication, que par le; R1064: Senechal de Quintin, point x2, étoit, la taire, remarquerez, les deux Capitaines). Readings read/R1054_reading.md (plain 1.0, explicit 1.0) and read/R1064_reading.md (plain 0.764, explicit 1.0), with English files and reread logs; both set to read, grade A."
   }
  ],
  "outcome": {
@@ -411,9 +418,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.76,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after both passes of Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,761/9,306 groups: Lyonet-deciphered letters (3,486) counted read, the ten letters with no decipherment on DECODE 5,275/5,820 = 0.906. First pass only: 8,492 (0.913). 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts. Revised 23 Oct 2026 (translation wave): R1054 and R1064 moved to decoded, not read (0.54, 0.57); 0.941 reduced by their share of the decryption words (2,198 of 11,625).",
+  "fraction_read": 0.941,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after both passes of Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,761/9,306 groups: Lyonet-deciphered letters (3,486) counted read, the ten letters with no decipherment on DECODE 5,275/5,820 = 0.906. First pass only: 8,492 (0.913). 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts. Revised 23 Oct 2026 (translation wave): R1054 and R1064 moved to decoded, not read (0.54, 0.57); 0.941 reduced by their share of the decryption words (2,198 of 11,625). Restored 23 Oct 2026 (r2q): R1054 and R1064 read from their Fagel register clear copies (scans checked, figures followed where they differ), so the measured 0.941 (8,761/9,306 groups) stands again.",
   "key": "partial",
   "codes_open": {
    "tokens_open": 1024
@@ -497,13 +504,20 @@
    },
    {
     "doc": "codeAB",
-    "note": "23 Oct 2026 (translation wave v7): R1054's keyed decode with codes scores 0.54 on explicit holes; under the bar. Kept decoded, not read.",
     "label": "R1054, 19 Jul 1757",
     "transcription": "decode/DOC_R1054_D2332_2332.txt",
     "decryption": "read/R1054.md",
     "summary": "The purpose of the Gouvernante's (Princess Anne's) journey to The Hague is not known. Some think she comes to push an augmentation of the land forces; her (pro-Orange / anti-French) party and even the ministers are starting to raise alarm; others say she wants a naval augmentation.",
     "language": "fr",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading": "read/R1054_reading.md",
+    "translation": "read/R1054_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r2q 23 Oct 2026: the keyed decode read/R1054.md scored 0.54 explicit (v7; plain 0.607, explicit 0.643 on its body here). The contemporary clear copy is in the Fagel register, NA 1.10.29 inv. 5186 scans 248R-249L; WAINUT's Gemini transcription checked line by line against the NA IIIF scans (agrees word for word). 319/364 keyed groups stand at the register's word (0.876; shuffled 0.144). Reading follows the register in the clerk's spelling for the one cipher page on the record, and the figures where they give another word: 'à M. le Maréchal d'Estreés' (196 878 185; register 'au Cte.'; the DECODE parse had split 878^6 into 8 786), 'de sa communication' (10 = sa), and the page's last words 'que par le' (306 = par; register 'que je le voudrois'). Groups 101 and 760 (no value) are passed over as by the contemporary decipherer. Plain 1.0 (22/22), explicit 1.0. Log read/R1054_reread_log.md; parse corrections read/R1054_corrections.tsv."
+    }
    },
    {
     "doc": "codeAB",
@@ -537,12 +551,19 @@
    },
    {
     "doc": "codeAB",
-    "note": "23 Oct 2026 (translation wave v7): R1064 scores 0.57 on explicit holes, paragraphs 9-13 do not build. Kept decoded, not read.",
     "label": "R1064, 1 Feb 1757, no. 136",
     "transcription": "transcr/R1064.txt",
     "decryption": "read/R1064.md",
     "language": "fr",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading": "read/R1064_reading.md",
+    "translation": "read/R1064_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "r2q 23 Oct 2026: the keyed decode read/R1064.md scored 0.57 explicit (v7; plain 0.646, explicit 0.785 on its body here; paragraphs 9-13 did not build). The contemporary clear copy is in the Fagel register, NA 1.10.29 inv. 5186 scans 62R-63R; WAINUT's Gemini transcription checked line by line against the scans (two misreadings corrected: '18. Janvier' for '10.', 'Se taire' for 'le taire'). 996/1,201 keyed groups at the register's word (0.829; shuffled 0.153). Reading follows the register in its paragraph order and the clerk's spelling, and the figures where they give another word: 'au Senechal de Quintin' (se-ne-cha-l; the clerk left a blank and a deleted 'ne ... soit'), 'point' for 'pas' twice (948), 'il étoit important' (842), 'ou de la taire', 'Vous remarquerez', and 'regardoit les deux Capitaines et le Chirurgien' (the register omits the captains). Plain 0.764 (55/72; the 17 sentences under fail only on Mr, names, numbers and the clerk's spelling), explicit 1.0. Log read/R1064_reread_log.md."
+    }
    },
    {
     "doc": "codeAB",

@@ -303,7 +303,7 @@ keeps read. No English files yet for the register readings (summaries in the pro
 
 - 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material; the register piece is noise or the occurrences disagree
 - groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895 devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: no-key-material; one value per group is all key_X can hold, so the measure under-reads these
-- register pages other than the scans listed above (5186 249L; 256L checked 23 Oct 2026, v5) were not read here; WAINUT's Gemini transcription of them is unchecked; they bear on R1054 and R1064 (decoded, not read since 23 Oct) - blocker: not-attempted
+- R1054 and R1064 groups that the Fagel register passes over without a word (R1054: 101, 760; R1064: 103, 178 in a false start, 146, 29 108) and the R1064 passport-date groups 978 634 114 - blocker: no-key-material; the register pages 5186 248R-249L and 62R-63R were checked on the scans 23 Oct 2026 (r2q) and both letters now read from them, these groups have no value in any letter
 
 Not a gap of unread text but a possible improvement (moved out of the gap list 14 Oct 2026): R1054, R1068, R1070,
 R1073 and R1076 are measured on the DECODE parse (view.fix splits), not re-transcribed from the images; they already
@@ -319,6 +319,7 @@ measure 0.75-0.95, and their unread groups are the open codes above.
 - [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -> 0.823 of all groups)
 - [x] clear-pages (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -> 0.913)
 - [x] the register's words for the valueless groups (wainut/open_groups.tsv): 86 adopted after a scan check, 45 left open (second pass, 21 Oct 2026; 0.913 -> 0.941)
+- [x] clear-pages (register, R1054/R1064): 23 Oct 2026 (r2q), 5186 248R, 249L, 62R, 63L, 63R checked on the scans; both letters read from the register, figures followed where they differ
 
 ## Contribution by WAINUT (21 Oct 2026)
 
@@ -484,3 +485,10 @@ at the links above.
 ## 23 Oct 2026: R1054 and R1064 back to decoded, not read (translation wave)
 - R1054 (keyed decode with codes, 0.54 explicit holes) and R1064 (0.57; paragraphs 9-13 do not build) fall under the 0.60 bar and are set to **decoded, not read**. fraction_read 0.941 -> about 0.76 (estimated).
 - Remaining gap: R1054, R1064 code groups with no key value - blocker: no-key-material.
+
+## 23 Oct 2026 (r2q): R1054 and R1064 read from the Fagel register, figures followed where they differ
+- Register pages 5186 248R-249L (R1054) and 62R-63R (R1064) fetched through the NA IIIF server (`research/reading_audit/b32_na_iiif.py`) and WAINUT's Gemini transcription checked line by line: 248R/249L/62R exact; two misreadings, 63R "du 10. Janvier" is "du 18." and 63L "ou de le taire" is "ou de Se taire" (`read/R1064_corrections.tsv`). Every page of `wainut/register_clear.txt` has now been checked against its scan.
+- Every key/register disagreement in `wainut/align/R1054.tsv` and `R1064.tsv` gone through, R1054's on the cipher image I5511. Two DECODE parse errors in R1054: row 4 "8^6 31" is 831 (parti-sans), row 20 "878^6" is one group 878 (le), not 8 786 (`read/R1054_corrections.tsv`).
+- Figures followed over the register: R1054 "à M. le Maréchal d'Estreés" (register "au Cte."), "de sa communication" (10 = sa), and the page's last words "que par le" (306 = par; register "que je le voudrois"; the second page of the letter is not on the DECODE record). R1064 "au Senechal de Quintin" (se-ne-cha-l; the clerk left a blank and deleted "ne ... soit"), "point" for "pas" twice, "il étoit important", "ou de la taire", "Vous remarquerez", and "regardoit les deux Capitaines et le Chirurgien" (the register omits the captains).
+- Readings `read/R1054_reading.md` (plain 1.0, explicit 1.0; before 0.607/0.643 on the keyed decode's body) and `read/R1064_reading.md` (plain 0.764, explicit 1.0; before 0.646/0.785; the sentences under the plain bar fail only on Mr, names, numbers and the clerk's spelling), English `R1054_en.md`, `R1064_en.md`, logs `R1054_reread_log.md`, `R1064_reread_log.md`. Profile: both entries read, grade A; fraction_read back to the measured 0.941. Script `research/reading_audit/r2q_affry_write.py`, profile edits `r2q.py`.
+- Open: the few groups the register passes over (Remaining gaps), blocker no-key-material.
