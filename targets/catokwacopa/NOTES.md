@@ -276,3 +276,9 @@ deathbed statement, Walrond is not W.; if it is a quoted or reported declaration
 University Calendars of 1854-55, which would name the Hertford examiners, are not on the Internet Archive. Their
 names would only add cribs, and the Balliol surnames decided no line. The open lines are now blocked on outside
 material, a contemporary identification of W. or the British Newspaper Archive originals, not on further search here.
+
+**Last routes checked (same day).** The Oxford University Calendar for 1854/55 is on HathiTrust (record 000062153),
+but the site serves a bot challenge to both scripted and in-app browser requests, so it was not opened. An *Annals of
+Science* article (2023, doi 10.1080/00033790.2023.2290187) notes that scholarship examiners were not recorded as
+systematically as moderators. The klausschmeh.net thread, refetched on 24 Oct 2026, has no comment after
+3 Sept 2026. Nothing reachable from here remains untried.
