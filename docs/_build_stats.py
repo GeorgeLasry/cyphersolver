@@ -176,9 +176,9 @@ def build(items):
     got = [it for it in items if it['cat'] in ('ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph')]
     keyonly = lambda cats: sum(1 for it in got if it['cat'] in cats and it['ext'].startswith('none'))  # key, text not read (Lasry, 24 Oct 2026)
     ko_b, ko_a = keyonly(('ct', 'extpt', 'adjpt')), keyonly(('extkey', 'known', 'deciph'))
-    part = sum(1 for it in got if it['ext'] == 'partial')
+    part = sum(1 for it in got if it['ext'].startswith('partial'))
     attacked = total - n['na'] - n['active']
-    read = [it for it in got if it['ext'] == 'complete' and it['year']]
+    read = [it for it in got if it['ext'].startswith('complete') and it['year']]
     silence = sum(YEAR_NOW - it['year'] for it in read)
     oldest = min(read, key=lambda d: d['year'])
     span = [it['year'] for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
@@ -192,18 +192,18 @@ def build(items):
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
     lines.append('<h2 id="sb-h"><span class="num">&sum;</span> The ledger so far</h2>')
-    lines.append(f'<p class="sb-lede">{total} targets. Each is classed by how its text was obtained (the <a href="glossary.html">method</a>) and by how much of it was obtained (complete or partial). {n["na"]} turned out not to be ciphers or could not be reached, and {n["active"]} are in progress, which leaves {attacked} attempted.</p>')
-    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} targets by method">{bar}</div>')
+    lines.append(f'<p class="sb-lede">{total} entries, one per row of the results tables (a target with several letters can take more than one). Each is classed by how its text was obtained (the <a href="glossary.html">method</a>) and by how much of it was obtained (complete or partial). {n["na"]} turned out not to be ciphers or could not be reached, and {n["active"]} are in progress, which leaves {attacked} attempted.</p>')
+    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} entries by method">{bar}</div>')
     lines.append(f'<div class="sb-legend">{legend}</div>')
     lines.append('<div class="sb-grid">')
     by_contrib = sum(1 for it in items if it['cat'] in ('ct', 'extpt', 'adjpt') and it['outside'])
     who = f' {by_contrib} of them with <a href="contributors.html">outside contributors</a>.' if by_contrib else ''
     lines.append(f'<div class="sb-big"><b>{broke}</b><span>keys recovered in this ledger by cryptanalysis: {n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></div>')
-    lines.append(f'<div class="sb-big"><b>{applied}</b><span>targets worked with a key or decipherment that already existed: {n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></div>')
+    lines.append(f'<div class="sb-big"><b>{applied}</b><span>entries worked with a key or decipherment that already existed: {n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></div>')
     lines.append(f'<div class="sb-big"><b>{n["notsolved"]}</b><span>attempts closed without recovering the text. Each one&rsquo;s notes say why it stopped.</span></div>')
     lines.append(f'<div class="sb-big"><b>{silence:,}</b><span>years of silence ended, summed over the {len(read)} dated texts obtained in full ({part} more are partial): each had waited from its date until {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
     lines.append('</div>')
-    lines.append(f'<p class="sb-note">Every target by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a colour in the legend to isolate a method.</p>')
+    lines.append(f'<p class="sb-note">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a colour in the legend to isolate a method.</p>')
     lines.append(timeline_svg(items))
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
     lines.append('</section>')
