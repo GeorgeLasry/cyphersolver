@@ -64,3 +64,22 @@ make him do many things that perhaps …
 - What we checked: f13r cipher rows 2-4: contemporary interlinear "...pance que le vouloir quil a de se vanger des Florentins et du duc de Ferrare luy feroist beaucoup de choses qui par advanture" = his excerpt; sign-level decode not done
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: f13v only in part (1/2 pages fully deciphered) though 98.7% of elements identified. Docket "1528 Italie". Turenne (Francois de La Tour) in Rome 1528 fits.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/55_francais-2999-turenne-ff13r13v.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 1.0 (v10_relabel.measure); deciphered passages alone 0.994. His report: 1/2 pages deciphered, 1 more in part. Outcome: read in part. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.
+
+## Remaining gaps
+
+- f13v: 10 of 785 elements unidentified (5 unidentified signs, 2 uncertain readings); page deciphered in part - blocker: no-key-material; no value in his 46-symbol key; the interlinear plaintext does not cover them.
+
+## Escalation
+
+- [x] siblings: neighbouring items of the volume belong to Lasry's BnF survey; his report uses what he found
+- [x] clear-pages: the plaintext he names in his report (interlinear, margin or same-volume decipherment) is the material the key came from
+- [x] known-keys: Lasry's reconstructed key is the key used; shown on the page
+- [x] print: only the editions his report cites; none closes the unread groups (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

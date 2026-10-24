@@ -188,7 +188,7 @@ def auto(T, doc='#0', lang=None, state=None, why='', dry=False):
             'what': f"{SRC} received and extracted to lasry/report/ (summary, key image, excerpt and translation, full "
                     f"Readable text by folio); outcome.texts now points at his full text. Read share {rs} (whole), "
                     f"{cs} (deciphered passages); state {state}.",
-            'result': 'success' if state == 'read' else 'partial'}
+            'result': 'worked' if state == 'read' else 'partial'}
     print(json.dumps(dict(fields=fields, step=step), ensure_ascii=False, indent=1))
     if dry: return
     set_fields(T, doc, fields)

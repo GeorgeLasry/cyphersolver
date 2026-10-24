@@ -86,3 +86,7 @@ standing…
 ## Notes and corrections
 
 The recipient is in the heading: the letter is addressed "Serenma Madama", a duchess. The report says the recipient is not established in the checked postscript.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.982 (v10_relabel.measure), deciphered passages 0.99 (bare ? counted as unread). His status: 2/2 pages transcribed; 2/2 pages deciphered. Outcome: read.

@@ -106,10 +106,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Clairambault 1161): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.992 (whole), 0.909 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "key recovered based on adjacent plaintext",
     "parts": [
@@ -117,16 +123,16 @@
         "label": "Lasry's reading",
         "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "George Lasry, BnF cipher research, 10 Oct 2026"
+        "basis": "George Lasry's report PDF (24 Oct 2026): key image, excerpt and translation, full Readable text by folio (lasry/report/)."
       }
     ],
-    "method_basis": "Method category from our spot-check of Lasry's report (ciphertext-only: No).",
+    "method_basis": "George Lasry's report PDF (24 Oct 2026, lasry/report/): ciphertext-only No; his key with the plaintext beside the cipher (key recovered based on adjacent plaintext).",
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.967,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 0.909,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026, deciphered passages of George Lasry's full Readable text (lasry/report/readable.md, report PDF of 24 Oct 2026): 0.909; whole text 0.992 (v10_relabel.measure).",
     "verification": [
       "independent verification"
     ],
@@ -145,11 +151,25 @@
       {
         "doc": "clair1161",
         "summary": "Political notices concerning England and Flanders: English arms and the Tower, religious policy, ships bound for Spain, Genoese lending, foreign courtiers, and a reported plan to force entry at Hampton Court.",
-        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Cipher is bound next to an unrelated 1707 certificate copy (f161v), so date and context depend on content only; 1554/55 (Mary Tudor, Hampton Court) is his hypothesis. Only 2/6 pages fully deciphered; 39 provisional labels. v4 check 23 Oct 2026: marked read but no text file. The reading is George Lasry's (BnF cipher research, 10 Oct 2026); only his entry with one excerpt and its translation is in the repository (lasry_entry.md), nothing in NOTES, README or a decode file gives the full text, and his decryption is his to publish. Kept as an external pointer to his decipherment: not scored, not reviewed here; the read state is his claim..",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 6/6 pages transcribed; 2/6 pages deciphered; 4 more in part. Measured 24 Oct 2026: whole text 0.992 (v10_relabel.measure, 1016 words); deciphered passages alone 0.909 (797 words, 56 unread groups, 22 doubtful words; a bare ? counted as unread). State: read in part.",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 1.0
+        "read_share": 0.992,
+        "state": "read in part",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.992, deciphered passages 0.909. Not re-deciphered here."
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "item": "ff162r-164v: about 56 unread groups and 22 doubtful words in the deciphered runs; 39 provisional sign labels without value",
+        "blocker": "no-key-material",
+        "detail": "only f163r has matching margin plaintext; his status: 2/6 pages deciphered, 4 in part"
       }
     ]
   }

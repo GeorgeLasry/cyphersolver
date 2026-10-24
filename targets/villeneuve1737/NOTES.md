@@ -95,3 +95,6 @@ welcomed.
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Lasry's excerpts written out alone as lasry_excerpt_reading.md (the report page had been scored): plain 0.6, explicit 1.0; failures are 1737 spellings (raport, refflection, allors), Kerim Bey and 'pu'. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.985 (v10_relabel.measure), deciphered passages 0.996 (bare ? counted as unread). His status: 6/6 pages transcribed; 5/5 cipher pages deciphered. Outcome: read.

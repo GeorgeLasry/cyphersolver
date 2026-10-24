@@ -119,3 +119,7 @@ This is a **partial decipherment problem but a mostly readable document**. The c
 * `prep_images.py` — repeatable crop and contrast generation from downloaded IIIF scans.
 
 Earlier claim that the writeup skill was absent: corrected. The attempted/unread page is now prepared with the repository skill; see the current reassessment.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his own report on Français 3198 as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. It is an independent reading beside Angus Robinson's (PR #20), which stays the reading of record and keeps the method. Measured: whole text 0.994 (v10_relabel.measure), deciphered passages 0.982. His status: 7/7 pages transcribed; 6/6 cipher pages deciphered. Added as a second outcome.texts entry, state read.

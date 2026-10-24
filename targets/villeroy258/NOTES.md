@@ -68,3 +68,7 @@ appear that there is no desire to carry out […]
 - What we checked: f258r all-numeric letter "A Monsieur de la Verriere" with contemporary interlinear decipherment: "Monsieur je ne scay ce que vous pensez de l attendre si long temps a faire partir ceux qui doivent aller a Rome. On s abuze si on pense de pouvoir faire autrement ... longueurs prejudicient infiniment" = his excerpt; numbers not re-decoded by me from his key
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Foot note "Du chiffre de Monsieur de La Verriere"; docket "Depesche de M. de Villeroy a M. de Verriere". Reading essentially exists interlinearly (could be counted as read from existing decipherment).
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.991 (v10_relabel.measure), deciphered passages 0.994 (bare ? counted as unread). His status: 2/2 pages transcribed; Deciphered. Outcome: read.

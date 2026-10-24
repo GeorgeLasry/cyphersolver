@@ -66,3 +66,23 @@ be exceedingly welcome to His Highness and will greatly benefit both him and You
 - What we checked: his f55r crop: contemporary interlinear over 6 digit rows "piu sobria sara V.Ecc. nel scrivere in Italia ma simeinmodo che posi risaper si tanto sara meglio lavisare il serenisimo signor duca di mantua frequentemente et per via sicura de i sucesi di francia..." = his excerpt; digits not decoded by me
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: Sender/recipient/date (1589?) not established; only 1/3 pages fully deciphered though 97% of elements identified. Italian.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/44_francais-4696-numerical-cipher-ff54r55r.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.996 (v10_relabel.measure); deciphered passages alone 0.991. His report: 1/3 pages deciphered, 2 more in part. Outcome: read in part. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.
+
+## Remaining gaps
+
+- ff54r-55r: 2 unidentified codes among 52 unidentified of 1,744 elements - blocker: no-key-material; no value in his key; the interlinear plaintext does not cover them.
+- ff54r-55r: one obscured group of unknown length - blocker: illegible; his report: obscured on the leaf.
+
+## Escalation
+
+- [x] siblings: neighbouring items of the volume belong to Lasry's BnF survey; his report uses what he found
+- [x] clear-pages: the plaintext he names in his report (interlinear, margin or same-volume decipherment) is the material the key came from
+- [x] known-keys: Lasry's reconstructed key is the key used; shown on the page
+- [x] print: only the editions his report cites; none closes the unread groups (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

@@ -70,3 +70,24 @@ us a disservice …
 - What we checked: f9v rows 10-13 (canvas 21): contemporary Italian interlinear "luogo di queste parti doppo la reductione di Parigi non abbiamo auto qui alcuna lettere di Mr di Revol ne daltri ne fatta alcuna dimostratione di ralegramento con noi et si va dubitando..." = his excerpt
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: Only 3/6 pages deciphered though 98.6% of transcribed elements identified. f9r opens in clear to Nevers; Italian.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/37_francais-4700-gondi-symbol-cipher-ff9r10r.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.987 (v10_relabel.measure),
+deciphered passages 1.0. His status: 5/6 pages transcribed; 1 more in part; 3/6 pages deciphered. Outcome: read in part. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).
+
+## Remaining gaps
+
+- ff9r-10r: cipher lines without interlinear (3/6 pages deciphered; 20 of 1,469 elements unidentified); docket [?] - blocker: no-key-material; his status: 5/6 pages transcribed, 1 in part; 3/6 deciphered; italic passages rest on the literal historical plaintext.
+
+## Escalation
+
+- [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
+- [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

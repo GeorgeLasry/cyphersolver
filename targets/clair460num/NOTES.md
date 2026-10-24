@@ -70,3 +70,22 @@ research", 10 Oct 2026); the repository holds only his entry with one excerpt an
 NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
 pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/49_clairambault-460-numerical-cipher-pp289303.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.999 (v10_relabel.measure); deciphered passages alone 0.685. His report: 9/9 pages deciphered in part. The whole-text measure (0.999) is high because the interlinear plaintext carries most of the words; the deciphered runs alone are 0.685. Outcome: read in part. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.
+
+## Remaining gaps
+
+- pp289-303: 522 of 2,080 visible elements unidentified (the [?] groups and doubtful words in the deciphered runs) - blocker: no-key-material; no value in his 104-code key; the interlinear plaintext does not cover them.
+- pp289-303: further ciphertext hidden or damaged - blocker: illegible; his report: additional ciphertext hidden or damaged.
+
+## Escalation
+
+- [x] siblings: neighbouring items of the volume belong to Lasry's BnF survey; his report uses what he found
+- [x] clear-pages: the plaintext he names in his report (interlinear, margin or same-volume decipherment) is the material the key came from
+- [x] known-keys: Lasry's reconstructed key is the key used; shown on the page
+- [x] print: only the editions his report cites; none closes the unread groups (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

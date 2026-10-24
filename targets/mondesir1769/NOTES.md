@@ -87,3 +87,6 @@ will see the difference between [one?] man and another.
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: Lasry's excerpts written out alone as lasry_excerpt_reading.md (the report page had been scored): plain 0.667, explicit 0.75; the failures are his [?] marks and run-together forms. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.99 (v10_relabel.measure), deciphered passages 0.962 (bare ? counted as unread). His status: 13/13 pages transcribed; 11/11 cipher pages deciphered. Outcome: read.

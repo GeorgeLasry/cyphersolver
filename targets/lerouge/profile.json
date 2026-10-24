@@ -100,27 +100,33 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 2971): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.937 (whole), 0.987 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "key recovered based on adjacent plaintext",
     "parts": [
       {
         "label": "Lasry's reading",
         "method": "key recovered based on adjacent plaintext",
-        "extent": "complete",
-        "basis": "George Lasry, BnF cipher research, 10 Oct 2026"
+        "extent": "partial",
+        "basis": "George Lasry's report PDF (24 Oct 2026): key image, excerpt and translation, full Readable text by folio (lasry/report/)."
       }
     ],
-    "method_basis": "Method category from our spot-check of Lasry's report (ciphertext-only: No).",
+    "method_basis": "George Lasry's report PDF (24 Oct 2026, lasry/report/): ciphertext-only No; his key with the plaintext beside the cipher (key recovered based on adjacent plaintext).",
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.979,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 0.987,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026, deciphered passages of George Lasry's full Readable text (lasry/report/readable.md, report PDF of 24 Oct 2026): 0.987; whole text 0.937 (v10_relabel.measure).",
     "verification": [
       "contemporary decipherment"
     ],
@@ -139,12 +145,27 @@
       {
         "doc": "lerouge",
         "label": "George Lasry's reading (report status: Transcribed; Deciphered); only the excerpt from his report is in the repository",
-        "decryption": "lasry_entry.md",
+        "decryption": "lasry/report/readable.md",
         "summary": "A Venetian diplomatic report about the king’s letters, an affront involving Milan, and warnings of a conspiracy; its closing fragment mentions England.",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 0.964
+        "read_share": 0.937,
+        "state": "read in part",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: Transcribed; Deciphered. Measured 24 Oct 2026: whole text 0.937 (v10_relabel.measure, 269 words); deciphered passages alone 0.987 (147 words, 2 unread groups, 0 doubtful words; a bare ? counted as unread). State: read in part.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.937, deciphered passages 0.987. Not re-deciphered here."
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "item": "f32r: 2 unread groups, 4 unidentified symbols (610 of 623 elements), clear passages with holes",
+        "blocker": "no-key-material",
+        "detail": "the interlinear plaintext does not cover them; whole text 0.937"
       }
     ]
   }

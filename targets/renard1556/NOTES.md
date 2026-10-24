@@ -67,3 +67,22 @@ here, complained to him about these plans, and said that he found…
 - What we checked: f217v: heading "Double dune depesche de lambassadeur Renard ... au Roy" and margin "cest une partie de la lre en chiffre dud. Renard dont le dechiffre est apres", followed by 6 rows of mixed letter/syllable signs (que, fo, ma, ta...); excerpt rests on the contemporary decipherment on f218r, which I did not fetch; no sign-level decode done
 - Verdict: **partly confirmed** (method read from existing decipherment, extent partial). The check is a sample, not a re-solution.
 - Notes: Simon Renard, imperial/Spanish ambassador in France 1556; contemporary decipherment on f218r-v. 75.9% of signs identified. Possibly calendared in CSP Spain XIII (Tomokiyo lists Renard 1556).
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/54_francais-20991-renard-ff217v218r.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.918 (v10_relabel.measure); deciphered passages alone 1.0. His report: 2/2 cipher pages deciphered in part (346 of 456 elements identified). The extractor found no excerpt (his excerpt is the plain historical decipherment of f218r lines 1-3, not in bold); added by hand to excerpt.md, translation_excerpt.md and report.json. Outcome: read in part. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.
+
+## Remaining gaps
+
+- ff217v-218r: 110 of 456 cipher elements unidentified; the running cipher lines read only in fragments - blocker: no-key-material; his 66-form key and the f218r alphabet fragment leave them open; the contemporary decipherment (f218r-v) carries the sense.
+
+## Escalation
+
+- [x] siblings: neighbouring items of the volume belong to Lasry's BnF survey; his report uses what he found
+- [x] clear-pages: the plaintext he names in his report (interlinear, margin or same-volume decipherment) is the material the key came from
+- [x] known-keys: Lasry's reconstructed key is the key used; shown on the page
+- [x] print: only the editions his report cites; none closes the unread groups (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

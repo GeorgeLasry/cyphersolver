@@ -75,3 +75,11 @@ and devoted servant, Dampierre.
 ## Notes and corrections
 
 Fr. 3414 is Gallica ark btv1b525187326; the letter is image 261.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/32_francais-3414-dampierre-ff125r125v.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.991 (v10_relabel.measure),
+deciphered passages 1.0. His status: 2/2 pages transcribed; Deciphered. Outcome: read. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).

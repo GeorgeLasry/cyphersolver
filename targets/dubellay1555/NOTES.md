@@ -61,3 +61,22 @@ all their spies, under the guise of [?], of the Lutherans, and the
 - What we checked: his f60v crop, row 1: ψ π a ψ — + = t o u t e s ("toutes") with his table, then signs consistent with "leurs espiez"; only ~6-10 signs readable at crop resolution
 - Verdict: **partly confirmed** (method read from existing decipherment, extent partial). The check is a sample, not a re-solution.
 - Notes: Historical decipherment of the memorandum at ff62r-v (same volume), so reading rests on it; only 109/193 transcribed elements identified, ciphertext not fully transcribed. Date 1555 unverified.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/43_francais-3142-du-bellay-ff6061.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.869 (v10_relabel.measure); deciphered passages alone 0.784. His report: 3/3 pages transcribed in part, 3/3 deciphered in part. Outcome: read in part. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.
+
+## Remaining gaps
+
+- ff60-61: 84 of 193 transcribed elements unidentified, the rest of the cipher not transcribed in his report - blocker: no-key-material; his key has 17 letter signs; the historical decipherment at ff62r-v is the plaintext he read it from.
+
+## Escalation
+
+- [x] siblings: neighbouring items of the volume belong to Lasry's BnF survey; his report uses what he found
+- [x] clear-pages: the plaintext he names in his report (interlinear, margin or same-volume decipherment) is the material the key came from
+- [x] known-keys: Lasry's reconstructed key is the key used; shown on the page
+- [x] print: only the editions his report cites; none closes the unread groups (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

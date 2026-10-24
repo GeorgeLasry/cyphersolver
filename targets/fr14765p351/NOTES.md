@@ -69,3 +69,20 @@ what comes next.
 - What we checked: p.351 line 1 "C?TD, L T φ ..." -> "Ceux, qui ..." with his key (L=q,T=u,φ=i); recurrent group "P X T Y" = v o u s throughout; consistent with his excerpts "Ceux, qui auront le bonheur ... vous"
 - Verdict: **confirmed** (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.
 - Notes: 93.3% identified (61 ?), so below the complete bar. Alchemical recipe, page ends with a flourish; date "18th century?" unverified.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.881 (v10_relabel.measure), deciphered passages 0.982 (bare ? counted as unread). His status: Transcribed; Deciphered. Outcome: read in part.
+
+## Remaining gaps
+
+- p351: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
+
+## Escalation
+
+- [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
+- [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the unread passages found
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

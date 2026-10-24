@@ -80,3 +80,8 @@ translation), which is not a reading of the document. His full decryption (BnF c
 the repository and is his to publish; the contemporary interlinear decipherment is on the Gallica images only. The
 entry stays an **external pointer** to his decipherment, with a note saying so; not scored or reviewed here.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/46_naf-22736-duquesne-ff137r138r-and144v.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.995 (v10_relabel.measure); deciphered passages alone 0.993. His report: 4/4 pages deciphered; 743 of 751 elements identified. Outcome: read. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.

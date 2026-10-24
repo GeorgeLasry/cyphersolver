@@ -72,3 +72,25 @@ agent or of the others who lean to his side, for they are all deceitful. But if 
 ## Notes and corrections
 
 Probably printed in Jeannin's Négociations (1656; 1875 edition); the two siblings in Fr. 3516 (berny1607, laboderie1608) are.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/33_francais-3516-villeroy-royal-cipher.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.986 (v10_relabel.measure),
+deciphered passages 0.968. His status: 2/15 pages transcribed; 2 more in part; 2/15 pages deciphered; 2 more in part. Outcome: read in part. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).
+
+## Remaining gaps
+
+- ff86r-87r, f112r: 10 unread groups, 3 doubtful words (1,099 of 1,145 elements identified) - blocker: no-key-material; interlinear plaintext only at ff86r-86v and 112r.
+- ff87v-88r, ff112v-116v: not transcribed or deciphered in his report (11 of 15 pages) - blocker: no-key-material; outside this project's work; his transcription is incomplete (2/15 pages, 2 in part).
+
+## Escalation
+
+- [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
+- [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

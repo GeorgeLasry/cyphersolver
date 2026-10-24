@@ -96,10 +96,11 @@
       "result": "partial"
     },
     {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-    {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 20991 — Renard, ff217v–218r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"}
+    {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 20991 — Renard, ff217v–218r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"},
+    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.918 (whole), 1.0 (deciphered passages); state read in part.", "result": "partial"}
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "read from existing decipherment",
     "parts": [
@@ -114,9 +115,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.759,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 1.0 (bare ? counted as unread); whole text 0.918 (v10_relabel.measure).",
     "verification": [
       "contemporary decipherment"
     ],
@@ -134,15 +135,28 @@
     "texts": [
       {
         "doc": "renard1556",
-        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "Simon Renard to the King of Spain, 14 December 1556. Renard reports papal negotiations with the Duke of Alba and French military preparations.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here. The contemporary decipherment exists only on the manuscript images (not transcribed here). 24 Oct 2026: 90.6% of the words of lasry_excerpt_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 2/2 pages transcribed in part; 2/2 cipher pages deciphered in part. Measured 24 Oct 2026: whole text 0.918 (v10_relabel.measure, 662 words); deciphered passages alone 1.0 (181 words, 0 unread groups, 0 doubtful words; a bare ? counted as unread). his report: 2/2 cipher pages deciphered in part (346/456 elements identified); the running cipher is read through the contemporary decipherment State: read in part.",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 0.906,
-        "state": "read in part"
+        "read_share": 0.918,
+        "state": "read in part",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.918, deciphered passages 1.0. Not re-deciphered here."
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "item": "ff217v-218r: 110 of 456 cipher elements unidentified; the running cipher lines read only in fragments",
+        "blocker": "no-key-material",
+        "detail": "his 66-form key and the f218r alphabet fragment leave them open; the contemporary decipherment (f218r-v) carries the sense"
       }
     ]
   }

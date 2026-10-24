@@ -1,6 +1,6 @@
 # Nicodemo Tranchedini → Francesco Sforza, 28 June 1452, BnF Italien 2242 — Tranchedini, 1452
 
-Status: in progress (no write-up of our own: the result is George Lasry's, presented on docs/tranchedini1452.html; 23 Oct 2026: no reading of it in the repository, see Remaining gaps)
+Status: no write-up of our own (result by George Lasry, presented on docs/tranchedini1452.html; his full report text extracted 24 Oct 2026)
 
 **24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Italien 2242 — Tranchedini, 1452): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
 
@@ -71,10 +71,20 @@ on Gallica: the contemporary literal decipherment, f. 88r (lower half, "Post dat
 (btv1b100387843, canvases 82-83, opened 23 Oct 2026), about thirty lines of abbreviated 15th-century cursive. The
 result remains Lasry's (class already solved).
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.718 (v10_relabel.measure), deciphered passages 0.542 (bare ? counted as unread). His status: 3/3 pages transcribed in part; Partly deciphered. Outcome: read in part.
+
 ## Remaining gaps
-- the 28 June 1452 postscript, no reading in the repository - blocker: not-attempted; transcribe the contemporary decipherment on f. 88r-v (Gallica canvases 82-83) and align it with the cipher on f. 89r, or obtain Lasry's transcription
+
+- f89r (28 June 1452) and the historical decipherment ff88r-v: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
+- f89r, partly deciphered: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known
 
 ## Escalation
-- [x] clear-pages: the contemporary decipherment on f. 88r-v located and opened (23 Oct 2026); not transcribed
-- [ ] retry: transcribe f. 88r-v
 
+- [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
+- [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the unread passages found
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

@@ -5,7 +5,7 @@
   "documents": [
     {
       "id": "chatillon1635",
-      "read": "read in part",
+      "read": "read",
       "shelfmark": "BnF Français 3758",
       "date": "3 août 1635",
       "year": 1635,
@@ -107,27 +107,33 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 3758 — Châtillon, 3 August 1635): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.998 (whole), 1.0 (deciphered passages); state read.",
+      "result": "worked"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read",
     "key": "unknown",
     "method": "key recovered based on adjacent plaintext",
     "parts": [
       {
         "label": "Lasry's reading",
         "method": "key recovered based on adjacent plaintext",
-        "extent": "partial",
-        "basis": "George Lasry, BnF cipher research, 10 Oct 2026"
+        "extent": "complete",
+        "basis": "George Lasry's report PDF (24 Oct 2026): key image, excerpt and translation, full Readable text by folio (lasry/report/)."
       }
     ],
-    "method_basis": "Method category from our spot-check of Lasry's report (ciphertext-only: No).",
+    "method_basis": "George Lasry's report PDF (24 Oct 2026, lasry/report/): ciphertext-only No; his key with the plaintext beside the cipher (key recovered based on adjacent plaintext).",
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.937,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026, deciphered passages of George Lasry's full Readable text (lasry/report/readable.md, report PDF of 24 Oct 2026): 1.0; whole text 0.998 (v10_relabel.measure).",
     "verification": [
       "independent verification"
     ],
@@ -146,11 +152,18 @@
       {
         "doc": "chatillon1635",
         "summary": "Châtillon criticizes the army’s condition and discusses withdrawal across the Rhine for greater safety.",
-        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Plaintext of the same letters elsewhere in the volume (f123v, f126r, f127r). 93.7% identified. Repo CATALOGUE lists Chatillon-Servien fr. 3758 nos.100,104 (ark btv1b9059471x?). v4 check 23 Oct 2026: marked read but no text file. The reading is George Lasry's (BnF cipher research, 10 Oct 2026); only his entry with one excerpt and its translation is in the repository (lasry_entry.md), nothing in NOTES, README or a decode file gives the full text, and his decryption is his to publish. Kept as an external pointer to his decipherment: not scored, not reviewed here; the read state is his claim..",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 10/10 pages transcribed; 4/4 cipher pages deciphered. Measured 24 Oct 2026: whole text 0.998 (v10_relabel.measure, 1922 words); deciphered passages alone 1.0 (189 words, 0 unread groups, 0 doubtful words; a bare ? counted as unread). State: read.",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 1.0
+        "read_share": 0.998,
+        "state": "read",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.998, deciphered passages 1.0. Not re-deciphered here."
+        }
       }
     ]
   }

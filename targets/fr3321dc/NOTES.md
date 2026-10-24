@@ -67,3 +67,24 @@ immediately receive a copy, as the other material is being sent to you.
 - What we checked: f103r l.2 after "Car": l u n i o n [est] s i f o r t (14 signs incl. est code) = "lunion est si fort"; also Espernon code after "Ruyne de"; matches excerpt and interlinear
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: Only 49 cipher elements; 93.9% identified (<95%). Signed with monogram, "xxme may". Ligue context (union vs Epernon) suggests 1588.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/31_francais-3321.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.996 (v10_relabel.measure),
+deciphered passages 0.889. His status: Transcribed; Deciphered. Outcome: read in part. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).
+
+## Remaining gaps
+
+- f103r: 3 of 49 cipher elements unread (2 ?, 1 unidentified), several named opponents uncertain - blocker: too-short; 49 elements in all; the interlinear does not resolve them.
+
+## Escalation
+
+- [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
+- [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

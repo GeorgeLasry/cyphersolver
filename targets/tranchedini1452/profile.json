@@ -108,10 +108,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Italien 2242 — Tranchedini, 1452): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.718 (whole), 0.542 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "read from existing decipherment",
     "parts": [
@@ -143,19 +149,37 @@
     "texts": [
       {
         "doc": "tranchedini1452",
-        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "Nicodemo Tranchedini to Francesco Sforza, 28 June 1452. The postscript discusses the bishops of Parma and Novara, the pope’s response, and the bishop’s reputation.",
-        "note": "Decoded, not read (v3 check 23 Oct 2026): there is no reading in the repository. lasry_entry.md, which the sweep scored (0.588), holds only the metadata of George Lasry's report page; unlike his other entries it has no excerpt, and his transcription and decryption are not here. The reading source is the contemporary literal decipherment on f. 88r (lower half, 'Post dat. Signore ...') and f. 88v, Gallica btv1b100387843 canvases 82-83, opened 23 Oct 2026: about thirty lines of abbreviated 15th-century Italian cursive, not transcribed in this pass. Lasry's result stands as his (class already solved); nothing here reads it.",
-        "state": "decoded, not read"
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 3/3 pages transcribed in part; Partly deciphered. Measured 24 Oct 2026: whole text 0.718 (v10_relabel.measure, 523 words); deciphered passages alone 0.542 (194 words, 164 unread groups, 0 doubtful words; a bare ? counted as unread). State: read in part.",
+        "state": "read in part",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
+        "language": "it",
+        "read_share": 0.718,
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.718, deciphered passages 0.542. Not re-deciphered here."
+        }
       }
     ],
     "gaps": [
       {
-        "item": "the 28 June 1452 postscript: no reading in the repository",
-        "blocker": "not-attempted",
-        "detail": "transcribe the contemporary decipherment on f. 88r-v (Gallica btv1b100387843 canvases 82-83) and align it with the cipher on f. 89r, or obtain Lasry's transcription"
+        "item": "f89r (28 June 1452) and the historical decipherment ff88r-v: unread groups between the deciphered runs",
+        "blocker": "no-key-material",
+        "detail": "left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one"
+      },
+      {
+        "item": "f89r, partly deciphered: not transcribed or deciphered in full in Lasry's report",
+        "blocker": "no-key-material",
+        "detail": "his report status says so; outside this project's work, no other key or plaintext known"
       }
-    ]
+    ],
+    "fraction_read": 0.542,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.542 (bare ? counted as unread); whole text 0.718 (v10_relabel.measure)."
   }
 }

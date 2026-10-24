@@ -68,3 +68,24 @@ wished to ally themselves with him, they will be bound to become his allies.
 - What we checked: f28r l.2 V.⊔.ч.4.V.T.cc.m -> i n o p i d u m = "in oppidum" (interlinear agrees); signs match his table (i=V,n=⊔,o=ч,p=4,d=T,u=cc,m)
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Addressed Christianissime rex, signed Ernestus/Joachimus; interlinear on most runs; 96.5% identified, 2/2 cipher pages; 1 page only partly transcribed (clear text). Date c.1519 is his inference.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/29_dupuy-468.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.955 (v10_relabel.measure),
+deciphered passages 0.982. His status: 2/3 pages transcribed; 1 more in part; 2/2 cipher pages deciphered. Outcome: read in part. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).
+
+## Remaining gaps
+
+- f28r-f28v: 3 unread groups and 24 unidentified elements (660 of 684 identified); f29r transcribed in part - blocker: no-key-material; the interlinear covers most runs, not these; one sign unidentified in his key.
+
+## Escalation
+
+- [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
+- [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

@@ -1,6 +1,6 @@
 # Napoleon III / Empress Eugénie (both directions) → Empress Eugénie / Napoleon III (both directions), June 1859, BnF NAF 11355 — Emperor–Empress code
 
-Status: in progress. Lasry's reading; only four pages of tokens and three excerpts are in the repository (reading audit, 22 Oct 2026).
+Status: no write-up of our own (result by George Lasry, presented on docs/eugenie1859.html; his full report text extracted 24 Oct 2026)
 
 **24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (NAF 11355 — Emperor–Empress code): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
 
@@ -161,15 +161,20 @@ windows fail only on place names (Chiese, Mincio, Lonato, Castiglion), the real 
 f. 15r. Keeps read. The report-excerpt file had been scored with its English and page furniture (plain 0.488); the
 French excerpts alone are now `texts/eugenie1859_lasry_excerpts_reading.md`, plain 1.0; keeps read.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.982 (v10_relabel.measure), deciphered passages 0.948 (bare ? counted as unread). His status: 15/15 pages transcribed; 9/11 cipher pages deciphered; 2 more in part. Outcome: read in part.
+
 ## Remaining gaps
 
-- Lasry's full decipherment of the eleven cipher pages, not in the repository - blocker: not-attempted; ask George Lasry for his transcription and decryption files
+- the cipher pages: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
+- 2 of 11 cipher pages, deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known
 
 ## Escalation
 
-- [x] siblings: not this project's reading; George Lasry's report covers the volume
-- [n/a] clear-pages: not looked for here; the result is Lasry's
-- [x] known-keys: Lasry's key is the key; his key table is not in the repository
-- [x] print: Lasry's report (BnF cipher research, 10 Oct 2026) is the source
-- [n/a] key-rebuild: not this project's work
-- [ ] retry: ask Lasry for his full transcription and decryption
+- [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
+- [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the unread passages found
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

@@ -68,3 +68,21 @@ tales [?] before them because [?].
 ## Notes and corrections
 
 Folder renamed from the report's slug dubellay1555b (ff. 65–66). The clear text names Pope Julius (III), which dates the letter 1550–55.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.909 (v10_relabel.measure), deciphered passages 0.835 (bare ? counted as unread). His status: 4/4 pages transcribed; 1/4 pages deciphered; 3 more in part. Outcome: read in part.
+
+## Remaining gaps
+
+- ff65r-66v: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
+- 3 of 4 pages, deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known
+
+## Escalation
+
+- [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
+- [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the unread passages found
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

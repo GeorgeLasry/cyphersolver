@@ -79,3 +79,7 @@ worthy of it, and it would benefit the king’s service, you and me.
 - What we checked: f56r line 20: "27 58 60 36 52 58 27 44 61 53 55 30 42 36 33 22 55" = l u y v o u l e z p r o c u r e r = "lvy vovlez procvrer", matches his L19-22 excerpt
 - Verdict: **confirmed** (method key recovered from ciphertext-only, extent complete). The check is a sample, not a re-solution.
 - Notes: Page is all-cipher numeric (two homophones per letter, 18-61). Sender/recipient/date unknown; mentions Montgomery and Clermont (Wars of Religion, c.1560s-70s).
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.965 (v10_relabel.measure), deciphered passages 1.0 (bare ? counted as unread). His status: Transcribed; Deciphered. Outcome: read.

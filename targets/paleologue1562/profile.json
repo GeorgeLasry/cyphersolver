@@ -100,10 +100,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 4687 — ff5v–7v): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.781 (whole), 0.967 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "key recovered from ciphertext-only",
     "parts": [
@@ -135,19 +141,36 @@
     "texts": [
       {
         "doc": "paleologue1562",
-        "label": "George Lasry's reading (report status: 4/4 pages transcribed in part; 2/4 pages deciphered in part); only the excerpt from his report is in the repository",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "Italian family correspondence mentioning Milan, a stable master, Carlo, a brother, and an offer of scudi for a state. The letter remains partly unread.",
-        "read_share": 0.895,
+        "read_share": 0.781,
         "reading_review": {
           "grade": "B",
           "by": "Claude Opus 5.5",
           "date": "2026-10-24",
-          "note": "Rests on George Lasry's report excerpt only (f. 6r, cipher rows 8-10, in lasry_entry.md): 'Averia dat volontier a cuatr cento mila scudi per aver cuel stato et pareva ? ascoltase ? parla', a coherent Italian sentence with two unread words; his English is in the same file. The repository text is a fragment; his report has 2/4 pages deciphered in part and f6v/f7v not deciphered. Counted by hand on the excerpt: 17 of 19 words, 0.895 (v10 scores the whole report entry, 0.993): read in part."
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.781, deciphered passages 0.967. Not re-deciphered here."
         },
         "state": "read in part",
         "language": "it",
-        "translation": "lasry_entry.md"
+        "translation": "lasry/report/translation_excerpt.md",
+        "reading": "lasry/report/readable.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 4/4 pages transcribed in part; 2/4 pages deciphered in part. Measured 24 Oct 2026: whole text 0.781 (v10_relabel.measure, 243 words); deciphered passages alone 0.967 (59 words, 2 unread groups, 0 doubtful words; a bare ? counted as unread). State: read in part."
+      }
+    ],
+    "fraction_read": 0.967,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.967 (bare ? counted as unread); whole text 0.781 (v10_relabel.measure).",
+    "gaps": [
+      {
+        "item": "ff5v-7v: unread groups between the deciphered runs",
+        "blocker": "no-key-material",
+        "detail": "left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one"
+      },
+      {
+        "item": "2 of 4 pages (and the rest of the transcription): not transcribed or deciphered in full in Lasry's report",
+        "blocker": "no-key-material",
+        "detail": "his report status says so; outside this project's work, no other key or plaintext known"
       }
     ]
   }

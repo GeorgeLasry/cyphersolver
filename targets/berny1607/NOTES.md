@@ -81,3 +81,8 @@ research", 10 Oct 2026); the repository holds only his entry with one excerpt an
 NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
 pointer** to his decipherment, with a note saying so; it is not scored or reviewed here. His entry names a printed text: Jeannin (1875), p. 104. Published text for comparison in the readable file..
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/50_francais-3516-brulart-de-berny-f132r.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.993 (v10_relabel.measure); deciphered passages alone 0.98. His report: transcribed and deciphered; 255 of 266 elements identified; printed text in Jeannin (1875), p. 104. Outcome: read. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.

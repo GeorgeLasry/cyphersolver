@@ -78,3 +78,21 @@ advancing your position. Apart from these matters, ? only his welfare, with rega
 - What we checked: Fr. 4696 f62r: Italian letter "Ill.mo et Ecc.mo S. mio" with clear text (Padre Toledo, Giulio Cesare, Pasqua) and Greek-like graphic cipher runs; excerpt is from f62v, not imaged here; sign-level decode with his table not completed (glyph forms at this scan only loosely match his crops)
 - Verdict: **partly confirmed** (method key recovered based on adjacent plaintext, extent partial). The check is a sample, not a re-solution.
 - Notes: Only 1147/3078 groups identified (37%); 4698 letter mostly unread. Interlinear on f5r gave the key. Two volumes/senders bundled in one entry.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.849 (v10_relabel.measure), deciphered passages 0.689 (bare ? counted as unread). His status: 2/7 pages transcribed; 5 more in part; 7/7 pages deciphered in part. Outcome: read in part.
+
+## Remaining gaps
+
+- Français 4696 ff5r, 62r-v; 4698 ff30r-31r, 104r: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
+- 5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known
+
+## Escalation
+
+- [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
+- [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the unread passages found
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

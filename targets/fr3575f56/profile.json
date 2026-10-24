@@ -88,10 +88,11 @@
       "result": "worked"
     },
     {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = lasry_entry.md (excerpts and translation from George Lasry's BnF cipher research report); his full transcription and decryption are not in the repository (needs contributor: George Lasry).", "result": "partial"},
-    {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 3575 — f56r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"}
+    {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 3575 — f56r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"},
+    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.965 (whole), 1.0 (deciphered passages); state read.", "result": "worked"}
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read",
     "key": "unknown",
     "method": "key recovered from ciphertext-only",
     "parts": [
@@ -106,9 +107,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.99,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 1.0 (bare ? counted as unread); whole text 0.965 (v10_relabel.measure).",
     "verification": [
       "key confirms"
     ],
@@ -127,14 +128,21 @@
     "texts": [
       {
         "doc": "fr3575f56",
-        "label": "George Lasry's report entry (excerpts and translation)",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "The proposed surrender of the château of Clermont to the comte de Montgomery, the danger of alienating the religious party, and a recommendation for a judicial appointment; sender, recipient and date not identified (Wars of Religion), as given in George Lasry's report.",
-        "note": "Excerpts only: lasry_entry.md holds George Lasry's report entry (metadata, excerpts of the decipherment, translation). His full transcription of the ciphertext and his full decryption (BnF cipher research, 10 Oct 2026) are not in the repository: needs contributor, George Lasry.",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: Transcribed; Deciphered. Measured 24 Oct 2026: whole text 0.965 (v10_relabel.measure, 221 words); deciphered passages alone 1.0 (205 words, 0 unread groups, 0 doubtful words; a bare ? counted as unread). State: read.",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 0.962
+        "read_share": 0.965,
+        "state": "read",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.965, deciphered passages 1.0. Not re-deciphered here."
+        }
       }
     ]
   }

@@ -5,7 +5,7 @@
   "documents": [
     {
       "id": "mondesir1769",
-      "read": "read in part",
+      "read": "read",
       "shelfmark": "BnF Français 5581",
       "date": "20 November 1769, with later additions",
       "year": 1769,
@@ -105,10 +105,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 5581 — Letter from Mondesir): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.99 (whole), 0.962 (deciphered passages); state read.",
+      "result": "worked"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read",
     "key": "unknown",
     "method": "key recovered from ciphertext-only",
     "parts": [
@@ -123,9 +129,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.802,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 0.962,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.962 (bare ? counted as unread); whole text 0.99 (v10_relabel.measure).",
     "verification": [
       "independent verification"
     ],
@@ -144,19 +150,21 @@
     "texts": [
       {
         "doc": "mondesir1769",
-        "label": "George Lasry's reading (report status: 13/13 pages transcribed; 11/11 cipher pages deciphered); only the excerpt from his report is in the repository",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "A private letter from Isle de France criticizes the governor’s conduct, weak coastal defence and food shortages caused by price controls. The writer also discusses an artillery appointment, the forge enterprise, debts, and selling his share to provide for his wife.",
         "reading_review": {
-          "grade": "A",
+          "grade": "B",
           "by": "Claude Opus 5.5",
-          "date": "2026-10-23",
-          "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored lasry_entry.md, the report page with English contents, key and translation. George Lasry's excerpt written out alone as lasry_excerpt_reading.md (his text verbatim, folio labels in the header): plain 0.667 (8/12), explicit holes 0.75 (9/12), hole rate 0.041; the failures are Lasry's own [?] marks and run-together forms (maccorder, largent). The reading is Lasry's (his full decryption is not in the repository); the excerpt reads as sentences. Keeps read."
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.99, deciphered passages 0.962. Not re-deciphered here."
         },
-        "reading": "lasry_excerpt_reading.md",
+        "reading": "lasry/report/readable.md",
         "language": "fr",
-        "translation": "lasry_excerpt_en.md",
-        "read_share": 0.966
+        "translation": "lasry/report/translation_excerpt.md",
+        "read_share": 0.99,
+        "state": "read",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 13/13 pages transcribed; 11/11 cipher pages deciphered. Measured 24 Oct 2026: whole text 0.99 (v10_relabel.measure, 9328 words); deciphered passages alone 0.962 (920 words, 32 unread groups, 4 doubtful words; a bare ? counted as unread). State: read."
       }
     ]
   }

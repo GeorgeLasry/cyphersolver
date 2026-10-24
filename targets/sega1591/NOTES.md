@@ -76,3 +76,6 @@ The v3 sweep flagged this entry at 0.59, scoring `lasry_entry.md` (his report pa
 The enciphered passage alone, now `sega1591_reading.md`, scores **1.0 on explicit holes** (plain 0.33: the cipher
 writes single consonants, *inuiato*, *efeto*, *fose*, *pasi*). Kept read; it is Lasry's reading with Meister's key 65.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.971 (v10_relabel.measure), deciphered passages 1.0 (bare ? counted as unread). His status: 1/2 pages transcribed; Deciphered. Outcome: read.

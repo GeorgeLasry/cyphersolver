@@ -65,3 +65,7 @@ takes counsel and governs himself according to the advice of those who desire hi
 - What we checked: f62r "Ser.mo Principe Sig.re et Pron mio Col.mo", full cipher in letter-substitution with superscript vowels; his key image is the original "Cifra col S. Cav. Giac. Gratij" (Fr. 3995 f89: a=8, b=7, c=6, d=5, f=m, n=h, r=y, s=theta, t=g...), alphabet consistent with the cipher letters; superscript (babuino) syllables made a quick run-decode inconclusive
 - Verdict: **partly confirmed** (method read after matching with key from external sources, extent complete). The check is a sample, not a re-solution.
 - Notes: Key labelled for Cav. Giacomo Gratij(?), so the matching-key attribution to Rondinelli rests on matching, not on the key title. Clear Italian postscript at foot of f62r.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.965 (v10_relabel.measure), deciphered passages 1.0 (bare ? counted as unread). His status: 2/2 pages transcribed; Deciphered. Outcome: read.

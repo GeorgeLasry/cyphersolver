@@ -106,10 +106,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Italien 2061 — ff72v–73r, 95v–96r, 97v–98r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.999 (whole), 1.0 (deciphered passages); state read.",
+      "result": "worked"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read",
     "key": "unknown",
     "method": "read with known key",
     "parts": [
@@ -124,9 +130,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.992,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 1.0 (bare ? counted as unread); whole text 0.999 (v10_relabel.measure).",
     "verification": [
       "key confirms"
     ],
@@ -145,11 +151,20 @@
       {
         "doc": "bianchi",
         "summary": "Italian diplomatic correspondence on Spanish funds and troops, papal involvement, France and Venice, ambassadors, and the Duke of Savoy.",
-        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Original codebook in the same volume (views 126-128) and a clear copy of letter XXIII at f131r; signed Antonio Bianchi, Venice 3 Feb 1610, to Castrino. 99.2%. v4 check 23 Oct 2026: marked read but no text file. The reading is George Lasry's (BnF cipher research, 10 Oct 2026); only his entry with one excerpt and its translation is in the repository (lasry_entry.md), nothing in NOTES, README or a decode file gives the full text, and his decryption is his to publish. Kept as an external pointer to his decipherment: not scored, not reviewed here; the read state is his claim..",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 6/6 pages transcribed; 6/6 pages deciphered. Measured 24 Oct 2026: whole text 0.999 (v10_relabel.measure, 762 words); deciphered passages alone 1.0 (146 words, 0 unread groups, 0 doubtful words; a bare ? counted as unread). State: read.",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "it",
-        "read_share": 1.0
+        "read_share": 0.999,
+        "state": "read",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.999, deciphered passages 1.0. Not re-deciphered here."
+        },
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md"
       }
     ]
   }

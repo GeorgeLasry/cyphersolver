@@ -100,10 +100,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 3622): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.903 (whole), 0.911 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "read after matching with key from external sources",
     "parts": [
@@ -118,9 +124,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.939,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 0.911,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.911 (bare ? counted as unread); whole text 0.903 (v10_relabel.measure).",
     "verification": [
       "independent verification"
     ],
@@ -138,13 +144,33 @@
     "texts": [
       {
         "doc": "nevers1594gondi",
-        "label": "George Lasry's reading (report status: 3/3 pages transcribed in part; Deciphered); only the excerpt from his report is in the repository",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "Arrangements to send money to Lyon and check Swiss muster rolls; a promised payment by the end of April and a mission to the aldermen of Lyon.",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 1.0
+        "read_share": 0.903,
+        "state": "read in part",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 3/3 pages transcribed in part; Deciphered. Measured 24 Oct 2026: whole text 0.903 (v10_relabel.measure, 696 words); deciphered passages alone 0.911 (85 words, 5 unread groups, 3 doubtful words; a bare ? counted as unread). State: read in part.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.903, deciphered passages 0.911. Not re-deciphered here."
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "item": "ff91r-92r: unread groups between the deciphered runs",
+        "blocker": "no-key-material",
+        "detail": "left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one"
+      },
+      {
+        "item": "all 3 pages, transcribed in part: not transcribed or deciphered in full in Lasry's report",
+        "blocker": "no-key-material",
+        "detail": "his report status says so; outside this project's work, no other key or plaintext known"
       }
     ]
   }

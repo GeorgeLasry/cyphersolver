@@ -71,3 +71,23 @@ research", 10 Oct 2026); the repository holds only his entry with one excerpt an
 NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
 pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/35_francais-3822.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 1.0 (v10_relabel.measure),
+deciphered passages 0.947. His status: 2/5 pages transcribed; 1/5 pages deciphered. Outcome: read in part. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).
+
+## Remaining gaps
+
+- ff132r-134v: 27 unread groups; 960 of 1,646 elements unidentified, 10 groups with unresolved boundaries - blocker: no-key-material; readable text rests on the contemporary interlinear; his key maps 121 forms; his status: 2/5 pages transcribed, 1/5 deciphered.
+
+## Escalation
+
+- [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
+- [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

@@ -1,0 +1,3 @@
+# Attribution
+
+`45_francais-3516-la-boderie-f59r60v.pdf` is George Lasry's report on this item ("Français 3516 — La Boderie, f59r–60v"), sent to Daniel Bourdeau on 2026-10-24 with the instruction that the decryption, the translation and the reconstructed key be shown on the item's page. The decipherment, the translation and the key reconstruction are his (made with ChatGPT Astra 6 and Anthropic Opus 5.5). The manuscript images are from the Bibliothèque nationale de France, via Gallica. The other files in this folder were extracted from the PDF by `research/reading_audit/lasry_pdf_extract.py`, without editing.

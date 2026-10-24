@@ -67,3 +67,8 @@ complete secrecy so that the Dutch do not take offence.
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the text is Portuguese of 1667 (not French), so the explicit-hole share is the bar. Lasry's excerpt written out as lasry_excerpt_reading.md: explicit 1.0; the Portuguese word list does not know 1667 spelling (plain 0.0 on two sentences). Entry language set to pt. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/47_portugais-33-letter-of20april1667.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.977 (v10_relabel.measure); deciphered passages alone 1.0. His report: transcribed and deciphered; 6 readings marked ?. Outcome: read. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.

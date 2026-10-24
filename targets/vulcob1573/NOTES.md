@@ -68,3 +68,11 @@ brother, the Duke of Lorraine, and it could well be ?.
 - What we checked: f32r "Monsr de Vulcob", cipher block with contemporary interlinear; the interlinear over the excerpt lines reads "election larchiduc ernestes ont semblables a ceux que ...", matching his "election l archiduc Erneste, sont semblables a ceu? que"; symbols not re-decoded independently
 - Verdict: **confirmed** (method key recovered based on adjacent plaintext, extent complete). The check is a sample, not a re-solution.
 - Notes: Interlinear decipherment on the same page covers the cipher, so this largely restates an existing decipherment. Dorsal on facing page "du Roy ... May" docket.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/23_francais-3318.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.957 (v10_relabel.measure),
+deciphered passages 0.974. His status: Transcribed; Deciphered. Outcome: read. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).

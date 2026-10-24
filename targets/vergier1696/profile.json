@@ -107,10 +107,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Clairambault 1108): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.998 (whole), 1.0 (deciphered passages); state read.",
+      "result": "worked"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read",
     "key": "unknown",
     "method": "key recovered based on adjacent plaintext",
     "parts": [
@@ -118,16 +124,16 @@
         "label": "Lasry's reading",
         "method": "key recovered based on adjacent plaintext",
         "extent": "complete",
-        "basis": "George Lasry, BnF cipher research, 10 Oct 2026"
+        "basis": "George Lasry's report PDF (24 Oct 2026): key image, excerpt and translation, full Readable text by folio (lasry/report/)."
       }
     ],
-    "method_basis": "Method category from our spot-check of Lasry's report (ciphertext-only: No).",
+    "method_basis": "George Lasry's report PDF (24 Oct 2026, lasry/report/): ciphertext-only No; his key with the plaintext beside the cipher (key recovered based on adjacent plaintext).",
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.998,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026, deciphered passages of George Lasry's full Readable text (lasry/report/readable.md, report PDF of 24 Oct 2026): 1.0; whole text 0.998 (v10_relabel.measure).",
     "verification": [
       "contemporary decipherment"
     ],
@@ -146,19 +152,20 @@
       {
         "doc": "vergier1696",
         "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
-        "decryption": "lasry_entry.md",
+        "decryption": "lasry/report/readable.md",
         "summary": "Jacques Vergier to Monseigneur, probably Jérôme de Pontchartrain, letters of 10, 20, 26, 29 and 30 March and 6 (16?) April 1696. Vergier reports the Anglo-Dutch fleet off Calais, Jacobite landing plans, and his conversations with James II’s entourage; he also discusses naval preparations at Dunkerque.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here.",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 17/17 pages transcribed; 12/12 cipher pages deciphered. Measured 24 Oct 2026: whole text 0.998 (v10_relabel.measure, 2091 words); deciphered passages alone 1.0 (551 words, 0 unread groups, 0 doubtful words; a bare ? counted as unread). State: read.",
         "reading_review": {
-          "grade": "A",
+          "grade": "B",
           "by": "Claude Opus 5.5",
-          "date": "2026-10-23",
-          "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored lasry_entry.md, the report page with English contents, key and translation. George Lasry's excerpt written out alone as lasry_excerpt_reading.md (his text verbatim, folio labels in the header): plain 1.0 (7/7), explicit holes 1.0, hole rate 0.012; no sentence fails. The reading is Lasry's (his full decryption is not in the repository); the excerpt reads as sentences. Keeps read."
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.998, deciphered passages 1.0. Not re-deciphered here."
         },
-        "reading": "lasry_excerpt_reading.md",
+        "reading": "lasry/report/readable.md",
         "language": "fr",
-        "translation": "lasry_excerpt_en.md",
-        "read_share": 1.0
+        "translation": "lasry/report/translation_excerpt.md",
+        "read_share": 0.998,
+        "state": "read"
       }
     ]
   }

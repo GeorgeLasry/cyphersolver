@@ -107,10 +107,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Clairambault 531 — testament and Holstein marriage): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.997 (whole), 0.993 (deciphered passages); state read.",
+      "result": "worked"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read",
     "key": "unknown",
     "method": "key recovered based on adjacent plaintext",
     "parts": [
@@ -125,9 +131,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.991,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "George Lasry's report: identified elements / elements",
+    "fraction_read": 0.993,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.993 (bare ? counted as unread); whole text 0.997 (v10_relabel.measure).",
     "verification": [
       "contemporary decipherment"
     ],
@@ -145,20 +151,21 @@
     "texts": [
       {
         "doc": "villardeau",
-        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "Sheets from the Russian-correspondence dossier of 1725-1730: a Holstein letter signed by De Villardeau and an anonymous memorandum on the testament, recipient not established. The Czarina’s disputed will and succession; the Holstein wedding and confidential comments on the duke’s reputation and ability to produce heirs.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here.",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 6/6 pages transcribed; 5/5 cipher pages deciphered. Measured 24 Oct 2026: whole text 0.997 (v10_relabel.measure, 1045 words); deciphered passages alone 0.993 (572 words, 0 unread groups, 4 doubtful words; a bare ? counted as unread). State: read.",
         "reading_review": {
-          "grade": "A",
+          "grade": "B",
           "by": "Claude Opus 5.5",
-          "date": "2026-10-23",
-          "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): the sweep scored lasry_entry.md, the report page with English contents, key and translation. George Lasry's excerpt written out alone as lasry_excerpt_reading.md (his text verbatim, folio labels in the header): plain 1.0 (3/3), explicit holes 1.0, hole rate 0.0; no sentence fails. The reading is Lasry's (his full decryption is not in the repository); the excerpt reads as sentences. Keeps read."
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.997, deciphered passages 0.993. Not re-deciphered here."
         },
-        "reading": "lasry_excerpt_reading.md",
+        "reading": "lasry/report/readable.md",
         "language": "fr",
-        "translation": "lasry_excerpt_en.md",
-        "read_share": 1.0
+        "translation": "lasry/report/translation_excerpt.md",
+        "read_share": 0.997,
+        "state": "read"
       }
     ]
   }

@@ -61,3 +61,21 @@ Translation
 - What we checked: f6r bottom 3 numeric rows on Gallica are exactly his crop (4 9 3 20 5 4 8 4 ... / 17 22 9 8 5 73 ... / 2 4 4 4 18 6 4 17 22 ...); no key table in the PDF, so "averia dat volontier a cuatr cento mila scudi" could not be re-derived
 - Verdict: **partly confirmed** (method key recovered from ciphertext-only, extent partial). The check is a sample, not a re-solution.
 - Notes: Mixed Italian clear+numeric letter. Margins of f6r carry contemporary interlinear-style glosses ("questo e quello ...", "Sera ... che segui"), i.e. partial adjacent plaintext he may not have used. Only 2/4 pages in part; attribution from catalogue.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the full Readable text by folio). The page shows it at the top. Measured: whole text 0.781 (v10_relabel.measure), deciphered passages 0.967 (bare ? counted as unread). His status: 4/4 pages transcribed in part; 2/4 pages deciphered in part. Outcome: read in part.
+
+## Remaining gaps
+
+- ff5v-7v: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
+- 2 of 4 pages (and the rest of the transcription): not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known
+
+## Escalation
+
+- [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
+- [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the unread passages found
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

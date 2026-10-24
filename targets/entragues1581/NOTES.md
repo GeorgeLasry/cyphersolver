@@ -101,3 +101,23 @@ answer immediately: I do not know whether the King would want him for you, by me
 - What we checked: Clear letter with name signs only. In his f759v crop: "je verray [3]" and "revolte en [X]", "[E] favorisera"; the f761r key ("Copia d una cifra trovata...") gives 3 = Mons. d Entragues, X = l Angleterre, E (variant) = l Escosse = his reading
 - Verdict: **partly confirmed** (method read with known key, extent partial). The check is a sample, not a re-solution.
 - Notes: Only ~87 cipher elements (names) in otherwise clear text; key is in the same volume (f761r), so little cryptanalysis involved. 89.7% identified; 8 signs unknown. Several ? in his clear-text transcription.
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/51_francais-15906-ff759r760v-ff780r781v.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.97 (v10_relabel.measure); deciphered passages alone 0.969. His report: 5/7 cipher pages deciphered, 2 more in part. Outcome: read in part. He translates only the excerpt (`lasry/report/translation_excerpt.md`); no full translation.
+
+## Remaining gaps
+
+- ff759r-781v: 9 of 87 name signs unidentified (8 unidentified symbols in his key) - blocker: no-key-material; no margin name or value in the f761r name key for them.
+- ff759r-781v: clear text transcribed in part on 7/8 pages (the [?] words) - blocker: illegible; his report: 1/8 pages transcribed, 7 more in part.
+
+## Escalation
+
+- [x] siblings: neighbouring items of the volume belong to Lasry's BnF survey; his report uses what he found
+- [x] clear-pages: the plaintext he names in his report (interlinear, margin or same-volume decipherment) is the material the key came from
+- [x] known-keys: Lasry's reconstructed key is the key used; shown on the page
+- [x] print: only the editions his report cites; none closes the unread groups (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

@@ -106,10 +106,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (NAF 28227(9)): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.959 (whole), 0.889 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "read with known key",
     "parts": [
@@ -143,11 +149,34 @@
       {
         "doc": "bossuet",
         "summary": "Bossuet correspondence concerning ecclesiastical controversy, censures and ordinances, assemblies, printed works, diplomacy in Rome, and church appointments.",
-        "note": "George Lasry's transcription, key and full decryption (BnF cipher research, 10 Oct 2026, the report's readable files) are not in the repository; lasry_entry.md holds only his entry with one excerpt and its translation. Needs contributor: George Lasry. Spot-check note (13 Oct 2026): Could not check folio identity against Gallica (no link). Original key is in the same volume and interlinear plaintext survives, so this is reading with the contemporary key. Only 12/28 cipher pages deciphered. v4 check 23 Oct 2026: marked read but no text file. The reading is George Lasry's (BnF cipher research, 10 Oct 2026); only his entry with one excerpt and its translation is in the repository (lasry_entry.md), nothing in NOTES, README or a decode file gives the full text, and his decryption is his to publish. Kept as an external pointer to his decipherment: not scored, not reviewed here; the read state is his claim..",
-        "reading": "lasry_excerpt_reading.md",
-        "translation": "lasry_excerpt_en.md",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 3/32 pages transcribed; 28 more in part; 12/28 cipher pages deciphered; 16 more in part. Measured 24 Oct 2026: whole text 0.959 (v10_relabel.measure, 1854 words); deciphered passages alone 0.889 (233 words, 29 unread groups, 0 doubtful words; a bare ? counted as unread). State: read in part.",
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 1.0
+        "read_share": 0.959,
+        "state": "read in part",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.959, deciphered passages 0.889. Not re-deciphered here."
+        },
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)"
+      }
+    ],
+    "fraction_read": 0.889,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.889 (bare ? counted as unread); whole text 0.959 (v10_relabel.measure).",
+    "gaps": [
+      {
+        "item": "the deciphered pages: unread groups between the deciphered runs",
+        "blocker": "no-key-material",
+        "detail": "left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one"
+      },
+      {
+        "item": "28 of 32 pages transcribed in part, 16 of 28 cipher pages deciphered in part: not transcribed or deciphered in full in Lasry's report",
+        "blocker": "no-key-material",
+        "detail": "his report status says so; outside this project's work, no other key or plaintext known"
       }
     ]
   }

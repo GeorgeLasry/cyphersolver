@@ -73,3 +73,23 @@ translation), which is not a reading of the document. His full decryption (BnF c
 the repository and is his to publish; the contemporary interlinear decipherment is on the Gallica images only. The
 entry stays an **external pointer** to his decipherment, with a note saying so; not scored or reviewed here.
 
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/36_francais-3944.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.963 (v10_relabel.measure),
+deciphered passages 1.0. His status: 1/2 pages transcribed; 1 more in part; 2/2 cipher pages deciphered. Outcome: read in part. He translates the excerpt only
+(`lasry/report/translation_excerpt.md`).
+
+## Remaining gaps
+
+- ff99r-99v: 9 of 375 cipher elements unidentified; margin addition with [?] names; f99r transcribed in part - blocker: no-key-material; the interlinear gives no value for them; his status: 1/2 pages transcribed, 1 in part.
+
+## Escalation
+
+- [x] siblings: the volume belongs to Lasry's BnF survey; no sibling key on DECODE known (24 Oct 2026)
+- [x] clear-pages: the plaintext beside the cipher is the one he used (see his summary); no further decipherment known
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
