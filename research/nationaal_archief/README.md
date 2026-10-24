@@ -54,3 +54,75 @@ Already on DECODE: 1.02.13 inv. 226/228 (Russia legation, R1033/R1035), which co
 4. Second pass: walk the 1.01.02 "secrete brieven" and liassen series (12579-12589) item by item instead of by
    title words, and repeat the sweep for the KHA (not in this search) and the regional archives through
    archieven.nl.
+
+# Second pass (23 Oct 2026): Staten-Generaal item by item, KHA, archieven.nl
+
+## 1.01.02 Staten-Generaal, Secrete kas envoy letters (section VI.C)
+
+- `dump_ead.py` walks `.../api/eads/1.01.02/clevels?page=N`. Two full passes return the same **18,807** of the
+  28,573 catalogued items: the paged listing leaves part of the tree out, including most of the envoy letters. The
+  gap was filled with item-level title searches inside the archive (`fill_search.py`: every envoy posting, "brief",
+  "gezant", "cijfer" …), which returned **7,212** individual letters in VI.C (`vic_letters.json`).
+- Scan status was checked per volume (`vic_inv_status.json`): of **297** volumes holding these letters, **4** are
+  digitised (a charter, a ratification, a label, a Bank of England receipt). **The envoy correspondence of the
+  Secrete kas is not online.**
+- 63 letters are described as (partly) in cipher, in 19 volumes, all `PHYSICAL`. This is the scan-on-demand list:
+
+| Volume | Year | Letters in cipher | Sender |
+|---|---|---|---|
+| 12586.49 | 1656 | 29 | Van Beuningen embassy, Copenhagen |
+| 12589.148 | 1672 | 6 | Johan Boreel, London (with clear duplicates) |
+| 12586.41, 12586.29 | 1652-53 | 6 | Nanningh Kaiser, Copenhagen |
+| 12585.74, 12585.75 | 1677-78 | 6 | Rumpf, Stockholm |
+| 12588.120-125, 12588.138 | 1686-91 | 6 | Battier (Brussels, Madrid), Schonenbergh |
+| 12589.165 | 1676 | 2 | Van Beuningen, Westminster |
+| 12586.93-94 | 1671-72 | 3 | Van Wijngaerden, Copenhagen |
+| 12579.58, 12579.98A | 1654, 1672 | 2 | Johan Maurits; field deputies |
+| 12587.144, 12587.203 | 1657, 1686 | 2 | Paris embassy |
+| 12586.69 | 1660 | 1 | Slingelandt embassy, Copenhagen |
+
+  Only 12587.144 (1657) is new against the first pass. Most envoy letters are described without any word for
+  cipher, so the true number is larger; the senders with the longest runs (L'Hermitage 423, Willem Boreel 330,
+  Goes 315, Van der Meer 306, Van Beuningen 211, Moeringh 210, Hamel Bruynincx 156, Van Citters 135, Godard
+  Adriaan van Reede 129) are the series to sample first once anything is scanned.
+
+## Koninklijk Huisarchief
+
+The KHA catalogue is not in the Nationaal Archief search. It is served by the Koninklijke Verzamelingen CMS:
+`https://cms.koninklijkeverzamelingen.nl/api/archive/?format=json&query=<term>&limit=50&start=<n>` (42,089
+records; `harvest_kha.py`, `kha_hits.jsonl`, 474 hits, ~75 before 1850 on cipher words). Scans are viewed on
+`koninklijkeverzamelingen.nl/archief/...` (each record's `url`). DECODE already holds the Willem V intercepts
+under the old inventory numbers (A31 inv. 192 d'Affry, 196 Hellen, 198 Michell/Frederick II, 201 Kauderbach,
+205 Van Reede, 337, 339 keys), A32 inv. 192 (Wolff 1801) and A16 XIII-1 (d'Avaux 1684).
+
+Leads not on DECODE, scanned first:
+
+| # | KHA item | Date | What | Scans |
+|---|---|---|---|---|
+| K1 | G016-A0204 | 28 Aug 1574 | Philip II to Don Juan of Austria, **letter in cipher** (Collectie Handschriften, 2e serie) | 6 |
+| K2 | A23-311 | 1618-1627 | Ernst Casimir of Nassau-Dietz: **keys for cipher used with various correspondents** | 97 |
+| K3 | G016-A0572 | 17 Dec 1640 | Philip IV to the marquis of Velleda, in cipher | 7 |
+| K4 | A32-603, A32-599-604 | 1783-84 | Schöning's secret mission to Berlin: letters with **their decipherment by Van der Hoop**, De Larrey's file with key | 212, 442 |
+| K5 | A32-630 | 1795-97 | "Anciens déchiffrements sur les premières années de notre séjour en Angleterre" (Wilhelmina) | 387 |
+| K6 | A35-488-1 | 19 Jan 1795 | **Key** of the Orange family cipher devised by H.W. van Aylva | 2 |
+| K7 | A32-571 | [1793] | Wilhelmina's notes on the hereditary prince's cipher letters, March-July 1793 | 16 |
+| K8 | A32-527, -536, -537-541, -542-549, -354, -560, -620 | 1782-1819 | Wilhelmina's correspondence in cipher (Thulemeier, Nagell, Van de Spiegel, A.W. van Reede, Stamford, Hogguer, Van der Hoop) | 71-1,941 each |
+| K9 | A35-172-197, A35-511-515, A35-524-532, A35-1448-1458, A35-1232 | 1788-1819 | Letters to the future Willem I in cipher with decipherments (his mother, Bentinck, d'Yvoy, Van Reede) | 165-1,029 |
+| K10 | A16-XIII-1 | 9 Jan 1684 | d'Avaux to Louis XIV in cipher (already DECODE, de Mesmes) | 11 |
+
+Unscanned but notable: A31-903/904 chiffre chiffrant/déchiffrant (c. 1775-80); C02-77 keys of 1759; A31-1191-1193
+lists of intercepted and deciphered diplomatic letters (De Larrey 1773, Croiset 1773-91, Lyonnet 1752-78); A22-51
+and A22-191-198 Willem Lodewijk's secret writing (1583-1609); A15-XIC-8 Jermyn 1649-50 with key.
+
+K1 and K2 are the best next targets (the K1 letter may be printed in Gachard's *Correspondance de Philippe II*;
+check first). K4 and K6 pair ciphertext with decipherment or key on the same scans.
+
+## archieven.nl (regional archives)
+
+archieven.nl's search returns inventories, not items, and only in a browser (results load through an obfuscated
+proxy). Inventory-level hits for the cipher words were collected and the early-modern ones kept in
+`archievennl_hits.json` (39). Item-level hits inside each inventory are not reachable by URL; each has to be opened
+by hand. Most promising: Huis Amerongen (Utrecht, 1001; the Van Reede envoys), Tresoar's descriptions of the Frisian
+stadholders' archives (7-02 Willem Lodewijk to 7-14 Willem V) and the Saxon dukes' rule in Friesland (1, 2),
+Culemborg (0370), the Gelre counts (0001), Bentinck (0613), Van Lynden van Hoevelaken (1030), and the KZGW
+manuscripts in Middelburg (6,097 digitised). Newspapers and modern municipal files dominate the raw hits.
