@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "target": "senisteros1605",
+  "title": "Juan Gara de Senisteros to Juan de la Peña, Alcalá 23 Dec 1605 (NA 3.01.14 inv. 2442)",
+  "documents": [
+    {
+      "id": "inv2442",
+      "shelfmark": "Nationaal Archief 3.01.14 (Oldenbarnevelt), inv. 2442",
+      "date": "23 Dec 1605",
+      "year": 1605,
+      "country": "Spain",
+      "route": "Alcalá de Henares -> Juan de la Peña (abroad, unknown)",
+      "language": "Spanish",
+      "pages": 11,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment visible on the scans."
+      },
+      "length": {
+        "tokens": 1447,
+        "distinct": "unknown",
+        "unit": "mixed",
+        "measured": true,
+        "file": "reading_B.md"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "transcription_A.txt (literal, pp. 1-4L, subagent); reading_B.md (read directly with the key, pp. 4R-11)",
+        "image_quality": "good",
+        "notes": "Token count = cipher words: 454 on pp. 1-4L (decoded_A.txt) + 993 inside braces in reading_B.md, counted by script; pp. 4R-11 were not transcribed glyph by glyph."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic"
+    ],
+    "summary": "Vowel substitution only: a=4, e=8, i/y=3, o=7, u=2, with 5 for s, 6 for b/v and a looped l; all other consonants in clear; word division kept. A few superscript clear glosses over cipher words.",
+    "symbol_kind": "digits and letters",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": false,
+      "entries": 0,
+      "kinds": [],
+      "unread_groups": 0
+    },
+    "nulls": "unknown",
+    "key_order": "unknown",
+    "word_division": "kept",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown",
+    "notes": "Trivial private cipher of a churchman's agent; the decipherment is a reading problem, not a key problem."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "Not in Haak & Veenendaal (RGP, online OCR searched 23 Oct 2026); no web hit; not on DECODE.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Asked to open the target from the Nationaal Archief sweep.",
+    "tools": [
+      "Nationaal Archief IIIF",
+      "python",
+      "web search"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-23",
+    "last_date": "2026-10-23"
+  },
+  "solution": [
+    {
+      "date": "2026-10-23",
+      "kind": "literature search",
+      "what": "Searched the web, DECODE's Dutch-held records and the Haak/Veenendaal Oldenbarnevelt edition OCR for the letter: no prior reading found.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "access",
+      "what": "Fetched the 11 Nationaal Archief scans at full resolution through IIIF.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "hypothesis",
+      "technique": [
+        "frequency analysis",
+        "contextual inference"
+      ],
+      "what": "On p01 consonants stand in clear and vowels are digits: 4=a, 8=e, 3=i, 7=o, 2=u (l4s m3sm4s p4l4br4s qu8 s7n p4rt3c2l4r8s).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "Subagent transcribed pp. 1-4L literally (transcription_A.txt); a second subagent stopped before writing pp. 4R-11.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Read pp. 4R-11 directly with the vowel key (reading_B.md); pp. 8, 9, 10L, 11 are clear; applied the key by script to pp. 1-4L (decoded_A.txt). Signs 5=s, 6=b/v, looped l resolved from context.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "verification",
+      "technique": [
+        "language-model scoring"
+      ],
+      "what": "Counted cipher words with unresolved readings: 32/993 (pp. 4R-10) and 14/454 (pp. 1-4L); ~97% read as Spanish sense.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-10-23",
+      "verdict": "not applicable",
+      "notes": "Vowel-only substitution with consonants in clear: the key is five digit values fixed by the word skeletons, so an n-gram overfitting test on the cipher tokens has nothing to discriminate."
+    },
+    "method": "key recovered from ciphertext-only",
+    "method_basis": "The vowel-to-digit substitution was read off the first cipher line of p01 from the clear consonants and word shapes; no outside key or decipherment exists.",
+    "contribution": [
+      "key recovered",
+      "transcription"
+    ],
+    "class": "read",
+    "fraction_read": 0.97,
+    "grades": {
+      "H": "unknown",
+      "C": "unknown",
+      "M": "unknown",
+      "I": "unknown"
+    },
+    "verification": [
+      "historical consistency"
+    ],
+    "notes": "Scattered words unread ([?] in the readings); pp. 4R-11 read without a glyph-level transcription.",
+    "texts": [
+      {
+        "doc": "inv2442",
+        "label": "Juan Gara de Senisteros to Juan de la Peña, Alcalá, 23 Dec 1605 (NA 3.01.14 inv. 2442)",
+        "transcription": "transcription_A.txt",
+        "decryption": "reading_B.md",
+        "summary": "Gara, newly canon and college rector at Alcalá, tells his patron how he forged the patron's signature on a blank sheet to send letters to the Cardinal of Toledo and the abbot and win the electors; reports the provisions of Sigüenza and Pamplona with suspicion of money; asks about the regent's canonry, the Lerma collegiate church and a student's debts; and passes on that the Inquisitor Salcedo's grandmother was a cleric's daughter by the wife of a smith reputed a converso.",
+        "read_share": 0.97,
+        "translation": "translation.md",
+        "reading_review": {
+          "grade": "B",
+          "by": "claude-opus-5-5",
+          "date": "2026-10-23",
+          "note": "Read as Spanish sentences page by page while deciphering and translated in translation.md; sense is continuous, ~46 words uncertain where the copy is cramped. Not yet checked by a person against the images."
+        }
+      }
+    ],
+    "key": "recovered",
+    "key_file": "key.md"
+  }
+}

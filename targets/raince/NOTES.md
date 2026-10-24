@@ -351,3 +351,7 @@ not tracked; re-fetch with
 - [x] key-rebuild: shape-constrained hill climb (solve140.py), per-token classifier htr2.py, 6-gram LM beam decode2.py
 - [x] retry: session 3 re-read all 106 lines off the images (trans/reading_v3.txt); sense measure 0.476 -> 0.850
 - [x] re-read 23 Oct 2026 (batch b32): reading_v3 set out as trans/residue1526_reading.md, 0.513 plain / 0.713 explicit holes; Gallica manifest (still microfilm) and DECODE checked; kept decoded, not read
+
+## 2026-10-23: lead from the profile mining
+
+Lead from research/patterns/DEEPER.md: Lasry's GL.htm tables. GL.htm itself lists Raince's own cipher (Tomokiyo's 1526 table), already applied and re-measured here; Lasry's other tables there are other correspondents' ciphers (Gramont, Avranches, Macon). Redundant: the limit is the glyph map, not the key (see Session 2). No run.

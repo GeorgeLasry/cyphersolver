@@ -99,20 +99,37 @@ def timeline_svg(items):
     dated = [it for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
     x0, x1 = min(1480, min(it['year'] for it in dated) // 50 * 50 - 10), 2000
     c0 = (x0 // 100 + 1) * 100          # first century line on the axis
-    W, top, lane_h, r = 1000, 34, 13, 4.6
-    def X(y): return 30 + (y - x0) / (x1 - x0) * (W - 60)
-    # lane assignment: greedy, avoid overlap within 11 px
-    lanes, placed = [], []
+    W, top, r = 1000, 34, 4.6
+    # Piecewise-linear axis: each half-century gets width in proportion to 1 + count**0.85, so the crowded
+    # sixteenth century is spread out and the empty fifteenth and nineteenth are compressed. Every 50-year line is
+    # drawn, so the uneven spacing stays visible.
+    edges = list(range(x0 // 50 * 50, x1 + 1, 50))
+    wts = [1 + sum(1 for it in dated if a <= it['year'] < a + 50) ** .85 for a in edges[:-1]]
+    acc = [0.0]
+    for w in wts: acc.append(acc[-1] + w)
+    def X(y):
+        y = min(max(y, edges[0]), edges[-1]); k = min(int((y - edges[0]) // 50), len(wts) - 1)
+        f = (acc[k] + (y - edges[k]) / 50 * wts[k]) / acc[-1]
+        return 30 + f * (W - 60)
+    # beeswarm: each dot drops to the lowest height where it clears every dot already placed (2-D distance), so
+    # neighbouring stacks interlock instead of each 11-px window building its own column
+    gap, placed = 2 * r + 1.2, []
+    # a dot may also slide sideways (up to 3 gaps) when that keeps it lower, so a pile of same-year rows spreads
+    # into a mound rather than a spike; sideways costs 1.5x height, so dots stay near their year
+    def lowest(x):
+        near = [(px, h0) for _, px, h0 in placed if abs(px - x) < gap]
+        for cand in sorted({0.0} | {h0 + ((gap ** 2 - (px - x) ** 2) ** .5) for px, h0 in near}):
+            if all((px - x) ** 2 + (h0 - cand) ** 2 >= gap ** 2 - 1e-6 for px, h0 in near):
+                return cand
     for it in sorted(dated, key=lambda d: d['year']):
-        x = X(it['year'])
-        for li, last in enumerate(lanes):
-            if x - last >= 11:
-                lanes[li] = x; placed.append((it, x, li)); break
-        else:
-            lanes.append(x); placed.append((it, x, len(lanes) - 1))
-    nl = len(lanes)
-    base = top + nl * lane_h + 6
-    H = base + 30
+        x0_ = X(it['year'])
+        best = min(((lowest(x0_ + d) + 1.5 * abs(d), x0_ + d) for d in (k * gap / 4 for k in range(-12, 13))
+                    if 30 <= x0_ + d <= W - 30))
+        x = best[1]; h = lowest(x)
+        placed.append((it, x, h))
+    hmax = max(h for _, _, h in placed)
+    base = top + hmax + 2 * r + 12
+    H = round(base + 30)
     out = [f'<div class="tlwrap"><svg class="tl" viewBox="0 0 {W} {H}" role="img" aria-label="Every target placed by date and coloured by outcome" preserveAspectRatio="xMidYMid meet">']
     out.append('<defs><filter id="tlglow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3.2"/></filter>'
                '<linearGradient id="tlfade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity="0"/>'
@@ -121,7 +138,8 @@ def timeline_svg(items):
         a, b = max(30, X(c)), X(c + 100)
         if k % 2 == 0:
             out.append(f'<rect class="band" x="{a:.1f}" y="{top-18}" width="{b-a:.1f}" height="{base-top+18}" fill="url(#tlfade)"/>')
-        out.append(f'<text class="era" x="{(a+b)/2:.1f}" y="{top-6}" text-anchor="middle">{c//100+1}th c.</text>')
+        if b - a >= 70:                                    # compressed centuries are too narrow for a label
+            out.append(f'<text class="era" x="{(a+b)/2:.1f}" y="{top-6}" text-anchor="middle">{c//100+1}th c.</text>')
     for c in range(c0 - 50, 2001, 50):
         x = X(c)
         if x < 30: continue
@@ -133,8 +151,8 @@ def timeline_svg(items):
         out.append(f'<text x="{x:.1f}" y="{base+18}" class="tick" text-anchor="middle">{c}</text>')
     out.append(f'<g class="cursor" aria-hidden="true"><line class="cur-line" x1="0" x2="0" y1="{top-2}" y2="{base}"/>'
                f'<rect class="cur-box" x="-19" y="{base+5}" width="38" height="17" rx="4"/><text class="cur-yr" x="0" y="{base+17.5}" text-anchor="middle"></text></g>')
-    for n, (it, x, li) in enumerate(placed):
-        y = base - 9 - li * lane_h
+    for n, (it, x, h) in enumerate(placed):
+        y = round(base - 9 - h, 1)
         e = lambda v: html.escape(v, quote=True)
         title = e(f"{it['name']} ({it['date']}): {LABEL[it['cat']]}")
         attrs = (f' data-name="{e(it["name"])}" data-date="{e(it["date"])}" data-year="{it["year"]}" data-cat="{it["cat"]}"'

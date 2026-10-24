@@ -26,6 +26,11 @@ Nothing below has been checked here yet. It is what Brice Dudout's email of 19 O
 - **Prior work:** Tomokiyo, "Identifying Italian ciphers from continuous-figure ciphertexts (1593)", *Cryptologia*
   43(1), 2019, 23-46, doi:10.1080/01611194.2018.1503207. It gives the segmentation and a preliminary decipherment of
   three 1593 continuous-figure texts, probably including no. 6. Neither Brice nor this project has read it yet.
+- **Update, Brice's email of 23 Oct 2026:** Tomokiyo 2019 had already segmented and given a preliminary reading of
+  **both** no. 6 and no. 8. Brice now says so on his page and corrected his reading after Tomokiyo's; he claims as
+  his own only the values of several nomenclator numbers. So the write-up credits Tomokiyo 2019 as the prior
+  solution (outcome method "read from existing decipherment" unless our check adds values), with Brice's nomenclator
+  values as a contribution. Not yet checked here.
 
 ## Next
 

@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-philip2-donjuan1574", "label": "Philip II - Don Juan of Austria cipher (1574), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1574, "note": "Letters on 1-2 digit numbers near alphabetical order, vowel marks (cross e, dot i), codes pe/co/Lo; rebuilt from KHA G016-A0204 and its clear version (24 Oct 2026)."},
+{"id": "k-senisteros-vowels", "label": "Gara de Senisteros vowel cipher, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1605, "note": "Vowels as digits (4=a, 8=e, 3=i, 7=o, 2=u), consonants in clear; read off the first cipher line of NA 3.01.14 inv. 2442 (23 Oct 2026)."},
 {"id": "k-tomokiyo-stluc1586", "label": "St. Luc's Cipher (Tomokiyo's table, corrected by Brackx on BnF fr. 15572 f. 245)", "kind": "scholar's key", "by": "Satoshi Tomokiyo; corrections Michael Brackx", "year": 1586, "found": 2026, "note": "Tomokiyo's cryptiana table for Saint-Luc's ciphers of 1586; corrected and extended by Michael Brackx (issue #90) on the contemporary margin decipherments of f. 245r-v (Monsieur du Mayne, pour, la Rochelle, ss, la, rr, h, m). Several labels still carry two to four values."},
 {"id": "k-r446-rakoczi", "label": "Rákóczi's Hungarian syllabic key (DECODE R446, Ráday Archives C64-4d2-25 no. 6)", "kind": "DECODE key record", "by": "Ferenc Rákóczi II's chancery", "year": 1706, "note": "Hungarian syllabic nomenclator; DECODE's transcription corrected on the image (69 al, 71-74 an/ar/as/at, 35 ly, 296 Belgium). Found on 23 Oct 2026 by scanning the neighbouring key records R380-R520 against 18 glossed groups of R473 (16 agree)."},
 {"id": "k-bethlen-family", "label": "Keresdi Bethlen family letter cipher, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1645, "note": "Hungarian letter substitution with reciprocal pairs (c=p, p=c, g=u, q=t ...), recovered from the ciphertext alone by quadgram annealing on R4936 (23 Sept 2026); reads R4937, R4940, R4942 and R4938's spans. targets/transylvania1645/shared-key-hypothesis.json."},
@@ -2263,6 +2265,8 @@
 {"id": "k-brackx-matignon-tuple", "label": "Matignon tuple cipher key, 1586 (Brackx, from the contemporary glosses)", "kind": "scholar's key", "by": "Michael Brackx", "year": 1586, "found": 2026, "note": "136 group labels; taken from the interlinear glosses on BnF fr. 15572 ff. 234-238 and completed from the language; several labels carry two or more values."}
  ],
  "links": [
+{"key": "k-philip2-donjuan1574", "target": "philip1574", "how": "rebuilt from", "note": "rebuilt from the cipher and its contemporary clear version; confirms it on ~14 lines"},
+{"key": "k-senisteros-vowels", "target": "senisteros1605", "how": "rebuilt from", "note": "key recovered from the ciphertext alone; about 97% of cipher words read"},
 {"key": "k-tomokiyo-stluc1586", "target": "saintluc1586b", "how": "partial", "note": "decodes f. 260r-v (Brackx, #90); decoded, not read: 40.5% / 34.5% of letters on multi-valued labels"},{"key": "k-r9424-ryxu", "target": "r9424", "how": "rebuilt from", "note": "read in part, 92.8% of words; the barred o-o nomenclator sign and a name open"},
 {"key": "k-r446-rakoczi", "target": "vetesi1705", "how": "read unchanged", "note": "agrees with the contemporary interlinear gloss at 253 of 304 groups and fills the groups the gloss garbled; groups outside the key are nulls"},
 {"key": "k-bethlen-family", "target": "transylvania1645", "how": "rebuilt from", "note": "R4937, R4940 and R4942 read with it; R4936 decoded, not read (g/q look-alikes)"},
@@ -3573,6 +3577,8 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-philip2-donjuan1574"},
+{"source": "s-cyphersolver", "key": "k-senisteros-vowels"},
 {"source": "s-cyphersolver", "key": "k-bethlen-family"},
 {"source": "s-cyphersolver", "key": "k-r4939"},
   {"source": "s-tomokiyo", "key": "k-tomokiyo-mayenne1"},
@@ -4933,6 +4939,11 @@
    "note": "Checked 9 Oct 2026: values stop at 1355 (French) and 1500 (German); the 1744 Moscow page uses 1500-1737 and 3018-3297. Ruled out on value range. R1562, R1574, R1593, R1601, R1644 and R1691 were ruled out the same way."
   },
   {"key": "k-brancoveanu-polish", "target": "schenck1706", "note": "scored on the Vienna-Schenck runs: no sense"},
-  {"key": "k-r7475-table", "target": "schenck1706", "note": "scored on the Vienna-Schenck runs: -7.0 per character against -2.8 for the block key"}
+  {"key": "k-r7475-table", "target": "schenck1706", "note": "scored on the Vienna-Schenck runs: -7.0 per character against -2.8 for the block key"},
+{"key": "k-nevers-informant1588", "target": "vieuville1587", "note": "informant key 1588: no run reads (best 'eicudard', 'ocldarc'); research/patterns/lead_trials/ (23 Oct 2026)"},
+{"key": "k-stafford-walsingham1586", "target": "walsingham1585", "note": "Stafford 1586 alphabet covers 26% of the R4844 sign tokens; □ ≠ ÷ absent; glyph check needs the images (23 Oct 2026)"},
+{"key": "k-stafford-walsingham1586", "target": "walsingham1572", "note": "the group is figures; the 1586 letter alphabet has none of them (23 Oct 2026)"},
+{"key": "k-stafford-walsingham1586", "target": "burghley1572", "note": "figure code; 1 of 17 signs in the 1586 letter alphabet (23 Oct 2026)"},
+{"key": "k-lasry-gl", "target": "raince", "note": "redundant: Raince's own GL.htm key already applied; the other tables are other correspondents' ciphers (23 Oct 2026)"}
  ]
 }

@@ -1,7 +1,7 @@
 # Matignon's tuple cipher: despatch to Henri III, May 1586 (BnF fr. 15572 ff. 234r-238v)
 
-Status: read in part. Contributed by Michael Brackx (issue #86, 22-23 Oct 2026), taken in 24 Oct 2026. Nine pages
-read in part, f. 236v decoded, not read. Page: [`docs/matignon1586tuple.html`](../../docs/matignon1586tuple.html).
+Status: read in part. Contributed by Michael Brackx (issue #86, 22-23 Oct 2026), taken in 24 Oct 2026. F. 234r read
+(glosses recorded group by group, issue #95), eight pages read in part, f. 236v decoded, not read. Page: [`docs/matignon1586tuple.html`](../../docs/matignon1586tuple.html).
 
 ## The document
 
@@ -50,24 +50,43 @@ come out a point or two under Brackx's own figures.
 
 | page | groups | read_share | state |
 |---|---|---|---|
-| 234r | 251 | 0.987 | read in part |
+| 234r | 251 | 0.974 | **read** (23 Oct, issue #95) |
 | 234v | 251 | 0.622 | read in part |
 | 235r | 183 | 0.962 | read in part |
 | 235v | 255 | 0.954 | read in part |
 | 236r | 271 | 0.723 | read in part |
 | 236v | 231 | 0.431 | decoded, not read |
-| 237r | 190 | 0.920 | read in part |
+| 237r | 190 | 0.940 | read in part |
 | 237v | 201 | 0.929 | read in part |
 | 238r | 202 | 0.803 | read in part |
 | 238v | 117 | 0.756 | read in part |
 
 Word-weighted over all ten pages: 0.818 (`outcome.fraction_read`). Groups: 2,152 (`_check_profile.py --measure`).
 
-**Why no page is read, even over 95%.** On every page 8-14% of groups belong to labels with two or more values
+**Why the other pages are not read, even over 95%.** On every page 8-14% of groups belong to labels with two or more values
 (E2 c/e, M30 m/n/mm/nn, QUI qui/que, N18 le/de, DA de/d ...) where the decoder chose the value in context. That is
 over the 3% look-alike limit in README Conventions. The glosses would confirm most choices, but they were not
 recorded group by group, so the confirmation cannot be shown token by token. Reading review: grade B, Claude Opus
 5.5, 24 Oct 2026 (coherent but raw: decrypted spelling, the decoder's choices unconfirmed).
+
+**The glosses recorded (issue #95, 23 Oct 2026).** Brackx then recorded the contemporary gloss over every
+multi-valued group on the five pages nearest the bar, 107 groups, in `glosses_multivalued.tsv`:
+
+| page | multi-valued | gloss agrees | contradicts | unclear | no gloss |
+|---|---|---|---|---|---|
+| 234r | 24 | 20 | 1 | 3 | 0 |
+| 235r | 23 | 5 | 0 | 0 | 18 |
+| 235v | 21 | 2 | 0 | 1 | 18 |
+| 237r | 17 | 6 | 1 | 0 | 10 |
+| 237v | 22 | 3 | 2 | 3 | 14 |
+
+- **f. 234r is glossed group by group**, so its choices can be shown: 3 of 251 groups stay unconfirmed (1.2%), under
+  the 3% limit, at read_share 0.974. It is **read**.
+- **Four contradictions, all taken into the readings:** 234r l. 7 the gloss has *qui* over the group decoded *que*
+  (*les affaires qui ce presente[nt]*); 237r l. 1 *de* over `DA` decoded *d*; 237v ll. 3-4 *mons[ieu]r* twice over
+  the `SR` groups decoded *sieur*.
+- 235r-v and 237r-v carry glosses only on some lines or phrases, so most of their choices stay unconfirmed. Not
+  recorded: 234v, 236r, 236v, 238r, 238v.
 
 ## Content
 
@@ -79,7 +98,7 @@ with 2,000 muids of salt or three Huguenot councillors' offices), Alincourt and 
 Roussière and of la Magdaleine.
 
 ## Remaining gaps
-- multi-valued labels on every page (E2, M30, QUI, N18, DA and others), 8-14% of groups - blocker: no-key-material; the glosses that settle each choice were not recorded group by group in the contributed transcription. If they are recorded (Brackx's optional follow-up), this becomes work in hand and the target goes back to `Status: in progress`
+- multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others), 8-14% of groups - blocker: no-key-material; 235r-v and 237r-v were checked against the glosses (issue #95) and most of their multi-valued groups carry none; 234v, 236r-v and 238r-v not yet recorded
 - f. 236v, most of the page (read share 0.431) - blocker: illegible; show-through and faded ink, fragmentary glosses, verso subtraction failed to register
 - 234v l. 13 ('Cadarran(?)') and ll. 21-24; 236r l. 15, ll. 22-25; 238r ll. 20-22 ('la crois lartie'); 238v ll. 7-10 ('Bourg(?)') - blocker: illegible; re-read at full and upscaled resolution in the contributor's round 7
 - 41 rare 'open' labels (79 groups, 3.7%) with no shape recorded - blocker: no-key-material; once or twice each

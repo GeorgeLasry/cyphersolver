@@ -64,6 +64,12 @@ The measure counts in-word bracket expansions as holes (Brackx counted 74/74/32/
 Where figures and margin differ, the figures are followed (*Comont*, *s'effectuera*, *lundy et sans*, *subson* for the
 margin's *soupcon*).
 
+*serment* on f. 112r (issue #95, 23 Oct 2026): cipher l. 2 ends `… / m o / ʃ ρ r a q ⱶ θ ʃ t /`; the contemporary
+decipherer glossed **ent** over `q ⱶ θ` and **ne** over `ʃ t`, so *-ment ne* rests on the figures (`a` = m, `θ` = t,
+`q` = e) and the gloss. `ʃ ρ r` carry no gloss and the key does not give *s-e-r* for them (`ʃ` = m, `ρ` = i/s, `r` =
+a/e); *ser-* rests on the margin alone, so the doubt now sits on that syllable only: *[?ser]ment*. The sign there is
+drawn `ⱶ` and glossed *n*, possibly a different sign from the key's `f` = e.
+
 ## Key
 
 Tomokiyo's table with Brackx's corrections (issue #91): `6` = c (also g); plain round e = r; looped e = s; circled G =

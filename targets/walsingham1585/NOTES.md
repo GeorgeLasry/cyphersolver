@@ -145,3 +145,6 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 - Quotation for the list: the continuous opening of R4840 ("Sir, 39 doth complain … bent to [ruin] 11 course"), with
   the numbers glossed.
 
+## 2026-10-23: lead from the profile mining
+
+Lead from research/patterns/DEEPER.md: Stafford's Walsingham cipher of 1586 (harley1582r8500/key.tsv) compared with the R4844 sign words. Only 35 of 131 signs (26%) have a Stafford sign label, and the frequent word-initial signs (□, ≠, ÷) are absent from that alphabet. Ruled out at the label level; a glyph-by-glyph check needs the R4844 images (DECODE login).

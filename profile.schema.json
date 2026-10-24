@@ -205,7 +205,19 @@
       "date": {"type": "string", "description": "When: YYYY, YYYY-MM or YYYY-MM-DD."},
       "source": {"type": "string", "description": "A URL or citation for the contribution (a PR, an issue, a publication, an email)."},
       "published": {"type": "boolean", "description": "False for a private or unpublished result (shown only as 'unpublished')."}}}},
-    "validation": {"type": "object", "required": ["date", "verdict"],
+    "human_check": {
+          "type": "object",
+          "required": ["date", "by", "passage", "result"],
+          "description": "A person checked a passage of the reading against the image without AI help (Tao, Nature 22 Oct 2026: never let output outpace human checking). by = who; passage = document and lines; result = confirmed, corrected (say what in note) or disagreed.",
+          "properties": {
+            "date": {"type": "string"},
+            "by": {"type": "string"},
+            "passage": {"type": "string"},
+            "result": {"type": "string", "enum": ["confirmed", "corrected", "disagreed"]},
+            "note": {"type": "string"}
+          }
+        },
+        "validation": {"type": "object", "required": ["date", "verdict"],
      "description": "Result of docs/_validate.py: the reading's n-gram score against two nulls, random keys of the same structure and the same key refitted to a shuffled ciphertext (the overfitting test).",
      "properties": {
       "date": {"type": "string"}, "model": {"type": "string"}, "file": {"type": "string"},
