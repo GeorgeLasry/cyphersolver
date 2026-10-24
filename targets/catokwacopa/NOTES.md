@@ -282,3 +282,10 @@ but the site serves a bot challenge to both scripted and in-app browser requests
 Science* article (2023, doi 10.1080/00033790.2023.2290187) notes that scholarship examiners were not recorded as
 systematically as moderators. The klausschmeh.net thread, refetched on 24 Oct 2026, has no comment after
 3 Sept 2026. Nothing reachable from here remains untried.
+
+**Oxford University Calendar 1854 (HathiTrust uc1.l0060280450, p. 99; pages sent by Daniel, 24 Oct 2026).** The
+Hertford entry gives the statute and the scholars 1835-1853 (Newman last), identical to the 1888 Register. It names
+no examiners, only that three are nominated yearly. In 1854 the election was "annually, in Lent Term", not
+Michaelmas as the 1888 Register has it, so *Hrsclam 54* is the Lent 1854 examination (Montgomerie). A March 1853
+matriculant could sit it, so the timeline above stands. HathiTrust has no 1855 volume in full view, so the 1854
+examiners stay unknown. This route is closed.
