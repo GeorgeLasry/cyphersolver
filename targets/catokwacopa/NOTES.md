@@ -227,7 +227,7 @@ readings fit, and no image, sibling or key can choose between them.
 - [n/a] known-keys: no key: the mechanism is interleaving with omissions, not substitution
 - [x] print: Schmeh blog thread, Bosbach, Estes, Ernst BNA text, Krajcovic audits reviewed
 - [x] key-rebuild: open-vocabulary exact-fit search (English 30k, Latin 19k) and name-frame tests
-- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked; 23 Oct 2026 (b25) blog thread re-checked, MOST PRIVATE costed (5 misprints); 24 Oct 2026: Oxford vocabulary search (oxnames.py) and the Hertford Scholars list (Historical Register 1888): no line decided
+- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked; 23 Oct 2026 (b25) blog thread re-checked, MOST PRIVATE costed (5 misprints); 24 Oct 2026: Oxford vocabulary search (oxnames.py) and the Hertford Scholars list (Historical Register 1888) and Foster's Balliol matriculations 1852-54 (Walrond lead, names as cribs on 6, 12, 23, 29): no line decided
 
 ## 8. The Hertford list and an Oxford vocabulary (2026-10-24, fourth session)
 
@@ -246,3 +246,26 @@ not a crib.
 scholars, Balliol tutors Scott, Lake, Woollcombe, Riddell, Wall, Jenkyns, Temple, terms, exams, set texts):
 `search_oxnames.txt`. No open line acquires a forced reading. Line 19 tops as BALLIOL MAN …, with no agreed tail;
 21 HOLIDAYS EXAMINE stays third. The sense measure is unchanged at 257/470 = 0.547.
+
+## 9. Balliol matriculations of 1852-54 (2026-10-24, fourth session, continued)
+
+The Balliol College Register 1832-1914 lists only men living in 1914, so it would miss a man who died about 1875.
+Foster's *Alumni Oxonienses 1715-1886* (archive.org `alumnioxonienses01-04univuoft`, `alumnioxonienses03univ`) lists
+every matriculant. A fuzzy OCR sweep for "Balliol Coll., matric. … 1852/53/54" found 40 entries
+(`src/foster_balliol_1852_54.txt`). OCR damage means this is perhaps half the true intake.
+
+The W-initial men: Walrond (Main Swete Alexander, matric. 9 March 1853), Warre (Francis, Nov. 1852), Wickham
+(W. H., March 1854), Wigram (S. R., June 1854), Wilberforce (Edward, June 1854; W. F., March 1852), Wilder (H. B.,
+Nov. 1852), Wright (Henry, March 1852). Others with W forenames: Walter Morrison (Dec. 1853), William Walter Merry
+(scholar, Nov. 1852), W. H. Moseley, W. H. Newnham, W. Serjeantson.
+
+**Walrond fits the timeline best.** He matriculated in March 1853, so summer term 1853 (*Str 53*) was his first full
+term, and he was eligible for the Hertford of Michaelmas 1854 (*Hrsclam 54*). He was a clergyman and, from 1873, vicar
+of St Lawrence Jewry in the City of London, two years before the ads ran in a London daily. This is a lead, not an
+identification. "W." may be a forename or no initial at all, and none of the names gives a crib. The surnames were added
+to the exact-fit search on lines 6, 12, 23 and 29 (`search_23_balliol.txt`), and the top readings are unchanged; no
+line takes a name as a forced reading. Line 23's 20 May half begins with *w* against the positional rule, which a W-name
+would explain, but no tested name fits there better than junk.
+
+Next, outside this repository: Walrond's obituary and the Balliol and Crockford's records for 1875 (illness or death,
+the £138, a motto), and the Hertford examiners' list for 1854.
