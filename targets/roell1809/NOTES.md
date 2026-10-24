@@ -73,3 +73,18 @@ not online.
   NA 2.21.008.78.
 - Van Dedem's replies of 1809 in the same code with a clear copy, which would give a crib.
 - Henk Boon, *Onze man in Constantinopel* (2012), cited by DECODE, was not checked.
+
+## Croiset's cipher-office papers located (23 Oct 2026)
+
+The codebooks every pass here has wanted are catalogued in the Croiset family archive, **NA 2.21.045, section A.7.b**
+"Secretaris van het cijfer van de Staten-Generaal en secretaris van het cijfer van de Staat, 1789-1810"
+(Samuel Egbert Croiset, 1734-1816):
+
+- **inv. 18**: correspondence with Dutch envoys about setting cipher codes, *with letters in cipher and code tables*.
+- **inv. 21**: cipher codes with notes, covering letters and instructions to envoys on keeping them secret.
+- **inv. 22**: incoming letter from W.F. Röell (Louis Napoleon period).
+- inv. 17: diary notes on his work.
+
+All are `PHYSICAL` (not scanned). They can be reached through the Nationaal Archief's paid scan-on-demand service or
+a reading-room visit. That is an outside blocker, but a lifted one is likely to give the key outright. Found by the sweep in
+`research/nationaal_archief/`.
