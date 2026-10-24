@@ -1,7 +1,8 @@
 // cipher reveal: <figure class="creveal" data-src="reveal/slug.json"></figure> plus <script src="cipher-reveal.js" defer>.
 // The groups scramble and settle into plaintext when the figure scrolls into view; hovering or focusing a group lights
 // every occurrence of it, its homophones (other groups with the same value) and its row in the key.
-// Data: {title, caption, unit, key_note, tokens:[{g, p, cls}]}, cls one of '' unk unc code plain null.
+// Data: {title, caption, unit, key_note, tokens:[{g, p, cls, w}]}, cls one of '' unk unc code plain null; w:1 marks the first
+// group of a plaintext word. When any token carries w, the tiles of each word are kept together and words are spaced.
 (()=>{
   const figs=document.querySelectorAll('.creveal[data-src]'); if(!figs.length) return;
   const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -11,7 +12,7 @@
   const isCipher=t=>t.g && t.cls!=='plain';
 
   function build(fig, d){
-    const toks=d.tokens.map(t=>({g:t.g||'', p:t.p==null?'':String(t.p), cls:t.cls||'', show:t.show}));   // show: displayed in place of p (a sealed letter's uu = w)
+    const toks=d.tokens.map(t=>({g:t.g||'', p:t.p==null?'':String(t.p), cls:t.cls||'', show:t.show, w:!!t.w}));   // show: displayed in place of p (a sealed letter's uu = w)
     const ciph=toks.filter(isCipher);
     const key=new Map();                       // group -> {p, n, cls}
     for(const t of ciph){ const k=key.get(t.g)||{p:t.p,n:0,cls:t.cls}; k.n++; key.set(t.g,k); }
@@ -28,11 +29,17 @@
       <details class="cr-key"><summary>The key for this passage <span>${key.size} ${unit}</span></summary><div class="cr-grid"></div>${d.key_note?`<p class="cr-note">${esc(d.key_note)}</p>`:''}</details>
       ${d.caption?`<figcaption>${esc(d.caption)}</figcaption>`:''}`;
     const box=fig.querySelector('.cr-tiles'), grid=fig.querySelector('.cr-grid'), info=fig.querySelector('.cr-info'), bar=fig.querySelector('.cr-bar i');
+    const words=toks.some(t=>t.w); let wd=null, solo=true;   // solo: the open word takes no more groups
+    if(words) box.classList.add('words');
+    const put=(t,el)=>{ if(!words) return box.appendChild(el);
+      const alone=t.cls==='plain' || (t.p!=='' && !t.p.trim());   // clear text and word dividers stand alone; a null stays in its word
+      if(solo || alone || t.w){ wd=document.createElement('span'); wd.className='cr-w'; box.appendChild(wd); }
+      wd.appendChild(el); solo=alone; };
     const els=toks.map(t=>{
       const el=document.createElement('span'); el.className='tile cr-t '+t.cls;
       el.innerHTML=`<span class="p"></span><span class="g">${esc(t.g||' ')}</span>`;
       if(isCipher(t)){ el.tabIndex=0; el.dataset.g=t.g; el.setAttribute('aria-label',`${t.g} = ${t.cls==='unk'?'unread':t.p}`); }
-      el._p=el.firstChild; box.appendChild(el); return el;
+      el._p=el.firstChild; put(t,el); return el;
     });
     const num=s=>/^\d+$/.test(s)?parseInt(s,10):NaN;
     const order=[...key.keys()].sort((a,b)=>{ const x=num(a),y=num(b); return (isNaN(x)||isNaN(y))?a.localeCompare(b):x-y; });

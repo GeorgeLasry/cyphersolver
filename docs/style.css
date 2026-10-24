@@ -601,6 +601,8 @@ html.sopen{overflow:hidden}
 .cr-bar{height:2px;background:var(--rule);border-radius:2px;margin:.9rem 0 .2rem;overflow:hidden}
 .cr-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));box-shadow:0 0 12px var(--gold)}
 .cr-tiles{display:flex;flex-wrap:wrap;gap:.4rem .3rem;margin-top:.8rem;align-items:flex-end}
+.cr-tiles.words{column-gap:1.1rem}
+.cr-w{display:flex;flex-wrap:wrap;gap:.4rem .3rem;align-items:flex-end;max-width:100%}
 .cr-t{transition:transform .25s,background .2s,border-color .2s,opacity .2s}
 .cr-t[tabindex]{cursor:pointer}
 .cr-t .p{min-height:1.2em}
