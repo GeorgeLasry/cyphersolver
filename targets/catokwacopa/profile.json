@@ -61,7 +61,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Cipherbrain / klausschmeh.net threads 2015-2026: DYING DECLARATION, the Oxford vocabulary, QUI FIT",
+   "where": "Cipherbrain / klausschmeh.net threads 2015-2026: DYING DECLARATION, the Oxford vocabulary, QUI FIT, Ernst's and Krajcovic's 2026 readings",
    "found": "before attempt",
    "used": true
   },
@@ -70,33 +70,44 @@
    "published reading"
   ],
   "attack": "crib",
-  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded. Fourth session (24-25 Oct 2026): George Lasry supplied the circulating text and the blog images, approved the corpus fetches, and relayed suggestions from a parallel session (line 19 OPPOSITE USED MOTTO, HOLY ORDERS XAMN) for checking.",
   "tools": [
    "mech.py (pairing test, exact costs)",
    "search.py (open-vocabulary exact-interleaving search)",
    "names.py (name-frame test)",
    "latin.py (Latin vocabulary search)",
    "beam.py (phrase-level 5-gram search, lang en-modern)",
-   "measure.py (sense measure)"
+   "measure.py (sense measure)",
+   "fit.py (exact-fit DP: minimum misprints and omissions of a candidate, both transcriptions)",
+   "search2.py (trie search, 51k-word bigram model, omission-habit penalties, onset prior; driver.py diversity rounds)",
+   "scan_horace.py (initial-letter abbreviation scan over Horace, Latin Library text)",
+   "build_vocab.py / build_vocab_la.py (word models from lang/corpora en-gutenberg and la-gutenberg)"
   ],
   "models": [
    "claude-opus-5",
    "claude-fable-5-1"
   ],
-  "sessions": 3,
+  "sessions": 4,
   "first_date": "2026-09-15",
-  "last_date": "2026-10-05"
+  "last_date": "2026-10-25"
  },
  "solution": [
   {
    "date": "2026-09-15",
-   "kind": "statistics", "technique": ["statistical test"],
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
    "what": "Permutation test of line-length differences: the line pairing is structural (no random re-pairing in 100,000 comes as close).",
    "result": "worked"
   },
   {
    "date": "2026-09-15",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis", "repeat/pattern analysis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis"
+   ],
    "what": "Positional rule: consonant-initial words begin in the 8 May half, vowel-initial mostly in the 20 May half.",
    "result": "worked"
   },
@@ -108,7 +119,10 @@
   },
   {
    "date": "2026-09-15",
-   "kind": "solver", "technique": ["contextual inference"],
+   "kind": "solver",
+   "technique": [
+    "contextual inference"
+   ],
    "what": "Open-vocabulary search over 30,000 words, with and without names; new exact readings for lines 18, 21, 14.",
    "result": "partial"
   },
@@ -120,7 +134,10 @@
   },
   {
    "date": "2026-09-15",
-   "kind": "solver", "technique": ["statistical test"],
+   "kind": "solver",
+   "technique": [
+    "statistical test"
+   ],
    "what": "Latin vocabulary search on line 29 (control: line 17 returns QUI FIT first).",
    "result": "failed"
   },
@@ -132,7 +149,12 @@
   },
   {
    "date": "2026-10-05",
-   "kind": "solver", "technique": ["beam/DP decoding", "language-model scoring", "statistical test"],
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring",
+    "statistical test"
+   ],
    "what": "Phrase-level search (beam.py): letter-by-letter plaintext under the lang en-modern 5-gram, vocabulary-constrained, on lines 5, 6, 9, 12, 14, 19, 21, 23, 26, 29. Controls (7, 18, 3) come out on top; every open line gives junk.",
    "result": "failed"
   },
@@ -141,13 +163,90 @@
    "kind": "verification",
    "what": "Sense measure (measure.py): a character counts only if a misprint-free, forced reading consumes it and the words score as English. The 0.747 figure had counted lines 5, 6, 13, 19, 20 and 21 on proposals with misprints or no reading. Result 257/470 = 0.547 (8 May 0.563, 20 May 0.530).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Exact-fit DP (fit.py) on every published and pasted reading, both transcriptions: the lecture lines read CONINGTON'S / JOWETT'S LECTURES with 0 misprints (the S is possessive, not LECSURS); MASTER PUPIL, SAID SIMPLY ... CHARACTER, SUMMONER, QUIFFED, SIGNED need misprints.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Trie search (search2.py) with a bigram model from the 24 Gutenberg novels plus Oxford vocabulary, omission penalties by letter class, onset prior; controls 3, 4, 7, 8, 16, 17, 24, 25, 27, 28 first; open lines 5, 6, 9, 12, 19, 21, 23, 26, 29 give junk; 150-deep lists and diversity rounds filed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Lines 10 and 21 share the ending am/xn = XAMN ('Examn.'): HERTFORD SCHOLARSHIP XAMN costs 2 omissions instead of 12; EXAMINATION forced at the end of line 21, first word open (HOLIDAYS 3, HOLY ORDERS 5).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Third stream: are the omitted letters in the March 1875 TITOLLUM ad? About 60 letters, far too few.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "'1. 6. 9.' / 'Cotegr' = Horace Odes 1.6.9 'conamur tenues grandia', CO-TE-GR the first two letters of each word, exact; hence A.P. 138 = Ars Poetica 138 'quid dignum tanto feret hic promissor hiatu' (not annual pay). Neither in the 2018 or 2026 threads.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "control",
+   "technique": [
+    "exhaustive search"
+   ],
+   "what": "scan_horace.py: every run of words in Horace with 1-3 initial letters per word, exact merge. Cotegr: 'conamur tenues grandia' is the only two-letter match; lines 9, 26, 29, 12: no match.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Latin word search (la-gutenberg, 110k forms; control QUI FIT first) on lines 9, 26, 29, 12: junk; the Gutenberg Latin editions leak English words.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Word-structure prior (fragments per word in the 8 May half) and omission caps 5/3: controls unchanged, open lines unchanged.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "transcription",
+   "what": "George's images of both ads match the circulating text letter for letter, including the seven tokens Ernst corrected; they are the blog's re-typeset illustrations, not scans, so Ernst's BNA text stands (138/138 alignment, HERTFORD exact only with Hrsclam).",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "The lines counted read are the published readings (Bosbach's DYING DECLARATION, the Estes/'Dave' Oxford vocabulary, Krajcovic's QUI FIT, Ernst's transcription on klausschmeh.net and Cipherbrain); the project costed each exactly, confirmed the forced lines with an open-vocabulary search, and found exact alternatives for lines 14, 18 and 21.",
+  "method_basis": "The lines counted read are the published readings (Bosbach's DYING DECLARATION, the Estes/'Dave' Oxford vocabulary, Krajcovic's QUI FIT, Ernst's transcription on klausschmeh.net and Cipherbrain); the project costed each exactly, confirmed the forced lines with an open-vocabulary search, and found exact alternatives for lines 14, 18 and 21. Fourth session (24-25 Oct 2026) added four readings of its own under the omission scheme: the possessive S of lines 8 and 25, the shared XAMN of lines 10 and 21, Horace Odes 1.6.9 for line 13 and Ars Poetica 138 for line 20; none is in the blog threads.",
   "contribution": [
-   "none"
+   "decipherment with ambiguous key"
   ],
   "class": "read in part",
   "fraction_read": 0.547,
@@ -159,17 +258,17 @@
    "matched control",
    "historical consistency"
   ],
-  "notes": "Oxford reading right in outline. Measured 5 Oct 2026 by sense (0.547); the 21 Sept 0.747 counted every line with any proposal, including readings needing 1-11 misprints and two lines with no reading. key 'not applicable': omission scheme, no key.",
+  "notes": "Oxford reading right in outline. Measured 5 Oct 2026 by sense (0.547); the 21 Sept 0.747 counted every line with any proposal, including readings needing 1-11 misprints and two lines with no reading. key 'not applicable': omission scheme, no key. 25 Oct 2026: lines 13 and 20 now read (Horace); measure.py not re-run (skip-worktree), 276/470 = 0.587 if their 19 characters are counted. contribution 'decipherment with ambiguous key' = readings under the non-mechanical omission scheme.",
   "gaps": [
    {
     "item": "lines 9 and 26",
     "blocker": "too-short",
-    "detail": "unigram and 5-gram searches: many unrelated exact fits"
+    "detail": "unigram, bigram and 5-gram English searches, Latin search and Horace initial-letter scan: many unrelated exact fits, none forced"
    },
    {
     "item": "line 12",
     "blocker": "too-short",
-    "detail": "5-gram search gives junk"
+    "detail": "English, Latin and Horace scans give junk"
    },
    {
     "item": "line 23 (48 letters)",
@@ -179,17 +278,12 @@
    {
     "item": "line 29",
     "blocker": "too-short",
-    "detail": "English and Latin searches give only junk"
+    "detail": "English, Latin and Horace scans give only junk"
    },
    {
-    "item": "lines 5, 6 tail, 14 tail, 19, 21",
+    "item": "lines 5, 6 tail, 14 tail, 19 tail, 21 first word",
     "blocker": "too-short",
-    "detail": "several exact fits, none forced; published readings need misprints"
-   },
-   {
-    "item": "lines 13 and 20 (figures)",
-    "blocker": "too-short",
-    "detail": "1.6.9/cotegr and A.P. 138 have no reading"
+    "detail": "several exact fits, none forced: CONVO MET ME IN GARDEN (1 om), BALLIOL MAN OPPOSITE USED MOTTO + sov/c, HOLIDAYS or HOLY ORDERS before XAMN"
    },
    {
     "item": "re-transcription",
@@ -198,10 +292,27 @@
    }
   ],
   "credits": [
-    {"who": "ernst", "role": "transcription", "note": "BNA-verified transcription and line numbering, the text used here", "date": "2018"},
-    {"who": "bosbach", "role": "prior solution", "note": "DYING DECLARATION"},
-    {"who": "estes", "role": "prior solution", "note": "Oxford vocabulary (with 'Dave'): SUMMER TERM, 1853, CONINGTON, JOWETT, BALLIOL ..."},
-    {"who": "krajcovic", "role": "prior solution", "note": "QUI FIT (Horace, Satires 1.1) and 2026 exact-cost audits"}
+   {
+    "who": "ernst",
+    "role": "transcription",
+    "note": "BNA-verified transcription and line numbering, the text used here",
+    "date": "2018"
+   },
+   {
+    "who": "bosbach",
+    "role": "prior solution",
+    "note": "DYING DECLARATION"
+   },
+   {
+    "who": "estes",
+    "role": "prior solution",
+    "note": "Oxford vocabulary (with 'Dave'): SUMMER TERM, 1853, CONINGTON, JOWETT, BALLIOL ..."
+   },
+   {
+    "who": "krajcovic",
+    "role": "prior solution",
+    "note": "QUI FIT (Horace, Satires 1.1) and 2026 exact-cost audits"
+   }
   ]
  }
 }

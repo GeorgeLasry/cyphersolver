@@ -16,6 +16,8 @@ Thomas Ernst's diplomatic line numbering and BNA-checked text; Jozef Krajčovič
 allowed. Ernst has proposed SIGNED DECLARATION RELIGIONEM CONFIRMARE and MASTER PUPIL; Krajčovič
 costs the former at 14 edits.
 
+**Update 25 Oct 2026: see §8 for four new readings (possessive S in 8/25, XAMN in 10/21, Horace Od. 1.6.9 in 13, Ars Poetica 138 in 20).**
+
 **The unanswered question is how much the omission rule lets you read into a line.** With three to
 twelve letters freely inserted, plausible English can be made to fit almost anything. Readings are
 worth something only where the letters force them. This attempt measures that.
@@ -196,22 +198,129 @@ Line 6 is credited for USED SIMPLY YOUR CAP only, line 14 for MONTHS PREVIOUSLY/
 The honest figure goes down, not up. 95% is not reachable from these letters: the unread lines are open because many
 readings fit, and no image, sibling or key can choose between them.
 
+## 8. Fourth session (24–25 Oct 2026): four new readings, and what is new against the blog and against §§1–7
+
+George supplied the circulating text and asked for a reading by merging token pairs. The tools were rebuilt from
+scratch in this session (`fit.py`, an exact-fit dynamic programme that returns the minimum misprints and omissions of a
+candidate; `search2.py`, a trie search over 51,000 words with a bigram model from the 24 Gutenberg novels, W.'s
+omission habits as penalties, and the §2 onset prior; `ads2.py` holds both transcriptions). Controls: lines 3, 4, 7,
+8, 16, 17, 24, 25, 27, 28 come out first without being told. Both Schmeh threads (2018, 2026) were then searched for
+every term below before anything was called new.
+
+**New against the blog threads and against this file**
+
+1. **Lines 8 and 25: the S is a possessive.** I ATTENDED CONINGTON'S LECTURES and I ATTENDED JOWETT'S LECTURES fit
+   with no misprint (5 and 6 omissions). Every earlier reading, including §3's cost table, had LECSURS and treated it
+   as a spelling anomaly.
+2. **Lines 10 and 21 end in the same abbreviated word.** Both end *am* in the 8 May half and *xn* in the 20 May half:
+   the four letters merge to XAMN, "Examn." for examination with its initial dropped. HERTFORD SCHOLARSHIP XAMN costs
+   2 omissions (the published EXAMINATION, 12), and EXAMINATION is the forced ending of line 21, whose first word stays
+   open: HOLIDAYS XAMN (3 omissions) against HOLY ORDERS XAMN (5). Ernst had read *xn* as Christian.
+3. **Line 13 is Horace, Odes 1.6.9.** "1. 6. 9." is book, ode, line, and *Cotegr* is CO-TE-GR, the first two letters
+   of "conamur tenues grandia", exact. `scan_horace.py` (every run of words in Horace, 1–3 initial letters per word,
+   exact merge) returns this phrase and no other for the two-letter rule across the Odes, Epodes, Satires, Epistles
+   and Ars Poetica (Latin Library text in `latin/`). Ernst (Sept 2026) called the line "any classicist's guess"; §7
+   counted it unread.
+4. **Line 20, A.P. 138, is Ars Poetica 138**, "quid dignum tanto feret hic promissor hiatu?", the line before
+   "parturient montes". Ernst read ANNUAL PAY and later £138 annual expenses (a lead Krajčovič could not source); §7
+   had "meaning unknown". With QUI FIT (Sat. 1.1.1) that is three Horace tags in the motto passage, lines 12–20, which
+   reads as a dispute over the mottoes on anonymous prize compositions judged by Conington.
+
+**Checked, not new** (suggested in a parallel session of George's, verified here): BALLIOL MAN OPPOSITE USED MOTTO
+fits line 19 with 5 omissions and no misprint, leaving *sov* / *c* unexplained; CANDIDATE GAPED (4 omissions) and
+CHANGE ADOPTED (3) both fit line 18 exactly, and *hiatu* two lines on gives GAPED faint contextual support; CONVO MET
+ME IN GARDEN stays the only one-omission fit of line 5.
+
+**Negative results (new checks).** The omitted letters are not a third stream: the March 1875 "TITOLLUM" ad has about
+60 letters. A word-structure prior (fragments per word in the 8 May half) and omission caps of 5 per word, 3 in a row,
+change nothing on the open lines. A Latin word search (la-gutenberg, 110,000 forms; control: QUI FIT first) on lines
+9, 26, 29, 12 gives junk, and the Gutenberg Latin editions leak English into the vocabulary. The Horace initial-letter
+scan finds nothing for 9, 26, 29, 12. So those four lines are undetermined in English, in Latin, and as Horace
+abbreviations in W.'s Cotegr style. Deep candidate lists (150 per line, diversity rounds with banned openings,
+initial-vowel omission allowed, 80 for line 23) are in `search_candidates_20261025.txt` and `_2.txt`; none reads.
+
+**Transcription check (25 Oct 2026).** George's images of the two ads match the circulating text letter for letter,
+including the seven tokens Ernst corrected (Hfsclam, 139, Eftdorshpxn, Tavlysdinlge, Dmlurpinrtrcamur, iolapstedtioc,
+Wtubrfftrs…). They are the klausschmeh.net illustrations, re-typeset in a modern face from that text (§7), so they
+cannot adjudicate. Ernst's text is favoured on internal evidence: 138/138 aligns the halves like 53/18, and HERTFORD
+is exact only with Hrsclam. Readings 1, 2 (line 21), 3 and 4 are identical under both texts; under the circulating
+text HERTFORD needs one misprint (f for r).
+
+**Measure.** `measure.py` is not in this working tree (skip-worktree), so §7's 0.547 was not re-run. Lines 13 and 20
+add 19 of the 470 characters (276/470 = 0.587) if counted; the possessive and XAMN change costs, not coverage.
+
+### Line-by-line decrypt (25 Oct 2026)
+
+Ernst's numbering and text; the circulating text in brackets where it differs. Confidence: **forced** = exact fit, top
+of the open-vocabulary search, no misprint; **probable** = exact fit, some competition; **possible** = exact fit among
+several; **unread** = nothing forced. "om" = letters W. dropped. The last column says where the reading comes from:
+the blog threads, this file's earlier sections, or this session (**new**).
+
+| # | 8 May / 20 May | Decryption | Confidence, novelty |
+|---|---|---|---|
+| 0 | W. / W. | W. | Addressee or signature. Blog. |
+| 1 | Str / Umem | SUM TERM (SUMMER TERM) | Forced, 0 om (3 om). Blog, Estes/Dave. |
+| 2 | 53 / 18 | 1853 | Forced. Blog, Estes. |
+| 3 | Catokwacopa / Poayatlgerty | CAP TOOK AWAY AT COLLEGE PARTY | Forced, 2 om. Blog, Dave/Ernst. |
+| 4 | Olcabrokorlested / Dpeatcnrftin | OLD CAP BROKE AT CORNER LEFT INSTEAD | Forced, 2 om. Blog, Dave/Ernst. |
+| 5 | Coomemega / Nvtinrdn | CONVO MET ME IN GARDEN | Possible, 1 om; CONINGTON needs a misprint. Blog, Estes. |
+| 6 | Sesipyyocashostikr / Dmlurpinrtrcamnr [..camur] | S..D SIMPLY YOUR CAP IN SHORT … | Middle probable; first word and last ten letters unread. Blog, Dave/Ernst, partial. |
+| 7 | Rep / Etd | REPEATED | Forced, 2 om. Blog, Dave/Ernst. |
+| 8 | Itedconlec / Atndngtnsurs | I ATTENDED CONINGTON'S LECTURES | Forced, 5 om, 0 misprints; CONINGTON the only name that fits (§5). Possessive S **new**; name from Estes. |
+| 9 | mistrl / Otenpu | unread | Unread in English, Latin and as Horace abbreviation. MASTER PUPIL needs 4 misprints. |
+| 10 | Hrsclam / Etfdorshpxn [Hfsclam / Eftdorshpxn] | HERTFORD SCHOLARSHIP XAMN (Examn., examination) | Probable, 2 om on Ernst's text; HERTFORD the only name that fits (§5). XAMN **new**; HERTFORD SCHOLARSHIP from Estes/Krajčovič. Circulating text needs one misprint. |
+| 11 | 54, 3 / 18 | 1854, 3 | Year forced; the 3 unexplained. Blog, Ernst. |
+| 12 | caselcluchozamot / Ndtsfindseseo | unread (ends A MOTTO?) | Unread; CAN'T SELECT … needs 5 misprints. |
+| 13 | 1. 6. 9. / Cotegr | Od. 1.6.9 CO(namur) TE(nues) GR(andia) | Forced, exact; the only two-letter match in all Horace. **New**. Ernst: "any classicist's guess". |
+| 14 | Mopredisco / Tsvlysdinlge [Tavlysdinlge] | MONTHS (or MOTTO WAS) PREVIOUSLY DISCLOSED IN COLLEGE | Possible, 12 or 14 om; PREVIOUSLY DISCLOSED IN COLLEGE probable. Blog, Ernst/Krajčovič; MONTHS §4. |
+| 15 | Contoladsemot / Ngtndusdcndo | CONINGTON TOLD US ADD SECOND MOTTO | Probable, 4 om; CONINGTON the only name that fits (§5). Blog, Estes/Ernst. |
+| 16 | Iadfilisat / Edrstneirs | I ADDED FIRST LINE SATIRES | Forced, 2 om. Blog, Estes. |
+| 17 | Qft / Ui | QUI FIT (Horace, Sat. 1.1.1) | Forced, 1 om; first in the Latin search (§6). Blog, Krajčovič. |
+| 18 | Cagap / Ndted | CHANGE ADOPTED, or CANDIDATE GAPED | Possible, 3 or 4 om; both exact. §4; GAPED from a parallel session of George's, verified here. |
+| 19 | Balmnopsemsov / Iolapstedttoc [iolapstedtioc] | BALLIOL MAN OPPOSITE USED MOTTO [sov / c] | BALLIOL MAN forced; rest possible, 5 om, four letters left over. Blog, Dave/JA; extension from the parallel session, verified here. |
+| 20 | Ap. 138 / A.P. 138 [Ap. 139] | A.P. 138 = Ars Poetica 138, "quid dignum tanto feret hic promissor hiatu?" | Reference forced once line 13 is Horace. **New**. Ernst: annual pay. |
+| 21 | Hodsam / Yxn | HOLIDAYS XAMN, or HOLY ORDERS XAMN | XAMN forced; first word possible, 3 or 5 om. XAMN **new**; HOLIDAYS §4; HOLY ORDERS from the parallel session. |
+| 22 | 55, 6 / 18. 18 | 1855, 1856 | Probable. Blog, Ernst. |
+| 23 | Iopotonrogfimsecharsenr / Wtubtrfftrstendinhofsvmnr [Wtubrfftrs…] | unread | Unread; SUMMONER readings need 15 misprints. |
+| 24 | Tolshr / Dily | TOLD SHIRLEY | Forced, 1 om; SHIRLEY the only name that fits (§5). Blog, Dave/Ernst. |
+| 25 | Itedjolec / Atdwtsurs | I ATTENDED JOWETT'S LECTURES | Forced, 6 om, 0 misprints; JOWETT the only name that fits (§5). Possessive S **new**; name from Estes. |
+| 26 | mistrl / Oatvpu | unread | As line 9. |
+| 27 | Ding / Y | DYING | Forced, 0 om. Blog, Bosbach 2018. |
+| 28 | Declon / Arati | DECLARATION | Forced, 0 om. Blog, 2018 thread. |
+| 29 | Ereflodbr / Rileohmae | unread | Unread in English, Latin and as Horace abbreviation; FOLLOWED is the only stable word. |
+
+### Read as a whole
+
+*Summer term 1853. Cap took away at college party; old cap broke at corner, left instead. [Conington?] met me in
+garden, [said] simply "your cap, in short, …". Repeated. I attended Conington's lectures […]. Hertford scholarship
+examination, 1854, 3. […] a motto: Od. 1.6.9 "conamur tenues grandia". [Motto] previously disclosed in college.
+Conington told us add second motto. I added first line, Satires: "Qui fit". Change adopted. Balliol man opposite used
+motto […] A.P. 138 ["quid dignum tanto feret hic promissor hiatu?"]. Holidays (holy orders?) examination, 1855, 1856.
+[…]. Told Shirley. I attended Jowett's lectures […]. Dying declaration. […]*
+
+Bracketed words are supplied from context, not from the letters; the ellipses are lines 6 (tail), 9, 12, 19 (tail),
+23, 26 and 29.
+
+Reproduce: `python build_vocab.py ../../lang/corpora/en-gutenberg.txt` (and `build_vocab_la.py` with
+`la-gutenberg.txt`), `python audit.py`, `python search2.py 27,28,13` (`NBEST`, `KBEST`, `MAXOM`, `MAXCONSEC`,
+`FIRSTOM=1`, `TRANS=OLD`, `LM=lm_la.pkl`), `python driver.py` (diversity rounds), `python fit.py Declon Arati
+DECLARATION`, `python scan_horace.py latin/horace_la.txt 13,9,26,29,12`.
+
 ## Remaining gaps
 
-- lines 9 and 26 (mistrl / otenpu, oatvpu) - blocker: too-short; unigram and phrase-level searches give many unrelated exact fits
-- line 12 - blocker: too-short; phrase-level search gives junk
-- line 23 (48 letters) - blocker: too-short; phrase-level 5-gram search run 5 Oct 2026 (beam.py): junk, no forced reading
-- line 29 (ereflodbr / rileohmae) - blocker: too-short; English (unigram + 5-gram) and Latin searches give only junk
-- line 5 - blocker: too-short; CONINGTON MET ME IN GARDEN needs one misprint and is not the top fit
-- line 6 tail, line 14 tail, line 19, line 21 - blocker: too-short; several exact fits, none forced
-- line 13 (1.6.9 / cotegr), line 20 (A.P. 138) - blocker: too-short; no reading of the figures
-- re-transcription - blocker: needs-physical-access; originals only on the paywalled British Newspaper Archive; the blog images are re-typeset from the old text
+- lines 9 and 26 (mistrl / otenpu, oatvpu) - blocker: too-short; unigram, bigram and 5-gram English searches, the Latin search and the Horace initial-letter scan (25 Oct 2026) all give nothing forced
+- line 12 - blocker: too-short; English, Latin and Horace scans give junk
+- line 23 (48 letters) - blocker: too-short; phrase-level searches (5 Oct and 25 Oct 2026): junk, no forced reading
+- line 29 (ereflodbr / rileohmae) - blocker: too-short; English, Latin and Horace scans give only junk
+- line 5 - blocker: too-short; CONVO MET ME IN GARDEN is the only one-omission fit, CONINGTON needs one misprint
+- line 6 tail, line 14 tail, line 19 tail (sov / c after BALLIOL MAN OPPOSITE USED MOTTO), line 21 first word (HOLIDAYS or HOLY ORDERS before XAMN) - blocker: too-short; several exact fits, none forced
+- re-transcription - blocker: needs-physical-access; originals only on the paywalled British Newspaper Archive; the blog images (re-checked 25 Oct 2026) are re-typeset from the old text
 
 ## Escalation
 
-- [n/a] siblings: two newspaper advertisements, both used; the March 1875 ad and the 1879 Fact or Fiction ads are a different system
+- [n/a] siblings: two newspaper advertisements, both used; the March 1875 ad (too short to be a third stream, checked 24 Oct 2026) and the 1879 Fact or Fiction ads are a different system
 - [x] clear-pages: the clear closing sentence of the 20 May ad used to pair the ads
 - [n/a] known-keys: no key: the mechanism is interleaving with omissions, not substitution
-- [x] print: Schmeh blog thread, Bosbach, Estes, Ernst BNA text, Krajcovic audits reviewed
-- [x] key-rebuild: open-vocabulary exact-fit search (English 30k, Latin 19k) and name-frame tests
-- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked
+- [x] print: Schmeh blog threads 2018 and 2026, Bosbach, Estes, Ernst BNA text, Krajcovic audits reviewed; Horace identified for lines 13 and 20 (25 Oct 2026)
+- [x] key-rebuild: open-vocabulary exact-fit search (English 30k and 51k, Latin 19k and 110k) and name-frame tests
+- [x] retry: phrase-level 5-gram search (5 Oct 2026) and bigram trie search, diversity rounds, Latin and Horace scans (24–25 Oct 2026) on every open line: lines 8, 10, 13, 20, 21, 25 improved, the rest undecided; images checked, BNA originals blocked
