@@ -291,7 +291,11 @@ ads by ten years; the register's honours index has "Cattlow, Jas. S., S. John's,
 Balliol Coll., matric. 24 March, 1852, aged 19; B.A. 1855, M.A. 1859, bar.-at-law, Inner Temple, 1863" (Eton; no
 death date given, so alive in 1887). The initial-letter scan (scan_horace.py) was also run over Virgil's Eclogues,
 Georgics and Aeneid and over Persius (Latin Library texts, 25 Oct 2026): no match for lines 9, 26, 29 or 12, so
-the lecture tails are not quotations from the authors Conington lectured on either. ELLIS, CATTLOW and MONTGOMERIE were tested as cribs on every open line: all need misprints, so
+the lecture tails are not quotations from the authors Conington lectured on either. The same scan over Juvenal (26k words), Lucretius (50k), Catullus (14k), Ovid (216k: Metamorphoses,
+Fasti, Amores, Ars, Tristia, Ex Ponto, Heroides), Martial (61k), Lucan (53k), Plautus (178k), Tacitus (155k) and the
+840k-word Gutenberg Latin corpus (Caesar, Cicero, Livy, Sallust, Vulgate): no match for lines 9, 26, 29 or 12.
+Tibullus, Propertius and Terence could not be fetched from the Latin Library and remain unscanned. Line 13 is the only
+place W. abbreviated a quotation by initial letters. ELLIS, CATTLOW and MONTGOMERIE were tested as cribs on every open line: all need misprints, so
 none is written in the unread text. The same paper's 20 Oct. 1855 issue (Oxford University Herald, p. 8): "The
 Professor of Latin proposes to resume his Lectures on the Eclogues of Virgil on Thursday in the Law School";
 ECLOGUES, VIRGIL and LAW SCHOOL fail line 9, so the lecture tails (9, 26) are not course subjects.
