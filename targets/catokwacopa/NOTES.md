@@ -287,7 +287,11 @@ were mentioned by the Examiners as having greatly distinguished themselves." Thr
 co. Stafford, arm. Trinity Coll., matric. 27 May, 1852, aged 18, scholar 1853; scholar (Fereday foundation) St.
 John's Coll. 1854-68, B.A. 1857, M.A. 1859, tutor 1861-8, master of the schools 1861, died 3 June, 1885." So the one
 non-Balliol man the examiners named came up in summer term 1852, was a Trinity scholar from 1853, and outlived the
-ads by ten years; the register's honours index has "Cattlow, Jas. S., S. John's, 1 Cl. Mod. 1854". ELLIS, CATTLOW and MONTGOMERIE were tested as cribs on every open line: all need misprints, so
+ads by ten years; the register's honours index has "Cattlow, Jas. S., S. John's, 1 Cl. Mod. 1854". Foster vol. 3: "Montgomerie, Frederick Butler Molyneux, o.s. Frederick Molyneux, of Brighton, Sussex, arm.
+Balliol Coll., matric. 24 March, 1852, aged 19; B.A. 1855, M.A. 1859, bar.-at-law, Inner Temple, 1863" (Eton; no
+death date given, so alive in 1887). The initial-letter scan (scan_horace.py) was also run over Virgil's Eclogues,
+Georgics and Aeneid and over Persius (Latin Library texts, 25 Oct 2026): no match for lines 9, 26, 29 or 12, so
+the lecture tails are not quotations from the authors Conington lectured on either. ELLIS, CATTLOW and MONTGOMERIE were tested as cribs on every open line: all need misprints, so
 none is written in the unread text. The same paper's 20 Oct. 1855 issue (Oxford University Herald, p. 8): "The
 Professor of Latin proposes to resume his Lectures on the Eclogues of Virgil on Thursday in the Law School";
 ECLOGUES, VIRGIL and LAW SCHOOL fail line 9, so the lecture tails (9, 26) are not course subjects.
