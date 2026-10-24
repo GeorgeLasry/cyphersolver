@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "target": "casimir1618",
+  "title": "Willem Lodewijk to an officer, Leeuwarden, 5 Apr 1594, in Ernst Casimir's key folder (KHA A23-311)",
+  "documents": [
+    {
+      "id": "A23-311 scan 027",
+      "shelfmark": "Koninklijk Huisarchief, A23-311, scan 027",
+      "date": "5 Apr 1594",
+      "year": 1594,
+      "country": "Dutch Republic",
+      "route": "Leeuwarden -> unknown officer",
+      "language": "Dutch",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the scan."
+      },
+      "length": {
+        "tokens": "unknown",
+        "distinct": "unknown",
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "unknown",
+        "source": "unknown",
+        "image_quality": "good",
+        "notes": ""
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "unknown"
+    ],
+    "summary": "Greek-like and invented signs in runs inside clear Dutch; word signs shared with the 028 key (staten, soldaat).",
+    "symbol_kind": "symbols",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": "unknown",
+      "kinds": [
+        "common words"
+      ],
+      "unread_groups": "unknown"
+    },
+    "nulls": "unknown",
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown",
+    "notes": "The folder holds about 26 keys (inventory.md)."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "no",
+      "where": "None known; not on DECODE.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "unknown",
+    "human_role": "Asked to take KHA lead K2 from the sweep.",
+    "tools": [
+      "Koninklijke Verzamelingen image API",
+      "python"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-24",
+    "last_date": "2026-10-24"
+  },
+  "solution": [
+    {
+      "date": "2026-10-24",
+      "kind": "access",
+      "what": "Fetched the 97 scans of KHA A23-311.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "literature search",
+      "what": "Subagent inventoried the folder: about 26 keys 1590s-1627 and one ciphertext letter (scan 027, Willem Lodewijk 1594).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Applied the 028 alphabet to the first cipher run of scan 027: not Dutch; the letter says the old cipher was kept.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "method": "unknown",
+    "method_basis": "unknown",
+    "contribution": [
+      "unknown"
+    ],
+    "class": "unknown",
+    "fraction_read": "unknown",
+    "grades": {
+      "H": "unknown",
+      "C": "unknown",
+      "M": "unknown",
+      "I": "unknown"
+    },
+    "verification": [
+      "unknown"
+    ],
+    "notes": "In progress."
+  }
+}
