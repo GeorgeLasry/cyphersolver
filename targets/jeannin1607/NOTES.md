@@ -1,6 +1,6 @@
 # Villeroy; Henri IV → Pierre Jeannin and fellow envoys, 1607, BnF Français 3516 — Villeroy / royal cipher
 
-Status: no write-up of our own (result by George Lasry, presented on docs/jeannin1607.html)
+Status: in progress (ff87v-88r, ff112v-116v still to transcribe and decipher with Lasry's 110-symbol key)
 
 **24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 3516 — Villeroy / royal cipher): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
 
@@ -84,7 +84,7 @@ deciphered passages 0.968. His status: 2/15 pages transcribed; 2 more in part; 2
 ## Remaining gaps
 
 - ff86r-87r, f112r: 10 unread groups, 3 doubtful words (1,099 of 1,145 elements identified) - blocker: no-key-material; interlinear plaintext only at ff86r-86v and 112r.
-- ff87v-88r, ff112v-116v: not transcribed or deciphered in his report (11 of 15 pages) - blocker: no-key-material; outside this project's work; his transcription is incomplete (2/15 pages, 2 in part).
+- ff87v-88r, ff112v-116v: not transcribed or deciphered in his report (11 of 15 pages) - blocker: not-attempted; his 110-symbol key exists, so these pages can be transcribed and deciphered here.
 
 ## Escalation
 
