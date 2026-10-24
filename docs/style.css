@@ -948,3 +948,23 @@ details.ftext{margin:.4rem 0 .8rem}
 details.ftext > summary{cursor:pointer;font-family:var(--mono);font-size:.82rem;color:var(--ink2)}
 details.ftext pre{max-height:28rem;overflow:auto;white-space:pre-wrap;word-break:break-word;font-size:.8rem;line-height:1.45;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:.7rem .9rem}
 p.ftext{font-family:var(--mono);font-size:.82rem;margin:.3rem 0}
+
+/* George Lasry's report at the top of a page (lasry_report_html in _build_site.py, 24 Oct 2026) */
+section.lreport{margin-bottom:2.4rem}
+p.lr-src{color:var(--ink2);font-size:.92rem}
+.lr-summary{background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:1rem 1.2rem;margin:1rem 0}
+.lr-summary h3{margin-top:0}
+.lr-summary dl{display:grid;grid-template-columns:max-content 1fr;gap:.25rem 1rem;margin:.6rem 0}
+.lr-summary dt{font-weight:700;color:var(--head)} .lr-summary dd{margin:0}
+p.lr-status{font-family:var(--mono);font-size:.84rem;color:var(--ink2)}
+p.lr-links a{font-family:var(--mono);font-size:.84rem}
+.lr-pair{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:.6rem 0 1.4rem}
+.lr-pair > div{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:.7rem .9rem}
+.lr-pair h4{margin:0 0 .4rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.lr-readable{border-left:3px solid var(--rule);padding-left:1rem;overflow-wrap:anywhere}
+.lr-pair,.lr-summary{overflow-wrap:anywhere}
+.lr-readable h4{font-family:var(--mono);font-size:.85rem;color:var(--gold);margin:1.2rem 0 .3rem}
+.lr-readable p.lr-doc{font-weight:700;color:var(--head)}
+b.dec{color:var(--head);font-weight:700}
+pre.lr-key{white-space:pre-wrap;font-size:.8rem;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:.7rem .9rem}
+@media (max-width:700px){.lr-pair{grid-template-columns:1fr}.lr-summary dl{grid-template-columns:1fr}.lr-summary dl dd{margin:0 0 .35rem}}

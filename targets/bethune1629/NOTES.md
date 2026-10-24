@@ -76,3 +76,23 @@ research", 10 Oct 2026); the repository holds only his entry with one excerpt an
 NOTES, README and the folder give no fuller text. His decryption is his to publish, so the entry stays an **external
 pointer** to his decipherment, with a note saying so; it is not scored or reviewed here.
 
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/41_francais-3675-louis-xiii-a-bethune-30-juin-1629.pdf`),
+extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. The page shows it at the top.
+Measured: whole text 0.954 (v10_relabel.measure); every deciphered (bold) run gives sense. The report itself calls the
+letter partly deciphered (59 mapped symbols, 11 unidentified; f53v transcribed in part), so the outcome is read in part.
+
+## Remaining gaps
+
+- f53r-f53v: about 11 unidentified sign types and the [?] groups in his readable text - blocker: no-key-material; the interlinear decipherment covers only part of f53r and his key gives these signs no value.
+
+## Escalation
+
+- [x] siblings: interlinear passages on f83r-v and f136r used by Lasry to check shared signs (his report)
+- [x] clear-pages: the secretary's interlinear decipherment on f53r is the adjacent plaintext the key came from
+- [x] known-keys: Lasry's reconstructed key is shown on the page
+- [x] print: no printed decipherment found; DECODE has no record (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured

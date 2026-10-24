@@ -112,10 +112,16 @@
       "kind": "literature search",
       "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 2933): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.809 (whole), 0.758 (deciphered passages); state read in part.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "already solved",
+    "class": "read in part",
     "key": "unknown",
     "method": "key recovered from ciphertext-only",
     "parts": [
@@ -130,9 +136,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.1,
-    "fraction_read_method": "estimated",
-    "fraction_read_source": "22 Oct 2026, reading audit: only text that is held and reads counts. Lasry's excerpt, three complete lines of f54r, against about 30 lines carrying his 838 elements (2/8 pages transcribed, 1 in part): about 0.1, estimated. Withdrawn as a reading figure: 0.84 (his identified elements / elements, 704/838), which is key coverage; his report itself says 3/8 pages deciphered in part.",
+    "fraction_read": 0.758,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.758 (bare ? counted as unread); whole text 0.809 (v10_relabel.measure).",
     "verification": [
       "independent verification"
     ],
@@ -151,19 +157,33 @@
     "texts": [
       {
         "doc": "salviati1525",
-        "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
-        "decryption": "lasry_entry.md",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "summary": "Cardinal Giovanni Salviati, 16 October 1525, to a recipient Lasry leaves not established. Salviati discusses restoration of possession and imperial territory, defence and government of the state, nobles and people, captains and guards, the archbishop of Toledo, Modena, and correspondence sent by land and sea.",
-        "note": "The repository holds only the excerpt and translation in George Lasry's report (lasry_entry.md); his full transcription and decryption are his and not yet in the repository, and the ciphertext has not been transcribed here. Verify v8, 23 Oct 2026: the excerpt held here does not read on its own: v2_score.py 0.0 on explicit holes and plain (0/2 sentences, a [?] in both, hole rate 0.152). The reading is George Lasry's (3/8 pages deciphered in part, not in the repository); the state is left as his pointer.",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 2/8 pages transcribed; 1 more in part; 3/8 pages deciphered in part. Measured 24 Oct 2026: whole text 0.809 (v10_relabel.measure, 445 words); deciphered passages alone 0.758 (273 words, 87 unread groups, 0 doubtful words; a bare ? counted as unread). f54r-f54v build sentences in the deciphered runs with holes between them; ff55r-57r are mostly unread (his report: 2/8 pages transcribed, 3/8 deciphered in part), so read in part. State: read in part.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude (reading audit)",
-          "date": "2026-10-22",
-          "note": "lasry_entry.md: the only reading held is Lasry's three complete lines of f54r, which build an Italian sentence with three [?] holes and carry his English translation ('it will be necessary to find some way ... having possession restored should suffice ... of Modena ... as they now stand'). His decryption of the rest (3/8 pages in part) is not in the repository and is not graded here."
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-24",
+          "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.809, deciphered passages 0.758. Not re-deciphered here."
         },
-        "state": "read",
+        "state": "read in part",
         "language": "it",
-        "read_share": 0.951
+        "read_share": 0.809,
+        "reading": "lasry/report/readable.md",
+        "translation": "lasry/report/translation_excerpt.md"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "f54r-f54v: unread groups between the deciphered runs",
+        "blocker": "no-key-material",
+        "detail": "704 of 838 elements identified in Lasry's key; no other key or plaintext known"
+      },
+      {
+        "item": "ff55r-57r: not transcribed or deciphered in Lasry's report",
+        "blocker": "no-key-material",
+        "detail": "his transcription is incomplete (2/8 pages); outside this project's work"
       }
     ]
   }

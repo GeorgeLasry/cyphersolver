@@ -82,3 +82,25 @@ The excerpt of f54r held here (`lasry_entry.md`) does not read on its own: `v2_s
 (0/2 sentences, a `[?]` in each, hole rate 0.152). The reading is George Lasry's (3/8 pages deciphered in part, not in
 the repository); the entry's state is left as his pointer, with a note saying so.
 
+
+## George Lasry's report PDF (24 Oct 2026)
+
+Lasry sent his report on this item as a PDF (`lasry/report/09_francais-2933.pdf`), extracted with
+`research/reading_audit/lasry_pdf_extract.py` into `lasry/report/` (summary, key image, excerpt and translation, the
+full Readable text by folio). The page now shows it at the top. Measured: whole text 0.809 (v10_relabel.measure),
+deciphered passages 0.758 (bare ? counted as unread). f54r-f54v build sentences with holes between the deciphered runs;
+ff55r-57r are mostly unread (his status: 2/8 pages transcribed, 1 in part; 3/8 deciphered in part). Outcome: read in part.
+
+## Remaining gaps
+
+- f54r-f54v: unread groups between the deciphered runs - blocker: no-key-material; 838 elements, 704 identified in his key; no other key or plaintext known; his decipherment is the only one.
+- ff55r-57r: not transcribed or deciphered in his report - blocker: no-key-material; outside this project's work, his transcription is incomplete (2/8 pages).
+
+## Escalation
+
+- [x] siblings: Français 2933 neighbours belong to Lasry's BnF survey; no sibling key on DECODE (record search 24 Oct 2026)
+- [x] clear-pages: f54r-f57v opened on Gallica 13 Oct 2026; no decipherment or gloss
+- [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
+- [x] print: no edition of this letter found; DECODE has no record (24 Oct 2026)
+- [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
+- [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them

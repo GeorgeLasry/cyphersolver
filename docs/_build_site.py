@@ -18,7 +18,7 @@ import re, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261014c'
+VERSION ='20261024a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -66,6 +66,7 @@ GENERATED = [
     r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
+    r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
 ]
@@ -2053,7 +2054,7 @@ PAGES = [
          blurb='The Nemours–Savoy dispute: a refused levy of two thousand men, reconciliation with Savoy, Piedmont, and crossing the mountains.',
          quote='Il n’y a point de doubte que S.A. ne ce sente griefvement offensé du refus faict de la lev',
          author='George Lasry'),
-    dict(slug='bethune1629', label='Louis XIII to Philippe de Béthune, 30&hellip;', year='1629', y=1629.0, place='BnF Français 3675', st='solved', stt='read',
+    dict(slug='bethune1629', label='Louis XIII to Philippe de Béthune, 30&hellip;', year='1629', y=1629.0, place='BnF Français 3675', st='partial', stt='read in part',
          title='Louis XIII to Philippe de Béthune, 30 June 1629',
          blurb='Louis XIII nominates the Archbishop of Lyon for a cardinal’s hat, citing the services of his brother Richelieu.',
          quote='vous les fassiez valloir et peser à sa Saincteté y adjoustant de plus la recommandation de',
@@ -2233,7 +2234,7 @@ PAGES = [
          blurb='Lucinge discusses the king’s concessions, Rouen’s reception of the king, the Paris factions and the risks of civil war. Later letters concern Corbeil, Melun, marriage plans and the princess of Condé.',
          quote='Soit qu’à ruiner [?] et en la ruine de cettuy celle de son fils y a esté comprise. [?] J’a',
          author='George Lasry'),
-    dict(slug='meryvic1589', label='Méry de Vic to Henri IV, 28 August 1589', year='1589', y=1589.0, place='BnF Dupuy 61', st='stuck', stt='decoded, not read',
+    dict(slug='meryvic1589', label='Méry de Vic to Henri IV, 28 August 1589', year='1589', y=1589.0, place='BnF Dupuy 61', st='partial', stt='read in part',
          title='Méry de Vic to Henri IV, 28 August 1589',
          blurb='Méry de Vic writes after the assassination of Henri III and the accession of Henri IV. The opening cleartext reports the arrival of the news and local allegiances. The cipher reports troops near Limoges and divided loyalties; later cleartext discusses expenses, elections, intercepted dispatches and cannon for rebel forts.',
          quote='? assembler à huict lieues de ceste ville. Leur troupe ? au plus de douze cents hommes? de',
@@ -2268,7 +2269,7 @@ PAGES = [
          blurb='Rondinelli describes Catholic dissatisfaction, preparations against Paris, and doubts about the Duke of Mena protecting the city.',
          quote='… dalla necessita io non posso credere che l signor duca di Mena sia bastante per difender',
          author='George Lasry'),
-    dict(slug='salviati1525', label='Giovanni, cardinal Salviati to Not&hellip;', year='1525', y=1525.0, place='BnF Français 2933', st='solved', stt='read',
+    dict(slug='salviati1525', label='Giovanni, cardinal Salviati to Not&hellip;', year='1525', y=1525.0, place='BnF Français 2933', st='partial', stt='read in part',
          title='Giovanni, cardinal Salviati to Not established, 16 October 1525',
          blurb='Salviati discusses restoration of possession and imperial territory, defence and government of the state, nobles and people, captains and guards, the archbishop of Toledo, Modena, and correspondence sent by land and sea.',
          quote='e bisogniera trovare qualche modo [?] Pure a me pare che l’essere restituita la possession',
@@ -2599,6 +2600,9 @@ def texts_html(page):
             return p if str(p).startswith('http') else REPO_BLOB + rel + '/' + str(p)
         def show(kind, p):
             name = html.escape(pathlib.PurePosixPath(str(p)).name)
+            if str(p).startswith('lasry/report/'):     # shown in full in George Lasry's report at the top of the page
+                return (f'<p class="ftext">{kind}: in full above, in <a href="#lasry-report">George Lasry&rsquo;s decipherment</a> '
+                        f'(<a href="{link(p)}">{name}</a>)</p>')
             fp = None if str(p).startswith('http') else base / p
             # size with LF line ends, so a Windows (CRLF) checkout and the Linux CI build make the same page
             if fp and fp.is_file() and fp.suffix.lower() in ('.txt', '.md', '.tsv', '') and len(fp.read_bytes().replace(b'\r\n', b'\n')) <= TEXT_INLINE_MAX:
@@ -2637,6 +2641,121 @@ def texts_html(page):
     return ('<!-- texts:start -->\n<h2 id="texts">Full texts</h2>\n<p>The transcription and the decryption of every document on '
             'this page, so that the reading can be used and checked. Short files are shown here; all are in the repository.</p>\n'
             + '\n'.join(out) + '\n<!-- texts:end -->\n')
+
+# George Lasry's report (24 Oct 2026): "Make sure the decryption and translation are on the relevant page, immediately
+# visible, and not buried under a link ... Same for the reconstructed key. ... the closer the page to the format in the
+# PDF, the better." A target with targets/<folder>/lasry/report/ (research/reading_audit/lasry_pdf_extract.py) gets his
+# report at the top of the page body, in the PDF's order and wording: the summary, the key, Excerpt and Translation side
+# by side, the full Readable text, inline. The page's own sections (Verification, Other contributions, Sources) follow.
+LR_START, LR_END = '<!-- lasry:start -->', '<!-- lasry:end -->'
+LR_MAXW = 1600         # px: report images are copied to docs/lasry/<folder>/ at most this wide
+
+def lr_inline(s):
+    s = html.escape(s, quote=False)
+    s = re.sub(r'\*\*(.+?)\*\*', r'<b class="dec">\1</b>', s)
+    s = re.sub(r'&lt;(https?://[^&\s]+)&gt;', r'<a href="\1" rel="noopener">\1</a>', s)
+    return s
+
+def lr_copy(src, dst):
+    """Copy a report image into docs/, scaled down to LR_MAXW; returns (width, height) as published."""
+    try:
+        from PIL import Image
+        im = Image.open(src)
+        w, h = im.size
+        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
+            if w > LR_MAXW: h, w = round(h * LR_MAXW / w), LR_MAXW
+            return w, h
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        if w > LR_MAXW:
+            im = im.resize((LR_MAXW, round(h * LR_MAXW / w)), Image.LANCZOS); w, h = im.size
+        if dst.suffix.lower() in ('.jpg', '.jpeg'): im.convert('RGB').save(dst, quality=88)
+        else: im.save(dst, optimize=True)
+        return w, h
+    except ImportError:
+        dst.parent.mkdir(parents=True, exist_ok=True); dst.write_bytes(src.read_bytes()); return None, None
+
+def lasry_report_html(page):
+    out = []
+    for f in page.get('folders') or []:
+        paths = M.profile_paths()
+        base = paths[f].parent if f in paths else HERE.parent / 'targets' / f
+        rd = base / 'lasry' / 'report'
+        if not (rd / 'report.json').is_file(): continue
+        r = json.loads((rd / 'report.json').read_text(encoding='utf-8'))
+        rel = rd.resolve().relative_to(HERE.resolve().parent).as_posix()
+        shelf = re.split(r' [—–-] |, ', r['title'])[0].strip()
+        bnf = f'Biblioth&egrave;que nationale de France, {html.escape(shelf)}'
+        gal = {g['label']: g['url'] for g in r.get('gallica') or [] if g.get('label')}
+        def fig(rec, credit, cap, cls=''):
+            src = rd / rec['file']
+            name = f'lasry/{f}/{pathlib.PurePosixPath(rec["file"]).name}'
+            w, h = lr_copy(src, HERE / name)
+            wh = f' width="{w}" height="{h}"' if w else ''
+            alt = html.escape(html.unescape(re.sub(r'<[^>]+>', '', cap)))
+            return (f'<figure{cls} data-credit="{credit}"><img src="{name}" alt="{alt}"{wh} loading="lazy">'
+                    f'<figcaption>{cap}</figcaption></figure>')
+        def leaf_credit(folio):
+            fo = re.match(r'(f\d+[rv]|p\d+)', folio or '')
+            return (f'{bnf}' + (f', {fo.group(1)}' if fo else '') + ', via Gallica'
+                    + '; crop from George Lasry&rsquo;s report')
+        pdf = f'{REPO_BLOB}{rel}/{r["pdf"]}'
+        out.append(f'<p class="lr-src">George Lasry&rsquo;s report on this item, as he sent it on {fmt_date(r["received"])} '
+                   f'(<a href="{pdf}">PDF</a>), in its own order and wording. The decipherment, the translation and the '
+                   'reconstruction of the key are his, made with ChatGPT Astra 6 and Anthropic Opus 5.5. This project&rsquo;s '
+                   'own checks follow under <a href="#verification">Verification</a>.</p>')
+        # the summary page
+        s = [f'<div class="lr-summary"><h3>{html.escape(r["title"])}</h3>']
+        if r.get('contents'): s.append(f'<p><b>Contents:</b> {lr_inline(r["contents"])}</p>')
+        if r.get('status'): s.append(f'<p class="lr-status">{lr_inline(r["status"])}</p>')
+        if r.get('fields'):
+            s.append('<dl>' + ''.join(f'<dt>{html.escape(k)}:</dt><dd>{lr_inline(v)}</dd>' for k, v in r['fields']) + '</dl>')
+        for x in r.get('extra') or []: s.append(f'<p>{lr_inline(x)}</p>')
+        if r.get('gallica'):
+            s.append('<p class="lr-links">' + ' &middot; '.join(
+                f'<a href="{html.escape(g["url"])}" rel="noopener">Gallica {html.escape(g["label"])}</a>' for g in r['gallica']) + '</p>')
+        s.append('</div>')
+        out.append('\n'.join(s))
+        for rec in [i for i in r.get('images') or [] if i['kind'] == 'key']:
+            out.append(fig(rec, f'key reconstructed by George Lasry (report, {fmt_date(r["received"])}); sign images: {bnf}, via Gallica',
+                           'The reconstructed key, from George Lasry&rsquo;s report.', ' class="keytab"'))
+        # Excerpt and Translation
+        if r.get('excerpts'):
+            out.append('<h3 id="lasry-excerpt">Excerpt and Translation</h3>')
+            for e in r['excerpts']:
+                if e.get('folio'): out.append(f'<p class="exwhere">{html.escape(e["folio"])}</p>')
+                for im in e.get('images') or []:
+                    rec = next((i for i in r['images'] if i['file'] == im), None)
+                    fo = re.match(r'(f\d+[rv]|p\d+)', e.get('folio') or '')
+                    url = gal.get(fo.group(1)) if fo else None
+                    see = f' <a href="{html.escape(url)}" rel="noopener">Gallica {fo.group(1)}</a>.' if url else ''
+                    if rec: out.append(fig(rec, leaf_credit(e.get('folio')), f'The manuscript lines of the excerpt ({html.escape(e.get("folio") or "")}).{see}'))
+                ex = ''.join(f'<p>{lr_inline(x)}</p>' for x in e.get('excerpt') or [])
+                tr = ''.join(f'<p>{lr_inline(x)}</p>' for x in e.get('translation') or [])
+                out.append(f'<div class="lr-pair"><div><h4>Excerpt</h4>{ex}</div>' + (f'<div><h4>Translation</h4>{tr}</div>' if tr else '') + '</div>')
+        # Readable text, in full
+        rt = (rd / 'readable.md').read_text(encoding='utf-8')
+        body = ['<h3 id="lasry-readable">Readable text</h3>',
+                '<p class="muted">The full text, folio by folio, as in the report. Bold marks the passages deciphered from the '
+                'cipher; the rest is the clear text of the letter. Question marks are the report&rsquo;s: [?] or a bare ? for a sign or group left unread, a ? after a word for a doubtful reading.</p>', '<div class="lr-readable">']
+        for blk in re.split(r'\n\s*\n', rt):
+            blk = blk.strip()
+            if not blk or blk.startswith('<!--'): continue
+            if blk.startswith('# '): body.append(f'<p class="lr-doc">{lr_inline(blk[2:])}</p>'); continue
+            if blk.startswith('## '): body.append(f'<h4>{lr_inline(blk[3:])}</h4>'); continue
+            m = re.match(r'!\[([^\]]*)\]\(([^)]+)\)$', blk)
+            if m:
+                rec = next((i for i in r['images'] if i['file'] == m.group(2)), None)
+                if rec: body.append(fig(rec, f'as reproduced in George Lasry&rsquo;s report ({html.escape(rec.get("caption") or "")})', html.escape(rec.get('caption') or 'From the report.')))
+                continue
+            body.append('<p>' + lr_inline(blk).replace('\n', '<br>') + '</p>')
+        body.append('</div>')
+        out.extend(body)
+        if (rd / 'key.md').is_file():
+            k = (rd / 'key.md').read_text(encoding='utf-8').split('\n', 2)[-1]
+            out.append(f'<h3 id="lasry-key">Reconstructed key</h3>\n<pre class="lr-key">{html.escape(k.strip())}</pre>')
+    if not out: return ''
+    return (f'{LR_START}\n<section class="lreport">\n<h2 id="lasry-report">George Lasry&rsquo;s decipherment</h2>\n'
+            + '\n'.join(out) + f'\n</section>\n{LR_END}\n')
 
 def credits_html(p):
     """The hero's credits line: everyone credited on the page's target(s), grouped by person, linked to contributors.html."""
@@ -3142,6 +3261,11 @@ def process(path):
         ms = list(re.finditer(r'<footer.*?</footer>', s, re.S))
         if ms: m = ms[-1]; s = s[:m.start()] + foot + s[m.end():]
         else: s = s.replace('</main>', '</main>\n' + foot, 1)
+    # George Lasry's report at the top of the body (lasry_report_html), regenerated on every build
+    s = re.sub(r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?', '', s, flags=re.S)
+    lr = lasry_report_html(page) if page else ''
+    if lr and '<main>' in s:
+        s = re.sub(r'(<main>\n(?:<nav class="toc".*?</nav>\n)?)', lambda m: m.group(1) + lr, s, count=1, flags=re.S)
     # give every h2 an id so the contents strip and deep links work
     used = set(re.findall(r'<h2 id="([^"]+)"', s))
     def add_id(m):

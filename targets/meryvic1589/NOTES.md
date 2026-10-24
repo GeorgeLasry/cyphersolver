@@ -96,7 +96,7 @@ One excerpt line disagrees with the manuscript. Lasry gives "s'est déclaré com
 
 ## Remaining gaps
 
-- f. 43r cipher: ~12 unread groups and 4 unidentified signs ([P], [A], [ʃ], [7]) - blocker: no-key-material; no value in Lasry's table (20 unidentified types); his own decryption file may close some (ask him). Decoded here 23 Oct 2026 (texts/f43r_cipher_decode.tsv).
+- f. 43r cipher: ~12 unread groups and 4 unidentified signs ([P], [A], [ʃ], [7]) - blocker: no-key-material; no value in Lasry's table (20 unidentified types); his full Readable text (report PDF, 24 Oct 2026) leaves them unread too. Decoded here 23 Oct 2026 (texts/f43r_cipher_decode.tsv).
 
 ## Escalation
 
