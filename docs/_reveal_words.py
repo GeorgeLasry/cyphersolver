@@ -20,7 +20,9 @@ def mark(slug, text):
     indent = len(lines[1]) - len(lines[1].lstrip(' ')) if len(lines) > 1 else None   # keep the file's own layout
     pos, n, after_gap = 0, 0, True
     for i, t in enumerate(d['tokens']):
-        p = str(t.get('p') or '')
+        p = '' if t.get('cls') == 'null' else str(t.get('p') or '')
+        if p.strip():                       # clear text and code words may carry their own spaces or stops
+            p = p.strip(SKIP + '.')
         lead = len(text[pos:]) - len(text[pos:].lstrip(SKIP))
         t.pop('w', None)
         pos += lead
