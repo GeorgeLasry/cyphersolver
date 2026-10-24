@@ -269,3 +269,10 @@ would explain, but no tested name fits there better than junk.
 
 Next, outside this repository: Walrond's obituary and the Balliol and Crockford's records for 1875 (illness or death,
 the £138, a motto), and the Hertford examiners' list for 1854.
+
+**Walrond checked (same day).** thepeerage.com (p25205) gives his death as March 1899, aged 64, still vicar of St
+Lawrence Jewry; Sion College lists him as its president in 1888. If the DYING DECLARATION of lines 27-28 is W.'s own
+deathbed statement, Walrond is not W.; if it is a quoted or reported declaration, he stays a candidate. The Oxford
+University Calendars of 1854-55, which would name the Hertford examiners, are not on the Internet Archive. Their
+names would only add cribs, and the Balliol surnames decided no line. The open lines are now blocked on outside
+material, a contemporary identification of W. or the British Newspaper Archive originals, not on further search here.
