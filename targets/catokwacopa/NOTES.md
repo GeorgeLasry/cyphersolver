@@ -227,4 +227,22 @@ readings fit, and no image, sibling or key can choose between them.
 - [n/a] known-keys: no key: the mechanism is interleaving with omissions, not substitution
 - [x] print: Schmeh blog thread, Bosbach, Estes, Ernst BNA text, Krajcovic audits reviewed
 - [x] key-rebuild: open-vocabulary exact-fit search (English 30k, Latin 19k) and name-frame tests
-- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked; 23 Oct 2026 (b25) blog thread re-checked, MOST PRIVATE costed (5 misprints)
+- [x] retry: phrase-level 5-gram search on every open line (beam.py, 5 Oct 2026): no line decided; images checked, BNA originals blocked; 23 Oct 2026 (b25) blog thread re-checked, MOST PRIVATE costed (5 misprints); 24 Oct 2026: Oxford vocabulary search (oxnames.py) and the Hertford Scholars list (Historical Register 1888): no line decided
+
+## 8. The Hertford list and an Oxford vocabulary (2026-10-24, fourth session)
+
+**Hertford Scholars, from the record.** The *Historical Register of the University of Oxford* (1888, p. 120;
+archive.org `historicalregist00univrich`, text in `src/`) lists one Hertford (Latin) Scholar a year: 1852 James Beaumont
+Winstanley (University), **1853 William Lambert Newman (Balliol)**, **1854 Frederick Butler M. Montgomerie (Balliol)**,
+1855 Charles S. C. Bowen (Balliol), 1856 Reginald Broughton (Balliol). The election is held in Michaelmas Term and
+candidates must be within two years of matriculation. This fits the ad's numerals as years (*Str 53* = summer term
+1853; *Hrsclam 54* = Hertford scholarship examination 1854; *Hodsam 55* = holidays 1855) and a Balliol freshman of
+1853 sitting the Michaelmas 1854 examination, which Montgomerie won. Nothing in line 10 says W. won; the list makes it
+likely he did not. Krajčovič's Jex-Blake never held the scholarship. Ernst's unnamed 1856 commoner would have matriculated
+too late for the 1854 examination, unless the 1853/54 numerals are not years. Identity remains open; the list is a lead,
+not a crib.
+
+**Oxford vocabulary.** `oxnames.py` re-runs `search.py` on the open lines with about 90 added words (the Hertford
+scholars, Balliol tutors Scott, Lake, Woollcombe, Riddell, Wall, Jenkyns, Temple, terms, exams, set texts):
+`search_oxnames.txt`. No open line acquires a forced reading. Line 19 tops as BALLIOL MAN …, with no agreed tail;
+21 HOLIDAYS EXAMINE stays third. The sense measure is unchanged at 257/470 = 0.547.

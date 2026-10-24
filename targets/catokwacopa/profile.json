@@ -179,8 +179,28 @@
   {
    "date": "2026-10-23",
    "kind": "verification",
-   "technique": ["crib testing"],
+   "technique": [
+    "crib testing"
+   ],
    "what": "Re-read brief b25: checked for any new reading (Schmeh blog post of 14 Aug 2026 and its 16 comments to 3 Sept 2026: nothing beyond NOTES); Ernst's MOST PRIVATE for lines 9/26 costed with mech.cost: 3-5 omitted letters and 5 misprints against mistrl/otenpu and mistrl/oatvpu (MASTER PUPIL 2 omitted, 4 misprints): not forced. The line-by-line decryption scored as a sentence list (en): 15 of 28 lines carry a forced phrase, 13 open; telegraphic fragments, not sentences. Stays decoded, not read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "crib",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "External check of the Oxford frame: Historical Register 1888 (archive.org historicalregist00univrich, p.120) lists the Hertford Scholars: 1852 Winstanley (University), 1853 W. L. Newman (Balliol), 1854 Montgomerie (Balliol), 1855 Bowen (Balliol), 1856 Broughton (Balliol). Election is in Michaelmas Term and candidates must be under two years from matriculation, consistent with the ad's 53/54/55 as years and a Balliol candidate sitting in Michaelmas 1854. Jex-Blake is not on the list.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "solver",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Exact-fit search (oxnames.py, search_oxnames.txt) on the open lines with ~90 added 1850s Oxford words (Hertford scholars, Balliol tutors, terms, exams, set texts). No open line acquires a forced reading; line 19 tops as BALLIOL MAN ... with no agreed tail.",
    "result": "failed"
   }
  ],
