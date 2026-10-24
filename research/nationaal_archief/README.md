@@ -26,7 +26,7 @@ cipher in their title, so the real number of cipher items is much larger. Most S
 
 | # | Archive / inv. | Date | What | Scans | Note |
 |---|---|---|---|---|---|
-| 1 | 1.05.01.01 (Oude WIC) inv. 62 | 1646 | Statement by Abraham de Pina Forao giving **the key to the cipher and secret writing** of members of the Alto Segredo Concilio (Dutch Brazil) | 904 (whole volume) | Key plus the volume it sits in. Look for the ciphered letters it unlocks. Top pick |
+| 1 | 1.05.01.01 (Oude WIC) inv. 62 | 1646 | Statement by Abraham de Pina Forao giving **the key to the cipher and secret writing** of members of the Alto Segredo Concilio (Dutch Brazil) | 904 (whole volume) | **Already published:** Dinnissen & Araújo, HistoCrypt 2023 ("A 'Mirror for All Traitors'", ecp.ep.liu.se/index.php/histocrypt/article/view/693): Pina's report, the nomenclator and all four ciphertexts read. Same authors did the 1649 Teles da Silva ciphertexts (article 392). Closed, nothing to add |
 | 2 | 3.20.66.01 (De Witt-Beijerman) inv. 4 | 1660, 1672 | Johan to Cornelis de Witt letters, with a "solution of part of the cipher, probably from the previous letter" | 0 | Contemporary partial decipherment, so this is a crib. Check Fruin's *Brieven van De Witt* in print |
 | 3 | 1.01.50 (Stadhouderlijke Secretarie) inv. 237, 174 | 1791, 1794 | Intercepted letters of French diplomats in The Hague and of Prussian diplomats, "mostly deciphered" | 0 | Dutch black-chamber output. The originals are likely in Paris AE / Berlin GStA |
 | 4 | 1.10.110 (other envoys) inv. 2 | 1619 | "Cijfers": envoy cipher keys | 0 | Keys of 1619, around the date of our Haga 1620 key |
