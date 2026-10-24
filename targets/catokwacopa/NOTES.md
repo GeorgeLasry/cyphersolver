@@ -246,6 +246,52 @@ cannot adjudicate. Ernst's text is favoured on internal evidence: 138/138 aligns
 is exact only with Hrsclam. Readings 1, 2 (line 21), 3 and 4 are identical under both texts; under the circulating
 text HERTFORD needs one misprint (f for r).
 
+**Context from the records (25 Oct 2026).** The *Historical Register of the University of Oxford* (1888 supplement to
+the Calendar, archive.org historicalregist00univuoft) gives the contests of W.'s years. Hertford (Latin) scholars:
+1853 W. L. Newman, 1854 Frederick Butler M. Montgomerie, 1855 C. S. C. Bowen, 1856 Reginald Broughton, all of Balliol;
+1857 James Lee-Warner, Trinity. Ireland scholars: 1853 A. G. Butler (University), 1854 Newman, 1855 Robinson Ellis
+(Balliol), 1856 Robert Griffith (Wadham), 1857 Bowen. Chancellor's Latin Verse: 1852 R. G. W. Herbert (Balliol);
+**1853 "Olisipo terrae motu obruta", not awarded**; 1854 "Suis et ipsa Roma viribus ruit", Alfred Blomfield (Balliol);
+1855 "Israelitae Palaestinam occupantes", Robinson Ellis (Balliol); 1856 "Mors Socratis", E. C. Wickham (New College);
+1857 "Sevastopol", Bowen. The Latin Verse prize is confined to men within four years of matriculation, and its judges
+are the Public Orator, the Professor of Latin (Conington, from 1854) and three members of Convocation, so Conington
+instructing candidates about their mottoes (line 15) is exactly what a judge of 1854–57 would do, and every Hertford
+and Latin Verse winner of 1853–55 was a Balliol man (line 19). The Wadham register (Gardiner 1895, part II) shows
+Shirley's college had two Griffith brothers in these years, Charles (adm. 1851, Craven 1854) and Robert (adm. 1853,
+Ireland 1856), but Robert died 10 Dec. 1863, so neither is W. The names and prize subjects were added to the
+vocabulary with a high prior and the open lines re-searched: none fits any open line. Jackson's Oxford Journal and
+The Standard itself, which would name the runners-up (the "3" of line 11), are on the paywalled BNA.
+
+**Newspaper search (agent, 25 Oct 2026; Gentleman's Magazine passages re-checked against the OCR).** Free periodicals
+1853–57 on archive.org (Gentleman's Magazine, Athenaeum, Spectator, Literary Gazette, Examiner, Critic, Illustrated
+London News to Nov 1855) were downloaded and grepped; the British Newspaper Archive, HathiTrust and Google Books were
+blocked by bot checks and were not bypassed, so Jackson's Oxford Journal, the Oxford Herald and The Standard remain
+unread. Only the Gentleman's Magazine reports the Hertford: for 1853 it names the runner-up ("Mr. Thomas William Jex
+Blake, scholar of University College, was declared proxime accessit", April 1853, p. 396), for 1854 it names
+Montgomerie alone (May 1854, p. 494), and it does not report the 1855 and 1856 elections at all; so the "3" of line
+11 stays unexplained. Later registers give J. R. King (Balliol) as runner-up in 1855. Commemoration reports: 1853
+no Latin Verse recited and no reason given; 1854 "The Latin Essay … was not awarded" as well (August 1854, p. 158);
+nothing anywhere on mottoes, duplicate mottoes or a protest. Lonsdale's memoir of Wickham (1911, not re-checked
+here) says Wickham won the 1856 Latin Verse "after two unsuccessful attempts", i.e. there were non-Balliol competitors
+in 1854 and 1855. Conington's statute required two public and twenty-four private (fee-paying) lectures a term; his
+public lecture on Persius was given 24 Jan. 1855. Jowett, Regius Professor from Oct. 1855, opened with a course on
+Plato's Republic in Balliol Hall (Abbott and Campbell, not re-checked). PERSIUS, REPUBLIC and PLATO do not fit lines
+9 or 26. No one of the cohort dying in 1875 was found.
+
+**The 1854 Hertford runners-up (Oxford Chronicle, Saturday 1 April 1854, "University & Clerical Intelligence",
+image supplied by George, 25 Oct 2026).** "HERTFORD SCHOLARSHIP.—The Hertford (Latin) Scholarship has been awarded
+to Mr. F. B. M. Montgomerie, commoner of Balliol College, who recently obtained one of the open Craven Scholarships.
+Mr. Robinson Ellis, scholar of Balliol, and Mr. J. S. Cattlow, fellow of St. John's, and late scholar of Trinity,
+were mentioned by the Examiners as having greatly distinguished themselves." Three men named, one reading of
+"54, 3" (line 11). Foster, *Alumni Oxonienses* 1715–1886, vol. 1: "Cattlow, Rev. James Stevenson, 2s. John, of Cheadle,
+co. Stafford, arm. Trinity Coll., matric. 27 May, 1852, aged 18, scholar 1853; scholar (Fereday foundation) St.
+John's Coll. 1854-68, B.A. 1857, M.A. 1859, tutor 1861-8, master of the schools 1861, died 3 June, 1885." So the one
+non-Balliol man the examiners named came up in summer term 1852, was a Trinity scholar from 1853, and outlived the
+ads by ten years; the register's honours index has "Cattlow, Jas. S., S. John's, 1 Cl. Mod. 1854". ELLIS, CATTLOW and MONTGOMERIE were tested as cribs on every open line: all need misprints, so
+none is written in the unread text. The same paper's 20 Oct. 1855 issue (Oxford University Herald, p. 8): "The
+Professor of Latin proposes to resume his Lectures on the Eclogues of Virgil on Thursday in the Law School";
+ECLOGUES, VIRGIL and LAW SCHOOL fail line 9, so the lecture tails (9, 26) are not course subjects.
+
 **Measure.** `measure.py` is not in this working tree (skip-worktree), so §7's 0.547 was not re-run. Lines 13 and 20
 add 19 of the 470 characters (276/470 = 0.587) if counted; the possessive and XAMN change costs, not coverage.
 
