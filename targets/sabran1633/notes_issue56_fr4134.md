@@ -74,13 +74,16 @@ themselves. Their "full reading" criteria (inter-model agreement plus control) a
 - Image spot-check (`spotcheck.md`): f. 66v 59/59 signs agree; f. 66r 113/116 checked signs agree. Two errors on
   f. 66r: `8 nt` counted twice across c139_23/23b, and the AI-agreed correction z→lh on c139_23c is wrong on the
   image (the sign is z: *secre[t]*), as their own OPEN.en.md suspected.
+- 25 Oct 2026 (issue #97): Harumi-Matsuba reverted c139_23c to z in their repository (commit b1959b0), so the
+  decode reads *secre[t]*; second-reading agreement now 92.3-92.6% overall, 91.9% on f. 66r, f. 66r control 0/1000.
+  `contributed/` synced with that commit (data, docs, controls, README.en).
 
 ## Remaining gaps
 
 - f. 50v, most of lines 17–23, 25, 26, 29, 30, 32 (about 200 signs) form no words - blocker: open-codes; the key is in hand and the signs are legible, so this is a re-transcription by a person against the key, not an outside block
 - f. 57r lines 21, 24, 27, 36, 38 and f. 54r line 9 form no words - blocker: open-codes; same: workable re-transcription
 - name codes 3i, 35, 12, 20, 33 (not in Lasry's key) - blocker: open-codes; few occurrences, context (Savona, citadelle?) does not fix them
-- corrections the AI judges agreed on that read worse (f. 46v c100_32 x→pl, f. 66r c139_23c z→lh, f. 57r c121_24) - blocker: open-codes; c139_23c checked here and wrong on the image; the others need the same check
+- corrections the AI judges agreed on that read worse (f. 46v c100_32 x→pl, f. 57r c121_24) - blocker: open-codes; the same image check as for f. 66r c139_23c, which was wrong and has been reverted to z by the contributor (25 Oct 2026)
 - BnF fr. 4135 (1635), ff. 132, 215v, 217, 224v, 226v, 227v, 231v, 239v, 243, 251 - blocker: open-codes; same key per Lasry, but the copyist's forms do not match the fr. 4134 sign sheet; a two-run Codex trial gave only scattered words (le Milanois, de la ligue); workable with a sign atlas for that hand
 - f. 51 (listed by Tomokiyo) - blocker: open-codes; not opened by the contributor or here; workable with the same key
 - the originals as received by Bouthillier (Archives diplomatiques, Correspondance politique, Gênes) and any contemporary decipherment there - blocker: needs-physical-access; not digitised

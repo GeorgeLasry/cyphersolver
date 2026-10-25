@@ -14,10 +14,9 @@
 ## Readings made worse by corrections (where two AI checkers agreed)
 The two-way re-judging (r7) restored compagnons, deux, dedit and others. Where both models again chose the corrected name, worse readings remain:
 - f. 46v c100_32: ie les excite → ieleseecite (x→pl)
-- f. 66r c139_23c: secre[t] → secee (z→lh)
 - f. 57r c121_24: capitan del… → capitanuel… (nj→n and others)
 
-Deciding which to revert needs a human check or another judging method (`corrections/`).
+Deciding which to revert needs a human check or another judging method (`corrections/`). f. 66r c139_23c (secre[t] → secee, z→lh) was reverted to z on 25 October 2026, after the Cyphersolver maintainer found z on the image.
 
 ## Stretches that form no words
 - f. 50v: much of lines 17–23, 25, 26, 29, 30, 32 (e.g. aeed eteeittete, giuuerietmiielicuiemait). The independent second reading matches 91.8–92.2% of the signs; besides transcription errors, values missing from the key, copying errors or different values on this leaf are possible (conjecture).

@@ -92,7 +92,7 @@ Each line of `data/decoded.txt` (the key applied to the sign names, as is) and a
 | c139_22 | `isprisoniersle<?>munitionereetd` | -is prisonniers le … munitionnaire et d- |
 | c139_23 | `euxauecluiuamenes` | -eux avec luy amenes |
 | c139_23b | `esa<35>la<3i>` |  |
-| c139_23c | `secee` |  |
+| c139_23c | `secre` | secre[t] (reverted to z, 25 Oct 2026) |
 | c139_24a | `t` |  |
 | c139_24b | `ceuxquiso` | ceux qui so- |
 | c139_25a | `ntpris` | -nt pris |

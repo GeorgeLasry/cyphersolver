@@ -26,9 +26,9 @@ Some corrections improved the reading (intelligence, commis, l'argent) and some 
 ## Independent second reading (second/)
 After the last correction, Codex transcribed the lines three times in fresh contexts, given only the 116 line images, three reference sheets (key signs and up to eight examples per sign from this scribe, spread over the pages) and the sign-name list (`second/PROMPT.md`); no values, no reading, no key, no judgements. Each run's log contains a single reply and no command execution or file reading.
 
-Agreement = share of our signs inside matching blocks of the per-line sign sequences (`src/compare.py`): 92.2%, 92.3%, 92.5% overall. The README gives, per leaf, the lowest of the three runs.
+Agreement = share of our signs inside matching blocks of the per-line sign sequences (`src/compare.py`): 92.3%, 92.4%, 92.6% overall (same-name share from `src/compare.py`, after one sign on f. 66r was reverted to z on 25 October 2026). The README gives, per leaf, the lowest of the three runs.
 
-The same final transcription read three times with the earlier sheet (up to four examples) gave 92.1%, 86.5%, 86.4% (`second/earlier_sheet_*`). In those runs Codex sometimes switched a name throughout a run (every pl on f. 50v written r, every S on other leaves written f); this is why the examples were increased. Taking the lowest over those runs too, the per-leaf minima are f. 50v 72.1%, f. 57v 81.2%, f. 54r 81.8%, f. 66r 84.6%.
+The same final transcription read three times with the earlier sheet (up to four examples) gave 92.1%, 86.5%, 86.4% (`second/earlier_sheet_*`). In those runs Codex sometimes switched a name throughout a run (every pl on f. 50v written r, every S on other leaves written f); this is why the examples were increased. Taking the lowest over those runs too, the per-leaf minima are f. 50v 72.1%, f. 57v 81.2%, f. 54r 81.8%, f. 66r 83.9%.
 
 The comparisons used to make corrections (the rounds above) are not called independent.
 
