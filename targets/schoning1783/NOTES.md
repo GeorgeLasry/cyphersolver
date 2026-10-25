@@ -36,3 +36,15 @@ KHA lead K4.
 ## Prior work
 
 No edition of these letters found on the web (25 Oct 2026); not on DECODE.
+
+## Step 1, letter table (25 Oct 2026, partial)
+
+From the 6 Jan 1784 pair (original s138, copy s140), by subagents, ASCII sign labels G01-G21
+(`signs_alphabet.md`, `letter_table.tsv`, `align_samples.md`):
+- confirmed (3+ times): a c d e f i l m n o p q r s t u v; single sightings: g (G19), z (G20), doubled l (G16);
+  possible second s (G21); G18 also for c-cedilla (*soupsonne*); a tick above the line marks run-together word breaks;
+  plain punctuation inside the cipher.
+- not yet seen: b h j k x y. The rest of s138 (lines 6-12) holds x, y, h, j per the copy; code numbers in the block
+  follow the copy's order (884, 881, 860, 858, 582, 65, 914), which anchors the alignment.
+- not yet verified on a second pair (25 Nov 1783 s091/s093-095; 13 Dec 1783 s112/s115-117).
+Lesson: the glyphs need 3x crops segment by segment; two agent passes covered ~200 signs.
