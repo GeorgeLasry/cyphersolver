@@ -32,3 +32,17 @@ substitution solve against Dutch (`lang` nl model), or a search of the other alp
 No ciphertext on DECODE or in the catalogue names Ernst Casimir, Willem Lodewijk or Frederik Hendrik. Candidates to
 test the numeric keys against: Riksarkivet R4284 (Camerarius 1628), R4306 (1632), R4333-R4337 (Rusdorff 1628).
 Not yet done.
+
+## Solve attempts (25 Oct 2026)
+
+- `cipher_027.txt` / `signs_027.md`: the cipher runs transcribed by a subagent with ASCII labels (9 runs, 262 signs,
+  33 distinct; S01/S21, S18/S23, S10/S11 and S30, S31, S33 doubtful). Labels instead of the shapes themselves, because
+  long runs of Greek-like characters trip the output filter.
+- `solve027.py`: the 028 alphabet applied through the legend's look-alikes scores -6.0 per char (gibberish), so the
+  letter is not in that alphabet as transcribed. Annealing a substitution with at most two signs per letter: with
+  `nl-modern` -2.71, with the new period model `nl-1600` -2.28 (`solve_nl1600.log`); restarts land on different keys
+  with near-equal scores and no run reads as Dutch. Not solved.
+- Likely obstacles: 262 signs is short for 33 signs; some signs may be nomenclator words (the 028 key has word signs);
+  the transcription has doubtful pairs. Next: re-check the doubtful signs at full size, merge look-alike pairs, try the
+  other alphabets in the folder (003, 016, 029) once their sign rows are labelled, and anchor the anneal on likely
+  words from the clear context (e.g. *staten*, *soldaten*, *Verdugo*, *Groningen*, place names of the 1594 campaign).

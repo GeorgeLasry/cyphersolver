@@ -181,5 +181,8 @@
       "robins_artillerie_1745", "rohr_einleitung_1728", "rohr_einleitung_1729", "schmeizel_staatswissenschafft_1732",
       "schnabel_fata01_1740", "schnabel_fata02_1737", "schnabel_fata03_1739", "schnabel_fata04_1743",
       "sommersberg_schauplatz_1730", "trichter_ritterexercitienlexikon_1742", "zschackwitz_schauplatz_1724"],
-    "first_used": "waldeck1744"}
+    "first_used": "waldeck1744"},
+  "nl-1600-prose": {"language": "nl", "period": "1569-1642", "genre": "prose",
+    "title": "Early-modern Dutch prose from DBNL: Marnix (1569), Coornhert (1586), Van Mander (1604), Bredero (1617), Hooft (1642); editorial paragraphs filtered out by spelling",
+    "local": ["lang/corpora/nl-1600-prose.txt"], "note": "Built by python -m lang.build_nl1600 from DBNL text downloads.", "first_used": "casimir1618"}
 }

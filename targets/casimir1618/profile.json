@@ -20,16 +20,17 @@
         "source": "No decipherment on the scan."
       },
       "length": {
-        "tokens": "unknown",
-        "distinct": "unknown",
+        "tokens": 262,
+        "distinct": 33,
         "unit": "symbols",
-        "measured": false
+        "measured": true,
+        "file": "cipher_027.txt"
       },
       "transcription": {
-        "by": "unknown",
-        "source": "unknown",
+        "by": "llm from images",
+        "source": "cipher_027.txt with ASCII sign labels (signs_027.md)",
         "image_quality": "good",
-        "notes": ""
+        "notes": "Doubtful pairs S01/S21, S18/S23, S10/S11; S30, S31, S33 uncertain."
       }
     }
   ],
@@ -80,9 +81,9 @@
     "models": [
       "claude-opus-5-5"
     ],
-    "sessions": 1,
+    "sessions": 2,
     "first_date": "2026-10-24",
-    "last_date": "2026-10-24"
+    "last_date": "2026-10-25"
   },
   "solution": [
     {
@@ -104,6 +105,31 @@
         "key matching"
       ],
       "what": "Applied the 028 alphabet to the first cipher run of scan 027: not Dutch; the letter says the old cipher was kept.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "transcription",
+      "what": "Subagent transcribed the 9 cipher runs with ASCII sign labels: 262 signs, 33 distinct.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "028 alphabet applied via the legend's look-alikes: -6.0 per char, not Dutch.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Substitution anneal, at most two signs per letter, nl-modern (-2.71) and a new period model nl-1600 built from DBNL prose 1569-1642 (-2.28); restarts disagree, no Dutch.",
       "result": "failed"
     }
   ],

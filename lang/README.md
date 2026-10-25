@@ -57,6 +57,7 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `de-1740s` | German 1720–1770 | DTA: 202 texts of 1724–1767, Berlin newspapers 1737–41, Hamburgischer Correspondent, Bayreuth 1752, military and state writing, 23.6 M | Austrian Succession / Seven Years' War letters (waldeck1744) |
 | `de-enigma` | German 1930–1945 | same, Enigma conventions | Wehrmacht traffic |
 | `nl-modern` | Dutch | Gutenberg | Thurloe, Abwehr |
+| `nl-1600` | Dutch 1570-1650 | DBNL prose (Marnix, Coornhert, Van Mander, Bredero, Hooft), built by `python -m lang.build_nl1600` | casimir1618 (Willem Lodewijk 1594) |
 | `es-modern` | Spanish | Gutenberg incl. Quijote, 6 M | default Spanish |
 | `es-golden-age` | Spanish 1490–1650 | Quijote + Memorias (Villa) | Habsburg-era Spanish |
 | `ca-modern` | Catalan | Gutenberg + Tirant lo Blanc | Crown of Aragon |
