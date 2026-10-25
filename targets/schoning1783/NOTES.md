@@ -57,3 +57,15 @@ Lesson: the glyphs need 3x crops segment by segment; two agent passes covered ~2
 - Verified on 25 Nov 1783 (s091 against copy s093, `verify.md`): 142 of 143 known signs agree with the copy (99.3%);
   new: b = short mid-height dash (G24, 3x), h also as an L with a cross above; one doubt, G11 (c) read s once.
 - Still to find: y, k (rare in French). Step 1 is done; the table is in `letter_table.tsv` / `signs_alphabet.md`.
+
+## Step 2, code table (25 Oct 2026)
+
+`code_glosses.tsv` (25 Nov 1783 copy: 42 occurrences, 38 numbers glossed, 5 not) and `code_context.tsv` (clear copies:
+164 occurrences, 78 numbers, with context) merged into `code_table.tsv`. The code is **one-part alphabetical with blocks
+of homophones**: Berlin 106, Cabale 157, Cour 191, Hertzberg 446-450, Prince 725-733, Republique 805, Roi 810-818,
+Sa Majeste 857-861, Schoning 862, Son Altesse Royale 880-884, Stadhouder 888, Thulemeier 914-918, Versailles 975-977.
+Context values checked against the order: France 343, Empereur 250-255, Angleterre 81-85, Hollande 451, lettre 582.
+Open: 435/439 "Heidm..." (a name), 661, 724, 763, 809 ("pour moi 809"), 950, 978 (after "de Goltz"), the 8x/25x
+alliance numbers; 449 vs 446, 859 vs 858, 881 vs 884 need 3x crops. The 12 Aug 1783 (No. 4) glosses not yet read.
+Next (step 3): decode the 14 letters with no clear copy with letter_table.tsv + code_table.tsv, bracket every unknown
+number alphabetically, and measure.
