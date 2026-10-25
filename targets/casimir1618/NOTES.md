@@ -1,6 +1,6 @@
 # Ernst Casimir's cipher keys, KHA A23-311 (1590s-1627)
 
-Status: in progress (keys inventoried; the one ciphertext, scan 027, not yet read)
+Status: in progress (keys inventoried; the 1594 cipher letter attempted, open: its key is not in the folder)
 
 ## Source
 
@@ -73,3 +73,16 @@ A subagent compared sheets 003, 016 and 029 with the letter's signs (`alpha_003.
   a PRVDENTIA keyword table and a pigpen alphabet.
 Nothing could be decoded, so `test_alpha.py` was not run. Next: the 029 block at full size (look for a plain row or
 the paired sheet that gives its values), and any other folder sheet with a dot-word-end rule.
+
+## Sheet 029 at full size and the 1590s alphabets (25 Oct 2026)
+
+- 029 (`img/full029.jpg`): the top block is headed "ad finem dictionis nota cum puncto, ut a c v" and lists about 64
+  signs with no plain letters over them; no sheet in the inventory gives its values.
+- The 1590s alphabets with plain letters (012 rows 1-5, 017, 030 a-c, 031, 040 Drost of Emden and Verdugo) were mapped
+  onto the letter's labels by a subagent (`alpha_*.tsv`, provisional, mostly low confidence). None carries the letter's
+  frequent signs (S02, S03, S05, S07, S09, S23) as a set; the few matches clash with sign frequency.
+- `test_alpha.py`: as matched -4.6 to -6.5 per char; matches kept fixed and the rest annealed -2.16 to -2.87, no better
+  than a free solve, nothing readable.
+- Conclusion for now: the letter's own key ("die olde" cipher) is not in A23-311. Status of scan 027: attempted, open;
+  blocker: no key material. A clear copy or the key may survive in Willem Lodewijk's papers (KHA A22) or in the
+  recipient's archive (Tresoar; archieven.nl hits 7-02 Willem Lodewijk).

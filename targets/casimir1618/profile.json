@@ -167,16 +167,26 @@
       ],
       "what": "Alphabets on folder sheets 003, 016, 029 compared with the letter's signs: no letter-to-sign alphabet matches; 029 shares sign shapes but has no plain row.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "sibling key",
+      "technique": [
+        "key matching",
+        "simulated annealing"
+      ],
+      "what": "Sheet 029 sign block (no plain row) and the 1590s alphabets 012, 017, 030, 031, 040 mapped onto the letter's signs and tested: as matched -4.6 to -6.5, fixed plus anneal no better than free; the letter's key is not in the folder.",
+      "result": "failed"
     }
   ],
   "outcome": {
-    "method": "unknown",
-    "method_basis": "unknown",
+    "method": "not solved",
+    "method_basis": "No key in the folder fits and ciphertext-only solves against Dutch, French and German do not read; 259 signs with suspected word signs.",
     "contribution": [
       "unknown"
     ],
-    "class": "unknown",
-    "fraction_read": "unknown",
+    "class": "not read",
+    "fraction_read": 0,
     "grades": {
       "H": "unknown",
       "C": "unknown",
