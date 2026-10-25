@@ -1,6 +1,8 @@
 # Champagne news-letters to the duc de Nevers, June 1590 (BnF fr. 3623 nos. 24, 25, 60; catalogue no. 30)
 
-Status: not read (23 Oct 2026: neither document builds a running reading; see the dated block at the end). The two-digit alphabet of nos. 24, 25 and 60 (June 1590, one hand), rebuilt from a few letters
+Status: in progress (25 Oct 2026). No. 25 is read in part with Tomokiyo's Nevers key no. 25, matched by Michael Brackx
+(issue #96); nos. 24 and 60 have their cipher runs decoded with the same key but no reading of the letters yet; no. 78
+is unread. See "25 Oct 2026: Nevers key no. 25" below. Earlier status: not read (23 Oct 2026). The two-digit alphabet of nos. 24, 25 and 60 (June 1590, one hand), rebuilt from a few letters
 glossed over the figures and from the alphabetical order of its values: 63 of 104 figures read, ten of the twelve
 cipher passages in whole or in part. No. 78 (1591), one group of about six mixed signs in another code, is listed
 here unread, with no claim that it shares the key.
@@ -116,10 +118,38 @@ Measured on this entry's documents (14 Oct 2026): 63 of 104 figures of nos. 24/2
 * Images in `img/` (git-ignored, not committed), in the main checkout's `targets/champagne1590/img/` (shared with
   the two split-off entries).
 
+## 25 Oct 2026: Nevers key no. 25 (Michael Brackx, issue #96)
+
+**The key.** Brackx matched the two-digit alphabet to **Nevers key no. 25** (Tomokiyo, nevers.htm: "no.25 (fol.50)
+(October 1589) ... Substitution by two-digit figures. Some homophones. Nulls ... Arabic figures 1-99 with an overbar
+represent names and words"), on BnF fr. 3995 f. 51r (Gallica btv1b525085665, canvas 104; f. 50r is the wrapper).
+`texts/key25.md` has his transcription of its alphabet, null list and six barred entries. Its letter values agree with
+every value bracketed here from the glosses and the alphabetical order (c 37, d 38, e 42 43 45, i 53 54, l 56, n 63 64,
+o 67, u 93 ...), and it settles what the flattened transcription could not: **plain 39 is a null, barred 39 is M. de La
+Noue, barred 17 the comte de Soissons**; plain 12, 19, 89, 99 are nulls (12 is not *de*). Keys 28, 30 and 38 were
+compared on their photographs and do not fit. The sheet was not re-checked here (Gallica's bot check).
+
+**No. 25 (f. 38r, 5 June 1590, DECODE R9455).** Brackx transcribed the whole recto, clear and cipher
+(`texts/n25_transcription.md`), and read it (`texts/n25_reading.md`, `texts/n25_en.md`). All six cipher runs (64
+groups) decode with key no. 25 except one isolated figure 3 (`brackx2026/n25_groups.md`): *[de] l'union*, *de
+chaseron*, *v[ost]re seruice*, *la ligue*, *comte de Soissons [?] il se defie du M[onsieu]r de la noue*, *de la
+defiance du comte de Soissons*. One digit correction (58 to 56 in *l'union*) awaits a second look. **Measured:
+`v10_relabel.share` 0.925** (892 words, 72 holes), most holes in the clear text (doubtful words and abbreviation
+expansions). Read in part: under 95%, and no second reader. Content: an unsigned newsletter to Nevers from the royal
+army before Paris (famine and division in Paris, the legate and the Spanish ambassador, the Pope awaiting the Holy
+Spirit, Mayenne gathering forces, Villeroy's peace efforts in vain, Soissons and La Noue distrusting each other,
+Chasteaudun taken by the League).
+
+**Nos. 24 and 60 with key no. 25.** No. 24 l. 8 reads *du faict de Ludouic* once 30 is read 56 on the image (Brackx),
+matching no. 60's glossed *Ludouic*; no. 24 l. 22 gives *le [barred 9 = Roy] ...* mechanically, the join unchecked;
+no. 60's second run gives *de launan*, not identified. The clear text of nos. 24 and 60 is not transcribed here, so
+neither letter has a reading.
+
 ## Remaining gaps
 
-- Nos. 24/25/60 code numbers 12, 16, 17, 19, 39, 89, 99 and the plain numbers of no. 24 (22, 51, 84, 44) - blocker: no-key-material; no key bound with these letters; the alphabetical two-digit table covers letters only
-- No. 24 two passages, first half of the no. 25 'qu'on dict' passage, the name in no. 60 ('de la V?an') - blocker: no-key-material; values fall outside the anchored slots of the alphabetical table (30-39, 48, 92-99 uncertain); no gloss over them
+- No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); a second palaeographic reader is the next step
+- Nos. 24 and 60: the clear text not transcribed, so no reading of either letter; their cipher runs decode with key no. 25 except the no. 24 l. 22 join and the barred figures 22, 44, 51, 84 - blocker: not-attempted; transcribe both letters and check the barred figures on the image
+- Nevers key no. 25 sheet (fr. 3995 f. 51r): only six barred entries transcribed - blocker: not-attempted; the rest of the nomenclator would identify no. 24's barred figures
 - No. 78 (f. 111r), one group of about six mixed signs - blocker: too-short; a single group, probably a name, in a different mixed code
 - Nos. 24/25/60 runs tried with key no. 57 (words57.tsv, syllables): no sense ('qui pi bo ni lo fi ...'); a different, alphabetical two-digit system; bracketed exhaustive LM search (anneal_twodigit.py) proposes 52 i, 62 n, 92 u/v, 95 y but none verifies on a second occurrence - blocker: no-key-material; no key or gloss for the code numbers, single-occurrence letter values cannot be checked
 
@@ -127,7 +157,7 @@ Measured on this entry's documents (14 Oct 2026): 63 of 104 figures of nos. 24/2
 
 - [x] siblings: DECODE siblings R9456/R9457 (nos. 26, 27) checked, another key; fr. 3623 nos. 23-27 and 60 viewed
 - [x] clear-pages: the interlinear glosses on nos. 25 and 60 used as anchors; no clear copy of nos. 24/25/60
-- [x] known-keys: Nevers keys of fr. 3995 (Tomokiyo nevers.htm) reviewed; no. 46 tested against the two-digit table and does not fit; no. 57 tried on no. 78's group (no sense) and on the two-digit runs (3 Oct 2026, no sense); no. 23's name key conflicts with the alphabet
+- [x] known-keys: **Nevers key no. 25 fits** (Brackx, issue #96, 24 Oct 2026; keys 28, 30, 38 compared and rejected); earlier: Nevers keys of fr. 3995 (Tomokiyo nevers.htm) reviewed; no. 46 tested against the two-digit table and does not fit; no. 57 tried on no. 78's group (no sense) and on the two-digit runs (3 Oct 2026, no sense); no. 23's name key conflicts with the alphabet
 - [x] print: Tomokiyo nevers.htm and GL.htm, Memoires de Nevers index: no printed decipherment
 - [x] key-rebuild: table bracketed by alphabetical order, the anchored slots filled; 3 Oct 2026 exhaustive LM search of the bracketed values (anneal_twodigit.py), none verifies on a second occurrence; the code numbers have no gloss to fit
 - [x] retry: all ten runs re-scored with the bracketed candidates (3 Oct 2026); no change in the count
