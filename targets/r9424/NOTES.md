@@ -34,8 +34,9 @@ Transcription: `r9424/transcription.txt` (glyph by glyph); 913 cipher signs (`si
 
 **Credit.** Ryan Xu ([ry-xu](https://github.com/ry-xu)), with Claude Opus 5.5, recovered the key from
 `r9424/transcription.txt` alone and posted it as issue #89 ("Solution: r9424"), 23 Oct 2026; write-up, scripts and
-controls at https://github.com/ry-xu/slightlysupervised/tree/main/wilhelm-1583-cipher (no licence stated, so cited
-and linked, not copied; our English is our own). He is the breaker; this session checked his key and reading on the
+controls at https://github.com/ry-xu/slightlysupervised/tree/main/wilhelm-1583-cipher. His write-up, with his English
+translation, is copied with his permission (issue #89, 25 Oct 2026) as `xu2026/reading.md` (commit 0abf95b, unchanged);
+our English, `r9424/R9424_en.md`, follows the reading as re-checked on the images. He is the breaker; this session checked his key and reading on the
 images and built the reading below.
 
 **The key** (`r9424/key.md`): a simple substitution on Latin letters (r=a, w=b, d=c, z=d/r, k=e, i=f/u/v, 3=g, D=h,
