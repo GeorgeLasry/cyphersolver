@@ -8,6 +8,9 @@ corrected it. Paths are relative to the target folder (or http(s) URLs, discoura
              "transcription": "transcr/R1072.txt", "decryption": "read/R1072.md",
              "reading": "read/R1072_reading.md (optional: the decryption as sentences)",
              "translation": "read/R1072_en.md", "language": "fr",
+             "contemporary": "transcr/R1072_decifrado.txt (optional: the decipherment of the time, transcribed)",
+             "transcription_missing": "reason (only when the cipher itself was never transcribed: never put the
+                                      clear copy or the decipherment of the time under transcription)",
              "state": "read | read in part | decoded, not read | not prose",
              "summary": "One or two sentences on what the document says."}],
   "key_file": "key_X.tsv"          (or a list)
@@ -70,8 +73,14 @@ def texts_problems(folder_path, profile):
         label = '/'.join(listify(t.get('doc'))) or '?'
         for kind in ('transcription', 'decryption'):
             files = listify(t.get(kind))
-            if not files: probs.append(f'{label}: no {kind} file')
-        for kind in ('transcription', 'decryption', 'reading', 'translation'):
+            if not files and not (kind == 'transcription' and t.get('transcription_missing')):
+                probs.append(f'{label}: no {kind} file')
+        # the transcription is the cipher as written, not a plaintext (philip1574, 24 Oct 2026)
+        plain = {str(f) for k in ('decryption', 'reading', 'translation', 'contemporary') for f in listify(t.get(k))}
+        for f in listify(t.get('transcription')):
+            if str(f) in plain and str(f) in {str(x) for x in listify(t.get('reading')) + listify(t.get('translation')) + listify(t.get('contemporary'))}:
+                probs.append(f'{label}: transcription file {f} is also the reading/translation/contemporary decipherment')
+        for kind in ('transcription', 'contemporary', 'decryption', 'reading', 'translation'):
             for f in listify(t.get(kind)):
                 if not str(f).startswith('http') and not (folder_path / f).exists():
                     probs.append(f'{label}: {kind} file {f} does not exist')

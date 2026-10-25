@@ -2647,7 +2647,10 @@ def texts_html(page):
             if state == 'decoded, not read':
                 out.append('<p class="muted">A mechanical decode with holes in most sentences: shown so that the transcription '
                            'and the key can be checked and improved, not as a reading.</p>')
-            for kind, key in (('Transcription', 'transcription'), ('Decryption', 'decryption'), ('Reading', 'reading'), ('Translation', 'translation')):
+            if t.get('transcription_missing') and not t.get('transcription'):
+                out.append(f'<p class="ftext">Transcription: none of the cipher. {html.escape(t["transcription_missing"])}</p>')
+            for kind, key in (('Transcription', 'transcription'), ('Decipherment of the time', 'contemporary'), ('Decryption', 'decryption'),
+                              ('Reading', 'reading'), ('Translation', 'translation')):
                 for p in TX.listify(t.get(key)): out.append(show(kind, p))
         keys = TX.listify(o.get('key_file'))
         if keys:
