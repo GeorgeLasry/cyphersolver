@@ -41,6 +41,11 @@ on native-resolution crops** (openapi.bnf.fr IIIF, views 7-8, 34-35, 49, 65, 70-
   re-reading of the contemporary decipherment it corrects three readings of 22 Oct: "il s'en va a Prague", "ceste
   lettre" (the decipherment's "lre"), and "je n'ay eu responce de celles que vous ay envoyées par Suisse" (the
   "[?Chanton]nay" of 22 Oct was "Je n'ay"). The page ends with the closing formula in cipher.
+- 25 Oct 2026 (issue #97): Harumi-Matsuba transcribed view 23 left independently (445 signs, Tomokiyo's key, shuffled
+  control 0/1000; `contributed/data/transcription_v023l.txt`, `decoded_v023l.txt`). Its decode agrees with ours in
+  content and settles our two open places: "par **le chemin** de Flandres, **par ce que c'est le plus** court" (the
+  supposed bearer's name was *le chemin*). Taken into the reading with doubt marks, since it rests on look-alike
+  alternates in both transcriptions. Not done: a sign-by-sign comparison of the two transcriptions.
 - 10 Sep 1569: view 150 left c14-c23 checked on native crops; label corrections (code 18 and code 20 misread as letters)
   and Dz = con close the passage; body score 0.54 -> 0.61, look-alike 3.0% (without the y-shape class), state read (B).
 - Phrase holes checked on the images: 4 Sep 1568 f. 100r c16-c27 (mostly read; [pp], the King of Spain, wished to be

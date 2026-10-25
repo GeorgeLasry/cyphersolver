@@ -881,6 +881,8 @@
    "technique": ["manual reconstruction", "contextual inference"]
   },
   {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 6 of 22 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+,
+  {"date": "2026-10-25", "kind": "verification", "technique": ["key matching"], "what": "Harumi-Matsuba's independent transcription and decode of view 23 left (issue #97; 445 signs, 13 lines) compared with ours of 23 Oct: same content; it settles the two open places as 'par le chemin de Flandres, par ce que c'est le plus court' (our 'le ...o...imin' = le chemin). Taken into read/1567-11-15_reading.md with doubt marks.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -905,6 +907,13 @@
   "gaps": [{"item": "View 6 right (11 Oct 1567) c05-c06, two words (\"que [...] bien qu'il estoict necessaire\"), and about ten [?] words on that page", "blocker": "no-key-material", "detail": "transcribed and checked sign by sign on native crops 23 Oct 2026; the sign groups give no word under the key's values and no contemporary decipherment or print of this letter exists"}, {"item": "View 23 left (15 Nov 1567): the bearer's name (9 signs) and about 17 signs between \"Flandres\" and \"court\"", "blocker": "no-key-material", "detail": "decoded 23 Oct 2026; a name not in the key, and the contemporary decipherment abridges and is cramped at that line"}, {"item": "Phrase holes left after round-2 image checks: f. 79v c01-c03 and f. 80 c01, c08 (17 Jul 1568); f. 100r c18 end, c24-c26 three words (4 Sep 1568); v038l c17 subject (15 Feb 1568); f. 39r c08, c22-c23 end, c29 verb (6 Mar 1568); v150l [?conclurre], [?cest] (10 Sep 1569)", "blocker": "no-key-material", "detail": "each checked on native-resolution crops 23 Oct 2026 (read/<doc>_reread_log.md, round 2); the groups fit no word under the key's values and no contemporary decipherment, clear copy or print exists for these letters"}, {"item": "Single-word holes in the letters not re-checked in round 2 (1568-01-21, 03-27, 06-04, 06-12, 08-14, 08-21, 09-04q, 11-06, 12-02; 1569-01-14, 03-02, 10-01, 10-15, 10-20, 10-29, 11-04; v007r-v008l of 11 Oct 1567)", "blocker": "not-attempted", "detail": "about 60 isolated [?] or [...] words across 17 letters, each needing its own crop; left for a later pass because every one of these letters already reads (0.58-1.0 clean share) and the round-2 time went to the untranscribed pages and the phrase holes"}, {"item": "Lone signs and groups standing as codes, values not settled: ϖ (l'Empereur or le Roy), ∞ alone (le Roy / l'Empereur), =ii, pp/ꝥ (the King of Spain by sense), H# alone, the group ffx-3y (10 Sep 1569), arrow, \"lele\"; 16 = ce or vostre (vostre in the letters to the King and in 4 Sep 1568)", "blocker": "no-key-material", "detail": "not in Tomokiyo's table; read from context in read/*_reread_log.md; key.tsv unchanged. Dz = con is now settled from 11 words in five letters (read/r2/v006r_reread_log.md)"}],
   "provenance": "contributed",
   "credits": [
+   {
+    "who": "harumi-matsuba",
+    "role": "transcription",
+    "note": "independent transcription and decode of view 23 left (f. 18v), filling the 15 Nov 1567 letter's two open places",
+    "date": "2026-10-24",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/97"
+   },
    {
     "who": "harumi-matsuba",
     "role": "solution",
