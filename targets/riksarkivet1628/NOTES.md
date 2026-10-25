@@ -1,4 +1,6 @@
 # Riksarkivet 1628–1646 group (catalogue #207, DECODE R4282–R4341)
+Status: in progress (Bremen 1631 read; R4282, R4284, R4306, Rusdorff R4333-37 and E 708 R4338-41 still being worked: no key found yet, A23-311 keys ruled out 25 Oct 2026)
+
 
 Outcome (21 Sept 2026): **read in part.** The two Bremen letters of 1631 are read in full; R4282, R4284 and R4306
 were attempted and stay open; the Rusdorff (1628) and E 708 (June 1633) letters were surveyed, not worked.
