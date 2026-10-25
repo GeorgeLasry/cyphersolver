@@ -61,3 +61,15 @@ Not yet done.
   identified (the 028 key has twelve month signs and two word signs), nulls, or a homophonic table with more than two
   signs per letter. A key from the folder that fits would settle it; the other alphabets (003, 016, 029) still need
   labelling and testing.
+
+## Other alphabets in the folder (25 Oct 2026)
+
+A subagent compared sheets 003, 016 and 029 with the letter's signs (`alpha_003.tsv`, `alpha_016.tsv`,
+`alpha_029.tsv`; 1600-px images, not full size). None gives a letter-to-sign alphabet for these signs:
+- 003: a shifted letter/digit alphabet (a = 5 ... k = a ... z = p) and numbered code signs 1-80; no match.
+- 016: a number-writing table (1 to 100000) in crosses, bars and barred circles; barred circles loosely like S32.
+- 029: the closest in style. A block of about 64 signs with a rule that a dot marks a word end, but no plain letters
+  written above them; several shapes resemble the letter's S01, S05, S07, S08, S20, S21, S22, S26, S27. The rest is
+  a PRVDENTIA keyword table and a pigpen alphabet.
+Nothing could be decoded, so `test_alpha.py` was not run. Next: the 029 block at full size (look for a plain row or
+the paired sheet that gives its values), and any other folder sheet with a dot-word-end rule.
