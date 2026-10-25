@@ -10,7 +10,7 @@ from lang import lm
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 runs = []
-for line in open(os.path.join(HERE, 'cipher_027.txt'), encoding='utf8'):
+for line in open(os.path.join(HERE, os.environ.get('SRC', 'cipher_027.txt')), encoding='utf8'):
     body = re.sub(r'\[[^\]]*\]', ' ', line).replace('|', ' ')
     toks = [t for t in body.split() if re.fullmatch(r'S\d+|\?', t)]
     if toks:

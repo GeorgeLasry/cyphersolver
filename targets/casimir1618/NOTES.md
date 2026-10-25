@@ -46,3 +46,18 @@ Not yet done.
   the transcription has doubtful pairs. Next: re-check the doubtful signs at full size, merge look-alike pairs, try the
   other alphabets in the folder (003, 016, 029) once their sign rows are labelled, and anchor the anneal on likely
   words from the clear context (e.g. *staten*, *soldaten*, *Verdugo*, *Groningen*, place names of the 1594 campaign).
+
+## Recheck and anchored solve (25 Oct 2026)
+
+- `recheck_027.md`, `cipher_027_v2.txt`: doubtful signs re-checked at full size by a subagent. S30 deleted (stroke
+  overlap), S31 -> S32, S33 -> S10, S24 -> S05; S01/S21, S18/S23, S10/S11 kept apart; one doubled pair at a crop edge
+  removed; 259 signs, 29 distinct. Word-sign candidates: S28 (double circle) and S32 (barred circle; the 028 key's
+  *staten* / *soldaat* shapes), taken out of the letter stream.
+- `solve027b.py` (`solve_anchor.log`): 777 placements of likely words (staten, soldaten, Groningen, Verdugo, Coevorden,
+  Steenwijck, vyant, leger, geschut ...), each fixed and the rest annealed against nl-1600. Best -3.13 per char, no
+  readable stretch around any placement.
+- Unanchored, on v2: nl-1600 -2.29, fr-1600-letters -2.31, de-modern -2.77: no language gives readable text.
+- Reading: the runs are not a plain letter substitution as transcribed. Candidates: more word signs than the two
+  identified (the 028 key has twelve month signs and two word signs), nulls, or a homophonic table with more than two
+  signs per letter. A key from the folder that fits would settle it; the other alphabets (003, 016, 029) still need
+  labelling and testing.
