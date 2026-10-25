@@ -35,10 +35,11 @@
   ],
   "system": {
     "types": [
+      "monoalphabetic",
       "code"
     ],
-    "summary": "Numeric code groups inside French clear text, glossed between the lines.",
-    "symbol_kind": "digits",
+    "summary": "Letter signs (invented hook-and-stroke shapes, one per letter, a few homophones; a dot above doubles a letter; j = i) for running text, and 2-3 digit code numbers for names and titles.",
+    "symbol_kind": "digits and symbols",
     "distinct_symbols": "unknown",
     "diacritics": {
       "used": "unknown"
@@ -106,6 +107,25 @@
         "manual reconstruction"
       ],
       "what": "Aligned ~200 signs of the 6 Jan 1784 original with its clear copy: 17 letters confirmed, g/z/doubled-l single sightings, b h j k x y not yet seen; not yet checked on a second pair.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "crib",
+      "technique": [
+        "plaintext matching",
+        "manual reconstruction"
+      ],
+      "what": "Rest of the 6 Jan 1784 pair aligned at 3x: h, x, z, second s, doubling dot added; table covers all letters used except y.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "verification",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Table checked on the 25 Nov 1783 letter against its clear copy: 142/143 known signs agree (99.3%); b found.",
       "result": "worked"
     }
   ],

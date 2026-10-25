@@ -18,10 +18,19 @@ G12: x / alpha-like crossed loop = l  (seen 9; pair 6 Jan)
 G13: tall slanted stroke with small foot (like long s) = p  (seen 3; pair 6 Jan)
 G14: r-like hook, upright with arm to the right (gamma) = q  (seen 3; pair 6 Jan)
 G15: inverted T leaning (upright on a base bar) = d  (seen 3; pair 6 Jan)
-G16: G12 with two dots above = ll (doubled letter)  (seen 1; pair 6 Jan)
-G17: looped sign with two raised arms (sigma / delta-like) = i  (seen 5; pair 6 Jan)
+G16: G12 with two dots above = ll (doubled letter)  (seen 2; confirmed in "conseilles", line 6)
+G17: looped sign with two raised arms (sigma / delta-like) = i and j (seen 14; j in "jets" line 10 and "jamais" foot, sometimes with a dot)
 G18: figure-7 shape (bar with slanting down-stroke) = s  (seen 7; pair 6 Jan)
 G19: open C (normal orientation) = g  (seen 1; tentative)
-G20: double-barred hash (two slanting strokes crossed by two bars) = z  (seen 1; tentative, "zele")
-G21: wide bracket open to the right, after "vou-" = s?  (seen 1; possible homophone of G18, unconfirmed)
+G20: double-barred hash (two slanting strokes crossed by two bars) = z  (seen 2; confirmed, "zele" in foot block)
+G21: wide bracket open to the right, after "vou-" = s, second sign (forked/Y-like upright); with two dots = ss ("connoissance" l.7 and l.10, "assure" foot). Medium confidence; the L-shaped third sign of "les" (l.7) may be the same sign written small.
 Non-letters: short tick above the line = word divider (inserted where letters run on); double colon pairs and comma = punctuation; code numbers + ":;." = names (left aside).
+G22: large crossed sign with a long descender curling left (like a crossed f) = x  (seen 1; "deux", line 6)
+Word-divider tick also appears at mid height as a short reversed hook between words (line 6: des|conseilles, les|mains|dedans).
+G23: plus sign / small cross = h  (seen 2; "demarche" line 8, "che" line 9)
+Doubled letters: dots over any sign double it (G12 ll, G02 nn, G05 rr in "pourra", G03 tt in "mettre", G21 ss).
+No y, b, k, w in this letter (copy spells "moiens"); those remain unassigned.
+G24: short horizontal dash at mid height = b  (3 times in the 25 Nov 1783 letter: ambassadeur, Berenger x2; verify.md NEW1)
+Note: a dot above a letter sign doubles it (ll, nn, rr, tt, ss, ff: G04 with a dot = ff in "affaires"); a single dot over G12 in "meler" does not.
+Note: h also written as an L-shape (G03 form) with a cross stroke above ("Stadhouder", 25 Nov; verify.md NEW3).
+Open: G11 (cup, c) reads s once in "se meler" (25 Nov) - homophone or a second cup form; check at full size.

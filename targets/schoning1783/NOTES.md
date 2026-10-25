@@ -48,3 +48,12 @@ From the 6 Jan 1784 pair (original s138, copy s140), by subagents, ASCII sign la
   follow the copy's order (884, 881, 860, 858, 582, 65, 914), which anchors the alignment.
 - not yet verified on a second pair (25 Nov 1783 s091/s093-095; 13 Dec 1783 s112/s115-117).
 Lesson: the glyphs need 3x crops segment by segment; two agent passes covered ~200 signs.
+
+## Step 1 result (25 Oct 2026)
+
+- 6 Jan 1784 (s138/s140) aligned in full: a c d e f g h i(=j) l m n o p q r s t u v x z; h = G23 (small cross); j written
+  as i (G17); second s G21 (medium); a dot above a sign doubles it (ll nn rr tt ss ff); a short reversed hook between
+  words is a divider. No y in this letter (copy spells "moiens").
+- Verified on 25 Nov 1783 (s091 against copy s093, `verify.md`): 142 of 143 known signs agree with the copy (99.3%);
+  new: b = short mid-height dash (G24, 3x), h also as an L with a cross above; one doubt, G11 (c) read s once.
+- Still to find: y, k (rare in French). Step 1 is done; the table is in `letter_table.tsv` / `signs_alphabet.md`.
