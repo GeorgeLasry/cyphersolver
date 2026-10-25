@@ -86,3 +86,18 @@ the paired sheet that gives its values), and any other folder sheet with a dot-w
 - Conclusion for now: the letter's own key ("die olde" cipher) is not in A23-311. Status of scan 027: attempted, open;
   blocker: no key material. A clear copy or the key may survive in Willem Lodewijk's papers (KHA A22) or in the
   recipient's archive (Tresoar; archieven.nl hits 7-02 Willem Lodewijk).
+
+## Search of Willem Lodewijk's papers (KHA A22) and Tresoar (25 Oct 2026)
+
+KHA catalogue API searched (cipher words, 1594, places of the 1594 campaign, minuten, registers; `kha_a22_hits.json`).
+Scanned A22 items of 1594: only A22-19-79, Willem Lodewijk to Maurits, 8 Dec 1594, on the countermarch (9 scans), not
+this letter. Not scanned, and the places a key or clear copy would be:
+- A22-278 "1594. Expedities": letter to the States General on taking Twente, and letters to officials in various places
+  (outgoing drafts of 1594, the year of the cipher letter);
+- A22-51 (with Jan VI of Nassau, 1583-1606), A22-191 and A22-195 (Erasmus Stüver, Everard van Reyd): catalogued under
+  "geheimschrift".
+Tresoar's "Stadhouderlijk archief 7-02 Willem Lodewijk" on archieven.nl describes the KHA holdings; no separate scanned
+originals found. The recipient is unnamed, so his own archive cannot be searched.
+
+Blocker for scan 027: needs-physical-access (KHA A22-278 and the geheimschrift files; KHA research request via
+koninklijkeverzamelingen.nl "Onderzoek aanvragen").
