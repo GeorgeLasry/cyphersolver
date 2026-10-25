@@ -51,12 +51,22 @@ Context cribs:
 2. Hypothesis A, two letters per group: annealed number→letter onto `fr-1600-letters` with a frequency penalty
    (`anneal_pairs.py`). No French in 10 restarts. Failed.
 
+3. Rohan 1594 key built from the printed decipherment (`rohan1594_key.tsv`, 78 values: letters 6-65, syllables
+   88-175, words 660-919 with 810 = de and 910 = les, names 10 = le roi, 87 = Paris, 95 = Tours, 96 = Saumur).
+4. Transcribed Loménie 24 Feb 1595 (`lomenie1595.txt`, 15 passages) and Duplessis 18-19 Jan 1597 to Cargroy and to
+   his wife (`duplessis1597.txt`, 11 passages) from the page images.
+5. Applied the Rohan key to both: no French; most groups unvalued, place names fall mid-word. **The key does not
+   fit.** Partial sign in Loménie: "du sieur 810 62 110 4" = "du sieur de …", so the x10 word codes (810, 910, 410,
+   610) may belong to a shared series even though the letters differ. In the 1597 letter to his wife the editors
+   printed some letters among the figures ("e. 77. v. 36. 71. 5", "15. 102. 32. tr. 89 …").
+
 ## Remaining gaps
 
 - All 93 groups of 1593: no key; under 100 groups. Next: test one-unit-per-group (homophonic/syllabic) with the P5
   name crib, and look for more Du Maurier/Serviez letters of 1593 in vol. 5 and in BnF/Institut copies of the Mornay
   papers.
-- Loménie 1595 and Duplessis 1597-98 figures: not attempted.
+- Loménie 1595 (95 groups) and Duplessis Jan 1597 (90 groups): transcribed; the Rohan key does not fit; no key.
+- Later 1597 letters in vol. 7 (pp. ~169, 305, 335, 347) and vol. 8 (1598): not yet transcribed.
 
 ## Escalation
 

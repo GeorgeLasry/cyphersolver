@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "target": "mornay1593",
-  "title": "Du Maurier and Serviez to Duplessis-Mornay, June–July 1593: undeciphered figures printed in the 1824 Mémoires et correspondance",
+  "title": "Duplessis-Mornay correspondents 1593-1597: undeciphered figures printed in the 1824 Mémoires et correspondance",
   "documents": [
     {
       "id": "DuMaurier-1593-06",
@@ -61,6 +61,64 @@
         "source": "archive.org scans mmoiresetcorre05morn, fetched 2026-10-25",
         "image_quality": "good",
         "notes": "Printed figures, checked group by group against the page images; the OCR misreads 59 as 69 and 910 as O'O."
+      }
+    },
+    {
+      "id": "Lomenie-1595-02-24",
+      "read": "not read",
+      "shelfmark": "Mémoires et correspondance vol. 6 pp. 179-181; original not located",
+      "date": "24 Feb 1595",
+      "year": 1595,
+      "country": "France",
+      "route": "Loménie -> Duplessis-Mornay",
+      "language": "French",
+      "pages": 1,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "partial": false
+      },
+      "length": {
+        "tokens": 95,
+        "unit": "code groups",
+        "measured": false,
+        "file": "lomenie1595.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "archive.org page scans, fetched 2026-10-25",
+        "image_quality": "good"
+      }
+    },
+    {
+      "id": "Duplessis-1597-01",
+      "read": "not read",
+      "shelfmark": "Mémoires et correspondance vol. 7 pp. 124-126; original not located",
+      "date": "18-19 Jan 1597",
+      "year": 1597,
+      "country": "France",
+      "route": "Duplessis-Mornay -> Cargroy; -> his wife",
+      "language": "French",
+      "pages": 1,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "partial": false
+      },
+      "length": {
+        "tokens": 90,
+        "unit": "code groups",
+        "measured": false,
+        "file": "duplessis1597.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "archive.org page scans, fetched 2026-10-25",
+        "image_quality": "good"
       }
     }
   ],
@@ -142,6 +200,27 @@
       ],
       "what": "anneal_pairs.py: number->letter key annealed onto fr-1600-letters (order 4, no spaces) with a French letter-frequency penalty, 10 restarts. No restart produced French; the bigram-per-group reading is not supported at this length.",
       "result": "failed"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "transcription",
+      "what": "Built the Mme de Rohan 1594 key (78 values) from the decipherment printed above her figures, vol. 6 pp. 83-85 (rohan1594_key.tsv): letters 6-65, syllables 88-175, word codes 660-919 including 810 = de and 910 = les, and names 10 = le roi, 87 = Paris, 95 = Tours, 96 = Saumur.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "transcription",
+      "what": "Transcribed Loménie to Duplessis, 24 Feb 1595 (15 passages, vol. 6 pp. 179-181), Duplessis to his wife 1595 (vol. 6 p. 182) and Duplessis to Cargroy and to his wife, 18-19 Jan 1597 (11 passages, vol. 7 pp. 124-126) from the page images.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Applied the Rohan 1594 key to the 1595 and 1597 figures. The output does not make French: most groups have no value, and those that do give place names and letters in the middle of words. The key is not the one used in these letters. One partial fit: in Loménie, 'du sieur 810 62 110 4' reads as 'du sieur de ...', so the word-code series ending in 10 may be shared even though the letter values differ.",
+      "result": "failed"
     }
   ],
   "outcome": {
@@ -149,13 +228,20 @@
     "key": "none",
     "method": "not solved",
     "first_break": false,
-    "verification": ["none"],
+    "verification": [
+      "none"
+    ],
     "provenance": "project",
     "gaps": [
       {
-        "item": "All eight 1593 passages",
-        "blocker": "too-short",
-        "detail": "93 groups in all; no key located. The Loménie 1595 and Duplessis 1597-98 figures are other systems and are not yet transcribed."
+        "item": "1593 Du Maurier/Serviez figures (93 groups)",
+        "blocker": "no-key-material",
+        "detail": "Pairs anneal failed; no key found."
+      },
+      {
+        "item": "Loménie 1595 and Duplessis 1597 figures",
+        "blocker": "no-key-material",
+        "detail": "The Rohan 1594 key does not fit. Vols. 7 (later 1597 letters) and 8 (1598) are not yet transcribed."
       }
     ],
     "notes": "Attempted, open."
