@@ -89,3 +89,19 @@ Caveats before this counts toward the read bar:
 - Proposed from brackets: 500 between Hollande and lettre, opening "[j'ai] l'honneur" (j); 750 between Son Altesse
   (733) and Republique (801).
 Next: a sense check per line with the fr-1600-letters model, re-read the garbled lines and No. 1 at 3x, then grade.
+
+## Step 3 update (26 Oct 2026)
+
+- s172 re-read along the slant (the first pass paired wrong line halves): unread on that page 40 -> 11; it now reads
+  as Schöning's plan: assure Vérac the Orangists are not "anglomaniens", and make a defensive and offensive alliance
+  with France, Spain and Prussia against England and the Emperor.
+- s173-s174 re-transcribed with every code as a token ("de ma mission", "le prejuge de monsieur Lare[y]" added).
+- Batch B also wrote `combined_172_firstpass.tsv` (an older merge of s172-s176), kept out of the measure.
+- s176 is dated "P. ce 26 fevrier 1784" in its margin: probably a separate February letter (VdH's letter of the 15th
+  arrived on the 26th and could not be deciphered), still inside `dec_175_pages.tsv`.
+- 24 Dec 1783: warn the privy council so that 70 does not thwart Berenger's money negotiation, nor his intrigues to make
+  a party against the Emperor "par ordre de 857". 15 Jan 1784: "Monsieur Larré n'est point instruit de mes secrets".
+  10 July 1784: the Gazette's Petersburg revolt was really at Constantinople, stirred by "notre" Gaffron; 861 recalled
+  him, and he will be put in Spandau.
+- The cup sign G11 (c) also stands for s (twice) and g (Espagne, espagnols, derangement): a polyvalent sign, or two
+  cup shapes not yet told apart.
