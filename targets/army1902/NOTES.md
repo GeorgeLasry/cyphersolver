@@ -32,7 +32,7 @@ or the numeric part of 特号 (Tokugō), is not settled (contributor's METHOD §
 | C09122911500 | 0110 (translation 0108) | 27 Mar 1902, Osaka: Chief of Staff Ōyama → Lt-Gen. Terauchi | 35 + 80 | ホンシヨクキキヨウマデホンブノジムハキクワンヨロシクトリハカラハレタシ (本職帰京迄本部ノ事務ハ貴官宜シク取計ハレタシ) | 35/35 |
 | C09123116600 | 0026 (reply draft 0025) | 25 Jan 1904, Kokura → Maj.-Gen. Iguchi, General Staff | 13 | ヨヨウノカンコクチズダイヨ + clear サレタシ ヲハラ (要用ノ韓国地図貸与サレタシ) | no translation; reply draft sends maps of Korea |
 | C09122909900 | 0079 (translation 0078) | 28 Mar 1902, Osaka: Ōyama → Maj.-Gen. Fukushima | 12 | カシグンエンシウケンガク (カイグン…, naval exercise observation) | 11/12: イ written 17 (シ), table 19 |
-| C03020059400 | 0119 | Jan 1904, Div. commander Inoue → War Minister | 12 | シンテイアクゼウシレイブ (辛碇泊場司令部) | 10/12: 09 (ア) for ハ 04, 88 (ゼ) for ジ 68 |
+| C03020059400 | 0119 | Jan 1904, Div. commander Inoue → War Minister | 12 | シンテイハクゼウシレイブ (辛碇泊場司令部) | 12/12: pair 5 04 (ハ) per Tomokiyo 24 Oct 2026; ゼウ = 場 (issue #97) |
 
 Not included: C09122806100 (18 Feb 1901, Hiroshima, Manabe → Tamura), 15 pairs in four runs that the 1902 table does
 not read (the same ニ is 91 and 69). A different method, so by the one-key rule it is not part of this target; the
@@ -77,9 +77,19 @@ into words with the kanji text under them (C09122911500 from its filed translati
 C09123116600 with the sender's spellings ヨヨウ, ダイヨ kept). Judged as a reader: each is one complete, coherent
 sentence with no hole. Both keep read, grade B. C03020059400 (its reading already written, 22-23 Oct) judged the same way: two sentences from the filed translation, one hole of three characters; keeps read.
 
+## 25 Oct 2026: issue #97 (Harumi-Matsuba)
+
+- C03020059400: pair 5 is 04 (ハ), as Tomokiyo reads the image (cryptiana meijiarmy2.htm, 24 Oct 2026); with ゼウ taken
+  as a spelling of 場 the run is シンテイハクゼウシレイブ, 12/12 against the translation (11/12 with 09). The contributor keeps
+  it a partial reading because the lowest independent second transcription agrees 87.5%.
+- C09122911500: the contributor's digit list now has 35 pairs + 80 = 72 digits, the form we had already checked on the
+  image (21 Oct 2026); `ct_C09122911500.txt` unchanged.
+- C09122909900: Tomokiyo reads the 2nd pair 14 (ヒ, カヒグン) where every AI reading has 17; not イ (19) either way, so
+  11/12 stands; recorded, transcription unchanged.
+
 ## Remaining gaps
 - C09122909900 pair 2 (17 for イ) - blocker: needs-physical-access; the image shows 七, writer's or transmission error; binarised JBIG2 scan cannot settle the head of column 2 either
-- C03020059400 pairs 5 and 7 (0 + 九-or-四 for ハ, 八八 for ジ) and three cramped characters of the translation - blocker: illegible; re-read on the JACAR scan 23 Oct 2026, the translation carries the reading
+- C03020059400 three cramped characters of the translation (frame 0118) - blocker: illegible; re-read on the JACAR scan 23 Oct 2026. Pairs 5 and 7 settled 25 Oct 2026: pair 5 = 04 (ハ) on Tomokiyo's reading of the image, pair 7 八八 (ゼ) read as ゼウ = 場 (Harumi-Matsuba, issue #97); 12/12 against the translation
 
 Closed (taken out of the open list, 23 Oct 2026): b24, 23 Oct 2026: C03020059400 decoded, not read (read with its filed translation, frame 0118)
 
