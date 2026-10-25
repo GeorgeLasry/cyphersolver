@@ -360,11 +360,79 @@ Reproduce: `python build_vocab.py ../../lang/corpora/en-gutenberg.txt` (and `bui
 `FIRSTOM=1`, `TRANS=OLD`, `LM=lm_la.pkl`), `python driver.py` (diversity rounds), `python fit.py Declon Arati
 DECLARATION`, `python scan_horace.py latin/horace_la.txt 13,9,26,29,12`.
 
+## 9. Line 23 (25 Oct 2026, fifth session): ROBT GRIFFITH FIRST, ME SECOND IN … OF SEVEN …
+
+Twenty agents attacked `Iopotonrogfimsecharsenr / Wtubtrfftrstendinhofsvmnr` (48 letters), ten from vocabularies
+(places, Oxford names, church, examinations, law and money, the two half-frames, misprint-tolerant search, word
+onsets, college life) and ten from the letters (character-model merges, fuzzy word DP, names and places lexicons
+built from the Register and Foster, corpus sentence scans over the Gutenberg novels and over 2.75M words of Oxford
+fiction and memoir, segment merges, consonant skeletons, W.'s sentence templates, B-first skeletons), each allowed up
+to three misprints or nulls over the line and told to work on 8–12-letter segments.
+
+**Result.** The middle of the line is read, exactly (0 misprints, 4 dropped letters: the two i's and h of Griffith,
+the o of Second), as **ROBT GRIFFITH FIRST ME SECOND IN** = A[7:16] `rogfimsec` + B[3:17] `btrfftrstendin`. Four agents
+reached FIRST (A fi + B rst, the same split as in line 16) and ME SECOND IN independently before the name was placed;
+the names agent then found ROBT exact. Robert Griffith, scholar of Wadham, won the **Ireland Scholarship in 1856**
+(Register; Oxford University Herald and Jackson's Oxford Journal, 15 Mar. 1856, George's images), the year named in
+line 22, and his tutor was Shirley (line 24, TOLD SHIRLEY). The first name is explained by the two Griffiths of Wadham
+(Charles, Craven 1854). After IN, **OF SEVEN** (B o f s + A e, B v, A n, one drop) is forced: all 2,457 parses of the
+tail with ≤3 drops contain it; "me second [of] seven [candidates]" is the natural sense, unconfirmed.
+
+**Open.** Prefix A `Iopoton` + B `Wtu` (10 letters before ROBT): all three B letters precede A's p, so the only
+exact readings are WITHOUT + P..T..ON words (POT ON 2 drops, POTION, PORTION, POSITION, OPPOSITION 7) and I OWE / I WHO /
+I WON PUT OUT ON; I WENT UP, PUT ON and I WENT UP TO OXFORD are impossible because A reads o before p and p-o-t-o-n.
+**JOWETT** = A `Io` + B `Wt` (J O W [e] T [t]) if the printed capital I is a J, the same split as JOWETT in line 25;
+the remaining `poton` + `u` then has no reading (UP OUT ON, POUT ON; PUT ON and UPON need an error). Suffix A `harsenr`
++ B `hofsvmnr` (15 letters after IN): the only low-drop parse is HARSH OF SEVEN MR NOR / MARINER; HARRIS SENR (A
+exact), SENIOR, HENRY, HOUSE, OF SEVEN, MR N are the exact pieces; HONOURS, HERTFORD, HILARY, HALF, SCHOOLS, IRELAND
+cannot be formed (A's a at 17 blocks every H-R word; no L, D, Y, K, X in the line). Consensus of the agents: both
+residues are names or abbreviations (A ends SENR, B ends MNR), probably the other candidates or examiners.
+
+**Letter inventory of line 23**: no J K L Q X Y Z; one each of B C D G P U V W; about 35 consonants to 13 vowels.
+
+**The runner-up is not in print.** The Ireland notice of March 1856 is the same bare sentence in the Herald,
+Jackson's and the Gentleman's Magazine; the Hertford notice of 1854 named three men (Oxford Chronicle, 1 Apr. 1854)
+but the Ireland's did not. Archive.org full-text search of the college and school registers for an 1856 Ireland
+"proxime accessit" finds none, and *Oxford Men and their Colleges* has no fellow with "Ireland scholarship 56" in his
+honours. The author's identity, if he was Griffith's runner-up, must come from the examiners' papers or a biography.
+
+**Proposed reading of line 23 (George Lasry, 25 Oct 2026).**
+
+> **W{adham} [Iopoton / tu] ROBT GRIFFITH FIRST, ME? SECOND, HARRISON? [– / h] OF SEVEN MEN? [– / r]**
+
+Alignment (A = 8 May, b = 20 May, [ ] = dropped): W = b0; unused A `Iopoton` + b `tu`; RObt Gr[i]ff[i]t[h] FIrst Me
+SEC[o]nd; HAR[r] i S [o] n, taking the i and n of b's `in`, so HARRISON fits with no error once IN is not read;
+unused b `h`; ofs E v [e] N; m E n with A's R read as E (one misprint; MR. N. costs none); unused b final `r`.
+Eleven cipher letters unused (nine before ROBT, the h, the final r), seven dropped, one misprint for MEN; ROBT …
+SEVEN fits with no error.
+
+- **Robert Griffith** of Wadham won Dean Ireland's Scholarship in 1856 (Historical Register 1888, p. 115,
+  https://archive.org/details/historicalregist00univuoft/page/n118/mode/1up ; Oxford University Herald and Jackson's
+  Oxford Journal, 15 Mar. 1856; Wadham register II, p. 477,
+  https://archive.org/details/registersofwadha02wadhiala/page/n500/mode/1up). Matric. 25 May 1853, First in Mods
+  Easter 1855, died 10 Dec. 1863 (Foster, Alumni Oxonienses 1715–1886, vol. 2,
+  https://archive.org/details/alumnioxonienses02univuoft/page/n190/mode/1up).
+- **Frederic Harrison** was Griffith's Wadham contemporary, though not of his year: admitted 26 Apr. 1849, First in
+  Lit. Hum. 1853, B.A. June 1853, fellow of Wadham from 30 June 1854 (Wadham register II, p. 456,
+  https://archive.org/details/registersofwadha02wadhiala/page/n479/mode/1up). He was a fellow when Griffith sat for the
+  Ireland, so "Harrison" here would be a Wadham fellow or examiner rather than a fellow candidate. HARRISON is
+  conjectural: it needs IN to be unread.
+- **ME** may be the author, or the name MERRY abbreviated: William Walter Merry, Balliol, matric. 30 Nov. 1852, 1st Cl.
+  Mods 1854, 2nd Cl. Lit. Hum. 1856, Chancellor's Latin Essay 1858, later Rector of Lincoln (Foster vol. 3,
+  https://archive.org/details/alumnioxonienses03univ/page/n158/mode/1up ; Register pp. 361, 434, 145). No source records
+  him as second for the Ireland.
+- **W{adham}**: the W that opens the 20 May half, read as the college. It costs nothing in the alignment, but it is an
+  interpretation: elsewhere W. is the addressee or signature of both advertisements.
+
+Best reading of the line: **[JOWETT] [· · ·] ROBT GRIFFITH FIRST, ME SECOND IN [· · ·] OF SEVEN [· ·]**. Scripts of
+the twenty agents are in the session scratchpad (folders college, exams, legal, church, names, nameslex, places,
+places_lex, firsthalf, onset, approx, ngram_merge, oxprose, bfirst and others); not copied into the repo.
+
 ## Remaining gaps
 
 - lines 9 and 26 (mistrl / otenpu, oatvpu) - blocker: too-short; unigram, bigram and 5-gram English searches, the Latin search and the Horace initial-letter scan (25 Oct 2026) all give nothing forced
 - line 12 - blocker: too-short; English, Latin and Horace scans give junk
-- line 23 (48 letters) - blocker: too-short; phrase-level searches (5 Oct and 25 Oct 2026): junk, no forced reading
+- line 23 (48 letters) - blocker: too-short; middle read (ROBT GRIFFITH FIRST ME SECOND IN … OF SEVEN, §9); the 10-letter prefix and the rest of the 15-letter suffix are names or abbreviations the lexicons lack; the Ireland 1856 runner-up was not published
 - line 29 (ereflodbr / rileohmae) - blocker: too-short; English, Latin and Horace scans give only junk
 - line 5 - blocker: too-short; CONVO MET ME IN GARDEN is the only one-omission fit, CONINGTON needs one misprint
 - line 6 tail, line 14 tail, line 19 tail (sov / c after BALLIOL MAN OPPOSITE USED MOTTO), line 21 first word (HOLIDAYS or HOLY ORDERS before XAMN) - blocker: too-short; several exact fits, none forced
