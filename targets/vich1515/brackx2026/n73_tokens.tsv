@@ -1,6 +1,6 @@
 line	position	token	split_label	value	status	reading_word
 1	1	sef	sef		unread group	[?1 group]
-1	2	sio	sio	esta	tentative	{?esta}
+1	2	sio	sio	esta	firm	esta
 1	3	tok	tok	ha	firm	haueros
 1	4	RS	RS	u	firm	haueros
 1	5	RH	RH	e	firm	haueros
@@ -13,8 +13,8 @@ line	position	token	split_label	value	status	reading_word
 1	12	KH	KH	i	firm	[?escrito]
 1	13	no	no	t	firm	[?escrito]
 1	14	TH	TH	o	firm	[?escrito]
-1	15	soo	soo	do	firm	dos
-1	16	PHI	PHI	s	firm	dos
+1	15	soo	soo	esto	firm	estos
+1	16	PHI	PHI	s	firm	estos
 1	17	su	su	di	firm	dias
 1	18	Z	Z	a	firm	dias
 1	19	PHI	PHI	s	firm	dias
@@ -35,7 +35,7 @@ line	position	token	split_label	value	status	reading_word
 2	8	xil	xil		unread group	[?1 group]
 2	9	YH	YH	y	firm	y
 2	10	yob	yob	por	firm	por
-2	11	beq	beq	tierra	tentative	{?tierra}
+2	11	beq	beq	tierra	firm	tierra
 2	12	YH	YH	y	firm	y
 2	13	RS	RS	u	firm	ultimamente
 2	14	gso	gso	l	firm	ultimamente
@@ -48,15 +48,15 @@ line	position	token	split_label	value	status	reading_word
 2	21	LO	LO	t	firm	ultimamente
 2	22	RH	RH	e	firm	ultimamente
 2	23	yob	yob	por	firm	por
-2	24	xnl	xnl	mar	tentative	{?mar}
+2	24	xnl	xnl	mar	firm	mar
 2	25	Z	Z	a	firm	a
-2	26	xad	xad	lo	tentative	{?los}
-2	27	PHI	PHI	s	firm	{?los}
+2	26	xad	xad	lo	firm	los
+2	27	PHI	PHI	s	firm	los
 3	1	QH	QH	x	firm	xui
 3	2	RS	RS	u	firm	xui
 3	3	KH	KH	i	firm	xui
 3	4	sud	sud	de	firm	de
-3	5	sio	sio	esta	tentative	{?esta}
+3	5	sio	sio	esta	firm	esta
 3	6	TH	TH	o	firm	[?3 groups, 1 sign, 5 letters]
 3	7	ne	ne		unread group	[?3 groups, 1 sign, 5 letters]
 3	8	RS	RS	u	firm	[?3 groups, 1 sign, 5 letters]
@@ -89,11 +89,11 @@ line	position	token	split_label	value	status	reading_word
 4	6	TH	TH	o	firm	[?3 letters]
 4	7	OT	OT	c	firm	[?3 letters]
 4	8	sud	sud	de	firm	de
-4	9	sio	sio	esta	tentative	{?esta}
+4	9	sio	sio	esta	firm	esta
 4	10	zre	zre	que	firm	que
-4	11	beq	beq	tierra	tentative	{?tierra}
+4	11	beq	beq	tierra	firm	tierra
 4	12	yob	yob	por	firm	por
-4	13	beq	beq	tierra	tentative	{?tierra}
+4	13	beq	beq	tierra	firm	tierra
 4	14	xed	xed	la	firm	las
 4	15	PHI	PHI	s	firm	las
 4	16	zre	zre	que	firm	que
@@ -115,7 +115,7 @@ line	position	token	split_label	value	status	reading_word
 5	5	no	no	t	firm	[?escrito]
 5	6	TH	TH	o	firm	[?escrito]
 5	7	yob	yob	por	firm	por
-5	8	xnl	xnl	mar	tentative	{?mar}
+5	8	xnl	xnl	mar	firm	mar
 5	9	xeb	xeb	no	firm	no
 5	10	xed	xed	la	firm	las
 5	11	PHI	PHI	s	firm	las
@@ -124,16 +124,16 @@ line	position	token	split_label	value	status	reading_word
 5	14	pn	pn		unread group	[?2 groups, 1 sign, 1 letter]
 5	15	zoq	zoq		unread group	[?2 groups, 1 sign, 1 letter]
 5	16	YH	YH	y	firm	y
-5	17	pab	pab		unread group	[?1 group]
+5	17	pab	pab	ahunque	firm	ahunque
 5	18	xed	xed	la	firm	las
 5	19	PHI	PHI	s	firm	las
-5	20	xiz	xiz		unread group	[?1 group, 1 letter]
-5	21	PHI	PHI	s	firm	[?1 group, 1 letter]
+5	20	xiz	xiz		unread group	[?1 group]
+5	21	PHI	PHI	s	firm	[?]s
 5	22	zre	zre	que	firm	que
 5	23	yob	yob	por	firm	por
-5	24	xad	xad	lo	tentative	{?los}
-5	25	PHI	PHI	s	firm	{?los}
-5	26	see	see	del	firm	[?3 letters]
+5	24	xad	xad	lo	firm	los
+5	25	PHI	PHI	s	firm	los
+5	26	see	see	del	firm	del
 6	1	PHI	PHI	s	firm	
 6	2	dug	dug	uuestra	firm	uuestras
 6	3	PHI	PHI	s	firm	uuestras
@@ -151,20 +151,20 @@ line	position	token	split_label	value	status	reading_word
 6	15	PHI	PHI	s	firm	son
 6	16	TH	TH	o	firm	son
 6	17	FH	FH	n	firm	son
-6	18	ynb	ynb	ni	firm	ni
-6	19	tok	tok	ha	firm	[?hauer]
-6	20	RS	RS	u	firm	[?hauer]
-6	21	RH	RH	e	firm	[?hauer]
-6	22	B8	B8	r	firm	[?hauer]
-6	23	OT	OT	c	firm	[?6 letters]
-6	24	xed	xed	la	firm	[?6 letters]
-6	25	X	Xs	s	firm (look-alike X)	[?6 letters]
-6	26	RH	RH	e	firm	[?6 letters]
-6	27	B8	B8	r	firm	[?6 letters]
+6	18	ynb	ynbp	para	firm	para
+6	19	tok	tok	ha	firm	hauer
+6	20	RS	RS	u	firm	hauer
+6	21	RH	RH	e	firm	hauer
+6	22	B8	B8	r	firm	hauer
+6	23	OT	OT	c	firm	[?plazer]
+6	24	xed	xed	la	firm	[?plazer]
+6	25	X	Xs	s	firm (look-alike X)	[?plazer]
+6	26	RH	RH	e	firm	[?plazer]
+6	27	B8	B8	r	firm	[?plazer]
 6	28	rak	rak	con	firm	con
-7	1	sen	sen	ella	tentative	{?ellas}
-7	2	PHI	PHI	s	firm	{?ellas}
-7	3	yaz	yaz	antes	tentative	{?antes}
+7	1	sen	sen	ella	firm	ellas
+7	2	PHI	PHI	s	firm	ellas
+7	3	yaz	yaz	pero	firm	pero
 7	4	KH	KH	i	firm	[?8 letters]
 7	5	RH	RH	e	firm	[?8 letters]
 7	6	PHI	PHI	s	firm	[?8 letters]
@@ -192,8 +192,8 @@ line	position	token	split_label	value	status	reading_word
 7	28	sin	sim	en	firm (look-alike sin/sim)	te-
 8	1	RH	RH	e	firm	ner
 8	2	B8	B8	r	firm	ner
-8	3	xnp	xnp		unread group	[?1 group, 1 letter]
-8	4	PHI	PHI	s	firm	[?1 group, 1 letter]
+8	3	xnp	xnp	mucho	firm	muchos
+8	4	PHI	PHI	s	firm	muchos
 8	5	su	su	di	firm	dias
 8	6	Z	Z	a	firm	dias
 8	7	PHI	PHI	s	firm	dias
@@ -220,7 +220,7 @@ line	position	token	split_label	value	status	reading_word
 8	28	sud	sud	de	firm	responder
 8	29	B8	B8	r	firm	responder
 8	30	Z	Z	a	firm	a
-8	31	xad	xad	lo	tentative	{?lo}
+8	31	xad	xad	lo	firm	lo
 9	1	rak	rak	con	firm	contenido
 9	2	no	no	t	firm	contenido
 9	3	sin	sim	en	firm (look-alike sin/sim)	contenido
@@ -228,8 +228,8 @@ line	position	token	split_label	value	status	reading_word
 9	5	GS	GS	d	firm	contenido
 9	6	TH	TH	o	firm	contenido
 9	7	sin	sim	en	firm (look-alike sin/sim)	en
-9	8	sen	sen	ella	tentative	{?ellas}
-9	9	PHI	PHI	s	firm	{?ellas}
+9	8	sen	sen	ella	firm	ellas
+9	9	PHI	PHI	s	firm	ellas
 9	10	su	su	di	firm	digo
 9	11	AH	AH	g	firm	digo
 9	12	TH	TH	o	firm	digo
@@ -245,15 +245,15 @@ line	position	token	split_label	value	status	reading_word
 9	22	Z	Z	a	firm	dexar
 9	23	X	Xr	r	firm (look-alike X)	dexar
 9	24	sud	sud	de	firm	de
-9	25	suo	suo	esta	firm	[?estar]
-9	26	X	Xs	s	firm (look-alike X)	[?estar]
+9	25	suo	suo	esta	firm	estar
+9	26	X	Xr	r	firm (look-alike X)	estar
 10	1	xns	xns	muy	firm	muy
-10	2	xin	xin	mal	tentative	{?mal}
-10	3	rak	rak	con	firm	[?mal]contento
-10	4	no	no	t	firm	[?mal]contento
-10	5	sin	sim	en	firm (look-alike sin/sim)	[?mal]contento
-10	6	no	no	t	firm	[?mal]contento
-10	7	TH	TH	o	firm	[?mal]contento
+10	2	xin	xin	mal	firm	malcontento
+10	3	rak	rak	con	firm	malcontento
+10	4	no	no	t	firm	malcontento
+10	5	sin	sim	en	firm (look-alike sin/sim)	malcontento
+10	6	no	no	t	firm	malcontento
+10	7	TH	TH	o	firm	malcontento
 10	8	sud	sud	de	firm	de
 10	9	RS	RS	u	firm	uer
 10	10	ZH	ZH	e	firm	uer
@@ -261,21 +261,21 @@ line	position	token	split_label	value	status	reading_word
 10	12	zre	zre	que	firm	que
 10	13	yob	yob	por	firm	por
 10	14	xed	xed	la	firm	la
-10	15	PHI	PHI	s	firm	[?soberuia]
-10	16	TH	TH	o	firm	[?soberuia]
-10	17	N8	N8	b	firm	[?soberuia]
-10	18	RH	RH	e	firm	[?soberuia]
-10	19	X	Xs	s	firm (look-alike X)	[?soberuia]
-10	20	RS	RS	u	firm	[?soberuia]
-10	21	BO	BO	i	firm	[?soberuia]
+10	15	PHI	PHI	s	firm	soberui[a]
+10	16	TH	TH	o	firm	soberui[a]
+10	17	N8	N8	b	firm	soberui[a]
+10	18	RH	RH	e	firm	soberui[a]
+10	19	X	Xr	r	firm (look-alike X)	soberui[a]
+10	20	RS	RS	u	firm	soberui[a]
+10	21	BO	BO	i	firm	soberui[a]
 10	22	YH	YH	y	firm	y
-10	23	xad	xad	lo	tentative	{?lo}
-10	24	O	O	a	firm	au-
-10	25	RS	RS	u	firm	au-
+10	23	xad	xad	lo	firm	locu-
+10	24	O	OT	c	firm	locu-
+10	25	RS	RS	u	firm	locu-
 11	1	B8	B8	r	firm	ra
 11	2	Z	Z	a	firm	ra
 11	3	sud	sud	de	firm	de
-11	4	be	be	s	tentative	[?1 letter]
+11	4	be	be	suycos	firm	suycos
 11	5	sud	sud	de	firm	de
 11	6	xeb	xeb	no	firm	no
 11	7	zre	zre	que	firm	querer
@@ -290,13 +290,13 @@ line	position	token	split_label	value	status	reading_word
 11	16	X	Xr	r	firm (look-alike X)	esperar
 11	17	O	O	a	firm	a
 11	18	zre	zre	que	firm	que
-11	19	xny	xny	e	tentative	[?1 group, 1 letter]
-11	20	sem	sem		unread group	[?1 group, 1 letter]
+11	19	xny	xnyn	nuestro	firm	nuestro
+11	20	sem	sem	exercito	firm	exercito
 11	21	bne	bne	se	firm	se
-11	22	tir	tir		unread group	[?1 group]
-11	23	bne	bne	se	firm	se
+11	22	tir	tir	iunta	firm	iuntase
+11	23	bne	bne	se	firm	iuntase
 11	24	rak	rak	con	firm	con
-11	25	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
+11	25	sin	sin	es	firm (look-alike sin/sim)	[?ellos]
 12	1	PHI	PHI	s	firm	[?1 letter]
 12	2	YH	YH	y	firm	y
 12	3	yob	yob	por	firm	por
@@ -309,9 +309,9 @@ line	position	token	split_label	value	status	reading_word
 12	10	FH	FH	n	firm	remision
 12	11	sin	sin	es	firm (look-alike sin/sim)	es
 12	12	xoo	xoo	mi	firm	mi
-12	13	bay	bay	uisorrey	tentative	{?uisorrey}
+12	13	bay	bay	uisorrey	firm	uisorrey
 12	14	YH	YH	y	firm	y
-12	15	poz	poz		unread group	[?1 group]
+12	15	poz	poz	capitan general	firm	capitan
 12	16	sud	sud	de	firm	de
 12	17	no	no	t	firm	tardar
 12	18	Z	Z	a	firm	tardar
@@ -319,28 +319,28 @@ line	position	token	split_label	value	status	reading_word
 12	20	GS	GS	d	firm	tardar
 12	21	O	O	a	firm	tardar
 12	22	X	Xr	r	firm (look-alike X)	tardar
-12	23	bon	bon		unread group	[?1 group]
+12	23	bon	bon	tanto	firm	tanto
 12	24	sin	sim	en	firm (look-alike sin/sim)	en
-13	1	tir	tir		unread group	[?1 group, 1 letter]
-13	2	B8	B8	r	firm	[?1 group, 1 letter]
-13	3	bne	bne	se	firm	se
+13	1	tir	tir	iunta	firm	iuntarse
+13	2	B8	B8	r	firm	iuntarse
+13	3	bne	bne	se	firm	iuntarse
 13	4	bne	bne	se	firm	se
-13	5	tok	tok	ha	firm	ha
-13	6	dam	dam		unread group	[?1 group, 1 letter]
-13	7	FH	FH	n	firm	[?1 group, 1 letter]
-13	8	yin	yin	es	firm	esto
-13	9	no	no	t	firm	esto
-13	10	TH	TH	o	firm	esto
-13	11	beo	beo	e	tentative	{?es}
-13	12	PHI	PHI	s	firm	{?es}
+13	5	tok	tok	ha	firm	hayan
+13	6	dam	dam	ya	firm	hayan
+13	7	FH	FH	n	firm	hayan
+13	8	yin	yinp	pues	firm	puesto
+13	9	no	no	t	firm	puesto
+13	10	TH	TH	o	firm	puesto
+13	11	beo	beo	toda	firm	todas
+13	12	PHI	PHI	s	firm	todas
 13	13	xed	xed	la	firm	las
 13	14	PHI	PHI	s	firm	las
 13	15	reh	reh	cosa	firm	cosas
 13	16	PHI	PHI	s	firm	cosas
 13	17	sud	sud	de	firm	de
 13	18	teb	teb	italia	firm	Italia
-13	19	sin	sin	es	firm (look-alike sin/sim)	es
-13	20	sim	sim	en	firm	en
+13	19	sin	sim	en	firm (look-alike sin/sim)	en
+13	20	sim	siml	el	firm	el
 13	21	CT	CT	p	firm	pe-
 13	22	RH	RH	e	firm	pe-
 14	1	gso	gso	l	firm	ligro
@@ -351,25 +351,25 @@ line	position	token	split_label	value	status	reading_word
 14	6	zre	zre	que	firm	que
 14	7	TH	TH	o	firm	oy
 14	8	YH	YH	y	firm	oy
-14	9	sio	sio	esta	tentative	{?estan}
-14	10	FH	FH	n	firm	{?estan}
-14	11	yaz	yaz	antes	tentative	{?antes}
-14	12	ynb	ynb	ni	firm	ni
+14	9	sio	sio	esta	firm	estan
+14	10	FH	FH	n	firm	estan
+14	11	yaz	yaz	pero	firm	pero
+14	12	ynb	ynbp	para	firm	para
 14	13	rak	rak	con	firm	con
-14	14	dah	dah	esto	tentative	{?estos}
-14	15	X	Xs	s	firm (look-alike X)	{?estos}
-14	16	ip	ip		unread group	[?1 group]
-14	17	xin	xin	mal	tentative	{?mal}
-14	18	ZO	ZO	m	firm	[?11 letters]
-14	19	Z	Z	a	firm	[?11 letters]
-14	20	B8	B8	r	firm	[?11 letters]
-14	21	O	O	a	firm	[?11 letters]
-14	22	RS	RS	u	firm	[?11 letters]
-14	23	KH	KH	i	firm	[?11 letters]
-14	24	SL	SL	st	tentative	[?11 letters]
-14	25	Z	Z	a	firm	[?11 letters]
-14	26	GS	GS	d	firm	[?11 letters]
-14	27	TH	TH	o	firm	[?11 letters]
+14	14	dah	dah	uos	firm	uos
+14	15	X	Xs	s	firm (look-alike X)	[?1 letter]
+14	16	ip	ip	mucho	firm	mucho
+14	17	xin	xin	mal	firm	[?mas]
+14	18	ZO	ZO	m	firm	marauillado
+14	19	Z	Z	a	firm	marauillado
+14	20	B8	B8	r	firm	marauillado
+14	21	O	O	a	firm	marauillado
+14	22	RS	RS	u	firm	marauillado
+14	23	KH	KH	i	firm	marauillado
+14	24	SL	SL	ll	firm	marauillado
+14	25	Z	Z	a	firm	marauillado
+14	26	GS	GS	d	firm	marauillado
+14	27	TH	TH	o	firm	marauillado
 15	1	YH	YH	y	firm	y
 15	2	CT	CT	p	firm	peor
 15	3	RH	RH	e	firm	peor
@@ -380,25 +380,25 @@ line	position	token	split_label	value	status	reading_word
 15	8	sin	sim	en	firm (look-alike sin/sim)	contento
 15	9	no	no	t	firm	contento
 15	10	TH	TH	o	firm	contento
-15	11	soo	soo	do	firm	[?doy]
-15	12	KH	KH	i	firm	[?doy]
+15	11	soo	soo	esto	firm	estoi
+15	12	KH	KH	i	firm	estoi
 15	13	sud	sud	de	firm	de
 15	14	RS	RS	u	firm	uer
 15	15	RH	RH	e	firm	uer
 15	16	B8	B8	r	firm	uer
 15	17	xed	xed	la	firm	la
-15	18	MH	MH	f	firm	flaquesa
-15	19	xed	xed	la	firm	flaquesa
-15	20	zre	zre	que	firm	flaquesa
-15	21	X	Xs	s	firm (look-alike X)	flaquesa
-15	22	Z	Z	a	firm	flaquesa
+15	18	MH	MH	f	firm	flaqueza
+15	19	xed	xed	la	firm	flaqueza
+15	20	zre	zre	que	firm	flaqueza
+15	21	X	Xz	z	firm (look-alike X)	flaqueza
+15	22	Z	Z	a	firm	flaqueza
 15	23	see	see	del	firm	del
-15	24	yem	yem	papa	tentative	{?papa}
+15	24	yem	yem	papa	firm	papa
 16	1	YH	YH	y	firm	y
-16	2	RS	RS	u	firm	[?4 letters]
-16	3	RS	RS	u	firm	[?4 letters]
-16	4	O	O	a	firm	[?4 letters]
-16	5	FH	FH	n	firm	[?4 letters]
+16	2	RS	RS	u	firm	[?quan]
+16	3	RS	RS	u	firm	[?quan]
+16	4	O	O	a	firm	[?quan]
+16	5	FH	FH	n	firm	[?quan]
 16	6	sud	sud	de	firm	determinado
 16	7	LO	LO	t	firm	determinado
 16	8	RH	RH	e	firm	determinado
@@ -410,16 +410,16 @@ line	position	token	split_label	value	status	reading_word
 16	14	TH	TH	o	firm	determinado
 16	15	suo	suo	esta	firm	esta
 16	16	sud	sud	de	firm	de
-16	17	gak	gak		unread group	[?1 group]
-16	18	OT	OT	c	firm	certarse
-16	19	RH	RH	e	firm	certarse
-16	20	X	Xr	r	firm (look-alike X)	certarse
-16	21	no	no	t	firm	certarse
-16	22	Z	Z	a	firm	certarse
-16	23	B8	B8	r	firm	certarse
-16	24	bne	bne	se	firm	certarse
+16	17	gak	gak	con	firm	concertarse
+16	18	OT	OT	c	firm	concertarse
+16	19	RH	RH	e	firm	concertarse
+16	20	X	Xr	r	firm (look-alike X)	concertarse
+16	21	no	no	t	firm	concertarse
+16	22	Z	Z	a	firm	concertarse
+16	23	B8	B8	r	firm	concertarse
+16	24	bne	bne	se	firm	concertarse
 16	25	rak	rak	con	firm	con
-16	26	sug	sug		unread group	[?1 group]
+16	26	sug	suq	franceses	firm	franceses
 16	27	xeb	xeb	no	firm	no
 17	1	AH	AH	g	firm	guardando
 17	2	RS	RS	u	firm	guardando
@@ -431,10 +431,10 @@ line	position	token	split_label	value	status	reading_word
 17	8	GS	GS	d	firm	guardando
 17	9	TH	TH	o	firm	guardando
 17	10	sin	sim	en	firm (look-alike sin/sim)	en
-17	11	san	san	ello	tentative	{?ello}
-17	12	xad	xad	lo	tentative	{?lo}
+17	11	san	san	ello	firm	ello
+17	12	xad	xad	lo	firm	lo
 17	13	zre	zre	que	firm	que
-17	14	sio	sio	esta	tentative	{?esta}
+17	14	sio	sio	esta	firm	esta
 17	15	OT	OT	c	firm	capitulado
 17	16	Z	Z	a	firm	capitulado
 17	17	CT	CT	p	firm	capitulado
@@ -445,12 +445,12 @@ line	position	token	split_label	value	status	reading_word
 17	22	GS	GS	d	firm	capitulado
 17	23	TH	TH	o	firm	capitulado
 17	24	zre	zre	que	firm	que
-17	25	xaz	xaz		unread group	[?1 group]
+17	25	xaz	xaz	ninguno	firm	ninguno
 17	26	sud	sud	de	firm	de
-18	1	xad	xad	lo	tentative	{?los}
-18	2	PHI	PHI	s	firm	{?los}
-18	3	rue	rue		unread group	[?1 group, 1 letter]
-18	4	PHI	PHI	s	firm	[?1 group, 1 letter]
+18	1	xad	xad	lo	firm	los
+18	2	PHI	PHI	s	firm	los
+18	3	rue	rie	confederado	firm	confederados
+18	4	PHI	PHI	s	firm	confederados
 18	5	xeb	xeb	no	firm	no
 18	6	CT	CT	p	firm	pueda
 18	7	RS	RS	u	firm	pueda
@@ -461,7 +461,7 @@ line	position	token	split_label	value	status	reading_word
 18	12	X	Xz	z	firm (look-alike X)	hazer
 18	13	RH	RH	e	firm	hazer
 18	14	B8	B8	r	firm	hazer
-18	15	yin	yin	es	firm	es
+18	15	yin	yinz	paz	firm	paz
 18	16	ynb	ynb	ni	firm	ni
 18	17	no	no	t	firm	tregua
 18	18	B8	B8	r	firm	tregua
@@ -474,7 +474,7 @@ line	position	token	split_label	value	status	reading_word
 18	25	FH	FH	n	firm	ningu-
 18	26	PH	PH	g	firm	ningu-
 18	27	RS	RS	u	firm	ningu-
-19	1	yom	yom		unread group	[?1 group]
+19	1	yom	yom	principe	firm	principe
 19	2	bae	bae	si	firm	sin
 19	3	FH	FH	n	firm	sin
 19	4	PHI	PHI	s	firm	sabiduria
@@ -487,18 +487,18 @@ line	position	token	split_label	value	status	reading_word
 19	11	KH	KH	i	firm	sabiduria
 19	12	O	O	a	firm	sabiduria
 19	13	YH	YH	y	firm	y
-19	14	dik	dik		unread group	[?1 group]
+19	14	dik	dik	voluntad	firm	uoluntad
 19	15	sud	sud	de	firm	de
 19	16	bao	bao	todo	firm	todos
 19	17	PHI	PHI	s	firm	todos
-19	18	xad	xad	lo	tentative	{?los}
-19	19	PHI	PHI	s	firm	{?los}
-19	20	rie	rie	confederado	tentative	{?confederados}
-19	21	PHI	PHI	s	firm	{?confederados}
+19	18	xad	xad	lo	firm	los
+19	19	PHI	PHI	s	firm	los
+19	20	rie	rie	confederado	firm	confederados
+19	21	PHI	PHI	s	firm	confederados
 19	22	YH	YH	y	firm	y
-19	23	yin	yin	es	firm	[?siendo]
-19	24	sin	sim	en	firm (look-alike sin/sim)	[?siendo]
-19	25	soo	soo	do	firm	[?siendo]
+19	23	yin	yinp	pues	firm	pues
+19	24	sin	sim	en	firm (look-alike sin/sim)	en
+19	25	soo	soo	esto	firm	esto
 19	26	tok	tok	ha	firm	ha
 20	1	zre	zre	que	firm	quebrado
 20	2	N8	N8	b	firm	quebrado
@@ -506,29 +506,29 @@ line	position	token	split_label	value	status	reading_word
 20	4	O	O	a	firm	quebrado
 20	5	GS	GS	d	firm	quebrado
 20	6	TH	TH	o	firm	quebrado
-20	7	xed	xed	la	firm	las
-20	8	seg	seg	s	firm	las
-20	9	OT	OT	c	firm	capitulacion[?]
-20	10	Z	Z	a	firm	capitulacion[?]
-20	11	CT	CT	p	firm	capitulacion[?]
-20	12	KH	KH	i	firm	capitulacion[?]
-20	13	no	no	t	firm	capitulacion[?]
-20	14	RS	RS	u	firm	capitulacion[?]
-20	15	xed	xed	la	firm	capitulacion[?]
-20	16	OT	OT	c	firm	capitulacion[?]
-20	17	KH	KH	i	firm	capitulacion[?]
-20	18	TH	TH	o	firm	capitulacion[?]
-20	19	FH	FH	n	firm	[?1 letter]
+20	7	xed	xed	la	firm	la
+20	8	seg	seg	dicha	firm	dicha
+20	9	OT	OT	c	firm	capitulacion
+20	10	Z	Z	a	firm	capitulacion
+20	11	CT	CT	p	firm	capitulacion
+20	12	KH	KH	i	firm	capitulacion
+20	13	no	no	t	firm	capitulacion
+20	14	RS	RS	u	firm	capitulacion
+20	15	xed	xed	la	firm	capitulacion
+20	16	OT	OT	c	firm	capitulacion
+20	17	KH	KH	i	firm	capitulacion
+20	18	TH	TH	o	firm	capitulacion
+20	19	FH	FH	n	firm	capitulacion
 20	20	xeb	xeb	no	firm	no
 20	21	sin	sin	es	firm (look-alike sin/sim)	espero
 20	22	CT	CT	p	firm	espero
 20	23	RH	RH	e	firm	espero
 20	24	B8	B8	r	firm	espero
 20	25	TH	TH	o	firm	espero
-20	26	rak	rak	con	firm	con
-20	27	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
-21	1	xez	xez		unread group	[?2 groups]
-21	2	yee	yee		unread group	[?2 groups]
+20	26	rak	rak	con	firm	[?que]
+20	27	sin	sim	en	firm (look-alike sin/sim)	en
+21	1	xez	xez	ninguna	firm	ninguna
+21	2	yee	yee	otra	firm	otra
 21	3	reh	reh	cosa	firm	cosa
 21	4	xed	xed	la	firm	la
 21	5	tok	tok	ha	firm	ha
@@ -540,16 +540,16 @@ line	position	token	split_label	value	status	reading_word
 21	11	GS	GS	d	firm	guardar
 21	12	O	O	a	firm	guardar
 21	13	X	Xr	r	firm (look-alike X)	guardar
-21	14	pab	pab		unread group	[?1 group]
-21	15	sin	sim	en	firm (look-alike sin/sim)	en
-21	16	dah	dah	esto	tentative	{?esto}
-21	17	tok	tok	ha	firm	ha
-21	18	dam	dam		unread group	[?1 group]
+21	14	pab	pab	ahunque	firm	ahunque
+21	15	sin	sim	en	firm (look-alike sin/sim)	[?el]
+21	16	dah	dah	uos	firm	uos
+21	17	tok	tok	ha	firm	haya
+21	18	dam	dam	ya	firm	haya
 21	19	xnk	xnk	como	firm	como
-21	20	sud	sud	de	firm	[?dezis]
-21	21	X	Xr	r	firm (look-alike X)	[?dezis]
-21	22	KH	KH	i	firm	[?dezis]
-21	23	PHI	PHI	s	firm	[?dezis]
+21	20	sud	sud	de	firm	dezis
+21	21	X	Xz	z	firm (look-alike X)	dezis
+21	22	KH	KH	i	firm	dezis
+21	23	PHI	PHI	s	firm	dezis
 22	1	CT	CT	p	firm	prometido
 22	2	X	Xr	r	firm (look-alike X)	prometido
 22	3	TH	TH	o	firm	prometido
@@ -566,21 +566,21 @@ line	position	token	split_label	value	status	reading_word
 22	14	Z	Z	a	firm	asentara
 22	15	B8	B8	r	firm	asentara
 22	16	O	O	a	firm	asentara
-22	17	xed	xed	la	firm	las
-22	18	seg	seg	s	firm	las
-22	19	yin	yin	es	firm	[?2 letters]
+22	17	xed	xed	la	firm	la
+22	18	seg	seg	dicha	firm	dicha
+22	19	yin	yinz	paz	firm	paz
 22	20	rak	rak	con	firm	con
-22	21	soq	soq		unread group	[?1 group]
+22	21	soq	soq	francia	firm	Francia
 22	22	bae	bae	si	firm	sin
 22	23	FH	FH	n	firm	sin
-22	24	CT	CT	p	firm	[?4 letters]
-22	25	RH	RH	e	firm	[?4 letters]
-22	26	X	Xr	r	firm (look-alike X)	[?4 letters]
-22	27	KH	KH	i	firm	[?4 letters]
-23	1	RS	RS	u	firm	
-23	2	KH	KH	i	firm	
-23	3	X	Xr	r	firm (look-alike X)	
-23	4	dem	dem	yo	firm	yo
+22	24	CT	CT	p	firm	peri-
+22	25	RH	RH	e	firm	peri-
+22	26	X	Xr	r	firm (look-alike X)	peri-
+22	27	KH	KH	i	firm	peri-
+23	1	RS	RS	u	firm	uizyo
+23	2	KH	KH	i	firm	uizyo
+23	3	X	Xz	z	firm (look-alike X)	uizyo
+23	4	dem	dem	yo	firm	uizyo
 23	5	sud	sud	de	firm	de
 23	6	xed	xed	la	firm	las
 23	7	PHI	PHI	s	firm	las
@@ -596,16 +596,16 @@ line	position	token	split_label	value	status	reading_word
 23	17	FH	FH	n	firm	captulaciones
 23	18	sin	sin	es	firm (look-alike sin/sim)	captulaciones
 23	19	zre	zre	que	firm	que
-23	20	ral	ral		unread group	[?1 group]
-23	21	sim	sim	en	firm	en
-23	22	suh	suh	emperador	tentative	{?emperador}
+23	20	ral	ral	con	firm	con
+23	21	sim	siml	el	firm	el
+23	22	suh	suh	emperador	firm	emperador
 23	23	YH	YH	y	firm	y
 23	24	OT	OT	c	firm	comi-
 23	25	TH	TH	o	firm	comi-
 23	26	xoo	xoo	mi	firm	comi-
 24	1	AH	AH	g	firm	go
 24	2	TH	TH	o	firm	go
-24	3	bip	bip		unread group	[?1 group]
+24	3	bip	bip	tiene	firm	tiene
 24	4	Z	Z	a	firm	asentadas
 24	5	X	Xs	s	firm (look-alike X)	asentadas
 24	6	sin	sim	en	firm (look-alike sin/sim)	asentadas
@@ -615,7 +615,7 @@ line	position	token	split_label	value	status	reading_word
 24	10	O	O	a	firm	asentadas
 24	11	PHI	PHI	s	firm	asentadas
 24	12	YH	YH	y	firm	y
-24	13	pib	pib		unread group	[?1 group]
+24	13	pib	pib	assimismo	firm	assimismo
 24	14	AH	AH	g	firm	guardara
 24	15	RS	RS	u	firm	guardara
 24	16	Z	Z	a	firm	guardara
@@ -624,7 +624,7 @@ line	position	token	split_label	value	status	reading_word
 24	19	O	O	a	firm	guardara
 24	20	B8	B8	r	firm	guardara
 24	21	Z	Z	a	firm	guardara
-24	22	nab	nab		unread group	[?1 group]
+24	22	nab	nab	lo	firm	lo
 24	23	zre	zre	que	firm	que
 24	24	yob	yob	por	firm	por
 24	25	xed	xed	la	firm	la
@@ -660,85 +660,85 @@ line	position	token	split_label	value	status	reading_word
 25	25	TH	TH	o	firm	capitulado
 25	26	YH	YH	y	firm	y
 25	27	zre	zre	que	firm	que
-26	1	beo	beo	e	tentative	[?1 letter]
-26	2	RS	RS	u	firm	uer
-26	3	RH	RH	e	firm	uer
-26	4	X	Xr	r	firm (look-alike X)	uer
+26	1	beo	beo	toda	firm	toda
+26	2	RS	RS	u	firm	uez
+26	3	RH	RH	e	firm	uez
+26	4	X	Xz	z	firm (look-alike X)	uez
 26	5	zre	zre	que	firm	que
-26	6	sim	sim	en	firm	en
-26	7	suh	suh	emperador	tentative	{?emperador}
+26	6	sim	siml	el	firm	el
+26	7	suh	suh	emperador	firm	emperador
 26	8	YH	YH	y	firm	y
 26	9	dem	dem	yo	firm	yo
 26	10	YH	YH	y	firm	y
-26	11	be	be	s	tentative	[?12 letters]
-26	12	ZH	ZH	e	firm	[?12 letters]
-26	13	RS	RS	u	firm	[?12 letters]
-26	14	KH	KH	i	firm	[?12 letters]
-26	15	bae	bae	si	firm	[?12 letters]
-26	16	RH	RH	e	firm	[?12 letters]
-26	17	B8	B8	r	firm	[?12 letters]
-26	18	ZH	ZH	e	firm	[?12 letters]
-26	19	ZO	ZO	m	firm	[?12 letters]
-26	20	TH	TH	o	firm	[?12 letters]
-26	21	PHI	PHI	s	firm	[?12 letters]
-26	22	B8	B8	r	firm	[?resistir]
-26	23	RH	RH	e	firm	[?resistir]
-26	24	bae	bae	si	firm	[?resistir]
-26	25	B8	B8	r	firm	[?resistir]
-26	26	no	no	t	firm	[?resistir]
-26	27	KH	KH	i	firm	[?resistir]
-26	28	X	Xr	r	firm (look-alike X)	[?resistir]
-26	29	sif	sif		unread group	[?1 group]
-27	1	zuy	zuy	frances	tentative	{?frances}
+26	11	be	be	suycos	firm	suycos
+26	12	ZH	ZHq	q	firm	quisieremos
+26	13	RS	RS	u	firm	quisieremos
+26	14	KH	KH	i	firm	quisieremos
+26	15	bae	bae	si	firm	quisieremos
+26	16	RH	RH	e	firm	quisieremos
+26	17	B8	B8	r	firm	quisieremos
+26	18	ZH	ZH	e	firm	quisieremos
+26	19	ZO	ZO	m	firm	quisieremos
+26	20	TH	TH	o	firm	quisieremos
+26	21	PHI	PHI	s	firm	quisieremos
+26	22	B8	B8	r	firm	resistir
+26	23	RH	RH	e	firm	resistir
+26	24	bae	bae	si	firm	resistir
+26	25	B8	PHI	s	firm	resistir
+26	26	no	no	t	firm	resistir
+26	27	KH	KH	i	firm	resistir
+26	28	X	Xr	r	firm (look-alike X)	resistir
+26	29	sif	sifa	al	firm	al
+27	1	zuy	zuy	rey de francia	firm	rey
 27	2	YH	YH	y	firm	y
-27	3	sin	sin	es	firm (look-alike sin/sim)	[?10 letters]
-27	4	no	no	t	firm	[?10 letters]
-27	5	sin	sim	en	firm (look-alike sin/sim)	[?10 letters]
-27	6	sud	sud	de	firm	[?10 letters]
-27	7	B8	B8	r	firm	[?10 letters]
-27	8	sin	sin	es	firm (look-alike sin/sim)	[?10 letters]
+27	3	sin	sim	en	firm (look-alike sin/sim)	entender
+27	4	no	no	t	firm	entender
+27	5	sin	sim	en	firm (look-alike sin/sim)	entender
+27	6	sud	sud	de	firm	entender
+27	7	B8	B8	r	firm	entender
+27	8	sin	sim	en	firm (look-alike sin/sim)	en
 27	9	ZH	ZH	e	firm	echarle
 27	10	CD	CD	c	firm	echarle
 27	11	tok	tok	ha	firm	echarle
 27	12	B8	B8	r	firm	echarle
-27	13	PSI	PSI	t	firm	echarle
+27	13	PSI	PSI	l	firm	echarle
 27	14	RH	RH	e	firm	echarle
 27	15	sud	sud	de	firm	de
 27	16	teb	teb	italia	firm	Italia
-27	17	sin	sim	en	firm (look-alike sin/sim)	en
-27	18	pnk	pnk	ayuda	tentative	{?ayuda}
-27	19	B8	B8	r	firm	[?2 letters]
-27	20	Z	Z	a	firm	[?2 letters]
-27	21	ynb	ynb	ni	firm	ni
-27	22	san	san	ello	tentative	{?ello}
+27	17	sin	sim	en	firm (look-alike sin/sim)	[?el]
+27	18	pnk	pnk	ayuda	firm	ayudara
+27	19	B8	B8	r	firm	ayudara
+27	20	Z	Z	a	firm	ayudara
+27	21	ynb	ynbp	para	firm	para
+27	22	san	san	ello	firm	ello
 27	23	xnk	xnk	como	firm	como
 28	1	yob	yob	por	firm	por
-28	2	xed	xed	la	firm	las
-28	3	seg	seg	s	firm	las
-28	4	OT	OT	c	firm	capitulacio[?]
-28	5	Z	Z	a	firm	capitulacio[?]
-28	6	CT	CT	p	firm	capitulacio[?]
-28	7	KH	KH	i	firm	capitulacio[?]
-28	8	no	no	t	firm	capitulacio[?]
-28	9	RS	RS	u	firm	capitulacio[?]
-28	10	xed	xed	la	firm	capitulacio[?]
-28	11	CD	CD	c	firm	capitulacio[?]
-28	12	KH	KH	i	firm	capitulacio[?]
-28	13	TH	TH	o	firm	capitulacio[?]
-28	14	ZO	ZO	m	firm	[?1 letter]
-28	15	sin	sim	en	firm (look-alike sin/sim)	en
-28	16	yed	yed	obligado	tentative	{?obligado}
+28	2	xed	xed	la	firm	la
+28	3	seg	seg	dicha	firm	dicha
+28	4	OT	OT	c	firm	[?capitulacion]
+28	5	Z	Z	a	firm	[?capitulacion]
+28	6	CT	CT	p	firm	[?capitulacion]
+28	7	KH	KH	i	firm	[?capitulacion]
+28	8	no	no	t	firm	[?capitulacion]
+28	9	RS	RS	u	firm	[?capitulacion]
+28	10	xed	xed	la	firm	[?capitulacion]
+28	11	CD	CD	c	firm	[?capitulacion]
+28	12	KH	KH	i	firm	[?capitulacion]
+28	13	TH	TH	o	firm	[?capitulacion]
+28	14	ZO	ZO	m	firm	[?capitulacion]
+28	15	sin	sin	es	firm (look-alike sin/sim)	es
+28	16	yed	yed	obligado	firm	obligado
 28	17	yob	yob	por	firm	porque
 28	18	zre	zre	que	firm	porque
 28	19	suo	suo	esta	firm	esta
-28	20	yin	yin	es	firm	es
+28	20	yin	yinz	paz	firm	paz
 28	21	zre	zre	que	firm	que
-29	1	ZH	ZH	e	firm	[?quiere]
-29	2	RS	RS	u	firm	[?quiere]
-29	3	KH	KH	i	firm	[?quiere]
-29	4	RH	RH	e	firm	[?quiere]
-29	5	B8	B8	r	firm	[?quiere]
-29	6	ZH	ZH	e	firm	[?quiere]
+29	1	ZH	ZHq	q	firm	quiere
+29	2	RS	RS	u	firm	quiere
+29	3	KH	KH	i	firm	quiere
+29	4	RH	RH	e	firm	quiere
+29	5	B8	B8	r	firm	quiere
+29	6	ZH	ZH	e	firm	quiere
 29	7	Z	Z	a	firm	asentar
 29	8	bne	bne	se	firm	asentar
 29	9	FH	FH	n	firm	asentar
@@ -746,25 +746,25 @@ line	position	token	split_label	value	status	reading_word
 29	11	Z	Z	a	firm	asentar
 29	12	B8	B8	r	firm	asentar
 29	13	rak	rak	con	firm	con
-29	14	suq	suq	franceses	tentative	{?franceses}
+29	14	suq	suq	franceses	firm	franceses
 29	15	xed	xed	la	firm	la
-29	16	tok	tok	ha	firm	[?1 group, 3 letters]
-29	17	X	Xs	s	firm (look-alike X)	[?1 group, 3 letters]
-29	18	oso	oso		unread group	[?1 group, 3 letters]
+29	16	tok	tok	ha	firm	haze
+29	17	X	Xz	z	firm (look-alike X)	haze
+29	18	oso	oso	e	firm	haze
 29	19	yob	yob	por	firm	por
-29	20	sey	sey		unread group	[?1 group, 7 letters]
-29	21	B8	B8	r	firm	[?1 group, 7 letters]
-29	22	OT	OT	c	firm	[?1 group, 7 letters]
-29	23	Z	Z	a	firm	[?1 group, 7 letters]
-29	24	YH	YH	y	firm	[?1 group, 7 letters]
-29	25	CT	CT	p	firm	[?1 group, 7 letters]
-29	26	LAM	LAM	an	tentative	[?1 group, 7 letters]
-30	1	B8	B8	r	firm	[?1 group, 2 letters]
-30	2	Z	Z	a	firm	[?1 group, 2 letters]
-30	3	xnz	xnz		unread group	[?1 group, 2 letters]
+29	20	sey	sey	fue	firm	fuerca
+29	21	B8	B8	r	firm	fuerca
+29	22	OT	OT	c	firm	fuerca
+29	23	Z	Z	a	firm	fuerca
+29	24	YH	YH	y	firm	y
+29	25	CT	CT	p	firm	pu-
+29	26	LAM	LAMu	u	firm	pu-
+30	1	B8	B8	r	firm	ra
+30	2	Z	Z	a	firm	ra
+30	3	xnz	xnz	necesidad	firm	necesidad
 30	4	sud	sud	de	firm	de
 30	5	bao	bao	todo	firm	todo
-30	6	soo	soo	do	firm	[?2 letters]
+30	6	soo	soo	esto	firm	esto
 30	7	xnk	xnk	como	firm	como
 30	8	V	V		unvalued sign	[?sign]
 30	9	RH	RH	e	firm	[?]e
@@ -784,19 +784,19 @@ line	position	token	split_label	value	status	reading_word
 30	23	RH	RH	e	firm	creere
 30	24	bae	bae	si	firm	sino
 30	25	xeb	xeb	no	firm	sino
-31	1	xad	xad	lo	tentative	{?lo}
+31	1	xad	xad	lo	firm	lo
 31	2	zre	zre	que	firm	que
 31	3	yob	yob	por	firm	por
-31	4	ynh	ynh		unread group	[?1 group, 1 sign, 7 letters]
-31	5	doc	doc	cart	tentative	[?1 group, 1 sign, 7 letters]
-31	6	RH	RH	e	firm	[?1 group, 1 sign, 7 letters]
-31	7	B8	B8	r	firm	[?1 group, 1 sign, 7 letters]
-31	8	ZH	ZH	e	firm	[?1 group, 1 sign, 7 letters]
-31	9	7H	7H		unvalued sign	[?1 group, 1 sign, 7 letters]
-31	10	yaz	yaz	antes	tentative	{?antes}
-31	11	dah	dah	esto	tentative	{?esto}
+31	4	ynh	ynh	obra	firm	obra
+31	5	doc	doc	ui	firm	uiere
+31	6	RH	RH	e	firm	uiere
+31	7	B8	B8	r	firm	uiere
+31	8	ZH	ZH	e	firm	uiere
+31	9	7H	7H		unvalued sign	[?sign]
+31	10	yaz	yaz	pero	firm	pero
+31	11	dah	dah	uos	firm	uos
 31	12	pif	pif	al	firm	al
-31	13	yem	yem	papa	tentative	{?papa}
+31	13	yem	yem	papa	firm	papa
 31	14	xeb	xeb	no	firm	no
 31	15	gso	gso	l	firm	le
 31	16	RH	RH	e	firm	le
@@ -806,29 +806,29 @@ line	position	token	split_label	value	status	reading_word
 31	20	YH	YH	y	firm	haueys
 31	21	PHI	PHI	s	firm	haueys
 31	22	sud	sud	de	firm	de
-32	1	Z	Z	a	firm	[?6 letters]
-32	2	PHI	PHI	s	firm	[?6 letters]
-32	3	TH	TH	o	firm	[?6 letters]
-32	4	ZO	ZO	m	firm	[?6 letters]
-32	5	Z	Z	a	firm	[?6 letters]
-32	6	B8	B8	r	firm	[?6 letters]
-32	7	xed	xed	la	firm	la
-32	8	sud	sud	de	firm	[?1 group, 12 letters]
-32	9	X	Xs	s	firm (look-alike X)	[?1 group, 12 letters]
-32	10	KH	KH	i	firm	[?1 group, 12 letters]
-32	11	X	Xs	s	firm (look-alike X)	[?1 group, 12 letters]
-32	12	OT	OT	c	firm	[?1 group, 12 letters]
-32	13	Z	Z	a	firm	[?1 group, 12 letters]
-32	14	xed	xed	la	firm	[?1 group, 12 letters]
-32	15	N8	N8	b	firm	[?1 group, 12 letters]
-32	16	B8	B8	r	firm	[?1 group, 12 letters]
-32	17	Z	Z	a	firm	[?1 group, 12 letters]
-32	18	xez	xez		unread group	[?1 group, 12 letters]
+32	1	Z	Z	a	firm	asomar
+32	2	PHI	PHI	s	firm	asomar
+32	3	TH	TH	o	firm	asomar
+32	4	ZO	ZO	m	firm	asomar
+32	5	Z	Z	a	firm	asomar
+32	6	B8	B8	r	firm	asomar
+32	7	xed	xed	la	firm	[?ni]
+32	8	sud	sud	de	firm	[?dezir]
+32	9	X	Xs	s	firm (look-alike X)	[?dezir]
+32	10	KH	KH	i	firm	[?dezir]
+32	11	X	Xs	s	firm (look-alike X)	[?dezir]
+32	12	OT	OT	c	firm	[?palabra]
+32	13	Z	Z	a	firm	[?palabra]
+32	14	xed	xed	la	firm	[?palabra]
+32	15	N8	N8	b	firm	[?palabra]
+32	16	B8	B8	r	firm	[?palabra]
+32	17	Z	Z	a	firm	[?palabra]
+32	18	xez	xez	ninguna	firm	ninguna
 32	19	sud	sud	de	firm	de
-32	20	soo	soo	do	firm	[?2 letters]
+32	20	soo	soo	esto	firm	esto
 32	21	bae	bae	si	firm	sino
 32	22	xeb	xeb	no	firm	sino
-32	23	baf	baf	solo	tentative	{?solo}
+32	23	baf	baf	solo	firm	solo
 32	24	sin	sin	es	firm (look-alike sin/sim)	esfor-
 32	25	MH	MH	f	firm	esfor-
 32	26	TH	TH	o	firm	esfor-
@@ -872,7 +872,7 @@ line	position	token	split_label	value	status	reading_word
 34	12	B8	B8	r	firm	aura
 34	13	Z	Z	a	firm	aura
 34	14	sud	sud	de	firm	de
-34	15	be	be	s	tentative	[?1 letter]
+34	15	be	be	suycos	firm	suycos
 34	16	tok	tok	ha	firm	hauemos
 34	17	RS	RS	u	firm	hauemos
 34	18	RH	RH	e	firm	hauemos
@@ -896,7 +896,7 @@ line	position	token	split_label	value	status	reading_word
 35	8	Z	Z	a	firm	enflaquesca
 35	9	pin	pin		unread group	[?2 groups]
 35	10	pud	pud		unread group	[?2 groups]
-35	11	sio	sio	esta	tentative	{?esta}
+35	11	sio	sio	esta	firm	esta
 35	12	rak	rak	con	firm	con
 35	13	xom	xom		unread group	[?1 group, 9 letters]
 35	14	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 9 letters]
@@ -908,42 +908,42 @@ line	position	token	split_label	value	status	reading_word
 35	20	YH	YH	y	firm	[?1 group, 9 letters]
 35	21	Z	Z	a	firm	[?1 group, 9 letters]
 36	1	ynb	ynb	ni	firm	ni
-36	2	ZO	ZO	m	firm	[?6 letters]
-36	3	TH	TH	o	firm	[?6 letters]
-36	4	yin	yin	es	firm	[?6 letters]
-36	5	gso	gso	l	firm	[?6 letters]
-36	6	RH	RH	e	firm	[?6 letters]
+36	2	ZO	ZO	m	firm	[?8 letters]
+36	3	TH	TH	o	firm	[?8 letters]
+36	4	yin	yinpt	pues	firm	[?8 letters]
+36	5	gso	gso	l	firm	[?8 letters]
+36	6	RH	RH	e	firm	[?8 letters]
 36	7	zre	zre	que	firm	que
 36	8	GS	GS	d	firm	damos
 36	9	Z	Z	a	firm	damos
 36	10	ZO	ZO	m	firm	damos
 36	11	TH	TH	o	firm	damos
 36	12	PHI	PHI	s	firm	damos
-36	13	bon	bon		unread group	[?2 groups, 6 letters]
-36	14	PHI	PHI	s	firm	[?2 groups, 6 letters]
-36	15	yom	yom		unread group	[?2 groups, 6 letters]
-36	16	PHI	PHI	s	firm	[?2 groups, 6 letters]
-36	17	QH	QH	x	firm	[?2 groups, 6 letters]
-36	18	TH	TH	o	firm	[?2 groups, 6 letters]
-36	19	KH	KH	i	firm	[?2 groups, 6 letters]
-36	20	Z	Z	a	firm	[?2 groups, 6 letters]
-36	21	xeb	xeb	no	firm	nos
-36	22	PHI	PHI	s	firm	nos
+36	13	bon	bon	tanto	firm	tantos
+36	14	PHI	PHI	s	firm	tantos
+36	15	yom	yom	principe	firm	principes
+36	16	PHI	PHI	s	firm	principes
+36	17	QH	QH	x	firm	[?xpianos]
+36	18	TH	TH	o	firm	[?xpianos]
+36	19	KH	KH	i	firm	[?xpianos]
+36	20	Z	Z	a	firm	[?xpianos]
+36	21	xeb	xeb	no	firm	[?xpianos]
+36	22	PHI	PHI	s	firm	[?xpianos]
 36	23	YH	YH	y	firm	y
 36	24	sin	sim	en	firm (look-alike sin/sim)	en
 37	1	zek	zek		unread group	[?1 group]
 37	2	zre	zre	que	firm	que
 37	3	gso	gso	l	firm	le
 37	4	RH	RH	e	firm	le
-37	5	tok	tok	ha	firm	[?hauemos]
-37	6	RS	RS	u	firm	[?hauemos]
-37	7	RH	RH	e	firm	[?hauemos]
-37	8	ZO	ZO	m	firm	[?hauemos]
+37	5	tok	tok	ha	firm	hauemos
+37	6	RS	RS	u	firm	hauemos
+37	7	RH	RH	e	firm	hauemos
+37	8	ZO	ZO	m	firm	hauemos
 37	9	DH	DH	n	firm	
-37	10	TH	TH	o	firm	[?hauemos]
-37	11	PHI	PHI	s	firm	[?hauemos]
+37	10	TH	TH	o	firm	hauemos
+37	11	PHI	PHI	s	firm	hauemos
 37	12	sud	sud	de	firm	de
-37	13	pnk	pnk	ayuda	tentative	[?ayudar]
+37	13	pnk	pnk	ayuda	firm	[?ayudar]
 37	14	PHI	PHI	s	firm	[?ayudar]
 37	15	YH	YH	y	firm	y
 37	16	CT	CT	p	firm	poner
@@ -992,21 +992,21 @@ line	position	token	split_label	value	status	reading_word
 39	10	sud	sud	de	firm	ofender
 39	11	X	Xr	r	firm (look-alike X)	ofender
 39	12	YH	YH	y	firm	y
-39	13	yin	yin	es	firm	es
+39	13	yin	yinpt	pues	firm	pues
 39	14	rak	rak	con	firm	con
-39	15	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
-39	16	pnk	pnk	ayuda	tentative	{?ayuda}
+39	15	sin	sin	es	firm (look-alike sin/sim)	es
+39	16	pnk	pnk	ayuda	firm	ayuda
 39	17	sud	sud	de	firm	de
 39	18	sod	sod	dio	firm	Dios
 39	19	PHI	PHI	s	firm	Dios
 39	20	YH	YH	y	firm	y
 39	21	sud	sud	de	firm	de
-39	22	bon	bon		unread group	[?2 groups, 4 letters]
-39	23	PHI	PHI	s	firm	[?2 groups, 4 letters]
-39	24	yom	yom		unread group	[?2 groups, 4 letters]
-39	25	PHI	PHI	s	firm	[?2 groups, 4 letters]
-39	26	RS	RS	u	firm	[?2 groups, 4 letters]
-39	27	RH	RH	e	firm	[?2 groups, 4 letters]
+39	22	bon	bon	tanto	firm	tantos
+39	23	PHI	PHI	s	firm	tantos
+39	24	yom	yom	principe	firm	principes
+39	25	PHI	PHI	s	firm	principes
+39	26	RS	RS	u	firm	[?2 letters]
+39	27	RH	RH	e	firm	[?2 letters]
 40	1	no	no	t	firm	[?2 groups, 5 letters]
 40	2	Z	Z	a	firm	[?2 groups, 5 letters]
 40	3	DH	DH	n	firm	[?2 groups, 5 letters]
@@ -1016,29 +1016,29 @@ line	position	token	split_label	value	status	reading_word
 40	7	xeb	xeb	no	firm	no
 40	8	gso	gso	l	firm	le
 40	9	RH	RH	e	firm	le
-40	10	sin	sim	en	firm (look-alike sin/sim)	[?28 letters]
-40	11	OS	OS	le	tentative	[?28 letters]
-40	12	Z	Z	a	firm	[?28 letters]
-40	13	DH	DH	n	firm	[?28 letters]
-40	14	LO	LO	t	firm	[?28 letters]
-40	15	RH	RH	e	firm	[?28 letters]
-40	16	FH	FH	n	firm	[?28 letters]
-40	17	soo	soo	do	firm	[?28 letters]
-40	18	PHI	PHI	s	firm	[?28 letters]
-40	19	CT	CT	p	firm	[?28 letters]
-40	20	B8	B8	r	firm	[?28 letters]
-40	21	KH	KH	i	firm	[?28 letters]
-40	22	EQ	EQ	ma	tentative	[?28 letters]
-40	23	X	Xr	r	firm (look-alike X)	[?28 letters]
-40	24	KH	KH	i	firm	[?28 letters]
-40	25	OS	OS	le	tentative	[?28 letters]
-40	26	BO	BO	i	firm	[?28 letters]
-40	27	TH	TH	o	firm	[?28 letters]
-40	28	PHI	PHI	s	firm	[?28 letters]
-40	29	no	no	t	firm	[?28 letters]
-40	30	RS	RS	u	firm	[?28 letters]
-40	31	B8	B8	r	firm	[?28 letters]
-40	32	ZH	ZH	e	firm	[?28 letters]
+40	10	sin	sim	en	firm (look-alike sin/sim)	[?30 letters]
+40	11	OS	OS	le	tentative	[?30 letters]
+40	12	Z	Z	a	firm	[?30 letters]
+40	13	DH	DH	n	firm	[?30 letters]
+40	14	LO	LO	t	firm	[?30 letters]
+40	15	RH	RH	e	firm	[?30 letters]
+40	16	FH	FH	n	firm	[?30 letters]
+40	17	soo	soo	esto	firm	[?30 letters]
+40	18	PHI	PHI	s	firm	[?30 letters]
+40	19	CT	CT	p	firm	[?30 letters]
+40	20	B8	B8	r	firm	[?30 letters]
+40	21	KH	KH	i	firm	[?30 letters]
+40	22	EQ	EQ	ma	tentative	[?30 letters]
+40	23	X	Xr	r	firm (look-alike X)	[?30 letters]
+40	24	KH	KH	i	firm	[?30 letters]
+40	25	OS	OS	le	tentative	[?30 letters]
+40	26	BO	BO	i	firm	[?30 letters]
+40	27	TH	TH	o	firm	[?30 letters]
+40	28	PHI	PHI	s	firm	[?30 letters]
+40	29	no	no	t	firm	[?30 letters]
+40	30	RS	RS	u	firm	[?30 letters]
+40	31	B8	B8	r	firm	[?30 letters]
+40	32	ZH	ZH	e	firm	[?30 letters]
 41	1	Z	Z	a	firm	[?4 letters]
 41	2	GS	GS	d	firm	[?4 letters]
 41	3	TH	TH	o	firm	[?4 letters]
@@ -1063,13 +1063,13 @@ line	position	token	split_label	value	status	reading_word
 41	22	sod	sod	dio	firm	[?1 group, 5 letters]
 41	23	sin	sin	es	firm (look-alike sin/sim)	es
 41	24	sud	sud	de	firm	de
-41	25	yem	yem	papa	tentative	{?papa}
+41	25	yem	yem	papa	firm	papa
 42	1	KH	KH	i	firm	Iulio
 42	2	RS	RS	u	firm	Iulio
 42	3	gso	gso	l	firm	Iulio
 42	4	BO	BO	i	firm	Iulio
 42	5	TH	TH	o	firm	Iulio
-42	6	yaz	yaz	antes	tentative	{?antes}
+42	6	yaz	yaz	pero	firm	pero
 42	7	pif	pif	al	firm	al
 42	8	MH	MH	f	firm	fin
 42	9	KH	KH	i	firm	fin
@@ -1096,8 +1096,8 @@ line	position	token	split_label	value	status	reading_word
 43	1	PHI	PHI	s	firm	[?4 letters]
 43	2	sod	sod	dio	firm	[?4 letters]
 43	3	Z	Z	a	firm	a
-43	4	xad	xad	lo	tentative	{?los}
-43	5	PHI	PHI	s	firm	{?los}
+43	4	xad	xad	lo	firm	los
+43	5	PHI	PHI	s	firm	los
 43	6	sud	sud	de	firm	de
 43	7	xed	xed	la	firm	la
 43	8	xif	xif	liga	firm	liga
@@ -1108,8 +1108,8 @@ line	position	token	split_label	value	status	reading_word
 43	13	X	Xr	r	firm (look-alike X)	[?1 group, 6 letters]
 43	14	O	O	a	firm	[?1 group, 6 letters]
 43	15	bnz	bnz		unread group	[?1 group, 6 letters]
-43	16	xad	xad	lo	tentative	{?los}
-43	17	PHI	PHI	s	firm	{?los}
+43	16	xad	xad	lo	firm	los
+43	17	PHI	PHI	s	firm	los
 43	18	sin	sim	en	firm (look-alike sin/sim)	[?3 letters]
 43	19	PHI	PHI	s	firm	[?3 letters]
 43	20	sud	sud	de	firm	de
@@ -1121,7 +1121,7 @@ line	position	token	split_label	value	status	reading_word
 43	26	O	O	a	firm	yglia
 44	1	YH	YH	y	firm	y
 44	2	zre	zre	que	firm	que
-44	3	peb	peb		unread group	[?1 group]
+44	3	peb	peb	assi	firm	assi
 44	4	bos	bos	tengo	firm	tengo
 44	5	yob	yob	por	firm	por
 44	6	OT	OT	c	firm	certisimo
@@ -1137,10 +1137,10 @@ line	position	token	split_label	value	status	reading_word
 44	16	byo	byo		unread group	[?2 groups]
 44	17	pnd	pnd		unread group	[?2 groups]
 44	18	bae	bae	si	firm	si
-44	19	xad	xad	lo	tentative	{?los}
-44	20	PHI	PHI	s	firm	{?los}
-44	21	rie	rie	confederado	tentative	{?confederados}
-44	22	PHI	PHI	s	firm	{?confederados}
+44	19	xad	xad	lo	firm	los
+44	20	PHI	PHI	s	firm	los
+44	21	rie	rie	confederado	firm	confederados
+44	22	PHI	PHI	s	firm	confederados
 44	23	CT	CT	p	firm	perseue-
 44	24	RH	RH	e	firm	perseue-
 44	25	X	Xr	r	firm (look-alike X)	perseue-
@@ -1153,9 +1153,9 @@ line	position	token	split_label	value	status	reading_word
 45	5	TH	TH	o	firm	ramos
 45	6	PHI	PHI	s	firm	ramos
 45	7	sin	sim	en	firm (look-alike sin/sim)	en
-45	8	xad	xad	lo	tentative	{?lo}
+45	8	xad	xad	lo	firm	lo
 45	9	zre	zre	que	firm	que
-45	10	sio	sio	esta	tentative	{?esta}
+45	10	sio	sio	esta	firm	esta
 45	11	Z	Z	a	firm	asentado
 45	12	bne	bne	se	firm	asentado
 45	13	FH	FH	n	firm	asentado
@@ -1179,7 +1179,7 @@ line	position	token	split_label	value	status	reading_word
 46	3	Z	Z	a	firm	cia
 46	4	zre	zre	que	firm	que
 46	5	sep	sep		unread group	[?1 group]
-46	6	xad	xad	lo	tentative	{?lo}
+46	6	xad	xad	lo	firm	lo
 46	7	MH	MH	f	firm	[?7 letters]
 46	8	ZH	ZH	e	firm	[?7 letters]
 46	9	X	Xr	r	firm (look-alike X)	[?7 letters]
@@ -1189,7 +1189,7 @@ line	position	token	split_label	value	status	reading_word
 46	13	PHI	PHI	s	firm	[?7 letters]
 46	14	YH	YH	y	firm	y
 46	15	zre	zre	que	firm	que
-46	16	baf	baf	solo	tentative	{?solo}
+46	16	baf	baf	solo	firm	solo
 46	17	tok	tok	ha	firm	ha
 46	18	CT	CT	p	firm	[?permitido]
 46	19	RH	RH	e	firm	[?permitido]
@@ -1199,7 +1199,7 @@ line	position	token	split_label	value	status	reading_word
 46	23	BO	BO	i	firm	[?permitido]
 46	24	GS	GS	d	firm	[?permitido]
 46	25	TH	TH	o	firm	[?permitido]
-46	26	sio	sio	esta	tentative	{?esta}
+46	26	sio	sio	esta	firm	esta
 46	27	B8	B8	r	firm	[?3 letters]
 46	28	RH	RH	e	firm	[?3 letters]
 46	29	RS	RS	u	firm	[?3 letters]
@@ -1235,24 +1235,24 @@ line	position	token	split_label	value	status	reading_word
 47	30	sin	sin	es	firm (look-alike sin/sim)	seruidores
 48	1	YH	YH	y	firm	y
 48	2	zre	zre	que	firm	que
-48	3	yin	yin	es	firm	es
-48	4	be	be	s	tentative	[?1 group, 14 letters]
-48	5	zuf	zuf		unread group	[?1 group, 14 letters]
-48	6	FH	FH	n	firm	[?1 group, 14 letters]
-48	7	no	no	t	firm	[?1 group, 14 letters]
-48	8	TH	TH	o	firm	[?1 group, 14 letters]
-48	9	X	Xr	r	firm (look-alike X)	[?1 group, 14 letters]
-48	10	FH	FH	n	firm	[?1 group, 14 letters]
-48	11	O	O	a	firm	[?1 group, 14 letters]
-48	12	B8	B8	r	firm	[?1 group, 14 letters]
-48	13	Z	Z	a	firm	[?1 group, 14 letters]
-48	14	RS	RS	u	firm	[?1 group, 14 letters]
-48	15	ZH	ZH	e	firm	[?1 group, 14 letters]
-48	16	ynb	ynb	ni	firm	[?1 group, 14 letters]
-48	17	X	Xs	s	firm (look-alike X)	[?1 group, 14 letters]
+48	3	yin	yinpt	pues	firm	pues
+48	4	be	be	suycos	firm	suycos
+48	5	zuf	zuf	quiere	firm	quieren
+48	6	FH	FH	n	firm	quieren
+48	7	no	no	t	firm	tornar
+48	8	TH	TH	o	firm	tornar
+48	9	X	Xr	r	firm (look-alike X)	tornar
+48	10	FH	FH	n	firm	tornar
+48	11	O	O	a	firm	tornar
+48	12	B8	B8	r	firm	tornar
+48	13	Z	Z	a	firm	a
+48	14	RS	RS	u	firm	[?uenir]
+48	15	ZH	ZH	e	firm	[?uenir]
+48	16	ynb	ynb	ni	firm	[?uenir]
+48	17	X	Xs	s	firm (look-alike X)	[?uenir]
 48	18	YH	YH	y	firm	y
 48	19	sin	sin	es	firm (look-alike sin/sim)	es
-48	20	suh	suh	emperador	tentative	{?emperador}
+48	20	suh	suh	emperador	firm	emperador
 48	21	GS	GS	d	firm	[?4 letters]
 48	22	TH	TH	o	firm	[?4 letters]
 48	23	X	Xs	s	firm (look-alike X)	[?4 letters]
@@ -1288,7 +1288,7 @@ line	position	token	split_label	value	status	reading_word
 49	23	TH	TH	o	firm	perseuero
 49	24	bu	bu		unread group	[?1 group]
 49	25	sin	sim	en	firm (look-alike sin/sim)	en
-50	1	xad	xad	lo	tentative	{?lo}
+50	1	xad	xad	lo	firm	lo
 50	2	sud	sud	de	firm	de
 50	3	tok	tok	ha	firm	[?2 groups, 3 letters]
 50	4	TH	TH	o	firm	[?2 groups, 3 letters]
@@ -1300,14 +1300,14 @@ line	position	token	split_label	value	status	reading_word
 50	10	X	Xs	s	firm (look-alike X)	[?3 letters]
 50	11	RH	RH	e	firm	[?3 letters]
 50	12	B8	B8	r	firm	[?3 letters]
-50	13	pnk	pnk	ayuda	tentative	{?ayudara}
-50	14	B8	B8	r	firm	{?ayudara}
-50	15	O	O	a	firm	{?ayudara}
+50	13	pnk	pnk	ayuda	firm	ayudara
+50	14	B8	B8	r	firm	ayudara
+50	15	O	O	a	firm	ayudara
 50	16	RH	RH	e	firm	echar
 50	17	OT	OT	c	firm	echar
 50	18	tok	tok	ha	firm	echar
 50	19	X	Xr	r	firm (look-alike X)	echar
-50	20	suq	suq	franceses	tentative	{?franceses}
+50	20	suq	suq	franceses	firm	franceses
 50	21	sud	sud	de	firm	de
 50	22	teb	teb	italia	firm	Italia
 50	23	zre	zre	que	firm	que
@@ -1324,7 +1324,7 @@ line	position	token	split_label	value	status	reading_word
 51	8	X	Xz	z	firm (look-alike X)	[?hazer]
 51	9	RH	RH	e	firm	[?hazer]
 51	10	X	Xs	s	firm (look-alike X)	[?hazer]
-51	11	xad	xad	lo	tentative	{?lo}
+51	11	xad	xad	lo	firm	lo
 51	12	xoo	xoo	mi	firm	mismo
 51	13	PHI	PHI	s	firm	mismo
 51	14	ZO	ZO	m	firm	mismo
@@ -1347,7 +1347,7 @@ line	position	token	split_label	value	status	reading_word
 52	4	OT	OT	c	firm	uerco
 52	5	TH	TH	o	firm	uerco
 52	6	YH	YH	y	firm	y
-52	7	ynh	ynh		unread group	[?1 group, 10 letters]
+52	7	ynh	ynhu		unread group	[?1 group, 10 letters]
 52	8	PHI	PHI	s	firm	[?1 group, 10 letters]
 52	9	PHI	PHI	s	firm	[?1 group, 10 letters]
 52	10	TH	TH	o	firm	[?1 group, 10 letters]
@@ -1368,7 +1368,7 @@ line	position	token	split_label	value	status	reading_word
 52	25	bin	bin		unread group	[?2 groups]
 52	26	zoh	zoh		unread group	[?2 groups]
 53	1	AH	AH	g	firm	[?1 group, 12 letters]
-53	2	xad	xad	lo	tentative	[?1 group, 12 letters]
+53	2	xad	xad	lo	firm	[?1 group, 12 letters]
 53	3	X	Xr	r	firm (look-alike X)	[?1 group, 12 letters]
 53	4	BO	BO	i	firm	[?1 group, 12 letters]
 53	5	YH	YH	y	firm	[?1 group, 12 letters]
@@ -1391,11 +1391,11 @@ line	position	token	split_label	value	status	reading_word
 53	22	sin	sim	en	firm (look-alike sin/sim)	haziendo
 53	23	GS	GS	d	firm	haziendo
 53	24	TH	TH	o	firm	haziendo
-53	25	xad	xad	lo	tentative	{?lo}
-53	26	peb	peb		unread group	[?2 groups]
-53	27	bon	bon		unread group	[?2 groups]
+53	25	xad	xad	lo	firm	lo
+53	26	peb	peb	assi	firm	assi
+53	27	bon	bon	tanto	firm	tanto
 53	28	sud	sud	de	firm	de
-53	29	xad	xad	lo	tentative	{?lo}
+53	29	xad	xad	lo	firm	lo
 54	1	rok	rok	s	tentative	[?16 letters]
 54	2	B8	B8	r	firm	[?16 letters]
 54	3	KH	KH	i	firm	[?16 letters]
@@ -1422,29 +1422,29 @@ line	position	token	split_label	value	status	reading_word
 54	24	sud	sud	de	firm	considere
 54	25	B8	B8	r	firm	considere
 54	26	RH	RH	e	firm	considere
-54	27	piq	piq		unread group	[?1 group]
+54	27	piq	piq	bien	firm	bien
 55	1	zre	zre	que	firm	que
 55	2	bae	bae	si	firm	si
-55	3	pif	pif	al	firm	alg[?]
-55	4	AH	AH	g	firm	alg[?]
-55	5	dif	dif		unread group	[?1 group, 1 letter]
-55	6	yin	yin	es	firm	[?1 group, 1 letter]
-55	7	bne	bne	se	firm	[?10 letters]
-55	8	MH	MH	f	firm	[?10 letters]
-55	9	RS	RS	u	firm	[?10 letters]
-55	10	B8	B8	r	firm	[?10 letters]
-55	11	Z	Z	a	firm	[?10 letters]
-55	12	CT	CT	p	firm	[?10 letters]
-55	13	RS	RS	u	firm	[?10 letters]
-55	14	RH	RH	e	firm	[?10 letters]
+55	3	pif	pif	al	firm	alguna
+55	4	AH	AH	g	firm	alguna
+55	5	dif	dif	una	firm	alguna
+55	6	yin	yinzt	paz	firm	[?12 letters]
+55	7	bne	bne	se	firm	[?12 letters]
+55	8	MH	MH	f	firm	[?12 letters]
+55	9	RS	RS	u	firm	[?12 letters]
+55	10	B8	B8	r	firm	[?12 letters]
+55	11	Z	Z	a	firm	[?12 letters]
+55	12	CT	CT	p	firm	[?12 letters]
+55	13	RS	RS	u	firm	[?12 letters]
+55	14	RH	RH	e	firm	[?12 letters]
 55	15	sud	sud	de	firm	de
 55	16	tok	tok	ha	firm	hauer
 55	17	RS	RS	u	firm	hauer
 55	18	RH	RH	e	firm	hauer
 55	19	B8	B8	r	firm	hauer
 55	20	rak	rak	con	firm	con
-55	21	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
-55	22	zuy	zuy	frances	tentative	{?frances}
+55	21	sin	sin	es	firm (look-alike sin/sim)	[?el]
+55	22	zuy	zuy	rey de francia	firm	rey
 55	23	sin	sin	es	firm (look-alike sin/sim)	[?7 letters]
 55	24	sin	sin	es	firm (look-alike sin/sim)	[?7 letters]
 55	25	no	no	t	firm	[?7 letters]
@@ -1454,12 +1454,12 @@ line	position	token	split_label	value	status	reading_word
 56	2	TH	TH	o	firm	
 56	3	bao	bao	todo	firm	todos
 56	4	PHI	PHI	s	firm	todos
-56	5	xad	xad	lo	tentative	{?los}
-56	6	PHI	PHI	s	firm	{?los}
-56	7	rie	rie	confederado	tentative	{?confederados}
-56	8	PHI	PHI	s	firm	{?confederados}
+56	5	xad	xad	lo	firm	los
+56	6	PHI	PHI	s	firm	los
+56	7	rie	rie	confederado	firm	confederados
+56	8	PHI	PHI	s	firm	confederados
 56	9	sin	sim	en	firm (look-alike sin/sim)	en
-56	10	sen	sen	ella	tentative	{?ella}
+56	10	sen	sen	ella	firm	ella
 56	11	yob	yob	por	firm	porque
 56	12	zre	zre	que	firm	porque
 56	13	xed	xed	la	firm	la
@@ -1469,7 +1469,7 @@ line	position	token	split_label	value	status	reading_word
 56	17	SUPNO	SUPNO		unvalued sign	[?1 sign, 5 letters]
 56	18	PHI	PHI	s	firm	[?1 sign, 5 letters]
 56	19	TH	TH	o	firm	[?1 sign, 5 letters]
-56	20	xad	xad	lo	tentative	[?1 sign, 5 letters]
+56	20	xad	xad	lo	firm	[?1 sign, 5 letters]
 56	21	xeb	xeb	no	firm	no
 56	22	bae	bae	si	firm	[?7 letters]
 56	23	X	Xr	r	firm (look-alike X)	[?7 letters]
@@ -1483,7 +1483,7 @@ line	position	token	split_label	value	status	reading_word
 57	5	X	Xs	s	firm (look-alike X)	
 57	6	pne	pne		unread group	dar
 57	7	pif	pif	al	firm	al
-57	8	zuy	zuy	frances	tentative	{?frances}
+57	8	zuy	zuy	rey de francia	firm	rey
 57	9	ynb	ynb	ni	firm	ni
 57	10	CT	CT	p	firm	poder
 57	11	TH	TH	o	firm	poder
@@ -1497,7 +1497,7 @@ line	position	token	split_label	value	status	reading_word
 57	19	X	Xz	z	firm (look-alike X)	hazer
 57	20	RH	RH	e	firm	hazer
 57	21	B8	B8	r	firm	hazer
-57	22	xad	xad	lo	tentative	{?lo}
+57	22	xad	xad	lo	firm	lo
 57	23	zre	zre	que	firm	que
 57	24	SS	SS	q	firm	qui-
 57	25	RS	RS	u	firm	qui-
@@ -1511,10 +1511,10 @@ line	position	token	split_label	value	status	reading_word
 58	7	YH	YH	y	firm	y
 58	8	sef	sef		unread group	[?1 group]
 58	9	zre	zre	que	firm	que
-58	10	xad	xad	lo	tentative	{?lo}
+58	10	xad	xad	lo	firm	lo
 58	11	tok	tok	ha	firm	ha
-58	12	dam	dam		unread group	[?2 groups]
-58	13	sib	sib		unread group	[?2 groups]
+58	12	dam	dam	ya	firm	ya
+58	13	sib	sib		unread group	[?1 group]
 58	14	O	O	a	firm	apoderarse
 58	15	CT	CT	p	firm	apoderarse
 58	16	TH	TH	o	firm	apoderarse
@@ -1524,10 +1524,10 @@ line	position	token	split_label	value	status	reading_word
 58	20	B8	B8	r	firm	apoderarse
 58	21	bne	bne	se	firm	apoderarse
 58	22	see	see	del	firm	del
-58	23	sy	sy		unread group	[?2 groups, 2 letters]
-58	24	soe	soe		unread group	[?2 groups, 2 letters]
-58	25	YH	YH	y	firm	[?2 groups, 2 letters]
-58	26	MH	MH	f	firm	[?2 groups, 2 letters]
+58	23	sy	sy	estado	firm	estado
+58	24	soe	soe		unread group	[?1 group, 2 letters]
+58	25	YH	YH	y	firm	[?1 group, 2 letters]
+58	26	MH	MH	f	firm	[?1 group, 2 letters]
 59	1	gso	gso	l	firm	
 59	2	KH	KH	i	firm	
 59	3	O	O	a	firm	
@@ -1561,9 +1561,9 @@ line	position	token	split_label	value	status	reading_word
 60	2	TH	TH	o	firm	do
 60	3	yob	yob	por	firm	por
 60	4	by	by	ser	firm	ser
-60	5	bel	bel	senor	tentative	{?senor}
+60	5	bel	bel	senor	firm	senor
 60	6	sud	sud	de	firm	de
-60	7	xad	xad	lo	tentative	{?lo}
+60	7	xad	xad	lo	firm	lo
 60	8	sin	sin	es	firm (look-alike sin/sim)	espiritual
 60	9	CT	CT	p	firm	espiritual
 60	10	KH	KH	i	firm	espiritual
@@ -1599,17 +1599,17 @@ line	position	token	split_label	value	status	reading_word
 61	13	X	Xz	z	firm (look-alike X)	[?hazer]
 61	14	RH	RH	e	firm	[?hazer]
 61	15	X	Xs	s	firm (look-alike X)	[?hazer]
-61	16	xad	xad	lo	tentative	{?lo}
+61	16	xad	xad	lo	firm	lo
 61	17	zre	zre	que	firm	que
-61	18	ZH	ZH	e	firm	[?quisiere]
-61	19	RS	RS	u	firm	[?quisiere]
-61	20	KH	KH	i	firm	[?quisiere]
-61	21	bae	bae	si	firm	[?quisiere]
-61	22	RH	RH	e	firm	[?quisiere]
-61	23	X	Xr	r	firm (look-alike X)	[?quisiere]
-61	24	ZH	ZH	e	firm	[?quisiere]
-61	25	sin	sin	es	firm (look-alike sin/sim)	[?3 letters]
-61	26	beo	beo	e	tentative	[?3 letters]
+61	18	ZH	ZHqt	q	tentative	quisiere
+61	19	RS	RS	u	firm	quisiere
+61	20	KH	KH	i	firm	quisiere
+61	21	bae	bae	si	firm	quisiere
+61	22	RH	RH	e	firm	quisiere
+61	23	X	Xr	r	firm (look-alike X)	quisiere
+61	24	ZH	ZH	e	firm	quisiere
+61	25	sin	sin	es	firm (look-alike sin/sim)	es
+61	26	beo	beo	toda	firm	toda
 61	27	xed	xed	la	firm	la
 62	1	QH	QH	x	firm	Xpiandat
 62	2	CT	CT	p	firm	Xpiandat
@@ -1621,41 +1621,41 @@ line	position	token	split_label	value	status	reading_word
 62	8	no	no	t	firm	Xpiandat
 62	9	zre	zre	que	firm	que
 62	10	sin	sin	es	firm (look-alike sin/sim)	es
-62	11	xad	xad	lo	tentative	{?lo}
+62	11	xad	xad	lo	firm	lo
 62	12	zre	zre	que	firm	que
 62	13	tok	tok	ha	firm	ha
-62	14	xnp	xnp		unread group	[?1 group, 5 letters]
-62	15	PHI	PHI	s	firm	[?1 group, 5 letters]
-62	16	O	O	a	firm	[?1 group, 5 letters]
-62	17	xeb	xeb	no	firm	[?1 group, 5 letters]
-62	18	PHI	PHI	s	firm	[?1 group, 5 letters]
+62	14	xnp	xnp	mucho	firm	muchos
+62	15	PHI	PHI	s	firm	muchos
+62	16	O	O	a	firm	anos
+62	17	xeb	xeb	no	firm	anos
+62	18	PHI	PHI	s	firm	anos
 62	19	zre	zre	que	firm	que
 62	20	sud	sud	de	firm	desean
 62	21	X	Xs	s	firm (look-alike X)	desean
 62	22	RH	RH	e	firm	desean
 62	23	O	O	a	firm	desean
 62	24	FH	FH	n	firm	desean
-62	25	xad	xad	lo	tentative	{?los}
-62	26	PHI	PHI	s	firm	{?los}
-62	27	suq	suq	franceses	tentative	{?franceses}
+62	25	xad	xad	lo	firm	los
+62	26	PHI	PHI	s	firm	los
+62	27	suq	suq	franceses	firm	franceses
 62	28	YH	YH	y	firm	y
-62	29	xad	xad	lo	tentative	{?lo}
-63	1	zuf	zuf		unread group	[?1 group, 1 letter]
-63	2	FH	FH	n	firm	[?1 group, 1 letter]
+62	29	xad	xad	lo	firm	lo
+63	1	zuf	zuf	quiere	firm	quieren
+63	2	FH	FH	n	firm	quieren
 63	3	YH	YH	y	firm	y
 63	4	zre	zre	que	firm	que
 63	5	yob	yob	por	firm	por
-63	6	soo	soo	do	firm	[?2 letters]
+63	6	soo	soo	esto	firm	esto
 63	7	xno	xno	me	firm	me
-63	8	CT	CT	p	firm	parece
-63	9	O	O	a	firm	parece
-63	10	X	Xr	r	firm (look-alike X)	parece
-63	11	sin	sin	es	firm (look-alike sin/sim)	parece
-63	12	OT	OT	c	firm	parece
-63	13	ZH	ZH	e	firm	parece
+63	8	CT	CT	p	firm	paresce
+63	9	O	O	a	firm	paresce
+63	10	X	Xr	r	firm (look-alike X)	paresce
+63	11	sin	sin	es	firm (look-alike sin/sim)	paresce
+63	12	OT	OT	c	firm	paresce
+63	13	ZH	ZH	e	firm	paresce
 63	14	zre	zre	que	firm	que
 63	15	sin	sin	es	firm (look-alike sin/sim)	es
-63	16	xez	xez		unread group	[?1 group]
+63	16	xez	xez	ninguna	firm	ninguna
 63	17	xeo	xeo	me	tentative	{?me}
 63	18	bac	bac	su	firm	su
 63	19	PHI	PHI	s	firm	[?1 sign, 1 letter]
@@ -1669,10 +1669,10 @@ line	position	token	split_label	value	status	reading_word
 64	1	OT	OT	c	firm	char
 64	2	tok	tok	ha	firm	char
 64	3	B8	B8	r	firm	char
-64	4	xez	xez		unread group	[?1 group, 2 letters]
-64	5	yin	yin	es	firm	[?1 group, 2 letters]
+64	4	xez	xez	ninguna	firm	ninguna
+64	5	yin	yinzt	paz	firm	paz
 64	6	see	see	del	firm	del
-64	7	zuy	zuy	frances	tentative	{?frances}
+64	7	zuy	zuy	rey de francia	firm	rey
 64	8	bae	bae	si	firm	sino
 64	9	xeb	xeb	no	firm	sino
 64	10	O	O	a	firm	asentando
@@ -1686,18 +1686,18 @@ line	position	token	split_label	value	status	reading_word
 64	18	xed	xed	la	firm	la
 64	19	bao	bao	todo	firm	todos
 64	20	PHI	PHI	s	firm	todos
-64	21	xad	xad	lo	tentative	{?los}
-64	22	PHI	PHI	s	firm	{?los}
-64	23	rie	rie	confederado	tentative	[?confederados]
-64	24	EQ	EQ	ma	tentative	[?1 group, 4 letters]
-64	25	tir	tir		unread group	[?1 group, 4 letters]
-64	26	xno	xno	me	firm	[?1 group, 4 letters]
+64	21	xad	xad	lo	firm	los
+64	22	PHI	PHI	s	firm	los
+64	23	rie	rie	confederado	firm	confederado[s]
+64	24	EQ	EQ	ma	tentative	[?2 letters]
+64	25	tir	tir	iunta	firm	iuntame-
+64	26	xno	xno	me	firm	iuntame-
 65	1	no	no	t	firm	
 65	2	RH	RH	e	firm	
 65	3	yob	yob	por	firm	porque
 65	4	zre	zre	que	firm	porque
 65	5	sud	sud	de	firm	de
-65	6	sio	sio	esta	tentative	{?esta}
+65	6	sio	sio	esta	firm	esta
 65	7	xeo	xeo	me	tentative	{?me}
 65	8	byo	byo		unread group	[?1 group]
 65	9	bne	bne	se	firm	segura
@@ -1722,14 +1722,14 @@ line	position	token	split_label	value	status	reading_word
 66	2	SUPNO	SUPNO		unvalued sign	[?1 sign, 4 letters]
 66	3	D	D	nt	tentative	[?1 sign, 4 letters]
 66	4	TH	TH	o	firm	[?1 sign, 4 letters]
-66	5	xad	xad	lo	tentative	{?lo}
+66	5	xad	xad	lo	firm	lo
 66	6	xeb	xeb	no	firm	no
 66	7	CT	CT	p	firm	puede
 66	8	RS	RS	u	firm	puede
 66	9	RH	RH	e	firm	puede
 66	10	sud	sud	de	firm	puede
 66	11	by	by	ser	firm	ser
-66	12	xam	xam	mas	tentative	{?mas}
+66	12	xam	xam	mas	firm	mas
 66	13	CT	CT	p	firm	peligrosa
 66	14	RH	RH	e	firm	peligrosa
 66	15	gso	gso	l	firm	peligrosa
@@ -1760,7 +1760,7 @@ line	position	token	split_label	value	status	reading_word
 67	12	yez	yez	persona	firm	persona
 67	13	YH	YH	y	firm	y
 67	14	pif	pif	al	firm	al
-67	15	sy	sy		unread group	[?1 group]
+67	15	sy	sy	estado	firm	estado
 67	16	sud	sud	de	firm	de
 67	17	xed	xed	la	firm	la
 67	18	YH	YH	y	firm	yglia
@@ -1777,14 +1777,14 @@ line	position	token	split_label	value	status	reading_word
 68	1	QH	QH	x	firm	xenp[?lo]
 68	2	sin	sim	en	firm (look-alike sin/sim)	xenp[?lo]
 68	3	CT	CT	p	firm	xenp[?lo]
-68	4	xad	xad	lo	tentative	{?lo}
+68	4	xad	xad	lo	firm	lo
 68	5	sud	sud	de	firm	de
 68	6	xed	xed	la	firm	la
-68	7	yin	yin	es	firm	[?1 group, 2 letters]
-68	8	yis	yis		unread group	[?1 group, 2 letters]
+68	7	yin	yinu		unread group	[?2 groups]
+68	8	yis	yis		unread group	[?2 groups]
 68	9	zre	zre	que	firm	que
 68	10	sin	sin	es	firm (look-alike sin/sim)	es
-68	11	yem	yem	papa	tentative	{?papa}
+68	11	yem	yem	papa	firm	papa
 68	12	KH	KH	i	firm	Iulio
 68	13	RS	RS	u	firm	Iulio
 68	14	gso	gso	l	firm	Iulio
@@ -1803,7 +1803,7 @@ line	position	token	split_label	value	status	reading_word
 69	4	YH	YH	y	firm	Luys
 69	5	PHI	PHI	s	firm	Luys
 69	6	sud	sud	de	firm	de
-69	7	soq	soq		unread group	[?1 group]
+69	7	soq	soq	francia	firm	Francia
 69	8	ZO	ZO	m	firm	muerto
 69	9	RS	RS	u	firm	muerto
 69	10	RH	RH	e	firm	muerto
@@ -1823,7 +1823,7 @@ line	position	token	split_label	value	status	reading_word
 69	24	O	O	a	firm	Pauia
 69	25	zre	zre	que	firm	que
 69	26	xeb	xeb	no	firm	no
-70	1	baf	baf	solo	tentative	{?solo}
+70	1	baf	baf	solo	firm	solo
 70	2	xeb	xeb	no	firm	no
 70	3	xed	xed	la	firm	la
 70	4	AH	AH	g	firm	guardo
@@ -1832,21 +1832,21 @@ line	position	token	split_label	value	status	reading_word
 70	7	X	Xr	r	firm (look-alike X)	guardo
 70	8	GS	GS	d	firm	guardo
 70	9	TH	TH	o	firm	guardo
-70	10	yaz	yaz	antes	tentative	{?antes}
+70	10	yaz	yaz	pero	firm	pero
 70	11	CT	CT	p	firm	puso
 70	12	RS	RS	u	firm	puso
 70	13	PHI	PHI	s	firm	puso
 70	14	TH	TH	o	firm	puso
 70	15	rak	rak	con	firm	con
-70	16	sen	sen	ella	tentative	{?ella}
-70	17	sin	sin	es	firm (look-alike sin/sim)	[?2 groups, 2 letters]
-70	18	xaq	xaq		unread group	[?2 groups, 2 letters]
-70	19	xnz	xnz		unread group	[?2 groups, 2 letters]
+70	16	sen	sen	ella	firm	ella
+70	17	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 2 letters]
+70	18	xaq	xaq		unread group	[?1 group, 2 letters]
+70	19	xnz	xnz	necesidad	firm	necesidad
 70	20	pif	pif	al	firm	al
-70	21	yem	yem	papa	tentative	{?papa}
+70	21	yem	yem	papa	firm	papa
 70	22	YH	YH	y	firm	y
 70	23	O	O	a	firm	a
-70	24	yed	yed	obligado	tentative	{?obligado}
+70	24	yed	yed	obligado	firm	obligado
 71	1	YH	YH	y	firm	yglia
 71	2	AH	AH	g	firm	yglia
 71	3	gso	gso	l	firm	yglia
@@ -1858,9 +1858,9 @@ line	position	token	split_label	value	status	reading_word
 71	9	OT	OT	c	firm	nacio
 71	10	KH	KH	i	firm	nacio
 71	11	TH	TH	o	firm	nacio
-71	12	sud	sud	de	firm	de
-71	13	SL	SL	st	tentative	esta
-71	14	Z	Z	a	firm	esta
+71	12	sud	sud	de	firm	della
+71	13	SL	SL	ll	firm	della
+71	14	Z	Z	a	firm	della
 71	15	xed	xed	la	firm	la
 71	16	OT	OT	c	firm	cisma
 71	17	BO	BO	i	firm	cisma
@@ -1868,12 +1868,12 @@ line	position	token	split_label	value	status	reading_word
 71	19	ZO	ZO	m	firm	cisma
 71	20	Z	Z	a	firm	cisma
 71	21	YH	YH	y	firm	y
-71	22	beo	beo	e	tentative	[?2 letters]
-71	23	PHI	PHI	s	firm	[?2 letters]
-71	24	xed	xed	la	firm	la
-71	25	EQ	EQ	ma	tentative	[?1 group, 4 letters]
-71	26	xnz	xnz		unread group	[?1 group, 4 letters]
-71	27	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 4 letters]
+71	22	beo	beo	toda	firm	todas
+71	23	PHI	PHI	s	firm	todas
+71	24	xed	xed	la	firm	[?las]
+71	25	EQ	EQ	ma	tentative	[?las]
+71	26	xnz	xnz	necesidad	firm	necesidades
+71	27	sin	sin	es	firm (look-alike sin/sim)	necesidades
 71	28	YH	YH	y	firm	y
 71	29	no	no	t	firm	tra-
 71	30	X	Xr	r	firm (look-alike X)	tra-
@@ -1889,24 +1889,24 @@ line	position	token	split_label	value	status	reading_word
 72	9	RS	RS	u	firm	[?1 group, 5 letters]
 72	10	LAM	LAM	an	tentative	[?1 group, 5 letters]
 72	11	TH	TH	o	firm	[?1 group, 5 letters]
-72	12	xad	xad	lo	tentative	{?lo}
+72	12	xad	xad	lo	firm	lo
 72	13	zef	zef		unread group	[?1 group]
 72	14	xeb	xeb	no	firm	no
 72	15	CT	CT	p	firm	pudi
 72	16	RS	RS	u	firm	pudi
 72	17	su	su	di	firm	pudi
-72	18	son	son		unread group	[?1 group, 2 letters]
-72	19	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 2 letters]
-72	20	zuy	zuy	frances	tentative	{?frances}
+72	18	son	son		unread group	[?1 group]
+72	19	sin	sin	es	firm (look-alike sin/sim)	[?el]
+72	20	zuy	zuy	rey de francia	firm	rey
 72	21	tok	tok	ha	firm	[?5 letters]
 72	22	X	Xz	z	firm (look-alike X)	[?5 letters]
 72	23	RH	RH	e	firm	[?5 letters]
 72	24	X	Xs	s	firm (look-alike X)	[?5 letters]
 72	25	bae	bae	si	firm	si
 72	26	xed	xed	la	firm	la
-73	1	seg	seg	s	firm	[?1 group, 3 letters]
-73	2	yin	yin	es	firm	[?1 group, 3 letters]
-73	3	yis	yis		unread group	[?1 group, 3 letters]
+73	1	seg	seg	dicha	firm	dicha
+73	2	yin	yinzt	paz	firm	paz
+73	3	yis	yis		unread group	[?1 group]
 73	4	xeb	xeb	no	firm	no
 73	5	bne	bne	se	firm	se
 73	6	O	O	a	firm	asentara
@@ -1918,10 +1918,10 @@ line	position	token	split_label	value	status	reading_word
 73	12	Z	Z	a	firm	asentara
 73	13	YH	YH	y	firm	y
 73	14	zre	zre	que	firm	que
-73	15	xoo	xoo	mi	firm	[?1 group, 4 letters]
-73	16	X	Xs	s	firm (look-alike X)	[?1 group, 4 letters]
-73	17	RH	RH	e	firm	[?1 group, 4 letters]
-73	18	piq	piq		unread group	[?1 group, 4 letters]
+73	15	xoo	xoo	mi	firm	[?mire]
+73	16	X	Xs	s	firm (look-alike X)	[?mire]
+73	17	RH	RH	e	firm	[?mire]
+73	18	piq	piq	bien	firm	bien
 73	19	bac	bac	su	firm	su
 73	20	PHI	PHI	s	firm	[?1 sign, 1 letter]
 73	21	SUPNO	SUPNO		unvalued sign	[?1 sign, 1 letter]
@@ -1959,7 +1959,7 @@ line	position	token	split_label	value	status	reading_word
 74	27	Z	Z	a	firm	inclinadas
 74	28	PHI	PHI	s	firm	inclinadas
 74	29	O	O	a	firm	a
-75	1	suq	suq	franceses	tentative	{?franceses}
+75	1	suq	suq	franceses	firm	franceses
 75	2	xeb	xeb	no	firm	no
 75	3	tok	tok	ha	firm	haga
 75	4	AH	AH	g	firm	haga
@@ -2010,31 +2010,31 @@ line	position	token	split_label	value	status	reading_word
 76	23	dem	dem	yo	firm	yo
 76	24	yob	yob	por	firm	por
 77	1	zre	zre	que	firm	que
-77	2	soo	soo	do	firm	doy
-77	3	YH	YH	y	firm	doy
-77	4	sud	sud	de	firm	de
-77	5	SL	SL	st	tentative	esto
-77	6	TH	TH	o	firm	esto
+77	2	soo	soo	esto	firm	estoi
+77	3	YH	YH	y	firm	estoi
+77	4	sud	sud	de	firm	dello
+77	5	SL	SL	ll	firm	dello
+77	6	TH	TH	o	firm	dello
 77	7	xns	xns	muy	firm	muy
-77	8	xin	xin	mal	tentative	{?mal}
-77	9	rak	rak	con	firm	[?mal]contento
-77	10	no	no	t	firm	[?mal]contento
-77	11	sin	sim	en	firm (look-alike sin/sim)	[?mal]contento
-77	12	no	no	t	firm	[?mal]contento
-77	13	TH	TH	o	firm	[?mal]contento
+77	8	xin	xin	mal	firm	malcontento
+77	9	rak	rak	con	firm	malcontento
+77	10	no	no	t	firm	malcontento
+77	11	sin	sim	en	firm (look-alike sin/sim)	malcontento
+77	12	no	no	t	firm	malcontento
+77	13	TH	TH	o	firm	malcontento
 77	14	see	see	del	firm	del
 77	15	sag	sag	dicho	firm	dicho
 77	16	xoo	xoo	mi	firm	mi
-77	17	bay	bay	uisorrey	tentative	{?uisorrey}
-77	18	yaz	yaz	antes	tentative	{?antes}
+77	17	bay	bay	uisorrey	firm	uisorrey
+77	18	yaz	yaz	pero	firm	pero
 77	19	zre	zre	que	firm	que
-77	20	yin	yin	es	firm	es
+77	20	yin	yinpt	pues	firm	pues
 77	21	sud	sud	de	firm	[?3 letters]
 77	22	PHI	PHI	s	firm	[?3 letters]
-78	1	xny	xny	e	tentative	[?1 letter]
-78	2	bel	bel	senor	tentative	{?senor}
-78	3	peb	peb		unread group	[?1 group]
-78	4	xad	xad	lo	tentative	{?lo}
+78	1	xny	xnyt	nuestro	firm	nuestro
+78	2	bel	bel	senor	firm	senor
+78	3	peb	peb	assi	firm	assi
+78	4	xad	xad	lo	firm	lo
 78	5	tok	tok	ha	firm	[?9 letters]
 78	6	X	Xs	s	firm (look-alike X)	[?9 letters]
 78	7	xoo	xoo	mi	firm	[?9 letters]
@@ -2070,7 +2070,7 @@ line	position	token	split_label	value	status	reading_word
 79	14	RH	RH	e	firm	seruirle
 79	15	sin	sim	en	firm (look-alike sin/sim)	en
 79	16	xed	xed	la	firm	la
-79	17	seg	seg	s	firm	
+79	17	seg	seg	dicha	firm	dicha
 79	18	PHI	PHI	s	firm	santa
 79	19	O	O	a	firm	santa
 79	20	FH	FH	n	firm	santa
@@ -2079,7 +2079,7 @@ line	position	token	split_label	value	status	reading_word
 79	23	sin	sin	es	firm (look-alike sin/sim)	[?empresa]
 79	24	CT	CT	p	firm	[?empresa]
 79	25	X	Xr	r	firm (look-alike X)	[?empresa]
-79	26	sio	sio	esta	tentative	[?empresa]
+79	26	sio	sio	esta	firm	[?empresa]
 80	1	zre	zre	que	firm	que
 80	2	bao	bao	todo	firm	todos
 80	3	PHI	PHI	s	firm	todos
@@ -2102,7 +2102,7 @@ line	position	token	split_label	value	status	reading_word
 80	20	Z	Z	a	firm	gracias
 80	21	PHI	PHI	s	firm	gracias
 80	22	yob	yob	por	firm	por
-80	23	san	san	ello	tentative	{?ello}
+80	23	san	san	ello	firm	ello
 80	24	YH	YH	y	firm	y
 80	25	no	no	t	firm	tra-
 80	26	xo	xo	ra	firm	tra-
@@ -2120,26 +2120,26 @@ line	position	token	split_label	value	status	reading_word
 81	12	RS	RS	u	firm	proseguir
 81	13	BO	BO	i	firm	proseguir
 81	14	X	Xr	r	firm (look-alike X)	proseguir
-81	15	pnd	pnd		unread group	[?2 groups, 4 letters]
-81	16	rok	rok	s	tentative	[?2 groups, 4 letters]
-81	17	xaz	xaz		unread group	[?2 groups, 4 letters]
-81	18	X	Xr	r	firm (look-alike X)	[?2 groups, 4 letters]
-81	19	sin	sin	es	firm (look-alike sin/sim)	[?2 groups, 4 letters]
+81	15	pnd	pnd		unread group	[?1 group, 11 letters]
+81	16	rok	rok	s	tentative	[?1 group, 11 letters]
+81	17	xaz	xaz	ninguno	firm	[?1 group, 11 letters]
+81	18	X	Xr	r	firm (look-alike X)	[?1 group, 11 letters]
+81	19	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 11 letters]
 81	20	YH	YH	y	firm	y
-81	21	xam	xam	mas	tentative	{?mas}
+81	21	xam	xam	mas	firm	mas
 81	22	N8	N8	b	firm	[?5 letters]
 81	23	BO	BO	i	firm	[?5 letters]
 81	24	RS	RS	u	firm	[?5 letters]
 81	25	O	O	a	firm	[?5 letters]
 81	26	B8	B8	r	firm	[?5 letters]
-82	1	sey	sey		unread group	[?1 group, 4 letters]
-82	2	X	Xs	s	firm (look-alike X)	[?1 group, 4 letters]
-82	3	OT	OT	c	firm	[?1 group, 4 letters]
-82	4	O	O	a	firm	[?1 group, 4 letters]
-82	5	PHI	PHI	s	firm	[?1 group, 4 letters]
+82	1	sey	sey	fue	firm	[?fuercas]
+82	2	X	Xs	s	firm (look-alike X)	[?fuercas]
+82	3	OT	OT	c	firm	[?fuercas]
+82	4	O	O	a	firm	[?fuercas]
+82	5	PHI	PHI	s	firm	[?fuercas]
 82	6	YH	YH	y	firm	y
 82	7	rak	rak	con	firm	con
-82	8	xam	xam	mas	tentative	{?mas}
+82	8	xam	xam	mas	firm	mas
 82	9	RS	RS	u	firm	union
 82	10	ynb	ynb	ni	firm	union
 82	11	TH	TH	o	firm	union
@@ -2154,7 +2154,7 @@ line	position	token	split_label	value	status	reading_word
 82	20	O	O	a	firm	conformidad
 82	21	GS	GS	d	firm	conformidad
 82	22	xed	xed	la	firm	la
-82	23	seg	seg	s	firm	
+82	23	seg	seg	dicha	firm	dicha
 82	24	xoy	xoy	nuestra	firm	nuestra
 83	1	PHI	PHI	s	firm	santisim[a]
 83	2	Z	Z	a	firm	santisim[a]
@@ -2168,13 +2168,13 @@ line	position	token	split_label	value	status	reading_word
 83	10	ynb	ynb	ni	firm	ni
 83	11	zre	zre	que	firm	que
 83	12	rak	rak	con	firm	con
-83	13	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
-83	14	pnk	pnk	ayuda	tentative	{?ayuda}
+83	13	sin	sin	es	firm (look-alike sin/sim)	es
+83	14	pnk	pnk	ayuda	firm	ayuda
 83	15	sud	sud	de	firm	de
 83	16	sod	sod	dio	firm	Dios
 83	17	PHI	PHI	s	firm	Dios
-83	18	xny	xny	e	tentative	[?1 letter]
-83	19	bel	bel	senor	tentative	{?senor}
+83	18	xny	xnyt	nuestro	firm	nuestro
+83	19	bel	bel	senor	firm	senor
 84	1	PHI	PHI	s	firm	salgamos
 84	2	pif	pif	al	firm	salgamos
 84	3	AH	AH	g	firm	salgamos
@@ -2215,7 +2215,7 @@ line	position	token	split_label	value	status	reading_word
 85	12	KH	KH	i	firm	clemencia
 85	13	O	O	a	firm	clemencia
 85	14	zre	zre	que	firm	que
-85	15	yin	yin	es	firm	es
+85	15	yin	yinu		unread group	[?1 group]
 85	16	xed	xed	la	firm	la
 85	17	rae	rae		unread group	[?1 group]
 85	18	zre	zre	que	firm	que
@@ -2241,7 +2241,7 @@ line	position	token	split_label	value	status	reading_word
 86	12	YH	YH	y	firm	y
 86	13	xed	xed	la	firm	la
 86	14	sud	sud	de	firm	de
-86	15	xny	xny	e	tentative	[?12 letters]
+86	15	xny	xny	e	firm	[?12 letters]
 86	16	PHI	PHI	s	firm	[?12 letters]
 86	17	OT	OT	c	firm	[?12 letters]
 86	18	TH	TH	o	firm	[?12 letters]
@@ -2290,15 +2290,15 @@ line	position	token	split_label	value	status	reading_word
 88	11	bos	bos	tengo	firm	tengo
 88	12	pud	pud		unread group	[?1 group]
 88	13	yob	yob	por	firm	por
-88	14	xam	xam	mas	tentative	{?mas}
+88	14	xam	xam	mas	firm	mas
 88	15	xil	xil		unread group	[?1 group]
 88	16	yob	yob	por	firm	por
 88	17	zue	zue		unread group	[?1 group]
-88	18	xad	xad	lo	tentative	{?los}
-88	19	PHI	PHI	s	firm	{?los}
+88	18	xad	xad	lo	firm	los
+88	19	PHI	PHI	s	firm	los
 88	20	sag	sag	dicho	firm	dicho[s]
 88	21	EQ	EQ	ma	tentative	[?3 letters]
-88	22	xny	xny	e	tentative	[?3 letters]
+88	22	xny	xny	e	firm	[?3 letters]
 89	1	PHI	PHI	s	firm	[?11 letters]
 89	2	OT	OT	c	firm	[?11 letters]
 89	3	TH	TH	o	firm	[?11 letters]
@@ -2335,8 +2335,8 @@ line	position	token	split_label	value	status	reading_word
 90	6	TH	TH	o	firm	drentados
 90	7	PHI	PHI	s	firm	drentados
 90	8	sud	sud	de	firm	de
-90	9	xed	xed	la	firm	las
-90	10	seg	seg	s	firm	las
+90	9	xed	xed	la	firm	la
+90	10	seg	seg	dicha	firm	dicha
 90	11	por	por		unread group	[?1 group]
 90	12	YH	YH	y	firm	y
 90	13	zre	zre	que	firm	que
@@ -2363,7 +2363,7 @@ line	position	token	split_label	value	status	reading_word
 91	7	TH	TH	o	firm	rseuero
 91	8	sin	sim	en	firm (look-alike sin/sim)	en
 91	9	xed	xed	la	firm	la
-91	10	seg	seg	s	firm	
+91	10	seg	seg	dicha	firm	dicha
 91	11	xif	xif	liga	firm	liga
 91	12	YH	YH	y	firm	y
 91	13	OT	OT	c	firm	cumpliendo
@@ -2375,7 +2375,7 @@ line	position	token	split_label	value	status	reading_word
 91	19	sin	sim	en	firm (look-alike sin/sim)	cumpliendo
 91	20	GS	GS	d	firm	cumpliendo
 91	21	TH	TH	o	firm	cumpliendo
-91	22	xad	xad	lo	tentative	{?lo}
+91	22	xad	xad	lo	firm	lo
 91	23	zre	zre	que	firm	que
 91	24	yob	yob	por	firm	por
 91	25	xoo	xoo	mi	firm	mi
@@ -2383,7 +2383,7 @@ line	position	token	split_label	value	status	reading_word
 92	2	PHI	PHI	s	firm	soy
 92	3	TH	TH	o	firm	soy
 92	4	YH	YH	y	firm	soy
-92	5	yed	yed	obligado	tentative	{?obligado}
+92	5	yed	yed	obligado	firm	obligado
 92	6	KH	KH	i	firm	[?he]
 92	7	RH	RH	e	firm	[?he]
 92	8	sin	sin	es	firm (look-alike sin/sim)	escrito
@@ -2395,15 +2395,15 @@ line	position	token	split_label	value	status	reading_word
 92	14	pif	pif	al	firm	al
 92	15	sag	sag	dicho	firm	dicho
 92	16	xoo	xoo	mi	firm	mi
-92	17	bay	bay	uisorrey	tentative	{?uisorrey}
+92	17	bay	bay	uisorrey	firm	uisorrey
 92	18	YH	YH	y	firm	y
-92	19	poz	poz		unread group	[?1 group, 3 letters]
-92	20	X	Xs	s	firm (look-alike X)	[?1 group, 3 letters]
-92	21	RH	RH	e	firm	[?1 group, 3 letters]
-92	22	CT	CT	p	firm	[?1 group, 3 letters]
+92	19	poz	poz	capitan general	firm	capitan
+92	20	X	Xs	s	firm (look-alike X)	[?repre-]
+92	21	RH	RH	e	firm	[?repre-]
+92	22	CT	CT	p	firm	[?repre-]
 92	23	X	Xr	r	firm (look-alike X)	[?repre-]
-92	24	RH	RH	e	firm	[?repre-]
-92	25	KH	KH	i	firm	[?repre-]
+92	24	RH	RH	e	firm	
+92	25	KH	KH	i	firm	
 92	26	RH	RH	e	firm	[?repre-]
 93	1	su	su	di	firm	[?hendiendole]
 93	2	sin	sim	en	firm (look-alike sin/sim)	[?hendiendole]
@@ -2422,7 +2422,7 @@ line	position	token	split_label	value	status	reading_word
 93	15	RH	RH	e	firm	grauemente
 93	16	sud	sud	de	firm	de
 93	17	xed	xed	la	firm	la
-93	18	seg	seg	s	firm	
+93	18	seg	seg	dicha	firm	dicha
 93	19	bac	bac	su	firm	su
 93	20	FH	FH	n	firm	neglige-
 93	21	RH	RH	e	firm	neglige-
@@ -2456,7 +2456,7 @@ line	position	token	split_label	value	status	reading_word
 94	23	RH	RH	e	firm	estrechamente
 94	24	zre	zre	que	firm	que
 94	25	sud	sud	de	firm	de
-94	26	pef	pef		unread group	[?1 group]
+94	26	pef	pefa	aqui	tentative	{?aqui}
 95	1	O	O	a	firm	a
 95	2	sud	sud	de	firm	delante
 95	3	xed	xed	la	firm	delante
@@ -2470,13 +2470,13 @@ line	position	token	split_label	value	status	reading_word
 95	11	X	Xr	r	firm (look-alike X)	guarde
 95	12	sud	sud	de	firm	guarde
 95	13	sud	sud	de	firm	de
-95	14	OT	OT	c	firm	[?1 group, 7 letters]
-95	15	O	O	a	firm	[?1 group, 7 letters]
-95	16	KH	KH	i	firm	[?1 group, 7 letters]
-95	17	RH	RH	e	firm	[?1 group, 7 letters]
-95	18	X	Xs	s	firm (look-alike X)	[?1 group, 7 letters]
-95	19	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 7 letters]
-95	20	yae	yae		unread group	[?1 group, 7 letters]
+95	14	OT	OT	c	firm	[?7 letters]
+95	15	O	O	a	firm	[?7 letters]
+95	16	KH	KH	i	firm	[?7 letters]
+95	17	RH	RH	e	firm	[?7 letters]
+95	18	X	Xs	s	firm (look-alike X)	[?7 letters]
+95	19	sin	sin	es	firm (look-alike sin/sim)	[?7 letters]
+95	20	yae	yae	otro	firm	otro
 95	21	no	no	t	firm	tal
 95	22	pif	pif	al	firm	tal
 95	23	YH	YH	y	firm	y
@@ -2484,7 +2484,7 @@ line	position	token	split_label	value	status	reading_word
 95	25	TH	TH	o	firm	[?2 letters]
 96	1	YH	YH	y	firm	y
 96	2	zre	zre	que	firm	que
-96	3	pib	pib		unread group	[?1 group]
+96	3	pib	pib	assimismo	firm	assimismo
 96	4	gso	gso	l	firm	le
 96	5	RH	RH	e	firm	le
 96	6	KH	KH	i	firm	[?he]
@@ -2504,34 +2504,34 @@ line	position	token	split_label	value	status	reading_word
 96	20	X	Xs	s	firm (look-alike X)	[?1 sign, 5 letters]
 96	21	zre	zre	que	firm	que
 96	22	bae	bae	si	firm	si
-96	23	xad	xad	lo	tentative	{?los}
-96	24	PHI	PHI	s	firm	{?los}
+96	23	xad	xad	lo	firm	los
+96	24	PHI	PHI	s	firm	los
 96	25	sag	sag	dicho	firm	dichos
 96	26	PHI	PHI	s	firm	dichos
-96	27	be	be	s	tentative	[?1 letter]
-97	1	KH	KH	i	firm	[?1 group, 23 letters]
-97	2	RS	RS	u	firm	[?1 group, 23 letters]
-97	3	LAM	LAM	an	tentative	[?1 group, 23 letters]
-97	4	BO	BO	i	firm	[?1 group, 23 letters]
-97	5	RH	RH	e	firm	[?1 group, 23 letters]
-97	6	X	Xr	r	firm (look-alike X)	[?1 group, 23 letters]
-97	7	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 23 letters]
-97	8	dam	dam		unread group	[?1 group, 23 letters]
-97	9	N8	N8	b	firm	[?1 group, 23 letters]
-97	10	RS	RS	u	firm	[?1 group, 23 letters]
-97	11	sin	sim	en	firm (look-alike sin/sim)	[?1 group, 23 letters]
-97	12	no	no	t	firm	[?1 group, 23 letters]
-97	13	TH	TH	o	firm	[?1 group, 23 letters]
-97	14	TH	TH	o	firm	[?1 group, 23 letters]
-97	15	N8	N8	b	firm	[?1 group, 23 letters]
-97	16	TH	TH	o	firm	[?1 group, 23 letters]
-97	17	gso	gso	l	firm	[?1 group, 23 letters]
-97	18	RS	RS	u	firm	[?1 group, 23 letters]
-97	19	BO	BO	i	firm	[?1 group, 23 letters]
-97	20	RH	RH	e	firm	[?1 group, 23 letters]
-97	21	X	Xs	s	firm (look-alike X)	[?1 group, 23 letters]
-97	22	sin	sim	en	firm (look-alike sin/sim)	en
-97	23	xaf	xaf	i	tentative	[?1 letter]
+96	27	be	be	suycos	firm	suycos
+97	1	KH	KH	i	firm	[?13 letters]
+97	2	RS	RS	u	firm	[?13 letters]
+97	3	LAM	LAM	an	tentative	[?13 letters]
+97	4	BO	BO	i	firm	[?13 letters]
+97	5	RH	RH	e	firm	[?13 letters]
+97	6	X	Xr	r	firm (look-alike X)	[?13 letters]
+97	7	sin	sin	es	firm (look-alike sin/sim)	[?13 letters]
+97	8	dam	dam	ya	firm	[?13 letters]
+97	9	N8	N8	b	firm	[?13 letters]
+97	10	RS	RS	u	firm	[?13 letters]
+97	11	sin	sim	en	firm (look-alike sin/sim)	en
+97	12	no	no	t	firm	[?13 letters]
+97	13	TH	TH	o	firm	[?13 letters]
+97	14	TH	TH	o	firm	[?13 letters]
+97	15	N8	N8	b	firm	[?13 letters]
+97	16	TH	TH	o	firm	[?13 letters]
+97	17	gso	gso	l	firm	[?13 letters]
+97	18	RS	RS	u	firm	[?13 letters]
+97	19	BO	BO	i	firm	[?13 letters]
+97	20	RH	RH	e	firm	[?13 letters]
+97	21	X	Xs	s	firm (look-alike X)	[?13 letters]
+97	22	sin	sim	en	firm (look-alike sin/sim)	[?13 letters]
+97	23	xaf	xaf	i	firm	[?13 letters]
 97	24	O	O	a	firm	a
 97	25	sin	sim	en	firm (look-alike sin/sim)	en
 98	1	MH	MH	f	firm	fauor
@@ -2556,7 +2556,7 @@ line	position	token	split_label	value	status	reading_word
 98	20	yob	yob	por	firm	por
 98	21	rak	rak	con	firm	[?3 letters]
 98	22	zre	zre	que	firm	que
-98	23	xad	xad	lo	tentative	{?lo}
+98	23	xad	xad	lo	firm	lo
 98	24	tok	tok	ha	firm	ha-
 99	1	X	Xr	r	firm (look-alike X)	ran
 99	2	O	O	a	firm	ran
@@ -2566,7 +2566,7 @@ line	position	token	split_label	value	status	reading_word
 99	6	no	no	t	firm	esta
 99	7	pif	pif	al	firm	esta
 99	8	roy	roy		unread group	[?1 group, 2 letters]
-99	9	xaf	xaf	i	tentative	[?1 group, 2 letters]
+99	9	xaf	xaf	i	firm	[?1 group, 2 letters]
 99	10	bae	bae	si	firm	sin
 99	11	FH	FH	n	firm	sin
 99	12	GS	GS	d	firm	dilacion
@@ -2576,14 +2576,14 @@ line	position	token	split_label	value	status	reading_word
 99	16	KH	KH	i	firm	dilacion
 99	17	TH	TH	o	firm	dilacion
 99	18	FH	FH	n	firm	dilacion
-99	19	pif	pif	al	firm	alg[?]
-99	20	AH	AH	g	firm	alg[?]
-99	21	dif	dif		unread group	[?1 group]
+99	19	pif	pif	al	firm	alguna
+99	20	AH	AH	g	firm	alguna
+99	21	dif	dif	una	firm	alguna
 99	22	bne	bne	se	firm	se
 99	23	tar	tar		unread group	[?1 group]
 99	24	rak	rak	con	firm	con
-100	1	san	san	ello	tentative	{?ellos}
-100	2	PHI	PHI	s	firm	{?ellos}
+100	1	san	san	ello	firm	ellos
+100	2	PHI	PHI	s	firm	ellos
 100	3	xnk	xnk	como	firm	como
 100	4	tok	tok	ha	firm	[?15 letters]
 100	5	X	Xz	z	firm (look-alike X)	[?15 letters]
@@ -2608,7 +2608,7 @@ line	position	token	split_label	value	status	reading_word
 100	24	KH	KH	i	firm	conseio
 100	25	TH	TH	o	firm	conseio
 101	1	bao	bao	todo	firm	todo
-101	2	xad	xad	lo	tentative	{?lo}
+101	2	xad	xad	lo	firm	lo
 101	3	zre	zre	que	firm	que
 101	4	bne	bne	se	firm	sea
 101	5	O	O	a	firm	sea
@@ -2619,11 +2619,11 @@ line	position	token	split_label	value	status	reading_word
 101	10	RH	RH	e	firm	[?conueniente]
 101	11	ynb	ynb	ni	firm	[?conueniente]
 101	12	sin	sin	es	firm (look-alike sin/sim)	[?conueniente]
-101	13	sio	sio	esta	tentative	{?esta}
+101	13	sio	sio	esta	firm	esta
 101	14	RH	RH	e	firm	e
 101	15	xnk	xnk	como	firm	como
 101	16	xed	xed	la	firm	la
-101	17	sof	sof		unread group	[?1 group]
+101	17	sof	sof	defension	firm	defension
 101	18	YH	YH	y	firm	y
 101	19	rak	rak	con	firm	conserua-
 101	20	bne	bne	se	firm	conserua-
@@ -2649,7 +2649,7 @@ line	position	token	split_label	value	status	reading_word
 102	17	KH	KH	i	firm	resistencia
 102	18	O	O	a	firm	resistencia
 102	19	sud	sud	de	firm	de
-102	20	suq	suq	franceses	tentative	{?franceses}
+102	20	suq	suq	franceses	firm	franceses
 102	21	tok	tok	ha	firm	hasta
 102	22	PHI	PHI	s	firm	hasta
 102	23	no	no	t	firm	hasta
@@ -2658,22 +2658,22 @@ line	position	token	split_label	value	status	reading_word
 103	1	OT	OT	c	firm	charlos
 103	2	tok	tok	ha	firm	charlos
 103	3	X	Xr	r	firm (look-alike X)	charlos
-103	4	xad	xad	lo	tentative	charlos
+103	4	xad	xad	lo	firm	charlos
 103	5	PHI	PHI	s	firm	charlos
 103	6	sud	sud	de	firm	de
 103	7	teb	teb	italia	firm	Italia
 103	8	rak	rak	con	firm	con
-103	9	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
-103	10	pnk	pnk	ayuda	tentative	{?ayuda}
+103	9	sin	sin	es	firm (look-alike sin/sim)	es
+103	10	pnk	pnk	ayuda	firm	ayuda
 103	11	sud	sud	de	firm	de
 103	12	sod	sod	dio	firm	Dios
 103	13	PHI	PHI	s	firm	Dios
-103	14	xny	xny	e	tentative	[?1 letter]
-103	15	bel	bel	senor	tentative	{?senor}
+103	14	xny	xnyt	nuestro	firm	nuestro
+103	15	bel	bel	senor	firm	senor
 103	16	YH	YH	y	firm	y
 103	17	zre	zre	que	firm	que
-103	18	pib	pib		unread group	[?1 group, 1 letter]
-103	19	KH	KH	i	firm	[?1 group, 1 letter]
+103	18	pib	pib	assimismo	firm	assimismo
+103	19	KH	KH	i	firm	[?he]
 103	20	RH	RH	e	firm	[?he]
 103	21	sin	sin	es	firm (look-alike sin/sim)	es-
 104	1	OT	OT	c	firm	crito
@@ -2682,7 +2682,7 @@ line	position	token	split_label	value	status	reading_word
 104	4	no	no	t	firm	crito
 104	5	TH	TH	o	firm	crito
 104	6	pif	pif	al	firm	al
-104	7	suh	suh	emperador	tentative	{?emperador}
+104	7	suh	suh	emperador	firm	emperador
 104	8	X	Xr	r	firm (look-alike X)	rogandole
 104	9	TH	TH	o	firm	rogandole
 104	10	AH	AH	g	firm	rogandole
@@ -2697,9 +2697,9 @@ line	position	token	split_label	value	status	reading_word
 104	19	sin	sim	en	firm (look-alike sin/sim)	uenga
 104	20	AH	AH	g	firm	uenga
 104	21	O	O	a	firm	uenga
-104	22	xaf	xaf	i	tentative	[?1 group, 3 letters]
-104	23	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 3 letters]
-104	24	xez	xez		unread group	[?1 group, 3 letters]
+104	22	xaf	xaf	i	firm	[?3 letters]
+104	23	sin	sin	es	firm (look-alike sin/sim)	[?3 letters]
+104	24	xez	xez	ninguna	firm	ninguna
 105	1	Z	Z	a	firm	[?9 letters]
 105	2	sin	sin	es	firm (look-alike sin/sim)	[?9 letters]
 105	3	no	no	t	firm	[?9 letters]
@@ -2708,7 +2708,7 @@ line	position	token	split_label	value	status	reading_word
 105	6	X	Xs	s	firm (look-alike X)	[?9 letters]
 105	7	sin	sim	en	firm (look-alike sin/sim)	en
 105	8	xed	xed	la	firm	la
-105	9	seg	seg	s	firm	
+105	9	seg	seg	dicha	firm	dicha
 105	10	sin	sin	es	firm (look-alike sin/sim)	[?empresa]
 105	11	CT	CT	p	firm	[?empresa]
 105	12	X	Xr	r	firm (look-alike X)	[?empresa]
@@ -2716,7 +2716,7 @@ line	position	token	split_label	value	status	reading_word
 105	14	PHI	PHI	s	firm	[?empresa]
 105	15	O	O	a	firm	[?empresa]
 105	16	xnk	xnk	como	firm	como
-105	17	xad	xad	lo	tentative	{?lo}
+105	17	xad	xad	lo	firm	lo
 105	18	tok	tok	ha	firm	ha
 105	19	sin	sin	es	firm (look-alike sin/sim)	[?enbiado]
 105	20	N8	N8	b	firm	[?enbiado]
@@ -2733,7 +2733,7 @@ line	position	token	split_label	value	status	reading_word
 106	7	RH	RH	e	firm	ofrescer
 106	8	X	Xr	r	firm (look-alike X)	ofrescer
 106	9	pif	pif	al	firm	al
-106	10	yem	yem	papa	tentative	{?papa}
+106	10	yem	yem	papa	firm	papa
 106	11	yob	yob	por	firm	por
 106	12	sin	sin	es	firm (look-alike sin/sim)	[?2 letters]
 106	13	sud	sud	de	firm	de
@@ -2774,7 +2774,7 @@ line	position	token	split_label	value	status	reading_word
 108	3	rel	rel		unread group	[?1 group]
 108	4	zre	zre	que	firm	que
 108	5	xeb	xeb	no	firm	no
-108	6	xad	xad	lo	tentative	{?lo}
+108	6	xad	xad	lo	firm	lo
 108	7	tok	tok	ha	firm	haran
 108	8	X	Xr	r	firm (look-alike X)	haran
 108	9	sin	sin	es	firm (look-alike sin/sim)	haran
@@ -2794,17 +2794,17 @@ line	position	token	split_label	value	status	reading_word
 109	1	DH	DH	n	firm	ngu[?lo]s
 109	2	AH	AH	g	firm	ngu[?lo]s
 109	3	RS	RS	u	firm	ngu[?lo]s
-109	4	xad	xad	lo	tentative	{?lo}
+109	4	xad	xad	lo	firm	lo
 109	5	X	Xs	s	firm (look-alike X)	ngu[?lo]s
 109	6	dol	dol		unread group	[?1 group]
 109	7	YH	YH	y	firm	y
-109	8	sin	sin	es	firm (look-alike sin/sim)	[?esfuerco]
-109	9	MH	MH	f	firm	[?esfuerco]
-109	10	RS	RS	u	firm	[?esfuerco]
-109	11	RH	RH	e	firm	[?esfuerco]
-109	12	X	Xr	r	firm (look-alike X)	[?esfuerco]
-109	13	OT	OT	c	firm	[?esfuerco]
-109	14	TH	TH	o	firm	[?esfuerco]
+109	8	sin	sin	es	firm (look-alike sin/sim)	esfuerco
+109	9	MH	MH	f	firm	esfuerco
+109	10	RS	RS	u	firm	esfuerco
+109	11	RH	RH	e	firm	esfuerco
+109	12	X	Xr	r	firm (look-alike X)	esfuerco
+109	13	OT	OT	c	firm	esfuerco
+109	14	TH	TH	o	firm	esfuerco
 109	15	CT	CT	p	firm	[?3 letters]
 109	16	RS	RS	u	firm	[?3 letters]
 109	17	RH	RH	e	firm	[?3 letters]
@@ -2813,7 +2813,7 @@ line	position	token	split_label	value	status	reading_word
 110	1	ynz	ynz	parte	firm	parte
 110	2	sin	sim	en	firm (look-alike sin/sim)	en
 110	3	xed	xed	la	firm	la
-110	4	seg	seg	s	firm	
+110	4	seg	seg	dicha	firm	dicha
 110	5	xoy	xoy	nuestra	firm	nuestra
 110	6	PHI	PHI	s	firm	santisima
 110	7	O	O	a	firm	santisima
@@ -2858,7 +2858,7 @@ line	position	token	split_label	value	status	reading_word
 111	19	X	Xr	r	firm (look-alike X)	fauor
 111	20	saf	saf		unread group	[?1 group]
 111	21	bao	bao	todo	firm	todo
-111	22	xad	xad	lo	tentative	{?lo}
+111	22	xad	xad	lo	firm	lo
 111	23	zre	zre	que	firm	que
 112	1	bne	bne	se	firm	sea
 112	2	O	O	a	firm	sea
@@ -2869,11 +2869,11 @@ line	position	token	split_label	value	status	reading_word
 112	7	RH	RH	e	firm	[?conueniente]
 112	8	ynb	ynb	ni	firm	[?conueniente]
 112	9	sin	sin	es	firm (look-alike sin/sim)	[?conueniente]
-112	10	sio	sio	esta	tentative	{?esta}
+112	10	sio	sio	esta	firm	esta
 112	11	RH	RH	e	firm	e
 112	12	xnk	xnk	como	firm	como
 112	13	xed	xed	la	firm	la
-112	14	sof	sof		unread group	[?1 group]
+112	14	sof	sof	defension	firm	defension
 112	15	YH	YH	y	firm	y
 112	16	rak	rak	con	firm	conseruacion
 112	17	bne	bne	se	firm	conseruacion
@@ -2899,11 +2899,11 @@ line	position	token	split_label	value	status	reading_word
 113	13	KH	KH	i	firm	resistencia
 113	14	O	O	a	firm	resistencia
 113	15	sud	sud	de	firm	de
-113	16	xad	xad	lo	tentative	{?los}
-113	17	PHI	PHI	s	firm	{?los}
+113	16	xad	xad	lo	firm	los
+113	17	PHI	PHI	s	firm	los
 113	18	sag	sag	dicho	firm	dicho[s]
-113	19	suq	suq	franceses	tentative	{?franceses}
-113	20	xny	xny	e	tentative	[?4 letters]
+113	19	suq	suq	franceses	firm	franceses
+113	20	xny	xny	e	firm	[?4 letters]
 113	21	PHI	PHI	s	firm	[?4 letters]
 113	22	OT	OT	c	firm	[?4 letters]
 113	23	TH	TH	o	firm	[?4 letters]
@@ -2922,12 +2922,12 @@ line	position	token	split_label	value	status	reading_word
 114	13	FH	FH	n	firm	faltando
 114	14	GS	GS	d	firm	faltando
 114	15	TH	TH	o	firm	faltando
-114	16	xad	xad	lo	tentative	{?los}
-114	17	PHI	PHI	s	firm	{?los}
-114	18	yae	yae		unread group	[?1 group, 1 letter]
-114	19	PHI	PHI	s	firm	[?1 group, 1 letter]
-114	20	rie	rie	confederado	tentative	{?confederados}
-114	21	PHI	PHI	s	firm	{?confederados}
+114	16	xad	xad	lo	firm	los
+114	17	PHI	PHI	s	firm	los
+114	18	yae	yae	otro	firm	otros
+114	19	PHI	PHI	s	firm	otros
+114	20	rie	rie	confederado	firm	confederados
+114	21	PHI	PHI	s	firm	confederados
 114	22	dem	dem	yo	firm	yo
 114	23	FH	FH	n	firm	[?1 letter]
 115	1	CT	CT	p	firm	[?1 group, 4 letters]
@@ -2953,7 +2953,7 @@ line	position	token	split_label	value	status	reading_word
 115	21	PHI	PHI	s	firm	iamas
 115	22	O	O	a	firm	a
 115	23	xed	xed	la	firm	la
-115	24	sof	sof		unread group	[?1 group]
+115	24	sof	sof	defension	firm	defension
 115	25	sud	sud	de	firm	de
 115	26	reb	reb		unread group	[?1 group]
 116	1	YH	YH	y	firm	y
@@ -2970,17 +2970,17 @@ line	position	token	split_label	value	status	reading_word
 116	12	TH	TH	o	firm	prosecucion
 116	13	FH	FH	n	firm	prosecucion
 116	14	sud	sud	de	firm	de
-116	15	xed	xed	la	firm	las
-116	16	seg	seg	s	firm	las
-116	17	sin	sin	es	firm (look-alike sin/sim)	[?empresas]
-116	18	CT	CT	p	firm	[?empresas]
-116	19	X	Xr	r	firm (look-alike X)	[?empresas]
-116	20	RH	RH	e	firm	[?empresas]
-116	21	PHI	PHI	s	firm	[?empresas]
-116	22	Z	Z	a	firm	[?empresas]
+116	15	xed	xed	la	firm	la
+116	16	seg	seg	dicha	firm	dicha
+116	17	sin	sin	es	firm (look-alike sin/sim)	[?empresa]
+116	18	CT	CT	p	firm	[?empresa]
+116	19	X	Xr	r	firm (look-alike X)	[?empresa]
+116	20	RH	RH	e	firm	[?empresa]
+116	21	PHI	PHI	s	firm	[?empresa]
+116	22	Z	Z	a	firm	[?empresa]
 116	23	YH	YH	y	firm	y
 116	24	O	O	a	firm	a
-116	25	sio	sio	esta	tentative	{?esta}
+116	25	sio	sio	esta	firm	esta
 116	26	CT	CT	p	firm	pro-
 116	27	X	Xr	r	firm (look-alike X)	pro-
 116	28	TH	TH	o	firm	pro-
@@ -3010,9 +3010,9 @@ line	position	token	split_label	value	status	reading_word
 117	24	RH	RH	e	firm	ofrescer
 117	25	X	Xr	r	firm (look-alike X)	ofrescer
 117	26	bao	bao	todo	firm	todo
-117	27	xad	xad	lo	tentative	{?lo}
+117	27	xad	xad	lo	firm	lo
 118	1	zre	zre	que	firm	que
-118	2	xam	xam	mas	tentative	{?mas}
+118	2	xam	xam	mas	firm	mas
 118	3	dor	dor		unread group	[?1 group, 6 letters]
 118	4	RH	RH	e	firm	[?1 group, 6 letters]
 118	5	X	Xs	s	firm (look-alike X)	[?1 group, 6 letters]
@@ -3033,50 +3033,50 @@ line	position	token	split_label	value	status	reading_word
 118	20	OT	OT	c	firm	esforcar
 118	21	O	O	a	firm	esforcar
 118	22	X	Xr	r	firm (look-alike X)	esforcar
-118	23	xad	xad	lo	tentative	{?lo}
+118	23	xad	xad	lo	firm	lo
 118	24	EQ	EQ	ma	tentative	[?2 letters]
 119	1	FH	FH	n	firm	ni
 119	2	O	O	a	firm	[?1 group, 3 letters]
 119	3	ynb	ynb	ni	firm	[?1 group, 3 letters]
 119	4	yex	yex		unread group	[?1 group, 3 letters]
-119	5	xad	xad	lo	tentative	{?los}
-119	6	PHI	PHI	s	firm	{?los}
+119	5	xad	xad	lo	firm	los
+119	6	PHI	PHI	s	firm	los
 119	7	YH	YH	y	firm	y
 119	8	xnk	xnk	como	firm	como
 119	9	zue	zue		unread group	[?1 group]
 119	10	bae	bae	si	firm	sino
 119	11	xeb	xeb	no	firm	sino
-119	12	KH	KH	i	firm	[?1 group, 15 letters]
-119	13	RS	RS	u	firm	[?1 group, 15 letters]
-119	14	LAM	LAM	an	tentative	[?1 group, 15 letters]
-119	15	BO	BO	i	firm	[?1 group, 15 letters]
-119	16	RH	RH	e	firm	[?1 group, 15 letters]
-119	17	X	Xr	r	firm (look-alike X)	[?1 group, 15 letters]
-119	18	sin	sin	es	firm (look-alike sin/sim)	[?1 group, 15 letters]
-119	19	dam	dam		unread group	[?1 group, 15 letters]
-119	20	N8	N8	b	firm	[?1 group, 15 letters]
-119	21	RS	RS	u	firm	[?1 group, 15 letters]
-119	22	sin	sim	en	firm (look-alike sin/sim)	[?1 group, 15 letters]
-119	23	no	no	t	firm	[?1 group, 15 letters]
-119	24	TH	TH	o	firm	[?1 group, 15 letters]
+119	12	KH	KH	i	firm	[?17 letters]
+119	13	RS	RS	u	firm	[?17 letters]
+119	14	LAM	LAM	an	tentative	[?17 letters]
+119	15	BO	BO	i	firm	[?17 letters]
+119	16	RH	RH	e	firm	[?17 letters]
+119	17	X	Xr	r	firm (look-alike X)	[?17 letters]
+119	18	sin	sin	es	firm (look-alike sin/sim)	[?17 letters]
+119	19	dam	dam	ya	firm	[?17 letters]
+119	20	N8	N8	b	firm	[?17 letters]
+119	21	RS	RS	u	firm	[?17 letters]
+119	22	sin	sim	en	firm (look-alike sin/sim)	[?17 letters]
+119	23	no	no	t	firm	[?17 letters]
+119	24	TH	TH	o	firm	[?17 letters]
 120	1	O	O	a	firm	a
-120	2	xed	xed	la	firm	las
-120	3	seg	seg	s	firm	las
-120	4	sin	sin	es	firm (look-alike sin/sim)	[?empresas]
-120	5	CT	CT	p	firm	[?empresas]
-120	6	X	Xr	r	firm (look-alike X)	[?empresas]
-120	7	RH	RH	e	firm	[?empresas]
-120	8	PHI	PHI	s	firm	[?empresas]
-120	9	Z	Z	a	firm	[?empresas]
+120	2	xed	xed	la	firm	la
+120	3	seg	seg	dicha	firm	dicha
+120	4	sin	sin	es	firm (look-alike sin/sim)	[?empresa]
+120	5	CT	CT	p	firm	[?empresa]
+120	6	X	Xr	r	firm (look-alike X)	[?empresa]
+120	7	RH	RH	e	firm	[?empresa]
+120	8	PHI	PHI	s	firm	[?empresa]
+120	9	Z	Z	a	firm	[?empresa]
 120	10	N8	N8	b	firm	[?9 letters]
 120	11	RS	RS	u	firm	[?9 letters]
 120	12	sin	sim	en	firm (look-alike sin/sim)	[?9 letters]
 120	13	RS	RS	u	firm	[?9 letters]
 120	14	O	O	a	firm	[?9 letters]
 120	15	FH	FH	n	firm	[?9 letters]
-120	16	xaf	xaf	i	tentative	[?9 letters]
+120	16	xaf	xaf	i	firm	[?9 letters]
 120	17	OT	OT	c	firm	[?9 letters]
-120	18	sen	sen	ella	tentative	{?ella}
+120	18	sen	sen	ella	firm	ella
 120	19	bae	bae	si	firm	[?5 letters]
 120	20	FH	FH	n	firm	[?5 letters]
 120	21	sin	sin	es	firm (look-alike sin/sim)	[?5 letters]
@@ -3085,9 +3085,9 @@ line	position	token	split_label	value	status	reading_word
 120	24	KH	KH	i	firm	[?4 letters]
 120	25	TH	TH	o	firm	[?4 letters]
 120	26	DH	DH	n	firm	[?4 letters]
-121	1	pif	pif	al	firm	alg[?]
-121	2	AH	AH	g	firm	alg[?]
-121	3	dif	dif		unread group	[?1 group]
+121	1	pif	pif	al	firm	alguna
+121	2	AH	AH	g	firm	alguna
+121	3	dif	dif	una	firm	alguna
 121	4	YH	YH	y	firm	y
 121	5	tok	tok	ha	firm	[?hazer me eys]
 121	6	X	Xs	s	firm (look-alike X)	[?hazer me eys]
@@ -3098,7 +3098,7 @@ line	position	token	split_label	value	status	reading_word
 121	11	YH	YH	y	firm	[?hazer me eys]
 121	12	PHI	PHI	s	firm	[?hazer me eys]
 121	13	bok	bok		unread group	[?1 group, 1 letter]
-121	14	xaf	xaf	i	tentative	[?1 group, 1 letter]
+121	14	xaf	xaf	i	firm	[?1 group, 1 letter]
 121	15	rak	rak	con	firm	con
 121	16	GS	GS	d	firm	duplicadas
 121	17	RS	RS	u	firm	duplicadas
@@ -3122,19 +3122,19 @@ line	position	token	split_label	value	status	reading_word
 122	10	GS	GS	d	firm	triplicadas
 122	11	Z	Z	a	firm	triplicadas
 122	12	PHI	PHI	s	firm	triplicadas
-122	13	doc	doc	cart	tentative	{?cartas}
-122	14	Z	Z	a	firm	{?cartas}
-122	15	PHI	PHI	s	firm	{?cartas}
+122	13	doc	doc	ui	firm	uias
+122	14	Z	Z	a	firm	uias
+122	15	PHI	PHI	s	firm	uias
 122	16	pob	pob	por	tentative	{?por}
-122	17	xnl	xnl	mar	tentative	{?mar}
+122	17	xnl	xnl	mar	firm	mar
 122	18	YH	YH	y	firm	y
 122	19	yob	yob	por	firm	por
-122	20	beq	beq	tierra	tentative	{?tierra}
-122	21	xad	xad	lo	tentative	{?lo}
+122	20	beq	beq	tierra	firm	tierra
+122	21	xad	xad	lo	firm	lo
 122	22	zre	zre	que	firm	que
 122	23	sin	sin	es	firm (look-alike sin/sim)	es
 122	24	bao	bao	todo	firm	todo
-123	1	xad	xad	lo	tentative	{?lo}
+123	1	xad	xad	lo	firm	lo
 123	2	bac	bac	su	firm	suso
 123	3	PHI	PHI	s	firm	suso
 123	4	TH	TH	o	firm	suso
@@ -3148,9 +3148,9 @@ line	position	token	split_label	value	status	reading_word
 123	12	X	Xs	s	firm (look-alike X)	[?10 letters]
 123	13	ZH	ZH	e	firm	[?10 letters]
 123	14	YH	YH	y	firm	[?10 letters]
-123	15	xad	xad	lo	tentative	{?lo}
+123	15	xad	xad	lo	firm	lo
 123	16	zre	zre	que	firm	que
-123	17	xam	xam	mas	tentative	{?mas}
+123	17	xam	xam	mas	firm	mas
 123	18	pae	pae		unread group	[?1 group]
 123	19	bne	bne	se	firm	se
 123	20	TH	TH	o	firm	ofres-

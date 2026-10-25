@@ -45,7 +45,7 @@
   <h1>Ferdinand the Catholic to Jer&oacute;nimo de Vich, Pedrezuela, 1515</h1>
 <div class="parties"><figure class="party sender"><img src="portrait_ferdinand-the-catholic.jpg" alt="Ferdinand the Catholic" title="Ferdinand the Catholic: Portrait by Michel Sittow, c. 1500. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">from</span>Ferdinand the Catholic</figcaption></figure></div><!-- /parties -->
   <p class="sub">The last ciphered letter of Ferdinand to his Rome ambassador in the Vich papers uses a code that no deciphered letter shares. Michael Brackx recovered its symbol alphabet from the ciphertext alone; only part of the code groups could be identified, so the letter is decoded, not read.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-10-23">23 October 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-10-25">25 October 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: none (key obtained, text not read)</p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#brackx">Michael Brackx</a> (solution)</p><!-- /credits -->
 <div class="seal stuck" aria-hidden="true"><span class="long">ciphertext-only</span></div>
@@ -54,14 +54,15 @@
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#cipher">The cipher</a><a href="#key">How the key was recovered</a><a href="#checks">Checks</a><a href="#says">What it says, as far as it reads</a><a href="#open">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance">
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from the ciphertext &middot; decoded, not read: 0.636 of words read as sense</span></p>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from the ciphertext &middot; decoded, not read: 0.824 of words read as sense</span></p>
 <dl>
   <dt>The letter</dt><dd>Ferdinand the Catholic to Jer&oacute;nimo de Vich, his ambassador at Rome, Pedrezuela, 26 October 1515. Three months before the King&rsquo;s death; almost all in cipher.</dd>
   <dt>Where</dt><dd>Archivo Hist&oacute;rico Nacional, Estado 8715 N.73 (PARES 12751418), in the Vich family papers. No decipherment on the leaves or in PARES.</dd>
   <dt>The cipher</dt><dd>Homophonic letter signs mixed with three-letter code groups that stand for whole words and also for syllables and single letters inside spelled words.</dd>
-  <dt>How it was broken</dt><dd>By Michael Brackx, from the ciphertext alone: a joint annealer for sign and group values under a Spanish five-gram, then the groups read by context in three passes.</dd>
+  <dt>How it was broken</dt><dd>By Michael Brackx, from the ciphertext alone: a joint annealer for sign and group values under a Spanish five-gram, then the groups read by context, and on ll. 9&ndash;31 from a printed quotation of the letter.</dd>
   <dt>Checks</dt><dd>A matched control on <em>Lazarillo de Tormes</em> recovers every sign; the statistical validation here passes.</dd>
-  <dt>Still open</dt><dd>144 unread group tokens, 192 tentative ones, and two sign splits the PARES images are too small to check.</dd>
+  <dt>In print</dt><dd>The King&rsquo;s clear minute was printed by Doussinague in 1944 and quoted by Terrateig in 1963; found after the alphabet was recovered, then used as a crib.</dd>
+  <dt>Still open</dt><dd>77 unread group tokens, mostly names, and look-alike readings five letters over the 3% limit.</dd>
 </dl>
 </div>
 
@@ -82,19 +83,19 @@
 <h2 id="checks"><span class="num">04</span> Checks</h2>
 <ul>
 <li><strong>Matched control.</strong> <em>Lazarillo de Tormes</em>, held out of the model, enciphered the same way at the same size (3,282 tokens, 38 sign kinds, 158 group kinds). The same first step gets every sign token right and 35&ndash;44% of the group tokens: the alphabet comes out reliably, the groups only in part, as here.</li>
-<li><strong>Statistical validation</strong> (<code>docs/_validate.py</code>, firm values only, tokens as transcribed): the reading scores &minus;2.07 per letter, random keys of the same shape &minus;4.04, and a key annealed onto the shuffled ciphertext &minus;2.76 (z 42.5). Verdict: pass.</li>
-<li><strong>How much reads.</strong> Measured on Brackx&rsquo;s reading of all 124 lines, with every tentative value counted as a hole: 0.636 of words read as sense. Look-alike readings are 3.9% of the letters. That is under the project&rsquo;s 95% bar, so the letter is decoded, not read; Brackx grades it the same way.</li>
+<li><strong>Statistical validation</strong> (<code>docs/_validate.py</code>, firm values only, tokens as transcribed): after the crib the reading scores &minus;2.03 per letter, random keys of the same shape &minus;3.54, and a key annealed onto the shuffled ciphertext &minus;2.52 (z 27.8). Verdict: pass, as it was before the crib.</li>
+<li><strong>A printed text.</strong> Terrateig (1963, vol. I, pp. 631&ndash;634) quotes the letter at length from its minute in Simancas (AGS Estado leg. 847 fol. 125), which Doussinague printed in full in 1944. Brackx aligned each of the fifteen quoted passages with the cipher against random <em>Quijote</em> passages: the long quotation, 1,069 letters, fits lines 9&ndash;31 at 0.29 cost per letter against 0.98 for the best control, and 714 of its letters fall on values already firm and agree with them except at eight places, each checked on the image. It then served as a crib: 27 more groups, 11 tentative values confirmed, a few corrected.</li>
+<li><strong>How much reads.</strong> Measured on Brackx&rsquo;s reading of all 124 lines, with every tentative value counted as a hole: 0.824 of words read as sense (0.636 before the crib), 0.949 on the quoted lines 9&ndash;31. Readings that rest on look-alike signs are 3.09% of the letters, five letters over the project&rsquo;s 3% limit, and the whole is under the 95% bar, so the letter is decoded, not read.</li>
 </ul>
 
 <h2 id="says"><span class="num">05</span> What it says, as far as it reads</h2>
-<p>Ferdinand writes that he cannot help being <em>muy malcontento</em> that, through pride and delay, <em>las cosas de Italia</em> are in danger, and still less content at <em>la flaquesa del papa</em>, who seems set on terms that break what the league capitulated. <em>Yo no creo ni creere</em> it, he says; Vich is to strengthen the Pope <em>de mi parte</em> and not let him lose heart. The reading and Brackx&rsquo;s English, with every hole marked, are in <code>brackx2026/n73_reading.md</code> and <code>n73_en.md</code>.</p>
+<p>Ferdinand writes that he cannot help being <em>muy malcontento</em> that, through the <em>soberuia y locura de suycos</em>, who would not wait for his army, and the slowness of <em>mi uisorrey y capitan general</em>, <em>todas las cosas de Italia</em> are in danger. Worse is <em>la flaqueza del papa</em>, set on <em>concertarse con franceses</em> against the league&rsquo;s capitulation that no confederate may make peace or truce without the others. Vich is to strengthen the Pope <em>de mi parte</em>. The reading and Brackx&rsquo;s English, with every hole marked, are in <code>brackx2026/n73_reading.md</code> and <code>n73_en.md</code>.</p>
 
 <h2 id="open"><span class="num">06</span> What remains open</h2>
 <ul>
-<li>144 unread code-group tokens (90 kinds, most once or twice, many probably names) and 13 signs with no value.</li>
-<li>192 tentative group tokens, among them <em>bay</em> <em>visorrey</em>, <em>suh</em> <em>Emperador</em>, <em>rie</em> <em>confederado</em>: each needs a second context or a crib.</li>
-<li>The <em>sin</em>/<em>sim</em> and X choices: PARES serves the leaves at about 1,147 pixels, too small to tell the minims and sibilants apart. A high-resolution copy from the AHN would settle them.</li>
-<li>The Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516. Correspondencia in&eacute;dita con el embajador Vich</em> (CSIC, Madrid 1963), prints Ferdinand&rsquo;s letters to Vich from this archive. Volume I is on the Internet Archive for lending only; volume II was not found online. If it prints this letter, it is the crib.</li>
+<li>77 unread code-group tokens (60 kinds, most once, probably names, as in <em>por medio del [?] de Pauia</em>) and 13 signs with no value.</li>
+<li>The <em>sin</em>/<em>sim</em> and X choices: PARES serves the leaves at about 1,147 pixels, too small to tell the minims and sibilants apart. Outside the quoted lines the choices are the model&rsquo;s; a high-resolution copy from the AHN would settle the five letters over the limit.</li>
+<li>The Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516. Correspondencia in&eacute;dita con el embajador Vich</em> (CSIC, Madrid 1963), prints Ferdinand&rsquo;s letters to Vich from this archive. Volume I quotes this letter (pp. 631&ndash;634). The full minute, in Doussinague, <em>La pol&iacute;tica internacional de Fernando el Cat&oacute;lico</em> (1944), p. 520, was not found online; it would cover the rest of the letter.</li>
 </ul>
 
 <!-- texts:start -->
@@ -587,7 +588,8 @@ reading, not of the letter. `brackx2026/scripts/holecheck2.py` checks that each 
 <h2 id="sources"><span class="num">05</span> Sources</h2>
 <ul>
 <li>Archivo Hist&oacute;rico Nacional, Estado, leg. 8715 N.73, <a href="https://pares.mcu.es/ParesBusquedas20/catalogo/description/12751418" rel="noopener">PARES 12751418</a>; for comparison N.74 (12751419) and N.79 (12751424).</li>
-<li>Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516</em>, 2 vols., CSIC, Madrid 1963. Not consulted; vol. I on the Internet Archive (<code>politicaenitalia0001terr</code>, lending only).</li>
+<li>Bar&oacute;n de Terrateig, <em>Pol&iacute;tica en Italia del Rey Cat&oacute;lico 1507&ndash;1516</em>, 2 vols., CSIC, Madrid 1963; vol. I pp. 631&ndash;634 quote this letter (consulted by Brackx; not reproduced here).</li>
+<li>Jos&eacute; Mar&iacute;a Doussinague, <em>La pol&iacute;tica internacional de Fernando el Cat&oacute;lico</em>, Madrid 1944, p. 520 (the minute, AGS Estado leg. 847 fol. 125). Not seen.</li>
 <li><em>Calendar of State Papers, Spain</em>, vol. II (ed. Bergenroth, 1866), nos. 219&ndash;240, for context only.</li>
 <li>Michael Brackx, <a href="https://github.com/dbourdeau/cyphersolver/issues/94" rel="noopener">issue #94</a> and its files (23 October 2026).</li>
 </ul>

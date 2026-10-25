@@ -8,16 +8,16 @@
 #                     letters that make no word; parts joined by commas
 # and writes tokens.tsv (one row per token: line, position, token, split label, value, status, reading word) and
 # sin_x_tokens.tsv (every sin/sim and X token: assigned value, basis, model margin).
-# Input: work/reading_v1_old_notation.md / work/translation_en_v1_old_notation.md (the earlier notation), transcriptions/n73_tokens.txt, work/v15x.txt,
-# work/splitsin.tsv, work/splitx.tsv, keys/groups.json, work/signs.txt. Run from the vich1515 folder.
+# Input: work/reading_v1c.md / work/translation_en_v1c.md (the earlier notation, with the crib lines of crib_reading.py), transcriptions/n73_tokens.txt, work/v15x.txt,
+# work/splitsin.tsv, work/splitx.tsv, work/crib_tokens.tsv, keys/groups.json, work/signs.txt. Run from the vich1515 folder.
 import json, re, collections
 
-TENT_SIGNS = {'EQ', 'LAM', 'SL', 'OS', 'D'}
+TENT_SIGNS = {'EQ', 'LAM', 'OS', 'D', 'ZHqt'}   # SL = ll is firm since the Terrateig crib
 IMG = {(12, 1): 'sin', (12, 2): 'sim', (13, 1): 'sin', (17, 1): 'sim', (21, 1): 'sim', (35, 2): 'sin'}  # setsin.py
 S = dict(kv.split('=') for kv in open('work/signs.txt').read().split())
 G = json.load(open('keys/groups.json'))
 orig = [l.split() for l in open('transcriptions/n73_tokens.txt')]
-split = [l.split() for l in open('work/v15x.txt')]
+split = [l.split() for l in open('work/v15c.txt')]   # v15x.txt with the crib's per-token labels (crib_apply.py)
 isg = lambda t: t.islower() and t.isalpha()
 
 
@@ -181,6 +181,9 @@ def convert_line(n, line):
                     s_out += ch
                 if open_: s_out += '}'
                 res.append(s_out); hole_info[i] = ('T', None, None)
+            elif item_exact[i] and us and all(t is not None for t in toks) and all(s.startswith('firm') for s in st):
+                # a word the earlier notation marked, now carried whole by firm values (the crib): plain
+                res.append(it[2]); hole_info[i] = ('P', None, None)
             else:
                 res.append(f'[?{it[2]}]'); hole_info[i] = ('D', None, None)
             i += 1; continue
@@ -215,6 +218,9 @@ def holes_seq(items):
     return [(i, 'q' if it[0] in 'HD' else 's') for i, it in enumerate(items) if it[0] in 'HDS']
 
 
+EN_PLAIN_HOLE = []   # English bare holes facing a reading word now plain (to fill by hand)
+
+
 def convert_en(line, r_items, r_info):
     e_items = parse(line)
     rq = [i for i, k in holes_seq(r_items) if k == 'q']
@@ -227,7 +233,8 @@ def convert_en(line, r_items, r_info):
         if it[0] == 'H':
             ri = emap[i]; info = r_info.get(ri)
             if info and info[0] == 'T': res.append('{?}'); i += 1; continue
-            if info and info[0] not in 'TDS':
+            if info and info[0] == 'P': EN_PLAIN_HOLE.append(line); res.append('[?]'); i += 1; continue
+            if info and info[0] not in 'TDSP':
                 lab, sz, run = info
                 # merge following English bare holes mapped to the same reading run, separated by spaces only
                 j = i; members = [ri]
@@ -244,14 +251,14 @@ def convert_en(line, r_items, r_info):
             res.append('[?]'); i += 1; continue
         if it[0] == 'D':
             ri = emap[i]; info = r_info.get(ri)
-            res.append('{?' + it[2] + '}' if info and info[0] == 'T' else f'[?{it[2]}]'); i += 1; continue
+            res.append('{?' + it[2] + '}' if info and info[0] == 'T' else it[2] if info and info[0] == 'P' else f'[?{it[2]}]'); i += 1; continue
         if it[0] == 'S': res.append(f'[{it[2]}]'); i += 1; continue
         res.append(it[1]); i += 1
     return ''.join(res)
 
 
-R_text, R = block('work/reading_v1_old_notation.md')
-E_text, E = block('work/translation_en_v1_old_notation.md')
+R_text, R = block('work/reading_v1c.md')   # the earlier-notation reading with the crib's lines (crib_reading.py)
+E_text, E = block('work/translation_en_v1c.md')
 newR, newE = {}, {}; rows = []; bad = []; flagged_all = []; costs = []
 for n in sorted(R):
     new, items, info, tok_unit, units, cost, flagged = convert_line(n, R[n])
@@ -269,7 +276,7 @@ for n in sorted(R):
         else:
             k, ii, ch = units[u]; it = items[ii]
             if it[0] == 'H': rw = info[ii][0] if info.get(ii) and info[ii][0] not in 'TDS' else '[?]'
-            elif it[0] == 'D': rw = ('{?' + it[2] + '}') if info.get(ii, ('',))[0] == 'T' else f'[?{it[2]}]'
+            elif it[0] == 'D': rw = ('{?' + it[2] + '}') if info.get(ii, ('',))[0] == 'T' else it[2] if info.get(ii, ('',))[0] == 'P' else f'[?{it[2]}]'
             else:
                 # the plain word containing this letter in the old line
                 pos = sum(len(x[1]) if x[0] == 'C' else len(x[2]) + 3 if x[0] == 'D' else len(x[2]) + 2 if x[0] == 'S' else 3 for x in items[:ii])
@@ -298,23 +305,31 @@ def rebuild(text, lines):
 # English lines adjusted by hand where the reading marks a word the English carries differently (checked with
 # holecheck2.py): a size label glued to a partial word, and plain words resting on a tentative sign or group.
 EN_FIX = {
-    55: ("that if some [?1 group, 1 letter]", "that if some[?1 group, 1 letter]"),
-    71: ("and from this was born", "and from {?this} was born"),
     76: ("him; I, for", "him; I, be-"),
-    77: ("my part, am very {?ill}-content", "cause I am {?of this} very {?ill}-content"),
-    99: ("without some delay [?1 group] [?1 group] with", "without delay some[?1 group] [?1 group] with"),
-    103: ("thrown out of Italy", "{?thrown} out of Italy"),
-    121: ("some [?1 group] and", "some[?1 group] and"),
+    # l. 14: estan rests on firm sio + FH since the rounds after the crib, so its fix is retired
+    61: ("what he wishes", "what he {?wishes}"),
+    # ll. 99 and 121: alg-una is read since the rounds after the crib (rounds_reading.py), so their fixes are retired
+    # words now plain by the crib's firm values (xad = lo, sio = esta) where the English had a bare hole
+    46: ("[?1 group] [?] [?7 letters]", "[?1 group] it [?7 letters]"),
+    72: ("[?1 group, 5 letters] [?] [?1 group]", "[?1 group, 5 letters] it [?1 group]"),
+    118: ("strengthen [?] [?2 letters]", "strengthen it [?2 letters]"),
+    60: ("{?lord} of [?] the spiritual", "{?lord} of the spiritual"),
+    66: ("[?1 sign, 4 letters] [?] could", "[?1 sign, 4 letters] it could"),
 }
+EN_FIX[60] = ("lord of [?] the spiritual", "lord of the spiritual")   # bel = senor is firm since the rounds
+skipped = []
 for n, (x, y) in EN_FIX.items():
-    assert x in newE[n], (n, newE[n]); newE[n] = newE[n].replace(x, y)
+    if x in newE[n]: newE[n] = newE[n].replace(x, y)
+    else: skipped.append(n)   # the line was rewritten later (rounds_reading.py); holecheck2.py checks the result
+if skipped: print('EN_FIX not applied (line already changed):', skipped)
 open('work/reading_body_v2.txt', 'w').write('\n'.join(f'{n:3d}  {newR[n]}' for n in sorted(newR)) + '\n')
 open('work/english_body_v2.txt', 'w').write('\n'.join(f'{n:3d}  {newE[n]}' for n in sorted(newE)) + '\n')
 with open('tokens.tsv', 'w') as f:
     f.write('line\tposition\ttoken\tsplit_label\tvalue\tstatus\treading_word\n')
     for r in rows: f.write('\t'.join(map(str, r)) + '\n')
 
-# sin/sim and X tokens
+# sin/sim and X tokens; CRIB: the tokens the Terrateig quotation decides (crib_apply.py and the aligned stretch)
+CRIB = {(int(x[0]), int(x[1])) for x in (l.split('\t') for l in open('work/crib_tokens.tsv')) if x[0].isdigit()}
 ssin = {(int(a), int(b)): (float(m), c) for a, b, l, r, m, c in (x.rstrip('\n').split('\t') for x in open('work/splitsin.tsv'))}
 sx = {int(k): (c, float(m)) for k, l, r, c, m in (x.rstrip('\n').split('\t') for x in open('work/splitx.tsv'))}
 with open('sin_x_tokens.tsv', 'w') as f:
@@ -326,13 +341,17 @@ with open('sin_x_tokens.tsv', 'w') as f:
             k += 1
             if o == 'sin':
                 nsin += 1
-                if (n, nsin) in IMG: basis = 'image-checked'
+                # an image reading the quotation overrules is marked crib (13.19: es on the image, en printed)
+                if (n, nsin) in IMG and IMG[(n, nsin)] == s: basis = 'image-checked'
+                elif (n, j) in CRIB: basis = 'crib'
                 else: basis = 'model-assigned'
                 m = ssin.get((n, j), (None, None))[0]
                 f.write(f'{n}\t{j}\tsin\t{s}\t{G[s]["value"]}\t{basis}\t{"" if m is None else f"{m:+.2f} (es-en)"}\n')
             elif o == 'sim':
-                f.write(f'{n}\t{j}\tsim\tsim\ten\ttranscribed sim\t\n')
+                f.write(f'{n}\t{j}\tsim\t{s}\t{G[s]["value"]}\t{"crib" if (n, j) in CRIB else "transcribed sim"}\t\n')
             elif o == 'X':
                 c, m = sx[k]
-                f.write(f'{n}\t{j}\tX\t{s}\t{c}\tmodel-assigned\t{m:.2f} (best-second)\n')
+                if (n, j) in CRIB: c = S[s]
+                f.write(f'{n}\t{j}\tX\t{s}\t{c}\t{"crib" if (n, j) in CRIB else "model-assigned"}\t{m:.2f} (best-second)\n')
 print('done; unmapped English lines:', bad, '; tentative-plain lines:', flagged_all)
+print('English bare holes facing a now-plain word:', EN_PLAIN_HOLE)

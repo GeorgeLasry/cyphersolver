@@ -61,10 +61,10 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unknown",
-   "where": "Terrateig, Política en Italia del Rey Católico (1963) vol. II may print Ferdinand's letters to Vich from AHN Estado; not seen (vol. I only on the Internet Archive, lending); CSP Spain II no. 240 refers to this letter but gives no text of it",
+   "exists": "in print",
+   "where": "Ferdinand's minute of this letter (AGS Estado leg. 847 fol. 125, not digitised) printed in full by Doussinague, La política internacional de Fernando el Católico (1944) p. 520 (not seen, not online), and quoted at length by Terrateig, Política en Italia del Rey Católico (1963) vol. I pp. 631-634 (lines 9-31 of the cipher). A clear draft, not a decipherment: no key was published.",
    "found": "during attempt",
-   "used": false
+   "used": true
   },
   "inputs": [
    "images"
@@ -164,44 +164,122 @@
    "what": "Terrateig, Politica en Italia del Rey Catolico 1507-1516 (CSIC 1963): vol. I on the Internet Archive (politicaenitalia0001terr, lending only, search needs a login); vol. II, which should print the letters to Vich, not found online (Brackx).",
    "result": "failed"
   },
-  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2814 tokens, 67 types, es-golden-age order 4: reading -2.068 per letter; random keys -4.04 (z 8.8); key annealed onto shuffled ciphertext best -2.742 (mean -2.76, z 42.5); annealer on the real text -2.036. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-10-25",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 3048 tokens, 127 types, es-golden-age order 4: reading -2.025 per letter; random keys -3.543 (z 8.3); key annealed onto shuffled ciphertext best -2.5 (mean -2.524, z 27.8); annealer on the real text -2.027. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "literature search",
+   "what": "Brackx found Terrateig 1963 vol. I pp. 631-634 discussing this letter and quoting it at length from the minute (AGS Estado leg. 847 fol. 125; printed in full by Doussinague 1944 p. 520, not online).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "EM alignment",
+    "statistical test"
+   ],
+   "what": "Each of Terrateig's 15 passages aligned with the token stream (gapped, anchored on firm values) against 12 Don Quijote passages of the same length: the long quotation (1,069 letters) at 0.29 cost per letter (best control 0.98) on ll. 9-31, two short phrases also; 714 of its letters fall on already-firm values and agree except at 8 places, checked on the image. 27 groups read, 11 tentative values confirmed, seg and soo corrected, six tentative values replaced; 38 sin/sim/X tokens decided.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Four rounds applying the new values and reading remaining groups by context (three also from Ferdinand's letter to the Swiss of the same month, Terrateig p. 634); groups firm/tentative/unread 93% / 1% / 6% of tokens; the last round changed nothing.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Taken in here (we had taken in the gist before the crib update): v10_relabel.share 0.824 (1,099 words, 235 holes); _validate.py on the firm values pass (reading -2.025, shuffled refit -2.524, random keys -3.543). Still decoded, not read: look-alike readings 3.09%.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-23", "model": "es-golden-age", "file": "validation.tsv", "tokens": 2814, "types": 67, "tokens_per_type": 42.0, "score": -2.068, "nulls": {"random keys": {"n": 200, "mean": -4.04, "sd": 0.224, "max": -3.542, "z": 8.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.76, "sd": 0.016, "max": -2.742, "z": 42.5, "p": 0.1429}}, "power": -2.036, "verdict": "pass", "notes": "claimed per-occurrence score -2.002; polyphony 0.045; 349 unread tokens left out; annealer on the real text from random keys reached -2.036"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-25",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 3048,
+   "types": 127,
+   "tokens_per_type": 24.0,
+   "score": -2.025,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.543,
+     "sd": 0.182,
+     "max": -3.129,
+     "z": 8.3,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.524,
+     "sd": 0.018,
+     "max": -2.5,
+     "z": 27.8,
+     "p": 0.1429
+    }
+   },
+   "power": -2.027,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.978; polyphony 0.048; 115 unread tokens left out; annealer on the real text from random keys reached -2.027"
+  },
   "method": "key recovered from ciphertext-only",
-  "method_basis": "Michael Brackx recovered the sign alphabet ciphertext-only (joint annealing of sign and group values against a Spanish 5-gram, with an encipherment-cost term; no crib) and read 40 code-group types by context (issue #94, Oct 2026). Checked on a matched Lazarillo control, where the same first step gets every sign token right and 35-44% of group tokens, and here by docs/_validate.py (pass). The text is not read: 144 group tokens unread, 192 tentative, and the sin/sim and X splits are model-assigned.",
+  "method_basis": "Michael Brackx recovered the sign alphabet ciphertext-only (joint annealing of sign and group values against a Spanish 5-gram, with an encipherment-cost term; no crib) and read 40 code-group types by context (issue #94, 23 Oct 2026); checked on a matched Lazarillo control and by docs/_validate.py (pass). He then found Terrateig 1963 vol. I pp. 631-634 quoting the letter from its minute, used the long quotation as a crib for ll. 9-31 (27 groups read, 11 tentative values confirmed, about 8 corrected) and four context rounds after it. The method stays key recovered from ciphertext-only (the alphabet and the first 40 groups came before the print was found); the code-group extension rests partly on external plaintext. The text is not read: 77 group tokens unread, look-alike readings 3.09% of letters.",
   "contribution": [
    "key recovered",
    "decipherment with ambiguous key"
   ],
   "class": "not read",
   "key": "partial",
-  "fraction_read": 0.636,
+  "fraction_read": 0.824,
   "fraction_read_method": "measured",
-  "fraction_read_source": "brackx2026/n73_reading.md, research/reading_audit/v10_relabel.share: 839 words, 480 holes and doubtful words (every tentative value counted as a hole): 0.636.",
-  "verification": ["matched control", "statistical test"],
+  "fraction_read_source": "brackx2026/n73_reading.md (gist refreshed 23 Oct 2026 after the Terrateig crib), research/reading_audit/v10_relabel.share: 1,099 words, 235 holes and doubtful words: 0.824 (ll. 9-31, the quoted stretch: 0.949).",
+  "verification": [
+   "matched control",
+   "statistical test",
+   "independent clear copy"
+  ],
   "gaps": [
    {
-    "item": "144 unread code-group tokens (90 types, mostly once or twice, many probably names) and 13 unvalued signs",
+    "item": "77 unread code-group tokens (60 types, most once, probably names, e.g. 'por medio del [?1 group] de Pauia') and 13 unvalued signs",
     "blocker": "no-key-material",
-    "detail": "Read by context as far as the contexts go (three passes); a crib is needed: Vich's answer, a Rome decipherment, or Terrateig 1963 vol. II, which is not online (vol. I only, lending, on the Internet Archive as politicaenitalia0001terr)"
+    "detail": "Read by context in four rounds after the crib; the last round changed nothing. The rest needs the minute (AGS Estado leg. 847 fol. 125, not digitised) or Doussinague 1944 p. 520 (not online)"
    },
    {
-    "item": "192 tentative group tokens (29 types: bay = uisorrey, suh = emperador, rie = confederado ...)",
-    "blocker": "no-key-material",
-    "detail": "each needs a second context or a crib"
-   },
-   {
-    "item": "sin/sim (151 tokens) and X = r/s/z (171 tokens): split by the language model in context, 6 tokens checked on the image",
+    "item": "look-alike readings 3.09% of letters (165 of 5,337), 5 letters over the 3% limit: sin/sim minims and X = r/s/z outside the quoted stretch",
     "blocker": "needs-physical-access",
-    "detail": "PARES serves the record at 1,137-1,147 px; a high-resolution copy from the AHN would settle the minims and the sibilants"
+    "detail": "PARES serves the record at 1,147 px; a high-resolution copy from the AHN would settle three sin close calls or five X tokens"
+   },
+   {
+    "item": "lines outside the quoted stretch ll. 9-31 (read share 0.824 overall, 0.949 on ll. 9-31)",
+    "blocker": "needs-physical-access",
+    "detail": "no crib outside Terrateig's quotation: the minute or Doussinague 1944 would give one"
    }
   ],
-  "notes": "Split 14 Oct 2026 from vich1511. Sign alphabet recovered ciphertext-only by Michael Brackx (issue #94, 23 Oct 2026); the decode is not yet a reading (0.636).",
+  "notes": "Split 14 Oct 2026 from vich1511. Sign alphabet recovered ciphertext-only by Michael Brackx (issue #94); code groups extended with the Terrateig 1963 quotation as a crib (the letter's minute is in print, Doussinague 1944). Decoded, not read (0.824).",
   "credits": [
    {
     "who": "brackx",
     "role": "solution",
-    "note": "sign alphabet recovered ciphertext-only, code groups read by context, reading of all 124 lines with English, token table and scripts (with Claude Code, Claude Opus 5.5)",
+    "note": "sign alphabet recovered ciphertext-only, code groups read by context and from the Terrateig crib, reading of all 124 lines with English, token table and scripts (with Claude Code, Claude Opus 5.5)",
     "date": "2026-10-23",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/94"
    }
@@ -216,10 +294,11 @@
     "translation": "brackx2026/n73_en.md",
     "language": "es",
     "state": "decoded, not read",
-    "read_share": 0.636,
-    "summary": "Ferdinand to Vich at Rome, 26 Oct 1515 (Brackx's partial decode): he cannot help being displeased that through pride and remissness affairs in Italy are in danger, and more so at the weakness of the Pope, who seems set to come to terms against what the league capitulated; he does not believe it, and Vich is to strengthen the Pope on his behalf.",
-    "note": "23 Oct 2026: 0.636 of words read as sense (v10, tentative values as holes); 3.9% of letters on look-alike readings; Brackx's own grading is decoded, not read."
+    "read_share": 0.824,
+    "summary": "Ferdinand to Vich at Rome, 26 Oct 1515: he is displeased that through the Swiss's pride and folly in not waiting for his army, and the slowness of his viceroy and captain general, all of Italy is in danger, and still more at the weakness of the Pope, who is set on coming to terms with the French against the league's capitulation that no confederate may make peace or truce without the others; he does not believe the Pope will keep anything else, and Vich is to strengthen him on his behalf.",
+    "note": "23 Oct 2026 (gist refreshed after the Terrateig crib): 0.824 of words read as sense (v10), 0.949 on ll. 9-31; look-alike readings 3.09% of letters, 5 letters over the 3% limit: decoded, not read (Brackx leaves the class to us)."
    }
-  ]
+  ],
+  "first_break": false
  }
 }

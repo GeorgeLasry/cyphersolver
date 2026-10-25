@@ -1125,7 +1125,7 @@ PAGES = [
          rights='Manuscript images: Archivo Hist&oacute;rico Nacional (PARES)'),
     dict(slug='vich1515', label='Vich 1515', year='1515', y=1515.82, place='Pedrezuela &rarr; Rome', st='stuck', stt='key recovered, not read',
          title='Ferdinand the Catholic to Jer&oacute;nimo de Vich, Pedrezuela, 1515',
-         blurb='Ferdinand&rsquo;s letter of 26 October 1515 to his ambassador at Rome, almost all in cipher and with no decipherment (AHN Estado 8715 N.73). It is not in the 1511&ndash;12 nomenclator but in a code of three-letter groups and signs that no deciphered letter shares. Transcribed in full, 3,177 tokens. Michael Brackx recovered its symbol alphabet from the ciphertext alone: the code groups stand for syllables inside spelled words as well as for words. Many groups stay open, so the letter is decoded, not read.',
+         blurb='Ferdinand&rsquo;s letter of 26 October 1515 to his ambassador at Rome, almost all in cipher and with no decipherment (AHN Estado 8715 N.73). It is not in the 1511&ndash;12 nomenclator but in a code of three-letter groups and signs that no deciphered letter shares. Transcribed in full, 3,177 tokens. Michael Brackx recovered its symbol alphabet from the ciphertext alone: the code groups stand for syllables inside spelled words as well as for words. A printed quotation of the letter then confirmed a long stretch; it is still decoded, not read.',
          quote='&ldquo;la flaquesa del papa&rdquo;',
          rights='Manuscript images: Archivo Hist&oacute;rico Nacional (PARES)'),
     dict(slug='ayala1516', label='Ayala 1516', year='1516', y=1516.66, place='Brussels &rarr; Cardinal Cisneros', st='found', stt='printed 1875; re-read',
