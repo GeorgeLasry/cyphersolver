@@ -1,46 +1,12 @@
-# Archbishop of Bremen to Johan Adler Salvius, 1631 (Riksarkivet, DECODE R4330-R4331; from catalogue #207)
+# Riksarkivet 1628–1646 group (catalogue #207, DECODE R4282–R4341)
 
-Status: in progress
+Outcome (21 Sept 2026): **read in part.** The two Bremen letters of 1631 are read in full; R4282, R4284 and R4306
+were attempted and stay open; the Rusdorff (1628) and E 708 (June 1633) letters were surveyed, not worked.
+Write-up: docs/riksarkivet1628.html.
 
-23 Oct 2026, re-reading (REREAD_BRIEF b33): **key recovered from the interlinear glosses; both letters and the
-postscript built into sentences and translated: read (grade B).** DECODE R4330/R4331 re-fetched (photographs only, no
-transcription or comment; no printed edition found). Clear German re-read on 2x crops of the photographs, 23 figure
-labels corrected (`bremen1631_corrections.tsv`, key unchanged), every cipher word aligned with its decode
-(`bremen1631_aligned.txt`, `research/reading_audit/b33_br_build.py`: 118 of 132 exact, 10 clerk's slips read from the
-gloss, 4 holes), name numbers 4, 5, 7, 17, 27, 32, 59, 83 substituted from the glosses. Reading `bremen1631_reading.md`,
-English `bremen1631_en.md`, log `bremen1631_reread_log.md`. b17 (de): 0.600 plain, 0.843 explicit holes only (before:
-no reading body, 0.477 on the decode); look-alike letters 0.9%. Class back to read, method key recovered based on
-adjacent plaintext, fraction_read 1.0.
-
-22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **key recovered, letters
-decoded, not read.** Every figure group of R4330 and R4331 has a value, but `bremen_decoded.txt` leaves the groups as
-unsegmented strings with slips (`<ouolfk>`, `<itslatdgefodert>`, `<euserstege>`) inside a clear German transcribed with
-`?` from phone photographs, with the name numbers (4, 59, 82 ...) left bare. Sentences can be rebuilt only by guesswork
-from the glosses. `outcome.class` read -> not read, method -> not solved, key stays recovered; the 100% figure (groups
-with a value) is withdrawn as a reading figure. Next: build the two letters into sentences and translate them.
-
-Outcome (21 Sept 2026): **key recovered from the interlinear glosses (adjacent plaintext); both letters deciphered in
-full.** Write-up: docs/riksarkivet1628.html.
-
-Split on 14 Oct 2026 under the one-key rule (George Lasry, 14 Oct 2026). Until then this folder was the whole of
-catalogue entry 207, which bundled 14 DECODE records from Riksarkivet Stockholm under "Unknown sender → unknown
-recipient, Stockholm, Latin, 1628–1646". Viewed here on 21 Sept 2026 they are four unrelated groups in different
-ciphers. This entry now keeps only the Bremen letters (R4330, R4331) and their band key. The others are different
-ciphers, each with its own page:
-
-- R4282 (låda II:113, Latin letter cipher): deciphered by George Lasry with CTTS, entry
-  [`targets/decode4282/`](../decode4282/NOTES.md). This folder's own attempt of 21 Sept 2026 (blind annealing, failed)
-  is kept as history in `r4282_transcription.txt` and `r4282_codes.txt`; decode4282 is the canonical entry.
-- R4284 (låda II:114, Latin numbers, 1628): [`targets/riksarkivet4284/`](../riksarkivet4284/NOTES.md), attempted, open.
-- R4306 (låda II:133, to Amsterdam, 1632?): [`targets/sweden4306/`](../sweden4306/NOTES.md), George Lasry's contributed
-  partial Dutch decipherment (17 Oct 2026; transcribed with CTTS, then solved with Opus 5.5). This project's own
-  attempt of 21 Sept 2026 (annealing in ten languages, box keys R4296/R4310; failed) is folded into that entry, its
-  transcriptions in `targets/sweden4306/project_attempt/` (18 Oct 2026).
-- R4333-R4337 (Rusdorff → Oxenstierna 1628): [`targets/rusdorff1628/`](../rusdorff1628/NOTES.md), surveyed only.
-- R4338-R4341 (E 708, June 1633): [`targets/oxenstierna1633/`](../oxenstierna1633/NOTES.md), surveyed only.
-
-The survey table of 21 Sept 2026 (the state column is as of that day; R4282 has since been deciphered by Lasry, and
-R4306 deciphered in part by Lasry, sweden4306):
+Catalogue entry 207 bundled 14 DECODE records from Riksarkivet Stockholm under "Unknown sender → unknown recipient,
+Stockholm, Latin, 1628–1646". Viewed here on 21 Sept 2026, they turn out to be four unrelated groups. None of them is
+"unknown → unknown", and only two are in Latin.
 
 | records | what it is | system | state |
 |---|---|---|---|
@@ -52,13 +18,20 @@ R4306 deciphered in part by Lasry, sweden4306):
 | R4338–R4341 (Oxenstiernska saml. E 708) | Swedish letters to Oxenstierna, June 1633 (DECODE's 1646 is wrong; the leaves are dated 8/18 and 27 June 1633) | two-digit letter code, four-digit nomenclator (1564, 3143, 3319 …) and letter-pair codes (rr, mm, aa, tt); interlinear decipherments at the time on some groups | read in part at the time |
 
 ## Images and access
-`decode/` (git-ignored, not in this checkout) held the record pages and images (DECODE public records; cookie from
-`targets/bordeaux/decode/cookie.txt`). The Bremen letters are DECODE phone photographs, 2448 x 3264.
+`decode/` holds the record pages and images (DECODE public records; cookie from `targets/bordeaux/decode/cookie.txt`).
+Images are git-ignored. `decode/keys/` holds the images of 70 Chifferklaver låda II key records (R4259–R4329).
 
-`solve_num.py` and `qg.py` (the numeric annealer used on R4284 and R4306) stay here as shared tooling for those two
-entries (riksarkivet4284, and the project attempt recorded in sweden4306); `mk_validation.py` writes the Bremen `validation.tsv`.
+## Work so far (21 Sept 2026)
+- R4306 transcribed by agent (463 numbers), then re-transcribed keeping the scribe's variant forms (34/74, 40/4o/9o,
+  30/3o/70/7o: 55 tokens). Monoalphabetic by IoC (0.078), "34 42" ×31. Annealing with quadgram models in nl, de, la,
+  fr, sv, en, it, es, pt, da, as simple substitution, with low/high numbers as word breaks, and as homophonic: no
+  language converged (best ≈ −4.3/char against ≈ −2.5 for real text). Not read.
+- R4284 transcribed by agent (754 numbers, 108 distinct; ~20 doubtful multi-digit readings). Homophonic Latin
+  annealing (8 × 250k): Latin-sounding nonsense only. Not read.
+- Key sweep: the Siebenbürgen "Schauis" key (R4310, a = 9 50 71 86) and the 1632 word-end-30 key (R4296) tested
+  against R4306 and R4284: neither fits.
 
-## Bremen 1631 (R4330, R4331): key recovered, read 23 Oct 2026
+## Bremen 1631 (R4330, R4331): read
 Transcribed with the interlinear glosses (`bremen_transcription.txt`). Aligning glossed words to their numbers gave a
 band key: each letter has four consecutive numbers, the bands in a scrambled order:
 
@@ -78,26 +51,42 @@ Swedish succour — foot, dragoons, "etliche tausend" — against the imperial/L
 Bönninghausen in Westphalia; his men have taken the Burg and are attacking the schantze; he fears the enemy will
 ravage the Lüneburg country and asks that the Stift be included in the accord if the Neuenburg garrison marches out.
 
+## What stays open
+- R4282 (Latin letter cipher, ~33 signs, ~1,000 letters): homophonic and substitution annealing over the written word
+  divisions and without them gave no Latin (best −2.77/char with breaks). Either the transcription merges signs
+  (u/n/μ, q/g, b/h, o/8) or the system is not a plain substitution. The clear words (et qualis sit eius futurus
+  status dubitatur; sed tamen ut res; tractatus magnas admodum; Mittatur nobis responsum) are the cribs to try next.
+- R4284 (Latin, 108 numbers): not broken. The leaf with effusorem sanguinis / pestem patriae / praeter naturalem /
+  disturbatorem religionis written over their letter-cipher equivalents is a key test for a *letter* cipher, maybe
+  R4282's, and was not used yet.
+- R4306 (1632, to Amsterdam): monoalphabetic by IoC but no language fits; the digit-variant question is open.
+- R4333–R4337 (Rusdorff 1628) and R4338–R4341 (E 708, June 1633, Swedish): not worked. E 708 carries interlinear
+  decipherments of the time and mixes two-digit letters with four-digit nomenclator codes and letter pairs; the key
+  collection lists a key "Oxenstierna and Lars Nilsson Tungel (1633)" that was not identified among the 70 key
+  records fetched. The band-grid idea from Bremen was not tested on them.
+
 ## Remaining gaps
-
-- R4330 and R4331 not built into sentences (reading audit 22 Oct 2026): closed 23 Oct 2026, read (bremen1631_reading.md)
-- R4330 one cipher word after *westpfelische* (23 34 81 22 73 80 21, decodes *tortert*) and the clear words of its sentence - blocker: illegible
-- name numbers 18, 19, 31, 82, 86 (and 42 in R4330) - blocker: no-key-material
-- about 30 clear words marked [?word] - blocker: illegible
-
-Key: every group has a value; the 23 Oct re-reading corrected 23 figure labels on the photographs and changed no key
-value. The statistical validation (11 Oct 2026, `validation.tsv`) passes.
+- R4282 (Latin letter cipher, ~1,000 letters) - blocker: not-attempted; blind substitution/homophonic annealing failed; the clear-word cribs and the R4284 key-test leaf were not used, and 68 of the 70 fetched key records were not tried
+- R4284 (Latin, 108 number values) - blocker: not-attempted; homophonic Latin anneal gave nonsense; only keys R4310 and R4296 tried; key-test leaf unused
+- R4306 (1632, to Amsterdam, numbers 5-203) - blocker: not-attempted; anneal in 11 languages failed; digit-variant question open; only 2 keys tried
+- R4333-R4337 (Rusdorff to Oxenstierna, 1628) - blocker: not-attempted; surveyed only
+- R4338-R4341 (E 708, June 1633) - blocker: not-attempted; surveyed only; interlinear decipherments of the time unused; Tungel 1633 key not identified among the 70 fetched
 
 ## Escalation
-- [x] siblings: all 14 records of catalogue 207 opened and sorted; the others are separate entries (above)
-- [x] clear-pages: the interlinear glosses are the decipherment of the time, used to rebuild the key
-- [n/a] known-keys: key rebuilt from the glosses; no outside key needed
-- [x] print: web search 23 Oct 2026 (Johann Friedrich, Salvius, 1631, Reinach, Gronsfeld, Neuenburg): no edition found
-- [x] key-rebuild: band key from glosses, completed from unglossed words and the six-column grid
-- [x] retry: every group of both letters decoded (bremen_decoded.txt); 23 Oct 2026 re-read on the photographs, figures corrected, letters built into sentences and translated
+- [x] siblings: all 14 records opened and sorted into four groups; 70 Chifferklaver key records R4259-R4329 fetched
+- [ ] clear-pages: not done — use the E 708 interlinear decipherments and the R4284 key-test leaf as cribs
+- [ ] known-keys: not done — only R4310 and R4296 tested; try the other 68 key records against R4282, R4284, R4306 and the Rusdorff letters
+- [ ] print: not done — search Rikskanslern Axel Oxenstiernas skrifter och brefvexling (series II) for the Rusdorff and 1633 letters, and Camerarius editions for R4284
+- [x] key-rebuild: Bremen band key rebuilt from glosses (6-column grid); blind anneals run on R4282/R4284/R4306 without result
+- [ ] retry: not done — no extended key yet to rerun the open records with
 
-## Assumptions for George's review
-- R4282 belongs to George Lasry's entry `decode4282`; its outcome (key recovered from ciphertext-only, read) is left as
-  he filed it, and nothing of this folder's failed 21 Sept attempt is credited to or subtracted from it.
-- The Rusdorff letters (R4333-R4337) and the E 708 letters (R4338-R4341) are each kept as one entry by correspondence;
-  no shared key is claimed for either group, and they are not worked.
+## Keys from KHA A23-311 tested (25 Oct 2026)
+
+Ernst Casimir of Nassau-Dietz's key folder (KHA A23-311, `../casimir1618/`) holds eight numeric letter keys of
+1618-1627 (Utrecht 1618, Casembroot 1623, Justinus van Nassau 1624, Frederik Hendrik c. 1624-26, the 1626 IJssel-front
+four-alphabet key, Graf Solms 1627, the Nassau counts' key), transcribed to `../casimir1618/key_*.tsv`.
+`test_casimir_keys.py` (`test_casimir_keys.log`) decodes R4284 and R4306 with each and scores la / nl-1600 / de-1640s /
+fr-1600-letters: every key gives gibberish (-4.6 to -8.6 per char; coverage 8-84%). None of them is the key.
+Rusdorff R4333-R4337: images fetched to `decode/` (git-ignored); the numbers run in dotted groups inside clear German
+and go above 100 (e.g. 110, 103 on R4333 p.1), beyond the range of every A23-311 letter key, so these keys are ruled
+out without a full transcription.

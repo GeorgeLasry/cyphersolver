@@ -1,260 +1,296 @@
 {
- "schema_version": 1,
- "target": "riksarkivet1628",
- "title": "Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius at Hamburg, Nov-Dec 1631 (Riksarkivet, DECODE R4330-R4331; from catalogue item 207)",
- "documents": [
-  {
-   "id": "bremen1631",
-   "read": "read",
-   "shelfmark": "Riksarkivet Stockholm, DECODE R4330 and R4331 (Riksarkivet_Bremen_Tott_1631-1, -2)",
-   "date": "27 Nov and ? Dec 1631",
-   "year": 1631,
-   "country": "Germany",
-   "route": "Johann Friedrich, archbishop of Bremen -> Johan Adler Salvius, Hamburg",
-   "language": "German",
-   "pages": 7,
-   "cleartext_in_document": "interspersed",
-   "plaintext": {
-    "location": [
-     "interlinear"
-    ],
-    "source": "Contemporary decipherment written above most number groups (about 80%).",
-    "partial": true
-   },
-   "length": {
-    "tokens": 1130,
-    "unit": "code groups",
-    "measured": true,
-    "file": "bremen_transcription.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "DECODE phone photographs, 2448 x 3264",
-    "image_quality": "fair",
-    "notes": "Measured count includes date figures and the nomenclator numbers in the clear text; about 30% of gloss words uncertain."
-   }
-  }
- ],
- "system": {
-  "types": [
-   "homophonic",
-   "nomenclator"
-  ],
-  "summary": "Bremen 1631: two-digit homophonic substitution, four consecutive numbers per letter, the bands taken down the columns of a six-column alphabet grid, with a small nomenclator of one- and two-digit numbers.",
-  "symbol_kind": "digits",
-  "digit_groups": {
-   "width": "2",
-   "separation": "spaces"
-  },
-  "distinct_symbols": 96,
-  "diacritics": {
-   "used": false
-  },
-  "homophones": {
-   "used": true
-  },
-  "nomenclator": {
-   "present": true,
-   "entries": "unknown",
-   "kinds": [
-    "names",
-    "titles",
-    "common words"
-   ],
-   "unread_groups": "unknown"
-  },
-  "nulls": {
-   "present": false
-  },
-  "key_order": "partly alphabetical",
-  "word_division": "kept",
-  "doubled_letters": "unknown",
-  "sibling_key": "none",
-  "notes": "Key order: bands of four from 8 taken down the columns of a six-column grid (a g n t / b h o u / c i p w / d k q x / e l r y / f m s z). Split on 14 Oct 2026 (one key, one entry): the other records of catalogue 207 are different ciphers with their own entries (decode4282, riksarkivet4284, sweden4306, rusdorff1628, oxenstierna1633). R4306 is George Lasry's contributed partial decipherment sweden4306 (17 Oct 2026), into which the project's own attempted-open R4306 entry was folded on 18 Oct 2026."
- },
- "conditions": {
-  "prior_solution": {
-   "exists": "in archive",
-   "where": "Interlinear decipherment of about 80% of the Bremen groups, written at the time; DECODE status Partially decrypted",
-   "found": "during attempt",
-   "used": true
-  },
-  "inputs": [
-   "images"
-  ],
-  "attack": "archive decipherment",
-  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
-  "tools": [
-   "targets/riksarkivet1628/mk_validation.py"
-  ],
-  "models": [
-   "claude-opus-5"
-  ],
-  "sessions": 1,
-  "first_date": "2026-09-21",
-  "last_date": "2026-10-14"
- },
- "solution": [
-  {
-   "date": "2026-09-21",
-   "kind": "access",
-   "what": "Fetched the 14 DECODE records of catalogue 207 and their images with the project cookie; found the entry is four unrelated groups. The Bremen 1631 letters (R4330, R4331) are this entry.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "transcription",
-   "what": "Bremen letters transcribed with their interlinear glosses.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "key from source",
-   "what": "Aligned glossed words to numbers: four consecutive numbers per letter.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "prediction",
-   "what": "Unglossed bands fixed from unglossed words (k, z, m, w), then the band order recognised as a six-column alphabet grid read by columns, placing q, x and y.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-09-21",
-   "kind": "reading",
-   "what": "Every cipher group of both Bremen letters decoded (bremen_decoded.txt).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-11",
-   "kind": "verification",
-   "technique": [
-    "statistical test",
-    "language-model scoring"
-   ],
-   "what": "Statistical validation (docs/_validate.py): 914 tokens, 89 types, de-1640s order 4: reading -2.421 per letter; random keys -6.338 (z 15.2); key annealed onto shuffled ciphertext best -3.647 (mean -3.707, z 28.5); annealer on the real text -3.232. Verdict: pass.",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-14",
-   "kind": "verification",
-   "what": "Split from the former catalogue-207 group entry under the one-key rule (George Lasry, 14 Oct 2026): this entry keeps the Bremen band key (R4330-R4331). R4282 is George Lasry's decode4282; R4284, R4306, the Rusdorff letters R4333-R4337 and E 708 (R4338-R4341) are other ciphers, now riksarkivet4284, an R4306 entry (folded on 18 Oct 2026 into George Lasry's contributed sweden4306), rusdorff1628 and oxenstierna1633. Earlier steps on those records moved to their profiles (for R4306, now sweden4306).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-22",
-   "kind": "verification",
-   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): bremen_transcription.txt (numbers with the glosses of the time) and bremen_decoded.txt (every group deciphered); band key copied from NOTES.md to texts/key.md",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-22",
-   "kind": "verification",
-   "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): bremen_decoded.txt read through. Every group decodes, but the groups are unsegmented strings with slips inside a '?'-marked clear transcription, and the sentences can be rebuilt only with guesswork from the glosses (48% of sentences clean in docs/_check_reading.py). Both letters relabelled decoded, not read; class read -> not read, method -> not solved, key stays recovered; fraction_read 1.0 -> 0.",
-   "result": "failed",
-   "technique": ["language-model scoring", "statistical test"]
-  },
-  {
-   "date": "2026-10-23",
-   "kind": "access",
-   "what": "Re-reading (REREAD_BRIEF b33): DECODE R4330 and R4331 fetched again with the project cookie; four photographs each, no attachment, transcription, comment or plaintext on the records. One web search for a printed edition: none found.",
-   "result": "failed"
-  },
-  {
-   "date": "2026-10-23",
-   "kind": "transcription",
-   "what": "Clear German re-read line by line on 2x crops of the photographs (many '?' resolved, misreadings such as 'Wir haben nicht' -> 'Wir zweiffeln nicht', 'F.'/'U.' -> the numbers 3. and 11.); glosses re-read (Gr:, Gronsfeldische, Reynacher, Zell, Tillische, dem accord mit begriffen); 23 figure labels corrected on the crops, 8 of them on an ambiguous look-alike digit decided by the gloss (bremen1631_corrections.tsv).",
-   "result": "worked"
-  },
-  {
-   "date": "2026-10-23",
-   "kind": "reading",
-   "what": "Both letters and the postscript segmented into words, name numbers substituted from the glosses, aligned word by word with the decode (bremen1631_aligned.txt, research/reading_audit/b33_br_build.py: 118 of 132 cipher words exact, 10 clerk's slips read from the gloss, 4 holes, 0 uncarried words), and translated. b17_score de 0.600 plain, 0.843 explicit holes only (before: no reading body, _check_reading 0.477 on the decode). R4330's opening paragraph and one clause stay unbuilt.",
-   "result": "worked",
-   "technique": ["language-model scoring"]
-  },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
- ],
- "outcome": {
-  "validation": {
-   "date": "2026-10-11",
-   "model": "de-1640s",
-   "file": "validation.tsv",
-   "tokens": 914,
-   "types": 89,
-   "tokens_per_type": 10.27,
-   "score": -2.421,
-   "nulls": {
-    "random keys": {
-     "n": 200,
-     "mean": -6.338,
-     "sd": 0.258,
-     "max": -5.571,
-     "z": 15.2,
-     "p": 0.005
-    },
-    "shuffled refit": {
-     "n": 6,
-     "mean": -3.707,
-     "sd": 0.045,
-     "max": -3.647,
-     "z": 28.5,
-     "p": 0.1429
+  "schema_version": 1,
+  "target": "riksarkivet1628",
+  "title": "Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius at Hamburg, Nov-Dec 1631 (Riksarkivet, DECODE R4330-R4331; from catalogue item 207)",
+  "documents": [
+    {
+      "id": "bremen1631",
+      "read": "read",
+      "shelfmark": "Riksarkivet Stockholm, DECODE R4330 and R4331 (Riksarkivet_Bremen_Tott_1631-1, -2)",
+      "date": "27 Nov and ? Dec 1631",
+      "year": 1631,
+      "country": "Germany",
+      "route": "Johann Friedrich, archbishop of Bremen -> Johan Adler Salvius, Hamburg",
+      "language": "German",
+      "pages": 7,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "Contemporary decipherment written above most number groups (about 80%).",
+        "partial": true
+      },
+      "length": {
+        "tokens": 1130,
+        "unit": "code groups",
+        "measured": true,
+        "file": "bremen_transcription.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "DECODE phone photographs, 2448 x 3264",
+        "image_quality": "fair",
+        "notes": "Measured count includes date figures and the nomenclator numbers in the clear text; about 30% of gloss words uncertain."
+      }
     }
-   },
-   "power": -3.232,
-   "verdict": "pass",
-   "notes": "claimed per-occurrence score -2.404; polyphony 0.004; 23 unread tokens left out; annealer on the real text from random keys reached -3.232"
-  },
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The Bremen 1631 band key (R4330-R4331) was rebuilt by aligning the contemporary interlinear glosses (about 80% of groups) with their numbers, then completed from unglossed words and the six-column grid pattern. Re-reading of 23 Oct 2026: the clear German re-read on the photographs, the figures re-read where the decode slipped, and both letters with the postscript built into sentences and translated (bremen1631_reading.md, bremen1631_en.md).",
-  "contribution": [
-   "transcription",
-   "key recovered",
-   "sender or date identified",
-   "catalogue correction"
   ],
-  "class": "read in part",
-  "fraction_read": 1.0,
-  "fraction_read_method": "measured",
-  "fraction_read_source": "23 Oct 2026, re-reading: the one document (R4330 + R4331) reads, so all 955 figures (_check_profile --measure on bremen_transcription.txt, GLOSS lines removed) are in text that reads; inside it 4 of 132 cipher words and 6 name numbers stay holes (bremen1631_alignment.tsv).",
-  "key": "recovered",
-  "grades": "unknown",
-  "verification": [
-   "contemporary decipherment",
-   "key confirms",
-   "statistical test"
-  ],
-  "notes": "Both Bremen letters deciphered with the band key rebuilt from the clerk's interlinear glosses (about 80% of groups) and the six-column grid order. Split on 14 Oct 2026 from the catalogue-207 group; the other records are separate entries. 22 Oct 2026, reading audit: decoded, not read. 23 Oct 2026, re-reading: built into sentences and translated (b17 0.600 plain, 0.843 explicit holes); read.",
-  "gaps": [{"item": "R4330 one cipher word after 'westpfelische' (23 34 81 22 73 80 21) and the clear words of the same sentence", "blocker": "illegible", "detail": "phone photographs, digits and hand not resolvable"}, {"item": "name numbers 18, 19, 31, 82, 86 (and 42 in R4330)", "blocker": "no-key-material", "detail": "no gloss of the time names them; no nomenclator sheet"}, {"item": "about 30 clear words marked [?word]", "blocker": "illegible", "detail": "resolution of the DECODE phone photographs"}],
-  "credits": [
-   {
-    "who": "contemporary",
-    "role": "key or decipherment used",
-    "note": "the clerk's interlinear glosses on the Bremen 1631 letters (~80% of groups), aligned to rebuild the band key"
-   }
-  ],
-  "texts": [
-   {
-    "doc": "bremen1631",
-    "label": "R4330 (27 Nov 1631) and R4331 (2? Dec 1631)",
-    "transcription": "bremen_transcription.txt",
-    "decryption": "bremen_decoded.txt",
-    "summary": "Two German letters of Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius, Swedish resident at Hamburg, pressing for Swedish succour (foot, dragoons, 'etliche tausend') against Gronsfeld's and Bönninghausen's imperial/League troops in Westphalia; he fears the Lüneburg country will be ravaged and asks that the Stift be included in the accord if the Neuenburg garrison marches out. Both letters are in one file each (R4330 and R4331 image sections).",
-    "state": "read in part",
-    "language": "de",
-    "reading": "bremen1631_reading.md",
-    "translation": "bremen1631_en.md",
-    "reading_review": {
-     "grade": "B",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "Clear German re-read on the DECODE photographs; cipher words decoded with the band key on figures re-read on crops (23 label corrections, bremen1631_corrections.tsv; key unchanged) and aligned word by word (bremen1631_aligned.txt: 132 cipher words, 118 equal to their decode, 10 clerk's slips read from the gloss of the time, 4 holes); name numbers 4, 5, 7, 17, 27, 32, 59, 83 from the glosses. b17 de: 0.600 plain, 0.843 explicit holes only; look-alike letters 8 of ~900 (0.9%). Open: R4330 opening paragraph (one cipher word, a few clear words), codes 18, 19, 31, 82, 86, 42."
+  "system": {
+    "types": [
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "Bremen 1631: two-digit homophonic substitution, four consecutive numbers per letter, the bands taken down the columns of a six-column alphabet grid, with a small nomenclator of one- and two-digit numbers.",
+    "symbol_kind": "digits",
+    "digit_groups": {
+      "width": "2",
+      "separation": "spaces"
     },
-    "read_share": 0.931,
-    "note": "24 Oct 2026: 93.1% of the words of bremen1631_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
-   }
+    "distinct_symbols": 96,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": "unknown",
+      "kinds": [
+        "names",
+        "titles",
+        "common words"
+      ],
+      "unread_groups": "unknown"
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "partly alphabetical",
+    "word_division": "kept",
+    "doubled_letters": "unknown",
+    "sibling_key": "none",
+    "notes": "Key order: bands of four from 8 taken down the columns of a six-column grid (a g n t / b h o u / c i p w / d k q x / e l r y / f m s z). Split on 14 Oct 2026 (one key, one entry): the other records of catalogue 207 are different ciphers with their own entries (decode4282, riksarkivet4284, sweden4306, rusdorff1628, oxenstierna1633). R4306 is George Lasry's contributed partial decipherment sweden4306 (17 Oct 2026), into which the project's own attempted-open R4306 entry was folded on 18 Oct 2026."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Interlinear decipherment of about 80% of the Bremen groups, written at the time; DECODE status Partially decrypted",
+      "found": "during attempt",
+      "used": true
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "archive decipherment",
+    "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
+    "tools": [
+      "targets/riksarkivet1628/mk_validation.py"
+    ],
+    "models": [
+      "claude-opus-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-09-21",
+    "last_date": "2026-10-14"
+  },
+  "solution": [
+    {
+      "date": "2026-09-21",
+      "kind": "access",
+      "what": "Fetched the 14 DECODE records of catalogue 207 and their images with the project cookie; found the entry is four unrelated groups. The Bremen 1631 letters (R4330, R4331) are this entry.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-21",
+      "kind": "transcription",
+      "what": "Bremen letters transcribed with their interlinear glosses.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-21",
+      "kind": "key from source",
+      "what": "Aligned glossed words to numbers: four consecutive numbers per letter.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-21",
+      "kind": "prediction",
+      "what": "Unglossed bands fixed from unglossed words (k, z, m, w), then the band order recognised as a six-column alphabet grid read by columns, placing q, x and y.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-09-21",
+      "kind": "reading",
+      "what": "Every cipher group of both Bremen letters decoded (bremen_decoded.txt).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-11",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 914 tokens, 89 types, de-1640s order 4: reading -2.421 per letter; random keys -6.338 (z 15.2); key annealed onto shuffled ciphertext best -3.647 (mean -3.707, z 28.5); annealer on the real text -3.232. Verdict: pass.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "verification",
+      "what": "Split from the former catalogue-207 group entry under the one-key rule (George Lasry, 14 Oct 2026): this entry keeps the Bremen band key (R4330-R4331). R4282 is George Lasry's decode4282; R4284, R4306, the Rusdorff letters R4333-R4337 and E 708 (R4338-R4341) are other ciphers, now riksarkivet4284, an R4306 entry (folded on 18 Oct 2026 into George Lasry's contributed sweden4306), rusdorff1628 and oxenstierna1633. Earlier steps on those records moved to their profiles (for R4306, now sweden4306).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): bremen_transcription.txt (numbers with the glosses of the time) and bremen_decoded.txt (every group deciphered); band key copied from NOTES.md to texts/key.md",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "verification",
+      "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): bremen_decoded.txt read through. Every group decodes, but the groups are unsegmented strings with slips inside a '?'-marked clear transcription, and the sentences can be rebuilt only with guesswork from the glosses (48% of sentences clean in docs/_check_reading.py). Both letters relabelled decoded, not read; class read -> not read, method -> not solved, key stays recovered; fraction_read 1.0 -> 0.",
+      "result": "failed",
+      "technique": [
+        "language-model scoring",
+        "statistical test"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "access",
+      "what": "Re-reading (REREAD_BRIEF b33): DECODE R4330 and R4331 fetched again with the project cookie; four photographs each, no attachment, transcription, comment or plaintext on the records. One web search for a printed edition: none found.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "transcription",
+      "what": "Clear German re-read line by line on 2x crops of the photographs (many '?' resolved, misreadings such as 'Wir haben nicht' -> 'Wir zweiffeln nicht', 'F.'/'U.' -> the numbers 3. and 11.); glosses re-read (Gr:, Gronsfeldische, Reynacher, Zell, Tillische, dem accord mit begriffen); 23 figure labels corrected on the crops, 8 of them on an ambiguous look-alike digit decided by the gloss (bremen1631_corrections.tsv).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "reading",
+      "what": "Both letters and the postscript segmented into words, name numbers substituted from the glosses, aligned word by word with the decode (bremen1631_aligned.txt, research/reading_audit/b33_br_build.py: 118 of 132 cipher words exact, 10 clerk's slips read from the gloss, 4 holes, 0 uncarried words), and translated. b17_score de 0.600 plain, 0.843 explicit holes only (before: no reading body, _check_reading 0.477 on the decode). R4330's opening paragraph and one clause stay unbuilt.",
+      "result": "worked",
+      "technique": [
+        "language-model scoring"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "verification",
+      "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "sibling key",
+      "technique": [
+        "key matching",
+        "language-model scoring"
+      ],
+      "what": "Eight numeric letter keys of 1618-1627 from KHA A23-311 (Ernst Casimir) applied to R4284 and R4306: gibberish under Latin, Dutch, German, French (-4.6 to -8.6/char). Rusdorff R4333-37 numbers exceed their ranges.",
+      "result": "failed"
+    }
   ],
-  "key_file": "texts/key.md"
- }
+  "outcome": {
+    "validation": {
+      "date": "2026-10-11",
+      "model": "de-1640s",
+      "file": "validation.tsv",
+      "tokens": 914,
+      "types": 89,
+      "tokens_per_type": 10.27,
+      "score": -2.421,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -6.338,
+          "sd": 0.258,
+          "max": -5.571,
+          "z": 15.2,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -3.707,
+          "sd": 0.045,
+          "max": -3.647,
+          "z": 28.5,
+          "p": 0.1429
+        }
+      },
+      "power": -3.232,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.404; polyphony 0.004; 23 unread tokens left out; annealer on the real text from random keys reached -3.232"
+    },
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "The Bremen 1631 band key (R4330-R4331) was rebuilt by aligning the contemporary interlinear glosses (about 80% of groups) with their numbers, then completed from unglossed words and the six-column grid pattern. Re-reading of 23 Oct 2026: the clear German re-read on the photographs, the figures re-read where the decode slipped, and both letters with the postscript built into sentences and translated (bremen1631_reading.md, bremen1631_en.md).",
+    "contribution": [
+      "transcription",
+      "key recovered",
+      "sender or date identified",
+      "catalogue correction"
+    ],
+    "class": "read in part",
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "23 Oct 2026, re-reading: the one document (R4330 + R4331) reads, so all 955 figures (_check_profile --measure on bremen_transcription.txt, GLOSS lines removed) are in text that reads; inside it 4 of 132 cipher words and 6 name numbers stay holes (bremen1631_alignment.tsv).",
+    "key": "recovered",
+    "grades": "unknown",
+    "verification": [
+      "contemporary decipherment",
+      "key confirms",
+      "statistical test"
+    ],
+    "notes": "Both Bremen letters deciphered with the band key rebuilt from the clerk's interlinear glosses (about 80% of groups) and the six-column grid order. Split on 14 Oct 2026 from the catalogue-207 group; the other records are separate entries. 22 Oct 2026, reading audit: decoded, not read. 23 Oct 2026, re-reading: built into sentences and translated (b17 0.600 plain, 0.843 explicit holes); read.",
+    "gaps": [
+      {
+        "item": "R4330 one cipher word after 'westpfelische' (23 34 81 22 73 80 21) and the clear words of the same sentence",
+        "blocker": "illegible",
+        "detail": "phone photographs, digits and hand not resolvable"
+      },
+      {
+        "item": "name numbers 18, 19, 31, 82, 86 (and 42 in R4330)",
+        "blocker": "no-key-material",
+        "detail": "no gloss of the time names them; no nomenclator sheet"
+      },
+      {
+        "item": "about 30 clear words marked [?word]",
+        "blocker": "illegible",
+        "detail": "resolution of the DECODE phone photographs"
+      }
+    ],
+    "credits": [
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "the clerk's interlinear glosses on the Bremen 1631 letters (~80% of groups), aligned to rebuild the band key"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "bremen1631",
+        "label": "R4330 (27 Nov 1631) and R4331 (2? Dec 1631)",
+        "transcription": "bremen_transcription.txt",
+        "decryption": "bremen_decoded.txt",
+        "summary": "Two German letters of Johann Friedrich, archbishop of Bremen, to Johan Adler Salvius, Swedish resident at Hamburg, pressing for Swedish succour (foot, dragoons, 'etliche tausend') against Gronsfeld's and Bönninghausen's imperial/League troops in Westphalia; he fears the Lüneburg country will be ravaged and asks that the Stift be included in the accord if the Neuenburg garrison marches out. Both letters are in one file each (R4330 and R4331 image sections).",
+        "state": "read in part",
+        "language": "de",
+        "reading": "bremen1631_reading.md",
+        "translation": "bremen1631_en.md",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-23",
+          "note": "Clear German re-read on the DECODE photographs; cipher words decoded with the band key on figures re-read on crops (23 label corrections, bremen1631_corrections.tsv; key unchanged) and aligned word by word (bremen1631_aligned.txt: 132 cipher words, 118 equal to their decode, 10 clerk's slips read from the gloss of the time, 4 holes); name numbers 4, 5, 7, 17, 27, 32, 59, 83 from the glosses. b17 de: 0.600 plain, 0.843 explicit holes only; look-alike letters 8 of ~900 (0.9%). Open: R4330 opening paragraph (one cipher word, a few clear words), codes 18, 19, 31, 82, 86, 42."
+        },
+        "read_share": 0.931,
+        "note": "24 Oct 2026: 93.1% of the words of bremen1631_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+      }
+    ],
+    "key_file": "texts/key.md"
+  }
 }
