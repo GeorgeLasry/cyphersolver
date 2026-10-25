@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "target": "schoning1783",
+  "title": "Gustav von Schöning to Princess Wilhelmina and Van der Hoop, 1783-84 (KHA A32-603)",
+  "documents": [
+    {
+      "id": "A32-603",
+      "shelfmark": "Koninklijk Huisarchief, A32-603",
+      "date": "1783-1784",
+      "year": 1783,
+      "country": "Prussia",
+      "route": "Potsdam -> The Hague",
+      "language": "French",
+      "pages": 212,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "Van der Hoop's decipherments between the lines and in clear copies (catalogue)."
+      },
+      "length": {
+        "tokens": "unknown",
+        "distinct": "unknown",
+        "unit": "code groups",
+        "measured": false
+      },
+      "transcription": {
+        "by": "unknown",
+        "source": "unknown",
+        "image_quality": "good",
+        "notes": ""
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code"
+    ],
+    "summary": "Numeric code groups inside French clear text, glossed between the lines.",
+    "symbol_kind": "digits",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": "unknown",
+      "kinds": [
+        "names"
+      ],
+      "unread_groups": "unknown"
+    },
+    "nulls": "unknown",
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown",
+    "notes": ""
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Van der Hoop's decipherments in the same file.",
+      "found": "before attempt",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "unknown",
+    "human_role": "Asked to take KHA lead K4.",
+    "tools": [
+      "Koninklijke Verzamelingen image API",
+      "python",
+      "web search"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-25",
+    "last_date": "2026-10-25"
+  },
+  "solution": [
+    {
+      "date": "2026-10-25",
+      "kind": "literature search",
+      "what": "Web search for an edition of the Schöning mission letters: none found; not on DECODE.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "access",
+      "what": "Fetched the 212 scans of KHA A32-603.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "unknown",
+    "method_basis": "unknown",
+    "contribution": [
+      "unknown"
+    ],
+    "class": "unknown",
+    "fraction_read": "unknown",
+    "grades": {
+      "H": "unknown",
+      "C": "unknown",
+      "M": "unknown",
+      "I": "unknown"
+    },
+    "verification": [
+      "unknown"
+    ],
+    "notes": "In progress."
+  }
+}
