@@ -69,3 +69,23 @@ Open: 435/439 "Heidm..." (a name), 661, 724, 763, 809 ("pour moi 809"), 950, 978
 alliance numbers; 449 vs 446, 859 vs 858, 881 vs 884 need 3x crops. The 12 Aug 1783 (No. 4) glosses not yet read.
 Next (step 3): decode the 14 letters with no clear copy with letter_table.tsv + code_table.tsv, bracket every unknown
 number alphabetically, and measure.
+
+## Step 3, first pass (25-26 Oct 2026)
+
+Two subagents deciphered the 11 cipher letters with no clear copy (`dec_*.tsv`, one token per line: sign label or code
+number, then its reading; running readings in `# line reading:` lines). `measure.py` (`measure.log`):
+**3,447 tokens, 3,198 given a value (92.8%), 80 code numbers bracketed alphabetically, 169 unread; 110 of 192 code
+numbers known.**
+
+Caveats before this counts toward the read bar:
+- The measure counts signs given a letter, not words that read as sense. Most of the 26-27 Jan 1784 letter reads as
+  French (de Verac futur ambassadeur de France; an alliance of France, Spain and Prussia against the Emperor and
+  England; Schöning's role and "ma tres chere princesse"), but some lines are garbled ("leur jamble ratbbdn", "es ue des
+  honoronrant") and need re-reading at 3x.
+- No. 1 (s001) is only its first three lines; lines 4-20 are not transcribed.
+- The early letters (Nos. 1-3, Aug 1783) use a variant alphabet: one inverted-T sign serves o and d. Their word breaks
+  were set by the agent, not by the scribe's ticks.
+- Numeric signatures (a separate digit script) and the address panel on s029 are not read.
+- Proposed from brackets: 500 between Hollande and lettre, opening "[j'ai] l'honneur" (j); 750 between Son Altesse
+  (733) and Republique (801).
+Next: a sense check per line with the fr-1600-letters model, re-read the garbled lines and No. 1 at 3x, then grade.
