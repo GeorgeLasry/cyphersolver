@@ -323,7 +323,7 @@ the blog threads, this file's earlier sections, or this session (**new**).
 | 8 | Itedconlec / Atndngtnsurs | I ATTENDED CONINGTON'S LECTURES | Forced, 5 om, 0 misprints; CONINGTON the only name that fits (§5). Possessive S **new**; name from Estes. |
 | 9 | mistrl / Otenpu | unread | Unread in English, Latin and as Horace abbreviation. MASTER PUPIL needs 4 misprints. |
 | 10 | Hrsclam / Etfdorshpxn [Hfsclam / Eftdorshpxn] | HERTFORD SCHOLARSHIP XAMN (Examn., examination) | Probable, 2 om on Ernst's text; HERTFORD the only name that fits (§5). XAMN **new**; HERTFORD SCHOLARSHIP from Estes/Krajčovič. Circulating text needs one misprint. |
-| 11 | 54, 3 / 18 | 1854, 3 | Year forced; the 3 unexplained. Blog, Ernst. |
+| 11 | 54, 3 / 18 | 1854, 3 | Year forced. The 3 is probably the three men the examiners named for the 1854 Hertford: Montgomerie, Robinson Ellis, J. S. Cattlow (Oxford Chronicle, 1 Apr. 1854; §8). Year from Blog, Ernst; the 3 **new**, probable. |
 | 12 | caselcluchozamot / Ndtsfindseseo | unread (ends A MOTTO?) | Unread; CAN'T SELECT … needs 5 misprints. |
 | 13 | 1. 6. 9. / Cotegr | Od. 1.6.9 CO(namur) TE(nues) GR(andia) | Forced, exact; the only two-letter match in all Horace. **New**. Ernst: "any classicist's guess". |
 | 14 | Mopredisco / Tsvlysdinlge [Tavlysdinlge] | MONTHS (or MOTTO WAS) PREVIOUSLY DISCLOSED IN COLLEGE | Possible, 12 or 14 om; PREVIOUSLY DISCLOSED IN COLLEGE probable. Blog, Ernst/Krajčovič; MONTHS §4. |
@@ -335,7 +335,7 @@ the blog threads, this file's earlier sections, or this session (**new**).
 | 20 | Ap. 138 / A.P. 138 [Ap. 139] | A.P. 138 = Ars Poetica 138, "quid dignum tanto feret hic promissor hiatu?" | Reference forced once line 13 is Horace. **New**. Ernst: annual pay. |
 | 21 | Hodsam / Yxn | HOLIDAYS XAMN, or HOLY ORDERS XAMN | XAMN forced; first word possible, 3 or 5 om. XAMN **new**; HOLIDAYS §4; HOLY ORDERS from the parallel session. |
 | 22 | 55, 6 / 18. 18 | 1855, 1856 | Probable. Blog, Ernst. |
-| 23 | Iopotonrogfimsecharsenr / Wtubtrfftrstendinhofsvmnr [Wtubrfftrs…] | unread | Unread; SUMMONER readings need 15 misprints. |
+| 23 | Iopotonrogfimsecharsenr / Wtubtrfftrstendinhofsvmnr [Wtubrfftrs…] | W{adham}? [Iopoton / tu] ROBT GRIFFITH FIRST, ME SECOND, HARRISON? [– / h] OF SEVEN MEN? [– / r] | ROBT GRIFFITH FIRST ME SECOND forced, exact, 4 om (Griffith = Ireland Scholar 1856; needs Ernst's extra t); OF SEVEN forced; HARRISON only if IN is not read; MEN needs one misprint; 9 letters before ROBT and the h and final r unread (§9). **New** (25 Oct 2026). SUMMONER readings need 15 misprints. |
 | 24 | Tolshr / Dily | TOLD SHIRLEY | Forced, 1 om; SHIRLEY the only name that fits (§5). Blog, Dave/Ernst. |
 | 25 | Itedjolec / Atdwtsurs | I ATTENDED JOWETT'S LECTURES | Forced, 6 om, 0 misprints; JOWETT the only name that fits (§5). Possessive S **new**; name from Estes. |
 | 26 | mistrl / Oatvpu | unread | As line 9. |
@@ -350,10 +350,11 @@ garden, [said] simply "your cap, in short, …". Repeated. I attended Conington'
 examination, 1854, 3. […] a motto: Od. 1.6.9 "conamur tenues grandia". [Motto] previously disclosed in college.
 Conington told us add second motto. I added first line, Satires: "Qui fit". Change adopted. Balliol man opposite used
 motto […] A.P. 138 ["quid dignum tanto feret hic promissor hiatu?"]. Holidays (holy orders?) examination, 1855, 1856.
-[…]. Told Shirley. I attended Jowett's lectures […]. Dying declaration. […]*
+[Wadham? …] Robt Griffith first, me second, [Harrison?] of seven [men?]. Told Shirley. I attended Jowett's lectures […]. Dying declaration. […]*
 
 Bracketed words are supplied from context, not from the letters; the ellipses are lines 6 (tail), 9, 12, 19 (tail),
-23, 26 and 29.
+23 (head), 26 and 29. Line 23 records the Dean Ireland's Scholarship of March 1856, won by Robert Griffith of
+Wadham, Shirley's pupil.
 
 Reproduce: `python build_vocab.py ../../lang/corpora/en-gutenberg.txt` (and `build_vocab_la.py` with
 `la-gutenberg.txt`), `python audit.py`, `python search2.py 27,28,13` (`NBEST`, `KBEST`, `MAXOM`, `MAXCONSEC`,
