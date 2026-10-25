@@ -23,6 +23,7 @@
      "year": {"type": "integer"},
      "country": {"type": "string", "description": "Issuing power (the chancery that owned the cipher), e.g. 'Spain', 'France', 'Milan'."},
      "route": {"type": "string", "description": "Sender place -> recipient place."},
+     "places": {"type": "object", "description": "Gazetteer names (docs/atlas.json places, tools/atlas_places.py NEW_PLACES) of where the document was written and where it went; drives the atlas. Use when the route names people.", "properties": {"from": {"type": "string"}, "to": {"type": "string"}}, "required": ["from", "to"], "additionalProperties": false},
      "language": {"type": "string", "description": "Plaintext language."},
      "pages": {"type": "integer"},
      "cleartext_in_document": {

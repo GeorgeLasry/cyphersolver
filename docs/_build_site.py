@@ -14,7 +14,7 @@ list and rebuild). The priority queue is still built by _build_queue.py.
 It also stamps the dates: the hero dateline, the head meta tags, the index cards, the list rows and each line
 of "Recent findings" all carry the day the finding landed, from _dates.json, which this script maintains.
 """
-import re, pathlib, html, json, hashlib, datetime
+import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
@@ -3566,6 +3566,8 @@ if __name__ == '__main__':
                  **({'people': [{k: q[k] for k in ('role', 'name', 'img')} for q in PORTRAITS[p['slug']]]} if PORTRAITS.get(p['slug']) else {}))
             for p in PAGES if p['slug'] not in SURVEYS]
     (HERE / 'pages.json').write_text(json.dumps(meta, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    sys.path.insert(0, str(HERE.parent / 'tools')); import atlas_places    # atlas letters from profile routes/places
+    print('atlas: %d letters from profiles (%d new places)' % atlas_places.sync({m['slug']: m for m in meta}))
     print('key web: %d keys, %d links, %d tried' % check_keys(meta))
     print('built', ', '.join(done))
 IMAGES['bordeaux1653'] = ('bordeaux1653_f88r_opening.jpg', 'Add MS 4200 f. 88r: clear opening, then the first cipher lines', 'British Library, Add MS 4200 f. 88r, via DECODE R8390')

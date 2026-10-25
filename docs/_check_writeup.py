@@ -23,6 +23,8 @@ import sys, re, json, pathlib, subprocess, time
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 HERE = pathlib.Path(__file__).resolve().parent          # docs/
+KEYED_METHODS = {'read with known key', 'read after matching with key from external sources', 'key recovered based on adjacent plaintext',
+                 'key recovered based on plaintext from external sources', 'key recovered from ciphertext-only'}
 ROOT = HERE.parent
 TARGETS = ROOT / 'targets'          # one folder per cipher target
 
@@ -405,16 +407,17 @@ def check_slug(slug):
     for folder in sorted(folders):
         try: p = json.loads(read(tdir(folder) / 'profile.json') or '{}')
         except ValueError: continue
-        keyed = (p.get('conditions') or {}).get('attack') in ('sibling key', 'key from archive', 'published key') or any(
+        keyed = (p.get('outcome') or {}).get('method') in KEYED_METHODS or (p.get('conditions') or {}).get('attack') in ('sibling key', 'key from archive', 'published key') or any(
             s.get('kind') in ('sibling key', 'key from source') and s.get('result') in ('worked', 'partial') for s in p.get('solution') or [])
         if keyed:
             item(any(l.get('target') == slug for l in kw.get('links', [])) or slug in kw.get('unlinked', {}),
-                 f'docs/keys.json links the key that read {folder} (its profile names a sibling, archive or published key)', warn=True)
+                 f'docs/keys.json links the key that read {folder}, or says why not in "unlinked" (its outcome or steps involve a key)')
         routed = [d for d in p.get('documents') or [] if '->' in str(d.get('route', '')) and '?' not in str(d.get('route', ''))
                   and 'unknown' not in str(d.get('route', '')).lower()]
         if routed:
             item(any(l.get('slug') == slug for l in at.get('letters', [])),
-                 f'docs/atlas.json maps the letters of {folder} ({len(routed)} documents have a route)', warn=True)
+                 f'docs/atlas.json maps the letters of {folder} ({len(routed)} documents have a route): give each document '
+                 f'"places": {{"from", "to"}} with gazetteer names (tools/atlas_places.py) and rebuild', warn=True)
     if mine:
         name = key_words(mine[0]['target'])
         ledgers = ('SOLVED_CATALOGUE.md', 'SOLVED_RANKING.md') if st != 'stuck' else ()

@@ -1,9 +1,21 @@
 {
  "places": {
-  "Bordeaux": [44.838, -0.579],
-  "Marmande": [44.5, 0.165],
-  "Villeneuve-d'Agenais": [44.408, 0.705],
-  "Monségur": [44.651, 0.081],
+  "Bordeaux": [
+   44.838,
+   -0.579
+  ],
+  "Marmande": [
+   44.5,
+   0.165
+  ],
+  "Villeneuve-d'Agenais": [
+   44.408,
+   0.705
+  ],
+  "Monségur": [
+   44.65,
+   0.08
+  ],
   "Westminster": [
    51.5,
    -0.13
@@ -464,24 +476,176 @@
    51.45,
    -2.59
   ],
-  "Monségur": [
-   44.65,
-   0.08
+  "Badajoz": [
+   38.879,
+   -6.97
+  ],
+  "Cambrai": [
+   50.176,
+   3.235
+  ],
+  "Chenonceau": [
+   47.325,
+   1.07
+  ],
+  "Noirmoutier": [
+   47.0,
+   -2.25
+  ],
+  "Saint-Quentin": [
+   49.848,
+   3.287
+  ],
+  "Shanghai": [
+   31.23,
+   121.47
+  ],
+  "Bologna": [
+   44.494,
+   11.343
+  ],
+  "Castets": [
+   43.882,
+   -1.144
+  ],
+  "Compiègne": [
+   49.418,
+   2.826
+  ],
+  "La Rochelle": [
+   46.16,
+   -1.151
+  ],
+  "Niort": [
+   46.323,
+   -0.459
+  ],
+  "Sondrio": [
+   46.17,
+   9.872
   ]
  },
  "letters": [
-  {"slug": "r9319", "doc": "R9319", "year": 1583.31, "date": "22 Apr 1583", "from": "Cologne", "to": "Munich", "st": "found", "label": "Ernst of Bavaria to Wilhelm V"},
-  {"slug": "thurloe", "doc": "a-beverning-1653", "year": 1653.66, "date": "1 Sept 1653", "from": "Westminster", "to": "Paris", "st": "stuck", "label": "Beverning and Vande Perre to Boreel"},
-  {"slug": "copinger1656", "doc": "c-brussels-1656", "year": 1656.61, "date": "12 Aug 1656", "from": "Brussels", "to": "London", "st": "stuck", "label": "Brussels to Mr Copinger"},
-  {"slug": "waddall1656", "doc": "d-waddall-1656", "year": 1656.64, "date": "22 Aug 1656", "from": "London", "to": "Bruges", "st": "stuck", "label": "Waddall to Vanyeare"},
-  {"slug": "santacruz1399", "doc": "Puig 1920 app. XXIX", "year": 1399.81, "date": "22 Oct 1399", "from": "Avignon", "to": "Barcelona", "st": "found", "label": "Fr. P. de Santa Cruz to Climent: the besieged household"},
-  {"slug": "vico1398", "doc": "vico-1398-line", "year": 1398.93, "date": "4 Dec 1398", "from": "Avignon", "to": "Barcelona", "st": "stuck", "label": "Fr. Pedro de Vico to Guillem Carbonell: one line in an unknown key"},
-  {"slug": "nevers1593", "doc": "f209", "year": 1593.69, "date": "8 Sep 1593", "from": "Nevers", "to": "Rome", "st": "partial", "label": "Nevers to Pisany (cipher no. 46)"},
-  {"slug": "michell1751", "doc": "R1957", "year": 1751.99, "date": "28 Dec 1751", "from": "Berlin", "to": "London", "st": "found", "label": "Frederick II to Michell, the King's own letter (Politische Correspondenz 5263)"},
-  {"slug": "r1955", "doc": "R1955", "year": 1751.99, "date": "28 Dec 1751", "from": "Berlin", "to": "London", "st": "partial", "label": "Frederick II to Michell, the ministerial rescript (decoded in part by WAINUT)"},
-  {"slug": "sabran1633", "doc": "R2748", "year": 1631.24, "date": "28 Mar 1631", "from": "Dijon", "to": "Genoa", "st": "partial", "label": "Louis XIII to Melchior de Sabran (deciphered by Lasry)"},
-  {"slug": "brulart1615", "doc": "R2785", "year": 1615.71, "date": "15 Sep 1615", "from": "Poitiers", "to": "Venice", "st": "found", "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"},
-  {"slug": "brulart1615", "doc": "R2786", "year": 1617.56, "date": "25 Jul 1617", "from": "Paris", "to": "Venice", "st": "found", "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"},
+  {
+   "slug": "r9319",
+   "doc": "R9319",
+   "year": 1583.31,
+   "date": "22 Apr 1583",
+   "from": "Cologne",
+   "to": "Munich",
+   "st": "found",
+   "label": "Ernst of Bavaria to Wilhelm V"
+  },
+  {
+   "slug": "thurloe",
+   "doc": "a-beverning-1653",
+   "year": 1653.66,
+   "date": "1 Sept 1653",
+   "from": "Westminster",
+   "to": "Paris",
+   "st": "stuck",
+   "label": "Beverning and Vande Perre to Boreel"
+  },
+  {
+   "slug": "copinger1656",
+   "doc": "c-brussels-1656",
+   "year": 1656.61,
+   "date": "12 Aug 1656",
+   "from": "Brussels",
+   "to": "London",
+   "st": "stuck",
+   "label": "Brussels to Mr Copinger"
+  },
+  {
+   "slug": "waddall1656",
+   "doc": "d-waddall-1656",
+   "year": 1656.64,
+   "date": "22 Aug 1656",
+   "from": "London",
+   "to": "Bruges",
+   "st": "stuck",
+   "label": "Waddall to Vanyeare"
+  },
+  {
+   "slug": "santacruz1399",
+   "doc": "Puig 1920 app. XXIX",
+   "year": 1399.81,
+   "date": "22 Oct 1399",
+   "from": "Avignon",
+   "to": "Barcelona",
+   "st": "found",
+   "label": "Fr. P. de Santa Cruz to Climent: the besieged household"
+  },
+  {
+   "slug": "vico1398",
+   "doc": "vico-1398-line",
+   "year": 1398.93,
+   "date": "4 Dec 1398",
+   "from": "Avignon",
+   "to": "Barcelona",
+   "st": "stuck",
+   "label": "Fr. Pedro de Vico to Guillem Carbonell: one line in an unknown key"
+  },
+  {
+   "slug": "nevers1593",
+   "doc": "f209",
+   "year": 1593.69,
+   "date": "8 Sep 1593",
+   "from": "Nevers",
+   "to": "Rome",
+   "st": "partial",
+   "label": "Nevers to Pisany (cipher no. 46)"
+  },
+  {
+   "slug": "michell1751",
+   "doc": "R1957",
+   "year": 1751.99,
+   "date": "28 Dec 1751",
+   "from": "Berlin",
+   "to": "London",
+   "st": "found",
+   "label": "Frederick II to Michell, the King's own letter (Politische Correspondenz 5263)"
+  },
+  {
+   "slug": "r1955",
+   "doc": "R1955",
+   "year": 1751.99,
+   "date": "28 Dec 1751",
+   "from": "Berlin",
+   "to": "London",
+   "st": "partial",
+   "label": "Frederick II to Michell, the ministerial rescript (decoded in part by WAINUT)"
+  },
+  {
+   "slug": "sabran1633",
+   "doc": "R2748",
+   "year": 1631.24,
+   "date": "28 Mar 1631",
+   "from": "Dijon",
+   "to": "Genoa",
+   "st": "partial",
+   "label": "Louis XIII to Melchior de Sabran (deciphered by Lasry)"
+  },
+  {
+   "slug": "brulart1615",
+   "doc": "R2785",
+   "year": 1615.71,
+   "date": "15 Sep 1615",
+   "from": "Poitiers",
+   "to": "Venice",
+   "st": "found",
+   "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"
+  },
+  {
+   "slug": "brulart1615",
+   "doc": "R2786",
+   "year": 1617.56,
+   "date": "25 Jul 1617",
+   "from": "Paris",
+   "to": "Venice",
+   "st": "found",
+   "label": "Louis XIII to Brûlart de Léon (read by Tomokiyo)"
+  },
   {
    "slug": "florence1429",
    "doc": "no171",
@@ -4582,27 +4746,1226 @@
    "st": "partial",
    "label": "Mario Bandini, orator at the imperial court, to the Signori of Siena (Lasry's partial key)"
   },
-  {"slug": "costabili1493", "doc": "R1095", "year": 1493.1666666666667, "date": "13 March 1493", "from": "Esztergom", "to": "Ferrara", "st": "found", "label": "Clear Costabili letter to Ercole I d’Este; no cipher"},
-  {"slug": "costabili1493", "doc": "R1096", "year": 1493.25, "date": "22 April 1493", "from": "Esztergom", "to": "Ferrara", "st": "found", "label": "Clear Costabili letter to Ercole I d’Este; no cipher"},
-  {"slug": "costabili1493", "doc": "R1097", "year": 1493.5, "date": "18 July 1493", "from": "Esztergom", "to": "Ferrara", "st": "found", "label": "Clear Costabili letter to Ercole I d’Este; no cipher"},
-  {"slug": "desportes1593", "doc": "f. 186", "year": 1593.56, "date": "22 July 1593", "from": "Paris", "to": "Rome", "st": "solved", "label": "Desportes to Pietro Aldobrandini, deciphered by Paolo Rosson with Tomokiyo’s key"},
-  {"slug": "desportes1593", "doc": "f. 189", "year": 1593.56, "date": "22 July 1593", "from": "Paris", "to": "Rome", "st": "solved", "label": "Desportes to Girolamo Frachetta, deciphered by Paolo Rosson with Tomokiyo’s key"},
-  {"slug": "huangxing", "doc": "t1-0520", "year": 1916.38, "date": "20 May 1916", "from": "Zhaoqing", "to": "Tokyo", "st": "solved", "label": "Military Affairs Council to Huang Xing (three-kana code)"},
-  {"slug": "huangxing", "doc": "t2-0520", "year": 1916.38, "date": "20 May 1916", "from": "Zhaoqing", "to": "Tokyo", "st": "solved", "label": "Lin Hu, Li Genyuan and four others to Huang Xing (three-kana code)"},
-  {"slug": "huangxing", "doc": "reply", "year": 1916.4, "date": "25 May 1916", "from": "Tokyo", "to": "Zhaoqing", "st": "solved", "label": "Huang Xing's reply (three-kana code)"},
-  {"slug": "army1902", "doc": "C09122911500", "year": 1902.24, "date": "27 Mar 1902", "from": "Osaka", "to": "Tokyo", "st": "solved", "label": "Oyama to Terauchi (Army numeric kana cipher)"},
-  {"slug": "army1902", "doc": "C09122909900", "year": 1902.24, "date": "28 Mar 1902", "from": "Osaka", "to": "Tokyo", "st": "solved", "label": "Oyama to Fukushima (Army numeric kana cipher)"},
-  {"slug": "army1902", "doc": "C09123116600", "year": 1904.07, "date": "25 Jan 1904", "from": "Kokura", "to": "Tokyo", "st": "solved", "label": "Kokura to the General Staff: maps of Korea"},
-  {"slug": "army1902", "doc": "C03020059400", "year": 1904.05, "date": "Jan 1904", "from": "Moji", "to": "Tokyo", "st": "solved", "label": "Division commander to the War Minister (Army numeric kana cipher)"},
-  {"slug": "mayenne1586c2", "doc": "ff. 218-219", "year": 1586.38, "date": "May 1586", "from": "Monségur", "to": "Paris", "st": "partial", "label": "Matignon to Henri III from the siege of Monségur, deciphered by Harumi-Matsuba with Tomokiyo’s key"},
-  {"slug": "fiesque1567", "doc": "f. 18r", "year": 1567.87, "date": "15 November 1567", "from": "Vienna", "to": "Paris", "st": "partial", "label": "Fiesque to the Queen Mother, levies in Germany for the Huguenots"},
-  {"slug": "fiesque1567", "doc": "f. 39r", "year": 1568.18, "date": "6 March 1568", "from": "Vienna", "to": "Paris", "st": "partial", "label": "Fiesque to the Queen Mother, Johann Wilhelm of Saxony and his preachers"},
-  {"slug": "letellier1644", "doc": "f. 50", "year": 1644.32, "date": "26 April 1644", "from": "Paris", "to": "Barcelona", "st": "partial", "label": "Le Tellier to Marca, contributed decipherment with Tomokiyo's 1644 table"},
-  {"slug": "sabran1633", "doc": "f. 66r", "year": 1633.73, "date": "23 Sept 1633", "from": "Genoa", "to": "Paris", "st": "partial", "label": "Sabran to Bouthillier: the Savona plot (deciphered by Lasry)"},
-  {"slug": "sabran1633", "doc": "fr. 4135 ff. 218-220", "year": 1635.8, "date": "18 Oct 1635", "from": "Genoa", "to": "Paris", "st": "partial", "label": "Sabran to Bouthillier: Genoa and the Spanish fleet (deciphered by Lasry)"},
-  {"slug": "matignon1586", "doc": "ff. 123-124", "year": 1586.2, "date": "March 1586", "from": "Marmande", "to": "Paris", "st": "partial", "label": "Mayenne to Henri III from Marmande: no money, contributions only by garrisons"},
-  {"slug": "matignon1586", "doc": "f. 110", "year": 1586.2, "date": "March 1586", "from": "Villeneuve-d'Agenais", "to": "Paris", "st": "partial", "label": "Mayenne to Villeroy: the King may end the war, but not by ruining his reputation"},
-  {"slug": "matignon1586", "doc": "ff. 196, 201, 196v", "year": 1586.4, "date": "May 1586", "from": "Monségur", "to": "Paris", "st": "partial", "label": "From the camp before Monségur: Mayenne's fever, a battery of fifteen cannon"},
-  {"slug": "matignon1586", "doc": "f. 154", "year": 1586.3, "date": "April 1586", "from": "Bordeaux", "to": "Paris", "st": "partial", "label": "Forget to Villeroy: two musters owed and lenders drawing back"}
+  {
+   "slug": "costabili1493",
+   "doc": "R1095",
+   "year": 1493.1666666666667,
+   "date": "13 March 1493",
+   "from": "Esztergom",
+   "to": "Ferrara",
+   "st": "found",
+   "label": "Clear Costabili letter to Ercole I d’Este; no cipher"
+  },
+  {
+   "slug": "costabili1493",
+   "doc": "R1096",
+   "year": 1493.25,
+   "date": "22 April 1493",
+   "from": "Esztergom",
+   "to": "Ferrara",
+   "st": "found",
+   "label": "Clear Costabili letter to Ercole I d’Este; no cipher"
+  },
+  {
+   "slug": "costabili1493",
+   "doc": "R1097",
+   "year": 1493.5,
+   "date": "18 July 1493",
+   "from": "Esztergom",
+   "to": "Ferrara",
+   "st": "found",
+   "label": "Clear Costabili letter to Ercole I d’Este; no cipher"
+  },
+  {
+   "slug": "desportes1593",
+   "doc": "f. 186",
+   "year": 1593.56,
+   "date": "22 July 1593",
+   "from": "Paris",
+   "to": "Rome",
+   "st": "solved",
+   "label": "Desportes to Pietro Aldobrandini, deciphered by Paolo Rosson with Tomokiyo’s key"
+  },
+  {
+   "slug": "desportes1593",
+   "doc": "f. 189",
+   "year": 1593.56,
+   "date": "22 July 1593",
+   "from": "Paris",
+   "to": "Rome",
+   "st": "solved",
+   "label": "Desportes to Girolamo Frachetta, deciphered by Paolo Rosson with Tomokiyo’s key"
+  },
+  {
+   "slug": "huangxing",
+   "doc": "t1-0520",
+   "year": 1916.38,
+   "date": "20 May 1916",
+   "from": "Zhaoqing",
+   "to": "Tokyo",
+   "st": "solved",
+   "label": "Military Affairs Council to Huang Xing (three-kana code)"
+  },
+  {
+   "slug": "huangxing",
+   "doc": "t2-0520",
+   "year": 1916.38,
+   "date": "20 May 1916",
+   "from": "Zhaoqing",
+   "to": "Tokyo",
+   "st": "solved",
+   "label": "Lin Hu, Li Genyuan and four others to Huang Xing (three-kana code)"
+  },
+  {
+   "slug": "huangxing",
+   "doc": "reply",
+   "year": 1916.4,
+   "date": "25 May 1916",
+   "from": "Tokyo",
+   "to": "Zhaoqing",
+   "st": "solved",
+   "label": "Huang Xing's reply (three-kana code)"
+  },
+  {
+   "slug": "army1902",
+   "doc": "C09122911500",
+   "year": 1902.24,
+   "date": "27 Mar 1902",
+   "from": "Osaka",
+   "to": "Tokyo",
+   "st": "solved",
+   "label": "Oyama to Terauchi (Army numeric kana cipher)"
+  },
+  {
+   "slug": "army1902",
+   "doc": "C09122909900",
+   "year": 1902.24,
+   "date": "28 Mar 1902",
+   "from": "Osaka",
+   "to": "Tokyo",
+   "st": "solved",
+   "label": "Oyama to Fukushima (Army numeric kana cipher)"
+  },
+  {
+   "slug": "army1902",
+   "doc": "C09123116600",
+   "year": 1904.07,
+   "date": "25 Jan 1904",
+   "from": "Kokura",
+   "to": "Tokyo",
+   "st": "solved",
+   "label": "Kokura to the General Staff: maps of Korea"
+  },
+  {
+   "slug": "army1902",
+   "doc": "C03020059400",
+   "year": 1904.05,
+   "date": "Jan 1904",
+   "from": "Moji",
+   "to": "Tokyo",
+   "st": "solved",
+   "label": "Division commander to the War Minister (Army numeric kana cipher)"
+  },
+  {
+   "slug": "mayenne1586c2",
+   "doc": "ff. 218-219",
+   "year": 1586.38,
+   "date": "May 1586",
+   "from": "Monségur",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon to Henri III from the siege of Monségur, deciphered by Harumi-Matsuba with Tomokiyo’s key"
+  },
+  {
+   "slug": "fiesque1567",
+   "doc": "f. 18r",
+   "year": 1567.87,
+   "date": "15 November 1567",
+   "from": "Vienna",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Fiesque to the Queen Mother, levies in Germany for the Huguenots"
+  },
+  {
+   "slug": "fiesque1567",
+   "doc": "f. 39r",
+   "year": 1568.18,
+   "date": "6 March 1568",
+   "from": "Vienna",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Fiesque to the Queen Mother, Johann Wilhelm of Saxony and his preachers"
+  },
+  {
+   "slug": "letellier1644",
+   "doc": "f. 50",
+   "year": 1644.32,
+   "date": "26 April 1644",
+   "from": "Paris",
+   "to": "Barcelona",
+   "st": "partial",
+   "label": "Le Tellier to Marca, contributed decipherment with Tomokiyo's 1644 table"
+  },
+  {
+   "slug": "sabran1633",
+   "doc": "f. 66r",
+   "year": 1633.73,
+   "date": "23 Sept 1633",
+   "from": "Genoa",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Sabran to Bouthillier: the Savona plot (deciphered by Lasry)"
+  },
+  {
+   "slug": "sabran1633",
+   "doc": "fr. 4135 ff. 218-220",
+   "year": 1635.8,
+   "date": "18 Oct 1635",
+   "from": "Genoa",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Sabran to Bouthillier: Genoa and the Spanish fleet (deciphered by Lasry)"
+  },
+  {
+   "slug": "matignon1586",
+   "doc": "ff. 123-124",
+   "year": 1586.2,
+   "date": "March 1586",
+   "from": "Marmande",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Mayenne to Henri III from Marmande: no money, contributions only by garrisons"
+  },
+  {
+   "slug": "matignon1586",
+   "doc": "f. 110",
+   "year": 1586.2,
+   "date": "March 1586",
+   "from": "Villeneuve-d'Agenais",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Mayenne to Villeroy: the King may end the war, but not by ruining his reputation"
+  },
+  {
+   "slug": "matignon1586",
+   "doc": "ff. 196, 201, 196v",
+   "year": 1586.4,
+   "date": "May 1586",
+   "from": "Monségur",
+   "to": "Paris",
+   "st": "partial",
+   "label": "From the camp before Monségur: Mayenne's fever, a battery of fifteen cannon"
+  },
+  {
+   "slug": "matignon1586",
+   "doc": "f. 154",
+   "year": 1586.3,
+   "date": "April 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Forget to Villeroy: two musters owed and lenders drawing back"
+  },
+  {
+   "slug": "siena2023",
+   "doc": "R4808",
+   "year": 1413.25,
+   "date": "30 March [1413] (die penultimo mensis Martii; year from the contents)",
+   "from": "Perugia",
+   "to": "Naples",
+   "st": "solved",
+   "label": "Siena nos. 20 and 23",
+   "src": "profile"
+  },
+  {
+   "slug": "siena14",
+   "doc": "no14",
+   "year": 1420.5,
+   "date": "",
+   "from": "Rome",
+   "to": "Siena",
+   "st": "stuck",
+   "label": "Siena no. 14, before 1429",
+   "src": "profile"
+  },
+  {
+   "slug": "siena8",
+   "doc": "R4797",
+   "year": 1440.87,
+   "date": "c. 1440-41 (proposed: Felix V elected Nov 1439; Bianca Maria Visconti married Oct 1441)",
+   "from": "Milan",
+   "to": "Siena",
+   "st": "solved",
+   "label": "Siena no. 8, the league slip",
+   "src": "profile"
+  },
+  {
+   "slug": "borghesi1456",
+   "doc": "no04",
+   "year": 1456.36,
+   "date": "12 May 1456",
+   "from": "Naples",
+   "to": "Siena",
+   "st": "stuck",
+   "label": "Borghesi to Benvoglienti 1456",
+   "src": "profile"
+  },
+  {
+   "slug": "matthias1482",
+   "doc": "R1156",
+   "year": 1482.42,
+   "date": "1 Jun 1482",
+   "from": "Pozsony",
+   "to": "Ferrara",
+   "st": "solved",
+   "label": "Matthias 1482",
+   "src": "profile"
+  },
+  {
+   "slug": "ayala1516",
+   "doc": "R9954",
+   "year": 1516.66,
+   "date": "30 Aug 1516",
+   "from": "Brussels",
+   "to": "Madrid",
+   "st": "solved",
+   "label": "Ayala 1516",
+   "src": "profile"
+  },
+  {
+   "slug": "jantini1517",
+   "doc": "R1126",
+   "year": 1517.5,
+   "date": "1517",
+   "from": "Buda",
+   "to": "Ferrara",
+   "st": "stuck",
+   "label": "Fantini 1517–18",
+   "src": "profile"
+  },
+  {
+   "slug": "jantini1517",
+   "doc": "R1127",
+   "year": 1518.18,
+   "date": "6 Mar 1518",
+   "from": "Eger",
+   "to": "Ferrara",
+   "st": "stuck",
+   "label": "Fantini 1517–18",
+   "src": "profile"
+  },
+  {
+   "slug": "ghinucci1527",
+   "doc": "worcester-R8476",
+   "year": 1526.98,
+   "date": "24 Dec 1526",
+   "from": "Poissy",
+   "to": "London",
+   "st": "solved",
+   "label": "Ghinucci 1527",
+   "src": "profile"
+  },
+  {
+   "slug": "ghinucci1527",
+   "doc": "worcester-R8613",
+   "year": 1527.56,
+   "date": "22 Jul 1527",
+   "from": "Valladolid",
+   "to": "London",
+   "st": "solved",
+   "label": "Ghinucci 1527",
+   "src": "profile"
+  },
+  {
+   "slug": "vasto1527",
+   "doc": "no6",
+   "year": 1527.96,
+   "date": "[early Dec 1527]",
+   "from": "Rome",
+   "to": "Burgos",
+   "st": "solved",
+   "label": "Del Vasto 1527",
+   "src": "profile"
+  },
+  {
+   "slug": "ghinucci1527",
+   "doc": "worcester-R8589",
+   "year": 1529.11,
+   "date": "12 Feb 1529",
+   "from": "Valladolid",
+   "to": "London",
+   "st": "solved",
+   "label": "Ghinucci 1527",
+   "src": "profile"
+  },
+  {
+   "slug": "ghinucci1527",
+   "doc": "worcester-R8590",
+   "year": 1529.12,
+   "date": "15 Feb 1529",
+   "from": "Valladolid",
+   "to": "London",
+   "st": "solved",
+   "label": "Ghinucci 1527",
+   "src": "profile"
+  },
+  {
+   "slug": "bizozola1520",
+   "doc": "f156",
+   "year": 1529.84,
+   "date": "4 Nov 1529 (inferred)",
+   "from": "Bologna",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Bizozola 1529",
+   "src": "profile"
+  },
+  {
+   "slug": "r8356",
+   "doc": "ff112v-113r",
+   "year": 1571.5,
+   "date": "1571-06-25",
+   "from": "Paris",
+   "to": "London",
+   "st": "stuck",
+   "label": "Walsingham letter-book 1571",
+   "src": "profile"
+  },
+  {
+   "slug": "r8358",
+   "doc": "f262",
+   "year": 1572.5,
+   "date": "1572-07-05",
+   "from": "Westminster",
+   "to": "Paris",
+   "st": "stuck",
+   "label": "Burghley to Walsingham July 1572",
+   "src": "profile"
+  },
+  {
+   "slug": "walsingham1572",
+   "doc": "R8363",
+   "year": 1573.05,
+   "date": "20 January 1572/3",
+   "from": "Paris",
+   "to": "London",
+   "st": "stuck",
+   "label": "Walsingham to Burghley 1573",
+   "src": "profile"
+  },
+  {
+   "slug": "philip1574",
+   "doc": "G016-A0204",
+   "year": 1574.66,
+   "date": "28 Aug 1574",
+   "from": "Madrid",
+   "to": "Naples",
+   "st": "solved",
+   "label": "Philip II to Don Juan 1574",
+   "src": "profile"
+  },
+  {
+   "slug": "sauli1579",
+   "doc": "R192-R194",
+   "year": 1580.25,
+   "date": "Oct 1580 - 1581 (R192 letter 4-5 Jan 1581)",
+   "from": "Badajoz",
+   "to": "Rome",
+   "st": "solved",
+   "label": "Sauli and Riario 1579",
+   "src": "profile"
+  },
+  {
+   "slug": "r4157",
+   "doc": "f33",
+   "year": 1581.1,
+   "date": "7 February 1581",
+   "from": "Chenonceau",
+   "to": "Bordeaux",
+   "st": "solved",
+   "label": "Catherine to Villeroy 1581",
+   "src": "profile"
+  },
+  {
+   "slug": "camus1586",
+   "doc": "f111v-112r",
+   "year": 1586.22,
+   "date": "21 Mar 1586",
+   "from": "Castets",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Camus de Pontcarré 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "camus1586",
+   "doc": "f132v",
+   "year": 1586.25,
+   "date": "1 Apr 1586",
+   "from": "Castets",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Camus de Pontcarré 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "camus1586",
+   "doc": "f151r",
+   "year": 1586.28,
+   "date": "12 Apr 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Camus de Pontcarré 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "camus1586",
+   "doc": "f134v",
+   "year": 1586.29,
+   "date": "3(?) Apr 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Camus de Pontcarré 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "malicorne1586",
+   "doc": "ff162-164",
+   "year": 1586.3,
+   "date": "21 Apr 1586",
+   "from": "Niort",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Malicorne 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f234r",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f234v",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f235r",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f235v",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f236r",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f236v",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f237r",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f237v",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f238r",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "matignon1586tuple",
+   "doc": "f238v",
+   "year": 1586.37,
+   "date": "May 1586",
+   "from": "Bordeaux",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Matignon tuple cipher 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "camus1586",
+   "doc": "f272",
+   "year": 1586.46,
+   "date": "Jun 1586",
+   "from": "La Rochelle",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Camus de Pontcarré 1586",
+   "src": "profile"
+  },
+  {
+   "slug": "orbais",
+   "doc": "no62",
+   "year": 1589.64,
+   "date": "23 Aug [1589]",
+   "from": "Rome",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Orbais 1589",
+   "src": "profile"
+  },
+  {
+   "slug": "sessa1593",
+   "doc": "no79",
+   "year": 1593.21,
+   "date": "11 de março 1593",
+   "from": "Rome",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Miranda, Sessa 1593",
+   "src": "profile"
+  },
+  {
+   "slug": "sessa1593",
+   "doc": "no45",
+   "year": 1593.5,
+   "date": "25 de hebrero 1593",
+   "from": "Naples",
+   "to": "Paris",
+   "st": "partial",
+   "label": "Miranda, Sessa 1593",
+   "src": "profile"
+  },
+  {
+   "slug": "nevers1595",
+   "doc": "f148",
+   "year": 1595.62,
+   "date": "16 August 1595",
+   "from": "Saint-Quentin",
+   "to": "Nevers",
+   "st": "stuck",
+   "label": "Nevers to Villeroy 1595",
+   "src": "profile"
+  },
+  {
+   "slug": "aerssen1601",
+   "doc": "25may1601",
+   "year": 1601.4,
+   "date": "25 May 1601",
+   "from": "Paris",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Aerssen to Oldenbarnevelt",
+   "src": "profile"
+  },
+  {
+   "slug": "aerssen1601",
+   "doc": "2jun1601",
+   "year": 1601.42,
+   "date": "2 June 1601",
+   "from": "Paris",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Aerssen to Oldenbarnevelt",
+   "src": "profile"
+  },
+  {
+   "slug": "berny1607",
+   "doc": "berny1607",
+   "year": 1607.57,
+   "date": "26 July 1607",
+   "from": "Brussels",
+   "to": "The Hague",
+   "st": "solved",
+   "label": "Brulart de Berny to Pierre Jeannin, 26…",
+   "src": "profile"
+  },
+  {
+   "slug": "laboderie1608",
+   "doc": "laboderie1608",
+   "year": 1608.43,
+   "date": "7 June1608",
+   "from": "London",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "La Boderie to Pierre Jeannin, 7 June1608",
+   "src": "profile"
+  },
+  {
+   "slug": "breves1610",
+   "doc": "15sept1610",
+   "year": 1610.71,
+   "date": "15 Sept 1610",
+   "from": "Paris",
+   "to": "Rome",
+   "st": "partial",
+   "label": "Brèves 1610",
+   "src": "profile"
+  },
+  {
+   "slug": "breves1610",
+   "doc": "10nov1610",
+   "year": 1610.86,
+   "date": "10 Nov 1610",
+   "from": "Paris",
+   "to": "Rome",
+   "st": "partial",
+   "label": "Brèves 1610",
+   "src": "profile"
+  },
+  {
+   "slug": "herbault1626",
+   "doc": "no. 25",
+   "year": 1626.12,
+   "date": "13 Feb 1626",
+   "from": "Paris",
+   "to": "Rome",
+   "st": "solved",
+   "label": "Herbault",
+   "src": "profile"
+  },
+  {
+   "slug": "emery1636",
+   "doc": "fr5190-no171",
+   "year": 1636.07,
+   "date": "25 January 1636",
+   "from": "Turin",
+   "to": "Sondrio",
+   "st": "stuck",
+   "label": "D’Émery to Rohan 1636",
+   "src": "profile"
+  },
+  {
+   "slug": "emery1636",
+   "doc": "fr5190-no172",
+   "year": 1636.5,
+   "date": "early 1636",
+   "from": "Sondrio",
+   "to": "Turin",
+   "st": "stuck",
+   "label": "D’Émery to Rohan 1636",
+   "src": "profile"
+  },
+  {
+   "slug": "brienne1067",
+   "doc": "brienne1067",
+   "year": 1646.38,
+   "date": "Compiègne, 19 May 1646",
+   "from": "Compiègne",
+   "to": "Warsaw",
+   "st": "solved",
+   "label": "Brienne to Queen of Poland, Compiègne,…",
+   "src": "profile"
+  },
+  {
+   "slug": "laigue1649",
+   "doc": "43",
+   "year": 1649.18,
+   "date": "5 Mar 1649",
+   "from": "Paris",
+   "to": "Brussels",
+   "st": "solved",
+   "label": "Conti to Laigue 1649",
+   "src": "profile"
+  },
+  {
+   "slug": "conti1649",
+   "doc": "41-42",
+   "year": 1649.24,
+   "date": "26 and 27 Mar 1649",
+   "from": "Paris",
+   "to": "Noirmoutier",
+   "st": "solved",
+   "label": "Conti 1649",
+   "src": "profile"
+  },
+  {
+   "slug": "bouillon1650",
+   "doc": "bouillon1650",
+   "year": 1650.6,
+   "date": "6–8 August 1650, Madrid",
+   "from": "Madrid",
+   "to": "Bordeaux",
+   "st": "solved",
+   "label": "Not established to Duke of Bouillon,…",
+   "src": "profile"
+  },
+  {
+   "slug": "beuningen1676",
+   "doc": "1676-06-02",
+   "year": 1676.39,
+   "date": "23 May/2 June 1676",
+   "from": "London",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Van Beuningen to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "ronquillo1676",
+   "doc": "margined",
+   "year": 1677.62,
+   "date": "Aug 1676 - May 1677",
+   "from": "London",
+   "to": "Copenhagen",
+   "st": "partial",
+   "label": "Salinas & Ronquillo 1676",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1010",
+   "year": 1677.67,
+   "date": "4 Sept 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1011",
+   "year": 1677.71,
+   "date": "18 Sept 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1009",
+   "year": 1677.73,
+   "date": "25 Sept 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1006",
+   "year": 1677.75,
+   "date": "2 Oct 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1007",
+   "year": 1677.77,
+   "date": "9 Oct 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1008",
+   "year": 1677.79,
+   "date": "16 Oct 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1004",
+   "year": 1677.87,
+   "date": "13 Nov 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1005",
+   "year": 1677.89,
+   "date": "20 Nov 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1002",
+   "year": 1677.92,
+   "date": "4 Dec 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "carpio1677",
+   "doc": "R1003",
+   "year": 1677.94,
+   "date": "11 Dec 1677",
+   "from": "Rome",
+   "to": "Copenhagen",
+   "st": "solved",
+   "label": "Carpio 1677",
+   "src": "profile"
+  },
+  {
+   "slug": "ronquillo1676",
+   "doc": "unmargined",
+   "year": 1678.21,
+   "date": "Feb - Mar 1678",
+   "from": "London",
+   "to": "Copenhagen",
+   "st": "partial",
+   "label": "Salinas & Ronquillo 1676",
+   "src": "profile"
+  },
+  {
+   "slug": "feuquieres1678",
+   "doc": "feuquieres1678",
+   "year": 1678.94,
+   "date": "9 December 1678",
+   "from": "Saint-Germain-en-Laye",
+   "to": "Stockholm",
+   "st": "partial",
+   "label": "Louis XIV to Marquis de Feuquières, 9…",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1686-12-19",
+   "year": 1686.5,
+   "date": "1686-12-19",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1686-12-05",
+   "year": 1686.5,
+   "date": "1686-12-05",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1687-04-24",
+   "year": 1687.5,
+   "date": "1687-04-24",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1687-12-04",
+   "year": 1687.5,
+   "date": "1687-12-04",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1687-01-30",
+   "year": 1687.5,
+   "date": "1687-01-30",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1688-02-12",
+   "year": 1688.5,
+   "date": "1688-02-12",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1688-04-08",
+   "year": 1688.5,
+   "date": "1688-04-08",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1688-01-29",
+   "year": 1688.5,
+   "date": "1688-01-29",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "battier1686",
+   "doc": "1688-02-26",
+   "year": 1688.5,
+   "date": "1688-02-26",
+   "from": "Madrid",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Battier to Fagel",
+   "src": "profile"
+  },
+  {
+   "slug": "windischgraetz1720",
+   "doc": "No. 1",
+   "year": 1720.09,
+   "date": "3 Feb 1720",
+   "from": "Vienna",
+   "to": "The Hague",
+   "st": "solved",
+   "label": "Windischgrätz 1720",
+   "src": "profile"
+  },
+  {
+   "slug": "windischgraetz1720b",
+   "doc": "No. 2",
+   "year": 1720.28,
+   "date": "13 Apr 1720",
+   "from": "Vienna",
+   "to": "The Hague",
+   "st": "solved",
+   "label": "Windischgrätz 1720–22, private key",
+   "src": "profile"
+  },
+  {
+   "slug": "windischgraetz1720b",
+   "doc": "No. 3",
+   "year": 1720.56,
+   "date": "24 Jul 1720",
+   "from": "Vienna",
+   "to": "The Hague",
+   "st": "solved",
+   "label": "Windischgrätz 1720–22, private key",
+   "src": "profile"
+  },
+  {
+   "slug": "colonia1721",
+   "doc": "r24",
+   "year": 1721.77,
+   "date": "9 Oct 1721",
+   "from": "Brussels",
+   "to": "Cologne",
+   "st": "solved",
+   "label": "Brussels 1721",
+   "src": "profile"
+  },
+  {
+   "slug": "windischgraetz1721",
+   "doc": "R5029",
+   "year": 1721.88,
+   "date": "18 November 1721",
+   "from": "Brussels",
+   "to": "The Hague",
+   "st": "partial",
+   "label": "Windischgrätz 1721",
+   "src": "profile"
+  },
+  {
+   "slug": "windischgraetz1720b",
+   "doc": "No. 6",
+   "year": 1722.28,
+   "date": "11 Apr 1722",
+   "from": "Vienna",
+   "to": "Cambrai",
+   "st": "solved",
+   "label": "Windischgrätz 1720–22, private key",
+   "src": "profile"
+  },
+  {
+   "slug": "visconti1727",
+   "doc": "R7931",
+   "year": 1727.5,
+   "date": "1727",
+   "from": "Brussels",
+   "to": "London",
+   "st": "found",
+   "label": "Visconti Italian cipher",
+   "src": "profile"
+  },
+  {
+   "slug": "ilten1743",
+   "doc": "feb26",
+   "year": 1743.15,
+   "date": "15/26 Feb 1743",
+   "from": "London",
+   "to": "Hanover",
+   "st": "solved",
+   "label": "London to Ilten 1743",
+   "src": "profile"
+  },
+  {
+   "slug": "ilten1743",
+   "doc": "mar29",
+   "year": 1743.24,
+   "date": "29 Mar / 9 Apr 1743",
+   "from": "London",
+   "to": "Hanover",
+   "st": "solved",
+   "label": "London to Ilten 1743",
+   "src": "profile"
+  },
+  {
+   "slug": "zeschau1841",
+   "doc": "R5005",
+   "year": 1841.05,
+   "date": "18 Jan 1841",
+   "from": "Dresden",
+   "to": "St Petersburg",
+   "st": "stuck",
+   "label": "Zeschau 1841–43",
+   "src": "profile"
+  },
+  {
+   "slug": "zeschau1841",
+   "doc": "R5006-R5008",
+   "year": 1842.26,
+   "date": "6 Apr 1842 - 26 Oct 1843",
+   "from": "Dresden",
+   "to": "St Petersburg",
+   "st": "stuck",
+   "label": "Zeschau 1841–43",
+   "src": "profile"
+  },
+  {
+   "slug": "rosamonde1915",
+   "doc": "1915-B03050087600",
+   "year": 1915.13,
+   "date": "17 Feb - 11 Mar 1915",
+   "from": "Tokyo",
+   "to": "Shanghai",
+   "st": "partial",
+   "label": "Rosamonde telegrams",
+   "src": "profile"
+  },
+  {
+   "slug": "numeric1916",
+   "doc": "gongmi",
+   "year": 1916.44,
+   "date": "10 June – 2 July 1916",
+   "from": "Tokyo",
+   "to": "Shanghai",
+   "st": "partial",
+   "label": "Huang Xing numeric codes",
+   "src": "profile"
+  },
+  {
+   "slug": "numeric1916",
+   "doc": "chenmi",
+   "year": 1916.45,
+   "date": "3 – 13 June 1916",
+   "from": "Tokyo",
+   "to": "Shanghai",
+   "st": "partial",
+   "label": "Huang Xing numeric codes",
+   "src": "profile"
+  },
+  {
+   "slug": "numeric1916",
+   "doc": "rongmi",
+   "year": 1916.5,
+   "date": "8 – c. 30 June 1916",
+   "from": "Tokyo",
+   "to": "Shanghai",
+   "st": "partial",
+   "label": "Huang Xing numeric codes",
+   "src": "profile"
+  }
  ]
 }
