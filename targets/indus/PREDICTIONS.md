@@ -14790,3 +14790,7 @@ signs' line frequencies (`hyp_s2_longdist.py`). The 30 highest-PMI pairs are A's
 - **LD1** 70%+ of them that have both signs in 5+ B lines co-occur on B more than their B frequencies predict (PMI > 0).
 - **LD2** At least 10 such pairs are testable on B.
 - Progress rule: LD1 and LD2 (dependencies beyond the neighbour, replicated).
+
+## Results of set 545 (`hyp_s2_longdist.py`, `results/predict_test545.md`)
+
+Held: LD1, LD2. 16 of 21 A long-distance pairs positive on B. Progress: yes (session-2 goal streak 0).
