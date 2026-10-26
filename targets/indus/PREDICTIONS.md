@@ -14890,3 +14890,13 @@ head distributions, against 500 random splits of the same head tokens into group
 ## Results of set 551 (`hyp_s2_shortheads.py`, `results/predict_test551.md`)
 
 Held: SH1, SH2. A True, B True. Progress: yes (session-2 goal streak 0).
+
+
+# Set 552, registered before testing (26 October 2026): session-2 goal loop 17, small and large numbers count different signs (two hypotheses)
+
+Sign directly after a numeral; numerals 1-3 'small', 4+ 'large' (numerals.NUMS values). Counted signs with 6+ A tokens
+skewed small / large at p < 0.05 (Fisher) on A (`hyp_s2_numcount.py`).
+
+- **NC1** 3+ skewed signs on A.
+- **NC2** 75%+ of skewed signs with 3+ B tokens lean the same way on B (binomial p < 0.05).
+- Progress rule: NC1 and NC2.
