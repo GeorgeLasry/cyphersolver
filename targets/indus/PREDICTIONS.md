@@ -16394,3 +16394,9 @@ followers. A direct test: distinct texts identical except at one position, where
 - **MP1** On A, 892 / 700 minimal pairs exceed the matched pairs (p < 0.05, at least one pair).
 - **MP2** The same on B.
 - Progress rule: MP1 and MP2 (892 alternates with 700 in the same formulas).
+
+## Results of set 648 (`predict_test648.py`, `results/predict_test648.md`)
+
+Both failed. 892 and 700 alternate in one minimal pair on A (matched pairs 0.25, p = 0.15) and one on B (0.67, p =
+0.51). 892 does not replace 700 inside the same formulas; set 593's shared contexts stand as a distributional
+resemblance only. Progress: none.
