@@ -14420,3 +14420,7 @@ failed (3423 registered).
 - **H1** Large and small seals differ in carrying 4.
 - **H2** They differ in carrying 1.
 - Progress rule: either at p < 0.01.
+
+## Results of set 519 (`goal_driver.py`, `results/predict_test519.md`)
+
+4 odds ratio 1.39 (p = 0.5366); 1 odds ratio 1.03 (p = 0.9797). Progress: none (goal streak 4).
