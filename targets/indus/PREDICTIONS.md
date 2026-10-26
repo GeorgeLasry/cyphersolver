@@ -14704,3 +14704,7 @@ A sign is a 'head' on A if 60%+ of its tokens (10+) stand before an ending, an '
 - **HO2** Heads are graphically varied: heads come from 5+ different decade families, openers from fewer families than
   heads (openers are a small closed set).
 - Progress rule: HO2 holds with HO1 (a replicated description of the two slots' vocabularies).
+
+## Results of set 539 (`hyp_s2_heads.py`, `results/predict_test539.md`)
+
+Held: HO2. heads 10 (10 families), openers 8 (8 families); kept on B 8/12. Progress: none (session-2 goal streak 4).
