@@ -13691,3 +13691,10 @@ Square seals with a size; Mantel-Haenszel over length band x site (`predict_test
 - **CC2** They differ in carrying a doubled non-numeral sign (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-sixty-ninth set (`predict_test469.py`, `results/predict_test469.md`)
+
+CC1 failed, CC2 held. Caged closers are not size-linked (odds ratio 1.26, p = 0.57). Doubled non-numeral signs are on
+small seals: odds ratio large/small 0.41 (p = 0.005) with length band x site strata. With sets 380 (small seals repeat
+texts) and 430 (156, 400, 590 small), small seals carry a distinct repertoire: repeated texts, doubled signs and the
+small-seal signs. A single test on all the data. Progress (goal streak 0). Tally, counting parts: 1651 held, 1673
+failed (3328 registered).
