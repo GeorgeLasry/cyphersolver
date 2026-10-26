@@ -14733,3 +14733,7 @@ Openers (set 539: 104 491 692 817 820 853 861 920 on A) head a line (`hyp_s2_ope
 - **OL2** The same on B, using A's openers.
 - Progress rule: OL1 and OL2. (Set 230-279 already studied the heading; if this only re-finds the heading unit, it is
   recorded as consistency.)
+
+## Results of set 541 (`hyp_s2_openlen.py`, `results/predict_test541.md`)
+
+Held: OL1, OL2. opener lines longer on A True, B True; the heading unit (sets 230-279) already covers it: consistency. Progress: none (session-2 goal streak 6).

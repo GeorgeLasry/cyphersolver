@@ -440,3 +440,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-3 | 538 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pairs written in both orders: free pairs both orders on B 13/22 vs fixed 11/97; numeral/marker share 14/27. (no progress; session-2 goal streak 3) |
 | S2-4 | 539 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | heads and openers as separate vocabularies: heads 10 (10 families), openers 8 (8 families); kept on B 8/12. (no progress; session-2 goal streak 4) |
 | S2-5 | 540 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish signs in free order: fish pairs reversible A 7/13 vs 136/488; B 3/8 vs 113/299. (no progress; session-2 goal streak 5) |
+| S2-6 | 541 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opener lines are longer: opener lines longer on A True, B True; the heading unit (sets 230-279) already covers it: consistency. (no progress; session-2 goal streak 6) |
