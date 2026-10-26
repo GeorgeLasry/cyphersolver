@@ -13737,3 +13737,7 @@ strata only.
 - **SN2** They differ in carrying any numeral (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-second set (`predict_test472.py`, `results/predict_test472.md`)
+
+Both failed: numeral first odds ratio 1.06 (p = 0.83), any numeral 0.96 (p = 0.80). Progress: none (goal streak 3).
+Tally, counting parts: 1652 held, 1678 failed (3334 registered).

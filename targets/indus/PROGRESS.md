@@ -371,3 +371,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G115 | 469 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | doubled signs on small seals (OR 0.41, p = 0.005, length x site held); caged closers not size-linked (progress; goal streak 0) |
 | G116 | 470 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | doubled signs on small seals: same direction in both halves, significant in one (replication; no progress; goal streak 1) |
 | G117 | 471 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish signs and 740 ending not size-linked (length x site held) (no progress; goal streak 2) |
+| G118 | 472 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numerals not size-linked (no progress; goal streak 3) |
