@@ -14708,3 +14708,14 @@ A sign is a 'head' on A if 60%+ of its tokens (10+) stand before an ending, an '
 ## Results of set 539 (`hyp_s2_heads.py`, `results/predict_test539.md`)
 
 Held: HO2. heads 10 (10 families), openers 8 (8 families); kept on B 8/12. Progress: none (session-2 goal streak 4).
+
+
+# Set 540, registered before testing (26 October 2026): session-2 goal loop 5, fish signs in free order (two hypotheses)
+
+Set 538 found free-order pairs, many of them two fish signs (220 233 235 240 255 ...). Fish = ICIT 220-259
+(`hyp_s2_fishorder.py`). For each unordered pair of distinct signs seen adjacent 3+ times, 'reversible' = both orders
+attested.
+
+- **FO1** On A, fish-fish pairs are reversible more often than other pairs (Fisher p < 0.05).
+- **FO2** The same on B.
+- Progress rule: FO1 and FO2 (the fish signs combine in free order, like stacked modifiers).
