@@ -14673,3 +14673,7 @@ Each sign directly before an ending (740 / 520) has a preferred ending on A (5+ 
 - **EN2** Signs preferring 520 are more often non-fish than fish (the choice is not only the fish class): 5+ non-fish
   signs prefer 520 on A and keep it on B.
 - Progress rule: EN2 holds (a new, replicated finding beyond the fish class; EN1 alone re-finds known structure).
+
+## Results of set 537 (`hyp_s2_ending.py`, `results/predict_test537.md`)
+
+Held: EN1. preferences replicate 30/30; non-fish 520 signs kept on B: 2. Progress: none (session-2 goal streak 2).
