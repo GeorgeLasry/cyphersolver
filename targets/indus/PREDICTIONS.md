@@ -15069,3 +15069,7 @@ Set 562 restricted to lines of 4+ signs (a unit cannot fill the line) and compar
   length band the large mean is later.
 - **PA2** On B, lines of 4+ signs, same direction (p < 0.05).
 - Progress rule: none (audit); a failure withdraws set 562.
+
+## Results of set 564 (`hyp_s2_posaudit.py`, `results/predict_test564.md`)
+
+Held: PA1, PA2. PA1 True, PA2 True (audit of set 562). Progress: none (session-2 goal streak 2).
