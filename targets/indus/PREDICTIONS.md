@@ -13546,7 +13546,8 @@ Tablets with a recorded first dimension (ICIT field 31) (`predict_test459.py`).
 Both held. Longer texts on larger incised tablets (rho 0.39, 541 tablets; close to trivial: more text needs more room).
 Moulded tablets carrying the counted pot 700 are smaller: median 16.5 (219) against 24.0 (486), p < 0.0001. The 'N
 pots' tablets are small tokens, as the reading of tablets as tokens (Meadow and Kenoyer 2000; DOSSIER section 3.6)
-expects; the size difference itself is new here. Not length-stratified. Progress under the rule (goal streak 0).
+expects; the size difference itself is new here. Not length-stratified (set 460: holds within length bands, not
+within Harappa: downgraded). Progress under the rule (goal streak 0).
 Tally, counting parts: 1648 held, 1656 failed (3308 registered).
 
 # Four-hundred-and-sixtieth set, registered before testing (26 October 2026): goal loop 106, audit of the small count tablets (two hypotheses)
@@ -13557,3 +13558,9 @@ Tally, counting parts: 1648 held, 1656 failed (3308 registered).
 - **TA2** The same within Harappa.
 - Progress rule: none (audit). Both failing downgrades set 459's TZ2 to a length effect.
 
+## Results of the four-hundred-and-sixtieth set (`predict_test460.py`, `results/predict_test460.md`)
+
+TA1 held, TA2 failed (audit). Within length bands moulded tablets with 700 are small more often (odds ratio 2.93,
+p < 0.0001), but within Harappa only 1.32 (p = 0.41): much of set 459's TZ2 is a difference between sites in tablet size
+and in how often they count pots. **TZ2 is downgraded**: not shown within one site. Progress: none (goal streak 1).
+Tally, counting parts: 1649 held, 1657 failed (3310 registered).
