@@ -14900,3 +14900,7 @@ skewed small / large at p < 0.05 (Fisher) on A (`hyp_s2_numcount.py`).
 - **NC1** 3+ skewed signs on A.
 - **NC2** 75%+ of skewed signs with 3+ B tokens lean the same way on B (binomial p < 0.05).
 - Progress rule: NC1 and NC2.
+
+## Results of set 552 (`hyp_s2_numcount.py`, `results/predict_test552.md`)
+
+Held: NC1, NC2. skewed 16 on A; same way on B 12/14. Progress: yes (session-2 goal streak 0).
