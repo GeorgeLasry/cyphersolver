@@ -58,7 +58,7 @@ come out a point or two under Brackx's own figures.
 | 236v | 231 | 0.431 | decoded, not read |
 | 237r | 190 | 0.940 | read in part |
 | 237v | 201 | 0.929 | read in part |
-| 238r | 202 | 0.803 | read in part |
+| 238r | 202 | 0.836 | read in part |
 | 238v | 117 | 0.756 | read in part |
 
 Word-weighted over all ten pages: 0.818 (`outcome.fraction_read`). Groups: 2,152 (`_check_profile.py --measure`).
@@ -85,8 +85,25 @@ multi-valued group on the five pages nearest the bar, 107 groups, in `glosses_mu
 - **Four contradictions, all taken into the readings:** 234r l. 7 the gloss has *qui* over the group decoded *que*
   (*les affaires qui ce presente[nt]*); 237r l. 1 *de* over `DA` decoded *d*; 237v ll. 3-4 *mons[ieu]r* twice over
   the `SR` groups decoded *sieur*.
-- 235r-v and 237r-v carry glosses only on some lines or phrases, so most of their choices stay unconfirmed. Not
-  recorded: 234v, 236r, 236v, 238r, 238v.
+- 235r-v and 237r-v carry glosses only on some lines or phrases, so most of their choices stay unconfirmed.
+
+**The other five pages (issue #99, 25 Oct 2026).** Brackx recorded the glosses on 234v, 236r, 236v, 238r and 238v
+the same way (109 more rows in `glosses_multivalued.tsv`):
+
+| page | multi-valued | agrees | contradicts | unclear | no gloss | unconfirmed share |
+|---|---|---|---|---|---|---|
+| 234v | 22 | 20 | 0 | 0 | 2 | 0.8% |
+| 236r | 36 | 20 | 2 | 5 | 9 | 6.0% |
+| 236v | 19 | 6 | 3 | 3 | 7 | 5.7% |
+| 238r | 18 | 12 | 1 | 0 | 5 | 3.0% |
+| 238v | 14 | 8 | 0 | 1 | 5 | 5.3% |
+
+- All ten pages now have every multi-valued group checked against the glosses: 216 groups, 114 of 2,135 groups
+  (5.3%) unconfirmed. No page changes class: 238r is inside the 3% limit and 234v nearly fully confirmed, but both are
+  under 95%.
+- Six contradictions, the reading following the gloss: 238r l. 20 *m* for *n*, so *m'a dit auoir charge* is now read
+  (0.803 to 0.836); 236v ll. 4-5 *cure remo[ns]trant*; 236v l. 11 *pour*, l. 7 *que*; 236r l. 22 *m* (a name, open)
+  and l. 25 *ss*. The last four fall in unread or doubtful words and change the decode, not the counts.
 
 ## Content
 
@@ -98,7 +115,7 @@ with 2,000 muids of salt or three Huguenot councillors' offices), Alincourt and 
 Roussière and of la Magdaleine.
 
 ## Remaining gaps
-- multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others), 8-14% of groups - blocker: no-key-material; 235r-v and 237r-v were checked against the glosses (issue #95) and most of their multi-valued groups carry none; 234v, 236r-v and 238r-v not yet recorded
+- multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others) - blocker: no-key-material; every multi-valued group on all ten pages checked against the glosses (issues #95, #99): 114 of 2,135 groups carry no gloss or an unclear one, and nothing else on the leaves settles them
 - f. 236v, most of the page (read share 0.431) - blocker: illegible; show-through and faded ink, fragmentary glosses, verso subtraction failed to register
 - 234v l. 13 ('Cadarran(?)') and ll. 21-24; 236r l. 15, ll. 22-25; 238r ll. 20-22 ('la crois lartie'); 238v ll. 7-10 ('Bourg(?)') - blocker: illegible; re-read at full and upscaled resolution in the contributor's round 7
 - 41 rare 'open' labels (79 groups, 3.7%) with no shape recorded - blocker: no-key-material; once or twice each

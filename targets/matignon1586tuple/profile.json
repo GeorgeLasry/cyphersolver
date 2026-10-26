@@ -10,7 +10,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -41,7 +44,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -72,7 +78,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -103,7 +112,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -134,7 +146,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -165,7 +180,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -196,7 +214,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -227,7 +248,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -258,7 +282,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -289,7 +316,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jacques de Matignon, Guyenne -> Henri III",
-   "places": {"from": "Bordeaux", "to": "Paris"},
+   "places": {
+    "from": "Bordeaux",
+    "to": "Paris"
+   },
    "language": "French",
    "pages": 1,
    "cleartext_in_document": "none",
@@ -429,6 +459,15 @@
    "kind": "verification",
    "what": "Brackx (issue #95) recorded the contemporary gloss over each of the 107 multi-valued groups on 234r, 235r, 235v, 237r and 237v: 234r 20 agree, 1 contradicts, 3 unclear (unconfirmed 1.2%), so it meets the read bar; 235r 5/23 glossed, 235v 3/21, 237r 7/17, 237v 8/22. Four contradictions taken into the readings: 234r l. 7 qui (not que), 237r l. 1 de (not d), 237v ll. 3-4 monsieur (not sieur, twice). Re-measured: 234r 0.974 read, 237r 0.94, 237v 0.929.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Brackx (issue #99) recorded the glosses over the multi-valued groups on 234v, 236r, 236v, 238r, 238v (109 groups): 66 agree, 6 contradict, 9 unclear, 28 no gloss. All ten pages now checked: 114 of 2,135 groups unconfirmed (5.3%). Contradictions taken into the readings: 238r m'a dit auoir charge (0.803 -> 0.836), 236v cure remo[ns]trant. No class changes.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -454,9 +493,9 @@
   },
   "gaps": [
    {
-    "item": "multi-valued labels (E2 c/e, M30 m/n/mm/nn, QUI qui/que, N18 le/de, DA de/d and others), 8-14% of groups on the nine pages other than 234r, value chosen by the decoder",
+    "item": "multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others)",
     "blocker": "no-key-material",
-    "detail": "Brackx recorded the gloss over every multi-valued group on 234r, 235r, 235v, 237r and 237v (issue #95, glosses_multivalued.tsv): 234r is glossed group by group and now passes; 235r-v and 237r-v are glossed only on some lines or phrases (55 of 83 groups carry no gloss), so their choices stay unconfirmed. Not done: 234v, 236r, 236v, 238r, 238v."
+    "detail": "Every multi-valued group on all ten pages checked against the contemporary glosses (Brackx, issues #95 and #99; glosses_multivalued.tsv, 216 groups): 114 of 2,135 groups carry no gloss or an unclear one, and nothing else on the leaves settles them."
    },
    {
     "item": "f. 236v, most of the page (read share 0.431)",
@@ -607,7 +646,7 @@
     "language": "fr",
     "read_share": 0.431,
     "summary": "Fragments only: Saint-Lô(?), a curé, a peace to be made, priests, a campaign, a company; the page does not yet build sentences.",
-    "note": "Fragments; holes in almost every sentence. Shown for checking, not counted."
+    "note": "Fragments; holes in almost every sentence. Shown for checking, not counted. Gloss ll. 4-5 ...monstrant (issue #99): cure remo[ns]trant."
    },
    {
     "doc": "f237r",
@@ -654,13 +693,13 @@
     "translation": "texts/f238r_en.md",
     "state": "read in part",
     "language": "fr",
-    "read_share": 0.803,
+    "read_share": 0.836,
     "summary": "A reward for the sieur de la Fontaine would take away the pretext of La Roussière's friends for attempting the place, as they had also attempted against the writer himself; the troops and 'la crois lartie'.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-24",
-     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.803 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit."
+     "note": "Coherent sentences in the decrypted spelling, read as prose; read_share 0.836 (v10_relabel.measure, in-word bracket expansions counted as holes). Kept read in part whatever the share: 8-14% of groups on each page are multi-valued labels (E2, M30, QUI, N18, DA ...) whose value the decoder chose, over the 3% look-alike limit. Gloss l. 20 m (issue #99): m'a dit auoir charge now read."
     }
    },
    {
