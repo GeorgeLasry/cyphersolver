@@ -13798,3 +13798,12 @@ registered).
 
 Both failed: stroked jars odds ratio 1.06 (p = 0.82); mid-line 2 / 60 1.17 (p = 0.33). Progress: none (goal streak 7).
 Tally, counting parts: 1653 held, 1683 failed (3341 registered).
+
+# Four-hundred-and-seventy-seventh set, registered before testing (26 October 2026): goal loop 123, bare texts and opening fish by size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test477.py`).
+
+- **SB1** Large and small seals differ in carrying texts with no ending at all (two-sided p < 0.05).
+- **SB2** They differ in texts that open with a fish sign (two-sided p < 0.05).
+- Progress rule: either holds.
+
