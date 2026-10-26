@@ -13126,3 +13126,8 @@ lines; mean pairwise cosine of context counts against frequency-matched random s
 - **SL2** They share following signs (line end counted).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-second set (`predict_test432.py`, `results/predict_test432.md`)
+
+Both failed. Preceding signs: mean pairwise cosine 0.114 (p = 0.90); following signs 0.457 (p = 0.056, all three often
+end the line). The small-seal signs are not one slot by their left context. Progress: none (goal streak 9). Tally,
+counting parts: 1630 held, 1621 failed (3255 registered).
