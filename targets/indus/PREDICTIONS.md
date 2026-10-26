@@ -15773,3 +15773,7 @@ Set 593 found 892 and 700 share (previous, next) contexts. Set 598 audited 61 / 
 - **SA1** On A, 61 and 575 still share contexts beyond random partners (p < 0.05).
 - **SA2** On B the same.
 - Progress rule: none (audit); a failure withdraws set 593.
+
+## Results of set 614 (`hyp_s2_subaudit2.py`, `results/predict_test614.md`)
+
+Held: SA1, SA2. SA1 True, SA2 True (audit of set 593). Progress: none (session-2 goal streak 21).
