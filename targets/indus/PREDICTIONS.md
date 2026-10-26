@@ -14217,3 +14217,7 @@ counting parts: 1669 held, 1723 failed (3397 registered).
 - **F240** They differ in carrying 240 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-fifth set (`predict_test505.py`, `results/predict_test505.md`)
+
+Both failed: 220 odds ratio 1.31 (p = 0.23); 240 0.99 (p = 0.97). Progress: none (goal streak 4). Tally, counting parts:
+1669 held, 1725 failed (3399 registered).
