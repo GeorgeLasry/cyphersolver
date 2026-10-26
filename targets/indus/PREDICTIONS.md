@@ -12883,3 +12883,9 @@ kinds; the periods are not stratified by kind here) (`predict_test417.py`).
 - **TM2** Harappa early (to 3B) against late (3C on).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventeenth set (`predict_test417.py`, `results/predict_test417.md`)
+
+Both failed. No sign is skewed at p < 0.01 between Mohenjo-daro's early / intermediate and late phases (799 / 615
+tokens on C-train) or between Harappa's early and late periods (58 / 619). Signs and formula are stable over time at
+both cities (sets 385, 416; Rao and Mahadevan 1987 for sign pairs). Progress: none (goal streak 7). Tally, counting
+parts: 1622 held, 1602 failed (3226 registered).
