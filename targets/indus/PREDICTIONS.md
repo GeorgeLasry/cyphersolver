@@ -12130,3 +12130,17 @@ domain predictions use the same copy-free training lines (`predict_test377.py`).
 - **RS2** Two-gap lines (set 314): the same.
 - Progress rule: the total restored by the domain models exceeds the plain total (the restoration line rises).
 
+## Results of the three-hundred-and-seventy-fifth set (`predict_test375.py`, `results/predict_test375.md`)
+
+Both failed. Secondary motif: fixed gain 0.0005, split C worse; workmanship: weight 0. Progress: none (goal streak 3).
+Tally, counting parts: 1600 held, 1540 failed (3140 registered).
+
+# Three-hundred-and-seventy-sixth set, registered before testing (26 October 2026): goal loop 22, seal size (two hypotheses)
+
+Square seals with a recorded first dimension (ICIT field 31), split at the C-train median; split C (`predict_test376.py`).
+
+- **LS1** Signs skewed between large and small seals on C-train (Fisher p < 0.01, 10+ tokens) lean the same way on
+  C-test in 75%+ of cases with 3+ tokens (binomial p < 0.05): large seals carry different words (titles?).
+- **LS2** Text length rises with seal size on C-train and on C-test (Spearman, p < 0.05 each).
+- Progress rule: LS1 holds (a replicated finding).
+
