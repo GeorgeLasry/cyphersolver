@@ -13245,3 +13245,9 @@ Set 433 compared 706 with 705 and with 700 (`predict_test440.py`; one-sided Mann
 - **UR2** Rectangular seals with 705 or 706 are larger than rectangular seals with plain 700.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fortieth set (`predict_test440.py`, `results/predict_test440.md`)
+
+Both held. Square seals with 705: median 27.9 (61) against plain 700: 21.6 (11), p = 0.0002, completing the ladder 700 <
+705 < 706 (set 433). Rectangular seals with a stroked U: 36.8 (25) against plain 700: 15.2 (5), p = 0.014. Caveat: the
+plain-700 groups are small (11 and 5 seals). **The inner strokes of the U track seal size on both seal kinds.**
+Progress (goal streak 0). Tally, counting parts: 1635 held, 1632 failed (3271 registered).

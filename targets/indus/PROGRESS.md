@@ -339,3 +339,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G83 | 437 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | one- vs multi-line seals: nothing (no progress; goal streak 4) |
 | G84 | 438 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | towns vs cities in square seals: no skews (Chanhu-daro untestable) (no progress; goal streak 5) |
 | G85 | 439 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | unicorn seals with/without the standard: same text (no progress; goal streak 6) |
+| G86 | 440 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | U ladder complete: 700 < 705 (p = 0.0002) < 706; also on rectangular seals (p = 0.014); small 700 groups (progress; goal streak 0) |
