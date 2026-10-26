@@ -246,7 +246,7 @@ def page(pages, profiles, reg, dates, version, today):
 </ul>
 
 <h2 id="further"><span class="num">06</span> Readings to take further</h2>
-<p>{len(fq)} write-ups are read in part. Each lists what is still open in its notes: code groups with no value yet, passages hard to read on the images, letters for which no key is known, pieces that need the original in the archive. Any of these can be pushed towards a fuller reading: a value for a code group, a better reading of a line, a key found in another volume, a look at the manuscript. Those with open code groups come first, as the most workable from the images alone; <a href="contribute.html#further">how to send it</a>. The same list, with the summaries, is <a href="writeups.html#extent=partial">on the write-ups page</a>.</p>
+<p>{len(fq)} write-ups are read in part. Each lists what is still open in its notes: code groups with no value yet, passages hard to read on the images, letters for which no key is known, pieces that need the original in the archive. Any of these can be pushed towards a fuller reading: a value for a code group, a better reading of a line, a key found in another volume, a look at the manuscript. Those with open code groups come first, as the most workable from the images alone; <a href="contribute.html#further">how to send it</a>. Each one also has its own page with its gaps and instructions to hand an AI agent: <a href="further.html">Read further</a>. The same list, with the summaries, is <a href="writeups.html#extent=partial">on the write-ups page</a>.</p>
 <ul class="list wl cqueue">
 {further_rows}
 </ul>

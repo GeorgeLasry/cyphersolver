@@ -2860,6 +2860,7 @@ def nav_html(current):
         f'    <details class="menu"><summary{" class=\"active\"" if in_explore else ""}>Explore {CHEVRON}</summary>\n'
         f'      <div class="panel ex">{explore}</div></details>\n'
         f'    <a class="navcat" href="catalogue.html"{cur("catalogue")}>Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>\n'
+        f'    <a href="further.html"{cur("further")}>Read further</a>\n'
         f'    <a href="contributors.html"{cur("contributors")}>Contributors</a>\n'
         f'    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>\n'
         f'    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>\n'
@@ -3284,7 +3285,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
                  f'<button class="showmore" type="button" data-target="findings" data-step="20">Show {len(rest)} earlier finding{"s" if len(rest) != 1 else ""}</button>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
-PAGE_STYLED = {'atlas', 'catalogue', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
+PAGE_STYLED = {'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
 def credit_figures(s):
@@ -3603,6 +3604,8 @@ if __name__ == '__main__':
     print('solution replays:', write_steps())
     import _catalogue_page as C                 # catalogue.html reads README results and open PRs too: rebuilt every time
     C.build_html()
+    import _further_page as F                   # further.html: the readings left partial, from each NOTES.md Remaining gaps
+    print('further: %d partial readings' % F.build_html(PAGES))
     for f in sorted(HERE.glob('*.html')):      # date every page before any menu is built: the menu lists the newest
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
@@ -3611,6 +3614,7 @@ if __name__ == '__main__':
     (HERE / 'contributors.html').write_text(CP.page(PAGES, PROFILES, CONTRIB, DATES['pages'], VERSION, TODAY), encoding='utf-8')
     done =[process(p) for p in sorted(HERE.glob('*.html'))]
     C.build_solve_pages()                       # docs/solve/<id>.html take the nav and footer from the built catalogue.html
+    print('further pages:', F.build_pages(PAGES))   # docs/further/<slug>.html, likewise from the built further.html
     save_dates(DATES)
     print('search index:', write_search_index(), 'entries')
     readme_glance()
