@@ -199,21 +199,23 @@ def build(items):
     lines.append('<div class="sb-grid">')
     by_contrib = sum(1 for it in items if it['cat'] in ('ct', 'extpt', 'adjpt') and it['outside'])
     who = f' {by_contrib} of them with <a href="contributors.html">outside contributors</a>.' if by_contrib else ''
-    lines.append(f'<div class="sb-big"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered in this ledger by cryptanalysis: {n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></div>')
-    lines.append(f'<div class="sb-big"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>entries worked with a key or decipherment that already existed: {n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></div>')
-    lines.append(f'<div class="sb-big"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>attempts closed without recovering the text. Each one&rsquo;s notes say why it stopped.</span></div>')
-    lines.append(f'<div class="sb-big"><b>{silence:,}</b><span>years of silence ended, summed over the {len(read)} dated texts obtained in full ({part} more are partial): each had waited from its date until {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
+    lines.append(f'<div class="sb-big"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
+    lines.append(f'<div class="sb-big"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>read with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
+    lines.append(f'<div class="sb-big"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
+    lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]}).</span></div>')
     lines.append('</div>')
     lines.append(f'<p class="sb-note">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a colour in the legend to isolate a method.</p>')
     lines.append(timeline_svg(items))
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
     lines.append('</section>')
     lines.append('<!-- stats:end -->')
-    return '\n'.join(lines), n
+    hero = (f'<p class="herostats"><a href="#scoreboard"><b>{total}</b> entries</a><a href="#scoreboard"><b>{broke}</b> keys recovered</a>'
+            f'<a href="#scoreboard"><b>{applied}</b> read with existing keys</a><a href="#scoreboard"><b>{silence:,}</b> years of silence ended</a></p>')
+    return '\n'.join(lines), n, hero
 
 def main():
     items = load()
-    block, n = build(items)
+    block, n, hero = build(items)
     s = INDEX.read_text(encoding='utf-8')
     if '<!-- stats:start -->' in s:
         s = re.sub(r'<!-- stats:start -->.*?<!-- stats:end -->', lambda m: block, s, flags=re.S)
@@ -221,6 +223,7 @@ def main():
         s = s.replace('<main>\n', '<main>\n\n' + block + '\n\n', 1)
     if 'href="#scoreboard"' not in s:
         s = s.replace('<div class="jump"><a href="#recent">', '<div class="jump"><a href="#scoreboard">The ledger</a><a href="#recent">', 1)
+    s = re.sub(r'<!-- herostats:start -->.*?<!-- herostats:end -->', lambda m: '<!-- herostats:start -->\n' + hero + '\n<!-- herostats:end -->', s, flags=re.S)
     INDEX.write_text(s, encoding='utf-8')
     for c, _ in SECTIONS:
         print(f'{c:8s} {n[c]:3d}  ' + '; '.join(it['name'][:28] for it in items if it['cat'] == c))

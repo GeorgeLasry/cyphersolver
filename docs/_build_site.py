@@ -3398,8 +3398,10 @@ def process(path):
         # the contributors strip and the call to contribute, right after the scoreboard
         import _contributors_page as CP
         s = re.sub(r'\n*<!-- contrib:start -->.*?<!-- contrib:end -->', '', s, flags=re.S)
-        if '<!-- stats:end -->' in s:
-            s = s.replace('<!-- stats:end -->', '<!-- stats:end -->\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
+        # after Recent findings when its end marker is there, else after the scoreboard
+        at = '<!-- recent:end -->' if '<!-- recent:end -->' in s else '<!-- stats:end -->'
+        if at in s:
+            s = s.replace(at, at + '\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
         s = re.sub(r'<!-- live:start -->.*?<!-- live:end -->\n?', '', s, flags=re.S)
         s = re.sub(r'<script src="home\.js[^"]*" defer></script>\n?', '', s)
         s = re.sub(r'(<section class="hero">.*?)(\s*<div class="jump">)', lambda m: m.group(1) + '\n' + live_html() + m.group(2), s, count=1, flags=re.S)

@@ -972,3 +972,11 @@ p.lr-links a{font-family:var(--mono);font-size:.84rem}
 b.dec{color:var(--head);font-weight:700}
 pre.lr-key{white-space:pre-wrap;font-size:.8rem;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:.7rem .9rem}
 @media (max-width:700px){.lr-pair{grid-template-columns:1fr}.lr-summary dl{grid-template-columns:1fr}.lr-summary dl dd{margin:0 0 .35rem}}
+/* hero stat strip and ledger breakdowns (26 Oct 2026) */
+.herostats{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin:1.1rem 0 .9rem;font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.herostats a{color:inherit;text-decoration:none;border:0;background:none;box-shadow:none;white-space:nowrap}
+.herostats a:hover{color:var(--ink)}
+.herostats b{font-family:var(--display);font-weight:500;font-size:1.55rem;color:var(--gold);margin-right:.3rem;letter-spacing:-.01em}
+.sb-big details{margin-top:.35rem;font-size:.8rem;color:var(--ink2)}
+.sb-big details summary{cursor:pointer;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.sb-big details span{margin-top:.3rem;font-size:.8rem}
