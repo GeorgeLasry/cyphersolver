@@ -14794,3 +14794,14 @@ signs' line frequencies (`hyp_s2_longdist.py`). The 30 highest-PMI pairs are A's
 ## Results of set 545 (`hyp_s2_longdist.py`, `results/predict_test545.md`)
 
 Held: LD1, LD2. 16 of 21 A long-distance pairs positive on B. Progress: yes (session-2 goal streak 0).
+
+
+# Set 546, registered before testing (26 October 2026): session-2 goal loop 11, counted signs against name heads (two hypotheses)
+
+A sign is 'counted' on A if 50%+ of its tokens (8+) follow a numeral, a 'head' if 50%+ precede an ending
+(`hyp_s2_counted.py`).
+
+- **CH1** No sign is both on A, and of signs that are counted on A with 5+ B tokens, 80%+ are rarely heads on B (under
+  20% before an ending).
+- **CH2** Counted signs are followed by an ending on B less often than heads are (Fisher-like binomial on B tokens).
+- Progress rule: CH1 and CH2, unless the counted-sign role (set 176 R) already covers it: then consistency.
