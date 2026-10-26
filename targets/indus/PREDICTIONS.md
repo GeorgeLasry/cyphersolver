@@ -13381,3 +13381,13 @@ way on B, at least 2 testable (`predict_test448.py`).
 Both failed. Only the plain fish 220 is skewed (toward the short form) on A, and it leans the same way on B (one sign,
 under the 2+ bar); no fish is skewed between 706 and 705. Any fish name can take the long form. Progress: none (goal
 streak 2). Tally, counting parts: 1639 held, 1644 failed (3287 registered).
+
+# Four-hundred-and-forty-ninth set, registered before testing (26 October 2026): goal loop 95, the long form in the roles (two hypotheses)
+
+Set 446 (replicated on B): fish + 705 / 706 + 33 + 520 is the long form of fish names. In progress.roles, 705 / 706 and
+33 inside that pattern get the role 'long-form closer' when they have none (`predict_test449.py`).
+
+- **LR1** The role raises R by 0.3 points or more.
+- **LR2** The long form is a larger share of fish names (fish + 520) on seals than on tablets (Fisher one-sided p < 0.05).
+- Progress rule: LR1 holds.
+
