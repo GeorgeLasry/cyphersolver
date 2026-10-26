@@ -13221,3 +13221,13 @@ Square seals; set 371's skew test on split C (`predict_test438.py`).
 Both failed. Northern towns against Harappa: no skew (115 / 604 tokens); Chanhu-daro has 2 square-seal tokens on C-train
 (its seals are mostly not SEAL:S in the subtype field), untestable. Progress: none (goal streak 5). Tally, counting
 parts: 1633 held, 1630 failed (3267 registered).
+
+# Four-hundred-and-thirty-ninth set, registered before testing (26 October 2026): goal loop 85, unicorn seals with the standard (two hypotheses)
+
+Unicorn square seals (field 18 Bull1) with the 'standard' before the animal (field 19 SAN) against those without
+(`predict_test439.py`). Set 375 tested the secondary motif as a domain model (no gain), not as sign skews.
+
+- **SN1** Set 371's skew test on split C.
+- **SN2** At equal length they differ in closing with 740 / 520 (two-sided p < 0.05).
+- Progress rule: either holds.
+
