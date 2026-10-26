@@ -15259,3 +15259,12 @@ Held: none. A 234/453 vs 4772/7855; B 56/110 vs 2195/3877. Progress: none (sessi
 ## Results of set 578 (`hyp_s2_r_rarelong.py`, `results/predict_test578.md`)
 
 Held: R1, R2. A mean 5.00 (437) vs 4.50 (1479); B mean 4.32 (132) vs 3.78 (1043). Progress: yes (session-2 goal streak 0).
+
+
+# Set 579, registered before testing (26 October 2026): session-2 goal loop 44, 400 after an ending closes the line (consistency) (two hypotheses)
+
+(`hyp_s2_r.py`, VARIANT=fin400). Rare = 3 or fewer tokens in the sample.
+
+- **R1** On A: 400 after an ending closes the line (consistency) (p < 0.05).
+- **R2** The same on B.
+- Progress rule: none (re-tests a known rule).
