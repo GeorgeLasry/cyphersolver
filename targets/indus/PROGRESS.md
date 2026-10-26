@@ -380,3 +380,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G124 | 478 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | thickness: closing formula on thick seals (OR 3.6); doubles not (consistency; no progress; goal streak 9) |
 | G125 | 479 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | plain U leans small (rare, n.s.); 702/703 nothing (no progress; goal streak 10) |
 | G126 | 480 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | yoke-carrier family and 151 not size-linked; only 156 (no progress; goal streak 11) |
+| G127 | 481 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | formula and small-seal signs avoid each other on A (6 vs 20), not significantly on B (no progress; goal streak 12) |

@@ -13865,3 +13865,8 @@ If seal size marks two kinds of seal text, the large-seal formula (705 / 706 + 3
 - **AV2** The same on B (no sizes needed).
 - Progress rule: both hold.
 
+## Results of the four-hundred-and-eighty-first set (`predict_test481.py`, `results/predict_test481.md`)
+
+AV1 held, AV2 failed; no progress. Formula lines with a small-seal sign: A 6 against 20.1 expected (p = 0.001); B 6
+against 9.1 (p = 0.16). The two repertoires avoid each other on the ICIT lines; on Mahadevan's the deficit is small.
+Progress: none (goal streak 12). Tally, counting parts: 1655 held, 1691 failed (3351 registered).
