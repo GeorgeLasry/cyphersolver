@@ -12275,3 +12275,14 @@ p = 0.27). At equal length repeated texts end in 740 / 520 *more* often than uni
 the repeated seal texts are name-and-ending texts, the same name or title on several seals, not counts or labels.
 (Observation, not a registered result.) Progress: none (goal streak 3). Tally, counting parts: 1605 held, 1551 failed
 (3156 registered).
+
+# Three-hundred-and-eighty-fourth set, registered before testing (26 October 2026): goal loop 30, rectangular against square seals (two hypotheses)
+
+ICIT subtype SEAL:R (rectangular, mostly the late bar seals without an animal) against SEAL:S (`predict_test384.py`).
+
+- **BR1** Signs skewed between rectangular and square seals on C-train (Fisher p < 0.01) lean the same way on C-test in
+  75%+ of cases (binomial p < 0.05).
+- **BR2** At equal length, rectangular-seal texts close with 740 / 520 less often than square-seal texts
+  (Mantel-Haenszel p < 0.05; distinct lines of the fixed split's training and test lines).
+- Progress rule: BR1 holds.
+
