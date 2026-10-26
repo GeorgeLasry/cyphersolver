@@ -13624,3 +13624,13 @@ Lines carrying both 740 and 520 (distinct lines). If 520 names close a text (set
 
 Both failed: only 6 lines on A (3 with 740 first) and 1 on B carry both endings. A line holds one name class, not two.
 Progress: none (goal streak 5). Tally, counting parts: 1649 held, 1665 failed (3318 registered).
+
+# Four-hundred-and-sixty-fifth set, registered before testing (26 October 2026): goal loop 111, the two name classes on one object (two hypotheses)
+
+Set 464: a line holds one class. On multi-line objects, does one line's 740 name and another's 520 name co-occur more or
+less often than with lines shuffled among the objects (1,000, two-sided)? (`predict_test465.py`).
+
+- **OB1** On clean ICIT multi-line objects.
+- **OB2** On Mahadevan's multi-line objects.
+- Progress rule: both hold.
+
