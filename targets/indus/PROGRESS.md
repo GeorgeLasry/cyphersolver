@@ -298,3 +298,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G42 | 396 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | divider-split grammar rule lowers the G margin; divider role +34 tokens (no progress; goal streak 1) |
 | G43 | 397 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | before a 'divider' name heads are rarer than chance: 2 and 1 open a phrase (numeral first), 60 fails alone; refines set 395 (no progress; goal streak 2) |
 | G44 | 398 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | WORD with the domain models: top-10 3.4% to 4.7% (fixed), 0% to 0.5% (C); four names in all (progress, marginal; goal streak 0) |
+| G45 | 399 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | WORD with a city prior: no gain (no progress; goal streak 1) |

@@ -12586,3 +12586,8 @@ log2(1 + its count in training lines from the test line's city), weight 1 fixed 
 - **WL2** The city prior raises WORD top-1 on both splits.
 - Progress rule: WL1 holds.
 
+## Results of the three-hundred-and-ninety-ninth set (`predict_test399.py`, `results/predict_test399.md`)
+
+Both failed. With the city prior WORD top-10 goes 11 -> 10 names (fixed, of 232) and 15 -> 14 (A -> B, of 299); top-1
+0 -> 2 and 5 -> 3. Local names (sets 390-391) do not make a hidden name guessable: the shared bodies are few among all
+candidates. Progress: none (goal streak 1). Tally, counting parts: 1619 held, 1570 failed (3189 registered).
