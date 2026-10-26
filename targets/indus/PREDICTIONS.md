@@ -12744,3 +12744,13 @@ holds under both weightings; M77 mixes seals and tablets (no types), so it may r
 together: whole seal names are not local (set 4), seal name bodies are not local when each counts once (here), and
 name bodies across all inscribed objects in Mahadevan's corpus are. Progress: none (goal streak 10). Tally, counting
 parts: 1621 held, 1586 failed (3207 registered).
+
+# Four-hundred-and-ninth set, registered before testing (26 October 2026): goal loop 55, the section shape of moulded tablets (two hypotheses)
+
+ICIT field 16 (cross-section: rectangular, triangular, round, plano-convex); untested here before (the parallel run's
+375b used field 15) (`predict_test409.py`).
+
+- **TS1** Moulded tablets (TAB:B) of rectangular against other sections: set 371's skew test on split C.
+- **TS2** A section-shape domain model lowers S on the set 372 base, fixed split and split C (rule of set 358).
+- Progress rule: either holds. (Results: predict_test409.md, predict_test4090.md.)
+
