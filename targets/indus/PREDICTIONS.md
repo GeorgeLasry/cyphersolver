@@ -12679,3 +12679,9 @@ The heading opens 12% of texts with one of three variants (817 / 820 / 861), in 
 - **HV2** Large and small square seals (median size) use the variants in different proportions (chi-square p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fifth set (`predict_test405.py`, `results/predict_test405.md`)
+
+Both failed. The three variants are used in about equal shares on seals (59 / 58 / 57 on C-train) and tablets (5 / 6 / 8;
+p = 0.68), and on large (46 / 42 / 53) and small (41 / 42 / 36) square seals (p = 0.43). Nothing found here chooses the
+heading variant: free variation, or a choice by something outside the record. Progress: none (goal streak 7). Tally,
+counting parts: 1619 held, 1582 failed (3201 registered).

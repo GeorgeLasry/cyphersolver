@@ -304,3 +304,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G48 | 402 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa seals over time: size rises slightly (opposite of registered), length flat (no progress; goal streak 4) |
 | G49 | 403 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | jointly fitted and per-group weights: under 0.005, C worse (no progress; goal streak 5) |
 | G50 | 404 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | unicorn vs other animals: same heading and ending rates; seal text independent of the animal (no progress; goal streak 6) |
+| G51 | 405 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | heading variants equal across object kind and seal size (no progress; goal streak 7) |
