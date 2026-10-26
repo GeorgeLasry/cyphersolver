@@ -12368,3 +12368,12 @@ Clean ICIT square seals with a size (`predict_test389.py`).
 - **TT2** At equal length (Mantel-Haenszel), small square seals carry a numeral more often than large ones (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-ninth set (`predict_test389.py`, `results/predict_test389.md`, `predict_test389_control.py`)
+
+TT1 held as registered, TT2 failed. 55 texts on 2+ square seals: mean size spread 3.00 against random seals (0 of 1,000
+as tight, p = 0.001). Audit (not registered): the effect survives a same-site null (0 of 1,000) and dropping 5 groups
+with exactly repeated dimensions (possible double records), but copies share their length and length tracks size: with
+seals of the same length drawn, 28 of 1,000 are as tight; same length and site, 48 of 1,000 (p = 0.05). Copies of a text
+are a little closer in size than length and site explain: a borderline residue, most of TT1 is text length. Small seals
+do not carry numerals more often at equal length (TT2, odds ratio 1.04). Progress under the rule (goal streak 0), with
+the audit's caveat. Tally, counting parts: 1609 held, 1559 failed (3168 registered).
