@@ -12351,3 +12351,10 @@ Clean ICIT seals with a recorded first dimension (`predict_test388.py`).
 - **LG2** On rectangular seals (own median), 5+ of set 379's 7 size signs lean the same way as on square seals.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-eighth set (`predict_test388.py`, `results/predict_test388.md`)
+
+LG1 failed, LG2 held. Large square seals do not carry two endings more often at equal length (odds ratio 0.81,
+p = 0.85). On 248 rectangular seals 5 of the 7 size signs lean the same way as on square seals (LG2). Caveat: the
+registered bar was weak, since 5+ of 7 happens by chance 23% of the time; it counts under the rule but is thin support.
+Later bars of this kind use a binomial test. Progress (goal streak 0). Tally, counting parts: 1608 held, 1558 failed
+(3166 registered).
