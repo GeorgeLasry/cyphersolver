@@ -12286,3 +12286,11 @@ ICIT subtype SEAL:R (rectangular, mostly the late bar seals without an animal) a
   (Mantel-Haenszel p < 0.05; distinct lines of the fixed split's training and test lines).
 - Progress rule: BR1 holds.
 
+## Results of the three-hundred-and-eighty-fourth set (`predict_test384.py`, `results/predict_test384.md`)
+
+Both held. Skewed on C-train: rectangular 1, 154, 405, 407, 55, 806; square 151, 368, 390, 741; all 10 lean the same
+way on C-test (BR1, p = 0.001). At equal length rectangular-seal texts close with 740 / 520 about half as often (odds
+ratio 0.53, p = 0.0002; BR2). Rectangular seals use a different formula: fewer name endings, the numeral 1 and the
+12-tier 55, the yoke-carrier ligature 154. Prior: bar seals are known to be a late, animal-less class with distinct
+texts (Parpola 1994, Kenoyer); this quantifies the difference and names the signs. Progress (goal streak 0). Tally,
+counting parts: 1607 held, 1551 failed (3158 registered).

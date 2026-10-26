@@ -282,3 +282,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G27 | 381 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | repeated seal texts: not tied to motif (p = 0.08) or site; F's motif field found empty (earlier motif tests partial) (no progress; goal streak 1) |
 | G28 | 382 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | motif read correctly (field 18): no domain gain, no unicorn/other sign skew: seal text independent of the animal (no progress; goal streak 2) |
 | G29 | 383 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | repeated seal texts: no more numerals; they end in 740/520 more often (OR 2.7): names or titles on several seals (no progress; goal streak 3) |
+| G30 | 384 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | rectangular vs square seals: 10 of 10 sign skews replicate; rectangular texts close with 740/520 half as often (known class, quantified) (progress; goal streak 0) |
