@@ -14204,3 +14204,7 @@ parts: 1669 held, 1721 failed (3395 registered).
 - **MK2** They differ in carrying 806.
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-fourth set (`predict_test504.py`, `results/predict_test504.md`)
+
+Both failed: marked fish odds ratio 1.20 (p = 0.27); 806 2.63 (p = 0.17, rare). Progress: none (goal streak 3). Tally,
+counting parts: 1669 held, 1723 failed (3397 registered).

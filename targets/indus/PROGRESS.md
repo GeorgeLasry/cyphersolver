@@ -403,3 +403,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G147 | 501 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small-seal signs grade by size: 156 (22.1) < 400 (22.9) < 590 (25.4), p = 0.002; not length-controlled (progress under the rule; goal streak 0) |
 | G148 | 502 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: small-seal size grade not significant with length held: set 501 downgraded (audit; no progress; goal streak 1) |
 | G149 | 503 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish + 740 and 60 not size-linked (no progress; goal streak 2) |
+| G150 | 504 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | marked fish and 806 not size-linked (no progress; goal streak 3) |
