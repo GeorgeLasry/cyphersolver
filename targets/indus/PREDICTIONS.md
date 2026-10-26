@@ -14286,3 +14286,12 @@ Both failed: 368 odds ratio 1.80 (p = 0.10); 342 absent from sized motif seals (
 
 Both failed: 550 odds ratio 0.94 (p = 0.99); 527 0.86 (p = 0.92). Progress: none (goal streak 9). Tally, counting parts:
 1669 held, 1735 failed (3409 registered).
+
+# Five-hundred-and-eleventh set, registered before testing (26 October 2026): goal loop 157, 817 and 861 by seal size (two hypotheses)
+
+`auditkit.size_motif` (`predict_test511.py`). Set 405 tested the heading variants by size without motif strata.
+
+- **S817** Large and small seals differ in carrying 817 (two-sided p < 0.05).
+- **S861** They differ in carrying 861 (two-sided p < 0.05).
+- Progress rule: either holds.
+
