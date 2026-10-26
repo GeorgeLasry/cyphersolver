@@ -16291,3 +16291,14 @@ CYP FAR NI TELA AES AUR MEL and other numbered commodity ideograms *120-199 (fix
 - **LB2** The large-count ideograms are livestock or bulk commodities (70%+).
 - Progress rule: none (a control). If LB1 and LB2 hold, set 552 reads as ordinary bookkeeping: things counted in large
   numbers are herds and bulk goods.
+
+## Results of set 643 (`predict_test643.py`, `results/predict_test643.md`)
+
+LB1 failed narrowly, LB2 held. At Knossos (686 small counts, 595 large) 27 ideograms are skewed: small counts go with
+chariots and wheels (BIG CUR ROTA), women (MUL), horses and oxen (EQU BOS), months (LUNA) and single commodities; large
+counts with sheep (OVIS), grain (GRA), wool (LANA), olives, spices, figs and trees (*150 *168 *170 ARB AROM CORN OLIV).
+At Pylos 9 of 12 testable skews lean the same way (75%, p = 0.073: just short of the bar) (LB1). The large-count
+ideograms are livestock or bulk goods in 8 of 10 (LB2). As a control: a size split like set 552's is what bookkeeping in
+a known script shows, with herds and bulk goods in large numbers and persons and objects in small ones. By analogy the
+Indus large-number units (390 405 407 575 585 900, at the line end) are the better candidates for commodities or herds,
+and the fish signs, counted in small numbers, behave like persons or objects. Progress: none (control).
