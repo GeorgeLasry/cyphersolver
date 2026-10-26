@@ -15004,3 +15004,12 @@ closes a name and is usually followed by nothing or 400 / 90; a counted jar woul
 ## Results of set 559 (`hyp_s2_countedjar.py`, `results/predict_test559.md`)
 
 Held: none. A 2/22 vs 106/875; B 3/12 vs 61/316. Progress: none (session-2 goal streak 7).
+
+
+# Set 560, registered before testing (26 October 2026): session-2 goal loop 25, values that count fish (two hypotheses)
+
+Value of a numeral directly before a fish sign (220-259) against before any other non-numeral (`hyp_s2_fishval.py`).
+
+- **FV1** On A, fish are counted with smaller values (Mann-Whitney p < 0.05).
+- **FV2** The same on B.
+- Progress rule: none if it only restates set 552 (small numbers count fish); recorded as consistency.
