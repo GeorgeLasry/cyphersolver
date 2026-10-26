@@ -315,10 +315,18 @@ Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him
   whose key values give no English, i.e. key-sheet gaps (signs not on R354, rare codes) and probable cipher-clerk
   slips that only the contemporary decipherment (ff. 5r-7v) can settle.
 
+## BL imaging order (26 Oct 2026)
+
+- Ordered from BL Digitisation Services (online order form, submitted 26 Oct 2026): Harley MS 1582 ff. 5r-10v,
+  12 pages, photography, colour, 300 dpi or higher, TIFF preferred, digital transfer. This covers the contemporary
+  decipherment ff. 5r-7v and the cipher ff. 8r-10v.
+- The BL does not give quotes; payment details come with the order. Download the images within 14 days of the
+  delivery link. When they arrive, check the open stretches listed under Remaining gaps against ff. 5r-7v.
+
 ## Remaining gaps
 - the whole letter decoded, not read (3,152 tokens) - blocker: needs-physical-access; holes in most sentences after eight key/transcription passes (reading audit 22 Oct 2026); the contemporary clear copy, Harley 1582 art. 2 (ff. 5r-7v), is digitised by the BL but its images are unavailable (ark:/81055/vdc_100162940894.0x000001, checked 23 Oct 2026); it would settle it
 
-- Unread, tentative and nonsense stretches, about 31% of non-null signs measured for sense (5 Oct 2026; p1.13 run, p1.24 "(fy)ve hundrid", p2.25 tail, p6.13-14, p3.14) (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24) - blocker: needs-physical-access; the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE and needs a BL imaging order
+- Unread, tentative and nonsense stretches, about 31% of non-null signs measured for sense (5 Oct 2026; p1.13 run, p1.24 "(fy)ve hundrid", p2.25 tail, p6.13-14, p3.14) (names p2.25 and p6.27, the code Ie, runs p1.13-15, 1.18, 1.24) - blocker: needs-physical-access; the contemporary decipherment Harley MS 1582 ff. 5r-7v is not digitised by the BL or DECODE; BL imaging order submitted 26 Oct 2026, images awaited
 - Rare code signs, about 40 (.I, .p, .d, .M, N., R., C_CEDILLA, Q_TAIL, TALL_F_LOOP, CIRC_BIG) - blocker: no-key-material; no entry on R354, the only surviving copy of the key, and no other copy on DECODE
 
 ## Escalation

@@ -42,6 +42,14 @@ same channel.
   letters" (a foreign ambassador's servant or an agent), and [E4] is the source "who discovereth it to his master".
   There is not enough to fix either.
 
+## BL imaging order (26 Oct 2026)
+
+- Ordered from BL Digitisation Services (online order form, submitted 26 Oct 2026): Harley MS 260 ff. 112r-113v,
+  4 pages, photography, colour, 300 dpi or higher, digital transfer. The cipher passages are on ff. 112v-113r.
+  Download within 14 days of the delivery link.
+- This gives better images of the letter-book copy only. The sent original in TNA SP 70 is not part of the order.
+
+
 ## Remaining gaps
 - nine-sign run on f. 112v l. 1 - blocker: too-short; nine signs, pattern fits no word, no key
 - sent original in TNA SP 70 (CSP For. ix 1821) - blocker: needs-physical-access; not online, may carry a decipherment

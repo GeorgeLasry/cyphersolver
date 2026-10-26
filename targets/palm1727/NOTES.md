@@ -47,6 +47,16 @@ does not include these letters.
   BL Add MS 32xxx or SP 107.
 - The rest of Add MS 32270 on DECODE: R7929 is marked "Decrypted" but has no images.
 
+## BL imaging order (26 Oct 2026)
+
+- Ordered from BL Digitisation Services (online order form, submitted 26 Oct 2026): Add MS 32270 ff. 16r-18v and
+  f. 41r-v, 8 pages, photography, colour, 300 dpi or higher, digital transfer. Download within 14 days of the
+  delivery link.
+- ff. 16-17 are the letter (R7927), f. 18 the Windischgrätz key fragment (R7928) and f. 41 the worksheet (R7930).
+  When they arrive, re-transcribe the ff. 16v-17r digits and the glosses from the new images.
+- The order does not ask the BL to look for a clear copy elsewhere in the volume (the R7929 pages ff. 19-40).
+
+
 ## Word-level solver test (4 Oct 2026, contributed by Feyseel Nur, PR #21)
 
 A word-level annealer on a 30M-character German corpus of 1724-1767 (Deutsches Textarchiv) recovers synthetic German
