@@ -14975,3 +14975,13 @@ shuffles of counted signs among all such units (`hyp_s2_twocounts.py`).
 ## Results of set 557 (`hyp_s2_twocounts.py`, `results/predict_test557.md`)
 
 Held: none. A 2/140 same (null 3.1); B 0/49 (null 1.4). Progress: none (session-2 goal streak 5).
+
+
+# Set 558, registered before testing (26 October 2026): session-2 goal loop 23, large-number units by city (two hypotheses)
+
+Lines with a large-number unit against lines with a small-number unit (set 552 groups, 740 and 520 left out); share
+from Harappa against Mohenjo-daro (`hyp_s2_largesite.py`).
+
+- **LS1** On A large-number lines are from Harappa more often (Fisher p < 0.05).
+- **LS2** The same on B (site from the records; lines without a site left out).
+- Progress rule: none: an LS1 + LS2 result would be a confound check on set 552 (site), recorded as an audit.
