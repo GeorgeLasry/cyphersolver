@@ -13575,3 +13575,8 @@ test of large against small (C-train median) over length band x site, p < 0.01; 
 - **TS2** Incised tablets.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-sixty-first set (`predict_test461.py`, `results/predict_test461.md`)
+
+Both failed: with length band x site strata no sign is skewed by size on moulded or incised tablets at p < 0.01. Seal
+size carries signs (set 430); tablet size does not. Progress: none (goal streak 2). Tally, counting parts: 1649 held,
+1659 failed (3312 registered).
