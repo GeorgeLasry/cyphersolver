@@ -12201,3 +12201,14 @@ ratio large/small 3.98, p = 0.004), 156 (0.36), 400 (0.40), 5 (0.23) and 590 (0.
 the stroked U 706 of the closing formula, small ones the yoke-carrier ligature 156, the marker 400, 590 and the numeral 5.
 Seal size may mark rank or office. A control on the discovery data, not a new sample. Progress (goal streak 0). Tally,
 counting parts: 1604 held, 1544 failed (3148 registered).
+
+# Three-hundred-and-eightieth set, registered before testing (26 October 2026): goal loop 26, seal size, heading and repeated texts (two hypotheses)
+
+If size marks rank or office (set 379), the formal heading (817 / 820 / 861 opening the text) and the uniqueness of a
+text may vary with it. Clean ICIT square seals with a recorded first dimension, median split (`predict_test380.py`).
+
+- **HS1** The heading opens large seals more often than small ones within text-length bands (Mantel-Haenszel p < 0.05).
+- **HS2** Texts of small seals recur on other square seals more often than texts of large seals (Fisher one-sided
+  p < 0.05): small seals carry generic or office texts.
+- Progress rule: either holds.
+
