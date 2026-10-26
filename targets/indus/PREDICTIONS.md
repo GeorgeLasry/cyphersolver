@@ -14273,3 +14273,12 @@ Both failed: 798 odds ratio 1.29 (p = 0.53); 820 0.99 (p = 0.97). Progress: none
 
 Both failed: 368 odds ratio 1.80 (p = 0.10); 342 absent from sized motif seals (degenerate). Progress: none (goal streak
 8). Tally, counting parts: 1669 held, 1733 failed (3407 registered).
+
+# Five-hundred-and-tenth set, registered before testing (26 October 2026): goal loop 156, 550 and 527 by seal size (two hypotheses)
+
+`auditkit.size_motif` (`predict_test510.py`).
+
+- **S550** Large and small seals differ in carrying 550 (two-sided p < 0.05).
+- **S527** They differ in carrying 527 (two-sided p < 0.05).
+- Progress rule: either holds.
+
