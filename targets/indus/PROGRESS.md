@@ -548,3 +548,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | - | 644 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | short labels: on non-seal objects more at Mohenjo-daro only; heads predict the motif on square seals (p = 0.023) but weakly, mostly bull (nominal, not claimed) |
 | - | 645 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | strokes on seals found abroad: 0 of 17 before a counted sign (home 10%, p = 0.17); too few to decide (no progress) |
 | - | 646 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | graffiti side of the book's claims: jar and ladder not mostly initial in composites; wavy line solus 73 times (not never); set 635 re-described as composites (no progress) |
+| - | 647 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Kodumanal: Indus-parallel graffiti 77% at 100+ cm (5th c. BCE) against 79% above 40 cm; replicates set 640 (no progress) |

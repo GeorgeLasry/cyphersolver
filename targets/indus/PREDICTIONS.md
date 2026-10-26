@@ -16377,3 +16377,9 @@ counting: 100+ cm (about 5th c. BCE) against under 40 cm (about 2nd c. BCE) (`pr
 - **KO1** Kodumanal graffiti at 100+ cm have an Indus parallel more often than those under 40 cm (Fisher one-sided
   p < 0.05).
 - Progress rule: none.
+
+## Results of set 647 (`predict_test647.py`, `results/predict_test647.md`)
+
+Failed. Kodumanal graffiti at 100+ cm (about 5th c. BCE) have an Indus parallel in 288 of 372 (77%), those above 40 cm
+(about 2nd c. BCE) in 177 of 225 (79%) (p = 0.68). As at Keeladi (set 640), the oldest dated graffiti are not more
+Indus-like. Progress: none.
