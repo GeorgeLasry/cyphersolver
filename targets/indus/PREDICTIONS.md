@@ -16432,3 +16432,11 @@ samples, registered as such.
 - **SF1** Formula seals are larger (Mann-Whitney one-sided p < 0.05).
 - **SF2** Within the same body, the formula copy is on the larger seal in a majority (binomial p < 0.05, 5+ bodies).
 - Progress rule: SF1 and SF2.
+
+## Results of set 650 (`predict_test650.py`, `results/predict_test650.md`)
+
+SF1 held, SF2 failed narrowly. Seals carrying the long formula '705 / 706 33 520' are larger than seals with a plain
+ending (30.2 mm against 27.4, 37 against 687, p = 0.003), re-finding the first run's size result. Within name bodies
+attested both ways, the formula copy is the larger seal in 6 of 7 (p = 0.0625), one short of the bar and on tiny
+groups (one or two seals a side). The pattern is consistent with the long form marking a larger, more individual seal
+of the same name, but the within-body evidence is too thin to claim it. Progress: none.

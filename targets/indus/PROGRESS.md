@@ -551,3 +551,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | - | 647 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Kodumanal: Indus-parallel graffiti 77% at 100+ cm (5th c. BCE) against 79% above 40 cm; replicates set 640 (no progress) |
 | - | 648 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 892 and 700: one minimal pair on each corpus, chance level (no progress) |
 | - | 649 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | restoration against intact duplicates: model 22 of 60 (37%), neighbour rule 21 (no progress) |
+| - | 650 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long closing formula on larger seals (30.2 vs 27.4 mm, p = 0.003); within the same body 6 of 7 (p = 0.06), too thin (no progress) |
