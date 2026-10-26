@@ -14070,3 +14070,13 @@ UA1 failed, UA2 held (audit). With size half added to the strata, odds ratio 1.7
 the same way (1.72, 2.23) without significance. **Set 493 is downgraded**: part of the unicorn effect is seal size
 (small seals repeat texts); a trend remains. Progress: none (goal streak 1). Tally, counting parts: 1661 held, 1711
 failed (3377 registered).
+
+# Four-hundred-and-ninety-fifth set, registered before testing (26 October 2026): goal loop 141, rare signs on other-animal seals (two hypotheses)
+
+Square seals with a motif and a size; other animals against unicorn; Mantel-Haenszel over length band x site x size half
+(`predict_test495.py`).
+
+- **OR1** Other-animal seals carry a sign seen at most twice in the corpus more often (p < 0.05).
+- **OR2** Their texts are unique (on one seal only) more often (the converse of set 493; cannot count on its own).
+- Progress rule: OR1 holds.
+
