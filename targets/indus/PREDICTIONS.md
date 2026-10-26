@@ -13359,3 +13359,10 @@ Long form = fish (220-249) + 705 / 706 + 33 + 520; short form = fish + 520. Name
   shuffles, p < 0.05): the long form is an optional, fuller form of the same name.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-seventh set (`predict_test447.py`, `results/predict_test447.md`)
+
+LF1 held, LF2 failed. Within fish names, long-form seals are larger (median 30.0, 20 seals, against 26.7, 64; p = 0.0097),
+but this re-tests set 441 inside a subset, so under the standing rule it is consistency, not progress (the registered P
+line reads 'holds'). The same name in both forms: 9 names, as many as shuffled forms give (p = 0.74): no sign of an
+optional long form of one name. Progress: none (goal streak 1). Tally, counting parts: 1639 held, 1642 failed (3285
+registered).
