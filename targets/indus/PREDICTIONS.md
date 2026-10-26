@@ -12635,3 +12635,15 @@ bare '3C' left out) and a size (`predict_test402.py`).
 Both failed; SP1 the other way. 98 Harappa square seals with a period: size rises a little over the periods (rho 0.21,
 p = 0.044; registered as falling), text length does not change (rho 0.14, p = 0.17). Progress: none (goal streak 4).
 Tally, counting parts: 1619 held, 1576 failed (3195 registered).
+
+# Four-hundred-and-third set, registered before testing (26 October 2026): goal loop 49, jointly fitted and per-group weights (two hypotheses)
+
+The adopted domain models (length, type, subtype, length x subtype) were mixed in one at a time at fixed weights
+(`predict_test403.py`).
+
+- **JW1** Mixing weights fitted jointly on an inner dev split of the training lines (grid 0-0.3 each, plain model at
+  least 0.2) lower S by 0.005+ on the fixed split and lower it on split C.
+- **JW2** For the subtype model, component weights fitted inside each group (100+ lines) instead of the global ones lower
+  S (plain + subtype at 0.8 / 0.2) by 0.005+ on the fixed split and lower it on C.
+- Progress rule: either holds.
+
