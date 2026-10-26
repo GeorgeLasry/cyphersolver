@@ -3197,7 +3197,12 @@ Registered first (98705e5eb). `devices.py` pairs a sign with the sign whose CISI
 (30 pairs beyond the cage and jar strokes). Marked and base signs differ in position on A and B as registered, but an
 audit against frequency-matched random pairs shows they differ *less* than unrelated signs, and they do not share stems:
 outside the cage and jar strokes, drawn marks keep the sign's job. The device route (sets 184-190) is exhausted at the
-signs Parpola's list describes. No progress: streak 2 (set 350 registered, not run). Tally 1583 held, 1495 failed.
+signs Parpola's list describes. No progress: streak 1 (set 350 run afterwards). Tally 1586 held, 1495 failed.
+
+## Three-hundred-and-sixty-fifth pass (25 Oct 2026): decipherment loop 175, learned-class referent units (set 350, run late)
+
+Registered 25 Sept, run 25 Oct after set 351. 19 units over 50 learned distributional classes join set 348's: 195 units,
+FDR 7.3%, Linear B passes; referent line 4.57% -> 5.06%. Progress (streak 0 at loop 175). Split-half check not yet run.
 
 ## Limitations
 
@@ -3221,7 +3226,7 @@ is paused: its held-out precision is about twice chance and further threshold ch
 
 1. CISI vol. 2 (H-396, H-568, H-598, H-602; print only) and a sharper image of M-603/604 side A: outside blocker.
 2. The seven sign = image equations remain the firmest meaning anchors (749, 341, 753, the lens sign).
-3. Set 350 (learned-class referent units) is registered and not run.
+3. Split-half check of set 350 (learned-class referent units, line 5.06%), as sets 340/349 did.
 4. Readings of Parpola 1997 and 2003 not in the 1994 table.
 
 ## Prior work

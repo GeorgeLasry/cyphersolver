@@ -11599,6 +11599,14 @@ against 100 within-stratum shuffles; Linear B control (`predict_test350.py`). No
 - **LC2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
 - **LC3** Progress rule: LC1 and LC2 hold (learned-class units join).
 
+## Results of the three-hundred-and-fiftieth set (added after the test, run 25 Oct 2026 after set 351; `predict_test350.py`, `results/predict_test350.md`)
+
+All three held. Units over the 50 learned distributional classes add 19 units to set 348's: 195 units, FDR 7.3% against
+100 within-stratum shuffles, coverage 4.57% -> 5.06% (LC1); the Linear B control at alpha 0.002 recovers 2 of the 4
+control words, none wrong (LC2). Under LC3 the learned-class units join: the tier 1 referent line rises to 5.06%. Not
+yet checked on split-halves (sets 340/349 found held-out precision about 5% for the configuration it extends).
+Progress: loop 175 (streak 0). Tally, counting parts: 1584 held, 1492 failed (3076 registered) at the time of this set.
+
 # Three-hundred-and-fifty-first set, registered before testing (25 October 2026): decipherment loop 176, every drawn mark from Parpola's descriptions (five hypotheses)
 
 Set 350 is registered but was not run (left open; the referent-tuning line is paused). The marks tested so far (cage,
@@ -11630,4 +11638,4 @@ pairs' 160.0 is below 97.7% of draws), B median 79.0 (55.3 below 92.3%). Marked 
 unrelated signs: outside the cage and the jar strokes, a drawn mark mostly keeps the sign's job (variant or derived
 sign of the same kind), and the few shifts (P015 'man bracketed by tall lines' 18% final against 84%; P238, P306, P345)
 are single pairs with no replication. DM5 met as registered, but it rests on a test that cannot fail, so it is not counted
-as progress. Progress: none (streak 2; set 350 is registered and not run). Tally, counting parts: 1583 held, 1495 failed (3078 registered).
+as progress. Progress: none (streak 1 once set 350, run afterwards, counted as progress). Tally, counting parts: 1586 held, 1495 failed (3081 registered).
