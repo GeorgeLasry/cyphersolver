@@ -16278,3 +16278,16 @@ One held, one failed. Mohenjo-daro: 252 counted units, the group does not predic
 0.53) (PU1). Harappa: 142 units, p = 0.001 (PU2), but most are on moulded tablets, whose mould copies repeat text and
 picture, and copies were not collapsed here (set 337's lesson); the Harappa result is at best a mould-family effect.
 No consistent link between what is counted and the picture. Progress: none.
+
+# Set 643, registered before testing (26 October 2026): lead 2, the Linear B control for number size (two hypotheses)
+
+Set 552 found that the size of an Indus number decides what is counted. Is that ordinary bookkeeping? In DAMOS, an
+ideogram (upper-case token, measure signs S V T Z ... left out) directly followed by a number is a count; 1-3 small,
+4+ large. Ideograms with 6+ counts at Knossos skewed at p < 0.05 (Fisher) are checked at Pylos (3+ counts), as Indus
+A to B (`predict_test643.py`). Livestock = OVIS CAP SUS BOS EQU (*105-109); bulk = GRA HORD OLIV OLE VIN LANA AROM
+CYP FAR NI TELA AES AUR MEL and other numbered commodity ideograms *120-199 (fixed here before counting).
+
+- **LB1** 75%+ of the Knossos skews lean the same way at Pylos (binomial p < 0.05), with 3+ skewed ideograms.
+- **LB2** The large-count ideograms are livestock or bulk commodities (70%+).
+- Progress rule: none (a control). If LB1 and LB2 hold, set 552 reads as ordinary bookkeeping: things counted in large
+  numbers are herds and bulk goods.
