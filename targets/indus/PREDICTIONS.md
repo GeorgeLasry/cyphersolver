@@ -11660,3 +11660,25 @@ than chance. Held-out precision is 4.6%, just under 5% (TL2 fails; set 349's con
 learned-class units reach more held-out objects (+747 matches) but add only 17 right ones, about 2% precision for the
 new units. The line stands, with the caveat that its added units are the loosest yet. Progress: none (streak 2). Tally,
 counting parts: 1587 held, 1497 failed (3084 registered).
+
+# Three-hundred-and-fifty-third set, registered before testing (25 October 2026): decipherment loop 178, the new-finds vault (six hypotheses)
+
+Streak 2. Every test so far drew on the ICIT texts that also fixed the models. Inscriptions first published after Fuls
+2022 (or absent from the ICIT) are a true vault. Frozen first (`freeze_vault.py`, data/frozen/, committed with this
+registration, before any new text was collected): the set 350 referent units (195) with their learned classes, and the
+training lines (3,154 distinct lines: A, B and clean F). New texts are taken only as published (sign numbers printed by
+the authors, mapped to ICIT through data/icit_m77_map.tsv; photo-only texts are transcribed from the photo before
+scoring, each sign recorded with a confidence, and only sure signs scored). A new text identical to a training line, or
+contained in one, is counted apart as a probable copy and not scored. `predict_test353.py`, data/newfinds.tsv.
+
+- **NV1** SIGN: each sure sign of the new lines hidden in turn, the frozen two-direction model (prizebench.sign_task
+  keys, trained on the frozen lines) ranks it top-1 more often than the frequency baseline (one-sided binomial on the
+  paired outcomes, p < 0.05). Needs 30+ scored signs; otherwise untestable.
+- **NV2** S: the new lines' bits per sign under the frozen model are lower than for the same lines with their signs
+  shuffled within each line (200 shuffles, p < 0.05).
+- **NV3** Grammar: G2 (heads from A) parses more of the new lines than of their shuffles.
+- **NV4** Pictures: on new objects with a field motif, frozen referent units that occur in the text name the object's
+  motif more often than under 200 shuffles of motifs among the new objects (p < 0.05). Needs 10+ predictions.
+- **NV5** The motif hits are not all bull: NV4 holds with units for the bull left out.
+- **NV6** Progress rule: NV4 holds (tier 3 moves: meaning predicted on texts never used to fix it), or NV1 and NV2 hold.
+
