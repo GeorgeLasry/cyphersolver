@@ -13564,3 +13564,14 @@ TA1 held, TA2 failed (audit). Within length bands moulded tablets with 700 are s
 p < 0.0001), but within Harappa only 1.32 (p = 0.41): much of set 459's TZ2 is a difference between sites in tablet size
 and in how often they count pots. **TZ2 is downgraded**: not shown within one site. Progress: none (goal streak 1).
 Tally, counting parts: 1649 held, 1657 failed (3310 registered).
+
+# Four-hundred-and-sixty-first set, registered before testing (26 October 2026): goal loop 107, tablet size and signs (two hypotheses)
+
+From now on length and site strata are built in. Tablets with a size; per sign (10+ C-train tokens) a Mantel-Haenszel
+test of large against small (C-train median) over length band x site, p < 0.01; skewed signs with 3+ C-test tokens,
+75%+ same direction, binomial p < 0.05 (`predict_test461.py`).
+
+- **TS1** Moulded tablets.
+- **TS2** Incised tablets.
+- Progress rule: either holds.
+
