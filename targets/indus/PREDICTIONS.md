@@ -13131,3 +13131,13 @@ lines; mean pairwise cosine of context counts against frequency-matched random s
 Both failed. Preceding signs: mean pairwise cosine 0.114 (p = 0.90); following signs 0.457 (p = 0.056, all three often
 end the line). The small-seal signs are not one slot by their left context. Progress: none (goal streak 9). Tally,
 counting parts: 1630 held, 1621 failed (3255 registered).
+
+# Four-hundred-and-thirty-third set, registered before testing (26 October 2026): goal loop 79, seal size in the U family (two hypotheses)
+
+Set 430: 706 goes with large seals. Inside the U family (set 189: inner strokes on 705 / 706 head the closing formula):
+square seals with a size, one-sided Mann-Whitney (`predict_test433.py`). Not length-stratified (sizes compared directly).
+
+- **U1** Seals with 706 are larger than seals with 705 (and no 706).
+- **U2** Seals with 706 are larger than seals with plain 700 (and no 705 / 706).
+- Progress rule: either holds.
+
