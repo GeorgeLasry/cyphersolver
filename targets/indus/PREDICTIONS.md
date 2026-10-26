@@ -14191,3 +14191,7 @@ From here registrations carry length band x site x motif strata (`auditkit.size_
 - **S60** They differ in carrying 60 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-third set (`predict_test503.py`, `results/predict_test503.md`)
+
+Both failed: fish + 740 odds ratio 0.92 (p = 0.94); 60 1.07 (p = 0.84). Progress: none (goal streak 2). Tally, counting
+parts: 1669 held, 1721 failed (3395 registered).
