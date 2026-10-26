@@ -16140,3 +16140,13 @@ that trenches differ.
 - **CH2** Composite graffiti lie at a different depth from single signs (two-sided p < 0.05); the direction is reported.
 - Progress rule: CH1 (the Indus-like signs are the earlier ones, as a continuity account predicts).
 
+## Results of set 637 (`predict_test637.py`, `results/predict_test637.md`)
+
+CH1 failed, CH2 held. Over the 12 sites (8,209 graffiti with a depth), graffiti whose base sign has an Indus parallel
+are not deeper: mean within-site depth rank 0.497 against 0.513 for the rest (p = 0.97 one-sided), deeper in 4 of 12
+sites (CH1). Composite (ligatured) graffiti lie at a different depth (0.515 against 0.493, p = 0.002), deeper, not
+shallower, in 10 of 12 sites (CH2): ligatures are, if anything, slightly earlier. The effect is small (two hundredths of
+the depth range). **The Indus-like signs are not concentrated in the earlier layers**: within sites they are spread over
+the depth range like the other marks. Caveats: depth below surface across trenches, not dated layers; parallels are the
+corpus's shape identifications; most base signs have a parallel (31 of 42), so the 'none' group is small at several
+sites. Progress: none (CH1 is the progress rule).
