@@ -15058,3 +15058,14 @@ Set 553 confirmed set 552 within short strokes. Here long-stroke numerals (31-36
 ## Results of set 563 (`hyp_s2_seriesaudit.py`, `results/predict_test563.md`)
 
 Held: SA1. long strokes: A 6/6, B 3/5 keep direction (audit). Progress: none (session-2 goal streak 1).
+
+
+# Set 564, registered before testing (26 October 2026): session-2 goal loop 29, audit: unit position by line length (two hypotheses)
+
+Set 562 restricted to lines of 4+ signs (a unit cannot fill the line) and compared within length bands 4, 5, 6+
+(`hyp_s2_posaudit.py`).
+
+- **PA1** On A, in lines of 4+ signs, large units stand later than small units (Mann-Whitney p < 0.05) and in every
+  length band the large mean is later.
+- **PA2** On B, lines of 4+ signs, same direction (p < 0.05).
+- Progress rule: none (audit); a failure withdraws set 562.
