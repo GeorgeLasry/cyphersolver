@@ -13293,3 +13293,8 @@ Square seals (clean ICIT objects); formula = 705 / 706 directly followed by 33; 
 - **FC2** Other-animal and unicorn seals differ in carrying it (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-third set (`predict_test443.py`, `results/predict_test443.md`)
+
+Both failed. The formula is as common at Mohenjo-daro as at Harappa (odds ratio 0.81, p = 0.66) and on other-animal as
+on unicorn seals (0.76, p = 0.61). Of the object properties tested, it goes with seal size only (set 441). Progress:
+none (goal streak 2). Tally, counting parts: 1636 held, 1637 failed (3277 registered).

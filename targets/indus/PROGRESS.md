@@ -342,3 +342,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G86 | 440 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | U ladder complete: 700 < 705 (p = 0.0002) < 706; also on rectangular seals (p = 0.014); small 700 groups (progress; goal streak 0) |
 | G87 | 441 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | large seals carry the closing formula 705/706 33 (OR 2.4, length x site held); outside it the stroked U is not size-linked (progress; goal streak 0) |
 | G88 | 442 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 33 520 without the stroked U too rare; rectangular seals a trend (no progress; goal streak 1) |
+| G89 | 443 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | closing formula not tied to city or animal, only to seal size (no progress; goal streak 2) |
