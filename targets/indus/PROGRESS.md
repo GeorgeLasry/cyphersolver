@@ -537,3 +537,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-98 | 633 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | substitution pairs: 525/48 False; 234/903 False. (no progress; session-2 goal streak 19) |
 | S2-99 | 634 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | substitution pairs: 204/422 False; 272/502 False. (no progress; session-2 goal streak 20) |
 | - | 635 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Tamil Nadu graffiti through their own Indus parallels: pairs no more Indus-like than shuffled mappings (p = 0.16), order unrelated (14 of 32) (no progress) |
+| - | 636 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | number-size units: object kind and series differ by city, not consistent; 892 not a form of 700 by objects or followers (no progress) |

@@ -16112,3 +16112,15 @@ so '892 takes long-stroke counts like 700' is already answered, no; 892 is compa
 - **U2** 892 is followed by the same signs as uncounted 700, beyond random signs (p < 0.05).
 - Progress rule: CU1 or CU3 holds, or U1 and U2 both hold.
 
+## Results of set 636 (`predict_test636.py`, `results/predict_test636.md`)
+
+All five failed. The two cities disagree: at Mohenjo-daro large-number units stand on tablets far more than
+small-number units (30 of 122 against 5 of 130, p < 0.0001), at Harappa the reverse (18 of 56 against 52 of 86) (CU1).
+Long strokes do not separate them (CU2: p = 0.94, 0.21). On tablets, large units sit on unpictured tablets more at
+Harappa (12 of 18 against 17 of 52, p = 0.013) but not at Mohenjo-daro (15 of 30 against 2 of 5) (CU3). The number-size
+split of sets 552 / 562 is therefore a matter of what is counted and where it stands in the line, not of object kind or
+numeral series; the Harappa small-number units are mostly on tablets (the fish counts of the moulded tablets).
+892 against uncounted 700: object kinds cosine 0.756 (random as high in 80 of 300, p = 0.27; 892 is mostly on seals and
+tablets, uncounted 700 mostly on tablets and pottery) (U1); following signs cosine 0.467 (p = 0.16) (U2). Set 593's
+shared (previous, next) contexts are not matched by a shared distribution over objects or followers: 892 is not shown
+to be a form of 700. Observation before registering: 892 almost never follows a numeral (4 of 62). Progress: none.
