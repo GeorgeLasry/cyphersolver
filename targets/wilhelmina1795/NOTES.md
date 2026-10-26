@@ -130,6 +130,12 @@ Unglossed: 131704 (Feb/Mar 1801, about 55 groups, the second passage headed "cor
 above the 1795-96 range (360, 700, 906, 1107): the list was extended by 1801, and the agent's mark readings are a
 first pass. Not read.
 
+Re-read 26 Oct (`r131704_reread.txt`, first passage of 131704, 21 groups): with the 1795-96 values the cuts do not
+fit the entries: 8)169 would drop 8 letters of the 8-letter "haugwitz", 10)151^11 would drop 21 of the 11-letter
+"kalitscheff", 2)238^4 6 of the 4-letter "rhin"; the rest gives "lettre ... mi ... ttre ci pres tou inte rreue b len
+lamosella". So in 1801 these numbers stand for other, longer entries (or the marks follow other rules); the eight
+glossed 1801 passages give too few values to rebuild that list. Left unread.
+
 ## Remaining gaps
 
 - R2236 Copie No. 1: not read; its own Dutch word/syllable code; no key, no decipherment in A32-630, not in
@@ -140,7 +146,7 @@ first pass. Not read.
   (266) and Wilhelmina's partial precis (274-275) are the only lead, a paraphrase not a crib.
 - About 100 entries of the 1795-96 list are still gapped or below 80% agreement.
 
-- 1801 passages 131704 and 131715 (about 105 groups) - blocker: open-codes; numbers beyond the rebuilt 1795-96 list (360, 700, 906, 1107) and marks to be re-read at full size
+- 1801 passages 131704 and 131715 (about 105 groups) - blocker: no-key-material; re-read at full size, the cuts do not fit the 1795-96 entries (8)169, 10)151^11), numbers beyond the list (360, 700, 906, 1105); the 1801 list is a revision not rebuildable from eight short glossed passages
 
 ## Escalation
 
