@@ -12002,7 +12002,8 @@ checked on C's test lines (3+ tokens), binomial against 50% (`predict_test370.py
 One held, one failed. Square seals against moulded tablets: 7 skewed signs on C's training lines (seals 2, 60; moulded
 tablets 158, 400, 700, 809, 904); 5 of 5 lean the same way on C's test lines (SK1, p = 0.031). Incised against copper:
 only 400 and 615 skewed, 1 testable (SK2). Caveat: 158, 400 and 700 are also set 364's 'northern' signs, and moulded
-tablets come mostly from Harappa; region and object kind are confounded, tested next. Progress: a replicated finding
+tablets come mostly from Harappa; region and object kind are confounded, tested next (set 371 SR2: within the north,
+seals and moulded tablets differ only in 2 and 400, too few to test; so set 370 is partly site, noted 26 Oct). Progress: a replicated finding
 (goal streak 0). Tally, counting parts: 1599 held, 1527 failed (3126 registered; set 363 pending).
 
 # Three-hundred-and-seventy-first set, registered before testing (26 October 2026): goal loop 17, region and object kind separated (two hypotheses)
@@ -13097,3 +13098,14 @@ keep their direction at p < 0.01; 32, 390 and 5 do not. With the second dimensio
 400 0.43; 590 0.44). **The core of the size finding is four signs**: the stroked U 706 on large seals; the bull-headed
 yoke-carrier 156, the marker 400 and 590 on small seals. 32, 390 and 5 are withdrawn from it. Progress: none (goal
 streak 7). Tally, counting parts: 1630 held, 1617 failed (3251 registered).
+
+# Four-hundred-and-thirty-first set, registered before testing (26 October 2026): goal loop 77, the small-seal formula (two hypotheses)
+
+Set 430's small-seal signs 156, 400, 590 (`predict_test431.py`). Distinct square-seal lines (clean ICIT).
+
+- **SF1** The three share lines (pairwise co-occurrence summed) more often than in lines with all signs shuffled across
+  the corpus, lengths kept (1,000 shuffles, p < 0.05): one formula.
+- **SF2** At equal length, square-seal texts with any of them recur on other seals more often than texts without
+  (Mantel-Haenszel p < 0.05): the small-seal signs are in the repeated texts of set 380.
+- Progress rule: either holds.
+
