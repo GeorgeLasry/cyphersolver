@@ -12724,3 +12724,14 @@ significant: 'neither class is local'). Sets 390-391 count pairs of distinct obj
 signs before the ending), which weights common bodies by their pairs; the shuffle null keeps the composition, so the
 result stands, but it rests on frequent bodies more than set 4's per-name measure; the two should be read together.
 Progress: none (goal streak 9). Tally, counting parts: 1620 held, 1585 failed (3205 registered).
+
+# Four-hundred-and-eighth set, registered before testing (26 October 2026): goal loop 54, local names with bodies weighted equally (two hypotheses)
+
+Audit of sets 390-391 after set 407's note: the same-city share is computed per name body (over its pairs of distinct
+objects) and averaged over bodies, so frequent bodies weigh no more than rare ones; places shuffled 1,000 times
+(`predict_test408.py`). A failure downgrades sets 390-391.
+
+- **LW1** On ICIT seals the body-weighted same-city share beats the shuffle (p < 0.05).
+- **LW2** The same on Mahadevan's texts.
+- Progress rule: none (audit).
+
