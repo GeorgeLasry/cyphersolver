@@ -307,3 +307,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G51 | 405 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | heading variants equal across object kind and seal size (no progress; goal streak 7) |
 | G52 | 406 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 520 rarer on tablets at equal length: a re-finding of MM20, not counted; no size effect (no progress; goal streak 8) |
 | G53 | 407 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 740 and 520 names equally local; tension with set 4's per-name measure noted for sets 390-391 (no progress; goal streak 9) |
+| G54 | 408 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: body-weighted, ICIT seals not local (set 390 downgraded); M77 still local (audit; no progress; goal streak 10) |

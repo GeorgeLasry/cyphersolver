@@ -12395,7 +12395,7 @@ Both held as registered; NL1 is withdrawn on audit. Tablet-seal pairs sharing a 
 (expected 139.6, p = 0.004); seal pairs: 178 of 313 (expected 133.2, p = 2e-7). Audit (not registered): with sites
 shuffled among the objects involved (set 381's null; the registered expectation used all-seal site shares), NL1 is
 reached by 116 of 500 shuffles (withdrawn), NL2 by 0 of 500 (stands). Sealings are coded TAG, so NL2 is about seals.
-**Seals sharing a name body (the signs before the ending) come from the same city more than chance**, while whole
+**Seals sharing a name body (the signs before the ending) come from the same city more than chance** (downgraded by set 408: not when each body counts once), while whole
 identical seal texts do not (set 381): name parts are local, whole formulae travel. Progress (goal streak 0). Tally,
 counting parts: 1611 held, 1559 failed (3170 registered; NL1 withdrawn, counted held as registered).
 
@@ -12735,3 +12735,12 @@ objects) and averaged over bodies, so frequent bodies weigh no more than rare on
 - **LW2** The same on Mahadevan's texts.
 - Progress rule: none (audit).
 
+## Results of the four-hundred-and-eighth set (`predict_test408.py`, `results/predict_test408.md`)
+
+LW1 failed, LW2 held (no progress by design). Body-weighted, ICIT seals are not local: mean same-city share 0.506 over 84
+bodies (p = 0.25). Mahadevan's texts stay local: 0.779 over 55 bodies (p = 0.001). **Set 390's seal result is
+downgraded**: it rested on a few frequent bodies, as set 4's per-name measure suggested. The M77 locality (sets 391-392)
+holds under both weightings; M77 mixes seals and tablets (no types), so it may reflect tablets more than seals. Read
+together: whole seal names are not local (set 4), seal name bodies are not local when each counts once (here), and
+name bodies across all inscribed objects in Mahadevan's corpus are. Progress: none (goal streak 10). Tally, counting
+parts: 1621 held, 1586 failed (3207 registered).
