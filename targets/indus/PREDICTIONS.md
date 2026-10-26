@@ -15082,3 +15082,7 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=after). Large / small = set 
 - **U1** On A: large units not at the line end are followed by 400 / 90 more often than small units (p < 0.05).
 - **U2** The same on B (p < 0.05).
 - Progress rule: U1 and U2.
+
+## Results of set 565 (`hyp_s2_unit_after.py`, `results/predict_test565.md`)
+
+Held: U1. A 4 of 67 against 0 of 189; B 0 of 21 against 0 of 50. Progress: none (session-2 goal streak 3).

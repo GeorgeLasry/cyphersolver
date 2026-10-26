@@ -465,3 +465,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-27 | 562 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | position of small and large units: A large 0.82 vs small 0.50; B 0.82 vs 0.66. (progress; session-2 goal streak 0) |
 | S2-28 | 563 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | number size within long strokes: long strokes: A 6/6, B 3/5 keep direction (audit). (no progress; session-2 goal streak 1) |
 | S2-29 | 564 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: unit position by line length: PA1 True, PA2 True (audit of set 562). (no progress; session-2 goal streak 2) |
+| S2-30 | 565 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | what follows a large unit: A 4 of 67 against 0 of 189; B 0 of 21 against 0 of 50. (no progress; session-2 goal streak 3) |
