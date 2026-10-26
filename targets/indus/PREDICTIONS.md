@@ -12398,3 +12398,15 @@ reached by 116 of 500 shuffles (withdrawn), NL2 by 0 of 500 (stands). Sealings a
 **Seals sharing a name body (the signs before the ending) come from the same city more than chance**, while whole
 identical seal texts do not (set 381): name parts are local, whole formulae travel. Progress (goal streak 0). Tally,
 counting parts: 1611 held, 1559 failed (3170 registered; NL1 withdrawn, counted held as registered).
+
+# Three-hundred-and-ninety-first set, registered before testing (26 October 2026): goal loop 37, local names replicated, and by area (two hypotheses)
+
+Set 390 (NL2): seals sharing a name body come from one city. Name body as there; null = places shuffled among the
+objects involved (1,000), pairs of distinct objects (`predict_test391.py`).
+
+- **LA1** On Mahadevan's own texts (B; the 1,664 M77 objects absent from the ICIT dump, sites as M77 records them,
+  'unknown' left out; all object types), objects sharing a name body come from one city more than the shuffle predicts.
+- **LA2** Within Mohenjo-daro, seals sharing a name body come from one excavation area (ICIT field 4, its two-letter
+  code: DK, HR, VS, SD ...) more than the shuffle predicts.
+- Progress rule: either holds.
+
