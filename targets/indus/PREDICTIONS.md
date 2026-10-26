@@ -11743,3 +11743,19 @@ tablet, pottery ...). Each is a conditioned unigram backed off to the global uni
 - **GM1** The field motif conditions the signs (S rule above).
 - **GM2** The object type conditions the signs (S rule above).
 
+## Results of the three-hundred-and-fifty-fifth set (`predict_test355.py`, `results/predict_test355.md`)
+
+Both failed. The fitted mixing weight is 0 for the motif and the object type alike (no gain on either split): given the
+sign context, neither adds anything a linear mix can use. (The A -> B baseline differed between the two runs because
+fit3's inner split was unseeded; within each hypothesis base and mix share it, so the verdicts stand; seeded from set
+356.) Progress: none (goal streak 1). Tally, counting parts: 1589 held, 1505 failed (3094 registered).
+
+# Three-hundred-and-fifty-sixth set, registered before testing (25 October 2026): goal loop 2, repetition caches (two hypotheses)
+
+Set 187 found doubled signs at text edges. A sign may repeat within a line, or a multi-line object's lines may share
+signs (a heading and its entries). A cache gives the token the probability of repeating a sign already present, backed
+off to the unigram (`loopkit.cache`, `predict_test356.py`).
+
+- **RC1** The line's earlier signs as a cache lower S (S rule).
+- **RC2** The object's other lines as a cache lower S (S rule; 694 lines have sibling lines).
+

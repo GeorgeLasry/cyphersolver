@@ -32,6 +32,7 @@ META, OTHERS = build_meta()
 
 
 def base_probs(train, test):
+    random.seed(2026)  # fit3's inner split uses the global generator (fixed after set 355)
     w, _ = fit3(train, MODEL['keys'])
     m = M3(train)
     return [[sum(w[k] * r[k] for k in w) for r in m.rows(t, MODEL['kn'])] for t in test]
@@ -84,6 +85,22 @@ def unigram_given(keyfn, alpha=5.0):
             w = t[i] if i < len(t) else '</s>'
             pg = (glob[w] + 0.5) / (n + 0.5 * V)
             c = by.get(keyfn(t, meta), Counter())
+            m = sum(c.values())
+            return (c[w] + alpha * pg) / (m + alpha)
+        return f
+    return extra
+
+
+def cache(source, alpha=2.0):
+    """Probability that the token repeats a sign from source(line, i): its earlier signs, or the object's other lines."""
+    def extra(train, meta):
+        glob = Counter(g for t in train for g in list(t) + ['</s>'])
+        V, n = len(glob) + 1, sum(glob.values())
+
+        def f(t, i):
+            w = t[i] if i < len(t) else '</s>'
+            pg = (glob[w] + 0.5) / (n + 0.5 * V)
+            c = Counter(source(t, i))
             m = sum(c.values())
             return (c[w] + alpha * pg) / (m + alpha)
         return f
