@@ -11598,3 +11598,23 @@ against 100 within-stratum shuffles; Linear B control (`predict_test350.py`). No
 - **LC1** FDR at or below 10% and coverage above 4.57%.
 - **LC2** Linear B at alpha 0.002 recovers 2+ of the 4 control words, none wrong.
 - **LC3** Progress rule: LC1 and LC2 hold (learned-class units join).
+
+# Three-hundred-and-fifty-first set, registered before testing (25 October 2026): decipherment loop 176, every drawn mark from Parpola's descriptions (five hypotheses)
+
+Set 350 is registered but was not run (left open; the referent-tuning line is paused). The marks tested so far (cage,
+set 184; fish marks, 185; jar strokes, 186; U strokes, 189; leaf, 190) were chosen by eye. Here the pairs come from a rule:
+a sign whose CISI description starts with another sign's full description and adds to it is that sign plus a mark
+(`devices.py`; 48 pairs with disjoint ICIT glyphs). The cage pairs (8) and the jar strokes (741-746) are left out as
+known; 37 pairs remain over attachments, strokes, leaves, hatching and caps. A token's job is its position class
+(line-initial / medial / final, final = last or followed only by 400 / 90). Distinct lines; A = discovery, B = replication
+(`predict_test351.py`). Pair token counts were looked at; positions were not.
+
+- **DM1** On A, marked signs' position classes differ from their bases': sum over pairs of the chi-square statistic,
+  against 1,000 permutations of marked/base labels within each pair, p < 0.05.
+- **DM2** The same on B.
+- **DM3** Marked and base signs share preceding signs (cosine of preceding-sign counts, pooled pairs) more than the marked
+  sign with random signs (1,000 draws), p < 0.05: the marks attach to the same stems.
+- **DM4** Of the pairs whose final-rate differs on A (within-pair permutation p < 0.05) and that have 5+ B tokens on each
+  side, two thirds or more shift the same way on B.
+- **DM5** Progress rule: DM1 and DM2 hold (a new set of marks changes the sign's job, replicated).
+
