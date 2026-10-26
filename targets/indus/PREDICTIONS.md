@@ -13467,3 +13467,8 @@ Fish names (short / long form as set 452) on distinct lines (`predict_test454.py
 - **LK2** Mohenjo-daro and Harappa differ in the long-form share (two-sided).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fifty-fourth set (`predict_test454.py`, `results/predict_test454.md`)
+
+Both failed. Long / short fish names: square seals 20 / 56, rectangular 3 / 5 (p = 0.86); Mohenjo-daro 20 / 54, Harappa
+6 / 21 (p = 0.80). The long form goes with seal size only. Progress: none (goal streak 8). Tally, counting parts: 1640
+held, 1655 failed (3299 registered).

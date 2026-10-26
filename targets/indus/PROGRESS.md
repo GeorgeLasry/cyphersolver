@@ -353,3 +353,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G97 | 451 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size findings on rectangular seals: trend only (OR 5.3, p = 0.09); 2 of 3 size signs agree (no progress; goal streak 5) |
 | G98 | 452 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numeral + fish names avoid the long form (A); not the star-name form (no progress; goal streak 6) |
 | G99 | 453 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | marked fish lean to the long form (A p = 0.011, B p = 0.075); no extra modifiers (no progress; goal streak 7) |
+| G100 | 454 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long form by seal kind and city: no difference (no progress; goal streak 8) |
