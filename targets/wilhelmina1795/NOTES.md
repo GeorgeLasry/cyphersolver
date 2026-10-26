@@ -113,6 +113,23 @@ brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between
   one-part alphabetical. A word/syllable code of about 400 entries seen 317 times, two-thirds of its types once:
   too little for a ciphertext-only solution. Not attempted further; blocker: no key material and too short.
 
+## Wilhelmina to her son, 1801 (KHA A35-178, 26 Oct)
+
+The KHA K9 survey flagged 11 pages of A35-178 (Wilhelmina's letters to the future Willem I, Jan-Jun 1801, London and
+Hampton Court). Checked at full size (`letters1801.txt`; images in `img1801/`, git-ignored): 3 pages are clear
+letters (131711, 131718, 131739); 8 carry short cipher passages in the **same Euler word list**, with Wilhelmina's own
+marks. Glosses agree with `key_euler.tsv`: 62 Guillaume, 66 le ministere, 98 votre, 118 dispositions, 133 on dit,
+137 l'Empereur, 185 Pitt, 196 Tollius; new values 230 Pays, 390 230 116 Pays de Nassau, 37 32 Duc d'York,
+167.5.3.7 137 38 Wilhelmine Princesse d'Orange. Six passages are glossed in full or in part (131652, 131659, 131677,
+131740, 131746, 131771). Wilhelmina writes on 13 Feb 1801 that "vos dechiffremens" took her so long she could not
+write at length: her son wrote to her in the same list.
+
+Unglossed: 131704 (Feb/Mar 1801, about 55 groups, the second passage headed "correctif au precedent chiffre") and
+131715 (April 1801, about 50 groups). Decoded with `key_euler.tsv` they give fragments ("intentions",
+"defavorables", "est ecrit sans", "votre instructions", "troupes", "opinion") between broken groups, and numbers
+above the 1795-96 range (360, 700, 906, 1107): the list was extended by 1801, and the agent's mark readings are a
+first pass. Not read.
+
 ## Remaining gaps
 
 - R2236 Copie No. 1: not read; its own Dutch word/syllable code; no key, no decipherment in A32-630, not in
@@ -122,6 +139,8 @@ brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between
   clear words and no faint text, unlike the cover letters, so it may be genuine cipher; the 23 Mar 1797 letter
   (266) and Wilhelmina's partial precis (274-275) are the only lead, a paraphrase not a crib.
 - About 100 entries of the 1795-96 list are still gapped or below 80% agreement.
+
+- 1801 passages 131704 and 131715 (about 105 groups) - blocker: open-codes; numbers beyond the rebuilt 1795-96 list (360, 700, 906, 1107) and marks to be re-read at full size
 
 ## Escalation
 
