@@ -13594,3 +13594,14 @@ Set 461's stratified test (`predict_test462.py`).
 Both failed. Rectangular seals: no size skew at p < 0.01 with strata. Square seals on split C's smaller training lines:
 only 706 (large) reaches p < 0.01, and it replicates on C-test (1 of 1): consistent with set 430, under the bar.
 Progress: none (goal streak 3). Tally, counting parts: 1649 held, 1661 failed (3314 registered).
+
+# Four-hundred-and-sixty-third set, registered before testing (26 October 2026): goal loop 109, the long form at the line end (two hypotheses)
+
+Note: ICIT field 25 (SS, SC, VN, MT, IT ...) was inspected and found to classify the text itself (VN = number + 700),
+so it is not used as side information. Here (`predict_test463.py`), the end of the fish name = the 520 of each form;
+final = followed only by 400 / 90.
+
+- **FE1** On A, the long form (fish 705 / 706 33 520) ends the line more often than the short form (fish 520).
+- **FE2** The same on B.
+- Progress rule: both hold.
+
