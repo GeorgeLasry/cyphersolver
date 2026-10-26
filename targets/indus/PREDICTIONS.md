@@ -13839,3 +13839,13 @@ size alone. Progress: none (goal streak 9). Tally, counting parts: 1654 held, 16
 
 Both failed: plain 700 leans small (odds ratio 0.28, p = 0.18; rare on sized seals), 702 / 703 1.56 (p = 0.80). Progress:
 none (goal streak 10). Tally, counting parts: 1654 held, 1688 failed (3347 registered).
+
+# Four-hundred-and-eightieth set, registered before testing (26 October 2026): goal loop 126, yoke-carriers by seal size (two hypotheses)
+
+Set 430: 156 (bull-headed yoke-carrier) is on small seals. Its family and the plain form (`predict_test480.py`;
+`sizekit.size_test`).
+
+- **YC1** Large and small seals differ in carrying 154 / 155 / 157 / 158 (156 left out; two-sided p < 0.05).
+- **YC2** They differ in carrying the plain yoke-carrier 151 (two-sided p < 0.05).
+- Progress rule: either holds.
+
