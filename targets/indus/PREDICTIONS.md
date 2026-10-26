@@ -13141,3 +13141,10 @@ square seals with a size, one-sided Mann-Whitney (`predict_test433.py`). Not len
 - **U2** Seals with 706 are larger than seals with plain 700 (and no 705 / 706).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-third set (`predict_test433.py`, `results/predict_test433.md`)
+
+Both held. Square seals with 706: median size 33.8 (34 seals); with 705: 27.9 (61, p < 0.0001); with plain 700: 21.6 (11,
+p < 0.0001). **Inside the U family the seal size steps up with the inner strokes**: plain U on small seals, 705 on
+middle, 706 on large. Not length-stratified (set 430 showed 706's size link holds with length and site held). With set
+189 (705 / 706 head the closing formula) the stroked U may mark rank in that formula. Progress (goal streak 0). Tally,
+counting parts: 1632 held, 1621 failed (3257 registered).
