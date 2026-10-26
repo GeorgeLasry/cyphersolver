@@ -15099,3 +15099,12 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=before). Large / small = set
 ## Results of set 566 (`hyp_s2_unit_before.py`, `results/predict_test566.md`)
 
 Held: none. A 11 of 190 against 38 of 155; B 4 of 68 against 12 of 60. Progress: none (session-2 goal streak 4).
+
+
+# Set 567, registered before testing (26 October 2026): session-2 goal loop 32, heading lines and large units (two hypotheses)
+
+Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=heading). Large / small = set 552's counted signs (740, 520 out).
+
+- **U1** On A: lines with a large unit open with an opener (set 539) more often than lines with a small unit (p < 0.05).
+- **U2** The same on B (p < 0.05).
+- Progress rule: U1 and U2.
