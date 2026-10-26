@@ -13483,3 +13483,9 @@ A sound method should find nothing (`predict_test455.py`).
 - **NC2** A condition domain model does not pass the rule of set 358 (expected verdict 'fails').
 - Progress rule: none (control). If either finds an effect, the skew or domain method is producing false positives.
 
+## Results of the four-hundred-and-fifty-fifth set (`predict_test455.py`, `results/predict_test455.md`, `predict_test4550.md`)
+
+The control passes. Complete against damaged square seals (2,484 / 772 tokens on C-train): no sign skewed; the condition
+domain model gains 0.0002 (fixed) and nothing on C. The skew and domain methods of this run do not find effects where
+none can exist (one control; not a full false-positive rate). Progress: none (goal streak 9). Tally, counting parts:
+1642 held, 1653 failed (3299 registered; the two control verdicts counted as held).
