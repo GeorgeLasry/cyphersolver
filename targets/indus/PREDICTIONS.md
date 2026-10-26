@@ -13785,3 +13785,12 @@ none (goal streak 5). Tally, counting parts: 1653 held, 1679 failed (3337 regist
 Both failed: 520 anywhere odds ratio 1.04 (p = 0.91); short form 0.99 (p = 0.91). Of the 520-class forms only the long
 form goes with seal size (set 441). Progress: none (goal streak 6). Tally, counting parts: 1653 held, 1681 failed (3339
 registered).
+
+# Four-hundred-and-seventy-sixth set, registered before testing (26 October 2026): goal loop 122, stroked jars and mid-line 2 / 60 by size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test476.py`). Set 435 tested stroked jars unstratified.
+
+- **SJ1** Large and small seals differ in carrying a stroked jar 741-746 (two-sided p < 0.05).
+- **SJ2** They differ in carrying 2 or 60 mid-line (the heading's stroke companions and set 395's markers; two-sided).
+- Progress rule: either holds.
+
