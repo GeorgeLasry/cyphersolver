@@ -13589,3 +13589,8 @@ Set 461's stratified test (`predict_test462.py`).
 - **RS2** Square seals: size skews replicate on C-test (a held-out check of set 430; consistency, not progress).
 - Progress rule: RS1 holds.
 
+## Results of the four-hundred-and-sixty-second set (`predict_test462.py`, `results/predict_test462.md`)
+
+Both failed. Rectangular seals: no size skew at p < 0.01 with strata. Square seals on split C's smaller training lines:
+only 706 (large) reaches p < 0.01, and it replicates on C-test (1 of 1): consistent with set 430, under the bar.
+Progress: none (goal streak 3). Tally, counting parts: 1649 held, 1661 failed (3314 registered).
