@@ -16248,3 +16248,14 @@ Each value is turned into a prediction about use (`predict_test641.py`), A = ICI
 - **WV4** 032 *-ir* is a verb ending: it stands line-final more often than chance (1 / length), on A and B.
 - Progress rule: none (checks of published proposals).
 
+## Results of set 641 (`predict_test641.py`, `results/predict_test641.md`)
+
+All four failed. 840 is counted more than matched signs on B (0.286 against 0.148, p = 0.005) but not on A (0.317 against
+0.206, p = 0.30) (WV1). 850 combines no more freely than matched signs (A 0.579 against 0.519, B 0.528 against 0.516)
+(WV2). The pair 752 820 never occurs in the clean ICIT texts, so the hare reading cannot be tested this way (WV3: 0
+objects; his hare sign 763 does not exist in our export, and the copper-tablet hare text is 235 705 33 845 407 321
+407). 032 is line-final far less often than chance (A 10 of 216 against 45.7 expected; B 13 of 120 against 27.5): it is
+not an ending; it stands mostly before the fish (Parpola's *ve&lstrok;* + fish) (WV4). Wells's proposed values are not
+supported where testable. Prior-work note on set 552: Wells 2015 (pp. 69-70) already observed that 390, 405, 407 and
+156 pair with short linear strokes while 575 and 585 pair with the stacked 017; set 553 showed the number-size effect
+holds within short strokes alone, so 552 is not only his series split, but the observation is his. Progress: none.
