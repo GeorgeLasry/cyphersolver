@@ -14748,3 +14748,7 @@ Lines in which a non-numeral sign occurs twice, not adjacent (`hyp_s2_repeat.py`
   frame, e.g. a x a, rather than doubling).
 - **RP2** The same on B.
 - Progress rule: RP1 and RP2.
+
+## Results of set 542 (`hyp_s2_repeat.py`, `results/predict_test542.md`)
+
+Held: none. A False, B False. Progress: none (session-2 goal streak 7).
