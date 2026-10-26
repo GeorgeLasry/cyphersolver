@@ -16440,3 +16440,17 @@ ending (30.2 mm against 27.4, 37 against 687, p = 0.003), re-finding the first r
 attested both ways, the formula copy is the larger seal in 6 of 7 (p = 0.0625), one short of the bar and on tiny
 groups (one or two seals a side). The pattern is consistent with the long form marking a larger, more individual seal
 of the same name, but the within-body evidence is too thin to claim it. Progress: none.
+
+# Set 651, registered before testing (26 October 2026): lead 10, Wells's initial clusters against the line breaks (three hypotheses)
+
+Wells 2015 (pp. 26-29, App. II) segments a text into an Initial Cluster closed by one of three Initial Cluster Terminal
+Markers (ICTM: 1, 2, 60), medial and terminal clusters; 60 is said never to stand left of the 4th position (Fig. 3.7). Our
+scribes' line breaks (sets 7-16: bound pairs never split across lines) give an independent check of his boundary: on
+intact multi-line ICIT seals and Mahadevan's multi-line texts, with lines as listed and reversed (`predict_test651.py`).
+
+- **WS1** A line break falls directly after an ICTM in positions 2-4 more often than at other gaps (Fisher p < 0.05) in
+  all four tests (ICIT and M77, both line orders).
+- **WS2** A line break falls directly before such an ICTM (inside his initial cluster) less often than at other gaps, all
+  four tests.
+- **WS3** 60 stands within the first four positions in 95%+ of its tokens on A and on B.
+- Progress rule: none (a published analysis checked).
