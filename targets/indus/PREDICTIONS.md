@@ -13966,3 +13966,10 @@ Progress: none (goal streak 18). Tally, counting parts: 1656 held, 1702 failed (
 - **RC2** They differ in texts made only of the 50 commonest signs (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eighty-eighth set (`predict_test488.py`, `results/predict_test488.md`)
+
+RC1 held, RC2 failed. With length band x site strata large seals more often carry a sign seen at most twice in the corpus
+(odds ratio 1.45, p = 0.028); texts made only of common signs do not differ (0.92). With sets 380 and 469, large seals
+are individual (rare signs, unique texts, the long fish-name form) and small seals formulaic (repeated texts, doubled
+signs). A single test on all the data. Progress (goal streak 0). Tally, counting parts: 1657 held, 1703 failed (3365
+registered).
