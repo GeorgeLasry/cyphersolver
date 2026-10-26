@@ -14985,3 +14985,7 @@ from Harappa against Mohenjo-daro (`hyp_s2_largesite.py`).
 - **LS1** On A large-number lines are from Harappa more often (Fisher p < 0.05).
 - **LS2** The same on B (site from the records; lines without a site left out).
 - Progress rule: none: an LS1 + LS2 result would be a confound check on set 552 (site), recorded as an audit.
+
+## Results of set 558 (`hyp_s2_largesite.py`, `results/predict_test558.md`)
+
+Held: LS1. A large H/M [46, 83], small [39, 116]; B large [13, 21], small [18, 28] (audit of set 552). Progress: none (session-2 goal streak 6).
