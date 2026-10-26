@@ -16552,3 +16552,13 @@ reading of that.
 - **VM3** Counting a plain 700 (no numeral) as one unit, the mode is still above 1 on both tablet kinds, unlike both
   Linear B shapes.
 - Progress rule: none (characterisation).
+
+## Results of set 655 (`predict_test655.py`, `results/predict_test655.md`)
+
+All three held. Before 700 the long-stroke values are 2, 3 and 4 almost exclusively: value 1 in 1 of 172 (moulded) and 1
+of 174 (incised) against 102 of 801 for discrete counts (p < 1e-7 both) (VM1); 5 never occurs and 6 twice. Linear B's
+measure sub-units T and Z also show value 1 less often than discrete counts (0.44 against 0.58) (VM2), so a shortage of
+1 is measure-like. But with the 97 plain 700 tokens counted as one unit the mode is still 3 (moulded) or 4 (incised)
+(VM3), whereas Linear B measures and discrete counts alike peak at 1. The 700 series is a bounded, mid-peaked set of
+values, 2-4 on a 1-6 scale, which fits a graded unit (a standard vessel's fillings, Wells's reading) or a fixed set of
+tablet denominations better than either Linear B shape; it does not decide between them. Progress: none.

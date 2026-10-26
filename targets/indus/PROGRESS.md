@@ -556,3 +556,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | - | 652 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small vs large units: both take endings alike; large units bare and line-final 21-39% vs 1-12% (no progress) |
 | - | 653 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | minimal-pair classes: null degenerate (Linear B control fails on it); partner sets replicate A to B (p = 0.001); corrected in 654 (no progress) |
 | - | 654 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | minimal-pair classes, corrected null: Linear B control passes, Indus A passes (p = 0.001), B does not (no progress) |
+| - | 655 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 700's strokes: values 2-4 only (1 in 1 of 172; 5 never), mode 3-4 with plain 700 as 1: measure-like, unlike Linear B's shapes (no progress) |
