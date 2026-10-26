@@ -201,6 +201,31 @@ def cache(source, alpha=2.0):
     return extra
 
 
+def domain_model_fit(keyfn, minlines=150):
+    """As domain_model, but each group's interpolation weights are fitted on that group's own lines (set 378)."""
+    def extra(train, meta):
+        random.seed(2026)
+        w, _ = fit3(train, MODEL['keys'])
+        glob = M3(train)
+        groups = defaultdict(list)
+        for t in train:
+            groups[keyfn(t, meta)].append(t)
+        models = {}
+        for k, v in groups.items():
+            if len(v) >= minlines:
+                random.seed(2026)
+                models[k] = (M3(v), fit3(v, MODEL['keys'])[0])
+        cache = {}
+
+        def f(t, i):
+            if t not in cache:
+                m, ww = models.get(keyfn(t, meta), (glob, w))
+                cache[t] = [sum(ww[k] * r[k] for k in ww) for r in m.rows(t, MODEL['kn'])]
+            return cache[t][i]
+        return f
+    return extra
+
+
 def domain_model(keyfn, minlines=40, skip0=False):
     """The registered model trained only on the training lines that share keyfn's value (global weights), for groups
     with minlines+ lines; other lines get the global model (so the mix changes nothing for them)."""
@@ -370,3 +395,14 @@ def sign_task(train, test, domains, ncand=150, limit=None):
             top1 += sc[0] == g
             top5 += g in sc[:5]
     return top1 / n, top5 / n, n
+
+
+def run_set_c(num, title, hyps, gain=0.005):
+    """As run_set, with split C in place of A -> B (set 378)."""
+    global splits
+    orig = splits
+    splits = splits_c
+    try:
+        return run_set(num, title, hyps, gain)
+    finally:
+        splits = orig
