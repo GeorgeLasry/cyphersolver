@@ -16562,3 +16562,32 @@ measure sub-units T and Z also show value 1 less often than discrete counts (0.4
 (VM3), whereas Linear B measures and discrete counts alike peak at 1. The 700 series is a bounded, mid-peaked set of
 values, 2-4 on a 1-6 scale, which fits a graded unit (a standard vessel's fillings, Wells's reading) or a fixed set of
 tablet denominations better than either Linear B shape; it does not decide between them. Progress: none.
+
+# Set 656, registered before testing (26 October 2026): lead 5, host + stroke ligatures against their written-out sequences (three hypotheses)
+
+If a ligature abbreviates a sequence, it should stand where the sequence stands. The only ligatures whose components are
+certain from Parpola's descriptions are host + strokes: the U with 2 / 3 small strokes inside (P311 / P312) and the jar
+with 1 / 2 / 3 strokes (P325-327), mapped to ICIT through the corpus's own concordance. Each is compared with the
+sequence numeral + host (short strokes as described; long strokes as a second reading, since the counted 700 takes long
+strokes): cosine of (previous, next) contexts of the ligature against the outer contexts of the sequence, against 500
+frequency-matched signs. Clean ICIT lines for discovery, Mahadevan's lines for replication (`predict_test656.py`). Sets
+186 and 189 found the stroked jar and U change grammatical job, so the expected answer is no; registered as the direct
+test.
+
+- **LG1** On the ICIT lines, a majority of the testable ligatures share their short-stroke sequence's contexts beyond
+  matched signs (p < 0.05 each).
+- **LG2** The same on Mahadevan's lines.
+- **LG3** With long-stroke sequences instead, the same on ICIT.
+- Progress rule: LG1 and LG2.
+
+# Set 657, registered before testing (26 October 2026): lead 8, graffiti composite hosts against Indus ligature hosts (two hypotheses)
+
+The one side of the graffiti comparison not yet tested is how marks are built. For each graffiti base sign, its
+composite share (occurrences inside composite marks over all occurrences, 10+); for its Indus parallel (the corpus's
+map, 23 base signs), how often that sign serves as a host: the number of derived signs in Parpola's descriptions
+(devices.pairs) and the token share of those derived signs. Spearman correlation over the mapped signs, permutation
+p (`predict_test657.py`).
+
+- **GH1** Composite share correlates with the number of derived Indus signs (rho > 0, p < 0.05).
+- **GH2** Composite share correlates with the derived signs' token share.
+- Progress rule: none.
