@@ -13251,3 +13251,13 @@ Both held. Square seals with 705: median 27.9 (61) against plain 700: 21.6 (11),
 705 < 706 (set 433). Rectangular seals with a stroked U: 36.8 (25) against plain 700: 15.2 (5), p = 0.014. Caveat: the
 plain-700 groups are small (11 and 5 seals). **The inner strokes of the U track seal size on both seal kinds.**
 Progress (goal streak 0). Tally, counting parts: 1635 held, 1632 failed (3271 registered).
+
+# Four-hundred-and-forty-first set, registered before testing (26 October 2026): goal loop 87, the closing formula and seal size (two hypotheses)
+
+Set 189: the stroked U opens the closing formula '705 / 706 33 520'. Square seals with a size, Mantel-Haenszel over
+length band x site (`predict_test441.py`).
+
+- **CF1** Large seals carry the closing formula (705 / 706 directly followed by 33) more often (p < 0.05).
+- **CF2** On seals without the formula, the stroked U (705 / 706) still goes with large seals (p < 0.05).
+- Progress rule: either holds.
+
