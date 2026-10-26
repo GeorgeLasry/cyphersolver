@@ -12685,3 +12685,14 @@ Both failed. The three variants are used in about equal shares on seals (59 / 58
 p = 0.68), and on large (46 / 42 / 53) and small (41 / 42 / 36) square seals (p = 0.43). Nothing found here chooses the
 heading variant: free variation, or a choice by something outside the record. Progress: none (goal streak 7). Tally,
 counting parts: 1619 held, 1582 failed (3201 registered).
+
+# Four-hundred-and-sixth set, registered before testing (26 October 2026): goal loop 52, the 520 class by object kind and size (two hypotheses)
+
+Lines with an ending; the last ending is 520 (the small fish / star class) or 740. Mantel-Haenszel over length bands
+(`predict_test406.py`).
+
+- **EK1** Tablets and seals differ in the share of 520 among endings (two-sided p < 0.05; distinct lines of the fixed
+  split).
+- **EK2** Large and small square seals differ in the share of 520 (two-sided p < 0.05; clean ICIT objects with a size).
+- Progress rule: either holds.
+
