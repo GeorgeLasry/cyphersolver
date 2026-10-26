@@ -16229,3 +16229,22 @@ Failed, the other way round. Keeladi graffiti at 300+ cm (5th-6th c. BCE) have a
 those above 200 cm (3rd c. BCE onward) in 455 of 554 (82%) (p = 0.9994 for the registered direction). The oldest dated
 graffiti at Keeladi carry Indus-like shapes somewhat less often, not more. Usable depth-to-date only at Keeladi and,
 roughly, Kodumanal (dates.tsv); the trenches' surfaces differ, so 300 cm is an approximate boundary. Progress: none.
+
+# Set 641, registered before testing (26 October 2026): Wells 2015's proposed sign values as predictions (four hypotheses)
+
+B. K. Wells, *The Archaeology and Epigraphy of Indus Writing* (Archaeopress 2015; purchased copy kept local in
+data/wells/, git-ignored) proposes values for 13 signs (Fig. 6.20) and Proto-Dravidian verb endings (Fig. 6.21), in a
+numbering close to ICIT; the signs tested here were checked against our glyphs by drawing (his 763, 489, 821 do not
+exist in our export and are left out). His volume claim (ch. 4: 700 + long strokes, one long stroke about 40.4 litres,
+from three measured Harappa jars) cannot be extended: no inscribed pot carrying 700 has dimensions in the ICIT records.
+Each value is turned into a prediction about use (`predict_test641.py`), A = ICIT lines, B = Mahadevan's.
+
+- **WV1** 840 *parai* 'rice measure' is counted: a numeral stands right before it more often than before 20
+  frequency-matched signs (p < 0.05 on A and on B).
+- **WV2** 850 'ko?', a syllable sign, combines freely: more distinct neighbours per token than frequency-matched signs
+  (p < 0.05 on A and B).
+- **WV3** 752 + 820 is *kevi-yan* 'hare': ICIT objects whose text has 752 followed by 820 show a hare more often than
+  objects with 752 or 820 alone (Fisher one-sided p < 0.05).
+- **WV4** 032 *-ir* is a verb ending: it stands line-final more often than chance (1 / length), on A and B.
+- Progress rule: none (checks of published proposals).
+
