@@ -13267,3 +13267,13 @@ CF1 held, CF2 failed. With length band x site strata, large square seals carry t
 2.41 times as often (p = 0.019); outside the formula the stroked U is not tied to size (1.29, p = 0.59). **The size
 link of the stroked U (sets 430, 433, 440) is the closing formula '705 / 706 33 520'**: large seals end in it. Progress
 (goal streak 0). Tally, counting parts: 1636 held, 1633 failed (3273 registered).
+
+# Four-hundred-and-forty-second set, registered before testing (26 October 2026): goal loop 88, the 33 520 unit and rectangular seals (two hypotheses)
+
+Set 441: large square seals carry the closing formula 705 / 706 33 (520) (`predict_test442.py`).
+
+- **FU1** The unit '33 520' without a stroked U before it also goes with large square seals (Mantel-Haenszel over
+  length band x site, p < 0.05).
+- **FR1** Large rectangular seals (own median) carry the closing formula more often (Fisher one-sided p < 0.05).
+- Progress rule: either holds.
+
