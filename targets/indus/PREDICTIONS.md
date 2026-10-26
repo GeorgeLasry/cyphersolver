@@ -12703,3 +12703,14 @@ this was already found (MM20: seal names take 520 twice as often as names on oth
 is a re-finding with length held, not counted as progress. Large and small square seals do not differ in the 520 share
 (odds ratio 1.21, p = 0.40). Progress: none (goal streak 8). Tally, counting parts: 1620 held, 1583 failed (3203
 registered).
+
+# Four-hundred-and-seventh set, registered before testing (26 October 2026): goal loop 53, are 740 names more local than 520 names? (two hypotheses)
+
+Sets 390-391: name bodies are local. If 520 names are star / deity names (DOSSIER section 3) and 740 names personal,
+the 740 bodies should be more local. Same-city share of pairs of distinct objects sharing a body, 740 minus 520; null =
+ending labels shuffled among the name tokens, 1,000 times (`predict_test407.py`).
+
+- **LE1** On ICIT seals, 740 bodies share a city more often than 520 bodies (one-sided p < 0.05).
+- **LE2** The same on Mahadevan's texts (sites as M77 records them).
+- Progress rule: both hold.
+
