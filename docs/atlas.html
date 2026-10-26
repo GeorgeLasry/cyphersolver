@@ -6,104 +6,13 @@
 <title>The Cipher Atlas — five centuries of secret letters on the map</title>
 <meta name="description" content="Every ciphered letter this site has read or attempted, drawn as an arc from where it was written to where it was sent, from Urbino in 1425 to Mogilev in 1942. Scrub or play through time.">
 <link rel="stylesheet" href="style.css?v=20261024a">
-<style>
-.atlas-wrap{width:min(1240px,calc(100vw - 2rem));position:relative;left:50%;transform:translateX(-50%);margin:1rem 0 1.5rem}
-.atlas{position:relative;border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden;background:var(--panel3);box-shadow:var(--shadow)}
-.atlas svg{display:block;width:100%;height:auto;touch-action:none;cursor:grab}
-.atlas svg:active{cursor:grabbing}
-.atlas .sea{fill:var(--panel3)}
-.atlas .grat{fill:none;stroke:var(--rule);stroke-width:.5}
-.atlas .land{fill:var(--panel2);stroke:color-mix(in srgb,var(--gold) 35%,transparent);stroke-width:.6}
-.atlas .arc{fill:none;stroke-linecap:round;transition:opacity .4s}
-.atlas .arc.solved{stroke:var(--green)} .atlas .arc.found{stroke:var(--blue)} .atlas .arc.partial{stroke:var(--amber)} .atlas .arc.stuck{stroke:var(--red)}
-.atlas .arc.hit{stroke-width:9;stroke:transparent;cursor:pointer}
-.atlas .arc.fresh{filter:drop-shadow(0 0 4px currentColor)}
-.atlas .city circle{fill:var(--gold);stroke:var(--bg);stroke-width:.8}
-.atlas .city text{font:600 10px var(--mono);fill:var(--ink2);paint-order:stroke;stroke:var(--panel3);stroke-width:3px;pointer-events:none}
-.atlas .pulse{fill:none;stroke:var(--gold2);stroke-width:1.5}
-.atlas .dim .arc:not(.hot){opacity:.08!important}
-.atlas .arc.off,.atlas .dim .arc.off{opacity:0!important}
-.a-year{position:absolute;left:1.1rem;top:.7rem;font-family:var(--display);font-size:clamp(2.2rem,6vw,4.2rem);font-weight:700;color:var(--head);opacity:.9;line-height:1;pointer-events:none;letter-spacing:-.02em}
-.a-count{position:absolute;left:1.2rem;top:clamp(3rem,7.5vw,5.2rem);font:.74rem var(--mono);color:var(--muted);pointer-events:none}
-.a-legend{position:absolute;right:.8rem;top:.7rem;display:flex;flex-wrap:wrap;gap:.3rem;justify-content:flex-end;max-width:60%}
-.a-legend button{font:.7rem var(--mono);padding:.2rem .6rem;border-radius:999px;border:1px solid var(--rule);background:var(--bg);color:var(--ink2);cursor:pointer}
-.a-legend button i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;margin-right:.35rem;vertical-align:-1px}
-.a-legend button[aria-pressed=false]{opacity:.4}
-.a-tip{position:absolute;pointer-events:none;background:var(--bg2);border:1px solid var(--rule);border-radius:10px;padding:.5rem .7rem;font-size:.85rem;max-width:280px;box-shadow:var(--shadow);opacity:0;transition:opacity .15s;z-index:3}
-.a-tip b{display:block;font-family:var(--display);color:var(--head)} .a-tip span{font:.72rem var(--mono);color:var(--muted)}
-.a-ctl{display:flex;align-items:center;gap:.8rem;margin-top:.8rem;flex-wrap:wrap}
-.a-ctl button{font:600 .8rem var(--mono);padding:.45rem .9rem;border-radius:999px;border:1px solid var(--gold);background:var(--gold);color:var(--gold-ink);cursor:pointer;min-width:6.5rem}
-.a-ctl button.ghost{background:transparent;color:var(--ink2);border-color:var(--rule);min-width:0}
-.a-time{flex:1;min-width:220px;position:relative}
-.a-hist{display:block;width:100%;height:38px}
-.a-hist rect{fill:color-mix(in srgb,var(--gold) 45%,transparent)} .a-hist rect.on{fill:var(--gold2)}
-.a-time input{width:100%;margin:0;accent-color:var(--gold)}
-.a-ticks{display:flex;justify-content:space-between;font:.66rem var(--mono);color:var(--muted)}
-.a-feed{font:.78rem var(--mono);color:var(--muted);min-height:1.4em;margin:.5rem 0 0}
-.a-feed a{font-family:var(--serif);font-size:.92rem}
-.a-top{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.5rem;margin:1rem 0}
-.a-top button{display:block;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer;border:1px solid var(--rule);border-radius:10px;padding:.55rem .8rem;background:var(--panel);transition:border-color .2s,background .2s}
-.a-top button:hover{border-color:color-mix(in srgb,var(--gold) 55%,transparent)}
-.a-top button[aria-pressed=true]{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 14%,var(--panel))}
-.a-top b{font-family:var(--display);color:var(--head)} .a-top span{display:block;font:.72rem var(--mono);color:var(--muted)}
-.a-top .avs{float:right;margin:.1rem 0 0 .4rem}
-.a-top .none{font:.8rem var(--mono);color:var(--muted)}
-/* correspondents: a strip of portraits above the map */
-.a-people{margin:0 0 .7rem}
-.a-people .a-ph{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;margin-bottom:.4rem}
-.a-people .a-ph span{font:.72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.a-people input{flex:0 1 16rem;font:.85rem var(--serif);padding:.3rem .7rem;border-radius:999px;border:1px solid var(--rule);background:var(--bg);color:var(--ink)}
-.a-row{display:flex;gap:.55rem;overflow-x:auto;padding:.3rem .1rem .6rem;scrollbar-width:thin}
-.a-p{flex:0 0 auto;width:6.8rem;display:flex;flex-direction:column;align-items:center;gap:.25rem;font:inherit;background:none;border:0;padding:0;cursor:pointer;color:var(--ink2);transition:opacity .35s}
-.a-p img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);box-shadow:0 0 0 3px var(--bg),0 0 0 4px var(--rule);filter:sepia(.18) saturate(.9);transition:box-shadow .25s,transform .25s,filter .35s}
-.a-p b{font-weight:400;font-size:.74rem;line-height:1.15;text-align:center;max-width:100%}
-.a-p i{font:.62rem var(--mono);font-style:normal;color:var(--muted)}
-.a-p[hidden]{display:none}
-.a-p:hover,.a-p:focus,.a-p:active{background:none;box-shadow:none;transform:none}
-.a-p:hover img{box-shadow:0 0 0 3px var(--bg),0 0 0 5px color-mix(in srgb,var(--gold) 70%,transparent)}
-.a-p[aria-pressed=true] img{box-shadow:0 0 0 3px var(--bg),0 0 0 6px var(--gold)}
-.a-p[aria-pressed=true] b{color:var(--head)}
-.a-row.playing .a-p:not(.live){opacity:.35}
-.a-row.playing .a-p:not(.live) img{filter:grayscale(.8) sepia(.1)}
-.a-p.live img{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--gold2),0 0 14px var(--gold2)}
-.a-row.picking .a-p:not([aria-pressed=true]){opacity:.55}
-.a-filter{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.6rem 0 0;padding:.55rem .8rem;border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);border-radius:10px;background:color-mix(in srgb,var(--gold) 8%,var(--panel));font-size:.92rem}
-.a-filter[hidden]{display:none}
-.a-filter .avs{flex:0 0 auto}
-.a-filter .what{flex:1 1 20rem}
-.a-filter .what a{white-space:nowrap}
-.a-filter button{font:.75rem var(--mono);padding:.25rem .7rem;border-radius:999px;border:1px solid var(--rule);background:var(--bg);color:var(--ink2);cursor:pointer}
-.avs{display:inline-flex;vertical-align:middle}
-.avs img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);box-shadow:0 0 0 2px var(--panel);filter:sepia(.18) saturate(.9)}
-.avs img+img{margin-left:-9px}
-.a-tip .avs{float:left;margin:.1rem .55rem .2rem 0}
-.a-tip .avs img{width:36px;height:36px;box-shadow:0 0 0 2px var(--bg2)}
-.atlas .city{cursor:pointer}
-.atlas .city .hitc{fill:transparent;stroke:none}
-.atlas .city.sel circle:not(.hitc){fill:var(--gold2);stroke:var(--head);stroke-width:1.4}
-.atlas .pin circle{fill:var(--bg);stroke:var(--gold);stroke-width:1.6}
-.atlas .pin{pointer-events:none}
-.atlas .pin text.mono{font:700 14px var(--display);fill:var(--gold2)}
-.mono{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:color-mix(in srgb,var(--gold) 16%,var(--panel2));color:var(--gold2);font-family:var(--display);font-weight:600;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);box-sizing:border-box}
-.a-p .mono{width:52px;height:52px;font-size:1.45rem;box-shadow:0 0 0 3px var(--bg),0 0 0 4px var(--rule);transition:box-shadow .25s,filter .35s}
-.a-p:hover .mono{box-shadow:0 0 0 3px var(--bg),0 0 0 5px color-mix(in srgb,var(--gold) 70%,transparent)}
-.a-p[aria-pressed=true] .mono{box-shadow:0 0 0 3px var(--bg),0 0 0 6px var(--gold)}
-.a-p.live .mono{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--gold2),0 0 14px var(--gold2)}
-.a-row.playing .a-p:not(.live) .mono{filter:grayscale(.8)}
-.avs .mono{width:30px;height:30px;font-size:.9rem;box-shadow:0 0 0 2px var(--panel)}
-.avs .mono+img,.avs img+.mono,.avs .mono+.mono{margin-left:-9px}
-.a-tip .avs .mono{width:36px;height:36px;box-shadow:0 0 0 2px var(--bg2)}
-.a-top .avs,.a-tip .avs{display:inline-flex}
-.a-top .avs .mono,.a-tip .avs .mono,.a-filter .avs .mono{display:inline-flex;font:600 .9rem var(--display);color:var(--gold2)}
-@media (max-width:640px){.a-legend{max-width:100%;justify-content:flex-start}.a-count{display:none}.a-legend{position:static;padding:.5rem .6rem}}
-</style>
 <meta name="date" content="2026-09-21">
 <meta name="last-modified" content="2026-09-21">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
-<body id="top">
+<body id="top" class="pg-atlas">
 <header class="nav"><div class="in">
   <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
   <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>

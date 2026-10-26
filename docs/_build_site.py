@@ -3278,6 +3278,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
                  f'<button class="showmore" type="button" data-target="findings" data-step="20">Show {len(rest)} earlier finding{"s" if len(rest) != 1 else ""}</button>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
+PAGE_STYLED = {'atlas', 'catalogue', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
 def credit_figures(s):
@@ -3353,6 +3354,8 @@ def process(path):
         if rules and all(r.strip() in SHARED_INLINE for r in rules): return ''
         return m.group(0)
     s = re.sub(r'<style>(.*?)</style>\s*', strip_style, s, flags=re.S)
+    # page-specific rules live in style.css under body.pg-<slug>; a page keeps no <style> block of its own
+    if slug in PAGE_STYLED: s = re.sub(r'<style[^>]*>.*?</style>\s*', '', s, flags=re.S)
     # dateline: when the finding landed, and when the page last really changed
     mm = re.search(r'<p class="meta">(.*?)</p>', s, re.S)
     if mm: s = s[:mm.start()] + meta_html(page, rec, mm.group(1), slug) + s[mm.end():]
@@ -3427,6 +3430,8 @@ def process(path):
     s = re.sub(r'<script src="site.js[^"]*"></script>\s*', '', s)
     s = s.replace('</body>', f'<script src="site.js?v={VERSION}"></script>\n</body>', 1)
     s = re.sub(r'<body(?![^>]*id=)', '<body id="top"', s, count=1)
+    if slug in PAGE_STYLED and f'pg-{slug}' not in s.split('</head>')[-1][:200]:
+        s = re.sub(r'<body([^>]*?)(?: class="([^"]*)")?>', lambda m: f'<body{m.group(1)} class="{(m.group(2) + " " if m.group(2) else "")}pg-{slug}">', s, count=1)
     if slug == 'index':
         s = fold_findings(s)
         # the contributors strip and the call to contribute, right after the scoreboard
