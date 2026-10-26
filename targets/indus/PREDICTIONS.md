@@ -11957,3 +11957,12 @@ failure of set 358 is void (B has no type). Adopted: object type at weight 0.2 (
 4.578. The motif model passed on top of region + length; it is retested on top of the type model before adoption.
 (A recursion bug in the first run of splits_c was fixed before the reported run.) Progress (goal streak 0). Tally,
 counting parts: 1597 held, 1523 failed (3120 registered; set 363 pending).
+
+# Three-hundred-and-sixty-eighth set, registered before testing (25 October 2026): goal loop 14, motif and site on top of type (two hypotheses)
+
+Base: region + length + object type. Rule of set 358 (S rule with sign tokens, random-group control).
+
+- **MT1** A motif domain model lowers S on the fixed split and on split C (B has no motif).
+- **MT2** A site domain model lowers S on the fixed split and A -> B (set 358: fixed gain 0.0028 on top of region alone).
+- Progress rule: either holds. (`predict_test368.py`; results in results/predict_test368.md and predict_test3680.md.)
+
