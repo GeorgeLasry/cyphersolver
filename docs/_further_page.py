@@ -85,8 +85,13 @@ def chips(e):
         or '<span class="gap">no gaps listed</span>'
 
 
+def share(e):
+    """The share read, one decimal; a partial reading never shows 100% (whole letters or pages may be untouched)."""
+    return f'{min(e["frac"] * 100, 99.9):.1f}%'
+
+
 def pct(e):
-    return f'{e["frac"] * 100:.0f}%' if e['frac'] is not None else '&ndash;'
+    return share(e) if e['frac'] is not None else '&ndash;'
 
 
 def row(e):
@@ -175,7 +180,7 @@ def agent_text(e):
              f'  Write-up:   {SITE}{p["slug"]}.html (read it first: how the text was read, the key, the reading)',
              f'  Date:       {plain(p["year"])}',
              f'  Outcome:    {plain(p["stt"])}',
-             f'  Read now:   {e["frac"] * 100:.1f}% of the cipher tokens give sense' if e['frac'] is not None else '  Read now:   not measured']
+             f'  Read now:   {share(e)} of the deciphered cipher tokens give sense (pieces below may be untouched)' if e['frac'] is not None else '  Read now:   not measured']
     for f in fs:
         lines.append(f'  Files:      {REPO}/tree/main/targets/{f} (NOTES.md, key, transcription, reading, scripts)')
     lines += ['', 'OPEN GAPS (from NOTES.md, "## Remaining gaps")']
