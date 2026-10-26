@@ -12889,3 +12889,13 @@ Both failed. No sign is skewed at p < 0.01 between Mohenjo-daro's early / interm
 tokens on C-train) or between Harappa's early and late periods (58 / 619). Signs and formula are stable over time at
 both cities (sets 385, 416; Rao and Mahadevan 1987 for sign pairs). Progress: none (goal streak 7). Tally, counting
 parts: 1622 held, 1602 failed (3226 registered).
+
+# Four-hundred-and-eighteenth set, registered before testing (26 October 2026): goal loop 64, Mohenjo-daro areas (two hypotheses)
+
+ICIT field 4's two-letter area code at Mohenjo-daro (DK, HR, VS, SD ...) (`predict_test418.py`; results
+predict_test418.md and predict_test4180.md).
+
+- **AR1** Set 371's skew test on split C, DK against HR.
+- **AR2** An area domain model lowers S on the set 372 base (fixed split and C; rule of set 358).
+- Progress rule: either holds.
+
