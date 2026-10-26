@@ -12995,3 +12995,13 @@ Tablets are mostly Harappan; if small seals are commoner at Harappa, set 423's S
 Both failed (audit). With length x site strata the odds ratio stays 1.95 but p = 0.063; within Harappa 2.87, p = 0.33
 (few cases). **Set 423 is downgraded to a trend**: the effect keeps its size with site held but is no longer
 significant. Progress: none (goal streak 1). Tally, counting parts: 1623 held, 1613 failed (3240 registered).
+
+# Four-hundred-and-twenty-fifth set, registered before testing (26 October 2026): goal loop 71, audit of set 380 against site (two hypotheses)
+
+Set 380's HS2 (small square seals' texts recur on other seals, odds ratio 1.90 within length bands) had no site control
+(`predict_test425.py`). A failure downgrades set 380.
+
+- **RA1** HS2 holds with length band x site strata (p < 0.05).
+- **RA2** HS2 holds within Mohenjo-daro alone.
+- Progress rule: none (audit).
+
