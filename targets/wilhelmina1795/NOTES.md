@@ -136,6 +136,14 @@ fit the entries: 8)169 would drop 8 letters of the 8-letter "haugwitz", 10)151^1
 lamosella". So in 1801 these numbers stand for other, longer entries (or the marks follow other rules); the eight
 glossed 1801 passages give too few values to rebuild that list. Left unread.
 
+## Escalation tests, 26 Oct
+
+- R2236 Copie No. 1 decoded with d'Yvoy's two Dutch word codes of 1797-99 (targets/yvoy1797 table_L, table_E):
+  a handful of isolated hits (duitschland, aan, haar), no sense; not those codes.
+- KHA catalogue searched for keys ("sleutel", "chiffre", "cijferschrift", "geheimschrift"): the only family key
+  of the period is the Aylva cover-name list of 19 Jan 1795 (A35-488-1, K6), which has no numbers; the 1775-80
+  "chiffre chiffrant / dechiffrant" registers (A31-903/904) are not scanned. No key for Copie No. 1 or the 1801 list.
+
 ## Remaining gaps
 
 - R2236 Copie No. 1: not read; its own Dutch word/syllable code; no key, no decipherment in A32-630, not in

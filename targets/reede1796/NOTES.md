@@ -62,6 +62,14 @@ Retry: the 1796 passages cannot be decoded without the book; the Explication giv
 only, too little to identify a book by itself (a book search would need candidate texts of 1790s London-Berlin
 correspondence).
 
+## The Explication, second half (26 Oct, escalation)
+
+Run (4), "39.97.16", is explained as "de son voyage de Pyrmont"; run (5), "29.17.19.37", as "le Roi doit
+s'applaudir de sa position, etre dispose a persister dans les principes actuels, & que d'apres cela le Duc croit
+qu'il n'y a rien a faire, & est-il de tres mauvaise humeur". Four groups for some thirty words: each number points to
+a whole phrase. The "Chiffre Litteral" is therefore a list of prepared phrases (or a text whose lines are those
+phrases) made for this correspondence, not a dictionary or almanac; testing printed books cannot recover it.
+
 ## Remaining gaps
 
 - The nine passages above (about 580 groups) - blocker: no-key-material; the 1796 "Chiffre Litteral" is a book code (seven groups for a 200-letter sentence, dotted page.line groups) and the book is unknown; the 1797-1801 pages use a larger list with prefixes and superscripts, glossed values too few; neither known table fits

@@ -67,6 +67,15 @@ nearly every run has the contemporary decipherment written over it (15 fully glo
   lauriers ne ... hazarde" agrees with the table at both ends (3583 = 3 + 583 Bi(schofswerder); 342 = hazarder).
   182 97 56 = "citron" and 152 97 56 = "invisible": the postscript signals for lemon-juice text.
 
+## Escalation tests, 26 Oct
+
+- DECODE R1025 (Van Reede to William V, KHA PWV inv. 205, 1790/93) and R1030 (Berlin 26 Jan 1790) are the Grand
+  Chiffre: R1024 reads R1025 word for word. R1893's three-digit marked code is not that.
+- The 17 Jan 1792 solid page (171282, groups to 2017) against R1024 under every additive offset -5000..5000 and the
+  scalings x2, x3: best French scores are word salad (a word code gives plausible words from any key). Not a
+  shifted Grand Chiffre. Key for R1893 and the solid pages: none online; the States General cipher office papers
+  (NA 2.21.045, Croiset, inv. 18/21) are the physical lead.
+
 ## Remaining gaps
 
 - R1893: not read; blocker: no-key-material (a different marked code; not the 1789-92 table).

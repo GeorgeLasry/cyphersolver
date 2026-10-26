@@ -64,6 +64,13 @@ Tollius's first conferences with Their Highnesses, a further answer promised thr
 possible change in d'Yvoy's position at Hampton Court; the rest (the Lille and Udine negotiations, the "catastrophe"
 in Paris, i.e. 18 Fructidor) is clear French. Added to table L (105 numbers; leave-one-page-out 78% vs 26%).
 
+## Gedenkstukken III and the cipher pages (26 Oct, escalation)
+
+Colenbrander's no. 691 (d'Yvoy to the Erfprins, Emmerich 11 May 1799) prints the text d'Yvoy wrote in sympathetic
+ink; its cipher page 147442 carries only the pointer "hier achter is geschreven" (442 222 443 279 1443 291 43 669
+938). The printed 1799 letters are the developed ink texts, not decipherments of code runs, so they cannot extend
+table E. Closed as a lead.
+
 ## Remaining gaps
 
 None. Every code run has a contemporary decipherment, read here, or is the pointer phrase read from its glossed
