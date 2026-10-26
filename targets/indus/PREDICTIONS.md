@@ -14944,3 +14944,7 @@ Heads (sign before an ending) in two-sign lines against lines of 5+ signs; heads
 - **SS1** 3+ skewed heads on A.
 - **SS2** 75%+ of the testable ones lean the same way on B (binomial p < 0.05).
 - Progress rule: SS1 and SS2.
+
+## Results of set 555 (`hyp_s2_shortskew.py`, `results/predict_test555.md`)
+
+Held: none. skewed 0; same way on B 0/0. Progress: none (session-2 goal streak 3).
