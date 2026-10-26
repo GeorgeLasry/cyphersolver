@@ -15149,3 +15149,7 @@ A context model p(sign | previous sign, whether a numeral occurred earlier in th
 - **CT1** S on the fixed test falls by 0.005+ and sign-token bits fall.
 - **CT2** S on A -> B falls and sign-token bits fall.
 - Progress rule: CT1 and CT2.
+
+## Results of set 570 (`hyp_s2_ctx_numseen.py`, `results/predict_test570.md`)
+
+Held: none. fixed gain -0.0006, A -> B gain -0.0036. Progress: none (session-2 goal streak 8).
