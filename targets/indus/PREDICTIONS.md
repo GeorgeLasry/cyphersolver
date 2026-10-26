@@ -16537,3 +16537,18 @@ frames, 0.701, p = 0.79). The method is sound, the Indus result is unreplicated:
 pair a sign with a differently read variant of itself or of a numeral. With set 653's SC4 (partner sets recur A to B,
 p = 0.001), the usable product is results/substitution_classes.tsv, each sign's substitution partners, not a class
 assignment. Progress: none.
+
+# Set 655, registered before testing (26 October 2026): lead 4, the numbers before the measure sign 700 (three hypotheses)
+
+Wells 2015 reads 700 + long strokes as volumes. Measures and discrete counts have different value shapes: in Linear B
+the sub-units T and Z are capped by the system and relatively flat, discrete counts of livestock and persons fall off
+from 1. The long-stroke values before 700 on Harappa's moulded (TAB:B) and incised (TAB:I) tablets, distinct texts,
+against short-stroke counts of other signs and against both Linear B shapes (`predict_test655.py`). Counts by value
+were looked at before registering (2, 3 and 4 dominate; 1 and 5 nearly absent); the tests below are the registered
+reading of that.
+
+- **VM1** Before 700 the value 1 is rarer than in discrete counts, on moulded and on incised tablets (Fisher p < 0.05).
+- **VM2** Linear B control: the measure sub-units also show value 1 less often than discrete counts.
+- **VM3** Counting a plain 700 (no numeral) as one unit, the mode is still above 1 on both tablet kinds, unlike both
+  Linear B shapes.
+- Progress rule: none (characterisation).
