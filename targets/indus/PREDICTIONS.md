@@ -13973,3 +13973,12 @@ RC1 held, RC2 failed. With length band x site strata large seals more often carr
 are individual (rare signs, unique texts, the long fish-name form) and small seals formulaic (repeated texts, doubled
 signs). A single test on all the data. Progress (goal streak 0). Tally, counting parts: 1657 held, 1703 failed (3365
 registered).
+
+# Four-hundred-and-eighty-ninth set, registered before testing (26 October 2026): goal loop 135, rare signs on two halves (two hypotheses)
+
+As set 470 for set 469 (`predict_test489.py`).
+
+- **RH1** Rare signs lean to large seals in half 1 (p < 0.05).
+- **RH2** The same in half 2.
+- Progress rule: none (replication).
+
