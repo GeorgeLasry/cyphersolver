@@ -14836,3 +14836,7 @@ Set 545's top-30 long-distance pairs on A. For each, the sign strings between a 
   more than chance (PMI > 0).
 - Progress rule: LA1 and LA2 (frames with an open slot, replicated). If LA1 fails, set 545 is recorded as repeated
   phrases (downgraded).
+
+## Results of set 548 (`hyp_s2_ldaudit.py`, `results/predict_test548.md`)
+
+Held: LA2. open middles 8/30; of those positive on B 5/5. Progress: none (session-2 goal streak 3).
