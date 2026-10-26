@@ -3223,8 +3223,8 @@ of the time on held-out objects. No progress: streak 2. Tally 1587 held, 1497 fa
 - **Gate (`gate.py`, `results/gate.md`).** No published key in keys/ gives a value to the copper-tablet anchor signs
   749, 341 or 753, and none of their glosses names the picture on any anchor text they cover (0 of 2-4 each). Every
   key is untested by the gate rather than passing it; a new key must cover the anchors to count. The lexicon files
-  for anchors_bench.py / equation_rebus.py (DEDR, MW, ePSD2) were in an old scratchpad and are gone; refetch before
-  rerunning those.
+  for anchors_bench.py / equation_rebus.py (DEDR, MW, ePSD2) are in C:\Users\dbour\indus_data (LANG_DATA) and, from
+  25 Oct 2026, also in data/lexicons/ (`build_lexicons.py`, README there; mw.txt and raw/ git-ignored for size).
 
 ## Limitations
 

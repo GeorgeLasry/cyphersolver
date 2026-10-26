@@ -11966,3 +11966,8 @@ Base: region + length + object type. Rule of set 358 (S rule with sign tokens, r
 - **MT2** A site domain model lowers S on the fixed split and A -> B (set 358: fixed gain 0.0028 on top of region alone).
 - Progress rule: either holds. (`predict_test368.py`; results in results/predict_test368.md and predict_test3680.md.)
 
+## Results of the three-hundred-and-sixty-eighth set (`predict_test368.py`, `results/predict_test368.md`, `predict_test3680.md`)
+
+Both failed. On top of the type model the motif takes weight 0 (its set 367 gain was the type difference again: motifs
+are on seals); the site gains 0.0002 on the fixed test (A -> B 0.0102). Progress: none (goal streak 1). Tally, counting
+parts: 1597 held, 1525 failed (3122 registered; set 363 pending).
