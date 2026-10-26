@@ -13026,3 +13026,14 @@ RS1 held, RS2 failed (audit). Within Mohenjo-daro the same signs are skewed (rec
 741, 760) and 5 of 5 replicate (p = 0.031); within Harappa nothing reaches p < 0.01 (166 rectangular tokens). Set 384
 stands as a Mohenjo-daro result at least. Progress: none (goal streak 3). Tally, counting parts: 1626 held, 1614 failed
 (3244 registered).
+
+# Four-hundred-and-twenty-seventh set, registered before testing (26 October 2026): goal loop 73, audit of the object-kind models against site (one hypothesis)
+
+Tablets are mostly Harappan, so the subtype gain (set 369) might be site. Base = plain + length + site (weight 0.2);
+the subtype domain model on top, split C, rule of set 358 (`predict_test427.py`). Set 368 already showed site adds
+little on top of the kind models (0.0002 fixed); this is the converse. One hypothesis only, so the loop counts its
+second slot as the converse already on record (set 368 MT2).
+
+- **KS1** The subtype model passes the rule of set 358 on top of length + site.
+- Progress rule: none (audit). A failure downgrades sets 367 and 369.
+
