@@ -12173,3 +12173,11 @@ second look at the same question, so a pass is weaker evidence and is reported a
 - **FS2** The same for good / fine against poor / fair workmanship (ICIT field 22).
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-seventy-eighth set (`predict_test378.py`, `results/predict_test378.md`)
+
+FS1 held, FS2 failed. Skewed on the fixed training square seals: large 32, 706; small 156, 390, 400, 5, 590; all 6 lean
+the same way on the fixed test (p = 0.016). With set 376 (706 large; 156, 390, 400, 5 small, 4 of 4 on split C) the same
+signs recur: **seal size goes with what is written**: large seals favour the stroked U 706 (the closing formula, set
+189) and the long-stroke 2; small seals the yoke-carrier ligature 156, the marker 400 and the numeral 5. As registered,
+this is a second look at set 376's question and weaker than an independent replication. Workmanship: no skewed sign.
+Progress (goal streak 0). Tally, counting parts: 1602 held, 1544 failed (3146 registered).

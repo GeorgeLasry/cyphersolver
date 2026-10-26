@@ -276,3 +276,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G21 | 375 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | secondary motif and workmanship: nothing (no progress; goal streak 3) |
 | G22 | 376 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size: 4 of 4 large/small skews replicate (p = 0.06, under the bar); longer texts on larger seals (no progress; goal streak 4) |
 | G23 | 377 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band and number of sides as domains: weight 0 (no progress; goal streak 5) |
+| G24 | 378 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size and signs: 6 of 6 large/small skews replicate on the fixed test (large 32, 706; small 156, 390, 400, 5, 590); second look at set 376 (progress; goal streak 0) |
