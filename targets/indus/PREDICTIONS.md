@@ -15108,3 +15108,7 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=heading). Large / small = se
 - **U1** On A: lines with a large unit open with an opener (set 539) more often than lines with a small unit (p < 0.05).
 - **U2** The same on B (p < 0.05).
 - Progress rule: U1 and U2.
+
+## Results of set 567 (`hyp_s2_unit_heading.py`, `results/predict_test567.md`)
+
+Held: none. A 49 of 152 against 91 of 177; B 9 of 58 against 26 of 65. Progress: none (session-2 goal streak 5).
