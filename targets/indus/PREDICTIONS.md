@@ -13925,3 +13925,7 @@ held, 1696 failed (3357 registered).
 - **GF2** They differ in carrying a sign of block 90-99 (the man family; two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eighty-fifth set (`predict_test485.py`, `results/predict_test485.md`)
+
+Both failed: block 800-819 odds ratio 1.09 (p = 0.67); block 90-99 1.11 (p = 0.80). Progress: none (goal streak 16).
+Tally, counting parts: 1656 held, 1698 failed (3359 registered).
