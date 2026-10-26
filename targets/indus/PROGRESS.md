@@ -345,3 +345,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G89 | 443 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | closing formula not tied to city or animal, only to seal size (no progress; goal streak 2) |
 | G90 | 444 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | closing formula over time: no change (no progress; goal streak 3) |
 | G91 | 445 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | no 740 ever precedes the closing formula (A, B): it replaces the 740 ending (no progress as registered; goal streak 4) |
+| G92 | 446 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the closing formula is the long form of fish (520) names: fish before it 73% / 66% (A / B) vs 7% / 5% before 740 (progress; goal streak 0) |

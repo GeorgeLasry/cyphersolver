@@ -13341,3 +13341,10 @@ before it should look like a 520-name head. Distinct lines, A and B (`predict_te
   sign before 740 (A and B).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-sixth set (`predict_test446.py`, `results/predict_test446.md`)
+
+Both held. The sign before the formula is a fish in 53 of 73 (A) and 21 of 32 (B), against 69 of 940 and 19 of 347
+before 740 (p < 0.0001 both); a 520-class head in 32 of 73 and 5 of 32 against 43 of 940 and 12 of 347 (p < 0.0001,
+p = 0.009). **The closing formula '705 / 706 33 520' is the long form of the fish (520) class of names**: fish + stroked
+U + long 3 + 520, in place of fish + 520. With set 441 it is the form used on large seals. Progress (goal streak 0).
+Tally, counting parts: 1638 held, 1641 failed (3283 registered).
