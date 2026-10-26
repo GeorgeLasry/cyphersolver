@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-silva-garcilaso", "label": "Alonso de Silva - Garcilaso de la Vega cipher (RAH 9/15 ff. 11-14v)", "kind": "archive key", "by": "Catholic Monarchs' secretariat", "year": 1496, "note": "Alphabet, name list and a large code of VC/CVC groups; on DECODE as key record R9822 (BRAH 9/15)."},
+{"id": "k-rah915-f16", "label": "Rome cipher, RAH 9/15 f. 16", "kind": "archive key", "by": "Catholic Monarchs' secretariat", "year": 1496, "note": "Latin-letter alphabet with superscript marks and a Roman name list (pope, College, cardinals); Galende assigns it to fray Juan de Mauleon. DECODE R9823/R9824."},
 {"id": "k-schoning1783", "label": "Schoning's symbol alphabet and code (1783-84), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1783, "note": "24-sign alphabet from Van der Hoop's clear copies; one-part code, 188 of 226 numbers from glosses, his 14 Dec 1783 decipherment (A32-599) and De Larrey's Byland list (A32-604) (26 Oct 2026)."},
 {"id": "k-reede1789", "label": "Van Reede's code to Princess Wilhelmina (1789-92), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1789, "note": "Marked 1-3 digit nomenclator, 386 numbers voted from the interlinear decipherments of KHA A32-545-547 (25 Oct 2026); held-out 62% vs 10%."},
 {"id": "k-yvoy-london1797", "label": "d'Yvoy - Hereditary Prince London code (1797-98), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1797, "note": "Dutch word code, 105 numbers voted from the interlinear decipherments of KHA A35-1450-1451 (26 Oct 2026); leave-one-page-out 78% vs 26%."},
@@ -4294,6 +4296,7 @@
 {"source": "s-cyphersolver", "key": "k-wotton1585-rebuilt"}
  ],
  "unlinked": {
+  "garcilaso1498": "Not solved: no key fits the Garcilaso-cipher passages; the probable key (Garcilaso's 1496 letters, RAH Salazar A-11) is not online.",
   "reede1796": "Not solved: the 1796 Chiffre Litteral is a book code keyed to an unnamed printed text; no key read the passages.",
   "catokwacopa": "No key: each line is split between the two ads with letters dropped; no substitution.",
  "vargas1552": "Read from the contemporary decipherment written on the letter; the key (the Imperial Cipher of 1544-1554, identified by Tomokiyo) is not in the repository and was not applied.",
@@ -4382,6 +4385,11 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-silva-garcilaso", "target": "garcilaso1498", "note": "alphabet lacks the postscript's commonest signs (Λ, π, ⧺o, T-with-o, β-forms); 9 = m would be far too frequent"},
+{"key": "k-rah915-f16", "target": "garcilaso1498", "note": "name capitals coincide (B, M, R, T, H) but the alphabet has none of Λ, ∠, T-with-o, zh"},
+{"key": "k-cifra-general", "target": "garcilaso1498", "note": "different sign alphabet"},
+{"key": "k-lasry-esp318", "target": "garcilaso1498", "note": "shares π, ∝, ÷ and letter-written code groups, but has no Λ, ∠ or β-forms"},
+{"key": "k-escriva1", "target": "garcilaso1498", "note": "Escrivà ciphers 1 and 2 (Parisi 2004) give nonsense on the postscript; Parisi tried them too"},
   {"key": "k-reede1789", "target": "reede1796", "note": "Van Reede's 1789-92 code does not fit the 1796-1801 passages: 3 of 13 decoded words in the run's own gloss against 2 in another's"},
   {"key": "k-r2237", "target": "reede1796", "note": "the 1795-96 Euler word list does not fit: 3 of 32 decoded words in the own gloss; glossed values contradict it (13 Athlone, 6/52 Haugwitz)"},
   {"key": "k-brackx-esp318no94", "target": "esp318no93", "note": "no. 94's alphabet does not break no. 93 (Brackx); the two code inventories barely overlap"},

@@ -113,6 +113,15 @@ Open: the codes `bog` (×3), `zeb`, `zems`, `xob`, `bue` do not fit Galende's pr
 plates carry misprints there or the hand uses a variant; about ten letter-sign stretches are unresolved (list in
 `f116_reading.md`, Open points). About three quarters of the words read (estimate by line; no token count was kept).
 
+## BRAH 9/15 is on DECODE (26 Oct 2026)
+
+Found while working on `targets/garcilaso1498`: Galende's whole file BRAH 9/15 is on DECODE as key records
+R9815–R9832 and R9486 (status N/A, dated 1600–1699 there, wrongly). R9815–R9820 = ff. 1–6 (the "Cifra del visorrey"
+named under no. 94's known-keys step as unpublished), R9821 = ff. 7–10 (Cifra general, with f. 10), R9822 = ff. 11–15
+(Silva–Garcilaso), R9823/R9824 = ff. 15–16, R9825–R9832 = ff. 17–24, R9486 = f. 25. Images download with the DECODE
+cookie (`IMG_R98xx_I458xx_P*.jpg`). The earlier statements here that "RAH 9/15 is not online" are superseded; no. 92's
+open codes can now be checked against the manuscript ff. 7–9 itself, and no. 94 against ff. 1–6.
+
 ## What is in this directory
 
 * `full/` — IIIF `full/full` images of all thirteen cipher folios of the volume (4100–4200 px wide). Gallica returns

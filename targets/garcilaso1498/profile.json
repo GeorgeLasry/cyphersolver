@@ -1,0 +1,91 @@
+{
+ "schema_version": 1,
+ "target": "garcilaso1498",
+ "title": "Ferdinand II to Garcilaso de la Vega, 31 Aug 1498: the head line and ten-line postscript in Garcilaso's cipher (ACA Sástago 193, nº 79/83; DECODE R10180)",
+ "documents": [
+  {
+   "id": "R10180",
+   "shelfmark": "Barcelona, ACA, Diversos, Sástago 193 (Lío B), nº 79/83; DECODE R10180; Parisi 2004 doc. 83",
+   "date": "31 Aug 1498",
+   "year": 1498,
+   "country": "Spain",
+   "route": "Zaragoza -> Rome",
+   "language": "Spanish",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": ["none"],
+    "source": "none for the Garcilaso-cipher passages; the body (Escrivà cipher no. 2) is printed in Parisi 2004 pp. 105-109",
+    "partial": false
+   },
+   "length": {
+    "tokens": 318,
+    "distinct": 80,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ct.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "DECODE images IMG_R10180_I46659_P4 (ten lines) and P5 (head line), 2x line crops",
+    "image_quality": "fair",
+    "notes": "The measure counts 3 [gap] lacuna markers: 315 sign tokens, 79 types (57 with superscript variants folded). Water stains in L1 and L3-L4; several base signs are close in shape."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": ["homophonic", "nomenclator"],
+  "summary": "Homophonic symbol alphabet with letter+superscript code groups (aᵠ, eᵗ, bⁿ) and capital-letter name signs, distinct from the Escrivà ciphers used in the body of the letter.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 79,
+  "diacritics": {"used": true},
+  "homophones": {"used": true},
+  "nomenclator": {"present": true, "kinds": ["names"]},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "The seven commonest signs cover 40% of tokens. Every key in BRAH 9/15 (DECODE R9815-R9832, R9486), Escrivà nos. 1-2 and the Cifra general was compared and excluded. Garcilaso's own cipher survives in deciphered letters at RAH Salazar A-11, not digitised."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Parisi 2004 printed the body and left both passages undeciphered; Tomokiyo, Cryptoole IT1498-1 and DECODE list them as open",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images", "cleartext context"],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie to the model, set up Claude Code, and posed the problem with /goal and the catalogue page solve/349. No target-specific intervention recorded.",
+  "tools": ["solve.py (homophonic annealer, 5-gram Spanish model with Parisi's 1495-98 texts)", "control.py (synthetic control)"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {"kind": "access", "what": "Fetched the seven R10180 images from DECODE with the session cookie; located the two passages (P5 head line, P4 last ten lines) against Parisi's notes 13, 71, 89.", "result": "worked", "date": "2026-10-26"},
+  {"kind": "literature search", "what": "Parisi 2004 (UB mirror), Tomokiyo unsolved.htm/spanish.htm and blog, Cryptoole, DECODE siblings R10172-R10179, Villanueva Morte and Fernández de Córdova 2025: no reading anywhere; key specimens cited at RAH Salazar A-11 ff. 109-111 and 121-125, not online.", "result": "failed", "date": "2026-10-26"},
+  {"kind": "key from source", "technique": ["key matching"], "what": "Found Galende's BRAH 9/15 key file on DECODE (R9815-R9832, R9486) and compared every alphabet with the postscript signs, including the Alonso de Silva-Garcilaso cipher (R9822) and the f. 16 Rome cipher (R9824).", "result": "ruled out", "date": "2026-10-26"},
+  {"kind": "key from source", "technique": ["key matching"], "what": "Compared Parisi's Escrivà alphabets 1 and 2, the Cifra general (esp318) and RAH 9/7-9/8 cipher letters on DECODE (R9483-R9485, R9591).", "result": "ruled out", "date": "2026-10-26"},
+  {"kind": "transcription", "what": "Transcribed both passages sign by sign from 2x crops into ct.txt (12 rows).", "result": "worked", "date": "2026-10-26"},
+  {"kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"], "what": "Counts, repeats (π bong zh, ꝑ π, aꝛaꝛ), contact variety; superscripted letter pairs identified as probable code groups, capitals as name signs.", "result": "partial", "date": "2026-10-26"},
+  {"kind": "crib", "technique": ["crib testing"], "what": "Place-and-date crib 'en Çaragoça a' on the last tokens before the clear date.", "result": "failed", "date": "2026-10-26"},
+  {"kind": "solver", "technique": ["simulated annealing", "language-model scoring"], "what": "Homophonic annealer, one letter per sign type, 5-gram Spanish (es-golden-age + Parisi texts), unigram KL penalty; full and folded sign sets.", "result": "failed", "date": "2026-10-26"},
+  {"kind": "control", "what": "Same annealer on 315 letters of es-gutenberg Spanish under a 57-symbol homophonic key: 0-29% of letters recovered in six restarts.", "result": "failed", "date": "2026-10-26"}
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Both passages were transcribed and attacked ciphertext-only and against every reachable key; no key fits, and a control shows 315 homophonic tokens are below what the annealer can break.",
+  "contribution": ["transcription", "catalogue correction"],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "verification": ["none"],
+  "notes": "Needs RAH Salazar A-11 ff. 109-111 and 121-125 (Garcilaso's cipher letters with decipherments) to rebuild the key.",
+  "credits": [
+   {"who": "parisi", "role": "pointer", "note": "located the passages and named the RAH A-11 Garcilaso cipher letters as the probable key (Pedralbes 24, 2004, n. 13)", "source": "Pedralbes 24 (2004), 55-116", "published": true}
+  ]
+ }
+}
