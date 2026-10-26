@@ -12443,3 +12443,13 @@ LA1 held, LA2 failed. On Mahadevan's own texts 226 of 270 pairs of objects shari
 copies of Harappa tablets (distinct objects, one mould) may add same-city pairs. Within Mohenjo-daro, seals sharing a
 name body are not concentrated in one excavation area (83 of 139, p = 0.55): names are local to the city, not to a
 quarter. Progress (goal streak 0). Tally, counting parts: 1612 held, 1560 failed (3172 registered).
+
+# Three-hundred-and-ninety-second set, registered before testing (26 October 2026): goal loop 38, local names without Harappa (two hypotheses)
+
+Moulded tablets (mould copies) are almost all Harappan. Sets 390-391's locality, Harappa left out; shuffle null as set
+391 (`predict_test392.py`).
+
+- **LH1** On Mahadevan's texts without Harappa, objects sharing a name body come from one city more than chance.
+- **LH2** On ICIT seals without Harappa, the same.
+- Progress rule: either holds.
+
