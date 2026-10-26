@@ -14312,3 +14312,12 @@ parts: 1669 held, 1737 failed (3411 registered).
 
 Both failed: 840 odds ratio 0.94 (p = 0.99); 176 1.44 (p = 0.41). Progress: none (goal streak 11). Tally, counting parts:
 1669 held, 1739 failed (3413 registered).
+
+# Five-hundred-and-thirteenth set, registered before testing (26 October 2026): goal loop 159, 920 and 692 by seal size (two hypotheses)
+
+`auditkit.size_motif` (`predict_test513.py`).
+
+- **S920** Large and small seals differ in carrying 920 (two-sided p < 0.05).
+- **S692** They differ in carrying 692 (two-sided p < 0.05).
+- Progress rule: either holds.
+
