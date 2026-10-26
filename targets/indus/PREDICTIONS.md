@@ -12696,3 +12696,10 @@ Lines with an ending; the last ending is 520 (the small fish / star class) or 74
 - **EK2** Large and small square seals differ in the share of 520 (two-sided p < 0.05; clean ICIT objects with a size).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-sixth set (`predict_test406.py`, `results/predict_test406.md`)
+
+EK1 held, EK2 failed. At equal length tablets end in 520 far less often than seals (odds ratio 0.36, p = 0.0001), but
+this was already found (MM20: seal names take 520 twice as often as names on other media, 18% against 9%; XC18), so it
+is a re-finding with length held, not counted as progress. Large and small square seals do not differ in the 520 share
+(odds ratio 1.21, p = 0.40). Progress: none (goal streak 8). Tally, counting parts: 1620 held, 1583 failed (3203
+registered).
