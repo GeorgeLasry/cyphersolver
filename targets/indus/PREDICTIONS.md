@@ -12838,3 +12838,8 @@ run of signs before the last ending back to a numeral, a heading sign or the lin
 - **SB2** Large seals carry a fish-family sign (ICIT 220-249) more often at equal text length.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fourteenth set (`predict_test414.py`, `results/predict_test414.md`)
+
+Both failed. Large seals carry 3+ sign name bodies as often as small ones at equal length (odds ratio 1.02); fish-family
+signs lean large (1.29, p = 0.058). Seal size goes with particular signs (set 379), not with longer names. Progress:
+none (goal streak 4). Tally, counting parts: 1622 held, 1596 failed (3220 registered).

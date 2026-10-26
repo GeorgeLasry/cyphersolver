@@ -313,3 +313,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G57 | 411 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | ICIT seals at the big sites still not local: ICIT and M77 disagree, unresolved (audit; no progress; goal streak 1) |
 | G58 | 412 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | SIGN with the object-kind models: no gain (no progress; goal streak 2) |
 | G59 | 413 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | rectangular-seal formula: no numeral-first effect; count-without-ending a trend; set 384 BR2 = earlier M12 (no progress; goal streak 3) |
+| G60 | 414 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size: no longer names; fish signs a trend (no progress; goal streak 4) |
