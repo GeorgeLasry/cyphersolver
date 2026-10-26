@@ -318,3 +318,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G62 | 416 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Mohenjo-daro phases: formula stable (no progress; goal streak 6) |
 | G63 | 417 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | no sign skewed between early and late at either city (no progress; goal streak 7) |
 | G64 | 418 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Mohenjo-daro quarters: no sign skews, no model gain (no progress; goal streak 8) |
+| G65 | 419 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Gujarat vs Sindh square seals: no difference; seal texts uniform across regions (no progress; goal streak 9) |

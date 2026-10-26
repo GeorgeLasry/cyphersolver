@@ -12914,3 +12914,8 @@ names and headings, not single signs (`predict_test419.py`).
 - **GS2** At equal length Gujarat square seals differ in closing with 740 / 520 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-nineteenth set (`predict_test419.py`, `results/predict_test419.md`)
+
+Both failed. No sign skewed between Gujarat and Sindh square seals (172 / 2,443 tokens on C-train); endings alike
+(odds ratio 0.75, p = 0.40). With set 371, square-seal texts are uniform across Sindh, the north and Gujarat. Progress:
+none (goal streak 9). Tally, counting parts: 1622 held, 1606 failed (3230 registered).
