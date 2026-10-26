@@ -12759,3 +12759,14 @@ ICIT field 16 (cross-section: rectangular, triangular, round, plano-convex); unt
 Both failed. No sign is skewed between rectangular and other-section moulded tablets (308 / 215 tokens on C-train); the
 section-shape model gains 0.0014 (fixed) and 0.0001 (C). Progress: none (goal streak 11). Tally, counting parts: 1621
 held, 1588 failed (3209 registered).
+
+# Four-hundred-and-tenth set, registered before testing (26 October 2026): goal loop 56, M77 locality in seal-like and tablet-like texts (two hypotheses)
+
+Set 408: body-weighted, ICIT seals are not local but Mahadevan's texts are. M77 has no object types; 400 after the
+ending is the Harappa tablet formula (set 216), so lines with 400 stand for tablets, lines without for seals (roughly)
+(`predict_test410.py`; set 408's body-weighted statistic and shuffle).
+
+- **MB1** M77 lines without 400 are local (p < 0.05).
+- **MB2** M77 lines with 400 are local (p < 0.05).
+- Progress rule: MB1 holds.
+
