@@ -14080,3 +14080,8 @@ Square seals with a motif and a size; other animals against unicorn; Mantel-Haen
 - **OR2** Their texts are unique (on one seal only) more often (the converse of set 493; cannot count on its own).
 - Progress rule: OR1 holds.
 
+## Results of the four-hundred-and-ninety-fifth set (`predict_test495.py`, `results/predict_test495.md`)
+
+Both failed. Rare signs: odds ratio 0.91 (p = 0.71); unique texts: 1.74 (p = 0.085, set 494's trend). The animal does
+not go with rare signs; seal size does (set 488). Progress: none (goal streak 2). Tally, counting parts: 1661 held, 1713
+failed (3379 registered).
