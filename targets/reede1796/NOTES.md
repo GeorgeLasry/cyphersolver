@@ -1,6 +1,6 @@
 # Van Reede's code passages to the Hereditary Prince, 1796-1807 (KHA A35-1232, A32-549)
 
-Status: in progress
+Status: attempted, open (26 Oct 2026): the 1796 "Chiffre Litteral" is a book code and the book is unknown; the 1797-1801 list cannot be rebuilt from the few glosses
 
 Koninklijk Huisarchief, The Hague: A35-1232 (A.W. van Reede to the future Willem I, 1788-1814) and A32-549 (Van Reede
 to Princess Wilhelmina, 1796-1814). Found in the KHA sweep (research/nationaal_archief, leads K8/K9; pairing files
