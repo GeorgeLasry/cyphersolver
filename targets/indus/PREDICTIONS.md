@@ -14166,7 +14166,7 @@ Square seals with a motif and a size carrying 156, 400 or 590 (`predict_test501.
 ## Results of the five-hundred-and-first set (`predict_test501.py`, `results/predict_test501.md`)
 
 SG1 held, SG2 failed. The small-seal signs grade by size: median 22.1 with 156, 22.9 with 400, 25.4 with 590 (Kruskal-
-Wallis p = 0.0024). Not length-stratified; audited next. Phase: no difference (p = 0.18). Progress under the rule
+Wallis p = 0.0024). Not length-stratified; set 502: downgraded, largely text length. Phase: no difference (p = 0.18). Progress under the rule
 (goal streak 0). Tally, counting parts: 1669 held, 1717 failed (3391 registered).
 
 # Five-hundred-and-second set, registered before testing (26 October 2026): goal loop 148, audit of the small-seal size grade (two hypotheses)
@@ -14177,3 +14177,8 @@ Seals with 590 (and not 156) against seals with 156 (and not 590); above-median 
 - **GA2** The same within length band x site.
 - Progress rule: none (audit). Both failing downgrades set 501.
 
+## Results of the five-hundred-and-second set (`predict_test502.py`, `results/predict_test502.md`)
+
+Both failed (audit). Within length bands 590 seals are large more often than 156 seals (odds ratio 2.32, p = 0.31), with
+site too (2.58, p = 0.27). **Set 501 is downgraded**: the grade among the small-seal signs is largely text length.
+Progress: none (goal streak 1). Tally, counting parts: 1669 held, 1719 failed (3393 registered).
