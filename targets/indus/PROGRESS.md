@@ -284,3 +284,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G29 | 383 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | repeated seal texts: no more numerals; they end in 740/520 more often (OR 2.7): names or titles on several seals (no progress; goal streak 3) |
 | G30 | 384 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | rectangular vs square seals: 10 of 10 sign skews replicate; rectangular texts close with 740/520 half as often (known class, quantified) (progress; goal streak 0) |
 | G31 | 385 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa periods, like for like: no change in endings or heading (no progress; goal streak 1) |
+| G32 | 386 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | faience vs steatite seals (too few), incised vs moulded tablets (1 sign): nothing (no progress; goal streak 2) |

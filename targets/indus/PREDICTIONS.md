@@ -12321,3 +12321,8 @@ Skew test of set 371 (C-train Fisher p < 0.01, 10+ tokens; C-test 3+ tokens, 75%
 - **FM2** Incised (TAB:I) against moulded (TAB:B) tablets.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-sixth set (`predict_test386.py`, `results/predict_test386.md`)
+
+Both failed. Faience square seals are too few (17 tokens on C-train); incised and moulded tablets differ in one sign (32,
+incised), which does not replicate. The subtype gain of set 369 is in sign context, not in which signs are used.
+Progress: none (goal streak 2). Tally, counting parts: 1607 held, 1555 failed (3162 registered).
