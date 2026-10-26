@@ -11913,3 +11913,21 @@ counted, against 1,000 equal-sized samples of cross-family pairs (`predict_test3
   contexts against northern contexts) more than random northern signs do (p < 0.05): regional variants of one sign.
 - Progress rule: RA1 holds.
 
+## Results of the three-hundred-and-sixty-fifth set (`predict_test365.py`, `results/predict_test365.md`)
+
+Both failed. Only one same-family pair is split by region on A (700/705), no more than cross-family pairs (A p = 0.64;
+B none, p = 1.0), and its two members do not share contexts across the regions (cosine 0.047, p = 0.83). The regional
+signs of set 364 are separate signs, not a system of regional variants. Progress: none (goal streak 1, set 363
+pending). Tally, counting parts: 1595 held, 1520 failed (3115 registered).
+
+# Three-hundred-and-sixty-sixth set, registered before testing (25 October 2026): goal loop 12, bound phrases as a role (two hypotheses)
+
+Of the 13% of tokens with no tested role, many stand in fixed pairs (920 60 741, 550 527, 415 220, 590 390; looked at
+before registering). A pair is bound on A if it occurs in 5+ distinct lines and each sign predicts the other in 50%+ of
+its lines (`predict_test366.py`).
+
+- **RR1** 70%+ of A's bound pairs whose first sign has 3+ B lines stay bound on B (first sign followed by the second in
+  50%+ of its B lines).
+- **RR2** A 'bound phrase' role, for otherwise unroled tokens in an A-bound pair, raises R by 1 point or more.
+- Progress rule: RR1 and RR2 hold.
+
