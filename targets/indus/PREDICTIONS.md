@@ -13329,3 +13329,15 @@ p < 0.0001 both): the formula '705 / 706 33 520' is not appended after a 740 nam
 closing the name in the 520 class. The heading is not commoner with it (0.84, 1.56). Observation, not registered: the
 formula is a third way of closing a name, beside 740 and plain 520, used on large seals (set 441). Progress: none (goal
 streak 4). Tally, counting parts: 1636 held, 1641 failed (3281 registered).
+
+# Four-hundred-and-forty-sixth set, registered before testing (26 October 2026): goal loop 92, the name before the closing formula (two hypotheses)
+
+Set 445: the formula 705 / 706 33 520 takes the place of the 740 ending. If it closes a name of the 520 class, the sign
+before it should look like a 520-name head. Distinct lines, A and B (`predict_test446.py`).
+
+- **FH1** The sign before the formula is a fish (ICIT 220-249) more often than the sign before 740 (Fisher one-sided
+  p < 0.05, A and B).
+- **FH2** It is a 520-class head (3+ tokens before an ending, 50%+ of them before 520; own sample) more often than the
+  sign before 740 (A and B).
+- Progress rule: either holds.
+
