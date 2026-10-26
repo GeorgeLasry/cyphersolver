@@ -13835,3 +13835,7 @@ size alone. Progress: none (goal streak 9). Tally, counting parts: 1654 held, 16
 - **PU2** They differ in carrying the short-stroked U 702 / 703 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-ninth set (`predict_test479.py`, `results/predict_test479.md`)
+
+Both failed: plain 700 leans small (odds ratio 0.28, p = 0.18; rare on sized seals), 702 / 703 1.56 (p = 0.80). Progress:
+none (goal streak 10). Tally, counting parts: 1654 held, 1688 failed (3347 registered).

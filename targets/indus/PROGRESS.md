@@ -378,3 +378,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G122 | 476 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | stroked jars and mid-line 2/60 not size-linked (no progress; goal streak 7) |
 | G123 | 477 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | bare texts and fish-first texts not size-linked (no progress; goal streak 8) |
 | G124 | 478 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | thickness: closing formula on thick seals (OR 3.6); doubles not (consistency; no progress; goal streak 9) |
+| G125 | 479 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | plain U leans small (rare, n.s.); 702/703 nothing (no progress; goal streak 10) |
