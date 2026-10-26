@@ -417,3 +417,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G161 | 515 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tablet copies share the Harappa period: moulded (p = 0.001), incised (p = 0.049) (progress; goal streak 0) |
 | G162 | 516 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: incised-copy period effect was the find-spot (withdrawn); moulded copies hold (mould batches) (audit; no progress; goal streak 1) |
 | G163 | 517 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | stricter progress bar from here (p < 0.01 or two samples); moulded copies share the picture: re-finding of the referent work (no progress; goal streak 2) |
+| G164 | 518 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs 2 / 3 by seal size: 2 OR 1.13 p 0.459, 3 OR 0.86 p 0.633 (no progress; goal streak 3) |
