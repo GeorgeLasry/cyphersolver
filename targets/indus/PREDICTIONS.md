@@ -14762,3 +14762,7 @@ Lines with two numerals not adjacent (values from numerals.NUMS), unequal values
   direction found on A is registered as the prediction for B.
 - **NO2** B shows the same direction (binomial p < 0.05).
 - Progress rule: NO1 and NO2.
+
+## Results of set 543 (`hyp_s2_numorder.py`, `results/predict_test543.md`)
+
+Held: NO1. A larger-first 75 vs 117; B 30 vs 38. Progress: none (session-2 goal streak 8).
