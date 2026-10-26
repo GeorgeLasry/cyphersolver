@@ -3264,7 +3264,8 @@ Second run of the owner's two-hypothesis loops (`mydriver.py`, `runbatch.sh`, `s
 run (G1-G181) ended. Surviving findings: short labels (X + ending) use different heads from long texts, also within
 square seals (551, 553); numbers 1-3 count fish and 803 / 806, numbers 4+ count 390 405 407 575 585 900 (552, 553, 563);
 large-number units stand at the line end in every length band (562, 564). Withdrawn on audit: long-distance pairs (545:
-repeated phrases), rare signs in long lines (578: length). S context features (569-572) add nothing. Streak 20 at set 582.
+repeated phrases), rare signs in long lines (578: length). S context features (569-572) add nothing. Substitution pairs (584-613): 892 fills the slots of the U sign 700 (593,
+audited 614); no other of 58 frequent pairs does once numeral contexts are dropped. Streak 20 logged at set 613 (after set 593).
 
 ## Limitations
 

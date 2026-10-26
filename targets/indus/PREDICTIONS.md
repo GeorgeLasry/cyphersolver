@@ -15550,8 +15550,9 @@ Held: none. SA1 False, SA2 False (audit of set 593). Progress: none (session-2 g
 
 ## Correction to set 593 (after the set 598 audit)
 
-61 and 575 share contexts only through the numeral before them (with numeral contexts dropped, cosine 0 on A and B):
-set 593's progress is withdrawn. The substitution series continues from set 599 with signs ranked 61-120 and numeral
+**Void (corrected after set 614):** set 598 audited 61 / 575 by mistake; set 593's replicated pair was 892 / 700 (the
+pair list was read off by one). The 61 / 575 result stands only as a note on that pair (it shares contexts only through
+the numeral before it). Set 593's progress was not withdrawn. The substitution series continues from set 599 with signs ranked 61-120 and numeral
 contexts dropped.
 
 
@@ -15777,3 +15778,9 @@ Set 593 found 892 and 700 share (previous, next) contexts. Set 598 audited 61 / 
 ## Results of set 614 (`hyp_s2_subaudit2.py`, `results/predict_test614.md`)
 
 Held: SA1, SA2. SA1 True, SA2 True (audit of set 593). Progress: none (session-2 goal streak 21).
+
+## Set 614 result note and end of the session-2 run
+
+The corrected audit (set 614): 892 and 700 share (previous, next) contexts with numeral contexts dropped, on A (cosine
+0.210, p = 0.002) and B (0.157, p = 0.002). **892 substitutes for the U sign 700**: set 593 stands as progress. The
+session-2 streak after it runs 1 (set 594) to 20 (set 613) as logged, 21 with set 614: the session-2 goal run stops.
