@@ -14328,3 +14328,12 @@ so about one such hit is expected by chance; 692 does not pass a correction for 
 430's scan at p < 0.01 did not pick it. Recorded as a probable false positive, not progress, although the registered P
 line reads 'holds'; the single-sign series is stopped here. Progress: none (goal streak 12). Tally, counting parts:
 1670 held, 1740 failed (3415 registered).
+
+# Five-hundred-and-fourteenth set, registered before testing (26 October 2026): goal loop 160, 692 on two halves (two hypotheses)
+
+Set 513's 692 hit, on two random halves (`predict_test514.py`).
+
+- **H692a** 692 leans to large seals in half 1 (p < 0.05).
+- **H692b** The same in half 2.
+- Progress rule: none (replication). Both holding would reinstate 692 as a large-seal sign.
+
