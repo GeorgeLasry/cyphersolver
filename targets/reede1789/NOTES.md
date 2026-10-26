@@ -49,21 +49,43 @@ CT with every mark and its digit, PT the decipherment, AL a first alignment). `t
 - **Solid 4-digit pages 1792-95** (17 Jan 1792 page, first 23 groups): every fixed offset -2000..2000 onto the
   table; best 9 of 23 groups, nonsense. A third code, no key in the file.
 
+## The "numbers in text" pages (25 Oct, second pass)
+
+The 47 pages flagged "numbers in text" were transcribed with their clear context (`BRIEF2.md`, `unglossed_a.txt`,
+`unglossed_b.txt`; 150 runs, about 1,100 groups). They are not unglossed: 8 have no cipher, and on the other 39
+nearly every run has the contemporary decipherment written over it (15 fully glossed in part b, 20 in part a). The
+1789-92 letters to Wilhelmina were read at the time, run by run.
+
+- **Held-out test of `table.tsv`** (`validate.py`, table built only from pairs_a/b): of the confident decoded values
+  (2+ letters), 62% are found in their own run's gloss against 10% in an unrelated run's gloss (159 runs, 456
+  values); on the odd half alone 64% vs 8%. The table is right in structure but noisy on syllable groups.
+- **Auto-alignment** of the new glossed runs (`align.py`, DP split of the gloss anchored on table values) and a
+  2-fold retrain left the held-out score unchanged (63%): the ceiling is the noise in the agents' hand alignments
+  and mark readings, not the amount of data. Not kept (pairs_auto.txt removed).
+- **Partly glossed runs** (`reading_unglossed.txt`): the unglossed remainders (170524 run 2, 170701 runs 1 and 4,
+  170885, 170946, 171240 run 2) do not read with the table. On 171240 the gloss "Bischofswerder veut moissoner des
+  lauriers ne ... hazarde" agrees with the table at both ends (3583 = 3 + 583 Bi(schofswerder); 342 = hazarder).
+  182 97 56 = "citron" and 152 97 56 = "invisible": the postscript signals for lemon-juice text.
+
 ## Remaining gaps
 
 - R1893: not read; blocker: no-key-material (a different marked code; not the 1789-92 table).
 - Solid 4-digit pages of 1792-95 (171282, 171359, 171376, 171405, 179084, 171596, 171534, 171548, 171568-69): not
   read; blocker: no-key-material.
-- The 1789-92 table: about 140 numbers below 60% agreement; the alignments are first passes.
+- The 1789-92 table: about 140 numbers below 60% agreement; held-out precision 62% (10% chance). The letters
+  themselves were deciphered at the time; only short unglossed remainders (six runs) are unread, blocker: too
+  short and the table too noisy on syllables.
 
 ## Escalation
 
 - [x] siblings: the glossed 1789-92 letters used to rebuild the table
 - [x] known-keys: R1024 Grand Chiffre and the 1789-92 table (with offsets) tried on the solid pages; table on R1893
-- [ ] retry: use the table to read the unglossed 1789-92 number passages ("numbers in text" in flags_a32.tsv)
+- [x] retry: the "numbers in text" pages transcribed; nearly all glossed at the time; table validated on them
+  (62% vs 10%); auto-alignment retrain gave no gain
 - [ ] print: Colenbrander Gedenkstukken I-II for Van Reede's 1792-95 despatches (would give cribs for the solid pages)
 
 ## Log
 
 - 25 Oct 2026: target opened; 37 glossed pages transcribed; table voted (table.tsv); R1893 and the solid 1792-95
-  pages tested and not read.
+  pages tested and not read. Later: 47 'numbers in text' pages transcribed, found glossed at the time;
+  table validated held-out; auto-alignment tried, no gain.

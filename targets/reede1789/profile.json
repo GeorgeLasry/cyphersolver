@@ -158,6 +158,36 @@
    "what": "R1024 Grand Chiffre and the table under every offset -2000..2000 on the first 23 groups of the 17 Jan 1792 solid page: nonsense (best 9/23).",
    "result": "failed",
    "date": "2026-10-25"
+  },
+  {
+   "kind": "transcription",
+   "what": "47 'numbers in text' pages transcribed with clear context (unglossed_a.txt, unglossed_b.txt; 150 runs, about 1,100 groups): 8 without cipher, nearly all runs on the rest glossed at the time.",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out test of the vote table on the newly transcribed glossed runs: 62% of confident decoded values found in the run's own gloss vs 10% in an unrelated run's (159 runs, 456 values).",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding"
+   ],
+   "what": "DP alignment of the new glossed runs anchored on table values, 2-fold retrain: held-out precision unchanged (64% -> 63%). Not kept.",
+   "result": "failed",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "Table applied to the six partly glossed remainders (170524, 170701, 170885, 170946, 171240): no readable text; 171240 agrees with its gloss at both ends (Bischofswerder ... hazarder).",
+   "result": "failed",
+   "date": "2026-10-25"
   }
  ],
  "outcome": {
@@ -172,6 +202,6 @@
   "verification": [
    "contemporary decipherment"
   ],
-  "notes": "Table not yet used to read unglossed 1789-92 passages."
+  "notes": "The 1789-92 letters were deciphered at the time (interlinear glosses on nearly every run); the table rebuilt here scores 62% held-out precision (10% chance). R1893 and the 1792-95 solid pages are in other codes."
  }
 }
