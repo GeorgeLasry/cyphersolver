@@ -13391,3 +13391,8 @@ Set 446 (replicated on B): fish + 705 / 706 + 33 + 520 is the long form of fish 
 - **LR2** The long form is a larger share of fish names (fish + 520) on seals than on tablets (Fisher one-sided p < 0.05).
 - Progress rule: LR1 holds.
 
+## Results of the four-hundred-and-forty-ninth set (`predict_test449.py`, `results/predict_test449.md`)
+
+LR1 failed, LR2 held. The pattern's 705 / 706 and 33 already have roles (closer, numeral): R is unchanged (0 tokens).
+The long form is a seal form: 23 long against 62 short fish names on seals, 0 against 11 on tablets (p = 0.040).
+Progress: none (goal streak 3). Tally, counting parts: 1640 held, 1645 failed (3289 registered).
