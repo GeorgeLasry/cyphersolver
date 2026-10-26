@@ -14011,3 +14011,13 @@ Square seals with identical texts of 2+ signs (`predict_test491.py`).
 - **CT2** At Mohenjo-daro, copies share the motif (field 18) more than with motifs shuffled among the site's seals.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-ninety-first set (`predict_test491.py`, `results/predict_test491.md`, `predict_test491_control.py`)
+
+CT1 failed, CT2 held. Thickness of copies: spread 0.94 over 10 groups, not tighter than same-length same-site draws
+(p = 0.19). At Mohenjo-daro, copies share the motif in 38 of 41 pairs (p = 0.001). Audit (not registered): dropping 2
+pairs with identical dimensions (possible double records) leaves 36 of 39 (p = 0.001); with motifs shuffled only among
+seals of the same text length, p = 0.001 (unicorns are 79% of these seals, copies share 92%). **At Mohenjo-daro, seals
+with the same text carry the same animal**, beyond chance, length and double records; set 381's pooled test across
+sites (63%, p = 0.079) was weaker. So the text is independent of the animal across seals in general (sets 382, 404),
+but a given text was cut with a given animal. Progress (goal streak 0). Tally, counting parts: 1659 held, 1707 failed
+(3371 registered).
