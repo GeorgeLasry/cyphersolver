@@ -14809,3 +14809,13 @@ A sign is 'counted' on A if 50%+ of its tokens (8+) follow a numeral, a 'head' i
 ## Results of set 546 (`hyp_s2_counted.py`, `results/predict_test546.md`)
 
 Held: CH2. counted 6 / heads 18, overlap 2; counted rarely heads on B 3/5; the roles (set 176) already separate them: consistency. Progress: none (session-2 goal streak 1).
+
+
+# Set 547, registered before testing (26 October 2026): session-2 goal loop 12, numeral-first lines lack endings (two hypotheses)
+
+(`hyp_s2_numfirst.py`)
+
+- **NF1** On A, lines opening with a numeral contain 740 / 520 less often than other lines of the same length band
+  (Mantel-Haenszel-like: Fisher within bands, all bands same direction and pooled Fisher p < 0.05).
+- **NF2** The same on B.
+- Progress rule: NF1 and NF2, unless the count genre (sets 215-219) already establishes it: then consistency.
