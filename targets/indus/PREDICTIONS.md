@@ -15233,3 +15233,12 @@ Held: Q2. openers: [False, True]. Progress: none (session-2 goal streak 13).
 ## Results of set 576 (`hyp_s2_q_noend.py`, `results/predict_test576.md`)
 
 Held: Q1, Q2. noend: [False]. Progress: none (session-2 goal streak 14).
+
+
+# Set 577, registered before testing (26 October 2026): session-2 goal loop 42, rare signs stand mid-line (two hypotheses)
+
+(`hyp_s2_r.py`, VARIANT=rarepos). Rare = 3 or fewer tokens in the sample.
+
+- **R1** On A: rare signs stand mid-line (p < 0.05).
+- **R2** The same on B.
+- Progress rule: R1 and R2.
