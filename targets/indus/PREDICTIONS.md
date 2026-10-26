@@ -12973,3 +12973,10 @@ objects)? Square seals with a size, median split, Mantel-Haenszel over length ba
 - **ST2** Small-seal whole texts occur as tablet lines more often (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-twenty-third set (`predict_test423.py`, `results/predict_test423.md`)
+
+ST1 failed, ST2 held. Name bodies of small seals are not on tablets more often (odds ratio 1.43, p = 0.23), but whole
+small-seal texts are, about twice as often as large-seal texts at equal length (2.12, p = 0.027). With set 380 (small
+seals repeat texts on other seals), the formulaic texts of small seals are the ones also written on tablets: the
+generic seal texts and the tablet records share a repertoire. A single test on all the data (no held-out sample).
+Progress (goal streak 0). Tally, counting parts: 1623 held, 1611 failed (3238 registered).
