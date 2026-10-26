@@ -12569,3 +12569,9 @@ split C. A timing run on 40 fixed-test lines (plain only: 0% / 6.3% of 16 names)
 - **WT2** WORD top-1 rises on both.
 - Progress rule: WT1 holds (the WORD benchmark moves).
 
+## Results of the three-hundred-and-ninety-eighth set (`predict_test398.py`, `results/predict_test398.md`)
+
+WT1 held, WT2 failed. WORD top-10: fixed split 3.4% -> 4.7% (232 names; +3 names), split C 0.0% -> 0.5% (211 names; +1
+name). Top-1 stays 0% on both. The WORD benchmark moves as registered, but by four names in all: the domain models help
+the guess of a hidden name only marginally. Tier 6 now 0% / 4.7%. Progress (goal streak 0). Tally, counting parts:
+1619 held, 1568 failed (3187 registered).
