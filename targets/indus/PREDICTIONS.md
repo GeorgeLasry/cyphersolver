@@ -15027,3 +15027,7 @@ Fish signs (220-259) directly followed by an ending; counted (a numeral before t
 - **CF1** On A the 520 share differs between counted and uncounted fish (Fisher p < 0.05); direction is B's prediction.
 - **CF2** Same direction on B (one-sided p < 0.05).
 - Progress rule: CF1 and CF2.
+
+## Results of set 561 (`hyp_s2_countedfish.py`, `results/predict_test561.md`)
+
+Held: none. A counted 520 18/44 vs 58/112; B 3/6 vs 14/33. Progress: none (session-2 goal streak 9).
