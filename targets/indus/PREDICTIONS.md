@@ -14851,3 +14851,7 @@ that follows other line-initial signs of matched frequency (`hyp_s2_afteropen.py
   first signs (p < 0.05).
 - **AO2** The same on B.
 - Progress rule: AO1 and AO2, unless sets 230-279 (heading unit, its second sign) already fix it: consistency.
+
+## Results of set 549 (`hyp_s2_afteropen.py`, `results/predict_test549.md`)
+
+Held: AO1, AO2. A True, B True; the heading unit (sets 230-279) covers it: consistency. Progress: none (session-2 goal streak 4).
