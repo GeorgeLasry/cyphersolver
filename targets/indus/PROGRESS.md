@@ -389,3 +389,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G133 | 487 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numeral + 520 leans large (the formula); post-ending 90 not size-linked (no progress; goal streak 18) |
 | G134 | 488 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | large seals carry rare signs more often (OR 1.45, p = 0.028, length x site held) (progress; goal streak 0) |
 | G135 | 489 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | rare signs on large seals: same direction in two halves, significant in one (replication; no progress; goal streak 1) |
+| G136 | 490 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | copies of a seal text: same phase a trend (13 of 19), workmanship no (no progress; goal streak 2) |

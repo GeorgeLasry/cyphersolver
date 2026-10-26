@@ -13998,3 +13998,7 @@ Clean ICIT seals with texts of 2+ signs; pairs of seals with the identical text;
 - **CP2** Copies share the workmanship grade (field 22) more than chance (made in one workshop).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-ninetieth set (`predict_test490.py`, `results/predict_test490.md`)
+
+Both failed. Mohenjo-daro copies share the phase in 13 of 19 pairs (p = 0.063); workmanship in 52 of 190 (p = 0.88).
+Progress: none (goal streak 2). Tally, counting parts: 1658 held, 1706 failed (3369 registered).
