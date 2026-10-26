@@ -14094,3 +14094,8 @@ Set 488 had no motif strata (`predict_test496.py`).
 - **RA2** The same within unicorn seals alone.
 - Progress rule: none (audit). Both failing downgrades set 488.
 
+## Results of the four-hundred-and-ninety-sixth set (`predict_test496.py`, `results/predict_test496.md`)
+
+RA1 held, RA2 failed narrowly (audit). With motif in the strata: odds ratio 1.48 (p = 0.029); within unicorn seals 1.47
+(p = 0.052). Set 488 is not the animal: the size effect on rare signs keeps its size with motif held. Progress: none
+(goal streak 3). Tally, counting parts: 1662 held, 1714 failed (3381 registered).
