@@ -12251,3 +12251,20 @@ Set 381 found the motif missing for F-only lines. Redone from record field 18 fo
   lean the same way on C-test in 75%+ of cases (binomial p < 0.05).
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-second set (`predict_test382.py`, `results/predict_test382.md`, `predict_test3820.md`)
+
+Both failed. With the motif read from field 18 for every object, the motif domain model takes weight 0 on the fixed
+split and nothing on C, and on square seals no sign is skewed between unicorn and other-animal seals at p < 0.01. **On
+square seals the text does not depend on the animal**: the earlier motif gains (set 357) were object type. Progress:
+none (goal streak 2). Tally, counting parts: 1605 held, 1549 failed (3154 registered).
+
+# Three-hundred-and-eighty-third set, registered before testing (26 October 2026): goal loop 29, what the repeated texts are (two hypotheses)
+
+Set 380: small square seals carry repeated texts, mostly of two signs. Clean ICIT square seals (`predict_test383.py`).
+
+- **TW1** Two-sign texts found on 2+ square seals contain a numeral more often than two-sign texts found once (Fisher
+  one-sided p < 0.05): the repeated short texts are counts or labels.
+- **TW2** At equal length (Mantel-Haenszel over length bands), repeated texts end in the ending 740 / 520 less often than
+  unique texts (p < 0.05): repeated texts are not personal names.
+- Progress rule: either holds.
+
