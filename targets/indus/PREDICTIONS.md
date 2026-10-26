@@ -14766,3 +14766,13 @@ Lines with two numerals not adjacent (values from numerals.NUMS), unequal values
 ## Results of set 543 (`hyp_s2_numorder.py`, `results/predict_test543.md`)
 
 Held: NO1. A larger-first 75 vs 117; B 30 vs 38. Progress: none (session-2 goal streak 8).
+
+
+# Set 544, registered before testing (26 October 2026): session-2 goal loop 9, numeral directly before an ending (two hypotheses)
+
+How often a numeral stands directly before 740 / 520, against 500 within-line shuffles (`hyp_s2_numend.py`).
+
+- **NE1** On A numerals stand before an ending less often than in shuffles (p < 0.05): a count does not take the
+  ending; the ending attaches to a word.
+- **NE2** The same on B.
+- Progress rule: NE1 and NE2, unless a past set already established it (then consistency).
