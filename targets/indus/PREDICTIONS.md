@@ -16094,3 +16094,21 @@ parallels, the graffiti do not combine their signs as the Indus texts do**: the 
 (the parallels), not in sign order or sign pairs, consistent with set 204's weaker order structure. Limits: 23 of 42
 base signs map to ICIT; composites (ligatures) left out; the mapping is by shape. Progress: none. Tally, counting parts:
 3 failed added.
+
+# Set 636, registered before testing (26 October 2026): number-size units on objects, and 892 against the U sign 700 (five hypotheses)
+
+Follow-ups of sets 552 / 562 (numbers 1-3 count 176 233 235 240 61 803 806; numbers 4+ count 390 405 407 575 585 900,
+which stand at the line end) and of set 593 (892 fills the slots of 700). Clean ICIT objects with their records (type,
+motif, site); replication across the two cities instead of B, which has no object types (`predict_test636.py`).
+Looked at before registering: 892 almost never follows a numeral (4 of 62 tokens) while 700 mostly does (370 of 424),
+so '892 takes long-stroke counts like 700' is already answered, no; 892 is compared with 700's uncounted uses only.
+
+- **CU1** Large-number units stand on tablets more often than small-number units, at Harappa and at Mohenjo-daro
+  (Fisher p < 0.05 each).
+- **CU2** Large-number units take long-stroke numerals more often, in both cities.
+- **CU3** On tablets, large-number units stand on unpictured tablets more often (records rather than picture labels), in
+  both cities.
+- **U1** 892 is spread over object kinds like uncounted 700, more than 300 random signs of similar frequency (p < 0.05).
+- **U2** 892 is followed by the same signs as uncounted 700, beyond random signs (p < 0.05).
+- Progress rule: CU1 or CU3 holds, or U1 and U2 both hold.
+
