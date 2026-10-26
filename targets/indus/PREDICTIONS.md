@@ -13811,3 +13811,13 @@ Tally, counting parts: 1653 held, 1683 failed (3341 registered).
 
 Both failed: texts without an ending odds ratio 1.05 (p = 0.78); fish-first texts 0.80 (p = 0.42). Progress: none (goal
 streak 8). Tally, counting parts: 1653 held, 1685 failed (3343 registered).
+
+# Four-hundred-and-seventy-eighth set, registered before testing (26 October 2026): goal loop 124, formula and doubles by thickness (two hypotheses)
+
+The size findings used the first dimension (and set 430 the second). Thickness (ICIT field 33) as the size measure,
+same strata (`predict_test478.py`).
+
+- **TH1** Thick seals carry the closing formula more often (set 441).
+- **TH2** Thin seals carry doubled signs more often (set 469).
+- Progress rule: none (a further dimension for findings already made).
+
