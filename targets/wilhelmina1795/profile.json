@@ -1,0 +1,211 @@
+{
+ "schema_version": 1,
+ "target": "wilhelmina1795",
+ "title": "The Hereditary Prince's cipher letters to Wilhelmina, Berlin 1795-97 (KHA A32-630, 'Anciens dechiffrements'); includes DECODE R2236",
+ "documents": [
+  {
+   "id": "A32-630 1795-96",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A32 Wilhelmina, inv. A32-630, scans 1-194",
+   "date": "1795-10-24/1796-09-14",
+   "year": 1795,
+   "country": "Prussia",
+   "route": "Willem Frederik, Hereditary Prince (Berlin, Brunswick) -> Wilhelmina (England)",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate folio"
+    ],
+    "source": "Contemporary interlinear decipherments on 65 pages; Wilhelmina's clear write-ups 'Chiffre de Guillaume du ...'."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "KHA renditions (original size); pairs_a.txt, pairs_b.txt",
+    "image_quality": "fair",
+    "notes": "Many groups struck through after deciphering; alignments rough (agents' own warning)."
+   }
+  },
+  {
+   "id": "A32-630 1797",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A32 Wilhelmina, inv. A32-630, scans 195-387",
+   "date": "1796-09-24/1797-08-01",
+   "year": 1797,
+   "country": "Prussia",
+   "route": "Hereditary Prince (Berlin) -> Wilhelmina",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate folio"
+    ],
+    "source": "Interlinear pencil decipherments and write-ups; a few letters undeciphered (scans 264, 266, 272, 328, 333, 365)."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Indexed only (index_b.tsv)",
+    "image_quality": "fair",
+    "notes": "Larger list (entries to about 720, '0' separators); from 29 Apr 1797 4-digit groups."
+   }
+  },
+  {
+   "id": "R2236",
+   "shelfmark": "KHA (DECODE R2236, catalogued under Prins Willem V inv. 337); same text as A32-630 scans 89, 264, 269-270, 272",
+   "date": "1797-03-20",
+   "year": 1797,
+   "country": "Prussia",
+   "route": "Hereditary Prince -> Wilhelmina (copies 'No. 1', 'No. 2')",
+   "language": "Dutch",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment found in A32-630; Wilhelmina's precis of 23 Mar 1797 (scans 274-275) read the companion letter only in part."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Viewed only",
+    "image_quality": "good",
+    "notes": "Copie No. 1 numbers up to about 391; scan 89 numbers up to about 2800."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "other"
+  ],
+  "summary": "Euler word-list code: numbered list of words and names in alphabetical runs; a group is a whole entry, chosen letter positions of an entry, or an entry cut by k letters at the front (k)N) or back (N^k). 1795-96 list of about 250 entries; 1797 list larger.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "phrases"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial",
+  "doubled_letters": "unknown",
+  "sibling_key": "hereditary1796 (R2237/R2239, same 1795-96 list)",
+  "notes": "From June 1796 many letters carry dummy number pages over lemon-juice text ('les chiffres qui suivent ne disent rien'); those are left out."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary decipherments in the file itself; some letters printed in Colenbrander, Gedenkstukken II (1906)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Lead chosen by the user from the KHA sweep; user asked to pair cipher pages with write-ups, rebuild the list and retry R2236.",
+  "tools": [
+   "KHA rendition API (curl)",
+   "PIL crops",
+   "merge.py / vote.py majority-vote list builder (python)",
+   "DECODE filesrv download"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-25",
+  "last_date": "2026-10-25"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched all 387 KHA scans of A32-630 and R2236's four DECODE images.",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "transcription",
+   "what": "Two agents indexed every scan (kind, date, decipherment present): index_a.tsv, index_b.tsv.",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "R2236 'Copie No. 1' compared with A32-630 scan 269: same text, same line breaks; R2236 = scans 89, 264, 269-270, 272.",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "transcription",
+   "what": "Two agents transcribed the 65 interlined 1795-96 pages as cipher runs with the decipherment above and a group alignment (pairs_a.txt, pairs_b.txt; about 1,360 runs, 12,500 groups).",
+   "result": "partial",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Strict table build from the alignments gave thousands of conflicts (marks dropped or misread on struck-through groups); rebuilt instead by majority vote per letter position (vote.py): 245 entries, 145 clean, same list as R2237 (10 angleterre, 11 berlin, 15 france, 162 elgin, 169 haugwitz). key_euler.tsv.",
+   "result": "partial",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "hypothesis",
+   "what": "R2236 Copie No. 1 (numbers to 391) and scan 89 (to 2800) fall outside the 1795-96 list; the 1797 letters use a larger list (entries to about 720, '0' separators), which is the one to rebuild before retrying R2236.",
+   "result": "partial",
+   "date": "2026-10-25",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Work in progress: the 1795-96 list is rebuilt from contemporary decipherments; R2236 not yet attacked with the 1797 list.",
+  "contribution": [
+   "transcription",
+   "sender or date identified"
+  ],
+  "class": "unknown",
+  "fraction_read": "unknown",
+  "verification": [],
+  "notes": "R2236 identified as copies in A32-630 (20 Mar 1797)."
+ }
+}
