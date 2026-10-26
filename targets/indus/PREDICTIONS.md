@@ -13649,3 +13649,7 @@ bands, texts with the formula (705 / 706 + 33) against the rest (`predict_test46
 - **RL2** On all seals, the same.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-sixty-sixth set (`predict_test466.py`, `results/predict_test466.md`)
+
+Both failed. Square seals: no formula text recurs (odds ratio 0, p = 0.41, few cases); all seals: 2.51 (p = 0.23), the
+other way. Progress: none (goal streak 7). Tally, counting parts: 1649 held, 1669 failed (3322 registered).
