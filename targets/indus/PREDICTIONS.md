@@ -13181,3 +13181,12 @@ seals with a size, not length-stratified):
 Both failed. Stroked jars: median 27.9 (149 seals) against 26.7 (519), p = 0.22; caged fish 27.4 (47) against plain fish
 28.0 (390), p = 0.76. The size step of set 433 belongs to the U family alone. Progress: none (goal streak 2). Tally,
 counting parts: 1633 held, 1624 failed (3261 registered).
+
+# Four-hundred-and-thirty-sixth set, registered before testing (26 October 2026): goal loop 82, one-sided against multi-sided tablets (two hypotheses)
+
+ICIT field 21 (number of sides: 1, 2, 3, 4). Set 371's skew test on split C (`predict_test436.py`).
+
+- **SD1** Moulded tablets with one side against two or more.
+- **SD2** Incised tablets with one side against two or more.
+- Progress rule: either holds.
+
