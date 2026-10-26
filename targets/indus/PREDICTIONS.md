@@ -14282,3 +14282,7 @@ Both failed: 368 odds ratio 1.80 (p = 0.10); 342 absent from sized motif seals (
 - **S527** They differ in carrying 527 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-tenth set (`predict_test510.py`, `results/predict_test510.md`)
+
+Both failed: 550 odds ratio 0.94 (p = 0.99); 527 0.86 (p = 0.92). Progress: none (goal streak 9). Tally, counting parts:
+1669 held, 1735 failed (3409 registered).
