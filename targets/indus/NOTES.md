@@ -3335,6 +3335,8 @@ Done as set 635: the graffiti pairs are no more Indus-like than under shuffled m
 pairings (p = 0.14), and graffiti order does not follow Indus order (14 of 32). The likeness is in sign shapes only.
 Set 637: graffiti with an Indus parallel are not deeper within their sites (0.497 vs 0.513 depth rank). The book
 (Rajan & Sivanantham 2025) matches by shape only, prints no concordance and dates no graffiti layer: data/graffiti/book/SUMMARY.md.
+Set 639 (chance rate, blind scorers): exact graffiti-Indus parallels 5-6 of 42, unrelated scripts 2-11 of 42; the
+book's ~60% is the loose level, which Cypro-Minoan also reaches (64%). The 638-639 checks close the book's claims.
 
 ## Audit (25 Sept 2026): part-transcriptions in the referent phrases
 

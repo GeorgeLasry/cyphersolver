@@ -21,4 +21,5 @@ PDF and text extract kept locally in this folder (git-ignored). Read 26 Oct 2026
 
 Tested here: set 635 (graffiti pairs through their parallels: not Indus-like), set 637 (Indus-parallel graffiti not
 deeper within sites). Set 638: the positional claims on the Indus side (jar = line-final ending, leftmost; ladder 6 of 15 initial, p = 0.06;
-wavy line never alone but untestable). Open: the chance rate of shape parallels for simple geometric signs.
+wavy line never alone but untestable). Set 639: the chance rate. Against 90-sign samples, Indus gives 5-6 exact parallels of 42, unrelated scripts 2-11;
+at the loose level (exact + near) Indus 57%, Cypro-Minoan 64%: the book's ~60% is what simple marks find in any list.

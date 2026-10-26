@@ -16197,3 +16197,17 @@ The four registered scorers differ in strictness (scorer P reports ignoring poin
 audit, registered before it is run: one new scorer judges all four sheets in one pass, in the order R, P, S, Q, with the
 same standard; its counts are reported beside the registered ones and decide nothing on their own (SP1 / SP2 are
 scored on the registered four). Output data/shapes/score_one_<L>.tsv.
+
+## Results of set 639 (`score639.py`, `results/predict_test639.md`, data/shapes/score_*.tsv)
+
+Both failed. Registered scorers (one per inventory), exact parallels among the 42 graffiti base signs: Indus 5,
+Cypro-Minoan 11, Linear B 4, Linear A 2; Indus against the controls pooled 5 of 42 against 17 of 126, p = 0.69, and
+below Cypro-Minoan (SP1). The controls average 13.5% (SP2 needed 20%). Audit (one scorer for all four, constant
+strictness): Indus 6, Cypro-Minoan 3, Linear B 2, Linear A 2; 6 of 42 against 7 of 126, p = 0.072, above each control
+but not significant. Exact plus near (the looser level): Indus 24 of 42 (57%), Cypro-Minoan 27 (64%), Linear B 16,
+Linear A 6. **The book's 'about 60%' corresponds to the loose level, which an unrelated script (Cypro-Minoan) reaches as
+well; under a strict standard about one graffiti base sign in seven has an exact Indus parallel in a 90-sign sample,
+not clearly more than in unrelated scripts.** The parallels are what simple marks (Y, U, circle, cross, hourglass,
+vertical stroke) find in any sign list. Caveats: 90-sign samples, not the full Mahadevan list (more signs give more
+matches for every inventory); scorer strictness varies (registered scorer P lenient); blinding imperfect. Progress:
+none.
