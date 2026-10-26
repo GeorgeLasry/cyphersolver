@@ -13283,3 +13283,13 @@ Both failed. '33 520' without a stroked U before it is too rare on sized square 
 ratio, p = 1.0): the unit almost always follows 705 / 706. On rectangular seals the formula leans large (11 of 122
 against 5 of 126, p = 0.086). Progress: none (goal streak 1). Tally, counting parts: 1636 held, 1635 failed (3275
 registered).
+
+# Four-hundred-and-forty-third set, registered before testing (26 October 2026): goal loop 89, the closing formula by city and animal (two hypotheses)
+
+Square seals (clean ICIT objects); formula = 705 / 706 directly followed by 33; Mantel-Haenszel over length bands
+(`predict_test443.py`).
+
+- **FC1** Mohenjo-daro and Harappa seals differ in carrying the formula (two-sided p < 0.05).
+- **FC2** Other-animal and unicorn seals differ in carrying it (two-sided p < 0.05).
+- Progress rule: either holds.
+
