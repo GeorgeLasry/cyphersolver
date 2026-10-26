@@ -14876,3 +14876,13 @@ commonest middle string covers under half of their A lines (open slot) (`hyp_s2_
 ## Results of set 550 (`hyp_s2_frames.py`, `results/predict_test550.md`)
 
 Held: FR1. frames 117, testable 91, positive on B 44. Progress: none (session-2 goal streak 15).
+
+
+# Set 551, registered before testing (26 October 2026): session-2 goal loop 16, heads of short and long lines (two hypotheses)
+
+Head = sign before an ending. Heads in two-sign lines (X + ending) against heads in lines of 5+ signs; cosine of the two
+head distributions, against 500 random splits of the same head tokens into groups of the same sizes (`hyp_s2_shortheads.py`).
+
+- **SH1** On A the cosine is lower than the random splits (p < 0.05): short labels name different things than long texts.
+- **SH2** The same on B.
+- Progress rule: SH1 and SH2.
