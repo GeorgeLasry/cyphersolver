@@ -73,7 +73,18 @@ brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between
   1797 the only dark-ink decipherment reads the first groups as "rien que du clair"; on pp. 217/220/278 the faint
   text runs on below the last number line over blank paper; repeated number pairs (5 cases) never sit under
   repeated text. Against: Wilhelmina's precis of 23 Mar 1797 (scans 274-275) is headed "pour autant qu'il m'a ete
-  possible de le dechiffrer" and ends "Ou 93 le chiffre n'est pas distinct": she worked from numbers. Open.
+  possible de le dechiffrer" and ends "Ou 93 le chiffre n'est pas distinct": she worked from numbers. Settled
+  on 25 Oct (see below).
+- **Settled: the faint text is not a decipherment.** (1) Capacity: on 243/249/261, 50 of 52 lines carry more
+  plaintext letters than their groups can yield under the list's rules even counting each bare entry as a
+  10-letter word (243 line 6: 48 letters over six position groups worth at most 11 letters). Plaintext letters per
+  item: 1795-96 interlined 3.1 (median), Sept 1796 - Jan 1797 dark ink 4.7, 1797 faint text 6.9. (2) The clear
+  words among the numbers ("a moins que l'on ne dicte", "Quant a l'article du", "certain si l'on voudra", "soit
+  dans celle ci soit dans", "& c'est pour cette raison que", "est une preuve si non ... dumoins") never occur in
+  the faint text; with the numbers they make the frame of a separate cover letter. (3) The faint text runs on past
+  the last number line (217, 220, 278). So from 20 Jan 1797 the numbered letters are covers and the message is in
+  sympathetic ink (developed, brown), as the June 1796 letters say outright. The 1797 numbers cannot rebuild a
+  list. Wilhelmina's "Chiffre de Guillaume" write-ups of 1797 copy the ink text.
 - **R2236 Copie No. 2** (20 Mar 1797, scans 264/272) is in this 1797 system (groups to 722, `0`, underlined
   digits). Not transcribed yet.
 - **R2236 Copie No. 1** (scans 269-270) is a different code: plain numbers 1-391 among clear Dutch, no marks;
@@ -89,14 +100,17 @@ brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between
 ## Remaining gaps
 
 - R2236 Copie No. 1: not read; its own Dutch code, no key or decipherment in the file. Not attempted ciphertext-only yet.
-- R2236 Copie No. 2 and scan 89: not transcribed; 1797 system, whose list is not rebuilt (the faint text may be
-  lemon juice, not a decipherment; to settle on pp. 243/249/261, where the faint lines follow the number lines).
+- R2236 Copie No. 2 and scan 89: not transcribed; in the 1797 number system, which has no aligned plaintext
+  anywhere in the file (the 1797 faint texts are separate ink letters). Blocker: no key material. Copie No. 2 has no
+  clear words and no faint text, unlike the cover letters, so it may be genuine cipher; the 23 Mar 1797 letter
+  (266) and Wilhelmina's partial precis (274-275) are the only lead, a paraphrase not a crib.
 - About 100 entries of the 1795-96 list are still gapped or below 80% agreement.
 
 ## Escalation
 
-1. Done: 1797 pages transcribed (pairs97_*). Next: settle decipherment vs lemon juice on 243/249/261 by aligning
-   item counts to words line by line; if aligned, rebuild the 1797 list by vote and read Copie No. 2.
+1. Done: 1797 pages transcribed and the faint text shown to be separate ink letters; no 1797 list from them.
+   Remaining lead for Copie No. 2: transcribe scan 266 (23 Mar 1797) and align it loosely with the precis 274-275
+   for names (Callitschef, Elgin, Peterbourg, Bale, Deux-Ponts, Brandebourg).
 2. Copie No. 1: ciphertext-only attack as a one-part/two-part Dutch word code with the clear frame as crib
    (nl-1600), and search Colenbrander Gedenkstukken II for a Dutch letter of March 1797 on these lines.
 3. Re-read low-agreement 1795-96 entries at full size where a group recurs.

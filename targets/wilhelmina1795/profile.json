@@ -224,11 +224,20 @@
    "what": "Copie No. 1 decoded with the 1795-96 list, big number + following small numbers as letter positions: nonsense. A separate Dutch code.",
    "result": "failed",
    "date": "2026-10-25"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Capacity test on pp. 243/249/261: 50 of 52 lines have more faint-text letters than the groups can yield (bare entries counted as 10 letters); clear words in the number lines absent from the faint text; faint text runs past the numbers. The faint text is a separate sympathetic-ink letter and the numbers a cover; no 1797 list can be rebuilt from these pages.",
+   "result": "worked",
+   "date": "2026-10-25"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Work in progress: the 1795-96 list is rebuilt from contemporary decipherments; R2236 not yet attacked with the 1797 list.",
+  "method_basis": "Work in progress: the 1795-96 list is rebuilt from contemporary decipherments; the 1797 numbered pages are covers over sympathetic ink, so R2236 Copie No. 2 has no key material; Copie No. 1 is a separate Dutch code.",
   "contribution": [
    "transcription",
    "sender or date identified"
