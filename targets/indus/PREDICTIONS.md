@@ -12606,3 +12606,12 @@ lines not also on tags; Mantel-Haenszel over length bands (`predict_test400.py`)
 Both failed. 41 distinct tag lines against 1,211 square-seal lines: heading odds ratio 1.52 (p = 0.35), endings 1.20
 (p = 0.68). The impressions on tags look like seal texts in general (a small sample). Progress: none (goal streak 2).
 Tally, counting parts: 1619 held, 1572 failed (3191 registered).
+
+# Four-hundred-and-first set, registered before testing (26 October 2026): goal loop 47, pottery against seals (two hypotheses)
+
+Inscribed pottery (ICIT POT types) against square seals (`predict_test401.py`).
+
+- **PT1** Skews (set 371's test: C-train Fisher p < 0.01, 10+ tokens; C-test 3+, 75%+ same way, binomial p < 0.05).
+- **PT2** At equal length pottery texts close with 740 / 520 less often than seal texts (Mantel-Haenszel p < 0.05).
+- Progress rule: PT1 holds.
+
