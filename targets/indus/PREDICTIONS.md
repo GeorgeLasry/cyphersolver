@@ -13472,3 +13472,14 @@ Fish names (short / long form as set 452) on distinct lines (`predict_test454.py
 Both failed. Long / short fish names: square seals 20 / 56, rectangular 3 / 5 (p = 0.86); Mohenjo-daro 20 / 54, Harappa
 6 / 21 (p = 0.80). The long form goes with seal size only. Progress: none (goal streak 8). Tally, counting parts: 1640
 held, 1655 failed (3299 registered).
+
+# Four-hundred-and-fifty-fifth set, registered before testing (26 October 2026): goal loop 101, a negative control (two hypotheses)
+
+The condition of a seal (ICIT field 17: complete, chipped, fragment ...) arises after burial and cannot shape its text.
+A sound method should find nothing (`predict_test455.py`).
+
+- **NC1** Set 371's skew test, complete against damaged square seals on split C, finds no replicated skew (the test's
+  verdict line will read 'fails'; for the control that is the expected result).
+- **NC2** A condition domain model does not pass the rule of set 358 (expected verdict 'fails').
+- Progress rule: none (control). If either finds an effect, the skew or domain method is producing false positives.
+
