@@ -14396,3 +14396,13 @@ Both held at p = 0.001 (560 of 743 copy pairs share the picture; 139 of 293 acro
 picture-referent finding of sets 233-350 (moulded-tablet texts go with their pictures, mould copies counted once in set
 341), so it is a re-finding, not progress. Progress: none (goal streak 2). Tally, counting parts: 1676 held, 1742
 failed (3423 registered).
+
+
+# Set 518, registered before testing (26 October 2026): goal loop 164, signs 2 and 3 by seal size (two hypotheses)
+
+`auditkit.size_motif` (length band x site x motif), two-sided; progress only at p < 0.01 (rule before set 517)
+(`goal_driver.py`).
+
+- **H1** Large and small seals differ in carrying 2.
+- **H2** They differ in carrying 3.
+- Progress rule: either at p < 0.01.
