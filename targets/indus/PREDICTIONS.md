@@ -14719,3 +14719,7 @@ attested.
 - **FO1** On A, fish-fish pairs are reversible more often than other pairs (Fisher p < 0.05).
 - **FO2** The same on B.
 - Progress rule: FO1 and FO2 (the fish signs combine in free order, like stacked modifiers).
+
+## Results of set 540 (`hyp_s2_fishorder.py`, `results/predict_test540.md`)
+
+Held: FO1. fish pairs reversible A 7/13 vs 136/488; B 3/8 vs 113/299. Progress: none (session-2 goal streak 5).
