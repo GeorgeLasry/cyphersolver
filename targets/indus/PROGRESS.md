@@ -355,3 +355,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G99 | 453 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | marked fish lean to the long form (A p = 0.011, B p = 0.075); no extra modifiers (no progress; goal streak 7) |
 | G100 | 454 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long form by seal kind and city: no difference (no progress; goal streak 8) |
 | G101 | 455 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | negative control (seal condition): no skew, no model gain; methods pass (control; no progress; goal streak 9) |
+| G102 | 456 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | second negative control (record parity): nothing; methods pass (control; no progress; goal streak 10) |

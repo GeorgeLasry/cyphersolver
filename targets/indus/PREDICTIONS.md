@@ -13498,3 +13498,8 @@ Odd against even ICIT record numbers: a label with no meaning (`predict_test456.
 - **NP2** A parity domain model does not pass the rule of set 358 (expected verdict 'fails').
 - Progress rule: none (control).
 
+## Results of the four-hundred-and-fifty-sixth set (`predict_test456.py`, `results/predict_test456.md`, `predict_test4560.md`)
+
+The control passes. Odd against even record numbers (2,614 / 2,691 tokens on C-train): no sign skewed; the parity domain
+model takes weight 0. With set 455, two meaningless labels give nothing. Progress: none (goal streak 10). Tally, counting
+parts: 1644 held, 1653 failed (3301 registered; control verdicts counted as held).
