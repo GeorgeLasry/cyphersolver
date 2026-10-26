@@ -12046,3 +12046,13 @@ under the rule, so region is dropped from the base as registered (set 371: its s
 subtype: fixed 4.5671 -> 4.5593 (signs 5.4622 -> 5.4444), split C 4.5461 -> 4.5391 (signs 5.3734 -> 5.3572), controls
 under 0.001: adopted at weight 0.2. Base now length, type, subtype, length x subtype. Progress (goal streak 0). Tally,
 counting parts: 1600 held, 1533 failed (3133 registered).
+
+# Three-hundred-and-seventy-third set, registered before testing (26 October 2026): goal loop 19, opening-sign domains (two hypotheses)
+
+The opening sign may select a formula (a heading, a count, a name). Domain models keyed on the line's first sign; at
+position 0 the global model is used, so the key never predicts itself (the set 213 leak). Rule of set 358, fixed split
+and A -> B, on the base of set 372 (`predict_test373.py`).
+
+- **OD1** A domain model keyed on the opening sign's graphic family lowers S.
+- **OD2** A domain model keyed on the opening sign itself (groups of 40+ lines) lowers S.
+

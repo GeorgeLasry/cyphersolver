@@ -182,7 +182,7 @@ def cache(source, alpha=2.0):
     return extra
 
 
-def domain_model(keyfn, minlines=40):
+def domain_model(keyfn, minlines=40, skip0=False):
     """The registered model trained only on the training lines that share keyfn's value (global weights), for groups
     with minlines+ lines; other lines get the global model (so the mix changes nothing for them)."""
     def extra(train, meta):
@@ -199,6 +199,8 @@ def domain_model(keyfn, minlines=40):
             if t not in cache:
                 m = models.get(keyfn(t, meta), glob)
                 cache[t] = [sum(w[k] * r[k] for k in w) for r in m.rows(t, MODEL['kn'])]
+                if skip0:  # the key reads the line's own first sign: position 0 must not see it (set 373)
+                    cache[t][0] = sum(w[k] * r[k] for k in w for r in glob.rows(t, MODEL['kn'])[:1])
             return cache[t][i]
         return f
     return extra
@@ -250,15 +252,15 @@ def random_groups(real, salt):
     return lambda t, m: lab.get(t, '')
 
 
-def run_domain_set(num, title, hyps, gain=0.005):
+def run_domain_set(num, title, hyps, gain=0.005, skip0=False):
     """hyps: [(key, title, keyfn)]. Holds if the domain model's gains pass the S rule AND beat the mean gain of two
     random-group controls of the same sizes on both splits (rule from set 358)."""
     rd = R.Round(title, 'predict_test%d' % num)
     held = []
     for key, t, kf in hyps:
-        (a0, a1, la), (b0, b1, lb) = test_pair(domain_model(kf))
+        (a0, a1, la), (b0, b1, lb) = test_pair(domain_model(kf, skip0=skip0))
         (sa0, sa1), (sb0, sb1) = SIGNS_ONLY
-        ctl = [test_pair(domain_model(random_groups(kf, salt))) for salt in ('a', 'b')]
+        ctl = [test_pair(domain_model(random_groups(kf, salt), skip0=skip0)) for salt in ('a', 'b')]
         ca = sum(x[0][0] - x[0][1] for x in ctl) / 2
         cb = sum(x[1][0] - x[1][1] for x in ctl) / 2
         ok = a0 - a1 >= gain and b1 < b0 and a0 - a1 > ca and b0 - b1 > cb and sa1 < sa0 and sb1 < sb0
