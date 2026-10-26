@@ -16383,3 +16383,14 @@ counting: 100+ cm (about 5th c. BCE) against under 40 cm (about 2nd c. BCE) (`pr
 Failed. Kodumanal graffiti at 100+ cm (about 5th c. BCE) have an Indus parallel in 288 of 372 (77%), those above 40 cm
 (about 2nd c. BCE) in 177 of 225 (79%) (p = 0.68). As at Keeladi (set 640), the oldest dated graffiti are not more
 Indus-like. Progress: none.
+
+# Set 648, registered before testing (26 October 2026): lead 7, 892 and 700 in minimal pairs (two hypotheses)
+
+Set 593 found 892 fills the (previous, next) slots of the U sign 700; set 636 found they differ in objects and
+followers. A direct test: distinct texts identical except at one position, where one has 892 and the other 700
+(minimal pairs), against pairs of signs matched to 892's and 700's frequencies (15 nearest each, 1,000 draws)
+(`predict_test648.py`).
+
+- **MP1** On A, 892 / 700 minimal pairs exceed the matched pairs (p < 0.05, at least one pair).
+- **MP2** The same on B.
+- Progress rule: MP1 and MP2 (892 alternates with 700 in the same formulas).
