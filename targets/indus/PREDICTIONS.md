@@ -14658,3 +14658,7 @@ Its tokens not already given a role get a 'closing formula' role (`hyp_formula_r
 - **FR1** The role raises R by 0.5 points or more on the distinct lines.
 - **FR2** The formula closes the line (last, or followed only by 400 / 90) in 80%+ of its occurrences on A and on B.
 - Progress rule: FR1 and FR2.
+
+## Results of set 536 (`hyp_formula_role.py`, `results/predict_test536.md`)
+
+Held: FR2. R 86.27% -> 86.28%; final A 35/36, B 10/10. Progress: none (session-2 goal streak 1).
