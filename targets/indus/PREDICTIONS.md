@@ -14886,3 +14886,7 @@ head distributions, against 500 random splits of the same head tokens into group
 - **SH1** On A the cosine is lower than the random splits (p < 0.05): short labels name different things than long texts.
 - **SH2** The same on B.
 - Progress rule: SH1 and SH2.
+
+## Results of set 551 (`hyp_s2_shortheads.py`, `results/predict_test551.md`)
+
+Held: SH1, SH2. A True, B True. Progress: yes (session-2 goal streak 0).
