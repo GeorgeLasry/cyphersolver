@@ -13957,3 +13957,12 @@ Progress: none (goal streak 17). Tally, counting parts: 1656 held, 1700 failed (
 
 Both failed. Numeral + 520: odds ratio 2.26 (p = 0.060; mostly the formula's 33 520); post-ending 90: 0.87 (p = 0.79).
 Progress: none (goal streak 18). Tally, counting parts: 1656 held, 1702 failed (3363 registered).
+
+# Four-hundred-and-eighty-eighth set, registered before testing (26 October 2026): goal loop 134, rare and common signs by seal size (two hypotheses)
+
+`sizekit.size_test` (length band x site); sign counts over the clean ICIT objects (`predict_test488.py`).
+
+- **RC1** Large and small seals differ in carrying a sign seen at most twice in the corpus (two-sided p < 0.05).
+- **RC2** They differ in texts made only of the 50 commonest signs (two-sided p < 0.05).
+- Progress rule: either holds.
+
