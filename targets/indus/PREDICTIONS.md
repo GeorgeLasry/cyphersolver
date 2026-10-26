@@ -14819,3 +14819,7 @@ Held: CH2. counted 6 / heads 18, overlap 2; counted rarely heads on B 3/5; the r
   (Mantel-Haenszel-like: Fisher within bands, all bands same direction and pooled Fisher p < 0.05).
 - **NF2** The same on B.
 - Progress rule: NF1 and NF2, unless the count genre (sets 215-219) already establishes it: then consistency.
+
+## Results of set 547 (`hyp_s2_numfirst.py`, `results/predict_test547.md`)
+
+Held: none. A False, B False; the count genre (sets 215-219) covers it: consistency. Progress: none (session-2 goal streak 2).
