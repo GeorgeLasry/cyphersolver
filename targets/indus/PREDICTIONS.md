@@ -14373,3 +14373,20 @@ are shuffled within the excavation area (ICIT field 4, first nine characters) (`
 TA1 failed, TA2 held (audit). Shuffled within area, incised copies no longer share the period beyond chance (p = 0.18):
 set 515's TP1 was the find-spot, and is withdrawn. Moulded copies still do (p = 0.022): mould batches. Progress: none
 (goal streak 1). Tally, counting parts: 1674 held, 1742 failed (3421 registered).
+
+# Rule change for the goal run (26 October 2026, before set 517)
+
+After 160 loops, single-sample results near p = 0.05 have repeatedly fallen to audits (sets 423, 459, 493, 501, 515).
+From set 517 a loop counts as progress only if its result reaches p < 0.01 on one sample, or p < 0.05 on two
+independent samples (e.g. A and B, or two halves); otherwise it is recorded but not counted.
+
+# Five-hundred-and-seventeenth set, registered before testing (26 October 2026): goal loop 163, mould batches and pictures (two hypotheses)
+
+Harappa moulded tablets with identical texts (copies). Pairs sharing the picture (ICIT field 18) against pictures
+shuffled within area and period (`predict_test517.py`).
+
+- **MB1** Copies share the picture more than chance (p < 0.01).
+- **MB2** Copies from different periods share the picture more than chance (p < 0.01): the text-picture pairing outlives
+  one mould batch.
+- Progress rule (new bar): either holds at p < 0.01.
+
