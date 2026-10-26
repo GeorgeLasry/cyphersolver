@@ -13005,3 +13005,9 @@ Set 380's HS2 (small square seals' texts recur on other seals, odds ratio 1.90 w
 - **RA2** HS2 holds within Mohenjo-daro alone.
 - Progress rule: none (audit).
 
+## Results of the four-hundred-and-twenty-fifth set (`predict_test425.py`, `results/predict_test425.md`)
+
+Both held (audit; no progress by design). With length x site strata the odds ratio is 1.91 (p = 0.005); within
+Mohenjo-daro 1.99 (p = 0.027). **Set 380 stands**: small square seals carry repeated texts more often than large ones,
+at equal length and within a site. Progress: none (goal streak 2). Tally, counting parts: 1625 held, 1613 failed (3242
+registered).
