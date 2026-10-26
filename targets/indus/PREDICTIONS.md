@@ -12959,3 +12959,7 @@ the test line's subtype), weight 1; base = the domain models; fixed split and sp
 - **WK2** It raises WORD top-1 on both splits.
 - Progress rule: WK1 holds.
 
+## Results of the four-hundred-and-twenty-second set (`predict_test422.py`, `results/predict_test422.md`)
+
+Both failed. Top-10 unchanged (11 of 232 fixed, 1 of 211 on C); top-1 0 -> 1 and 0 -> 0. Progress: none (goal streak 12).
+Tally, counting parts: 1622 held, 1612 failed (3236 registered).
