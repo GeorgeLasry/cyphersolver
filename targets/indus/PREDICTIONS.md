@@ -15473,3 +15473,7 @@ cosine of the two signs' context counts against 500 random partner signs of simi
 - **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
 - **SB2** Pair 2 the same.
 - Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
+
+## Results of set 593 (`hyp_s2_sub9.py`, `results/predict_test593.md`)
+
+Held: SB1. 892/700 True; 142/460 False. Progress: yes (session-2 goal streak 0).
