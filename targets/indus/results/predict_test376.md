@@ -1,19 +1,19 @@
-# Three-hundred-and-seventy-sixth registered predictions: goal loop 22, size and workmanship
+# Three-hundred-and-seventy-sixth registered predictions: goal loop 22, seal size
 
-## SZ1 a size-band domain model
-- fixed test S 4.5590 -> 4.5590 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.4489 -> 5.4489.
-- A -> B 4.5360 -> 4.5360 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.3553 -> 5.3553.
-- **SZ1 fails.**
+- 669 square seals with a size on C-train, 177 on C-test; median 26.70. Skewed signs: large 706; small 156 390 400 5.
 
-## SZ2 a workmanship domain model
-- fixed test S 4.5590 -> 4.5590 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.4489 -> 5.4489.
-- A -> B 4.5360 -> 4.5360 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.3553 -> 5.3553.
-- **SZ2 fails.**
+## LS1 large- and small-seal signs replicate
+- 4 of 4 lean the same way, p = 0.0625.
+- **LS1 fails.**
 
-## P progress rule: either hypothesis holds
-- SZ1 False, SZ2 False.
+## LS2 longer texts on larger seals
+- C-train rho 0.33 (p = 6.4e-19), C-test rho 0.34 (p = 3.1e-06).
+- **LS2 holds.**
+
+## P progress rule: LS1 (a replicated finding)
+- LS1 False.
 - **P fails.**
 
 ## Summary
 
-Held: none. Failed: SZ1, SZ2, P.
+Held: LS2. Failed: LS1, P.

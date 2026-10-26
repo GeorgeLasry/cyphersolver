@@ -12144,3 +12144,16 @@ Square seals with a recorded first dimension (ICIT field 31), split at the C-tra
 - **LS2** Text length rises with seal size on C-train and on C-test (Spearman, p < 0.05 each).
 - Progress rule: LS1 holds (a replicated finding).
 
+## Results of the three-hundred-and-seventy-sixth set (`predict_test376.py`, `results/predict_test376.md`)
+
+One held, LS1 failed narrowly. Skewed on C-train: large seals 706; small seals 156, 390, 400, 5; all 4 lean the same way
+on C-test, binomial p = 0.0625 (needs 5 of 5). Longer texts on larger square seals (Spearman 0.33 and 0.34, both
+p < 1e-5; LS2). Progress: none (goal streak 4). Tally, counting parts: 1601 held, 1541 failed (3142 registered).
+
+# Three-hundred-and-seventy-seventh set, registered before testing (26 October 2026): goal loop 23, seal size and sides as domains (two hypotheses)
+
+Domain models on the set 372 base, split C, rule of set 358 (`predict_test377.py`).
+
+- **SZ1** Size band (ICIT field 31: under 20, 20-30, 30+ of the recorded first dimension; none = own group) lowers S.
+- **SZ2** The number of inscribed sides (ICIT field 21: 1, 2, 3, 4) lowers S.
+
