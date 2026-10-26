@@ -13884,3 +13884,13 @@ Progress: none (goal streak 12). Tally, counting parts: 1655 held, 1691 failed (
 Both failed. 33 outside the formula: odds ratio 0.55 (p = 0.25); fish + stroked U without 33: too rare (degenerate). The
 size link belongs to the whole formula. Progress: none (goal streak 13). Tally, counting parts: 1655 held, 1693 failed
 (3353 registered).
+
+# Four-hundred-and-eighty-third set, registered before testing (26 October 2026): goal loop 129, bar-seal signs by size (two hypotheses)
+
+Set 384 / 426: rectangular seals favour 1, 407, 55, 806; square seals 390, 741, 760. Within square seals, by size
+(`predict_test483.py`; `sizekit.size_test`).
+
+- **BS1** The rectangular-seal signs differ between large and small square seals (two-sided p < 0.05).
+- **BS2** The square-seal signs 390 / 741 / 760 differ between large and small square seals (two-sided p < 0.05).
+- Progress rule: either holds.
+
