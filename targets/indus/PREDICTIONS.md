@@ -14872,3 +14872,7 @@ commonest middle string covers under half of their A lines (open slot) (`hyp_s2_
 - **FR1** 15+ open-slot frames are testable on B (both signs in 5+ B lines).
 - **FR2** 70%+ of them co-occur on B more than chance (PMI > 0).
 - Progress rule: FR1 and FR2 (frames with an open slot, replicated: a syntactic template).
+
+## Results of set 550 (`hyp_s2_frames.py`, `results/predict_test550.md`)
+
+Held: FR1. frames 117, testable 91, positive on B 44. Progress: none (session-2 goal streak 15).

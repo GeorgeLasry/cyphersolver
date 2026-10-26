@@ -450,3 +450,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-13 | 548 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long-distance pairs: phrases or frames: open middles 8/30; of those positive on B 5/5. (no progress; session-2 goal streak 3) |
 | S2-14 | 549 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | what follows an opener: A True, B True; the heading unit (sets 230-279) covers it: consistency. (no progress; session-2 goal streak 4) |
 | S2 note | 545 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | set 545 progress withdrawn by the set 548 audit (repeated phrases, not frames): session-2 goal streak recounted, 14 after set 549 |
+| S2-15 | 550 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | open-slot frames: frames 117, testable 91, positive on B 44. (no progress; session-2 goal streak 15) |
