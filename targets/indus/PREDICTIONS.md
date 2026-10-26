@@ -13771,3 +13771,12 @@ registered).
 
 Both failed: 740 anywhere odds ratio 0.93 (p = 0.60); 400 after an ending 0.41 (p = 0.36, rare on seals). Progress:
 none (goal streak 5). Tally, counting parts: 1653 held, 1679 failed (3337 registered).
+
+# Four-hundred-and-seventy-fifth set, registered before testing (26 October 2026): goal loop 121, 520 and the short form by size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test475.py`). Set 406's EK2 used length strata only.
+
+- **S5A** Large and small seals differ in carrying 520 anywhere (two-sided p < 0.05).
+- **S5B** They differ in carrying the short form fish + 520 without the formula (two-sided p < 0.05).
+- Progress rule: either holds.
+
