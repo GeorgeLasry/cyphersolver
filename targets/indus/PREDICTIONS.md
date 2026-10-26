@@ -12377,3 +12377,15 @@ seals of the same length drawn, 28 of 1,000 are as tight; same length and site, 
 are a little closer in size than length and site explain: a borderline residue, most of TT1 is text length. Small seals
 do not carry numerals more often at equal length (TT2, odds ratio 1.04). Progress under the rule (goal streak 0), with
 the audit's caveat. Tally, counting parts: 1609 held, 1559 failed (3168 registered).
+
+# Three-hundred-and-ninetieth set, registered before testing (26 October 2026): goal loop 36, are names local? (two hypotheses)
+
+A name body = up to three signs before the last 740 / 520 of a line (2+ signs before it). Clean ICIT objects; the
+expected same-site rate of a pair is the seal share of the first object's site (`predict_test390.py`).
+
+- **NL1** For tablet-seal pairs sharing a name body, the seal is from the tablet's city more often than seal site shares
+  predict (one-sided binomial p < 0.05).
+- **NL2** For pairs of seals (distinct objects) sharing a name body, both come from one city more often than site shares
+  predict (p < 0.05): names are local.
+- Progress rule: either holds.
+
