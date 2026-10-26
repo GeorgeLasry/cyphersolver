@@ -13723,3 +13723,7 @@ parts: 1652 held, 1674 failed (3330 registered).
 - **SK2** They differ in ending with 740 (in the last two signs; two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-first set (`predict_test471.py`, `results/predict_test471.md`)
+
+Both failed: fish signs odds ratio 1.25 (p = 0.12), 740 ending 1.02 (p = 0.91). Progress: none (goal streak 2). Tally,
+counting parts: 1652 held, 1676 failed (3332 registered).
