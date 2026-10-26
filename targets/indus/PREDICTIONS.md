@@ -14054,3 +14054,13 @@ UR1 held, UR2 failed. With length band x site strata, unicorn-seal texts recur o
 other-animal seal texts (odds ratio 2.00, p = 0.024); doubled signs alike (0.80). With sets 491-492: the repeated
 (formulaic) seal texts are unicorn-seal texts; the rarer animals carry unique texts. A single test on all the data.
 Progress (goal streak 0). Tally, counting parts: 1660 held, 1710 failed (3375 registered).
+
+# Four-hundred-and-ninety-fourth set, registered before testing (26 October 2026): goal loop 140, audit of the unicorn repeats (two hypotheses)
+
+Small seals repeat texts (set 380); if unicorn seals are smaller, set 493 could be size. Square seals with a motif and a
+size (`predict_test494.py`).
+
+- **UA1** UR1 holds with strata of length band x site x size half (p < 0.05).
+- **UA2** UR1 leans the same way in two random halves.
+- Progress rule: none (audit).
+
