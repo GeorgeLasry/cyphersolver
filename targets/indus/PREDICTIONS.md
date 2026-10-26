@@ -15543,3 +15543,7 @@ Set 593 found 61 and 575 share (previous, next) contexts. Both are counted signs
 - **SA1** On A, 61 and 575 still share contexts beyond random partners (p < 0.05).
 - **SA2** On B the same.
 - Progress rule: none (audit); a failure withdraws set 593 and the logged streak is not reset by it.
+
+## Results of set 598 (`hyp_s2_subaudit.py`, `results/predict_test598.md`)
+
+Held: none. SA1 False, SA2 False (audit of set 593). Progress: none (session-2 goal streak 5).
