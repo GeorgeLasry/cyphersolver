@@ -12326,3 +12326,13 @@ Skew test of set 371 (C-train Fisher p < 0.01, 10+ tokens; C-test 3+ tokens, 75%
 Both failed. Faience square seals are too few (17 tokens on C-train); incised and moulded tablets differ in one sign (32,
 incised), which does not replicate. The subtype gain of set 369 is in sign context, not in which signs are used.
 Progress: none (goal streak 2). Tally, counting parts: 1607 held, 1555 failed (3162 registered).
+
+# Three-hundred-and-eighty-seventh set, registered before testing (26 October 2026): goal loop 33, sign pairs by object kind (two hypotheses)
+
+Set 386: incised and moulded tablets share their signs; set 369 says their contexts differ. Adjacent sign pairs (8+
+on C-train, Fisher p < 0.01; C-test 3+, 75%+ same way, binomial p < 0.05) (`predict_test387.py`).
+
+- **BG1** Incised against moulded tablets.
+- **BG2** Seals against tablets.
+- Progress rule: either holds.
+
