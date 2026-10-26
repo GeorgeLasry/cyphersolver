@@ -14780,3 +14780,13 @@ How often a numeral stands directly before 740 / 520, against 500 within-line sh
 ## Results of set 544 (`hyp_s2_numend.py`, `results/predict_test544.md`)
 
 Held: NE1. A True, B False; the name grammar (head before the ending, sets 176-177) implies it: consistency. Progress: none (session-2 goal streak 9).
+
+
+# Set 545, registered before testing (26 October 2026): session-2 goal loop 10, long-distance sign pairs (two hypotheses)
+
+Pairs (a ... b), a before b, 2+ positions apart, never adjacent anywhere on A, in 4+ distinct A lines; PMI against the
+signs' line frequencies (`hyp_s2_longdist.py`). The 30 highest-PMI pairs are A's long-distance pairs.
+
+- **LD1** 70%+ of them that have both signs in 5+ B lines co-occur on B more than their B frequencies predict (PMI > 0).
+- **LD2** At least 10 such pairs are testable on B.
+- Progress rule: LD1 and LD2 (dependencies beyond the neighbour, replicated).
