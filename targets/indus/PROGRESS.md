@@ -275,7 +275,7 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G22 | 376b | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band, workmanship: weight 0 (no progress; goal streak 4) |
 | G21 | 375 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | secondary motif and workmanship: nothing (no progress; goal streak 3) |
 | G22 | 376 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size: 4 of 4 large/small skews replicate (p = 0.06, under the bar); longer texts on larger seals (no progress; goal streak 4) |
-| G23 | 377b | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band and number of sides as domains: weight 0 (no progress; goal streak 5) |
+| G23 | 377 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band and number of sides as domains: weight 0 (no progress; goal streak 5) |
 | G24 | 378 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size and signs: 6 of 6 large/small skews replicate on the fixed test (large 32, 706; small 156, 390, 400, 5, 590); second look at set 376 (progress; goal streak 0) |
 | G25 | 379 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size signs hold within text-length bands (5 of 7, Mantel-Haenszel) and within Mohenjo-daro (7 of 7): seal size goes with content (rank or office?) (progress; goal streak 0) |
 | G26 | 380 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small square seals repeat texts more often than large ones, also within length bands (odds ratio 1.9, p = 0.004); heading not tied to size (progress; goal streak 0) |
@@ -289,7 +289,7 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G34 | 388 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size signs lean the same way on rectangular seals (5 of 7; weak bar, chance 23%); no title+name effect (progress under the rule; goal streak 0) |
 | G35 | 389 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | copies of a seal text are closer in size than chance (p = 0.001), but mostly text length: same-length-and-site null p = 0.05 (progress under the rule, borderline; goal streak 0) |
 | G36 | 390 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seals sharing a name body come from one city (shuffle null 0 of 500); tablet-seal version withdrawn on audit; whole texts travel (set 381) (progress; goal streak 0) |
-| G23 | 377 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | restoration with object-kind models: 25 of 75 against plain 28 (no progress; goal streak 5) |
+| G23 | 377b | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | restoration with object-kind models: 25 of 75 against plain 28 (no progress; goal streak 5) |
 | G37 | 391 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | local names replicate on M77 (226 of 270 same city, p = 0.001; mould-copy caveat); not local to a Mohenjo-daro quarter (progress; goal streak 0) |
 | G38 | 392 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | local names hold without Harappa (not mould copies); a subset re-test, consistency only (no progress; goal streak 1) |
 | G39 | 393 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | neither the head nor the first sign alone is local: locality is in the whole name body (no progress; goal streak 2) |
