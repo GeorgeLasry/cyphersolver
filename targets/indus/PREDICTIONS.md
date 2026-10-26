@@ -12499,3 +12499,15 @@ Both held (no progress by design). 74 Wells signs have 3+ listed objects in the 
 them (mean share 0.94; random object lists never as pure, p = 0.001). Both printed checks agree: Wells 247 -> ICIT 374
 (M77 400), Wells 303 -> ICIT 760 (M77 347). The concordance is written to data/wells/wells_icit_concordance.tsv.
 Progress: none (goal streak 3). Tally, counting parts: 1616 held, 1562 failed (3178 registered).
+
+# Three-hundred-and-ninety-fifth set, registered before testing (26 October 2026): goal loop 41, two claims of Wells 1998 (two hypotheses)
+
+Through set 394's concordance: Wells's markers 193 / 196 / 231 = ICIT 2 / 1 / 60, which he says act as dividers in some
+places; his 290-292 = ICIT 741 / 742 / 745, which he links to case endings like 288 (= 740). Distinct lines, A and B
+(`predict_test395.py`).
+
+- **WD1** The sign after 2 / 1 / 60 (not inside a numeral run, mid-line) resembles the line-opening distribution
+  (cosine) more than signs after random mid-line positions do (1,000 draws), on A and on B (p < 0.05 each).
+- **WE1** 741 / 742 / 745 close lines (last, or followed only by 400 / 90) at least half as often as 740, on A and B.
+- Progress rule: either holds.
+
