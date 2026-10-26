@@ -11829,3 +11829,18 @@ Domain models on top of region + length (rule of set 358).
   share a group) lowers S: the script's habits change over time.
 - **DP2** The line's place on its object (single-line object / first line / later line of a multi-line object) lowers S.
 
+## Results of the three-hundred-and-sixtieth set (`predict_test360.py`, `results/predict_test360.md`)
+
+Both failed. Depth band: weight 0 (the third of a site's depths carries nothing; many lines have no depth). Place on
+the object: fixed gain 0.0026 (under 0.005), A -> B 0.0219 (control -0.0008): headings and entries of multi-line
+objects differ a little. Progress: none (goal streak 1). Tally, counting parts: 1593 held, 1512 failed (3105 registered).
+
+# Three-hundred-and-sixty-first set, registered before testing (25 October 2026): goal loop 7, two context features (two hypotheses)
+
+Context models mixed onto the base (S rule; `loopkit.ctx_model`, `predict_test361.py`); contexts use only earlier
+signs and the line length.
+
+- **CX1** A skip-bigram, p(sign | the sign two back), lowers S.
+- **CX2** p(sign | previous sign, distance from the line's end) lowers S (the end component knows the distance but not
+  the previous sign).
+

@@ -182,6 +182,29 @@ def domain_model(keyfn, minlines=40):
     return extra
 
 
+def ctx_model(ctxfn, D=0.5):
+    """p(token | ctxfn(line, i)), absolutely discounted onto the add-0.5 unigram. ctxfn may use only signs before i
+    and the line length (S is given the length)."""
+    def extra(train, meta):
+        glob = Counter(g for t in train for g in list(t) + ['</s>'])
+        V, n = len(glob) + 1, sum(glob.values())
+        c = defaultdict(Counter)
+        for t in train:
+            for i in range(len(t) + 1):
+                c[ctxfn(t, i)][t[i] if i < len(t) else '</s>'] += 1
+
+        def f(t, i):
+            w = t[i] if i < len(t) else '</s>'
+            pg = (glob[w] + 0.5) / (n + 0.5 * V)
+            cc = c.get(ctxfn(t, i))
+            if not cc:
+                return pg
+            m = sum(cc.values())
+            return max(cc[w] - D, 0) / m + D * len(cc) / m * pg
+        return f
+    return extra
+
+
 def test_pair(extra):
     (tr, te), (DA, DB) = splits()
     a0, a1, la = evaluate(tr, te, extra)
