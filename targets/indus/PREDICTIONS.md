@@ -12436,3 +12436,10 @@ with Mahadevan's numbers (Fig. 3.6). Each Wells sign is mapped to the ICIT sign 
 - **WC2** The mapping is clean: Jaccard 0.5+ for 75%+ of Wells signs with 20+ objects.
 - Progress rule: WC1 and WC2 (a validated concordance, so Wells's claims can be tested on the corpus).
 
+## Results of the three-hundred-and-ninety-first set (`predict_test391.py`, `results/predict_test391.md`)
+
+LA1 held, LA2 failed. On Mahadevan's own texts 226 of 270 pairs of objects sharing a name body come from one city
+(shuffle p = 0.001): set 390's local names replicate on an independent sample. Caveat: B has no object types, so mould
+copies of Harappa tablets (distinct objects, one mould) may add same-city pairs. Within Mohenjo-daro, seals sharing a
+name body are not concentrated in one excavation area (83 of 139, p = 0.55): names are local to the city, not to a
+quarter. Progress (goal streak 0). Tally, counting parts: 1612 held, 1560 failed (3172 registered).
