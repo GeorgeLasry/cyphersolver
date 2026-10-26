@@ -13207,3 +13207,12 @@ Square seals; a line is 'multi' if its object has other lines (loopkit.OTHERS) (
 
 Both failed. Multi-line seals: 226 and 790 skewed on C-train, 1 of 2 replicate; endings alike (odds ratio 1.13). Progress:
 none (goal streak 4). Tally, counting parts: 1633 held, 1628 failed (3265 registered).
+
+# Four-hundred-and-thirty-eighth set, registered before testing (26 October 2026): goal loop 84, towns against cities (two hypotheses)
+
+Square seals; set 371's skew test on split C (`predict_test438.py`).
+
+- **TC1** Northern towns (north region, not Harappa) against Harappa.
+- **TC2** Chanhu-daro against Mohenjo-daro.
+- Progress rule: either holds.
+
