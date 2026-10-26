@@ -1,0 +1,191 @@
+{
+ "schema_version": 1,
+ "target": "yvoy1797",
+ "title": "d'Yvoy's cipher despatches and the Hereditary Prince's letters to him, London-Berlin 1797-99 (KHA A35-1450-1453)",
+ "documents": [
+  {
+   "id": "A35-1450-1451 (code L)",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A35 Willem I, inv. A35-1450, A35-1451",
+   "date": "1797-01/1798-12",
+   "year": 1797,
+   "country": "England",
+   "route": "M.L. d'Yvoy (London, Hampton Court) <-> Hereditary Prince (Berlin, Schonhausen)",
+   "language": "Dutch",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary Dutch decipherment written over most code runs."
+   },
+   "length": {
+    "tokens": 3487,
+    "distinct": 1113,
+    "unit": "mixed",
+    "measured": true,
+    "file": "runs_a.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "KHA renditions (original size): runs_a.txt to runs_d.txt",
+    "image_quality": "fair",
+    "notes": "Measured file runs_a.txt holds context, CT, PT and AL lines. Several outgoing letters survive only as mirror-image tissue copies."
+   }
+  },
+  {
+   "id": "A35-1452-1453 (code E)",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A35 Willem I, inv. A35-1452, A35-1453",
+   "date": "1799-01/1799-12",
+   "year": 1799,
+   "country": "Holy Roman Empire",
+   "route": "M.L. d'Yvoy (Emmerich, Munster) <-> Hereditary Prince",
+   "language": "Dutch",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Interlinear decipherments; several 1799 letters printed in Colenbrander, Gedenkstukken III."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "runs_a.txt (147437), runs_b.txt, runs_d.txt",
+    "image_quality": "fair",
+    "notes": "Code differs from 1797-98."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "Dutch word code of 1-4 digit numbers (up to about 1,500) for words, names and places, plus syllable numbers for spelling; two different tables, London 1797-98 and 1799.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "syllables"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "A stock phrase 'hier achter is (wat) geschreven' points to sympathetic-ink text on the back."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary interlinear decipherments; Colenbrander, Gedenkstukken III (1906-07) prints d'Yvoy letters of 1799",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Lead chosen by the user from the KHA sweep; user asked to rebuild the code from the glosses and read the unglossed letters.",
+  "tools": [
+   "KHA rendition API (curl)",
+   "PIL crops",
+   "tables.py vote tables with leave-one-page-out test",
+   "Huygens retroboeken full text"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-25",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "kind": "literature search",
+   "what": "Colenbrander Gedenkstukken II and III downloaded in full text and searched: d'Yvoy letters of 1795-96 (GS II) and 1799 (GS III) printed; none of 1797-98.",
+   "result": "partial",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "transcription",
+   "what": "28 flagged pages transcribed with glosses (runs_a, runs_b); all runs glossed.",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "access",
+   "what": "Second pass over all 1,029 scans of A35-1450-1453: 196 pages with code numbers listed (more_pages.tsv).",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "transcription",
+   "what": "79 pages marked unglossed transcribed (runs_c, runs_d); many glossed after all.",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Two code tables voted from the glossed runs (L 102 numbers, E 50); leave-one-page-out: L 79% vs 26%, E 81% vs 27%.",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Unglossed runs decoded: nearly all are the stock pointer 'hier achter is (wat) geschreven' (229 = achter), read from glossed instances; 147107 (mirror copy of No. 22, 22 Sept 1797) only about 40% decoded.",
+   "result": "partial",
+   "date": "2026-10-26"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "The code runs carry contemporary interlinear decipherments; the two tables were rebuilt from them and the few unglossed runs read as the recurring pointer phrase. One mirror-copy letter (147107) stays partly unread.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "class": "read in part",
+  "fraction_read": "unknown",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Two distinct codes (1797-98 and 1799).",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear Dutch decipherments written over the code runs in the Hereditary Prince's household and by d'Yvoy",
+    "date": "1797-1799",
+    "source": "KHA A35-1450-1453"
+   }
+  ]
+ }
+}
