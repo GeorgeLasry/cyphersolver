@@ -15307,3 +15307,7 @@ Held: none. A 266/1494 vs 1650/7344; B 158/675 vs 1017/3837. Progress: none (ses
 - **R1** On A: fish signs stand before 520 more than other heads do (consistency) (p < 0.05).
 - **R2** The same on B.
 - Progress rule: none (re-tests a known rule).
+
+## Results of set 582 (`hyp_s2_r_fishend.py`, `results/predict_test582.md`)
+
+Held: R1, R2. A 76/156 vs 87/947; B 17/39 vs 33/358. Progress: none (session-2 goal streak 4).
