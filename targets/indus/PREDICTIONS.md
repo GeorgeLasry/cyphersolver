@@ -13011,3 +13011,12 @@ Both held (audit; no progress by design). With length x site strata the odds rat
 Mohenjo-daro 1.99 (p = 0.027). **Set 380 stands**: small square seals carry repeated texts more often than large ones,
 at equal length and within a site. Progress: none (goal streak 2). Tally, counting parts: 1625 held, 1613 failed (3242
 registered).
+
+# Four-hundred-and-twenty-sixth set, registered before testing (26 October 2026): goal loop 72, audit of set 384 within a city (two hypotheses)
+
+Set 384's BR1 (10 of 10 rectangular / square skews replicate) had no site control (`predict_test426.py`; set 371's test).
+
+- **RS1** The rectangular / square skews replicate within Mohenjo-daro.
+- **RS2** The same within Harappa.
+- Progress rule: none (audit). Both failing downgrades set 384.
+
