@@ -15207,3 +15207,12 @@ Held: none. single: [False, False]. Progress: none (session-2 goal streak 11).
 ## Results of set 574 (`hyp_s2_q_afterend.py`, `results/predict_test574.md`)
 
 Held: none. afterend: [np.False_, np.False_]. Progress: none (session-2 goal streak 12).
+
+
+# Set 575, registered before testing (26 October 2026): session-2 goal loop 40, two openers lead into different texts (two hypotheses)
+
+(`hyp_s2_q.py`, VARIANT=openers)
+
+- **Q1** On A: the signs after 920 and after 820 differ: 3+ follower signs skewed at p < 0.05 on A, and 75% of testable ones keep their side on B (p < 0.05 where a test applies).
+- **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
+- Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
