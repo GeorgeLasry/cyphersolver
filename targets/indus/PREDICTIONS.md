@@ -14342,3 +14342,13 @@ Set 513's 692 hit, on two random halves (`predict_test514.py`).
 H692a failed, H692b held. Half 1: odds ratio 1.72 (p = 0.55); half 2: 4.74 (p = 0.028). Same direction, one half
 significant: 692 stays unconfirmed (set 513's caveat stands). Progress: none (goal streak 13). Tally, counting parts:
 1671 held, 1741 failed (3417 registered).
+
+# Five-hundred-and-fifteenth set, registered before testing (26 October 2026): goal loop 161, tablet copies and period (two hypotheses)
+
+Harappa tablets with texts of 2+ signs and a fine period (ICIT field 8; bare 'Period 3', '3B/C', '3C' left out); pairs of
+tablets with the identical text; periods shuffled 1,000 times (`predict_test515.py`).
+
+- **TP1** Incised tablet copies share the period more than chance.
+- **TP2** Moulded tablet copies share the period more than chance (one mould, one time).
+- Progress rule: either holds.
+
