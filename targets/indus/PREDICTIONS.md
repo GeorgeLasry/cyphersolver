@@ -16259,3 +16259,15 @@ not an ending; it stands mostly before the fish (Parpola's *ve&lstrok;* + fish) 
 supported where testable. Prior-work note on set 552: Wells 2015 (pp. 69-70) already observed that 390, 405, 407 and
 156 pair with short linear strokes while 575 and 585 pair with the stacked 017; set 553 showed the number-size effect
 holds within short strokes alone, so 552 is not only his series split, but the observation is his. Progress: none.
+
+# Set 642, registered before testing (26 October 2026): lead 1, counted units and the picture on the object (two hypotheses)
+
+Sets 552 / 562: numbers 1-3 count 176 233 235 240 61 803 806, numbers 4+ count 390 405 407 575 585 900. If the units
+name things, the picture on the object might follow them. Each counted token (directly after a numeral) on a clean ICIT
+object is labelled L / S with the object's motif; mutual information of group and motif within object subtypes, weighted
+by tokens, against 1,000 shuffles of the group labels within subtypes (`predict_test642.py`). Looked at before
+registering: the motifs are mostly the default bull and 'None' (counts only, by city, subtype, group).
+
+- **PU1** At Mohenjo-daro the unit group predicts the motif beyond the shuffles (p < 0.05).
+- **PU2** The same at Harappa.
+- Progress rule: PU1 and PU2 (meaning checked against pictures).
