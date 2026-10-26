@@ -15763,3 +15763,13 @@ contexts whose previous sign is a numeral dropped (set 598); cosine of the two s
 ## Results of set 613 (`hyp_s2_subb14.py`, `results/predict_test613.md`)
 
 Held: none. 773/906 False; 130/484 False. Progress: none (session-2 goal streak 20).
+
+
+# Set 614, registered before testing (26 October 2026): session-2 goal loop 79, audit: 892 / 700 without numeral contexts (two hypotheses)
+
+Set 593 found 892 and 700 share (previous, next) contexts. Set 598 audited 61 / 575 by mistake (the pair list was read off by one). 892 and 700 may share only
+'after a numeral'. Contexts whose previous sign is a numeral are dropped and the test re-run (`hyp_s2_subaudit.py`).
+
+- **SA1** On A, 61 and 575 still share contexts beyond random partners (p < 0.05).
+- **SA2** On B the same.
+- Progress rule: none (audit); a failure withdraws set 593.
