@@ -13216,3 +13216,8 @@ Square seals; set 371's skew test on split C (`predict_test438.py`).
 - **TC2** Chanhu-daro against Mohenjo-daro.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-eighth set (`predict_test438.py`, `results/predict_test438.md`)
+
+Both failed. Northern towns against Harappa: no skew (115 / 604 tokens); Chanhu-daro has 2 square-seal tokens on C-train
+(its seals are mostly not SEAL:S in the subtype field), untestable. Progress: none (goal streak 5). Tally, counting
+parts: 1633 held, 1630 failed (3267 registered).
