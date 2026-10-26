@@ -13879,3 +13879,8 @@ Progress: none (goal streak 12). Tally, counting parts: 1655 held, 1691 failed (
 - **PL2** They differ in carrying fish + 705 / 706 not followed by 33 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eighty-second set (`predict_test482.py`, `results/predict_test482.md`)
+
+Both failed. 33 outside the formula: odds ratio 0.55 (p = 0.25); fish + stroked U without 33: too rare (degenerate). The
+size link belongs to the whole formula. Progress: none (goal streak 13). Tally, counting parts: 1655 held, 1693 failed
+(3353 registered).
