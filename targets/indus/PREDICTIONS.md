@@ -13943,3 +13943,13 @@ Tally, counting parts: 1656 held, 1698 failed (3359 registered).
 
 Both failed. U family 700-706: odds ratio 1.58 (p = 0.050; the formula's stroked U); marked jars 741-749: 1.06 (p = 0.82).
 Progress: none (goal streak 17). Tally, counting parts: 1656 held, 1700 failed (3361 registered).
+
+# Four-hundred-and-eighty-seventh set, registered before testing (26 October 2026): goal loop 133, numeral + 520 and post-ending 90 by size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test487.py`).
+
+- **NE1** Large and small seals differ in carrying a numeral directly before 520 (overlaps the formula's 33 520; cannot
+  count as progress).
+- **NE2** They differ in carrying 90 directly after an ending (two-sided p < 0.05).
+- Progress rule: NE2 holds.
+
