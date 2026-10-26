@@ -11980,3 +11980,10 @@ On top of region + length + type; split C as replication (B has no type); rule o
   copper, POT:T ...) lowers S on the fixed split and on C.
 - **ST2** A region x type domain model lowers S on the fixed split and on C.
 
+## Results of the three-hundred-and-sixty-ninth set (`predict_test369.py`, `results/predict_test369.md`)
+
+One held, one failed. Subtype: fixed test 4.5777 -> 4.5671 (gain 0.0106; signs 5.4792 -> 5.4622), split C 4.5521 ->
+4.5500 (signs 5.3844 -> 5.3760), controls at zero: **copper, incised and moulded tablets and square and other seals
+each have their own sign context**, beyond the main type. Adopted at weight 0.2; S 4.578 -> 4.567. Region x type: fixed
+gain 0.0025, C none. Progress (goal streak 0). Tally, counting parts: 1598 held, 1526 failed (3124 registered; set 363
+pending).

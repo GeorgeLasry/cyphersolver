@@ -94,7 +94,8 @@ def _plain(train, test):
 # adopted domain models, mixed in order onto the plain model: (keyfn, weight)
 BASE_DOMAINS = [(lambda t, m: R.region(m.get(t, ('', '', ''))[0]), REGION_W),  # set 357
                 (lambda t, m: min(max(len(t), 2), 6), 0.3),  # set 359 DL1, length band
-                (lambda t, m: m.get(t, ('', '', ''))[1], 0.2)]  # set 367 OT1, object type (B lacks it: no effect there)
+                (lambda t, m: m.get(t, ('', '', ''))[1], 0.2),  # set 367 OT1, object type (B lacks it: no effect there)
+                (lambda t, m: SUBTYPE.get(t, ''), 0.2)]  # set 369 ST1, object subtype
 
 
 def base_probs(train, test):
