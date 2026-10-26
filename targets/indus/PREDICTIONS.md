@@ -13298,3 +13298,12 @@ Square seals (clean ICIT objects); formula = 705 / 706 directly followed by 33; 
 Both failed. The formula is as common at Mohenjo-daro as at Harappa (odds ratio 0.81, p = 0.66) and on other-animal as
 on unicorn seals (0.76, p = 0.61). Of the object properties tested, it goes with seal size only (set 441). Progress:
 none (goal streak 2). Tally, counting parts: 1636 held, 1637 failed (3277 registered).
+
+# Four-hundred-and-forty-fourth set, registered before testing (26 October 2026): goal loop 90, the closing formula over time (two hypotheses)
+
+As sets 385 / 416, for the formula 705 / 706 + 33 (`predict_test444.py`; length band x subtype strata).
+
+- **FT1** Its frequency differs between Mohenjo-daro's Early + Intermediate and Late phases (two-sided p < 0.05).
+- **FT2** It differs between Harappa's early and late periods (two-sided p < 0.05).
+- Progress rule: either holds.
+
