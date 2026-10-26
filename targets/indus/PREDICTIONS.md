@@ -11899,7 +11899,7 @@ One held, one failed. Of 88 signs, 9 are skewed between Sindh and the north on A
 skewed signs are not more often lexical (RG2: 6 of 9 against 60 of 79). Among them are pairs of one sign family split by
 region: the plain U 700 in the north against the stroked U 705 in Sindh (set 189: 705/706 head the closing formula),
 and the bull-headed yoke-carriers 154 and 158 in the north; with the marker 400 and the numeral 2, the regions differ
-in spelling and formula habits as much as in words. Progress: a new finding replicated (goal streak 0, loop 10). Tally,
+in spelling and formula habits as much as in words. Progress: a new finding replicated (goal streak 0, loop 10); **corrected by set 371: the skews are object-kind effects (moulded tablets are mostly Harappan); within square seals no sign is skewed by region.** Tally,
 counting parts: 1595 held, 1517 failed (3112 registered; set 363 pending).
 
 # Three-hundred-and-sixty-fifth set, registered before testing (25 October 2026): goal loop 11, regional variants in graphic families (two hypotheses)
@@ -12017,3 +12017,11 @@ skews by Fisher p < 0.01 on A, replication on B where B has the field, else spli
   75%+ lean the same way, binomial p < 0.05.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-seventy-first set (`predict_test371.py`, `results/predict_test371.md`)
+
+Both failed, and the failure corrects set 364. Within square seals (2,443 Sindh and 719 northern tokens on C-train) no
+sign is skewed by region at p < 0.01 (SR1); within the north, seals and moulded tablets differ only in 2 and 400, too
+few to test (SR2, 2 of 2, p = 0.25). The 'regional signs' of set 364 (158, 400, 700 north) are the moulded-tablet signs:
+moulded tablets are mostly Harappan. Seal texts do not differ by region in their signs. (The region domain model of set
+357 was adopted before the type models; its share of the gain may now be partly type, which the later models carry.)
+Progress: none (goal streak 1). Tally, counting parts: 1599 held, 1529 failed (3128 registered; set 363 pending).
