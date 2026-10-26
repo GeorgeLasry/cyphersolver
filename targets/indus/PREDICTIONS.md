@@ -13056,3 +13056,10 @@ soon. Mid-line = not first, not beside another numeral. Distinct lines, A and B 
   (1,000 draws, p < 0.05), on A and on B.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-twenty-eighth set (`predict_test428.py`, `results/predict_test428.md`)
+
+Both failed. After mid-line 'N X' an ending follows in 69 of 395 (A) and 16 of 128 (B), no more than after line-initial
+'N X' (2 of 12 each); an ending within three signs follows a mid-line numeral less often than after random mid-line
+positions (A 42% against 49%; B 30% against 35%). The phrase that mid-line 1 and 2 open (set 397) is not a short
+numeral + name + ending. Progress: none (goal streak 5). Tally, counting parts: 1627 held, 1616 failed (3247
+registered).
