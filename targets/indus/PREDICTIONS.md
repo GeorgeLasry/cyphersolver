@@ -12668,3 +12668,14 @@ length bands (`predict_test404.py`).
 Both failed. 259 other-animal and 909 unicorn lines: heading odds ratio 0.83 (p = 0.36), endings 0.97 (p = 0.92). With
 set 382 (no sign skew, no domain gain), the text of a square seal is independent of its animal in signs and in formula.
 Progress: none (goal streak 6). Tally, counting parts: 1619 held, 1580 failed (3199 registered).
+
+# Four-hundred-and-fifth set, registered before testing (26 October 2026): goal loop 51, the heading variant (two hypotheses)
+
+The heading opens 12% of texts with one of three variants (817 / 820 / 861), in the same proportions in each city
+(Mahadevan 1970; DOSSIER). What chooses the variant? (`predict_test405.py`).
+
+- **HV1** Seals and tablets use the variants in different proportions: chi-square p < 0.05 on split C's training lines,
+  and all three variants lean the same way on C's test lines.
+- **HV2** Large and small square seals (median size) use the variants in different proportions (chi-square p < 0.05).
+- Progress rule: either holds.
+
