@@ -12806,3 +12806,8 @@ Set 363 tried SIGN with region + length (no gain). The base now carries object t
 - **SK2** SIGN top-5 rises on both splits.
 - Progress rule: SK1 holds.
 
+## Results of the four-hundred-and-twelfth set (`predict_test412.py`, `results/predict_test412.md`)
+
+Both failed. SIGN top-1: fixed 39.8% -> 39.5%, C 42.6% -> 43.0%; top-5 61.9% -> 61.6%, 62.5% -> 62.3%. The object-kind
+models lower S (left-to-right) but do not help guess a hidden sign from both sides, as set 363 found for region and
+length. Progress: none (goal streak 2). Tally, counting parts: 1622 held, 1592 failed (3216 registered).
