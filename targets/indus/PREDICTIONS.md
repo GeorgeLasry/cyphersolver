@@ -16517,3 +16517,13 @@ pass, so no class result is claimed from this set; a corrected null is registere
 signs with 3+ minimal-pair frames on A, their partner sets recur on B (mean Jaccard 0.108 against shuffled identities,
 p = 0.001): substitution partners are a stable property of a sign. The table of partners is in
 results/substitution_classes.tsv. Progress: none.
+
+# Set 654, registered before testing (26 October 2026): substitution classes with a corrected null (three hypotheses)
+
+Set 653's null (class labels permuted among sign types) was degenerate. Here the partner's class is permuted across
+the minimal pairs, frame-weighted, which keeps each slot's class frequencies (`predict_test654.py`); otherwise as 653.
+
+- **SD1** Linear B control: partners share a class beyond the permuted partners (p < 0.05).
+- **SD2** Indus A: the same.
+- **SD3** Indus B: the same.
+- Progress rule: SD1, SD2 and SD3.
