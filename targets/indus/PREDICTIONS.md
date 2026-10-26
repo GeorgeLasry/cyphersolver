@@ -12537,3 +12537,15 @@ GD1 failed, GD2 held. The divider-split rule lowers the G margin (A 49.6 -> 48.2
 lets shuffled lines parse too. The 'divider' role for mid-line 60 adds 34 tokens (R 86.27% -> 86.55%), too small to
 adopt under the progress rule (GD1). Progress: none (goal streak 1). Tally, counting parts: 1618 held, 1564 failed
 (3182 registered).
+
+# Three-hundred-and-ninety-seventh set, registered before testing (26 October 2026): goal loop 43, before the divider; each divider (two hypotheses)
+
+Set 395: a unit starts after a mid-line 2 / 1 / 60. If the divider also ends a unit, the sign before it should be a name
+head. A name head here = a sign with 5+ tokens, not a numeral, 30%+ of whose tokens stand before 740 (own sample)
+(`predict_test397.py`).
+
+- **DB1** The sign before a divider (outside numeral runs) is a name head more often than the sign before random
+  mid-line positions (1,000 draws), on A and on B.
+- **DB2** Each of 2, 1 and 60 alone passes set 395's opener test on A.
+- Progress rule: DB1 holds.
+
