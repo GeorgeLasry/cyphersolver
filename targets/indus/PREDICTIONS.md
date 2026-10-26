@@ -13420,3 +13420,9 @@ Rectangular seals (SEAL:R) with a size, own median (`predict_test451.py`).
 - **RZ2** All four core size signs of set 430 (706 large; 156, 400, 590 small) lean the same way (4 of 4; chance 1 in 16).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fifty-first set (`predict_test451.py`, `results/predict_test451.md`)
+
+Both failed. Small rectangular seals repeat texts more (odds ratio 5.34) but p = 0.090. The script's '3 of 4' counts 156
+(absent from rectangular seals, 0 against 0) as agreeing by a tie; of the three present, 706 (large) and 400 (small)
+agree, 590 leans large: 2 of 3. Progress: none (goal streak 5). Tally, counting parts: 1640 held, 1649 failed (3293
+registered).
