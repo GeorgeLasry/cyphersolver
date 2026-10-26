@@ -13376,3 +13376,8 @@ way on B, at least 2 testable (`predict_test448.py`).
 - **WF2** Within the long form, particular fish signs prefer 706 over 705 or the reverse.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-eighth set (`predict_test448.py`, `results/predict_test448.md`)
+
+Both failed. Only the plain fish 220 is skewed (toward the short form) on A, and it leans the same way on B (one sign,
+under the 2+ bar); no fish is skewed between 706 and 705. Any fish name can take the long form. Progress: none (goal
+streak 2). Tally, counting parts: 1639 held, 1644 failed (3287 registered).
