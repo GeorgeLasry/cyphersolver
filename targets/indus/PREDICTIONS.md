@@ -12516,7 +12516,8 @@ places; his 290-292 = ICIT 741 / 742 / 745, which he links to case endings like 
 WD1 held, WE1 failed. After 2 / 1 / 60 (outside numeral runs) the next sign resembles a line opener: cosine 0.429 on A
 (547 tokens, p = 0.001), 0.652 on B (198, p = 0.004). Audit (not registered): the heading ends in a stroke pair, so
 heading + divider at line start was stripped and openers recomputed: 0.615 (p = 0.001) and 0.692 (p = 0.004). **Wells's
-claim that these markers divide words is supported**: a new unit starts after them. The stroked jars close lines in
+claim that these markers divide words is supported**: a new unit starts after them (refined by set 397: 2 and 1
+open a unit, they do not close the one before; 60 does not pass alone). The stroked jars close lines in
 3.3% (A) and 13.6% (B) of tokens against 88.0% and 80.5% for 740 (WE1): they are not case endings in Wells's sense but
 name elements (set 186). Progress (goal streak 0). Tally, counting parts: 1617 held, 1563 failed (3180 registered).
 
@@ -12549,3 +12550,10 @@ head. A name head here = a sign with 5+ tokens, not a numeral, 30%+ of whose tok
 - **DB2** Each of 2, 1 and 60 alone passes set 395's opener test on A.
 - Progress rule: DB1 holds.
 
+## Results of the three-hundred-and-ninety-seventh set (`predict_test397.py`, `results/predict_test397.md`)
+
+Both failed, and they reinterpret set 395. Before a mid-line 2 / 1 / 60 the sign is a name head less often than chance
+(A 14 of 547, 2.6% against 8.0%; B 0 of 198 against 3.6%): the marker does not close a unit. 2 and 1 alone pass the
+opener test (p = 0.001 each), 60 does not (p = 0.35). So 2 and 1 open a new phrase (a numeral beginning 'two X') rather
+than dividing words; Wells's 'divider' reading is better put as numerals that start a unit, and 60 is not one.
+Progress: none (goal streak 2). Tally, counting parts: 1618 held, 1567 failed (3185 registered).
