@@ -15190,3 +15190,7 @@ Held: none. fixed gain 0.0000, A -> B gain 0.0000. Progress: none (session-2 goa
 - **Q1** On A: the signs of one-sign texts are name heads (stand before an ending) in longer lines more often than frequency-matched signs (200 draws) (p < 0.05 where a test applies).
 - **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
 - Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
+
+## Results of set 573 (`hyp_s2_q_single.py`, `results/predict_test573.md`)
+
+Held: none. single: [False, False]. Progress: none (session-2 goal streak 11).
