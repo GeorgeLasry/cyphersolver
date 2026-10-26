@@ -11844,3 +11844,23 @@ signs and the line length.
 - **CX2** p(sign | previous sign, distance from the line's end) lowers S (the end component knows the distance but not
   the previous sign).
 
+## Results of the three-hundred-and-sixty-first set (`predict_test361.py`, `results/predict_test361.md`)
+
+CX1 failed, CX2 held as registered and is withdrawn on audit. Skip-bigram: weight 0. Previous sign x distance from end:
+fixed test 4.5956 -> 4.4428, A -> B 5.0891 -> 5.0319. Audit (not registered): with distance 0 the context makes the end
+token nearly certain, the known optimism of S (correction after set 223). On sign tokens alone the fixed test gains
+(5.5028 -> 5.3749) but A -> B loses (6.1311 -> 6.1585); the end token carries all of the A -> B gain (1.088 -> 0.706).
+The fixed-split gain on signs is formula endings shared between near-duplicate ICIT lines; it does not carry to
+Mahadevan's lines. Withdrawn. The adopted domain models pass the same audit on sign tokens: plain 5.5729 / 6.3114,
++ region 5.5346 / 6.1764, + length 5.5028 / 6.1311 (fixed / A -> B). Rule from set 362: S hypotheses must also lower
+sign-token bits on both splits. Progress: none (goal streak 2). Tally, counting parts: 1594 held, 1513 failed (3107
+registered).
+
+# Three-hundred-and-sixty-second set, registered before testing (25 October 2026): goal loop 8, previous sign x length, and the line's opening family (two hypotheses)
+
+Context models onto the base (S rule with the sign-token condition, `predict_test362.py`).
+
+- **CY1** p(sign | previous sign, length band) lowers S: the same sign is followed differently in short and long lines.
+- **CY2** p(sign | graphic family of the line's first sign, position) lowers S for positions after the first (the
+  opening family predicts the formula; position 0 uses no opening context, so no leak).
+

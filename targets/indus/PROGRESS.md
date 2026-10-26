@@ -256,3 +256,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G4 | 358 | 4.614 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | site beyond region: fixed gain 0.003 (under 0.005), A to B 0.019; object type: fixed 0.025 but A to B worse (no progress; goal streak 1) |
 | G5 | 359 | **4.596** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | length-band domain model adopted: S 4.614 to 4.596, A to B 5.120 to 5.089; 'direction' withdrawn (the field codes the source corpus, M77) (progress; goal streak 0) |
 | G6 | 360 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | depth band: weight 0; place on the object: fixed gain 0.003, A to B 0.022 (no progress; goal streak 1) |
+| G7 | 361 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | skip-bigram weight 0; previous sign x distance from end held as registered but withdrawn: its A to B gain is the end token only (signs-only rule added) (no progress; goal streak 2) |

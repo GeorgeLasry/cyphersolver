@@ -91,10 +91,12 @@ def base_probs(train, test):
     return pb
 
 
-def _bits(pb, pe, lam):
+def _bits(pb, pe, lam, signs_only=False):
     n = s = 0
     for row_b, row_e in zip(pb, pe):
-        for a, b in zip(row_b, row_e):
+        for j, (a, b) in enumerate(zip(row_b, row_e)):
+            if signs_only and j == len(row_b) - 1:
+                continue
             s -= math.log2(max((1 - lam) * a + lam * b, 1e-12))
             n += 1
     return s / n
@@ -113,7 +115,11 @@ def evaluate(train, test, extra, seed=2026):
     f = extra(train, META)
     pb = base_probs(train, test)
     pe = [[f(t, i) for i in range(len(t) + 1)] for t in test]
+    SIGNS_ONLY.append((_bits(pb, pe, 0.0, True), _bits(pb, pe, lam, True)))
     return _bits(pb, pe, 0.0), _bits(pb, pe, lam), lam
+
+
+SIGNS_ONLY = []  # (base, mix) bits on sign tokens, end token left out (rule from set 362, after the set 361 audit)
 
 
 def splits():
@@ -206,6 +212,7 @@ def ctx_model(ctxfn, D=0.5):
 
 
 def test_pair(extra):
+    del SIGNS_ONLY[:]
     (tr, te), (DA, DB) = splits()
     a0, a1, la = evaluate(tr, te, extra)
     b0, b1, lb = evaluate(DA, DB, extra)
@@ -234,12 +241,13 @@ def run_domain_set(num, title, hyps, gain=0.005):
     held = []
     for key, t, kf in hyps:
         (a0, a1, la), (b0, b1, lb) = test_pair(domain_model(kf))
+        (sa0, sa1), (sb0, sb1) = SIGNS_ONLY
         ctl = [test_pair(domain_model(random_groups(kf, salt))) for salt in ('a', 'b')]
         ca = sum(x[0][0] - x[0][1] for x in ctl) / 2
         cb = sum(x[1][0] - x[1][1] for x in ctl) / 2
-        ok = a0 - a1 >= gain and b1 < b0 and a0 - a1 > ca and b0 - b1 > cb
-        rd.rec(key, t, ['fixed test S %.4f -> %.4f (gain %.4f, weight %.2f; random groups %.4f)' % (a0, a1, a0 - a1, la, ca),
-                        'A -> B %.4f -> %.4f (gain %.4f, weight %.2f; random groups %.4f)' % (b0, b1, b0 - b1, lb, cb)], ok)
+        ok = a0 - a1 >= gain and b1 < b0 and a0 - a1 > ca and b0 - b1 > cb and sa1 < sa0 and sb1 < sb0
+        rd.rec(key, t, ['fixed test S %.4f -> %.4f (gain %.4f, weight %.2f; random groups %.4f); signs only %.4f -> %.4f' % (a0, a1, a0 - a1, la, ca, sa0, sa1),
+                        'A -> B %.4f -> %.4f (gain %.4f, weight %.2f; random groups %.4f); signs only %.4f -> %.4f' % (b0, b1, b0 - b1, lb, cb, sb0, sb1)], ok)
         held.append(ok)
     rd.rec('P', 'progress rule: either hypothesis holds', ', '.join('%s %s' % (k, o) for (k, _, _), o in zip(hyps, held)), any(held))
     rd.finish()
@@ -252,9 +260,10 @@ def run_set(num, title, hyps, gain=0.005):
     held = []
     for key, t, extra in hyps:
         (a0, a1, la), (b0, b1, lb) = test_pair(extra)
-        ok = a0 - a1 >= gain and b1 < b0
-        rd.rec(key, t, ['fixed test S %.4f -> %.4f (gain %.4f, weight %.2f)' % (a0, a1, a0 - a1, la),
-                        'A -> B %.4f -> %.4f (gain %.4f, weight %.2f)' % (b0, b1, b0 - b1, lb)], ok)
+        (sa0, sa1), (sb0, sb1) = SIGNS_ONLY
+        ok = a0 - a1 >= gain and b1 < b0 and sa1 < sa0 and sb1 < sb0
+        rd.rec(key, t, ['fixed test S %.4f -> %.4f (gain %.4f, weight %.2f); signs only %.4f -> %.4f' % (a0, a1, a0 - a1, la, sa0, sa1),
+                        'A -> B %.4f -> %.4f (gain %.4f, weight %.2f); signs only %.4f -> %.4f' % (b0, b1, b0 - b1, lb, sb0, sb1)], ok)
         held.append(ok)
     rd.rec('P', 'progress rule: either hypothesis holds', ', '.join('%s %s' % (k, o) for (k, _, _), o in zip(hyps, held)), any(held))
     rd.finish()
