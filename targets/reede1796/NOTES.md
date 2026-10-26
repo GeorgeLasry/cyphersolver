@@ -36,19 +36,46 @@ the code. The control values confirm it: in 1796 91 = Ivoy, 72 = Duc, 13 = Athlo
 13 nothing); in 1798 6/52 = Haugwitz (Euler 52 = une, 169 = haugwitz). The 1801 groups run to 1951. These letters use
 at least two other codes (1796 small numbers; 1797-1801 a larger list with prefixes and superscripts).
 
+## The Prince's drafts and Van Reede's "Explication" (26 Oct)
+
+The six draft pages were opened at full size (`full/`):
+- 144342 "Chiffre a Mr de Reede, Berlin 11 Juin 1796", 144346, 144354 (Berlin 2 July 1796), 144356, 144375: the
+  Prince's clear drafts of his own cipher letters to Van Reede (Russia, Kalitscheff, Elgin, the neutrality of North
+  Germany, Haugwitz's proposals). No numbers: they are the plaintexts of letters whose enciphered versions went to
+  Van Reede and are not in this file.
+- 144359 is Van Reede's letter of 15 Aug 1796 (the cipher of 144358), with on its right page an **"Explication des
+  chiffres employes dans la lettre; chaque trait indique que la phrase est finie, & qu'il faut passer au chiffre
+  suivant"**: Ivoy - le Duc - envoye a Ivoy un memoire pour etablir & justifier les principes d'une nouvelle
+  coalition basant sur la reconnoissance de Louis XVIII comme seul moyen d'inspirer de la confiance a la Prusse et de
+  l'etablir generalement / Athlone - Duc de Portland - de Luc - Portland - le Duc - Ivoy - (3) qu'il n'y avoit rien a
+  faire des que l'Angleterre n'adoptoit pas en plein la marche proposee ... In the letter: "Je me sers, Monseigneur,
+  du Chiffre Litteral usite pour ma correspondance particuliere avec Elle", and dotted groups "39.97.16" and
+  "29.17.19.37" in the text.
+
+What it shows: run (1) of 144358, seven groups ("12 15' 72' 45' 92 171 319"), stands for a sentence of some 200
+letters, so the groups are not letters or single words; with dotted three- and four-part groups and the name
+"Chiffre Litteral", the 1796 system reads as a book code keyed to a printed text shared by Van Reede and the
+Prince (page.line.word or similar). The text is not named. Single numbers (91 Ivoy, 72 Duc, 13 Athlone, 73 Portland,
+2 de Luc) are a short name list beside it.
+
+Retry: the 1796 passages cannot be decoded without the book; the Explication gives plaintext for the 15 Aug letter
+only, too little to identify a book by itself (a book search would need candidate texts of 1790s London-Berlin
+correspondence).
+
 ## Remaining gaps
 
-- The nine passages above (about 580 groups) - blocker: no-key-material; neither the 1789-92 table nor the 1795-96 Euler list fits the glossed controls, and the glossed values (about 15) are too few to rebuild the 1796 or 1797-1801 codes
+- The nine passages above (about 580 groups) - blocker: no-key-material; the 1796 "Chiffre Litteral" is a book code (seven groups for a 200-letter sentence, dotted page.line groups) and the book is unknown; the 1797-1801 pages use a larger list with prefixes and superscripts, glossed values too few; neither known table fits
 
 ## Escalation
 
 - [x] siblings: all of A35-1232 and A32-549 paired (k89 pairing files); glossed controls transcribed
-- [x] clear-pages: the Prince's draft replies 144386 checked; the other drafts (144342, 144346, 144354, 144356, 144359, 144375) not yet opened at full size
+- [x] clear-pages: all six drafts opened: clear drafts of the Prince's outgoing cipher letters (no numbers), and Van Reede's Explication for 15 Aug 1796 (144359), which shows a book code
 - [x] known-keys: reede1789 table and the Euler list tested on the controls; neither fits
 - [x] print: Colenbrander GS II (1795-98) and III (1798-1801) full text searched: no letter of Van Reede to the Erfprins printed (the hits are Pieter Vreede)
-- [ ] key-rebuild: not done; too few glosses
-- [ ] retry: not done
+- [x] key-rebuild: not possible without the book; the Explication's sentences give no word-level alignment
+- [x] retry: 1796 passages re-examined against the Explication; not decodable without the book
 
 ## Log
 
+- 26 Oct 2026: drafts opened; Explication found (144359); 1796 system identified as a book code.
 - 26 Oct 2026: target opened; nine unread passages and four glossed controls transcribed; both known keys tested, no fit.
