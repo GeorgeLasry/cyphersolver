@@ -13713,3 +13713,13 @@ Set 469 used all sized square seals. Here two random halves (hash of text and si
 DH1 held, DH2 failed. Half 1: odds ratio 0.32 (p = 0.014); half 2: 0.48 (p = 0.14). Both halves lean to small seals, one
 is significant: set 469 holds in direction, borderline in strength. Progress: none (goal streak 1). Tally, counting
 parts: 1652 held, 1674 failed (3330 registered).
+
+# Four-hundred-and-seventy-first set, registered before testing (26 October 2026): goal loop 117, fish signs and 740 by seal size (two hypotheses)
+
+`sizekit.size_test`: square seals with a size, Mantel-Haenszel of large against small over length band x site
+(`predict_test471.py`). Set 414 tested fish signs with length strata only (trend, p = 0.058).
+
+- **SK1** Large and small seals differ in carrying a fish sign (two-sided p < 0.05).
+- **SK2** They differ in ending with 740 (in the last two signs; two-sided p < 0.05).
+- Progress rule: either holds.
+
