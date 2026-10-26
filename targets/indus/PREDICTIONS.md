@@ -12601,3 +12601,8 @@ lines not also on tags; Mantel-Haenszel over length bands (`predict_test400.py`)
 - **TG2** Tag texts close with 740 / 520 less often than seal texts at equal length (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundredth set (`predict_test400.py`, `results/predict_test400.md`)
+
+Both failed. 41 distinct tag lines against 1,211 square-seal lines: heading odds ratio 1.52 (p = 0.35), endings 1.20
+(p = 0.68). The impressions on tags look like seal texts in general (a small sample). Progress: none (goal streak 2).
+Tally, counting parts: 1619 held, 1572 failed (3191 registered).
