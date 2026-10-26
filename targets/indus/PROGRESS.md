@@ -471,3 +471,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-33 | 568 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small before large: A small first in 7 of 12 lines; B small first in 1 of 2 lines. (no progress; session-2 goal streak 6) |
 | S2-34 | 569 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | previous sign's family x position from the start: fixed gain -0.0007, A -> B gain -0.0030. (no progress; session-2 goal streak 7) |
 | S2-35 | 570 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | previous sign x a numeral earlier in the line: fixed gain -0.0006, A -> B gain -0.0036. (no progress; session-2 goal streak 8) |
+| S2-36 | 571 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | previous sign x an ending earlier in the line: fixed gain -0.0002, A -> B gain -0.0084. (no progress; session-2 goal streak 9) |
