@@ -13532,3 +13532,12 @@ Sets 455-456 gave single controls. Here 20 random halvings of square-seal lines 
 Both held (calibration). Under 20 random halvings of square-seal lines the skew test replicated nothing (0 of 20) and the
 ending test was never significant (0 of 20). The tests used for this run's object-property findings are conservative.
 Progress: none (goal streak 12). Tally, counting parts: 1646 held, 1656 failed (3306 registered).
+
+# Four-hundred-and-fifty-ninth set, registered before testing (26 October 2026): goal loop 105, tablet size and text (two hypotheses)
+
+Tablets with a recorded first dimension (ICIT field 31) (`predict_test459.py`).
+
+- **TZ1** Longer texts sit on larger incised tablets (Spearman rho > 0, p < 0.05).
+- **TZ2** Moulded tablets carrying the counted pot 700 differ in size from those without (two-sided Mann-Whitney).
+- Progress rule: either holds.
+
