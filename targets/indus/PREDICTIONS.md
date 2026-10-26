@@ -13767,3 +13767,7 @@ registered).
   small-seal signs, so SE2 cannot count as progress on its own.
 - Progress rule: SE1 holds.
 
+## Results of the four-hundred-and-seventy-fourth set (`predict_test474.py`, `results/predict_test474.md`)
+
+Both failed: 740 anywhere odds ratio 0.93 (p = 0.60); 400 after an ending 0.41 (p = 0.36, rare on seals). Progress:
+none (goal streak 5). Tally, counting parts: 1653 held, 1679 failed (3337 registered).
