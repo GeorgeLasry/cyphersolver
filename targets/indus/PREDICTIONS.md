@@ -16083,3 +16083,14 @@ statistic, with no sign correspondence. Not measured before registering.
   graffiti sequence more than chance (1 / sequence length), p < 0.05.
 - Progress rule: GR1 holds.
 
+## Results of set 635 (`predict_test635.py`, `results/predict_test635.md`)
+
+All three failed. 596 multi-sign graffiti sequence types give 193 adjacent pairs of two distinct mapped base signs
+(23 mapped signs). 62 of the 193 pairs are Indus neighbours, but shuffling the corpus's mapping gives as many in 159 of
+1,000 draws (p = 0.16) and re-pairing the signs in 138 of 1,000 (p = 0.14) (GR1). Graffiti order does not follow Indus
+reading order: 14 of 32 testable pairs agree, p = 0.60 (GR2). The one end-type sign (27, parallel of an Indus line-final
+sign) is last in 4 of 5 sequences against 2.3 expected, p = 0.15, too few (GR3). **Through the corpus's own sign
+parallels, the graffiti do not combine their signs as the Indus texts do**: the resemblance is in single sign shapes
+(the parallels), not in sign order or sign pairs, consistent with set 204's weaker order structure. Limits: 23 of 42
+base signs map to ICIT; composites (ligatures) left out; the mapping is by shape. Progress: none. Tally, counting parts:
+3 failed added.
