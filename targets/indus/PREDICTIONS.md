@@ -12511,3 +12511,11 @@ places; his 290-292 = ICIT 741 / 742 / 745, which he links to case endings like 
 - **WE1** 741 / 742 / 745 close lines (last, or followed only by 400 / 90) at least half as often as 740, on A and B.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-ninety-fifth set (`predict_test395.py`, `results/predict_test395.md`, `predict_test395_control.py`)
+
+WD1 held, WE1 failed. After 2 / 1 / 60 (outside numeral runs) the next sign resembles a line opener: cosine 0.429 on A
+(547 tokens, p = 0.001), 0.652 on B (198, p = 0.004). Audit (not registered): the heading ends in a stroke pair, so
+heading + divider at line start was stripped and openers recomputed: 0.615 (p = 0.001) and 0.692 (p = 0.004). **Wells's
+claim that these markers divide words is supported**: a new unit starts after them. The stroked jars close lines in
+3.3% (A) and 13.6% (B) of tokens against 88.0% and 80.5% for 740 (WE1): they are not case endings in Wells's sense but
+name elements (set 186). Progress (goal streak 0). Tally, counting parts: 1617 held, 1563 failed (3180 registered).
