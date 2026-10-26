@@ -15031,3 +15031,13 @@ Fish signs (220-259) directly followed by an ending; counted (a numeral before t
 ## Results of set 561 (`hyp_s2_countedfish.py`, `results/predict_test561.md`)
 
 Held: none. A counted 520 18/44 vs 58/112; B 3/6 vs 14/33. Progress: none (session-2 goal streak 9).
+
+
+# Set 562, registered before testing (26 October 2026): session-2 goal loop 27, position of small and large units (two hypotheses)
+
+Relative position (index / (length - 1)) of set 552's counted signs, large group (740 out) against small (520 out)
+(`hyp_s2_unitpos.py`).
+
+- **UP1** On A the positions differ (Mann-Whitney two-sided p < 0.05); direction is B's prediction.
+- **UP2** Same direction on B (one-sided p < 0.05).
+- Progress rule: UP1 and UP2.
