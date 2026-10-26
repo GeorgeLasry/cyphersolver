@@ -264,3 +264,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G13 | 367 | **4.578** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | object type replicated within ICIT (split C; B has no type, so set 358's A to B failure was void): adopted, S 4.596 to 4.578; motif also passes, retest on top of type (progress; goal streak 0) |
 | G14 | 368 | 4.578 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | motif on top of type: weight 0; site: fixed gain 0.0002 (no progress; goal streak 1) |
 | G15 | 369 | **4.567** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | object subtype (copper / incised / moulded tablets, seal kinds) adopted: S 4.578 to 4.567, replicated on split C; region x type fails (progress; goal streak 0) |
+| G16 | 370 | 4.567 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | square seals vs moulded tablets: 7 skewed signs, 5 of 5 replicate on split C; overlaps the 'northern' signs of set 364 (progress; goal streak 0) |

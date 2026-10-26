@@ -11997,3 +11997,23 @@ checked on C's test lines (3+ tokens), binomial against 50% (`predict_test370.py
 - **SK2** The same for incised / copper tablets.
 - Progress rule: either holds (a replicated finding).
 
+## Results of the three-hundred-and-seventieth set (`predict_test370.py`, `results/predict_test370.md`)
+
+One held, one failed. Square seals against moulded tablets: 7 skewed signs on C's training lines (seals 2, 60; moulded
+tablets 158, 400, 700, 809, 904); 5 of 5 lean the same way on C's test lines (SK1, p = 0.031). Incised against copper:
+only 400 and 615 skewed, 1 testable (SK2). Caveat: 158, 400 and 700 are also set 364's 'northern' signs, and moulded
+tablets come mostly from Harappa; region and object kind are confounded, tested next. Progress: a replicated finding
+(goal streak 0). Tally, counting parts: 1599 held, 1527 failed (3126 registered; set 363 pending).
+
+# Three-hundred-and-seventy-first set, registered before testing (26 October 2026): goal loop 17, region and object kind separated (two hypotheses)
+
+Sets 364 and 370 share signs (158, 400, 700). Each effect is tested with the other held fixed (`predict_test371.py`):
+skews by Fisher p < 0.01 on A, replication on B where B has the field, else split C, as before.
+
+- **SR1** Region within square seals only (SEAL:S lines, Sindh against north; skews on A, checked on B lines whose
+  region is known, all B lines being treated as seals is not possible, so checked on split C's SEAL:S test lines):
+  75%+ of skews lean the same way, binomial p < 0.05.
+- **SR2** Object kind within the north only (north SEAL:S against TAB:B, skews on C-train, checked on C-test):
+  75%+ lean the same way, binomial p < 0.05.
+- Progress rule: either holds.
+
