@@ -14862,3 +14862,13 @@ Set 548 found that 22 of set 545's 30 long-distance pairs have one dominant midd
 (a fixed a-x-b sequence recurring), not frames with an open slot; only 8 have open middles (5 of 5 testable replicate,
 too few for a finding). Set 545's progress is withdrawn: the session-2 streak runs through it unbroken, so after set 549
 it is 14, not 4.
+
+
+# Set 550, registered before testing (26 October 2026): session-2 goal loop 15, open-slot frames (two hypotheses)
+
+Pairs a ... b (2+ apart, never adjacent on A, in 4+ A lines, positive PMI), the 200 highest by PMI, kept if the
+commonest middle string covers under half of their A lines (open slot) (`hyp_s2_frames.py`).
+
+- **FR1** 15+ open-slot frames are testable on B (both signs in 5+ B lines).
+- **FR2** 70%+ of them co-occur on B more than chance (PMI > 0).
+- Progress rule: FR1 and FR2 (frames with an open slot, replicated: a syntactic template).
