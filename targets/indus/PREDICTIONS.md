@@ -12221,3 +12221,14 @@ registered; HS2 had no length control and short texts recur more easily): within
 carry repeated, generic texts more often than large seals at the same length**; with set 379, large seals look
 individual and small seals formulaic. Progress (goal streak 0). Tally, counting parts: 1605 held, 1545 failed (3150
 registered).
+
+# Three-hundred-and-eighty-first set, registered before testing (26 October 2026): goal loop 27, repeated seal texts (two hypotheses)
+
+Set 380: small seals repeat texts. Clean ICIT square seals; texts of 2+ signs found on 2+ seals; all pairs of copies
+(`predict_test381.py`).
+
+- **RT1** Copies share the field motif more often than when motifs are shuffled among seals of the same site (1,000
+  shuffles, p < 0.05): the text goes with the emblem, beyond a shared site.
+- **RT2** Copies come from the same site more often than when sites are shuffled among seals (p < 0.05).
+- Progress rule: either holds.
+
