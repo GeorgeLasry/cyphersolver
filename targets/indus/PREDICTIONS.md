@@ -11775,3 +11775,23 @@ catch interactions of motif or region with sign context (`loopkit.domain_model`,
 - **DM1** A motif-domain model lowers S (S rule).
 - **DM2** A region-domain model (rtools.region of the site) lowers S (S rule).
 
+## Results of the three-hundred-and-fifty-seventh set (`predict_test357.py`, `results/predict_test357.md`, `predict_test357_control.py`)
+
+Both held as registered. Motif domain: fixed test 4.6354 -> 4.6153 (weight 0.30), A -> B 5.2070 -> 5.2045. Region
+domain: fixed test 4.6354 -> 4.6141, A -> B 5.2070 -> 5.1204 (weight 0.30). Audit (not registered): mixing any second
+model is an ensemble, so the same domain models were built over random groups of the same sizes (two hashes): motif-
+sized random groups gain 0.0009-0.0025 fixed, 0.0042-0.0076 A -> B; region-sized 0.0008-0.0022 and 0.0117-0.0120. The
+region model beats its control by ten times on the fixed test and seven times on A -> B: **the region of the find
+predicts sign context beyond what the global model knows**, replicated on Mahadevan's lines. The motif's A -> B gain is
+below its control: not adopted. Adopted: the region-domain model at weight 0.3 (`loopkit.REGION_W`); S 4.635 -> 4.614,
+A -> B 5.207 -> 5.120. From set 358 domain hypotheses must also beat the random-group control on both splits
+(`loopkit.run_domain_set`). Progress (goal streak 0). Tally, counting parts: 1591 held, 1508 failed (3099 registered).
+
+# Three-hundred-and-fifty-eighth set, registered before testing (25 October 2026): goal loop 4, site and object type on top of region (two hypotheses)
+
+Base now includes the region model. Two finer or crossing groupings, each as a further domain model mixed on top
+(`predict_test358.py`; rule: S rule and beat the mean of two random-group controls on both splits).
+
+- **DS1** A site-domain model (Mohenjo-daro, Harappa, Lothal ... as separate groups) lowers S beyond region.
+- **DS2** An object-type domain model (seal, tablet, pottery ...) lowers S beyond region.
+

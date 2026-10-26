@@ -31,11 +31,22 @@ def build_meta():
 META, OTHERS = build_meta()
 
 
-def base_probs(train, test):
+REGION_W = 0.3  # set 357 (DM2, audited against random groups): the region-domain model mixed in at weight 0.3
+
+
+def _plain(train, test):
     random.seed(2026)  # fit3's inner split uses the global generator (fixed after set 355)
     w, _ = fit3(train, MODEL['keys'])
     m = M3(train)
     return [[sum(w[k] * r[k] for k in w) for r in m.rows(t, MODEL['kn'])] for t in test]
+
+
+def base_probs(train, test):
+    pb = _plain(train, test)
+    if not REGION_W:
+        return pb
+    f = domain_model(lambda t, m: R.region(m.get(t, ('', '', ''))[0]))(train, META)
+    return [[(1 - REGION_W) * a + REGION_W * f(t, i) for i, a in enumerate(row)] for t, row in zip(test, pb)]
 
 
 def _bits(pb, pe, lam):
@@ -134,6 +145,40 @@ def test_pair(extra):
     a0, a1, la = evaluate(tr, te, extra)
     b0, b1, lb = evaluate(DA, DB, extra)
     return (a0, a1, la), (b0, b1, lb)
+
+
+def random_groups(real, salt):
+    """Lines assigned to groups of the same sizes as real's, by a fixed hash: the ensemble-only control (set 357 audit)."""
+    import hashlib
+    (tr, te), (DA, DB) = splits()
+    allines = sorted(set(tr) | set(te) | set(DA) | set(DB))
+    sizes = Counter(real(t, META) for t in allines)
+    order = sorted(allines, key=lambda t: hashlib.md5((salt + ' '.join(t)).encode()).hexdigest())
+    lab, k = {}, 0
+    for g, n in sizes.most_common():
+        for t in order[k:k + n]:
+            lab[t] = g
+        k += n
+    return lambda t, m: lab.get(t, '')
+
+
+def run_domain_set(num, title, hyps, gain=0.005):
+    """hyps: [(key, title, keyfn)]. Holds if the domain model's gains pass the S rule AND beat the mean gain of two
+    random-group controls of the same sizes on both splits (rule from set 358)."""
+    rd = R.Round(title, 'predict_test%d' % num)
+    held = []
+    for key, t, kf in hyps:
+        (a0, a1, la), (b0, b1, lb) = test_pair(domain_model(kf))
+        ctl = [test_pair(domain_model(random_groups(kf, salt))) for salt in ('a', 'b')]
+        ca = sum(x[0][0] - x[0][1] for x in ctl) / 2
+        cb = sum(x[1][0] - x[1][1] for x in ctl) / 2
+        ok = a0 - a1 >= gain and b1 < b0 and a0 - a1 > ca and b0 - b1 > cb
+        rd.rec(key, t, ['fixed test S %.4f -> %.4f (gain %.4f, weight %.2f; random groups %.4f)' % (a0, a1, a0 - a1, la, ca),
+                        'A -> B %.4f -> %.4f (gain %.4f, weight %.2f; random groups %.4f)' % (b0, b1, b0 - b1, lb, cb)], ok)
+        held.append(ok)
+    rd.rec('P', 'progress rule: either hypothesis holds', ', '.join('%s %s' % (k, o) for (k, _, _), o in zip(hyps, held)), any(held))
+    rd.finish()
+    return held
 
 
 def run_set(num, title, hyps, gain=0.005):
