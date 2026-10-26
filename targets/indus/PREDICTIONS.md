@@ -15112,3 +15112,12 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=heading). Large / small = se
 ## Results of set 567 (`hyp_s2_unit_heading.py`, `results/predict_test567.md`)
 
 Held: none. A 49 of 152 against 91 of 177; B 9 of 58 against 26 of 65. Progress: none (session-2 goal streak 5).
+
+
+# Set 568, registered before testing (26 October 2026): session-2 goal loop 33, small before large (two hypotheses)
+
+Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=order). Large / small = set 552's counted signs (740, 520 out).
+
+- **U1** On A: in lines with both, the small unit precedes the large one (binomial against 50%) (p < 0.05).
+- **U2** The same on B (p < 0.05).
+- Progress rule: U1 and U2.
