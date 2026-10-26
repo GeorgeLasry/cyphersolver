@@ -366,3 +366,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G110 | 464 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | lines with both endings almost absent (6 / 1): one name class per line (no progress; goal streak 5) |
 | G111 | 465 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | both name classes on one object: rare, at chance (no progress; goal streak 6) |
 | G112 | 466 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | formula texts and recurrence: too few to tell (no progress; goal streak 7) |
+| G113 | 467 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | star-name seals larger only unstratified; with length x site no effect (no progress; goal streak 8) |

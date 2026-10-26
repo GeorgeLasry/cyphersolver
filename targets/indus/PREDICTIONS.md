@@ -13663,3 +13663,8 @@ other way. Progress: none (goal streak 7). Tally, counting parts: 1649 held, 166
 - **SS2** Large seals carry numeral + fish more often, length band x site strata (Mantel-Haenszel p < 0.05).
 - Progress rule: SS2 holds (SS1 is unstratified).
 
+## Results of the four-hundred-and-sixty-seventh set (`predict_test467.py`, `results/predict_test467.md`)
+
+SS1 held, SS2 failed; no progress. Seals with numeral + fish are larger unstratified (median 29.2 against 27.2,
+p = 0.0016), but with length band x site strata the odds ratio is 1.22 (p = 0.33): text length. Progress: none (goal
+streak 8). Tally, counting parts: 1650 held, 1670 failed (3324 registered).
