@@ -3333,6 +3333,8 @@ concordance gives 600 multi-sign graffiti sequences with counts. Saved in data/g
 a sign-by-sign test of the graffiti against the Indus grammar possible, with their mapping, not one built here.
 Done as set 635: the graffiti pairs are no more Indus-like than under shuffled mappings (p = 0.16) or shuffled
 pairings (p = 0.14), and graffiti order does not follow Indus order (14 of 32). The likeness is in sign shapes only.
+Set 637: graffiti with an Indus parallel are not deeper within their sites (0.497 vs 0.513 depth rank). The book
+(Rajan & Sivanantham 2025) matches by shape only, prints no concordance and dates no graffiti layer: data/graffiti/book/SUMMARY.md.
 
 ## Audit (25 Sept 2026): part-transcriptions in the referent phrases
 
