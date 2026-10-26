@@ -10,7 +10,10 @@
    "year": 1586,
    "country": "France",
    "route": "Jean de Chourses, sieur de Malicorne, governor of Poitou (Niort) → Henri III",
-   "places": {"from": "Niort", "to": "Paris"},
+   "places": {
+    "from": "Niort",
+    "to": "Paris"
+   },
    "language": "French",
    "cleartext_in_document": "interspersed",
    "plaintext": {
@@ -196,6 +199,24 @@
    "kind": "control",
    "what": "measure_pages.py on all six aligned decodes: French-lexicon coverage (words of 4+ letters, best segmentation) 69.3% f. 162v, 68.4% c. 171, 71.6% c. 172 left, 81.1% c. 172 right, against 72.7% f. 162r and 71.4% f. 163r; same letters shuffled 18-32%. Letters on multi-valued labels 9.8-14.1%. The four new pages grade decoded, not read.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Brackx (issue #92) checked the split candidates on tiles cut by template matching (canvases 170 left, 172 left/right): Lb splits (barred £ = m, looped ℒ = b; m tokens on 172 moved to Lc), F, Lm (f. 162v) and y_ do not, cr probably splits but too few h tokens.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Brackx read f. 162v, canvas 171 and canvas 172 left/right in the f. 163r format with sized holes and English (reading_r3.md). Measured here (v10): 0.630, 0.672, 0.565, 0.790; all decoded, not read.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -240,8 +261,8 @@
   "gaps": [
    {
     "item": "f. 162v and canvases 171-172 (four pages): decoded, not read",
-    "blocker": "not-attempted",
-    "detail": "Brackx's raw aligned decode received (issue #92 gist, 23 Oct 2026): lexicon coverage 68-81% of decoded letters (shuffled 22-32%), 10-14% of letters on multi-valued labels, no reading or margin crib. Next: the per-token shape checks on canvas 172 tiles for F (d / la, bar or no bar), cr (h / s), Lb/Lm (b / m / n) and y_ (s / p), then re-decode and build readings"
+    "blocker": "no-key-material",
+    "detail": "Brackx's readings measure 0.630, 0.672, 0.565, 0.790 (issue #92, 25 Oct 2026); split candidates checked (Lb split; F, Lm, y_ not; cr probable). No contemporary decipherment of these pages or of another letter in this key."
    },
    {
     "item": "f. 162r and f. 163r B: decoded, not read (0.622, 0.694)",
@@ -252,9 +273,14 @@
     "item": "f. 163r A: the opening group, the word before 'porteur', and the supplied l of lesdicts",
     "blocker": "too-short",
     "detail": "single groups at the edges of a two-line stretch; the margin has no word for them"
+   },
+   {
+    "item": "Lb/Lm on f. 162r, f. 163 and canvas 171, and cr (h / s)",
+    "blocker": "not-attempted",
+    "detail": "f. 162r positions misaligned, f. 163 and canvas 171 have none; new positions would have to be cut"
    }
   ],
-  "notes": "Contributed by Michael Brackx (issue #92, 22-23 Oct 2026). Status in progress: all six pages' aligned decodes and the 195-label shape legend received; the per-token shape checks of the merged labels are the next step.",
+  "notes": "Contributed by Michael Brackx (issue #92). All six pages read as far as the key allows; split candidates checked. Status in progress only for the Lb/Lm check where no positions exist.",
   "texts": [
    {
     "doc": "ff162-164",
@@ -318,7 +344,10 @@
     "language": "fr",
     "state": "decoded, not read",
     "summary": "Raw decode of f. 162v (canvas 170 left, 31 lines), not edited by hand; no reading built yet.",
-    "note": "23 Oct 2026: 69.3% of decoded letters fall in French words of 4+ letters (shuffled letters 22-32%); 14.1% of letters on multi-valued labels, over the 3% look-alike limit (measure_pages.py)."
+    "note": "26 Oct 2026: Brackx's reading (issue #92, reading_r3.md) measures 0.63 (v10); hand-chosen readings under 1% of letters; no contemporary decipherment: decoded, not read.",
+    "reading": "texts/reading_f162v.md",
+    "translation": "texts/reading_f162v_en.md",
+    "read_share": 0.63
    },
    {
     "doc": "ff162-164",
@@ -328,7 +357,10 @@
     "language": "fr",
     "state": "decoded, not read",
     "summary": "Raw decode of canvas 171 (left block 4 lines, right block 16), not edited by hand; no reading built yet.",
-    "note": "23 Oct 2026: 68.4% of decoded letters fall in French words of 4+ letters (shuffled letters 22-32%); 9.8% of letters on multi-valued labels, over the 3% look-alike limit (measure_pages.py)."
+    "note": "26 Oct 2026: Brackx's reading (issue #92, reading_r3.md) measures 0.672 (v10); hand-chosen readings under 1% of letters; no contemporary decipherment: decoded, not read.",
+    "reading": "texts/reading_c171.md",
+    "translation": "texts/reading_c171_en.md",
+    "read_share": 0.672
    },
    {
     "doc": "ff162-164",
@@ -338,7 +370,10 @@
     "language": "fr",
     "state": "decoded, not read",
     "summary": "Raw decode of canvas 172 left (31 lines), not edited by hand; no reading built yet.",
-    "note": "23 Oct 2026: 71.6% of decoded letters fall in French words of 4+ letters (shuffled letters 22-32%); 13.3% of letters on multi-valued labels, over the 3% look-alike limit (measure_pages.py)."
+    "note": "26 Oct 2026: Brackx's reading (issue #92, reading_r3.md) measures 0.565 (v10); hand-chosen readings under 1% of letters; no contemporary decipherment: decoded, not read.",
+    "reading": "texts/reading_c172l.md",
+    "translation": "texts/reading_c172l_en.md",
+    "read_share": 0.565
    },
    {
     "doc": "ff162-164",
@@ -348,7 +383,10 @@
     "language": "fr",
     "state": "decoded, not read",
     "summary": "Raw decode of canvas 172 right (24 lines, then the clear close), not edited by hand; no reading built yet.",
-    "note": "23 Oct 2026: 81.1% of decoded letters fall in French words of 4+ letters (shuffled letters 22-32%); 11.1% of letters on multi-valued labels, over the 3% look-alike limit (measure_pages.py)."
+    "note": "26 Oct 2026: Brackx's reading (issue #92, reading_r3.md) measures 0.79 (v10); hand-chosen readings under 1% of letters; no contemporary decipherment: decoded, not read.",
+    "reading": "texts/reading_c172r.md",
+    "translation": "texts/reading_c172r_en.md",
+    "read_share": 0.79
    }
   ],
   "key_file": "brackx2026/key_r2.txt"

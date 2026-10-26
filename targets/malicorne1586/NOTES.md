@@ -1,7 +1,7 @@
 # Malicorne to Henri III, Niort, 21 April 1586: cipher letter in BnF fr. 15572 ff. 162–164 (Malicorne's cipher)
 
-Status: in progress (all six pages' aligned decodes and the shape legend received 23 Oct 2026; the per-token shape
-checks of the merged labels are next).
+Status: in progress (26 Oct 2026: all six pages read as far as the key allows and the split candidates checked
+(issue #92); left open: the `Lb`/`Lm` check on f. 162r, f. 163 and canvas 171, where no usable line positions exist).
 
 **Read in part, 24 Oct 2026.** Contributed by Michael Brackx (@brackxm, issue #92, 22–23 Oct 2026), with Claude Code
 (Claude Opus 5.5). Method: **read with known key**: Tomokiyo's key table ("Malycorne's Cipher", Cryptiana henryiii
@@ -63,6 +63,26 @@ four letters or more under the best segmentation, against the same letters shuff
 The four new pages decode as well as f. 162r, whose reading measured 0.622: French throughout, but with 10-14% of
 letters on two-valued labels and no margin to confirm the choices. They are *decoded, not read*.
 
+**Readings of the four pages and the split checks (Brackx, issue #92 comment of 25 Oct 2026; `brackx2026/reading_r3.md`,
+split per page into `texts/reading_<page>.md` and `_en.md`).** Measured here with `v10_relabel.share`:
+
+| page | words | holes | read_share | look-alike share (hand-chosen) | state |
+|---|---|---|---|---|---|
+| f. 162v | 145 | 85 | 0.630 | 8 of 948 letters (0.8%) | decoded, not read |
+| canvas 171 | 92 | 45 | 0.672 | 2 of 633 (0.3%) | decoded, not read |
+| canvas 172 left | 104 | 80 | 0.565 | 0 of 925 | decoded, not read |
+| canvas 172 right | 132 | 35 | 0.790 | 4 of 673 (0.6%) | decoded, not read |
+
+Sentences build only between holes: f. 162v ll. 1-6, [?Laval] dead of grief after his two brothers were killed at
+Saintes; canvas 172 right, soldiers with intelligences with the enemy and the companies still to come; canvas 171,
+ladders of [?wood] and rope to surprise a town on an intelligence.
+
+Split checks on tiles cut by template matching (canvases 170 left, 172 left and right): **`Lb` splits** (barred £ =
+*m*, looped ℒ = *b*; the *m* tokens on canvas 172 moved to `Lc`, decoded text unchanged; two-valued share 172 left
+13.3% to 11.9%, 172 right 11.1% to 10.3%); `F` does not (all 19 tokens the same barred f); `Lm` does not on f. 162v;
+`y_` does not (one possible ꝩ flagged); `cr` probably splits (2 *h* tokens a crossed p with a bowl, 5 *s* tokens a
+dagger-like stem) but too few *h* to relabel.
+
 **Split candidates** (Brackx's legend): `F` (*d* / *la*: Tomokiyo draws *la* as the same looped f with a bar, so a bar
 check per token should separate them); `cr` (*h* / *s*: a crossed p and a dagger-like stroke on the canvas 172 tiles);
 `Lb` (*b* / *m*) and `Lm` (*m* / *n*): script ℒ, barred £ and plain L not told apart in transcription; `a2` (*n* / *o*);
@@ -98,7 +118,8 @@ Six hand-chosen readings (7 letters, all on two-valued labels: 0.6% of f. 162r's
 
 ## Remaining gaps
 
-- f. 162v and canvases 171-172 (four pages): decoded, not read (lexicon coverage 68-81%, 10-14% of letters on multi-valued labels) - blocker: not-attempted; the per-token shape checks on canvas 172 (`F` bar, `cr`, `Lb`/`Lm`, `y_`), then re-decode and build readings
+- f. 162v and canvases 171-172 (four pages): decoded, not read (read share 0.565-0.790) - blocker: no-key-material; readings built and the split candidates checked (issue #92); no contemporary decipherment of these pages or of another letter in this key
+- `Lb`/`Lm` on f. 162r, f. 163 and canvas 171, and `cr` (h / s) - blocker: not-attempted; f. 162r positions are misaligned and f. 163 and canvas 171 have none; new positions would have to be cut
 - f. 162r and f. 163r B: decoded, not read (0.622, 0.694) - blocker: no-key-material; 13 labels still carry two values with shapes not split at this resolution, and the B margin is mostly illegible between 'argent' and 'descouvertes'
 - f. 163r A: the opening group, the word before 'porteur', the supplied l of lesdicts - blocker: too-short; single groups at the edges of a two-line stretch with no margin word
 
@@ -108,5 +129,5 @@ Six hand-chosen readings (7 letters, all on two-valued labels: 0.6% of f. 162r's
 - [x] clear-pages: the f. 163r margin decipherment used as the crib; no clear copy found among ff. 162-173
 - [x] known-keys: Tomokiyo's Malycorne table applied and corrected
 - [x] print: Tomokiyo gives the key table only; no edition found by Brackx's web search
-- [ ] key-rebuild: aligned decodes of all six pages and the 195-label shape legend received (23 Oct 2026); the per-token shape checks of the merged labels are not yet done
-- [ ] retry: after the four pages arrive
+- [x] key-rebuild: aligned decodes of all six pages and the 195-label shape legend (23 Oct 2026); split candidates checked on tiles (25 Oct 2026): `Lb` split, `F`, `Lm`, `y_` not, `cr` probable
+- [x] retry: all four pages re-decoded after the `Lb` split (no letter changes) and read in the f. 163r format (Brackx, 25 Oct 2026)

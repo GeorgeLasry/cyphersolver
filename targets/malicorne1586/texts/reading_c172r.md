@@ -1,0 +1,5 @@
+# canvas 172 right (24 cipher lines): reading in the decode's spelling (Michael Brackx, issue #92, 25 Oct 2026; brackx2026/reading_r3.md)
+
+> {word} = a two-valued label read against the decoder's choice; [?word] doubtful; [x] supplied; [?n] an unread word or group of n decoded letters.
+
+[?5] forces [?2] celle de mon [?neueu] le comte du Lude; ie l'ai m[i]se a [?Fontenai]. Et ne me puis plus taire que depuis que suis en mon [?gouernement], quelque instance que i'en aie [?3] [?2] [?3] [?5] {d'icelle}, {ce} ne m'a este que compte sans nombre, et ne l'ai en [?4] ueue iusques ici plus [?8] que de {quinse} ou [?uingt] cheuauls; a [?9] [?7] [?2] ne m'en imputer [?1] faute, comme [?4] [?2] a des [?7] il i en [?4] [?4] bien des bons uallets, et soubs main ont de grandes intelligences auecq uos ennemis; ainsi que i'espere auoir cest [?honneur] [?2] quelque i'aduance tant que ie puis. Les aultres compaignees dont i'ai dernierement escrit, et lors qu'elles seront toutes uenues et aurai [?5] [?4] [?6] elles seront composees, [?ne] fauldrai d'en aduertir [?1] [?5] [?3]; car ie n'ai rien en {ce} monde plus [?cherement] recommande que [?4] seruise et mon [?honneur] [?4]
