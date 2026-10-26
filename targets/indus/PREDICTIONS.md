@@ -12181,3 +12181,14 @@ signs recur: **seal size goes with what is written**: large seals favour the str
 189) and the long-stroke 2; small seals the yoke-carrier ligature 156, the marker 400 and the numeral 5. As registered,
 this is a second look at set 376's question and weaker than an independent replication. Workmanship: no skewed sign.
 Progress (goal streak 0). Tally, counting parts: 1602 held, 1544 failed (3146 registered).
+
+# Three-hundred-and-seventy-ninth set, registered before testing (26 October 2026): goal loop 25, size signs against length and site (two hypotheses)
+
+Longer texts sit on larger seals (set 376), and sites may differ in seal size. The seven size signs of set 378 (large 32,
+706; small 156, 390, 400, 5, 590) are tested per line (sign present or not) on all distinct square-seal lines with a size
+(`predict_test379.py`).
+
+- **LZ1** Within text-length bands (Mantel-Haenszel), 4+ of the 7 signs keep their direction at p < 0.05.
+- **LZ2** Within Mohenjo-daro alone (median split there), 5+ of the 7 lean the same way.
+- Progress rule: LZ1 holds (the size effect is not text length).
+
