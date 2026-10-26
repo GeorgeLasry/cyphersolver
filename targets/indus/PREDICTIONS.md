@@ -11639,3 +11639,16 @@ unrelated signs: outside the cage and the jar strokes, a drawn mark mostly keeps
 sign of the same kind), and the few shifts (P015 'man bracketed by tall lines' 18% final against 84%; P238, P306, P345)
 are single pairs with no replication. DM5 met as registered, but it rests on a test that cannot fail, so it is not counted
 as progress. Progress: none (streak 1 once set 350, run afterwards, counted as progress). Tally, counting parts: 1586 held, 1495 failed (3081 registered).
+
+# Three-hundred-and-fifty-second set, registered before testing (25 October 2026): decipherment loop 177, split-half check of the set 350 configuration (three hypotheses)
+
+Streak 1. Set 350 raised the referent line to 5.06% with learned-class units. Independent check as sets 340 and 349:
+five random half-splits of the distinct texts (seeds 3091-3095), both directions, held-out matches against 200 joint
+shuffles; held-out precision against 5% (`predict_test352.py`; `predict_test308.matches` taught the learned-class keys).
+The 50 classes are learned once on all distinct lines (text only, no pictures), as in set 350. A validation: a failure of
+TL1 downgrades the line; no progress either way. Not measured before registering.
+
+- **TL1** The configuration is confirmed on the five split-halves (p < 0.05).
+- **TL2** Its held-out precision is at least 5%.
+- **TL3** Progress rule: none (validation; recorded as failing).
+

@@ -23,6 +23,9 @@ def split(P, seed=308):
     return H1, H2
 
 
+LEARNED = None  # set by predict_test352 (predict_test350.lc)
+
+
 def matches(u, H):
     """(unit label, object picture) for every unit found in a held-out object."""
     out = []
@@ -35,9 +38,10 @@ def matches(u, H):
         lab, n = key
         fl = lab.startswith('F')
         dl = lab.startswith('D')  # decade-family units (set 349); no effect on earlier runs
-        pool = lab[1:] if (fl or dl) else lab
+        ll = lab.startswith('L')  # learned-class units (set 352); no effect on earlier runs
+        pool = lab[1:] if (fl or dl or ll) else lab
         for t, m in H[pool][1]:
-            tt = fam(t) if fl else tuple(g if g == '|' else ('f%d' % (int(g) // 10) if g.isdigit() else g) for g in t) if dl else t
+            tt = LEARNED(t) if ll else fam(t) if fl else tuple(g if g == '|' else ('f%d' % (int(g) // 10) if g.isdigit() else g) for g in t) if dl else t
             for g in X.grams_of(tt, n):
                 if g in qq:
                     out.append((qq[g], m, t))
