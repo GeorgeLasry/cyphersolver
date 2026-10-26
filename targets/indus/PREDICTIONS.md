@@ -13231,3 +13231,8 @@ Unicorn square seals (field 18 Bull1) with the 'standard' before the animal (fie
 - **SN2** At equal length they differ in closing with 740 / 520 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-ninth set (`predict_test439.py`, `results/predict_test439.md`)
+
+Both failed. One sign skewed (151, without the standard), not replicated; endings alike (odds ratio 1.24, p = 0.25).
+The cult standard on unicorn seals does not change the text. Progress: none (goal streak 6). Tally, counting parts:
+1633 held, 1632 failed (3269 registered).
