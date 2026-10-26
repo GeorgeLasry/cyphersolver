@@ -12268,3 +12268,10 @@ Set 380: small square seals carry repeated texts, mostly of two signs. Clean ICI
   unique texts (p < 0.05): repeated texts are not personal names.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-third set (`predict_test383.py`, `results/predict_test383.md`)
+
+Both failed; TW2 the other way. Repeated two-sign texts contain a numeral no more often (11 of 32 against 30 of 111,
+p = 0.27). At equal length repeated texts end in 740 / 520 *more* often than unique ones (odds ratio 2.72, p = 0.0008):
+the repeated seal texts are name-and-ending texts, the same name or title on several seals, not counts or labels.
+(Observation, not a registered result.) Progress: none (goal streak 3). Tally, counting parts: 1605 held, 1551 failed
+(3156 registered).
