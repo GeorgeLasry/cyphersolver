@@ -12311,3 +12311,13 @@ Both failed. 689 lines with a period: like for like (length x subtype), late tex
 as early ones (odds ratio 0.80, p = 0.58) and use the heading as often (1.13, p = 0.92). The Harappa formula did not
 change over Periods 2-5 once object kind is held, as set 228 found for the grammar. Progress: none (goal streak 1).
 Tally, counting parts: 1607 held, 1553 failed (3160 registered).
+
+# Three-hundred-and-eighty-sixth set, registered before testing (26 October 2026): goal loop 32, material and tablet kind (two hypotheses)
+
+Skew test of set 371 (C-train Fisher p < 0.01, 10+ tokens; C-test 3+ tokens, 75%+ same way, binomial p < 0.05)
+(`predict_test386.py`).
+
+- **FM1** Faience against steatite square seals (ICIT field 13).
+- **FM2** Incised (TAB:I) against moulded (TAB:B) tablets.
+- Progress rule: either holds.
+
