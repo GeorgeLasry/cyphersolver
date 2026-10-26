@@ -11709,3 +11709,14 @@ and 'three worlds' give no structural prediction and are not tested. Counts of t
 - **PL7** Progress rule: 4 or more of PL1-PL6 hold (the later readings fit the structure better than the 1994 key did);
   otherwise the readings are recorded as not supported.
 
+## Results of the three-hundred-and-fifty-fourth set (added after the test; `predict_test354.py`, `results/predict_test354.md`)
+
+Two held, five failed. The stroked bull's heads (742-746) open the line in 22% of A tokens against 0.5% for 740 (PL1,
+p < 0.0001; B 14 of 30 against 6 of 360), and 741 shares 740's preceding signs (cosine 0.181, p = 0.001; PL2). The
+claims that would carry the readings fail: the caged fish do not pattern with the spear 520 (PL3, p = 0.48), the two
+long strokes not with the fish (PL4, p = 0.48), six + fish is not followed by the yoke-carrier beyond chance (PL5: 1 of
+10, p = 0.10), and the yoke-carrier ligatures do not share 151's contexts (PL6, p = 0.08). The two that held do not
+support the readings as such: PL1 restates Parpola's own observation ("often text-initial", the basis of his *Ataan*)
+and set 186's finding on stroked jars, and PL2 is what set 351 found for marked signs in general (a mark keeps the
+job). Parpola's later readings are not supported beyond the positional facts they were built on. Progress: none
+(streak 3). Tally, counting parts: 1589 held, 1502 failed (3091 registered).
