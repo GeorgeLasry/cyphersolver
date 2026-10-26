@@ -14154,3 +14154,12 @@ Square seals with a motif and a size carrying 156, 400 or 590 (first found count
 
 Both failed. Mohenjo-daro 26 / 42 / 39, Harappa 6 / 10 / 14 (156 / 400 / 590; p = 0.60); unicorn 31 / 45 / 62, other 8 /
 12 / 9 (p = 0.39). Progress: none (goal streak 7). Tally, counting parts: 1668 held, 1716 failed (3389 registered).
+
+# Five-hundred-and-first set, registered before testing (26 October 2026): goal loop 147, small-seal signs by size and phase (two hypotheses)
+
+Square seals with a motif and a size carrying 156, 400 or 590 (`predict_test501.py`).
+
+- **SG1** The three signs sit on seals of different sizes (Kruskal-Wallis p < 0.05).
+- **SG2** At Mohenjo-daro the choice differs between Early + Intermediate and Late phases (chi-square p < 0.05).
+- Progress rule: either holds.
+
