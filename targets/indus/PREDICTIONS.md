@@ -12789,3 +12789,10 @@ null (`predict_test411.py`).
 - **CR2** ICIT seals at Mohenjo-daro and Harappa only are local (p < 0.05).
 - Progress rule: none (audit).
 
+## Results of the four-hundred-and-eleventh set (`predict_test411.py`, `results/predict_test411.md`)
+
+Both failed (audit). ICIT seals at Mohenjo-daro, Harappa and Lothal: 0.621 over 69 bodies (p = 0.57); at Mohenjo-daro
+and Harappa: 0.699 over 62 (p = 0.26). Site mix does not explain the set 408 / 410 conflict: ICIT seals are not local
+body-weighted, Mahadevan's seal-like lines are. The two samples disagree; the M77 lines lack types, and its 'no 400'
+proxy may admit incised tablets, which are Harappan. Seal-name locality is left unresolved. Progress: none (goal streak
+1). Tally, counting parts: 1622 held, 1589 failed (3213 registered).

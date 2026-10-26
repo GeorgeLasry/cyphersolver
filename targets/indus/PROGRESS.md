@@ -310,3 +310,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G54 | 408 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: body-weighted, ICIT seals not local (set 390 downgraded); M77 still local (audit; no progress; goal streak 10) |
 | G55 | 409 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | moulded-tablet section shape: no skews, no model gain (no progress; goal streak 11) |
 | G56 | 410 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | M77 seal-like lines local body-weighted (p = 0.001); conflicts with set 408 on ICIT seals; question open (progress under the rule; goal streak 0) |
+| G57 | 411 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | ICIT seals at the big sites still not local: ICIT and M77 disagree, unresolved (audit; no progress; goal streak 1) |
