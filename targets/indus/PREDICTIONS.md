@@ -15285,3 +15285,12 @@ Held: R1, R2. A 92 of 95 final; B 39 of 41 final. Progress: none (session-2 goal
 ## Results of set 580 (`hyp_s2_r_jarinit.py`, `results/predict_test580.md`)
 
 Held: R1, R2. A 5 of 945 initial; B 6 of 353 initial. Progress: none (session-2 goal streak 2).
+
+
+# Set 581, registered before testing (26 October 2026): session-2 goal loop 46, numerals open lines more than other signs (consistency) (two hypotheses)
+
+(`hyp_s2_r.py`, VARIANT=numinit). Rare = 3 or fewer tokens in the sample.
+
+- **R1** On A: numerals open lines more than other signs (consistency) (p < 0.05).
+- **R2** The same on B.
+- Progress rule: none (re-tests a known rule).
