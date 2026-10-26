@@ -11971,3 +11971,12 @@ Base: region + length + object type. Rule of set 358 (S rule with sign tokens, r
 Both failed. On top of the type model the motif takes weight 0 (its set 367 gain was the type difference again: motifs
 are on seals); the site gains 0.0002 on the fixed test (A -> B 0.0102). Progress: none (goal streak 1). Tally, counting
 parts: 1597 held, 1525 failed (3122 registered; set 363 pending).
+
+# Three-hundred-and-sixty-ninth set, registered before testing (25 October 2026): goal loop 15, object subtype and region x type (two hypotheses)
+
+On top of region + length + type; split C as replication (B has no type); rule of set 358 (`predict_test369.py`).
+
+- **ST1** A subtype domain model (ICIT type to two levels: SEAL:S square, SEAL:R, TAB:B moulded, TAB:I incised, TAB:C
+  copper, POT:T ...) lowers S on the fixed split and on C.
+- **ST2** A region x type domain model lowers S on the fixed split and on C.
+

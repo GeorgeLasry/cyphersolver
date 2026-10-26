@@ -44,6 +44,19 @@ def build_dir():
 DIRECTION = build_dir()
 
 
+def build_subtype():
+    A, B, rowsA, recs, F = R.load_all()
+    d = defaultdict(Counter)
+    for r in list(rowsA) + list(F):
+        for ln in r['seq']:
+            if ln and r.get('type'):
+                d[tuple(ln)][':'.join(r['type'].split(':')[:2])] += 1
+    return {ln: c.most_common(1)[0][0] for ln, c in d.items()}
+
+
+SUBTYPE = build_subtype()
+
+
 def build_depth_place():
     A, B, rowsA, recs, F = R.load_all()
     dep, by_site = {}, defaultdict(list)
