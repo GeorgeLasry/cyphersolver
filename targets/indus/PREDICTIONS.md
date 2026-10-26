@@ -14141,3 +14141,12 @@ too (0.57, p = 0.025). Sets 469 and 380 stand against the animal; set 493's unic
 Both held (audit). With motif strata 706 leans to large seals (odds ratio 6.40, p = 0.0015) and 156 / 400 / 590 to small
 ones (0.35, p < 0.0001). Set 430's core stands against length, site, a second dimension and the animal. Progress: none
 (goal streak 6). Tally, counting parts: 1668 held, 1714 failed (3387 registered).
+
+# Five-hundredth set, registered before testing (26 October 2026): goal loop 146, the choice among the small-seal signs (two hypotheses)
+
+Square seals with a motif and a size carrying 156, 400 or 590 (first found counts) (`predict_test500.py`; chi-square).
+
+- **CH1** The choice differs between Mohenjo-daro and Harappa (p < 0.05).
+- **CH2** The choice differs between unicorn and other-animal seals (p < 0.05).
+- Progress rule: either holds.
+
