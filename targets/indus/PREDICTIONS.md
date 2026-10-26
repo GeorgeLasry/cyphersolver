@@ -15194,3 +15194,12 @@ Held: none. fixed gain 0.0000, A -> B gain 0.0000. Progress: none (session-2 goa
 ## Results of set 573 (`hyp_s2_q_single.py`, `results/predict_test573.md`)
 
 Held: none. single: [False, False]. Progress: none (session-2 goal streak 11).
+
+
+# Set 574, registered before testing (26 October 2026): session-2 goal loop 39, what follows a mid-line ending (two hypotheses)
+
+(`hyp_s2_q.py`, VARIANT=afterend)
+
+- **Q1** On A: the sign after a mid-line ending (not 400 / 90) is an opener or numeral more often than signs at the same positions in general (p < 0.05 where a test applies).
+- **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
+- Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
