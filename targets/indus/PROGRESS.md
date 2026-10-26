@@ -358,3 +358,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G102 | 456 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | second negative control (record parity): nothing; methods pass (control; no progress; goal streak 10) |
 | G103 | 457 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish share before the formula = before plain 520: the formula is the 520 class in fuller form (no progress; goal streak 11) |
 | G104 | 458 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | calibration: 0 of 20 random labellings give a skew or ending effect (calibration; no progress; goal streak 12) |
+| G105 | 459 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | moulded tablets with the counted pot 700 are smaller (16.5 vs 24.0): count tokens; longer texts on larger incised tablets (trivial) (progress under the rule; goal streak 0) |

@@ -13541,3 +13541,10 @@ Tablets with a recorded first dimension (ICIT field 31) (`predict_test459.py`).
 - **TZ2** Moulded tablets carrying the counted pot 700 differ in size from those without (two-sided Mann-Whitney).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fifty-ninth set (`predict_test459.py`, `results/predict_test459.md`)
+
+Both held. Longer texts on larger incised tablets (rho 0.39, 541 tablets; close to trivial: more text needs more room).
+Moulded tablets carrying the counted pot 700 are smaller: median 16.5 (219) against 24.0 (486), p < 0.0001. The 'N
+pots' tablets are small tokens, as the reading of tablets as tokens (Meadow and Kenoyer 2000; DOSSIER section 3.6)
+expects; the size difference itself is new here. Not length-stratified. Progress under the rule (goal streak 0).
+Tally, counting parts: 1648 held, 1656 failed (3308 registered).
