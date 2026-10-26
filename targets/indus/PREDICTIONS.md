@@ -15125,3 +15125,13 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=order). Large / small = set 
 ## Results of set 568 (`hyp_s2_unit_order.py`, `results/predict_test568.md`)
 
 Held: none. A small first in 7 of 12 lines; B small first in 1 of 2 lines. Progress: none (session-2 goal streak 6).
+
+
+# Set 569, registered before testing (26 October 2026): session-2 goal loop 34, previous sign's family x position from the start (two hypotheses)
+
+A context model p(sign | family of the previous sign, position from the start, capped at 5), mixed onto the S base (length, type, subtype, length x subtype); uses only earlier signs
+(`hyp_s2_ctx_famposstart.py`, `loopkit.ctx_model`).
+
+- **CT1** S on the fixed test falls by 0.005+ and sign-token bits fall.
+- **CT2** S on A -> B falls and sign-token bits fall.
+- Progress rule: CT1 and CT2.
