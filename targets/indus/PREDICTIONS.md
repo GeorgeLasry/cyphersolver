@@ -13794,3 +13794,7 @@ registered).
 - **SJ2** They differ in carrying 2 or 60 mid-line (the heading's stroke companions and set 395's markers; two-sided).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-sixth set (`predict_test476.py`, `results/predict_test476.md`)
+
+Both failed: stroked jars odds ratio 1.06 (p = 0.82); mid-line 2 / 60 1.17 (p = 0.33). Progress: none (goal streak 7).
+Tally, counting parts: 1653 held, 1683 failed (3341 registered).

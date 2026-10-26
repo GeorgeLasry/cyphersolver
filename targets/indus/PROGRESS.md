@@ -375,3 +375,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G119 | 473 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 90 not size-linked; no-repeat texts lean large (converse of set 469, consistency) (no progress; goal streak 4) |
 | G120 | 474 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 740 and post-ending 400 not size-linked (no progress; goal streak 5) |
 | G121 | 475 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 520 and the short form not size-linked; only the long form is (no progress; goal streak 6) |
+| G122 | 476 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | stroked jars and mid-line 2/60 not size-linked (no progress; goal streak 7) |
