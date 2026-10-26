@@ -14321,3 +14321,10 @@ Both failed: 840 odds ratio 0.94 (p = 0.99); 176 1.44 (p = 0.41). Progress: none
 - **S692** They differ in carrying 692 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-thirteenth set (`predict_test513.py`, `results/predict_test513.md`)
+
+S920 failed, S692 held at p = 0.011 (odds ratio 3.20). Sets 505-513 tested 18 single signs one after another at 0.05,
+so about one such hit is expected by chance; 692 does not pass a correction for the 18 (0.011 x 18 = 0.19), and set
+430's scan at p < 0.01 did not pick it. Recorded as a probable false positive, not progress, although the registered P
+line reads 'holds'; the single-sign series is stopped here. Progress: none (goal streak 12). Tally, counting parts:
+1670 held, 1740 failed (3415 registered).
