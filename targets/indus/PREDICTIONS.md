@@ -16400,3 +16400,16 @@ followers. A direct test: distinct texts identical except at one position, where
 Both failed. 892 and 700 alternate in one minimal pair on A (matched pairs 0.25, p = 0.15) and one on B (0.67, p =
 0.51). 892 does not replace 700 inside the same formulas; set 593's shared contexts stand as a distributional
 resemblance only. Progress: none.
+
+# Set 649, registered before testing (26 October 2026): lead 8, restoration against intact duplicates (two hypotheses)
+
+Tier 3's restoration line was scored against Mahadevan's readings (sets 283-314: 29 of 75 against a neighbour-rule
+baseline of 23). A second truth source: ICIT lines with one illegible sign whose intact duplicates (same length, same
+signs elsewhere: mould copies, sealings, repeated texts) agree on the missing sign; 71 such lines (counted before
+registering; results not looked at). The model is retrained without any copy of the line (predict_test283.copy_of) and
+ranks 150 candidates; baselines: the neighbour rule of set 285 and the commonest sign (`predict_test649.py`).
+
+- **RD1** The model's first guess is right more often than the neighbour rule (binomial against its rate, p < 0.05;
+  10+ cases).
+- **RD2** The first guess is right in 30%+ of cases.
+- Progress rule: RD1 and RD2.
