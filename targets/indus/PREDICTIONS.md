@@ -13165,3 +13165,14 @@ UA1 failed, UA2 held (audit). Within length bands 706 seals are large more often
 p = 0.083; within Mohenjo-daro 706 seals are larger (24 against 51, p < 0.0001). Set 433 stands for Mohenjo-daro, with
 the caveat that part of the step is text length (706 lines are long). Progress: none (goal streak 1). Tally, counting
 parts: 1633 held, 1622 failed (3259 registered).
+
+# Four-hundred-and-thirty-fifth set, registered before testing (26 October 2026): goal loop 81, seal size with marked signs (two hypotheses)
+
+Set 433: the stroked U goes with larger seals. Other marked signs (`predict_test435.py`; one-sided Mann-Whitney, square
+seals with a size, not length-stratified):
+
+- **MS1** Seals with a stroked jar (741-746) are larger than seals with the plain jar 740 and no stroked jar.
+- **MS2** Seals with a caged fish (226, 232, 153, 236, 241) are larger than seals with a plain fish (220, 231, 233, 235,
+  240) and no caged one.
+- Progress rule: either holds.
+
