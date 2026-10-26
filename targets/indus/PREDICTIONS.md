@@ -14308,3 +14308,7 @@ parts: 1669 held, 1737 failed (3411 registered).
 - **S176** They differ in carrying 176 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-twelfth set (`predict_test512.py`, `results/predict_test512.md`)
+
+Both failed: 840 odds ratio 0.94 (p = 0.99); 176 1.44 (p = 0.41). Progress: none (goal streak 11). Tally, counting parts:
+1669 held, 1739 failed (3413 registered).
