@@ -16323,3 +16323,15 @@ short-label head predicts the motif beyond shuffles (67 seals, p = 0.023), long-
 0.22). But the heads are nearly all on one to five seals, mostly with the default bull; no head with 3+ seals goes with
 another animal. The signal is weak, from one sample, below the stricter bar used since set 517; it needs replication
 before it counts. Progress: nominal under the registered rule, not claimed.
+
+# Set 645, registered before testing (26 October 2026): lead 4, strokes on Indus-script seals found abroad (two hypotheses)
+
+Seals from the Gulf, Mesopotamia, Iran and Central Asia (ICIT regions; 42 objects, seals only, legible runs of 2+)
+break the grammar and use strokes mid-line; if foreign names were spelled with sound signs, strokes there would not
+count things. Home = Inter-Riverine, Lower Indus, Gujarat seals. Counted signs = 50%+ of 8+ home tokens after a numeral
+(`predict_test645.py`).
+
+- **GS1** Abroad a stroke sign is followed by a usual counted sign less often than at home (Fisher one-sided p < 0.05).
+- **GS2** Abroad, stroke signs stand in more varied (left, right) contexts per token than equal-sized home samples
+  (1,000 draws, p < 0.05).
+- Progress rule: GS1 and GS2.
