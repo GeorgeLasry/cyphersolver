@@ -47,3 +47,33 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   Catálogo II: cipher for the Aranjuez treaty correspondence and Carvajal's cipher (18th c.).
 - Dead end: K 1539 = cipher originals of Diego de Zúñiga's letters whose descifrados are in K 1538 (read at the time);
   useful only as crib material.
+
+## Printed-catalogue pass 2: Catálogo III (Flandes) and Catálogo V (Patronato Real), 26 Oct 2026
+
+- Finding the volumes: the Google Books API (`googleapis.com/books/v1`) returned a 0-quota 429; the old Atom feed
+  `https://www.google.com/books/feeds/volumes?q=...` still answers and gives viewability. Full view (pre-1927):
+  Catálogo III, Flandes, Holanda y Bruselas 1506-1795 (1915; ids `GXdKAQAAMAAJ`, `98k6AQAAIAAJ`), Catálogo V,
+  Patronato Real (1912; `V0hQAQAAMAAJ`), the 1920 Guía (`o4kwAQAAMAAJ`), Catálogo IV (`LRxmk7ffOgwC`, done).
+  No view: XIV Roma (1936, `xDhmAAAAMAAJ`), XVI Nápoles (1942), XVII Inglaterra (1947, `u4p00QEACAAJ`), XIX Sicilia
+  (1951), XXI Dos Sicilias (1956), XXIII Milán y Saboya (1961). Venecia, Génova and later Alemania volumes not found
+  in full view anywhere tried.
+- Reading them: books.google.com from curl gives a reCAPTCHA page; in the built-in browser, same-origin `fetch` of
+  `/books?id=<id>&jscmd=SearchWithinVolume2&q=<term>` (snippets, capped at ~10 hits) and of
+  `/books?id=<id>&pg=PA<n>&output=text` (OCR text of a window of pages; text in `class='flow'`) both work. Every
+  page of Catálogo III (PA1-200) and V (PA1-540, PT1-30) was scanned for `cifr`: III 6 distinct passages, V 18.
+- Rows added (7): Estado leg. 587 Parma cipher letters 1582-83; leg. 563 Requesens cipher letters; leg. 499/500
+  'Mr. de San Vicente' cipher correspondence 1541-43; leg. 2126 spy Vannó letters + his cipher; Patronato Real
+  no. 4715 cipher "con sobre inglés ... Ni descifrado"; no. 189 Lope Hurtado 1520 Comunidades letter in cipher;
+  no. 1521 Charles V instruction to the Cardinal of Trent 1546, "Toda en cifra". Legajo numbers in Catálogo III are
+  margin numbers mixed into the OCR flow: confirm on PARES. Patronato Real numbers are catalogue item numbers, not
+  PTR legajo/doc signatures: map them on PARES before merging (no. 4715 may already be one of the PTR leg. 52
+  Puebla rows in catalogue.json).
+- Left out as read at the time (cipher with descifrado listed): Catálogo V nos. 285 (Alarcón 1521), 1274 (Puebla
+  1498), 1545 (third instruction to San Valentín 1556), Garcilaso to Alba 1556 (fol. 106), 1594 (Pacheco 1556),
+  1607, 1632 (Gaeta 1557), 1998, 3705, 3826 (Busca 1540), 3911 (Bivona); no. 1522 (Manrique de Lara 1551, cipher
+  copy) has the clear copy as no. 1523 (crib pair).
+- Key leads: Catálogo V, Garcilaso de la Vega 1556 key sent to Rome 10 June 1556 (Carafa war file, fol. 99);
+  Catálogo III leg. 2101 (1658-62) and 1677 papers on "un francés que descifraba sin clave" (a codebreaker offering
+  his services) and leg. ~2133 on the French reading Spanish despatches: background, not ciphertext.
+- Not reached: Roma, Nápoles, Sicilia, Milán, Venecia, Génova, Inglaterra catalogues (in copyright, no view);
+  HathiTrust full-text search (403), BVPB (429), BDH (403) from this machine.
