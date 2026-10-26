@@ -16498,3 +16498,22 @@ results/substitution_classes.tsv, each sign's minimal-pair partners (`predict_te
 - **SC3** Indus B: the same.
 - **SC4** Lexical signs with 3+ A frames: mean Jaccard of A and B partner sets beats shuffled sign identities (p < 0.05).
 - Progress rule: SC1, SC2 and SC3 (a validated method giving per-sign substitution classes).
+
+## Results of set 652 (`predict_test652.py`, `results/predict_test652.md`)
+
+UH1 and UH2 failed, UH3 held. Uncounted small-number units take an ending no more often than large-number units (A 111
+of 553 against 64 of 247; B 29 of 250 against 32 of 171): both groups also serve as name heads, so the Linear B
+'persons against commodities' analogy does not carry into the ending slot. What separates them is position: uncounted
+large-number units stand bare at the line end in 52 of 247 (A) and 66 of 171 (B) against 6 of 553 and 31 of 250 for the
+small ones (p < 1e-9 both). The large-number units are line-final items whether counted or not (set 562 again), not a
+class that never names. Progress: none.
+
+## Results of set 653 (`predict_test653.py`, `results/predict_test653.md`, `results/substitution_classes.tsv`)
+
+SC1-SC3 failed, SC4 held; the failures are the null's. The null permuted class labels among sign *types*; in Linear B a
+few numeral signs carry most of the 40,746 frames, so relabelling them inflates the shuffled same-class share (observed
+0.707, p = 0.99), and the Indus runs have the same defect (A 0.840, p = 0.38; B 0.701, p = 0.99). The control did not
+pass, so no class result is claimed from this set; a corrected null is registered as set 654. SC4 held: for 90 lexical
+signs with 3+ minimal-pair frames on A, their partner sets recur on B (mean Jaccard 0.108 against shuffled identities,
+p = 0.001): substitution partners are a stable property of a sign. The table of partners is in
+results/substitution_classes.tsv. Progress: none.
