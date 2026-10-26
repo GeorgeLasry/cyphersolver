@@ -17,7 +17,7 @@ def nz(s):
 
 def runs():
     E99 = lambda p: 'E' if p == '147437' or int(p) >= 147380 else 'L'   # A35-1452 (1799) starts near id 147380
-    for f, code_of in (('runs_a.txt', E99), ('runs_b.txt', lambda p: 'E'), ('runs_c.txt', E99), ('runs_d.txt', E99)):
+    for f, code_of in (('runs_a.txt', E99), ('runs_b.txt', lambda p: 'E'), ('runs_c.txt', E99), ('runs_d.txt', E99), ('runs_e.txt', E99)):
         page = None
         blk = {}
         for r in open(os.path.join(HERE, f), encoding='utf8'):

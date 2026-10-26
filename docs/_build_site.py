@@ -1855,6 +1855,11 @@ PAGES = [
          blurb='A one-page cipher letter in French, catalogued on DECODE as homophonic with no decipherment. It is a polyalphabetic cipher of five alphabets changed line by line; the key sheet filed with it (R2235) decrypts the whole letter once the order of the alphabets was found by trial. The writer reports on Salm&rsquo;s hussars, Barth&eacute;lemy and the French armies.',
          quote='&ldquo;la jonction de l&rsquo;arm&eacute;e d&rsquo;Italie &agrave; celle du Rhin par le Tyrol; cela ne ressemble pas &agrave; la paix&rdquo;',
          rights='Koninklijk Huisarchief, The Hague, via DECODE'),
+    dict(slug='yvoy1797', label="d'Yvoy 1797-99", year='1797&ndash;99', y=1797.7, place='London &harr; the Hereditary Prince', st='solved', stt='read',
+         title='Maximilien d&rsquo;Yvoy and the Hereditary Prince of Orange, 1797&ndash;99',
+         blurb='The coded correspondence of the Orangist emigr&eacute; d&rsquo;Yvoy in London and Emmerich with the exiled Hereditary Prince (KHA A35-1450&ndash;1453): Dutch code numbers among clear French, deciphered at the time between the lines. Both code tables, London 1797&ndash;98 and 1799, are rebuilt from 371 glossed runs and tested page by page (78% and 81% against 26&ndash;27%). The undeciphered runs are a stock pointer, &ldquo;hier achter is wat geschreven&rdquo;, to invisible ink.',
+         quote='&ldquo;voldaan van zyne eerste conferentien met Hunne Hoogh.&rdquo;',
+         rights='Koninklijk Huisarchief, The Hague, via Koninklijke Verzamelingen'),
     dict(slug='mellon136', label='Silentium Dei 1798', year='1798', y=1798.7, place='Gl&uuml;cksbrunn (an alchemical book)', st='solved', stt='read; key in the book',
          title='Das zweyte Silentium Dei, an alchemical book of 1798',
          blurb='Beinecke Mellon MS 136, catalogued on DECODE as a ciphered letter of Johann Arndt, is a 129-page alchemical manuscript on a &ldquo;magical machine&rdquo; of burning glasses. Its 31 passages in a Rosicrucian pigpen cipher were deciphered with the key drawn in the book on p. 83, applied unchanged: 1,545 signs, two left open. Page 24 had been decrypted in 2022 by Lasry and Kopal.',
@@ -2455,6 +2460,7 @@ IMAGES['roell1809'] = ('roell1809_lead.jpg', 'R1469, first page: &ldquo;Monsieur
 IMAGES['rechteren1785'] = ('rechteren1785_lead.jpg', 'Head of the deciphered letter, &ldquo;Ont cyfferde Missive&rdquo;, 23 Sept/4 Oct 1785, with the cipher groups down the margin', 'Nationaal Archief, The Hague, via DECODE R1039')
 IMAGES['r1944'] = ('r1944_lead.jpg', 'The clear copy of Bourdeaux&rsquo;s dispatch no. 16, Berlin, 31 January 1801, fol. 295', 'Nationaal Archief, The Hague, via DECODE R1946')
 IMAGES['hereditary1796'] = ('hereditary1796_lead.jpg', 'R2239, head of the letter: Berlin 12. Mars 1796, then number groups with superscript marks and clear words', 'Koninklijk Huisarchief, The Hague, via DECODE R2239')
+IMAGES['yvoy1797'] = ('yvoy1797_lead.jpg', 'The Prince&rsquo;s No. 22 to d&rsquo;Yvoy, 22 September 1797: code numbers with the Dutch decipherment written over them (&ldquo;Tollius&rdquo;, &ldquo;voldaan van zyne eerste conferentien met Hunne Hoogh.&rdquo;)', 'Koninklijk Huisarchief, The Hague, A35-1450 scan 221 (image 147106), via Koninklijke Verzamelingen')
 IMAGES['r2236'] = ('r2236_copie1.jpg', 'Copy No 1, the first lines: numbers between clear Dutch words (op losse gronden, Echter schynt het als of, met een van beiden)', 'Koninklijk Huisarchief, The Hague, Prins Willem V inv. 337, via DECODE R2236 image 2')
 IMAGES['r1892'] = ('r1892_lead.jpg', 'Page 2, the head of the Dutch postscript: in het hollandsch met cijffer, then digit pairs written top over bottom', 'Koninklijk Huisarchief, The Hague, via DECODE R1892')
 IMAGES['r2242'] = ('r2242_lead.jpg', 'Page 1: four cipher lines, the clear Dutch written beneath', 'Koninklijk Huisarchief, The Hague, via DECODE R2242')

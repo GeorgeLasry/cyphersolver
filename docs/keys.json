@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-yvoy-london1797", "label": "d'Yvoy - Hereditary Prince London code (1797-98), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1797, "note": "Dutch word code, 105 numbers voted from the interlinear decipherments of KHA A35-1450-1451 (26 Oct 2026); leave-one-page-out 78% vs 26%."},
+{"id": "k-yvoy-1799", "label": "d'Yvoy - Hereditary Prince code of 1799, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1799, "note": "Dutch word code, 50 numbers voted from the interlinear decipherments of KHA A35-1452-1453 (26 Oct 2026); leave-one-page-out 81% vs 27%."},
 {"id": "k-philip2-donjuan1574", "label": "Philip II - Don Juan of Austria cipher (1574), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1574, "note": "Letters on 1-2 digit numbers near alphabetical order, vowel marks (cross e, dot i), codes pe/co/Lo; rebuilt from KHA G016-A0204 and its clear version (24 Oct 2026)."},
 {"id": "k-senisteros-vowels", "label": "Gara de Senisteros vowel cipher, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1605, "note": "Vowels as digits (4=a, 8=e, 3=i, 7=o, 2=u), consonants in clear; read off the first cipher line of NA 3.01.14 inv. 2442 (23 Oct 2026)."},
 {"id": "k-tomokiyo-stluc1586", "label": "St. Luc's Cipher (Tomokiyo's table, corrected by Brackx on BnF fr. 15572 f. 245)", "kind": "scholar's key", "by": "Satoshi Tomokiyo; corrections Michael Brackx", "year": 1586, "found": 2026, "note": "Tomokiyo's cryptiana table for Saint-Luc's ciphers of 1586; corrected and extended by Michael Brackx (issue #90) on the contemporary margin decipherments of f. 245r-v (Monsieur du Mayne, pour, la Rochelle, ss, la, rr, h, m). Several labels still carry two to four values."},
@@ -2332,6 +2334,8 @@
 {"id": "k-wotton1585-rebuilt", "label": "Wotton 1585, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1585, "note": "Key recovered here from the contemporary decipherment or clear copy beside the cipher (targets/wotton1585/NOTES.md)."}
  ],
  "links": [
+{"key": "k-yvoy-london1797", "target": "yvoy1797", "how": "rebuilt from", "note": "voted from 238 glossed runs on 66 pages"},
+{"key": "k-yvoy-1799", "target": "yvoy1797", "how": "rebuilt from", "note": "voted from 133 glossed runs on 14 pages"},
 {"key": "k-philip2-donjuan1574", "target": "philip1574", "how": "rebuilt from", "note": "rebuilt from the cipher and its contemporary clear version; confirms it on ~14 lines"},
 {"key": "k-senisteros-vowels", "target": "senisteros1605", "how": "rebuilt from", "note": "key recovered from the ciphertext alone; about 97% of cipher words read"},
 {"key": "k-tomokiyo-stluc1586", "target": "saintluc1586b", "how": "partial", "note": "decodes f. 260r-v (Brackx, #90); decoded, not read: 40.5% / 34.5% of letters on multi-valued labels"},{"key": "k-r9424-ryxu", "target": "r9424", "how": "rebuilt from", "note": "read in part, 92.8% of words; the barred o-o nomenclator sign and a name open"},
@@ -3712,6 +3716,8 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-yvoy-london1797"},
+{"source": "s-cyphersolver", "key": "k-yvoy-1799"},
 {"source": "s-cyphersolver", "key": "k-philip2-donjuan1574"},
 {"source": "s-cyphersolver", "key": "k-senisteros-vowels"},
 {"source": "s-cyphersolver", "key": "k-bethlen-family"},

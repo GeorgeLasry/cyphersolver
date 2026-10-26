@@ -1,6 +1,7 @@
 # d'Yvoy's cipher despatches, London 1797-99 (KHA A35-1450-1452)
 
-Status: in progress
+Status: read (from existing decipherment): every code run in A35-1450-1453 carries a contemporary interlinear
+decipherment or is the recurring sympathetic-ink pointer phrase; No. 22 read from its mounted original 147106 (26 Oct 2026)
 
 Koninklijk Huisarchief, The Hague, A35 Willem I (as Hereditary Prince), inv. A35-1448-1458: letters of Maximiliaan
 Louis van Hangest baron d'Yvoy van Mijdrecht, Orangist emigre and confidant of the Hereditary Prince, 1794-1808.
@@ -50,18 +51,29 @@ glossed instances. The one substantial unglossed text is 147107, a mirror-image 
 No. 22 to d'Yvoy (Schonhausen 22 Sept 1797): about 40% of its numbers decode ("... Tollius ... te Hamptcourt ...");
 not read.
 
+## No. 22 (22 Sept 1797) read from its original (26 Oct)
+
+The mounted original of the Prince's No. 22 to d'Yvoy is 147106 (scan 221 of A35-1450; 147107 is its tissue
+copy, 147108 a photocopy). It was indexed "partly glossed" and so left out of the unglossed batch; at full size it
+carries the Dutch decipherment over all twelve runs (`runs_e.txt`): "het onderhoud met H.K.H." (122 625 202 703
+1158) ... "Instructie" (151) ... "zeer wel geuit al het geen [...] gezegd met bescheidenheid en nadruk" ...
+"Tollius" (1154 15 505 512) "voldaan van zyne eerste conferentien met Hunne Hoogh. en ik hoop met hem dat de
+volgende" ... "nader antwoord op" ... "brieven door Kiehl overgezonden" ... "het bekomen daar van ik niet werkzaam
+zyn kan" ... "te Hamptoncourt" ... "van dat antwoord" ... "een verandering in myne positie". The letter is about
+Tollius's first conferences with Their Highnesses, a further answer promised through letters sent by Kiehl, and a
+possible change in d'Yvoy's position at Hampton Court; the rest (the Lille and Udine negotiations, the "catastrophe"
+in Paris, i.e. 18 Fructidor) is clear French. Added to table L (105 numbers; leave-one-page-out 78% vs 26%).
+
 ## Remaining gaps
 
-- 147107 (the Prince's No. 22 to d'Yvoy, Schonhausen 22 Sept 1797; mirror-image tissue copy) - blocker: illegible; about 40% of its numbers decode with table L, the copy is faint and offset, and the mounted original is not among the 1,029 scans (it would need the KHA original or a better image)
-
-(Not a gap in the text: the syllable numbers of both tables are thin, 102 and 50 numbers; the GS III prints of
-1799 could extend table E.)
+None. Every code run has a contemporary decipherment, read here, or is the pointer phrase read from its glossed
+instances.
 
 ## Escalation
 
 - [x] siblings: all 196 code pages of A35-1450-1453 listed (more_pages.tsv); every glossed run used for the tables
 - [x] clear-pages: the interlinear glosses are the decipherments; the outgoing letters' three scans (original, tissue
-  copy, photocopy) compared, photocopies dropped; no clear copy of No. 22 found
+  copy, photocopy) compared; No. 22's mounted original 147106 found and read
 - [x] known-keys: both tables of the correspondence (L 1797-98, E 1799) tried on every unglossed page (decode.py
   picks the better); no other Dutch code of these correspondents is known (R2236's 1797 Dutch code is unsolved)
 - [x] print: Colenbrander Gedenkstukken II and III searched in full text; 1795-96 and 1799 letters printed, not No. 22
@@ -75,4 +87,5 @@ not read.
 - 25 Oct 2026: target opened; GS II/III searched; two agents transcribing the 28 flagged pages (`BRIEF.md`,
   `runs_a.txt`, `runs_b.txt`).
 - 26 Oct 2026: second pass (196 pages); 79 unglossed pages transcribed; two codes, tables built and tested
-  leave-one-page-out; unglossed runs found to be the sympathetic-ink pointer phrase; 147107 not read.
+  leave-one-page-out; unglossed runs found to be the sympathetic-ink pointer phrase; No. 22 read from its
+  original 147106.
