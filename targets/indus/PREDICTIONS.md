@@ -15784,3 +15784,13 @@ Held: SA1, SA2. SA1 True, SA2 True (audit of set 593). Progress: none (session-2
 The corrected audit (set 614): 892 and 700 share (previous, next) contexts with numeral contexts dropped, on A (cosine
 0.210, p = 0.002) and B (0.157, p = 0.002). **892 substitutes for the U sign 700**: set 593 stands as progress. The
 session-2 streak after it runs 1 (set 594) to 20 (set 613) as logged, 21 with set 614: the session-2 goal run stops.
+
+
+# Set 615, registered before testing (26 October 2026): session-2 goal loop 80, substitution pairs (two hypotheses)
+
+Pairs 337/269, 844/232 (`hyp_s2_subst.py`, pair list fixed by A frequency rank before testing). Context = (previous sign, next sign);
+contexts whose previous sign is a numeral dropped (set 598); cosine of the two signs' context counts against 500 random partner signs of similar frequency (+-5 ranks).
+
+- **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
+- **SB2** Pair 2 the same.
+- Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
