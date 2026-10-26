@@ -11881,3 +11881,14 @@ the full runs.
 - **SG2** SIGN top-5 rises on both.
 - Progress rule: SG1 holds (the SIGN benchmark moves).
 
+# Three-hundred-and-sixty-fourth set, registered before testing (25 October 2026): goal loop 10, regional signs (two hypotheses)
+
+Registered while set 363 runs (independent). Set 357 found that the region predicts sign context. Which signs carry it?
+Signs with 15+ tokens in Sindh + north lines of A are tested for a Sindh / north skew (Fisher p < 0.01); the skewed ones
+are checked on B (`predict_test364.py`).
+
+- **RG1** 75%+ of the A-skewed signs with 5+ B tokens lean the same way on B (binomial p < 0.05).
+- **RG2** The skewed signs are lexical (grammar.lexical) more often than the unskewed: regions differ in their words,
+  not their grammar (Fisher p < 0.05).
+- Progress rule: RG1 holds (a replicated finding).
+
