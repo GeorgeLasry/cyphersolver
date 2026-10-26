@@ -258,3 +258,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G6 | 360 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | depth band: weight 0; place on the object: fixed gain 0.003, A to B 0.022 (no progress; goal streak 1) |
 | G7 | 361 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | skip-bigram weight 0; previous sign x distance from end held as registered but withdrawn: its A to B gain is the end token only (signs-only rule added) (no progress; goal streak 2) |
 | G8 | 362 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | previous sign x length, opening family x position: weight 0 (no progress; goal streak 3) |
+| G10 | 364 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | regional signs: 9 Sindh / north skews on A, 7 of 7 replicate on B (p = 0.008); 700 north vs 705 Sindh, 154/158 north: regional spelling and formula habits (progress; goal streak 0; loop 9 pending) |

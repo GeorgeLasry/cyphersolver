@@ -11892,3 +11892,12 @@ are checked on B (`predict_test364.py`).
   not their grammar (Fisher p < 0.05).
 - Progress rule: RG1 holds (a replicated finding).
 
+## Results of the three-hundred-and-sixty-fourth set (`predict_test364.py`, `results/predict_test364.md`)
+
+One held, one failed. Of 88 signs, 9 are skewed between Sindh and the north on A (p < 0.01): Sindh 2, 705, 923; north
+154, 158, 335, 400, 405, 700. All 7 with 5+ B tokens lean the same way on Mahadevan's lines (RG1, p = 0.008). The
+skewed signs are not more often lexical (RG2: 6 of 9 against 60 of 79). Among them are pairs of one sign family split by
+region: the plain U 700 in the north against the stroked U 705 in Sindh (set 189: 705/706 head the closing formula),
+and the bull-headed yoke-carriers 154 and 158 in the north; with the marker 400 and the numeral 2, the regions differ
+in spelling and formula habits as much as in words. Progress: a new finding replicated (goal streak 0, loop 10). Tally,
+counting parts: 1595 held, 1517 failed (3112 registered; set 363 pending).
