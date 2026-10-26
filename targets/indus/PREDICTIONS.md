@@ -16211,3 +16211,15 @@ not clearly more than in unrelated scripts.** The parallels are what simple mark
 vertical stroke) find in any sign list. Caveats: 90-sign samples, not the full Mahadevan list (more signs give more
 matches for every inventory); scorer strictness varies (registered scorer P lenient); blinding imperfect. Progress:
 none.
+
+# Set 640, registered before testing (26 October 2026): Indus-parallel graffiti in Keeladi's oldest dated levels (one hypothesis)
+
+Layer dates (data/graffiti/dates/dates.tsv; Rajan, Sivanantham & Yatheeskumar 2025, Recent Scientific Dates, and the
+2019 Keeladi report) give a usable depth-to-date trend only at Keeladi and, roughly, Kodumanal. Within a site the map is
+monotonic, so set 637's depth ranks already carry the order; the dates add an absolute frame. At Keeladi about 300-384
+cm is 5th-6th c. BCE and 0-200 cm 3rd c. BCE to CE, across trenches whose surfaces differ (`predict_test640.py`).
+
+- **KD1** Keeladi graffiti at 300 cm or deeper have an Indus parallel (their base sign has one in the corpus map) more
+  often than graffiti above 200 cm (Fisher one-sided p < 0.05).
+- Progress rule: none.
+
