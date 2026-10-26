@@ -52,17 +52,23 @@ not read.
 
 ## Remaining gaps
 
-- 147107 (No. 22, 22 Sept 1797, mirror-image copy): about 40% of numbers decoded; blocker: open-codes and faint copy
-  (no better copy among the scans; the mounted original was not found).
-- Syllable numbers of both codes are thin (102 and 50 numbers in the tables); the 1799 letters printed in
-  Colenbrander GS III (681, 686, 691, 742, 750, 781) are not yet aligned as cribs.
+- 147107 (the Prince's No. 22 to d'Yvoy, Schonhausen 22 Sept 1797; mirror-image tissue copy) - blocker: illegible; about 40% of its numbers decode with table L, the copy is faint and offset, and the mounted original is not among the 1,029 scans (it would need the KHA original or a better image)
+
+(Not a gap in the text: the syllable numbers of both tables are thin, 102 and 50 numbers; the GS III prints of
+1799 could extend table E.)
 
 ## Escalation
 
-- [x] siblings: all 196 code pages of A35-1450-1453 listed; glossed runs used for the tables
-- [x] retry: unglossed runs decoded; the stock pointer phrase read from its glossed instances
-- [ ] print: align the GS III 1799 letters with their cipher pages to extend table E
-- [ ] clear-pages: look for the mounted original of No. 22 (A35-1450 around 147105-147107)
+- [x] siblings: all 196 code pages of A35-1450-1453 listed (more_pages.tsv); every glossed run used for the tables
+- [x] clear-pages: the interlinear glosses are the decipherments; the outgoing letters' three scans (original, tissue
+  copy, photocopy) compared, photocopies dropped; no clear copy of No. 22 found
+- [x] known-keys: both tables of the correspondence (L 1797-98, E 1799) tried on every unglossed page (decode.py
+  picks the better); no other Dutch code of these correspondents is known (R2236's 1797 Dutch code is unsolved)
+- [x] print: Colenbrander Gedenkstukken II and III searched in full text; 1795-96 and 1799 letters printed, not No. 22
+  or any 1797-98 letter
+- [ ] key-rebuild: not done - align the GS III 1799 prints (681, 686, 691, 742, 750, 781) with their cipher pages and
+  bracket the L syllable numbers by context
+- [x] retry: unglossed runs decoded; the pointer phrase read from its glossed instances (229 = achter)
 
 ## Log
 
