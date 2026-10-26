@@ -14904,3 +14904,15 @@ skewed small / large at p < 0.05 (Fisher) on A (`hyp_s2_numcount.py`).
 ## Results of set 552 (`hyp_s2_numcount.py`, `results/predict_test552.md`)
 
 Held: NC1, NC2. skewed 16 on A; same way on B 12/14. Progress: yes (session-2 goal streak 0).
+
+
+# Set 553, registered before testing (26 October 2026): session-2 goal loop 18, audits of short-line heads and number size (two hypotheses)
+
+Audits (`hyp_s2_audit1.py`); a failure withdraws the finding and recounts the streak.
+
+- **AU1** Set 551 within square seals only (A lines whose subtype is SEAL:S): short and long heads still differ (random
+  splits, p < 0.05). Otherwise short labels are another object kind.
+- **AU2** Set 552 within short-stroke numerals only (numerals.NUMS kind 'short'): 2+ of the A-skewed signs keep their
+  small / large direction at p < 0.1 on A, and 75%+ of testable ones lean the same way on B. Otherwise the effect is the
+  numeral series, not the number.
+- Progress rule: none (audits).
