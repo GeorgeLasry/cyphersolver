@@ -12025,3 +12025,11 @@ few to test (SR2, 2 of 2, p = 0.25). The 'regional signs' of set 364 (158, 400, 
 moulded tablets are mostly Harappan. Seal texts do not differ by region in their signs. (The region domain model of set
 357 was adopted before the type models; its share of the gain may now be partly type, which the later models carry.)
 Progress: none (goal streak 1). Tally, counting parts: 1599 held, 1529 failed (3128 registered; set 363 pending).
+
+# Three-hundred-and-seventy-second set, registered before testing (26 October 2026): goal loop 18, region after the type models; length x subtype (two hypotheses)
+
+- **AB1** With length, type and subtype in the base, re-adding the region model still passes the rule of set 358 on the
+  fixed split and A -> B. If it fails, region is dropped from the base (no progress either way for the drop itself).
+- **AB2** A length x subtype domain model lowers S on top of the full base (fixed split and split C).
+- Progress rule: AB2 holds (AB1 is a check). (`predict_test372.py`; results predict_test372.md, predict_test3720.md.)
+
