@@ -15533,3 +15533,13 @@ cosine of the two signs' context counts against 500 random partner signs of simi
 ## Results of set 597 (`hyp_s2_sub13.py`, `results/predict_test597.md`)
 
 Held: none. 416/923 False; 742/595 False. Progress: none (session-2 goal streak 4).
+
+
+# Set 598, registered before testing (26 October 2026): session-2 goal loop 63, audit: 61 / 575 without numeral contexts (two hypotheses)
+
+Set 593 found 61 and 575 share (previous, next) contexts. Both are counted signs (set 552), so the shared part may be
+'after a numeral'. Contexts whose previous sign is a numeral are dropped and the test re-run (`hyp_s2_subaudit.py`).
+
+- **SA1** On A, 61 and 575 still share contexts beyond random partners (p < 0.05).
+- **SA2** On B the same.
+- Progress rule: none (audit); a failure withdraws set 593 and the logged streak is not reset by it.
