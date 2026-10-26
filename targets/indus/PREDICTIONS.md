@@ -13971,7 +13971,8 @@ Progress: none (goal streak 18). Tally, counting parts: 1656 held, 1702 failed (
 RC1 held, RC2 failed. With length band x site strata large seals more often carry a sign seen at most twice in the corpus
 (odds ratio 1.45, p = 0.028); texts made only of common signs do not differ (0.92). With sets 380 and 469, large seals
 are individual (rare signs, unique texts, the long fish-name form) and small seals formulaic (repeated texts, doubled
-signs). A single test on all the data. Progress (goal streak 0). Tally, counting parts: 1657 held, 1703 failed (3365
+signs). A single test on all the data (set 489: same direction in two halves, significant in one). Progress (goal
+streak 0). Tally, counting parts: 1657 held, 1703 failed (3365
 registered).
 
 # Four-hundred-and-eighty-ninth set, registered before testing (26 October 2026): goal loop 135, rare signs on two halves (two hypotheses)
@@ -13982,3 +13983,8 @@ As set 470 for set 469 (`predict_test489.py`).
 - **RH2** The same in half 2.
 - Progress rule: none (replication).
 
+## Results of the four-hundred-and-eighty-ninth set (`predict_test489.py`, `results/predict_test489.md`)
+
+RH1 held, RH2 failed. Half 1: odds ratio 1.91 (p = 0.014); half 2: 1.18 (p = 0.53). Same direction, one half significant:
+set 488 holds in direction, borderline in strength. Progress: none (goal streak 1). Tally, counting parts: 1658 held,
+1704 failed (3367 registered).
