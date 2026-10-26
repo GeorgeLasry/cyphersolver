@@ -13063,3 +13063,13 @@ Both failed. After mid-line 'N X' an ending follows in 69 of 395 (A) and 16 of 1
 positions (A 42% against 49%; B 30% against 35%). The phrase that mid-line 1 and 2 open (set 397) is not a short
 numeral + name + ending. Progress: none (goal streak 5). Tally, counting parts: 1627 held, 1616 failed (3247
 registered).
+
+# Four-hundred-and-twenty-ninth set, registered before testing (26 October 2026): goal loop 75, audit of the dividers against mid-line headings (two hypotheses)
+
+Set 395's audit removed headings at the line start only; a heading + stroke pair can stand mid-line, opening a second
+unit. Here 1 / 2 preceded by 817 / 820 / 861 anywhere are left out (60 dropped, set 397) (`predict_test429.py`).
+
+- **DH1** The divider effect (sign after 1 / 2 resembles openers) holds on A without heading + numeral pairs.
+- **DH2** The same on B.
+- Progress rule: none (audit). Both failing withdraws set 395's WD1 (the effect was the heading).
+
