@@ -14021,3 +14021,13 @@ with the same text carry the same animal**, beyond chance, length and double rec
 sites (63%, p = 0.079) was weaker. So the text is independent of the animal across seals in general (sets 382, 404),
 but a given text was cut with a given animal. Progress (goal streak 0). Tally, counting parts: 1659 held, 1707 failed
 (3371 registered).
+
+# Four-hundred-and-ninety-second set, registered before testing (26 October 2026): goal loop 138, copies share the animal elsewhere (two hypotheses)
+
+Set 491 at Mohenjo-daro. Pairs with identical dimensions dropped; motifs shuffled within text length x site
+(`predict_test492.py`).
+
+- **CH1** At Harappa, copies share the animal more than chance.
+- **CH2** Among non-unicorn square seals at all sites, copies share the animal more than chance.
+- Progress rule: none (re-test of set 491).
+
