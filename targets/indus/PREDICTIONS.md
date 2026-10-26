@@ -12336,3 +12336,8 @@ on C-train, Fisher p < 0.01; C-test 3+, 75%+ same way, binomial p < 0.05) (`pred
 - **BG2** Seals against tablets.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-seventh set (`predict_test387.py`, `results/predict_test387.md`)
+
+Both failed. Incised against moulded tablets: one skewed pair (32 740, incised), not testable on C-test. Seals against
+tablets: 5 pairs, all tablet-heavy (176 740, 255 435, 32 740, 690 740, 740 400); 4 of 5 lean the same way (p = 0.19).
+Progress: none (goal streak 3). Tally, counting parts: 1607 held, 1557 failed (3164 registered).
