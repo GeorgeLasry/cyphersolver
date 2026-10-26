@@ -363,3 +363,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G107 | 461 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tablet size carries no sign (length x site held) (no progress; goal streak 2) |
 | G108 | 462 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | stratified size skews on split C: rectangular none; square only 706 (replicates, 1 of 1) (no progress; goal streak 3) |
 | G109 | 463 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long form always line-final, short form nearly always: no difference (field 25 found to classify the text, not used) (no progress; goal streak 4) |
+| G110 | 464 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | lines with both endings almost absent (6 / 1): one name class per line (no progress; goal streak 5) |

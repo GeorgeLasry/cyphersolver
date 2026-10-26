@@ -13620,3 +13620,7 @@ Lines carrying both 740 and 520 (distinct lines). If 520 names close a text (set
 - **EO2** The same on B.
 - Progress rule: both hold.
 
+## Results of the four-hundred-and-sixty-fourth set (`predict_test464.py`, `results/predict_test464.md`)
+
+Both failed: only 6 lines on A (3 with 740 first) and 1 on B carry both endings. A line holds one name class, not two.
+Progress: none (goal streak 5). Tally, counting parts: 1649 held, 1665 failed (3318 registered).
