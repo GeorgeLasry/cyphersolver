@@ -14195,3 +14195,12 @@ From here registrations carry length band x site x motif strata (`auditkit.size_
 
 Both failed: fish + 740 odds ratio 0.92 (p = 0.94); 60 1.07 (p = 0.84). Progress: none (goal streak 2). Tally, counting
 parts: 1669 held, 1721 failed (3395 registered).
+
+# Five-hundred-and-fourth set, registered before testing (26 October 2026): goal loop 150, marked fish and 806 by seal size (two hypotheses)
+
+`auditkit.size_motif` (length band x site x motif) (`predict_test504.py`).
+
+- **MK1** Large and small seals differ in carrying a marked fish (231, 233-235, 237-240; caged ones left out).
+- **MK2** They differ in carrying 806.
+- Progress rule: either holds.
+
