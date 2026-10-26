@@ -16271,3 +16271,10 @@ registering: the motifs are mostly the default bull and 'None' (counts only, by 
 - **PU1** At Mohenjo-daro the unit group predicts the motif beyond the shuffles (p < 0.05).
 - **PU2** The same at Harappa.
 - Progress rule: PU1 and PU2 (meaning checked against pictures).
+
+## Results of set 642 (`predict_test642.py`, `results/predict_test642.md`)
+
+One held, one failed. Mohenjo-daro: 252 counted units, the group does not predict the motif within object kinds (p =
+0.53) (PU1). Harappa: 142 units, p = 0.001 (PU2), but most are on moulded tablets, whose mould copies repeat text and
+picture, and copies were not collapsed here (set 337's lesson); the Harappa result is at best a mould-family effect.
+No consistent link between what is counted and the picture. Progress: none.
