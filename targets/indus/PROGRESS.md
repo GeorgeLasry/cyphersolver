@@ -266,3 +266,5 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G15 | 369 | **4.567** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | object subtype (copper / incised / moulded tablets, seal kinds) adopted: S 4.578 to 4.567, replicated on split C; region x type fails (progress; goal streak 0) |
 | G16 | 370 | 4.567 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | square seals vs moulded tablets: 7 skewed signs, 5 of 5 replicate on split C; overlaps the 'northern' signs of set 364 (progress; goal streak 0) |
 | G17 | 371 | 4.567 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | within square seals no sign is skewed by region: set 364's regional signs are moulded-tablet signs (correction; no progress; goal streak 1) |
+| G9 | 363 | - | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | SIGN with domain models: 39.8% to 39.7% fixed, 34.1% unchanged A to B (no progress; recorded late) |
+| G18 | 372 | **4.559** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | region dropped (adds 0.0018 on top of type models); length x subtype adopted, fixed gain 0.0078, replicated on split C (progress; goal streak 0) |

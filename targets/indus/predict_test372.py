@@ -1,4 +1,4 @@
-"""Set 372 (goal run loop 18): does region still add beyond type + subtype (ablation), and length x subtype. loopkit.py."""
+"""Set 372 (as run: BASE_DOMAINS then began with region; loopkit since changed) (goal run loop 18): does region still add beyond type + subtype (ablation), and length x subtype. loopkit.py."""
 import loopkit as L
 import rtools as R
 

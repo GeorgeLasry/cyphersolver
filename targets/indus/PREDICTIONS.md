@@ -12033,3 +12033,16 @@ Progress: none (goal streak 1). Tally, counting parts: 1599 held, 1529 failed (3
 - **AB2** A length x subtype domain model lowers S on top of the full base (fixed split and split C).
 - Progress rule: AB2 holds (AB1 is a check). (`predict_test372.py`; results predict_test372.md, predict_test3720.md.)
 
+## Results of the three-hundred-and-sixty-third set (`predict_test363.py`, `results/predict_test363.md`; run finished 26 Oct)
+
+Both failed. SIGN with the region + length models: fixed test top-1 39.8% -> 39.7%, top-5 61.9% -> 61.3% (2,340 signs);
+A -> B 34.1% -> 34.1%, 51.6% -> 51.4% (4,512 signs). The domain models lower S but do not help guess a hidden sign from
+both sides. Progress: none (goal loop 9). Tally, counting parts: 1599 held, 1532 failed (3131 registered).
+
+## Results of the three-hundred-and-seventy-second set (`predict_test372.py`, `results/predict_test372.md`, `predict_test3720.md`)
+
+AB1 failed, AB2 held. Region re-added on top of length + type + subtype gains 0.0018 on the fixed test (A -> B 0.0330):
+under the rule, so region is dropped from the base as registered (set 371: its signs were object-kind signs). Length x
+subtype: fixed 4.5671 -> 4.5593 (signs 5.4622 -> 5.4444), split C 4.5461 -> 4.5391 (signs 5.3734 -> 5.3572), controls
+under 0.001: adopted at weight 0.2. Base now length, type, subtype, length x subtype. Progress (goal streak 0). Tally,
+counting parts: 1600 held, 1533 failed (3133 registered).
