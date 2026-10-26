@@ -12647,3 +12647,9 @@ The adopted domain models (length, type, subtype, length x subtype) were mixed i
   S (plain + subtype at 0.8 / 0.2) by 0.005+ on the fixed split and lower it on C.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-third set (`predict_test403.py`, `results/predict_test403.md`)
+
+Both failed. Jointly fitted weights (fixed: 0.5 plain, 0.1 length, 0 type, 0.2 subtype, 0.2 length x subtype) gain
+0.0013 on the fixed test and lose 0.0041 on C; per-group component weights for the subtype model gain 0.0028 (fixed)
+and 0.0003 (C). The sequential mixture is near its optimum. Progress: none (goal streak 5). Tally, counting parts: 1619
+held, 1578 failed (3197 registered).
