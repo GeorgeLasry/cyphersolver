@@ -1,0 +1,35 @@
+"""Set 647 (lead 6): the Indus-parallel share of Kodumanal graffiti at 100+ cm (about 5th c. BCE) against
+the levels above 40 cm (about 2nd c. BCE). Dates: data/graffiti/dates/dates.tsv (Rajan, Sivanantham & Yatheeskumar
+2025; Keeladi 2019). Writes results/predict_test640.md."""
+import json
+
+import rtools as R
+from predict_test637 import parallels
+from scipy.stats import fisher_exact
+
+
+def main():
+    rd = R.Round('Set 647 registered predictions: Indus-parallel graffiti in the oldest dated levels at Kodumanal', 'predict_test647')
+    P = parallels()
+    base = lambda s: s.replace('C', '').split('.')[0]
+    deep = [0, 0]
+    top = [0, 0]
+    for r in json.load(open('data/graffiti/raw/bysite/Kodumanal.json', encoding='utf-8'))['data']:
+        has = base(str(r['sign']).strip()) in P
+        for x in r['result'].get('depth', []):
+            try:
+                d = float(x['key'])
+            except ValueError:
+                continue
+            row = deep if d >= 100 else (top if d < 40 else None)
+            if row is not None:
+                row[0 if has else 1] += x['value']
+    p = fisher_exact([deep, top], alternative='greater')[1]
+    rd.rec('KO1', 'Kodumanal graffiti at 100+ cm (about 5th c. BCE) have an Indus parallel more often than those above 40 cm',
+           '100+ cm %d of %d; under 40 cm %d of %d; p = %.4f' % (deep[0], sum(deep), top[0], sum(top), p), p < 0.05)
+    rd.rec('P', 'progress rule: none (a replication of set 640 at a second site)', '', False)
+    rd.finish()
+
+
+if __name__ == '__main__':
+    main()

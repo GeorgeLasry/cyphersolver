@@ -16367,3 +16367,13 @@ composite occurrences against 6.2 expected (p = 0.23); the ladder (23) in 22 of 
 it is solus 73 times, so 'never stands alone' is false on the corpus's own data. With set 638 (the Indus side), none of
 the book's three positional remarks holds as stated. Set 635 is re-described: it tested composite marks. Progress:
 none.
+
+# Set 647, registered before testing (26 October 2026): lead 6, Indus-parallel graffiti in Kodumanal's oldest dated levels (one hypothesis)
+
+Replication of set 640 at the second site with a depth-to-date trend (data/graffiti/dates/dates.tsv: ZD20 15 cm about
+200 BCE, 65 cm 370 BCE; ZD10 80 cm 380 BCE; ZE10 60 cm 380 BCE; ZE9 120 cm 480 BCE). Bands fixed from the dates before
+counting: 100+ cm (about 5th c. BCE) against under 40 cm (about 2nd c. BCE) (`predict_test647.py`).
+
+- **KO1** Kodumanal graffiti at 100+ cm have an Indus parallel more often than those under 40 cm (Fisher one-sided
+  p < 0.05).
+- Progress rule: none.
