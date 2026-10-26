@@ -15910,3 +15910,13 @@ contexts whose previous sign is a numeral dropped (set 598); cosine of the two s
 ## Results of set 623 (`hyp_s2_subc8.py`, `results/predict_test623.md`)
 
 Held: none. 702/626 False; 518/703 False. Progress: none (session-2 goal streak 9).
+
+
+# Set 624, registered before testing (26 October 2026): session-2 goal loop 89, substitution pairs (two hypotheses)
+
+Pairs 252/66, 824/521 (`hyp_s2_subst.py`, pair list fixed by A frequency rank before testing). Context = (previous sign, next sign);
+contexts whose previous sign is a numeral dropped (set 598); cosine of the two signs' context counts against 500 random partner signs of similar frequency (+-5 ranks).
+
+- **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
+- **SB2** Pair 2 the same.
+- Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
