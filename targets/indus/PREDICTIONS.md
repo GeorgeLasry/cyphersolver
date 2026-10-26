@@ -13145,7 +13145,8 @@ square seals with a size, one-sided Mann-Whitney (`predict_test433.py`). Not len
 
 Both held. Square seals with 706: median size 33.8 (34 seals); with 705: 27.9 (61, p < 0.0001); with plain 700: 21.6 (11,
 p < 0.0001). **Inside the U family the seal size steps up with the inner strokes**: plain U on small seals, 705 on
-middle, 706 on large. Not length-stratified (set 430 showed 706's size link holds with length and site held). With set
+middle, 706 on large. Not length-stratified (set 430 showed 706's size link holds with length and site held; set 434: 706 against 705 within
+length bands odds ratio 2.98, p = 0.083; within Mohenjo-daro p < 0.0001). With set
 189 (705 / 706 head the closing formula) the stroked U may mark rank in that formula. Progress (goal streak 0). Tally,
 counting parts: 1632 held, 1621 failed (3257 registered).
 
@@ -13158,3 +13159,9 @@ Set 433 compared sizes without holding length (`predict_test434.py`).
 - **UA2** Within Mohenjo-daro, 706 seals are larger than 705 seals (Mann-Whitney p < 0.05).
 - Progress rule: none (audit). Both failing downgrades set 433.
 
+## Results of the four-hundred-and-thirty-fourth set (`predict_test434.py`, `results/predict_test434.md`)
+
+UA1 failed, UA2 held (audit). Within length bands 706 seals are large more often than 705 seals (odds ratio 2.98) but
+p = 0.083; within Mohenjo-daro 706 seals are larger (24 against 51, p < 0.0001). Set 433 stands for Mohenjo-daro, with
+the caveat that part of the step is text length (706 lines are long). Progress: none (goal streak 1). Tally, counting
+parts: 1633 held, 1622 failed (3259 registered).
