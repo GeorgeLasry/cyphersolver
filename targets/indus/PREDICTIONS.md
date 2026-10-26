@@ -16527,3 +16527,13 @@ the minimal pairs, frame-weighted, which keeps each slot's class frequencies (`p
 - **SD2** Indus A: the same.
 - **SD3** Indus B: the same.
 - Progress rule: SD1, SD2 and SD3.
+
+## Results of set 654 (`predict_test654.py`, `results/predict_test654.md`)
+
+SD1 and SD2 held, SD3 failed. With the corrected null the Linear B control passes (40,746 frames, same class 0.707, p =
+0.001): minimal pairs do put numerals with numerals, measures with measures and words with words. On the Indus A lines
+the partners share a class beyond chance (2,926 frames, 0.840, p = 0.001); on Mahadevan's lines they do not (5,420
+frames, 0.701, p = 0.79). The method is sound, the Indus result is unreplicated: M77's many near-duplicate readings may
+pair a sign with a differently read variant of itself or of a numeral. With set 653's SC4 (partner sets recur A to B,
+p = 0.001), the usable product is results/substitution_classes.tsv, each sign's substitution partners, not a class
+assignment. Progress: none.
