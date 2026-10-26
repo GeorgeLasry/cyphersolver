@@ -13807,3 +13807,7 @@ Tally, counting parts: 1653 held, 1683 failed (3341 registered).
 - **SB2** They differ in texts that open with a fish sign (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-seventh set (`predict_test477.py`, `results/predict_test477.md`)
+
+Both failed: texts without an ending odds ratio 1.05 (p = 0.78); fish-first texts 0.80 (p = 0.42). Progress: none (goal
+streak 8). Tally, counting parts: 1653 held, 1685 failed (3343 registered).
