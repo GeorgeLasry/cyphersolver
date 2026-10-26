@@ -268,3 +268,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G17 | 371 | 4.567 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | within square seals no sign is skewed by region: set 364's regional signs are moulded-tablet signs (correction; no progress; goal streak 1) |
 | G9 | 363 | - | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | SIGN with domain models: 39.8% to 39.7% fixed, 34.1% unchanged A to B (no progress; recorded late) |
 | G18 | 372 | **4.559** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | region dropped (adds 0.0018 on top of type models); length x subtype adopted, fixed gain 0.0078, replicated on split C (progress; goal streak 0) |
+| G19 | 373 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opening-sign domains: gains under 0.005, A to B at control level (no progress; goal streak 1) |

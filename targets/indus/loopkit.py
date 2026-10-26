@@ -56,6 +56,25 @@ def build_subtype():
 
 SUBTYPE = build_subtype()
 
+_FIELD_CACHE = {}
+
+
+def field(j):
+    """line -> the commonest value of ICIT record field j (8 period, 9-10 phase, 13 material, 14 colour, 15 shape,
+    19 secondary motif, 22 workmanship, 31-33 dimensions) over the clean F objects carrying the line (set 374)."""
+    if j not in _FIELD_CACHE:
+        import icit_full
+        A, B, rowsA, recs, F = R.load_all()
+        d = defaultdict(Counter)
+        for r in F:
+            rec = recs.get(r['sealid'])
+            if rec and len(rec) > j and str(rec[j]).strip() not in ('', '-', '--', '- -', 'None'):
+                for ln in r['seq']:
+                    if ln:
+                        d[tuple(ln)][str(rec[j]).strip()] += 1
+        _FIELD_CACHE[j] = {ln: c.most_common(1)[0][0] for ln, c in d.items()}
+    return _FIELD_CACHE[j]
+
 
 def build_depth_place():
     A, B, rowsA, recs, F = R.load_all()

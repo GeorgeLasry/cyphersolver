@@ -12056,3 +12056,19 @@ and A -> B, on the base of set 372 (`predict_test373.py`).
 - **OD1** A domain model keyed on the opening sign's graphic family lowers S.
 - **OD2** A domain model keyed on the opening sign itself (groups of 40+ lines) lowers S.
 
+## Results of the three-hundred-and-seventy-third set (`predict_test373.py`, `results/predict_test373.md`)
+
+Both failed. Opening family: fixed gain 0.0043 (under 0.005), A -> B 0.0067 against a control of 0.0063; opening sign:
+0.0021, 0.0067 against 0.0033. Progress: none (goal streak 1). Tally, counting parts: 1600 held, 1535 failed (3135
+registered).
+
+# Three-hundred-and-seventy-fourth set, registered before testing (26 October 2026): goal loop 20, period and material (two hypotheses)
+
+The ICIT records carry 35 fields; the model has used site, type and motif. Field 8 is the excavation period (Harappa:
+Period 3A, 3B/C, 3C-1 ... 4; 1,262 lines), field 13 the material (steatite, clay, faience, copper ...; 2,001 lines)
+(`loopkit.field`). Domain models on top of the set 372 base; split C as replication (B lacks the fields); rule of set 358
+(`predict_test374.py`).
+
+- **PM1** A period domain model lowers S (the script changed over Harappa's periods).
+- **PM2** A material domain model lowers S beyond type and subtype.
+
