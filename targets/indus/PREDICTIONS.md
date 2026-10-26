@@ -14163,3 +14163,8 @@ Square seals with a motif and a size carrying 156, 400 or 590 (`predict_test501.
 - **SG2** At Mohenjo-daro the choice differs between Early + Intermediate and Late phases (chi-square p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-first set (`predict_test501.py`, `results/predict_test501.md`)
+
+SG1 held, SG2 failed. The small-seal signs grade by size: median 22.1 with 156, 22.9 with 400, 25.4 with 590 (Kruskal-
+Wallis p = 0.0024). Not length-stratified; audited next. Phase: no difference (p = 0.18). Progress under the rule
+(goal streak 0). Tally, counting parts: 1669 held, 1717 failed (3391 registered).

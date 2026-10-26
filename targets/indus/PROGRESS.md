@@ -400,3 +400,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G144 | 498 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audits: doubles and repeats on small seals hold with motif held; it is size, not the unicorn (audit; no progress; goal streak 5) |
 | G145 | 499 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: core size signs hold with motif held (706 OR 6.4; 156/400/590 OR 0.35) (audit; no progress; goal streak 6) |
 | G146 | 500 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | choice among small-seal signs not by city or animal (no progress; goal streak 7) |
+| G147 | 501 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small-seal signs grade by size: 156 (22.1) < 400 (22.9) < 590 (25.4), p = 0.002; not length-controlled (progress under the rule; goal streak 0) |
