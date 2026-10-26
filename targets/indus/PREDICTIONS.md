@@ -12419,6 +12419,8 @@ Progress: none (goal streak 5). Tally, counting parts: 1600 held, 1547 failed (3
 
 # Three-hundred-and-seventy-eighth set, registered before testing (26 October 2026): goal loop 24, per-kind weights and small kinds (two hypotheses)
 
+**Void (26 Oct 2026, not run):** a second session running the goal loops in this checkout used set numbers 378-392 at the same time and its scripts replaced these files; this registration was never run and its number is taken by the other run's set. To be re-registered under a new number if wanted.
+
 On top of the set 372 base; split C as replication; S rule with sign tokens (`predict_test378.py`, `loopkit.run_set_c`).
 
 - **KW1** Subtype models whose interpolation weights are fitted on each kind's own lines (kinds with 150+ lines)
@@ -12426,6 +12428,8 @@ On top of the set 372 base; split C as replication; S rule with sign tokens (`pr
 - **KW2** Subtype models for kinds of 15+ lines (tags, rods, bangles ... get their own) lower S.
 
 # Three-hundred-and-seventy-ninth set, registered before testing (26 October 2026): goal loop 25, a Wells -> ICIT concordance (two hypotheses)
+
+**Void (26 Oct 2026, not run):** a second session running the goal loops in this checkout used set numbers 378-392 at the same time and its scripts replaced these files; this registration was never run and its number is taken by the other run's set. To be re-registered under a new number if wanted.
 
 Wells's 1998 thesis (University of Calgary, open repository) lists the CISI objects each of his signs occurs on; 128
 signs were transcribed from the page images (data/wells/wells1998_signs.tsv) and 24 rows of his printed concordance
