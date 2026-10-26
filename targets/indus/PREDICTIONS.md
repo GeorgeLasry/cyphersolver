@@ -13639,3 +13639,13 @@ less often than with lines shuffled among the objects (1,000, two-sided)? (`pred
 Both failed. Both classes on one object: 2 of 78 ICIT multi-line objects (p = 1.0), 6 of 554 Mahadevan objects
 (p = 0.050, not under). Too rare to tell from chance. Progress: none (goal streak 6). Tally, counting parts: 1649 held,
 1667 failed (3320 registered).
+
+# Four-hundred-and-sixty-sixth set, registered before testing (26 October 2026): goal loop 112, do long-form texts recur less? (two hypotheses)
+
+Set 380: small seals repeat texts; set 441: large seals carry the formula. Clean ICIT seals, Mantel-Haenszel over length
+bands, texts with the formula (705 / 706 + 33) against the rest (`predict_test466.py`).
+
+- **RL1** On square seals, formula texts recur on other seals less often (p < 0.05).
+- **RL2** On all seals, the same.
+- Progress rule: either holds.
+
