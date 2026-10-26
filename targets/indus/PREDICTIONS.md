@@ -14182,3 +14182,12 @@ Seals with 590 (and not 156) against seals with 156 (and not 590); above-median 
 Both failed (audit). Within length bands 590 seals are large more often than 156 seals (odds ratio 2.32, p = 0.31), with
 site too (2.58, p = 0.27). **Set 501 is downgraded**: the grade among the small-seal signs is largely text length.
 Progress: none (goal streak 1). Tally, counting parts: 1669 held, 1719 failed (3393 registered).
+
+# Five-hundred-and-third set, registered before testing (26 October 2026): goal loop 149, fish + 740 and 60 by seal size (two hypotheses)
+
+From here registrations carry length band x site x motif strata (`auditkit.size_motif`) (`predict_test503.py`).
+
+- **F7** Large and small seals differ in carrying a fish directly before 740 (two-sided p < 0.05).
+- **S60** They differ in carrying 60 (two-sided p < 0.05).
+- Progress rule: either holds.
+
