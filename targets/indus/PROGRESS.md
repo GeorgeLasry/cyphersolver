@@ -459,3 +459,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-21 | 556 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the ending of short labels: A short 520 11/62 vs long 102/678; B 1/20 vs 36/224. (no progress; session-2 goal streak 4) |
 | S2-22 | 557 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | two counts in one line: A 2/140 same (null 3.1); B 0/49 (null 1.4). (no progress; session-2 goal streak 5) |
 | S2-23 | 558 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | large-number units by city: A large H/M [46, 83], small [39, 116]; B large [13, 21], small [18, 28] (audit of set 552). (no progress; session-2 goal streak 6) |
+| S2-24 | 559 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the jar after a number: A 2/22 vs 106/875; B 3/12 vs 61/316. (no progress; session-2 goal streak 7) |

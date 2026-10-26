@@ -15000,3 +15000,7 @@ closes a name and is usually followed by nothing or 400 / 90; a counted jar woul
   non-numeral (Fisher p < 0.05).
 - **CJ2** The same on B.
 - Progress rule: CJ1 and CJ2 (740 has a second use: a counted jar).
+
+## Results of set 559 (`hyp_s2_countedjar.py`, `results/predict_test559.md`)
+
+Held: none. A 2/22 vs 106/875; B 3/12 vs 61/316. Progress: none (session-2 goal streak 7).
