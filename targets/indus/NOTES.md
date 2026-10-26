@@ -3340,6 +3340,10 @@ book's ~60% is the loose level, which Cypro-Minoan also reaches (64%). The 638-6
 Wells 2015 (purchased, data/wells/): his proposed values fail as predictions (set 641: 032 is not an ending, 850 not
 syllable-like, 752 820 never occurs, 840 counted on B only); his volume system cannot be extended (no pot sizes in ICIT);
 his pp. 69-70 is prior work for set 552's number-size split.
+Sources added 26 Oct 2026 (data/sources/, git-ignored): Parpola 2010 Coimbatore lecture (original PDF; confirms the
+2010 rows of rebus/parpola_later.tsv; its 'two long strokes = veL / veLLi, synonym of the fish' rests on one seal pair,
+M-172 / H-6, and set 354 found 032 does not share the fish's contexts); Parpola 2005 'Study of the Indus Script' (the
+starting lecture, already covered); Shikarpur lithic assemblage (J. Lithic Studies 2014; no inscriptions).
 Set 640 (dated): at Keeladi the oldest graffiti (300+ cm, 5th-6th c. BCE) have Indus parallels less often (74%)
 than the later ones (82%). Layer dates: data/graffiti/dates/dates.tsv (usable trend at Keeladi, roughly Kodumanal).
 
