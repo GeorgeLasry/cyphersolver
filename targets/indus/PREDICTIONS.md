@@ -13503,3 +13503,12 @@ Odd against even ICIT record numbers: a label with no meaning (`predict_test456.
 The control passes. Odd against even record numbers (2,614 / 2,691 tokens on C-train): no sign skewed; the parity domain
 model takes weight 0. With set 455, two meaningless labels give nothing. Progress: none (goal streak 10). Tally, counting
 parts: 1644 held, 1653 failed (3301 registered; control verdicts counted as held).
+
+# Four-hundred-and-fifty-seventh set, registered before testing (26 October 2026): goal loop 103, the formula against plain 520 (two hypotheses)
+
+Set 446: fish stand before the formula far more than before 740. Before plain 520 (not 33 520)? (`predict_test457.py`).
+
+- **FX1** On A, the fish share before the formula differs from the fish share before plain 520 (two-sided Fisher).
+- **FX2** The same on B.
+- Progress rule: both hold. Both failing means the formula is the 520 class in a fuller form, nothing more.
+
