@@ -15045,3 +15045,12 @@ Relative position (index / (length - 1)) of set 552's counted signs, large group
 ## Results of set 562 (`hyp_s2_unitpos.py`, `results/predict_test562.md`)
 
 Held: UP1, UP2. A large 0.82 vs small 0.50; B 0.82 vs 0.66. Progress: yes (session-2 goal streak 0).
+
+
+# Set 563, registered before testing (26 October 2026): session-2 goal loop 28, number size within long strokes (two hypotheses)
+
+Set 553 confirmed set 552 within short strokes. Here long-stroke numerals (31-36) alone (`hyp_s2_seriesaudit.py`).
+
+- **SA1** On A, of set 552's signs with 4+ long-stroke-counted tokens, 70%+ keep their small / large direction.
+- **SA2** On B the same (3+ tokens).
+- Progress rule: none (audit).
