@@ -11759,3 +11759,19 @@ off to the unigram (`loopkit.cache`, `predict_test356.py`).
 - **RC1** The line's earlier signs as a cache lower S (S rule).
 - **RC2** The object's other lines as a cache lower S (S rule; 694 lines have sibling lines).
 
+## Results of the three-hundred-and-fifty-sixth set (`predict_test356.py`, `results/predict_test356.md`)
+
+Both failed: mixing weight 0 for both caches (dev-split bits rise with any weight: 4.635 -> 4.647 at 0.02). A positive
+control (an extra that always gives the true token probability 1) takes weight 0.5 and S 0.75, so the harness works;
+unigram-like extras carry nothing the context model lacks. Progress: none (goal streak 2). Tally, counting parts: 1589
+held, 1508 failed (3097 registered).
+
+# Three-hundred-and-fifty-seventh set, registered before testing (25 October 2026): goal loop 3, domain models (two hypotheses)
+
+Sets 355-356 mixed in unigram-like sources. Here the extra is itself the registered model, trained only on the
+training lines that share the side information (groups of 40+ lines; others fall back to the global model), so it can
+catch interactions of motif or region with sign context (`loopkit.domain_model`, `predict_test357.py`).
+
+- **DM1** A motif-domain model lowers S (S rule).
+- **DM2** A region-domain model (rtools.region of the site) lowers S (S rule).
+

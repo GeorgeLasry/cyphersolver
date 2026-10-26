@@ -107,6 +107,28 @@ def cache(source, alpha=2.0):
     return extra
 
 
+def domain_model(keyfn, minlines=40):
+    """The registered model trained only on the training lines that share keyfn's value (global weights), for groups
+    with minlines+ lines; other lines get the global model (so the mix changes nothing for them)."""
+    def extra(train, meta):
+        random.seed(2026)
+        w, _ = fit3(train, MODEL['keys'])
+        glob = M3(train)
+        groups = defaultdict(list)
+        for t in train:
+            groups[keyfn(t, meta)].append(t)
+        models = {k: M3(v) for k, v in groups.items() if len(v) >= minlines}
+        cache = {}
+
+        def f(t, i):
+            if t not in cache:
+                m = models.get(keyfn(t, meta), glob)
+                cache[t] = [sum(w[k] * r[k] for k in w) for r in m.rows(t, MODEL['kn'])]
+            return cache[t][i]
+        return f
+    return extra
+
+
 def test_pair(extra):
     (tr, te), (DA, DB) = splits()
     a0, a1, la = evaluate(tr, te, extra)
