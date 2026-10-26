@@ -12460,3 +12460,13 @@ Both held. Without Harappa, 109 of 124 pairs on Mahadevan's texts (p = 0.001) an
 from loop 57) re-testing a finding within a subset is consistency evidence, so this loop is not counted as progress,
 although the registered P line reads 'holds'. Progress: none (goal streak 1). Tally, counting parts: 1614 held, 1560
 failed (3174 registered).
+
+# Three-hundred-and-ninety-third set, registered before testing (26 October 2026): goal loop 39, which part of a name is local (two hypotheses)
+
+ICIT seals; name body as set 390 (2-3 signs before the last ending). Pairs of distinct seals sharing one part of the
+body and differing in the rest; places shuffled 500 times (`predict_test393.py`).
+
+- **NP1** Seals sharing only the head (the sign before the ending) come from one city more than chance.
+- **NP2** Seals sharing only the first sign of the name body come from one city more than chance.
+- Progress rule: either holds.
+
