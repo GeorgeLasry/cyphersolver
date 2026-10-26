@@ -14358,3 +14358,13 @@ Both held. Moulded tablet copies share the period in 89 of 264 pairs (p = 0.001)
 tablets, made one by one, share it in 64 of 178 (p = 0.049, just under the bar): the texts on Harappa's incised tablets
 recur within a period, as names or accounts of one time would. Not stratified by area or level within Harappa. Progress
 (goal streak 0). Tally, counting parts: 1673 held, 1741 failed (3419 registered).
+
+# Five-hundred-and-sixteenth set, registered before testing (26 October 2026): goal loop 162, audit of tablet copies and period (two hypotheses)
+
+Set 515 shuffled periods across all Harappa tablets; copies found in one trench share a period trivially. Here periods
+are shuffled within the excavation area (ICIT field 4, first nine characters) (`predict_test516.py`).
+
+- **TA1** Incised copies share the period beyond their area (p < 0.05).
+- **TA2** Moulded copies the same.
+- Progress rule: none (audit).
+
