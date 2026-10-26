@@ -12868,3 +12868,8 @@ band x subtype (`predict_test416.py`). (S6 of the twenty-fourth set tested the 5
 - **MP2** The heading frequency differs between the phases (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-sixteenth set (`predict_test416.py`, `results/predict_test416.md`)
+
+Both failed. 467 Mohenjo-daro lines with a phase: endings odds ratio late/early 1.03 (p = 0.96), heading 0.87
+(p = 0.67). As at Harappa (set 385), the formula is stable across the phases. Progress: none (goal streak 6). Tally,
+counting parts: 1622 held, 1600 failed (3224 registered).
