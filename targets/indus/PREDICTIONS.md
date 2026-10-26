@@ -12934,3 +12934,13 @@ signs against the other tablet kinds.
 Both failed. Copper against incised: 615 (copper) and 400 (incised) skewed, 1 testable; copper against moulded: 407, 615
 (copper) and 400 (moulded), 1 testable. Too few copper tokens (152 on C-train). Progress: none (goal streak 10). Tally,
 counting parts: 1622 held, 1608 failed (3232 registered).
+
+# Four-hundred-and-twenty-first set, registered before testing (26 October 2026): goal loop 67, opening and final signs by object kind (two hypotheses)
+
+The skew tests so far counted signs anywhere in a line. Here one position only, seals against tablets: C-train Fisher
+p < 0.01 (10+ lines), C-test 3+, 75%+ same way, binomial p < 0.05 (`predict_test421.py`).
+
+- **OP1** Opening signs.
+- **OP2** Final signs.
+- Progress rule: either holds.
+
