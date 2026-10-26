@@ -268,3 +268,43 @@ def run_set(num, title, hyps, gain=0.005):
     rd.rec('P', 'progress rule: either hypothesis holds', ', '.join('%s %s' % (k, o) for (k, _, _), o in zip(hyps, held)), any(held))
     rd.finish()
     return held
+
+
+def _scorer(train, domains, rev=False):
+    """log2 P(line) under the plain model mixed with the given domain models (keyfns read META of the original line)."""
+    import math as _m
+    flip = (lambda t: tuple(reversed(t))) if rev else (lambda t: t)
+    tr = [flip(t) for t in train]
+    random.seed(2026)
+    w, _ = fit3(tr, MODEL['keys'])
+    glob = M3(tr)
+    doms = []
+    for kf, wt in domains:
+        groups = defaultdict(list)
+        for t in train:
+            groups[kf(t, META)].append(flip(t))
+        doms.append((kf, wt, {k: M3(v) for k, v in groups.items() if len(v) >= 40}))
+
+    def lp(orig, cand):
+        c = flip(cand)
+        p = [sum(w[k] * r[k] for k in w) for r in glob.rows(c, MODEL['kn'])]
+        for kf, wt, models in doms:
+            m = models.get(kf(orig, META))
+            q = [sum(w[k] * r[k] for k in w) for r in m.rows(c, MODEL['kn'])] if m else p
+            p = [(1 - wt) * a + wt * b for a, b in zip(p, q)]
+        return sum(_m.log2(max(x, 1e-12)) for x in p)
+    return lp
+
+
+def sign_task(train, test, domains, ncand=150, limit=None):
+    """SIGN (set 204): hide each sign, rank the ncand commonest training signs by forward + backward log-probability."""
+    f, b = _scorer(train, domains), _scorer(train, domains, rev=True)
+    cands = [g for g, c in Counter(g for t in train for g in t).most_common(ncand)]
+    top1 = top5 = n = 0
+    for t in (test[:limit] if limit else test):
+        for i, g in enumerate(t):
+            sc = sorted(cands, key=lambda c: -(f(t, t[:i] + (c,) + t[i + 1:]) + b(t, t[:i] + (c,) + t[i + 1:])))
+            n += 1
+            top1 += sc[0] == g
+            top5 += g in sc[:5]
+    return top1 / n, top5 / n, n

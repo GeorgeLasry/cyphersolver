@@ -11864,3 +11864,20 @@ Context models onto the base (S rule with the sign-token condition, `predict_tes
 - **CY2** p(sign | graphic family of the line's first sign, position) lowers S for positions after the first (the
   opening family predicts the formula; position 0 uses no opening context, so no leak).
 
+## Results of the three-hundred-and-sixty-second set (`predict_test362.py`, `results/predict_test362.md`)
+
+Both failed: weight 0 for previous sign x length band and for the opening family x position. Progress: none (goal
+streak 3). Tally, counting parts: 1594 held, 1516 failed (3110 registered).
+
+# Three-hundred-and-sixty-third set, registered before testing (25 October 2026): goal loop 9, the SIGN task with the domain models (two hypotheses)
+
+The SIGN benchmark (tier 7: hide one sign, rank the 150 commonest by forward + backward probability; 39.7% / 61.8%) still
+uses the plain model. The region and length domain models (sets 357, 359) are mixed into both directions
+(`loopkit.sign_task`, `predict_test363.py`); compared with the plain model on the fixed split and A -> B. A sample of
+30 fixed-test lines was run to time the code (plain 45.7%, domains 47.2% top-1 on 127 signs); registered here before
+the full runs.
+
+- **SG1** SIGN top-1 rises with the domain models on the fixed test and on A -> B.
+- **SG2** SIGN top-5 rises on both.
+- Progress rule: SG1 holds (the SIGN benchmark moves).
+
