@@ -382,3 +382,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G126 | 480 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | yoke-carrier family and 151 not size-linked; only 156 (no progress; goal streak 11) |
 | G127 | 481 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | formula and small-seal signs avoid each other on A (6 vs 20), not significantly on B (no progress; goal streak 12) |
 | G128 | 482 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pieces of the long form not size-linked; the whole formula is (no progress; goal streak 13) |
+| G129 | 483 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | bar-seal / square-seal signs not size-linked within square seals (no progress; goal streak 14) |

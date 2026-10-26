@@ -13894,3 +13894,8 @@ Set 384 / 426: rectangular seals favour 1, 407, 55, 806; square seals 390, 741, 
 - **BS2** The square-seal signs 390 / 741 / 760 differ between large and small square seals (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eighty-third set (`predict_test483.py`, `results/predict_test483.md`)
+
+Both failed: rectangular-seal signs odds ratio 1.07 (p = 0.87); 390 / 741 / 760 0.85 (p = 0.29). Seal shape and seal
+size select different signs. Progress: none (goal streak 14). Tally, counting parts: 1655 held, 1695 failed (3355
+registered).
