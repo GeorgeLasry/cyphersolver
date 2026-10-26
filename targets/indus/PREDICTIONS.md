@@ -15553,3 +15553,13 @@ Held: none. SA1 False, SA2 False (audit of set 593). Progress: none (session-2 g
 61 and 575 share contexts only through the numeral before them (with numeral contexts dropped, cosine 0 on A and B):
 set 593's progress is withdrawn. The substitution series continues from set 599 with signs ranked 61-120 and numeral
 contexts dropped.
+
+
+# Set 599, registered before testing (26 October 2026): session-2 goal loop 64, substitution pairs (two hypotheses)
+
+Pairs 585/226, 482/850 (`hyp_s2_subst.py`, pair list fixed by A frequency rank before testing). Context = (previous sign, next sign);
+contexts whose previous sign is a numeral dropped (set 598); cosine of the two signs' context counts against 500 random partner signs of similar frequency (+-5 ranks).
+
+- **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
+- **SB2** Pair 2 the same.
+- Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
