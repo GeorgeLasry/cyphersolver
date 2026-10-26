@@ -3337,6 +3337,8 @@ Set 637: graffiti with an Indus parallel are not deeper within their sites (0.49
 (Rajan & Sivanantham 2025) matches by shape only, prints no concordance and dates no graffiti layer: data/graffiti/book/SUMMARY.md.
 Set 639 (chance rate, blind scorers): exact graffiti-Indus parallels 5-6 of 42, unrelated scripts 2-11 of 42; the
 book's ~60% is the loose level, which Cypro-Minoan also reaches (64%). The 638-639 checks close the book's claims.
+Set 640 (dated): at Keeladi the oldest graffiti (300+ cm, 5th-6th c. BCE) have Indus parallels less often (74%)
+than the later ones (82%). Layer dates: data/graffiti/dates/dates.tsv (usable trend at Keeladi, roughly Kodumanal).
 
 ## Audit (25 Sept 2026): part-transcriptions in the referent phrases
 

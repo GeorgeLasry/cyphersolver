@@ -16223,3 +16223,9 @@ cm is 5th-6th c. BCE and 0-200 cm 3rd c. BCE to CE, across trenches whose surfac
   often than graffiti above 200 cm (Fisher one-sided p < 0.05).
 - Progress rule: none.
 
+## Results of set 640 (`predict_test640.py`, `results/predict_test640.md`)
+
+Failed, the other way round. Keeladi graffiti at 300+ cm (5th-6th c. BCE) have an Indus parallel in 293 of 398 (74%),
+those above 200 cm (3rd c. BCE onward) in 455 of 554 (82%) (p = 0.9994 for the registered direction). The oldest dated
+graffiti at Keeladi carry Indus-like shapes somewhat less often, not more. Usable depth-to-date only at Keeladi and,
+roughly, Kodumanal (dates.tsv); the trenches' surfaces differ, so 300 cm is an approximate boundary. Progress: none.
