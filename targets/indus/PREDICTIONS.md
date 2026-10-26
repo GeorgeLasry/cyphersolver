@@ -11682,3 +11682,30 @@ contained in one, is counted apart as a probable copy and not scored. `predict_t
 - **NV5** The motif hits are not all bull: NV4 holds with units for the bull left out.
 - **NV6** Progress rule: NV4 holds (tier 3 moves: meaning predicted on texts never used to fix it), or NV1 and NV2 hold.
 
+# Three-hundred-and-fifty-fourth set, registered before testing (25 October 2026): decipherment loop 179, Parpola's later readings (1997, 2008, 2010) as structural predictions (seven hypotheses)
+
+Streak 2. `rebus/parpola_later.tsv` (collected 25 Oct 2026 from Studia Orientalia 82, 1997; the 2008 paper; the 2010
+Karunanidhi lecture) holds 16 readings not in keys/parpola1994.tsv. Signs mapped from Parpola's descriptions, the repo's
+1994 key and CISI: 'bull's head' = 740 (the 1994 key: cow's head, -a); with one stroke between the horns = 741; with
+strokes = 742 744 745 746; 'spear' = 520 (koTu, dative, 1994 pp. 92-94); 'yoke-carrier' = 151 (P001); bull's head +
+yoke-carrier = 154-158 (P004); spear + yoke-carrier = 161 (P003); fish with four strokes = the caged fish 226 232 153
+236 241; two long strokes = 32; fish = 220; six = 16. A sound reading predicts how the signs are used; each claim is
+turned into a test. Distinct lines; A, with B as replication where stated. Cosine = of preceding-sign counts, against
+1,000 random partner signs of the same frequency band (`predict_test354.py`). The spindle (684/683), the halved square
+and 'three worlds' give no structural prediction and are not tested. Counts of the signs were looked at; positions not.
+
+- **PL1** 'Bull's head with strokes' is an Old Tamil name element *Ataan*, "often text-initial": 742-746 open the line
+  more often than 740 does, on A (Fisher p < 0.05) and on B (same direction).
+- **PL2** 741 is an enlarged genitive (-tu), a case form of 740's -a: 741 shares 740's preceding signs (cosine) more than
+  random partners, p < 0.05.
+- **PL3** The caged fish read *kooTu*, homophone of the spear 520 *koTu*: caged fish and 520 share preceding signs more
+  than random partners, p < 0.05.
+- **PL4** Two long strokes (32) *veLLi* 'star' is a synonym of the fish *miin*: 32 and 220 share preceding signs more
+  than random partners, p < 0.05.
+- **PL5** The yoke-carrier after six + fish is *kaatal* 'lover, son': 16 220 is followed by 151 more often than 220 is
+  followed by 151 elsewhere (Fisher p < 0.05).
+- **PL6** The ligatures 154-158 (bull's head + yoke-carrier, 'cowherd') and 161 (spear + yoke-carrier) are compounds of
+  151's word: each shares 151's preceding signs more than random partners (pooled mean cosine, p < 0.05).
+- **PL7** Progress rule: 4 or more of PL1-PL6 hold (the later readings fit the structure better than the 1994 key did);
+  otherwise the readings are recorded as not supported.
+
