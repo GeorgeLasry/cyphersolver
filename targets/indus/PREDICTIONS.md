@@ -14048,3 +14048,9 @@ Square seals with a motif; unicorn (Bull1) against other animals; Mantel-Haensze
 - **UR2** Unicorn seals carry doubled non-numeral signs more often (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-ninety-third set (`predict_test493.py`, `results/predict_test493.md`)
+
+UR1 held, UR2 failed. With length band x site strata, unicorn-seal texts recur on other seals twice as often as
+other-animal seal texts (odds ratio 2.00, p = 0.024); doubled signs alike (0.80). With sets 491-492: the repeated
+(formulaic) seal texts are unicorn-seal texts; the rarer animals carry unique texts. A single test on all the data.
+Progress (goal streak 0). Tally, counting parts: 1660 held, 1710 failed (3375 registered).
