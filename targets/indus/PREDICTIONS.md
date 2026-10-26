@@ -15242,3 +15242,7 @@ Held: Q1, Q2. noend: [False]. Progress: none (session-2 goal streak 14).
 - **R1** On A: rare signs stand mid-line (p < 0.05).
 - **R2** The same on B.
 - Progress rule: R1 and R2.
+
+## Results of set 577 (`hyp_s2_r_rarepos.py`, `results/predict_test577.md`)
+
+Held: none. A 234/453 vs 4772/7855; B 56/110 vs 2195/3877. Progress: none (session-2 goal streak 15).
