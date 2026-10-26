@@ -14957,3 +14957,7 @@ Share of 520 among the endings of two-sign lines against lines of 5+ signs (`hyp
 - **SE1** On A the share differs (Fisher p < 0.05); the direction is the prediction for B.
 - **SE2** B shows the same direction (one-sided Fisher p < 0.05).
 - Progress rule: SE1 and SE2.
+
+## Results of set 556 (`hyp_s2_shortend.py`, `results/predict_test556.md`)
+
+Held: none. A short 520 11/62 vs long 102/678; B 1/20 vs 36/224. Progress: none (session-2 goal streak 4).
