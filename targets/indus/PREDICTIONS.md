@@ -12453,3 +12453,10 @@ Moulded tablets (mould copies) are almost all Harappan. Sets 390-391's locality,
 - **LH2** On ICIT seals without Harappa, the same.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-ninety-second set (`predict_test392.py`, `results/predict_test392.md`)
+
+Both held. Without Harappa, 109 of 124 pairs on Mahadevan's texts (p = 0.001) and 167 of 212 pairs of ICIT seals
+(p = 0.04) share their city: the local names of sets 390-391 are not mould copies. Under the standing rule (PROGRESS,
+from loop 57) re-testing a finding within a subset is consistency evidence, so this loop is not counted as progress,
+although the registered P line reads 'holds'. Progress: none (goal streak 1). Tally, counting parts: 1614 held, 1560
+failed (3174 registered).
