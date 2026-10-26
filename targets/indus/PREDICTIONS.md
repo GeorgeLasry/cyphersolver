@@ -12072,3 +12072,17 @@ Period 3A, 3B/C, 3C-1 ... 4; 1,262 lines), field 13 the material (steatite, clay
 - **PM1** A period domain model lowers S (the script changed over Harappa's periods).
 - **PM2** A material domain model lowers S beyond type and subtype.
 
+## Results of the three-hundred-and-seventy-fourth set (`predict_test374.py`, `results/predict_test374.md`)
+
+Both failed. Period: fixed gain 0.0010, split C none; material: weight 0. Beyond object type and subtype, neither the
+Harappa period nor the material changes sign context. Progress: none (goal streak 2). Tally, counting parts: 1600 held,
+1538 failed (3138 registered).
+
+# Three-hundred-and-seventy-fifth set, registered before testing (26 October 2026): goal loop 21, shape and secondary motif (two hypotheses)
+
+ICIT field 15 (shape: square, rectangular, prism ...) and field 19 (secondary motif: the 'standard' (SAN) before the
+unicorn, the trough ...), as set 374 (`predict_test375.py`).
+
+- **SH1** A shape domain model lowers S beyond type and subtype (fixed split and split C).
+- **SH2** A secondary-motif domain model lowers S (fixed split and split C).
+
