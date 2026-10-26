@@ -12899,3 +12899,8 @@ predict_test418.md and predict_test4180.md).
 - **AR2** An area domain model lowers S on the set 372 base (fixed split and C; rule of set 358).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eighteenth set (`predict_test418.py`, `results/predict_test418.md`, `predict_test4180.md`)
+
+Both failed. No sign skewed between the DK and HR areas (2,187 / 363 tokens on C-train); the area model takes weight 0.
+Within Mohenjo-daro the texts do not differ by quarter (as names did not, set 391). Progress: none (goal streak 8).
+Tally, counting parts: 1622 held, 1604 failed (3228 registered).
