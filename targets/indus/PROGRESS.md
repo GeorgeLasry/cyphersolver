@@ -526,3 +526,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-87 | 622 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | substitution pairs: 423/64 False; 137/924 False. (no progress; session-2 goal streak 8) |
 | S2-88 | 623 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | substitution pairs: 702/626 False; 518/703 False. (no progress; session-2 goal streak 9) |
 | S2-89 | 624 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | substitution pairs: 252/66 False; 824/521 False. (no progress; session-2 goal streak 10) |
+| S2-90 | 625 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | substitution pairs: 136/456 False; 511/201 False. (no progress; session-2 goal streak 11) |
