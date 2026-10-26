@@ -20,5 +20,5 @@ PDF and text extract kept locally in this folder (git-ignored). Read 26 Oct 2026
 - **Conclusions:** the shared shapes "were not merely accidental" (p. 37), hedged as "at the embryonic stage" (p. 35).
 
 Tested here: set 635 (graffiti pairs through their parallels: not Indus-like), set 637 (Indus-parallel graffiti not
-deeper within sites). Open, testable on the Indus side: the positional claims for the jar, the ladder and the wavy line,
-and the chance rate of shape parallels for simple geometric signs.
+deeper within sites). Set 638: the positional claims on the Indus side (jar = line-final ending, leftmost; ladder 6 of 15 initial, p = 0.06;
+wavy line never alone but untestable). Open: the chance rate of shape parallels for simple geometric signs.

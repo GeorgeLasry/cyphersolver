@@ -16165,3 +16165,13 @@ the final share (the mirrored claim) is reported too.
 - **PC3** The wavy line never forms a one-sign Indus text, where the general rate predicts 3+ such texts.
 - Progress rule: none (checks of published claims).
 
+## Results of set 638 (`predict_test638.py`, `results/predict_test638.md`)
+
+All three failed as registered. Jar 740 opens 7 of 991 Indus lines (expected 223) but ends 710 (PC1): it is the
+ending. Read right to left, the line's last sign is its leftmost, which is the 'initial' place of a left-to-right
+graffito, so the book's observation matches the jar's mirrored position; in the Indus texts that place is the closing
+ending, not an opening sign. The ladder 315 / 317 opens 6 of 15 lines against 3.0 expected (p = 0.059; ends 4) (PC2):
+too few. The wavy line 450 / 460 stands in 28 lines, never alone, but the general rate predicts only 0.3 one-sign texts,
+so 'never alone' is untestable on the Indus side (PC3). The book's 'as in the Indus script' for the wavy line is
+consistent but empty. Caveats: the jar's equivalent is our choice (the corpus gives none); the graffiti side of the
+claims is qualitative (no counts in the book). Progress: none. Tally: 3 failed added.
