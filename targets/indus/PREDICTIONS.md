@@ -12858,3 +12858,13 @@ Square seals, white against other (`predict_test415.py`).
 Both failed. No sign skewed between white and other-coloured square seals (1,528 / 165 tokens on C-train); endings
 alike (odds ratio 0.92). Progress: none (goal streak 5). Tally, counting parts: 1622 held, 1598 failed (3222
 registered).
+
+# Four-hundred-and-sixteenth set, registered before testing (26 October 2026): goal loop 62, change over the Mohenjo-daro phases (two hypotheses)
+
+As set 385 for Harappa: ICIT field 9 at Mohenjo-daro (Early + Intermediate against Late), Mantel-Haenszel over length
+band x subtype (`predict_test416.py`). (S6 of the twenty-fourth set tested the 520 share by Mohenjo-daro levels.)
+
+- **MP1** Late texts differ in closing with 740 / 520 (two-sided p < 0.05).
+- **MP2** The heading frequency differs between the phases (two-sided p < 0.05).
+- Progress rule: either holds.
+
