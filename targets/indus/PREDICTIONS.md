@@ -15203,3 +15203,7 @@ Held: none. single: [False, False]. Progress: none (session-2 goal streak 11).
 - **Q1** On A: the sign after a mid-line ending (not 400 / 90) is an opener or numeral more often than signs at the same positions in general (p < 0.05 where a test applies).
 - **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
 - Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
+
+## Results of set 574 (`hyp_s2_q_afterend.py`, `results/predict_test574.md`)
+
+Held: none. afterend: [np.False_, np.False_]. Progress: none (session-2 goal streak 12).
