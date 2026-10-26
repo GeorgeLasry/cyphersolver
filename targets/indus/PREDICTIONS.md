@@ -15013,3 +15013,7 @@ Value of a numeral directly before a fish sign (220-259) against before any othe
 - **FV1** On A, fish are counted with smaller values (Mann-Whitney p < 0.05).
 - **FV2** The same on B.
 - Progress rule: none if it only restates set 552 (small numbers count fish); recorded as consistency.
+
+## Results of set 560 (`hyp_s2_fishval.py`, `results/predict_test560.md`)
+
+Held: FV1, FV2. A True, B True: restates set 552 (consistency). Progress: none (session-2 goal streak 8).
