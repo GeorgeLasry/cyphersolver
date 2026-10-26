@@ -13410,3 +13410,13 @@ Square seals with a size; Mantel-Haenszel over length band x site (`predict_test
 Both failed. '740 90' odds ratio large/small 0.87 (p = 0.79); '740 400' 0.32 but p = 0.43 (rare on seals). Only the fish
 names' long form is a size form. Progress: none (goal streak 4). Tally, counting parts: 1640 held, 1647 failed (3291
 registered).
+
+# Four-hundred-and-fifty-first set, registered before testing (26 October 2026): goal loop 97, size findings on rectangular seals (two hypotheses)
+
+Rectangular seals (SEAL:R) with a size, own median (`predict_test451.py`).
+
+- **RZ1** Small rectangular seals repeat texts more often at equal length (Mantel-Haenszel p < 0.05), as set 380 found
+  for square seals.
+- **RZ2** All four core size signs of set 430 (706 large; 156, 400, 590 small) lean the same way (4 of 4; chance 1 in 16).
+- Progress rule: either holds.
+
