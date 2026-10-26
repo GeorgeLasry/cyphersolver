@@ -14390,3 +14390,9 @@ shuffled within area and period (`predict_test517.py`).
   one mould batch.
 - Progress rule (new bar): either holds at p < 0.01.
 
+## Results of the five-hundred-and-seventeenth set (`predict_test517.py`, `results/predict_test517.md`)
+
+Both held at p = 0.001 (560 of 743 copy pairs share the picture; 139 of 293 across periods). This restates the
+picture-referent finding of sets 233-350 (moulded-tablet texts go with their pictures, mould copies counted once in set
+341), so it is a re-finding, not progress. Progress: none (goal streak 2). Tally, counting parts: 1676 held, 1742
+failed (3423 registered).
