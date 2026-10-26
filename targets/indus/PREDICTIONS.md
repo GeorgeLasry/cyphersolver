@@ -14971,3 +14971,7 @@ shuffles of counted signs among all such units (`hyp_s2_twocounts.py`).
 - **TC1** On A the same-sign share differs from the shuffles (two-sided p < 0.05); direction is B's prediction.
 - **TC2** B shows the same direction (p < 0.05 one-sided).
 - Progress rule: TC1 and TC2.
+
+## Results of set 557 (`hyp_s2_twocounts.py`, `results/predict_test557.md`)
+
+Held: none. A 2/140 same (null 3.1); B 0/49 (null 1.4). Progress: none (session-2 goal streak 5).
