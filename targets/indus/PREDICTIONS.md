@@ -12493,3 +12493,9 @@ reported (`predict_test394.py`).
 - **WC2** The mean top-glyph share beats random object lists of the same sizes (1,000 draws, p < 0.05).
 - Progress rule: none (infrastructure; the Wells claims are tested next).
 
+## Results of the three-hundred-and-ninety-fourth set (`predict_test394.py`, `results/predict_test394.md`, data/wells/wells_icit_concordance.tsv)
+
+Both held (no progress by design). 74 Wells signs have 3+ listed objects in the ICIT; for 69 one glyph is on 80%+ of
+them (mean share 0.94; random object lists never as pure, p = 0.001). Both printed checks agree: Wells 247 -> ICIT 374
+(M77 400), Wells 303 -> ICIT 760 (M77 347). The concordance is written to data/wells/wells_icit_concordance.tsv.
+Progress: none (goal streak 3). Tally, counting parts: 1616 held, 1562 failed (3178 registered).
