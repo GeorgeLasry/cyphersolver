@@ -14108,3 +14108,8 @@ RA1 held, RA2 failed narrowly (audit). With motif in the strata: odds ratio 1.48
 - **FM2** The same within unicorn seals.
 - Progress rule: none (audit). Both failing downgrades set 441.
 
+## Results of the four-hundred-and-ninety-seventh set (`predict_test497.py`, `results/predict_test497.md`)
+
+Both held (audit). With motif strata the formula leans to large seals (odds ratio 2.59, p = 0.011); within unicorn
+seals 2.93 (p = 0.011). Set 441 stands against length, site, thickness (set 478) and the animal. Progress: none (goal
+streak 4). Tally, counting parts: 1664 held, 1714 failed (3383 registered).
