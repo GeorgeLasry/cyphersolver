@@ -16150,3 +16150,18 @@ the depth range). **The Indus-like signs are not concentrated in the earlier lay
 the depth range like the other marks. Caveats: depth below surface across trenches, not dated layers; parallels are the
 corpus's shape identifications; most base signs have a parallel (31 of 42), so the 'none' group is small at several
 sites. Progress: none (CH1 is the progress rule).
+
+# Set 638, registered before testing (26 October 2026): Rajan & Sivanantham 2025's positional claims on the Indus lines (three hypotheses)
+
+The book (data/graffiti/book/SUMMARY.md, p. 37) says, of the graffiti composites, that the jar without arms (16.0) and
+the ladder (23.0) mostly come first, and that the wavy line (34.0) never stands alone, 'as in the Indus script'. Tested
+on the distinct clean ICIT lines in reading order (`predict_test638.py`). Indus equivalents: ladder 23.0 = M186 = ICIT
+315 / 317 and wavy line 34.0 = M132 = ICIT 450 (variant 460), from the corpus's own map; for the jar the corpus gives no
+parallel, so Mahadevan's jar 342 = ICIT 740 is used (our choice). Graffiti run left to right, Indus right to left, so
+the final share (the mirrored claim) is reported too.
+
+- **PC1** The jar opens Indus lines more often than chance (1 / line length; binomial p < 0.05).
+- **PC2** The ladder opens Indus lines more often than chance.
+- **PC3** The wavy line never forms a one-sign Indus text, where the general rate predicts 3+ such texts.
+- Progress rule: none (checks of published claims).
+
