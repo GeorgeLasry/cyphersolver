@@ -12828,3 +12828,13 @@ numeral without an ending is a trend only (1.35, p = 0.083). Note on set 384: BR
 ending less often) restates M12 of the twenty-fourth set (bar seals carry bare names, +13.4 points); set 384's progress
 rests on BR1, its sign skews. Progress: none (goal streak 3). Tally, counting parts: 1622 held, 1594 failed (3218
 registered).
+
+# Four-hundred-and-fourteenth set, registered before testing (26 October 2026): goal loop 60, seal size, name length and fish signs (two hypotheses)
+
+Square seals with a size, median split; Mantel-Haenszel over text-length bands (`predict_test414.py`). Name body = the
+run of signs before the last ending back to a numeral, a heading sign or the line start.
+
+- **SB1** Large seals carry name bodies of 3+ signs more often at equal text length (more modifiers).
+- **SB2** Large seals carry a fish-family sign (ICIT 220-249) more often at equal text length.
+- Progress rule: either holds.
+
