@@ -12240,3 +12240,14 @@ seals, 147 copy pairs: same motif 63.3% (p = 0.079 against within-site shuffles)
 a seal text are not tied to an emblem or a city. Note for sets 355, 357, 367, 368: loopkit's motif came from
 data/corpus.tsv (A) and M77 rows, and was empty for lines found only in F, which formed one group; those motif tests were
 partial. Progress: none (goal streak 1). Tally, counting parts: 1605 held, 1547 failed (3152 registered).
+
+# Three-hundred-and-eighty-second set, registered before testing (26 October 2026): goal loop 28, the motif read correctly (two hypotheses)
+
+Set 381 found the motif missing for F-only lines. Redone from record field 18 for every clean object
+(`predict_test382.py`).
+
+- **MO1** A motif domain model (field 18) lowers S on the set 372 base, fixed split and split C (rule of set 358).
+- **MO2** On square seals, signs skewed between unicorn (Bull1) and other-animal seals on C-train (Fisher p < 0.01)
+  lean the same way on C-test in 75%+ of cases (binomial p < 0.05).
+- Progress rule: either holds.
+
