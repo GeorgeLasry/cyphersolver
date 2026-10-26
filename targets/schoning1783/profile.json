@@ -159,6 +159,15 @@
       ],
       "what": "Per-line sense check with fr-1600-letters (threshold -2.6): 7 lines flagged and re-read at 3x; G11 settled as c only; No. 1 transcribed in full. 4,100 tokens, 92.2% given a value; 93.1% of letter signs on lines reading as French; without No. 1, 94.6%.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "key from source",
+      "technique": [
+        "key matching"
+      ],
+      "what": "De Larrey's dossier KHA A32-604 searched (442 scans): one 17-entry key list (scan 6, 'Zifferschlussel zwischen den Briefen gefunden', Byland); applied, 11 tokens resolved; 92.4% given a value, 145/228 codes known.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -168,7 +177,7 @@
       "unknown"
     ],
     "class": "unknown",
-    "fraction_read": 0.922,
+    "fraction_read": 0.924,
     "grades": {
       "H": "unknown",
       "C": "unknown",

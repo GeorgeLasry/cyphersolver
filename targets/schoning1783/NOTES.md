@@ -131,7 +131,10 @@ Next: a sense check per line with the fr-1600-letters model, re-read the garbled
 
 - [x] clear-pages: the decipherer's 10 clear copies used for the tables
 - [x] siblings: A32-599-604 related files identified (A32-601 Van der Hoop to Schöning, 80 scans; A32-604 De Larrey's dossier with key, 442 scans), not yet opened
-- [ ] known-keys: De Larrey's dossier A32-604 is catalogued "met sleutel" - the likeliest source of the code table
+- [x] known-keys: De Larrey's dossier A32-604 (442 scans) searched in full: its only key is scan 6, a 17-entry list
+  "Zifferschlüssel, zwischen den Briefen gefunden" marked "Byland" (816 Roi, 449/445 Hertzberg, 859/860 S.M., 107 Berlin,
+  725/732 Prince, 735/742 Princesse, 802 Republique, 582 lettre, 878 S.A., 883 S.A.R., 969 Vauguyon, 200 [?]egers, 545 K...);
+  it confirms the alphabetical order and four context values. s440 is a short coded note (581, 887, 809, 734, 104 ...).
 - [x] print: no edition found
 - [x] key-rebuild: letter table from the copies; code table from glosses, context and alphabetical bracketing
-- [ ] retry: after A32-604
+- [x] retry: the A32-604 key applied (11 tokens); measure now 3,788 / 4,100 (92.4%), 145 of 228 code numbers known
