@@ -12976,7 +12976,7 @@ objects)? Square seals with a size, median split, Mantel-Haenszel over length ba
 ## Results of the four-hundred-and-twenty-third set (`predict_test423.py`, `results/predict_test423.md`)
 
 ST1 failed, ST2 held. Name bodies of small seals are not on tablets more often (odds ratio 1.43, p = 0.23), but whole
-small-seal texts are, about twice as often as large-seal texts at equal length (2.12, p = 0.027). With set 380 (small
+small-seal texts are, about twice as often as large-seal texts at equal length (2.12, p = 0.027; downgraded to a trend by set 424: p = 0.063 with site held). With set 380 (small
 seals repeat texts on other seals), the formulaic texts of small seals are the ones also written on tablets: the
 generic seal texts and the tablet records share a repertoire. A single test on all the data (no held-out sample).
 Progress (goal streak 0). Tally, counting parts: 1623 held, 1611 failed (3238 registered).
@@ -12990,3 +12990,8 @@ Tablets are mostly Harappan; if small seals are commoner at Harappa, set 423's S
 - **SA2** ST2 holds within Harappa alone.
 - Progress rule: none (audit).
 
+## Results of the four-hundred-and-twenty-fourth set (`predict_test424.py`, `results/predict_test424.md`)
+
+Both failed (audit). With length x site strata the odds ratio stays 1.95 but p = 0.063; within Harappa 2.87, p = 0.33
+(few cases). **Set 423 is downgraded to a trend**: the effect keeps its size with site held but is no longer
+significant. Progress: none (goal streak 1). Tally, counting parts: 1623 held, 1613 failed (3240 registered).

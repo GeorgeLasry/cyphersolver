@@ -323,3 +323,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G67 | 421 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opening/final signs by object kind: 2 of 4, 3 of 3 (known formula, too few) (no progress; goal streak 11) |
 | G68 | 422 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | WORD with a subtype prior: no change (no progress; goal streak 12) |
 | G69 | 423 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small-seal texts recur as tablet lines twice as often as large-seal texts (OR 2.1, p = 0.027) (progress; goal streak 0) |
+| G70 | 424 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: set 423 with site held, OR 1.95, p = 0.063: downgraded to a trend (audit; no progress; goal streak 1) |
