@@ -138,3 +138,13 @@ Next: a sense check per line with the fr-1600-letters model, re-read the garbled
 - [x] print: no edition found
 - [x] key-rebuild: letter table from the copies; code table from glosses, context and alphabetical bracketing
 - [x] retry: the A32-604 key applied (11 tokens); measure now 3,788 / 4,100 (92.4%), 145 of 228 code numbers known
+
+## No. 1 re-read at 5x (26 Oct 2026)
+
+Lines 3 (tail), 4, 9, 12, 13, 15 re-read at 5-6x (the slant on s001 is about 0.01, not 0.04). Now reading: line 9 "il
+soupsonna monsieur votre frere le general d'etre du parti du cal(?): 499 de le desabuser"; line 13 "avent qu'onne soit
+tout a fait sur de la bonne reussite"; line 15 "... la malheureuse 801. cet idie ... ave(c) zele". NEW4 = G21 (second
+s); NEW3 = ink blots read from context; NEW2 probably G22 x ("teriteaux"); new NEW5 (blotted), NEW6 (squared bracket,
+read v). Still weak: line 4 (three signs under a gloss), line 12 "ssanur", the name after "monsieur" on line 3.
+Measure: No. 1 676/754 (89.7%, was 81.4%); all letters 3,852/4,102 (93.9%). Sense: 90.7% of letter signs on lines
+scoring >= -2.6 (was 93.1%: the re-read added more doubtful words, and the writer's spelling by sound lowers scores).
