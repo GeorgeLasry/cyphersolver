@@ -12843,3 +12843,13 @@ run of signs before the last ending back to a numeral, a heading sign or the lin
 Both failed. Large seals carry 3+ sign name bodies as often as small ones at equal length (odds ratio 1.02); fish-family
 signs lean large (1.29, p = 0.058). Seal size goes with particular signs (set 379), not with longer names. Progress:
 none (goal streak 4). Tally, counting parts: 1622 held, 1596 failed (3220 registered).
+
+# Four-hundred-and-fifteenth set, registered before testing (26 October 2026): goal loop 61, seal colour (two hypotheses)
+
+ICIT field 14: most steatite seals were fired white; other colours may be unfired, unfinished or differently treated.
+Square seals, white against other (`predict_test415.py`).
+
+- **CL1** Set 371's skew test on split C (white against other).
+- **CL2** At equal length, other-coloured seals differ from white ones in closing with 740 / 520 (two-sided p < 0.05).
+- Progress rule: either holds.
+
