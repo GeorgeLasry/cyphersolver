@@ -434,7 +434,7 @@ def word_task(train, test, domains, limit=None):
     return top1 / max(1, n), top10 / max(1, n), n
 
 
-def word_task_local(train, test, domains, bonus=1.0):
+def word_task_local(train, test, domains, bonus=1.0, keyfn=None):
     """WORD with a city prior (set 399): a candidate body gets + bonus * log2(1 + its count in training lines from the
     test line's site). Sites from META."""
     import math as _m
@@ -444,7 +444,7 @@ def word_task_local(train, test, domains, bonus=1.0):
         nm = R.name_of(list(t))
         if nm and nm[0]:
             bodies[tuple(nm[0])] += 1
-            by_site[META.get(t, ('', '', ''))[0]][tuple(nm[0])] += 1
+            by_site[keyfn(t) if keyfn else META.get(t, ('', '', ''))[0]][tuple(nm[0])] += 1
     cands = [b for b, c in bodies.most_common()]
     out = {0: [0, 0], 1: [0, 0]}
     n = 0
@@ -457,7 +457,7 @@ def word_task_local(train, test, domains, bonus=1.0):
         if j is None:
             continue
         pre, post = t[:j], t[j + len(b):]
-        site = META.get(t, ('', '', ''))[0]
+        site = keyfn(t) if keyfn else META.get(t, ('', '', ''))[0]
         base = {c: f(t, pre + c + post) for c in cands}
         n += 1
         for k, bw in ((0, 0.0), (1, bonus)):
