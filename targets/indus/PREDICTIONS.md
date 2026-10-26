@@ -12157,3 +12157,19 @@ Domain models on the set 372 base, split C, rule of set 358 (`predict_test377.py
 - **SZ1** Size band (ICIT field 31: under 20, 20-30, 30+ of the recorded first dimension; none = own group) lowers S.
 - **SZ2** The number of inscribed sides (ICIT field 21: 1, 2, 3, 4) lowers S.
 
+## Results of the three-hundred-and-seventy-seventh set (`predict_test377.py`, `results/predict_test377.md`)
+
+Both failed: weight 0 for size band and for number of sides. Progress: none (goal streak 5). Tally, counting parts:
+1601 held, 1543 failed (3144 registered).
+
+# Three-hundred-and-seventy-eighth set, registered before testing (26 October 2026): goal loop 24, seal size and workmanship on the fixed split (two hypotheses)
+
+Set 376's size skews replicated 4 of 4 on split C, short of significance. Retested with more power: skews found on the
+fixed training square seals, checked on the fixed test square seals (disjoint from set 376's C-train only in part; a
+second look at the same question, so a pass is weaker evidence and is reported as such) (`predict_test378.py`).
+
+- **FS1** Large / small square-seal skews (median first dimension, Fisher p < 0.01) lean the same way on the fixed test
+  in 75%+ of cases (binomial p < 0.05).
+- **FS2** The same for good / fine against poor / fair workmanship (ICIT field 22).
+- Progress rule: either holds.
+
