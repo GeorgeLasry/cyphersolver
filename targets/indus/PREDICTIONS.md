@@ -13854,3 +13854,14 @@ Set 430: 156 (bull-headed yoke-carrier) is on small seals. Its family and the pl
 Both failed: 154 / 155 / 157 / 158 odds ratio 0.64 (p = 0.53); 151 0.80 (p = 0.63). Of the yoke-carriers only 156 goes
 with small seals (set 430). Progress: none (goal streak 11). Tally, counting parts: 1654 held, 1690 failed (3349
 registered).
+
+# Four-hundred-and-eighty-first set, registered before testing (26 October 2026): goal loop 127, formula and small-seal signs apart (two hypotheses)
+
+If seal size marks two kinds of seal text, the large-seal formula (705 / 706 + 33) and the small-seal signs (156, 400,
+590) should rarely share a line. Null: the other signs of formula lines drawn from the corpus pool (1,000 shuffles)
+(`predict_test481.py`).
+
+- **AV1** On A, formula lines carry a small-seal sign less often than chance.
+- **AV2** The same on B (no sizes needed).
+- Progress rule: both hold.
+
