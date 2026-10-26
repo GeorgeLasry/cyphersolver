@@ -13020,3 +13020,9 @@ Set 384's BR1 (10 of 10 rectangular / square skews replicate) had no site contro
 - **RS2** The same within Harappa.
 - Progress rule: none (audit). Both failing downgrades set 384.
 
+## Results of the four-hundred-and-twenty-sixth set (`predict_test426.py`, `results/predict_test426.md`)
+
+RS1 held, RS2 failed (audit). Within Mohenjo-daro the same signs are skewed (rectangular 1, 407, 55, 806; square 390,
+741, 760) and 5 of 5 replicate (p = 0.031); within Harappa nothing reaches p < 0.01 (166 rectangular tokens). Set 384
+stands as a Mohenjo-daro result at least. Progress: none (goal streak 3). Tally, counting parts: 1626 held, 1614 failed
+(3244 registered).
