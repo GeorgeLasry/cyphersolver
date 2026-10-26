@@ -16064,3 +16064,22 @@ contexts whose previous sign is a numeral dropped (set 598); cosine of the two s
 ## Results of set 634 (`hyp_s2_subc19.py`, `results/predict_test634.md`)
 
 Held: none. 204/422 False; 272/502 False. Progress: none (session-2 goal streak 20).
+
+# Set 635, registered before testing (26 October 2026): the Tamil Nadu graffiti sequences against the Indus texts (three hypotheses)
+
+The Tamil Nadu graffiti corpus (tngraffiti.in, Rajan, Sivanantham and Sundar; data/graffiti/) gives, for 31 of its 42
+base signs, an Indus parallel in Mahadevan's numbering (23 map to ICIT), and 600+ multi-sign graffiti sequences (signs
+written together on one sherd). The mapping is theirs, so a test through it is not shaped by this project. Variants
+count as their base sign; composite glyphs (ligatures) are left out; each distinct sequence counted once
+(`predict_test635.py`). Indus neighbours: adjacent pairs in the distinct lines of A + B. Set 204 compared only an order
+statistic, with no sign correspondence. Not measured before registering.
+
+- **GR1** Adjacent pairs of two distinct mapped graffiti signs are Indus neighbours (their parallels adjacent in either
+  order in some Indus line) more often than (a) under 1,000 shuffles of the mapping among the mapped base signs and (b)
+  under 1,000 re-pairings of the same signs; p < 0.05 for both.
+- **GR2** For pairs whose parallels have a dominant Indus order (3+ occurrences, 3:1), the graffiti order agrees with the
+  Indus reading order, or consistently reverses it (two-sided binomial p < 0.05).
+- **GR3** Graffiti signs whose parallels end Indus lines (signs ending 50%+ of their 20+ lines) stand last in their
+  graffiti sequence more than chance (1 / sequence length), p < 0.05.
+- Progress rule: GR1 holds.
+
