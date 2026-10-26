@@ -14688,3 +14688,7 @@ one order only (6+ lines, 0 the other way) are 'fixed' (`hyp_s2_order.py`).
   are (Fisher-like comparison by binomial against the fixed pairs' rate).
 - **OR2** Free-order pairs are mostly numerals or markers (R.NUMS, 400, 90): the reversals are counts, not words; 60%+.
 - Progress rule: OR1 and OR2 both hold (a replicated finding about word order).
+
+## Results of set 538 (`hyp_s2_order.py`, `results/predict_test538.md`)
+
+Held: OR1. free pairs both orders on B 13/22 vs fixed 11/97; numeral/marker share 14/27. Progress: none (session-2 goal streak 3).

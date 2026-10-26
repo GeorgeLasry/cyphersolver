@@ -437,3 +437,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G181 | 535 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs 161 / 171 by seal size: 161 OR 0.88 p 0.871, 171 OR 0.41 p 0.310 (no progress; goal streak 20) |
 | S2-1 | 536 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the closing formula as a role: R 86.27% -> 86.28%; final A 35/36, B 10/10. (no progress; session-2 goal streak 1) |
 | S2-2 | 537 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | which signs take 740 and which 520: preferences replicate 30/30; non-fish 520 signs kept on B: 2. (no progress; session-2 goal streak 2) |
+| S2-3 | 538 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pairs written in both orders: free pairs both orders on B 13/22 vs fixed 11/97; numeral/marker share 14/27. (no progress; session-2 goal streak 3) |
