@@ -12796,3 +12796,13 @@ and Harappa: 0.699 over 62 (p = 0.26). Site mix does not explain the set 408 / 4
 body-weighted, Mahadevan's seal-like lines are. The two samples disagree; the M77 lines lack types, and its 'no 400'
 proxy may admit incised tablets, which are Harappan. Seal-name locality is left unresolved. Progress: none (goal streak
 1). Tally, counting parts: 1622 held, 1589 failed (3213 registered).
+
+# Four-hundred-and-twelfth set, registered before testing (26 October 2026): goal loop 58, SIGN with the object-kind models (two hypotheses)
+
+Set 363 tried SIGN with region + length (no gain). The base now carries object type, subtype and length x subtype
+(`loopkit.sign_task` with BASE_DOMAINS; fixed split and split C) (`predict_test412.py`).
+
+- **SK1** SIGN top-1 rises on both splits.
+- **SK2** SIGN top-5 rises on both splits.
+- Progress rule: SK1 holds.
+
