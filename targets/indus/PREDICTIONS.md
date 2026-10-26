@@ -13176,3 +13176,8 @@ seals with a size, not length-stratified):
   240) and no caged one.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-fifth set (`predict_test435.py`, `results/predict_test435.md`)
+
+Both failed. Stroked jars: median 27.9 (149 seals) against 26.7 (519), p = 0.22; caged fish 27.4 (47) against plain fish
+28.0 (390), p = 0.76. The size step of set 433 belongs to the U family alone. Progress: none (goal streak 2). Tally,
+counting parts: 1633 held, 1624 failed (3261 registered).
