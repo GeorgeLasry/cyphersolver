@@ -13605,3 +13605,8 @@ final = followed only by 400 / 90.
 - **FE2** The same on B.
 - Progress rule: both hold.
 
+## Results of the four-hundred-and-sixty-third set (`predict_test463.py`, `results/predict_test463.md`)
+
+Both failed. The long form ends the line every time (23 of 23 on A, 7 of 7 on B), the short form nearly always (67 of
+76, 14 of 17): p = 0.082 and 0.34. Both forms close the text. Progress: none (goal streak 4). Tally, counting parts:
+1649 held, 1663 failed (3316 registered).
