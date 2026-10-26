@@ -16191,3 +16191,9 @@ counted. Blinding is imperfect (Indus and Aegean signs are recognisable). Not me
 - **SP2** The controls' mean exact-parallel share is 20% or more: simple marks find 'parallels' in unrelated scripts.
 - Progress rule: none (a check of a published claim).
 
+## Set 639 audit, registered before running (26 October 2026): one scorer for all four inventories
+
+The four registered scorers differ in strictness (scorer P reports ignoring pointed / rounded tops and proportions). An
+audit, registered before it is run: one new scorer judges all four sheets in one pass, in the order R, P, S, Q, with the
+same standard; its counts are reported beside the registered ones and decide nothing on their own (SP1 / SP2 are
+scored on the registered four). Output data/shapes/score_one_<L>.tsv.
