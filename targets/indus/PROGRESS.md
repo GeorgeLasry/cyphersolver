@@ -545,3 +545,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | - | 641 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Wells 2015 values: 840 counted on B only; 850 not syllabic-like; 752 820 never occurs; 032 not line-final (no progress) |
 | - | 642 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | counted units vs pictures: none at Mohenjo-daro (p = 0.53); Harappa p = 0.001 but mould copies not collapsed (no progress) |
 | - | 643 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Linear B control: count size depends on the commodity at Knossos (sheep, grain, wool large; chariots, women, horses small), Pylos 9 of 12 (p = 0.07): set 552 looks like bookkeeping (control) |
+| - | 644 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | short labels: on non-seal objects more at Mohenjo-daro only; heads predict the motif on square seals (p = 0.023) but weakly, mostly bull (nominal, not claimed) |

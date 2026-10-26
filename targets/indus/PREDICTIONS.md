@@ -16314,3 +16314,12 @@ objects with records (`predict_test644.py`).
 - **SL2** On square seals, the head of a short label predicts the field motif beyond 1,000 shuffles (MI, p < 0.05)
   (long-text heads reported beside it; set 177-era work found seal names not tied to their animal).
 - Progress rule: SL1a and SL1b, or SL2.
+
+## Results of set 644 (`predict_test644.py`, `results/predict_test644.md`)
+
+SL1a and SL2 held, SL1b failed. Short labels stand on non-seal objects more often than long named texts at Mohenjo-daro
+(19 of 60 against 85 of 477, p = 0.011) but not at Harappa (25 of 37 against 160 of 263, p = 0.27). On square seals the
+short-label head predicts the motif beyond shuffles (67 seals, p = 0.023), long-text heads do not (486 seals, p =
+0.22). But the heads are nearly all on one to five seals, mostly with the default bull; no head with 3+ seals goes with
+another animal. The signal is weak, from one sample, below the stricter bar used since set 517; it needs replication
+before it counts. Progress: nominal under the registered rule, not claimed.
