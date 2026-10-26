@@ -393,3 +393,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G137 | 491 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | at Mohenjo-daro copies of a seal text share the animal (36 of 39 after dropping double records; length-matched p = 0.001) (progress; goal streak 0) |
 | G138 | 492 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | copies sharing the animal is a unicorn-seal effect (non-unicorn 0 of 8; Harappa few) (no progress; goal streak 1) |
 | G139 | 493 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | unicorn-seal texts recur twice as often as other-animal texts (OR 2.0, p = 0.024, length x site) (progress; goal streak 0) |
+| G140 | 494 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: unicorn repeats with size held OR 1.74, p = 0.085: set 493 downgraded to a trend (audit; no progress; goal streak 1) |

@@ -14051,7 +14051,7 @@ Square seals with a motif; unicorn (Bull1) against other animals; Mantel-Haensze
 ## Results of the four-hundred-and-ninety-third set (`predict_test493.py`, `results/predict_test493.md`)
 
 UR1 held, UR2 failed. With length band x site strata, unicorn-seal texts recur on other seals twice as often as
-other-animal seal texts (odds ratio 2.00, p = 0.024); doubled signs alike (0.80). With sets 491-492: the repeated
+other-animal seal texts (odds ratio 2.00, p = 0.024; downgraded by set 494: 1.74, p = 0.085 with size held); doubled signs alike (0.80). With sets 491-492: the repeated
 (formulaic) seal texts are unicorn-seal texts; the rarer animals carry unique texts. A single test on all the data.
 Progress (goal streak 0). Tally, counting parts: 1660 held, 1710 failed (3375 registered).
 
@@ -14064,3 +14064,9 @@ size (`predict_test494.py`).
 - **UA2** UR1 leans the same way in two random halves.
 - Progress rule: none (audit).
 
+## Results of the four-hundred-and-ninety-fourth set (`predict_test494.py`, `results/predict_test494.md`)
+
+UA1 failed, UA2 held (audit). With size half added to the strata, odds ratio 1.74 (p = 0.085); both random halves lean
+the same way (1.72, 2.23) without significance. **Set 493 is downgraded**: part of the unicorn effect is seal size
+(small seals repeat texts); a trend remains. Progress: none (goal streak 1). Tally, counting parts: 1661 held, 1711
+failed (3377 registered).
