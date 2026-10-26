@@ -20,10 +20,11 @@
         "source": "Van der Hoop's decipherments between the lines and in clear copies (catalogue)."
       },
       "length": {
-        "tokens": "unknown",
+        "tokens": 4100,
         "distinct": "unknown",
-        "unit": "code groups",
-        "measured": false
+        "unit": "mixed",
+        "measured": true,
+        "file": "measure.log"
       },
       "transcription": {
         "by": "unknown",
@@ -149,6 +150,15 @@
       ],
       "what": "11 letters with no clear copy deciphered with the letter and code tables (dec_*.tsv): 3,447 tokens, 92.8% given a value, 80 codes bracketed alphabetically; sense not yet checked line by line; No. 1 only partly transcribed.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "verification",
+      "technique": [
+        "language-model scoring"
+      ],
+      "what": "Per-line sense check with fr-1600-letters (threshold -2.6): 7 lines flagged and re-read at 3x; G11 settled as c only; No. 1 transcribed in full. 4,100 tokens, 92.2% given a value; 93.1% of letter signs on lines reading as French; without No. 1, 94.6%.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -157,8 +167,8 @@
     "contribution": [
       "unknown"
     ],
-    "class": "unknown",
-    "fraction_read": "unknown",
+    "class": "read in part",
+    "fraction_read": 0.922,
     "grades": {
       "H": "unknown",
       "C": "unknown",
@@ -168,6 +178,20 @@
     "verification": [
       "unknown"
     ],
-    "notes": "In progress."
+    "notes": "In progress; De Larrey's dossier A32-604 (catalogued with key) not yet opened.",
+    "gaps": [
+      {
+        "item": "No. 1 lines 4, 9, 12, 13, 15",
+        "blocker": "not-attempted"
+      },
+      {
+        "item": "about 90 bracketed code numbers",
+        "blocker": "open-codes"
+      },
+      {
+        "item": "numeric signatures",
+        "blocker": "not-attempted"
+      }
+    ]
   }
 }

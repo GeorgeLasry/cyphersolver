@@ -33,4 +33,4 @@ No y, b, k, w in this letter (copy spells "moiens"); those remain unassigned.
 G24: short horizontal dash at mid height = b  (3 times in the 25 Nov 1783 letter: ambassadeur, Berenger x2; verify.md NEW1)
 Note: a dot above a letter sign doubles it (ll, nn, rr, tt, ss, ff: G04 with a dot = ff in "affaires"); a single dot over G12 in "meler" does not.
 Note: h also written as an L-shape (G03 form) with a cross stroke above ("Stadhouder", 25 Nov; verify.md NEW3).
-Open: G11 (cup, c) reads s once in "se meler" (25 Nov) - homophone or a second cup form; check at full size.
+G11 settled (25 Oct 2026, 3x crops rr_*): only one cup form exists and it is c. Every place first read as g (espagne l.9 and l.27, espagnols l.22, derangement l.24, -gations l.21 of s172) is in fact the open C, G19 = g, now confirmed (also Gaffron s205 vs the cup in Constentinople). Places where the cup stands for an s sound ("se meler" s091, "le sera" s175, "reucisoit" s174) show the same cup as c: the writer spells phonetically (ce, cera), not a homophone. No new label.

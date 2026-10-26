@@ -105,3 +105,33 @@ Next: a sense check per line with the fr-1600-letters model, re-read the garbled
   him, and he will be put in Spandau.
 - The cup sign G11 (c) also stands for s (twice) and g (Espagne, espagnols, derangement): a polyvalent sign, or two
   cup shapes not yet told apart.
+
+## Sense check and grading (26 Oct 2026)
+
+- `sense.py` scores each deciphered line with fr-1600-letters (calibration: good French about -2.1, the known garbled
+  lines -2.8 to -3.1, shuffled letters -4.1 to -5.3; threshold -2.6). Seven lines flagged and re-read at 3x; the cup
+  sign G11 settled as c only (the "g" readings were G19, the open C; the "s" readings are the writer's spelling by
+  sound: ce meler, cera).
+- No. 1 (s001) transcribed in full (lines 4-16): 752 tokens, 81.4% given a value, 135 unread; the low-resolution
+  lines 4, 9, 12, 13, 15 are weak; NEW2-NEW4 unresolved.
+- **Measure (`measure.log`): 4,100 tokens, 3,779 given a value (92.2%), 90 codes bracketed, 231 unread; 136 of 228
+  code numbers known. Without No. 1: 3,167 / 3,348 (94.6%). Sense (`sense.log`): 93.1% of letter signs on lines that
+  read as French.**
+- Grade: below the read bar (95% as sense) overall and for No. 1; the other ten letters are just under it. The open
+  pieces are the weak No. 1 lines, ~90 bracketed code numbers and a few unresolved runs (s175 line 11 middle).
+
+## Remaining gaps
+
+- No. 1 (s001) lines 4, 9, 12, 13, 15 - blocker: not-attempted; needs a 5x pass checked against the model
+- code numbers bracketed but not identified (about 90, e.g. 61-64, 107, 193, 403, 475, 499, 724, 750, 809) - blocker: open-codes; one-part code, values from context only
+- s175 line 11 middle stretch - blocker: not-attempted
+- numeric signatures and the s029 address panel (a separate digit script) - blocker: not-attempted
+
+## Escalation
+
+- [x] clear-pages: the decipherer's 10 clear copies used for the tables
+- [x] siblings: A32-599-604 related files identified (A32-601 Van der Hoop to Schöning, 80 scans; A32-604 De Larrey's dossier with key, 442 scans), not yet opened
+- [ ] known-keys: De Larrey's dossier A32-604 is catalogued "met sleutel" - the likeliest source of the code table
+- [x] print: no edition found
+- [x] key-rebuild: letter table from the copies; code table from glosses, context and alphabetical bracketing
+- [ ] retry: after A32-604

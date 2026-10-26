@@ -260,10 +260,10 @@ G07	e
 G18	s
 G13	p
 G09	a
-G11	g?
+G19	g
 G02	n
 G07	e
-# NOTE: "espagne": 5th sign is the cup shape (G11), read g? by context
+# NOTE: "espagne": 5th sign re-read at 3x: open C (G19, g), not the cup
 G07	e
 G03	t
 G12	l
@@ -274,7 +274,7 @@ G08	u
 G18+dot	ss
 G07	e
 # clear: seuroit pas seulement utile mais meme necessaire
-# line reading: -ec [350], l'espa(g)ne, et la prusse, seuroit pas seulement utile mais meme necessaire
+# line reading: -ec [350], l'espagne, et la prusse, seuroit pas seulement utile mais meme necessaire
 # line 10 (y~869)
 G09	a
 801	Republique / Provinces-Unies?
@@ -672,7 +672,7 @@ G12	l
 G07	e
 G08	u
 G05	r
-G17	i
+G18	s
 G09	a
 G06	m
 G24	b
@@ -682,25 +682,20 @@ G05	r
 G09	a
 G03	t
 G24	b
-G24	b
-G15	d
+G01	o
 G02	n
 G09	a
 G12	l
 G07	e
 G08	u
 G05	r
-G10	v
 G13	p
 G05	r
 G07	e
 G18	s
-G08	u
+G11	c
 G05	r
-G09	a
 G17	i
-G05	r
-G09	a
 G05	r
 G07	e
 G18	s
@@ -723,7 +718,7 @@ G17	i
 G07	e
 G05	r
 G07	e
-# line reading: leur iamble (= semble?) ratbbdo, a leur vpresuraira res: l'[482] s'emparera premiere- ("ratbbdo" and "vpresuraira" unresolved)
+# line reading: leur samblerat (= sembleroit) bon, a leur prescrires: l'[482] s'emparera premiere- (r-ending of prescrire followed by es; small tick before p is a word divider)
 # line 18 (y~1483 left, slope -0.04)
 G06	m
 G07	e
@@ -911,7 +906,7 @@ G10	v
 G17	i
 # line reading: -es que des honorant de cronovel(?): l'[291] duvrira (= ouvrira?) des liions (= liens) retent, la navi- (several words uncertain)
 # line 21 (y~1717 left, slope -0.04)
-G11	c
+G19	g
 G09	a
 G02	n
 G11	c
@@ -919,7 +914,7 @@ G17	i
 G01	o
 G02	n
 G18	s
-# NOTE: "-gations": signs read cup (G11) arch oval cup; if the word is navigations the cups stand for g, and the count of signs does not fit cleanly
+# NOTE: "-gations": first sign re-read at 3x: open C (G19, g); the later cup (G11 c) stands where t is expected (gancions/gacions, writer's spelling)
 G15	d
 G07	e
 G12	l
@@ -970,7 +965,7 @@ G07	e
 G13	p
 G09	a
 G05	r
-# line reading: -cations de l'estat, et d's'emparer a de tout les possessions de [803] a qui se par-
+# line reading: -gancions (= navigations?) de l'estat, et d's'emparer a de tout les possessions de [803] a qui se par-
 # line 22 (y~1793 left, slope -0.04)
 G12	l
 G07	e
@@ -1001,12 +996,12 @@ G07	e
 G18	s
 G13	p
 G09	a
-G11	g?
+G19	g
 G02	n
 G01	o
 G12	l
 G18	s
-# NOTE: "espagnols": the 5th sign is the cup (G11 shape); recorded G11 read as g? by context
+# NOTE: "espagnols": 5th sign re-read at 3x: open C (G19, g), not the cup
 G15	d
 G07	e
 G18	s
@@ -1093,13 +1088,13 @@ G07	e
 G05	r
 G07	e
 G02	n
-G11	g?
+G19	g
 G07	e
 G06	m
 G07	e
 G02	n
 G03	t
-# NOTE: "derangement": the g is the cup sign (G11 shape), recorded G19? by context
+# NOTE: "derangement": g re-read at 3x: open C (G19), not the cup
 G15	d
 G07	e
 G12	l
@@ -1277,10 +1272,10 @@ G07	e
 G18	s
 G13	p
 G09	a
-G11	g?
+G19	g
 G02	n
 G07	e
-# NOTE: "l'espagne": 6th sign is the cup shape; recorded G11 read as g? by context (also lines 9 and 22)
+# NOTE: "l'espagne": g sign = open C (G19), as in lines 9, 22, 24 re-read at 3x
 G07	e
 G02	n
 G07	e
@@ -1399,11 +1394,11 @@ G07	e
 G18	s
 G17	i
 G12	l
-484	[bracket: 451 Hollande? < ? < 582 lettre?]
+484\t[bracket: 451 Hollande? < ? < 582 lettre?]
 G07	e
 G03	t
 G12	l
-252	Empereur (Austria)?
+252\tEmpereur (Austria)?
 G03	t
 G01	o
 G06	m
@@ -1415,11 +1410,10 @@ G08	u
 G18	s
 G14	q
 G08	u
-G05	r
 G07	e
-G15	d
+G06	m
 G07	e
-G07	e
+G02	n
 G03	t
 G07	e
 G03	t
@@ -1427,7 +1421,7 @@ G09	a
 G12	l
 G17	i
 G03	t
-# line reading: dit les bras croise, si l'[484] et l'[252] tomba brusq?redeet et a l'it- ("brusq..." group unresolved)
+# line reading: dit les bras croises, si l'[484] et l'[252] tomba brusquement et a l'it-
 # line 30 (y~2411 left, ~2325 right)
 G13	p
 G05	r
