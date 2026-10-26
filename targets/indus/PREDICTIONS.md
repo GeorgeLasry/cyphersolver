@@ -12811,3 +12811,13 @@ Set 363 tried SIGN with region + length (no gain). The base now carries object t
 Both failed. SIGN top-1: fixed 39.8% -> 39.5%, C 42.6% -> 43.0%; top-5 61.9% -> 61.6%, 62.5% -> 62.3%. The object-kind
 models lower S (left-to-right) but do not help guess a hidden sign from both sides, as set 363 found for region and
 length. Progress: none (goal streak 2). Tally, counting parts: 1622 held, 1592 failed (3216 registered).
+
+# Four-hundred-and-thirteenth set, registered before testing (26 October 2026): goal loop 59, the rectangular-seal formula (two hypotheses)
+
+Set 384: rectangular seals carry the numeral 1, the tiered 12 (55) and fewer endings. Distinct lines of the fixed split,
+rectangular (SEAL:R) against square (SEAL:S), Mantel-Haenszel over length bands (`predict_test413.py`).
+
+- **RF1** Rectangular-seal texts open with a numeral more often (p < 0.05).
+- **RF2** Rectangular-seal texts more often carry a numeral and no ending (a count, not a name) (p < 0.05).
+- Progress rule: either holds.
+
