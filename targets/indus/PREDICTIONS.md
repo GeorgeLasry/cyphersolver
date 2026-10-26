@@ -14776,3 +14776,7 @@ How often a numeral stands directly before 740 / 520, against 500 within-line sh
   ending; the ending attaches to a word.
 - **NE2** The same on B.
 - Progress rule: NE1 and NE2, unless a past set already established it (then consistency).
+
+## Results of set 544 (`hyp_s2_numend.py`, `results/predict_test544.md`)
+
+Held: NE1. A True, B False; the name grammar (head before the ending, sets 176-177) implies it: consistency. Progress: none (session-2 goal streak 9).

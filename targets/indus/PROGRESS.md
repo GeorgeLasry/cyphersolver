@@ -443,3 +443,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-6 | 541 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opener lines are longer: opener lines longer on A True, B True; the heading unit (sets 230-279) already covers it: consistency. (no progress; session-2 goal streak 6) |
 | S2-7 | 542 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | non-adjacent repeats in a line: A False, B False. (no progress; session-2 goal streak 7) |
 | S2-8 | 543 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | order of two numerals in a line: A larger-first 75 vs 117; B 30 vs 38. (no progress; session-2 goal streak 8) |
+| S2-9 | 544 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numeral directly before an ending: A True, B False; the name grammar (head before the ending, sets 176-177) implies it: consistency. (no progress; session-2 goal streak 9) |
