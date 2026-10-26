@@ -13653,3 +13653,13 @@ bands, texts with the formula (705 / 706 + 33) against the rest (`predict_test46
 
 Both failed. Square seals: no formula text recurs (odds ratio 0, p = 0.41, few cases); all seals: 2.51 (p = 0.23), the
 other way. Progress: none (goal streak 7). Tally, counting parts: 1649 held, 1669 failed (3322 registered).
+
+# Four-hundred-and-sixty-seventh set, registered before testing (26 October 2026): goal loop 113, star names and seal size (two hypotheses)
+
+'Numeral + fish' (a numeral directly before a fish sign, the star-name type of Parpola) on square seals with a size
+(`predict_test467.py`).
+
+- **SS1** Seals with a numeral + fish are larger than seals with other fish signs (Mann-Whitney one-sided).
+- **SS2** Large seals carry numeral + fish more often, length band x site strata (Mantel-Haenszel p < 0.05).
+- Progress rule: SS2 holds (SS1 is unstratified).
+
