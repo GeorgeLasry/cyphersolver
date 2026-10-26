@@ -1,12 +1,12 @@
-"""Set 375 (goal run loop 20): shape and secondary motif (ICIT fields 15, 19), split C. loopkit.py."""
+"""Set 375 (goal run loop 21): secondary motif and workmanship (ICIT fields 19, 22), split C. loopkit.py."""
 import loopkit as L
 
 
 def main():
-    per, mat = L.field(15), L.field(19)
-    L.run_domain_set_c(375, 'Three-hundred-and-seventy-fifth registered predictions: goal loop 21, shape and secondary motif', [
-        ('SH1', 'a shape domain model', lambda t, m: per.get(t, '')),
-        ('SH2', 'a secondary-motif domain model', lambda t, m: mat.get(t, ''))])
+    sec, wk = L.field(19), L.field(22)
+    L.run_domain_set_c(375, 'Three-hundred-and-seventy-fifth registered predictions: goal loop 21, secondary motif and workmanship', [
+        ('SM1', 'a secondary-motif domain model', lambda t, m: sec.get(t, '')),
+        ('SM2', 'a workmanship domain model', lambda t, m: wk.get(t, ''))])
 
 
 if __name__ == '__main__':

@@ -12099,3 +12099,17 @@ ICIT field 31 (longest dimension: under 20, 20-30, 30+ mm) and field 22 (workman
 - **SZ1** A size-band domain model lowers S (fixed split and split C).
 - **SZ2** A workmanship domain model lowers S (fixed split and split C).
 
+## Results of the three-hundred-and-seventy-fourth set (`predict_test374.py`, `results/predict_test374.md`)
+
+Both failed. Period: fixed gain 0.0010, split C -0.0002; material: weight 0. Beyond object type and subtype, neither the
+Harappa period nor the material carries sign context. Progress: none (goal streak 2). Tally, counting parts: 1600 held,
+1538 failed (3138 registered).
+
+# Three-hundred-and-seventy-fifth set, registered before testing (26 October 2026): goal loop 21, secondary motif and workmanship (two hypotheses)
+
+ICIT field 19 (secondary motif: SAN, the 'standard' before the unicorn; trough; ...) and field 22 (workmanship: poor /
+fair / good / fine), as domain models on the set 372 base; split C; rule of set 358 (`predict_test375.py`).
+
+- **SM1** A secondary-motif domain model lowers S.
+- **SM2** A workmanship domain model lowers S (finer seals, different texts: an engraver or office effect).
+
