@@ -14723,3 +14723,13 @@ attested.
 ## Results of set 540 (`hyp_s2_fishorder.py`, `results/predict_test540.md`)
 
 Held: FO1. fish pairs reversible A 7/13 vs 136/488; B 3/8 vs 113/299. Progress: none (session-2 goal streak 5).
+
+
+# Set 541, registered before testing (26 October 2026): session-2 goal loop 6, opener lines are longer (two hypotheses)
+
+Openers (set 539: 104 491 692 817 820 853 861 920 on A) head a line (`hyp_s2_openlen.py`).
+
+- **OL1** On A, lines opening with an opener are longer than other lines (Mann-Whitney p < 0.05).
+- **OL2** The same on B, using A's openers.
+- Progress rule: OL1 and OL2. (Set 230-279 already studied the heading; if this only re-finds the heading unit, it is
+  recorded as consistency.)
