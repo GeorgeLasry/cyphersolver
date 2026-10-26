@@ -1,0 +1,31 @@
+[
+  {
+    "year": 1650,
+    "date": "unknown (DECODE: 1501-1700; volume heading says 17th-18th century)",
+    "title": "Unidentified three-page ciphertext bound among the Medici grand-ducal cipher keys (Governo Mediceo, cifre nos. 1001-1214, item 174)",
+    "correspondents": "unknown",
+    "place": "unknown",
+    "language": "unknown (probably Italian)",
+    "region": "Italy",
+    "period": "unknown",
+    "shelfmark": "Archivio di Stato di Firenze, 'Governo Mediceo - cifre de' secoli XVII-XVIII dal n. 1001 al n. 1214' (214 cc.), item 174 (DECODE name ASFi_SIIVol6_174)",
+    "folio_note": "3 pages; sits between DECODE key records R7396 (item 173) and R7398 (item 175) in the same key volume",
+    "cls": "A",
+    "status": "DECODE R7397 (status N/A, record type ciphertext, 3 pp., cipher type 6, symbol sets 8,3,1, public access; no sender, receiver, date or language entered). Not in the repo (known.py: only the DECODE/Cryptoole dumps; Cryptoole marks it 'na'). The other ciphertext records of the same Mediceo key volumes (R7019, R7021, R7024, R7234) carry a plaintext and are marked solved by Cryptoole; this one has none.",
+    "why": "A ciphertext filed inside the Medici chancery's own key collection; the neighbouring key sheets (R7396, R7398) are the obvious first keys to try, and a fit would identify the correspondent and date.",
+    "importance": 2,
+    "solvability": 4,
+    "difficulty": 2,
+    "score_note": "Scored from the DECODE record during the Oct 2026 Medici Archive Project/BIA sweep (research/medici_bia/); not viewed (BIA login-only, ASF offline)",
+    "verify": "Open DECODE R7397 images; check whether it is a ciphertext or a further key/sample sheet; try the keys R7396 and R7398, then the other ~1,770 Governo Mediceo key records (R5687-R7459).",
+    "links": [
+      {"label": "DECODE R7397", "href": "https://de-crypt.org/decrypt-web/RecordsView/7397"},
+      {"label": "DECODE R7396 (key, item 173)", "href": "https://de-crypt.org/decrypt-web/RecordsView/7396"},
+      {"label": "DECODE R7398 (key, item 175)", "href": "https://de-crypt.org/decrypt-web/RecordsView/7398"}
+    ],
+    "seen": "catalogue",
+    "source": "Medici Archive Project (BIA) sweep",
+    "prior_art": "open as far as checked (26 Oct 2026: DECODE record has no plaintext; Cryptoole 'na'; not in repo). No web search, importance below 3.",
+    "decode_ids": [7397]
+  }
+]
