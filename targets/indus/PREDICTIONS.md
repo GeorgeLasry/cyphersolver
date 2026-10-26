@@ -16420,3 +16420,15 @@ RD1 failed, RD2 held. On 60 damaged lines whose intact duplicates fix the missin
 22 at the first guess (37%) and 28 in the top five, against 21 for the neighbour rule and 7 for the commonest sign (p =
 0.44 against the rule). The duplicate-based check agrees with the Mahadevan-based one (sets 283-314): the model restores
 illegible signs about a third of the time, but no better than a rule that looks at the two neighbours. Progress: none.
+
+# Set 650, registered before testing (26 October 2026): lead 9, seal size and the long closing formula (two hypotheses)
+
+The first goal run found large seals carry 706 and the closing formula '705 / 706 33 520' (sets 430, 441, 478). Is
+the formula the long form of an ending that the same name takes short on a smaller seal? Seals with a measured longest
+dimension (ICIT field 31): formula seals (37) against seals ending in 740 / 520; and, within name bodies attested both
+ways (9 bodies, counted before registering), whether the formula copy is the larger (`predict_test650.py`). Small
+samples, registered as such.
+
+- **SF1** Formula seals are larger (Mann-Whitney one-sided p < 0.05).
+- **SF2** Within the same body, the formula copy is on the larger seal in a majority (binomial p < 0.05, 5+ bodies).
+- Progress rule: SF1 and SF2.
