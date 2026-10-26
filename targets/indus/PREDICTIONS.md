@@ -16335,3 +16335,10 @@ count things. Home = Inter-Riverine, Lower Indus, Gujarat seals. Counted signs =
 - **GS2** Abroad, stroke signs stand in more varied (left, right) contexts per token than equal-sized home samples
   (1,000 draws, p < 0.05).
 - Progress rule: GS1 and GS2.
+
+## Results of set 645 (`predict_test645.py`, `results/predict_test645.md`)
+
+Both failed for want of data. Abroad (27 legible runs, 28 stroke tokens) no stroke is followed by a usual counted sign
+(0 of 17, home 124 of 1,243; p = 0.17) (GS1): the right direction, too few to count. Context variety is at its ceiling
+(every stroke token in a different context, 1.000) and equal-sized home samples reach it a third of the time (p = 0.34)
+(GS2). The foreign seals are too few to show whether their strokes are sound signs. Progress: none.
