@@ -44,6 +44,30 @@ def build_dir():
 DIRECTION = build_dir()
 
 
+def build_depth_place():
+    A, B, rowsA, recs, F = R.load_all()
+    dep, by_site = {}, defaultdict(list)
+    for r in F:
+        if r['depth'] is not None:
+            by_site[r['site']].append(r['depth'])
+    cut = {}
+    for site, ds in by_site.items():
+        ds = sorted(ds)
+        cut[site] = (ds[len(ds) // 3], ds[2 * len(ds) // 3]) if len(ds) >= 9 else None
+    place = {}
+    for r in list(rowsA) + list(load(only_m77=True)) + list(F):
+        lines = [tuple(ln) for ln in r['seq'] if ln]
+        for k, ln in enumerate(lines):
+            place.setdefault(ln, 'single' if len(lines) == 1 else ('first' if k == 0 else 'later'))
+            if r.get('depth') is not None and cut.get(r['site']) and ln not in dep:
+                a, b = cut[r['site']]
+                dep[ln] = 'shallow' if r['depth'] < a else ('middle' if r['depth'] < b else 'deep')
+    return dep, place
+
+
+DEPTH, PLACE = build_depth_place()
+
+
 REGION_W = 0.3  # set 357 (DM2, audited against random groups): the region-domain model mixed in at weight 0.3
 
 
@@ -54,12 +78,17 @@ def _plain(train, test):
     return [[sum(w[k] * r[k] for k in w) for r in m.rows(t, MODEL['kn'])] for t in test]
 
 
+# adopted domain models, mixed in order onto the plain model: (keyfn, weight)
+BASE_DOMAINS = [(lambda t, m: R.region(m.get(t, ('', '', ''))[0]), REGION_W),  # set 357
+                (lambda t, m: min(max(len(t), 2), 6), 0.3)]  # set 359 DL1, length band
+
+
 def base_probs(train, test):
     pb = _plain(train, test)
-    if not REGION_W:
-        return pb
-    f = domain_model(lambda t, m: R.region(m.get(t, ('', '', ''))[0]))(train, META)
-    return [[(1 - REGION_W) * a + REGION_W * f(t, i) for i, a in enumerate(row)] for t, row in zip(test, pb)]
+    for kf, wt in BASE_DOMAINS:
+        f = domain_model(kf)(train, META)
+        pb = [[(1 - wt) * a + wt * f(t, i) for i, a in enumerate(row)] for t, row in zip(test, pb)]
+    return pb
 
 
 def _bits(pb, pe, lam):

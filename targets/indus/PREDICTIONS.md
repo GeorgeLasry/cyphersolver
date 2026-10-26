@@ -11811,3 +11811,21 @@ so length is fair side information; writing direction (R/L, L/R as recorded) is 
 - **DL1** A length-band domain model (1-2, 3, 4, 5, 6+ signs) lowers S beyond region.
 - **DL2** A writing-direction domain model lowers S beyond region.
 
+## Results of the three-hundred-and-fifty-ninth set (`predict_test359.py`, `results/predict_test359.md`)
+
+Both held as registered; DL2 is withdrawn on audit. Length band: fixed test 4.6141 -> 4.5956 (gain 0.0185, control
+0.0000), A -> B 5.1204 -> 5.0891 (gain 0.0314, control 0.0005): sign context differs by line length beyond the position
+and end components (short labels and long formulas are different genres). Adopted (`loopkit.BASE_DOMAINS`, weight 0.3):
+S 4.614 -> 4.596, A -> B 5.120 -> 5.089. Direction: fixed gain 0.0071, A -> B 0.1838, but the audit shows the field is
+'M77' for every line from Mahadevan's corpus (B: 1,170 of 1,175), i.e. the source of the transcription, not the writing
+direction (A: R/L 1,801, L/R 63); the model learned transcription conventions. Withdrawn; lesson: side information must
+not encode the sample. Progress (goal streak 0). Tally, counting parts: 1593 held, 1510 failed (3103 registered).
+
+# Three-hundred-and-sixtieth set, registered before testing (25 October 2026): goal loop 6, period and seal-text position (two hypotheses)
+
+Domain models on top of region + length (rule of set 358).
+
+- **DP1** Excavation depth band (ICIT 'depth' where recorded: shallow / middle / deep thirds per site; lines without depth
+  share a group) lowers S: the script's habits change over time.
+- **DP2** The line's place on its object (single-line object / first line / later line of a multi-line object) lowers S.
+
