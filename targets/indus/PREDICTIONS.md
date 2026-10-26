@@ -13236,3 +13236,12 @@ Unicorn square seals (field 18 Bull1) with the 'standard' before the animal (fie
 Both failed. One sign skewed (151, without the standard), not replicated; endings alike (odds ratio 1.24, p = 0.25).
 The cult standard on unicorn seals does not change the text. Progress: none (goal streak 6). Tally, counting parts:
 1633 held, 1632 failed (3269 registered).
+
+# Four-hundred-and-fortieth set, registered before testing (26 October 2026): goal loop 86, the U-family size step (two hypotheses)
+
+Set 433 compared 706 with 705 and with 700 (`predict_test440.py`; one-sided Mann-Whitney, sizes from field 31).
+
+- **UR1** Square seals with 705 (no 706) are larger than square seals with plain 700.
+- **UR2** Rectangular seals with 705 or 706 are larger than rectangular seals with plain 700.
+- Progress rule: either holds.
+
