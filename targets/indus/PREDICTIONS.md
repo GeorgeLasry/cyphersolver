@@ -15325,3 +15325,15 @@ tokens that are rare (3 or fewer tokens in the sample), lines of 5+ signs agains
 ## Results of set 583 (`hyp_s2_rareaudit.py`, `results/predict_test583.md`)
 
 Held: none. RA1 False, RA2 False (audit of set 578). Progress: none (session-2 goal streak 5).
+
+## Correction to set 578 (after the set 583 audit) and end of the session-2 goal run
+
+Set 578's result (lines holding a rare sign are longer) is a length artefact: per token, rare signs are no commoner in
+long lines (A 296 of 5,754 against 203 of 3,084; B 61 of 2,348 against 66 of 2,075). Set 578's progress is withdrawn.
+Recounted, the session-2 streak runs 15 (set 577), 16 (578), 17 (579), 18 (580), 19 (581), **20 (582)**, 21 (583): twenty
+consecutive loops without progress, so the session-2 goal run stops here (sets 536-583).
+
+Session-2 findings that survived their audits: short labels (X + ending) name other things than long texts, also within
+square seals (sets 551, 553); the size of a number decides what is counted, 1-3 counting fish and 803 / 806, 4+ counting
+390 405 407 575 585 900, also within short strokes (552, 553; long strokes A only, 563); large-number units stand at the
+end of the line, in every length band and on B (562, 564). Withdrawn: 545 (repeated phrases, 548), 578 (length, 583).

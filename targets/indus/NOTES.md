@@ -3258,6 +3258,14 @@ and 20 random labellings (458) give no false positives in the skew and ending te
 
 **Stopping.** Loops 162-181 made no progress under the stricter bar adopted before set 517 (p < 0.01, or two samples).
 
+## Session-2 goal run (26 Oct 2026): sets 536-583, stopped after 20 loops without progress
+
+Second run of the owner's two-hypothesis loops (`mydriver.py`, `runbatch.sh`, `s2kit.py`, `hyp_s2_*.py`), after the first
+run (G1-G181) ended. Surviving findings: short labels (X + ending) use different heads from long texts, also within
+square seals (551, 553); numbers 1-3 count fish and 803 / 806, numbers 4+ count 390 405 407 575 585 900 (552, 553, 563);
+large-number units stand at the line end in every length band (562, 564). Withdrawn on audit: long-distance pairs (545:
+repeated phrases), rare signs in long lines (578: length). S context features (569-572) add nothing. Streak 20 at set 582.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
