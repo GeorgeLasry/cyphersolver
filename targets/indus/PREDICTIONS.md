@@ -13610,3 +13610,13 @@ final = followed only by 400 / 90.
 Both failed. The long form ends the line every time (23 of 23 on A, 7 of 7 on B), the short form nearly always (67 of
 76, 14 of 17): p = 0.082 and 0.34. Both forms close the text. Progress: none (goal streak 4). Tally, counting parts:
 1649 held, 1663 failed (3316 registered).
+
+# Four-hundred-and-sixty-fourth set, registered before testing (26 October 2026): goal loop 110, the order of the two endings (two hypotheses)
+
+Lines carrying both 740 and 520 (distinct lines). If 520 names close a text (sets 441-463), 740 should come first
+(`predict_test464.py`; binomial against one half).
+
+- **EO1** On A, the first 740 precedes the first 520 in most such lines (p < 0.05).
+- **EO2** The same on B.
+- Progress rule: both hold.
+
