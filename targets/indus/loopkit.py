@@ -80,7 +80,8 @@ def _plain(train, test):
 
 # adopted domain models, mixed in order onto the plain model: (keyfn, weight)
 BASE_DOMAINS = [(lambda t, m: R.region(m.get(t, ('', '', ''))[0]), REGION_W),  # set 357
-                (lambda t, m: min(max(len(t), 2), 6), 0.3)]  # set 359 DL1, length band
+                (lambda t, m: min(max(len(t), 2), 6), 0.3),  # set 359 DL1, length band
+                (lambda t, m: m.get(t, ('', '', ''))[1], 0.2)]  # set 367 OT1, object type (B lacks it: no effect there)
 
 
 def base_probs(train, test):
@@ -122,7 +123,7 @@ def evaluate(train, test, extra, seed=2026):
 SIGNS_ONLY = []  # (base, mix) bits on sign tokens, end token left out (rule from set 362, after the set 361 audit)
 
 
-def splits():
+def _splits_ab():
     A, B, *_ = R.load_all()
     DL, tr, te = data()
     DA = sorted({tuple(t) for t in A})
@@ -254,10 +255,13 @@ def run_domain_set(num, title, hyps, gain=0.005):
     return held
 
 
+splits = _splits_ab
+
+
 def splits_c():
     """Fixed split, plus split C: the fixed training lines cut 80/20 (seed 2027), so C's test lines are disjoint from
     the fixed test. For side information Mahadevan's records lack (type and motif are 'M77' / empty on B; set 367)."""
-    (tr, te), _ = splits()
+    (tr, te), _ = _splits_ab()
     rnd = random.Random(2027)
     ls = list(tr)
     rnd.shuffle(ls)

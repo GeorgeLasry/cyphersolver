@@ -11948,3 +11948,12 @@ control on both splits), on top of region + length.
 - **OT1** An object-type domain model lowers S on the fixed split and on C.
 - **OT2** A motif domain model lowers S on the fixed split and on C.
 
+## Results of the three-hundred-and-sixty-seventh set (`predict_test367.py`, `results/predict_test367.md`)
+
+Both held. Object type: fixed test 4.5956 -> 4.5777 (gain 0.0179, weight 0.20; control 0.0000; signs 5.5028 -> 5.4792),
+split C 4.5605 -> 4.5521 (gain 0.0084; signs 5.3959 -> 5.3844). Motif: fixed 4.5956 -> 4.5898 (0.0058), C gain 0.0014
+(signs both lower). **Seal, tablet and pottery texts differ in sign context**, replicated within the ICIT; the A -> B
+failure of set 358 is void (B has no type). Adopted: object type at weight 0.2 (`loopkit.BASE_DOMAINS`); S 4.596 ->
+4.578. The motif model passed on top of region + length; it is retested on top of the type model before adoption.
+(A recursion bug in the first run of splits_c was fixed before the reported run.) Progress (goal streak 0). Tally,
+counting parts: 1597 held, 1523 failed (3120 registered; set 363 pending).
