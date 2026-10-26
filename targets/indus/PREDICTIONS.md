@@ -14752,3 +14752,13 @@ Lines in which a non-numeral sign occurs twice, not adjacent (`hyp_s2_repeat.py`
 ## Results of set 542 (`hyp_s2_repeat.py`, `results/predict_test542.md`)
 
 Held: none. A False, B False. Progress: none (session-2 goal streak 7).
+
+
+# Set 543, registered before testing (26 October 2026): session-2 goal loop 8, order of two numerals in a line (two hypotheses)
+
+Lines with two numerals not adjacent (values from numerals.NUMS), unequal values (`hyp_s2_numorder.py`).
+
+- **NO1** On A the first numeral is larger more often than smaller (binomial p < 0.05) or smaller more often; the
+  direction found on A is registered as the prediction for B.
+- **NO2** B shows the same direction (binomial p < 0.05).
+- Progress rule: NO1 and NO2.
