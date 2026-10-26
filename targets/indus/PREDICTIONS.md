@@ -14355,8 +14355,8 @@ tablets with the identical text; periods shuffled 1,000 times (`predict_test515.
 ## Results of the five-hundred-and-fifteenth set (`predict_test515.py`, `results/predict_test515.md`)
 
 Both held. Moulded tablet copies share the period in 89 of 264 pairs (p = 0.001), as mould batches would. Incised
-tablets, made one by one, share it in 64 of 178 (p = 0.049, just under the bar): the texts on Harappa's incised tablets
-recur within a period, as names or accounts of one time would. Not stratified by area or level within Harappa. Progress
+tablets, made one by one, share it in 64 of 178 (p = 0.049, just under the bar; withdrawn by set 516: a find-spot
+effect). Not stratified by area or level within Harappa. Progress
 (goal streak 0). Tally, counting parts: 1673 held, 1741 failed (3419 registered).
 
 # Five-hundred-and-sixteenth set, registered before testing (26 October 2026): goal loop 162, audit of tablet copies and period (two hypotheses)
@@ -14368,3 +14368,8 @@ are shuffled within the excavation area (ICIT field 4, first nine characters) (`
 - **TA2** Moulded copies the same.
 - Progress rule: none (audit).
 
+## Results of the five-hundred-and-sixteenth set (`predict_test516.py`, `results/predict_test516.md`)
+
+TA1 failed, TA2 held (audit). Shuffled within area, incised copies no longer share the period beyond chance (p = 0.18):
+set 515's TP1 was the find-spot, and is withdrawn. Moulded copies still do (p = 0.022): mould batches. Progress: none
+(goal streak 1). Tally, counting parts: 1674 held, 1742 failed (3421 registered).
