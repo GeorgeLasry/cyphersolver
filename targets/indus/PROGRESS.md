@@ -463,3 +463,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-25 | 560 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | values that count fish: A True, B True: restates set 552 (consistency). (no progress; session-2 goal streak 8) |
 | S2-26 | 561 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | endings after counted fish: A counted 520 18/44 vs 58/112; B 3/6 vs 14/33. (no progress; session-2 goal streak 9) |
 | S2-27 | 562 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | position of small and large units: A large 0.82 vs small 0.50; B 0.82 vs 0.66. (progress; session-2 goal streak 0) |
+| S2-28 | 563 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | number size within long strokes: long strokes: A 6/6, B 3/5 keep direction (audit). (no progress; session-2 goal streak 1) |

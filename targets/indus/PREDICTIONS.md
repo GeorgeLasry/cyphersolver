@@ -15054,3 +15054,7 @@ Set 553 confirmed set 552 within short strokes. Here long-stroke numerals (31-36
 - **SA1** On A, of set 552's signs with 4+ long-stroke-counted tokens, 70%+ keep their small / large direction.
 - **SA2** On B the same (3+ tokens).
 - Progress rule: none (audit).
+
+## Results of set 563 (`hyp_s2_seriesaudit.py`, `results/predict_test563.md`)
+
+Held: SA1. long strokes: A 6/6, B 3/5 keep direction (audit). Progress: none (session-2 goal streak 1).
