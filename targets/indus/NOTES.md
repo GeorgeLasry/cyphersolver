@@ -3226,6 +3226,38 @@ of the time on held-out objects. No progress: streak 2. Tally 1587 held, 1497 fa
   for anchors_bench.py / equation_rebus.py (DEDR, MW, ePSD2) are in C:\Users\dbour\indus_data (LANG_DATA) and, from
   25 Oct 2026, also in data/lexicons/ (`build_lexicons.py`, README there; mw.txt and raw/ git-ignored for size).
 
+## Goal run (25-26 Oct 2026): loops G1-G181, sets 355-535, stopped after 20 loops without progress
+
+Owner's goal: loops of two registered hypotheses until 20 consecutive loops make no progress. Details per set in
+PREDICTIONS.md; one row per loop in PROGRESS.md (G1-G181). Harness: `loopkit.py` (domain models, splits, SIGN / WORD),
+`sizekit.py`, `auditkit.py`, `goal_driver.py`.
+
+**Benchmarks.** S 4.635 -> 4.559 (fixed split; signs only 5.573 -> 5.449): domain models for line length (set 359),
+object type (367), subtype (369) and length x subtype (372); the region model (357) was adopted and later dropped (372,
+371). WORD top-10 3.4% -> 4.7% (398, four names). SIGN, R, G unchanged. Calibration: two negative controls (455, 456)
+and 20 random labellings (458) give no false positives in the skew and ending tests.
+
+**Findings that survived their audits.**
+- Object kind shapes sign context (seal / tablet / pottery; copper, incised, moulded tablets; seal kinds), not site
+  (427), replicated within ICIT (B has no types).
+- Square-seal texts are uniform across regions (371, 419); 'regional signs' (364) were moulded-tablet signs.
+- Seal size goes with content (length, site, second dimension, thickness and animal held): 706 and the closing
+  formula on large seals (430, 441, 478, 497, 499); 156, 400, 590, doubled signs and repeated texts on small seals (430,
+  469, 380, 498, 499, 425); rare signs on large seals (488, 496). Large seals look individual, small seals formulaic.
+- The closing formula '705 / 706 33 520' is the long form of the fish (520) name class (446, 457): a fish precedes it
+  73% / 66% (A / B) against 7% / 5% before 740; no 740 ever precedes it (445); it is a seal form (449). The U ladder
+  700 < 705 < 706 tracks seal size (433, 440, 484).
+- Rectangular (bar) seals use their own signs (384, 426: 1, 407, 55, 806 against 390, 741, 760).
+- Wells 1998 concordance (394): 69 of 74 Wells signs map cleanly to ICIT; his 'dividers' are mostly the heading recurring
+  mid-line (395, 397, 429); his stroked jars are not endings.
+
+**Withdrawn or downgraded on audit.** Motif and direction domain gains (357, 359: the direction field codes M77), set
+361 (end token), 390 local seal names (408, conflict with M77 unresolved, 410-411), 395 dividers (429), 423, 459, 493,
+501, 515 (site, size, length or find-spot), 513 (scan false positive). Parpola 1997/2008/2010 readings not supported
+(354); no published key covers the copper-tablet anchors (gate.py).
+
+**Stopping.** Loops 162-181 made no progress under the stricter bar adopted before set 517 (p < 0.01, or two samples).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
