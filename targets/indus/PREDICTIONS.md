@@ -13311,3 +13311,14 @@ As sets 385 / 416, for the formula 705 / 706 + 33 (`predict_test444.py`; length 
 
 Both failed. Mohenjo-daro: odds ratio late/early 0.59 (p = 0.39); Harappa: no early cases in the strata (degenerate,
 p = 0.72). Progress: none (goal streak 3). Tally, counting parts: 1636 held, 1639 failed (3279 registered).
+
+# Four-hundred-and-forty-fifth set, registered before testing (26 October 2026): goal loop 91, what goes with the closing formula (two hypotheses)
+
+Distinct lines, A and B; Mantel-Haenszel over length bands, formula lines (705 / 706 + 33) against the rest
+(`predict_test445.py`).
+
+- **FN1** A 740 stands in the part before the formula more often than 740 stands anywhere in other lines (p < 0.05, A
+  and B): a name + ending, then the formula.
+- **FN2** Formula lines open with the heading (817 / 820 / 861) more often (p < 0.05, A and B).
+- Progress rule: either holds.
+
