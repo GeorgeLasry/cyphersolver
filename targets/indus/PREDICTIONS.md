@@ -12557,3 +12557,15 @@ Both failed, and they reinterpret set 395. Before a mid-line 2 / 1 / 60 the sign
 opener test (p = 0.001 each), 60 does not (p = 0.35). So 2 and 1 open a new phrase (a numeral beginning 'two X') rather
 than dividing words; Wells's 'divider' reading is better put as numerals that start a unit, and 60 is not one.
 Progress: none (goal streak 2). Tally, counting parts: 1618 held, 1567 failed (3185 registered).
+
+# Three-hundred-and-ninety-eighth set, registered before testing (26 October 2026): goal loop 44, WORD with the domain models (two hypotheses)
+
+The WORD benchmark (tier 6: hide the name body before the ending, rank every training body; 0% / 3.4%) still uses the
+plain model. `loopkit.word_task` (forward model as prizebench.word_task) with the adopted domain models, fixed split and
+split C. A timing run on 40 fixed-test lines (plain only: 0% / 6.3% of 16 names) was made before registering
+(`predict_test398.py`).
+
+- **WT1** WORD top-10 rises with the domain models on the fixed split and on C.
+- **WT2** WORD top-1 rises on both.
+- Progress rule: WT1 holds (the WORD benchmark moves).
+

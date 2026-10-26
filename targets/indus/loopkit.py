@@ -406,3 +406,29 @@ def run_set_c(num, title, hyps, gain=0.005):
         return run_set(num, title, hyps, gain)
     finally:
         splits = orig
+
+
+def word_task(train, test, domains, limit=None):
+    """WORD (prizebench.word_task, forward model): hide the name body before the ending, rank every training body."""
+    f = _scorer(train, domains)
+    bodies = Counter()
+    for t in train:
+        nm = R.name_of(list(t))
+        if nm and nm[0]:
+            bodies[tuple(nm[0])] += 1
+    cands = [b for b, c in bodies.most_common()]
+    top1 = top10 = n = 0
+    for t in (test[:limit] if limit else test):
+        nm = R.name_of(list(t))
+        if not (nm and nm[0]):
+            continue
+        b = tuple(nm[0])
+        j = next((j for j in range(len(t) - len(b) + 1) if tuple(t[j:j + len(b)]) == b), None)
+        if j is None:
+            continue
+        pre, post = t[:j], t[j + len(b):]
+        sc = sorted(cands, key=lambda c: -f(t, pre + c + post))
+        n += 1
+        top1 += sc[0] == b
+        top10 += b in sc[:10]
+    return top1 / max(1, n), top10 / max(1, n), n
