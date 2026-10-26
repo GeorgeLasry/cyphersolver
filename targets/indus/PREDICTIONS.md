@@ -14122,3 +14122,8 @@ streak 4). Tally, counting parts: 1664 held, 1714 failed (3383 registered).
 - **DA2** Set 380: repeated texts lean to small seals with motif held (p < 0.05).
 - Progress rule: none (audits).
 
+## Results of the four-hundred-and-ninety-eighth set (`predict_test498.py`, `results/predict_test498.md`)
+
+Both held (audit). With motif strata doubled signs lean to small seals (odds ratio 0.50, p = 0.039) and repeated texts
+too (0.57, p = 0.025). Sets 469 and 380 stand against the animal; set 493's unicorn effect was largely seal size (set
+494). Progress: none (goal streak 5). Tally, counting parts: 1666 held, 1714 failed (3385 registered).
