@@ -12212,3 +12212,12 @@ text may vary with it. Clean ICIT square seals with a recorded first dimension, 
   p < 0.05): small seals carry generic or office texts.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eightieth set (`predict_test380.py`, `results/predict_test380.md`, `predict_test380_control.py`)
+
+HS1 failed, HS2 held. The heading is not commoner on large seals at equal length (odds ratio 0.92, p = 0.66). Texts of
+small square seals recur on other seals in 115 of 645 against 35 of 636 for large seals (p < 0.0001). Audit (not
+registered; HS2 had no length control and short texts recur more easily): within length bands the odds ratio is 1.90
+(Mantel-Haenszel p = 0.004), carried mostly by two-sign texts (82 of 177 small against 13 of 62 large). **Small seals
+carry repeated, generic texts more often than large seals at the same length**; with set 379, large seals look
+individual and small seals formulaic. Progress (goal streak 0). Tally, counting parts: 1605 held, 1545 failed (3150
+registered).
