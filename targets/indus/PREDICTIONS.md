@@ -12410,3 +12410,29 @@ objects involved (1,000), pairs of distinct objects (`predict_test391.py`).
   code: DK, HR, VS, SD ...) more than the shuffle predicts.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-seventy-seventh set (`predict_test377.py`, `results/predict_test377.md`)
+
+Both failed. Single gaps (49): plain 21 right, domains 18; two-gap lines (26 signs): 7 and 7. The object-kind models
+lower S but restore fewer signs; they shift probability towards each kind's common signs, which hurts the two-sided
+choice (as SIGN, set 363). (The plain total is 28 here against 29 in sets 283-314, from the seeded inner split.)
+Progress: none (goal streak 5). Tally, counting parts: 1600 held, 1547 failed (3147 registered).
+
+# Three-hundred-and-seventy-eighth set, registered before testing (26 October 2026): goal loop 24, per-kind weights and small kinds (two hypotheses)
+
+On top of the set 372 base; split C as replication; S rule with sign tokens (`predict_test378.py`, `loopkit.run_set_c`).
+
+- **KW1** Subtype models whose interpolation weights are fitted on each kind's own lines (kinds with 150+ lines)
+  lower S: formulaic tablets and seals weight the context components differently.
+- **KW2** Subtype models for kinds of 15+ lines (tags, rods, bangles ... get their own) lower S.
+
+# Three-hundred-and-seventy-ninth set, registered before testing (26 October 2026): goal loop 25, a Wells -> ICIT concordance (two hypotheses)
+
+Wells's 1998 thesis (University of Calgary, open repository) lists the CISI objects each of his signs occurs on; 128
+signs were transcribed from the page images (data/wells/wells1998_signs.tsv) and 24 rows of his printed concordance
+with Mahadevan's numbers (Fig. 3.6). Each Wells sign is mapped to the ICIT sign whose object set overlaps its own best
+(Jaccard, signs with 5+ objects in the ICIT) and checked against the printed concordance (`predict_test379.py`).
+
+- **WC1** The object-list mapping agrees with Wells's printed concordance for 60%+ of testable signs (5+).
+- **WC2** The mapping is clean: Jaccard 0.5+ for 75%+ of Wells signs with 20+ objects.
+- Progress rule: WC1 and WC2 (a validated concordance, so Wells's claims can be tested on the corpus).
+

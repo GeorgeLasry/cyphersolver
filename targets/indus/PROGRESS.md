@@ -289,3 +289,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G34 | 388 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size signs lean the same way on rectangular seals (5 of 7; weak bar, chance 23%); no title+name effect (progress under the rule; goal streak 0) |
 | G35 | 389 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | copies of a seal text are closer in size than chance (p = 0.001), but mostly text length: same-length-and-site null p = 0.05 (progress under the rule, borderline; goal streak 0) |
 | G36 | 390 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seals sharing a name body come from one city (shuffle null 0 of 500); tablet-seal version withdrawn on audit; whole texts travel (set 381) (progress; goal streak 0) |
+| G23 | 377 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | restoration with object-kind models: 25 of 75 against plain 28 (no progress; goal streak 5) |
