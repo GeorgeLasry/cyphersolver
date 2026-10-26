@@ -3267,6 +3267,26 @@ large-number units stand at the line end in every length band (562, 564). Withdr
 repeated phrases), rare signs in long lines (578: length). S context features (569-572) add nothing. Substitution pairs (584-613): 892 fills the slots of the U sign 700 (593,
 audited 614); no other of 58 frequent pairs does once numeral contexts are dropped. Streak 20 logged at set 613 (after set 593).
 
+## Ten leads from material in hand (26 Oct 2026): sets 642-651
+
+Run in order after the goal runs, each registered first (`leadkit.py`, `predict_test642-651.py`). Progress: none.
+- 642 counted units against pictures: no link at Mohenjo-daro (p = 0.53); Harappa p = 0.001 but mould copies uncollapsed.
+- 643 **Linear B control**: count size depends on the commodity at Knossos (sheep, grain, wool, olives large; chariots,
+  women, horses, months small), 9 of 12 skews repeat at Pylos (p = 0.07; 8 of 10 large-count ideograms livestock or bulk).
+  Set 552's number-size split is what bookkeeping in a known script looks like: the Indus large-number units (390 405
+  407 575 585 900, line-final) are the better candidates for herds and bulk goods, the fish counted small like persons.
+- 644 short labels: on non-seal objects more at Mohenjo-daro only; heads predict the seal motif weakly (p = 0.02, mostly
+  the default bull), not claimed.
+- 645 strokes on seals found abroad: 0 of 17 before a counted sign (home 10%); too few (p = 0.17).
+- 646 graffiti side of the book's claims: jar and ladder not 'mostly initial' in composites; the wavy line solus 73 times.
+  **Correction**: set 635's 'sequences' are composite marks, not sign strings; its negative result stands as such.
+- 647 Kodumanal dated levels: 77% Indus-parallel at 100+ cm against 79% above 40 cm; replicates set 640.
+- 648 892 / 700: one minimal pair per corpus, chance.
+- 649 restoration against intact duplicates: model 22 of 60 (37%), neighbour rule 21; agrees with the M77-based line.
+- 650 the long closing formula on larger seals (30.2 vs 27.4 mm, p = 0.003); within the same name body 6 of 7 (p = 0.06).
+- 651 Wells's initial clusters: no line break after the marker 1 / 2 / 60, almost none inside opener + marker (the
+  heading unit again); 60 within positions 1-4 in 97%.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
