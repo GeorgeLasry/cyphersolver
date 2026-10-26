@@ -16342,3 +16342,17 @@ Both failed for want of data. Abroad (27 legible runs, 28 stroke tokens) no stro
 (0 of 17, home 124 of 1,243; p = 0.17) (GS1): the right direction, too few to count. Context variety is at its ceiling
 (every stroke token in a different context, 1.000) and equal-sized home samples reach it a third of the time (p = 0.34)
 (GS2). The foreign seals are too few to show whether their strokes are sound signs. Progress: none.
+
+# Set 646, registered before testing (26 October 2026): lead 5, the book's positional claims on the graffiti side (three hypotheses)
+
+Correction first: the multi-sign graffiti records used in set 635 are composites (one mark combining several base
+signs, typed 'Composite' in the corpus), not separate signs written side by side; set 635 tested how graffiti compose
+marks, and its result (component pairs no more Indus-like than shuffles) stands under that reading. Rajan &
+Sivanantham (p. 37) say the jar without arms (16) and the ladder (23) mostly stand first in composites and the wavy line
+(34) never stands alone; the corpus gives each composite with the queried sign's position (1 = initial) and occurrence
+counts (`predict_test646.py`).
+
+- **GC1** 16 stands first in its composites more often than 1 / composite length (binomial p < 0.05).
+- **GC2** The same for the ladder 23.
+- **GC3** 34 stands solus less often than the general solus rate (p < 0.05).
+- Progress rule: none (checks of published claims).
