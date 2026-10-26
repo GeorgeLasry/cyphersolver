@@ -13741,3 +13741,13 @@ strata only.
 
 Both failed: numeral first odds ratio 1.06 (p = 0.83), any numeral 0.96 (p = 0.80). Progress: none (goal streak 3).
 Tally, counting parts: 1652 held, 1678 failed (3334 registered).
+
+# Four-hundred-and-seventy-third set, registered before testing (26 October 2026): goal loop 119, 90 and variety by seal size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test473.py`).
+
+- **SM1** Large and small seals differ in carrying the 'man' sign 90 anywhere (two-sided p < 0.05).
+- **SM2** They differ in carrying texts with no repeated sign (two-sided p < 0.05; the converse of set 469's doubles,
+  counting any repeat).
+- Progress rule: either holds.
+
