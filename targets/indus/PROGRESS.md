@@ -550,3 +550,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | - | 646 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | graffiti side of the book's claims: jar and ladder not mostly initial in composites; wavy line solus 73 times (not never); set 635 re-described as composites (no progress) |
 | - | 647 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Kodumanal: Indus-parallel graffiti 77% at 100+ cm (5th c. BCE) against 79% above 40 cm; replicates set 640 (no progress) |
 | - | 648 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 892 and 700: one minimal pair on each corpus, chance level (no progress) |
+| - | 649 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | restoration against intact duplicates: model 22 of 60 (37%), neighbour rule 21 (no progress) |

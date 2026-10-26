@@ -52,4 +52,4 @@ def record(text, row, paths):
 
 def git(msg, paths):
     subprocess.run(['git', 'add'] + paths, cwd='../..', check=True)
-    subprocess.run(['git', 'commit', '-q', '-m', msg + '\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'], cwd='../..', check=True)
+    subprocess.run(['git', 'commit', '-q', '-m', msg + '\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>'], cwd='../..', check=True)

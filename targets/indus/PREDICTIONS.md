@@ -16413,3 +16413,10 @@ ranks 150 candidates; baselines: the neighbour rule of set 285 and the commonest
   10+ cases).
 - **RD2** The first guess is right in 30%+ of cases.
 - Progress rule: RD1 and RD2.
+
+## Results of set 649 (`predict_test649.py`, `results/predict_test649.md`)
+
+RD1 failed, RD2 held. On 60 damaged lines whose intact duplicates fix the missing sign, the copy-free model restores
+22 at the first guess (37%) and 28 in the top five, against 21 for the neighbour rule and 7 for the commonest sign (p =
+0.44 against the rule). The duplicate-based check agrees with the Mahadevan-based one (sets 283-314): the model restores
+illegible signs about a third of the time, but no better than a rule that looks at the two neighbours. Progress: none.
