@@ -13548,3 +13548,12 @@ Moulded tablets carrying the counted pot 700 are smaller: median 16.5 (219) agai
 pots' tablets are small tokens, as the reading of tablets as tokens (Meadow and Kenoyer 2000; DOSSIER section 3.6)
 expects; the size difference itself is new here. Not length-stratified. Progress under the rule (goal streak 0).
 Tally, counting parts: 1648 held, 1656 failed (3308 registered).
+
+# Four-hundred-and-sixtieth set, registered before testing (26 October 2026): goal loop 106, audit of the small count tablets (two hypotheses)
+
+'N 700' texts are short; set 459's TZ2 had no length control (`predict_test460.py`).
+
+- **TA1** Within length bands, moulded tablets with 700 are below the median size more often (Mantel-Haenszel p < 0.05).
+- **TA2** The same within Harappa.
+- Progress rule: none (audit). Both failing downgrades set 459's TZ2 to a length effect.
+
