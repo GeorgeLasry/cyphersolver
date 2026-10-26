@@ -256,6 +256,13 @@
    "technique": ["manual reconstruction"],
    "what": "Readings written on the figures (R1026_reading.md, R1027_reading.md; translations R1026_en.md, R1027_en.md); the clear passages of R1026 read from the image (DECODE's cleartext lines are garbled). Word check (b24_vr_align.py): every word of the cipher parts is in the decoded stream or explained by a bar mark. _check_reading.py on the bodies: R1026 0.735 (25/34), R1027 0.867 (13/15); explicit-hole share 0.971 and 0.933; before 0.00 (audit). Both set read, grade B (bar-mark convention inferred, not documented).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "hypothesis",
+   "technique": ["key-structure hypothesis"],
+   "what": "R1893 decoded with Van Reede's 1789-92 marked code to Wilhelmina (target reede1789, rebuilt from KHA A32-545-547 interlinear glosses): 40% coverage at chance level, French values in a Dutch letter; R1893 marks sit above digits. Not this code.",
+   "result": "failed"
   }
  ],
  "outcome": {

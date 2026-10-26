@@ -94,6 +94,12 @@ Write-up: [docs/vanreede1787.html](../../docs/vanreede1787.html).
 
 - 2026-10-14: split; `fraction_read` on this key's letters only: 447/471 (94.9 %).
 
+## R1893 and the 1789-92 code
+- 25 Oct 2026: R1893 tested against Van Reede's 1789-92 marked code to Wilhelmina (target reede1789, rebuilt from
+  KHA A32-545-547 interlinear glosses): coverage at chance level, French values in a Dutch letter, and R1893's marks
+  sit above the digits where the 1789-92 code underlines them. Not R1893's code. R1893's DECODE image is stored
+  upside down; turned, it is headed "Wel Edele Gestrenge Heer", 24 Mar 1793.
+
 ## Remaining gaps
 - R1026 [?soit], [?fournit], [?énonçoit] and R1027 [?decidement]: groups and bar marks spell a slip - blocker: no-key-material; the key has no instruction for the bar marks
 - R1026 clear passage, three faint words ('je [?vois] le plus [?estimé] d'[?ici]', 'le jour [?la]') - blocker: illegible; 1240-px DECODE image

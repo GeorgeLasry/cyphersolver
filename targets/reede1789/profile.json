@@ -1,0 +1,177 @@
+{
+ "schema_version": 1,
+ "target": "reede1789",
+ "title": "Van Reede's cipher letters to Princess Wilhelmina, Berlin 1789-95 (KHA A32-545-548)",
+ "documents": [
+  {
+   "id": "A32-545-547 glossed",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A32 Wilhelmina, inv. A32-545, -546, -547 (37 glossed pages)",
+   "date": "1789-01/1792-11",
+   "year": 1789,
+   "country": "Prussia",
+   "route": "A.W. van Reede (Berlin) -> Princess Wilhelmina",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary decipherment written over the cipher runs."
+   },
+   "length": {
+    "tokens": 4296,
+    "distinct": 1912,
+    "unit": "mixed",
+    "measured": true,
+    "file": "pairs_a.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "KHA renditions (original size), pairs_a.txt and pairs_b.txt",
+    "image_quality": "good",
+    "notes": "Measured file pairs_a.txt holds PT, CT and AL lines; about 1,900 cipher groups in both files."
+   }
+  },
+  {
+   "id": "A32-547/548 solid",
+   "shelfmark": "Koninklijk Huisarchief, A32-547 and A32-548 (171282, 171359, 171376, 171405, 179084, 171596, 171534, 171548, 171568-69)",
+   "date": "1792-01-17/1795-06",
+   "year": 1792,
+   "country": "Prussia",
+   "route": "A.W. van Reede (Berlin) -> Princess Wilhelmina",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "First 23 groups of 171282 only",
+    "image_quality": "good",
+    "notes": "Plain 4-digit groups up to about 2000."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "Mixed nomenclator of about 850 numbers: syllables, words and names in topical blocks; marks on single digits (underlines under a given digit, primes) select plural or variant forms; an overlined 3 marks names.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "syllables"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "vanreede1787 (R1024 Grand Chiffre, another system)",
+  "notes": "The 1792-95 solid pages use a third code."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary interlinear decipherments in A32-545-547",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Lead chosen by the user from the KHA sweep; user asked to rebuild the code and try it on R1893 and the 1792-95 pages.",
+  "tools": [
+   "KHA rendition API (curl)",
+   "PIL crops",
+   "table.py vote table (python)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-25",
+  "last_date": "2026-10-25"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "KHA K8 survey: thumbnails of A32-542-549 flagged; 37 glossed 1789-92 pages and 10 solid 1792-95 pages listed.",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "transcription",
+   "what": "Two agents transcribed the 37 glossed pages with marks and digit positions (pairs_a.txt, pairs_b.txt).",
+   "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Vote table from the aligned runs (table.py): 386 numbers, 242 with >=60% agreement; mark rules worked out (underline position = plural/variant, prime = second entry).",
+   "result": "partial",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Table applied to R1893 (vanreede1787, Dutch, 24 Mar 1793): 40% coverage, chance level, French values in a Dutch letter; marks above digits, not under. Not this code.",
+   "result": "failed",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "R1024 Grand Chiffre and the table under every offset -2000..2000 on the first 23 groups of the 17 Jan 1792 solid page: nonsense (best 9/23).",
+   "result": "failed",
+   "date": "2026-10-25"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Work in progress: the 1789-92 code table is rebuilt from contemporary interlinear decipherments; R1893 and the 1792-95 solid pages are in other codes with no key.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "class": "unknown",
+  "fraction_read": "unknown",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Table not yet used to read unglossed 1789-92 passages."
+ }
+}
