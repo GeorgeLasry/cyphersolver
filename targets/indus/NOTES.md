@@ -3327,6 +3327,11 @@ mapping the 42 base graffiti signs to Indus sign numbers (the brochure shows a d
 graffiti against the Indus grammar with mapped signs would need that mapping built by eye, which would be this
 project's guess, so it was not attempted; set 204's order fingerprint stays the only test.
 
+**Update (26 Oct 2026):** the mapping exists online. K. Rajan pointed to https://tngraffiti.in/ , whose API (`indus`)
+gives each graffiti sign's Indus parallel in Mahadevan 1977 numbering (31 of 42 base signs; 23 map to ICIT), and whose
+concordance gives 600 multi-sign graffiti sequences with counts. Saved in data/graffiti/ (README there). This makes
+a sign-by-sign test of the graffiti against the Indus grammar possible, with their mapping, not one built here.
+
 ## Audit (25 Sept 2026): part-transcriptions in the referent phrases
 
 Set 247 showed that the '2+ distinct texts' rule can be met by partial transcriptions of one text. Re-run of sets 237
