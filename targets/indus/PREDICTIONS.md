@@ -12113,3 +12113,20 @@ fair / good / fine), as domain models on the set 372 base; split C; rule of set 
 - **SM1** A secondary-motif domain model lowers S.
 - **SM2** A workmanship domain model lowers S (finer seals, different texts: an engraver or office effect).
 
+## Results of the three-hundred-and-seventy-sixth set (`predict_test376.py`, `results/predict_test376.md`)
+
+Both failed: weight 0 for size band and for workmanship. The ICIT side fields beyond object kind (sets 374-376: period,
+material, shape, secondary motif, size, workmanship) add nothing to sign context. Progress: none (goal streak 4).
+Tally, counting parts: 1600 held, 1544 failed (3144 registered).
+
+# Three-hundred-and-seventy-seventh set, registered before testing (26 October 2026): goal loop 23, restoration with the object-kind models (two hypotheses)
+
+Tier 3's restoration line (sets 283, 284, 314: illegible ICIT signs predicted by a copy-free model and compared with
+Mahadevan 1977's readings; 29 of 75 with the plain model, two directions) is rescored with the S base's domain models
+(length, type, subtype, length x subtype), the gap line's type and subtype taken from its own object record. Plain and
+domain predictions use the same copy-free training lines (`predict_test377.py`). Not measured before registering.
+
+- **RS1** Single-gap cases (sets 283 + 284): the domain models restore more signs than the plain model.
+- **RS2** Two-gap lines (set 314): the same.
+- Progress rule: the total restored by the domain models exceeds the plain total (the restoration line rises).
+

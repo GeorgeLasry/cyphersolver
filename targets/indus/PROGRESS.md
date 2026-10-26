@@ -272,3 +272,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G20 | 374 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa period, material: nothing beyond object kind (no progress; goal streak 2) |
 | G21 | 375 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | shape, secondary motif: nothing (no progress; goal streak 3) |
 | G20 | 374 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa period and material beyond object kind: nothing (no progress; goal streak 2) |
+| G22 | 376 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band, workmanship: weight 0 (no progress; goal streak 4) |
