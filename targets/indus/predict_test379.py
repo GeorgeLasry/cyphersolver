@@ -4,7 +4,23 @@ from statistics import median
 import loopkit as L
 import rtools as R
 from predict_test376 import size
-from statsmodels.stats.contingency_tables import StratifiedTable
+from scipy.stats import chi2
+
+
+def mantel_haenszel(tabs):
+    """Pooled odds ratio and the CMH chi-square test (1 df, continuity-corrected) over 2x2 tables."""
+    num = den = a_sum = e_sum = v_sum = 0.0
+    for (a, b), (c, d) in tabs:
+        n = a + b + c + d
+        if n <= 1:
+            continue
+        num += a * d / n
+        den += b * c / n
+        a_sum += a
+        e_sum += (a + b) * (a + c) / n
+        v_sum += (a + b) * (c + d) * (a + c) * (b + d) / (n * n * (n - 1))
+    stat = (abs(a_sum - e_sum) - 0.5) ** 2 / v_sum if v_sum else 0.0
+    return (num / den if den else float('inf')), chi2.sf(stat, 1)
 
 LARGE, SMALL = ('32', '706'), ('156', '390', '400', '5', '590')
 
@@ -23,9 +39,8 @@ def main():
             lg = [t for t in sub if size(t) > cut]
             sm = [t for t in sub if size(t) <= cut]
             a, c = sum(g in t for t in lg), sum(g in t for t in sm)
-            tabs.append([[a + 0.5, len(lg) - a + 0.5], [c + 0.5, len(sm) - c + 0.5]])
-        st = StratifiedTable(tabs)
-        orr, p = st.oddsratio_pooled, st.test_null_odds().pvalue
+            tabs.append([[a, len(lg) - a], [c, len(sm) - c]])
+        orr, p = mantel_haenszel(tabs)
         right = (orr > 1) == (g in LARGE) and p < 0.05
         ok_len += right
         rd.say('- %s (%s): pooled odds ratio large/small %.2f within length bands, p = %.4f%s.' % (g, 'large' if g in LARGE else 'small', orr, p, ' *' if right else ''))

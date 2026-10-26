@@ -12192,3 +12192,12 @@ Longer texts sit on larger seals (set 376), and sites may differ in seal size. T
 - **LZ2** Within Mohenjo-daro alone (median split there), 5+ of the 7 lean the same way.
 - Progress rule: LZ1 holds (the size effect is not text length).
 
+## Results of the three-hundred-and-seventy-ninth set (`predict_test379.py`, `results/predict_test379.md`)
+
+Both held. Within text-length bands (Mantel-Haenszel; written out in the script, statsmodels not installed) 706 (odds
+ratio large/small 3.98, p = 0.004), 156 (0.36), 400 (0.40), 5 (0.23) and 590 (0.44) keep their direction at p < 0.05;
+32 (1.48) and 390 (0.70) lean the right way at p < 0.09 (LZ1: 5 of 7). Within Mohenjo-daro alone all 7 lean the same way
+(LZ2, 712 seals). **The size of a square seal goes with what it says**, beyond text length and site: large seals carry
+the stroked U 706 of the closing formula, small ones the yoke-carrier ligature 156, the marker 400, 590 and the numeral 5.
+Seal size may mark rank or office. A control on the discovery data, not a new sample. Progress (goal streak 0). Tally,
+counting parts: 1604 held, 1544 failed (3148 registered).
