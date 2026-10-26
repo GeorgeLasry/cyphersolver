@@ -14948,3 +14948,12 @@ Heads (sign before an ending) in two-sign lines against lines of 5+ signs; heads
 ## Results of set 555 (`hyp_s2_shortskew.py`, `results/predict_test555.md`)
 
 Held: none. skewed 0; same way on B 0/0. Progress: none (session-2 goal streak 3).
+
+
+# Set 556, registered before testing (26 October 2026): session-2 goal loop 21, the ending of short labels (two hypotheses)
+
+Share of 520 among the endings of two-sign lines against lines of 5+ signs (`hyp_s2_shortend.py`).
+
+- **SE1** On A the share differs (Fisher p < 0.05); the direction is the prediction for B.
+- **SE2** B shows the same direction (one-sided Fisher p < 0.05).
+- Progress rule: SE1 and SE2.
