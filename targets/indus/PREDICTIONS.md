@@ -14256,3 +14256,7 @@ Both failed: 415 odds ratio 1.26 (p = 0.59); 455 0.73 (p = 0.70). Progress: none
 - **S820** They differ in carrying 820 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-eighth set (`predict_test508.py`, `results/predict_test508.md`)
+
+Both failed: 798 odds ratio 1.29 (p = 0.53); 820 0.99 (p = 0.97). Progress: none (goal streak 7). Tally, counting parts:
+1669 held, 1731 failed (3405 registered).
