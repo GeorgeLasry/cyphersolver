@@ -15017,3 +15017,13 @@ Value of a numeral directly before a fish sign (220-259) against before any othe
 ## Results of set 560 (`hyp_s2_fishval.py`, `results/predict_test560.md`)
 
 Held: FV1, FV2. A True, B True: restates set 552 (consistency). Progress: none (session-2 goal streak 8).
+
+
+# Set 561, registered before testing (26 October 2026): session-2 goal loop 26, endings after counted fish (two hypotheses)
+
+Fish signs (220-259) directly followed by an ending; counted (a numeral before the fish) against uncounted; share of
+520 among the endings (`hyp_s2_countedfish.py`).
+
+- **CF1** On A the 520 share differs between counted and uncounted fish (Fisher p < 0.05); direction is B's prediction.
+- **CF2** Same direction on B (one-sided p < 0.05).
+- Progress rule: CF1 and CF2.
