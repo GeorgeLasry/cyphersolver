@@ -73,7 +73,7 @@ et de biens*.
 
 ## Remaining gaps
 
-- multi-valued labels on f. 260r-v (40.5% / 34.5% of letters) - blocker: not-attempted for S, f, y, d, t/tb, pi; the four largest (ϙ `9`, ʒ `z`, б `6`, ρ `p`) were split-tested by shape on the full-size images and do not split (issue #95, below), so for those the blocker is no-key-material: a contemporary decipherment of f. 260 or another letter in this key
+- multi-valued labels on f. 260r-v (39.4% / 33.8% of letters after the S and d splits) - blocker: no-key-material; all ten multi-valued labels split-tested by shape on the full-size images (issues #95, #99): S and d split, the other eight do not; only a contemporary decipherment of f. 260 or another letter in this key would settle the remaining choices
 - open runs: f. 260r r. 1-2 (the places after *en son*), r. 5-11, r. 13-14, r. 17, r. 19-24; f. 260v v. 3 (the day in April), v. 4, v. 8-9, v. 12-18, v. 23, v. 27 - blocker: not-attempted; retry after the label split
 - Π (`P`) taken as a null where *affaire(s)* needs *ff* (v. 25, v. 27); two signs after *n'oze* in crib 2 - blocker: not-attempted; image check
 
@@ -83,8 +83,8 @@ et de biens*.
 - [x] clear-pages: f. 245v's clear letter and margins are the only clear material found; no clear copy of f. 260 looked for beyond Brackx's search
 - [x] known-keys: Tomokiyo's St. Luc table is the key; Lasry's f. 43 key does not apply
 - [x] print: Tomokiyo reads the opening line only; no other reading found by Brackx (web search) or here
-- [ ] key-rebuild: label split by shape not yet done (see gaps)
-- [ ] retry: after the split
+- [x] key-rebuild: every multi-valued label split-tested by shape (Brackx, issues #95 and #99): `S` (mm / s) and `d` (l / c) split, the rest do not
+- [x] retry: f. 260 re-decoded after the splits: one word changes (r. 23 *dosame* to *dommage*); the open runs stay open
 
 ## Shape test of the four largest multi-valued labels (Brackx, issue #95, 23 Oct 2026)
 
@@ -101,6 +101,21 @@ grouped by decoded value:
 Only part of each minority value could be located cleanly (4 m and 1 h of ʒ, 4 g and 3 m of ϙ, 6 y of б, 7 r of ρ),
 so a rare variant could still be missed. The look-alike share stays 40.5% / 34.5%; both pages stay decoded, not read.
 
+## Shape test of the remaining six labels (Brackx, issue #99, 25 Oct 2026)
+
+| label | tokens on f. 260 | verdict |
+|---|---|---|
+| `S` | 17 s, 4 mm, 1 m | **split**: two S-curves side by side (§§) = *mm* in all 4 located tokens, single or double long s = *s* in all 14; new labels `Smm`, `Ss` (4 tokens not seen clearly keep `S`) |
+| `f` | 52 c, 20 s | no split: the same crossed f |
+| `d` | 8 c, 2 l | **split**: the 2 *l* tokens are an arch curling to a hook, not ∂; `dl` = *l*, `d` = *c* |
+| `t`/`tb` | 12 r, 4 t, 1 p | no split |
+| `pi` | 11 s | one value on f. 260 |
+| `y` | 27 n | the *d* value is never chosen |
+
+The `S` split changes one word of the decode (r. 23 *dosame* to *dommage*, as in the reading). Look-alike share
+f. 260r 40.5% to 39.4%, f. 260v 34.5% to 33.8%. f. 245 uses none of the new labels; crib agreements unchanged.
+Both pages stay *decoded, not read*.
+
 ## Log
 
 - 22-23 Oct 2026: Brackx, issue #90 (solution post and reply of 23 Oct with the reading, English, line-by-line decode and
@@ -108,3 +123,4 @@ so a rare variant could still be missed. The look-alike share stays 40.5% / 34.5
 - 24 Oct 2026: taken in as a new target; measured; graded decoded, not read on the look-alike limit; profile, page,
   ledgers and DECODE note (no DECODE record known).
 - 23 Oct 2026: Brackx's shape test of ϙ, ʒ, б, ρ (issue #95): none splits; recorded above.
+- 25 Oct 2026: shape test of the remaining six labels (issue #99): `S` and `d` split; look-alike share 39.4% / 33.8%.
