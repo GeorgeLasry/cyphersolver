@@ -47,6 +47,8 @@ Already on DECODE: 1.02.13 inv. 226/228 (Russia legation, R1033/R1035), which co
 
 ## Next steps
 
+- Ranked scan-on-demand drafts for the physical leads: `scan_requests.md` (26 Oct 2026; Croiset 2.21.045 inv. 21, 18, 22 first).
+
 1. Open lead 1 (WIC inv. 62): find the Pina folios and the ciphered letters in the same volume, through IIIF.
 2. Check leads 13 and 15 (scanned and small).
 3. Before working any 1.01.02 envoy letter, look for it in print (Delpher, RGP at resources.huygens.knaw.nl,
