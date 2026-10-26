@@ -14150,3 +14150,7 @@ Square seals with a motif and a size carrying 156, 400 or 590 (first found count
 - **CH2** The choice differs between unicorn and other-animal seals (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundredth set (`predict_test500.py`, `results/predict_test500.md`)
+
+Both failed. Mohenjo-daro 26 / 42 / 39, Harappa 6 / 10 / 14 (156 / 400 / 590; p = 0.60); unicorn 31 / 45 / 62, other 8 /
+12 / 9 (p = 0.39). Progress: none (goal streak 7). Tally, counting parts: 1668 held, 1716 failed (3389 registered).
