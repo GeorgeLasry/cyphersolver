@@ -12591,3 +12591,13 @@ log2(1 + its count in training lines from the test line's city), weight 1 fixed 
 Both failed. With the city prior WORD top-10 goes 11 -> 10 names (fixed, of 232) and 15 -> 14 (A -> B, of 299); top-1
 0 -> 2 and 5 -> 3. Local names (sets 390-391) do not make a hidden name guessable: the shared bodies are few among all
 candidates. Progress: none (goal streak 1). Tally, counting parts: 1619 held, 1570 failed (3189 registered).
+
+# Four-hundredth set, registered before testing (26 October 2026): goal loop 46, sealings against seals (two hypotheses)
+
+Clay tags (ICIT TAG types) bear impressions of seals in use. Distinct tag lines (2+ signs) against distinct square-seal
+lines not also on tags; Mantel-Haenszel over length bands (`predict_test400.py`).
+
+- **TG1** Tag texts open with the heading (817 / 820 / 861) more often than seal texts at equal length (p < 0.05).
+- **TG2** Tag texts close with 740 / 520 less often than seal texts at equal length (p < 0.05).
+- Progress rule: either holds.
+
