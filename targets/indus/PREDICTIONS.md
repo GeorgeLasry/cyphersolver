@@ -14934,3 +14934,13 @@ against its small-number signs (520 left out) (`hyp_s2_largeunits.py`).
 ## Results of set 554 (`hyp_s2_largeunits.py`, `results/predict_test554.md`)
 
 Held: none. ending after: A large 37/155 vs small 27/190; B 6/60 vs 6/68. Progress: none (session-2 goal streak 2).
+
+
+# Set 555, registered before testing (26 October 2026): session-2 goal loop 20, the heads of short labels (two hypotheses)
+
+Heads (sign before an ending) in two-sign lines against lines of 5+ signs; heads with 5+ A tokens skewed at p < 0.05
+(Fisher) on A; checked on B (3+ tokens) (`hyp_s2_shortskew.py`).
+
+- **SS1** 3+ skewed heads on A.
+- **SS2** 75%+ of the testable ones lean the same way on B (binomial p < 0.05).
+- Progress rule: SS1 and SS2.
