@@ -107,6 +107,7 @@ cipher.
 - [x] print: Parisi 2004, Galende 1994, Villanueva Morte 2025, Tomokiyo; McPheeters 1989 not seen
 - [x] key rebuild: ciphertext-only homophonic annealing with an in-domain model; failed (control below the bar)
 - [ ] print/archive (next): AGS Patronato Real on PARES may hold Garcilaso's own Rome despatches of 1494-99 with their decipherments; the PARES search returned HTTP 429 (rate limit) on 26 Oct 2026, both scripted and in the browser, so it is untried. Search `catalogo/find?texto=Garcilaso de la Vega&anio1=1494&anio2=1500` first
+- [x] print (later, 26 Oct): BNE holds five Garcilaso letters (datos.bne.es XX1338429: to the Monarchs 8 Nov [1496], to Cisneros, to Ferdinand 25 Aug 1500, to Almazán [1493]), none described as ciphered. Usoz printed his clear letter to the Monarchs of April 1498 (San Sebastián 1842, IA `cartalosreyesdf00spaigoog`): Cesare Borgia's Neapolitan marriage, the Calahorra bishop's trial, the infanta María and the duke of Calabria. Topics only, no crib that aligns with the postscript signs
 - [ ] retry: needs images of RAH Salazar A-11 ff. 109–111 and 121–125 (Garcilaso's cipher letters with their
   decipherments); request from the RAH, then rebuild the alphabet and code from the 1496 letters and apply it here
 
