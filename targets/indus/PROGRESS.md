@@ -405,3 +405,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G149 | 503 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish + 740 and 60 not size-linked (no progress; goal streak 2) |
 | G150 | 504 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | marked fish and 806 not size-linked (no progress; goal streak 3) |
 | G151 | 505 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish 220 and 240 not size-linked (no progress; goal streak 4) |
+| G152 | 506 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish 235 and 233 not size-linked (no progress; goal streak 5) |
