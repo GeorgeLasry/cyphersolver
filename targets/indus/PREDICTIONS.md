@@ -14737,3 +14737,14 @@ Openers (set 539: 104 491 692 817 820 853 861 920 on A) head a line (`hyp_s2_ope
 ## Results of set 541 (`hyp_s2_openlen.py`, `results/predict_test541.md`)
 
 Held: OL1, OL2. opener lines longer on A True, B True; the heading unit (sets 230-279) already covers it: consistency. Progress: none (session-2 goal streak 6).
+
+
+# Set 542, registered before testing (26 October 2026): session-2 goal loop 7, non-adjacent repeats in a line (two hypotheses)
+
+Lines in which a non-numeral sign occurs twice, not adjacent (`hyp_s2_repeat.py`). Null: each line's signs shuffled
+(500 times), which keeps the line's sign counts; a repeat then lands adjacent or not by chance.
+
+- **RP1** On A, repeated signs stand apart (not adjacent) more often than in shuffles, p < 0.05 (repetition is a
+  frame, e.g. a x a, rather than doubling).
+- **RP2** The same on B.
+- Progress rule: RP1 and RP2.
