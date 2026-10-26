@@ -13634,3 +13634,8 @@ less often than with lines shuffled among the objects (1,000, two-sided)? (`pred
 - **OB2** On Mahadevan's multi-line objects.
 - Progress rule: both hold.
 
+## Results of the four-hundred-and-sixty-fifth set (`predict_test465.py`, `results/predict_test465.md`)
+
+Both failed. Both classes on one object: 2 of 78 ICIT multi-line objects (p = 1.0), 6 of 554 Mahadevan objects
+(p = 0.050, not under). Too rare to tell from chance. Progress: none (goal streak 6). Tally, counting parts: 1649 held,
+1667 failed (3320 registered).
