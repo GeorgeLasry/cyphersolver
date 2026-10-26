@@ -15041,3 +15041,7 @@ Relative position (index / (length - 1)) of set 552's counted signs, large group
 - **UP1** On A the positions differ (Mann-Whitney two-sided p < 0.05); direction is B's prediction.
 - **UP2** Same direction on B (one-sided p < 0.05).
 - Progress rule: UP1 and UP2.
+
+## Results of set 562 (`hyp_s2_unitpos.py`, `results/predict_test562.md`)
+
+Held: UP1, UP2. A large 0.82 vs small 0.50; B 0.82 vs 0.66. Progress: yes (session-2 goal streak 0).
