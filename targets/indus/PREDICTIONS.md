@@ -13366,3 +13366,13 @@ but this re-tests set 441 inside a subset, so under the standing rule it is cons
 line reads 'holds'). The same name in both forms: 9 names, as many as shuffled forms give (p = 0.74): no sign of an
 optional long form of one name. Progress: none (goal streak 1). Tally, counting parts: 1639 held, 1642 failed (3285
 registered).
+
+# Four-hundred-and-forty-eighth set, registered before testing (26 October 2026): goal loop 94, which fish take the long form (two hypotheses)
+
+Fish name tokens on distinct lines; skews on A (Fisher p < 0.05, 5+ tokens), all of those with 3+ B tokens lean the same
+way on B, at least 2 testable (`predict_test448.py`).
+
+- **WF1** Particular fish signs prefer the long form (fish 705 / 706 33 520) over the short form (fish 520).
+- **WF2** Within the long form, particular fish signs prefer 706 over 705 or the reverse.
+- Progress rule: either holds.
+
