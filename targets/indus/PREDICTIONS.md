@@ -15073,3 +15073,12 @@ Set 562 restricted to lines of 4+ signs (a unit cannot fill the line) and compar
 ## Results of set 564 (`hyp_s2_posaudit.py`, `results/predict_test564.md`)
 
 Held: PA1, PA2. PA1 True, PA2 True (audit of set 562). Progress: none (session-2 goal streak 2).
+
+
+# Set 565, registered before testing (26 October 2026): session-2 goal loop 30, what follows a large unit (two hypotheses)
+
+Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=after). Large / small = set 552's counted signs (740, 520 out).
+
+- **U1** On A: large units not at the line end are followed by 400 / 90 more often than small units (p < 0.05).
+- **U2** The same on B (p < 0.05).
+- Progress rule: U1 and U2.
