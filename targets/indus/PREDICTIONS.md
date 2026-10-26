@@ -13821,3 +13821,8 @@ same strata (`predict_test478.py`).
 - **TH2** Thin seals carry doubled signs more often (set 469).
 - Progress rule: none (a further dimension for findings already made).
 
+## Results of the four-hundred-and-seventy-eighth set (`predict_test478.py`, `results/predict_test478.md`)
+
+TH1 held, TH2 failed (consistency only). By thickness the closing formula is on thick seals (odds ratio 3.57, p = 0.025):
+set 441 holds on a third dimension. Doubled signs show nothing by thickness (0.88, p = 0.95): set 469 rests on the face
+size alone. Progress: none (goal streak 9). Tally, counting parts: 1654 held, 1686 failed (3345 registered).
