@@ -15321,3 +15321,7 @@ tokens that are rare (3 or fewer tokens in the sample), lines of 5+ signs agains
 - **RA1** On A the rare share per token is higher in long lines (Fisher p < 0.05).
 - **RA2** The same on B.
 - Progress rule: none (audit); if RA1 or RA2 fails, set 578 is withdrawn and the session-2 streak recounted.
+
+## Results of set 583 (`hyp_s2_rareaudit.py`, `results/predict_test583.md`)
+
+Held: none. RA1 False, RA2 False (audit of set 578). Progress: none (session-2 goal streak 5).

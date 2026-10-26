@@ -483,3 +483,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-45 | 580 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | the jar 740 does not open a line (consistency): A 5 of 945 initial; B 6 of 353 initial. (no progress; session-2 goal streak 2) |
 | S2-46 | 581 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numerals open lines more than other signs (consistency): A 266/1494 vs 1650/7344; B 158/675 vs 1017/3837. (no progress; session-2 goal streak 3) |
 | S2-47 | 582 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | fish signs stand before 520 more than other heads do (consistency): A 76/156 vs 87/947; B 17/39 vs 33/358. (no progress; session-2 goal streak 4) |
+| S2-48 | 583 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: rare-sign rate per token by line length: RA1 False, RA2 False (audit of set 578). (no progress; session-2 goal streak 5) |
