@@ -12341,3 +12341,13 @@ on C-train, Fisher p < 0.01; C-test 3+, 75%+ same way, binomial p < 0.05) (`pred
 Both failed. Incised against moulded tablets: one skewed pair (32 740, incised), not testable on C-test. Seals against
 tablets: 5 pairs, all tablet-heavy (176 740, 255 435, 32 740, 690 740, 740 400); 4 of 5 lean the same way (p = 0.19).
 Progress: none (goal streak 3). Tally, counting parts: 1607 held, 1557 failed (3164 registered).
+
+# Three-hundred-and-eighty-eighth set, registered before testing (26 October 2026): goal loop 34, seal size: endings and rectangular seals (two hypotheses)
+
+Clean ICIT seals with a recorded first dimension (`predict_test388.py`).
+
+- **LG1** At equal length (Mantel-Haenszel), large square seals carry two or more endings (740 / 520) more often than
+  small ones (p < 0.05): a title and a name.
+- **LG2** On rectangular seals (own median), 5+ of set 379's 7 size signs lean the same way as on square seals.
+- Progress rule: either holds.
+
