@@ -14961,3 +14961,13 @@ Share of 520 among the endings of two-sign lines against lines of 5+ signs (`hyp
 ## Results of set 556 (`hyp_s2_shortend.py`, `results/predict_test556.md`)
 
 Held: none. A short 520 11/62 vs long 102/678; B 1/20 vs 36/224. Progress: none (session-2 goal streak 4).
+
+
+# Set 557, registered before testing (26 October 2026): session-2 goal loop 22, two counts in one line (two hypotheses)
+
+Lines with two 'numeral + sign' units (sign not a numeral). Share where both units count the same sign, against 1,000
+shuffles of counted signs among all such units (`hyp_s2_twocounts.py`).
+
+- **TC1** On A the same-sign share differs from the shuffles (two-sided p < 0.05); direction is B's prediction.
+- **TC2** B shows the same direction (p < 0.05 one-sided).
+- Progress rule: TC1 and TC2.
