@@ -336,3 +336,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G80 | 434 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: 706 > 705 seal size holds within Mohenjo-daro; with length held OR 2.98, p = 0.08 (audit; no progress; goal streak 1) |
 | G81 | 435 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | stroked jars, caged fish: no seal-size link; the step is the U family's alone (no progress; goal streak 2) |
 | G82 | 436 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | one- vs multi-sided tablets: no skews (no progress; goal streak 3) |
+| G83 | 437 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | one- vs multi-line seals: nothing (no progress; goal streak 4) |

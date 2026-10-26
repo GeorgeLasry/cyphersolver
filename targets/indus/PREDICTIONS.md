@@ -13203,3 +13203,7 @@ Square seals; a line is 'multi' if its object has other lines (loopkit.OTHERS) (
 - **ML2** At equal length, lines of multi-line seals differ in closing with 740 / 520 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-seventh set (`predict_test437.py`, `results/predict_test437.md`)
+
+Both failed. Multi-line seals: 226 and 790 skewed on C-train, 1 of 2 replicate; endings alike (odds ratio 1.13). Progress:
+none (goal streak 4). Tally, counting parts: 1633 held, 1628 failed (3265 registered).
