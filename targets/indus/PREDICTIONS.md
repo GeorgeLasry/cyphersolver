@@ -12481,3 +12481,15 @@ Both failed. Seals sharing only the head sign: 3,834 of 7,625 pairs same city (p
 Progress: none (goal streak 2). (Numbering note: a parallel goal run in the original session also registered sets
 375-379 on 26 Oct; its entries are relabelled by that session; this run's sets are 374-393 as headed 'goal loop 20-39'.)
 Tally, counting parts: 1614 held, 1562 failed (3176 registered, this run's sets only).
+
+# Three-hundred-and-ninety-fourth set, registered before testing (26 October 2026): goal loop 40, a Wells -> ICIT concordance (two hypotheses)
+
+The original session transcribed Wells 1998's Appendix 1 for 128 signs (data/wells/wells1998_signs.tsv: Wells number,
+CISI objects). `wells_concordance.py` maps each Wells sign to the ICIT glyph present on most of its listed objects (CISI
+number = ICIT record field 1). Printed checks where Wells gives an M77 number (Wells 247 = M77 400, 303 = 347) are
+reported (`predict_test394.py`).
+
+- **WC1** For 70%+ of Wells signs with 3+ objects found, one ICIT glyph is on 80%+ of them.
+- **WC2** The mean top-glyph share beats random object lists of the same sizes (1,000 draws, p < 0.05).
+- Progress rule: none (infrastructure; the Wells claims are tested next).
+
