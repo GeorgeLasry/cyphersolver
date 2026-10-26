@@ -16085,6 +16085,8 @@ statistic, with no sign correspondence. Not measured before registering.
 
 ## Results of set 635 (`predict_test635.py`, `results/predict_test635.md`)
 
+*Correction (set 646): the 'graffiti sequences' below are composite marks (one mark combining several base signs), not separate signs on a sherd; the test compares how graffiti compose marks with Indus sign adjacency.*
+
 All three failed. 596 multi-sign graffiti sequence types give 193 adjacent pairs of two distinct mapped base signs
 (23 mapped signs). 62 of the 193 pairs are Indus neighbours, but shuffling the corpus's mapping gives as many in 159 of
 1,000 draws (p = 0.16) and re-pairing the signs in 138 of 1,000 (p = 0.14) (GR1). Graffiti order does not follow Indus
@@ -16356,3 +16358,12 @@ counts (`predict_test646.py`).
 - **GC2** The same for the ladder 23.
 - **GC3** 34 stands solus less often than the general solus rate (p < 0.05).
 - Progress rule: none (checks of published claims).
+
+## Results of set 646 (`predict_test646.py`, `results/predict_test646.md`)
+
+GC1 and GC2 failed, GC3 held, and the book's wording fails anyway. The jar without arms (16) is first in 8 of 13
+composite occurrences against 6.2 expected (p = 0.23); the ladder (23) in 22 of 49 against 24.2 (p = 0.78): neither is
+'mostly initial'. The wavy line (34) is solus less often than the general rate (73 of 154 against 0.74, p < 0.0001), but
+it is solus 73 times, so 'never stands alone' is false on the corpus's own data. With set 638 (the Indus side), none of
+the book's three positional remarks holds as stated. Set 635 is re-described: it tested composite marks. Progress:
+none.
