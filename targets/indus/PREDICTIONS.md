@@ -14019,7 +14019,8 @@ pairs with identical dimensions (possible double records) leaves 36 of 39 (p = 0
 seals of the same text length, p = 0.001 (unicorns are 79% of these seals, copies share 92%). **At Mohenjo-daro, seals
 with the same text carry the same animal**, beyond chance, length and double records; set 381's pooled test across
 sites (63%, p = 0.079) was weaker. So the text is independent of the animal across seals in general (sets 382, 404),
-but a given text was cut with a given animal. Progress (goal streak 0). Tally, counting parts: 1659 held, 1707 failed
+but a given text was cut with a given animal (narrowed by set 492: the effect is unicorn copies; non-unicorn copies
+share the animal in 0 of 8 pairs). Progress (goal streak 0). Tally, counting parts: 1659 held, 1707 failed
 (3371 registered).
 
 # Four-hundred-and-ninety-second set, registered before testing (26 October 2026): goal loop 138, copies share the animal elsewhere (two hypotheses)
@@ -14031,3 +14032,9 @@ Set 491 at Mohenjo-daro. Pairs with identical dimensions dropped; motifs shuffle
 - **CH2** Among non-unicorn square seals at all sites, copies share the animal more than chance.
 - Progress rule: none (re-test of set 491).
 
+## Results of the four-hundred-and-ninety-second set (`predict_test492.py`, `results/predict_test492.md`)
+
+Both failed. Harappa: 3 of 5 copy pairs share the animal (p = 0.84, few). Non-unicorn seals: 0 of 8 copy pairs share the
+animal. Set 491 narrows to unicorn seals: identical texts recur among unicorn seals at Mohenjo-daro, while the same text
+on non-unicorn seals comes with different animals. Progress: none (goal streak 1). Tally, counting parts: 1659 held,
+1709 failed (3373 registered).
