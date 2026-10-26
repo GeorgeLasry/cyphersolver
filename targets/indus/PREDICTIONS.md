@@ -13453,3 +13453,8 @@ in set 452, A and B (`predict_test453.py`).
   short-form names (Mann-Whitney p < 0.05, A and B).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fifty-third set (`predict_test453.py`, `results/predict_test453.md`)
+
+Both failed. Marked fish take the long form in 19 of 60 against 4 of 39 for plain 220 on A (p = 0.011) and 5 of 10
+against 2 of 14 on B (p = 0.075, small); modifiers before the fish are as many in both forms (1.22 / 1.22; 1.14 / 1.53).
+Progress: none (goal streak 7). Tally, counting parts: 1640 held, 1653 failed (3297 registered).
