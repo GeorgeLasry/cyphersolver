@@ -13580,3 +13580,12 @@ test of large against small (C-train median) over length band x site, p < 0.01; 
 Both failed: with length band x site strata no sign is skewed by size on moulded or incised tablets at p < 0.01. Seal
 size carries signs (set 430); tablet size does not. Progress: none (goal streak 2). Tally, counting parts: 1649 held,
 1659 failed (3312 registered).
+
+# Four-hundred-and-sixty-second set, registered before testing (26 October 2026): goal loop 108, seal size and signs on split C (two hypotheses)
+
+Set 461's stratified test (`predict_test462.py`).
+
+- **RS1** Rectangular seals: size skews replicate on C-test.
+- **RS2** Square seals: size skews replicate on C-test (a held-out check of set 430; consistency, not progress).
+- Progress rule: RS1 holds.
+

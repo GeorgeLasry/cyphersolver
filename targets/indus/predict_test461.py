@@ -1,4 +1,4 @@
-"""Set 461 (goal run loop 107): tablet size and signs with length x site strata; C-train -> C-test.
+"""Set 461 (goal run loop 107; run() reused by set 462): tablet size and signs with length x site strata; C-train -> C-test.
 Writes results/predict_test461.md."""
 from collections import Counter
 from statistics import median
