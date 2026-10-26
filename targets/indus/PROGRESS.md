@@ -410,3 +410,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G154 | 508 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 798 and 820 not size-linked (no progress; goal streak 7) |
 | G155 | 509 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 368 a trend, 342 absent (no progress; goal streak 8) |
 | G156 | 510 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 550 and 527 not size-linked (no progress; goal streak 9) |
+| G157 | 511 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | heading variants 817 and 861 not size-linked (no progress; goal streak 10) |

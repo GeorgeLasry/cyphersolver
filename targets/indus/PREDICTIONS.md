@@ -14295,3 +14295,7 @@ Both failed: 550 odds ratio 0.94 (p = 0.99); 527 0.86 (p = 0.92). Progress: none
 - **S861** They differ in carrying 861 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-eleventh set (`predict_test511.py`, `results/predict_test511.md`)
+
+Both failed: 817 odds ratio 0.99 (p = 0.95); 861 1.21 (p = 0.44). Progress: none (goal streak 10). Tally, counting
+parts: 1669 held, 1737 failed (3411 registered).
