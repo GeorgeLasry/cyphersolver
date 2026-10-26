@@ -12770,3 +12770,12 @@ ending is the Harappa tablet formula (set 216), so lines with 400 stand for tabl
 - **MB2** M77 lines with 400 are local (p < 0.05).
 - Progress rule: MB1 holds.
 
+## Results of the four-hundred-and-tenth set (`predict_test410.py`, `results/predict_test410.md`)
+
+MB1 held, MB2 failed. M77 lines without 400 are local body-weighted (mean same-city share 0.766 over 45 bodies,
+p = 0.001); lines with 400 have only 10 shared bodies (all same-city, p = 0.08). So the M77 locality is not a tablet
+effect. It conflicts with set 408 (ICIT seals, body-weighted: 0.506 over 84 bodies, p = 0.25). Possible reasons: 'no
+400' is a rough proxy for seals (many tablets lack 400); Mahadevan's sample of absent-from-ICIT objects is mostly
+Mohenjo-daro, Harappa and Lothal (fewer small sites), and its site labels may be coarser. The question 'are seal names
+local?' stays open with evidence both ways; counted as progress under the rule, with this conflict stated. Progress
+(goal streak 0). Tally, counting parts: 1622 held, 1587 failed (3211 registered).
