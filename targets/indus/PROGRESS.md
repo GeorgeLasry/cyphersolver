@@ -320,3 +320,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G64 | 418 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Mohenjo-daro quarters: no sign skews, no model gain (no progress; goal streak 8) |
 | G65 | 419 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Gujarat vs Sindh square seals: no difference; seal texts uniform across regions (no progress; goal streak 9) |
 | G66 | 420 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | copper vs other tablets: 2-3 skewed signs, too few to test (no progress; goal streak 10) |
+| G67 | 421 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opening/final signs by object kind: 2 of 4, 3 of 3 (known formula, too few) (no progress; goal streak 11) |

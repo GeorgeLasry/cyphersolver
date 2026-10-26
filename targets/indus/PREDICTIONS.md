@@ -12944,3 +12944,8 @@ p < 0.01 (10+ lines), C-test 3+, 75%+ same way, binomial p < 0.05 (`predict_test
 - **OP2** Final signs.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-twenty-first set (`predict_test421.py`, `results/predict_test421.md`)
+
+Both failed. Opening signs skewed on C-train: seals 31, 817, 820; tablets 220, 798; 2 of 4 lean the same way on C-test.
+Final signs: seals 520, 740; tablets 400, 700; 3 of 3 (p = 0.125, too few): the known tablet formula (740 400, the pot
+700 counted). Progress: none (goal streak 11). Tally, counting parts: 1622 held, 1610 failed (3234 registered).
