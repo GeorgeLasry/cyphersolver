@@ -15220,3 +15220,12 @@ Held: none. afterend: [np.False_, np.False_]. Progress: none (session-2 goal str
 ## Results of set 575 (`hyp_s2_q_openers.py`, `results/predict_test575.md`)
 
 Held: Q2. openers: [False, True]. Progress: none (session-2 goal streak 13).
+
+
+# Set 576, registered before testing (26 October 2026): session-2 goal loop 41, signs that never take an ending (two hypotheses)
+
+(`hyp_s2_q.py`, VARIANT=noend)
+
+- **Q1** On A: signs with 15+ A tokens never before an ending stay under 5% before an ending on B for 90%+ of those with 5+ B tokens (p < 0.05 where a test applies).
+- **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
+- Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
