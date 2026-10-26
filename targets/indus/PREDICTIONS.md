@@ -12531,3 +12531,9 @@ being a single sign); the margin is real minus shuffled, so a rule that parses s
 - **GD2** A 'divider' role for mid-line 60 (not beside numerals; 1 and 2 are numerals already) raises R.
 - Progress rule: GD1 holds.
 
+## Results of the three-hundred-and-ninety-sixth set (`predict_test396.py`, `results/predict_test396.md`)
+
+GD1 failed, GD2 held. The divider-split rule lowers the G margin (A 49.6 -> 48.2, B 37.4 -> 36.8): cutting at 2 / 1 / 60
+lets shuffled lines parse too. The 'divider' role for mid-line 60 adds 34 tokens (R 86.27% -> 86.55%), too small to
+adopt under the progress rule (GD1). Progress: none (goal streak 1). Tally, counting parts: 1618 held, 1564 failed
+(3182 registered).
