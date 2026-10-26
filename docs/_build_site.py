@@ -3181,6 +3181,28 @@ def bnx_panels(s):
     bounds = starts + [end]
     return s[:starts[0]] + ''.join(dress(s[bounds[i]:bounds[i + 1]]) for i in range(len(starts))) + s[end:]
 
+def catintro_html():
+    """The catalogue section's opening paragraph, counted from catalogue.json so it never goes stale."""
+    import _catalogue_page as C
+    from collections import Counter
+    es = json.loads((HERE.parent / 'catalogue.json').read_text(encoding='utf-8'))['entries']
+    op = [e for e in es if e['counted'] and C.is_open(e)]
+    ys = [e['year'] for e in op if isinstance(e.get('year'), int)]
+    src = Counter()
+    for e in op:
+        t = e['source']
+        src['DECODE' if t.startswith('DECODE') else 'Cryptoole' if t.startswith('Cryptoole') else 'the BnF catalogue on Gallica' if t.startswith('BnF')
+            else 'calendars and printed editions' if t.startswith(('Calendars', 'Printed', 'cryptiana')) else "contributors' reports" if 'issue' in t
+            else 'the archive sweeps'] += 1
+    parts = [f'{k} ({v})' for k, v in src.most_common()]
+    lst = ', '.join(parts[:-1]) + ' and ' + parts[-1] if len(parts) > 1 else ''.join(parts)
+    seen = sum(1 for e in op if 'image' in str(e.get('seen')) or e.get('seen') == 'viewed')
+    return (f'<!-- catintro:start -->\n<p>The open work comes from the <a href="catalogue.html">catalogue</a>: {len(op)} undeciphered letters and series '
+            f'from {min(ys)} to {max(ys)}, found in {lst}. Each carries its shelfmark, the prior art checked, a difficulty class and the '
+            f'check that would confirm it is genuinely open; {seen} of them have been looked at on the image. A target leaves the catalogue when it '
+            f'is read, resolved or found in print, and its write-up joins the list above.</p>\n<!-- catintro:end -->')
+
+
 def cattop_html(n=6):
     """The highest-priority open entries of the Unsolved Catalogue, for the index."""
     import _catalogue_page as C
@@ -3241,7 +3263,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
     rest = items[n:]
     if rest:
         head += ('\n<div class="more" hidden><ul class="findings">\n' + '\n'.join(rest) + '\n</ul></div>\n'
-                 f'<button class="showmore" type="button" data-target="findings">Show {len(rest)} earlier finding{"s" if len(rest) != 1 else ""}</button>')
+                 f'<button class="showmore" type="button" data-target="findings" data-step="20">Show {len(rest)} earlier finding{"s" if len(rest) != 1 else ""}</button>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
@@ -3414,12 +3436,13 @@ def process(path):
         REST_VISIBLE = 10       # "And the rest" shows this many rows; the others fold behind the button
         shown, folded = rest[:REST_VISIBLE], rest[REST_VISIBLE:]
         more = (f'<div class="more" hidden><ul class="list">\n' + ''.join(row(p) for p in folded) + '</ul></div>\n'
-                f'<button class="showmore" type="button">Show {len(folded)} more write-ups</button>\n') if folded else ''
+                f'<button class="showmore" type="button" data-step="24">Show {len(folded)} more write-ups</button>\n') if folded else ''
         cards = ('<!-- cards:start -->\n<div class="cards">\n' + ''.join(card_html(p) for p in feat) + '</div>\n'
                  '<h3 class="listhead">And the rest</h3>\n<ul class="list">\n' + ''.join(row(p) for p in shown) + '</ul>\n' + more +
                  f'<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups, filterable by outcome and period, '
                  f'with the results that are still only in the notes &rarr;</a></p>\n<!-- cards:end -->')
         s = bnx_panels(s)
+        s = re.sub(r'<!-- catintro:start -->.*?<!-- catintro:end -->', lambda m: catintro_html(), s, flags=re.S)
         s = re.sub(r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?', '', s, flags=re.S)
         s = re.sub(r'(<h2 id="catalogue">.*?)(\n<p><a class="more" href="catalogue\.html")', lambda m: m.group(1) + '\n' + cattop_html().rstrip('\n') + m.group(2), s, count=1, flags=re.S)
         if '<!-- cards:start -->' in s:

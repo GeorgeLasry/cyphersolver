@@ -45,7 +45,17 @@ function renderTiles(el, items){
   }
 }
 // 'show more' blocks on the home page
-document.querySelectorAll('.showmore').forEach(b=>b.addEventListener('click',()=>{ const box=b.previousElementSibling; const open=box.hasAttribute('hidden'); if(open) box.removeAttribute('hidden'); else box.setAttribute('hidden',''); b.textContent = open ? 'Show fewer' : b.dataset.label || b.textContent; }));
+// .showmore reveals its hidden box; with data-step it reveals the box's <li> a batch at a time, then offers to fold them back
+document.querySelectorAll('.showmore').forEach(b=>b.addEventListener('click',()=>{
+  const box=b.previousElementSibling, step=+b.dataset.step||0;
+  if(!step){ const open=box.hasAttribute('hidden'); if(open) box.removeAttribute('hidden'); else box.setAttribute('hidden',''); b.textContent = open ? 'Show fewer' : b.dataset.label || b.textContent; return; }
+  const items=[...box.querySelectorAll('li')], shown=items.filter(li=>!li.hidden).length;
+  if(!box.hasAttribute('hidden') && shown>=items.length){ box.setAttribute('hidden',''); items.forEach(li=>li.hidden=false); b.textContent=b.dataset.label; b.scrollIntoView({block:'center'}); return; }
+  const first=box.hasAttribute('hidden'); if(first){ items.forEach(li=>li.hidden=true); box.removeAttribute('hidden'); }
+  const upto=(first?0:shown)+step; items.forEach((li,i)=>{ if(i<upto) li.hidden=false; });
+  const left=items.length-Math.min(upto,items.length);
+  b.textContent = left ? `Show ${Math.min(step,left)} more (${left} left)` : 'Show fewer';
+}));
 document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent);
 // big-news rotation: one panel at a time; turns by itself (every 9 s) only after the reader presses play; pauses on hover, focus, hidden tab
 (function(){
