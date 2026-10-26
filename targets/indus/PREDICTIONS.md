@@ -16124,3 +16124,19 @@ numeral series; the Harappa small-number units are mostly on tablets (the fish c
 tablets, uncounted 700 mostly on tablets and pottery) (U1); following signs cosine 0.467 (p = 0.16) (U2). Set 593's
 shared (previous, next) contexts are not matched by a shared distribution over objects or followers: 892 is not shown
 to be a form of 700. Observation before registering: 892 almost never follows a numeral (4 of 62). Progress: none.
+
+# Set 637, registered before testing (26 October 2026): graffiti chronology within sites (two hypotheses)
+
+The tngraffiti.in filter, queried site by site, gives counts of each graffiti sign at each recorded depth (cm). Sites
+with 100+ graffiti with a recorded depth (12 sites: Thulukkarpatti, Keeladi, Kodumanal, Perumbalai, Adichanallur,
+Pattaraiperumbudur, Korkai, Alagankulam, Vallanadu-Agaram, Teriruveli, Mangudi, Karur; counts looked at, depths by sign
+class not). Depth is ranked within each site (mid-rank percentile), so datums and units do not matter. A graffito
+'has an Indus parallel' if its base sign has one in the corpus's map (Mahadevan number given; 31 of 42 bases);
+composites = ligatured graffiti (ids with 'C') (`predict_test637.py`). Deeper within a site = earlier, with the caveat
+that trenches differ.
+
+- **CH1** Graffiti whose base sign has an Indus parallel lie deeper than those without (pooled Mann-Whitney one-sided
+  p < 0.05, and deeper on average in a majority of the sites).
+- **CH2** Composite graffiti lie at a different depth from single signs (two-sided p < 0.05); the direction is reported.
+- Progress rule: CH1 (the Indus-like signs are the earlier ones, as a continuity account predicts).
+
