@@ -125,7 +125,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "Contemporary decipherments in the file itself; some letters printed in Colenbrander, Gedenkstukken II (1906)",
+   "where": "Contemporary decipherments in the file itself (1795-96); R2236 Copie No. 1 not printed in Colenbrander, Gedenkstukken II (searched in full text)",
    "found": "before attempt",
    "used": true
   },
@@ -232,6 +232,21 @@
    ],
    "what": "Capacity test on pp. 243/249/261: 50 of 52 lines have more faint-text letters than the groups can yield (bare entries counted as 10 letters); clear words in the number lines absent from the faint text; faint text runs past the numbers. The faint text is a separate sympathetic-ink letter and the numbers a cover; no 1797 list can be rebuilt from these pages.",
    "result": "worked",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "literature search",
+   "what": "Downloaded the full text of Colenbrander, Gedenkstukken II (1,166 pages, Huygens retroboeken) and searched for the clear Dutch frame of R2236 Copie No. 1: not printed.",
+   "result": "failed",
+   "date": "2026-10-25"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Copie No. 1 statistics: 317 tokens, 154 types, 94 singletons, small numbers 35% of tokens, ten repeated 3-6 number sequences; stretches between clear words carry several words, so a word/syllable code of about 400 entries, not alphabetical one-part. Judged too short for a ciphertext-only solution; not pursued.",
+   "result": "failed",
    "date": "2026-10-25"
   }
  ],

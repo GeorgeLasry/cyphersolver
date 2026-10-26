@@ -97,9 +97,26 @@ brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between
   geschieden"). Repeats: 215 2 6 (twice), 390 217 8 5 2 (twice), 149 332 61, 55 319 250, 223 65 226, 220 43 19 8,
   42 9 7 62 147 300.
 
+## R2236 Copie No. 1: print search and ciphertext-only assessment (25 Oct)
+
+- **Print.** All 1,166 pages of Colenbrander, *Gedenkstukken* II (1795-1798) were downloaded as text from the Huygens
+  retroboeken service (`pages.json?source=2` gives each page's `html_url`; kept in `gs2/`, git-ignored) and searched
+  for the clear frame: "losse gronden", "stellig aan", "deze mogenheid", "hoegenaamd geen" have no hit; "een van
+  beiden", "eenigste middel", "kunnen geschieden", "bestendig" hit only unrelated pages (p. 913 is an anonymous
+  memorandum). The letter is not printed there.
+- **Code.** 317 numbers, 154 types, 94 singletons, 32 types seen 3+ times; numbers 1-19 are 35% of tokens and
+  follow a big number 77 times out of 112. Ten repeated sequences of 3-6 numbers ("155 7 204 3 9 7",
+  "42 9 7 62 147 300", "390 217 8 5 2", "209 371 12 76", "220 43 19 8", "55 319 250", "149 332 61", "105 223 323",
+  "313 35 17", "249 198 382"). Between clear words a cipher stretch of about ten numbers stands for a clause of
+  several words ("zoo deze mogenheid [10] zou het gevolg"), so the unit is a word or syllable, not a letter; the
+  small numbers behave like frequent short words or endings placed at the head of the list, so the list is not
+  one-part alphabetical. A word/syllable code of about 400 entries seen 317 times, two-thirds of its types once:
+  too little for a ciphertext-only solution. Not attempted further; blocker: no key material and too short.
+
 ## Remaining gaps
 
-- R2236 Copie No. 1: not read; its own Dutch code, no key or decipherment in the file. Not attempted ciphertext-only yet.
+- R2236 Copie No. 1: not read; its own Dutch word/syllable code; no key, no decipherment in A32-630, not in
+  Colenbrander GS II; too short for ciphertext-only (317 tokens, 154 types). Blocker: no key material, too short.
 - R2236 Copie No. 2 and scan 89: not transcribed; in the 1797 number system, which has no aligned plaintext
   anywhere in the file (the 1797 faint texts are separate ink letters). Blocker: no key material. Copie No. 2 has no
   clear words and no faint text, unlike the cover letters, so it may be genuine cipher; the 23 Mar 1797 letter
@@ -111,12 +128,14 @@ brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between
 1. Done: 1797 pages transcribed and the faint text shown to be separate ink letters; no 1797 list from them.
    Remaining lead for Copie No. 2: transcribe scan 266 (23 Mar 1797) and align it loosely with the precis 274-275
    for names (Callitschef, Elgin, Peterbourg, Bale, Deux-Ponts, Brandebourg).
-2. Copie No. 1: ciphertext-only attack as a one-part/two-part Dutch word code with the clear frame as crib
-   (nl-1600), and search Colenbrander Gedenkstukken II for a Dutch letter of March 1797 on these lines.
+2. Done: Copie No. 1 searched in Colenbrander GS II (not printed) and assessed ciphertext-only (too short). A key
+   could be in KHA A31 (Willem V) or A35 (Willem I) cipher papers; the Hereditary Prince's Dutch code of 1797 is not
+   in the KHA search results so far.
 3. Re-read low-agreement 1795-96 entries at full size where a group recurs.
 
 ## Log
 
 - 25 Oct 2026: target opened; 387 scans fetched; page index; R2236 found in the file; 65 interlined 1795-96 pages
   transcribed; list rebuilt by vote (key_euler.tsv). Later: 1797 pages transcribed; old list does not apply;
-  R2236 Copie No. 1 transcribed, a separate Dutch code; Copie No. 2 in the 1797 system.
+  R2236 Copie No. 1 transcribed, a separate Dutch code; Copie No. 2 in the 1797 system. 1797 faint texts
+  shown to be sympathetic ink. Copie No. 1 not in GS II; too short for CT-only; DECODE R2236 queued.
