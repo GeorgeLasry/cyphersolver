@@ -386,3 +386,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G130 | 484 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | within the formula 706 seals are larger than 705 seals (p = 0.0015): length caveat answered (consistency; no progress; goal streak 15) |
 | G131 | 485 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tree/plant and man families not size-linked (no progress; goal streak 16) |
 | G132 | 486 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | U family leans large (p = 0.050, the formula); marked jars not size-linked (no progress; goal streak 17) |
+| G133 | 487 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numeral + 520 leans large (the formula); post-ending 90 not size-linked (no progress; goal streak 18) |

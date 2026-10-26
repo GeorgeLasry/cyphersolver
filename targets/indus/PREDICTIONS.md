@@ -13953,3 +13953,7 @@ Progress: none (goal streak 17). Tally, counting parts: 1656 held, 1700 failed (
 - **NE2** They differ in carrying 90 directly after an ending (two-sided p < 0.05).
 - Progress rule: NE2 holds.
 
+## Results of the four-hundred-and-eighty-seventh set (`predict_test487.py`, `results/predict_test487.md`)
+
+Both failed. Numeral + 520: odds ratio 2.26 (p = 0.060; mostly the formula's 33 520); post-ending 90: 0.87 (p = 0.79).
+Progress: none (goal streak 18). Tally, counting parts: 1656 held, 1702 failed (3363 registered).
