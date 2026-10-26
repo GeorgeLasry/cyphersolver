@@ -15121,3 +15121,7 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=order). Large / small = set 
 - **U1** On A: in lines with both, the small unit precedes the large one (binomial against 50%) (p < 0.05).
 - **U2** The same on B (p < 0.05).
 - Progress rule: U1 and U2.
+
+## Results of set 568 (`hyp_s2_unit_order.py`, `results/predict_test568.md`)
+
+Held: none. A small first in 7 of 12 lines; B small first in 1 of 2 lines. Progress: none (session-2 goal streak 6).
