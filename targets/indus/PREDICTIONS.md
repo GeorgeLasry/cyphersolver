@@ -13261,3 +13261,9 @@ length band x site (`predict_test441.py`).
 - **CF2** On seals without the formula, the stroked U (705 / 706) still goes with large seals (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-first set (`predict_test441.py`, `results/predict_test441.md`)
+
+CF1 held, CF2 failed. With length band x site strata, large square seals carry the closing formula (705 / 706 + 33)
+2.41 times as often (p = 0.019); outside the formula the stroked U is not tied to size (1.29, p = 0.59). **The size
+link of the stroked U (sets 430, 433, 440) is the closing formula '705 / 706 33 520'**: large seals end in it. Progress
+(goal streak 0). Tally, counting parts: 1636 held, 1633 failed (3273 registered).
