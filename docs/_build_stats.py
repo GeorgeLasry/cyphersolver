@@ -12,7 +12,7 @@ Categories are the README's own sections, one per outcome method (docs/_methods.
 Every number on the page is derived here, nothing is typed in. The Extent column (complete / partial) is counted too.
 Overrides: rows whose target text matches OVERRIDE are moved (none at present).
 """
-import re, pathlib, html, datetime
+import json, re, pathlib, html, datetime
 
 HERE = pathlib.Path(__file__).parent
 README = HERE.parent / 'README.md'
@@ -151,13 +151,13 @@ def timeline_svg(items):
         out.append(f'<text x="{x:.1f}" y="{base+18}" class="tick" text-anchor="middle">{c}</text>')
     out.append(f'<g class="cursor" aria-hidden="true"><line class="cur-line" x1="0" x2="0" y1="{top-2}" y2="{base}"/>'
                f'<rect class="cur-box" x="-19" y="{base+5}" width="38" height="17" rx="4"/><text class="cur-yr" x="0" y="{base+17.5}" text-anchor="middle"></text></g>')
+    tip_data = []   # tooltip text, loaded by site.js from timeline.json so the page does not carry it per dot
     for n, (it, x, h) in enumerate(placed):
         y = round(base - 9 - h, 1)
         e = lambda v: html.escape(v, quote=True)
         title = e(f"{it['name']} ({it['date']}): {LABEL[it['cat']]}")
-        attrs = (f' data-name="{e(it["name"])}" data-date="{e(it["date"])}" data-year="{it["year"]}" data-cat="{it["cat"]}"'
-                 f' data-label="{e(LABEL[it["cat"]])}" data-note="{e(it["note"])}" data-notehead="{e(it["notehead"])}"'
-                 f' data-when="{e(it["when"])}" data-whenhead="{e(it["whenhead"])}"')
+        attrs = f' data-i="{n}" data-year="{it["year"]}" data-cat="{it["cat"]}"'
+        tip_data.append({'name': it['name'][:130], 'date': it['date'], 'note': it['note'][:230], 'notehead': it['notehead'], 'when': it['when'], 'whenhead': it['whenhead'], 'label': LABEL[it['cat']]})
         dot = (f'<circle class="halo" cx="{x:.1f}" cy="{y}" r="{r+2.5}" fill="{COLOR[it["cat"]]}" filter="url(#tlglow)"/>'
                f'<circle class="core" cx="{x:.1f}" cy="{y}" r="{r}" fill="{COLOR[it["cat"]]}"/>')
         style = f' style="--i:{n};--dy:{base - y}px"'
@@ -165,6 +165,7 @@ def timeline_svg(items):
             out.append(f'<a class="pt {it["cat"]}" href="{it["href"]}" aria-label="{title}"{attrs}{style}>{dot}</a>')
         else:
             out.append(f'<g class="pt {it["cat"]}" tabindex="0" aria-label="{title}"{attrs}{style}>{dot}</g>')
+    (pathlib.Path(__file__).parent / 'timeline.json').write_text(json.dumps(tip_data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     out.append('</svg><div class="tltip" role="tooltip" hidden></div></div>')
     return '\n'.join(out)
 

@@ -94,7 +94,7 @@ img{max-width:100%}
 .hero{max-width:var(--maxw);margin:0 auto;padding:3.8rem 1.2rem 1.6rem;position:relative}
 .hero .kicker{font-family:var(--ui);font-size:0.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 0 .9rem}
 .hero h1{font-family:var(--display);font-weight:500;font-variation-settings:"opsz" 144;font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.1;margin:0 0 .9rem;letter-spacing:-.01em;color:var(--head)}
-.hero .sub{color:var(--ink2);font-style:italic;margin:.25rem 0;font-size:1rem;max-width:72ch}
+.hero .sub{color:var(--ink2);margin:.25rem 0;font-size:1rem;max-width:72ch}
 .hero .sub.small{font-size:0.9rem;margin-top:.5rem}
 .hero .meta{color:var(--muted);font-size:0.9rem;margin-top:1rem;font-family:var(--ui)}
 .hero .meta time{color:var(--ink2)}
@@ -1420,3 +1420,11 @@ body.pg-catalogue table.gone{border-collapse:collapse;font-size:.9rem;width:100%
 body.pg-catalogue table.gone td,body.pg-catalogue table.gone th{border-bottom:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
 body.pg-catalogue #hashnote{background:var(--amber-bg);border:1px solid var(--amber);border-radius:var(--radius);padding:.6rem 1rem;margin:1rem 0}
 @media (max-width:700px){body.pg-catalogue .state .cols{grid-template-columns:1fr}}
+
+/* ---------------------------------------------------------------- calm hero (phase 3): static wordmark, no live cipher strip */
+.hero h1.wordmark{font-size:clamp(2rem,6.5vw,3.8rem);padding-bottom:0;letter-spacing:.04em}
+.wm{animation:none;filter:none}
+.wm::before,.wm .l::after,.wm .l.enc::before,.wm .caret{display:none}
+.wm .l,.wm .l.enc{background:none;color:var(--gold);-webkit-text-fill-color:currentColor;animation:none;filter:none;transform:none}
+.hero .cipherstrip,.hero:has(.wordmark) .cipherstrip{display:none}
+.hero h1.wordmark .wm .l{color:var(--gold);-webkit-text-fill-color:var(--gold);background:none;filter:none;text-shadow:none}

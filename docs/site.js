@@ -272,9 +272,12 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
   }
   const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const clip=(s,n)=>s.length>n? s.slice(0,s.lastIndexOf(' ',n)).replace(/[;,.:]$/,'')+'…' : s;
-  let pinned=null, hot=null;
+  let pinned=null, hot=null, TL=[];
+  let asked=false;
+  const load=()=>{ if(asked) return; asked=true; fetch('timeline.json').then(r=>r.json()).then(t=>{ TL=t; if(hot) show(hot); }).catch(()=>{}); };
+  svg.addEventListener('pointerover',load,{once:true}); svg.addEventListener('focusin',load,{once:true}); svg.addEventListener('touchstart',load,{once:true,passive:true});
   function show(p){
-    const d=p.dataset, col=getComputedStyle(p.querySelector('.core')).fill;
+    const d=Object.assign({},p.dataset,TL[p.dataset.i]||{label:'',name:'',date:''}), col=getComputedStyle(p.querySelector('.core')).fill;
     tip.style.setProperty('--c',col);
     const link=p.tagName.toLowerCase()==='a';
     tip.innerHTML=`<div class="tt-in"><span class="tt-yr">${esc(String(d.year))}</span>`+
