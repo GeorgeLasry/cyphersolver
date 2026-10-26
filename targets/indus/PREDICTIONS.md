@@ -12305,3 +12305,9 @@ with like (`predict_test385.py`).
 - **PE2** The heading (817 / 820 / 861 first) changes in frequency between early and late (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-fifth set (`predict_test385.py`, `results/predict_test385.md`)
+
+Both failed. 689 lines with a period: like for like (length x subtype), late texts close with 740 / 520 about as often
+as early ones (odds ratio 0.80, p = 0.58) and use the heading as often (1.13, p = 0.92). The Harappa formula did not
+change over Periods 2-5 once object kind is held, as set 228 found for the grammar. Progress: none (goal streak 1).
+Tally, counting parts: 1607 held, 1553 failed (3160 registered).
