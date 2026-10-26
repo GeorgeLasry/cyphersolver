@@ -13678,3 +13678,7 @@ length band x site (`predict_test468.py`).
 - **NV2** Large and small seals differ in using the long-stroke series (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-sixty-eighth set (`predict_test468.py`, `results/predict_test468.md`)
+
+Both failed: high numerals odds ratio 0.83 (p = 0.49), long strokes 0.86 (p = 0.42). Numbers on seals do not vary with
+seal size. Progress: none (goal streak 9). Tally, counting parts: 1650 held, 1672 failed (3326 registered).
