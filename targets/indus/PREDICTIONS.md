@@ -12919,3 +12919,13 @@ names and headings, not single signs (`predict_test419.py`).
 Both failed. No sign skewed between Gujarat and Sindh square seals (172 / 2,443 tokens on C-train); endings alike
 (odds ratio 0.75, p = 0.40). With set 371, square-seal texts are uniform across Sindh, the north and Gujarat. Progress:
 none (goal streak 9). Tally, counting parts: 1622 held, 1606 failed (3230 registered).
+
+# Four-hundred-and-twentieth set, registered before testing (26 October 2026): goal loop 66, copper tablets against other tablets (two hypotheses)
+
+Set 371's skew test on split C (`predict_test420.py`). Earlier sets compared copper labels' endings (LB5, X2), not single
+signs against the other tablet kinds.
+
+- **CI1** Copper (TAB:C) against incised (TAB:I) tablets.
+- **CI2** Copper against moulded (TAB:B) tablets.
+- Progress rule: either holds.
+
