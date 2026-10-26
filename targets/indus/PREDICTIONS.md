@@ -14855,3 +14855,10 @@ that follows other line-initial signs of matched frequency (`hyp_s2_afteropen.py
 ## Results of set 549 (`hyp_s2_afteropen.py`, `results/predict_test549.md`)
 
 Held: AO1, AO2. A True, B True; the heading unit (sets 230-279) covers it: consistency. Progress: none (session-2 goal streak 4).
+
+## Correction to set 545 (after the set 548 audit)
+
+Set 548 found that 22 of set 545's 30 long-distance pairs have one dominant middle string: they are repeated phrases
+(a fixed a-x-b sequence recurring), not frames with an open slot; only 8 have open middles (5 of 5 testable replicate,
+too few for a finding). Set 545's progress is withdrawn: the session-2 streak runs through it unbroken, so after set 549
+it is 14, not 4.
