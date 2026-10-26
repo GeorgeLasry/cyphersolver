@@ -178,6 +178,26 @@
    "kind": "access",
    "what": "Target folder opened from the issue material (transcription, margin, name groups, legend). Gallica search for fr. 17020 blocked by the bot check.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "Brackx read the f. 326r gloss as 'de monsieur de [?Sury]'; the partial key aligns with it at 8.1, above all 300 random French passages (median -7.1, best 5.1) and above 'Bury': X M Z = s i e, A@ 6^ OM = s u r. Margin re-read at 7654 px (debuoir; collonnes?); f. 353 not a crib; fr. 17020 probably not digitised.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "control",
+   "technique": [
+    "EM alignment",
+    "statistical test"
+   ],
+   "what": "realign.py: f. 325r block (231 tokens) aligned with the margin (263 letters), anchored on both name groups (15 signs), extended by iteration. Score 37.0 (65 anchored tokens on their letter, 7 on another); 50 random fr-henri4 passages: median 33.5, best 70.0; margin beats 27 of 50. The opening runs as '...stes en Suisses' but the alignment does not separate the margin from random French.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -196,13 +216,13 @@
   "gaps": [
    {
     "item": "Colbert 427 f. 325r block not aligned with its margin decipherment",
-    "blocker": "not-attempted",
-    "detail": "needs a second crib (the f. 326r name group, fr. 17020 ff. 134-139, Colbert 427 f. 353) and the margin re-read at 7654 px"
+    "blocker": "no-key-material",
+    "detail": "anchored realignment with both name groups' values does not separate the margin from random French passages (realign.py, 27 of 50); needs a deciphered sibling with a literal decipherment"
    },
    {
-    "item": "f. 326r name group, gloss 'de monsieur de [?]'",
+    "item": "f. 326r name group, 'de monsieur de [?Sury]'",
     "blocker": "illegible",
-    "detail": "second line of the gloss unread even at 7654 px"
+    "detail": "the name reads Sury at full resolution with raised contrast (Brackx), doubtful; it agrees with the key"
    },
    {
     "item": "fr. 16026 f. 99 and pp. 130-130bis, and the deciphered siblings f. 120, f. 126, p. 129",

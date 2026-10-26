@@ -63,21 +63,45 @@ French embassy cipher of the 1580s.
    score far lower. The key fits French, but one 17-letter group cannot pin the alignment.
 4. **Re-read at 7654 px** (Brackx): about ten signs corrected, the important one both `=` in l. 5 read as `C`.
 
+## 26 Oct 2026: the second crib and a realignment
+
+**The f. 326r gloss (Brackx, issue #82 comment of 25 Oct 2026).** Read at full resolution with raised contrast:
+*de monsieur de / [?Sury]*. Against the name group (`4 C < /// T 9 X M Z 10 ∴ o V A@ 6^ OM C & SQ`) the partial key
+aligns at 8.1, above all 300 random French passages of the same length (median -7.1, best 5.1) and above *Bury*
+(5.1): `X M Z` = *s i e* in *monsieur*, `A@ 6^ OM` = *s u r* in *Sury*; only `9` (r) goes unused. A second crib, short,
+that agrees with the key; it adds `6^` = *u*. *Sury* fits the von Sury of Solothurn, captains and colonels in French
+service (an *Aman Sury* is named in clear on f. 328r among the King's good officers), but the context (a Lucerne
+man, servant of the person named) would also suit Pfyffer; *Sury* stays doubtful.
+- f. 325r margin re-read at 7654 px: *debuoir*, and the last line *estoient les … de ce party*, the word ending in a
+  loop: *collonnes* ("pillars") fits the plural better than *collonnel*; doubtful.
+- Colbert 427 f. 353 (canvas 372) is the clear end of the letter of 26 June 1585; it mentions a *Grand Colonel* but
+  does not restate the April passage: not a crib. fr. 17020 is probably not digitised (Europeana; Gallica blocked).
+
+**Realignment here (`realign.py`, output `realign_out.txt`).** The block (231 tokens without nulls) aligned with the
+margin (263 letters), anchored on both groups' values (15 signs), each sign allowed one letter, two letters or none,
+margin letters skippable, then extended by iteration (an unanchored sign takes the letter it falls on at least twice
+and 60% of the time). Result: score 37.0, anchored tokens on their letter 65, on another 7, two signs added (`2` t,
+`10` e). **Control:** the same procedure on 50 random passages of the same length from the fr-henri4 corpus: median
+33.5, best 70.0; the margin beats 27 of 50. The alignment does not tell the margin from any French text: the anchored
+values are common letters (e, s, i, r, u) that fall into place in any French. The opening does run as *…stes en
+Suisses* (`SQ 2 P+ TRI C 9 U M P+ A@ X` = s t e s e n-s u i s s), but over the whole block the gloss is evidently not
+a letter-for-letter decipherment, or the block has codes and nulls the model does not have. Negative.
+
 ## Remaining gaps
 
-- The f. 325r block: not aligned with its margin - blocker: not-attempted; a second crib is needed to fix the alignment, and the margin itself was read only at 2000 px (re-read at 7654 px is work in hand)
-- f. 326r name group, glossed *de monsieur de [?]* - blocker: illegible; the gloss's second line does not read even at 7654 px (S... or B...)
+- The f. 325r block: not aligned with its margin - blocker: no-key-material; the anchored realignment with both name groups does not separate the margin from random French (27 of 50 controls); the margin re-read at 7654 px adds nothing decisive. Needs a deciphered sibling with a literal decipherment (fr. 16026 f. 120, f. 126, p. 129)
+- f. 326r name group: *de monsieur de [?Sury]* (Brackx, 25 Oct 2026), agreeing with the key; the name stays doubtful - blocker: illegible; one faint line
 - fr. 16026 f. 99 and pp. 130-130bis (the targets) and the deciphered siblings f. 120, f. 126, p. 129 - blocker: needs-physical-access; not digitised, consultation by authorisation
-- fr. 17020 ff. 134-139 (contemporary summary of fr. 16026) and Colbert 427 f. 353 (*Examen de la depesche*) - blocker: not-attempted; possible cribs for the 1585 letters
+- fr. 17020 ff. 134-139 (contemporary summary of fr. 16026) - blocker: needs-physical-access; probably not digitised (Brackx, Europeana search); Colbert 427 f. 353 checked, not a crib
 
 ## Escalation
 
 - [x] siblings: Colbert 427 scanned from view 290 to the end; f. 325r and the two name groups are the only ciphers; fr. 3376 has no cipher note (Brackx)
-- [ ] clear-pages: Colbert 427 f. 353 and fr. 17020 ff. 134-139 not yet read
+- [x] clear-pages: Colbert 427 f. 353 read (not a crib, Brackx 25 Oct); fr. 17020 ff. 134-139 not digitised
 - [ ] known-keys: no Henri III embassy key compared yet (BnF fr. 15913 Bellièvre keys, catalogue 363; Lasry's keys of the 1580s)
 - [x] print: Rott 1882 is the inventory only; no edition of the ciphers known; not on DECODE or Cryptoole (Brackx, 22 Oct 2026)
-- [ ] key-rebuild: partial key from one 17-letter group; gapped alignment inconclusive without a second crib
-- [ ] retry: after a second crib
+- [x] key-rebuild: second crib (f. 326r, *Sury*) agrees with the partial key; anchored realignment with iteration run here (26 Oct 2026), not separable from random French
+- [x] retry: realignment with both groups' values (realign.py), negative
 
 ## Log
 
@@ -87,3 +111,5 @@ French embassy cipher of the 1580s.
 - 22 Oct 2026: Brackx re-read f. 325r at 7654 px and ran the gapped alignment with controls (p ≈ 0.06); fr. 16026
   access conditions and the fr. 17020 summary found.
 - 23 Oct 2026: target folder opened from the issue material.
+- 25 Oct 2026: Brackx reads the f. 326r gloss *de monsieur de [?Sury]* (aligns at 8.1 vs best random 5.1); margin re-read; f. 353 not a crib.
+- 26 Oct 2026: anchored realignment here, negative (27 of 50 controls).
