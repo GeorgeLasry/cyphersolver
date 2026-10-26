@@ -15298,3 +15298,12 @@ Held: R1, R2. A 5 of 945 initial; B 6 of 353 initial. Progress: none (session-2 
 ## Results of set 581 (`hyp_s2_r_numinit.py`, `results/predict_test581.md`)
 
 Held: none. A 266/1494 vs 1650/7344; B 158/675 vs 1017/3837. Progress: none (session-2 goal streak 3).
+
+
+# Set 582, registered before testing (26 October 2026): session-2 goal loop 47, fish signs stand before 520 more than other heads do (consistency) (two hypotheses)
+
+(`hyp_s2_r.py`, VARIANT=fishend). Rare = 3 or fewer tokens in the sample.
+
+- **R1** On A: fish signs stand before 520 more than other heads do (consistency) (p < 0.05).
+- **R2** The same on B.
+- Progress rule: none (re-tests a known rule).
