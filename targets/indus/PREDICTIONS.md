@@ -11652,3 +11652,11 @@ TL1 downgrades the line; no progress either way. Not measured before registering
 - **TL2** Its held-out precision is at least 5%.
 - **TL3** Progress rule: none (validation; recorded as failing).
 
+## Results of the three-hundred-and-fifty-second set (added after the test; `predict_test352.py`, `results/predict_test352.md`)
+
+One held, two failed (TL3 by design). On five split-halves both ways, set 350's configuration matches 216 of 4,695
+held-out observations' pictures against a shuffle median of 92 (p = 0.005; TL1): the 5.06% line is confirmed as better
+than chance. Held-out precision is 4.6%, just under 5% (TL2 fails; set 349's configuration had 199 of 3,948, 5.0%): the
+learned-class units reach more held-out objects (+747 matches) but add only 17 right ones, about 2% precision for the
+new units. The line stands, with the caveat that its added units are the loosest yet. Progress: none (streak 2). Tally,
+counting parts: 1587 held, 1497 failed (3084 registered).

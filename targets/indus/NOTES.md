@@ -3204,6 +3204,12 @@ signs Parpola's list describes. No progress: streak 1 (set 350 run afterwards). 
 Registered 25 Sept, run 25 Oct after set 351. 19 units over 50 learned distributional classes join set 348's: 195 units,
 FDR 7.3%, Linear B passes; referent line 4.57% -> 5.06%. Progress (streak 0 at loop 175). Split-half check not yet run.
 
+## Three-hundred-and-sixty-sixth pass (25 Oct 2026): decipherment loop 177, split-half check of set 350
+
+Registered first (fa9bf4e6a). 216 of 4,695 held-out matches right against a shuffle median of 92 (p = 0.005): the 5.06%
+line is confirmed, but held-out precision falls to 4.6% (set 349: 5.0%); the 19 learned-class units are right about 2%
+of the time on held-out objects. No progress: streak 2. Tally 1587 held, 1497 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
@@ -3226,7 +3232,8 @@ is paused: its held-out precision is about twice chance and further threshold ch
 
 1. CISI vol. 2 (H-396, H-568, H-598, H-602; print only) and a sharper image of M-603/604 side A: outside blocker.
 2. The seven sign = image equations remain the firmest meaning anchors (749, 341, 753, the lens sign).
-3. Split-half check of set 350 (learned-class referent units, line 5.06%), as sets 340/349 did.
+3. Done: set 350's line (5.06%) confirmed on split-halves (set 352), held-out precision 4.6%. The referent line is
+   near its ceiling with this method; more groupings add reach, not accuracy.
 4. Readings of Parpola 1997 and 2003 not in the 1994 table.
 
 ## Prior work

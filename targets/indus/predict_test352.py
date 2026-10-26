@@ -10,7 +10,7 @@ from predict_test338 import collapse, objects_typed
 import predict_test304 as C
 import predict_test308
 from famlm import learned_classes
-from predict_test350 import LM, build, lc
+from predict_test350 import LM, build, lc as lclass
 from progress import data
 
 
@@ -19,7 +19,7 @@ def main():
     rd = R.Round('Three-hundred-and-fifty-second registered predictions: decipherment loop 177, split-half check of the set 350 configuration', 'predict_test352')
     LM.update(learned_classes(data()[0], 50, seed=0))
     C.LMAP.update(LM)
-    predict_test308.LEARNED = lc
+    predict_test308.LEARNED = lclass
     clean, both = objects_typed(F, recs)
     cc, cb = collapse(clean), collapse(both)
     S.ALPHA = 0.002
