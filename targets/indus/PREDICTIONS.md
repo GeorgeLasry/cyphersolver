@@ -12754,3 +12754,8 @@ ICIT field 16 (cross-section: rectangular, triangular, round, plano-convex); unt
 - **TS2** A section-shape domain model lowers S on the set 372 base, fixed split and split C (rule of set 358).
 - Progress rule: either holds. (Results: predict_test409.md, predict_test4090.md.)
 
+## Results of the four-hundred-and-ninth set (`predict_test409.py`, `results/predict_test409.md`, `predict_test4090.md`)
+
+Both failed. No sign is skewed between rectangular and other-section moulded tablets (308 / 215 tokens on C-train); the
+section-shape model gains 0.0014 (fixed) and 0.0001 (C). Progress: none (goal streak 11). Tally, counting parts: 1621
+held, 1588 failed (3209 registered).
