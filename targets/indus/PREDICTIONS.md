@@ -13441,3 +13441,15 @@ the fish (the star-name type, e.g. 6 + fish) (`predict_test452.py`; Fisher one-s
 Both failed. Numeral + fish names take the long form in 2 of 20 (A) against 21 of 79 other fish names (the other way);
 B 2 of 5 against 5 of 19 (p = 0.46). The long form is not the star-name (numeral + fish) form. Progress: none (goal
 streak 6). Tally, counting parts: 1640 held, 1651 failed (3295 registered).
+
+# Four-hundred-and-fifty-third set, registered before testing (26 October 2026): goal loop 99, marked fish and the long form (two hypotheses)
+
+Set 448 saw plain 220 lean to the short form on A and B (one sign, under its bar). Registered directly here: fish names as
+in set 452, A and B (`predict_test453.py`).
+
+- **MF1** Marked fish (any fish sign other than 220) take the long form more often than plain 220 (Fisher one-sided
+  p < 0.05, A and B).
+- **MF2** Long-form names carry more signs before the fish (back to a numeral, ending, heading or line start) than
+  short-form names (Mann-Whitney p < 0.05, A and B).
+- Progress rule: either holds.
+
