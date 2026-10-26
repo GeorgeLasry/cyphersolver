@@ -431,3 +431,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G175 | 529 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs 255 / 435 by seal size: 255 OR 0.97 p 0.928, 435 OR 1.04 p 0.873 (no progress; goal streak 14) |
 | G176 | 530 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs 690 / 615 by seal size: 690 OR 1.45 p 0.598, 615 OR 0.63 p 0.253 (no progress; goal streak 15) |
 | G177 | 531 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs 140 / 100 by seal size: 140 OR 1.80 p 0.129, 100 OR 1.14 p 0.840 (no progress; goal streak 16) |
+| G178 | 532 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs 391 / 393 by seal size: 391 OR inf p 0.447, 393 OR inf p 0.824 (no progress; goal streak 17) |
