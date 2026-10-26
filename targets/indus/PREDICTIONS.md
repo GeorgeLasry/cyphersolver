@@ -14989,3 +14989,14 @@ from Harappa against Mohenjo-daro (`hyp_s2_largesite.py`).
 ## Results of set 558 (`hyp_s2_largesite.py`, `results/predict_test558.md`)
 
 Held: LS1. A large H/M [46, 83], small [39, 116]; B large [13, 21], small [18, 28] (audit of set 552). Progress: none (session-2 goal streak 6).
+
+
+# Set 559, registered before testing (26 October 2026): session-2 goal loop 24, the jar after a number (two hypotheses)
+
+740 directly after a numeral of value 4+ against 740 after a non-numeral (`hyp_s2_countedjar.py`). The ending 740
+closes a name and is usually followed by nothing or 400 / 90; a counted jar would sit inside count records.
+
+- **CJ1** On A, 740 after a large number is followed by further signs (other than 400 / 90) more often than 740 after a
+  non-numeral (Fisher p < 0.05).
+- **CJ2** The same on B.
+- Progress rule: CJ1 and CJ2 (740 has a second use: a counted jar).
