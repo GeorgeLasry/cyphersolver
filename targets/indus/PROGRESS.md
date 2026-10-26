@@ -414,3 +414,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G158 | 512 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 840 and 176 not size-linked (no progress; goal streak 11) |
 | G159 | 513 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 692 large at p = 0.011, but 1 hit in an 18-sign scan (corrected 0.19): probable false positive; scan stopped (no progress; goal streak 12) |
 | G160 | 514 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 692 on halves: same direction, one significant; unconfirmed (replication; no progress; goal streak 13) |
+| G161 | 515 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | tablet copies share the Harappa period: moulded (p = 0.001), incised (p = 0.049) (progress; goal streak 0) |

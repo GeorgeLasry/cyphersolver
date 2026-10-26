@@ -14352,3 +14352,9 @@ tablets with the identical text; periods shuffled 1,000 times (`predict_test515.
 - **TP2** Moulded tablet copies share the period more than chance (one mould, one time).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-fifteenth set (`predict_test515.py`, `results/predict_test515.md`)
+
+Both held. Moulded tablet copies share the period in 89 of 264 pairs (p = 0.001), as mould batches would. Incised
+tablets, made one by one, share it in 64 of 178 (p = 0.049, just under the bar): the texts on Harappa's incised tablets
+recur within a period, as names or accounts of one time would. Not stratified by area or level within Harappa. Progress
+(goal streak 0). Tally, counting parts: 1673 held, 1741 failed (3419 registered).
