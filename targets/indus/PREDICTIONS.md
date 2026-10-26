@@ -12853,3 +12853,8 @@ Square seals, white against other (`predict_test415.py`).
 - **CL2** At equal length, other-coloured seals differ from white ones in closing with 740 / 520 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fifteenth set (`predict_test415.py`, `results/predict_test415.md`)
+
+Both failed. No sign skewed between white and other-coloured square seals (1,528 / 165 tokens on C-train); endings
+alike (odds ratio 0.92). Progress: none (goal streak 5). Tally, counting parts: 1622 held, 1598 failed (3222
+registered).
