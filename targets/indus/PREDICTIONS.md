@@ -12294,3 +12294,14 @@ ratio 0.53, p = 0.0002; BR2). Rectangular seals use a different formula: fewer n
 12-tier 55, the yoke-carrier ligature 154. Prior: bar seals are known to be a late, animal-less class with distinct
 texts (Parpola 1994, Kenoyer); this quantifies the difference and names the signs. Progress (goal streak 0). Tally,
 counting parts: 1607 held, 1551 failed (3158 registered).
+
+# Three-hundred-and-eighty-fifth set, registered before testing (26 October 2026): goal loop 31, change over the Harappa periods (two hypotheses)
+
+ICIT field 8: early = Period 1-3B (incl. 3B-1, 3B-2), late = 3C (all), 4, 5; 'Period 3', '3B/C' left out. All distinct
+lines with a period, Mantel-Haenszel over length band x subtype strata, so object kinds and lengths are compared like
+with like (`predict_test385.py`).
+
+- **PE1** Late texts close with 740 / 520 less often than early texts (p < 0.05): the formula changed over time.
+- **PE2** The heading (817 / 820 / 861 first) changes in frequency between early and late (two-sided p < 0.05).
+- Progress rule: either holds.
+
