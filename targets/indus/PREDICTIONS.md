@@ -14127,3 +14127,12 @@ streak 4). Tally, counting parts: 1664 held, 1714 failed (3383 registered).
 Both held (audit). With motif strata doubled signs lean to small seals (odds ratio 0.50, p = 0.039) and repeated texts
 too (0.57, p = 0.025). Sets 469 and 380 stand against the animal; set 493's unicorn effect was largely seal size (set
 494). Progress: none (goal streak 5). Tally, counting parts: 1666 held, 1714 failed (3385 registered).
+
+# Four-hundred-and-ninety-ninth set, registered before testing (26 October 2026): goal loop 145, audit of the core size signs against the animal (two hypotheses)
+
+`auditkit.size_motif` (length band x site x motif) (`predict_test499.py`).
+
+- **CS1** 706 leans to large seals with motif held (p < 0.05).
+- **CS2** 156 / 400 / 590 (any) lean to small seals with motif held (p < 0.05).
+- Progress rule: none (audit).
+
