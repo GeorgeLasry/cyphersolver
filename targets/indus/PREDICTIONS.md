@@ -12980,3 +12980,13 @@ small-seal texts are, about twice as often as large-seal texts at equal length (
 seals repeat texts on other seals), the formulaic texts of small seals are the ones also written on tablets: the
 generic seal texts and the tablet records share a repertoire. A single test on all the data (no held-out sample).
 Progress (goal streak 0). Tally, counting parts: 1623 held, 1611 failed (3238 registered).
+
+# Four-hundred-and-twenty-fourth set, registered before testing (26 October 2026): goal loop 70, audit of set 423 against site (two hypotheses)
+
+Tablets are mostly Harappan; if small seals are commoner at Harappa, set 423's ST2 could be a site effect
+(`predict_test424.py`). A failure downgrades set 423.
+
+- **SA1** ST2 holds with strata of length band x site (Mantel-Haenszel p < 0.05).
+- **SA2** ST2 holds within Harappa alone.
+- Progress rule: none (audit).
+
