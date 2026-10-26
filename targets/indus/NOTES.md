@@ -3210,6 +3210,22 @@ Registered first (fa9bf4e6a). 216 of 4,695 held-out matches right against a shuf
 line is confirmed, but held-out precision falls to 4.6% (set 349: 5.0%); the 19 learned-class units are right about 2%
 of the time on held-out objects. No progress: streak 2. Tally 1587 held, 1497 failed.
 
+## Three-hundred-and-sixty-seventh pass (25 Oct 2026): loops 178-179, the new-finds vault, Parpola's later readings, the gate
+
+- **Vault (set 353, registered 2df140539 with the models frozen in data/frozen/).** No inscription published after Fuls
+  2022 is available with sign numbers or a usable photo (two web passes, `data/newfinds_candidates.tsv`). Outside
+  blocker: the Rakhigarhi finds volumes and IAR 2015-2021. Not run.
+- **Parpola 1997/2008/2010 (set 354, 9cb6da9cc).** 16 new readings (`rebus/parpola_later.tsv`; 2003, 2005 and *Roots of
+  Hinduism* 2015 not reached). Mapped to ICIT through the 1994 key and CISI: bull's head = 740, spear = 520,
+  yoke-carrier = 151. 2 of 6 structural predictions hold, and those two restate the positions the readings were built
+  on (stroked jars open lines; 741 patterns with 740). Homophony of caged fish with 520, two strokes = fish, six + fish +
+  yoke-carrier and the yoke-carrier compounds fail. No progress (streak 3).
+- **Gate (`gate.py`, `results/gate.md`).** No published key in keys/ gives a value to the copper-tablet anchor signs
+  749, 341 or 753, and none of their glosses names the picture on any anchor text they cover (0 of 2-4 each). Every
+  key is untested by the gate rather than passing it; a new key must cover the anchors to count. The lexicon files
+  for anchors_bench.py / equation_rebus.py (DEDR, MW, ePSD2) were in an old scratchpad and are gone; refetch before
+  rerunning those.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
@@ -3234,7 +3250,8 @@ is paused: its held-out precision is about twice chance and further threshold ch
 2. The seven sign = image equations remain the firmest meaning anchors (749, 341, 753, the lens sign).
 3. Done: set 350's line (5.06%) confirmed on split-halves (set 352), held-out precision 4.6%. The referent line is
    near its ceiling with this method; more groupings add reach, not accuracy.
-4. Readings of Parpola 1997 and 2003 not in the 1994 table.
+4. Done for 1997/2008/2010 (set 354, not supported); open: Parpola 2003, 2005, 2009 'Hind leg + fish', 2015.
+5. New-finds vault (set 353, frozen): waits on the Rakhigarhi finds volumes and IAR 2015-2021.
 
 ## Prior work
 

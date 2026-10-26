@@ -11682,6 +11682,13 @@ contained in one, is counted apart as a probable copy and not scored. `predict_t
 - **NV5** The motif hits are not all bull: NV4 holds with units for the bull left out.
 - **NV6** Progress rule: NV4 holds (tier 3 moves: meaning predicted on texts never used to fix it), or NV1 and NV2 hold.
 
+## Status of the three-hundred-and-fifty-third set (25 Oct 2026): not testable yet
+
+Two web passes (`data/newfinds_candidates.tsv`, 12 rows) found no inscription first published after Fuls 2022 with
+printed sign numbers or a photo good enough to transcribe; the best leads (Rakhigarhi seals of the 2015-2022 seasons,
+Shikarpur, Bahrain) need the excavation volumes (later Rakhigarhi Archaeopress volumes, Indian Archaeology - A Review
+2015-2021). The freeze (data/frozen/, 2df140539) stands; the set is run when 30+ sure signs are in data/newfinds.tsv.
+
 # Three-hundred-and-fifty-fourth set, registered before testing (25 October 2026): decipherment loop 179, Parpola's later readings (1997, 2008, 2010) as structural predictions (seven hypotheses)
 
 Streak 2. `rebus/parpola_later.tsv` (collected 25 Oct 2026 from Studia Orientalia 82, 1997; the 2008 paper; the 2010
