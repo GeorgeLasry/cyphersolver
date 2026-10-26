@@ -13426,3 +13426,13 @@ Both failed. Small rectangular seals repeat texts more (odds ratio 5.34) but p =
 (absent from rectangular seals, 0 against 0) as agreeing by a tie; of the three present, 706 (large) and 400 (small)
 agree, 590 leans large: 2 of 3. Progress: none (goal streak 5). Tally, counting parts: 1640 held, 1649 failed (3293
 registered).
+
+# Four-hundred-and-fifty-second set, registered before testing (26 October 2026): goal loop 98, numeral + fish names and the long form (two hypotheses)
+
+Fish names closed by 520 (short) or by 705 / 706 33 520 (long); 'numeral + fish' when a numeral stands directly before
+the fish (the star-name type, e.g. 6 + fish) (`predict_test452.py`; Fisher one-sided).
+
+- **NF1** On A, numeral + fish names take the long form more often than other fish names.
+- **NF2** The same on B.
+- Progress rule: both hold.
+
