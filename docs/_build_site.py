@@ -3364,6 +3364,10 @@ def process(path):
     oc = outcome_html(page) if page else ''
     if oc and '<section class="hero">' in s:
         s = re.sub(r'(<section class="hero">.*?<p class="meta">.*?</p>)', lambda m: m.group(1) + '\n' + oc, s, count=1, flags=re.S)
+    # the At a glance badge follows the profile: method label and extent as the outcome line gives them, so the two cannot disagree
+    em = re.search(r'Extent: ([^<]*)</p>', oc) if oc.startswith('<p class="outcome">Method:') else None
+    if em and page.get('method') in M.LABEL:
+        s = re.sub(r'(<span class="gl-res">).*?(</span>)', lambda m: m.group(1) + M.LABEL[page['method']].capitalize() + ' &middot; ' + em.group(1) + m.group(2), s, count=1, flags=re.S)
     s = re.sub(r'\n?<p class="credits">.*?</p><!-- /credits -->', '', s, flags=re.S)
     cl = credits_html(page) if page else ''
     if cl and '<section class="hero">' in s:

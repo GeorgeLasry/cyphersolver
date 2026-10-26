@@ -74,6 +74,8 @@ def extent(prof):
     m = (prof.get('outcome') or {}).get('method')
     if m == NOT: return 'none'              # e.g. "already solved" by someone else, not obtained here
     if m == NA: return 'n/a'
+    parts = (prof.get('outcome') or {}).get('parts') or []
+    if parts and all(x.get('extent') == 'partial' for x in parts): return 'partial'   # Complete needs every part complete
     return {'read': 'complete', 'already solved': 'complete', 'read in part': 'partial',
             'not read': 'none'}.get(cls, 'n/a')
 
