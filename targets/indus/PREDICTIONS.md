@@ -13090,3 +13090,10 @@ Set 379 held length (LZ1) and site (LZ2, Mohenjo-daro direction only) separately
 - **SZA2** With size measured by the second dimension (ICIT field 32), length strata, 4+ of 7 the same.
 - Progress rule: none (audit). Both failing downgrades sets 376-379.
 
+## Results of the four-hundred-and-thirtieth set (`predict_test430.py`, `results/predict_test430.md`)
+
+Both held (audit). With length x site strata: 706 (odds ratio 3.75, p = 0.007), 156 (0.28), 400 (0.45) and 590 (0.49)
+keep their direction at p < 0.01; 32, 390 and 5 do not. With the second dimension: the same four (706 4.71; 156 0.19;
+400 0.43; 590 0.44). **The core of the size finding is four signs**: the stroked U 706 on large seals; the bull-headed
+yoke-carrier 156, the marker 400 and 590 on small seals. 32, 390 and 5 are withdrawn from it. Progress: none (goal
+streak 7). Tally, counting parts: 1630 held, 1617 failed (3251 registered).
