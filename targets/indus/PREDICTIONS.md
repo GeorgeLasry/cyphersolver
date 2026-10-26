@@ -12779,3 +12779,13 @@ effect. It conflicts with set 408 (ICIT seals, body-weighted: 0.506 over 84 bodi
 Mohenjo-daro, Harappa and Lothal (fewer small sites), and its site labels may be coarser. The question 'are seal names
 local?' stays open with evidence both ways; counted as progress under the rule, with this conflict stated. Progress
 (goal streak 0). Tally, counting parts: 1622 held, 1587 failed (3211 registered).
+
+# Four-hundred-and-eleventh set, registered before testing (26 October 2026): goal loop 57, ICIT seals at the big sites (two hypotheses)
+
+Audit of the set 408 / 410 conflict: ICIT seals at the sites that dominate Mahadevan's sample, body-weighted, shuffle
+null (`predict_test411.py`).
+
+- **CR1** ICIT seals at Mohenjo-daro, Harappa and Lothal are local body-weighted (p < 0.05).
+- **CR2** ICIT seals at Mohenjo-daro and Harappa only are local (p < 0.05).
+- Progress rule: none (audit).
+
