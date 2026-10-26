@@ -13698,3 +13698,13 @@ small seals: odds ratio large/small 0.41 (p = 0.005) with length band x site str
 texts) and 430 (156, 400, 590 small), small seals carry a distinct repertoire: repeated texts, doubled signs and the
 small-seal signs. A single test on all the data. Progress (goal streak 0). Tally, counting parts: 1651 held, 1673
 failed (3328 registered).
+
+# Four-hundred-and-seventieth set, registered before testing (26 October 2026): goal loop 116, doubled signs on two halves (two hypotheses)
+
+Set 469 used all sized square seals. Here two random halves (hash of text and size), each with the same strata
+(`predict_test470.py`).
+
+- **DH1** Doubled signs lean to small seals in half 1 (p < 0.05).
+- **DH2** The same in half 2.
+- Progress rule: none (replication).
+
