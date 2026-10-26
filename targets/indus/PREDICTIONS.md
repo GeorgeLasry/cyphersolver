@@ -15229,3 +15229,7 @@ Held: Q2. openers: [False, True]. Progress: none (session-2 goal streak 13).
 - **Q1** On A: signs with 15+ A tokens never before an ending stay under 5% before an ending on B for 90%+ of those with 5+ B tokens (p < 0.05 where a test applies).
 - **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
 - Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
+
+## Results of set 576 (`hyp_s2_q_noend.py`, `results/predict_test576.md`)
+
+Held: Q1, Q2. noend: [False]. Progress: none (session-2 goal streak 14).

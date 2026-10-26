@@ -476,3 +476,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-38 | 573 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | single-sign texts are names: single: [False, False]. (no progress; session-2 goal streak 11) |
 | S2-39 | 574 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | what follows a mid-line ending: afterend: [np.False_, np.False_]. (no progress; session-2 goal streak 12) |
 | S2-40 | 575 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | two openers lead into different texts: openers: [False, True]. (no progress; session-2 goal streak 13) |
+| S2-41 | 576 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs that never take an ending: noend: [False]. (no progress; session-2 goal streak 14) |
