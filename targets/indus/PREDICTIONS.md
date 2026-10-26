@@ -14662,3 +14662,14 @@ Its tokens not already given a role get a 'closing formula' role (`hyp_formula_r
 ## Results of set 536 (`hyp_formula_role.py`, `results/predict_test536.md`)
 
 Held: FR2. R 86.27% -> 86.28%; final A 35/36, B 10/10. Progress: none (session-2 goal streak 1).
+
+
+# Set 537, registered before testing (26 October 2026): session-2 goal loop 2, which signs take 740 and which 520 (two hypotheses)
+
+Each sign directly before an ending (740 / 520) has a preferred ending on A (5+ ending tokens, 80%+ one ending).
+(`hyp_s2_ending.py`). The fish class's 520 preference is known (sets 196, 446); this tests every sign.
+
+- **EN1** 80%+ of A-preferring signs with 3+ ending tokens on B keep their preference on B (binomial against 50%).
+- **EN2** Signs preferring 520 are more often non-fish than fish (the choice is not only the fish class): 5+ non-fish
+  signs prefer 520 on A and keep it on B.
+- Progress rule: EN2 holds (a new, replicated finding beyond the fish class; EN1 alone re-finds known structure).
