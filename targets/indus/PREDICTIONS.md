@@ -12517,7 +12517,8 @@ WD1 held, WE1 failed. After 2 / 1 / 60 (outside numeral runs) the next sign rese
 (547 tokens, p = 0.001), 0.652 on B (198, p = 0.004). Audit (not registered): the heading ends in a stroke pair, so
 heading + divider at line start was stripped and openers recomputed: 0.615 (p = 0.001) and 0.692 (p = 0.004). **Wells's
 claim that these markers divide words is supported**: a new unit starts after them (refined by set 397: 2 and 1
-open a unit, they do not close the one before; 60 does not pass alone). The stroked jars close lines in
+open a unit, they do not close the one before; 60 does not pass alone; downgraded by set 429: mostly the heading
+recurring mid-line). The stroked jars close lines in
 3.3% (A) and 13.6% (B) of tokens against 88.0% and 80.5% for 740 (WE1): they are not case endings in Wells's sense but
 name elements (set 186). Progress (goal streak 0). Tally, counting parts: 1617 held, 1563 failed (3180 registered).
 
@@ -13073,3 +13074,10 @@ unit. Here 1 / 2 preceded by 817 / 820 / 861 anywhere are left out (60 dropped, 
 - **DH2** The same on B.
 - Progress rule: none (audit). Both failing withdraws set 395's WD1 (the effect was the heading).
 
+## Results of the four-hundred-and-twenty-ninth set (`predict_test429.py`, `results/predict_test429.md`)
+
+DH1 held, DH2 failed (audit). Most mid-line 1 / 2 stand after a heading sign (294 on A, 97 on B): the 'divider' of set
+395 is largely the heading recurring mid-line to open a second unit. Without those pairs the effect holds on A (195
+cases, cosine 0.636, p = 0.001) and is borderline on B (85, 0.650, p = 0.053). **Set 395's WD1 is downgraded**: Wells's
+'divider' is mostly the heading formula in mid-text; a smaller residue of bare 1 / 2 opening a unit holds on A only.
+Progress: none (goal streak 6). Tally, counting parts: 1628 held, 1617 failed (3249 registered).
