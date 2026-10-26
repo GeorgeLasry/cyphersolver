@@ -253,3 +253,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G1 | 355 | 4.635 (26.1%) | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | goal run: motif and object type as unigram side information: weight 0 (no progress; goal streak 1) |
 | G2 | 356 | 4.635 (26.1%) | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | repetition caches (line, object): weight 0; harness positive control passes (no progress; goal streak 2) |
 | G3 | 357 | **4.614** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | region-domain model mixed in (weight 0.3): S 4.635 to 4.614, A to B 5.207 to 5.120, ten / seven times its random-group control; motif domain fails the control (progress; goal streak 0) |
+| G4 | 358 | 4.614 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | site beyond region: fixed gain 0.003 (under 0.005), A to B 0.019; object type: fixed 0.025 but A to B worse (no progress; goal streak 1) |

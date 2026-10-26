@@ -11795,3 +11795,19 @@ Base now includes the region model. Two finer or crossing groupings, each as a f
 - **DS1** A site-domain model (Mohenjo-daro, Harappa, Lothal ... as separate groups) lowers S beyond region.
 - **DS2** An object-type domain model (seal, tablet, pottery ...) lowers S beyond region.
 
+## Results of the three-hundred-and-fifty-eighth set (`predict_test358.py`, `results/predict_test358.md`)
+
+Both failed. Site on top of region: fixed test gain 0.0028 (under 0.005; control 0.0010), A -> B 0.0194 (control
+0.0004): sites add a little beyond regions, mostly on Mahadevan's lines. Object type: fixed test gain 0.0253 (control
+0.0001) but A -> B worse by 0.0152; inside the ICIT seal and tablet lines differ in context, but the effect does not
+carry to Mahadevan's lines (whose type labels may group objects differently). Progress: none (goal streak 1). Tally,
+counting parts: 1591 held, 1510 failed (3101 registered).
+
+# Three-hundred-and-fifty-ninth set, registered before testing (25 October 2026): goal loop 5, line length and writing direction (two hypotheses)
+
+Domain models on top of the region base (`predict_test359.py`, rule of set 358). S is computed given the line length,
+so length is fair side information; writing direction (R/L, L/R as recorded) is a property of the object.
+
+- **DL1** A length-band domain model (1-2, 3, 4, 5, 6+ signs) lowers S beyond region.
+- **DL2** A writing-direction domain model lowers S beyond region.
+

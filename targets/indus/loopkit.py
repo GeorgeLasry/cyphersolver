@@ -31,6 +31,19 @@ def build_meta():
 META, OTHERS = build_meta()
 
 
+def build_dir():
+    A, B, rowsA, recs, F = R.load_all()
+    d = defaultdict(Counter)
+    for r in list(rowsA) + list(load(only_m77=True)):
+        for ln in r['seq']:
+            if ln and r.get('direction'):
+                d[tuple(ln)][r['direction']] += 1
+    return {ln: c.most_common(1)[0][0] for ln, c in d.items()}
+
+
+DIRECTION = build_dir()
+
+
 REGION_W = 0.3  # set 357 (DM2, audited against random groups): the region-domain model mixed in at weight 0.3
 
 
