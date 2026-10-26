@@ -15181,3 +15181,12 @@ A context model p(sign | the sign three positions back), mixed onto the S base (
 ## Results of set 572 (`hyp_s2_ctx_skip3.py`, `results/predict_test572.md`)
 
 Held: none. fixed gain 0.0000, A -> B gain 0.0000. Progress: none (session-2 goal streak 10).
+
+
+# Set 573, registered before testing (26 October 2026): session-2 goal loop 38, single-sign texts are names (two hypotheses)
+
+(`hyp_s2_q.py`, VARIANT=single)
+
+- **Q1** On A: the signs of one-sign texts are name heads (stand before an ending) in longer lines more often than frequency-matched signs (200 draws) (p < 0.05 where a test applies).
+- **Q2** The same on B (for 'openers' and 'noend' Q2 is the B part of the claim).
+- Progress rule: Q1 and Q2, except 'noend' (consistency: recorded, no progress).
