@@ -270,3 +270,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G18 | 372 | **4.559** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | region dropped (adds 0.0018 on top of type models); length x subtype adopted, fixed gain 0.0078, replicated on split C (progress; goal streak 0) |
 | G19 | 373 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opening-sign domains: gains under 0.005, A to B at control level (no progress; goal streak 1) |
 | G20 | 374 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa period, material: nothing beyond object kind (no progress; goal streak 2) |
+| G21 | 375 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | shape, secondary motif: nothing (no progress; goal streak 3) |

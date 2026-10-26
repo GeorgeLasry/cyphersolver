@@ -12086,3 +12086,16 @@ unicorn, the trough ...), as set 374 (`predict_test375.py`).
 - **SH1** A shape domain model lowers S beyond type and subtype (fixed split and split C).
 - **SH2** A secondary-motif domain model lowers S (fixed split and split C).
 
+## Results of the three-hundred-and-seventy-fifth set (`predict_test375.py`, `results/predict_test375.md`)
+
+Both failed. Shape: weight 0 on the fixed split, split C worse; secondary motif: fixed gain 0.0005, split C worse.
+Progress: none (goal streak 3). Tally, counting parts: 1600 held, 1541 failed (3141 registered).
+
+# Three-hundred-and-seventy-sixth set, registered before testing (26 October 2026): goal loop 22, size and workmanship (two hypotheses)
+
+ICIT field 31 (longest dimension: under 20, 20-30, 30+ mm) and field 22 (workmanship: poor, fair, good, fine), as set
+374 (`predict_test376.py`).
+
+- **SZ1** A size-band domain model lowers S (fixed split and split C).
+- **SZ2** A workmanship domain model lowers S (fixed split and split C).
+
