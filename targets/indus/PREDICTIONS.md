@@ -14221,3 +14221,12 @@ counting parts: 1669 held, 1723 failed (3397 registered).
 
 Both failed: 220 odds ratio 1.31 (p = 0.23); 240 0.99 (p = 0.97). Progress: none (goal streak 4). Tally, counting parts:
 1669 held, 1725 failed (3399 registered).
+
+# Five-hundred-and-sixth set, registered before testing (26 October 2026): goal loop 152, fish 235 and 233 by seal size (two hypotheses)
+
+`auditkit.size_motif` (`predict_test506.py`).
+
+- **F235** Large and small seals differ in carrying 235 (two-sided p < 0.05).
+- **F233** They differ in carrying 233 (two-sided p < 0.05).
+- Progress rule: either holds.
+
