@@ -12389,3 +12389,12 @@ expected same-site rate of a pair is the seal share of the first object's site (
   predict (p < 0.05): names are local.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-ninetieth set (`predict_test390.py`, `results/predict_test390.md`, `predict_test390_control.py`)
+
+Both held as registered; NL1 is withdrawn on audit. Tablet-seal pairs sharing a name body: 165 of 367 same city
+(expected 139.6, p = 0.004); seal pairs: 178 of 313 (expected 133.2, p = 2e-7). Audit (not registered): with sites
+shuffled among the objects involved (set 381's null; the registered expectation used all-seal site shares), NL1 is
+reached by 116 of 500 shuffles (withdrawn), NL2 by 0 of 500 (stands). Sealings are coded TAG, so NL2 is about seals.
+**Seals sharing a name body (the signs before the ending) come from the same city more than chance**, while whole
+identical seal texts do not (set 381): name parts are local, whole formulae travel. Progress (goal streak 0). Tally,
+counting parts: 1611 held, 1559 failed (3170 registered; NL1 withdrawn, counted held as registered).
