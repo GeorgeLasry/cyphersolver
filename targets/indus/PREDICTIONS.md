@@ -11987,3 +11987,13 @@ One held, one failed. Subtype: fixed test 4.5777 -> 4.5671 (gain 0.0106; signs 5
 each have their own sign context**, beyond the main type. Adopted at weight 0.2; S 4.578 -> 4.567. Region x type: fixed
 gain 0.0025, C none. Progress (goal streak 0). Tally, counting parts: 1598 held, 1526 failed (3124 registered; set 363
 pending).
+
+# Three-hundred-and-seventieth set, registered before testing (26 October 2026): goal loop 16, the signs of the object kinds (two hypotheses)
+
+As set 364 for regions. Signs with 10+ tokens in the two kinds on split C's training lines, skew by Fisher p < 0.01;
+checked on C's test lines (3+ tokens), binomial against 50% (`predict_test370.py`).
+
+- **SK1** 75%+ of the square-seal / moulded-tablet skews lean the same way on C's test lines (p < 0.05).
+- **SK2** The same for incised / copper tablets.
+- Progress rule: either holds (a replicated finding).
+
