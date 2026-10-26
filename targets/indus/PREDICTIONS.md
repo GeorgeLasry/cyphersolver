@@ -16591,3 +16591,20 @@ p (`predict_test657.py`).
 - **GH1** Composite share correlates with the number of derived Indus signs (rho > 0, p < 0.05).
 - **GH2** Composite share correlates with the derived signs' token share.
 - Progress rule: none.
+
+## Results of set 656 (`predict_test656.py`, `results/predict_test656.md`)
+
+All failed, and the data say why. The short-stroke sequences that the ligatures would abbreviate are not written at all:
+'2 700', '1 740', '2 740' and '3 740' occur 0-2 times in 3,154 clean ICIT lines and never in Mahadevan's, while the
+ligatures occur 7-151 times (LG1, LG2 untestable: 0 of 0). The long-stroke sequences do occur ('32 740' 34 times) and
+share no contexts with the stroked jars and U's (cosine 0.000, p = 1, 0 of 5) (LG3). A stroked jar is not an
+abbreviated 'two jars': the strokes inside the sign make a form of their own (sets 186, 189), and the numeral-plus-host
+sequence is a different construction (a count). Progress: none.
+
+## Results of set 657 (`predict_test657.py`, `results/predict_test657.md`)
+
+Both failed. Over 21 mapped base signs, the graffiti composite share does not correlate with the Indus parallel's host
+score (rho -0.05 by derived signs, -0.01 by token share; p = 0.61, 0.53). Most of the parallels are simple geometric
+signs that host no marks in Indus (18 of 21 have no derived sign), while the graffiti combine them freely (the single
+stroke 39: 86% in composites). The last side of the graffiti comparison, how marks are built, also shows no shared
+habit. Progress: none.

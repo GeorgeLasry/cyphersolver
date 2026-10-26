@@ -557,3 +557,5 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | - | 653 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | minimal-pair classes: null degenerate (Linear B control fails on it); partner sets replicate A to B (p = 0.001); corrected in 654 (no progress) |
 | - | 654 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | minimal-pair classes, corrected null: Linear B control passes, Indus A passes (p = 0.001), B does not (no progress) |
 | - | 655 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 700's strokes: values 2-4 only (1 in 1 of 172; 5 never), mode 3-4 with plain 700 as 1: measure-like, unlike Linear B's shapes (no progress) |
+| - | 656 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | ligature = sequence? short-stroke sequences never written; long-stroke sequences share no contexts with the stroked signs (no progress) |
+| - | 657 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | graffiti composite hosts vs Indus ligature hosts: rho -0.05 over 21 signs (no progress) |
