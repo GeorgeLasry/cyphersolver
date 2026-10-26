@@ -1428,3 +1428,4 @@ body.pg-catalogue #hashnote{background:var(--amber-bg);border:1px solid var(--am
 .wm .l,.wm .l.enc{background:none;color:var(--gold);-webkit-text-fill-color:currentColor;animation:none;filter:none;transform:none}
 .hero .cipherstrip,.hero:has(.wordmark) .cipherstrip{display:none}
 .hero h1.wordmark .wm .l{color:var(--gold);-webkit-text-fill-color:var(--gold);background:none;filter:none;text-shadow:none}
+@media (max-width:640px){main table{display:block;max-width:100%;overflow-x:auto}main p a,main li a,main p code,main li code{overflow-wrap:anywhere}}
