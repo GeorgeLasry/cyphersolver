@@ -13148,3 +13148,13 @@ p < 0.0001). **Inside the U family the seal size steps up with the inner strokes
 middle, 706 on large. Not length-stratified (set 430 showed 706's size link holds with length and site held). With set
 189 (705 / 706 head the closing formula) the stroked U may mark rank in that formula. Progress (goal streak 0). Tally,
 counting parts: 1632 held, 1621 failed (3257 registered).
+
+# Four-hundred-and-thirty-fourth set, registered before testing (26 October 2026): goal loop 80, audit of the U-family sizes (two hypotheses)
+
+Set 433 compared sizes without holding length (`predict_test434.py`).
+
+- **UA1** Seals with 706 are above the median size more often than seals with 705, within length bands (Mantel-Haenszel
+  p < 0.05).
+- **UA2** Within Mohenjo-daro, 706 seals are larger than 705 seals (Mann-Whitney p < 0.05).
+- Progress rule: none (audit). Both failing downgrades set 433.
+
