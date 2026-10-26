@@ -15153,3 +15153,13 @@ A context model p(sign | previous sign, whether a numeral occurred earlier in th
 ## Results of set 570 (`hyp_s2_ctx_numseen.py`, `results/predict_test570.md`)
 
 Held: none. fixed gain -0.0006, A -> B gain -0.0036. Progress: none (session-2 goal streak 8).
+
+
+# Set 571, registered before testing (26 October 2026): session-2 goal loop 36, previous sign x an ending earlier in the line (two hypotheses)
+
+A context model p(sign | previous sign, whether 740 / 520 occurred earlier in the line), mixed onto the S base (length, type, subtype, length x subtype); uses only earlier signs
+(`hyp_s2_ctx_endseen.py`, `loopkit.ctx_model`).
+
+- **CT1** S on the fixed test falls by 0.005+ and sign-token bits fall.
+- **CT2** S on A -> B falls and sign-token bits fall.
+- Progress rule: CT1 and CT2.
