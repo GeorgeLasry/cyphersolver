@@ -330,3 +330,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G74 | 428 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | mid-line numerals are not followed by an ending sooner than chance: not numeral + name (no progress; goal streak 5) |
 | G75 | 429 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: Wells's 'divider' is mostly the heading recurring mid-line; residue holds on A, borderline on B; set 395 downgraded (audit; no progress; goal streak 6) |
 | G76 | 430 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: size signs with length x site and by second dimension: core is 706 (large), 156, 400, 590 (small); 32, 390, 5 withdrawn (audit; no progress; goal streak 7) |
+| G77 | 431 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small-seal signs avoid each other (not one formula); not in the repeated texts (no progress; goal streak 8) |

@@ -13109,3 +13109,9 @@ Set 430's small-seal signs 156, 400, 590 (`predict_test431.py`). Distinct square
   (Mantel-Haenszel p < 0.05): the small-seal signs are in the repeated texts of set 380.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirty-first set (`predict_test431.py`, `results/predict_test431.md`)
+
+Both failed. 156, 400 and 590 share a line twice in all (shuffled lines as many in 994 of 1,000: they avoid each other,
+like alternatives in one slot or separate formulae). Texts with them recur on other seals no more often at equal length
+(odds ratio 1.50, p = 0.19). Progress: none (goal streak 8). Tally, counting parts: 1630 held, 1619 failed (3253
+registered).
