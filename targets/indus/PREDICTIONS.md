@@ -12575,3 +12575,14 @@ WT1 held, WT2 failed. WORD top-10: fixed split 3.4% -> 4.7% (232 names; +3 names
 name). Top-1 stays 0% on both. The WORD benchmark moves as registered, but by four names in all: the domain models help
 the guess of a hidden name only marginally. Tier 6 now 0% / 4.7%. Progress (goal streak 0). Tally, counting parts:
 1619 held, 1568 failed (3187 registered).
+
+# Three-hundred-and-ninety-ninth set, registered before testing (26 October 2026): goal loop 45, WORD with a city prior (two hypotheses)
+
+Sets 390-391: name bodies are local to a city. In the WORD task each candidate body gets a fixed bonus of
+log2(1 + its count in training lines from the test line's city), weight 1 fixed now; base = the domain models
+(`loopkit.word_task_local`, `predict_test399.py`). Fixed split and A -> B (Mahadevan's lines carry sites).
+
+- **WL1** The city prior raises WORD top-10 on both splits.
+- **WL2** The city prior raises WORD top-1 on both splits.
+- Progress rule: WL1 holds.
+
