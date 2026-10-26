@@ -14606,3 +14606,13 @@ failed (3423 registered).
 ## Results of set 532 (`goal_driver.py`, `results/predict_test532.md`)
 
 391 odds ratio inf (p = 0.4468); 393 odds ratio inf (p = 0.8238). Progress: none (goal streak 17).
+
+
+# Set 533, registered before testing (26 October 2026): goal loop 179, signs 460 and 465 by seal size (two hypotheses)
+
+`auditkit.size_motif` (length band x site x motif), two-sided; progress only at p < 0.01 (rule before set 517)
+(`goal_driver.py`).
+
+- **H1** Large and small seals differ in carrying 460.
+- **H2** They differ in carrying 465.
+- Progress rule: either at p < 0.01.
