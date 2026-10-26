@@ -12653,3 +12653,13 @@ Both failed. Jointly fitted weights (fixed: 0.5 plain, 0.1 length, 0 type, 0.2 s
 0.0013 on the fixed test and lose 0.0041 on C; per-group component weights for the subtype model gain 0.0028 (fixed)
 and 0.0003 (C). The sequential mixture is near its optimum. Progress: none (goal streak 5). Tally, counting parts: 1619
 held, 1578 failed (3197 registered).
+
+# Four-hundred-and-fourth set, registered before testing (26 October 2026): goal loop 50, formula by seal animal (two hypotheses)
+
+Square seals with a motif (field 18): unicorn (Bull1) against all other animals; distinct lines, Mantel-Haenszel over
+length bands (`predict_test404.py`).
+
+- **AN1** Other-animal seals open with the heading (817 / 820 / 861) more often than unicorn seals (p < 0.05).
+- **AN2** The two differ in closing with 740 / 520 (two-sided p < 0.05).
+- Progress rule: either holds.
+
