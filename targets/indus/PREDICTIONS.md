@@ -14692,3 +14692,15 @@ one order only (6+ lines, 0 the other way) are 'fixed' (`hyp_s2_order.py`).
 ## Results of set 538 (`hyp_s2_order.py`, `results/predict_test538.md`)
 
 Held: OR1. free pairs both orders on B 13/22 vs fixed 11/97; numeral/marker share 14/27. Progress: none (session-2 goal streak 3).
+
+
+# Set 539, registered before testing (26 October 2026): session-2 goal loop 4, heads and openers as separate vocabularies (two hypotheses)
+
+A sign is a 'head' on A if 60%+ of its tokens (10+) stand before an ending, an 'opener' if 60%+ open the line
+(`hyp_s2_heads.py`).
+
+- **HO1** No sign is both a head and an opener on A, and 80%+ of A heads and openers with 5+ B tokens keep their class on
+  B (binomial against 50%).
+- **HO2** Heads are graphically varied: heads come from 5+ different decade families, openers from fewer families than
+  heads (openers are a small closed set).
+- Progress rule: HO2 holds with HO1 (a replicated description of the two slots' vocabularies).
