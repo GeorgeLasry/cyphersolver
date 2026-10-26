@@ -1421,12 +1421,5 @@ body.pg-catalogue table.gone td,body.pg-catalogue table.gone th{border-bottom:1p
 body.pg-catalogue #hashnote{background:var(--amber-bg);border:1px solid var(--amber);border-radius:var(--radius);padding:.6rem 1rem;margin:1rem 0}
 @media (max-width:700px){body.pg-catalogue .state .cols{grid-template-columns:1fr}}
 
-/* ---------------------------------------------------------------- calm hero (phase 3): static wordmark, no live cipher strip */
-.hero h1.wordmark{font-size:clamp(2rem,6.5vw,3.8rem);padding-bottom:0;letter-spacing:.04em}
-.wm{animation:none;filter:none}
-.wm::before,.wm .l::after,.wm .l.enc::before,.wm .caret{display:none}
-.wm .l,.wm .l.enc{background:none;color:var(--gold);-webkit-text-fill-color:currentColor;animation:none;filter:none;transform:none}
-.hero .cipherstrip,.hero:has(.wordmark) .cipherstrip{display:none}
-.hero h1.wordmark .wm .l{color:var(--gold);-webkit-text-fill-color:var(--gold);background:none;filter:none;text-shadow:none}
 @media (max-width:640px){main table{display:block;max-width:100%;overflow-x:auto}main p a,main li a,main p code,main li code{overflow-wrap:anywhere}}
 @media (max-width:860px){body.pg-highlights .hl-bar{top:3.65rem}}
