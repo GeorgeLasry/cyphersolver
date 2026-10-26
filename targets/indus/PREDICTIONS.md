@@ -12821,3 +12821,10 @@ rectangular (SEAL:R) against square (SEAL:S), Mantel-Haenszel over length bands 
 - **RF2** Rectangular-seal texts more often carry a numeral and no ending (a count, not a name) (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-thirteenth set (`predict_test413.py`, `results/predict_test413.md`)
+
+Both failed. Rectangular seals open with a numeral about as often as square seals (odds ratio 1.14, p = 0.62); a
+numeral without an ending is a trend only (1.35, p = 0.083). Note on set 384: BR2 (rectangular seals close with an
+ending less often) restates M12 of the twenty-fourth set (bar seals carry bare names, +13.4 points); set 384's progress
+rests on BR1, its sign skews. Progress: none (goal streak 3). Tally, counting parts: 1622 held, 1594 failed (3218
+registered).
