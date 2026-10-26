@@ -11931,3 +11931,20 @@ its lines (`predict_test366.py`).
 - **RR2** A 'bound phrase' role, for otherwise unroled tokens in an A-bound pair, raises R by 1 point or more.
 - Progress rule: RR1 and RR2 hold.
 
+## Results of the three-hundred-and-sixty-sixth set (`predict_test366.py`, `results/predict_test366.md`)
+
+Both failed. Six pairs are bound on A (171 35, 255 435, 435 690, 484 337, 615 615, 809 809); 3 of the 5 testable stay
+bound on B (RR1 needs 70%); the role would add 102 tokens, R 86.3% -> 87.1% (RR2 needs 1 point). Progress: none (goal
+streak 2, set 363 pending). Tally, counting parts: 1595 held, 1523 failed (3118 registered).
+
+# Three-hundred-and-sixty-seventh set, registered before testing (25 October 2026): goal loop 13, object type and motif replicated within ICIT (two hypotheses)
+
+Audit before registering: on B the object type is 'M77' for 1,154 of 1,175 lines and the motif is empty for 1,174, so
+the A -> B halves of sets 357 (motif) and 358 (object type) tested nothing: those failures are void. Here the replication
+sample is split C: the fixed training lines cut 80/20 (seed 2027), test lines disjoint from the fixed test
+(`loopkit.splits_c`, `predict_test367.py`); rule of set 358 otherwise (S rule with sign tokens, beat the random-group
+control on both splits), on top of region + length.
+
+- **OT1** An object-type domain model lowers S on the fixed split and on C.
+- **OT2** A motif domain model lowers S on the fixed split and on C.
+

@@ -254,6 +254,28 @@ def run_domain_set(num, title, hyps, gain=0.005):
     return held
 
 
+def splits_c():
+    """Fixed split, plus split C: the fixed training lines cut 80/20 (seed 2027), so C's test lines are disjoint from
+    the fixed test. For side information Mahadevan's records lack (type and motif are 'M77' / empty on B; set 367)."""
+    (tr, te), _ = splits()
+    rnd = random.Random(2027)
+    ls = list(tr)
+    rnd.shuffle(ls)
+    k = int(0.8 * len(ls))
+    return (tr, te), (ls[:k], ls[k:])
+
+
+def run_domain_set_c(num, title, hyps, gain=0.005):
+    """As run_domain_set, with split C in place of A -> B."""
+    global splits
+    orig = splits
+    splits = splits_c
+    try:
+        return run_domain_set(num, title, hyps, gain)
+    finally:
+        splits = orig
+
+
 def run_set(num, title, hyps, gain=0.005):
     """hyps: [(key, title, extra)]. A hypothesis holds if the fixed-test S falls by `gain` or more and A -> B falls."""
     rd = R.Round(title, 'predict_test%d' % num)

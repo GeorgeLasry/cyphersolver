@@ -260,3 +260,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G8 | 362 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | previous sign x length, opening family x position: weight 0 (no progress; goal streak 3) |
 | G10 | 364 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | regional signs: 9 Sindh / north skews on A, 7 of 7 replicate on B (p = 0.008); 700 north vs 705 Sindh, 154/158 north: regional spelling and formula habits (progress; goal streak 0; loop 9 pending) |
 | G11 | 365 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | regional variants inside families: only 700/705, chance level (no progress; goal streak 1) |
+| G12 | 366 | 4.596 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | bound phrases: 3 of 5 replicate, R +0.8 points (no progress; goal streak 2) |
