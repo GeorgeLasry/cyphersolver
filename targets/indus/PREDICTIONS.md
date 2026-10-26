@@ -13163,7 +13163,8 @@ Set 433 compared sizes without holding length (`predict_test434.py`).
 
 UA1 failed, UA2 held (audit). Within length bands 706 seals are large more often than 705 seals (odds ratio 2.98) but
 p = 0.083; within Mohenjo-daro 706 seals are larger (24 against 51, p < 0.0001). Set 433 stands for Mohenjo-daro, with
-the caveat that part of the step is text length (706 lines are long). Progress: none (goal streak 1). Tally, counting
+the caveat that part of the step is text length (706 lines are long; answered by set 484: within the formula 706 seals
+are still larger, p = 0.0015). Progress: none (goal streak 1). Tally, counting
 parts: 1633 held, 1622 failed (3259 registered).
 
 # Four-hundred-and-thirty-fifth set, registered before testing (26 October 2026): goal loop 81, seal size with marked signs (two hypotheses)
@@ -13908,3 +13909,10 @@ Square seals with the formula and a size; Mann-Whitney (the formula fixes most o
 - **IF2** Formula seals with a marked fish before it differ in size from those with plain 220 (two-sided).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eighty-fourth set (`predict_test484.py`, `results/predict_test484.md`)
+
+IF1 held, IF2 failed. Within the formula, 706 seals are larger than 705 seals (median 33.8, 18 seals, against 29.2, 35;
+p = 0.0015): with the formula fixing most of the text, set 434's length caveat is answered, and the 705 < 706 step
+stands. Being set 433's comparison inside a subset, it counts as consistency, not progress (the registered P line reads
+'holds'). Marked against plain fish: too few plain (4). Progress: none (goal streak 15). Tally, counting parts: 1656
+held, 1696 failed (3357 registered).

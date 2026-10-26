@@ -383,3 +383,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G127 | 481 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | formula and small-seal signs avoid each other on A (6 vs 20), not significantly on B (no progress; goal streak 12) |
 | G128 | 482 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pieces of the long form not size-linked; the whole formula is (no progress; goal streak 13) |
 | G129 | 483 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | bar-seal / square-seal signs not size-linked within square seals (no progress; goal streak 14) |
+| G130 | 484 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | within the formula 706 seals are larger than 705 seals (p = 0.0015): length caveat answered (consistency; no progress; goal streak 15) |
