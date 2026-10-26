@@ -1546,6 +1546,8 @@ a.sticker::after{display:none}
 .nav .links > a.navcat{position:relative}
 .nav .links > a.navcat .sticker{position:absolute;top:calc(100% + .3rem);left:50%;--sz:4.2rem;margin-left:-2.1rem;pointer-events:none}
 .nav .links > a.navcat:hover .sticker{transform:rotate(4deg) scale(1.1)}
+.nav .links > a.navcat .sticker.alt{transform:rotate(8deg);top:calc(100% + .7rem)}   /* the read-further one leans the other way */
+.nav .links > a.navcat:hover .sticker.alt{transform:rotate(-4deg) scale(1.1)}
 @media (max-width:860px){.nav .links > a.navcat .sticker{position:static;--sz:3rem;margin:0 0 0 .7rem}}
 @media (prefers-reduced-motion: reduce){.sticker{transition:none}}
 /* the read-further sticker: same seal, lime and violet */

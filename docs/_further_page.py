@@ -17,7 +17,7 @@ import _methods as M
 HERE = pathlib.Path(__file__).parent
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
-# blocker types as a contributor would put them; the first three are work left, the rest need new material
+# blocker types as a contributor would put them; the first three can be done now from what is online, the rest need a new source
 GAP_LABEL = {'open-codes': 'code groups open', 'not-attempted': 'not yet tried', 'left-open': 'left open',
              'illegible': 'hard to read on the scan', 'no-key-material': 'no key known', 'too-short': 'too short to break',
              'needs-physical-access': 'needs the archive'}
@@ -98,7 +98,9 @@ def row(e):
     p = e['p']
     first = plain(e['gaps'][0][1]) if e['gaps'] else 'See the notes for what is open.'
     first = re.sub(r'\s*[-–—]\s*blocker:.*$', '', first)
-    return (f'<tr class="e" data-href="{href(e)}" data-work="{e["work"]}">'
+    sort = (f'data-frac="{e["frac"] if e["frac"] is not None else -1}" data-y="{p["y"]}" data-gaps="{len(e["gaps"])}" '
+            f'data-title="{html.escape(plain(p["title"]).lower())}"')
+    return (f'<tr class="e" data-href="{href(e)}" data-work="{e["work"]}" {sort}>'
             f'<td class="prio"><b>{pct(e)}</b></td>'
             f'<td class="date">{p["year"]}</td>'
             f'<td class="item"><a class="t" href="{href(e)}">{p["title"]}</a><span class="pill">{p["stt"]}</span><span class="sub">Open: {esc(first)}</span></td>'
@@ -121,7 +123,7 @@ def build_html(pages):
 <!-- site:nav -->
 
 <section class="hero">
-  <p class="kicker">{len(E)} readings left partial · {n_work} with gaps that are work, not a missing source</p>
+  <p class="kicker">{len(E)} readings left partial · {n_work} with gaps you can close now from what is online</p>
   <h1>Read <span class="stk">Further<a class="sticker alt" href="#list" title="Pick a reading below"><span><b>Finish<br>It!</b><small>pick a gap</small></span></a></span></h1>
   <p class="sub">Ciphers read in part: the key works, but code groups, names, passages or whole letters are still open. Pick one, open its page, and give that page&rsquo;s address to your AI agent: the page lists every open gap, what has already been tried, and the instructions.</p>
   <ol class="steps"><li><b>1</b>pick a reading</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back one closed gap</li></ol>
@@ -130,16 +132,16 @@ def build_html(pages):
 <main>
 <div class="qbar jsonly" id="list">
   <input type="search" id="q" placeholder="Search: name, place, year, kind of gap…" aria-label="Search the readings">
-  <label class="only"><input type="checkbox" id="work"> only gaps that are work</label>
+  <label class="only"><input type="checkbox" id="work"> only readings you can push further now</label>
   <span class="count" id="count"></span>
 </div>
 <div class="tw"><table class="cat fur" id="cat">
 <colgroup><col class="c-prio"><col class="c-date"><col class="c-item"><col class="c-gaps"></colgroup>
-<thead><tr><th class="prio">Read</th><th>Date</th><th>Reading</th><th>Open gaps</th></tr></thead>
+<thead><tr><th class="prio" data-sort="frac" title="sort by share read">Read</th><th data-sort="y" title="sort by date">Date</th><th data-sort="title" title="sort by title">Reading</th><th data-sort="work" aria-sort="descending" title="sort by gaps you can close now, then all gaps">Open gaps</th></tr></thead>
 <tbody>
 {"".join(row(e) for e in E)}
 </tbody></table></div>
-<div class="legend"><span>click a row for its page</span><span>Read: share of the cipher tokens that give sense now</span><span><span class="gap w">gold</span> work left</span><span><span class="gap">grey</span> needs new material (a key, a better image, the archive)</span></div>
+<div class="legend"><span>click a column to sort, a row for its page</span><span>Read: share of the cipher tokens that give sense now</span><span><span class="gap w">gold</span> can be done now: the images and the key are online</span><span><span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive</span></div>
 
 <h2>What counts as further</h2>
 <p>One closed gap is a contribution: a value for a code group with every place it occurs, a passage re-read at the image, a key or a clear copy found in another volume or in print, a photograph from the archive. A reading becomes <b>complete</b> when at least 95% of its cipher tokens give sense, measured from a reading file, no gap is left untried, every letter is covered, and what stays open is scattered code groups or pieces blocked from outside (README, Conventions). Each step is credited on the write-up. How to send it: <a href="contribute.html#further">contribute</a>.</p>
@@ -151,6 +153,12 @@ document.body.classList.remove('nojs');
 var rows=[].slice.call(document.querySelectorAll('#cat tr.e')),q=document.getElementById('q'),w=document.getElementById('work'),c=document.getElementById('count');
 function render(){{var s=q.value.trim().toLowerCase(),n=0;rows.forEach(function(r){{var ok=(!s||r.textContent.toLowerCase().indexOf(s)>=0)&&(!w.checked||r.dataset.work!=='0');r.hidden=!ok;if(ok)n++;}});c.textContent=n+' of '+rows.length+' readings';}}
 rows.forEach(function(r){{r.addEventListener('click',function(ev){{if(ev.target.closest('a'))return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;}});}});
+var tb=document.querySelector('#cat tbody'),hs=[].slice.call(document.querySelectorAll('#cat th[data-sort]')),srt={{k:'work',d:-1}};
+function val(r,k){{if(k==='title')return r.dataset.title;if(k==='work')return (+r.dataset.work)*1000+(+r.dataset.gaps);return +r.dataset[k];}}
+function sortBy(k){{srt.d=srt.k===k?-srt.d:(k==='title'||k==='y'?1:-1);srt.k=k;
+ rows.slice().sort(function(a,b){{if(k==='frac'&&(a.dataset.frac==='-1')!==(b.dataset.frac==='-1'))return a.dataset.frac==='-1'?1:-1;var x=val(a,k),y=val(b,k);return x<y?-srt.d:x>y?srt.d:(+b.dataset.frac)-(+a.dataset.frac);}}).forEach(function(r){{tb.appendChild(r);}});
+ hs.forEach(function(h){{h.setAttribute('aria-sort',h.dataset.sort===k?(srt.d<0?'descending':'ascending'):'none');}});}}
+hs.forEach(function(h){{h.addEventListener('click',function(){{sortBy(h.dataset.sort);}});}});
 q.addEventListener('input',render);w.addEventListener('change',render);render();
 }})();
 </script>
@@ -186,7 +194,7 @@ def agent_text(e):
     lines += ['', 'OPEN GAPS (from NOTES.md, "## Remaining gaps")']
     if e['gaps']:
         for i, (f, t, b) in enumerate(e['gaps'], 1):
-            kind = 'work left' if b in WORKABLE else 'needs new material'
+            kind = 'doable now' if b in WORKABLE else 'needs a new source'
             lines.append(f'  {i}. [{b}: {kind}] {plain(t)}')
     else:
         lines.append('  None listed: read the notes and the write-up for what is open.')
@@ -205,8 +213,9 @@ def agent_text(e):
               '   update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step',
               '   (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).',
               '   If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.',
-              '1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new',
-              '   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key',
+              '1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key',
+              '   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,',
+              '   needs-physical-access) can be closed only by something new: a key',
               '   or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.',
               '   For those, search for that material first, and say where you looked even when you find nothing.',
               '2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not',
@@ -266,6 +275,7 @@ def one_page(e, shell):
 <div class="agentbox"><span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">{html.escape(agent_text(e), quote=False)}</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist">{gaps}</ul>
 {f'<h2>Already tried</h2><ul class="esc">{escl}</ul>' if escl else ''}
 

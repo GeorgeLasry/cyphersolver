@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,8 +71,8 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/guiche1551 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [no-key-material: needs new material] La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: no-key-material; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)
-  2. [illegible: needs new material] La Guiche f. 60v: the two struck-through first lines - blocker: illegible; struck through by the writer; read only in part
+  1. [no-key-material: needs a new source] La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: no-key-material; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)
+  2. [illegible: needs a new source] La Guiche f. 60v: the two struck-through first lines - blocker: illegible; struck through by the writer; read only in part
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: leaf, next leaf and margin of La Guiche checked; fr. 3138 view 70 has Morvilliers' 1549 letter with its decipherment (a different key)
@@ -91,8 +91,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -117,6 +118,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">no key known</span> La Guiche f. 60v: the four-dot code sign (::) after 'mal satisfaict de' and sign 5 - blocker: no-key-material; :: occurs once (conjecture 'l'Empereur', grade I), 5 only in the struck lines; the name is read 'Barnabe Adorne' (30 Sept 2026)</li><li><span class="gap">hard to read on the scan</span> La Guiche f. 60v: the two struck-through first lines - blocker: illegible; struck through by the writer; read only in part</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> leaf, next leaf and margin of La Guiche checked; fr. 3138 view 70 has Morvilliers' 1549 letter with its decipherment (a different key)</li><li>&#9745; <b>clear-pages</b> La Guiche has no decipherment on the leaf, the next leaf or the margin</li><li>&#9744; <b>print</b> not done — only a web search; Ribier, Lettres et memoires d'estat (1666), not grepped for this letter (Gallica and HathiTrust refused this session's requests on 14 Oct 2026)</li><li>&#9745; <b>key-rebuild</b> permutation anneal (solve1.py) plus refine.py with fixed signs; qu, p, y, v fixed by context</li><li>&#9745; <b>retry</b> the second pass of 30 Sept 2026 re-read every doubtful sign on the image with the extended key (+ = b, ff c = ss, the L2x run, X -&gt; B in 'service'), see Corrections</li></ul>
 

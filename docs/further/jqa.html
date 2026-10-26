@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,10 +71,10 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/jqa (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [needs-physical-access: needs new material] rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
-  2. [no-key-material: needs new material] rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
-  3. [no-key-material: needs new material] rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; no occurrence in any decoded frame or Ford block read
-  4. [no-key-material: needs new material] rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: no-key-material
+  1. [needs-physical-access: needs a new source] rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
+  2. [no-key-material: needs a new source] rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
+  3. [no-key-material: needs a new source] rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; no occurrence in any decoded frame or Ford block read
+  4. [no-key-material: needs a new source] rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: no-key-material
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: clerk interlinear decodes on 0047, 0048, 0182-0185, 0189, 0190, 0194R, 0198R, 0206, 0210-0211, 0247 (`clerk_*.tsv`); 0056-57 are a clear decyphered copy, 0228-0233 No. 95 code only
@@ -94,8 +94,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -120,6 +121,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">needs the archive</span> rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread</li><li><span class="gap">no key known</span> rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs</li><li><span class="gap">no key known</span> rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; no occurrence in any decoded frame or Ford block read</li><li><span class="gap">no key known</span> rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: no-key-material</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> clerk interlinear decodes on 0047, 0048, 0182-0185, 0189, 0190, 0194R, 0198R, 0206, 0210-0211, 0247 (`clerk_*.tsv`); 0056-57 are a clear decyphered copy, 0228-0233 No. 95 code only</li><li>&#9745; <b>clear-pages</b> Ford vol. 4 decipherments aligned for 39 coded 1811 blocks and 8 despatches of Oct 1811-Sept 1812, No. 95 against the Department's clear copy on 0230-0232 (`ford_pairs*.tsv`, `ford1812_pairs*.tsv`)</li><li>&#9745; <b>known-keys</b> Armstrong's THE=972 table tested and ruled out (18 Sept); Pinkney's London code not found in print or online</li><li>&#9745; <b>print</b> Ford 4:357-358 prints both passages as not decyphered; no other printed reading found; JQA's diary (Primary Source Cooperative) confirms the two strokes at Wilna</li><li>&#9745; <b>key-rebuild</b> table rebuilt to 1,166 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)</li><li>&#9745; <b>retry</b> No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 confirmed; 1097 and 1383 read as JQA's own overwritten digits</li></ul>
 

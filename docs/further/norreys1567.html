@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,10 +71,10 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/norreys1567 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [too-short: needs new material] 9 Mar 1568 item 2 (four signs, "a t ? l") - blocker: too-short; one four-sign word with one unmatched sign; no CSP 2054 word fits; Cabala 1663 checked
-  2. [too-short: needs new material] 9 Mar 1568 item 3 (name sign, Queen of Scots? graded I) - blocker: too-short; single nomenclator sign read by position only; the name table is not printed in Cabala
-  3. [no-key-material: needs new material] sibling groups: 4 June 1567 (1, 3, 4, 7), 10 July (2 tail), 6 Feb (12, 20, 23), 9 Feb (1, 10, 11), 24 Feb (1, 7) - blocker: no-key-material; garbled with Tomokiyo's table; 4 June line transcription needs redoing
-  4. [needs-physical-access: needs new material] siblings 1567-68 decoded word by word, no sentences (v3 check 23 Oct 2026) - blocker: needs-physical-access; Forbes copied only the ciphered words; the originals with their clear text are TNA SP 70/96-97 (State Papers Online, not reached)
+  1. [too-short: needs a new source] 9 Mar 1568 item 2 (four signs, "a t ? l") - blocker: too-short; one four-sign word with one unmatched sign; no CSP 2054 word fits; Cabala 1663 checked
+  2. [too-short: needs a new source] 9 Mar 1568 item 3 (name sign, Queen of Scots? graded I) - blocker: too-short; single nomenclator sign read by position only; the name table is not printed in Cabala
+  3. [no-key-material: needs a new source] sibling groups: 4 June 1567 (1, 3, 4, 7), 10 July (2 tail), 6 Feb (12, 20, 23), 9 Feb (1, 10, 11), 24 Feb (1, 7) - blocker: no-key-material; garbled with Tomokiyo's table; 4 June line transcription needs redoing
+  4. [needs-physical-access: needs a new source] siblings 1567-68 decoded word by word, no sentences (v3 check 23 Oct 2026) - blocker: needs-physical-access; Forbes copied only the ciphered words; the originals with their clear text are TNA SP 70/96-97 (State Papers Online, not reached)
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: all Norreys extracts on f. 160-161 (R9250 p. 2, R9251) transcribed and read
@@ -93,8 +93,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -119,6 +120,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">too short to break</span> 9 Mar 1568 item 2 (four signs, "a t ? l") - blocker: too-short; one four-sign word with one unmatched sign; no CSP 2054 word fits; Cabala 1663 checked</li><li><span class="gap">too short to break</span> 9 Mar 1568 item 3 (name sign, Queen of Scots? graded I) - blocker: too-short; single nomenclator sign read by position only; the name table is not printed in Cabala</li><li><span class="gap">no key known</span> sibling groups: 4 June 1567 (1, 3, 4, 7), 10 July (2 tail), 6 Feb (12, 20, 23), 9 Feb (1, 10, 11), 24 Feb (1, 7) - blocker: no-key-material; garbled with Tomokiyo's table; 4 June line transcription needs redoing</li><li><span class="gap">needs the archive</span> siblings 1567-68 decoded word by word, no sentences (v3 check 23 Oct 2026) - blocker: needs-physical-access; Forbes copied only the ciphered words; the originals with their clear text are TNA SP 70/96-97 (State Papers Online, not reached)</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all Norreys extracts on f. 160-161 (R9250 p. 2, R9251) transcribed and read</li><li>&#9745; <b>known-keys</b> R9257, R9260, R9261, R9262 compared (no match); Tomokiyo Cecil-Norris table applied (fits)</li><li>&#9745; <b>print</b> CSP Foreign viii, Cabala 1663 pp. 142-173, Tomokiyo elizabeth.htm</li><li>&#9744; <b>key-rebuild</b> not done — fill g/k/q/w and the loop sign from all Cabala pp. 142-173 cipher passages, not only p. 152</li><li>&#9744; <b>retry</b> not done — re-transcribe the 4 June line and rerun the unread sibling groups; TNA SP 70/96-97 originals (State Papers Online) not seen</li></ul>
 

@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,12 +71,12 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/sadoleto1482 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [illegible: needs new material] R1106 decoded, not read (23 Oct 2026: slips 26a/26b transcribed, partial reading R1106_reading.md; the 26a part holds, the 26b part keeps holes in most sentences) - blocker: illegible; the right halves of 26b and of p. 3 are faded on the only photographs
-  2. [illegible: needs new material] R1103 decoded, not read (one word from the faded block; re-cropped 23 Oct 2026, nothing more accepted) - blocker: illegible; see the R1103 line below
-  3. [no-key-material: needs new material] R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: no-key-material; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
-  4. [illegible: needs new material] R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed
-  5. [not-attempted: work left] R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished
-  6. [illegible: needs new material] R1106, internal completeness against 26a/26b - blocker: illegible; 26a collated in full (R1106_reading.md), 26b's right half faded
+  1. [illegible: needs a new source] R1106 decoded, not read (23 Oct 2026: slips 26a/26b transcribed, partial reading R1106_reading.md; the 26a part holds, the 26b part keeps holes in most sentences) - blocker: illegible; the right halves of 26b and of p. 3 are faded on the only photographs
+  2. [illegible: needs a new source] R1103 decoded, not read (one word from the faded block; re-cropped 23 Oct 2026, nothing more accepted) - blocker: illegible; see the R1103 line below
+  3. [no-key-material: needs a new source] R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: no-key-material; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked
+  4. [illegible: needs a new source] R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed
+  5. [not-attempted: doable now] R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished
+  6. [illegible: needs a new source] R1106, internal completeness against 26a/26b - blocker: illegible; 26a collated in full (R1106_reading.md), 26b's right half faded
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: DECODE R1100-R1118 metadata and images; Vestigia 85 Sadoleto items; clear copies 7a, 13a/13b, 26a/26b found
@@ -96,8 +96,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -122,6 +123,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">hard to read on the scan</span> R1106 decoded, not read (23 Oct 2026: slips 26a/26b transcribed, partial reading R1106_reading.md; the 26a part holds, the 26b part keeps holes in most sentences) - blocker: illegible; the right halves of 26b and of p. 3 are faded on the only photographs</li><li><span class="gap">hard to read on the scan</span> R1103 decoded, not read (one word from the faded block; re-cropped 23 Oct 2026, nothing more accepted) - blocker: illegible; see the R1103 line below</li><li><span class="gap">no key known</span> R1102, unresolved U labels, connective words, code 494 and group 3ί2ии - blocker: no-key-material; no clear copy of R1102 found; repeats in nos. 18-28 not yet checked</li><li><span class="gap">hard to read on the scan</span> R1103, 4-line faded block on p. 2 - blocker: illegible; badly faded, fragments only; UV/multispectral imaging or the ASMo original needed</li><li><span class="gap w">not yet tried</span> R1101, whole-letter word-by-word collation with 7a - blocker: not-attempted; local passages agree; full collation unfinished</li><li><span class="gap">hard to read on the scan</span> R1106, internal completeness against 26a/26b - blocker: illegible; 26a collated in full (R1106_reading.md), 26b's right half faded</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> DECODE R1100-R1118 metadata and images; Vestigia 85 Sadoleto items; clear copies 7a, 13a/13b, 26a/26b found</li><li>&#9745; <b>clear-pages</b> 7a, 13a, 26a/26b aligned; June 24 marginal annotation located; R1102 p. 3/4 cipher found</li><li>&#9744; <b>known-keys</b> not done — the 1479-80 Sadoleto-Naples key (ASMo Cifrario b. 4 fasc. 1, Cremonini n. 39) not compared; not digitised</li><li>&#9745; <b>print</b> Vestigia 3 (Mátyus, Somogyi), MDE, Cremonini 2017, Tomokiyo: no decipherment printed</li><li>&#9745; <b>key-rebuild</b> key_working.md from 7a/13a; ff and z controls, repeated K, dom/X verified</li><li>&#9744; <b>retry</b> not done — sweep nos. 18-28 for repeats of 494 and 3ί2ии, then rerun R1102's U labels</li></ul>
 

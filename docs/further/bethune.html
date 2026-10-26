@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,11 +71,11 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/bethune (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [illegible: needs new material] 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
-  2. [illegible: needs new material] 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
-  3. [no-key-material: needs new material] code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: no-key-material; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned
-  4. [not-attempted: work left] Halphen 1889 (HathiTrust iau.31858014633857, full view): may print the 9 and 22 Nov letters in clear - blocker: not-attempted; behind a human-verification page, to be opened by a person
-  5. [needs-physical-access: needs new material] clear copies in BnF Cinq cents de Colbert 346 - blocker: needs-physical-access; copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)
+  1. [illegible: needs a new source] 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
+  2. [illegible: needs a new source] 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
+  3. [no-key-material: needs a new source] code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: no-key-material; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned
+  4. [not-attempted: doable now] Halphen 1889 (HathiTrust iau.31858014633857, full view): may print the 9 and 22 Nov letters in clear - blocker: not-attempted; behind a human-verification page, to be opened by a person
+  5. [needs-physical-access: needs a new source] clear copies in BnF Cinq cents de Colbert 346 - blocker: needs-physical-access; copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: f. 36 minute read the 10 Nov letter; glossed leaves ff. 49v-50r, 53r, 56r-57r examined
@@ -95,8 +95,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -121,6 +122,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">hard to read on the scan</span> 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key</li><li><span class="gap">hard to read on the scan</span> 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling</li><li><span class="gap">no key known</span> code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: no-key-material; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned</li><li><span class="gap w">not yet tried</span> Halphen 1889 (HathiTrust iau.31858014633857, full view): may print the 9 and 22 Nov letters in clear - blocker: not-attempted; behind a human-verification page, to be opened by a person</li><li><span class="gap">needs the archive</span> clear copies in BnF Cinq cents de Colbert 346 - blocker: needs-physical-access; copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> f. 36 minute read the 10 Nov letter; glossed leaves ff. 49v-50r, 53r, 56r-57r examined</li><li>&#9745; <b>clear-pages</b> f. 36 is the clear minute of f. 34; marginal glosses on ff. 53r, 56r found verbatim</li><li>&#9745; <b>known-keys</b> Bazeries 1901 key for Bethune 1599 compared: same design, different values</li><li>&#9744; <b>print</b> Halphen, Lettres inedites ... 18 oct - 24 dec 1601 located 22 Oct 2026 in full view on HathiTrust (iau.31858014633857) but behind human verification, not opened; Xivrey, Colbert 17, fr. 3677/3678, Tomokiyo, DECODE checked</li><li>&#9744; <b>key-rebuild</b> not done - align the eight f. 53r cipher lines (cut.py 113 ...) and the f. 56r block against their verbatim glosses to fix 66, 72 and the name figures</li><li>&#9744; <b>retry</b> not done - rerun em_align.py / decode2.py on f. 33 and ff. 46-47 after the gloss alignments</li></ul>
 

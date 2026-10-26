@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,9 +71,9 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/ronquillo1676 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [illegible: needs new material] R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key
-  2. [no-key-material: needs new material] R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups (138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc) - blocker: no-key-material; no margin on either letter and no gloss for these codes in the eighteen margins; R982 is a soft scan (4/7/9 not distinguishable)
-  3. [illegible: needs new material] single uncertain words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001 - blocker: illegible; margin faded or blotted at that word and the figures do not settle it
+  1. [illegible: needs a new source] R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key
+  2. [no-key-material: needs a new source] R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups (138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc) - blocker: no-key-material; no margin on either letter and no gloss for these codes in the eighteen margins; R982 is a soft scan (4/7/9 not distinguishable)
+  3. [illegible: needs a new source] single uncertain words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001 - blocker: illegible; margin faded or blotted at that word and the figures do not settle it
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: all twenty letters of SEG 2559 taken; R1000 already decrypted on DECODE
@@ -92,8 +92,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -118,6 +119,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">hard to read on the scan</span> R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key</li><li><span class="gap">no key known</span> R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups (138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc) - blocker: no-key-material; no margin on either letter and no gloss for these codes in the eighteen margins; R982 is a soft scan (4/7/9 not distinguishable)</li><li><span class="gap">hard to read on the scan</span> single uncertain words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001 - blocker: illegible; margin faded or blotted at that word and the figures do not settle it</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all twenty letters of SEG 2559 taken; R1000 already decrypted on DECODE</li><li>&#9745; <b>clear-pages</b> eighteen margin decipherments transcribed from the images and aligned with the key decode (22 Oct 2026; R970 and R973 margins found in DECODE comments)</li><li>&#9745; <b>known-keys</b> Balbases 1677 key (with hernannunez1674 additions) fits unchanged</li><li>&#9745; <b>key-rebuild</b> 22 Oct 2026, about 60 code values from the margins added to keyx.py (conflicting groups left as they were, listed above)</li><li>&#9745; <b>retry</b> 22 Oct 2026, every letter built into sentences and translated; R982 and R984 re-transcribed from the images and read with the key (read/R*_reading.md, _en.md)</li></ul>
 

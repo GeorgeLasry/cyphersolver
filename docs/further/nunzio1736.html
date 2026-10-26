@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,9 +71,9 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/nunzio1736 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [needs-physical-access: needs new material] 11 nomenclator groups seen once in letters that read (1200, 1335, 1960, 1985 in 423/2; 1232, 1469, 1698, 1942 in 423/7; 1636 in 423/8) - blocker: needs-physical-access; no copy of 423/2, 7, 8 is among the DECODE attachments, the copies or minutes would have to be found in Spagna 423 itself
-  2. [too-short: needs new material] 423/1 groups 1268, 1765, 1847 - blocker: too-short; one occurrence each, the words carried by the copy
-  3. [needs-physical-access: needs new material] the minutes of these letters (Archivio della Nunziatura di Madrid) - blocker: needs-physical-access
+  1. [needs-physical-access: needs a new source] 11 nomenclator groups seen once in letters that read (1200, 1335, 1960, 1985 in 423/2; 1232, 1469, 1698, 1942 in 423/7; 1636 in 423/8) - blocker: needs-physical-access; no copy of 423/2, 7, 8 is among the DECODE attachments, the copies or minutes would have to be found in Spagna 423 itself
+  2. [too-short: needs a new source] 423/1 groups 1268, 1765, 1847 - blocker: too-short; one occurrence each, the words carried by the copy
+  3. [needs-physical-access: needs a new source] the minutes of these letters (Archivio della Nunziatura di Madrid) - blocker: needs-physical-access
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: R179-R188 and R26 are the whole series; read together, the key corrected across all of them
@@ -93,8 +93,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -119,6 +120,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">needs the archive</span> 11 nomenclator groups seen once in letters that read (1200, 1335, 1960, 1985 in 423/2; 1232, 1469, 1698, 1942 in 423/7; 1636 in 423/8) - blocker: needs-physical-access; no copy of 423/2, 7, 8 is among the DECODE attachments, the copies or minutes would have to be found in Spagna 423 itself</li><li><span class="gap">too short to break</span> 423/1 groups 1268, 1765, 1847 - blocker: too-short; one occurrence each, the words carried by the copy</li><li><span class="gap">needs the archive</span> the minutes of these letters (Archivio della Nunziatura di Madrid) - blocker: needs-physical-access</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> R179-R188 and R26 are the whole series; read together, the key corrected across all of them</li><li>&#9745; <b>clear-pages</b> the 26 IMG pages carry no decipherment; 23 Oct: the 'cleartext' png attachments hold the contemporary clear copies of 423/1, 4, 5, 6, 9, 10, 11</li><li>&#9745; <b>known-keys</b> Lasry's "ASV - S423" is the only key; corrected (25, 30, 69, 93) and its nomenclator extended</li><li>&#9745; <b>print</b> web search, no edition of the 1736 ciphers to Guiccioli; minutes in the Madrid nunciature archive, not online</li><li>&#9745; <b>key-rebuild</b> four earlier nomenclator values replaced, about 65 groups valued from context (texts/b04_key_additions.txt)</li><li>&#9745; <b>retry</b> 423/2 and 423/4-11 re-read 22 Oct; 23 Oct every attachment opened at full resolution, the clear copies found and aligned, 423/1, 5, 9, 11 read, every open group retried with the extended key (12 tokens left, each seen once)</li></ul>
 

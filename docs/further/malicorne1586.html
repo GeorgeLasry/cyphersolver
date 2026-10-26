@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,10 +71,10 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/malicorne1586 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [no-key-material: needs new material] f. 162v and canvases 171-172 (four pages): decoded, not read (read share 0.565-0.790) - blocker: no-key-material; readings built and the split candidates checked (issue #92); no contemporary decipherment of these pages or of another letter in this key
-  2. [not-attempted: work left] `Lb`/`Lm` on f. 162r, f. 163 and canvas 171, and `cr` (h / s) - blocker: not-attempted; f. 162r positions are misaligned and f. 163 and canvas 171 have none; new positions would have to be cut
-  3. [no-key-material: needs new material] f. 162r and f. 163r B: decoded, not read (0.622, 0.694) - blocker: no-key-material; 13 labels still carry two values with shapes not split at this resolution, and the B margin is mostly illegible between 'argent' and 'descouvertes'
-  4. [too-short: needs new material] f. 163r A: the opening group, the word before 'porteur', the supplied l of lesdicts - blocker: too-short; single groups at the edges of a two-line stretch with no margin word
+  1. [no-key-material: needs a new source] f. 162v and canvases 171-172 (four pages): decoded, not read (read share 0.565-0.790) - blocker: no-key-material; readings built and the split candidates checked (issue #92); no contemporary decipherment of these pages or of another letter in this key
+  2. [not-attempted: doable now] `Lb`/`Lm` on f. 162r, f. 163 and canvas 171, and `cr` (h / s) - blocker: not-attempted; f. 162r positions are misaligned and f. 163 and canvas 171 have none; new positions would have to be cut
+  3. [no-key-material: needs a new source] f. 162r and f. 163r B: decoded, not read (0.622, 0.694) - blocker: no-key-material; 13 labels still carry two values with shapes not split at this resolution, and the B margin is mostly illegible between 'argent' and 'descouvertes'
+  4. [too-short: needs a new source] f. 163r A: the opening group, the word before 'porteur', the supplied l of lesdicts - blocker: too-short; single groups at the edges of a two-line stretch with no margin word
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: all six pages of the letter transcribed by Brackx; Camus's and Matignon's ciphers in the same volume are other keys
@@ -94,8 +94,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -120,6 +121,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">no key known</span> f. 162v and canvases 171-172 (four pages): decoded, not read (read share 0.565-0.790) - blocker: no-key-material; readings built and the split candidates checked (issue #92); no contemporary decipherment of these pages or of another letter in this key</li><li><span class="gap w">not yet tried</span> `Lb`/`Lm` on f. 162r, f. 163 and canvas 171, and `cr` (h / s) - blocker: not-attempted; f. 162r positions are misaligned and f. 163 and canvas 171 have none; new positions would have to be cut</li><li><span class="gap">no key known</span> f. 162r and f. 163r B: decoded, not read (0.622, 0.694) - blocker: no-key-material; 13 labels still carry two values with shapes not split at this resolution, and the B margin is mostly illegible between 'argent' and 'descouvertes'</li><li><span class="gap">too short to break</span> f. 163r A: the opening group, the word before 'porteur', the supplied l of lesdicts - blocker: too-short; single groups at the edges of a two-line stretch with no margin word</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all six pages of the letter transcribed by Brackx; Camus's and Matignon's ciphers in the same volume are other keys</li><li>&#9745; <b>clear-pages</b> the f. 163r margin decipherment used as the crib; no clear copy found among ff. 162-173</li><li>&#9745; <b>known-keys</b> Tomokiyo's Malycorne table applied and corrected</li><li>&#9745; <b>print</b> Tomokiyo gives the key table only; no edition found by Brackx's web search</li><li>&#9745; <b>key-rebuild</b> aligned decodes of all six pages and the 195-label shape legend (23 Oct 2026); split candidates checked on tiles (25 Oct 2026): `Lb` split, `F`, `Lm`, `y_` not, `cr` probable</li><li>&#9745; <b>retry</b> all four pages re-decoded after the `Lb` split (no letter changes) and read in the f. 163r format (Brackx, 25 Oct 2026)</li></ul>
 

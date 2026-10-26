@@ -21,7 +21,7 @@
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Thirty favourites: the funny, the historic, the ingenious</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="famous.html"><b>The famous ones</b><span class="d">Why Voynich, Kryptos, Beale and Dorabella resist</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key read which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
-    <a href="further.html" aria-current="page">Read further</a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a href="contributors.html">Contributors</a>
     <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
     <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
@@ -71,10 +71,10 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/rangone1530 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [too-short: needs new material] A1 "instantia [y S] de ven[i]re" and A2 "loro [y] le mie" (3 signs) - blocker: too-short; y occurs twice (same sign, checked at full resolution), "me" fits A1, no letter fits A2; S occurs once
-  2. [too-short: needs new material] A6 "la [xo]icon puorano" (12 signs) - blocker: too-short; xo occurs once, the X is not the cursive c of A2, no corpus match for any value
-  3. [too-short: needs new material] B3 "de [a]en" (3 signs) - blocker: too-short; sign a occurs once, "ben" and "Gen(ova)" both fit
-  4. [too-short: needs new material] B4 "il f[?] da" (1 sign) - blocker: too-short; sign with a back-loop, occurs once, not the f of A4
+  1. [too-short: needs a new source] A1 "instantia [y S] de ven[i]re" and A2 "loro [y] le mie" (3 signs) - blocker: too-short; y occurs twice (same sign, checked at full resolution), "me" fits A1, no letter fits A2; S occurs once
+  2. [too-short: needs a new source] A6 "la [xo]icon puorano" (12 signs) - blocker: too-short; xo occurs once, the X is not the cursive c of A2, no corpus match for any value
+  3. [too-short: needs a new source] B3 "de [a]en" (3 signs) - blocker: too-short; sign a occurs once, "ben" and "Gen(ova)" both fit
+  4. [too-short: needs a new source] B4 "il f[?] da" (1 sign) - blocker: too-short; sign with a back-loop, occurs once, not the f of A4
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: B (fr. 3082 f. 42) found via Clair. 330 f. 206 and read; four other Rangone letters of 1529-30 and the Joachin cipher of 1529 checked, not this cipher
@@ -95,8 +95,9 @@ STEPS
    update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
    (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
    If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
-1. Pick a gap. Start with the ones marked "work left" (open-codes, not-attempted, left-open). A gap marked "needs new
-   material" (no-key-material, too-short, illegible, needs-physical-access) can be closed only by something new: a key
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
    or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
    For those, search for that material first, and say where you looked even when you find nothing.
 2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
@@ -121,6 +122,7 @@ Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new
 If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
 
 <h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
 <ul class="gaplist"><li><span class="gap">too short to break</span> A1 "instantia [y S] de ven[i]re" and A2 "loro [y] le mie" (3 signs) - blocker: too-short; y occurs twice (same sign, checked at full resolution), "me" fits A1, no letter fits A2; S occurs once</li><li><span class="gap">too short to break</span> A6 "la [xo]icon puorano" (12 signs) - blocker: too-short; xo occurs once, the X is not the cursive c of A2, no corpus match for any value</li><li><span class="gap">too short to break</span> B3 "de [a]en" (3 signs) - blocker: too-short; sign a occurs once, "ben" and "Gen(ova)" both fit</li><li><span class="gap">too short to break</span> B4 "il f[?] da" (1 sign) - blocker: too-short; sign with a back-loop, occurs once, not the f of A4</li></ul>
 <h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> B (fr. 3082 f. 42) found via Clair. 330 f. 206 and read; four other Rangone letters of 1529-30 and the Joachin cipher of 1529 checked, not this cipher</li><li>&#9745; <b>clear-pages</b> none; both Clairambault copies reproduce the cipher without decipherment</li><li>&#9745; <b>known-keys</b> Lasry GL.htm keys and the repository's Visconti, Bizozola, Sormano, Gramont keys compared by sign set; none shares it</li><li>&#9745; <b>print</b> Tomokiyo francis.htm (lists both copies as undeciphered), DECODE, DBI Fregoso and Rangoni lives, web search: no decipherment or edition</li><li>&#9745; <b>key-rebuild</b> annealing from random starts found the key; sensitivity, hand corrections and word-aware coordinate ascent extended it</li><li>&#9745; <b>retry</b> every open sign brute-forced singly and in pairs with the spaced model; no reading beats the others</li><li>&#9745; <b>re-transcription</b> (5 Oct 2026): open runs re-read at full resolution from Gallica natives; B3 d = i gives "ruina"; A6 X, B4 sign doubts recorded; corpus pattern search over every open run</li></ul>
 
