@@ -13277,3 +13277,9 @@ Set 441: large square seals carry the closing formula 705 / 706 33 (520) (`predi
 - **FR1** Large rectangular seals (own median) carry the closing formula more often (Fisher one-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-second set (`predict_test442.py`, `results/predict_test442.md`)
+
+Both failed. '33 520' without a stroked U before it is too rare on sized square seals for the strata (degenerate odds
+ratio, p = 1.0): the unit almost always follows 705 / 706. On rectangular seals the formula leans large (11 of 122
+against 5 of 126, p = 0.086). Progress: none (goal streak 1). Tally, counting parts: 1636 held, 1635 failed (3275
+registered).
