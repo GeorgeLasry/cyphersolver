@@ -14648,3 +14648,13 @@ failed (3423 registered).
 ## Results of set 535 (`goal_driver.py`, `results/predict_test535.md`)
 
 161 odds ratio 0.88 (p = 0.8713); 171 odds ratio 0.41 (p = 0.3097). Progress: none (goal streak 20).
+
+
+# Set 536, registered before testing (26 October 2026): session-2 goal loop 1, the closing formula as a role (two hypotheses)
+
+The other run found the closing formula '705 / 706 33 520' to be the long form of the fish name class (sets 445-457).
+Its tokens not already given a role get a 'closing formula' role (`hyp_formula_role.py`, `mydriver.py`).
+
+- **FR1** The role raises R by 0.5 points or more on the distinct lines.
+- **FR2** The formula closes the line (last, or followed only by 400 / 90) in 80%+ of its occurrences on A and on B.
+- Progress rule: FR1 and FR2.
