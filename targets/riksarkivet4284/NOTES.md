@@ -1,7 +1,8 @@
 # Latin numerical cipher letter of 1628, Riksarkivet Chifferklaver låda II:114 (DECODE R4284)
 
-Status: attempted, open — 0 of 822 number groups deciphered; homophonic Latin annealing and two box keys failed; the
-escalation (the other 68 box keys, the key-test leaf, Camerarius editions) is not done.
+Status: in progress (26 Oct 2026). **Key matched: DECODE R4325, the horizontal alphabet strip on I25940** (Dolly
+Moulekhi, issue #98). The numbers decode into 17th-century Swedish with enciphered Latin phrases; decoded, not read
+(no segmented reading or translation yet). Earlier: attempted, open (0 of 822 groups).
 
 Split on 14 Oct 2026 from `riksarkivet1628` under the one-key rule (George Lasry, 14 Oct 2026). Catalogue item 207
 bundled 14 Riksarkivet records; they are unrelated ciphers, each now with its own entry: the Bremen letters of 1631
@@ -39,16 +40,43 @@ doubtful form as a value of its own).
    (R4310, a = 9 50 71 86) and the 1632 key whose 30 ends every word (R4296) tested: neither fits.
 3. (14 Oct 2026) Split from riksarkivet1628; transcription re-measured. No new attack.
 
+## 26 Oct 2026: key matched by Dolly Moulekhi (issue #98)
+
+**The key.** Dolly Moulekhi (@dollymoulekhi, with AI assistance in Cursor) found that the separate horizontal alphabet
+strip on DECODE **R4325** (Chifferklaver låda II:152, image I25940, left page, below the first square grid; not the
+grid) decodes this letter. R4325 was among the 70 key records fetched here on 21 Sept 2026 but never tried. Her
+transcription of the strip was checked here on the image (26 Oct 2026, PDF rendered at 400 dpi) and agrees in all 104
+values: four numbers per letter (a 5 29 55 102, e 9 37 57 104 ...), Y and Z sharing one column (24 50 75 82), *å* 25
+53 80 108, *ä* 27 54 79 107, *ö* 26 52 81 106, and 22, 51, 74, 89 unused.
+
+**The decode** (`moulekhi2026/reviewed_literal.txt`, 41 lines; token by token in `reviewed_number_to_letter.txt`):
+729 of 754 numbers take a letter; 23 large groups (952, 347, 831 ...) and two doubtful tokens are unresolved, probably
+word codes from R4325's lists or joined numbers. It runs as 17th-century Swedish, with Latin enciphered as well as in
+clear: *kunna giöra*, *orsak skull negociera*, *giorde ios der med een behageligt tienst och dette kunde skee på
+några …*, *media quae longum foret recensere*, *nobis et patriae securum*, *hafwa allaredan så många hamnar inne i
+Östersiön*, *det intet rådeligt ähr att öfwerlåta dem*, *sina barn och arfwingar som för sina wenner och förwanter*,
+*communicera med eder för denna gången*. So the letter is mostly Swedish, not Latin as catalogued, and concerns
+harbours in the Baltic (*Östersiön*). Her transcription review changed some readings of ours (`line_review.json`); the
+original export is kept beside it.
+
+**Validation** (`docs/_validate.py`, `validation.tsv`, model sv-modern, unresolved groups, y/z and clear spans unread):
+reading -3.123 per letter, random keys -6.458 (z 8.6), a key annealed onto the shuffled ciphertext -3.342 (best
+-3.217, z 2.4), annealer power -2.996. **Verdict: underdetermined.** The decode beats every shuffled fit, but not by
+3 sd: 754 tokens over 104 symbol values is thin for a letter model, the text mixes Swedish and Latin, and the model is
+modern Swedish. The evidence for the match is the archival key itself, applied unchanged, and the running Swedish it
+gives.
+
 ## Remaining gaps
-- R4284, all number groups - blocker: not-attempted; homophonic Latin annealing gave nonsense; only R4310 and R4296 of the 70 fetched key records tried; the key-test leaf is unused
+- R4284: no segmented reading or translation yet (decoded, not read) - blocker: not-attempted; segment the decode into Swedish and Latin words, mark the anomalous strings, and translate
+- 23 large number groups and 2 doubtful tokens - blocker: not-attempted; try R4325's word-code lists on them, and re-read the doubtful multi-digit numbers on the image (some may be two numbers run together)
 
 ## Escalation
 - [x] siblings: all 14 records of catalogue 207 opened; 70 Chifferklaver key records R4259-R4329 fetched
 - [ ] clear-pages: not done — the key-test leaf (four phrases over letter-cipher signs) not used
-- [ ] known-keys: not done — only R4310 and R4296 tested; 68 key records untried
+- [x] known-keys: **R4325's alphabet strip fits** (Moulekhi, 25 Oct 2026; checked on the image here); earlier only R4310 and R4296 had been tried
 - [ ] print: not done — Camerarius correspondence editions not searched
 - [x] key-rebuild: blind homophonic annealing on Latin (21 Sept 2026), no result
-- [ ] retry: not done — no key to rerun with
+- [ ] retry: the reading and the large groups are still to do with the key in hand
 
 ## Next
 
