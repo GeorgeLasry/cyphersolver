@@ -13512,3 +13512,9 @@ Set 446: fish stand before the formula far more than before 740. Before plain 52
 - **FX2** The same on B.
 - Progress rule: both hold. Both failing means the formula is the 520 class in a fuller form, nothing more.
 
+## Results of the four-hundred-and-fifty-seventh set (`predict_test457.py`, `results/predict_test457.md`)
+
+Both failed. Fish before the formula 53 of 73 against 76 of 125 before plain 520 (A, p = 0.12); 21 of 32 against 17 of
+40 (B, p = 0.061). The formula takes the same name class as plain 520: it is the 520 class in a fuller form, used on
+larger seals (sets 441, 446). Progress: none (goal streak 11). Tally, counting parts: 1644 held, 1656 failed (3304
+registered).
