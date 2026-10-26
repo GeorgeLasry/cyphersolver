@@ -478,3 +478,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-40 | 575 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | two openers lead into different texts: openers: [False, True]. (no progress; session-2 goal streak 13) |
 | S2-41 | 576 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | signs that never take an ending: noend: [False]. (no progress; session-2 goal streak 14) |
 | S2-42 | 577 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | rare signs stand mid-line: A 234/453 vs 4772/7855; B 56/110 vs 2195/3877. (no progress; session-2 goal streak 15) |
+| S2-43 | 578 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | rare signs come in long lines: A mean 5.00 (437) vs 4.50 (1479); B mean 4.32 (132) vs 3.78 (1043). (progress; session-2 goal streak 0) |

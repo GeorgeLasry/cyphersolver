@@ -15255,3 +15255,7 @@ Held: none. A 234/453 vs 4772/7855; B 56/110 vs 2195/3877. Progress: none (sessi
 - **R1** On A: rare signs come in long lines (p < 0.05).
 - **R2** The same on B.
 - Progress rule: R1 and R2.
+
+## Results of set 578 (`hyp_s2_r_rarelong.py`, `results/predict_test578.md`)
+
+Held: R1, R2. A mean 5.00 (437) vs 4.50 (1479); B mean 4.32 (132) vs 3.78 (1043). Progress: yes (session-2 goal streak 0).
