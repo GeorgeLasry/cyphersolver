@@ -1,0 +1,168 @@
+{
+ "schema_version": 1,
+ "target": "reede1796",
+ "title": "Van Reede's code passages to the Hereditary Prince and Princess Wilhelmina, 1796-1807 (KHA A35-1232, A32-549)",
+ "documents": [
+  {
+   "id": "A35-1232 (1796-1807)",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A35 Willem I, inv. A35-1232",
+   "date": "1796/1807",
+   "year": 1796,
+   "country": "Prussia",
+   "route": "A.W. van Reede (Berlin, Blankenburg) -> Hereditary Prince Willem Frederik",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on seven passages; name glosses on 144358 and meanings in the Prince's draft 144386."
+   },
+   "length": {
+    "tokens": 1512,
+    "distinct": 678,
+    "unit": "mixed",
+    "measured": true,
+    "file": "runs_a.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "KHA renditions (original size): runs_a.txt, runs_b.txt",
+    "image_quality": "fair",
+    "notes": "Measured file holds context and CT lines; several passages written over invisible-ink text."
+   }
+  },
+  {
+   "id": "A32-549 (1797-1801)",
+   "shelfmark": "Koninklijk Huisarchief, The Hague, A32 Wilhelmina, inv. A32-549 (171667, 171744)",
+   "date": "1797/1801",
+   "year": 1798,
+   "country": "Prussia",
+   "route": "A.W. van Reede (Berlin) -> Princess Wilhelmina",
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on 171667 and 171744; glossed controls 171692, 171693."
+   },
+   "length": {
+    "tokens": "unknown",
+    "distinct": "unknown",
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "runs_b.txt",
+    "image_quality": "fair",
+    "notes": "About 145 groups."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numerical codes: 1796 small numbers (1-3 digits) with accent marks; 1797-1801 a larger list with prefixes and superscripts; neither matches the known 1789-92 or 1795-96 tables.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "144339 speaks of 'valeurs reelles' and 'indicateurs'."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Colenbrander Gedenkstukken II-III searched in full text: not printed",
+   "found": "during attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Lead chosen by the user from the KHA sweep; user asked to transcribe the nine passages and test the reede1789 table and the Euler list.",
+  "tools": [
+   "KHA rendition API (curl)",
+   "PIL crops",
+   "test_keys.py (python)",
+   "Huygens retroboeken full text"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "A35-1232 and A32-549 paired page by page (research/nationaal_archief/k89 pairing files): nine passages without decipherment.",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "transcription",
+   "what": "Nine passages and four glossed control pages transcribed at full size (runs_a.txt, runs_b.txt).",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "reede1789 table and the 1795-96 Euler list tested on the 15 glossed control runs: R 3/13 own gloss vs 2/13 another; E 3/32 vs 0/32. Control values (91 Ivoy, 72 Duc, 13 Athlone, 6/52 Haugwitz) contradict both.",
+   "result": "failed",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "literature search",
+   "what": "Colenbrander Gedenkstukken II and III full text: no Van Reede letter to the Erfprins printed.",
+   "result": "failed",
+   "date": "2026-10-26"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Neither known key of the correspondents fits the glossed controls; the codes of 1796 and 1797-1801 are not rebuildable from about 15 glossed values.",
+  "contribution": [
+   "transcription"
+  ],
+  "class": "unknown",
+  "fraction_read": 0.0,
+  "key": "none",
+  "verification": [],
+  "gaps": [
+   {
+    "item": "nine passages of A35-1232 and A32-549, about 580 groups",
+    "blocker": "no-key-material",
+    "detail": "neither the reede1789 table nor the Euler list fits; too few glosses to rebuild"
+   }
+  ],
+  "notes": "In progress."
+ }
+}
