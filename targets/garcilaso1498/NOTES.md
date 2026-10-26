@@ -106,6 +106,7 @@ cipher.
 - [x] known-keys: all of BRAH 9/15 (R9815–R9832, R9486), Escrivà 1 and 2, the Cifra general, RAH 9/7–9/8 records; none fits
 - [x] print: Parisi 2004, Galende 1994, Villanueva Morte 2025, Tomokiyo; McPheeters 1989 not seen
 - [x] key rebuild: ciphertext-only homophonic annealing with an in-domain model; failed (control below the bar)
+- [ ] print/archive (next): AGS Patronato Real on PARES may hold Garcilaso's own Rome despatches of 1494-99 with their decipherments; the PARES search returned HTTP 429 (rate limit) on 26 Oct 2026, both scripted and in the browser, so it is untried. Search `catalogo/find?texto=Garcilaso de la Vega&anio1=1494&anio2=1500` first
 - [ ] retry: needs images of RAH Salazar A-11 ff. 109–111 and 121–125 (Garcilaso's cipher letters with their
   decipherments); request from the RAH, then rebuild the alphabet and code from the 1496 letters and apply it here
 
