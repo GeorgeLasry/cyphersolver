@@ -14002,3 +14002,12 @@ Clean ICIT seals with texts of 2+ signs; pairs of seals with the identical text;
 
 Both failed. Mohenjo-daro copies share the phase in 13 of 19 pairs (p = 0.063); workmanship in 52 of 190 (p = 0.88).
 Progress: none (goal streak 2). Tally, counting parts: 1658 held, 1706 failed (3369 registered).
+
+# Four-hundred-and-ninety-first set, registered before testing (26 October 2026): goal loop 137, copies: thickness and motif (two hypotheses)
+
+Square seals with identical texts of 2+ signs (`predict_test491.py`).
+
+- **CT1** Copies are closer in thickness (field 33) than seals drawn with the same length and site (1,000 draws).
+- **CT2** At Mohenjo-daro, copies share the motif (field 18) more than with motifs shuffled among the site's seals.
+- Progress rule: either holds.
+
