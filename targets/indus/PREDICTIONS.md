@@ -12714,3 +12714,13 @@ ending labels shuffled among the name tokens, 1,000 times (`predict_test407.py`)
 - **LE2** The same on Mahadevan's texts (sites as M77 records them).
 - Progress rule: both hold.
 
+## Results of the four-hundred-and-seventh set (`predict_test407.py`, `results/predict_test407.md`)
+
+Both failed. 740 and 520 bodies share a city about equally: ICIT seals 151 of 268 against 21 of 36 (p = 0.54);
+Mahadevan's texts 207 of 235 against 17 of 24 (p = 0.23). Personal and star / deity names are not told apart by
+locality, as set 4 found for recurrence. Note on sets 390-391: set 4 (24 Sept) counted, per recurring whole name, whether
+its seals span 2+ sites, and found both classes slightly under a site-shuffled null (54-57% against 62-63%, not
+significant: 'neither class is local'). Sets 390-391 count pairs of distinct objects sharing a name body (up to three
+signs before the ending), which weights common bodies by their pairs; the shuffle null keeps the composition, so the
+result stands, but it rests on frequent bodies more than set 4's per-name measure; the two should be read together.
+Progress: none (goal streak 9). Tally, counting parts: 1620 held, 1585 failed (3205 registered).
