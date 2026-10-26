@@ -13489,3 +13489,12 @@ The control passes. Complete against damaged square seals (2,484 / 772 tokens on
 domain model gains 0.0002 (fixed) and nothing on C. The skew and domain methods of this run do not find effects where
 none can exist (one control; not a full false-positive rate). Progress: none (goal streak 9). Tally, counting parts:
 1642 held, 1653 failed (3299 registered; the two control verdicts counted as held).
+
+# Four-hundred-and-fifty-sixth set, registered before testing (26 October 2026): goal loop 102, a second negative control (two hypotheses)
+
+Odd against even ICIT record numbers: a label with no meaning (`predict_test456.py`).
+
+- **NP1** Set 371's skew test finds no replicated skew (expected verdict 'fails').
+- **NP2** A parity domain model does not pass the rule of set 358 (expected verdict 'fails').
+- Progress rule: none (control).
+
