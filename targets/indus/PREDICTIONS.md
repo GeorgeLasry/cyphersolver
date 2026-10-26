@@ -13037,3 +13037,10 @@ second slot as the converse already on record (set 368 MT2).
 - **KS1** The subtype model passes the rule of set 358 on top of length + site.
 - Progress rule: none (audit). A failure downgrades sets 367 and 369.
 
+## Results of the four-hundred-and-twenty-seventh set (`predict_test427.py`, `results/predict_test427.md`)
+
+KS1 held (audit; the harness's generic 'P holds' line does not apply). On top of plain + length + site, the subtype
+model lowers S from 4.5889 to 4.5627 (fixed, gain 0.0261; signs 5.4971 -> 5.4580) and 4.5535 -> 4.5382 on C (signs
+5.3902 -> 5.3650), controls near zero. With set 368 (site adds 0.0002 on top of the kind models), **the object-kind
+effect is not site**: sets 367 and 369 stand. Progress: none (goal streak 4). Tally, counting parts: 1627 held, 1614
+failed (3245 registered).

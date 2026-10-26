@@ -326,3 +326,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G70 | 424 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: set 423 with site held, OR 1.95, p = 0.063: downgraded to a trend (audit; no progress; goal streak 1) |
 | G71 | 425 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: set 380 holds with site held (OR 1.91, p = 0.005) and within Mohenjo-daro (audit; no progress; goal streak 2) |
 | G72 | 426 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: rectangular/square skews hold within Mohenjo-daro (5 of 5); Harappa too few (audit; no progress; goal streak 3) |
+| G73 | 427 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: subtype gains 0.026 on top of length + site; object-kind effect is not site (audit; no progress; goal streak 4) |
