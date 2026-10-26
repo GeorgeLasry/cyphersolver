@@ -14085,3 +14085,12 @@ Square seals with a motif and a size; other animals against unicorn; Mantel-Haen
 Both failed. Rare signs: odds ratio 0.91 (p = 0.71); unique texts: 1.74 (p = 0.085, set 494's trend). The animal does
 not go with rare signs; seal size does (set 488). Progress: none (goal streak 2). Tally, counting parts: 1661 held, 1713
 failed (3379 registered).
+
+# Four-hundred-and-ninety-sixth set, registered before testing (26 October 2026): goal loop 142, audit of rare signs against the animal (two hypotheses)
+
+Set 488 had no motif strata (`predict_test496.py`).
+
+- **RA1** Rare signs lean to large seals with length band x site x motif (unicorn / other) strata (p < 0.05).
+- **RA2** The same within unicorn seals alone.
+- Progress rule: none (audit). Both failing downgrades set 488.
+
