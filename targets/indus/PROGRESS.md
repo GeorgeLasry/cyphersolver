@@ -398,3 +398,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G142 | 496 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: rare signs on large seals hold with motif held (OR 1.48, p = 0.029) (audit; no progress; goal streak 3) |
 | G143 | 497 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: the formula on large seals holds with motif held and within unicorn seals (audit; no progress; goal streak 4) |
 | G144 | 498 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audits: doubles and repeats on small seals hold with motif held; it is size, not the unicorn (audit; no progress; goal streak 5) |
+| G145 | 499 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audit: core size signs hold with motif held (706 OR 6.4; 156/400/590 OR 0.35) (audit; no progress; goal streak 6) |
