@@ -15294,3 +15294,7 @@ Held: R1, R2. A 5 of 945 initial; B 6 of 353 initial. Progress: none (session-2 
 - **R1** On A: numerals open lines more than other signs (consistency) (p < 0.05).
 - **R2** The same on B.
 - Progress rule: none (re-tests a known rule).
+
+## Results of set 581 (`hyp_s2_r_numinit.py`, `results/predict_test581.md`)
+
+Held: none. A 266/1494 vs 1650/7344; B 158/675 vs 1017/3837. Progress: none (session-2 goal streak 3).
