@@ -13727,3 +13727,13 @@ parts: 1652 held, 1674 failed (3330 registered).
 
 Both failed: fish signs odds ratio 1.25 (p = 0.12), 740 ending 1.02 (p = 0.91). Progress: none (goal streak 2). Tally,
 counting parts: 1652 held, 1676 failed (3332 registered).
+
+# Four-hundred-and-seventy-second set, registered before testing (26 October 2026): goal loop 118, numerals by seal size (two hypotheses)
+
+`sizekit.size_test` (length band x site strata) (`predict_test472.py`). Set 389's TT2 tested any numeral with length
+strata only.
+
+- **SN1** Large and small seals differ in opening with a numeral (two-sided p < 0.05).
+- **SN2** They differ in carrying any numeral (two-sided p < 0.05).
+- Progress rule: either holds.
+
