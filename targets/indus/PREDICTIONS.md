@@ -11901,3 +11901,15 @@ region: the plain U 700 in the north against the stroked U 705 in Sindh (set 189
 and the bull-headed yoke-carriers 154 and 158 in the north; with the marker 400 and the numeral 2, the regions differ
 in spelling and formula habits as much as in words. Progress: a new finding replicated (goal streak 0, loop 10). Tally,
 counting parts: 1595 held, 1517 failed (3112 registered; set 363 pending).
+
+# Three-hundred-and-sixty-fifth set, registered before testing (25 October 2026): goal loop 11, regional variants in graphic families (two hypotheses)
+
+Set 364 found 700 (north) against 705 (Sindh), signs of one family. Generalised: signs with 10+ tokens in Sindh + north
+lines, Sindh / north skew by Fisher; pairs in one decade family both skewed (p < 0.05) in opposite directions are
+counted, against 1,000 equal-sized samples of cross-family pairs (`predict_test365.py`).
+
+- **RA1** Same-family pairs split by region more often than cross-family pairs, on A and on B (p < 0.05 each).
+- **RA2** The Sindh member of an A-split pair shares the preceding signs of its northern partner (cosine of Sindh
+  contexts against northern contexts) more than random northern signs do (p < 0.05): regional variants of one sign.
+- Progress rule: RA1 holds.
+
