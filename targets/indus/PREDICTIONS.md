@@ -13405,3 +13405,8 @@ Square seals with a size; Mantel-Haenszel over length band x site (`predict_test
 - **LM2** Small seals carry '740 400' more often (p < 0.05; 400 is a small-seal sign, set 430).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fiftieth set (`predict_test450.py`, `results/predict_test450.md`)
+
+Both failed. '740 90' odds ratio large/small 0.87 (p = 0.79); '740 400' 0.32 but p = 0.43 (rare on seals). Only the fish
+names' long form is a size form. Progress: none (goal streak 4). Tally, counting parts: 1640 held, 1647 failed (3291
+registered).

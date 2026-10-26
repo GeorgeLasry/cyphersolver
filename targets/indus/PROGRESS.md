@@ -349,3 +349,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G93 | 447 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long-form fish names on larger seals (subset of set 441: consistency); no alternation of one name between forms (no progress; goal streak 1) |
 | G94 | 448 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | which fish take the long form: only 220 leans short; 705/706 not chosen by fish (no progress; goal streak 2) |
 | G95 | 449 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long-form role adds 0 tokens (already roled); the long form is a seal form (23 / 0) (no progress; goal streak 3) |
+| G96 | 450 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 740 90 and 740 400 not size-linked (no progress; goal streak 4) |
