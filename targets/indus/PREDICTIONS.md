@@ -12232,3 +12232,11 @@ Set 380: small seals repeat texts. Clean ICIT square seals; texts of 2+ signs fo
 - **RT2** Copies come from the same site more often than when sites are shuffled among seals (p < 0.05).
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-eighty-first set (`predict_test381.py`, `results/predict_test381.md`)
+
+Both failed. The first run read the motif from the clean objects' 'motif' field, which is empty for every F object (the
+motif is in record field 18); fixed before the reported run, hypotheses unchanged. 55 repeated texts on 145 square
+seals, 147 copy pairs: same motif 63.3% (p = 0.079 against within-site shuffles), same site 42.2% (p = 0.70). Copies of
+a seal text are not tied to an emblem or a city. Note for sets 355, 357, 367, 368: loopkit's motif came from
+data/corpus.tsv (A) and M77 rows, and was empty for lines found only in F, which formed one group; those motif tests were
+partial. Progress: none (goal streak 1). Tally, counting parts: 1605 held, 1547 failed (3152 registered).

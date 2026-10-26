@@ -13,7 +13,7 @@ def main():
     for r in F:
         rec = recs.get(r['sealid'])
         if rec and str(rec[20]).startswith('SEAL:S') and r['flat']:
-            seals.append((tuple(r['flat']), (r['motif'] or '').split(':')[0], r['site']))
+            seals.append((tuple(r['flat']), str(rec[18]).split(':')[0], r['site']))  # motif from record field 18 (F's 'motif' is empty; fixed before the reported run)
     by = defaultdict(list)
     for i, (t, m, s) in enumerate(seals):
         by[t].append(i)
