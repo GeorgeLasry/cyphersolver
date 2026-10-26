@@ -15311,3 +15311,13 @@ Held: none. A 266/1494 vs 1650/7344; B 158/675 vs 1017/3837. Progress: none (ses
 ## Results of set 582 (`hyp_s2_r_fishend.py`, `results/predict_test582.md`)
 
 Held: R1, R2. A 76/156 vs 87/947; B 17/39 vs 33/358. Progress: none (session-2 goal streak 4).
+
+
+# Set 583, registered before testing (26 October 2026): session-2 goal loop 48, audit: rare-sign rate per token by line length (two hypotheses)
+
+Set 578 compared lines with and without a rare sign; a longer line has more chances to hold one. Here the share of
+tokens that are rare (3 or fewer tokens in the sample), lines of 5+ signs against lines of 2-4 (`hyp_s2_rareaudit.py`).
+
+- **RA1** On A the rare share per token is higher in long lines (Fisher p < 0.05).
+- **RA2** The same on B.
+- Progress rule: none (audit); if RA1 or RA2 fails, set 578 is withdrawn and the session-2 streak recounted.
