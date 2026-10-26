@@ -14677,3 +14677,14 @@ Each sign directly before an ending (740 / 520) has a preferred ending on A (5+ 
 ## Results of set 537 (`hyp_s2_ending.py`, `results/predict_test537.md`)
 
 Held: EN1. preferences replicate 30/30; non-fish 520 signs kept on B: 2. Progress: none (session-2 goal streak 2).
+
+
+# Set 538, registered before testing (26 October 2026): session-2 goal loop 3, pairs written in both orders (two hypotheses)
+
+Adjacent sign pairs (a b) and (b a) both attested on A (3+ distinct lines each) are 'free-order' pairs; pairs with
+one order only (6+ lines, 0 the other way) are 'fixed' (`hyp_s2_order.py`).
+
+- **OR1** Free-order pairs on A with 2+ B lines in total are attested in both orders on B more often than fixed pairs
+  are (Fisher-like comparison by binomial against the fixed pairs' rate).
+- **OR2** Free-order pairs are mostly numerals or markers (R.NUMS, 400, 90): the reversals are counts, not words; 60%+.
+- Progress rule: OR1 and OR2 both hold (a replicated finding about word order).
