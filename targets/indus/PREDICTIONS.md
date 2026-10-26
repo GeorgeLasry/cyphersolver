@@ -11618,3 +11618,16 @@ known; 37 pairs remain over attachments, strokes, leaves, hatching and caps. A t
   side, two thirds or more shift the same way on B.
 - **DM5** Progress rule: DM1 and DM2 hold (a new set of marks changes the sign's job, replicated).
 
+## Results of the three-hundred-and-fifty-first set (added after the test; `predict_test351.py`, `results/predict_test351.md`, `devices.py`)
+
+Two held as registered, three failed; the progress claim is withdrawn on audit. The rule gives 30 pairs once cage and
+jar-stroke pairs are dropped (the registration's 37 was a miscount). Marked and base signs differ in position class on A
+(summed chi-square 160.0, p = 0.001; DM1) and on B (55.3, p = 0.009; DM2), but they do not share preceding signs more than
+random partners (mean cosine 0.098, p = 0.25; DM3), and no A-significant pair has 5+ B tokens on both sides (DM4: 0 of 0).
+Audit (not registered, `predict_test351_control.py`): a within-pair permutation calls any two distinct signs different,
+so the same statistic was computed for random sign pairs matched to each pair's token counts: A median 271.1 (the marked
+pairs' 160.0 is below 97.7% of draws), B median 79.0 (55.3 below 92.3%). Marked and base signs differ *less* than
+unrelated signs: outside the cage and the jar strokes, a drawn mark mostly keeps the sign's job (variant or derived
+sign of the same kind), and the few shifts (P015 'man bracketed by tall lines' 18% final against 84%; P238, P306, P345)
+are single pairs with no replication. DM5 met as registered, but it rests on a test that cannot fail, so it is not counted
+as progress. Progress: none (streak 2; set 350 is registered and not run). Tally, counting parts: 1583 held, 1495 failed (3078 registered).

@@ -3191,6 +3191,14 @@ Tally 1579 held, 1491 failed.
 Registered first (ba72c0901). Confirmed (199 against 91, p = 0.005), precision 5%. No progress (streak 1). Tally 1581
 held, 1492 failed.
 
+## Three-hundred-and-sixty-fourth pass (25 Oct 2026): decipherment loop 176, every drawn mark from Parpola's descriptions
+
+Registered first (98705e5eb). `devices.py` pairs a sign with the sign whose CISI description its own description extends
+(30 pairs beyond the cage and jar strokes). Marked and base signs differ in position on A and B as registered, but an
+audit against frequency-matched random pairs shows they differ *less* than unrelated signs, and they do not share stems:
+outside the cage and jar strokes, drawn marks keep the sign's job. The device route (sets 184-190) is exhausted at the
+signs Parpola's list describes. No progress: streak 2 (set 350 registered, not run). Tally 1583 held, 1495 failed.
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
@@ -3205,19 +3213,16 @@ held, 1492 failed.
 
 ## Next steps
 
-Done: the M77 map (`align_m77.py`), CISI vol. 1 (third pass), Parpola 1994's 24 readings (R3), the copper-tablet
-bilinguals, slot classes, numbers and measures, the Sanskrit and Sumerian controls, the ending proposals (fourth
-pass); the leads of the fifth to seventh passes. Open:
+Reviewed 25 Oct 2026. Closed or exhausted: the full ICIT is in hand (correction below); its damaged texts were used
+(sample D, sets 253-254) and do not lower S as training text (set 286); graphic families have been tried three ways
+(decade, Parpola's descriptions, learned classes: sets 194-210, 278, 348); drawn marks beyond the cage and jar strokes
+keep the sign's job (set 351); weights do not match the numerals (tenth pass). The referent-tuning line (sets 287-350)
+is paused: its held-out precision is about twice chance and further threshold changes risk fitting noise. Open:
 
-1. The full ICIT corpus (4,537 objects; account from Andreas Fuls) and CISI vol. 2 (H-396, H-568, H-598, H-602):
-   rerun everything; the copper-tablet side-A texts of M-603/604 need a sharper image than CISI vol. 1's scan.
-2. The seven sign = image equations are the firmest meaning anchors: a reading of 749, 341, 753 and the lens sign
-   should fit markhor goat, rhinoceros, hare and bull, in whatever language is proposed.
-3. Done in the sixth and seventh passes: the fish = star word is Dravidian-only among the South Asian
-   families, but the numerals before the fish do not follow the Tamil numeral + min star names; only 6 + fish
-   (Pleiades) fits. Open: 12 + fish and 1 + fish (enriched, no Tamil name), and the ICIT damage codes for a
-   sign restorer.
-4. The readings of Parpola 1997 and 2003 not in the 1994 table.
+1. CISI vol. 2 (H-396, H-568, H-598, H-602; print only) and a sharper image of M-603/604 side A: outside blocker.
+2. The seven sign = image equations remain the firmest meaning anchors (749, 341, 753, the lens sign).
+3. Set 350 (learned-class referent units) is registered and not run.
+4. Readings of Parpola 1997 and 2003 not in the 1994 table.
 
 ## Prior work
 
