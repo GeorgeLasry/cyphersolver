@@ -14840,3 +14840,14 @@ Set 545's top-30 long-distance pairs on A. For each, the sign strings between a 
 ## Results of set 548 (`hyp_s2_ldaudit.py`, `results/predict_test548.md`)
 
 Held: LA2. open middles 8/30; of those positive on B 5/5. Progress: none (session-2 goal streak 3).
+
+
+# Set 549, registered before testing (26 October 2026): session-2 goal loop 14, what follows an opener (two hypotheses)
+
+Openers of set 539 (104 491 692 817 820 853 861 920). Entropy of the sign that follows an opener against the sign
+that follows other line-initial signs of matched frequency (`hyp_s2_afteropen.py`).
+
+- **AO1** On A the follower entropy after openers is lower than after 200 random frequency-matched sets of non-opener
+  first signs (p < 0.05).
+- **AO2** The same on B.
+- Progress rule: AO1 and AO2, unless sets 230-279 (heading unit, its second sign) already fix it: consistency.
