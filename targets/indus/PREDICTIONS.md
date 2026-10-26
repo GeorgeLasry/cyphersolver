@@ -14930,3 +14930,7 @@ against its small-number signs (520 left out) (`hyp_s2_largeunits.py`).
 - **LU1** On A, large-number tokens are followed by 740 / 520 less often than small-number tokens (Fisher p < 0.05).
 - **LU2** The same on B.
 - Progress rule: LU1 and LU2 (things counted in large numbers are not named: units / commodities).
+
+## Results of set 554 (`hyp_s2_largeunits.py`, `results/predict_test554.md`)
+
+Held: none. ending after: A large 37/155 vs small 27/190; B 6/60 vs 6/68. Progress: none (session-2 goal streak 2).
