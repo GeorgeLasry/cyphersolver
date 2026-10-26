@@ -3287,6 +3287,22 @@ Run in order after the goal runs, each registered first (`leadkit.py`, `predict_
 - 651 Wells's initial clusters: no line break after the marker 1 / 2 / 60, almost none inside opener + marker (the
   heading unit again); 60 within positions 1-4 in 97%.
 
+## Eight more leads from material in hand (26 Oct 2026): sets 652-657, the unit lexicon, the specialist report
+
+- Lead 1 (ledgers): not available; 7 objects with two count lines, and the Linear B *to-so* control sums cleanly in 4 of 58.
+- 652 small against large units: both take endings alike; large units stand bare at the line end (21-39% vs 1-12%).
+- 653 / 654 substitution classes from minimal pairs: the first null was degenerate; corrected, the Linear B control
+  passes and the ICIT lines pass (p = 0.001), Mahadevan's do not; a sign's partner set recurs A to B (p = 0.001).
+  Product: results/substitution_classes.tsv.
+- 655 the 700 series: values 2-4 only (1 in 1 of 172, 5 never), mode 3-4 even with plain 700 as one unit; measure-like
+  in lacking 1 (as Linear B T / Z do) but unlike both Linear B shapes in its mid peak: a graded unit or fixed denominations.
+- 656 ligatures are not compressed sequences: the short-stroke sequences are never written; long-stroke sequences
+  ('32 740', 34 times) share no contexts with the stroked signs.
+- 657 graffiti composite hosts against Indus ligature hosts: rho -0.05 (18 of 21 parallels host no mark in Indus).
+- Unit lexicon (`unit_lexicon.py`): results/unit_lexicon.tsv, 369 recurring units (58 name bodies on 2+ texts, 235
+  count units, 69 frequent signs, 4 bound pairs, 2 formulas) with sites, object kinds, endings, numerals, motifs, M77.
+- Specialist report: REPORT_2026-10.md (for Fuls and Rajan).
+
 ## Limitations
 
 - ICIT glyph identification is by shape from the font, checked on the cited seals and by the M77 alignment, but
