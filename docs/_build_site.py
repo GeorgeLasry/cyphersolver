@@ -18,7 +18,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261024a'
+VERSION ='20261026a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -2859,7 +2859,7 @@ def nav_html(current):
         f'      <div class="panel wp">{panel}</div></details>\n'
         f'    <details class="menu"><summary{" class=\"active\"" if in_explore else ""}>Explore {CHEVRON}</summary>\n'
         f'      <div class="panel ex">{explore}</div></details>\n'
-        f'    <a href="catalogue.html"{cur("catalogue")}>Catalogue</a>\n'
+        f'    <a class="navcat" href="catalogue.html"{cur("catalogue")}>Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>\n'
         f'    <a href="contributors.html"{cur("contributors")}>Contributors</a>\n'
         f'    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>\n'
         f'    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>\n'
@@ -3225,7 +3225,7 @@ def cattop_html(n=6):
     """The highest-priority open entries of the Unsolved Catalogue, for the index."""
     import _catalogue_page as C
     top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e)], key=lambda e: (-C.priority(e), e['id']))[:n]
-    li = ''.join(f'  <li><a href="catalogue.html#e{e["id"]}">{C.people_html(e) or C.blank_html(e)}<span class="t">{C.esc(e["title"])}</span>'
+    li = ''.join(f'  <li><a href="solve/{e["id"]}.html">{C.people_html(e) or C.blank_html(e)}<span class="t">{C.esc(e["title"])}</span>'
                  f'<span class="pr" title="priority">{C.priority(e):.1f}</span><span class="yr">{C.esc(e["date"])}</span></a></li>\n' for e in top)
     return f'<!-- cattop:start -->\n<h3 class="listhead">Top of the queue</h3>\n<ul class="list cattop">\n{li}</ul>\n<!-- cattop:end -->\n'
 
@@ -3529,7 +3529,7 @@ def search_entries():
         cat = json.loads((HERE.parent / 'catalogue.json').read_text(encoding='utf-8'))
         for e in cat['entries']:
             b = ' · '.join(str(e.get(k) or '') for k in ('correspondents', 'place', 'shelfmark', 'status', 'why', 'verify', 'outcome'))
-            out.append(dict(u=f'catalogue.html#e{e["id"]}', t=e['title'], h='', p='Catalogue',
+            out.append(dict(u=f'solve/{e["id"]}.html', t=e['title'], h='', p='Catalogue',
                             y=str(e.get('date') or e.get('year') or ''), st='', stt=f'no. {e["id"]}', b=visible_text(b)))
     except FileNotFoundError:
         pass
@@ -3610,6 +3610,7 @@ if __name__ == '__main__':
     import _contributors_page as CP
     (HERE / 'contributors.html').write_text(CP.page(PAGES, PROFILES, CONTRIB, DATES['pages'], VERSION, TODAY), encoding='utf-8')
     done =[process(p) for p in sorted(HERE.glob('*.html'))]
+    C.build_solve_pages()                       # docs/solve/<id>.html take the nav and footer from the built catalogue.html
     save_dates(DATES)
     print('search index:', write_search_index(), 'entries')
     readme_glance()
