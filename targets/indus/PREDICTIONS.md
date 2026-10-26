@@ -13307,3 +13307,7 @@ As sets 385 / 416, for the formula 705 / 706 + 33 (`predict_test444.py`; length 
 - **FT2** It differs between Harappa's early and late periods (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-fourth set (`predict_test444.py`, `results/predict_test444.md`)
+
+Both failed. Mohenjo-daro: odds ratio late/early 0.59 (p = 0.39); Harappa: no early cases in the strata (degenerate,
+p = 0.72). Progress: none (goal streak 3). Tally, counting parts: 1636 held, 1639 failed (3279 registered).
