@@ -12078,23 +12078,23 @@ Both failed. Period: fixed gain 0.0010, split C none; material: weight 0. Beyond
 Harappa period nor the material changes sign context. Progress: none (goal streak 2). Tally, counting parts: 1600 held,
 1538 failed (3138 registered).
 
-# Three-hundred-and-seventy-fifth set, registered before testing (26 October 2026): goal loop 21, shape and secondary motif (two hypotheses)
+# Set 375b (renumbered; registered as 'three-hundred-and-seventy-fifth' before testing, 26 October 2026): goal loop 21 of the first runner, shape and secondary motif (two hypotheses)
 
 ICIT field 15 (shape: square, rectangular, prism ...) and field 19 (secondary motif: the 'standard' (SAN) before the
-unicorn, the trough ...), as set 374 (`predict_test375.py`).
+unicorn, the trough ...), as set 374 (`predict_test375b.py`).
 
 - **SH1** A shape domain model lowers S beyond type and subtype (fixed split and split C).
 - **SH2** A secondary-motif domain model lowers S (fixed split and split C).
 
-## Results of the three-hundred-and-seventy-fifth set (`predict_test375.py`, `results/predict_test375.md`)
+## Results of set 375b (`predict_test375b.py`, `results/predict_test375b.md`; renumbered from 375 after the collision with the parallel run)
 
 Both failed. Shape: weight 0 on the fixed split, split C worse; secondary motif: fixed gain 0.0005, split C worse.
 Progress: none (goal streak 3). Tally, counting parts: 1600 held, 1541 failed (3141 registered).
 
-# Three-hundred-and-seventy-sixth set, registered before testing (26 October 2026): goal loop 22, size and workmanship (two hypotheses)
+# Set 376b (renumbered; registered as 'three-hundred-and-seventy-sixth' before testing, 26 October 2026): goal loop 22 of the first runner, size and workmanship (two hypotheses)
 
 ICIT field 31 (longest dimension: under 20, 20-30, 30+ mm) and field 22 (workmanship: poor, fair, good, fine), as set
-374 (`predict_test376.py`).
+374 (`predict_test376b.py`).
 
 - **SZ1** A size-band domain model lowers S (fixed split and split C).
 - **SZ2** A workmanship domain model lowers S (fixed split and split C).
@@ -12113,18 +12113,18 @@ fair / good / fine), as domain models on the set 372 base; split C; rule of set 
 - **SM1** A secondary-motif domain model lowers S.
 - **SM2** A workmanship domain model lowers S (finer seals, different texts: an engraver or office effect).
 
-## Results of the three-hundred-and-seventy-sixth set (`predict_test376.py`, `results/predict_test376.md`)
+## Results of set 376b (`predict_test376b.py`, `results/predict_test376b.md`; renumbered from 376 after the collision with the parallel run)
 
 Both failed: weight 0 for size band and for workmanship. The ICIT side fields beyond object kind (sets 374-376: period,
 material, shape, secondary motif, size, workmanship) add nothing to sign context. Progress: none (goal streak 4).
 Tally, counting parts: 1600 held, 1544 failed (3144 registered).
 
-# Three-hundred-and-seventy-seventh set, registered before testing (26 October 2026): goal loop 23, restoration with the object-kind models (two hypotheses)
+# Set 377b (renumbered; registered as 'three-hundred-and-seventy-seventh' before testing, 26 October 2026): goal loop 23 of the first runner, restoration with the object-kind models (two hypotheses)
 
 Tier 3's restoration line (sets 283, 284, 314: illegible ICIT signs predicted by a copy-free model and compared with
 Mahadevan 1977's readings; 29 of 75 with the plain model, two directions) is rescored with the S base's domain models
 (length, type, subtype, length x subtype), the gap line's type and subtype taken from its own object record. Plain and
-domain predictions use the same copy-free training lines (`predict_test377.py`). Not measured before registering.
+domain predictions use the same copy-free training lines (`predict_test377b.py`). Not measured before registering.
 
 - **RS1** Single-gap cases (sets 283 + 284): the domain models restore more signs than the plain model.
 - **RS2** Two-gap lines (set 314): the same.
@@ -12410,7 +12410,7 @@ objects involved (1,000), pairs of distinct objects (`predict_test391.py`).
   code: DK, HR, VS, SD ...) more than the shuffle predicts.
 - Progress rule: either holds.
 
-## Results of the three-hundred-and-seventy-seventh set (`predict_test377.py`, `results/predict_test377.md`)
+## Results of set 377b (`predict_test377b.py`, `results/predict_test377b.md`; renumbered from 377 after the collision with the parallel run)
 
 Both failed. Single gaps (49): plain 21 right, domains 18; two-gap lines (26 signs): 7 and 7. The object-kind models
 lower S but restore fewer signs; they shift probability towards each kind's common signs, which hurts the two-sided

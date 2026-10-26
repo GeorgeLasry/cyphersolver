@@ -270,12 +270,12 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G18 | 372 | **4.559** | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | region dropped (adds 0.0018 on top of type models); length x subtype adopted, fixed gain 0.0078, replicated on split C (progress; goal streak 0) |
 | G19 | 373 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | opening-sign domains: gains under 0.005, A to B at control level (no progress; goal streak 1) |
 | G20 | 374 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa period, material: nothing beyond object kind (no progress; goal streak 2) |
-| G21 | 375 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | shape, secondary motif: nothing (no progress; goal streak 3) |
+| G21 | 375b | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | shape, secondary motif: nothing (no progress; goal streak 3) |
 | G20 | 374 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa period and material beyond object kind: nothing (no progress; goal streak 2) |
-| G22 | 376 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band, workmanship: weight 0 (no progress; goal streak 4) |
+| G22 | 376b | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band, workmanship: weight 0 (no progress; goal streak 4) |
 | G21 | 375 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | secondary motif and workmanship: nothing (no progress; goal streak 3) |
 | G22 | 376 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size: 4 of 4 large/small skews replicate (p = 0.06, under the bar); longer texts on larger seals (no progress; goal streak 4) |
-| G23 | 377 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band and number of sides as domains: weight 0 (no progress; goal streak 5) |
+| G23 | 377b | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size band and number of sides as domains: weight 0 (no progress; goal streak 5) |
 | G24 | 378 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | seal size and signs: 6 of 6 large/small skews replicate on the fixed test (large 32, 706; small 156, 390, 400, 5, 590); second look at set 376 (progress; goal streak 0) |
 | G25 | 379 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | size signs hold within text-length bands (5 of 7, Mantel-Haenszel) and within Mohenjo-daro (7 of 7): seal size goes with content (rank or office?) (progress; goal streak 0) |
 | G26 | 380 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small square seals repeat texts more often than large ones, also within length bands (odds ratio 1.9, p = 0.004); heading not tied to size (progress; goal streak 0) |

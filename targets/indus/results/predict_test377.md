@@ -1,20 +1,19 @@
-# Three-hundred-and-seventy-seventh registered predictions: goal loop 23, restoration with the object-kind models
+# Three-hundred-and-seventy-seventh registered predictions: goal loop 23, size and sides
 
-- single gaps: 49 cases; plain 21 right, domains 18.
-- two-gap lines: 26 signs; plain 7 right, domains 7.
+## SZ1 a size-band domain model
+- fixed test S 4.5590 -> 4.5590 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.4489 -> 5.4489.
+- A -> B 4.5360 -> 4.5360 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.3553 -> 5.3553.
+- **SZ1 fails.**
 
-## RS1 single gaps: domains right more often than plain
-- 18 against 21 of 49.
-- **RS1 fails.**
+## SZ2 a number-of-sides domain model
+- fixed test S 4.5590 -> 4.5590 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.4489 -> 5.4489.
+- A -> B 4.5360 -> 4.5360 (gain 0.0000, weight 0.00; random groups 0.0000); signs only 5.3553 -> 5.3553.
+- **SZ2 fails.**
 
-## RS2 two-gap lines: domains right more often than plain
-- 7 against 7 of 26.
-- **RS2 fails.**
-
-## P progress rule: the restoration line rises (domains total above plain total)
-- 25 against 28.
+## P progress rule: either hypothesis holds
+- SZ1 False, SZ2 False.
 - **P fails.**
 
 ## Summary
 
-Held: none. Failed: RS1, RS2, P.
+Held: none. Failed: SZ1, SZ2, P.
