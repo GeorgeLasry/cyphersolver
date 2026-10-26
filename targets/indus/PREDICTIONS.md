@@ -16302,3 +16302,15 @@ ideograms are livestock or bulk goods in 8 of 10 (LB2). As a control: a size spl
 a known script shows, with herds and bulk goods in large numbers and persons and objects in small ones. By analogy the
 Indus large-number units (390 405 407 575 585 900, at the line end) are the better candidates for commodities or herds,
 and the fish signs, counted in small numbers, behave like persons or objects. Progress: none (control).
+
+# Set 644, registered before testing (26 October 2026): lead 3, short labels by object kind and picture (three hypotheses)
+
+Set 551 / 553: two-sign 'X + ending' lines use other heads than texts of 5+ signs, also within square seals. Clean ICIT
+objects with records (`predict_test644.py`).
+
+- **SL1a** At Mohenjo-daro short labels stand on non-seal objects (tablets, tags, pottery ...) more often than long
+  texts that carry an ending (Fisher one-sided p < 0.05).
+- **SL1b** The same at Harappa.
+- **SL2** On square seals, the head of a short label predicts the field motif beyond 1,000 shuffles (MI, p < 0.05)
+  (long-text heads reported beside it; set 177-era work found seal names not tied to their animal).
+- Progress rule: SL1a and SL1b, or SL2.
