@@ -14269,3 +14269,7 @@ Both failed: 798 odds ratio 1.29 (p = 0.53); 820 0.99 (p = 0.97). Progress: none
 - **S342** They differ in carrying 342 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the five-hundred-and-ninth set (`predict_test509.py`, `results/predict_test509.md`)
+
+Both failed: 368 odds ratio 1.80 (p = 0.10); 342 absent from sized motif seals (degenerate). Progress: none (goal streak
+8). Tally, counting parts: 1669 held, 1733 failed (3407 registered).
