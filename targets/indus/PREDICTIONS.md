@@ -16464,3 +16464,37 @@ boundary the scribes respect. But a break almost never falls inside the pair (op
 0.33), so WS2 fails on the all-four rule while the effect is plain (consistency with the heading unit, sets 230-279: the
 opener and its marker are one unit). 60 stands within the first four positions in 159 of 164 (A) and 54 of 56 (B)
 tokens (WS3). Progress: none.
+
+# Lead 1 (26 October 2026): ledger tests not available
+
+Objects with two or more count lines (numeral + unit) number 7 in the clean ICIT, and the Linear B control for totals
+(*to-so* lines) sums the same ideogram's entries above it in only 4 of 58 cases in DAMOS (totals span sub-units and
+variants). No ledger or totals test can be built on this corpus; recorded without a set number.
+
+# Set 652, registered before testing (26 October 2026): lead 2, small-number units as heads, large-number units not (three hypotheses)
+
+Set 643's Linear B control: small counts go with persons and objects, large counts with herds and bulk goods. If the
+Indus split (set 552) is the same, the small-number units (176 233 235 240 61 803 806) should be the kind of sign that
+also names, taking an ending when uncounted, and the large-number units (390 405 407 575 585 900) should not
+(`predict_test652.py`).
+
+- **UH1** On A, uncounted small-number units are followed by 740 / 520 more often than uncounted large-number units
+  (Fisher one-sided p < 0.05).
+- **UH2** The same on B.
+- **UH3** Uncounted large-number units stand line-final (bare, or followed only by 400 / 90) more often than small
+  ones, on A and B.
+- Progress rule: UH1 and UH2.
+
+# Set 653, registered before testing (26 October 2026): lead 3, substitution classes from minimal pairs (four hypotheses)
+
+Two texts identical except at one position put the two differing signs in one slot (a minimal pair). Positive control
+first: on DAMOS lines of 2-12 tokens, minimal-pair partners should share a class (numeral, measure sign, ideogram,
+syllabic word) beyond 1,000 shuffles of the class labels. Then the Indus lines with classes numeral / ending (740 520) /
+marker (400 90) / other, on A and on B; and whether the lexical signs' partner sets found on A recur on B. Output:
+results/substitution_classes.tsv, each sign's minimal-pair partners (`predict_test653.py`).
+
+- **SC1** Linear B: partners share a class beyond shuffles (p < 0.05).
+- **SC2** Indus A: the same.
+- **SC3** Indus B: the same.
+- **SC4** Lexical signs with 3+ A frames: mean Jaccard of A and B partner sets beats shuffled sign identities (p < 0.05).
+- Progress rule: SC1, SC2 and SC3 (a validated method giving per-sign substitution classes).
