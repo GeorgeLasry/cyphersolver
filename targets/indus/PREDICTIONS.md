@@ -13527,3 +13527,8 @@ Sets 455-456 gave single controls. Here 20 random halvings of square-seal lines 
 - **FP2** The Mantel-Haenszel ending test (length bands) is significant at p < 0.05 in at most 2 of 20.
 - Progress rule: none (calibration).
 
+## Results of the four-hundred-and-fifty-eighth set (`predict_test458.py`, `results/predict_test458.md`)
+
+Both held (calibration). Under 20 random halvings of square-seal lines the skew test replicated nothing (0 of 20) and the
+ending test was never significant (0 of 20). The tests used for this run's object-property findings are conservative.
+Progress: none (goal streak 12). Tally, counting parts: 1646 held, 1656 failed (3306 registered).
