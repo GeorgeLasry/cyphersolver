@@ -14920,3 +14920,13 @@ Audits (`hyp_s2_audit1.py`); a failure withdraws the finding and recounts the st
 ## Results of set 553 (`hyp_s2_audit1.py`, `results/predict_test553.md`)
 
 Held: AU1, AU2. AU1 True (p 0.002); AU2 True (kept 10, B 9/10). Progress: none (session-2 goal streak 1).
+
+
+# Set 554, registered before testing (26 October 2026): session-2 goal loop 19, large-number signs as units (two hypotheses)
+
+Counted tokens (directly after a numeral) of set 552's large-number signs (740 left out, being the ending itself)
+against its small-number signs (520 left out) (`hyp_s2_largeunits.py`).
+
+- **LU1** On A, large-number tokens are followed by 740 / 520 less often than small-number tokens (Fisher p < 0.05).
+- **LU2** The same on B.
+- Progress rule: LU1 and LU2 (things counted in large numbers are not named: units / commodities).
