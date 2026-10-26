@@ -15337,3 +15337,13 @@ Session-2 findings that survived their audits: short labels (X + ending) name ot
 square seals (sets 551, 553); the size of a number decides what is counted, 1-3 counting fish and 803 / 806, 4+ counting
 390 405 407 575 585 900, also within short strokes (552, 553; long strokes A only, 563); large-number units stand at the
 end of the line, in every length band and on B (562, 564). Withdrawn: 545 (repeated phrases, 548), 578 (length, 583).
+
+
+# Set 584, registered before testing (26 October 2026): session-2 goal loop 49, substitution pairs (two hypotheses)
+
+Pairs 220/400, 240/390 (`hyp_s2_subst.py`, pair list fixed by A frequency rank before testing). Context = (previous sign, next sign);
+cosine of the two signs' context counts against 500 random partner signs of similar frequency (+-5 ranks).
+
+- **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
+- **SB2** Pair 2 the same.
+- Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
