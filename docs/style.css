@@ -351,6 +351,10 @@ footer .in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;gap:1
 footer nav{display:flex;flex-wrap:wrap;gap:.6rem 1.1rem;font-family:var(--mono);font-size:.8rem}
 footer nav a{color:var(--ink2);border-bottom-color:transparent}
 footer nav a:hover{color:var(--gold2);border-bottom-color:var(--gold2)}
+/* the contact address is an image so it is not scraped; one per theme */
+img.email{height:1.3em;width:auto;vertical-align:-.35em}
+img.email.l,:root[data-theme="light"] img.email.d{display:none}
+:root[data-theme="light"] img.email.l{display:inline}
 @media (max-width:760px){body{font-size:16.5px}.hero{padding-top:2.6rem}h2{font-size:1.45rem}}
 
 /* ---------------------------------------------------------------- priority queue */

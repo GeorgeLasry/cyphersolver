@@ -49,7 +49,7 @@ in the key. Check them against the images, correct the labels or the key, decryp
 sentences hold. Mark every value the model proposed from context alone as doubtful (`[?word]`) until it holds at every
 occurrence or a contemporary text confirms it. Record each round, failures included, as a solution step.
 
-Not on GitHub? Email dnbourdeau@gmail.com with the same details. The entry is made for you and credited the same way.
+Not on GitHub? Email <picture><source media="(prefers-color-scheme: dark)" srcset="docs/email-dark.png"><img src="docs/email.png" alt="email address (see image)" height="22"></picture> with the same details. The entry is made for you and credited the same way.
 
 ## Pull requests
 

@@ -3085,7 +3085,7 @@ def footer_html(current):
     if prev: links.append(f'<a href="{prev["slug"]}.html" rel="prev">&larr; {prev["label"]} {prev["year"]}</a>')
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
-    links.append('<a href="mailto:dnbourdeau@gmail.com" title="dnbourdeau@gmail.com">Contact &#9993;</a>')
+    links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="#top">Top &uarr;</a>')
     author = cur.get('author', 'Daniel Bourdeau') if cur else 'Daniel Bourdeau and contributors' if current in SHARED_PAGES else 'Daniel Bourdeau'
     footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'

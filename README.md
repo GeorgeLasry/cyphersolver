@@ -818,7 +818,7 @@ the material for the paper with George Lasry on how LLMs perform against histori
 
 ## Contact
 
-Daniel Bourdeau, [dnbourdeau@gmail.com](mailto:dnbourdeau@gmail.com). Corrections, prior solutions I have missed,
+Daniel Bourdeau, <picture><source media="(prefers-color-scheme: dark)" srcset="docs/email-dark.png"><img src="docs/email.png" alt="email address (see image)" height="22"></picture>. Corrections, prior solutions I have missed,
 archive copies, or pointers to key material are all welcome. Issues and pull requests on this repository work too.
 
 ## Licence
