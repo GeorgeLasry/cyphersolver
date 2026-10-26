@@ -453,3 +453,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-15 | 550 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | open-slot frames: frames 117, testable 91, positive on B 44. (no progress; session-2 goal streak 15) |
 | S2-16 | 551 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | heads of short and long lines: A True, B True. (progress; session-2 goal streak 0) |
 | S2-17 | 552 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | small and large numbers count different signs: skewed 16 on A; same way on B 12/14. (progress; session-2 goal streak 0) |
+| S2-18 | 553 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | audits of short-line heads and number size: AU1 True (p 0.002); AU2 True (kept 10, B 9/10). (no progress; session-2 goal streak 1) |

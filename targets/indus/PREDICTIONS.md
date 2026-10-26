@@ -14916,3 +14916,7 @@ Audits (`hyp_s2_audit1.py`); a failure withdraws the finding and recounts the st
   small / large direction at p < 0.1 on A, and 75%+ of testable ones lean the same way on B. Otherwise the effect is the
   numeral series, not the number.
 - Progress rule: none (audits).
+
+## Results of set 553 (`hyp_s2_audit1.py`, `results/predict_test553.md`)
+
+Held: AU1, AU2. AU1 True (p 0.002); AU2 True (kept 10, B 9/10). Progress: none (session-2 goal streak 1).
