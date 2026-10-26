@@ -13115,3 +13115,14 @@ Both failed. 156, 400 and 590 share a line twice in all (shuffled lines as many 
 like alternatives in one slot or separate formulae). Texts with them recur on other seals no more often at equal length
 (odds ratio 1.50, p = 0.19). Progress: none (goal streak 8). Tally, counting parts: 1630 held, 1619 failed (3253
 registered).
+
+# Four-hundred-and-thirty-second set, registered before testing (26 October 2026): goal loop 78, one slot for the small-seal signs? (two hypotheses)
+
+Set 431: 156, 400 and 590 avoid each other. If they are alternatives in one slot they share contexts. Distinct seal
+lines; mean pairwise cosine of context counts against frequency-matched random signs (1,000 draws)
+(`predict_test432.py`).
+
+- **SL1** They share preceding signs (line start counted as a context).
+- **SL2** They share following signs (line end counted).
+- Progress rule: either holds.
+
