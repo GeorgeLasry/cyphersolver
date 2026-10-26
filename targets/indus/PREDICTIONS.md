@@ -13194,3 +13194,12 @@ ICIT field 21 (number of sides: 1, 2, 3, 4). Set 371's skew test on split C (`pr
 
 Both failed: no sign skewed by number of sides on moulded (235 / 362 tokens) or incised tablets (50 / 219). Progress:
 none (goal streak 3). Tally, counting parts: 1633 held, 1626 failed (3263 registered).
+
+# Four-hundred-and-thirty-seventh set, registered before testing (26 October 2026): goal loop 83, one-line against multi-line seals (two hypotheses)
+
+Square seals; a line is 'multi' if its object has other lines (loopkit.OTHERS) (`predict_test437.py`).
+
+- **ML1** Set 371's skew test on split C, one-line against multi-line seals.
+- **ML2** At equal length, lines of multi-line seals differ in closing with 740 / 520 (two-sided p < 0.05).
+- Progress rule: either holds.
+
