@@ -15864,3 +15864,7 @@ contexts whose previous sign is a numeral dropped (set 598); cosine of the two s
 - **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
 - **SB2** Pair 2 the same.
 - Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
+
+## Results of set 620 (`hyp_s2_subc5.py`, `results/predict_test620.md`)
+
+Held: none. 804/880 False; 540/467 False. Progress: none (session-2 goal streak 6).
