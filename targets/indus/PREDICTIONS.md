@@ -13988,3 +13988,13 @@ As set 470 for set 469 (`predict_test489.py`).
 RH1 held, RH2 failed. Half 1: odds ratio 1.91 (p = 0.014); half 2: 1.18 (p = 0.53). Same direction, one half significant:
 set 488 holds in direction, borderline in strength. Progress: none (goal streak 1). Tally, counting parts: 1658 held,
 1704 failed (3367 registered).
+
+# Four-hundred-and-ninetieth set, registered before testing (26 October 2026): goal loop 136, copies of a seal text (two hypotheses)
+
+Clean ICIT seals with texts of 2+ signs; pairs of seals with the identical text; values shuffled within site 1,000 times
+(`predict_test490.py`).
+
+- **CP1** At Mohenjo-daro, copies share the phase (ICIT field 9) more than chance (made at one time).
+- **CP2** Copies share the workmanship grade (field 22) more than chance (made in one workshop).
+- Progress rule: either holds.
+
