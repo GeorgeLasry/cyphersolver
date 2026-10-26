@@ -13668,3 +13668,13 @@ other way. Progress: none (goal streak 7). Tally, counting parts: 1649 held, 166
 SS1 held, SS2 failed; no progress. Seals with numeral + fish are larger unstratified (median 29.2 against 27.2,
 p = 0.0016), but with length band x site strata the odds ratio is 1.22 (p = 0.33): text length. Progress: none (goal
 streak 8). Tally, counting parts: 1650 held, 1670 failed (3324 registered).
+
+# Four-hundred-and-sixty-eighth set, registered before testing (26 October 2026): goal loop 114, numbers and seal size (two hypotheses)
+
+Square seals with a size and a numeral (numerals.NUMS); size median over all sized square seals; Mantel-Haenszel over
+length band x site (`predict_test468.py`).
+
+- **NV1** Large seals carry a numeral of value 5 or more more often (p < 0.05).
+- **NV2** Large and small seals differ in using the long-stroke series (two-sided p < 0.05).
+- Progress rule: either holds.
+
