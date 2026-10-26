@@ -12963,3 +12963,13 @@ the test line's subtype), weight 1; base = the domain models; fixed split and sp
 
 Both failed. Top-10 unchanged (11 of 232 fixed, 1 of 211 on C); top-1 0 -> 1 and 0 -> 0. Progress: none (goal streak 12).
 Tally, counting parts: 1622 held, 1612 failed (3236 registered).
+
+# Four-hundred-and-twenty-third set, registered before testing (26 October 2026): goal loop 69, small-seal names on tablets (two hypotheses)
+
+Set 380: small square seals carry repeated texts. Do their names and texts also appear on tablets (clean ICIT TAB
+objects)? Square seals with a size, median split, Mantel-Haenszel over length bands (`predict_test423.py`).
+
+- **ST1** Small-seal name bodies occur on tablets more often than large-seal bodies (p < 0.05).
+- **ST2** Small-seal whole texts occur as tablet lines more often (p < 0.05).
+- Progress rule: either holds.
+
