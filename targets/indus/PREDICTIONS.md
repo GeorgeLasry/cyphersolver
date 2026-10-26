@@ -12929,3 +12929,8 @@ signs against the other tablet kinds.
 - **CI2** Copper against moulded (TAB:B) tablets.
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-twentieth set (`predict_test420.py`, `results/predict_test420.md`)
+
+Both failed. Copper against incised: 615 (copper) and 400 (incised) skewed, 1 testable; copper against moulded: 407, 615
+(copper) and 400 (moulded), 1 testable. Too few copper tokens (152 on C-train). Progress: none (goal streak 10). Tally,
+counting parts: 1622 held, 1608 failed (3232 registered).
