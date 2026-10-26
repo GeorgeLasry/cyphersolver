@@ -240,6 +240,7 @@ def row(e):
     seen = '<span class="seen img" title="viewed on the image">●</span>' if e['seen'] == 'image' else '<span class="seen cat" title="catalogue description only">◇</span>'
     pill = f'<span class="pill{" att" if e.get("outcome") else ""}">{esc(short_outcome(e))}</span>'
     if e.get('workable'): pill += '<span class="pill work" title="the key material exists (siblings, glosses); what is left is work, not an outside blocker">no outside blocker</span>'
+    if e.get('access') == 'archive': pill += '<span class="pill arch" title="the ciphertext or the key material is not online; it needs the archive to digitise it or someone to photograph it">needs archive scans</span>'
     link = ''.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)[:1])
     return (f'<tr class="e" data-id="{e["id"]}" data-href="{href}">'
             f'<td class="prio"><b>{priority(e):.1f}</b></td>'
@@ -347,6 +348,7 @@ def build_html():
     data_js = json.dumps({'weights': W, 'entries': E}, ensure_ascii=False).replace('</', '<\\/')
     n_all, n_img = len(E), sum(1 for e in E if e['seen'] == 'image')
     n_dec = sum(1 for e in E if e.get('source') == 'DECODE')
+    n_arch = sum(1 for e in E if e.get('access') == 'archive' and is_open(e))
     years = [e['year'] for e in E if e['year']]
     outcomes = sorted({short_outcome(e) for e in E}, key=lambda o: o != 'open')
     page = f'''<!DOCTYPE html>
@@ -370,6 +372,7 @@ def build_html():
 
 <main>
 <div id="hashnote" hidden></div>
+<div class="callout archnote" data-term-ok><strong>Many of these cannot be read from a desk.</strong> {n_arch} of the open entries are marked <span class="pill arch">needs archive scans</span>: the ciphertext, or the key material that would unlock it, is not online, so nothing can be deciphered until the archive digitises it or someone photographs it in the reading room. They are listed because a request to the archive, or a visit, is the first step.</div>
 <div class="qbar jsonly" id="list">
   <input type="search" id="q" placeholder="Search: name, place, shelfmark, year…" aria-label="Search the catalogue">
   <span class="count" id="count"></span>

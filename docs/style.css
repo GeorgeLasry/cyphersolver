@@ -1553,3 +1553,6 @@ a.sticker::after{display:none}
 /* the read-further sticker: same seal, lime and violet */
 .sticker.alt > span{color:#4b0f8c;background:radial-gradient(circle,#c6f54a 0 56%,#fff 56% 59%,#c6f54a 59% 64%,#8fdc1e 64%)}
 .sticker.alt small{color:#2e0857}
+
+body.pg-catalogue .pill.arch{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 50%,transparent);background:var(--amber-bg)}
+body.pg-catalogue .archnote{margin:1rem 0}
