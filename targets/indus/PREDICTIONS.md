@@ -13396,3 +13396,12 @@ Set 446 (replicated on B): fish + 705 / 706 + 33 + 520 is the long form of fish 
 LR1 failed, LR2 held. The pattern's 705 / 706 and 33 already have roles (closer, numeral): R is unchanged (0 tokens).
 The long form is a seal form: 23 long against 62 short fish names on seals, 0 against 11 on tablets (p = 0.040).
 Progress: none (goal streak 3). Tally, counting parts: 1640 held, 1645 failed (3289 registered).
+
+# Four-hundred-and-fiftieth set, registered before testing (26 October 2026): goal loop 96, 740 90 and 740 400 by seal size (two hypotheses)
+
+Square seals with a size; Mantel-Haenszel over length band x site (`predict_test450.py`).
+
+- **LM1** Large seals carry '740 90' (the possessor construction 'X's man') more often (p < 0.05).
+- **LM2** Small seals carry '740 400' more often (p < 0.05; 400 is a small-seal sign, set 430).
+- Progress rule: either holds.
+
