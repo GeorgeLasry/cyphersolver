@@ -12663,3 +12663,8 @@ length bands (`predict_test404.py`).
 - **AN2** The two differ in closing with 740 / 520 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-fourth set (`predict_test404.py`, `results/predict_test404.md`)
+
+Both failed. 259 other-animal and 909 unicorn lines: heading odds ratio 0.83 (p = 0.36), endings 0.97 (p = 0.92). With
+set 382 (no sign skew, no domain gain), the text of a square seal is independent of its animal in signs and in formula.
+Progress: none (goal streak 6). Tally, counting parts: 1619 held, 1580 failed (3199 registered).
