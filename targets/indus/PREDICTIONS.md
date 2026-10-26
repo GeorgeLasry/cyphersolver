@@ -12904,3 +12904,13 @@ predict_test418.md and predict_test4180.md).
 Both failed. No sign skewed between the DK and HR areas (2,187 / 363 tokens on C-train); the area model takes weight 0.
 Within Mohenjo-daro the texts do not differ by quarter (as names did not, set 391). Progress: none (goal streak 8).
 Tally, counting parts: 1622 held, 1604 failed (3228 registered).
+
+# Four-hundred-and-nineteenth set, registered before testing (26 October 2026): goal loop 65, Gujarat against Sindh square seals (two hypotheses)
+
+Set 371 found no Sindh / north skew inside square seals; the twenty-fifth-set regional tests (RG3-RG5) compared seal
+names and headings, not single signs (`predict_test419.py`).
+
+- **GS1** Set 371's skew test on split C, Gujarat against Sindh square seals.
+- **GS2** At equal length Gujarat square seals differ in closing with 740 / 520 (two-sided p < 0.05).
+- Progress rule: either holds.
+
