@@ -13780,3 +13780,8 @@ none (goal streak 5). Tally, counting parts: 1653 held, 1679 failed (3337 regist
 - **S5B** They differ in carrying the short form fish + 520 without the formula (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-fifth set (`predict_test475.py`, `results/predict_test475.md`)
+
+Both failed: 520 anywhere odds ratio 1.04 (p = 0.91); short form 0.99 (p = 0.91). Of the 520-class forms only the long
+form goes with seal size (set 441). Progress: none (goal streak 6). Tally, counting parts: 1653 held, 1681 failed (3339
+registered).
