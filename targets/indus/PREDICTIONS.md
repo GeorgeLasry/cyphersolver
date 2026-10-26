@@ -13870,3 +13870,12 @@ If seal size marks two kinds of seal text, the large-seal formula (705 / 706 + 3
 AV1 held, AV2 failed; no progress. Formula lines with a small-seal sign: A 6 against 20.1 expected (p = 0.001); B 6
 against 9.1 (p = 0.16). The two repertoires avoid each other on the ICIT lines; on Mahadevan's the deficit is small.
 Progress: none (goal streak 12). Tally, counting parts: 1655 held, 1691 failed (3351 registered).
+
+# Four-hundred-and-eighty-second set, registered before testing (26 October 2026): goal loop 128, pieces of the long form by size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test482.py`).
+
+- **PL1** Large and small seals differ in carrying 33 outside the formula (two-sided p < 0.05).
+- **PL2** They differ in carrying fish + 705 / 706 not followed by 33 (two-sided p < 0.05).
+- Progress rule: either holds.
+
