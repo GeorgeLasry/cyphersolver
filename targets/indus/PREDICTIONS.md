@@ -13916,3 +13916,12 @@ p = 0.0015): with the formula fixing most of the text, set 434's length caveat i
 stands. Being set 433's comparison inside a subset, it counts as consistency, not progress (the registered P line reads
 'holds'). Marked against plain fish: too few plain (4). Progress: none (goal streak 15). Tally, counting parts: 1656
 held, 1696 failed (3357 registered).
+
+# Four-hundred-and-eighty-fifth set, registered before testing (26 October 2026): goal loop 131, sign families by seal size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test485.py`).
+
+- **GF1** Large and small seals differ in carrying a sign of ICIT block 800-819 (trees, plants; two-sided p < 0.05).
+- **GF2** They differ in carrying a sign of block 90-99 (the man family; two-sided p < 0.05).
+- Progress rule: either holds.
+
