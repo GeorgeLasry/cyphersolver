@@ -13322,3 +13322,10 @@ Distinct lines, A and B; Mantel-Haenszel over length bands, formula lines (705 /
 - **FN2** Formula lines open with the heading (817 / 820 / 861) more often (p < 0.05, A and B).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-forty-fifth set (`predict_test445.py`, `results/predict_test445.md`)
+
+Both failed; FN1 the other way, completely. No formula line on A or B has a 740 before the formula (odds ratio 0,
+p < 0.0001 both): the formula '705 / 706 33 520' is not appended after a 740 name; it takes the place of the 740 ending,
+closing the name in the 520 class. The heading is not commoner with it (0.84, 1.56). Observation, not registered: the
+formula is a third way of closing a name, beside 740 and plain 520, used on large seals (set 441). Progress: none (goal
+streak 4). Tally, counting parts: 1636 held, 1641 failed (3281 registered).

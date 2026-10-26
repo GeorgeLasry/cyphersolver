@@ -344,3 +344,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G88 | 442 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 33 520 without the stroked U too rare; rectangular seals a trend (no progress; goal streak 1) |
 | G89 | 443 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | closing formula not tied to city or animal, only to seal size (no progress; goal streak 2) |
 | G90 | 444 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | closing formula over time: no change (no progress; goal streak 3) |
+| G91 | 445 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | no 740 ever precedes the closing formula (A, B): it replaces the 740 ending (no progress as registered; goal streak 4) |
