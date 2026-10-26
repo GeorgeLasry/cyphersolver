@@ -1805,6 +1805,11 @@ PAGES = [
          blurb='A Dutch despatch in a three-digit code with marked digits, whose codebook DECODE could not identify. It is the 1765 Croiset codebook of the Russia legation (DECODE R1038); with 34 values from context and 41 entries transcribed from the key scans, 96.7% of the 1,719 groups decode. The Austro-Russian mediation, Catherine II&rsquo;s Greek project and Prussia&rsquo;s accession to the Armed Neutrality.',
          quote='&ldquo;of nu den Keizer in dezen met haar oprecht handelt&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1036'),
+    dict(slug='schoning1783', label='Sch&ouml;ning 1783-84', year='1783&ndash;84', y=1783.6, place='Potsdam &rarr; Van der Hoop', st='solved', stt='read',
+         title='Sch&ouml;ning&rsquo;s secret mission to the Prussian court, 1783&ndash;84',
+         blurb='Princess Wilhelmina&rsquo;s secret agent at the court of Frederick II wrote in a private symbol alphabet with a numbered code for names (KHA A32-603). The alphabet was rebuilt from the decipherer&rsquo;s ten clear copies and the code from his glosses and a decipherment of 14 December 1783 found in a sibling file; the eleven letters he never copied are deciphered (97.6% of tokens; statistical test pass).',
+         quote='&ldquo;914 est un inf&acirc;me &hellip; 818 hait et m&eacute;prise de bon c&oelig;ur 724, mais en revanche il aime tendrement 734&rdquo;',
+         rights='Koninklijk Huisarchief, The Hague, via Koninklijke Verzamelingen'),
     dict(slug='rechteren1785', label='Rechteren 1785', year='1785', y=1785.75, place='St Petersburg &rarr; The Hague', st='found', stt='read at the time',
          title='Rechteren to the Griffier, St Petersburg 1785',
          blurb='A letter of the Dutch envoy in St Petersburg in a numerical nomenclator (DECODE R1039). The Griffie&rsquo;s complete contemporary decipherment is filed on the same record; it was transcribed and tied to the cipher line by line. The key was not recovered; the pair is a known-plaintext sample for De Swart&rsquo;s 1787 letter.',
@@ -2467,6 +2472,7 @@ IMAGES['r1944'] = ('r1944_lead.jpg', 'The clear copy of Bourdeaux&rsquo;s dispat
 IMAGES['hereditary1796'] = ('hereditary1796_lead.jpg', 'R2239, head of the letter: Berlin 12. Mars 1796, then number groups with superscript marks and clear words', 'Koninklijk Huisarchief, The Hague, via DECODE R2239')
 IMAGES['yvoy1797'] = ('yvoy1797_lead.jpg', 'The Prince&rsquo;s No. 22 to d&rsquo;Yvoy, 22 September 1797: code numbers with the Dutch decipherment written over them (&ldquo;Tollius&rdquo;, &ldquo;voldaan van zyne eerste conferentien met Hunne Hoogh.&rdquo;)', 'Koninklijk Huisarchief, The Hague, A35-1450 scan 221 (image 147106), via Koninklijke Verzamelingen')
 IMAGES['reede1796'] = ('reede1796_lead.jpg', 'Van Reede, 15 August 1796: name numbers glossed above (Athlone, au Duc de Portland, de Luc) and the dotted run (1.) explained on the next page', 'Koninklijk Huisarchief, The Hague, A35-1232 (image 144358), via Koninklijke Verzamelingen')
+IMAGES['schoning1783'] = ('schoning1783_lead.jpg', 'No. 3, Potsdam 8 August 1783: symbol cipher with underlined code numbers (914 Thulemeier, 446 Hertzberg, 818 the King, 724 the Prince, 734 the Princess)', 'Koninklijk Huisarchief, The Hague, A32-603 scan 5, via Koninklijke Verzamelingen')
 IMAGES['r2236'] = ('r2236_copie1.jpg', 'Copy No 1, the first lines: numbers between clear Dutch words (op losse gronden, Echter schynt het als of, met een van beiden)', 'Koninklijk Huisarchief, The Hague, Prins Willem V inv. 337, via DECODE R2236 image 2')
 IMAGES['r1892'] = ('r1892_lead.jpg', 'Page 2, the head of the Dutch postscript: in het hollandsch met cijffer, then digit pairs written top over bottom', 'Koninklijk Huisarchief, The Hague, via DECODE R1892')
 IMAGES['r2242'] = ('r2242_lead.jpg', 'Page 1: four cipher lines, the clear Dutch written beneath', 'Koninklijk Huisarchief, The Hague, via DECODE R2242')

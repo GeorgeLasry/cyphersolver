@@ -1,5 +1,6 @@
 {
  "keys": [
+{"id": "k-schoning1783", "label": "Schoning's symbol alphabet and code (1783-84), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1783, "note": "24-sign alphabet from Van der Hoop's clear copies; one-part code, 188 of 226 numbers from glosses, his 14 Dec 1783 decipherment (A32-599) and De Larrey's Byland list (A32-604) (26 Oct 2026)."},
 {"id": "k-reede1789", "label": "Van Reede's code to Princess Wilhelmina (1789-92), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1789, "note": "Marked 1-3 digit nomenclator, 386 numbers voted from the interlinear decipherments of KHA A32-545-547 (25 Oct 2026); held-out 62% vs 10%."},
 {"id": "k-yvoy-london1797", "label": "d'Yvoy - Hereditary Prince London code (1797-98), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1797, "note": "Dutch word code, 105 numbers voted from the interlinear decipherments of KHA A35-1450-1451 (26 Oct 2026); leave-one-page-out 78% vs 26%."},
 {"id": "k-yvoy-1799", "label": "d'Yvoy - Hereditary Prince code of 1799, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1799, "note": "Dutch word code, 50 numbers voted from the interlinear decipherments of KHA A35-1452-1453 (26 Oct 2026); leave-one-page-out 81% vs 27%."},
@@ -2335,6 +2336,7 @@
 {"id": "k-wotton1585-rebuilt", "label": "Wotton 1585, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1585, "note": "Key recovered here from the contemporary decipherment or clear copy beside the cipher (targets/wotton1585/NOTES.md)."}
  ],
  "links": [
+{"key": "k-schoning1783", "target": "schoning1783", "how": "rebuilt from", "note": "alphabet from the clear copies, code from glosses and the 14 Dec 1783 decipherment"},
 {"key": "k-yvoy-london1797", "target": "yvoy1797", "how": "rebuilt from", "note": "voted from 238 glossed runs on 66 pages"},
 {"key": "k-yvoy-1799", "target": "yvoy1797", "how": "rebuilt from", "note": "voted from 133 glossed runs on 14 pages"},
 {"key": "k-philip2-donjuan1574", "target": "philip1574", "how": "rebuilt from", "note": "rebuilt from the cipher and its contemporary clear version; confirms it on ~14 lines"},
@@ -3717,6 +3719,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-schoning1783"},
 {"source": "s-cyphersolver", "key": "k-reede1789"},
 {"source": "s-cyphersolver", "key": "k-yvoy-london1797"},
 {"source": "s-cyphersolver", "key": "k-yvoy-1799"},

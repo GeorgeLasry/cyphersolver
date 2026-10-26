@@ -15,7 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
-    'Emmerich': [51.835, 6.245], 'Lyon': [45.764, 4.836], 'Prague': [50.088, 14.42], 'Breslau': [51.11, 17.03], 'Danzig': [54.35, 18.65],
+    'Potsdam': [52.391, 13.065], 'Emmerich': [51.835, 6.245], 'Lyon': [45.764, 4.836], 'Prague': [50.088, 14.42], 'Breslau': [51.11, 17.03], 'Danzig': [54.35, 18.65],
     'Moscow': [55.756, 37.617], 'Shanghai': [31.23, 121.47], 'Nagasaki': [32.75, 129.87], 'Toledo': [39.857, -4.024],
     'Bologna': [44.494, 11.343], 'Fontainebleau': [48.404, 2.701], 'Marly': [48.869, 2.094], 'Nancy': [48.692, 6.184],
     'Valencia': [39.47, -0.376], 'La Rochelle': [46.16, -1.151], 'Reims': [49.258, 4.032], 'Chenonceau': [47.325, 1.07],

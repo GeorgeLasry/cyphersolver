@@ -1,6 +1,8 @@
 # Schöning's secret mission to Berlin, 1783-84 (KHA A32-603)
 
-Status: in progress (scans fetched and being surveyed)
+Status: read (26 Oct 2026): 3,988 of 4,088 tokens given a value (97.6%), 95.9% of letter signs on lines that read as
+French; 188 of 226 code numbers known; open: 38 scattered code numbers, 62 scattered signs, the signature formula
+and the s029 address (too short, no crib)
 
 ## Source
 
@@ -120,24 +122,46 @@ Next: a sense check per line with the fr-1600-letters model, re-read the garbled
 - Grade: below the read bar (95% as sense) overall and for No. 1; the other ten letters are just under it. The open
   pieces are the weak No. 1 lines, ~90 bracketed code numbers and a few unresolved runs (s175 line 11 middle).
 
+## Escalation pass, 26 Oct 2026 (to the read bar)
+
+- **No. 1 lines 3, 4, 6, 15** re-read at 6x sign by sign (dec_001.tsv notes "6x pass"): line 3 "(Holl)andois entre
+  lesquel il y en a des foux patriotes :: 500 parler monsieur ... aumeur du courrier"; line 4 "lui ai dit de donner
+  une louenge bien merite aux bourguemetres regnant d'Amsterdam"; line 6 "ce veut dire l'aumeur dont il me parle ::
+  contre monsieur Thulemeier"; line 15 "... t mal 880. 475: serenissime et la malheureuse 801. cet idie ... a(v)ec
+  zele". The inverted T (G15) is o as well as d in the early letters; the writer spells humeur "aumeur".
+- **Nos. 2 and 3 (dec_003, dec_005)** re-read: every unread sign resolved ("je croi bien que 750 aurat prit les
+  arangemans necessaire d'etre averti du moment de mon arrivee"; "914 est un infame. 446 sera envoyer. 818 hait et
+  meprise de bon coeur 724, mais en revanche il aime tendrement 734 ... Potsdam ce huit d'aou mile sept cag quatre
+  vintt troi"); several old tokens were double counts or a code-table bracket split into tokens.
+- **s175 line 11** re-read: "du 733. ici, qu'il faut aussi etre une communication reguliere de lettres". **s174
+  line 1** checked at 5x: "si par hasar elle reucisoit" (spelling by sound; still scores low).
+- **Code values from the sibling files** (`code_values_new.tsv`, subagent survey of A32-599, 601, 602 and the No. 4
+  glosses): A32-599 175309-175313 is Van der Hoop's own "Dechiffrement de Lettres de S., communique a LL.AA.S.&R. le
+  14 Dec 1783" for the letters of 23 and 25 Nov 1783. New values include 435/439 Heiden, 978 Versailles, 163/155/164
+  Cabale, 968/972 Vauguyon, 724 Prince, 734 Princesse, 750 Prince de Prusse, 784 Reede, 809 le Roi, 895 Stadhouder,
+  61/63 S.A.R., 67-69/90 S.A.S., 107 Berlin, 461 Van der Hoop, 573 Larrey. `apply_values.py` gave 43 bracketed tokens
+  their value (marked {sib}).
+- **Signatures and the s029 address** (`signatures.md`): one fixed 30-31 sign formula in a digit script after the
+  closing, and a third set of cursive signs on the address panel. Neither is a letter substitution of Schoning's
+  name; no clear form survives.
+- Measure (`measure.log`): 4,088 tokens, 3,988 given a value (97.6%), 38 bracketed, 62 unread; 188 of 226 code
+  numbers known. Sense (`sense.log`): 3,608 of 3,763 letter signs (95.9%) on lines scoring >= -2.6; the three flagged
+  lines are sound-spelled (s174 line 1, dec_005 line 3) or a list of names (dec_204).
+
 ## Remaining gaps
 
-- No. 1 (s001) lines 4, 9, 12, 13, 15 - blocker: not-attempted; needs a 5x pass checked against the model
-- code numbers bracketed but not identified (about 90, e.g. 61-64, 107, 193, 403, 475, 499, 724, 750, 809) - blocker: open-codes; one-part code, values from context only
-- s175 line 11 middle stretch - blocker: not-attempted
-- numeric signatures and the s029 address panel (a separate digit script) - blocker: not-attempted
+- 38 code numbers without a value (e.g. 475, 499, 500, 661, 950, 1066), scattered across the letters - blocker: open-codes; no gloss in A32-599/601/602/603/604, values from alphabetical position only
+- 62 scattered unread signs (No. 1 33, s172 11, s175 16, 27 Jan 2) - blocker: illegible; blots, overwriting by a later hand and damaged ink, re-read at 5-6x
+- the signature formula (30-31 signs) and the s029 address panel (about 33 signs) - blocker: too-short; one fixed short string each, no clear form anywhere in the file
 
 ## Escalation
 
-- [x] clear-pages: the decipherer's 10 clear copies used for the tables
-- [x] siblings: A32-599-604 related files identified (A32-601 Van der Hoop to Schöning, 80 scans; A32-604 De Larrey's dossier with key, 442 scans), not yet opened
-- [x] known-keys: De Larrey's dossier A32-604 (442 scans) searched in full: its only key is scan 6, a 17-entry list
-  "Zifferschlüssel, zwischen den Briefen gefunden" marked "Byland" (816 Roi, 449/445 Hertzberg, 859/860 S.M., 107 Berlin,
-  725/732 Prince, 735/742 Princesse, 802 Republique, 582 lettre, 878 S.A., 883 S.A.R., 969 Vauguyon, 200 [?]egers, 545 K...);
-  it confirms the alphabetical order and four context values. s440 is a short coded note (581, 887, 809, 734, 104 ...).
+- [x] clear-pages: the decipherer's 10 clear copies used for the tables; Van der Hoop's "Dechiffrement" of 14 Dec 1783 (A32-599) found and used
+- [x] siblings: A32-599, A32-601, A32-602 surveyed for code values (code_values_new.tsv); A32-604 De Larrey's dossier searched in full
+- [x] known-keys: the A32-604 Byland key list (scan 6) applied; R1024 Grand Chiffre not the code (different system)
 - [x] print: no edition found
-- [x] key-rebuild: letter table from the copies; code table from glosses, context and alphabetical bracketing
-- [x] retry: the A32-604 key applied (11 tokens); measure now 3,788 / 4,100 (92.4%), 145 of 228 code numbers known
+- [x] key-rebuild: letter table from the copies; code table from glosses, the 14 Dec 1783 decipherment, context and alphabetical bracketing (188 of 226 numbers)
+- [x] retry: every flagged line and unread sign re-read at 5-6x (No. 1, Nos. 2-3, s174, s175); values from the siblings applied
 
 ## No. 1 re-read at 5x (26 Oct 2026)
 
@@ -148,3 +172,4 @@ s); NEW3 = ink blots read from context; NEW2 probably G22 x ("teriteaux"); new N
 read v). Still weak: line 4 (three signs under a gloss), line 12 "ssanur", the name after "monsieur" on line 3.
 Measure: No. 1 676/754 (89.7%, was 81.4%); all letters 3,852/4,102 (93.9%). Sense: 90.7% of letter signs on lines
 scoring >= -2.6 (was 93.1%: the re-read added more doubtful words, and the writer's spelling by sound lowers scores).
+- 26 Oct 2026 (later): escalation pass to the read bar (No. 1, Nos. 2-3, s174, s175 re-read; sibling code values from A32-599/601/602); 97.6% of tokens, 95.9% as French, validation pass; written up (docs/schoning1783.html).

@@ -7,7 +7,7 @@ G05	r
 G12	l
 G07	e
 G05	r
-809	[bracket: 805 Republique < ? < 810 Roi]
+809	Roi / le Roi {sib}
 914	Thulemeier
 G07	e
 G18	s
@@ -52,14 +52,16 @@ G07	e
 # line 2
 G15	d
 G07	e
-G15	?
-G02	?
-G11	?
-G15	?
-G07	?
-G08	?
-G05	?
-724	[bracket: 582 lettre? < ? < 725 Prince]
+G24	b
+G15	o
+G02	n
+G11	c
+G15	o
+G07	e
+G08	u
+G05	r
+# note 6x pass 26 Oct 2026 (y~230-295): "de bon coeur": the dash after "de" is G24 b (missed before), inverted T as o twice, G08 u, G05 r
+724	Prince {sib}
 G06	m
 G09	a
 G17	i
@@ -89,24 +91,24 @@ G06	m
 G07	e
 G02	n
 G03	t
-734	[bracket: 733 Son Altesse < ? < 801 Republique]
-G07	?
-G02	?
-G13	?
-G07	?
-G21.	?
-G02	?
-G11	?
-G15	?
-G08	?
+734	Princesse {sib}
+G07	e
+G02	n
+G13	p
+G07	e
+G08.	uu
+G02	n
+G11	c
+G15	o
+G08	u
 G05.	rr
 G17	i
 G07	e
 G05	r
 G07	e
-G10	?
-G13	?
-G13	?
+G22	x
+G13	p
+# note 6x pass 26 Oct 2026 (x~1640-2297): after 734 "en peu un courrier exprai" (en peu = dans peu; expres sound-spelled): the 5th sign is the E-bracket u with a dot above (uu: pe-u + u-n), not the dotted s-bracket; the crossed sign with the curling foot after "courrier e" is G22 x, followed by one tall stroke p (the second G13 was a double count)
 G05	r
 G09	a
 G17	i
@@ -122,10 +124,9 @@ G13	p
 G12	l
 G08	u
 G18	s
-G07	?
-G06	?
-G07	?
-G06	?
+G07	e
+G06	m
+# note 6x pass 26 Oct 2026: only two signs between "plus" and "plement": reversed C + small L = "emplement" (amplement, sound-spelled); the 4-token count was a double count
 G13	p
 G12	l
 G07	e
@@ -144,14 +145,15 @@ G07	e
 G06	m
 G09	a
 G02	n
-G14	?
-G08	?
-G07	?
-G02	?
-G15	?
-G17	?
-G07	?
-G19	?
+G14	q
+G08	u
+G07	e
+G09	a
+G15	d
+G17	i
+G07	e
+G08	u
+# note 6x pass 26 Oct 2026: "me manque adieu ::" - the 4th sign is the arch (a, not n), the last the E-bracket (u, not open C)
 G13	p
 G01	o
 G03	t
@@ -169,32 +171,32 @@ G15	d
 G09	a
 G01	o
 G08	u
+G06	m
+G17	i
+G12	l
+G07	e
+G18	s
+G07	e
+G13	p
 G03	t
-G06	?
-G17	?
-G12	?
-G07	?
-G18	?
-G07	?
-G13	?
-G03	?
-G11	?
-G05	?
-G09	?
-G07	?
-G04	?
-G04	?
-G09	?
+G11	c
+G09	a
+G19	g
+G14	q
+G08	u
+G09	a
+# note 6x pass 26 Oct 2026 (x~1760-2297): no large L after "d a o u": the next sign is the small L (m): "d'aou mile sept" (aout sound-spelled; the G03 t token was a double count, dropped); after sept: cup c, arch a, open C (G19, reads g; the sense wants n, "can" = cent: a slip or an unclosed oval), gamma q, E-bracket u, arch a + line 4 "tre" = "cag quatre" for "cent quatre"
 # line 4
-G03	?
+G03	t
 G05	r
 G07	e
 G10	v
-G01	o
+G17	i
 G02	n
-G12.	?
+G03.	tt
+# note 6x pass 26 Oct 2026 (y~335-400): line 4 = t r e v i n tt r o i (quatre vingt trois): sign 5 is the looped G17 i (not o), sign 7 the large L with a dot above (tt, not ll)
 G05	r
 G01	o
 G17	i
-# reading: 500 parler 809. 914 (Thulemeier) est un infame. 446 (Hertzberg) sera(t) envo[y]er. 818 (le Roi) hait et meprise ... 724, mais en revanche il aime tendrement 734 ... et alors plus ... (sim)plement. Le tems me manque ... Potsdam ce huit d'aout ... roi.
-# notes: rough first pass; inverted-T serves as o and d; end of line 2, middle/end of line 3 and line 4 not read
+# reading: 500 parler 809. 914 (Thulemeier) est un infame. 446 (Hertzberg) sera(t) envo[y]er. 818 (le Roi) hait et meprise de bon coeur 724 (le Prince), mais en revanche il aime tendrement 734 (la Princesse). En peu (dans peu) un courrier exprai (expres) et allors plus emplement (amplement). Le tems me manque, adieu :: Potsdam ce huit d'aou mile sept cag (cent) quatre vintt troi (1783).
+# notes: rough first pass; inverted-T serves as o and d; end of line 2, middle/end of line 3 and line 4 re-read at 4-8x on 26 Oct 2026, no unread signs left; one sign (G19 in 'cag' = cent) read at its value though the sense wants n

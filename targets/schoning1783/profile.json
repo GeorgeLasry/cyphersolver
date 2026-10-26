@@ -1,216 +1,316 @@
 {
-  "schema_version": 1,
-  "target": "schoning1783",
-  "title": "Gustav von Schöning to Princess Wilhelmina and Van der Hoop, 1783-84 (KHA A32-603)",
-  "documents": [
-    {
-      "id": "A32-603",
-      "shelfmark": "Koninklijk Huisarchief, A32-603",
-      "date": "1783-1784",
-      "year": 1783,
-      "country": "Prussia",
-      "route": "Potsdam -> The Hague",
-      "language": "French",
-      "pages": 212,
-      "cleartext_in_document": "mostly clear",
-      "plaintext": {
-        "location": [
-          "interlinear"
-        ],
-        "source": "Van der Hoop's decipherments between the lines and in clear copies (catalogue)."
-      },
-      "length": {
-        "tokens": 4100,
-        "distinct": "unknown",
-        "unit": "mixed",
-        "measured": true,
-        "file": "measure.log"
-      },
-      "transcription": {
-        "by": "unknown",
-        "source": "unknown",
-        "image_quality": "good",
-        "notes": ""
-      }
-    }
-  ],
-  "system": {
-    "types": [
-      "monoalphabetic",
-      "code"
+ "schema_version": 1,
+ "target": "schoning1783",
+ "title": "Gustav von Schöning to Princess Wilhelmina and Van der Hoop, 1783-84 (KHA A32-603)",
+ "documents": [
+  {
+   "id": "A32-603",
+   "shelfmark": "Koninklijk Huisarchief, A32-603",
+   "date": "1783-1784",
+   "year": 1783,
+   "country": "Prussia",
+   "route": "Potsdam -> The Hague",
+   "language": "French",
+   "pages": 212,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "interlinear"
     ],
-    "summary": "Letter signs (invented hook-and-stroke shapes, one per letter, a few homophones; a dot above doubles a letter; j = i) for running text, and 2-3 digit code numbers for names and titles.",
-    "symbol_kind": "digits and symbols",
-    "distinct_symbols": "unknown",
-    "diacritics": {
-      "used": "unknown"
-    },
-    "homophones": {
-      "used": "unknown"
-    },
-    "nomenclator": {
-      "present": true,
-      "entries": "unknown",
-      "kinds": [
-        "names",
-        "places",
-        "titles"
-      ],
-      "unread_groups": "unknown"
-    },
-    "nulls": "unknown",
-    "key_order": "alphabetical",
-    "word_division": "unknown",
-    "doubled_letters": "unknown",
-    "sibling_key": "unknown",
+    "source": "Van der Hoop's decipherments between the lines and in clear copies (catalogue)."
+   },
+   "length": {
+    "tokens": 4100,
+    "distinct": "unknown",
+    "unit": "mixed",
+    "measured": true,
+    "file": "measure.log"
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "unknown",
+    "image_quality": "good",
     "notes": ""
-  },
-  "conditions": {
-    "prior_solution": {
-      "exists": "in archive",
-      "where": "Van der Hoop's decipherments in the same file.",
-      "found": "before attempt",
-      "used": false
-    },
-    "inputs": [
-      "images"
-    ],
-    "attack": "unknown",
-    "human_role": "Asked to take KHA lead K4.",
-    "tools": [
-      "Koninklijke Verzamelingen image API",
-      "python",
-      "web search"
-    ],
-    "models": [
-      "claude-opus-5-5"
-    ],
-    "sessions": 1,
-    "first_date": "2026-10-25",
-    "last_date": "2026-10-25"
-  },
-  "solution": [
-    {
-      "date": "2026-10-25",
-      "kind": "literature search",
-      "what": "Web search for an edition of the Schöning mission letters: none found; not on DECODE.",
-      "result": "failed"
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "access",
-      "what": "Fetched the 212 scans of KHA A32-603.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "crib",
-      "technique": [
-        "plaintext matching",
-        "manual reconstruction"
-      ],
-      "what": "Aligned ~200 signs of the 6 Jan 1784 original with its clear copy: 17 letters confirmed, g/z/doubled-l single sightings, b h j k x y not yet seen; not yet checked on a second pair.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "crib",
-      "technique": [
-        "plaintext matching",
-        "manual reconstruction"
-      ],
-      "what": "Rest of the 6 Jan 1784 pair aligned at 3x: h, x, z, second s, doubling dot added; table covers all letters used except y.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "verification",
-      "technique": [
-        "key matching"
-      ],
-      "what": "Table checked on the 25 Nov 1783 letter against its clear copy: 142/143 known signs agree (99.3%); b found.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "key from source",
-      "technique": [
-        "key matching",
-        "contextual inference"
-      ],
-      "what": "Code table from the decipherer's glosses on the 25 Nov 1783 copy (38 numbers) and context in 13 clear copies (78 numbers): a one-part alphabetical code with homophone blocks; context values placed by alphabetical bracketing.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "reading",
-      "technique": [
-        "key matching",
-        "contextual inference"
-      ],
-      "what": "11 letters with no clear copy deciphered with the letter and code tables (dec_*.tsv): 3,447 tokens, 92.8% given a value, 80 codes bracketed alphabetically; sense not yet checked line by line; No. 1 only partly transcribed.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "verification",
-      "technique": [
-        "language-model scoring"
-      ],
-      "what": "Per-line sense check with fr-1600-letters (threshold -2.6): 7 lines flagged and re-read at 3x; G11 settled as c only; No. 1 transcribed in full. 4,100 tokens, 92.2% given a value; 93.1% of letter signs on lines reading as French; without No. 1, 94.6%.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "key from source",
-      "technique": [
-        "key matching"
-      ],
-      "what": "De Larrey's dossier KHA A32-604 searched (442 scans): one 17-entry key list (scan 6, 'Zifferschlussel zwischen den Briefen gefunden', Byland); applied, 11 tokens resolved; 92.4% given a value, 145/228 codes known.",
-      "result": "worked"
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "transcription",
-      "technique": [
-        "contextual inference"
-      ],
-      "what": "No. 1 weak lines re-read at 5-6x: 89.7% of its tokens given a value (from 81.4%); all letters 93.9%; sense 90.7% of letter signs on lines scoring >= -2.6.",
-      "result": "worked"
-    }
-  ],
-  "outcome": {
-    "method": "unknown",
-    "method_basis": "unknown",
-    "contribution": [
-      "unknown"
-    ],
-    "class": "unknown",
-    "fraction_read": 0.939,
-    "grades": {
-      "H": "unknown",
-      "C": "unknown",
-      "M": "unknown",
-      "I": "unknown"
-    },
-    "verification": [
-      "unknown"
-    ],
-    "notes": "In progress (not yet graded as read in part): 92.2% of tokens given a value; De Larrey dossier A32-604 (catalogued with key) still to open.",
-    "gaps": [
-      {
-        "item": "No. 1 lines 4, 9, 12, 13, 15",
-        "blocker": "not-attempted"
-      },
-      {
-        "item": "about 90 bracketed code numbers",
-        "blocker": "open-codes"
-      },
-      {
-        "item": "numeric signatures",
-        "blocker": "not-attempted"
-      }
-    ],
-    "key": "partial"
+   },
+   "places": {
+    "from": "Potsdam",
+    "to": "The Hague"
+   }
   }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "code"
+  ],
+  "summary": "Letter signs (invented hook-and-stroke shapes, one per letter, a few homophones; a dot above doubles a letter; j = i) for running text, and 2-3 digit code numbers for names and titles.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": "unknown"
+  },
+  "nulls": "unknown",
+  "key_order": "alphabetical",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": ""
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Van der Hoop's decipherments in the same file.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "unknown",
+  "human_role": "Asked to take KHA lead K4.",
+  "tools": [
+   "Koninklijke Verzamelingen image API",
+   "python",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-25",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-25",
+   "kind": "literature search",
+   "what": "Web search for an edition of the Schöning mission letters: none found; not on DECODE.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "access",
+   "what": "Fetched the 212 scans of KHA A32-603.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Aligned ~200 signs of the 6 Jan 1784 original with its clear copy: 17 letters confirmed, g/z/doubled-l single sightings, b h j k x y not yet seen; not yet checked on a second pair.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Rest of the 6 Jan 1784 pair aligned at 3x: h, x, z, second s, doubling dot added; table covers all letters used except y.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Table checked on the 25 Nov 1783 letter against its clear copy: 142/143 known signs agree (99.3%); b found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "key from source",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "Code table from the decipherer's glosses on the 25 Nov 1783 copy (38 numbers) and context in 13 clear copies (78 numbers): a one-part alphabetical code with homophone blocks; context values placed by alphabetical bracketing.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "reading",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "11 letters with no clear copy deciphered with the letter and code tables (dec_*.tsv): 3,447 tokens, 92.8% given a value, 80 codes bracketed alphabetically; sense not yet checked line by line; No. 1 only partly transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Per-line sense check with fr-1600-letters (threshold -2.6): 7 lines flagged and re-read at 3x; G11 settled as c only; No. 1 transcribed in full. 4,100 tokens, 92.2% given a value; 93.1% of letter signs on lines reading as French; without No. 1, 94.6%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "De Larrey's dossier KHA A32-604 searched (442 scans): one 17-entry key list (scan 6, 'Zifferschlussel zwischen den Briefen gefunden', Byland); applied, 11 tokens resolved; 92.4% given a value, 145/228 codes known.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "No. 1 weak lines re-read at 5-6x: 89.7% of its tokens given a value (from 81.4%); all letters 93.9%; sense 90.7% of letter signs on lines scoring >= -2.6.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "No. 1 lines 3, 4, 6, 15, Nos. 2-3 (dec_003, dec_005), s174 line 1 and s175 line 11 re-read sign by sign at 5-6x by subagents; double counts and a split code bracket removed.",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Sibling files A32-599/601/602 and the No. 4 glosses surveyed: Van der Hoop's 'Dechiffrement' of 14 Dec 1783 (A32-599) and glossed copies give about 128 code values (code_values_new.tsv); 43 bracketed tokens filled (apply_values.py).",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Measure 3,988/4,088 tokens (97.6%), sense 95.9% of letter signs on lines scoring >= -2.6 (fr-1600-letters); 188 of 226 codes known.",
+   "result": "worked",
+   "date": "2026-10-26"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 3784 tokens, 41 types, fr-1600-letters order 4: reading -2.154 per letter; random keys -5.887 (z 5.7); key annealed onto shuffled ciphertext best -3.241 (mean -3.258, z 112.2); annealer on the real text -2.153. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-10-26",
+   "model": "fr-1600-letters",
+   "file": "validation.tsv",
+   "tokens": 3784,
+   "types": 41,
+   "tokens_per_type": 92.29,
+   "score": -2.154,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.887,
+     "sd": 0.66,
+     "max": -4.408,
+     "z": 5.7,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.258,
+     "sd": 0.01,
+     "max": -3.241,
+     "z": 112.2,
+     "p": 0.1429
+    }
+   },
+   "power": -2.153,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.083; polyphony 0.011; 62 unread tokens left out; annealer on the real text from random keys reached -2.153"
+  },
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The symbol alphabet was rebuilt from the decipherer's clear copies filed with the cipher letters (A32-603), and the code table from their glosses, Van der Hoop's 14 Dec 1783 decipherment and other glossed copies in the sibling files A32-599/602, and De Larrey's Byland key list (A32-604); with them the eleven letters without a clear copy were deciphered.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "class": "read",
+  "fraction_read": 0.976,
+  "grades": {
+   "H": "unknown",
+   "C": "unknown",
+   "M": "unknown",
+   "I": "unknown"
+  },
+  "verification": [
+   "contemporary decipherment",
+   "statistical test",
+   "historical consistency"
+  ],
+  "notes": "3,988 of 4,088 tokens given a value (97.6%); 95.9% of letter signs on lines that read as French; 188 of 226 code numbers known.",
+  "gaps": [
+   {
+    "item": "38 scattered code numbers",
+    "blocker": "open-codes",
+    "detail": "no gloss in A32-599/601/602/603/604"
+   },
+   {
+    "item": "62 scattered unread signs (No. 1, s172, s175, 27 Jan)",
+    "blocker": "illegible",
+    "detail": "blots and overwriting by a later hand; re-read at 5-6x"
+   },
+   {
+    "item": "signature formula and s029 address panel",
+    "blocker": "too-short",
+    "detail": "one fixed short string each, no clear form"
+   }
+  ],
+  "key": "partial",
+  "codes_open": {
+   "open": 38,
+   "total": 226,
+   "tokens_open": 38
+  },
+  "texts": [
+   {
+    "doc": "A32-603",
+    "label": "Schoning to Van der Hoop and the Princess, 1783-84: the eleven letters without a clear copy",
+    "transcription": "dec_001.tsv",
+    "decryption": [
+     "reading.md"
+    ],
+    "translation": "reading_en.md",
+    "language": "fr",
+    "read_share": 0.976,
+    "summary": "Schoning's secret mission at the Prussian court for Princess Wilhelmina: his arrival and the false patriots at Potsdam, Thulemeier 'un infame' and Hertzberg to be sent away, the King's hatred of the Prince and love of the Princess, a plan for a defensive and offensive alliance of the Republic with France, Spain and Prussia against England and the Emperor, his secret channel, and Gaffron's affair at Constantinople.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-26",
+     "note": "The deciphered passages read as French sentences in Schoning's sound-spelling and are translated in reading_en.md; a few stretches of s172 and s175 stay fragmentary and are marked. Not checked by a human against the images."
+    }
+   }
+  ],
+  "key_file": "letter_table.tsv"
+ }
 }
