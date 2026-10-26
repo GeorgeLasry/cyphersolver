@@ -13929,3 +13929,13 @@ held, 1696 failed (3357 registered).
 
 Both failed: block 800-819 odds ratio 1.09 (p = 0.67); block 90-99 1.11 (p = 0.80). Progress: none (goal streak 16).
 Tally, counting parts: 1656 held, 1698 failed (3359 registered).
+
+# Four-hundred-and-eighty-sixth set, registered before testing (26 October 2026): goal loop 132, U and jar families by seal size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test486.py`).
+
+- **UJ1** Large and small seals differ in carrying a U sign 700-706 (two-sided p < 0.05; overlaps set 441's formula, so
+  it cannot count as progress).
+- **UJ2** They differ in carrying a marked jar 741-749 (two-sided p < 0.05).
+- Progress rule: UJ2 holds.
+
