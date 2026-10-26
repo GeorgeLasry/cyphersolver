@@ -13696,7 +13696,7 @@ Square seals with a size; Mantel-Haenszel over length band x site (`predict_test
 CC1 failed, CC2 held. Caged closers are not size-linked (odds ratio 1.26, p = 0.57). Doubled non-numeral signs are on
 small seals: odds ratio large/small 0.41 (p = 0.005) with length band x site strata. With sets 380 (small seals repeat
 texts) and 430 (156, 400, 590 small), small seals carry a distinct repertoire: repeated texts, doubled signs and the
-small-seal signs. A single test on all the data. Progress (goal streak 0). Tally, counting parts: 1651 held, 1673
+small-seal signs. A single test on all the data (set 470: same direction in two random halves, significant in one). Progress (goal streak 0). Tally, counting parts: 1651 held, 1673
 failed (3328 registered).
 
 # Four-hundred-and-seventieth set, registered before testing (26 October 2026): goal loop 116, doubled signs on two halves (two hypotheses)
@@ -13708,3 +13708,8 @@ Set 469 used all sized square seals. Here two random halves (hash of text and si
 - **DH2** The same in half 2.
 - Progress rule: none (replication).
 
+## Results of the four-hundred-and-seventieth set (`predict_test470.py`, `results/predict_test470.md`)
+
+DH1 held, DH2 failed. Half 1: odds ratio 0.32 (p = 0.014); half 2: 0.48 (p = 0.14). Both halves lean to small seals, one
+is significant: set 469 holds in direction, borderline in strength. Progress: none (goal streak 1). Tally, counting
+parts: 1652 held, 1674 failed (3330 registered).
