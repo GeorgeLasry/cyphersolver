@@ -13751,3 +13751,9 @@ Tally, counting parts: 1652 held, 1678 failed (3334 registered).
   counting any repeat).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-seventy-third set (`predict_test473.py`, `results/predict_test473.md`)
+
+SM1 failed, SM2 held narrowly. 90 is not size-linked (odds ratio 1.02). Texts without a repeated sign lean to large
+seals (1.62, p = 0.049): the converse of set 469, as registered, so it is counted as consistency, not progress (the
+registered P line reads 'holds'). Progress: none (goal streak 4). Tally, counting parts: 1653 held, 1677 failed (3335
+registered).
