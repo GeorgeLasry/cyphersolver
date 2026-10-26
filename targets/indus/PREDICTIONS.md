@@ -15177,3 +15177,7 @@ A context model p(sign | the sign three positions back), mixed onto the S base (
 - **CT1** S on the fixed test falls by 0.005+ and sign-token bits fall.
 - **CT2** S on A -> B falls and sign-token bits fall.
 - Progress rule: CT1 and CT2.
+
+## Results of set 572 (`hyp_s2_ctx_skip3.py`, `results/predict_test572.md`)
+
+Held: none. fixed gain 0.0000, A -> B gain 0.0000. Progress: none (session-2 goal streak 10).
