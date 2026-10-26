@@ -12474,3 +12474,10 @@ body and differing in the rest; places shuffled 500 times (`predict_test393.py`)
 - **NP2** Seals sharing only the first sign of the name body come from one city more than chance.
 - Progress rule: either holds.
 
+## Results of the three-hundred-and-ninety-third set (`predict_test393.py`, `results/predict_test393.md`)
+
+Both failed. Seals sharing only the head sign: 3,834 of 7,625 pairs same city (p = 0.10); sharing only the first sign:
+5,979 of 12,195 (p = 0.29). Neither part alone is local; the locality of sets 390-391 is in the whole name body.
+Progress: none (goal streak 2). (Numbering note: a parallel goal run in the original session also registered sets
+375-379 on 26 Oct; its entries are relabelled by that session; this run's sets are 374-393 as headed 'goal loop 20-39'.)
+Tally, counting parts: 1614 held, 1562 failed (3176 registered, this run's sets only).

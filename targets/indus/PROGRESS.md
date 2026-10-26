@@ -292,3 +292,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G23 | 377 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | restoration with object-kind models: 25 of 75 against plain 28 (no progress; goal streak 5) |
 | G37 | 391 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | local names replicate on M77 (226 of 270 same city, p = 0.001; mould-copy caveat); not local to a Mohenjo-daro quarter (progress; goal streak 0) |
 | G38 | 392 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | local names hold without Harappa (not mould copies); a subset re-test, consistency only (no progress; goal streak 1) |
+| G39 | 393 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | neither the head nor the first sign alone is local: locality is in the whole name body (no progress; goal streak 2) |
