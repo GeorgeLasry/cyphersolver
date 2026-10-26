@@ -12615,3 +12615,18 @@ Inscribed pottery (ICIT POT types) against square seals (`predict_test401.py`).
 - **PT2** At equal length pottery texts close with 740 / 520 less often than seal texts (Mantel-Haenszel p < 0.05).
 - Progress rule: PT1 holds.
 
+## Results of the four-hundred-and-first set (`predict_test401.py`, `results/predict_test401.md`)
+
+Both failed. Pottery lines are few and short (121 tokens on C-train against 3,424 for seals); no sign is skewed, and the
+ending rate is the same at equal length (odds ratio 1.06). Progress: none (goal streak 3). Tally, counting parts: 1619
+held, 1574 failed (3193 registered).
+
+# Four-hundred-and-second set, registered before testing (26 October 2026): goal loop 48, Harappa seals over time (two hypotheses)
+
+Harappa square seals with a period (ICIT field 8, ordered 1 < 2 < 3A < 3B < 3C-1 ... 3C-4 < 4 < 5; '3', '3B/C' and
+bare '3C' left out) and a size (`predict_test402.py`).
+
+- **SP1** Seal size falls over the periods (Spearman rho < 0, p < 0.05).
+- **SP2** Text length rises over the periods (Spearman rho > 0, p < 0.05).
+- Progress rule: either holds.
+

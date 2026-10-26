@@ -300,3 +300,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G44 | 398 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | WORD with the domain models: top-10 3.4% to 4.7% (fixed), 0% to 0.5% (C); four names in all (progress, marginal; goal streak 0) |
 | G45 | 399 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | WORD with a city prior: no gain (no progress; goal streak 1) |
 | G46 | 400 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | sealings (tags) vs seals: no heading or ending difference (41 lines) (no progress; goal streak 2) |
+| G47 | 401 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pottery vs seals: too few tokens, nothing (no progress; goal streak 3) |
