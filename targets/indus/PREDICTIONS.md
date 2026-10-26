@@ -14805,3 +14805,7 @@ A sign is 'counted' on A if 50%+ of its tokens (8+) follow a numeral, a 'head' i
   20% before an ending).
 - **CH2** Counted signs are followed by an ending on B less often than heads are (Fisher-like binomial on B tokens).
 - Progress rule: CH1 and CH2, unless the counted-sign role (set 176 R) already covers it: then consistency.
+
+## Results of set 546 (`hyp_s2_counted.py`, `results/predict_test546.md`)
+
+Held: CH2. counted 6 / heads 18, overlap 2; counted rarely heads on B 3/5; the roles (set 176) already separate them: consistency. Progress: none (session-2 goal streak 1).

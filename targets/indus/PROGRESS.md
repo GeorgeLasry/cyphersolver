@@ -445,3 +445,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | S2-8 | 543 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | order of two numerals in a line: A larger-first 75 vs 117; B 30 vs 38. (no progress; session-2 goal streak 8) |
 | S2-9 | 544 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | numeral directly before an ending: A True, B False; the name grammar (head before the ending, sets 176-177) implies it: consistency. (no progress; session-2 goal streak 9) |
 | S2-10 | 545 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | long-distance sign pairs: 16 of 21 A long-distance pairs positive on B. (progress; session-2 goal streak 0) |
+| S2-11 | 546 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | counted signs against name heads: counted 6 / heads 18, overlap 2; counted rarely heads on B 3/5; the roles (set 176) already separate them: consistency. (no progress; session-2 goal streak 1) |
