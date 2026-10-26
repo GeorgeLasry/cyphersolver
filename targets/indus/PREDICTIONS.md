@@ -13081,3 +13081,12 @@ DH1 held, DH2 failed (audit). Most mid-line 1 / 2 stand after a heading sign (29
 cases, cosine 0.636, p = 0.001) and is borderline on B (85, 0.650, p = 0.053). **Set 395's WD1 is downgraded**: Wells's
 'divider' is mostly the heading formula in mid-text; a smaller residue of bare 1 / 2 opening a unit holds on A only.
 Progress: none (goal streak 6). Tally, counting parts: 1628 held, 1617 failed (3249 registered).
+
+# Four-hundred-and-thirtieth set, registered before testing (26 October 2026): goal loop 76, audit of the size signs (two hypotheses)
+
+Set 379 held length (LZ1) and site (LZ2, Mohenjo-daro direction only) separately. Here (`predict_test430.py`):
+
+- **SZA1** With length band x site strata, 4+ of the 7 size signs keep their direction at Mantel-Haenszel p < 0.05.
+- **SZA2** With size measured by the second dimension (ICIT field 32), length strata, 4+ of 7 the same.
+- Progress rule: none (audit). Both failing downgrades sets 376-379.
+
