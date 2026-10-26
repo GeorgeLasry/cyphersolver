@@ -13518,3 +13518,12 @@ Both failed. Fish before the formula 53 of 73 against 76 of 125 before plain 520
 40 (B, p = 0.061). The formula takes the same name class as plain 520: it is the 520 class in a fuller form, used on
 larger seals (sets 441, 446). Progress: none (goal streak 11). Tally, counting parts: 1644 held, 1656 failed (3304
 registered).
+
+# Four-hundred-and-fifty-eighth set, registered before testing (26 October 2026): goal loop 104, false-positive rate under random labels (two hypotheses)
+
+Sets 455-456 gave single controls. Here 20 random halvings of square-seal lines (by hash) (`predict_test458.py`).
+
+- **FP1** Set 371's skew test reports a replicated skew in at most 1 of 20.
+- **FP2** The Mantel-Haenszel ending test (length bands) is significant at p < 0.05 in at most 2 of 20.
+- Progress rule: none (calibration).
+
