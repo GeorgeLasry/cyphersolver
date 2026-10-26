@@ -16175,3 +16175,19 @@ too few. The wavy line 450 / 460 stands in 28 lines, never alone, but the genera
 so 'never alone' is untestable on the Indus side (PC3). The book's 'as in the Indus script' for the wavy line is
 consistent but empty. Caveats: the jar's equivalent is our choice (the corpus gives none); the graffiti side of the
 claims is qualitative (no counts in the book). Progress: none. Tally: 3 failed added.
+
+# Set 639, registered before testing (26 October 2026): the chance rate of graffiti-Indus shape parallels (two hypotheses)
+
+Rajan & Sivanantham 2025 find Indus parallels for about 60% of the 42 graffiti base signs by shape and call this "not
+merely accidental" (p. 37), without a control. Control here: the same 42 signs (corpus images) matched against 90 signs
+drawn at random (seed 639) from each of four inventories, rendered alike and labelled only P / Q / R / S: Indus (ICIT,
+numerals left out), Linear A, Cypro-Minoan, Linear B syllabary (88) (`shape_sheets.py`, data/shapes/). One scorer agent
+per inventory, not told which script it is, applies one written standard: an exact parallel = same strokes in the same
+configuration, rotation and mirroring allowed, no added or missing elements; ambiguous cases marked 'near', not
+counted. Blinding is imperfect (Indus and Aegean signs are recognisable). Not measured before registering.
+
+- **SP1** More graffiti signs have an exact parallel in the Indus sample than in the controls pooled (Fisher one-sided
+  p < 0.05), and more than in each control separately.
+- **SP2** The controls' mean exact-parallel share is 20% or more: simple marks find 'parallels' in unrelated scripts.
+- Progress rule: none (a check of a published claim).
+
