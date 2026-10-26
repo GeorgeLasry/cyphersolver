@@ -13348,3 +13348,14 @@ before 740 (p < 0.0001 both); a 520-class head in 32 of 73 and 5 of 32 against 4
 p = 0.009). **The closing formula '705 / 706 33 520' is the long form of the fish (520) class of names**: fish + stroked
 U + long 3 + 520, in place of fish + 520. With set 441 it is the form used on large seals. Progress (goal streak 0).
 Tally, counting parts: 1638 held, 1641 failed (3283 registered).
+
+# Four-hundred-and-forty-seventh set, registered before testing (26 October 2026): goal loop 93, long and short fish names (two hypotheses)
+
+Long form = fish (220-249) + 705 / 706 + 33 + 520; short form = fish + 520. Name = the fish and up to one sign before it
+(`predict_test447.py`).
+
+- **LF1** Square seals with the long form are larger than seals with the short form (Mann-Whitney one-sided p < 0.05).
+- **LF2** On A, the same name appears in both forms more often than when forms are shuffled among the name tokens (1,000
+  shuffles, p < 0.05): the long form is an optional, fuller form of the same name.
+- Progress rule: either holds.
+
