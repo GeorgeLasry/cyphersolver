@@ -13899,3 +13899,12 @@ Set 384 / 426: rectangular seals favour 1, 407, 55, 806; square seals 390, 741, 
 Both failed: rectangular-seal signs odds ratio 1.07 (p = 0.87); 390 / 741 / 760 0.85 (p = 0.29). Seal shape and seal
 size select different signs. Progress: none (goal streak 14). Tally, counting parts: 1655 held, 1695 failed (3355
 registered).
+
+# Four-hundred-and-eighty-fourth set, registered before testing (26 October 2026): goal loop 130, inside the formula by seal size (two hypotheses)
+
+Square seals with the formula and a size; Mann-Whitney (the formula fixes most of the length) (`predict_test484.py`).
+
+- **IF1** Formula seals with 706 are larger than formula seals with 705 (one-sided).
+- **IF2** Formula seals with a marked fish before it differ in size from those with plain 220 (two-sided).
+- Progress rule: either holds.
+
