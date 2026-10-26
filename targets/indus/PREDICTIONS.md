@@ -12519,3 +12519,15 @@ heading + divider at line start was stripped and openers recomputed: 0.615 (p = 
 claim that these markers divide words is supported**: a new unit starts after them. The stroked jars close lines in
 3.3% (A) and 13.6% (B) of tokens against 88.0% and 80.5% for 740 (WE1): they are not case endings in Wells's sense but
 name elements (set 186). Progress (goal streak 0). Tally, counting parts: 1617 held, 1563 failed (3180 registered).
+
+# Three-hundred-and-ninety-sixth set, registered before testing (26 October 2026): goal loop 42, dividers in the grammar and roles (two hypotheses)
+
+Set 395: a new unit starts after a mid-line 2 / 1 / 60. In the grammar (progress.grammar_margin, G2 rules of sets
+216-264), a line that does not parse may parse as segments cut at such dividers, each segment parsing on its own (or
+being a single sign); the margin is real minus shuffled, so a rule that parses shuffled lines as easily gains nothing
+(`predict_test396.py`).
+
+- **GD1** The divider-split rule raises the G margin on A and on B.
+- **GD2** A 'divider' role for mid-line 60 (not beside numerals; 1 and 2 are numerals already) raises R.
+- Progress rule: GD1 holds.
+
