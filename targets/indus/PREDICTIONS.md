@@ -12358,3 +12358,13 @@ p = 0.85). On 248 rectangular seals 5 of the 7 size signs lean the same way as o
 registered bar was weak, since 5+ of 7 happens by chance 23% of the time; it counts under the rule but is thin support.
 Later bars of this kind use a binomial test. Progress (goal streak 0). Tally, counting parts: 1608 held, 1558 failed
 (3166 registered).
+
+# Three-hundred-and-eighty-ninth set, registered before testing (26 October 2026): goal loop 35, copies and numerals by seal size (two hypotheses)
+
+Clean ICIT square seals with a size (`predict_test389.py`).
+
+- **TT1** Seals carrying the same text (2+ signs) are closer in size than random seals (mean standard deviation within
+  groups against 1,000 random draws of equal group sizes, p < 0.05): copies were made to one size.
+- **TT2** At equal length (Mantel-Haenszel), small square seals carry a numeral more often than large ones (p < 0.05).
+- Progress rule: either holds.
+
