@@ -13682,3 +13682,12 @@ length band x site (`predict_test468.py`).
 
 Both failed: high numerals odds ratio 0.83 (p = 0.49), long strokes 0.86 (p = 0.42). Numbers on seals do not vary with
 seal size. Progress: none (goal streak 9). Tally, counting parts: 1650 held, 1672 failed (3326 registered).
+
+# Four-hundred-and-sixty-ninth set, registered before testing (26 October 2026): goal loop 115, caged closers and doubled signs by size (two hypotheses)
+
+Square seals with a size; Mantel-Haenszel over length band x site (`predict_test469.py`).
+
+- **CC1** Large and small seals differ in carrying a caged closer (226, 232, 153, 236, 241; two-sided p < 0.05).
+- **CC2** They differ in carrying a doubled non-numeral sign (two-sided p < 0.05).
+- Progress rule: either holds.
+
