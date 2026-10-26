@@ -15086,3 +15086,12 @@ Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=after). Large / small = set 
 ## Results of set 565 (`hyp_s2_unit_after.py`, `results/predict_test565.md`)
 
 Held: U1. A 4 of 67 against 0 of 189; B 0 of 21 against 0 of 50. Progress: none (session-2 goal streak 3).
+
+
+# Set 566, registered before testing (26 October 2026): session-2 goal loop 31, what precedes a small unit (two hypotheses)
+
+Follow-up of set 562 (`hyp_s2_unitpack.py`, VARIANT=before). Large / small = set 552's counted signs (740, 520 out).
+
+- **U1** On A: small units stand right after the line opening (index 1, after one sign) more often than large units (p < 0.05).
+- **U2** The same on B (p < 0.05).
+- Progress rule: U1 and U2.
