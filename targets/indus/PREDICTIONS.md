@@ -13849,3 +13849,8 @@ Set 430: 156 (bull-headed yoke-carrier) is on small seals. Its family and the pl
 - **YC2** They differ in carrying the plain yoke-carrier 151 (two-sided p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-eightieth set (`predict_test480.py`, `results/predict_test480.md`)
+
+Both failed: 154 / 155 / 157 / 158 odds ratio 0.64 (p = 0.53); 151 0.80 (p = 0.63). Of the yoke-carriers only 156 goes
+with small seals (set 430). Progress: none (goal streak 11). Tally, counting parts: 1654 held, 1690 failed (3349
+registered).
