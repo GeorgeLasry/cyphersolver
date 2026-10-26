@@ -14823,3 +14823,16 @@ Held: CH2. counted 6 / heads 18, overlap 2; counted rarely heads on B 3/5; the r
 ## Results of set 547 (`hyp_s2_numfirst.py`, `results/predict_test547.md`)
 
 Held: none. A False, B False; the count genre (sets 215-219) covers it: consistency. Progress: none (session-2 goal streak 2).
+
+
+# Set 548, registered before testing (26 October 2026): session-2 goal loop 13, long-distance pairs: phrases or frames (two hypotheses)
+
+Set 545's top-30 long-distance pairs on A. For each, the sign strings between a and b in the A lines carrying them
+(`hyp_s2_ldaudit.py`).
+
+- **LA1** For 60%+ of the pairs the commonest middle string covers under half of the pair's lines (an open middle:
+  frames, not one repeated phrase).
+- **LA2** Among pairs with an open middle on A that are testable on B (both signs in 5+ B lines), 70%+ co-occur on B
+  more than chance (PMI > 0).
+- Progress rule: LA1 and LA2 (frames with an open slot, replicated). If LA1 fails, set 545 is recorded as repeated
+  phrases (downgraded).
