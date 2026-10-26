@@ -59,21 +59,50 @@ same list as R2237's (10 angleterre, 11 berlin, 15 france, 23 prusse, 162 elgin,
 183 dompteda, 184 pichegru, 185 pitt, 189 rietveld, 196 tollius, 223 ligne de demarcation, 248 westphalie.
 `key_euler.tsv` is the working list (vote, with hand choices marked). Entries 1-9 look like single letters.
 
+## The 1797 pages and R2236 (25 Oct, second pass)
+
+Agents transcribed the 21 deciphered 1797-type pages (scans 195-278: `pairs97_a.txt`, `pairs97_b.txt`, with the
+brief `AGENT_BRIEF_1797.md`; CT faithful with marks, PT = the faint text between the lines, AL mostly empty).
+
+- Scans 195-202 (Sept 1796 - Jan 1797) still use the 1795-96 list, with dark-ink decipherments.
+- From 20 Jan 1797 the numbers run to about 800 with frequent `0`. Tests (`key_euler.tsv` decoding of groups
+  with N <= 249 against the faint text): 1796 lines 82% of decoded groups found in their own line's text vs 21%
+  in another line's; 1797 lines 6% vs 4%. So the 1797 numbers are not in the 1795-96 list.
+- The 1797 numbers are diffuse: 545 distinct big numbers in 1,585 items (1795-96: 233 in 11,012); the top number
+  is 1% of items. Either a large homophonic list or dummy numbers over lemon-juice text. For dummies: on 31 Jan
+  1797 the only dark-ink decipherment reads the first groups as "rien que du clair"; on pp. 217/220/278 the faint
+  text runs on below the last number line over blank paper; repeated number pairs (5 cases) never sit under
+  repeated text. Against: Wilhelmina's precis of 23 Mar 1797 (scans 274-275) is headed "pour autant qu'il m'a ete
+  possible de le dechiffrer" and ends "Ou 93 le chiffre n'est pas distinct": she worked from numbers. Open.
+- **R2236 Copie No. 2** (20 Mar 1797, scans 264/272) is in this 1797 system (groups to 722, `0`, underlined
+  digits). Not transcribed yet.
+- **R2236 Copie No. 1** (scans 269-270) is a different code: plain numbers 1-391 among clear Dutch, no marks;
+  317 tokens, 154 distinct, small numbers 1-19 the most frequent. Transcribed in `r2236_copie1.txt`. Decoded with
+  the 1795-96 list (big number + small positions) it gives nonsense, so it is not that list either. Its clear
+  Dutch carries the frame of the argument ("op losse gronden ... Echter schynt het als of ... met een van beiden
+  ... tot een bestendig ... De minister ... stellig aan ... zoo deze mogenheid ... zou het gevolg daar van
+  natuurlyk zyn ... dat onze ... Het is reeds algemeen bekend dat ... zich niet zullen ... hoegenaamd geene ...
+  Dus het eenigste middel om ... Dit is, om door ... brengen: hier toe ... het geen by wyze van ... zoude kunnen
+  geschieden"). Repeats: 215 2 6 (twice), 390 217 8 5 2 (twice), 149 332 61, 55 319 250, 223 65 226, 220 43 19 8,
+  42 9 7 62 147 300.
+
 ## Remaining gaps
 
-- R2236 (Copie No. 1, No. 2, scan 89): not read; blocker none yet: needs the 1797 list.
-- The 1797 list: not rebuilt; the 21 interlined and the deciphered mixed 1797 pages are the source.
+- R2236 Copie No. 1: not read; its own Dutch code, no key or decipherment in the file. Not attempted ciphertext-only yet.
+- R2236 Copie No. 2 and scan 89: not transcribed; 1797 system, whose list is not rebuilt (the faint text may be
+  lemon juice, not a decipherment; to settle on pp. 243/249/261, where the faint lines follow the number lines).
 - About 100 entries of the 1795-96 list are still gapped or below 80% agreement.
 
 ## Escalation
 
-1. Transcribe the 1797 interlined and mixed pages (index_b.tsv) with the same brief, asking the agents to copy
-   the full group form in AL; rebuild the 1797 list by vote.
-2. Decode R2236 Copie No. 1/No. 2 with it (Dutch; check with nl-modern / nl-1600); then the undeciphered 1797
-   letters (264, 266, 272, 328, 333, 365).
+1. Done: 1797 pages transcribed (pairs97_*). Next: settle decipherment vs lemon juice on 243/249/261 by aligning
+   item counts to words line by line; if aligned, rebuild the 1797 list by vote and read Copie No. 2.
+2. Copie No. 1: ciphertext-only attack as a one-part/two-part Dutch word code with the clear frame as crib
+   (nl-1600), and search Colenbrander Gedenkstukken II for a Dutch letter of March 1797 on these lines.
 3. Re-read low-agreement 1795-96 entries at full size where a group recurs.
 
 ## Log
 
 - 25 Oct 2026: target opened; 387 scans fetched; page index; R2236 found in the file; 65 interlined 1795-96 pages
-  transcribed; list rebuilt by vote (key_euler.tsv). Next: the 1797 list.
+  transcribed; list rebuilt by vote (key_euler.tsv). Later: 1797 pages transcribed; old list does not apply;
+  R2236 Copie No. 1 transcribed, a separate Dutch code; Copie No. 2 in the 1797 system.
