@@ -13044,3 +13044,15 @@ model lowers S from 4.5889 to 4.5627 (fixed, gain 0.0261; signs 5.4971 -> 5.4580
 5.3902 -> 5.3650), controls near zero. With set 368 (site adds 0.0002 on top of the kind models), **the object-kind
 effect is not site**: sets 367 and 369 stand. Progress: none (goal streak 4). Tally, counting parts: 1627 held, 1614
 failed (3245 registered).
+
+# Four-hundred-and-twenty-eighth set, registered before testing (26 October 2026): goal loop 74, mid-line numerals open a name (two hypotheses)
+
+Set 397: mid-line 1 and 2 open a phrase. If the phrase is a name (numeral + head + ending), an ending should follow
+soon. Mid-line = not first, not beside another numeral. Distinct lines, A and B (`predict_test428.py`).
+
+- **NO1** After mid-line 'N X' an ending (740 / 520) follows X more often than after line-initial 'N X' (Fisher
+  one-sided p < 0.05), on A and on B.
+- **NO2** An ending stands within three signs after a mid-line numeral more often than after random mid-line positions
+  (1,000 draws, p < 0.05), on A and on B.
+- Progress rule: either holds.
+
