@@ -12630,3 +12630,8 @@ bare '3C' left out) and a size (`predict_test402.py`).
 - **SP2** Text length rises over the periods (Spearman rho > 0, p < 0.05).
 - Progress rule: either holds.
 
+## Results of the four-hundred-and-second set (`predict_test402.py`, `results/predict_test402.md`)
+
+Both failed; SP1 the other way. 98 Harappa square seals with a period: size rises a little over the periods (rho 0.21,
+p = 0.044; registered as falling), text length does not change (rho 0.14, p = 0.17). Progress: none (goal streak 4).
+Tally, counting parts: 1619 held, 1576 failed (3195 registered).

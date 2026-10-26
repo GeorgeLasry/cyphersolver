@@ -301,3 +301,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G45 | 399 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | WORD with a city prior: no gain (no progress; goal streak 1) |
 | G46 | 400 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | sealings (tags) vs seals: no heading or ending difference (41 lines) (no progress; goal streak 2) |
 | G47 | 401 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | pottery vs seals: too few tokens, nothing (no progress; goal streak 3) |
+| G48 | 402 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | Harappa seals over time: size rises slightly (opposite of registered), length flat (no progress; goal streak 4) |
