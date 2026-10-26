@@ -13757,3 +13757,13 @@ SM1 failed, SM2 held narrowly. 90 is not size-linked (odds ratio 1.02). Texts wi
 seals (1.62, p = 0.049): the converse of set 469, as registered, so it is counted as consistency, not progress (the
 registered P line reads 'holds'). Progress: none (goal streak 4). Tally, counting parts: 1653 held, 1677 failed (3335
 registered).
+
+# Four-hundred-and-seventy-fourth set, registered before testing (26 October 2026): goal loop 120, 740 and post-ending 400 by size (two hypotheses)
+
+`sizekit.size_test` (length band x site) (`predict_test474.py`).
+
+- **SE1** Large and small seals differ in carrying 740 anywhere (two-sided p < 0.05).
+- **SE2** They differ in carrying 400 directly after an ending (two-sided p < 0.05). 400 is already one of set 430's
+  small-seal signs, so SE2 cannot count as progress on its own.
+- Progress rule: SE1 holds.
+
