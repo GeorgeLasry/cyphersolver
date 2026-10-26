@@ -15272,3 +15272,12 @@ Held: R1, R2. A mean 5.00 (437) vs 4.50 (1479); B mean 4.32 (132) vs 3.78 (1043)
 ## Results of set 579 (`hyp_s2_r_fin400.py`, `results/predict_test579.md`)
 
 Held: R1, R2. A 92 of 95 final; B 39 of 41 final. Progress: none (session-2 goal streak 1).
+
+
+# Set 580, registered before testing (26 October 2026): session-2 goal loop 45, the jar 740 does not open a line (consistency) (two hypotheses)
+
+(`hyp_s2_r.py`, VARIANT=jarinit). Rare = 3 or fewer tokens in the sample.
+
+- **R1** On A: the jar 740 does not open a line (consistency) (p < 0.05).
+- **R2** The same on B.
+- Progress rule: none (re-tests a known rule).
