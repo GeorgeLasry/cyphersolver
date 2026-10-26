@@ -14337,3 +14337,8 @@ Set 513's 692 hit, on two random halves (`predict_test514.py`).
 - **H692b** The same in half 2.
 - Progress rule: none (replication). Both holding would reinstate 692 as a large-seal sign.
 
+## Results of the five-hundred-and-fourteenth set (`predict_test514.py`, `results/predict_test514.md`)
+
+H692a failed, H692b held. Half 1: odds ratio 1.72 (p = 0.55); half 2: 4.74 (p = 0.028). Same direction, one half
+significant: 692 stays unconfirmed (set 513's caveat stands). Progress: none (goal streak 13). Tally, counting parts:
+1671 held, 1741 failed (3417 registered).

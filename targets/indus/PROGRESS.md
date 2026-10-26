@@ -413,3 +413,4 @@ The 'streak' column counts consecutive loops without progress. Revised by the ow
 | G157 | 511 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | heading variants 817 and 861 not size-linked (no progress; goal streak 10) |
 | G158 | 512 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 840 and 176 not size-linked (no progress; goal streak 11) |
 | G159 | 513 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 692 large at p = 0.011, but 1 hit in an 18-sign scan (corrected 0.19): probable false positive; scan stopped (no progress; goal streak 12) |
+| G160 | 514 | 4.559 | 86.3% | 16.6% (M+ 41.4%) | 0 | 4 (L world 85.1%) | 692 on halves: same direction, one significant; unconfirmed (replication; no progress; goal streak 13) |
