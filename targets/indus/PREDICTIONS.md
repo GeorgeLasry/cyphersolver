@@ -16454,3 +16454,13 @@ intact multi-line ICIT seals and Mahadevan's multi-line texts, with lines as lis
   four tests.
 - **WS3** 60 stands within the first four positions in 95%+ of its tokens on A and on B.
 - Progress rule: none (a published analysis checked).
+
+## Results of set 651 (`predict_test651.py`, `results/predict_test651.md`)
+
+WS1 and WS2 failed as registered, WS3 held. Line breaks do not fall after an ICTM more than elsewhere (ICIT 7 of 33
+against 62 of 381; M77 14 of 85 against 587 of 2,743; neither order) (WS1): Wells's initial-cluster boundary is not a
+boundary the scribes respect. But a break almost never falls inside the pair (opener + 1 / 2 / 60): ICIT as listed 1 of
+33 (p = 0.015), M77 2 of 85 and 2 of 65 (p < 0.0001 both orders); only the 13-gap ICIT reversed case misses (1 of 13, p =
+0.33), so WS2 fails on the all-four rule while the effect is plain (consistency with the heading unit, sets 230-279: the
+opener and its marker are one unit). 60 stands within the first four positions in 159 of 164 (A) and 54 of 56 (B)
+tokens (WS3). Progress: none.
