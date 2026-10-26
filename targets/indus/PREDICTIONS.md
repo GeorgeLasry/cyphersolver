@@ -11727,3 +11727,19 @@ support the readings as such: PL1 restates Parpola's own observation ("often tex
 and set 186's finding on stroked jars, and PL2 is what set 351 found for marked signs in general (a mark keeps the
 job). Parpola's later readings are not supported beyond the positional facts they were built on. Progress: none
 (streak 3). Tally, counting parts: 1589 held, 1502 failed (3091 registered).
+
+# Goal run (owner, 25 Oct 2026): loops of two hypotheses until 20 consecutive loops make no progress
+
+Each loop registers two hypotheses, then runs them. Unless a set says otherwise, an S hypothesis uses `loopkit.py`: the
+registered model (progress.MODEL) mixed with one extra source, mixing weight fitted on an inner dev split of the training
+lines; it holds if the fixed-test S falls by 0.005 bits or more and S on A -> B falls. A loop is progress if either
+hypothesis holds (a benchmark moves, replicated). The run's streak starts at 0.
+
+# Three-hundred-and-fifty-fifth set, registered before testing (25 October 2026): goal loop 1, motif and object type (two hypotheses)
+
+Side information the model never sees: the object's field motif (unicorn, bull, elephant ...) and its object type (seal,
+tablet, pottery ...). Each is a conditioned unigram backed off to the global unigram (`predict_test355.py`).
+
+- **GM1** The field motif conditions the signs (S rule above).
+- **GM2** The object type conditions the signs (S rule above).
+
