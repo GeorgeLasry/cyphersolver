@@ -14038,3 +14038,13 @@ Both failed. Harappa: 3 of 5 copy pairs share the animal (p = 0.84, few). Non-un
 animal. Set 491 narrows to unicorn seals: identical texts recur among unicorn seals at Mohenjo-daro, while the same text
 on non-unicorn seals comes with different animals. Progress: none (goal streak 1). Tally, counting parts: 1659 held,
 1709 failed (3373 registered).
+
+# Four-hundred-and-ninety-third set, registered before testing (26 October 2026): goal loop 139, unicorn seals: repeats and doubles (two hypotheses)
+
+Square seals with a motif; unicorn (Bull1) against other animals; Mantel-Haenszel over length band x site
+(`predict_test493.py`).
+
+- **UR1** Unicorn-seal texts recur on other seals more often (p < 0.05).
+- **UR2** Unicorn seals carry doubled non-numeral signs more often (p < 0.05).
+- Progress rule: either holds.
+
