@@ -15547,3 +15547,9 @@ Set 593 found 61 and 575 share (previous, next) contexts. Both are counted signs
 ## Results of set 598 (`hyp_s2_subaudit.py`, `results/predict_test598.md`)
 
 Held: none. SA1 False, SA2 False (audit of set 593). Progress: none (session-2 goal streak 5).
+
+## Correction to set 593 (after the set 598 audit)
+
+61 and 575 share contexts only through the numeral before them (with numeral contexts dropped, cosine 0 on A and B):
+set 593's progress is withdrawn. The substitution series continues from set 599 with signs ranked 61-120 and numeral
+contexts dropped.
