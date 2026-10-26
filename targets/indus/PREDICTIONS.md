@@ -15505,3 +15505,13 @@ cosine of the two signs' context counts against 500 random partner signs of simi
 ## Results of set 595 (`hyp_s2_sub11.py`, `results/predict_test595.md`)
 
 Held: none. 790/154 False; 440/350 False. Progress: none (session-2 goal streak 2).
+
+
+# Set 596, registered before testing (26 October 2026): session-2 goal loop 61, substitution pairs (two hypotheses)
+
+Pairs 904/388, 70/455 (`hyp_s2_subst.py`, pair list fixed by A frequency rank before testing). Context = (previous sign, next sign);
+cosine of the two signs' context counts against 500 random partner signs of similar frequency (+-5 ranks).
+
+- **SB1** Pair 1 shares contexts beyond random partners on A and on B (p < 0.05 each).
+- **SB2** Pair 2 the same.
+- Progress rule: either holds (two signs of different families fill the same slots: a substitution class).
