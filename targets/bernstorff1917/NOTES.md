@@ -110,7 +110,9 @@ fixed, so they are not read from the groups.
 > of the memorandum without further ado. [0278]
 
 - 120 of the 147 groups have a value of their own. read_share 0.793 (hole rate 0.207 on
-  `research/reading_audit/v2_score.py`), so the document is **read in part**.
+  `research/reading_audit/v2_score.py`), so the document is **read in part**. On the same scorer 7 of 13 sentences
+  are clean when the marked words count as holes (the printed German alone scores 12 of 12 that way), which is
+  near the lower edge for "read in part".
 - **Weak spots.**
   - Groups 19-23 (5 groups for 6 words) and 28-30 (3 groups for 5 words and a comma): their content comes from the
     print, not from the groups.
