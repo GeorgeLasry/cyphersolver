@@ -1,7 +1,8 @@
 # Communist Party of America book code: letters seized at 170 Bleecker St., New York, 1920-21
 
-Status: contributed by WAINUT (27 Oct 2026). Key grid rebuilt from the Bureau of Investigation's own decodes; read in
-part. The book is not identified. The site page and the ledger rows are left to the maintainer.
+Status: in progress. Contributed by WAINUT (27 Oct 2026). Key grid rebuilt from the Bureau of Investigation's own
+decodes; read in part. The book is not identified; the known-keys, print and handwritten-page steps below are open.
+The site page and the ledger rows are left to the maintainer.
 
 Catalogue 678. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the transcription was made with a vision-capable language model. Every run was read from the NARA scans. Most runs
@@ -23,7 +24,8 @@ against the page images. The faint runs of A0887 and the torn run of A0886 were 
   and a look at every page it flagged, found **28 runs on 14 typed pages, 439 tokens**: A0011-A0015, A0493,
   A0527, A0706, A0880, A0886-A0888, A0939 and B0494. 940C has no runs. The catalogue's "77 runs, about 2,400
   tokens" was not reproduced: the text layer also counts dates and ratios, and handwritten letters have no text layer
-  and were not searched page by page. So 77 is neither confirmed nor refuted.
+  and were not searched page by page. So 77 is neither confirmed nor refuted. The catalogue row should give 28 runs
+  and 439 tokens on typed pages until the handwritten pages are searched (the next step).
 - **The Bureau's decodes.** 16 of the 28 runs carry a Bureau decode: 15 in the new code (A0011, A0012, A0013, the
   four runs of A0015, three on A0886, three on A0887, two on A0939) and the one old-code run (A0014). They are
   transcribed and aligned token by token in `bureau_decodes.tsv`.
@@ -128,31 +130,39 @@ typing slip. Not settled.
   runs. They are credited here as `contemporary`, roles "prior solution" and "key or decipherment used": the grid
   comes from them alone.
 - The catalogue's prior-art check (27 Oct 2026: the repository's lists and the NARA READMEs) found no published
-  reading. Not checked: Theodore Draper, *The Roots of American Communism* (1957), and the other three parts of case
-  202600 on roll 940. **No printed decipherment was found, but the search was not done.**
+  reading. Not checked: Theodore Draper, *The Roots of American Communism* (1957), Harvey Klehr and John Earl Haynes
+  on the underground party, the Early American Marxism archive on marxists.org (Tim Davenport; many Bureau documents
+  on the 1920-21 underground CPA, among them a 1921 New York Times piece on the Bleecker St. raid), and the other
+  three parts of case 202600 on roll 940. Any of these could print the Bureau decodes or name S. Rubin and Atwood.
+  **No printed decipherment was found, but the search was not done; no "no published reading" claim is made.**
 
 ## Remaining gaps
 
 - The key book (new code, last page) and the old code page 14 - blocker: no-key-material. The grid rows suggest a
   numbered list of titles; not identified.
-- Cells with no value: 3/17 3/13 3/18 (A11), 18/6 (A15.2), 3/1 (A15.4), 14/2 (A15.2), 5/29 (A706.1), 5/12 and 5/13
-  (A706), three cells of the old-code signature (A880.1) - blocker: no-key-material. No Bureau decode uses them.
+- Cells with no value - blocker: no-key-material; no Bureau decode uses them: 3/17 3/13 3/18 (A11), 18/6 (A15.2),
+  3/1 (A15.4), 14/2 (A15.2), 5/29 (A706.1), 5/12 and 5/13 (A706), three cells of the old-code signature (A880.1).
 - 26/30, Z or L, a clash inside the Bureau's decodes - blocker: no-key-material.
 - Two cut tokens and possibly lost tokens at the torn edge of A0886; the last token of A887.3 - blocker: illegible.
   The originals of the copies were not traced.
-- The struck typed word after the old-code signature on A0880 (about 8 letters, starting with s) - blocker:
-  illegible.
-- Runs in handwritten letters (the catalogue's 77 runs against 28 found here) - blocker: not-attempted.
+- The struck typed word after the old-code signature on A0880 - blocker: illegible; about 8 letters, starting with s.
+- Runs in handwritten letters (the catalogue's 77 runs against 28 found here) - blocker: not-attempted; the
+  handwritten pages have no text layer and must be looked at page by page (next step).
 
 ## Escalation
 
 - [x] siblings: all three PDFs of roll 940 scanned by text layer; 940C has no runs. The other three parts of case
   202600 were not opened (next step).
 - [x] clear-pages: the clear text around every run is used as context; A0880 gives the two key pages.
-- [ ] known-keys: the book is not identified; no search of 1910s pocket-series title lists was made (next step).
-- [ ] print: Draper (1957) and later histories of the early CPA were not checked.
+- [ ] known-keys: the book is not identified (next step). Lead from the maintainer's review: the grid lines read as a
+  numbered list of titles (37 Idylls of the King, 7? Enoch Arden, ?8 Friendship, Socialis[m]?, 42 Memories?), which
+  fits the back-page list of a numbered pocket series of 1919-21; Haldeman-Julius's *Appeal's Pocket Series*
+  (Girard, Kansas, 1919 onward) is the first to check. Its title list would fill the open cells (3/13 3/17 3/18,
+  5/12, 5/29 ...) and settle ATWOOD, U?P/?P and S---L. Not yet checked.
+- [ ] print: Draper (1957), Klehr and Haynes, and the Early American Marxism archive on marxists.org were not checked.
 - [x] key-rebuild: the grid is rebuilt from the Bureau decodes and tested by leave-one-run-out and three controls.
-- [ ] retry: handwritten pages could hold more runs; a page-by-page look is needed.
+- [ ] retry: handwritten pages could hold more runs; a page-by-page look is needed. Open runs to be retried once the
+  book's title list is found.
 
 ## Files
 
@@ -162,4 +172,7 @@ typing slip. Not settled.
   prints `decryption.txt`; `python decode.py --key` writes the two key files
 - `decryption.txt`: output of `python decode.py`
 - `key_new.tsv`, `key_old_p14.tsv`: the grids, with the runs that attest each cell and the clashes
+- `validation.tsv`: each token with its grid value, for `docs/_validate.py` (`python decode.py --pairs`). The test
+  is underdetermined: 3 tokens per cell on names and addresses are too few for the letter model to tell the grid
+  from a key fitted to shuffled text. The leave-one-run-out test in `decryption.txt` is the stronger check.
 - `reading.md`, `reading_a0706.md`: the coded words inside their clear sentences

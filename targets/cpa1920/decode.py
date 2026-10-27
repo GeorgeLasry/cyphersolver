@@ -9,6 +9,7 @@ transcription.txt with the full grid.
 
   python decode.py              print everything (the file decryption.txt is this output)
   python decode.py --key        write key_new.tsv and key_old_p14.tsv from the Bureau decodes
+  python decode.py --pairs      write validation.tsv (each token and its grid value) for docs/_validate.py
 
 Standard library only. Paths are relative to this folder.
 """
@@ -190,6 +191,27 @@ def main(argv):
                     clash = ', '.join(f'{k} x{v}' for k, v in c.most_common()) if len(c) > 1 else ''
                     fh.write(f'{t}\t{value(g, t)}\t{sum(c.values())}\t{" ".join(seen[t])}\t{clash}\n')
         print('wrote key_new.tsv and key_old_p14.tsv')
+        return 0
+
+    if '--pairs' in argv:
+        # One line per cipher token in text order, for docs/_validate.py. Old-code cells get an 'o' prefix (another
+        # key page). Digits, cells with no value and tied cells are '?' (unread); an END line closes each run so
+        # that no n-gram spans two runs.
+        with open(os.path.join(HERE, 'validation.tsv'), 'w', encoding='utf-8', newline='\n') as fh:
+            fh.write('# model: en-modern\n'
+                     '# source: transcription.txt decoded with the grid from bureau_decodes.tsv (python decode.py --pairs)\n'
+                     '# note: digits, cells with no value and tied cells are left unread\n')
+            for rid, (key, words) in runs.items():
+                g = full if key == 'new' else old
+                for w in words:
+                    for t in w:
+                        if t.startswith('{') or t.startswith('[cut]'):
+                            continue
+                        v = value(g, t)
+                        ok = v is not None and '|' not in v and v.isalpha()
+                        fh.write(f"{'o' if key == 'old' else ''}{t}\t{v if ok else '?'}\n")
+                fh.write(f'END_{rid}\t?\n')
+        print('wrote validation.tsv')
         return 0
 
     out = []

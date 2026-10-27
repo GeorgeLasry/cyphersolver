@@ -603,9 +603,10 @@
    "kind": "literature search",
    "what": "Only the catalogue's own prior-art check (repo lists, NARA READMEs). Draper (1957) and the other three parts of case 202600 on roll 940 were not checked.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 367 tokens, 122 types, en-modern order 4: reading -3.505 per letter; random keys -6.159 (z 7.5); key annealed onto shuffled ciphertext best -2.369 (mean -2.442, z -24.4); annealer on the real text -2.392. Verdict: underdetermined.", "result": "partial"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-10-27", "model": "en-modern", "file": "validation.tsv", "tokens": 367, "types": 122, "tokens_per_type": 3.01, "score": -3.505, "nulls": {"random keys": {"n": 200, "mean": -6.159, "sd": 0.356, "max": -5.354, "z": 7.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.442, "sd": 0.044, "max": -2.369, "z": -24.4, "p": 1.0}}, "power": -2.392, "verdict": "underdetermined", "notes": "claimed per-occurrence score -3.505; polyphony 0.0; 98 unread tokens left out; annealer on the real text from random keys reached -2.392"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -633,12 +634,7 @@
   "fraction_read": 0.945,
   "fraction_read_method": "measured",
   "fraction_read_source": "decode.py over transcription.txt: 415 of 439 tokens have a single value from the grid (two partly cut tokens and the tied cell 26/30 counted as open).",
-  "verification": [
-   "contemporary decipherment",
-   "matched control",
-   "independent verification",
-   "historical consistency"
-  ],
+  "verification": ["contemporary decipherment", "matched control", "independent verification", "historical consistency"],
   "provenance": "contributed",
   "credits": [
    {
@@ -701,7 +697,7 @@
    {
     "item": "runs in handwritten letters (the catalogue counts 77 runs; 28 found on typed pages)",
     "blocker": "not-attempted",
-    "detail": "handwritten pages have no text layer and were not searched page by page"
+    "detail": "handwritten pages have no text layer and were not searched page by page; the catalogue row should give 28 runs and 439 tokens on typed pages until they are; next step"
    }
   ],
   "texts": [
@@ -742,12 +738,7 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "A district knows nothing of an application 'for MINOR'; unity-convention delegates are to be elected by MAY 12 (1921); members of the I.W.[W.] distribute leaflets, and a route is proposed for the magazine Soviet Russia; S. Rubin is put forward as the new district organizer in the Milwaukee district.",
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent, reviewed against the scans)",
-     "date": "2026-10-27",
-     "note": "Every coded word has a value and fits its clear sentence: 24 of 24 tokens. Who MINOR is stays open; that is a question of identity, not of reading."
-    }
+    "note": "A0939's two runs carry the Bureau's own decode; they are counted here as read from the existing decipherment (checked against the grid), not as new readings. The new readings are A0493 (MINOR), A0527 (MAY 12) and B0494 (S. RUBIN). No reading_review grade is self-assigned: grading is left to a reviewer."
    },
    {
     "doc": "a0706",
@@ -758,13 +749,7 @@
     "language": "en",
     "state": "read in part",
     "read_share": 0.647,
-    "summary": "A delegate of the 'P A C' (AT[?]OOD, likely Atwood) calls a joint meeting of the other party and the writer's district committee; a joint committee of two members of the writer's party (U[?]P) and three of the other ([?]P) is to issue a paper before a convention to be held within two months.",
-    "reading_review": {
-     "grade": "B",
-     "by": "WAINUT (AI language-model agent, reviewed against the scans)",
-     "date": "2026-10-27",
-     "note": "The clear sentences read; the coded words have holes at 5/29 and 5/12 in every occurrence. The typed 'and' between two tokens is left out and two typing slips are normalised. 11 of 17 tokens have a value."
-    }
+    "summary": "A delegate of the 'P A C' (AT[?]OOD, likely Atwood) calls a joint meeting of the other party and the writer's district committee; a joint committee of two members of the writer's party (U[?]P) and three of the other ([?]P) is to issue a paper before a convention to be held within two months."
    }
   ],
   "key_file": [
