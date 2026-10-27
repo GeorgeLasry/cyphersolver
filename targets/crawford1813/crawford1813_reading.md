@@ -1,6 +1,6 @@
 # Crawford to Monroe, No. 1 (private), Paris, 3 Sept 1813 (catalogue 652): the coded letter as sentences
 # English, so no translation. Frames 0027R-0029R of NARA M34 roll 17; line labels as in crawford1813_transcription.txt.
-# Marks: [?word] = read from context, or against the table value (listed in ../NOTES.md); [343] = code group with no
+# Marks: [?word] = read from context, or against the table value (listed in NOTES.md); [343] = code group with no
 #        value, or whose table value does not fit here; [com]mand, rece[ipt] = letters supplied where the groups give only part of a word.
 # 1264 is read as the full stop, as in Ellis's despatch of 1839 (catalogue 653), where the Department's clear copy
 # fixes it; here it stands 30 times, always at the end of a clause. 668 is "and". 601 713 = "Mr." and 1098 713 =

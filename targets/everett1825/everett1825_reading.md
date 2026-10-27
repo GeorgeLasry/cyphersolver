@@ -1,7 +1,7 @@
 # Everett to Clay, Madrid, 25 Sep 1825 (catalogue 638), "Notes of a Conversation of Mr. Everett with Mr. Zea":
 # the three cipher passages as sentences. English, so no translation.
 # Marks: [?word] = a word whose groups are only partly in the table, or read from context or against the table
-#        value (each is listed in ../NOTES.md); [125] = code group with no value;
+#        value (each is listed in NOTES.md); [125] = code group with no value;
 #        [is], [ing], [ion] = not in the cipher, supplied for the sense.
 # Syllables are joined into words (con-ver-se^ = conversed, sen-tim-ents ...); a lozenge after a group = -s,
 # a caret = -ed (see everett1825_transcription.txt). Group 450 after "think" (twice; table 'ink', M) is left out

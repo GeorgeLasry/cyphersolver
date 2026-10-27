@@ -1,0 +1,221 @@
+{
+ "schema_version": 1,
+ "target": "everett1825",
+ "title": "Alexander H. Everett to Henry Clay, Madrid, 25 Sep 1825: three coded passages in the JQA code (catalogue 638)",
+ "documents": [
+  {
+   "id": "everett1825",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 25, M31 reel 27 (naId 188610348), frames 0119-0121, enclosure 'Notes of a Conversation of Mr. Everett with Mr. Zea' (catalogue 638)",
+   "date": "25 Sep 1825",
+   "year": 1825,
+   "country": "United States",
+   "route": "Madrid -> Washington",
+   "places": {
+    "from": "Madrid",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Manning III (1925) doc. 1134 p. 2062 prints passage A as '[Here follow six lines in cipher, without decodification.]'; passages B and C are not printed."
+   },
+   "length": {
+    "tokens": 355,
+    "distinct": 205,
+    "unit": "code groups",
+    "measured": true,
+    "file": "everett1825_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 reel 27 frames 0119, 0120 (right), 0121 (left)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Three passages (A 8 lines, B 14, C 12), checked line by line against the frames a second time, independently. Measured with docs/_check_profile.py --measure --digits --drop-first."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "John Quincy Adams's numerical syllable-and-word code of 1811-1812 (the = 1385), about 1,600 numbers, rebuilt in ../jqa; used here unchanged.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 8
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "the JQA code, ../jqa/code_table.tsv (rebuilt there from the State Department clerk's decodes and Ford's printed decipherments of JQA's 1811-1812 despatches), applied unchanged",
+  "distinct_symbols": 205,
+  "notes": "distinct_symbols = distinct groups in everett1825_transcription.txt (python docs/_check_profile.py --measure --digits --drop-first; 197 numbers, marked variants counted separately). Marks: lozenge = -s, caret = -ed, cross under 1535 = all and under 1167 = well, tick under a group truncates it."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Manning III (1925) doc. 1134 p. 2062 prints passage A undecoded and omits B and C; one web search found no decipherment. Not checked: another copy, a separate State Department file, the Clay Papers.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 638) and the rules; the AI agents fetched the frames, transcribed, decoded, read and verified. No target-specific human intervention.",
+  "tools": [
+   "../appleton1823/decode.py (applies ../jqa/code_table.tsv; wrong-key controls)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: located catalogue 638 on NARA M31 reel 27 frames 0119-0121 (Everett, Madrid, 25 Sep 1825), in the JQA code (the = 1385).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: 355 groups in three passages (A 8 lines, B 14, C 12), checked line by line against the frames a second time, independently.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: applied ../jqa/code_table.tsv unchanged: 347 of 355 groups valued, running English in all three passages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "prediction",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "WAINUT contribution: context values marked [?] (666 Zea against March, 70, 1072, and 17 context words); 8 groups open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wrong-key controls (decode.py --controls): function-word rate 0.37 for the true table, 0.02-0.12 for shifts of 1-100, 0.03-0.05 for random table permutations; an independent character-trigram check (Manning-trained) put the true order at -2.129 against shuffled orders best -2.351.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: Manning III doc. 1134 (p. 2062) is an extract that prints passage A undecoded, without passages B and C; one web search found no decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: read in part (everett1825_reading.md, read_share 0.904): 23 holes in about 240 words.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches, applied unchanged; context words marked [?], eight groups open.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "everett1825_reading.md: read_share = 1 - hole rate of docs/_check_reading.py --file (0.096); 23 holes in about 240 words.",
+  "fraction_read": 0.904,
+  "codes_open": {
+   "open": 8,
+   "total": 197,
+   "tokens_open": 8
+  },
+  "verification": [
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: catalogue 638 (Everett 1825) transcribed and read in part with the JQA code table (../jqa/code_table.tsv)",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "638 (355 groups) from NARA M31 reel 27 frames 0119-0121",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words",
+    "blocker": "no-key-material",
+    "detail": "no value in the table; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "everett1825",
+    "label": "Everett to Clay, Madrid, 25 Sep 1825 (catalogue 638), M31 reel 27 frames 0119-0121",
+    "transcription": "everett1825_transcription.txt",
+    "decryption": "everett1825_decryption.txt",
+    "reading": "everett1825_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.904,
+    "summary": "Everett's notes of a conversation with the foreign minister Zea Bermudez on recognising the new American states: Zea's refusal is a language imposed on him by circumstances; the foreign ministers think him privately favourable but unable to risk his place against his rivals; the influence of Emperor Alexander is directed against recognition, and Russia's policy is put down to opposition to England rather than to legitimacy.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frames)",
+     "date": "2026-10-27",
+     "note": "Coherent sentences; 23 holes in about 240 words: 8 open groups and 15 context-only or against-the-table words, all marked [?]. read_share = 1 - hole rate of docs/_check_reading.py --file (0.096)."
+    }
+   }
+  ],
+  "key_file": "../jqa/code_table.tsv",
+  "notes": "Contributed by WAINUT (catalogue 638). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md."
+ }
+}

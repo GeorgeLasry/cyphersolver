@@ -1,0 +1,223 @@
+{
+ "schema_version": 1,
+ "target": "appleton1823",
+ "title": "John J. Appleton to John Quincy Adams, Cadiz, 6 Aug 1823: 18 code groups in the JQA code (catalogue 637)",
+ "documents": [
+  {
+   "id": "appleton1823",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 22, M31 reel 24 (naId 188609418), frame 0134 left, foot (catalogue 637)",
+   "date": "6 Aug 1823 (closed 8 Aug)",
+   "year": 1823,
+   "country": "United States",
+   "route": "Cadiz -> Washington",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Manning, Diplomatic Correspondence ... Latin-American Nations III (1925) doc. 1124 p. 2041 prints the 18 groups with '[no decodification]'."
+   },
+   "length": {
+    "tokens": 18,
+    "distinct": 17,
+    "unit": "code groups",
+    "measured": true,
+    "file": "appleton1823_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 reel 24 frame 0134",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Read twice from the frame, the second time independently; agrees with Manning's printed groups. Measured with docs/_check_profile.py --measure --digits."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "John Quincy Adams's numerical syllable-and-word code of 1811-1812 (the = 1385), about 1,600 numbers, rebuilt in ../jqa; used here unchanged.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 1
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "the JQA code, ../jqa/code_table.tsv (rebuilt there from the State Department clerk's decodes and Ford's printed decipherments of JQA's 1811-1812 despatches), applied unchanged",
+  "distinct_symbols": 17,
+  "notes": "distinct_symbols = distinct groups in appleton1823_transcription.txt (python docs/_check_profile.py --measure --digits). Marks: diamond after a group = plural; a raised double dot after 192, meaning unclear."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Manning, Diplomatic Correspondence ... Latin-American Nations III (1925) doc. 1124 p. 2041 prints the 18 groups with '[no decodification]'. One web search found no decipherment.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 637) and the rules; the AI agents fetched the frames, transcribed, decoded, read and verified. No target-specific human intervention.",
+  "tools": [
+   "../appleton1823/decode.py (applies ../jqa/code_table.tsv; wrong-key controls)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: located catalogue 637 on NARA M31 reel 24 frame 0134 (Appleton, Cadiz, 6 Aug 1823), in the JQA code (the = 1385); a second coded leaf on frame 0150 found, not transcribed (bleed-through).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: 18 groups transcribed, read twice from the frame, the second time independently; all agree with Manning's printed groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: applied ../jqa/code_table.tsv unchanged: 16 of 18 groups valued, 14 give English directly ('... of [794] that La-fit-te was [192] and that he had a part in England').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "prediction",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "WAINUT contribution: alphabetical-slot readings: 648 millions (also a clerk decode, ../jqa/code_conflicts.txt), 1088 seven [?], 794 dollars [?]; 192 open (hon-).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wrong-key controls (decode.py --controls): function-word rate 0.50 for the true table, 0.00-0.17 for shifts of 1-100, 0.00-0.06 for random table permutations.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: Manning III doc. 1124 (p. 2041) prints the code undecoded; one web search found no decipherment.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: read in part (appleton1823_reading.md, read_share 0.8): 3 holes (seven?, dollars?, 192).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches, applied unchanged; two values from the alphabetical slot, one group open.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "appleton1823_reading.md: 12 of the 15 words of the cipher read (3 holes: seven?, dollars?, 192); read_share 0.8.",
+  "fraction_read": 0.8,
+  "codes_open": {
+   "open": 1,
+   "total": 17,
+   "tokens_open": 1
+  },
+  "verification": [
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: catalogue 637 (Appleton 1823) transcribed and read in part with the JQA code table (../jqa/code_table.tsv)",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "637 (18 groups) from NARA M31 reel 24 frame 0134",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "group 192 (hon-) and the slot-only values of 1088 and 794",
+    "blocker": "no-key-material",
+    "detail": "each occurs once in this text and has no clerk decode"
+   },
+   {
+    "item": "second coded leaf on frame 0150",
+    "blocker": "illegible",
+    "detail": "bleed-through on the microfilm; the original volume would allow a transcription"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "appleton1823",
+    "label": "Appleton to J. Q. Adams, Cadiz, 6 Aug 1823 (catalogue 637), M31 reel 24 frame 0134",
+    "transcription": "appleton1823_transcription.txt",
+    "decryption": "appleton1823_decryption.txt",
+    "reading": "appleton1823_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.8,
+    "summary": "The Spanish constitutional government's secret plan, told to the US charge by the finance minister Yandiola in the last weeks of the Cortes at Cadiz: liquidating an account in England would produce [?seven] millions of [?dollars]; Lafitte (probably the Paris banker Jacques Laffitte) was [192] and had a part in England.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frame)",
+     "date": "2026-10-27",
+     "note": "One sentence of 18 groups: 15 read, 1088 and 794 from the alphabetical slot only, 192 open. The sentence scorer also counts the name Lafitte as unknown."
+    },
+    "note": "read_share counted on the 15 words of the cipher: 3 holes (seven?, dollars?, 192)."
+   }
+  ],
+  "key_file": "../jqa/code_table.tsv",
+  "notes": "Contributed by WAINUT (catalogue 637). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md."
+ }
+}

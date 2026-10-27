@@ -1,11 +1,13 @@
-"""Apply this folder's code table (../code_table.tsv, JQA's St Petersburg code, the = 1385) to the later legation
-texts in the same code: Madrid 1823 and 1825 (catalogue 637, 638), Paris 1813 (652) and Mexico 1839 (653), and run
-the controls quoted in ../NOTES.md.
+"""Apply the JQA code table (../jqa/code_table.tsv, John Quincy Adams's St Petersburg code, the = 1385, used here
+unchanged) to the later legation letters in the same code, each in its own folder: Cadiz 1823 (this folder,
+catalogue 637), Madrid 1825 (../everett1825, 638), Paris 1813 (../crawford1813, 652) and Mexico 1839 (../ellis1839,
+653), and run the controls quoted in each folder's NOTES.md. The other three folders call this script through their
+own small decode.py, so the same commands work in each folder:
 
     python decode.py appleton1823_transcription.txt            group-by-group decryption, line by line
-    python decode.py everett1825_transcription.txt
-    python decode.py crawford1813_transcription.txt
-    python decode.py ellis1839_transcription.txt
+    python decode.py everett1825_transcription.txt             (in ../everett1825)
+    python decode.py crawford1813_transcription.txt            (in ../crawford1813)
+    python decode.py ellis1839_transcription.txt               (in ../ellis1839)
     python decode.py everett1825_transcription.txt --controls   wrong-key controls (any of the four files)
 
 Output per group: number=value/grade, the grade as in code_table.tsv (H clerk decode, C Ford-aligned, M uncertain,
@@ -13,12 +15,12 @@ I slot inference); '?' = no value in the table. The marks of the transcription a
 A first column like 27R01: or 0298.01: or without digits (A, B, C) is the line label. Words written in clear
 among the groups ("word") are copied through; groups written above the line ([ins: ...]) are decoded in place; a
 group with an unreadable digit (?03) counts as a group without a value.
-Python standard library only; paths are relative to this file.
+Python standard library only; paths are relative to this file (a transcription path may also be absolute).
 """
 import os, random, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TABLE = os.path.join(HERE, '..', 'code_table.tsv')
+TABLE = os.path.join(HERE, '..', 'jqa', 'code_table.tsv')
 FUNCTION = set('the of that and to in i not he is it his be by as with for this which was would have had upon been '
                'on at from more such well who are all a an'.split())
 
@@ -79,7 +81,7 @@ def decode(path):
             else:
                 out.append(f'{n}=?{mk}')
         print((label + '  ' if label else '') + '  '.join(out))
-    print(f'# {hit} of {tot} groups have a value in ../code_table.tsv')
+    print(f'# {hit} of {tot} groups have a value in ../jqa/code_table.tsv')
 
 
 def function_rate(words):
@@ -90,7 +92,7 @@ def function_rate(words):
 def controls(path):
     """Wrong keys: every group shifted by k, or the table permuted at random. A true key gives English, with many
     function words; a wrong key gives scattered syllables. (Shuffling the group order keeps the same words, so it
-    needs a word-order model; that check is described in ../NOTES.md and not repeated here.)"""
+    needs a word-order model; that check is described in NOTES.md and not repeated here.)"""
     tab = table()
     seq = [n for _, gs in groups(path) for n, _ in gs if n is not None and n >= 0]
     dec = lambda f: [value(tab, f(n)) for n in seq]

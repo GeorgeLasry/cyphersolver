@@ -1,0 +1,235 @@
+{
+ "schema_version": 1,
+ "target": "crawford1813",
+ "title": "William H. Crawford to James Monroe, No. 1 (private), Paris, 3 Sept 1813: a coded letter in the JQA code (catalogue 652)",
+ "documents": [
+  {
+   "id": "crawford1813",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to France vol. 17, M34 roll 17 (naId 188672892), frames 0027R-0029R (catalogue 652)",
+   "date": "3 Sep 1813",
+   "year": 1813,
+   "country": "United States",
+   "route": "Paris -> Washington",
+   "places": {
+    "from": "Paris",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the film. Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) says it was to be deciphered; the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1) but print no deciphered text."
+   },
+   "length": {
+    "tokens": 1368,
+    "distinct": 486,
+    "unit": "code groups",
+    "measured": true,
+    "file": "crawford1813_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M34 roll 17 frames 0027-0029 (full resolution)",
+    "corrections": 2,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). About 150 groups (11%) re-read independently on fresh crops; one 0/8 slip corrected (29R01: 1383, not 1303). A review pass corrected one clear word (28R02: 'silly', not 'folly'). In this hand 8 is an o with a top tick. Measured with docs/_check_profile.py --measure --digits --drop-first (distinct counts mark variants such as 449o separately; 437 numbers)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "syllabic"
+  ],
+  "summary": "John Quincy Adams's numerical syllable-and-word code of 1811-1812 (the = 1385), about 1,600 numbers, rebuilt in ../jqa; used here unchanged.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": "unknown",
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "titles"
+   ],
+   "unread_groups": 32
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "the JQA code, ../jqa/code_table.tsv (rebuilt there from the State Department clerk's decodes and Ford's printed decipherments of JQA's 1811-1812 despatches), applied unchanged",
+  "distinct_symbols": 486,
+  "notes": "distinct_symbols = distinct groups in crawford1813_transcription.txt (python docs/_check_profile.py --measure --digits --drop-first; variants such as 449o counted separately; 437 numbers). unread_groups = distinct group numbers left in brackets in crawford1813_reading.md. Words in clear are written in among the groups."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the film. Monroe to Madison [ca. 1 Nov 1813] (PJM Pres. Ser. 7, Founders Madison/03-07-02-0011) says it was to be deciphered; the PJM editors summarise the subjects of the coded letters of 15 Aug and 3 Sept (Madison/03-06-02-0671 n. 1) but print no deciphered text. ASP FR 3, the Crawford Papers and decoded copies elsewhere in RG 59 not checked.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 652) and the rules; the AI agents fetched the frames, transcribed, decoded, read and verified. No target-specific human intervention.",
+  "tools": [
+   "../appleton1823/decode.py (applies ../jqa/code_table.tsv; wrong-key controls)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT); a vision-capable language model for the transcription"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: located catalogue 652 on NARA M34 roll 17 frames 0027-0029 (Crawford, Paris, 3 Sept 1813), in the JQA code (the = 1385); the clear paragraph on 0029 says the legation held a copy of a letter in JQA's cypher.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: 1,368 groups in 102 lines transcribed; about 150 groups re-read independently, one 0/8 slip corrected (29R01 1383).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: applied ../jqa/code_table.tsv unchanged: 1,313 of 1,368 groups valued, raw output English on every page.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "WAINUT contribution: first read with 1264 as 'and'; replaced by the full stop (30x, always at a clause end; 668 is 'and') after the Ellis 1839 alignment (../ellis1839). 713 = r gives Sir (27R02) and Mr. Warden (27R11), matching the PJM editors' mention of Warden. Context values 449 -nity (5x), 462 -tract (3x), 1106 will, 1323 been; about 40 context words marked [?].",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wrong-key controls (decode.py --controls): function-word rate 0.36 for the true table, 0.02-0.14 for shifts of 1-100, 0.03-0.05 for random table permutations; an independent bigram check gave 0.117 against 0.015-0.019 for shuffled group orders.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: Founders Madison/03-07-02-0011 and 03-06-02-0671 (PJM Pres. Ser. 7 and 6) say the letter came in cypher and summarise its subjects; no deciphered text printed; ASP FR 3 and the Crawford Papers not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: read in part (crawford1813_reading.md, read_share 0.915).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "WAINUT contribution: review pass: two passages (28R01-04, 29L08-29R01) decoded again with a separate script from origin/main ../jqa/code_table.tsv, same output; the clear word in 28R02 re-read on the full-resolution frame as 'silly', not 'folly' (no f descender), giving 'the silly pub[li]cations of our sapient Editors'; letters supplied in in[jur]ious and commu[nica]ted now marked.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches, applied unchanged; 1264 = full stop and 713 = r carried over from the Ellis 1839 clear copy (../ellis1839); context words marked [?].",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "crawford1813_reading.md: read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.085).",
+  "fraction_read": 0.915,
+  "codes_open": {
+   "open": 32,
+   "total": 437,
+   "tokens_open": 37
+  },
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: catalogue 652 (Crawford 1813) read in part with the JQA code table (../jqa/code_table.tsv); 1264 = full stop and 713 = r carried over from 653",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "652 (1,368 groups) from NARA M34 roll 17 frames 0027-0029",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "founders",
+    "role": "pointer",
+    "note": "PJM editors' notes (Madison/03-07-02-0011, 03-06-02-0671): the 3 Sept 1813 letter was in cypher; summary of its subjects, no deciphered text",
+    "source": "https://founders.archives.gov/documents/Madison/03-07-02-0011"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "about 40 context words marked [?] and the open groups ([102], [267], [343], [366], [529], [58], [104], [531], [665], [700], [909], [1204], [1313], [1444] and others)",
+    "blocker": "no-key-material",
+    "detail": "most occur once here; Crawford's other coded despatches in the same volume (frames 0031-0033, 0047-0049, 0065-0067, 0072, 0086-0090, 0199-0201, 0213-0214) are the next source of occurrences"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "crawford1813",
+    "label": "Crawford to Monroe, No. 1 (private), Paris, 3 Sept 1813 (catalogue 652), M34 roll 17 frames 0027R-0029R",
+    "transcription": "crawford1813_transcription.txt",
+    "decryption": "crawford1813_decryption.txt",
+    "reading": "crawford1813_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.915,
+    "summary": "The new US minister in Paris explains why he has not opened official talks with Napoleon's foreign minister Bassano, who is with the Emperor at Dresden: Mr. Warden acts as the channel at Paris, a minister need not follow a court abroad, and Crawford has been painted as impetuous; the Russian mediation is unwelcome to Napoleon. He then judges Joel Barlow's secret plan to fund indemnities from trade licences useless, since licensed imports have glutted the American market.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frames)",
+     "date": "2026-10-27",
+     "note": "Coherent sentences with scattered holes: about 40 context words marked [?] and about 30 open groups; 1264 read as the full stop (from 653). research/reading_audit/v2_score.py: hole rate 0.085, explicit-hole sentence share 0.732; docs/_check_reading.py clean share 0.69. Under the 95% bar, so read in part."
+    },
+    "note": "read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.085)."
+   }
+  ],
+  "key_file": "../jqa/code_table.tsv",
+  "notes": "Contributed by WAINUT (catalogue 652). Same code as ../jqa; nothing there is changed. About 89% of the groups were read once only; a second full reading against the frames is still to do. Proposed table changes (not applied) are in NOTES.md."
+ }
+}
