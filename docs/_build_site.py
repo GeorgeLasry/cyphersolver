@@ -2766,22 +2766,29 @@ def lr_inline(s):
     return s
 
 def lr_copy(src, dst):
-    """Copy a report image into docs/, scaled down to LR_MAXW; returns (width, height) as published."""
+    """Copy a report image into docs/ as a JPEG scaled down to LR_MAXW; returns (width, height) as published.
+    The copy is redone only when the source's content changes (sha1 in docs/lasry/<folder>/sources.json), not on file
+    times: a fresh checkout gives every file a new mtime, and comparing them rewrote all the copies on each build."""
+    import hashlib
+    man_f = dst.parent / 'sources.json'
+    man = json.loads(man_f.read_text(encoding='utf-8')) if man_f.is_file() else {}
+    sha = hashlib.sha1(src.read_bytes()).hexdigest()
     try:
         from PIL import Image
+        if dst.exists() and man.get(dst.name) == sha:
+            return Image.open(dst).size
         im = Image.open(src)
         w, h = im.size
-        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
-            if w > LR_MAXW: h, w = round(h * LR_MAXW / w), LR_MAXW
-            return w, h
         dst.parent.mkdir(parents=True, exist_ok=True)
         if w > LR_MAXW:
             im = im.resize((LR_MAXW, round(h * LR_MAXW / w)), Image.LANCZOS); w, h = im.size
-        if dst.suffix.lower() in ('.jpg', '.jpeg'): im.convert('RGB').save(dst, quality=88)
-        else: im.save(dst, optimize=True)
-        return w, h
+        im.convert('RGB').save(dst, quality=85, optimize=True)
     except ImportError:
-        dst.parent.mkdir(parents=True, exist_ok=True); dst.write_bytes(src.read_bytes()); return None, None
+        if dst.exists() and man.get(dst.name) == sha: return None, None
+        dst.parent.mkdir(parents=True, exist_ok=True); dst.write_bytes(src.read_bytes()); w = h = None
+    man[dst.name] = sha
+    man_f.write_text(json.dumps(man, indent=1, sort_keys=True) + '\n', encoding='utf-8')
+    return w, h
 
 def lasry_report_html(page):
     out = []
@@ -2797,7 +2804,7 @@ def lasry_report_html(page):
         gal = {g['label']: g['url'] for g in r.get('gallica') or [] if g.get('label')}
         def fig(rec, credit, cap, cls=''):
             src = rd / rec['file']
-            name = f'lasry/{f}/{pathlib.PurePosixPath(rec["file"]).name}'
+            name = f'lasry/{f}/{pathlib.PurePosixPath(rec["file"]).stem}.jpg'
             w, h = lr_copy(src, HERE / name)
             wh = f' width="{w}" height="{h}"' if w else ''
             alt = html.escape(html.unescape(re.sub(r'<[^>]+>', '', cap)))
