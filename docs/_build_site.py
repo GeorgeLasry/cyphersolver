@@ -18,7 +18,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261026b'
+VERSION ='20261027a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -2967,20 +2967,22 @@ SEARCH_HTML = (
 # writeups.html: every write-up, filterable, followed by the results that exist only as notes in the repository.
 # The second list is read from ../README.md, whose Results tables are the ledger every session keeps: a row whose
 # "Where" column links to a site page is a write-up (checked against PAGES), any other row is notes only.
-PERIODS = [('1500s', 'to 1599', lambda y: y < 1600), ('1600s', '1600s', lambda y: 1600 <= y < 1700),
-           ('1800s', '1700s and 1800s', lambda y: 1700 <= y < 1900), ('1900s', '1900s', lambda y: 1900 <= y < 9000)]
+# century keys are the ones the catalogue.html Century facet uses, so a #century=1600s link works on both pages
+CENTURIES = [('early', 'before 1400')] + [(f'{c}00s', f'{c}00s') for c in range(14, 20)] + [('undated', 'undated')]
 KINDS = [(M.KEY[m], M.LABEL[m]) for m in M.METHODS] + [('active', 'in progress'), ('other', 'not yet classified'), ('survey', 'survey')]
 EXTENTS = [('complete', 'complete'), ('partial', 'partial'), ('none', 'text not obtained')]
 # README section heading, status class, badge text
 README_SECTIONS = [(M.SECTION[m], M.status_class(m, 'complete'), M.LABEL[m]) for m in M.METHODS] + \
                   [('### In progress', 'partial', 'in progress')]
 
-def period_of(y):
-    return next((k for k, _, f in PERIODS if f(y)), 'survey')
+def century_of(y):
+    if not y or y >= 2000: return 'undated'           # surveys carry 9999, undatable notes 0
+    return 'early' if y < 1400 else f'{int(y) // 100}00s'
 
 # the writeups.html Language facet: plaintext languages from profile documents[].language, matched by the first words
 # ('Latin with Catalan and Castilian phrases' counts as Latin, 'French and German' as both); the rest is 'other'
-LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish']
+LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish', 'Swedish',
+         'Portuguese', 'Chinese', 'Japanese']
 LANG_ALIAS = {'castilian': 'Spanish', 'scots': 'English'}
 
 def langs_of(folders):
@@ -2994,7 +2996,7 @@ def langs_of(folders):
             head = re.split(r'[(;,]| with ', v)[0]
             found = {LANG_ALIAS.get(w.lower(), w.capitalize()) for w in re.findall(r'[A-Za-z]+', head)} & set(LANGS)
             out |= found or {'other'}
-    return ' '.join(sorted(l.lower() for l in out))
+    return ' '.join(sorted(l.lower() for l in out)) or 'unknown'
 
 def repo_url(link):
     if link.startswith('http'): return link
@@ -3095,7 +3097,7 @@ def writeups_html():
     rows = []
     for p in sorted(PAGES, key=lambda p: p['y']):
         by = ' '.join(sorted({c['who'] for c in p.get('credits') or [] if c.get('who') in CONTRIB}))
-        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-period="{period_of(p["y"])}" data-src="page" data-by="{by}" '
+        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-century="{century_of(p["y"])}" data-src="page" data-by="{by}" '
                     f'data-lang="{langs_of(p.get("folders") or [])}" '
                     f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
@@ -3104,39 +3106,51 @@ def writeups_html():
     notes = readme_notes()
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
-        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-period="{period_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
+        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-century="{century_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
                      f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
                      f'<span class="b">{n["result"]}</span></a></li>')
-    used = {p_kind for p_kind in [kind_of(p) for p in PAGES] + [n['kind'] for n in notes]}
-    chips = lambda facet, vals: ''.join(f'<button type="button" class="chip" data-facet="{facet}" data-val="{k}" aria-pressed="false">{label}</button>' for k, label in vals)
+    # chips only for values some entry has; site.js fills in each chip's live count
+    have = {}
+    for li in rows + nrows:
+        for k, v in re.findall(r' data-(kind|extent|century|src|lang)="([^"]*)"', li.split('>', 1)[0]):
+            n = have.setdefault(k, {})
+            for x in v.split(): n[x] = n.get(x, 0) + 1
+    def facet(name, label, vals, extra=''):
+        opts = ''.join(f'<button type="button" class="chip" data-facet="{name}" data-val="{k}" aria-pressed="false">{l}<span class="n"></span></button>'
+                       for k, l in vals if k in have.get(name, {}))
+        return f'<div class="facet" role="group" aria-label="{label}"><span class="flabel">{label}</span><span class="opts">{opts}</span>{extra}</div>'
+    def dropdown(label, body, name):
+        return (f'<details class="dd" data-dd="{name}"><summary><span class="dl">{label}</span><span class="dv"></span></summary>'
+                f'<div class="pop">{body}</div></details>')
+    nl = have.get('lang', {})
+    langs = [(l, l if l in ('other', 'unknown') else l.capitalize()) for l in sorted(nl, key=lambda l: (l in ('other', 'unknown'), l == 'unknown', -nl[l], l))]
     total = len(rows) + len(nrows)
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<title>All write-ups &mdash; {len(rows)} ciphers by outcome and date, and {len(nrows)} results still in the notes</title>\n'
-        f'<meta name="description" content="Every write-up on the site, filterable by outcome, language, period and text, followed by the '
+        f'<meta name="description" content="Every write-up on the site, filterable by method, extent, language, century and text, followed by the '
         f'results that exist only as notes in the repository: read, explained, attempted or waiting on an archive.">\n'
         f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>\n<body id="top">\n<!-- site:nav -->\n\n'
         '<section class="hero">\n'
         f'  <p class="kicker">Index &middot; {len(rows)} write-ups &middot; {len(nrows)} results only in the notes</p>\n'
         '  <h1>Every write-up</h1>\n'
-        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by outcome, language or period, or search '
+        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by method, extent, language or century, or search '
         'the titles and summaries. The second list is work that exists only as notes in the repository: results not yet written up, '
         'attempts closed from the evidence, and items waiting on an archive.</p>\n'
         '  <div class="jump"><a href="#pages">Write-ups</a><a href="#notes">Only in the notes</a><a href="catalogue.html">Catalogue</a></div>\n'
         '  <p class="meta">Daniel Bourdeau</p>\n</section>\n\n<main>\n\n'
-        '<div class="wfilters" role="search">\n'
-        f'  <div class="facet"><span class="flabel">Method</span>{chips("kind", [k for k in KINDS if k[0] in used])}'
-        '<a class="gl" href="glossary.html">what these mean</a></div>\n'
-        f'  <div class="facet"><span class="flabel">Extent</span>{chips("extent", EXTENTS)}</div>\n'
-        f'  <div class="facet"><span class="flabel">Language</span>{chips("lang", [(l.lower(), l.lower()) for l in LANGS] + [("other", "other")])}</div>\n'
-        f'  <div class="facet"><span class="flabel">Period</span>{chips("period", [(k, l) for k, l, _ in PERIODS])}</div>\n'
-        f'  <div class="facet"><span class="flabel">Where</span>{chips("src", [("page", "site page"), ("notes", "notes only")])}</div>\n'
-        '  <div class="facet"><span class="flabel">Search</span><input id="wq" type="search" placeholder="titles, places, summaries" aria-label="Search the write-ups">'
-        '<button type="button" class="chip" id="wreset">reset</button></div>\n'
-        f'  <p class="wcount" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</p>\n</div>\n\n'
+        '<div class="cfilters" role="search">\n'
+        '  <input id="wq" type="search" placeholder="Search: titles, places, summaries&hellip;" aria-label="Search the write-ups">\n'
+        f'  {dropdown("Method", facet("kind", "Method", KINDS, '<a class="gl" href="glossary.html">what these mean</a>'), "kind")}\n'
+        f'  {dropdown("Extent", facet("extent", "Extent", EXTENTS), "extent")}\n'
+        f'  {dropdown("Language", facet("lang", "Language", langs), "lang")}\n'
+        f'  {dropdown("Century", facet("century", "Century", CENTURIES), "century")}\n'
+        f'  {dropdown("Where", facet("src", "Where", [("page", "site page"), ("notes", "notes only")]), "src")}\n'
+        f'  <span class="count" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</span>\n'
+        '  <button type="button" class="chip clear" id="wreset" hidden>clear filters</button>\n</div>\n\n'
         '<section class="wsec" id="pages">\n<h2 id="write-ups"><span class="num">01</span> Write-ups</h2>\n'
         '<ul class="list wl">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
         '<section class="wsec" id="notes">\n<h2 id="only-in-the-notes"><span class="num">02</span> Only in the notes</h2>\n'
