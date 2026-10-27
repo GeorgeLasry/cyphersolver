@@ -129,3 +129,7 @@ Queued as a `jqa` follow-up for the maintainer (not applied here). The most impo
 - `everett1825_transcription.txt`, `everett1825_decryption.txt`, `everett1825_reading.md`
 - `decode.py`: runs `../appleton1823/decode.py` (which applies `../jqa/code_table.tsv`) on this folder's files;
   `--controls` runs the wrong-key controls (standard library)
+
+## The eight enciphered pages read by Brice Dudout (27-28 Oct 2026)
+
+Frames 0112-0115 (pp. 1-6) and pp. 17-18: 1111 of 1127 groups read with the jqa table and a graded overlay. See `dudout/README.md`. This answers the "next step" above.

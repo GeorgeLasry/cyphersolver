@@ -1,0 +1,7 @@
+# Notes of a conversation with Mr Zea, p. 2: established text
+
+Everett's clear text as written; the deciphered passages in «guillemets»; {x} probable; [x] from sense.
+
+This gentleman was attached not many years ago to a commercial house at Cadiz. He went to St Petersburgh on private business and without any public character whatever, about the close of the year 1810. In the course of the next year he was attached to the Consulate of Spain at that place. The consul died about that time and there being also no regular diplomatic representation of H. C. M. at the Russian Court, Mr Zea was called upon to act as Consul and Chargé d’affaires. At this time he was personally known to the President, who was then employed on his mission to Russia. Mr Zea while in this situation obtained from the Emperor an acknowledgement of the Constitutional Government and negotiated a treaty between Russia and Spain. I am not precisely acquainted with all the details of his history from the time of his leaving Russia untill his elevation to his present post. He has however resided for some time in England as Minister. «It is under-st[ood] that he was {brought} into the ca{bi}{net} by the influence of U{gar}te, who was him[self] a {cre}{ature} [of] [Russia]. {Mr} {Zea} however [soon] {bro}{ke} with his {pat}ro[n] and {fin}ally succeeded in rem{ov}-»
+
+Plain sense: Zea is said to have entered the cabinet through Ugarte, himself a creature of Russia; he soon broke with his patron and had him removed…

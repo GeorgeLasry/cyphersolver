@@ -1,0 +1,7 @@
+# Notes of a conversation with Mr Zea, p. 4: established text
+
+Everett's clear text as written; the deciphered passages in «guillemets»; {x} probable; [x] from sense.
+
+«-{sive} [sm][o]king. His {ey}es ‹27› ‹634› ‹1343› ‹501›, and he {rol}ls them about while conversin[g], in {rather} a singular {way}, so as frequently to shew the {white}s of the ball all ar{ound} the iris. The [express]ion of his countenance when silent is tame, but when he speaks it assumes an {air} of wa{rm}{th} and [frank]{ness}. — His manners are those of a polished [g]entleman accustomed to the {wor}ld. I conversed with him in French, which he speaks fluently, and he is also well ver[s]ed in English, and speaks it at times. He has altogether less of the peculiar {air} and manner of a Span[i][ard], and more of those which are in some {degree} common to gentlemen of re{fine}ment ‹520 457v 864› without distinction of country, than any Span[i][ard] I have met with. — The {ton}{e} of his conversation is generally li[ber]al, and his views are {evi}{dent}ly on a le-ve-[l] with the ci{vil}ization of the age; so that when he {adv}ances any {gr}{oss}ly illi[ber]al and anti{qu}{ated}»
+
+Plain sense: He rolls his eyes so as to show the whites; tame face in silence, warm and frank in speech; a polished gentleman, fluent in French, at ease in English, less Spanish in air than any Spaniard Everett has met; liberal in conversation and abreast of the age, so that any illiberal notion he voices…
