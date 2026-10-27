@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "target": "august1733",
+ "title": "August III of Poland to Johann Adolf II of Saxe-Weissenfels on the siege of Danzig, with encrypted reports, 1733-34 (HStA Dresden 11237 Loc. 10932/09)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "Sächsisches Staatsarchiv, HStA Dresden, 11237 Geheimes Kriegsratskollegium, Nr. Loc. 10932/09",
+   "date": "1733-1734",
+   "year": 1733,
+   "country": "Saxony",
+   "route": "unknown (encrypted reports in the file of August III's orders to Johann Adolf II of Saxe-Weissenfels)",
+   "language": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The finding aid notes no decipherment; the file has not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (Archivportal-D and DDB records have no digital object, 26 Oct 2026). Nothing transcribed. German expected."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the reports have not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "Archivportal-D / DDB in the built-in browser",
+   "research/catalogue_harvest/decode/list.json",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Archivportal-D and DDB records for 11237 Loc. 10932/09: full title, Laufzeit 1733-1734, 'Enthält auch: Verschlüsselte Berichte'; no digital object. Not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "DECODE harvest filtered for Saxon/Danzig records: about 95 Flemming keys from 10026 Loc. 03233/02, all 1697-1728; none dated 1731-36 or naming Weissenfels/Danzig.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Web search on the shelfmark and Johann Adolf II + Danzig 1734 + Chiffre/verschlüsselte Berichte. No edition or decipherment; Hercules Saxonum not checked.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole file",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the item could not be reached. Scans must be ordered from HStA Dresden."
+ }
+}
