@@ -199,7 +199,13 @@
   {
    "date": "2026-10-27",
    "kind": "literature search",
-   "what": "Context in the same correspondence: CLI (20 May) 'legantur ... eo modo, quo Schaumiana legi necesse est ex pacto'; CLIII (22 Jul) 'Addo occultiora pagina sequenti, carbo ostendet' (invisible ink, not printed); CLV (6 Sept) 'Occulta scriptura nihil scribo hac vice' (no secret text). Read in the OCR, not on the images.",
+   "what": "Context in the same correspondence, checked on the page images of Patera (leaves n200-n205): CLI (20 May) 'legantur ... eo modo, quo Schaumiana legi necesse est ex pacto' (OCR only); CLII (24 May) the cipher follows news quoted from a letter from England and precedes a P.S. and the closing on p. 179; CLIII (22 Jul) 'Addo occultiora pagina sequenti, carbo ostendet' (in italic; invisible ink, not printed); CLV (6 Sept) italic passages with note * on p. 183: 'Co ležatým písmem vytištěno, psáno v originále tajným písmem', and 'Occulta scriptura nihil scribo hac vice'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Review pass: the cipher lines, the word (iyy) and the 22 Jul and 6 Sept passages re-checked on the page images; found that the 6 Sept letter's secret passages are printed in clear (Patera p. 183 note *), correcting the first report that it has no secret text, and that the 24 May cipher is not at the end of the letter.",
    "result": "worked"
   }
  ],
@@ -249,8 +255,14 @@
    },
    {
     "who": "lccompany",
+    "role": "pointer",
+    "note": "WAINUT: found Patera's 1892 footnote decipherment of the 4 Aug 1655 sentence for catalogue 474",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
     "role": "solution",
-    "note": "WAINUT: found Patera's decipherment for catalogue 474, rebuilt the key from it and checked it (one letter in conflict); 24 May passage attempted, not deciphered",
+    "note": "WAINUT: the decipherment of 4 Aug 1655 is Patera's; WAINUT rebuilt the key from it and checked it letter by letter against both prints (one letter in conflict: CmCasda gives 'papmtum'); 24 May passage attempted, not deciphered",
     "date": "2026-10-27"
    },
    {
@@ -262,7 +274,7 @@
    {
     "who": "lccompany",
     "role": "identification",
-    "note": "WAINUT: the 22 Jul 1655 secret text is invisible ink (not printed) and the 6 Sept 1655 letter has no secret text; a third cipher word (iyy) in the 4 Aug letter",
+    "note": "WAINUT: the 22 Jul 1655 letter adds invisible ink on a further page (not printed); the 6 Sept 1655 letter's secret-script passages are printed in clear in italic by Patera (p. 183 note *); a cipher word (iyy) in the 4 Aug letter; the 24 May cipher stands inside news quoted from a letter from England",
     "date": "2026-10-27"
    }
   ],
@@ -281,10 +293,15 @@
     "item": "the secret text of 22 Jul 1655 (Patera CLIII)",
     "blocker": "needs-physical-access",
     "detail": "Invisible ink ('carbo ostendet') on the next page; not printed, perhaps visible only on the original."
+   },
+   {
+    "item": "the secret-script passages of 6 Sept 1655 (Patera CLV p. 183, printed in clear in italic)",
+    "blocker": "needs-physical-access",
+    "detail": "Patera gives only the plaintext; the ciphertext and the key are not printed, and who deciphered it is not said. Needs the original (MNL OL) or Szilágyi, Transsylvania I (1890) pp. 393-394, to check it."
    }
   ],
   "key_file": "key_1655-08-04.tsv",
-  "notes": "Catalogue 474. The catalogue's 'four letters, each with a ciphered sentence' is two printed cipher passages (24 May, 4 Aug) plus one cipher word (iyy) in the 4 Aug letter; the 22 Jul letter used invisible ink (not printed) and the 6 Sept letter says it has no secret text. Only the 4 Aug sentence is deciphered, by Patera (1892). Status: no write-up yet; the site page, README row and catalogue changes are left to the maintainer.",
+  "notes": "Catalogue 474. Of the four letters: 24 May has a printed cipher passage (not deciphered); 4 Aug has a printed cipher sentence (deciphered by Patera 1892) and the cipher word (iyy); 22 Jul promises more secret text on a further page in invisible ink ('carbo ostendet'), not printed; 6 Sept has secret-script passages that Patera prints in clear, in italic (p. 183 note *: 'what is printed in italic was written in secret script in the original'); their ciphertext is not printed and who deciphered them is not said. Only the 4 Aug sentence is checked here with a key. Status: no write-up yet; the site page, README row and catalogue changes are left to the maintainer.",
   "texts": [
    {
     "doc": "A",
@@ -296,7 +313,7 @@
     "state": "read",
     "language": "la",
     "read_share": 0.95,
-    "summary": "Comenius, writing from Leszno during the Swedish invasion of Poland, ends his report to Rákóczi's councillor with one ciphered sentence: 'Nothing is more certain than that Poland has perished, and the papacy in it.' The letter around it reports the Swedish advance from Poznań on Warsaw and the flight of the Catholic clergy. In 1655 Comenius was urging George II Rákóczi of Transylvania to join Sweden.",
+    "summary": "Comenius, writing from Leszno during the Swedish invasion of Poland, ends his report to Rákóczi's councillor with one ciphered sentence: 'Nothing is more certain than that Poland has perished, and the papacy in it.' The letter around it reports the Swedish advance from Poznań on Warsaw and the flight of the Catholic clergy. At this time Comenius was pressing George II Rákóczi of Transylvania to side with Sweden (background, not taken from this letter).",
     "reading_review": {
      "grade": "A",
      "by": "WAINUT (an AI language-model agent, checked by a second agent)",
@@ -312,7 +329,7 @@
     "decryption": "plain_1655-05-24.txt",
     "state": "decoded, not read",
     "language": "la",
-    "summary": "The cipher closes a letter in which Comenius passes on news from a friend in England (23 Apr 1655): Schaum has not yet arrived, the Polish and Swedish envoys in London, the Waldensian massacre in Piedmont, the fleet in America. The cipher itself is not deciphered.",
+    "summary": "The cipher stands in a letter in which Comenius quotes news from a friend in England (23 Apr 1655): Schaum has not yet arrived there, the Polish and Swedish envoys in London, the Waldensian massacre in Piedmont, the fleet in America. The cipher follows this news and comes before a postscript ('Tandem apulit [...] dominus Schaum') that seems to belong to the same English letter; the letter then goes on and closes 'Raptissime 24 Maji 1655'. The cipher itself is not deciphered.",
     "note": "Not deciphered. The decryption file records the failed trials (4 Aug key, inverse, reciprocal table; annealing with matched controls), not a reading. Plaintext language unknown; Latin assumed for the trials."
    }
   ]
