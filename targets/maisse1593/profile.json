@@ -27,12 +27,12 @@
     "measured": false
    },
    "transcription": {
-    "by": "human (project)",
-    "source": "not transcribed; read from the clear copy",
+    "by": "llm from images",
+    "source": "wainut/f406_brienne_copy.txt (Brienne 13 fol. 171r lower part to 172v) and wainut/cipher_lines.txt (first cipher stretches of ff. 406 and 404)",
     "image_quality": "good",
-    "notes": "Not transcribed group by group and not deciphered with the key; the text is read from the Brienne clear copy."
+    "notes": "The clear copy is transcribed up to the end of fol. 172v; fol. 173r (the end of the letter) is not. Of the cipher leaf only the first stretches (f. 406 cipher l. 1, two pieces of l. 2, and f. 404 l. 3) are transcribed and decrypted with Tomokiyo's key; about 18 further cipher lines on f. 406 are not, and where the cipher block ends is not fixed."
    },
-   "read": "not read"
+   "read": "read in part"
   },
   {
    "id": "f410",
@@ -57,12 +57,12 @@
     "measured": false
    },
    "transcription": {
-    "by": "human (project)",
-    "source": "not transcribed; read from the clear copy",
+    "by": "llm from images",
+    "source": "wainut/f410_brienne_copy.txt (Brienne 13 fol. 193v, 194r and the first lines of 194v) and wainut/cipher_lines.txt (first two cipher lines of f. 410)",
     "image_quality": "good",
-    "notes": "Not transcribed group by group and not deciphered with the key; the text is read from the Brienne clear copy."
+    "notes": "The clear copy is transcribed except most of fol. 194v. Of the cipher leaf only its first two cipher lines (72 signs) are transcribed and decrypted with Tomokiyo's key; about 23 further cipher lines are not, and where the cipher block ends is not fixed."
    },
-   "read": "not read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -98,7 +98,7 @@
   "key_order": "unknown",
   "word_division": "unknown",
   "doubled_letters": "unknown",
-  "sibling_key": "Tomokiyo's reconstruction 'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)' (henryiv_Maisse2.png), in hand, not applied; ff. 398, 401, 402, 404 of the same volume carry partial interlinear decipherments",
+  "sibling_key": "Tomokiyo's reconstruction 'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)' (henryiv_Maisse2.png), applied unchanged to six stretches (128 signs) of ff. 404, 406, 410 on 27 Oct 2026; ff. 398, 401, 402, 404 of the same volume carry partial interlinear decipherments",
   "notes": "Word codes on Tomokiyo's table include vous, ceulx, est, faict, de, des, fort, par, pour, que, qui, advis, ces, comme, bon, avec, et, jay, les, luy, moy. f. 404 says in clear that Maisse kept 'le double du chiffre que j'ay envoye aud. de Breves'. Commonest figures on f. 404: 27, 10, 26, 23, 19, 21, 22, 24, 8."
  },
  "conditions": {
@@ -183,29 +183,78 @@
    "kind": "verification",
    "what": "Reading audit, per-document pass (George Lasry's sentence test): no text of f. 406 or f. 410 is in the repository (images and links only). Both relabelled decoded, not read; class read -> not read; method read from existing decipherment -> not solved, until the Brienne 13 copies are transcribed.",
    "result": "failed",
-   "technique": ["language-model scoring", "statistical test"]
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   },
   {
    "date": "2026-10-23",
    "kind": "verification",
    "what": "Consistency pass (cl): documents[].read for f406, f410 read -> not read, matching outcome.texts (decoded, not read) and fraction_read_source.",
    "result": "worked",
-   "technique": ["statistical test"]
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: Brienne 13 (NAF 6984, btv1b100904592) canvases 176-178, 199-200 and the cipher leaves fr. 16093 (btv1b90074656) canvases 455, 457, 458, 461 viewed at full resolution (Gallica viewer and the BnF IIIF API at openapi.bnf.fr); no image kept in the repository.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "WAINUT contribution: the clear copies transcribed line by line: fol. 171r (lower part) to 172v for f. 406 (wainut/f406_brienne_copy.txt) and fol. 193v, 194r and the first lines of 194v for f. 410 (wainut/f410_brienne_copy.txt). fol. 173r and the rest of 194v are not transcribed. The top of fol. 171r ('insollence des Espagnolz ... prier Dieu, etc.') was found to be the end of Maisse's own letter 'Au Roy du dixiesme Avril 1593' (heading on fol. 170v), not part of the King's letter of 8 Feb.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "WAINUT contribution: the start of each cipher block fixed against the copies (f. 406 and twin f. 404: 'Le surplus de voz lettres ...', right after 'vous y pouvez apporter', on the same line of the leaf; f. 410: 'L'experience a faict cognoistre ...', after 'de ma bonne grace et faveur'). Six stretches (f. 410 cipher ll. 1-2, f. 404 l. 3, f. 406 cipher l. 1 and two pieces of l. 2; 128 signs) transcribed sign by sign (wainut/cipher_lines.txt) and decrypted with Tomokiyo's 'Maisse' Cipher 2' unchanged: they give the copy's text (wainut/f406_decryption.md, f410_decryption.md). Word signs 15 = faict, 17 = vous, 18 = est confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wainut/decode_check.py: difflib ratio of decryption to copy 0.79-1.00 on the six stretches (0.91-0.94 on the three longest, 25-39 signs; 0.79 on the 13-sign stretch with two holes); 2000 random permutations of the key values give at most 0.67 on any stretch and 0.53 on the four longest; 2000 shuffles of the group order at most 0.65 on the three longest and 0.71 on the 13-sign stretch.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "WAINUT contribution: a second, independent look at the images corrected the first sign-level alignment: on f. 404 the '9' is the uy sign (u) and the '+' the theta-like d; on f. 410 '9t' is c (not n), 's-long + hook' is two signs (e, n) and the z-like sign is a; the hooked q-like sign for l is in Tomokiyo's l column (not a new homophone); the cipher spells 'cougnoistre' and 'que vous en avez'; the copy has 'vous estes estes'. Still open: three signs where the copy has 'vous ne' decode r u e; the pi-like sign in 'Rome' and the '+' in 'voiage' do not fit the key.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "WAINUT contribution, review fixes (PR #106): the two WAINUT texts entries replace the earlier f406/f410 entries (no duplicate doc ids), documents[].read, class, method, gaps and escalation brought in line; the self-assigned reading_review grades removed. Status in progress: the copies' fol. 173r and 194v and the remaining cipher lines are the next step.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "The content of both letters is known from contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey, but neither copy is transcribed in the repository, so no reading is claimed (reading audit, 22 Oct 2026). Once the copies are transcribed the method is read from existing decipherment.",
+  "method": "read from existing decipherment",
+  "method_basis": "The text of both letters is taken from the contemporary clear copies in fonds Brienne 13 (BnF NAF 6984), located through the Harlay piece numbers and Berger de Xivrey (PR #7) and transcribed on 27 Oct 2026 except fol. 173r and most of fol. 194v. Tomokiyo's key, applied unchanged to the first cipher stretches (128 signs), gives the copies' text, so the copies carry the reading of the cipher. Proposed for the maintainer: class read in part, method read from existing decipherment; work in progress (Remaining gaps).",
   "contribution": [
-   "catalogue correction"
+   "catalogue correction",
+   "transcription"
   ],
-  "class": "not read",
-  "fraction_read": 0.0,
+  "class": "read in part",
+  "fraction_read": "unknown",
   "verification": [
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "The fraction is the content obtained from the clear copies; no group of ff. 406/410 was transcribed or deciphered with the key here, so the cipher itself is not verified on these leaves. Split 14 Oct 2026 from maisse1592. 22 Oct 2026, reading audit: the Brienne copies are not transcribed; both letters decoded, not read; class read -> not read, method -> not solved until they are.",
+  "notes": "The fraction is the content obtained from the clear copies; no group of ff. 406/410 was transcribed or deciphered with the key here, so the cipher itself is not verified on these leaves. Split 14 Oct 2026 from maisse1592. 22 Oct 2026, reading audit: the Brienne copies are not transcribed; both letters decoded, not read; class read -> not read, method -> not solved until they are. 27 Oct 2026 (WAINUT): the copies transcribed except fol. 173r and most of fol. 194v, and Tomokiyo's key applied to the first cipher stretches (128 signs); class not read -> read in part, method not solved -> read from existing decipherment, proposed; in progress.",
   "provenance": "contributed",
   "credits": [
    {
@@ -228,43 +277,76 @@
    {
     "who": "tomokiyo",
     "role": "identification",
-    "note": "assigned ff. 406 and 410 to Maisse's Cipher (1592-1593) and published its key (henryiv_Maisse2.png), not applied here",
+    "note": "assigned ff. 406 and 410 to Maisse's Cipher (1592-1593) and published its key (henryiv_Maisse2.png); applied on 27 Oct 2026 (credit below)",
+    "source": "cryptiana Henri IV page"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: ff. 406 and 410 read in part from the Brienne 13 clear copies, with Tomokiyo's key confirmed on the first cipher lines of ff. 404, 406 and 410; credit for the target shared with Arya Patel (PR #7)",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "Brienne 13 fol. 171r-172v and 193v-194v (first lines); 128 cipher signs of ff. 404, 406, 410",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "the top of Brienne 13 fol. 171r is the end of Maisse's own letter to the King of 10 Apr 1593, not the King's letter of 8 Feb (f. 406)",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "'Maisse' Cipher 2 (BnF fr.16093, f.344 etc.)' (src/henryiv_Maisse2.png), applied unchanged to six stretches of ff. 404, 406, 410 (27 Oct 2026)",
     "source": "cryptiana Henri IV page"
    }
   ],
   "texts": [
    {
     "doc": "f406",
-    "label": "f. 406 (twin f. 404), Chartres, 8 Feb 1593 (not transcribed; images only)",
-    "transcription": [
-     "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f457.item",
-     "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f455.item"
-    ],
-    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f176.item",
-    "summary": "Henri IV to Maisse at Venice: the King has answered every despatch and docketed the dates so Maisse can tell what is lost; the Spanish insolence and the Pope; Pisany and Cardinal Gondi should not leave Rome, since their entry among those of the League could breed division. The leaf, its twin f. 404 (partial interlinear decipherment) and the Brienne 13 fol. 171r clear copy are not transcribed in this repository; the links are to the Gallica images.",
+    "label": "f. 406 (twin f. 404), Chartres, 8 Feb 1593, from the Brienne 13 clear copy; cipher decrypted on its first lines (WAINUT, 27 Oct 2026)",
+    "transcription": "wainut/cipher_lines.txt",
+    "contemporary": "wainut/f406_brienne_copy.txt",
+    "decryption": "wainut/f406_decryption.md",
+    "reading": "wainut/f406_reading.md",
+    "translation": "wainut/f406_translation.md",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Not in the repository: the content was read from the contemporary clear copy in Brienne 13 (NAF 6984, fol. 171r, canvas 176), which was never transcribed, and the cipher leaf itself was not deciphered; nothing of the letter is here (reading audit, 22 Oct 2026); fix: fetch the Brienne 13 page and the cipher leaf through the Gallica IIIF (openapi.bnf.fr) and transcribe the copy."
+    "state": "read in part",
+    "summary": "Henri IV to Maisse at Venice: he has answered every despatch and noted their dates, approves Maisse's sending of duplicates, hopes the despatch for the Pope was not delayed, and has written to the Grand Seigneur and his ministers (Maisse can read the letter to Breves if he kept the copy of the cipher). From the start of the cipher block on (its end is not fixed): Rome; Pisany's arrival in Italy; the war in Piedmont and a letter sent through Lesdiguieres' men with a further charge for Lesdiguieres; Gondi at Nancy with the King's passport; the King going down to Saumur, where his sister is. The earlier summary of f. 406 in this entry and in NOTES (the Spanish insolence, Pisany and Cardinal Gondi not to leave Rome) describes the top of fol. 171r, which is the end of Maisse's own letter to the King of 10 Apr 1593. (Maintainer spot-check of Brienne 13 canvas 176 pending.)",
+    "note": "Read in part: the letter's end (Brienne 13 fol. 173r) and the end of the cipher block are not transcribed, and only the start of the cipher block (four stretches, 56 signs) is transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and opening on fol. 171r and the line 'Le surplus de voz lettres ... du voiage'; the rest is one reading. Images: cipher leaf f. 406 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f457.item, twin f. 404 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f455.item, Brienne 13 copy https://gallica.bnf.fr/ark:/12148/btv1b100904592/f176.item. Replaces the earlier entry (decoded, not read, images only; reading audit 22 Oct 2026). No reading_review: grading is left to a reviewer."
    },
    {
     "doc": "f410",
-    "label": "f. 410 (twin f. 412), Mantes, 27 Apr 1593 (not transcribed; images only)",
-    "transcription": "https://gallica.bnf.fr/ark:/12148/btv1b90074656/f461.item",
-    "decryption": "https://gallica.bnf.fr/ark:/12148/btv1b100904592/f199.item",
-    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar, notes that the duc de Nevers held one courier in Champagne, assures Maisse that his absence will cost him nothing in the King's favour, and says experience has proved his long-standing judgement of the affairs of Rome right. Neither the leaf nor its Brienne 13 fol. 193v clear copy is transcribed in this repository; the links are to the Gallica images.",
+    "label": "f. 410 (twin f. 412), Mantes, 27/28 Apr 1593, from the Brienne 13 clear copy; cipher decrypted on its first two lines (WAINUT, 27 Oct 2026)",
+    "transcription": "wainut/cipher_lines.txt",
+    "contemporary": "wainut/f410_brienne_copy.txt",
+    "decryption": "wainut/f410_decryption.md",
+    "reading": "wainut/f410_reading.md",
+    "translation": "wainut/f410_translation.md",
     "language": "fr",
-    "state": "decoded, not read",
-    "note": "Not in the repository: the content was read from the contemporary clear copy in Brienne 13 (NAF 6984, fol. 193v, canvas 199), which was never transcribed, and the cipher leaf itself was not deciphered; nothing of the letter is here (reading audit, 22 Oct 2026); fix: fetch the Brienne 13 page and the cipher leaf through the Gallica IIIF (openapi.bnf.fr) and transcribe the copy."
+    "state": "read in part",
+    "summary": "Henri IV acknowledges Maisse's letters of 20 Feb, 7 and 23 Mar (one courier held by the duc de Nevers in Champagne) and assures him that his absence will cost him nothing. In cipher: experience has proved Maisse right about the affairs of Rome; on advice the King will not yet recall Cardinal de Gondi or the marquis de Pisany, to keep the Pope from extremes, and leaves their moves to the Grand Duke's advice; Gondi's promises. Then (whether still in cipher is not fixed): the original letters of the Grand Seigneur and his ministers received; the King waits on the ambassador's despatch.",
+    "note": "Read in part: only the first lines of Brienne 13 fol. 194v are transcribed, where the cipher block ends is not fixed, and only its first two lines (72 signs) are transcribed and decrypted. read_share is not given because the share of the whole letter is not known. The copy's lines checked a second time, independently: the heading and 'L'experience ... par cette preuve' on fol. 193v; the rest is one reading. Images: cipher leaf f. 410 https://gallica.bnf.fr/ark:/12148/btv1b90074656/f461.item, Brienne 13 copy https://gallica.bnf.fr/ark:/12148/btv1b100904592/f199.item. Replaces the earlier entry (decoded, not read, images only; reading audit 22 Oct 2026). No reading_review: grading is left to a reviewer."
    }
   ],
-  "fraction_read_method": "measured",
-  "fraction_read_source": "Reading audit, 22 Oct 2026: neither letter's text is in the repository, so no tokens are in a document that reads. The earlier 1.0 is withdrawn as a reading figure.",
+  "fraction_read_method": "unknown",
+  "fraction_read_source": "Not measured yet: where each cipher block ends is not fixed, so the share of the cipher tokens that the transcribed copies cover is not known. 128 signs are decrypted sign by sign (wainut/cipher_lines.txt). The reading audit's 0 of 22 Oct 2026 (no text in the repository) no longer applies.",
   "gaps": [
    {
-    "item": "ff. 406 and 410: the Brienne 13 clear copies, not transcribed",
+    "item": "the Brienne 13 copies: fol. 173r (end of the 8 Feb letter, f. 406) and most of fol. 194v (f. 410)",
     "blocker": "not-attempted",
-    "detail": "Gallica btv1b100904592 canvases 176 and 199, reachable through the IIIF at openapi.bnf.fr; transcribe them, then check them against the cipher leaves (btv1b90074656 canvases 457, 461) and f. 404's interlinear decipherment"
+    "detail": "next step: transcribe them from Gallica btv1b100904592 (canvases 177-178 and 200, IIIF at openapi.bnf.fr); the images are online"
+   },
+   {
+    "item": "the cipher blocks: about 18 untranscribed cipher lines on f. 406 (and the verso, canvas 458, if it carries cipher) and about 23 on f. 410; where each block ends is not fixed",
+    "blocker": "not-attempted",
+    "detail": "next step: transcribe the remaining cipher lines sign by sign (btv1b90074656 canvases 457-458, 461), decrypt with Tomokiyo's key and align them with the copies to fix where each block ends; the key is in hand"
    }
-  ]
+  ],
+  "key": "recovered"
  }
 }
