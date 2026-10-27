@@ -3271,7 +3271,7 @@
    "folio_note": "",
    "seen": "catalogue",
    "scored": "cryptoole",
-   "prior_art": "open (checked 14 Oct 2026): no decipherment in HMC or elsewhere in Internet Archive full text (Turner, cipher-lab ormond-arran-1678, 25 Sept 2026)",
+   "prior_art": "open (checked 27 Oct 2026): no decipherment in HMC n.s. iv-v, cryptiana charlesii2.htm or a web search; NLI catalogue records only",
    "score_note": "Scored from the Cryptoole/source page on 14 Oct 2026 (research/cryptoole/)",
    "id": 353,
    "year": 1678,
@@ -3282,15 +3282,15 @@
    "language": "English",
    "region": "England",
    "period": "1651-1700",
-   "shelfmark": "HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93 (manuscript shelfmark unknown)",
+   "shelfmark": "NLI, Ormonde MSS (letters 1665-80, MSS 2335-2362; NLI Sources MS UR 006261), volume and folio not identified; printed HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole XX1678-1 (open). 20 numbers in the quoted passage: 445 and 342 before two runs ('726 91 33 425 93 57 384 54 700 720' and '732 573 526 32 643 214 55 440'); the calendar gives no gloss, although it prints Ormond's interlinear decipherments for neighbouring letters (pp. 105-107). Tomokiyo's rejected trial with the Ormond-Longford key is in an HTML comment on charlesii2.htm. Count corrected 20 Oct 2026 from Tomokiyo’s literal quotation: 2 + 10 + 8 = 20; the two runs alone contain 18. This is a transcription/count correction, not a decipherment.",
+   "status": "Cryptoole XX1678-1 (open). Attempted 27 Oct 2026, not solved (targets/ormond1678/). 20 figures, all distinct: 445 and 342 before two runs ('726 91 33 425 93 58 384 54 700 720' and '732 573 526 32 643 214 55 440'). The sixth figure of run 1 is printed 58 on the p. 93 scan; '57' came from Tomokiyo's quotation. The calendar gives no gloss. The 1678 Ormond-Arran code of Arran's 9 Feb letter (pp. 105-106) is a two-letter code, so it cannot be this one. The Ormond-Longford 1680 key puts the low figures on bare consonants (l, k, m, h), as in Tomokiyo's rejected trial. Too short and repeat-free for a ciphertext-only attack.",
    "why": "Ormond testing his son with a family cipher in the Popish-Plot year; small, but from a well-documented family of reconstructed Ormond keys.",
    "importance": 2,
    "solvability": 1,
    "difficulty": 4,
-   "verify": "Rebuild the Ormond-Longford 1680 cipher (HMC vol. v pp. 454 ff.) and the Southwell-Ormond 1677-78 code and test them; find the manuscript (Ormonde papers, NLI) for an interlinear gloss HMC did not print.",
+   "verify": "Have NLI MSS 2335-2362 searched for the 24 Jan 1677/8 letter, and Bodleian Carte 216-217 for Arran's copy as received; look for an interlinear decipherment or a numeric Ormond-Arran key of 1677-78. Ormond-Anglesey 1663 and Ormond-Longford 2-3 are untested.",
    "links": [
     {
      "label": "source",
@@ -3308,7 +3308,8 @@
    "cryptoole": "XX1678-1",
    "known": "Nothing deciphered. The passage (20 numbers, count corrected 20 Oct 2026) is printed in HMC Ormonde n.s. iv p. 93 without gloss; Tomokiyo's trial with the Ormond-Longford key was rejected.",
    "open": "All 20 numbers: not deciphered; the 1678 Ormond-Arran code is not rebuilt and the manuscript (Ormonde papers, NLI) is unlocated; very short.",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-21",
+   "outcome": "attempted, open"
   },
   {
    "counted": true,

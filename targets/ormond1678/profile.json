@@ -1,0 +1,172 @@
+{
+ "schema_version": 1,
+ "target": "ormond1678",
+ "title": "James Butler, 1st Duke of Ormond, to his son the Earl of Arran, 24 January 1677/8: twenty code figures set as 'a trial whether you are skilful in deciphering' (HMC Ormonde n.s. iv p. 93; Unsolved Catalogue 353)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "National Library of Ireland, Ormonde MSS (letters 1665-80, MSS 2335-2362; NLI Sources MS UR 006261), volume and folio not identified; printed in HMC, Calendar of the MSS of the Marquess of Ormonde, New Series iv (1906), p. 93",
+   "date": "1678-01-24",
+   "year": 1678,
+   "country": "Ireland",
+   "route": "Ormond, Lord Lieutenant (Dublin) -> his son Richard Butler, Earl of Arran (London)",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "HMC prints the figures without a gloss; the manuscript has not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 20,
+    "unit": "code groups",
+    "measured": true,
+    "file": "figures.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "image_quality": "good",
+    "notes": "Figures as printed in HMC n.s. iv p. 93, checked against the Internet Archive scan (calendarofmanusc04greauoft, leaf n122). The sixth figure of the first run is printed 58, not 57 as in Tomokiyo's quotation."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numeric code or nomenclator, figures 32-732, all 20 distinct. Probably the Restoration English type (short alphabet section plus alphabetically ordered syllables and words up to about 800), but the key is unknown.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 20,
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "key_order is a placeholder: the order of the key is not known (alphabetical is likely by analogy with the Ormond-Longford keys)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "none found: HMC n.s. iv-v, cryptiana charlesii2.htm (Tomokiyo's trial rejected), Cryptoole XX1678-1 open",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "images",
+   "cleartext context",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "Internet Archive full text and page images",
+   "cryptiana charlesii2.htm",
+   "NLI Sources catalogue and collection list A017 (built-in browser)",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "IA full text of HMC Ormonde n.s. iv-v fetched and searched; the passage is the only run of cipher figures in vol. iv; no gloss printed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "what": "p. 93 scan checked: 20 figures; the sixth of run 1 is 58, correcting the 57 in Tomokiyo's quotation and the catalogue.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "Ormond-Arran code of 1678 (Arran to Ormond 9 Feb 1677/8, HMC n.s. iv pp. 105-106, with Ormond's interlinear equivalents) examined: a two-letter code (hm, dk, io, yn.xo...), not numeric.",
+   "technique": [
+    "key matching"
+   ],
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "key from source",
+   "what": "Ormond-Longford 1680 key structure (Tomokiyo's reconstruction from HMC n.s. v pp. 454 ff.; letter slots checked on vol. v p. 498) applied: the low figures 32 33 54 55 58 fall on k l h i m and give consonant runs between alphabetical neighbours, no English. Agrees with Tomokiyo's rejected trial.",
+   "technique": [
+    "key matching",
+    "key-structure hypothesis"
+   ],
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Manuscript sought: NLI Sources MS UR 006261 (Ormond to Arran, Jan 7, 24 ... 1678, Ormonde MSS); NLI list A017 puts the 1665-80 letters in MSS 2335-2362. Volume and folio not identified; not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "statistics",
+   "what": "20 figures, 20 distinct, range 32-732: no repeats to anchor a ciphertext-only solver; no solver run, since a same-length control in a code of this size cannot succeed.",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "none",
+  "method": "not solved",
+  "method_basis": "Neither the 1678 Ormond-Arran pair code nor the 1680 Ormond-Longford key fits the figures, and twenty distinct figures are too few for a ciphertext-only break.",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "gaps": [
+   {
+    "item": "all 20 figures",
+    "blocker": "too-short"
+   },
+   {
+    "item": "the key",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "gloss on the sent letter or Ormond's copy (NLI MSS 2335-2362; Bodleian Carte 216-217)",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "identified the passage, the 1678 two-letter Ormond-Arran code and the Ormond-Longford 1680 key reconstruction; his trial of that key was rejected",
+    "source": "cryptiana charlesii2.htm"
+   }
+  ],
+  "notes": "Attempted and closed for now. The figure printed 58 (not 57) is a catalogue correction. Next step: the NLI manuscript."
+ }
+}
