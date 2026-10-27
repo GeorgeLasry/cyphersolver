@@ -14,6 +14,7 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   `run_batch.py` runs a list of term / year-range jobs under one hard request cap (usage in its docstring).
 - Terms: cifra, cifrada, "en cifra", "parte en cifra", "sin descifrar", "no descifrada", descifrado,
   "carta cifrada", contracifra, cifras.
+- `screen.py` ranks the unscreened hits offline for reading (see the evening-batch screening below).
 - Each hit kept as a candidate was checked with `research/archive_sweep_2026-10/known.py` on legajo and folio.
 
 ## Access log
@@ -55,9 +56,22 @@ Estado, and the Archivo Histórico Nacional (AHN) Estado.
   - `hits.jsonl` now holds 570 rows: "sin descifrar" 24, "no descifrada" 488, "parte en cifra" 58 (dedup by id
     within a term). The 463 new "no descifrada" rows and 33 new "parte en cifra" rows are not screened yet; 399 of
     the 488 are AGS Estado (EST,LEG) letters, most of them 16th century.
-- Not run, on purpose: the broad terms ("cifra", "cifrada", "en cifra", "descifrado", "carta cifrada", "contracifra",
-  "cifras"). They return thousands of rows and should be run by decade with `run_batch.py` (e.g.
-  `run_batch.py 120 "cifrada@1500-1599/10"`); the owner allowed batches for the evening of 27 Oct only.
+- 27 Oct 2026, 19:48-20:57 UTC: one capped batch with `run_batch.py` (cap 120, 17 jobs: "en cifra", "carta cifrada",
+  "contracifra", then "cifrada" and "cifras" by period, 1450-1799 in 50-year ranges, `--maxpages 10`). **117
+  requests** (the sum over the batch's jobs in `hits_progress.json`), one at a time, 20 s + 0-10 s jitter, a 10-minute
+  pause after 50 and after 100 requests, **no 429**, exit 0. Results: "en cifra" 299 of 299; "carta cifrada" 513 of
+  515 in the first pass, 515 of 515 with the title-order pass; "contracifra" 3 of 3; "cifrada" 923 unique of 1,282
+  (10 pages, capped); "cifras" 77 of 77. `hits.jsonl` now has 8,387 lines, 1,959 unique PARES ids.
+- **Year-filter bug (not fixed).** Every period job of a term returned the same total and the same rows ("cifrada":
+  1,282 rows for 1450-1499 as for 1750-1799, 923 unique each time; "cifras": 77 every time). So `anio1`/`anio2` are
+  not applied in the 100-row session: they go only on the opening `catalogo/find` GET, and the `formBusqueda` POST that
+  sets 100 rows a page starts the search again without them. The fix is probably to send the year fields in the POST
+  form as well (check the field names in the saved form first). Six of the seven period jobs of each term were
+  therefore repeats: 84 of the 117 requests brought no new rows. The `anio1`/`anio2` fields on those rows in
+  `hits.jsonl` are the requested range, not a filter PARES applied.
+- Stopped by WAINUT after this batch. Nothing else was requested from PARES. Resume with `run_batch.py` (it picks up
+  from `hits_progress.json`) once the year filter is fixed; "cifrada" is still 923 of 1,282, and "cifra" and
+  "descifrado" were not run.
 
 ## Screening of the 27 Oct 2026 hits (74 rows, hit-list titles only)
 
@@ -96,6 +110,59 @@ letters (1927, 1939) and a map fonds also hit. So a hit is a pointer, and every 
   Causa General; items after 1950 (AGA 1956, CDMH 1963); the 1948 AGA file on the Hungarian primate; Falla drafts;
   the 1494 lawsuit; a 1778 cannon plan; "Anexo al Dietario" 1929-36 (DIVERSOS-TITULOS_FAMILIAS,3782,N.3, a diary
   annex: worth one look at the description, nothing in the title says cipher).
+
+## Screening of the 27 Oct 2026 evening batch (hit-list titles only)
+
+- `screen.py` (offline, standard library) dedups `hits.jsonl` by PARES id, drops the ids already screened (the links
+  in `candidates.json` and the 74 rows of the first sweep, read from git at `afe1562b3`) and scores the rest on title
+  keywords, signatura and date: cipher words up; "descifrado/descifrada" without "no"/"sin", transcripciones, key
+  sheets, telegraph material, items after 1900 and fonds-level rows (no signatura) down; AGS Estado / Patronato / GM,
+  AHN or AGI Estado and dates before 1830 up. It writes `screen_ranked.tsv`. Of 1,959 unique ids, 1,888 were
+  unscreened before this pass; 646 of them are fonds- or series-level rows ("FUNCIONES DIPLOMATICAS" and the like, no
+  signatura). About 540 rows score 5-6 only because PARES matched the word in the description: the title does not
+  mention a cipher, so the hit list cannot screen them.
+- Read by hand: the top of the ranking, about 120 rows, plus the cipher-titled rows of the same series. Added to
+  `candidates.json`: **12 rows (216 PARES ids)**, grouped by series, best first:
+  - Unattributed cipher letters in the Genoa legajos: "Carta cifrada." (EST,LEG,1381,143 and 180, 1551), "Carta
+    completamente / totalmente cifrada" (EST,LEG,1410,135 and 77, 1577), "Duplicado / Copia de carta cifrada."
+    (EST,LEG,1418,47, 50, 81, 82, 1585). No sender in the title: the best lead of the batch.
+  - AGS Estado, Génova: Gómez Suárez de Figueroa 1534-57 (20 items); the ambassadors Padilla, Oviedo, Idiáquez,
+    Pedro de Mendoza / Binasco, Vivas and García de Toledo 1565-1603 (59 items, often a "Carta cifrada" and its
+    "Duplicado"); Juan Andrea Doria, Sfondrato, Requesens, Farnese and Olivares 1572-88 (30); Velasco y la Cueva,
+    Eraso, Briceño Ronquillo, Velada, Caracena and Oñate 1638-51 (20).
+  - Charles I, two letters partly in cipher: to Cisneros on the custody of Queen Juana, 1516 (EST,LEG,3,354), and to
+    the president of the Consejo de Castilla, 1529 (EST,LEG,3,353).
+  - AHNOB Osuna: Philip IV to the Rome embassy (Albornoz, Briceño Ronquillo, Oñate, Infantado) 1643-52, 69 items, the
+    same series as the Infantado 1650 row; Ronquillo and Ridolfi to the duque de Arcos 1646 (OSUNA,C.3456).
+  - AHNOB SANTA CRUZ,C.53,D.6-7 (Philip IV to Santa Cruz, Piedmont, 1626), next to the Santa Cruz rows.
+  - AHN ESTADO,3025,Exp.26: copy of an intercepted cipher letter of the French ambassador Ossun, 1774.
+  - AHN DIVERSOS-COLECCIONES,134,N.73: copy of Marmont's cipher letter to Jourdan, 1812 (N.34 of the same fonds is a
+    "Traducción de una carta cifrada" of 1812, possibly its decipherment).
+  - AGI FILIPINAS,920,N.26 (1755) and 915,N.23 (1781, José Basco), next to the Philippine rows.
+
+  Every row says that the hit-list title shows cipher, not whether a decipherment is filed with it; `verify` says
+  what to open first. `known.py` was run on the signaturas and names: no hits except the ones noted in `status`.
+- Dropped, already here: Ferdinand the Catholic → Jerónimo de Vich, AHN ESTADO,8715 N.45, N.57, N.60 (read in
+  `targets/vich1511/`) and N.73 (`targets/vich1515/`).
+- Dropped, deciphered at the time (crib material): the Comunidades transcriptions of cipher letters of the Cardinal
+  of Tortosa and the Admiral, 1520-22 (EST,LEG,7,234-237; EST,LEG,8,113 and 178; PTR,LEG,1,96; PTR,LEG,2,1). They are
+  cribs for the one cipher original among the hits, EST,LEG,8,150 (Tortosa, the Admiral and the Constable, 1521,
+  PARES 13002542; not added, very likely read with them). Also Cobos to the Empress 1529 in cipher (EST,LEG,2,2,341)
+  with its transcription (342); Charles II to Fuensalida 1688 "con sus traducciones" (FRIAS,C.61,D.137-162); the
+  Fernán Núñez letter with its transcription (C.418,D.52); the Denia minutes of 1521 (PTR,LEG,3,39,16 and 18, clear
+  drafts).
+- Key leads (no ciphertext), useful for dating and for the Genoa rows: the "cifra general" for Italy and its
+  changes. Francés de Álava on amending it, 1571 (EST,LEG,1401,224); Juan Vázquez de Zamora in charge of it, 1576
+  (1408,2); change of the cipher, 1577 (1410,196); the new cifra general sent to all ministers, 1581 (1414,214); a new
+  cipher for the ministers in Italy, 1587 (1419,53, 78, 79, 80); cipher sent to Pedro de Padilla in Milan, 1595
+  (1427,175); two new ciphers 1604 and a new one 1607 (1432,148; 1434,26); Diego de Laura on changing the cifra
+  general because the French may know it, 1649 (3605,70), and his "cifra particular" (3605,81); ciphers for Antonio
+  de Mendoza in Genoa 1671-72 (3613,104; 3636,150, 151, 344, 346) and for Turin-Genoa 1693 (3633,240). And actual
+  key books: "Libros de cifra y contracifra de las Legaciones de España en Prusia y Rusia", 1788 (AHN ESTADO,L.711,
+  PARES 1678500).
+- Not reviewed: the rest of `screen_ranked.tsv` below the reviewed top (among them AGI Estado despatches of 1816-25
+  and the word-in-description rows); a later session can start from it. Rerunning `screen.py` drops the ids now in
+  `candidates.json`.
 
 ## Prior art for AGS ciphers (to check candidates against)
 
