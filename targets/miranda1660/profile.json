@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "target": "miranda1660",
+ "title": "Copy-book of letters to Francisco de Melo (marquês de Sande) in England from the conde de Miranda, Cardinal Orsini and Gaspar Dias de Mesquita, 1660-61, with cipher documents (ANTT, Condes da Ponte, mç. 19, n.º 1)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "ANTT, Condes da Ponte, mç. 19, n.º 1 (Códice 12) (PT/TT/CPN/0019/00001)",
+   "date": "1660-1661",
+   "year": 1660,
+   "country": "Portugal",
+   "route": "conde de Miranda (The Hague); Cardinal Orsini, Gaspar Dias de Mesquita (Rome) -> Francisco de Melo e Torres (London)",
+   "language": "Portuguese, Spanish, Italian, French, Latin",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "DigitArq notes no decipherment; the copy-book has not been seen. Keys for Miranda's letters are bound in MMCG 3L ff. 3 and 30 (not imaged).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised (DigitArq hasImages false, rdigital 0 files, 26 Oct 2026). Nothing transcribed. cleartext_in_document is taken from the catalogue's 'Contém documentos cifrados' in a 113-letter copy-book."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the copy-book has not been seen. Two keys for Miranda's letters of 1659-60 are bound in MMCG 3L (ff. 3, 30).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "DigitArq JSON API (curl)",
+   "research/torre_do_tombo crawl files",
+   "research/archive_sweep_2026-10/known.py",
+   "web search"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "DigitArq details and rdigital APIs for PT/TT/CPN/0019/00001: hasImages false, 0 scan files. Not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Same check for the key volume PT/TT/MMCG/3L and its key leaves 3L/000003 and 3L/000020: not digitised.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Mapped MMCG 3L from the crawl: Miranda letters 14 Nov 1659 to 22 Oct 1660, 15 with cipher (f. 125 wholly), overlapping the copy-book's 1660 letters. Siblings CPN/0017/00001 (Orsini cipher), CPN/000210, CPN/002285 and a DigitArq search for other Miranda Hague items: nothing imaged.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "known.py (repo, DECODE, Cryptoole) and web searches on the correspondents, the Hague embassy, the shelfmark and Cryptiana. No edition or decipherment. Found BL Add MS 38038 (Lisbon to Sande 1662-66, partly deciphered, not digitised). Prestage 1928 not checked.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole copy-book (letters 1-113)",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "MMCG 3L keys (ff. 3, 30) and 3L cipher letters",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the item and its keys could not be reached. Scans must be ordered from ANTT."
+ }
+}
