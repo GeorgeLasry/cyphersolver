@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "target": "stenbock1713",
+  "title": "Magnus Stenbock (prisoner in Copenhagen) and Peter Malmberg, cipher correspondence 1713-1717 (catalogue 455)",
+  "documents": [
+    {
+      "id": "E4698-key",
+      "shelfmark": "Riksarkivet, Peter Malmbergs (Palmcreutz) arkiv, SE/RA/720725/~/E 4698",
+      "date": "1713-1717",
+      "year": 1714,
+      "country": "Sweden",
+      "route": "Copenhagen <-> Stockholm",
+      "language": "unknown",
+      "pages": "unknown",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Key sheet, not digitised; not seen."
+      },
+      "length": {
+        "tokens": "unknown",
+        "distinct": "unknown",
+        "unit": "unknown",
+        "measured": false
+      },
+      "transcription": {
+        "by": "unknown",
+        "source": "Not digitised (no IIIF manifest on data.riksarkivet.se)",
+        "image_quality": "unknown",
+        "notes": "Catalogue note only."
+      }
+    },
+    {
+      "id": "Ericsberg-005-52",
+      "shelfmark": "Riksarkivet, Ericsbergsarkivet, Familjen Stenbocks papper, Magnus Stenbock d.ä.:s arkiv, SE/RA/720266/02/02/005/52 (and 005/50)",
+      "date": "1713-1717",
+      "year": 1714,
+      "country": "Sweden",
+      "route": "Copenhagen <-> Stockholm",
+      "language": "unknown",
+      "pages": "unknown",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Letters located through the cross-reference sheet in Ericsberg autograph vol. 205 (image 68); volumes not digitised."
+      },
+      "length": {
+        "tokens": "unknown",
+        "distinct": "unknown",
+        "unit": "unknown",
+        "measured": false
+      },
+      "transcription": {
+        "by": "unknown",
+        "source": "Not digitised",
+        "image_quality": "unknown",
+        "notes": "Not seen."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "unknown"
+    ],
+    "summary": "Not seen. Secondary sources (enigma.dk, Erlund's 1719 memorial) describe a simple symbol substitution broken by the Danish post office in 1714.",
+    "symbol_kind": "unknown",
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": "unknown"
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": "unknown"
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Broken at the time by C. C. Erlund (Danish post office, 1714); extracts printed in Danish pamphlets; decipherments not located",
+      "found": "during attempt",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "none",
+    "human_role": "Pasted the catalogue 455 task.",
+    "tools": [
+      "Riksarkivet open-data API and IIIF",
+      "Rigsarkivet Arkivalieronline image API",
+      "web search"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-26",
+    "last_date": "2026-10-26"
+  },
+  "solution": [
+    {
+      "date": "2026-10-26",
+      "kind": "access",
+      "what": "Riksarkivet API: key volume E 4698 has no IIIF manifest (not digitised).",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "access",
+      "what": "Scanned all 477 images of the digitised Ericsberg autograph vol. 205 (Stenbock M-W): no cipher letters; image 68 refers the Malmberg captivity correspondence to Stenbock papers vol. 52 (SE/RA/720266/02/02/005/52), not digitised.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "literature search",
+      "what": "Found that the Danish postal spy Erlund broke the Stenbock-Malmberg cipher in 1714 (simple substitution, crib = the name Aron Goldziher); extracts printed by the Danish court.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "access",
+      "what": "Rigsarkivet DK, Kommissionen vedr. Magnus Stenbock, Ekstrakt A (207 images): contents show the Tönning 1713 field archive, not the captivity letters.",
+      "result": "ruled out"
+    }
+  ],
+  "outcome": {
+    "method": "not applicable",
+    "method_basis": "The key and the letters could not be reached: neither is digitised.",
+    "contribution": [
+      "catalogue correction"
+    ],
+    "class": "not read",
+    "fraction_read": 0,
+    "verification": [],
+    "notes": "Letters located (Ericsberg Stenbock papers vol. 52); the cipher was broken at the time by the Danish post office; needs an archive image order."
+  }
+}
