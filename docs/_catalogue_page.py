@@ -317,6 +317,12 @@ def facet(name, label, values, keys):
     return f'<div class="facet" role="group" aria-label="{label}"><span class="flabel">{label}</span><span class="opts">{opts}</span></div>'
 
 
+def dropdown(label, body, name=''):
+    """A toolbar button that opens a small panel; the button shows what is chosen in it (filled in by the script)."""
+    return (f'<details class="dd"{f' data-dd="{name}"' if name else ''}><summary><span class="dl">{label}</span><span class="dv"></span></summary>'
+            f'<div class="pop">{body}</div></details>')
+
+
 def by_count(keys, name, last=()):
     """The values of one facet, commonest first, with any in last kept at the end."""
     n = {}
@@ -384,7 +390,11 @@ if(hm&&G[hm[1]]){var hn=document.getElementById('hashnote');hn.innerHTML='Catalo
 var tb=document.querySelector('#cat tbody'),rows={};
 Array.prototype.forEach.call(tb.querySelectorAll('tr.e'),function(r){rows[r.dataset.id]=r;});
 var state={q:'',sort:'prio',dir:-1,w:{imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease},f:{}};
-var chips=Array.prototype.slice.call(document.querySelectorAll('.chip[data-facet]')),clr=document.getElementById('reset'),qi=document.getElementById('q');
+var chips=Array.prototype.slice.call(document.querySelectorAll('.chip[data-facet]')),clr=document.getElementById('reset'),qi=document.getElementById('q'),dds=Array.prototype.slice.call(document.querySelectorAll('.cfilters details.dd'));
+dds.forEach(function(d){d.addEventListener('toggle',function(){if(!d.open)return;dds.forEach(function(o){if(o!==d)o.open=false;});
+ var p=d.querySelector('.pop');p.style.left='';p.style.right='';if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){p.style.left='auto';p.style.right='0';}});});
+document.addEventListener('click',function(ev){if(!ev.target.closest('.cfilters details.dd'))dds.forEach(function(d){d.open=false;});});
+document.addEventListener('keydown',function(ev){if(ev.key==='Escape')dds.forEach(function(d){if(d.open){d.open=false;d.querySelector('summary').focus();}});});
 function prio(e){var w=state.w,t=w.imp+w.sol+w.eas||1;var v=(w.imp*e.importance+w.sol*e.solvability+w.eas*(6-e.difficulty))/t;return Math.round((v-1)/4*100)/10;}
 // e.f holds the clean filter keys built in Python; a facet matches when the entry has any of its chosen values
 function vals(e,k){var v=e.f[k];return v==null?[]:[].concat(v);}
@@ -395,6 +405,9 @@ function match(e,skip){if(!texthit(e))return false;for(var k in state.f)if(k!==s
 function counts(){var c={};chips.forEach(function(b){c[b.dataset.facet+'|'+b.dataset.val]=0;});var ks={};chips.forEach(function(b){ks[b.dataset.facet]=1;});
  Object.keys(ks).forEach(function(k){E.forEach(function(e){if(match(e,k))vals(e,k).forEach(function(v){var x=k+'|'+v;if(x in c)c[x]++;});});});
  chips.forEach(function(b){var on=(state.f[b.dataset.facet]||[]).indexOf(b.dataset.val)>=0,n=c[b.dataset.facet+'|'+b.dataset.val];b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('.n').textContent=n;b.classList.toggle('z',!n&&!on);});}
+// each dropdown button names what is chosen in it: 'Language: French, Polish'
+function labels(){dds.forEach(function(d){var ks=(d.dataset.dd||'').split(' '),on=[];ks.forEach(function(k){(state.f[k]||[]).forEach(function(v){var b=d.querySelector('.chip[data-facet="'+k+'"][data-val="'+v+'"]');if(b)on.push(b.firstChild.textContent);});});
+ d.querySelector('.dv').textContent=on.length?': '+(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
 function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.q)p.push('q='+encodeURIComponent(state.q));
  try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname);}catch(x){}}
 function load(){var h=location.hash.slice(1);if(h.indexOf('=')<0)return;h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else state.f[k]=v.split(',').filter(Boolean);});}
@@ -405,7 +418,7 @@ function render(keep){var L=E.filter(function(e){return match(e);});L.sort(funct
  var nf=0;for(var k in state.f)nf+=state.f[k].length;
  document.getElementById('count').textContent=(L.length===E.length?'All '+E.length:L.length+' of '+E.length)+' ciphers';
  clr.hidden=!(nf||state.q);clr.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search';
- counts();if(!keep)save();
+ counts();labels();if(!keep)save();
  document.getElementById('v_imp').textContent=state.w.imp.toFixed(2);document.getElementById('v_sol').textContent=state.w.sol.toFixed(2);document.getElementById('v_eas').textContent=state.w.eas.toFixed(2);
  Array.prototype.forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(h){h.setAttribute('aria-sort',h.dataset.sort===state.sort?(state.dir<0?'descending':'ascending'):'none');});}
 Array.prototype.forEach.call(tb.querySelectorAll('tr.e'),function(r){r.addEventListener('click',function(ev){if(ev.target.closest('a'))return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;});});
@@ -459,28 +472,22 @@ def build_html():
 <div id="hashnote" hidden></div>
 <div class="callout archnote" data-term-ok><strong>Many of these cannot be read from a desk.</strong> {n_arch} of the open entries are marked <span class="pill arch">needs archive scans</span>: the ciphertext, or the key material that would unlock it, is not online, so nothing can be deciphered until the archive digitises it or someone photographs it in the reading room. They are listed because a request to the archive, or a visit, is the first step.</div>
 <div class="cfilters jsonly" id="list" role="search">
-  <div class="qbar">
-    <input type="search" id="q" placeholder="Search: name, place, shelfmark, year…" aria-label="Search the catalogue">
-    <span class="count" id="count" aria-live="polite"></span>
-    <button type="button" class="chip clear" id="reset" hidden>clear filters</button>
-  </div>
-  {facet('lang', 'Language', langs, keys)}
-  {facet('century', 'Century', CENTURIES, keys)}
-  {facet('region', 'Region', by_count(keys, 'region', last=('Other',)), keys)}
-  {facet('cls', 'Class', CLASSES, keys)}
-  {facet('status', 'Status', STATUSES, keys)}
-  {facet('access', 'Access', ACCESS, keys)}
-  <details class="more"><summary>More filters and priority weights</summary>
-  {facet('source', 'Found in', SOURCES, keys)}
-  {facet('seen', 'Checked on', [('image', 'the image'), ('catalogue', 'catalogue description only')], keys)}
-  {facet('counted', 'Ranking', [('counted', 'counted'), ('noted', 'noted only')], keys)}
-  <div class="facet weights"><span class="flabel">Priority</span><span class="opts">
+  <input type="search" id="q" placeholder="Search: name, place, shelfmark, year…" aria-label="Search the catalogue">
+  {dropdown('Language', facet('lang', 'Language', langs, keys), 'lang')}
+  {dropdown('Century', facet('century', 'Century', CENTURIES, keys), 'century')}
+  {dropdown('Region', facet('region', 'Region', by_count(keys, 'region', last=('Other',)), keys), 'region')}
+  {dropdown('Class', facet('cls', 'Class', CLASSES, keys), 'cls')}
+  {dropdown('Status', facet('status', 'Status', STATUSES, keys) + facet('access', 'Access', ACCESS, keys), 'status access')}
+  {dropdown('More', facet('source', 'Found in', SOURCES, keys)
+            + facet('seen', 'Checked on', [('image', 'the image'), ('catalogue', 'catalogue description only')], keys)
+            + facet('counted', 'Ranking', [('counted', 'counted'), ('noted', 'noted only')], keys)
+            + f'''<div class="facet weights"><span class="flabel">Priority</span><span class="opts">
     <label>importance <input type="range" id="w_imp" min="0" max="100" value="{int(W['importance']*100)}"><span class="wv" id="v_imp"></span></label>
     <label>solvability <input type="range" id="w_sol" min="0" max="100" value="{int(W['solvability']*100)}"><span class="wv" id="v_sol"></span></label>
     <label>ease <input type="range" id="w_eas" min="0" max="100" value="{int(W['ease']*100)}"><span class="wv" id="v_eas"></span></label>
-    <button type="button" class="chip" id="wreset">default weights</button></span>
-  </div>
-  </details>
+    <button type="button" class="chip" id="wreset">default weights</button></span></div>''', 'source seen counted')}
+  <span class="count" id="count" aria-live="polite"></span>
+  <button type="button" class="chip clear" id="reset" hidden>clear filters</button>
 </div>
 
 <div class="tw"><table class="cat" id="cat">
@@ -505,7 +512,7 @@ def build_html():
 <p>Scores are judgements from catalogue descriptions and the literature, not from the leaves: {n_img} of {n_all} entries have been viewed on the image, and each page carries the check that would confirm it is open. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json" rel="noopener">catalogue.json</a> · text: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md" rel="noopener">CATALOGUE.md</a> · how to send a result: <a href="contribute.html">contribute</a>.</p>
 
 <h2>How the scores were set</h2>
-<p><b>Importance</b> asks what a full reading would add: 5 for a first-hand report of a major event by a principal witness (du Bellay in London 1529, Lanssac at the Polish election), 2 for routine business. <b>Solvability</b> asks whether the material online is enough: 5 when deciphered siblings of the same hand and year sit in the same volume, 1 for one short letter in an unknown language. <b>Difficulty</b> is the technical work at the keyboard: 1 for aligning a known sibling, 5 for a statistics-only attack on a large homophonic nomenclator. The default priority weights importance {W['importance']}, solvability {W['solvability']} and ease {W['ease']} (ease is 6 minus difficulty), rescaled to 0–10; change them under &ldquo;More filters and priority weights&rdquo;. Every score is a judgement made before viewing the leaf, so treat the order as a work plan, not a finding.</p>
+<p><b>Importance</b> asks what a full reading would add: 5 for a first-hand report of a major event by a principal witness (du Bellay in London 1529, Lanssac at the Polish election), 2 for routine business. <b>Solvability</b> asks whether the material online is enough: 5 when deciphered siblings of the same hand and year sit in the same volume, 1 for one short letter in an unknown language. <b>Difficulty</b> is the technical work at the keyboard: 1 for aligning a known sibling, 5 for a statistics-only attack on a large homophonic nomenclator. The default priority weights importance {W['importance']}, solvability {W['solvability']} and ease {W['ease']} (ease is 6 minus difficulty), rescaled to 0–10; change them under &ldquo;More&rdquo; above the table. Every score is a judgement made before viewing the leaf, so treat the order as a work plan, not a finding.</p>
 <p><b>Checked:</b> catalogue descriptions and item numbering; presence or absence of a decipherment item in each volume; shelfmarks from the IIIF manifests. For the DECODE entries: the record metadata and notes, key records from the same archive series, overlap with this repository's targets and with Tomokiyo's list. Entries tagged <i>rule-scored</i> were scored by a script from DECODE's metadata and not yet reviewed by hand. Verify each entry on the image and in the literature before attacking it.</p>
 </main>
 <!-- site:footer -->
