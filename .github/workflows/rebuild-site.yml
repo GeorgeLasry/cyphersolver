@@ -1,7 +1,9 @@
 # Rebuild the site (docs/) whenever main changes or a pull request opens, closes or merges, so the generated pages
 # (catalogue "Where things stand", its open-PR card, write-ups, contributors, search index, README glance) never
 # lag behind the repository. The build is stdlib-only Python; gh lists the open PRs for the catalogue card.
-# Pushes made with GITHUB_TOKEN do not trigger workflows, so the commit below does not loop.
+# main is protected by a ruleset that requires pull requests; the Actions bot cannot bypass it on a personal repo, so
+# the commit below is pushed with the write deploy key in REBUILD_DEPLOY_KEY (deploy keys bypass the rule). Deploy-key
+# pushes do trigger workflows, so the job skips the push event of its own "Site: rebuild" commit.
 name: Rebuild site
 
 on:
@@ -14,7 +16,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read                # the push goes through the deploy key, not GITHUB_TOKEN
   pull-requests: read
 
 concurrency:
@@ -23,12 +25,14 @@ concurrency:
 
 jobs:
   rebuild:
+    if: "github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Site: rebuild')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 1
+          ssh-key: ${{ secrets.REBUILD_DEPLOY_KEY }}
 
       - uses: actions/setup-python@v5
         with:
