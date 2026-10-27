@@ -122,6 +122,16 @@
    "kind": "verification",
    "what": "Entry split from affry1757 under the one-key rule (Lasry, 14 Oct 2026): R1071 is in code C, not the code of the other ten letters; cipher_C.txt measured (761 tokens, 357 distinct). Image P1 compared with the parse for the snip: 240 for 24, a merged token.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "keytest_R1071.py: machine-readable keys of the period (d'Affry A/B, Van Swieten-Cobenzl table, Hanoverian army code 1743, Michell 1751, Croiset 1765 R1038) applied to R1071 and scored with fr-modern against 20 value-shuffles; control d'Affry key on R1054 -1.89 vs shuffled max -2.33. On R1071 none fits (d'Affry -2.56 vs -2.34; Hanover -2.79 vs -2.52; Croiset -3.84 vs -3.33); Swieten and Michell cover 13% / 9% and give scattered syllables.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -143,7 +153,7 @@
    {
     "item": "R1071, all 761 code groups",
     "blocker": "no-key-material",
-    "detail": "a different code (code C) from the rest of inv. 192; no decipherment among the images; NA 1.01.50 inv. 221/223 not digitised; no key record on DECODE"
+    "detail": "a different code (code C) from the rest of inv. 192; no decipherment among the images; NA 1.01.50 inv. 221/223 not digitised; no key record on DECODE; no machine-readable period key fits (keytest_R1071.py, 27 Oct 2026)"
    }
   ],
   "notes": "Split on 14 Oct 2026 from affry1757, which keeps the ten letters in d'Affry's 1757 code (key rebuilt from Lyonet's decipherments, read in part)."

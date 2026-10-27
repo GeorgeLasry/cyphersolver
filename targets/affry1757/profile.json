@@ -358,23 +358,41 @@
   {
    "date": "2026-10-23",
    "kind": "control",
-   "technique": ["plaintext matching"],
+   "technique": [
+    "plaintext matching"
+   ],
    "what": "v3 verification: R1072, R1074, R2067 keyed decodes scored 0.37/0.54/0.59 explicit-hole. Readings rebuilt from the Fagel register clear copies (NA 1.10.29 inv. 5186 13R-14L, 5187 14R-15R; WAINUT transcription checked against the scans), whose words the keyed groups match at 0.83/0.79/0.77 against 0.14-0.15 for shuffled keys: read/R1072_reading.md, R1074_reading.md, R2067_reading.md score 1.0 explicit-hole (plain 0.87/0.97/0.93). All three keep read.",
    "result": "worked"
   },
   {
    "date": "2026-10-23",
    "kind": "verification",
-   "technique": ["plaintext matching"],
+   "technique": [
+    "plaintext matching"
+   ],
    "result": "worked",
    "what": "Verification 5 (plain-bar rows): R1067, R1068, R1070, R1073, R1076 keyed decodes scored plain 0.41-0.56 (R1068 0.2) on their bodies. Their Fagel register clear copies (WAINUT's transcription; 5186 16R, 17L, 149R, 150L, 255R, 256L checked against the NA IIIF scans here, the others already checked) written out as read/<R>_reading.md in the clerk's spelling, two register slips in R1076 corrected from the figures; plain 0.821/0.75/0.923/1.0/0.974, explicit 1.0. R1069 (Lyonet's clear decipherment, plain 0.5) fails only on 'Mr' and names: keeps read."
   },
   {
    "date": "2026-10-23",
    "kind": "verification",
-   "technique": ["plaintext matching"],
+   "technique": [
+    "plaintext matching"
+   ],
    "result": "worked",
    "what": "r2q: R1054 and R1064 (decoded, not read since the translation wave, 0.54/0.57 explicit) read from their Fagel register clear copies, NA 1.10.29 inv. 5186 248R-249L and 62R-63R. The five scans fetched through the NA IIIF server and WAINUT's Gemini transcription checked line by line (two misreadings on 63R/63L corrected). Every key/register disagreement in wainut/align/R1054.tsv and R1064.tsv looked at, R1054's on the cipher image I5511: two DECODE parse errors fixed (8^6 31 = 831; 878^6 = one group), and the figures followed where they give another word (R1054: M. le Maréchal, sa communication, que par le; R1064: Senechal de Quintin, point x2, étoit, la taire, remarquerez, les deux Capitaines). Readings read/R1054_reading.md (plain 1.0, explicit 1.0) and read/R1064_reading.md (plain 0.764, explicit 1.0), with English files and reread logs; both set to read, grade A."
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "R1054, R1068, R1070, R1073, R1076 checked line by line on the DECODE images (R1068 here, the others by two image sub-agents): DECODE had dropped two whole 11-group lines of R1076 (first lines of P:4 and P:8) and two groups of R1070, split three superscript-corrected groups in R1054, run groups together in R1073; R1070 and R1076 have their pages reversed on DECODE. Counts 369/60/400/315/424.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "Re-measured with measure_sense.py on the image transcriptions: R1073 0.939 -> 0.962, R1076 0.873 -> 0.887, R1070 0.965 -> 0.955, R1054 0.968 -> 0.967; all groups 0.941 -> 0.942 (8,787/9,327).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -418,9 +436,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.941,
+  "fraction_read": 0.942,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after both passes of Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,761/9,306 groups: Lyonet-deciphered letters (3,486) counted read, the ten letters with no decipherment on DECODE 5,275/5,820 = 0.906. First pass only: 8,492 (0.913). 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts. Revised 23 Oct 2026 (translation wave): R1054 and R1064 moved to decoded, not read (0.54, 0.57); 0.941 reduced by their share of the decryption words (2,198 of 11,625). Restored 23 Oct 2026 (r2q): R1054 and R1064 read from their Fagel register clear copies (scans checked, figures followed where they differ), so the measured 0.941 (8,761/9,306 groups) stands again.",
+  "fraction_read_source": "measure_sense.py (rerun 21 Oct 2026 after both passes of Fagel register values were folded into key_X.tsv): a group counts when it has a value (key_X.json, key_M.json, H/M rows of read/*_new.tsv) and its 9-group window scores as French (lang fr-modern, no spaces, per-char > -3.0); names in sense_names.tsv; transcr/R*.txt image re-transcriptions replace the DECODE parse. 8,761/9,306 groups: Lyonet-deciphered letters (3,486) counted read, the ten letters with no decipherment on DECODE 5,275/5,820 = 0.906. First pass only: 8,492 (0.913). 14 Oct, before the registers: 8,282 (0.890), 4,796/5,820 = 0.824. The same test passes 0.876 of the Lyonet letters' known-sense aligned text, so it under-counts. Revised 23 Oct 2026 (translation wave): R1054 and R1064 moved to decoded, not read (0.54, 0.57); 0.941 reduced by their share of the decryption words (2,198 of 11,625). Restored 23 Oct 2026 (r2q): R1054 and R1064 read from their Fagel register clear copies (scans checked, figures followed where they differ), so the measured 0.941 (8,761/9,306 groups) stands again. Rerun 27 Oct 2026 after R1054, R1068, R1070, R1073, R1076 were checked on the images (transcr/): 8,787/9,327 = 0.942.",
   "key": "partial",
   "codes_open": {
    "tokens_open": 1024
@@ -448,6 +466,11 @@
     "item": "register pages not read here (5186 249L, 256L)",
     "blocker": "not-attempted",
     "detail": "WAINUT's Gemini transcription unchecked"
+   },
+   {
+    "item": "groups cut by the binding or under ink (R1073 p.1 line ends, R1076 102|1024 and 663|668, R1054 ll.2/3/21, one group on R1070 I5590 l.4)",
+    "blocker": "illegible",
+    "detail": "checked at full resolution 27 Oct 2026; no better image online"
    }
   ],
   "credits": [

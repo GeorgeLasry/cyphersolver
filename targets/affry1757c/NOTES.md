@@ -54,7 +54,7 @@ d'Affry's letters to the French government; none for this date was matched to R1
 ## Escalation
 - [x] siblings: all inv. 192 records (R1052-R1076, R2067) opened; eight carry Lyonet's decipherments, none for R1071.
 - [x] clear-pages: the three R1071 images hold only figures; no clear copy.
-- [x] known-keys: d'Affry's 1757 key (key_M, 651 groups) applied: nonsense; DECODE harvest searched for other d'Affry/Stainville/Choiseul keys (14 Oct 2026): none.
+- [x] known-keys: d'Affry's 1757 key (key_M, 651 groups) applied: nonsense; DECODE harvest searched for other d'Affry/Stainville/Choiseul keys (14 Oct 2026): none. 27 Oct 2026, `keytest_R1071.py`: every machine-readable key of the period applied to R1071 and scored (fr-modern, 9-group windows) against 20 value-shuffles of the same key, with the d'Affry key on R1054 as positive control (-1.89 vs shuffled max -2.33). On R1071: d'Affry A/B -2.56 (shuffled max -2.34), Hanoverian army code 1743 -2.79 (-2.52), Croiset 1765 codebook -3.84 (-3.33): none fits; the Van Swieten-Cobenzl table and the Michell 1751 key cover only 13% / 9% of the groups and decode to scattered syllables (too sparse to judge, no run of sense).
 - [x] print: De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked in the affry1757 sessions; no text of this letter.
 - [n/a] key-rebuild: a code of unknown structure (357 distinct groups in 761 tokens, values up to about 1,200) with no crib; a ciphertext-only rebuild is not feasible at this length.
 - [n/a] retry: nothing to rerun without key material.
