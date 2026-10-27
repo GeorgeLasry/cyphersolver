@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
 <title>The comte d’Affry’s intercepted letters from The Hague, 1757–58 — read it further</title>
-<meta name="description" content="A cipher read in part (94.1%), with its open gaps and instructions for an AI agent to take it further.">
+<meta name="description" content="A cipher read in part (94.2%), with its open gaps and instructions for an AI agent to take it further.">
 <link rel="stylesheet" href="style.css?v=20261026b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -40,15 +40,15 @@
 </div>
 
 <section class="hero">
-  <p class="kicker"><a href="further.html">Read further</a> · read 94.1% · key from adjacent plaintext &middot; partial</p>
+  <p class="kicker"><a href="further.html">Read further</a> · read 94.2% · key from adjacent plaintext &middot; partial</p>
   <h1>The comte d&rsquo;Affry&rsquo;s intercepted letters from The Hague, 1757&ndash;58</h1>
   <p class="sub">Ten code letters of the French ambassador to Rouill&eacute; and Bernis in the Dutch royal archives, listed on DECODE as not decrypted. The Dutch codebreaker Lyonet&rsquo;s decipherments of eight sibling letters are among the images; aligning them with their cipher recovered 651 groups of the code, which decrypt nine of the letters (89.0% of the groups in this code measured as sense). A letter to Vienna filed with them is in another code, with its own page.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1757&ndash;58</dd>
-    <dt>Read now</dt><dd>94.1% of the cipher tokens give sense</dd>
+    <dt>Read now</dt><dd>94.2% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="affry1757.html">affry1757.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/affry1757" rel="noopener">targets/affry1757</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap">no key known ×3</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap">no key known ×3</span><span class="gap">hard to read on the scan</span></dd>
   </dl>
 </section>
 
@@ -67,13 +67,14 @@ THE READING
   Write-up:   https://dbourdeau.github.io/cyphersolver/affry1757.html (read it first: how the text was read, the key, the reading)
   Date:       1757–58
   Outcome:    key from adjacent plaintext · partial
-  Read now:   94.1% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Read now:   94.2% of the deciphered cipher tokens give sense (pieces below may be untouched)
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/affry1757 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
   1. [no-key-material: needs a new source] 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material; the register piece is noise or the occurrences disagree
   2. [no-key-material: needs a new source] groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895 devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: no-key-material; one value per group is all key_X can hold, so the measure under-reads these
   3. [no-key-material: needs a new source] R1054 and R1064 groups that the Fagel register passes over without a word (R1054: 101, 760; R1064: 103, 178 in a false start, 146, 29 108) and the R1064 passport-date groups 978 634 114 - blocker: no-key-material; the register pages 5186 248R-249L and 62R-63R were checked on the scans 23 Oct 2026 (r2q) and both letters now read from them, these groups have no value in any letter
+  4. [illegible: needs a new source] groups cut by the binding or under ink (R1073 p.1 line ends, R1076 102|1024 and 663|668, R1054 ll.2/3/21, one group under the blot on R1070 I5590 l.4) - blocker: illegible; checked at full resolution 27 Oct 2026, no better image online
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] siblings: all R1052-R1076 and R2067 opened; eight Lyonet decipherments found among the images
@@ -83,6 +84,7 @@ ALREADY TRIED (from NOTES.md, "## Escalation")
   [x] retry: 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -&gt; 0.823 of all groups)
   [x] clear-pages: (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -&gt; 0.913)
   [x] the: register's words for the valueless groups (wainut/open_groups.tsv): 86 adopted after a scan check, 45 left open (second pass, 21 Oct 2026; 0.913 -&gt; 0.941)
+  [x] retry: 27 Oct 2026, R1054, R1068, R1070, R1073, R1076 checked on the images (two dropped lines of R1076 and two groups of R1070 recovered; reversed page order of R1070/R1076 found), all letters re-measured (0.941 -&gt; 0.942)
   [x] clear-pages: (register, R1054/R1064): 23 Oct 2026 (r2q), 5186 248R, 249L, 62R, 63L, 63R checked on the scans; both letters read from the register, figures followed where they differ
 
 STEPS
@@ -123,8 +125,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap">no key known</span> 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material; the register piece is noise or the occurrences disagree</li><li><span class="gap">no key known</span> groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895 devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: no-key-material; one value per group is all key_X can hold, so the measure under-reads these</li><li><span class="gap">no key known</span> R1054 and R1064 groups that the Fagel register passes over without a word (R1054: 101, 760; R1064: 103, 178 in a false start, 146, 29 108) and the R1064 passport-date groups 978 634 114 - blocker: no-key-material; the register pages 5186 248R-249L and 62R-63R were checked on the scans 23 Oct 2026 (r2q) and both letters now read from them, these groups have no value in any letter</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all R1052-R1076 and R2067 opened; eight Lyonet decipherments found among the images</li><li>&#9745; <b>clear-pages</b> the "clear" pages are Lyonet's decipherments, transcribed into plain/</li><li>&#9745; <b>print</b> De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked</li><li>&#9745; <b>key-rebuild</b> key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values</li><li>&#9745; <b>retry</b> 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -&gt; 0.823 of all groups)</li><li>&#9745; <b>clear-pages</b> (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -&gt; 0.913)</li><li>&#9745; <b>the</b> register's words for the valueless groups (wainut/open_groups.tsv): 86 adopted after a scan check, 45 left open (second pass, 21 Oct 2026; 0.913 -&gt; 0.941)</li><li>&#9745; <b>clear-pages</b> (register, R1054/R1064): 23 Oct 2026 (r2q), 5186 248R, 249L, 62R, 63L, 63R checked on the scans; both letters read from the register, figures followed where they differ</li></ul>
+<ul class="gaplist"><li><span class="gap">no key known</span> 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material; the register piece is noise or the occurrences disagree</li><li><span class="gap">no key known</span> groups that take two values in practice (727 moi/mois, 911 ns/co, 556 contre/contraire, 842 étoit/été, 1186, 895 devoir/devoit, 1193 utile/utilité, 16 roi de Prusse/prussien, 605 in R1074) - blocker: no-key-material; one value per group is all key_X can hold, so the measure under-reads these</li><li><span class="gap">no key known</span> R1054 and R1064 groups that the Fagel register passes over without a word (R1054: 101, 760; R1064: 103, 178 in a false start, 146, 29 108) and the R1064 passport-date groups 978 634 114 - blocker: no-key-material; the register pages 5186 248R-249L and 62R-63R were checked on the scans 23 Oct 2026 (r2q) and both letters now read from them, these groups have no value in any letter</li><li><span class="gap">hard to read on the scan</span> groups cut by the binding or under ink (R1073 p.1 line ends, R1076 102|1024 and 663|668, R1054 ll.2/3/21, one group under the blot on R1070 I5590 l.4) - blocker: illegible; checked at full resolution 27 Oct 2026, no better image online</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all R1052-R1076 and R2067 opened; eight Lyonet decipherments found among the images</li><li>&#9745; <b>clear-pages</b> the "clear" pages are Lyonet's decipherments, transcribed into plain/</li><li>&#9745; <b>print</b> De Leeuw 2000, Bussemaker 1906, Coquelle 1904 checked</li><li>&#9745; <b>key-rebuild</b> key_M.json voted from the alignments, inferred values in read/R*_new.tsv; key_X.tsv (5 Oct) pooled values</li><li>&#9745; <b>retry</b> 5 Oct 2026, R1072/R1074/R1067/R1064 re-transcribed from the images, open groups pooled across all letters, all letters re-measured with measure_sense.py (0.778 -&gt; 0.823 of all groups)</li><li>&#9745; <b>clear-pages</b> (again): 21 Oct 2026, the Fagel registers NA 1.10.29 inv. 5186/5187 hold clear copies of all ten letters (WAINUT, PR #65); 58 values checked on 16 register scans and folded into key_X.tsv (0.890 -&gt; 0.913)</li><li>&#9745; <b>the</b> register's words for the valueless groups (wainut/open_groups.tsv): 86 adopted after a scan check, 45 left open (second pass, 21 Oct 2026; 0.913 -&gt; 0.941)</li><li>&#9745; <b>retry</b> 27 Oct 2026, R1054, R1068, R1070, R1073, R1076 checked on the images (two dropped lines of R1076 and two groups of R1070 recovered; reversed page order of R1070/R1076 found), all letters re-measured (0.941 -&gt; 0.942)</li><li>&#9745; <b>clear-pages</b> (register, R1054/R1064): 23 Oct 2026 (r2q), 5186 248R, 249L, 62R, 63L, 63R checked on the scans; both letters read from the register, figures followed where they differ</li></ul>
 
 <h2>Send a result</h2>
 <p>One closed gap counts: a code group valued, a passage re-read, a key or clear copy found elsewhere. It is credited to you on the write-up.</p>
