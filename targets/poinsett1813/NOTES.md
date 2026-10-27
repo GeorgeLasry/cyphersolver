@@ -79,10 +79,10 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
   mdp.39015034759822 but behind a bot check, to be searched by hand for 'cipher'
 - [x] key-rebuild: context pass made 27 Oct; only 'Lima' (249 413, twice in P4) cross-checks; no new values, the
   unknown groups occur once or twice in contexts that do not fix them
-- [ ] siblings (2): Lowry, La Guaira 1810-12 (M84 roll 1, frames ~0019-0079), had a cypher for Shaler and Gelston and
-  sent the Department one ciphered letter (Manning vol. 2, Lowry to Graham 30 Nov 1816); if it is the 1810 agents'
-  code with a decode it adds key; sampled at thumbnail scale only
-- [ ] retry: after the context pass
+- [x] siblings (2): Lowry, La Guaira 1810-12, had a cypher for Shaler and Gelston and sent the Department one
+  ciphered letter (Manning vol. 2, Lowry to Graham 30 Nov 1816); M84 roll 1 frames 0014-0090 viewed: all clear, no
+  code, so that letter is not in the file; Shaler's papers (M37 roll 1) have no code frames (NARA triage)
+- [n/a] retry: no new key values came from the context pass or the sibling searches, so nothing to re-run
 
 ## 5. Next steps
 

@@ -86,7 +86,8 @@
    "NARA catalogue API",
    "python",
    "web search",
-   "lang en-modern model"
+   "lang en-modern model",
+   "in-app browser"
   ],
   "models": [
    "claude-opus-5-5"
@@ -158,6 +159,30 @@
    "kind": "reading",
    "what": "decode.py applied the sibling key to the 1813 groups: 158 of 437 have a value; fragments, no sentence reads yet.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Context pass over the 1813 decode: only 'Lima' (249 413, twice in the Lima paragraph) cross-checks sibling syllables; no new values, the other unknown groups occur once or twice in contexts that do not fix them.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Weber 1979 not online; the HSP calendar of the Poinsett papers (1941, HathiTrust full view) is behind a bot check and was not searched.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Lowry, La Guaira 1810-12, held a cypher for the 1810 agents (Manning); M84 roll 1 frames 0014-0090 viewed: no code; M37 roll 1 (Shaler) has no code frames.",
+   "result": "failed"
   }
  ],
  "outcome": {
