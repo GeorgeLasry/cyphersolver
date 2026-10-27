@@ -1,5 +1,7 @@
 {
  "keys": [
+{"id": "k-hessen1652", "label": "Hesse-Darmstadt cipher alphabets of Georg II and Cardinal Friedrich (HStAD D 4 Nr. 141/2)", "kind": "archive key", "by": "Hesse-Darmstadt chancery", "year": 1652, "note": "Archive key file with alphabets of 1652 and 1658."},
+{"id": "k-erbach1666", "label": "Erbach's Lord's Prayer verse key (line, letter), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1666, "note": "Eight-line rhymed German Lord's Prayer, 'O Vatter aller frommen / geheiligt werd dein nahm / ...'; rebuilt from cribs in the contemporary Latin outline of the undated letter (27 Oct 2026). Line 8 known only as 'p?x'."},
 {"id": "k-jefferson-code11", "label": "Jefferson's Code No. 11 (Barclay-Lamb code, 1785-1791), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1785, "note": "348 values from Jefferson's interlinear decodings of Barclay's and Carmichael's letters, his clear-text sheets (1787, 1788, 1791) and the State Department decodings of Short's 1789 despatches (27 Oct 2026). The Jefferson Papers editors' partial reconstruction was never printed."},
 {"id": "k-murray1797", "label": "Murray's legation code (The Hague, 1797-1801), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1797, "note": "Values taken from the clerks' interlinear decodes of Murray's 1797-98 despatches (NARA M42 reel 4) and Wagner's decode of the 18 May 1801 postscript; six checked on the frames (26 Oct 2026)."},
 {"id": "k-mountflorence1801", "label": "Mountflorence's one-part code (Paris, 1801), rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1801, "note": "25 values from the 18 March 1801 letter: 15 letters from the spelled names Luneville, Parma, Tuscany, Dupont, 10 words placed by the alphabetical order (26 Oct 2026)."},
@@ -2341,6 +2343,7 @@
 {"id": "k-wotton1585-rebuilt", "label": "Wotton 1585, rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1585, "note": "Key recovered here from the contemporary decipherment or clear copy beside the cipher (targets/wotton1585/NOTES.md)."}
  ],
  "links": [
+{"key": "k-erbach1666", "target": "erbach1653", "how": "rebuilt from", "note": "verse rebuilt from about eighty crib cells; all 610 pairs of the three 1666 letters read with it unchanged, 19 writer's slips"},
 {"key": "k-jefferson-code11", "target": "jefferson1787", "how": "rebuilt from", "note": "key.tsv; checks the editors' bracketed readings of 4 July 1787 and later"},
 {"key": "k-murray1797", "target": "murray1801", "how": "rebuilt from", "note": "all six groups of the postscript decoded in the sibling despatches; 406 = arm three times"},
 {"key": "k-mountflorence1801", "target": "mountflorence1801", "how": "rebuilt from", "note": "pattern words and the alphabetical order of the code"},
@@ -3727,6 +3730,7 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-erbach1666"},
 {"source": "s-cyphersolver", "key": "k-jefferson-code11"},
 {"source": "s-cyphersolver", "key": "k-murray1797"},
 {"source": "s-cyphersolver", "key": "k-mountflorence1801"},
@@ -4396,6 +4400,7 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-hessen1652", "target": "erbach1653", "note": "viewed; a different system (cipher alphabets, not a verse key)"},
 {"key": "k-armstrong972", "target": "mountflorence1801", "note": "different code: 'the' is 972 there, 688 here"},
 {"key": "k-silva-garcilaso", "target": "garcilaso1498", "note": "alphabet lacks the postscript's commonest signs (Λ, π, ⧺o, T-with-o, β-forms); 9 = m would be far too frequent"},
 {"key": "k-rah915-f16", "target": "garcilaso1498", "note": "name capitals coincide (B, M, R, T, H) but the alphabet has none of Λ, ∠, T-with-o, zh"},
