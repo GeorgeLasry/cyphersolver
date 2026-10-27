@@ -1,0 +1,21 @@
+# Worklog: biermann1675 (catalogue 465)
+
+- 2026-10-26 literature search: web search for Biermann 1675 cipher / Danish diplomatic ciphers / TKUA "Chiffer"; nothing printed or online. Not on DECODE (catalogue check).
+- 2026-10-26 access: copybook (255 images, ids from 48573952) and TKUA "Chiffer" 1670-1709 (309 images, ids from 48691476) downloaded from api.rigsarkivet.dk with fetch.sh.
+- 2026-10-26 transcription: image 109 (pp. 104-105) cipher, 263 tokens; signs plus numbers 10-673, separated by commas.
+- 2026-10-26 key search: key volume images 1-52 = a large later 4-digit codebook (not this system); image 11, image 77 = later keys (numbers past 1300; 1700s names). Not this key.
+- 2026-10-26 key found: image 55 (Pomponne 111, Terlon 112) has syllables sa 623, ve 671, que 589, co 343 ...; first test gives "sa Majesté veut que vos ne laissiez pas de continuer". Key matched.
+- 2026-10-26 key transcription: image 55 sign rows, numbers 1-24, names, syllables and words into key.tsv.
+- 2026-10-26 reading: 23 March 1675 letter to Meyercron (heading on image 108) deciphered with decode.py: 262/263 tokens (99.6%). Values from use: 154 Svenske Ambr., 468 ju, 592 qu. Open: one open-square sign.
+- 2026-10-26 test, failed: 2 January 1675 letter to Meyercron (image 4) does not read with the image-55 key (320, 262, 136).
+- 2026-10-26 test, failed: letter to George Reetz in Spain (image 108 left) uses another numbering (376, 598, 680, 702); different key.
+- 2026-10-26 key search: key volume image 114 is a 1670s key naming Beuningen, Fagel, Amerongen, Meyercron 57; candidate Hague key, not tested.
+- 2026-10-26 survey started: two agents listing every letter, recipient, date and cipher numbers (survey_A.tsv, survey_B.tsv).
+- 2026-10-26 survey A (images 1-128) done: ~114 letters 2 Jan-10 Apr 1675, 163 page sides with cipher (~2,270 lines, estimated). Number families: Höegk/Gioë-England/Schröder/Meyercron (late Jan on) up to ~673; Lilienkron to ~702; Gioë-Moscow to ~764; Reetz (Spain) to ~702; Lindenow (Sweden) 700-986; Klingenberg 470-525 with letter signs; Lincker 600-1056 (from 10 Apr); Meyercron 2 Jan to ~320.
+- 2026-10-26 test, worked: Höegk 2 Jan (image 5, p. 2) reads with the image-55 key: "assez indulgent pour prendre la chose sur le mesme pied". The key covers the Höegk family from 2 January.
+- 2026-10-26 survey B (images 129-255) done: letters to 24 June 1675; 193 page sides with cipher (~3,300 lines, estimated). Höeg 21 June uses a separate table, sent "nebst der französ. chiffre".
+- 2026-10-26 key hunt, failed for all open families (Lilienkron, Gioë Moscow, Reetz, Lindenow, Klingenberg, Lincker, Meyercron 2 Jan): 1670s keys 114-116, 145-147, 265, 294/295 (Spain 1676-77), 305-308 tested on 10-20 token runs, no sense. Details in keyhunt.md.
+- 2026-10-26 key hunt, partial: image 94/95 (German key 1675) has the Klingenberg sign set as nulls; 9/22 numbers of Klingenberg 6 Feb fall on filled entries that fit, 13 on blank slots. Lead, not proven.
+- 2026-10-26 transcription started: agent transcribing and deciphering the Höegk letters with the image-55 key.
+- 2026-10-26 reading: Høeg letters 2 Jan-9 Feb (11 letters, 3,216 cipher tokens) transcribed and deciphered with the image-55 key; the sheet resolves 3,127 (97.2%), the agent's readings give sense to 98.2-100% per letter with context values. New values from use in new_values.tsv (homophones 26 n, 31 s, 33 u; 279 Suédois; 67 l'Empereur; 582 Prince; 598 que; 702 xe; open square = l; 3/4 slips 313/330/314).
+- 2026-10-26 fix: decode.py now reads verso line labels (p12v.03).
