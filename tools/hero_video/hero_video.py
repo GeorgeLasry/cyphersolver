@@ -15,15 +15,18 @@ Storyboard (seconds; SCENES below is the source of truth, and audio.py follows i
   11.25-21.25 an AI, a human and a laptop; archive -> transcription -> key -> write-up
   21.25-28.75 one real line deciphered: Weinmeister 1533, "in the morning, when he is sober"
   28.75-41.25 the ledger: every dated entry on a timeline, then the headline counts and the paper
-  41.25-55    five ways to contribute, three ways to send, credited by name
+  41.25-55    how to help: pick from the catalogue or Read Further, paste the page's prompt or URL into
+              Claude Code, which reports back; credited by name
   55-60       pick a cipher, break it, write it up; the address
 """
 import argparse
+import html
 import math
 import random
 import re
 import subprocess
 import sys
+import unicodedata
 from pathlib import Path
 
 import numpy as np
@@ -277,13 +280,48 @@ def ledger():
         entries=r'<b>([\d,]+)</b> entries',
         keys=r'<b>([\d,]+)</b> keys recovered',
         silence=r'<b>([\d,]+)</b> years of silence',
-        gaps=r'([\d,]+) write-ups have <a href="contributors.html#further">open gaps',
-        checks=r'([\d,]+) are waiting for an independent check',
     ).items()}
     L['dots'] = sorted((int(y), c) for c, y in re.findall(r'<a class="pt (\w+)"[^>]*?data-year="(\d+)"', s))
     years = [y for y, _ in L['dots']]
     L['first'], L['last'] = min(years), max(years)
     return L
+
+
+def lists():
+    """The top rows and the sizes of the two lists a contributor picks from: the Unsolved Catalogue and Read Further."""
+    out = {}
+    for key, page, pat, cell in (('cat', 'catalogue.html', r'<title>The Unsolved Catalogue — ([\d,]+) ciphers', 2),
+                                 ('fur', 'further.html', r'<title>Read Further — ([\d,]+) readings', 2)):
+        s = (DOCS / page).read_text(encoding='utf8')
+        m = re.search(pat, s)
+        if not m:
+            sys.exit(f'docs/{page}: pattern not found: {pat}')
+        out['open' if key == 'cat' else 'partial'] = floor(m.group(1))
+        rows = []
+        for attrs, body in re.findall(r'<tr class="e"([^>]*)>(.*?)</tr>', s, re.S)[:4]:
+            cells = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', c))).strip()
+                     for c in re.findall(r'<td[^>]*>(.*?)</td>', body, re.S)]
+            rows.append((re.search(r'data-href="([^"]+)"', attrs).group(1), cells[0], caps(cells[cell].lstrip('●◇○◆ '))))
+        if len(rows) < 4:
+            sys.exit(f'docs/{page}: fewer than four rows')
+        out[key + '_rows'] = rows
+    return out
+
+
+def caps(s):
+    """A title in the pixel font's capitals: accents dropped, unknown characters made spaces."""
+    s = unicodedata.normalize('NFKD', s.replace('’', "'").replace('‘', "'").replace('—', '-'))
+    s = ''.join(ch for ch in s if not unicodedata.combining(ch)).upper()
+    return re.sub(r'\s+', ' ', ''.join(ch if ch == ' ' or ch in FONT else ' ' for ch in s)).strip()
+
+
+def fit(s, width):
+    """s cut to fit width pixels, with '..' where it was cut."""
+    if tw(s) <= width:
+        return s
+    while s and tw(s + '..') > width:
+        s = s[:-1]
+    return s.rstrip(' ,;:-') + '..'
 
 
 LG = None
@@ -984,55 +1022,144 @@ def scene_ledger(t):
 
 # ---------------------------------------------------------------- contributing
 
-def ways_scene(t):
+# when things happen in the contribute scene (seconds into each part); audio.py times its clicks from these
+PICK = dict(click=2.2, page=2.6, copy=4.3)
+AGENT = dict(paste=.25, first=1.0, step=.55)
+AGENT_LINES = ['READING THE TASK PAGE', 'OPENING THE IMAGES', 'TRANSCRIBING THE CIPHER', 'TESTING KEYS',
+               'WRITING THE REPORT']
+URL = 'DBOURDEAU.GITHUB.IO/CYPHERSOLVER/'
+
+
+def browser(cv, x, y, w, h, bar='', dark=False):
+    """A pixel browser or terminal window: shadow, frame, three dots and an address bar (or a title)."""
+    cv.rect(x + 3, y + 3, w, h, C['void'])
+    cv.rect(x, y, w, h, hx('080b10') if dark else C['night2'])
+    cv.box(x, y, w, h, C['night4'])
+    cv.rect(x + 1, y + 1, w - 2, 11, C['night3'])
+    for k, c in enumerate((C['red2'], C['amber'], C['green'])):
+        cv.rect(x + 5 + k * 5, y + 5, 3, 3, c)
+    if dark:
+        text(cv, bar, x + w // 2, y + 3, C['muted'], 1, 'c')
+    elif bar:
+        cv.rect(x + 22, y + 2, w - 26, 9, C['night'])
+        room = w - 32
+        while tw(bar) > room:                     # keep the end of an address: the page is what matters
+            bar = '..' + bar.lstrip('.')[1:]
+        text(cv, bar, x + 26, y + 3, C['ink2'])
+
+
+def pointer(cv, x, y, pressed=False):
+    blit(cv, 'pointer', x + pressed, y + pressed)
+
+
+def glide(t, t0, t1, a, b):
+    p = ease((t - t0) / (t1 - t0))
+    return round(a[0] + (b[0] - a[0]) * p), round(a[1] + (b[1] - a[1]) * p)
+
+
+def pick_scene(t):
+    """The catalogue and the Read Further list side by side; a row is picked, its page opens, its prompt is copied."""
     cv = Cv(night_bg())
-    text(cv, 'ANYONE CAN CONTRIBUTE', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
-    text(cv, 'FIVE WAYS IN', W // 2, 26, C['muted'], 1, 'c')
-    rows = [('key', 'A SOLUTION', 'TO ANY CIPHER IN THE CATALOGUE'),
-            ('scroll', 'A FULLER READING', f"{plus(LG['gaps'])} WRITE-UPS HAVE OPEN GAPS"),
-            ('envq', 'A NEW UNSOLVED CIPHER', 'SHELFMARK, DATE AND IMAGES'),
-            ('envkey', 'A NEW CIPHER WITH ITS SOLUTION', 'UNPUBLISHED RESULTS WELCOME'),
-            ('check', 'A VERIFICATION', f"{plus(LG['checks'])} READINGS AWAIT A CHECK")]
-    for i, (ic, title, sub) in enumerate(rows):
-        ti = 1.5 + i * .7
-        if t < ti:
-            continue
-        q = ease_out((t - ti) / .35)
-        x, y = 22 + round((1 - q) * 60), 40 + i * 24
+    text(cv, 'HELPING IS SIMPLE', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
+    href, _, name = LG['cat_rows'][0]
+    num = re.search(r'(\d+)', href).group(1)
+    row0 = (8 + 70, 32 + 40 + 4)
+    if t < PICK['page'] + .3:
         lay = Cv(cv.a())
-        lay.rect(x, y, 276, 21, C['night2'])
-        lay.rect(x, y, 2, 21, C['gold'])
-        im = sprite(SPRITES[ic])
-        lay.im.paste(im, (x + 8 + (21 - im.width) // 2, y + (21 - im.height) // 2), im)
-        text(lay, title, x + 36, y + 3, C['gold2'])
-        text(lay, sub, x + 36, y + 12, C['ink2'])
-        cv.set(dissolve(cv.a(), lay.a(), q * 1.1))
-    if t > 4.8:
-        text_lines(cv, ['ANY TOOLS, AI INCLUDED: SAY WHAT YOU USED.'], W // 2, 166, t, 4.8, C['muted'], 1,
-                   cps=44, cursor=False)
+        panels = [(8, 'THE CATALOGUE', f"{plus(LG['open'])} NOBODY HAS READ", 'CATALOGUE.HTML', LG['cat_rows'], C['gold']),
+                  (164, 'READ FURTHER', f"{plus(LG['partial'])} LEFT PARTIAL", 'FURTHER.HTML', LG['fur_rows'], C['green'])]
+        for i, (x, title, sub, url, rows, sc) in enumerate(panels):
+            ti = .2 + i * .35
+            if t < ti:
+                continue
+            q = ease_out((t - ti) / .35)
+            y = 32 + round((1 - q) * 8)
+            browser(lay, x, y, 148, 112, url)
+            text(lay, title, x + 6, y + 16, C['gold2'])
+            text(lay, sub, x + 6, y + 26, C['muted'])
+            for k, (_, score, label) in enumerate(rows):
+                if t < ti + .3 + k * .12:
+                    break
+                ry = y + 39 + k * 17
+                picked = i == 0 and k == 0 and t >= PICK['click']
+                lay.rect(x + 3, ry - 3, 142, 14, (C['goldhi'] if t < PICK['click'] + .08 else C['night4']) if picked else C['night'])
+                sx = text(lay, score, x + 6, ry, sc) + 5
+                text(lay, fit(label, x + 142 - sx), sx, ry, C['ink'] if picked else C['ink2'])
+        cv.set(lay.a())
+    if t >= PICK['page']:
+        lay = Cv(night_bg())
+        text(lay, 'HELPING IS SIMPLE', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
+        x, y, w, h = 20, 30, 280, 118
+        browser(lay, x, y, w, h, URL + f'SOLVE/{num}.HTML')
+        text(lay, fit(f'NO. {num}: {name}', w - 16), x + 8, y + 17, C['gold2'])
+        text(lay, 'HAND THIS PAGE TO YOUR AI AGENT', x + 8, y + 30, C['ink'])
+        lay.rect(x + 8, y + 42, w - 16, 68, C['night'])
+        lay.box(x + 8, y + 42, w - 16, 68, C['golddk'])
+        text(lay, fit(f'TASK: HELP READ UNSOLVED CATALOGUE NO. {num}', w - 70), x + 13, y + 47, C['ink2'])
+        r = random.Random(int(num))
+        for k in range(6):
+            xx, yy = x + 13, y + 60 + k * 8
+            end = x + w - 14 - (r.randint(20, 120) if k == 5 else r.randint(0, 30))
+            while xx < end:
+                ww = r.randint(4, 18)
+                lay.rect(xx, yy, min(ww, end - xx), 2, C['night4'])
+                xx += ww + 3
+        copied = t >= PICK['copy']
+        bx, by = x + w - 50, y + 45
+        lay.rect(bx, by, 38, 11, C['green'] if copied else C['gold'])
+        text(lay, 'COPIED' if copied else 'COPY', bx + 19, by + 2, C['void'], 1, 'c')
+        cv.set(dissolve(cv.a(), lay.a(), (t - PICK['page']) / .3))
+        bxy = (bx + 22, by + 6)
+    # the cursor: up to the first row of the catalogue, click; then to the copy button, click
+    if t >= 1.2:
+        if t < PICK['page'] + .3:
+            px, py = glide(t, 1.2, 2.0, (160, 176), row0)
+        else:
+            px, py = glide(t, 3.3, 4.1, row0, bxy)
+        pressed = abs(t - PICK['click']) < .1 or abs(t - PICK['copy']) < .1
+        pointer(cv, px, py, pressed)
+    text_lines(cv, ['PICK ONE · OPEN ITS PAGE · COPY ITS PROMPT OR URL'], W // 2, 157, t, .6, C['ink2'], 1,
+               cps=50, cursor=False)
     return cv.a()
 
 
-def send_scene(t):
+def agent_scene(t):
+    """The page's address pasted into Claude Code, which works through the task and reports back."""
     cv = Cv(night_bg())
-    text(cv, 'SEND IT YOUR WAY', W // 2, 12, C['gold2'], 2, 'c', shadow=C['void'])
-    items = [('form', 'ISSUE FORM', 'ON GITHUB'), ('merge', 'PULL REQUEST', 'ON GITHUB'),
-             ('envelope', 'EMAIL', 'NO ACCOUNT NEEDED')]
-    for i, (ic, lab, sub) in enumerate(items):
-        ti = .15 + i * .9
+    text(cv, 'PASTE INTO CLAUDE CODE', W // 2, 8, C['gold2'], 2, 'c', shadow=C['void'])
+    num = re.search(r'(\d+)', LG['cat_rows'][0][0]).group(1)
+    x, y, w, h = 24, 30, 272, 118
+    browser(cv, x, y, w, h, 'CLAUDE CODE', dark=True)
+    if t >= AGENT['paste']:
+        lines = [URL, f'SOLVE/{num}.HTML']
+        if t < AGENT['paste'] + .35:
+            cv.rect(x + 15, y + 16, tw(lines[0]) + 4, 20, C['bluedk'])
+        text(cv, '>', x + 8, y + 18, C['gold'])
+        for k, s in enumerate(lines):
+            text(cv, s, x + 17, y + 18 + 10 * k, C['ink'])
+    for i, s in enumerate(AGENT_LINES):
+        ti = AGENT['first'] + i * AGENT['step']
         if t < ti:
-            continue
-        cx = 60 + i * 100
-        q = ease_out((t - ti) / .3)
-        bounce = round(math.sin(clamp((t - ti) / .45) * math.pi) * -6)
-        im = sprite(SPRITES[ic], 3)
-        lay = Cv(cv.a())
-        lay.im.paste(im, (cx - im.width // 2, 98 - im.height + bounce), im)
-        text(lay, lab, cx, 108, C['gold2'], 1, 'c')
-        text(lay, sub, cx, 119, C['muted'], 1, 'c')
-        cv.set(dissolve(cv.a(), lay.a(), q * 1.1))
-    if t > 2.6:
-        text_lines(cv, ['GITHUB.COM/DBOURDEAU/CYPHERSOLVER'], W // 2, 146, t, 2.6, C['ink2'], 1, cps=44)
+            break
+        ly = y + 44 + i * 11
+        done = t >= ti + AGENT['step']
+        if done:
+            cv.rect(x + 9, ly + 2, 3, 3, C['green'])
+        else:
+            for k in range(3):
+                cv.px(x + 8 + 2 * k, ly + 3, C['gold'] if int(t * 12) % 3 == k else C['night4'])
+        text(cv, s, x + 17, ly, C['ink2'] if done else C['ink'])
+        if s == 'TESTING KEYS':
+            q = clamp((t - ti) / AGENT['step'])
+            bx = x + 17 + tw(s) + 8
+            cv.box(bx, ly + 1, 70, 5, C['night4'])
+            cv.rect(bx + 1, ly + 2, int(68 * q), 3, C['green'] if q >= 1 else C['gold'])
+    tf = AGENT['first'] + len(AGENT_LINES) * AGENT['step']
+    if t >= tf:
+        ly = y + 44 + len(AGENT_LINES) * 11 + 2
+        blit(cv, 'check', x + 6, ly - 1)
+        text(cv, 'SENT BACK: AN ISSUE OR A PULL REQUEST', x + 24, ly, C['green'])
+    text_lines(cv, ['OR ANY AI AGENT THAT CAN OPEN WEB PAGES'], W // 2, 157, t, 1.2, C['muted'], 1, cps=50, cursor=False)
     return cv.a()
 
 
@@ -1083,8 +1210,11 @@ def credit_scene(t):
     return cv.a()
 
 
+CONTRIB_AGENT, CONTRIB_CREDIT = 5.2, 10.6     # seconds into the contribute scene
+
+
 def scene_contribute(t):
-    parts = [(0, ways_scene), (7.0, send_scene), (10.6, credit_scene)]
+    parts = [(0, pick_scene), (CONTRIB_AGENT, agent_scene), (CONTRIB_CREDIT, credit_scene)]
     i = max(k for k in range(len(parts)) if t >= parts[k][0])
     t0, fn = parts[i]
     a = fn(t - t0)
@@ -1160,7 +1290,7 @@ def main():
     ap.add_argument('--crf', type=int, default=23)
     ap.add_argument('--audio', help='soundtrack to mux in (audio.py writes it)')
     args = ap.parse_args()
-    LG = ledger()
+    LG = {**ledger(), **lists()}
     if args.still:
         Image.fromarray(up(render(float(args.still[0])), 2)).save(args.still[1])
         return

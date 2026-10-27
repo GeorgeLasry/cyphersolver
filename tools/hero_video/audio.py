@@ -20,7 +20,7 @@ from scipy.io import wavfile
 from scipy.signal import butter, fftconvolve, sosfilt
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from hero_video import DUR, METHOD_STEPS, SCENES  # noqa: E402
+from hero_video import AGENT, AGENT_LINES, CONTRIB_AGENT, CONTRIB_CREDIT, DUR, METHOD_STEPS, PICK, SCENES  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 SR = 44100
@@ -222,11 +222,15 @@ def sfx():
     tr.bell(S[3] + 4.62, 88, .04)
     swish(tr, S[4] + .4, 3.4, .025, 400, 5000)                                   # the timeline filling
     tr.bell(S[4] + 5 + 1.3, 84, .06)                                             # the counts land
-    for i, m in enumerate([72, 74, 76, 79, 81]):                                 # five ways in
-        tr.note(S[5] + 1.5 + i * .7, .1, m, 'tri', .07, d=.08, s=.2, r=.08)
-    for i, m in enumerate([67, 72, 76]):                                         # issue, pull request, email
-        tr.note(S[5] + 7 + .15 + i * .9, .09, m, 'pulse', .04, d=.06, s=.3, r=.06, duty=.5)
-    tr.bell(S[5] + 10.6 + 1.75, 88, .06)                                         # the star
+    for k in ('click', 'copy'):                                                  # a row picked, the prompt copied
+        tr.note(S[5] + PICK[k], .03, 84, 'pulse', .05, d=.02, s=.3, r=.02, duty=.5)
+        tr.note(S[5] + PICK[k] + .05, .03, 91, 'pulse', .03, d=.02, s=.3, r=.02, duty=.5)
+    ag = S[5] + CONTRIB_AGENT
+    tr.note(ag + AGENT['paste'], .08, 55, 'tri', .1, d=.06, s=.2, r=.06)          # pasted into Claude Code
+    for i in range(len(AGENT_LINES)):                                            # its steps
+        tr.note(ag + AGENT['first'] + i * AGENT['step'], .03, 79 + 2 * i, 'pulse', .025, d=.02, s=.3, r=.02)
+    tr.bell(ag + AGENT['first'] + len(AGENT_LINES) * AGENT['step'], 88, .06)    # sent back
+    tr.bell(S[5] + CONTRIB_CREDIT + 1.75, 88, .06)                               # the star
     tr.bell(S[6] + 2.4, 84, .06)                                                 # the address
     return tr
 
