@@ -32,7 +32,7 @@ The ciphertext is in `messages.txt`. The facsimiles are on CryptoCellar:
 **Check against the facsimiles.** We read the three forms ourselves. The groups of Nr. 88, 94 and 95 match the
 transcription in order.
 
-- Nr. 88 has 38 cells against the declared 40, three of them blank. So the count of 38 is right.
+- Nr. 88 has 38 cells against the declared 40. Three of the 38 hold only a dot, not a letter. So the count of 38 is right.
 - In Nr. 94, group 23 is blank on the form. That gives the five dashes.
 - Nr. 90, 91, 92, 96 and 97 have no facsimile, so for them only the transcription was used.
 - The Nr. 95 link on the TS page is broken. It points to `spruch/spruch/04071941-095-in.pdf`; the file is at
@@ -87,7 +87,7 @@ This was a test of our tools on a set that we now know is solvable. It was not a
 
 | run | data | result | best score per 4-gram |
 |---|---|---|---|
-| control: net ib9, 30 Jun 1941, Nr. 62-70 (about 400 letters, broken by George Lasry in 2022) | 16 restarts × 30M | broken in 1 of 16 restarts (a second solver: 2 of 16); German such as "duenaburg x duenaburg", "brand geloesqt x munitionsausgabe kann weitergehen" | -4.72 |
+| control: net ib9, 30 Jun 1941, Nr. 62-70 (about 400 letters, broken by George Lasry in 2022) | 16 restarts × 30M | broken in 1 of 16 restarts (a second solver: 2 of 16); German such as "duenaburg x duenaburg", "brand geloesqt x munitionsausgabe kann weitergehen" | -4.71 (second solver -4.72) |
 | control: 14 Jul 1941 (194 letters, the paper's shortest break) | several runs | not broken | - |
 | pz6, all 8 messages | 24 × 30M (second solver: 12 × 30M) | no German | -6.09 (second solver -6.15) |
 | pz6: the 6 messages marked pz6; pairs swapped; a language model with X word separators | 8-24 × 15-30M each | no German | -6.01 to -6.16 |
@@ -140,7 +140,9 @@ Row 643 covers all 30 TS messages of 1941 that were then listed as unbroken, not
   - AAXYN Nr. 31 (5 Sep, 72 letters)
   - AOXST Nr. 91 (23 Sep, 152 letters)
 
-  Each is a single short message with no companion in the same key.
+  Five of them are single short messages with no other TS message of the same net and day. EHNPZ Nr. 123 is
+  different: Nr. 129 and 130 of 8 July are on the same net (4fc) and are marked broken. Why Nr. 123 is still open
+  (another key, or garbles) was not checked.
 - **Not in row 643:** a seventh unbroken TS message, BCUCC Nr. 20 NF (5 Sep 1941, 64 letters). It comes from the
   2026 Bundesarchiv finds.
 
