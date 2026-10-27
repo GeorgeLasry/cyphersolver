@@ -1,0 +1,59 @@
+{
+ "schema_version": 1,
+ "target": "smallwood1777",
+ "title": "William Smallwood to George Washington, James Mechlans Tavern, 19 September 1777 (ALS privately owned; Sprague transcript, LoC GW Papers; PGW Rev. Ser. 11:272)",
+ "documents": [
+  {
+   "id": "PGW-RW11-272",
+   "shelfmark": "ALS owned (1994) by Joseph Rubinfine; Sprague transcript, DLC:GW; Founders Online Washington/03-11-02-0272",
+   "date": "1777-09-19",
+   "year": 1777,
+   "country": "United States",
+   "route": "Brig. Gen. William Smallwood, James Mechlans Tavern, Chester County, Pa. -> George Washington, main army",
+   "language": "English",
+   "pages": "unknown",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {"location": ["none"], "source": "The erased words are not recorded anywhere found; the rest of the letter is in clear.", "partial": false},
+   "length": {"tokens": 5, "unit": "symbols", "measured": false},
+   "transcription": {"by": "published", "source": "Papers of George Washington, Rev. War Ser. 11:272, via Founders Online 03-11-02-0272", "corrections": 0, "image_quality": "no images", "notes": "Five marks (* § §§ † §), four distinct, counted by hand from the edition; the ALS and the Sprague transcript were not seen."}
+  }
+ ],
+ "system": {
+  "types": ["not a cipher"],
+  "summary": "Words erased from a clear letter and replaced by printer's reference marks (*, §, §§, †); the same mark stands for unrelated fillers, so the marks carry no values.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 4,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": false},
+  "key_order": "not applicable"
+ },
+ "conditions": {
+  "prior_solution": {"exists": "no", "where": "Washington Papers editors: no key identified; nothing else found.", "found": "not found", "used": false},
+  "inputs": ["transcription", "cleartext context"],
+  "attack": "none",
+  "human_role": "Posed the target from the unsolved catalogue (item 486) with the project's standard contributor brief; nothing else.",
+  "tools": ["Founders Online", "built-in browser", "web search"],
+  "models": ["claude-opus-5-5"],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {"date": "2026-10-26", "kind": "access", "what": "Read the letter and the editors' source note on Founders Online 03-11-02-0272.", "result": "worked"},
+  {"date": "2026-10-26", "kind": "transcription", "what": "Copied the letter with its five marks (* § §§ † §) and the slot each fills to transcription.txt.", "result": "worked"},
+  {"date": "2026-10-26", "kind": "hypothesis", "technique": ["repeat/pattern analysis", "contextual inference"], "what": "Tested whether the marks are a substitution or code: § stands for a number (united force) and for a route or carrier (baggage sent by §), so one sign has two unrelated fillers.", "result": "ruled out"},
+  {"date": "2026-10-26", "kind": "literature search", "what": "Read Washington to Smallwood 17 Sept 1777 (junction with the main army, the likely sense of §§) and Smallwood to Washington 15 Sept 1777 (fear of an intercepted express); one web search for other printings or the Rubinfine catalogue.", "result": "partial"},
+  {"date": "2026-10-26", "kind": "access", "what": "Tried the LoC George Washington Papers search for the Sprague transcript image; blocked by a bot check, not bypassed.", "result": "failed"}
+ ],
+ "outcome": {
+  "method": "not applicable",
+  "method_basis": "The letter is clear English with five words erased and replaced by printer's reference marks; § fills both a number and a route, so the marks are blanks, not cipher values.",
+  "contribution": ["transcription", "catalogue correction"],
+  "class": "not a cipher",
+  "key": "not applicable",
+  "verification": ["historical consistency"],
+  "notes": "The erased words are lost; context from Washington's 17 Sept letter suggests §§ hid the junction with the main army, but nothing is filled in."
+ }
+}
