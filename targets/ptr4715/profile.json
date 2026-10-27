@@ -1,0 +1,118 @@
+{
+ "schema_version": 1,
+ "target": "ptr4715",
+ "title": "Undated document in cipher with an English cover, not deciphered (AGS Patronato Real; Paz, Catálogo V, no. 4715)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "AGS, Patronato Real (Paz, Catálogo V, 1912, no. 4715; PTR legajo/doc unknown)",
+   "date": "undated (late 15th / early 16th c.)",
+   "year": 1500,
+   "country": "England",
+   "route": "unknown",
+   "language": "unknown",
+   "pages": 2,
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Paz 1912: 'Ni descifrado'; the item has not been seen.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "PARES answered 429 to every request from this machine on 26-27 Oct 2026; no image seen, nothing transcribed. pages = Paz's '2 hoj. fol.'"
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the document has not been seen. Candidate keys: Puebla's Great Roman Numeral Code (AGS PTR,LEG,52,DOC.33), Puebla's First and Second Ciphers and Letter Code (Tomokiyo).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "curl",
+   "built-in browser (Google Books search-within, PARES)",
+   "archive.org OCR"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "PARES find for the Paz wording, by curl and in the built-in browser: 429 Too Many Requests (IP rate limit since 26 Oct). Record not mapped, no images.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Paz, Catalogo V, read around no. 4715: undated England run before 'Capitulaciones con la Casa de Austria' (no. 4748); neighbours 4716-4717 are Catherine, Princess of Wales, to Dr Puebla. No legajo given.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Tomokiyo's Spanish ciphers page (Puebla keys), web searches, Bergenroth's 1868 Supplement OCR: no decipherment or calendar entry found. CSP Spain i (1862) full text not reached.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "whole document",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: PARES is rate-limiting this machine. The item is probably digitised; retry PARES, map no. 4715 to its PTR signature and compare with catalogue 615/616."
+ }
+}
