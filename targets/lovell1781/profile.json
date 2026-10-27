@@ -1,0 +1,119 @@
+{
+ "schema_version": 1,
+ "target": "lovell1781",
+ "title": "Motion in Congress of 10 Aug 1781 on Jay's Mississippi powers, extract by James Lovell partly in cipher, deciphered with Lovell's 'Jay' key filed in the same volume (PCC item 59 vol. 1 p. 133; part of catalogue 631, closed in pcc1780)",
+ "documents": [
+  {
+   "id": "pcc59-p133",
+   "read": "read",
+   "shelfmark": "NARA RG 360, Papers of the Continental Congress, item 59 vol. 1 (M247 roll 72), naId 475671573, MS pp. 133-134 (digital objects 106-107, Fold3 files 172698-172699)",
+   "date": "10 Aug 1781",
+   "year": 1781,
+   "country": "United States",
+   "route": "Philadelphia (Congress) -> John Jay, Madrid",
+   "places": {"from": "Philadelphia", "to": "Madrid"},
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": ["printed edition"],
+    "source": "Journals of the Continental Congress, vol. 21, ed. Gaillard Hunt (1912), pp. 853-854, 10 Aug 1781, printed from the journal; the footnote on p. 854 names this cipher copy (PCC No. 59, I, folio 133).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 57,
+    "distinct": 22,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 475671573, digital object 106 (Fold3 172698), full resolution 2373 x 4107 px",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Read twice from the scan, the second time independently; both readings agree number for number. '1119' is written without a point and counted as two numbers (11, 19). The '13' in the fourth cipher line is written over another figure. 57 numbers measured with docs/_check_profile.py --measure --digits."
+   }
+  }
+ ],
+ "system": {
+  "types": ["polyalphabetic"],
+  "summary": "James Lovell's column cipher: alphabet a..z and & (27 signs); each key letter heads a column running through the alphabet from that letter (row 1 = the key letter); the letters are written as row numbers, the columns B and Y used in turn. Rows 28-30 of the key are blank and serve as nulls.",
+  "symbol_kind": "digits",
+  "digit_groups": {"width": "1-2", "separation": "dots"},
+  "distinct_symbols": 22,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": true},
+  "key_order": "keyword-derived",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "The same sheet (p. 144) holds Lovell's columns for Adams (C, R), H. Laurens (Y, O), Franklin (C, O, R, six orders) and Palfrey (U, N, T, six orders); they give gibberish on this text.",
+  "notes": "Only two stretches of the extract are enciphered (57 numbers, 55 letters and 2 nulls). The alternation of the two columns runs on through the clear words between the stretches. distinct_symbols counts the 22 different numbers seen."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Journals of the Continental Congress vol. 21 (ed. Gaillard Hunt, 1912) pp. 853-854, from the journal, with a footnote naming PCC No. 59, I, folio 133. The NARA/Fold3 description of the item cites the print; the print was opened only after the decryption, by the verifier.",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": ["images", "key from archive", "cleartext context"],
+  "attack": "key from archive",
+  "human_role": "WAINUT set the task (catalogue 631) and the rules; AI language-model agents listed the volume, transcribed, decrypted and verified. No target-specific human intervention.",
+  "tools": ["decrypt.py (decryption with the Jay columns; controls over all key pairs, the other columns of the sheet and shuffles)"],
+  "models": ["AI language-model agents (WAINUT); a vision-capable language model for the transcription"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {"date": "2026-10-27", "kind": "access", "what": "Listed PCC item 59 vol. 1 (naId 475671573, 422 images) from the per-image NARA/Fold3 descriptions; the cipher material is in digital objects 96-136 (MS pp. 115-175) and 318-325 (pp. 329-336). Downloaded and viewed those images and the two related NARA exhibit items (naId 2450021, 2440605).", "result": "worked"},
+  {"date": "2026-10-27", "kind": "transcription", "what": "Transcribed the motion of 10 Aug 1781 (p. 133): clear text, two cipher stretches of 27 and 30 numbers, roll call and signature; endorsement on p. 134.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "key from source", "technique": ["key matching"], "what": "Transcribed Lovell's key-letter sheet (p. 144) and tried its columns on the cipher stretches. The 'Jay' columns B and Y, used in turn, give 'further cessions of the right' and 'navigation of the river Mississipi'; the second stretch starts on Y.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "reading", "what": "First pass read 30 and 28 as letters by wrapping them onto 1-3 ('dy'), left as a two-letter hole before 'further'.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "verification", "technique": ["key matching", "exhaustive search"], "what": "Independent re-reading of the scan and the key and an independent script: same numbers; rows 28-30 of the key are numbered but blank, so 30 and 28 are nulls that do not move the alternation. With them the first stretch has 25 letters, which is why the second starts on Y. No hole is left.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "control", "technique": ["exhaustive search", "statistical test"], "what": "Bigram score (repository English word list): B/Y -2.873, first of all 702 ordered pairs of key letters (next best -3.778, gibberish); the other columns of the sheet -4.29 to -6.63, all gibberish; alternation restarted at B for the second stretch gives gibberish there; 200 shuffles of the 55 letter numbers best -3.636.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "Opened JCC vol. 21 (1912) pp. 853-854 (archive.org journalsofcontin21unit): the motion is printed word for word from the journal ('cession' singular, 'Mississippi', 'empowered'); the footnote names PCC No. 59, I, folio 133. Not a new reading.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "access", "what": "Identified the other cipher pieces of the volume (keys, the resolves of 22 Jan, 8 Feb and 7 Aug 1782 with interlinear or separate plaintext, Thomson's note of 19 May 1780, the Committee for Foreign Affairs letter to Jay of 16 June 1780, the fragment 'Letter to Dr Franklin in Cypher'); not transcribed; superseded by the inventory in pcc1780, to which NOTES.md now points.", "result": "partial"}
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "read with known key",
+  "first_break": false,
+  "method_basis": "Lovell's own key sheet, filed in the same volume (p. 144), has the columns marked 'Jay'; applied to the motion sent to Jay, they give the cipher words. The work included matching: of all 702 ordered pairs of key letters only the Jay pair B/Y reads. The text was already printed from the journal in 1912.",
+  "contribution": ["transcription", "catalogue correction"],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decrypt.py over transcription.txt: all 57 numbers accounted for (55 letters, 2 nulls); reading.md has no holes.",
+  "verification": ["independent verification", "independent clear copy", "historical consistency"],
+  "provenance": "contributed",
+  "credits": [
+   {"who": "lccompany", "role": "solution", "note": "cipher stretches of the 10 Aug 1781 motion deciphered with Lovell's Jay columns; nulls 28-30 identified; controls", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "transcription", "note": "PCC 59 vol. 1 p. 133 and the Jay columns of p. 144", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "verification", "note": "independent re-reading and decryption; JCC 21:853-854 compared word for word", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "identification", "note": "NARA exhibit 2450021 identified as the key sheet used (pp. 144, 146) and exhibit 2440605 as the fisheries resolve of 22 Jan 1782 (pp. 155-156); fifth name on the key sheet read as Palfrey", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "pointer", "note": "earlier solution: JCC 21:853-854 (1912), whose footnote names this copy", "date": "2026-10-27"},
+   {"who": "contemporary", "role": "key or decipherment used", "note": "James Lovell's key-letter sheet, PCC 59 vol. 1 p. 144, columns 'Jay' (B, Y)", "source": "https://catalog.archives.gov/id/475671573"},
+   {"who": "hunt", "role": "prior solution", "note": "Journals of the Continental Congress vol. 21 (ed. Gaillard Hunt, 1912) pp. 853-854: the clear text of the motion, printed from the journal (not a decipherment); the footnote on p. 854 names this copy", "date": "1912", "source": "https://archive.org/details/journalsofcontin21unit"}
+  ],
+  "gaps": [],
+  "texts": [
+   {
+    "doc": "pcc59-p133",
+    "label": "Motion of 10 Aug 1781, extract by James Lovell, PCC 59 vol. 1 p. 133",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Congress rejects, every member present voting no (twelve states no; North Carolina, with one member, not counted), a motion on the report about Robert Morris's letter of 9 Aug 1781 to empower John Jay, minister at Madrid, to cede further rights of the United States to the navigation of the Mississippi on terms he thought proper. The cipher hides the words 'further cessions of the right' and 'navigation of the river Mississipi'."
+   }
+  ],
+  "key_file": "key.txt",
+  "notes": "Contributed by WAINUT (catalogue 631). Not a new decipherment: the text is printed from the journal in JCC 21:853-854. Added: the match of Lovell's Jay columns to this copy and the nulls 28-30. Sub-target of pcc1780, which closes catalogue 631 and inventories the volume; Weber (1979) not checked for an earlier application of the key."
+ }
+}

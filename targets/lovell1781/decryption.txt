@@ -1,0 +1,23 @@
+# Motion of 10 Aug 1781, PCC 59 vol. 1 p. 133: decryption against transcription.txt (python decrypt.py)
+# Key: Lovell's 'Jay' columns B and Y (key.txt), used in turn; 28-30 are nulls (_), they do not move the key.
+# The plaintext is English; no translation is needed.
+
+Stretch A (27 numbers, first key column B):
+  number: 30 28  5 24 17 23  7  8 17  6  4 22 18 12 14 17 18 18  5 23  7  8 17 12  6 11 19
+  column:  -  -  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B
+  letter:  _  _  f  u  r  t  h  e  r  c  e  s  s  i  o  n  s  o  f  t  h  e  r  i  g  h  t
+
+Stretch B (30 numbers, first key column Y):
+  number: 17 27 25  8 10 27 23  8 18 13 18  5 23  7  8 17 12 21  8 17 16  8 22 18 12 18 22  8 19  8
+  column:  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B  Y  B
+  letter:  n  a  v  i  g  a  t  i  o  n  o  f  t  h  e  r  i  v  e  r  m  i  s  s  i  s  s  i  p  i
+
+Stretch A follows "to make such" and ends with 11 19, written "1119";
+the clear words "of these United States to the" stand between A and B.
+A: __furthercessionsoftheright  ->  [nulls 30, 28] further cessions of the right
+B: navigationoftherivermississipi  ->  navigation of the river Mississipi
+
+With the cipher words in place:
+  "That the said minister be & he is hereby authorised and empowered to make such FURTHER CESSIONS OF THE
+  RIGHT of these United States to the NAVIGATION OF THE RIVER MISSISSIPI as he may think proper and on such
+  terms & conditions as he may think most for the honor & interest of these United States."
