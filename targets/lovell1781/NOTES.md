@@ -1,9 +1,12 @@
-# Motion in Congress, 10 Aug 1781, partly in Lovell's cipher, and the cipher pieces of PCC item 59 vol. 1 (catalogue 631)
+# Motion in Congress, 10 Aug 1781, partly in Lovell's cipher (PCC item 59 vol. 1 p. 133; part of catalogue 631, closed in `targets/pcc1780`)
 
 Status: no write-up. Contributed by WAINUT (27 Oct 2026); the site page and the ledger rows are left to the
 maintainer. Already solved: the plaintext is printed from the journal in JCC 21:853-854 (1912). Added here: the
-match of Lovell's "Jay" key, filed in the same volume, to the cipher words; the nulls; and an inventory of the
-cipher pieces in the volume, with catalogue corrections.
+match of Lovell's "Jay" key, filed in the same volume, to the cipher words, and the nulls.
+
+This folder is a sub-target of `targets/pcc1780`, which closes catalogue 631 as a whole and inventories the volume.
+It holds only the decipherment of one piece of that volume (pcc1780's row "Report on instructions to Jay ...,
+10 Aug 1781", images 105-106 there, PCC pp. 133-134).
 
 Catalogue 631. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the transcriptions were made with a vision-capable language model. The numbers and the key were read twice from the
@@ -19,7 +22,8 @@ The per-image descriptions (from Fold3) are in the NARA record. All the cipher m
 "Cipher With Keywords" ([naId 631635424](https://catalog.archives.gov/id/631635424), PCC 59 vol. 1 pp. 141-142) and
 the exhibit item [naId 2450021](https://catalog.archives.gov/id/2450021). A second exhibit item,
 [naId 2440605](https://catalog.archives.gov/id/2440605), was found here for the fisheries resolve. Both exhibit items
-are colour photographs of leaves of this volume (see the table in section 7).
+are colour photographs of leaves of this volume (2450021 = the key sheet of pp. 144-146; 2440605 = the fisheries
+resolve of 22 Jan 1782, pp. 155-156). Object numbers here are 1-based; pcc1780 counts the same images from 0.
 
 ## 2. The document read here
 
@@ -110,54 +114,35 @@ copy's "Mississipi" and "authorised and empowered" against the print's "Mississi
 description of the item cites the print ("Printed in Journals, 1781, p. 853-854"). The print was opened only after
 the decryption was made.
 
-So this is not a new decipherment. What is new: the match of Lovell's Jay columns to this copy, the nulls, and the
-inventory below. We found no source that applies the key to this copy.
+So this is not a new decipherment. What is new: the match of Lovell's Jay columns to this copy and the nulls. We
+found no source that applies the key to this copy; Weber, *United States Diplomatic Codes and Ciphers 1775-1938*
+(1979), which treats Lovell's systems, was not checked.
 
-## 7. The other cipher pieces in the volume (identification only)
+## 7. The other cipher pieces in the volume
 
-Objects and Fold3 files were checked against the NARA record. MS page numbers are as read on the stamped folios in a
-first pass and were re-checked only for pp. 133, 144, 146 and 155. "Not prose" = key sheets and lists. These pieces
-were viewed and identified, not transcribed. None of them is claimed as read here.
+See `targets/pcc1780/NOTES.md`, which inventories the cipher pieces and key sheets of PCC item 59 vol. 1 and gives
+the plaintext source of each (the Livingston letter to Franklin of 26 Nov 1781, the "Letter to Dr Franklin in
+Cypher"; Thomson's dictionary-code note of 19 May 1780; the Committee for Foreign Affairs letter to Jay of 16 June
+1780; the resolves of 22 Jan, 8 Feb and 7 Aug 1782). Two readings here bear on that inventory:
 
-| Object (Fold3) | MS p. | What it is | State |
-|---|---|---|---|
-| 96 (172688) | 115-116 | "A new cypher": instructions for a keyword column cipher (example keyword "John", 27-letter alphabet); Fold3 title "Cipher with keywords" | not prose |
-| 97-98 (172689-90) | 117, 120 | Dumas cipher: numbered homophone list A-Z (1-682) with punctuation; endorsed "Dumas Cyphering used by Dr Franklin and the Comtee of Secret Correspondence" | not prose |
-| 99 (172691) | 121-122 | Jay: proposal to change a numbered cipher by advancing each number one unit, with new entries 600 ff. (Washington 640 ...); endorsed "Jay cypher propos'd" | not prose |
-| 101 (172693) | 123 | Charles Thomson, 19 May 1780: four lines, mostly code groups, with clear words ("... under the direction of ... Doct Franklin") | **open**: not decoded; no key for it seen in the volume |
-| 102-104 (172694-96) | 127-130 | Committee for Foreign Affairs to Jay, 16 June 1780, part in code | **open**: not decoded here; may be printed decoded in the Jay papers (not checked) |
-| 105 (172697) | 131 | Lovell's note on his column method ("the letters of 79.12 show the number of columns ...") | not prose |
-| 106-107 (172698-99) | 133-134 | Motion of 10 Aug 1781 | **this folder**: deciphered, already in JCC 21:853-854 |
-| 108-109 (172700-01) | 137-138 | Francis Dana's cipher: letter columns and a short nomenclator (Washington 40, Congress 27, Russia 51 ...) | not prose |
-| 110-111 (172702-03) | 139-140 | keyed table 1-24 with nomenclator; two numerical alphabets | not prose |
-| 112-113 (172704-05) | 141-143 | "Cipher with a keyword": five-column table, nomenclator 27-61 (America 27 ... Rh. Island 61); then Lovell's note on his use of the Dumas numbers, with words written in Dumas numbers; pp. 141-142 = NARA item naId 631635424 "Cipher With Keywords" (its NARA page reference) | key: not prose; the note: **open**, decodable with p. 117, not done |
-| 114 (172706) | - | endorsement "Dr Franklin Cypher" | - |
-| 115-116 (172707-08) | 144-146 | Lovell's key-letter sheet: Adams, H. Laurens, Franklin, Palfrey, Jay; = NARA exhibit naId 2450021 | key used here |
-| 117-122 (172709-14) | 147-154 | Resolve of 7 Aug 1782 on Jay, "copy in cipher" (code of the Office of Foreign Affairs), with a deciphering table 1-1107 on p. 154 | Thomson's clear copy at objects 131-133 (172723-25); printed, Journals 1782 pp. 455-456 |
-| 123 (172715) | - | Dumas cipher, printed copy | not prose |
-| 124-125 (172716-17) | 155-156 | Resolve of 22 Jan 1782 on the fisheries and the boundaries, code numbers with the plaintext written between the lines; = NARA exhibit naId 2440605 | decoded on the page; Thomson's clear copies at objects 126-130 (172718-22); JCC 22:44-45 |
-| 134-136 (172726-28) | 169-172 | "Letter to Dr Franklin in Cypher", fragment, same code family as the 1782 resolves, plaintext written between the lines (on French money, the coming campaign, troops expecting pay in specie) | decoded on the page; **open**: author, date and printed version not identified |
-| 318-325 (172910-17) | 329-336 | Resolve of 8 Feb 1782 on a French loan and Spain, code numbers with the plaintext between the lines | decoded on the page; JCC 22:68-70 |
+- The fifth name on Lovell's key-letter sheet (p. 144, docket p. 146) reads "Palfrey" (columns U, N, T), presumably
+  William Palfrey, named consul to France in 1780; pcc1780 had "Dalgey(?)" and is corrected in this branch.
+- Lovell's note on his use of the Dumas numbers (pp. 142-143), with words written in Dumas numbers, is a note on
+  key use, not a message; it was not decoded here.
 
 ## Remaining gaps
 
-- None in the motion of 10 Aug 1781: every number is accounted for.
-- Catalogue 631 as a whole stays open for four pieces - blocker: not-attempted. They were identified, not worked:
-  Thomson's note of 19 May 1780 (code, no key seen in the volume), the Committee for Foreign Affairs letter to Jay
-  of 16 June 1780 (code; the Jay papers may print it decoded), the "Letter to Dr Franklin in Cypher" fragment
-  (deciphered between the lines; author, date and print unknown), and Lovell's note in Dumas numbers on pp. 142-143.
-  Volume 2 of item 59 was not looked at.
-- The page numbers of the 1782 resolves in JCC are taken from the NARA/Fold3 descriptions and were not opened. By its
-  date, the resolve of 7 Aug 1782 should be in vol. 22 (1 Jan - 9 Aug 1782), not vol. 23 as a first pass noted.
+- None in the motion of 10 Aug 1781: every number is accounted for. The rest of catalogue 631 is in `targets/pcc1780`.
+- Weber (1979) was not checked for an earlier application of the Jay columns to this copy.
 
 ## Escalation
 
-- [x] siblings: the other cipher pieces of the volume are listed above; none shares the Jay columns.
+- [x] siblings: the other cipher pieces of the volume are in `targets/pcc1780`; none shares the Jay columns.
 - [x] clear-pages: the clear text of the motion frames the two stretches.
 - [x] known-keys: Lovell's key sheet in the same volume; the Jay columns fit, the other columns are controls.
 - [x] print: JCC 21:853-854 opened and compared.
 - [n/a] key-rebuild: the key is on the sheet; only rows 28-30 needed a reading (blank, so nulls).
-- [ ] retry: the four open pieces of the volume (see Remaining gaps).
+- [n/a] retry: the motion is read in full; the rest of the volume is in `targets/pcc1780`.
 
 ## Files
 

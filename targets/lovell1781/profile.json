@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "lovell1781",
- "title": "Motion in Congress of 10 Aug 1781 on Jay's Mississippi powers, extract by James Lovell partly in cipher, deciphered with Lovell's 'Jay' key filed in the same volume (PCC item 59 vol. 1 p. 133; catalogue 631)",
+ "title": "Motion in Congress of 10 Aug 1781 on Jay's Mississippi powers, extract by James Lovell partly in cipher, deciphered with Lovell's 'Jay' key filed in the same volume (PCC item 59 vol. 1 p. 133; part of catalogue 631, closed in pcc1780)",
  "documents": [
   {
    "id": "pcc59-p133",
@@ -76,14 +76,14 @@
   {"date": "2026-10-27", "kind": "verification", "technique": ["key matching", "exhaustive search"], "what": "Independent re-reading of the scan and the key and an independent script: same numbers; rows 28-30 of the key are numbered but blank, so 30 and 28 are nulls that do not move the alternation. With them the first stretch has 25 letters, which is why the second starts on Y. No hole is left.", "result": "worked"},
   {"date": "2026-10-27", "kind": "control", "technique": ["exhaustive search", "statistical test"], "what": "Bigram score (repository English word list): B/Y -2.873, first of all 702 ordered pairs of key letters (next best -3.778, gibberish); the other columns of the sheet -4.29 to -6.63, all gibberish; alternation restarted at B for the second stretch gives gibberish there; 200 shuffles of the 55 letter numbers best -3.636.", "result": "worked"},
   {"date": "2026-10-27", "kind": "literature search", "what": "Opened JCC vol. 21 (1912) pp. 853-854 (archive.org journalsofcontin21unit): the motion is printed word for word from the journal ('cession' singular, 'Mississippi', 'empowered'); the footnote names PCC No. 59, I, folio 133. Not a new reading.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "access", "what": "Identified the other cipher pieces of the volume (keys, the resolves of 22 Jan, 8 Feb and 7 Aug 1782 with interlinear or separate plaintext, Thomson's note of 19 May 1780, the Committee for Foreign Affairs letter to Jay of 16 June 1780, the fragment 'Letter to Dr Franklin in Cypher'); listed in NOTES.md, not transcribed.", "result": "partial"}
+  {"date": "2026-10-27", "kind": "access", "what": "Identified the other cipher pieces of the volume (keys, the resolves of 22 Jan, 8 Feb and 7 Aug 1782 with interlinear or separate plaintext, Thomson's note of 19 May 1780, the Committee for Foreign Affairs letter to Jay of 16 June 1780, the fragment 'Letter to Dr Franklin in Cypher'); not transcribed; superseded by the inventory in pcc1780, to which NOTES.md now points.", "result": "partial"}
  ],
  "outcome": {
   "class": "already solved",
   "key": "recovered",
   "method": "read with known key",
   "first_break": false,
-  "method_basis": "Lovell's own key sheet, filed in the same volume (p. 144), has the columns marked 'Jay'; applied to the motion sent to Jay, they give the cipher words; the text was already printed from the journal in 1912.",
+  "method_basis": "Lovell's own key sheet, filed in the same volume (p. 144), has the columns marked 'Jay'; applied to the motion sent to Jay, they give the cipher words. The work included matching: of all 702 ordered pairs of key letters only the Jay pair B/Y reads. The text was already printed from the journal in 1912.",
   "contribution": ["transcription", "catalogue correction"],
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
@@ -94,14 +94,12 @@
    {"who": "lccompany", "role": "solution", "note": "cipher stretches of the 10 Aug 1781 motion deciphered with Lovell's Jay columns; nulls 28-30 identified; controls", "date": "2026-10-27"},
    {"who": "lccompany", "role": "transcription", "note": "PCC 59 vol. 1 p. 133 and the Jay columns of p. 144", "date": "2026-10-27"},
    {"who": "lccompany", "role": "verification", "note": "independent re-reading and decryption; JCC 21:853-854 compared word for word", "date": "2026-10-27"},
-   {"who": "lccompany", "role": "identification", "note": "inventory of the cipher pieces in PCC item 59 vol. 1 (catalogue 631); NARA exhibit 2450021 identified as the same key sheet (pp. 144, 146)", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "identification", "note": "NARA exhibit 2450021 identified as the key sheet used (pp. 144, 146) and exhibit 2440605 as the fisheries resolve of 22 Jan 1782 (pp. 155-156); fifth name on the key sheet read as Palfrey", "date": "2026-10-27"},
    {"who": "lccompany", "role": "pointer", "note": "earlier solution: JCC 21:853-854 (1912), whose footnote names this copy", "date": "2026-10-27"},
    {"who": "contemporary", "role": "key or decipherment used", "note": "James Lovell's key-letter sheet, PCC 59 vol. 1 p. 144, columns 'Jay' (B, Y)", "source": "https://catalog.archives.gov/id/475671573"},
-   {"who": "contemporary", "role": "prior solution", "note": "the clear text of the motion in the journal of Congress, printed in JCC vol. 21 (ed. Gaillard Hunt, 1912) pp. 853-854"}
+   {"who": "hunt", "role": "prior solution", "note": "Journals of the Continental Congress vol. 21 (ed. Gaillard Hunt, 1912) pp. 853-854: the clear text of the motion, printed from the journal (not a decipherment); the footnote on p. 854 names this copy", "date": "1912", "source": "https://archive.org/details/journalsofcontin21unit"}
   ],
-  "gaps": [
-   {"item": "other cipher pieces of PCC 59 vol. 1 (Thomson 19 May 1780; Committee for Foreign Affairs to Jay 16 June 1780; 'Letter to Dr Franklin in Cypher'; Lovell's note in Dumas numbers pp. 142-143)", "blocker": "not-attempted", "detail": "identified only; outside this folder's document; see NOTES.md"}
-  ],
+  "gaps": [],
   "texts": [
    {
     "doc": "pcc59-p133",
@@ -112,11 +110,10 @@
     "language": "en",
     "state": "read",
     "read_share": 1.0,
-    "summary": "Congress rejects, every member present voting no (twelve states no; North Carolina, with one member, not counted), a motion on the report about Robert Morris's letter of 9 Aug 1781 to empower John Jay, minister at Madrid, to cede further rights of the United States to the navigation of the Mississippi on terms he thought proper. The cipher hides the words 'further cessions of the right' and 'navigation of the river Mississipi'.",
-    "reading_review": {"grade": "A", "by": "WAINUT (AI language-model agent, reviewed against the scan and against JCC 21:853-854)", "date": "2026-10-27", "note": "Coherent English throughout; agrees with the 1912 print except 'cessions' (print 'cession'), 'Mississipi' and 'authorised and empowered' (print 'empowered')."}
+    "summary": "Congress rejects, every member present voting no (twelve states no; North Carolina, with one member, not counted), a motion on the report about Robert Morris's letter of 9 Aug 1781 to empower John Jay, minister at Madrid, to cede further rights of the United States to the navigation of the Mississippi on terms he thought proper. The cipher hides the words 'further cessions of the right' and 'navigation of the river Mississipi'."
    }
   ],
   "key_file": "key.txt",
-  "notes": "Contributed by WAINUT (catalogue 631). Not a new decipherment: the text is printed from the journal in JCC 21:853-854. Added: the match of Lovell's Jay columns to this copy, the nulls 28-30, and an inventory of the cipher pieces of PCC item 59 vol. 1 with catalogue corrections."
+  "notes": "Contributed by WAINUT (catalogue 631). Not a new decipherment: the text is printed from the journal in JCC 21:853-854. Added: the match of Lovell's Jay columns to this copy and the nulls 28-30. Sub-target of pcc1780, which closes catalogue 631 and inventories the volume; Weber (1979) not checked for an earlier application of the key."
  }
 }
