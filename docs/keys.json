@@ -1,5 +1,9 @@
 {
  "keys": [
+{"id": "k-bernstorff-0075-1917", "label": "German embassy code (probably 0075), 82 groups from telegram No. 205", "kind": "rebuilt here", "by": "WAINUT", "year": 1917, "note": "Two-part four-figure code with prefix figures; 82 base groups fixed by aligning groups 0-146 of NARA 763.72111/4443 with the German text Bernstorff printed in 1920 (targets/bernstorff1917/codebook.tsv). Attribution to code 0075 probable, not proven."},
+{"id": "k-hintze1903", "label": "Hintze Ribeiro's code to Queen Amelie (1903), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1903, "note": "Code of up to five figures (1347-67398 seen). 24 values from aligning the 11 May 1903 telegram (ANTT PT/TT/CAM/M15 m0003) with the decode written under it, segment by segment (27 Oct 2026, WAINUT); order alphabetical within page blocks of 100 with the lower pages reversed (hypothesis). targets/hintze1903/code_values.tsv."},
+{"id": "k-lima-1909-code", "label": "Venceslau de Lima's two-part code, 1909 (261 values rebuilt here)", "kind": "rebuilt here", "by": "WAINUT", "year": 1909, "note": "Five-figure two-part (randomised) Portuguese code, 06 full stop, 04 comma; 261 values from the receiver's pencil glosses on the eight telegrams of PT/TT/CAM/M09 (targets/lima1909/code_values.tsv)."},
+{"id": "k-sabugosa-code", "label": "Sabugosa's alphabetical code, 1903-1910 (52 values rebuilt here)", "kind": "rebuilt here", "by": "WAINUT", "year": 1910, "note": "One-part Portuguese code: 11501-23400 = a-h, 0139-9019 = i-v; 52 values paired from the decodes of the time on m0009, m0008 and m0005 + m0004 of PT/TT/CAM/M14 (targets/sabugosa1910/code_values.tsv)."},
 {"id": "k-manchesterbluff", "label": "MANCHESTERBLUFF, Confederate Vigenere key", "kind": "contemporary key", "by": "Confederate government", "year": 1863, "note": "Vigenere on the tabula recta; one of the known Confederate keys with COMPLETEVICTORY and COMERETRIBUTION. On Johnston's telegram of 16 June 1863 it runs across the cipher words and advances by plaintext length (targets/johnston1863/key.md)."},
 {"id": "k-completevictory", "label": "COMPLETEVICTORY, Confederate Vigenere key", "kind": "contemporary key", "by": "Confederate government", "year": 1863, "note": "Known Confederate key; tested on johnston1863 as a control."},
 {"id": "k-comeretribution", "label": "COMERETRIBUTION, Confederate Vigenere key", "kind": "contemporary key", "by": "Confederate government", "year": 1864, "note": "Known Confederate key; tested on johnston1863 as a control."},
@@ -2360,6 +2364,10 @@
 {"id": "k-thomson-we007-jay", "label": "Thomson code, Jay's copy (Weber WE007), 1781", "kind": "archive key", "by": "Charles Thomson", "year": 1781, "note": "Printed form with numbers by hand, Columbia RBML Jay Papers ldpd:50144; headed as modified by Livingston 6 July 1782; carries the be-he 600-605 additions in manuscript."}
  ],
  "links": [
+{"key": "k-bernstorff-0075-1917", "target": "bernstorff1917", "how": "rebuilt from", "note": "82 code groups recovered from telegram No. 205 against its 1920 print; 69 of the 430 groups of the second text match them, no sentence"},
+{"key": "k-hintze1903", "target": "hintze1903", "how": "rebuilt from", "note": "24 values from the decode of the time on m0003; only 41285 recurs in m0001"},
+{"key": "k-lima-1909-code", "target": "lima1909", "how": "rebuilt from", "note": "values paired from the decodes of the time above the groups; repeated groups agree"},
+{"key": "k-sabugosa-code", "target": "sabugosa1910", "how": "rebuilt from", "note": "values paired from three decodes of the time; alphabetical order confirmed against shuffles; applied to the 1903 telegram, 6 of 43 groups"},
 {"key": "k-manchesterbluff", "target": "johnston1863", "how": "read unchanged", "note": "matched against the 1863 'Translation of Cypher': 26/33 positions, advancing by plaintext length; the rest the clerk's slips"},
 {"key": "k-greenhow-1864", "target": "greenhow1861", "how": "adapted", "note": "side 1 deciphers unchanged except a second N form (looped l with a crossbar) valued from context"},
 {"key": "k-greenhow-1864", "target": "jordan1861", "how": "read unchanged", "note": "all 82 securely transcribed signs give the clerk's clear copy's letter"},
@@ -3761,6 +3769,10 @@
   }
  ],
  "source_links": [
+{"source": "s-cyphersolver", "key": "k-bernstorff-0075-1917"},
+{"source": "s-cyphersolver", "key": "k-hintze1903"},
+{"source": "s-cyphersolver", "key": "k-lima-1909-code"},
+{"source": "s-cyphersolver", "key": "k-sabugosa-code"},
 {"source": "s-tomokiyo", "key": "k-tomokiyo-puebla-first"},
 {"source": "s-cyphersolver", "key": "k-rakoczi-envoys-1655"},
 {"source": "s-cyphersolver", "key": "k-deboli-polish-1789"},
@@ -4349,6 +4361,8 @@
 {"source": "s-cyphersolver", "key": "k-thomson-palfrey-1781"}
  ],
  "unlinked": {
+  "carlos1903": "deciphered from the decodes of the time (the card m0060 and the ink decode on m0058); no key: only four group values follow from the repeats, and the codebook was not found",
+  "manuel1910": "No key: the code is not identified, and no decode or codebook has been found; no group has a value.",
   "legation1788": "Read from the existing decipherments (Jefferson's interlinear on Short's letter; the Jefferson Papers editors' printed decodings). targets/legation1788/key.tsv collects the values decoded at the time, for checking (Code No. 10 from Jefferson's interlinear, Code No. 16 from George Taylor's decodings); no key sheet of Codes 10, 13 or 16 survives.",
   "deboli1791": "Read from the contemporary decipherments (AGAD Zbiór Popielów 421); the code tables in targets/deboli1791/align are partial by-products of the alignment, and the keys (Zbiór Popielów 444, 451, 453, 454) are not online.",
   "smallwood1777": "Not a cipher: erased words marked with printer’s symbols; no key exists.",
@@ -4442,6 +4456,12 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-sabugosa-code", "target": "carlos1903", "note": "Sabugosa's code of the same weeks is alphabetical; this one is not (38564 ter < 58215 com), and no value carries over"},
+{"key": "k-sabugosa-code", "target": "hintze1903", "note": "no group shared (code.py, part 5)"},
+{"key": "k-lima-1909-code", "target": "hintze1903", "note": "no group shared (code.py, part 5)"},
+{"key": "k-sabugosa-code", "target": "lima1909", "note": "no group shared (P(none) 4.3e-23 if the same code)"},
+{"key": "k-hintze1903", "target": "lima1909", "note": "no group shared (P(none) 4.0e-12 if the same code)"},
+{"key": "k-sabugosa-code", "target": "manuel1910", "note": "no group of the three telegrams matches its 52 known values, as written or with the struck third figure dropped; 7 of 79 groups would fall beyond its last known value (veio 9019)"},
 {"key": "k-completevictory", "target": "johnston1863", "note": "1/33 positions"},
 {"key": "k-comeretribution", "target": "johnston1863", "note": "3/33 positions"},
 {"key": "k-confederate-cipher-1864-m1091", "target": "greenhow1861", "note": "a different table; does not fit side 1"},
