@@ -1,0 +1,337 @@
+{
+ "schema_version": 1,
+ "target": "comenius1655",
+ "title": "Comenius to Andreas Klobusiczky, cipher passages of 24 May and 4 Aug 1655 (MNL OL E 190, Rákóczi archive)",
+ "documents": [
+  {
+   "id": "A",
+   "read": "read",
+   "shelfmark": "MNL OL (Budapest), E 190 Archivum familiae Rákóczi; witnesses used: Patera 1892 no. CLIV p. 182, MHH Diplomataria XXIII (1874) no. CXXIX p. 219",
+   "date": "4 Aug 1655",
+   "year": 1655,
+   "country": "Poland",
+   "route": "Leszno -> Transylvania (Comenius to Andreas Klobusiczky, councillor of George II Rákóczi)",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Patera, Jana Amosa Komenského korrespondence (Praha 1892) p. 182, footnote *: 'Značí: Poloniam periisse et papatum in illa.' Covers the sentence after the signature, not the word (iyy).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 32,
+    "distinct": 16,
+    "unit": "mixed",
+    "measured": false,
+    "file": "ct_1655-08-04.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Page images of both prints on archive.org (bub_gb_xnVMAAAAYAAJ leaf n204; okmnytriirkczyg01gygoog leaf n235); the manuscript was not seen",
+    "corrections": 2,
+    "image_quality": "good",
+    "notes": "Printed type. The archive.org OCR misreads the digits ('(>i) (555'); corrected from the images. Counted by hand: 29 cipher letters and digits in the sentence, 3 in (iyy)."
+   }
+  },
+  {
+   "id": "B",
+   "read": "not read",
+   "shelfmark": "MNL OL (Budapest), E 190 Archivum familiae Rákóczi; witnesses used: Patera 1892 no. CLII p. 178, MHH Diplomataria XXIII (1874) no. CIII p. 178",
+   "date": "24 May 1655",
+   "year": 1655,
+   "country": "Poland",
+   "route": "Leszno -> Transylvania (Comenius to Andreas Klobusiczky)",
+   "language": "unknown",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Neither Patera 1892 nor MHH XXIII (1874) gives a decipherment; none found elsewhere."
+   },
+   "length": {
+    "tokens": 56,
+    "distinct": 22,
+    "unit": "mixed",
+    "measured": false,
+    "file": "ct_1655-05-24.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Page images of both prints on archive.org (bub_gb_xnVMAAAAYAAJ leaf n200; okmnytriirkczyg01gygoog leaf n194); the manuscript was not seen",
+    "corrections": 1,
+    "image_quality": "fair",
+    "notes": "Italic type. Long s / f not separable in two places ([ſ/f?]). Variant last word: Xyopatus (Patera) / Xyoapus (MHH). Counted by hand: 50 letters and 6 digits."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic"
+  ],
+  "summary": "Document A: letter substitution with digit homophones for i, l, n (6, 5, 9), word division kept, 'et' in clear; document B: system unknown.",
+  "symbol_kind": "digits and letters",
+  "digit_groups": {
+   "width": "1",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 16,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "per_letter": {
+    "i": 2,
+    "l": 2,
+    "n": 2
+   }
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "written twice",
+  "notes": "System fields describe document A. The pairs a/m and s/t are attested in both directions, so the table may be reciprocal; not proven. One letter of CmCasda breaks a=m (strict decryption 'papmtum'). Document B does not decrypt with the A key, its inverse, or a reciprocal reading of it."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Patera, Jana Amosa Komenského korrespondence (Praha 1892) p. 182 footnote: decipherment of the 4 Aug 1655 sentence only. MHH XXIII (1874) prints both passages without decipherment.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT contribution (27 Oct 2026): the operator set the goal (catalogue 474); the search, transcription, key rebuild, controls and verification were done by AI language-model agents; human interventions beyond setting the goal are not recorded.",
+  "tools": [
+   "archive.org page images and OCR",
+   "check.py (key rebuilt from Patera's decipherment, controls, trials on the 24 May passage)",
+   "anneal.py (simulated annealing of a letter substitution, Latin 4-grams from lang/lexicons/la.json.gz, matched controls)",
+   "Vigenère / Beaufort / Porta keyword search and Caesar/affine shifts (WAINUT research scripts, not ported)"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Patera 1892 nos. CLI-CLV and MHH XXIII (1874) found on archive.org. Patera prints the 4 Aug 1655 cipher sentence with a footnote decipherment (p. 182); MHH prints the same cipher without one. The 24 May passage has no decipherment in either.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Both cipher passages and the word (iyy) read from the page images of both prints; OCR errors in the digits and in 'Gpdlmuoyqnotlses' corrected; variant Xyopatus / Xyoapus recorded.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key rebuilt from Patera's plaintext (check.py): 15 sign values, digit homophones 6=i, 5=l, 9=n. It decrypts the sentence as 'poloniam periisse et papmtum in illa': one conflict, the 4th letter of CmCasda (cipher a, elsewhere plain m), which Patera reads as plain a.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Shuffled key and letters shuffled inside each word both give gibberish (check.py, seed 1).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Independent re-check by a second agent: own downloads of the four page images, own key script, readings of both cipher lines confirmed; found the CmCasda conflict and the page number (p. 182, not 181).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "key matching",
+    "exhaustive search"
+   ],
+   "what": "24 May passage: the 4 Aug key, its inverse, the pairs as a reciprocal table, and the pairs combined with Caesar shifts on 22-26 letter alphabets. No Latin.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "24 May passage: Caesar, affine and progressive shifts; Vigenère, Beaufort and Porta with about 10,000 Latin keywords from Patera's text and names (Schaum, Comenius, Rakoczi ...). No Latin.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "24 May passage: annealing of a one-to-one letter substitution with word division kept (anneal.py). Matched control: the same annealer recovers two synthetic Latin texts of 56 and 50 letters exactly. On the 24 May passage only nonsense optima. So it is not a simple substitution of Latin with this word division.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Context in the same correspondence, checked on the page images of Patera (leaves n200-n205): CLI (20 May) 'legantur ... eo modo, quo Schaumiana legi necesse est ex pacto' (OCR only); CLII (24 May) the cipher follows news quoted from a letter from England and precedes a P.S. and the closing on p. 179; CLIII (22 Jul) 'Addo occultiora pagina sequenti, carbo ostendet' (in italic; invisible ink, not printed); CLV (6 Sept) italic passages with note * on p. 183: 'Co ležatým písmem vytištěno, psáno v originále tajným písmem', and 'Occulta scriptura nihil scribo hac vice'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Review pass: the cipher lines, the word (iyy) and the 22 Jul and 6 Sept passages re-checked on the page images; found that the 6 Sept letter's secret passages are printed in clear (Patera p. 183 note *), correcting the first report that it has no secret text, and that the 24 May cipher is not at the end of the letter.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The 4 Aug 1655 sentence is deciphered in Patera's 1892 edition (p. 182 footnote); here the cipher was transcribed from both prints and the decipherment checked with a key rebuilt from it. The 24 May 1655 passage is not deciphered.",
+  "parts": [
+   {
+    "label": "4 Aug 1655, the sentence after the signature (Patera CLIV)",
+    "records": "A",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "Patera 1892 p. 182 footnote; checked with the rebuilt key, one letter in conflict"
+   },
+   {
+    "label": "24 May 1655 (Patera CLII, MHH XXIII no. CIII)",
+    "records": "B",
+    "method": "not solved",
+    "extent": "none",
+    "basis": "50 letters; key-based trials, keyword searches and annealing with a matched control give no Latin"
+   }
+  ],
+  "first_break": false,
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.33,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "ct_1655-08-04.txt and ct_1655-05-24.txt, cipher letters and digits counted by hand: A 29 of 32 read ((iyy) open), B 0 of 56; 29/88.",
+  "verification": [
+   "key confirms",
+   "matched control",
+   "independent verification"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "patera",
+    "role": "prior solution",
+    "note": "footnote decipherment of the 4 Aug 1655 sentence, Jana Amosa Komenského korrespondence (Praha 1892) p. 182",
+    "date": "1892",
+    "source": "https://archive.org/details/bub_gb_xnVMAAAAYAAJ/page/n204"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "WAINUT: found Patera's 1892 footnote decipherment of the 4 Aug 1655 sentence for catalogue 474",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "WAINUT: the decipherment of 4 Aug 1655 is Patera's; WAINUT rebuilt the key from it and checked it letter by letter against both prints (one letter in conflict: CmCasda gives 'papmtum'); 24 May passage attempted, not deciphered",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "WAINUT: both cipher passages and the word (iyy) transcribed from Patera 1892 and MHH XXIII 1874, variants recorded",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "WAINUT: the 22 Jul 1655 letter adds invisible ink on a further page (not printed); the 6 Sept 1655 letter's secret-script passages are printed in clear in italic by Patera (p. 183 note *); a cipher word (iyy) in the 4 Aug letter; the 24 May cipher stands inside news quoted from a letter from England",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "24 May 1655 passage (document B), 50 letters and the numbers 7, 865, 73",
+    "blocker": "no-key-material",
+    "detail": "Not a simple substitution of Latin (annealing with matched control); no key found in print. Needs the original (MNL OL E 190) for the readings and a key, e.g. the one agreed for the 'Schaumiana'."
+   },
+   {
+    "item": "the word (iyy) in the clear text of 4 Aug 1655",
+    "blocker": "too-short",
+    "detail": "Three letters; the 4 Aug key gives '?oo' (reciprocal reading 'boo'), not Latin; possibly a code name."
+   },
+   {
+    "item": "the secret text of 22 Jul 1655 (Patera CLIII)",
+    "blocker": "needs-physical-access",
+    "detail": "Invisible ink ('carbo ostendet') on the next page; not printed, perhaps visible only on the original."
+   },
+   {
+    "item": "the secret-script passages of 6 Sept 1655 (Patera CLV p. 183, printed in clear in italic)",
+    "blocker": "needs-physical-access",
+    "detail": "Patera gives only the plaintext; the ciphertext and the key are not printed, and who deciphered it is not said. Needs the original (MNL OL) or Szilágyi, Transsylvania I (1890) pp. 393-394, to check it."
+   }
+  ],
+  "key_file": "key_1655-08-04.tsv",
+  "notes": "Catalogue 474. Of the four letters: 24 May has a printed cipher passage (not deciphered); 4 Aug has a printed cipher sentence (deciphered by Patera 1892) and the cipher word (iyy); 22 Jul promises more secret text on a further page in invisible ink ('carbo ostendet'), not printed; 6 Sept has secret-script passages that Patera prints in clear, in italic (p. 183 note *: 'what is printed in italic was written in secret script in the original'); their ciphertext is not printed and who deciphered them is not said. Only the 4 Aug sentence is checked here with a key. Status: no write-up yet; the site page, README row and catalogue changes are left to the maintainer.",
+  "texts": [
+   {
+    "doc": "A",
+    "label": "A, 4 Aug 1655 (Patera CLIV p. 182; MHH XXIII no. CXXIX p. 219)",
+    "transcription": "ct_1655-08-04.txt",
+    "decryption": "plain_1655-08-04.txt",
+    "reading": "reading_1655-08-04.txt",
+    "translation": "translation_1655-08-04.txt",
+    "state": "read",
+    "language": "la",
+    "read_share": 0.95,
+    "summary": "Comenius, writing from Leszno during the Swedish invasion of Poland, ends his report to Rákóczi's councillor with one ciphered sentence: 'Nothing is more certain than that Poland has perished, and the papacy in it.' The letter around it reports the Swedish advance from Poznań on Warsaw and the flight of the Catholic clergy. At this time Comenius was pressing George II Rákóczi of Transylvania to side with Sweden (background, not taken from this letter).",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (an AI language-model agent, checked by a second agent)",
+     "date": "2026-10-27",
+     "note": "The sentence reads as Latin with no hole; 'papatum' rests on Patera and on sense, since the strict decryption has 'papmtum'. The second sentence is clear text holding the one undeciphered word (iyy), marked [iyy?]. read_share 0.95 = 19 of 20 words."
+    },
+    "note": "Decipherment from Patera 1892 p. 182 note *, checked letter by letter with the key rebuilt from it (python check.py)."
+   },
+   {
+    "doc": "B",
+    "label": "B, 24 May 1655 (Patera CLII p. 178; MHH XXIII no. CIII p. 178)",
+    "transcription": "ct_1655-05-24.txt",
+    "decryption": "plain_1655-05-24.txt",
+    "state": "decoded, not read",
+    "language": "la",
+    "summary": "The cipher stands in a letter in which Comenius quotes news from a friend in England (23 Apr 1655): Schaum has not yet arrived there, the Polish and Swedish envoys in London, the Waldensian massacre in Piedmont, the fleet in America. The cipher follows this news and comes before a postscript ('Tandem apulit [...] dominus Schaum') that seems to belong to the same English letter; the letter then goes on and closes 'Raptissime 24 Maji 1655'. The cipher itself is not deciphered.",
+    "note": "Not deciphered. The decryption file records the failed trials (4 Aug key, inverse, reciprocal table; annealing with matched controls), not a reading. Plaintext language unknown; Latin assumed for the trials."
+   }
+  ]
+ }
+}
