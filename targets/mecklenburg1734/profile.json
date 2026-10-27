@@ -1,0 +1,187 @@
+{
+ "schema_version": 1,
+ "target": "mecklenburg1734",
+ "title": "Hanoverian Privy Council on the Mecklenburg commission: ciphered rescripts of George II and reports from Vienna and Copenhagen, 1731-1761 (NLA HA Hann. 9g; Unsolved Catalogue 598)",
+ "documents": [
+  {
+   "id": "964-f6",
+   "shelfmark": "NLA HA, Hann. 9g Nr. 964, f. 6 (image aufn_007)",
+   "date": "6/17 Dec 1734",
+   "year": 1734,
+   "country": "Germany",
+   "route": "George II (St James) to the Geheime Räte in Hannover",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherment written above each line of figures",
+    "partial": false
+   },
+   "length": {
+    "tokens": 137,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "texts/964_f6.txt (figures, interlinear decipherment and clear text, line by line); texts/964_f6_cipher.txt (figures only)",
+    "image_quality": "good",
+    "notes": "Four lines of undivided figures; two digits marked uncertain. Digit count from the cipher file with wc."
+   }
+  },
+  {
+   "id": "series",
+   "shelfmark": "NLA HA, Hann. 9g Nr. 97, 379, 563, 964, 1065, 1130, 1225, 1492, 1494, 1647",
+   "date": "1731-1761",
+   "year": 1734,
+   "country": "Germany",
+   "route": "George II, Erffa and von Haus (Vienna), Steinberg (Copenhagen) <-> Geheime Räte in Hannover",
+   "language": "German",
+   "pages": 1211,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherments above the figures in every passage seen (Nr. 97, 563, 964, 1130)",
+    "partial": "unknown"
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not transcribed beyond 964 f. 6",
+    "image_quality": "good",
+    "notes": "1,211 images in ten files; five files (1,122 images) not yet opened."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Undivided runs of figures inside clear German letters; about 137 figures for 20 words on 964 f. 6, so a syllable or word code of the Hanoverian chancery.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "notes": "Group boundaries not marked; no code table built."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "interlinear decipherments on the cipher pages themselves",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Posed the problem by pasting the catalogue 598 brief; no target-specific intervention.",
+  "tools": [
+   "image viewing"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Archivportal-D blocked by a bot check; Arcinsys ids from the DDB Solr index, METS and the fixed image URL pattern from the in-app browser; page counts of all ten files from thumbnails.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Paged through Nr. 97 (all), 964 (all), 379, 563 and 1130 (images 5-8): every cipher run seen carries an interlinear decipherment; outgoing drafts are clear with the enciphered passages underlined.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Nr. 964 f. 6 (rescript 6/17 Dec 1734): figures, interlinear decipherment and clear text transcribed line by line (texts/964_f6.txt); reading written (texts/964_f6_reading.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "hypothesis",
+   "what": "System from figures vs decipherment on f. 6: about 137 figures for about 120 plaintext letters, so a syllable/word code, not a letter cipher. Group boundaries not recovered.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "In progress: the passages were deciphered at the time (interlinear decipherments). One passage (964 f. 6) transcribed and read from its decipherment; the rest not yet transcribed, so the method stays 'not solved' until they are, then 'read from existing decipherment'.",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "notes": "Catalogue 598 asked whether decipherments are filed with the ciphers: they are written between the lines.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Hanover chancery interlinear decipherments"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "964-f6",
+    "label": "George II to the Privy Council in Hanover, St James 6/17 Dec 1734",
+    "summary": "Approves what the Council wrote to Erffa in Vienna and von Haus: the Mecklenburg Reich contingent should not be raised by the King of Prussia. The ciphered clause is deciphered between the lines.",
+    "state": "read",
+    "language": "de",
+    "contemporary": "texts/964_f6.txt",
+    "reading": "texts/964_f6_reading.md"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "All other cipher passages in the ten files",
+    "blocker": "not-attempted",
+    "detail": "public images, interlinear decipherments seen on every passage opened; transcription not done"
+   },
+   {
+    "item": "Group-by-group check of the decipherments; the 1730s Hanoverian code table",
+    "blocker": "not-attempted",
+    "detail": "rebuildable by aligning runs with their interlinear decipherments"
+   }
+  ],
+  "fraction_read": "unknown",
+  "fraction_read_method": "unknown"
+ }
+}
