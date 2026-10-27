@@ -90,7 +90,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "The German text of telegram No. 205 (groups 0-146) is printed by Bernstorff, Deutschland und Amerika (1920), pp. 325-326, and in English in the Official German Documents (1923), vol. II, p. 1017. Neither links it to the ciphertext in NARA 763.72111/4443 or gives code groups. No decipherment of the ciphertext and no Room 40 decrypt was found (light web search; TNA HW 7 and ADM 137 not checked). Nothing found for groups 147-576.",
+   "where": "The German text of telegram No. 205 (groups 0-146) is printed by Bernstorff, Deutschland und Amerika (1920), pp. 325-326, and in English in the Official German Documents (1923), vol. II, p. 1017. Neither links it to the ciphertext in NARA 763.72111/4443 or gives code groups. No decipherment of the ciphertext and no Room 40 decrypt was found in a light web search; not consulted: Boghardt, The Zimmermann Telegram (2012), on the State Department route and Room 40's handling of Bernstorff's Jan 1917 traffic; TNA HW 7 and ADM 137; PA AA. Since the British read the State Department cables and 0075 was partly broken, a Room 40 decrypt may exist; 'not found in print' and 'first link made here' are qualified claims until Boghardt is checked. Nothing found for groups 147-576.",
    "found": "during attempt",
    "used": true
   },
@@ -115,9 +115,10 @@
   {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Blind test without the alignment (decode.py --controls, transcription as corrected): proportional position map, a repeated group scores when all its occurrences meet one shared word. Window +-3: tel 205 20/25; telegram No. 212 as control 4/25; part-2 blocks against No. 205 3/19, 2/16, 5/16; 2000 shuffles mean 0.17, max 0.44, none reaching the observed 0.80.", "result": "worked"},
   {"date": "2026-10-27", "kind": "verification", "what": "Independent check by a second agent: about 117 groups re-read on full-resolution scans (116 agree; one overtyped figure at group 447 marked [?]); group 40 = 88789 and group 20 = 8918 confirmed; German print re-read; alignment redone blind with own code; spans checked against the transcription. Corrections applied: six-figure group 108609[?] at 377 added to the census; group 20 = 8918; prefix 8 = past participle secure twice, not three times.", "result": "worked"},
   {"date": "2026-10-27", "kind": "reading", "technique": ["plaintext matching", "contextual inference"], "what": "Wrote telegram No. 205 as German sentences with holes: words on runs whose split is not fixed (groups 19-23, 28-30, 59-63, 120-121, 125-131), the doubtful 8096, the extra group 7918, the head and the end group are marked. read_share 0.793.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "reading", "technique": ["key matching"], "what": "Applied the 82 groups to groups 147-576: 69 of 430 (16.0%) get a value, nearly all function words (ich, daß, hat, auf, für, Wilson, Friedens-). No sentence can be built.", "result": "failed"}
+  {"date": "2026-10-27", "kind": "reading", "technique": ["key matching"], "what": "Applied the 82 groups to groups 147-576: 69 of 430 (16.0%) get a value, nearly all function words (ich, daß, hat, auf, für, Wilson, Friedens-). No sentence can be built.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 120 tokens, 87 types, de-modern order 4: reading -2.062 per letter; random keys -2.008 (z -2.1); key annealed onto shuffled ciphertext best -1.809 (mean -1.816, z -29.4); annealer on the real text -1.822. Verdict: underdetermined.", "result": "partial"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-10-27", "model": "de-modern", "file": "validation.tsv", "tokens": 120, "types": 87, "tokens_per_type": 1.38, "score": -2.062, "nulls": {"random keys": {"n": 200, "mean": -2.008, "sd": 0.026, "max": -1.943, "z": -2.1, "p": 0.9701}, "shuffled refit": {"n": 6, "mean": -1.816, "sd": 0.008, "max": -1.809, "z": -29.4, "p": 1.0}}, "power": -1.822, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.062; polyphony 0.0; 27 unread tokens left out; annealer on the real text from random keys reached -1.822. Expected for a whole-word code with 1.38 tokens per type: random keys that swap word values of equal length still give German words, so the letter model cannot separate the reading from a fitted key. The statistical check that fits this code is the blind alignment test in decode.py --controls (16/25 at window 2 against 2/25 for the tel 212 control; 0 of 2000 shuffles reach the observed score)."}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on plaintext from external sources",
@@ -130,7 +131,7 @@
   "codes_open": {"open": 313, "total": 404, "tokens_open": 388},
   "verification": ["independent clear copy", "matched control", "historical consistency"],
   "provenance": "contributed",
-  "notes": "Contributed by WAINUT (catalogue 657). Not a decipherment of an unknown text for part 1: its German text was printed in 1920; what is new is the identification of the ciphertext as telegram No. 205, the transcription and the 82 recovered code groups. Part 2 (430 groups) is a second text in the same code and stays unread.",
+  "notes": "Contributed by WAINUT (catalogue 657). Not a decipherment of an unknown text for part 1: its German text was printed in 1920; what is new, as far as a light search found (Boghardt 2012 and Room 40 files not checked), is the identification of the ciphertext as telegram No. 205, the transcription and the 82 recovered code groups. Part 2 (430 groups) is a second text in the same code and stays unread.",
   "credits": [
    {"who": "lccompany", "role": "solution", "note": "groups 0-146 aligned with telegram No. 205; 82 code groups recovered; part 2 shown to be a second text", "date": "2026-10-27"},
    {"who": "lccompany", "role": "transcription", "note": "577 groups from NARA M367 roll 166 frames 0785-0786", "date": "2026-10-27"},
@@ -139,7 +140,7 @@
    {"who": "bernstorff", "role": "key or decipherment used", "note": "German text of telegram No. 205 printed in Deutschland und Amerika (1920), pp. 325-326, used as the crib", "date": "1920", "source": "J. H. von Bernstorff, Deutschland und Amerika: Erinnerungen aus dem fünfjährigen Kriege (Berlin: Ullstein, 1920), pp. 325-326", "published": true}
   ],
   "gaps": [
-   {"item": "groups 147-576 (the second text, 430 groups)", "blocker": "no-key-material", "detail": "no printed or archival plaintext found; the 82 known groups fill 16%; the German Foreign Office copy (PA AA) or a Room 40 decrypt would be the next crib"},
+   {"item": "groups 147-576 (the second text, 430 groups)", "blocker": "open-codes", "detail": "no printed or archival plaintext found yet; the 82 known groups fill 16%. Workable next step, not run: sibling telegrams sent by the same State Department route in Dec 1916 - Jan 1917 (catalogue 635, Foreign Office to Bernstorff, 5 Dec 1916; other Bernstorff telegrams printed in Bernstorff 1920 or the Official German Documents) as further cribs for the same code; the PA AA file copy or a Room 40 decrypt would also serve"},
    {"item": "head groups 958 677 728 229 0705 and end group 0278 of telegram No. 205", "blocker": "open-codes", "detail": "probably the heading ('Antwort auf Telegramm 148') and the signature or an end marker; not fixed"},
    {"item": "runs 19-23, 28-30, 59-63, 120-121 and 125-131 of telegram No. 205", "blocker": "open-codes", "detail": "fewer or other groups than printed words; the words come from the print; 125-131 contains none of the known groups for muß, ich or daß"},
    {"item": "group 7918 (position 76) and the doubtful 8096 'unvermeidlich'", "blocker": "open-codes", "detail": "7918 has no word in the print; 8096 is a doubtful reading of the figures"}
@@ -155,7 +156,6 @@
     "language": "de",
     "state": "read in part",
     "read_share": 0.793,
-    "reading_review": {"grade": "A", "by": "WAINUT (AI language-model agent; a second agent re-read the images and redid the alignment)", "date": "2026-10-27", "note": "Coherent German sentences that follow the 1920 print; the holes are the head, the end group, one extra group and five runs whose split is not fixed. read_share from research/reading_audit/v2_score.py (hole rate 0.207)."},
     "summary": "Bernstorff reports that he has handed Lansing the German memorandum on armed merchant ships, and warns that acting on it will wreck Wilson's peace mediation and bring a break with the United States unless Berlin waits until agreement is reached in Washington; since Wilson decides everything, he must first read the memorandum. Three weeks later Germany declared unrestricted U-boat warfare and the United States broke off relations."
    },
    {

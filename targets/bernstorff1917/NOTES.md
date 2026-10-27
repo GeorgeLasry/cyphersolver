@@ -168,9 +168,12 @@ heading or a repeated formula. A run 8769 3865 2452 occurs twice (507-509, 512-5
   Bernstorff's 1920 print as the source of the crib (role "key or decipherment used").
 - No decipherment of this ciphertext and no code groups of this code were found in print. The link between the
   ciphertext in 763.72111/4443 and telegram No. 205 is not made in FRUS, Bernstorff or the Official German
-  Documents. The web search was light.
+  Documents. The web search was light, and Boghardt, *The Zimmermann Telegram* (2012), which covers the State
+  Department route and Room 40's handling of Bernstorff's January 1917 traffic, was not consulted. Since the British
+  read the State Department cables and code 0075 was partly broken, a Room 40 decrypt may exist. "Not found in
+  print" and "first link made here" are therefore qualified claims until Boghardt is checked.
 - A British (Room 40) intercept of this message, if one exists, would be in TNA HW 7 or ADM 137; not checked
-  (offline). The Official German Documents (vol. II, p. 881, minutes of 18 Nov 1919) list it as "a telegram of Ambassador Count Bernstorff
+  (offline), nor is the PA AA file copy. The Official German Documents (vol. II, p. 881, minutes of 18 Nov 1919) list it as "a telegram of Ambassador Count Bernstorff
   of January 10, 1917, which was communicated from the Foreign Office on January 14 and 15, 1917".
 
 ## 9. Proposed catalogue corrections (entry 657)
@@ -185,8 +188,11 @@ heading or a repeated formula. A run 8769 3865 2452 occurs twice (507-509, 512-5
 
 ## Remaining gaps
 
-- Groups 147-576, the second text (430 groups) - blocker: no-key-material. No printed or archival plaintext was
-  found, and the 82 known groups fill only 16% of it.
+- Groups 147-576, the second text (430 groups) - blocker: open-codes. No printed or archival plaintext was
+  found yet, and the 82 known groups fill only 16% of it. A workable next step was not run: sibling telegrams sent
+  by the same State Department route in Dec 1916 - Jan 1917 as further cribs for this code, first catalogue 635
+  (Foreign Office to Bernstorff, 5 Dec 1916, through the US Embassy Berlin), then other Bernstorff telegrams printed
+  in Bernstorff 1920 or the Official German Documents that went this way.
 - The head groups 958 677 728 229 0705 and the end group 0278 of No. 205 - blocker: open-codes.
 - The runs 19-23, 28-30, 59-63, 120-121 and 125-131, group 7918, and the doubtful 8096 - blocker: open-codes. They
   occur once each; a second text in this code with a known plaintext would fix them.
@@ -194,13 +200,21 @@ heading or a repeated formula. A run 8769 3865 2452 occurs twice (507-509, 512-5
 ## Escalation
 
 - [x] siblings: Bernstorff's telegram No. 212 of 16 Jan 1917 was used as a control; other State-route German
-  telegrams of Dec 1916 to Jan 1917 in RG 59 were not checked for shared groups (next step).
+  telegrams of Dec 1916 to Jan 1917 in RG 59 were not checked for shared groups. This is the next step (first
+  catalogue 635, 5 Dec 1916), so part 2 stays on open-codes, not no-key-material.
 - [x] clear-pages: the memorandum in clear (frames 0769-0775) is what No. 205 reports on, not its text.
 - [x] known-keys: no copy of code 0075 or 13040 was available; 13040 ruled out by its group range.
 - [x] print: Bernstorff 1920 and the Official German Documents 1923 read; they give No. 205 but not the second text.
 - [x] key-rebuild: 82 groups fixed from No. 205; not enough for part 2.
-- [ ] retry: the German Foreign Office file copy of the second message (PA AA, Weltkrieg / Friedensvermittlung
-  series), or a Room 40 decrypt (TNA HW 7, ADM 137), would be the crib for part 2.
+- [x] retry: the prefix-figure rule is applied to part 2 by `decode.py` (a five-figure group takes the value of its
+  four-figure base): of the 58 five-figure groups in part 2, 5 get a value this way (included in the 69); no
+  sentence follows. Beyond the siblings above, the German Foreign Office file copy of the second message (PA AA,
+  Weltkrieg / Friedensvermittlung series) or a Room 40 decrypt (TNA HW 7, ADM 137) would be the crib for part 2.
+- Statistical validation: `validation.tsv` holds the 147 groups of No. 205 with their values (27 unread);
+  `python docs/_validate.py bernstorff1917` gives "underdetermined" (reading -2.062 per letter, random keys -2.008,
+  key fitted to shuffled text -1.816). This is expected for a whole-word code with 1.38 tokens per type: swapping
+  word values of equal length still yields German words. The test that fits this code is the blind alignment test
+  in section 6.
 
 ## Files
 
@@ -208,6 +222,7 @@ heading or a repeated formula. A run 8769 3865 2452 occurs twice (507-509, 512-5
 - `ciphertext_tel205.txt`, `ciphertext_part2.txt`: the groups of each part without marks (written by `decode.py`).
 - `codebook.tsv`: the 82 recovered code groups (key file).
 - `align_205.tsv`: the alignment of groups 0-146 with the print.
+- `validation.tsv`: groups 0-146 with their values, for `docs/_validate.py`.
 - `decryption_tel205.txt`, `decryption_part2.txt`: the line-by-line decryptions (written by `decode.py`).
 - `reading_tel205.md`, `translation_tel205.md`: telegram No. 205 as German sentences and in English.
 - `printed_tel205_de.txt`: the German text of No. 205 as printed in 1920 (the crib).
