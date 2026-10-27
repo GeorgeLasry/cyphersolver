@@ -9967,13 +9967,13 @@
    "shelfmark": "Archives départementales de Seine-et-Marne, 142J5",
    "folio_note": "1 letter among 6",
    "cls": "B",
-   "status": "Inventory: 'lettre de Rome à l'occasion des bonnes fêtes, en partie chiffrée, non signée 22 décembre 1699'. The repo's bossuet target covers BnF NAF 28227(9), the abbé's Rome correspondence of 1697-98 — same circle. The 24 Oct Archives nationales sweep noted it is probably printed decoded in Urbain-Levesque, Correspondance de Bossuet t. 12; check that first.",
+   "status": "Inventory: 'lettre de Rome à l'occasion des bonnes fêtes, en partie chiffrée, non signée 22 décembre 1699'. The repo's bossuet target covers BnF NAF 28227(9), the abbé's Rome correspondence of 1697-98 — same circle. The 24 Oct Archives nationales sweep noted it is probably printed decoded in Urbain-Levesque, Correspondance de Bossuet t. 12; check that first. Ciphertext not online (27 Oct 2026). The keys are in print: Urbain-Levesque, Correspondance de Bossuet t. XII has an appendix 'Clef de la correspondance sur le Quiétisme' with Bossuet's, Phelipeaux's and La Broue's keys, so a scan from AD77 should be enough to read it.",
    "why": "Aftermath of the Quietism affair at Rome.",
    "importance": 2,
    "solvability": 2,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 FranceArchives / Archives nationales sweep (research/central_archives/); not viewed",
-   "verify": "Ask AD77 for 142J5; test the bossuet target key.",
+   "verify": "Ask AD77 for a scan of 142J5; read it with the keys in the Urbain-Levesque t. XII appendix 'Clef de la correspondance sur le Quiétisme' (Bossuet, Phelipeaux, La Broue).",
    "links": [
     {
      "label": "FranceArchives",
@@ -9982,9 +9982,11 @@
    ],
    "seen": "catalogue",
    "source": "FranceArchives / Archives nationales sweep",
-   "prior_art": "open (checked 26 Oct 2026: repo known.py, web search)",
+   "prior_art": "keys in print (27 Oct 2026: Urbain-Levesque t. XII appendix 'Clef de la correspondance sur le Quiétisme'); ciphertext not online, no reading found",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 551,
@@ -12198,13 +12200,13 @@
    "shelfmark": "AGS, Estado, K 1639 (old D. 3), no. 89",
    "folio_note": "4 h. f.; \"Parte en cifra\"",
    "cls": "B",
-   "status": "Paz, Catálogo IV (1914) p. 14: \"Puntos en que el Papa deseaba le complaciese Carlos V acerca de la Liga y negociaciones pendientes con Francia. — 8 Abril 1524. — Lat. — Parte en cifra. — 4 h. f.\" No decipherment mentioned. Not on DECODE or in the repo (known.py: K 1639 no hits). Printed decipherment possible (Bergenroth CSP Spain II 1524 covers Sessa's Rome correspondence).",
+   "status": "Paz, Catálogo IV (1914) p. 14: \"Puntos en que el Papa deseaba le complaciese Carlos V acerca de la Liga y negociaciones pendientes con Francia. — 8 Abril 1524. — Lat. — Parte en cifra. — 4 h. f.\" No decipherment mentioned. Not on DECODE or in the repo (known.py: K 1639 no hits). Printed decipherment possible (Bergenroth CSP Spain II 1524 covers Sessa's Rome correspondence). No image found on PARES for K 1639 (27 Oct 2026); not transcribed.",
    "why": "Papal terms to the Emperor in April 1524, before Pavia, in the Rome imperial cipher family the repo already reads (sessa1523/sessa1524).",
    "importance": 4,
    "solvability": 3,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Check Bergenroth CSP Spain II (1524) for an 8 April 1524 papal memorandum; find K 1639 no. 89 on PARES and test the Sessa 1523-24 key from targets/sessa1524.",
+   "verify": "Find K 1639 no. 89 on PARES (no image found 27 Oct 2026; may need AGS scans) and test the Sessa 1523-24 key from targets/sessa1524; check Bergenroth CSP Spain II (1524) for the 8 April points.",
    "links": [
     {
      "label": "Paz, Catálogo IV (1914), archive.org",
@@ -12215,7 +12217,9 @@
    "source": "PARES (AGS) sweep",
    "prior_art": "open as far as checked (26 Oct 2026: CSP Spain II, April 1524 section on BHO, calendars K 1639 no. 50 (the Emperor's answer to the Pope's proposals) but not the 8 April points; cryptiana not yet searched)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 615,
@@ -12307,13 +12311,13 @@
    "shelfmark": "AGS, Estado, leg. 6446 and 6452 (run 6445-6452)",
    "folio_note": "'Correspondencia cifrada' (6446, Apr-Jun 1729); 'Avisos cifrados' (6452, Jun-Sep 1730)",
    "cls": "A",
-   "status": "Paz, Catálogo II (1912) pp. 143-145. No decipherment noted; Paz's preface says embassy letters normally reached the Council as secretaries' descifrados, so decipherments may be in the same legajos. known.py: 6446, Viana, Eguiluz no hits.",
+   "status": "Paz, Catálogo II (1912) pp. 143-145. No decipherment noted; Paz's preface says embassy letters normally reached the Council as secretaries' descifrados, so decipherments may be in the same legajos. known.py: 6446, Viana, Eguiluz no hits. The despatches are not online (27 Oct 2026), but the key is: PARES has a digitised 'Cifra para la correspondencia reservada del marqués de Castelar con José de Viana y Eguiluz' (AHN Estado 193 Exp. 66, PARES 12709762).",
    "why": "Spanish chargé in Vienna reporting the breakdown of the Austro-Spanish alliance after the Treaty of Seville.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 3,
    "score_note": "Scored from the archive description during the Oct 2026 PARES/AGS printed-catalogue sweep (research/pares_ags/); not viewed",
-   "verify": "Find leg. 6446/6452 on PARES; look for interlinear or separate descifrados.",
+   "verify": "Get scans of AGS Estado 6446 and 6452; read with the Castelar-Viana y Eguiluz cifra (AHN Estado 193 Exp. 66, PARES 12709762); look for interlinear or separate descifrados in the same legajos.",
    "links": [
     {
      "label": "Paz, Catálogo II (1912), archive.org",
@@ -12326,9 +12330,11 @@
    ],
    "seen": "catalogue",
    "source": "PARES (AGS) sweep",
-   "prior_art": "open as far as checked (26 Oct 2026: repo, DECODE list)",
+   "prior_art": "key online (27 Oct 2026: AHN Estado 193 Exp. 66, PARES 12709762); despatches not digitised, no reading found",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 621,
@@ -14846,7 +14852,7 @@
    "shelfmark": "NARA RG 165, MID file 9140-103 (index card M1194 roll 243, frame 1821); see also 4131-44 (Olga de Visser message and Kolbeck key)",
    "folio_note": "One message plus key.",
    "cls": "A",
-   "status": "Cards: the Vissers were arrested at Laredo carrying a message in code and its key, weeks after the Zimmermann telegram. No decipherment is recorded on the card, but with the key held it was probably read. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online.",
+   "status": "Cards: the Vissers were arrested at Laredo carrying a message in code and its key, weeks after the Zimmermann telegram. No decipherment is recorded on the card, but with the key held it was probably read. The MID correspondence file itself (RG 165, entry 65, MID 1917-41) is not digitised; only the index card (M1194/M912/M1474) is online. The MID cards are not digitised (27 Oct 2026).",
    "why": "Central Powers courier traffic between Mexico City and Texas in February 1917.",
    "importance": 3,
    "solvability": 1,
@@ -14863,7 +14869,9 @@
    "source": "NARA bulk-scan triage (slice E, RG 165/RG 65 cipher-word pass)",
    "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "access": "archive",
+   "as_of": "2026-10-27"
   },
   {
    "id": 699,
