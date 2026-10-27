@@ -89,9 +89,9 @@
    "transcription": {
     "by": "llm from images",
     "source": "wainut/964_f8.txt (figures, interlinear decipherment and clear text, line by line); wainut/964_f8_cipher.txt (figures only)",
-    "corrections": 1,
+    "corrections": 2,
     "image_quality": "good",
-    "notes": "Contributed by WAINUT (27 Oct 2026). Read from the full-resolution NLA images (7617 x 6692 px); figures and glosses re-read independently by a second reader, who agreed digit for digit and resolved one uncertain figure (C12, 4th figure: 6). C11's 2nd figure (2) stays uncertain. Measured with docs/_check_profile.py --measure --drop-first --width 1."
+    "notes": "Contributed by WAINUT (27 Oct 2026). Read from the full-resolution NLA images (7617 x 6692 px); figures and glosses re-read independently by a second reader, who agreed digit for digit and resolved one uncertain figure (C12, 4th figure: 6). C11's 2nd figure (2) stays uncertain. A review pass changed C8's 40th figure from 8 to 2 (uncertain; the upper loop is the descender of the gloss 'beyden'). Measured with docs/_check_profile.py --measure --drop-first --width 1."
    }
   }
  ],
@@ -277,7 +277,7 @@
    {
     "item": "964 ff. 8r-8v: the five barred stretches of figures (BAR1, BAR2, BAR3, tails of C5 and C12)",
     "blocker": "no-key-material",
-    "detail": "no interlinear decipherment over them and no key; BAR2 repeats C13's 'der von Knörre' figures, the rest have no match"
+    "detail": "no interlinear decipherment over them and no key; BAR2 repeats C13's 'der von Knörre' figures (2159826533) and shares 215222 with the start of the C5 stretch under 'der von Knörre'; BAR1 ends with 40546, which also opens C9 ('man mit Ihr. Kayserl. Mayt.'), but a 5-figure match between two runs can be chance"
    }
   ],
   "fraction_read": "unknown",

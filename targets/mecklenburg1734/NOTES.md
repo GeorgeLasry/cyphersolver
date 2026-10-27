@@ -102,6 +102,9 @@ transcribed in this contribution, and the five unopened files stay unopened.
 - **Transcription** (`wainut/964_f8.txt`, line by line with the glosses and the clear text; `wainut/964_f8_cipher.txt`,
   figures only). The two readings agree digit for digit. C11's 2nd figure (2) is uncertain (a blot); C12's 4th
   figure was read 6 by the second reader and left open by the first. In BAR2 the 5 after `26533` is a clear figure.
+  A review pass changed one figure that both readers had as 8: the 2nd figure on C8's second line is more likely a
+  2 (`...1204 / 22958`), because the upper loop that made it look like an 8 is the descender of the "y" of the gloss
+  "beyden", in the darker ink. It is marked uncertain. The repeat check gives the same results either way.
 - **Glosses**, as written: C1 "dem RhsRaht von Knörre"; C2 "dasjenige [?bewürket] w[...]"; C3 "[?dienstlich]" (the
   two readers had "dieserhalb" and "dinst[l?]ich"); C4 "[?befürchtet] und hier eingeleitet zu werden" (the last
   word may be "werben", to recruit); C5 "nunmehr, der von Knörre"; C6 "über sich genommen mit dem"; C7 "RVCantzler
@@ -116,7 +119,7 @@ transcribed in this contribution, and the five unopened files stay unopened.
   intention known to a Privy Councillor whose name is not read with certainty ("[?Verporten]"). The ciphered parts
   are the names and the money proposal. This is the Vienna side of the matter in the rescript on f. 6 (6/17 Dec
   1734: Prussia should not take over raising the Mecklenburg contingent) and Erffa's answer to the rescript of 5 Dec
-  1734 (the clear draft on image 004). State: **read in part**, because of the five undeciphered stretches and
+  1734 (the clear draft of that rescript, to Erffa at Vienna, is on image 004). State: **read in part**, because of the five undeciphered stretches and
   several uncertain clear-text words.
 - **Where the gloss "der von Knörre" sits.** It is written over C5's figures `2152220834 0590365 97`, which do not
   contain the Knörre figures. BAR2, which follows, does (`2159826533...13571`, as in C13 "der von Knörre"). Either the
