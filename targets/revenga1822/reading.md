@@ -2,8 +2,9 @@
 # Deciphered passages are in «guillemets»; the rest is the clear text of the letter. Word division, accents and
 # punctuation are ours. [...] = not read; [?word] = a reading from the sense, where the first-pass letters do not
 # give the word cleanly. Slips of the first-pass transcription (a dropped, added or confused letter or two, where the
-# word is certain from the sense and the clear text) are corrected silently, e.g. "minisros" -> ministros, "ciaso" ->
-# caso, "-ciion" -> -ción, "grivad ma te" -> privadamente; each group's mechanical output is in decryption.txt.
+# word is certain from the sense and the clear text) are corrected without a mark in the text, and every one is
+# listed in corrections.md, group by group; each group's mechanical output is in decryption.txt.
+# They are not yet checked on the film: the second transcription pass is still to do.
 # Five fragments; the text between them is lost or not on the film. English: translation.md.
 
 ## Fragment 1 (frame 0057, right; heading "2o. duplicado. Al Sr. Ministro de Estado y Relaciones Exteriores de Colombia")

@@ -60,8 +60,9 @@
   "attack": "ciphertext-only",
   "human_role": "WAINUT set the task (catalogue 641) and the rules; the AI agents fetched the frames, transcribed, solved and verified. No target-specific human intervention.",
   "tools": [
-   "quadgram hill-climb against Spanish statistics (solver's working script, not kept)",
-   "decrypt.py (decryption and controls)"
+   "quadgram hill-climb against Spanish statistics (the first solver's working script, not kept)",
+   "solve.py (ciphertext-only swap annealer against es-modern 4-grams, rewritten for the review)",
+   "decrypt.py (decryption, controls, validation pairs)"
   ],
   "models": ["AI language-model agents (WAINUT); a vision-capable language model for the transcription"],
   "sessions": 1,
@@ -77,19 +78,21 @@
   {"date": "2026-10-27", "kind": "transcription", "what": "Second pass on three groups: C39 'nulidad' (e, not c), C40 'por España' (f = ñ on the film), the comma mark in C10; verifier readings applied to C01, C05, C06, C07, C42, C52, C53.", "result": "partial"},
   {"date": "2026-10-27", "kind": "transcription", "what": "Review against the frames: C26 Arguelles is msbtctll (c = plain ll); C38 a line break typed as a space removed; C42 one l too many in Prusia (ombll | gva across the line). Key counts refreshed; the gg next to plain c (-ciion) recorded as open.", "result": "worked"},
   {"date": "2026-10-27", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Reading as Spanish sentences with the clear text, slips of the first pass corrected where the word is certain from the sense, doubtful words marked [?word]; English translation. About a dozen places open.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "literature search", "what": "Manning 1925 vol. 2 p. 1272 checked on archive.org: enclosure not printed, no key furnished. One web search with key phrases found no printed text.", "result": "worked"}
+  {"date": "2026-10-27", "kind": "literature search", "what": "Manning 1925 vol. 2 p. 1272 checked on archive.org: enclosure not printed, no key furnished. One web search with key phrases found no printed text.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "solver", "technique": ["simulated annealing", "language-model scoring"], "what": "Review: the solver rewritten as solve.py (swap annealing from random keys against es-modern 4-grams, word space and commas left out). Seed 641, 4 restarts: three reach -2.87 per char and agree with KEY on 97.5-97.7% of sign occurrences; they differ on the rare c, f, k, n, u. KEY itself scores -2.834, above the annealer.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2285 tokens, 27 types, es-modern order 4: reading -2.836 per letter; random keys -7.61 (z 6.5); key annealed onto shuffled ciphertext best -4.498 (mean -4.529, z 56.2); annealer on the real text -2.826. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-10-27", "model": "es-modern", "file": "validation.tsv", "tokens": 2285, "types": 27, "tokens_per_type": 84.63, "score": -2.836, "nulls": {"random keys": {"n": 200, "mean": -7.61, "sd": 0.732, "max": -5.698, "z": 6.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.529, "sd": 0.03, "max": -4.498, "z": 56.2, "p": 0.1429}}, "power": -2.826, "verdict": "pass", "notes": "claimed per-occurrence score -2.836; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -2.826"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "method_basis": "The substitution key was recovered from the cipher groups alone by a hill-climb against Spanish statistics; no key or plaintext was available.",
   "contribution": ["transcription", "key recovered"],
   "fraction_read_method": "measured",
-  "fraction_read_source": "decrypt.py over transcription.txt: 2,282 of 2,294 sign places given a value (8 unread places, one q without value, 3 k of doubtful value). The deciphered parts of reading.md (the text in guillemets, 356 words) score hole rate 0.18 on docs/_check_reading.py --file, hence fraction_coherent 0.82; the whole reading, clear text included, scores 0.132 (read_share 0.868).",
-  "fraction_read": 0.995,
+  "fraction_read_source": "Share of the deciphered words read as sense: the deciphered parts of reading.md (the text in guillemets, 356 words) score hole rate 0.18 on docs/_check_reading.py --file, hence 0.82 (counting words, 344 of 370 in guillemets are neither [?] nor [...], but about 110 of them are first-pass slips corrected in reading.md and listed in corrections.md, not yet checked on the film; the dropped tails of C17-C19, C38, C43, C49, C53-C56 are outside this count). For comparison: 2,282 of 2,294 sign places have a value (0.995, not a reading measure); 0.427 of the decrypted words are in the Spanish word list as transcribed; the checker scores reading.md 0.586 of sentences clean. The whole reading, clear text included, scores 0.132 (read_share 0.868).",
+  "fraction_read": 0.82,
   "fraction_coherent": 0.82,
-  "verification": ["independent verification", "historical consistency"],
+  "verification": ["independent verification", "historical consistency", "statistical test"],
   "provenance": "contributed",
   "credits": [
    {"who": "lccompany", "role": "solution", "note": "key recovered from the ciphertext; 56 cipher groups decrypted and read in part, with English translation", "date": "2026-10-27"},
@@ -98,7 +101,7 @@
   ],
   "gaps": [
    {"item": "doubtful or open words in about a dozen places (C01 end, C05, C08, C12, C17-C19, C23, C36, C38, C43, C49, C50, C53, C54, C55-C56)", "blocker": "not-attempted", "detail": "first-pass transcription; a full second pass on the frames should settle most"},
-   {"item": "cipher signs for plain z and plain j; final z or k as a stop; gg where plain i stands next to plain c (-ciion)", "blocker": "too-short", "detail": "two to four occurrences each"},
+   {"item": "cipher signs for plain z and plain j; final z or k as a stop; gg where plain i stands next to plain c (-ciion)", "blocker": "not-attempted", "detail": "workable: plain i stands where z is expected (cadii, diei, pobreia, forioso, uatoriien), so the gg digraph or g itself is the candidate z sign; the key table runs in blocks (a b c d -> v x y z; m n ñ -> d e f; o-t -> p o n m ll l; v x y -> j i h), which predicts z -> g; to be tested on the film in the second pass"},
    {"item": "clear text of 0057 left, 0055 right (top) and 0056 right (end)", "blocker": "not-attempted", "detail": "not transcribed"}
   ],
   "texts": [
@@ -112,8 +115,7 @@
     "language": "es",
     "state": "read in part",
     "read_share": 0.868,
-    "summary": "The Colombian commissioners in Madrid report on Spanish politics in 1822: republicans and constitutional royalists at odds, Riego, the fall of the ministers, an anti-constitutional plot, an empty treasury and talk of national bankruptcy. They try to unite the American deputies and get a motion on extraordinary Cortes, argue against fears that Russia, Austria and Prussia had divided America, hope the Cortes will authorise the Executive to treat with them, and report Apodaca's private pessimism and La Torre's request for men and money. The cipher carries the names and the sensitive judgements.",
-    "reading_review": {"grade": "B", "by": "WAINUT (AI language-model agent, checked against the frames)", "date": "2026-10-27", "note": "Coherent Spanish sentences across five fragments; about a dozen words doubtful or open because the transcription is a first pass. The translation follows the same holes."}
+    "summary": "The Colombian commissioners in Madrid report on Spanish politics in 1822: republicans and constitutional royalists at odds, Riego, the fall of the ministers, an anti-constitutional plot, an empty treasury and talk of national bankruptcy. They try to unite the American deputies and get a motion on extraordinary Cortes, argue against fears that Russia, Austria and Prussia had divided America, hope the Cortes will authorise the Executive to treat with them, and report Apodaca's private pessimism and La Torre's request for men and money. The cipher carries the names and the sensitive judgements."
    }
   ],
   "key_file": "key.txt",

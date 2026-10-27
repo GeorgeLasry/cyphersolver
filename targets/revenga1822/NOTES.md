@@ -1,8 +1,9 @@
 # Revenga's intercepted letter from Madrid, 1822: the cipher passages of the "paper in fragments" (catalogue 641)
 
-Status: contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is read in part
-(first-pass transcription, a dozen holes and doubtful words). The site page and the ledger rows are left to the
-maintainer.
+Status: in progress. Contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is
+deciphered in part on a first-pass transcription (a dozen holes and doubtful words, about 110 slips corrected from the
+sense and listed in corrections.md). The next step is a full second transcription pass on the four frames and a test
+of the z sign. The site page and the ledger rows are left to the maintainer.
 
 Catalogue 641. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the cipher was transcribed from the NARA frames with a vision-capable language model. An independent agent re-read
@@ -53,7 +54,11 @@ aconsejó, ejecutivo), and whether a final z or k after a word is a stop.
 **How the key was found.** No key was given and none was used. A quadgram hill-climb against Spanish statistics (a
 Cervantes text) on the cipher groups, with `ll` merged into one symbol and cipher `a` removed, gave
 "los dos grandes partidos republicano y realista constitucional" at once. That made `a` the space, and the rest of the
-key followed. The solver script was not kept; `decrypt.py` applies the key.
+key followed. That solver script was not kept; `decrypt.py` applies the key. For the review the solver was rewritten
+as `solve.py` (swap annealing from random keys against the repository's es-modern 4-gram model, word space and commas
+left out, nothing taken from the key). With seed 641 and four restarts, three reach -2.87 per character and agree
+with the key on 97.5-97.7 % of sign occurrences; they differ only on the rare c, f, k, n, u. The key itself scores
+-2.834, above the annealer's best.
 
 ## 3. The transcription
 
@@ -79,7 +84,7 @@ C38 a line break that had been typed as a space, C42 one l too many in Prusia). 
 
 The text as sentences is in `reading.md` (Spanish), with the deciphered parts in «guillemets», and in
 `translation.md` (English). Slips of the first pass (a dropped, added or confused letter or two, where the word is
-certain from the sense and the clear text) are corrected silently there; `decryption.txt` keeps the raw output. Anything
+certain from the sense and the clear text) are corrected there and each is listed in `corrections.md`; `decryption.txt` keeps the raw output. Anything
 beyond that is marked `[?word]`, and what cannot be read is `[...]`.
 
 What the letter says (five fragments):
@@ -125,6 +130,15 @@ Share of decrypted words (three letters or more) found in the repository's Spani
 The independent verifier ran similar controls with its own code and word list (41.2 % against at most 10.2 % and
 11.7 %).
 
+`python docs/_validate.py revenga1822` on `validation.tsv` (es-modern, order 4): the key -2.836 per letter; 200 random
+keys -7.61 (max -5.70); a key annealed onto the shuffled ciphertext at best -4.50; verdict pass.
+
+**How much is read.** These figures show the key is right; they do not measure the reading. 2,282 of the 2,294 sign
+places have a value, but that is not a share read as sense. Measured on the reading: the deciphered passages of
+`reading.md` score hole rate 0.18 on `docs/_check_reading.py --file` (share read 0.82, the profile's fraction_read),
+and that share includes about 110 first-pass slips corrected from the sense (`corrections.md`), not yet checked on
+the film. The checker scores the whole of `reading.md` 0.586 of sentences clean. This is short of the 95 % read bar.
+
 ## 6. Prior work
 
 - Manning (1925) prints neither the cipher, nor the clear text, nor a decipherment (checked on the archive.org text
@@ -138,14 +152,9 @@ The independent verifier ran similar controls with its own code and word list (4
 
 ## Remaining gaps
 
-- The transcription is a first pass: 44 of the 56 groups were read once, and about a dozen words in the reading are
-  doubtful or open (an[...], cuartel, remoción, Andalucía, the end of C17, C18-C19, the King's action in C23, C36,
-  C38, C43, C49, C50, the person addressed in C53, La Torre's verb in C54, C55-C56) - blocker: not-attempted. A full
-  second pass on the four frames should settle most of them.
-- The signs for plain z and plain j, and the role of a final z or k - blocker: too-short. Each rests on two to four
-  occurrences.
-- The clear fragment on 0057 left and the clear paragraphs of 0055 right and 0056 right are not transcribed -
-  blocker: not-attempted.
+- The transcription is a first pass (44 of the 56 groups read once; about a dozen words doubtful or open: an[...], cuartel, remoción, Andalucía, the end of C17, C18-C19, the King's action in C23, C36, C38, C43, C49, C50, the person addressed in C53, La Torre's verb in C54, C55-C56; about 110 slips corrected from the sense, listed in corrections.md) - blocker: not-attempted; the frames are public, and a full second pass on the four frames should settle most of them and confirm or undo the corrections.
+- The signs for plain z and plain j, and the role of a final z or k - blocker: not-attempted; plain i stands where z is expected (cadii, diei, pobreia, forioso, uatoriien), so gg or g is the candidate z sign, and the key table runs in blocks (a b c d -> v x y z; m n ñ -> d e f; o p q r s t -> p o n m ll l; v x y -> j i h) that predict z -> g; to be tested on the film in the second pass.
+- The clear fragment on 0057 left and the clear paragraphs of 0055 right and 0056 right are not transcribed - blocker: not-attempted; part of the second pass.
 
 ## Escalation
 
@@ -157,13 +166,16 @@ The independent verifier ran similar controls with its own code and word list (4
   recovered
 - [x] print: Manning vol. 2 checked; Zubieta and the Colombian collections not checked
 - [x] key-rebuild: the key is complete for the common letters; z and j open
-- [ ] retry: a full second transcription pass on frames 0055-0058
+- [ ] retry: a full second transcription pass on frames 0055-0058, with the z test (not yet done; the reason for "Status: in progress")
 
 ## Files
 
 - `transcription.txt`: the 56 cipher groups with the clear text after each, frame by frame
-- `decrypt.py`: the key, the decryption and the controls (standard library)
+- `decrypt.py`: the key, the decryption, the controls and the validation pairs (`--pairs` writes `validation.tsv`; standard library)
+- `solve.py`: ciphertext-only key recovery (swap annealing against the repository's Spanish 4-gram model); rewritten for the review, as the first solver's script was not kept
+- `validation.tsv`: one cipher sign per line with its value, for `docs/_validate.py` (verdict: pass)
 - `decryption.txt`: output of `python decrypt.py`, group by group
 - `reading.md`: the text as Spanish sentences
+- `corrections.md`: every first-pass slip corrected in reading.md, group by group
 - `translation.md`: English translation
 - `key.txt`: the key with counts

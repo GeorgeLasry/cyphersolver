@@ -2,6 +2,7 @@
 # Standard library only. Run from this folder:
 #   python decrypt.py              -> decryption, group by group (decryption.txt is this output)
 #   python decrypt.py --controls   -> share of decrypted words in the Spanish word list, against random keys and shuffles
+#   python decrypt.py --pairs      -> writes validation.tsv (one cipher sign per line with its value) for docs/_validate.py
 # Contributed by WAINUT, 27 Oct 2026.
 import random
 import re
@@ -91,8 +92,24 @@ def controls(rows, n=2000, seed=641):
     print(f'control C, key rotated by one place (space kept): {hit_rate(decrypt(c, rot) for _, _, c, _ in rows):.3f}')
 
 
+def pairs(rows):
+    """validation.tsv for docs/_validate.py: one cipher sign per line, TAB, its value. The word space a and the
+    comma-like mark read as nothing ('-'); unread signs and the sign q without a value are '?'."""
+    out = ['# model: es-modern', '# source: transcription.txt with KEY in decrypt.py (python decrypt.py --pairs)',
+           '# note: ll is one sign (written ll); cipher a = word space and the comma-like mark are given as nulls']
+    for _, _, c, _ in rows:
+        for s in signs(c):
+            tok = 'll' if s == 'S' else s
+            val = '?' if s == '?' or s not in KEY else '-' if s in ('a', ',') else KEY[s]
+            out.append(f'{tok}\t{val}')
+    (HERE / 'validation.tsv').write_text('\n'.join(out) + '\n', encoding='utf-8', newline='\n')
+    print(f'validation.tsv: {len(out) - 3} signs')
+
+
 def main(argv):
     rows = groups()
+    if '--pairs' in argv:
+        pairs(rows); return
     if '--controls' in argv:
         controls(rows); return
     print('# Catalogue 641 (revenga1822): mechanical decryption of transcription.txt, group by group.')
