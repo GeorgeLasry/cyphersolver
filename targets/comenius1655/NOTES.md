@@ -1,9 +1,12 @@
 # Comenius to Andreas Klobusiczky, cipher passages of 1655 (Unsolved Catalogue no. 474)
 
-Status: no write-up yet. Contributed by WAINUT (https://github.com/WAINUTAI), 27 Oct 2026. The site page, the README
-row and the catalogue changes are left to the maintainer; the proposals are in the pull request.
+Status: written up 27 Oct 2026 (docs/comenius1655.html). 4 Aug 1655 sentence read from the existing decipherment
+(Szilágyi 1890, Patera 1892), key rebuilt and identified with the printed Rákóczi table (MHH XXIII p. 740); 24 May 1655
+passage attempted, not deciphered. Contributed by WAINUT (https://github.com/WAINUTAI), PR #102, 27 Oct 2026; review
+pass by Claude for Daniel Bourdeau the same day (section "Review, 27 Oct 2026" below, which corrects parts of what
+follows).
 
-**In short.** The cipher sentence of 4 Aug 1655 was deciphered in print in 1892, in a footnote of Adolf Patera's
+**In short (WAINUT's report; see the review for corrections).** The cipher sentence of 4 Aug 1655 was deciphered in print in 1892, in a footnote of Adolf Patera's
 edition of Comenius's letters: "Poloniam periisse et papatum in illa". We transcribed it from both printed editions,
 rebuilt the key from Patera's plaintext and checked it letter by letter. One letter does not fit (see below). The
 cipher passage of 24 May 1655 is not deciphered: neither edition gives a decipherment, and our attempts gave no Latin.
@@ -168,27 +171,101 @@ which loses the italics.
   1655 letters are not yet edited there. Blekastad, *Comenius* (1969), was not checked. A web search found nothing on
   these ciphers.
 
+## Review, 27 Oct 2026
+
+A review pass (Claude Opus 5.5, for Daniel Bourdeau) on the five review items and the escalation steps. Downloads in
+the session scratchpad, not in the repository.
+
+**1. The key is printed: MHH XXIII (1874) p. 740.** At the end of Szilágyi's *Okmánytár* (archive.org
+`okmnytriirkczyg01gygoog`, leaf n724), after the glossary: "A Harsányi és Balogh Máté által használt titkos írás
+kulcsa" (the key of the secret script used by Harsányi and Máté Balogh, Rákóczi's envoys at the Porte):
+
+    a=m  b=i  c=p  d=u,f  e=g  f=v  g=e  h=l  i=b  k=x  l=h  m=a  n=q  o=y  p=c  q=n  r=z  s=t  t=s  u=d,f  x=k  y=o  z=r  v,w=f
+
+It is a reciprocal table (pairs am, bi, cp, du, eg, fv, hl, kx, nq, oy, rz, st). All 12 letter values rebuilt from
+the 4 Aug crib agree with it (`python check.py`, "12 of 12"), so WAINUT's "reciprocal, a guess" is confirmed by print,
+and Comenius was writing in the Rákóczi court's own table. The printed table has no digits.
+
+**2. The digits.** 6=i, 9=n, 5=l are not in the printed table. In the table i, n, l are b, q, h, and a handwritten
+b, q and h are easily taken for 6, 9 and 5. So "69 655m" is very probably "bq bhhm" misread by the printer: the
+system would then be the plain reciprocal table with no digit homophones. A hypothesis (both prints have the digits;
+Patera's text of these letters follows MHH, so one misreading would carry over); only the original can settle it.
+
+**3. The conflict, re-checked.** `python check.py` gives "poloniam periisse et papmtum in illa": the fourth letter of
+CmCasda is cipher a, which the rebuilt key and the printed table both make plain m. Patera and Szilágyi read papatum.
+Both prints have "a" (page images re-checked). Either the writer put the plain a by slip or the printers misread an m
+(cipher m = plain a) in the original. Reading kept as papatum; the decoder output is shown on the page with that
+letter marked uncertain.
+
+**4. An earlier printed decipherment: Szilágyi 1890.** Szilágyi, *Erdély és az északkeleti háború* I (= *Transsylvania
+et bellum boreo-orientale*, Budapest 1890; archive.org `erdlysazsz01sziluoft`), section "Comenius jelentései",
+pp. 388-394. P. 393 (leaf n404), letter d), 4 Aug 1655: "Jegyzet. A titkos jegyekkel írt utóírás így hangzik:
+«nihil certius, quam Poloniam periisse, et papatum in illa." ("Note. The postscript written in secret signs reads:
+...") with a reference to Okmánytár 217. This is two years before Patera, who prints the same plaintext. Neither
+names the decipherer; Szilágyi, who had printed the Harsányi/Balogh table in 1874, could have applied it himself.
+
+**5. The 22 Jul letter, its invisible ink, is partly printed.** Szilágyi 1890 p. 392 (leaf n403), letter c): the
+italic phrases are secret script ("A dűlt betűkkel szedettek rejtelmesek", the words in italic were secret), i.e.
+*et ad principem*, *non mitto ob securitatem*, *occultiora pagina sequenti, carbo ostendet*; and then: "On the next
+page, written in a very rubbed, dissolved charcoal script, and brought out with heat, in secret writing, stand the
+following:" "Londino 4. Junii Constantinus Schaum. Non satis dici potest, quam grata fuerit protectori notitia mea,
+coram omnibus senatoribus dixit (in audentia) sub dirigente regimine suo nullum nuncium ab ullo regum prosperum
+accepisse, quam a celsitudine sua. In ultima audentia secreta (in qua praeter (?) interpretem meum dominum etiam
+secretarium status .... adfuit) zelum suum pro gloria dei, ut mihi lacrymis asseruisset ...". The rest, about 25
+lines including a report of 25 June, was washed out; the note says it was copied from the third page of the letter,
+written in chemical ink, three quarters of the page, made legible by holding it to the fire, and that no more could
+be made out. So the invisible ink was read in the archive in the 19th century; what is left is illegible.
+
+**6. The 6 Sept letter.** Szilágyi 1890 pp. 393-394, letter e): the same italic passages, with the same note
+("rejtelmesek"), and a note that the Drabík revelations cited are in *Lux in tenebris* (1657). Plaintext only, as in
+Patera. Szilágyi also identifies the 24 May letter as Comenius's (p. 390: "Comenius jelentése Schaum küldetéséről.
+Közölve de aláírás nélkül, Okmánytár 178. l."), which MHH had printed as by "the Rákóczis' Polish correspondent"
+("Irta a Rákócziak lengyel levelezője", MHH note to no. CIII). No decipherment of 24 May in either.
+
+**7. Siblings.** Patera's register gives Klobusický at pp. 174, 178, 179, 181-183, 219: CXLVIII (1654 memorandum,
+Czech), CLI-CLV (1655), and a mention on p. 219. CLVI (to Schaum, 31 Jan 1656, MHH no. CLXXVII) has no cipher
+passage in Patera's text. MHH XXIII also has "A Domino Comenio literas [2]8. Januarii Amsterodami ... Comenius incognita
+scriptura" (archive.org leaf n616), invisible ink again, not a letter cipher. No further letter-cipher passage of
+Comenius was found in the two editions.
+
+**8. The 24 May passage, pushed.**
+- Printed table (MHH p. 740) on 24 May: "hantkaoy ? ecuhadyonqyshtgt cqyvgoczc ??? mc ?? cot cuoc koycmsdt". Not Latin.
+  The digits read as letters (8 ?, 6=b=i, 5=h=l) give "865" = "?il", which would fit *nil*; but the letter words do
+  not read, so it is not this table.
+- Printed table combined with Caesar shifts on 23-, 25- and 26-letter alphabets, both orders, scored with the shared
+  `la`, `en-modern`, `de-modern`, `hu-modern` and `pl-modern` models (order 4): best -4.9 per character, against -1.7
+  for Patera's 4 Aug plaintext. Nothing.
+- `anneal_lm.py` (new, uses the shared Latin model `la` from lang/, 5-grams with spaces, plus the word bonus):
+  one-to-one substitution: the matched control (56 letters, 17 signs) is recovered exactly ("gallia est omnis diuisa
+  ..."); the 24 May passage gives only nonsense at -3.1 to -3.5 per character ("opbmspai xenophiablitomum eliquaere de
+  eam enae saiedthm"). Homophonic, letters and digits as signs (the system of 4 Aug as printed): the matched control (66
+  signs, 23 distinct) is not recovered even with 60 restarts x 20,000 steps (best "nihil canuiue quam coloniam
+  coniicco ..."), so on 56 signs this search is underdetermined and its 24 May optima ("icrescen e aspicanerentiere
+  ...") mean nothing either way.
+- Language: the letter around it is Latin, the 4 Aug cipher is Latin, and the passage stands inside news quoted from
+  an English correspondent; no language is established for the cipher itself. Profile: documents B "unknown", and
+  the text entry no longer says "la".
+
+**Outcome.** The 4 Aug sentence: read from existing decipherment (Szilágyi 1890 p. 393; Patera 1892 p. 182), key
+rebuilt from it and identified with the printed MHH XXIII p. 740 table, one letter in conflict. The 24 May passage:
+attempted, not deciphered. Written up as "read from existing decipherment", extent partial.
+
 ## Remaining gaps
 
-- **24 May 1655 passage (B).** No key material. Not a simple substitution of Latin (annealing with matched
-  control). Needs the original (MNL OL E 190) to check the readings (Xyopatus or Xyoapus, the long s, the digits)
-  and a key, for example one agreed for the "Schaumiana".
-- **(iyy) in the 4 Aug letter.** Too short: three letters, not Latin under the 4 Aug key.
-- **22 Jul 1655 (CLIII).** Invisible ink on the next page ("carbo ostendet"). It is not printed and may be visible
-  only on the original. Needs physical access.
-- **6 Sept 1655 (CLV).** The secret passages are printed only as plaintext. Checking them needs the ciphertext (the
-  original, or Szilágyi 1890 if it prints it).
+- 24 May 1655 passage (B), 50 letters and the numbers 7, 865, 73 - blocker: no-key-material; not the printed Rákóczi table, not a simple substitution of Latin (annealing, matched control); the original (MNL OL E 190) is needed for the readings and any key
+- the word (iyy) in the 4 Aug letter - blocker: too-short; three letters, "boo" under the printed table, not Latin; perhaps a misprint or a code name
+- 22 Jul 1655, the invisible-ink page - blocker: illegible; the first lines printed by Szilágyi 1890 p. 392, the remaining c. 25 lines washed out already in 1890
+- 6 Sept 1655, the secret-script passages - blocker: needs-physical-access; printed only as plaintext (Patera p. 183, Szilágyi 1890 pp. 393-394); the ciphertext is on the original only
+- the 4th letter of CmCasda (a, read as a by the printed decipherment, m by the table) - blocker: needs-physical-access; both prints agree, only the original can show whether the writer slipped
 
 ## Escalation
 
-- Siblings: the 4 Aug key was tried on the 24 May passage and failed. The other Comenius letters to Klobusiczky and
-  Rákóczi of 1654-1656 in Patera and MHH XXIII were not searched systematically for more cipher; that is a next step.
-- Print: Patera 1892 and MHH XXIII were checked on the page images. Still to check: Szilágyi, *Transsylvania* I
-  (1890); Blekastad 1969.
-- Key rebuild: done for 4 Aug from Patera's plaintext. For 24 May, ciphertext-only annealing with a matched control
-  failed.
-- Retry: ask MNL OL for scans of E 190 (the three folio ranges above) and look in the Rákóczi chancery for a
-  Comenius or Schaum cipher table.
+- [x] siblings: Patera CXLVIII, CLI-CLVI and MHH XXIII's Comenius items searched; no further letter-cipher passage; 22 Jul and 6 Sept secret script printed in clear (Szilágyi 1890)
+- [x] clear-pages: Szilágyi 1890 prints the 22 Jul invisible-ink page as far as it could be read; nothing for 24 May
+- [x] known-keys: the printed Rákóczi/Harsányi-Balogh table (MHH XXIII p. 740) fits 4 Aug 12/12 and fails on 24 May, also with Caesar shifts
+- [x] print: Patera 1892, MHH XXIII 1874 (incl. p. 740 key), Szilágyi 1890 I pp. 388-394 checked on the page images; Blekastad 1969 not online (not checked)
+- [x] key-rebuild: 4 Aug rebuilt from the crib (12 letters, 3 digits); 24 May annealed with the shared Latin model, one-to-one (control recovered, passage not) and homophonic (control not recovered: underdetermined)
+- [x] retry: 4 Aug re-decoded with the printed table (same result, one conflict); (iyy) re-tried ("boo"); 24 May re-tried with the table, shifts and five languages
 
 ## Files
 
@@ -199,8 +276,12 @@ which loses the italics.
 - `key_1655-08-04.tsv`: the 4 Aug key.
 - `check.py`: rebuilds the key, decrypts, shows the conflict, runs the controls and the 24 May key trials.
 - `anneal.py`: the 24 May annealing with the two matched controls (about a minute).
+- `anneal_lm.py` (review pass): the 24 May annealing against the shared Latin model `la` (lang/), one-to-one and
+  homophonic, each with a matched control (`--long` for 60 restarts x 20,000 steps).
+- `check.py` also compares the rebuilt key with the printed MHH XXIII p. 740 table and, with `--reveal <path>`, writes
+  the site's `docs/reveal/comenius1655.json`.
 
-Both scripts use the Python standard library and relative paths: `python check.py`, `python anneal.py`.
+`check.py` and `anneal.py` use the Python standard library and relative paths (`python check.py`, `python anneal.py`); `anneal_lm.py` needs numpy and the repository's lang/ package.
 
 Work done with AI language-model agents. Every cipher letter quoted here was checked against the archive.org page
 images of both prints, and a second agent re-checked the readings, the key and the page numbers independently.

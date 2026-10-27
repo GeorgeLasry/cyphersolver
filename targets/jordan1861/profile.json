@@ -11,6 +11,7 @@
    "year": 1861,
    "country": "Confederate States",
    "route": "Confederate lines (Manassas, presumed) -> Washington",
+   "places": {"from": "Manassas", "to": "Washington"},
    "language": "English",
    "pages": 1,
    "cleartext_in_document": "interspersed",
@@ -52,7 +53,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "The clear copy NARA naId 1634051 images 1-2 (filed in the same series) gives every cipher passage in plain words; an interlinear gloss 'h a r' sits under the first cipher group of naId 6925618. No printed transcription found in one web search; the Official Records Ser. II vol. 2, Fishel and Blackman not checked.",
+   "where": "The clear copy NARA naId 1634051 images 1-2 (filed in the same series) gives every cipher passage in plain words; an interlinear gloss 'h a r' sits under the first cipher group of naId 6925618. No printed transcription found: the Official Records Ser. II vol. 2 (Greenhow case, pp. 561-577), Pinkerton (1883) and Greenhow (1863) do not print it; Fishel (1996) and Blackman (2005) checked by web search only.",
    "found": "during attempt",
    "used": true
   },
@@ -103,14 +104,26 @@
    "kind": "literature search",
    "what": "One web search (Jordan, 'Dearest Rachel', Greenhow, Hardee's Tactics, shoulder straps) found catalogue and overview pages only (NARA, SNAC, Wikipedia, whitehousehistory.org, dh.scu.edu); no printed text of the letter.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Review (Claude, for Daniel Bourdeau), print step: grepped the archive.org texts of the Official Records Ser. II vol. 2 (warofrebellion02unit_0; the Greenhow case papers, pp. 561-577), Pinkerton's Spy of the Rebellion (1883; Gutenberg 34973) and Greenhow's My Imprisonment (1863) for 'Rachel', 'Hardee', 'flannel', 'shoulder straps' and 'cipher'. None prints this letter. OR II 2 pp. 564-565 prints Jordan's letter to Benjamin of 29 Oct 1861: he arranged the cipher 'last April', used the alias Thomas John Rayford, and thought the War Department, holding one of her letters in it, 'ought to have worked out the key'. Fishel (1996) and Blackman (2005) are lending-library copies on archive.org; their full text could not be searched, and web searches found no transcription in either.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Review (Claude, for Daniel Bourdeau): outcome method changed from 'read after matching with key from external sources' to 'read from existing decipherment'. The clerk's clear copy (naId 1634051 images 1-2) gives every cipher passage in plain words, so the text was not obtained by the key; matching the signs to the 1864 key is what the project added. Reading re-read against decryption.txt, the clear copy and the photostat: grade B.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "already solved",
   "key": "recovered",
-  "method": "read after matching with key from external sources",
+  "method": "read from existing decipherment",
   "first_break": false,
-  "method_basis": "The 1864 key found on Greenhow's body (M1091 naId 62017285 image 0484) fits the 1861 cipher groups of naId 6925618 unchanged (82/82 secure signs); the text itself was already given in clear by the clerk's copy naId 1634051 and in part by an interlinear gloss.",
+  "method_basis": "A complete decipherment existed: the clerk's clear copy of the letter (NARA naId 1634051 images 1-2) gives every cipher passage of naId 6925618 in plain words, and an interlinear gloss 'h a r' deciphers the first group on the original. The project's contribution is the sign match: the 1864 key found on Greenhow's body (M1091 naId 62017285 image 0484) gives the copy's letter for all 82 securely read signs, unchanged, and the two NARA items were identified as one letter.",
   "contribution": ["transcription", "sender or date identified", "catalogue correction"],
   "fraction_read": 0.92,
   "fraction_read_method": "measured",
@@ -160,10 +173,10 @@
     "state": "read in part",
     "read_share": 0.683,
     "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; second agent re-read the images)",
+     "grade": "B",
+     "by": "Claude (review for Daniel Bourdeau)",
      "date": "2026-10-27",
-     "note": "Coherent with the clear copy; the fragment is torn, so the supplied words in brackets are holes on the original (read_share 0.683 by research/reading_audit/v2_score.py)."
+     "note": "Read reading.md against decryption.txt, the clear copy and the photostat. Every cipher group gives the copy's word (HAR, SCOTT, HANS FIELD FORTIFICATION, LIEU, COLONEL ...), so the decipherment is sound; but on the fragment itself most sentences are torn and complete only with the copy's words in brackets, which is why _check_reading.py flags 8 of 13 sentences. Coherent, but not with scattered holes: grade B. Replaces the contributor's own grade A (WAINUT agent)."
     },
     "summary": "Thomas Jordan, newly a lieutenant colonel, asks 'Rachel' (Rose Greenhow) to get him Hardee's and Scott's Tactics, Mahan's Field Fortification, 8 yards of navy-blue flannel and shoulder straps for his rank, to be sent by hand; the clear copy adds that he feared an earlier letter had failed to reach her: he had then no access to his cipher, and a letter in ordinary characters 'was intercepted' (the copy has gaps here). Domestic in content, but it shows the Jordan-Greenhow cipher in use in 1861 with the same key as in 1864."
    }

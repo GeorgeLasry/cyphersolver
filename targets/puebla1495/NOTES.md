@@ -1,8 +1,11 @@
 # Ferdinand and Isabella → De Puebla, Tortosa, 28 Dec. [1495], cipher copy (catalogue 615)
 
-Status: no write-up. Contributed by WAINUT (https://github.com/WAINUTAI), 27 Oct 2026: the letter is identified
-and its content is in print (Bergenroth 1862). A sample is decoded with the extant key. The full cipher copy is not
-transcribed.
+Status: no write-up. Why: the content of this despatch is in print only as Bergenroth's English abstract of the
+clear draft (CSP Spain I no. 113), an abstract of the clear draft, not a decipherment of the cipher copy; no. 114
+notices the cipher copy but prints no decipherment of it. This contribution identifies doc. 124 with that despatch and
+decodes a sample (p. 1 ll. 6-8, p. 2 ll. 1-2) with the extant key; nothing beyond the sample of the cipher copy is
+read, so it gets no page (maintainer review, 27 Oct 2026). Contributed by WAINUT (https://github.com/WAINUTAI),
+27 Oct 2026.
 
 AGS, Patronato Real, leg. 52, doc. 124. PARES description
 [2207846](https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207846), viewer
@@ -88,7 +91,7 @@ I not matched" should go. Date: Tortosa, 28 Dec. 1495. Direction: Ferdinand and 
 ## Remaining gaps
 
 - The cipher copy beyond the sample (most of pp. 1-4) - blocker: not-attempted; the extant key would give a full reading, but it would only add the wording differences Bergenroth mentions, so it was not done
-- Groups 883, 1374, 1335, 1813, 852, 868, 1221 and the "xxix" on p. 2 l. 1 have no value yet - blocker: open-codes; their key images were not opened
+- Groups 883, 1374, 1335, 1813, 852, 868, 1221 and the "xxix" on p. 2 l. 1 have no value yet - blocker: open-codes; the key is online (AGS PTR leg. 52 doc. 33, PARES show/2207755), but in the review of 27 Oct 2026 PARES answered HTTP 429 to every request from about 11:45 to 13:10, so key images 3-9, 47-51, 70-75, 78-84 and 110-113 (where interpolation from the images already read puts these numbers: 852/868/883 on images 47-51, 1221 near 72, 1335/1374 near 80-83, 1813 near 112, 29 near 5) could not be opened. Tomokiyo's published values do not include any of them. Fill them on the next session that can reach PARES.
 - Whether the ring over the C ligature ever adds a C - blocker: open-codes; the rule from the 616 key images is applied, but it was not checked group by group here
 
 ## Escalation
@@ -99,6 +102,15 @@ I not matched" should go. Date: Tortosa, 28 Dec. 1495. Direction: Ferdinand and 
 - [x] print: CSP Spain I pp. 57-107 (BHO), nos. 113-114; the 1868 Supplement starts in 1498
 - [n/a] key-rebuild: the key is extant and needs no rebuilding
 - [x] retry: month group corrected to otubre; DCCCLV read on the key
+
+## Maintainer review, 27 Oct 2026
+
+Claude, reviewing for Daniel Bourdeau. The sample reads as sentences only where it is clear text (p. 2 ll. 2-6); the
+ciphered part decodes to function words and the month, coherent but with five code groups open. Grade B, replacing
+the contributor's self-grade. The outcome is changed from "already solved" to "read in part" (sample, read with known
+key): Bergenroth's no. 113 is an abstract of the clear draft, not a decipherment of the cipher copy, so his credit is
+a pointer, not a prior solution. No write-up: only a sample of the cipher copy is decoded and the content is in print.
+The key images for the open groups could not be opened (PARES HTTP 429 all session; see Remaining gaps).
 
 ## Files
 

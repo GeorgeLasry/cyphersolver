@@ -1,8 +1,10 @@
 # Ferdinand and Isabella → De Puebla, Almazán, 21 June 1496, ciphered article (catalogue 616)
 
-Status: no write-up. Contributed by WAINUT (https://github.com/WAINUTAI), 27 Oct 2026. The cipher was deciphered at
-the time, and Bergenroth calendared it in 1862. This contribution adds the identification, a sample decoded with the
-extant key, and a rule for reading the key's C ligatures.
+Status: no write-up. Why: the article was deciphered at the time (the minuta of 21 June 1496 carries it in clear,
+note on f. 397v) and Bergenroth calendared it in 1862 (CSP Spain I no. 138, opening quoted). This contribution adds
+the identification and the date, a three-line sample decoded with the extant key, and a rule for reading the key's
+C ligatures; it adds no new text, so the target gets no page (decided in the maintainer review of 27 Oct 2026).
+Contributed by WAINUT (https://github.com/WAINUTAI), 27 Oct 2026.
 
 AGS, Patronato Real, leg. 52, doc. 47. PARES description
 [2207769](https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207769), viewer
@@ -94,6 +96,14 @@ Ferdinand and Isabella → De Puebla.
 - [x] print: CSP Spain I nos. 137, 138, 141 (BHO); the 1868 Supplement has no 1496 section
 - [n/a] key-rebuild: the key is extant and needs no rebuilding
 - [x] retry: line 2 group corrected to el Rey de Escocia; C-count rule applied to all groups
+
+## Maintainer review, 27 Oct 2026
+
+Claude, reviewing for Daniel Bourdeau, read `sample_reading.txt` as sentences. The heading and the first sentence are
+coherent Spanish and agree with Bergenroth's quotation (with "el Rey de Escocia" for his "Escocia"); line 3 is a
+fragment. Grade B (coherent but raw), replacing the contributor's self-grade. Decision: no write-up, because the text
+was deciphered at the time and is calendared, and the contribution is a sample, an identification and a key rule.
+The catalogue entry and the DECODE/catalogue correction (date, direction, CSP no. 138) still go through.
 
 ## Files
 

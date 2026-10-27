@@ -101,8 +101,16 @@ maximum of 5.)
 - No decipherment of this letter was found: the NARA record has no scope note and no decipherment; the LoC/WDL and
   Santa Clara copies give none; phrase searches ("hourly expected", "who gave the alarm", "panic is great",
   "simultaneous" with Greenhow) found nothing.
-- Not checked: Fishel, *The Secret War for the Union*; Blackman, *Wild Rose*; the Official Records; Pinkerton's
-  reports. A period Union decipherment cannot be excluded.
+- Print (review, 27 Oct 2026): the archive.org texts of the Official Records Ser. II vol. 2 (the Greenhow case papers,
+  pp. 561-577), Pinkerton's *Spy of the Rebellion* (1883) and Greenhow's *My Imprisonment* (1863) were searched for
+  the side-1 phrases ("hourly expected", "gave the alarm", "panic", "simultaneous", "Harper's Ferry", "cavalry") and
+  for "mourning": none prints this letter or a decipherment of it. OR II 2 p. 561 says the cipher letters were found
+  torn in the stove and some fragments "assorted and placed together so as to be read and copied"; pp. 564-565 print
+  Jordan's letter to Benjamin of 29 Oct 1861 (he arranged the cipher "last April", wrote under the alias Thomas John
+  Rayford, and thought the War Department "ought to have worked out the key"). Greenhow (1863, pp. 76-77) says the
+  agents puzzled over her cipher scraps for seven days. Fishel (1996) and Blackman (2005) are lending-library copies
+  on archive.org whose text could not be searched; web searches for the phrases with either book found nothing. A
+  period Union decipherment cannot be excluded.
 - NARA naId 6925618 ("Copy of a Letter Fragment Partially Written in Cipher", catalogue 646) is a different letter:
   it is Jordan's letter to "Rachel", see `../jordan1861/`.
 
@@ -121,8 +129,11 @@ maximum of 5.)
 - Side 1, torn clear words (myste.., a.., u.., l..) and the heading "P 31 ?" - blocker: illegible.
 - Side 1, "Edwards Ferry" and "Baltimore" - blocker: illegible; conjectures only.
 - Side 2 - blocker: illegible; two ink lines, fragments only (gr..e, tim.., bo.., ..ganiz.ing), read once.
-- Numeral fragment (image 3) - blocker: no-key-material; figures that look like a page or dictionary code, not the
-  symbol key.
+- Numeral fragment (image 3) - blocker: no-key-material; tested against the 1864 key in review (`numerals_test.py`):
+  the key writes figures as letter-like signs (1 a, 2 d, 3 phi, 4 ff, 5 m, 6 b, 7 nn, 8 c, 9 c; 10 III), so these
+  Arabic figures are not its numbers; read as its digit-like letter signs they give no words (11 of 33 groups hold a 2
+  or 6, which has no value). The scrap reads as a money reckoning ("$5 dollers $25", figures 5 to 104); the three
+  key-like signs on its last line (S, M, E) are too few to read.
 
 ## Escalation
 
@@ -130,12 +141,26 @@ maximum of 5.)
   10 Aug 1861) read for context.
 - [x] clear-pages: no clear copy of this letter on the NARA images; 1634043 is not one.
 - [x] known-keys: the 1864 key (M1091 image 0484) fits; image 0483 tested and does not.
-- [ ] print: Fishel, Blackman, the OR and Pinkerton's reports not checked.
-- [n/a] key-rebuild: the key is known; only the second N form was added from context.
+- [x] print: OR Ser. II vol. 2 (Greenhow case, pp. 561-577), Pinkerton 1883, Greenhow 1863 searched: not printed;
+  Fishel and Blackman by web search only (full text not reachable).
+- [n/a] key-rebuild: the key is known; only the second N form was added from context. The key's figure row tested on
+  the numeral scrap in review: no fit.
 - [x] retry: side 1 re-read independently in shape labels; the corrections above come from that pass.
+
+## Review (Claude, for Daniel Bourdeau, 27 Oct 2026)
+
+- Print step done (Earlier work, above): nothing printed.
+- Numeral scrap tested against the key's figure and letter signs (`numerals_test.py`, `numerals_test_output.txt`):
+  no fit; blocker stays no-key-material.
+- Side 2 counted: 17 signs read (`ciphertext_side2.txt`), no clear words; fills the two "unknown" profile fields.
+- Reading re-read against `decryption_side1.txt` and image 1 (lines 4-9 sign by sign): grade **B**, not A. The
+  sentences cohere, but 9 of 15 carry losses or conjectures.
+- Method unchanged: no decipherment of this letter existed, so "read after matching with key from external sources"
+  stands.
 
 ## Files
 
 `transcription_side1.txt`, `ciphertext_side1.txt`, `decryption_side1.txt`, `reading_side1.md`,
 `transcription_side2.txt`, `decryption_side2.txt`, `transcription_numerals.txt`, `key_1864.md`, `decode.py`,
-`decode_output.txt`. No images are kept here; they are on the NARA catalogue pages.
+`decode_output.txt`, `numerals_test.py`, `numerals_test_output.txt`, `ciphertext_side2.txt`. No images are kept here; they are on
+the NARA catalogue pages.

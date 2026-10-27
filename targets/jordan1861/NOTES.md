@@ -98,8 +98,12 @@ the signs marked [?].
 - The clear copy naId 1634051 images 1-2 is the decipherment of the time; the "h a r" gloss on the fragment is a
   second, partial one.
 - One web search found no printed text of the letter (NARA and SNAC entries, Wikipedia on Thomas Jordan,
-  whitehousehistory.org, the Santa Clara exhibit dh.scu.edu item 3281). The Official Records Ser. II vol. 2,
-  Fishel and Blackman were not checked.
+  whitehousehistory.org, the Santa Clara exhibit dh.scu.edu item 3281).
+- Print (review, 27 Oct 2026): the archive.org texts of the Official Records Ser. II vol. 2 (Greenhow case papers,
+  pp. 561-577), Pinkerton's *Spy of the Rebellion* (1883) and Greenhow's *My Imprisonment* (1863) do not print this
+  letter (searched for "Rachel", "Hardee", "flannel", "shoulder straps", "cipher"). OR II 2 pp. 564-565 print Jordan's
+  letter to Benjamin of 29 Oct 1861: he "arranged" the cipher "last April", hastily, and used the alias Thomas John
+  Rayford for it. Fishel (1996) and Blackman (2005): web search only; full text not reachable.
 - Using the 1864 key on 1861 Greenhow material is not new (the Rosenbach's "Code Breaker" blog, 2011, for another note; the North
   Carolina State Archives' "Rebel Rose" blog, 2012).
 
@@ -129,9 +133,20 @@ the signs marked [?].
   1634050 noted.
 - [x] clear-pages: the clear copy 1634051 images 1-2 used; images 3-6 checked and set aside.
 - [x] known-keys: the 1864 key (image 0484) fits; image 0483 does not.
-- [ ] print: OR Ser. II vol. 2, Fishel and Blackman not checked.
+- [x] print: OR Ser. II vol. 2 (pp. 561-577), Pinkerton 1883, Greenhow 1863 searched: not printed; Fishel and
+  Blackman by web search only.
 - [n/a] key-rebuild: the key fits unchanged.
 - [x] retry: the fragment re-read independently; L1 and L9 corrected from that pass.
+
+## Review (Claude, for Daniel Bourdeau, 27 Oct 2026)
+
+- **Outcome method changed** from "read after matching with key from external sources" to **"read from existing
+  decipherment"**: the clerk's clear copy (naId 1634051 images 1-2) already gives every cipher passage in plain words.
+  The sign match with the 1864 key (82/82 secure signs) and the identification of 645 and 646 as one letter are the
+  project's contribution (`method_basis`).
+- Print step done (above): not printed.
+- Reading re-read against `decryption.txt`, the clear copy and the photostat: grade **B**, not A. Every cipher group
+  gives the copy's word, but most sentences on the torn fragment are complete only with the copy's words supplied.
 
 ## Files
 

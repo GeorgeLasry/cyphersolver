@@ -1,6 +1,7 @@
 # Johnston to Seddon, Jackson, 16 June 1863: five words in Vigenere, key MANCHESTERBLUFF (catalogue 629)
 
-Status: already solved in 1863 (a "Translation of Cypher" is filed with the telegram) and printed in clear in 1864.
+Status: already solved in 1863 (a "Translation of Cypher" is filed with the telegram) and printed in clear in 1864
+and in the Official Records (Ser. I vol. 24 pt. 1 p. 227). Outcome method: read from existing decipherment.
 Added here: the key that fits the five cipher words (MANCHESTERBLUFF, the known Confederate key), how it was
 applied, the clerk's slips, and two corrections to catalogue entry 629. Contributed by WAINUT
 (https://github.com/WAINUTAI), 27 Oct 2026; the work was done with AI language-model agents and every reading was
@@ -101,8 +102,10 @@ command extended over East Tennessee. Only the operative words were enciphered.
   R. M. Smith, 1864), <https://archive.org/details/correspondencebe00conf>. It prints the telegram twice ("Jackson,
   June 16, 1863. To Hon. J. A. Seddon ... Will not this enable us to invade Kentucky? For this General Bragg's command
   should extend over east Tennessee."), and Seddon's letter to Bragg of 17 June quotes the same sentence.
-- **Official Records**: probably reprinted in OR Ser. I vol. 24 (the Johnston, Davis and Seddon correspondence), but
-  no page was confirmed (ehistory.osu.edu refused access on 27 Oct 2026).
+- **Official Records**: OR Ser. I vol. 24 pt. 1 (1889), p. 227, prints the telegram ("part of the Ninth and
+  Twenty-third Corps have been sent to re-enforce Grant. Will not this enable us to invade Kentucky? For this, General
+  Bragg's command should extend over East Tennessee"); p. 196 has the letter to Bragg of 17 June quoting it, signed Jefferson Davis there (not Seddon).
+  Confirmed in review on the archive.org text (warofrebellion241unit), 27 Oct 2026.
 
 So this is not a new decipherment. What is new is the match of the key to this telegram and the account of the
 clerk's slips; we found no source that names the key for it.
@@ -118,17 +121,27 @@ clerk's slips; we found no source that names the key for it.
 
 ## Remaining gaps
 
-- None in the text. The OR page reference is unconfirmed, and UNIEK/UNICK stays open [?] (it does not change the
-  reading).
+- None in the text. UNIEK/UNICK stays open [?] (it does not change the reading).
 
 ## Escalation
 
 - [x] siblings: not needed; the telegram is complete and its key fits.
 - [x] clear-pages: image 3, "Translation of Cypher", used as the crib.
 - [x] known-keys: MANCHESTERBLUFF fits; COMPLETEVICTORY and COMERETRIBUTION tested as controls.
-- [x] print: 1864 Richmond print found; OR page not confirmed.
+- [x] print: 1864 Richmond print found; OR Ser. I vol. 24 pt. 1 p. 227 confirmed in review.
 - [n/a] key-rebuild: the key is known; cipher minus crib confirms it.
 - [n/a] retry: nothing left unread.
+
+## Review (Claude, for Daniel Bourdeau, 27 Oct 2026)
+
+- **Outcome method changed** from "read after matching with key from external sources" to **"read from existing
+  decipherment"**. The "Translation of Cypher" leaf of 1863 (image 3) is a complete decipherment of the five cipher
+  words, so the text was never obtained from the key. The key match (MANCHESTERBLUFF advancing by plaintext length,
+  26/33, with cipher minus crib giving the key stream) is the project's contribution, recorded in `method_basis` and
+  `contribution` ("key recovered").
+- OR page confirmed (above).
+- Reading re-read against `decryption.txt` and the images: grade A. The sentences `_check_reading.py` flags are proper
+  names missing from its word list (Bragg, Louisville, Tennessee), not holes.
 
 ## Files
 

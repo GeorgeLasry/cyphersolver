@@ -39,9 +39,9 @@
    "route": "Washington -> Confederate lines (presumed)",
    "language": "English",
    "pages": 1,
-   "cleartext_in_document": "unknown",
+   "cleartext_in_document": "none",
    "plaintext": {"location": ["none"]},
-   "length": {"tokens": "unknown", "unit": "symbols"},
+   "length": {"tokens": 17, "distinct": 11, "unit": "symbols", "measured": true, "file": "ciphertext_side2.txt"},
    "transcription": {
     "by": "llm from images",
     "source": "NARA naId 1634036 image 2",
@@ -71,7 +71,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "None found: the NARA record has no scope note or decipherment; the Library of Congress / World Digital Library copy (wdl.2706) and the Santa Clara University exhibit (item 3281) show the letter without a transcription; phrase searches found nothing. Not checked: Fishel, The Secret War for the Union; Blackman, Wild Rose; the Official Records; Pinkerton's reports. A period Union decipherment cannot be excluded.",
+   "where": "None found: the NARA record has no scope note or decipherment; the Library of Congress / World Digital Library copy (wdl.2706) and the Santa Clara University exhibit (item 3281) show the letter without a transcription; phrase searches found nothing. The Official Records Ser. II vol. 2 (Greenhow case papers, pp. 561-577), Pinkerton's Spy of the Rebellion (1883) and Greenhow's My Imprisonment (1863) do not print it (text searches, 27 Oct 2026). Fishel, The Secret War for the Union (1996) and Blackman, Wild Rose (2005) were checked by web search only (lending-library copies, full text not reachable). A period Union decipherment cannot be excluded: OR II 2 p. 561 says fragments were 'placed together so as to be read and copied'.",
    "found": "not found",
    "used": false
   },
@@ -130,6 +130,25 @@
    "kind": "literature search",
    "what": "NARA record, LoC/WDL wdl.2706, Santa Clara University exhibit item 3281, phrase searches: no decipherment found. NARA naId 1634043, a clear pencil draft headed 10 Aug 1861 on McClellan's activity and an expected attack, is close in theme; it is not a copy of this letter.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Review (Claude, for Daniel Bourdeau), print step: grepped the archive.org texts of the Official Records Ser. II vol. 2 (warofrebellion02unit_0; the Greenhow case papers, pp. 561-577), Pinkerton's Spy of the Rebellion (1883; Gutenberg 34973) and Greenhow's My Imprisonment (1863) for the side-1 phrases ('hourly expected', 'gave the alarm', 'panic', 'simultaneous', 'Harper's Ferry', 'cavalry') and for 'mourning'. None prints this letter or a decipherment of it. OR II 2 p. 561 says her cipher letters were found torn in the stove and some fragments 'assorted and placed together so as to be read and copied'; pp. 564-565 print Jordan's letter of 29 Oct 1861 (cipher arranged 'last April', alias Thomas John Rayford); Greenhow (1863, pp. 76-77) says the agents puzzled over her cipher scraps for seven days. Fishel (1996) and Blackman (2005) are lending-library copies on archive.org whose full text could not be searched; web searches for the phrases with either book found nothing. Six web searches in all.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": ["key matching", "statistical test"],
+   "what": "Review: tested the numeral scrap (image 3) against the 1864 key sheet. The key's figure row writes 1-9 as letter-like signs (a, d, phi, ff, m, b, nn, c, c; 10 = III), so Arabic figures are not this key's numbers. Read as the key's digit-like letter signs (3 C, 4 I/R, 5 O, 7 B, 8 G, 9 K, 0 J, $ U), 11 of the 33 figure groups contain a 2 or 6, which has no letter value, and no group gives a word; the scrap's clear letters are not figure signs either (numerals_test.py). The figures (5 ... 104, with '$5 dollers $25') read as a money reckoning. The last line has three key-like signs (box with X = S, box with dot = M, Y = E) among torn clear letters: too short to read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Review (Claude, for Daniel Bourdeau): side 1 reading re-read against decryption_side1.txt and image 1 (lines 4-9 checked sign by sign: ATTACK IS HOURLY EXPEC-R-TED, THEY BELEIVE, SIMULTANEOU, FERR-). Grade B: coherent, but holes or conjectures in 9 of 15 sentences. Side 2 counted from transcription_side2.txt (17 signs read; no clear words), filling the two 'unknown' fields.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -149,7 +168,7 @@
    {"item": "Side 1, clear words cut by losses (myste.., a.., u.., l..) and the heading 'P 31 ?'", "blocker": "illegible", "detail": "torn clear words; the heading may be a number or date"},
    {"item": "Side 1, '[..]r[d]s Ferr[y]' and '[Bal]timore'", "blocker": "illegible", "detail": "'Edwards Ferry' and 'Baltimore' are conjectures; only R d S - F E R R and TIMORE are on the paper"},
    {"item": "Side 2 (image 2)", "blocker": "illegible", "detail": "two ink lines, the rest show-through; fragments only"},
-   {"item": "Numeral fragment (image 3)", "blocker": "no-key-material", "detail": "figures that look like a page or dictionary code, not the symbol key; transcription_numerals.txt"}
+   {"item": "Numeral fragment (image 3)", "blocker": "no-key-material", "detail": "tested against the 1864 key (numerals_test.py): its figure signs are letter-like (1 a, 2 d ...), so the Arabic figures are not this key's numbers, and read as its letter signs the figures give no words (2 and 6 have no value); the scrap reads as a money reckoning ('$5 dollers $25'), and the three key-like signs on its last line are too few to read. No other key or code book is known"}
   ],
   "credits": [
    {
@@ -182,10 +201,10 @@
     "state": "read in part",
     "read_share": 0.595,
     "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; second agent re-read the images)",
+     "grade": "B",
+     "by": "Claude (review for Daniel Bourdeau)",
      "date": "2026-10-27",
-     "note": "Coherent sentences in her spelling between paper losses; every restoration is marked."
+     "note": "Read reading_side1.md against decryption_side1.txt and image 1 (lines 4-9 sign by sign). The sentences cohere in her spelling (attack is hourly expected; they believe the attack will be simultaneous; an effort is being made to find out who gave the alarm), and every restoration is marked; but 9 of 15 sentences carry losses or conjectures ('Edwards Ferry', 'Baltimore', 'troop of', 'Harper's Ferry'), so grade B, not A. Replaces the contributor's own grade A (WAINUT agent)."
     },
     "summary": "From Washington in summer 1861: McClellan is busy and the panic is great; an attack is hourly expected and they believe it will be simultaneous from [...]rds Ferry (Edwards Ferry?) and [...]timore (Baltimore?); an effort is being made to find out who gave the alarm; a troop of cavalry [...]nt from here this morning; Harper's Ferry is named. Intelligence from the Greenhow ring before her arrest on 23 Aug 1861."
    },

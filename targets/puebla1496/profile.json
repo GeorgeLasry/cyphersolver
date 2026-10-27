@@ -11,6 +11,10 @@
    "year": 1496,
    "country": "Spain",
    "route": "Ferdinand and Isabella (Almazán) -> De Puebla (London)",
+   "places": {
+    "from": "Almazán",
+    "to": "London"
+   },
    "language": "Spanish",
    "pages": 2,
    "cleartext_in_document": "interspersed",
@@ -140,6 +144,12 @@
    "kind": "verification",
    "what": "Second agent re-read the heading and lines 1-3 on fresh crops and the f. 397v note; line 2 group corrected from 'Escocia' to DCCCCXXI 'el Rey de Escocia'.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Maintainer review (Claude for Daniel Bourdeau): the sample read as sentences (heading and lines 1-2 coherent and matching Bergenroth's quotation; line 3 fragmentary). Decided: no write-up. The article was deciphered at the time (minuta, f. 397v note) and calendared by Bergenroth (CSP Spain I no. 138); the contribution adds the identification, the date, a three-line sample and the C-ligature rule, not a new reading of the text. Remaining gaps left as deliberately not done.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -158,7 +168,7 @@
    "key confirms"
   ],
   "provenance": "contributed",
-  "notes": "The key state is 'recovered' because the whole key survives in the archive; only the entries in key_excerpt.tsv were looked up. Proposed: catalogue 616 becomes an earlier-solution pointer to CSP Spain I no. 138 (with nos. 137 and 141 for the drafts in the same unit), dated Almazán, 21 June 1496.",
+  "notes": "No write-up: the text was deciphered at the time (the minuta of 21 June 1496 carries the article in clear, note on f. 397v) and Bergenroth calendared it (CSP Spain I no. 138); this contribution adds the identification, the dating, a three-line sample decoded with the extant key and the C-ligature rule. The key state is 'recovered' because the whole key survives in the archive; only the entries in key_excerpt.tsv were looked up. Proposed: catalogue 616 becomes an earlier-solution pointer to CSP Spain I no. 138 (with nos. 137 and 141 for the drafts in the same unit), dated Almazán, 21 June 1496.",
   "credits": [
    {
     "who": "lccompany",
@@ -203,7 +213,7 @@
    {
     "who": "bergenroth",
     "role": "prior solution",
-    "note": "CSP Spain I no. 138 (cipher, opening quoted) and no. 137 (draft)",
+    "note": "CSP Spain I no. 138: calendar of the deciphered article, with its opening quoted (and no. 137, the draft)",
     "date": "1862",
     "source": "https://www.british-history.ac.uk/cal-state-papers/spain/vol1/pp99-107"
    },
@@ -235,9 +245,9 @@
     "summary": "Ferdinand and Isabella answer De Puebla's report that Henry VII had good news of the affairs of the King of Scots: the news comes from nowhere but their own envoys sent to Scotland (Bergenroth's no. 137: the Spanish ambassadors obtained a solemn promise from the King of Scots).",
     "reading_review": {
      "grade": "B",
-     "by": "WAINUT (contributor's own check by an AI language-model agent against the PARES images and the key; for the maintainers' reviewer to confirm)",
+     "by": "Claude (review for Daniel Bourdeau)",
      "date": "2026-10-27",
-     "note": "The heading and lines 1-2 read as sentences and match Bergenroth's quotation; line 3 is doubtful and marked."
+     "note": "Read as sentences: the heading and the first sentence (y quanto a lo que dezis que el Rey de Inglaterra vos dixo que tenia buenas nuevas de los negocios de el Rey de Escocia, esto no viene de otra parte sino que nuestros ...) are coherent Spanish and agree with Bergenroth's quotation, except 'el Rey de Escocia' for his 'Escocia'. Line 3 is a fragment (three unread groups, two doubtful), so the sample is coherent but raw: grade B. It is a three-line sample of a two-page article; nothing beyond it is read."
     },
     "note": "Sample only; the rest of ff. 396r-396v is not transcribed. read_share from research/reading_audit/v2_score.py (explicit holes)."
    }

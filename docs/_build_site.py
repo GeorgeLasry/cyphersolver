@@ -291,6 +291,11 @@ PAGES = [
          blurb='DECODE R1154, catalogued as a cipher letter of 1504, is plain Italian of 29 May 1505 to Cardinal Ippolito d&rsquo;Este, printed by Berzeviczy in 1914. The queen writes no more because she has no cipher.',
          quote='&ldquo;et per non havere cifra: non ce extendemo altramente per questa&rdquo;',
          rights='Printed edition: Berzeviczy, 1914. ASMo manuscript not reproduced.'),
+    dict(slug='puebla1506', label='De Puebla to Almaz&aacute;n 1506', year='1506', y=1506.3, place='London &rarr; Miguel P&eacute;rez de Almaz&aacute;n', st='partial', stt='known key applied &middot; partial',
+         title='De Puebla to Almaz&aacute;n, London, 21 April 1506',
+         blurb='Ferdinand&rsquo;s ambassador in London writes to the King&rsquo;s secretary while Philip and Juana wait at Falmouth to sail for Castile (AGS Patronato Real leg. 54 doc. 78). The cipher passages, in Puebla&rsquo;s First Cipher, were deciphered with Satoshi Tomokiyo&rsquo;s reconstruction of the table: Katharine&rsquo;s people had her write letters for their own interest, and her household is finely dressed, the day before she told her father she was all but naked. Contributed by WAINUT; the clear text around the cipher and the lines 11&ndash;17 fragments stay open.',
+         quote='&ldquo;Los de la se&ntilde;ora princesa veo tan bien ataviados que mas no pense ver&rdquo;',
+         rights='Archivo General de Simancas, via PARES (Ministerio de Cultura).'),
 
     dict(slug='aerssen1601', label='Aerssen to Oldenbarnevelt', year='1601', y=1601, place='Paris', st='partial', stt='key from adjacent plaintext · partial',
          title='Aerssen to Oldenbarnevelt, 25 May 1601',
@@ -1784,6 +1789,11 @@ PAGES = [
          blurb='A Dutch despatch from the peace talks with Cromwell, intercepted by Thurloe&rsquo;s office and printed by Birch in 1742: three cipher passages, 136 groups, figures 6&ndash;33 for letters and eight three-figure groups from a new word code. Every royalist and Commonwealth key of 1653&ndash;60 on Cryptiana fails, and a hill-climb in Dutch and French finds no reading. A matched control shows the solver would have read a letter cipher of this shape, so the system is not what it seems, or the print is corrupt. Not solved.',
          quote='&ldquo;We are served with the same cypher; but hereafter to express particular words, we will rather make use of the new one&rdquo;',
          rights='Thomas Birch, Thurloe State Papers (1742), via the Internet Archive'),
+    dict(slug='comenius1655', label='Comenius to Klobusiczky 1655', year='1655', y=1655.4, place='Leszno &rarr; S&aacute;rospatak', st='partial', stt='existing decipherment, partial',
+         title='Comenius to Andreas Klobusiczky, 1655',
+         blurb='Comenius, at Leszno during the Swedish invasion of Poland, ended his report of 4 August 1655 to Rákóczi&rsquo;s councillor with one ciphered sentence. Szilágyi printed its decipherment in 1890 and Patera in 1892; the key rebuilt from it is the reciprocal table of Rákóczi&rsquo;s envoys that Szilágyi had printed in 1874, with one letter in conflict. A second cipher passage, of 24 May 1655, does not decipher with that table or as a simple substitution of Latin.',
+         quote='&ldquo;Nihil certius quam Poloniam periisse, et papatum in illa&rdquo;',
+         rights='Patera 1892, Szil&aacute;gyi 1874 and 1890, via the Internet Archive'),
     dict(slug='dugard1656', label='Du Gard to White 1656', year='1656', y=1656.44, place='Brussels &rarr; White', st='stuck', stt='too short',
          title='Du Gard to White, Brussels, 10 June 1656',
          blurb='An intercepted letter printed in Birch&rsquo;s <i>Thurloe State Papers</i>, ending with &ldquo;a new direction to write to me&rdquo;: a cover address of 27 figures and letters. No royalist or Commonwealth key of 1653&ndash;60 on Cryptiana reads it, and it is too short to break. Not solved.',
@@ -1824,6 +1834,21 @@ PAGES = [
          blurb='A papal dispatch intercepted and printed as 955 digits by Mazzini&rsquo;s paper in 1848, with a prize for its decipherment. The key was recovered from the ciphertext alone: two-digit letters and syllables, 5 as word divider, and a four-digit alphabetical code. The text is a counter-order written the day after the nuncio had left; eleven code groups stay open.',
          quote='&ldquo;per nuove sopraggiunte circostanze Le partecipo [&hellip;] del (Padre) che Ella rimanga in Inspruck presso l&rsquo;(Imperatore)&rdquo;',
          rights='Broadsheet scan: Tony Gaffney, via Klaus Schmeh, Cipherbrain'),
+    dict(slug='jordan1861', label='Jordan to &ldquo;Rachel&rdquo; 1861', year='1861', y=1861.55, place='Confederate lines &rarr; Washington', st='solved', stt='existing decipherment',
+         title='Jordan to &ldquo;My Dearest Rachel&rdquo; (Rose Greenhow), 1861',
+         blurb='Two catalogue entries are one letter: a burnt fragment with cipher groups (NARA naId 6925618) and a clerk&rsquo;s clear copy (naId 1634051) of Thomas Jordan&rsquo;s letter to &ldquo;My Dearest Rachel&rdquo;, Rose Greenhow, seized at her house in August 1861. The copy is the decipherment. The symbol key found on Greenhow&rsquo;s body in 1864 gives the copy&rsquo;s letter for all 82 securely transcribed signs. Jordan asks for drill books, navy flannel and shoulder straps for his new rank.',
+         quote='&ldquo;These books are essential to me in my position as Lieutenant Colonel of Infantry&rdquo;',
+         rights='National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, via the National Archives Catalog'),
+    dict(slug='greenhow1861', label='Greenhow mourning-paper letter 1861', year='1861', y=1861.6, place='Washington &rarr; Confederate lines', st='partial', stt='read in part',
+         title='Rose Greenhow&rsquo;s letter on mourning paper, Washington 1861',
+         blurb='A torn letter in symbols on mourning paper, seized from Rose O&rsquo;Neal Greenhow&rsquo;s house on 23 August 1861 (NARA naId 1634036). Side 1 deciphers with the key found on her body when she drowned off Fort Fisher in 1864: Washington expects an attack hourly and is hunting whoever gave the alarm. About 60% of its words read as sense between paper losses; side 2 and a scrap of figures stay open. No earlier decipherment was found.',
+         quote='&ldquo;Attack is hourly expected. They beleive this: the atta[ck] will [b]e simultaneou[s]&rdquo;',
+         rights='National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, and RG 45, M1091, via the National Archives Catalog'),
+    dict(slug='johnston1863', label='Johnston to Seddon 1863', year='1863', y=1863.46, place='Jackson &rarr; Richmond', st='solved', stt='existing decipherment',
+         title='Johnston to Seddon, Jackson, 16 June 1863',
+         blurb='General Joseph E. Johnston&rsquo;s telegram to the Confederate Secretary of War during the siege of Vicksburg has five words in Vigen&egrave;re. The War Department&rsquo;s &ldquo;Translation of Cypher&rdquo; is filed with it, and the text was printed in 1864 and in the Official Records. The five words fit the Confederate key MANCHESTERBLUFF when the key advances by the length of each plaintext word, 26 of 33 positions, the rest being the clerk&rsquo;s slips.',
+         quote='&ldquo;Will not this enable us to invade Kentucky?&rdquo;',
+         rights='National Archives (NARA), RG 109, War Department Collection of Confederate Records, via the National Archives Catalog'),
     dict(slug='hellen1752', label='Hellen 1752–1763', year='1752&ndash;63', y=1752, place='The Hague &rarr; Prussia', st='stuck', stt='unsolved; investigation open',
          title='Hellen&rsquo;s intercepted letters to Frederick II, 1752&ndash;1763',
          blurb='Intercepted despatches of the Prussian envoy at The Hague, in numerical nomenclators. The DECODE transcriptions were audited and corrected; no key was recovered and no enciphered passage was decoded. Digitised decipherments of Hellen letters of 1752&ndash;53 in Fagel 5206 are an untested lead.',
@@ -3773,3 +3798,8 @@ IMAGES['comuel1416'] = None
 IMAGES['swieten1759'] = ('swieten1759_r956.jpg', 'R956, f. 344, 4 February 1759: runs of unseparated digits inside the clear French', 'Archives g&eacute;n&eacute;rales du Royaume, Brussels, Secr&eacute;tairerie d&rsquo;&Eacute;tat et de Guerre inv. 1236 f. 344, via DECODE R956')
 IMAGES['dedem1799'] = ('dedem1799_p2.jpg', 'R1895, image 2 (turned upright): the heading XVIII Duplicaat, Burger Agent, and the marked code groups', 'Nationaal Archief, The Hague, 2.01.08 inv. 346, via DECODE R1895')
 IMAGES['waddall1656'] = ('waddall1656_tsp5_p337.jpg','The cipher words in Waddall&rsquo;s clear frame', 'Thomas Birch, A Collection of the State Papers of John Thurloe (1742), vol. 5 p. 337, via the Internet Archive')
+IMAGES['johnston1863'] = ('johnston1863_lead.jpg', 'The cipher lines of the telegram: UNIEK &ndash; CXNKVNED, JJTRRK, ISLX &ndash; KFYHJEER', 'National Archives, RG 109, naId 3854726, image 1, via the National Archives Catalog')
+IMAGES['greenhow1861'] = ('greenhow1861_lead.jpg', 'Side 1, lines 4&ndash;10: &hellip;ck is hourly expec[r]ted. they beleive this: the atta[ck] will [b]e simultaneou[s] &hellip;', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 1634036, image 1, via the National Archives Catalog')
+IMAGES['jordan1861'] = ('jordan1861_lead.jpg', 'The left block of the burnt fragment, inverted: HAR with &ldquo;h a r&rdquo; under it, SCOTT, HANS FIELD FORTIFICATION', 'National Archives, RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, naId 6925618, image 1, via the National Archives Catalog; inverted and contrast-stretched here')
+IMAGES['puebla1506'] = None
+IMAGES['comenius1655'] = ('comenius1655_lead.jpg', 'The cipher sentence of 4 August 1655 as printed by Patera', 'A. Patera, Jana Amosa Komensk&eacute;ho korrespondence (Praha 1892), p. 182, via the Internet Archive (bub_gb_xnVMAAAAYAAJ)')

@@ -7517,46 +7517,35 @@
    "id": 474,
    "counted": true,
    "year": 1655,
-   "date": "24 May - 6 Sept 1655",
-   "title": "Comenius → Andreas Klobusiczky, letters with a ciphered sentence (Rákóczi archive)",
+   "date": "24 May 1655",
+   "title": "Comenius → Andreas Klobusiczky, cipher passage of 24 May 1655 (Rákóczi archive)",
    "correspondents": "Jan Amos Komenský (Comenius) → Andreas Klobusiczky (Rákóczi's councillor)",
    "place": "Leszno",
    "language": "Latin",
    "region": "Central Europe",
    "period": "1651-1700",
    "shelfmark": "Magyar Nemzeti Levéltár Országos Levéltár (Budapest), E 190 (Archivum familiae Rákóczi): 5.t. 788 ff. 389-390v; 6962 ff. 351-354v; 5.t. 800 ff. 414-415v",
-   "folio_note": "4 letters (24 May, 22 Jul, 4 Aug, 6 Sept 1655), each 'Contains ciphered sentence'; on 6 Sept the cipher follows news of Charles X's Polish campaign",
+   "folio_note": "One passage of 50 letters and the numbers 7, 865, 73 inside news quoted from an English correspondent; printed MHH XXIII (1874) no. CIII p. 178 and Patera 1892 no. CLII p. 178 (italic). The 4 Aug 1655 sentence is deciphered (write-up comenius1655); 22 Jul and 6 Sept have invisible ink / secret script printed in clear by Szilágyi 1890.",
    "cls": "B",
-   "status": "EMLO (Comenius catalogue) notes 'Contains ciphered sentence' with no decipherment noted. Printed in Patera, Jana Amosa Komenského korrespondence (1892) nos. 152-155 and partly in Szilágyi, Transsylvania et bellum boreo-orientale i (1890) / Okmánytár II. Rákóczy György; whether the editors deciphered the sentences is not stated. Not in the repo (known.py: Comenius, Klobusiczky no hit).",
+   "status": "4 Aug 1655 sentence deciphered in print (Szilágyi 1890 p. 393; Patera 1892 p. 182); key = Rákóczi envoys' table, MHH XXIII p. 740. The 24 May passage does not decipher with that table, shifts, keyword ciphers, or as a simple substitution of Latin (annealing with matched control); no decipherment in MHH, Szilágyi 1890 or Patera. See targets/comenius1655/.",
    "why": "Comenius's secret line to George II Rákóczi on the Swedish-Polish war of 1655, when he pressed Transylvania to join Sweden.",
    "importance": 3,
    "solvability": 2,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 EMLO sweep (research/founders_emlo/); not viewed",
-   "verify": "Check Patera 1892 nos. 152-155 and Szilágyi 1890 (both on archive.org / Hungaricana) for the ciphered sentences and any decipherment; Rákóczi chancery keys are in MNL OL.",
+   "verify": "Needs the original (MNL OL E 190) for the readings (Xyopatus / Xyoapus, long s / f) and any key; the cipher may belong to the English correspondent.",
    "links": [
-    {
-     "label": "EMLO 6 Sept 1655",
-     "href": "https://emlo.bodleian.ox.ac.uk/profile/work/94fce8d6-48e2-44ec-8f95-45ef44f261ac"
-    },
     {
      "label": "EMLO 24 May 1655",
      "href": "https://emlo.bodleian.ox.ac.uk/profile/work/93d0a370-eaa1-404e-9f0f-74da34dbfecc"
-    },
-    {
-     "label": "EMLO 22 Jul 1655",
-     "href": "https://emlo.bodleian.ox.ac.uk/profile/work/a7ea66a8-1972-440e-8a22-1cba4d17488f"
-    },
-    {
-     "label": "EMLO 4 Aug 1655",
-     "href": "https://emlo.bodleian.ox.ac.uk/profile/work/9541612d-f5c3-405d-baba-972b67c573ea"
     }
    ],
    "seen": "catalogue",
    "source": "EMLO sweep",
-   "prior_art": "not checked in print (26 Oct 2026); Patera 1892 / Szilágyi 1890 may print the cipher deciphered",
+   "prior_art": "checked 27 Oct 2026: MHH XXIII 1874, Szilágyi 1890 I pp. 388-394, Patera 1892; no decipherment of 24 May",
    "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open"
   },
   {
    "id": 475,
@@ -12278,23 +12267,23 @@
    "id": 615,
    "counted": true,
    "year": 1495,
-   "date": "1495 (undated)",
-   "title": "Undated letter in Puebla's Roman-numeral code (Ferdinand and Isabella / Puebla correspondence)",
-   "correspondents": "Ferdinand and Isabella ↔ Rodrigo González de Puebla (direction not recorded)",
-   "place": "unknown",
+   "date": "28 Dec 1495",
+   "title": "Ferdinand and Isabella → De Puebla, Tortosa, 28 Dec 1495, cipher copy in Puebla's Great Roman Numeral code",
+   "correspondents": "Ferdinand and Isabella → Rodrigo González de Puebla",
+   "place": "Tortosa",
    "language": "Spanish",
    "region": "England",
    "period": "15th century",
    "shelfmark": "AGS, Patronato Real, LEG,52, DOC.124",
-   "folio_note": "PARES description 2207846; size unknown",
+   "folio_note": "PARES description 2207846, 4 images (pp. 1-4, foliation 664-665; old mark T. c. Y. 2). Sample decoded: p. 1 ll. 6-8 and p. 2 ll. 1-6; the rest of the cipher copy not decoded.",
    "cls": "B",
-   "status": "Tomokiyo, cryptiana 'Spanish ciphers' page (copy in targets/esp318/lit/crypt/spanish.htm) lists it under Puebla's Great Roman Numeral Code (key extant: AGS PTR,LEG,52,DOC.33); no decipherment mentioned and no Bergenroth page given. Not on DECODE, not in the repo (known.py: 'Puebla', 'PTR,LEG,52' no hits). PARES record not reopened in this session (429).",
+   "status": "Identified 27 Oct 2026 (WAINUT, PR #101; targets/puebla1495/): the cipher copy of the despatch of 28 Dec 1495 whose clear draft Bergenroth abstracted in CSP Spain I no. 113 (no. 114 notices the cipher copy, 'substance exactly the same', with no decipherment); five sending dates on p. 2 match no. 113 and no other item. A sample (p. 1 ll. 6-8) decoded with the extant key AGS PTR leg. 52 doc. 33. Open: the cipher copy beyond the sample, and the groups 883, 1374, 1335, 1813, 852, 868, 1221 and 'xxix' (key images not opened: PARES HTTP 429). No page.",
    "why": "Anglo-Spanish diplomacy of 1495 (Perkin Warbeck, the Catherine of Aragon marriage treaty) in a code whose 2400-element key survives.",
    "importance": 3,
    "solvability": 4,
    "difficulty": 2,
    "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Open PARES show/2207846, confirm cipher and images; check Bergenroth CSP Spain I and the 1868 Supplement for an undated 1495 piece; read with the PTR 52 DOC.33 key.",
+   "verify": "Decode the rest of pp. 1-4 with the PTR 52 doc. 33 key (key images 3-9, 47-51, 70-75, 78-84, 110-113 for the open groups) and compare the wording with no. 113.",
    "links": [
     {
      "label": "PARES description",
@@ -12307,83 +12296,10 @@
    ],
    "seen": "catalogue",
    "source": "PARES (AGS) sweep",
-   "prior_art": "probably open (checked 26 Oct 2026: Tomokiyo lists it without a reading; CSP Spain I not matched; 1868 Supplement not checked)",
+   "prior_art": "checked 27 Oct 2026: content in print as Bergenroth's abstract of the clear draft (CSP Spain I no. 113, pp. 72-75); no decipherment of the cipher copy printed (no. 114); 1868 Supplement starts in 1498",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 616,
-   "counted": true,
-   "year": 1496,
-   "date": "1496 (undated)",
-   "title": "Undated letter in Puebla's Roman-numeral code, 1496",
-   "correspondents": "Ferdinand and Isabella ↔ Rodrigo González de Puebla (direction not recorded)",
-   "place": "unknown",
-   "language": "Spanish",
-   "region": "England",
-   "period": "15th century",
-   "shelfmark": "AGS, Patronato Real, LEG,52, DOC.47",
-   "folio_note": "PARES description 2207769; size unknown",
-   "cls": "B",
-   "status": "Tomokiyo, cryptiana 'Spanish ciphers' page (copy in targets/esp318/lit/crypt/spanish.htm) lists it under Puebla's Great Roman Numeral Code (key extant: AGS PTR,LEG,52,DOC.33); no decipherment mentioned and no Bergenroth page given. Not on DECODE, not in the repo. PARES record not reopened in this session (429).",
-   "why": "Same 1495-96 embassy in England; readable with the extant code book if the numerals match.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Open PARES show/2207769; check Bergenroth I/Supplement; read with the PTR 52 DOC.33 key.",
-   "links": [
-    {
-     "label": "PARES description",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2207769"
-    },
-    {
-     "label": "Tomokiyo, Spanish ciphers",
-     "href": "http://cryptiana.web.fc2.com/code/spanish.htm"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES (AGS) sweep",
-   "prior_art": "probably open (checked 26 Oct 2026: Tomokiyo, CSP Spain I)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 617,
-   "counted": true,
-   "year": 1506,
-   "date": "21 Apr 1506",
-   "title": "Puebla → Almazán, London, in Puebla's First Cipher",
-   "correspondents": "Rodrigo González de Puebla → Miguel Pérez de Almazán",
-   "place": "London",
-   "language": "Spanish",
-   "region": "England",
-   "period": "1497-1559",
-   "shelfmark": "AGS, Patronato Real (PARES 2208120, per Tomokiyo; not yet opened)",
-   "folio_note": "size unknown",
-   "cls": "B",
-   "status": "Tomokiyo lists it among letters in Puebla's First Cipher (which he reconstructed) without a reading or Bergenroth page; CSP Spain I, April 1506 section (pp. 385-386), has no Puebla letter. Not on DECODE, not in the repo. PARES record not reopened (429). PARES id corrected 27 Oct 2026: 2208061 is the 15 Apr 1507 letter (catalogue 618, closed); Tomokiyo gives 2208120 for 21 Apr 1506. Bergenroth's 1868 Supplement has no Puebla letter of April 1506 (1506 section pp. 73-85).",
-   "why": "Puebla's reports from London in 1506, the year Philip and Juana were driven ashore in England and the Catherine dowry dispute ran on.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 PARES sweep (research/pares_ags/); not viewed",
-   "verify": "Open PARES show/2208120 for images and signatura; read with Tomokiyo's Puebla First Cipher table.",
-   "links": [
-    {
-     "label": "PARES description",
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/2208120"
-    },
-    {
-     "label": "Tomokiyo, Spanish ciphers",
-     "href": "http://cryptiana.web.fc2.com/code/spanish.htm"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "PARES (AGS) sweep",
-   "prior_art": "probably open (checked 26-27 Oct 2026: CSP Spain I April 1506 and the 1868 Supplement have no Puebla letter; Tomokiyo gives no reading)",
-   "ark": "",
-   "scored": "sweep"
+   "scored": "sweep",
+   "outcome": "attempted, open"
   },
   {
    "id": 619,
@@ -12733,39 +12649,6 @@
    "seen": "catalogue",
    "source": "NARA catalogue sweep",
    "prior_art": "partly checked in 1799 with the writer's key (Pickering, 18 Jun 1799); no full decipherment found (checked 27 Oct 2026: Founders Online search results, web search)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 629,
-   "counted": true,
-   "year": 1863,
-   "date": "16 Jun 1863",
-   "title": "Gen. Joseph E. Johnston → Confederate Secretary of War Seddon, telegram with enciphered phrases",
-   "correspondents": "Joseph E. Johnston → James A. Seddon",
-   "place": "Jackson, Mississippi",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, Telegrams Received by the Confederate Secretary of War (series naId 651917), item naId 3854726",
-   "folio_note": "1 leaf + docket, 4 images. Clear text with five cipher words, 31 letters: UNIEK CXNKVNED ... JJTRRK ... ISDX KFYHJEER (read from the image; check).",
-   "cls": "B",
-   "status": "Images online (viewed): clear telegram ('Genl Bragg informs me that a Telegram from Louisville of the 10th says that part of the 9th Corps have been sent to reinforce Grant; will not this enable us to [cipher] for this Genl Bragg & should [cipher] over [cipher]'), cipher words in capitals, no interlinear decipherment on the leaf. Confederate Vigenère with the keys MANCHESTERBLUFF, COMPLETEVICTORY, COMERETRIBUTION in three variants gave no plaintext (quick test, this sweep). Probably printed decoded in the Official Records. Not on DECODE; not in the repo.",
-   "why": "Johnston's proposal, during the Vicksburg siege, for Bragg to act against Rosecrans; short, but a clean test of which Confederate key Johnston's office used.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 NARA catalogue sweep (research/nara_catalog/); image viewed",
-   "verify": "Check OR Ser. I vol. 24 pt. 1 or pt. 3 for Johnston to Seddon, 16 Jun 1863; re-transcribe the cipher words at full resolution; try a Vigenère key search with the clear context as crib.",
-   "links": [
-    {
-     "label": "NARA catalogue item (images)",
-     "href": "https://catalog.archives.gov/id/3854726"
-    }
-   ],
-   "seen": "image",
-   "source": "NARA catalogue sweep",
-   "prior_art": "open as far as checked (checked 27 Oct 2026: web search; OR not yet checked)",
    "ark": "",
    "scored": "sweep"
   },
@@ -13161,125 +13044,6 @@
    "seen": "catalogue",
    "source": "CryptoCellar (via captured-records slice)",
    "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026: CryptoCellar list updated 27 Jul 2026)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 644,
-   "counted": true,
-   "year": 1861,
-   "date": "1861 (seized 23 Aug 1861)",
-   "title": "Rose O'Neal Greenhow, letter written in cipher on mourning paper (Confederate spy ring, Washington)",
-   "correspondents": "Rose O'Neal Greenhow → Thomas Jordan / Beauregard's headquarters (presumed)",
-   "place": "Washington, D.C.",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow (entry A1-986), NAID 1634036",
-   "folio_note": "4 images; one mourning-paper leaf in fragments, about 20 lines of symbol-and-digit cipher with clear words ('the', 'this') between cipher groups; second side very faint",
-   "cls": "A",
-   "status": "Catalogue gives no decipherment. Greenhow's cipher (Jordan's symbol alphabet with code signs) has a surviving key, laminated, recovered from her effects (North Carolina State Archives, Greenhow Papers 1863-64), which the Rosenbach used to read her Beauregard note. Whether this leaf was read by Pinkerton's men in 1861 is not established. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
-   "why": "Intelligence from the Washington ring before and after First Bull Run, in the original cipher; a readable test with an outside key.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
-   "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; Get the NC State Archives key image (Rose O'Neal Greenhow Papers, digital.ncdcr.gov 378359); check Blackman, 'Wild Rose' (2005), and the Pinkerton report in the same series for a period decipherment",
-   "links": [
-    {
-     "label": "NARA catalog NAID 1634036",
-     "href": "https://catalog.archives.gov/id/1634036"
-    },
-    {
-     "label": "NARA Greenhow guide",
-     "href": "https://www.archives.gov/research/military/civil-war/greenhow"
-    },
-    {
-     "label": "NC key (Greenhow Papers)",
-     "href": "https://digital.ncdcr.gov/Documents/Detail/rose-oneal-greenhow-papers-1863-1864/378359"
-    },
-    {
-     "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
-     "href": "https://catalog.archives.gov/id/62017285"
-    }
-   ],
-   "seen": "image",
-   "source": "NARA RG 59 (US military/intelligence sweep)",
-   "prior_art": "open as far as found (checked 27 Oct 2026: NARA catalogue, Rosenbach blog, web); period decipherment possible, not located",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 645,
-   "counted": true,
-   "year": 1861,
-   "date": "1861 (seized 23 Aug 1861)",
-   "title": "Thomas Jordan to 'My Dearest Rachel' (Greenhow), letter with portions in cipher",
-   "correspondents": "Lt. Col. Thomas Jordan → Rose O'Neal Greenhow ('Rachel')",
-   "place": "Manassas / Confederate lines (presumed)",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, file 'Letters from Lieutenant Colonel Thomas Jordan to Mrs. Greenhow and to My Dearest Rachel', NAID 1634051",
-   "folio_note": "6 images; clear letter with cipher passages (not viewed)",
-   "cls": "B",
-   "status": "Catalogue title only; no decipherment noted. Same Jordan-Greenhow cipher as NAID 1634036; key survives at NC State Archives. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
-   "why": "The handler's side of the Greenhow ring's correspondence; cipher passages name agents or movements.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
-   "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; View the 6 images; apply the NC key",
-   "links": [
-    {
-     "label": "NARA catalog NAID 1634051",
-     "href": "https://catalog.archives.gov/id/1634051"
-    },
-    {
-     "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
-     "href": "https://catalog.archives.gov/id/62017285"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "NARA RG 59 (US military/intelligence sweep)",
-   "prior_art": "open as far as found (checked 27 Oct 2026)",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 646,
-   "counted": true,
-   "year": 1861,
-   "date": "1861 (seized 23 Aug 1861)",
-   "title": "Greenhow papers: photostat of a burnt letter fragment partially written in cipher",
-   "correspondents": "Rose O'Neal Greenhow → unknown (Confederate contact)",
-   "place": "Washington, D.C.",
-   "language": "English",
-   "region": "Americas",
-   "period": "1801-1900",
-   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, NAID 6925618",
-   "folio_note": "1 image: negative photostat of a fragment recovered from her stove; mixed clear text and about 60 cipher symbols",
-   "cls": "B",
-   "status": "Catalogue title only; no decipherment noted. Same symbol cipher; key at NC State Archives. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
-   "why": "Short, but the cipher signs sit inside clear sentences, which also gives cribs for the system.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
-   "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; Apply the NC key; compare with the mourning-paper letter",
-   "links": [
-    {
-     "label": "NARA catalog NAID 6925618",
-     "href": "https://catalog.archives.gov/id/6925618"
-    },
-    {
-     "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
-     "href": "https://catalog.archives.gov/id/62017285"
-    }
-   ],
-   "seen": "image",
-   "source": "NARA RG 59 (US military/intelligence sweep)",
-   "prior_art": "open as far as found (checked 27 Oct 2026)",
    "ark": "",
    "scored": "sweep"
   },

@@ -2,6 +2,7 @@
 conflict, run two controls, and try the key on the other cipher passages.
 
     python check.py
+    python check.py --reveal ../../docs/reveal/comenius1655.json     # writes the site's 'Watch it decipher' file
 
 Standard library only. Ciphertexts as printed in Patera (1892) and MHH XXIII (1874); see ct_*.txt.
 """
@@ -14,6 +15,12 @@ PT_AUG = "poloniam periisse et papatum in illa"      # Patera's footnote: "Znač
 # 24 May 1655 (Patera CLII p. 178; MHH XXIII no. CIII p. 178). Long s written as s. Last word: Patera / MHH.
 CT_MAY_PATERA = "Lmqsxmyo 7 Gpdlmuoyqnotlses Pnofeyprp 865 ap 73 pys pdyp Xyopatus"
 CT_MAY_MHH = "Lmqsxmyo 7 Gpdlmuoyqnotlses Pnofeyprp 865 ap 73 pys pdyp Xyoapus"
+
+# The key printed in MHH XXIII (Szilagyi 1874) p. 740, "A Harsanyi es Balogh Mate altal hasznalt titkos iras kulcsa"
+# (the secret script used by Rakoczi's envoys Jakab Harsanyi Nagy and Mate Balogh). Reciprocal; as printed:
+# a=m b=i c=p d=u,f e=g f=v g=e h=l i=b k=x l=h m=a n=q o=y p=c q=n r=z s=t t=s u=d,f x=k y=o z=r v,w=f
+PRINTED = dict(a='m', b='i', c='p', d='u', e='g', f='v', g='e', h='l', i='b', k='x', l='h', m='a', n='q', o='y', p='c',
+               q='n', r='z', s='t', t='s', u='d', x='k', y='o', z='r', v='f', w='f')
 
 # a word in the clear text of 4 Aug: "Mire angitur bonus vir (iyy) de tantis sibi injectis remoris" (italic in MHH)
 CT_IYY = "iyy"
@@ -79,10 +86,52 @@ def main():
     for a, b in pairs: recip.setdefault(a, b); recip.setdefault(b, a)
     print('24 May with the pairs as a reciprocal table:', dec(CT_MAY_PATERA, recip, clear=()))
     print("'iyy' with the 4 Aug key / reciprocal table:", dec(CT_IYY, key), '/', dec(CT_IYY, recip))
+    # review pass, 27 Oct 2026: the rebuilt key against the printed MHH XXIII p. 740 table
+    agree = [(c, p) for c, p in sorted(key.items()) if c.isalpha() and PRINTED.get(c) == p]
+    disagree = [(c, p, PRINTED.get(c)) for c, p in sorted(key.items()) if c.isalpha() and PRINTED.get(c) != p]
+    print()
+    print('rebuilt letter values that agree with the printed MHH XXIII p. 740 table:', len(agree), 'of',
+          len(agree) + len(disagree), '| disagree:', disagree)
+    print('digits (not in the printed table): ' + ', '.join(f'{c}={p}' for c, p in sorted(key.items()) if c.isdigit()),
+          '| as letters of the printed table: 6~b=i, 9~q=n, 5~h=l (handwriting shapes; a hypothesis)')
+    print('4 Aug with the printed table   :', dec(CT_AUG.replace('6', 'b').replace('9', 'q').replace('5', 'h'), PRINTED))
+    print('24 May with the printed table  :', dec(CT_MAY_PATERA, PRINTED, clear=()))
+    print("'iyy' with the printed table   :", dec(CT_IYY, PRINTED))
     letters = ''.join(ch for ch in CT_MAY_PATERA.lower() if ch.isalpha())
     print('24 May: letters', len(letters), 'distinct', len(set(letters)),
           '| MHH variant last word differs:', CT_MAY_PATERA.split()[-1], 'vs', CT_MAY_MHH.split()[-1])
 
 
+def reveal(path):
+    """Write the 'Watch it decipher' file: the 4 Aug sentence decoded sign by sign with the rebuilt key."""
+    import json
+    key, conflicts = build_key(CT_AUG, PT_AUG)
+    bad = {pos for pos, *_ in conflicts}
+    toks = [{'g': '', 'p': 'Nihil certius quam ', 'cls': 'plain', 'w': 1}]
+    pos = 0
+    for n, w in enumerate(CT_AUG.split()):
+        if n: toks.append({'g': '', 'p': ' ', 'cls': 'plain'})
+        if w == 'et':
+            toks.append({'g': '', 'p': 'et', 'cls': 'plain', 'w': 1}); pos += 2; continue
+        for i, ch in enumerate(w):
+            pos += 1
+            t = {'g': ch, 'p': key[ch.lower()]}
+            if pos in bad: t['cls'] = 'unc'
+            if i == 0: t['w'] = 1
+            toks.append(t)
+    d = {'slug': 'comenius1655', 'anchor': 'aug',
+         'title': 'Leszno, 4 August 1655: the ciphered sentence after the signature',
+         'caption': 'Comenius to Andreas Klobusiczky, 4 Aug 1655, as printed by Szilágyi (MHH XXIII, 1874, p. 219) and Patera (1892, p. 182), decoded by check.py with the key rebuilt from the printed decipherment. The fourth letter of CmCasda decodes as m (marked uncertain); the printed decipherment reads papatum.',
+         'unit': 'letters', 'key_note': 'Reciprocal letter substitution (a=m, b=i, c=p, d=u, e=g, h=l, n=q, o=y, r=z, s=t), the table printed in MHH XXIII p. 740; the digits 6, 9, 5 stand for i, n, l. "et" is in clear.',
+         'tokens': toks}
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(d, f, ensure_ascii=False, indent=1); f.write(chr(10))
+    print('wrote', path, len([t for t in toks if t.get('g')]), 'cipher signs')
+
+
 if __name__ == '__main__':
-    main()
+    import sys
+    if '--reveal' in sys.argv:
+        reveal(sys.argv[sys.argv.index('--reveal') + 1])
+    else:
+        main()

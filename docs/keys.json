@@ -1,5 +1,13 @@
 {
  "keys": [
+{"id": "k-manchesterbluff", "label": "MANCHESTERBLUFF, Confederate Vigenere key", "kind": "contemporary key", "by": "Confederate government", "year": 1863, "note": "Vigenere on the tabula recta; one of the known Confederate keys with COMPLETEVICTORY and COMERETRIBUTION. On Johnston's telegram of 16 June 1863 it runs across the cipher words and advances by plaintext length (targets/johnston1863/key.md)."},
+{"id": "k-completevictory", "label": "COMPLETEVICTORY, Confederate Vigenere key", "kind": "contemporary key", "by": "Confederate government", "year": 1863, "note": "Known Confederate key; tested on johnston1863 as a control."},
+{"id": "k-comeretribution", "label": "COMERETRIBUTION, Confederate Vigenere key", "kind": "contemporary key", "by": "Confederate government", "year": 1864, "note": "Known Confederate key; tested on johnston1863 as a control."},
+{"id": "k-greenhow-1864", "label": "Greenhow symbol key, the copy found on her body (1864)", "kind": "archive key", "by": "Thomas Jordan", "year": 1861, "note": "Symbol alphabet with digraph, word and figure signs; found on Rose Greenhow when she drowned off Fort Fisher, 1864; copy 'Lamb Papers CXXIX' in NARA RG 45 M1091, naId 62017285 image 0484 (photostat 0485). Jordan wrote that he arranged the cipher in April 1861 (OR II 2 pp. 564-565). Table: targets/greenhow1861/key_1864.md.", "image": {"src": "greenhow1861_key.jpg", "credit": "National Archives, RG 45, M1091 Subject File of the Confederate States Navy, naId 62017285, image 0484, via the National Archives Catalog", "caption": "The key sheet found on Rose Greenhow, copy headed Lamb Papers CXXIX", "page": "greenhow1861.html"}},
+{"id": "k-confederate-cipher-1864-m1091", "label": "'Confederate cipher 1864' symbol table (M1091 image 0483)", "kind": "archive key", "by": "unknown", "year": 1864, "note": "White-on-black table in the same M1091 file (A = <, B = ^ ...); a different cipher from the Greenhow key."},
+{"id": "k-tomokiyo-puebla-first", "label": "Puebla's First Cipher (Tomokiyo's reconstruction of Bergenroth's key no. 6)", "kind": "scholar's key", "by": "Satoshi Tomokiyo, after Bergenroth", "year": 1506, "note": "Letter substitution with second signs for a, i and u/v (a = q or M, r = the sign 46, t = R, s = barred T), reconstructed by Tomokiyo from Puebla's letters of 1496-1507 before he found the original (cryptiana, 'Spanish ciphers', Puebla1.jpg); Bergenroth's key no. 6. No sign for z."},
+{"id": "k-puebla-great-roman", "label": "Puebla's Great Roman Numeral code (AGS Patronato Real leg. 52 doc. 33)", "kind": "archive key", "by": "Spanish royal chancery (Almazán's office)", "year": 1495, "note": "An alphabetical one-part code of about 2,400 words and names numbered in Roman figures, on 200 PARES images (show/2207755); CC, CCC and CCCC written as ligatures told apart by a superscript o or an overbar. Tomokiyo published many of its values."},
+{"id": "k-rakoczi-envoys-1655", "label": "Rakoczi envoys' reciprocal letter table (Harsanyi and Balogh), printed MHH XXIII p. 740", "kind": "contemporary key", "by": "Chancery of George II Rakoczi", "year": 1655, "found": 1874, "note": "Reciprocal substitution a=m b=i c=p d=u e=g f=v h=l k=x n=q o=y r=z s=t, f also for u/d; printed by Szilagyi at the end of Monumenta Hungariae Historica, Diplomataria XXIII (1874), p. 740, as the secret script used by Jakab Harsanyi Nagy and Mate Balogh at the Porte. Comenius used it in 1655.", "image": {"src": "comenius1655_key.jpg", "credit": "S. Szilágyi (ed.), Monumenta Hungariae Historica, Diplomataria XXIII (Budapest 1874), p. 740, via the Internet Archive", "caption": "The table as printed in 1874", "page": "comenius1655.html"}},
 {"id": "k-ennery1765", "label": "Martinique key for d'Ennery, 1765 (printed form)", "kind": "archive key", "by": "Secretariat of State for the Navy", "year": 1765, "note": "ANOM COL C8 A 67 f. 178: printed two-part nomenclator form, 800 entries, numbers filled in by hand, encipher and decipher tables."},
 {"id": "k-windward1761", "label": "Windward Islands code of 1761 (La Touche and La Riviere), values rebuilt here", "kind": "rebuilt here", "by": "cyphersolver", "year": 1761, "note": "Two-part numerical nomenclator, values 11-696. About 110 values from the interlinear decipherment of La Riviere's letter of 21 Aug 1761 (ANOM C8 A 63 f. 208), extended from context in the letter of 12 June 1761 (27 Oct 2026); key1761.tsv grades every value."},
 {"id": "k-hessen1652", "label": "Hesse-Darmstadt cipher alphabets of Georg II and Cardinal Friedrich (HStAD D 4 Nr. 141/2)", "kind": "archive key", "by": "Hesse-Darmstadt chancery", "year": 1652, "note": "Archive key file with alphabets of 1652 and 1658."},
@@ -2349,6 +2357,12 @@
 {"id": "k-thomson-we007-jay", "label": "Thomson code, Jay's copy (Weber WE007), 1781", "kind": "archive key", "by": "Charles Thomson", "year": 1781, "note": "Printed form with numbers by hand, Columbia RBML Jay Papers ldpd:50144; headed as modified by Livingston 6 July 1782; carries the be-he 600-605 additions in manuscript."}
  ],
  "links": [
+{"key": "k-manchesterbluff", "target": "johnston1863", "how": "read unchanged", "note": "matched against the 1863 'Translation of Cypher': 26/33 positions, advancing by plaintext length; the rest the clerk's slips"},
+{"key": "k-greenhow-1864", "target": "greenhow1861", "how": "adapted", "note": "side 1 deciphers unchanged except a second N form (looped l with a crossbar) valued from context"},
+{"key": "k-greenhow-1864", "target": "jordan1861", "how": "read unchanged", "note": "all 82 securely transcribed signs give the clerk's clear copy's letter"},
+{"key": "k-tomokiyo-puebla-first", "target": "puebla1506", "how": "read unchanged", "note": "all letter signs of ll. 11-29 decoded with the table as published; one sign (l. 13) not in it"},
+{"key": "k-puebla-great-roman", "target": "puebla1506", "how": "partial", "note": "one code word, DCCCLXXXVIII = el Rey de Inglaterra (key image 51), three times; C-count not checked on this letter"},
+{"key": "k-rakoczi-envoys-1655", "target": "comenius1655", "how": "rebuilt from", "note": "12 letter values rebuilt from the printed decipherment of 4 Aug 1655, all equal to the table printed in MHH XXIII p. 740; one letter of CmCasda conflicts; it does not read the 24 May 1655 passage"},
 {"key": "k-windward1761", "target": "mercier1761", "how": "rebuilt from", "note": "rebuilt from the interlinear decipherment of the sibling letter C8 A 63 f. 208, extended from context"},
 {"key": "k-erbach1666", "target": "erbach1653", "how": "rebuilt from", "note": "verse rebuilt from about eighty crib cells; all 610 pairs of the three 1666 letters read with it unchanged, 19 writer's slips"},
 {"key": "k-jefferson-code11", "target": "jefferson1787", "how": "rebuilt from", "note": "key.tsv; checks the editors' bracketed readings of 4 July 1787 and later"},
@@ -3741,6 +3755,8 @@
   }
  ],
  "source_links": [
+{"source": "s-tomokiyo", "key": "k-tomokiyo-puebla-first"},
+{"source": "s-cyphersolver", "key": "k-rakoczi-envoys-1655"},
 {"source": "s-cyphersolver", "key": "k-windward1761"},
 {"source": "s-cyphersolver", "key": "k-erbach1666"},
 {"source": "s-cyphersolver", "key": "k-jefferson-code11"},
@@ -4417,6 +4433,10 @@
   "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
  },
  "tried": [
+{"key": "k-completevictory", "target": "johnston1863", "note": "1/33 positions"},
+{"key": "k-comeretribution", "target": "johnston1863", "note": "3/33 positions"},
+{"key": "k-confederate-cipher-1864-m1091", "target": "greenhow1861", "note": "a different table; does not fit side 1"},
+{"key": "k-confederate-cipher-1864-m1091", "target": "jordan1861", "note": "a different table; does not fit the fragment"},
 {"key": "k-ennery1765", "target": "mercier1761", "note": "does not fit: 614 = voisins, de = 428, values up to 800 while the letter stops at 696"},
 {"key": "k-jefferson-code11", "target": "legation1788", "note": "tried on Carmichael's Code No. 13 numbers: does not fit (597 = freedom, 223 = trouble in Code No. 11)"},
 {"key": "k-hessen1652", "target": "erbach1653", "note": "viewed; a different system (cipher alphabets, not a verse key)"},

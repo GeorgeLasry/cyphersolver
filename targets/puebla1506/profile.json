@@ -71,7 +71,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "None found in CSP Spain I (April 1506, pp. 385-386), the 1868 Supplement (1506), Fuensalida's Correspondencia (1907), or Tomokiyo; later Spanish editions not checked.",
+   "where": "None found in CSP Spain I (April 1506, pp. 385-386), the 1868 Supplement (1506), Fuensalida's Correspondencia (1907), CODOIN vol. 8 (1846), Paz y Meliá's Series de los más importantes documentos ... Medinaceli vols. 1-2 (1915-22), Rodríguez Villa's Juana la Loca (1892), Mattingly EHR 1940, or an Internet Archive full-text search for the reading's phrases (27 Oct 2026). Tomokiyo lists the letter without a reading; the source of his page carries an HTML comment with the first words of l. 11 ('y dela parti da ....'), so he had begun to decipher it. HathiTrust, Google Books, BNE Hispánica and Mattingly's Catherine of Aragon (1941) not searched in full text.",
    "found": "not found",
    "used": false
   },
@@ -82,10 +82,11 @@
   "attack": "published key",
   "human_role": "WAINUT: the owner set the task (catalogue items 615-617). The work was done by AI language-model agents, and a second agent re-read the cipher on fresh crops with its own decoder. No human reading.",
   "tools": [
-   "decode.py (First Cipher decoder; word-list cover controls with shuffled keys and shuffled texts)"
+   "decode.py (First Cipher decoder; controls: shared es-golden-age language model and word-list cover, each against 1000 shuffled keys and 1000 shuffled texts; lm.best_language)"
   ],
   "models": [
-   "AI language-model agents (WAINUT; versions not recorded here)"
+   "Claude Opus 5.5 subagents (WAINUT, per contributors.json; versions not recorded in the pull request)",
+   "Claude Opus 5.5 (maintainer review, 27 Oct 2026)"
   ],
   "sessions": 1,
   "first_date": "2026-10-27",
@@ -133,6 +134,43 @@
    "kind": "literature search",
    "what": "CSP Spain I April 1506 (BHO, fetched again: nos. 458-460, no Puebla letter); 1868 Supplement 1506; Fuensalida 1907 OCR searched for the distinctive phrases: no earlier reading.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Maintainer review (Claude for Daniel Bourdeau): key_first_cipher.tsv checked sign by sign against Tomokiyo's table image Puebla1.jpg (cryptiana): every value agrees (a = q/M, b/v = o/p, c = Pi, d = long s, e = +, f = g, g = f, h = a, i/y = b/5, l = e, m = lambda, n = alpha, o = z-forms, p = U, q = crossed L, r = 46, s = barred T, t = R, u = o); the table has no z.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Shared language model es-golden-age (order 5, no spaces) on the decoded runs of ll. 14-29: key -1.692 per letter; 1000 shuffled keys best -4.734 (median -6.117); key on 1000 sign-shuffled texts best -4.258 (median -4.773). lm.best_language on the word-divided reading: es-modern -1.617 first, ca-modern -1.946, pt-modern -2.093 (decode.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Print search for this letter: OCR of CODOIN vol. 8, Paz y Meliá Series vols. 1-2, Rodríguez Villa 1892, Crónica del rey Enrico Otavo 1874 appendix, Mattingly EHR 55 (1940) grepped for the reading's distinctive words and for Puebla letters of April 1506; Internet Archive full-text search for seven phrases: no earlier text. Found a commented-out note 'y dela parti da ....' in the source of Tomokiyo's Spanish-ciphers page beside this letter. HathiTrust full-text search blocked by a Cloudflare challenge (not bypassed).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Reading reviewed as sentences; l. 29 'va a beneficio de natura' identified as the period phrase 'left to nature / to chance' (Cisneros's secretaries 1516, CODOIN) and retranslated; two translation sentences smoothed. No change to the decryption.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Maintainer review tried to fetch image 1 of show/2208120 for the cipher snip and a re-read of the unread signs (l. 13, l. 25): PARES answered HTTP 429 (Too Many Requests) to every request, site-wide, from about 11:45 to 13:10; nothing opened.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -236,9 +274,9 @@
     "summary": "De Puebla tells Almazán that people around the Princess of Wales, for their own interest, had her write the letters he encloses; that he sees her household finely dressed beyond expectation; and that the greed of certain persons is such that he doubts even the treasure of [?the King of England] would content them. Written as Philip and Juana were about to sail from England; Katharine's own letter of the next day (CSP I no. 459) says her people were all but naked.",
     "reading_review": {
      "grade": "B",
-     "by": "WAINUT (contributor's own check by an AI language-model agent against the PARES image; for the maintainers' reviewer to confirm)",
+     "by": "Claude (review for Daniel Bourdeau)",
      "date": "2026-10-27",
-     "note": "Four cipher passages read as Spanish sentences; the holes are untranscribed clear text at the passage ends, two unread signs, one doubtful verb ending, one doubtful article and the code group, whose C-count is not checked on this letter. The low sentence score comes from those [...] marks and the period spelling."
+     "note": "Read reading.txt against decryption.txt as sentences. 'por su propio interese que la princesa me escriviese estas cartas que aqui van inclusas' and 'los de la señora princesa veo tan bien ataviados que mas no pense ver' are whole, idiomatic sentences; 'la codicia de algunas personas [?] [?] es tal que con el tesoro de [el Rey de Inglaterra] dudo que se contentasen' is coherent with two unread signs and a doubtful code word; l. 29 is a fragment ('va a beneficio de natura', a set phrase, retranslated). Every passage is cut at both ends by unread clear text, so the reading is coherent but raw: grade B, not A."
     },
     "note": "read_share from research/reading_audit/v2_score.py (explicit holes)."
    },

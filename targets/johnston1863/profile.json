@@ -11,6 +11,7 @@
    "year": 1863,
    "country": "Confederate States",
    "route": "Jackson, Mississippi -> Richmond",
+   "places": {"from": "Jackson, Mississippi", "to": "Richmond, Virginia"},
    "language": "English",
    "pages": 3,
    "cleartext_in_document": "mostly clear",
@@ -52,7 +53,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Contemporary 'Translation of Cypher' on image 3 of the same NARA item (1863); clear text printed in Richmond in 1864 (Correspondence between the President and General Joseph E. Johnston, archive.org correspondencebe00conf). The Official Records reprint is probable but its page was not confirmed.",
+   "where": "Contemporary 'Translation of Cypher' on image 3 of the same NARA item (1863); clear text printed in Richmond in 1864 (Correspondence between the President and General Joseph E. Johnston, archive.org correspondencebe00conf) and in the Official Records Ser. I vol. 24 pt. 1 (1889) p. 227.",
    "found": "during attempt",
    "used": true
   },
@@ -104,15 +105,27 @@
    "kind": "literature search",
    "what": "Found the clear text printed in 1864 (Richmond, R. M. Smith; archive.org correspondencebe00conf), twice, and quoted in Seddon's letter to Bragg of 17 June. The Official Records page was not confirmed (ehistory.osu.edu refused access).",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Review (Claude, for Daniel Bourdeau): grepped the archive.org text of the Official Records Ser. I vol. 24 pt. 1 (warofrebellion241unit). The telegram is printed on p. 227 ('part of the Ninth and Twenty-third Corps ... Will not this enable us to invade Kentucky? For this, General Bragg's command should extend over East Tennessee'), and the letter to Bragg of 17 June on p. 196, signed Jefferson Davis, quotes the sentence. The OR page is now confirmed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Review (Claude, for Daniel Bourdeau): outcome method changed from 'read after matching with key from external sources' to 'read from existing decipherment'. A complete decipherment of the five cipher words existed in 1863 (the 'Translation of Cypher' leaf, image 3 of the same item), so the text was not obtained by the key; matching MANCHESTERBLUFF to the telegram is what the project added. Reading re-read against decryption.txt and the images: grade A.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "already solved",
   "key": "recovered",
-  "method": "read after matching with key from external sources",
+  "method": "read from existing decipherment",
   "first_break": false,
-  "method_basis": "The known Confederate key MANCHESTERBLUFF, not tied to this telegram in the catalogue, was found to fit the five cipher words against the contemporary 'Translation of Cypher' on image 3 (26/33 positions; the rest are the clerk's slips); the text itself was deciphered in 1863 and printed in 1864.",
-  "contribution": ["transcription", "catalogue correction"],
+  "method_basis": "A complete decipherment existed: the Confederate War Department's 'Translation of Cypher' (1863, image 3 of the same NARA item) gives all five cipher words in clear, and the telegram is printed in 1864 (Richmond) and in the Official Records Ser. I vol. 24 pt. 1 p. 227. The project's contribution is the key match: MANCHESTERBLUFF, running across the cipher words and advancing by plaintext length, fits 26 of 33 positions, and cipher minus crib gives the key stream with the clerk's slips.",
+  "contribution": ["transcription", "key recovered", "catalogue correction"],
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
   "fraction_read_source": "decryption.txt: all 31 cipher letters have a value; the four that differ from the expected encipherment are explained as slips.",
@@ -158,9 +171,9 @@
     "read_share": 1.0,
     "reading_review": {
      "grade": "A",
-     "by": "WAINUT (AI language-model agent; second agent re-read the images)",
+     "by": "Claude (review for Daniel Bourdeau)",
      "date": "2026-10-27",
-     "note": "Reads as the telegram printed in 1864; the five cipher words agree with the 1863 'Translation of Cypher'."
+     "note": "Read reading.md against decryption.txt, the telegram image and the 'Translation of Cypher' leaf: the telegram reads as plain sentences and matches the 1864 print and OR Ser. I vol. 24 pt. 1 p. 227. The three sentences _check_reading.py flags are proper names missing from its word list (Bragg, Louisville, Tennessee) and the header line, not holes. The '&' after 'Bragg' is a cross-like sign in clear (the print has 'Bragg's command'). Replaces the contributor's own grade A (WAINUT agent)."
     },
     "summary": "During the siege of Vicksburg, Johnston passes on Bragg's news that part of the Union 9th and 23d Corps has been sent to reinforce Grant (a telegram from Louisville), and asks Seddon whether this does not allow an invasion of Kentucky, for which Bragg's command should extend over East Tennessee. The words 'invade Kentucky', 'extend' and 'East Tennessee' were enciphered."
    }

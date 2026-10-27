@@ -117,3 +117,35 @@ rk = sorted(score(dict(zip(al, random.sample(vals, len(vals)))), signs) for _ in
 rt = sorted(score(KEY, [random.sample(r, len(r)) for r in signs]) for _ in range(1000))
 print(f'CONTROL word-list cover: key {true:.3f}; 1000 shuffled keys max {rk[-1]:.3f} median {rk[500]:.3f}; '
       f'key on 1000 shuffled texts max {rt[-1]:.3f} median {rt[500]:.3f}')
+
+# Shared language model (lang/README.md): Early Modern Spanish, character 5-grams without spaces, 'early' norm.
+# Mean log-prob per character of the decoded runs (ll. 14-29), for the key, 1000 shuffled keys and the key on
+# 1000 shuffled texts; and best_language() on the decode. Needs numpy; skipped if lang/ cannot load.
+try:
+    import sys
+    sys.path.insert(0, str(HERE.parent.parent))
+    from lang import lm
+except Exception as e:  # pragma: no cover
+    print('CONTROL lm: skipped,', e)
+else:
+    M = lm.load('es-golden-age', order=5, spaces=False)
+
+    def lmscore(key, rows):
+        tot = n = 0
+        for r in rows:
+            s = lm.norm(''.join(key.get(x, '') for x in r), 'early')
+            if len(s) > 5:
+                tot += M.per_char(s) * len(s)
+                n += len(s)
+        return tot / n
+
+    random.seed(2)
+    tl = lmscore(KEY, signs)
+    lk = sorted(lmscore(dict(zip(al, random.sample(vals, len(vals)))), signs) for _ in range(1000))
+    lt = sorted(lmscore(KEY, [random.sample(r, len(r)) for r in signs]) for _ in range(1000))
+    print(f'CONTROL es-golden-age per char: key {tl:.3f}; 1000 shuffled keys best {lk[-1]:.3f} median {lk[500]:.3f}; '
+          f'key on 1000 shuffled texts best {lt[-1]:.3f} median {lt[500]:.3f}')
+    # language ID needs word division: use the word-divided reading (reading.txt), holes and markup removed
+    rd = (HERE / 'reading.txt').read_text(encoding='utf-8').split('## Reading', 1)[1]
+    rd = re.sub(r'\[\?[^\]]*\]|\[\.\.\.\]|\{[^}]*\}|ll?\. [\d-]+:', ' ', rd)
+    print('CONTROL best_language (reading.txt):', ', '.join(f'{m} {s:.3f}' for s, m in lm.best_language(rd)[:4]))
