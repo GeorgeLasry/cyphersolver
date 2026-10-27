@@ -15273,6 +15273,158 @@
    "prior_art": "open as far as checked (27 Oct 2026: known.py, catalogue 628-680, nara_triage_a-d, nara_military/state/catalog; web search)",
    "ark": "",
    "scored": "sweep"
+  },
+  {
+   "id": 704,
+   "counted": true,
+   "year": 1940,
+   "date": "Apr-Jun 1940 (one exercise message 25 Feb 1939)",
+   "title": "Flugabwehrkommando Schwarzwald (Luftgau VII), Funksprüche in the Luftgauschlüssel double transposition, Western campaign 1940",
+   "correspondents": "Flugabwehrkommando Schwarzwald and its Flak groups/regiments (Luftgaukommando VII, Munich) ↔ subordinate Flak units",
+   "place": "Black Forest / Upper Rhine (Flak-Gruppe Schwarzwald-Süd and -Nord)",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T405 (German Air Force Records of the Luftgaukommandos, Flak ...), roll 9 (NAID 332033680)",
+   "folio_note": "c. 70 Funkspruch forms in five-letter groups, frames 863-867 (one message in 5 parts, 'Un 1.Tl-179' ... '5.Tl-204'), 889-901, 917-936, 947-948, 964-1003, 1010-1011, 1025-1056, 1069-1105, 1113 (plus 565, 9); most messages are multi-part ('1.Tl', '2.Tl' ...) of 160-250 letters. Frame 349: an exercise Fernschreiben of 25.2.1939 (221 letters) to Luftverteidigungskommando Berlin; frame 350: its key card 'Annahme: Luftgauschlüssel für den 25.2.1939', two transposition keys a (21) and b (19), Kenngruppen qli vzn fks puc.",
+   "cls": "B",
+   "status": "Not on DECODE, not in the repo (known.py: T405, Schwarzwald, Luftgau: no hits). The letter counts of the groups are those of German plaintext with X as word separator (pooled IC 0.060 on noisy OCR, top letters E R X I N A), so this is a transposition, not Enigma. Tested 27 Oct 2026: the 1939 exercise message reads in full with its key card (double columnar transposition, key a then b, the group containing the Kenngruppe 'fks' at group 7 dropped, CH written Q): 'ROEM X ERSTE FLAKREGIMENT X ZWOELF X RES X FLAKABTEILUNG ... WERDEN IN DER NACHT DURQ TEILE DER X FLAKTRANSPORTABTEILUNG X DREIEINS X NAQ X MAGDEBURG X VERLEGT X LUFTGAUKOMMANDO X ROEM X DREI' (dw1939.py). The 1940 messages carry no key and no decipherment on the frames; some have a typed Fernschreiben in clear on a neighbouring frame (e.g. 862, 4 June 1940) that may be the same text.",
+   "why": "A large, dated file of German hand-cipher (Doppelwürfel) radio traffic from 1940, with the system and one key proven from the same reel: a ready test bed for double-transposition hill-climbing and possibly cribbed by the clear Fernschreiben filed beside it.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 4,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); frames 349-350 and the key verified on the images, the 1940 messages read from OCR only",
+   "verify": "Transcribe the five-part message of frames 863-867 and two or three same-day messages from the images; match them to the clear Fernschreiben on neighbouring frames (862, 878, 888, 897 ...) as cribs; then run a double-transposition solver with key lengths 15-25 (one daily key per day for all messages).",
+   "links": [
+    {
+     "label": "T405 roll 9 (NAID 332033680)",
+     "href": "https://catalog.archives.gov/id/332033680"
+    },
+    {
+     "label": "frame 350, key card 25.2.1939",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0009/T405-0009-00350.tif"
+    },
+    {
+     "label": "frame 863, five-part Funkspruch",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-242/7794463/T405/T405-0009/T405-0009-00863.tif"
+    }
+   ],
+   "seen": "image",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py; no edition of T405 roll 9 known; the 1939 exercise message read here with its own key)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 705,
+   "counted": true,
+   "year": 1940,
+   "date": "Oct-Nov 1939 and Apr 1940",
+   "title": "British consular cipher telegrams (Vigo → Foreign Office 1939; Gibraltar ↔ British consul Las Palmas, Lisbon/Lagos → consul Tenerife 1940), copies obtained by the German naval attaché Madrid and sent to OKW/Chi",
+   "correspondents": "British consul Vigo → Foreign Office London; British authorities Gibraltar, Lisbon, Lagos → British consuls Las Palmas and Tenerife",
+   "place": "Vigo; Gibraltar; Las Palmas / Tenerife",
+   "language": "English (presumed)",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T1022 (Copies of Records of the German Navy), rolls 2865 (NAID 338541514) and 2866 (NAID 338542419); OKW Ausland IV files B.Nr. 1440/39 gKdos and 3022/40",
+   "folio_note": "Roll 2865 frames 362-366: Marineattaché Madrid B.Nr. 128/39 g.Kdos (20.11.1939) 'Englische Konsularchiffer im Verkehr mit Auswärtigem Amt', copies of the Vigo consul's telegrams of 11-12.11.1939 (5-figure groups, some letter groups) on the sailing of eight German steamers; forwarded 1.12.1939 to W.F.A./Chi. (an earlier batch B.Nr. 97/39 of 21.10.1939 not located). Roll 2866 frames 503-515: Marineattaché Madrid B.Nr. 597 g (21.5.1940) 'Feindliche Schlüsseltelegramme', anonymous copies of April 1940 telegrams: 5-figure group telegrams Gibraltar → British Consul Las Palmas on Spanish telegraph forms (frames 504, 508-515), 'Nota num. 5-7' letter-group telegrams Lisbon/Lagos → British consul Tenerife (frame 507).",
+   "cls": "C",
+   "status": "Not on DECODE, not in the repo. The covering letters submit the copies 'zwecks möglicher Auswertung'; no decipherment or Chi reply is filed with them on these frames. British consular traffic of 1939-40 was in hand book ciphers (figure codes with subtractor tables); the system is not identified here.",
+   "why": "British reporting from neutral Spanish ports on German blockade-runners at the start of the war, intercepted by German agents; any reading would show what the consuls reported and whether German Chi read it.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); read from OCR, not viewed",
+   "verify": "View rolls 2865 frames 362-366 and 2866 frames 503-515; look for the Chi answer and the October 1939 batch in the neighbouring OKW Ausland IV files; check TNA FO 371 / FO 185 for the Vigo and Las Palmas consuls' telegrams of those dates (the clear versions would be cribs).",
+   "links": [
+    {
+     "label": "T1022 roll 2865 (NAID 338541514)",
+     "href": "https://catalog.archives.gov/id/338541514"
+    },
+    {
+     "label": "T1022 roll 2866 (NAID 338542419)",
+     "href": "https://catalog.archives.gov/id/338542419"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py; nothing found on these intercepts)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 706,
+   "counted": true,
+   "year": 1940,
+   "date": "22-28 Apr 1940",
+   "title": "French consular agent Las Palmas → Marine Casablanca, letter-cipher telegrams ('Nota num. 2-4') copied by an anonymous informant for the German naval attaché Madrid",
+   "correspondents": "Agent consulaire de France, Las Palmas → Marine (French Navy) Casablanca",
+   "place": "Las Palmas",
+   "language": "French (presumed)",
+   "region": "France",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T1022 roll 2866 (NAID 338542419), frames 505-507 (OKW Ausland IV 3022/40)",
+   "folio_note": "Three short telegrams in five-letter groups: 22.4.1940 (frame 505, c. 14 groups), 'Nota num. 3' 24.4.1940 (frame 506, c. 30 groups), 'Nota num. 4' 28.4.1940 (frame 507, c. 25 groups), each with the informant's German note.",
+   "cls": "C",
+   "status": "Not on DECODE, not in the repo. Submitted to OKW Ausland IV for 'mögliche Auswertung'; no decipherment on the frames. French naval traffic of 1940 used code with letter superencipherment; system not identified.",
+   "why": "French naval intelligence reporting from the Canaries in the last weeks before the German offensive in the West.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); read from OCR, not viewed",
+   "verify": "View frames 505-507; check whether French naval intelligence files (SHD Marine, Vincennes) hold the clear versions.",
+   "links": [
+    {
+     "label": "T1022 roll 2866 (NAID 338542419)",
+     "href": "https://catalog.archives.gov/id/338542419"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 707,
+   "counted": true,
+   "year": 1940,
+   "date": "1938-Aug 1940",
+   "title": "Kriegsmarine Etappendienst / OKW Abwehr IV 'Scheintelegramme' in the W.f.S. (Wörterbuch für Scheintelegramme 1930/1936: Hapag-Lloyd code + Kammwürfel transposition): radio telegrams to M.S. Havelland, Aug 1940, filed without clear text",
+   "correspondents": "OKW Ausland IV / Etappe → German merchant ship M.S. 'Havelland' (Yokohama) via DEBEG ship radio",
+   "place": "Berlin → Yokohama",
+   "language": "German",
+   "region": "Germany",
+   "period": "1901-1950",
+   "shelfmark": "NARA RG 242, T1022 roll 3391 (NAID 338968820), frames 877-878; system and plain/cipher pairs on rolls 3391, 3367 (NAID 338928415) and 2864 (NAID 338540609)",
+   "folio_note": "Roll 3391 frames 877 (3.8.1940, c. 160 groups, 'DGR-DZG DFB-DFQ') and 878 (1.8.1940, c. 35 groups): no Klartext on the frames. Key material in the same rolls: 3391 frames 614-617 (Jan 1940 proposal to change the W.f.S. procedure, with a worked example 'Englischer schwerer Kreuzer ...' in old and new form), 91 (telegram with code numbers glossed '0898 = unter Bezugnahme ...'); roll 3367 frames 221-230 (KALORLUX Hamburg telegrams Jan-Mar 1938 each with 'Klartext'); roll 2864 frame 837 (21.11.1938 telegram with Klartext).",
+   "cls": "A",
+   "status": "Not on DECODE, not in the repo. The W.f.S. is a commercial-code (Hapag-Lloyd) dictionary with a columnar 'Kammwürfel' step; several telegrams in the same rolls are filed with their clear text, so the code list and the transposition can be rebuilt from pairs; the two 1940 radio telegrams have no clear text with them.",
+   "why": "Abwehr/Etappe instructions to a blockade-running supply ship in Japan in 1940; and a documented German naval-agent hand system with plain/cipher pairs, not on DECODE.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "Scored from NARA OCR during the Oct 2026 NARA bulk-scan triage (research/nara_triage_g/); read from OCR, not viewed",
+   "verify": "View 3391 frames 614-617 and 877-878; gather all W.f.S. telegrams with Klartext in rolls 2864-2866, 3367, 3391 and neighbouring Abw IV rolls; find a Hapag-Lloyd Code copy (Hamburg 1920s) to identify the dictionary.",
+   "links": [
+    {
+     "label": "T1022 roll 3391 (NAID 338968820)",
+     "href": "https://catalog.archives.gov/id/338968820"
+    },
+    {
+     "label": "T1022 roll 3367 (NAID 338928415)",
+     "href": "https://catalog.archives.gov/id/338928415"
+    },
+    {
+     "label": "T1022 roll 2864 (NAID 338540609)",
+     "href": "https://catalog.archives.gov/id/338540609"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NARA bulk-scan triage G (RG 242 / RG 94)",
+   "prior_art": "open (checked 27 Oct 2026: known.py: Etappe, Vermehren, Kammwürfel: no hits)",
+   "ark": "",
+   "scored": "sweep"
   }
  ]
 }
