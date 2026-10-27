@@ -1,6 +1,7 @@
 # Anthony Morris to James Monroe, Cadiz/Madrid 1813-15: the State Department code with its blocks reversed
 
-Status: contributed by WAINUT (27 Oct 2026). The code is identified: it is the State Department code already rebuilt
+Status: in progress. Next step: transcribe the other coded frames, give frame 0039 a second reading, then the print search (Manning vol. 3, Woolfley).
+Contributed by WAINUT (27 Oct 2026). The code is identified: it is the State Department code already rebuilt
 in [`../jqa`](../jqa/NOTES.md) (the = 1385), and Morris's copy numbers its sixteen blocks of 100 in reverse order.
 One page (frame 0039, 554 of about 3,000 groups, some 18%) is transcribed and read in part (0.678 of its words read
 as sense); the other coded frames are not transcribed, so the catalogue item as a whole is about 12% read. In short:
