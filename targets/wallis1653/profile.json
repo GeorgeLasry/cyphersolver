@@ -1,0 +1,312 @@
+{
+ "schema_version": 1,
+ "target": "wallis1653",
+ "title": "Wallis's undeciphered 'challenge' letters, nos. 50-53 of his 1653 cipher collection (Bodleian MS. e Mus. 203 pp. 218-226)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "Bodleian MS. e Mus. 203, letter 52 (EMLO 86e81b88); witness used: Davys, An Essay on the Art of Decyphering (London 1737) pp. 24-25",
+   "date": "undated (1651, before Charles II's march into England)",
+   "year": 1651,
+   "country": "England",
+   "route": "Scotland -> Lancashire (Buckingham to an English royalist)",
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "John Davys, An Essay on the Art of Decyphering (1737) pp. 24-29: interlinear decipherment, key table and notes on the open groups (archive.org bim_eighteenth-century_an-essay-on-the-art-of-d_davys-john_1737, leaves n31-n36).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 480,
+    "distinct": 156,
+    "unit": "code groups",
+    "measured": true,
+    "file": "letter52_ct.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "good",
+    "source": "Davys 1737 printed pages (archive.org scans), not the manuscript",
+    "notes": "Printed type; every group legible. The manuscript itself was not seen."
+   },
+   "read": "read"
+  },
+  {
+   "id": "B",
+   "shelfmark": "Bodleian MS. e Mus. 203, letter 50 (EMLO cb69093b); copy MS. Eng. misc. e. 475",
+   "date": "4 Apr 1653",
+   "year": 1653,
+   "country": "Netherlands",
+   "route": "The Hague -> London (Brasset to Bordeaux-Neufville)",
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None found: Thurloe SP i April 1653 has no Brasset letter; Davys 1737 calls it the French one of three undeciphered letters.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised; no printed copy found. pages is a placeholder."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "C",
+   "shelfmark": "Bodleian MS. e Mus. 203, letter 51 (EMLO 3329a9ec); copy MS. Eng. misc. e. 475",
+   "date": "16 Jan 1651",
+   "year": 1651,
+   "country": "Scotland",
+   "route": "Scotland -> unknown",
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None found.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised; language from Davys 1737 ('the other two in English'). pages is a placeholder."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "D",
+   "shelfmark": "Letter 53 of Wallis's private copy (Dominic Winter 7 Oct 2020 lot 375, privately owned); EMLO eef01c0b lists Bodleian manifestations, unchecked",
+   "date": "5 May 1658",
+   "year": 1658,
+   "country": "Flanders",
+   "route": "Flanders -> unknown (Peter Townesend)",
+   "language": "unknown",
+   "pages": 1,
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None found.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not seen. pages is a placeholder."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Item A: numbers 1-65 single letters with 2-3 homophones, 66-455 an alphabetical table of syllables and words (82 able ... 455 you), 460-506 number codes; items B-D unseen.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 156,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "System fields describe item A (no. 52) only. The four letters are probably four different ciphers; split them once B-D are seen."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Davys, An Essay on the Art of Decyphering (London 1737) pp. 24-29, for item A only",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published reading"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "curl",
+   "built-in browser (Dominic Winter lot page)",
+   "archive.org OCR and page images",
+   "python (check52.py)"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 2,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Digital Bodleian and EMLO: no images of MS. e Mus. 203 or Eng. misc. e. 475. Auction photographs (8) fetched: none shows letters 50-53.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Dominic Winter lot 375 description: Davys 1737 printed the Buckingham letter (no. 52). Davys 1737 found on archive.org: letter 52 printed with interlinear decipherment, key and notes (pp. 24-29).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Thurloe SP i (April 1653) searched for a Brasset to Bordeaux clear copy as a crib for no. 50: none.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Letter 52 transcribed from Davys's page images with his reading aligned group for group (letter52_davys.txt, letter52_ct.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "key-structure hypothesis",
+    "repeat/pattern analysis"
+   ],
+   "what": "check52.py: key built from the alignment; clashes only case, i/I and u/v, plus two forced values (118 county/counte-, 144 dy/di); letters 1-65 homophonic, 66-455 alphabetical syllable/word table. 456/480 groups read (95.0%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Open names placed by the alphabetical table: 71 (a-block, Argyle fits), 254 (between lord and London, an L name), 277 (between ly and man: Leslie per Davys, or Massey). Not decided; not written into the reading.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "Item A was deciphered in print by John Davys (1737); here it was transcribed from the printed page images and checked for consistency. Items B-D were not seen.",
+  "parts": [
+   {
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "label": "no. 52, Buckingham (1651), Davys 1737"
+   },
+   {
+    "method": "not applicable",
+    "extent": "none",
+    "label": "no. 50, Brasset to Bordeaux, 4 Apr 1653",
+    "basis": "not reached: no images, blocked on Bodleian access"
+   },
+   {
+    "method": "not applicable",
+    "extent": "none",
+    "label": "no. 51, Scotland, 16 Jan 1651",
+    "basis": "not reached: no images, blocked on Bodleian access"
+   },
+   {
+    "method": "not applicable",
+    "extent": "none",
+    "label": "no. 53, Townesend, Flanders, 5 May 1658",
+    "basis": "not reached: no images, blocked on Bodleian access"
+   }
+  ],
+  "first_break": false,
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.95,
+  "fraction_read_method": "measured",
+  "verification": [
+   "key confirms",
+   "historical consistency"
+  ],
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "davys",
+    "role": "prior solution",
+    "note": "deciphered letter 52 and printed it with the key, An Essay on the Art of Decyphering (1737) pp. 24-29",
+    "date": "1737"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "letters 50, 51, 53 (items B-D)",
+    "blocker": "needs-physical-access",
+    "detail": "Bodleian MS. e Mus. 203 pp. 218-226 / Eng. misc. e. 475 pp. 234-247 not digitised; no. 53 may be only in the private 2020 copy"
+   },
+   {
+    "item": "letter 52: address line 460 482 83 497 382 113, number codes 492 505 / 479 506 / 479 505 / 487, names 71 254 277, dash groups 7 42 68, 66 68, 8, 7 20",
+    "blocker": "open-codes",
+    "detail": "24 of 480 groups; Davys's guesses recorded in NOTES, not adopted"
+   }
+  ],
+  "notes": "Status in progress: B-D blocked on access. The catalogue's 'four unsolved' is three, and letter 52 has been deciphered in print since 1737.",
+  "texts": [
+   {
+    "doc": "A",
+    "label": "no. 52, Buckingham to an English royalist (Lancashire rising), 1651; Davys 1737 pp. 24-25",
+    "transcription": [
+     "letter52_davys.txt",
+     "letter52_ct.txt"
+    ],
+    "decryption": "letter52_plain.txt",
+    "summary": "The Lancashire gentlemen are ready to rise for the King and ask for a party of horse from Scotland to countenance their rising; the Lords in Scotland promise their best horse and Highland foot under 277 and Buckingham; Buckingham has leave to raise a troop of English horse and will go that way into England rather than lie disguised about London; the bearer Colonel Berkenhead, main negotiator of the Lancashire business, will give a full account.",
+    "language": "en",
+    "read_share": 0.95
+   }
+  ]
+ }
+}
