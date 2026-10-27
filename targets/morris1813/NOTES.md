@@ -2,8 +2,14 @@
 
 Status: contributed by WAINUT (27 Oct 2026). The code is identified: it is the State Department code already rebuilt
 in [`../jqa`](../jqa/NOTES.md) (the = 1385), and Morris's copy numbers its sixteen blocks of 100 in reverse order.
-One page (frame 0039) is transcribed and read in part. The other coded frames are not transcribed. The site page and
-the ledger rows are left to the maintainer.
+One page (frame 0039, 554 of about 3,000 groups, some 18%) is transcribed and read in part (0.678 of its words read
+as sense); the other coded frames are not transcribed, so the catalogue item as a whole is about 12% read. In short:
+code identified, complete; text of frame 0039, partial; text of the other frames, not attempted (`outcome.parts`).
+The site page and the ledger rows are left to the maintainer.
+
+Merge order: the 364 = full stop argument (section 2) rests on the Ellis 1839 alignment of PR #107, so #107 goes in
+first. On merge, catalogue 650 (which says the signature groups do not match the JQA table) and `../jqa/NOTES.md`
+should record the reversed-block copy; a one-line pointer is added to `../jqa/NOTES.md` in this pull request.
 
 Catalogue 650. Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI
 language-model agents. The transcription of frame 0039 was made from the NARA image; a second agent re-read a quarter
@@ -41,7 +47,10 @@ changed.
 **How it was found.**
 
 1. 220 number-to-value tables in the repository (main and the open WAINUT pull requests) were applied directly.
-   None fits (best function-word share 0.11).
+   None fits (best function-word share 0.11). This was done with the solver's working script `score_all.py`, which
+   parses every number-to-value mapping in the key, code and pairs files and scores coverage and function words; it
+   is not included in this pull request, so this step cannot be rerun from the PR alone. `decode.py --controls`
+   reproduces the result that matters: the JQA fit under `block_map.tsv` against random block orders.
 2. Constant shifts against the US tables: the JQA table at +1100 stood out (function-word share 0.25 against 0.03
    for the next tables), because one block of 100 lines up.
 3. Best offset per Morris block: the busy blocks (Morris 1-300) gave +1500, +1300, +1100, which suggests the full
@@ -137,12 +146,13 @@ in the table (a slot inference); it fits here (democratic).
 
 ## Remaining gaps
 
-- Frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups) - blocker: not-attempted. Not
-  transcribed. 0191-0192 are two copies of one despatch and would check readings and transcription together.
-- 36 distinct groups (48 tokens) on frame 0039 without a table value, among them 670 (5x), 904, 1149, 1311, 163 and
-  the figure groups 655, 657 and 659 - blocker: open-codes. More Morris text would test the context readings.
-- About 74% of the groups on frame 0039 were read once only; L17 132, L19 479 and L24 518 are doubtful - blocker:
-  not-attempted. A second full reading is the next step.
+- Frames 0036-0038, 0050, 0052-0057, 0124-0125 and 0191-0192 (about 2,500 groups) - blocker: not-attempted; not
+  transcribed. This is workable, so "read in part" is not a stopping point. 0191-0192 are two copies of one despatch
+  and would check readings and transcription together.
+- 36 distinct groups (48 tokens) on frame 0039 without a table value - blocker: open-codes; among them 670 (5x), 904,
+  1149, 1311, 163 and the figure groups 655, 657 and 659. More Morris text would test the context readings.
+- About 74% of the groups on frame 0039 were read once only - blocker: not-attempted; L17 132, L19 479 and L24 518 are
+  doubtful. A second full reading is the next step.
 
 ## Escalation
 
