@@ -61,6 +61,39 @@
     "image_quality": "good",
     "notes": "Same printed code words as Book #1 but a different, lost filling (Andes = McClellan)."
    }
+  },
+  {
+   "id": "mssEC19-p1-7",
+   "read": "read in part",
+   "shelfmark": "Huntington Library, Thomas T. Eckert Papers, mssEC 19 (War Department Ciphers Sent, 27 Jan - 2 Dec 1864; Huntington Digital Library item 9302), pp. 1-7 (telegrams tel001-tel014)",
+   "date": "27 Jan - 5 Feb 1864",
+   "year": 1864,
+   "country": "United States",
+   "route": "War Department, Washington -> telegraph offices at Fort Monroe, St Louis, Chattanooga, Baltimore and Harpers Ferry",
+   "language": "English",
+   "pages": 7,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "Contributed by WAINUT (27 Oct 2026). War of the Rebellion: Official Records, Ser. I vol. 32 pt. 2 pp. 244, 263-264 and vol. 33 pp. 488, 489, 497, 503, 518-519 print 9 of the 14 telegrams (T2, T4-T11) in clear (wainut/or_clear_texts.txt); T1 and T3 not found there.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 806,
+    "distinct": 398,
+    "unit": "mixed",
+    "measured": true,
+    "file": "wainut/mssEC19_p1-7_transcription.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Decoding the Civil War volunteers (Zooniverse, 2016-17), text field of the Huntington Digital Library page records 8893-8899",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Pages 1, 3 and 4 checked word for word against the page images (IIIF canvases 8893, 8895, 8896): no difference. Count includes the headings, addresses and check words (docs/_check_profile.py --measure); the route transposition is not yet applied in this ledger, code words stand among clear words."
+   }
   }
  ],
  "system": {
@@ -177,6 +210,61 @@
    ],
    "what": "Book #1 applied to every coded ledger: fits mssEC 25 (Fort Monroe 1864-65; 19.4% of words are book code words) and mssEC 20 (1865-67); Received ledgers are already clear (about 1% false hits).",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: page records of mssEC 19 (item 9302, War Department Ciphers Sent 1864) and of Cipher Book No. 9 (mssEC 67, item 1750) fetched through the Huntington CONTENTdm API and IIIF images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: Cipher Book No. 9 (mssEC 67; printed also in Plum 1882, vol. 1 appendix) applied to mssEC 19 pp. 1-7: every code word of 11 of the 14 telegrams has a meaning and the telegrams read as sentences (Pagan = Washington, Applause/Abortion = Halleck, Relay = Cavalry, Youth/Yoke = Troops). Book #1 gives other meanings for the same words (Pagan = Battery, Applause = Big Sandy).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "WAINUT contribution: second agent re-read every code word used from the No. 9 book images (canvases 1719-1744) and the ledger pp. 1, 3 and 4 from the page images; own decoder, same readings; corrected T6 to Vermont (Brig. Gen.), confirmed Hammer = Fort Monroe (Forts heading, canvas 1735), Palate = Yorktown and Antwerp = Adjutant General (canvas 1729).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: OR Ser. I vols. 32 pt. 2 and 33 (archive.org OCR) print T2 and T4-T11 in clear, so 9 of the 11 decoded telegrams are earlier solutions; T1 (Rucker) and T3 (J. H. Taylor) not found there.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "WAINUT contribution: wainut/decode.py --controls: for 64 of 68 code-word tokens of the nine printed telegrams the meaning appears in the printed text of the same telegram (misses: rank words); meanings shuffled among the code words, 500 runs: 4-24 (median 14). Time words match the printed time in 6 of 8.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: No. 9 tried on the other three telegrams of pp. 1-7 (U1 Caldwell to Nestor, U2 to Beckwith, U3 prisoners via Cleveland): the meanings give no sense (Midas = New York, Bermuda = F. Sigel, Quarrel = Pemberton; Pauline and Unity blank); another word list probably used.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: T1-T11 written as sentences (wainut/mssEC19_p1-7_reading.md), read_share 1.0; U1-U3 kept as a decode, not read (wainut/mssEC19_p1-7_unread_decode.txt).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -197,7 +285,65 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Cipher Book #1 (mssEC 41-45, meanings filled in by hand for the 1864-65 issue), filed in the Eckert papers"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: mssEC 19 (War Department Ciphers Sent 1864) pp. 1-7 decoded with Cipher Book No. 9; 11 of 14 telegrams read",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "Cipher Book No. 9 (mssEC 67) is the key of mssEC 19; OR Ser. I vols. 32/2 and 33 print 9 of the 11 telegrams in clear",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Cipher Book No. 9 (mssEC 67, meanings filled in by hand), applied to mssEC 19",
+    "source": "https://hdl.huntington.org/digital/collection/p16003coll11/id/1750"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "mssEC 19 T2 and T4-T11: the War Department's clear texts printed in the Official Records, Ser. I vols. 32 pt. 2 and 33",
+    "source": "https://archive.org/details/warofrebellion0133rootrich"
    }
+  ],
+  "texts": [
+   {
+    "doc": "mssEC19-p1-7",
+    "label": "mssEC 19 pp. 1-7, telegrams T1-T11 (27 Jan - 5 Feb 1864), decoded with Cipher Book No. 9 (WAINUT)",
+    "transcription": "wainut/mssEC19_p1-7_transcription.txt",
+    "decryption": "wainut/mssEC19_p1-7_decryption.txt",
+    "reading": "wainut/mssEC19_p1-7_reading.md",
+    "contemporary": "wainut/or_clear_texts.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; a second agent re-read the key images and decoded independently)",
+     "date": "2026-10-27",
+     "note": "Eleven War Department telegrams as sentences; nine agree with the clear texts printed in the Official Records, apart from three rank words and 'and burning' in T4."
+    },
+    "summary": "Halleck's War Department telegrams of late January and early February 1864: Ewell's brigades leaving for Johnston or Longstreet, Johnston's detachment against Sherman's movements in Mississippi, troops and cavalry sent to Harper's Ferry and West Virginia against Early's raid, and Butler left free to relieve North Carolina; plus two staff telegrams to Fort Monroe (Baker's cavalry to Yorktown; Parker's cavalry and recruits from Maine) not found in print.",
+    "note": "Contributed by WAINUT (27 Oct 2026). read_share from research/reading_audit/v2_score.py (no explicit holes in 618 words). The contemporary slot holds the OR clear texts of T2 and T4-T11."
+   },
+   {
+    "doc": "mssEC19-p1-7",
+    "label": "mssEC 19 pp. 4, 6, 7, telegrams U1-U3 (1 and 5 Feb 1864), not read (WAINUT)",
+    "transcription": "wainut/mssEC19_p1-7_transcription.txt",
+    "decryption": "wainut/mssEC19_p1-7_unread_decode.txt",
+    "language": "en",
+    "state": "decoded, not read",
+    "note": "Contributed by WAINUT (27 Oct 2026). Cipher Book No. 9 gives no sense for these three telegrams; shown for checking only."
+   }
+  ],
+  "key_file": [
+   "key_book1_mssEC43.tsv",
+   "wainut/cipher9_key_used.tsv"
   ]
  }
 }
