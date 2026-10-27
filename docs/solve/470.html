@@ -80,18 +80,19 @@ THE CIPHER
 WHAT IS KNOWN
   Status: EMLO notes for each: 'The letter is not deciphered; however, the cipher appears to be based on the substitution of numeric values.' The auction copy of the same collection (Dominic Winter, 7 Oct 2020, lot 375) says the last four letters are 'left unsolved as exercises for aspirant cryptographers'. The other 49 letters carry Wallis's decipherment and key, so related Royalist/French keys sit in the same volume. Not on DECODE under these shelfmarks (known.py: no hit for e Musaeo 203 / Eng. misc. e. 475 / Brasset 1653; DECODE has a different Brasset record R9429, Oct 1648).
   Outcome so far: not yet attempted by the project
-  Prior-art check: open as far as checked (26 Oct 2026: web search, Atlas Obscura/Dominic Winter 2020 describe them as unsolved; cryptiana's 'French cipher unsolved by Wallis' is a different 1690 item, solved by Biermann 2020)
+  Prior-art check: no. 52 (Buckingham) already deciphered in print: John Davys, An Essay on the Art of Decyphering (London 1737) pp. 24-29, interlinear decipherment + key, 456/480 groups (transcribed and checked 27 Oct 2026, targets/wallis1653). Davys counts three undeciphered letters in the Bodleian copy (one French, two English = nos. 50-52); no. 53 (Townesend 1658) is in the private 2020 copy. Nos. 50, 51, 53 open as far as checked (web, cryptiana, Thurloe SP i); not digitised, blocked on Bodleian access. cryptiana's 'French cipher unsolved by Wallis' is a different 1690 item, solved by Biermann 2020.
   Check first: Order or view images of MS. e Mus. 203 pp. 218-226 (Digital Bodleian has no images listed in EMLO); check the 2020 auction copy description and whether Wallis's own keys for the French letters (Brasset/Bordeaux) in the same volume fit no. 50.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/tree/main/targets/wallis1653
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/wallis1653/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/wallis1653/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -131,7 +132,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/wallis1653/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+470&amp;target=catalogue+470
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -148,9 +149,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> EMLO notes for each: 'The letter is not deciphered; however, the cipher appears to be based on the substitution of numeric values.' The auction copy of the same collection (Dominic Winter, 7 Oct 2020, lot 375) says the last four letters are 'left unsolved as exercises for aspirant cryptographers'. The other 49 letters carry Wallis's decipherment and key, so related Royalist/French keys sit in the same volume. Not on DECODE under these shelfmarks (known.py: no hit for e Musaeo 203 / Eng. misc. e. 475 / Brasset 1653; DECODE has a different Brasset record R9429, Oct 1648).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (26 Oct 2026: web search, Atlas Obscura/Dominic Winter 2020 describe them as unsolved; cryptiana's 'French cipher unsolved by Wallis' is a different 1690 item, solved by Biermann 2020).</p>
+<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: no. 52 (Buckingham) already deciphered in print: John Davys, An Essay on the Art of Decyphering (London 1737) pp. 24-29, interlinear decipherment + key, 456/480 groups (transcribed and checked 27 Oct 2026, targets/wallis1653). Davys counts three undeciphered letters in the Bodleian copy (one French, two English = nos. 50-52); no. 53 (Townesend 1658) is in the private 2020 copy. Nos. 50, 51, 53 open as far as checked (web, cryptiana, Thurloe SP i); not digitised, blocked on Bodleian access. cryptiana's 'French cipher unsolved by Wallis' is a different 1690 item, solved by Biermann 2020..</p>
 <p><b>Check first.</b> Order or view images of MS. e Mus. 203 pp. 218-226 (Digital Bodleian has no images listed in EMLO); check the 2020 auction copy description and whether Wallis's own keys for the French letters (Brasset/Bordeaux) in the same volume fit no. 50.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/wallis1653" rel="noopener">targets/wallis1653</a> (NOTES.md: what was tried and ruled out)</li></ul>
 
 
 <h2>Scores</h2>
