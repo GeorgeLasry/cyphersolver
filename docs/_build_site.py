@@ -2913,6 +2913,10 @@ EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the histo
            ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
+# the same groups named in a word or two, for the two-column outcome grid in the phone menu
+NAV_SHORT = {'ct': 'Ciphertext-only', 'extpt': 'Ext. plaintext', 'adjpt': 'Adj. plaintext', 'extkey': 'External key',
+             'known': 'Known key', 'deciph': 'Existing reading', 'notsolved': 'Not solved', 'na': 'Not applicable',
+             'other': 'Unclassified', 'survey': 'Surveys'}
 NAV_LATEST = 6          # write-ups shown in the menu; the rest are one click away on writeups.html
 
 def kind_of(p): return 'survey' if p['slug'] in SURVEYS else M.KEY[p['method']] if p.get('method') else 'other'
@@ -2928,15 +2932,16 @@ def nav_html(current):
     cur = lambda slug: ' aria-current="page"' if slug == current else ''
     latest = sorted([p for p in PAGES if p['slug'] not in SURVEYS],
                     key=lambda p: posted_at(p['slug']), reverse=True)[:NAV_LATEST]
-    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><span class="st {p["st"]}">{p["stt"]}</span>'
-                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span></a></li>' for p in latest)
-    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><span class="st {cls}">{n}</span>'
-                     f'<b>{name}</b></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
+    # each row: a coloured dot for the outcome, the label, the year; the method under it in plain text, not a pill
+    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><i class="dot {p["st"]}" aria-hidden="true"></i>'
+                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span><span class="m">{p["stt"]}</span></a></li>' for p in latest)
+    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><i class="dot {cls}" aria-hidden="true"></i>'
+                     f'<b>{name}</b><b class="sh">{NAV_SHORT.get(key, name)}</b><span class="n">{n}</span></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
     in_explore = any(slug == current for slug, _, _ in EXPLORE)
     on = ' class="active"' if not in_explore and (current == 'writeups' or any(p['slug'] == current for p in PAGES)) else ''
     panel = (f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div>'
-             f'<div class="grp"><h4>By outcome</h4><ul>{groups}</ul></div>'
-             f'<div class="foot"><a href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
+             f'<div class="grp outc"><h4>By outcome</h4><ul>{groups}</ul></div>'
+             f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
     explore = (''.join(f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
                        for slug, name, desc in EXPLORE).join(('<ul>', '</ul>'))
@@ -3158,12 +3163,12 @@ def writeups_html():
         f'  <span class="count" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</span>\n'
         '  <button type="button" class="chip clear" id="wreset" hidden>clear filters</button>\n</div>\n\n'
         '<section class="wsec" id="pages">\n<h2 id="write-ups"><span class="num">01</span> Write-ups</h2>\n'
-        '<ul class="list wl">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
+        '<ul class="list wl wi">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
         '<section class="wsec" id="notes">\n<h2 id="only-in-the-notes"><span class="num">02</span> Only in the notes</h2>\n'
         f'<p>Results recorded in the repository <a href="{REPO}#results" rel="noopener">README</a> that have no page here yet. '
         'Each row links to the folder with the notes, transcriptions and code. The rows are read from the README at build time, '
         'so a result lands here as soon as it is logged there.</p>\n'
-        '<ul class="list wl">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
+        '<ul class="list wl wi">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
 
 # glossary.html: the outcome methods (with a count of write-ups under each, linked into the filtered index) and the
 # cryptologic terms the write-ups use.  Generated from _methods.py, the same vocabulary the badges and checkers use.
@@ -3369,7 +3374,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
     items = re.findall(r'<li>.*?</li>', m.group(2), re.S)
     # Navigation entries have been accidentally pasted here during publication
     # merges. Do not date and promote menu links as research findings.
-    if any(re.search(r'<span class="st [^"]+">', li) for li in items):
+    if any(re.search(r'<span class="st [^"]+">|<i class="dot [^"]+"', li) for li in items):
         raise ValueError('Recent findings contains navigation status badges. '
                          'Restore the editorial findings; do not copy menu <li> entries.')
     # Concurrent publications can insert the same finding twice. Compare the
