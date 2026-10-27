@@ -326,7 +326,8 @@ Department use from 1811 to 1839, at St Petersburg, Paris, Madrid and Mexico.
   full-resolution frames. About 150 groups (lines 27R01-04, 27R17-20, 28R06-09, 29R01-02, about 11%) were re-read
   independently on fresh crops. That check found one slip, now corrected: 29R01, ninth group, is 1383 (than), not
   1303. In this hand 8 is an o with a small top tick, so 0 and 8 have to be told apart by sense. About 89% of the
-  groups were read once only.
+  groups were read once only. A review pass re-read the clear word in 28R02 on the full-resolution frame: it is "silly"
+  (no f descender), not "folly", so the phrase is "the silly pub[li]cations of our sapient Editors".
 - **Decryption** (`wainut/crawford1813_decryption.txt`, `python wainut/decode.py crawford1813_transcription.txt`):
   1,313 of 1,368 groups have a value in `code_table.tsv`, applied without any change; 55 groups (38 numbers) have
   none. The raw output reads as English on every page, e.g. 27R12 "between the amer sian and the french govern ment at

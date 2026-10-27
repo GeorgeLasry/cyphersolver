@@ -34,7 +34,7 @@ been dispersed by the force of the military, and in the event of an invasion lik
 all parties will silence their personal and political animosities, in order to meet with undivided energy the common
 enemy.
 
-It is a favourite measure, I understand, of Mr. Cañedo, the Minister of Foreign Relations, to get up a general
+It is a favorite measure, I understand, of Mr. Cañedo, the Minister of Foreign Relations, to get up a general
 Congress of the independent Spanish American States, to consult, and provide for the general welfare of the whole.
 So far we learn, it is not likely to succeed.
 

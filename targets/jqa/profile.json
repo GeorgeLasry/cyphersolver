@@ -159,9 +159,9 @@
    "transcription": {
     "by": "llm from images",
     "source": "NARA M34 roll 17 frames 0027-0029 (full resolution)",
-    "corrections": 1,
+    "corrections": 2,
     "image_quality": "good",
-    "notes": "Contributed by WAINUT (27 Oct 2026). About 150 groups (11%) re-read independently on fresh crops; one 0/8 slip corrected (29R01: 1383, not 1303). In this hand 8 is an o with a top tick. Measured with docs/_check_profile.py --measure --digits --drop-first (distinct counts mark variants such as 449o separately; 437 numbers)."
+    "notes": "Contributed by WAINUT (27 Oct 2026). About 150 groups (11%) re-read independently on fresh crops; one 0/8 slip corrected (29R01: 1383, not 1303). A review pass corrected one clear word (28R02: 'silly', not 'folly'). In this hand 8 is an o with a top tick. Measured with docs/_check_profile.py --measure --digits --drop-first (distinct counts mark variants such as 449o separately; 437 numbers)."
    }
   },
   {
@@ -559,7 +559,13 @@
   {
    "date": "2026-10-27",
    "kind": "reading",
-   "what": "WAINUT contribution: 652 read in part (wainut/crawford1813_reading.md, read_share 0.916); 653 read, following the groups where they differ from the clear copy (wainut/ellis1839_reading.md, read_share 1.0).",
+   "what": "WAINUT contribution: 652 read in part (wainut/crawford1813_reading.md, read_share 0.915); 653 read, following the groups where they differ from the clear copy (wainut/ellis1839_reading.md, read_share 1.0).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "WAINUT contribution, review pass: two 652 passages (28R01-04, 29L08-29R01) decoded again with a separate script from origin/main code_table.tsv, same output; the clear word in 28R02 re-read on the full-resolution frame as 'silly', not 'folly' (no f descender), giving 'the silly pub[li]cations of our sapient Editors'; letters supplied in in[jur]ious and commu[nica]ted now marked.",
    "result": "worked"
   }
  ],
@@ -769,15 +775,15 @@
     "reading": "wainut/crawford1813_reading.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.916,
+    "read_share": 0.915,
     "summary": "The new US minister in Paris explains why he has not opened official talks with Napoleon's foreign minister Bassano, who is with the Emperor at Dresden: Mr. Warden acts as the channel at Paris, a minister need not follow a court abroad, and Crawford has been painted as impetuous; the Russian mediation is unwelcome to Napoleon. He then judges Joel Barlow's secret plan to fund indemnities from trade licences useless, since licensed imports have glutted the American market.",
     "reading_review": {
      "grade": "A",
      "by": "WAINUT (AI language-model agent, checked against the frames)",
      "date": "2026-10-27",
-     "note": "Coherent sentences with scattered holes: about 40 context words marked [?] and about 30 open groups; 1264 read as the full stop (from 653). research/reading_audit/v2_score.py: hole rate 0.084, explicit-hole sentence share 0.732; docs/_check_reading.py clean share 0.69. Under the 95% bar, so read in part."
+     "note": "Coherent sentences with scattered holes: about 40 context words marked [?] and about 30 open groups; 1264 read as the full stop (from 653). research/reading_audit/v2_score.py: hole rate 0.085, explicit-hole sentence share 0.732; docs/_check_reading.py clean share 0.69. Under the 95% bar, so read in part."
     },
-    "note": "read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.084)."
+    "note": "read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.085)."
    },
    {
     "doc": "ellis1839",

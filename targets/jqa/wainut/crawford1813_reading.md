@@ -46,8 +46,8 @@ do harsh
 ## 0028R
 
 things. I am ignorant [?whence] these representations have [?originated], but suppose they must have proceeded from
-some of the folly of our sapient Editors in the United States. The delicacy of the Emperor's [?accept][700] will be
-regulated in some degree by the result of our negotiations at St Petersburg, and in a still greater degree by the
+some of the silly pub[li]cations of our sapient Editors in the United States. The delicacy of the Emperor's
+[?accept][700] will be regulated in some degree by the result of our negotiations at St Petersburg, and in a still greater degree by the
 events of the Campaign, which will probably recommence tomorrow. It is the general opinion [?here] that the Russian
 mediation is very un[?accept]able to the Emperor. If this is true, and there is no reason to doubt it, he will not
 permit me to advance a single step in the negotiation with which I am [?charged] until the result of that at St
@@ -66,7 +66,7 @@ a loss to [?reconcile] this previous arrangement with the injunction of secrecy 
 disposition of these licences by the American Minister must have given rise to conjectures [?correspondingly]
 prejudicial to his character, but much more so if the [?date] of the arrangement had been concealed [1313]. In that
 case he must have been considered [as] the mere [?tool] of the French government in filling its [?exchequer] by
-means [?correspondingly] injurious to the legitimate commerce of the United States. [1204] It is possible that this
+means [?correspondingly] in[jur]ious to the legitimate commerce of the United States. [1204] It is possible that this
 is not a correct copy of the contract, but I believe it is, as it agrees substantially with the account given of
 [?it] by the persons to [?whom] [?I] [?have] alluded. The great scarcity of [?colonial] produce in France at the
 moment when [?the] [?plan] was intended to be executed renders it probable that the sum contemplated would have been
@@ -79,7 +79,7 @@ principle of indemnity.
 
 ## 0029R (after a clear paragraph on 0029L-R)
 
-No more is communicated in this country than what comports with the views of the Emperor.
+No more is commu[nica]ted in this country than what comports with the views of the Emperor.
 
 The clear text between the two coded parts (0029L-R) reads: "Among the Papers of the Legation delivered me by Mr
 Thomas Barlow is a copy of a letter in Cypher from John Q. Adams esquire. The original has been sent to the
