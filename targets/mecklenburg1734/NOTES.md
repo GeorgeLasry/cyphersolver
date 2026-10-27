@@ -71,3 +71,112 @@ Hanoverian code). Group boundaries are not marked. No key table was built.
   pages, transcribe each run with its interlinear decipherment, then align runs to decipherments to rebuild the code.
 - Prior art: not on DECODE (Archivportal-D sweep README); no printed edition of these Hann. 9g pieces found in the
   quick web check of 26 Oct 2026. The decipherment found is the contemporary one, not a modern one.
+
+## Contribution by WAINUT (27 Oct 2026)
+
+Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI language-model
+agents; the transcription was made with a vision-capable language model from the full-resolution NLA images, and
+every figure and gloss was re-read independently by a second agent. This section adds one cipher piece that the
+table above does not list: Nr. 964 ff. 8r-8v. The text above and the files in `texts/` are unchanged. The new files
+are in `wainut/`, and `profile.json` gains one document (`964-f8`), its `outcome.texts` entry, one gap, two
+credits and dated solution steps; existing entries are untouched.
+
+**Scope.** Before starting we checked this folder's NOTES and WORKLOG: f. 8 is not listed or transcribed here, and we
+know of no one else working on it. The other cipher passages listed above (Nr. 97, 563, 1130) are **not**
+transcribed in this contribution, and the five unopened files stay unopened.
+
+### Nr. 964 ff. 8r-8v: Erffa to George II, P.S. no. 13, Vienna 18 Dec 1734 (received 25 Dec)
+
+- **Source.** Images aufn_009 (right page, f. 8r) and aufn_010 (left page, f. 8v) of Nr. 964 (Arcinsys v2493412;
+  METS `https://www.arcinsys.niedersachsen.de/arcinsys/mets?detailid=v2493412`;
+  [image 009](https://www.arcinsys-digitalisate.niedersachsen.de/nla_ha/hann._9g/nr._964/m_ha_hann._9g_nr._964_aufn_009.jpg),
+  [image 010](https://www.arcinsys-digitalisate.niedersachsen.de/nla_ha/hann._9g/nr._964/m_ha_hann._9g_nr._964_aufn_010.jpg)).
+  Docket "Wien den 18. Dec. 1734", "P.S. 13. praes. d. 25. Dec. 1734", signed Erffa; folio numbers 8 and 9 on the
+  page. On the contact sheet of all 19 images, 004 and 011-018 look clear (drafts, a Copia); that was not re-checked
+  independently.
+- **Cipher.** 16 runs of undivided figures in the secretary's hand, **461 figures** in all
+  (`docs/_check_profile.py --measure wainut/964_f8_cipher.txt --drop-first --width 1`). 13 runs carry a
+  decipherment written above them in a smaller, darker hand. Five stretches have a long stroke drawn above them and
+  no decipherment: three whole runs (BAR1 16 figures, BAR2 21, BAR3 16) and the tails of C5 (about `...29835 1457`)
+  and C12 (about `...657720511`), about 72 figures. The clear text resumes right after each of them.
+- **Transcription** (`wainut/964_f8.txt`, line by line with the glosses and the clear text; `wainut/964_f8_cipher.txt`,
+  figures only). The two readings agree digit for digit. C11's 2nd figure (2) is uncertain (a blot); C12's 4th
+  figure was read 6 by the second reader and left open by the first. In BAR2 the 5 after `26533` is a clear figure.
+- **Glosses**, as written: C1 "dem RhsRaht von Knörre"; C2 "dasjenige [?bewürket] w[...]"; C3 "[?dienstlich]" (the
+  two readers had "dieserhalb" and "dinst[l?]ich"); C4 "[?befürchtet] und hier eingeleitet zu werden" (the last
+  word may be "werben", to recruit); C5 "nunmehr, der von Knörre"; C6 "über sich genommen mit dem"; C7 "RVCantzler
+  Grafen von Metsch und dem"; C8 "von Bartenstein, wenn ich mir vorher bey / beyden"; C9 "man mit Ihr. Kayserl.
+  Mayt."; C10 "statt würcklicher Stellung gedachten"; C11 "Contingents über ein gewisses Quan-"; C12 "tum an Geld
+  übereinkämen"; C13 "meinet der von Knörre".
+- **Reading** (`wainut/964_f8_reading.md`, German; `wainut/964_f8_translation.md`, English). Erffa has informed the
+  Imperial Aulic Councillor von Knörre about the raising of the Reich contingent on the part of Mecklenburg. Knörre
+  is willing to help. Once Erffa has put the matter to them, he will speak with Vice-Chancellor Count Metsch and with
+  Bartenstein and try to make them see that the best means is for Mecklenburg to agree with the Emperor on "a certain
+  sum of money instead of the actual raising of the said contingent". If the Emperor approves, Metsch could make his
+  intention known to a Privy Councillor whose name is not read with certainty ("[?Verporten]"). The ciphered parts
+  are the names and the money proposal. This is the Vienna side of the matter in the rescript on f. 6 (6/17 Dec
+  1734: Prussia should not take over raising the Mecklenburg contingent) and Erffa's answer to the rescript of 5 Dec
+  1734 (the clear draft on image 004). State: **read in part**, because of the five undeciphered stretches and
+  several uncertain clear-text words.
+- **Where the gloss "der von Knörre" sits.** It is written over C5's figures `2152220834 0590365 97`, which do not
+  contain the Knörre figures. BAR2, which follows, does (`2159826533...13571`, as in C13 "der von Knörre"). Either the
+  gloss was moved up for lack of space, or the code has two different groups for the same words. Open.
+
+### Check against the figures (no key)
+
+No key is in the file or in this repository, so the decipherment is **not checked group by group**. What was
+checked is whether it is consistent with repeats in the figures (`python wainut/repeats.py`):
+
+| String | Runs | Glosses over those runs |
+|---|---|---|
+| `2653313571` (10 figures) | C1, C13 only | both "...von Knörre" |
+| `2159826533` (10 figures) | C13, BAR2 | C13 "der von Knörre"; BAR2 none |
+| `2653313` (7 figures) | C1, C13, C7 | "von Knörre" twice, "Grafen von Metsch" |
+| `26533` | C1, C7, C13, BAR2 | |
+| `13571` | C1, C13, BAR2 | |
+| `31544` | C2, C5, C6 | no common word is obvious |
+
+- **Control.** Shuffling the figures inside each run (2,000 times, each run's digit counts kept) never gives a
+  shared string longer than 8 figures, and never a 5-figure string in four or more runs. The repeats are real code
+  structure, and they fall on the runs glossed "von Knörre" and "von Metsch".
+- **Limits.** `26533` is not in every run whose gloss has "von" + a name: C8 ("von Bartenstein") and C5 ("der von
+  Knörre" written above it) lack it. C8 has 44 figures for about 39 letters, about one figure per letter; that rules
+  out two figures per letter but does not by itself show a code of variable-length groups.
+- **Cross-check with f. 6.** The London rescript on f. 6 (`texts/964_f6_cipher.txt`) shares no 5-, 6- or 7-figure
+  string with f. 8, not even for "Contingents", "Stellung" or "von"; against shuffled f. 8 runs, one or more chance
+  6-figure matches come up about 4% of the time. So the London-Hanover rescripts and the Vienna-Hanover reports
+  probably use different codes, or the code is strongly homophonic.
+
+### Prior work
+
+The decipherment is the contemporary one, on the same pages. One web search (Reichshofrat Knorr 1734, Erffa,
+Bartenstein, Contingent) found no printed edition of this report and no identification of "von Knörre". A
+biographical entry for a Georg Christian (von) Knorr at Vienna turned up in the first pass; it was not opened or
+checked.
+
+### Remaining gaps (Nr. 964 ff. 8r-8v)
+
+- The five barred stretches (BAR1, BAR2, BAR3, tails of C5 and C12; about 72 of 461 figures) - blocker:
+  no-key-material; no interlinear decipherment and no key. BAR2 repeats C13's "der von Knörre" figures.
+- Uncertain words: the gloss over C3, the end of C2's gloss, the last word over C4, and in the clear text
+  "[?jetzt] [?hereinkommenden]", the word before C2, "[?hätten]", "[?begreiflich]" and the councillor's name
+  "[...] Rath [?Verporten]" - blocker: none from outside; another pass on the images by a reader of German
+  chancery hands.
+- Nr. 97, 563, 1130 (passages listed above) and the five unopened files - blocker: not-attempted.
+
+### Escalation (Nr. 964 ff. 8r-8v)
+
+- [x] siblings: f. 6 in the same file compared; no shared figure strings
+- [x] clear-pages: the clear text around each run used for the sense; the clear draft on image 004 noted
+- [ ] known-keys: no Hanoverian code of the 1730s found to try
+- [x] print: one web search, no edition found
+- [ ] key-rebuild: aligning glosses to figures across more passages (Nr. 97, 563, 1130, 1494) could rebuild part of
+  the code and read the barred stretches
+- [ ] retry: the uncertain words on another pass
+
+### Files (in `wainut/`)
+
+- `964_f8.txt`: line-by-line transcription (figures, interlinear decipherment, clear text)
+- `964_f8_cipher.txt`: the 16 runs of figures only
+- `964_f8_reading.md`, `964_f8_translation.md`: the reading as German sentences, and its English translation
+- `repeats.py`: the repeat table, the shuffle control and the f. 6 cross-check (standard library)

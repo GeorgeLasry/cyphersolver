@@ -60,6 +60,39 @@
     "image_quality": "good",
     "notes": "1,211 images in ten files; five files (1,122 images) not yet opened."
    }
+  },
+  {
+   "id": "964-f8",
+   "read": "read in part",
+   "shelfmark": "NLA HA, Hann. 9g Nr. 964, ff. 8r-8v (images aufn_009 right page, aufn_010 left page)",
+   "date": "18 Dec 1734 (received 25 Dec 1734)",
+   "year": 1734,
+   "country": "Germany",
+   "route": "Erffa (Vienna) -> George II, received by the Geheime Räte in Hannover",
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary decipherment written above 13 of the 16 runs of figures; three runs and two run tails with a stroke above them carry none",
+    "partial": true
+   },
+   "length": {
+    "tokens": 461,
+    "distinct": 10,
+    "unit": "symbols",
+    "measured": true,
+    "file": "wainut/964_f8_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "wainut/964_f8.txt (figures, interlinear decipherment and clear text, line by line); wainut/964_f8_cipher.txt (figures only)",
+    "corrections": 1,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Read from the full-resolution NLA images (7617 x 6692 px); figures and glosses re-read independently by a second reader, who agreed digit for digit and resolved one uncertain figure (C12, 4th figure: 6). C11's 2nd figure (2) stays uncertain. Measured with docs/_check_profile.py --measure --drop-first --width 1."
+   }
   }
  ],
  "system": {
@@ -138,6 +171,43 @@
    "technique": [
     "key-structure hypothesis"
    ]
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: all 19 images of Nr. 964 fetched at 3600 px with the fixed URL pattern; a second cipher piece found on images 009-010 (ff. 8r-8v, Erffa's P.S. 13, Vienna 18 Dec 1734), not listed in NOTES. Images 004 and 011-018 looked clear (not re-checked independently).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "WAINUT contribution: ff. 8r-8v transcribed line by line from full-resolution images: 16 runs, 461 figures, the interlinear decipherment over 13 runs, and the clear text (wainut/964_f8.txt); re-read independently, digit for digit; one uncertain figure resolved, one left uncertain.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "WAINUT contribution: reading from the contemporary decipherment written as German sentences with holes marked, and an English translation (wainut/964_f8_reading.md, 964_f8_translation.md). Five stretches of figures with a stroke above them (BAR1, BAR2, BAR3, tails of C5 and C12) have no decipherment and stay open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "repeat/pattern analysis",
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: repeats in the figures against the glosses (wainut/repeats.py): 2653313571 only in C1 and C13 (both 'von Knörre'), 2653313 in C1, C13 and C7 ('Grafen von Metsch'), 2159826533 in C13 and the barred BAR2; no shuffle of the figures within runs (N=2000) gives a shared string longer than 8. f. 8 shares no 5-figure string with f. 6.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: one web search (Reichshofrat Knorr 1734, Erffa, Bartenstein, Contingent) found no printed edition of the report and no identification of 'von Knörre'.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -156,6 +226,18 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "Hanover chancery interlinear decipherments"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "Nr. 964 ff. 8r-8v (Erffa, Vienna 18 Dec 1734): 461 figures, the interlinear decipherment and the clear text, read twice from the images",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "Nr. 964 ff. 8r-8v: the contemporary decipherment checked for consistency with repeats in the figures (no key exists); reading and translation written",
+    "date": "2026-10-27"
    }
   ],
   "texts": [
@@ -167,6 +249,18 @@
     "language": "de",
     "contemporary": "texts/964_f6.txt",
     "reading": "texts/964_f6_reading.md"
+   },
+   {
+    "doc": "964-f8",
+    "label": "Erffa to George II, P.S. 13, Vienna 18 Dec 1734",
+    "transcription": "wainut/964_f8_cipher.txt",
+    "contemporary": "wainut/964_f8.txt",
+    "reading": "wainut/964_f8_reading.md",
+    "translation": "wainut/964_f8_translation.md",
+    "language": "de",
+    "state": "read in part",
+    "summary": "Hanover's envoy in Vienna reports that the Aulic Councillor von Knörre will help, and will put to Vice-Chancellor Count Metsch and Bartenstein that Mecklenburg should pay the Emperor a sum of money instead of raising its contingent for the Reich army (War of the Polish Succession). The names and the money proposal are in cipher, deciphered between the lines at the time; five barred stretches of figures carry no decipherment.",
+    "note": "Contributed by WAINUT (27 Oct 2026). Read from the contemporary interlinear decipherment; no key exists, so not checked group by group. The barred stretches (BAR1, BAR2, BAR3 and the tails of C5 and C12, about 72 of 461 figures) are not deciphered on the page."
    }
   ],
   "gaps": [
@@ -179,6 +273,11 @@
     "item": "Group-by-group check of the decipherments; the 1730s Hanoverian code table",
     "blocker": "not-attempted",
     "detail": "rebuildable by aligning runs with their interlinear decipherments"
+   },
+   {
+    "item": "964 ff. 8r-8v: the five barred stretches of figures (BAR1, BAR2, BAR3, tails of C5 and C12)",
+    "blocker": "no-key-material",
+    "detail": "no interlinear decipherment over them and no key; BAR2 repeats C13's 'der von Knörre' figures, the rest have no match"
    }
   ],
   "fraction_read": "unknown",
