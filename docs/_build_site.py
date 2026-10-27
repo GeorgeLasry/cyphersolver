@@ -33,6 +33,10 @@ REPO = 'https://github.com/dbourdeau/cyphersolver'
 # build.  Seed the file with _seed_dates.py; after that it maintains itself.
 DATES_PATH = HERE / '_dates.json'
 TODAY = datetime.date.today().isoformat()
+# 'posted' (UTC, to the second) is when a write-up was submitted: stamped the first time a build sees the page,
+# backfilled for older pages from the commit that first added them (tools/backfill_posted.py). It orders the
+# Latest list in the Write-ups menu; 'first' alone would leave every page of one day tied.
+NOW = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 MONTHS = ('January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December')
 SHORT = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
@@ -104,7 +108,7 @@ def page_dates(slug, s):
     """Record and return {'first', 'updated'} for a page, moving 'updated' when the body changed."""
     h = content_hash(s)
     rec = DATES['pages'].get(slug)
-    if rec is None: rec = DATES['pages'][slug] = {'first': TODAY, 'updated': TODAY, 'hash': h}
+    if rec is None: rec = DATES['pages'][slug] = {'first': TODAY, 'updated': TODAY, 'hash': h, 'posted': NOW}
     elif rec.get('hash') != h: rec['updated'], rec['hash'] = TODAY, h
     return rec
 
@@ -2894,12 +2898,17 @@ NAV_LATEST = 6          # write-ups shown in the menu; the rest are one click aw
 
 def kind_of(p): return 'survey' if p['slug'] in SURVEYS else M.KEY[p['method']] if p.get('method') else 'other'
 
+def posted_at(slug):
+    """Submission time of a write-up for the Latest list: 'posted', else the first day at midnight."""
+    rec = DATES['pages'].get(slug, {})
+    return rec.get('posted') or (rec.get('first', TODAY) + 'T00:00:00Z')
+
 def nav_html(current):
     """The Write-ups menu. It stopped listing every page when the count passed forty: it now shows the newest few,
     the counts by outcome (each a link into the filtered index) and the way to the full list on writeups.html."""
     cur = lambda slug: ' aria-current="page"' if slug == current else ''
     latest = sorted([p for p in PAGES if p['slug'] not in SURVEYS],
-                    key=lambda p: (DATES['pages'].get(p['slug'], {}).get('first', TODAY), p['y']), reverse=True)[:NAV_LATEST]
+                    key=lambda p: posted_at(p['slug']), reverse=True)[:NAV_LATEST]
     lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><span class="st {p["st"]}">{p["stt"]}</span>'
                   f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span></a></li>' for p in latest)
     groups = ''.join(f'<li><a href="writeups.html#kind={key}"><span class="st {cls}">{n}</span>'
