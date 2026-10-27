@@ -1596,7 +1596,7 @@ body.pg-catalogue .pill.arch{color:var(--amber);border-color:color-mix(in srgb,v
 body.pg-catalogue .archnote{margin:1rem 0}
 
 /* ---------------------------------------------------------------- hero video (rendered by tools/hero_video/hero_video.py) */
-.herovid{margin:.4rem 0 1.5rem}
+.herovid{max-width:720px;margin:.6rem auto 1.6rem}
 .hv-frame{position:relative}
 .herovid video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#05070b;border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow)}
 .hv-ctl{position:absolute;top:.7rem;right:.7rem;display:flex;gap:.4rem}
@@ -1621,13 +1621,7 @@ body.pg-catalogue .archnote{margin:1rem 0}
 .hv-ch button::after{width:calc(var(--p,0) * 100%);background:var(--gold);transition:width .25s linear}
 .hv-ch button:hover{transform:none;box-shadow:none;color:var(--ink)}
 .hv-ch button.on{color:var(--gold2)}
-.hv-tr{margin-top:.55rem;font-size:0.9rem;color:var(--ink2);max-width:72ch}
-.hv-tr summary{cursor:pointer;font-family:var(--ui);font-size:0.8rem;color:var(--muted);width:max-content}
-.hv-tr summary:hover{color:var(--ink)}
-.hv-tr p{margin:.5rem 0}
-.hv-tr i{color:var(--muted)}
-.hv-tr .hv-credit{font-size:0.8rem;color:var(--muted)}
 /* the live cipher strip moves down beside the introduction, below the video */
-@media (min-width:1061px){.hero:has(.herovid) .cipherstrip{top:calc(5.4rem + clamp(2rem,9.1vw,5.4rem) * 1.5 + (min(var(--maxw), 100vw) - 2.4rem) * 9 / 16 + 10.85rem)}}
+@media (min-width:1061px){.hero:has(.herovid) .cipherstrip{top:calc(5.4rem + clamp(2rem,9.1vw,5.4rem) * 1.5 + 720px * 9 / 16 + 8.15rem)}}
 @media (max-width:640px){.hv-ch button{font-size:0}.hv-ch button.on{font-size:0.8rem;flex-grow:40}}
 @media (prefers-reduced-motion: reduce){.hv-ch button::after{transition:none}}
