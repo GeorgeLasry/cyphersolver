@@ -16,7 +16,7 @@
    "cleartext_in_document": "none",
    "plaintext": {
     "location": ["none"],
-    "source": "The Bureau of Investigation read the note in 1917: E. E. Swift's reports in OG 3410 (M1085 roll 308, naId 369510329) quote the word 'avantaceran' (for abastecerán, 'will supply') from 'your copy of the note' and say it stated how many men, guns and ammunition would be supplied for money. The full plaintext was not located; it may be in MID 9140-103 / 4131-44 (not digitised)."
+    "source": "The Bureau of Investigation read the note in 1917: E. E. Swift's reports in OG 3410 (M1085 roll 308, naId 369510329) quote the word 'avantaceran' (for abastecerán, 'will supply') from 'your copy of the note'; nothing else of its content is given (the 'men and guns' passage of 2 April 1917 concerns a different, planned credential letter). The full plaintext was not located; it may be in MID 9140-103 / 4131-44 (not digitised)."
    },
    "length": {
     "tokens": "unknown",
@@ -43,8 +43,8 @@
   "nulls": {"present": "unknown"},
   "key_order": "unknown",
   "word_division": "unknown",
-  "sibling_key": "Key strip in OG 2889 (roll 302 frames 42 and 59); legible at the right end: j[?] C-shape with dot, K Λ, L †, LL ⊓ with tick, M[?]/Ñ[?] unclear, v ✓. The strip may be a Bureau copy, and Franz Visser said Olga's key was used in the Vissers' own correspondence. Not shown to be this message's key; not applied.",
-  "notes": "Kolbeck confessed in 1917 that he wrote the document himself in Laredo jail 'from a key he had originated in Mexico' (OG 3410). The message and the key strip share only some signs (†/T, 9, X, ✓)."
+  "sibling_key": "Key strip in OG 2889 (roll 302 frames 42 and 59); legible at the right end: j[?] C-shape with dot, K Λ, L †, LL ⊓ with tick, M[?]/Ñ[?] unclear, v[?] ✓[?] (lower row; the V may be the letter, not the sign). The strip may be a Bureau copy, and Franz Visser said Olga's key was used in the Vissers' own correspondence. Not shown to be this message's key; not applied.",
+  "notes": "Kolbeck confessed in 1917 that he wrote the document himself in Laredo jail 'from a key he had originated in Mexico' (OG 3410). The message and the key strip share only some signs (†/T, 9, X, perhaps ✓)."
  },
  "conditions": {
   "prior_solution": {
@@ -68,8 +68,8 @@
  "solution": [
   {"date": "2026-10-27", "kind": "access", "what": "From the DOJ alien enemy card 'VISSER, Olga' (naId 296747364) to Bureau of Investigation case OG 2889 (M1085 rolls 301-302; cover card roll 302 frame 40) and the companion case OG 3410 (Kolbeck, roll 308 frames 1988-2067).", "result": "worked"},
   {"date": "2026-10-27", "kind": "access", "what": "Message found as two photostats of one sheet (roll 302 frames 39 and 58) and a key strip as two photostats (frames 42 and 59). Single frames downloaded a second time independently: same sizes as the images in the roll PDF; no higher resolution available.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "transcription", "what": "Message and key strip examined on the frames: seven lines of letter-like signs with dashes and a signature line; on the key strip only the right end reads (j[?], K, L, LL, M[?]/Ñ[?], v). No sign-by-sign transcription made.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "literature search", "what": "Bureau reports read in OCR (OG 2889, OG 3410, OG 2864): detention at Laredo on 14 Feb 1917; claimed sender Horotwischka of the Austro-Hungarian Legation; Kolbeck's confession that he wrote the document himself and the May 1917 charge; the Bureau's 1917 reading in Spanish ('avantaceran' = abastecerán; men, guns and ammunition for money); a Bureau copy of the key made in April 1917.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "transcription", "what": "Message and key strip examined on the frames: seven lines of letter-like signs with dashes and a signature line; on the key strip only the right end reads with some confidence (j[?], K, L, LL, M[?]/Ñ[?], v[?]). No sign-by-sign transcription made.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "Bureau reports read in OCR (OG 2889, OG 3410, OG 2864): detention at Laredo on 14 Feb 1917; claimed sender Horotwischka of the Austro-Hungarian Legation; Kolbeck's confession that he wrote the document himself and the May 1917 charge; the Bureau's 1917 reading in Spanish ('avantaceran' = abastecerán; no other content given); the May 1917 complaint under section 37 of the Penal Code; a Bureau copy of the key made in April 1917.", "result": "worked"},
   {"date": "2026-10-27", "kind": "crib", "technique": ["crib testing"], "what": "Crib 'avasteceran' (pattern a?a???e?e?an) tried on the message by eye.", "result": "failed"},
   {"date": "2026-10-27", "kind": "verification", "what": "Independent recheck: frames re-downloaded and compared, page attribution confirmed, confession re-fetched from naId 369510329; corrected the first finding of 'no contemporary decode' to a 1917 reading in Spanish whose text is not located.", "result": "worked"},
   {"date": "2026-10-27", "kind": "literature search", "what": "Web search (Olga Visser, Kolbeck, Laredo, code): no printed treatment found. Tuchman and Boghardt not checked.", "result": "failed"}

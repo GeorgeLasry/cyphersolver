@@ -39,14 +39,13 @@ From the BI reports (NARA OCR, M1085 rolls 301, 302 and 308):
 
 - Henry Kolbeck and Olga d'Visser were detained by the Immigration Service at Laredo on **14 February 1917** for
   illegal entry (OG 3410 summary).
-- Olga told the Bureau that she and her cousin Kolbeck had "each received a document each document containing exactly
-  the same information and each supplied with a Code Key", to be delivered to Joe Bolner at San Antonio, as
-  representative of the Central Powers. The sender was to be Hugo Horotwischka, secretary of the Austro-Hungarian
-  Legation in Mexico City (report of early March 1917, roll 301). Horotwischka signs a letter in the same file as
-  "Secr. Chan[c]. of the Legation of Austria-Hungary in Mex." (OCR).
-- Early March 1917: with the Bureau's help Olga met Bolner at the Menger Hotel, San Antonio, with a dictograph in the
-  room. She told him the original had been burned by Kolbeck. Bolner said he was the local representative of the
-  Central Powers and expected information from Horotwischka.
+- 3 March 1917: on the Bureau's instructions Olga met Bolner at the Menger Hotel, San Antonio, with a dictograph in
+  the room (E. E. Swift's report of 4 March 1917, roll 301). Bolner said he was the local representative of the
+  Central Powers and expected information from Horotwischka. Olga told him that she and her cousin Kolbeck had "each
+  received a document each document containing exactly the same information and each supplied with a Code Key", to be
+  delivered to him. She also told him the original had been burned by Kolbeck. This is her account to Bolner during a
+  Bureau sting. The sender was to be Hugo Horotwischka, secretary of the Austro-Hungarian Legation in Mexico City.
+  Horotwischka signs a letter in the same file as "Secr. Chan[c]. of the Legation of Austria-Hungary in Mex." (OCR).
 - 16 March 1917: Bielaski sends Barnes "photostat copies of the documents in the Visser case" (OG 2889).
 - Franz Visser, Olga's brother, brought the Bureau a "copy key to code". He said Olga had made it some time before and
   mailed it to de Courcy in Mexico, to be memorised and destroyed, and that it was used in their own correspondence
@@ -55,9 +54,12 @@ From the BI reports (NARA OCR, M1085 rolls 301, 302 and 308):
   paper" for a further test of Bolner. **So the strip on frames 42 and 59 may be the original or a Bureau copy.**
 - **Kolbeck's confession.** E. E. Swift's summary (OG 3410) reports that Kolbeck "declared he had wr[it]ten this
   document himself in Laredo jail in order to [secure] their liberty". Another report: "he had written the document
-  from a key he had originated in Mexico". He was charged before the US Commissioner at Laredo in May 1917 "for
-  violation section 39, Penal Code" (conspiracy to defraud the United States by false statements). Swift still leaned
-  to the document being genuine: it "appeared before the Zimmermann note came to light", and "the note is dignified
+  from a key he had originated in Mexico". In a written statement to Swift of 16 April 1917 he says he had made "a key
+  in Mexico with which to write secretly to members of my family" and told Olga it was the key to a document from
+  Horotwischka (OCR, partly garbled). In May 1917 a complaint against Kolbeck and Olga d'Visser charged conspiracy to
+  defraud the United States by false reports that caused needless government expense. The May 1917 telegram and
+  reports give "section thirty seven" and "Section 37 Penal Code"; Swift's later summary reads "section 39" in the
+  OCR. Swift still leaned to the document being genuine: it "appeared before the Zimmermann note came to light", and "the note is dignified
   and well written far above Kolbeck's education".
 - A later index note (roll-302 text) says Olga "confessed that she carried cipher message to the then German Consul at
   San Antonio". Whether Bolner held a consular post was not checked.
@@ -69,7 +71,7 @@ From the BI reports (NARA OCR, M1085 rolls 301, 302 and 308):
   code. Shapes include forms like Ɛ, T, ʃ, ℨ, 9, X and ✓. By eye there are about 170 to 200 signs. This is an
   estimate, not a count.
 - **Key strip.** Two rows of cells. Each cell has a small Latin letter written above a sign. Only the right end reads
-  at this resolution (frame 42, enlarged 2x with autocontrast):
+  with some confidence at this resolution (frame 42, enlarged 2x with autocontrast):
 
   | letter | sign |
   |---|---|
@@ -78,21 +80,29 @@ From the BI reports (NARA OCR, M1085 rolls 301, 302 and 308):
   | L | † |
   | LL | ⊓-shape with a tick |
   | M [?] or Ñ [?] | not clear |
-  | v (lower row) | ✓-shape |
+  | v [?] (lower row) | ✓-shape [?] |
 
-  The left half of the strip is too faint to read. Frame 59 is a poorer photostat of the same strip.
+  The last pair is uncertain. In the lower row, under the K cell, a large dark V stands at the height of the letters,
+  with a faint sign below it. It may be the letter v with that faint sign, or a ✓-shaped sign. A few letters further
+  left (perhaps c and d) are faintly visible, but their signs are not safely legible. The left half of the strip is
+  too faint to read. Frame 59 is a poorer photostat of the same strip.
 - **LL has its own cell.** That points to a Spanish alphabet (ch, ll, ñ, rr), which fits the language of the message
   (section 4).
 - **Not shown:** that this strip is the key of this message. The signs of the strip and of the message overlap only in
-  part (†/T, 9, X, ✓). No key was applied.
+  part (†/T, 9, X, perhaps ✓). No key was applied.
 
 ## 4. Earlier reading (prior art)
 
 The Bureau read the message in 1917, and it was in **Spanish**. In OG 3410 Swift writes: "By referring to your copy
 of the note, you will note that he spells one word 'avantaceran' [OCR] which is correctly spelled 'abasteceran' being
-the Spanish for 'will supply'". He uses this as evidence of Kolbeck's hand, because Kolbeck wrote v for b. A second
-report adds that the letter would state "just how many men and guns and how much ammunition they would supply for a
-certain amount of money which Horotwischka should send".
+the Spanish for 'will supply'". He uses this as evidence of Kolbeck's hand, because Kolbeck wrote v for b. In another
+report Swift adds that Kolbeck, among all of them at the Laredo jail when the document was received, was the only
+one who knew what that word meant. Beyond this one word, the content of the message is not known.
+
+Note: Swift's report of 2 April 1917 (OG 3410) says a letter would state "just how many men and guns and how much
+ammunition they would supply for a certain amount of money which Horotwischka should send". That passage is about a
+typed "credential" letter to Horotwischka. A contact of Bolner's told Olga that he would write it and that he and
+Bolner would sign it. It is not about the content of the February 1917 symbol message.
 
 The full plaintext was not found in the OCR searched (OG 2889, OG 3410, OG 2864). It may be on pages the OCR garbled,
 or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olga Visser, Kolbeck, Laredo, code;
@@ -111,7 +121,8 @@ or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olg
 - **Language:** Spanish, not German (BI 1917 reading).
 - **Names:** Henry Kolbeck and Olga de (d') Visser, cousins, not "Henry and Olga Visser".
 - **Sender:** the claimed sender is Hugo Horotwischka, secretary of the Austro-Hungarian Legation in Mexico City, not
-  the minister. Kolbeck's confession that he wrote the document himself is on record (May 1917 charge).
+  the minister. Kolbeck's confession that he wrote the document himself is on record (April 1917; complaint under
+  section 37 of the Penal Code in May 1917).
 - **Recipient:** Joe Bolner, San Antonio, who called himself the local representative of the Central Powers; a later
   index note calls the addressee "the then German Consul at San Antonio".
 - **Date:** the pair were detained at Laredo on 14 Feb 1917; the catalogue's 22 Feb 1917 was not checked against the
@@ -126,15 +137,15 @@ or in MID files 9140-103 and 4131-44, which are not digitised. A web search (Olg
   transcription; no larger copy is online. A careful double transcription from these frames was not attempted.
 - The left half of the key strip - blocker: needs-physical-access. Too faint on the film; the photostats in RG 65 or
   a new scan would settle it.
-- The 1917 Bureau reading - blocker: needs-physical-access. Probably in MID 9140-103 / 4131-44 (RG 165, not
+- The 1917 Bureau reading - blocker: needs-physical-access. Possibly in MID 9140-103 / 4131-44 (RG 165, not
   digitised) or on badly OCR'd pages of OG 2889 / OG 3410.
 - Authenticity - open. Kolbeck's confession says he wrote it himself; the agent in charge still thought it genuine.
 
 ## Escalation
 
 - [x] siblings: OG 2889, OG 3410 and OG 2864 searched (OCR); no second copy of the message beyond frames 39 and 58
-- [x] clear-pages: the Bureau reports give the language (Spanish), one word (abastecerán, written avastecerán) and the
-  subject (men, guns and ammunition for money)
+- [x] clear-pages: the Bureau reports give the language (Spanish), one word (abastecerán, written avastecerán); the
+  rest of the content is not given (the "men and guns" passage of 2 April 1917 is about a different, planned letter)
 - [ ] known-keys: the key strip on frames 42 and 59 is not applied; only about five pairs are legible
 - [x] print: one web search; Tuchman and Boghardt not checked
 - [ ] key-rebuild: with about 200 signs and simple substitution likely, a transcription plus the legible key pairs
