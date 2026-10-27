@@ -7,7 +7,7 @@ and the ledger rows are left to the maintainer.
 Catalogue 401. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the transcriptions were made with a vision-capable language model and checked against the DigitArq images. The
 telegram texts and m0058's decode were re-read independently. The second decode (the card m0060) was found later,
-while checking the contact sheets, and has had one reading only.
+while checking the contact sheets; a reviewing agent re-read it against the image once more and agrees.
 
 ## 1. The unit
 

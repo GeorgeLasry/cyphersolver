@@ -8,7 +8,9 @@ and the ledger rows are left to the maintainer.
 Catalogue 410. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the transcriptions were made with a vision-capable language model and checked against the DigitArq images. The two
 printed telegrams (m0014, m0016) were re-read independently. The decodes on the clear cards were found later, while
-checking the contact sheets; they, the handwritten 1910 telegrams and the pairing have had one reading only.
+checking the contact sheets. A reviewing agent re-read the decode cards (m0004, m0005, m0008, m0009) and the groups
+of m0010 and m0012-13 against the images once more; it agrees, except that m0005 reads "tratar ei de" (tratarei),
+not "Tratar é de", now corrected. The pairing of groups with words has been checked by the alphabetical order only.
 
 ## 1. The unit
 
@@ -65,12 +67,14 @@ Portuguese minister in London [our identification].
 **m0012-13, 24 May 1910** (`m0012_*`), with the decoder's gaps kept:
 
 > Rainha Alexandra recebeu-me hontem á noite, dizendo-me palavras muito agradaveis [?]. S. M. ElRei terminou dizendo
-> [?va] [?] [?conde] [?socegado]. Tratar é de o casar. Não tive occasião ver Princeza. Soveral diz ir tratar
+> [?va] [?] [?conde] [?socegado], tratarei de o casar. Não tive occasião ver Princeza. Soveral diz ir tratar
 > [?subsequente] negociação. Sabugosa.
 
 "Queen Alexandra received me last night and said very kind words to me [?]. His Majesty the King ended by saying
-[...]. The point is to get him married. I had no opportunity to see the Princess. Soveral says [he] will go to handle
-the [?further] negotiation." "Him" is presumably King Manuel II; the Princess is not named.
+[...]: 'I will see to getting him married.' I had no opportunity to see the Princess. Soveral says [he] will go to handle
+the [?further] negotiation." The decoder wrote "tratar ei" (tratarei, "I will see to"; group 19719 = the ending
+-ei, which falls between e 19656 and ElRei 19728), so the marriage sentence is probably the King's own words. "Him"
+is presumably King Manuel II; the Princess is not named.
 
 These are the 1910 attempts to arrange a British marriage for Manuel II, in the days after Edward VII's funeral.
 `related_clear.md` transcribes two more cards of the same week: a decode of 22 May (m0001, probably continued on
