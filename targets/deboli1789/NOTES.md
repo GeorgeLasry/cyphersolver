@@ -94,7 +94,13 @@ Stackelberg's reports against Deboli; Deboli asks the King for discretion and a 
 
 ## Escalation
 
-1. Siblings: done. ZbPop 419 and 417 pair with 103 of 106 despatches; eleven pairs aligned.
-2. Key sheet: ZbPop 444 (1783 Polish cipher) and 453/454 are not online.
-3. Key rebuild from the pairs: done, 630 anchored groups; more pairs near May would close the remaining c042 groups.
-4. Retry: LM gap-filling failed its control and was dropped.
+1. Siblings: done. Not on DECODE (no sibling records). ZbPop 419 and 417 pair with 103 of 106 despatches; eleven pairs
+   aligned. Leaves next to the three unpaired despatches in ZbPop 17 and the clear pieces of the neighbouring dates
+   (24 Mar, 8 and 12 May, 15 Dec) checked: no clear text of 25 Mar, 10 May or 14 Dec among them.
+2. Clear pages: done. c104 carries 39 clear Polish passages, used in its reading; c024 is headed "Ajouté au Duplicata
+   seul".
+3. Known keys: ZbPop 444 (1783 Polish cipher), 451, 453/454 are not online (needs the archive); no key on DECODE.
+4. Print: Zielińska & Danilczyk print only 1780-1782; 1789 unedited (Rolnik 2025).
+5. Key rebuild: done from eleven pairs, 630 anchored groups.
+6. Retry: LM gap-filling failed its control and was dropped. Next: finish the hand reading of c042 and c104 (work, not
+   blocked), and add pairs near 10 May if groups stay open.
