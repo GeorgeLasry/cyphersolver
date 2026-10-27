@@ -1,0 +1,515 @@
+# Code table for despatches 039 + 045 (27 Oct 2026). Two codes occur: J91 = the Jan 1791 code (despatches 001-003;
+# 039 section B, 045 part 1), D92 = the code of the 1792 Danzig letters (039 section A, 045 part 2).
+# value = most frequent value (variants after "/"); firm = count of placements not marked [?];
+# flag: "variant" = values differ only by case/diacritics/one containing the other (split or homophone spelling);
+# CONFLICT = incompatible values for the same group in the same code (homophone, syllable overlap, misreading or bad split).
+group	value	count	despatches	code	firm	flag
+46	li	3	039,045	D92	3	
+61	listu	1	039	D92	1	
+84	ł	2	039,045	D92	2	
+85	ła	3	039,045	D92	3	
+87	łe	2	039	D92	2	
+114	m	5	039,045	D92	5	
+116	ma/Ma	3	039	D92	2	
+117	mą	1	039	D92	1	
+120	mi	1	039	D92	1	
+121	peszy	2	039,045	D92	1	
+122	mu	1	045	D92	0	
+123	my	2	039	D92	2	
+141	więcey	1	039	D92	0	
+171	Ministerium	1	045	D92	0	
+175	mnie	1	039	D92	1	
+179	cno	1	045	D92	0	
+190	może/mo	2	045	D92	1	variant
+191	mo	1	039	D92	0	
+194	myśl	1	045	D92	0	
+211	cyi/d	2	039,045	D92	0	CONFLICT
+213	na	6	039,045	D92	6	
+214	ną	4	039,045	D92	4	
+215	ne/nę	4	045	D92	4	variant
+217	ni	2	039	D92	2	
+218	no/No	4	039,045	D92	4	
+220	ny/woien	2	039	D92	0	CONFLICT
+256	Na	1	039	D92	1	
+271	nay	1	039	D92	0	
+278	nia	1	039	D92	0	
+281	nie	5	039,045	D92	5	
+284	Niech/niech	2	039	D92	2	
+317	niu	2	045	D92	2	
+320	nosić	1	045	D92	0	
+335	fro/żo	3	039	D92	2	CONFLICT
+338	od	2	039	D92	2	
+348	On	1	039	D92	1	
+354	a	1	039	D92	0	
+357	Oy	1	039	D92	0	
+396	peszę obawia	1	039	D92	0	
+401c	Obiad	1	045	D92	0	
+417	raz	1	039	D92	0	
+425	odpowiedź/odpowied	2	045	D92	2	variant
+438	szych	1	039	D92	0	
+501	per	1	039	D92	0	
+503	pi	1	039	D92	0	
+504	po	4	045	D92	4	
+520	prędzey	1	039	D92	0	
+522	pro	2	045	D92	2	
+527	prze	2	039	D92	2	
+529	przy	3	039	D92	3	
+571	po	1	039	D92	0	
+572	pod	1	039	D92	1	
+575	da	1	045	D92	0	
+584z	po	1	045	D92	0	
+594	Poseł	1	045	D92	0	
+602	powiada	1	039	D92	0	
+603b	powie	1	045	D92	0	
+646	Potoc	1	039	D92	0	
+651	Potemkin	2	045	D92	2	
+658	t/r	2	039	D92	0	CONFLICT
+664	ro	2	039,045	D92	2	
+666	r/ry	2	039,045	D92	0	variant
+669	nościach	1	039	D92	0	
+670	?	1	045	D92	0	
+684	ro	1	039	D92	1	
+694	wą robi	1	045	D92	0	
+699	rozum	1	039	D92	0	
+701a	czcie	1	039	D92	0	
+706	rzeczy	1	045	D92	0	
+720	ś/ce/rzu	4	039,045	D92	2	CONFLICT
+722	ssa/sa	2	039	D92	2	variant
+726	ś/si	2	039,045	D92	1	variant
+728	dzie/ssu/su	3	039	D92	0	CONFLICT
+737	ski	1	045	D92	0	
+740a	z	1	045	D92	0	
+745	szczyre/sze	2	039,045	D92	0	CONFLICT
+746a	żesz	1	045	D92	0	
+756	się	7	039,045	D92	7	
+757	siebie	1	045	D92	0	
+760a	mo	1	045	D92	0	
+770	ode	1	039	D92	0	
+773	sposob	1	039	D92	0	
+774	spo	1	039	D92	0	
+797	swo	1	045	D92	0	
+807a	licz	1	039	D92	0	
+811	Cz/dru	2	039	D92	0	CONFLICT
+859	ra	1	045	D92	0	
+886	łą	1	039	D92	0	
+887	tan	1	045	D92	0	
+888	szczęścia/ą/tą	3	039	D92	0	CONFLICT
+889	te	1	039	D92	0	
+890	Tę	1	039	D92	1	
+892	to/tego	3	039,045	D92	2	CONFLICT
+893	tu/Tu	4	039,045	D92	4	
+894	ty	2	045	D92	2	
+904	Ta	1	045	D92	0	
+906	tam	1	039	D92	1	
+908	ten	1	039	D92	1	
+909	tego	1	045	D92	0	
+910	teraz	1	039	D92	0	
+911	teraz	1	039	D92	0	
+912	tey	2	039,045	D92	1	
+936	trzeba	1	039	D92	0	
+941	twierdz	1	039	D92	0	
+950	Urzę	1	045	D92	0	
+958	u/U	3	039	D92	3	
+1007	ura	1	045	D92	0	
+1017	s/iedna	2	039	D92	0	CONFLICT
+1032	f	1	039	D92	0	
+1053	w	13	039,045	D92	13	
+1054	wa	3	039,045	D92	3	
+1058	wi/kowi/w/Wi	6	039,045	D92	4	variant
+1059	a/dwo	2	039	D92	0	CONFLICT
+1061	wy	1	039	D92	1	
+1072	WKrMci/WKrMść/WKrMię	5	039,045	D92	5	CONFLICT
+1078	g	1	039	D92	0	
+1082	wie	1	039	D92	0	
+1084	go/więc	4	039,045	D92	3	CONFLICT
+1085	mowił	1	039	D92	0	
+1095	,	1	039	D92	1	
+1106	wyra	1	039	D92	0	
+1117	Wszystko	1	039	D92	0	
+1147	Xże	3	039,045	D92	3	
+1151	y/dział	9	039,045	D92	8	variant
+1172	z/skiem/ż/Z	7	039,045	D92	6	CONFLICT
+1173	za/z	4	039,045	D92	4	variant
+1174	ża	1	039	D92	0	
+1175	że	3	039,045	D92	3	
+1178	żo/zo	2	039,045	D92	2	variant
+1210	za	1	039	D92	0	
+1229	żeby	1	039	D92	1	
+1269	.	14	039,045	D92	13	
+1279	;	1	039	D92	1	
+1280	,	5	045	D92	2	
+1326	100,000	1	039	D92	0	
+1342	Piątek	1	045	D92	0	
+1368	sła/ga/ka/ża	4	039,045	D92	0	CONFLICT
+1369	ą	4	039,045	D92	4	
+1373	?	1	045	D92	0	
+1395	aby	3	039,045	D92	3	
+1396	oko	1	039	D92	0	
+1434	żna	1	039	D92	0	
+1473	?	1	045	D92	0	
+1479	ba	2	039,045	D92	1	
+1483	bi	1	039	D92	0	
+1500	będzie	2	039	D92	2	
+1521	Bogu	1	039	D92	0	
+1545	był	2	039,045	D92	2	
+1546	była	1	039	D92	0	
+1569	ć/c	3	039	D92	3	variant
+1573	Suk	1	039	D92	0	
+1575	ci	2	039	D92	2	
+1576	co/Co	3	039,045	D92	3	
+1580	cze	1	045	D92	0	
+1581	czo/czość	2	039,045	D92	0	variant
+1583	czy	4	039,045	D92	4	
+1600	nych/niey	2	039	D92	0	CONFLICT
+1603	u	1	045	D92	0	
+1607a	bie	1	045	D92	0	
+1617	chwała	1	039	D92	0	
+1646	tacyi	4	039	D92	0	
+1647	cy	3	039	D92	2	
+1648	?	1	039	D92	0	
+1651	ść	1	039	D92	0	
+1675	roz	1	039	D92	0	
+1677	da	4	039,045	D92	4	
+1678	dą	1	045	D92	0	
+1679	de	2	039	D92	2	
+1682	do	9	039,045	D92	9	
+1683	du	1	039	D92	0	
+1693	De/de	3	039,045	D92	3	
+1694	Depu	1	039	D92	0	
+1694a	Depu	3	039	D92	0	
+1702	szedł	1	039	D92	0	
+1739	ga	1	039	D92	0	
+1740	drudzy	1	039	D92	1	
+1751	dział	1	045	D92	0	
+1754	dzie	1	039	D92	1	
+1759	z Wo	1	039	D92	0	
+1802	kiemu	1	039	D92	0	
+1833	Fa	2	045	D92	0	
+1843	cy	1	045	D92	0	
+1879	ga	1	039	D92	1	
+1883	gi	1	045	D92	0	
+1895	gro	1	039	D92	0	
+1920	gło	1	045	D92	0	
+1986a	Hiszpań	1	045	D92	0	
+1988	i/yi/zi	7	039,045	D92	5	CONFLICT
+1989	ia/Ja	3	039	D92	3	CONFLICT
+1990	ią	4	039,045	D92	4	
+1991	muni/moie	2	039	D92	0	CONFLICT
+2014	Impera	1	045	D92	0	
+2016	iak	3	039,045	D92	3	
+2034	czę	1	039	D92	0	
+2039	iest	3	039	D92	3	
+2044	moiey	1	045	D92	0	
+2050	ieszcze	1	045	D92	0	
+2059	ile	1	039	D92	1	
+2088	torowa/Imperatorowey	2	045	D92	0	CONFLICT
+2091	wać	1	039	D92	0	
+2094	k	2	045	D92	0	
+2097	ko/Marszał	3	039	D92	0	CONFLICT
+2191	ktory	3	039,045	D92	3	
+2193	ktore	2	039,045	D92	1	
+2861z	Anglia	1	045	D92	0	
+3283	-	1	039	D92	0	
+3285	-	1	045	D92	0	
+1	?	1	045	J91	0	
+2	ra	1	045	J91	0	
+3	da	7	039,045	J91	5	
+5	de	1	039	J91	0	
+6	le	1	039	J91	0	
+7z	?	1	045	J91	0	
+8	do/Do	7	039,045	J91	7	
+13a	dal	1	045	J91	0	
+16z	zaczy	1	045	J91	0	
+17	go	1	039	J91	0	
+24	deter	2	045	J91	2	
+30a	dług	1	045	J91	0	
+60	rze	1	039	J91	0	
+66	dru	1	045	J91	0	
+70	dział/dzia	2	045	J91	1	variant
+70a	dzia	1	039	J91	0	
+90	?	1	039	J91	0	
+92	Dziś	1	045	J91	0	
+94	podzi	1	045	J91	0	
+106	Drez	1	045	J91	0	
+109	mie/cze/kie/nia/grzeczne/ne	7	039,045	J91	0	CONFLICT
+110	bi/ę	2	045	J91	0	CONFLICT
+117	go/przy	4	039,045	J91	3	CONFLICT
+126	łem	1	045	J91	0	
+130	cze	1	045	J91	0	
+135	?	1	045	J91	0	
+156	Elekto/Elektor	6	039,045	J91	6	variant
+158	fa	1	039	J91	0	
+162	ła	1	045	J91	0	
+189	wi	1	039	J91	0	
+207	-	2	045	J91	0	
+208	a	1	045	J91	0	
+213	Go/owi	3	039,045	J91	2	CONFLICT
+223	grun	1	045	J91	0	
+237	gdy	1	039	J91	1	
+242	iey	1	045	J91	0	
+246	gł	1	039	J91	0	
+267a	ze	1	045	J91	0	
+280	Hel	4	045	J91	4	
+302	iż	1	039	J91	0	
+304	iak	1	045	J91	0	
+342	kontento	1	045	J91	0	
+356	i/cyi	2	045	J91	1	variant
+358	Ja/ja/ia	3	039,045	J91	3	CONFLICT
+359	ią	7	039,045	J91	7	
+360	wie/bie	4	045	J91	3	CONFLICT
+361	ięzy	1	045	J91	0	
+362	Jo	1	039	J91	0	
+373	skim	1	045	J91	0	
+382	iż	2	045	J91	2	
+384	iak	1	045	J91	0	
+385	iaki	1	045	J91	0	
+397	iął	1	039	J91	0	
+398	c	1	045	J91	0	
+399	cy	1	045	J91	0	
+407	iest	1	045	J91	0	
+413	ich/wi	2	045	J91	0	CONFLICT
+418	ieszcze	2	045	J91	2	
+429	spra	1	045	J91	0	
+461	ią	1	045	J91	0	
+462	ą	1	039	J91	0	
+466	chowski	1	045	J91	0	
+487	kry/tku	3	045	J91	0	CONFLICT
+539	łe	1	045	J91	0	
+542a	kon	1	045	J91	0	
+546	den	1	045	J91	0	
+551	Kro	1	039	J91	0	
+559	na	1	039	J91	1	
+600	ma	1	045	J91	0	
+606	Korrespon	1	045	J91	0	
+615	kanclerzym/m	2	045	J91	0	variant
+616	bi/l	6	039,045	J91	6	CONFLICT
+622	brali/li	2	045	J91	1	variant
+624	lu	2	039,045	J91	2	
+640	lubo	1	045	J91	0	
+656	ł	2	039,045	J91	0	
+662	biło/ło	2	045	J91	0	variant
+675	m/łem	2	039	J91	0	variant
+685	lepiey	1	039	J91	0	
+686	m/sm/niem	5	045	J91	2	CONFLICT
+688	ma/mia	5	045	J91	4	CONFLICT
+690	my/Westma	2	039,045	J91	0	CONFLICT
+692	mi	2	045	J91	0	
+693	mo/no	4	039,045	J91	3	CONFLICT
+694	ma	2	045	J91	0	
+695	bno/My/my	3	039	J91	2	CONFLICT
+707	łe	1	039	J91	0	
+720	?	1	045	J91	0	
+734	mier	1	045	J91	0	
+743	dwo/Ministerium	2	039	J91	0	CONFLICT
+744	Mini	2	045	J91	2	
+747	mnie	2	045	J91	2	
+757	mowi/mowić	3	045	J91	0	variant
+763	żna	1	045	J91	0	
+766	myśli	1	045	J91	0	
+774	czor	1	045	J91	0	
+780	to	2	045	J91	0	
+782	na	7	039,045	J91	6	
+783	ną	2	045	J91	2	
+784	nu/bran	2	039,045	J91	0	CONFLICT
+787	no/ci/brano	7	045	J91	3	CONFLICT
+789	ny	1	045	J91	0	
+801	naybardziey	1	039	J91	0	
+812a	Nam	1	045	J91	0	
+820	Na	1	039	J91	0	
+870	Nas	2	045	J91	2	
+873	nastą	1	045	J91	0	
+874	na	1	045	J91	1	
+892	?	1	045	J91	0	
+893	nic/nić	4	039,045	J91	3	variant
+895	nie/ien	13	039,045	J91	12	CONFLICT
+895z	nie	1	045	J91	1	
+900	chce	1	045	J91	0	
+907b	dzić	1	045	J91	0	
+925	niesć	1	045	J91	0	
+930	nio	1	045	J91	0	
+931	niu	1	045	J91	0	
+934	nosić	1	045	J91	0	
+937	nowiny/n	2	045	J91	0	variant
+948	o/no	7	045	J91	5	variant
+951	od	1	045	J91	1	
+960	słow	1	039	J91	0	
+961	On	4	045	J91	4	
+968	zow	1	045	J91	0	
+993	ode	4	045	J91	4	
+1006	ną	1	039	J91	0	
+1010	Ona	1	045	J91	0	
+1019b	pio	1	045	J91	0	
+1039a	ą	1	045	J91	0	
+1042	Niedziel	1	045	J91	0	
+1050	oświadczenie	1	045	J91	0	
+1054	wa	1	045	J91	0	
+1058	rowi	1	045	J91	0	
+1059	sze	1	045	J91	0	
+1069	18	1	045	J91	0	
+1073	a	1	039	J91	0	
+1086	p	1	045	J91	0	
+1092	po/wiła	7	045	J91	6	CONFLICT
+1094	pyta	1	045	J91	0	
+1114	przą	1	045	J91	0	
+1115	prze	1	045	J91	0	
+1117	przy	1	045	J91	1	
+1118	przod	1	045	J91	0	
+1137	pewne	2	039,045	J91	0	
+1139	pie	1	045	J91	0	
+1145a	pi	1	045	J91	0	
+1146	pi	1	045	J91	0	
+1147	pisa	1	045	J91	0	
+1159	pocztę	1	045	J91	0	
+1160	pod/Pod	4	045	J91	4	
+1173	podo	1	039	J91	0	
+1180	ponieważ	1	045	J91	0	
+1193	powiadać	1	045	J91	0	
+1194	powie	1	039	J91	0	
+1194b	powie/Powie	2	045	J91	2	
+1200a	pra	1	045	J91	1	
+1214	zamy	1	039	J91	0	
+1216	przez	1	045	J91	0	
+1236	Pol	1	045	J91	0	
+1242	kie	1	039	J91	0	
+1248	Po	1	039	J91	1	
+1255	k/p	2	039	J91	0	CONFLICT
+1256	ra	1	045	J91	0	
+1258	re/Re	5	039,045	J91	5	
+1260a	pra	1	045	J91	1	
+1261	żą	1	039	J91	0	
+1266	rze	1	045	J91	0	
+1266a	rzchow	1	045	J91	0	
+1267	rzę	1	045	J91	0	
+1270	rzu	1	039	J91	0	
+1274a	ra	1	045	J91	0	
+1288a	rezolu	1	045	J91	0	
+1295a	strow	2	045	J91	2	
+1296	rozu	1	039	J91	0	
+1297	rozka	2	045	J91	2	
+1298a	roz	1	045	J91	0	
+1303	rzecz	1	045	J91	0	
+1317	sro/skończy	2	039,045	J91	0	CONFLICT
+1319	ra	1	039	J91	0	
+1320	są	1	045	J91	0	
+1323	?	1	045	J91	0	
+1325	su	1	045	J91	0	
+1329	sły	2	039,045	J91	1	
+1334	Saskie	1	039	J91	0	
+1342	sz/z	4	039,045	J91	2	variant
+1342a	sz	1	045	J91	1	
+1343	szy	1	045	J91	0	
+1353	się	15	039,045	J91	15	
+1357a	moich	1	045	J91	0	
+1369	ssa	1	039	J91	0	
+1370	sposo	1	045	J91	0	
+1376a	nie	1	045	J91	0	
+1380b	sta	1	045	J91	0	
+1385	cher	1	045	J91	0	
+1427	ta/ią	3	045	J91	0	CONFLICT
+1428	tą	6	039,045	J91	6	
+1430	tę	1	039	J91	0	
+1432	to	1	045	J91	0	
+1433	tu/Tu	10	039,045	J91	10	
+1434	Ma	1	045	J91	0	
+1436b	?	1	045	J91	0	
+1443	Powiada	1	039	J91	1	
+1445	także	2	045	J91	2	
+1449	y bez	1	039	J91	0	
+1452	tey/Tey	4	039,045	J91	4	
+1453	też	1	045	J91	0	
+1458	tłuma	2	045	J91	2	
+1461a	wa	1	045	J91	0	
+1468	Tro	1	039	J91	0	
+1476	mn	1	045	J91	0	
+1488	tylko	1	045	J91	0	
+1489	tym	8	039,045	J91	7	
+1490	tz/u	3	039,045	J91	2	CONFLICT
+1498	u	7	039,045	J91	7	
+1508a	wie	1	045	J91	1	
+1508b	wie	3	045	J91	3	
+1559	w/W/ś	11	039,045	J91	8	CONFLICT
+1560	wa/zdawa	2	045	J91	1	variant
+1562	wy	1	039	J91	0	
+1564	cza/win/treść	3	039,045	J91	0	CONFLICT
+1565	wo	3	039,045	J91	3	
+1570	wszy	1	039	J91	0	
+1575	notyfikował	1	045	J91	0	
+1578	WKrMość/WKrMcią	2	039,045	J91	2	CONFLICT
+1582b	wczoray	1	045	J91	0	
+1586	wiadomość	1	045	J91	0	
+1588	wiele	1	045	J91	0	
+1589	wiel	1	045	J91	0	
+1591	więcey	1	045	J91	0	
+1593	wie	1	045	J91	0	
+1601	że/ze	18	039,045	J91	18	variant
+1603	zię	1	045	J91	0	
+1605	zy/ku	2	045	J91	0	CONFLICT
+1618	względem	3	045	J91	3	
+1620a	branych	1	045	J91	0	
+1625	Warszawy	1	045	J91	0	
+1654	Xcia/Xięcia	4	039	J91	4	CONFLICT
+1657	y/ktory/ney/ey/zy	11	039,045	J91	7	CONFLICT
+1670	z/ym	3	039,045	J91	2	CONFLICT
+1678	z/Z/ż	11	039,045	J91	9	variant
+1679	za	4	039,045	J91	4	
+1681	że	1	039	J91	0	
+1695	?	1	039	J91	0	
+1702	?	1	045	J91	0	
+1705	nam	1	045	J91	0	
+1706	lą	1	039	J91	0	
+1719	zaś	1	045	J91	0	
+1722	był	1	039	J91	0	
+1727	zbywa	1	045	J91	0	
+1731b	nie	1	045	J91	0	
+1737z	zgadza	1	045	J91	0	
+1748a	zna	1	045	J91	0	
+1752	zro	1	045	J91	0	
+1775	.	11	039,045	J91	11	
+1782	wiczem	1	045	J91	0	
+1785	;	7	039,045	J91	7	
+1786	,/temki	20	039,045	J91	17	CONFLICT
+1794	3	1	045	J91	0	
+1800	9	1	045	J91	0	
+1805	14	1	045	J91	0	
+1873	a	4	045	J91	2	
+1874	szą/ą	4	045	J91	1	variant
+1876	dzać	1	045	J91	0	
+1892	po	1	039	J91	0	
+1903	minacyi	2	045	J91	2	
+1907	g	4	045	J91	4	
+1919	albo	2	039	J91	2	
+1926	ale	1	045	J91	1	
+1926b	ale	1	039	J91	0	
+1988	bo	1	039	J91	0	
+1990	by/bardzo	3	039	J91	1	CONFLICT
+1992	bacz	1	045	J91	0	
+2001	czer	1	039	J91	0	
+2002	by	1	039	J91	0	
+2006	Prus	1	039	J91	0	
+2007	czeka	1	045	J91	0	
+2012c	e	1	045	J91	0	
+2031	tego	1	039	J91	0	
+2036a	bra	1	045	J91	0	
+2044a	zawsze	1	039	J91	0	
+2051	był	2	045	J91	2	
+2059	było	1	045	J91	0	
+2060	bydz	2	045	J91	2	
+2062b	naymniey	1	045	J91	0	
+2067	Berli	1	045	J91	0	
+2074	Brunswickie	1	039	J91	0	
+2076	eć/mo/ć	4	039,045	J91	0	CONFLICT
+2080	s/le	2	039,045	J91	0	CONFLICT
+2082	tenci	1	045	J91	0	
+2083	co/Cor/Co	8	039,045	J91	7	variant
+2107	chce/gich/ł/ziemskich	4	039,045	J91	0	CONFLICT
+2117a	no	1	045	J91	0	
+2131	cyą	1	039	J91	1	
+2132	ci	1	039	J91	0	
+2146	Cudzo	1	045	J91	0	
+2148	Currentis	4	045	J91	4	
+2151	cyą	2	045	J91	2	
+2152	cyi/lucyi	3	039,045	J91	2	variant
+2160	czy	1	045	J91	0	
+2163a	cz	1	045	J91	0	
+2176	Chrepto	1	045	J91	0	
+4000	-	2	039,045	J91	0	

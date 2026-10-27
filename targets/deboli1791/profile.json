@@ -1,39 +1,8 @@
 {
  "schema_version": 1,
  "target": "deboli1791",
- "title": "Deboli (St Petersburg) to King Stanisław August, cipher despatches of 1791 (AGAD Zbiór Popielów 5; catalogue 420)",
+ "title": "Deboli (St Petersburg) to King Stanisław August, cipher despatches of 1791 (AGAD Zbiór Popielów 5; decipherments in Zbiór Popielów 421; catalogue 420)",
  "documents": [
-  {
-   "id": "ZbPop5-001",
-   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 2-5v (img 0002-0007)",
-   "date": "4 Jan 1791",
-   "year": 1791,
-   "country": "Poland-Lithuania",
-   "route": "St Petersburg -> Warsaw",
-   "language": "Polish",
-   "pages": 7,
-   "cleartext_in_document": "separate passages",
-   "plaintext": {
-    "location": [
-     "separate collection"
-    ],
-    "source": "ZbPop 421 item 088 (k. 297, 301) is the clear text of this date; it looks short for a 2,202-group despatch and is not yet checked."
-   },
-   "length": {
-    "tokens": 2202,
-    "distinct": 671,
-    "unit": "code groups",
-    "measured": true,
-    "file": "transcription/groups_001.txt"
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "AGAD agadd2 image server, full-size slides",
-    "image_quality": "good",
-    "notes": "Closed q-like 4 vs 9 and the z-shaped 2/4 are the main doubts; 62 groups marked ? across 001-003. Small letters a/b/c (rarely e, z, o, oo) are written under many groups; meaning not yet known."
-   },
-   "read": "not read"
-  },
   {
    "id": "ZbPop5-002",
    "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 6-7 (img 0008-0009)",
@@ -42,17 +11,21 @@
    "country": "Poland-Lithuania",
    "route": "St Petersburg -> Warsaw",
    "language": "Polish",
-   "pages": 3,
    "cleartext_in_document": "separate passages",
+   "places": {
+    "from": "St Petersburg",
+    "to": "Warsaw"
+   },
+   "pages": 3,
    "plaintext": {
     "location": [
      "separate collection"
     ],
-    "source": "Cabinet decipherment, AGAD Zbiór Popielów 421 item 090, k. 302-303 (img 0380-0381), docketed 'reçu le 19.'; transcribed in transcription/zbpop421_090_clear_1791-01-07.txt and matched to the cipher at the opening and at two repeated words."
+    "source": "Cabinet decipherment, ZbPop 421 item 090, k. 302-303 (img 0380-0381), 'reçu le 19.'; aligned group by group (align/002.tsv)."
    },
    "length": {
-    "tokens": 708,
-    "distinct": 319,
+    "tokens": 724,
+    "distinct": 324,
     "unit": "code groups",
     "measured": true,
     "file": "transcription/groups_002.txt"
@@ -61,40 +34,149 @@
     "by": "llm from images",
     "source": "AGAD agadd2 image server, full-size slides",
     "image_quality": "good",
-    "notes": "One reading pass plus a re-check per strip; not cross-checked against the decipherment group by group yet."
+    "notes": "One cipher line (0009 right L09) dropped in the first pass, restored when the alignment showed clear text with no groups against it."
    },
-   "read": "not read"
+   "read": "read"
   },
   {
-   "id": "ZbPop5-003",
-   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 8-13 (img 0010-0017)",
-   "date": "11 Jan 1791",
+   "id": "ZbPop5-032",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 111-112 (img 0158-0159)",
+   "date": "22 Apr 1791",
    "year": 1791,
    "country": "Poland-Lithuania",
    "route": "St Petersburg -> Warsaw",
    "language": "Polish",
-   "pages": 11,
    "cleartext_in_document": "separate passages",
+   "places": {
+    "from": "St Petersburg",
+    "to": "Warsaw"
+   },
+   "pages": 3,
    "plaintext": {
     "location": [
      "separate collection"
     ],
-    "source": "ZbPop 421 item 091 (7 images), not yet transcribed."
+    "source": "Cabinet decipherment, ZbPop 421 k. 30-31 (img 0040-0041), 'reçu le 4. Mai'; aligned (align/032.tsv)."
    },
    "length": {
-    "tokens": 214,
-    "distinct": 138,
+    "tokens": 732,
+    "distinct": 329,
     "unit": "code groups",
     "measured": true,
-    "file": "transcription/groups_003.txt"
+    "file": "transcription/groups_032.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "AGAD agadd2 image server, full-size slides",
     "image_quality": "good",
-    "notes": "First page only (img 0010); img 0011-0017 not transcribed."
+    "notes": "The closed q-like 4: '1990' is 1490 (by), settled by the decipherment."
    },
-   "read": "not read"
+   "read": "read"
+  },
+  {
+   "id": "ZbPop5-037",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 126 (img 0178-0179)",
+   "date": "6 May 1791",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "cleartext_in_document": "separate passages",
+   "places": {
+    "from": "St Petersburg",
+    "to": "Warsaw"
+   },
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "Cabinet decipherment, ZbPop 421 k. 48 (img 0060-0061), 'reçu le 17.'; aligned (align/037.tsv)."
+   },
+   "length": {
+    "tokens": 567,
+    "distinct": 283,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/groups_037.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD agadd2 image server, full-size slides",
+    "image_quality": "good",
+    "notes": "Code B throughout; opens 3381z 3285."
+   },
+   "read": "read"
+  },
+  {
+   "id": "ZbPop5-039",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 129 (img 0182-0183)",
+   "date": "13 May 1791",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "cleartext_in_document": "separate passages",
+   "places": {
+    "from": "St Petersburg",
+    "to": "Warsaw"
+   },
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "Cabinet decipherment, ZbPop 421 k. 52 (img 0065-0066), 'reçu le 24.'; aligned (align/039.tsv)."
+   },
+   "length": {
+    "tokens": 417,
+    "distinct": 257,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/groups_039.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD agadd2 image server, full-size slides",
+    "image_quality": "good",
+    "notes": "First paragraph code B (indicator 3283), second paragraph code A in a smaller hand (indicator 4000)."
+   },
+   "read": "read"
+  },
+  {
+   "id": "ZbPop5-045",
+   "shelfmark": "AGAD Warszawa, Zbiór Popielów 5, k. 147 (img 0206-0207)",
+   "date": "31 May 1791",
+   "year": 1791,
+   "country": "Poland-Lithuania",
+   "route": "St Petersburg -> Warsaw",
+   "language": "Polish",
+   "cleartext_in_document": "separate passages",
+   "places": {
+    "from": "St Petersburg",
+    "to": "Warsaw"
+   },
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ],
+    "source": "Cabinet decipherment, ZbPop 421 k. 77-78 (img 0098-0099), 'reçu ce 11. Juin'; aligned (align/045.tsv)."
+   },
+   "length": {
+    "tokens": 642,
+    "distinct": 329,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription/groups_045.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "AGAD agadd2 image server, full-size slides",
+    "image_quality": "good",
+    "notes": "Code A, then '4000 1775 3285 1269' and code B for the last paragraph; cursive page where 8 and 0 are hard to separate."
+   },
+   "read": "read"
   }
  ],
  "system": {
@@ -103,7 +185,7 @@
    "syllabic",
    "nomenclator"
   ],
-  "summary": "A Polish syllabic code of about 2,200 numbered groups with whole-word groups for common words and titles, small a/b/c marks under many groups, and a clear French salutation and closing.",
+  "summary": "Two Polish syllabic codes of about 2,200 numbered groups and above (code A from January 1791, code B the code of Deboli's 1792 Danzig letters), switched inside a despatch by indicator groups above 3,000, with a clear French salutation and closing.",
   "symbol_kind": "digits",
   "distinct_symbols": "unknown",
   "digit_groups": {
@@ -120,16 +202,17 @@
    "kinds": [
     "syllables",
     "common words",
-    "titles"
+    "titles",
+    "names"
    ]
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "unknown",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "unknown"
+  "sibling_key": "the 1792 Danzig letters (ZbPop 415) use code B"
  },
  "conditions": {
   "prior_solution": {
@@ -139,7 +222,8 @@
    "used": true
   },
   "inputs": [
-   "images"
+   "images",
+   "known plaintext"
   ],
   "attack": "archive decipherment",
   "human_role": "Pasted the catalogue 420 task brief; no other input.",
@@ -148,12 +232,14 @@
    "AGAD agadd2 image server",
    "web search",
    "PIL crops",
-   "image-reading subagents"
+   "image-reading subagents",
+   "group-by-group alignment (subagents)",
+   "scripts/consistency.py"
   ],
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-26",
   "last_date": "2026-10-27"
  },
@@ -222,13 +308,48 @@
     "plaintext matching",
     "repeat/pattern analysis"
    ],
-   "what": "Read ZbPop 421 item 090 and matched it to cipher 002: ani od WKrMci, ani od Deputacyi = 1944 951 1578 1944 951 21a 2152; przysięgi x2 = 1117 1353 212 1775; Graff(owi de) Stahremberg x2 = ... 686 1405 1255 207, at the expected positions.",
+   "what": "Read ZbPop 421 item 090 and matched it to cipher 002: ani od WKrMci, ani od Deputacyi = 1944 951 1578 1944 951 21a 2152; przysięgi x2 = 1117 1353 212 (+ 1775, the full stop); Graff(owi de) Stahremberg x2 = ... 686 1405 1255 207, at the expected positions.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Pairing checked for 1788-1792 (pairings_1788-1792.txt) and one pair per year compared: 1792 confirmed (951 ... 1578 = Odpisuiąc na list WKrMości), 1790 likely (Deputacyi twice), 1789 same code family, 1788 a different code.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Transcribed despatches 032, 037, 039, 045 (cipher and ZbPop 421 decipherment); a dropped cipher line of 002 (0009R L09) found and restored.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching",
+    "repeat/pattern analysis",
+    "manual reconstruction"
+   ],
+   "what": "Aligned the five sample despatches group by group with their decipherments: 3,048 of 3,082 groups given a value (98.9%); two codes found, code B being the 1792 Danzig code, switched by indicator groups 3283/3285/4000.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Value consistency of repeated groups across the sample: 83.3% (code A, 1,757 occurrences) and 84.4% (code B, 762) carry their commonest value; the rest are mostly syllable-split guesses.",
    "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "The cabinet's contemporary fair-copy decipherments survive as AGAD Zbiór Popielów 421 and match the cipher; the work left is transcribing and checking.",
+  "method_basis": "The cabinet's contemporary fair-copy decipherments survive as AGAD Zbiór Popielów 421 (catalogued as Deboli's clear letters); five despatches were transcribed and aligned with them group by group (98.9% of 3,082 groups).",
   "contribution": [
    "transcription",
    "catalogue correction"
@@ -246,6 +367,135 @@
     "note": "the royal cabinet's fair-copy decipherments, AGAD Zbiór Popielów 421 (catalogued as Deboli's clear letters)"
    }
   ],
-  "notes": "In progress: 3 of 105 despatches transcribed, one aligned. The same cipher/clear pairing very probably holds for catalogue 417-421 (ZbPop 428/417, 17/419, 4/420, 416/415)."
+  "notes": "Sample of 5 of 105 despatches; the other decipherments exist in ZbPop 421 and are not transcribed here. Two codes in use. The pairing extends to catalogue 417-421 (1792 confirmed; 1789-1790 same code; 1788 a different code).",
+  "codes_open": {
+   "open": 34,
+   "total": "unknown",
+   "tokens_open": 34
+  },
+  "key_file": "align/code_table_039_045.tsv",
+  "texts": [
+   {
+    "doc": "ZbPop5-002",
+    "label": "Despatch 002, 7 Jan 1791 (cipher ZbPop 5; decipherment ZbPop 421)",
+    "summary": "Deboli comments on the Sejm's quarrel over the new oath, which Petersburg laughs at; England and Prussia still wait for an answer on the status quo, Alopeus has said in Berlin that the Empress is ready for extremities but will take no dictation, and Potemkin is thought to be dragging things out; couriers from Golitsyn and Vorontsov; Count Starhemberg's journey and complaint about the Połąga customs.",
+    "state": "read",
+    "language": "pl",
+    "transcription": "transcription/zbpop5_001-003.txt",
+    "contemporary": "transcription/zbpop421_090_clear_1791-01-07.txt",
+    "decryption": "transcription/zbpop421_090_clear_1791-01-07.txt",
+    "translation": "texts/002_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "The contemporary decipherment, transcribed from ZbPop 421 and aligned group by group with the cipher (align/002.tsv); reads as coherent Polish, translated into English; uncertain words marked [?]."
+    },
+    "read_share": 1.0
+   },
+   {
+    "doc": "ZbPop5-032",
+    "label": "Despatch 032 (Nr 10), 22 Apr 1791 (cipher ZbPop 5; decipherment ZbPop 421)",
+    "summary": "Deboli has sent his despatch to the Deputation under the banker Schultz's cover and confesses his office has become hateful to him amid the endless quarrels at home; war preparations in England, the perplexity of Goltz and Whitworth, and a Spanish declaration in Berlin advising against war, with Spain said to promise a diversion in Russia's favour if England joins the Turkish war.",
+    "state": "read",
+    "language": "pl",
+    "transcription": "transcription/zbpop5_032.txt",
+    "contemporary": "transcription/zbpop421_032_clear.txt",
+    "decryption": "transcription/zbpop421_032_clear.txt",
+    "translation": "texts/032_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "The contemporary decipherment, transcribed from ZbPop 421 and aligned group by group with the cipher (align/032.tsv); reads as coherent Polish, translated into English; uncertain words marked [?]."
+    },
+    "read_share": 0.99
+   },
+   {
+    "doc": "ZbPop5-037",
+    "label": "Despatch 037 (Nr 15), 6 May 1791 (cipher ZbPop 5; decipherment ZbPop 421)",
+    "summary": "No Berlin courier yet; England and Prussia are thought to want their fleet at sea before proposing an ultimatum; the Spanish envoy Gálvez argues Russia should be handled gently, which Deboli finds hard to square with Russia's aims on Ochakov and the Black Sea; Nassau flatters Gálvez and the Empress sends him a sable fur; a new Dutch envoy.",
+    "state": "read",
+    "language": "pl",
+    "transcription": "transcription/zbpop5_037.txt",
+    "contemporary": "transcription/zbpop421_037_clear.txt",
+    "decryption": "transcription/zbpop421_037_clear.txt",
+    "translation": "texts/037_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "The contemporary decipherment, transcribed from ZbPop 421 and aligned group by group with the cipher (align/037.tsv); reads as coherent Polish, translated into English; uncertain words marked [?]."
+    },
+    "read_share": 1.0
+   },
+   {
+    "doc": "ZbPop5-039",
+    "label": "Despatch 039 (Nr 17), 13 May 1791 (cipher ZbPop 5; decipherment ZbPop 421)",
+    "summary": "Ten days after the Constitution of 3 May 1791: it was just the time for what the King did; raise the army to 100,000; Petersburg credits Marshal Potocki; the second half of the despatch to the Deputation is enciphered in the Deputation's cipher; court gossip on the Saxon marriage plans, Goltz's supposed part, and fear of Potemkin's designs.",
+    "state": "read",
+    "language": "pl",
+    "transcription": "transcription/zbpop5_039.txt",
+    "contemporary": "transcription/zbpop421_039_clear.txt",
+    "decryption": "transcription/zbpop421_039_clear.txt",
+    "translation": "texts/039_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "The contemporary decipherment, transcribed from ZbPop 421 and aligned group by group with the cipher (align/039.tsv); reads as coherent Polish, translated into English; uncertain words marked [?]."
+    },
+    "read_share": 0.995
+   },
+   {
+    "doc": "ZbPop5-045",
+    "label": "Despatch 045 (Nr 23), 31 May 1791 (cipher ZbPop 5; decipherment ZbPop 421)",
+    "summary": "Deboli begins corresponding with Vice-Chancellor Chreptowicz; Petersburg thinks the Revolution well founded but reports displeasure in Berlin, and Goltz has cooled towards him; Dresden's hesitation and Helbig's instructions on the Elector's answer; Potemkin promises Fawkener a favourable answer before the Empress has seen the note.",
+    "state": "read",
+    "language": "pl",
+    "transcription": "transcription/zbpop5_045.txt",
+    "contemporary": "transcription/zbpop421_045_clear.txt",
+    "decryption": "transcription/zbpop421_045_clear.txt",
+    "translation": "texts/045_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-27",
+     "note": "The contemporary decipherment, transcribed from ZbPop 421 and aligned group by group with the cipher (align/045.tsv); reads as coherent Polish, translated into English; uncertain words marked [?]."
+    },
+    "read_share": 0.986
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Despatches 004-105 other than 032, 037, 039, 045 (98 items)",
+    "blocker": "not-attempted",
+    "detail": "decipherments exist in ZbPop 421 and the pairing is established; cipher and decipherment not transcribed in this session"
+   },
+   {
+    "item": "Despatches 001 and 003 (cipher transcribed in full / first page only)",
+    "blocker": "not-attempted",
+    "detail": "ZbPop 421 item 088 for 4 Jan looks short for 2,202 groups; 003's decipherment (item 091) not transcribed"
+   },
+   {
+    "item": "Despatches 014 (18 Feb) and 019 (8 Mar)",
+    "blocker": "not-attempted",
+    "detail": "no ZbPop 421 partner by date or number; undated items 003 and 039 of ZbPop 421 not checked"
+   },
+   {
+    "item": "34 groups of the sample with no place in the decipherment",
+    "blocker": "open-codes",
+    "detail": "marked ? in align/; mostly single groups where cipher and decipherment differ"
+   }
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "27 Oct 2026: cipher groups of the five aligned despatches (002, 032, 037, 039, 045) that take a value from the contemporary decipherment, counted in align/*.tsv: 3,044 values + 4 indicators of 3,082 groups (groups_NNN.txt, measured with docs/_check_profile.py --measure). Despatches 001 (2,202 groups) and 003 (first page, 214) are transcribed but not checked against a decipherment and are left out of the documents; the other 100 despatches are listed as a gap.",
+  "parts": [
+   {
+    "label": "1791 cipher despatches: 5 of 105 transcribed and aligned with the contemporary decipherment (3,048 of 3,082 groups)",
+    "method": "read from existing decipherment",
+    "extent": "partial"
+   }
+  ]
  }
 }

@@ -1845,6 +1845,11 @@ PAGES = [
          blurb='Two French despatches of the Dutch envoy decode with William V&rsquo;s 1782 Grand Chiffre (DECODE R1024), checked on a control letter with known plaintext; digits the DECODE transcription could not place were resolved with a French language model. They report the Prussian refusal to guarantee the Dutch possessions overseas. Van Reede&rsquo;s 1793 letter to the Secret Committee is in another code, with its own page.',
          quote='&ldquo;le Roi a dit qu&rsquo;il ne pouvoit pas garantir nos possessions d&rsquo;outre-mer&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1026'),
+    dict(slug='deboli1791', label='Deboli 1791', year='1791', y=1791.4, place='St Petersburg &rarr; Warsaw', st='found', stt='read at the time',
+         title='Deboli to Stanis&#322;aw August, St Petersburg 1791',
+         blurb='The 105 cipher despatches of the Polish envoy at St Petersburg in 1791 (AGAD Zbi&oacute;r Popiel&oacute;w 5) were deciphered at the time: the King&rsquo;s cabinet&rsquo;s fair copies are filed as Zbi&oacute;r Popiel&oacute;w 421, catalogued as Deboli&rsquo;s clear letters. Five despatches were transcribed and aligned group by group with them (98.9% of 3,082 groups), and two Polish syllabic codes were found alternating, switched by marker groups. The same pairing runs through 1788&ndash;1792.',
+         quote='&ldquo;Czas by&#322; w&#322;a&#347;nie zrobi&#263; co&#347; WKrMi&#281; uczyni&#322;&rdquo;',
+         rights='Manuscript images: Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 5 and 421'),
     dict(slug='vanreede1792', label='Van Reede 1792', year='1792', y=1792.1, place='Berlin &rarr; The Hague', st='solved', stt='read',
          title='Van Reede to William V, 1792',
          blurb='One page in William V&rsquo;s Grand Chiffre, decoded in full with the known key (DECODE R1024) and checked against a contemporary gloss over its first eight lines. It is a cover note: the real despatch is in lemon juice on the blank half-pages of the enclosure, and the last 21 figures are declared nulls.',
@@ -2488,6 +2493,7 @@ IMAGES['r9319'] = None
 IMAGES['sperantio1534'] = None
 IMAGES['r1862'] = None
 IMAGES['r1874'] = None
+IMAGES['deboli1791'] = ('deboli1791_lead.jpg', 'Deboli to Stanis&#322;aw August, 7 January 1791: 1944 951 1578 1944 951 21a 2152 &mdash; ani od WKrMci, ani od Deputacyi', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 5 k. 6r, via the AGAD image server')
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None
 IMAGES['malatesta1428'] = None
