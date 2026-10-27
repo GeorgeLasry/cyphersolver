@@ -1,0 +1,170 @@
+{
+ "schema_version": 1,
+ "target": "johnston1863",
+ "title": "Gen. Joseph E. Johnston to Secretary of War James A. Seddon, Jackson, 16 June 1863: telegram with five words in Vigenere, key MANCHESTERBLUFF (NARA naId 3854726; catalogue 629)",
+ "documents": [
+  {
+   "id": "naId3854726",
+   "read": "read",
+   "shelfmark": "NARA RG 109, War Department Collection of Confederate Records, Telegrams Received by the Confederate Secretary of War (series naId 651917), item naId 3854726 (exhibit no. 18859; agency no. 1705)",
+   "date": "16 Jun 1863",
+   "year": 1863,
+   "country": "Confederate States",
+   "route": "Jackson, Mississippi -> Richmond",
+   "language": "English",
+   "pages": 3,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": ["separate folio", "printed edition"],
+    "source": "Image 3 of the same item, 'Translation of Cypher' (Confederate War Department, 1863), gives the five cipher words in clear; the telegram is printed in clear in 'Correspondence between the President and General Joseph E. Johnston ... May, June and July, 1863' (Richmond: R. M. Smith, 1864), archive.org correspondencebe00conf.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 31,
+    "distinct": 17,
+    "unit": "letters",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 3854726 image 1, and the native page image of the NARA PDF (2510 x 2400 px)",
+    "corrections": 1,
+    "image_quality": "good",
+    "notes": "ISLX, not the catalogue's ISDX (script capital L). The F of KFYHJEER and the E of UNIEK checked on enlarged crops; UNIEK could be UNICK [?]. Re-read independently by a second agent with the same result."
+   }
+  }
+ ],
+ "system": {
+  "types": ["polyalphabetic"],
+  "summary": "Vigenere on the tabula recta with the key MANCHESTERBLUFF, running across the five enciphered words of an otherwise clear telegram and advancing by plaintext length.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 17,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": false},
+  "key_order": "keyword-derived",
+  "word_division": "kept",
+  "sibling_key": "MANCHESTERBLUFF, a key known from other Confederate messages; COMPLETEVICTORY and COMERETRIBUTION tested as controls (1/33 and 3/33).",
+  "notes": "Encipherment slips: the key letter C applied as E at both places it falls; one plaintext N left in clear; the last letter of INVADE and one S of TENNESSEE left out. 26 of 33 plaintext positions match the expected encipherment."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Contemporary 'Translation of Cypher' on image 3 of the same NARA item (1863); clear text printed in Richmond in 1864 (Correspondence between the President and General Joseph E. Johnston, archive.org correspondencebe00conf). The Official Records reprint is probable but its page was not confirmed.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": ["images", "cleartext context", "known plaintext", "published key"],
+  "attack": "published key",
+  "human_role": "Outside contribution (WAINUT): the operator chose the catalogue item; transcription, key test, controls and prior-art search were done by AI language-model agents and checked against the images. No hand correction of readings recorded.",
+  "tools": ["check.py (decryption, key stream from cipher minus crib, alignment variants, controls)"],
+  "models": ["AI language-model agents (WAINUT)"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Fetched the NARA record and the three images and PDF of naId 3854726; image 3 is a 'Translation of Cypher' that the catalogue entry does not mention.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Read the five cipher words on the native PDF page image: UNIEK CXNKVNED JJTRRK ISLX KFYHJEER (31 letters). The catalogue's ISDX is ISLX.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": ["key matching", "plaintext matching"],
+   "what": "Tested the known Confederate key MANCHESTERBLUFF against the crib INVADE KENTUCKY EXTEND EAST TENNESSEE from image 3, with the key running across the cipher words and advancing by plaintext length: 26/33 positions match. Advancing by cipher length gives 5/33 and restarting per word 4/33, which is why the catalogue's quick test failed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": ["plaintext matching"],
+   "what": "Cipher minus crib, without assuming a key, gives MANEH STARBLUF FMANEH ESTE RBLUFMAN: MANCHESTERBLUFF with the clerk's slips. Both mismatches at a key letter C were enciphered with E, so they are one systematic slip.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "Controls: COMPLETEVICTORY 1/33, COMERETRIBUTION 3/33; 20,000 random 15-letter keys mean 1.19, max 11; 14 wrong start offsets 0-4; 119 shuffled word orders mean 5.4, max 18. All other decryptions are gibberish.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Found the clear text printed in 1864 (Richmond, R. M. Smith; archive.org correspondencebe00conf), twice, and quoted in Seddon's letter to Bragg of 17 June. The Official Records page was not confirmed (ehistory.osu.edu refused access).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "first_break": false,
+  "method_basis": "The known Confederate key MANCHESTERBLUFF, not tied to this telegram in the catalogue, was found to fit the five cipher words against the contemporary 'Translation of Cypher' on image 3 (26/33 positions; the rest are the clerk's slips); the text itself was deciphered in 1863 and printed in 1864.",
+  "contribution": ["transcription", "catalogue correction"],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decryption.txt: all 31 cipher letters have a value; the four that differ from the expected encipherment are explained as slips.",
+  "verification": ["contemporary decipherment", "key confirms", "historical consistency"],
+  "provenance": "contributed",
+  "notes": "Not a new decipherment: the plaintext was known in 1863 and printed in 1864. What is added: the key and how it was applied, the clerk's systematic slip, and two catalogue corrections (ISDX -> ISLX; a decipherment exists on image 3 of the item).",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key MANCHESTERBLUFF matched to the cipher words and applied line by line; controls",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "cipher words re-read at full resolution: ISLX, not ISDX",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "earlier solutions: the 'Translation of Cypher' on image 3 and the 1864 Richmond print",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Confederate War Department 'Translation of Cypher', 1863 (NARA naId 3854726 image 3), used as the crib",
+    "source": "https://catalog.archives.gov/id/3854726"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "naId3854726",
+    "label": "Johnston to Seddon, Jackson, 16 Jun 1863",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "contemporary": "contemporary_leaf3.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; second agent re-read the images)",
+     "date": "2026-10-27",
+     "note": "Reads as the telegram printed in 1864; the five cipher words agree with the 1863 'Translation of Cypher'."
+    },
+    "summary": "During the siege of Vicksburg, Johnston passes on Bragg's news that part of the Union 9th and 23d Corps has been sent to reinforce Grant (a telegram from Louisville), and asks Seddon whether this does not allow an invasion of Kentucky, for which Bragg's command should extend over East Tennessee. The words 'invade Kentucky', 'extend' and 'East Tennessee' were enciphered."
+   }
+  ],
+  "key_file": "key.md"
+ }
+}

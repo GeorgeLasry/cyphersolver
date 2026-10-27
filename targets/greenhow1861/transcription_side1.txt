@@ -1,0 +1,58 @@
+# Greenhow, letter in cipher on mourning paper, side 1: sign transcription
+# NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow (entry A1-986), naId 1634036, image 1
+# https://catalog.archives.gov/id/1634036
+#
+# Each sign is written as a neutral shape label, not as a letter (the labels and their key values are in
+# key_1864.md and decode.py). Read on enlarged crops of image 1 by a second agent, independently of the first
+# reading; the two agree except where noted in NOTES.md.
+#   |   word gap or dot          ~   paper loss (one or more signs)
+#   =x  word written in clear    +   word runs on to the next line
+#   ?   after a label: uncertain sign
+#
+# Heading (not read): "P 31 ?" (a sign like the A-sign, then 31, then a lost or unclear sign)
+#
+# Shape labels: hk = + with small x (A), b7 = 7 (B), c3 = 3 (C), cx = + with second small cross (D), yf = Y (E),
+# tr = triangle (F), e8 = plain 8 (G), cm = comb (H), f4 = crossed 4 (I), n9 = 9/P-like (K), ls = long s (L),
+# dd = diamond with dot (M), qm = ?-form (N), lb = looped l with crossbar (N, not on the key sheet), f5 = 5 with
+# top bar (O), cc = circle with cross (P), ph = looped 4 / phi (R), bx = box with X (S), dt = D with dot (T),
+# e8s = struck 8 (U), zt = Z with tail (V), fl = flag/triangle with dot (W), ta = tau (X), ys = 7 over a stem (Y)
+#
+01 hk ls ~ | f4 bx | hk c3 dt f4 ~ dt ys
+02 dd c3 | ls yf ls hk lb cx | =is | b7 e8s f4 bx ys | =myste~
+03 =a~ ~ b7 e8s dt | =the | cc hk lb f4 c3 n9
+04 f4 bx | e8 ph yf? hk? dt | =a~ ~ ys | hk dt dt hk +
+05 c3 n9 | =is | cm f5 e8s ph ls ys | yf ta cc yf c3 ph dt +
+06 yf cx | dt cm yf ys | b7 yf ls yf f4 zt yf | =this
+07 =the | hk dt dt hk ~ fl f4 ls ls ~ yf | bx f4 +
+08 dd e8s ls dt hk qm yf f5 e8s | =fr~
+09 ph cx? bx | tr yf ph ph ~
+10 dt f4 dd f5 ph yf | ~ ys | yf tr tr +
+11 ph dt | =is | b7 yf f4 qm e8 | dd hk cx yf | dt f5 | tr f4 +
+12 qm cx | f5 e8s dt | fl cm f5 | e8 hk? zt yf | =the
+13 hk? ls hk ph dd | hk dt ph f5 ~ tr | c3 hk +
+14 zt hk ls ph ys | =u~ ~ qm dt | tr ph +
+15 ~ dd | cm yf ph yf ~ f4 bx
+16 dd f5 ph qm f4 lb e8 | =l~ ~ cm hk ph cc yf ~
+17 yf ph ph ys | ~ f5 qm dt
+#
+# The same lines with the key applied (decode.py prints this as one run):
+# 01 A L _ | I S | A C T I _ T Y
+# 02 M C | L E L A N D | (is) | B U I S Y | (myste~)
+# 03 (a~) _ B U T | (the) | P A N I C K
+# 04 I S | G R e a T | (a~) _ Y | A T T A +
+# 05 C K | (is) | H O U R L Y | E X P E C R T +
+# 06 E D | T H E Y | B E L E I V E | (this)
+# 07 (the) | A T T A _ W I L L _ E | S I +
+# 08 M U L T A N E O U | (fr~)
+# 09 R d S | F E R R _
+# 10 T I M O R E | _ Y | E F F +
+# 11 R T | (is) | B E I N G | M A D E | T O | F I +
+# 12 N D | O U T | W H O | G a V E | (the)
+# 13 a L A R M | A T R O _ F | C A +
+# 14 V A L R Y | (u~) _ N T | F R +
+# 15 _ M | H E R E _ I S
+# 16 M O R N I N G | (l~) _ H A R P E _
+# 17 E R R Y | _ O N T
+#
+# Signs the key does not account for: the R-sign between C and T in EXPEC-R-TED (line 5); no S-sign after
+# SIMULTANEOU (line 8, the word ends in U and a dot); no O-sign in EFF|RT (lines 10-11, line end at the ruled border).

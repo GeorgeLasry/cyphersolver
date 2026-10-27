@@ -1,0 +1,173 @@
+{
+ "schema_version": 1,
+ "target": "jordan1861",
+ "title": "Lt. Col. Thomas Jordan to 'My Dearest Rachel' (Rose Greenhow), 1861: the cipher original (NARA naId 6925618, catalogue 646) and the clerk's clear copy (naId 1634051, catalogue 645), with the 1864 Greenhow key",
+ "documents": [
+  {
+   "id": "naId6925618",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, naId 6925618 ('Copy of a Letter Fragment Partially Written in Cipher', 1 image, photostat negative); clear copy naId 1634051 images 1-2",
+   "date": "1861 (after Jordan became lieutenant colonel; seized 23 Aug 1861)",
+   "year": 1861,
+   "country": "Confederate States",
+   "route": "Confederate lines (Manassas, presumed) -> Washington",
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["interlinear", "separate folio"],
+    "source": "Clerk's fair copy in clear, NARA naId 1634051 images 1-2 (same series), giving the cipher passages in plain words with the torn parts as dashes; an interlinear gloss 'h a r' under the first cipher group on the fragment.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 89,
+    "distinct": 21,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 6925618, inverted and contrast-stretched crops; two independent readings",
+    "image_quality": "poor",
+    "notes": "White-on-black photostat of burnt and torn fragments, cross-written in places. 89 signs in 22 groups transcribed, 7 of them uncertain; L12, the central strip and R5 not read."
+   }
+  }
+ ],
+ "system": {
+  "types": ["monoalphabetic", "nomenclator"],
+  "summary": "The Jordan-Greenhow symbol substitution, one sign per letter, cipher groups for single words or parts of words inside a clear letter; the 1864 key sheet also has digraph and code signs.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 21,
+  "diacritics": {"used": false},
+  "homophones": {"used": false},
+  "nomenclator": {"present": true, "kinds": ["names", "places", "common words"]},
+  "nulls": {"present": false},
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "written twice (SCOTT, BOO); the key sheet's rule 'second letter inverted' not seen",
+  "sibling_key": "1864 Greenhow key (NARA M1091 naId 62017285 image 0484, 'Lamb Papers CXXIX'); used, unchanged. Same key as targets/greenhow1861.",
+  "notes": "distinct_symbols = distinct sign labels in the 22 groups read. The first sign of the SHOULDER group may be the key sheet's sh digraph."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The clear copy NARA naId 1634051 images 1-2 (filed in the same series) gives every cipher passage in plain words; an interlinear gloss 'h a r' sits under the first cipher group of naId 6925618. No printed transcription found in one web search; the Official Records Ser. II vol. 2, Fishel and Blackman not checked.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": ["images", "key from archive", "known plaintext"],
+  "attack": "key from archive",
+  "human_role": "Outside contribution (WAINUT): the operator chose the catalogue items; transcription, key application, controls and the identification of the two NARA items as one letter were done by AI language-model agents and checked against the images. No hand correction of readings recorded.",
+  "tools": ["decode.py (key applied to shape labels and compared with the clear copy; controls)"],
+  "models": ["AI language-model agents (WAINUT)"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "Fetched NARA naId 1634051 (6 images), naId 6925618 (1 image) and M1091 naId 62017285 images 0483-0485; the files were fetched a second time for the check and are byte-identical.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "what": "Identified naId 1634051 images 1-2 as a clerk's clear copy of Jordan's letter to 'My Dearest Rachel', and naId 6925618 as the cipher original of the same letter: every clear phrase of the fragment occurs in the copy, in the same order. Images 3-6 of 1634051 are a different clear letter and an envelope to Miss Gertrude L. Greenhow docketed 'Capt Moore of the Union 29 Apl 1861'.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Transcribed the cipher groups of the photostat on inverted crops, twice independently: 22 groups, 89 signs, 7 uncertain.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "key from source",
+   "technique": ["key matching", "plaintext matching"],
+   "what": "Applied the 1864 Greenhow key (M1091 image 0484) unchanged: all 82 securely read signs give the clear copy's letter at that place (HAR, SCOTT, HANS FIELD FORTIFICATION, OULDER, LIE, ANY, CANG, BOO, LIEU, COLONEL, IN ...). Image 0483 does not apply.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": ["statistical test"],
+   "what": "decode.py: 20,000 random keys mean 3.1/82, best 36/82; key shifted 1, 2, 3, 13: 0/82; groups assigned to the wrong copy words: mean 5.5, best 19; whole groups right: 22/22 against a random-key best of 4/22.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "One web search (Jordan, 'Dearest Rachel', Greenhow, Hardee's Tactics, shoulder straps) found catalogue and overview pages only (NARA, SNAC, Wikipedia, whitehousehistory.org, dh.scu.edu); no printed text of the letter.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "read after matching with key from external sources",
+  "first_break": false,
+  "method_basis": "The 1864 key found on Greenhow's body (M1091 naId 62017285 image 0484) fits the 1861 cipher groups of naId 6925618 unchanged (82/82 secure signs); the text itself was already given in clear by the clerk's copy naId 1634051 and in part by an interlinear gloss.",
+  "contribution": ["transcription", "sender or date identified", "catalogue correction"],
+  "fraction_read": 0.92,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "decode.py: 82 of 89 transcribed signs read securely, all agreeing with the clear copy; the unread groups L12, C1 and R5 are not counted in the 89.",
+  "verification": ["contemporary decipherment", "independent clear copy", "key confirms"],
+  "provenance": "contributed",
+  "notes": "No new plaintext: the clear copy already gives these passages. What is added: the two NARA items identified as one letter (catalogue 645 and 646), the correct correspondents of 646, and the proof that the 1864 key reads the 1861 cipher unchanged. The torn passages of the copy are lost on the original too.",
+  "gaps": [
+   {"item": "L12, the central strip C1 and R5 of naId 6925618", "blocker": "illegible", "detail": "faint or torn signs; the clear copy has dashes at L12 and R5"},
+   {"item": "the dashes of the clear copy (images 1-2 of 1634051)", "blocker": "illegible", "detail": "the original is torn at these places; the surviving cipher does not fill them"}
+  ],
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "cipher groups of naId 6925618 transcribed and decoded with the 1864 key; controls",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "identification",
+    "note": "naId 6925618 (catalogue 646) is the cipher original of Jordan's letter whose clear copy is naId 1634051 (catalogue 645); correspondents Jordan to Greenhow",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "pointer",
+    "note": "earlier solution: the clear copy naId 1634051 images 1-2 and the interlinear gloss",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the 1864 key found on Greenhow's body (M1091 naId 62017285 image 0484) and the clerk's clear copy (naId 1634051 images 1-2)",
+    "source": "https://catalog.archives.gov/id/1634051"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "naId6925618",
+    "label": "Jordan to 'My Dearest Rachel', 1861: cipher original naId 6925618",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "contemporary": "contemporary_clear_copy.txt",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.683,
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent; second agent re-read the images)",
+     "date": "2026-10-27",
+     "note": "Coherent with the clear copy; the fragment is torn, so the supplied words in brackets are holes on the original (read_share 0.683 by research/reading_audit/v2_score.py)."
+    },
+    "summary": "Thomas Jordan, newly a lieutenant colonel, asks 'Rachel' (Rose Greenhow) to get him Hardee's and Scott's Tactics, Mahan's Field Fortification, 8 yards of navy-blue flannel and shoulder straps for his rank, to be sent by hand; the clear copy adds that he feared an earlier letter had failed to reach her: he had then no access to his cipher, and a letter in ordinary characters 'was intercepted' (the copy has gaps here). Domestic in content, but it shows the Jordan-Greenhow cipher in use in 1861 with the same key as in 1864."
+   }
+  ],
+  "key_file": "../greenhow1861/key_1864.md"
+ }
+}
