@@ -110,7 +110,7 @@
     ],
     "sessions": 1,
     "first_date": "2026-09-21",
-    "last_date": "2026-09-21"
+    "last_date": "2026-10-27"
   },
   "solution": [
     {
@@ -151,6 +151,15 @@
       "kind": "literature search",
       "what": "Nationaal Archief EAD search located S.E. Croiset's cipher-office papers, NA 2.21.045 (familie Croiset) A.7.b, 1789-1810: inv. 18 correspondence with Dutch envoys on setting cipher codes, with cipher letters and code tables; inv. 21 cipher codes with notes and instructions to envoys; inv. 22 letter from W.F. Roell. All PHYSICAL, not scanned.",
       "result": "unknown"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "literature search",
+      "technique": [
+        "other"
+      ],
+      "what": "Brice Dudout reports the letter is dated Düsseldorf 12 Jan 1808 (No. 4); 14 Jan is the date of receipt ('Exh'); he too reads the system as a two-part code, not breakable without a crib.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -163,6 +172,15 @@
     "class": "not read",
     "fraction_read": 0,
     "verification": [],
-    "notes": "Blocked on the key: needs the Kingdom of Holland legation code or the DECODE owner's annex reading."
+    "notes": "Blocked on the key: needs the Kingdom of Holland legation code or the DECODE owner's annex reading.",
+    "credits": [
+      {
+        "who": "dudout",
+        "role": "identification",
+        "date": "2026-10-27",
+        "note": "date of writing 12 Jan 1808; two-part code",
+        "source": "email to Daniel Bourdeau, 27 Oct 2026"
+      }
+    ]
   }
 }

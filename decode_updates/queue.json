@@ -3884,10 +3884,15 @@
     "R1941": {
      "decode_status": "Partially decrypted",
      "proposed": "Partially decrypted",
-     "note": "No reading attached for the annex said to be solved; letter (228 groups) and annex (75) transcribed, no key found. Inv. 281 per NA inventory = ceded-districts commissioners, Düsseldorf = Grand Duchy of Berg, not Westphalia.",
+     "note": "No reading attached for the annex said to be solved; letter (228 groups) and annex (75) transcribed, no key found. Inv. 281 per NA inventory = ceded-districts commissioners, Düsseldorf = Grand Duchy of Berg, not Westphalia. Brice Dudout (email of 27 Oct 2026): the letter is dated Düsseldorf, 12 January 1808 (No. 4); 'Exh 14 january 1808' is the date of receipt. A two-part code, not breakable without a crib.",
      "reading": null,
      "sent": false,
-     "reading_not_needed": true
+     "reading_not_needed": true,
+     "fields": {
+      "start_year": 1808,
+      "start_month": 1,
+      "start_day": 12
+     }
     }
    }
   },
@@ -10395,18 +10400,21 @@
   "r1871": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/r1871.html",
    "key": {
-    "none": "no key reachable: not on DECODE (Venetian key records R1788-R1790 do not match); Bonavoglia's decipherment offline"
+    "none": "key not rebuilt here; Bonavoglia's decipherment is the reading (Brice Dudout reports a table: syllabary in blocks of five consecutive codes, blocks out of order)"
    },
-   "cite": "Paolo Bonavoglia, 'Decifra dispacci veneziani', https://www.crittologia.eu/critto/venezia_nomenclatore.html",
+   "cite": "Paolo Bonavoglia, 'Dispaccio di Sebastiano Foscarini 11 set 1680', https://www.crittologia.eu/storia/SebFoscarini_Parigi16800911.html",
    "fields": {},
    "records": {
     "R1871": {
      "decode_status": "Non-decrypted",
-     "proposed": "Non-decrypted",
-     "note": "Not 1555/England: Sebastiano Foscarini, Venetian ambassador in France, to the Doge, Paris 11 Sept 1680, despatch no. 117 ('P.S. Sola'), signed; dorse docket '11 Sett. 1680'. Date 1555 -> 11 Sep 1680; region England? -> France (Paris); author '...' -> Sebastiano Foscarini; symbol set Numerical. Deciphered by Paolo Bonavoglia, 'Decifra dispacci veneziani' (crittologia.eu), listed as '1680-09-11: Dispaccio di ambasciatore Sebastiano Foscarini', but that decipherment is offline and was not seen. Cipher is 3-digit groups (third digit 0-9, rare 0/7/8/9 only there), ~300-code homophonic nomenclator; ciphertext-only attempt (annealing, Italian 4-gram) gave no text. Full digit transcription attached (first pass). Not related to R1873 (Mocenigo, Rome 1558), a different cipher.",
-     "reading": null,
+     "proposed": "Decrypted",
+     "note": "Not 1555/England: Sebastiano Foscarini, Venetian ambassador in France, to the Doge, Paris 11 Sept 1680, despatch no. 117 ('P.S. Sola'), signed; dorse docket '11 Sett. 1680'. Date 1555 -> 11 Sep 1680; region England? -> France (Paris); author '...' -> Sebastiano Foscarini; symbol set Numerical. Deciphered by Paolo Bonavoglia (crittologia.eu/storia/SebFoscarini_Parigi16800911.html; original ASVe Senato, Dispacci Francia, filza 171A; the chancery decipherment in filza 166): a postscript on Spanish reinforcements in the Milanese and Louis XIV's plan to raise the Pinerolo garrison to 6,000 men. His page was offline in Sept 2026 and was retrieved 27 Oct 2026 on a pointer from Brice Dudout; his text attached, not aligned group by group with the transcription. Cipher: 3-digit groups, a syllabary in blocks of five consecutive codes with the blocks out of order (Dudout). Full digit transcription attached (first pass). Not related to R1873 (Mocenigo, Rome 1558).",
+     "reading": [
+      {
+       "file": "targets/r1871/texts/R1871_reading.md"
+      }
+     ],
      "sent": false,
-     "reading_not_needed": true,
      "fields": {
       "sender": "Sebastiano Foscarini",
       "receiver": "Doge of Venice",
@@ -11216,7 +11224,7 @@
       "plaintext_lang": "Dutch",
       "cleartext_lang": "Dutch"
      },
-     "note": "Van Reede (Berlin) to the Secret Committee of the States General, 24 Mar 1793. Language is Dutch, not Hungarian. Not William V's Grand Chiffre (R1024, which reads van Reede's 1787-88 despatches R1026/R1027): three-digit groups with per-digit overmarks, 696 groups in 513 distinct marked forms. Keys R2846, R2848, R2850, R2851 and R2243 tried, no fit; no crib. Attempted 20-21 Sept 2026, not read. 21 Oct 2026: WAINUT (cyphersolver PR #66) rebuilt the code from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 and decoded R1893 in part (601/696 groups valued; proposal, leave-one-out 0.599 exact). R1893 is not among the online scans of inv. 6695. DECODE's transcription D3608 splits 960 as 9 60 and drops four groups in rows 5-6 of p. 1 (checked on the image by WAINUT).",
+     "note": "Van Reede (Berlin) to the Secret Committee of the States General, 24 Mar 1793. Language is Dutch, not Hungarian. Not William V's Grand Chiffre (R1024, which reads van Reede's 1787-88 despatches R1026/R1027): three-digit groups with per-digit overmarks, 696 groups in 513 distinct marked forms. Keys R2846, R2848, R2850, R2851 and R2243 tried, no fit; no crib. Attempted 20-21 Sept 2026, not read. 21 Oct 2026: WAINUT (cyphersolver PR #66) rebuilt the code from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 and decoded R1893 in part (601/696 groups valued; proposal, leave-one-out 0.599 exact). R1893 is not among the online scans of inv. 6695. DECODE's transcription D3608 splits 960 as 9 60 and drops four groups in rows 5-6 of p. 1 (checked on the image by WAINUT). Brice Dudout (email of 27 Oct 2026): the Fagel key books NA 1.10.29 inv. 1257-1267 are online; none is Van Reede's, but 1261, 1263 and 1265 are of the same family and define null groups and 'Begin des Briefs' / 'Einde des Briefs' markers, which may account for unvalued groups at the start and end.",
      "reading": null,
      "reading_not_needed": true,
      "sent": false
@@ -13700,6 +13708,22 @@
   },
   "jefferson1787": {
    "skip": "Not on DECODE: no record among the 10,106 harvested (research/catalogue_harvest/decode/list.json) names Jefferson, Barclay, Carmichael, Short or Lamb; the letters are at the Library of Congress and NARA only. Nothing to correct or add there."
+  },
+  "r10181": {
+   "writeup": null,
+   "key": null,
+   "cite": null,
+   "fields": {},
+   "records": {
+    "R10181": {
+     "decode_status": "Non-decrypted",
+     "proposed": "Non-decrypted",
+     "note": "Miguel Fernández Durán to the marqués de San Felipe, 30 Nov 1718. Brice Dudout (email of 27 Oct 2026): the nine keys DECODE photographed in the same fonds (R10189-R10197) are all for other correspondents; the letter looks like an alphabetical word code of about 880 entries ('de' 163, 'del' 164, 'que' 652). Not read.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    }
+   }
   }
  }
 }

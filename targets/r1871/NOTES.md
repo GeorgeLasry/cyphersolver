@@ -5,9 +5,10 @@ despatches; R1873 (Alvise Mocenigo, Rome, 25 April 1558) is a different cipher, 
 published decipherment, and now has its own entry ([`targets/r1873/`](../r1873/NOTES.md), page `r1873.html`).
 This entry keeps R1871 only.
 
-**Outcome: not solved.** Bonavoglia ("Decifra dispacci veneziani", crittologia.eu/critto/venezia_nomenclatore.html)
-lists this despatch as deciphered, but his decipherment could not be retrieved, and the ciphertext-only attempt here
-did not read it. Session 2026-09-22. (The old verdict "both already read, by Paolo Bonavoglia" held only for R1873.)
+**Outcome: read from existing decipherment** (27 Oct 2026). Paolo Bonavoglia's decipherment of this despatch is back
+online (`crittologia.eu/storia/SebFoscarini_Parigi16800911.html`, pointer from Brice Dudout's email of 27 Oct 2026) and
+is saved in `r1871_bonavoglia.txt`. Nothing was deciphered here; the ciphertext-only attempt of 22 Sept 2026 (below)
+failed. Earlier verdict (22 Sept): not solved, because his page was offline.
 
 Catalogue 264 ("... (England?) to unknown recipient, 2 ciphertexts, 1555–1558") merged the two records. Neither is
 from England. The "England?" region and the 1555 date come from DECODE's R1871 metadata, which seems to have been
@@ -48,11 +49,28 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
   records there, R1788–R1790, are 16th-century Pasini tables), more ciphertext in the same key (Foscarini's other Paris
   and Madrid despatches, 1680–84, ASVe Senato Dispacci Francia 171A and Spagna), or Bonavoglia's decipherment.
 
+## The reading (Bonavoglia, retrieved 27 Oct 2026)
+
+- Bonavoglia: original in ASVe Senato, Dispacci Francia, **filza 171A**, wholly in cipher except "Ser.mo Principe" and
+  the signature; the doge's chancery decipherment is in **filza 166**. R1871 (Busta 30 f. 4) carries the same despatch
+  (no. 117, "P.S. Sola", 11 Sept 1680).
+- Content: a postscript written after the despatch was signed. Rumoured Spanish reinforcements in the Milanese; Louis XIV
+  said to mean to raise the Pinerolo garrison to 6,000 men of the old regiments and spread 16,000 men over Dauphiné and
+  Provence; the Duke of Mantua's illness, abbé Morel, a Spanish plan to push 5-6,000 men into Casale; munitions sent to
+  Pinerolo by way of Savoy. Bonavoglia judges it a false alarm.
+- 262 words (measured). His open items: "[Francesi?]269?", "114?", the closing "202.106.100".
+- Not checked here: his ciphertext viewer (`venezia_nomenclatore.html?dispaccio=SFoscaParigi`) still returns HTTP 500,
+  so his decipherment was not aligned group by group with `groups.txt`.
+- Brice Dudout (27 Oct 2026) rebuilt the table, which Bonavoglia does not publish: **a syllabary in blocks of five
+  consecutive codes, with the blocks out of order**. It matches Bonavoglia's text at 94.9% on held-out lines. This is
+  why `msolve.py` (one monotone syllabary) could not converge. He suggests checking our transcription at L18-19 and
+  L22 (L22 was already marked weakest).
+
 ## Remaining gaps
 
-- R1871, whole despatch (1,839 digits, 612 groups) unread. Blocker (outside): key not available anywhere reachable;
-  one page of ciphertext too short for a blind solution of a ~300-code homophonic table; the existing decipherment
-  (Bonavoglia) is offline.
+- None in the text: Bonavoglia's decipherment covers the despatch, apart from his own open items (three number groups).
+- Not done here: the key (table) is not rebuilt, and his text is not aligned with our transcription. Next, if it is
+  worth doing: ask Dudout for his block table and check `groups.txt` against it (L18-19, L22).
 
 ## Escalation
 
@@ -60,16 +78,16 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
   despatches in the same key are in ASVe busta 171A, not digitised. R1873 (now `targets/r1873/`) is another cipher.
 - [x] clear-pages: none on the record (clear salutation and signature only).
 - [x] known-keys: DECODE's Venetian key records (R1788–R1790, 16th-century Pasini tables) do not match.
-- [x] print: none found; Bonavoglia's pages are the only reading. Retry
-  `crittologia.eu/storia/SebFoscarini_Parigi16800911.html` and `venezia_nomenclatore.html?dispaccio=SFoscaParigi`
-  later, or ask Paolo Bonavoglia for the key.
+- [x] print: none found; Bonavoglia's page is the reading, online again and retrieved 27 Oct 2026. The viewer
+  `venezia_nomenclatore.html?dispaccio=SFoscaParigi` still returns HTTP 500.
 - [x] key-rebuild: done (above): monotone, free letter and letter/syllable annealers, no Italian.
 - [n/a] retry: needs more ciphertext in the same key or the key itself before a rerun is worth it.
 
 ## Assumptions for George's review
 
-- Outcome "not solved" although Bonavoglia lists the despatch as deciphered: his decipherment was never seen here, so
-  it is recorded as a pointer, not as a prior reading used.
+- Outcome "read from existing decipherment" from 27 Oct 2026: Bonavoglia's text was retrieved and is the reading.
+  It was listed before our attempt (contamination: found before attempt, but offline, so unused until 27 Oct).
+  The project's failed ciphertext-only attempt stays in the steps.
 
 ## Steps
 
@@ -80,3 +98,6 @@ copied from its neighbour R1872 (Giovanni Michiel, Brussels, 19 Mar 1555, also i
    and the list naming the Foscarini 11 Sep 1680 despatch.
 5. Transcription, segmentation and the solver runs above (22 Sep 2026).
 6. 14 Oct 2026: R1873 split off into its own entry (`targets/r1873/`).
+7. 27 Oct 2026: Brice Dudout's email: Bonavoglia's page back online, filza 166 chancery decipherment, his own block
+   table (94.9% on held-out lines). Retrieved Bonavoglia's decipherment (`r1871_bonavoglia.txt`); outcome changed to
+   read from existing decipherment.

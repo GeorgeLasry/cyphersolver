@@ -33,3 +33,9 @@ found no matching plaintext. This does not establish that none exists elsewhere.
 Retrieve Nationaal Archief 1.10.29, Fagel inventory 5206 (catalogued as digitized
 Hellen decipherments, 1752–1753), check for 4 January 1752, and compare the text
 with R1953. No matching text has yet been inspected. The 1763 letters remain open.
+
+## Brice Dudout's report (email of 27 Oct 2026)
+
+Fagel 5206 holds the plain copies of about 40 of von der Hellen's reports of 1752-53, but not the letters on the
+DECODE records here (catalogue 214, 223). The "Fagel 5206 decipherments" lead is therefore closed for these letters.
+He asked for the DECODE images of R1953, R1045-R1049, R1060 and R1061 for study (left to Daniel).

@@ -108,7 +108,7 @@
     ],
     "sessions": 1,
     "first_date": "2026-10-26",
-    "last_date": "2026-10-26"
+    "last_date": "2026-10-27"
   },
   "solution": [
     {
@@ -134,6 +134,15 @@
       "kind": "access",
       "what": "Rigsarkivet DK, Kommissionen vedr. Magnus Stenbock, Ekstrakt A (207 images): contents show the Tönning 1713 field archive, not the captivity letters.",
       "result": "ruled out"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "literature search",
+      "technique": [
+        "other"
+      ],
+      "what": "Brice Dudout reports Erlund's 1732 manuscript in the Riksarkivet (SE/RA/760004/42, IIIF R0000422, public domain) with the key (Lit. F) and interlinear decipherments of the intercepted letters, the escape contract included; Stenbock's petition to Charles XII (pp. 697-707) is a different code, partly glossed, which Dudout has partly rebuilt. Not yet checked here; the access blocker is lifted.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -145,6 +154,15 @@
     "class": "not read",
     "fraction_read": 0,
     "verification": [],
-    "notes": "Letters located (Ericsberg Stenbock papers vol. 52); the cipher was broken at the time by the Danish post office; needs an archive image order."
+    "notes": "Letters located (Ericsberg Stenbock papers vol. 52); the cipher was broken at the time by the Danish post office; needs an archive image order.",
+    "credits": [
+      {
+        "who": "dudout",
+        "role": "pointer",
+        "date": "2026-10-27",
+        "note": "Erlund's 1732 manuscript R0000422 with key and decipherments",
+        "source": "email to Daniel Bourdeau, 27 Oct 2026"
+      }
+    ]
   }
 }

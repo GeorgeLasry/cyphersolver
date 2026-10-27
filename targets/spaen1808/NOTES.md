@@ -72,3 +72,9 @@ The codebooks every pass here has wanted are catalogued in the Croiset family ar
 All are `PHYSICAL` (not scanned). They can be reached through the Nationaal Archief's paid scan-on-demand service or
 a reading-room visit. That is an outside blocker, but a lifted one is likely to give the key outright. Found by the sweep in
 `research/nationaal_archief/`.
+
+## Brice Dudout's report (email of 27 Oct 2026)
+
+- The letter is dated **Düsseldorf, 12 January 1808** (No. 4). "Exh 14 january 1808" on P3 is the date of receipt
+  (exhibitum), not the date of writing. Catalogue 226 and the DECODE date change to 12 Jan 1808.
+- He reads the system as a **two-part code**, which agrees with the verdict above that it cannot be broken without a crib.

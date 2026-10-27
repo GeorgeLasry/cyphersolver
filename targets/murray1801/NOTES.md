@@ -85,3 +85,8 @@ copy (sought in DD France M34 reel 9; not there), and a re-read of the last grou
 `scan/vol3_codes.md` (pairs from vol. 3 frames 0018-0211, ~150, with frame references) and `scan/found406.md` (the 406
 search, frames 0212-0421) are the subagents' working transcriptions. Only the pairs in `pairs.tsv` were checked on
 the images; the rest are unverified and would need checking before reuse as a key.
+
+## Brice Dudout's report (email of 27 Oct 2026)
+
+Catalogue 481: Dudout checked this reading independently and agrees (credited in profile.json as independent
+verification).

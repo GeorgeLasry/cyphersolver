@@ -1,6 +1,6 @@
 # Magnus Stenbock (prisoner in Copenhagen) and Peter Malmberg, cipher correspondence 1713-1717 (catalogue 455)
 
-Status: in progress (blocked: neither the key nor the letters are digitised; an archive order is needed)
+Status: in progress (unblocked 27 Oct 2026: Erlund's 1732 manuscript with the key and decipherments is online, Riksarkivet R0000422, per Brice Dudout)
 
 Attempted 26 Oct 2026. No ciphertext could be reached online, so nothing has been transcribed or read. This session
 located the letters, which the catalogue entry had not done. It also found that the cipher was broken at the time by
@@ -60,10 +60,19 @@ received at Flensburg. These are 1712-13 campaign papers in German summary, not 
 - Erlund's own memorial of 1719 and his papers at Rigsarkivet (Copenhagen). Not located at series level.
 - DECODE R4101 (KB, Stenbock autograph 1713, decrypted) is a different item, as the catalogue says. It was not re-opened.
 
+## Brice Dudout's report (email of 27 Oct 2026)
+
+Not blocked after all, he reports. **Erlund's 1732 manuscript is in the Riksarkivet: SE/RA/760004/42, IIIF
+R0000422, public domain.** It holds the key (Lit. F) and interlinear decipherments of the intercepted Stenbock-Malmberg
+letters, the escape contract among them. Stenbock's own enciphered petition to Charles XII (pp. 697-707) is in a
+different code that Erlund only partly glossed. Dudout has rebuilt it and read about forty passages Erlund left as dots,
+but only about a third of the values are certain so far. Not yet checked here. Next: fetch R0000422 through the
+Riksarkivet IIIF, transcribe Lit. F and one glossed letter, and compare with Dudout once he publishes.
+
 ## Remaining gaps
 
-- The whole correspondence. Blocked from outside: the key (E 4698) and the letters (Ericsberg Stenbock vol. 52, and
-  perhaps vol. 50) are not digitised. Reading them needs an image order from Riksarkivet or a visit.
+- The whole correspondence. The originals (key E 4698, Ericsberg Stenbock vol. 52, perhaps vol. 50) are still not
+  digitised, but Erlund's 1732 manuscript (R0000422) has the key and decipherments (Dudout, above): no longer blocked.
 
 ## Escalation
 

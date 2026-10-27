@@ -57,3 +57,9 @@ identical photographs; this duplication does not establish a decipherment of tha
 - [n/a] print: a classification from the manuscript images; no edition used.
 - [n/a] key-rebuild: no cipher key is required for clear Italian.
 - [n/a] retry: no undeciphered group was identified in these three letters.
+
+## Brice Dudout's report (email of 27 Oct 2026)
+
+On catalogue 361 as a whole: every one of the six 1491-92 cipher despatches has a contemporary Este decipherment,
+and 1492 no. 8 is printed in Berzeviczy 1914. So the entry is "read at the time" rather than open. This folder covers only
+the three clear 1493 records; the six cipher despatches (R1162-R1168) have no folder yet. Not verified here.

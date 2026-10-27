@@ -184,7 +184,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-26"
+  "last_date": "2026-10-27"
  },
  "solution": [
   {
@@ -390,6 +390,15 @@
    ],
    "what": "Hand rebuild of a system-A table from the gloss: no group has a letter string common to all its glossed lines (218 on 15 lines); repeated plaintext ('L: L: M: M:', 'l'Imperatrice', 'l'ordre') takes different groups with no constant difference. Values vary through the text; no fixed table, so no key to test on 6 Mar 1764.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Brice Dudout reports that Frederick II's letter of 3 March 1765 in this group is printed in the Politische Correspondenz vol. 24 no. 15458: one letter, a possible crib; Düben's own code letters unaffected. Not yet checked here.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -403,6 +412,15 @@
    "none"
   ],
   "provenance": "project",
-  "notes": "In progress: two systems; the 15 Nov 1765 letter carries a positioned contemporary decipherment (36/47 lines), but its values vary through the text (no fixed table), so no key has been rebuilt; system B (2,072 groups) is beyond the Python annealer (control not recovered)."
+  "notes": "In progress: two systems; the 15 Nov 1765 letter carries a positioned contemporary decipherment (36/47 lines), but its values vary through the text (no fixed table), so no key has been rebuilt; system B (2,072 groups) is beyond the Python annealer (control not recovered).",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "date": "2026-10-27",
+    "note": "Politische Correspondenz vol. 24 no. 15458 prints Frederick II's 3 March 1765 letter",
+    "source": "email to Daniel Bourdeau, 27 Oct 2026"
+   }
+  ]
  }
 }

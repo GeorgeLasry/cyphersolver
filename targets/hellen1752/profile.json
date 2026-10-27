@@ -155,7 +155,7 @@
     ],
     "sessions": 3,
     "first_date": "2026-09-19",
-    "last_date": "2026-09-20"
+    "last_date": "2026-10-27"
   },
   "solution": [
     {
@@ -271,6 +271,15 @@
       "kind": "verification",
       "what": "One-key check (George Lasry, 14 Oct 2026): the 1752, 1756 and 1763 code families are provisional and no code is identified, so distinct keys are not shown; the entry is not split and claims no shared key. To be split per code when one is identified.",
       "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "literature search",
+      "technique": [
+        "other"
+      ],
+      "what": "Brice Dudout reports that Fagel 5206 holds plain copies of about 40 of von der Hellen's 1752-53 reports but not the letters on these DECODE records: that lead is closed for them.",
+      "result": "ruled out"
     }
   ],
   "outcome": {
@@ -285,6 +294,15 @@
     "verification": [
       "none"
     ],
-    "notes": "Open; no cipher plaintext verified. Next: retrieve Fagel 5206 parallel decipherments. R2824 rejected as a Prussian key lead. Current access failure is not evidence of missing archives."
+    "notes": "Open; no cipher plaintext verified. Next: retrieve Fagel 5206 parallel decipherments. R2824 rejected as a Prussian key lead. Current access failure is not evidence of missing archives.",
+    "credits": [
+      {
+        "who": "dudout",
+        "role": "pointer",
+        "date": "2026-10-27",
+        "note": "Fagel 5206 checked: not these letters",
+        "source": "email to Daniel Bourdeau, 27 Oct 2026"
+      }
+    ]
   }
 }

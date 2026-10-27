@@ -158,3 +158,11 @@ formulaic sequences. A quick web search found no edition of the letter. **Not se
 Files: `wainut/check.py`, `em.py`, `letters.json` (pair list with scans), `runs.json` (aligned runs; the clear text
 is model transcription, not checked word by word), `code_marks.json`, `loo_marks.tsv`, `r1893_reading.tsv`,
 `r1893_edition.md`.
+
+## Brice Dudout's report (email of 27 Oct 2026)
+
+- The letter is not among the public scans of NA 1.01.02 inv. 6695.
+- The Fagel key books (NA 1.10.29 inv. 1257-1267) are online. None is Van Reede's, but **1261, 1263 and 1265 are of the
+  same family**: they describe null groups and "Begin des Briefs" / "Einde des Briefs" markers. That may explain some
+  unknown groups at the start and end of R1893. Next: check the opening and closing groups of R1893 (and of WAINUT's
+  decode) against the marker groups in those three books.

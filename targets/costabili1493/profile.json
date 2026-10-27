@@ -133,7 +133,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-20",
-  "last_date": "2026-10-20",
+  "last_date": "2026-10-27",
   "tools": [
    "Python urllib: authenticated DECODE image retrieval",
    "Pillow: manuscript previews",
@@ -158,6 +158,15 @@
    "kind": "verification",
    "what": "Compared dating clauses and photograph cards; retained source filenames and SHA-256 hashes; separated these clear letters from the earlier cipher correspondence.",
    "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Brice Dudout reports that every 1491-92 Costabili cipher despatch of catalogue 361 has a contemporary Este decipherment and that 1492 no. 8 is printed in Berzeviczy 1914. Concerns the six cipher despatches, not the three clear 1493 records of this folder. Not verified here.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -170,7 +179,15 @@
   "verification": [
    "none"
   ],
-  "credits": [],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "date": "2026-10-27",
+    "note": "contemporary Este decipherments of the 1491-92 despatches; Berzeviczy 1914",
+    "source": "email to Daniel Bourdeau, 27 Oct 2026"
+   }
+  ],
   "notes": "Direct manuscript inspection by this project, without an independent outside check. No decipherment or recovered key claimed."
  }
 }

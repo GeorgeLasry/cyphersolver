@@ -132,6 +132,12 @@ possible, and there is no key yet to test on 6 Mar 1764.
 (2,072 letters, 291 homophones) is still not recovered by homo.py (orders 4 and 5, chi-square and KL
 letter penalties, 1.5M moves): e-flood or gibberish. The real pooled text was not judged.
 
+## Brice Dudout's report (email of 27 Oct 2026)
+
+Catalogue 450: Frederick II's letter of 3 March 1765 in this group is printed in the *Politische Correspondenz*,
+vol. 24, no. 15458. That covers one letter only. Düben's own code letters (systems A and B above) are not affected. Next:
+identify which K 259 images hold the 3 March 1765 letter and compare them with the PC text as a crib for its system.
+
 ## Remaining gaps
 
 - System A: the 15 Nov 1765 gloss shows the values vary (above). Next: align the gloss word by word to its

@@ -155,3 +155,8 @@ their users.
   transcription and reading with key A).
 - `WORKLOG.md`: step log.
 - Images are not committed. The URLs are above. Survey notes stayed in the session scratchpad.
+
+## Brice Dudout's report (email of 27 Oct 2026)
+
+The Berlin part of catalogue 564 (GStA PK, I. HA GR Rep. 39 Nr. 289 and Nr. 58) is not online. He has written to the
+archive for a quote.

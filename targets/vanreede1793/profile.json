@@ -89,7 +89,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-20",
-  "last_date": "2026-10-21"
+  "last_date": "2026-10-27"
  },
  "solution": [
   {
@@ -172,9 +172,20 @@
   {
    "date": "2026-10-24",
    "kind": "verification",
-   "technique": ["other"],
+   "technique": [
+    "other"
+   ],
    "what": "Method checked after George Lasry (24 Oct 2026) separated key and text: stays not solved, because no key and no crib; a ciphertext-only attack on the code is not feasible.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Brice Dudout reports the letter is not in the public scans of NA 1.01.02 inv. 6695, and that the online Fagel key books 1.10.29 inv. 1261, 1263 and 1265 (same family, not Van Reede's) describe null groups and 'Begin/Einde des Briefs' markers that may explain unknown groups at the start and end. Not yet checked here.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -204,6 +215,13 @@
     "note": "PR #66: code rebuilt from 44 cipher/clear pairs in NA 1.01.02 inv. 6695 and applied to R1893; partial decode recorded as a proposal (leave-one-out 0.599 exact)",
     "date": "2026-10-21",
     "source": "https://github.com/dbourdeau/cyphersolver/pull/66"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "date": "2026-10-27",
+    "note": "Fagel key books 1261/1263/1265: nulls and begin/end markers",
+    "source": "email to Daniel Bourdeau, 27 Oct 2026"
    }
   ],
   "provenance": "mixed"
