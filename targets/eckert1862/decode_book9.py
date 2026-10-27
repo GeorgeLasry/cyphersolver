@@ -1,11 +1,11 @@
 """Eckert ledger mssEC 19 (War Department Ciphers Sent, 1864), pp. 1-7, decoded with Cipher Book No. 9.
 
-    python decode.py              writes mssEC19_p1-7_decryption.txt (T1-T11) and mssEC19_p1-7_unread_decode.txt (U1-U3)
-    python decode.py --controls   also writes controls.txt (the decode against the Official Records clear texts,
+    python decode_book9.py              writes decoded/mssEC19_p1-7.txt (T1-T11) and decoded/mssEC19_p1-7_U1-U3_unread.txt (U1-U3)
+    python decode_book9.py --controls   also writes decoded/mssEC19_p1-7_controls.txt (the decode against the Official Records clear texts,
                                   with the meanings shuffled among the code words as a control)
 
 The ledger copies each telegram after the code words were put in and before the route transposition, so the
-words are in reading order and only the code layer is open. cipher9_key_used.tsv gives the meaning of each code
+words are in reading order and only the code layer is open. key_book9_mssEC67.tsv gives the meaning of each code
 word used, read from the images of Cipher Book No. 9 (Huntington mssEC 67, item 1750). In the output a code word is
 replaced by [MEANING]; a time word by <time>; words after the signature (Applause/Abortion after "sig" or
 "signed", or followed by a time word) are check or null words, shown as {null: ...}. Words split by the volunteers with " = " (Ab = or = tion) are joined when the
@@ -29,7 +29,7 @@ def p(name):
 
 def load_key():
     code, time = {}, {}
-    with open(p('cipher9_key_used.tsv'), encoding='utf-8') as f:
+    with open(p('key_book9_mssEC67.tsv'), encoding='utf-8') as f:
         for r in csv.DictReader(f, delimiter='\t'):
             if re.fullmatch(r'[\d.]+ (a\.m\.|p\.m\.|M\.)', r['meaning']):
                 time[r['code_words'].lower()] = r['meaning']
@@ -42,7 +42,7 @@ def load_key():
 def telegrams():
     """[(label, [lines])] from the transcription, in order"""
     out, cur = [], None
-    with open(p('mssEC19_p1-7_transcription.txt'), encoding='utf-8') as f:
+    with open(p('transcription/mssEC19_p1-7.txt'), encoding='utf-8') as f:
         for ln in f:
             ln = ln.rstrip('\n')
             if ln.startswith('#') or ln.startswith('== p.') or not ln.strip():
@@ -117,14 +117,14 @@ def decode_tel(lines, code, time):
 
 def write(code, time):
     tels = telegrams()
-    files = {'T': ('mssEC19_p1-7_decryption.txt',
-                   'telegrams T1-T11, decoded with Cipher Book No. 9; see mssEC19_p1-7_reading.md for the sentences'),
-             'U': ('mssEC19_p1-7_unread_decode.txt',
+    files = {'T': ('decoded/mssEC19_p1-7.txt',
+                   'telegrams T1-T11, decoded with Cipher Book No. 9; see reading/mssEC19_p1-7.md for the sentences'),
+             'U': ('decoded/mssEC19_p1-7_U1-U3_unread.txt',
                    'telegrams U1-U3, NOT read: the No. 9 meanings give no sense here; shown for checking only')}
     results = {}
     for kind, (fname, what) in files.items():
-        out = [f'# mssEC 19 pp. 1-7: {what}.', '# python decode.py; key cipher9_key_used.tsv; transcription '
-               'mssEC19_p1-7_transcription.txt.',
+        out = [f'# mssEC 19 pp. 1-7: {what}.', '# python decode_book9.py; key key_book9_mssEC67.tsv; transcription '
+               'transcription/mssEC19_p1-7.txt.',
                '# Each ledger line, then -> the line with [code meanings], <time words> and {null: ...} words.', '']
         for label, lines in tels:
             if not label.startswith(kind):
@@ -145,7 +145,7 @@ def write(code, time):
 
 def or_texts():
     out, cur = {}, None
-    with open(p('or_clear_texts.txt'), encoding='utf-8') as f:
+    with open(p('contemporary/mssEC19_p1-7_OR.txt'), encoding='utf-8') as f:
         for ln in f:
             if ln.startswith('#'):
                 continue
@@ -174,7 +174,7 @@ def score(results, meanings_of):
 
 
 def controls(results, code):
-    lines = ['# Controls for decode.py (python decode.py --controls)', '']
+    lines = ['# Controls for decode_book9.py (python decode_book9.py --controls)', '']
     hit, tot = score(results, lambda w: code[w])
     lines.append(f'Real key: {hit} of {tot} code-word tokens of the nine printed telegrams have their meaning in the '
                  'printed clear text of the same telegram.')
@@ -194,7 +194,7 @@ def controls(results, code):
         tw = [m for kind, w, m in results[lab][2] if kind == 'time']
         printed = re.search(r'- ([\d.]+ (?:a\.m\.|p\.m\.|noon))', text)
         lines.append(f'  {lab:4s} ledger {tw[0] if tw else "(no time word)":12s} printed {printed.group(1) if printed else "?"}')
-    with open(p('controls.txt'), 'w', encoding='utf-8', newline='\n') as f:
+    with open(p('decoded/mssEC19_p1-7_controls.txt'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(lines) + '\n')
     print('\n'.join(lines))
 

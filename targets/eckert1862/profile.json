@@ -77,7 +77,7 @@
     "location": [
      "printed edition"
     ],
-    "source": "Contributed by WAINUT (27 Oct 2026). War of the Rebellion: Official Records, Ser. I vol. 32 pt. 2 pp. 244, 263-264 and vol. 33 pp. 488, 489, 497, 503, 518-519 print 9 of the 14 telegrams (T2, T4-T11) in clear (wainut/or_clear_texts.txt); T1 and T3 not found there.",
+    "source": "Contributed by WAINUT (27 Oct 2026). War of the Rebellion: Official Records, Ser. I vol. 32 pt. 2 pp. 244, 263-264 and vol. 33 pp. 488, 489, 497, 503, 518-519 print 9 of the 14 telegrams (T2, T4-T11) in clear (contemporary/mssEC19_p1-7_OR.txt); T1 and T3 not found there.",
     "partial": true
    },
    "length": {
@@ -85,7 +85,7 @@
     "distinct": 398,
     "unit": "mixed",
     "measured": true,
-    "file": "wainut/mssEC19_p1-7_transcription.txt"
+    "file": "transcription/mssEC19_p1-7.txt"
    },
    "transcription": {
     "by": "published",
@@ -243,12 +243,18 @@
   },
   {
    "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution, in review: D. H. Bates, Lincoln in the Telegraph Office (1907; archive.org cu31924032766846, OCR) searched for T1, T3 and Cipher No. 9: T1 and T3 not in it; No. 9 not discussed (twelve editions described in general, with a No. 12 example and a pointer to Plum).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
    "kind": "control",
    "technique": [
     "statistical test",
     "plaintext matching"
    ],
-   "what": "WAINUT contribution: wainut/decode.py --controls: for 64 of 68 code-word tokens of the nine printed telegrams the meaning appears in the printed text of the same telegram (misses: rank words); meanings shuffled among the code words, 500 runs: 4-24 (median 14). Time words match the printed time in 6 of 8.",
+   "what": "WAINUT contribution: decode_book9.py --controls (decoded/mssEC19_p1-7_controls.txt): for 64 of 68 code-word tokens of the nine printed telegrams the meaning appears in the printed text of the same telegram (misses: rank words); meanings shuffled among the code words, 500 runs: 4-24 (median 14). Time words match the printed time in 6 of 8.",
    "result": "worked"
   },
   {
@@ -263,7 +269,7 @@
   {
    "date": "2026-10-27",
    "kind": "reading",
-   "what": "WAINUT contribution: T1-T11 written as sentences (wainut/mssEC19_p1-7_reading.md), read_share 1.0; U1-U3 kept as a decode, not read (wainut/mssEC19_p1-7_unread_decode.txt).",
+   "what": "WAINUT contribution: T1-T11 written as sentences (reading/mssEC19_p1-7.md), read_share 1.0 (v10_relabel.py); U1-U3 kept as a decode, not read (decoded/mssEC19_p1-7_U1-U3_unread.txt).",
    "result": "partial"
   }
  ],
@@ -315,27 +321,21 @@
    {
     "doc": "mssEC19-p1-7",
     "label": "mssEC 19 pp. 1-7, telegrams T1-T11 (27 Jan - 5 Feb 1864), decoded with Cipher Book No. 9 (WAINUT)",
-    "transcription": "wainut/mssEC19_p1-7_transcription.txt",
-    "decryption": "wainut/mssEC19_p1-7_decryption.txt",
-    "reading": "wainut/mssEC19_p1-7_reading.md",
-    "contemporary": "wainut/or_clear_texts.txt",
+    "transcription": "transcription/mssEC19_p1-7.txt",
+    "decryption": "decoded/mssEC19_p1-7.txt",
+    "reading": "reading/mssEC19_p1-7.md",
+    "contemporary": "contemporary/mssEC19_p1-7_OR.txt",
     "language": "en",
     "state": "read",
     "read_share": 1.0,
-    "reading_review": {
-     "grade": "A",
-     "by": "WAINUT (AI language-model agent; a second agent re-read the key images and decoded independently)",
-     "date": "2026-10-27",
-     "note": "Eleven War Department telegrams as sentences; nine agree with the clear texts printed in the Official Records, apart from three rank words and 'and burning' in T4."
-    },
     "summary": "Halleck's War Department telegrams of late January and early February 1864: Ewell's brigades leaving for Johnston or Longstreet, Johnston's detachment against Sherman's movements in Mississippi, troops and cavalry sent to Harper's Ferry and West Virginia against Early's raid, and Butler left free to relieve North Carolina; plus two staff telegrams to Fort Monroe (Baker's cavalry to Yorktown; Parker's cavalry and recruits from Maine) not found in print.",
-    "note": "Contributed by WAINUT (27 Oct 2026). read_share from research/reading_audit/v2_score.py (no explicit holes in 618 words). The contemporary slot holds the OR clear texts of T2 and T4-T11."
+    "note": "Contributed by WAINUT (27 Oct 2026). This entry covers T1-T11 only, which read whole; the document mssEC19-p1-7 as a whole is read in part, because U1-U3 (next entry) are not read: 11 of its 14 telegrams. read_share measured with research/reading_audit/v10_relabel.py (665 words, no holes). Reading grade left to a reviewer. The contemporary slot holds the OR clear texts of T2 and T4-T11, so 9 of the 11 telegrams are earlier solutions; the new step is tying Cipher Book No. 9 to mssEC 19."
    },
    {
     "doc": "mssEC19-p1-7",
     "label": "mssEC 19 pp. 4, 6, 7, telegrams U1-U3 (1 and 5 Feb 1864), not read (WAINUT)",
-    "transcription": "wainut/mssEC19_p1-7_transcription.txt",
-    "decryption": "wainut/mssEC19_p1-7_unread_decode.txt",
+    "transcription": "transcription/mssEC19_p1-7.txt",
+    "decryption": "decoded/mssEC19_p1-7_U1-U3_unread.txt",
     "language": "en",
     "state": "decoded, not read",
     "note": "Contributed by WAINUT (27 Oct 2026). Cipher Book No. 9 gives no sense for these three telegrams; shown for checking only."
@@ -343,7 +343,7 @@
   ],
   "key_file": [
    "key_book1_mssEC43.tsv",
-   "wainut/cipher9_key_used.tsv"
+   "key_book9_mssEC67.tsv"
   ]
  }
 }

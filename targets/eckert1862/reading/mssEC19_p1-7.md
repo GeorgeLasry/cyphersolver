@@ -1,7 +1,7 @@
 # mssEC 19 pp. 1-7 (War Department Ciphers Sent, 27 Jan - 5 Feb 1864): telegrams T1-T11 as sentences
 
-Code words are resolved with Cipher Book No. 9 (cipher9_key_used.tsv) and written in plain words; the line-by-line
-decode is mssEC19_p1-7_decryption.txt. The telegrams are in English, so no translation is given. The check words at
+Code words are resolved with Cipher Book No. 9 (key_book9_mssEC67.tsv) and written in plain words; the line-by-line
+decode is decoded/mssEC19_p1-7.txt. The telegrams are in English, so no translation is given. The check words at
 the end of a telegram ("very warm here", "raining", "what a disagreeable day") are left out. The ledger's odd
 spellings (temper = rarely, Harp hers Very, Commune = nick = eight, Capt your), probably meant to disguise the words
 on the wire, are written as the words they stand for. Each heading gives the operator or office the ledger names and
@@ -62,7 +62,7 @@ he can and to communicate directly with you by telegraph. Signed Halleck, noon.
 
 ## Notes
 
-- Ranks are given as the code words give them. Where the Official Records print the same telegram (or_clear_texts.txt)
+- Ranks are given as the code words give them. Where the Official Records print the same telegram (contemporary/mssEC19_p1-7_OR.txt)
   they differ in three places: T4 Village = Major, where OR has "Brig. Gen. K. Garrard"; T8 Vernon Lockwood and
   Vermin Kelly, and T10 Vernon Kelly (= Major General), where OR has only "General" (both men were brigadier
   generals). The clerk seems to have used Vernon/Vermin loosely for "General".
