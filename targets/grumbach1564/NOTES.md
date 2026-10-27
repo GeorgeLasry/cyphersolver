@@ -96,8 +96,17 @@ their users.
   the date read "…64" may be 1566.
 - **Check.** An independent shape transcription (`f307_runs.txt`, R4 `EozquoyfyubEofq`) decodes through the same sign
   mapping to "auh·rueter laut·", the agent's R4.
-- **Share.** About 363 letter signs, nulls not counted. About 82% give sense including tentative words, 71% counting
-  firm words only. These are hand counts, not yet measured from a reading file.
+- **Pass 2 (27 Oct).** Three groups were resolved:
+  - the "gein" group is **sein** (s/g are confusable shapes): "der obersten namen benent sein muegt";
+  - **Leuchtenburg** on 307v (Ortloff names Mandelslohe's goods "zu Leuchtenburg und Dornburg");
+  - the name sign after "von" on 307v l. 15 is key A's sign for **Herzog Johann Wilhelm** (Y over $). The
+    signature's barred Y is Ernst von Mandelslo.
+- **Share, measured** (`f307_reading.tsv`, `measure307.py`): 381 signs, nulls excluded.
+  - firm: 244 (64.0%)
+  - tentative: 84 (22.0%)
+  - open: 53 (13.9%)
+  
+  **86.1% give sense.** This is below the 95% bar, so the letter is read in part.
 
 ## Remaining gaps
 
@@ -105,14 +114,17 @@ their users.
   - signs merged or split in the transcription (ω/ϖ, η/y, σ/6, 8/ξ/ζ are close in this hand);
   - homophones, since the cribs already need two signs for a and possibly v;
   - two-digit code words (23 groups) with no key.
-- ff. 307r-v: read in part with key A. Still open:
-  - the "?llaten" group after "ich" (R8, R14, twice);
-  - the "gein" group (Λγμλ, R7, V3);
-  - the start of V1, the middle of V3, the tail of R13 and the margin note;
-  - the name sign after "von" on 307v l. 15;
-  - places where б could be c or l, decided by context only.
+- ff. 307r-v: read in part with key A, 86.1% measured. Still open:
+  - `ꝩ66ℓfγλ` "Bllaten" (twice, after "ich", R8 and R14; 14 signs). ꝩ is on key A's null list, but it recurs at the
+    start of the same group, so it is probably a letter or a name sign here. A word or name not yet found.
+  - R8 "heb?u?ersen" (11 signs).
+  - R13 tail "seiul".
+  - single unclear signs (R8, R10, R14, V3, V4).
+  - **Blocked by the binding:** the margin note on 307r l. 3 ("…rmiunden", starts in the gutter) and V1 "muchau"
+    (runs into the gutter). These need the original or a scan of the opened gutter.
   
-  These are workable. They need a second sign-level pass and a reading file, then a measured share.
+  The tentative words (Reuter, bevelh, statt, sehr, Leuchtenburg, gehalt) still need a third check at the sign
+  level.
 - f. 304r: the [control](control304.py) shows the solver works at this length with homophones, so the failure lies
   in the transcription or the system. Code numbers take endings (`57 ν`, `57 νφ`, `57 ψ`). No key in the file fits:
   key A, the Baumgartner key and the f. 281r Latin homophonic key were all tested.

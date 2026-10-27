@@ -44,13 +44,14 @@
     "source": "Clear letter with about ten cipher runs; no glosses."
    },
    "length": {
-    "tokens": 363,
+    "tokens": 381,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "f307_reading.tsv"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "f307_keyA.md (sign-level against key A); f307_runs.txt (shape pass)",
+    "source": "f307_keyA.md (pass 1, sign-level against key A), f307_reading.tsv (pass 2, word by word)",
     "image_quality": "good",
     "notes": "Hand count of letter signs, nulls excluded; c/l and s/g/w shapes partly decided by context."
    },
@@ -220,11 +221,21 @@
    ],
    "what": "Sign-level transcription of the f. 307 runs against key A; read in part (~82% tentative, 71% firm, hand count); cross-checked on R4 against an independent transcription.",
    "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "Pass 2: gein = sein, Leuchtenburg, name sign = Herzog Johann Wilhelm; reading file measured: 381 signs, 86.1% give sense (64.0% firm).",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "ff. 307r-v read in part with key A, filed in the same volume (ff. 279r/287r/305r) and docketed as the Johann Friedrich/Grumbach/Ditmarsch alphabet; f. 304r (1553) not solved: no key in the file fits and the ciphertext-only attempt has not converged.",
+  "method_basis": "ff. 307r-v read in part (86.1% of 381 signs, measured) with key A, filed in the same volume (ff. 279r/287r/305r) and docketed as the Johann Friedrich/Grumbach/Ditmarsch alphabet; f. 304r (1553) not solved: no key in the file fits and the ciphertext-only attempt has not converged.",
   "contribution": [
    "transcription",
    "catalogue correction",
@@ -232,7 +243,7 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 0.44,
+  "fraction_read": 0.47,
   "verification": [
    "none"
   ],
