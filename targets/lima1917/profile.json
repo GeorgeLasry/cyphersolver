@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "target": "lima1917",
+ "title": "German Minister at Lima (Perl) cipher telegrams, May 1917 - Jan 1918 (NARA RG 59, 862.20223)",
+ "documents": [
+  {
+   "id": "A",
+   "shelfmark": "NARA RG 59, Central Decimal File 1910-29, 862.20223, sub-nos. 4-99 (known only from M973 roll 207 purport list)",
+   "date": "1917-06",
+   "year": 1917,
+   "country": "Peru",
+   "route": "German Legation Lima <-> German legations Santiago, Buenos Aires, Montevideo, Mexico (copies obtained by US Legation Lima, relayed to London)",
+   "language": "German (expected)",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "London (Room 40 via US Embassy) cabled the substance of most batches at the time; verbatim texts not located.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 0,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "no images",
+    "notes": "Not digitised: the 862.20223 file is not among the scanned frames. Nothing transcribed."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "unknown: the message has not been seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "notes": "symbol_kind and key_order are placeholders: the schema has no 'unknown' value for them. Nothing about the system is known."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Room 40 decrypts, substance only, per the M973 purport list",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [],
+  "attack": "none",
+  "human_role": "Pasted the catalogue task; no other input.",
+  "tools": [
+   "NARA catalog (M973 purport list via catalogue record)",
+   "web search"
+  ],
+  "models": [
+   "claude-sonnet-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "862.20223 is not among the scanned M973 frames; only the purport list (roll 207 frames 1008-1014) is online. No ciphertext reachable.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Web search on Lima/Perl/Room 40 1917 and on the file number 862.20223: no edition, decipherment or mention. FRUS 1917 Supp. and UK HW 7/ADM 137 not searched.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "verification": [
+   "none"
+  ],
+  "contribution": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "all telegrams",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "notes": "Not attempted on the ciphertext: the file is not scanned. Next: NARA College Park request, UK Room 40 decrypts, FRUS 1917."
+ }
+}
