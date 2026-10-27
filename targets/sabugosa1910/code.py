@@ -114,5 +114,5 @@ if '--write' in sys.argv:
     rows = ['group\tvalue\tgrade\tsource']
     for g in sorted(values, key=int):
         rows.append(f'{g}\t{values[g][0]}\t{values[g][1]}\t{values[g][2]}')
-    (HERE / 'code_values.tsv').write_text('\n'.join(rows) + '\n', encoding='utf-8')
+    (HERE / 'code_values.tsv').write_bytes(('\n'.join(rows) + '\n').encode('utf-8'))  # LF on every platform
     print('\nwrote code_values.tsv')

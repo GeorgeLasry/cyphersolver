@@ -271,7 +271,7 @@ if __name__ == '__main__':
         rows.append('\t'.join([g, ' | '.join(vals), str(len(tab[g])), ','.join(sorted(set(d for _, d, _, _ in tab[g]))),
                                ''.join(sorted(set(f[0] for _, _, f, _ in tab[g] if f))),
                                '; '.join(sorted(set(n for *_, n in tab[g] if n)))]))
-    (HERE / 'code_values.tsv').write_text('\n'.join(rows) + '\n', encoding='utf-8')
+    (HERE / 'code_values.tsv').write_bytes(('\n'.join(rows) + '\n').encode('utf-8'))  # LF on every platform
     tokens = sum(len(v) for v in tab.values())
     unread = [(g, d) for g, occ in tab.items() for v, d, f, _ in occ if f == 'x']
     print(f'\n3. code values: {len(tab)} distinct groups, {tokens} code items; written to code_values.tsv')

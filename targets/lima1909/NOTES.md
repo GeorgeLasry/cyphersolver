@@ -42,10 +42,12 @@ the strips; the stamps read 27 NOV 09, and the dates fit together: m0011 is date
 (30th) complains of no answer to "Saturday's telegram" and says the King leaves "the day after tomorrow" (2 Dec);
 m0007 (2 Dec) thanks him for agreeing.
 
-**Word count.** On six of the seven Paris forms, code items + clear words + a constant 9 for the address equal the
-taxed count of the header (`groups.py`, part 2). m0009 is one short, and the office noted "(Correction suivra pour mot
-qui manque)"; m0020 gives 83, the figure the receiver pencilled over the header's 93; m0018 is one short with all 91
-groups checked against the scan [?]. The address constant is the only free figure. So the transcriptions are complete.
+**Word count.** On four of the seven Paris forms (m0005, m0007, m0011, m0014), code items + clear words + a constant
+9 for the address equal the taxed count of the header (`groups.py`, part 2). m0020 gives 83, the figure the receiver
+pencilled over the header's 93. m0009 is one short, and the office noted "(Correction suivra pour mot qui manque)".
+m0018 is one short although its 91 groups were checked one by one against the scan; the missing word is not found.
+The address constant is the only free figure. So five transcriptions agree with the count, and m0009 and m0018 may
+each lack one word, m0009's probably in transmission.
 
 ## 3. The readings
 
@@ -81,8 +83,8 @@ Medina para o trem especial" (the first pass had "Medina, na onde").
 - **Two-part (randomised).** The rank correlation between group number and the alphabetical order of the value,
   over 227 cleanly glossed groups, is 0.068; 30% of 2000 shuffles reach it. Every first figure carries values from
   almost the whole alphabet. So the code is not alphabetical, and it cannot be extended by bracketing.
-- **Repeated groups agree.** Eight groups recur with two forms of one word (teve/tem, terá/teria, comboio/comboios,
-  relação/relações, 1 hora/uma hora). The one open point is 43243: "da" four times (m0005, m0007, m0009, m0020),
+- **Repeated groups agree.** Seven groups recur with two forms of one word or phrase (Em/em, teve/tem, terá/teria,
+  comboio/comboios, relação/relações, 1 hora/uma hora, Pres. Republica/do P. Republica). The one open point is 43243: "da" four times (m0005, m0007, m0009, m0020),
   but in m0011 line 7 its gloss looks like "dep.."; it is not read there.
 - **Not the code of the sibling folders.** No group is shared with King Carlos's code of 1903
   (`targets/carlos1903`), Sabugosa's (`targets/sabugosa1910`), Manuel II's of August 1910 (`targets/manuel1910`) or
@@ -128,7 +130,8 @@ Medina para o trem especial" (the first pass had "Medina, na onde").
 - [x] print: one web search (Venceslau de Lima, telegrams to Manuel II, 1909 journey, Medina, Bussaco): nothing on these
   telegrams; the published correspondence of Manuel II was not searched
 - [x] key-rebuild: 261 values from the glosses; the code is two-part (order test), so no bracketing of the open groups
-- [x] retry: every open group was looked up among the 261 values; none recurs with a gloss elsewhere
+- [x] retry: every open group was looked up among the 261 values; none recurs with a gloss elsewhere except 43243,
+  which is "da" in four telegrams but carries a different gloss in m0011 and stays open there
 
 ## Files
 
