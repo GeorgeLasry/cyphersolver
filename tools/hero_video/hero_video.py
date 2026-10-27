@@ -21,6 +21,7 @@ Storyboard (seconds; SCENES below is the source of truth, and audio.py follows i
 """
 import argparse
 import html
+import json
 import math
 import random
 import re
@@ -36,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from assets import FLAMES, FONT, SIGNS, SPRITES, parse  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
+HERE = Path(__file__).resolve().parent
 DOCS = ROOT / 'docs'
 W, H, FPS, DUR = 320, 180, 30, 60.0
 SCALE = 4
@@ -285,6 +287,12 @@ def ledger():
     years = [y for y, _ in L['dots']]
     L['first'], L['last'] = min(years), max(years)
     return L
+
+
+def shown(L):
+    """What a render puts on screen from the site's data; update.py compares it with the site to see if it is stale."""
+    return {k: L[k] for k in ('entries', 'keys', 'silence', 'open', 'partial', 'first', 'last')} | {
+        'picked': L['cat_rows'][0][0]}
 
 
 def lists():
@@ -1321,6 +1329,8 @@ def main():
     if ff.wait():
         sys.exit('ffmpeg failed')
     Image.fromarray(up(render(args.poster_at))).save(args.poster, optimize=True)
+    if Path(args.out).resolve() == (DOCS / 'hero.mp4').resolve():
+        (HERE / 'shown.json').write_text(json.dumps(shown(LG), indent=1) + '\n', encoding='utf8')
     print(f'wrote {args.out} and {args.poster}')
 
 

@@ -1,0 +1,81 @@
+# Keep the front-page video current. Once a week, tools/hero_video/update.py compares what the video shows (the
+# rounded counts, the timeline's span, the catalogue's top cipher) with the site. If anything has moved, it
+# re-renders the video from the repository (the narration takes are committed, so no voice model is needed) and
+# this job opens a pull request for review. A narration line whose spoken number the ledger has outgrown is flagged
+# in an issue instead, because re-recording needs the voice model on a local GPU (tools/hero_video/README.md).
+#
+# Opening the pull request needs "Allow GitHub Actions to create and approve pull requests" (Settings > Actions >
+# General). Without it the branch is still pushed and an issue links to it.
+name: Hero video
+
+on:
+  schedule:
+    - cron: '23 6 * * 1'        # Mondays
+  workflow_dispatch:
+
+permissions:
+  contents: write               # the update branch (main itself is protected)
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: hero-video
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install the renderer's tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q numpy pillow scipy
+
+      - name: Check, and re-render if the video is behind
+        id: check
+        env:
+          PYTHONUTF8: '1'
+        run: python tools/hero_video/update.py --render --notes "$RUNNER_TEMP/notes.md"
+
+      - name: Open a pull request
+        if: steps.check.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="hero-video-update-$(date -u +%Y-%m-%d)"
+          title="Hero video: re-render with the current ledger ($(date -u +%-d\ %b\ %Y))"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898+github-actions[bot]@users.noreply.github.com'
+          git checkout -q -b "$branch"
+          git add docs/hero.mp4 docs/hero_poster.png docs/index.html tools/hero_video/shown.json
+          git commit -q -m "$title"
+          git push -q -f origin "$branch"
+          # an older weekly update still open is superseded by this one
+          for n in $(gh pr list --state open --json number,headRefName \
+                     --jq '.[] | select(.headRefName | startswith("hero-video-update-")) | select(.headRefName != "'"$branch"'") | .number'); do
+            gh pr close "$n" --delete-branch --comment "Superseded by this week's update."
+          done
+          if gh pr create --base main --head "$branch" --title "$title" --body-file "$RUNNER_TEMP/notes.md"; then exit 0; fi
+          echo "::warning::Actions may not open pull requests here; opening an issue with the branch instead"
+          compare="https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1"
+          { cat "$RUNNER_TEMP/notes.md"; echo; echo "Open the pull request: $compare"; } > "$RUNNER_TEMP/issue.md"
+          gh issue create --title "$title" --body-file "$RUNNER_TEMP/issue.md"
+
+      - name: Flag the narration
+        if: steps.check.outputs.narration == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title='Hero video: a narration line needs re-recording'
+          if [ "$(gh issue list --state open --search "\"$title\" in:title" --json number --jq length)" = 0 ]; then
+            gh issue create --title "$title" --body-file "$RUNNER_TEMP/narration.md"
+          fi

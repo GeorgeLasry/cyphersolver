@@ -1,5 +1,5 @@
 {
-  "_about": "Voiceover lines for the hero video. voice.py renders a few takes of each line ('say' is the spelling the model is given, 'seeds' fixes a take); 'take' is the one used, checked with Whisper, and 'at' is when its speech begins, in seconds of the video (audio.py trims the take's lead-in and places it there). Counts are said roundly so the narration stays true as the ledger grows.",
+  "_about": "Voiceover lines for the hero video. voice.py renders a few takes of each line ('say' is the spelling the model is given, 'seeds' fixes a take); 'take' is the one used, checked with Whisper, and 'at' is when its speech begins, in seconds of the video (audio.py trims the take's lead-in and places it there). Counts are said roundly so the narration stays true as the ledger grows. 'holds' gives, for a line that speaks a number, the range of the site's count in which it still sounds right (true from the first, understated from the second); update.py flags the line outside it.",
   "lines": [
     {
       "id": "a1",
@@ -48,7 +48,13 @@
       "id": "e1",
       "at": 29.1,
       "text": "Over five hundred entries, across six centuries.",
-      "take": 1
+      "take": 1,
+      "holds": {
+        "entries": [
+          500,
+          1000
+        ]
+      }
     },
     {
       "id": "e2",
@@ -58,7 +64,13 @@
       "say": "Well over a hundred keys recovered. Every attempt is recorded, failures too, for a study with George Lasri on how AI performs.",
       "seeds": [
         500
-      ]
+      ],
+      "holds": {
+        "keys": [
+          100,
+          1000
+        ]
+      }
     },
     {
       "id": "f1",
