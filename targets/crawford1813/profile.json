@@ -211,7 +211,8 @@
     "role": "pointer",
     "note": "PJM editors' notes (Madison/03-07-02-0011, 03-06-02-0671): the 3 Sept 1813 letter was in cypher; summary of its subjects, no deciphered text",
     "source": "https://founders.archives.gov/documents/Madison/03-07-02-0011"
-   }
+   },
+   {"who": "dudout", "role": "verification", "date": "2026-10-27", "note": "independent transcription and reading (1,330 of 1,371 groups); code validated on the interlinear of the 3 Sept despatch; date argued as 15 Aug 1813 from the legation register (dudout/)"}
   ],
   "gaps": [
    {
@@ -237,7 +238,8 @@
     "read_share": 0.915,
     "summary": "The new US minister in Paris explains why he has not opened official talks with Napoleon's foreign minister Bassano, who is with the Emperor at Dresden: Mr. Warden acts as the channel at Paris, a minister need not follow a court abroad, and Crawford has been painted as impetuous; the Russian mediation is unwelcome to Napoleon. He then judges Joel Barlow's secret plan to fund indemnities from trade licences useless, since licensed imports have glutted the American market.",
     "note": "read_share = 1 - hole rate of research/reading_audit/v2_score.py (0.085)."
-   }
+   },
+   {"doc": "crawford1813", "label": "Crawford to Monroe, Paris, 15 August 1813: independent reading by Brice Dudout", "transcription": "dudout/transcription.txt", "decryption": "dudout/decryption.txt", "reading": "dudout/reading.md", "language": "en", "state": "read", "summary": "In Paris since July 1813, the new United States minister waits for Napoleon, who stays at Dresden during the armistice. On Napoleon’s feast day he writes to the Secretary of State entirely in code: why he is not yet opening the negotiation, what he thinks of Bassano and of the Russian mediation, and above all the “plan of indemnities” he has just obtained privately from the foreign ministry — and the secret arrangement of his predecessor Joel Barlow with capitalists, which he decides to keep “entirely out of view”."}
   ],
   "key_file": "../jqa/code_table.tsv",
   "notes": "Contributed by WAINUT (catalogue 652). Same code as ../jqa; nothing there is changed. About 89% of the groups were read once only; a second full reading against the frames is still to do. Proposed table changes (not applied) are in NOTES.md."

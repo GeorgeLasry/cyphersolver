@@ -133,3 +133,7 @@ Queued as a `jqa` follow-up for the maintainer (not applied here). The most impo
 - `crawford1813_transcription.txt`, `crawford1813_decryption.txt`, `crawford1813_reading.md`
 - `decode.py`: runs `../appleton1823/decode.py` (which applies `../jqa/code_table.tsv`) on this folder's files;
   `--controls` runs the wrong-key controls (standard library)
+
+## Independent reading by Brice Dudout (27 Oct 2026)
+
+1,330 of 1,371 groups read with the jqa table and a graded overlay; the legation register dates this letter 15 August 1813 (despatch no. 3, sent 19 August), not 3 September. See `dudout/README.md`.
