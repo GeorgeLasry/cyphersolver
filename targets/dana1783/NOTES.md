@@ -1,0 +1,140 @@
+# Francis Dana to Robert R. Livingston, St Petersburg, 6 Apr 1783 (O.S.), No. 23: the eight cipher lines
+
+Status: contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is read in part
+(four code groups have no value). The site page and the ledger rows are left to the maintainer.
+
+Catalogue 485. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents.
+Every number was read twice from the NARA scan, the second time independently, and the decryption was checked
+against the image.
+
+## 1. The document
+
+- **Source.** NARA RG 360, Papers of the Continental Congress, item 89 vol. 2 (microfilm M247), catalogue
+  [naId 502963402](https://catalog.archives.gov/id/502963402), "Letters from Ralph Izard, Henry Laurens, John Jay and
+  Francis W. Dana 1777-84: Volume 2". The letter runs from MS p. 727 (digital object 312, heading
+  "St Petersbourg April 6th 1783. O.S.", docket "(Tript. No. 23)") to p. 730 (object 315,
+  [scan](https://catalog.archives.gov/medialz/partners/dc-metro/rg-360/M247/pcc_404461_0001/407507.jp2)), where the
+  cipher stands.
+- **Which copy.** The docket says this is the **triplicate** of No. 23. The original and the duplicate were not looked
+  for.
+- **Date.** 6 April 1783 Old Style is 17 April 1783 New Style. Wharton, *Revolutionary Diplomatic Correspondence*
+  VI (1889), pp. 381-383, prints the same letter as "No. 23. St. Petersburgh, April 17, 1783". The catalogue entry
+  gives 6 Apr 1783; both dates are right.
+- **Context.** Dana had told the vice-chancellor of his mission on 7 March and had no answer. The clear text ends:
+  "I have only to pray Congress would be pleased to suspend their judgment upon this matter ... All may yet end as we
+  wish; it may end otherwise." Then come eight lines of numbers. Wharton prints "(Here follow eight lines of cipher.)".
+- **The cipher is Dana's own.** P.S. in clear: "I make use of the Cypher I sent you by Mr. Adams's Son, having laid
+  yours aside for the reason there mentioned." On 23 Sept 1782 (Wharton V, pp. 752-754) Dana had written that
+  Livingston's cipher was "intolerably tedious and so liable to errors" and that he would "prepare another scheme"
+  and send it to Holland by Mr. Adams' son, John Quincy Adams, then his secretary.
+- **A difference from Wharton.** The P.S. on the scan reads "Your printed one has come to hand with your letter".
+  Wharton prints "has not come to hand". No "not" is visible on the scan.
+
+## 2. The system and the key
+
+Periodic numerical table of the type James Lovell used. The alphabet has 27 signs, a..z and &. A letter p under key
+letter K is written (p - K) mod 27 + 1, so the key letter itself is 1. The key word is **WIN**, used letter by letter
+in a cycle of three. The full table is in `key.txt`. Numbers above 27 (29, 31, 137, 168) are code groups. Their
+meanings are not known: the code list was not found.
+
+How it was found: the numbers run 1-27 apart from four groups, which suggests a 27-sign table. An index-of-coincidence
+test over periods (in the solver's working scripts, not included) gave English only for alphabet size 27 and period 3.
+The key letters then followed from the best shifts. `decrypt.py` reproduces the decryption from `transcription.txt`.
+
+## 3. Transcription and interventions
+
+`transcription.txt` gives 212 tokens (measured): 204 fully visible letter numbers, 4 code groups, and 4 numbers cut by
+the edge of the microfilm frame (lines 1, 3, 4 and 6) with only their first digit visible.
+Line 5 ends with a third "1" stroke at the edge. The ink blot in line 3 is not a number.
+
+The decryption needs these interventions. All are written into the working text in `decrypt.py`, which checks that,
+with the annotations removed, it gives back the transcription.
+
+- **Three slips by Dana**, each in a W position: line 1 "23" and line 2 "12" (in "any") were enciphered with N; line 6
+  "24" (in "influence") with I. With W they would give r, g and s.
+- **One skipped key position** in line 5, after "irresistab". Without the skip the next letters are g/w; with it, "le".
+- **Four cut numbers completed**, each matching its visible first digit: 1| = 11 (s), 1| = 15 (a), 2| = 27 (m),
+  2| = 26 (l).
+- **Three letters supplied** at line ends where nothing is visible: o (20) at the end of line 2, f (11) at the end of
+  line 5 (a partial stroke is visible there), n (1) at the end of line 7. The key phase of the next line requires
+  exactly one position in each case. Line 2 shows no cut, so there Dana may simply have left the letter out.
+- **Code groups and the key.** After 29 and 137 the key continues with the next letter. After 31 and 168 the next
+  letter takes the key two places on (or, equally, one place back). Either the groups had their own rule, or this is
+  one more irregularity. It changes no letter. Within these rules the key phase runs on unbroken across all eight lines.
+
+Of 211 letter positions, 201 decode directly and 10 need one of the interventions above.
+
+## 4. The reading
+
+Line by line in `decryption.txt` (output of `python decrypt.py`), as sentences in `reading.md`:
+
+> [29]n an [31] like this, which is not guided by any settled principles or system, you can be certain of no
+> measure. What the [137] adopt in this hour may be opposed by an irresistible influence in the next. In short,
+> properly speaking, there is no [168] here. Hence my present difficulty.
+
+The plaintext is English. Dana writes "irresistable"; the reading normalises the spelling. Context suggests readings
+for the code groups ("In an [empire? court?] like this", "what the [ministers? court?] adopt", "there is no
+[system? ministry?] here"), but none is proposed as a value.
+
+What the passage says: Dana explains why he cannot predict the answer to his mission. At the Russian court nothing is
+settled by principle, and what one party adopts may be overturned by another influence the next hour. The letter
+dates from the weeks when Catherine II gave no answer to Dana and had just accepted the invitation to mediate the
+definitive peace.
+
+## 5. Controls (`python decrypt.py --controls`)
+
+Scores are mean letter-bigram log-probabilities, with bigrams counted from the repository's English word list
+(`lang/lexicons/en.json.gz`).
+
+- The decryption with the interventions scores **-2.739**.
+- 200 random wrong period-3 keys with the same alignment: best -4.431, mean -6.102.
+- All 19,683 period-3 keys on the raw stream (the 204 fully visible letter numbers, no corrections, key running
+  straight on): WIN ranks second (-4.680) and its rotation NWI tenth. The best key, WIP (-4.652), differs only in the
+  third letter: the uncorrected phase breaks at the code groups shift the third position. The median key scores
+  -6.167.
+- 200 shuffles of the raw stream under WIN: best -4.874, mean -5.513.
+
+An independent check of 27 Oct 2026 (separate re-reading of the scan, separate decryption script, Federalist bigram
+model) gave the same plaintext and the same controls pattern: blind search over all period-3 keys on the raw stream
+put the rotations of WIN at ranks 0 and 8.
+
+## 6. Prior work
+
+- Wharton VI (1889), pp. 381-383, prints No. 23 with "(Here follow eight lines of cipher.)" and no decipherment.
+- The Madison Papers (note to JM to TJ, 11 Aug 1783, Founders Online Madison/01-07-02-0151, quoted in the catalogue)
+  say only 8 lines were encoded and that the passage is not decoded in Wharton.
+- Wharton VI, p. 464, has the footnote "The key to Mr. Dana's cipher is missing." It belongs to a **different**
+  letter, Dana to John Adams, St Petersburg, 1 June 1783, and to the figures 121 and 134.571 in it ("Most probably the
+  figures stand for Dr. Franklin and the French ministry"). It says nothing about No. 23.
+- Two web searches for phrases of the plaintext found no printed decipherment. The Papers of John Adams (vol. 13)
+  describe a separate Livingston nomenclator endorsed "Mr Dana's Papers"; Dana's P.S. says he did not use
+  Livingston's cipher here.
+- Not checked: the original and duplicate of No. 23 elsewhere in the PCC (one may carry a decipherment), the Hawkins
+  transcripts (naId 2316037), Giunta's *The Emerging Nation*, and the Dana Papers at the Massachusetts Historical
+  Society. **No earlier solution was found, but the search was not exhaustive.**
+
+## Remaining gaps
+
+- Code groups 29, 31, 137 and 168 (4 of 215 tokens) - blocker: no-key-material. No code list for Dana's 1782 scheme
+  was found, and no other letter in this cipher has been decrypted to give more occurrences.
+- The letters supplied at the ends of lines 2, 5 and 7 rest on the key phase only - blocker: needs-physical-access.
+  The frame edge cuts the lines on the microfilm; the original sheet (or the original and duplicate of No. 23) would
+  settle them.
+
+## Escalation
+
+- [x] siblings: the clear P.S. and Dana's letter of 23 Sept 1782 identify the cipher as his own scheme; other letters
+  in it were not decrypted (next step)
+- [x] clear-pages: the clear text of No. 23 (Wharton VI) frames the passage; it gives no crib for the code groups
+- [x] known-keys: Livingston's cipher is ruled out by Dana's own P.S.; the key was recovered from the ciphertext
+- [x] print: Wharton V-VI read; the "key missing" footnote traced to the 1 June 1783 letter to Adams
+- [x] key-rebuild: the letter table is complete (WIN); the code groups have one occurrence each
+- [ ] retry: Dana's other 1783 despatches in PCC item 89 vol. 2 may use the same scheme and repeat the code groups
+
+## Files
+
+- `transcription.txt`: the eight lines as read from the scan
+- `decrypt.py`: working text with the interventions, decryption and controls (standard library)
+- `decryption.txt`: output of `python decrypt.py`
+- `reading.md`: the reading as sentences
+- `key.txt`: the WIN table

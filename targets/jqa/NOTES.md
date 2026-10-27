@@ -160,3 +160,144 @@ files with hyphenated syllables and group tables. Readings written out with word
   gutter-cut groups; with them the letter would be at about 98%.
 - 1185, 1508, 748 each need one more occurrence: the 1812 blocks of Nos. 77, 78, 81 and the remaining lines of No. 85
   (0196L 12-23) are not yet aligned.
+
+## Contribution by WAINUT (27 Oct 2026)
+
+Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company; the work was done with AI language-model
+agents, and every group was checked by eye against the NARA frames, twice, the second time independently. This
+section adds two later texts in the same code: catalogue 637 (Appleton, Cadiz 1823) and 638 (Everett, Madrid 1825).
+They are filed here because the repository keeps one key per entry, and both use this folder's code (the = 1385,
+of = 1576, that = 1384, and = 668, I = 1401). The text above, `code_table.tsv` and the other files are unchanged;
+the new files are in `wainut/`, and `profile.json` gains two documents, their two `outcome.texts` entries, a credit
+and dated solution steps (existing entries untouched). The code was evidently still in use at the Madrid legation
+in 1823-1825, when Adams was Secretary of State.
+
+### Catalogue 637: John J. Appleton to John Quincy Adams, Cadiz, 6 Aug 1823 (closed 8 Aug)
+
+- **Source.** NARA RG 59, Despatches from US Ministers to Spain vol. 22, microfilm M31 reel 24
+  ([naId 188609418](https://catalog.archives.gov/id/188609418)), frame 0134, foot of the left page
+  ([frame](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-024/M31-024-0134.jpg)).
+  Manning, *Diplomatic Correspondence of the United States concerning the Independence of the Latin-American Nations*
+  III (1925), doc. 1124, p. 2041, prints the 18 groups (with OCR noise) and "[no decodification]".
+- **Context.** The finance minister Yandiola tells Appleton that the constitutional government has sent two
+  commissioners to England to liquidate an account; "the success of their mission depended upon its remaining
+  secret -- that if this liquidation was effected it would produce" [code]. The two blanks in the clear sentence
+  before ("an account which they had with ---- amounting to ----") are plain dashes in the MS, not code.
+- **Transcription** (`wainut/appleton1823_transcription.txt`): `1088 648<> 1576 794<> 1384 1453 347 1372 500 /
+  192: 668 1384 169 1244 1501 1110 1426 1290`. All 18 numbers agree with Manning. Diamonds after 648 and 794
+  (plural); a small raised double dot after 192, meaning unclear.
+- **Decryption** (`wainut/appleton1823_decryption.txt`, `python wainut/decode.py appleton1823_transcription.txt`):
+  16 of 18 groups have a table value; 14 of them give the English directly: "... of [794] that La-fit-te was [192]
+  and that he had a part in England".
+- **Groups read from the slot.** The table's numbers run alphabetically in short stretches: among H-graded entries
+  3 or fewer apart, 226 of 261 neighbouring pairs are in order. So a slot is evidence, not proof.
+  - 648 = **millions**. The table has April (M, 1x), but `code_conflicts.txt` (line 177) records a clerk decode of
+    648 as "millions"/"million" on 0210R3, and the slot is 646 might < 648 < 649 min. April fits neither slot nor
+    sense.
+  - 1088 = **seven [?]**. The table has sa (H, but a single clerk reading, in con-ver-sa-tions), which does not fit
+    the slot 1087 set < 1088 < 1091 sever. Seven fits; so do settle, seventh and seventy.
+  - 794 = **dollars [?]**. No value in the table; the slot 792 by < 794 < 796 don and the sense fit.
+  - 192: **open**. Slot 191 hon < 192 < 193 hon/honor, 194 hood: a hon- word (honest, honour, honourable ...).
+- **Reading** (`wainut/appleton1823_reading.md`): "(... it would produce) [?seven] millions of [?dollars]; that
+  Lafitte was [192], and that he had a part in England." Lafitte is probably the Paris banker Jacques Laffitte; that
+  identification is an interpretation and was not checked.
+- **Controls** (`python wainut/decode.py appleton1823_transcription.txt --controls`): the true decode has a
+  function-word rate of 0.50; every group shifted by 1, 2, 3, 7, 50 or 100 either way gives 0.00-0.17 and syllable
+  salad ("9th min offer ? the ri ? ted e hon to the"); three random permutations of the table give 0.00-0.06. Hits
+  alone prove little: 18 random numbers in 1-1600 hit a table value 9.2 times on average, because the table is
+  dense. What separates the true reading is the grammar and the syllable chain la-fit-te.
+- **Second coded leaf, not transcribed.** Frame 0150 of the same reel is a separate leaf headed "with Mr Appleton's
+  Despatch of 6 & 8th Aug. 1823": about 10 lines of numbers in the same code (1385, 1576 and 1290 occur), then plain
+  text signed by Appleton; frames 0140 and 0143 are its dockets. Manning does not print it. The film is badly
+  degraded by bleed-through.
+- **Prior work.** Manning prints the passage undecoded. One web search found no decipherment.
+
+### Catalogue 638: Alexander H. Everett to Henry Clay, Madrid, 25 Sep 1825
+
+- **Source.** NARA RG 59, Despatches from US Ministers to Spain vol. 25, microfilm M31 reel 27
+  ([naId 188610348](https://catalog.archives.gov/id/188610348)), enclosure "Notes of a Conversation of Mr. Everett
+  with Mr. Zea" (Francisco Zea Bermúdez, the foreign minister). The cipher is on frames 0119 (MS pp. 14-15,
+  [frame](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-027/M31-027-0119.jpg)), 0120 (right
+  page, MS p. 17, after "End",
+  [frame](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-027/M31-027-0120.jpg)) and 0121 (left
+  page, MS p. 18, [frame](https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M31/M31-027/M31-027-0121.jpg)).
+- **What Manning has.** Manning III doc. 1134, p. 2062 (the OCR of the page header reads "2002"), is headed
+  "[extract]" and prints only passage A, as "[Here follow six lines in cipher, without decodification.]", after
+  "...an interference of Providence." His extract ends at "in reply to his remarks."; passages B and C, after "End",
+  are neither printed nor mentioned.
+- **Transcription** (`wainut/everett1825_transcription.txt`): **355 groups** in three passages (A 8 lines, B 14,
+  C 12). The catalogue estimate of "about 445 groups" is too high. There is no interlinear decipherment on these
+  pages. Marks: a lozenge after a group = -s (plural or possessive), like the folder's superscript o; a caret after
+  it = -ed; a cross under 1535 = all (al, all, als by the next letter, as in this folder) and under 1167 = well; a
+  tick under a group truncates it (108 comply -> compl in ac-compl-ish; 563 time -> tim in le-gi-tim-).
+- **Decryption** (`wainut/everett1825_decryption.txt`): 347 of 355 groups have a value in `code_table.tsv`, applied
+  without any change. The raw output already reads as English with syllables to join.
+- **Reading** (`wainut/everett1825_reading.md`). Everett did not argue at length with Zea, being satisfied that his
+  remarks did not express his real sentiments but were "merely a language imposed upon him at present by particular
+  circumstances" (A). The foreign ministers at Madrid agree: they think Zea privately well disposed to recognition of
+  the new American states, so "there is a strong power somewhere acting in a [125] direction". Zea dare not risk his
+  place, since a declaration for recognition would give his rivals the means to overthrow him, and he may think it
+  good policy to dissemble (B-C). The influence of the Emperor Alexander is said to be directed against recognition.
+  Everett has not yet spoken with the Russian minister, d'Oubril. Some ministers ascribe Russia's policy to a [258]
+  of opposition to England rather than to the regard for legitimacy that the Emperor gives as his ostensible motive
+  (C). The rivals are not named in the cipher. Pierre d'Oubril was the Russian minister at Madrid in 1825.
+- **Values read against the table or from context** (marked [?] in the reading unless said otherwise):
+  - 666 = Zea [?] (twice, "Mr. Z[ea]" and "Mr. Z[ea]'s"). The table has March (M, 1x). With the tick, March cannot
+    give Zea, so either the table value or the reading is wrong.
+  - 601 = Mr. (three times, each before a name). The table has (sympt)oms (M, 1x). Not marked, since it holds at
+    every occurrence.
+  - 70: necessary in A (the table's second value). In B, "well [850^] to the [70] of recognition" fits neither
+    commerce nor necessary: read [?cause].
+  - 1072 = satis- (twice: "well satisfied", "if he is satisfied") against the table's see (M, 1x). Not marked.
+  - Context words: [?enter] (1293 tent), [?pretty] (211, no value, + 776 ty), [?tenor] (only 908 or is written),
+    [?language] (1501 a 1454 ri 1238 gu 1524 age), [?imposed] (1424 im 1155^ port), [?expressed] (297 ex 520 ed,
+    followed by 1504 observed), [?disposed] (850^, no value), [?shewing] (1094 she 1184 wi 483 new),
+    [?liberality] (880 li 1325 bers 1543 against), [?head] (171 hea), [?enable] (only 545 en before "them"),
+    [?overthrow] (929 over 557 those/ough), [?dissemble] (845 dis 541 insure), [?sacred] (1068 sa 1055 policy),
+    [?d'Oubril] (809 de 926 ou 1354 1421 ill), [?legitimacy] (1512, no value), [?ostensible] (917, no value).
+  - Second values of the table confirmed here: 257 = speci (more e-speci-ally), 1525 = al (person-al), 1599 = ood
+    (under-st-ood), 727 = rather (rather than), 1201 = g (re-co-g-ni-tion); 1479 riv (grade I) fits riv-al-s.
+  - 450 (ink, M) follows "think" both times and is left out of the reading as redundant.
+  - Line C10 "1290 727 1383" is written over; legible as read, but heavier.
+- **Open groups:** 125, 126, 211, 258, 850, 917, 1354, 1512 (no value in the table). The reading suggests contrary,
+  express, pret-, spirit, dispos-, os-, br, acy, all from context only.
+- **Controls** (`python wainut/decode.py everett1825_transcription.txt --controls`): the true decode has a
+  function-word rate of 0.37; every group shifted by 1, 2, 3, 7, 50 or 100 either way gives 0.02-0.12, three random
+  table permutations 0.03-0.05. Shuffling the order keeps the same words, so it needs a word-order model: an
+  independent check with a character-trigram model trained on the English of Manning vol. III (doc. 1134 left out)
+  scored the true decode -2.129, wrong keys -2.50 to -2.70, and 200 shuffled orders mean -2.399, best -2.351. That
+  check needs Manning's text from archive.org and is not included.
+- **Prior work.** Manning prints passage A undecoded and omits B and C. The plaintext phrases do not occur in
+  Manning vol. III. One web search found no decipherment. Not checked: a decipherment on another copy, in a separate
+  State Department file, or in the Clay Papers.
+
+### Proposed table changes (not applied)
+
+`code_table.tsv` was used as it is. Proposals, with the evidence above: 648 millions (clerk 0210R3, slot) instead of
+April; 1088 seven [?] (slot) instead of sa; 794 dollar(s) [?] (slot; no value now); 601 Mr. (3x) instead of
+(sympt)oms; 666 Zea [?] instead of March; 1072 satis (2x) instead of see. Second values confirmed in 1825: 70
+necessary, 257 speci, 1525 al, 1599 ood, 727 rather.
+
+### Remaining gaps (catalogue 637 and 638)
+
+- 637: group 192 (hon-) and the slot-only values of 1088 and 794 - blocker: no-key-material; each occurs once in
+  these texts and has no clerk decode.
+- 637: the second coded leaf on frame 0150 - blocker: illegible; bleed-through on the microfilm, the original volume
+  would allow a transcription.
+- 638: groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker:
+  no-key-material; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences.
+
+### Escalation (catalogue 637 and 638)
+
+- [x] siblings: both texts read with this folder's table; Appleton's second leaf (frame 0150) found
+- [x] clear-pages: the clear text around each passage used for the sense; Manning's extracts checked
+- [x] known-keys: this folder's table applies directly to both texts (the = 1385, of = 1576)
+- [x] print: Manning III docs. 1124 and 1134 print the code undecoded
+- [x] key-rebuild: slot inferences for 648, 1088, 794, 192 with the alphabetical-run check
+- [ ] retry: other Appleton and Everett despatches on M31 reels 24-27 may repeat the open groups
+
+### Files (in `wainut/`)
+
+- `appleton1823_transcription.txt`, `appleton1823_decryption.txt`, `appleton1823_reading.md`
+- `everett1825_transcription.txt`, `everett1825_decryption.txt`, `everett1825_reading.md`
+- `decode.py`: applies `../code_table.tsv`; `--controls` runs the wrong-key controls (standard library)

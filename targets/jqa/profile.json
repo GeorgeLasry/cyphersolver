@@ -62,6 +62,72 @@
     "image_quality": "unknown",
     "notes": "rem88.txt: 257 code groups, 7 with digits lost in the microfilm gutter (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx), counted as unread. python measure.py counts the groups; docs/_check_profile.py --measure counts 298 tokens including the clear line."
    }
+  },
+  {
+   "id": "appleton1823",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 22, M31 reel 24 (naId 188609418), frame 0134 left, foot (catalogue 637)",
+   "date": "6 Aug 1823 (closed 8 Aug)",
+   "year": 1823,
+   "country": "United States",
+   "route": "Cadiz -> Washington",
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Manning, Diplomatic Correspondence ... Latin-American Nations III (1925) doc. 1124 p. 2041 prints the 18 groups with '[no decodification]'."
+   },
+   "length": {
+    "tokens": 18,
+    "distinct": 17,
+    "unit": "code groups",
+    "measured": true,
+    "file": "wainut/appleton1823_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 reel 24 frame 0134",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Read twice from the frame, the second time independently; agrees with Manning's printed groups. Measured with docs/_check_profile.py --measure --digits."
+   }
+  },
+  {
+   "id": "everett1825",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 25, M31 reel 27 (naId 188610348), frames 0119-0121, enclosure 'Notes of a Conversation of Mr. Everett with Mr. Zea' (catalogue 638)",
+   "date": "25 Sep 1825",
+   "year": 1825,
+   "country": "United States",
+   "route": "Madrid -> Washington",
+   "places": {
+    "from": "Madrid",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Manning III (1925) doc. 1134 p. 2062 prints passage A as '[Here follow six lines in cipher, without decodification.]'; passages B and C are not printed."
+   },
+   "length": {
+    "tokens": 355,
+    "distinct": 205,
+    "unit": "code groups",
+    "measured": true,
+    "file": "wainut/everett1825_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M31 reel 27 frames 0119, 0120 (right), 0121 (left)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Contributed by WAINUT (27 Oct 2026). Three passages (A 8 lines, B 14, C 12), checked line by line against the frames a second time, independently. Measured with docs/_check_profile.py --measure --digits --drop-first."
+   }
   }
  ],
  "system": {
@@ -324,7 +390,47 @@
    "what": "Verification 5 (plain-bar rows): both No. 88 entries had been scored on decryption files with hyphenated syllables and group tables (the gap entry listed as French). Readings written out with words joined (texts/no88_gap_reading.md, no88_remainder_reading.md): plain 0.9 and 0.688, explicit 1.0 and 0.812. Both keep read.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {
+   "date": "2026-10-27",
+   "kind": "access",
+   "what": "WAINUT contribution: located catalogue 637 on NARA M31 reel 24 frame 0134 (Appleton, Cadiz, 6 Aug 1823) and catalogue 638 on M31 reel 27 frames 0119-0121 (Everett, Madrid, 25 Sep 1825); both in this folder's code (the = 1385).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WAINUT contribution: applied code_table.tsv unchanged. 637: 16 of 18 groups valued, 14 give English directly. 638: 347 of 355 groups valued, running English in all three passages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "prediction",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "WAINUT contribution: alphabetical-slot readings for 637: 648 millions (also a clerk decode, code_conflicts.txt), 1088 seven [?], 794 dollars [?]; 192 open (hon-). 638: context values marked [?] (666 Zea against March, 70, 1072, and 17 context words); 8 groups open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "WAINUT contribution: wrong-key controls (wainut/decode.py --controls): function-word rate 0.50 (637) and 0.37 (638) for the true table, 0.00-0.17 for shifts of 1-100 and random table permutations; an independent character-trigram check on 638 (Manning-trained) put the true order at -2.129 against shuffled orders best -2.351.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "WAINUT contribution: Manning III docs. 1124 (p. 2041) and 1134 (p. 2062) print the code undecoded; 1134 is an extract without passages B and C; one web search each found no decipherment.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
@@ -414,6 +520,18 @@
     "role": "key or decipherment used",
     "note": "printed decipherments of 1811-12 despatches in Writings of JQA vol. 4, aligned as known plaintext",
     "source": "Ford, Writings of John Quincy Adams, vol. 4"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "PR: catalogue 637 (Appleton 1823) and 638 (Everett 1825) transcribed and read in part with this folder's code table",
+    "date": "2026-10-27"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "637 (18 groups) and 638 (355 groups) from NARA M31 reels 24 and 27",
+    "date": "2026-10-27"
    }
   ],
   "texts": [
@@ -451,6 +569,41 @@
     "state": "read in part",
     "read_share": 0.938,
     "note": "24 Oct 2026: 93.8% of the words of texts/no88_remainder_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+   },
+   {
+    "doc": "appleton1823",
+    "label": "Appleton to J. Q. Adams, Cadiz, 6 Aug 1823 (catalogue 637), M31 reel 24 frame 0134",
+    "transcription": "wainut/appleton1823_transcription.txt",
+    "decryption": "wainut/appleton1823_decryption.txt",
+    "reading": "wainut/appleton1823_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.8,
+    "summary": "The Spanish constitutional government's secret plan, told to the US charge by the finance minister Yandiola in the last weeks of the Cortes at Cadiz: liquidating an account in England would produce [seven?] millions of [dollars?]; Lafitte (probably the Paris banker Jacques Laffitte) was [192] and had a part in England.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frame)",
+     "date": "2026-10-27",
+     "note": "One sentence of 18 groups: 15 read, 1088 and 794 from the alphabetical slot only, 192 open. The sentence scorer also counts the name Lafitte as unknown."
+    },
+    "note": "read_share counted on the 15 words of the cipher: 3 holes (seven?, dollars?, 192)."
+   },
+   {
+    "doc": "everett1825",
+    "label": "Everett to Clay, Madrid, 25 Sep 1825 (catalogue 638), M31 reel 27 frames 0119-0121",
+    "transcription": "wainut/everett1825_transcription.txt",
+    "decryption": "wainut/everett1825_decryption.txt",
+    "reading": "wainut/everett1825_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.904,
+    "summary": "Everett's notes of a conversation with the foreign minister Zea Bermudez on recognising the new American states: Zea's refusal is a language imposed on him by circumstances; the foreign ministers think him privately favourable but unable to risk his place against his rivals; the influence of Emperor Alexander is directed against recognition, and Russia's policy is put down to opposition to England rather than to legitimacy.",
+    "reading_review": {
+     "grade": "A",
+     "by": "WAINUT (AI language-model agent, checked against the frames)",
+     "date": "2026-10-27",
+     "note": "Coherent sentences; 23 holes in about 240 words: 8 open groups and 15 context-only or against-the-table words, all marked [?]. read_share = 1 - hole rate of docs/_check_reading.py --file (0.096)."
+    }
    }
   ],
   "key_file": "code_table.tsv"
