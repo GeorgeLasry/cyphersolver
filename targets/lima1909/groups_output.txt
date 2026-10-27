@@ -1,0 +1,59 @@
+1. groups.py against the transcription files
+  m0001: 4 code items, transcription 4: same
+  m0005: 30 code items, transcription 30: same
+  m0007: 40 code items, transcription 40: same
+  m0009: 47 code items, transcription 47: same
+  m0011: 101 code items, transcription 101: same
+  m0014: 31 code items, transcription 31: same
+  m0018: 91 code items, transcription 91: same
+  m0020: 65 code items, transcription 65: same
+
+2. taxed word count (code items + clear words + address 9) against the form header
+  m0005: 30 + 9 + 9 = 48, header 48  match
+  m0007: 40 + 73 + 9 = 122, header 122  match
+  m0009: 47 + 11 + 9 = 67, header 68  off by 1; the office noted '(Correction suivra pour mot qui manque)'
+  m0011: 101 + 3 + 9 = 113, header 113  match
+  m0014: 31 + 9 + 9 = 49, header 49  match
+  m0018: 91 + 9 + 9 = 109, header 110  off by 1
+  m0020: 65 + 9 + 9 = 83, header 93  off by 10; the receiver pencilled 83 above the 93
+
+3. code values: 261 distinct groups, 409 code items; written to code_values.tsv
+  not read (flag x): 9 items, 9 groups: 43243 (m0011), 50667 (m0007), 18703 (m0009), 10586 (m0009), 595191 (m0011), 85178 (m0011), 70706 (m0011), 33125 (m0018), 83636 (m0020)
+  read: 400 / 409 = 0.978
+    m0001: 4 / 4 = 1.000
+    m0005: 30 / 30 = 1.000
+    m0007: 39 / 40 = 0.975
+    m0009: 45 / 47 = 0.957
+    m0011: 97 / 101 = 0.960
+    m0014: 31 / 31 = 1.000
+    m0018: 90 / 91 = 0.989
+    m0020: 64 / 65 = 0.985
+  repeated groups with more than one value form (inflection, phrasing, or an open point):
+    01748: Em | em
+    19073: Pres. Republica | do P. Republica
+    34878: teria | terá
+    40848: tem | teve
+    43243: [dep..?] | da
+    62656: relação | relações
+    80124: 1 hora | uma hora
+    86853: comboio | comboios
+
+4. order test over 227 cleanly glossed five-figure groups: Spearman rho = 0.068; 2000 shuffles: max |rho| 0.226, share >= |rho| 0.30
+  initial letters of the values under each first figure:
+    0: abdegilnpst
+    1: abdefhimopqrstº
+    2: abcdhmnopqrstv
+    3: abcdelmnst
+    4: abcdinoprst
+    5: acdfhimpstv
+    6: abcefhimnpqrstu
+    7: cdfhimnopqrst
+    8: acdefhimnpqrstv
+    9: acdefgijlmpstuw
+
+5. leave-one-telegram-out: 152 of 395 code groups of a telegram recur in the other seven (rate 0.38)
+  the ten commonest groups (93148 e, 00327 a, 28573 que, 01021 na, 25584 V. M., 01748 em, 05123 de, 36467 no, 43243 da, 99251 mais) make up 0.22 of the code groups; a smaller, topic-free rate than the one above
+  carlos1903: 70 groups, shared with this code: none; expected if the same code 26.9, P(none) about 1.7e-15; P(none of the ten commonest) about 2.7e-08
+  manuel1910: 83 groups, shared with this code: none; expected if the same code 31.9, P(none) about 3.1e-18; P(none of the ten commonest) about 1.1e-09
+  sabugosa1910: 106 groups, shared with this code: none; expected if the same code 40.8, P(none) about 4.3e-23; P(none of the ten commonest) about 3.5e-12
+  hintze1903: 54 groups, shared with this code: none; expected if the same code 20.8, P(none) about 4.0e-12; P(none of the ten commonest) about 1.5e-06
