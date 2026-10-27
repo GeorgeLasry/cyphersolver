@@ -1,0 +1,47 @@
+A  552 groups (1-1600) on the frame
+   block_map.tsv      coverage 0.917  function words 0.353
+   identity           coverage 0.630  function words 0.058
+   20,000 random block orders: function words median 0.062, 99.9th percentile 0.250, max 0.297
+B  best JQA block per Morris block on function words alone (fw = function-word tokens, cov = groups valued)
+   M   1- 100 n= 66  best J1501-1600 (fw 36, cov 64)  block_map J1501-1600  agrees
+   M 101- 200 n= 77  best J1401-1500 (fw 36, cov 72)  block_map J1401-1500  agrees
+   M 201- 300 n= 76  best J1301-1400 (fw 62, cov 75)  block_map J1301-1400  agrees
+   M 301- 400 n= 29  best J1101-1200 (fw 6, cov 17)  block_map J1201-1300  differs
+   M 401- 500 n= 24  best J1101-1200 (fw 7, cov 23)  block_map J1101-1200  agrees
+   M 501- 600 n= 23  best J1501-1600 (fw 4, cov 19)  block_map J1001-1100  differs
+   M 601- 700 n= 34  best J 901-1000 (fw 10, cov 24)  block_map J 901-1000  agrees
+   M 701- 800 n= 18  best J1301-1400 (fw 4, cov 11)  block_map J 801- 900  differs
+   M 801- 900 n= 19  best J 701- 800 (fw 5, cov 19)  block_map J 701- 800  agrees
+   M 901-1000 n= 49  best J 601- 700 (fw 16, cov 46)  block_map J 601- 700  agrees
+   M1001-1100 n= 33  best J 501- 600 (fw 11, cov 32)  block_map J 501- 600  agrees
+   M1101-1200 n= 29  best J1301-1400 (fw 6, cov 26)  block_map J 401- 500  differs
+   M1201-1300 n= 18  best J1301-1400 (fw 3, cov 17)  block_map J 301- 400  differs
+   M1301-1400 n= 29  best J1301-1400 (fw 12, cov 25)  block_map J 201- 300  differs
+   M1401-1500 n= 14  best J1301-1400 (fw 3, cov 12)  block_map J 101- 200  differs
+   M1501-1600 n= 14  best J1101-1200 (fw 2, cov 13)  block_map J   1- 100  differs
+   function words alone pick the block_map.tsv block for 8 of 16 Morris blocks
+C  rank of the block_map.tsv block among the 16 JQA blocks on word bigrams of Ford vols 3-4
+   M   1- 100  block_map J1501-1600 bigrams 41  rank 1  | best J1501-1600 41
+   M 101- 200  block_map J1401-1500 bigrams 13  rank 1  | best J1401-1500 13
+   M 201- 300  block_map J1301-1400 bigrams 62  rank 1  | best J1301-1400 62
+   M 301- 400  block_map J1201-1300 bigrams  9  rank 1  | best J1201-1300 9
+   M 401- 500  block_map J1101-1200 bigrams 13  rank 1  | best J1101-1200 13
+   M 501- 600  block_map J1001-1100 bigrams  9  rank 1  | best J1001-1100 9
+   M 601- 700  block_map J 901-1000 bigrams  7  rank 1  | best J 901-1000 7
+   M 701- 800  block_map J 801- 900 bigrams  2  rank 1 (tied with 1)  | best J 801- 900 2
+   M 801- 900  block_map J 701- 800 bigrams  7  rank 1  | best J 701- 800 7
+   M 901-1000  block_map J 601- 700 bigrams 14  rank 1  | best J 601- 700 14
+   M1001-1100  block_map J 501- 600 bigrams  6  rank 1  | best J 501- 600 6
+   M1101-1200  block_map J 401- 500 bigrams 14  rank 1  | best J 401- 500 14
+   M1201-1300  block_map J 301- 400 bigrams  2  rank 1  | best J 301- 400 2
+   M1301-1400  block_map J 201- 300 bigrams  8  rank 1  | best J 201- 300 8
+   M1401-1500  block_map J 101- 200 bigrams 12  rank 1  | best J 101- 200 12
+   M1501-1600  block_map J   1- 100 bigrams  3  rank 2  | best J1501-1600 4
+   the block_map.tsv block ranks first (ties included) for 15 of 16 Morris blocks
+D  repeated multi-group words
+   3x 329.937 = govern-ment
+   2x 279.140.608.953 = ter-it-or-ty
+   2x 126.1295.1018.133 = in-sur-rect-ion
+   2x 901.813 = oms-port
+   2x 904.101.1357 = ?-i-soon
+   adjacent 76 285 (of the): 15x; 285 alone 46x; 76 alone 28x

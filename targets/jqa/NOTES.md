@@ -12,6 +12,10 @@ Status: read (22 Sept 2026, third pass). No. 88, measured with `measure.py`: **3
 and 3 single code groups (1508, 1185, 570).
 The second pass (earlier on 22 Sept) stood at 0.910; see section 5.
 
+Same code, another copy (27 Oct 2026, contributed by WAINUT): Anthony Morris's despatches from Spain, 1813-15
+(catalogue 650), use this table with its sixteen blocks of 100 in reverse order (Morris 100i + r = JQA 100(15 - i) + r,
+each block keeping its inner order); see [`../morris1813`](../morris1813/NOTES.md). Nothing in this folder is changed.
+
 ## 1. The premise, checked
 
 - Madison editors on Armstrong's letters (Founders Madison/02-10-02-0369, 02-12-02-0197): code "also used by John
