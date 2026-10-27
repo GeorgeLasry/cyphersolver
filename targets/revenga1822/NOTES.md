@@ -7,7 +7,7 @@ maintainer.
 Catalogue 641. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the cipher was transcribed from the NARA frames with a vision-capable language model. An independent agent re-read
 seven passages on the film, decrypted them with its own code and ran the controls. A second pass for this
-contribution re-read three more groups.
+contribution re-read three more groups, and a review re-read three more (C26, C38, C42).
 
 ## 1. The document
 
@@ -46,7 +46,7 @@ spaces inside a group. The system is a **monoalphabetic substitution**:
 - `ñ` stands for plain l.
 
 The full table with counts is in `key.txt`. The main values (a, t, v, p, g, ll, m, e, z, b, y, l, ñ, d, o, n) rest on
-dozens of occurrences. The rare values u = f, r = h, i = x and f = ñ rest on 2 to 6 occurrences each. Open: the
+dozens of occurrences. The rare values u = f, r = h, i = x and f = ñ rest on 3 to 6 occurrences each. Open: the
 sign for plain z (the first pass reads g in Cádiz, pobreza, diez and forzoso), the sign for plain j (consejo,
 aconsejó, ejecutivo), and whether a final z or k after a word is a stop.
 
@@ -59,21 +59,27 @@ key followed. The solver script was not kept; `decrypt.py` applies the key.
 
 `transcription.txt` gives the 56 groups with the clear text that follows each one. It is a **first pass**. The hand
 confuses g/y/q, n/ñ, e/c, p/t and b/ll, and the first pass drops letters here and there. That explains the
-misspellings in the mechanical output (`decryption.txt`). Ten groups were re-read on the film and corrected: seven by
-the independent verifier (C01, C05, C06, C07, C42, C52, C53) and three in the second pass (C39 nulidad, C40 por
-España, the comma after republicanos in C10). The list is at the head of the file.
+misspellings in the mechanical output (`decryption.txt`). Twelve groups were re-read on the film and corrected: seven
+by the independent verifier (C01, C05, C06, C07, C42, C52, C53), three in the second pass (C39 nulidad, C40 por
+España, the comma after republicanos in C10) and three in the review of this contribution (C26 Argüelles with c,
+C38 a line break that had been typed as a space, C42 one l too many in Prusia). The list is at the head of the file.
 
 - **The comma-like mark.** A mark that looks like x stands where a comma belongs, after "distinguido", "republicanos"
   and "España". It is written `,` in the transcription. True x (plain b) occurs in republicano, absoluta and obrar.
 - **The writers' own spelling.** "virey", "La Torre" with one r, "Argüelles" with c for ll: these are kept apart from
   misreadings.
-- 2,295 cipher signs in all (ll counted as one sign), of which 336 are the word space `a`; 30 distinct signs
-  (counted with `decrypt.signs`).
+- 2,294 sign places in all (ll counted as one sign), counted with `decrypt.signs`: 335 are the word space `a`, 3 are
+  the comma-like mark and 8 are unread places. There are 28 distinct signs: 26 letter signs with a value (k doubtful), one q
+  without a value (C41), and the comma-like mark.
+- **gg next to c.** Next to plain c the first pass often has gg where plain i stands: every -ción comes out as
+  "-ciion", and there are "ciivil", "diice", "deciidirse" (about 15 places). This may be a second i-like sign, the
+  open sign for z, or a habit of the first reading. It is not settled; the reading gives the word with one i.
 
 ## 4. The reading
 
 The text as sentences is in `reading.md` (Spanish), with the deciphered parts in «guillemets», and in
-`translation.md` (English). Obvious one-letter slips of the first pass are corrected silently there; anything
+`translation.md` (English). Slips of the first pass (a dropped, added or confused letter or two, where the word is
+certain from the sense and the clear text) are corrected silently there; `decryption.txt` keeps the raw output. Anything
 beyond that is marked `[?word]`, and what cannot be read is `[...]`.
 
 What the letter says (five fragments):
@@ -113,7 +119,7 @@ Share of decrypted words (three letters or more) found in the repository's Spani
 
 - the key: **0.427** (on the first-pass transcription, misspellings included);
 - 2,000 random permutations of the key: maximum 0.092, mean 0.003;
-- 2,000 shuffles of the signs inside each group, with the true key: maximum 0.083, mean 0.039;
+- 2,000 shuffles of the signs inside each group, with the true key: maximum 0.091, mean 0.040;
 - the key rotated by one place, space kept: 0.042.
 
 The independent verifier ran similar controls with its own code and word list (41.2 % against at most 10.2 % and
@@ -132,7 +138,7 @@ The independent verifier ran similar controls with its own code and word list (4
 
 ## Remaining gaps
 
-- The transcription is a first pass: 46 of the 56 groups were read once, and about a dozen words in the reading are
+- The transcription is a first pass: 44 of the 56 groups were read once, and about a dozen words in the reading are
   doubtful or open (an[...], cuartel, remoción, Andalucía, the end of C17, C18-C19, the King's action in C23, C36,
   C38, C43, C49, C50, the person addressed in C53, La Torre's verb in C54, C55-C56) - blocker: not-attempted. A full
   second pass on the four frames should settle most of them.

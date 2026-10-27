@@ -20,8 +20,8 @@
     "source": "Manning 1925 vol. 2 doc. 641 p. 1272: 'Not printed ... no key to the cipher was furnished.' The English translation signed 'W. B. H.' on frames 0058-0061 covers the clear parts only. Bogota received the original by another channel; its decipherment, if kept, was not looked for."
    },
    "length": {
-    "tokens": 2295,
-    "distinct": 30,
+    "tokens": 2294,
+    "distinct": 28,
     "unit": "symbols",
     "measured": true,
     "file": "transcription.txt"
@@ -29,9 +29,9 @@
    "transcription": {
     "by": "llm from images",
     "source": "NARA naId 189273979, frames T33-03-0055, -0056, -0057, -0058 (300 dpi)",
-    "corrections": 10,
+    "corrections": 13,
     "image_quality": "fair",
-    "notes": "First pass; 56 groups. Ten groups re-read on the film and corrected (seven by an independent verifier, three in a second pass). Counted with decrypt.signs: 2,295 cipher signs with ll as one sign, 336 of them the word space a; 30 distinct signs including the comma-like mark."
+    "notes": "First pass; 56 groups. Twelve groups re-read on the film and corrected (seven by an independent verifier, three in a second pass, three in the review; C42 twice). Counted with decrypt.signs: 2,294 sign places with ll as one sign, 335 of them the word space a, 3 the comma-like mark, 8 unread; 28 distinct signs (26 letter signs with a value, an unread q, the comma-like mark)."
    }
   }
  ],
@@ -39,7 +39,7 @@
   "types": ["monoalphabetic"],
   "summary": "Simple substitution on Spanish in lowercase letters: cipher a = word space, the digraph ll = plain s, c = plain ll, ñ = plain l; clear text and cipher alternate within sentences.",
   "symbol_kind": "letters",
-  "distinct_symbols": 30,
+  "distinct_symbols": 28,
   "diacritics": {"used": true},
   "homophones": {"used": false},
   "nomenclator": {"present": false},
@@ -73,9 +73,10 @@
   {"date": "2026-10-27", "kind": "transcription", "what": "First-pass transcription of the 56 cipher groups and the clear text after each.", "result": "partial"},
   {"date": "2026-10-27", "kind": "solver", "technique": ["hill climbing", "language-model scoring"], "what": "Quadgram hill-climb against Spanish, ll merged into one symbol and cipher a removed: 'los dos grandes partidos republicano y realista constitucional' at once; cipher a = word space; the full key followed.", "result": "worked"},
   {"date": "2026-10-27", "kind": "verification", "what": "Independent agent re-downloaded the four frames, re-read seven passages and decrypted them with its own code: fluent Spanish matching the clear text. It found dropped letters (C06), lll = ll + l, c = ll (not j) and the comma-like x mark.", "result": "worked"},
-  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Share of decrypted words in the repository Spanish word list: key 0.427; 2,000 random keys max 0.092; 2,000 in-group shuffles max 0.083; rotated key 0.042.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Share of decrypted words in the repository Spanish word list: key 0.427; 2,000 random keys max 0.092; 2,000 in-group shuffles max 0.091; rotated key 0.042.", "result": "worked"},
   {"date": "2026-10-27", "kind": "transcription", "what": "Second pass on three groups: C39 'nulidad' (e, not c), C40 'por España' (f = ñ on the film), the comma mark in C10; verifier readings applied to C01, C05, C06, C07, C42, C52, C53.", "result": "partial"},
-  {"date": "2026-10-27", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Reading as Spanish sentences with the clear text, one-letter slips corrected, doubtful words marked [?word]; English translation. About a dozen places open.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "transcription", "what": "Review against the frames: C26 Arguelles is msbtctll (c = plain ll); C38 a line break typed as a space removed; C42 one l too many in Prusia (ombll | gva across the line). Key counts refreshed; the gg next to plain c (-ciion) recorded as open.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Reading as Spanish sentences with the clear text, slips of the first pass corrected where the word is certain from the sense, doubtful words marked [?word]; English translation. About a dozen places open.", "result": "partial"},
   {"date": "2026-10-27", "kind": "literature search", "what": "Manning 1925 vol. 2 p. 1272 checked on archive.org: enclosure not printed, no key furnished. One web search with key phrases found no printed text.", "result": "worked"}
  ],
  "outcome": {
@@ -85,18 +86,19 @@
   "method_basis": "The substitution key was recovered from the cipher groups alone by a hill-climb against Spanish statistics; no key or plaintext was available.",
   "contribution": ["transcription", "key recovered"],
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, docs/_check_reading.py --file: hole rate 0.132 over 919 words (clear and deciphered text together; the word list also misses some period spellings and names).",
-  "fraction_read": 0.868,
+  "fraction_read_source": "decrypt.py over transcription.txt: 2,282 of 2,294 sign places given a value (8 unread places, one q without value, 3 k of doubtful value). The deciphered parts of reading.md (the text in guillemets, 356 words) score hole rate 0.18 on docs/_check_reading.py --file, hence fraction_coherent 0.82; the whole reading, clear text included, scores 0.132 (read_share 0.868).",
+  "fraction_read": 0.995,
+  "fraction_coherent": 0.82,
   "verification": ["independent verification", "historical consistency"],
   "provenance": "contributed",
   "credits": [
    {"who": "lccompany", "role": "solution", "note": "key recovered from the ciphertext; 56 cipher groups decrypted and read in part, with English translation", "date": "2026-10-27"},
-   {"who": "lccompany", "role": "transcription", "note": "first-pass transcription of NARA T33 roll 3 frames 0055-0058; ten groups re-read", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "transcription", "note": "first-pass transcription of NARA T33 roll 3 frames 0055-0058; twelve groups re-read", "date": "2026-10-27"},
    {"who": "lccompany", "role": "verification", "note": "independent re-reading of seven passages, own decryption and controls", "date": "2026-10-27"}
   ],
   "gaps": [
    {"item": "doubtful or open words in about a dozen places (C01 end, C05, C08, C12, C17-C19, C23, C36, C38, C43, C49, C50, C53, C54, C55-C56)", "blocker": "not-attempted", "detail": "first-pass transcription; a full second pass on the frames should settle most"},
-   {"item": "cipher signs for plain z and plain j; final z or k as a stop", "blocker": "too-short", "detail": "two to four occurrences each"},
+   {"item": "cipher signs for plain z and plain j; final z or k as a stop; gg where plain i stands next to plain c (-ciion)", "blocker": "too-short", "detail": "two to four occurrences each"},
    {"item": "clear text of 0057 left, 0055 right (top) and 0056 right (end)", "blocker": "not-attempted", "detail": "not transcribed"}
   ],
   "texts": [
