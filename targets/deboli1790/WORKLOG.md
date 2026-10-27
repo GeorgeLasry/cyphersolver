@@ -12,3 +12,10 @@
 - 2026-10-27 verification: 16 July pair, one of the 17 that AGAD lists as Deboli to Kiciński. The clear text is headed "Sire!" with the same date and "reçu le 27". It is the King's copy, so the inventory's addressee is wrong. Content (Nassau-Siegen's losses, the frigate Katarzyna) fits July 1790.
 - 2026-10-27 sibling check (dates only): ZbPop 428 (1788) pairs with ZbPop 417, 108/111. ZbPop 17 (1789) pairs with ZbPop 419 (+3 in 417), 103/106. ZbPop 5 (1791) pairs with ZbPop 421, 98/105. Not checked by alignment.
 - 2026-10-27 outcome: deciphered at the time; method "read from existing decipherment". No key rebuilt, and the code groups were not decoded beyond the three equivalences above.
+- 2026-10-27 verification, 1789 (cat. 418): 6 Jan pair, ZbPop 17 k. 2r / ZbPop 419 k. 3. Same code as 1790: 1559 = w, 951 = od, 355 opens Hiszpańskiego and Hiszpanij, 1567 opens wyiednała and wypuszczenie. Holds; closed.
+- 2026-10-27 verification, 1791 (cat. 420): 7 Jan pair, ZbPop 5 k. 6r / ZbPop 421 k. 302. "ani od WKMci, ani od" = 1944 951 1570 1944 951, identical to 9 Feb 1790. Holds; closed.
+- 2026-10-27 verification, 1788 (cat. 417): 11 Jan (k. 5-6v) is in an older code, groups to about 2450. 1328 1015a fits "WKMci" twice but not a third time; not shown.
+- 2026-10-27 statistics, 1788: sampled 1788 first pages (k. 81, 174, 287). From the spring, despatches use the 1789-91 code after a leading 4000; the 18 Sept despatch switches from the older code at 4000.
+- 2026-10-27 verification, 1788: 20 May pair (k. 81r / ZbPop 417 k. 120). 360 = o at three words; "o umowie z" and "o tym z" give 1657 = z. Holds for the new-code despatches.
+- 2026-10-27 access, 1792 (cat. 421): ZbPop 416 wrapper endorsed "Dechiffrement des Depeches de Deboli en 1792 jusqu'au Mois d'Aout inclus". First cipher despatch is No 95 = ZbPop 415 No 95, 17 Feb 1792.
+- 2026-10-27 verification, 1792: opening groups do not fit the 1790 values (951 at "Z czytania", 1570 where there is no WKMci); 1559 spacing fits "w". Fails on the opening lines; open.

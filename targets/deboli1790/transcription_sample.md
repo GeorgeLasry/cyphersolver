@@ -41,3 +41,63 @@ ZbPop 420 p. 13 (image 1_12_0_0_420_0008), 9 Feb 1790, same heading, "reçu le 2
 
 > W poważeniu przez WKMość okazanym dla Imperatorowey, z okazyi ziawionego w Warszawie pisma, uważam
 > przyzwoitość takowych z strony WKMci demonstracyi, których ile możności używać należy. ...
+
+## Sibling volumes (checked 27 Oct 2026)
+
+### 1789: 6 January, ZbPop 17 k. 2r (image 1_12_0_0_17_0001) / ZbPop 419 k. 3 (image 1_12_0_0_419_0004)
+
+```
+2r.1  8 1046 117 637 690 213 1559 559 686 948 1145 675 3 783 1678 1442 982 374 1326 788
+2r.2  1903 1182 355a 1334 117 1001 117 11 1188 1681 1618 1092 1255 1434 1307 1688
+2r.3  208 1353 951 355 1900 1567 403a 657 882 1567 1092 1404 895 1127 2075
+```
+
+> Do ostatniego listu mego, w którym opisałem daną z rządu na insynuacyą Posła Hiszpańskiego odpowiedź, przydać
+> potrzeba, że względem Porty Rosya domaga się od Hiszpanij aby wyiednała nayprzód wypuszczenie P^a Bułhakowa ...
+
+### 1791: 7 January, ZbPop 5 k. 6r (image 1_12_0_0_5_0008) / ZbPop 421 k. 302 (image 1_12_0_0_421_0380)
+
+```
+6r.1  1582 1074 1159 095 720 637 960 1944 951 1570 1944 951 21a 2152 1775 1670
+6r.2  200 1601 1426 1400 1625 1334 2107 1500b 606 1706? 305 536b 720
+6r.3  1657 1370 1263 1559 1405 1429 1610 1117 1353 212 1775 1559 693
+```
+
+> Wczorayszą pocztą nie miałem listów ani od WKMci, ani od Deputacyi. Z gazet tylko Warszawskich wiem iaki koniec
+> miały spory wszczęte względem przysięgi. W moim pojęciu ...
+
+### 1788: 20 May, ZbPop 428 k. 81r (image 1_12_0_0_428_0103) / ZbPop 417 k. 120 (image 1_12_0_0_417_0133)
+
+```
+81r.1  4000 1670 1215 153 815 1159 1092 1684 1317 1427 662 692
+81r.2  2083 873c 110 1093 360 1079 1782 812 109 786 675 1065
+81r.3  948 295 360 2071 820 1657 948 1498 756 1678
+81r.4  1980 1900 1087 1253 1434 1873 275 1317 461 895
+81r.5  2040 1678 96b 657 782 1352 360 1785 1657 1117 3
+```
+
+> Z przeszłey poczty pozostało mi, co następuie. Namieniłem Ostermannowi o Hetmanie Branickim, y o umowie z Austryą,
+> aby partya Gallicyiska niebruździła na Seymie, y przydałem: mówiłem ia o tym z Kobenclem ...
+
+### 1788: 11 January, ZbPop 428 k. 5r (image 1_12_0_0_428_0005), the older code (no 4000 marker in the letter)
+
+```
+5r.1  1970 2345 99 6 1 253 1889 803 1328 1015a 1004 2446 1051 564 992 893 667 1435 629 1326
+5r.2  664 788 277a 1328 1015a 997 843 1843 1927 1034 566 1 327 658 1332 429 1410c 1474
+5r.3  787 893 476 1244 374 1867 1481 992 1666 664 803 158 333 41916? 213 1269a
+```
+
+> (ZbPop 417 k. 20) Niemcem odebrał list WKMci de 29. elapsi z treści datowanego de 22. wziąłem assumpt do
+> powiedzenia wzgl. Podkanclerzemu, iż to WKMci niepomału obchodzi ...
+
+### 1792: No 95 (17 Feb), ZbPop 416 k. 1r (image 1_12_0_0_416_0002) / ZbPop 415 k. 87 (image 1_12_0_0_415_0101)
+
+```
+1r.1  951 1145a 1520 1702 637 1570 5 1795 2140 1706? 1567 1007 31a 1019 1194b 02 1706? 1792
+1r.2  693 1601 1180 1559 1404 2154 1901 1700 142 1253a 940 1601 1670 693 413 532b
+1r.3  1907 702 2152 1444 1107 1380b? 356 1701 1555a 1007 1407 361 1605 460 1679 1602
+1r.4  1903 692 1706? 720a 937a 2132 1559 600 1429 1263 356 156 1705 095 1782
+```
+
+> Z czytania depesz do Völkersamba miarkować mi należy, że Elektor dotąd iest w niepewności o prawdziwych
+> dyspozycyach względem siebie dwóch Dworów Wiedeńskiego y Berlińskiego. Z nadsłuchiwania zaś co drudzy mówią ...

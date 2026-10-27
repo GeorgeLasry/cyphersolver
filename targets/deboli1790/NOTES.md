@@ -1,6 +1,11 @@
-# Deboli → Stanisław August, St Petersburg cipher despatches, 1790 (catalogue 419) — NOTES
+# Deboli → Stanisław August, St Petersburg cipher despatches, 1790 (catalogue 419; siblings 417, 418, 420, 421) — NOTES
 
 Status: no write-up
+
+Second session, 27 Oct 2026: one pair from each sibling volume was aligned (see "The sibling volumes" below).
+1789 (cat. 418) and 1791 (cat. 420) hold and are closed the same way. 1788 (cat. 417) holds for the despatches in
+the Polish code but not yet for the older code it replaced. 1792 (cat. 421) does not align on its opening lines.
+Those two stay open.
 
 **Verdict: closed, deciphered at the time.** Sessions 2026-10-26/27. Each of the 109 cipher despatches in
 AGAD, Zbiór Popielów 4 has its contemporary decipherment, made in the King's cabinet. They are filed apart from the
@@ -50,18 +55,46 @@ The code is a Polish syllabic and word code. Ratio is about 1.3 groups per word.
 posłana do Petersburga Deboliemu", 8 III 1783 (ZbPop 444), which is not online. The key was not rebuilt. With 109
 aligned pairs it could be (key from adjacent plaintext) if the codebook is wanted for other volumes.
 
-## The sibling volumes (dates matched, not aligned)
+## The sibling volumes
 
-| catalogue | cipher volume | year | clear volume | same-date matches |
-|---|---|---|---|---|
-| 417 | ZbPop 428 | 1788 | ZbPop 417 | 108 of 111 |
-| 418 | ZbPop 17 | 1789 | ZbPop 419 (+3 in 417) | 103 of 106 |
-| 419 | ZbPop 4 | 1790 | ZbPop 420 + 417 | 109 of 109 (checked) |
-| 420 | ZbPop 5 | 1791 | ZbPop 421 | 98 of 105 |
-| 421 | ZbPop 416 | 1792 | ZbPop 415? | AGAD has no letter list for 416 |
+| catalogue | cipher volume | year | clear volume | same-date matches | pair aligned | result |
+|---|---|---|---|---|---|---|
+| 417 | ZbPop 428 | 1788 | ZbPop 417 | 108 of 111 | 20 May (holds); 11 Jan (not shown) | open in part |
+| 418 | ZbPop 17 | 1789 | ZbPop 419 (+3 in 417) | 103 of 106 | 6 Jan (holds) | closed |
+| 419 | ZbPop 4 | 1790 | ZbPop 420 + 417 | 109 of 109 | 2 Jan, 9 Feb (hold) | closed |
+| 420 | ZbPop 5 | 1791 | ZbPop 421 | 98 of 105 | 7 Jan (holds) | closed |
+| 421 | ZbPop 416 | 1792 | ZbPop 415 (by despatch No) | no AGAD list for 416 | No 95, 17 Feb (fails on opening lines) | open |
 
-The 1788, 1789 and 1791 entries very likely have the same answer, but each still needs a pair aligned group by group
-before its entry is closed. Catalogue 412–416 (1783–1787, ZbPop 9, 10, 11, 2, 3) have no scans online.
+Transcriptions of the tested lines are in `transcription_sample.md`.
+
+- **1789, 6 Jan** (ZbPop 17 k. 2r / ZbPop 419 k. 3). This is the same code as 1790. `1559` = "w" ("w którym", word 5,
+  group 7); `951` = "od" ("od Hiszpanij", word 24, group 39), the value it has in 1790/91. `355` begins both
+  "Hiszpańskiego" (group 23) and "Hiszpanij" (group 40). `1567` begins both "wyiednała" and "wypuszczenie", three
+  groups apart, as the words are.
+- **1791, 7 Jan** (ZbPop 5 k. 6r / ZbPop 421 k. 302). "ani od WKMci, ani od Deputacyi" sits on
+  `1944 951 1570 1944 951`, the same five groups that carry "ani od WKMci, ani od" in the 9 Feb 1790 despatch.
+  `1559` = "w" ("W moim pojęciu").
+- **1788** uses two codes. Despatches to the spring are in an older code (groups to about 2450; 992, 893, 787 the
+  most frequent). From the spring, despatches are in the 1789–91 code and begin with the group `4000`. The
+  September despatch (k. 174) runs in the older code and switches at `4000`, so `4000` marks the change of code.
+  - 20 May (k. 81r, opens `4000`, / ZbPop 417 k. 120): the alignment holds. `360` = "o" at all three "o" words
+    (groups 16, 26, 50 for words 10, 14, 28). `360 2071 820 1657` = "o umowie z" and `360 1785 1657` = "o tym z", so
+    `1657` = "z".
+  - 11 Jan (k. 5–6v, older code throughout / ZbPop 417 k. 20–22v): not shown. `1328 1015a` falls where "WKMci"
+    stands twice (groups 9 and 24 for words 4 and 21), but not at the third "WKMci" (word 66). The older code may
+    have homophones; a longer alignment is needed. The clear copy has the same heading and receipt date as the
+    other decipherments, so it is very probably this despatch's decipherment, but that is not yet measured.
+- **1792** (cat. 421). ZbPop 416 has no AGAD letter list. Its paper wrapper, now image 0001, is endorsed
+  "Dechiffrement des Depeches de Deboli en 1792 jusqu'au Mois d'Aout inclus". The decipherments it once held are
+  the numbered Polish despatches in ZbPop 415 (No 82 of 3 Jan 1792 onward). The first cipher despatch in 416 is
+  "No 95", which is 17 Feb 1792, ZbPop 415 k. 87–100v. Its opening groups do not fit the 1790 values:
+  - it starts with `951` ("od") where the text starts "Z czytania";
+  - `1570` ("WKMci") falls at group 6, where there is no WKMci in the clear text.
+  `1559` sits at groups 22 and 57, which would fit "w" at words 13 and 36. Either the cipher begins with a passage
+  that the Polish copy leaves out or puts elsewhere (the 1782 edition says French and Polish passages were
+  deciphered on separate sheets), or the 1792 code differs. Open.
+
+Catalogue 412–416 (1783–1787, ZbPop 9, 10, 11, 2, 3) have no scans online.
 
 ## Not reached
 
