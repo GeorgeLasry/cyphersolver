@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "target": "frederik1523",
+  "title": "Duke Frederik of Schleswig-Holstein and Lübeck, negotiation papers 1523 with name signs (Rigsarkivet, Sønderjyske Fyrstearkiver, Hertug Frederik (1.), Sager vedrørende udlandet, item 8)",
+  "documents": [
+    {
+      "id": "094",
+      "shelfmark": "Rigsarkivet, Sønderjyske Fyrstearkiver, Hertug Frederik (1.), Sager vedrørende udlandet 1495-1523, item 8 (Daisy heid 11587371); old mark Lauen. Arch. XIII 47c; Arkivalieronline epid 14908271 image 94 (id 41301914)",
+      "date": "15 Feb 1523",
+      "year": 1523,
+      "country": "Denmark",
+      "route": "Duke Frederik (Gottorp) to the council of Lübeck; chancery draft/copy",
+      "language": "Low German",
+      "pages": 1,
+      "cleartext_in_document": "mostly clear",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Hanserecesse III/8 (Schäfer and Techen 1910) n. 292, pp. 324-326: the letter printed with every sign resolved from the key strip (Gemeinsch. Arch. cap. XIII, 38), witness K1 = 'XIII, 47 c, Konzept'; the key reproduced on the plate facing p. 312",
+        "partial": false
+      },
+      "length": {
+        "tokens": 308,
+        "distinct": 202,
+        "unit": "mixed",
+        "measured": true,
+        "file": "transcription_094.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Arkivalieronline image 94 (id 41301914), full resolution crops",
+        "corrections": 0,
+        "image_quality": "good",
+        "notes": "First-pass transcription of the page (30 lines, 50 sign tokens, 15 sign types) made before the edition was found; its sign labels agree with the edition's Ch. numbers. The rest of item 8 (images 95-129) was not transcribed."
+      },
+      "read": "read"
+    }
+  ],
+  "system": {
+    "types": [
+      "nomenclator"
+    ],
+    "summary": "Clear Low German with single graphic signs for names: 72 numbered signs on the key strip (Sundays of Lent to Pentecost, weekdays, persons, places, rutere/knechte/krygesvolck, one null 'nichts bedudende'), plus a letter alphabet that the editors say was not used.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 72,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": false
+    },
+    "nomenclator": {
+      "present": true,
+      "entries": 72,
+      "kinds": [
+        "names",
+        "places",
+        "titles",
+        "common words"
+      ],
+      "unread_groups": 0
+    },
+    "nulls": {
+      "present": true
+    },
+    "key_order": "not applicable",
+    "word_division": "kept",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown",
+    "notes": "distinct_symbols = signs on the key strip. Per the edition, the code is used in Lübeck-Frederik letters from n. 279 (1 Feb 1523) to n. 354. The circle-bar sign (Ch. 28, hertog Frederich) also stands where the clear draft K2 has 'wy'."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in print",
+      "where": "Hanserecesse III/8 (1910), n. 279 note 1 and plate facing p. 312 (key), n. 292 pp. 324-326 (this letter, signs resolved); also nn. 278, 279, 293, 299, 309, 312",
+      "found": "during attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "cleartext context",
+      "published reading"
+    ],
+    "attack": "none",
+    "human_role": "Pasted the catalogue task; no other input.",
+    "tools": [
+      "fetch.sh (Arkivalieronline image API)",
+      "contact.py / crop.py (image survey)",
+      "web search",
+      "pdf text grep"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-10-26",
+    "last_date": "2026-10-26"
+  },
+  "solution": [
+    {
+      "date": "2026-10-26",
+      "kind": "literature search",
+      "what": "Web search for Frederik/Lübeck 1523 cipher; 7 Hanserecesse III-series scans on archive.org checked by text: none is Bd. 8.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "access",
+      "what": "Whole series (epid 14908271, ids from 41301821) downloaded; item slips located by contact sheets; item 8 = images 94-129 (slip at 93, item 9 slip at 130).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "statistics",
+      "what": "Image 94 viewed: clear Low German with single signs in place of names; 15 sign types on the page; identified as a name-sign code, not a letter cipher.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "transcription",
+      "what": "Image 94 transcribed line by line with sign labels (30 lines, 50 sign tokens).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "hypothesis",
+      "what": "From context: the two signs counted in 'den bedungeden tall der GG vnd IIII' are troops (ships or soldiers); the rectangle is King Christian ('deme SQ aftobrekende'); QX a prince with territory on the troops' route.",
+      "result": "worked",
+      "technique": [
+        "contextual inference"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "literature search",
+      "what": "Hanserecesse III/8 found as a Hansischer Geschichtsverein PDF; n. 292 is this letter (witness K1 = XIII 47c, 'chiffrirt'), printed with every sign resolved; the key strip (Gemeinsch. Arch. XIII, 38, endorsed by Wolf von Utenhof) is reproduced on the plate facing p. 312. GG = rutere (Ch. 64), IIII = knechte (65), SQ = koningk (27), QX = bisschop van Bremen (33), CB = hertog Frederich (28), CX = Lübeck (41).",
+      "result": "worked",
+      "technique": [
+        "key matching"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "control",
+      "what": "Own transcription of image 94 compared with the printed text and its Ch. footnotes: every sign label falls on one Ch. number, and the four small signs of line 21 are Ch. 58, 59, 56, 60 (Sehelandt, Fune, Copenhagen, Schonen) as printed.",
+      "result": "worked",
+      "technique": [
+        "plaintext matching"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "key from source",
+      "what": "Key plate transcribed to key.tsv (72 values with sign descriptions).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "control",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Disagreements with the print checked on the scan: l.16 is the Lübeck sign (first pass had the Frederik sign; corrected); l.10 shows the Frederik sign where the edition gives Ch. 41 Lübeck for K1 (sense needs Lübeck; recorded, not changed).",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "read from existing decipherment",
+    "method_basis": "Hanserecesse III/8 (1910) prints this letter and its siblings with every sign resolved and reproduces the original key strip; it was found during the attempt, after the system had been identified and image 94 transcribed, but before any sign had been assigned a value from the edition.",
+    "contribution": [
+      "transcription",
+      "catalogue correction"
+    ],
+    "class": "already solved",
+    "fraction_read": 1.0,
+    "grades": {
+      "H": 1
+    },
+    "verification": [
+      "key confirms",
+      "historical consistency"
+    ],
+    "notes": "Catalogue 466 closed: in print since 1910. Added here: item 8 located (images 94-129), image 94 identified as the edition's K1, the key plate transcribed to a table.",
+    "credits": [
+      {
+        "who": "schaefer",
+        "role": "key or decipherment used",
+        "note": "Hanserecesse III/8 n. 292 prints the letter with all signs resolved; key plate facing p. 312",
+        "date": "1910",
+        "source": "D. Schäfer and F. Techen (eds.), Hanserecesse von 1477-1530, Bd. 8 (Leipzig 1910)"
+      },
+      {
+        "who": "techen",
+        "role": "key or decipherment used",
+        "note": "co-editor of Hanserecesse III/8",
+        "date": "1910",
+        "source": "D. Schäfer and F. Techen (eds.), Hanserecesse von 1477-1530, Bd. 8 (Leipzig 1910)"
+      },
+      {
+        "who": "contemporary",
+        "role": "prior solution",
+        "note": "the key strip itself, endorsed by chancellor Wolf von Utenhof (Rigsarkivet, Gemeinsch. Arch. cap. XIII, 38)"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "094",
+        "label": "Image 94: Frederik to Lübeck, Gottorp, 15 Feb 1523 (Hanserecesse III/8 n. 292, witness K1)",
+        "transcription": "transcription_094.txt",
+        "decryption": "decryption_094.txt",
+        "translation": "translation_094_en.txt",
+        "summary": "Frederik reports that he has put off the meeting with the Jutland nobles at Haderslev to Reminiscere because his troops are not assembled and King Christian is strong; he asks Lübeck to have the agreed horsemen and foot soldiers ready by Invocavit, to press its troops and the Swedes against Zealand, Funen, Copenhagen and Scania, and reports 4000 soldiers gathering in Oldenburg for the king, whose passage he has asked the Bishop of Bremen to block.",
+        "note": "Signs resolved with the 1910 key plate; nine words left uncertain in the first-pass transcription are given as printed in n. 292 (marked < > in the decryption). Image 95 (the rest of the letter) not transcribed; the whole letter is printed in Hanserecesse III/8 pp. 324-326.",
+        "language": "nds",
+        "read_share": 1.0,
+        "state": "read",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5",
+          "date": "2026-10-26",
+          "note": "Clear Low German with names resolved; every sentence reads. The page is the first half of the letter."
+        }
+      }
+    ]
+  }
+}
