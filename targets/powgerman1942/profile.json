@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "target": "powgerman1942",
+  "title": "Coded messages in German POW letters and the cipher system of German POWs in US camps, 1942-1945 (catalogue 666)",
+  "documents": [
+    {
+      "id": "NR2892",
+      "shelfmark": "NARA RG 457, Historic Cryptographic Collection, NR 2892 (CBNK11, 3400A), naId 2809479",
+      "date": "7 Apr 1945",
+      "year": 1945,
+      "country": "United States",
+      "route": "German prisoners of war in US camps -> families/comrades",
+      "language": "German",
+      "pages": "unknown",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": ["none"],
+        "source": "Not seen. The title, 'Cipher System Used by German PW'S in U.S. Camps', says it describes the system."
+      },
+      "length": {"tokens": "unknown", "distinct": "unknown", "unit": "mixed", "measured": false},
+      "transcription": {"by": "llm from images", "source": "none: not digitised", "image_quality": "no images", "notes": "No transcription exists."}
+    },
+    {
+      "id": "CNSG-3460-2",
+      "shelfmark": "NARA RG 38, CNSG serial files 3460/2, 'Coded Messages from German POWs Letters, 1942-1944', naId 7523906",
+      "date": "1942-1944",
+      "year": 1942,
+      "country": "United States",
+      "route": "German prisoners of war in US camps -> families/comrades",
+      "language": "German",
+      "pages": "unknown",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": ["none"],
+        "source": "Not seen."
+      },
+      "length": {"tokens": "unknown", "distinct": "unknown", "unit": "mixed", "measured": false},
+      "transcription": {"by": "llm from images", "source": "none: not digitised", "image_quality": "no images", "notes": "No transcription exists."}
+    }
+  ],
+  "system": {
+    "types": ["undetermined"],
+    "summary": "Unknown. Censorship found coded passages in POW mail; NR 2892 describes the system. It may be an open code or letter-position scheme in German text rather than a classical cipher.",
+    "symbol_kind": "letters",
+    "distinct_symbols": "unknown",
+    "diacritics": {"used": "unknown"},
+    "homophones": {"used": "unknown"},
+    "nomenclator": {"present": "unknown"},
+    "nulls": {"present": "unknown"},
+    "key_order": "unknown",
+    "word_division": "unknown",
+    "doubled_letters": "unknown",
+    "sibling_key": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "NR 2892 (Apr 1945) describes the system; not seen. No published reading found.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [],
+    "attack": "none",
+    "human_role": "Selected the target and asked for the folder to be created.",
+    "tools": ["web search"],
+    "models": ["claude-sonnet-5-5"],
+    "sessions": 1,
+    "first_date": "2026-10-27",
+    "last_date": "2026-10-27"
+  },
+  "solution": [
+    {
+      "date": "2026-10-27",
+      "kind": "access",
+      "what": "Checked whether either NARA file is digitised: catalog entries naId 2809479 and 7523906 are paper only, no images.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "literature search",
+      "what": "Two web searches on the NR 2892 title and on coded German POW letters in US camps. No printed or online reading or description of the system found; results were British/WWI POW stories (Pryor, Alldritt) and a Schmeh blog post. Shallow: cryptiana pages not checked.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "method": "not solved",
+    "method_basis": "Not attempted: no ciphertext and no description of the system is available; both files are undigitised.",
+    "contribution": ["none"],
+    "class": "offline only",
+    "key": "none",
+    "fraction_read": 0,
+    "verification": ["none"],
+    "notes": "Blocked on access: order or photograph NR 2892 and CNSG 3460/2 at NARA College Park, then test the messages against the system NR 2892 describes."
+  }
+}
