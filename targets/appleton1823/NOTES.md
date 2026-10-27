@@ -1,6 +1,7 @@
 # John J. Appleton to John Quincy Adams, Cadiz, 6 Aug 1823: 18 code groups in the JQA code
 
-Status: contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
+Status: in progress. Next step: look for more coded despatches on M31 reels 24-27 and read them with the same table (the retry step).
+Contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
 unchanged): 15 of the 18 groups read, two more (1088, 794) from the alphabetical slot only, one group (192) open. The
 site page and the ledger rows are left to the maintainer.
 

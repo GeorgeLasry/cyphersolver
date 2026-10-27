@@ -1,6 +1,7 @@
 # William H. Crawford to James Monroe, No. 1 (private), Paris, 3 Sept 1813: a coded letter in the JQA code
 
-Status: contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
+Status: in progress. Next step: a second reading of the groups read once, the print check, then the retry step on Crawford's other coded runs.
+Contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
 unchanged): 1,313 of 1,368 groups have a table value; about 40 context words are marked [?] and about 30 groups are
 open (read_share 0.915). The site page and the ledger rows are left to the maintainer.
 

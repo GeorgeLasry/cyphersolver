@@ -1,6 +1,7 @@
 # Alexander H. Everett to Henry Clay, Madrid, 25 Sep 1825: three coded passages in the JQA code
 
-Status: contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
+Status: in progress. Next step: transcribe frames 0112-0115 (about 900 groups), then the retry step on the sibling despatches.
+Contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
 unchanged): 347 of 355 groups have a table value; 8 groups are open and some words rest on context only. The site
 page and the ledger rows are left to the maintainer.
 

@@ -1,6 +1,7 @@
 # Francis Dana to Robert R. Livingston, St Petersburg, 6 Apr 1783 (O.S.), No. 23: the eight cipher lines
 
-Status: contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is read in part
+Status: in progress. Next step: try the key on the other despatches of PCC item 89 vol. 2 (the retry step).
+Contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is read in part
 (four code groups have no value). The site page and the ledger rows are left to the maintainer.
 
 Catalogue 485. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents.
