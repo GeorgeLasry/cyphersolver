@@ -1,0 +1,88 @@
+{
+  "_about": "Voiceover lines for the hero video. voice.py renders a few takes of each line ('say' is the spelling the model is given, 'seeds' fixes a take); 'take' is the one used, checked with Whisper, and 'at' is when its speech begins, in seconds of the video (audio.py trims the take's lead-in and places it there). Counts are said roundly so the narration stays true as the ledger grows.",
+  "lines": [
+    {
+      "id": "a1",
+      "at": 0.6,
+      "text": "Five centuries of secret letters.",
+      "take": 0
+    },
+    {
+      "id": "a2",
+      "at": 2.8,
+      "text": "Many of them, still unread.",
+      "take": 1
+    },
+    {
+      "id": "b1",
+      "at": 5.7,
+      "text": "Cyphersolver is an open ledger of historical ciphers: what was deciphered, by whom, and how.",
+      "take": 2,
+      "say": "Cypher Solver is an open ledger of historical ciphers: what was deciphered, by whom, and how."
+    },
+    {
+      "id": "c1",
+      "at": 11.5,
+      "text": "How far can an AI, working with a human, get on ciphers that have beaten people for centuries?",
+      "take": 0
+    },
+    {
+      "id": "c2",
+      "at": 16.8,
+      "text": "Find the letter. Transcribe every sign. Recover the key. And write it all up.",
+      "take": 2
+    },
+    {
+      "id": "d1",
+      "at": 21.65,
+      "text": "Here is one line from fifteen thirty-three.",
+      "take": 0
+    },
+    {
+      "id": "d2",
+      "at": 24.85,
+      "text": "He is to be spoken with in the morning... when he is sober.",
+      "take": 1
+    },
+    {
+      "id": "e1",
+      "at": 29.1,
+      "text": "Over five hundred entries, across six centuries.",
+      "take": 1
+    },
+    {
+      "id": "e2",
+      "at": 33.45,
+      "text": "Well over a hundred keys recovered. Every attempt is recorded, failures too, for a study with George Lasry on how AI performs.",
+      "take": 0,
+      "say": "Well over a hundred keys recovered. Every attempt is recorded, failures too, for a study with George Lasri on how AI performs.",
+      "seeds": [
+        500
+      ]
+    },
+    {
+      "id": "f1",
+      "at": 41.6,
+      "text": "Anyone can add to the ledger: a solution, a fuller reading, a new cipher, or a check of one already here.",
+      "take": 0
+    },
+    {
+      "id": "f2",
+      "at": 48.45,
+      "text": "Open an issue, send a pull request, or just email.",
+      "take": 1
+    },
+    {
+      "id": "f3",
+      "at": 52.05,
+      "text": "Every contribution is credited, by name.",
+      "take": 0
+    },
+    {
+      "id": "g1",
+      "at": 55.35,
+      "text": "Pick a cipher. Break it. Write it up.",
+      "take": 1
+    }
+  ]
+}

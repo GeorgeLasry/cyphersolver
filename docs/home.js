@@ -27,6 +27,34 @@
       await flip(Ls[Math.random()*Ls.length|0],300+Math.random()*300); } })();
   }
 
+  // the hero video: autoplays muted (browsers allow nothing else), with a button that turns the sound on and starts
+  // it again from the top, a mute and a pause button, chapters that seek; paused for reduced motion and while
+  // scrolled away
+  const hv=document.querySelector('.herovid');
+  if(hv){
+    const v=hv.querySelector('video'), tg=hv.querySelector('.hv-toggle'), mu=hv.querySelector('.hv-mute'),
+      snd=hv.querySelector('.hv-sound'), chs=[...hv.querySelectorAll('.hv-ch button')];
+    const T=chs.map(b=>+b.dataset.t);
+    let held=still;
+    hv.classList.add('fresh');
+    const sync=()=>{ const p=v.paused, m=v.muted; hv.classList.toggle('paused',p); hv.classList.toggle('muted',m);
+      tg.setAttribute('aria-pressed',String(p)); tg.setAttribute('aria-label',p?'Play the video':'Pause the video');
+      mu.setAttribute('aria-pressed',String(m)); mu.setAttribute('aria-label',m?'Turn the sound on':'Turn the sound off'); };
+    const go=()=>{ held=false; v.play().catch(()=>{}); };
+    tg.addEventListener('click',()=>{ if(v.paused) go(); else { held=true; v.pause(); } });
+    mu.addEventListener('click',()=>{ hv.classList.remove('fresh'); v.muted=!v.muted; if(!v.muted && v.paused) go(); });
+    snd.addEventListener('click',()=>{ hv.classList.remove('fresh'); v.muted=false; v.currentTime=0; go(); });
+    chs.forEach((b,i)=>b.addEventListener('click',()=>{ v.currentTime=T[i]; go(); }));
+    ['play','pause','volumechange'].forEach(e=>v.addEventListener(e,sync));
+    v.addEventListener('timeupdate',()=>{ const t=v.currentTime, d=v.duration||60;
+      chs.forEach((b,i)=>{ const a=T[i], z=i+1<T.length?T[i+1]:d;
+        b.style.setProperty('--p',Math.max(0,Math.min(1,(t-a)/(z-a)))); b.classList.toggle('on',t>=a&&t<z); }); });
+    if(held) v.pause();
+    new IntersectionObserver(es=>es.forEach(e=>{
+      if(!e.isIntersecting) v.pause(); else if(!held) v.play().catch(()=>{}); }),{threshold:.25}).observe(v);
+    sync();
+  }
+
   // the live strip
   const strip=document.querySelector('.hero .cipherstrip'); if(!strip) return;
   const GL='0123456789abcdefghilmnopqrstuxyz§†∴';

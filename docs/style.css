@@ -1594,3 +1594,40 @@ a.sticker::after{display:none}
 
 body.pg-catalogue .pill.arch{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 50%,transparent);background:var(--amber-bg)}
 body.pg-catalogue .archnote{margin:1rem 0}
+
+/* ---------------------------------------------------------------- hero video (rendered by tools/hero_video/hero_video.py) */
+.herovid{margin:.4rem 0 1.5rem}
+.hv-frame{position:relative}
+.herovid video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#05070b;border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow)}
+.hv-ctl{position:absolute;top:.7rem;right:.7rem;display:flex;gap:.4rem}
+.hv-ctl button{margin:0;padding:0;width:34px;height:34px;display:grid;place-items:center;
+  background:rgba(5,7,11,.62);color:var(--gold2);border:1px solid rgba(217,172,82,.45);border-radius:8px;opacity:.55;transition:opacity .2s,border-color .2s}
+.herovid:hover .hv-ctl button,.hv-ctl button:focus-visible,.herovid.paused .hv-toggle{opacity:1}
+.hv-ctl button:hover{transform:none;box-shadow:none;border-color:var(--gold)}
+.hv-toggle .i-play,.herovid.paused .hv-toggle .i-pause,.hv-mute .i-off,.herovid.muted .hv-mute .i-on{display:none}
+.herovid.paused .hv-toggle .i-play,.herovid.muted .hv-mute .i-off{display:block}
+/* browsers only autoplay muted video: the first click turns the sound on and starts again from the top */
+.hv-sound{position:absolute;left:.8rem;bottom:.8rem;margin:0;display:none;align-items:center;gap:.5rem;
+  padding:.55rem .95rem;border-radius:999px;background:var(--gold);color:var(--gold-ink);font:600 0.8rem/1 var(--ui);letter-spacing:.04em;
+  box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.herovid.muted.fresh .hv-sound{display:inline-flex}
+.hv-sound:hover{transform:translateY(-1px)}
+@media (max-width:640px){.hv-sound{left:.5rem;bottom:.5rem;padding:.45rem .75rem}}
+.hv-ch{display:flex;gap:.35rem;margin-top:.6rem}
+.hv-ch button{flex:var(--w) 1 0;min-width:0;margin:0;padding:.55rem 0 0;position:relative;background:none;border:0;border-radius:0;box-shadow:none;
+  color:var(--muted);font:500 0.8rem/1.2 var(--ui);letter-spacing:.02em;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hv-ch button::before,.hv-ch button::after{content:"";position:absolute;left:0;top:0;height:3px;border-radius:2px}
+.hv-ch button::before{right:0;background:var(--rule)}
+.hv-ch button::after{width:calc(var(--p,0) * 100%);background:var(--gold);transition:width .25s linear}
+.hv-ch button:hover{transform:none;box-shadow:none;color:var(--ink)}
+.hv-ch button.on{color:var(--gold2)}
+.hv-tr{margin-top:.55rem;font-size:0.9rem;color:var(--ink2);max-width:72ch}
+.hv-tr summary{cursor:pointer;font-family:var(--ui);font-size:0.8rem;color:var(--muted);width:max-content}
+.hv-tr summary:hover{color:var(--ink)}
+.hv-tr p{margin:.5rem 0}
+.hv-tr i{color:var(--muted)}
+.hv-tr .hv-credit{font-size:0.8rem;color:var(--muted)}
+/* the live cipher strip moves down beside the introduction, below the video */
+@media (min-width:1061px){.hero:has(.herovid) .cipherstrip{top:calc(5.4rem + clamp(2rem,9.1vw,5.4rem) * 1.5 + (min(var(--maxw), 100vw) - 2.4rem) * 9 / 16 + 10.85rem)}}
+@media (max-width:640px){.hv-ch button{font-size:0}.hv-ch button.on{font-size:0.8rem;flex-grow:40}}
+@media (prefers-reduced-motion: reduce){.hv-ch button::after{transition:none}}
