@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "poinsett1813",
- "title": "Joel Roberts Poinsett to James Monroe, Santiago de Chile, 20 Feb 1813 (NARA M37 roll 2)",
+ "title": "Joel Roberts Poinsett to James Monroe, Santiago de Chile, 20 Feb 1813, and Buenos Aires, 14 June 1814 (NARA M37 roll 2)",
  "documents": [
   {
    "id": "1813-02-20",
@@ -37,6 +37,42 @@
     "to": "Washington"
    },
    "read": "not read"
+  },
+  {
+   "id": "1814-06-14",
+   "shelfmark": "NARA RG 59, Despatches from Special Agents vol. 3 = M37 roll 2 (naId 213803757), frames 0097-0098 (RC, ff. 39r-39v) and 0099-0100 (Duplicate, ff. 40r-40v); Unsolved Catalogue no. 651",
+   "date": "1814-06-14",
+   "year": 1814,
+   "country": "United States",
+   "route": "Buenos Aires -> Washington",
+   "language": "English",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Clerk's decode written over the groups on the RC (frame 0098); the same text printed in Manning 1925 vol. 1 doc. 201, pp. 335-336, from MS. Consular Letters, Buenos Aires I. Group 39 left blank in both."
+   },
+   "length": {
+    "tokens": 123,
+    "distinct": 90,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ciphertext_1814.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA catalogue JPEGs of M37 roll 2 frames 0097-0100",
+    "image_quality": "good",
+    "notes": "Both copies transcribed; RC line ends lost in the gutter filled from the Duplicate (transcription_1814.tsv)."
+   },
+   "places": {
+    "from": "Buenos Aires",
+    "to": "Washington"
+   },
+   "read": "read"
   }
  ],
  "system": {
@@ -61,19 +97,19 @@
     "common words",
     "names"
    ],
-   "unread_groups": 211
+   "unread_groups": 210
   },
   "nulls": "unknown",
   "key_order": "random",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "Poinsett to Monroe, Buenos Aires 14 June 1814 (M37 roll 2 frame 0098, duplicate 0100), same code with a clerk's interlinear decode.",
+  "sibling_key": "Poinsett to Monroe, Buenos Aires 14 June 1814 (catalogue 651; M37 roll 2 frame 0098, Duplicate 0100), same code with a clerk's interlinear decode, printed by Manning 1925 vol. 1 doc. 201.",
   "notes": "Homophones: 'a' is both 1215 and 1315 in the 1814 decode. Cross and caret marks under/over groups not yet explained."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "Manning 1925 vol. 2 doc. 442 prints the cipher places as '(undeciphered cipher)'; web search found no decipherment.",
+   "where": "1813: Manning 1925 vol. 2 doc. 442 prints the cipher places as '(undeciphered cipher)'; no decipherment found. 1814 (catalogue 651): the clerk's interlinear decode on the RC, printed in Manning 1925 vol. 1 doc. 201 (found 27 Oct 2026).",
    "found": "not found",
    "used": false
   },
@@ -183,23 +219,72 @@
    ],
    "what": "Lowry, La Guaira 1810-12, held a cypher for the 1810 agents (Manning); M84 roll 1 frames 0014-0090 viewed: no code; M37 roll 1 (Shaler) has no code frames.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Catalogue 651, 14 June 1814: RC (0097-0098) and Duplicate (0099-0100) transcribed line by line with the clerk's glosses; merged text 123 groups, 90 distinct (ciphertext_1814.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Manning vol. 1 (1925) doc. 201, pp. 335-336 prints the 14 June 1814 letter with both code passages in clear: the clerk's decode word for word. Catalogue 651 was already deciphered.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Clerk's decode checked group by group against both copies and Manning: 122 of 123 groups carry a value; key corrections 964 principle, 1236 it, 1087 two, 737 between, 1179 ct / 765 ion, 480 t; group 39 unglossed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "what": "decode.py re-run on the 1813 letter with the corrected key: 161 of 437 groups have a value (was 158); still fragments.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "Manning vols. 1-2 searched for other Poinsett letters with code: none decoded besides 14 June 1814.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "class": "not read",
   "key": "partial",
   "method": "not solved",
-  "fraction_read": 0.362,
+  "fraction_read": 0.368,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decode_1813.txt, cipher tokens with a value from key_1814.tsv (decode.py)",
+  "fraction_read_source": "decode_1813.txt, cipher tokens with a value from key_1814.tsv (decode.py); 1814 letter 122/123 in reading_1814.txt",
   "codes_open": {
-   "open": 211,
+   "open": 210,
    "total": 256,
-   "tokens_open": 279
+   "tokens_open": 276
   },
   "verification": [
    "none"
   ],
-  "notes": "In progress: context pass and further key material (Weber 1979, HSP Poinsett Papers) still to do."
+  "notes": "In progress for 1813: further key material (Weber 1979, HSP Poinsett Papers, M70 Consular Letters Buenos Aires I) still to do. The 1814 letter (651) is complete from the existing decipherment.",
+  "parts": [
+   {
+    "label": "20 Feb 1813, Santiago (catalogue 639)",
+    "records": "M37 roll 2 frames 0092-0094",
+    "method": "not solved",
+    "extent": "partial",
+    "basis": "161 of 437 groups have a value from the 1814 sibling decode; no sentence reads."
+   },
+   {
+    "label": "14 June 1814, Buenos Aires (catalogue 651)",
+    "records": "M37 roll 2 frames 0097-0100",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "Clerk's interlinear decode, printed by Manning 1925 vol. 1 doc. 201; checked against both copies, 122/123 groups (0.992), group 39 open."
+   }
+  ]
  }
 }

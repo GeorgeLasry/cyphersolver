@@ -1,4 +1,4 @@
-# Poinsett → Monroe, Santiago de Chile, 20 Feb 1813 (Unsolved Catalogue no. 639)
+# Poinsett → Monroe, Santiago de Chile, 20 Feb 1813 (Unsolved Catalogue no. 639), with the Buenos Aires letter of 14 June 1814 (no. 651)
 
 Status: in progress
 
@@ -35,28 +35,42 @@ table, decodes are junk; no signal. Gallatin to Madison, 15 Aug 1810 (Founders, 
 Sumter "ought to have Mr Poinsett's cypher", so a Sumter-Poinsett copy may have existed, but Sumter's despatches to
 Washington are in his own code.
 
-## 3. The key so far: the 14 June 1814 sibling
+## 3. The 14 June 1814 sibling (Unsolved Catalogue no. 651): already deciphered, and the key source
 
-Poinsett → Monroe, Buenos Aires 14 June 1814 (M37 roll 2 **frame 0098**, ff. 38v-39; duplicate at frames 0099-0100,
-f. 40-41) is in the same code (the = 1355, of = 1397, "of this country" = 1397 891 971 in both letters) and has a
-**clerk's decode written over the groups** for its two coded passages:
+Poinsett → Monroe, Buenos Aires 14 June 1814. Original (RC): M37 roll 2 **frames 0097-0098** (f. 39r clear, f. 39v
+with both code passages and a **clerk's decode written over the groups**). **Duplicate**: frames 0099-0100 (f. 40r
+headed "Duplicate", f. 40v the same code passages, no decode, line ends intact). Same code as 1813 (the = 1355, of = 1397,
+"of this country" = 1397 891 971 in both letters).
 
-- A (after "a mission which has originated from the"): "prevailing opinion of a rupture between G. Britain & Spain
-  [in] the present Government of this Country will endeavour to obtain the protection of the latter at any price
-  such is however the disposition of the people that the English never can gain a permanent footing in these
-  countries".
-- B (after "sent a prize to Rio de Janeiro"): "their trade is exposed to a just retaliation of this prince with
-  seldom more than a single frigate to protect ... eighteen feet ... it two sloops of war better than a frigate
-  being the utmost a ship should draw".
+**Prior art.** Manning, *Diplomatic Correspondence ... Latin-American Nations* **vol. 1 (1925), doc. 201, pp. 335-336**,
+prints the whole letter with the code passages in clear, from "MS. Consular Letters, Buenos Aires, I". His text is the
+clerk's decode word for word ("the utmost ship should draw", "than single Frigate"). So catalogue 651 was read in
+1814 and in print since 1925; the catalogue's "OCR only, no decipherment" was wrong (found 27 Oct 2026, archive.org
+djvu text of `diplomaticcorres01mann`). Method for this letter: **existing decipherment**.
 
-`key_1814.tsv` holds the 88 values aligned from these (D = word written over the group, S = syllable split of a
-decoded word, ours). Group readings were checked against the duplicate (it gives 80 for "such", 618 for "ju-", and
-the four groups of "endeavour"). The right ends of some lines on 0098 run into the gutter; the duplicate fills them
-for passage A, not yet for the last lines of B.
+**What was done here** (`transcription_1814.tsv`, `ciphertext_1814.txt`, `decode_1814.py` → `reading_1814.txt`):
+both copies transcribed line by line and checked against the clerk's words and Manning. Merged text (RC, gutter
+ends from the Duplicate): **123 groups, 90 distinct; 122 have a value = 0.992**. The one open group is **39** in "a ship
+[39] should draw", left blank by the clerk and by Manning.
+
+- A (after "a mission which has originated from the"): the prevailing opinion of a rupture between Great Britain and
+  Spain [:] the present government of this country will endeavour to obtain the protection of the latter at any
+  price; such is however the disposition of the people that the English never can gain a permanent footing in these
+  countries.
+- B (after "sent a prize to Rio de Janeiro"): their trade is exposed to a just retaliation of this principle, with
+  seldom more than a single frigate to protect it; two sloops of war [are] better than a frigate, eighteen feet being
+  the utmost a ship [39] should draw.
+
+Corrections to the key aligned earlier (`key_1814.tsv`, now 95 values): 964 = *principle*, not "prince" (the clerk's
+word runs into the gutter, Manning prints "principle"); the group for "it" is **1236** (Duplicate clear, faint 1 on the
+RC; 1236 occurs three times in 1813), not 236; "two" is **1087** on both copies, not 1037; "between" reads **737** on
+both copies (middle digit not certain), not 727; "protect(ion)" splits pro-te-**ct**-**ion** (409 1175 1179 765),
+since "protect" is 409 1175 1179 and "frigate" ends in 1175 = te; "feet" = 108 **480** (480 from the Duplicate).
+Copy differences: the Duplicate drops 337 *never* and 1506 *sloo-*, and writes 127? for the RC's 137 *war*.
 
 ## 4. The 1813 letter with that key
 
-`decode.py` → `decode_1813.txt`: **158 of 437 groups (0.362) have a value**. The decode is fragments, not yet
+`decode.py` → `decode_1813.txt`: **161 of 437 groups (0.368) have a value** (158 before the 1814 corrections of 27 Oct). The decode is fragments, not yet
 sentences, e.g. P1 "No dependance can be placed on the [1436] of the people the [486][1095] and li[218][1095] of
 this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-pro-te-ti-on ..."; P7 "... in the
 [428] of ... the govern-ment". No sentence reads yet, so nothing is claimed as read.
@@ -64,10 +78,12 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 ## Remaining gaps
 - P0, f. 37r (frame 0092), about three lines of groups - blocker: illegible; the microfilm frame is nearly black;
   needs a new scan of the original (NARA RG 59) or the 1813 duplicate if one survives
-- 279 of 437 groups in P1-P9 (211 of 256 distinct values) - blocker: no-key-material for most; the only decoded
-  sibling found covers 88 values (45 of the 256 distinct 1813 groups); Poinsett's own papers with his other ciphered reports (HSP, Poinsett Papers
+- 276 of 437 groups in P1-P9 (210 of 256 distinct values) - blocker: no-key-material for most; the only decoded
+  sibling found covers 95 values (48 of the 256 distinct 1813 groups after the 27 Oct corrections); Poinsett's own papers with his other ciphered reports (HSP, Poinsett Papers
   vol. 4, Gilpin collection) are not online
 - the same groups - blocker: open-codes until the context pass below has been made
+- 14 June 1814 (no. 651): group 39 in "a ship [39] should draw" - blocker: too-short; one occurrence in both letters,
+  left blank by the clerk and by Manning
 
 ## Escalation
 - [x] siblings: M37 roll 2 frames 0091-0102 opened; 14 June 1814 (0098, duplicate 0100) is in the same code with a
@@ -75,7 +91,9 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 - [x] clear-pages: Manning prints the clear text only; no clear copy of the cipher passages found
 - [x] known-keys: JQA/Department 1803-40, Armstrong THE=972, Pinckney, 1788 legation, Jefferson 1787,
   Mountflorence 1801, Sumter 1813 tried directly and under shifts; none fits
-- [ ] print: Manning checked (no decode); Weber 1979 not online; HSP calendar (1941) full view on HathiTrust
+- [x] print (1814): Manning vol. 1 doc. 201 (1925) prints the 14 June 1814 letter decoded (the clerk's text); vol. 1
+  has no other Poinsett letter with code (the rest were returned to him in 1818), vol. 2 only the 1813 letter undecoded
+- [ ] print: Manning checked (no decode of 1813); Weber 1979 not online; HSP calendar (1941) full view on HathiTrust
   mdp.39015034759822 but behind a bot check, to be searched by hand for 'cipher'
 - [x] key-rebuild: context pass made 27 Oct; only 'Lima' (249 413, twice in P4) cross-checks; no new values, the
   unknown groups occur once or twice in contexts that do not fix them
@@ -91,5 +109,7 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
    Papers vol. 4 (1811-14 reports "parts in cipher", per the HSP list filmed at M37 roll 2 frames 20-22); the
    Department's Buenos Aires consular file (M70) for any of his letters that were not returned in 1818.
 3. A better image of f. 37r (frame 0092).
+4. Manning took the 1814 text from "MS. Consular Letters, Buenos Aires, I" (NARA M70 roll 1): check whether that is a
+   third copy of the 14 June 1814 letter, or a copy of the 1813 one, with its own decode (it might fill group 39).
 
 Prior art (27 Oct 2026): Manning 1925 has no decode; web search found none; not in the repo before this folder.
