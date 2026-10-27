@@ -12,7 +12,7 @@ import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 SWEEPS = ['nationaal_archief', 'torre_do_tombo', 'pares_ags', 'polish_archives', 'scandinavia', 'medici_bia',
-          'founders_emlo', 'central_archives', 'archivportal_d']
+          'founders_emlo', 'central_archives', 'archivportal_d', 'nara_catalog', 'nara_state', 'nara_military']
 REQUIRED = ['year', 'date', 'title', 'correspondents', 'place', 'language', 'region', 'period', 'shelfmark',
             'folio_note', 'cls', 'status', 'why', 'importance', 'solvability', 'difficulty', 'score_note', 'verify',
             'links', 'seen', 'source']
@@ -30,7 +30,10 @@ def main(write):
     cat_path = os.path.join(ROOT, 'catalogue.json')
     cat = json.load(open(cat_path, encoding='utf-8'))
     entries = cat['entries']
-    next_id = max(e['id'] for e in entries) + 1
+    mp = os.path.join(HERE, 'merged.json')
+    prev = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else []
+    done = {(m['sweep'], m['row']) for m in prev}  # merged once; if since closed and removed, not re-added
+    next_id = max([e['id'] for e in entries] + [m['id'] for m in prev]) + 1  # ids are not reused
     have_shelf = {norm(e.get('shelfmark')) for e in entries}
     have_decode = {d for e in entries for d in e.get('decode_ids') or []}
     exclude = json.load(open(os.path.join(HERE, 'exclude.json'), encoding='utf-8'))
@@ -44,6 +47,8 @@ def main(write):
         rows = json.load(open(path, encoding='utf-8'))
         kept = 0
         for i, r in enumerate(rows):
+            if (sweep, i) in done:
+                continue
             if str(i) in exclude.get(sweep, {}):
                 log.append(f'{sweep}[{i}] excluded: {exclude[sweep][str(i)]}')
                 continue
@@ -81,9 +86,6 @@ def main(write):
         with open(cat_path, 'w', encoding='utf-8') as fh:
             json.dump(cat, fh, ensure_ascii=False, indent=1)
             fh.write('\n')
-        prev = []
-        mp = os.path.join(HERE, 'merged.json')
-        if os.path.exists(mp): prev = json.load(open(mp, encoding='utf-8'))
         json.dump(prev + added, open(mp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 

@@ -1,0 +1,415 @@
+[
+ {
+  "year": 1862,
+  "date": "c. 1861-1864",
+  "title": "Robert Bunch, British consul at Charleston: four unsolved letter-group cryptograms (Schmeh/Beveridge challenge)",
+  "correspondents": "Robert Bunch → unknown (British consular / Foreign Office channel)",
+  "place": "Charleston, South Carolina",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "Holding not named in print: notes found by Christopher Dickey while writing 'Our Man in Charleston' (2015); scans passed to Colin Beveridge",
+  "folio_note": "Five notes; #1 a simple substitution ('stop the fools', solved); #2 c. 29 four-letter groups + 10 on reverse, #3 24 groups, #4 37 groups, #5 image only",
+  "cls": "C",
+  "status": "Posted unsolved by Schmeh 1 June 2018; #1 read by Beveridge, #2-#5 open: Playfair, double Playfair, periodic polyalphabetic and codebook hypotheses all failed (Lasry's Playfair solver included). No later solution found 27 Oct 2026.",
+  "why": "The cipher traffic of Britain's consul-agent in the Confederacy, who reported on secession and the slave trade to Lord Russell, could show what he sent outside the official despatches.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Find the holding (Dickey's endnotes: TNA FO 5 Charleston consular series or Bunch family papers); check whether #2-#5 are Foreign Office cipher or a private system; ask Beveridge for the transcriptions",
+  "links": [
+   {
+    "label": "Schmeh 2018 post with scans",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2018/06/01/who-can-break-the-cryptograms-of-civil-war-spy-robert-bunch/"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Literature sweep (US military/intelligence slice)",
+  "prior_art": "open for #2-#5 (checked 27 Oct 2026: Schmeh comments to 2018, web search for later solutions; #1 solved by Beveridge)"
+ },
+ {
+  "year": 1941,
+  "date": "4 Jul 1941",
+  "title": "German Army Truppenschlüssel messages, net 'pz6', 4 July 1941 (Nr. 88, 90, 91, 92, 94, 97; also 95, 96 same day)",
+  "correspondents": "German Army front-line units (call sign pz6) → same net",
+  "place": "Eastern front (Operation Barbarossa)",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "German Army message collection (original message forms, provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); transcribed by Olaf Ostwald and Frode Weierud",
+  "folio_note": "Six pz6 messages 35+96+88+126+143+59 = 547 letters, plus Nr. 95 (74) and Nr. 96 (62) with blank addressee; facsimiles for Nr. 88, 94, 95",
+  "cls": "B",
+  "status": "Listed as unbroken on CryptoCellar 'Unbroken German Army Truppenschlüssel Messages' (updated 27 Jul 2026). Truppenschlüssel is a hand cipher (simplified Doppelkasten); most of the 100+ surviving TS messages were broken by Ostwald & Weierud (Cryptologia 2021). Not in the repo (only Enigma rows of this collection are on HCPortal; Cryptoole's CryptoCellar rows were dropped wholesale as Enigma).",
+  "why": "A same-day, same-net group of a WWII hand field cipher left unbroken by modern cryptanalysis: a direct test case for the paper beside the Orpo Doppelkasten target.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Read Ostwald & Weierud, 'Modern cryptanalysis of the Truppenschlüssel' (Cryptologia 2021) for why these failed; confirm one daily key per net and day; take ciphertexts from the CryptoCellar page",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   },
+   {
+    "label": "BGAC project",
+    "href": "https://cryptocellar.org/bgac/index.html"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "CryptoCellar (via captured-records slice)",
+  "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026: CryptoCellar list updated 27 Jul 2026)"
+ },
+ {
+  "year": 1941,
+  "date": "3 Jul 1941",
+  "title": "German Army Truppenschlüssel messages, net 'nfw', 3 July 1941 (Nr. 84, 85, 86)",
+  "correspondents": "German Army unit nfw → nfw / sub2",
+  "place": "Eastern front",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "German Army message collection (provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); Ostwald & Weierud transcription",
+  "folio_note": "64 + 140 + 46 = 250 letters; facsimile of Nr. 85",
+  "cls": "B",
+  "status": "Unbroken per CryptoCellar TS list (updated 27 Jul 2026).",
+  "why": "Three messages likely in one daily Truppenschlüssel key; a WWII hand-cipher test case.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "As for the pz6 group; check key-period rule in the TS instructions",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "CryptoCellar (via captured-records slice)",
+  "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1941,
+  "date": "8 Jul 1941",
+  "title": "German Army Truppenschlüssel messages, net '4fc', 8 July 1941 (Nr. 123, 129, 130)",
+  "correspondents": "German Army unit 4fc → 4fc",
+  "place": "Eastern front",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "German Army message collection (provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); Ostwald & Weierud transcription",
+  "folio_note": "87 + 90 + 52 = 229 letters; Nr. 129 and 130 share indicator IASRZ",
+  "cls": "B",
+  "status": "Unbroken per CryptoCellar TS list (updated 27 Jul 2026).",
+  "why": "Two messages under one indicator give depth in a hand field cipher.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "As for the pz6 group",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "CryptoCellar (via captured-records slice)",
+  "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1941,
+  "date": "6-8 Jul 1941",
+  "title": "German Army Truppenschlüssel messages, net 'f8y', 6 and 8 July 1941 (Nr. 109, 110, 121)",
+  "correspondents": "German Army unit f8y → f8y",
+  "place": "Eastern front",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "German Army message collection (provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); Ostwald & Weierud transcription",
+  "folio_note": "6 Jul: 60 + 55 letters (Nr. 110 header says 50); 8 Jul: 48 letters (likely another daily key)",
+  "cls": "B",
+  "status": "Unbroken per CryptoCellar TS list (updated 27 Jul 2026).",
+  "why": "Short WWII hand-cipher pair; low value alone, useful if the net's key pattern is known.",
+  "importance": 1,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "As for the pz6 group",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "CryptoCellar (via captured-records slice)",
+  "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1941,
+  "date": "25 Jul 1941",
+  "title": "German Army Truppenschlüssel messages, net '8be', 25 July 1941 (Nr. 263, 264)",
+  "correspondents": "German Army unit 8be → 8be",
+  "place": "Eastern front",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "German Army message collection (provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); Ostwald & Weierud transcription",
+  "folio_note": "32 + 74 = 106 letters",
+  "cls": "B",
+  "status": "Unbroken per CryptoCellar TS list (updated 27 Jul 2026).",
+  "why": "Short WWII hand-cipher pair in one key.",
+  "importance": 1,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "As for the pz6 group",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "CryptoCellar (via captured-records slice)",
+  "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1941,
+  "date": "28 Jun - 23 Sep 1941",
+  "title": "German Army Truppenschlüssel single messages, June-September 1941 (VHRNE Nr. 284, AOXST Nr. 91, XWFEC Nr. 193, MZXNX Nr. 21, AAXYN Nr. 31, DOLHA Nr. 252, LSSLG Nr. 268, ZUBZE Nr. 8, CFQIB Nr. 281, YSGSS Nr. 56, AFUVO Nr. 26)",
+  "correspondents": "German Army units (tto, 4rd1→25y2, 2ha, 7bs1→b8c2, acz1→ozp2, erm, vlj, n0c8, eo2, cm4)",
+  "place": "Eastern front",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "German Army message collection (provenance given only as the German Army message collection; the BGAC page names the Bundesarchiv for its 2026 finds); Ostwald & Weierud transcription",
+  "folio_note": "Each in its own key: 136, 152, 98, 88, 72, 70, 68, 62, 46, 19, 14 letters; facsimiles for VHRNE, AOXST, MZXNX, AAXYN, AFUVO. Split per key at merge (one-key rule).",
+  "cls": "B",
+  "status": "Unbroken per CryptoCellar TS list (updated 27 Jul 2026).",
+  "why": "Single-message hand-cipher keys; the two longest (VHRNE 136, AOXST 152) are the realistic ones.",
+  "importance": 1,
+  "solvability": 2,
+  "difficulty": 5,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "As for the pz6 group; split into one row per key",
+  "links": [
+   {
+    "label": "CryptoCellar unbroken TS list",
+    "href": "https://cryptocellar.org/bgac/g-army-ts-messages.html"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "CryptoCellar (via captured-records slice)",
+  "prior_art": "unbroken per Ostwald & Weierud (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1861,
+  "date": "1861 (seized 23 Aug 1861)",
+  "title": "Rose O'Neal Greenhow, letter written in cipher on mourning paper (Confederate spy ring, Washington)",
+  "correspondents": "Rose O'Neal Greenhow → Thomas Jordan / Beauregard's headquarters (presumed)",
+  "place": "Washington, D.C.",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow (entry A1-986), NAID 1634036",
+  "folio_note": "4 images; one mourning-paper leaf in fragments, about 20 lines of symbol-and-digit cipher with clear words ('the', 'this') between cipher groups; second side very faint",
+  "cls": "A",
+  "status": "Catalogue gives no decipherment. Greenhow's cipher (Jordan's symbol alphabet with code signs) has a surviving key, laminated, recovered from her effects (North Carolina State Archives, Greenhow Papers 1863-64), which the Rosenbach used to read her Beauregard note. Whether this leaf was read by Pinkerton's men in 1861 is not established. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
+  "why": "Intelligence from the Washington ring before and after First Bull Run, in the original cipher; a readable test with an outside key.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; Get the NC State Archives key image (Rose O'Neal Greenhow Papers, digital.ncdcr.gov 378359); check Blackman, 'Wild Rose' (2005), and the Pinkerton report in the same series for a period decipherment",
+  "links": [
+   {
+    "label": "NARA catalog NAID 1634036",
+    "href": "https://catalog.archives.gov/id/1634036"
+   },
+   {
+    "label": "NARA Greenhow guide",
+    "href": "https://www.archives.gov/research/military/civil-war/greenhow"
+   },
+   {
+    "label": "NC key (Greenhow Papers)",
+    "href": "https://digital.ncdcr.gov/Documents/Detail/rose-oneal-greenhow-papers-1863-1864/378359"
+   },
+   {
+    "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
+    "href": "https://catalog.archives.gov/id/62017285"
+   }
+  ],
+  "seen": "image",
+  "source": "NARA RG 59 (US military/intelligence sweep)",
+  "prior_art": "open as far as found (checked 27 Oct 2026: NARA catalogue, Rosenbach blog, web); period decipherment possible, not located"
+ },
+ {
+  "year": 1861,
+  "date": "1861 (seized 23 Aug 1861)",
+  "title": "Thomas Jordan to 'My Dearest Rachel' (Greenhow), letter with portions in cipher",
+  "correspondents": "Lt. Col. Thomas Jordan → Rose O'Neal Greenhow ('Rachel')",
+  "place": "Manassas / Confederate lines (presumed)",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, file 'Letters from Lieutenant Colonel Thomas Jordan to Mrs. Greenhow and to My Dearest Rachel', NAID 1634051",
+  "folio_note": "6 images; clear letter with cipher passages (not viewed)",
+  "cls": "B",
+  "status": "Catalogue title only; no decipherment noted. Same Jordan-Greenhow cipher as NAID 1634036; key survives at NC State Archives. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
+  "why": "The handler's side of the Greenhow ring's correspondence; cipher passages name agents or movements.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; View the 6 images; apply the NC key",
+  "links": [
+   {
+    "label": "NARA catalog NAID 1634051",
+    "href": "https://catalog.archives.gov/id/1634051"
+   },
+   {
+    "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
+    "href": "https://catalog.archives.gov/id/62017285"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "NARA RG 59 (US military/intelligence sweep)",
+  "prior_art": "open as far as found (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1861,
+  "date": "1861 (seized 23 Aug 1861)",
+  "title": "Greenhow papers: photostat of a burnt letter fragment partially written in cipher",
+  "correspondents": "Rose O'Neal Greenhow → unknown (Confederate contact)",
+  "place": "Washington, D.C.",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "NARA RG 59, Seized Correspondence of Rose O'Neal Greenhow, NAID 6925618",
+  "folio_note": "1 image: negative photostat of a fragment recovered from her stove; mixed clear text and about 60 cipher symbols",
+  "cls": "B",
+  "status": "Catalogue title only; no decipherment noted. Same symbol cipher; key at NC State Archives. Key lead found in this sweep: NARA RG 45, M1091 Subject File of the Confederate States Navy, file 'DC - Codes and cryptography - Miscellaneous' (NAID 62017285, images 0483-0485) holds a 'Confederate cipher 1864' symbol table, docketed as found on Rose Greenhow's person when she drowned off Fort Fisher (Condor, 1864): symbol alphabet, digraph signs (th, ph, ch, sh, ee, ll, ss...) and code signs for Washington, Richmond, Lincoln, Pennsylvania Avenue, Virginia, South Carolina, regiment, infantry, cannon, soldiers; 'double letter, 2nd letter itself inverted'. The 1861 letters' signs (squares with dots/crosses, triangles, digits) look like the same family (viewed 27 Oct 2026).",
+  "why": "Short, but the cipher signs sit inside clear sentences, which also gives cribs for the system.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 2,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Apply the 1864 key in NARA M1091 (NAID 62017285, images 0483-0485; also NC State Archives copy) to the scans; Apply the NC key; compare with the mourning-paper letter",
+  "links": [
+   {
+    "label": "NARA catalog NAID 6925618",
+    "href": "https://catalog.archives.gov/id/6925618"
+   },
+   {
+    "label": "Greenhow key 1864, NARA M1091 (NAID 62017285)",
+    "href": "https://catalog.archives.gov/id/62017285"
+   }
+  ],
+  "seen": "image",
+  "source": "NARA RG 59 (US military/intelligence sweep)",
+  "prior_art": "open as far as found (checked 27 Oct 2026)"
+ },
+ {
+  "year": 1940,
+  "date": "23 Dec 1939; 29 Jan 1940; 17 Dec 1940",
+  "title": "Japanese consular telegrams to and from the Foreign Ministry, Tokyo, 1939-40, beginning with indicator BBBTT (three intercepts)",
+  "correspondents": "Japanese consulates ↔ Gaimushō, Tokyo",
+  "place": "unknown (consular posts)",
+  "language": "Japanese",
+  "region": "Other",
+  "period": "1901-1950",
+  "shelfmark": "Intercepts supplied by Frode Weierud (2017); provenance not stated, probably US intercept files (NARA RG 457 Historic Cryptographic Collection) - unconfirmed",
+  "folio_note": "Three messages: 26 five-letter groups, about 21 groups, about 300 groups; all open with BBBTT (system indicator)",
+  "cls": "C",
+  "status": "Posted unsolved by Schmeh 29 May 2017; still listed in his 'Unsolved ciphertexts from World War II (3)' (2021). Likely a hand code (codebook, perhaps commercial or a minor Gaimushō code), not a machine. Not in the repo.",
+  "why": "Pre-war Japanese consular traffic in a codebook system; outside the European scope of the paper but a classical code.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Ask Weierud for the source file; check TICOM D-50 and SRH Japanese diplomatic code lists for the BBBTT indicator (e.g. the LA/'tsu' codes read by SIS); find the item in RG 457 HCC",
+  "links": [
+   {
+    "label": "Schmeh 2017 post",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2017/05/29/who-can-decipher-these-encrypted-consular-messages/"
+   },
+   {
+    "label": "Schmeh WWII unsolved list (3)",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/unsolved-ciphertexts-from-world-war-ii-3/"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Literature sweep (US military/intelligence slice)",
+  "prior_art": "open (checked 27 Oct 2026: Schmeh comments, web search; no codebook identified)"
+ },
+ {
+  "year": 1939,
+  "date": "6 Jan 1939 and three later dates (11 Jan, 16 Feb, 13 Mar, years 1937-42)",
+  "title": "Telegrams from the battleship Schleswig-Holstein to a naval officer's family (Dabis) in Kiel, four 55-letter cryptograms",
+  "correspondents": "Crew member of SMS/Linienschiff Schleswig-Holstein → Dabis family, Kiel",
+  "place": "Linienschiff Schleswig-Holstein / Kiel",
+  "language": "German",
+  "region": "Germany",
+  "period": "1901-1950",
+  "shelfmark": "Private collections: Tobias Schrödel (no. 1); Patrick Hayes (nos. 2-4, with 153 pages of clear correspondence 1937-42)",
+  "folio_note": "Four telex/telegram forms, each 11 five-letter groups (55 letters); handwritten clear notes accompany some",
+  "cls": "C",
+  "status": "Unsolved per Schmeh (2017, 2021 posts; WWII list part 1). Transposition suspected from letter frequencies (Gillogly, readers). Lasry was working on them in 2021; no solution reported.",
+  "why": "A private hand cipher with a large clear-text correspondence beside it, so cribs exist.",
+  "importance": 1,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Check Schmeh/Cipherbrain for a later solution; get the clear letters from Hayes for cribs; test transposition on all four at once",
+  "links": [
+   {
+    "label": "Schmeh 2017 (first telex)",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2017/09/02/who-can-decipher-this-encrypted-telex-from-a-famous-battle-ship/"
+   },
+   {
+    "label": "Schmeh 2021 (three more)",
+    "href": "https://scienceblogs.de/klausis-krypto-kolumne/2021/01/03/drei-weitere-ungeloeste-verschluesselte-nachrichten-vom-kriegsschiff-schleswig-holstein/"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Literature sweep (captured/foreign slice; private holding)",
+  "prior_art": "open (checked 27 Oct 2026: Schmeh posts and web search)"
+ },
+ {
+  "year": 1863,
+  "date": "1861-1866",
+  "title": "US Military Telegraph (War Department telegraph office) ledgers: enciphered telegrams in the Eckert Papers ('Decoding the Civil War')",
+  "correspondents": "Lincoln, Stanton, Union commanders ↔ War Department telegraph office",
+  "place": "Washington, D.C. and field",
+  "language": "English",
+  "region": "Americas",
+  "period": "1801-1900",
+  "shelfmark": "Huntington Library, Thomas T. Eckert Papers (mssEC), 35 telegram ledgers; cipher books in the same papers",
+  "folio_note": "15,971 telegrams transcribed on Zooniverse, about 5,400 enciphered (route ciphers with code words)",
+  "cls": "A",
+  "status": "Transcription phase done; the planned decipherment phase with the Eckert cipher books is not reported as completed (checked 27 Oct 2026). Overlaps the Cryptoole draft row 'The \"Decoding the Civil War\" Project' (research/cryptoole/candidates.json, from cryptiana), which has no shelfmark; this row adds the holding. Milroy telegrams (same system) are already solved here.",
+  "why": "Thousands of War Department cipher telegrams, keys in the same collection: a large, keyed, mechanical reading task rather than a cryptanalytic one.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the published description during the Oct 2026 US military/intelligence records sweep (research/nara_military/); not viewed",
+  "verify": "Get the Zooniverse transcription export; check which ledger entries are kept only in cipher; match to the Eckert cipher books (route ciphers nos. 1-12) and to the Milroy target's decoder",
+  "links": [
+   {
+    "label": "Huntington: Decoding the Civil War",
+    "href": "https://www.huntington.org/verso/decoding-civil-war"
+   },
+   {
+    "label": "Smithsonian on the project",
+    "href": "https://www.smithsonianmag.com/smart-news/you-can-help-decode-thousands-top-secret-civil-war-telegrams-180959561/"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Literature sweep (US military/intelligence slice)",
+  "prior_art": "partly read at the time (ledgers often hold the cipher form; translations exist for many in OR); decipherment phase not published (checked 27 Oct 2026)"
+ }
+]
