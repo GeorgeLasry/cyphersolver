@@ -75,10 +75,13 @@ this country ..."; P4 "... of this govern-ment [901] the ..."; P6 "... re-[12]-p
 - [x] clear-pages: Manning prints the clear text only; no clear copy of the cipher passages found
 - [x] known-keys: JQA/Department 1803-40, Armstrong THE=972, Pinckney, 1788 legation, Jefferson 1787,
   Mountflorence 1801, Sumter 1813 tried directly and under shifts; none fits
-- [ ] print: Manning checked (no decode); Weber 1979 (whether it prints a Poinsett code) and the HSP Poinsett Papers
-  calendar not checked
-- [ ] key-rebuild: context pass over the 1813 decode not yet made (groups that recur, e.g. 708, 1095, 618 116 708 377
-  194 twice, 570 847 1446 twice)
+- [ ] print: Manning checked (no decode); Weber 1979 not online; HSP calendar (1941) full view on HathiTrust
+  mdp.39015034759822 but behind a bot check, to be searched by hand for 'cipher'
+- [x] key-rebuild: context pass made 27 Oct; only 'Lima' (249 413, twice in P4) cross-checks; no new values, the
+  unknown groups occur once or twice in contexts that do not fix them
+- [ ] siblings (2): Lowry, La Guaira 1810-12 (M84 roll 1, frames ~0019-0079), had a cypher for Shaler and Gelston and
+  sent the Department one ciphered letter (Manning vol. 2, Lowry to Graham 30 Nov 1816); if it is the 1810 agents'
+  code with a decode it adds key; sampled at thumbnail scale only
 - [ ] retry: after the context pass
 
 ## 5. Next steps
