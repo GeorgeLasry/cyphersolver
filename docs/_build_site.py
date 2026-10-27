@@ -1869,6 +1869,11 @@ PAGES = [
          blurb='Two French despatches of the Dutch envoy decode with William V&rsquo;s 1782 Grand Chiffre (DECODE R1024), checked on a control letter with known plaintext; digits the DECODE transcription could not place were resolved with a French language model. They report the Prussian refusal to guarantee the Dutch possessions overseas. Van Reede&rsquo;s 1793 letter to the Secret Committee is in another code, with its own page.',
          quote='&ldquo;le Roi a dit qu&rsquo;il ne pouvoit pas garantir nos possessions d&rsquo;outre-mer&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1026'),
+    dict(slug='deboli1789', label='Deboli 1789', year='1789', y=1789.4, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
+         title='Deboli to Stanis&#322;aw August, St Petersburg 1789',
+         blurb='The 106 cipher despatches of the Polish envoy at St Petersburg in 1789 (AGAD Zbi&oacute;r Popiel&oacute;w 17): 103 have their Polish clear text in Zbi&oacute;r Popiel&oacute;w 419 and 417. Eleven pairs were aligned group by group and the code, a Polish syllabary in alphabetical order, rebuilt from them and tested blind. The three despatches with no clear text (25 March, 10 May, 14 December) were then read in part: 5,094 of 5,903 groups.',
+         quote='&ldquo;&#380;e to teraz pora, aby si&#281; Polska pod&#378;wign&#281;&#322;a, a reszt&#281; Panie Bo&#380;e robi&rdquo;',
+         rights='Manuscript images: Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 17 and 419'),
     dict(slug='legation1788', label='Short, Carmichael, Pinckney 1788&ndash;93', year='1788&ndash;1793', y=1790.5, place='The Hague, Madrid, London &rarr; Jefferson', st='solved', stt='existing decipherment',
          title='Short, Carmichael and Pinckney to Jefferson: the last groups of the legation codes Nos. 10, 13 and 16',
          blurb='Three letters to Jefferson in three numerical codes, printed by the Jefferson Papers editors with a few groups unread or guessed: Short from The Hague (1792), Carmichael from Madrid (1788), Pinckney from London (1793). Every one of the 737 groups was transcribed and checked against values decoded at the time in sibling letters: the readings hold, Pinckney&rsquo;s &ldquo;undeciphered 497&rdquo; is 447 on the original, and nine single-occurrence groups stay open.',
@@ -2523,6 +2528,7 @@ IMAGES['sperantio1534'] = None
 IMAGES['r1862'] = None
 IMAGES['r1874'] = None
 IMAGES['legation1788'] = ('legation1788_lead.jpg', 'Pinckney to Jefferson, London, 28 August 1793: the coded passage, &ldquo;447. 735. 753. 1846. 923. 1490 &hellip;&rdquo; (447 regiments are to embark &hellip;), with Jefferson&rsquo;s pencil &ldquo;copy so far only&rdquo;', 'National Archives and Records Administration, RG 59, Despatches from U.S. Ministers to Great Britain, microfilm M30 roll 2, frame 140, via the NARA catalog')
+IMAGES['deboli1789'] = ('deboli1789_lead.jpg', 'Deboli to Stanis&#322;aw August, 6 January 1789, k. 2r: 8 1046 117 637 690 213 &mdash; Do ostatniego listu mego', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 17 k. 2r, via the AGAD image server')
 IMAGES['deboli1791'] = ('deboli1791_lead.jpg', 'Deboli to Stanis&#322;aw August, 7 January 1791: 1944 951 1578 1944 951 21a 2152 &mdash; ani od WKrMci, ani od Deputacyi', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 5 k. 6r, via the AGAD image server')
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None

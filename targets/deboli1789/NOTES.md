@@ -1,6 +1,9 @@
 # Deboli → Stanisław August, St Petersburg cipher despatches, 1789 (Unsolved Catalogue 418)
 
-Status: in progress
+Outcome: read in part. 103 of the 106 despatches have their plaintext in the clear series (read from existing
+decipherment); the key was rebuilt from eleven aligned pairs and applied to the three despatches that have none
+(key recovered based on adjacent plaintext): 25 Mar 95.5%, 14 Dec 89.4%, 10 May 84.8% of cipher groups read as
+sense, measured by `read.py`.
 
 AGAD Warszawa, Zbiór Popielów (fonds 12), sygn. 17: "Deboli. 1789 (cyfry)", 106 cipher despatches of Antoni
 Augustyn Deboli, Polish envoy at St Petersburg, to King Stanisław August, 2 January - 29 December 1789, k. 2-312
@@ -20,12 +23,12 @@ clear word; words left in clear inside the cipher ("vulgo", "Vederemo", "per con
 (about 1,780 words) is far longer than its cipher (1,441 groups), so the cipher carries only part of it; it was left
 out of the key.
 
-The clear pieces are in a secretary's hand, signed "Deboli", with the cabinet's reception note ("reçue le 17. / rep.";
-on 15 Dec "reçue le 26. p. Mr du Hamel"). Whether they are clear duplicates sent by another route or the cabinet's
-decipherments in fair copy is not settled. The 1782 edition (Zielińska & Danilczyk 2017, introduction p. 11-13)
-shows the cabinet deciphered Deboli's letters on separate sheets, and Rolnik 2025 quotes ZP 415/420/421 as the
-correspondence "after deciphering". Either way the text of 103 despatches has been in the archive since 1789-90 and is
-quoted by historians (Łojek 1962, Rolnik 2025).
+The clear pieces are fair copies in a secretary's hand, signed "Deboli", with the cabinet's reception note ("reçue le
+17. / rep."; on 15 Dec "reçue le 26. p. Mr du Hamel"). The sibling sessions on 1790 and 1791 (`targets/deboli1790`,
+`targets/deboli1791`, 27 Oct 2026) reached the same pairing for their years independently and read these fair copies
+as the King's cabinet's decipherments; the 1782 edition (Zielińska & Danilczyk 2017, introduction p. 11-13) shows the
+cabinet deciphering Deboli's letters on separate sheets. deboli1790 checked one 1789 pair (6 Jan) and noted the volume
+"closed the same way". Historians already quote this series (Łojek 1962, Rolnik 2025).
 
 ## Finding 2: the code, rebuilt from the pairs
 
@@ -36,37 +39,55 @@ the French close in clear.
   będzie, 1216 przez, 560 którzy, 1988 bo) and names and phrases (1182 posła, 1578 WKMci, 551 króla, 1307 Rossya,
   21a deputa-, 2148 currentis).
 - Numbering follows the alphabet in two runs: 1 to about 1770 runs a ... z (461 ka, 466 ko, 623 lo, 692 mi, 780 n, 895
-  nie, 961 on, 1262 ru, 1559 w, 1560 wa, 1678-1764 z words); 1775-1788 are nulls; numerals near 1790-1860; a second run
+  nie, 961 on, 1262 ru, 1559 w, 1560 wa, 1678-1764 z words); 1775-1788 are punctuation; numerals near 1790-1860; a second run
   from about 1870 starts again at a (1873 a, 1900 aby, 1926 ale, 1988 bo, 2004 będzie, 2059 by, 2076-2177 c, cz).
-- Nulls: the whole band 1775-1788 (about 1,250 occurrences in the transcriptions; 1786 alone 649, absent on 6 Jan and
-  the commonest group in December). `seed.tsv` fixes them.
+- Punctuation: the whole band 1775-1788 aligns to no letters (about 1,250 occurrences in the transcriptions; 1786 alone
+  649, absent on 6 Jan and the commonest group in December). The 1791 decipherment reads 1786 as a comma and 1775 as a
+  full stop (deboli1791 reveal), so the band is punctuation; the aligner, which drops punctuation from the clear text,
+  treats it as nulls (`seed.tsv`).
 - Letters written under a group (355a, 403a/b, 873c, z, e) mark variants; most fall back on the base value. A
-  7-shaped first digit with a z under it (7601, 7678) is a marked form of 1601, 1678. Framed runs "4000 9933 ... 9933
-  4000" with groups 2300-3409 in the 22 and 29 Dec letters are a second table, not read.
-- Probably the "Cyfra polska" sent to Deboli on 8 March 1783 (ZbPop 444), not online.
+  7-shaped first digit with a z under it (7601, 7678) is a marked form of 1601, 1678.
+- Framed runs "4000 9933 ... 9933" with groups 2300-3409 (22 and 29 Dec) hold French passages in a separate table:
+  the aligner places "quoiqu'il crie avant qu'on l'ecorche", "droit au solide alloit Bartholomée" and "insinuez à Sa
+  Majesté le Roi qu'il prenne confiance dans l'Abassadeur relativement à cette affaire d'Alliance" exactly inside
+  them. They are not the 1791 "code B" (deboli1791's table has none of their groups). Probably the 1780 "Chiffre
+  François Nouveau" (ZbPop 451), not online.
+- Probably the "Cyfra polska" sent to Deboli on 8 March 1783 (ZbPop 444), not online. deboli1791's independent table
+  for the same code agrees with this key where both have the group, up to accents and syllable boundaries.
 
 `key_pass.tsv` is the key rebuilt on the eleven pairs: 630 anchored groups (aligned at least twice, consistently),
 1,736 groups seen. `key_8pairs.tsv` is the eight-pair key used for the control.
 
 ## Finding 3: the three despatches with no clear text
 
-| no. | date | k. | groups | state |
+| no. | date | k. | groups | read as sense |
 |---|---|---|---|---|
-| 024 | 25 Mar 1789 | 77 | 288 | cipher addition "Ajouté au Duplicata seul, le 25. Mars"; hand-read, 95.5% (`reading/c024_1789-03-25.txt`) |
-| 042 | 10 May 1789 | 138-142v | 4,393 | key gives 97.6% a value; not yet checked by hand |
-| 104 | 14 Dec 1789 | 296-298v | 1,222 | mixed cipher and 39 clear Polish passages; first half checked by hand, 93.3% so far |
+| 024 | 25 Mar 1789 | 77 | 288 | 275 (95.5%); cipher addition "Ajouté au Duplicata seul, le 25. Mars" |
+| 042 | 10 May 1789 | 138-142v | 4,393 | 3,727 (84.8%) |
+| 104 | 14 Dec 1789 | 296-298v | 1,222 | 1,092 (89.4%); 39 clear Polish passages inside the cipher |
 
-The 25 March addition (Postscriptum to the duplicate): Deboli will ask in every letter what Hetman Branicki is doing;
-Prince Nassau-Siegen writes that Branicki is one of the most devoted to Russia; Nassau had no time for the King's
-answer; Russia wants no new war. The 14 December letter: Potemkin had his courier tell the Empress he met rudeness and
-had to fight for horses crossing Poland; Russian couriers given escorts in Poland "dla bezpiecznieyszego przeiazdu";
-Stackelberg's reports against Deboli; Deboli asks the King for discretion and a reply he can show.
+All three: 5,094 of 5,903 groups (86.3%). Counted by `read.py` from `reading/*.tsv`: a group counts when its key
+value (or a context reading, `reading/*.fix.tsv`) makes sense in place; groups whose key value does not fit were
+marked unread by hand on 27-28 Oct 2026.
+
+- 25 March, Postscriptum to the duplicate: Deboli will ask in every letter what Hetman Branicki is doing; Prince
+  Nassau-Siegen writes that Branicki is one of the most devoted to Russia; Nassau had no time for the King's answer;
+  Russia wants no new war.
+- 10 May: Potemkin has left for the army; long talks with Nassau-Siegen on the "bunt" (the Ukrainian rising rumours),
+  Branicki, the withdrawal of the Russian commissariats from Poland; a letter of Potemkin to Markov; Stackelberg
+  reported "że krol pruski ofiaruie swoią pomoc Polsce"; someone wrote to Potemkin "że WKMci chciałeś Branickiego
+  otruć"; the King's policy towards Repnin, the Primate and the bishopric of Kraków; Krzyżanowski; "że to teraz pora,
+  aby się Polska podźwignęła, a resztę Panie Boże robi".
+- 14 December: Potemkin had his courier tell the Empress he met rudeness and had to fight for horses crossing Poland;
+  Russian couriers given escorts "dla bezpiecznieyszego przeiazdu"; Stackelberg's reports against Deboli; Deboli asks
+  to be recalled ("Śmiam o tym namienić WKrMci, abyś zawczasu ... kogo na zastąpienie mię destynował in petto"), that
+  the letter be burnt, and that the answer come in a separate packet he can decipher himself.
 
 ## Method and controls
 
-- `align.py`: banded/beam DP aligning each cipher group with 0-10 letters of the clear text, cost from the
-  alphabetical order of known groups, iterated anchors. `decode.py`: key-only decoding with the alphabetical bracket for
-  unknown groups. `read.py`: token-level reading with hand overrides (`reading/*.fix.tsv`), counts tokens read.
+- `align.py`: beam DP aligning each cipher group with 0-10 letters of the clear text, cost from the alphabetical order
+  of known groups, iterated anchors. `decode.py`: key-only decoding with the alphabetical bracket for unknown groups.
+  `read.py`: token-level reading with hand overrides (`reading/*.fix.tsv`), counts tokens read.
 - Control 1 (failed, 27 Oct): filling unknown groups from a Polish LM inside their alphabetical bracket (`fill.py`).
   Held-out 18 Dec letter, 171 hidden groups: 5-8 exact. Not used for any reading.
 - Control 2 (worked, 27 Oct): key from seven pairs without 18 Dec; the 18 Dec cipher decoded blind gets a value for
@@ -80,27 +101,31 @@ Stackelberg's reports against Deboli; Deboli asks the King for discretion and a 
   on ZbPop 17. No interlinear decipherment on the cipher letters (pages sampled across ZbPop 17, 428, 4, 5, 416).
 - Zielińska & Danilczyk, Korespondencja polityczna Stanisława Augusta: Augustyn Deboli 1781 (2015), 1782 (2017):
   printed from the cabinet's registers AKP 265/266 (Archiwum Królestwa Polskiego), not from ZbPop. Later years unedited.
-- D. Rolnik 2025 (Ignatianum, Rozprawy, 2025.3103.14) and J. Łojek, Misja Debolego w Petersburgu (1962) used the
-  clear series. Not on DECODE; not in this repository before.
+- D. Rolnik 2025 (Rocznik Filozoficzny Ignatianum 31/3) and J. Łojek, Misja Debolego w Petersburgu (1962) used the
+  clear series. Not on DECODE.
+- Sibling sessions of 27 Oct 2026: deboli1790 (closed, deciphered at the time; 6 Jan 1789 pair checked) and deboli1791
+  (written up; five pairs aligned, two codes). Neither read the three despatches without a clear text.
 
 ## Remaining gaps
 
-- c042 (10 May): hand check of the 4,393-group decode against sense, marking groups that do not read. Not blocked.
-- c104 (14 Dec): hand check of k.297r-298v; 54 groups without a value. Not blocked.
-- c024 (25 Mar): 13 groups open (1407, 518, 437, 108, 2140b and fragments that do not read): scattered codes.
-- The 4000/9933 framed runs in c107 and c109 (a second table): their clear text is in ZbPop 417, so they can be paired
-  with the clear words at those points.
-- The 92 paired despatches not transcribed: their plaintext exists in ZbPop 419; only eleven were checked group by group.
+- 10 May 1789 (no. 042): 666 of 4,393 groups unread - blocker: open-codes; groups with no value in the eleven pairs or
+  whose aligned value does not fit in place, in a hand where 0/8 are hard to tell apart (154 groups transcribed with ?);
+  more pairs near May and a second look at the doubtful digits would narrow them.
+- 14 Dec 1789 (no. 104): 130 of 1,222 groups unread - blocker: open-codes; same cause, a different hand (1185/1105).
+- 25 Mar 1789 (no. 024): 13 of 288 groups unread - blocker: open-codes; 1407, 518, 437, 108, 2140b and fragments that
+  do not read, each once.
 
 ## Escalation
 
-1. Siblings: done. Not on DECODE (no sibling records). ZbPop 419 and 417 pair with 103 of 106 despatches; eleven pairs
-   aligned. Leaves next to the three unpaired despatches in ZbPop 17 and the clear pieces of the neighbouring dates
-   (24 Mar, 8 and 12 May, 15 Dec) checked: no clear text of 25 Mar, 10 May or 14 Dec among them.
-2. Clear pages: done. c104 carries 39 clear Polish passages, used in its reading; c024 is headed "Ajouté au Duplicata
-   seul".
-3. Known keys: ZbPop 444 (1783 Polish cipher), 451, 453/454 are not online (needs the archive); no key on DECODE.
-4. Print: Zielińska & Danilczyk print only 1780-1782; 1789 unedited (Rolnik 2025).
-5. Key rebuild: done from eleven pairs, 630 anchored groups.
-6. Retry: LM gap-filling failed its control and was dropped. Next: finish the hand reading of c042 and c104 (work, not
-   blocked), and add pairs near 10 May if groups stay open.
+- [x] siblings: ZbPop 419 and 417 pair with 103 of 106 despatches; eleven pairs aligned. The leaves around nos. 024,
+  042, 104 and the clear pieces of the neighbouring dates (24 Mar, 8 and 12 May, 15 Dec) checked: none is their text.
+  Not on DECODE.
+- [x] clear-pages: c104 carries 39 clear Polish passages, used; c024 is headed "Ajouté au Duplicata seul"; the French
+  passages in the 4000/9933 frames of 22 and 29 Dec are in the clear copies.
+- [x] known-keys: ZbPop 444, 451, 453/454 not online. deboli1791's code tables (same code) tried on every unread group:
+  they agree with this key and added three readings (1586 wiadomość, 48 dość, 1612 wyraż-); code B does not occur.
+- [x] print: Zielińska & Danilczyk print 1780-1782 only; 1789 unedited (Rolnik 2025); nothing in print for these three.
+- [x] key-rebuild: eleven pairs, 630 anchored groups; alphabetical brackets used for context readings (1175
+  Postscriptum, 2161 często, 1287 respons, 2094 czy, 1369 śl, 1711 zal-, 2009 bie).
+- [x] retry: every group of the three letters re-read with the eleven-pair key and the 1791 table on 27-28 Oct; LM
+  gap-filling tried and failed its control.

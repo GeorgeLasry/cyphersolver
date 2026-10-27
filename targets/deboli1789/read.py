@@ -48,6 +48,7 @@ def main():
     ap.add_argument('--key', default='key_pass.tsv')
     ap.add_argument('--validation', action='store_true')
     ap.add_argument('--show', action='store_true', help='print each manuscript line: first index, then values joined by |')
+    ap.add_argument('--text', action='store_true', help='write reading/<stem>.decoded.txt: each manuscript line decoded')
     a = ap.parse_args()
     key = load_key(os.path.join(HERE, a.key))
     os.makedirs(os.path.join(HERE, 'reading'), exist_ok=True)
@@ -70,6 +71,21 @@ def main():
                 if loc is None:
                     break
                 buf.append('' if src == 'null' else ('{' + v + '}' if src == 'open' else (val.upper() if src == 'clear' else val)))
+        if a.text:
+            with open(os.path.join(HERE, 'reading', st + '.decoded.txt'), 'w', encoding='utf-8') as f:
+                f.write('# ' + st + ': each manuscript line decoded with the key rebuilt on the pairs (key_pass.tsv) and the hand\n'
+                        '# readings in reading/' + st + '.fix.tsv. No word division (the code has none); old spelling as the code\n'
+                        '# gives it. {group} = unread (no value, or a value that makes no sense in place); [x] = read from context\n'
+                        '# and the alphabetical bracket (grade I); CAPITALS = written in clear in the cipher; punctuation groups omitted.\n')
+                line, buf = None, []
+                for i, loc, v, val, src in rows + [(len(rows), None, '', '', '')]:
+                    if loc != line:
+                        if buf:
+                            f.write(f'{line}: ' + ''.join(buf) + '\n')
+                        line, buf = loc, []
+                    if loc is None:
+                        break
+                    buf.append('' if src == 'null' else ('{' + v + '}' if src == 'open' else (' ' + val.upper() + ' ' if src == 'clear' else ('[' + val + ']' if src == 'context' else val))))
         n = len(rows)
         read = sum(1 for r in rows if r[4] != 'open')
         by = {s: sum(1 for r in rows if r[4] == s) for s in ('key', 'null', 'clear', 'context', 'open')}
