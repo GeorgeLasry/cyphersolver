@@ -1,0 +1,120 @@
+{
+ "schema_version": 1,
+ "target": "revenga1822",
+ "title": "Revenga's intercepted letter from Madrid, 1822 (catalogue 641): 56 cipher passages in a monoalphabetic substitution with the word space enciphered",
+ "documents": [
+  {
+   "id": "t33-3-enc4",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Ministers to Colombia vol. 3 (microfilm T33 roll 3), naId 189273979, frames T33-03-0055 to -0058; enclosure No. 4 to Anderson's No. 7, Bogota, 19 Jan 1824; '2o. duplicado', intercepted in France",
+   "date": "1822 (about May-June 1822 by internal evidence; not confirmed)",
+   "year": 1822,
+   "country": "Colombia",
+   "route": "Madrid -> Bogota (duplicate sent through France, intercepted there)",
+   "places": {"from": "Madrid", "to": "Bogota"},
+   "language": "Spanish",
+   "pages": 4,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "Manning 1925 vol. 2 doc. 641 p. 1272: 'Not printed ... no key to the cipher was furnished.' The English translation signed 'W. B. H.' on frames 0058-0061 covers the clear parts only. Bogota received the original by another channel; its decipherment, if kept, was not looked for."
+   },
+   "length": {
+    "tokens": 2295,
+    "distinct": 30,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA naId 189273979, frames T33-03-0055, -0056, -0057, -0058 (300 dpi)",
+    "corrections": 10,
+    "image_quality": "fair",
+    "notes": "First pass; 56 groups. Ten groups re-read on the film and corrected (seven by an independent verifier, three in a second pass). Counted with decrypt.signs: 2,295 cipher signs with ll as one sign, 336 of them the word space a; 30 distinct signs including the comma-like mark."
+   }
+  }
+ ],
+ "system": {
+  "types": ["monoalphabetic"],
+  "summary": "Simple substitution on Spanish in lowercase letters: cipher a = word space, the digraph ll = plain s, c = plain ll, ñ = plain l; clear text and cipher alternate within sentences.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 30,
+  "diacritics": {"used": true},
+  "homophones": {"used": false},
+  "nomenclator": {"present": false},
+  "nulls": {"present": false},
+  "key_order": "random",
+  "word_division": "separator symbol",
+  "doubled_letters": "written twice",
+  "notes": "Diacritics: ñ is a cipher sign (plain l), f stands for plain ñ. Open: the sign for plain z (read g in the first pass), the sign for plain j, and whether a final z or k marks a stop. A comma-like mark resembling x stands for a comma inside some groups. Plain ll is the single sign c; other doubled letters are rare and were not checked."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Manning 1925 vol. 2 doc. 641 does not print the enclosure (no key furnished). One web search with Spanish key phrases found no printed text. Not checked: AGN Bogota (Seccion Republica), Archivo Santander, Blanco-Azpurua, Zubieta 1924; Bogota had the original and may have read it.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": ["images", "cleartext context"],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 641) and the rules; the AI agents fetched the frames, transcribed, solved and verified. No target-specific human intervention.",
+  "tools": [
+   "quadgram hill-climb against Spanish statistics (solver's working script, not kept)",
+   "decrypt.py (decryption and controls)"
+  ],
+  "models": ["AI language-model agents (WAINUT); a vision-capable language model for the transcription"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {"date": "2026-10-27", "kind": "access", "what": "Located Anderson's No. 7 of 19 Jan 1824 in T33 roll 3 (naId 189273979), frames 0044-0047, and enclosure No. 4 on frames 0055-0058; text order 0057R, 0058L, 0056L, 0056R, 0055R.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "transcription", "what": "First-pass transcription of the 56 cipher groups and the clear text after each.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "solver", "technique": ["hill climbing", "language-model scoring"], "what": "Quadgram hill-climb against Spanish, ll merged into one symbol and cipher a removed: 'los dos grandes partidos republicano y realista constitucional' at once; cipher a = word space; the full key followed.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "verification", "what": "Independent agent re-downloaded the four frames, re-read seven passages and decrypted them with its own code: fluent Spanish matching the clear text. It found dropped letters (C06), lll = ll + l, c = ll (not j) and the comma-like x mark.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "control", "technique": ["statistical test"], "what": "Share of decrypted words in the repository Spanish word list: key 0.427; 2,000 random keys max 0.092; 2,000 in-group shuffles max 0.083; rotated key 0.042.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "transcription", "what": "Second pass on three groups: C39 'nulidad' (e, not c), C40 'por España' (f = ñ on the film), the comma mark in C10; verifier readings applied to C01, C05, C06, C07, C42, C52, C53.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Reading as Spanish sentences with the clear text, one-letter slips corrected, doubtful words marked [?word]; English translation. About a dozen places open.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "Manning 1925 vol. 2 p. 1272 checked on archive.org: enclosure not printed, no key furnished. One web search with key phrases found no printed text.", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The substitution key was recovered from the cipher groups alone by a hill-climb against Spanish statistics; no key or plaintext was available.",
+  "contribution": ["transcription", "key recovered"],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, docs/_check_reading.py --file: hole rate 0.132 over 919 words (clear and deciphered text together; the word list also misses some period spellings and names).",
+  "fraction_read": 0.868,
+  "verification": ["independent verification", "historical consistency"],
+  "provenance": "contributed",
+  "credits": [
+   {"who": "lccompany", "role": "solution", "note": "key recovered from the ciphertext; 56 cipher groups decrypted and read in part, with English translation", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "transcription", "note": "first-pass transcription of NARA T33 roll 3 frames 0055-0058; ten groups re-read", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "verification", "note": "independent re-reading of seven passages, own decryption and controls", "date": "2026-10-27"}
+  ],
+  "gaps": [
+   {"item": "doubtful or open words in about a dozen places (C01 end, C05, C08, C12, C17-C19, C23, C36, C38, C43, C49, C50, C53, C54, C55-C56)", "blocker": "not-attempted", "detail": "first-pass transcription; a full second pass on the frames should settle most"},
+   {"item": "cipher signs for plain z and plain j; final z or k as a stop", "blocker": "too-short", "detail": "two to four occurrences each"},
+   {"item": "clear text of 0057 left, 0055 right (top) and 0056 right (end)", "blocker": "not-attempted", "detail": "not transcribed"}
+  ],
+  "texts": [
+   {
+    "doc": "t33-3-enc4",
+    "label": "Revenga (with Echeverría?) to the Colombian Secretary of Foreign Affairs, Madrid 1822, duplicate intercepted in France (NARA T33 roll 3, frames 0055-0058)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.868,
+    "summary": "The Colombian commissioners in Madrid report on Spanish politics in 1822: republicans and constitutional royalists at odds, Riego, the fall of the ministers, an anti-constitutional plot, an empty treasury and talk of national bankruptcy. They try to unite the American deputies and get a motion on extraordinary Cortes, argue against fears that Russia, Austria and Prussia had divided America, hope the Cortes will authorise the Executive to treat with them, and report Apodaca's private pessimism and La Torre's request for men and money. The cipher carries the names and the sensitive judgements.",
+    "reading_review": {"grade": "B", "by": "WAINUT (AI language-model agent, checked against the frames)", "date": "2026-10-27", "note": "Coherent Spanish sentences across five fragments; about a dozen words doubtful or open because the transcription is a first pass. The translation follows the same holes."}
+   }
+  ],
+  "key_file": "key.txt",
+  "notes": "Contributed by WAINUT (catalogue 641). We claim the decipherment of this intercepted NARA copy only: Bogota received the original and may have read it; the Colombian archives were not searched."
+ }
+}
