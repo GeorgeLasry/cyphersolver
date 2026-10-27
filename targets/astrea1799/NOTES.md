@@ -15,16 +15,21 @@ The catalogue entry calls the packet "French consular dispatches in cipher to Ta
 consul, New York) and others". The sources narrow this down.
 
 - **Cooper's list.** Papers of Alexander Hamilton (PAH), ed. Harold C. Syrett, vol. 23 (1976), pp. 12-13, note 1
-  ([Founders Online, Hamilton/01-23-02-0010](https://founders.archives.gov/documents/Hamilton/01-23-02-0010)), quotes
-  Samuel Cooper's "List of papers received ... 27th March 1799" (copy, Adams Family Papers, MHS). It lists two letters
-  of J. A. B. Rozier to Talleyrand: 27 Oct 1798, and 22 Nov 1798 with an extract of Rozier to Hédouville of
-  20 Nov 1798. Cooper writes: "Both letters are in code". With them came "a number of dispatches from John Gavino",
-  the US consul at Gibraltar, among them Gavino to Pickering, 13 Feb 1799.
+  ([Founders Online, Hamilton/01-23-02-0010](https://founders.archives.gov/documents/Hamilton/01-23-02-0010)), cites
+  Samuel Cooper's "List of papers received ... 27th March 1799" (copy, Adams Family Papers, MHS). From it the editors
+  give two letters of J. A. B. Rozier to Talleyrand: 27 Oct 1798, and 22 Nov 1798 with an extract of Rozier to
+  Hédouville of 20 Nov 1798. The editors add: "Both letters are in code". With them came "a number of dispatches from
+  John Gavino", the US consul at Gibraltar, among them Gavino to Pickering, 13 Feb 1799.
+- **The capture.** The same note quotes the Boston *Massachusetts Mercury* of 29 Mar 1799: "a package of Dispatches,
+  written in cyphers, addressed to Citoyen Talleyrand", found hidden on the ship Astrea, Capt. Pearce, from New York.
+  A British frigate took the ship and brought it into Gibraltar. Hamilton to Pickering, 4 Apr 1799 (the document the
+  note belongs to): Rozier told Hamilton the dispatches were probably his, and would write to Pickering "offering
+  the means of deciphering his dispatches".
 - **Pickering's numbering.** PAH 23, p. 200, note 1
   ([Founders Online, Hamilton/01-23-02-0200](https://founders.archives.gov/documents/Hamilton/01-23-02-0200)), quotes
   Pickering to Rozier, 12 Apr 1799 (RG 59, Domestic Letters, vol. 11). It names two letters, numbered 1 and 2, dated
   6 Brumaire and 2 Frimaire an VII, the second with a postscript of 3 Frimaire. The letters had "now come to hand".
-  Pickering asked Rozier for a copy of the cypher.
+  Pickering asked Rozier for a copy of the cypher, because "The length of the letters" made deciphering a long job.
 - **Same letters.** Year VII began on 22 Sep 1798 (1 Vendémiaire). So 6 Brumaire VII = 27 Oct 1798, 2 Frimaire VII =
   22 Nov 1798 and 3 Frimaire VII = 23 Nov 1798. These are Cooper's two dates. Pickering's nos. 1 and 2 are the two
   letters of the packet.
@@ -34,20 +39,22 @@ consul, New York) and others". The sources narrow this down.
 
 The cipher material is therefore Rozier's two letters, the postscript and the Hédouville extract. No source names a
 second cipher writer. "And others" in the catalogue has no support. The Gavino dispatches came in the same packet.
-That they are in plain text is our inference: no source says so, but Cooper says only the two Rozier letters are in
-code.
+That they are in plain text is our inference: no source says so, but the editors say only that the two Rozier letters
+are in code.
 
 ## 2. What happened to it in 1799
 
 - **Quincy, 27-28 Mar 1799.** Cooper brought the packet to Adams on 27 Mar. Cooper to Adams, 28 Mar 1799 (quoted in
-  PAH 23:12-13 n.1): James Lovell "despairs of being able to find a Key". (The catalogue quotes Adams's own letter
-  for Lovell's despair; we did not re-check that wording.)
+  PAH 23:12-13 n.1): James Lovell "despairs of being able to find a Key". Adams's own letter of 1 Apr (below) has
+  "despairs of being able to make a key", the wording the catalogue quotes.
 - **Adams to Pickering, 1 Apr 1799**
   ([Founders Online, Adams/99-02-02-3399](https://founders.archives.gov/documents/Adams/99-02-02-3399), Early Access;
-  original NARA RG 59, Letters Received, naId [55028996](https://catalog.archives.gov/id/55028996)). Thomas B. Adams
-  and William Shaw had copied the papers. Adams: "These numbers may contain much treason". He "thought it best to keep
-  the copies from abroad for the present". The phrase can mean he kept the copies back, or kept them from
-  circulating. On 12 Apr Pickering had the letters themselves, so the originals went to Philadelphia.
+  original NARA RG 59, Letters Received, naId [55028996](https://catalog.archives.gov/id/55028996)). "My son and
+  Mr. Shaw" had copied the papers (Thomas Boylston Adams and William Shaw, as PAH identifies them). Adams: "These
+  numbers may contain much treason". He "thought it best to keep the copies from abroad for the present". The phrase
+  can mean he kept the copies back, or kept them from circulating. On 12 Apr Pickering wrote that "the letters found
+  on board the ship Astrea" had "now come to hand". So probably the originals went to Philadelphia, but no source
+  says whether he got the originals or the copies.
 - **Pickering to Joshua Sands, 31 May 1799** (letterpress copy, MHS, quoted in PAH 23:12-13 n.1): the letters are
   "harmless".
 - **Pickering to Hamilton, 18 Jun 1799** (PAH 23:199-200, Founders Hamilton/01-23-02-0200). Rozier "exhibited his
@@ -57,8 +64,8 @@ code.
   States". Hamilton's letter of 13 Jun 1799, to which this answers, is a "Letter not found" entry in PAH 23:186
   ([Founders Online, Hamilton/01-23-02-0183](https://founders.archives.gov/documents/Hamilton/01-23-02-0183)).
 
-This is a contemporary check-reading with a two-sentence summary. It is not a decipherment: Pickering printed no
-plaintext and we found none. Pickering says he checked "every passage examined", not the whole text.
+This is a contemporary check-reading with a two-sentence summary. It is not a decipherment: Pickering gave no
+plaintext and we found none in print. Pickering says he checked "every passage examined", not the whole text.
 
 ## 3. Where the text may be
 
@@ -68,7 +75,8 @@ plaintext and we found none. Pickering says he checked "every passage examined",
   Cooper to JA, 28 March 1799". Slip
   [100403](https://www.masshist.org/adams-resources/slipfile/view_slip.php?id=100403): Cooper to Adams, Boston,
   28 Mar 1799, 1 p., reel 393. The 32 pages are either the Gavino originals or the copies made by T. B. Adams and
-  Shaw. Which one is open. Microfilm only, not online.
+  Shaw. Which one is open. PAH 23:12-13 n.1 cites Gavino's letter of 13 Feb 1799 as an autograph in the Adams Family
+  Papers, with copies there too, so at least that original stayed with Adams. Microfilm only, not online.
 - **NARA, RG 59, Letters Received, file unit January thru June 1799**
   ([naId 55028996](https://catalog.archives.gov/id/55028996)). The catalogue record is Adams's cover letter of 1 Apr
   1799, one sheet, Box 40. Its scope note: Adams is "submitting a packet of papers sent by the United States Consul at
@@ -93,7 +101,7 @@ plaintext and we found none. Pickering says he checked "every passage examined",
 ## 5. Corrections to the catalogue entry
 
 - Correspondents: "J. A. B. Rozier (former French vice consul at New York) → Talleyrand", not "Rozier ... and
-  others". Only the two Rozier letters are in code.
+  others". The editors name only the two Rozier letters as in code.
 - Dates: no. 1, 6 Brumaire VII = 27 Oct 1798; no. 2, 2 Frimaire VII = 22 Nov 1798, postscript 3 Frimaire VII =
   23 Nov 1798, with an extract of Rozier to Hédouville, 20 Nov 1798. The catalogue's "Nov-Dec 1798" is off by a month
   at both ends.
@@ -121,6 +129,9 @@ plaintext and we found none. Pickering says he checked "every passage examined",
 - [n/a] retry: nothing has been decoded, so there are no groups to retry
 
 ## Sources (read 27 Oct 2026)
+
+The four Founders Online pages were read a third time in a browser during review on 27 Oct 2026; the quotations
+above match them.
 
 - https://founders.archives.gov/documents/Hamilton/01-23-02-0010 (PAH 23:12-13, note 1)
 - https://founders.archives.gov/documents/Hamilton/01-23-02-0183 (PAH 23:186)
