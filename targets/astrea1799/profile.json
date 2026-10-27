@@ -1,0 +1,129 @@
+{
+ "schema_version": 1,
+ "target": "astrea1799",
+ "title": "J. A. B. Rozier to Talleyrand, nos. 1 and 2, 6 Brumaire and 2 Frimaire an VII (27 Oct and 22 Nov 1798): the cipher letters of the Gibraltar packet sent to John Adams in March 1799",
+ "documents": [
+  {
+   "id": "no1",
+   "read": "not read",
+   "shelfmark": "MHS, Adams Family Papers, Adams Papers microfilm reel 393 (slip 100399, 'official dispatches, partly in cipher', 32 p., packet or Adams copies); originals received by Pickering in April 1799, location not established; cover letter NARA RG 59, Letters Received, Jan-Jun 1799, Box 40, naId 55028996",
+   "date": "6 Brumaire an VII = 27 Oct 1798",
+   "year": 1798,
+   "country": "United States",
+   "route": "United States -> Paris (taken at sea; sent on by the US consul at Gibraltar, John Gavino)",
+   "places": {"from": "United States", "to": "Paris"},
+   "language": "French",
+   "pages": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["none"],
+    "source": "Rozier's own plain copies were shown to Pickering by 18 Jun 1799 (Pickering to Hamilton, PAH 23:199-200); their location is not recorded and no plaintext is in print. Pickering gives a two-sentence summary only.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "not transcribed: no image online",
+    "image_quality": "no images",
+    "notes": "Not seen. Adams called the text 'These numbers'; Cooper showed Lovell 'the method in which the figures are placed'. MHS reel 393 is microfilm only; NARA naId 55028996 has no digital objects and is marked 'specially protected items ... not available to researchers'."
+   }
+  },
+  {
+   "id": "no2",
+   "read": "not read",
+   "shelfmark": "as no1 (MHS Adams Papers reel 393, slip 100399; originals location not established)",
+   "date": "2 Frimaire an VII = 22 Nov 1798, postscript 3 Frimaire = 23 Nov 1798; with an extract of Rozier to Hédouville, 20 Nov 1798",
+   "year": 1798,
+   "country": "United States",
+   "route": "United States -> Paris (taken at sea; sent on by the US consul at Gibraltar, John Gavino)",
+   "places": {"from": "United States", "to": "Paris"},
+   "language": "French",
+   "pages": "unknown",
+   "cleartext_in_document": "unknown",
+   "plaintext": {
+    "location": ["none"],
+    "source": "As no1: Rozier's plain copies shown to Pickering in June 1799, location not recorded; summary only.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "not transcribed: no image online",
+    "image_quality": "no images",
+    "notes": "Not seen. Cooper's list: 'Both letters are in code'. Whether the Hédouville extract is in cipher is not stated."
+   }
+  }
+ ],
+ "system": {
+  "types": ["undetermined"],
+  "summary": "Not seen. A numerical system ('These numbers', Adams; 'the method in which the figures are placed', Cooper), Rozier's own cypher, shown to Pickering in June 1799.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": "unknown"},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "notes": "symbol_kind 'digits' rests on Adams's and Cooper's words, not on a view of the letters."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Contemporary check-reading: Pickering to Hamilton, 18 Jun 1799 (Papers of Alexander Hamilton, ed. Syrett, vol. 23, 1976, pp. 199-200; Founders Online Hamilton/01-23-02-0200). Rozier 'exhibited his cypher' and plain copies; Pickering found 'in every passage examined, an exact correspondence' and summarised the content. No plaintext in print. Background PAH 23:12-13 n.1 (Founders Hamilton/01-23-02-0010).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": ["cleartext context"],
+  "attack": "none",
+  "human_role": "WAINUT set the task (catalogue 628) and the rules; the AI agents searched the sources and a second agent re-read each one. No target-specific human intervention.",
+  "tools": [
+   "Founders Online (read in a browser; scripts get a 202)",
+   "MHS Adams Papers slip file",
+   "NARA catalogue API"
+  ],
+  "models": ["AI language-model agents (WAINUT)"],
+  "sessions": 1,
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {"date": "2026-10-27", "kind": "literature search", "what": "PAH 23:12-13 n.1 (Founders Hamilton/01-23-02-0010): Cooper's 'List of papers received ... 27th March 1799' gives two Rozier letters to Talleyrand, 27 Oct and 22 Nov 1798 (with an extract to Hédouville, 20 Nov 1798), 'Both letters are in code', and Gavino's dispatches; Cooper to Adams 28 Mar 1799 (Lovell 'despairs of being able to find a Key'); Pickering to Sands 31 May 1799 ('harmless').", "result": "worked"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "PAH 23:199-200 (Founders Hamilton/01-23-02-0200): Pickering to Hamilton, 18 Jun 1799, checked the coded letters against Rozier's cypher and plain copies and summarised the content (parties, recent congressional elections, nothing hostile); note 1 quotes Pickering to Rozier, 12 Apr 1799 (letters nos. 1 and 2, 6 Brumaire and 2 Frimaire an VII, P.S. 3 Frimaire). Hamilton's letter of 13 Jun 1799 is 'Letter not found' (PAH 23:186). No plaintext printed.", "result": "partial"},
+  {"date": "2026-10-27", "kind": "verification", "technique": ["other"], "what": "Republican calendar: 1 Vendémiaire VII = 22 Sep 1798, so 6 Brumaire VII = 27 Oct 1798 and 2 Frimaire VII = 22 Nov 1798, Cooper's two dates; Pickering's nos. 1 and 2 are the two letters of the packet.", "result": "worked"},
+  {"date": "2026-10-27", "kind": "access", "what": "MHS slip file 100399 (Consul at Gibraltar to JA, ante 27 Mar 1799, 'official dispatches, partly in cipher', 32 p.) and 100403 (Cooper to JA, 28 Mar 1799): Adams Papers microfilm reel 393, not online.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "access", "what": "NARA naId 55028996 (Adams to Pickering, 1 Apr 1799, RG 59 Letters Received, Box 40): no digital objects; scope note 'they have not been deciphered'; marked not available to researchers.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "literature search", "what": "Three web searches (English and French) for an edition of the Rozier letters, a printed plaintext or a study of Rozier's cypher: none found. Short search only.", "result": "failed"},
+  {"date": "2026-10-27", "kind": "verification", "what": "Second agent re-read every cited source: quotations confirmed; outcome narrowed from 'earlier solution found' to a contemporary check-reading with summary only; Gavino dispatches being plain is an inference; 'keep the copies from abroad' is ambiguous; Rozier to Pickering 3 Apr 1799 'not found' is our search result, not the editors'.", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "offline only",
+  "key": "none",
+  "method": "not applicable",
+  "method_basis": "No image of either letter is online (MHS microfilm reel 393; NARA naId 55028996 without images), so no ciphertext was seen. The work is a pointer: the packet's contents identified and dated, and Pickering's contemporary check-reading cited exactly.",
+  "contribution": ["sender or date identified", "catalogue correction"],
+  "fraction_read": 0,
+  "verification": ["none"],
+  "provenance": "mixed",
+  "credits": [
+   {"who": "lccompany", "role": "pointer", "note": "exact citations for Pickering's contemporary check-reading (PAH 23:199-200) and the packet's history (PAH 23:12-13 n.1); MHS reel 393 slips 100399 and 100403", "date": "2026-10-27"},
+   {"who": "lccompany", "role": "identification", "note": "the cipher part is Rozier's nos. 1 and 2 (6 Brumaire and 2 Frimaire an VII = 27 Oct and 22 Nov 1798, P.S. 3 Frimaire, Hédouville extract); 'and others' not supported", "date": "2026-10-27"},
+   {"who": "contemporary", "role": "prior solution", "note": "partial: Rozier's own cypher and plain copies, checked by Pickering against the coded letters in June 1799; summary only, location of the copies not recorded", "date": "1799", "source": "Pickering to Hamilton, 18 Jun 1799, PAH 23:199-200"},
+   {"who": "syrett", "role": "pointer", "note": "editorial notes of PAH 23 assemble Cooper's list, Cooper to Adams, Pickering to Rozier and Pickering to Sands", "date": "1976", "source": "The Papers of Alexander Hamilton, ed. Harold C. Syrett, vol. 23 (1976), pp. 12-13 n.1, 199-200"}
+  ],
+  "gaps": [
+   {"item": "Rozier nos. 1 and 2 with postscript and Hédouville extract, the ciphertext", "blocker": "needs-physical-access", "detail": "MHS Adams Papers microfilm reel 393 (slip 100399) or an unlocated RG 59 file; no image online"},
+   {"item": "Rozier's cypher and plain copies", "blocker": "needs-physical-access", "detail": "shown to Pickering in June 1799; location not recorded (Pickering Papers MHS, RG 59 Misc. Letters M179, French consular series are candidates)"}
+  ],
+  "notes": "Contributed by WAINUT (catalogue 628). A pointer only: no text was seen or read. provenance is mixed because the catalogue entry (NARA sweep, 27 Oct 2026) already cited Pickering's letter; WAINUT added the identification and the citations. The checker allows contributed only with a solution credit, and there is no solution here. The cipher material is only Rozier's two letters; the Gavino dispatches in the packet are probably plain (inference)."
+ }
+}
