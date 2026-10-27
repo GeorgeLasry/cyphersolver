@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "target": "mercier1761",
+  "title": "La Touche and Le Mercier de La Rivière (Martinique) to the Navy minister, 12 June 1761 (ANOM COL C8 A 64 f° 1)",
+  "documents": [
+    {
+      "id": "C8A64-f1",
+      "shelfmark": "Archives nationales d'outre-mer, COL C8 A 64 f° 1 (duplicata)",
+      "date": "12 Jun 1761",
+      "year": 1761,
+      "country": "France",
+      "route": "Martinique -> Versailles",
+      "language": "French",
+      "pages": 5,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Margin note says it was deciphered on arrival ('déchiffrée et remise à M. Accaron par M. Villain'), but no decipherment is filed with it."
+      },
+      "length": {
+        "tokens": 818,
+        "distinct": 217,
+        "unit": "code groups",
+        "measured": true,
+        "file": "groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "ANOM IREL images FRANOM23_C8A_064_0001-0005 (ark:/61561/zn401b233uu)",
+        "image_quality": "good",
+        "notes": "Clear letter with long runs of comma-separated 2-3 digit groups on images 2-5; four caret insertions; 514/614 and 553/653 the main doubtful readings."
+      }
+    },
+    {
+      "id": "C8A63-f208",
+      "shelfmark": "Archives nationales d'outre-mer, COL C8 A 63 f° 208 (no. 178, primata)",
+      "date": "21 Aug 1761",
+      "year": 1761,
+      "country": "France",
+      "route": "Martinique -> Versailles",
+      "language": "French",
+      "pages": 2,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ],
+        "source": "Contemporary decipherment written above every code line."
+      },
+      "length": {
+        "tokens": "unknown",
+        "distinct": "unknown",
+        "unit": "code groups",
+        "measured": false,
+        "file": "sibling178_pairs.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "ANOM IREL FRANOM23_C8A_063_0374-0375 (ark:/61561/zn401g8z62m)",
+        "image_quality": "good",
+        "notes": "Sibling used as key source; 19 clear|code pairs."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code"
+    ],
+    "summary": "Numerical nomenclator of about 700 groups (values 11-696), probably a two-part syllabic code like the printed Navy form used for Martinique in 1765; clear words embedded in the cipher runs.",
+    "symbol_kind": "digits",
+    "distinct_symbols": 217,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": true
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown",
+    "word_division": "none",
+    "doubled_letters": "unknown",
+    "sibling_key": "C8 A 63 f° 208 (no. 178, 21 Aug 1761), same code with interlinear decipherment"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Contemporary decipherment by Villain for Accaron (margin note); not located. Nothing in print or online.",
+      "found": "not found",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Pasted the catalogue 542 task; selected the target.",
+    "tools": [
+      "built-in browser (ANOM IREL, FranceArchives)",
+      "web search",
+      "Python",
+      "lang fr-modern order-5 LM",
+      "simulated annealing (solve.py)",
+      "word-segmentation score (wordscore.py)"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 2,
+    "first_date": "2026-10-26",
+    "last_date": "2026-10-27"
+  },
+  "solution": [
+    {
+      "date": "2026-10-26",
+      "kind": "access",
+      "what": "Opened the five ANOM images via the FranceArchives manifest in the browser (direct curl gets 403).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "transcription",
+      "what": "Transcribed the clear text and all code runs: 818 groups, 217 distinct, values 11-696; margin note shows the letter was deciphered at the time by Villain.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "crib",
+      "what": "'423, D.. 614. Choiseul' read as 'M. le Duc de Choiseul': 614 = de (hypothesis).",
+      "result": "unknown",
+      "technique": [
+        "crib testing"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "literature search",
+      "what": "Web search on shelfmark, correspondents and date: no published decipherment.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "sibling key",
+      "what": "Tested the 1765 Martinique key (ANOM C8 A 67 f° 178, for d'Ennery): 614 = voisins, 674 = trou, de = 428, values up to ~800; does not fit.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "sibling key",
+      "what": "Listed the seven 1761 joint letters (C8 A 63-64); none described as ciphered; C8 A 64 f° 4 viewed, clear.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "literature search",
+      "what": "Found Archives nationales MAR/G/178, Navy keys for colonial dispatches 1741-1776 (1758, 1766, 1771, printed treatise 1776); not digitised.",
+      "result": "unknown"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "transcription",
+      "what": "Completed the 1765 deciphering table, all 800 entries (key1765_ennery.tsv), as the unit vocabulary.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "control",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Annealing group -> 1765-form unit, fr-modern order-5 LM + unit prior, on held-out d'Affry 1757 French enciphered in the letter's shape (818 tokens, 218 types), 1M iterations, 2 seeds: 7.7% / 8.9% correct; found key outscores truth.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "control",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Added a word-segmentation score (x3): 7.3% / 4.8% correct; found still outscores truth (-21088 vs -21356, -21465 vs -22780). Objective cannot separate the true text at this length and vocabulary size.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Same solver on the letter: word salad, 614 = es against the 614 = de crib. Not meaningful given the failed control.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "sibling key",
+      "what": "Inventory search found C8 A 63 f° 208 (La Rivière no. 178, 21 Aug 1761), same code with interlinear decipherment; transcribed 19 clear|code pairs.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "key from source",
+      "technique": [
+        "crib testing"
+      ],
+      "what": "Aligned the sibling pairs: ~110 values (Saint Eustache = 371 201 674 361 313 x3; 614 = de; 423 = le; 674 = s). Applied to the target: 67.0% of tokens valued.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "crib",
+      "technique": [
+        "crib testing"
+      ],
+      "what": "Context in the target: vo, so/tion, i/an, é/ant, di/ge, mo/g/mon, cu, ca, ar, cha and others from repeated phrases (nous avons/devons, consommation, soixante, étant venus, Monseigneur, moitié, spéculation, arriver, de change). Coverage 75.2%.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "literature search",
+      "what": "COL B 113/114 (outgoing registers 1761-62) located; not digitised.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "reading",
+      "technique": [
+        "crib testing"
+      ],
+      "what": "Three rounds of context valuation with kwic.py (541 = u, d/ra, si, po, lu/autre, cent/douze, no, ex, go, lo, ou, va, denrée, lettre ...). Valued 89.1% of tokens; measure_sense.py (dictionary segmentation of each decoded run) gives 81.5% read as sense.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "reading",
+      "technique": [
+        "crib testing"
+      ],
+      "what": "Retry round: odd spots re-checked on the images (two encipherer slips), every open group retried with kwic.py, 22 values added (pos, soien, puis, ir, nos, com, an, fond, parei, qui, y + C-grade). 93.0% valued, 86.7% read as sense (measured).",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "Key rebuilt from the contemporary interlinear decipherment of sibling letter C8 A 63 f° 208 (same file series, same correspondents, 1761), extended from context in the target. 93.0% of tokens valued, 86.7% read as sense (measure_sense.py); about 46 groups, mostly occurring once, still open.",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "class": "read in part",
+    "key": "partial",
+    "fraction_read": 0.867,
+    "verification": [],
+    "notes": "In progress toward the read bar. Leads: more context work; image sweep of C8 A 63-64; COL B 113/114 and MAR/G/178 offline.",
+    "gaps": [
+      {
+        "item": "about 46 code groups (57 tokens), single-occurrence word codes",
+        "blocker": "open-codes",
+        "detail": "thin context; still to be tried"
+      },
+      {
+        "item": "C-grade values resting on one context",
+        "blocker": "open-codes",
+        "detail": "need confirmation"
+      },
+      {
+        "item": "encipherer slips 'à r-ro-i-s livres', 'nous [16]frons'",
+        "blocker": "open-codes",
+        "detail": "groups clear on the image but wrong as written; read by sense, marked [?]"
+      },
+      {
+        "item": "1761 key; COL B 113/114; MAR/G/178",
+        "blocker": "needs-physical-access",
+        "detail": "not digitised"
+      }
+    ],
+    "fraction_read_method": "measured"
+  }
+}
