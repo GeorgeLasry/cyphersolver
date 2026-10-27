@@ -58,6 +58,7 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `de-enigma` | German 1930–1945 | same, Enigma conventions | Wehrmacht traffic |
 | `nl-modern` | Dutch | Gutenberg | Thurloe, Abwehr |
 | `nl-1600` | Dutch 1570-1650 | DBNL prose (Marnix, Coornhert, Van Mander, Bredero, Hooft), built by `python -m lang.build_nl1600` | casimir1618 (Willem Lodewijk 1594) |
+| `pl-1790` | Polish 1780-1795 | pl-gutenberg respelled to 1780s spelling (iest, moie, wczoray, -cya) + the Deboli clear despatches, built by `python -m lang.build_pl1790` | Stanislavian Polish (deboli1789) |
 | `es-modern` | Spanish | Gutenberg incl. Quijote, 6 M | default Spanish |
 | `es-golden-age` | Spanish 1490–1650 | Quijote + Memorias (Villa) | Habsburg-era Spanish |
 | `ca-modern` | Catalan | Gutenberg + Tirant lo Blanc | Crown of Aragon |

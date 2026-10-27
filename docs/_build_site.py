@@ -18,7 +18,7 @@ import re, sys, pathlib, html, json, hashlib, datetime
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
          '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n')
-VERSION ='20261026b'
+VERSION ='20261027a'
 SITE = 'Cyphersolver'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
@@ -522,6 +522,11 @@ PAGES = [
          blurb='A clear letter with two cipher passages, catalogued on DECODE with writer and recipient unknown; the signature and endorsement identify Robert Reade, Secretary Windebank&rsquo;s nephew, writing from the exiled household. The Deciphering Branch&rsquo;s reconstruction of the Windebank cipher (DECODE R9115), filed in another volume, was found to fit; with 8 values rebuilt here, 93% of the significant groups are deciphered. The passages weigh whether Windebank can safely return under a summons.',
          quote='&ldquo;they have not enough against him to confiscate his fortune, and they would be [willing] to take the advantage of his refusall to return&rdquo;',
          rights='British Library, via DECODE'),
+    dict(slug='joao1642', label='Jo&atilde;o IV to Nisa 1642&ndash;44', year='1642&ndash;1644', y=1642.95, place='Lisbon &rarr; Paris', st='partial', stt='read in part',
+         title='Jo&atilde;o IV to the marqu&ecirc;s de Nisa, 1642&ndash;44',
+         blurb='Six letters of Jo&atilde;o IV to his ambassador in Paris, copied into the embassy letter-book (ANTT Manuscritos da Livraria 1017) with passages in cipher. Two substitution alphabets were rebuilt from clear text in the same volume: clear copies of three 1642 letters, and a leaf listing two 1645 passages in clear. The 1642 letters concern the captive Infante D. Duarte and Richelieu&rsquo;s death; the 1644 letter, which had no decipherment, keeps the marriages of Prince Teod&oacute;sio and the Infantas secret. 398 of 438 cipher words read; the 1643 runs are illegible at the scan resolution.',
+         quote='&ldquo;dos casamentos do Pr&iacute;ncipe meu sobre todos muito amado e prezado filho e das Infantas&rdquo;',
+         rights='Manuscript rights: Arquivo Nacional Torre do Tombo, via DigitArq'),
     dict(slug='boswell', label='Boswell', year='1643', y=1643, place='Oxford &rarr; The Hague', st='solved', stt='read in substance',
          title='Charles I and Nicholas to Boswell, 2 November 1643',
          blurb='Two cipher letters sent through Sir William Boswell at The Hague (TNA SP 84/157 ff. 217, 219): the King&rsquo;s re-credentials to the Duke of Courland&rsquo;s envoy and Secretary Nicholas&rsquo;s covering letter. Robert Pitt&rsquo;s published alphabet for this homophonic numerical cipher was checked with a permutation control and applied; the four graphic signs are word signs. Both letters are decrypted except about a dozen code groups that occur once.',
@@ -1889,6 +1894,11 @@ PAGES = [
          blurb='Two French despatches of the Dutch envoy decode with William V&rsquo;s 1782 Grand Chiffre (DECODE R1024), checked on a control letter with known plaintext; digits the DECODE transcription could not place were resolved with a French language model. They report the Prussian refusal to guarantee the Dutch possessions overseas. Van Reede&rsquo;s 1793 letter to the Secret Committee is in another code, with its own page.',
          quote='&ldquo;le Roi a dit qu&rsquo;il ne pouvoit pas garantir nos possessions d&rsquo;outre-mer&rdquo;',
          rights='Manuscript image: Nationaal Archief, The Hague, via DECODE R1026'),
+    dict(slug='deboli1789', label='Deboli 1789', year='1789', y=1789.4, place='St Petersburg &rarr; Warsaw', st='partial', stt='read in part',
+         title='Deboli to Stanis&#322;aw August, St Petersburg 1789',
+         blurb='The 106 cipher despatches of the Polish envoy at St Petersburg in 1789 (AGAD Zbi&oacute;r Popiel&oacute;w 17): 103 have their Polish clear text in Zbi&oacute;r Popiel&oacute;w 419 and 417. Eleven pairs were aligned group by group and the code, a Polish syllabary in alphabetical order, rebuilt from them and tested blind. The three despatches with no clear text (25 March, 10 May, 14 December) were then read in part: 5,094 of 5,903 groups.',
+         quote='&ldquo;&#380;e to teraz pora, aby si&#281; Polska pod&#378;wign&#281;&#322;a, a reszt&#281; Panie Bo&#380;e robi&rdquo;',
+         rights='Manuscript images: Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 17 and 419'),
     dict(slug='legation1788', label='Short, Carmichael, Pinckney 1788&ndash;93', year='1788&ndash;1793', y=1790.5, place='The Hague, Madrid, London &rarr; Jefferson', st='solved', stt='existing decipherment',
          title='Short, Carmichael and Pinckney to Jefferson: the last groups of the legation codes Nos. 10, 13 and 16',
          blurb='Three letters to Jefferson in three numerical codes, printed by the Jefferson Papers editors with a few groups unread or guessed: Short from The Hague (1792), Carmichael from Madrid (1788), Pinckney from London (1793). Every one of the 737 groups was transcribed and checked against values decoded at the time in sibling letters: the readings hold, Pinckney&rsquo;s &ldquo;undeciphered 497&rdquo; is 447 on the original, and nine single-occurrence groups stay open.',
@@ -2543,6 +2553,7 @@ IMAGES['sperantio1534'] = None
 IMAGES['r1862'] = None
 IMAGES['r1874'] = None
 IMAGES['legation1788'] = ('legation1788_lead.jpg', 'Pinckney to Jefferson, London, 28 August 1793: the coded passage, &ldquo;447. 735. 753. 1846. 923. 1490 &hellip;&rdquo; (447 regiments are to embark &hellip;), with Jefferson&rsquo;s pencil &ldquo;copy so far only&rdquo;', 'National Archives and Records Administration, RG 59, Despatches from U.S. Ministers to Great Britain, microfilm M30 roll 2, frame 140, via the NARA catalog')
+IMAGES['deboli1789'] = ('deboli1789_lead.jpg', 'Deboli to Stanis&#322;aw August, 6 January 1789, k. 2r: 8 1046 117 637 690 213 &mdash; Do ostatniego listu mego', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 17 k. 2r, via the AGAD image server')
 IMAGES['deboli1791'] = ('deboli1791_lead.jpg', 'Deboli to Stanis&#322;aw August, 7 January 1791: 1944 951 1578 1944 951 21a 2152 &mdash; ani od WKrMci, ani od Deputacyi', 'Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, Zbi&oacute;r Popiel&oacute;w 5 k. 6r, via the AGAD image server')
 IMAGES['r1212'] = None
 IMAGES['r1854'] = None
@@ -2577,6 +2588,7 @@ IMAGES['hesse1824'] = ('hesse1824_lead.jpg', 'The heading &ldquo;Snell an A?ud&r
 IMAGES['r2234'] = ('r2234_lead.jpg', 'The head of the letter: section capital D, the date in clear, then one line per alphabet', 'Koninklijk Huisarchief, The Hague, via DECODE R2234')
 IMAGES['marburg1635'] = ('marburg1635_lead.jpg', 'The cipher lines with the contemporary gloss over the first four', 'Hessisches Staatsarchiv Marburg, via DECODE R4500')
 IMAGES['mountflorence1801'] = ('mountflorence1801_lead.jpg', 'The letter of 18 March 1801: the coded paragraph, then clear news of prize cases and Malaga', 'National Archives (NARA), RG 59, Despatches from US Consuls in Paris, microfilm T1 roll 1, frame 0097, via the National Archives Catalog')
+IMAGES['joao1642'] = ('joao1642_cipher.jpg', 'Letter 153, 21 September 1644: the passage in the second alphabet, on the marriages of Prince Teod&oacute;sio and the Infantas', 'Arquivo Nacional Torre do Tombo, Manuscritos da Livraria 1017 f. 153 (scan m0157), via DigitArq')
 IMAGES['mercier1761'] = ('mercier1761_cipher.jpg', 'The first coded lines of the letter of 12 June 1761, with &ldquo;D..&rdquo; and &ldquo;Choiseul&rdquo; left in clear between 423 (le) and 614 (de)', 'Archives nationales d&rsquo;outre-mer, COL C8 A 64 f&deg; 1, image 2, via ANOM IREL')
 IMAGES['jefferson1787'] = ('jefferson1787_lead.jpg', 'Jefferson to Barclay, 4 July 1787, lines 3&ndash;6: &ldquo;M. 1420. 1336. 459. 1089.&rdquo; (de Rayneval?), &ldquo;M. 1420. 374. 1139. 1128.&rdquo; (de Montmorin), &ldquo;another quarter of the 495.&rdquo;', 'Library of Congress, Thomas Jefferson Papers, series 1, Jefferson to Thomas Barclay, 4 July 1787, press copy, image mtj1 007_0605')
 IMAGES['murray1801'] = ('murray1801_lead.jpg', 'Frame 0398: Murray&rsquo;s postscript, &ldquo;P.S. As to 536. 406. 1004. 264. 1136. 1175. not a Word has yet been said&rdquo;, beside his signature', 'National Archives and Records Administration, RG 59, Despatches from US Ministers to the Netherlands, vol. 4, microfilm M42 reel 5, frame 0398 (left page), via catalog.archives.gov NAID 188770447')
@@ -2932,6 +2944,10 @@ EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the histo
            ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
+# the same groups named in a word or two, for the two-column outcome grid in the phone menu
+NAV_SHORT = {'ct': 'Ciphertext-only', 'extpt': 'Ext. plaintext', 'adjpt': 'Adj. plaintext', 'extkey': 'External key',
+             'known': 'Known key', 'deciph': 'Existing reading', 'notsolved': 'Not solved', 'na': 'Not applicable',
+             'other': 'Unclassified', 'survey': 'Surveys'}
 NAV_LATEST = 6          # write-ups shown in the menu; the rest are one click away on writeups.html
 
 def kind_of(p): return 'survey' if p['slug'] in SURVEYS else M.KEY[p['method']] if p.get('method') else 'other'
@@ -2947,15 +2963,16 @@ def nav_html(current):
     cur = lambda slug: ' aria-current="page"' if slug == current else ''
     latest = sorted([p for p in PAGES if p['slug'] not in SURVEYS],
                     key=lambda p: posted_at(p['slug']), reverse=True)[:NAV_LATEST]
-    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><span class="st {p["st"]}">{p["stt"]}</span>'
-                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span></a></li>' for p in latest)
-    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><span class="st {cls}">{n}</span>'
-                     f'<b>{name}</b></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
+    # each row: a coloured dot for the outcome, the label, the year; the method under it in plain text, not a pill
+    lis = ''.join(f'<li><a href="{p["slug"]}.html"{cur(p["slug"])}><i class="dot {p["st"]}" aria-hidden="true"></i>'
+                  f'<b>{p["label"]}</b><span class="yr">{p["year"]}</span><span class="m">{p["stt"]}</span></a></li>' for p in latest)
+    groups = ''.join(f'<li><a href="writeups.html#kind={key}"><i class="dot {cls}" aria-hidden="true"></i>'
+                     f'<b>{name}</b><b class="sh">{NAV_SHORT.get(key, name)}</b><span class="n">{n}</span></a></li>' for key, name, cls, pred in GROUPS if (n := sum(1 for p in PAGES if pred(p))))
     in_explore = any(slug == current for slug, _, _ in EXPLORE)
     on = ' class="active"' if not in_explore and (current == 'writeups' or any(p['slug'] == current for p in PAGES)) else ''
     panel = (f'<div class="grp latest"><h4>Latest</h4><ul>{lis}</ul></div>'
-             f'<div class="grp"><h4>By outcome</h4><ul>{groups}</ul></div>'
-             f'<div class="foot"><a href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
+             f'<div class="grp outc"><h4>By outcome</h4><ul>{groups}</ul></div>'
+             f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All {len(PAGES)} write-ups, with filters &rarr;</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
     explore = (''.join(f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
                        for slug, name, desc in EXPLORE).join(('<ul>', '</ul>'))
@@ -2992,20 +3009,22 @@ SEARCH_HTML = (
 # writeups.html: every write-up, filterable, followed by the results that exist only as notes in the repository.
 # The second list is read from ../README.md, whose Results tables are the ledger every session keeps: a row whose
 # "Where" column links to a site page is a write-up (checked against PAGES), any other row is notes only.
-PERIODS = [('1500s', 'to 1599', lambda y: y < 1600), ('1600s', '1600s', lambda y: 1600 <= y < 1700),
-           ('1800s', '1700s and 1800s', lambda y: 1700 <= y < 1900), ('1900s', '1900s', lambda y: 1900 <= y < 9000)]
+# century keys are the ones the catalogue.html Century facet uses, so a #century=1600s link works on both pages
+CENTURIES = [('early', 'before 1400')] + [(f'{c}00s', f'{c}00s') for c in range(14, 20)] + [('undated', 'undated')]
 KINDS = [(M.KEY[m], M.LABEL[m]) for m in M.METHODS] + [('active', 'in progress'), ('other', 'not yet classified'), ('survey', 'survey')]
 EXTENTS = [('complete', 'complete'), ('partial', 'partial'), ('none', 'text not obtained')]
 # README section heading, status class, badge text
 README_SECTIONS = [(M.SECTION[m], M.status_class(m, 'complete'), M.LABEL[m]) for m in M.METHODS] + \
                   [('### In progress', 'partial', 'in progress')]
 
-def period_of(y):
-    return next((k for k, _, f in PERIODS if f(y)), 'survey')
+def century_of(y):
+    if not y or y >= 2000: return 'undated'           # surveys carry 9999, undatable notes 0
+    return 'early' if y < 1400 else f'{int(y) // 100}00s'
 
 # the writeups.html Language facet: plaintext languages from profile documents[].language, matched by the first words
 # ('Latin with Catalan and Castilian phrases' counts as Latin, 'French and German' as both); the rest is 'other'
-LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish']
+LANGS = ['French', 'Italian', 'English', 'Spanish', 'German', 'Latin', 'Dutch', 'Hungarian', 'Polish', 'Swedish',
+         'Portuguese', 'Chinese', 'Japanese']
 LANG_ALIAS = {'castilian': 'Spanish', 'scots': 'English'}
 
 def langs_of(folders):
@@ -3019,7 +3038,7 @@ def langs_of(folders):
             head = re.split(r'[(;,]| with ', v)[0]
             found = {LANG_ALIAS.get(w.lower(), w.capitalize()) for w in re.findall(r'[A-Za-z]+', head)} & set(LANGS)
             out |= found or {'other'}
-    return ' '.join(sorted(l.lower() for l in out))
+    return ' '.join(sorted(l.lower() for l in out)) or 'unknown'
 
 def repo_url(link):
     if link.startswith('http'): return link
@@ -3120,7 +3139,7 @@ def writeups_html():
     rows = []
     for p in sorted(PAGES, key=lambda p: p['y']):
         by = ' '.join(sorted({c['who'] for c in p.get('credits') or [] if c.get('who') in CONTRIB}))
-        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-period="{period_of(p["y"])}" data-src="page" data-by="{by}" '
+        rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-century="{century_of(p["y"])}" data-src="page" data-by="{by}" '
                     f'data-lang="{langs_of(p.get("folders") or [])}" '
                     f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
@@ -3129,46 +3148,58 @@ def writeups_html():
     notes = readme_notes()
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
-        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-period="{period_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
+        nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-century="{century_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
                      f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
                      f'<span class="b">{n["result"]}</span></a></li>')
-    used = {p_kind for p_kind in [kind_of(p) for p in PAGES] + [n['kind'] for n in notes]}
-    chips = lambda facet, vals: ''.join(f'<button type="button" class="chip" data-facet="{facet}" data-val="{k}" aria-pressed="false">{label}</button>' for k, label in vals)
+    # chips only for values some entry has; site.js fills in each chip's live count
+    have = {}
+    for li in rows + nrows:
+        for k, v in re.findall(r' data-(kind|extent|century|src|lang)="([^"]*)"', li.split('>', 1)[0]):
+            n = have.setdefault(k, {})
+            for x in v.split(): n[x] = n.get(x, 0) + 1
+    def facet(name, label, vals, extra=''):
+        opts = ''.join(f'<button type="button" class="chip" data-facet="{name}" data-val="{k}" aria-pressed="false">{l}<span class="n"></span></button>'
+                       for k, l in vals if k in have.get(name, {}))
+        return f'<div class="facet" role="group" aria-label="{label}"><span class="flabel">{label}</span><span class="opts">{opts}</span>{extra}</div>'
+    def dropdown(label, body, name):
+        return (f'<details class="dd" data-dd="{name}"><summary><span class="dl">{label}</span><span class="dv"></span></summary>'
+                f'<div class="pop">{body}</div></details>')
+    nl = have.get('lang', {})
+    langs = [(l, l if l in ('other', 'unknown') else l.capitalize()) for l in sorted(nl, key=lambda l: (l in ('other', 'unknown'), l == 'unknown', -nl[l], l))]
     total = len(rows) + len(nrows)
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<title>All write-ups &mdash; {len(rows)} ciphers by outcome and date, and {len(nrows)} results still in the notes</title>\n'
-        f'<meta name="description" content="Every write-up on the site, filterable by outcome, language, period and text, followed by the '
+        f'<meta name="description" content="Every write-up on the site, filterable by method, extent, language, century and text, followed by the '
         f'results that exist only as notes in the repository: read, explained, attempted or waiting on an archive.">\n'
         f'<link rel="stylesheet" href="style.css?v={VERSION}">\n</head>\n<body id="top">\n<!-- site:nav -->\n\n'
         '<section class="hero">\n'
         f'  <p class="kicker">Index &middot; {len(rows)} write-ups &middot; {len(nrows)} results only in the notes</p>\n'
         '  <h1>Every write-up</h1>\n'
-        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by outcome, language or period, or search '
+        '  <p class="sub">Each cipher this site has worked on, in date order, with its outcome. Filter by method, extent, language or century, or search '
         'the titles and summaries. The second list is work that exists only as notes in the repository: results not yet written up, '
         'attempts closed from the evidence, and items waiting on an archive.</p>\n'
         '  <div class="jump"><a href="#pages">Write-ups</a><a href="#notes">Only in the notes</a><a href="catalogue.html">Catalogue</a></div>\n'
         '  <p class="meta">Daniel Bourdeau</p>\n</section>\n\n<main>\n\n'
-        '<div class="wfilters" role="search">\n'
-        f'  <div class="facet"><span class="flabel">Method</span>{chips("kind", [k for k in KINDS if k[0] in used])}'
-        '<a class="gl" href="glossary.html">what these mean</a></div>\n'
-        f'  <div class="facet"><span class="flabel">Extent</span>{chips("extent", EXTENTS)}</div>\n'
-        f'  <div class="facet"><span class="flabel">Language</span>{chips("lang", [(l.lower(), l.lower()) for l in LANGS] + [("other", "other")])}</div>\n'
-        f'  <div class="facet"><span class="flabel">Period</span>{chips("period", [(k, l) for k, l, _ in PERIODS])}</div>\n'
-        f'  <div class="facet"><span class="flabel">Where</span>{chips("src", [("page", "site page"), ("notes", "notes only")])}</div>\n'
-        '  <div class="facet"><span class="flabel">Search</span><input id="wq" type="search" placeholder="titles, places, summaries" aria-label="Search the write-ups">'
-        '<button type="button" class="chip" id="wreset">reset</button></div>\n'
-        f'  <p class="wcount" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</p>\n</div>\n\n'
+        '<div class="cfilters" role="search">\n'
+        '  <input id="wq" type="search" placeholder="Search: titles, places, summaries&hellip;" aria-label="Search the write-ups">\n'
+        f'  {dropdown("Method", facet("kind", "Method", KINDS, '<a class="gl" href="glossary.html">what these mean</a>'), "kind")}\n'
+        f'  {dropdown("Extent", facet("extent", "Extent", EXTENTS), "extent")}\n'
+        f'  {dropdown("Language", facet("lang", "Language", langs), "lang")}\n'
+        f'  {dropdown("Century", facet("century", "Century", CENTURIES), "century")}\n'
+        f'  {dropdown("Where", facet("src", "Where", [("page", "site page"), ("notes", "notes only")]), "src")}\n'
+        f'  <span class="count" id="wcount" aria-live="polite" data-names="{html.escape(json.dumps({k: c["name"] for k, c in CONTRIB.items()}, ensure_ascii=False), quote=True)}">All {total} entries</span>\n'
+        '  <button type="button" class="chip clear" id="wreset" hidden>clear filters</button>\n</div>\n\n'
         '<section class="wsec" id="pages">\n<h2 id="write-ups"><span class="num">01</span> Write-ups</h2>\n'
-        '<ul class="list wl">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
+        '<ul class="list wl wi">\n' + '\n'.join(rows) + '\n</ul>\n</section>\n\n'
         '<section class="wsec" id="notes">\n<h2 id="only-in-the-notes"><span class="num">02</span> Only in the notes</h2>\n'
         f'<p>Results recorded in the repository <a href="{REPO}#results" rel="noopener">README</a> that have no page here yet. '
         'Each row links to the folder with the notes, transcriptions and code. The rows are read from the README at build time, '
         'so a result lands here as soon as it is logged there.</p>\n'
-        '<ul class="list wl">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
+        '<ul class="list wl wi">\n' + '\n'.join(nrows) + '\n</ul>\n</section>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
 
 # glossary.html: the outcome methods (with a count of write-ups under each, linked into the filtered index) and the
 # cryptologic terms the write-ups use.  Generated from _methods.py, the same vocabulary the badges and checkers use.
@@ -3374,7 +3405,7 @@ def fold_findings(s, n=RECENT_VISIBLE):
     items = re.findall(r'<li>.*?</li>', m.group(2), re.S)
     # Navigation entries have been accidentally pasted here during publication
     # merges. Do not date and promote menu links as research findings.
-    if any(re.search(r'<span class="st [^"]+">', li) for li in items):
+    if any(re.search(r'<span class="st [^"]+">|<i class="dot [^"]+"', li) for li in items):
         raise ValueError('Recent findings contains navigation status badges. '
                          'Restore the editorial findings; do not copy menu <li> entries.')
     # Concurrent publications can insert the same finding twice. Compare the
