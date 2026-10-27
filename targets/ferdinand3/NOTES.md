@@ -223,6 +223,23 @@ praeter expressum mandatum nostrum aut comitis Hatzfeldii assignationem expendan
 - [x] print: Schmeh/Ernst 2017 (different letters), Tomokiyo unsolved list, aaymeloglu SOURCES (Lefevre 1934, Lunig 1712); Hildegard Ernst, MIOG 100 (1992) on Vienna-Madrid-Brussels ciphers 1635-1642 not accessible online - may print a key
 - [x] key-rebuild: crib-seeded family anneal (fam1887.py) + LM context; span search for the open 16-token span
 - [x] retry: all R1887 doubtful words re-read on the images (his, ltu/#, 146, o/, ll=ib, tus in ipsum, f/ in ipsum); regraded in align1887.txt; last dictionary + LM pass over the two open pieces (work/gap1887.py, 9 Oct): nothing fits
+- [x] siblings, 26 Oct 2026: the nearest possible sibling in Ferdinand's own 1634 cipher is catalogue 359, Ferdinand to
+  Trauttmansdorff, 13 Nov 1634 (SOA Plzeň, Klášter u Nepomuka, RA Trauttmansdorffů, kart. 6, inv. č. 68), 16 days
+  after R1887. No image is online. It is not on DECODE (full record list re-pulled, 10,106 records; the only
+  Trauttmansdorff records are inv. 200, Kurz 1639). Cryptoole HUXXXX-1 and Cryptiana's unsolved list carry no image.
+  Mírka's 2012 article (Západočeské archivy 2012, pp. 44-73) is print-only on soaplzen.gov.cz, and the archive
+  library's Portaro catalogue holds only the volume's cover and table of contents. The ResearchGate copy
+  (publication 313678538) is behind a CAPTCHA. Blocker: needs-physical-access (scans from SOA Plzeň or Mírka). If it
+  turns out to use R1887's repertoire, it may give second occurrences of the open singletons.
+  Also checked: Šimsová, "Šifrovaná korespondence Matyáše Gallase s císařem Ferdinandem III." (Charles University
+  MA thesis, 2024, hdl 20.500.11956/191516, open PDF). It edits Ferdinand's 1635-38 cipher letters to Gallas
+  (deciphered at the time; the thesis, p. 108, says their key does not survive). It does not mention catalogue 359 or
+  give any 1634 ciphertext.
+  Mírka 2012 offprint (supplied by Daniel, 26 Oct; n. 37-39, 135): catalogue 359 is a contemporary copy whose cipher
+  alphabet is "exclusively two- and three-digit numbers", a nomenclator with homophones, bigrams and probably codes.
+  It is therefore NOT R1887's graphic-sign + three-letter-code system, and cannot be a sibling for R1887's open
+  singletons. The article prints no image of it. Mírka suggests the key may be in Vienna (FA Trauttmansdorff /
+  HHStA).
 
 ## DECODE queue
 - R1889: decrypted. Key = letter alphabet recovered from the draft R954 (a 0 n t z, b 8 9, c 7 x, d 3 4, e 6 m p,

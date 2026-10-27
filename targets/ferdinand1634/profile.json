@@ -1,0 +1,150 @@
+{
+ "schema_version": 1,
+ "target": "ferdinand1634",
+ "title": "Ferdinand, King of Hungary and Bohemia (future Ferdinand III), to Maximilian von Trauttmansdorff, 13 November 1634 (SOA Plzeň, RA Trauttmansdorffů, kart. 6, inv. č. 68)",
+ "documents": [
+  {
+   "id": "inv68",
+   "read": "not read",
+   "shelfmark": "SOA Plzeň, pracoviště Klášter u Nepomuka, Rodinný archiv Trauttmansdorffů, karton 6, inv. č. 68 (contemporary copy)",
+   "date": "13 November 1634",
+   "year": 1634,
+   "country": "Holy Roman Empire",
+   "route": "Ferdinand, King of Hungary and Bohemia -> Maximilian von Trauttmansdorff",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   },
+   "language": "German",
+   "pages": "unknown",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none found",
+    "partial": false
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "unknown",
+    "measured": false
+   },
+   "transcription": "unknown"
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator"
+  ],
+  "summary": "Not seen. Mírka (2012, n. 39) describes the cipher alphabet as exclusively two- and three-digit numbers and takes it for a nomenclator with homophones, bigrams and probably codes.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "sibling_key": "none",
+  "notes": "Ferdinand's cipher of 28 Oct 1634 (DECODE R1887, ferdinand3) is graphic signs plus three-letter codes, so it is not this system. Mírka suggests the key may be in Vienna (FA Trauttmansdorff, HHStA)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "cleartext context"
+  ],
+  "attack": "none",
+  "human_role": "The user supplied the target (catalogue 359) and, after the online search failed, Mírka's 2012 offprint; the user asked to close it out unread.",
+  "tools": [
+   "DECODE API",
+   "web search",
+   "built-in browser",
+   "PyMuPDF"
+  ],
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-10-26",
+  "last_date": "2026-10-26"
+ },
+ "solution": [
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Re-pulled the full DECODE record list (10,106 records) and searched it for the Trauttmansdorff family archive: only inv. 200 (Kurz 1639) is there, not inv. 68.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "access",
+   "what": "Checked Cryptoole HUXXXX-1, Cryptiana's unsolved list, the SOA Plzeň publications page and Portaro library catalogue, and ResearchGate for an image of the letter or of Mírka's article: none online (the volume is print-only; ResearchGate behind a CAPTCHA).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Read Šimsová's 2024 thesis on Ferdinand III's cipher letters to Gallas (1635-38) for this letter or a 1634 numeric key: not mentioned; the Gallas key does not survive.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "literature search",
+   "what": "Read Mírka's 2012 offprint (supplied by the user): the item is a contemporary copy in a cipher of two- and three-digit numbers only, a nomenclator in his view; no figure of it; key possibly in Vienna.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "sibling key",
+   "what": "Compared with Ferdinand's cipher of 28 Oct 1634 (DECODE R1887, rebuilt in ferdinand3): graphic signs and three-letter codes, not numbers, so it cannot be this letter's key.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No image of the letter is online or in print, so the ciphertext was never seen; Mírka's description rules out the one known 1634 key of Ferdinand's (R1887).",
+  "contribution": [
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "No ciphertext in hand.",
+  "verification": [
+   "none"
+  ],
+  "grades": "unknown",
+  "gaps": [
+   {
+    "item": "the whole letter (kart. 6, inv. č. 68)",
+    "blocker": "needs-physical-access",
+    "detail": "no image online or in print; scans must be ordered from SOA Plzeň (Klášter)"
+   }
+  ],
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "new cipher"
+   },
+   {
+    "who": "mirka",
+    "role": "pointer"
+   }
+  ],
+  "notes": "Catalogue 359 stays open with outcome 'attempted, open'. Next: scans from SOA Plzeň; a numeric nomenclator of Ferdinand's 1634 correspondence in Vienna."
+ }
+}

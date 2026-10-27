@@ -412,6 +412,11 @@ PAGES = [
          title='Lord Maltravers to the Earl of Ormonde, 1634&ndash;35',
          blurb='Two letters printed by the HMC in 1895 with 59 figures of a numerical cipher and no decipherment. The key was recovered from the adjacent cleartext: a regular alphabet in blocks of three consecutive figures (consonants from 7, vowels from 64), nulls 91&ndash;111 and a small nomenclator. Seven of the nine code numbers were identified from Wentworth&rsquo;s dispatches in Knowler&rsquo;s <i>Strafforde&rsquo;s Letters</i> (1739).',
          quote='&ldquo;he was angry [with the Lord Deputy] &hellip; upon his motion [Ormonde] is to be a councellor&rdquo;'),
+    dict(slug='ferdinand1634', label='Ferdinand to Trauttmansdorff 1634', year='1634', y=1634.87, place='Ferdinand &rarr; Trauttmansdorff', st='stuck', stt='cipher not seen',
+         title='Ferdinand to Trauttmansdorff, 1634',
+         blurb='A copy of a cipher letter of 13 November 1634 from Ferdinand, King of Hungary and Bohemia, to his high steward Maximilian von Trauttmansdorff, during the Pirna talks with Saxony (SOA Plze&#328;, RA Trauttmansdorff&#367;, kart. 6, inv. &#269;. 68). M&iacute;rka (2012) describes a cipher of two- and three-digit numbers that he could not break. No image is online or in print, so the ciphertext was not seen; Ferdinand&rsquo;s graphic-sign cipher of October 1634 is a different system.',
+         quote='Cipher of two- and three-digit numbers only (M&iacute;rka 2012) &middot; not yet seen',
+         rights='St&aacute;tn&iacute; oblastn&iacute; archiv v Plzni (description only; no image)'),
     dict(slug='ferdinand3', label='Ferdinand III and the Cardinal-Infante', year='1634&ndash;40', y=1635.9, place='Stuttgart, Brussels, Vienna', st='partial', stt='read in part',
          title='Ferdinand III and the Cardinal-Infante, 1634&ndash;1640',
          blurb='Three Latin letters between Ferdinand, King of Hungary and later Emperor, and the Cardinal-Infante Ferdinand in Brussels (Secr&eacute;tairerie d&rsquo;&Eacute;tat allemande 540, DECODE R1887, R1889, R1890). The 1635 key was recovered from the Cardinal-Infante&rsquo;s own draft, the 1640 syllabary from the ciphertext on top of it, and the different 1634 cipher from a clear phrase the letter repeats. 1635 and 1640 are deciphered in full; 1634 at 88.4% of its tokens. An independent re-solution: Andrew Aymeloglu published readings in September 2026.',
@@ -2404,6 +2409,7 @@ IMAGES['indus'] = ('indus_m414.jpg', 'M-414, a bar seal from Mohenjo-daro, as im
 IMAGES['joachim1530'] = ('joachim1530_lead.jpg', 'The dotted cipher account on Clairambault 331 f. 157r', 'Biblioth&egrave;que nationale de France / Gallica')
 IMAGES['rohan1636'] = None
 IMAGES['emery1636'] = None
+IMAGES['ferdinand1634'] = None
 IMAGES['andreae1616'] = ('andreae1616_lead.jpg', 'P. 97: the tablet behind Venus&rsquo;s bed, in the novel&rsquo;s invented alphabet: WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN &hellip;', 'Embassy of the Free Mind (Ritman Library), via DECODE R4502')
 IMAGES['labbe1582'] = ('labbe1582_lead.jpg', 'The May cipher: <i>mais</i> plusieurs <i>ne pleureroient</i>, BnF fr. 3198 no. 37', 'Biblioth&egrave;que nationale de France, via Gallica btv1b9060073v view 77')
 IMAGES['nevers1574'] = ('nevers1574_lead.jpg', 'BnF fr. 3315 f. 21r: Birago\'s cipher flap with an Italian interlinear decipherment; the clear fair copy lies beneath it', 'Biblioth&egrave;que nationale de France, fr. 3315 f. 21r, via Gallica view 23')

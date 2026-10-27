@@ -3604,12 +3604,12 @@
    "shelfmark": "SOA Plzeň, pracoviště Klášter u Nepomuka, Rodinný archiv Trauttmansdorffů, karton 6, inv. č. 68",
    "cls": "B",
    "source": "Cryptoole",
-   "status": "Cryptoole HUXXXX-1 (open). Undeciphered per Jakub Mírka (2012); the only cipher letter between the two in the family archive; the clear text says Ferdinand sent it by his own messenger. Length and system unknown.",
+   "status": "Attempted 26 Oct 2026 (ferdinand1634), closed unread: no image of the letter is online or in print. Mírka (2012, n. 37-39, 135): a contemporary copy, the only enciphered one among the copies of Ferdinand's letters to Trauttmansdorff; a clear note at the end says Ferdinand enciphered it and sent it by his own messenger; cipher alphabet of two- and three-digit numbers only (nomenclator with homophones, bigrams, probably codes). Not on DECODE.",
    "why": "A ciphered letter from the victor of Nördlingen to the Emperor's chief negotiator in November 1634, during the Pirna talks that led to the Peace of Prague.",
    "importance": 4,
    "solvability": 2,
    "difficulty": 3,
-   "verify": "Request images from SOA Plzeň (or ask Mírka); then test Ferdinand's own 1634 cipher rebuilt in targets/ferdinand3 from R1887 (28 Oct 1634, graphic signs + three-letter codes) before any fresh analysis.",
+   "verify": "Order scans of kart. 6, inv. č. 68 from SOA Plzeň (Klášter). Mírka (n. 38) suggests the key may be in Vienna (FA Trauttmansdorff, HHStA). Not the R1887 system of 28 Oct 1634 (graphic signs + three-letter codes, ferdinand3).",
    "links": [
     {
      "label": "source",
@@ -3621,9 +3621,11 @@
     }
    ],
    "cryptoole": "HUXXXX-1",
-   "known": "Nothing yet for this letter. Ferdinand's own cipher of 1634 was rebuilt here from DECODE R1887 (28 Oct 1634; ferdinand3), a candidate key.",
-   "open": "The 13 Nov 1634 letter: not seen or deciphered; images only from SOA Plzeň (not on DECODE); length and system unknown.",
-   "as_of": "2026-10-21"
+   "known": "Mírka 2012 describes a numerical nomenclator (two- and three-digit numbers) that he could not break. Ferdinand's graphic-sign cipher of 28 Oct 1634 (R1887, ferdinand3) is a different system.",
+   "open": "The whole letter: not seen; no image online, on DECODE or in Mírka's article; scans needed from SOA Plzeň.",
+   "as_of": "2026-10-26",
+   "outcome": "attempted, open",
+   "writeup": "ferdinand1634.html"
   },
   {
    "counted": true,
