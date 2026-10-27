@@ -27,7 +27,8 @@
     "source": "f304r_transcription.txt, pass 2, from the archiv.sachsen.de full-size scan",
     "image_quality": "good",
     "notes": "Plus 23 two-digit code numbers and 9 Latin-script words. Several close sign pairs (ω/ϖ, η/y, σ/6, 8/ξ) still uncertain."
-   }
+   },
+   "read": "not read"
   },
   {
    "id": "f307",
@@ -43,16 +44,17 @@
     "source": "Clear letter with about ten cipher runs; no glosses."
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "letters",
+    "tokens": 363,
+    "unit": "symbols",
     "measured": false
    },
    "transcription": {
     "by": "llm from images",
-    "source": "not yet transcribed (viewed only)",
+    "source": "f307_keyA.md (sign-level against key A); f307_runs.txt (shape pass)",
     "image_quality": "good",
-    "notes": "Latin-shaped substitute letters, mostly without word breaks."
-   }
+    "notes": "Hand count of letter signs, nulls excluded; c/l and s/g/w shapes partly decided by context."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -67,17 +69,17 @@
    "used": "unknown"
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
    "present": true
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "unknown",
   "word_division": "kept",
-  "sibling_key": "Key A (ff. 279r/287r/305r) and the Baumgartner-Grumbach key (f. 302r) in the same file; both tested against f. 304r and ruled out",
+  "sibling_key": "Key A (ff. 279r/287r/305r) reads ff. 307r-v; it, the Baumgartner key (f. 302r) and the f. 281r Latin homophonic key do not fit f. 304r",
   "notes": "Ortloff vol. 4 p. 151 n. 2 lists the 21 alphabets of Bl. 279-306."
  },
  "conditions": {
@@ -89,7 +91,8 @@
   },
   "inputs": [
    "images",
-   "sibling key"
+   "sibling key",
+   "key from archive"
   ],
   "attack": "ciphertext-only",
   "human_role": "Project-level: posed the catalogue task (pasted solve/564 brief). No target-specific intervention recorded.",
@@ -101,9 +104,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-26"
+  "last_date": "2026-10-27"
  },
  "solution": [
   {
@@ -168,20 +171,79 @@
    ],
    "what": "Crib-seeded anneal: best -2.9/char, crib words and a few more, not a reading; no control run yet.",
    "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Same-size German control (273 letters, 5 homophones): one-to-one annealer 71-80%, capped homophonic annealer 100% (two seeds).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Capped homophonic anneal on f. 304r, free and crib-fixed; French, Latin, Italian models too: best -2.74/char, no reading.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "f. 281r Latin homophonic key read and tested against f. 304r (lacks its σ and ψ).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "language-model scoring"
+   ],
+   "what": "Key A applied to the f. 307 shape transcription: fragments (…eister…, Dornburg).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "reading",
+   "technique": [
+    "key matching",
+    "contextual inference"
+   ],
+   "what": "Sign-level transcription of the f. 307 runs against key A; read in part (~82% tentative, 71% firm, hand count); cross-checked on R4 against an independent transcription.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "In progress: neither key nor text of f. 304r obtained yet; a crib core of about twelve letters is consistent. ff. 307r-v not yet attacked.",
+  "method": "read with known key",
+  "method_basis": "ff. 307r-v read in part with key A, filed in the same volume (ff. 279r/287r/305r) and docketed as the Johann Friedrich/Grumbach/Ditmarsch alphabet; f. 304r (1553) not solved: no key in the file fits and the ciphertext-only attempt has not converged.",
   "contribution": [
    "transcription",
-   "catalogue correction"
+   "catalogue correction",
+   "sender or date identified"
   ],
-  "class": "not read",
+  "class": "read in part",
   "key": "partial",
-  "fraction_read": 0,
+  "fraction_read": 0.44,
   "verification": [
    "none"
+  ],
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "key A, the alphabet Duke Johann Friedrich II, Grumbach and Matthes Ditmarsch 'miteinander genommen' (Loc. 4414/04 ff. 279r-280r, copies ff. 287r-288r, 305r-306r)",
+    "date": "1566",
+    "source": "HStA Dresden 10024 Loc. 04414/04 ff. 279-306"
+   }
   ]
  }
 }

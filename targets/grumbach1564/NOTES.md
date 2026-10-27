@@ -80,14 +80,42 @@ their users.
 - **Control not yet run.** The solver has not been checked on a self-enciphered text of the same length and system,
   so its output means nothing yet.
 
+## ff. 307r-v: read in part with key A
+
+- **Key.** Key A (f. 279r, copies ff. 287r, 305r) reads the runs unchanged. The work was mapping the writer's cursive
+  onto key A's signs. `f307_keyA.md` has the sign table, the nulls in use and the run-by-run table. In summary:
+  - ϑ' (flat-topped g) is used for v/w: "wursiegelt" = versiegelt;
+  - "tt" with plain stems is н = m;
+  - ℓ is ρ = a;
+  - the long-tailed q, ꞔ, ◊, ƀ and ꝭ are key-A nulls, used often;
+  - c is dropped before h ("auh").
+- **Writer.** The letter is signed with key A's sign for **Ernst von Mandelslo** (barred Y).
+- **Content.** The Bestallung and the sealed Artikel for the Knechte, the Rittmeister "beider irer aller namen darin
+  benent", the names of the Obersten, Johann von Holle's Bestallung, Dornburg. This matches Ortloff vol. 3 § "Grumbachs
+  Bestallungen französischer Rittmeister ... Ernst von Mandelslohe in Dornburg" (1566, citing this file Bl. 39-51), so
+  the date read "…64" may be 1566.
+- **Check.** An independent shape transcription (`f307_runs.txt`, R4 `EozquoyfyubEofq`) decodes through the same sign
+  mapping to "auh·rueter laut·", the agent's R4.
+- **Share.** About 363 letter signs, nulls not counted. About 82% give sense including tentative words, 71% counting
+  firm words only. These are hand counts, not yet measured from a reading file.
+
 ## Remaining gaps
 
 - f. 304r: the text is unread. Likely causes:
   - signs merged or split in the transcription (ω/ϖ, η/y, σ/6, 8/ξ/ζ are close in this hand);
   - homophones, since the cribs already need two signs for a and possibly v;
   - two-digit code words (23 groups) with no key.
-- ff. 307r-v: cipher runs not yet transcribed or attacked, and the key not yet matched against the simple a-z keys
-  ff. 283-301.
+- ff. 307r-v: read in part with key A. Still open:
+  - the "?llaten" group after "ich" (R8, R14, twice);
+  - the "gein" group (Λγμλ, R7, V3);
+  - the start of V1, the middle of V3, the tail of R13 and the margin note;
+  - the name sign after "von" on 307v l. 15;
+  - places where б could be c or l, decided by context only.
+  
+  These are workable. They need a second sign-level pass and a reading file, then a measured share.
+- f. 304r: the [control](control304.py) shows the solver works at this length with homophones, so the failure lies
+  in the transcription or the system. Code numbers take endings (`57 ν`, `57 νφ`, `57 ψ`). No key in the file fits:
+  key A, the Baumgartner key and the f. 281r Latin homophonic key were all tested.
 - GStA Rep. 39 Nr. 289 (Jan 1557) and Nr. 58 (1552): not digitised, so they need the archive (an outside blocker).
 
 ## Escalation
@@ -109,5 +137,9 @@ their users.
 
 - `f304r_transcription.txt`: pass-2 transcription of f. 304r.
 - `solve304.py`, `seeded304.py`: solvers (de-1500s).
+- `homo304.py` (capped homophonic annealer), `control304.py` (same-size control, passes), `run_homo304.py`,
+  `cribhomo304.py`, `lang_homo304.py`: f. 304r runs.
+- `f307_runs.txt` (shape transcription), `solve307.py` (key A test plus no-space anneal), `f307_keyA.md` (sign-level
+  transcription and reading with key A).
 - `WORKLOG.md`: step log.
 - Images are not committed. The URLs are above. Survey notes stayed in the session scratchpad.
