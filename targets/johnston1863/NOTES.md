@@ -88,8 +88,8 @@ leave some words in place.
 - "Bragg &": the leaf has a cross-like sign after "Bragg", repeated on image 3. The 1864 print gives "General Bragg's
   command should". The sign is clear text, not part of the cipher.
 
-Context: Johnston, commanding in Mississippi during the siege of Vicksburg, passes on Bragg's report that Union troops
-of the 9th and 23d Corps have left Kentucky to reinforce Grant, and suggests an invasion of Kentucky, with Bragg's
+Context: Johnston, commanding in Mississippi during the siege of Vicksburg, passes on Bragg's report, from a telegram out of
+Louisville, that part of the Union 9th and 23d Corps has been sent to reinforce Grant, and suggests an invasion of Kentucky, with Bragg's
 command extended over East Tennessee. Only the operative words were enciphered.
 
 ## Earlier solution

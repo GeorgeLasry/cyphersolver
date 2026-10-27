@@ -68,9 +68,9 @@ brackets.
 
 > ... to get for me HAR[dee's Tacti]CS, [or the n]EW COP[ies of] SCOTT['s Tact]ICS, [also ... vol]UMES [of Ma]HANS
 > FIELD FORTIFICATION[s], and if to be had conveniently 8 yards navy flannel (blue) [Indigo ...]ing of [SH]OULDER
-> [STR]APS for a LIE[utenant] CO[lonel. ... handed ...] he [will b]RIN[g] ANY you CAN G[et to] [H]IM, ... These
-> BOO[ks are] essential to me in my position as LIEU[tenant] COLONEL of IN[fantry] and you will [do me a great favor]
-> by sending [them by hand].
+> [STR]APS for a LIE[utenant] CO[lonel. ... handed ...] he [will b]RIN[g] ANY you CAN G[et to] [H]IM, [and I will ...]
+> for the rest to [...] me from Alex[andria ...]. These BOO[ks are] essential to me in my position as LIEU[tenant]
+> COLONEL of IN[fantry] and you will [do me a great favor] by sending [them by hand ...].
 
 Jordan, newly a lieutenant colonel, asks "Rachel" (Greenhow) for Hardee's and Scott's Tactics, Mahan's Field
 Fortification, eight yards of navy-blue flannel and shoulder straps for his rank, to be sent by hand ("me from Alexandria" is in a passage with gaps).
